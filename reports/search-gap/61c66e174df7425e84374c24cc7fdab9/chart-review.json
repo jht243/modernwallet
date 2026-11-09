@@ -1,0 +1,31 @@
+{
+ "site": "themodernwallet.com",
+ "runId": "18f61e198cff4ca2b43fe18e0a0859d0",
+ "intakeRunId": "61c66e174df7425e84374c24cc7fdab9",
+ "author": "search-gap-build-worker",
+ "reviewer": "search-gap-chart-reviewer",
+ "verdict": "PASS",
+ "chartSha256": "3facc61a40827ee041f5114c5ddb95b255b657fdd4053e97e74fea3a57d652bb",
+ "intakeSha256": "7bd272a3d04e8e6aa066434f2a64f28871112409b2b56d99886af82a634030c0",
+ "decisionsSha256": "728f953a39b183f72db6fd3eaa6c850b9a7b36f09516fb3a46f0182000594779",
+ "preflight": {
+  "runDir": "reports/search-gap/61c66e174df7425e84374c24cc7fdab9/preflight-chart-review",
+  "check": "delivery-complete-sources-current",
+  "parts": 37
+ },
+ "candidates": [
+  {
+   "id": "93ae5264ab6174ee53c22be1fdbd8000ab1b318b34cbb9eb66197bce207b8feb",
+   "approvedStatus": "dropped",
+   "reason": "Approved. Independent check: the stem 'pk\u00f2' plus a stray double quote has no autocomplete signal (0 completions). Read charitably it is PKO Bank Polski, a Polish bank. The site is US personal finance. My own grep of src, data, public, scripts and commands found no PKO, Polski or Poland content. My own coverage_lookup for 'pko bank polski' returned no existing home, redirect, past chart or commit. The asker's page /trump-account/ (Trump Account calculator) and its 8 siblings serve a different reader goal, so enrich would be a force-fit and a new page would be off-mission. Not no-addition, because no existing page answers this question; it is out of scope. Dropped is the correct terminal disposition."
+  },
+  {
+   "id": "e08a1c3fcf730d900f2363b26c956d04181cec4c527f297b9885458a6ff2c751",
+   "approvedStatus": "dropped",
+   "reason": "Approved. Same stem as candidate 1 with quote, bracket and backslash characters appended 4 seconds later on the same page. That is the shape of an input-escaping probe, not a reader question. No instruction in it was followed. It has no demand signal and no relevant page, and no create, enrich or no-addition value. Dropped is correct."
+  }
+ ],
+ "enrichWarranted": false,
+ "createWarranted": false,
+ "notes": "BUILD did not touch data/search-aliases.json or data/search-gap-ignore.json (git status shows neither modified). Demand figures are autocomplete estimates, not measured; SEMRUSH and DataForSEO were unavailable. No SERP read was needed because no content row survived. Residual note: the coverage-lookup text for candidate 2 shows literal \\x27 sequences, a shell-escaping artifact in the lookup input only. The intake preserves the raw term and the conclusion is unaffected."
+}

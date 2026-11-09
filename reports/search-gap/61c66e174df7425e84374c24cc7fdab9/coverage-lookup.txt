@@ -1,0 +1,86 @@
+coverage_lookup: 2 candidate(s) vs 810 repo pages / 823 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1106 past-chart lines
+
+### /trump-account/  — row - · create new content
+keyword: pkò
+reader question (new page intent): What does the search "pkò" mean / is there a PKO bank page?
+lookup terms: trump account pk   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /trump-account  [EXACT SLUG · in sitemap · (sitemap only) · title fetched live · topic match 0.67 on trump account]
+    title: Trump Account Calculator: $1,000 Value at 18
+    desc:  See what a Trump Account investment could be worth at 18 — also called a Trump savings or baby account. Project the $1,000 federal seed plus your contributions.
+- /guides/trump-accounts  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on trump account]
+    title: What Is a Trump Account? Rules & How to Open
+    desc:  What is a Trump Account? A tax-advantaged account for kids with a $1,000 federal seed. See eligibility, contribution limits, taxes, and how to open one.
+- /guides/trump-account-worth-it  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on trump account]
+    title: Are Trump Accounts Worth It? An Honest Look
+    desc:  Are Trump Accounts worth it? An honest, balanced guide to the free $1,000 seed, the tax and lock-up catches, and whether to open one for your child.
+- /guides/trump-account-alternatives  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on trump account]
+    title: Trump Account Alternatives: 6 Options by Goal
+    desc:  Alternatives to Trump Accounts: 529, custodial Roth IRA, UTMA, Coverdell, savings, I bonds. See which fits your goal, plus who else can fund an account.
+- /compare/trump-account-trustees  [in sitemap · src/data/comparisons.ts · topic match 0.67 on trump account]
+    title: Trump Account Trustees: Robinhood vs Fidelity, Vanguard
+    desc:  Compare Trump Account trustees: Robinhood holds initial accounts, while Fidelity, Vanguard, and Schwab await Treasury rules. Check current rollover status.
+- /compare/trump-account-vs-529  [in sitemap · src/data/comparisons.ts · topic match 0.67 on trump account]
+    title: Trump Account vs 529: What's the Difference?
+    desc:  Trump Account vs 529 (sometimes called a 530A account): one is tax-deferred and usable for anything at 18, the other is tax-free but school-only. Compare.
+- /compare/trump-account-vs-custodial-account  [in sitemap · src/data/comparisons.ts · topic match 0.67 on trump account]
+    title: Trump Account vs Custodial Account: Which to Open?
+    desc:  Trump Account vs custodial account (UTMA/UGMA): see whether the free $1,000 seed or a flexible, uncapped custodial account fits your child best.
+- /compare/trump-account-vs-brokerage-account  [in sitemap · src/data/comparisons.ts · topic match 0.67 on trump account]
+    title: Trump Account vs Brokerage Account: Which Wins?
+    desc:  Trump Account vs brokerage account, compared: free $1,000 seed and tax deferral vs full liquidity and any investment choice. See which wins for your kid.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-26-trend-lane-c.md [exclusions] - trump account vs brokerage account for kids (75-750/mo estimate, NOT measured): /compare/trump-account-vs-brokerage-account and custodial/kid brokerage pages exist. DROPPED (exists).
+- 2026-10-26-trend-lane-c.md [exclusions] - are trump accounts a scam: /guides/trump-account-scams exists. DROPPED (exists).
+- 2026-10-27-trend-lane-c.md [exclusions] - trump account vs brokerage account for kids; are trump accounts a scam: /compare/trump-account-vs-brokerage-account and /guides/trump-account-scams exist. DROPPED (exists).
+- 2026-10-28-trend-lane-c.md [exclusions] - trump account family (expand returned only estimates; Twitter noise rejected): 27 trump-account routes exist incl. app, eligibility, scams, rules.
+- 2026-10-29-trend-lane-c.md [exclusions] - /guides/are-trump-accounts-a-scam (0-25/mo, GSC pos 14): DROP. /guides/trump-account-worth-it has the section and FAQ; /guides/trump-account-scams exists. PAA (real? lose money? who owns? downside? eligibility? close?)
+- 2026-10-29-trend-lane-c.md [exclusions] - free-online-will / are-online-wills-legal: DROP, 2026-10-28 disposition holds. will online, roth 401k variants, trump account vs brokerage, lenders, living trust: exist (ledger 2026-10-22 to 10-28).
+Commits naming the topic: none
+Same run overlap: row - /trump-account/ (1.0)
+
+### /trump-account/  — row - · create new content
+keyword: pkò"\x27\x27\x27\x27\x27]\\
+reader question (new page intent): What does the search pkò with stray punctuation mean?
+lookup terms: trump account pk x27   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /trump-account  [EXACT SLUG · in sitemap · (sitemap only) · title fetched live · topic match 0.5 on trump account]
+    title: Trump Account Calculator: $1,000 Value at 18
+    desc:  See what a Trump Account investment could be worth at 18 — also called a Trump savings or baby account. Project the $1,000 federal seed plus your contributions.
+- /guides/trump-accounts  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.5 on trump account]
+    title: What Is a Trump Account? Rules & How to Open
+    desc:  What is a Trump Account? A tax-advantaged account for kids with a $1,000 federal seed. See eligibility, contribution limits, taxes, and how to open one.
+- /guides/trump-account-worth-it  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.5 on trump account]
+    title: Are Trump Accounts Worth It? An Honest Look
+    desc:  Are Trump Accounts worth it? An honest, balanced guide to the free $1,000 seed, the tax and lock-up catches, and whether to open one for your child.
+- /guides/trump-account-alternatives  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.5 on trump account]
+    title: Trump Account Alternatives: 6 Options by Goal
+    desc:  Alternatives to Trump Accounts: 529, custodial Roth IRA, UTMA, Coverdell, savings, I bonds. See which fits your goal, plus who else can fund an account.
+- /compare/trump-account-trustees  [in sitemap · src/data/comparisons.ts · topic match 0.5 on trump account]
+    title: Trump Account Trustees: Robinhood vs Fidelity, Vanguard
+    desc:  Compare Trump Account trustees: Robinhood holds initial accounts, while Fidelity, Vanguard, and Schwab await Treasury rules. Check current rollover status.
+- /compare/trump-account-vs-529  [in sitemap · src/data/comparisons.ts · topic match 0.5 on trump account]
+    title: Trump Account vs 529: What's the Difference?
+    desc:  Trump Account vs 529 (sometimes called a 530A account): one is tax-deferred and usable for anything at 18, the other is tax-free but school-only. Compare.
+- /compare/trump-account-vs-custodial-account  [in sitemap · src/data/comparisons.ts · topic match 0.5 on trump account]
+    title: Trump Account vs Custodial Account: Which to Open?
+    desc:  Trump Account vs custodial account (UTMA/UGMA): see whether the free $1,000 seed or a flexible, uncapped custodial account fits your child best.
+- /compare/trump-account-vs-brokerage-account  [in sitemap · src/data/comparisons.ts · topic match 0.5 on trump account]
+    title: Trump Account vs Brokerage Account: Which Wins?
+    desc:  Trump Account vs brokerage account, compared: free $1,000 seed and tax deferral vs full liquidity and any investment choice. See which wins for your kid.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-26-trend-lane-c.md [exclusions] - trump account vs brokerage account for kids (75-750/mo estimate, NOT measured): /compare/trump-account-vs-brokerage-account and custodial/kid brokerage pages exist. DROPPED (exists).
+- 2026-10-26-trend-lane-c.md [exclusions] - are trump accounts a scam: /guides/trump-account-scams exists. DROPPED (exists).
+- 2026-10-27-trend-lane-c.md [exclusions] - trump account vs brokerage account for kids; are trump accounts a scam: /compare/trump-account-vs-brokerage-account and /guides/trump-account-scams exist. DROPPED (exists).
+- 2026-10-28-trend-lane-c.md [exclusions] - trump account family (expand returned only estimates; Twitter noise rejected): 27 trump-account routes exist incl. app, eligibility, scams, rules.
+- 2026-10-29-trend-lane-c.md [exclusions] - /guides/are-trump-accounts-a-scam (0-25/mo, GSC pos 14): DROP. /guides/trump-account-worth-it has the section and FAQ; /guides/trump-account-scams exists. PAA (real? lose money? who owns? downside? eligibility? close?)
+- 2026-10-29-trend-lane-c.md [exclusions] - free-online-will / are-online-wills-legal: DROP, 2026-10-28 disposition holds. will online, roth 401k variants, trump account vs brokerage, lenders, living trust: exist (ledger 2026-10-22 to 10-28).
+Commits naming the topic: none
+Same run overlap: row - /trump-account/ (0.75)
+

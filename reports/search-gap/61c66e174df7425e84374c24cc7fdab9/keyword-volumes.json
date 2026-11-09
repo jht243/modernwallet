@@ -1,0 +1,59 @@
+[keyword_data] semrush unusable (no SEMRUSH_API_KEY)
+[keyword_data] volume: no provider usable — autocomplete estimate only
+[keyword_data] No tool volume for 3 phrases — autocomplete band (source=estimate, NOT measured)
+[keyword_data] Autocomplete: 2/3 rows corroborated live
+{
+ "rows": [
+  {
+   "keyword": "pko",
+   "volume": 500,
+   "volume_low": 500,
+   "volume_high": 5000,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 500-5000/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "pk\u00f2",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "pko bank polski",
+   "volume": 500,
+   "volume_low": 500,
+   "volume_high": 5000,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 500-5000/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "semrush unusable (no SEMRUSH_API_KEY)",
+  "volume: no provider usable \u2014 autocomplete estimate only",
+  "No tool volume for 3 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 2/3 rows corroborated live"
+ ]
+}

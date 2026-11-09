@@ -1,0 +1,36 @@
+.claude/commands/_vendor-research.md — characters 0 onward
+
+# Coverage-first vendor research
+
+Owner instruction, 2026-11-08. Applies across Mindmap Pass and vendor-producing callers. Remove repeated vendor investigation when the current task is already covered; preserve every applicable SEO, evidence, testing, professional, exclusion, risk-profile, review-budget and release requirement. This is research allocation inside existing preparation/chart review, not another review stage or a replacement for Mindmap deduplication.
+
+## Resolve the task before opening vendor sites
+
+Keep the COMPLETE original intake, canonical job and each original candidate ID. Identify the actual company/product and ORIGINAL target page/reader intent. Inspect current own-page coverage first. The same company on a different page, a footer link, another vendor sharing a hosting domain, an unrelated mention, or a prior cut never proves coverage. A new product/model/version, launch, news item, price update, consequential claim, contradictory evidence or explicit refresh is not covered merely because the company was previously listed.
+
+For a genuine vendor-addition task, an exact current first-column vendor row on the original roundup can support an independently reviewed no-addition decision without reopening its homepage/pricing page. The current own-page capture must be complete canonical HTTPS output, not a preview/shell or an old cached page. Preserve existing source identity and link-policy checks, including any genuine policy that intentionally suppresses an outbound link. No-link exceptions must use the site's actual existing verifier; do not infer identity from unlinked names alone.
+
+## Layer3 native Vertical entry
+
+`vertical-run.local.py prepare` now mechanically reads prior completed, independently reviewed identity evidence, batches current source table-identity queries and captures only relevant own roundups. This operational evidence check occurs before BUILD starts deep vendor research; MAIN still does not make editorial decisions. The returned `vendorResearchPlan` references an immutable internal plan with every original ID and one research allocation:
+
+- `none-covered`: exact original vendor/target has current source/render coverage. BUILD inspects that evidence and records the ordinary candidate-specific covered decision, `canonicalDomain` if appropriate, and the provided `coveredSnapshot`. Do not re-read vendor pricing or research its whole business merely to prove the row already exists.
+- `identity-only`: saved alias evidence is stale. Verify only that identity/redirect/rebrand first. If current coverage then resolves, use the ordinary covered decision. Do not automatically expand this into a new price/capability investigation.
+- `changed-claims-only`: new/unknown intent, product, announcement or refresh signal. Reuse only established identity where valid; research the actual new claims from appropriate current primary sources. Existing coverage does not authorize skipping them.
+- `normal`: coverage is unproven or the vendor is missing. Complete the normal applicable research and existing workflow.
+
+Saved aliases preserve the exact prior independently reviewed chart, decisions, vendor identity record and primary-source captures. Only positive covered/enrichment decisions from completed jobs qualify. Old cuts, source guesses and incomplete work do not seed aliases. The identity window is seven days normally, one day on HIGH-floor sites. These are identity-reuse bounds, never a license to republish old prices, capabilities or clinical claims as current facts. The helper does not create redirect evidence or an editorial PASS.
+
+Pass BUILD both the entire ORIGINAL intake and the plan reference. Do not replace the intake with the shortened research subset. If current evidence exposes a real change or contradicts the plan, record the candidate-specific issue and source evidence, refresh that issue and let the existing independent reviewer judge it. Every vendor still receives the normal covered/enrich/create/cut/accrue accounting, with original exclusions and floors. The existing finish path verifies the plan and current actual source/render identity again; it still requires genuine chart review and real audited publication where applicable. The plan alone never closes a nonempty run or becomes a quiet-day report.
+
+Use `python3 .claude/tools/vendor-research.py queue --plan PLAN.json` for the compact work packet. Do not dump the full archived research/proof graph into the AI. It lists the research subset and every covered ID/current-capture reference. Use `--candidate ORIGINAL_ID` only when a particular identity proof needs inspection. Machine validation checks all source hashes without another bulk research read.
+
+Unavailable own-site/source proof conservatively leaves normal research in the queue; it is not an exclusion, fabricated coverage or new human gate. Versioned plans are bound to the original intake and actual run ID. Retries preserve findings and counters. Existing completed jobs/valid old approvals keep their native path.
+
+## Other fleet callers
+
+Use `python3 .claude/tools/vendor-research.py plan --intake ORIGINAL_INTAKE.json --run-id ACTUAL_STARTUP_ID --run-dir NEW_INTERNAL_DIRECTORY --snapshot CURRENT_OWN_PAGE_CAPTURE.json` (repeat snapshots as needed). The existing caller can supply `kind: "vendor-addition-intake-v1"`, its actual `canonicalBase`, `jobId` and full `candidates` array. Each candidate keeps `id`, `vendor.domain`, its exact `target` and explicit `intent: "vendor-addition"`; no aliases are guessed. For other/unknown intents the helper does not suppress new-claim research. An unlinked vendor requires the caller's established identity/link-policy verifier; the generic helper conservatively requires an actual linked first-column row.
+
+Use `check --plan PLAN.json` for exact evidence/accounting verification and `sources --plan PLAN.json` for additional internal dependencies. Retain actual full captures/identity evidence alongside existing canonical receipts, outside visitor-facing files. No copied Layer3 local module/configuration, new per-vendor page mandate, new opportunity queue, model/effort change, outreach or publication permission is introduced.
+
+When this helper is used, attach its `vendorResearchPlan` reference and the existing canonical `jobId` to the normal chart manifest. The existing chart validator verifies that allocation; it adds no separate approval or review stage. Existing charts without this new optional evidence retain their original validation path.

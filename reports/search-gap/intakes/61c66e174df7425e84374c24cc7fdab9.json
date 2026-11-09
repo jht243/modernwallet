@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "site": "themodernwallet.com",
+  "runId": "61c66e174df7425e84374c24cc7fdab9",
+  "candidateCount": 2,
+  "candidates": [
+    {
+      "id": "93ae5264ab6174ee53c22be1fdbd8000ab1b318b34cbb9eb66197bce207b8feb",
+      "term": "pkò\"",
+      "kind": "search",
+      "count": 1,
+      "paths": [
+        "/trump-account/"
+      ],
+      "eventIds": [
+        "37a480d9-caac-4129-9666-a1f46057d147"
+      ],
+      "firstSeen": "2026-11-08T04:16:23.716852+00:00",
+      "lastSeen": "2026-11-08T04:16:23.716852+00:00"
+    },
+    {
+      "id": "e08a1c3fcf730d900f2363b26c956d04181cec4c527f297b9885458a6ff2c751",
+      "term": "pkò\"''''']\\",
+      "kind": "search",
+      "count": 1,
+      "paths": [
+        "/trump-account/"
+      ],
+      "eventIds": [
+        "75456656-0db3-415e-80cc-cdebf2ee80ed"
+      ],
+      "firstSeen": "2026-11-08T04:16:27.674733+00:00",
+      "lastSeen": "2026-11-08T04:16:27.674733+00:00"
+    }
+  ],
+  "bootstrapSince": "2026-11-01T00:00:00Z",
+  "pendingEventCount": 2
+}

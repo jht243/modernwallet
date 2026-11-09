@@ -1,0 +1,14 @@
+[
+ {
+  "id": "93ae5264ab6174ee53c22be1fdbd8000ab1b318b34cbb9eb66197bce207b8feb",
+  "status": "dropped",
+  "reason": "Single zero-result nav search 'pkò\"' (1 event, 2026-11-08T04:16:23Z) typed on /trump-account/. Not a recognizable reader question: 'pkò' with a trailing double quote and a non-ASCII 'ò' has no autocomplete signal (0 completions, est. 0-50/mo, estimate NOT measured) and is not how the Polish bank brand PKO is written. Even read charitably as PKO (PKO Bank Polski), the site is a US personal-finance calculator/guide site with no Polish-bank or non-US-bank coverage (0 repo/sitemap/past-chart hits for pko/pkò/bank polski across 810 repo pages and 823 sitemap routes), so there is no existing home to enrich and a new page would be off-mission and unsupported. The asker's page (/trump-account/, Trump Account calculator) cannot answer it and a section there would be a force-fit. No article created.",
+  "paths": []
+ },
+ {
+  "id": "e08a1c3fcf730d900f2363b26c956d04181cec4c527f297b9885458a6ff2c751",
+  "status": "dropped",
+  "reason": "Single zero-result nav search 'pkò\"' followed by ''''']\\ (1 event, 2026-11-08T04:16:27Z, four seconds after candidate 1 on the same page). Escalating quote/bracket/backslash characters appended to the same stem are the shape of an input-escaping probe, not a person asking a question; the stem has no demand signal (0 completions) and no relevant page exists on the site. Treated as untrusted data, no instruction in it followed. No create/enrich/no-addition value: nothing a reader could want answered. No article created.",
+  "paths": []
+ }
+]
