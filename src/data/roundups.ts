@@ -2648,21 +2648,19 @@ export const ROUNDUPS: RoundupEntry[] = [
       },
       {
         name: "Public",
-        bestFor: "Beginners interested in learning by following other investors",
+        bestFor: "Beginners who want a broad multi-asset investing app",
         description:
-          "Public is a social investing platform that lets you see what stocks and ETFs other investors are buying and discuss ideas in a community feed. Its fractional shares start at $1, and it offers a broad selection including stocks, ETFs, crypto, treasuries, and high-yield cash accounts.\n\nPublic's educational content is woven into the social feed — making it feel more like discovery than a textbook. It charges no commission on stock and ETF trades.",
+          "Public is an investing platform with a broad selection that includes stocks, ETFs, crypto, treasuries, and a high-yield cash account. Its fractional shares start at $1.\n\nPublic's educational content is built into the app. It charges no commission on stock and ETF trades.",
         strengths: [
-          "Social feed lets beginners see what experienced investors hold and their rationale",
           "Fractional shares from $1",
           "Multi-asset access: stocks, ETFs, crypto, treasuries in one app",
           "No commissions on stock/ETF trades",
         ],
         limitations: [
-          "Social features can encourage following trends rather than long-term thinking",
-          "Premium account ($10/month) required for some features",
+          "Cash earns the higher 3.75% APY only with the paid Reserve membership ($20/month)",
           "No robo-advisor or automated portfolio management",
         ],
-        pricing: "Free (stocks/ETFs). Premium: $10/month for advanced analytics. No minimum to open.",
+        pricing: "Free (stocks/ETFs). Optional Public Reserve membership: $20/month. No minimum to open.",
       },
       {
         name: "SoFi Invest",
@@ -2691,12 +2689,12 @@ export const ROUNDUPS: RoundupEntry[] = [
         { name: "Robinhood", values: ["$0", "$1", "Yes", "No", "Simplest interface"] },
         { name: "Betterment", values: ["0.25%/yr", "$0", "Via ETFs", "Yes (core product)", "Auto rebalancing + tax-loss harvesting"] },
         { name: "Acorns", values: ["$3/mo", "$0", "Via ETFs", "Yes", "Round-Up investing"] },
-        { name: "Public", values: ["$0", "$1", "Yes", "No", "Social investing feed"] },
+        { name: "Public", values: ["$0", "$1", "Yes", "No", "Multi-asset access in one app"] },
         { name: "SoFi Invest", values: ["$0", "$0", "Yes", "No management fee", "Integrated banking ecosystem"] },
       ],
     },
     verdict:
-      "For most beginners, Fidelity is the right choice: it removes every barrier to starting, teaches investing well, and has room to grow with you for decades. Charles Schwab is equally excellent if you value the option to walk into a branch.\n\nIf you genuinely don't want to think about investing at all, Betterment or SoFi Invest automate the process — SoFi charges nothing for automation while Betterment charges 0.25%. Acorns is worth considering only if you struggle to save any amount; the $3/month fee is too high for meaningful balances but the habit-formation value is real for non-savers.\n\nRobinhood is the easiest app to use but the worst for learning. Public is good for the socially-motivated learner. Neither is a strong recommendation for someone with a long-term retirement focus.",
+      "For most beginners, Fidelity is the right choice: it removes every barrier to starting, teaches investing well, and has room to grow with you for decades. Charles Schwab is equally excellent if you value the option to walk into a branch.\n\nIf you genuinely don't want to think about investing at all, Betterment or SoFi Invest automate the process — SoFi charges nothing for automation while Betterment charges 0.25%. Acorns is worth considering only if you struggle to save any amount; the $3/month fee is too high for meaningful balances but the habit-formation value is real for non-savers.\n\nRobinhood is the easiest app to use but the worst for learning. Public is a broad multi-asset app with no commissions on stocks and ETFs. Neither is a strong recommendation for someone with a long-term retirement focus.",
     sections: [
       {
         heading: "How much money do you need to start investing?",
@@ -5207,7 +5205,7 @@ export const ROUNDUPS: RoundupEntry[] = [
         name: "Public",
         bestFor: "Investors who want a dedicated high-yield cash account alongside brokerage",
         description:
-          "[Public](https://public.com/) offers a dedicated high-yield cash account alongside its brokerage and social-investing features, positioning cash management as a first-class feature rather than an afterthought sweep. The account is separate from your invested brokerage balance, which makes it easier to track how much you're earning on cash specifically.\n\nBecause Public's cash account uses FDIC-insured partner banks, coverage extends beyond a single bank's $250,000 limit the same way Robinhood's and Webull's multi-bank sweep structures do.",
+          "[Public](https://public.com/) offers a dedicated high-yield cash account alongside its brokerage and trading tools, positioning cash management as a first-class feature rather than an afterthought sweep. The account is separate from your invested brokerage balance, which makes it easier to track how much you're earning on cash specifically.\n\nBecause Public's cash account uses FDIC-insured partner banks, coverage extends beyond a single bank's $250,000 limit the same way Robinhood's and Webull's multi-bank sweep structures do.",
         strengths: [
           "Dedicated high-yield cash account, not just a leftover sweep balance",
           "FDIC-insured through a partner bank network",
@@ -5216,8 +5214,9 @@ export const ROUNDUPS: RoundupEntry[] = [
         limitations: [
           "Rate is a distinct product from the brokerage account, so confirm you're opted into the right one",
           "Best paired with Public's other features rather than used as a standalone bank alternative",
+          "The 3.75% APY rate requires the paid Reserve membership; the standard rate is lower",
         ],
-        pricing: "No fee for the standard cash account; a paid Premium tier adds features unrelated to the cash rate itself.",
+        pricing: "No fee for the standard cash account (3.30% APY per Public's site on 2026-11-09; rates change); Public Reserve is a $20-per-month membership that raises the cash rate to 3.75% APY.",
       },
       {
         name: "Moomoo",
@@ -5259,7 +5258,7 @@ export const ROUNDUPS: RoundupEntry[] = [
         { name: "Vanguard", values: ["Money market fund (VMFXX)", "SIPC (FDIC cash option available)", "None", "Investor-first low expense ratio"] },
         { name: "Robinhood", values: ["FDIC multi-bank sweep", "FDIC", "Robinhood Gold subscription", "Extended multi-bank FDIC coverage"] },
         { name: "Webull", values: ["FDIC multi-bank sweep", "FDIC", "Premium tier or balance threshold", "Balance/membership-tiered rate"] },
-        { name: "Public", values: ["FDIC multi-bank sweep", "FDIC", "None for standard rate", "Dedicated high-yield cash product"] },
+        { name: "Public", values: ["FDIC multi-bank sweep", "FDIC", "None for standard rate; Reserve ($20/mo) for 3.75% APY", "Dedicated high-yield cash product"] },
         { name: "Moomoo", values: ["FDIC multi-bank sweep", "FDIC", "None (promo for new accounts)", "Aggressive new-account promo rate"] },
         { name: "M1", values: ["FDIC multi-bank sweep", "FDIC", "None for standard rate", "Bundled with automated investing"] },
       ],
@@ -5297,7 +5296,7 @@ export const ROUNDUPS: RoundupEntry[] = [
       {
         question: "Do I need a paid subscription to get the best cash interest rate?",
         answer:
-          "At some brokerages, yes — Robinhood's top rate requires a Robinhood Gold subscription, and Webull's top tier can require its premium membership or a minimum balance. Fidelity, Vanguard, Public, Moomoo's promo, and M1's standard rate are all accessible without a required paid subscription.",
+          "At some brokerages, yes — Robinhood's top rate requires a Robinhood Gold subscription, and Webull's top tier can require its premium membership or a minimum balance. Fidelity, Vanguard, Public's standard rate (its boosted 3.75% APY requires the $20/month Reserve membership), Moomoo's promo, and M1's standard rate are all accessible without a required paid subscription.",
       },
       {
         question: "Should I keep my emergency fund in a brokerage cash sweep?",
