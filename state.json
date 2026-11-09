@@ -18,6 +18,15 @@
       "previousJobs": [],
       "repairs": [],
       "route": "/guides/what-is-a-fiduciary/"
+    },
+    "d74de3468ba88bbe1f9e8baa6e4718763557839fd8764b27312d3f6a994bb119": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "competitor-9031ce2b2c89",
+      "previousJobs": [],
+      "repairs": [],
+      "route": "/guides/questions-to-ask-a-financial-advisor/"
     }
   },
   "job": null,
