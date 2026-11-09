@@ -54,6 +54,14 @@
         "hooks": [
           {
             "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/tools/competitor-handoff.py\" stop"
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
             "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/hype_radar/handoff.py\" stop"
           }
         ]

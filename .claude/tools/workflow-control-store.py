@@ -79,6 +79,8 @@ class Store:
                            GIT_COMMITTER_NAME='routine-controller', GIT_COMMITTER_EMAIL='routines@layer3labs.io')
                 git(self.root, 'read-tree', base if base else '--empty', env=env)
                 files = {'state.json': (json.dumps(state, sort_keys=True, indent=2) + '\n').encode()}
+                if len(files['state.json']) > 20_000_000 or SECRET.search(files['state.json']):
+                    raise ControlError('Sensitive workflow state refused')
                 files.update({'artifacts/' + digest: data for digest, data in blobs.values()})
                 for path, data in files.items():
                     oid = git(self.root, 'hash-object', '-w', '--stdin', data=data).stdout.decode().strip()

@@ -17,7 +17,7 @@ class Tests(unittest.TestCase):
         self.root=Path(self.tmp.name).resolve()
         for name in core.BASE+['_keyword-demand-ladder.md','phase.md','_workflow-efficiency.md']:
             p=self.root/'.claude/commands'/name;p.parent.mkdir(parents=True,exist_ok=True)
-            p.write_bytes(('Shared exact rule.\r\n\r\nUnique obligation '+name+'\r\n'*20).encode())
+            p.write_bytes((('Shared exact rule. '+('Complete scoped obligation stays identical. '*12))+'\r\n\r\nUnique obligation '+name+'\r\n'*20).encode())
         self.reading=self.root/'reading'
     def prepare(self,path=None,**kwargs):
         with patch.object(core.subprocess,'run'):
@@ -35,6 +35,23 @@ class Tests(unittest.TestCase):
             self.assertEqual(body.encode(),(self.root/name).read_bytes())
             self.assertIn('Unique obligation '+Path(name).name,text)
         self.assertLess(m['deliveryCharacters'],m['sourceCharacters'])
+    def test_duplicate_passages_keep_every_source_and_local_position(self):
+        m=self.prepare();text=''.join((self.reading/p['path']).read_text() for p in m['parts'])
+        self.assertIn('Repeated passage at this position:',text)
+        self.assertIn('under this source/section context',text)
+        for name in m['files']:self.assertIn('[Source: '+name+']',text)
+
+    def test_existing_complete_reading_receipt_remains_valid_after_formatter_update(self):
+        m=self.prepare();legacy=core.efficiency().compiled(m['sourceTexts'],m['reused'],scope_references=False)
+        m.pop('compiler',None);m['deliveryCharacters']=len(legacy);m['parts']=[]
+        import hashlib
+        for i,offset in enumerate(range(0,len(legacy),core.CHUNK),1):
+            raw=legacy[offset:offset+core.CHUNK].encode();name='part-%03d.txt'%i;(self.reading/name).write_bytes(raw)
+            m['parts'].append({'path':name,'sha256':hashlib.sha256(raw).hexdigest()})
+        core.save(self.reading/'manifest.json',m);self.deliver();core.validate(self.root,self.reading)
+        retained=self.prepare(self.root/'retained',reuse=self.reading)
+        self.assertEqual(len(retained['reused']),len(retained['files']))
+
     def test_changed_rules_read_only_changed_sources_in_same_context(self):
         self.prepare();self.deliver()
         (self.root/'.claude/commands/phase.md').write_text('Entirely new task rule.')

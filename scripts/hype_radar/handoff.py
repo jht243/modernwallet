@@ -209,24 +209,7 @@ def stop(root, payload):
     source = active_pull(root,payload)
     if source is None:
         return
-    # Native async agents wake MAIN upon completion. Only block a dispatcher
-    # that hasn't actually issued a worker call for this immutable intake.
-    launches = set()
-    transcript = payload.get("transcript_path")
-    if transcript and Path(transcript).is_file():
-        for line in Path(transcript).read_text().splitlines():
-            try:
-                msg=json.loads(line).get("message",{})
-            except ValueError:
-                continue
-            blocks=msg.get("content",[])
-            for block in blocks if isinstance(blocks,list) else []:
-                if not isinstance(block,dict):
-                    continue
-                if block.get("name") in {"Agent","Task"} and source.stem in str(block.get("input",{})):
-                    launches.add(block.get("id"))
-                if block.get("tool_use_id") in launches and not block.get("is_error",False):
-                    return
+    # A completed worker is not the independently validated chart handoff.
     print(json.dumps({"decision":"block","reason":f"Resume {source.relative_to(root)}. Dispatch BUILD with the original pull hash and all candidates. The dispatcher cannot drop the intake or finish as a no-op."}))
 
 

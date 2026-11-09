@@ -23,4 +23,12 @@ class Tests(unittest.TestCase):
    with patch.object(h,'active_pull',return_value=source):
     with self.assertRaises(SystemExit):
      h.report_guard(root,{'tool_input':{'command':'curl https://example.org/api/routine-run --data "{\\"status\\":\\"no-op\\"}"'}})
+ def test_worker_completion_alone_cannot_abandon_the_original_chart(self):
+  import contextlib,io
+  with tempfile.TemporaryDirectory() as tmp:
+   root=Path(tmp);source=root/'frozen-hash.json';transcript=root/'fixture.jsonl'
+   messages=[{'message':{'content':[{'name':'Agent','id':'actual-fixture-tool','input':{'prompt':source.stem}}]}},{'message':{'content':[{'tool_use_id':'actual-fixture-tool','is_error':False}]}}]
+   transcript.write_text('\n'.join(json.dumps(x) for x in messages));output=io.StringIO()
+   with patch.object(h,'active_pull',return_value=source),contextlib.redirect_stdout(output):h.stop(root,{'transcript_path':str(transcript)})
+   self.assertEqual(json.loads(output.getvalue())['decision'],'block')
 if __name__=='__main__':unittest.main()

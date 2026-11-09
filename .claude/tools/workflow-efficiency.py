@@ -20,8 +20,8 @@ def require(ok,message):
         raise ValueError(message)
 
 
-def compiled(texts,reused):
-    seen = set()
+def compiled(texts,reused,scope_references=False):
+    seen = {}
     output = []
     for name,text in texts.items():
         if name in reused:
@@ -29,12 +29,16 @@ def compiled(texts,reused):
         blocks = [b for b in re.findall(r'.*?(?:(?:\r?\n){2}|\Z)',text,re.S) if b]
         require(''.join(blocks)==text,'Lossless instruction segmentation failed')
         new = []
-        for block in blocks:
+        for number,block in enumerate(blocks,1):
             digest = sha(block.encode())
-            if digest not in seen:
+            if digest not in seen or (scope_references and name.startswith('reports/')):
                 new.append(block)
-                seen.add(digest)
-        if new:
+                seen.setdefault(digest,(name,number))
+            elif scope_references:
+                original,index=seen[digest]
+                reference='[Repeated passage at this position: '+original+', paragraph '+str(index)+'. Use its exact text under this source/section context.]\n\n'
+                new.append(reference if len(reference)<len(block) else block)
+        if new or scope_references:
             output.append('[Source: '+name+']\n'+''.join(new)+'\n')
     return ''.join(output)
 
@@ -63,7 +67,8 @@ def historical(root,directory,core,visited=None,require_delivery=True):
         require(all(old['files'].get(k)==m['files'][k] for k in reused),'Retained instruction hashes changed')
     else:
         require(not reused,'Missing original reading receipt')
-    text = compiled(texts,reused)
+    require(m.get('compiler') in (None,'scoped-passages-v1'),'Unknown instruction compilation protocol')
+    text = compiled(texts,reused,scope_references=m.get('compiler')=='scoped-passages-v1')
     parts = [text[i:i+core.CHUNK] for i in range(0,len(text),core.CHUNK)]
     require(m['deliveryCharacters']==len(text) and len(m['parts'])==len(parts),'Instruction coverage changed')
     for ref,part in zip(m['parts'],parts):
@@ -108,10 +113,10 @@ def prepare(root,phase,instructions,directory,reuse,actor,run_id,context_id,cont
                 'Retain only this role’s actual uninterrupted context; otherwise reread without --reuse')
         reused = [name for name,value in files.items() if old['files'].get(name)==value]
         ref = {'directory':str(reuse.relative_to(root)),'sha256':sha((reuse/'manifest.json').read_bytes())}
-    text = compiled(texts,reused)
+    text = compiled(texts,reused,scope_references=True)
     if not task or context_packet:
         directory.mkdir(parents=True,exist_ok=False)
-    m = dict(version=VERSION,root=str(root.resolve()),phase=phase,instructions=instructions,
+    m = dict(version=VERSION,compiler='scoped-passages-v1',root=str(root.resolve()),phase=phase,instructions=instructions,
              actor=actor,runId=run_id,contextId=context_id,contextEpoch=context_epoch,
              files=files,sourceTexts=texts,reused=reused,reuse=ref,parts=[],delivered=[],
              deliveryCharacters=len(text),sourceCharacters=sum(map(len,texts.values())),

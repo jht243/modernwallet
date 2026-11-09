@@ -18,7 +18,9 @@ def scope(root,args):
     manifest=getattr(args,'mindmap_manifest',None)
     if not manifest:
         return None
-    plan=read(manifest);job=read(args.mindmap_review)['jobId']
+    plan=read(manifest);job=read(args.mindmap_review).get('jobId')
+    if not job or plan.get('jobId')!=job:
+        raise ValueError('Use the same original canonical jobId in the approved manifest and actual independent preparation review; resume that job before generation')
     targets={row['target']:row for row in plan['actions']}
     matched=[(route,row) for route,row in targets.items()
              if args.slug==route.rstrip('/').rsplit('/',1)[-1]

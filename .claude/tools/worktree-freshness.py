@@ -121,6 +121,12 @@ def cloud_check(root):
         # A concurrent publication requires its delta, while preserving work
         # authored after this run's verified start.
         base = previous['revision']
+        # A real pull/merge can integrate a newer published baseline while
+        # retaining this run's subsequently authored edits. Compare only the
+        # published delta not already committed in this checkout's ancestry.
+        committed = git(root, 'merge-base', head, revision).decode().strip()
+        if git(root, 'merge-base', base, committed).decode().strip() == base:
+            base = committed
         paths = [os.fsdecode(p) for p in git(root, 'diff', '--no-renames', '--name-only', '-z', base, revision, '--').split(b'\0') if p and not p.startswith(b'reports/')]
         missing = [p for p in paths if not includes_published(published_entry(root, base, p), working_entry(root, p), published_entry(root, revision, p))]
         result = {'status': 'stale' if missing else 'current', 'source': 'origin/' + ref.removeprefix('refs/heads/'), 'revision': revision, 'missing': sorted(missing)}
@@ -173,9 +179,40 @@ def working_entry(root, rel):
     return ('100755' if p.stat().st_mode & 0o111 else '100644'), p.read_bytes()
 
 
+def only_adds_published_link_rel(local, published):
+    """Prove exact published bytes remain, apart from additional fixed link rel values.
+
+    Preserve every href, word, original attribute and mode. This is source
+    integration only, never a content/audit/SEO/publication approval.
+    """
+    from collections import Counter
+    import re
+    if local is None or published is None or local[0] != published[0] or local[0] not in ('100644','100755'):
+        return False
+    try:
+        ours,theirs = local[1].decode('utf-8'),published[1].decode('utf-8')
+    except UnicodeDecodeError:
+        return False
+    attributes=[' rel="sponsored nofollow noopener noreferrer"',' rel=\\"sponsored nofollow noopener noreferrer\\"']
+    pattern=re.compile('|'.join(re.escape(x) for x in attributes))
+    def strip(text):
+        pieces=[];positions=[];last=0;offset=0
+        for match in pattern.finditer(text):
+            anchor=text.rfind('<a ',0,match.start())
+            prefix=text[anchor:match.start()] if anchor>=0 else ''
+            if anchor<0 or '>' in prefix or not any(x in prefix for x in ('href="https://','href=\\"https://')):
+                continue
+            piece=text[last:match.start()];pieces.append(piece);offset+=len(piece);positions.append((offset,match.group()));last=match.end()
+        pieces.append(text[last:]);return ''.join(pieces),Counter(positions)
+    left,added=strip(ours);right,original=strip(theirs)
+    return left==right and added!=original and not any(n>1 for n in Counter(position for position,attribute in added.elements()).values()) and all(added[p]>=n for p,n in original.items())
+
+
 def includes_published(base, local, published):
     """Would integrating the published change leave local bytes/mode unchanged?"""
     if local == published or base == published:
+        return True
+    if only_adds_published_link_rel(local, published):
         return True
     if local is not None and published is not None and local[0] == published[0] and local[0] in ['100644','100755']:
         # Git can conflict on adjacent insertions even when local retains every

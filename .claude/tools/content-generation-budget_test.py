@@ -11,7 +11,7 @@ class Tests(unittest.TestCase):
     def setUp(self):
         self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup);self.root=Path(self.tmp.name)
         self.manifest=self.root/'manifest.json';self.review=self.root/'review.json'
-        self.manifest.write_text(json.dumps({'actions':[{'target':'/guides/page','bucket':'create new content'}]}))
+        self.manifest.write_text(json.dumps({'jobId':'original','actions':[{'target':'/guides/page','bucket':'create new content'}]}))
         self.review.write_text('{"jobId":"original"}')
         self.args=SimpleNamespace(mindmap_manifest=str(self.manifest),mindmap_review=str(self.review),slug='page',out='drafts/page.json')
         self.policy=SimpleNamespace(policy=lambda root:{'siteId':'fixture'},LIMITS={'light':1,'standard':2,'high':3})
@@ -32,10 +32,15 @@ class Tests(unittest.TestCase):
             cycle['rounds'][-1]['number']=2;cycle['rounds'][-1]['reportObjectSha256']='other-fixture'
             with self.assertRaises(ValueError):b.reserve(self.root,self.args,'repair')
     def test_separate_original_sections_of_existing_page_keep_working(self):
-        self.manifest.write_text(json.dumps({'actions':[{'target':'/guides/page','bucket':'update existing body text'}]}))
+        self.manifest.write_text(json.dumps({'jobId':'original','actions':[{'target':'/guides/page','bucket':'update existing body text'}]}))
         for name in ('page--cost','page--uses'):
             self.args.slug=name;b.reserve(self.root,self.args,'section')
         with self.assertRaises(ValueError):b.reserve(self.root,self.args,'section')
+    def test_independent_review_cannot_substitute_a_different_job_identity(self):
+        self.review.write_text('{"jobId":"different"}')
+        with self.assertRaisesRegex(ValueError,'same original canonical jobId'):
+            b.reserve(self.root,self.args,'write')
+        self.assertFalse((self.root/'reports/workflow-generation-budgets').exists())
     def test_ordinary_unrelated_cli_has_no_new_requirement(self):
         self.args.mindmap_manifest=None
         self.assertIsNone(b.reserve(self.root,self.args,'write'))

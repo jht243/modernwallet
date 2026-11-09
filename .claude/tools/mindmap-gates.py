@@ -199,10 +199,18 @@ def chart(root, plan, review):
 
 def complete_hype_chart(root, plan, review):
     hype = root/'scripts/hype_radar/handoff.py'
-    if hype.is_file() and (root/'.claude/workflow-policy.local.json').is_file() and (root/'reports/hype-radar/intakes').is_dir():
+    if hype.is_file() and ((root/'.claude/workflow-policy.local.json').is_file() or (root/'.claude/tools/workflow-efficiency.py').is_file()) and (root/'reports/hype-radar/intakes').is_dir():
         spec=importlib.util.spec_from_file_location('hype_chart_handoff',hype)
         handoff=importlib.util.module_from_spec(spec);spec.loader.exec_module(handoff)
         handoff.after_chart(root,plan,review)
+
+
+def complete_competitor_chart(root, plan, review):
+    path = root/'.claude/tools/competitor-handoff.py'
+    if path.is_file():
+        spec=importlib.util.spec_from_file_location('competitor_chart_handoff',path)
+        module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+        module.after_chart(root,plan,review)
 
 
 def display(value):
@@ -299,6 +307,7 @@ def generation(root, plan, review, packet, slug, section=False):
     chart(root, plan, review)
     saved_chart(root, plan)
     complete_hype_chart(root, plan, review)
+    complete_competitor_chart(root, plan, review)
     analysis(root, packet)
     require(packet['basis'] != 'no-addition', 'No-addition is terminal; do not call the writer')
     target = packet['route']
@@ -431,6 +440,7 @@ def main():
         else:
             saved_chart(root, plan)
             complete_hype_chart(root, plan, review)
+            complete_competitor_chart(root, plan, review)
     print(json.dumps({'status': 'PASS', 'scope': 'Structural/artifact checks only; independent judgment and existing approval/rendered-publication gates remain required.'}))
 
 

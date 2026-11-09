@@ -152,7 +152,7 @@ def emit(root, directory, part_number=None):
         raise ValueError('Read sequentially; earlier parts are missing')
     part = m['parts'][number - 1]
     print('PART {}/{} — read in full; do not pipe or batch with other parts'.format(number, len(m['parts'])))
-    print(inside(directory, part['path']).read_text())
+    print(inside(directory, part['path']).read_bytes().decode('utf-8'))
     sys.stdout.flush()  # A broken output pipe must not create a delivery receipt.
     if number not in m['delivered']:
         m['delivered'].append(number)

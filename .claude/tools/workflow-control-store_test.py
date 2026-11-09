@@ -17,6 +17,10 @@ class Tests(unittest.TestCase):
   self.assertEqual(state['job']['artifacts']['reports/input.json'],digest)
   persisted=m.git(self.root,'show',revision+':artifacts/'+digest).stdout
   self.assertEqual(persisted,raw)
+ def test_sensitive_state_is_refused_before_it_can_be_pushed(self):
+  def secret(state):state['bad']='sk-proj-'+('b'*32)
+  with self.assertRaises(m.ControlError):self.store.mutate(secret)
+  self.assertEqual(self.store.read()[0],None)
  def test_sensitive_artifacts_are_not_checkpointed(self):
   self.path.write_text('sk-proj-'+('a'*32))
   with self.assertRaises(m.ControlError):self.store.mutate(lambda state:None,['reports/input.json'])
