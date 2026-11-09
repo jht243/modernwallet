@@ -10,6 +10,17 @@
       "repairs": [],
       "route": "/guides/what-does-a-financial-advisor-do/"
     },
+    "8263f0eab7783644dcc6ca918ad8bd8bb604572f311db08ec40a03b6abd56be4": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "competitor-9031ce2b2c89",
+      "previousJobs": [],
+      "repairs": [
+        "9faa0d4a292e712b2cc5dcd9ba344fca4f6af147d299abf7ec028b8e36ef740e"
+      ],
+      "route": "/guides/what-does-a-financial-advisor-do"
+    },
     "a0f99b6b6e8a84192b80bb5826d8d5faabb305ca7a052fe7b722dd8f9075b7c6": {
       "generated": [
         "full"
