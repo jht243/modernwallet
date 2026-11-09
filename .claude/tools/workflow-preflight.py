@@ -6,6 +6,8 @@ Only the independent reviewer can assess whether the recorded rules were applied
 """
 import argparse
 import hashlib
+import importlib.util
+from types import SimpleNamespace
 import json
 import os
 from pathlib import Path
@@ -50,14 +52,28 @@ def sources(root, phase, instructions):
     return list(dict.fromkeys(rels))
 
 
-def prepare(root, phase, instructions, directory, cloud=False, reuse=None, actor="worker", run_id=None):
+def efficiency():
+    spec = importlib.util.spec_from_file_location('fleet_instruction_delivery', Path(__file__).with_name('workflow-efficiency.py'))
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def core_api():
+    return SimpleNamespace(CHUNK=CHUNK,sources=sources,inside=inside,load=load,save=save)
+
+
+def prepare(root, phase, instructions, directory, cloud=False, reuse=None, actor="worker", run_id=None, context_id=None, context_epoch=None, handoff=None, context_packet=None):
     # Capture/check the exit code directly: no shell pipeline can turn failure into success.
     command = ['bash', str(root / '.claude/tools/workflow-start.sh')]
     if cloud:
         command.append('--cloud')
     if run_id:
         command.extend(['--run-id', run_id])
-    subprocess.run(command, cwd=str(root), check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    startup = subprocess.run(command, cwd=str(root), check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    if (root / '.claude/commands/_workflow-efficiency.md').is_file():
+        run_id = run_id or json.loads(startup.stdout)['runId']
+        return efficiency().prepare(root,phase,instructions,directory,reuse,actor,run_id,context_id,context_epoch,core_api(),handoff,context_packet)
     previous = None
     if reuse is not None:
         previous = validate(root, reuse)
@@ -98,6 +114,8 @@ def validate(root, directory, require_delivery=True, visited=None):
         raise ValueError('Circular instruction receipt reuse')
     visited.add(key)
     m = load(directory)
+    if m.get('version') == 3:
+        return efficiency().validate(root,directory,core_api(),require_delivery)
     if m['root'] != str(root.resolve()):
         raise ValueError('Receipt belongs to another repository')
     if m.get('reuse'):
@@ -152,6 +170,10 @@ def main():
     a.add_argument('--cloud', action='store_true')
     a.add_argument('--actor', required=True, help='Current agent identity; independent reviewers use their own identity')
     a.add_argument('--run-id', help='Identifier returned by this routine’s verified startup')
+    a.add_argument('--handoff', help='Current sealed canonical job handoff')
+    a.add_argument('--context-packet', help='Current focused task artifact')
+    a.add_argument('--context-id', help='Actual native conversation identity')
+    a.add_argument('--context-epoch', help='Actual uninterrupted context epoch; change after compaction')
     a.add_argument('--reuse', help='Completed bundle from this same actor/run; re-read only new instructions')
     for name in ['next', 'check']:
         b = sub.add_parser(name); b.add_argument('--run-dir', required=True)
@@ -162,7 +184,7 @@ def main():
     try:
         if args.command == 'prepare':
             m = prepare(ROOT, args.phase, args.instruction, directory, args.cloud,
-                        inside(ROOT, args.reuse) if args.reuse else None, args.actor, args.run_id)
+                        inside(ROOT, args.reuse) if args.reuse else None, args.actor, args.run_id, args.context_id, args.context_epoch, args.handoff, args.context_packet)
             print(json.dumps({'status': 'prepared-not-read', 'runDir': args.run_dir, 'parts': len(m['parts']), 'reusedFiles': len(m['reused']),
                               'next': 'Run next once per tool call until every part is read, then run check.'}))
         elif args.command == 'next':

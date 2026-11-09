@@ -42,3 +42,5 @@ Brief = one line per candidate: name, story count, sources, `search_caught_up`, 
 /mindmap-pass <the brief>
 ```
 Force-create (zero volume never vetoes a row). Mindmap does everything from here — research, dedup, writing, audit, build, commit, push, 200-verify, IndexNow, report. Nothing after it.
+
+Owner rollout 2026-11-09. A harvest with a frozen intake must send every original candidate and all original angles to the existing independent Mindmap chart review. Include the exact frozen SHA in BUILD and evidenceFiles and a reasoned candidateDispositions entry for each input. Use the emitted frozen input and unique chartPath for both angle checks, preserving prior daily files/charts. Do not report a pending intake as a no-op. Complete handoff.py finish after real chart approval, then finish each approved native publication with its actual findings/counters. Resume a pending intake before any fresh discovery. A true empty harvest with no pending work needs no production worker.

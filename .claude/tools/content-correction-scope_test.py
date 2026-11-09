@@ -111,6 +111,20 @@ class Tests(unittest.TestCase):
         new=self.f.put('reports/source-new.ts','const copy = "Useful simple reader-facing content.";')
         self.assertTrue(s.literal_correction(self.root,'data/pages.ts',{'artifact':p.reference(self.root,old)},{'artifact':p.reference(self.root,new)},'Useful simlpe reader-facing content.','Useful simple reader-facing content.','/guide'))
 
+    def test_unrelated_quoted_example_keeps_only_the_proven_spelling_fix_targeted(self):
+        before = 'Useful simlpe reader-facing content.'
+        after = 'Useful simple reader-facing content.'
+        def proven(old_example, new_example):
+            old = self.f.put('reports/old.ts', 'const example = '+old_example+'; const copy = '+json.dumps(before)+';')
+            new = self.f.put('reports/new.ts', 'const example = '+new_example+'; const copy = '+json.dumps(after)+';')
+            return s.literal_correction(self.root, 'data/pages.ts', {'artifact':p.reference(self.root,old)},
+                                        {'artifact':p.reference(self.root,new)}, before, after, '/guide')
+        for quote in ('"', "'"):
+            literal = quote + 'Header: ${EXAMPLE}' + quote
+            self.assertTrue(proven(literal, literal))
+            self.assertFalse(proven(literal, literal.replace('EXAMPLE', 'CHANGED')))
+        self.assertFalse(proven('`Header: ${compute()}`', '`Header: ${compute()}`'))
+
     def test_seo_and_risk_checks_cannot_be_copied_as_fresh(self):
         self.prepare();report=self.actual();report['routes'][0]['checks']['linksAndIndexability']=copy.deepcopy(self.old['routes'][0]['checks']['linksAndIndexability'])
         with self.assertRaisesRegex(ValueError,'freshly verified'):s.validate(self.root,self.after,report)

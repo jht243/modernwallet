@@ -197,6 +197,14 @@ def chart(root, plan, review):
     return plan
 
 
+def complete_hype_chart(root, plan, review):
+    hype = root/'scripts/hype_radar/handoff.py'
+    if hype.is_file() and (root/'.claude/workflow-policy.local.json').is_file() and (root/'reports/hype-radar/intakes').is_dir():
+        spec=importlib.util.spec_from_file_location('hype_chart_handoff',hype)
+        handoff=importlib.util.module_from_spec(spec);spec.loader.exec_module(handoff)
+        handoff.after_chart(root,plan,review)
+
+
 def display(value):
     if isinstance(value, str):
         return value
@@ -290,6 +298,7 @@ def analysis(root, packet):
 def generation(root, plan, review, packet, slug, section=False):
     chart(root, plan, review)
     saved_chart(root, plan)
+    complete_hype_chart(root, plan, review)
     analysis(root, packet)
     require(packet['basis'] != 'no-addition', 'No-addition is terminal; do not call the writer')
     target = packet['route']
@@ -421,6 +430,7 @@ def main():
             destination.write_text(render(plan))
         else:
             saved_chart(root, plan)
+            complete_hype_chart(root, plan, review)
     print(json.dumps({'status': 'PASS', 'scope': 'Structural/artifact checks only; independent judgment and existing approval/rendered-publication gates remain required.'}))
 
 

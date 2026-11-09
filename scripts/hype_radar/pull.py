@@ -308,17 +308,22 @@ def load_ledger() -> dict:
     return {}
 
 
-def record(names: list[str]) -> None:
+def record(names: list[str], intake=None, output=None) -> None:
     led = load_ledger()
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     for n in names:
         key = n.strip().lower()
         if key:
             led.setdefault(key, {"first_seen": today, "runs": 0})
+            if intake is not None:
+                led[key]["hypeIntake"] = {"sha256":intake.stem,"source":str(output.resolve().relative_to(REPO))}
             led[key]["last_seen"] = today
             led[key]["runs"] = led[key].get("runs", 0) + 1
     LEDGER.parent.mkdir(parents=True, exist_ok=True)
-    LEDGER.write_text(json.dumps(led, indent=1, sort_keys=True) + "\n")
+    from tempfile import NamedTemporaryFile
+    with NamedTemporaryFile(dir=LEDGER.parent, delete=False) as stream:
+        stream.write((json.dumps(led, indent=1, sort_keys=True) + "\n").encode())
+    os.replace(stream.name, LEDGER)
 
 
 # -------------------------------------------------------------- name mining
@@ -454,6 +459,30 @@ def main() -> int:
         print(f"recorded {len(names)} name(s) -> {LEDGER}")
         return 0
 
+    try:
+        from . import handoff
+    except ImportError:  # Running this file as the documented standalone CLI
+        import handoff
+    controlled = not a.no_record and not a.include_seen and ((REPO / ".claude/workflow-policy.local.json").is_file() or (REPO / ".claude/tools/workflow-efficiency.py").is_file())
+    if controlled:
+        with handoff.harvest_lock(REPO):
+            return harvest(a, handoff, controlled)
+    return harvest(a, handoff, controlled)
+
+
+def harvest(a, handoff, controlled):
+    remote_seen = handoff.checkpoint_module().restore(REPO) if controlled else set()
+    if controlled and (saved := handoff.pending(REPO)):
+        handoff.checkpoint_module().persist(REPO,saved)
+        output = Path(a.json)
+        if output.resolve() != saved.resolve() and output.exists() and output.read_bytes() != saved.read_bytes():
+            print(f"Preserved existing {output}; use the frozen intake below.")
+        else:
+            handoff.save(output, saved.read_bytes())
+        handoff.announce(REPO, saved)
+        print("Resuming earlier candidates; no discovery calls made.")
+        return 0
+
     cfg = load_config()
     hours = a.hours or cfg["hours"]
     min_points = a.min_points or cfg["min_points"]
@@ -483,13 +512,11 @@ def main() -> int:
     for c in candidates:
         if a.include_seen:
             fresh.append(c)
-        elif c["name"] in led:
+        elif c["name"] in led or c["name"] in remote_seen or any(x in led or x in remote_seen for x in c.get("aliases") or []):
             seen.append(c)
         else:
             fresh.append(c)
 
-    if fresh and not a.no_record:  # handed off = recorded; nothing to do post-mindmap
-        record([c["name"] for c in fresh])
 
     for c in fresh:  # context, not a gate
         c["autocomplete"] = autocomplete(c["name"])
@@ -507,7 +534,15 @@ def main() -> int:
     }
     out = Path(a.json)
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(payload, indent=1) + "\n")
+    raw = (json.dumps(payload, indent=1) + "\n").encode()
+    if fresh and controlled:
+        frozen = handoff.freeze(REPO, raw)
+    if controlled and out.exists() and out.read_bytes() != raw:
+        out = out.with_name(out.stem+"-"+handoff.fingerprint(raw)[:12]+out.suffix)
+    handoff.save(out, raw)
+    if fresh and not a.no_record:
+        record([n for c in fresh for n in [c["name"], *(c.get("aliases") or [])]], frozen if controlled else None, out)
+
 
     print(f"{len(items)} items scanned · {len(fresh)} new candidate(s), "
           f"{len(seen)} already seen -> {out}")

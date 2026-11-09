@@ -1574,7 +1574,8 @@ def claim_check(page, fmt: str, a, passes: int = None, delete_from: int = None) 
     finding is deleted instead (default: the last pass when there are 2+, so nothing written by
     the checker goes unchecked and the loop ends without a separate confirm call)."""
     src = _source_text(a)
-    total = passes or CLAIMCHECK_PASSES
+    limit = fleet_generation_controls(a, text=json.dumps(page, ensure_ascii=False) if isinstance(page, dict) else page)
+    total = min(passes or CLAIMCHECK_PASSES, limit) if limit else (passes or CLAIMCHECK_PASSES)
     if delete_from is None:
         delete_from = total - 1 if total > 1 else total
     rep = {"passes": 0, "found": [], "applied": [], "deleted_final": 0, "unapplied": [], "remaining": [],
@@ -1605,7 +1606,7 @@ def claim_check(page, fmt: str, a, passes: int = None, delete_from: int = None) 
         rep["applied"] += ok; rep["unapplied"] += bad
         if final:
             rep["deleted_final"] += len(ok)
-        elif len(found) >= CLAIMCHECK_ADAPT > 0 and not rep["extra_pass"]:
+        elif len(found) >= CLAIMCHECK_ADAPT > 0 and not rep["extra_pass"] and (limit is None or total < limit):
             # a heavily padded draft: one pass rarely catches all of it, so read it in full once
             # more (replacing) before the delete-only sweep. Bounded: at most one extra call.
             rep["extra_pass"] = True; total += 1; delete_from += 1
@@ -1931,9 +1932,25 @@ def mindmap_gate(a) -> None:
 
 
 
+def fleet_generation_controls(a, operation=None, text=None):
+    root = _repo_root() or pathlib.Path.cwd()
+    path = root / ".claude/tools/content-generation-budget.py"
+    if not path.is_file() or not getattr(a, "mindmap_manifest", None):
+        return None
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("fleet_generation_budget", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    if operation:
+        module.reserve(root, a, operation)
+        return None
+    return module.claim_limit(root, a, text)
+
+
 def cmd_write(a) -> int:
     global CALLER, JSON_MODE, THINKING, CMD
     mindmap_gate(a)
+    fleet_generation_controls(a, "section" if a.cmd == "section" else "write")
     CMD = a.cmd
     if a.cmd == "section" and THINKING in _LEVELS and _LEVELS.index(SECTION_THINKING) < _LEVELS.index(THINKING):
         log(f"section: thinking {THINKING} -> {SECTION_THINKING} (CONTENT_SECTION_THINKING)")
@@ -2027,6 +2044,7 @@ def cmd_fix(a) -> int:
     findings_text = pathlib.Path(a.findings).read_text().strip()
     if not findings_text:
         log("fix: findings file is empty — nothing to do"); return 0
+    fleet_generation_controls(a, "repair")
     prompt = (f"SOURCE\n======\n{_source_text(a)}\n\nAUDIT FINDINGS\n==============\n{findings_text}\n\n"
               f"UNITS\n=====\n{_units_block(page, fmt)}\n")
     found = _checker_call(FIX_SYSTEM, prompt)

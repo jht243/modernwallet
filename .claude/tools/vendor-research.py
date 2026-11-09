@@ -5,6 +5,7 @@ An existing vendor row can avoid another company/pricing crawl for a vendor-
 addition task. It cannot answer a new product, news, clinical or pricing claim.
 """
 import argparse
+from concurrent.futures import ThreadPoolExecutor
 import datetime as dt
 import hashlib
 from html.parser import HTMLParser
@@ -231,20 +232,34 @@ def vertical_prepare(root,intake_path,directory,run_id,native,revision=None,cloc
         original=domain(candidate['vendor']['domain']);alias=aliases.get((candidate['roundupSlug'],original))
         canonical=alias['canonicalDomain'] if alias else original
         if canonical in SHARED or alias and not alias['fresh']:continue
-        queries[(candidate['roundupSlug'],canonical)]={'slug':candidate['roundupSlug'],'domain':canonical}
-    identities={};values=list(queries.values())
-    try:
-        for start in range(0,len(values),200):identities.update(native.source_identities(root,values[start:start+200]))
-    except (ValueError,OSError,subprocess.CalledProcessError):identities={}
-    routes=sorted({route for (route,_),matches in identities.items() if matches})
-    snapshots=[]
+        slug = candidate['roundupSlug']
+        if re.fullmatch(r'[a-z0-9-]+', slug) and re.fullmatch(r'[a-z0-9.-]+', canonical):
+            queries[(slug,canonical)] = {'slug':slug, 'domain':canonical, 'allowMissingRoundup':True}
+    identities = {}
+    values = list(queries.values())
+    if values and hasattr(native,'ensure_identity_runtime') and not native.ensure_identity_runtime(root):
+        print('Locked coverage checker unavailable. Unverified vendors need normal research.',file=sys.stderr)
+        values = []
+    for start in range(0,len(values),200):
+        try:
+            identities.update(native.source_identities(root,values[start:start+200]))
+        except (ValueError,OSError,subprocess.CalledProcessError):
+            continue  # Only candidates without usable proof need normal research.
+    routes = sorted({route for (route,_),matches in identities.items() if matches})
+    snapshots = []
     if routes:
-        renderer=load('vendor_own_site_capture',root/'.claude/tools/rendered-audit.py')
-        base='https://www.layer3labs.io'  # Native Layer3-only hook; generic callers supply their own canonical captures.
-        manifest={'author':'mechanical-vendor-coverage','canonicalBase':base,'routes':[{'path':route} for route in routes]}
-        path=directory/'own-site-coverage.json'
-        try:renderer.capture(manifest,base,path);snapshots=[path]
-        except (ValueError,OSError):snapshots=[]
+        renderer = load('vendor_own_site_capture',root/'.claude/tools/rendered-audit.py')
+        base = 'https://www.layer3labs.io'
+        def capture_route(route):
+            manifest = {'author':'mechanical-vendor-coverage','canonicalBase':base,'routes':[{'path':route}]}
+            path = directory/'own-site-coverage'/(sha(route.encode())+'.json')
+            try:
+                renderer.capture(manifest,base,path)
+                return path
+            except (ValueError,OSError):
+                return None
+        with ThreadPoolExecutor(max_workers=min(8,len(routes))) as pool:
+            snapshots = [path for path in pool.map(capture_route,routes) if path is not None]
     return plan(root,intake_path,directory,run_id,snapshots,aliases,native,identities,clock)
 
 

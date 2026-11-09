@@ -149,6 +149,29 @@ class Tests(unittest.TestCase):
         proof=v.vertical_prepare(self.root,self.intake_path,self.root/'reports/fallback','synthetic-run',native)
         value=v.read(v.artifact(self.root,proof));self.assertEqual(value['counts']['normal'],1);self.assertEqual(value['counts']['none-covered'],0)
 
+    def test_one_unavailable_roundup_does_not_discard_another_pages_coverage(self):
+        self.intake['canonicalBase'] = 'https://www.layer3labs.io'
+        second = dict(self.intake['candidates'][0], id='unavailable', target='/comparisons/other', roundupSlug='other')
+        self.intake['candidates'].append(second)
+        self.intake_path = self.put('reports/intake.json',self.intake)
+        snapshot = self.snapshot(base=self.intake['canonicalBase'])
+        def identities(root, queries):
+            self.assertTrue(all(q['allowMissingRoundup'] for q in queries))
+            return {('/comparisons/'+q['slug'],q['domain']): ['source row'] for q in queries}
+        def capture(manifest,base,path):
+            if manifest['routes'][0]['path'] == '/comparisons/other':
+                raise OSError('Synthetic unavailable page')
+            path.parent.mkdir(parents=True,exist_ok=True)
+            shutil.copyfile(snapshot,path)
+        native = SimpleNamespace(source_identities=identities, covered_check=lambda *args: None)
+        def loader(name,path):
+            return SimpleNamespace(capture=capture) if name=='vendor_own_site_capture' else r
+        with patch.object(v,'history_aliases',return_value={}), patch.object(v,'load',side_effect=loader):
+            proof = v.vertical_prepare(self.root,self.intake_path,self.root/'reports/run','original',native,clock=self.clock)
+            checked = v.validate(self.root,v.artifact(self.root,proof))
+        self.assertEqual({c['id']:c['research'] for c in checked['candidates']},
+                         {'synthetic-vendor':'none-covered','unavailable':'normal'})
+
     @unittest.skipUnless(Path(__file__).with_name('vertical-run.local_test.py').is_file(),'No Layer3 native Vertical hook on this fleet site')
     def test_native_prepare_supplies_the_plan_without_filtering_original_intake(self):
         fixture=load('vendor_native_fixtures',Path(__file__).with_name('vertical-run.local_test.py'));f=fixture.Tests();f.setUp()
