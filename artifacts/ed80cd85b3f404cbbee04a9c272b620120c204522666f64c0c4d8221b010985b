@@ -1,0 +1,13 @@
+OUTBOUND INSPECTION for /guides/what-is-a-robo-advisor (2026-11-09): destination existence, title and description from the page records
+
+destination /roundup/best-robo-advisors/ - title: Best Robo Advisors of 2026: Fees and Minimums Compared
+  description: Compare the best robo advisors of 2026 by advisory fee, account minimum, tax-loss harvesting threshold, and what adding a human CFP costs.
+  section: What To Check Before You Open an Account; anchor: best robo advisors; purpose: ranked picks
+
+destination /guides/financial-advisor-worth-it/ - title: Is a Financial Advisor Worth It? What to Know
+  description: Is a financial advisor worth it? See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.
+  section: Who a Robo-Advisor Is Not For; anchor: is a financial advisor worth it; purpose: human vs robo cost
+
+destination /guides/how-to-choose-a-financial-advisor/ - title: How to Choose a Financial Advisor: A Decision Guide
+  description: Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.
+  section: Human Contact: Hybrid, Limited or None; anchor: choosing a financial advisor; purpose: verify and compare people

@@ -1,0 +1,35 @@
+INBOUND INSPECTION for /guides/what-is-a-fiduciary (2026-11-09)
+
+source /guides/how-to-choose-a-financial-advisor/ - title: How to Choose a Financial Advisor: A Decision Guide
+section: Step 1: Understand fiduciary vs suitability
+anchor: fiduciary
+purpose: the step names the duty in two sentences; the new page explains who owes which standard
+relevant existing sentences (from the page record):
+  - slug: "how-to-choose-a-financial-advisor",
+    title: "How to Choose a Financial Advisor: A Decision Guide",
+    metaDescription:
+      "Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.",
+    h1: "
+  - An investment adviser registers with the SEC or a state regulator and owes you the fiduciary duty covered in Step 1 below, typically charging a fee tied to the assets under management.
+  - A wealth advisor usually follows the same fiduciary model as an investment adviser, aimed at [higher-net-worth clients with higher account minimums](/compare/financial-advisor-vs-wealth-manager/).
+  - A CFP or ChFC can work as a fee-only investment adviser, inside a wealth-management firm, or, less commonly, as a broker-dealer representative, and the fiduciary duty from Step 1 tracks that underlying role every time." },
+      { heading: "Step 1: Understand fiduciary vs suitability", body: "The si
+
+source /compare/financial-advisor-vs-financial-planner/ - title: Financial Advisor vs Financial Planner: Key Differences
+section: Which one should you actually hire (fiduciary sentence)
+anchor: fiduciary
+purpose: the sentence tells readers to confirm fiduciary status; the new page explains what that means
+relevant existing sentences (from the page record):
+  - On its own, neither title tells you whether someone is a fiduciary, how they're paid, or what they actually do for you.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Regulatory status", a: "Unregulated title — anyone can use it", b: "Unregulated title — anyone can use it" },
+        {
+  - If your need is narrow, managing a specific portfolio, a fee-only, fiduciary financial advisor is enough.
+  - Either way, confirm fiduciary status in writing and verify the person on SEC IAPD or FINRA BrokerCheck before you hire them.
+  - Our guide to [what a fiduciary is](/guides/what-is-a-fiduciary/) explains the standards.",
+    sections: [
+      {
+        heading: "Why neither title is regulated",
+        content:
+          "The SEC regulates the term \"investment adviser\" specifically, but titles like \"financial advisor,\" \"f

@@ -1,0 +1,11 @@
+OUTBOUND INSPECTION for /guides/what-is-a-fiduciary (2026-11-09): destination existence, title and description from the page records
+
+destination /guides/how-to-choose-a-financial-advisor/ - title: How to Choose a Financial Advisor: A Decision Guide
+  description: Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.
+  section: How to Check a Financial Professional Before You Hire Them; anchor: guide to choosing a financial advisor; purpose: full hiring steps
+
+destination /guides/what-is-a-ctfa/ - title: What Is a Certified Trust and Fiduciary Advisor (CTFA)?
+  description: What is a CTFA (Certified Trust and Fiduciary Advisor)? See who awards it and how it differs from a CFP, CFA, or ChFC.
+  section: Adviser, Broker or Dual Registrant; anchor: Certified Trust and Fiduciary Advisor; purpose: credential that uses the word fiduciary
+
+destination /guides/what-is-a-cfp/: sibling new page in this same run (action row for that route), section: What a Fiduciary Is and Who Has to Be One, anchor: CFP professional, purpose: sibling new page on the credential

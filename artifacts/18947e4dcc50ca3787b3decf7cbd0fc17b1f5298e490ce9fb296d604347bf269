@@ -1,0 +1,42 @@
+INBOUND INSPECTION for /guides/what-does-a-financial-advisor-do (2026-11-09)
+
+source /guides/financial-advisor-worth-it/ - title: Is a Financial Advisor Worth It? What to Know
+section: Step 1: What a financial advisor actually costs
+anchor: what a financial advisor does
+purpose: the section prices the service; the new page lists what the service is
+relevant existing sentences (from the page record):
+  - What to Know",
+    metaDescription:
+      "Is a financial advisor worth it?
+  - See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.",
+    h1: "Is a Financial Advisor Worth It?
+  - What the Research Actually Shows",
+    cardBlurb: "What advisors cost, what Vanguard's research says about the value they add, and when DIY investing wins instead.",
+    introText:
+      "A financial advisor is worth the cost when the value they add (through smarter investment behavior, tax-aware mo
+  - This guide explains what advisors actually cost, what the research says about the value they can add, and the specific situations in which paying for one is worth it, or doing it yourself is the smarter call.",
+    sections: [
+      { heading: "Step 1: What a financial advisor actually costs", body:
+
+source /compare/financial-advisor-vs-financial-planner/ - title: Financial Advisor vs Financial Planner: Key Differences
+section: What a financial advisor typically focuses on
+anchor: financial advisor
+purpose: the section summarizes focus; the new page details services
+relevant existing sentences (from the page record):
+  - slug: "financial-advisor-vs-financial-planner",
+    title: "Financial Advisor vs Financial Planner: Key Differences",
+    metaDescription:
+      "Financial advisor vs financial planner: neither title is regulated, but the CFP credential signals real planning expertise.
+  - Compare scope, fees, and fit.",
+    targetKeyword: "financial advisor vs financial planner",
+    optionA: "Financial Advisor",
+    optionB: "Financial Planner",
+    h1: "Financial Advisor vs Financial Planner: What's the Real Difference?",
+    introText:
+      "\"Financial advisor\" and \"financial 
+  - However, \"financial planner\" more often suggests a holistic, goal-based approach, and the [CFP credential](https://www.cfp.net/certification-process) is the clearest way to verify genuine planning expertise behind either title.
+  - On its own, neither title tells you whether someone is a fiduciary, how they're paid, or what they actually do for you.",
+    comparisonTable: {
+      rows: [
+        { dimension: "Regulatory status", a: "Unregulated title — anyone can use it", b: "Unregulated title — anyone can use it" },
+        {
