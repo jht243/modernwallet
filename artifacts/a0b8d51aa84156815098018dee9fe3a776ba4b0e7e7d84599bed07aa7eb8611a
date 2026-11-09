@@ -1,0 +1,30 @@
+INBOUND INSPECTION for /guides/how-to-make-a-financial-plan/ (2026-11-09)
+
+source /guides/financial-planning-calculator/ - title: How to Use a Financial Planning Calculator
+section: What a Financial Planning Calculator Calculates
+anchor: financial plan
+purpose: the guide talks about plans built from calculators; the new page gives the process
+relevant existing sentences (from the page record):
+  - slug: "financial-planning-calculator",
+    title: "How to Use a Financial Planning Calculator",
+    metaDescription:
+      "A financial planning calculator turns your income and goals into one number: your savings rate, retirement readiness, or net worth.
+  - Free tools inside.",
+    h1: "How to Use a Financial Planning Calculator",
+    cardBlurb: "What these tools calculate, the numbers worth tracking first, and where each one lives among ModernWallet's own free calculators.",
+    introText:
+      "A financial planning calculator takes your income, savi
+  - Below, you'll find what these tools calculate, which numbers are worth tracking first, and where to find each one among ModernWallet's own free calculators.",
+    sections: [
+      {
+        heading: "What a Financial Planning Calculator Calculates",
+        body: "A financial planning calculator co
+  - Securities and Exchange Commission's compound interest calculator](https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator) walks through this same mechanism, since compounding is the core of nearly every long-term financial projection.
+
+source /guides/financial-planning-for-30-year-olds/ - title: Financial Planning for 30 Year Olds: A Priority Order
+section: introduction (financial planning sentence)
+anchor: make a financial plan
+purpose: the age guide assumes a plan exists; the new page shows how to start one
+relevant existing sentences (from the page record):
+  - A simple rule of thumb: prioritize paying off any debt charging more than roughly 7% to 8% before investing beyond your employer match, and treat debt below that threshold as a normal monthly payment to make alongside investing, not a debt to rush." },
+      { heading: "Step 4: Get out of, and stay 

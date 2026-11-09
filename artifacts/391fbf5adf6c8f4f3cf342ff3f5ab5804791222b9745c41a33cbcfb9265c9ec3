@@ -1,0 +1,13 @@
+OUTBOUND INSPECTION for /guides/what-is-a-cfp/ (2026-11-09): destination existence, title and description from the page records
+
+destination /guides/what-is-a-cfa/ - title: What Is a Chartered Financial Analyst (CFA)?
+  description: What is a CFA? See the exam structure, real pass rates, total cost, eligibility rules, and when the charter actually matters for choosing an advisor.
+  section: CFP vs CFA vs CTFA and Who a CFP Is Not For; anchor: Chartered Financial Analyst; purpose: sibling credential
+
+destination /guides/what-is-a-ctfa/ - title: What Is a Certified Trust and Fiduciary Advisor (CTFA)?
+  description: What is a CTFA (Certified Trust and Fiduciary Advisor)? See who awards it and how it differs from a CFP, CFA, or ChFC.
+  section: CFP vs CFA vs CTFA and Who a CFP Is Not For; anchor: Certified Trust and Fiduciary Advisor; purpose: sibling credential
+
+destination /compare/financial-advisor-vs-financial-planner/ - title: Financial Advisor vs Financial Planner: Key Differences
+  description: Financial advisor vs financial planner: neither title is regulated, but the CFP credential signals real planning expertise. Compare scope, fees, and fit.
+  section: Fiduciary Commitment and Its Limits; anchor: financial advisor vs financial planner; purpose: title comparison

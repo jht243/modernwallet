@@ -1,0 +1,32 @@
+INBOUND INSPECTION for /guides/what-is-a-robo-advisor/ (2026-11-09)
+
+source /roundup/best-robo-advisors/ - title: Best Robo Advisors of 2026: Fees and Minimums Compared
+section: Introduction (sentence comparing robo-advisor with human planner)
+anchor: what a robo-advisor is
+purpose: the roundup assumes the reader knows the term; the new page defines it and the fit conditions
+relevant existing sentences (from the page record):
+  - slug: "best-robo-advisors",
+    title: "Best Robo Advisors of 2026: Fees and Minimums Compared",
+    metaDescription:
+      "Compare the best robo advisors of 2026 by advisory fee, account minimum, tax-loss harvesting threshold, and what adding a human CFP costs.",
+    targetKeyword: "best robo advi
+  - We compared seven robo-advisors across five factors that affect your net cost: advisory fees, minimum opening requirements, whether tax-loss harvesting is included and at what balance, how cash yields are treated, and the cost of access to a human CFP.
+  - Above $100,000, the question shifts to what the fee buys.
+  - To model what any of these fee rates cost over decades, use our [investment growth calculator](/investing/investment-growth-calculator/).",
+      },
+      {
+        heading: "When tax-loss harvesting is actually worth paying for",
+        content:
+          "Tax-loss harvesting sells a fund that has
+
+source /guides/financial-advisor-worth-it/ - title: Is a Financial Advisor Worth It? What to Know
+section: Robo-advisor vs. financial advisor: a quick side-by-side
+anchor: robo-advisor
+purpose: the section compares cost; the new page explains the model and limits
+relevant existing sentences (from the page record):
+  - Robo-advisors sit at the low end, often charging around 0.25% of assets with no dedicated human advisor attached.
+  - That behavioral gap alone can cost more than any advisor fee over a full market cycle." },
+      { heading: "Step 4: When DIY investing is the smarter choice", body: "If your situation is simple — one or two retirement accounts, no complex tax events, and the discipline to keep contributing on autop
+  - Once you decide an advisor is worth it, our [guide to choosing a financial advisor](/guides/how-to-choose-a-financial-advisor/) walks through fiduciary status, fee models, the CFP credential, and how to verify anyone before you hire them." },
+      { heading: "Robo-advisor vs.
+  - financial advisor: a quick side-by-side", body: "A robo-advisor and a financial advisor solve the same core problem, building and managing a portfolio, at very different price points and service levels.

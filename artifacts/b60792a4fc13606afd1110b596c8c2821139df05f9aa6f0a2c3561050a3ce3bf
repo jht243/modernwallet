@@ -1,0 +1,11 @@
+OUTBOUND INSPECTION for /guides/how-to-make-a-financial-plan/ (2026-11-09): destination existence, title and description from the page records
+
+destination /guides/financial-planning-calculator/ - title: How to Use a Financial Planning Calculator
+  description: A financial planning calculator turns your income and goals into one number: your savings rate, retirement readiness, or net worth. Free tools inside.
+  section: Step 2: Set Goals and Test Your Current Course; anchor: financial planning calculator; purpose: run the numbers
+
+destination /net-worth/how-to-calculate-net-worth - title: How to Calculate Net Worth for a Person (Step-by-Step)
+  description: See how to calculate net worth for a person: add up assets like cash and investments, subtract debts, and check your number against a worked example.
+  section: Step 1: Write Down Where You Stand; anchor: calculate your net worth; purpose: compute the starting number
+
+destination /guides/what-is-a-cfp/: sibling new page in this same run (action row for that route), section: Step 4: Act and Review, anchor: Certified Financial Planner, purpose: when to hire help

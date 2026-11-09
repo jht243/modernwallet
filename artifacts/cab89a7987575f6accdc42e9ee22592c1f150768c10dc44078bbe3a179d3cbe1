@@ -1,0 +1,61 @@
+{
+ "rows": [
+  {
+   "keyword": "what is a fiduciary",
+   "verdict": "unread",
+   "evidence": "SERP read failed: DataForSEO unavailable \u2014 no SERP read possible",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  },
+  {
+   "keyword": "what does a financial advisor do",
+   "verdict": "unread",
+   "evidence": "SERP read failed: DataForSEO unavailable \u2014 no SERP read possible",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  },
+  {
+   "keyword": "questions to ask a financial advisor",
+   "verdict": "unread",
+   "evidence": "SERP read failed: DataForSEO unavailable \u2014 no SERP read possible",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  },
+  {
+   "keyword": "what is a robo advisor",
+   "verdict": "unread",
+   "evidence": "SERP read failed: DataForSEO unavailable \u2014 no SERP read possible",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  },
+  {
+   "keyword": "what is a certified financial planner",
+   "verdict": "unread",
+   "evidence": "SERP read failed: DataForSEO unavailable \u2014 no SERP read possible",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  },
+  {
+   "keyword": "how to make a financial plan",
+   "verdict": "unread",
+   "evidence": "SERP read failed: DataForSEO unavailable \u2014 no SERP read possible",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  },
+  {
+   "keyword": "financial coach vs financial counselor",
+   "verdict": "unread",
+   "evidence": "SERP read failed: DataForSEO unavailable \u2014 no SERP read possible",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  }
+ ],
+ "cost": "DataForSEO: 0 calls, $0.00000 of $2.00 budget"
+}

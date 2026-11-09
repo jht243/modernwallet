@@ -1,0 +1,219 @@
+coverage_lookup: 6 candidate(s) vs 810 repo pages / 823 sitemap routes (https://themodernwallet.com) / 0 redirects / 1106 past-chart lines
+
+### /guides/what-is-a-fiduciary/  — row - · create new content
+keyword: what is a fiduciary / what is a fiduciary financial advisor
+reader question (new page intent): What is a fiduciary, and does my financial advisor have to be one?
+lookup terms: fiduciary financial advisor   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/how-to-choose-a-financial-advisor  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on financial advisor]
+    title: How to Choose a Financial Advisor: A Decision Guide
+    desc:  Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.
+- /guides/financial-advisor-worth-it  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on financial advisor]
+    title: Is a Financial Advisor Worth It? What to Know
+    desc:  Is a financial advisor worth it? See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.
+- /compare/financial-advisor-vs-financial-planner  [in sitemap · src/data/comparisons.ts · topic match 0.67 on financial advisor]
+    title: Financial Advisor vs Financial Planner: Key Differences
+    desc:  Financial advisor vs financial planner: neither title is regulated, but the CFP credential signals real planning expertise. Compare scope, fees, and fit.
+- /compare/financial-advisor-vs-cpa  [in sitemap · src/data/comparisons.ts · topic match 0.67 on financial advisor]
+    title: Financial Advisor vs CPA: Who Should You Hire?
+    desc:  Financial advisor vs CPA: investment management versus tax and accounting expertise, plus when the CPA/PFS credential means one person can do both.
+- /guides/what-is-a-ctfa  [in sitemap · src/data/guides.ts · topic match 0.67 on fiduciary advisor]
+    title: What Is a Certified Trust and Fiduciary Advisor (CTFA)?
+    desc:  What is a CTFA (Certified Trust and Fiduciary Advisor)? See who awards it and how it differs from a CFP, CFA, or ChFC.
+- /compare/financial-advisor-vs-wealth-manager  [in sitemap · src/data/comparisons.ts · topic match 0.67 on financial advisor]
+    title: Financial Advisor vs Wealth Manager: What's Different
+    desc:  Financial advisor vs wealth manager: minimums, services, and cost compared, so you know which one actually fits your net worth and needs.
+- /guides/financial-advisor-conflicts-of-interest  [in sitemap · src/data/guides.ts · topic match 0.67 on financial advisor]
+    title: How to Spot Financial Advisor Conflicts of Interest
+    desc:  Learn how financial advisor conflicts of interest work, fee-only vs fee-based differences, disclosure forms, and the exact questions to ask.
+- /compare/flat-fee-vs-aum-based-financial-advisors  [in sitemap · src/data/comparisons.ts · topic match 0.67 on financial advisor]
+    title: Flat-Fee vs. AUM Financial Advisors Compared by Cost
+    desc:  Compare flat-fee vs AUM financial advisor costs, crossover points, and fiduciary rules. See 2026 fee benchmarks to pick the right advisory model.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-07-10.md [exclusions] - **"how to find a financial advisor" question ladder** (2,400/1,300/590/390 vol): same page/intent family as the dropped trust row — potential future dedicated "find" guide flagged for a human to weigh against cannibali
+- 2026-09-09.md [table] | 6 | **Lens 2 — AI financial advisors (adjacent audience: people wanting AI advice, not a bot).** "ai financial advisor" 1900/kd30 (CPC $23), "ai wealth management" 880/kd3 (consumer slice). **Gate RECLASSIFY:** a stand
+- 2026-09-09.md [table] | AI financial advisors | ai financial advisor (1900); ai wealth management (880) | Commercial ranking intent overlaps shipped best-robo-advisors → enrich, don't duplicate (gate reclassify) | partial (best-robo-advisors 
+- 2026-09-09.md [exclusions] - **Gate reclassification:** Row 6 moved from a new roundup to an enrichment of `best-robo-advisors` (the duplicate-suppression reviewer flagged the standalone "best AI financial advisors" roundup as cannibalizing the ex
+- 2026-10-19-competitor.md [exclusions] - How to Choose a Financial Advisor — DROP: already live at /guides/how-to-choose-a-financial-advisor (exact slug).
+- 2026-10-27-podcast.md [exclusions] - when to hire a financial advisor (110/mo, KD 15; page one dominated by advisor firms) / should i use a financial advisor or diy (est. 0): DROPPED (exists). /guides/financial-advisor-worth-it and /guides/how-to-choose-a
+Commits naming the topic: none
+Same run overlap: row - /guides/what-does-a-financial-advisor-do/ (0.67); row - /guides/questions-to-ask-a-financial-advisor/ (0.67)
+
+### /guides/what-does-a-financial-advisor-do/  — row - · create new content
+keyword: what does a financial advisor do / financial counselor / financial coach
+reader question (new page intent): What does a financial advisor do for you, and how do credit counselors and coaches differ?
+lookup terms: financial advisor counselor coach   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/how-to-choose-a-financial-advisor  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.5 on financial advisor]
+    title: How to Choose a Financial Advisor: A Decision Guide
+    desc:  Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.
+- /guides/financial-advisor-worth-it  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.5 on financial advisor]
+    title: Is a Financial Advisor Worth It? What to Know
+    desc:  Is a financial advisor worth it? See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.
+- /compare/financial-advisor-vs-financial-planner  [in sitemap · src/data/comparisons.ts · topic match 0.5 on financial advisor]
+    title: Financial Advisor vs Financial Planner: Key Differences
+    desc:  Financial advisor vs financial planner: neither title is regulated, but the CFP credential signals real planning expertise. Compare scope, fees, and fit.
+- /compare/financial-advisor-vs-cpa  [in sitemap · src/data/comparisons.ts · topic match 0.5 on financial advisor]
+    title: Financial Advisor vs CPA: Who Should You Hire?
+    desc:  Financial advisor vs CPA: investment management versus tax and accounting expertise, plus when the CPA/PFS credential means one person can do both.
+- /compare/financial-advisor-vs-wealth-manager  [in sitemap · src/data/comparisons.ts · topic match 0.5 on financial advisor]
+    title: Financial Advisor vs Wealth Manager: What's Different
+    desc:  Financial advisor vs wealth manager: minimums, services, and cost compared, so you know which one actually fits your net worth and needs.
+- /guides/financial-advisor-conflicts-of-interest  [in sitemap · src/data/guides.ts · topic match 0.5 on financial advisor]
+    title: How to Spot Financial Advisor Conflicts of Interest
+    desc:  Learn how financial advisor conflicts of interest work, fee-only vs fee-based differences, disclosure forms, and the exact questions to ask.
+- /compare/flat-fee-vs-aum-based-financial-advisors  [in sitemap · src/data/comparisons.ts · topic match 0.5 on financial advisor]
+    title: Flat-Fee vs. AUM Financial Advisors Compared by Cost
+    desc:  Compare flat-fee vs AUM financial advisor costs, crossover points, and fiduciary rules. See 2026 fee benchmarks to pick the right advisory model.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-07-10.md [exclusions] - **"how to find a financial advisor" question ladder** (2,400/1,300/590/390 vol): same page/intent family as the dropped trust row — potential future dedicated "find" guide flagged for a human to weigh against cannibali
+- 2026-09-09.md [table] | 6 | **Lens 2 — AI financial advisors (adjacent audience: people wanting AI advice, not a bot).** "ai financial advisor" 1900/kd30 (CPC $23), "ai wealth management" 880/kd3 (consumer slice). **Gate RECLASSIFY:** a stand
+- 2026-09-09.md [table] | AI financial advisors | ai financial advisor (1900); ai wealth management (880) | Commercial ranking intent overlaps shipped best-robo-advisors → enrich, don't duplicate (gate reclassify) | partial (best-robo-advisors 
+- 2026-09-09.md [exclusions] - **Gate reclassification:** Row 6 moved from a new roundup to an enrichment of `best-robo-advisors` (the duplicate-suppression reviewer flagged the standalone "best AI financial advisors" roundup as cannibalizing the ex
+- 2026-10-19-competitor.md [exclusions] - How to Choose a Financial Advisor — DROP: already live at /guides/how-to-choose-a-financial-advisor (exact slug).
+- 2026-10-27-podcast.md [exclusions] - when to hire a financial advisor (110/mo, KD 15; page one dominated by advisor firms) / should i use a financial advisor or diy (est. 0): DROPPED (exists). /guides/financial-advisor-worth-it and /guides/how-to-choose-a
+Commits naming the topic: none
+Same run overlap: row - /guides/what-is-a-fiduciary/ (0.5); row - /guides/questions-to-ask-a-financial-advisor/ (0.5)
+
+### /guides/questions-to-ask-a-financial-advisor/  — row - · create new content
+keyword: questions to ask a financial advisor
+reader question (new page intent): What questions should I ask a financial advisor before hiring them?
+lookup terms: question ask financial advisor   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/how-to-choose-a-financial-advisor  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.5 on financial advisor]
+    title: How to Choose a Financial Advisor: A Decision Guide
+    desc:  Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.
+- /guides/financial-advisor-worth-it  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.5 on financial advisor]
+    title: Is a Financial Advisor Worth It? What to Know
+    desc:  Is a financial advisor worth it? See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.
+- /compare/financial-advisor-vs-financial-planner  [in sitemap · src/data/comparisons.ts · topic match 0.5 on financial advisor]
+    title: Financial Advisor vs Financial Planner: Key Differences
+    desc:  Financial advisor vs financial planner: neither title is regulated, but the CFP credential signals real planning expertise. Compare scope, fees, and fit.
+- /compare/financial-advisor-vs-cpa  [in sitemap · src/data/comparisons.ts · topic match 0.5 on financial advisor]
+    title: Financial Advisor vs CPA: Who Should You Hire?
+    desc:  Financial advisor vs CPA: investment management versus tax and accounting expertise, plus when the CPA/PFS credential means one person can do both.
+- /compare/financial-advisor-vs-wealth-manager  [in sitemap · src/data/comparisons.ts · topic match 0.5 on financial advisor]
+    title: Financial Advisor vs Wealth Manager: What's Different
+    desc:  Financial advisor vs wealth manager: minimums, services, and cost compared, so you know which one actually fits your net worth and needs.
+- /guides/questions-to-ask-a-mortgage-lender  [in sitemap · src/data/guides.ts · topic match 0.5 on question ask]
+    title: Questions to Ask a Mortgage Lender Before You Apply
+    desc:  Learn the essential questions to ask a mortgage lender. Compare loan programs, fees, rate locks, and closing costs using standard Loan Estimates.
+- /guides/financial-advisor-conflicts-of-interest  [in sitemap · src/data/guides.ts · topic match 0.5 on financial advisor]
+    title: How to Spot Financial Advisor Conflicts of Interest
+    desc:  Learn how financial advisor conflicts of interest work, fee-only vs fee-based differences, disclosure forms, and the exact questions to ask.
+- /checklists/house-viewing-checklist  [in sitemap · src/data/spokes-checklists.ts · topic match 0.5 on question ask]
+    title: Questions to Ask When Viewing a House: Checklist
+    desc:  A printable house viewing checklist with the questions to ask the agent and the things to check in person, plus a one-page sheet to compare showings.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-25.md [exclusions] - **Folded into a row rather than a separate page (same reader, would cannibalize):** `condo buying checklist` (80), `new construction checklist` (100), `house hunting checklist` (300), `printable home buying checklist` 
+- 2026-10-26-house-viewing.md [table] | 1 | **Lens 1 (direct intent — the user's first-visit checklist).** `questions to ask when buying a house` **1,200/KD 2** (broad; viewing questions are its on-page core), `open house checklist` 450/KD 2, `questions to a
+- 2026-10-26-house-viewing.md [exclusions] - Lens 2 adjacent: `questions to ask when buying a house` is folded into this row (its page-one results are viewing/agent question lists). Affordability PAA (salary for a $400k house) is served by /mortgage/home-affordab
+- 2026-10-27-podcast.md [table] | 2 | Direct intent (podcast: Ready For Retirement "What Should You Do With Your 401k When You Retire?"). Cluster: what to do with your 401k when you retire 260/mo KD 7 (DataForSEO measured); ac: what can you do with you
+- 2026-10-27-podcast.md [exclusions] - when to hire a financial advisor (110/mo, KD 15; page one dominated by advisor firms) / should i use a financial advisor or diy (est. 0): DROPPED (exists). /guides/financial-advisor-worth-it and /guides/how-to-choose-a
+- 2026-11-04-aca-snap.md [table] | Direct/adjacent demand: apply for food stamps, 40,500/month, KD58 (SEMrushUS2026-11-04). lookup: no match. Dedicated reader-intent gap; no prior exact-slug commits at local/pinned published revisions. | Create /guides/
+Commits naming the topic: none
+Same run overlap: row - /guides/what-is-a-fiduciary/ (0.5); row - /guides/what-does-a-financial-advisor-do/ (0.5)
+
+### /guides/what-is-a-robo-advisor/  — row - · create new content
+keyword: what is a robo advisor / robo advisor
+reader question (new page intent): What is a robo-advisor, and is one right for me?
+lookup terms: robo advisor   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /roundup/best-robo-advisors  [in sitemap · src/data/roundups.ts · topic match 1.0 on robo advisor]
+    title: Best Robo Advisors of 2026: Fees and Minimums Compared
+    desc:  Compare the best robo advisors of 2026 by advisory fee, account minimum, tax-loss harvesting threshold, and what adding a human CFP costs.
+- /compare/ai-investing-vs-robo-advisors  [in sitemap · src/data/comparisons.ts · topic match 1.0 on robo advisor]
+    title: AI Investing vs Robo-Advisor: Which Fits Your Goals?
+    desc:  Compare AI investing apps and robo-advisors on fees, control, and automation to see which setup matches your portfolio goals and trading style.
+- /compare/betterment-vs-wealthfront  [in sitemap · src/data/comparisons.ts · topic match 1.0 on robo advisor]
+    title: Betterment vs Wealthfront: Robo-Advisor Fees Compared
+    desc:  Betterment vs Wealthfront compared on management fees, account minimums, direct indexing, and advisor access so you can pick the right robo-advisor.
+- /guides/how-to-choose-a-financial-advisor  [in sitemap · src/data/guides.ts · topic match 0.5 on advisor]
+    title: How to Choose a Financial Advisor: A Decision Guide
+    desc:  Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.
+- /guides/financial-advisor-worth-it  [in sitemap · src/data/guides.ts · topic match 0.5 on advisor]
+    title: Is a Financial Advisor Worth It? What to Know
+    desc:  Is a financial advisor worth it? See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.
+- /guides/what-is-a-ctfa  [in sitemap · src/data/guides.ts · topic match 0.5 on advisor]
+    title: What Is a Certified Trust and Fiduciary Advisor (CTFA)?
+    desc:  What is a CTFA (Certified Trust and Fiduciary Advisor)? See who awards it and how it differs from a CFP, CFA, or ChFC.
+- /compare/financial-advisor-vs-financial-planner  [in sitemap · src/data/comparisons.ts · topic match 0.5 on advisor]
+    title: Financial Advisor vs Financial Planner: Key Differences
+    desc:  Financial advisor vs financial planner: neither title is regulated, but the CFP credential signals real planning expertise. Compare scope, fees, and fit.
+- /compare/financial-advisor-vs-cpa  [in sitemap · src/data/comparisons.ts · topic match 0.5 on advisor]
+    title: Financial Advisor vs CPA: Who Should You Hire?
+    desc:  Financial advisor vs CPA: investment management versus tax and accounting expertise, plus when the CPA/PFS credential means one person can do both.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-21.md [table] | Rolling / zeroed-out GRAT strategy | rolling grat (140, $25.68 CPC); zeroed out grat (70); rolling grat strategy (10); rolling grat example; PAA: how long can a GRAT last / how much does a GRAT cost | The exact strateg
+- 2026-09-28.md [table] | "how does edward jones rank" (1 searcher) on `/roundup/best-brokers-for-treasury-bonds/`, an existing 4-option roundup (TreasuryDirect, Fidelity, Schwab, Vanguard) that does not mention Edward Jones at all — a genuine 
+- 2026-09-30-robinhood.cannibalization.md [table] | /guides/wash-sale-rule-explained | /roundup/best-robo-advisors ("wash-sale trap" section), /guides/portfolio-rebalancing (FAQ) | no: in-body mentions only; neither targets "wash sale rule" (14,800) | leave alone; add a
+- 2026-10-19-competitor.md [exclusions] - How to Choose a Financial Advisor — DROP: already live at /guides/how-to-choose-a-financial-advisor (exact slug).
+- 2026-10-27-podcast.md [table] | 1 | Direct intent (podcast: Ready For Retirement, Catching Up to FI "4 Phases of Retirement"). Cluster: phases of retirement 480/mo KD 9 (DataForSEO measured); go-go slow-go no-go retirement ~20/mo (estimate band, NOT 
+- 2026-10-27-podcast.md [exclusions] - when to hire a financial advisor (110/mo, KD 15; page one dominated by advisor firms) / should i use a financial advisor or diy (est. 0): DROPPED (exists). /guides/financial-advisor-worth-it and /guides/how-to-choose-a
+Commits naming the topic: none
+Same run overlap: row - /guides/what-is-a-fiduciary/ (0.5); row - /guides/what-does-a-financial-advisor-do/ (0.5); row - /guides/questions-to-ask-a-financial-advisor/ (0.5)
+
+### /guides/what-is-a-cfp/  — row - · create new content
+keyword: what is a certified financial planner / what is a cfp
+reader question (new page intent): What is a Certified Financial Planner (CFP), and what does it take to earn the credential?
+lookup terms: cfp certified financial planner   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/financial-advisor-vs-financial-planner  [in sitemap · src/data/comparisons.ts · topic match 0.5 on financial planner]
+    title: Financial Advisor vs Financial Planner: Key Differences
+    desc:  Financial advisor vs financial planner: neither title is regulated, but the CFP credential signals real planning expertise. Compare scope, fees, and fit.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-09.md [table] | 6 | **Lens 2 — AI financial advisors (adjacent audience: people wanting AI advice, not a bot).** "ai financial advisor" 1900/kd30 (CPC $23), "ai wealth management" 880/kd3 (consumer slice). **Gate RECLASSIFY:** a stand
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/how-to-make-a-financial-plan/  — row - · create new content
+keyword: how to make a financial plan
+reader question (new page intent): How do I make a financial plan?
+lookup terms: financial   format cues: pricing
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/what-is-a-cfa  [in sitemap · src/data/guides.ts · topic match 1.0 on financial · same format: pricing]
+    title: What Is a Chartered Financial Analyst (CFA)?
+    desc:  What is a CFA? See the exam structure, real pass rates, total cost, eligibility rules, and when the charter actually matters for choosing an advisor.
+- /guides/how-to-choose-a-financial-advisor  [in sitemap · src/data/guides.ts · topic match 1.0 on financial]
+    title: How to Choose a Financial Advisor: A Decision Guide
+    desc:  Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.
+- /guides/financial-advisor-worth-it  [in sitemap · src/data/guides.ts · topic match 1.0 on financial]
+    title: Is a Financial Advisor Worth It? What to Know
+    desc:  Is a financial advisor worth it? See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.
+- /guides/financial-planning-calculator  [in sitemap · src/data/guides.ts · topic match 1.0 on financial]
+    title: How to Use a Financial Planning Calculator
+    desc:  A financial planning calculator turns your income and goals into one number: your savings rate, retirement readiness, or net worth. Free tools inside.
+- /retirement/fire-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 1.0 on financial]
+    title: FIRE Calculator: Find Your FIRE Number
+    desc:  Use our FIRE calculator to find your Financial Independence number, project your early retirement date, and compare lean FIRE, FIRE, and fat FIRE targets.
+- /compare/financial-advisor-vs-financial-planner  [in sitemap · src/data/comparisons.ts · topic match 1.0 on financial]
+    title: Financial Advisor vs Financial Planner: Key Differences
+    desc:  Financial advisor vs financial planner: neither title is regulated, but the CFP credential signals real planning expertise. Compare scope, fees, and fit.
+- /compare/financial-advisor-vs-cpa  [in sitemap · src/data/comparisons.ts · topic match 1.0 on financial]
+    title: Financial Advisor vs CPA: Who Should You Hire?
+    desc:  Financial advisor vs CPA: investment management versus tax and accounting expertise, plus when the CPA/PFS credential means one person can do both.
+- /guides/ai-financial-advice-chatbots-guide  [in sitemap · src/data/guides.ts · topic match 1.0 on financial]
+    title: AI Chatbots for Financial Advice: A Practical Guide
+    desc:  What ChatGPT, Gemini, and Claude get right and wrong on money questions, plus a framework to prompt well, verify answers, and know when to see a human.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms: none
+Commits naming the topic: none
+Same run overlap: row - /guides/what-is-a-fiduciary/ (1.0); row - /guides/what-does-a-financial-advisor-do/ (1.0); row - /guides/questions-to-ask-a-financial-advisor/ (1.0); row - /guides/what-is-a-cfp/ (1.0)
+

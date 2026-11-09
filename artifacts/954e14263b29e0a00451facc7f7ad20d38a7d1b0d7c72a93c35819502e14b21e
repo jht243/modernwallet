@@ -1,0 +1,13 @@
+OUTBOUND INSPECTION for /guides/what-does-a-financial-advisor-do/ (2026-11-09): destination existence, title and description from the page records
+
+destination /guides/financial-advisor-worth-it/ - title: Is a Financial Advisor Worth It? What to Know
+  description: Is a financial advisor worth it? See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.
+  section: Need More Than a Description?; anchor: is a financial advisor worth it; purpose: break-even math
+
+destination /guides/how-to-choose-a-financial-advisor/ - title: How to Choose a Financial Advisor: A Decision Guide
+  description: Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.
+  section: Need More Than a Description?; anchor: how to choose a financial advisor; purpose: verification steps
+
+destination /compare/financial-advisor-vs-financial-planner/ - title: Financial Advisor vs Financial Planner: Key Differences
+  description: Financial advisor vs financial planner: neither title is regulated, but the CFP credential signals real planning expertise. Compare scope, fees, and fit.
+  section: Advisor, Credit Counselor and Coach; anchor: financial advisor vs financial planner; purpose: title comparison
