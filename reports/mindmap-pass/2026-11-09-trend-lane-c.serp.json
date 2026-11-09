@@ -1,0 +1,111 @@
+{
+ "rows": [
+  {
+   "keyword": "nerdwallet auto loan calculator",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "google.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "related_searches": 1
+   },
+   "paa": [],
+   "related_searches": [
+    "Simple car loan calculator",
+    "Car loan calculator Google",
+    "Free car loan calculator",
+    "How much is a $30K car payment for 72 months",
+    "Best car loan calculator",
+    "$15,000 car loan over 5 years calculator",
+    "84 month car loan calculator",
+    "Car payment calculator with down payment"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "9/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites www.nerdwallet.com, google.com, www.youtube.com",
+   "se_results_count": 129
+  },
+  {
+   "keyword": "nerdwallet retirement calculator",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 8,
+    "related_searches": 1,
+    "video": 1
+   },
+   "paa": [],
+   "related_searches": [
+    "Nerdwallet retirement calculator with taxes",
+    "Nerdwallet retirement calculator withdrawal",
+    "Nerdwallet retirement calculator reddit",
+    "NerdWallet CD calculator",
+    "Best retirement plans for individuals",
+    "Best retirement plans for young adults",
+    "Best retirement plans for 40 year olds",
+    "Best retirement plans for older adults"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "8/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites www.nerdwallet.com, www.youtube.com",
+   "se_results_count": 172
+  }
+ ],
+ "cost": "DataForSEO: 2 calls, $0.00400 of $2.00 budget"
+}
