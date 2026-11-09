@@ -1,11 +1,42 @@
 {
- "originRoutine": "competitor-monitor-auto",
- "queryFamily": "what does a financial advisor do / financial counselor / financial coach",
- "hypothesis": "A dedicated primary-source explainer earns clicks for the query family the site does not answer today; unproven",
- "primaryMetric": "GSC clicks",
- "baseline": "unavailable (new route, not zero)",
- "comparatorPlan": "age-matched new guides",
- "changeScope": "new route",
- "sourceRefreshTrigger": "Rule or credential-requirement change at the cited bodies",
- "outcomeStatus": "not-yet-published"
+  "originRoutine": "competitor-monitor-auto",
+  "queryFamily": "what does a financial advisor do / financial counselor / financial coach",
+  "hypothesis": "A dedicated primary-source explainer earns clicks for the query family the site does not answer today; unproven",
+  "primaryMetric": "GSC clicks",
+  "baseline": {
+    "status": "unavailable",
+    "reason": "No verified pre-change GSC extract in the run evidence; retry historical date-filtered extraction during the existing measurement routine.",
+    "priorSpecification": "unavailable (new route, not zero)"
+  },
+  "comparatorPlan": "age-matched new guides",
+  "changeScope": "new route",
+  "sourceRefreshTrigger": "Rule or credential-requirement change at the cited bodies",
+  "outcomeStatus": "not-yet-published",
+  "path": "/guides/what-does-a-financial-advisor-do/",
+  "contributionId": "evidence/what-does-a-financial-advisor-do/growth.json",
+  "growthFile": "evidence/what-does-a-financial-advisor-do/growth.json",
+  "evidenceFile": "evidence/what-does-a-financial-advisor-do/evidence.json",
+  "commit": "5541f2a0ff26ab679d6a1d27a8f53bc86c04456a",
+  "status": "live-verified",
+  "firstVerifiedLiveAt": "2026-11-09T23:28:33.917121+00:00",
+  "verifiedAt": "2026-11-09T23:28:33.917121+00:00",
+  "snapshotSha256": "6ae54a0fe5db1d6ab7a61c96994dc5cc41be0890e0f3990780c571c1b355ece8",
+  "deployment": {
+    "commit": "5541f2a0ff26ab679d6a1d27a8f53bc86c04456a",
+    "status": "live",
+    "evidenceUrl": "https://github.com/jht243/modernwallet/commit/5541f2a0ff26ab679d6a1d27a8f53bc86c04456a",
+    "liveUrl": "https://www.themodernwallet.com/guides/what-is-a-fiduciary/",
+    "verifiedAt": "2026-11-09T23:34:12Z",
+    "note": "origin/main contains the commit; live HTTP 200 on all 13 routes; rendered-audit compare: live render matches approved render for the three exact approved subsets"
+  },
+  "windows": {
+    "days1to28": {
+      "start": "2026-11-10",
+      "end": "2026-12-07"
+    },
+    "days29to56": {
+      "start": "2026-12-08",
+      "end": "2027-01-04"
+    }
+  }
 }

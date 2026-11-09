@@ -1,0 +1,46 @@
+{
+ "author": "competitor-orchestrator",
+ "canonicalBase": "https://www.themodernwallet.com",
+ "routes": [
+  {
+   "path": "/guides/financial-advisor-worth-it/",
+   "requiredText": [
+    "what a financial advisor does",
+    "questions to ask a financial advisor",
+    "what a robo-advisor is"
+   ]
+  },
+  {
+   "path": "/compare/financial-advisor-vs-financial-planner/",
+   "requiredText": [
+    "what a fiduciary is",
+    "what a financial advisor does"
+   ]
+  },
+  {
+   "path": "/guides/what-is-a-cfa/",
+   "requiredText": [
+    "what a CFP is"
+   ]
+  },
+  {
+   "path": "/roundup/best-robo-advisors/",
+   "requiredText": [
+    "What a robo-advisor is"
+   ]
+  },
+  {
+   "path": "/guides/financial-planning-calculator/",
+   "requiredText": [
+    "how to make a financial plan"
+   ]
+  },
+  {
+   "path": "/guides/financial-planning-for-30-year-olds/",
+   "requiredText": [
+    "how to make a financial plan"
+   ]
+  }
+ ],
+ "workflowKind": "mindmap-pass"
+}

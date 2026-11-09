@@ -1,0 +1,42 @@
+{
+ "dispositions": {
+  "https://www.bankrate.com/mortgages/homebuying-in-america-va-loan": {
+   "disposition": "skipped-low-value"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/find-a-black-financial-advisor": {
+   "disposition": "skipped-low-value"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/fiduciary": {
+   "disposition": "published",
+   "our_url": "https://www.themodernwallet.com/guides/what-is-a-fiduciary/"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/what-does-a-financial-advisor-do": {
+   "disposition": "published",
+   "our_url": "https://www.themodernwallet.com/guides/what-does-a-financial-advisor-do/"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/financial-counselor": {
+   "disposition": "enriched",
+   "our_url": "https://www.themodernwallet.com/guides/what-does-a-financial-advisor-do/"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/financial-coach": {
+   "disposition": "enriched",
+   "our_url": "https://www.themodernwallet.com/guides/what-does-a-financial-advisor-do/"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/questions-ask-financial-advisor": {
+   "disposition": "published",
+   "our_url": "https://www.themodernwallet.com/guides/questions-to-ask-a-financial-advisor/"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/what-is-a-robo-advisor": {
+   "disposition": "published",
+   "our_url": "https://www.themodernwallet.com/guides/what-is-a-robo-advisor/"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/certified-financial-planner": {
+   "disposition": "published",
+   "our_url": "https://www.themodernwallet.com/guides/what-is-a-cfp/"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/what-is-a-financial-plan": {
+   "disposition": "published",
+   "our_url": "https://www.themodernwallet.com/guides/how-to-make-a-financial-plan/"
+  }
+ }
+}

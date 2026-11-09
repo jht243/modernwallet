@@ -66475,11 +66475,15 @@
           "status": "baseline"
         },
         "https://www.bankrate.com/mortgages/homebuying-in-america-va-loan": {
+          "acted": false,
+          "acted_date": "2026-11-09",
           "content_hash": "sha256:359bec9ad554529038390fc79d0f06f5c061c02ae387e478ed4492653f5042f6",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-11-09",
           "kind": "page",
           "last_seen": "2026-11-09",
           "lastmod": "2026-11-09T16:19:48-05:00",
+          "our_url": "",
           "outline": [
             "Setting the scene on homebuying",
             "Behind her homebuying experience",
@@ -66490,7 +66494,7 @@
           "relevance_hits": [
             "loan"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How a VA Loan Helped This Veteran Buy Her First Home | Bankrate",
           "tool_io": []
         },
@@ -184960,11 +184964,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/financial-advisors/learn/certified-financial-planner": {
+          "acted": true,
+          "acted_date": "2026-11-09",
           "content_hash": "sha256:fbc168a89023ec4bdfbfd1e97209651cc109d65db19d1d42f033596a3b4ee886",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-11-09",
           "lastmod": "2026-11-09T12:29:03-08:00",
+          "our_url": "https://www.themodernwallet.com/guides/what-is-a-cfp/",
           "outline": [
             "What is your top financial priority?",
             "What does a certified financial planner do?",
@@ -184974,7 +184982,7 @@
           "relevance_hits": [
             "financial"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Certified Financial Planner (CFP): Details to Know - NerdWallet",
           "tool_io": []
         },
@@ -185091,11 +185099,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/financial-advisors/learn/fiduciary": {
+          "acted": true,
+          "acted_date": "2026-11-09",
           "content_hash": "sha256:449cc28b8661bba291c0d9a254d4e2ac04d91a4cdb062d58c1b62051610dbe0c",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-11-09",
           "lastmod": "2026-11-09T12:28:54-08:00",
+          "our_url": "https://www.themodernwallet.com/guides/what-is-a-fiduciary/",
           "outline": [
             "What is your top financial priority?",
             "Understanding fiduciary duty",
@@ -185107,7 +185119,7 @@
           "relevance_hits": [
             "financial"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Fiduciary Meaning: What Is a Fiduciary Duty? - NerdWallet",
           "tool_io": []
         },
@@ -185233,11 +185245,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/financial-advisors/learn/financial-coach": {
+          "acted": true,
+          "acted_date": "2026-11-09",
           "content_hash": "sha256:73c5a04833a2e7e20a5d1170ae83ce21014dabeaa267e11000c0f81fb740b6d4",
+          "disposition": "enriched",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-11-09",
           "lastmod": "2026-11-09T12:28:23-08:00",
+          "our_url": "https://www.themodernwallet.com/guides/what-does-a-financial-advisor-do/",
           "outline": [
             "What is your top financial priority?",
             "What does a financial coach do?",
@@ -185254,16 +185270,20 @@
           "relevance_hits": [
             "financial"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Is a Financial Coach and How to Become One - NerdWallet",
           "tool_io": []
         },
         "https://www.nerdwallet.com/financial-advisors/learn/financial-counselor": {
+          "acted": true,
+          "acted_date": "2026-11-09",
           "content_hash": "sha256:dc43e005214abe00bc3a6282052f644d210b337ff47f05b437d8c691b2b58434",
+          "disposition": "enriched",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-11-09",
           "lastmod": "2026-11-09T12:28:45-08:00",
+          "our_url": "https://www.themodernwallet.com/guides/what-does-a-financial-advisor-do/",
           "outline": [
             "What is your top financial priority?",
             "What financial counselors do",
@@ -185274,16 +185294,20 @@
           "relevance_hits": [
             "financial"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Financial Counselor: Definition, What They Do, How to Find One - NerdWallet",
           "tool_io": []
         },
         "https://www.nerdwallet.com/financial-advisors/learn/find-a-black-financial-advisor": {
+          "acted": false,
+          "acted_date": "2026-11-09",
           "content_hash": "sha256:cd8d93f3a23c945863c124bb07bd2273f1a9309bfcd173ef5f6fc84766f1550f",
+          "disposition": "skipped-low-value",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-11-09",
           "lastmod": "2026-11-09T12:27:37-08:00",
+          "our_url": "",
           "outline": [
             "What is your top financial priority?",
             "Why finding a Black financial advisor matters",
@@ -185293,7 +185317,7 @@
           "relevance_hits": [
             "financial"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "How to Find a Black Financial Advisor - NerdWallet",
           "tool_io": []
         },
@@ -185492,15 +185516,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/financial-advisors/learn/questions-ask-financial-advisor": {
-          "acted": false,
-          "acted_date": "2026-10-14",
+          "acted": true,
+          "acted_date": "2026-11-09",
           "content_hash": "sha256:40ea12405560754193b9169c980060452f8dfa20015a118eeb24a5ba320585d7",
-          "disposition": "skipped-duplicate",
+          "disposition": "published",
           "first_seen": "2026-10-14",
           "kind": "page",
           "last_seen": "2026-11-09",
           "lastmod": "2026-11-09T12:28:15-08:00",
-          "our_url": "/guides/financial-advisor-worth-it/",
+          "our_url": "https://www.themodernwallet.com/guides/questions-to-ask-a-financial-advisor/",
           "outline": [
             "What is your top financial priority?",
             "Questions at a glance",
@@ -185517,7 +185541,7 @@
             "financial",
             "investment"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "8 Questions to Ask a Financial Advisor \u2014 and the Answers You Want to Hear - NerdWallet",
           "tool_io": []
         },
@@ -185612,11 +185636,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/financial-advisors/learn/what-does-a-financial-advisor-do": {
+          "acted": true,
+          "acted_date": "2026-11-09",
           "content_hash": "sha256:d97abbba7006618b82d6f0208c2a4db587aaa0c586066848199807d4cf82a1ad",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-11-09",
           "lastmod": "2026-11-09T12:27:50-08:00",
+          "our_url": "https://www.themodernwallet.com/guides/what-does-a-financial-advisor-do/",
           "outline": [
             "What is your top financial priority?",
             "How financial advisors get paid",
@@ -185625,7 +185653,7 @@
           "relevance_hits": [
             "financial"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Does a Financial Advisor Do and Should I Get One? - NerdWallet",
           "tool_io": []
         },
@@ -185672,11 +185700,15 @@
           "tool_io": []
         },
         "https://www.nerdwallet.com/financial-advisors/learn/what-is-a-financial-plan": {
+          "acted": true,
+          "acted_date": "2026-11-09",
           "content_hash": "sha256:14df309b8f3b25928ba69b1fec4f2ae0f3e336654bf94992e3fd0f81a883a1d9",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-11-09",
           "lastmod": "2026-11-09T12:29:22-08:00",
+          "our_url": "https://www.themodernwallet.com/guides/how-to-make-a-financial-plan/",
           "outline": [
             "What is your top financial priority?",
             "A financial plan in 9 steps",
@@ -185703,7 +185735,7 @@
             "retirement",
             "tax"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "Financial Planning: A Step-by-Step Guide - NerdWallet",
           "tool_io": []
         },
@@ -185716,11 +185748,15 @@
           "status": "baseline"
         },
         "https://www.nerdwallet.com/financial-advisors/learn/what-is-a-robo-advisor": {
+          "acted": true,
+          "acted_date": "2026-11-09",
           "content_hash": "sha256:1ada4c5491935d52f2a0f1f73d643a310409b15d5b421e9ae107adfb1099f04c",
+          "disposition": "published",
           "first_seen": "2026-07-03",
           "kind": "page",
           "last_seen": "2026-11-09",
           "lastmod": "2026-11-09T12:27:58-08:00",
+          "our_url": "https://www.themodernwallet.com/guides/what-is-a-robo-advisor/",
           "outline": [
             "What is your top financial priority?",
             "Robo-advisor costs",
@@ -185733,7 +185769,7 @@
           "relevance_hits": [
             "financial"
           ],
-          "status": "pending",
+          "status": "done",
           "title": "What Is a Robo-Advisor, and Is One Right for You? - NerdWallet",
           "tool_io": []
         },

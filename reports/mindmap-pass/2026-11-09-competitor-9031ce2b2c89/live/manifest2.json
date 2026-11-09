@@ -1,0 +1,24 @@
+{
+ "author": "competitor-orchestrator",
+ "canonicalBase": "https://www.themodernwallet.com",
+ "routes": [
+  {
+   "path": "/guides/what-is-a-fiduciary/",
+   "expectedUpdatedDate": "2026-11-09",
+   "requiredText": [
+    "What Is a Fiduciary",
+    "Our Takeaway"
+   ],
+   "forbiddenText": [
+    "we tested",
+    "We tested",
+    "our testing",
+    "In our internal",
+    "Tested and reviewed"
+   ],
+   "growthFile": "evidence/what-is-a-fiduciary/growth.json",
+   "evidenceFile": "evidence/what-is-a-fiduciary/evidence.json"
+  }
+ ],
+ "workflowKind": "mindmap-pass"
+}
