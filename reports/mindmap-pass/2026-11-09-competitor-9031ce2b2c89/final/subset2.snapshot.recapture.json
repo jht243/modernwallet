@@ -1,0 +1,2955 @@
+{
+  "capturedAt": "2026-11-09T23:24:00.139776+00:00",
+  "baseUrl": "http://127.0.0.1:4399",
+  "domDir": null,
+  "manifest": {
+    "author": "competitor-orchestrator",
+    "canonicalBase": "https://www.themodernwallet.com",
+    "routes": [
+      {
+        "path": "/guides/what-is-a-fiduciary/",
+        "expectedUpdatedDate": "2026-11-09",
+        "requiredText": [
+          "What Is a Fiduciary",
+          "Our Takeaway"
+        ],
+        "forbiddenText": [
+          "we tested",
+          "We tested",
+          "our testing",
+          "In our internal",
+          "Tested and reviewed"
+        ],
+        "growthFile": "evidence/what-is-a-fiduciary/growth.json",
+        "evidenceFile": "evidence/what-is-a-fiduciary/evidence.json"
+      }
+    ],
+    "workflowKind": "mindmap-pass"
+  },
+  "routes": [
+    {
+      "path": "/guides/what-is-a-fiduciary/",
+      "status": 200,
+      "fingerprint": "2a7cf4bc685cb05bac6e13ce3713995459702d3b896eb9469a3bb6bee1e018d6",
+      "semantic": {
+        "text": "ModernWallet Free Financial Calculators Calculators All calculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate Elder Care Trump Account 529 College Savings Coast FIRE Business Loan Payoff Personal Loan Interest Per Day Taxable vs. Tax-Deferred Credit Card Payoff IUL Merchant Cash Advance Invoice Factoring Business Line of Credit PTO Cash-Out Zakat Life Insurance Needs Self-Employment Tax Operating Cash Flow Mileage Deduction Cash Conversion Cycle Freelance Rate HELOC S-Corp Tax Commercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Mileage Reimbursement Portfolio Rebalancing Hurricane Deductible Annuity Credit Card Interest Loan Payment HYSA vs CD Trump Account vs 529 Mortgage Recast Social Security COLA Biweekly Mortgage Roth vs Traditional 401(k) Pay Off Mortgage or Invest Florida Amendment 3 Student Loan Garnishment Tax Bracket Debt-to-Income Ratio Taxable Social Security Checklists Charitable Donation Deduction Car Loan Interest Deduction Rent vs Buy Stock Capital Gains Tax Hidden Cost of Owning a Home × ModernWallet / Guides / What Is a Fiduciary? What Is a Fiduciary? By Jonathan Velez , Personal Finance Writer & Editor · Reviewed against primary sources · Updated November 9, 2026 A fiduciary is a professional who must act in your best interest, and some financial advisors are required to be one. Three rules decide who owes you what. The Securities and Exchange Commission (SEC) holds registered investment advisers to a fiduciary duty and holds broker-dealers to a separate standard called Regulation Best Interest. A Certified Financial Planner (CFP) professional must act as a fiduciary whenever giving financial advice to a client. Many firms are registered as both a broker and an adviser, so the person you hire may offer accounts under either rule. The firm's customer or client relationship summary, called Form CRS , states the standard of conduct tied to its services. Tools for this journey All financial calculators → What a Fiduciary Is and Who Has to Be One A fiduciary is a professional who must act in your best interest and may not put their own interest ahead of yours. Investor.gov states the rule for investment advisers this way: advisers \"are required to act in your best interest and not put their interest ahead of yours.\" The rule reads differently for investment advisers, broker-dealers and CFP professionals. Registered investment advisers owe a fiduciary duty with two parts. In a July 8, 2019 statement, SEC Chairman Jay Clayton said the duty is \"comprised of both a duty of care and a duty of loyalty.\" It requires an adviser to act in the client's best interest and not subordinate that interest to the adviser's own. Investor.gov says advisers typically give ongoing advice about buying, selling or holding investments. They also monitor how those investments perform and whether they still fit your overall objectives. Broker-dealers follow Regulation Best Interest, which the same SEC statement says \"imposes a new standard of conduct specifically for broker-dealers.\" The rule requires a broker to act in the \"best interest of their retail customers\" and to meet four component obligations: Disclosure Care Conflict of Interest Compliance The SEC statement presents Regulation Best Interest as its own standard for brokers, apart from the adviser fiduciary duty. CFP professionals take on a fiduciary duty through certification. The Certified Financial Planner Board of Standards (CFP Board) Code of Ethics and Standards of Conduct says: \"At all times when providing Financial Advice to a Client, a CFP professional must act as a fiduciary, and therefore, act in the best interests of the Client.\" The CFP Board describes the ethics requirement as the final step on the path to certification, when the candidate signs the Ethics Declaration. Our guide to the CFP credential explains what the certification involves. Which Standard Applies to an Adviser, Broker or Dual Registrant The standard that applies depends on how the professional and the firm are registered, and the firm's Form CRS states it in writing. Investor.gov says both brokers and advisers can give advice about buying investments like stock in a company or an index fund. Both can also advise on whether to sell or hold afterward. Professional Standard named by the source Where to see it SEC-registered investment adviser Fiduciary duty of care and loyalty (SEC statement, Investor.gov) The firm's Form CRS, which states the required standard of conduct Broker-dealer Regulation Best Interest, with Disclosure, Care, Conflict of Interest and Compliance obligations (SEC statement) The firm's Form CRS Dual registrant (registered as both broker and adviser) The standard tied to each service the firm offers The firm's Form CRS, which states the types of services and the required standard of conduct CFP professional Must act as a fiduciary when providing financial advice (CFP Board Code) The CFP Board verification page Investor.gov says many firms are registered as both a broker and an adviser. These dual registrants offer both advisory and brokerage services and accounts. Investor.gov adds that a combination may be a good choice in some cases, depending on your goals, preferences and needs. If you open more than one account at a dual registrant, ask which standard covers each account. Conflicts and Titles That a Fiduciary Duty Leaves in Place A fiduciary duty does not remove conflicts of interest, and Investor.gov says so on its investment adviser page. Right after stating the best-interest rule, the page adds: \"At the same time, the way advisers make money creates some conflicts with your interests.\" Investor.gov says you should understand these conflicts and ask an adviser about them, because they can affect the advice you get. Investor.gov ties these conflicts to the way advisers make money. Investor.gov says an adviser's fee is typically based on the value of all the assets in your account with that adviser. You may also pay other fees and costs for servicing the account and for the investments you buy, sell or hold. The firm's Form CRS lists its fees and costs and its conflicts of interest. It also says whether the firm and its financial professionals have reportable legal or disciplinary history. Titles and initials need a closer look. Investor.gov's \"Tricky Titles\" guidance says not to assume that initials after a broker's or adviser's name make that person more qualified than another. The titles are not all the same, and some initials mean the person can only sell certain products. Investor.gov also points to a list showing that some credentials are easy to obtain while others are hard-earned. The Certified Trust and Fiduciary Advisor (CTFA) is a separate credential, covered in our CTFA guide . Whatever the title, look up the person's registration at adviserinfo.sec.gov before relying on the letters. How to Check a Financial Professional Before You Hire Registration is the first thing to check, because Investor.gov says the most important question before hiring an investment professional is whether the person is registered with the SEC or a state securities regulator. Investor.gov also says it is \"really risky to invest with someone who isn't licensed.\" Four checks cover the standards described here: Search an adviser's name at adviserinfo.sec.gov and a broker's name at BrokerCheck . Confirm any CFP claim on the CFP Board's verification page . Ask for the firm's Form CRS and read its standard of conduct, fees and costs, conflicts of interest and disciplinary history. Investor.gov says these summaries use similar headings in the same order, so you can lay two firms' summaries side by side. Ask in writing which standard applies to your account: the adviser fiduciary duty, Regulation Best Interest, or the CFP Board fiduciary requirement. Investor.gov's guidance on selecting an adviser lists what to weigh before you choose: What services and products you need What services and products the adviser can provide, and any limits on them How much you will pay for services and transactions How the adviser gets paid What conflicts of interest the adviser may have Whether the adviser has legal or disciplinary history, and for what type of conduct Form CRS also includes key questions to ask, called conversation starters. Our guide to choosing a financial advisor walks through the rest of the decision. Who a Fiduciary Is Not For and What Would Change the Answer Ongoing fiduciary advice may be more than you need if you want a one-time answer or manage a simple portfolio on your own. Investor.gov describes the typical adviser arrangement as ongoing advice with monitoring, paid by a fee typically based on the value of the assets in your account. If you want help with a single decision, read a firm's Form CRS first to see which services it offers. Investor.gov notes that advisers may also give advice about market trends or asset allocation, or offer financial planning services. This answer rests on published rules, so any of these changes would change it: The SEC amends Regulation Best Interest or its interpretation of the adviser fiduciary duty. The CFP Board changes its Code of Ethics and Standards of Conduct. The person you are considering is registered only as a broker, so Regulation Best Interest applies instead of the adviser duty. The person holds no registration, which Investor.gov calls \"really risky\" to invest with. If your question is about job titles rather than legal standards, our financial advisor vs. financial planner comparison covers the two titles. Our Takeaway A fiduciary must act in your best interest. An SEC-registered investment adviser owes that as a duty of care and loyalty, a broker-dealer owes the separate Regulation Best Interest standard, and a CFP professional commits to fiduciary duty in the CFP Board Code. Investor.gov says the way advisers make money creates some conflicts, so read the firm's Form CRS and ask about them. The answer changes if the person is registered only as a broker or holds neither registration. Rules outside SEC registration and the CFP Board, such as state rules and the roles of insurance agents, banks and trust companies, are not covered here. Before you hire anyone, search the person on adviserinfo.sec.gov or BrokerCheck , then ask in writing which standard applies to your account. Our guide to choosing a financial advisor lists the next questions to ask. Frequently asked questions Is a financial advisor a fiduciary? Some are, depending on how they are registered. An SEC-registered investment adviser owes a fiduciary duty of care and loyalty, and a CFP professional must act as a fiduciary when giving financial advice. A professional registered as a broker-dealer works under Regulation Best Interest, a separate SEC standard for brokers. Many firms are registered as both, so ask which standard applies to your account and read the firm's Form CRS. Is a fiduciary the same as a financial planner? Not necessarily. A fiduciary duty comes from a registration or a credential, and Investor.gov warns that titles and initials are not all the same. A CFP professional is different, because the CFP Board Code says a CFP professional must act as a fiduciary when providing financial advice to a client. Why is a fiduciary important? A fiduciary must act in your best interest and not put their own interest ahead of yours, according to Investor.gov. That duty does not remove conflicts of interest, since Investor.gov says the way advisers make money creates some conflicts with your interests. The firm's Form CRS lists those conflicts so you can ask about them before you hire. Who needs a fiduciary? Anyone paying for investment advice should know whether the person giving it owes a fiduciary duty or another standard. Investor.gov says advisers typically give ongoing advice and monitor your investments. If you need a single answer or manage a simple portfolio yourself, ongoing advice may be more than you need. Sources We prioritize primary sources for rules, formulas, rates, limits, and definitions. See our calculator methodology and editorial policy . SEC, Statement on Regulation Best Interest and the Investment Adviser Fiduciary Duty (Chairman Jay Clayton, July 8, 2019) Investor.gov, Investment Advisers Investor.gov, Form CRS CFP Board, Code of Ethics and Standards of Conduct CFP Board, Verify a CFP Professional SEC, Investment Adviser Search FINRA BrokerCheck ModernWallet Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results. 📣 Advertise With Us Calculators All calculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate Elder Care Trump Account 529 College Savings Coast FIRE Business Loan Payoff Personal Loan Interest Per Day Taxable vs. Tax-Deferred Credit Card Payoff IUL Merchant Cash Advance Invoice Factoring Business Line of Credit PTO Cash-Out Zakat Life Insurance Needs Self-Employment Tax Operating Cash Flow Mileage Deduction Cash Conversion Cycle Freelance Rate HELOC S-Corp Tax Commercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Mileage Reimbursement Portfolio Rebalancing Hurricane Deductible Annuity Credit Card Interest Loan Payment HYSA vs CD Trump Account vs 529 Mortgage Recast Social Security COLA Biweekly Mortgage Roth vs Traditional 401(k) Pay Off Mortgage or Invest Florida Amendment 3 Student Loan Garnishment Tax Bracket Debt-to-Income Ratio Taxable Social Security Checklists Charitable Donation Deduction Car Loan Interest Deduction Rent vs Buy Stock Capital Gains Tax Hidden Cost of Owning a Home Comparisons All comparisons 401(k) vs Roth IRA Roth vs Traditional 401(k) 529 vs Roth IRA ETF vs Mutual Fund HSA vs FSA VA Loan vs Conventional 15 vs 30-Year Mortgage Fixed vs ARM Mortgage HYSA vs Money Market Stocks vs Bonds Free Templates All templates Freelance Invoice Freelance Contract Statement of Work Retainer Agreement Mileage Log Expense Report S-Corp Tax Calculator QBI Deduction Explained LLC vs S Corp Guides & Best-of All best-of roundups First-Time Home Buyer How to Buy a Car Best 401(k) Providers Best Budgeting Apps Best Money Market Accounts Best Net Worth Trackers Best Retirement Accounts Best Mileage Tracker Apps Best Freelance Accounting Software Best Invoicing Apps © 2026 ModernWallet · For educational purposes — not financial advice. Guides · About · Contact · Editorial Policy · Methodology · Privacy Policy · Powered by Layer3Labs Some links on this site are referral or affiliate links, including our Robinhood referral link — we may earn a reward or commission at no cost to you. This never affects our rankings or editorial coverage.",
+        "h1": "What Is a Fiduciary?",
+        "title": "What Is a Fiduciary and Which Advisors Must Act for You",
+        "canonical": "https://www.themodernwallet.com/guides/what-is-a-fiduciary/",
+        "meta": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "generator": "Astro v4.16.19",
+          "description": "A fiduciary must act in your best interest. See which standard binds advisers, brokers and Certified Financial Planner professionals, and how to check.",
+          "og:type": "website",
+          "og:site_name": "ModernWallet",
+          "og:title": "What Is a Fiduciary and Which Advisors Must Act for You",
+          "og:description": "A fiduciary must act in your best interest. See which standard binds advisers, brokers and Certified Financial Planner professionals, and how to check.",
+          "og:url": "https://www.themodernwallet.com/guides/what-is-a-fiduciary/",
+          "og:image": "https://www.themodernwallet.com/favicon-192.png",
+          "twitter:card": "summary_large_image",
+          "twitter:title": "What Is a Fiduciary and Which Advisors Must Act for You",
+          "twitter:description": "A fiduciary must act in your best interest. See which standard binds advisers, brokers and Certified Financial Planner professionals, and how to check.",
+          "twitter:image": "https://www.themodernwallet.com/favicon-192.png"
+        },
+        "links": [
+          "/",
+          "/calculators/",
+          "/auto-loan/",
+          "/mortgage/",
+          "/retirement/",
+          "/investing/",
+          "/portfolio/",
+          "/real-estate/",
+          "/net-worth/",
+          "/budget/",
+          "/tax-resolution/",
+          "/estate-planning/",
+          "/probate/",
+          "/elder-care/",
+          "/trump-account/",
+          "/529-savings-calculator/",
+          "/coast-fire/",
+          "/business-loan-payoff/",
+          "/personal-loan/",
+          "/interest-per-day/",
+          "/taxable-vs-tax-deferred/",
+          "/credit-card-payoff/",
+          "/iul-calculator/",
+          "/merchant-cash-advance/",
+          "/invoice-factoring/",
+          "/business-line-of-credit/",
+          "/pto-cashout/",
+          "/zakat/",
+          "/life-insurance-needs/",
+          "/self-employment-tax/",
+          "/operating-cash-flow/",
+          "/mileage-deduction/",
+          "/cash-conversion-cycle/",
+          "/freelance-rate/",
+          "/heloc-calculator/",
+          "/s-corp-tax/",
+          "/commercial-mortgage-calculator/",
+          "/cd-calculator/",
+          "/emergency-fund-calculator/",
+          "/debt-consolidation-calculator/",
+          "/inflation-calculator/",
+          "/expense-ratio-calculator/",
+          "/social-security-break-even-calculator/",
+          "/mileage-reimbursement-calculator/",
+          "/portfolio-rebalancing-calculator/",
+          "/hurricane-deductible-calculator/",
+          "/annuity-calculator/",
+          "/credit-card-interest-calculator/",
+          "/loan-payment-calculator/",
+          "/hysa-vs-cd-calculator/",
+          "/trump-account-vs-529-calculator/",
+          "/mortgage-recast-calculator/",
+          "/social-security-cola-calculator/",
+          "/biweekly-mortgage-calculator/",
+          "/roth-vs-traditional-401k-calculator/",
+          "/pay-off-mortgage-or-invest-calculator/",
+          "/florida-amendment-3-calculator/",
+          "/student-loan-wage-garnishment-calculator/",
+          "/tax-bracket-calculator/",
+          "/debt-to-income-ratio-calculator/",
+          "/social-security-taxable-benefits-calculator/",
+          "/checklists/",
+          "/charitable-donation-tax-deduction-calculator/",
+          "/car-loan-interest-deduction-calculator/",
+          "/rent-vs-buy-calculator/",
+          "/stock-capital-gains-tax-calculator/",
+          "/hidden-cost-of-owning-a-home-calculator/",
+          "/",
+          "/guides/",
+          "/about/",
+          "https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty",
+          "https://www.investor.gov/CRS",
+          "/calculators/",
+          "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers",
+          "https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct",
+          "/guides/what-is-a-cfp/",
+          "https://www.cfp.net/verify-a-cfp-professional",
+          "/guides/what-is-a-ctfa/",
+          "https://adviserinfo.sec.gov",
+          "https://adviserinfo.sec.gov",
+          "https://brokercheck.finra.org",
+          "https://www.cfp.net/verify-a-cfp-professional",
+          "https://www.investor.gov/CRS",
+          "/guides/how-to-choose-a-financial-advisor/",
+          "/compare/financial-advisor-vs-financial-planner/",
+          "https://adviserinfo.sec.gov",
+          "https://brokercheck.finra.org",
+          "/guides/how-to-choose-a-financial-advisor/",
+          "/methodology/",
+          "/editorial-policy/",
+          "https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty",
+          "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers",
+          "https://www.investor.gov/CRS",
+          "https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct",
+          "https://www.cfp.net/verify-a-cfp-professional",
+          "https://adviserinfo.sec.gov",
+          "https://brokercheck.finra.org",
+          "/",
+          "/sponsor",
+          "/calculators/",
+          "/auto-loan/",
+          "/mortgage/",
+          "/retirement/",
+          "/investing/",
+          "/portfolio/",
+          "/real-estate/",
+          "/net-worth/",
+          "/budget/",
+          "/tax-resolution/",
+          "/estate-planning/",
+          "/probate/",
+          "/elder-care/",
+          "/trump-account/",
+          "/529-savings-calculator/",
+          "/coast-fire/",
+          "/business-loan-payoff/",
+          "/personal-loan/",
+          "/interest-per-day/",
+          "/taxable-vs-tax-deferred/",
+          "/credit-card-payoff/",
+          "/iul-calculator/",
+          "/merchant-cash-advance/",
+          "/invoice-factoring/",
+          "/business-line-of-credit/",
+          "/pto-cashout/",
+          "/zakat/",
+          "/life-insurance-needs/",
+          "/self-employment-tax/",
+          "/operating-cash-flow/",
+          "/mileage-deduction/",
+          "/cash-conversion-cycle/",
+          "/freelance-rate/",
+          "/heloc-calculator/",
+          "/s-corp-tax/",
+          "/commercial-mortgage-calculator/",
+          "/cd-calculator/",
+          "/emergency-fund-calculator/",
+          "/debt-consolidation-calculator/",
+          "/inflation-calculator/",
+          "/expense-ratio-calculator/",
+          "/social-security-break-even-calculator/",
+          "/mileage-reimbursement-calculator/",
+          "/portfolio-rebalancing-calculator/",
+          "/hurricane-deductible-calculator/",
+          "/annuity-calculator/",
+          "/credit-card-interest-calculator/",
+          "/loan-payment-calculator/",
+          "/hysa-vs-cd-calculator/",
+          "/trump-account-vs-529-calculator/",
+          "/mortgage-recast-calculator/",
+          "/social-security-cola-calculator/",
+          "/biweekly-mortgage-calculator/",
+          "/roth-vs-traditional-401k-calculator/",
+          "/pay-off-mortgage-or-invest-calculator/",
+          "/florida-amendment-3-calculator/",
+          "/student-loan-wage-garnishment-calculator/",
+          "/tax-bracket-calculator/",
+          "/debt-to-income-ratio-calculator/",
+          "/social-security-taxable-benefits-calculator/",
+          "/checklists/",
+          "/charitable-donation-tax-deduction-calculator/",
+          "/car-loan-interest-deduction-calculator/",
+          "/rent-vs-buy-calculator/",
+          "/stock-capital-gains-tax-calculator/",
+          "/hidden-cost-of-owning-a-home-calculator/",
+          "/compare/",
+          "/compare/401k-vs-roth-ira/",
+          "/compare/roth-401k-vs-traditional-401k/",
+          "/compare/529-vs-roth-ira/",
+          "/compare/etf-vs-mutual-fund/",
+          "/compare/hsa-vs-fsa/",
+          "/compare/va-loan-vs-conventional-loan/",
+          "/compare/15-year-vs-30-year-mortgage/",
+          "/compare/fixed-vs-arm-mortgage/",
+          "/compare/hysa-vs-money-market/",
+          "/compare/stocks-vs-bonds/",
+          "/templates/",
+          "/templates/freelance-invoice-template/",
+          "/templates/freelance-contract-template/",
+          "/templates/statement-of-work-template/",
+          "/templates/retainer-agreement-template/",
+          "/templates/mileage-log-template/",
+          "/templates/expense-report-template/",
+          "/s-corp-tax/",
+          "/guides/qbi-deduction-explained/",
+          "/compare/llc-vs-s-corp/",
+          "/roundup/",
+          "/guides/first-time-home-buyer-guide/",
+          "/guides/how-to-buy-a-car/",
+          "/roundup/best-401k-providers-for-small-business/",
+          "/roundup/best-budgeting-apps-for-couples/",
+          "/roundup/best-money-market-accounts/",
+          "/roundup/best-net-worth-tracker/",
+          "/roundup/best-retirement-accounts-for-self-employed/",
+          "/roundup/best-mileage-tracker-apps/",
+          "/roundup/best-accounting-software-for-freelancers/",
+          "/roundup/best-invoicing-apps-for-freelancers/",
+          "/guides/",
+          "/about/",
+          "/contact/",
+          "/editorial-policy/",
+          "/methodology/",
+          "/privacy-policy/",
+          "https://www.layer3labs.io"
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://www.themodernwallet.com/#organization",
+            "name": "ModernWallet",
+            "url": "https://www.themodernwallet.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.themodernwallet.com/favicon.svg"
+            },
+            "description": "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results.",
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "Layer3Labs",
+              "url": "https://www.layer3labs.io"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://www.themodernwallet.com/#website",
+            "url": "https://www.themodernwallet.com/",
+            "name": "ModernWallet",
+            "description": "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results."
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ModernWallet",
+                "item": "https://www.themodernwallet.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Guides",
+                "item": "https://www.themodernwallet.com/guides/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "What Is a Fiduciary?",
+                "item": "https://www.themodernwallet.com/guides/what-is-a-fiduciary/"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is a financial advisor a fiduciary?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Some are, depending on how they are registered. An SEC-registered investment adviser owes a fiduciary duty of care and loyalty, and a CFP professional must act as a fiduciary when giving financial advice. A professional registered as a broker-dealer works under Regulation Best Interest, a separate SEC standard for brokers. Many firms are registered as both, so ask which standard applies to your account and read the firm's Form CRS."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is a fiduciary the same as a financial planner?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Not necessarily. A fiduciary duty comes from a registration or a credential, and Investor.gov warns that titles and initials are not all the same. A CFP professional is different, because the CFP Board Code says a CFP professional must act as a fiduciary when providing financial advice to a client."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why is a fiduciary important?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A fiduciary must act in your best interest and not put their own interest ahead of yours, according to Investor.gov. That duty does not remove conflicts of interest, since Investor.gov says the way advisers make money creates some conflicts with your interests. The firm's Form CRS lists those conflicts so you can ask about them before you hire."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who needs a fiduciary?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Anyone paying for investment advice should know whether the person giving it owes a fiduciary duty or another standard. Investor.gov says advisers typically give ongoing advice and monitor your investments. If you need a single answer or manage a simple portfolio yourself, ongoing advice may be more than you need."
+                }
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Jonathan Velez",
+            "url": "https://www.themodernwallet.com/about/",
+            "jobTitle": "Personal Finance Writer & Editor",
+            "description": "Jonathan Velez writes and edits ModernWallet's personal-finance content, focused on loans, interest, and debt payoff. Every calculator page is reviewed against primary sources like the CFPB and Federal Reserve.",
+            "knowsAbout": [
+              "Auto loans",
+              "Loan amortization",
+              "Interest and APR",
+              "Debt payoff strategies",
+              "Personal finance"
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "ModernWallet",
+              "url": "https://www.themodernwallet.com"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "What Is a Fiduciary?",
+            "description": "A fiduciary must act in your best interest. See which standard binds advisers, brokers and Certified Financial Planner professionals, and how to check.",
+            "url": "https://www.themodernwallet.com/guides/what-is-a-fiduciary/",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://www.themodernwallet.com/favicon.svg"
+            },
+            "datePublished": "2026-11-09",
+            "dateModified": "2026-11-09",
+            "author": {
+              "@type": "Person",
+              "name": "Jonathan Velez",
+              "url": "https://www.themodernwallet.com/about/"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "ModernWallet",
+              "url": "https://www.themodernwallet.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.themodernwallet.com/favicon.svg"
+              }
+            },
+            "citation": [
+              {
+                "@type": "CreativeWork",
+                "name": "SEC, Statement on Regulation Best Interest and the Investment Adviser Fiduciary Duty (Chairman Jay Clayton, July 8, 2019)",
+                "url": "https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Investor.gov, Investment Advisers",
+                "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Investor.gov, Form CRS",
+                "url": "https://www.investor.gov/CRS"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "CFP Board, Code of Ethics and Standards of Conduct",
+                "url": "https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "CFP Board, Verify a CFP Professional",
+                "url": "https://www.cfp.net/verify-a-cfp-professional"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "SEC, Investment Adviser Search",
+                "url": "https://adviserinfo.sec.gov"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "FINRA BrokerCheck",
+                "url": "https://brokercheck.finra.org"
+              }
+            ]
+          }
+        ],
+        "structure": [
+          [
+            "html",
+            {}
+          ],
+          [
+            "body",
+            {}
+          ],
+          [
+            "header",
+            {
+              "class": "site-header"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "hdr-inner"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "brand-group"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "brand",
+              "href": "/",
+              "aria-label": "ModernWallet home"
+            }
+          ],
+          [
+            "svg",
+            {
+              "viewbox": "0 0 32 32",
+              "width": "26",
+              "height": "26",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "rect",
+            {
+              "width": "32",
+              "height": "32",
+              "fill": "var(--primary)"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "8",
+              "y": "6",
+              "width": "16",
+              "height": "20",
+              "fill": "none",
+              "stroke": "#fff"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "11",
+              "y": "9.5",
+              "width": "10",
+              "height": "4",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "16",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "19.8",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "22",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-name"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-divider",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-tagline"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "primary-nav",
+              "aria-label": "Primary"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "nav-dd"
+            }
+          ],
+          [
+            "button",
+            {
+              "type": "button",
+              "class": "nav-trigger"
+            }
+          ],
+          [
+            "svg",
+            {
+              "class": "chev",
+              "viewbox": "0 0 24 24",
+              "width": "16",
+              "height": "16",
+              "fill": "none",
+              "stroke": "currentColor",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "polyline",
+            {
+              "points": "6 9 12 15 18 9"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "nav-menu",
+              "role": "menu"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "menu-all",
+              "href": "/calculators/",
+              "role": "menuitem"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "menu-cols"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/auto-loan/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/investing/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/real-estate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/net-worth/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/budget/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/estate-planning/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/probate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/elder-care/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/529-savings-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/coast-fire/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-loan-payoff/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/personal-loan/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/interest-per-day/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/taxable-vs-tax-deferred/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-payoff/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/iul-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/merchant-cash-advance/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/invoice-factoring/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-line-of-credit/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pto-cashout/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/zakat/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/life-insurance-needs/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/operating-cash-flow/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-deduction/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cash-conversion-cycle/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/freelance-rate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/heloc-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/commercial-mortgage-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cd-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/emergency-fund-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-consolidation-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/inflation-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/expense-ratio-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-break-even-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-reimbursement-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio-rebalancing-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hurricane-deductible-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/annuity-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-interest-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/loan-payment-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hysa-vs-cd-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account-vs-529-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage-recast-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-cola-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/biweekly-mortgage-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roth-vs-traditional-401k-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pay-off-mortgage-or-invest-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/florida-amendment-3-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/student-loan-wage-garnishment-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-to-income-ratio-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-taxable-benefits-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/checklists/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/charitable-donation-tax-deduction-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/car-loan-interest-deduction-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rent-vs-buy-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/stock-capital-gains-tax-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hidden-cost-of-owning-a-home-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns"
+            }
+          ],
+          [
+            "button",
+            {
+              "class": "ns__toggle",
+              "type": "button",
+              "aria-label": "Search"
+            }
+          ],
+          [
+            "svg",
+            {
+              "width": "18",
+              "height": "18",
+              "viewbox": "0 0 24 24",
+              "fill": "none",
+              "stroke": "currentColor",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "11",
+              "cy": "11",
+              "r": "7"
+            }
+          ],
+          [
+            "path",
+            {
+              "d": "m20 20-3.5-3.5"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__panel",
+              "hidden": ""
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__box"
+            }
+          ],
+          [
+            "input",
+            {
+              "class": "ns__input",
+              "type": "search",
+              "placeholder": "Search calculators, guides…",
+              "aria-label": "Search the site",
+              "role": "combobox"
+            }
+          ],
+          [
+            "button",
+            {
+              "class": "ns__close",
+              "type": "button",
+              "aria-label": "Close search"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__results",
+              "role": "listbox"
+            }
+          ],
+          [
+            "main",
+            {
+              "class": "page"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "crumb",
+              "aria-label": "Breadcrumb"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "crumb-current"
+            }
+          ],
+          [
+            "header",
+            {
+              "class": "hero"
+            }
+          ],
+          [
+            "h1",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "byline"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "by"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/about/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "sep",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "rev"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.investor.gov/CRS",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "tools",
+              "aria-label": "Tools for this journey"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "tools-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "tool-pills"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "tool-pill",
+              "href": "/calculators/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "arrow",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ul",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/what-is-a-cfp/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "table-wrap"
+            }
+          ],
+          [
+            "table",
+            {
+              "class": "prose-table"
+            }
+          ],
+          [
+            "thead",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "tbody",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.cfp.net/verify-a-cfp-professional",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/what-is-a-ctfa/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://adviserinfo.sec.gov",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ol",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://adviserinfo.sec.gov",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://brokercheck.finra.org",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.cfp.net/verify-a-cfp-professional",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.investor.gov/CRS",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ul",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/how-to-choose-a-financial-advisor/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ul",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/financial-advisor-vs-financial-planner/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://adviserinfo.sec.gov",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://brokercheck.finra.org",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/how-to-choose-a-financial-advisor/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "faqs"
+            }
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section sources"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "source-note"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/methodology/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/editorial-policy/"
+            }
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.investor.gov/CRS",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.cfp.net/verify-a-cfp-professional",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://adviserinfo.sec.gov",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://brokercheck.finra.org",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "footer",
+            {
+              "class": "site-footer"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-inner"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-left"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "brand",
+              "href": "/",
+              "aria-label": "ModernWallet home"
+            }
+          ],
+          [
+            "svg",
+            {
+              "viewbox": "0 0 32 32",
+              "width": "22",
+              "height": "22",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "rect",
+            {
+              "width": "32",
+              "height": "32",
+              "fill": "var(--primary)"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "8",
+              "y": "6",
+              "width": "16",
+              "height": "20",
+              "fill": "none",
+              "stroke": "#fff"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "11",
+              "y": "9.5",
+              "width": "10",
+              "height": "4",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "16",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "tagline"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "sponsor-pill",
+              "href": "/sponsor",
+              "rel": "nofollow"
+            }
+          ],
+          [
+            "span",
+            {
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-navs"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer calculators"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/calculators/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/auto-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/investing/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/real-estate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/net-worth/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/budget/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/estate-planning/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/probate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/elder-care/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/529-savings-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/coast-fire/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-loan-payoff/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/personal-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/interest-per-day/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/taxable-vs-tax-deferred/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-payoff/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/iul-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/merchant-cash-advance/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/invoice-factoring/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-line-of-credit/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pto-cashout/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/zakat/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/life-insurance-needs/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/operating-cash-flow/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-deduction/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cash-conversion-cycle/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/freelance-rate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/heloc-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/commercial-mortgage-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cd-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/emergency-fund-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-consolidation-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/inflation-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/expense-ratio-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-break-even-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-reimbursement-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio-rebalancing-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hurricane-deductible-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/annuity-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-interest-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/loan-payment-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hysa-vs-cd-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account-vs-529-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage-recast-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-cola-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/biweekly-mortgage-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roth-vs-traditional-401k-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pay-off-mortgage-or-invest-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/florida-amendment-3-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/student-loan-wage-garnishment-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-to-income-ratio-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-taxable-benefits-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/checklists/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/charitable-donation-tax-deduction-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/car-loan-interest-deduction-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rent-vs-buy-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/stock-capital-gains-tax-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hidden-cost-of-owning-a-home-calculator/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer comparisons"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/401k-vs-roth-ira/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/roth-401k-vs-traditional-401k/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/529-vs-roth-ira/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/etf-vs-mutual-fund/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hsa-vs-fsa/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/va-loan-vs-conventional-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/15-year-vs-30-year-mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/fixed-vs-arm-mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hysa-vs-money-market/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/stocks-vs-bonds/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer templates"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp links-grid--single"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/freelance-invoice-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/freelance-contract-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/statement-of-work-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/retainer-agreement-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/mileage-log-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/expense-report-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/qbi-deduction-explained/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/llc-vs-s-corp/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer guides"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp links-grid--single"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/first-time-home-buyer-guide/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/how-to-buy-a-car/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-401k-providers-for-small-business/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-budgeting-apps-for-couples/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-money-market-accounts/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-net-worth-tracker/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-retirement-accounts-for-self-employed/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-mileage-tracker-apps/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-accounting-software-for-freelancers/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-invoicing-apps-for-freelancers/"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-legal"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "legal-left"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "legal-right"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/about/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/contact/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/editorial-policy/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/methodology/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/privacy-policy/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.layer3labs.io",
+              "target": "_blank",
+              "rel": "noopener noreferrer"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-disclosure"
+            }
+          ],
+          [
+            "p",
+            {}
+          ]
+        ]
+      },
+      "failures": [],
+      "htmlSha256": "61c5caa17525c60f57d133f387c373a73999c3c34eec6e922ad599cb4526d39c",
+      "htmlFile": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset2.snapshot.recapture/aa1989ef0ead6b0c131e.html",
+      "textFile": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset2.snapshot.recapture/aa1989ef0ead6b0c131e.txt",
+      "textSha256": "c5be388b18a67f267ce01c5e432889e84bc3dfd8a68925e8d3ee1c9e260d3265"
+    }
+  ],
+  "contentReviewPolicy": {
+    "version": "risk-review-budget-2026-11-08.1",
+    "sha256": "710d2007855d901e1e5e2afdf569f5dafa46c19fb9089f89b99560ff80db016d"
+  },
+  "correctionBoundary": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset2.snapshot.recapture/correction-boundary.json",
+    "sha256": "837a91aaa875f4a391a5d650aa837842328e4e6ac01f8058d6a7f5f370fca97f",
+    "version": "targeted-corrections-2026-11-08.1"
+  },
+  "snapshotSha256": "3db5843a07422ae91518c75579f64a5b9734906b4a6017b116111c732dc231ef"
+}

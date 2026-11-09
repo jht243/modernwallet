@@ -1,0 +1,14 @@
+PAGE /guides/how-to-choose-a-financial-advisor/ | round 2 | reviewer phase4-auditor-1 | VERDICT FAIL | profile high
+Round-1 findings were re-checked against the exact new render. Resolved items are noted; only open or newly introduced defects are listed. This is round 2 of 3: the next verification is the last the HIGH budget allows, so apply every item below.
+
+R2-1 [coach job description contradicts the sibling guide (round-1 F3 only half fixed)]  FIELD: src/data/guides.ts, intro section and FAQ 'Is a financial coach the same as a financial advisor?'
+  QUOTE: "A financial coach or financial counselor typically focuses on budgeting, debt payoff, and money habits rather than managing investments."
+  QUOTE: "No. A financial coach or financial counselor typically helps with budgeting, debt payoff, and money habits."
+  DEFECT: The licensing clauses were removed (round-1 F3 resolved for licensing) and the Regulation Best Interest and 'simple yes' text is fixed (F1, F2 resolved; the date is visibly 2026-11-09 with datePublished kept at 2026-06-25, F4 resolved). But the remaining sentences still define what a coach or counselor does. No fetched source defines a coach's work, and the linked sibling guide says so. Round-1 allowed these only if attributed or softened.
+  FIX: REPLACE the first with: "A financial coach or financial counselor may offer many kinds of help, so ask what that specific person provides." and the FAQ sentence with: "Not necessarily. Titles differ, so ask what that specific person provides and verify any registration or designation they claim." (keep the final sentence about advisers needing registration).
+
+R2-2 [outdated statement of the broker standard in the opening answer (newly identified)]  FIELD: src/data/guides.ts, introText
+  QUOTE: "Others only need to recommend something suitable, which is a weaker rule."
+  DEFECT: The page's first paragraph says non-fiduciary advisors 'only need to recommend something suitable'. Brokers now owe Regulation Best Interest, which this same page says two sections later ('Regulation Best Interest now raises the broker standard') and which the linked fiduciary guide quotes from the SEC. The opening answer therefore contradicts the page's own Step 1 and the guide it now links to. I missed this in round 1; it is the only blocker left on this route besides R2-1.
+  FIX: REPLACE with: "Others, such as brokers, follow Regulation Best Interest, a separate SEC standard for broker-dealers." (the FAQ's 'historically followed a weaker suitability standard' wording is accurate and can stay).
+

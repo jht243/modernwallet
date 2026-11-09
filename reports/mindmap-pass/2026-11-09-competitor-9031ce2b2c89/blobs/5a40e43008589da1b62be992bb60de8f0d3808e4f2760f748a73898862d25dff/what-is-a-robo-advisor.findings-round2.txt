@@ -1,0 +1,14 @@
+PAGE /guides/what-is-a-robo-advisor/ | round 2 | reviewer phase4-auditor-1 | VERDICT FAIL | profile high
+Round-1 findings were re-checked against the exact new render. Resolved items are noted; only open or newly introduced defects are listed. This is round 2 of 3: the next verification is the last the HIGH budget allows, so apply every item below.
+
+R2-1 [unsupported claim introduced by the fix]  FIELD: introText
+  QUOTE: "and the [Investor.gov glossary](https://www.investor.gov/introduction-investing/investing-basics/glossary/robo-adviser) gives the same definition."
+  DEFECT: Nothing in the fact list or captures says the SEC bulletin gives 'the same definition' as the glossary (FB1 is the glossary wording; FB2 describes the bulletin differently). The sentence also makes the SEC link point at the bulletin while the clause claims equivalence.
+  FIX: REPLACE with: "and the [Investor.gov glossary](https://www.investor.gov/introduction-investing/investing-basics/glossary/robo-adviser) defines the term."
+
+R2-2 [dangling pronoun left by the restatement deletion]  FIELD: sections[4].body
+  QUOTE: "Our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) compares the two."
+  DEFECT: After the 'poor fit' sentence was deleted, the section opens with 'compares the two' and no antecedent: the reader has not been told which two things (backward-pronoun / first-read failure).
+  FIX: REPLACE with: "Our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) compares a robo-advisor with a human advisor."
+
+Also record the `teeup-exempt: source-attributed regulatory explainer; no licensed first-hand framing fits` run note for every new guide with no tee-up (none exists in the run records yet).

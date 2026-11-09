@@ -1,0 +1,15 @@
+PAGE /guides/what-is-a-cfp/ | round 2 | reviewer phase4-auditor-1 | VERDICT FAIL | profile high
+Round-1 findings were re-checked against the exact new render. Resolved items are noted; only open or newly introduced defects are listed. This is round 2 of 3: the next verification is the last the HIGH budget allows, so apply every item below.
+
+R2-1 [overloaded sentences introduced by the fix (source support itself now PASSES)]  FIELD: sections[3].body, faqs[1].answer, sections[3].body
+  QUOTE: "The credential does not set one way to be paid, but the CFP Board Code requires a CFP professional giving financial advice to tell you before or at the engagement how you pay and how the professional and firm are compensated, while registration as an adviser or broker must still be checked separately."
+  QUOTE: "Morgan Securities LLC's](https://files.brokercheck.finra.org/crs_79.pdf) [Form CRS](https://www.investor.gov/CRS) (Client Relationship Summary), for example, says it pays its financial professionals in different ways, including commissions and advisory fees, and that higher commissions, costs or fees could lead to higher compensation for a financial professional."
+  DEFECT: Round-1 F1 is resolved: I checked the new compensation statements against sources/cfp-fiduciary.txt (sections 'Provide Information to a Client When Providing Financial Advice' and the Financial Planning counterpart, plus 'Duties When Representing Compensation Method'); J.P. Morgan Securities LLC is correctly named and its CRS link serves the same PDF as the capture. But the replacement sentence is 53 words (duplicated in FAQ 2 at 42) and the J.P. Morgan sentence is 40 words, each with three clauses. GATE overloaded sentence: needs a second read.
+  FIX: Split: "The credential does not set one way to be paid. The CFP Board Code requires a CFP professional giving financial advice to tell you before or at the engagement how you pay and how the professional and firm are compensated. Registration as an adviser or broker must still be checked separately." and "J.P. Morgan Securities LLC's Form CRS, for example, says it pays its financial professionals in different ways, including commissions and advisory fees. It also says higher commissions, costs or fees could lead to higher compensation for a financial professional." (keep both links on first mention; make the same split in FAQ 2).
+
+R2-2 [monotone-rhythm (5 near-equal sentences)]  FIELD: sections[2].body list and the sentence after it
+  QUOTE: "You can turn the seven headings into first-meeting questions."
+  DEFECT: Sentences 33 to 37 measure 9, 9, 9, 6 and 9 words (five in a row within 3 words): the last four practice-standard list items plus the sentence now following them, after the deleted restatement. GATE Sentence rhythm: 5 consecutive within 3 words fails.
+  FIX: REPLACE with: "You can turn the seven headings into first-meeting questions that test whether a planner follows each standard." (16 words).
+
+Also record the `teeup-exempt: source-attributed regulatory explainer; no licensed first-hand framing fits` run note for every new guide with no tee-up (none exists in the run records yet).

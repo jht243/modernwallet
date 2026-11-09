@@ -1,0 +1,33 @@
+{
+ "reviewer": "phase4-auditor-1",
+ "verdict": "PASS",
+ "packetSha256": "84c81522b082184ceb0d8dfcaada3b78ea0d80d093c8a3760d29250b515d81ab",
+ "usefulness": {
+  "status": "PASS",
+  "evidence": "The page converts the SEC 2017 bulletin and the Investor.gov glossary into a fit test: six checks before opening an account and a table of who a robo-advisor fits, with the hybrid-access exception. That goes beyond restating the bulletin because it sets the fit decision against the questionnaire's coverage and human-contact conditions, attributed to the bulletin throughout."
+ },
+ "sourceAndAssumptions": {
+  "status": "PASS",
+  "evidence": "All statements trace to FB1-FB7 and the robo-bulletin and glossary captures; the bulletin's date (Feb. 23, 2017) is on the page and the takeaway says the read rests on it. No fee figure is asserted. The claim that robo-advisers are investment advisers is supported by the bulletin's statement that they must follow the laws for SEC or state-registered investment advisers."
+ },
+ "conditionsAndCounterexample": {
+  "status": "PASS",
+  "evidence": "The hybrid-human counterexample and the debts-and-assets questionnaire limit are both on the page ('Our answer changes in two cases'), along with the age of the bulletin; investors with tax or estate questions are routed to a human adviser guide."
+ },
+ "renderedConsistency": {
+  "status": "PASS",
+  "evidence": "I read the exact rendered page I passed in the final round (reviewed snapshot and review under final/subset3): the opening answer, table, FAQs and Takeaway agree on the recommendation and its conditions, and nothing on the page presents reported evidence as testing or modeling. Layout, links and dates were re-checked on that render."
+ },
+ "localExclusions": {
+  "status": "PASS",
+  "evidence": "Financial advice is outside _experience.md section G, so TESTED stays off and no 'we tested', modeling, client or professional-review claim appears; third-person attribution to the named bodies; no coach/counselor regulation claim and no Regulation Best Interest ranking."
+ },
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset3.snapshot.json",
+  "sha256": "edf7e73a37911981293133d2213890d733be33f9fc144cbe164951d6b8b18f3f"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset3.review.json",
+  "sha256": "f04e566f4609b0ca4e746f061ce3b5e6fc336c337a791a6cd045d9fe1e0296e3"
+ }
+}

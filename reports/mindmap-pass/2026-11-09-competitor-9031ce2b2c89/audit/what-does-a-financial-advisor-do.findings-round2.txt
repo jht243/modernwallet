@@ -1,0 +1,15 @@
+PAGE /guides/what-does-a-financial-advisor-do/ | round 2 | reviewer phase4-auditor-1 | VERDICT FAIL | profile high
+Round-1 findings were re-checked against the exact new render. Resolved items are noted; only open or newly introduced defects are listed. This is round 2 of 3: the next verification is the last the HIGH budget allows, so apply every item below.
+
+R2-1 [monotone-rhythm (still failing)]  FIELD: sections and FAQ answers
+  QUOTE: "The same page points to a free search tool that shows whether a professional is licensed and registered."
+  QUOTE: "A financial advisor typically gives you ongoing advice about buying, selling or holding investments and monitors how those investments perform against your overall objectives, according to Investor.gov."
+  DEFECT: Re-measured after the fix: 83 sentences, S/M/L 15/16/52. Sentences 34 to 43 (starting 'Coach and counselor titles appear ...', ending 'Registered broker-dealers and registered investment advisers are required to give retail investors a Form CRS.') are 10 in a row at 15+ words, and sentences 66 to 75 (starting 'Everything above about advisers rests on ...', ending 'A financial advisor should act in your best interest ...') are 10 in a row at 15+ words. GATE Sentence rhythm fails at 10.
+  FIX: Split two real sentences: 'The same page points to a free search tool. It shows whether a professional is licensed and registered.' (9 and 9 words) and 'A financial advisor typically gives you ongoing advice about buying, selling or holding investments, according to Investor.gov. The adviser also monitors how those investments perform against your overall objectives.' Re-measure: no run of 10.
+
+R2-2 [overloaded sentence introduced by the fix]  FIELD: sections[4].body
+  QUOTE: "Our read is that an advisor is the wrong first call if your main problem is debt or a budget, because the CFPB describes nonprofit credit counselors as the people who advise on money and debts, help with budgets, develop debt management plans and offer money management workshops."
+  DEFECT: The restored 'who this is not for' sentence is correct and now labeled as our judgment (round-1 F3 resolved) but it is 48 words with a because-clause and a four-item list: it needs a second read.
+  FIX: REPLACE with: "Our read is that an advisor is the wrong first call if your main problem is debt or a budget. The CFPB describes nonprofit credit counselors as the people who advise on money and debts, help with budgets, develop debt management plans and offer money management workshops."
+
+Also record the `teeup-exempt: source-attributed regulatory explainer; no licensed first-hand framing fits` run note for every new guide with no tee-up (none exists in the run records yet).

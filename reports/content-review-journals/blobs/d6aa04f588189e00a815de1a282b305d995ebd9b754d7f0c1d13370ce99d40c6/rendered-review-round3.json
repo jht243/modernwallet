@@ -1,0 +1,572 @@
+{
+ "reviewer": "phase4-auditor-1",
+ "snapshotSha256": "e4eef89a41db8d42979097f96b20ba55a29378e545017156b48de744ccf3b4ef",
+ "round": 3,
+ "scopeNote": "Final HIGH-tier round for the six routes that failed round 2. Passed routes are not included.",
+ "routes": [
+  {
+   "path": "/guides/what-does-a-financial-advisor-do/",
+   "fingerprint": "0140e9a4658913a30b63534d8f6b964a16e91a8bb02c6fae668431f746be7fca",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/r3_guides_what-does-a-financial-advisor-do_-reservation.json",
+    "sha256": "99bad4a2481005ff7046e4a1fd5b9c0a6c5892b30d6adf7985b3bc5504a3566d"
+   },
+   "verdict": "PASS",
+   "riskAssessment": {
+    "textSha256": "dd8c241a87b76b2be715a0f72ba76c55ca190f40f7be9fe0077394f12f531049",
+    "rationale": "HIGH: personal-finance page about advisers, fiduciary duty, fees, credentials or planning choices that readers may act on when hiring or paying a financial professional; the site floor is HIGH and the page makes consequential claims.",
+    "consequentialClaims": [
+     {
+      "quote": "ial advisor gives you ongoing investment advice and monitors how your investments perform, according to Investor.gov, wh",
+      "category": "investment",
+      "reason": "Reader-facing statement about investment advice on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Re-read the whole render. Intro and section 1 give the working answer (what an advisor does, with the debt-counselor boundary). The 'Who a Financial Advisor Is Not For' section now opens with 'Our read is that an advisor is the wrong first call if your main problem is debt or a budget.' followed by the CFPB description, with no stray paragraph; the removed 'Whether You Need' section is gone and the worth-it link survives in the not-for section and FAQ 4; FAQ 'Do I need a financial advisor?' now answers first; FAQ 'Is credit counseling free?' matches its answer; takeaway agrees with the opener and table."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Round-2 R2-1 and R2-2 resolved by sentence edits. Every statement traces to FA1-FA8 and FK1-FK7 and the captures (cfpb-credit-counseling.txt, nfcc.txt, finra-credentials.txt, working-with-pro.txt, crs-sample.pdf). Coach statements stay within FINRA's list and 'ask what that specific person provides'; no regulated or unregulated claim. The CRS pay example (unnamed firm, 'in different ways, including commissions and advisory fees') is accurate to J.P. Morgan Securities LLC's form, which also lists salary and bonus; the wording says 'including', so it is not a complete list claim. Advisory: four sentences of 37 to 39 words remain (inherited from round 1, each one idea with a list)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Searched the rendered text for tested/we tested/our testing/modeled/client/professional review: no claim about our own work (hits are quoted source words such as 'the Client' in the CFP Code or the SEC bulletin's 'not been tested under stressed market conditions'). TESTED is off per the approved manifest (financial advice is outside _experience.md section G). Attribution is third-person to the named bodies. Byline is the existing author Jonathan Velez with the site-wide template label 'Reviewed against primary sources' (a source-check label, no reviewedBy in JSON-LD); every claim was traced to a primary capture in this audit, so the label is supported for this page."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated November 9, 2026'; JSON-LD datePublished and dateModified both 2026-11-09 (equal); Article author is the existing Person Jonathan Velez; no reviewedBy or credential added."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "All 48 distinct internal link targets across the 13 routes returned 200 on the preview (re-run on the round-3 render); canonical present, no robots noindex; first-mention links re-checked in the new render."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium at 390px and 1280px on the round-3 render: scrollWidth equals clientWidth at both widths (no page-level horizontal scroll); tables sit in .table-wrap (advisor-do's 4-column table is 417px inside a 350px scroll container at 390px, contained); lists render as ul/ol; no console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Informational YMYL scope, reported basis, TESTED off; no coach/counselor regulated-or-unlicensed claim and no Regulation Best Interest weaker/stronger-than-adviser-duty comparison in the new render; disclaimer only in the template footer; tee-up omission recorded in audit/teeup-exempt.txt."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Central answer traced to the primary captures; see sourceSupport."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Basis is reported only; no tested, modeled, client or professional-review claim; our own contributions (household adaptation, labeled judgments) are visibly attributed as ours."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Sources fetched 2026-11-09 and dated where the page dates them (SEC bulletin Feb. 23, 2017; SEC statement July 8, 2019). No rate, price or limit is stated beyond figures in the captures."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Recommendations (check registration, read Form CRS, ask in writing, compare candidates) rest on quoted Investor.gov, CFPB or CFP Board statements, or are labeled as our judgment; the not-for and what-would-change elements are present."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "All rules cite SEC, Investor.gov, CFP Board, CFPB, NFCC or FINRA primary pages linked at first mention; no aggregator is used."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Tested the central conclusion against the strongest plausible primary-source counterexample for this page (for the CFP page the Code's own compensation-disclosure and fee-only sections; for advisor and broker pages dual registrants and broker-only registrants) and the page now states the conditions; no Regulation Best Interest ranking and no coach/counselor regulation claim."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "US scope; coverage limits stated where the packet lists them (state rules, insurance agents, banks, trust companies on the fiduciary guide; the one-firm basis of the CRS example; the 2017 age of the robo bulletin)."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "NA: no professional review is claimed or required; the byline names the existing site author and no reviewer credential."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH (site floor and consequential claims); applied to the exact rendered text, see riskAssessment."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Re-measured by script over intro + sections + FAQ answers (list items counted, table excluded): 1,785 words, 86 sentences, S/M/L 15/19/52, no run of 9 or more in one band, longest near-equal run 4; no em-dash, semicolon or 'honest'. Title 58 and meta 144 characters. Title Case headings (FAQ H2 is template sentence case); first mentions linked; no unlinked directive; disclaimer only in the footer; acronyms expanded at first use on the changed pages."
+    }
+   }
+  },
+  {
+   "path": "/guides/questions-to-ask-a-financial-advisor/",
+   "fingerprint": "ec59614e245942fef29c400fba2ed657a7c8264721dd48141456b13557957a52",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/r3_guides_questions-to-ask-a-financial-advisor_-reservation.json",
+    "sha256": "7a51821300866c5a17626ef20af29d1a94b38f6238f70531fb32d57bb109a556"
+   },
+   "verdict": "PASS",
+   "riskAssessment": {
+    "textSha256": "f44e3bc2ac0f26291afc16b761e54e5aa89b4f6a8a3188c80806b7be8fabe71e",
+    "rationale": "HIGH: personal-finance page about advisers, fiduciary duty, fees, credentials or planning choices that readers may act on when hiring or paying a financial professional; the site floor is HIGH and the page makes consequential claims.",
+    "consequentialClaims": [
+     {
+      "quote": "or lose money. \"What are your legal obligations to me when providing recommendations as my broker-dealer or when acting ",
+      "category": "investment",
+      "reason": "Reader-facing statement about legal obligations on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Re-read the whole render. The intro and section 1 give the question list; item 8 now carries the printed wording from the captured Form CRS; FAQ 1 and the Takeaway now say 'the eight questions listed above' and name the J.P. Morgan Securities LLC form as the source with a link; the red-flag lead reads 'Three situations ... The first rests on Investor.gov's warning. The other two are our judgment', matching the bullets."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Round-2 R2-1 and R2-2 resolved. Item 8 quotes 'As a financial professional, do you have any disciplinary history? For what type of conduct?' exactly as printed in sources/crs-sample.pdf. The page states its list is one dual registrant's form and its eight-question count is its own grouping (the form also prints primary-contact prompts, which the page does not claim to include). Pay paraphrase 'in different ways, including commissions and advisory fees' matches the form. Red flags are labeled as sourced only where Investor.gov says so."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Searched the rendered text for tested/we tested/our testing/modeled/client/professional review: no claim about our own work (hits are quoted source words such as 'the Client' in the CFP Code or the SEC bulletin's 'not been tested under stressed market conditions'). TESTED is off per the approved manifest (financial advice is outside _experience.md section G). Attribution is third-person to the named bodies. Byline is the existing author Jonathan Velez with the site-wide template label 'Reviewed against primary sources' (a source-check label, no reviewedBy in JSON-LD); every claim was traced to a primary capture in this audit, so the label is supported for this page."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated November 9, 2026'; JSON-LD datePublished and dateModified both 2026-11-09 (equal); Article author is the existing Person Jonathan Velez; no reviewedBy or credential added."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "All 48 distinct internal link targets across the 13 routes returned 200 on the preview (re-run on the round-3 render); canonical present, no robots noindex; first-mention links re-checked in the new render."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium at 390px and 1280px on the round-3 render: scrollWidth equals clientWidth at both widths (no page-level horizontal scroll); tables sit in .table-wrap (advisor-do's 4-column table is 417px inside a 350px scroll container at 390px, contained); lists render as ul/ol; no console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Informational YMYL scope, reported basis, TESTED off; no coach/counselor regulated-or-unlicensed claim and no Regulation Best Interest weaker/stronger-than-adviser-duty comparison in the new render; disclaimer only in the template footer; tee-up omission recorded in audit/teeup-exempt.txt."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Central answer traced to the primary captures; see sourceSupport."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Basis is reported only; no tested, modeled, client or professional-review claim; our own contributions (household adaptation, labeled judgments) are visibly attributed as ours."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Sources fetched 2026-11-09 and dated where the page dates them (SEC bulletin Feb. 23, 2017; SEC statement July 8, 2019). No rate, price or limit is stated beyond figures in the captures."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Recommendations (check registration, read Form CRS, ask in writing, compare candidates) rest on quoted Investor.gov, CFPB or CFP Board statements, or are labeled as our judgment; the not-for and what-would-change elements are present."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "All rules cite SEC, Investor.gov, CFP Board, CFPB, NFCC or FINRA primary pages linked at first mention; no aggregator is used."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Tested the central conclusion against the strongest plausible primary-source counterexample for this page (for the CFP page the Code's own compensation-disclosure and fee-only sections; for advisor and broker pages dual registrants and broker-only registrants) and the page now states the conditions; no Regulation Best Interest ranking and no coach/counselor regulation claim."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "US scope; coverage limits stated where the packet lists them (state rules, insurance agents, banks, trust companies on the fiduciary guide; the one-firm basis of the CRS example; the 2017 age of the robo bulletin)."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "NA: no professional review is claimed or required; the byline names the existing site author and no reviewer credential."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH (site floor and consequential claims); applied to the exact rendered text, see riskAssessment."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Re-measured: 1,752 words, 95 sentences, S/M/L 10/26/59, no run of 9 or more in one band, longest near-equal run 3; no em-dash, semicolon or 'honest'. Title 52 and meta 138 characters. Title Case headings (FAQ H2 is template sentence case); first mentions linked; no unlinked directive; disclaimer only in the footer; acronyms expanded at first use on the changed pages."
+    }
+   }
+  },
+  {
+   "path": "/guides/what-is-a-robo-advisor/",
+   "fingerprint": "edd070e664b41a57b3f1c2116b09c54ce836f1e0826dea026c424fcd58ba20d2",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/r3_guides_what-is-a-robo-advisor_-reservation.json",
+    "sha256": "591a644b83ee5da3a530cb796cbd7c133d4224a82317e36e5c41b27106fb2a6d"
+   },
+   "verdict": "PASS",
+   "riskAssessment": {
+    "textSha256": "bf714f403d105a9ccf51423034f32ea31ab290339edfbcaca0f2349dcf3db2c0",
+    "rationale": "HIGH: personal-finance page about advisers, fiduciary duty, fees, credentials or planning choices that readers may act on when hiring or paying a financial professional; the site floor is HIGH and the page makes consequential claims.",
+    "consequentialClaims": [
+     {
+      "quote": "Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate El",
+      "category": "investment",
+      "reason": "Reader-facing statement about invest on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Re-read the whole render. Intro answers what a robo-advisor is; section 5 now opens 'Our guide on whether a financial advisor is worth it compares a robo-advisor with a human advisor.'; 'Our answer changes in two cases' gives both cases (questionnaire coverage, hybrid human access) before the roundup pointer; the takeaway agrees with the table and FAQs."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Round-2 R2-1 and R2-2 resolved: the intro now says the Investor.gov glossary 'defines the term' (supported by FB1) and no longer claims the bulletin gives the same definition. All statements trace to FB1-FB7, FA1, FA5 and the captures (robo-bulletin.txt dated Feb. 23, 2017, robo-glossary.txt). Advisory: the central fit conditions rest on a 2017 bulletin; the date is stated in section 1 and the takeaway and the hybrid counterexample is on the page."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Searched the rendered text for tested/we tested/our testing/modeled/client/professional review: no claim about our own work (hits are quoted source words such as 'the Client' in the CFP Code or the SEC bulletin's 'not been tested under stressed market conditions'). TESTED is off per the approved manifest (financial advice is outside _experience.md section G). Attribution is third-person to the named bodies. Byline is the existing author Jonathan Velez with the site-wide template label 'Reviewed against primary sources' (a source-check label, no reviewedBy in JSON-LD); every claim was traced to a primary capture in this audit, so the label is supported for this page."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated November 9, 2026'; JSON-LD datePublished and dateModified both 2026-11-09 (equal); Article author is the existing Person Jonathan Velez; no reviewedBy or credential added."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "All 48 distinct internal link targets across the 13 routes returned 200 on the preview (re-run on the round-3 render); canonical present, no robots noindex; first-mention links re-checked in the new render."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium at 390px and 1280px on the round-3 render: scrollWidth equals clientWidth at both widths (no page-level horizontal scroll); tables sit in .table-wrap (advisor-do's 4-column table is 417px inside a 350px scroll container at 390px, contained); lists render as ul/ol; no console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Informational YMYL scope, reported basis, TESTED off; no coach/counselor regulated-or-unlicensed claim and no Regulation Best Interest weaker/stronger-than-adviser-duty comparison in the new render; disclaimer only in the template footer; tee-up omission recorded in audit/teeup-exempt.txt."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Central answer traced to the primary captures; see sourceSupport."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Basis is reported only; no tested, modeled, client or professional-review claim; our own contributions (household adaptation, labeled judgments) are visibly attributed as ours."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Sources fetched 2026-11-09 and dated where the page dates them (SEC bulletin Feb. 23, 2017; SEC statement July 8, 2019). No rate, price or limit is stated beyond figures in the captures."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Recommendations (check registration, read Form CRS, ask in writing, compare candidates) rest on quoted Investor.gov, CFPB or CFP Board statements, or are labeled as our judgment; the not-for and what-would-change elements are present."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "All rules cite SEC, Investor.gov, CFP Board, CFPB, NFCC or FINRA primary pages linked at first mention; no aggregator is used."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Tested the central conclusion against the strongest plausible primary-source counterexample for this page (for the CFP page the Code's own compensation-disclosure and fee-only sections; for advisor and broker pages dual registrants and broker-only registrants) and the page now states the conditions; no Regulation Best Interest ranking and no coach/counselor regulation claim."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "US scope; coverage limits stated where the packet lists them (state rules, insurance agents, banks, trust companies on the fiduciary guide; the one-firm basis of the CRS example; the 2017 age of the robo bulletin)."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "NA: no professional review is claimed or required; the byline names the existing site author and no reviewer credential."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH (site floor and consequential claims); applied to the exact rendered text, see riskAssessment."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Re-measured: 1,438 words, 78 sentences, S/M/L 12/15/51, no run of 9 or more in one band, longest near-equal run 3; no em-dash, semicolon or 'honest'. Title 53 and meta 135 characters. Title Case headings (FAQ H2 is template sentence case); first mentions linked; no unlinked directive; disclaimer only in the footer; acronyms expanded at first use on the changed pages."
+    }
+   }
+  },
+  {
+   "path": "/guides/what-is-a-cfp/",
+   "fingerprint": "f39426addcc85cab618f4e03c4325f73bf8ddc5e2fa95f39cac51801dc47f523",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/r3_guides_what-is-a-cfp_-reservation.json",
+    "sha256": "6b4db2cbf77ef119d8e85deaff29835731d44b3d352397d2425555a69b8b806b"
+   },
+   "verdict": "PASS",
+   "riskAssessment": {
+    "textSha256": "438e0c4a9a19eda5900189594f7e100460c6d5de4a5c11ee6cbec9f5e7a3e2e2",
+    "rationale": "HIGH: personal-finance page about advisers, fiduciary duty, fees, credentials or planning choices that readers may act on when hiring or paying a financial professional; the site floor is HIGH and the page makes consequential claims.",
+    "consequentialClaims": [
+     {
+      "quote": "ofessional must also act as a fiduciary when giving you financial advice. The CFP Board calls the four requirements the ",
+      "category": "investment",
+      "reason": "Reader-facing statement about fiduciary on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Re-read the whole render. Intro answers what a CFP is in two short sentences; section 4 and FAQ 2 now say the credential does not set one way to be paid but the Code requires compensation disclosure, with registration checked separately; the heading 'Where the CFA and CTFA Credentials Fit' matches its two-pointer content; takeaway and FAQs agree."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Round-2 R2-1 and R2-2 resolved and round-1 F1 remains resolved. The compensation statements match sources/cfp-fiduciary.txt ('Provide Information to a Client When Providing Financial Advice' and the Financial Planning counterpart requiring the same compensation information; 'Duties When Representing Compensation Method'). J.P. Morgan Securities LLC is correctly named and its CRS link serves the PDF identical to the captured crs-sample.pdf. Requirement figures match cfp-process.txt; the '2000' guard flag is the page's own 6,000 minus 4,000 arithmetic."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Searched the rendered text for tested/we tested/our testing/modeled/client/professional review: no claim about our own work (hits are quoted source words such as 'the Client' in the CFP Code or the SEC bulletin's 'not been tested under stressed market conditions'). TESTED is off per the approved manifest (financial advice is outside _experience.md section G). Attribution is third-person to the named bodies. Byline is the existing author Jonathan Velez with the site-wide template label 'Reviewed against primary sources' (a source-check label, no reviewedBy in JSON-LD); every claim was traced to a primary capture in this audit, so the label is supported for this page."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated November 9, 2026'; JSON-LD datePublished and dateModified both 2026-11-09 (equal); Article author is the existing Person Jonathan Velez; no reviewedBy or credential added."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "All 48 distinct internal link targets across the 13 routes returned 200 on the preview (re-run on the round-3 render); canonical present, no robots noindex; first-mention links re-checked in the new render."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium at 390px and 1280px on the round-3 render: scrollWidth equals clientWidth at both widths (no page-level horizontal scroll); tables sit in .table-wrap (advisor-do's 4-column table is 417px inside a 350px scroll container at 390px, contained); lists render as ul/ol; no console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Informational YMYL scope, reported basis, TESTED off; no coach/counselor regulated-or-unlicensed claim and no Regulation Best Interest weaker/stronger-than-adviser-duty comparison in the new render; disclaimer only in the template footer; tee-up omission recorded in audit/teeup-exempt.txt."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Central answer traced to the primary captures; see sourceSupport."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Basis is reported only; no tested, modeled, client or professional-review claim; our own contributions (household adaptation, labeled judgments) are visibly attributed as ours."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Sources fetched 2026-11-09 and dated where the page dates them (SEC bulletin Feb. 23, 2017; SEC statement July 8, 2019). No rate, price or limit is stated beyond figures in the captures."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Recommendations (check registration, read Form CRS, ask in writing, compare candidates) rest on quoted Investor.gov, CFPB or CFP Board statements, or are labeled as our judgment; the not-for and what-would-change elements are present."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "All rules cite SEC, Investor.gov, CFP Board, CFPB, NFCC or FINRA primary pages linked at first mention; no aggregator is used."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Tested the central conclusion against the strongest plausible primary-source counterexample for this page (for the CFP page the Code's own compensation-disclosure and fee-only sections; for advisor and broker pages dual registrants and broker-only registrants) and the page now states the conditions; no Regulation Best Interest ranking and no coach/counselor regulation claim."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "US scope; coverage limits stated where the packet lists them (state rules, insurance agents, banks, trust companies on the fiduciary guide; the one-firm basis of the CRS example; the 2017 age of the robo bulletin)."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "NA: no professional review is claimed or required; the byline names the existing site author and no reviewer credential."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH (site floor and consequential claims); applied to the exact rendered text, see riskAssessment."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Re-measured: 1,569 words, 82 sentences, S/M/L 9/25/48, no run of 9 or more in one band, longest near-equal run 4 (practice-standard list items 9, 9, 9, 6, below the five-sentence fail line); one 37-word sentence (the Tricky Titles paraphrase); no em-dash, semicolon or 'honest'. Title 59 and meta 146 characters. Title Case headings (FAQ H2 is template sentence case); first mentions linked; no unlinked directive; disclaimer only in the footer; acronyms expanded at first use on the changed pages."
+    }
+   }
+  },
+  {
+   "path": "/guides/how-to-make-a-financial-plan/",
+   "fingerprint": "2552f7d878ba01c8312085ddc54ada2e75897afbab6c15112ad46a7ddd90ecd1",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/r3_guides_how-to-make-a-financial-plan_-reservation.json",
+    "sha256": "e9b4587c84eda3ec23f05806df34b9ba652204aba663b960efd468afcc50427e"
+   },
+   "verdict": "PASS",
+   "riskAssessment": {
+    "textSha256": "db276abb032f590871bdd917b5794285ceb4c0c211f7d44a29309eda4b72a623",
+    "rationale": "HIGH: personal-finance page about advisers, fiduciary duty, fees, credentials or planning choices that readers may act on when hiring or paying a financial professional; the site floor is HIGH and the page makes consequential claims.",
+    "consequentialClaims": [
+     {
+      "quote": "ercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Milea",
+      "category": "financial",
+      "reason": "Reader-facing statement about emergency fund on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Re-read the whole render. Section 1 gives the working method (our adaptation of the seven CFP Board standards, shown once as a table, with the 'whichthe' typo fixed and the duplicate numbered list removed); emergency fund is an 'early' step and the page says neither source ranks it against debt payoff; the 'who this is not for' sentence now states the excluded household; takeaway agrees."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Round-2 R2-1 and R2-2 resolved, round-1 F1 to F7 remain resolved. The CFP Board standards (FP1, FP2) and CFPB emergency fund statements (FP3, FP4) match the captures; the household wording is visibly attributed to us ('The wording of the tasks is ours, not CFP Board guidance'). The 'share it with anyone it affects' task is our adaptation and is labeled as such."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Searched the rendered text for tested/we tested/our testing/modeled/client/professional review: no claim about our own work (hits are quoted source words such as 'the Client' in the CFP Code or the SEC bulletin's 'not been tested under stressed market conditions'). TESTED is off per the approved manifest (financial advice is outside _experience.md section G). Attribution is third-person to the named bodies. Byline is the existing author Jonathan Velez with the site-wide template label 'Reviewed against primary sources' (a source-check label, no reviewedBy in JSON-LD); every claim was traced to a primary capture in this audit, so the label is supported for this page."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated November 9, 2026'; JSON-LD datePublished and dateModified both 2026-11-09 (equal); Article author is the existing Person Jonathan Velez; no reviewedBy or credential added."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "All 48 distinct internal link targets across the 13 routes returned 200 on the preview (re-run on the round-3 render); canonical present, no robots noindex; first-mention links re-checked in the new render."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium at 390px and 1280px on the round-3 render: scrollWidth equals clientWidth at both widths (no page-level horizontal scroll); tables sit in .table-wrap (advisor-do's 4-column table is 417px inside a 350px scroll container at 390px, contained); lists render as ul/ol; no console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Informational YMYL scope, reported basis, TESTED off; no coach/counselor regulated-or-unlicensed claim and no Regulation Best Interest weaker/stronger-than-adviser-duty comparison in the new render; disclaimer only in the template footer; tee-up omission recorded in audit/teeup-exempt.txt."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Central answer traced to the primary captures; see sourceSupport."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Basis is reported only; no tested, modeled, client or professional-review claim; our own contributions (household adaptation, labeled judgments) are visibly attributed as ours."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Sources fetched 2026-11-09 and dated where the page dates them (SEC bulletin Feb. 23, 2017; SEC statement July 8, 2019). No rate, price or limit is stated beyond figures in the captures."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Recommendations (check registration, read Form CRS, ask in writing, compare candidates) rest on quoted Investor.gov, CFPB or CFP Board statements, or are labeled as our judgment; the not-for and what-would-change elements are present."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "All rules cite SEC, Investor.gov, CFP Board, CFPB, NFCC or FINRA primary pages linked at first mention; no aggregator is used."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Tested the central conclusion against the strongest plausible primary-source counterexample for this page (for the CFP page the Code's own compensation-disclosure and fee-only sections; for advisor and broker pages dual registrants and broker-only registrants) and the page now states the conditions; no Regulation Best Interest ranking and no coach/counselor regulation claim."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "US scope; coverage limits stated where the packet lists them (state rules, insurance agents, banks, trust companies on the fiduciary guide; the one-firm basis of the CRS example; the 2017 age of the robo bulletin)."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "NA: no professional review is claimed or required; the byline names the existing site author and no reviewer credential."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH (site floor and consequential claims); applied to the exact rendered text, see riskAssessment."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Re-measured: 1,578 words, 84 sentences, S/M/L 8/31/45, no run of 9 or more in one band, longest near-equal run 3; no em-dash, semicolon or 'honest'. Title 60 and meta 157 characters. Title Case headings (FAQ H2 is template sentence case); first mentions linked; no unlinked directive; disclaimer only in the footer; acronyms expanded at first use on the changed pages."
+    }
+   }
+  },
+  {
+   "path": "/guides/how-to-choose-a-financial-advisor/",
+   "fingerprint": "399b3d31b566567e1de09a4020939404440964cde6b64956e80e0493e0dea48f",
+   "reviewProfile": "high",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/r3_guides_how-to-choose-a-financial-advisor_-reservation.json",
+    "sha256": "c570ff5a0ae69b64cb4610cc1c5cc29c1807ab55209c14a5234d26bad91d6147"
+   },
+   "verdict": "PASS",
+   "riskAssessment": {
+    "textSha256": "7a34b7f7c4632f7dd83ea4e968e8cf0957e35a596f9c86368baa59b6190e90f0",
+    "rationale": "HIGH: personal-finance page about advisers, fiduciary duty, fees, credentials or planning choices that readers may act on when hiring or paying a financial professional; the site floor is HIGH and the page makes consequential claims.",
+    "consequentialClaims": [
+     {
+      "quote": "te regulator and owes you the fiduciary duty covered in Step 1 below, typically charging a fee tied to the assets under ",
+      "category": "investment",
+      "reason": "Reader-facing statement about fiduciary on a personal-finance page; the reader may act on it when choosing or paying a financial professional, so HIGH depth applies (site floor is also HIGH)."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Re-read the whole decision path of the existing page. The intro now says 'Others, such as brokers, follow Regulation Best Interest, a separate SEC standard for broker-dealers.'; Step 1 tells readers to ask which standard covers each account and to read Form CRS; the coach/counselor sentence now reads 'may offer many kinds of help, so ask what that specific person provides.' The three inbound links read naturally and no remaining sentence contradicts the linked fiduciary guide."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Round-1 F1 to F4 and round-2 R2-1 and R2-2 resolved. 'Weaker' now appears only for the historical suitability standard ('Brokers historically only had to recommend something suitable, a weaker rule', and the FAQ), not as a Regulation Best Interest versus adviser-duty ranking. No licensing or job-description claim about coaches or counselors remains (one 'typically isn't licensed' sentence about financial therapists is inherited, unrelated to the new guides, and is recorded as an advisory). Inherited advisory items outside scope: unlinked first mentions of SEC, FINRA and CFP Board, and 'most respected credential'."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing, modeling, client or professional-review claim in the rendered text. Byline is the existing author Jonathan Velez with the site-wide template label 'Reviewed against primary sources', unchanged by this run; no reviewedBy in JSON-LD. The legacy page's unsourced fee figures were not re-verified and are a site-wide advisory outside this run's scope."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated November 9, 2026'; JSON-LD datePublished 2026-06-25 kept and dateModified 2026-11-09, so dateModified does not precede datePublished; the body changed beyond links, so the bump is correct."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "All 48 distinct internal link targets across the 13 routes returned 200 on the preview (re-run on the round-3 render); canonical present, no robots noindex; first-mention links re-checked in the new render."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Playwright chromium at 390px and 1280px on the round-3 render: scrollWidth equals clientWidth at both widths (no page-level horizontal scroll); tables sit in .table-wrap (advisor-do's 4-column table is 417px inside a 350px scroll container at 390px, contained); lists render as ul/ol; no console errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Existing page, body corrections inside the round-1/2 finding scope with the date bumped; no testing or professional-review exclusion triggered."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Central answer traced to the primary captures; see sourceSupport."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Basis is reported only; no tested, modeled, client or professional-review claim; our own contributions (household adaptation, labeled judgments) are visibly attributed as ours."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Sources fetched 2026-11-09 and dated where the page dates them (SEC bulletin Feb. 23, 2017; SEC statement July 8, 2019). No rate, price or limit is stated beyond figures in the captures."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Recommendations (check registration, read Form CRS, ask in writing, compare candidates) rest on quoted Investor.gov, CFPB or CFP Board statements, or are labeled as our judgment; the not-for and what-would-change elements are present."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "All rules cite SEC, Investor.gov, CFP Board, CFPB, NFCC or FINRA primary pages linked at first mention; no aggregator is used."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Tested the central conclusion against the strongest plausible primary-source counterexample for this page (for the CFP page the Code's own compensation-disclosure and fee-only sections; for advisor and broker pages dual registrants and broker-only registrants) and the page now states the conditions; no Regulation Best Interest ranking and no coach/counselor regulation claim."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "US scope; coverage limits stated where the packet lists them (state rules, insurance agents, banks, trust companies on the fiduciary guide; the one-firm basis of the CRS example; the 2017 age of the robo bulletin)."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "NA: no professional review is claimed or required; the byline names the existing site author and no reviewer credential."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH (site floor and consequential claims); applied to the exact rendered text, see riskAssessment."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Existing page, body corrected within round-1/2 scope; the 1,200-word floor is not applicable to this scoped edit and no sentence rhythm gate was triggered by the changed sentences. Title Case headings (FAQ H2 is template sentence case); first mentions linked; no unlinked directive; disclaimer only in the footer; acronyms expanded at first use on the changed pages."
+    }
+   }
+  }
+ ]
+}

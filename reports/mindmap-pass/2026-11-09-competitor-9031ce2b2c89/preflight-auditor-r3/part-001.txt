@@ -1,0 +1,121 @@
+[Source: reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/preflight-auditor-r3/task.json]
+{
+  "version": 1,
+  "siteId": "jht243/modernwallet",
+  "canonicalBase": "https://themodernwallet.com",
+  "jobId": "competitor-9031ce2b2c89",
+  "routes": [
+    "/guides/what-is-a-fiduciary/",
+    "/guides/what-does-a-financial-advisor-do/",
+    "/guides/questions-to-ask-a-financial-advisor/",
+    "/guides/what-is-a-robo-advisor/",
+    "/guides/what-is-a-cfp/",
+    "/guides/how-to-make-a-financial-plan/"
+  ],
+  "producer": "competitor-orchestrator",
+  "nextAction": "Round 3 (final HIGH-tier round): independently verify the six still-failing routes against the exact new render; passed routes stay passed and are published by exact projection.",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/77c322d4c60bc500a9f575738289fa8bd4ad00d72e65a8d77e6613afdceb1ac1/rendered-snapshot.r3.json",
+      "sha256": "77c322d4c60bc500a9f575738289fa8bd4ad00d72e65a8d77e6613afdceb1ac1",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/rendered-snapshot.r3.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/57ca81a99feed75c2a21a0988788aca01a118b51e50778ce0524e6c2ba1ee388/rendered-manifest.json",
+      "sha256": "57ca81a99feed75c2a21a0988788aca01a118b51e50778ce0524e6c2ba1ee388",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/rendered-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/b2f6abe0d934b039abead629cc6c224de87ce95420925e22c0fb1797a2bcef9e/approval-manifest.json",
+      "sha256": "b2f6abe0d934b039abead629cc6c224de87ce95420925e22c0fb1797a2bcef9e",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/073ddee29183b42ecb4890661e1da828f45cfea6bfe88258cac085e342cacca3/chart-review.json",
+      "sha256": "073ddee29183b42ecb4890661e1da828f45cfea6bfe88258cac085e342cacca3",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/044bb0c0e51bdff5a2892579741e205095cb80b31a30f444c626ce1ca745f17d/rendered-review-round1.json",
+      "sha256": "044bb0c0e51bdff5a2892579741e205095cb80b31a30f444c626ce1ca745f17d",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/rendered-review-round1.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/58c7fe86b049ad4b4740075f28eb6658fa10ccf437599c63ebb880331e9b851c/rendered-review-round2.json",
+      "sha256": "58c7fe86b049ad4b4740075f28eb6658fa10ccf437599c63ebb880331e9b851c",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/rendered-review-round2.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/4fe315c29046e08ba143d203a6b3c0354d5282943d2180b654f6dfd645c3f007/teeup-exempt.txt",
+      "sha256": "4fe315c29046e08ba143d203a6b3c0354d5282943d2180b654f6dfd645c3f007",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/teeup-exempt.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/dcfb0371a3d67eb99afe4631802a949aec3ecc8510476bf9570ccf5c648c8059/what-is-a-fiduciary.json",
+      "sha256": "dcfb0371a3d67eb99afe4631802a949aec3ecc8510476bf9570ccf5c648c8059",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/what-is-a-fiduciary.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/69696070f7783d46fcdabcbaafc6293f60a06c56fb87a34e55b74ba83b0d5eeb/what-does-a-financial-advisor-do.json",
+      "sha256": "69696070f7783d46fcdabcbaafc6293f60a06c56fb87a34e55b74ba83b0d5eeb",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/what-does-a-financial-advisor-do.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/df3260cb61a499a2e35dc95742fc29c47d0ccb39856deded4a53de039b00fa1e/questions-to-ask-a-financial-advisor.json",
+      "sha256": "df3260cb61a499a2e35dc95742fc29c47d0ccb39856deded4a53de039b00fa1e",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/questions-to-ask-a-financial-advisor.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/350e546b10e35afc5c1fc6f6137ba5257f2bb124331a677bf6cd1edf8c94c32d/what-is-a-robo-advisor.json",
+      "sha256": "350e546b10e35afc5c1fc6f6137ba5257f2bb124331a677bf6cd1edf8c94c32d",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/what-is-a-robo-advisor.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/ac8a8c83794714559b622dfff76495cc3e84828c79753ed64ef3ca5109d932dc/what-is-a-cfp.json",
+      "sha256": "ac8a8c83794714559b622dfff76495cc3e84828c79753ed64ef3ca5109d932dc",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/what-is-a-cfp.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/fd1079ba0d34aa437baca440b148108d2c37d66e30cbc508089683eeb5e7bffd/how-to-make-a-financial-plan.json",
+      "sha256": "fd1079ba0d34aa437baca440b148108d2c37d66e30cbc508089683eeb5e7bffd",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/drafts/how-to-make-a-financial-plan.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/3f1d0cd9f6bc71418727d98c7a188dbe0c084510246efcb80b7ae4faac8ab4a8/edited_guides_how-to-choose-a-financial-advisor.findings-round2.txt",
+      "sha256": "3f1d0cd9f6bc71418727d98c7a188dbe0c084510246efcb80b7ae4faac8ab4a8",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/edited_guides_how-to-choose-a-financial-advisor.findings-round2.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/f18ed074d0e21ce4af53f4c7ab18c161e62a3250cce34b64cb1e839bff1571e7/how-to-make-a-financial-plan.findings-round2.txt",
+      "sha256": "f18ed074d0e21ce4af53f4c7ab18c161e62a3250cce34b64cb1e839bff1571e7",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/how-to-make-a-financial-plan.findings-round2.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/f95060407535b9692d122fa8d6798c4d97072d854699c0403154d95ab160795e/questions-to-ask-a-financial-advisor.findings-round2.txt",
+      "sha256": "f95060407535b9692d122fa8d6798c4d97072d854699c0403154d95ab160795e",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/questions-to-ask-a-financial-advisor.findings-round2.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/31d9a3aab493ddffe83c7c8afff5e6cb570e47c86161d94de2dc8c324f12a19e/what-does-a-financial-advisor-do.findings-round2.txt",
+      "sha256": "31d9a3aab493ddffe83c7c8afff5e6cb570e47c86161d94de2dc8c324f12a19e",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/what-does-a-financial-advisor-do.findings-round2.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/3c38ce0c670a913ef41a46584a5e671ae2f24ea587a372cf3eddb47405fd4c87/what-is-a-cfp.findings-round2.txt",
+      "sha256": "3c38ce0c670a913ef41a46584a5e671ae2f24ea587a372cf3eddb47405fd4c87",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/what-is-a-cfp.findings-round2.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/5a40e43008589da1b62be992bb60de8f0d3808e4f2760f748a73898862d25dff/what-is-a-robo-advisor.findings-round2.txt",
+      "sha256": "5a40e43008589da1b62be992bb60de8f0d3808e4f2760f748a73898862d25dff",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/what-is-a-robo-advisor.findings-round2.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/c570ff5a0ae69b64cb4610cc1c5cc29c1807ab55209c14a5234d26bad91d6147/r3_guides_how-to-choose-a-financial-advisor_-reservation.json",
+      "sha256": "c570ff5a0ae69b64cb4610cc1c5cc29c1807ab55209c14a5234d26bad91d6147",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/r3_guides_how-to-choose-a-financial-advisor_-reservation.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/e9b4587c84eda3ec23f05806df34b9ba652204aba663b960efd468afcc50427e/r3_guides_how-to-make-a-financial-plan_-reservation.json",
+      "sha256": "e9b4587c84eda3ec23f05806df34b9ba652204aba663b960efd468afcc50427e",
+      "originPath": "repo

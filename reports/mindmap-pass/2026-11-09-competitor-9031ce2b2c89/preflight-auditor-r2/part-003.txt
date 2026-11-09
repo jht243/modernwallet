@@ -1,0 +1,113 @@
+itor-9031ce2b2c89/sources/cfp-fiduciary.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/e89529a8c530b38ec94c8c7cfaf181fef85ce35c2e6be592576bec356b26c090/finra-credentials.txt",
+      "sha256": "e89529a8c530b38ec94c8c7cfaf181fef85ce35c2e6be592576bec356b26c090",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "FINRA professional designations database",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/finra-credentials.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/1074249df529d6ad93a2c75888e13cd494c60c8c9d876ad7fdb96f6b85cd5e9f/cfpb-credit-counseling.txt",
+      "sha256": "1074249df529d6ad93a2c75888e13cd494c60c8c9d876ad7fdb96f6b85cd5e9f",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "CFPB credit counseling page",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfpb-credit-counseling.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/789432b88c2e513a83d57a3c4adf77bdc8b2192609c7485b8571c82dd0005fb0/nfcc.txt",
+      "sha256": "789432b88c2e513a83d57a3c4adf77bdc8b2192609c7485b8571c82dd0005fb0",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "NFCC counseling overview",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/nfcc.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/4713c8f3c6903bf415bdaa82e044461af224674ef434bdba696c2da78e1c799b/cfpb-emergency.txt",
+      "sha256": "4713c8f3c6903bf415bdaa82e044461af224674ef434bdba696c2da78e1c799b",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "CFPB emergency fund guide",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfpb-emergency.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/5ebd259859b527ccd53703b0a2577b4801a162766ed22db1af4b38245f27a78f/crs-sample.pdf",
+      "sha256": "5ebd259859b527ccd53703b0a2577b4801a162766ed22db1af4b38245f27a78f",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "Registered firm Form CRS conversation starters",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/crs-sample.pdf"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 1,
+    "reworks": 1
+  },
+  "findings": [
+    {
+      "id": "phase4-advisory-1",
+      "status": "open",
+      "evidence": "Phase 4 must check intent-answered-late, Title Case headings, 1,200-word floors, no regulated/unregulated claim about coaches or counselors, A6 H2s match the title, A3 labels non-sourced red flags as editorial judgment (chart-review.json evidence)."
+    },
+    {
+      "id": "writer-flag-claimcheck-emptied",
+      "status": "open",
+      "evidence": "content_gen meta.guards.flags for every page says sections were emptied by the claim check; sections do contain text now, but the auditor must read every section for sentences the claim check removed leaving gaps or non-answers (e.g. what-is-a-fiduciary FAQ first answer does not directly answer the question)."
+    },
+    {
+      "id": "writer-flag-number-2000",
+      "status": "open",
+      "evidence": "what-is-a-cfp meta.guards.numbers_not_in_facts lists 2000; verify it is not an unsupported figure."
+    },
+    {
+      "id": "phase4-round1-edited_guides_how-to-choose-a-financial-advisor",
+      "status": "open",
+      "evidence": "Round-1 independent FAIL findings in reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/edited_guides_how-to-choose-a-financial-advisor.findings.txt; fixed in place per Rung 1 (content_gen.py fix, Gemini fallback after Anthropic credit exhaustion) plus Rung 0 edits; awaiting round-2 independent verification."
+    },
+    {
+      "id": "phase4-round1-how-to-make-a-financial-plan",
+      "status": "open",
+      "evidence": "Round-1 independent FAIL findings in reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/how-to-make-a-financial-plan.findings.txt; fixed in place per Rung 1 (content_gen.py fix, Gemini fallback after Anthropic credit exhaustion) plus Rung 0 edits; awaiting round-2 independent verification."
+    },
+    {
+      "id": "phase4-round1-questions-to-ask-a-financial-advisor",
+      "status": "open",
+      "evidence": "Round-1 independent FAIL findings in reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/questions-to-ask-a-financial-advisor.findings.txt; fixed in place per Rung 1 (content_gen.py fix, Gemini fallback after Anthropic credit exhaustion) plus Rung 0 edits; awaiting round-2 independent verification."
+    },
+    {
+      "id": "phase4-round1-what-does-a-financial-advisor-do",
+      "status": "open",
+      "evidence": "Round-1 independent FAIL findings in reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/what-does-a-financial-advisor-do.findings.txt; fixed in place per Rung 1 (content_gen.py fix, Gemini fallback after Anthropic credit exhaustion) plus Rung 0 edits; awaiting round-2 independent verification."
+    },
+    {
+      "id": "phase4-round1-what-is-a-cfp",
+      "status": "open",
+      "evidence": "Round-1 independent FAIL findings in reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/what-is-a-cfp.findings.txt; fixed in place per Rung 1 (content_gen.py fix, Gemini fallback after Anthropic credit exhaustion) plus Rung 0 edits; awaiting round-2 independent verification."
+    },
+    {
+      "id": "phase4-round1-what-is-a-fiduciary",
+      "status": "open",
+      "evidence": "Round-1 independent FAIL findings in reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/what-is-a-fiduciary.findings.txt; fixed in place per Rung 1 (content_gen.py fix, Gemini fallback after Anthropic credit exhaustion) plus Rung 0 edits; awaiting round-2 independent verification."
+    },
+    {
+      "id": "phase4-round1-what-is-a-robo-advisor",
+      "status": "open",
+      "evidence": "Round-1 independent FAIL findings in reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/what-is-a-robo-advisor.findings.txt; fixed in place per Rung 1 (content_gen.py fix, Gemini fallback after Anthropic credit exhaustion) plus Rung 0 edits; awaiting round-2 independent verification."
+    }
+  ],
+  "resolvedFindingIds": [
+    "chart-review-round1-F1",
+    "chart-review-round1-F2",
+    "chart-review-round1-F3",
+    "chart-review-round1-F4",
+    "chart-review-round1-F5",
+    "chart-review-round1-F6"
+  ],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit-handoff-2.json",
+    "sha256": "6c42b4ca52af71c389bdd75fc4ae51cb5b1667d97a8ef92403beef305eed55c9"
+  }
+}
+

@@ -1,0 +1,16 @@
+PAGE /guides/questions-to-ask-a-financial-advisor/ | round 2 | reviewer phase4-auditor-1 | VERDICT FAIL | profile high
+Round-1 findings were re-checked against the exact new render. Resolved items are noted; only open or newly introduced defects are listed. This is round 2 of 3: the next verification is the last the HIGH budget allows, so apply every item below.
+
+R2-1 [source misstatement still present (round-1 F3 partly fixed)]  FIELD: sections[0].body item 8, faqs[0].answer, Our Takeaway
+  QUOTE: "8. Do you or your firm have any legal or disciplinary history, and for what type of conduct?"
+  QUOTE: "Ask the eight conversation starters from Form CRS."
+  QUOTE: "Ask every candidate the same eight questions from one firm's Form CRS, then compare their written answers with their Form CRS and their public record."
+  DEFECT: The intro and the one-firm condition were fixed. Still open: (a) item 8 sits in a list the page says is worded from one firm's Form CRS, but the printed prompt in sources/crs-sample.pdf is 'As a financial professional, do you have any disciplinary history? For what type of conduct?'; (b) that form also prints 'Who is my primary contact person? Is this person a representative of an investment adviser or a broker-dealer? Who can I talk to if I have concerns about how this person is treating me?', so FAQ 1 ('the eight conversation starters from Form CRS') and the Takeaway ('the same eight questions from one firm's Form CRS') still misdescribe the form; (c) the Takeaway sentence now says to compare answers with 'their Form CRS' twice in one clause, which reads as an error.
+  FIX: REPLACE item 8 with: '8. "As a financial professional, do you have any disciplinary history? For what type of conduct?" Investor.gov says a Form CRS has to state ...' (keep the rest). REPLACE the FAQ sentence with: 'Ask the eight questions listed above, drawn from one dual registrant's Form CRS (J.P. Morgan Securities LLC; its CRS is the capture, https://files.brokercheck.finra.org/crs_79.pdf).' REPLACE the Takeaway sentence with: 'Ask every candidate the same eight questions listed above, then compare their written answers with the firm's own Form CRS and their public record.' Optionally add the primary-contact question as item 9 and say 'nine'.
+
+R2-2 [red-flag label unresolved (round-1 F5 only half fixed)]  FIELD: sections[2].body
+  QUOTE: "Three answers are reasons to stop and look at other candidates, based on what Investor.gov says and what Form CRS must contain."
+  DEFECT: The third bullet now carries 'We would treat ...' but the lead sentence still calls all three 'answers' and credits them to Investor.gov. Investor.gov does not tell readers to stop if a firm withholds a Form CRS, and the approved chart (A3) promised the non-sourced flags would be labeled as our judgment.
+  FIX: REPLACE with: "Three situations are reasons to look at other candidates. The first rests on Investor.gov's warning. The other two are our judgment, built on what Form CRS must contain."
+
+Also record the `teeup-exempt: source-attributed regulatory explainer; no licensed first-hand framing fits` run note for every new guide with no tee-up (none exists in the run records yet).

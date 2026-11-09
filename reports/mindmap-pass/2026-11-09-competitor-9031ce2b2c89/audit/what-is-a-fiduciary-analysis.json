@@ -1,0 +1,33 @@
+{
+ "reviewer": "phase4-auditor-1",
+ "verdict": "PASS",
+ "packetSha256": "4f049e8e1503636f71ff13968f1d0ffe03abf6794e52d22d152f96c401a71c84",
+ "usefulness": {
+  "status": "PASS",
+  "evidence": "The page turns three primary statements (SEC adviser duty, Regulation Best Interest, CFP Board Code) into a decision a reader can act on: which standard applies depends on registration and credential, shown in a table with where to verify it (Form CRS, CFP Board page). That goes beyond restating any one source because it assembles the three side by side and ends with a four-step check; it is explicitly third-person reported, with no testing or modeling claim."
+ },
+ "sourceAndAssumptions": {
+  "status": "PASS",
+  "evidence": "Each rule is attributed to its body (SEC statement July 8, 2019, Investor.gov, CFP Board Code) and traced to FS1-FS2, FA1-FA8, FC1-FC2 and the captures. No assumption is added; the page never ranks Regulation Best Interest against the adviser duty."
+ },
+ "conditionsAndCounterexample": {
+  "status": "PASS",
+  "evidence": "The counterexample (a broker-only registrant is not an adviser fiduciary; a dual registrant can owe different standards per account) is on the page in the table, the 'who this is not for' section and FAQ 1, and the Takeaway now states that state rules, insurance agents, banks and trust companies are not covered, matching the packet's conditions and whatWouldChange (SEC or CFP Board rule changes)."
+ },
+ "renderedConsistency": {
+  "status": "PASS",
+  "evidence": "I read the exact rendered page I passed in the final round (reviewed snapshot and review under final/subset2): the opening answer, table, FAQs and Takeaway agree on the recommendation and its conditions, and nothing on the page presents reported evidence as testing or modeling. Layout, links and dates were re-checked on that render."
+ },
+ "localExclusions": {
+  "status": "PASS",
+  "evidence": "Financial advice is outside _experience.md section G, so TESTED stays off and no 'we tested', modeling, client or professional-review claim appears; third-person attribution to the named bodies; no coach/counselor regulation claim and no Regulation Best Interest ranking."
+ },
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset2.snapshot.json",
+  "sha256": "e2fe8f0a40d45bb2ff393c040e636d943f41d2e79fc18c989d57dc69298976aa"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset2.review.json",
+  "sha256": "7f22a8e38398d0931a5ce29adc15307ee3e77e987e069af14e0e9e6559b38ee0"
+ }
+}

@@ -1,0 +1,128 @@
+rts/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/r3_guides_how-to-make-a-financial-plan_-reservation.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/7a51821300866c5a17626ef20af29d1a94b38f6238f70531fb32d57bb109a556/r3_guides_questions-to-ask-a-financial-advisor_-reservation.json",
+      "sha256": "7a51821300866c5a17626ef20af29d1a94b38f6238f70531fb32d57bb109a556",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/r3_guides_questions-to-ask-a-financial-advisor_-reservation.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/99bad4a2481005ff7046e4a1fd5b9c0a6c5892b30d6adf7985b3bc5504a3566d/r3_guides_what-does-a-financial-advisor-do_-reservation.json",
+      "sha256": "99bad4a2481005ff7046e4a1fd5b9c0a6c5892b30d6adf7985b3bc5504a3566d",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/r3_guides_what-does-a-financial-advisor-do_-reservation.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/6b4db2cbf77ef119d8e85deaff29835731d44b3d352397d2425555a69b8b806b/r3_guides_what-is-a-cfp_-reservation.json",
+      "sha256": "6b4db2cbf77ef119d8e85deaff29835731d44b3d352397d2425555a69b8b806b",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/r3_guides_what-is-a-cfp_-reservation.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/591a644b83ee5da3a530cb796cbd7c133d4224a82317e36e5c41b27106fb2a6d/r3_guides_what-is-a-robo-advisor_-reservation.json",
+      "sha256": "591a644b83ee5da3a530cb796cbd7c133d4224a82317e36e5c41b27106fb2a6d",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/review-rounds/r3_guides_what-is-a-robo-advisor_-reservation.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/4c45c9cd4b8a41b4f0e9ed951f368e4811efed2756bd5bda65cacf83ab388c9e/rung0-repairs.txt",
+      "sha256": "4c45c9cd4b8a41b4f0e9ed951f368e4811efed2756bd5bda65cacf83ab388c9e",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/rung0-repairs.txt"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/49b463337a5d37e8e1b6a56977dd6b25e90aae848a163dc296ae8448c64310d3/clayton-excerpt.txt",
+      "sha256": "49b463337a5d37e8e1b6a56977dd6b25e90aae848a163dc296ae8448c64310d3",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "SEC statement on adviser fiduciary duty and Regulation Best Interest",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/clayton-excerpt.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/3097f09d12f1911c5b97d30624c147d0d440ded32a60177e0329058f2ae2a4d2/adviser-vs-broker.txt",
+      "sha256": "3097f09d12f1911c5b97d30624c147d0d440ded32a60177e0329058f2ae2a4d2",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "Investor.gov investment adviser description and best-interest sentence",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/adviser-vs-broker.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/b767b5d82cb88f2ca63fbd349848e8ee82781c95202f223afa93dffab08d4134/working-with-pro.txt",
+      "sha256": "b767b5d82cb88f2ca63fbd349848e8ee82781c95202f223afa93dffab08d4134",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "Investor.gov registration check, Form CRS, tricky titles",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/working-with-pro.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971/form-crs.txt",
+      "sha256": "183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "Investor.gov relationship summary contents",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/form-crs.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/ea2247a0e610fc9c900ecaabd28610061a6acccef298571cde8adeeeafba87fc/robo-bulletin.txt",
+      "sha256": "ea2247a0e610fc9c900ecaabd28610061a6acccef298571cde8adeeeafba87fc",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "SEC robo-adviser investor bulletin 2017",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/robo-bulletin.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/bd4701a5d263890807e0e89e4ad7057c21e63576713c54b36b6d84c8cdd2ad68/robo-glossary.txt",
+      "sha256": "bd4701a5d263890807e0e89e4ad7057c21e63576713c54b36b6d84c8cdd2ad68",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "Investor.gov robo-adviser definition",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/robo-glossary.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/992f25adac67207c7ed1d6bdee1959a06896ae41ddeff17e211368b301b954ff/cfp-process.txt",
+      "sha256": "992f25adac67207c7ed1d6bdee1959a06896ae41ddeff17e211368b301b954ff",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "CFP Board certification requirements",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfp-process.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/b7ac6ab927be2d3ae6713e5242ac107bc8c063da284f3592bfe91d793ce2a303/cfp-fiduciary.txt",
+      "sha256": "b7ac6ab927be2d3ae6713e5242ac107bc8c063da284f3592bfe91d793ce2a303",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "CFP Board code and practice standards",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfp-fiduciary.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/e89529a8c530b38ec94c8c7cfaf181fef85ce35c2e6be592576bec356b26c090/finra-credentials.txt",
+      "sha256": "e89529a8c530b38ec94c8c7cfaf181fef85ce35c2e6be592576bec356b26c090",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "FINRA professional designations database",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/finra-credentials.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/1074249df529d6ad93a2c75888e13cd494c60c8c9d876ad7fdb96f6b85cd5e9f/cfpb-credit-counseling.txt",
+      "sha256": "1074249df529d6ad93a2c75888e13cd494c60c8c9d876ad7fdb96f6b85cd5e9f",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "CFPB credit counseling page",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfpb-credit-counseling.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/789432b88c2e513a83d57a3c4adf77bdc8b2192609c7485b8571c82dd0005fb0/nfcc.txt",
+      "sha256": "789432b88c2e513a83d57a3c4adf77bdc8b2192609c7485b8571c82dd0005fb0",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "NFCC counseling overview",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/nfcc.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/4713c8f3c6903bf415bdaa82e044461af224674ef434bdba696c2da78e1c799b/cfpb-emergency.txt",
+      "sha256": "4713c8f3c6903bf415bdaa82e044461af224674ef434bdba696c2da78e1c799b",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, credential-requirement or page change at the cited body",
+      "scope": "CFPB emergency fund guide",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/cfpb-emergency.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/5ebd259859b527ccd53703b0a2577b4801a162766ed22db1af4b38245f27a78f/crs-sample.pdf",
+      "sha256": "5ebd259859b

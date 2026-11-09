@@ -1,0 +1,15 @@
+PAGE /guides/how-to-make-a-financial-plan/ | round 2 | reviewer phase4-auditor-1 | VERDICT FAIL | profile high
+Round-1 findings were re-checked against the exact new render. Resolved items are noted; only open or newly introduced defects are listed. This is round 2 of 3: the next verification is the last the HIGH budget allows, so apply every item below.
+
+R2-1 [typo introduced by the fix]  FIELD: sections[0].body
+  QUOTE: "whichthe [Consumer Financial Protection Bureau (CFPB)]"
+  DEFECT: Missing space renders 'whichthe' as one word in the first section, in front of the reader.
+  FIX: REPLACE with: "which the [Consumer Financial Protection Bureau (CFPB)]" (also scan the Rung 0 lint for other joined words).
+
+R2-2 [restatement still present (round-1 F5)]  FIELD: sections[0].body
+  QUOTE: "Carry out the changes, such as starting an emergency fund."
+  QUOTE: "We adapted the CFP Board's seven practice standards into household tasks."
+  DEFECT: The attribution fix (round-1 F1) and the 'early step' wording fix (F2) are resolved. But the seven-item numbered list is still followed immediately by a table that repeats the same seven tasks with the official names, so the section states each task twice. A table is allowed only where it carries data the prose does not.
+  FIX: DELETE the numbered list ('1. Write down your income ...' to '7. Track your progress and update the plan.') and keep the table, changing the sentence before it to end 'and the table below lists the seven tasks beside the standard each comes from:'. (If the list is kept instead, delete the table.)
+
+Also record the `teeup-exempt: source-attributed regulatory explainer; no licensed first-hand framing fits` run note for every new guide with no tee-up (none exists in the run records yet).

@@ -1,0 +1,33 @@
+{
+ "reviewer": "phase4-auditor-1",
+ "verdict": "PASS",
+ "packetSha256": "01362d8565cc6e154cc2063d23394d229628fb2f3e818062227661bd8e07dd88",
+ "usefulness": {
+  "status": "PASS",
+  "evidence": "The page explains what a CFP professional is, the four requirements with timing rules in a table, the seven practice standards turned into first-meeting questions, and what the credential does and does not tell you about pay and registration. The added decision value is that last boundary, now grounded in the CFP Board Code's own compensation-disclosure and fee-only sections rather than source silence."
+ },
+ "sourceAndAssumptions": {
+  "status": "PASS",
+  "evidence": "Requirement figures match the CFP Board certification page capture; the compensation statements match sources/cfp-fiduciary.txt; the J.P. Morgan Securities LLC pay example is named, linked and matches its form; the '2000' guard flag is the page's own 6,000 minus 4,000 arithmetic. Basis is reported with third-person attribution."
+ },
+ "conditionsAndCounterexample": {
+  "status": "PASS",
+  "evidence": "Conditions on the page: the credential does not set one way to be paid but the Code requires disclosure, registration as adviser or broker is checked separately, CFA or CTFA fit other needs, and the CFP Board changing its rules would change the answer; the packet's counterexample (a CFP who is also a broker-dealer representative is bound by broker rules) is covered by the registration check."
+ },
+ "renderedConsistency": {
+  "status": "PASS",
+  "evidence": "I read the exact rendered page I passed in the final round (reviewed snapshot and review under final/subset3): the opening answer, table, FAQs and Takeaway agree on the recommendation and its conditions, and nothing on the page presents reported evidence as testing or modeling. Layout, links and dates were re-checked on that render."
+ },
+ "localExclusions": {
+  "status": "PASS",
+  "evidence": "Financial advice is outside _experience.md section G, so TESTED stays off and no 'we tested', modeling, client or professional-review claim appears; third-person attribution to the named bodies; no coach/counselor regulation claim and no Regulation Best Interest ranking."
+ },
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset3.snapshot.json",
+  "sha256": "edf7e73a37911981293133d2213890d733be33f9fc144cbe164951d6b8b18f3f"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset3.review.json",
+  "sha256": "f04e566f4609b0ca4e746f061ce3b5e6fc336c337a791a6cd045d9fe1e0296e3"
+ }
+}

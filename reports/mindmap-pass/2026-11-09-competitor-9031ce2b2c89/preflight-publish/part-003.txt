@@ -1,0 +1,113 @@
+cords. Install that contract and helper with the checkpoint dependencies. A read-only reviewer may write internal evidence receipts without editing content. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
+<!-- /workflow-checkpoints-v1 -->
+
+
+## Worker
+1. Add every Phase-3 route to the correct sitemap (per the discovered route→file routing) with today's `<lastmod>`.
+2. Refresh `<lastmod>` to today **only for pages with a substantive change** — i.e. modified in Phase 2 (metadata), Phase 3 (new), or Phase 5 (body). **Do NOT bump `<lastmod>` for a page whose only change this run was a Phase 6 internal link** — a link-only touch is not a content change, and stamping lastmod on it trains Google to distrust your lastmod signal and deprioritize crawls. (If a page got both a substantive edit AND a link, it counts as substantive — refresh it.)
+3. Consolidation is advisory-only now, so there are normally no removed routes. If `reports/mindmap-pass/<date>.consolidation.txt` exists (legacy) remove those routes; otherwise skip this step.
+4. **Prepare the IndexNow URL list — do NOT submit here.** Write the added + updated routes (full URLs, NOT removed losers) to `reports/mindmap-pass/<date>.indexnow.txt`, one URL per line. The actual IndexNow POST now happens in **Phase 9, after push + deploy**, so we only ever ping search engines with URLs that are already live (submitting a not-yet-deployed URL makes crawlers hit 404s and wastes crawl budget). If no IndexNow key was discovered in Phase 0, note that submission will be skipped.
+5. `git add`. Do not commit.
+
+## Reviewer checklist
+- ☐ each new route in exactly one correct sitemap, lastmod=today
+- ☐ lastmod=today on every **substantively** changed page (Phase 2/3/5); **no lastmod bump on link-only (Phase 6) pages**
+- ☐ no consolidation losers to remove (advisory-only), or any legacy `.consolidation.txt` routes removed
+- ☐ IndexNow URL list written to `<date>.indexnow.txt` (added + updated only, no losers); **no submission made in this phase** — it is deferred to Phase 9 post-deploy
+
+Reject with specifics on any failure.
+
+---
+## ▶ WHEN THIS PHASE IS DONE — AUTO-CONTINUE. DO NOT ASK THE USER.
+The moment this phase's reviewer gate PASSES, immediately begin the next phase in the SAME turn. Do NOT stop. Do NOT print "Want me to proceed?", "Should I continue?", "Next: Phase X", or any question or hand-off that waits for a human reply.
+
+The `/mindmap-pass` run has EXACTLY ONE human stop (the Phase 0 manifest approval), and this phase is NOT it:
+- Stop 1: the Phase 0 manifest approval (before any edits).
+- (Phase 8 is an informational summary that auto-continues to the Phase 9 push — NOT a stop.)
+
+Everything between those two — including this phase — runs automatically. The reviewer gates are adversarial SUBAGENTS, not human checkpoints; a passing gate means YOU proceed on your own. Keep going through Phase 8 and the Phase 9 push without stopping.
+
+[Source: reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/preflight-publish/task.json]
+{
+  "version": 1,
+  "siteId": "jht243/modernwallet",
+  "canonicalBase": "https://themodernwallet.com",
+  "jobId": "competitor-9031ce2b2c89",
+  "routes": [
+    "/guides/what-is-a-fiduciary/",
+    "/guides/what-does-a-financial-advisor-do/",
+    "/guides/questions-to-ask-a-financial-advisor/",
+    "/guides/what-is-a-robo-advisor/",
+    "/guides/what-is-a-cfp/",
+    "/guides/how-to-make-a-financial-plan/"
+  ],
+  "producer": "competitor-orchestrator",
+  "nextAction": "Commit and push the independently approved subsets to main, verify each exact reviewed render live with rendered-audit.py compare, record deployment, submit eligible URLs to IndexNow, then record scraper dispositions and baseline.",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/fe97b4830940b571b217bb682faa78c92a69872d2695c46bc78bccdfb502f95f/subset1.snapshot.json",
+      "sha256": "fe97b4830940b571b217bb682faa78c92a69872d2695c46bc78bccdfb502f95f",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset1.snapshot.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/38bfdb8a5574daa24e4edf5280efb5b4a5068097cb866c33a11d16c6e06914df/subset1.review.json",
+      "sha256": "38bfdb8a5574daa24e4edf5280efb5b4a5068097cb866c33a11d16c6e06914df",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset1.review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/e2fe8f0a40d45bb2ff393c040e636d943f41d2e79fc18c989d57dc69298976aa/subset2.snapshot.json",
+      "sha256": "e2fe8f0a40d45bb2ff393c040e636d943f41d2e79fc18c989d57dc69298976aa",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset2.snapshot.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/7f22a8e38398d0931a5ce29adc15307ee3e77e987e069af14e0e9e6559b38ee0/subset2.review.json",
+      "sha256": "7f22a8e38398d0931a5ce29adc15307ee3e77e987e069af14e0e9e6559b38ee0",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset2.review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/edf7e73a37911981293133d2213890d733be33f9fc144cbe164951d6b8b18f3f/subset3.snapshot.json",
+      "sha256": "edf7e73a37911981293133d2213890d733be33f9fc144cbe164951d6b8b18f3f",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset3.snapshot.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/f04e566f4609b0ca4e746f061ce3b5e6fc336c337a791a6cd045d9fe1e0296e3/subset3.review.json",
+      "sha256": "f04e566f4609b0ca4e746f061ce3b5e6fc336c337a791a6cd045d9fe1e0296e3",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset3.review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/d6aa04f588189e00a815de1a282b305d995ebd9b754d7f0c1d13370ce99d40c6/rendered-review-round3.json",
+      "sha256": "d6aa04f588189e00a815de1a282b305d995ebd9b754d7f0c1d13370ce99d40c6",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/rendered-review-round3.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/58c7fe86b049ad4b4740075f28eb6658fa10ccf437599c63ebb880331e9b851c/rendered-review-round2.json",
+      "sha256": "58c7fe86b049ad4b4740075f28eb6658fa10ccf437599c63ebb880331e9b851c",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/rendered-review-round2.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/044bb0c0e51bdff5a2892579741e205095cb80b31a30f444c626ce1ca745f17d/rendered-review-round1.json",
+      "sha256": "044bb0c0e51bdff5a2892579741e205095cb80b31a30f444c626ce1ca745f17d",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/rendered-review-round1.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/b2f6abe0d934b039abead629cc6c224de87ce95420925e22c0fb1797a2bcef9e/approval-manifest.json",
+      "sha256": "b2f6abe0d934b039abead629cc6c224de87ce95420925e22c0fb1797a2bcef9e",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/073ddee29183b42ecb4890661e1da828f45cfea6bfe88258cac085e342cacca3/chart-review.json",
+      "sha256": "073ddee29183b42ecb4890661e1da828f45cfea6bfe88258cac085e342cacca3",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/021f8a7997dad98966bb2b57de0f791589f684cc3c9f97560ef4d9fc9aa3ebf7/how-to-make-a-financial-plan-analysis.json",
+      "sha256": "021f8a7997dad98966bb2b57de0f791589f684cc3c9f97560ef4d9fc9aa3ebf7",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/how-to-make-a-financial-plan-analysis.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/0b946c3b38d2b072b92ea162e19403c7205ee0e3bf166c5f0691b41aef0dd61f/questions-to-ask-a-financial-advisor-analysis.json",
+      "sha256": "0b946c3b38d2b072b92ea162e19403c7205ee0e3bf166c5f0691b41aef0dd61f",
+      "originPath": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/audit/questions-to-ask-a-financial-advisor-analysis.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/blobs/bc1df069a12ae5e1edf649f3dd3e6b8c3fa448623fac50a068a85341e2d206ed/

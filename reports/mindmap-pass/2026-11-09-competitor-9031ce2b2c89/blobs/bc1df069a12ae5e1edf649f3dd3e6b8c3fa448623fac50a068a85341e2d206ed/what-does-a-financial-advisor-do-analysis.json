@@ -1,0 +1,33 @@
+{
+ "reviewer": "phase4-auditor-1",
+ "verdict": "PASS",
+ "packetSha256": "170e0928039f64ef4072aa2884ed84da23096ee7a27ef446f4f9d43f77a7ee56",
+ "usefulness": {
+  "status": "PASS",
+  "evidence": "The page answers 'what does an advisor do' with Investor.gov's service list, fee basis and Form CRS, then adds a role comparison table (adviser, nonprofit credit counselor, coach) with what to ask each. The added value is the boundary: who should start with a credit counselor (labeled as our read) and the explicit statement that no fetched primary source defines a coach's job. It stays reported and attributes every rule to Investor.gov, CFPB, NFCC or FINRA."
+ },
+ "sourceAndAssumptions": {
+  "status": "PASS",
+  "evidence": "Statements trace to FA1-FA8 and FK1-FK7 and the captures; coach statements are limited to FINRA's designation list and its non-endorsement notice, counselor statements to CFPB and NFCC credit counseling. The CRS pay example is described as one firm's disclosure ('in different ways, including commissions and advisory fees'), consistent with the J.P. Morgan Securities LLC form."
+ },
+ "conditionsAndCounterexample": {
+  "status": "PASS",
+  "evidence": "Conditions and counterexamples are on the page: an advisor-only seller may not offer planning, a nonprofit credit counselor does not manage investments, and the coach conclusion would change if a primary source defined the job; the not-for section and FAQ 'Is credit counseling free?' state the limits."
+ },
+ "renderedConsistency": {
+  "status": "PASS",
+  "evidence": "I read the exact rendered page I passed in the final round (reviewed snapshot and review under final/subset3): the opening answer, table, FAQs and Takeaway agree on the recommendation and its conditions, and nothing on the page presents reported evidence as testing or modeling. Layout, links and dates were re-checked on that render."
+ },
+ "localExclusions": {
+  "status": "PASS",
+  "evidence": "Financial advice is outside _experience.md section G, so TESTED stays off and no 'we tested', modeling, client or professional-review claim appears; third-person attribution to the named bodies; no coach/counselor regulation claim and no Regulation Best Interest ranking."
+ },
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset3.snapshot.json",
+  "sha256": "edf7e73a37911981293133d2213890d733be33f9fc144cbe164951d6b8b18f3f"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset3.review.json",
+  "sha256": "f04e566f4609b0ca4e746f061ce3b5e6fc336c337a791a6cd045d9fe1e0296e3"
+ }
+}

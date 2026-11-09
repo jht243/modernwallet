@@ -1,0 +1,33 @@
+{
+ "reviewer": "phase4-auditor-1",
+ "verdict": "PASS",
+ "packetSha256": "ec04ca7dcc1249d7acb038e2dd4a71e311cec85218469afecb2a983bb74adb6e",
+ "usefulness": {
+  "status": "PASS",
+  "evidence": "The page delivers a usable interview script: eight questions with what a clear answer should cover, public-record checks, and three red flags. The contribution beyond the sources is the 'what a clear answer looks like' guidance and the sequencing (registration first, then fees, duty, conflicts), clearly separated from sourced rules; two of the red flags are labeled as our judgment."
+ },
+ "sourceAndAssumptions": {
+  "status": "PASS",
+  "evidence": "Question wording is quoted from the captured J.P. Morgan Securities LLC Form CRS (item 8 uses its printed disciplinary prompt) and the page states it is one dual registrant's version; rules come from Investor.gov. The 'eight' count is the page's own grouping and the page does not claim the form has only eight."
+ },
+ "conditionsAndCounterexample": {
+  "status": "PASS",
+  "evidence": "Conditions are on the page: the list is one firm's form, other firms print their own, a clean record does not settle the other questions, a one-time question needs a different guide, and the SEC or Form CRS changing would change the list; the packet's fee-only small-account counterexample is covered by the instruction to ask the $10,000 question word for word and expect dollar answers."
+ },
+ "renderedConsistency": {
+  "status": "PASS",
+  "evidence": "I read the exact rendered page I passed in the final round (reviewed snapshot and review under final/subset3): the opening answer, table, FAQs and Takeaway agree on the recommendation and its conditions, and nothing on the page presents reported evidence as testing or modeling. Layout, links and dates were re-checked on that render."
+ },
+ "localExclusions": {
+  "status": "PASS",
+  "evidence": "Financial advice is outside _experience.md section G, so TESTED stays off and no 'we tested', modeling, client or professional-review claim appears; third-person attribution to the named bodies; no coach/counselor regulation claim and no Regulation Best Interest ranking."
+ },
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset3.snapshot.json",
+  "sha256": "edf7e73a37911981293133d2213890d733be33f9fc144cbe164951d6b8b18f3f"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/final/subset3.review.json",
+  "sha256": "f04e566f4609b0ca4e746f061ce3b5e6fc336c337a791a6cd045d9fe1e0296e3"
+ }
+}
