@@ -12,7 +12,7 @@
         "path": "reports/competitor-monitor/intakes/proofs/9031ce2b2c8974afc4646b5986d7170e971fddf9df6302947640bf6f76d2df8d-43e51530bc55a07704cf03c0d248f11e29aec420f12b77973bf47fdb263dd25a.json",
         "sha256": "43e51530bc55a07704cf03c0d248f11e29aec420f12b77973bf47fdb263dd25a"
       },
-      "complete": false,
+      "complete": true,
       "support": {
         "reports/competitor-monitor/intakes/9031ce2b2c8974afc4646b5986d7170e971fddf9df6302947640bf6f76d2df8d.chart.json": "f7bf0590035f68e581ce39b0b954a92d3e9917f5b1a0ac8b48c86004b2c54fb9",
         "reports/competitor-monitor/intakes/9031ce2b2c8974afc4646b5986d7170e971fddf9df6302947640bf6f76d2df8d.json": "9031ce2b2c8974afc4646b5986d7170e971fddf9df6302947640bf6f76d2df8d",
