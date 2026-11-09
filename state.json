@@ -1,6 +1,17 @@
 {
   "candidates": {},
   "generationBudgets": {
+    "1eef756765dabd9b8a52d7d985ee506fbbf6184de1d2b6c527214f42baaf486b": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "competitor-9031ce2b2c89",
+      "previousJobs": [],
+      "repairs": [
+        "9faa0d4a292e712b2cc5dcd9ba344fca4f6af147d299abf7ec028b8e36ef740e"
+      ],
+      "route": "/guides/what-is-a-cfp"
+    },
     "60791aceae3034e7f9002bf271cf03f06d125c36d25249c6eae288a8b59f4fca": {
       "generated": [
         "full"
