@@ -1,4 +1,5 @@
 """Native non-forced Git checkpoints, extracted from the existing routine controller."""
+import hashlib
 import json
 import os
 from pathlib import Path
