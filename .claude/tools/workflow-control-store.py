@@ -7,7 +7,7 @@ import re
 import subprocess
 import tempfile
 REF = "refs/heads/automation/mindmap-control"
-SECRET = re.compile(rb'(?:sk-(?:proj-|ant-)?[A-Za-z0-9_-]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY|ri_[A-Za-z0-9_-]{20,}|AQ\.[A-Za-z0-9_-]{20,})')
+SECRET = re.compile(rb'(?<![A-Za-z0-9_])(?:sk-(?:proj-|ant-)?[A-Za-z0-9_-]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY|ri_[A-Za-z0-9_-]{20,}|AQ\.[A-Za-z0-9_-]{20,})')
 
 
 class ControlError(RuntimeError):

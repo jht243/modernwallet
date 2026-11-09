@@ -209,6 +209,11 @@ def stop(root, payload):
     source = active_pull(root,payload)
     if source is None:
         return
+    helper=root/'.claude/tools/native-worker-wait.py'
+    if helper.is_file():
+        spec=importlib.util.spec_from_file_location('native_hype_worker_wait',helper)
+        worker_wait=importlib.util.module_from_spec(spec);spec.loader.exec_module(worker_wait)
+        if worker_wait.running(payload):return
     # A completed worker is not the independently validated chart handoff.
     print(json.dumps({"decision":"block","reason":f"Resume {source.relative_to(root)}. Dispatch BUILD with the original pull hash and all candidates. The dispatcher cannot drop the intake or finish as a no-op."}))
 

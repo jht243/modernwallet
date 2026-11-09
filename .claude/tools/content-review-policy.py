@@ -74,8 +74,10 @@ def artifact(root, ref):
     return p
 
 
-def save_exact(path, value):
-    raw = canonical(value)+b'\n';path.parent.mkdir(parents=True,exist_ok=True)
+def save_exact(path, value, preserve_order=False):
+    # Snapshot dict traversal is part of an existing claim-text assessment.
+    # Keep that original order; canonical hashes still sort object keys.
+    raw = (json.dumps(value,separators=(',', ':'),ensure_ascii=False).encode() if preserve_order else canonical(value))+b'\n';path.parent.mkdir(parents=True,exist_ok=True)
     try:
         with path.open('xb') as stream: stream.write(raw)
     except FileExistsError:
@@ -98,6 +100,16 @@ def policy(root):
     require(LEVELS.index(p['defaultProfile']) >= LEVELS.index(p['minimumProfile']), 'Default below site floor')
     require(p.get('roundLimits') == LIMITS, 'The shared round budget must be exactly 1/2/3')
     return p
+
+
+def accepted_policy_hashes(root):
+    """Committed compatibility receipts apply to recorded evidence, never new reservations."""
+    items=policy(root).get('compatiblePolicies',[])
+    for item in items:
+        require(isinstance(item,dict) and re.fullmatch('[0-9a-f]{64}',str(item.get('sha256',''))) and
+                re.fullmatch('[0-9a-f]{40}',str(item.get('commit',''))) and len(str(item.get('reason','')).strip())>=40,
+                'Invalid compatible review-policy record')
+    return {policy_hash(root)} | {x['sha256'] for x in items}
 
 
 def policy_hash(root):
@@ -273,7 +285,7 @@ def renderer_module():
 def valid_snapshot(snapshot):renderer_module().valid_snapshot(snapshot)
 
 
-def reserve(root, snapshot_path, route, job, reviewer, out, prior_reports=()):
+def reserve_without_checkpoint(root, snapshot_path, route, job, reviewer, out, prior_reports=()):
     snapshot = read(snapshot_path);row,spec = route_in(snapshot,route)
     valid_snapshot(snapshot)
     require(snapshot.get('contentReviewPolicy')=={'version':VERSION,'sha256':policy_hash(root)},
@@ -383,19 +395,19 @@ def project(root, snapshot_path, review_path, routes, out_snapshot, out_review):
     snapshot,review=copy_subset(original_snapshot,original_review,set(routes))
     review['approvalProjection']={'snapshot':reference(root,snapshot_path),'review':reference(root,review_path)}
     check_rendered(root,snapshot,review,force=True)
-    save_exact(out_snapshot,snapshot);save_exact(out_review,review)
+    save_exact(out_snapshot,snapshot,preserve_order=True);save_exact(out_review,review)
     return {'snapshot':reference(root,out_snapshot),'review':reference(root,out_review),
             'scope':'Mechanical projection of exact existing independent approvals; no new audit or PASS.'}
 
 
-def record(root, report_path):
+def record_without_checkpoint(root, report_path):
     report = read(report_path);require(isinstance(report.get('routes'),list) and report['routes'], 'Record the actual per-route independent content review')
     result = []
     for rr in report['routes']:
         admission_ref = rr.get('reviewBudget');admission = read(artifact(root,admission_ref))
         snapshot = read(artifact(root,admission['snapshot']))
         require(report.get('snapshotSha256')==snapshot['snapshotSha256'] and report.get('reviewer')==admission['reviewer'], 'Result must belong to the reserved independent review')
-        require((rr['path'].rstrip('/') or '/')==admission['identity']['route'] and admission['policySha256']==policy_hash(root), 'Review identity/policy changed')
+        require((rr['path'].rstrip('/') or '/')==admission['identity']['route'] and admission['policySha256'] in accepted_policy_hashes(root), 'Review identity/policy changed')
         selected = decision(root,snapshot,report,rr)
         require(rr.get('verdict') in ['PASS','FAIL'], 'Keep the actual audit verdict; no synthetic approval')
         if rr['verdict']=='PASS':pass_evidence(root,snapshot,rr,selected)
@@ -419,18 +431,46 @@ def record(root, report_path):
     return result
 
 
+
+def durable_reviews(root):
+    path=Path(__file__).with_name('content-review-durable.py')
+    require(path.is_file(),'Restore durable review dependencies before continuing')
+    spec=importlib.util.spec_from_file_location('review_durability',path)
+    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);return module
+
+def reserve(root, snapshot_path, route, job, reviewer, out, prior_reports=()):
+    durable=durable_reviews(root);snapshot=read(snapshot_path)
+    journal=Journal(root,snapshot['manifest']['canonicalBase'],route)
+    context=durable.restore(root,journal)
+    try:return reserve_without_checkpoint(root,snapshot_path,route,job,reviewer,out,prior_reports)
+    finally:durable.checkpoint(root,journal,context)
+
+def record(root, report_path):
+    durable=durable_reviews(root);report=read(report_path);contexts=[];seen=set()
+    for row in report.get('routes',[]):
+        reference=row.get('reviewBudget')
+        if not reference:continue  # The original validator still rejects missing admissions.
+        admission=read(artifact(root,reference));identity=admission['identity']
+        journal=Journal(root,identity['canonicalBase'],identity['route'])
+        if journal.key not in seen:
+            contexts.append((journal,durable.restore(root,journal)));seen.add(journal.key)
+    try:return record_without_checkpoint(root,report_path)
+    finally:
+        # Preserve genuine partial results even if a later route is invalid.
+        for journal,context in contexts:durable.checkpoint(root,journal,context)
+
 def check_rendered(root, snapshot, review, local_module=None, force=False):
     """Return True for current-policy records; old records still run old checks."""
     if not (root/CONFIG).is_file() or is_legacy(root,snapshot,review): return False
     if not force and not snapshot.get('contentReviewPolicy'): return False
     stamp=snapshot.get('contentReviewPolicy',{})
-    require(stamp=={'version':VERSION,'sha256':policy_hash(root)}, 'Capture the current candidate under the active review policy')
+    require(isinstance(stamp,dict) and stamp.get('version')==VERSION and stamp.get('sha256') in accepted_policy_hashes(root), 'Capture the current candidate under the active review policy')
     _,authority=projection_source(root,snapshot,review)
     for rr in review['routes']:
         selected=decision(root,snapshot,review,rr)
         pass_evidence(root,snapshot,rr,selected,local_module)
         admission_ref=rr.get('reviewBudget');admission=read(artifact(root,admission_ref))
-        require(admission.get('policySha256')==policy_hash(root) and admission.get('reviewer')==review['reviewer'] and
+        require(admission.get('policySha256') in accepted_policy_hashes(root) and admission.get('reviewer')==review['reviewer'] and
                 admission.get('author')==snapshot['manifest']['author'] and admission.get('fingerprint')==rr['fingerprint'],
                 'Wrong current review admission')
         with Journal(root,snapshot['manifest']['canonicalBase'],rr['path']) as journal:

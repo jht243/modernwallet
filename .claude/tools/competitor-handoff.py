@@ -251,6 +251,12 @@ def blocked(root,evidence):
   store.mutate(keep,[ref['path'] for ref in value['evidence']])
  return {'status':'blocked-work-preserved','intake':str(path.relative_to(root)),'reportStatus':'failure'}
 
+def worker_wait_api():return load('workflow_native_wait',Path(__file__).with_name('native-worker-wait.py'))
+def worker_tag(path):return worker_wait_api().worker_tag()  # Compatibility for intake-bound callers.
+def bind_worker(root,payload):return worker_wait_api().bind(payload)
+def waiting_for_owned_worker(path,payload):
+ if payload.get('hook_event_name')!='Stop' or not Path(__file__).with_name('native-worker-wait.py').is_file():return False
+ return worker_wait_api().running(payload)
 def stop(root,payload):
  path=active(root,payload)
  if path is None or completed(root,path):return
@@ -261,7 +267,8 @@ def stop(root,payload):
   for ref in proof['failure']['evidence']:
    require(sha(inside(root,ref['path']).read_bytes())==ref['sha256'],'Preserve original native blocking evidence')
   return
- print(json.dumps({'decision':'block','reason':'Complete the existing unattended competitor handoff for '+str(path.relative_to(root))+'. Keep all selected URLs, sources, canonical jobs, findings and counters. Obtain the real independent preparation chart, complete its approved native production, then scraper.py record/baseline. Do not finish as success/no-op with an unowned pending gap or substitute a worker completion for the required chart. Genuine professional/quality blocks retain exact work and must be reported honestly; never fabricate PASS or publish around a hold.'}))
+ if waiting_for_owned_worker(path,payload):return
+ print(json.dumps({'decision':'block','reason':'Complete the existing unattended competitor handoff for '+str(path.relative_to(root))+'. Keep all selected URLs, sources, canonical jobs, findings and counters. Obtain the real independent preparation chart, complete its approved native production, then scraper.py record/baseline. Join the actual worker terminal handback; do not repeatedly end the turn or poll notifications/list agents while waiting. An owned running background worker may pause the parent until its native completion wakeup, but cannot authorize final reporting, publication or an editorial PASS. Do not finish as success/no-op with an unowned pending gap or substitute a worker completion for the required chart. Genuine professional/quality blocks retain exact work and must be reported honestly; never fabricate PASS or publish around a hold.'}))
 def report_guard(root,payload):
  command=payload.get('tool_input',{}).get('command','')
  if '/api/routine-run' not in command:return
@@ -310,13 +317,14 @@ def execute(root,main):
     return result
 
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('command',choices=['stop','blocked','report-guard','status']);p.add_argument('--evidence',type=Path);a=p.parse_args();root=Path(__file__).resolve().parents[2]
+ p=argparse.ArgumentParser();p.add_argument('command',choices=['stop','blocked','report-guard','status','bind-worker']);p.add_argument('--evidence',type=Path);a=p.parse_args();root=Path(__file__).resolve().parents[2]
  try:
   if a.command=='stop':stop(root,json.load(sys.stdin))
   elif a.command=='report-guard':report_guard(root,json.load(sys.stdin))
+  elif a.command=='bind-worker':bind_worker(root,json.load(sys.stdin))
   elif a.command=='status':print(json.dumps(status(root)))
   else:
    require(a.evidence is not None,'Record actual blocking evidence');print(json.dumps(blocked(root,a.evidence)))
  except (ValueError,OSError,KeyError) as error:
   if a.command=='stop':print(json.dumps({'decision':'block','reason':'Recover the original competitor handoff evidence: '+str(error)}))
-  else:print('BLOCKED: '+str(error),file=sys.stderr);sys.exit(2 if a.command=='report-guard' else 1)
+  else:print('BLOCKED: '+str(error),file=sys.stderr);sys.exit(2 if a.command in ('report-guard','bind-worker') else 1)

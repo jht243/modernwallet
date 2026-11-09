@@ -12,5 +12,12 @@
     "path": ".claude/content-review-policy-legacy.json",
     "sha256": "bcb3617be22e7cfa00c018379d770133506741748ea21e6ead8e0decca42604b"
   },
-  "scope": "Mindmap Pass and content-producing callers only. Preserve native paid-client/upsell exceptions, full SEO, exclusions and required professional review."
+  "scope": "Mindmap Pass and content-producing callers only. Preserve native paid-client/upsell exceptions, full SEO, exclusions and required professional review.",
+  "compatiblePolicies": [
+    {
+      "sha256": "025acd144fe43eda5150936b7470c2b0dc7a01f1545c8a23134e403c6ed19c25",
+      "commit": "3ca86f560919113cc1be53bd9df7e1f67bcdda48",
+      "reason": "Mechanical serializer, evidence-checkpoint and native-worker continuation migration only; retain exact genuine recorded verdicts and all current factual, SEO, safety and release checks."
+    }
+  ]
 }
