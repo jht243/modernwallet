@@ -1,0 +1,8 @@
+{
+  "status": "FAIL",
+  "exit_code": 14,
+  "error": "GSC returned an empty page\u00d7query set (baseline 0, current 18)",
+  "site": "sc-domain:themodernwallet.com",
+  "generated_at": "2026-11-09T15:36:07.564641+00:00",
+  "rule": "Google first-party data unavailable \u2014 run must stop. No fallback source is permitted."
+}
