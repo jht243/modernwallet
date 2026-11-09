@@ -33,6 +33,15 @@ def content_review_policy():
     module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
     return module
 
+def content_correction_scope():
+    root=Path(__file__).resolve().parents[2]
+    path=Path(__file__).with_name('content-correction-scope.py')
+    if not (root/'.claude/content-review-policy.json').is_file() or not path.is_file(): return None
+    import importlib.util
+    spec=importlib.util.spec_from_file_location('rendered_correction_scope',path)
+    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+    return module
+
 class Page(HTMLParser):
     def __init__(self, volatile_ads=None):
         super().__init__(convert_charrefs=True)
@@ -225,6 +234,9 @@ def capture(manifest, base, out, dom_dir=None):
     review_policy=content_review_policy()
     if review_policy is not None and manifest.get('workflowKind')=='mindmap-pass':
         payload['contentReviewPolicy']={'version':review_policy.VERSION,'sha256':review_policy.policy_hash(Path(__file__).resolve().parents[2])}
+        correction=content_correction_scope()
+        if correction is not None:
+            payload['correctionBoundary']=correction.boundary(Path(__file__).resolve().parents[2],folder/'correction-boundary.json',manifest)
     payload['snapshotSha256']=digest(payload); save(out,payload)
     return payload
 
@@ -257,6 +269,8 @@ def review_check(s, review):
             require(check.get('status') in (['PASS'] if key in REQUIRED else ['PASS','NA']),r['path']+': failed '+key)
             require(isinstance(check.get('evidence'),str) and len(check['evidence'].strip())>=20,r['path']+': missing evidence for '+key)
     # Portable Mindmap budgets are separate from native client/upsell contracts.
+    correction=content_correction_scope()
+    if correction is not None: correction.validate(Path(__file__).resolve().parents[2],s,review)
     review_policy=content_review_policy()
     if review_policy is not None:
         review_policy.check_rendered(Path(__file__).resolve().parents[2],s,review)
