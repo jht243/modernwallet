@@ -189,6 +189,11 @@ def chart(root, plan, review):
     independent(review, plan['author'], 'manifestSha256', digest(plan))
     require(review.get('readinessSha256') == file_sha(readiness), 'Readiness changed since review')
     content(review.get('evidence'), 'independent preparation review evidence')
+    if plan.get('vendorResearchPlan'):
+        spec=importlib.util.spec_from_file_location('mindmap_vendor_research',root/'.claude/tools/vendor-research.py')
+        vendor_research=importlib.util.module_from_spec(spec);spec.loader.exec_module(vendor_research)
+        allocation=vendor_research.validate(root,artifact(root,plan['vendorResearchPlan']))
+        require(plan.get('jobId')==allocation['jobId'],'Vendor research and chart must preserve the same canonical job')
     return plan
 
 
