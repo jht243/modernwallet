@@ -3,6 +3,7 @@
 
 No editorial verdict, understanding, publication or delivery proof is generated.
 """
+import contextlib,io
 import argparse,hashlib,importlib.util,json,os,subprocess,sys,tempfile
 from pathlib import Path
 REF='refs/heads/automation/competitor-handoffs'
@@ -41,11 +42,27 @@ def state_dir(root):return root/'reports/competitor-monitor/intakes'
 def rows(data):return data['candidates']
 def validate_source(path):
  raw=path.read_bytes();require(path.stem==sha(raw),'Original competitor intake changed');return read(path)
+def quality_findings(root,data):
+ refs=data.get('qualityFindings',[]);require(isinstance(refs,list),'Invalid source quality-finding references')
+ ids=[]
+ for ref in refs:
+  require(isinstance(ref,dict) and str(ref.get('path','')).startswith('reports/competitor-monitor/intakes/quality-findings/') and str(ref['path']).endswith('.json'),'Quality findings must be internal non-executable source records')
+  path=inside(root,ref['path']);require(sha(path.read_bytes())==ref.get('sha256'),'Original source quality finding changed')
+  value=read(path);require(isinstance(value,dict),'Invalid source quality-finding record')
+  findings=value.get('findings',[]);require(isinstance(findings,list) and findings,'Missing actual source quality findings')
+  for finding in findings:
+   require(isinstance(finding,dict),'Invalid source quality finding')
+   identifier=finding.get('id');require(isinstance(identifier,str) and 0<len(identifier)<=100,'Missing stable quality-finding identity');ids.append(identifier)
+ require(len(ids)==len(set(ids)),'Duplicate quality-finding identities')
+ return refs,ids
 def announce(root,path):
  data=validate_source(path);point(root,path)
  print('AUTOMATED MINDMAP HANDOFF REQUIRED: '+str(path.relative_to(root))+' sha256='+path.stem)
  print('Send every selected candidate, without root filtering, to the existing independent preparation/chart workflow. Complete its approved native production and record every terminal disposition. A next scheduled pass is not a production handoff.')
  print('Use unique chartPath reports/mindmap-pass/'+data['generated'][:10]+'-competitor-'+path.stem[:12]+'.md. Include the exact intake path/hash in evidenceFiles and one candidateDispositions row per original selected URL: candidate=URL, decision, reason, and target for production. Preserve the native max-items cap, site rules and real blocking/failed states.')
+ refs,ids=quality_findings(root,data)
+ if refs:
+  print('This intake carries reported post-publication quality findings, not a new competitor publication. Independently verify '+', '.join(ids)+' from '+', '.join(ref['path'] for ref in refs)+'. Bind these exact source records in chart evidenceFiles and address each finding ID in the disposition reasons. Existing coverage alone does not resolve a material error. Preserve the original completed job/reviews and native correction budgets; never fabricate a PASS or broaden publication permissions.')
 def chart_value(root,path):
  value=read(path.with_suffix('.chart.json'))
  if 'planText' in value:return value  # Earlier protocol receipt, preserved without rewriting it.
@@ -136,6 +153,10 @@ def validate_chart(root,path,plan,review):
  require(path.stem in {r.get('sha256') for r in plan.get('evidenceFiles',[])},'Independent chart must bind the exact original competitor intake')
  expected=sorted(c['url'] for c in rows(data));decisions=plan.get('candidateDispositions',[])
  require(sorted(d.get('candidate','') for d in decisions)==expected and all(d.get('decision') and len(d.get('reason','').strip())>=20 for d in decisions),'Account for every selected original URL exactly once, with real reasons')
+ refs,ids=quality_findings(root,data);evidence={(ref.get('path'),ref.get('sha256')) for ref in plan.get('evidenceFiles',[])}
+ require(all((ref['path'],ref['sha256']) in evidence for ref in refs),'Bind the actual source-backed quality findings in preparation evidence')
+ reasons='\n'.join(d['reason'] for d in decisions)
+ require(all(identifier in reasons for identifier in ids),'Address every source-backed quality finding in the independent dispositions')
  # Called only after chart + saved_chart pass, or revalidated on resume/record.
  require(review.get('manifestSha256')==sha(canonical(plan)) and review.get('reviewer')!=plan.get('author') and review.get('verdict')=='PASS','Actual independent preparation PASS required')
  return {'intake':path.stem,'planText':json.dumps(plan,ensure_ascii=False),'reviewText':json.dumps(review,ensure_ascii=False)}
@@ -241,6 +262,26 @@ def stop(root,payload):
    require(sha(inside(root,ref['path']).read_bytes())==ref['sha256'],'Preserve original native blocking evidence')
   return
  print(json.dumps({'decision':'block','reason':'Complete the existing unattended competitor handoff for '+str(path.relative_to(root))+'. Keep all selected URLs, sources, canonical jobs, findings and counters. Obtain the real independent preparation chart, complete its approved native production, then scraper.py record/baseline. Do not finish as success/no-op with an unowned pending gap or substitute a worker completion for the required chart. Genuine professional/quality blocks retain exact work and must be reported honestly; never fabricate PASS or publish around a hold.'}))
+def report_guard(root,payload):
+ command=payload.get('tool_input',{}).get('command','')
+ if '/api/routine-run' not in command:return
+ # Use exactly the same canonical completion/real-hold proof as Stop. A
+ # recoverable pause is not a final failure report; report once at termination.
+ output=io.StringIO()
+ with contextlib.redirect_stdout(output):stop(root,payload)
+ if output.getvalue():
+  print('Finish the pending competitor handoff before submitting its final report. A genuine unrecoverable native hold must first retain its validated blocked evidence; a running worker or time/context convenience is not a final failure.',file=sys.stderr)
+  raise SystemExit(2)
+
+def status(root):
+ require(session(),'Use the actual native session identity for a status check')
+ path=active(root)
+ if path is None:return {'status':'no-active-intake'}
+ if completed(root,path):return {'status':'complete','intakeSha256':path.stem}
+ output=io.StringIO()
+ with contextlib.redirect_stdout(output):stop(root,{})
+ return {'status':'pending' if output.getvalue() else 'blocked','intakeSha256':path.stem}
+
 def execute(root,main):
     """Wrap existing CLIs without changing their roster, filters or ledger formats."""
     import datetime
@@ -269,11 +310,13 @@ def execute(root,main):
     return result
 
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('command',choices=['stop','blocked']);p.add_argument('--evidence',type=Path);a=p.parse_args();root=Path(__file__).resolve().parents[2]
+ p=argparse.ArgumentParser();p.add_argument('command',choices=['stop','blocked','report-guard','status']);p.add_argument('--evidence',type=Path);a=p.parse_args();root=Path(__file__).resolve().parents[2]
  try:
   if a.command=='stop':stop(root,json.load(sys.stdin))
+  elif a.command=='report-guard':report_guard(root,json.load(sys.stdin))
+  elif a.command=='status':print(json.dumps(status(root)))
   else:
    require(a.evidence is not None,'Record actual blocking evidence');print(json.dumps(blocked(root,a.evidence)))
  except (ValueError,OSError,KeyError) as error:
   if a.command=='stop':print(json.dumps({'decision':'block','reason':'Recover the original competitor handoff evidence: '+str(error)}))
-  else:print('BLOCKED: '+str(error),file=sys.stderr);sys.exit(1)
+  else:print('BLOCKED: '+str(error),file=sys.stderr);sys.exit(2 if a.command=='report-guard' else 1)

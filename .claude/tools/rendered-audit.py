@@ -254,6 +254,13 @@ def valid_snapshot(s):
         if r.get('textFile'):
             require(hashlib.sha256(Path(r['textFile']).read_bytes()).hexdigest()==r['textSha256'],'Captured readable text changed')
 
+def testing_attribution_check(semantic, checks):
+    text = semantic.get('text', '')
+    claimed = re.search(r'\btested\s+(?:and|&)\s+reviewed\s+by\b|\btested\s+guidance\b', text, re.I)
+    require(not claimed or checks.get('testingAndAttribution', {}).get('status') == 'PASS',
+            'Visible testing attribution cannot be NA: verify actual local permission, evidence and identity, or remove the unsupported inherited label')
+
+
 def review_check(s, review):
     valid_snapshot(s)
     require(review.get('reviewer') and review['reviewer']!=s['manifest']['author'],'Independent reviewer required')
@@ -264,6 +271,7 @@ def review_check(s, review):
         rr=by_path[r['path']]
         require(rr.get('fingerprint')==r['fingerprint'] and rr.get('verdict')=='PASS',r['path']+': unapproved render')
         checks=rr.get('checks',{})
+        testing_attribution_check(r.get('semantic',{}),checks)
         require(set(checks)==CHECKS,r['path']+': missing audit checks')
         for key,check in checks.items():
             require(check.get('status') in (['PASS'] if key in REQUIRED else ['PASS','NA']),r['path']+': failed '+key)

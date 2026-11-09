@@ -50,6 +50,7 @@ def historical(root,directory,core,visited=None,require_delivery=True):
     visited.add(key)
     m = core.load(directory)
     require(m['version']==VERSION and m['root']==str(root.resolve()),'Different repository or receipt protocol')
+    require(m.get('phase') in ('build','write','audit','publish'),'Unknown original instruction phase')
     texts = m['sourceTexts']
     require(set(texts)==set(m['files']),'Missing original rule coverage')
     for name,text in texts.items():
@@ -62,7 +63,7 @@ def historical(root,directory,core,visited=None,require_delivery=True):
         old_dir = core.inside(root,ref['directory'])
         require(sha((old_dir/'manifest.json').read_bytes())==ref['sha256'],'Original reading receipt changed')
         old = historical(root,old_dir,core,visited)
-        require(all(m.get(k) and old.get(k)==m.get(k) for k in ('actor','phase','contextId','contextEpoch')),
+        require(all(m.get(k) and old.get(k)==m.get(k) for k in ('actor','contextId','contextEpoch')),
                 'Lost or different actor, role, conversation or context epoch; reread current rules')
         require(all(old['files'].get(k)==m['files'][k] for k in reused),'Retained instruction hashes changed')
     else:
@@ -87,9 +88,15 @@ def current_task(root,path,phase,actor):
 
 def prepare(root,phase,instructions,directory,reuse,actor,run_id,context_id,context_epoch,core,handoff=None,context_packet=None):
     require(run_id,'Use the actual verified startup run ID')
+    require(phase=='build' or handoff,'WRITE/AUDIT/PUBLISH require the current canonical handoff')
+    context_id = context_id or os.environ.get('CLAUDE_CODE_SESSION_ID') or os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID')
+    require(context_id and context_epoch,
+            'Supply the actual --context-id and --context-epoch before preparing any reading. '
+            'For --reuse, repair missing identity flags and confirm current access/understanding; '
+            'do not drop --reuse or change epoch merely because a task/handoff changed. '
+            'A new epoch and full reading are required after real context loss.')
     texts = {name:core.inside(root,name).read_bytes().decode('utf-8') for name in dict.fromkeys(core.sources(root,phase,instructions)+[CONTRACT])}
     files = {name:sha(text.encode()) for name,text in texts.items()}
-    require(phase=='build' or handoff,'WRITE/AUDIT/PUBLISH require the current canonical handoff')
     task=None
     if handoff:
         handoff_path=core.inside(root,handoff)
@@ -103,13 +110,12 @@ def prepare(root,phase,instructions,directory,reuse,actor,run_id,context_id,cont
         name=str(task_path.relative_to(root))
         texts[name]=task_path.read_bytes().decode('utf-8')
         files[name]=sha(texts[name].encode())
-    context_id = context_id or os.environ.get('CLAUDE_CODE_SESSION_ID') or os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID')
     reused = []
     ref = None
     if reuse:
         old = historical(root,reuse,core)
         require(context_id and context_epoch and all(old.get(k)==v for k,v in
-                {'actor':actor,'phase':phase,'contextId':context_id,'contextEpoch':context_epoch}.items()),
+                {'actor':actor,'contextId':context_id,'contextEpoch':context_epoch}.items()),
                 'Retain only this role’s actual uninterrupted context; otherwise reread without --reuse')
         reused = [name for name,value in files.items() if old['files'].get(name)==value]
         ref = {'directory':str(reuse.relative_to(root)),'sha256':sha((reuse/'manifest.json').read_bytes())}

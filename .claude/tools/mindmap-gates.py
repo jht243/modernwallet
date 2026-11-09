@@ -109,6 +109,49 @@ def independent(review, author, bound_key, expected):
     require(review.get(bound_key) == expected, 'Review belongs to a different artifact')
 
 
+def approved_intent(plan, packet):
+    target = packet['route']
+    rows = [r for r in plan['actions'] if r['target'].rstrip('/') == target.rstrip('/') and r['bucket'] in
+            ['create new content', 'update existing body text']]
+    require(rows, 'Writer target is outside approved substantive actions')
+    require(any(r['reader_question'] == packet['readerQuestion'] for r in rows), 'Analysis reader question differs from approved intent')
+
+
+def preparation_packets(root, plan, args):
+    # Move existing writer checks earlier without reinterpreting historical
+    # chart receipts or reserving any paid generation/review budget.
+    targets = {row['target'].rstrip('/') for row in plan['actions'] if row['bucket'] in
+               ['create new content','update existing body text']}
+    errors = []
+    for ref in plan['evidenceFiles']:
+        if Path(ref['path']).suffix.lower() != '.json':
+            continue
+        source = artifact(root, ref)
+        try:
+            packet = read(source)
+        except ValueError:
+            continue
+        if (isinstance(packet, dict) and packet.get('gateSchemaVersion') == VERSION and
+                isinstance(packet.get('route'), str) and packet['route'].rstrip('/') in targets):
+            for check in (lambda: analysis(root, packet), lambda: approved_intent(plan, packet)):
+                try:
+                    check()
+                except (ValueError, OSError, KeyError) as error:
+                    errors.append(ref['path']+': '+str(error))
+    budget = root/'.claude/tools/content-generation-budget.py'
+    if targets and budget.is_file():
+        spec=importlib.util.spec_from_file_location('preparation_generation_scope',budget)
+        module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+        for route in sorted(targets):
+            try:
+                module.scope(root,argparse.Namespace(mindmap_manifest=args.manifest,
+                             mindmap_review=args.review,slug=route.rsplit('/',1)[-1]))
+            except (ValueError, OSError, KeyError) as error:
+                errors.append(str(error))
+    require(not errors,'Repair these existing preparation identities before dispatching a writer: '+
+            '; '.join(dict.fromkeys(errors)))
+
+
 def chart(root, plan, review):
     require(plan.get('schemaVersion') == VERSION, 'Unsupported chart schemaVersion')
     content(plan.get('author'), 'author')
@@ -311,10 +354,7 @@ def generation(root, plan, review, packet, slug, section=False):
     analysis(root, packet)
     require(packet['basis'] != 'no-addition', 'No-addition is terminal; do not call the writer')
     target = packet['route']
-    rows = [r for r in plan['actions'] if r['target'].rstrip('/') == target.rstrip('/') and r['bucket'] in
-            ['create new content', 'update existing body text']]
-    require(rows, 'Writer target is outside approved substantive actions')
-    require(any(r['reader_question'] == packet['readerQuestion'] for r in rows), 'Analysis reader question differs from approved intent')
+    approved_intent(plan, packet)
     expected = target.rstrip('/').split('/')[-1]
     require(slug == expected or (section and slug.startswith(expected + '--')), 'Writer slug differs from analysis route')
 
@@ -430,6 +470,8 @@ def main():
     else:
         plan, review = read(a.manifest), read(a.review)
         chart(root, plan, review)
+        if a.command in ('validate-chart','render-chart'):
+            preparation_packets(root, plan, a)
         if a.command == 'generation-check':
             generation(root, plan, review, read(a.packet), a.slug, a.section)
         if a.command == 'render-chart':

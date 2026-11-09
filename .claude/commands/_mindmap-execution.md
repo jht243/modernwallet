@@ -24,7 +24,7 @@ These are enforced substeps of the existing chart, Phase 3 and Phase 4. Keep the
 
 ## 1. Produce the actual approval chart from a reviewed manifest
 
-Use `<RUN>/approval-manifest.json` with `schemaVersion: 1`, `author`, actual local `date` (`YYYY-MM-DD`), `source`, `interpretedBrief`, `chartPath` (the actual `<CHART>` path), and:
+Use `<RUN>/approval-manifest.json` with `schemaVersion: 1`, the original stable `jobId` (retain it on resume), `author`, actual local `date` (`YYYY-MM-DD`), `source`, `interpretedBrief`, `chartPath` (the actual `<CHART>` path), and:
 
 - `actions`: the full original action rows. Every row contains `id`, `problem`, `solution`, `bucket`, `target`, `format`, `best_medium`, `resolved_deliverable`, `serp_verdict`, `serp_evidence`, `reader_question`, `answer`, `answer_placement`. Buckets are `consolidation advisory`, `update existing metadata`, `create new content`, `update existing body text`, `add internal links`. Keep consolidation advisory only.
 - `newPageBriefs`: exactly one per new-content action, matching `actionId` and exact `target`. Required fields: `identity`, `readerAndAnswer`, `keywordEvidence`, `serpAndQuestions`, `whyNewPage`, `outline`, `contributionAndEvidence`, `tablesToolsVisuals`, `testingAndReview`, `takeaway`, `inboundLinks`, `outboundLinks`, `technicalAndMeasurement`, plus `evidenceFiles`.
@@ -34,7 +34,7 @@ Use `<RUN>/approval-manifest.json` with `schemaVersion: 1`, `author`, actual loc
 - `emergingClusters`, `exclusions` and `executionPlan`: retain the original clusters, exceptions and all Phases 1–9. Each execution entry is `{phase: 1..9, action: <specific future action>}`. These are planned actions, never claimed completed work.
 - `publicationScope`: explicit booleans `commit`, `push`, `liveVerification`, `indexNow`, matching the actual authorization being requested or the existing authorized local-only scope. Do not broaden it.
 
-The existing independent chart reviewer checks the complete manifest, source research, local rules, coverage, evidence and every brief. It writes `<RUN>/chart-review.json`: `reviewer` distinct from `author`, `verdict: "PASS"`, canonical `manifestSha256`, actual file `readinessSha256`, and concrete `evidence` describing its review. Use `mindmap-gates.py hash --file <file>` to calculate hashes. A hash or helper return is not independent judgment. Never fabricate a review or populate PASS defaults.
+The existing independent chart reviewer checks the complete manifest, source research, local rules, coverage, evidence and every brief. It writes `<RUN>/chart-review.json`: `reviewer` distinct from `author`, `verdict: "PASS"`, `jobId` exactly matching the manifest, canonical `manifestSha256`, actual file `readinessSha256`, and concrete `evidence` describing its review. Use `mindmap-gates.py hash --file <file>` to calculate hashes. A hash or helper return is not independent judgment. Never fabricate a review or populate PASS defaults.
 
 ```bash
 python3 .claude/tools/mindmap-gates.py render-chart --manifest <RUN>/approval-manifest.json --review <RUN>/chart-review.json --out <CHART>
@@ -52,7 +52,7 @@ Do not force calculations. For a combat drone with undisclosed price/performance
 Before assembling closed facts, retrieve the relevant approved client/fleet records:
 
 ```bash
-python3 .claude/tools/mindmap-gates.py cases --query "<actual reader question>" --publisher <active-site-domain> --out <RUN>/evidence/<slug>/cases.json
+python3 .claude/tools/mindmap-gates.py cases --query "<exact approved reader_question, including its internal evidence tag>" --publisher <active-site-domain> --out <RUN>/evidence/<slug>/cases.json
 ```
 
 This reads the active site's full `_experience.md` plus the shared approved bank, preserving source IDs, exact quotes, ownership and attribution limits. It does not grant another site Layer3's history or testing permission. Record selected/rejected matches and why; never force a client mention. Additional accessible approved records can be added with their source, precise public-use scope and supported facts; a client list alone does not establish outcomes. Keep private records private. Update the shared bank through the existing reviewed sync when approved source facts change. For Layer3, also run the existing durable reader-survey catalog/facts lookup every Phase 3 run. No completed survey is not zero demand; do not simulate respondents or require waiting for a new survey.
@@ -63,7 +63,7 @@ Extend the existing `evidence/<slug>/evidence.json` with `gateSchemaVersion: 1`,
 - `basis: measured`: include method, units, limitations, counterexample and actual `runs: [{testedAt, scope, artifact: {path, sha256}}]`. Existing relevant verified owner/product records are reusable. Physical or stochastic product tests do not need identical fresh API responses. Preserve the separate testing-label adapter's exact full-coverage/approval requirements.
 - `basis: reported|client-record`: retain `whyNoQuantitativeAnalysis` and the actual `reasoning` from sources to conclusion. A useful non-numerical synthesis or relevant documented case can pass. Do not imply an executed product test.
 
-The packet reader question must match the manifest exactly. Keep the existing source URLs, provenance, takeaway, survey and applicable growth fields. These gate fields extend the current packet; they do not create a second evidence system. If the page needs a claim the sources cannot support, narrow/exclude it rather than manufacturing numbers.
+The packet reader question and case-retrieval query must match the approved action.reader_question exactly, including its internal question-evidence tag. If that string changes, rerun deterministic case retrieval and refresh caseSelection and affected artifact hashes together before writer dispatch. Keep the tag internal; public reader questions and copy contain no workflow labels. Keep the existing source URLs, provenance, takeaway, survey and applicable growth fields. These gate fields extend the current packet; they do not create a second evidence system. If the page needs a claim the sources cannot support, narrow/exclude it rather than manufacturing numbers.
 
 Mindmap `content_gen.py write`, `section` and `fix` calls require:
 

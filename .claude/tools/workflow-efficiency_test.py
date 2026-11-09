@@ -61,13 +61,57 @@ class Tests(unittest.TestCase):
         self.deliver(next);core.validate(self.root,next)
     def test_different_context_and_epoch_require_fresh_reading(self):
         self.prepare();self.deliver()
-        for field in ('contextId','contextEpoch','actor','phase'):
+        for field in ('contextId','contextEpoch','actor'):
             manifest=core.load(self.reading);manifest[field]='other'
             core.save(self.reading/'manifest.json',manifest)
             with self.assertRaisesRegex(ValueError,'actual uninterrupted'):
                 self.prepare(self.root/field,reuse=self.reading)
-            manifest[field]={'contextId':'native-fixture','contextEpoch':'fresh','actor':'reader','phase':'build'}[field]
+            manifest[field]={'contextId':'native-fixture','contextEpoch':'fresh','actor':'reader'}[field]
             core.save(self.reading/'manifest.json',manifest)
+    def test_unknown_historical_phase_is_not_a_valid_receipt(self):
+        self.prepare();self.deliver();manifest=core.load(self.reading);manifest['phase']='other'
+        core.save(self.reading/'manifest.json',manifest)
+        with self.assertRaisesRegex(ValueError,'Unknown original instruction phase'):
+            self.prepare(self.root/'unknown',reuse=self.reading)
+    def handoff(self, suffix=''):
+        import hashlib
+        (self.root/'.claude/content-review-policy.json').write_text('{"siteId":"fixture"}')
+        page=self.root/('candidate'+suffix+'.txt');page.write_text('Private current fixture '+suffix)
+        value={'version':1,'siteId':'fixture','canonicalBase':'https://fixture.example','jobId':'original',
+               'producer':'author','nextAction':'Continue private current fixture '+suffix,'routes':['/guide'],
+               'candidates':[{'path':page.name,'sha256':hashlib.sha256(page.read_bytes()).hexdigest()}],
+               'sources':[],'findings':[],'reviewCounters':{'reviews':0,'reworks':0}}
+        path=self.root/('handoff'+suffix+'.json');path.write_text(json.dumps(value));return path.name
+    def write_bundle(self, path, handoff, reuse=None, instructions=None):
+        with patch.object(core.subprocess,'run'):
+            return core.prepare(self.root,'write',instructions or ['.claude/commands/phase.md'],path,
+                                actor='reader',run_id='actual-fixture-run',context_id='native-fixture',
+                                context_epoch='fresh',handoff=handoff,reuse=reuse)
+    def test_phase_transition_reuses_only_unchanged_rules_in_same_actual_context(self):
+        self.prepare();self.deliver();handoff=self.handoff()
+        (self.root/'.claude/commands/writer-only.md').write_text('New obligation for the current writer.')
+        destination=self.root/'write';m=self.write_bundle(destination,handoff,self.reading,
+            ['.claude/commands/phase.md','.claude/commands/writer-only.md'])
+        self.assertIn('.claude/commands/_decision-evidence.md',m['reused'])
+        self.assertNotIn('.claude/commands/writer-only.md',m['reused'])
+        self.assertNotIn(m['taskPath'],m['reused'])
+        self.deliver(destination);core.validate(self.root,destination)
+        text=''.join((destination/p['path']).read_text() for p in m['parts'])
+        self.assertIn('New obligation for the current writer.',text)
+        self.assertIn('Continue private current fixture',text)
+    def test_new_handoff_delivers_current_task_without_reloading_unchanged_rules(self):
+        self.write_bundle(self.reading,self.handoff());self.deliver()
+        destination=self.root/'write-continued';m=self.write_bundle(destination,self.handoff('-next'),self.reading)
+        self.assertGreater(len(m['reused']),5)
+        self.assertNotIn(m['taskPath'],m['reused'])
+        self.deliver(destination);core.validate(self.root,destination)
+        task=json.loads((self.root/m['taskPath']).read_bytes())
+        self.assertEqual(task['nextAction'],'Continue private current fixture -next')
+    def test_missing_context_epoch_fails_before_any_instruction_delivery(self):
+        with patch.object(core.subprocess,'run'), self.assertRaisesRegex(ValueError,'repair missing identity flags'):
+            core.prepare(self.root,'build',['.claude/commands/phase.md'],self.reading,
+                         actor='reader',run_id='actual-fixture-run',context_id='native-fixture')
+        self.assertFalse(self.reading.exists())
     def test_partial_reading_is_never_reused(self):
         self.prepare()
         with self.assertRaisesRegex(ValueError,'Incomplete'):

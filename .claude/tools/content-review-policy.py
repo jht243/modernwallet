@@ -336,6 +336,7 @@ def decision(root, snapshot, review, rr):
 def pass_evidence(root, snapshot, rr, selected, local_module=None):
     checks={'wholePageCoherence','sourceSupport','testingAndAttribution','datesAndSchema','linksAndIndexability','renderedLayout','scopeAndExclusions'}
     supplied=rr.get('checks',{})
+    renderer_module().testing_attribution_check(route_in(snapshot,rr['path'])[0]['semantic'],supplied)
     require(set(supplied)==checks,'Missing independent rendered/SEO checks')
     for name,value in supplied.items():
         allowed=['PASS','NA'] if name in ['testingAndAttribution','scopeAndExclusions'] else ['PASS']
