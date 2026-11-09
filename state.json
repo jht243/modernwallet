@@ -1,0 +1,15 @@
+{
+  "candidates": {},
+  "competitorIntakes": {
+    "9031ce2b2c8974afc4646b5986d7170e971fddf9df6302947640bf6f76d2df8d": {
+      "complete": false
+    }
+  },
+  "job": {
+    "artifacts": {
+      "reports/competitor-monitor/intakes/9031ce2b2c8974afc4646b5986d7170e971fddf9df6302947640bf6f76d2df8d.json": "9031ce2b2c8974afc4646b5986d7170e971fddf9df6302947640bf6f76d2df8d"
+    }
+  },
+  "slots": [],
+  "version": 1
+}
