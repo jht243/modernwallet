@@ -1,0 +1,152 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "build-worker-1",
+ "route": "/compare/simple-ira-vs-401k/",
+ "readerQuestion": "What are the differences between a SIMPLE IRA and a 401(k)? [SERP unread - DataForSEO unavailable, no PAA; ac 9/9 difference/vs question completions]",
+ "demandSource": "Real visitor zero-result searches on / (2026-11-09 19:20 UTC): \"differences between simple ira and\" then \"differences between simple ira and 401k\" (same session, 2 s apart). Autocomplete question sweep saved (9/9 difference/vs completions). SEMRUSH/DataForSEO unavailable (no keys): volume NOT measured, SERP unread.",
+ "decisionGap": "The page lists seven differences but omits two that change a real decision: (1) the SIMPLE IRA 25% additional tax on withdrawals in the first 2 years of participation and the 2-year rollover restriction, versus the 10% general rule and the age-55 separation exception that 401(k) participants have; (2) the table and verdict say a flat mandatory 3% match every year, while the IRS lets an employer cut the match to as low as 1% in up to 2 of every 5 years. (3) Eligibility differences are thin: the page does not state the SIMPLE IRA $5,000-pay eligibility test or the no-opt-out rule.",
+ "finding": "Two IRS-sourced differences are missing and one stated cost is slightly overstated. SIMPLE IRA money withdrawn within the first 2 years of participation incurs a 25% additional tax instead of 10%, and during that window it can only be rolled to another SIMPLE IRA. A 401(k) has the general 10% rule plus an exception for leaving the employer in or after the year you turn 55 that IRAs (including SIMPLE IRAs) do not have. The SIMPLE IRA employer match is generally 3% but may be reduced to a minimum of 1% in no more than 2 of 5 years.",
+ "conditions": [
+  "25% rate applies only to distributions within the 2-year period beginning when the individual first participated, and only when an early-distribution exception does not apply",
+  "Age-55 separation exception applies to qualified plans only for distributions after separation from the employer sponsoring that plan; it is not available for IRAs including SIMPLE IRAs",
+  "Reduced match needs employer notice before the 60-day election period and cannot be used more than 2 of 5 years; 2% nonelective alternative has no reduction option stated by the IRS",
+  "Employer must still contribute every year: a match (normally up to 3%, reducible to no lower than 1% in no more than 2 of 5 years with notice) or a 2% nonelective contribution; the correction changes only the match percentage"
+ ],
+ "whatWouldChange": "A change in IRC 72(t) or SIMPLE IRA rules, a new IRS FAQ revision, or a plan document that offers different terms (SIMPLE 401(k) is a separate plan type not covered here).",
+ "basis": "reported",
+ "whyNoQuantitativeAnalysis": "The decision gap is a rule difference stated by the IRS, not a quantity we can model without unsupported assumptions. A dollar example (for example 25% of an amount withdrawn) would be trivial arithmetic and is not the contribution.",
+ "reasoning": "Reader asks for the differences between SIMPLE IRA and 401(k). Live page (research/live-simple-ira-vs-401k.html) already answers contribution limits, mandatory match, admin load, Roth, loans, vesting and switching. Checked page text for early-withdrawal, 25%, rollover, penalty, 1%: no hits. IRS early-distribution exceptions table and IRS SIMPLE IRA FAQ state the 25%/2-year rule, the 2-year rollover limit and the age-55 separation difference. IRS SIMPLE contributions page states the 1% minimum in 2 of 5 years. Conclusion: add the missing distribution/rollover difference as a comparison-table row, one new section, one FAQ, and correct the flat-3% wording; keep all existing limits (verified against IRS newsroom and Notice 2025-67).",
+ "sourceArtifacts": [
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/irs-early-dist.html",
+   "sha256": "42ee74cf2cd5b7570b9ca134e84ed8d697f48e166e4eba970696b8963000c898"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/irs-simple-faq.html",
+   "sha256": "c897701814a684e8fa4f46832177f48040b52003e4e116d561b2461b9c1284ce"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/irs-simple-contrib.html",
+   "sha256": "59bd61be4e7d03dc60cb7f802ad7446ff3dc2496568700596efcfde3ada97b2c"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/irs-2026-limits.html",
+   "sha256": "539446c77eb75a674e0fa99f42664cf4ea225b48934fb56f0c3d258ca4ade475"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/notice-2025-67.pdf",
+   "sha256": "1eea8f141b0cddd182f9f09b3bc8ffad683d27ceb806dfc6da126811dc0a1f8d"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/live-simple-ira-vs-401k.html",
+   "sha256": "f51366ce147ec1ab2f9e9c6e20726550e7dc9a593a816dc03602eac1b6e096de"
+  }
+ ],
+ "sources": [
+  {
+   "label": "IRS - Retirement topics: Tax on early distributions",
+   "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-tax-on-early-distributions",
+   "checkedAt": "2026-11-10",
+   "supports": "10% general rule; SIMPLE IRA 25% in first 2 years; separation-from-service age-55 exception: qualified plans yes, IRA/SIMPLE IRA no"
+  },
+  {
+   "label": "IRS - Retirement plans FAQs regarding SIMPLE IRA plans",
+   "url": "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-simple-ira-plans",
+   "checkedAt": "2026-11-10",
+   "supports": "25% within 2 years of first participation; during that period only SIMPLE-to-SIMPLE transfer; after 2 years may roll to other IRA/401(k)/Roth with income inclusion; 100-employee limit"
+  },
+  {
+   "label": "IRS - Retirement topics: SIMPLE IRA contribution limits",
+   "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits",
+   "checkedAt": "2026-11-10",
+   "supports": "$17,000 / $4,000 / $5,250 for 2026; match may be less than 3% but at least 1% and no more than 2 of 5 years; 2% nonelective alternative"
+  },
+  {
+   "label": "IRS - 401(k) limit increases to $24,500 for 2026",
+   "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500",
+   "checkedAt": "2026-11-10",
+   "supports": "existing page limits confirmed; $18,100 limit for certain SIMPLE accounts exists (definition not stated in source)"
+  },
+  {
+   "label": "IRS Notice 2025-67",
+   "url": "https://www.irs.gov/pub/irs-drop/n-25-67.pdf",
+   "checkedAt": "2026-11-10",
+   "supports": "$17,000 general SIMPLE limit, $18,100 certain accounts, $4,000/$5,250 catch-up; 401(k) $24,500, $8,000, $11,250"
+  },
+  {
+   "label": "IRS - SIMPLE IRA FAQ, Participation and Establishing sections",
+   "url": "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-simple-ira-plans",
+   "checkedAt": "2026-11-10",
+   "supports": "employee eligibility: $5,000 in any 2 preceding years and expected $5,000; no opt out of participation; 100-employee limit counts employees with $5,000+ pay in preceding year; one-plan requirement"
+  }
+ ],
+ "caseSelection": {
+  "path": "reports/mindmap-pass/2026-11-10-search-gap/evidence/simple-ira-vs-401k/cases.json",
+  "sha256": "d1ba26f07b1ea3ba1b5a5619eb42ae7b1d1bb301e1391112211dc98d0e760dd0"
+ },
+ "caseDecisions": [
+  {
+   "recordId": "owned-property-diy-repair-guide",
+   "decision": "rejected",
+   "reason": "Layer3Labs-owned property/client record; topic match is stopwords only (and/the/what); no public-use scope for themodernwallet.com"
+  },
+  {
+   "recordId": "owned-property-the-indoor-report",
+   "decision": "rejected",
+   "reason": "Layer3Labs-owned property/client record; topic match is stopwords only (and/the/what); no public-use scope for themodernwallet.com"
+  },
+  {
+   "recordId": "client-bowlero-corporation",
+   "decision": "rejected",
+   "reason": "Layer3Labs-owned property/client record; topic match is stopwords only (and/the/what); no public-use scope for themodernwallet.com"
+  },
+  {
+   "recordId": "client-professional-bowlers-association-pba",
+   "decision": "rejected",
+   "reason": "Layer3Labs-owned property/client record; topic match is stopwords only (and/the/what); no public-use scope for themodernwallet.com"
+  },
+  {
+   "recordId": "client-horizen-labs",
+   "decision": "rejected",
+   "reason": "Layer3Labs-owned property/client record; topic match is stopwords only (and/the/what); no public-use scope for themodernwallet.com"
+  },
+  {
+   "recordId": "client-multiple-hoa-and-condo-boards-across-the-usa",
+   "decision": "rejected",
+   "reason": "Layer3Labs-owned property/client record; topic match is stopwords only (and/the/what); no public-use scope for themodernwallet.com"
+  },
+  {
+   "recordId": "client-multiple-law-firms",
+   "decision": "rejected",
+   "reason": "Layer3Labs-owned property/client record; topic match is stopwords only (and/the/what); no public-use scope for themodernwallet.com"
+  },
+  {
+   "recordId": "owned-property-cuban-insights",
+   "decision": "rejected",
+   "reason": "Layer3Labs-owned property/client record; topic match is stopwords only (and/the/what); no public-use scope for themodernwallet.com"
+  }
+ ],
+ "provenance": {
+  "basis": "reported",
+  "supportingRecordIds": [
+   "irs-early-dist",
+   "irs-simple-faq",
+   "irs-simple-contrib",
+   "notice-2025-67"
+  ],
+  "scopeAndLimits": "IRS statements of rule only. No internal test, model or client observation. Not tax advice; exceptions exist.",
+  "publicMethod": "Name the IRS pages as the source beside each rule and link the first mention (IRS early-distribution page, IRS SIMPLE IRA FAQ). No first-person testing or modeling claim.",
+  "placement": "new section 2 (withdrawal and rollover), new section 3 (eligibility), comparison table row, two FAQs, corrected match wording in intro/table/verdict/employer-cost section/FAQ"
+ },
+ "plannedTakeaway": "Money taken out of a SIMPLE IRA in the first 2 years of participation costs a 25% additional tax instead of the usual 10%, and after those 2 years the SIMPLE IRA rate is the same 10% that applies to a 401(k) before 59 1/2. The IRS age-55 separation exception applies to a 401(k) only for money from the employer that sponsors it and does not exist for IRAs or SIMPLE IRAs, so it helps only someone who leaves that employer in or after the year they turn 55. Neither plan suits money you will need before 59 1/2, because both charge the 10% tax unless another exception applies. Most employees cannot choose which plan their employer offers, so this matters mainly to owners picking a plan and to employees deciding how much to defer. The choice between the plans still turns on headcount, the required employer contribution and admin cost in the existing verdict. This changes if the rules change or a plan is a SIMPLE 401(k).",
+ "exclusions": [
+  "TESTED format: excluded (financial product pages; _experience.md section G excludes financial services; no .claude/testing-policy.json adapter)",
+  "No professional-review claim added; existing byline unchanged",
+  "$18,100 limit and SIMPLE 401(k) not added: source states no definition of the applicable accounts"
+ ],
+ "unknowns": [
+  "Search demand volume (no SEMRUSH/DataForSEO keys)",
+  "PAA/SERP for the query (DataForSEO unavailable)"
+ ],
+ "selectedMedium": "prose + one table row (existing comparison table), no calculator"
+}

@@ -1,0 +1,10 @@
+1. QUOTE: "If business growth pushes your headcount past 100 qualifying workers, the IRS provides a two-year grace period to maintain the plan or transition to another option."
+DEFECT: contradicts/overstates F16. The grace period applies to an employer that previously maintained a SIMPLE IRA plan: it satisfies the 100-employee limitation for the 2 calendar years immediately following the calendar year it last satisfied it. "or transition to another option" is not in the fact list. Restate F16 accurately.
+2. QUOTE: "An employer can sponsor a SIMPLE IRA only if the business had 100 or fewer employees ... according to the IRS."
+DEFECT: the section's first IRS mention has no link. Replace "according to the IRS" with a markdown deep link on "IRS" to https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-simple-ira-plans (closed URL list). Also F15 says the count includes all employees employed at any time during the calendar year; keep that.
+3. QUOTE: "Who must be included follows IRS rules: any employee who earned at least $5,000..."
+DEFECT: the paragraph opener is not a self-contained declarative statement and is awkward. Open with: Every employee who earned at least $5,000 in any two earlier years, and is expected to earn $5,000 this year, must be included (F17), including pay put into a 401(k), SARSEP or 403(b) as deferrals for the test.
+4. QUOTE: "A growing business that moves to a 401(k) makes that switch effective January 1."
+DEFECT: disconnected from the one-plan rule and its consequence. Rewrite the end of the paragraph so the one-plan rule (F20) leads to the consequence: an owner who wants a 401(k) has to end the SIMPLE IRA first, and the page's existing section on switching explains the January 1 timing (F22). Do not add new facts.
+5. QUOTE: "the employer cannot impose a last-day requirement that denies contributions to workers who leave before year-end"
+DEFECT: F19 says an eligible employee shares in any contribution including one who quits or dies before it is made; restate with that wording (no "year-end" claim).

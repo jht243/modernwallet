@@ -8927,22 +8927,24 @@ export const COMPARISONS: ComparisonEntry[] = [
     optionA: "SIMPLE IRA",
     optionB: "401(k)",
     segment: "small business owners",
+    updated: "2026-11-10",
     h1: "SIMPLE IRA vs. 401(k): Which Retirement Plan Fits Your Small Business?",
     introText:
-      "A SIMPLE IRA allows small businesses to offer a retirement plan with almost no paperwork and requires an employer contribution capped near 3% of pay. A 401(k) costs more to administer, but it lets employees save nearly 50% more each year and gives owners far more flexibility in plan design. The right choice depends mostly on your headcount and how much administrative cost you're willing to take on.",
+      "A SIMPLE IRA allows small businesses to offer a retirement plan with almost no paperwork. The employer must contribute every year, normally a match of up to 3% of pay or 2% of pay for every eligible employee. A 401(k) costs more to administer, but it lets employees save nearly 50% more each year and gives owners far more flexibility in plan design. The right choice depends mostly on your headcount and how much administrative cost you're willing to take on.",
     comparisonTable: {
       rows: [
         { dimension: "2026 employee contribution limit", a: "$17,000 ($21,000 if 50+)", b: "$24,500 ($32,500 if 50+; up to $35,750 if 60–63)" },
-        { dimension: "Employer contribution", a: "Mandatory — 3% dollar-for-dollar match or 2% nonelective for all eligible employees", b: "Optional — most employers match, but it isn't legally required" },
+        { dimension: "Employer contribution", a: "Required every year: a match of up to 3% (as low as 1% in up to 2 of 5 years with notice) or a 2% nonelective contribution for all eligible employees", b: "Optional — most employers match, but it isn't legally required" },
         { dimension: "Setup and admin cost", a: "Low — no annual Form 5500 filing, no nondiscrimination testing", b: "Higher — annual Form 5500, plan document, possible nondiscrimination testing" },
         { dimension: "Roth option", a: "Yes, at participating providers (added by SECURE 2.0)", b: "Yes, widely available as a Roth 401(k)" },
         { dimension: "Plan loans", a: "Not allowed", b: "Allowed if the plan document permits them" },
         { dimension: "Vesting on employer contributions", a: "Immediate — 100% vested from day one", b: "Can vest over up to 6 years (employer match only)" },
+        { dimension: "Early withdrawal tax before 59½", a: "10%, but 25% in the first 2 years of participation", b: "10%, with an exception for leaving the sponsoring employer in or after the year you turn 55" },
         { dimension: "Best for", a: "Businesses with 100 or fewer employees wanting minimal admin work", b: "Businesses that want higher savings caps and can absorb the admin cost" },
       ],
     },
     verdict:
-      "Choose a SIMPLE IRA if you have 100 or fewer employees, want to avoid the cost and paperwork of a full retirement plan, and are comfortable with a mandatory 3% match every year. Choose a 401(k) if you want employees — including yourself — to save more than SIMPLE IRA's lower cap allows, want the flexibility to skip a match in a lean year, or want features like plan loans and vesting schedules. Once you can absorb the added administration cost, a 401(k) almost always wins on flexibility and on how much your highest earners can defer.",
+      "Choose a SIMPLE IRA only if you have 100 or fewer employees, want to avoid the cost and paperwork of a full retirement plan, and can fund its required employer contribution every year. That contribution is a match of up to 3% of pay or 2% of pay for every eligible employee. Choose a 401(k) if you want employees — including yourself — to save more than SIMPLE IRA's lower cap allows, want the flexibility to skip a match in a lean year, or want features like plan loans and vesting schedules. Once you can absorb the added administration cost, a 401(k) almost always wins on flexibility and on how much your highest earners can defer. Neither plan suits money you will need before 59½, and a SIMPLE IRA charges a 25% additional tax on withdrawals in its first two years.",
     sections: [
       {
         heading: "How SIMPLE IRA and 401(k) contribution limits compare",
@@ -8950,9 +8952,19 @@ export const COMPARISONS: ComparisonEntry[] = [
           "The gap between these two plans widens every year. For 2026, the [IRS](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500) set the SIMPLE IRA employee deferral limit at $17,000, with a $4,000 catch-up for participants 50 and older. The 401(k) employee deferral limit is $24,500, with a $32,500 catch-up limit for 50+ and a higher $35,750 catch-up for employees aged 60 to 63 under SECURE 2.0's enhanced catch-up rule.\n\nThat's roughly 44% more room in a 401(k) at the standard deferral level, and the gap grows further for employees over 50. For an owner or high earner trying to maximize tax-advantaged savings, the 401(k)'s higher ceiling alone can justify the added administrative cost.",
       },
       {
-        heading: "The employer cost you can't skip: mandatory SIMPLE IRA contributions",
+        heading: "Withdrawal and Rollover Rules: SIMPLE IRA vs 401(k)",
         content:
-          "A SIMPLE IRA isn't optional for the employer. You must either match employee deferrals dollar-for-dollar up to 3% of compensation, or make a flat 2% nonelective contribution to every eligible employee whether they contribute or not. There's no year where you can choose to skip it.\n\nA 401(k) gives you more control. Employer matching is common but not legally required (safe harbor 401(k) designs do require a set contribution in exchange for skipping nondiscrimination testing, but a standard 401(k) doesn't). That flexibility matters most for businesses with uneven cash flow, where a mandatory 3% obligation in a slow year is a real burden.",
+          "Withdrawing money from a SIMPLE IRA in your first two years of participation costs a 25% additional tax instead of 10%, unless an exception applies, according to the [IRS](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions). A 401(k) withdrawal before age 59½ costs the 10% additional tax, also unless an exception applies.\n\nThe two-year clock starts on the first day the employer deposits a contribution into the employee's SIMPLE IRA. During that window, SIMPLE IRA money can move only to another SIMPLE IRA. Paid to any other account, it counts as a withdrawal: you include the amount in income and owe the 25% additional tax, unless an exception applies.\n\nAfter two years, the rate falls back to 10%. You can then move the money tax-free to another IRA other than a Roth IRA, or into an employer plan such as a 401(k). A rollover into a Roth IRA is also allowed after two years, but the amount is added to your income.\n\nA 401(k) has an exception that a SIMPLE IRA does not. A 401(k) participant who separates from service during or after the year they turn 55 does not owe the 10% additional tax on money from that employer's plan. The withdrawal is still taxed as income. The IRS does not extend this exception to IRAs, which include SIMPLE IRAs.\n\nSome exceptions, such as disability and a beneficiary of a deceased owner, apply to both plans.\n\nFor how SIMPLE IRA rules differ from an individual account, see our [Traditional IRA vs. SIMPLE IRA comparison](/compare/traditional-ira-vs-simple-ira/). Early distributions from a traditional IRA face the same 10% additional tax unless an exception applies.\n\nNeither plan suits money you will need before 59½, because both charge an additional tax of at least 10% unless an exception applies. Most employees cannot choose the plan, since the employer picks which one to sponsor. The plan choice therefore falls to owners, and employees mainly decide how much to defer.\n\nThe choice still turns on headcount, the required employer contribution and administration cost. A change in IRS rules would change this advice.",
+      },
+      {
+        heading: "Who Can Sponsor and Who Must Be Included",
+        content:
+          "An employer can sponsor a SIMPLE IRA only if it had 100 or fewer employees who earned $5,000 or more in the prior year, according to the [IRS](https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-simple-ira-plans). The count includes every employee who worked at any point in the year, even those not yet eligible to join.\n\nAn employer that previously maintained a SIMPLE IRA plan still meets the limit for the 2 calendar years after the last year it met it. The IRS says to see a tax advisor if an acquisition or similar transaction is involved.\n\nEvery employee who earned at least $5,000 in any two earlier years, and is expected to earn $5,000 this year, must be included. Pay deferred into a 401(k), SARSEP or 403(b) counts toward that $5,000 test. For an owner, that means you cannot leave out a part-time worker who passes both tests.\n\nAn employee cannot opt out of participation, but an eligible employee can choose not to defer any salary. In that case the employer owes no match for that employee. That employee still gets the 2% nonelective contribution if the employer chose that formula.\n\nA SIMPLE IRA plan cannot require an employee to be on the payroll on the last day of the year. An eligible employee who quits or dies before the contribution is made still shares in it.\n\nThe one-plan rule limits what else an employer can offer. An employer generally cannot contribute to a SIMPLE IRA plan for a year if it maintains another retirement plan. That applies when any employee receives an allocation or accrues a benefit under the other plan that year. Two exceptions apply. One covers a plan only for employees under a collective bargaining agreement, when the SIMPLE IRA plan excludes them. The other covers an employer involved in an acquisition, disposition or similar transaction in the current or 2 prior calendar years, when only its separate employees participate in the SIMPLE IRA plan. An owner who wants a 401(k) for the same employees ends the SIMPLE IRA first, effective January 1.\n\nAn employee can join a SIMPLE IRA while also in another employer's plan. The combined 2026 limit on salary deferrals across all plans is $24,500. Before you pick a plan, pull last year's payroll and count how many workers earned $5,000 or more.",
+      },
+      {
+        heading: "The Employer Contribution a SIMPLE IRA Requires",
+        content:
+          "A SIMPLE IRA requires the employer to contribute every year, according to the [IRS](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits). The employer picks a dollar-for-dollar match up to 3% of pay, or a flat 2% nonelective contribution for every eligible employee whether they contribute or not. The employer may lower that match to no less than 1% in no more than two of five years, provided they give advance notice to employees. In practice, this reduction offers a limited way to ease a lean year without letting the employer skip the contribution.\n\nIn a standard 401(k), employer contributions are optional. While a safe harbor 401(k) requires a set employer contribution, a standard 401(k) does not legally require the business to match employee deferrals. As a result, a 401(k) employer can skip a match in a lean year, while a SIMPLE IRA employer has to contribute something every year.",
       },
       {
         heading: "Administrative burden: why 401(k)s cost more to run",
@@ -8962,7 +8974,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "When to switch from a SIMPLE IRA to a 401(k)",
         content:
-          "SIMPLE IRAs run on the calendar year, and you generally can't terminate one mid-year to start a 401(k) — the switch has to take effect January 1, with employees notified in the prior year. Plan the transition at least a few months ahead of your target start date.\n\nThe usual triggers to make the switch: you've grown past 100 employees (which disqualifies you from SIMPLE IRA eligibility), your highest earners are maxing out the SIMPLE limit and want more room, or you want plan features — loans, vesting schedules, a wider investment menu — that SIMPLE IRAs don't offer.\n\nIf you're choosing a 401(k) provider for the first time, see our [best 401(k) providers for small business](/roundup/best-401k-providers-for-small-business/) roundup, and check whether your business qualifies for the SECURE 2.0 startup tax credit, which can offset up to $5,000 of setup costs per year for three years.",
+          "SIMPLE IRAs run on the calendar year, and you generally can't terminate one mid-year to start a 401(k) — the switch has to take effect January 1, with employees notified in the prior year. Plan the transition at least a few months ahead of your target start date.\n\nThe usual triggers to make the switch: you've grown past 100 employees, your highest earners are maxing out the SIMPLE limit and want more room, or you want plan features — loans, vesting schedules, a wider investment menu — that SIMPLE IRAs don't offer. Growing past 100 employees does not end a SIMPLE IRA plan right away. Eligibility ends after the two-year grace period that follows your last qualifying year.\n\nIf you're choosing a 401(k) provider for the first time, see our [best 401(k) providers for small business](/roundup/best-401k-providers-for-small-business/) roundup, and check whether your business qualifies for the SECURE 2.0 startup tax credit, which can offset up to $5,000 of setup costs per year for three years.",
       },
     ],
     faqs: [
@@ -8984,7 +8996,17 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         question: "Does a SIMPLE IRA require an employer match?",
         answer:
-          "Yes. The employer must either match employee contributions dollar-for-dollar up to 3% of compensation, or make a flat 2% nonelective contribution to every eligible employee regardless of whether they contribute. This is mandatory every year the plan is active.",
+          "Under IRS rules, an employer must contribute to a SIMPLE IRA each year, but that deposit does not always require a 3% match. An employer can choose between a dollar-for-dollar match of up to 3% of pay and a flat 2% nonelective contribution for all eligible employees. With advance notice, the employer can also lower that match to no less than 1% in up to two out of five years.",
+      },
+      {
+        question: "How do early withdrawal rules differ between a SIMPLE IRA and a 401(k)?",
+        answer:
+          "Under IRS rules, a SIMPLE IRA withdrawal in the first two years of participation costs a 25% additional tax, and 10% after that, unless an exception applies. A 401(k) withdrawal before age 59½ costs the 10% additional tax. A 401(k) participant who separates from service during or after the year they turn 55 does not owe the 10% additional tax on money from that employer's plan, and SIMPLE IRAs have no such exception. Income tax still applies, and some exceptions, such as disability, cover both plans.",
+      },
+      {
+        question: "Who is eligible for a SIMPLE IRA?",
+        answer:
+          "An employee is eligible after earning at least $5,000 in any two earlier years and expecting $5,000 this year, according to the IRS. An eligible employee cannot opt out of participation, but can choose to defer no salary. To sponsor a SIMPLE IRA, a business needs 100 or fewer employees who earned $5,000 or more in the prior year.",
       },
       {
         question: "How do I switch from a SIMPLE IRA to a 401(k)?",
@@ -9000,6 +9022,8 @@ export const COMPARISONS: ComparisonEntry[] = [
     sources: [
       { label: "IRS — 401(k) Limit Increases to $24,500 for 2026", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
       { label: "IRS — SIMPLE IRA Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits" },
+      { label: "IRS — Retirement Topics: Exceptions to Tax on Early Distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions" },
+      { label: "IRS — Retirement Plans FAQs Regarding SIMPLE IRA Plans", url: "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-simple-ira-plans" },
       { label: "DOL — Understanding Your Retirement Plan Fees", url: "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/understanding-your-retirement-plan-fees" },
     ],
     relatedComparisons: ["sep-ira-vs-solo-401k", "401k-vs-roth-ira", "pension-vs-401k", "solo-401k-vs-simple-ira"],

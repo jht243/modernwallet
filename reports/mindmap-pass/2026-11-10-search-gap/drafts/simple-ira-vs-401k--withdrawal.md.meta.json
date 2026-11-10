@@ -1,0 +1,88 @@
+{
+ "slug": "simple-ira-vs-401k--withdrawal",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 380,
+ "floor": 0,
+ "input_tokens": 20692,
+ "output_tokens": 623,
+ "thinking_tokens": 4825,
+ "cached_tokens": 19528,
+ "est_cost_usd": 0.0228,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 380,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    5,
+    0
+   ],
+   "applied": [
+    {
+     "id": "L3",
+     "quote": " Both retirement plans generally require you to pay regular income tax on pre-tax withdrawals taken before age 59\u00bd.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that both plans require regular income tax on early withdrawals."
+    },
+    {
+     "id": "L3",
+     "quote": " That steep 25% early withdrawal tax makes pulling money out of a newer SIMPLE IRA far more expensive than tapping a 401(k).",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not describe the tax as steep or use degree comparison far more expensive."
+    },
+    {
+     "id": "L9",
+     "quote": "Standard penalty exceptions, including total and permanent disability, death, and qualified military reservist distributions, apply equally to both plans.",
+     "replacement": "Standard penalty exceptions, including disability and a beneficiary of a deceased owner, apply equally to both plans.",
+     "type": "unsupported",
+     "why": "SOURCE does not list qualified military reservist distributions as an exception."
+    },
+    {
+     "id": "L11",
+     "quote": "That comparison explains how an individual account avoids the mandatory employer contribution structures and the two-year 25% penalty window while offering a wider investment menu.",
+     "replacement": "That comparison explains how an individual account avoids the mandatory employer contribution structures and the two-year 25% penalty window.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention investment menus or choices."
+    },
+    {
+     "id": "L13",
+     "quote": "A direct change in IRS penalty codes or federal distribution limits would be the only development that changes this advice.",
+     "replacement": "A change in IRS rules would change this advice.",
+     "type": "unsupported",
+     "why": "SOURCE states what would change this is a change in IRS rules."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 439
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 135.7,
+ "response_id": "wjvzarHCAoWH1sgP57fYgQk",
+ "generated_at": "2026-11-10T15:46:15+0000"
+}

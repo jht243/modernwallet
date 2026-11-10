@@ -1,0 +1,2 @@
+1. QUOTE: "Once you qualify, employees cannot opt out of participation in the SIMPLE IRA."
+DEFECT: shifts from "you" to "employees" and reads as if qualifying causes the no-opt-out rule. Rewrite: an eligible employee cannot opt out of participation, but can choose to make no salary reduction contributions (F18).

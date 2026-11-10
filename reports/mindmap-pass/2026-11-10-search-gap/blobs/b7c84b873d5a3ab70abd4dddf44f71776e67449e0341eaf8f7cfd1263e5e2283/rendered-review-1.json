@@ -1,0 +1,190 @@
+{
+ "reviewer": "phase4-audit-worker-1",
+ "jobId": "search-gap-themodernwallet-6931aeadbaf0403bb8d5862c930c0bdd",
+ "verdict": "FAIL",
+ "snapshotSha256": "4da84c7111601847d5cbfb4555b6e09d2b76cb5f3d75d27432e5a9868a2390da",
+ "evidence": {
+  "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+  "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+ },
+ "resolvedFindingIds": [],
+ "routes": [
+  {
+   "path": "/compare/simple-ira-vs-401k",
+   "fingerprint": "b3dd8952513cd10f0c01650510c0671ecc86c1c0a5bb59cda8fd6d807cdb1eb1",
+   "verdict": "FAIL",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "FAIL",
+     "evidence": "Read the full rendered decision path. Opening answer, table, verdict, sections and FAQs agree that the SIMPLE IRA employer contribution is required but reducible (1% in up to 2 of 5 years). Failures: new grace-period sentence contradicts the unchanged 'disqualifies you' sentence in When to switch (F1, F2); one-plan paragraph disagrees with the FAQ (F8). Cosmetic: C1 to C6, C8.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    },
+    "sourceSupport": {
+     "status": "FAIL",
+     "evidence": "Checked each IRS claim against saved IRS captures and live IRS URLs. Core figures and rules match. Defects: F1 grace period, F3 and F4 age-55 exception timing and penalty-free overstatement, F5 missing unless-an-exception-applies condition, F6 'never requires' overstatement, F7 unsupported Traditional IRA sentence, F8 to F10 loose paraphrases.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No tested/we tested/howWeTested text, title, meta or schema; basis is reported and the IRS is named beside each rule ('According to the IRS', 'Under IRS rules'). Inherited byline is the site's established author with 'Reviewed against primary sources', which this run's primary-source review supports. Site has no testing permission beyond section G, which excludes financial services.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible 'Updated November 10, 2026' matches run date; Article datePublished and dateModified are 2026-11-10 (template sets both from entry.updated; previously 2026-06-25; advisory). FAQPage JSON-LD has 8 Q&As identical to the visible FAQs. BreadcrumbList present. Canonical is the www self URL.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 on loopback, self canonical, internal link /compare/traditional-ira-vs-simple-ira/ builds; the first IRS mention on the page is linked (limits section). Mechanical note C7: the early-distributions IRS URL 301s to .../retirement-topics-exceptions-to-tax-on-early-distributions; update body link and Sources entry.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Table and sections render in the shared compare template with one added table row and two added sections; no markup changes to the template. Not independently viewed in a browser at 390px in this round; the shared template and table structure are unchanged from the live page.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Scope limited to src/data/comparisons.ts slug simple-ira-vs-401k as approved (action A1). No medical/psychedelic content; no testing claim; no new human gate. Metadata title/description unchanged as approved for an existing page.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    }
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "7d92c3e2fb695c8103a6f05e8de1333dabd6f9da39e81edfc01dc28c89b498bc",
+    "rationale": "The page tells small-business owners which retirement plan to adopt and states IRS tax rules (a 25% additional tax, rollover taxation, eligibility, one-plan rule). Those are consequential financial/legal-tax claims, so HIGH. Specific misstatements found are listed as F1 to F10.",
+    "consequentialClaims": [
+     {
+      "quote": "A 401(k) also allows penalty-free withdrawals if you leave your employer at age 55 or older, an exception that does not apply to a SIMPLE IRA.",
+      "category": "financial",
+      "reason": "Misstates when the age-55 exception applies and implies no tax at all; a reader could take a taxable withdrawal as free of tax."
+     },
+     {
+      "quote": "If business growth pushes your headcount past 100 qualifying workers, the IRS provides a two-year grace period to maintain the plan or transition to another option.",
+      "category": "legal",
+      "reason": "Misstates the IRS grace period rule that decides whether an employer may keep its SIMPLE IRA."
+     },
+     {
+      "quote": "The IRS treats any rollover to a 401(k) or a Traditional IRA during this period as an early distribution, which triggers ordinary income tax and the full 25% penalty.",
+      "category": "financial",
+      "reason": "Omits the IRS condition 'unless you qualify for an exception' on a 25% tax outcome."
+     }
+    ],
+    "incidentalMentions": [
+     {
+      "quote": "The IRS treats SIMPLE IRAs as an exclusive plan",
+      "reason": "Inherited FAQ wording flagged by the keyword classifier ('treats'); it describes the one-plan rule and is reviewed under F8."
+     }
+    ]
+   },
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/render/admission-round1.json",
+    "sha256": "37eb5fb99748ab1902d11e657eec0b0638a073189befb2fcaa095f6643b9b91d"
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "FAIL",
+     "evidence": "Central answer (SIMPLE IRA requires an employer contribution, reducible to 1% in up to 2 of 5 years; 25% additional tax in first 2 years; age-55 exception for 401(k) only) is supported. Defects F1 to F5 are in central rules.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Source-only (reported) basis; no invented test, model or client claim; IRS named beside each rule.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    },
+    "currentDetails": {
+     "status": "FAIL",
+     "evidence": "2026 limits match IRS 2026 pages and Notice 2025-67. Grace-period and age-55 details are wrong or incomplete (F1, F3, F4); IRS early-distributions URL redirects (C7).",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Verdict and takeaway are conditional and supported: choose SIMPLE IRA if 100 or fewer employees and the required contribution is affordable; choose 401(k) for flexibility. Conditions that reverse it are present. Withdrawal consequence is not in the verdict (C8, advisory).",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "All IRS claims trace to the saved IRS captures checked 2026-11-10 and to live IRS pages; Notice 2025-67 supports limits.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    },
+    "consequentialClaims": {
+     "status": "FAIL",
+     "evidence": "F1, F3, F4, F5, F6 are consequential tax and eligibility misstatements or overstatements; F2 is an inherited contradiction affecting the revised answer.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    },
+    "limitationsAndJurisdiction": {
+     "status": "FAIL",
+     "evidence": "US federal IRS rules and 2026 limits are stated, but conditions are dropped (F5 unless-an-exception, F9 two-year test, F10 exceptions differ by plan type).",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "Existing site policy treats informational finance pages without a named professional reviewer (fleet-author-defaults-v1). No professional review is claimed on the page or byline; N/A for this report. A professional-review claim was not added.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH confirmed independently: tax-rule and eligibility claims for business owners.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    },
+    "seoQuality": {
+     "status": "FAIL",
+     "evidence": "Depth 1,822 words vs 1,500 floor (pass). Anti-AI gates fail: coy abstraction 'the company' x2 (C1), reader-assumption (C2), overloaded sentences (C3), meta-narration and filler (C4), monotone rhythm (C5), non-self-contained opener (C6).",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md",
+      "sha256": "a37927b8a20462ca070f09edd8353b8c76fe118e146931777cebfd808d812cb2"
+     }
+    }
+   }
+  }
+ ]
+}

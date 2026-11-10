@@ -1,0 +1,15 @@
+{
+ "origin": "search-gap-content-auto (runId 6931aeadbaf0403bb8d5862c930c0bdd, intake e63f961d...)",
+ "queryFamily": "simple ira vs 401k / differences between simple ira and 401k",
+ "hypothesis": "Adding the missing early-withdrawal and rollover differences and correcting the flat 3% match wording makes the existing comparison answer the full set of differences a reader asks about.",
+ "primaryMetric": "GSC clicks to /compare/simple-ira-vs-401k/ for the query family",
+ "baseline": {
+  "status": "unavailable",
+  "reason": "GSC not queried in BUILD; not zero"
+ },
+ "comparator": "unchanged sibling comparisons (traditional-ira-vs-simple-ira, solo-401k-vs-simple-ira), age-matched",
+ "changeScope": "body text only: one table row, one section, one FAQ, targeted match wording; metadata unchanged",
+ "sourceRefreshTrigger": "IRS retirement-limit notice each November; IRS SIMPLE FAQ revision",
+ "outcomeStatus": "not-yet-published",
+ "canonicalUrl": "https://www.themodernwallet.com/compare/simple-ira-vs-401k/"
+}

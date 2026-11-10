@@ -1,0 +1,1 @@
+Under IRS rules, an employer must contribute to a SIMPLE IRA each year, but that deposit does not always require a 3% match. Your employer can choose between a dollar-for-dollar match of up to 3% of pay and a flat 2% nonelective contribution for all eligible employees. With advance notice, the company can also lower that match to no less than 1% in up to two out of five years.
