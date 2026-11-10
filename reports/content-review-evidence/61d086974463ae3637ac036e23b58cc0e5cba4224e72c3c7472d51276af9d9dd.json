@@ -1,0 +1,185 @@
+{
+ "reviewer": "phase4-audit-worker-1",
+ "jobId": "search-gap-themodernwallet-6931aeadbaf0403bb8d5862c930c0bdd",
+ "verdict": "FAIL",
+ "snapshotSha256": "22fe8657a519bcf422ac2a2de859f4665a76092258cde654fa496e8ac8cd5454",
+ "evidence": {
+  "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+  "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+ },
+ "resolvedFindingIds": [],
+ "routes": [
+  {
+   "path": "/compare/simple-ira-vs-401k",
+   "fingerprint": "6dc8870ee764a7ca731985f461da49c7d6af2798ef1619283685029ff366290e",
+   "verdict": "FAIL",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Re-read the complete rendered page afresh. Intro, table, verdict (now ending with the 25% additional tax sentence), sections and 8 FAQs agree; the inherited 'disqualifies' sentence now matches the grace-period section; F1 to F10 and C1 to C8 verified resolved (reviewer-evidence-2.md). Remaining items N3 to N5 are cosmetic.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    },
+    "sourceSupport": {
+     "status": "FAIL",
+     "evidence": "Rewritten sections checked against saved IRS FAQ, early-distributions and contributions captures. N1: 'One exception' to the one-plan rule omits the IRS acquisition/disposition exception. N2: 'both charge the 10% additional tax' is wrong for a SIMPLE IRA inside its first two years (25%).",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No tested, modeled or survey claim in text, meta or schema; reported basis with the IRS named beside rules; inherited byline is the site's established author. Financial services are excluded from testing by _experience section G.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible Updated November 10, 2026; Article datePublished/dateModified 2026-11-10 (template derives both from entry.updated; advisory); FAQPage 8 of 8 matches visible text; self canonical.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200, self canonical; IRS links now use the final early-distributions URL in body and Sources; first IRS mention linked; internal comparison link builds.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Same shared compare template and table; one added row and two added sections plus a verdict sentence; no template change. No 390px browser view this round; reliance on unchanged markup structure.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Only src/data/comparisons.ts slug simple-ira-vs-401k changed; no medical or testing content; existing metadata unchanged as approved.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    }
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "312583a423f138111dfe47bf7fbd4fd66ebe49f817f7a8639f75dff4386ef9e7",
+    "rationale": "Tax rules and eligibility conditions for choosing a business retirement plan are consequential financial and legal claims, so HIGH. Remaining defects are N1 and N2.",
+    "consequentialClaims": [
+     {
+      "quote": "One exception covers a plan only for employees under a collective bargaining agreement, if the SIMPLE IRA plan excludes them.",
+      "category": "legal",
+      "reason": "Understates the IRS exceptions to the one-plan requirement; an employer in an acquisition could wrongly believe it must end its SIMPLE IRA."
+     },
+     {
+      "quote": "Neither plan suits money you will need before 59\u00bd, because both charge the 10% additional tax unless an exception applies.",
+      "category": "financial",
+      "reason": "A SIMPLE IRA charges 25% in its first two years, so the stated 10% understates the cost."
+     }
+    ],
+    "incidentalMentions": [
+     {
+      "quote": "The IRS treats SIMPLE IRAs as an exclusive plan",
+      "reason": "Inherited FAQ wording flagged by the classifier ('treats'); consistent with the corrected one-plan paragraph apart from N1."
+     }
+    ]
+   },
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/render/admission-round2.json",
+    "sha256": "e5f64f1d552bc1ada273349cba688f7dc0f02d343d7613b5e101857eec83d41f"
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Central answer and all four round 1 central rules are now correct: required annual employer contribution reducible to 1% in up to 2 of 5 years, 25% in first 2 years, age-55 separation exception for plans only, 100-employee limit with grace period.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Source-only reported basis; no invented test, model or client claim.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "2026 limits ($17,000, $4,000, $5,250, $24,500) match IRS pages; IRS URL redirect fixed.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Verdict is conditional and now carries the withdrawal consequence; matches table, intro and FAQs.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Every checked claim traces to the saved IRS captures dated 2026-11-10.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    },
+    "consequentialClaims": {
+     "status": "FAIL",
+     "evidence": "N1 and N2 are consequential IRS-rule understatements in the rewritten sections.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    },
+    "limitationsAndJurisdiction": {
+     "status": "FAIL",
+     "evidence": "US federal rules are stated, but the one-plan exceptions are incomplete (N1) and the 25% window is omitted from the closing sentence (N2).",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "Informational finance page with the site's established author and no professional-review claim (fleet-author-defaults-v1); none claimed or added.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH confirmed independently.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Depth 1,858 words vs 1,500 floor; rhythm passes (longest single-band run 9; no 5 sentences within 3 words); no coy abstraction, em-dash, honest or meta-narration in new text. Remaining N3 to N5 are cosmetic and do not breach a hard gate on their own.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md",
+      "sha256": "0fd89b9f3fa87c4fabc3255e0e99fc82ab43343ebfee724acc485f9f0ff429e7"
+     }
+    }
+   }
+  }
+ ]
+}

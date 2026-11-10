@@ -1,0 +1,80 @@
+S source in reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md; writer applied in-place correction awaiting independent re-review."
+    },
+    {
+      "id": "F10",
+      "status": "open",
+      "evidence": "Independent audit round 1 (recorded FAIL, HIGH 1 of 3) finding; exact page text and IRS source in reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md; writer applied in-place correction awaiting independent re-review."
+    },
+    {
+      "id": "C1",
+      "status": "open",
+      "evidence": "Independent audit round 1 (recorded FAIL, HIGH 1 of 3) finding; exact page text and IRS source in reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md; writer applied in-place correction awaiting independent re-review. (cosmetic)"
+    },
+    {
+      "id": "C2",
+      "status": "open",
+      "evidence": "Independent audit round 1 (recorded FAIL, HIGH 1 of 3) finding; exact page text and IRS source in reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md; writer applied in-place correction awaiting independent re-review. (cosmetic)"
+    },
+    {
+      "id": "C3",
+      "status": "open",
+      "evidence": "Independent audit round 1 (recorded FAIL, HIGH 1 of 3) finding; exact page text and IRS source in reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md; writer applied in-place correction awaiting independent re-review. (cosmetic)"
+    },
+    {
+      "id": "C4",
+      "status": "open",
+      "evidence": "Independent audit round 1 (recorded FAIL, HIGH 1 of 3) finding; exact page text and IRS source in reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md; writer applied in-place correction awaiting independent re-review. (cosmetic)"
+    },
+    {
+      "id": "C5",
+      "status": "open",
+      "evidence": "Independent audit round 1 (recorded FAIL, HIGH 1 of 3) finding; exact page text and IRS source in reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md; writer applied in-place correction awaiting independent re-review. (cosmetic)"
+    },
+    {
+      "id": "C6",
+      "status": "open",
+      "evidence": "Independent audit round 1 (recorded FAIL, HIGH 1 of 3) finding; exact page text and IRS source in reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md; writer applied in-place correction awaiting independent re-review. (cosmetic)"
+    },
+    {
+      "id": "C7",
+      "status": "open",
+      "evidence": "Independent audit round 1 (recorded FAIL, HIGH 1 of 3) finding; exact page text and IRS source in reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md; writer applied in-place correction awaiting independent re-review. (cosmetic)"
+    },
+    {
+      "id": "C8",
+      "status": "open",
+      "evidence": "Independent audit round 1 (recorded FAIL, HIGH 1 of 3) finding; exact page text and IRS source in reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-1.md; writer applied in-place correction awaiting independent re-review. (cosmetic)"
+    },
+    {
+      "id": "N1",
+      "status": "open",
+      "evidence": "Independent audit round 2 (recorded FAIL, HIGH 2 of 3) finding; exact text/source in reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md; writer corrected in place, awaiting independent re-review."
+    },
+    {
+      "id": "N2",
+      "status": "open",
+      "evidence": "Independent audit round 2 (recorded FAIL, HIGH 2 of 3) finding; exact text/source in reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md; writer corrected in place, awaiting independent re-review."
+    },
+    {
+      "id": "N3",
+      "status": "open",
+      "evidence": "Independent audit round 2 (recorded FAIL, HIGH 2 of 3) finding; exact text/source in reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md; writer corrected in place, awaiting independent re-review."
+    },
+    {
+      "id": "N4",
+      "status": "open",
+      "evidence": "Independent audit round 2 (recorded FAIL, HIGH 2 of 3) finding; exact text/source in reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md; writer corrected in place, awaiting independent re-review."
+    },
+    {
+      "id": "N5",
+      "status": "open",
+      "evidence": "Independent audit round 2 (recorded FAIL, HIGH 2 of 3) finding; exact text/source in reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-2.md; writer corrected in place, awaiting independent re-review."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-10-search-gap/handoff-audit3.json",
+    "sha256": "d4b470b660f3c3699e7d0dc935fb5245a0a30e8ac772c1fcc42a22bb9f5e9a7a"
+  }
+}
+

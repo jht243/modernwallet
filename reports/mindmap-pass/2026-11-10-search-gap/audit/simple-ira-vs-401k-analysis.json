@@ -1,0 +1,33 @@
+{
+ "reviewer": "phase4-audit-worker-1",
+ "verdict": "PASS",
+ "packetSha256": "5548cd23c5a1304b4ea2a45003e18dfaf064d3d595d6d225536ca72792850167",
+ "usefulness": {
+  "status": "PASS",
+  "evidence": "The page resolves the approved reader question: it adds the withdrawal/rollover difference, eligibility and corrected required-but-reducible employer contribution that the live page lacked, drawn from IRS statements rather than arithmetic; no calculator or tested claim is implied."
+ },
+ "sourceAndAssumptions": {
+  "status": "PASS",
+  "evidence": "Basis is reported; sources are the IRS FAQ, early-distributions page, contributions page, 2026 limits and Notice 2025-67, saved 2026-11-10 and re-read sentence by sentence in round 3. No quantitative assumptions."
+ },
+ "conditionsAndCounterexample": {
+  "status": "PASS",
+  "evidence": "Conditions are on the page: exceptions to the 25% and 10% taxes, the grace period after 100 employees, both one-plan exceptions, and what would change the advice (IRS rule change). The reduced-match case (1% in up to 2 of 5 years) is the counterexample to a flat mandatory 3%."
+ },
+ "renderedConsistency": {
+  "status": "PASS",
+  "evidence": "Intro, table, verdict, sections and FAQs agree on the same conditional answer in the round 3 render; FAQPage JSON-LD matches visible text."
+ },
+ "localExclusions": {
+  "status": "PASS",
+  "evidence": "No testing label or claim; financial services are excluded from testing by _experience section G; no professional-review claim; metadata unchanged."
+ },
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/render/snapshot-4.json",
+  "sha256": "4f2bd77e1659a0a71ea9e1b319375a18dd8cbc26bcaad6578a5fb0cca61af508"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/rendered-review-3.json",
+  "sha256": "2c992f1295fb40e3f01d0c4bce09d2b82a005c6ae418ca61c496632953ae67f1"
+ }
+}

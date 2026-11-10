@@ -1,0 +1,3162 @@
+{
+  "capturedAt": "2026-11-10T16:22:57.354171+00:00",
+  "baseUrl": "http://127.0.0.1:48435",
+  "domDir": null,
+  "manifest": {
+    "author": "build-worker-1",
+    "canonicalBase": "https://www.themodernwallet.com",
+    "workflowKind": "mindmap-pass",
+    "routes": [
+      {
+        "path": "/compare/simple-ira-vs-401k",
+        "expectedUpdatedDate": "2026-11-10",
+        "requiredText": [
+          "Withdrawal and Rollover Rules: SIMPLE IRA vs 401(k)",
+          "Who Can Sponsor and Who Must Be Included"
+        ],
+        "forbiddenText": [
+          "We tested",
+          "Tested and reviewed",
+          "no year where you can choose to skip",
+          "mandatory 3% match every year",
+          "capped near 3%"
+        ],
+        "growthFile": "reports/mindmap-pass/2026-11-10-search-gap/evidence/simple-ira-vs-401k/growth.json",
+        "evidenceFile": "reports/mindmap-pass/2026-11-10-search-gap/evidence/simple-ira-vs-401k/evidence.json",
+        "reviewProfile": "high",
+        "claimCategories": [
+          "financial",
+          "legal"
+        ],
+        "correctionContentFiles": [
+          "src/data/comparisons.ts"
+        ]
+      }
+    ],
+    "reviewDependencies": [
+      {
+        "path": "reports/mindmap-pass/2026-11-10-search-gap/research/irs-simple-faq.html",
+        "sha256": "c897701814a684e8fa4f46832177f48040b52003e4e116d561b2461b9c1284ce"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-10-search-gap/research/irs-early-dist.html",
+        "sha256": "42ee74cf2cd5b7570b9ca134e84ed8d697f48e166e4eba970696b8963000c898"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-10-search-gap/research/irs-simple-contrib.html",
+        "sha256": "59bd61be4e7d03dc60cb7f802ad7446ff3dc2496568700596efcfde3ada97b2c"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-10-search-gap/research/irs-2026-limits.html",
+        "sha256": "539446c77eb75a674e0fa99f42664cf4ea225b48934fb56f0c3d258ca4ade475"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-10-search-gap/evidence/simple-ira-vs-401k/evidence.json",
+        "sha256": "dfd2b38625309dd7a25b698abb6f5b28f22bab0e260ad5c5802ed691ae0ce567"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "path": "/compare/simple-ira-vs-401k",
+      "status": 200,
+      "fingerprint": "87394c93f9e846aba551ffdccb02374872a9bc04774989da34f9e1591e1688a9",
+      "semantic": {
+        "text": "ModernWallet Free Financial Calculators Calculators All calculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate Elder Care Trump Account 529 College Savings Coast FIRE Business Loan Payoff Personal Loan Interest Per Day Taxable vs. Tax-Deferred Credit Card Payoff IUL Merchant Cash Advance Invoice Factoring Business Line of Credit PTO Cash-Out Zakat Life Insurance Needs Self-Employment Tax Operating Cash Flow Mileage Deduction Cash Conversion Cycle Freelance Rate HELOC S-Corp Tax Commercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Mileage Reimbursement Portfolio Rebalancing Hurricane Deductible Annuity Credit Card Interest Loan Payment HYSA vs CD Trump Account vs 529 Mortgage Recast Social Security COLA Biweekly Mortgage Roth vs Traditional 401(k) Pay Off Mortgage or Invest Florida Amendment 3 Student Loan Garnishment Tax Bracket Debt-to-Income Ratio Taxable Social Security Checklists Charitable Donation Deduction Car Loan Interest Deduction Rent vs Buy Stock Capital Gains Tax Hidden Cost of Owning a Home × ModernWallet / Compare / SIMPLE IRA vs 401(k) SIMPLE IRA vs. 401(k): Which Retirement Plan Fits Your Small Business? By Jonathan Velez , Personal Finance Writer & Editor · Reviewed against primary sources · Updated November 10, 2026 A SIMPLE IRA allows small businesses to offer a retirement plan with almost no paperwork. The employer must contribute every year, normally a match of up to 3% of pay or 2% of pay for every eligible employee. A 401(k) costs more to administer, but it lets employees save nearly 50% more each year and gives owners far more flexibility in plan design. The right choice depends mostly on your headcount and how much administrative cost you're willing to take on. SIMPLE IRA vs 401(k): Side-by-Side SIMPLE IRA 401(k) 2026 employee contribution limit $17,000 ($21,000 if 50+) $24,500 ($32,500 if 50+; up to $35,750 if 60–63) Employer contribution Required every year: a match of up to 3% (as low as 1% in up to 2 of 5 years with notice) or a 2% nonelective contribution for all eligible employees Optional — most employers match, but it isn't legally required Setup and admin cost Low — no annual Form 5500 filing, no nondiscrimination testing Higher — annual Form 5500, plan document, possible nondiscrimination testing Roth option Yes, at participating providers (added by SECURE 2.0) Yes, widely available as a Roth 401(k) Plan loans Not allowed Allowed if the plan document permits them Vesting on employer contributions Immediate — 100% vested from day one Can vest over up to 6 years (employer match only) Early withdrawal tax before 59½ 10%, but 25% in the first 2 years of participation 10%, with an exception for leaving the sponsoring employer in or after the year you turn 55 Best for Businesses with 100 or fewer employees wanting minimal admin work Businesses that want higher savings caps and can absorb the admin cost 📣 Building in finance? Put your product in front of readers comparing options on this page. Advertise With Us → Which should you choose? Choose a SIMPLE IRA only if you have 100 or fewer employees, want to avoid the cost and paperwork of a full retirement plan, and can fund its required employer contribution every year. That contribution is a match of up to 3% of pay or 2% of pay for every eligible employee. Choose a 401(k) if you want employees — including yourself — to save more than SIMPLE IRA's lower cap allows, want the flexibility to skip a match in a lean year, or want features like plan loans and vesting schedules. Once you can absorb the added administration cost, a 401(k) almost always wins on flexibility and on how much your highest earners can defer. Neither plan suits money you will need before 59½, and a SIMPLE IRA charges a 25% additional tax on withdrawals in its first two years. How SIMPLE IRA and 401(k) contribution limits compare The gap between these two plans widens every year. For 2026, the IRS set the SIMPLE IRA employee deferral limit at $17,000, with a $4,000 catch-up for participants 50 and older. The 401(k) employee deferral limit is $24,500, with a $32,500 catch-up limit for 50+ and a higher $35,750 catch-up for employees aged 60 to 63 under SECURE 2.0's enhanced catch-up rule. That's roughly 44% more room in a 401(k) at the standard deferral level, and the gap grows further for employees over 50. For an owner or high earner trying to maximize tax-advantaged savings, the 401(k)'s higher ceiling alone can justify the added administrative cost. Withdrawal and Rollover Rules: SIMPLE IRA vs 401(k) Withdrawing money from a SIMPLE IRA in your first two years of participation costs a 25% additional tax instead of 10%, unless an exception applies, according to the IRS . A 401(k) withdrawal before age 59½ costs the 10% additional tax, also unless an exception applies. The two-year clock starts on the first day the employer deposits a contribution into the employee's SIMPLE IRA. During that window, SIMPLE IRA money can move only to another SIMPLE IRA. Paid to any other account, it counts as a withdrawal: you include the amount in income and owe the 25% additional tax, unless an exception applies. After two years, the rate falls back to 10%. You can then move the money tax-free to another IRA other than a Roth IRA, or into an employer plan such as a 401(k). A rollover into a Roth IRA is also allowed after two years, but the amount is added to your income. A 401(k) has an exception that a SIMPLE IRA does not. A 401(k) participant who separates from service during or after the year they turn 55 does not owe the 10% additional tax on money from that employer's plan. The withdrawal is still taxed as income. The IRS does not extend this exception to IRAs, which include SIMPLE IRAs. Some exceptions, such as disability and a beneficiary of a deceased owner, apply to both plans. For how SIMPLE IRA rules differ from an individual account, see our Traditional IRA vs. SIMPLE IRA comparison . Early distributions from a traditional IRA face the same 10% additional tax unless an exception applies. Neither plan suits money you will need before 59½, because both charge an additional tax of at least 10% unless an exception applies. Most employees cannot choose the plan, since the employer picks which one to sponsor. The plan choice therefore falls to owners, and employees mainly decide how much to defer. The choice still turns on headcount, the required employer contribution and administration cost. A change in IRS rules would change this advice. Who Can Sponsor and Who Must Be Included An employer can sponsor a SIMPLE IRA only if it had 100 or fewer employees who earned $5,000 or more in the prior year, according to the IRS . The count includes every employee who worked at any point in the year, even those not yet eligible to join. An employer that previously maintained a SIMPLE IRA plan still meets the limit for the 2 calendar years after the last year it met it. The IRS says to see a tax advisor if an acquisition or similar transaction is involved. Every employee who earned at least $5,000 in any two earlier years, and is expected to earn $5,000 this year, must be included. Pay deferred into a 401(k), SARSEP or 403(b) counts toward that $5,000 test. For an owner, that means you cannot leave out a part-time worker who passes both tests. An employee cannot opt out of participation, but an eligible employee can choose not to defer any salary. In that case the employer owes no match for that employee. That employee still gets the 2% nonelective contribution if the employer chose that formula. A SIMPLE IRA plan cannot require an employee to be on the payroll on the last day of the year. An eligible employee who quits or dies before the contribution is made still shares in it. The one-plan rule limits what else an employer can offer. An employer generally cannot contribute to a SIMPLE IRA plan for a year if it maintains another retirement plan. That applies when any employee receives an allocation or accrues a benefit under the other plan that year. Two exceptions apply. One covers a plan only for employees under a collective bargaining agreement, when the SIMPLE IRA plan excludes them. The other covers an employer involved in an acquisition, disposition or similar transaction in the current or 2 prior calendar years, when only its separate employees participate in the SIMPLE IRA plan. An owner who wants a 401(k) for the same employees ends the SIMPLE IRA first, effective January 1. An employee can join a SIMPLE IRA while also in another employer's plan. The combined 2026 limit on salary deferrals across all plans is $24,500. Before you pick a plan, pull last year's payroll and count how many workers earned $5,000 or more. The Employer Contribution a SIMPLE IRA Requires A SIMPLE IRA requires the employer to contribute every year, according to the IRS . The employer picks a dollar-for-dollar match up to 3% of pay, or a flat 2% nonelective contribution for every eligible employee whether they contribute or not. The employer may lower that match to no less than 1% in no more than two of five years, provided they give advance notice to employees. In practice, this reduction offers a limited way to ease a lean year without letting the employer skip the contribution. In a standard 401(k), employer contributions are optional. While a safe harbor 401(k) requires a set employer contribution, a standard 401(k) does not legally require the business to match employee deferrals. As a result, a 401(k) employer can skip a match in a lean year, while a SIMPLE IRA employer has to contribute something every year. Administrative burden: why 401(k)s cost more to run SIMPLE IRAs skip most of the compliance machinery that makes 401(k)s expensive. There's no annual Form 5500 filing, no nondiscrimination testing, and no plan document to maintain — the provider handles most of the setup with a short adoption agreement. A 401(k) requires an annual Form 5500 filing, a formal plan document, and — unless you use a safe harbor design — nondiscrimination testing to confirm highly compensated employees aren't disproportionately benefiting. The Department of Labor publishes guidance on the fees and duties that come with running a 401(k), which is worth reading before you commit to the higher administrative load. Many providers now bundle this work into a flat monthly fee, so the true cost gap between the two plans is often smaller than the paperwork difference suggests — get quotes before assuming a 401(k) is out of reach. When to switch from a SIMPLE IRA to a 401(k) SIMPLE IRAs run on the calendar year, and you generally can't terminate one mid-year to start a 401(k) — the switch has to take effect January 1, with employees notified in the prior year. Plan the transition at least a few months ahead of your target start date. The usual triggers to make the switch: you've grown past 100 employees, your highest earners are maxing out the SIMPLE limit and want more room, or you want plan features — loans, vesting schedules, a wider investment menu — that SIMPLE IRAs don't offer. Growing past 100 employees does not end a SIMPLE IRA plan right away. Eligibility ends after the two-year grace period that follows your last qualifying year. If you're choosing a 401(k) provider for the first time, see our best 401(k) providers for small business roundup, and check whether your business qualifies for the SECURE 2.0 startup tax credit, which can offset up to $5,000 of setup costs per year for three years. Frequently asked questions Can I have a SIMPLE IRA and a 401(k) at the same time? Generally no. The IRS treats SIMPLE IRAs as an exclusive plan — if you sponsor one, you generally can't also maintain a 401(k) for the same employees in the same calendar year. You have to terminate the SIMPLE IRA, effective January 1, before starting a 401(k). What is the 2026 SIMPLE IRA contribution limit? The 2026 SIMPLE IRA employee deferral limit is $17,000, up from $16,500 in 2025. The catch-up contribution for participants 50 and older is $4,000, and a higher $5,250 catch-up applies to employees aged 60 to 63 under SECURE 2.0. Is a 401(k) always better than a SIMPLE IRA? Not always. A 401(k) offers higher contribution limits and more design flexibility, but it costs more to administer and requires more paperwork. For a small business with 100 or fewer employees that wants the lowest-maintenance option, a SIMPLE IRA is often the better fit despite the lower savings cap. Does a SIMPLE IRA require an employer match? Under IRS rules, an employer must contribute to a SIMPLE IRA each year, but that deposit does not always require a 3% match. An employer can choose between a dollar-for-dollar match of up to 3% of pay and a flat 2% nonelective contribution for all eligible employees. With advance notice, the employer can also lower that match to no less than 1% in up to two out of five years. How do early withdrawal rules differ between a SIMPLE IRA and a 401(k)? Under IRS rules, a SIMPLE IRA withdrawal in the first two years of participation costs a 25% additional tax, and 10% after that, unless an exception applies. A 401(k) withdrawal before age 59½ costs the 10% additional tax. A 401(k) participant who separates from service during or after the year they turn 55 does not owe the 10% additional tax on money from that employer's plan, and SIMPLE IRAs have no such exception. Income tax still applies, and some exceptions, such as disability, cover both plans. Who is eligible for a SIMPLE IRA? An employee is eligible after earning at least $5,000 in any two earlier years and expecting $5,000 this year, according to the IRS. An eligible employee cannot opt out of participation, but can choose to defer no salary. To sponsor a SIMPLE IRA, a business needs 100 or fewer employees who earned $5,000 or more in the prior year. How do I switch from a SIMPLE IRA to a 401(k)? Notify employees before November 2 of the year prior to the switch, terminate the SIMPLE IRA effective December 31, and start the new 401(k) on January 1. Work with a 401(k) provider several months ahead of the target date to have the plan document and payroll integration ready in time. How does a SIMPLE IRA compare to a SEP-IRA instead of a 401(k)? See our SIMPLE IRA vs. SEP-IRA comparison for the employer-contribution and eligibility differences between those two small-business options. Free calculators to help you decide 401(k) Calculator → Retirement Savings Calculator → Retirement Hub → Sources We prioritize primary sources for rules, formulas, rates, limits, and definitions. See our calculator methodology and editorial policy . IRS — 401(k) Limit Increases to $24,500 for 2026 IRS — SIMPLE IRA Contribution Limits IRS — Retirement Topics: Exceptions to Tax on Early Distributions IRS — Retirement Plans FAQs Regarding SIMPLE IRA Plans DOL — Understanding Your Retirement Plan Fees Related comparisons SEP-IRA vs Solo 401(k) SEP-IRA vs Solo 401(k): 2025 Guide for the Self-Employed 401(k) vs Roth IRA 401(k) vs Roth IRA: Which Retirement Account Wins? Pension vs 401(k) Pension vs 401(k): Key Differences (2025) Solo 401(k) vs SIMPLE IRA Solo 401(k) vs SIMPLE IRA: The 2025 Guide for Owners ModernWallet Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results. 📣 Advertise With Us Calculators All calculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate Elder Care Trump Account 529 College Savings Coast FIRE Business Loan Payoff Personal Loan Interest Per Day Taxable vs. Tax-Deferred Credit Card Payoff IUL Merchant Cash Advance Invoice Factoring Business Line of Credit PTO Cash-Out Zakat Life Insurance Needs Self-Employment Tax Operating Cash Flow Mileage Deduction Cash Conversion Cycle Freelance Rate HELOC S-Corp Tax Commercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Mileage Reimbursement Portfolio Rebalancing Hurricane Deductible Annuity Credit Card Interest Loan Payment HYSA vs CD Trump Account vs 529 Mortgage Recast Social Security COLA Biweekly Mortgage Roth vs Traditional 401(k) Pay Off Mortgage or Invest Florida Amendment 3 Student Loan Garnishment Tax Bracket Debt-to-Income Ratio Taxable Social Security Checklists Charitable Donation Deduction Car Loan Interest Deduction Rent vs Buy Stock Capital Gains Tax Hidden Cost of Owning a Home Comparisons All comparisons 401(k) vs Roth IRA Roth vs Traditional 401(k) 529 vs Roth IRA ETF vs Mutual Fund HSA vs FSA VA Loan vs Conventional 15 vs 30-Year Mortgage Fixed vs ARM Mortgage HYSA vs Money Market Stocks vs Bonds Free Templates All templates Freelance Invoice Freelance Contract Statement of Work Retainer Agreement Mileage Log Expense Report S-Corp Tax Calculator QBI Deduction Explained LLC vs S Corp Guides & Best-of All best-of roundups First-Time Home Buyer How to Buy a Car Best 401(k) Providers Best Budgeting Apps Best Money Market Accounts Best Net Worth Trackers Best Retirement Accounts Best Mileage Tracker Apps Best Freelance Accounting Software Best Invoicing Apps © 2026 ModernWallet · For educational purposes — not financial advice. Guides · About · Contact · Editorial Policy · Methodology · Privacy Policy · Powered by Layer3Labs Some links on this site are referral or affiliate links, including our Robinhood referral link — we may earn a reward or commission at no cost to you. This never affects our rankings or editorial coverage.",
+        "h1": "SIMPLE IRA vs. 401(k): Which Retirement Plan Fits Your Small Business?",
+        "title": "SIMPLE IRA vs. 401(k): Best Plan for Small Business",
+        "canonical": "https://www.themodernwallet.com/compare/simple-ira-vs-401k/",
+        "meta": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "generator": "Astro v4.16.19",
+          "description": "SIMPLE IRA vs 401(k) compared: 2026 contribution limits, employer costs, admin burden, and which retirement plan fits your small business.",
+          "og:type": "website",
+          "og:site_name": "ModernWallet",
+          "og:title": "SIMPLE IRA vs. 401(k): Best Plan for Small Business",
+          "og:description": "SIMPLE IRA vs 401(k) compared: 2026 contribution limits, employer costs, admin burden, and which retirement plan fits your small business.",
+          "og:url": "https://www.themodernwallet.com/compare/simple-ira-vs-401k/",
+          "og:image": "https://www.themodernwallet.com/favicon-192.png",
+          "twitter:card": "summary_large_image",
+          "twitter:title": "SIMPLE IRA vs. 401(k): Best Plan for Small Business",
+          "twitter:description": "SIMPLE IRA vs 401(k) compared: 2026 contribution limits, employer costs, admin burden, and which retirement plan fits your small business.",
+          "twitter:image": "https://www.themodernwallet.com/favicon-192.png"
+        },
+        "links": [
+          "/",
+          "/calculators/",
+          "/auto-loan/",
+          "/mortgage/",
+          "/retirement/",
+          "/investing/",
+          "/portfolio/",
+          "/real-estate/",
+          "/net-worth/",
+          "/budget/",
+          "/tax-resolution/",
+          "/estate-planning/",
+          "/probate/",
+          "/elder-care/",
+          "/trump-account/",
+          "/529-savings-calculator/",
+          "/coast-fire/",
+          "/business-loan-payoff/",
+          "/personal-loan/",
+          "/interest-per-day/",
+          "/taxable-vs-tax-deferred/",
+          "/credit-card-payoff/",
+          "/iul-calculator/",
+          "/merchant-cash-advance/",
+          "/invoice-factoring/",
+          "/business-line-of-credit/",
+          "/pto-cashout/",
+          "/zakat/",
+          "/life-insurance-needs/",
+          "/self-employment-tax/",
+          "/operating-cash-flow/",
+          "/mileage-deduction/",
+          "/cash-conversion-cycle/",
+          "/freelance-rate/",
+          "/heloc-calculator/",
+          "/s-corp-tax/",
+          "/commercial-mortgage-calculator/",
+          "/cd-calculator/",
+          "/emergency-fund-calculator/",
+          "/debt-consolidation-calculator/",
+          "/inflation-calculator/",
+          "/expense-ratio-calculator/",
+          "/social-security-break-even-calculator/",
+          "/mileage-reimbursement-calculator/",
+          "/portfolio-rebalancing-calculator/",
+          "/hurricane-deductible-calculator/",
+          "/annuity-calculator/",
+          "/credit-card-interest-calculator/",
+          "/loan-payment-calculator/",
+          "/hysa-vs-cd-calculator/",
+          "/trump-account-vs-529-calculator/",
+          "/mortgage-recast-calculator/",
+          "/social-security-cola-calculator/",
+          "/biweekly-mortgage-calculator/",
+          "/roth-vs-traditional-401k-calculator/",
+          "/pay-off-mortgage-or-invest-calculator/",
+          "/florida-amendment-3-calculator/",
+          "/student-loan-wage-garnishment-calculator/",
+          "/tax-bracket-calculator/",
+          "/debt-to-income-ratio-calculator/",
+          "/social-security-taxable-benefits-calculator/",
+          "/checklists/",
+          "/charitable-donation-tax-deduction-calculator/",
+          "/car-loan-interest-deduction-calculator/",
+          "/rent-vs-buy-calculator/",
+          "/stock-capital-gains-tax-calculator/",
+          "/hidden-cost-of-owning-a-home-calculator/",
+          "/",
+          "/about/",
+          "/sponsor?from=%2Fcompare%2Fsimple-ira-vs-401k%2F",
+          "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500",
+          "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions",
+          "/compare/traditional-ira-vs-simple-ira/",
+          "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-simple-ira-plans",
+          "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits",
+          "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/understanding-your-retirement-plan-fees",
+          "/roundup/best-401k-providers-for-small-business/",
+          "/compare/simple-ira-vs-sep-ira/",
+          "/retirement/401k-calculator/",
+          "/retirement/retirement-savings-calculator/",
+          "/retirement/",
+          "/methodology/",
+          "/editorial-policy/",
+          "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500",
+          "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits",
+          "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions",
+          "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-simple-ira-plans",
+          "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/understanding-your-retirement-plan-fees",
+          "/compare/sep-ira-vs-solo-401k/",
+          "/compare/401k-vs-roth-ira/",
+          "/compare/pension-vs-401k/",
+          "/compare/solo-401k-vs-simple-ira/",
+          "/",
+          "/sponsor",
+          "/calculators/",
+          "/auto-loan/",
+          "/mortgage/",
+          "/retirement/",
+          "/investing/",
+          "/portfolio/",
+          "/real-estate/",
+          "/net-worth/",
+          "/budget/",
+          "/tax-resolution/",
+          "/estate-planning/",
+          "/probate/",
+          "/elder-care/",
+          "/trump-account/",
+          "/529-savings-calculator/",
+          "/coast-fire/",
+          "/business-loan-payoff/",
+          "/personal-loan/",
+          "/interest-per-day/",
+          "/taxable-vs-tax-deferred/",
+          "/credit-card-payoff/",
+          "/iul-calculator/",
+          "/merchant-cash-advance/",
+          "/invoice-factoring/",
+          "/business-line-of-credit/",
+          "/pto-cashout/",
+          "/zakat/",
+          "/life-insurance-needs/",
+          "/self-employment-tax/",
+          "/operating-cash-flow/",
+          "/mileage-deduction/",
+          "/cash-conversion-cycle/",
+          "/freelance-rate/",
+          "/heloc-calculator/",
+          "/s-corp-tax/",
+          "/commercial-mortgage-calculator/",
+          "/cd-calculator/",
+          "/emergency-fund-calculator/",
+          "/debt-consolidation-calculator/",
+          "/inflation-calculator/",
+          "/expense-ratio-calculator/",
+          "/social-security-break-even-calculator/",
+          "/mileage-reimbursement-calculator/",
+          "/portfolio-rebalancing-calculator/",
+          "/hurricane-deductible-calculator/",
+          "/annuity-calculator/",
+          "/credit-card-interest-calculator/",
+          "/loan-payment-calculator/",
+          "/hysa-vs-cd-calculator/",
+          "/trump-account-vs-529-calculator/",
+          "/mortgage-recast-calculator/",
+          "/social-security-cola-calculator/",
+          "/biweekly-mortgage-calculator/",
+          "/roth-vs-traditional-401k-calculator/",
+          "/pay-off-mortgage-or-invest-calculator/",
+          "/florida-amendment-3-calculator/",
+          "/student-loan-wage-garnishment-calculator/",
+          "/tax-bracket-calculator/",
+          "/debt-to-income-ratio-calculator/",
+          "/social-security-taxable-benefits-calculator/",
+          "/checklists/",
+          "/charitable-donation-tax-deduction-calculator/",
+          "/car-loan-interest-deduction-calculator/",
+          "/rent-vs-buy-calculator/",
+          "/stock-capital-gains-tax-calculator/",
+          "/hidden-cost-of-owning-a-home-calculator/",
+          "/compare/",
+          "/compare/401k-vs-roth-ira/",
+          "/compare/roth-401k-vs-traditional-401k/",
+          "/compare/529-vs-roth-ira/",
+          "/compare/etf-vs-mutual-fund/",
+          "/compare/hsa-vs-fsa/",
+          "/compare/va-loan-vs-conventional-loan/",
+          "/compare/15-year-vs-30-year-mortgage/",
+          "/compare/fixed-vs-arm-mortgage/",
+          "/compare/hysa-vs-money-market/",
+          "/compare/stocks-vs-bonds/",
+          "/templates/",
+          "/templates/freelance-invoice-template/",
+          "/templates/freelance-contract-template/",
+          "/templates/statement-of-work-template/",
+          "/templates/retainer-agreement-template/",
+          "/templates/mileage-log-template/",
+          "/templates/expense-report-template/",
+          "/s-corp-tax/",
+          "/guides/qbi-deduction-explained/",
+          "/compare/llc-vs-s-corp/",
+          "/roundup/",
+          "/guides/first-time-home-buyer-guide/",
+          "/guides/how-to-buy-a-car/",
+          "/roundup/best-401k-providers-for-small-business/",
+          "/roundup/best-budgeting-apps-for-couples/",
+          "/roundup/best-money-market-accounts/",
+          "/roundup/best-net-worth-tracker/",
+          "/roundup/best-retirement-accounts-for-self-employed/",
+          "/roundup/best-mileage-tracker-apps/",
+          "/roundup/best-accounting-software-for-freelancers/",
+          "/roundup/best-invoicing-apps-for-freelancers/",
+          "/guides/",
+          "/about/",
+          "/contact/",
+          "/editorial-policy/",
+          "/methodology/",
+          "/privacy-policy/",
+          "https://www.layer3labs.io"
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://www.themodernwallet.com/#organization",
+            "name": "ModernWallet",
+            "url": "https://www.themodernwallet.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.themodernwallet.com/favicon.svg"
+            },
+            "description": "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results.",
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "Layer3Labs",
+              "url": "https://www.layer3labs.io"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://www.themodernwallet.com/#website",
+            "url": "https://www.themodernwallet.com/",
+            "name": "ModernWallet",
+            "description": "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results."
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ModernWallet",
+                "item": "https://www.themodernwallet.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Compare",
+                "item": "https://www.themodernwallet.com/compare/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "SIMPLE IRA vs. 401(k): Best Plan for Small Business",
+                "item": "https://www.themodernwallet.com/compare/simple-ira-vs-401k/"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Can I have a SIMPLE IRA and a 401(k) at the same time?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Generally no. The IRS treats SIMPLE IRAs as an exclusive plan — if you sponsor one, you generally can't also maintain a 401(k) for the same employees in the same calendar year. You have to terminate the SIMPLE IRA, effective January 1, before starting a 401(k)."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the 2026 SIMPLE IRA contribution limit?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The 2026 SIMPLE IRA employee deferral limit is $17,000, up from $16,500 in 2025. The catch-up contribution for participants 50 and older is $4,000, and a higher $5,250 catch-up applies to employees aged 60 to 63 under SECURE 2.0."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is a 401(k) always better than a SIMPLE IRA?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Not always. A 401(k) offers higher contribution limits and more design flexibility, but it costs more to administer and requires more paperwork. For a small business with 100 or fewer employees that wants the lowest-maintenance option, a SIMPLE IRA is often the better fit despite the lower savings cap."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does a SIMPLE IRA require an employer match?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Under IRS rules, an employer must contribute to a SIMPLE IRA each year, but that deposit does not always require a 3% match. An employer can choose between a dollar-for-dollar match of up to 3% of pay and a flat 2% nonelective contribution for all eligible employees. With advance notice, the employer can also lower that match to no less than 1% in up to two out of five years."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do early withdrawal rules differ between a SIMPLE IRA and a 401(k)?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Under IRS rules, a SIMPLE IRA withdrawal in the first two years of participation costs a 25% additional tax, and 10% after that, unless an exception applies. A 401(k) withdrawal before age 59½ costs the 10% additional tax. A 401(k) participant who separates from service during or after the year they turn 55 does not owe the 10% additional tax on money from that employer's plan, and SIMPLE IRAs have no such exception. Income tax still applies, and some exceptions, such as disability, cover both plans."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who is eligible for a SIMPLE IRA?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "An employee is eligible after earning at least $5,000 in any two earlier years and expecting $5,000 this year, according to the IRS. An eligible employee cannot opt out of participation, but can choose to defer no salary. To sponsor a SIMPLE IRA, a business needs 100 or fewer employees who earned $5,000 or more in the prior year."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I switch from a SIMPLE IRA to a 401(k)?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Notify employees before November 2 of the year prior to the switch, terminate the SIMPLE IRA effective December 31, and start the new 401(k) on January 1. Work with a 401(k) provider several months ahead of the target date to have the plan document and payroll integration ready in time."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does a SIMPLE IRA compare to a SEP-IRA instead of a 401(k)?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "See our SIMPLE IRA vs. SEP-IRA comparison for the employer-contribution and eligibility differences between those two small-business options."
+                }
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Jonathan Velez",
+            "url": "https://www.themodernwallet.com/about/",
+            "jobTitle": "Personal Finance Writer & Editor",
+            "description": "Jonathan Velez writes and edits ModernWallet's personal-finance content, focused on loans, interest, and debt payoff. Every calculator page is reviewed against primary sources like the CFPB and Federal Reserve.",
+            "knowsAbout": [
+              "Auto loans",
+              "Loan amortization",
+              "Interest and APR",
+              "Debt payoff strategies",
+              "Personal finance"
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "ModernWallet",
+              "url": "https://www.themodernwallet.com"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "SIMPLE IRA vs. 401(k): Which Retirement Plan Fits Your Small Business?",
+            "description": "SIMPLE IRA vs 401(k) compared: 2026 contribution limits, employer costs, admin burden, and which retirement plan fits your small business.",
+            "url": "https://www.themodernwallet.com/compare/simple-ira-vs-401k/",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://www.themodernwallet.com/favicon.svg"
+            },
+            "datePublished": "2026-11-10",
+            "dateModified": "2026-11-10",
+            "author": {
+              "@type": "Person",
+              "name": "Jonathan Velez",
+              "url": "https://www.themodernwallet.com/about/"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "ModernWallet",
+              "url": "https://www.themodernwallet.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.themodernwallet.com/favicon.svg"
+              }
+            },
+            "citation": [
+              {
+                "@type": "CreativeWork",
+                "name": "IRS — 401(k) Limit Increases to $24,500 for 2026",
+                "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS — SIMPLE IRA Contribution Limits",
+                "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS — Retirement Topics: Exceptions to Tax on Early Distributions",
+                "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS — Retirement Plans FAQs Regarding SIMPLE IRA Plans",
+                "url": "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-simple-ira-plans"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "DOL — Understanding Your Retirement Plan Fees",
+                "url": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/understanding-your-retirement-plan-fees"
+              }
+            ]
+          }
+        ],
+        "structure": [
+          [
+            "html",
+            {}
+          ],
+          [
+            "body",
+            {}
+          ],
+          [
+            "header",
+            {
+              "class": "site-header"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "hdr-inner"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "brand-group"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "brand",
+              "href": "/",
+              "aria-label": "ModernWallet home"
+            }
+          ],
+          [
+            "svg",
+            {
+              "viewbox": "0 0 32 32",
+              "width": "26",
+              "height": "26",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "rect",
+            {
+              "width": "32",
+              "height": "32",
+              "fill": "var(--primary)"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "8",
+              "y": "6",
+              "width": "16",
+              "height": "20",
+              "fill": "none",
+              "stroke": "#fff"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "11",
+              "y": "9.5",
+              "width": "10",
+              "height": "4",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "16",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "19.8",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "22",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-name"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-divider",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-tagline"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "primary-nav",
+              "aria-label": "Primary"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "nav-dd"
+            }
+          ],
+          [
+            "button",
+            {
+              "type": "button",
+              "class": "nav-trigger"
+            }
+          ],
+          [
+            "svg",
+            {
+              "class": "chev",
+              "viewbox": "0 0 24 24",
+              "width": "16",
+              "height": "16",
+              "fill": "none",
+              "stroke": "currentColor",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "polyline",
+            {
+              "points": "6 9 12 15 18 9"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "nav-menu",
+              "role": "menu"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "menu-all",
+              "href": "/calculators/",
+              "role": "menuitem"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "menu-cols"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/auto-loan/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/investing/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/real-estate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/net-worth/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/budget/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/estate-planning/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/probate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/elder-care/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/529-savings-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/coast-fire/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-loan-payoff/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/personal-loan/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/interest-per-day/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/taxable-vs-tax-deferred/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-payoff/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/iul-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/merchant-cash-advance/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/invoice-factoring/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-line-of-credit/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pto-cashout/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/zakat/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/life-insurance-needs/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/operating-cash-flow/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-deduction/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cash-conversion-cycle/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/freelance-rate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/heloc-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/commercial-mortgage-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cd-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/emergency-fund-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-consolidation-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/inflation-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/expense-ratio-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-break-even-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-reimbursement-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio-rebalancing-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hurricane-deductible-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/annuity-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-interest-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/loan-payment-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hysa-vs-cd-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account-vs-529-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage-recast-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-cola-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/biweekly-mortgage-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roth-vs-traditional-401k-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pay-off-mortgage-or-invest-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/florida-amendment-3-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/student-loan-wage-garnishment-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-to-income-ratio-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-taxable-benefits-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/checklists/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/charitable-donation-tax-deduction-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/car-loan-interest-deduction-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rent-vs-buy-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/stock-capital-gains-tax-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hidden-cost-of-owning-a-home-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns"
+            }
+          ],
+          [
+            "button",
+            {
+              "class": "ns__toggle",
+              "type": "button",
+              "aria-label": "Search"
+            }
+          ],
+          [
+            "svg",
+            {
+              "width": "18",
+              "height": "18",
+              "viewbox": "0 0 24 24",
+              "fill": "none",
+              "stroke": "currentColor",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "11",
+              "cy": "11",
+              "r": "7"
+            }
+          ],
+          [
+            "path",
+            {
+              "d": "m20 20-3.5-3.5"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__panel",
+              "hidden": ""
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__box"
+            }
+          ],
+          [
+            "input",
+            {
+              "class": "ns__input",
+              "type": "search",
+              "placeholder": "Search calculators, guides…",
+              "aria-label": "Search the site",
+              "role": "combobox"
+            }
+          ],
+          [
+            "button",
+            {
+              "class": "ns__close",
+              "type": "button",
+              "aria-label": "Close search"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__results",
+              "role": "listbox"
+            }
+          ],
+          [
+            "main",
+            {
+              "class": "page"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "crumb",
+              "aria-label": "Breadcrumb"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "crumb-current"
+            }
+          ],
+          [
+            "header",
+            {
+              "class": "hero"
+            }
+          ],
+          [
+            "h1",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "byline"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "by"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/about/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "sep",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "rev"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section table-section",
+              "aria-label": "Side-by-side comparison"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "table-wrap"
+            }
+          ],
+          [
+            "table",
+            {
+              "class": "cmp-table"
+            }
+          ],
+          [
+            "thead",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "tbody",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "aside",
+            {
+              "class": "sponsor-slot",
+              "aria-label": "Advertise with us"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "sponsor-slot__icon",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "sponsor-slot__copy"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "sponsor-slot__title"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "sponsor-slot__text"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "sponsor-slot__btn",
+              "href": "/sponsor?from=%2Fcompare%2Fsimple-ira-vs-401k%2F",
+              "rel": "nofollow"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section verdict-section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "verdict-box"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/traditional-ira-vs-simple-ira/"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-simple-ira-plans",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/understanding-your-retirement-plan-fees",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-401k-providers-for-small-business/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "faqs"
+            }
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/simple-ira-vs-sep-ira/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section cta-section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "cta-grid"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/401k-calculator/",
+              "class": "cta-card"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "cta-label"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "cta-arrow"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/retirement-savings-calculator/",
+              "class": "cta-card"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "cta-label"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "cta-arrow"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/",
+              "class": "cta-card"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "cta-label"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "cta-arrow"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section sources"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "source-note"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/methodology/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/editorial-policy/"
+            }
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-exceptions-to-tax-on-early-distributions",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-simple-ira-plans",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/understanding-your-retirement-plan-fees",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "related-grid"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/sep-ira-vs-solo-401k/",
+              "class": "related-card"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "related-vs"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "related-title"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/401k-vs-roth-ira/",
+              "class": "related-card"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "related-vs"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "related-title"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/pension-vs-401k/",
+              "class": "related-card"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "related-vs"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "related-title"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/solo-401k-vs-simple-ira/",
+              "class": "related-card"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "related-vs"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "related-title"
+            }
+          ],
+          [
+            "footer",
+            {
+              "class": "site-footer"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-inner"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-left"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "brand",
+              "href": "/",
+              "aria-label": "ModernWallet home"
+            }
+          ],
+          [
+            "svg",
+            {
+              "viewbox": "0 0 32 32",
+              "width": "22",
+              "height": "22",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "rect",
+            {
+              "width": "32",
+              "height": "32",
+              "fill": "var(--primary)"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "8",
+              "y": "6",
+              "width": "16",
+              "height": "20",
+              "fill": "none",
+              "stroke": "#fff"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "11",
+              "y": "9.5",
+              "width": "10",
+              "height": "4",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "16",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "tagline"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "sponsor-pill",
+              "href": "/sponsor",
+              "rel": "nofollow"
+            }
+          ],
+          [
+            "span",
+            {
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-navs"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer calculators"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/calculators/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/auto-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/investing/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/real-estate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/net-worth/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/budget/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/estate-planning/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/probate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/elder-care/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/529-savings-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/coast-fire/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-loan-payoff/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/personal-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/interest-per-day/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/taxable-vs-tax-deferred/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-payoff/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/iul-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/merchant-cash-advance/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/invoice-factoring/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-line-of-credit/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pto-cashout/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/zakat/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/life-insurance-needs/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/operating-cash-flow/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-deduction/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cash-conversion-cycle/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/freelance-rate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/heloc-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/commercial-mortgage-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cd-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/emergency-fund-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-consolidation-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/inflation-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/expense-ratio-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-break-even-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-reimbursement-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio-rebalancing-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hurricane-deductible-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/annuity-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-interest-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/loan-payment-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hysa-vs-cd-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account-vs-529-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage-recast-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-cola-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/biweekly-mortgage-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roth-vs-traditional-401k-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pay-off-mortgage-or-invest-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/florida-amendment-3-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/student-loan-wage-garnishment-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-to-income-ratio-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-taxable-benefits-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/checklists/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/charitable-donation-tax-deduction-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/car-loan-interest-deduction-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rent-vs-buy-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/stock-capital-gains-tax-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hidden-cost-of-owning-a-home-calculator/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer comparisons"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/401k-vs-roth-ira/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/roth-401k-vs-traditional-401k/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/529-vs-roth-ira/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/etf-vs-mutual-fund/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hsa-vs-fsa/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/va-loan-vs-conventional-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/15-year-vs-30-year-mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/fixed-vs-arm-mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hysa-vs-money-market/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/stocks-vs-bonds/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer templates"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp links-grid--single"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/freelance-invoice-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/freelance-contract-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/statement-of-work-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/retainer-agreement-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/mileage-log-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/expense-report-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/qbi-deduction-explained/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/llc-vs-s-corp/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer guides"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp links-grid--single"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/first-time-home-buyer-guide/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/how-to-buy-a-car/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-401k-providers-for-small-business/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-budgeting-apps-for-couples/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-money-market-accounts/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-net-worth-tracker/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-retirement-accounts-for-self-employed/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-mileage-tracker-apps/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-accounting-software-for-freelancers/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-invoicing-apps-for-freelancers/"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-legal"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "legal-left"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "legal-right"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/about/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/contact/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/editorial-policy/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/methodology/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/privacy-policy/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.layer3labs.io",
+              "target": "_blank",
+              "rel": "noopener noreferrer"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-disclosure"
+            }
+          ],
+          [
+            "p",
+            {}
+          ]
+        ]
+      },
+      "failures": [],
+      "htmlSha256": "0e1c0e7c060e0b1209664fa0a211f7e66c13b65fca1496d33b26bebbbe1b40dd",
+      "htmlFile": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/render/snapshot-4.recapture/e977ba728ac789ecd674.html",
+      "textFile": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/render/snapshot-4.recapture/e977ba728ac789ecd674.txt",
+      "textSha256": "c165d7c05f02c1e378bced78c750b46631af3697ec84196f97324d529307a64a"
+    }
+  ],
+  "previewProvenance": {
+    "runId": "8af59d4971184c32ade181bdf5b6b231",
+    "baseUrl": "http://127.0.0.1:48435",
+    "framework": "astro",
+    "buildId": "444d7a512a0ed1a62614d527484264bd92696eb8468d76a423fea1e7e6d8ffec",
+    "sourceSha256": "3acfce08847a1b4e684b99370167b629cadb622f155d48d97061ff0b34ebd9d6",
+    "pid": 27940,
+    "processStart": "Tue Nov 10 16:21:02 2026"
+  },
+  "contentReviewPolicy": {
+    "version": "risk-review-budget-2026-11-08.1",
+    "sha256": "433bc827af6dd4d6b7219394aa8dcacce623ade86af052b9a739e049abdc65dc"
+  },
+  "correctionBoundary": {
+    "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/render/snapshot-4.recapture/correction-boundary.json",
+    "sha256": "89a83611ce08f4e9938d66f26cb2aaa7d3d227b6ce380d06c294217309f52669",
+    "version": "targeted-corrections-2026-11-08.1"
+  },
+  "snapshotSha256": "737e56ae890b79a97bf0ab61735e23e8d908976c66b57facd8d47431a3e58672"
+}

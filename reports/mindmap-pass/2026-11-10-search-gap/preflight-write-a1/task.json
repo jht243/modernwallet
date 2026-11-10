@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "siteId": "jht243/modernwallet",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "search-gap-themodernwallet-6931aeadbaf0403bb8d5862c930c0bdd",
+  "producer": "build-worker-1",
+  "nextAction": "Execute approved action A1 only: enrich /compare/simple-ira-vs-401k via configured writer with provenance; full build; independent rendered HIGH review.",
+  "routes": [
+    "/compare/simple-ira-vs-401k"
+  ],
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/blobs/8eb899f730aba14c3aa6dcb070fba376eb044ce474bf62493bb14de344b314c9/approval-manifest.json",
+      "sha256": "8eb899f730aba14c3aa6dcb070fba376eb044ce474bf62493bb14de344b314c9",
+      "originPath": "reports/mindmap-pass/2026-11-10-search-gap/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/blobs/09d18a809fed10b1c8e353fa7daca2ee09479f056fea057fe8832de7cadb8283/chart-review.json",
+      "sha256": "09d18a809fed10b1c8e353fa7daca2ee09479f056fea057fe8832de7cadb8283",
+      "originPath": "reports/mindmap-pass/2026-11-10-search-gap/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/blobs/dfd2b38625309dd7a25b698abb6f5b28f22bab0e260ad5c5802ed691ae0ce567/evidence.json",
+      "sha256": "dfd2b38625309dd7a25b698abb6f5b28f22bab0e260ad5c5802ed691ae0ce567",
+      "originPath": "reports/mindmap-pass/2026-11-10-search-gap/evidence/simple-ira-vs-401k/evidence.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/blobs/c897701814a684e8fa4f46832177f48040b52003e4e116d561b2461b9c1284ce/irs-simple-faq.html",
+      "sha256": "c897701814a684e8fa4f46832177f48040b52003e4e116d561b2461b9c1284ce",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "IRS source or rule changes before release",
+      "scope": "SIMPLE IRA vs 401(k) limits, early withdrawal, rollover, match and eligibility rules",
+      "originPath": "reports/mindmap-pass/2026-11-10-search-gap/research/irs-simple-faq.html"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/blobs/42ee74cf2cd5b7570b9ca134e84ed8d697f48e166e4eba970696b8963000c898/irs-early-dist.html",
+      "sha256": "42ee74cf2cd5b7570b9ca134e84ed8d697f48e166e4eba970696b8963000c898",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "IRS source or rule changes before release",
+      "scope": "SIMPLE IRA vs 401(k) limits, early withdrawal, rollover, match and eligibility rules",
+      "originPath": "reports/mindmap-pass/2026-11-10-search-gap/research/irs-early-dist.html"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/blobs/59bd61be4e7d03dc60cb7f802ad7446ff3dc2496568700596efcfde3ada97b2c/irs-simple-contrib.html",
+      "sha256": "59bd61be4e7d03dc60cb7f802ad7446ff3dc2496568700596efcfde3ada97b2c",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "IRS source or rule changes before release",
+      "scope": "SIMPLE IRA vs 401(k) limits, early withdrawal, rollover, match and eligibility rules",
+      "originPath": "reports/mindmap-pass/2026-11-10-search-gap/research/irs-simple-contrib.html"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/blobs/539446c77eb75a674e0fa99f42664cf4ea225b48934fb56f0c3d258ca4ade475/irs-2026-limits.html",
+      "sha256": "539446c77eb75a674e0fa99f42664cf4ea225b48934fb56f0c3d258ca4ade475",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "IRS source or rule changes before release",
+      "scope": "SIMPLE IRA vs 401(k) limits, early withdrawal, rollover, match and eligibility rules",
+      "originPath": "reports/mindmap-pass/2026-11-10-search-gap/research/irs-2026-limits.html"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/blobs/cb00bb9c28ac295bffcd2d939a1ee1ac35f62e680c6003975501639371298b7a/notice-2025-67.txt",
+      "sha256": "cb00bb9c28ac295bffcd2d939a1ee1ac35f62e680c6003975501639371298b7a",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "IRS source or rule changes before release",
+      "scope": "SIMPLE IRA vs 401(k) limits, early withdrawal, rollover, match and eligibility rules",
+      "originPath": "reports/mindmap-pass/2026-11-10-search-gap/research/notice-2025-67.txt"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 2,
+    "reworks": 0
+  },
+  "phase0Approval": {
+    "source": "Owner's saved unattended search-gap-content-auto routine (jht243/modernwallet) authorizes end-to-end publication; independent chart review PASS round 2.",
+    "approvedManifest": "e68b4a6b94b9e9e366cb6d9603de16da42ef7c996889cf083a0625312759ac81"
+  },
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-10-search-gap/handoff-write.json",
+    "sha256": "c1b34d499f644844da65e5ac5f1ddf32cd7a5f3fa3968cefe3c9fb08d66ec8ae"
+  }
+}

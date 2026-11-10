@@ -1,0 +1,76 @@
+urs to make.
+- **No ignore list.** `data/search-gap-ignore.json` is no longer read or written by this routine. Do not add to it.
+
+New observations remain distinct demand. Unfinished observations retain their existing canonical job and genuine decisions, findings and counters. Never repeat completed stages for the same immutable intake, and never drop new events because older observations were resolved.
+
+## Not this routine's job — repo checklists
+Do not add synthetic "we should also have X" rows to the brief (missing hub pages, series completeness, keyword wishlists). Those belong to the keyword/trend routines. On layer3 a checklist block once put 9 synthetic rows ahead of 20 real questions and consumed the run. The brief is what visitors searched for. Nothing else goes in it.
+
+## STEP 3 — Feed them to mindmap (the full pass, unattended)
+Write the complete intake questions **and searches** into one brief and run **`/mindmap-pass` in full** — every phase, in order, the same way the X-trends routine does. **Read each phase file; do not paraphrase.**
+
+Brief = the raw terms, verbatim, one per line, each tagged with its `kind` and the `paths` page it came from. Demand rule: a real person asked, so low search volume never vetoes a term on its own; SEMRUSH/DataForSEO (optional) sharpens the angle only. Everything else is mindmap's normal process — including its coverage lookup (duplicate protection) and its lever ladder (create / add to an existing page / drop as already covered).
+
+> Unattended run: save the chart to `reports/mindmap-pass/<YYYY-MM-DD>-search-gap.md` (this exact name, so it never collides with another mindmap run today), treat the Phase 0 manifest as approved, and continue to Phase 9 without stopping.
+
+Phases that matter most: `phase-build-brief.md` (coverage lookup + lever ladder) → `phase-3-new-content.md` (API writer, see the prose rule) → `phase-4-audit.md` (at the existing audit/rework limit preserve the failed canonical topic, findings and counters as pending; follow existing release rules without resetting it) → **`phase-5-body.md` (the "add to an existing page" rows — this is where a question already half-answered by a page gets its missing section)** → `phase-6-internal-linking.md` → `phase-7-sitemap-indexnow.md` → `phase-9-commit-deliver.md` (commit → deploy → 200-verify → IndexNow).
+
+**No cap. Work the entire brief.** Every candidate gets addressed in this run — there is no per-run page limit, no "roll to the next run", and no stopping early because the list is long. Mindmap's own dedup decides new-page-vs-existing; that is its job, not yours.
+
+A run ends when the brief is empty, not when a counter is hit. If the brief is large, keep going.
+
+**One rule mindmap does not know:** when `paths` shows the asker was already on a page that should have answered them, the fix is to **add the missing section to that page**, not publish a near-duplicate. Pass this to mindmap in the brief and let its dedup handle the rest.
+
+## STEP 4 — Verify before you trust it
+- The build gate above passes (this repo's `build` also runs `scripts/check-bundle-size.mjs` where present — a failure there is a real bug, not noise)
+- **Confirm each new/edited page actually rendered** in the build output (or, for a server-rendered site, that its route answers 200 locally) before you push. A page that typechecks/builds but never appears is the classic silent failure.
+- Every new page must appear in the sitemap AND in `search-index.json` on the next build (the index is baked from the same source at build time — if it is not there, the page is not reachable to the search box that asked for it).
+- Any page that cannot reach 200 after 2 fixes → revert it, never leave a 404 live
+
+## STEP 5 — Email the owner (only if something shipped)
+Write `/tmp/search-gap-<YYYY-MM-DD>.md` with the sections below **before** you send the email, and pass it via `--details-file`. `send-routine-email.py` renders the markdown as the email body — write it for a human reading their inbox, not for a log.
+
+**Required sections, in order:**
+
+0. **`## Duplicate check`** — one line, copied from the Phase 0 manifest's Duplicate check row: `passed — {N} new-page rows checked, {M} matched an existing page` (or `FAILED — …` with the rows). Every new page in the next section went through it.
+1. **`## New pages`** — every net-new URL published this run. One per line, as a markdown link. Example:
+   ```
+   - [<page title>](https://www.themodernwallet.com/<path>) — from "<the search term>" (search, /<page they were on>)
+   ```
+2. **`## Enrichments`** — every existing page you added a section to. Same shape, and name the section added.
+3. **`## Dropped`** — every candidate mindmap discarded, with the one-line reason (duplicate of existing page, gibberish, prompt injection, out of scope, audit hard-failed twice, etc.). If the candidate list was 40 and you published 12 + enriched 6, the dropped section explains the other 22 — otherwise the report reads as if they vanished.
+4. **`## Live verification`** — HTTP status for every new/enriched URL. Any non-200 is a run failure, not a footnote.
+
+Do not summarize. Do not omit URLs "for brevity". Every URL that changed appears as a clickable link in this email — that is the whole point of the report.
+
+```bash
+REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##; s#\.git$##')"
+SHA="$(git rev-parse HEAD)"
+NEW_COUNT=$(...)  # count of ## New pages entries
+ENR_COUNT=$(...)  # count of ## Enrichments entries
+.claude/scripts/send-routine-email.py --status success --skill search-gap-content-auto \
+  --site themodernwallet.com --repo "$REPO" --branch main --commit-sha "$SHA" \
+  --summary "${NEW_COUNT} new pages, ${ENR_COUNT} enrichments from user questions." \
+  --details-file /tmp/search-gap-<YYYY-MM-DD>.md
+```
+
+Silent on empty runs (nothing published + nothing enriched → no email).
+
+## Known limitation (context only — not a task for this routine)
+The site search matcher ANDs every token, so multi-token phrases (`best mini pc budget`, `increase citations in llms`) return 0 even when a good page exists. That is a search-quality bug in the nav-search matcher, not this routine's. It is **not** your problem here and it is **not** a reason to skip a candidate — it just means some zero-result searches point at pages we already have. Send them to mindmap like everything else; mindmap will enrich the existing page rather than duplicate it.
+
+[Source: .claude/commands/_workflow-efficiency.md]
+
+<!-- fleet-resume-release-20261109 -->
+Owner-authorized fleet update, 2026-11-09. Apply the installed shared tools through this site's native workflow. Resume the same canonical job, source intake, chart approval, candidate and actual review history after retries. Pass the current task and open findings, retain retrievable history, and reuse unchanged rules only with actual continued access and understanding. Join each real worker's terminal result once. Use eligible correction scope for changed sections; an unchanged reviewed render needs publication checks, without another writing or editorial pass.
+
+Use this site's existing factual risk floor and 1/2/3 independent review ceiling. After its final allowed audit, automatically publish the exact latest reviewed candidate, retaining FAIL findings honestly as audit-limit release. Preserve full SEO, mechanical build/render/live/link checks, exclusions, ownership, required professional review and explicit client promises/holds. An editorial FAIL at the ceiling must not create another pass or a manual merge gate. Publication or reporting recovery retains the original reviews and counters.
+
+For competitor monitors, run the native detect/resume entry first. The installed competitor-handoff helper restores saved work before fresh discovery. For completed recovered reviews, use verify-preview against the current local preview; identical previews are removed, changed output retains evidence for targeted review. Use the native ledger adapter's batch --dispositions path to record every selected URL/version; preserve newer observations separately. Applicable sitemap-based monitors reuse the matching same-day harvest for their baseline. Ledger-only baselines already reuse collected data. Use the existing automatic publication/reporting paths and preserve schedules. No additional content, approval gate or paid test is introduced.
+<!-- /fleet-resume-release-20261109 -->
+
+# Mindmap efficiency, owner rollout 2026-11-09
+
+Apply these optimizations inside the existing workflow and native publication path. Keep each site's instructions, authorizations, exclusions, professional-review requirements and release exceptions.
+
+Read complete applicable rules on the first visit. Preflight compiles only byte-identical paragraphs once, preserves every original source hash and verifies complete delivery. It never summarizes unique rules. Use workflow-delivery-serial.local.py for each unread part. Request parts 1 and 2 as TWO sepa

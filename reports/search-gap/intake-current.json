@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "site": "themodernwallet.com",
+  "runId": "6931aeadbaf0403bb8d5862c930c0bdd",
+  "candidateCount": 3,
+  "candidates": [
+    {
+      "id": "701871f1c112ebe9148f7528ea54e1e71f032dcad60a2d12fc46fd02857feed8",
+      "term": "differences between simple ira and",
+      "kind": "search",
+      "count": 1,
+      "paths": [
+        "/"
+      ],
+      "eventIds": [
+        "7fed41a1-4ddb-4a44-a7cc-a020e27f4d74"
+      ],
+      "firstSeen": "2026-11-09T19:20:18.339145+00:00",
+      "lastSeen": "2026-11-09T19:20:18.339145+00:00"
+    },
+    {
+      "id": "73704836545ad33ae8a9e898729e0f38d5fbc5ef59da49b958b7d4900c4aa3dc",
+      "term": "//kinjar.app) is a shared household budget built for that case. both partners work in the same ledger, and the second one joins with an invite code. income is split into envelopes by percentage, so a ",
+      "kind": "search",
+      "count": 1,
+      "paths": [
+        "/contact/"
+      ],
+      "eventIds": [
+        "95552d83-2cdd-46dd-83cb-367c9f3f560c"
+      ],
+      "firstSeen": "2026-11-10T09:32:56.201444+00:00",
+      "lastSeen": "2026-11-10T09:32:56.201444+00:00"
+    },
+    {
+      "id": "8791218eb60074c2e36f889cb68f325a8a0835290ba1fddac238ac0b7539d29f",
+      "term": "differences between simple ira and 401k",
+      "kind": "search",
+      "count": 1,
+      "paths": [
+        "/"
+      ],
+      "eventIds": [
+        "dbe6d1aa-f067-4cf1-a5e3-410d7b58be02"
+      ],
+      "firstSeen": "2026-11-09T19:20:20.833774+00:00",
+      "lastSeen": "2026-11-09T19:20:20.833774+00:00"
+    }
+  ],
+  "bootstrapSince": "2026-11-01T00:00:00Z",
+  "pendingEventCount": 3
+}

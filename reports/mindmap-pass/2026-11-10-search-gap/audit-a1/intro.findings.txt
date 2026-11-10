@@ -1,0 +1,4 @@
+1. QUOTE: "Headcount also sets them apart, because a SIMPLE IRA is limited to businesses with 100 or fewer employees while a 401(k) works for any company size."
+DEFECT: unsupported claim ("a 401(k) works for any company size") not on the fact list. Delete the claim about 401(k) company size.
+2. QUOTE: "A 401(k) lets you save nearly 50% more each year than a SIMPLE IRA, giving workers much higher annual contribution limits."
+DEFECT: restates itself in two clauses; the draft also drops the original intro's SIMPLE IRA lead and its admin-cost and plan-design-flexibility points. NOT FIXABLE IN PLACE: regenerate or hand back; the correction is only one clause.

@@ -1,0 +1,2 @@
+1. QUOTE: "With advance notice, the company can also lower that match to no less than 1% in up to two out of five years."
+DEFECT: "the company" is a generic stand-in (banned coy abstraction); the subject on this page is the employer. Use "the employer".

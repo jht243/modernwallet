@@ -1,0 +1,2 @@
+1. QUOTE: "A 401(k) also allows penalty-free withdrawals if you leave your employer at age 55 or older, an exception that does not apply to a SIMPLE IRA."
+DEFECT: inaccurate: F4 says the exception covers separation from service during or after the year you reach age 55 (not "at age 55 or older"), it waives the 10% additional tax only (income tax still applies), and it covers money from the plan of the employer you leave. Restate from F4. Also the first sentence calls the tax a "penalty" and the second a "penalty-free" exception; use "additional tax" consistently.

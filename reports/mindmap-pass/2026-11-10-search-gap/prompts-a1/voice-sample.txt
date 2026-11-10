@@ -1,0 +1,86 @@
+  {
+    slug: "traditional-ira-vs-simple-ira",
+    title: "Traditional IRA vs SIMPLE IRA: 2026 Limits Compared",
+    metaDescription:
+      "Traditional IRA vs SIMPLE IRA compared: 2026 contribution limits, employer matching, and which account small-business employees should max first.",
+    targetKeyword: "traditional ira vs simple ira",
+    optionA: "Traditional IRA",
+    optionB: "SIMPLE IRA",
+    segment: "Retirement",
+    h1: "Traditional IRA vs SIMPLE IRA: Which Should You Max First?",
+    introText:
+      "A Traditional IRA is an account you open on your own, with a 2026 contribution limit of $7,500. A SIMPLE IRA, on the other hand, is a small-employer retirement plan with a $17,000 limit (or $18,100 at employers with 25 or fewer workers) plus a required employer match or contribution. That usually makes the SIMPLE IRA the better first stop if your employer offers one.",
+    comparisonTable: {
+      rows: [
+        { dimension: "2026 contribution limit", a: "$7,500 ($8,600 if 50+)", b: "$17,000 standard plan ($21,000 if 50+); $18,100 at small employers with ≤25 employees ($21,950 if 50+)" },
+        { dimension: "Who can open one", a: "Anyone with earned income", b: "Only through an employer that sponsors a SIMPLE IRA plan" },
+        { dimension: "Employer contribution", a: "None — it's an individual account", b: "Mandatory: either a 3% match or a 2% nonelective contribution" },
+        { dimension: "Tax treatment", a: "Pre-tax; taxed on withdrawal (deduction may phase out if you're covered by a workplace plan)", b: "Pre-tax; taxed on withdrawal" },
+        { dimension: "Early withdrawal penalty", a: "10% before 59½", b: "25% if withdrawn within the first 2 years of participation, then 10%" },
+        { dimension: "Investment choice", a: "Any brokerage, unlimited investment options", b: "Limited to the plan provider's fund menu, set by the employer" },
+        { dimension: "Required minimum distributions", a: "Starting at age 73", b: "Starting at age 73" },
+      ],
+    },
+    verdict:
+      "If your employer offers a SIMPLE IRA, contribute enough to capture the full employer match first — that match is guaranteed money no Traditional IRA can replicate. Once you've captured the match, a Traditional IRA becomes useful as a second account with a wider choice of investments than most SIMPLE IRA plan menus offer. If you're self-employed or your employer doesn't offer a SIMPLE IRA, the Traditional IRA is simply your only option between the two.",
+    sections: [
+      {
+        heading: "How a Traditional IRA works",
+        content:
+          "A Traditional IRA is an individual retirement account you open directly with a brokerage, with no employer involved at all. For 2026, the [IRS](https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500) set the contribution limit at $7,500, or $8,600 if you're 50 or older.\n\nYour contribution may be fully or partially tax-deductible depending on whether you or a spouse is covered by a workplace retirement plan, and your income. If neither of you is covered by a workplace plan, the full contribution is deductible regardless of income.\n\nBecause you open the account yourself at any brokerage, you get access to the full range of stocks, ETFs, and mutual funds that brokerage offers — a meaningfully wider menu than most employer-sponsored plans provide. Use the [retirement savings calculator](/retirement/retirement-savings-calculator/) to project how a Traditional IRA balance grows over your remaining working years.",
+      },
+      {
+        heading: "How a SIMPLE IRA works",
+        content:
+          "A SIMPLE IRA — Savings Incentive Match Plan for Employees — is a retirement plan designed for small businesses with 100 or fewer employees. For 2026, the standard employee contribution limit rose to $17,000, up from $16,500 in 2025; employers with 25 or fewer employees can offer a higher limit of $18,100.\n\nUnlike a Traditional IRA, a SIMPLE IRA requires the employer to contribute too — either matching up to 3% of the employee's compensation, or making a flat 2% nonelective contribution to every eligible employee's account whether they contribute or not.\n\nSIMPLE IRAs carry a steeper early-withdrawal penalty than most retirement accounts: 25% instead of the usual 10% if you withdraw within the first two years of participating in the plan. After that two-year mark, the penalty drops to the standard 10%.",
+      },
+      {
+        heading: "Why the employer match changes the math",
+        content:
+          "An employer match isn't optional upside — under SIMPLE IRA rules, the employer is legally required to contribute one of the two formulas every year the plan operates, which is what separates it from a Traditional IRA's purely individual structure.\n\nSay your employer offers the 3% match formula and you earn $60,000 a year. Contributing 3% of your salary ($1,800) captures a matching $1,800 from your employer — an instant 100% return on that portion of your contribution that no Traditional IRA, no matter how well invested, can replicate through market returns alone.\n\nThat's the specific reason financial planners almost universally recommend capturing a workplace match before funding an outside IRA: skipping the SIMPLE IRA match to prioritize a Traditional IRA means walking away from guaranteed money.",
+      },
+      {
+        heading: "Can you have both accounts at once?",
+        content:
+          "Yes. There's no rule preventing you from contributing to a SIMPLE IRA through your employer and a Traditional IRA on your own in the same year, though your Traditional IRA deduction may be limited if you're an active SIMPLE IRA participant and your income exceeds the IRS phase-out thresholds for that year.\n\nThe practical order most planners recommend: contribute enough to your SIMPLE IRA to capture the full employer match, then direct additional savings to a Traditional IRA (or Roth IRA, if you're eligible) for broader investment choice, then return to maxing the SIMPLE IRA if you have savings capacity left over.\n\nIf you're weighing a Roth IRA instead of a Traditional IRA as that second account, see our [Roth IRA vs Traditional IRA comparison](/compare/roth-ira-vs-traditional-ira/) for the tax tradeoffs involved.",
+      },
+      {
+        heading: "If you're self-employed instead of a small-business employee",
+        content:
+          "A SIMPLE IRA is only available if your employer sets one up — it isn't something a self-employed person can open for themselves in the way a Traditional IRA can. Self-employed savers who want the higher SIMPLE-style contribution limits and a workplace-style structure typically look at a Solo 401(k) or SEP IRA instead.\n\nOur [SEP IRA vs Solo 401(k) comparison](/compare/sep-ira-vs-solo-401k/) covers which of those two options fits a self-employed saver's contribution goals, since both allow substantially higher limits than either IRA discussed on this page.\n\nFor a business owner deciding what plan to offer employees in the first place — SIMPLE IRA versus a small-business 401(k) — the setup and administrative cost differences matter as much as the contribution limits, so budget time to compare providers before committing to either.",
+      },
+    ],
+    faqs: [
+      {
+        question: "What are the 2026 Traditional IRA and SIMPLE IRA contribution limits?",
+        answer:
+          "For 2026, the Traditional IRA limit is $7,500 ($8,600 if you're 50 or older). The SIMPLE IRA limit is $17,000 at a standard employer ($21,000 if 50+), or $18,100 at an employer with 25 or fewer employees ($21,950 if 50+), per IRS guidance.",
+      },
+      {
+        question: "Can I contribute to a Traditional IRA and a SIMPLE IRA in the same year?",
+        answer:
+          "Yes, they have separate limits and you can fund both in the same year. Your Traditional IRA tax deduction may be reduced or phased out based on your income, since active SIMPLE IRA participation counts as workplace plan coverage for deduction purposes.",
+      },
+      {
+        question: "Is a SIMPLE IRA better than a Traditional IRA?",
+        answer:
+          "A SIMPLE IRA is usually the better first priority if your employer offers one, because of the required employer match or contribution — that's guaranteed money a Traditional IRA can't match. A Traditional IRA is better for investment choice, since you can open it at any brokerage instead of being limited to your employer's plan menu.",
+      },
+      {
+        question: "What is the SIMPLE IRA early withdrawal penalty?",
+        answer:
+          "A SIMPLE IRA charges a steep 25% penalty on withdrawals taken within your first two years of participating in the plan, compared with the standard 10% early-withdrawal penalty that applies to a Traditional IRA. After two years of participation, the SIMPLE IRA penalty drops to the standard 10%.",
+      },
+      {
+        question: "Can a self-employed person open a SIMPLE IRA?",
+        answer:
+          "A self-employed business owner can set up a SIMPLE IRA plan for their business, including for themselves as an employee. An individual working for someone else cannot open a SIMPLE IRA independently — it has to be sponsored by an employer, unlike a Traditional IRA.",
+      },
+    ],
+    sources: [
+      { label: "IRS — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
+      { label: "IRS — SIMPLE IRA plan", url: "https://www.irs.gov/retirement-plans/plan-sponsor/simple-ira-plan" },
+      { label: "IRS — Retirement topics: SIMPLE IRA contribution limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits" },
+    ],
+    relatedComparisons: ["sep-ira-vs-solo-401k", "simple-ira-vs-401k", "roth-ira-vs-traditional-ira", "traditional-ira-vs-401k"],
+    calculatorLinks: [

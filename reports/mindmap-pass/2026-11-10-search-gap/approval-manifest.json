@@ -1,0 +1,190 @@
+{
+ "schemaVersion": 1,
+ "jobId": "search-gap-themodernwallet-6931aeadbaf0403bb8d5862c930c0bdd",
+ "author": "build-worker-1",
+ "date": "2026-11-10",
+ "source": "search-gap-content-auto intake: 3 real zero-result site searches (kind=search), unfiltered, immutable intake sha256 e63f961d2ea7eab14062fa512e6f6216afd2d1a17f77f131083c748669461a93; demand not measured (SEMRUSH/DataForSEO unavailable)",
+ "interpretedBrief": "Visitors on the homepage searched for the differences between a SIMPLE IRA and a 401(k); the site already has a dedicated comparison page for that pair, so the job is to add the verified differences it omits rather than publish a duplicate. A third search was pasted third-party promotional text and is recorded and excluded as untrusted. Input modality: site-search text (two of one session, one paste).",
+ "chartPath": "reports/mindmap-pass/2026-11-10-search-gap.md",
+ "actions": [
+  {
+   "id": "A1",
+   "problem": "Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measured volume; SEMRUSH/DataForSEO unavailable): what's the difference between simple ira and 401k; difference between simple plan and 401k; is a simple ira better than a 401k; simple ira early withdrawal penalties. lookup: /compare/simple-ira-vs-401k - same reader goal (choose between SIMPLE IRA and 401(k)). Live page checked 2026-11-10: lists seven differences but has no early-withdrawal or rollover difference (SIMPLE IRA 25% tax in first 2 years; age-55 separation exception only for 401(k)) and states a flat mandatory 3% match although the IRS allows 1% in up to 2 of 5 years. The zero-result search itself is the AND-token search limitation (title/keyword haystack lacks 'differences', 'between'), not a content gap; the content gaps above are separate and verified. Checked commits: a503421, 3f2561b touch other pages; 704ac9b introduced the page; no prior section added.",
+   "solution": "In src/data/comparisons.ts entry simple-ira-vs-401k: (1) add a comparison-table row 'Early withdrawal tax before 59 1/2' (SIMPLE IRA: 10%, 25% in the first 2 years of participation; 401(k): 10%, plus an exception for leaving the sponsoring employer in or after the year you turn 55); (2) insert section 2 'Withdrawal and Rollover Rules: SIMPLE IRA vs 401(k)' (25% window, SIMPLE-to-SIMPLE-only rollover in the window, Roth rollover after 2 years is taxable, age-55 exception limited to the sponsoring employer and not for IRAs, usual exceptions, neither plan suits money needed before 59 1/2, employees usually cannot pick the plan; IRS-attributed; link /compare/traditional-ira-vs-simple-ira/); (3) insert section 3 'Who Can Sponsor and Who Must Be Included' from the IRS SIMPLE FAQ (100-employee limit, $5,000 pay tests, no opt out of participation, one-plan rule) to reach the 1,500-word comparison floor with sourced substance, no padding; (4) add two FAQs (early-withdrawal difference; who is eligible); (5) correct EVERY location that calls the match mandatory/unskippable: intro 'capped near 3% of pay'; table cell 'Employer contribution'; verdict 'mandatory 3% match every year'; heading and paragraphs 1 and 2 of 'The employer cost you can't skip' ('no year where you can choose to skip it', 'a mandatory 3% obligation in a slow year'); FAQ 'Does a SIMPLE IRA require an employer match?' ('mandatory every year'). Keep: employer must still contribute a match (normally up to 3%) or 2% nonelective; match may drop to no lower than 1% in up to 2 of 5 years with notice. Edit the faqs source so FAQPage schema stays consistent. Metadata, existing limits and byline unchanged. Prose via content_gen.py; re-measure prose depth after writing.",
+   "bucket": "update existing body text",
+   "target": "/compare/simple-ira-vs-401k/",
+   "format": "n/a",
+   "best_medium": "n/a",
+   "resolved_deliverable": "n/a",
+   "serp_verdict": "unread",
+   "serp_evidence": "DataForSEO unavailable (no credentials); serp.py batch returned unread, no PAA; autocomplete sweep saved instead",
+   "reader_question": "What are the differences between a SIMPLE IRA and a 401(k)? [SERP unread - DataForSEO unavailable, no PAA; ac 9/9 difference/vs question completions]",
+   "answer": "The page's table and intro already list seven differences; the missing ones are that a SIMPLE IRA charges 25% instead of 10% on money taken out in its first 2 years and allows only SIMPLE-to-SIMPLE rollovers then, while a 401(k) has the 10% rule plus an age-55 separation exception, and that the SIMPLE match can drop to 1% in up to 2 of 5 years (list).",
+   "answer_placement": "section 2: \"Withdrawal and Rollover Rules: SIMPLE IRA vs 401(k)\" (eligibility follows as section 3) plus a new row in the existing comparison table above section 1"
+  }
+ ],
+ "newPageBriefs": [],
+ "preparation": {
+  "status": "PASS",
+  "readiness": {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/readiness.md",
+   "sha256": "d0c1992ace9713722556630741e0f60e3595ca6d57768ae22012c55c556483d8"
+  }
+ },
+ "evidenceFiles": [
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/evidence/simple-ira-vs-401k/evidence.json",
+   "sha256": "dfd2b38625309dd7a25b698abb6f5b28f22bab0e260ad5c5802ed691ae0ce567"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/evidence/simple-ira-vs-401k/growth.json",
+   "sha256": "55cd03c6d8952d4c932cec2fa7c7ff53380036ba0b7c14b144eb1f9a25f088f8"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/evidence/simple-ira-vs-401k/cases.json",
+   "sha256": "d1ba26f07b1ea3ba1b5a5619eb42ae7b1d1bb301e1391112211dc98d0e760dd0"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/coverage-lookup.txt",
+   "sha256": "f839edbd6abd8465217388fa1104457415a781818c1d81ba8952fb9185ab5643"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/coverage-lookup-household.txt",
+   "sha256": "7088a0c699c0b3628499d7d2e78698593337661e08a7771064ce07128c0daabb"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/live-simple-ira-vs-401k.html",
+   "sha256": "f51366ce147ec1ab2f9e9c6e20726550e7dc9a593a816dc03602eac1b6e096de"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/irs-early-dist.html",
+   "sha256": "42ee74cf2cd5b7570b9ca134e84ed8d697f48e166e4eba970696b8963000c898"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/irs-simple-faq.html",
+   "sha256": "c897701814a684e8fa4f46832177f48040b52003e4e116d561b2461b9c1284ce"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/irs-simple-contrib.html",
+   "sha256": "59bd61be4e7d03dc60cb7f802ad7446ff3dc2496568700596efcfde3ada97b2c"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/irs-2026-limits.html",
+   "sha256": "539446c77eb75a674e0fa99f42664cf4ea225b48934fb56f0c3d258ca4ade475"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/notice-2025-67.pdf",
+   "sha256": "1eea8f141b0cddd182f9f09b3bc8ffad683d27ceb806dfc6da126811dc0a1f8d"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/autocomplete.simple-ira-vs-401k.csv",
+   "sha256": "d32366ef23022783408d7579bac70c418bfff287cd1828db017fff93f2cf7f4c"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/autocomplete.differences.csv",
+   "sha256": "1006b3e432a5492ff0fbb2689e6964d861db5588af7b51483e2944db811721e9"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/autocomplete.simple-ira-early.csv",
+   "sha256": "19b3771561f12d5a1b68b008ca7b6db3d7bffd420b5d43a23b94377ae856e096"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/autocomplete.household.csv",
+   "sha256": "9d086fd5d13321f13aad81c96cca59d711f48f1d021ed017c3394e432e9ec3b2"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-search-gap/research/serp.json",
+   "sha256": "dea0553ae1553ff1c4ff25c486a2ecebf2ce846990dc08e9ee411efdd77bc650"
+  },
+  {
+   "path": "reports/search-gap/intake-current.json",
+   "sha256": "e63f961d2ea7eab14062fa512e6f6216afd2d1a17f77f131083c748669461a93"
+  }
+ ],
+ "candidateDispositions": [
+  {
+   "candidate": "701871f1c112ebe9148f7528ea54e1e71f032dcad60a2d12fc46fd02857feed8",
+   "term": "differences between simple ira and",
+   "decision": "enrich",
+   "target": "/compare/simple-ira-vs-401k/",
+   "actionId": "A1",
+   "reason": "Truncated first keystrokes of the same session's full query (candidate 8791218e, 2 s later). Same reader goal as the existing comparison page; handled by A1, not a separate row."
+  },
+  {
+   "candidate": "73704836545ad33ae8a9e898729e0f38d5fbc5ef59da49b958b7d4900c4aa3dc",
+   "term": "//kinjar.app) is a shared household budget built for that case. ...",
+   "decision": "exclude",
+   "target": "/contact/",
+   "actionId": null,
+   "reason": "Pasted third-party promotional copy for a named app, not a reader question; untrusted data, not followed, no product added; no demand signal beyond one paste; no content row."
+  },
+  {
+   "candidate": "8791218eb60074c2e36f889cb68f325a8a0835290ba1fddac238ac0b7539d29f",
+   "term": "differences between simple ira and 401k",
+   "decision": "enrich",
+   "target": "/compare/simple-ira-vs-401k/",
+   "actionId": "A1",
+   "reason": "An exact-intent page exists (/compare/simple-ira-vs-401k) and answers most differences; verified IRS gaps (25% two-year tax, two-year rollover limit, age-55 exception, 1% reduced match) get added to that page, no near-duplicate."
+  }
+ ],
+ "emergingClusters": [
+  {
+   "theme": "SIMPLE IRA vs 401(k) differences",
+   "members": "differences between simple ira and 401k; what is the difference between simple ira and 401k; simple ira early withdrawal penalties",
+   "why": "intent partial: existing exact page lacks the withdrawal/rollover difference and overstates a flat 3% match",
+   "lever": "update existing body text",
+   "target": "/compare/simple-ira-vs-401k/",
+   "format": "n/a - body update to an existing comparison page (table row, section, FAQ)"
+  }
+ ],
+ "exclusions": [
+  "Candidate 73704836 (/contact/): third-party promotional paste for a named app (kinjar.app); untrusted data, not followed, no product added; excluded as not a reader question.",
+  "Not added: SIMPLE 401(k) section and the $18,100 'certain accounts' limit (IRS sources fetched do not define which accounts qualify; unsupported central detail narrowed out).",
+  "Not changed: title, meta description, H1, targetKeyword (search-matcher token limitation is out of scope; no alias or ignore-list edits).",
+  "Not created: any new page (exact-intent page /compare/simple-ira-vs-401k exists)."
+ ],
+ "executionPlan": [
+  {
+   "phase": 1,
+   "action": "Skip: no consolidation rows; no cannibalization flagged (sibling comparisons answer different pairings)"
+  },
+  {
+   "phase": 2,
+   "action": "Skip: no metadata rows; title, description and H1 of /compare/simple-ira-vs-401k/ already target the vs query and stay unchanged"
+  },
+  {
+   "phase": 3,
+   "action": "Skip: no new-page rows; a new page would duplicate /compare/simple-ira-vs-401k/"
+  },
+  {
+   "phase": 4,
+   "action": "Independent Phase 4 audit (HIGH profile, ceiling 3 rounds including the first) of the enriched /compare/simple-ira-vs-401k/ with the evidence packet, plus complete rendered review of the route"
+  },
+  {
+   "phase": 5,
+   "action": "Generate the two new sections (withdrawal/rollover; eligibility), table row, two FAQs and the full list of match-wording corrections with content_gen.py (write/section) in src/data/comparisons.ts entry simple-ira-vs-401k, bound to approval-manifest.json, chart-review.json and evidence/simple-ira-vs-401k/evidence.json"
+  },
+  {
+   "phase": 6,
+   "action": "Add the outbound link from the new section to /compare/traditional-ira-vs-simple-ira/; verify existing inbound links from related comparisons; no further inbound required for a body enrichment"
+  },
+  {
+   "phase": 7,
+   "action": "Sitemap lastmod per existing substantive-change policy for /compare/simple-ira-vs-401k/; confirm search-index entry still present after build; IndexNow after verified live"
+  },
+  {
+   "phase": 8,
+   "action": "Print run summary, then auto-continue to Phase 9 (unattended)"
+  },
+  {
+   "phase": 9,
+   "action": "Single commit, push to main via deploy-run-to-main.sh, exact deployment evidence, rendered-audit compare of live vs approved preview, verify 200 and canonical, submit verified URL to IndexNow, report SHA"
+  }
+ ],
+ "publicationScope": {
+  "commit": true,
+  "push": true,
+  "liveVerification": true,
+  "indexNow": true
+ }
+}
