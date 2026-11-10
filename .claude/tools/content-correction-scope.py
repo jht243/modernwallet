@@ -42,16 +42,19 @@ def boundary(root,out,manifest):
                 Path(name).suffix in {'.json','.md','.mdx','.ts','.tsx','.js','.jsx','.astro','.html'} and
                 not re.search(r'(?:^|[/_.-])(?:secrets?|credentials?|private[-_]?keys?|tokens?)(?:[/_.-]|$)',name,re.I),
                 'Declare actual page content paths only; never archive credentials as correction content')
+    archive=load('capture_source_archive',Path(__file__).with_name('review-archive.py'))
+    base, recovery_sources = archive.changed_sources(root)
+    names += list(recovery_sources)
     for name in sorted(set(names)):
         if not name or any(part in EXCLUDED for part in Path(name).parts):continue
         path=root/name
         if path.is_symlink():files[name]={'symlink':str(path.readlink())};continue
         if path.is_file():
             raw=path.read_bytes();files[name]={'sha256':sha(raw)}
-            if name in copy:
+            if name in copy or name in recovery_sources:
                 files[name]['artifact']=p.freeze(root,path,out.parent/'correction-sources')
                 require(files[name]['artifact']['sha256']==files[name]['sha256'],'Content changed while sealing its source boundary; recapture')
-    p.save_exact(out,{'version':VERSION,'files':files})
+    p.save_exact(out,{'version':VERSION,'files':files,'recoveryBaseCommit':base,'recoverySourcePaths':sorted(recovery_sources)})
     return dict(p.reference(root,out),version=VERSION)
 
 

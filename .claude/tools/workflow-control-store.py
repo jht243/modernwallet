@@ -61,7 +61,7 @@ class Store:
             raise ControlError('Unsupported durable control state')
         return revision, state
 
-    def mutate(self, fn, artifacts=()):
+    def mutate(self, fn, artifacts=(), source_parent=None):
         blobs = {}
         for rel in artifacts:
             data = safe_path(self.root, rel).read_bytes()
@@ -87,6 +87,12 @@ class Store:
                     git(self.root, 'update-index', '--add', '--cacheinfo', '100644', oid, path, env=env)
                 tree = git(self.root, 'write-tree', env=env).stdout.decode().strip()
                 args = ['commit-tree', tree] + (['-p', base] if base else [])
+                if source_parent is not None:
+                    if not re.fullmatch('[0-9a-f]{40,64}',source_parent):
+                        raise ControlError('Invalid review source base')
+                    git(self.root,'cat-file','-e',source_parent+'^{commit}')
+                    if not base or git(self.root,'merge-base','--is-ancestor',source_parent,base,check=False).returncode:
+                        args.extend(['-p',source_parent])
                 commit = git(self.root, *args, data=b'Checkpoint workflow controller\n', env=env).stdout.decode().strip()
             push = git(self.root, 'push', '--quiet', 'origin', commit + ':' + self.ref, check=False)
             if not push.returncode:

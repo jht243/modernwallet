@@ -243,11 +243,23 @@ def capture(manifest, base, out, dom_dir=None, comparison_only=False):
         (folder/(filename+'.html')).write_text(html)
         (folder/(filename+'.txt')).write_text(result['semantic']['text'])
         result['htmlFile']=str(folder/(filename+'.html')); result['textFile']=str(folder/(filename+'.txt')); result['textSha256']=hashlib.sha256(result['semantic']['text'].encode()).hexdigest()
+        for field in ('htmlFile','textFile'):
+            path=Path(result[field])
+            if path.is_absolute() and path.is_relative_to(Path.cwd()):
+                result[field]=str(path.relative_to(Path.cwd()))
         return result
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool: results=list(pool.map(one,manifest['routes']))
     payload={'capturedAt':now(),'baseUrl':base,'domDir':dom_dir,'manifest':manifest,'routes':results}
     if preview:payload['previewProvenance']=preview
     if not comparison_only: attach_review_evidence(payload,folder)
+    if not comparison_only and 'correctionBoundary' not in payload and (Path(__file__).with_name('review-archive.py')).is_file():
+        archive_path=Path(__file__).with_name('review-archive.py')
+        import importlib.util
+        spec=importlib.util.spec_from_file_location('render_source_archive',archive_path);archive=importlib.util.module_from_spec(spec);spec.loader.exec_module(archive)
+        root=Path(__file__).resolve().parents[2]
+        if manifest.get('workflowKind')=='mindmap-pass' or archive.search_job(root):
+            payload['reviewSourceArchive']=archive.snapshot_sources(root,folder)
+
     payload['snapshotSha256']=digest(payload); save(out,payload)
     return payload
 
@@ -388,6 +400,11 @@ def main():
         s=read(a.snapshot); review=read(a.review); review_check(s,review)
         if a.recapture:
             fresh=capture(s['manifest'],s['baseUrl'],str(Path(a.snapshot).with_suffix('.recapture.json')),s.get('domDir')); compare(s,fresh,review,require_live=False)
+        archive_path=Path(__file__).with_name('review-archive.py')
+        if archive_path.is_file():
+            import importlib.util
+            spec=importlib.util.spec_from_file_location('release_proof',archive_path);archive=importlib.util.module_from_spec(spec);spec.loader.exec_module(archive)
+            archive.save_checked_pair(Path(__file__).resolve().parents[2],Path(a.snapshot),Path(a.review),fresh=a.recapture)
         print('Rendered review evidence verified')
     elif a.command=='compare': compare(read(a.approved),read(a.live),read(a.review)); print('Live render matches approved render')
     else: print('Deployment records:',record(read(a.snapshot),read(a.approved),read(a.review),a.commit,read(a.deployment_evidence),a.ledger))

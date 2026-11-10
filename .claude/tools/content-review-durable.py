@@ -53,8 +53,8 @@ def restore(root,journal):
     else:cache(root,name,expected,raw);continue
    target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(raw)
  return {'module':module,'store':store,'expectedHead':head,'key':journal.key}
-def collect(root,journal):
- paths={};seen=set();events=[json.loads(line) for line in journal.path.read_bytes().splitlines() if line.strip()]
+def collect(root,journal,extra=None):
+ paths={};seen=set();events=[json.loads(line) for line in journal.path.read_bytes().splitlines() if line.strip()] if journal else []
  invalid={(ref['path'],ref['sha256']) for e in events if e['kind']=='repair-pending' for ref in e['data'].get('invalidatedReferences',[])}
  def file(name,expected=None):
   target=(root/name).resolve()
@@ -89,7 +89,8 @@ def collect(root,journal):
    for child in value.values():visit(child)
   elif isinstance(value,list):
    for child in value:visit(child)
- file(str(journal.path.relative_to(root)))
+ if journal:file(str(journal.path.relative_to(root)))
+ for name,digest in (extra or {}).items():file(name,digest)
  for event in events:visit(event)
  return paths
 
@@ -104,7 +105,18 @@ def checkpoint(root,journal,context):
   state.setdefault('job',{'artifacts':{}})
   if state['job'] is None:state['job']={'artifacts':{}}
   entries[journal.key]={'identity':journal.identity,'head':head,'artifacts':paths}
- context['store'].mutate(retain,list(paths));context['expectedHead']=head
+ context['store'].mutate(retain,list(paths))
+ revision,remote=context['store'].read()
+ saved=remote.get('reviewJournals',{}).get(journal.key,{})
+ if saved.get('head') != head or saved.get('artifacts') != paths:
+  raise ValueError('Remote did not confirm the exact review journal and its evidence; resume the original slot')
+ archive=Path(__file__).with_name('review-archive.py')
+ if not archive.is_file() and os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID'):
+  raise ValueError('Missing native review archive verifier')
+ if archive.is_file():
+  spec=importlib.util.spec_from_file_location('review_archive_check',archive);module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+  module.verified_objects(root,revision,paths.values())
+ context['expectedHead']=head
 
 
 def main():

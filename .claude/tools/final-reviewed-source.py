@@ -87,6 +87,14 @@ def prepare(root, base, dry_run=False):
         names=[entry[0] for entry in changes]
         git(root,'add','--',*names)
         git(root,'commit','--only','-qm','Restore exact page sources from the final independent review','--',*names)
+    if not dry_run:
+        import importlib.util
+        archive_path=Path(__file__).with_name('review-archive.py')
+        if archive_path.is_file():
+            spec=importlib.util.spec_from_file_location('prepush_review_archive',archive_path);archive=importlib.util.module_from_spec(spec);spec.loader.exec_module(archive)
+            delta=git(root,'diff','--no-renames','--name-only','-z','origin/main','HEAD').decode().split('\0')
+            archive.confirm_changed_journals(root,delta)
+            if archive.search_job(root):archive.require_search_archive(root,delta)
     return [entry[0] for entry in changes]
 
 
