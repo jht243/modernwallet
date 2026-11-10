@@ -1,0 +1,465 @@
+{
+ "version": 1,
+ "siteId": "jht243/modernwallet",
+ "canonicalBase": "https://themodernwallet.com",
+ "jobId": "competitor-18b9b55e45cc",
+ "routes": [
+  "/compare/robo-advisor-vs-financial-advisor/",
+  "/guides/when-to-switch-financial-advisors/",
+  "/guides/how-to-read-form-adv/",
+  "/guides/what-is-investment-management/"
+ ],
+ "producer": "mindmap-builder-ae12db",
+ "nextAction": "Round-2 independent recheck (HIGH budget, round 2 of 3) of the four corrected new pages and the restored financial-advisor-worth-it page against the round 1 findings; the five passing edited pages are byte-identical in the new render (same fingerprints).",
+ "previous": {
+  "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit-handoff.json",
+  "sha256": "f94039e26ef073f9c6c9668d673057782f1206316fbce6badc66a2b2b655c634"
+ },
+ "candidates": [
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot.round2.json",
+   "sha256": "6d38386c3e62f1e0dc981e94737f8ee74b76992b27978358af0f3e83bd9387a1"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-manifest.json",
+   "sha256": "d890d71c03527cc199b2500768cb84a982252e3d995f129f98a46e09abfcb354"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/src-candidate.round2.diff",
+   "sha256": "fed5dc1357fb9f64927e41e26209952e461776286b9f40f1453997ab22ebbb4b"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/approval-manifest.json",
+   "sha256": "64b8cbd1a8095769879cc8b5aaa2eed0045d1a76c7fbcba9d2251bf353f6525c"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/chart-review.json",
+   "sha256": "95c73859061d8f31b0556e143d53d3cd6db6b014af15a04979258e3c57d3ea99"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/phase4-round1-review.json",
+   "sha256": "2e68707c0d66a6226e715b3420797a77e6753c90a3404653d75a05c8eb10ecbd"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/phase4-round1-worth-it-review.json",
+   "sha256": "b6135f381d5ac16ae8ed8d3b660562f1fc5d2c510c4d2d2f89afaa196d081b0d"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/phase4-round1-addendum.json",
+   "sha256": "8da33d6ae51e50711aa6350101f2c406244cd8db1b3c672fd6078433faeeff77"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/robo-advisor-vs-financial-advisor.json",
+   "sha256": "5d01852a498486fb2d50592217b5c53ec688714f7fb1eb6151fd503371a72bb4"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/robo-advisor-vs-financial-advisor.json.meta.json",
+   "sha256": "3e76c6a351213a95e6866f32a118884e744a57e4bf3f5f238a8565efc13830c7"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/robo-advisor-vs-financial-advisor.round1.json",
+   "sha256": "dc37d4f33ba7db2630ae41863d46378271205be32412e1ac983c6ae6501d2232"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/prompts/robo-advisor-vs-financial-advisor.prompt.md",
+   "sha256": "3a07317cc438d97cf4a6fa374a3e56db3aeabd27b4269201e87fe16775f0f938"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/robo-advisor-vs-financial-advisor.findings.txt",
+   "sha256": "42cf410966d260ded6dcfd60c2c252bcc5e3ca0383a7a125e6ae16f661f6844d"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/scope-robo-advisor-vs-financial-advisor.json",
+   "sha256": "c55cbe64a35b6268c03664c9bd016833a679b994924dcda793468e17336c28c3"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/robo-advisor-vs-financial-advisor.fix1.log",
+   "sha256": "bfbdee18f01ac5db669771293b082f5fff5038a0372589db68b882573369cac0"
+  },
+  {
+   "path": "evidence/robo-advisor-vs-financial-advisor/evidence.json",
+   "sha256": "c0a6956dcff7bd0a11af8136c9d5598d091b09caffef67ee49ac8db4a3434723"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/when-to-switch-financial-advisors.json",
+   "sha256": "e6374c046d1845c4fd2dba7163b90976398e8657178182f3a04b377f43217e6c"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/when-to-switch-financial-advisors.json.meta.json",
+   "sha256": "ee993a4d7186c46d81a6c660bac9ad76738526a6e5244c043ce4c6cd4b9c28f1"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/when-to-switch-financial-advisors.round1.json",
+   "sha256": "60ac2c4f8f833b9b4f635916fc4aad622662ef0a22d1f1f44caf44885e3b7147"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/prompts/when-to-switch-financial-advisors.prompt.md",
+   "sha256": "976a116f80a62bbcea8e8e96ce8b816e7ab5e2d8c735e46093b2a036d4426f7c"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/when-to-switch-financial-advisors.findings.txt",
+   "sha256": "24751d3d75eaf850b78839e99e1fbdb07b3bd162d6d451e256a3ad81c6dccfbe"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/scope-when-to-switch-financial-advisors.json",
+   "sha256": "bfc3f9802a8484cc6aaea769fa37a6a70563aad1923a68d919686defe0bdbd9b"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/when-to-switch-financial-advisors.fix1.log",
+   "sha256": "98d01c36fc643134e1e1ba88a6deeafd977887ef636825354d821cf782a045dd"
+  },
+  {
+   "path": "evidence/when-to-switch-financial-advisors/evidence.json",
+   "sha256": "a216a2eda39b74d88c5588d7c1a70c822d3f4fe39b6798e20c8bdff4e1601b8a"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/how-to-read-form-adv.json",
+   "sha256": "fb53a6d874a64d03f7fd8be6ab78a82bc4d7a4e6768fe24261a421c7188d6d34"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/how-to-read-form-adv.json.meta.json",
+   "sha256": "d3d0d29a12d5596149f370cd6d5ede7ba389a4d07a3c3d41a720c660fc271b56"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/how-to-read-form-adv.round1.json",
+   "sha256": "a6b4f80468cc907dbb731ac68cefca5e7545cd4004046864399357948ba832ea"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/prompts/how-to-read-form-adv.prompt.md",
+   "sha256": "018d983e207cf427eefded5f59c535f3ae3a96ab7dfcf1077e8164fcf58627bb"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/how-to-read-form-adv.findings.txt",
+   "sha256": "271c5370f706983db8eeeab03b9c610570f195a5571c23be8ced942748bb6f3d"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/scope-how-to-read-form-adv.json",
+   "sha256": "3673d5072bf88c0e53a8ea4a85301ddd342bf11c044651a3e5d4bac576066660"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/how-to-read-form-adv.fix1.log",
+   "sha256": "9c8e075e971d97770041eecc68be1441fa581ae80ee90d681cf363cc336e194d"
+  },
+  {
+   "path": "evidence/how-to-read-form-adv/evidence.json",
+   "sha256": "6811a5b240bb8e81bd2146671c5b66d00498ea4a0cb9ea15788d7221fd7dd1e7"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/what-is-investment-management.json",
+   "sha256": "526e822a8bf495d89188637a88bc2e58f35f3503baf1d8b690206e2aaf0693c3"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/what-is-investment-management.json.meta.json",
+   "sha256": "14b7f0929c13531d7f5050f55de1224c04717e6eff1bf183f19253c984a46658"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/what-is-investment-management.round1.json",
+   "sha256": "ed0de7d9e0b3c099799eed779ed4dca3f49c94c7515728558fff40f61fa69db8"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/prompts/what-is-investment-management.prompt.md",
+   "sha256": "c611e387962eba69ca10fbfee061ce169a770276c8f9058fba4436576fd17415"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/what-is-investment-management.findings.txt",
+   "sha256": "6d37a2a81086fd2cff6e37496161fa67130f5641d88ddaddf0888f6c928be991"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/scope-what-is-investment-management.json",
+   "sha256": "1fdf5b5c9f52f38706e79535a50524e94eb58b3b953c8fe2d5aa86c568536009"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/what-is-investment-management.fix1.log",
+   "sha256": "f334355642837ecda5e3c0311d9b92ece5b68e9b455a6de92f1e9f0c51f7819a"
+  },
+  {
+   "path": "evidence/what-is-investment-management/evidence.json",
+   "sha256": "bcb3f96797361def1df9a4534e36aa2f60c9e19feed1942ea2d62ebac9da290b"
+  }
+ ],
+ "sources": [
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971/investor.gov_CRS-2026-11-09.txt",
+   "sha256": "183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971",
+   "checkedAt": "2026-11-09",
+   "refreshWhen": "rule, form or page change at the cited body",
+   "scope": "primary-source capture used by the approved briefs"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/49b463337a5d37e8e1b6a56977dd6b25e90aae848a163dc296ae8448c64310d3/sec-clayton-excerpt-2026-11-09.txt",
+   "sha256": "49b463337a5d37e8e1b6a56977dd6b25e90aae848a163dc296ae8448c64310d3",
+   "checkedAt": "2026-11-09",
+   "refreshWhen": "rule, form or page change at the cited body",
+   "scope": "primary-source capture used by the approved briefs"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/22f45649106d7d5cb55a278b9632333abaaa2761a52bd723191da4e45115a8d8/www.finra.org_investors_investing_investment-accounts_brokerage-accounts_account-transfers",
+   "sha256": "22f45649106d7d5cb55a278b9632333abaaa2761a52bd723191da4e45115a8d8",
+   "checkedAt": "2026-11-10",
+   "refreshWhen": "rule, form or page change at the cited body",
+   "scope": "primary-source capture used by the approved briefs"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/8afe23f0fa40bb14922d7f9450a898b9623b04226cced16c867cafc45fa15530/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_investor-bulletins-45",
+   "sha256": "8afe23f0fa40bb14922d7f9450a898b9623b04226cced16c867cafc45fa15530",
+   "checkedAt": "2026-11-10",
+   "refreshWhen": "rule, form or page change at the cited body",
+   "scope": "primary-source capture used by the approved briefs"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/953e89fd695e8cd41b47b9fc76382e695de82d904f09d46dc2fe0c657e8086d7/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_investor-bulletins-71",
+   "sha256": "953e89fd695e8cd41b47b9fc76382e695de82d904f09d46dc2fe0c657e8086d7",
+   "checkedAt": "2026-11-10",
+   "refreshWhen": "rule, form or page change at the cited body",
+   "scope": "primary-source capture used by the approved briefs"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/9586a28f2f160f3c3afdfb5589cfcd0ff2c94c2e8a555b67ca0e02d30bc53b79/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_subscription-based-advisory-fees",
+   "sha256": "9586a28f2f160f3c3afdfb5589cfcd0ff2c94c2e8a555b67ca0e02d30bc53b79",
+   "checkedAt": "2026-11-10",
+   "refreshWhen": "rule, form or page change at the cited body",
+   "scope": "primary-source capture used by the approved briefs"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/022592e5e1ce0485059a3d0318ca0c2d90c3071e6b2eec9b5e40bfd7f5477068/www.investor.gov_introduction-investing_getting-started_investing-your-own",
+   "sha256": "022592e5e1ce0485059a3d0318ca0c2d90c3071e6b2eec9b5e40bfd7f5477068",
+   "checkedAt": "2026-11-10",
+   "refreshWhen": "rule, form or page change at the cited body",
+   "scope": "primary-source capture used by the approved briefs"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/527060a93bc96c0c3a9cf3c764724cc66a9801a8afcb19d3b9d9e881759a7a51/www.investor.gov_introduction-investing_getting-started_working-investment-professional",
+   "sha256": "527060a93bc96c0c3a9cf3c764724cc66a9801a8afcb19d3b9d9e881759a7a51",
+   "checkedAt": "2026-11-10",
+   "refreshWhen": "rule, form or page change at the cited body",
+   "scope": "primary-source capture used by the approved briefs"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/ffda7445ecd73d962912bb3ead41eca63f60c2bd345b4af5908368d646816d38/www.investor.gov_introduction-investing_getting-started_working-investment-professional_investment-advisers",
+   "sha256": "ffda7445ecd73d962912bb3ead41eca63f60c2bd345b4af5908368d646816d38",
+   "checkedAt": "2026-11-10",
+   "refreshWhen": "rule, form or page change at the cited body",
+   "scope": "primary-source capture used by the approved briefs"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/55da2b2c1ddf24be8c7e3b67f360c0da0adfc17dfe0f9968a5836756fac10ed3/www.investor.gov_introduction-investing_investing-basics_glossary_form-adv",
+   "sha256": "55da2b2c1ddf24be8c7e3b67f360c0da0adfc17dfe0f9968a5836756fac10ed3",
+   "checkedAt": "2026-11-10",
+   "refreshWhen": "rule, form or page change at the cited body",
+   "scope": "primary-source capture used by the approved briefs"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/7130d5ef7c6566807b7fed84fc2eb5360a88a8d0d55db936e360064e8a0192f9/www.irs.gov_retirement-plans_plan-participant-employee_rollovers-of-retirement-plan-and-ira-distributions",
+   "sha256": "7130d5ef7c6566807b7fed84fc2eb5360a88a8d0d55db936e360064e8a0192f9",
+   "checkedAt": "2026-11-10",
+   "refreshWhen": "rule, form or page change at the cited body",
+   "scope": "primary-source capture used by the approved briefs"
+  }
+ ],
+ "findings": [
+  {
+   "id": "chart-review-round1-CR1-CR10",
+   "status": "resolved",
+   "evidence": "Round 1 FAIL findings resolved in revision 2; round 2 PASS (chart-review.json)."
+  },
+  {
+   "id": "phase4-advisory-a",
+   "status": "open",
+   "evidence": "Round 1 FAIL findings resolved in revision 2; round 2 PASS (chart-review.json)."
+  },
+  {
+   "id": "phase4-advisory-b",
+   "status": "open",
+   "evidence": "Chart review: Clayton excerpt verified only for the duty of care/loyalty and Regulation Best Interest best-interest quotes; do not rely on the four component obligations."
+  },
+  {
+   "id": "phase4-advisory-c",
+   "status": "open",
+   "evidence": "A4 must not restate the flat-fee vs AUM comparison; A1 must not conflict with the worth-it H2 or restate what-is-a-robo-advisor; A3 must not be a restatement of the RIA and conflicts sections (defer and remove links otherwise)."
+  },
+  {
+   "id": "writer-note-1",
+   "status": "open",
+   "evidence": "All four drafts were written by the gemini-3.8-flash FALLBACK (Anthropic keys have no credit); meta.json records fallback_used true. Claim checks left flags in meta.guards (A1: \"Negotiated by contract\"; A3: \"This annual disclosure ensures clients stay informed...\"); known tells to verify: A1 \"the platform\", \"essential\"; A2 table cells \"Not published\" and step 3 \"before contacting your current firm\"; A2 intro second paragraph; experience framing \"In the guides we publish here, we find...\"; A3 FAQ \"Is Form ADV annual?\" must stay within the bulletin statement."
+  },
+  {
+   "id": "writer-note-2",
+   "status": "open",
+   "evidence": "A1 comparison has two option columns (robo vs human RIA); the broker or dual-registrant condition is in the standard-of-conduct row and section 5 instead of a third column (template supports a and b only). Inbound edits: 4 declared one-sentence insertions (worth-it, what-is-a-robo-advisor, conflicts guide, how-to-choose) and 4 existing-anchor links (RIA guide x2, conflicts guide, wealth-manager comparison); no updated-date change; see src-candidate.diff and inspections."
+  },
+  {
+   "id": "A1-F1",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/robo-advisor-vs-financial-advisor.findings.txt."
+  },
+  {
+   "id": "A1-F2",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/robo-advisor-vs-financial-advisor.findings.txt."
+  },
+  {
+   "id": "A1-F3",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/robo-advisor-vs-financial-advisor.findings.txt."
+  },
+  {
+   "id": "A1-F4",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/robo-advisor-vs-financial-advisor.findings.txt."
+  },
+  {
+   "id": "A1-F5",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/robo-advisor-vs-financial-advisor.findings.txt."
+  },
+  {
+   "id": "A1-F6",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/robo-advisor-vs-financial-advisor.findings.txt."
+  },
+  {
+   "id": "A1-F7",
+   "status": "open",
+   "evidence": "Round 1 required-minor finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/robo-advisor-vs-financial-advisor.findings.txt."
+  },
+  {
+   "id": "A2-F1",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/when-to-switch-financial-advisors.findings.txt."
+  },
+  {
+   "id": "A2-F2",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/when-to-switch-financial-advisors.findings.txt."
+  },
+  {
+   "id": "A2-F3",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/when-to-switch-financial-advisors.findings.txt."
+  },
+  {
+   "id": "A2-F4",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/when-to-switch-financial-advisors.findings.txt."
+  },
+  {
+   "id": "A2-F5",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/when-to-switch-financial-advisors.findings.txt."
+  },
+  {
+   "id": "A2-F6",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/when-to-switch-financial-advisors.findings.txt."
+  },
+  {
+   "id": "A2-F7",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/when-to-switch-financial-advisors.findings.txt."
+  },
+  {
+   "id": "A3-F1",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/how-to-read-form-adv.findings.txt."
+  },
+  {
+   "id": "A3-F2",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/how-to-read-form-adv.findings.txt."
+  },
+  {
+   "id": "A3-F3",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/how-to-read-form-adv.findings.txt."
+  },
+  {
+   "id": "A3-F4",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/how-to-read-form-adv.findings.txt."
+  },
+  {
+   "id": "A3-F5",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/how-to-read-form-adv.findings.txt."
+  },
+  {
+   "id": "A3-F6",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/how-to-read-form-adv.findings.txt."
+  },
+  {
+   "id": "A3-F7",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/how-to-read-form-adv.findings.txt."
+  },
+  {
+   "id": "A3-F8",
+   "status": "open",
+   "evidence": "Round 1 required-minor finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/how-to-read-form-adv.findings.txt."
+  },
+  {
+   "id": "A4-F1",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/what-is-investment-management.findings.txt."
+  },
+  {
+   "id": "A4-F2",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/what-is-investment-management.findings.txt."
+  },
+  {
+   "id": "A4-F3",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/what-is-investment-management.findings.txt."
+  },
+  {
+   "id": "A4-F4",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/what-is-investment-management.findings.txt."
+  },
+  {
+   "id": "A4-F5",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/what-is-investment-management.findings.txt."
+  },
+  {
+   "id": "A4-F6",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/what-is-investment-management.findings.txt."
+  },
+  {
+   "id": "A4-F7",
+   "status": "open",
+   "evidence": "Round 1 blocker finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/what-is-investment-management.findings.txt."
+  },
+  {
+   "id": "A4-F8",
+   "status": "open",
+   "evidence": "Round 1 required-minor finding; correction applied in the round-2 candidate (content_gen.py fix, mechanical deletions or auditor-supplied text); awaiting independent recheck. See audit/what-is-investment-management.findings.txt."
+  },
+  {
+   "id": "E1-F1",
+   "status": "open",
+   "evidence": "Option (b) applied: the inserted link sentence was removed from /guides/financial-advisor-worth-it/ (page restored to HEAD content, no date change); the A1 brief placement from worth-it is therefore not delivered, leaving one inbound link to A1 (from what-is-a-robo-advisor); awaiting independent recheck."
+  },
+  {
+   "id": "round2-note-1",
+   "status": "open",
+   "evidence": "content_gen fix was run once per page (the repair budget allows one paid repair per failed review report). Items the fix reported NOT FIXABLE IN PLACE or left flagged were handled by mechanical deletions only; leftovers the auditor should recheck: A1 verdict sentence still says both models \"fit a reader\" with a semicolon in the registration sentence, A1 FAQ 1 phrase \"who do not require personal financial planning\", A2 FAQ 1 first answer, A4 flagged claim \"A wealth manager generally adds tax and estate coordination\" and \"Check any broker you use on FINRA BrokerCheck\", A3 flagged \"Broker-only professionals file with FINRA, not Form ADV\". Additional facts from the same saved captures were appended to the row prompts under ADDITIONAL FACTS (correction round 1)."
+  },
+  {
+   "id": "round2-note-2",
+   "status": "open",
+   "evidence": "A1 comparison: the \"Side-by-Side Comparison of Advisory Models\" section and the \"Our Takeaway\" section were deleted per A1-F3/A1-F4; the rendered-manifest requiredText for A1 no longer lists \"Our Takeaway\"."
+  },
+  {
+   "id": "round2-note-3",
+   "status": "open",
+   "evidence": "Durable review checkpoint: reserve/record print BLOCKED (Review dependency changed before checkpoint: reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/rendered-snapshot.json) because the prior-run journals 1c5db2be... and 43ac32f5... recorded hash 11106643... for that path while the file now holds 162002c0...; both versions exist as immutable blobs in the 2026-11-09 run; nothing was altered."
+  }
+ ],
+ "reviewCounters": {
+  "reviews": 1,
+  "reworks": 1
+ }
+}

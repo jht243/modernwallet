@@ -1,0 +1,33 @@
+{
+ "reviewer": "mindmap-auditor-p4",
+ "verdict": "PASS",
+ "packetSha256": "f44594ab600e1bb9fca514da9dc8eacf5ca8d51766ff77c7902ce67fea95d0eb",
+ "usefulness": {
+  "status": "PASS",
+  "evidence": "Round-3 render gives the ordered procedure from FINRA and the IRS with the contract, nontransferable-asset and fee conditions stated and no unsupported ordering claim."
+ },
+ "sourceAndAssumptions": {
+  "status": "PASS",
+  "evidence": "Every statistic and definition re-traced to the saved primary captures (SEC Form ADV, robo and subscription-fee bulletins, Investor.gov advisers/CRS/working-with pages, FINRA transfers, IRS rollovers) in round 3; basis reported, no model inputs."
+ },
+ "conditionsAndCounterexample": {
+  "status": "PASS",
+  "evidence": "Strongest primary-source counterexamples are stated on the page: small-balance flat fees (A1, A4), termination or nontransferable-asset limits (A2), unregistered or broker-only professionals and negotiated fees (A3)."
+ },
+ "renderedConsistency": {
+  "status": "PASS",
+  "evidence": "Opening answer, tables, FAQs and takeaway agree in the round-3 render; no semicolon, restatement or unsupported-claim residue."
+ },
+ "localExclusions": {
+  "status": "PASS",
+  "evidence": "TESTED excluded for financial services; no testing claims or fallback disclosure in text, metadata or schema."
+ },
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/projection-r3.snapshot.json",
+  "sha256": "1092747aa88cbc0b295b7260601deccc7dc40eef80fa47f8d5f375bdcf5e9664"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/projection-r3.review.json",
+  "sha256": "b78fe8cb85cb2d16778ef2d045efa23fa92a646b0de3486ee9eee46537705991"
+ }
+}

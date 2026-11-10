@@ -1,0 +1,104 @@
+{
+ "reviewer": "mindmap-chart-reviewer-7c41",
+ "verdict": "PASS",
+ "jobId": "competitor-18b9b55e45cc",
+ "manifestSha256": "5bba9b05717448e82a86a467c8396409022c285addbb11039cd629778d679baf",
+ "readinessSha256": "17e982fc1c2695d7e226f9086d10d2bad12f6a79b307d2ea3aad3a1ab12f54b4",
+ "round": 2,
+ "evidence": "Round 2 independent re-review by mindmap-chart-reviewer-7c41 (retained context, own bundle) against the actual revision-2 artifacts, not the builder summary. CR1 resolved: investor-bulletins-71 capture exists and states Part 2A has 18 disclosure items, Part 2B six items (education, five years of experience, discipline), 10-year presumed-material discipline, annual summary of material changes, Part 1 content, and the named 2A items (advisory business incl. amount of client assets managed, fees and compensation, performance-based fees, methods of analysis, code of ethics, brokerage practices); 'custody-type' dropped, reading order labeled editorial. CR2/CR3 resolved by flipping to create: A4 /guides/what-is-investment-management combines both candidates; one page, shared target is a disposition-level duplication only (validate-chart does not read candidateDispositions); I re-verified no existing page defines investment management or AUM as a concept. CR4 resolved: remaining anchors in existing text are present in section and page (Form ADV Part 2 commonly called the brochure; Form ADV Part 2 (the brochure); percentage of assets under management; investment management); four cross-link sentences are explicitly declared minimal body insertions in the inspection files with a rendered re-capture requirement and isolation rule. CR5 resolved: A1 now conditions duty of care on registration type, cites SEC chairman statement (I independently re-fetched sec.gov and confirmed the care/loyalty and broker-dealer best-interest quotes) and Form CRS capture, links /guides/what-is-a-fiduciary/. CR6 resolved: saved sweeps now contain 'are robo advisors better than financial advisors', 'is a robo advisor a good idea', 'robo advisor vs financial planner'; A3/A4 FAQ rows found in saved CSVs. CR7 resolved: page-specific whyNewPage, bands, tables; readiness has no open items. CR8 duplicate decision recorded in A1 whyNewPage (create, conditional on Phase 4 overlap check vs worth-it H2 and what-is-a-robo-advisor). CR10 reworded. Unchanged confirmations: 10/10 dispositions; HIGH profile; TESTED excluded, basis reported, no invented tests; keyword data labeled estimates NOT measured; SERP/PAA unread. Residual advisory notes for Phase 4: (a) sec-clayton-excerpt capture says 'independently re-fetched by the chart reviewer'; this reviewer verified only the two quoted phrases above, not the four component obligations, so do not rely on that line beyond them; (b) A4 must not restate the flat-fee vs AUM comparison; (c) A1/A3 overlap checks as stated in whyNewPage; (d) touched existing pages need rendered re-audit. No PASS defaults generated; hashes bind this PASS to the reviewed manifest and readiness.",
+ "history": [
+  {
+   "round": 1,
+   "verdict": "FAIL",
+   "manifestSha256": "145440d612af19103c6d7cd2742dd6f766ea2644059e3acfcae2b5d3d5f219d7",
+   "readinessSha256": "061a3728eacb58ee27ee25e96c5f30ddfc4461462775deb4aa9afd1ce1a0a174",
+   "evidence": "Independent chart-preparation review by mindmap-chart-reviewer-7c41 (context chartrev7c41ctx, epoch 1, own bundle preflight-chartreview, 31/31 parts read, check=delivery-complete-sources-current). Verified: all 10 intake URLs have a candidateDispositions row (10/10, URLs match intake). Verified existing pages in src/data/guides.ts and comparisons.ts by slug and heading: RIA skip is a true duplicate (what-is-a-registered-investment-advisor has 'How to Check an RIA', 'How RIAs Make Money', FAQ). fee-only vs fee-based skip accepted (conflicts guide has dedicated H2, FAQ and metaDescription for the phrase). Investment management and AUM skips rejected as duplicates (CR2, CR3). Financial therapist and first-meeting skips are legitimate (mental-health-adjacent with no primary-source/professional-review path; first-person story with reader intent covered by questions-to-ask). LGBTQ-supportive skip is defensible (no objective primary-source ranking) but its est. 500-5000 band is the highest in the file; a non-ranking vetting guide was not considered, record as deferred. Sources: all 17 captures are real investor.gov/finra/irs/adviserinfo pages fetched 2026-11-10; quote-checked $3/$5/$10 subscription example, bionic hybrid, burden to update, robo advisers must comply as registered advisers, Form ADV parts text, FINRA TIF and 3-4 business days, IRS one-per-year exemption and trustee-to-trustee withholding: all present. Form ADV Part 2A/2B not present (CR1). HIGH profile for YMYL confirmed in content-review-policy.json (minimumProfile high). TESTED correctly excluded: no testing-policy.json, _experience.md section G excludes financial services, basis 'reported' on all three, no invented tests, attribution third-person. Keyword evidence is honestly labelled autocomplete estimate NOT measured (keyword-volumes.json, semrush/dataforseo unavailable); SERP/PAA honestly 'unread'. Verdict FAIL: seven blocking findings (CR1-CR7) must be corrected in the manifest/evidence/readiness and re-reviewed; advisory CR8-CR10 recorded. Hashes below bind this FAIL to the manifest and readiness as reviewed; no PASS was generated.",
+   "findings": [
+    {
+     "id": "CR1",
+     "severity": "blocking",
+     "target": "/guides/how-to-read-form-adv",
+     "finding": "Central claims about Form ADV Part 2A and Part 2B (outline sections 2-4, answer, takeaway, meta description, FAQ, 'strictly from the investor.gov Form ADV glossary') are not supported by the saved captures. The Form ADV glossary capture contains no 'Part 2A', 'Part 2B', 'supplement' or 'custody' text (grep of all 17 captures: 'Part 2A' appears only once, in the subscription-fees bulletin, unrelated to ADV contents; INV-advisers mentions 'brochure supplement' only as a question to ask). Answer text also asserts Part 1 shows 'custody-type' data, which no source says. Evidence packet itself says no item numbers/sub-parts beyond sources are asserted, contradicting the brief.",
+     "required": "Fetch and capture a primary source that actually describes Part 2A/2B (candidate: investor.gov 'Investor Bulletin: Form ADV' /alerts-bulletins/investor-bulletins-71, or the SEC Part 2 instructions at sec.gov/about/forms/formadv-part2.pdf; I could not fetch them, 403), add it to sources.md/evidence.json/evidenceFiles with hashes, and quote-check each Part 2A/2B/Part 1 statement against it; otherwise narrow the brief to 'Part 2 brochure and brochure supplement' wording the captures support and drop 'custody-type'. Label the recommended reading order as editorial judgment, not a regulator statement."
+    },
+    {
+     "id": "CR2",
+     "severity": "blocking",
+     "target": "candidateDispositions: what-is-investment-management",
+     "finding": "skipped-duplicate target /guides/what-does-a-financial-advisor-do/ does not cover the intent: that page's record contains zero occurrences of 'investment management' or 'AUM' (its H1 is advisor vs credit counselor). /compare/financial-advisor-vs-wealth-manager only lists 'investment management' as a table row. No page defines investment management, explains DIY vs hiring a manager as a definitional decision, or says when to hire one. Own keyword file also rates 'what is investment management' est. 500-5000 (autocomplete band, NOT measured), above all three chosen pages.",
+     "required": "Correct the disposition. Either (a) add it as a create row with full brief/evidence, or (b) record an honest non-duplicate disposition (skipped-low-value / deferred) whose reason does not claim existing coverage, e.g. definitional head term, no primary-source research done this run, partially served by financial-advisor-worth-it (DIY vs hire) and the wealth-manager comparison. The decision to not build this run is acceptable if truthfully labelled; a false 'duplicate' pointer is not (competitor ledger would treat the topic as covered)."
+    },
+    {
+     "id": "CR3",
+     "severity": "blocking",
+     "target": "candidateDispositions: aum-assets-under-management",
+     "finding": "Reason 'AUM fee mechanics and costs covered in depth' answers a different intent. /compare/flat-fee-vs-aum-based-financial-advisors covers AUM as a fee model (crossover, tiers, conflicts) and defines it only inline as 'percentage of the assets they oversee'; no page answers 'what is AUM in finance / how is it used' (RIA guide uses regulatory AUM only for registration thresholds). Own keyword file rates 'what is aum in finance' est. 250-2500, higher than how-to-read-form-adv (10-100).",
+     "required": "Same as CR2: create it, or relabel truthfully (the fee-mechanics half is covered; the definitional half is not) and do not mark the whole candidate as covered/duplicate. If kept as skipped-duplicate, narrow the reason to the fee-model intent and record the uncovered definitional intent as deferred."
+    },
+    {
+     "id": "CR4",
+     "severity": "blocking",
+     "target": "all three briefs: inboundLinks",
+     "finding": "Four of six inbound placements use anchor text that does not exist in the named source section or page record: what-is-a-robo-advisor 'robo-advisor vs financial advisor'; conflicts guide 'switching advisors' (section only mentions switching a product) and 'Form ADV Part 2A' (page says 'Form ADV Part 2'); how-to-choose-a-financial-advisor 'switching financial advisors'. The inspection files show headings plus one loosely related sentence, not the anchor sentence, so link feasibility is not evidenced. Execution plan says these are link-only edits with no date bump, which is false if new sentences are needed (a body edit on YMYL pages that then needs its own review).",
+     "required": "For each placement, either anchor on words already present (e.g. what-is-a-robo-advisor opening sentence 'compares a robo-advisor with a human advisor'; conflicts guide 'Form ADV Part 2 (the brochure)'), or declare the exact inserted sentence as a minimal body edit with its review/date implications. Regenerate inspection files so they quote the real anchor sentence and re-hash. Note A2 and A3 link to each other and A3/A1 depend on routes in this run: record that a deferred page's links must be removed (isolation rule)."
+    },
+    {
+     "id": "CR5",
+     "severity": "blocking",
+     "target": "/compare/robo-advisor-vs-financial-advisor",
+     "finding": "Section 5 'Duty of Care Is the Same', the finding, and 'rather than on which is regulated' hold only if the human is a registered investment adviser. Many people titled 'financial advisor' are broker-dealer representatives or dual registrants under a different standard (existing pages what-is-a-fiduciary, what-does-a-financial-advisor-do say so). Conditions/whatWouldChange omit this strongest counterexample, and no outbound link to /guides/what-is-a-fiduciary/ is planned. The Reg BI and fiduciary glossary captures extracted empty, and neither is cited in A1 sources.md.",
+     "required": "Add the broker-dealer/dual-registrant condition to conditions, whatWouldChange, takeaway and section 5 heading/purpose; cite a primary source that was actually read for that standard (re-capture the Reg BI/fiduciary pages properly); add outbound link to /guides/what-is-a-fiduciary/."
+    },
+    {
+     "id": "CR6",
+     "severity": "blocking",
+     "target": "/compare/robo-advisor-vs-financial-advisor",
+     "finding": "FAQ and evidence claimed 'verbatim from sweep' are not in the saved sweep: autocomplete.robo-advisor-vs-financial-advisor.csv has only 9 rows; 'Is a robo-advisor better than a financial advisor?', 'Can I use both?' and 'difference between a robo-advisor and a financial planner' are absent (closest: 'robo advisor vs financial planner', 'are robo advisors good'). No question-prefix sweep with broader coverage is saved for this head.",
+     "required": "Either run/save a real question sweep for the head and cite rows, or restrict FAQ specs to phrases present in the CSV and label other questions as editorial."
+    },
+    {
+     "id": "CR7",
+     "severity": "blocking",
+     "target": "manifest briefs and readiness.md",
+     "finding": "whyNewPage in all three briefs only points to 'action row A#', coverage.txt and says the duplicate decision is 'to be recorded in chart-review.json'; this is the placeholder pattern the contract forbids. keywordEvidence omits the actual estimate bands (A1 75-750, A2 75-750, A3 10-100, supporting 'form adv' 50-500) and check date/country. tablesToolsVisuals is an identical generic sentence on all three pages and A2's outline names no table. contributionAndEvidence is near-identical across pages. readiness.md still says 'reviewer to confirm' and lists open items, so it is not completed preparation evidence.",
+     "required": "Write page-specific whyNewPage (routes, what each existing page's reader does, why not enough, git-dedup result, my decision below), real bands from keyword-volumes.json, page-specific table fields (or N/A with reason for A2), and update readiness.md to record this review's decisions and remove open items. Re-hash manifest and readiness afterwards."
+    },
+    {
+     "id": "CR8",
+     "severity": "advisory",
+     "target": "/compare/robo-advisor-vs-financial-advisor",
+     "finding": "Duplicate review decision: KEEP as create, conditionally. Existing coverage is real: financial-advisor-worth-it has an H2 'Robo-advisor vs. financial advisor: a quick side-by-side' with a pick and boundary, and what-is-a-robo-advisor 'Who a Robo-Advisor Does Not Fit' has a fit table and says it 'compares a robo-advisor with a human advisor'; both rest on the same SEC bulletin. A dedicated /compare/ page is justified only as the head-to-head decision format (table on contact, pay, scope, standard of conduct) for the 'robo advisor vs financial advisor' query (est. 75-750), not as a restatement. Risk of cannibalization and of contradicting the existing H2's unsourced '0.25% vs 1%' figures. Also inconsistent with the fee-only vs fee-based skip (dedicated H2 + FAQ + metadata already target that phrase); I accept that skip because the conflicts guide targets the phrase in title/meta/FAQ, but whyNewPage must explain the difference.",
+     "required": "State in whyNewPage the distinct decision value and that the page adds no price claims that conflict with the worth-it H2; the Phase 4 reviewer should check overlap with both pages."
+    },
+    {
+     "id": "CR9",
+     "severity": "advisory",
+     "target": "/guides/how-to-read-form-adv",
+     "finding": "Duplicate review decision: genuine gap in intent (item-level 'how to read it'), but existing pages (RIA guide 'How to Check an RIA', conflicts guide 'How to Verify Advisor Disclosures', questions-to-ask 'Public Record Checks', fiduciary guide) already carry the Part 1/2/CRS one-liners. The new page earns its URL only if CR1 yields real Part 2A/2B content; with current sources it would be a restatement. Demand evidence is the weakest of the three (10-100 estimate).",
+     "required": "Resolved by CR1; if CR1 cannot be met, flip to skipped-duplicate against the RIA guide."
+    },
+    {
+     "id": "CR10",
+     "severity": "advisory",
+     "target": "/guides/when-to-switch-financial-advisors",
+     "finding": "Answer states 'ACATS for brokerage, trustee-to-trustee for IRAs'. FINRA capture says custodial accounts such as IRAs move through the same transfer process, only slower; trustee-to-trustee is the IRS tax category. Also IRS capture supports the one-per-year exemption explicitly; the '60-day' exemption for direct transfers is an inference from the rollover rules and should be worded as the IRS words it. Brief claims advisory agreement terms are in 'Form ADV Part 2' (the sources say Part 2 covers fees/conflicts, the contract governs termination).",
+     "required": "Reword in the brief/writer facts; no source change needed."
+    }
+   ],
+   "dispositionDecisions": {
+    "https://www.nerdwallet.com/financial-advisors/learn/what-is-investment-management": "FLIP: not a duplicate (CR2)",
+    "https://www.nerdwallet.com/financial-advisors/learn/fee-only-vs-fee-based-planners": "CONFIRMED skipped-duplicate",
+    "https://www.nerdwallet.com/financial-advisors/learn/financial-advisor-vs-robo-advisor": "CONFIRMED create, conditional (CR5, CR6, CR8)",
+    "https://www.nerdwallet.com/financial-advisors/learn/change-financial-advisors": "CONFIRMED create (CR4, CR10)",
+    "https://www.nerdwallet.com/financial-advisors/learn/form-adv": "CONFIRMED create only if CR1 is met (CR9)",
+    "https://www.nerdwallet.com/financial-advisors/learn/how-financial-therapist-shift-your-money-mindset": "CONFIRMED skipped-low-value",
+    "https://www.nerdwallet.com/financial-advisors/learn/how-to-find-lgbtq-financial-advisor": "CONFIRMED skipped-low-value (reason should say deferred, not unverifiable)",
+    "https://www.nerdwallet.com/financial-advisors/learn/registered-investment-advisor": "CONFIRMED skipped-duplicate",
+    "https://www.nerdwallet.com/financial-advisors/learn/what-i-learned-from-my-first-meeting-with-a-financial-advisor": "CONFIRMED skipped-low-value",
+    "https://www.nerdwallet.com/financial-advisors/learn/aum-assets-under-management": "FLIP: not a full duplicate (CR3)"
+   },
+   "reviewer": "mindmap-chart-reviewer-7c41",
+   "jobId": "competitor-18b9b55e45cc"
+  }
+ ]
+}

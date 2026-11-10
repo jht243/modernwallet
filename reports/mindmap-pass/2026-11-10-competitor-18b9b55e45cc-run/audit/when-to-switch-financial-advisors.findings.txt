@@ -1,0 +1,35 @@
+A2-F1 [blocker] where: Intro sentence 2 and intro paragraph 2
+quote: In the guides we publish here, we find that the cleanest transition happens when you keep the process in order:
+defect: Invented finding. No packet record or approved case supports a "we find" observation; the evidence basis is reported (regulator pages). The second intro paragraph ("You can have your financial institution or plan directly transfer the payment, whereas rolling over a distribution paid to you requires depositing funds within 60 days...") is an abrupt IRS aside before the reader has the answer; it duplicates the "Retirement Money" section.
+fix: Replace sentence 2 with: "Move in this order: read your contract's termination terms, check the new adviser on IAPD, open the account at the receiving firm, and let that firm start the transfer so you do not sell holdings or take a check yourself." Delete intro paragraph 2 entirely.
+
+A2-F2 [blocker] where: Numbered step 3 and step table row 3
+quote: Open your new account at the receiving institution before contacting your current firm.
+defect: Unsupported step. FINRA (capture account-transfers-22f4) says the transfer starts when you send the Transfer Initiation Form to the receiving firm; nothing says to avoid contacting the current firm first, and the page's own step 1 and contract section say termination terms may require notice. Table cells for rows 3 and 5 read "Not published" (claim-check residue): "What to check: Not published" is meaningless and the Source column cites FINRA for it.
+fix: Step 3: "Open your new account at the receiving firm." Table row 3 "What to check": "Ask the receiving firm about policies or constraints that could affect the transfer" (FINRA transfer tips). Row 5 "What to check": "Whether either firm freezes trading during the transfer" (FINRA: some firms freeze the account).
+
+A2-F3 [blocker] where: FAQ "Does it cost money to switch financial advisors?"
+quote: Regulatory guidance publishes no standard fee to switch financial advisors. The sources read state no standard charge; check your contract and ask both firms.
+defect: Universal negative inferred from source silence (FINRA, Investor.gov and IRS captures say nothing about fees), narrated as "sources read" meta-text, and inconsistent with the page's own "Termination charges can change the answer" and the packet condition "termination charges ... not established". A reader could conclude that switching is free.
+fix: Answer: "It can. Your advisory contract sets the fees and terms (Investor.gov), so read its termination terms and ask both the current and the receiving firm what they charge before you start. The sources we read list no standard switching fee."
+
+A2-F4 [blocker] where: FAQ "Is it hard to switch financial advisors?"
+quote: By completing a Transfer Initiation Form with your new receiving firm, most broker-dealer accounts move directly through ACATS in about three to four business days without requiring you to manage individual sales.
+defect: Does not answer the question in sentence 1 (the claim check deleted the original opener). "without requiring you to manage individual sales" overgeneralizes (nontransferable assets, IRAs and bank/fund sources differ).
+fix: Answer: "It is a short procedure when your assets can move as they are. You complete a Transfer Initiation Form with the receiving firm, and most broker-dealer accounts then move through ACATS in about three to four business days. Accounts at banks, credit unions or fund companies, and IRAs, take longer, and the receiving firm can refuse nontransferable assets."
+
+A2-F5 [blocker] where: Section "How the Account Moves", step-1 recap, last section
+quote: Transferring your portfolio does not require you to liquidate your investments or mail paper checks between firms.
+defect: Overclaim that contradicts the same section (nontransferable proprietary assets) and the IRS page (a check payable to your new account is one direct-rollover method). Also "Following this sequence ensures that your new custodian requests your assets directly" and "Reviewing your holdings and contract terms with both firms beforehand ensures you avoid unintended costs or portfolio freezes" promise outcomes no source gives.
+fix: Replace with: "Most customer accounts move between broker-dealers through an automated process called ACATS, and cash, stocks, bonds and listed options are readily transferable that way." Replace "ensures..." sentences with "In this order the receiving firm requests your assets from the delivering firm." and "Asking both firms about your holdings and contract terms beforehand shows you costs and trading freezes before they surprise you."
+
+A2-F6 [blocker] where: Step table row 6 and takeaway
+quote: 6. Confirm closure | Both firms and client | Delivery of positions | Investor.gov advisory guidance
+defect: Mis-sourced and mislabeled. Investor.gov does not describe delivery confirmation; FINRA says to find out how the firm informs you the transfer is complete; "closure" was removed from the numbered list by the claim check but remains in the table. The takeaway adds "protects your capital from administrative and operational headaches" (unsourced outcome).
+fix: Row 6: "6. Confirm completion | Both firms and client | How each firm tells you the transfer is complete | FINRA transfer rules". Delete the "protects your capital..." clause from the takeaway.
+
+A2-F7 [blocker] where: Title, H2 1, AI tells
+quote: When to Switch Financial Advisors and How to Do It
+defect: Headline two-clause formula in the SEO title and in H2 "When to Switch Financial Advisors and the Steps to Do It in Order". Body tells: "Here is our suggested order to execute the switch cleanly:" (signpost), "critical filings", "acting in the correct technical order protects your portfolio from unnecessary selling and settlement freezes" (unsourced promise), "Asset-based fees may cost more than transaction-based fees, but they suit ongoing portfolio monitoring" (Form CRS says you "may prefer" an asset-based fee if you want ongoing advice).
+fix: Title: "When and How to Switch Financial Advisors Step by Step" (54 chars). H2: "The Steps to Switch Financial Advisors in Order". Replace "Here is our suggested order to execute the switch cleanly:" with "Our suggested order:". Replace "three critical filings" with "three filings". Replace the "protects your portfolio" sentence with "In this order the receiving firm, not you, requests the assets." Rewrite the fee bullet to the Form CRS wording.
+

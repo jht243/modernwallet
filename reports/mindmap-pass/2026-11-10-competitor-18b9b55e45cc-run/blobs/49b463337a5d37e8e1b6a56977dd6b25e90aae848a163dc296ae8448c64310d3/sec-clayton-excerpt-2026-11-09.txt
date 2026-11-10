@@ -1,0 +1,5 @@
+URL: https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty
+Fetched: 2026-11-09 (WebFetch; curl returns a 403 rate-limit stub). Verbatim quoted phrases returned and independently re-fetched by the chart reviewer:
+- Date: July 8, 2019, speech by Chairman Jay Clayton.
+- The investment adviser fiduciary duty is "comprised of both a duty of care and a duty of loyalty".
+- Regulation Best Interest "imposes a new standard of conduct specifically for broker-dealers", requiring them to act in the "best interest of their retail customers", with four component obligations: Disclosure, Care, Conflict of Interest, Compliance.

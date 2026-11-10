@@ -1,0 +1,107 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "mindmap-builder-ae12db",
+ "route": "/compare/robo-advisor-vs-financial-advisor",
+ "readerQuestion": "Should I use a robo-advisor or a human financial advisor? [PAA unavailable (SERP unread, no DataForSEO credentials); ac head sweep 4 sweeps, 38 unique completions saved; on-topic question forms: are robo advisors better than financial advisors / is a robo advisor a good idea / is robo advisor good / robo advisor or financial advisor / robo advisor vs financial planner; off-topic: a literature-review paper title]",
+ "origin": "competitor-monitor-auto 2026-11-10 (frozen intake 18b9b55e45cc)",
+ "demandSource": "Google Autocomplete (estimate, NOT measured); SEMRUSH and DataForSEO keys unavailable, SERP unread",
+ "decisionGap": "Readers asking this cannot get the primary-source answer and its conditions on this site; nearest pages answer neighbouring decisions (see whyNewPage in the manifest and coverage.txt).",
+ "finding": "The SEC describes robo-advisers as automated advisory programs that build a portfolio from an online questionnaire, often at lower cost and minimums but with human access from none to hybrid and recommendations limited to the information you provide; a registered human adviser adds conversation and wider planning at a different fee structure. A registered investment adviser, robo or human, owes the adviser fiduciary duty; a broker is held to Regulation Best Interest and dual registrants switch roles, so the choice turns on services, total cost, human access and the registration type of the specific person.",
+ "conditions": "US readers; investment advice about securities. The same-duty statement applies only where the human is a registered investment adviser; a broker-dealer representative or dual registrant may owe Regulation Best Interest instead. Banks, insurers and state-specific rules outside sources read; vendor fees only from existing dated site pages.",
+ "whatWouldChange": "The human being a broker or dual registrant acting as a broker for the account in question, a hybrid robo that offers a human adviser at your balance, or a change in SEC guidance or Regulation Best Interest.",
+ "basis": "reported",
+ "method": "Reported primary-source synthesis; no test or model.",
+ "whyNoQuantitativeAnalysis": "The reader decision is procedural or definitional and rests on regulator statements; no defensible numerical input exists beyond source figures, so arithmetic would only restate them.",
+ "reasoning": "From the saved primary pages in sources.md to the answer: The SEC describes robo-advisers as automated advisory programs that build a portfolio from an online questionnaire, often at lower cost and minimums but with human access from none to hybrid and recommendations limited to the information you provide; a registered human adviser adds conversation and wider planning at a different fee structure. A registered investment adviser, robo or human, owes the adviser fiduciary duty; a broker is held to Regulation Best Interest and dual registrants switch roles, so the choice turns on services, total cost, human access and the registration type of the specific person.",
+ "sourceArtifacts": [
+  {
+   "path": "evidence/robo-advisor-vs-financial-advisor/sources.md",
+   "sha256": "e206d2b7a2433c5e2e2c6609ed0c24a0d274e082d5ad1f88c6a703cd04d5d8f8"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_investor-bulletins-45",
+   "sha256": "8afe23f0fa40bb14922d7f9450a898b9623b04226cced16c867cafc45fa15530"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_subscription-based-advisory-fees",
+   "sha256": "9586a28f2f160f3c3afdfb5589cfcd0ff2c94c2e8a555b67ca0e02d30bc53b79"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.investor.gov_introduction-investing_getting-started_working-investment-professional_investment-advisers",
+   "sha256": "ffda7445ecd73d962912bb3ead41eca63f60c2bd345b4af5908368d646816d38"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/investor.gov_CRS-2026-11-09.txt",
+   "sha256": "183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/sec-clayton-excerpt-2026-11-09.txt",
+   "sha256": "49b463337a5d37e8e1b6a56977dd6b25e90aae848a163dc296ae8448c64310d3"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_investor-bulletins-71",
+   "sha256": "953e89fd695e8cd41b47b9fc76382e695de82d904f09d46dc2fe0c657e8086d7"
+  }
+ ],
+ "caseSelection": {
+  "path": "evidence/robo-advisor-vs-financial-advisor/cases.json",
+  "sha256": "02536c6fa93ec1dcf99b5853bd6e6c0ea1ae69806cb4263b270e7de9df283ae1"
+ },
+ "caseDecisions": "Approved-case lookup run for the exact reader question (cases.json). This site has no named-client claims in _experience.md; no case or client-conversation claim is used.",
+ "provenance": {
+  "basis": "reported",
+  "supportingRecordIds": [
+   "INV-robo-bulletin",
+   "INV-subscription",
+   "INV-advisers",
+   "INV-CRS",
+   "SEC-clayton",
+   "INV-bulletin-formadv"
+  ],
+  "scopeAndLimits": "US readers; investment advice about securities. The same-duty statement applies only where the human is a registered investment adviser; a broker-dealer representative or dual registrant may owe Regulation Best Interest instead. Banks, insurers and state-specific rules outside sources read; vendor fees only from existing dated site pages.",
+  "publicMethod": "Sources linked in-line and in a Sources list; third-person attribution to the named body beside each finding.",
+  "placement": "Opening section and Takeaway name the regulator as the basis; no \"we tested\" or modeling claim; editorial judgments labeled as such."
+ },
+ "sources": [
+  {
+   "id": "INV-robo-bulletin",
+   "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-45",
+   "checkedAt": "2026-11-10",
+   "scope": "SEC OIEA Investor Bulletin: Robo-Advisers (Feb. 23, 2017). Robo-adviser = automated digital investment advisory program; collects goals, horizon, income, other "
+  },
+  {
+   "id": "INV-subscription",
+   "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/subscription-based-advisory-fees",
+   "checkedAt": "2026-11-10",
+   "scope": "SEC OIEA Investor Bulletin on subscription-based advisory fees (Sept. 6, 2023): a set recurring fee, typically monthly; for a smaller robo-adviser account the f"
+  },
+  {
+   "id": "INV-advisers",
+   "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers",
+   "checkedAt": "2026-11-10",
+   "scope": "Investor.gov: investment advisers are required to act in your best interest and not put their interest ahead of yours; the way advisers make money creates confl"
+  },
+  {
+   "id": "INV-CRS",
+   "url": "https://www.investor.gov/CRS",
+   "checkedAt": "2026-11-09",
+   "scope": "Investor.gov/CRS (captured 2026-11-09): registered broker-dealers and registered investment advisers must provide a relationship summary (Form CRS) to retail in"
+  },
+  {
+   "id": "SEC-clayton",
+   "url": "https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty",
+   "checkedAt": "2026-11-09",
+   "scope": "SEC Chairman Clayton speech, July 8, 2019 (captured 2026-11-09; phrases re-fetched by a prior reviewer): the investment adviser fiduciary duty is comprised of a"
+  },
+  {
+   "id": "INV-bulletin-formadv",
+   "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71",
+   "checkedAt": "2026-11-10",
+   "scope": "SEC OIEA Investor Bulletin \"Form ADV - Investment Adviser Brochure and Brochure Supplement\" (June 24, 2016, updated Aug. 27, 2020). Form ADV is the uniform regi"
+  }
+ ],
+ "exclusions": "TESTED format excluded (financial services outside _experience.md section G; no executed tests).",
+ "unknowns": "Measured search volume, SERP and PAA unavailable; vendor-specific fees only from existing dated site pages.",
+ "selectedMedium": "text",
+ "mediumReason": "Procedural or definitional answer; a table carries the finite comparison; no calculator adds value."
+}

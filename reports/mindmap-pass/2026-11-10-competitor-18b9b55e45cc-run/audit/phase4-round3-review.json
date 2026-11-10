@@ -1,0 +1,483 @@
+{
+ "reviewer": "mindmap-auditor-p4",
+ "snapshotSha256": "331a7fb62646722a2d5340fbaf6a137fced715bd5dde54a354067e6c890b2407",
+ "jobId": "competitor-18b9b55e45cc",
+ "round": 3,
+ "routes": [
+  {
+   "path": "/compare/robo-advisor-vs-financial-advisor/",
+   "fingerprint": "c4e9230bc95631e39c1635cff0242370b05062c36a7bb90d928c61e4ed3bf7e4",
+   "verdict": "PASS",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/robo-advisor-vs-financial-advisor-round3-reservation.json",
+    "sha256": "8944517a7ba33d91dd357cbe24026c1d3094057ac71d1bb5a31f7617cb879bf2"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "8ce87126abd0d0c510dd8812f8172ddb61d5ca7095be66ba25880ed3b681a454",
+    "rationale": "Investment-adviser comparison with duty-of-care and cost claims; HIGH remains the floor.",
+    "consequentialClaims": [
+     {
+      "category": "investment",
+      "quote": "Fiduciary duty of care and loyalty",
+      "reason": "Investment-adviser comparison with duty-of-care and cost claims; HIGH remains the floor."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Round-2 A1-R2-1 resolved (unsourced \"low-cost for larger balances\" removed from intro and both FAQs; replaced by SEC wording \"often seek to offer lower costs\" plus the small-balance warning), A1-R2-2 resolved (0 semicolons, opener split), A1-R2-3 resolved (inbound links now from what-is-a-robo-advisor and how-to-choose). Opening answer, table, verdict and FAQs agree and carry the registration-type and small-balance conditions."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Cost, duty-of-care, hybrid and tax-loss-harvesting statements re-traced to captures 8afe23f0, 9586a28f, ffda7445, 183c0f08; Clayton dated July 2019; Regulation Best Interest linked."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing language anywhere; basis reported with SEC, Investor.gov, FINRA or IRS named beside findings; byline label is the site-wide template."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible date and Article dateModified match the intended source date; FAQPage JSON-LD matches visible FAQs, no raw markdown."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Round 3 re-read of the full render and re-check against round-2 findings. "
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Static DOM inspection only (no browser): tables in .table-wrap overflow-x:auto, 0 literal \"**\", no semicolon-joined clauses in prose or cells."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "TESTED excluded (financial services outside _experience.md section G); fallback_used absent from rendered text and HTML."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "No professionalReviewRequired on this route; no professional review claimed."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    }
+   },
+   "findings": []
+  },
+  {
+   "path": "/guides/when-to-switch-financial-advisors/",
+   "fingerprint": "f3c145526082b501ef39ff279211acec2d21b9c18e087574421bea6fca9b748d",
+   "verdict": "PASS",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/when-to-switch-financial-advisors-round3-reservation.json",
+    "sha256": "6c5bee2ec9fcb55f034ecc77c72951a1c10959cf0dd2ce6a2aa3bcc370a79521"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "3d44678248ea76fd9abdec80009ff2a879b2efec0121c9da50b05c4cac736101",
+    "rationale": "Instructions for moving investment and retirement accounts with IRS rollover rules; HIGH remains the floor.",
+    "consequentialClaims": [
+     {
+      "category": "investment",
+      "quote": "Transfer Initiation Form",
+      "reason": "Instructions for moving investment and retirement accounts with IRS rollover rules; HIGH remains the floor."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "A2-R2-1 resolved (repeated \"In this order\" sentences and doubled ACATS sentence removed) and A2-R2-2 resolved (conflicts sentence now matches Investor.gov). Intro, ordered list, step table, FAQs and takeaway agree; fee FAQ keeps the contract and ask-both-firms condition."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "FINRA (22f45649) and IRS (7130d5ef) and Investor.gov statements re-traced; no ordering or fee claim beyond sources."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing language anywhere; basis reported with SEC, Investor.gov, FINRA or IRS named beside findings; byline label is the site-wide template."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible date and Article dateModified match the intended source date; FAQPage JSON-LD matches visible FAQs, no raw markdown."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Round 3 re-read of the full render and re-check against round-2 findings. "
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Static DOM inspection only (no browser): tables in .table-wrap overflow-x:auto, 0 literal \"**\", no semicolon-joined clauses in prose or cells."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "TESTED excluded (financial services outside _experience.md section G); fallback_used absent from rendered text and HTML."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "No professionalReviewRequired on this route; no professional review claimed."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    }
+   },
+   "findings": []
+  },
+  {
+   "path": "/guides/how-to-read-form-adv/",
+   "fingerprint": "03bbfa8ee0569397e6856af45656ae4bbbea8a52fe43a7f095bc96045f8dc013",
+   "verdict": "PASS",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/how-to-read-form-adv-round3-reservation.json",
+    "sha256": "35be85c86b17f17d458f6de145eb5a5abf88c0cdd289d163eb544a4fce9192e7"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "acc25cb06c91d5f706df828bd9471758aa0d917c463e6b77f1dbda3d2e57fee1",
+    "rationale": "Guide to vetting an investment adviser with SEC forms; HIGH remains the floor.",
+    "consequentialClaims": [
+     {
+      "category": "investment",
+      "quote": "Form ADV Part 2A",
+      "reason": "Guide to vetting an investment adviser with SEC forms; HIGH remains the floor."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "A3-R2-2 resolved (annual-summary restatement and \"critical\" removed); A3-R2-1 resolved by narrowing: the FINRA registration inference is gone, replaced by the SEC bulletin statement that Form ADV is the form investment advisers use to register and a pointer to FINRA BrokerCheck plus Form CRS (Investor.gov says registered broker-dealers must provide one). Takeaway and limits agree."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Part 1/2A/2B/3 statements, 18 items, six items, 10-year presumption, annual summary re-traced to capture 953e89fd and the CRS capture. The BrokerCheck pointer links FINRA's own tool and asserts nothing beyond it."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing language anywhere; basis reported with SEC, Investor.gov, FINRA or IRS named beside findings; byline label is the site-wide template."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible date and Article dateModified match the intended source date; FAQPage JSON-LD matches visible FAQs, no raw markdown."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Round 3 re-read of the full render and re-check against round-2 findings. "
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Static DOM inspection only (no browser): tables in .table-wrap overflow-x:auto, 0 literal \"**\", no semicolon-joined clauses in prose or cells."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "TESTED excluded (financial services outside _experience.md section G); fallback_used absent from rendered text and HTML."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "No professionalReviewRequired on this route; no professional review claimed."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    }
+   },
+   "findings": []
+  },
+  {
+   "path": "/guides/what-is-investment-management/",
+   "fingerprint": "b1dd087d704f4d458c3e76033e1fe6f89d4101f31457a0393e0cf827e2e913d9",
+   "verdict": "PASS",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/what-is-investment-management-round3-reservation.json",
+    "sha256": "4ce9411eca290f4a004d015d736f5a4bc4be02b7263c488dfb4038ee9579f79e"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "a56db0b2b48be138555425398a777915d65552dc2d6015c7e8e5f895197bb230",
+    "rationale": "DIY versus hire recommendation with fee consequences; HIGH remains the floor.",
+    "consequentialClaims": [
+     {
+      "category": "investment",
+      "quote": "invest on your own",
+      "reason": "DIY versus hire recommendation with fee consequences; HIGH remains the floor."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "A4-R2-1 resolved (meta description now 151 characters) and A4-R2-2 resolved (0 semicolons). Percentage-versus-flat-fee statement, DIY cell, takeaway labeled as our reading and FAQs agree with the flat-fee page."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Definitions, discretionary accounts, asset-based fee wording and the $3 on $500 example re-traced to Investor.gov, CRS and subscription-fee captures; the wealth-manager sentence comes from the site's own comparison page as the brief allowed."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing language anywhere; basis reported with SEC, Investor.gov, FINRA or IRS named beside findings; byline label is the site-wide template."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible date and Article dateModified match the intended source date; FAQPage JSON-LD matches visible FAQs, no raw markdown."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Round 3 re-read of the full render and re-check against round-2 findings. "
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Static DOM inspection only (no browser): tables in .table-wrap overflow-x:auto, 0 literal \"**\", no semicolon-joined clauses in prose or cells."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "TESTED excluded (financial services outside _experience.md section G); fallback_used absent from rendered text and HTML."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "No professionalReviewRequired on this route; no professional review claimed."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. "
+    }
+   },
+   "findings": []
+  },
+  {
+   "path": "/guides/how-to-choose-a-financial-advisor/",
+   "fingerprint": "c3eb973dbe91de55e96bc29e39cb81a567b10e80ead9904643b443f14515338f",
+   "verdict": "PASS",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/how-to-choose-a-financial-advisor-round2-reservation.json",
+    "sha256": "00e30964e8028eec019cc80930f0689ea8e56cd2fc8bd9c6a3926d12b64b9ba7"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "56304deb1a03669c44626f0c5db008897a067f6c0aafbecb80f822c04d9b0263",
+    "rationale": "Existing investment-adviser guidance page with a link-only edit; HIGH remains the floor.",
+    "consequentialClaims": [
+     {
+      "category": "investment",
+      "quote": "fiduciary",
+      "reason": "Existing investment-adviser guidance page with a link-only edit; HIGH remains the floor."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Link-only change: the existing anchor \"robo-advisor vs. financial advisor breakdown\" now points to /compare/robo-advisor-vs-financial-advisor/ (HTML diff against round 2 shows only the href). Visible Updated November 9, 2026 and dateModified unchanged."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Scope limited to the retargeted anchor and its destination; inherited claims not re-researched; the earlier inserted \"when to switch\" sentence was reviewed in round 1."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing language anywhere; basis reported with SEC, Investor.gov, FINRA or IRS named beside findings; byline label is the site-wide template."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible date and Article dateModified match the intended source date; FAQPage JSON-LD matches visible FAQs, no raw markdown."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Round 3 re-read of the full render and re-check against round-2 findings. Link-only scope. "
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Static DOM inspection only (no browser): tables in .table-wrap overflow-x:auto, 0 literal \"**\", no semicolon-joined clauses in prose or cells."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "TESTED excluded (financial services outside _experience.md section G); fallback_used absent from rendered text and HTML."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. Link-only scope. "
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. Link-only scope. "
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. Link-only scope. "
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. Link-only scope. "
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. Link-only scope. "
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. Link-only scope. "
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. Link-only scope. "
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "No professionalReviewRequired on this route; no professional review claimed."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. Link-only scope. "
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Re-verified against saved primary captures in round 3 for all in-scope passages; round-1 and round-2 findings resolved. Link-only scope. "
+    }
+   },
+   "findings": []
+  }
+ ]
+}

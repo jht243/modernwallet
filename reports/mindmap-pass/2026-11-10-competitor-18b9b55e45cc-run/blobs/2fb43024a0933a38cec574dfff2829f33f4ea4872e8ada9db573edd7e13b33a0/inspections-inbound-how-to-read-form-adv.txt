@@ -1,0 +1,13 @@
+INBOUND INSPECTION for /guides/how-to-read-form-adv (2026-11-10)
+Date/review policy: existing-anchor links and the declared one-sentence insertions below are link-only text edits to existing pages: no new factual claim, no dateModified bump; every touched page is re-captured and reviewed in the rendered audit. If the new page is deferred, its links are removed (isolation rule).
+
+page /guides/what-is-a-registered-investment-advisor/ - title: What a Registered Investment Advisor Is and How to Check One
+section: How to Check an RIA Before You Hire One | purpose: existing words in the section; the new page shows how to read the brochure
+ANCHOR on existing words: "Form ADV Part 2, commonly called the brochure" -> /guides/how-to-read-form-adv; present in section: True
+  quoted: ... on that portal.\n\nThe database provides two critical documents that every retail investor should review. The first is Form ADV Part 2, commonly called the brochure, which describes the firm's business practices, fee structures, investment strategies, potential conflicts of interest, and any past discip...
+
+page /guides/financial-advisor-conflicts-of-interest/ - title: How to Spot Financial Advisor Conflicts of Interest
+section: How to Verify Advisor Disclosures | purpose: existing words in the section; the new page walks through the brochure
+ANCHOR on existing words: "Form ADV Part 2 (the brochure)" -> /guides/how-to-read-form-adv; present in section: True
+  quoted: ...ts. It outlines services, fees, conflicts of interest, and disciplinary history in a standardized format. Alongside it, Form ADV Part 2 (the brochure) describes an investment adviser's business practices, fee structure, conflicts of interest, and disciplinary history in greater narrative d...
+

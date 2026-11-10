@@ -1,0 +1,18 @@
+OUTBOUND INSPECTION for /guides/what-is-investment-management (2026-11-10)
+Date/review policy: existing-anchor links and the declared one-sentence insertions below are link-only text edits to existing pages: no new factual claim, no dateModified bump; every touched page is re-captured and reviewed in the rendered audit. If the new page is deferred, its links are removed (isolation rule).
+
+page /compare/flat-fee-vs-aum-based-financial-advisors/ - title: Flat-Fee vs. AUM Financial Advisors Compared by Cost
+section: Section 3 AUM | purpose: cost math and crossover for the fee models
+
+page /guides/what-is-a-registered-investment-advisor/ - title: What a Registered Investment Advisor Is and How to Check One
+section: Section 5 check an adviser | purpose: who RIAs are and how they are regulated
+
+page /guides/how-to-read-form-adv/ - title: None
+section: Section 5 check an adviser | purpose: where fees are disclosed
+
+page /compare/financial-advisor-vs-wealth-manager/ - title: Financial Advisor vs Wealth Manager: What's Different
+section: FAQ and section 2 | purpose: different title, broader bundled service
+
+page /guides/what-does-a-financial-advisor-do/ - title: What Does a Financial Advisor Do Versus a Credit Counselor
+section: Section 2 what a manager does | purpose: advisor vs counselor vs coach roles
+

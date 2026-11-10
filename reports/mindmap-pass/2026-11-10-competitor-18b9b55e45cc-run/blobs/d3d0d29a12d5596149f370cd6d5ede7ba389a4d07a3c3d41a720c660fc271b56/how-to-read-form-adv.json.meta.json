@@ -1,0 +1,490 @@
+{
+ "slug": "how-to-read-form-adv",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1830,
+ "floor": 1200,
+ "input_tokens": 24878,
+ "output_tokens": 3574,
+ "thinking_tokens": 216,
+ "cached_tokens": 21695,
+ "est_cost_usd": 0.0182,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Broker-only professionals file with FINRA, not Form ADV: check them on [FINRA Br'; '- The regulatory agency updates filing requirements or disclosure thresholds for'; 'This annual disclosure ensures clients stay informed about updates to business p'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1915,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 606,
+   "floor": 1200,
+   "ratio": 0.51,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    14,
+    6,
+    1
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "This public portal lets you search by individual name or firm name without paying any fees or creating an account.",
+     "replacement": "This public portal lets you search by individual name or firm name.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that searching requires no fees or account creation."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "The text reminds investors that investing in securities involves risk of loss that you must be prepared to handle.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that the brochure reminds investors to handle losses."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "A clean record here provides confidence, whereas disclosed events warrant careful inquiry.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that a clean record provides confidence."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "An advisor with extensive outside business commitments might face time constraints or separate financial conflicts that affect client recommendations.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state outside commitments create time constraints or affect recommendations."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "A firm might carry a spotless record while employing an individual with recent disciplinary disclosures, or an individual might have a clean history inside a firm with past regulatory penalties.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not state these hypothetical contrast scenarios between firms and individuals."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Unregistered financial planners, general coaches, and professionals who act purely as brokers do not submit Form ADV filings.",
+     "replacement": "Unregistered individuals and professionals who act purely as brokers do not submit Form ADV filings.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention financial planners or general coaches."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "In our editorial judgment, a clean Form ADV filing does not guarantee high investment returns or superior advice quality.",
+     "replacement": "In our editorial judgment, a clean Form ADV filing does not show advice quality.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention investment returns."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "A spotless disciplinary history confirms that the regulator has not penalized the firm for material violations within the disclosed window, but it does not measure whether an advisor's asset allocation aligns with your financial targets.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention asset allocation or financial targets."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Reviewing an advisor's Form ADV gives you the leverage you need to verify claims, compare ongoing expenses, and evaluate business ethics.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Form ADV provides leverage or evaluates business ethics."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Taking a methodical approach ensures you do not overlook critical disclosures hidden behind marketing language.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state disclosures are hidden behind marketing language."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Finally, compare the Part 2B educational and employment background with the professional's public r\u00e9sum\u00e9.",
+     "replacement": "Finally, review the Part 2B educational and employment background.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention a professional's public r\u00e9sum\u00e9."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Gaps in five-year business records or newly disclosed outside business ventures require clarification.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that gaps in records require clarification."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "You can search, view, and download Form ADV filings for registered investment advisory firms and their representatives through the SEC Investment Adviser Public Disclosure database.",
+     "replacement": "Form ADV filings for registered investment advisory firms and their representatives are public on the SEC Investment Adviser Public Disclosure database.",
+     "type": "unsupported",
+     "why": "SOURCE does not list a download feature for IAPD filings."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "This item discloses whether the firm charges fees based on account gains while also managing accounts that pay standard asset-based fees.",
+     "replacement": "This item covers performance-based fees and side-by-side management.",
+     "type": "unsupported",
+     "why": "SOURCE does not define performance-based fees or side-by-side management."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "This combination can create an incentive to favor certain accounts over others.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that side-by-side management creates account-favoring incentives."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "This disclosure details whether the firm or its employees invest in the same securities recommended to clients, creating potential conflicts that we outline in our review of [financial advisor conflicts of interest](/guides/financial-advisor-conflicts-of-interest/).",
+     "replacement": "This disclosure covers code of ethics, participation in client transactions, and personal trading, connecting to [financial advisor conflicts of interest](/guides/financial-advisor-conflicts-of-interest/).",
+     "type": "unsupported",
+     "why": "SOURCE does not state that this item details investing in recommended client securities."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "The brochure explains how the firm selects broker-dealers for client transactions, handles transaction costs, and decides where to direct trades.",
+     "replacement": "The brochure covers the firm's brokerage practices.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe broker selection, transaction costs, or trade direction details."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "If the advisor claims to charge a flat percentage of assets under management, verify whether that percentage covers custody and administrative costs or if additional custodial fees apply to your account balance.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention administrative costs or additional custodial fees."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [
+    {
+     "quote": "This annual disclosure ensures clients stay informed about updates to business practices, fee schedules, or disciplinary records.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that annual disclosure ensures clients stay informed.",
+     "replacement": "",
+     "id": "faqs[4].answer",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    },
+    {
+     "quote": "This annual disclosure ensures clients stay informed about updates to business practices, fee schedules, or disciplinary records.",
+     "type": "unsupported",
+     "why": "SOURCE does not state the purpose or contents of the annual disclosure.",
+     "replacement": "",
+     "id": "faqs[4].answer",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    },
+    {
+     "quote": "This annual disclosure ensures clients stay informed about updates to business practices, fee schedules, or disciplinary records.",
+     "type": "unsupported",
+     "why": "SOURCE limits answer strictly to annual delivery of summary of material changes.",
+     "replacement": "",
+     "id": "faqs[4].answer",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "faqs[4].answer",
+     "quote": "This annual disclosure ensures clients stay informed about updates to business practices, fee schedules, or disciplinary records.",
+     "type": "unsupported",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2186
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-10T07:52:55+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/how-to-read-form-adv.findings.txt",
+    "applied": [
+     {
+      "id": "title",
+      "quote": "How to Read Form ADV Before You Hire an Advisor",
+      "replacement": "How to Read Form ADV Before You Hire a Financial Advisor",
+      "type": "A3-F8",
+      "why": "Title under 50 characters"
+     },
+     {
+      "id": "introText",
+      "quote": "Securities and Exchange Commission (SEC) Investment Adviser Public Disclosure (IAPD) database",
+      "replacement": "[Securities and Exchange Commission (SEC) Investment Adviser Public Disclosure (IAPD) database](https://adviserinfo.sec.gov)",
+      "type": "A3-F4",
+      "why": "Missing required link on first mention"
+     },
+     {
+      "id": "introText",
+      "quote": "In the guides we publish here, we start from the official public filings because they reveal fee structures, conflicts, and past regulatory actions before you sign an agreement.",
+      "replacement": "The SEC investor bulletin on Form ADV calls the Part 2A brochure the primary disclosure document for investment advisers.",
+      "type": "A3-F4",
+      "why": "Simplify tee-up and name SEC source directly"
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "The regulatory agency does not mandate an official reading sequence for clients.",
+      "replacement": "The SEC does not set a reading order for clients.",
+      "type": "A3-F4",
+      "why": "Replace coy abstraction with named SEC source"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "No; public on IAPD portal",
+      "replacement": "Public on the IAPD website",
+      "type": "A3-F3",
+      "why": "Source does not claim Part 1 is not delivered"
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Yes; delivered to clients initially and offered annually",
+      "replacement": "Advisers must deliver the brochure to prospective and existing clients, and each year deliver a summary of material changes with a revised brochure or an offer to deliver one",
+      "type": "A3-F3",
+      "why": "Align delivery statement strictly with SEC bulletin rule"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "**Advisory business**: The firm describes the types of advisory services it provides",
+      "replacement": "Advisory business: The firm describes the types of advisory services it provides",
+      "type": "A3-F1",
+      "why": "Remove bold asterisks not parsed in list items"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "**Fees and compensation**:",
+      "replacement": "Fees and compensation:",
+      "type": "A3-F1",
+      "why": "Remove bold asterisks not parsed in list items"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "**Methods of analysis, investment strategies, and risk of loss**:",
+      "replacement": "Methods of analysis, investment strategies, and risk of loss:",
+      "type": "A3-F1",
+      "why": "Remove bold asterisks not parsed in list items"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "**Disciplinary information**:",
+      "replacement": "Disciplinary information:",
+      "type": "A3-F1",
+      "why": "Remove bold asterisks not parsed in list items"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "**Performance-based fees and side-by-side management**: This item covers performance-based fees and side-by-side management.",
+      "replacement": "Performance-based fees and side-by-side management: An adviser that accepts performance-based fees, or supervises someone who does, must disclose it. If it also manages accounts without a performance fee, it must explain the resulting conflicts and how it addresses them.",
+      "type": "A3-F2",
+      "why": "Replace empty claim-check tautology with SEC bulletin facts"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "**Code of ethics, participation in client transactions, and personal trading**: This disclosure covers code of ethics, participation in client transactions, and personal trading, connecting to [financial advisor conflicts of interest](/guides/financial-advisor-conflicts-of-interest/).",
+      "replacement": "Code of ethics, participation in client transactions, and personal trading: The adviser must briefly describe its code of ethics, state that a copy is available on request, and disclose whether it or a related person invests in the same securities it recommends, with the conflicts involved.",
+      "type": "A3-F2",
+      "why": "Replace tautological summary with SEC disclosure requirements"
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "**Brokerage practices**: The brochure covers the firm's brokerage practices.",
+      "replacement": "Brokerage practices: The adviser must describe how it selects broker-dealers and judges their compensation, and must disclose soft dollar practices.",
+      "type": "A3-F2",
+      "why": "Replace tautological bullet with SEC bulletin details"
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "According to [Investor.gov advice on investment advisers](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers), investors should always check both the advisory firm and the individual representative before establishing a working relationship.",
+      "replacement": "Check both the firm and the individual representative on IAPD.",
+      "type": "A3-F7",
+      "why": "Condense section to remove duplicate background material"
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Investment advisers generally must register with either the SEC or relevant state securities authorities.",
+      "replacement": "Broker-only professionals file with FINRA, not Form ADV: check them on [FINRA BrokerCheck](https://brokercheck.finra.org) and read their [Form CRS](https://www.investor.gov/CRS).",
+      "type": "A3-F7",
+      "why": "Replace restated background with broker distinction and required links"
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Advisers provide ongoing portfolio advice over time, monitor performance, and are required to act in your best interest without placing their interests ahead of yours.",
+      "replacement": "See [what a registered investment advisor is](/guides/what-is-a-registered-investment-advisor/) and how [conflicts of interest](/guides/financial-advisor-conflicts-of-interest/) work.",
+      "type": "A3-F7",
+      "why": "Add cross-links and cut repeated fiduciary explanations"
+     },
+     {
+      "id": "sections[4].body",
+      "quote": " Their fees are typically based on the total value of assets held in your account, though some provide planning services under different fee arrangements.",
+      "replacement": "",
+      "type": "A3-F7",
+      "why": "Delete repeated fee structure details"
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Brokers operate under a different business model.",
+      "replacement": "",
+      "type": "A3-F7",
+      "why": "Delete repeated broker business-model paragraph"
+     },
+     {
+      "id": "sections[4].body",
+      "quote": " As outlined in the SEC guidance on Form CRS, broker-dealers generally execute discrete transactions and earn sales commissions or markups on each trade.",
+      "replacement": "",
+      "type": "A3-F7",
+      "why": "Delete restated broker transaction details"
+     },
+     {
+      "id": "sections[4].body",
+      "quote": " While investment advisers file Form ADV, broker-dealers and individual brokers register through FINRA and file disclosures accessible on [FINRA BrokerCheck](https://brokercheck.finra.org).",
+      "replacement": "",
+      "type": "A3-F7",
+      "why": "Delete restated registration narrative"
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Many financial firms maintain dual registration, operating as both an investment adviser and a broker-dealer.",
+      "replacement": "",
+      "type": "A3-F7",
+      "why": "Delete restated dual-registration paragraph"
+     },
+     {
+      "id": "sections[4].body",
+      "quote": " In those environments, you must clarify when a professional is acting as an investment adviser and when they are acting as a broker.",
+      "replacement": "",
+      "type": "A3-F7",
+      "why": "Delete restated dual-registration discussion"
+     },
+     {
+      "id": "sections[4].body",
+      "quote": " You can prepare for these discussions by reviewing our suggested [questions to ask a financial advisor](/guides/questions-to-ask-a-financial-advisor/) during your initial interview.",
+      "replacement": "",
+      "type": "A3-F7",
+      "why": "Delete redundant transition sentence"
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "The firm files an annual summary of material changes with a revised brochure, altering fee percentages, service structures, or conflict disclosures.",
+      "replacement": "The adviser delivers a new annual summary of material changes: read it against the brochure you already have.",
+      "type": "A3-F5",
+      "why": "Replace unsupported bullet with accurate annual summary condition"
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "You negotiate a customized contract with negotiated billing terms that supersede standard schedule numbers shown in Part 2A.",
+      "replacement": "The brochure says fees are negotiable: your contract sets the fees you pay (Investor.gov), so compare the contract with the Part 2A fee schedule.",
+      "type": "A3-F5",
+      "why": "Replace unsupported terms with negotiable fee guidance"
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "When you open the Part 2A brochure, confirm that the fee calculation method matches the payment structure the professional described to you in person.",
+      "replacement": "Open the Part 2A brochure and confirm the fee method matches what the adviser told you.",
+      "type": "A3-F6",
+      "why": "Frame practical closing actions directly"
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Finally, review the Part 2B educational and employment background.",
+      "replacement": "Read the Part 2B supplement for the person who will handle your account.",
+      "type": "A3-F6",
+      "why": "Provide clear individual check step"
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Reading Form ADV before you sign an agreement gives you the facts needed to hire the right professional or walk away before committing your assets.",
+      "replacement": "Bring any unclear item to the adviser as a written question before you sign. A clean filing does not show advice quality, so use it to ask better questions.",
+      "type": "A3-F6",
+      "why": "Replace overclaim with reminder that clean filings do not prove quality"
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "Advisers must deliver an annual summary of material changes to their clients along with a revised brochure or an offer to deliver the revised brochure.",
+      "replacement": "The SEC bulletin says advisers must deliver a summary of material changes to clients every year, along with a revised brochure or an offer to deliver one.",
+      "type": "A3-F6",
+      "why": "Attribute annual delivery rule explicitly to SEC bulletin"
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "introText",
+      "quote": " At ModernWallet, we suggest opening the Part 2A brochure before other sections because the regulatory agency designates it as the primary disclosure document for advisory practices.",
+      "finding": "A3-F4",
+      "why": "Remove duplicate tee-up and coy abstraction",
+      "replacement": "",
+      "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+     },
+     {
+      "id": "sections[5].body",
+      "quote": " - The regulatory agency updates filing requirements or disclosure thresholds for registered entities.",
+      "finding": "A3-F5",
+      "why": "Delete unactionable filler condition",
+      "replacement": "",
+      "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": " This annual disclosure ensures clients stay informed about updates to business practices, fee schedules, or disciplinary records.",
+      "finding": "A3-F6",
+      "why": "Delete unsupported claim-check rationale",
+      "replacement": "",
+      "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      3
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[4].body",
+       "quote": "Broker-only professionals file with FINRA, not Form ADV: check them on [FINRA BrokerCheck](https://brokercheck.finra.org) and read their [Form CRS](https://www.investor.gov/CRS).",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[5].body",
+       "quote": "- The regulatory agency updates filing requirements or disclosure thresholds for registered entities.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[4].answer",
+       "quote": "This annual disclosure ensures clients stay informed about updates to business practices, fee schedules, or disciplinary records.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 1830,
+    "flags": [
+     "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Broker-only professionals file with FINRA, not Form ADV: check them on [FINRA Br'; '- The regulatory agency updates filing requirements or disclosure thresholds for'; 'This annual disclosure ensures clients stay informed about updates to business p'"
+    ]
+   }
+  ]
+ },
+ "seconds": 364.8,
+ "response_id": "ecHyataCN8yCytMPs77l6As",
+ "generated_at": "2026-11-10T07:08:21+0000"
+}

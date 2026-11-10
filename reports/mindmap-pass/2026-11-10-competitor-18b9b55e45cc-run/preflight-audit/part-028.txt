@@ -1,0 +1,58 @@
+mpleted reading in its actual uninterrupted context. Confirm in current words that rules remain accessible and understood and explain changed task application. Retain original explanations for unchanged instructions where an existing explanation protocol applies. New rules need reading and fresh explanations. Context loss, compaction or another worker requires a fresh reading. Independent reviewers retain their own context for corrections. No new per-document explanation gate is added.
+
+The main conversation dispatches work. Fresh research, writing, independent audit and mechanical publication stages receive their complete applicable instructions, original scope, current source evidence, latest candidate, unresolved findings and counters. Transfer these artifacts through existing canonical job records. Keep old versions retrievable without automatically loading whole conversations or superseded research. Preserve all original intake candidates and chart dispositions. Inspect underlying evidence, not only a handoff summary. Native foreground workers are preferred; asynchronous runtimes must consume actual completion notifications and continue automatically.
+
+Research existing coverage before opening vendor pages. Preserve the original target and reader intent. Already covered additions can reach an independently reviewed no-addition decision. New products, news, price changes, stale or contradictory evidence still need research. A failed lookup proves nothing and must not invalidate other independently verified coverage.
+
+Use the site's current LIGHT/STANDARD/HIGH profile and escalate consequential claims. Preserve full SEO. The 1/2/3 audit limits are ceilings including every recheck, not targets. Resume the same candidate, findings and counters after interruptions. Never reset a limit with a new filename or job. Use content-correction-scope.py for eligible small corrections. Keep factual, structural, safety and source changes in their required wider review. Preserve genuine prior passes on exact unchanged pages. Mechanical output never creates an editorial PASS.
+
+Use one full generation for each original page/job. Correct the retained candidate from actual independent findings within its remaining review budget. A writer's internal claim checks follow the applicable risk ceiling and return unresolved doubts to the independent auditor. Different output directories do not justify regeneration. Keep build, full-render, link, source-ownership, hosting, exact-live and indexing checks on the native release path. Publication must finish automatically when its existing gates permit it.
+
+## Canonical stage handoffs
+
+On the portable protocol, WRITE, AUDIT and PUBLISH require --handoff CURRENT.json. Preserve the original canonical job across retries. Before dispatching a stage, save a draft handoff using the existing native record schema. Include version 1, siteId from this repository's content-review-policy.json, actual canonicalBase, jobId, producer, nextAction, routes, candidates, sources, findings and reviewCounters. candidates and sources use actual path/sha256 references. Each source retains its checkedAt, refreshWhen and scope. Each finding retains its stable id, status and concrete evidence. reviewCounters retains the actual reviews and reworks already performed. Reference the preceding handoff in previous with its actual hash. Never initialize new zero counters to evade history.
+
+Seal the worker's actual draft with python3 .claude/tools/workflow-handoff.py seal --draft DRAFT.json --out NEW_IMMUTABLE.json. The helper freezes exact underlying artifacts and validates scope/history. It never writes understanding, findings or a PASS. Supply the sealed path with the next stage's preflight --handoff. Preflight delivers a focused current task and checks the full underlying chain mechanically. The receiving worker inspects current artifacts and supporting sources. Old conversations and obsolete drafts remain retrievable without being loaded into every new worker.
+
+An AUDIT handoff retains a distinct producer and reviewer. PUBLISH additionally requires actual snapshot and review references, validated by the site's existing rendered-review and native release gates. Preserve qualifying paid-client/upsell exceptions and all their real evidence. Use workflow-handoff.py reconcile-findings only with an actual independent preparation PASS explicitly resolving those finding IDs. Never infer that a generic PASS resolves unrelated findings. No extra planned human gate is introduced.
+
+Canonical identity: the chart manifest and its actual independently authored preparation review must carry the same stable jobId as the canonical handoff. Retain that identity across retries; do not create a date-based replacement job or edit another reviewer’s findings/verdict to fill a missing field.
+
+Owner preparation/continuation correction 2026-11-09: Every preflight prepare needs the worker's actual context-id and context-epoch, including its first reading. Keep those identities across ordinary handoff or artifact revisions; change epoch after real context loss. On a missing-identity error, supply the correct actual flags and retain --reuse when access and understanding are still current. Prepare a new current-task bundle with --reuse OLD_READING and the NEW handoff, rather than rereading unchanged rules or using the old task as the current handoff. Same actor/context/epoch can retain unchanged source hashes across stages; new/changed applicable rules and the current task are delivered completely. Distinct authors/reviewers, native understanding/application receipts, full first readings and all existing review/release requirements remain.
+
+Before dispatching a writer, run the existing render-chart/validate-chart preparation checks. They check already-referenced current analysis packets, exact reader-question/case identities and the installed writer's canonical job scope together, without reserving paid generation. Keep the original jobId in both manifest and the actual independent review. Use the exact approved reader_question string, including internal evidence annotations, for packet.readerQuestion and deterministic case lookup; when it changes, regenerate that lookup and refresh its references in the same preparation correction. Keep these internal annotations out of public copy. Historical chart receipts retain their original structural validation scope.
+
+Join each native worker's terminal handback, including blocked/failure handbacks, before the next phase. Workers retain a current internal result on every exit through the existing handoff path. A dispatcher must not wait only for a successful content diff that will never appear after a blocked handback, or add fixed sleeps after completion. Use native completion or an artifact-aware blocking wait for the current terminal result; keep genuine deployment/readiness checks. No new human gate.
+
+[Source: reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/preflight-audit/task.json]
+{
+  "version": 1,
+  "siteId": "jht243/modernwallet",
+  "canonicalBase": "https://themodernwallet.com",
+  "jobId": "competitor-18b9b55e45cc",
+  "producer": "mindmap-builder-ae12db",
+  "routes": [
+    "/compare/robo-advisor-vs-financial-advisor/",
+    "/guides/when-to-switch-financial-advisors/",
+    "/guides/how-to-read-form-adv/",
+    "/guides/what-is-investment-management/"
+  ],
+  "nextAction": "Independently audit the exact rendered candidate for each of the four new pages and the six link-edited existing pages under the HIGH-tier budget (max 3 rounds including rechecks); record PASS or FAIL with concrete findings per route. The six link-edited existing pages are in the rendered snapshot and manifest (routes list limited to the four new routes to match the writer handoff).",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/b8a2cf55cd5bd1494aa18250f8a9172c2ae230146544f8b2757478489199bb6b/rendered-snapshot.json",
+      "sha256": "b8a2cf55cd5bd1494aa18250f8a9172c2ae230146544f8b2757478489199bb6b",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/4a448b34eb9ec368b203f8f5b3b3487cbb8b41ce99413def142c0cfd77c7eaef/rendered-manifest.json",
+      "sha256": "4a448b34eb9ec368b203f8f5b3b3487cbb8b41ce99413def142c0cfd77c7eaef",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/1fa16a7b3edbc956fc67e51470af96d4c407ebd46cd42fce46059db8199e8076/src-candidate.diff",
+      "sha256": "1fa16a7b3edbc956fc67e51470af96d4c407ebd46cd42fce46059db8199e8076",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/src-candidate.diff"
+    },
+    {
+      "path": "reports/mindmap-pass/2026

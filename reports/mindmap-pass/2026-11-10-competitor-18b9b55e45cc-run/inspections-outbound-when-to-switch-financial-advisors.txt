@@ -1,0 +1,15 @@
+OUTBOUND INSPECTION for /guides/when-to-switch-financial-advisors (2026-11-10)
+Date/review policy: existing-anchor links and the declared one-sentence insertions below are link-only text edits to existing pages: no new factual claim, no dateModified bump; every touched page is re-captured and reviewed in the rendered audit. If the new page is deferred, its links are removed (isolation rule).
+
+page /guides/how-to-choose-a-financial-advisor/ - title: How to Choose a Financial Advisor: A Decision Guide
+section: Section 4 how to check the new adviser | purpose: full hiring steps
+
+page /guides/how-to-read-form-adv/ - title: None
+section: Sections 3 and 4 | purpose: where billing and fee schedule are disclosed
+
+page /guides/financial-advisor-conflicts-of-interest/ - title: How to Spot Financial Advisor Conflicts of Interest
+section: Section 2 checks | purpose: how to spot the conflicts that justify leaving
+
+page /guides/questions-to-ask-a-financial-advisor/ - title: Questions To Ask a Financial Advisor Before You Hire
+section: Section 4 new adviser | purpose: interview list for the new adviser
+

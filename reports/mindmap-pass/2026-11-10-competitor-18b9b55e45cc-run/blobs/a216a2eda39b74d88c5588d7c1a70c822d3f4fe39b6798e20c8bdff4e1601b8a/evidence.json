@@ -1,0 +1,107 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "mindmap-builder-ae12db",
+ "route": "/guides/when-to-switch-financial-advisors",
+ "readerQuestion": "When should I switch financial advisors, and how do I do it? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 13/28 on-topic in the saved sweep: should i switch financial advisors / how to change financial advisors / why change financial advisors / is it hard to switch financial advisors / what happens when you switch financial advisors / does it cost money to switch financial advisors / can you switch financial advisors; 15/28 off-topic: Canada, UK, India and brand-specific variants]",
+ "origin": "competitor-monitor-auto 2026-11-10 (frozen intake 18b9b55e45cc)",
+ "demandSource": "Google Autocomplete (estimate, NOT measured); SEMRUSH and DataForSEO keys unavailable, SERP unread",
+ "decisionGap": "Readers asking this cannot get the primary-source answer and its conditions on this site; nearest pages answer neighbouring decisions (see whyNewPage in the manifest and coverage.txt).",
+ "finding": "Leaving an adviser is a procedure with checkable steps: the contract (not Form ADV Part 2) governs termination while Form ADV Part 2A states how the firm bills; the receiving firm starts the account transfer, which takes generally about three to four business days between broker-dealers and longer for IRAs and non-broker-dealer sources, may be refused for nontransferable assets, and can be delayed or frozen by trading; IRS wording: money can be transferred directly or rolled over within 60 days, and the one-per-year limit does not apply to trustee-to-trustee transfers or direct rollovers.",
+ "conditions": "US readers; SEC/state-registered advisers and broker-dealers; individual contracts vary and are not generalized; termination charges and tax effects of selling are not established by the sources read; state and employer-plan rules outside sources.",
+ "whatWouldChange": "A termination fee or surrender charge in the reader's contract or product, nontransferable proprietary assets, a pending tax event, or a change to the ACATS process.",
+ "basis": "reported",
+ "method": "Reported primary-source synthesis; no test or model.",
+ "whyNoQuantitativeAnalysis": "The reader decision is procedural or definitional and rests on regulator statements; no defensible numerical input exists beyond source figures, so arithmetic would only restate them.",
+ "reasoning": "From the saved primary pages in sources.md to the answer: Leaving an adviser is a procedure with checkable steps: the contract (not Form ADV Part 2) governs termination while Form ADV Part 2A states how the firm bills; the receiving firm starts the account transfer, which takes generally about three to four business days between broker-dealers and longer for IRAs and non-broker-dealer sources, may be refused for nontransferable assets, and can be delayed or frozen by trading; IRS wording: money can be transferred directly or rolled over within 60 days, and the one-per-year limit does not apply to trustee-to-trustee transfers or direct rollovers.",
+ "sourceArtifacts": [
+  {
+   "path": "evidence/when-to-switch-financial-advisors/sources.md",
+   "sha256": "2b2c2c7375e4d33f2c66a815d4c4e2734c3403662653214d311b01158097e62b"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.investor.gov_introduction-investing_getting-started_working-investment-professional_investment-advisers",
+   "sha256": "ffda7445ecd73d962912bb3ead41eca63f60c2bd345b4af5908368d646816d38"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_investor-bulletins-71",
+   "sha256": "953e89fd695e8cd41b47b9fc76382e695de82d904f09d46dc2fe0c657e8086d7"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/investor.gov_CRS-2026-11-09.txt",
+   "sha256": "183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.finra.org_investors_investing_investment-accounts_brokerage-accounts_account-transfers",
+   "sha256": "22f45649106d7d5cb55a278b9632333abaaa2761a52bd723191da4e45115a8d8"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.irs.gov_retirement-plans_plan-participant-employee_rollovers-of-retirement-plan-and-ira-distributions",
+   "sha256": "7130d5ef7c6566807b7fed84fc2eb5360a88a8d0d55db936e360064e8a0192f9"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.investor.gov_introduction-investing_getting-started_working-investment-professional",
+   "sha256": "527060a93bc96c0c3a9cf3c764724cc66a9801a8afcb19d3b9d9e881759a7a51"
+  }
+ ],
+ "caseSelection": {
+  "path": "evidence/when-to-switch-financial-advisors/cases.json",
+  "sha256": "753dc3d6e5ca67cf7a4c39a4464974f4412ab38489e8c8c1874bc7567d5adb09"
+ },
+ "caseDecisions": "Approved-case lookup run for the exact reader question (cases.json). This site has no named-client claims in _experience.md; no case or client-conversation claim is used.",
+ "provenance": {
+  "basis": "reported",
+  "supportingRecordIds": [
+   "INV-advisers",
+   "INV-bulletin-formadv",
+   "INV-CRS",
+   "FINRA-transfer",
+   "IRS-rollovers",
+   "INV-working"
+  ],
+  "scopeAndLimits": "US readers; SEC/state-registered advisers and broker-dealers; individual contracts vary and are not generalized; termination charges and tax effects of selling are not established by the sources read; state and employer-plan rules outside sources.",
+  "publicMethod": "Sources linked in-line and in a Sources list; third-person attribution to the named body beside each finding.",
+  "placement": "Opening section and Takeaway name the regulator as the basis; no \"we tested\" or modeling claim; editorial judgments labeled as such."
+ },
+ "sources": [
+  {
+   "id": "INV-advisers",
+   "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers",
+   "checkedAt": "2026-11-10",
+   "scope": "Investor.gov: investment advisers are required to act in your best interest and not put their interest ahead of yours; the way advisers make money creates confl"
+  },
+  {
+   "id": "INV-bulletin-formadv",
+   "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71",
+   "checkedAt": "2026-11-10",
+   "scope": "SEC OIEA Investor Bulletin \"Form ADV - Investment Adviser Brochure and Brochure Supplement\" (June 24, 2016, updated Aug. 27, 2020). Form ADV is the uniform regi"
+  },
+  {
+   "id": "INV-CRS",
+   "url": "https://www.investor.gov/CRS",
+   "checkedAt": "2026-11-09",
+   "scope": "Investor.gov/CRS (captured 2026-11-09): registered broker-dealers and registered investment advisers must provide a relationship summary (Form CRS) to retail in"
+  },
+  {
+   "id": "FINRA-transfer",
+   "url": "https://www.finra.org/investors/investing/investment-accounts/brokerage-accounts/account-transfers",
+   "checkedAt": "2026-11-10",
+   "scope": "FINRA, Brokerage Accounts - Account Transfers: most customer accounts move between broker-dealers through ACATS; start by completing a Transfer Initiation Form "
+  },
+  {
+   "id": "IRS-rollovers",
+   "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions",
+   "checkedAt": "2026-11-10",
+   "scope": "IRS rollover page: most pre-retirement payments from a retirement plan or IRA can be rolled over by depositing within 60 days; you can also have your financial "
+  },
+  {
+   "id": "INV-working",
+   "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional",
+   "checkedAt": "2026-11-10",
+   "scope": "Investor.gov: working with an investment professional (fetched 2026-11-10); used for the registration-check and Check Out Your Investment Professional tool refe"
+  }
+ ],
+ "exclusions": "TESTED format excluded (financial services outside _experience.md section G; no executed tests).",
+ "unknowns": "Measured search volume, SERP and PAA unavailable; vendor-specific fees only from existing dated site pages.",
+ "selectedMedium": "text",
+ "mediumReason": "Procedural or definitional answer; a table carries the finite comparison; no calculator adds value."
+}

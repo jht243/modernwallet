@@ -1,0 +1,13 @@
+INBOUND INSPECTION for /guides/what-is-investment-management (2026-11-10)
+Date/review policy: existing-anchor links and the declared one-sentence insertions below are link-only text edits to existing pages: no new factual claim, no dateModified bump; every touched page is re-captured and reviewed in the rendered audit. If the new page is deferred, its links are removed (isolation rule).
+
+page /guides/what-is-a-registered-investment-advisor/ - title: What a Registered Investment Advisor Is and How to Check One
+section: How RIAs Make Money | purpose: existing words in the section; the new page explains the term and the DIY-vs-hire decision
+ANCHOR on existing words: "percentage of assets under management" -> /guides/what-is-investment-management; present in section: True
+  quoted: ..."heading": "How RIAs Make Money",         "body": "A registered investment advisor is generally paid through a percentage of assets under management, though many firms charge fixed flat fees or hourly rates. The method of compensation changes your total annual cost significantly as your ...
+
+page /compare/financial-advisor-vs-wealth-manager/ - title: Financial Advisor vs Wealth Manager: What's Different
+section: How to decide which one you actually need | purpose: existing words in the section; the new page defines investment management
+ANCHOR on existing words: "investment management" -> /guides/what-is-investment-management; present in section: True
+  quoted: ...ager\" generally implies a broader, bundled service for high-net-worth clients that adds tax and estate coordination to investment management, while \"financial advisor\" is a broader term that can describe someone doing narrower investment-focused work for a wider range of client...
+

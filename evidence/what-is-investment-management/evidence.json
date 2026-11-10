@@ -1,0 +1,96 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "mindmap-builder-ae12db",
+ "route": "/guides/what-is-investment-management",
+ "readerQuestion": "What is investment management, and should I do it myself or hire someone? [PAA unavailable (SERP unread, no DataForSEO credentials); ac head sweep 63 rows: on-topic what is investment management / is investment management the same as wealth management / same as asset management; off-topic: careers, interviews, firm names (about 40/63)]. Also serves: What does assets under management (AUM) mean? [ac 35 rows: what does assets under management mean / what are assets under management fees / how does assets under management work / what is included in assets under management; off-topic: firm AUM totals]",
+ "origin": "competitor-monitor-auto 2026-11-10 (frozen intake 18b9b55e45cc)",
+ "demandSource": "Google Autocomplete (estimate, NOT measured); SEMRUSH and DataForSEO keys unavailable, SERP unread",
+ "decisionGap": "Readers asking this cannot get the primary-source answer and its conditions on this site; nearest pages answer neighbouring decisions (see whyNewPage in the manifest and coverage.txt).",
+ "finding": "Investor.gov frames investment management as either your own responsibility, starting from a financial plan, or an investment adviser's ongoing advice and monitoring for a fee typically based on the value of the assets in your account; the SEC's Form ADV bulletin treats the amount of client assets managed (AUM) as a required Part 2A disclosure; Form CRS states that an asset-based fee may cost more than a transaction fee but suits ongoing advice or delegated decisions.",
+ "conditions": "US readers; securities investment management; no fee figures or regulatory-AUM thresholds asserted beyond the sources read; wealth-management and fee-crossover questions are left to existing pages.",
+ "whatWouldChange": "A professional who is broker-only (paid per transaction), a balance small enough that an asset-based or subscription fee is a large share, or an SEC change to the disclosure forms.",
+ "basis": "reported",
+ "method": "Reported primary-source synthesis; no test or model.",
+ "whyNoQuantitativeAnalysis": "The reader decision is procedural or definitional and rests on regulator statements; no defensible numerical input exists beyond source figures, so arithmetic would only restate them.",
+ "reasoning": "From the saved primary pages in sources.md to the answer: Investor.gov frames investment management as either your own responsibility, starting from a financial plan, or an investment adviser's ongoing advice and monitoring for a fee typically based on the value of the assets in your account; the SEC's Form ADV bulletin treats the amount of client assets managed (AUM) as a required Part 2A disclosure; Form CRS states that an asset-based fee may cost more than a transaction fee but suits ongoing advice or delegated decisions.",
+ "sourceArtifacts": [
+  {
+   "path": "evidence/what-is-investment-management/sources.md",
+   "sha256": "b5c986ed0abacd492280d95c2ff36c97203245066861d45ede3cfc5a8b227a06"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.investor.gov_introduction-investing_getting-started_working-investment-professional_investment-advisers",
+   "sha256": "ffda7445ecd73d962912bb3ead41eca63f60c2bd345b4af5908368d646816d38"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_investor-bulletins-71",
+   "sha256": "953e89fd695e8cd41b47b9fc76382e695de82d904f09d46dc2fe0c657e8086d7"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/investor.gov_CRS-2026-11-09.txt",
+   "sha256": "183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.investor.gov_introduction-investing_getting-started_investing-your-own",
+   "sha256": "022592e5e1ce0485059a3d0318ca0c2d90c3071e6b2eec9b5e40bfd7f5477068"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.investor.gov_introduction-investing_getting-started_working-investment-professional",
+   "sha256": "527060a93bc96c0c3a9cf3c764724cc66a9801a8afcb19d3b9d9e881759a7a51"
+  }
+ ],
+ "caseSelection": {
+  "path": "evidence/what-is-investment-management/cases.json",
+  "sha256": "aae6df5d1ae6f50791180925fdc5e8c4782a0e8dee86c367fab3025e9bba0422"
+ },
+ "caseDecisions": "Approved-case lookup run for the exact reader question (cases.json). This site has no named-client claims in _experience.md; no case or client-conversation claim is used.",
+ "provenance": {
+  "basis": "reported",
+  "supportingRecordIds": [
+   "INV-advisers",
+   "INV-bulletin-formadv",
+   "INV-CRS",
+   "INV-own",
+   "INV-working"
+  ],
+  "scopeAndLimits": "US readers; securities investment management; no fee figures or regulatory-AUM thresholds asserted beyond the sources read; wealth-management and fee-crossover questions are left to existing pages.",
+  "publicMethod": "Sources linked in-line and in a Sources list; third-person attribution to the named body beside each finding.",
+  "placement": "Opening section and Takeaway name the regulator as the basis; no \"we tested\" or modeling claim; editorial judgments labeled as such."
+ },
+ "sources": [
+  {
+   "id": "INV-advisers",
+   "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers",
+   "checkedAt": "2026-11-10",
+   "scope": "Investor.gov: investment advisers are required to act in your best interest and not put their interest ahead of yours; the way advisers make money creates confl"
+  },
+  {
+   "id": "INV-bulletin-formadv",
+   "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71",
+   "checkedAt": "2026-11-10",
+   "scope": "SEC OIEA Investor Bulletin \"Form ADV - Investment Adviser Brochure and Brochure Supplement\" (June 24, 2016, updated Aug. 27, 2020). Form ADV is the uniform regi"
+  },
+  {
+   "id": "INV-CRS",
+   "url": "https://www.investor.gov/CRS",
+   "checkedAt": "2026-11-09",
+   "scope": "Investor.gov/CRS (captured 2026-11-09): registered broker-dealers and registered investment advisers must provide a relationship summary (Form CRS) to retail in"
+  },
+  {
+   "id": "INV-own",
+   "url": "https://www.investor.gov/introduction-investing/getting-started/investing-your-own",
+   "checkedAt": "2026-11-10",
+   "scope": "Investor.gov Investing on Your Own: first step is a financial plan (how much, how long, goals, risk tolerance); when investing on your own you are responsible f"
+  },
+  {
+   "id": "INV-working",
+   "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional",
+   "checkedAt": "2026-11-10",
+   "scope": "Investor.gov: working with an investment professional (fetched 2026-11-10); used for the registration-check and Check Out Your Investment Professional tool refe"
+  }
+ ],
+ "exclusions": "TESTED format excluded (financial services outside _experience.md section G; no executed tests).",
+ "unknowns": "Measured search volume, SERP and PAA unavailable; vendor-specific fees only from existing dated site pages.",
+ "selectedMedium": "text",
+ "mediumReason": "Procedural or definitional answer; a table carries the finite comparison; no calculator adds value."
+}

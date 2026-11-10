@@ -1,0 +1,292 @@
+{
+ "slug": "what-is-investment-management",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1572,
+ "floor": 1200,
+ "input_tokens": 24843,
+ "output_tokens": 3131,
+ "thinking_tokens": 1295,
+ "cached_tokens": 21695,
+ "est_cost_usd": 0.0206,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['What Is Investment Management and Whether to Invest on Your Own', 'Services That Explain What Investment Management Covers', 'What Assets Under Management Means for Account Fees', 'Decision Framework for Managing Investments or Hiring an Adviser', 'Steps to Check an Investment Adviser Before Hiring'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1572,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 601,
+   "floor": 1200,
+   "ratio": 0.5,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    14,
+    11,
+    7
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "Understanding this distinction clarifies who controls your daily investment choices and how fees reduce total returns over time.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that fees reduce total returns over time."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "You must evaluate market risks, execute asset reallocations, and maintain your target portfolio balance independently.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state evaluating market risks or maintaining portfolio balances."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Advisers generally provide ongoing recommendations about buying, selling, or holding securities, making them fundamentally different from self-directed accounts.",
+     "replacement": "Advisers generally provide ongoing recommendations about buying, selling, or holding securities.",
+     "type": "inference",
+     "why": "SOURCE does not state that ongoing recommendations make advisers fundamentally different."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "They review portfolio positions regularly to verify that your asset allocation aligns with your stated risk tolerance.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state reviewing positions to verify asset allocation against risk tolerance."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "In non-discretionary arrangements, the adviser provides recommendations, but you retain final approval over every individual trade.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state non-discretionary arrangements or trade approval rules."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "According to the [Securities and Exchange Commission (SEC) investor bulletin on Form ADV](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71), an adviser must disclose its total amount of client assets managed in Item 4 of Form ADV Part 2A.",
+     "replacement": "According to the [Securities and Exchange Commission (SEC) investor bulletin on Form ADV](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71), an adviser must disclose the amount of client assets managed in Form ADV Part 2A.",
+     "type": "unsupported",
+     "why": "SOURCE does not number the advisory business disclosure as Item 4."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "The Form CRS disclosure guidance explains that an asset-based fee can cost more than transaction-based fees if you trade infrequently.",
+     "replacement": "The Form CRS disclosure guidance explains that an asset-based fee can cost more than transaction-based fees.",
+     "type": "inference",
+     "why": "SOURCE does not state that asset-based fees cost more if you trade infrequently."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Deciding between self-directed investing and hiring an investment adviser requires assessing your time, financial discipline, and portfolio complexity.",
+     "replacement": "Deciding between self-directed investing and hiring an investment adviser depends on required services, total costs, and potential conflicts.",
+     "type": "unsupported",
+     "why": "SOURCE does not state time, financial discipline, or portfolio complexity."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Delegate discretionary or non-discretionary trades",
+     "replacement": "Delegate discretionary trades",
+     "type": "unsupported",
+     "why": "SOURCE does not state non-discretionary trades."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "You can also run background searches through the [Investor.gov professional search tool](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional) and the [Financial Industry Regulatory Authority (FINRA) BrokerCheck tool](https://brokercheck.finra.org).",
+     "replacement": "You can also run background searches through the [Investor.gov professional search tool](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional) and [BrokerCheck](https://brokercheck.finra.org).",
+     "type": "unsupported",
+     "why": "SOURCE does not name the Financial Industry Regulatory Authority (FINRA)."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "If you prefer to direct your own trades, set your own asset allocations, and accept personal responsibility for your financial results, paying an adviser reduces returns without adding value.",
+     "replacement": "Hiring an adviser does not fit if you want self-direction and accept responsibility for every decision.",
+     "type": "unsupported",
+     "why": "SOURCE does not state paying an adviser reduces returns without adding value."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Self-directed investors can access diversified securities directly through online brokerages and dividend reinvestment plans without ongoing management fees.",
+     "replacement": "Investor.gov notes that ways to invest on your own include online investing, direct investing, and dividend reinvestment plans.",
+     "type": "unsupported",
+     "why": "SOURCE states ways include online investing, direct investing, and dividend reinvestment plans."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "In those circumstances, self-directed investing or transactional brokerage services can prove more economical.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that self-directed investing proves more economical."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Our comparison of a [financial advisor vs wealth manager](/compare/financial-advisor-vs-wealth-manager/) explains how industry titles and broader service bundles differ in scope.",
+     "replacement": "Our comparison of a [financial advisor vs wealth manager](/compare/financial-advisor-vs-wealth-manager/) covers the difference between the titles.",
+     "type": "unsupported",
+     "why": "SOURCE states the comparison covers the difference between the titles."
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we find that readers evaluate what is investment management when deciding whether to manage accounts directly or hire an adviser.",
+     "replacement": "At ModernWallet, we show the math, name what moves it, and explain the tradeoff.",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not support site finding what readers evaluate."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Advisers also offer optional financial planning services alongside daily portfolio management.",
+     "replacement": "Advisers may also offer optional financial planning services alongside ongoing portfolio monitoring.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that advisers provide daily portfolio management."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "In discretionary accounts, an adviser executes trades to buy or sell securities without asking for your prior approval before each transaction.",
+     "replacement": "In discretionary accounts, an adviser makes trades and delegated decisions.",
+     "type": "unsupported",
+     "why": "SOURCE does not state discretionary trades occur without prior approval per transaction."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Assets under management (AUM) represents the total dollar amount of client assets an investment manager oversees.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "Constraint forbids defining AUM beyond the required Part 2A disclosure."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Investor.gov states that an adviser's fee is typically calculated as an ongoing percentage based on the value of all assets held in your account.",
+     "replacement": "Investor.gov states that an adviser's fee is typically based on the value of all of the assets held in your account with the adviser.",
+     "type": "unsupported",
+     "why": "Investor.gov states fee is based on account value, not ongoing percentage."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Asset-based pricing means the absolute fee changes whenever the total value of your account rises or falls.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state how absolute fees change with account value."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Pay standard transaction or fund fees",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not state self-directed investors pay standard transaction or fund fees."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Because asset-based fees are deducted directly from account assets, ongoing advisory fees can consume a larger share of net returns on modest balances, especially when combined with underlying fund expenses and custodian charges.",
+     "replacement": "An asset-based fee can represent a larger share of a small account balance.",
+     "type": "unsupported",
+     "why": "SOURCE does not state advisory fees consume net returns on modest balances."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Assets under management (AUM) is the total dollar amount of client assets an investment manager oversees.",
+     "replacement": "The SEC bulletin lists the amount of client assets an adviser manages as a required Part 2A advisory-business disclosure.",
+     "type": "contradicted",
+     "why": "Constraint forbids defining AUM beyond the required Part 2A disclosure."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "SEC Form ADV Part 2A requires investment advisers to disclose this figure in their narrative brochure to describe the scale of their advisory business.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state the disclosure describes the scale of advisory business."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Assets under management fees are advisory charges calculated as a percentage of the total value of assets in your managed account.",
+     "replacement": "Assets under management fees are advisory charges typically based on the value of all assets held in your account with the adviser.",
+     "type": "unsupported",
+     "why": "Investor.gov states fee is based on account value, not percentage."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Dual-registered firms operate under both models, so you must establish whether your professional acts as a broker or as an adviser on each trade.",
+     "replacement": "Dual-registered firms operate under both models, so you should understand when they act as a broker and when as an adviser.",
+     "type": "unsupported",
+     "why": "SOURCE states understanding when they act as broker or adviser, not on each trade."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "This item describes the firm's advisory business and operational scope.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE lists advisory business services and assets managed, not operational scope."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Our [flat-fee vs AUM financial advisers comparison](/compare/flat-fee-vs-aum-based-financial-advisors/) covers how different pricing models compare over long investment horizons.",
+     "replacement": "Our [flat-fee vs AUM financial advisers comparison](/compare/flat-fee-vs-aum-based-financial-advisors/) covers the cost math for these pricing models.",
+     "type": "unsupported",
+     "why": "SOURCE specifies linking the comparison for cost math, not long investment horizons."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "You can also run background searches through the [Investor.gov professional search tool](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional) and [BrokerCheck](https://brokercheck.finra.org).",
+     "replacement": "You can also run background searches through the [Investor.gov professional search tool](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional).",
+     "type": "unsupported",
+     "why": "SOURCE fact list does not mention BrokerCheck."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Hiring an adviser may also be disadvantageous for individuals with smaller account balances.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state hiring is disadvantageous for smaller balances."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Your optimal approach changes if you only need infrequent trade execution rather than ongoing portfolio supervision.",
+     "replacement": "Your approach changes if you only need infrequent trade execution rather than ongoing portfolio supervision.",
+     "type": "unsupported",
+     "why": "SOURCE does not use the evaluative word optimal."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Assets under management functions as both a measure of portfolio size and a basis for ongoing advisory billing.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not define AUM as a measure of portfolio size."
+    }
+   ],
+   "deleted_final": 7,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 1837
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 424.7,
+ "response_id": "-MLyavSHFOq1xdIP1IuHsQ8",
+ "generated_at": "2026-11-10T07:15:44+0000"
+}

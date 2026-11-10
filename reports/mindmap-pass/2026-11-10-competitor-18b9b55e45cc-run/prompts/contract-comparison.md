@@ -1,0 +1,8 @@
+# OUTPUT CONTRACT
+Return ONE JSON object with exactly these keys: updated, slug, title, metaDescription, targetKeyword, optionA, optionB, segment, h1, introText, comparisonTable, verdict, sections, faqs, sources, relatedComparisons, calculatorLinks — the same shape as the imitate-this page.
+- introText: one string; paragraphs separated by \n\n. comparisonTable: {"rows":[{"dimension","a","b"}]} with 6 to 8 rows. verdict: one string. sections: array of {heading, content}; content is markdown (links as [label](url), GFM tables, "- " bullets). No HTML. faqs: [{question, answer}].
+- title is 60 characters or fewer and names both options. optionA = "Robo-Advisor", optionB = "Human Financial Advisor".
+- Headings: Title Case noun phrases; at most one heading opens with the primary keyword. FAQ questions use sentence case.
+- sources: [{label,url}] drawn only from the CLOSED URL LIST in the row prompt. relatedComparisons: slugs from ["financial-advisor-vs-financial-planner","financial-advisor-vs-wealth-manager","flat-fee-vs-aum-based-financial-advisors","ai-investing-vs-robo-advisors"]. calculatorLinks: [{"label":"Investing calculator","href":"/investing/"}] style, hrefs from /investing/, /retirement/, /portfolio/.
+- Brand first-"we" rule: OPERATOR register. The first company claim says "At ModernWallet, we ..." (once per page; later "we" stays bare). Brand: ModernWallet.
+- Disclaimers never appear in the intro or first section. Never write a byline, reviewer line or "last updated" sentence in prose. Never claim we tested a product, spoke with clients, or have a professional reviewer.

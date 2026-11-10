@@ -1,0 +1,85 @@
+er a resolution, a workaround, a tradeoff to accept, or a link to where it is handled. Any one occurrence FAILS. Report `dead-end: "[text]"` and state what the reader is left holding. The fix resolves it, routes it to a page that does, or deletes the sentence.
+- **Say-it-out-loud** — read each sentence aloud. Any sentence a person would not speak to a colleague FAILS. Report `unsayable: "[text]"`.
+- **Placeholder nouns** — a sentence whose nouns are all abstractions (`problem`, `platform`, `solution`, `option`, `approach`, `thing`, `piece`, `area`, `aspect`, `move`, `one`) with nothing concrete a reader can picture FAILS. Report `no-concrete-noun: "[text]"`.
+- **Restatement** — a sentence that repeats its predecessor's idea in different words FAILS. The predecessor can be the previous body sentence or the subtitle/deck. Report `restatement: "[both sentences]"`. The fix deletes the repeat (the intro sentence, not the subtitle).
+- **Backward pronoun** — a pronoun or "one"/"it"/"that" whose antecedent is in a previous sentence, forcing a re-read, FAILS. Report `backward-pronoun: "[text]"`.
+- **Nominalized instruction** — an `-ing` or `-tion` subject hiding an action ("Naming the problem first separates…") FAILS. Report `nominalization: "[text]"`.
+- **Wrong collocation** — words that do not naturally go together ("platforms answer problems") FAIL. Report `collocation: "[text]"`.
+- **Abstract metaphor for a plain verb** — "separates X from Y", "points at", "drives the cost" where a concrete verb exists. FAILS. Report `abstract-verb: "[text]"`.
+
+For each, quote the sentence and give the plain-English rewrite. If you cannot write a plain rewrite because you cannot tell what the sentence means, say so; that is the strongest possible fail.
+
+### Phrasing tells (two or more = FAIL)
+
+- Throat-clearing section openers: "When it comes to…", "In today's fast-paced world…", "In the ever-evolving landscape of…", "In an age where…".
+- Empty tricolons that add no information ("efficient, effective, and scalable", "powerful, flexible, and easy to use").
+- Hedged non-conclusions that refuse to commit ("ultimately, the right choice depends on your specific needs and goals", "there's no one-size-fits-all answer").
+- LLM-signature filler: "delve into", "leverage" (as a verb), "navigate the complexities of", "unlock the power of", "in the realm of", "a testament to", "it's worth noting that", "that being said".
+- Symmetrical listicle padding where every bullet is the same length and shape with no concrete specifics.
+
+A page can carry one isolated phrasing tell and still pass; two or more is the fail line. Any single-instance ban above fails on its own.
+
+---
+
+## SCOPE
+
+Applies to all reader-facing **text** — new pages, body-text updates, enrichments, and tool copy. Exempt: spec-only rows, pure technical/indexability fixes, and non-prose asset specs.
+
+**HEADLINES ARE IN SCOPE. This is the most commonly missed part of this file.** Every tell below applies to the H1, the SEO title, the meta description, the subtitle/deck/standfirst, every section heading, every FAQ question, and CTA copy — exactly as it applies to body paragraphs. These are the most-read text on the page and the text an AI extractor quotes first.
+
+Do not confuse two different exclusions. Headings and metadata are excluded from **body word counts** so they cannot pad a depth floor. They are NOT excluded from **this scan**. An audit that extracts body prose for word-counting and then scans only that extract has left every headline unchecked, which is how a tell reaches the top of a live page. Scan the headline fields separately and explicitly.
+
+Body edits are explicitly in scope. New pages and substantive body updates, enrichments or tool copy must pass independent Phase 4 review of the exact final rendered page under `_rendered-page-audit.md`. Metadata/link-only changes retain their existing reviewer gates. Unrelated historical style issues may remain advisory; inherited contradictions affecting the revised answer remain blockers.
+
+[Source: .claude/commands/_experience.md]
+# Experience — who "we" are on this site
+
+<!-- PER-REPO. NOT synced, NEVER overwritten by sync-standards.sh. Loaded by
+     _content-standard.md (## VOICE / ## ANCHOR). If ## DOMAIN is empty the run STOPS. -->
+
+## DOMAIN
+
+The Modern Wallet (themodernwallet.com) is a personal-finance site built around free calculators and plain-language money guides, with 400-plus pages spanning auto loans, mortgages, retirement, investing, rentals, and net worth. Our reader is making one concrete decision and wants an accurate number, fast, with no signup. We show the math, name what moves it, and explain the tradeoff.
+
+**General framings this section licenses** (editorial "we", no client roster required):
+
+- "In the guides we publish here..."
+- "What we see readers get wrong most often is..."
+- "Every guide we write starts from..."
+- "When we reviewed this ourselves..."
+
+These license a real editorial observation about work on this site. They never license a fabricated specific.
+
+---
+
+## SPECIFICS
+
+_(No named-client claims. This is a content property; the editorial "we" above is the voice.)_
+
+---
+
+### G — Products and models we test (added 2026-10-20)
+
+The site owner tests every product, app, software tool and AI model this site writes about. On roundup, review and comparison pages this licenses first-person testing claims about those items: "we tested", "in our testing", "we picked it because". It does not license invented specifics: no measurements, scores, benchmark figures, durations, test dates, prices paid, or test setups unless they appear in the row's fact list.
+
+It never covers medical treatments, clinics, drugs, the health effects of supplements, or legal, financial or professional services. Never claim to have tested those. See `_content-standard.md` ## TESTED for the required page format.
+
+
+[Source: .claude/commands/_workflow-checkpoints.md]
+
+<!-- fleet-author-defaults-v1 -->
+**Author defaults — owner instruction, 2026-10-29:** Apply `_content-standard.md`, “Existing site author by default; missing person never holds publication,” ahead of older generic named-reviewer rules. Reuse this site's established default/category author automatically. If no person exists, use the existing publisher/editorial identity or omit an optional personal byline; a person can be added later. Do not ask for an author/professional assignment, block preparation or publication, or fabricate credentials/review dates. The independent Phase 4 reviewer is an automatic agent; internal `author`/`reviewer` actor IDs remain distinct and are separate from the public byline. Keep source, safety/exclusion, rendered-page and live-verification checks.
+<!-- /fleet-author-defaults-v1 -->
+
+
+<!-- mindmap-unattended-publication-v1 -->
+**Unattended Mindmap authorization and recovery:** Apply `_mindmap-execution.md`, “Authorized unattended Mindmap: continue through publication,” before the default Phase 0/stop rules below. Explicitly authorized end-to-end routines record their existing authorization, save the complete independently reviewed chart and continue through publication without asking. Repair failures automatically; after the existing per-page repair limit, isolate only failed pages and their dependencies, rebuild/review the passing subset, then publish and verify that subset. Preserve mandatory audits, exact rendered/live checks, professional review, local exclusions and authorization limits. Manual runs retain their Phase 0 gate and stop rules. A generated `ready-for-approval` chart is accepted after structural validation plus the separately recorded authorization; never rewrite it merely to change status.
+<!-- /mindmap-unattended-publication-v1 -->
+
+# Workflow checkpoints — complete instructions and evidence of application
+
+These are substeps of the existing workflow, not new phases or human gates. Preserve scope, professional review, local exclusions, schedules and the Phase 0 approval. A delivery log proves only that text was emitted; it does not prove comprehension, correct application, independent review or permission to publish.
+
+## Startup and complete reading
+
+Run `bash .claude/tools/workflow-start.sh` directly as a standalone command (add `--cloud` in cloud). Inspect its actual exit status. Never pipe it through `tail`, `head`, `tee` or another command, chain past failure, or treat a checkbox as proof. The wrapper's internal pipefail cannot protect its caller's pipeline. Startup returns a fresh `runId` after verification. Pass that exact ID via `--run-id <runId>` to subsequent startup checks and every `workflow-preflight.py prepare` in this same routine. Never reuse a previous routine's ID, including when starting another routine in the same chat. Runners may instead supply a fresh per-invocation `WORKFLOW_RUN_ID` consistently in their environment. For the legacy standards loader, use `WORKFLOW_RUN_ID=<runId> bash .claude/tools/load-standards.sh <ro
