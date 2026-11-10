@@ -6,7 +6,27 @@
         "path": "reports/competitor-monitor/harvests/013b8ca91ef85cb5a7be4757edfeebca409b67b095ff1d341f972f1cdec97947.json",
         "sha256": "013b8ca91ef85cb5a7be4757edfeebca409b67b095ff1d341f972f1cdec97947"
       },
-      "complete": false
+      "blockedEvidence": {
+        "failure": {
+          "blockingKind": "external-service",
+          "evidence": [
+            {
+              "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc.md",
+              "sha256": "affb0c6e42c65f1f40f558cbda923bffc399486b0e971c5e53b8d62815d1a4e0"
+            }
+          ],
+          "intakeSha256": "18b9b55e45ccb60c43b868b5825bc0008f192b06daa118dfb508fd17b0b2f9a1",
+          "nextAction": "Provide CONTENT_ANTHROPIC_KEY (or GEMINI_API_KEY/OPENAI_API_KEY) to the cloud routine and resume this intake: review reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc.md with an independent reviewer, run the build, audit, publish and live verification, then record dispositions.",
+          "reason": "Phase 3 content generation is unavailable: scripts/lib/content_gen.py preflight reports KEY MISSING for every model in the chain (claude-opus-5-5, gemini-3.8-flash, gpt-6-sol), no secrets file or env key exists in this cloud run, and the contract forbids the agent writing pages itself. The distinct independent chart/Phase 4 reviewer also could not be spawned from this worker.",
+          "recoveryAttempted": true,
+          "status": "blocked"
+        },
+        "intake": "18b9b55e45ccb60c43b868b5825bc0008f192b06daa118dfb508fd17b0b2f9a1",
+        "scope": "Recorded claimed blocker evidence only; not an editorial PASS, publication or independent proof that a command executed.",
+        "session": "cse_01YLDLKD6fRmcLr5JU4HR2Y4"
+      },
+      "complete": false,
+      "workBranch": "claude/blissful-franklin-tp5rhw"
     },
     "9031ce2b2c8974afc4646b5986d7170e971fddf9df6302947640bf6f76d2df8d": {
       "chartHistory": [
@@ -88,7 +108,8 @@
       "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/readiness.md": "3261487a7295ec4821c3c9af9c434417e355550640aa81b17f080db9e8350f35",
       "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/serp.json": "cab89a7987575f6accdc42e9ee22592c1f150768c10dc44078bbe3a179d3cbe1",
       "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/sources/key-facts.md": "8dc35e46b064987e06b19993407b8deb916fb19e448d7f66cd65ca2dc175a5c6",
-      "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/volumes.json": "3258fec98b0d3f9dc862fb9b5991d0efb07c524194a57c7bb3106481b3826655"
+      "reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/volumes.json": "3258fec98b0d3f9dc862fb9b5991d0efb07c524194a57c7bb3106481b3826655",
+      "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc.md": "affb0c6e42c65f1f40f558cbda923bffc399486b0e971c5e53b8d62815d1a4e0"
     }
   },
   "slots": [],
