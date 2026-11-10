@@ -1,0 +1,619 @@
+{
+  "liveSnapshot": "c9c5c3a9f9009ef0f509391381170876f0cb2d2c194c15528ca67b02257560ff",
+  "links": {
+    "https://adviserinfo.sec.gov": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://adviserinfo.sec.gov/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://brokercheck.finra.org": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://brokercheck.finra.org/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.finra.org/investors/investing/investment-accounts/brokerage-accounts/account-transfers": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.investor.gov/CRS": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-45": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/subscription-based-advisory-fees": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.investor.gov/introduction-investing/getting-started/investing-your-own": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.investor.gov/introduction-investing/investing-basics/glossary/form-adv": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.layer3labs.io": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty": {
+      "status": 403,
+      "result": "unconfirmed"
+    },
+    "https://www.themodernwallet.com/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/529-savings-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/about/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/annuity-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/auto-loan/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/biweekly-mortgage-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/budget/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/business-line-of-credit/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/business-loan-payoff/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/calculators/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/car-loan-interest-deduction-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/cash-conversion-cycle/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/cd-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/charitable-donation-tax-deduction-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/checklists/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/coast-fire/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/commercial-mortgage-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/15-year-vs-30-year-mortgage/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/401k-vs-roth-ira/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/529-vs-roth-ira/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/ai-investing-vs-robo-advisors/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/etf-vs-mutual-fund/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/financial-advisor-vs-cpa/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/financial-advisor-vs-financial-planner/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/financial-advisor-vs-wealth-manager/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/fixed-vs-arm-mortgage/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/flat-fee-vs-aum-based-financial-advisors/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/hsa-vs-fsa/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/hysa-vs-money-market/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/llc-vs-s-corp/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/robo-advisor-vs-financial-advisor/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/roth-401k-vs-traditional-401k/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/stocks-vs-bonds/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/compare/va-loan-vs-conventional-loan/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/contact/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/credit-card-interest-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/credit-card-payoff/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/debt-consolidation-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/debt-to-income-ratio-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/editorial-policy/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/elder-care/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/emergency-fund-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/estate-planning/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/expense-ratio-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/florida-amendment-3-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/freelance-rate/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/financial-advisor-conflicts-of-interest/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/financial-advisor-worth-it/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/first-time-home-buyer-guide/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/how-to-buy-a-car/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/how-to-choose-a-financial-advisor/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/how-to-read-form-adv/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/qbi-deduction-explained/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/questions-to-ask-a-financial-advisor/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/what-does-a-financial-advisor-do/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/what-is-a-cfa/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/what-is-a-cfp/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/what-is-a-ctfa/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/what-is-a-fiduciary/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/what-is-a-registered-investment-advisor/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/what-is-a-robo-advisor/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/guides/when-to-switch-financial-advisors/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/heloc-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/hidden-cost-of-owning-a-home-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/hurricane-deductible-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/hysa-vs-cd-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/inflation-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/interest-per-day/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/investing/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/invoice-factoring/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/iul-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/life-insurance-needs/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/loan-payment-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/merchant-cash-advance/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/methodology/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/mileage-deduction/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/mileage-reimbursement-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/mortgage-recast-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/mortgage/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/net-worth/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/operating-cash-flow/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/pay-off-mortgage-or-invest-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/personal-loan/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/portfolio-rebalancing-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/portfolio/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/privacy-policy/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/probate/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/pto-cashout/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/real-estate/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/rent-vs-buy-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/retirement/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/roth-vs-traditional-401k-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/roundup/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/roundup/best-401k-providers-for-small-business/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/roundup/best-accounting-software-for-freelancers/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/roundup/best-budgeting-apps-for-couples/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/roundup/best-invoicing-apps-for-freelancers/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/roundup/best-mileage-tracker-apps/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/roundup/best-money-market-accounts/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/roundup/best-net-worth-tracker/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/roundup/best-retirement-accounts-for-self-employed/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/roundup/best-robo-advisors/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/s-corp-tax/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/self-employment-tax/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/social-security-break-even-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/social-security-cola-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/social-security-taxable-benefits-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/sponsor": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/sponsor?from=%2Fcompare%2Frobo-advisor-vs-financial-advisor%2F": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/stock-capital-gains-tax-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/student-loan-wage-garnishment-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/tax-bracket-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/tax-resolution/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/taxable-vs-tax-deferred/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/templates/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/templates/expense-report-template/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/templates/freelance-contract-template/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/templates/freelance-invoice-template/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/templates/mileage-log-template/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/templates/retainer-agreement-template/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/templates/statement-of-work-template/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/trump-account-vs-529-calculator/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/trump-account/": {
+      "status": 200,
+      "result": "reachable"
+    },
+    "https://www.themodernwallet.com/zakat/": {
+      "status": 200,
+      "result": "reachable"
+    }
+  },
+  "renderedExclusions": {
+    "/compare/robo-advisor-vs-financial-advisor/": {
+      "declaredExclusions": [
+        "we tested",
+        "We tested",
+        "our testing",
+        "In our internal",
+        "Tested and reviewed"
+      ],
+      "matches": []
+    },
+    "/guides/when-to-switch-financial-advisors/": {
+      "declaredExclusions": [
+        "we tested",
+        "We tested",
+        "our testing",
+        "In our internal",
+        "Tested and reviewed"
+      ],
+      "matches": []
+    },
+    "/guides/how-to-read-form-adv/": {
+      "declaredExclusions": [
+        "we tested",
+        "We tested",
+        "our testing",
+        "In our internal",
+        "Tested and reviewed"
+      ],
+      "matches": []
+    },
+    "/guides/what-is-investment-management/": {
+      "declaredExclusions": [
+        "we tested",
+        "We tested",
+        "our testing",
+        "In our internal",
+        "Tested and reviewed"
+      ],
+      "matches": []
+    },
+    "/guides/how-to-choose-a-financial-advisor/": {
+      "declaredExclusions": [],
+      "matches": []
+    }
+  }
+}

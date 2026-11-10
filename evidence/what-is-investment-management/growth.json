@@ -1,16 +1,42 @@
 {
- "originRoutine": "competitor-monitor-auto",
- "queryFamily": "what is investment management; what is aum",
- "hypothesis": "A dedicated primary-source page earns clicks for a query family the site does not answer today; unproven",
- "primaryMetric": "GSC clicks",
- "baseline": {
-  "status": "unavailable",
-  "reason": "No verified pre-change GSC extract in the run evidence; retry historical date-filtered extraction during the existing measurement routine.",
-  "priorSpecification": "unavailable (new route, not zero)"
- },
- "comparatorPlan": "age-matched new guides",
- "changeScope": "new route",
- "sourceRefreshTrigger": "Rule or form change at the cited bodies",
- "outcomeStatus": "not-yet-published",
- "path": "/guides/what-is-investment-management/"
+  "originRoutine": "competitor-monitor-auto",
+  "queryFamily": "what is investment management; what is aum",
+  "hypothesis": "A dedicated primary-source page earns clicks for a query family the site does not answer today; unproven",
+  "primaryMetric": "GSC clicks",
+  "baseline": {
+    "status": "unavailable",
+    "reason": "No verified pre-change GSC extract in the run evidence; retry historical date-filtered extraction during the existing measurement routine.",
+    "priorSpecification": "unavailable (new route, not zero)"
+  },
+  "comparatorPlan": "age-matched new guides",
+  "changeScope": "new route",
+  "sourceRefreshTrigger": "Rule or form change at the cited bodies",
+  "outcomeStatus": "not-yet-published",
+  "path": "/guides/what-is-investment-management/",
+  "contributionId": "evidence/what-is-investment-management/growth.json",
+  "growthFile": "evidence/what-is-investment-management/growth.json",
+  "evidenceFile": "evidence/what-is-investment-management/evidence.json",
+  "commit": "a50342197d759d5d31d76e64904e0a92bf67fe5c",
+  "status": "live-verified",
+  "firstVerifiedLiveAt": "2026-11-10T08:28:27.986963+00:00",
+  "verifiedAt": "2026-11-10T08:28:27.986963+00:00",
+  "snapshotSha256": "c9c5c3a9f9009ef0f509391381170876f0cb2d2c194c15528ca67b02257560ff",
+  "deployment": {
+    "commit": "a50342197d759d5d31d76e64904e0a92bf67fe5c",
+    "status": "live",
+    "evidenceUrl": "https://github.com/jht243/modernwallet/commit/a50342197d759d5d31d76e64904e0a92bf67fe5c",
+    "liveUrl": "https://www.themodernwallet.com/guides/what-is-investment-management/",
+    "verifiedAt": "2026-11-10T08:28:50Z",
+    "note": "origin/main contains the commit (git ls-remote); published src/data blobs identical to the reviewed working tree; live HTTP 200 on all 10 routes; rendered-audit compare: live render matches approved render for the five-route projection, and all 10 live fingerprints equal the round-3 approved snapshot"
+  },
+  "windows": {
+    "days1to28": {
+      "start": "2026-11-11",
+      "end": "2026-12-08"
+    },
+    "days29to56": {
+      "start": "2026-12-09",
+      "end": "2027-01-05"
+    }
+  }
 }

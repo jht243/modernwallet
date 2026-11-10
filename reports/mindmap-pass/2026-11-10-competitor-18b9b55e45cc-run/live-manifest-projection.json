@@ -1,0 +1,79 @@
+{
+ "author": "mindmap-builder-ae12db",
+ "canonicalBase": "https://www.themodernwallet.com",
+ "workflowKind": "mindmap-pass",
+ "routes": [
+  {
+   "path": "/compare/robo-advisor-vs-financial-advisor/",
+   "expectedUpdatedDate": "2026-11-10",
+   "requiredText": [
+    "Robo-Advisor vs Financial Advisor"
+   ],
+   "forbiddenText": [
+    "we tested",
+    "We tested",
+    "our testing",
+    "In our internal",
+    "Tested and reviewed"
+   ],
+   "growthFile": "evidence/robo-advisor-vs-financial-advisor/growth.json",
+   "evidenceFile": "evidence/robo-advisor-vs-financial-advisor/evidence.json"
+  },
+  {
+   "path": "/guides/when-to-switch-financial-advisors/",
+   "expectedUpdatedDate": "2026-11-10",
+   "requiredText": [
+    "When Should You Switch Financial Advisors",
+    "Our Takeaway"
+   ],
+   "forbiddenText": [
+    "we tested",
+    "We tested",
+    "our testing",
+    "In our internal",
+    "Tested and reviewed"
+   ],
+   "growthFile": "evidence/when-to-switch-financial-advisors/growth.json",
+   "evidenceFile": "evidence/when-to-switch-financial-advisors/evidence.json"
+  },
+  {
+   "path": "/guides/how-to-read-form-adv/",
+   "expectedUpdatedDate": "2026-11-10",
+   "requiredText": [
+    "Form ADV"
+   ],
+   "forbiddenText": [
+    "we tested",
+    "We tested",
+    "our testing",
+    "In our internal",
+    "Tested and reviewed"
+   ],
+   "growthFile": "evidence/how-to-read-form-adv/growth.json",
+   "evidenceFile": "evidence/how-to-read-form-adv/evidence.json"
+  },
+  {
+   "path": "/guides/what-is-investment-management/",
+   "expectedUpdatedDate": "2026-11-10",
+   "requiredText": [
+    "Investment Management",
+    "Our Takeaway"
+   ],
+   "forbiddenText": [
+    "we tested",
+    "We tested",
+    "our testing",
+    "In our internal",
+    "Tested and reviewed"
+   ],
+   "growthFile": "evidence/what-is-investment-management/growth.json",
+   "evidenceFile": "evidence/what-is-investment-management/evidence.json"
+  },
+  {
+   "path": "/guides/how-to-choose-a-financial-advisor/",
+   "requiredText": [],
+   "forbiddenText": [],
+   "expectedUpdatedDate": "2026-11-09"
+  }
+ ]
+}
