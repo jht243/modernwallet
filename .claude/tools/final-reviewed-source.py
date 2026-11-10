@@ -31,9 +31,21 @@ def prepare(root, base, dry_run=False):
         if log.parent != Path('reports/content-review-journals') or log.suffix != '.jsonl':
             continue
         events = [json.loads(line) for line in git(root,'show','HEAD:'+name).splitlines() if line]
-        if not events or events[-1]['kind']!='record':
+        if not events:
             continue
-        last = events[-1]['data']
+        last_event = events[-1]
+        pending = last_event['kind'] in ('reserve', 'repair-pending')
+        if pending:
+            if 'thirdReviewClaimCategories' not in config or last_event['data']['number'] < 3:
+                continue
+            # Only the preceding reviewed round of this cycle can be eligible.
+            prior = next((event for event in reversed(events[:-1]) if event['kind'] in ('record', 'begin', 'published')), None)
+            if not prior or prior['kind'] != 'record' or prior['data']['number'] + 1 != last_event['data']['number']:
+                continue
+            last_event = prior
+        if last_event['kind'] != 'record':
+            continue
+        last = last_event['data']
         if last['verdict']!='FAIL' or last.get('legacyImport'):
             continue
         maximum = last.get('maximumRounds',config['roundLimits'][last['profile']])
@@ -43,7 +55,7 @@ def prepare(root, base, dry_run=False):
             policy = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(policy)
             report = json.loads(exact_file(root, last['report']).read_bytes())
-            maximum = policy.recorded_limit(config, last['profile'], events[-1]['identity']['route'], report)
+            maximum = policy.recorded_limit(config, last['profile'], last_event['identity']['route'], report)
         if last['number'] < maximum:continue
         admit=json.loads(exact_file(root,last['admission']).read_bytes())
         snapshot=json.loads(exact_file(root,admit['snapshot']).read_bytes())

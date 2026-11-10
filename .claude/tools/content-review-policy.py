@@ -372,19 +372,20 @@ def reserve_without_checkpoint(root, snapshot_path, route, job, reviewer, out, p
             require(cycle['jobId']==job, 'Resume the existing canonical page job; renaming it does not reset the review budget')
             require(not prior_reports, 'Prior review history is already imported')
         ceiling = cycle.get('maximumRounds', audit_limit(policy(root), cycle['profile']))
-        if cycle['rounds'] and cycle['rounds'][-1]['status']=='pending':
-            require(cycle['rounds'][-1]['number'] <= ceiling, 'Review budget exhausted; release the latest completed review')
-            last = cycle['rounds'][-1];value=read(artifact(root,last['admission']))
-            require(value['fingerprint']==row['fingerprint'] and value['reviewer']==reviewer,
-                    'Finish or resume the pending review before starting another one')
-            return {**value,'admissionArtifact':last['admission']}
-        number = len(cycle['rounds'])+1
+        pending = bool(cycle['rounds'] and cycle['rounds'][-1]['status']=='pending')
+        number = cycle['rounds'][-1]['number'] if pending else len(cycle['rounds'])+1
         if number == 3 and ceiling == 3 and 'thirdReviewClaimCategories' in policy(root):
             current_text = claim_text(row['semantic'])
             retained = [claim for claim in cycle.get('lastRiskAssessment', {}).get('consequentialClaims', [])
                         if claim.get('quote') and claim['quote'] in current_text]
             current = (spec.get('riskAssessment') or {}).get('consequentialClaims', [])
             ceiling = audit_limit(policy(root), selected, {'consequentialClaims': retained + current})
+        if cycle['rounds'] and cycle['rounds'][-1]['status']=='pending':
+            require(cycle['rounds'][-1]['number'] <= ceiling, 'Review budget exhausted; release the latest completed review')
+            last = cycle['rounds'][-1];value=read(artifact(root,last['admission']))
+            require(value['fingerprint']==row['fingerprint'] and value['reviewer']==reviewer,
+                    'Finish or resume the pending review before starting another one')
+            return {**value,'admissionArtifact':last['admission']}
         require(number <= ceiling, 'Review budget exhausted for this page; retain findings and release the exact latest eligible review under the site policy')
         require(not any(x.get('reportObjectSha256') for x in cycle['rounds'] if x.get('verdict')=='PASS' and x.get('fingerprint')==row['fingerprint']),
                 'This exact page already passed; do not audit it again')
@@ -392,6 +393,9 @@ def reserve_without_checkpoint(root, snapshot_path, route, job, reviewer, out, p
                      'number':number,'provisionalProfile':cycle['profile'],'maximumRounds':ceiling,
                      'snapshot':reference(root,snapshot_path),'fingerprint':row['fingerprint'],
                      'author':snapshot['manifest']['author'],'reviewer':reviewer,'policySha256':policy_hash(root)}
+        if number == 3 and ceiling == 3 and 'thirdReviewClaimCategories' in policy(root):
+            admission['thirdAuditEligibility'] = [claim for claim in retained + current
+                                                 if claim.get('category') in policy(root)['thirdReviewClaimCategories']]
         save_exact(out,admission)
         journal.append('reserve',{'number':number,'admission':reference(root,out),'fingerprint':row['fingerprint'],'reviewer':reviewer})
         return {**admission,'admissionArtifact':reference(root,out)}
@@ -497,7 +501,10 @@ def record_without_checkpoint(root, report_path):
             if any(x.get('status')=='complete' and not x.get('legacyImport') for x in cycle['rounds']):
                 selected=max([selected,cycle['profile']],key=LEVELS.index)
             require(rr['reviewProfile']==selected, 'A later correction cannot lower the established risk to reset its budget')
-            require(number <= ceiling, 'This page has already used its content-review budget')
+            already_admitted_third = (number == 3 and admission.get('maximumRounds') == 3
+                                      and bool(admission.get('thirdAuditEligibility'))
+                                      and bool(policy(root).get('thirdReviewClaimCategories')))
+            require(number <= ceiling or already_admitted_third, 'This page has already used its content-review budget')
             journal.append('record',{'number':number,'admission':admission_ref,'report':freeze(root,report_path,journal.path.parent),
                                     'reportObjectSha256':digest(report),'profile':selected,'maximumRounds':ceiling,'verdict':rr['verdict'],
                                     'fingerprint':rr['fingerprint']})

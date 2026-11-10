@@ -53,6 +53,11 @@
       "sha256": "77c171ba3bc7821229cd020623e5f5f2f9f2932ab4364cd99cbc0e580ff7b896",
       "commit": "b27436b63764752f7853dc64eeb12a5001aceee5",
       "reason": "Keep the exact independently recorded candidates, judgments and counters from before the owner separated review depth from the three-audit eligibility rule."
+    },
+    {
+      "sha256": "7780f117cfe6de322f3ec685c97179f1fc2ebaa40288090b234717dc064d990d",
+      "commit": "e858c6e177eb6bba705f7ff7ce35258d7d984e06",
+      "reason": "Keep all independent reviews under the initial subject-based cap while retaining historical pending reservations and exact source restoration."
     }
   ],
   "releaseAtAuditLimit": true,
