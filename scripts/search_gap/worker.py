@@ -127,6 +127,40 @@ def recovery_preview(artifacts, approved, check_render):
     return proof
 
 
+def metadata_coverage(completion):
+    """Reuse an actual independent metadata audit for exact unchanged index entries."""
+    import ast
+    import re
+    covered=set()
+    for proof in completion.get('metadataOnly',[]):
+        commit=proof['sourceCommit']
+        require(re.fullmatch('[0-9a-f]{40}',commit),'Metadata approval needs its actual saved source commit')
+        for name in ('manifest','auditReceipt','approvedValues'):
+            path=proof[name]
+            require(not Path(path).is_absolute() and '..' not in Path(path).parts and path.startswith('reports/'),'Internal retained metadata evidence required')
+            raw=subprocess.check_output(['git','show',commit+':'+path])
+            require(raw==Path(path).read_bytes(),'Original metadata evidence changed')
+        manifest=read(proof['manifest']);audit=read(proof['auditReceipt'])
+        require(manifest['chartPath']==completion['chart'],'Metadata action belongs to another chart')
+        require(audit.get('verdict')=='PASS' and audit.get('auditor') and audit['auditor']!=audit.get('author') and audit['author']==manifest['author'],'Actual independent metadata judgment required')
+        action=next(a for a in manifest['actions'] if a['id']==proof['actionId'])
+        require(action['bucket']=='update existing metadata' and action['target']==proof['sourceFile'],'Metadata proof cannot substitute for an article change')
+        require(audit.get('routes',{}).get(proof['sourceFile']+' ('+proof['actionId']+')')=='PASS','Original auditor did not approve this metadata action')
+        source=Path(proof['sourceFile'])
+        require(not source.is_absolute() and '..' not in source.parts,'Internal metadata source required')
+        expected=read(proof['approvedValues']);current={}
+        for node in ast.parse(source.read_bytes()).body:
+            target=node.target if isinstance(node,ast.AnnAssign) else node.targets[0] if isinstance(node,ast.Assign) else None
+            if isinstance(target,ast.Name) and target.id==proof['assignment'] and isinstance(node.value,ast.Dict):
+                for key,value in zip(node.value.keys,node.value.values):
+                    if isinstance(key,ast.Constant) and key.value in expected:current[key.value]=ast.literal_eval(value)
+        require(current==expected,'Reviewed search-index entries changed; retain the actual findings')
+        require(set(proof['paths'])<=set(expected),'Metadata coverage includes an unreviewed destination')
+        require(not any(a.get('target') in proof['paths'] and a.get('bucket')!='update existing metadata' for a in manifest['actions']),'An article action still requires its complete rendered review')
+        covered.update(proof['paths'])
+    return covered
+
+
 def validate_completion(packet, completion, check_render=True):
     require(completion['site'] == packet['site'] and completion['runId'] == packet['runId'], 'Wrong site/run')
     chart = completion['chart']
@@ -145,6 +179,7 @@ def validate_completion(packet, completion, check_render=True):
         require(decision['status'] in ('published', 'no-addition', 'dropped', 'pending'), 'Invalid decision')
         require(len(decision.get('reason', '').strip()) >= 20, 'Concrete reason required')
     changed = {p for d in decisions if d['status'] == 'published' for p in d.get('paths', [])}
+    changed -= metadata_coverage(completion)
     require(all(d.get('paths') for d in decisions if d['status'] == 'published'), 'Published decision lacks routes')
     if changed:
         artifacts = completion['rendered']

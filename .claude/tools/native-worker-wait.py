@@ -17,6 +17,22 @@ def running(payload):
 def bind(payload):
  if payload.get('tool_name') not in ('Agent','Task'):return
  root=Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve()
+ # A recovered final search decision needs only mechanical completion.
+ sid=os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID') or payload.get('session_id')
+ if sid:
+  import subprocess
+  result=subprocess.run(['git','rev-parse','--git-path','search-gap-continuation/'+hashlib.sha256(sid.encode()).hexdigest()+'.json'],cwd=root,capture_output=True,text=True)
+  marker=Path(result.stdout.strip()) if result.returncode==0 else None
+  if marker and not marker.is_absolute():marker=root/marker
+  if marker and marker.is_file():
+   saved=json.loads(marker.read_bytes());file=(root/saved['completionFile']).resolve()
+   if not file.is_relative_to(root/'reports') or hashlib.sha256(file.read_bytes()).hexdigest()!=saved['sha256']:
+    print('Restore the exact retained search completion before dispatch.',file=sys.stderr);raise SystemExit(2)
+   value=payload.get('tool_input',{});role=str(value.get('subagent_type','')).lower();description=str(value.get('description','')).lower()
+   editorial=any(word in role or word in description for word in ('writer','write','audit','chart','decision review'))
+   repeat_build='build' in role or ('build' in description and 'preview' not in description)
+   if editorial or repeat_build:
+    print('This search job already has its independent final decisions. Reuse '+saved['completionFile']+' and perform only the separate-preview reconciliation and native finish. Preserve all reviews and counters.',file=sys.stderr);raise SystemExit(2)
  helper=root/'.claude/tools/competitor-handoff.py'
  inline=False
  if helper.is_file() and worker_tag(payload):

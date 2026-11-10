@@ -49,15 +49,19 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 ## STEP 1 — Get the questions
 ```
-SEARCH_SITE=themodernwallet.com node scripts/search_gap_worker.mjs list-gaps --days 1 --limit 200
+SEARCH_SITE=themodernwallet.com node scripts/search_gap_worker.mjs list-gaps --owner <this invocation actual fresh workflow runId> --out reports/search-gap/intake-current.json
 ```
 Returns `candidates: [{ term, kind, count, paths }]` — `kind:'search'` are zero-result nav searches (this site has no chat widget, so `kind:'chat'` will not appear). `paths` = the page they were on when they searched.
 
-`candidateCount: 0` → exit 0 silently.
+`candidateCount: 0` after a successful durable intake → no content stages. Complete the normal collector report.
 
 Requires `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`; missing → nonzero operational failure, never empty.
 
-## STEP 2 — There is no STEP 2. Send it all.
+## STEP 2 — Resume the saved job or dispatch a fresh intake
+
+Read nextAction, resumed, recoverySummary and checkpointFile before the candidate list. If recoverySummary.completionFile exists, restore the checkpoint and reuse that exact already-reviewed completion, its chartReview and original rendered evidence. Perform only its unfinished mechanical preview/deployment/finish work. Do not dispatch BUILD, repeat a decision review, rewrite content or allocate another content audit for that retained completion.
+
+For a fresh packet without a retained final completion, send the complete candidate list into native mindmap. The following no-filtering rules apply to that fresh intake.
 **Do not filter. Do not classify. Do not judge. Do not skip.** The candidate list from STEP 1 goes into the brief whole, exactly as returned. Both streams. Junk, gibberish, probing, off-mission, things you are certain we already cover — all of it. Mindmap decides what becomes a page, what becomes an enrichment of the page in `paths`, and what gets dropped. That is its job and it is better at it than you are.
 
 This routine has failed twice by pre-judging — once aliasing "already covered" terms, once ignoring "off-mission" ones — and both times real demand died before mindmap ever saw it while the run reported success. So there is no bucket, no filter, and no exception:
@@ -67,7 +71,7 @@ This routine has failed twice by pre-judging — once aliasing "already covered"
 - **No off-mission or junk call.** Not yours to make.
 - **No ignore list.** `data/search-gap-ignore.json` is no longer read or written by this routine. Do not add to it.
 
-If the same term comes back tomorrow, it goes to mindmap again. Re-deciding a term costs one cheap dedup check; silently dropping a real question costs a page you never wrote.
+New observations remain distinct demand. Unfinished observations retain their existing canonical job and genuine decisions, findings and counters. Never repeat completed stages for the same immutable intake, and never drop new events because older observations were resolved.
 
 ## Not this routine's job — repo checklists
 Do not add synthetic "we should also have X" rows to the brief (missing hub pages, series completeness, keyword wishlists). Those belong to the keyword/trend routines. On layer3 a checklist block once put 9 synthetic rows ahead of 20 real questions and consumed the run. The brief is what visitors searched for. Nothing else goes in it.

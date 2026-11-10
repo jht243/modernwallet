@@ -12,6 +12,7 @@ import sys
 import tempfile
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import worker as native
 
@@ -34,7 +35,7 @@ class Store(native.Store):
             time.sleep(2**attempt)
     def release_job(self,site,run,owner):
         # Conditional ownership filter cannot expire a different invocation's lease.
-        params=__import__('urllib.parse',fromlist=['urlencode']).urlencode({
+        params=urllib.parse.urlencode({
             'site':'eq.'+site,'run_id':'eq.'+run,'owner':'eq.'+owner,'status':'eq.active'})
         now=native.dt.datetime.now(native.dt.timezone.utc).isoformat()
         return self.request('search_gap_jobs?'+params,'PATCH',{'lease_until':now,'updated_at':now})
@@ -57,34 +58,66 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
         proposal=native.intake(site,Rows(),str(Path(folder)/'intake.json'))
         raw=Path(proposal['intakeFile']).read_text(encoding='utf-8')
     job=store.claim_job(site,owner,raw)
-    if job['status']=='refresh':
-        require(refresh_attempt<2,'Intake changed repeatedly; retain demand and retry')
-        return intake(site,store,output,owner,refresh_attempt+1)
-    require(job['status']!='busy','Another search run holds the active job lease; do not duplicate it')
-    checkpoints=[];resumed=False
-    if job['status']=='claimed':
-        raw=job['packetText'];require(hashlib.sha256(raw.encode()).hexdigest()==job['packetSha256'],'Saved intake bytes changed')
-        packet=json.loads(raw);resumed=packet['runId']!=proposal['runId'];checkpoints=job['checkpoints']
-    else:
-        require(job['status']=='empty','Unexpected job status');packet=json.loads(raw)
-    path=Path(output) if output else Path('reports/search-gap/intakes')/(packet['runId']+'.json')
-    require(not path.exists() or path.read_bytes()==raw.encode(),'Local intake differs from durable original; preserve it before recovery')
-    path.parent.mkdir(parents=True,exist_ok=True);path.write_text(raw,encoding='utf-8')
-    checkpoint_file=None
-    if checkpoints:
-        require(re.fullmatch(r'[A-Za-z0-9_-]{1,80}',packet['runId']),'Invalid recovery job ID')
-        result=subprocess.run(['git','rev-parse','--git-path','search-gap-recovery/'+packet['runId']+'/checkpoints.json'],check=True,capture_output=True,text=True)
-        checkpoint_file=Path(result.stdout.strip());checkpoint_file.parent.mkdir(parents=True,exist_ok=True,mode=0o700)
-        checkpoint_file.write_text(json.dumps(checkpoints),encoding='utf-8');checkpoint_file.chmod(0o600)
-    summary={k:checkpoints[-1].get(k) for k in ('stage','canonicalJobs','reviewCounters','gitRef','commit')} if checkpoints else None
-    retained=Path('reports/search-gap/recovery')/(digest(path)+'.json')
-    if resumed and retained.is_file():
-        saved=read(retained)
-        require(saved.get('intakeSha256')==digest(path) and saved.get('runId')==packet['runId'],'Saved completion belongs to another search job')
-        for ref in saved['artifacts']:
-            require(digest(artifact_path(ref['path']))==ref['sha256'],'Saved completed decision evidence changed')
-        summary=dict(summary or {},completionFile=saved['completionFile'],completionSourceCommit=saved['sourceCommit'])
-    return dict(packet,durableJob=True,intakeFile=str(path),intakeSha256=digest(path),resumed=resumed,checkpointFile=str(checkpoint_file) if checkpoint_file else None,checkpointCount=len(checkpoints),recoverySummary=summary)
+    try:
+        if job['status']=='refresh':
+            require(refresh_attempt<2,'Intake changed repeatedly; retain demand and retry')
+            return intake(site,store,output,owner,refresh_attempt+1)
+        require(job['status']!='busy','Another search run holds the active job lease; do not duplicate it')
+        checkpoints=[];resumed=False
+        if job['status']=='claimed':
+            raw=job['packetText'];require(hashlib.sha256(raw.encode()).hexdigest()==job['packetSha256'],'Saved intake bytes changed')
+            packet=json.loads(raw);resumed=packet['runId']!=proposal['runId'];checkpoints=job['checkpoints']
+        else:
+            require(job['status']=='empty','Unexpected job status');packet=json.loads(raw)
+        path=Path(output) if output else Path('reports/search-gap/intakes')/(packet['runId']+'.json')
+        require(not path.exists() or path.read_bytes()==raw.encode(),'Local intake differs from durable original; preserve it before recovery')
+        path.parent.mkdir(parents=True,exist_ok=True);path.write_text(raw,encoding='utf-8')
+        checkpoint_file=None
+        if checkpoints:
+            require(re.fullmatch(r'[A-Za-z0-9_-]{1,80}',packet['runId']),'Invalid recovery job ID')
+            result=subprocess.run(['git','rev-parse','--git-path','search-gap-recovery/'+packet['runId']+'/checkpoints.json'],check=True,capture_output=True,text=True)
+            checkpoint_file=Path(result.stdout.strip());checkpoint_file.parent.mkdir(parents=True,exist_ok=True,mode=0o700)
+            checkpoint_file.write_text(json.dumps(checkpoints),encoding='utf-8');checkpoint_file.chmod(0o600)
+        summary={k:checkpoints[-1].get(k) for k in ('stage','canonicalJobs','reviewCounters','gitRef','commit')} if checkpoints else None
+        retained=Path('reports/search-gap/recovery')/(digest(path)+'.json')
+        if resumed and retained.is_file():
+            saved=read(retained)
+            require(saved.get('intakeSha256')==digest(path) and saved.get('runId')==packet['runId'],'Saved completion belongs to another search job')
+            for ref in saved['artifacts']:
+                require(digest(artifact_path(ref['path']))==ref['sha256'],'Saved completed decision evidence changed')
+            summary=dict(summary or {},completionFile=saved['completionFile'],completionSourceCommit=saved['sourceCommit'])
+        if resumed and summary:
+            # A retained completion supplies its verified evidence source. Earlier checkpoint
+            # commits can be sandbox-only history and are not publication evidence.
+            revisions={summary.get('completionSourceCommit') or summary.get('commit')} - {None,''}
+            for revision in sorted(revisions):
+                if not isinstance(revision,str) or not re.fullmatch('[0-9a-f]{40}',revision):
+                    continue  # Older optional metadata remains available for native reconciliation.
+                exists=subprocess.run(['git','cat-file','-e',revision+'^{commit}'],capture_output=True)
+                if exists.returncode:
+                    subprocess.run(['git','fetch','--quiet','--no-tags','--no-write-fetch-head','origin',revision],check=True,capture_output=True)
+        action='Continue the existing native search workflow.'
+        if summary and summary.get('completionFile'):
+            action='Restore the checkpoint, reuse the already independently reviewed recoverySummary.completionFile, reconcile its separate preview, then finish. Do not dispatch BUILD, WRITE or another decision/content review.'
+            sid=os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID')
+            if sid:
+                name='search-gap-continuation/'+hashlib.sha256(sid.encode()).hexdigest()+'.json'
+                marker=Path(subprocess.check_output(['git','rev-parse','--git-path',name],text=True).strip())
+                marker.parent.mkdir(parents=True,exist_ok=True)
+                marker.write_text(json.dumps({'completionFile':summary['completionFile'],'sha256':digest(summary['completionFile']),'runId':packet['runId']}))
+        # Control and recovery state must precede the potentially long candidate list.
+        return dict(nextAction=action,resumed=resumed,recoverySummary=summary,durableJob=True,
+                    intakeFile=str(path),intakeSha256=digest(path),checkpointFile=str(checkpoint_file) if checkpoint_file else None,
+                    checkpointCount=len(checkpoints),**packet)
+    except Exception:
+        if job.get('status')=='claimed':
+            try:
+                retained=json.loads(job['packetText'])
+                store.release_job(site,retained['runId'],owner)
+            except Exception as release_error:
+                print('Intake lease release unconfirmed: '+type(release_error).__name__,file=sys.stderr)
+        raise
+
 
 def artifact_path(value):
     path=Path(value)
