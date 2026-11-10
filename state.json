@@ -1,6 +1,13 @@
 {
   "candidates": {},
   "competitorIntakes": {
+    "18b9b55e45ccb60c43b868b5825bc0008f192b06daa118dfb508fd17b0b2f9a1": {
+      "baselineObservation": {
+        "path": "reports/competitor-monitor/harvests/013b8ca91ef85cb5a7be4757edfeebca409b67b095ff1d341f972f1cdec97947.json",
+        "sha256": "013b8ca91ef85cb5a7be4757edfeebca409b67b095ff1d341f972f1cdec97947"
+      },
+      "complete": false
+    },
     "9031ce2b2c8974afc4646b5986d7170e971fddf9df6302947640bf6f76d2df8d": {
       "chartHistory": [
         {
@@ -49,6 +56,8 @@
   },
   "job": {
     "artifacts": {
+      "reports/competitor-monitor/harvests/013b8ca91ef85cb5a7be4757edfeebca409b67b095ff1d341f972f1cdec97947.json": "013b8ca91ef85cb5a7be4757edfeebca409b67b095ff1d341f972f1cdec97947",
+      "reports/competitor-monitor/intakes/18b9b55e45ccb60c43b868b5825bc0008f192b06daa118dfb508fd17b0b2f9a1.json": "18b9b55e45ccb60c43b868b5825bc0008f192b06daa118dfb508fd17b0b2f9a1",
       "reports/competitor-monitor/intakes/9031ce2b2c8974afc4646b5986d7170e971fddf9df6302947640bf6f76d2df8d.chart.json": "f7bf0590035f68e581ce39b0b954a92d3e9917f5b1a0ac8b48c86004b2c54fb9",
       "reports/competitor-monitor/intakes/9031ce2b2c8974afc4646b5986d7170e971fddf9df6302947640bf6f76d2df8d.json": "9031ce2b2c8974afc4646b5986d7170e971fddf9df6302947640bf6f76d2df8d",
       "reports/competitor-monitor/intakes/proofs/9031ce2b2c8974afc4646b5986d7170e971fddf9df6302947640bf6f76d2df8d-43e51530bc55a07704cf03c0d248f11e29aec420f12b77973bf47fdb263dd25a.json": "43e51530bc55a07704cf03c0d248f11e29aec420f12b77973bf47fdb263dd25a",
