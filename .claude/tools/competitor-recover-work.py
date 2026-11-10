@@ -233,7 +233,7 @@ def restore(root, intake, hint):
         report_path=pending_reports[0]
         report=json.loads(report_path.read_bytes())
         rows=report['routes']
-        if all(r['verdict']=='PASS' or json.loads(policy.artifact(root,r['reviewBudget']).read_bytes())['number']==policy.LIMITS[r['reviewProfile']] for r in rows):
+        if all(r['verdict']=='PASS' or json.loads(policy.artifact(root,r['reviewBudget']).read_bytes())['number']>=policy.audit_limit(policy.policy(root),r['reviewProfile'],r.get('riskAssessment')) for r in rows):
             admitted=json.loads(policy.artifact(root,rows[0]['reviewBudget']).read_bytes())
             snapshot=policy.artifact(root,admitted['snapshot'])
             data=json.loads(snapshot.read_bytes())

@@ -1,3 +1,5 @@
+**Owner audit ceilings, November 10, 2026.** Release at first independent PASS. LIGHT allows one content audit; STANDARD allows two. HIGH retains full factual and SEO scrutiny, with two content audits unless the independent risk assessment identifies a genuine consequential medical or legal claim in the actual page and quotes the passage. Incidental mentions, a site or template label, and finance, security, hardware or safety alone never earn a third audit. Bot Scout always allows at most two, even for medical or legal pages. At the final eligible audit release the exact reviewed version under the existing rules, including editorial FAIL. Preserve prior rounds, professional reviews, client commitments and build/link/exact-live gates.
+
 
 <!-- fleet-resume-release-20261109 -->
 Owner-authorized fleet update, 2026-11-09. Apply the installed shared tools through this site's native workflow. Resume the same canonical job, source intake, chart approval, candidate and actual review history after retries. Pass the current task and open findings, retain retrievable history, and reuse unchanged rules only with actual continued access and understanding. Join each real worker's terminal result once. Use eligible correction scope for changed sections; an unchanged reviewed render needs publication checks, without another writing or editorial pass.
@@ -13,7 +15,7 @@ Owner instruction, 2026-11-08. Applies to Mindmap Pass and routines that hand co
 
 ## Depth follows actual claims
 
-The site's `.claude/content-review-policy.json` supplies its default and floor. LIGHT has at most ONE independent content-review round; STANDARD at most TWO; HIGH at most THREE. These are ceilings, never targets: publish after the first genuine PASS once all normal release checks succeed.
+The site's `.claude/content-review-policy.json` supplies its default and floor. LIGHT has at most ONE independent content-review round; STANDARD at most TWO; HIGH at most TWO unless the independent review establishes a genuine medical or legal claim. Bot Scout always has at most TWO. These are ceilings, never targets: publish after the first genuine PASS once all normal release checks succeed.
 
 - LIGHT: ordinary grooming, reading and product-use guides. Check central facts, truthful evidence/testing language and the reader's answer. Do not perform clinical/legal investigations on content that makes no such claims.
 - STANDARD: general AI/software/product comparisons. Also verify material prices, availability, capabilities, important numbers and recommendation conditions from appropriate sources.

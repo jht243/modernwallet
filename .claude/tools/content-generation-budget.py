@@ -54,7 +54,7 @@ def claim_limit(root,args,text):
         return None
     _,_,row=selected;policy=load_policy(root)
     level=policy.profile(root,{'text':text},row.get('claimCategories',[]),row.get('reviewProfile'))
-    return policy.LIMITS[level]
+    return policy.audit_limit(policy.policy(root), level, row.get('riskAssessment'))
 
 def reserve(root,args,operation):
     selected=scope(root,args)
@@ -86,7 +86,7 @@ def reserve(root,args,operation):
                 if not cycle or cycle['jobId']!=job or cycle['status']!='needs-fix':
                     raise ValueError('A paid repair needs the actual failed independent review')
                 last=cycle['rounds'][-1]
-                if last['status']!='complete' or last['verdict']!='FAIL' or last['number']>=policy.LIMITS[cycle['profile']]:
+                if last['status']!='complete' or last['verdict']!='FAIL' or last['number']>=cycle.get('maximumRounds', policy.LIMITS[cycle['profile']]):
                     raise ValueError('No independent review slot remains for this repair')
                 report=last['reportObjectSha256']
                 if report in state['repairs'] or len(state['repairs'])>=2:

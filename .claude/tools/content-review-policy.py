@@ -103,6 +103,9 @@ def policy(root):
     require(p.get('defaultProfile') in LEVELS and p.get('minimumProfile') in LEVELS, 'Invalid site risk profile')
     require(LEVELS.index(p['defaultProfile']) >= LEVELS.index(p['minimumProfile']), 'Default below site floor')
     require(p.get('roundLimits') == LIMITS, 'The shared round budget must be exactly 1/2/3')
+    if 'thirdReviewClaimCategories' in p:
+        allowed = [] if p['siteId'].rsplit('/', 1)[-1] == 'the_bot_scout' else ['medical', 'legal']
+        require(p['thirdReviewClaimCategories'] == allowed, 'Invalid owner third-audit eligibility')
     return p
 
 
@@ -194,6 +197,40 @@ def profile(root, semantic, categories, requested=None, assessment=None):
     return 'high' if high else selected
 
 
+def audit_limit(config, selected, assessment=None):
+    """The factual profile controls scrutiny. Only a substantiated medical/legal claim can buy round three."""
+    maximum = LIMITS[selected]
+    if maximum < 3 or 'thirdReviewClaimCategories' not in config:
+        return maximum
+    eligible = config['thirdReviewClaimCategories']
+    claims = (assessment or {}).get('consequentialClaims', [])
+    if any(item.get('category') in eligible and len(item.get('quote', '').strip()) >= 8
+           and len(item.get('reason', '').strip()) >= 40 for item in claims):
+        return 3
+    return 2
+
+
+def recorded_assessment(route, report):
+    rows = report.get('routes', [])
+    if isinstance(rows, dict):
+        rows = [dict(value, path=path) for path, value in rows.items() if isinstance(value, dict)]
+    row = next((item for item in rows if (item.get('path', '').rstrip('/') or '/') == (route.rstrip('/') or '/')), {})
+    return row.get('riskAssessment') or {}
+
+
+def recorded_limit(config, selected, route, report):
+    return audit_limit(config, selected, recorded_assessment(route, report))
+
+
+def last_authoritative_round(cycle):
+    """Keep an old unconsumed reservation in the journal without forcing an extra audit."""
+    rounds = cycle['rounds']
+    if (len(rounds) > 1 and rounds[-1]['status'] == 'pending'
+            and rounds[-1]['number'] > cycle.get('maximumRounds', LIMITS[cycle['profile']])):
+        return rounds[-2]
+    return rounds[-1] if rounds else {}
+
+
 def gitdir(root):
     return Path(subprocess.check_output(['git','rev-parse','--absolute-git-dir'],cwd=root,text=True).strip())
 
@@ -257,8 +294,11 @@ class Journal:
                 artifact(self.root,data['failureEvidence'])
                 item.update(admission=data['admission'],fingerprint=new['fingerprint'],reviewer=new['reviewer'],repaired=True)
             elif kind == 'record':
+                recorded = read(artifact(self.root,data['report'])) if data.get('report') else {}
                 if data.get('report'):
-                    require(digest(read(artifact(self.root,data['report'])))==data['reportObjectSha256'],'Retain the actual prior independent report')
+                    require(digest(recorded)==data['reportObjectSha256'],'Retain the actual prior independent report')
+                self.cycle['lastRiskAssessment'] = recorded_assessment(self.route, recorded)
+                self.cycle['maximumRounds'] = audit_limit(policy(self.root), data['profile'], self.cycle['lastRiskAssessment'])
                 item = self.cycle['rounds'][data['number']-1]
                 require(item['status']=='pending' and item['admission']==data['admission'], 'Review result must finish its real reserved round')
                 item.update(data,status='complete');self.cycle['profile']=data['profile']
@@ -325,18 +365,27 @@ def reserve_without_checkpoint(root, snapshot_path, route, job, reviewer, out, p
                 admission = {'legacyImport':prior_ref,'number':number}
                 journal.append('reserve',{'number':number,'admission':admission,'fingerprint':old.get('fingerprint'),'reviewer':old_reviewer})
                 journal.append('record',{'number':number,'admission':admission,'report':prior_ref,'reportObjectSha256':report_hash,'profile':selected,'verdict':old.get('verdict','FAIL'),'legacyImport':prior_ref})
+                cycle['lastRiskAssessment'] = recorded_assessment(route, read(prior))
+                cycle['maximumRounds'] = audit_limit(policy(root), selected, cycle['lastRiskAssessment'])
                 cycle['rounds'].append({'status':'complete','number':number})
         else:
             require(cycle['jobId']==job, 'Resume the existing canonical page job; renaming it does not reset the review budget')
             require(not prior_reports, 'Prior review history is already imported')
+        ceiling = cycle.get('maximumRounds', audit_limit(policy(root), cycle['profile']))
         if cycle['rounds'] and cycle['rounds'][-1]['status']=='pending':
+            require(cycle['rounds'][-1]['number'] <= ceiling, 'Review budget exhausted; release the latest completed review')
             last = cycle['rounds'][-1];value=read(artifact(root,last['admission']))
             require(value['fingerprint']==row['fingerprint'] and value['reviewer']==reviewer,
                     'Finish or resume the pending review before starting another one')
             return {**value,'admissionArtifact':last['admission']}
-        ceiling = LIMITS[cycle['profile']]
         number = len(cycle['rounds'])+1
-        require(number <= ceiling, 'Review budget exhausted for this page; hold unresolved material errors, preserve findings, continue eligible siblings')
+        if number == 3 and ceiling == 3 and 'thirdReviewClaimCategories' in policy(root):
+            current_text = claim_text(row['semantic'])
+            retained = [claim for claim in cycle.get('lastRiskAssessment', {}).get('consequentialClaims', [])
+                        if claim.get('quote') and claim['quote'] in current_text]
+            current = (spec.get('riskAssessment') or {}).get('consequentialClaims', [])
+            ceiling = audit_limit(policy(root), selected, {'consequentialClaims': retained + current})
+        require(number <= ceiling, 'Review budget exhausted for this page; retain findings and release the exact latest eligible review under the site policy')
         require(not any(x.get('reportObjectSha256') for x in cycle['rounds'] if x.get('verdict')=='PASS' and x.get('fingerprint')==row['fingerprint']),
                 'This exact page already passed; do not audit it again')
         admission = {'version':VERSION,'identity':journal.identity,'cycleId':cycle['cycleId'],'jobId':job,
@@ -382,9 +431,9 @@ def capped_release(root,snapshot):
             and snapshot['manifest'].get('workflowKind')=='mindmap-pass')
 
 def exhausted(cycle):
-    return (len(cycle['rounds']) == LIMITS[cycle['profile']]
-            and cycle['rounds'][-1].get('status') == 'complete'
-            and cycle['rounds'][-1].get('verdict') == 'FAIL')
+    final = last_authoritative_round(cycle)
+    return (final.get('number', 0) >= cycle.get('maximumRounds', LIMITS[cycle['profile']])
+            and final.get('status') == 'complete' and final.get('verdict') == 'FAIL')
 
 def projection_source(root, snapshot, review):
     proof=review.get('approvalProjection')
@@ -432,8 +481,9 @@ def record_without_checkpoint(root, report_path):
         require(report.get('snapshotSha256')==snapshot['snapshotSha256'] and report.get('reviewer')==admission['reviewer'], 'Result must belong to the reserved independent review')
         require((rr['path'].rstrip('/') or '/')==admission['identity']['route'] and admission['policySha256'] in accepted_policy_hashes(root), 'Review identity/policy changed')
         selected = decision(root,snapshot,report,rr)
+        ceiling = audit_limit(policy(root), selected, rr.get('riskAssessment'))
         require(rr.get('verdict') in ['PASS','FAIL'], 'Keep the actual audit verdict; no synthetic approval')
-        if rr['verdict']=='PASS' or (rr['verdict']=='FAIL' and capped_release(root,snapshot) and admission['number']==LIMITS[selected]):
+        if rr['verdict']=='PASS' or (rr['verdict']=='FAIL' and capped_release(root,snapshot) and admission['number']>=ceiling):
             pass_evidence(root,snapshot,rr,selected,retain_fail=rr['verdict']=='FAIL')
         with Journal(root,admission['identity']['canonicalBase'],rr['path']) as journal:
             cycle=journal.cycle;require(cycle and cycle['cycleId']==admission['cycleId'], 'Wrong canonical review cycle')
@@ -447,11 +497,11 @@ def record_without_checkpoint(root, report_path):
             if any(x.get('status')=='complete' and not x.get('legacyImport') for x in cycle['rounds']):
                 selected=max([selected,cycle['profile']],key=LEVELS.index)
             require(rr['reviewProfile']==selected, 'A later correction cannot lower the established risk to reset its budget')
-            require(number <= LIMITS[selected], 'This page has already used its content-review budget')
+            require(number <= ceiling, 'This page has already used its content-review budget')
             journal.append('record',{'number':number,'admission':admission_ref,'report':freeze(root,report_path,journal.path.parent),
-                                    'reportObjectSha256':digest(report),'profile':selected,'verdict':rr['verdict'],
+                                    'reportObjectSha256':digest(report),'profile':selected,'maximumRounds':ceiling,'verdict':rr['verdict'],
                                     'fingerprint':rr['fingerprint']})
-            result.append({'route':rr['path'],'round':number,'maximumRounds':LIMITS[selected],'verdict':rr['verdict']})
+            result.append({'route':rr['path'],'round':number,'maximumRounds':ceiling,'verdict':rr['verdict']})
     return result
 
 
@@ -516,6 +566,8 @@ def repair_pending(root,snapshot_path,route,job,reviewer,out,failure):
         require(cycle and cycle['jobId']==job and cycle['rounds'],'Recover the original canonical job')
         last=cycle['rounds'][-1]
         require(last['status']=='pending' and not last.get('repaired'),'Repair only one unfinished slot; never reset a completed review')
+        require(last['number'] <= cycle.get('maximumRounds', audit_limit(policy(root), cycle['profile'])),
+                'Review budget exhausted; retain the pending admission and release the last completed round')
         old=read(artifact(root,last['admission']));original=inside(root,old['snapshot']['path'])
         changed_sources = []
         if original.is_file() and sha(original.read_bytes()) == old['snapshot']['sha256']:
@@ -571,8 +623,9 @@ def check_rendered(root, snapshot, review, local_module=None, force=False):
         with Journal(root,snapshot['manifest']['canonicalBase'],rr['path']) as journal:
             cycle=next((c for c in journal.cycles if c['cycleId']==admission['cycleId']),None)
             require(cycle and (cycle is journal.cycle or cycle['status']=='published'), 'Missing actual canonical review history')
-            require(admission['number']==len(cycle['rounds']) <= LIMITS[cycle['profile']], 'Cannot publish an older round or exceed the shared budget')
-            item=cycle['rounds'][-1]
+            item=last_authoritative_round(cycle)
+            require(admission['number']==item.get('number') and admission['number'] <= LIMITS[cycle['profile']],
+                    'Cannot publish an older round or exceed the historical shared budget')
             require(item['status']=='complete' and (item.get('verdict')=='PASS' or (rr.get('verdict')=='FAIL' and capped_release(root,snapshot) and exhausted(cycle))) and item.get('verdict')==rr['verdict'] and item.get('reportObjectSha256')==digest(authority) and
                     item.get('profile')==selected and item['admission']==admission_ref, 'Record the actual latest independent PASS before publication')
     if local_module is not None:
@@ -613,7 +666,7 @@ def mark_published(root, snapshot, review, commit, host):
             require(journal.cycle and journal.cycle['cycleId']==admission['cycleId'] and
                     (journal.cycle['status'] in ['passed','published'] or (capped_release(root,snapshot) and exhausted(journal.cycle))), 'Publish only the actual approved cycle')
             if journal.cycle['status']=='published': continue
-            require(journal.cycle['rounds'][-1].get('reportObjectSha256')==digest(authority), 'Wrong actual published review')
+            require(last_authoritative_round(journal.cycle).get('reportObjectSha256')==digest(authority), 'Wrong actual published review')
             journal.append('published',{'release':'audit-limit' if rr['verdict']=='FAIL' else 'pass','cycleId':admission['cycleId'],'commit':commit,'reviewObjectSha256':digest(authority),'verifiedAt':host['verifiedAt']})
 
 
@@ -669,8 +722,9 @@ def main():
     args=parser.parse_args();root=Path(args.root).resolve();policy(root)
     if args.command=='classify':
         snapshot=read(inside(root,args.snapshot));page,spec=route_in(snapshot,args.route);text=claim_text(page['semantic'])
-        selected=profile(root,page['semantic'],spec.get('claimCategories',[]),spec.get('reviewProfile'),read(inside(root,args.assessment)) if args.assessment else None)
-        print(json.dumps({'profile':selected,'maximumRounds':LIMITS[selected],'textSha256':sha(text.encode()),'riskPassages':flags(text),'requiredFactualChecks':FACTS[selected],'fullSeoRequired':True},indent=2))
+        assessment=read(inside(root,args.assessment)) if args.assessment else None
+        selected=profile(root,page['semantic'],spec.get('claimCategories',[]),spec.get('reviewProfile'),assessment)
+        print(json.dumps({'profile':selected,'maximumRounds':audit_limit(policy(root),selected,assessment),'textSha256':sha(text.encode()),'riskPassages':flags(text),'requiredFactualChecks':FACTS[selected],'fullSeoRequired':True},indent=2))
     elif args.command=='reserve':
         print(json.dumps(reserve(root,inside(root,args.snapshot),args.route,args.job_id,args.reviewer,inside(root,args.out),[inside(root,p) for p in args.prior_review],inside(root,args.preflight) if args.preflight else None),indent=2))
     elif args.command=='repair-pending':print(json.dumps(repair_pending(root,inside(root,args.snapshot),args.route,args.job_id,args.reviewer,inside(root,args.out),inside(root,args.failure)),indent=2))

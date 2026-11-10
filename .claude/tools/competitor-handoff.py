@@ -110,11 +110,9 @@ def pending_reviews(root,digest=None):
    elif event['kind']=='reserve':pending[data['number']]=data
    elif event['kind']=='record':pending.pop(data['number'],None)
   if pending and isinstance(job,str) and (digest is None or digest[:12] in job):
-   if digest is None:
-    result.append({'jobId':job});continue
    policy=load('pending_native_review_policy',root/'.claude/tools/content-review-policy.py');identity=events[0]['identity']
    with policy.Journal(root,identity['canonicalBase'],identity['route']) as journal:
-    if journal.cycle and journal.cycle['rounds'][-1]['status']=='pending':
+    if journal.cycle and policy.last_authoritative_round(journal.cycle).get('status')=='pending':
      result.append({'route':identity['route'],'jobId':job,'round':journal.cycle['rounds'][-1]['number'],'admission':journal.cycle['rounds'][-1]['admission']})
  return result
 
@@ -136,8 +134,8 @@ def publication_gaps(root,digest=None):
   policy=load('publication_native_review_policy',root/'.claude/tools/content-review-policy.py');identity=events[0]['identity']
   with policy.Journal(root,identity['canonicalBase'],identity['route']) as journal:
    if journal.cycle and journal.cycle['status']!='published':
-    rounds=journal.cycle['rounds'];last=rounds[-1] if rounds else {}
-    result.append({'route':identity['route'],'jobId':job,'status':journal.cycle['status'],'round':last.get('number'),'report':last.get('report'),'admission':last.get('admission'),'remainingReviews':max(0,policy.LIMITS[journal.cycle['profile']]-len(rounds))})
+    rounds=journal.cycle['rounds'];last=policy.last_authoritative_round(journal.cycle)
+    result.append({'route':identity['route'],'jobId':job,'status':journal.cycle['status'],'round':last.get('number'),'report':last.get('report'),'admission':last.get('admission'),'remainingReviews':max(0,journal.cycle.get('maximumRounds', policy.audit_limit(policy.policy(root), journal.cycle['profile']))-len(rounds))})
  return result
 
 

@@ -37,7 +37,14 @@ def prepare(root, base, dry_run=False):
         if last['verdict']!='FAIL' or last.get('legacyImport'):
             continue
         maximum = last.get('maximumRounds',config['roundLimits'][last['profile']])
-        if last['number']!=maximum:continue
+        if 'thirdReviewClaimCategories' in config and last['profile'] == 'high':
+            import importlib.util
+            spec = importlib.util.spec_from_file_location('release_review_budget', Path(__file__).with_name('content-review-policy.py'))
+            policy = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(policy)
+            report = json.loads(exact_file(root, last['report']).read_bytes())
+            maximum = policy.recorded_limit(config, last['profile'], events[-1]['identity']['route'], report)
+        if last['number'] < maximum:continue
         admit=json.loads(exact_file(root,last['admission']).read_bytes())
         snapshot=json.loads(exact_file(root,admit['snapshot']).read_bytes())
         if snapshot['manifest'].get('workflowKind')!='mindmap-pass' or not snapshot.get('correctionBoundary'):
