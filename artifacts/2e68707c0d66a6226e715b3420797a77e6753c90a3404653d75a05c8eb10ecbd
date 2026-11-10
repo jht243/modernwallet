@@ -1,0 +1,1129 @@
+{
+ "reviewer": "mindmap-auditor-p4",
+ "snapshotSha256": "ddadf119093a1f68f6df0dac266940badc77ce97816b1cbbcf944b9566d17def",
+ "jobId": "competitor-18b9b55e45cc",
+ "round": 1,
+ "summary": "Round 1 independent Phase 4 audit. 4 new routes FAIL; edited routes see routes[] and editedRoutesNotReserved.",
+ "routes": [
+  {
+   "path": "/compare/robo-advisor-vs-financial-advisor/",
+   "fingerprint": "ac6842f3225a3eda504ffb71e10be095352baf52d0ed46f31bd15ff9dd8853fa",
+   "verdict": "FAIL",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/robo-advisor-vs-financial-advisor-round1-reservation.json",
+    "sha256": "83af42bc4328b458fb275db2bb872679bf5a3990dee5011db4fae6c9dc7c562b"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "d0d86639bed8b167f1f8ca2ac852af61efbcf9ffbfafd0e69a6163055ed7286b",
+    "rationale": "The page tells readers which kind of adviser owes a fiduciary duty and which investment professional fits their money, a consequential investment-advice comparison that needs HIGH review. The site has no professional-review obligation in _experience.md.",
+    "consequentialClaims": [
+     {
+      "category": "investment",
+      "quote": "Fiduciary duty of care and loyalty",
+      "reason": "The page tells readers which kind of adviser owes a fiduciary duty and which investment professional fits their money, a consequential investment-advice comparison that needs HIGH review."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "FAIL",
+     "evidence": "Read the entire rendered page. Opening answer is repeated verbatim in four places, a second takeaway follows the template verdict, two tables disagree (A1-F3, A1-F4), and low-cost conclusion omits the SEC small-balance counterexample (A1-F1)."
+    },
+    "sourceSupport": {
+     "status": "FAIL",
+     "evidence": "Checked every statistic against captures 8afe23f0 (robo bulletin), 9586a28f (subscription fees), ffda7445 (advisers), 183c0f08 (CRS), 953e89fd (Form ADV). $3/$5/$10, ETF, hybrid and duty-of-care claims trace; A1-F1, F2, F3 do not (unsupported \"not suitable\", \"Negotiated by contract\", omitted >7 percent warning)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No tested/we tested/internal testing language in text, title, meta or JSON-LD (grep). Basis is reported with named SEC and Investor.gov attribution beside each finding. Template byline \"Reviewed against primary sources\" is a site-wide label that is accurate only if this audit passes; no Tested-and-reviewed label."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "New page: visible Updated November 10, 2026; Article datePublished and dateModified 2026-11-10; Person author is the existing site author; FAQPage text matches the three visible FAQ answers; BreadcrumbList present; canonical https://www.themodernwallet.com/compare/robo-advisor-vs-financial-advisor/."
+    },
+    "linksAndIndexability": {
+     "status": "FAIL",
+     "evidence": "Internal links resolve in dist (net worth, retirement, investing, worth-it, robo, fiduciary, flat-fee, roundup). Canonical and sitemap entry present; no noindex. First mention of Regulation Best Interest (table) is unlinked (A1-F7); no outbound link to the new sibling guides is required by the brief."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Static DOM inspection only (no browser run): both tables sit in .table-wrap with overflow-x:auto, viewport meta present, no literal markdown markers (0 \"**\"). Table 2 is slated for deletion."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Financial services are outside _experience.md section G, so TESTED is excluded and none shown; fallback_used (gemini-3.8-flash) is absent from all rendered text and HTML; no neutrality or paid-placement claims (grep)."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Fiduciary duty of care and loyalty for registered advisers, Regulation Best Interest for brokers, Form CRS disclosure and robo definition all trace to captures 8afe23f0, ffda7445, 183c0f08 and the Clayton excerpt."
+    },
+    "truthfulEvidence": {
+     "status": "FAIL",
+     "evidence": "Tee-up claims \"we show the math\" but the page has no math; packet basis is reported (A1-F5)."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "$3, $5, $10 monthly fee examples match the SEC subscription bulletin; Clayton statement is dated 2019 and presented without date (A1-F7 minor)."
+    },
+    "recommendationSupport": {
+     "status": "FAIL",
+     "evidence": "Recommendation \"low-cost automated investing\" and \"not suitable for tax or estate planning\" are not supported or are contradicted by the SEC bulletins (A1-F1, A1-F2)."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "investor.gov and sec.gov pages are saved captures with hashes in evidence.json; Clayton item is a reviewer excerpt (sec-clayton-excerpt) of the quoted phrases only, and only those phrases are used."
+    },
+    "consequentialClaims": {
+     "status": "FAIL",
+     "evidence": "Strongest counterexample to \"low-cost\" is the SEC subscription-fee bulletin warning that $3 a month on $500 exceeds 7 percent a year; the page omits it from the opening, verdict, FAQ and takeaway (A1-F1)."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "US-only, SEC-registered scope and the broker/dual-registrant condition appear in the verdict, duty-of-care section and takeaway."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "Manifest declares no professionalReviewRequired for this route and _content-standard author defaults say YMYL alone does not require a named professional; no professional-review claim is made on the page."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH profile confirmed: investment-adviser duty comparison, classify output lists fiduciary and investment advice passages."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Title 50 chars, meta 150, one H1, canonical, FAQ and Article schema valid. Template verdict heading \"Which should you choose?\" is not Title Case but is the shared comparison template heading (advisory)."
+    }
+   },
+   "findings": [
+    {
+     "id": "A1-F1",
+     "severity": "blocker",
+     "where": "Cost section, intro sentence 1, table row \"Typical fee structures\", FAQ 1-2, verdict, takeaway",
+     "quote": "Many automated firms use these fixed monthly fees to market advisory services to newer investors with smaller account balances.",
+     "defect": "Central claim \"low-cost automated investing\" is unconditional. The cited SEC subscription-fee bulletin (capture 9586a28f) warns that $3/$5/$10 monthly fees can exceed asset-based fees on small balances ($3 a month on $500 is $36 a year, over 7 percent). The page uses the bulletin only for the dollar amounts and drops the reversing condition. The same bulletin-based sentence is also loosely paraphrased (\"often present lower costs\"; source says \"often seek to offer\").",
+     "fix": "Replace the quoted sentence with: \"The SEC bulletin warns that on small balances a flat monthly fee can cost more than a traditional asset-based fee. A $3 monthly fee on a $500 account is $36 a year, more than 7 percent.\" Change opening sentence, verdict, FAQ 1 and FAQ 2 to condition the cost claim (\"low-cost for larger balances; check the dollar fee if your balance is small\"). Change \"Robo-advisors often present lower costs and fees and lower account minimums\" to \"Robo-advisers often seek to offer lower costs and fees, and some require lower account minimums.\""
+    },
+    {
+     "id": "A1-F2",
+     "severity": "blocker",
+     "where": "Section \"Who Each Option Is Not For\", FAQ 2, verdict",
+     "quote": "A robo-advisor is not suitable for individuals who need tax or estate planning, or direct phone access to an adviser.",
+     "defect": "Unsupported universal. The SEC robo-adviser bulletin (capture 8afe23f0) says some robo-advisers use tax loss harvesting and some offer hybrid access to an investment professional. Nothing captured says robo-advisers cannot do estate planning. It also contradicts our own /guides/what-is-a-robo-advisor/ page. The approved brief also required a \"human adviser is not for\" case (small balance, one simple goal); the page omits it.",
+     "fix": "Replace with: \"A robo-advisor may not fit you if you want a person to call or your finances include accounts its questionnaire does not ask about. The SEC bulletin says some robo-advisers offer hybrid access to an investment professional and some use tax loss harvesting, so ask each one. A human adviser may not fit a small balance with one simple goal; see [is a financial advisor worth it](/guides/financial-advisor-worth-it/) for the break-even math.\" Align FAQ 2 and the verdict."
+    },
+    {
+     "id": "A1-F3",
+     "severity": "blocker",
+     "where": "Second table under \"Side-by-Side Comparison of Advisory Models\" vs first table",
+     "quote": "Client responsibility | Must manually update profile details online | Negotiated by contract",
+     "defect": "Two overlapping tables disagree: table 1 gives robo-advisers Form ADV Part 1, Part 2A and Form CRS, table 2 gives Part 1 and Form CRS only; table 2 \"Negotiated by contract\" is the unresolved claim-check flag (guards.claim_check) and means nothing in that row; \"Must manually update\" overstates the SEC wording (\"in many cases the burden to update this information will fall on you\"); \"Disciplinary and background checks\" row and \"Underlying investments: Securities\" are not sourced rows. The second table adds no supported fact the first lacks.",
+     "fix": "Delete the whole section \"Side-by-Side Comparison of Advisory Models\" (heading, intro paragraph, table, and the filler closer \"Selecting between these formats requires balancing...\"). In table 1 change the \"Underlying investments\" cell for the human column from \"Securities\" to \"Securities the adviser recommends (Investor.gov)\" and robo cell to \"Many use ETFs; some limit products to broad-based ETFs\"."
+    },
+    {
+     "id": "A1-F4",
+     "severity": "blocker",
+     "where": "Intro sentence 1, verdict (\"Which should you choose?\"), H2 \"Robo-Advisor or Financial Advisor: Which Fits Your Situation\" sentence 1, H2 \"Our Takeaway on Picking the Right Advisory Structure\"",
+     "quote": "Pick a robo-advisor if you want low-cost automated investing for a defined goal and accept little human contact; pick a human adviser if you need advice beyond investing or want a person to talk to.",
+     "defect": "The same answer is printed four times (intro, verdict block, first section sentence verbatim, takeaway), and a second conclusion section is appended after the template verdict. Restatement fails the meaning bar; _decision-evidence.md says reuse the existing verdict and do not append a second conclusion. The takeaway also repeats the opening instead of adding conditions (small-balance fee, registration type).",
+     "fix": "Keep one answer in the intro. Delete the verbatim first sentence of section \"Robo-Advisor or Financial Advisor: Which Fits Your Situation\". Keep the template verdict (rewritten with the A1-F1 and A1-F5 conditions) and delete the section \"Our Takeaway on Picking the Right Advisory Structure\" (its action sentences move into the verdict). Split the 38-word semicolon opener into two sentences."
+    },
+    {
+     "id": "A1-F5",
+     "severity": "blocker",
+     "where": "Intro sentences 2-3",
+     "quote": "In the guides we publish here, we look at the specific legal duties and disclosure filings behind financial advice rather than sales marketing. At ModernWallet, we show the math, name what moves it, and explain the tradeoff.",
+     "defect": "Tee-up is two sentences (fails the one-sentence rule). \"We show the math\" is untrue for this page (no calculation anywhere; basis is reported). \"rather than sales marketing\" is an unsupported contrast. The same two sentences open A4.",
+     "fix": "Delete both. Optionally replace with one sentence: \"This comparison rests on Investor.gov, two SEC investor bulletins and a 2019 SEC chairman statement.\" or record teeup-exempt."
+    },
+    {
+     "id": "A1-F6",
+     "severity": "blocker",
+     "where": "Throughout body, FAQ 3",
+     "quote": "The regulatory sources reviewed do not provide a formal legal definition for the generic title financial planner.",
+     "defect": "AI tells and dead end. (a) FAQ 3 narrates the research (\"sources reviewed\") and never answers \"what is the difference\". (b) Synonym cycling robo-advisor / robo-adviser / automated platform / digital program / automated firms; generic \"the platform cannot incorporate those developments\". (c) \"utilize\", \"essential context\", semicolons (intro, verdict, takeaway, table cell, \"A robo-advisor fits...; a human adviser fits...\"). (d) \"Many investors assume every financial professional operates under the same legal obligations\" (weasel, no source). (e) filler: \"Understanding what a financial advisor is worth starts with matching these specific service capabilities to your financial needs.\" and \"Understanding what a fiduciary is provides essential context when evaluating these legal relationships.\"",
+     "fix": "FAQ 3 answer: \"A robo-advisor is an automated digital investment advisory program that builds a portfolio from your questionnaire answers. Financial planner is a job title, and Investor.gov lists a financial planner among the people you can hire to help with investment decisions, so ask what services and registration the person has. See [financial advisor vs financial planner](/compare/financial-advisor-vs-financial-planner/).\" Use \"robo-advisor\" or \"robo-adviser\" consistently (one spelling); replace \"the platform cannot incorporate\" with \"the robo-adviser cannot incorporate\"; \"utilize\" -> \"use\"; delete the two filler sentences and the \"Many investors assume\" sentence; replace semicolons with periods."
+    },
+    {
+     "id": "A1-F7",
+     "severity": "required-minor",
+     "where": "Duty of care section",
+     "quote": "SEC Chairman Clayton explained that the investment adviser fiduciary duty is comprised of a duty of care and a duty of loyalty.",
+     "defect": "The statement is dated July 8, 2019 (capture sec-clayton-excerpt is the chart reviewer's verbatim excerpt, not a full page capture). \"SEC Chairman Clayton\" reads as current. First table mention of Regulation Best Interest is unlinked.",
+     "fix": "Write \"In a July 2019 statement, then SEC Chairman Jay Clayton explained...\". Link Regulation Best Interest at its first mention (table row \"Standard of conduct\") to the same SEC statement."
+    }
+   ]
+  },
+  {
+   "path": "/guides/when-to-switch-financial-advisors/",
+   "fingerprint": "4599101b73a3c1c7d2bf8317ce84b14d03e301323d4d91f0f2169d4f717c1241",
+   "verdict": "FAIL",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/when-to-switch-financial-advisors-round1-reservation.json",
+    "sha256": "49bed8f3b5ab0362d5fd6217c26eb3721fda4670bcd42d5b08d620dc611e40c5"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "5cf4801e937737ac901a8966d53684c5bff90582fc6e59db4023ee384528ff9e",
+    "rationale": "The page instructs readers how to move investment and retirement accounts between firms, including IRS rollover rules, so errors can cause taxes or trading freezes; HIGH review applies. The site has no professional-review obligation in _experience.md.",
+    "consequentialClaims": [
+     {
+      "category": "investment",
+      "quote": "Transfer Initiation Form",
+      "reason": "The page instructs readers how to move investment and retirement accounts between firms, including IRS rollover rules, so errors can cause taxes or trading freezes; HIGH review applies."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "FAIL",
+     "evidence": "Read the whole page. Invented \"we find\" claim, unsupported \"before contacting your current firm\" step, \"Not published\" cells, FAQ cost answer built on source silence, and contradiction between \"does not require you to liquidate\" and the nontransferable-assets paragraph (A2-F1 to F6)."
+    },
+    "sourceSupport": {
+     "status": "FAIL",
+     "evidence": "Checked FINRA account-transfers capture (three to four business days, TIF, credit-policy refusal, freeze, nontransferable notice), IRS rollover capture (60 days, one-per-year exceptions, withholding) and Investor.gov pages: those claims trace. Step 3 ordering, step 6 source, FAQ cost answer and \"ensures\" outcomes do not."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing language; editorial judgment labeled \"In our editorial judgment\" in takeaway; basis reported (FINRA, IRS, Investor.gov, SEC bulletin). Byline label is site-wide."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "New page dated November 10, 2026 in text, datePublished and dateModified; Article, FAQPage, BreadcrumbList present; FAQ schema matches visible FAQs; canonical correct."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "All internal links resolve (conflicts, how-to-read-form-adv, questions-to-ask, how-to-choose, calculators); external links point to FINRA, IRS, Investor.gov, IAPD, BrokerCheck; canonical and sitemap present. Spelled-out SEC mention in section 4 is unlinked but its bulletin links appear earlier (advisory)."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Static DOM inspection only: four-column step table wrapped in .table-wrap overflow-x:auto; ordered list and bullet lists render as ol/ul; no literal markdown markers."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "TESTED excluded (financial services); fallback_used not shown publicly; retirement-money section keeps the tax-professional referral. Claim-check \"emptied section\" flags in meta.guards are stale: all five sections still render content."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Transfer mechanics (TIF, ACATS, three to four business days, refusal of nontransferable assets) and IRS rollover statements trace to FINRA capture 22f45649 and IRS capture 7130d5ef."
+    },
+    "truthfulEvidence": {
+     "status": "FAIL",
+     "evidence": "\"In the guides we publish here, we find...\" asserts an observation no record supports (A2-F1)."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "FINRA and IRS captures dated 2026-11-10; time frames quoted as \"generally about three to four business days\"."
+    },
+    "recommendationSupport": {
+     "status": "FAIL",
+     "evidence": "\"Open your new account ... before contacting your current firm\" and \"does not require you to liquidate\" are not supported (A2-F2, A2-F5)."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "FINRA, IRS, Investor.gov and SEC bulletin captures are saved with hashes; step 6 source label is wrong (A2-F6)."
+    },
+    "consequentialClaims": {
+     "status": "FAIL",
+     "evidence": "Strongest counterexample is a switching or termination fee and nontransferable assets forcing a sale; FAQ says the sources \"state no standard charge\", turning silence into a universal negative (A2-F3)."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "US scope, broker-dealer versus bank/credit-union/IRA timing, and the tax-professional referral are stated."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "No professionalReviewRequired on the route; page keeps its \"consult a qualified tax professional\" referral and claims no professional review."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH confirmed: account transfers and retirement rollovers."
+    },
+    "seoQuality": {
+     "status": "FAIL",
+     "evidence": "SEO title and H2 use the two-clause \"X and How to Y\" formula (A2-F7); meta description 153 chars, canonical and schema valid."
+    }
+   },
+   "findings": [
+    {
+     "id": "A2-F1",
+     "severity": "blocker",
+     "where": "Intro sentence 2 and intro paragraph 2",
+     "quote": "In the guides we publish here, we find that the cleanest transition happens when you keep the process in order:",
+     "defect": "Invented finding. No packet record or approved case supports a \"we find\" observation; the evidence basis is reported (regulator pages). The second intro paragraph (\"You can have your financial institution or plan directly transfer the payment, whereas rolling over a distribution paid to you requires depositing funds within 60 days...\") is an abrupt IRS aside before the reader has the answer; it duplicates the \"Retirement Money\" section.",
+     "fix": "Replace sentence 2 with: \"Move in this order: read your contract's termination terms, check the new adviser on IAPD, open the account at the receiving firm, and let that firm start the transfer so you do not sell holdings or take a check yourself.\" Delete intro paragraph 2 entirely."
+    },
+    {
+     "id": "A2-F2",
+     "severity": "blocker",
+     "where": "Numbered step 3 and step table row 3",
+     "quote": "Open your new account at the receiving institution before contacting your current firm.",
+     "defect": "Unsupported step. FINRA (capture account-transfers-22f4) says the transfer starts when you send the Transfer Initiation Form to the receiving firm; nothing says to avoid contacting the current firm first, and the page's own step 1 and contract section say termination terms may require notice. Table cells for rows 3 and 5 read \"Not published\" (claim-check residue): \"What to check: Not published\" is meaningless and the Source column cites FINRA for it.",
+     "fix": "Step 3: \"Open your new account at the receiving firm.\" Table row 3 \"What to check\": \"Ask the receiving firm about policies or constraints that could affect the transfer\" (FINRA transfer tips). Row 5 \"What to check\": \"Whether either firm freezes trading during the transfer\" (FINRA: some firms freeze the account)."
+    },
+    {
+     "id": "A2-F3",
+     "severity": "blocker",
+     "where": "FAQ \"Does it cost money to switch financial advisors?\"",
+     "quote": "Regulatory guidance publishes no standard fee to switch financial advisors. The sources read state no standard charge; check your contract and ask both firms.",
+     "defect": "Universal negative inferred from source silence (FINRA, Investor.gov and IRS captures say nothing about fees), narrated as \"sources read\" meta-text, and inconsistent with the page's own \"Termination charges can change the answer\" and the packet condition \"termination charges ... not established\". A reader could conclude that switching is free.",
+     "fix": "Answer: \"It can. Your advisory contract sets the fees and terms (Investor.gov), so read its termination terms and ask both the current and the receiving firm what they charge before you start. The sources we read list no standard switching fee.\""
+    },
+    {
+     "id": "A2-F4",
+     "severity": "blocker",
+     "where": "FAQ \"Is it hard to switch financial advisors?\"",
+     "quote": "By completing a Transfer Initiation Form with your new receiving firm, most broker-dealer accounts move directly through ACATS in about three to four business days without requiring you to manage individual sales.",
+     "defect": "Does not answer the question in sentence 1 (the claim check deleted the original opener). \"without requiring you to manage individual sales\" overgeneralizes (nontransferable assets, IRAs and bank/fund sources differ).",
+     "fix": "Answer: \"It is a short procedure when your assets can move as they are. You complete a Transfer Initiation Form with the receiving firm, and most broker-dealer accounts then move through ACATS in about three to four business days. Accounts at banks, credit unions or fund companies, and IRAs, take longer, and the receiving firm can refuse nontransferable assets.\""
+    },
+    {
+     "id": "A2-F5",
+     "severity": "blocker",
+     "where": "Section \"How the Account Moves\", step-1 recap, last section",
+     "quote": "Transferring your portfolio does not require you to liquidate your investments or mail paper checks between firms.",
+     "defect": "Overclaim that contradicts the same section (nontransferable proprietary assets) and the IRS page (a check payable to your new account is one direct-rollover method). Also \"Following this sequence ensures that your new custodian requests your assets directly\" and \"Reviewing your holdings and contract terms with both firms beforehand ensures you avoid unintended costs or portfolio freezes\" promise outcomes no source gives.",
+     "fix": "Replace with: \"Most customer accounts move between broker-dealers through an automated process called ACATS, and cash, stocks, bonds and listed options are readily transferable that way.\" Replace \"ensures...\" sentences with \"In this order the receiving firm requests your assets from the delivering firm.\" and \"Asking both firms about your holdings and contract terms beforehand shows you costs and trading freezes before they surprise you.\""
+    },
+    {
+     "id": "A2-F6",
+     "severity": "blocker",
+     "where": "Step table row 6 and takeaway",
+     "quote": "6. Confirm closure | Both firms and client | Delivery of positions | Investor.gov advisory guidance",
+     "defect": "Mis-sourced and mislabeled. Investor.gov does not describe delivery confirmation; FINRA says to find out how the firm informs you the transfer is complete; \"closure\" was removed from the numbered list by the claim check but remains in the table. The takeaway adds \"protects your capital from administrative and operational headaches\" (unsourced outcome).",
+     "fix": "Row 6: \"6. Confirm completion | Both firms and client | How each firm tells you the transfer is complete | FINRA transfer rules\". Delete the \"protects your capital...\" clause from the takeaway."
+    },
+    {
+     "id": "A2-F7",
+     "severity": "blocker",
+     "where": "Title, H2 1, AI tells",
+     "quote": "When to Switch Financial Advisors and How to Do It",
+     "defect": "Headline two-clause formula in the SEO title and in H2 \"When to Switch Financial Advisors and the Steps to Do It in Order\". Body tells: \"Here is our suggested order to execute the switch cleanly:\" (signpost), \"critical filings\", \"acting in the correct technical order protects your portfolio from unnecessary selling and settlement freezes\" (unsourced promise), \"Asset-based fees may cost more than transaction-based fees, but they suit ongoing portfolio monitoring\" (Form CRS says you \"may prefer\" an asset-based fee if you want ongoing advice).",
+     "fix": "Title: \"When and How to Switch Financial Advisors Step by Step\" (54 chars). H2: \"The Steps to Switch Financial Advisors in Order\". Replace \"Here is our suggested order to execute the switch cleanly:\" with \"Our suggested order:\". Replace \"three critical filings\" with \"three filings\". Replace the \"protects your portfolio\" sentence with \"In this order the receiving firm, not you, requests the assets.\" Rewrite the fee bullet to the Form CRS wording."
+    }
+   ]
+  },
+  {
+   "path": "/guides/how-to-read-form-adv/",
+   "fingerprint": "0fb63e739232ce82ffc2df0fa4b33f32e9f9678a13df52e75a28ce743a9f7a64",
+   "verdict": "FAIL",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/how-to-read-form-adv-round1-reservation.json",
+    "sha256": "eb48126eda346ad13515c1e7a3bd58f5fd8009074a95e0fcf275370287605632"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "2a3459cbc4730f58d85a723a70cd0100ad13dbb3ae35fe245301b03c537555cc",
+    "rationale": "The page tells readers how to vet an investment adviser before handing over money using SEC disclosure forms; wrong statements about what each part contains or who receives it mislead a consequential decision. The site has no professional-review obligation in _experience.md.",
+    "consequentialClaims": [
+     {
+      "category": "investment",
+      "quote": "Form ADV Part 2A",
+      "reason": "The page tells readers how to vet an investment adviser before handing over money using SEC disclosure forms; wrong statements about what each part contains or who receives it mislead a consequential decision."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "FAIL",
+     "evidence": "Read the whole page. Seven bullets render literal asterisks, three bullets are circular, the Limits section has garbled conditions, and the closing section contradicts \"a clean filing does not show advice quality\" (A3-F1, F2, F5, F6)."
+    },
+    "sourceSupport": {
+     "status": "FAIL",
+     "evidence": "Checked all Part 1/2A/2B/3 statements against capture 953e89fd (18 items, six items, 10-year presumption, annual summary, primary disclosure document): they trace. Part 1 \"No\" delivery cell, \"supersede\" bullet and \"ensures clients stay informed\" do not (A3-F3, F5, F6)."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing language; reading order explicitly labeled editorial judgment; basis reported with SEC bulletin named beside findings."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "New page dated November 10, 2026; Article, FAQPage and BreadcrumbList present; FAQ schema text matches visible answers; canonical correct."
+    },
+    "linksAndIndexability": {
+     "status": "FAIL",
+     "evidence": "Internal links resolve and canonical/sitemap are present, but the first mention of the SEC and IAPD in the intro is plain text (A3-F4). Title is 47 characters, under the 50-character floor (A3-F8)."
+    },
+    "renderedLayout": {
+     "status": "FAIL",
+     "evidence": "HTML shows 14 literal \"**\" markers inside <li class=\"prose-list\"> items in the Part 2A section (A3-F1). Table is in .table-wrap overflow-x:auto."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "TESTED excluded; fallback_used not public. Overlap with existing RIA and conflicts pages is limited to the Check the Person and the Firm section (A3-F7); the page is not deferred because the Part 2A/2B/Part 1 walkthrough is absent elsewhere."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "18 Part 2A items, six Part 2B items, five-year experience, 10-year presumed-material discipline and Part 3 contents trace to capture 953e89fd and the Investor.gov CRS capture."
+    },
+    "truthfulEvidence": {
+     "status": "FAIL",
+     "evidence": "Tee-up \"we start from the official public filings because they reveal...\" is an unsupported experience framing and doubled with a second tee-up sentence (A3-F4)."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Bulletin captured 2026-11-10; no dated figures asserted beyond the statutory counts."
+    },
+    "recommendationSupport": {
+     "status": "FAIL",
+     "evidence": "Closing claim that Form ADV \"gives you the facts needed to hire the right professional\" contradicts the page's own limit and is unsupported (A3-F6)."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "SEC OIEA bulletin on Form ADV, Investor.gov glossary and advisers pages are saved captures with hashes."
+    },
+    "consequentialClaims": {
+     "status": "FAIL",
+     "evidence": "Part 1 delivery \"No\" and the \"supersede\" negotiated-fee bullet are source silence or invention in a vetting guide readers rely on (A3-F3, A3-F5)."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "Unregistered and broker-only professionals, US scope and the editorial status of the reading order are stated."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "No professionalReviewRequired on the route; no professional-review claim on page."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH confirmed: investment-adviser due diligence."
+    },
+    "seoQuality": {
+     "status": "FAIL",
+     "evidence": "SEO title 47 chars, under the 50 floor (A3-F8); literal asterisks in rendered list (A3-F1); canonical and schema otherwise valid."
+    }
+   },
+   "findings": [
+    {
+     "id": "A3-F1",
+     "severity": "blocker",
+     "where": "Section \"What to Look For in the Part 2A Brochure\" (rendered HTML <ul class=\"prose-list\">)",
+     "quote": "**Advisory business**: The firm describes the types of advisory services it provides",
+     "defect": "Rendering defect: 14 literal \"**\" markers appear in the live HTML list items (seven bold labels). Bold markdown inside list items is not parsed by this template, so readers see asterisks.",
+     "fix": "Move the seven items to the section's list field (or write them as plain \"Label: text\" with no asterisks) and re-capture."
+    },
+    {
+     "id": "A3-F2",
+     "severity": "blocker",
+     "where": "Same section, three bullets",
+     "quote": "**Performance-based fees and side-by-side management**: This item covers performance-based fees and side-by-side management.",
+     "defect": "Claim-check residue: three bullets restate their own label and tell the reader nothing (also \"Code of ethics, participation in client transactions, and personal trading: This disclosure covers code of ethics, participation in client transactions, and personal trading\" and \"Brokerage practices: The brochure covers the firm's brokerage practices.\"). The reader is told to inspect items but not what each shows. The SEC bulletin (capture 953e89fd) has the facts.",
+     "fix": "Performance-based fees: \"An adviser that accepts performance-based fees, or supervises someone who does, must disclose it. If it also manages accounts without a performance fee, it must explain the resulting conflicts and how it addresses them.\" Code of ethics: \"The adviser must briefly describe its code of ethics, state that a copy is available on request, and disclose whether it or a related person invests in the same securities it recommends, with the conflicts involved.\" Brokerage practices: \"The adviser must describe how it selects broker-dealers and judges their compensation, and must disclose soft dollar practices.\""
+    },
+    {
+     "id": "A3-F3",
+     "severity": "blocker",
+     "where": "Table \"What Each Part of Form ADV Contains\", column \"Delivered to clients?\"",
+     "quote": "No; public on IAPD portal",
+     "defect": "Part 1 \"No\" is source silence turned into an affirmative claim: the SEC bulletin says Part 1 filings are public on IAPD and says nothing about whether Part 1 is delivered to clients. Part 2A cell \"delivered to clients initially and offered annually\" paraphrases the annual-summary rule loosely.",
+     "fix": "Part 1 cell: \"Public on the IAPD website\". Part 2A cell: \"Advisers must deliver the brochure to prospective and existing clients, and each year deliver a summary of material changes with a revised brochure or an offer to deliver one\"."
+    },
+    {
+     "id": "A3-F4",
+     "severity": "blocker",
+     "where": "Intro sentence 3; section 1; \"Limits\" section",
+     "quote": "because the regulatory agency designates it as the primary disclosure document for advisory practices",
+     "defect": "Coy abstraction: \"the regulatory agency\" (three times) where the SEC is the named source; the tee-up is two sentences (\"In the guides we publish here, we start from the official public filings because they reveal fee structures...\" plus \"At ModernWallet, we suggest...\"). First mention of the Securities and Exchange Commission and IAPD in the intro is plain text, not linked.",
+     "fix": "Intro: keep sentence 1, delete the \"At ModernWallet, we suggest...\" sentence, and rewrite sentence 2 as one sentence naming the SEC bulletin (\"The SEC investor bulletin on Form ADV calls the Part 2A brochure the primary disclosure document for investment advisers.\"). Link \"Securities and Exchange Commission (SEC) Investment Adviser Public Disclosure (IAPD) database\" in the intro to https://adviserinfo.sec.gov. Replace \"The regulatory agency does not mandate an official reading sequence for clients.\" with \"The SEC does not set a reading order for clients.\""
+    },
+    {
+     "id": "A3-F5",
+     "severity": "blocker",
+     "where": "Section \"Limits of Form ADV and When the Answer Changes\"",
+     "quote": "You negotiate a customized contract with negotiated billing terms that supersede standard schedule numbers shown in Part 2A.",
+     "defect": "Garbled, unsupported condition bullets: \"The firm files an annual summary of material changes with a revised brochure, altering fee percentages, service structures, or conflict disclosures.\" (the bulletin says the adviser delivers the summary to clients; \"altering fee percentages\" is not stated), the \"supersede\" bullet above, and \"The regulatory agency updates filing requirements or disclosure thresholds for registered entities.\" (a filler condition no reader can act on).",
+     "fix": "Replace the three bullets with: (1) \"The adviser delivers a new annual summary of material changes: read it against the brochure you already have.\" (2) existing disciplinary-event bullet (keep). (3) \"The brochure says fees are negotiable: your contract sets the fees you pay (Investor.gov), so compare the contract with the Part 2A fee schedule.\""
+    },
+    {
+     "id": "A3-F6",
+     "severity": "blocker",
+     "where": "Closing section \"How to Read Form ADV and Take Practical Action\" and FAQ \"Is Form ADV annual?\"",
+     "quote": "Reading Form ADV before you sign an agreement gives you the facts needed to hire the right professional or walk away before committing your assets.",
+     "defect": "Takeaway overclaims and contradicts the page's own \"a clean Form ADV filing does not show advice quality\". It also opens \"Finally, review the Part 2B...\" with no earlier list, so it is not a usable next action. FAQ \"Is Form ADV annual?\" never answers yes or no and keeps the open claim-check flag: \"This annual disclosure ensures clients stay informed about updates to business practices, fee schedules, or disciplinary records.\" (SOURCE does not state it).",
+     "fix": "Closing section: \"Open the Part 2A brochure and confirm the fee method matches what the adviser told you. Read the Part 2B supplement for the person who will handle your account. Bring any unclear item to the adviser as a written question before you sign. A clean filing does not show advice quality, so use it to ask better questions.\" FAQ answer: \"The SEC bulletin says advisers must deliver a summary of material changes to clients every year, along with a revised brochure or an offer to deliver one.\" Delete the \"ensures clients stay informed\" sentence."
+    },
+    {
+     "id": "A3-F7",
+     "severity": "blocker",
+     "where": "Section \"Check the Person and the Firm\"",
+     "quote": "Brokers operate under a different business model. As outlined in the SEC guidance on Form CRS, broker-dealers generally execute discrete transactions and earn sales commissions or markups on each trade.",
+     "defect": "Restates content already on existing pages (/guides/what-is-a-registered-investment-advisor/ \"RIA vs IAR vs Broker-Dealer Representative\", /guides/financial-advisor-conflicts-of-interest/ \"Fiduciary vs Non-Fiduciary Legal Standards\") and repeated again in A2 and A4. The Part 2A/2B/Part 1 walkthrough is not on those pages, so A3 itself stays, but this section is a restatement.",
+     "fix": "Cut the section to two sentences plus links: \"Check both the firm and the individual representative on IAPD. Broker-only professionals file with FINRA, not Form ADV: check them on FINRA BrokerCheck and read their Form CRS. See what a registered investment advisor is and how conflicts of interest work.\" Delete the broker business-model and dual-registration paragraphs."
+    },
+    {
+     "id": "A3-F8",
+     "severity": "required-minor",
+     "where": "SEO title",
+     "quote": "How to Read Form ADV Before You Hire an Advisor",
+     "defect": "SEO title is 47 characters (floor 50); spelling \"Advisor\" differs from the H1/body \"adviser\" usage.",
+     "fix": "\"How to Read Form ADV Before You Hire a Financial Advisor\" (56 chars)."
+    }
+   ]
+  },
+  {
+   "path": "/guides/what-is-investment-management/",
+   "fingerprint": "d663ea98d07b4460e4fd845292e9b5c6c331f61d49d0afcbe2c11a8166228a82",
+   "verdict": "FAIL",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/what-is-investment-management-round1-reservation.json",
+    "sha256": "16e7c1aebd53ae85c7ee0271dfd138ad4ffa77a3a24ef6be65876520e4b4b87e"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "dcb175e2064c1dec88b369a51a54e2b9609208d04ff4d8143803fe83f06338f1",
+    "rationale": "The takeaway recommends investing on your own or hiring an adviser and states fee-cost conditions; this is an investment decision with cost consequences and needs HIGH review. The site has no professional-review obligation in _experience.md.",
+    "consequentialClaims": [
+     {
+      "category": "investment",
+      "quote": "invest on your own",
+      "reason": "The takeaway recommends investing on your own or hiring an adviser and states fee-cost conditions; this is an investment decision with cost consequences and needs HIGH review."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "FAIL",
+     "evidence": "Read the whole page. Asset-based-fee claim contradicts the flat-fee and RIA pages, DIY fee cell reads \"Not published\", FAQ trio repeats one fact, the check-an-adviser section restates A3, and the takeaway is an unlabeled investment recommendation (A4-F1 to F7)."
+    },
+    "sourceSupport": {
+     "status": "FAIL",
+     "evidence": "Checked Investor.gov investing-on-your-own, advisers, working-with-a-professional, CRS and Form ADV bulletin captures: definitions, discretionary accounts, asset-based fee wording trace. \"An asset-based fee can represent a larger share of a small account balance\" and \"manage risk tolerance\" do not."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing language; judgments labeled \"Our judgment\" but basis not stated beside the takeaway (A4-F7); no tested labels."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "New page dated November 10, 2026; Article, FAQPage, BreadcrumbList present; FAQ schema matches visible FAQ text; canonical correct."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Internal links resolve (flat-fee, how-to-read-form-adv, RIA, what-does-a-financial-advisor-do, wealth-manager); canonical and sitemap present; inbound links from RIA and wealth-manager pages render."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Static DOM inspection only: four-column decision table in .table-wrap overflow-x:auto; no literal markdown markers."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "TESTED excluded; fallback_used not public; no neutrality claims. DIY-vs-hire overlaps /guides/financial-advisor-worth-it/ Step 4, advisory only."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Definition, discretionary accounts, fee typically based on all assets in the account, and \"may cost more than transaction fee\" trace to Investor.gov and Form CRS captures."
+    },
+    "truthfulEvidence": {
+     "status": "FAIL",
+     "evidence": "\"we show the math\" on a page with no math; tee-up is two sentences (A4-F3)."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "No dated figures or prices asserted; captures dated 2026-11-10."
+    },
+    "recommendationSupport": {
+     "status": "FAIL",
+     "evidence": "Takeaway criteria for investing on your own are unlabeled and partly unsourced (\"manage risk tolerance\") (A4-F7)."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Investor.gov investing-on-your-own, advisers, working-with-a-professional, CRS and SEC Form ADV bulletin captures saved with hashes."
+    },
+    "consequentialClaims": {
+     "status": "FAIL",
+     "evidence": "\"An asset-based fee can represent a larger share of a small account balance\" is wrong for a percentage fee and contradicts the flat-fee page; the SEC example concerns flat subscription fees (A4-F1)."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "US-only scope, broker-only paid-per-transaction alternative and discretionary-account conditions are stated."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "No professionalReviewRequired on the route; no professional-review claim on page."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH confirmed: DIY versus hire recommendation with fee consequences."
+    },
+    "seoQuality": {
+     "status": "FAIL",
+     "evidence": "H1, title and H2 use two-clause headline formulas and AUM is undefined in title and meta (A4-F4)."
+    }
+   },
+   "findings": [
+    {
+     "id": "A4-F1",
+     "severity": "blocker",
+     "where": "Section \"Situations Where Hiring an Adviser Does Not Fit\" and takeaway",
+     "quote": "An asset-based fee can represent a larger share of a small account balance.",
+     "defect": "False or unsupported, and it contradicts existing pages. A percentage-of-assets fee takes the same share of any balance. The SEC subscription-fee bulletin says flat subscription fees ($3/month on $500 is over 7 percent a year) are what can take a large share; our /compare/flat-fee-vs-aum-based-financial-advisors/ page says a fixed retainer exceeds 1 percent to 1.5 percent on smaller portfolios. The packet's own whatWouldChange says \"an asset-based OR subscription fee\". The new inbound link from /guides/what-is-a-registered-investment-advisor/ sends readers here.",
+     "fix": "Replace with: \"An asset-based fee is a fixed percentage of your balance, so it takes the same share of a small account as a large one. A flat subscription or minimum fee is the kind that can take a large share of a small balance: the SEC bulletin gives $3 a month on a $500 account, more than 7 percent a year.\" Takeaway: change \"if your investable balance is small relative to total advisory expenses\" to \"if a flat or minimum fee would be a large share of your balance\"."
+    },
+    {
+     "id": "A4-F2",
+     "severity": "blocker",
+     "where": "Table \"Your situation / Do it yourself / Hire an adviser / What to check\"",
+     "quote": "Fee structure | Not published |",
+     "defect": "\"Not published\" in the Do-it-yourself fee cell is false/meaningless (investing on your own has costs) and is claim-check residue. \"Professional history: No external professional evaluation required\" is unsourced.",
+     "fix": "Fee cell: \"No ongoing advisory fee. You still pay other fees and costs related to services and investments (Investor.gov Form CRS page)\". Professional history DIY cell: \"Check any broker you use on FINRA BrokerCheck\"."
+    },
+    {
+     "id": "A4-F3",
+     "severity": "blocker",
+     "where": "Intro paragraphs 1-2",
+     "quote": "At ModernWallet, we show the math, name what moves it, and explain the tradeoff.",
+     "defect": "Experience truth: the page contains no math. Tee-up is two sentences (\"In the guides we publish here, we show the tradeoffs...\" plus this one) and the second is verbatim identical to A1's. Intro sentence 3 (\"You can manage your own portfolio by making every trade yourself, or you can hire an adviser for ongoing oversight.\") and sentence 5 restate each other.",
+     "fix": "Delete both tee-up sentences (or keep one that is true, e.g. \"This guide rests on Investor.gov and the SEC Form ADV bulletin.\"). Delete the sentence \"Choosing between investing on your own and hiring a professional depends on the services you require, all-in costs, and potential conflicts of interest.\" which restates the H2."
+    },
+    {
+     "id": "A4-F4",
+     "severity": "blocker",
+     "where": "H1, SEO title, meta description, H2s",
+     "quote": "What Is Investment Management and How to Choose DIY or an Adviser",
+     "defect": "Headline two-clause formula in H1, SEO title (\"...and What AUM Means for You\") and H2 \"What Is Investment Management and Whether to Invest on Your Own\". AUM is not defined in the title or meta description. H2 \"Services That Explain What Investment Management Covers\" is a cleft with no reader meaning.",
+     "fix": "H1: \"What Is Investment Management?\" Title (50-60 chars, one clause): \"What Is Investment Management? DIY or Hiring an Adviser\" is acceptable only if the question form is kept as a query; otherwise \"Investment Management Means Choosing and Monitoring Investments\". Meta: spell out \"assets under management (AUM)\". H2s: \"What Investment Management Is\" and \"What an Investment Manager Does\"."
+    },
+    {
+     "id": "A4-F5",
+     "severity": "blocker",
+     "where": "FAQ items 1-4",
+     "quote": "This guide addresses investment management and the choice between managing securities yourself or hiring an investment adviser.",
+     "defect": "FAQ 1, 2 and 3 are three rewordings of the same two facts already stated in the AUM section (fee typically based on total account value; Part 2A requires a fee schedule). FAQ 4 does not answer \"is investment management the same as wealth management\" in sentence 1 and ends with page self-reference (banned meta-narration).",
+     "fix": "Delete FAQ 3 (\"How does assets under management work?\"). FAQ 1: \"Assets under management (AUM) is the amount of client assets an adviser manages, which Form ADV Part 2A requires the adviser to disclose.\" FAQ 2: \"An assets under management fee is an advisory charge typically based on the value of all assets in your account. See [flat-fee vs AUM advisors](/compare/flat-fee-vs-aum-based-financial-advisors/) for the cost math.\" FAQ 4: \"Not exactly. Investment management is choosing and monitoring securities. A wealth manager generally adds tax and estate coordination for higher-net-worth clients, and neither title is legally regulated; see [financial advisor vs wealth manager](/compare/financial-advisor-vs-wealth-manager/).\" Update FAQ JSON-LD accordingly."
+    },
+    {
+     "id": "A4-F6",
+     "severity": "blocker",
+     "where": "Section \"Steps to Check an Investment Adviser Before Hiring\"",
+     "quote": "Form ADV contains three separate sections that provide verifiable background details on advisory firms and their individual representatives.",
+     "defect": "Restates the Form ADV Part 1/2A/2B/3 descriptions that /guides/how-to-read-form-adv/ (A3) now owns, plus the IAPD check from /guides/what-is-a-registered-investment-advisor/ (\"How to Check an RIA Before You Hire One\"). The brief (section 5) planned a short check with links to those guides.",
+     "fix": "Reduce to two or three sentences: search the person and the firm on IAPD via Investor.gov, read the Part 2A brochure fee items and the Form CRS, then link [how to read Form ADV](/guides/how-to-read-form-adv/) and [what is a registered investment advisor](/guides/what-is-a-registered-investment-advisor/). Delete the Part 1, Part 2A, Part 2B and Part 3 bullet paragraphs."
+    },
+    {
+     "id": "A4-F7",
+     "severity": "blocker",
+     "where": "Takeaway and closing sentence",
+     "quote": "Our takeaway is to invest on your own if you can create a financial plan, manage risk tolerance, and accept complete responsibility for your investment decisions.",
+     "defect": "HIGH-risk investment recommendation without a labeled basis: \"manage risk tolerance\" is not a skill any source describes (Investor.gov says understand your tolerance for risk); the do-it-yourself criteria are our own and not marked editorial; the cost counter-condition in the Form CRS page is not tied to the recommendation. The final sentence \"To determine your next step regarding what is investment management, write down your timeline and risk goals...\" is keyword-stuffed and unparseable.",
+     "fix": "Rewrite: \"Investor.gov says investing on your own starts with a financial plan (how much, for how long, your goals and your tolerance for risk) and that you are responsible for your decisions. Hire an adviser if you want ongoing advice and monitoring, or someone to place trades for you, and accept an asset-based fee; Form CRS says that fee may cost more than a transaction-based fee. This is our reading of those sources, not an SEC recommendation. A flat or minimum fee, or a broker you pay per trade, changes the cost picture, so compare the Part 2A fee schedule and Form CRS in dollars.\" Next step: \"Write down your timeline and goals, read what a financial advisor does, and compare any adviser's Form CRS with the cost of investing on your own.\""
+    },
+    {
+     "id": "A4-F8",
+     "severity": "required-minor",
+     "where": "Section \"Decision Framework\", AI tells",
+     "quote": "Sourced regulatory guidance highlights six core factors: required services, account limits, total costs, payment structure, potential conflicts, and legal or disciplinary history.",
+     "defect": "\"Sourced regulatory guidance highlights ... core factors\" is meta-narration and an inflated frame; Investor.gov lists these as questions to ask an adviser, not DIY-versus-hire factors. \"Our suggested order for evaluating this decision begins by determining whether you need ongoing monitoring.\" is a nominalization. Overlap with /guides/financial-advisor-worth-it/ Step 4 (DIY vs hire, small balances) is not linked.",
+     "fix": "\"Investor.gov lists six things to check about an adviser: services, limits on services, total cost, how the adviser is paid, conflicts and legal or disciplinary history.\" \"First decide whether you need ongoing monitoring.\" Add a link to /guides/financial-advisor-worth-it/ in the decision section."
+    }
+   ]
+  },
+  {
+   "path": "/guides/what-is-a-robo-advisor/",
+   "fingerprint": "342e48eec675396e508c3d25137e6183330fb21251893052e1e7814b5496701e",
+   "verdict": "PASS",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/what-is-a-robo-advisor-round1-reservation.json",
+    "sha256": "61bab6254bca37611b783289e01efbf2d0969c3fdfc3557dcd4e375b7b20f3ad"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "f35647ae992f18f9f9a06d368805023d6d720375a6518c5ecfaf02c708e2ed81",
+    "rationale": "Existing investment-adviser guidance page that received link-only edits; the page carries fiduciary and fee claims, so HIGH remains the floor. No professional-review obligation applies to this site.",
+    "consequentialClaims": [
+     {
+      "category": "investment",
+      "quote": "fiduciary",
+      "reason": "Link-only edit on an investment-adviser page; the anchor sentence discusses adviser disclosures or fees and must remain accurate for a consequential decision."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Read the rendered decision path; the inserted link sentence is accurate, and no contradiction with the new pages was found in the sections around the edit. Inserted sentence \"If you want the head-to-head, see our robo-advisor vs financial advisor comparison.\" is accurate and placed at the end of \"Who a Robo-Advisor Does Not Fit\". Page is already source-grounded (SEC bulletin), consistent with the new comparison once A1-F1/F2 are fixed; visible and JSON-LD dates remain November 9, 2026 as in HEAD. Dependency: link must be removed if A1 is deferred."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Scope limited to the inserted anchor/sentence and its destination; inherited facts were not re-researched, per link-only edit scope. Inserted sentence \"If you want the head-to-head, see our robo-advisor vs financial advisor comparison.\" is accurate and placed at the end of \"Who a Robo-Advisor Does Not Fit\". Page is already source-grounded (SEC bulletin), consistent with the new comparison once A1-F1/F2 are fixed; visible and JSON-LD dates remain November 9, 2026 as in HEAD. Dependency: link must be removed if A1 is deferred."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing claims in the render; inherited byline label unchanged."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible Updated date and JSON-LD dateModified equal the HEAD values (no bump for link-only edit); src-candidate.diff contains no date edits for this page."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Inserted link resolves to a built route and its anchor text matches the destination; canonical unchanged."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Static DOM inspection: the added link renders inline inside existing paragraph or FAQ text; no layout markup added."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Link-only edit; TESTED not applicable; no exclusions touched."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted sentence \"If you want the head-to-head, see our robo-advisor vs financial advisor comparison.\" is accurate and placed at the end of \"Who a Robo-Advisor Does Not Fit\". Page is already source-grounded (SEC bulletin), consistent with the new comparison once A1-F1/F2 are fixed; visible and JSON-LD dates remain November 9, 2026 as in HEAD. Dependency: link must be removed if A1 is deferred."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted sentence \"If you want the head-to-head, see our robo-advisor vs financial advisor comparison.\" is accurate and placed at the end of \"Who a Robo-Advisor Does Not Fit\". Page is already source-grounded (SEC bulletin), consistent with the new comparison once A1-F1/F2 are fixed; visible and JSON-LD dates remain November 9, 2026 as in HEAD. Dependency: link must be removed if A1 is deferred."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted sentence \"If you want the head-to-head, see our robo-advisor vs financial advisor comparison.\" is accurate and placed at the end of \"Who a Robo-Advisor Does Not Fit\". Page is already source-grounded (SEC bulletin), consistent with the new comparison once A1-F1/F2 are fixed; visible and JSON-LD dates remain November 9, 2026 as in HEAD. Dependency: link must be removed if A1 is deferred."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted sentence \"If you want the head-to-head, see our robo-advisor vs financial advisor comparison.\" is accurate and placed at the end of \"Who a Robo-Advisor Does Not Fit\". Page is already source-grounded (SEC bulletin), consistent with the new comparison once A1-F1/F2 are fixed; visible and JSON-LD dates remain November 9, 2026 as in HEAD. Dependency: link must be removed if A1 is deferred."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted sentence \"If you want the head-to-head, see our robo-advisor vs financial advisor comparison.\" is accurate and placed at the end of \"Who a Robo-Advisor Does Not Fit\". Page is already source-grounded (SEC bulletin), consistent with the new comparison once A1-F1/F2 are fixed; visible and JSON-LD dates remain November 9, 2026 as in HEAD. Dependency: link must be removed if A1 is deferred."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted sentence \"If you want the head-to-head, see our robo-advisor vs financial advisor comparison.\" is accurate and placed at the end of \"Who a Robo-Advisor Does Not Fit\". Page is already source-grounded (SEC bulletin), consistent with the new comparison once A1-F1/F2 are fixed; visible and JSON-LD dates remain November 9, 2026 as in HEAD. Dependency: link must be removed if A1 is deferred."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted sentence \"If you want the head-to-head, see our robo-advisor vs financial advisor comparison.\" is accurate and placed at the end of \"Who a Robo-Advisor Does Not Fit\". Page is already source-grounded (SEC bulletin), consistent with the new comparison once A1-F1/F2 are fixed; visible and JSON-LD dates remain November 9, 2026 as in HEAD. Dependency: link must be removed if A1 is deferred."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "No professionalReviewRequired on this route and no professional review is claimed."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted sentence \"If you want the head-to-head, see our robo-advisor vs financial advisor comparison.\" is accurate and placed at the end of \"Who a Robo-Advisor Does Not Fit\". Page is already source-grounded (SEC bulletin), consistent with the new comparison once A1-F1/F2 are fixed; visible and JSON-LD dates remain November 9, 2026 as in HEAD. Dependency: link must be removed if A1 is deferred."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted sentence \"If you want the head-to-head, see our robo-advisor vs financial advisor comparison.\" is accurate and placed at the end of \"Who a Robo-Advisor Does Not Fit\". Page is already source-grounded (SEC bulletin), consistent with the new comparison once A1-F1/F2 are fixed; visible and JSON-LD dates remain November 9, 2026 as in HEAD. Dependency: link must be removed if A1 is deferred."
+    }
+   }
+  },
+  {
+   "path": "/guides/how-to-choose-a-financial-advisor/",
+   "fingerprint": "faea47789fbe8f57a78a90bf57a128e971a182ccae1e538d7b116c212481f6ee",
+   "verdict": "PASS",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/how-to-choose-a-financial-advisor-round1-reservation.json",
+    "sha256": "6aaf0cb008ca7b90463a08a06bc8b9e540a1bb80c1089ba9031273bffdcb6032"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "56304deb1a03669c44626f0c5db008897a067f6c0aafbecb80f822c04d9b0263",
+    "rationale": "Existing investment-adviser guidance page that received link-only edits; the page carries fiduciary and fee claims, so HIGH remains the floor. No professional-review obligation applies to this site.",
+    "consequentialClaims": [
+     {
+      "category": "investment",
+      "quote": "investment management",
+      "reason": "Link-only edit on an investment-adviser page; the anchor sentence discusses adviser disclosures or fees and must remain accurate for a consequential decision."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Read the rendered decision path; the inserted link sentence is accurate, and no contradiction with the new pages was found in the sections around the edit. Inserted paragraph under Step 4 (\"If you are replacing an advisor, see when to switch financial advisors before you move any accounts.\") and the end-of-section robo link are accurate; visible updated date November 9, 2026 and dateModified unchanged from HEAD. Dependency on A2 (link must be removed if A2 is deferred); A2-F2 fix keeps the instruction consistent with this page."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Scope limited to the inserted anchor/sentence and its destination; inherited facts were not re-researched, per link-only edit scope. Inserted paragraph under Step 4 (\"If you are replacing an advisor, see when to switch financial advisors before you move any accounts.\") and the end-of-section robo link are accurate; visible updated date November 9, 2026 and dateModified unchanged from HEAD. Dependency on A2 (link must be removed if A2 is deferred); A2-F2 fix keeps the instruction consistent with this page."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing claims in the render; inherited byline label unchanged."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible Updated date and JSON-LD dateModified equal the HEAD values (no bump for link-only edit); src-candidate.diff contains no date edits for this page."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Inserted link resolves to a built route and its anchor text matches the destination; canonical unchanged."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Static DOM inspection: the added link renders inline inside existing paragraph or FAQ text; no layout markup added."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Link-only edit; TESTED not applicable; no exclusions touched."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted paragraph under Step 4 (\"If you are replacing an advisor, see when to switch financial advisors before you move any accounts.\") and the end-of-section robo link are accurate; visible updated date November 9, 2026 and dateModified unchanged from HEAD. Dependency on A2 (link must be removed if A2 is deferred); A2-F2 fix keeps the instruction consistent with this page."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted paragraph under Step 4 (\"If you are replacing an advisor, see when to switch financial advisors before you move any accounts.\") and the end-of-section robo link are accurate; visible updated date November 9, 2026 and dateModified unchanged from HEAD. Dependency on A2 (link must be removed if A2 is deferred); A2-F2 fix keeps the instruction consistent with this page."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted paragraph under Step 4 (\"If you are replacing an advisor, see when to switch financial advisors before you move any accounts.\") and the end-of-section robo link are accurate; visible updated date November 9, 2026 and dateModified unchanged from HEAD. Dependency on A2 (link must be removed if A2 is deferred); A2-F2 fix keeps the instruction consistent with this page."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted paragraph under Step 4 (\"If you are replacing an advisor, see when to switch financial advisors before you move any accounts.\") and the end-of-section robo link are accurate; visible updated date November 9, 2026 and dateModified unchanged from HEAD. Dependency on A2 (link must be removed if A2 is deferred); A2-F2 fix keeps the instruction consistent with this page."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted paragraph under Step 4 (\"If you are replacing an advisor, see when to switch financial advisors before you move any accounts.\") and the end-of-section robo link are accurate; visible updated date November 9, 2026 and dateModified unchanged from HEAD. Dependency on A2 (link must be removed if A2 is deferred); A2-F2 fix keeps the instruction consistent with this page."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted paragraph under Step 4 (\"If you are replacing an advisor, see when to switch financial advisors before you move any accounts.\") and the end-of-section robo link are accurate; visible updated date November 9, 2026 and dateModified unchanged from HEAD. Dependency on A2 (link must be removed if A2 is deferred); A2-F2 fix keeps the instruction consistent with this page."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted paragraph under Step 4 (\"If you are replacing an advisor, see when to switch financial advisors before you move any accounts.\") and the end-of-section robo link are accurate; visible updated date November 9, 2026 and dateModified unchanged from HEAD. Dependency on A2 (link must be removed if A2 is deferred); A2-F2 fix keeps the instruction consistent with this page."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "No professionalReviewRequired on this route and no professional review is claimed."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted paragraph under Step 4 (\"If you are replacing an advisor, see when to switch financial advisors before you move any accounts.\") and the end-of-section robo link are accurate; visible updated date November 9, 2026 and dateModified unchanged from HEAD. Dependency on A2 (link must be removed if A2 is deferred); A2-F2 fix keeps the instruction consistent with this page."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Inserted paragraph under Step 4 (\"If you are replacing an advisor, see when to switch financial advisors before you move any accounts.\") and the end-of-section robo link are accurate; visible updated date November 9, 2026 and dateModified unchanged from HEAD. Dependency on A2 (link must be removed if A2 is deferred); A2-F2 fix keeps the instruction consistent with this page."
+    }
+   }
+  },
+  {
+   "path": "/guides/financial-advisor-conflicts-of-interest/",
+   "fingerprint": "1396cec500f208ddce7c0a1484de5426f80d7a9a7390377d52bbd6d16ef5571a",
+   "verdict": "PASS",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/financial-advisor-conflicts-of-interest-round1-reservation.json",
+    "sha256": "52883cf336583aba1a4eeae147fb9dbf6639f081699a6a5b6ef37b41e0592042"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "db33d538e4917b022319ff3d6bfb02b1d2713b23c51c7c023e83badbd4cb9204",
+    "rationale": "Existing investment-adviser guidance page that received link-only edits; the page carries fiduciary and fee claims, so HIGH remains the floor. No professional-review obligation applies to this site.",
+    "consequentialClaims": [
+     {
+      "category": "investment",
+      "quote": "Form ADV Part 2",
+      "reason": "Link-only edit on an investment-adviser page; the anchor sentence discusses adviser disclosures or fees and must remain accurate for a consequential decision."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Read the rendered decision path; the inserted link sentence is accurate, and no contradiction with the new pages was found in the sections around the edit. Two edits: \"Form ADV Part 2 (the brochure)\" now links /guides/how-to-read-form-adv/ and a closing sentence links /guides/when-to-switch-financial-advisors/. Both anchors match their destinations; dates unchanged (October 9, 2026). Dependency on A3 and A2."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Scope limited to the inserted anchor/sentence and its destination; inherited facts were not re-researched, per link-only edit scope. Two edits: \"Form ADV Part 2 (the brochure)\" now links /guides/how-to-read-form-adv/ and a closing sentence links /guides/when-to-switch-financial-advisors/. Both anchors match their destinations; dates unchanged (October 9, 2026). Dependency on A3 and A2."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing claims in the render; inherited byline label unchanged."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible Updated date and JSON-LD dateModified equal the HEAD values (no bump for link-only edit); src-candidate.diff contains no date edits for this page."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Inserted link resolves to a built route and its anchor text matches the destination; canonical unchanged."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Static DOM inspection: the added link renders inline inside existing paragraph or FAQ text; no layout markup added."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Link-only edit; TESTED not applicable; no exclusions touched."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Two edits: \"Form ADV Part 2 (the brochure)\" now links /guides/how-to-read-form-adv/ and a closing sentence links /guides/when-to-switch-financial-advisors/. Both anchors match their destinations; dates unchanged (October 9, 2026). Dependency on A3 and A2."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Two edits: \"Form ADV Part 2 (the brochure)\" now links /guides/how-to-read-form-adv/ and a closing sentence links /guides/when-to-switch-financial-advisors/. Both anchors match their destinations; dates unchanged (October 9, 2026). Dependency on A3 and A2."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Two edits: \"Form ADV Part 2 (the brochure)\" now links /guides/how-to-read-form-adv/ and a closing sentence links /guides/when-to-switch-financial-advisors/. Both anchors match their destinations; dates unchanged (October 9, 2026). Dependency on A3 and A2."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Two edits: \"Form ADV Part 2 (the brochure)\" now links /guides/how-to-read-form-adv/ and a closing sentence links /guides/when-to-switch-financial-advisors/. Both anchors match their destinations; dates unchanged (October 9, 2026). Dependency on A3 and A2."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Two edits: \"Form ADV Part 2 (the brochure)\" now links /guides/how-to-read-form-adv/ and a closing sentence links /guides/when-to-switch-financial-advisors/. Both anchors match their destinations; dates unchanged (October 9, 2026). Dependency on A3 and A2."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Two edits: \"Form ADV Part 2 (the brochure)\" now links /guides/how-to-read-form-adv/ and a closing sentence links /guides/when-to-switch-financial-advisors/. Both anchors match their destinations; dates unchanged (October 9, 2026). Dependency on A3 and A2."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Two edits: \"Form ADV Part 2 (the brochure)\" now links /guides/how-to-read-form-adv/ and a closing sentence links /guides/when-to-switch-financial-advisors/. Both anchors match their destinations; dates unchanged (October 9, 2026). Dependency on A3 and A2."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "No professionalReviewRequired on this route and no professional review is claimed."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Two edits: \"Form ADV Part 2 (the brochure)\" now links /guides/how-to-read-form-adv/ and a closing sentence links /guides/when-to-switch-financial-advisors/. Both anchors match their destinations; dates unchanged (October 9, 2026). Dependency on A3 and A2."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Two edits: \"Form ADV Part 2 (the brochure)\" now links /guides/how-to-read-form-adv/ and a closing sentence links /guides/when-to-switch-financial-advisors/. Both anchors match their destinations; dates unchanged (October 9, 2026). Dependency on A3 and A2."
+    }
+   }
+  },
+  {
+   "path": "/guides/what-is-a-registered-investment-advisor/",
+   "fingerprint": "05d3eeb1928468af943ddf36b1c737182ae98bb60f7f67fdf6c4abb743b93e34",
+   "verdict": "PASS",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/what-is-a-registered-investment-advisor-round1-reservation.json",
+    "sha256": "8a224d338aa46862be910687076b74345af25f73a8070bd30e505b146b9811da"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "d5ddeb581ac5a9f742f3c69e4175eec944d12915569dfe7e78ea418789ca0875",
+    "rationale": "Existing investment-adviser guidance page that received link-only edits; the page carries fiduciary and fee claims, so HIGH remains the floor. No professional-review obligation applies to this site.",
+    "consequentialClaims": [
+     {
+      "category": "investment",
+      "quote": "percentage of assets under management",
+      "reason": "Link-only edit on an investment-adviser page; the anchor sentence discusses adviser disclosures or fees and must remain accurate for a consequential decision."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Read the rendered decision path; the inserted link sentence is accurate, and no contradiction with the new pages was found in the sections around the edit. Anchors \"Form ADV Part 2, commonly called the brochure\" -> /guides/how-to-read-form-adv/ and \"percentage of assets under management\" -> /guides/what-is-investment-management/ are on existing words; dates unchanged (October 2, 2026). Dependency: the A4 destination currently contradicts this page's own fee math (A4-F1); the link must be held if A4 is deferred."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Scope limited to the inserted anchor/sentence and its destination; inherited facts were not re-researched, per link-only edit scope. Anchors \"Form ADV Part 2, commonly called the brochure\" -> /guides/how-to-read-form-adv/ and \"percentage of assets under management\" -> /guides/what-is-investment-management/ are on existing words; dates unchanged (October 2, 2026). Dependency: the A4 destination currently contradicts this page's own fee math (A4-F1); the link must be held if A4 is deferred."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing claims in the render; inherited byline label unchanged."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible Updated date and JSON-LD dateModified equal the HEAD values (no bump for link-only edit); src-candidate.diff contains no date edits for this page."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Inserted link resolves to a built route and its anchor text matches the destination; canonical unchanged."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Static DOM inspection: the added link renders inline inside existing paragraph or FAQ text; no layout markup added."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Link-only edit; TESTED not applicable; no exclusions touched."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Anchors \"Form ADV Part 2, commonly called the brochure\" -> /guides/how-to-read-form-adv/ and \"percentage of assets under management\" -> /guides/what-is-investment-management/ are on existing words; dates unchanged (October 2, 2026). Dependency: the A4 destination currently contradicts this page's own fee math (A4-F1); the link must be held if A4 is deferred."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Anchors \"Form ADV Part 2, commonly called the brochure\" -> /guides/how-to-read-form-adv/ and \"percentage of assets under management\" -> /guides/what-is-investment-management/ are on existing words; dates unchanged (October 2, 2026). Dependency: the A4 destination currently contradicts this page's own fee math (A4-F1); the link must be held if A4 is deferred."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Anchors \"Form ADV Part 2, commonly called the brochure\" -> /guides/how-to-read-form-adv/ and \"percentage of assets under management\" -> /guides/what-is-investment-management/ are on existing words; dates unchanged (October 2, 2026). Dependency: the A4 destination currently contradicts this page's own fee math (A4-F1); the link must be held if A4 is deferred."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Anchors \"Form ADV Part 2, commonly called the brochure\" -> /guides/how-to-read-form-adv/ and \"percentage of assets under management\" -> /guides/what-is-investment-management/ are on existing words; dates unchanged (October 2, 2026). Dependency: the A4 destination currently contradicts this page's own fee math (A4-F1); the link must be held if A4 is deferred."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Anchors \"Form ADV Part 2, commonly called the brochure\" -> /guides/how-to-read-form-adv/ and \"percentage of assets under management\" -> /guides/what-is-investment-management/ are on existing words; dates unchanged (October 2, 2026). Dependency: the A4 destination currently contradicts this page's own fee math (A4-F1); the link must be held if A4 is deferred."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Anchors \"Form ADV Part 2, commonly called the brochure\" -> /guides/how-to-read-form-adv/ and \"percentage of assets under management\" -> /guides/what-is-investment-management/ are on existing words; dates unchanged (October 2, 2026). Dependency: the A4 destination currently contradicts this page's own fee math (A4-F1); the link must be held if A4 is deferred."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Anchors \"Form ADV Part 2, commonly called the brochure\" -> /guides/how-to-read-form-adv/ and \"percentage of assets under management\" -> /guides/what-is-investment-management/ are on existing words; dates unchanged (October 2, 2026). Dependency: the A4 destination currently contradicts this page's own fee math (A4-F1); the link must be held if A4 is deferred."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "No professionalReviewRequired on this route and no professional review is claimed."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Anchors \"Form ADV Part 2, commonly called the brochure\" -> /guides/how-to-read-form-adv/ and \"percentage of assets under management\" -> /guides/what-is-investment-management/ are on existing words; dates unchanged (October 2, 2026). Dependency: the A4 destination currently contradicts this page's own fee math (A4-F1); the link must be held if A4 is deferred."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. Anchors \"Form ADV Part 2, commonly called the brochure\" -> /guides/how-to-read-form-adv/ and \"percentage of assets under management\" -> /guides/what-is-investment-management/ are on existing words; dates unchanged (October 2, 2026). Dependency: the A4 destination currently contradicts this page's own fee math (A4-F1); the link must be held if A4 is deferred."
+    }
+   }
+  },
+  {
+   "path": "/compare/financial-advisor-vs-wealth-manager/",
+   "fingerprint": "af187fbe96ed45a65870c39d17e2bd3b783503984c61e86dea8464442fd25107",
+   "verdict": "PASS",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/financial-advisor-vs-wealth-manager-round1-reservation.json",
+    "sha256": "ec6b3efd5aea155bf53fa453f2ec0e3fe9a08b95697358e70cb6d4fba13667e5"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "992df7c4acd34b0e643ac461ff58a47ac69b96a605d197fb2d2ad2a7d5acaf97",
+    "rationale": "Existing investment-adviser guidance page that received link-only edits; the page carries fiduciary and fee claims, so HIGH remains the floor. No professional-review obligation applies to this site.",
+    "consequentialClaims": [
+     {
+      "category": "investment",
+      "quote": "investment management",
+      "reason": "Link-only edit on an investment-adviser page; the anchor sentence discusses adviser disclosures or fees and must remain accurate for a consequential decision."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Read the rendered decision path; the inserted link sentence is accurate, and no contradiction with the new pages was found in the sections around the edit. FAQ answer anchor \"investment management\" -> /guides/what-is-investment-management/ is accurate and renders as a link; FAQPage JSON-LD text carries no raw markdown; dates unchanged (June 25, 2026). Dependency on A4."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Scope limited to the inserted anchor/sentence and its destination; inherited facts were not re-researched, per link-only edit scope. FAQ answer anchor \"investment management\" -> /guides/what-is-investment-management/ is accurate and renders as a link; FAQPage JSON-LD text carries no raw markdown; dates unchanged (June 25, 2026). Dependency on A4."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing claims in the render; inherited byline label unchanged."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible Updated date and JSON-LD dateModified equal the HEAD values (no bump for link-only edit); src-candidate.diff contains no date edits for this page."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Inserted link resolves to a built route and its anchor text matches the destination; canonical unchanged."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Static DOM inspection: the added link renders inline inside existing paragraph or FAQ text; no layout markup added."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Link-only edit; TESTED not applicable; no exclusions touched."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. FAQ answer anchor \"investment management\" -> /guides/what-is-investment-management/ is accurate and renders as a link; FAQPage JSON-LD text carries no raw markdown; dates unchanged (June 25, 2026). Dependency on A4."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. FAQ answer anchor \"investment management\" -> /guides/what-is-investment-management/ is accurate and renders as a link; FAQPage JSON-LD text carries no raw markdown; dates unchanged (June 25, 2026). Dependency on A4."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. FAQ answer anchor \"investment management\" -> /guides/what-is-investment-management/ is accurate and renders as a link; FAQPage JSON-LD text carries no raw markdown; dates unchanged (June 25, 2026). Dependency on A4."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. FAQ answer anchor \"investment management\" -> /guides/what-is-investment-management/ is accurate and renders as a link; FAQPage JSON-LD text carries no raw markdown; dates unchanged (June 25, 2026). Dependency on A4."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. FAQ answer anchor \"investment management\" -> /guides/what-is-investment-management/ is accurate and renders as a link; FAQPage JSON-LD text carries no raw markdown; dates unchanged (June 25, 2026). Dependency on A4."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. FAQ answer anchor \"investment management\" -> /guides/what-is-investment-management/ is accurate and renders as a link; FAQPage JSON-LD text carries no raw markdown; dates unchanged (June 25, 2026). Dependency on A4."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. FAQ answer anchor \"investment management\" -> /guides/what-is-investment-management/ is accurate and renders as a link; FAQPage JSON-LD text carries no raw markdown; dates unchanged (June 25, 2026). Dependency on A4."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "No professionalReviewRequired on this route and no professional review is claimed."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. FAQ answer anchor \"investment management\" -> /guides/what-is-investment-management/ is accurate and renders as a link; FAQPage JSON-LD text carries no raw markdown; dates unchanged (June 25, 2026). Dependency on A4."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Link-only edit: verified only the inserted anchor/sentence, its destination page and the surrounding section; inherited claims on this page were not re-verified against sources in this audit round. FAQ answer anchor \"investment management\" -> /guides/what-is-investment-management/ is accurate and renders as a link; FAQPage JSON-LD text carries no raw markdown; dates unchanged (June 25, 2026). Dependency on A4."
+    }
+   }
+  }
+ ],
+ "editedRoutesNotReserved": {
+  "reason": "content-review-policy.py reserve returned \"BLOCKED: Review dependency changed before checkpoint: reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/rendered-snapshot.json\" for these three routes (prior-run review dependency hash changed); no round could be reserved so no policy record was made.",
+  "routes": {
+   "guides/financial-advisor-worth-it": {
+    "verdict": "FAIL",
+    "findings": [
+     {
+      "id": "E1-F1",
+      "severity": "blocker",
+      "where": "Section \"Robo-advisor vs. financial advisor: a quick side-by-side\" (the section that received the inserted link sentence)",
+      "quote": "That extra cost buys judgment a robo-advisor's algorithm can't replicate: behavioral coaching during a downturn, tax-aware moves like asset location and loss harvesting timed to your specific situation",
+      "defect": "Inherited contradiction in the section that now says \"For the full side-by-side with sources, see our robo-advisor vs financial advisor comparison\". The SEC robo-adviser bulletin (capture 8afe23f0) says some robo-advisers use tax loss harvesting and some offer hybrid human access, and our own /guides/what-is-a-robo-advisor/ covers both. The linked page also gives subscription pricing rather than the \"around 0.25 percent\" figure. The inserted link sentence itself is accurate and the date is unchanged.",
+      "fix": "Either (a) narrow the quoted sentence (\"Some robo-advisers offer tax loss harvesting and hybrid human access; ask each one\") and bump the page date because this is a substantive body edit, or (b) remove the inserted link sentence and leave the page as it was. Do not leave the link next to the unsupported absolute."
+     }
+    ]
+   },
+   "guides/what-is-a-robo-advisor": {
+    "verdict": "PASS",
+    "evidence": "Inserted sentence \"If you want the head-to-head, see our robo-advisor vs financial advisor comparison.\" is accurate and placed at the end of \"Who a Robo-Advisor Does Not Fit\". Page is already source-grounded (SEC bulletin), consistent with the new comparison once A1-F1/F2 are fixed; visible and JSON-LD dates remain November 9, 2026 as in HEAD. Dependency: link must be removed if A1 is deferred."
+   },
+   "guides/how-to-choose-a-financial-advisor": {
+    "verdict": "PASS",
+    "evidence": "Inserted paragraph under Step 4 (\"If you are replacing an advisor, see when to switch financial advisors before you move any accounts.\") and the end-of-section robo link are accurate; visible updated date November 9, 2026 and dateModified unchanged from HEAD. Dependency on A2 (link must be removed if A2 is deferred); A2-F2 fix keeps the instruction consistent with this page."
+   }
+  }
+ }
+}
