@@ -3,6 +3,15 @@ description: AUTONOMOUS user-question harvester. Takes what real visitors asked 
 argument-hint: "[optional: --days N (lookback, default 1)]"
 ---
 
+## Scheduled Search Gap recovery
+
+Apply the current site risk floor and release policy throughout this scheduled Search Gap run. Before dispatching the writer, retain the approved chart and manifest together. Before dispatching an independent content auditor, register the reviewer and seal the exact candidate and its evidence through the native AUDIT handoff. A saved independent PASS or last allowed editorial FAIL goes straight to the normal publication checks. Preserve professional reviews, exclusions and source requirements. A pending item or failed intake must appear as unfinished in the collector.
+
+On partial finish, resume only the saved pending candidate IDs. Previously acknowledged decisions keep their evidence. Use the original job, actual independent review counts and latest saved stage.
+
+On new scheduled invocations use the existing repository landing workflow from the outset: run `.claude/scripts/land-run.sh mark` before content commits, then `.claude/scripts/land-run.sh land` to submit the reviewed commits. Verify the merge and exact live output before finish. This replaces legacy direct-to-main instructions. An explicit deployment denial stays pending under its original permission boundary.
+
+
 <!-- fleet-evidence-contract-v2 -->
 **Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
 <!-- /fleet-evidence-contract-v2 -->
@@ -44,7 +53,7 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 - BASE_URL `https://www.themodernwallet.com` · repo `jht243/modernwallet` (Render autodeploys `main`) · search site key `themodernwallet.com`
 - Content store: Astro content collections (Markdown files with frontmatter under `src/content/`) — Phase 0 of mindmap-pass discovers the exact page shape; template new pages into it exactly as this repo's `seo-gsc-pass/phase-3-new-content.md` does.
 - Build gate: `npm run build (Node 20)`
-- Deploy: `.claude/scripts/deploy-run-to-main.sh mark` at start, `push` at deploy (lands ONLY this run's commits on `main`)
+- Deploy through the repository landing workflow described above.
 - Search data comes from the shared fleet API (`growth-sites-api`) → Supabase `search_queries` rows with `site = themodernwallet.com`; the same rows feed the 8am "Site search" digest email for this site.
 
 ## STEP 1 — Get the questions
@@ -83,7 +92,7 @@ Brief = the raw terms, verbatim, one per line, each tagged with its `kind` and t
 
 > Unattended run: save the chart to `reports/mindmap-pass/<YYYY-MM-DD>-search-gap.md` (this exact name, so it never collides with another mindmap run today), treat the Phase 0 manifest as approved, and continue to Phase 9 without stopping.
 
-Phases that matter most: `phase-build-brief.md` (coverage lookup + lever ladder) → `phase-3-new-content.md` (API writer, see the prose rule) → `phase-4-audit.md` (at the existing audit/rework limit preserve the failed canonical topic, findings and counters as pending; follow existing release rules without resetting it) → **`phase-5-body.md` (the "add to an existing page" rows — this is where a question already half-answered by a page gets its missing section)** → `phase-6-internal-linking.md` → `phase-7-sitemap-indexnow.md` → `phase-9-commit-deliver.md` (commit → deploy → 200-verify → IndexNow).
+Phases that matter most: `phase-build-brief.md` (coverage lookup + lever ladder) → `phase-3-new-content.md` (API writer, see the prose rule) → `phase-4-audit.md` (release the exact independently reviewed candidate at first PASS or its final allowed audit (LIGHT 1, STANDARD 2, HIGH 3), retain all findings and counters, and complete native build, deployment, link and exact live checks) → **`phase-5-body.md` (the "add to an existing page" rows — this is where a question already half-answered by a page gets its missing section)** → `phase-6-internal-linking.md` → `phase-7-sitemap-indexnow.md` → `phase-9-commit-deliver.md` (commit → deploy → 200-verify → IndexNow).
 
 **No cap. Work the entire brief.** Every candidate gets addressed in this run — there is no per-run page limit, no "roll to the next run", and no stopping early because the list is long. Mindmap's own dedup decides new-page-vs-existing; that is its job, not yours.
 

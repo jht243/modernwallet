@@ -143,6 +143,14 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
                       'Only the identified changed route may need targeted independent review. Release the exact candidate already at its '
                       'authorized editorial limit using its original review. Complete outstanding native production and live checks. '
                       'The unchanged old completion is evidence, not a substitute for finishing these still-open scoped actions.')
+        partial = next((cp for cp in reversed(checkpoints) if cp.get('stage') in ('partial-finish', 'completion-recovery')), {})
+        if resumed and partial.get('stage') == 'partial-finish':
+            summary['priorCompletionFile'] = partial['completionFile']
+            summary.pop('completionFile', None)
+            summary['pendingCandidateIds'] = partial['pendingCandidateIds']
+            action = ('Resume only recoverySummary.pendingCandidateIds from the original intake. Reuse the independently reviewed '
+                      'decisions in priorCompletionFile and the latest stage, findings and counters for each open item. '
+                      'Validate the combined final decisions through the native finish before reporting success.')
         if summary and summary.get('completionFile') and not dispatch:
             action='Reuse the restored, already independently reviewed recoverySummary.completionFile, reconcile its separate preview, then finish. For an expired original loopback preview use a separate current build and postPublicationRecovery with the original approved hash and original publication commit. Run python3 scripts/search_gap/publication_history.py FULL_COMMIT for genuine current remote ancestry, including shallow checkouts. Keep all exact-render and live comparisons. Do not dispatch BUILD, WRITE or another decision/content review.'
             sid=os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID')
@@ -275,25 +283,37 @@ def finish(intake_path,completion_path,store,owner):
     lease=store.claim_job(packet['site'],owner,Path(intake_path).read_text(encoding='utf-8'))
     require(lease.get('status')=='claimed','Search job is not available to this invocation; preserve it without repeating render checks')
     require(lease.get('packetSha256')==digest(intake_path),'Claimed search job differs from the retained intake')
+    def save_finish(stage, pending_ids=None):
+        history = lease.get('checkpoints') or []
+        latest = history[-1] if history else {}
+        metadata = {key: latest[key] for key in ('canonicalJobs', 'reviewCounters', 'gitRef', 'commit', 'verifiedContinuation') if key in latest}
+        metadata.setdefault('canonicalJobs', {})
+        metadata.setdefault('reviewCounters', {})
+        saved = Path('reports/search-gap/recovery') / (digest(completion_path) + '-completion.json')
+        saved.parent.mkdir(parents=True, exist_ok=True)
+        saved.write_bytes(Path(completion_path).read_bytes())
+        metadata.update(stage=stage, completionFile=str(saved),
+                        artifacts=capture_artifacts([str(saved), completion['chart'], completion['chartReview']]))
+        if pending_ids is not None:
+            metadata.update(pendingCandidateIds=pending_ids, nextAction='Resume only these unresolved candidate IDs; retain all finished decisions.')
+        store.checkpoint_job(packet['site'], packet['runId'], owner, metadata)
+
     try:
         decisions=native.validate_completion(packet,completion)
         for decision in decisions:
             if decision['status']!='pending':
                 store.acknowledge_job(packet['site'],packet['runId'],owner,decision,{'runId':packet['runId'],'decision':decision,'completionSha256':digest(completion_path),'chartReviewSha256':digest(completion['chartReview'])})
         pending=sum(d['status']=='pending' for d in decisions)
-        closed=store.close_job(packet['site'],packet['runId'],owner)
-        require(pending or closed['complete'],'Production queue is not fully acknowledged')
+        if pending:
+            save_finish('partial-finish', [d['id'] for d in decisions if d['status'] == 'pending'])
+            store.release_job(packet['site'], packet['runId'], owner)
+        else:
+            closed=store.close_job(packet['site'],packet['runId'],owner)
+            require(closed['complete'],'Production queue is not fully acknowledged')
     except Exception:
         # Retain the exact final decisions before making this unfinished job retryable.
         try:
-            location=subprocess.check_output(['git','rev-parse','--git-path','search-gap-recovery/'+packet['runId']+'/checkpoints.json'],text=True).strip()
-            history=read(location)
-            metadata={k:v for k,v in history[-1].items() if k not in ('artifacts','recordedAt')}
-            saved=Path('reports/search-gap/recovery')/(digest(completion_path)+'-completion.json')
-            saved.parent.mkdir(parents=True,exist_ok=True);saved.write_bytes(Path(completion_path).read_bytes())
-            metadata.update(stage='completion-recovery',completionFile=str(saved))
-            metadata['artifacts']=capture_artifacts([str(saved),completion['chart'],completion['chartReview']])
-            store.checkpoint_job(packet['site'],packet['runId'],owner,metadata)
+            save_finish('completion-recovery')
         except Exception as checkpoint_error:
             print('Completion checkpoint unavailable: '+type(checkpoint_error).__name__,file=sys.stderr)
         try:store.release_job(packet['site'],packet['runId'],owner)
