@@ -23,7 +23,7 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 
 > **‼️ AUTONOMOUS.** No human checkpoint. Never print "Approve?". No new episodes → exit 0 silently.
-> Run `.claude/scripts/deploy-run-to-main.sh mark` FIRST, before any commit.
+> Run `.claude/scripts/land-run.sh mark` FIRST, before any commit.
 
 ## STEP 1 — Harvest
 Follow `.claude/commands/podcast-pain-pass/phase-0-mine.md` exactly (each command in the FOREGROUND with a Bash timeout of 600000):
@@ -49,4 +49,4 @@ Start the brief with these lines, verbatim, then `brief.md`:
 /mindmap-pass <the brief>
 ```
 
-Mindmap does everything from here — research, dedup, writing, audit, build, commit, push, 200-verify, IndexNow, report. Afterwards, append every slug it shipped to `shipped_slugs` in the ledger, commit, and `.claude/scripts/deploy-run-to-main.sh push`.
+Mindmap does everything from here — research, dedup, writing, audit, build, commit, push, 200-verify, IndexNow, report. Afterwards, append every slug it shipped to `shipped_slugs` in the ledger, commit, and `.claude/scripts/land-run.sh land`.

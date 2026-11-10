@@ -144,7 +144,7 @@ build every page that clears the floor (>= 4 verified vendors), in one run. The 
 
 ### Phase 0 — Preflight
 1. `git status --porcelain` must be clean, else STOP and email `failure`.
-2. `.claude/scripts/deploy-run-to-main.sh mark` before any commit.
+2. `.claude/scripts/land-run.sh mark` before any commit.
 3. `npm ci` (Node 20+). Confirm `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY` resolve, else STOP, email `no-op`.
    The TypeScript placement scripts run with `npx -y tsx scripts/placement/<name>.mts`.
 
@@ -296,7 +296,7 @@ Must pass. Then confirm every changed roundup's `dist/roundup/<slug>/index.html`
 | build or nofollow check failed | no push, email `failure` |
 | Phase 6 drafted every new page and no rows survived | no push, email `failure` |
 | nothing to enrich and nothing to build | no push, email `no-changes` |
-| >= 1 audited change | `.claude/scripts/deploy-run-to-main.sh push` |
+| >= 1 audited change | `.claude/scripts/land-run.sh land` |
 
 PUBLISHING: this site deploys from main; the push to main is the intended deploy.
 After the push: wait ~4 min, then for each changed page `curl -s https://www.themodernwallet.com/roundup/<slug>/`

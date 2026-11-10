@@ -45,7 +45,7 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 
 > **‼️ AUTONOMOUS.** No human checkpoint. Never print "Approve?". Nothing new → commit the ledger, exit 0 silently.
-> Run `.claude/scripts/deploy-run-to-main.sh mark` FIRST, before any commit.
+> Run `.claude/scripts/land-run.sh mark` FIRST, before any commit.
 
 ## STEP 1 — Harvest
 ```bash
@@ -54,7 +54,7 @@ python3 scripts/competitor_monitor/scraper.py detect --out "reports/competitor-m
 ```
 Run it in the FOREGROUND with a Bash timeout of 600000. It crawls every roster competitor (`scripts/competitor_monitor/competitors.json`), diffs against the ledger, applies the relevance gate (off-niche pages are recorded, never sent), and marks new/updated pages `pending`. A competitor's first crawl is a quiet seed (0 candidates).
 
-0 candidates → commit the ledger, `.claude/scripts/deploy-run-to-main.sh push`, exit 0.
+0 candidates → commit the ledger, `.claude/scripts/land-run.sh land`, exit 0.
 
 Keep the most recent N (default 10, or `$ARGUMENTS`); the rest stay `pending` for the next run.
 
@@ -79,7 +79,7 @@ From the finished chart, record every sent candidate so it flips from `pending` 
 python3 scripts/competitor_monitor/scraper.py record --dispositions /tmp/cm-dispositions.json
 python3 scripts/competitor_monitor/scraper.py baseline
 ```
-Commit the ledger + baseline chart and deploy with `.claude/scripts/deploy-run-to-main.sh push`. Mindmap's report email covers the pages; nothing else after this.
+Commit the ledger + baseline chart and deploy with `.claude/scripts/land-run.sh land`. Mindmap's report email covers the pages; nothing else after this.
 
 Owner continuation correction 2026-11-09: use scraper detect --workflow-limit N (native default 10). Its immutable intake is authoritative and is resumed before any new discovery. Keep the emitted unique chartPath; preserve older charts. Send ALL selected candidates unchanged into the existing independent preparation/chart review, including duplicates and possible low-value items; the dispatcher must not decide their chart outcomes itself. Include the frozen path/hash in evidenceFiles and one candidateDispositions row per original selected URL (candidate=URL, decision, reason, and target for a production action). Complete each independently approved action through its existing native publication/live/reporting path. scraper record validates the independently reviewed chart and requires every selected terminal outcome before Stop can succeed. Batch-cap leftovers remain eligible for the next scheduled batch; a selected legitimate gap cannot be left for a future pass merely because of time, context, cost or convenience. Preserve all real professional/quality/authorization holds and honest failure reporting with exact resumable evidence; never fabricate a PASS. No new human gate.
 

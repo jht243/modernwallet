@@ -49,3 +49,5 @@ Before paid content production, use the installed `deployment-evidence.py --chec
 <!-- /credential-free-deployment-proof-20261110 -->
 
 Mechanical Mindmap publication runs in MAIN with the existing checked-in deployment/live-verification helpers and actual PUBLISH packet; do not delegate production writes to another Agent. Keep normal platform permission checks. If the concrete deployment command is denied, retain the reviewed candidate and report the actual approval block; never change permissions or bypass it.
+
+For new scheduled editorial runs, use this repository’s checked-in land-run.sh mark and land commands from the start. Continue to build and compare the exact approved content live. An explicit production denial remains pending at its original boundary; never try a different release path after a denial.

@@ -32,7 +32,7 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 
 > **‼️ AUTONOMOUS.** No human checkpoint. Never print "Approve?". Nothing for this site → exit 0 silently.
-> Run `.claude/scripts/deploy-run-to-main.sh mark` FIRST, before any commit.
+> Run `.claude/scripts/land-run.sh mark` FIRST, before any commit.
 
 **Inputs from the routine prompt:** `X_TRENDS_SITE` (the domain exactly as the scout email names it, e.g. `thehoaguide.com`) and `BASE_URL` (the host that answers 200, e.g. `https://www.thehoaguide.com`).
 
@@ -81,7 +81,7 @@ Brief for `/mindmap-pass` (read each phase file; do not paraphrase them):
 
 Before the first paid write, the dispatcher retains the native approval manifest, the independent chart reviewer’s receipt for that exact manifest, and the page-specific analysis packet. Run the existing generation-check using the original job and target. Pass the same files to content_gen.py with --mindmap-manifest, --mindmap-review and --analysis-packet. Resume saved research or drafts at their first unfinished step. If preflight selects a configured fallback, use it and record the actual model. A primary key being out of credit alone does not stop this work. Preserve the site’s source, eligibility and professional-review rules.
 
-Phases that matter most: `phase-build-brief.md` → `phase-3-new-content.md` (API writer, see the prose rule) → `phase-4-audit.md` (publish the exact independently reviewed version at the first PASS or final allowed audit (LIGHT 1, STANDARD 2, HIGH 3). Retain the verdict and findings and complete the native build, deployment, links and exact live comparison) → `phase-7-sitemap-indexnow.md` → `phase-9-commit-deliver.md` (commit → `deploy-run-to-main.sh push` → 200-verify → IndexNow).
+Phases that matter most: `phase-build-brief.md` → `phase-3-new-content.md` (API writer, see the prose rule) → `phase-4-audit.md` (publish the exact independently reviewed version at the first PASS or final allowed audit (LIGHT 1, STANDARD 2, HIGH 3). Retain the verdict and findings and complete the native build, deployment, links and exact live comparison) → `phase-7-sitemap-indexnow.md` → `phase-9-commit-deliver.md` (commit → `land-run.sh land` → 200-verify → IndexNow).
 
 ## STEP 4 — Verify before you trust it
 - The repo's build gate passes (including `check-depth` / bundle checks where present).
