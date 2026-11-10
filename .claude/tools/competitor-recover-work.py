@@ -25,8 +25,9 @@ def checkpoint(root,intake,failure):
         path=policy.artifact(root,ref)
         if path.suffix!='.json':continue
         report=json.loads(path.read_bytes())
-        if not isinstance(report,dict) or not report.get('snapshotSha256'):continue
+        if not isinstance(report,dict) or not report.get('snapshotSha256') or not report.get('reviewer'):continue
         for row in report.get('routes',[]):
+            if not row.get('reviewBudget'):continue  # Retain raw legacy/preview evidence without inventing a budget.
             admission=json.loads(policy.artifact(root,row['reviewBudget']).read_bytes())
             snapshot=json.loads(policy.artifact(root,admission['snapshot']).read_bytes())
             if snapshot['snapshotSha256']!=report['snapshotSha256']:
@@ -134,7 +135,7 @@ def restore(root, intake, hint):
     for ref in hint['evidence']:
         if not ref['path'].endswith('.json'):continue
         report=json.loads(git(root,'show',commit+':'+ref['path']))
-        if not isinstance(report,dict) or not report.get('snapshotSha256'):continue
+        if not isinstance(report,dict) or not report.get('snapshotSha256') or not report.get('reviewer'):continue
         for row in report.get('routes',[]):
             admitted=json.loads(git(root,'show',commit+':'+row['reviewBudget']['path']))
             snapshot=json.loads(git(root,'show',commit+':'+admitted['snapshot']['path']))
@@ -206,6 +207,7 @@ def restore(root, intake, hint):
             continue
         archive_applications(root,policy,report,ref,commit,base)
         for row in report.get('routes',[]):
+            if not row.get('reviewBudget'):continue  # Retain raw legacy/preview evidence without inventing a budget.
             admission=json.loads(policy.artifact(root,row['reviewBudget']).read_bytes())
             ident=admission['identity']
             journal=policy.Journal(root,ident['canonicalBase'],ident['route'])

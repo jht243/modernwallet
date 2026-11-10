@@ -61,7 +61,8 @@ def announce(root,path):
  repairs=pending_reviews(root,path.stem)
  gaps=publication_gaps(root,path.stem)
  if gaps and not repairs:
-  print('RESUME ORIGINAL REVIEW/PUBLICATION PROOF, without new discovery: these original reviewed routes lack rendered-audit.py record-deployment: '+json.dumps(gaps)+'. Do not regenerate or repeat research/chart. Start with each genuine saved approved snapshot and actual final report (project subsets through the native policy helper where necessary), capture exact canonical live output to NEW immutable paths, compare, obtain actual host commit evidence, and record-deployment. Complete current PUBLISH preflight with a sealed current handoff. HTTP 200 or unchanged content never substitutes for exact comparison. Preserve all original findings/counters and record the native ledger completion only after this proof exists. If a live/current candidate differs substantively from its final recorded review, this is recoverable production drift, not a request for another allowance: preserve those exact newer source bytes/diffs internally, and restore only the affected route to its exact latest genuinely reviewed source using its original correction-boundary source blobs or actual reviewed commit. Preserve unrelated routes and actual explicit customer/owner holds. No generated replacement, whole shared-file rollback or new editorial pass at an exhausted limit. If that route still has an original allowed round remaining and its final editorial result needs correction, use its existing native writer/auditor with the current sealed handoff and actual AUDIT preflight, within the SAME cycle; this is not an extra round. Known Next-generated root font hashes are normalized mechanically; other content/visibility changes still fail. Never ask the owner to fix a recoverable post-review drift or invent an authorization hold merely because its audit limit is reached.')
+  print('RESUME ORIGINAL PUBLICATION PROOF, no discovery/chart/generation restart. Run competitor-handoff.py publication-plan --out NEW_INTERNAL_DIRECTORY/plan.json to select each actual LAST journal decision, never an earlier batch round. Capture/compare its exact live output and record-deployment. Use deployment-evidence.py --expected-commit FULL_PUBLICATION_SHA --out NEW_HOST_PROOF.json with a long Bash timeout: this reads actual build provenance without a Render key. No connector/key permission is needed. On substantive post-review drift, retain newer source bytes/diffs and restore only the exact affected reviewed route, preserving unrelated work and explicit holds. Never roll back a whole shared data file. Use only an original remaining audit slot where genuinely needed; no extra round or reset. An HTTP 200 is insufficient. '+json.dumps([{k:r[k] for k in ('route','status','remainingReviews')} for r in gaps]))
+  return
  if repairs:
   print('RESUME EXISTING PENDING AUDIT, even if the URL is already live or the old ledger says complete. Do not rewrite content, redo chart/discovery or reset any review counter. Restore immutable prior dependencies through the normal durable backend, capture to a new immutable output, use content-review-policy.py repair-pending only for an actually corrupt pending capture, and have a real independent reviewer complete this SAME numbered slot with its actual verdict. A reservation or unrecorded reading cannot release a changed page. First call content-review-durable.py restore for the exact canonical origin/route; keep the current content unchanged. For an overwritten capture, retain the actual auditor error report, capture the exact current page to a NEW output, call repair-pending once with the actual independent reviewer identity, then record that real reviewer result using the returned admission (not another reserve/round). Reuse the saved auditor where available. Complete exact live verification and retain the true repair/error history. '+json.dumps(repairs))
  if path.with_suffix('.chart.json').is_file():
@@ -135,6 +136,23 @@ def publication_gaps(root,digest=None):
     rounds=journal.cycle['rounds'];last=rounds[-1] if rounds else {}
     result.append({'route':identity['route'],'jobId':job,'status':journal.cycle['status'],'round':last.get('number'),'report':last.get('report'),'admission':last.get('admission'),'remainingReviews':max(0,policy.LIMITS[journal.cycle['profile']]-len(rounds))})
  return result
+
+
+def publication_plan(root,out):
+ path=active(root);require(path is not None,'Resume the actual native intake before selecting its publication evidence')
+ policy=load('competitor_publication_policy',root/'.claude/tools/content-review-policy.py')
+ result={'intake':path.stem,'scope':'Actual latest independent records only; no new review or verdict.','routes':[]}
+ for row in publication_gaps(root,path.stem):
+  item=dict(row)
+  if row['status']=='pending':item['next']='finish-original-pending-slot'
+  elif row['status']!='passed' and row['remainingReviews']>0:item['next']='complete-original-remaining-review-with-current-AUDIT-preflight'
+  else:
+   admission=read(policy.artifact(root,row['admission']));snapshot=policy.artifact(root,admission['snapshot']);review=policy.artifact(root,row['report'])
+   key=sha(canonical({'route':row['route'],'admission':row['admission'],'report':row['report']}))[:20]
+   projected=policy.project(root,snapshot,review,[row['route']],out.parent/(key+'-approved.json'),out.parent/(key+'-review.json'))
+   item.update(next='exact-live-compare-and-record-deployment',**projected)
+  result['routes'].append(item)
+ save(out,canonical(result));return result
 
 
 def publication_guard(root,payload):
@@ -533,7 +551,7 @@ def execute(root,main):
     return result
 
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('command',choices=['stop','blocked','report-guard','publication-guard','status','bind-worker','register-recovery','recover-work','compare-preview','verify-preview']);p.add_argument('--evidence',type=Path);p.add_argument('--base-url');p.add_argument('--snapshot',type=Path);p.add_argument('--branch');p.add_argument('--commit');p.add_argument('--intake',type=Path);a=p.parse_args();root=Path(__file__).resolve().parents[2]
+ p=argparse.ArgumentParser();p.add_argument('command',choices=['stop','blocked','report-guard','publication-guard','publication-plan','status','bind-worker','register-recovery','recover-work','compare-preview','verify-preview']);p.add_argument('--out',type=Path);p.add_argument('--evidence',type=Path);p.add_argument('--base-url');p.add_argument('--snapshot',type=Path);p.add_argument('--branch');p.add_argument('--commit');p.add_argument('--intake',type=Path);a=p.parse_args();root=Path(__file__).resolve().parents[2]
  try:
   if a.command=='verify-preview':print(json.dumps(verify_preview(root,a.base_url)))
   elif a.command=='compare-preview':print(json.dumps(compare_preview(root,inside(root,a.snapshot))))
@@ -545,6 +563,8 @@ if __name__=='__main__':
   elif a.command=='stop':stop(root,json.load(sys.stdin))
   elif a.command=='report-guard':report_guard(root,json.load(sys.stdin))
   elif a.command=='publication-guard':publication_guard(root,json.load(sys.stdin))
+  elif a.command=='publication-plan':
+   require(a.out is not None,'Use --out NEW_INTERNAL_PLAN.json');print(json.dumps(publication_plan(root,inside(root,str(a.out)))))
   elif a.command=='bind-worker':bind_worker(root,json.load(sys.stdin))
   elif a.command=='status':print(json.dumps(status(root)))
   else:

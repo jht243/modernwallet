@@ -56,6 +56,20 @@ class Tests(unittest.TestCase):
    with self.assertRaisesRegex(ValueError,'exact rendered-live'):h.record(self.root,outcomes)
    with self.assertRaisesRegex(ValueError,'Exact rendered-live'):h.complete(self.root,verified)
 
+ def test_publication_plan_uses_the_last_real_round_instead_of_an_older_batch(self):
+  spec=importlib.util.spec_from_file_location('actual_policy_fixtures',here/'content-review-policy_test.py');pf=importlib.util.module_from_spec(spec);spec.loader.exec_module(pf)
+  fixture=pf.Tests();fixture.setUp();self.addCleanup(fixture.doCleanups)
+  fixture.config.update(releaseAtAuditLimit=True,canonicalHosts=['example.com']);fixture.put(pf.p.CONFIG,fixture.config)
+  job='competitor-'+self.path.stem[:12]
+  for number in (1,2):
+   admission=fixture.reserve(number,job=job);report=fixture.report(admission,'FAIL');path=fixture.put('reports/result-'+str(number)+'.json',report);pf.p.record(fixture.root,path)
+  with patch.object(h,'active',return_value=self.path),patch.object(h,'load',return_value=pf.p):
+   result=h.publication_plan(fixture.root,fixture.root/'reports/publication/plan.json')
+  row=result['routes'][0];self.assertEqual(row['round'],2);self.assertEqual(row['remainingReviews'],0)
+  actual=pf.p.read(fixture.root/row['review']['path'])
+  self.assertEqual(actual['routes'][0]['verdict'],'FAIL')
+  self.assertEqual(actual['approvalProjection']['review']['sha256'],pf.p.sha(path.read_bytes()))
+
  def test_pending_intake_resumes_without_calling_discovery(self):
   target=self.root/'output.json'
   with patch.object(sys,'argv',['scraper.py','detect','--out',str(target)]),contextlib.redirect_stdout(io.StringIO()):
