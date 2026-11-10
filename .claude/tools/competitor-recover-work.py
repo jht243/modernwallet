@@ -43,8 +43,11 @@ def checkpoint(root,intake,failure):
                     if not name.startswith(('reports/','.claude/')):
                         sources[name]=boundary['files'][name]['sha256']
     if not sources:return None
-    default=git(root,'symbolic-ref','refs/remotes/origin/HEAD').decode().strip()
-    base=git(root,'merge-base','HEAD',default).decode().strip()
+    advertised=git(root,'ls-remote','--symref','origin','HEAD').decode().splitlines()
+    tips=[line.split()[0] for line in advertised if not line.startswith('ref:') and line.endswith('\tHEAD')]
+    if len(tips)!=1:raise ValueError('Current published default branch unavailable for saved-work checkpoint')
+    git(root,'fetch','--quiet','--no-tags','--no-write-fetch-head','origin',tips[0])
+    base=git(root,'merge-base','HEAD',tips[0]).decode().strip()
     names=git(root,'ls-files','-co','--exclude-standard','-z','--','reports/mindmap-pass','reports/competitor-monitor/intakes').decode().split('\0')
     names={n for n in names if intake.stem[:12] in n}
     names.update(ref['path'] for ref in refs)
