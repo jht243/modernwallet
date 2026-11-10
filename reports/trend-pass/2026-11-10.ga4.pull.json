@@ -1,0 +1,125 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-11-09",
+  "window_start": "2026-11-09",
+  "window_end": "2026-11-09",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 73,
+      "sessions": 78,
+      "active_users": 72,
+      "clicks": 73
+    },
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 32,
+      "sessions": 29,
+      "active_users": 24,
+      "clicks": 32
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 28,
+      "sessions": 31,
+      "active_users": 28,
+      "clicks": 28
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 27,
+      "sessions": 27,
+      "active_users": 24,
+      "clicks": 27
+    },
+    {
+      "page": "/",
+      "views": 13,
+      "sessions": 11,
+      "active_users": 11,
+      "clicks": 13
+    },
+    {
+      "page": "/guides/tax-deductions-checklist/",
+      "views": 11,
+      "sessions": 9,
+      "active_users": 9,
+      "clicks": 11
+    },
+    {
+      "page": "/guides/social-security-changes-2027/",
+      "views": 10,
+      "sessions": 11,
+      "active_users": 10,
+      "clicks": 10
+    },
+    {
+      "page": "/investing/high-yield-savings-calculator/",
+      "views": 10,
+      "sessions": 8,
+      "active_users": 7,
+      "clicks": 10
+    },
+    {
+      "page": "/florida-amendment-3-calculator/",
+      "views": 9,
+      "sessions": 8,
+      "active_users": 7,
+      "clicks": 9
+    },
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 9,
+      "sessions": 10,
+      "active_users": 9,
+      "clicks": 9
+    }
+  ],
+  "top10_pages_total_views": 222,
+  "top10_pages_total_clicks": 222,
+  "channel_split": {
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 77,
+      "Unassigned": 7,
+      "Direct": 1
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 30,
+      "Unassigned": 6,
+      "Direct": 1
+    },
+    "/social-security-cola-calculator/": {
+      "Organic Search": 29,
+      "Unassigned": 2
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 26,
+      "Unassigned": 3,
+      "Direct": 1
+    },
+    "/guides/social-security-changes-2027/": {
+      "Organic Search": 11
+    },
+    "/guides/trump-account-worth-it/": {
+      "Organic Search": 10,
+      "Unassigned": 1
+    },
+    "/": {
+      "Direct": 9,
+      "Organic Search": 2,
+      "Unassigned": 1
+    },
+    "/guides/tax-deductions-checklist/": {
+      "Organic Search": 9
+    },
+    "/florida-amendment-3-calculator/": {
+      "Organic Search": 8
+    },
+    "/investing/high-yield-savings-calculator/": {
+      "Organic Search": 8,
+      "Unassigned": 2
+    }
+  }
+}

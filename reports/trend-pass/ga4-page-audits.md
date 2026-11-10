@@ -330,3 +330,8 @@
 | /guides/social-security-changes-2027/ | 2026-11-06 | 18 | 0/0/0/0/0 | 0 |
 | /guides/senior-deduction-social-security/ | 2026-11-06 | 15 | 0/0/0/0/0 | 0 |
 | /guides/social-security-survivor-benefits-and-working/ | 2026-11-06 | 11 | 0/0/0/0/0 | 2 |
+| /social-security-cola-calculator/ | 2026-11-10 | 32 | 0/0/0/0/0 | 1 |
+| /guides/tax-deductions-checklist/ | 2026-11-10 | 11 | 0/0/0/0/0 | 0 |
+| /investing/high-yield-savings-calculator/ | 2026-11-10 | 10 | 0/0/0/0/0 | 0 |
+| /guides/trump-account-worth-it/ | 2026-11-10 | 9 | 0/0/0/0/0 | 0 |
+| / | 2026-11-10 | 13 | 0/0/0/0/0 | 0 |
