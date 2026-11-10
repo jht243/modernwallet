@@ -1,0 +1,2 @@
+1. QUOTE: "A 401(k) offers the highest total limits and plan flexibility for top earners, though neither plan suits money needed before 59½, and withdrawals during your first 2 years of a SIMPLE IRA cost 25% instead of 10%."
+DEFECT: overloaded sentence (about 40 words, three ideas). Split the withdrawal clause into its own sentence: neither plan suits money needed before 59½, and a SIMPLE IRA withdrawal in its first 2 years costs a 25% additional tax instead of 10%. Keep the sentence about 401(k) flexibility and higher earners.

@@ -1,0 +1,63 @@
+extracted text through `wc -w`), never by eyeballing length.
+
+**Verdict:** compare each page against the floors table in `phase-3-new-content.md` (comparison/review 1,500 · persona 1,400 · hub/worth-it/explainer 1,200 · cost 1,000 · editorial 600; **explainer 1,200 is the default** for anything that doesn't clearly match another type). Any page under its floor is a **HARD FAIL** — hand it back to Phase 3 for expansion with real substance, and re-measure. It is not fixable by padding: a page that clears the floor but trips BAR 1 (AI filler) fails anyway, so expansion must add actual information.
+
+**Report the distribution, not per-page verdicts.** Print `passing / failing / median` across all article pages this run. Page-by-page review is structurally blind to run-wide thinness — a 300-word page reads as concise and on-intent in isolation, and only the distribution shows that every page is one. On runs of 3+ article pages, a median sitting within 10% of the floor is itself a finding: record it as `depth: median {N} barely clears floor {F}` in the summary even when every page individually passes.
+
+---
+
+**Hand the auditor the row's `reader_question`, `answer` and `answer_placement` (chart cols 10–12) with every page.** `_content-standard.md`'s `GATE — Reader question` is audited against them — without them the auditor has to guess what the page was supposed to answer, which is how a definitional opener passed three audit rounds on 2026-09-22. Include the evidence tag (`[PAA n/m …]` / `[verb-only …]`): a verb-only question is a weaker premise and the auditor should say so rather than fail the page for missing evidence it never had.
+
+**Remediation:** Use `_remediation-ladder.md` for mechanical and targeted correction methods, and `_content-review-policy.md` for the single total 1/2/3 independent-audit budget and release decision. These are not additional rework allowances. Keep actual PASS/FAIL judgments and reuse unchanged pages. At an activated Mindmap audit limit publish the exact final candidate with factual and cosmetic FAIL findings retained; do not stop, isolate it for editorial failure, regenerate, or buy another audit. Preserve existing non-editorial safeguards and the separate native client/upsell contracts.
+<!-- CRON_PROMPT_END -->
+
+---
+## ▶ WHEN THIS PHASE IS DONE — AUTO-CONTINUE. DO NOT ASK THE USER.
+The moment this phase's reviewer gate PASSES, immediately begin the next phase in the SAME turn. Do NOT stop. Do NOT print "Want me to proceed?", "Should I continue?", "Next: Phase X", or any question or hand-off that waits for a human reply.
+
+The `/mindmap-pass` run has EXACTLY ONE human stop (the Phase 0 manifest approval), and this phase is NOT it:
+- Stop 1: the Phase 0 manifest approval (before any edits).
+- (Phase 8 is an informational summary that auto-continues to the Phase 9 push — NOT a stop.)
+
+Everything between those two — including this phase — runs automatically. The reviewer gates are adversarial SUBAGENTS, not human checkpoints; a passing gate means YOU proceed on your own. Keep going through Phase 8 and the Phase 9 push without stopping.
+
+
+## Updated-page date-bump rule (MANDATORY — workflow-wide, added 2026-07-12)
+
+**Editors (any step that changes what an EXISTING page renders — metadata/title, body or enrich sections, FAQs, internal links, embedded tools, thin-content rework, link fixes):** every existing page you update MUST have its "last updated" date bumped to the run date **in the SAME change** — the content edit and the date bump ship together, never separately. Discover how THIS project surfaces the date (record it as a Phase 0 project fact) and bump the field the template ACTUALLY renders:
+- **DB-backed pages** (e.g. ban_the_bots: `landing_pages.last_generated_at` renders both the visible "Last updated" byline and JSON-LD `dateModified`; `blog_posts.updated_at` for posts): any script/SQL that edits content columns MUST also set the date column to now (e.g. `page.last_generated_at = datetime.utcnow()`). Never ship an enrichment/edit script that touches content but not the date column.
+- **File-backed pages**: bump the frontmatter/date field the template renders (`last_updated`, `updated`, `dateModified`, …) and re-render if the project pre-renders static HTML.
+
+Also refresh every surface derived from that date: JSON-LD `dateModified`, and the sitemap `<lastmod>` when the generator does not derive it from the same field. **New pages created this run are exempt** (their date fields already default to now). **Purely non-rendering technical fixes are exempt** (robots.txt, redirects, canonical tags, sitemap-only hygiene) — do NOT bump dates for those.
+
+**Auditors / reviewer gates (adversarial review):** for EVERY existing page this run edited, verify the rendered "Last updated" date (and JSON-LD `dateModified`) now equals the run date. A stale date on an updated page is a **HARD FAIL** — the page does not pass until the date is bumped. The fix is a one-field update; never rewrite the page. Conversely, a bumped date on a page whose rendered content did NOT change is also a fail (date churn fakes freshness) — revert it.
+
+## Content standard — audit gates
+
+**Load `.claude/commands/_content-standard.md` and apply its `## AUDITOR` section in full.** It is the single source of truth for the content gates: register and voice, tee-up, experience truth, required page elements, byline-in-body, the proprietary anchor, neutrality, disclaimer placement, depth floors, first-mention links, and the row records.
+
+**Also load `.claude/commands/_experience.md`** — every first-person experience claim on a page must be traceable to it; anything it does not license is an invented claim and fails.
+
+**Also load `.claude/commands/_anti-ai-language.md`** and apply its **AUDITOR** section in full, including the meaning bar. It outranks the content standard on any conflict.
+
+If any of those files is missing, FAIL the run and report it — never substitute your own gates. If `.claude/commands/_content-standard.local.md` exists in this repo, its sections override the same-named sections of the standard.
+
+<!-- mindmap-execution-v1 -->
+Apply `_mindmap-execution.md` inside this existing audit: independently judge usefulness and source/assumption limits, replay deterministic calculations where relevant, inspect real run records for measured work, and bind the analysis decision to the exact final rendered snapshot/review. Accept justified non-quantitative and no-addition branches; do not require new paid/physical testing merely to repeat a saved valid record.
+<!-- /mindmap-execution-v1 -->
+
+[Source: .claude/commands/_workflow-efficiency.md]
+
+<!-- fleet-resume-release-20261109 -->
+Owner-authorized fleet update, 2026-11-09. Apply the installed shared tools through this site's native workflow. Resume the same canonical job, source intake, chart approval, candidate and actual review history after retries. Pass the current task and open findings, retain retrievable history, and reuse unchanged rules only with actual continued access and understanding. Join each real worker's terminal result once. Use eligible correction scope for changed sections; an unchanged reviewed render needs publication checks, without another writing or editorial pass.
+
+Use this site's existing factual risk floor and 1/2/3 independent review ceiling. After its final allowed audit, automatically publish the exact latest reviewed candidate, retaining FAIL findings honestly as audit-limit release. Preserve full SEO, mechanical build/render/live/link checks, exclusions, ownership, required professional review and explicit client promises/holds. An editorial FAIL at the ceiling must not create another pass or a manual merge gate. Publication or reporting recovery retains the original reviews and counters.
+
+For competitor monitors, run the native detect/resume entry first. The installed competitor-handoff helper restores saved work before fresh discovery. For completed recovered reviews, use verify-preview against the current local preview; identical previews are removed, changed output retains evidence for targeted review. Use the native ledger adapter's batch --dispositions path to record every selected URL/version; preserve newer observations separately. Applicable sitemap-based monitors reuse the matching same-day harvest for their baseline. Ledger-only baselines already reuse collected data. Use the existing automatic publication/reporting paths and preserve schedules. No additional content, approval gate or paid test is introduced.
+<!-- /fleet-resume-release-20261109 -->
+
+# Mindmap efficiency, owner rollout 2026-11-09
+
+Apply these optimizations inside the existing workflow and native publication path. Keep each site's instructions, authorizations, exclusions, professional-review requirements and release exceptions.
+
+Read complete applicable rules on the first visit. Preflight compiles only byte-identical paragraphs once, preserves every original source hash and verifies c

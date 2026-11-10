@@ -1,0 +1,50 @@
+{
+ "reviewer": "chart-reviewer-1",
+ "author": "build-worker-1",
+ "jobId": "search-gap-themodernwallet-6931aeadbaf0403bb8d5862c930c0bdd",
+ "verdict": "FAIL",
+ "round": 1,
+ "intakeSha256": "e63f961d2ea7eab14062fa512e6f6216afd2d1a17f77f131083c748669461a93",
+ "manifestSha256": "c2319c946813725e7dac6698ab43773952e5ef43f0c28bd315c865f723d8e3c2",
+ "manifestCanonicalJsonSha256": "dfbcda82bc76add4766c2196c9c9a73e38877711eb1253efc548f9209cb967e7",
+ "readinessSha256": "29b14f712bfa03e85fdb52ce9f3618e782d8a6d4a03027d603c6ffe9c20654e4",
+ "decisionsSha256": "dc5b0e3b6cd33c21b21f74aad53d42a0be8b7040b7700bbb98cb5875b8fa2fd9",
+ "preflight": "reports/mindmap-pass/2026-11-10-search-gap/preflight-chart-review (33/33 parts, check=delivery-complete-sources-current)",
+ "dispositions": [
+  {"id": "701871f1c112ebe9148f7528ea54e1e71f032dcad60a2d12fc46fd02857feed8", "decision": "APPROVE enrich -> /compare/simple-ira-vs-401k/ (A1)", "note": "Same path, 2.5 s before candidate 8791218e; same reader goal. 'Same session' is an inference from timing and path, not a recorded session id."},
+  {"id": "73704836545ad33ae8a9e898729e0f38d5fbc5ef59da49b958b7d4900c4aa3dc", "decision": "APPROVE exclude (dropped)", "note": "Untrusted third-party promotional paste for kinjar.app on /contact/, truncated at 200 chars by the logger; no reader question or demand signal; no product followed or added; coverage lookup shows no dedicated page but no evidence of neutral demand."},
+  {"id": "8791218eb60074c2e36f889cb68f325a8a0835290ba1fddac238ac0b7539d29f", "decision": "APPROVE enrich -> /compare/simple-ira-vs-401k/ (A1)", "note": "Exact-intent page exists; IRS gaps verified against primary sources."}
+ ],
+ "irsVerification": {
+  "25pctAdditionalTaxFirst2Years": "VERIFIED. IRS Exceptions to tax on early distributions (reviewed 11-Dec-2025) and SIMPLE IRA FAQ: 25% instead of 10% within the first 2 years of participation; 2-year period starts the first day the employer deposits contributions; standard 72(t) exceptions still apply.",
+  "twoYearRolloverLimit": "VERIFIED. IRS SIMPLE IRA FAQ: during the 2-year period only a transfer or rollover to another SIMPLE IRA qualifies; to a non-SIMPLE IRA it is a distribution (25% tax unless exception). After 2 years, rollover to other plans/IRAs allowed.",
+  "reducedMatch1pctIn2Of5": "VERIFIED. IRS SIMPLE IRA contribution limits (updated 06-Mar-2026) and FAQ: match may be below 3% but not below 1%, for no more than 2 years of the 5-year period ending with the election year, with employee notice.",
+  "age55SeparationException": "VERIFIED. IRS table row 72(t)(2)(A)(v): qualified plans yes, IRA/SIMPLE IRA no. TC558 (09-Nov-2026) requires separation from the employer sponsoring that plan."
+ },
+ "findings": [
+  {
+   "id": "CR1-depth-floor-misstated",
+   "severity": "blocker (preparation accuracy)",
+   "evidence": "readiness.md section 7 says the comparison page 'already clears' the 1,500 body-word floor, citing 1,841 words including chrome. Reader-facing prose (introText + verdict + section bodies + FAQ answers) in src/data/comparisons.ts for simple-ira-vs-401k measures about 900 words; the rendered live main region including table, headings and related links is about 1,212. The Phase 4 GATE-Depth is deterministic and measures prose only. The planned additions (one row, one section, one FAQ) will not reach 1,500.",
+   "required": "Correct the readiness claim with a real prose count. Either plan genuine substance to reach the 1,500 floor (answer more of the query: e.g. SIMPLE IRA eligibility and $5,000 compensation test, 2% nonelective vs match, Roth rollover after 2 years, the exceptions that avoid the 25% tax, the higher limit that the sources define for small employers only if the primary source defines it) or record in the manifest/readiness an explicit justified treatment of the inherited under-floor page that Phase 4 can accept. Do not pad."
+  },
+  {
+   "id": "CR2-match-correction-scope-incomplete",
+   "severity": "blocker (inherited contradiction on the revised answer)",
+   "evidence": "A1 lists the table cell, verdict and employer-cost section for the 3% wording. The same page also states FAQ 'Does a SIMPLE IRA require an employer match?' answer 'This is mandatory every year the plan is active', section 2 'There's no year where you can choose to skip it' and 'a mandatory 3% obligation in a slow year', the verdict 'comfortable with a mandatory 3% match every year', and the intro 'requires an employer contribution capped near 3% of pay'. All contradict the IRS 1%-in-2-of-5 rule once the new content states it.",
+   "required": "List every location in A1 (table cell, intro wording check, verdict, section 2 both paragraphs, FAQ 4 answer, and the 'employer cost you can't skip' heading wording if it reads as absolute). The requirement that the employer contribute (3% match or 2% nonelective) remains true; only the match percentage can drop to 1% in up to 2 of 5 years. FAQ schema is rebuilt from faqs, so the FAQ fix must be in the source."
+  },
+  {
+   "id": "CR3-planned-takeaway-overbroad",
+   "severity": "required condition",
+   "evidence": "evidence.json plannedTakeaway says a 401(k) is 'the safer home for money you might need early' and 'Applies to owners and employees'. The 25% rate lasts only 2 years and does not apply when a 72(t) exception applies; after 2 years a SIMPLE IRA withdrawal before 59 1/2 is the same 10%. The age-55 exception applies only to those who separate from the sponsoring employer in or after the year they turn 55. Employees usually cannot choose the plan type.",
+   "required": "Rewrite plannedTakeaway so it states: the extra cost is limited to the first 2 years (25% vs 10%) and the 2-year SIMPLE-to-SIMPLE rollover limit; the age-55 exception is a 401(k)-only feature for those leaving that employer; neither plan suits money needed before 59 1/2; for the employer decision the headcount and cost verdict still governs. Keep the existing verdict, top answer, table row, section and FAQ consistent with it."
+  },
+  {
+   "id": "CR4-advisory",
+   "severity": "advisory",
+   "evidence": "(a) Candidate 701871f1 reason says 'same session' and '2 s later'; intake shows 2.5 s and no session id. (b) Chart status 'draft-awaiting-independent-chart-review' is expected until render-chart. (c) After enrichment, the zero-result search will still return zero in NavSearch (AND-token haystack); finish resolves the observation by decision, so no metadata change is required. Not blocking."
+  }
+ ],
+ "nextAction": "BUILD worker corrects approval-manifest.json, readiness.md, evidence.json (plannedTakeaway, depth plan, full match-wording locations) and the draft chart; same independent reviewer re-reviews (round 2). No chart-review.json, render-chart, validate-chart or search-only PASS receipt written because the verdict is FAIL."
+}

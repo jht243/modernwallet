@@ -1,0 +1,11 @@
+## Who Can Sponsor and Who Must Be Included
+
+An employer can sponsor a SIMPLE IRA only if the business had 100 or fewer employees who earned $5,000 or more during the prior calendar year, according to the IRS. That 100-worker cutoff counts every employee on payroll who earned that amount, including those who are not yet eligible to receive plan contributions. If business growth pushes your headcount past 100 qualifying workers, the IRS provides a two-year grace period to maintain the plan or transition to another option.
+
+Who must be included follows IRS rules: any employee who earned at least $5,000 in any two prior years and expects to make at least $5,000 in the current year. Employees cannot opt out of plan eligibility, and the employer cannot impose a last-day requirement that denies contributions to workers who leave before year-end. For a business owner, this means you cannot exclude eligible part-time staff who clear that $5,000 mark.
+
+When an eligible employee decides not to contribute any salary, the business owes no matching dollars on their behalf. That same employee still receives the 2% nonelective employer contribution if the company selected the flat contribution option instead of a matching schedule.
+
+Under the IRS one-plan rule, an employer maintaining a SIMPLE IRA generally cannot sponsor any other retirement plan in the same calendar year. That restriction blocks a business owner from running a SIMPLE IRA and a 401(k) at the same time. A growing business that moves to a 401(k) makes that switch effective January 1.
+
+An employee who holds two jobs can participate in a SIMPLE IRA at one employer and a 401(k) at another, though the IRS limits combined employee salary deferrals across all plans to $24,500 for 2026. Before you select a plan structure for your company, pull your prior-year payroll reports and count how many workers made $5,000 or more.

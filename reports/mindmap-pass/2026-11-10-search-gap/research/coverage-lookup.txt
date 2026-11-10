@@ -1,0 +1,65 @@
+coverage_lookup: 2 candidate(s) vs 821 repo pages / 834 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1134 past-chart lines
+
+### /compare/simple-ira-vs-401k/  — row - · create new content
+keyword: differences between simple ira and; differences between simple ira and 401k
+reader question (new page intent): What are the differences between a SIMPLE IRA and a 401(k)?
+lookup terms: simple ira 401k difference   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/simple-ira-vs-401k  [EXACT SLUG · in sitemap · src/data/comparisons.ts · topic match 0.75 on simple ira 401k · same format: vs]
+    title: SIMPLE IRA vs. 401(k): Best Plan for Small Business
+    desc:  SIMPLE IRA vs 401(k) compared: 2026 contribution limits, employer costs, admin burden, and which retirement plan fits your small business.
+- /compare/solo-401k-vs-simple-ira  [in sitemap · src/data/comparisons.ts · topic match 0.75 on simple ira 401k · same format: vs]
+    title: Solo 401(k) vs SIMPLE IRA: The 2025 Guide for Owners
+    desc:  Solo 401(k) vs SIMPLE IRA compared: 2025 contribution limits, employee eligibility, admin work, and loans, so you know which plan fits your business.
+- /compare/401k-vs-ira-beneficiary-rules  [in sitemap · src/data/comparisons.ts · topic match 0.75 on ira 401k difference · same format: vs]
+    title: 401(k) vs IRA Beneficiary Rules: Key Differences
+    desc:  401(k) vs IRA beneficiary rules compared: spousal consent, the SECURE Act's 10-year rule, rollover flexibility, and creditor protection for heirs.
+- /compare/401k-vs-roth-ira  [in sitemap · src/data/comparisons.ts · topic match 0.5 on ira 401k · same format: vs]
+    title: 401(k) vs Roth IRA: Which Retirement Account Wins?
+    desc:  401(k) vs Roth IRA compared: contribution limits, tax rules, employer match, and which account saves you more in retirement.
+- /compare/pension-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k difference · same format: vs]
+    title: Pension vs 401(k): Key Differences (2025)
+    desc:  Pension vs 401(k): a pension pays guaranteed lifetime income and the employer takes the risk; a 401(k) is your portable, market-based balance instead.
+- /compare/traditional-ira-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on ira 401k · same format: vs]
+    title: Traditional IRA vs 401(k): 2025 Guide
+    desc:  Traditional IRA vs 401(k) compared: 2025 limits, employer match, investment choice, and fees. See which to fund first and how to use both.
+- /compare/roth-ira-vs-roth-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on ira 401k · same format: vs]
+    title: Roth IRA vs Roth 401(k): Which Should You Max First?
+    desc:  Roth IRA vs Roth 401(k) compared: contribution limits, income caps, employer match, and which to prioritize when you can't max both in 2026.
+- /compare/403b-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k difference · same format: vs]
+    title: 403(b) vs 401(k): What's the Real Difference in 2026?
+    desc:  403(b) vs 401(k) compared: who can offer each, 2026 contribution limits, the 403(b)'s 15-year catch-up, fees, and which is riskier for your money.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-14.md [exclusions] - **stimulus check 2026, 401k/IRA contribution limits 2026, 2027 calendar, chinese new year 2027, social security office/appointment/number/name change:** DROP. These came from expansion but are off-brief or navigational
+- 2026-10-16-trend-lane-c.md [table] | Lens 3 (vs) off a Lane B coverage finding: top-20 query `401k vs 529` (1 impression, pos 70). `401k vs 529` 70/mo KD 0 and `529 vs 401k` 70/mo (DataForSEO, measured); `401k or 529` 10; `401k vs 529 for college` ~75 (es
+- 2026-10-17-trend-lane-c.md [table] | Lens 3 / Lens 2 off the six Roth-vs-Traditional 401(k) top-10 queries (regular vs roth 401k 4 impr, roth or traditional 401k, roth vs traditional 401k, 401k roth or traditional, 401k traditional or roth, roth 401k vers
+- 2026-10-19-competitor.md [table] | 1 | Lens 1 direct (NerdWallet SDIRA page). Autocomplete: what is a self directed ira; what can self directed ira invest in; how are self directed iras taxed; what companies offer self directed ira. No tool volume. look
+- 2026-10-27-podcast.md [table] | 2 | Direct intent (podcast: Ready For Retirement "What Should You Do With Your 401k When You Retire?"). Cluster: what to do with your 401k when you retire 260/mo KD 7 (DataForSEO measured); ac: what can you do with you
+- 2026-10-27-podcast.md [exclusions] - how to know if you are ready to retire (30), 401k rollover to ira at retirement (10), how much to spend in retirement (30), how to pay off 60000 in debt (20), spouse handles all the money (est. 0): below the 70/mo floo
+Commits naming the topic: none
+Same run overlap: none
+
+### /contact/  — row - · create new content
+keyword: (pasted third-party promo text about a shared household budget app)
+reader question (new page intent): n/a
+lookup terms: contact pasted third party promo text shared household budget app   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /contact  [EXACT SLUG · in sitemap · (sitemap only) · title fetched live · topic match 0.1 on contact]
+    title: Contact ModernWallet — Questions, Corrections & Ideas
+    desc:  Contact ModernWallet with a question, a correction, or a suggestion for a new calculator or guide. We read every message and reply to most.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-aca-snap.md [table] | New benefit pages need contextual discovery from inspected existing budgeting content. | Add contextual food-benefit links to the SNAP calculator and SNAP/WIC comparison; explicitly keep restricted food benefits separa
+- 2026-11-04-tool-usage.md [table] | 6 | self-employment-tax (40 people, 42 uses, 117 views; data_days 27). Walkthrough: $420 profit shows $59 SE tax though net earnings $387.87 < $400 owe none (Schedule SE line 4c); QBI phase-in warning tests gross incom
+- 2026-11-04-tool-usage.md [table] | 12 | probate (2 people, 3 uses, 15 views; low-use lane; data_days 27). Walkthrough: intro says 'the calculator above' though it sits below; small-estate banner contradicts the big probate number; trust cost omits the $
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-does-a-financial-advisor-do). Head 'what does a financial advisor do / financial counselor / financial coach': autocomplete estimate only, NOT measured (no prov
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-robo-advisor). Head 'what is a robo advisor / robo advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /roundup/best-robo-adviso
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet robo-advisors vs financial advisors) plus Lens 3 comparison format. Head 'robo advisor vs financial advisor': autocomplete estimate 75-750/mo, NOT measured. lookup: 
+Commits naming the topic: none
+Same run overlap: none
+

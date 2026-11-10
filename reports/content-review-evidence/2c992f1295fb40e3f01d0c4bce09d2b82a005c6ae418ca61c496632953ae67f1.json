@@ -1,0 +1,190 @@
+{
+ "reviewer": "phase4-audit-worker-1",
+ "jobId": "search-gap-themodernwallet-6931aeadbaf0403bb8d5862c930c0bdd",
+ "verdict": "PASS",
+ "snapshotSha256": "9f82504e8330f7dc138e3521a0c2857da6d2814244f5664dbdb39e7fa3cda2ff",
+ "evidence": {
+  "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+  "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+ },
+ "resolvedFindingIds": [],
+ "routes": [
+  {
+   "path": "/compare/simple-ira-vs-401k",
+   "fingerprint": "87394c93f9e846aba551ffdccb02374872a9bc04774989da34f9e1591e1688a9",
+   "verdict": "PASS",
+   "checks": {
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Read the complete rendered decision path. Intro, table row, verdict (conditional, ends with the 25% additional tax sentence), withdrawal, eligibility, employer-contribution and When-to-switch sections and 8 FAQs agree on: required annual SIMPLE IRA contribution reducible to 1% in up to 2 of 5 years, 25% in first 2 years, age-55 exception for plans only, grace period after 100 employees. Inherited 'disqualifies' sentence is replaced; N1 to N5 verified resolved.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Every sentence of the new and rewritten sections re-read against the saved IRS FAQ, early-distributions and contributions captures and Notice 2025-67; both one-plan exceptions, grace period, 25%/10% conditions and unless-an-exception qualifiers match. No unsupported claim found.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No tested/modeled/survey claim in text, meta or schema; reported basis with the IRS named beside rules; inherited byline is the established site author with 'Reviewed against primary sources'. Financial services excluded from testing by _experience section G.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible Updated November 10, 2026; Article datePublished/dateModified 2026-11-10 (template derives both from entry.updated; advisory); FAQPage 8 of 8 identical to visible text; self canonical.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "HTTP 200 loopback, self canonical; four IRS links incl. final early-distributions URL; first IRS mention linked; internal comparison link builds.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Shared compare template, one added table row, two added sections and a verdict sentence; no template change. No 390px browser view this round; relies on unchanged markup structure (stated in evidence K4).",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Only src/data/comparisons.ts slug simple-ira-vs-401k changed; existing metadata unchanged as approved; no medical or testing content; no professional-review claim.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    }
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "5c625a0daebe18e88075f7a21d7b044b1f62e6606919596aa8863a480cdcc2ae",
+    "rationale": "IRS tax rules and eligibility conditions guiding a business retirement-plan choice are consequential financial and legal claims, so HIGH. Each consequential passage was checked sentence by sentence against the IRS captures in round 3.",
+    "consequentialClaims": [
+     {
+      "quote": "Withdrawing money from a SIMPLE IRA in your first two years of participation costs a 25% additional tax instead of 10%, unless an exception applies",
+      "category": "financial",
+      "reason": "Matches the IRS early-distributions page and SIMPLE IRA FAQ."
+     },
+     {
+      "quote": "An employer that previously maintained a SIMPLE IRA plan still meets the limit for the 2 calendar years after the last year it met it.",
+      "category": "legal",
+      "reason": "Matches the IRS SIMPLE IRA FAQ on the two-calendar-year grace period after the last year the 100-employee limit was met."
+     },
+     {
+      "quote": "The other covers an employer involved in an acquisition, disposition or similar transaction in the current or 2 prior calendar years, when only its separate employees participate in the SIMPLE IRA plan.",
+      "category": "legal",
+      "reason": "One-plan rule exceptions now match both IRS-listed exceptions."
+     }
+    ],
+    "incidentalMentions": [
+     {
+      "quote": "The IRS treats SIMPLE IRAs as an exclusive plan",
+      "reason": "Inherited FAQ wording flagged by the classifier ('treats'); consistent with the corrected one-plan paragraph ('generally', same employees)."
+     }
+    ]
+   },
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/render/admission-round3.json",
+    "sha256": "9718af3c004bc13983d5fca075fcb796f9e74a59f3e0e8c762dc7e641e2f0558"
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "All central rules verified against IRS captures.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Source-only reported basis; no invented test, model or client claim.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "2026 limits ($17,000, $4,000, $5,250, $24,500) match IRS 2026 pages and Notice 2025-67; live IRS URLs return 200 and the early-distributions link uses the redirect target.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Conditional verdict names who should pick each plan and the 25% window; table, intro and FAQs agree. K1 (only if vs if) is cosmetic.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Claims trace to the saved IRS captures dated 2026-11-10.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Round 1 F1 to F10 and round 2 N1, N2 resolved; no remaining consequential misstatement found.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "US federal IRS rules and 2026 limits; exceptions, grace-period acquisition rules and income-tax caveat stated.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "Informational finance page with the site's established author; no professional-review claim made or added (fleet-author-defaults-v1).",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "HIGH confirmed independently: IRS tax-rule and eligibility claims guiding a small business retirement-plan choice.",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Depth 1,915 words vs 1,500; rhythm and anti-AI gates pass for new text; remaining inherited long sentences, em-dashes and one non-Title-Case heading are advisory (K2, K3).",
+     "artifact": {
+      "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/reviewer-evidence-3.md",
+      "sha256": "0c54b6098503aa0d77ce282ff41475c75bc9aa828e4215a271086b8efd8b49d1"
+     }
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "site": "themodernwallet.com",
+ "runId": "6931aeadbaf0403bb8d5862c930c0bdd",
+ "intakeSha256": "e63f961d2ea7eab14062fa512e6f6216afd2d1a17f77f131083c748669461a93",
+ "jobId": "search-gap-themodernwallet-6931aeadbaf0403bb8d5862c930c0bdd",
+ "author": "build-worker-1",
+ "note": "BUILD proposal. status pending = enrich row A1 not yet written/audited/published (becomes published with paths after validated finish); dropped = excluded. Reviewer computes decisionsSha256 over the final decisions list.",
+ "decisions": [
+  {
+   "id": "701871f1c112ebe9148f7528ea54e1e71f032dcad60a2d12fc46fd02857feed8",
+   "proposedDisposition": "enrich",
+   "status": "pending",
+   "reason": "Truncated first keystrokes of the same session's full query (candidate 8791218e, 2 s later). Same reader goal as the existing comparison page; handled by A1, not a separate row.",
+   "targetPath": "/compare/simple-ira-vs-401k/",
+   "actionId": "A1",
+   "paths": []
+  },
+  {
+   "id": "73704836545ad33ae8a9e898729e0f38d5fbc5ef59da49b958b7d4900c4aa3dc",
+   "proposedDisposition": "exclude",
+   "status": "dropped",
+   "reason": "Pasted third-party promotional copy for a named app, not a reader question; untrusted data, not followed, no product added; no demand signal beyond one paste; no content row.",
+   "targetPath": "/contact/",
+   "actionId": null,
+   "paths": []
+  },
+  {
+   "id": "8791218eb60074c2e36f889cb68f325a8a0835290ba1fddac238ac0b7539d29f",
+   "proposedDisposition": "enrich",
+   "status": "pending",
+   "reason": "An exact-intent page exists (/compare/simple-ira-vs-401k) and answers most differences; verified IRS gaps (25% two-year tax, two-year rollover limit, age-55 exception, 1% reduced match) get added to that page, no near-duplicate.",
+   "targetPath": "/compare/simple-ira-vs-401k/",
+   "actionId": "A1",
+   "paths": []
+  }
+ ]
+}

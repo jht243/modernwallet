@@ -1,0 +1,22 @@
+# Phase 4 round 3 evidence, /compare/simple-ira-vs-401k (HIGH, round 3 of 3, reviewer phase4-audit-worker-1)
+
+Snapshot render/snapshot-4.json (fresh Node 20 build, fresh owned preview, sourceSha256 3acfce08...). Admission render/admission-round3.json. correction scope (render/scope-3.json) mode full. Every sentence of the verdict, withdrawal, eligibility, employer-contribution, When-to-switch sections and the FAQs was re-read against the saved IRS captures (irs-simple-faq, irs-early-dist, irs-simple-contrib, irs-2026-limits, notice-2025-67).
+
+## Prior findings, independent status
+F1 to F10, C1 to C8 resolved (round 2 evidence). N1 resolved: the one-plan paragraph now says "Two exceptions apply" and states both IRS exceptions (collective bargaining plan excluded from the SIMPLE IRA; acquisition, disposition or similar transaction in the current or 2 prior calendar years with only separate employees in the SIMPLE IRA), matching the IRS FAQ. N2 resolved ("an additional tax of at least 10% unless an exception applies"). N3 resolved (When to switch: the long parenthetical is now two short sentences; "Growing past 100 employees does not end a SIMPLE IRA plan right away. Eligibility ends after the two-year grace period that follows your last qualifying year." matches the IRS grace period). N4 resolved (no backward "it"; "The plan choice therefore falls to owners..."). N5 resolved (verdict sentence 1 is one condition list ending "and can fund its required employer contribution every year", followed by the contribution formula).
+"Unless an exception applies" was added in three places and "some exceptions" in the FAQ; each matches the IRS ("unless you qualify for an exception").
+
+## Sentence-level IRS checks (no new factual error found)
+25% in first 2 years of participation instead of 10%; clock starts the first day the employer deposits a contribution; only SIMPLE-to-SIMPLE during the window, otherwise included in income plus 25% unless an exception applies; after 2 years tax-free to another non-Roth IRA or employer plan, Roth with income inclusion; age-55 separation exception for plans, not IRAs, covers that employer's plan money, income tax still applies; 100-employee count includes all employees at any time in the year; grace period 2 calendar years after the last qualifying year, acquisition special rules referred to a tax advisor; $5,000 any two earlier years plus expected this year; 401(k)/SARSEP/403(b) deferrals count; no opt out; can defer zero; no match then, still gets 2% nonelective; no last-day rule; one-plan rule and both exceptions; $24,500 combined deferral; 1% in no more than 2 of 5 years with advance notice; 2% regardless of deferral; 401(k) "does not legally require" a match; January 1 for a new plan after a SIMPLE IRA.
+
+## Mechanical
+FAQPage 8 of 8 identical to visible; Article datePublished/dateModified 2026-11-10 and visible Updated November 10, 2026; self canonical; four IRS URLs (final early-distributions URL); no testing text; 0 occurrences of "the company" or "honest"; no em-dashes in the new sections; body 1,915 words vs 1,500 floor; rhythm: longest single-band run 9, no 5 sentences within 3 words.
+
+## Remaining cosmetic observations (none breaches a source-bound fact)
+K1. Verdict "Choose a SIMPLE IRA only if you have 100 or fewer employees, want to avoid the cost and paperwork of a full retirement plan, and can fund..." turns a preference ("want to avoid the cost") into a requirement; "if" would be accurate.
+K2. Inherited long sentences left as published: 44 words ("The usual triggers to make the switch..."), 46 ("If you're choosing a 401(k) provider..."), 40 (verdict, "Choose a 401(k)..."), 39 and 34 in the administrative and switching sections.
+K3. Inherited: 22 em-dashes in table/verdict/FAQ/section text, intro "nearly 50% more" vs section "roughly 44%", heading "Administrative burden: why 401(k)s cost more to run" not Title Case. Not introduced by this run.
+K4. No 390px browser view performed; layout relies on unchanged shared template/table markup.
+
+## Advisory, outside this page's scope
+Inherited pages still call the match mandatory or omit the 1% reduction: roundups.ts:3421; comparisons.ts:16087 (solo-401k-vs-simple-ira: "a mandatory 3% match every year, even in a lean one"), 12724, 19082/19141/19167. datePublished equals dateModified because the compare template sets both from entry.updated (previously 2026-06-25).
