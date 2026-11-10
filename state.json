@@ -4,9 +4,10 @@
     "artifacts": {
       "reports/content-review-journals/blobs/ad77e1fed64bf83232612e9b8d9ec8da25a220228842f0cec65258834b4bd1e2/rendered-review-1.json": "ad77e1fed64bf83232612e9b8d9ec8da25a220228842f0cec65258834b4bd1e2",
       "reports/content-review-journals/eb1aa08ba25730d5bdb6a4c555c270ee2ab05a309e72359230061b91050628f4.jsonl": "3a21daab8490cb38fd648f6b28d68571a81e1aae2cab4dab4647edeb23322959",
-      "reports/content-review-journals/fc857fddf4f8543b2d78410a5491c9e6388ec45fb70b0d07fac633be31feb55f.jsonl": "615cb42062f0c6cab874957c3a4af1d5b0d6dd3a7c2994960de1656581f71697",
+      "reports/content-review-journals/fc857fddf4f8543b2d78410a5491c9e6388ec45fb70b0d07fac633be31feb55f.jsonl": "fe224efb71d75ddf215b41aa69fad4d61b807365149ee5c81245d0c4f177f631",
       "reports/opt-new-two-20261109/audit/findings-1.json": "2703ef08dd1c4e2bba72ffe0a2e3e9bd20f4c06e7e5307d624da80cea3b7117c",
       "reports/opt-new-two-20261109/audit/guide-admission-1.json": "3d55dae2ae59fbbab1e88269658da672cdc8c18c31374bc6e38fea82fa5575d7",
+      "reports/opt-new-two-20261109/audit/guide-admission-2.json": "9dc1e4d79054a0e104142757d043c75970199b451a7fd415d88b0c541b8f6f14",
       "reports/opt-new-two-20261109/audit/index-admission-1.json": "d7b21f648f67280bac8ef63db89d8432ec678927773726b6eddcfca387e1c27b",
       "reports/opt-new-two-20261109/audit/internal-links-1.json": "715e6d0b3d508e628ec2df081f9c4505afaa1ad54fa9ef09ff93a53de7e2218f",
       "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd",
@@ -18,7 +19,12 @@
       "reports/opt-new-two-20261109/snapshot-1/83e5d32a22a6e5aa6df9.html": "d26c08e3fe0dfa104e7acde67ec4cfe8f8feab41f05d1a082f202bb74733a51f",
       "reports/opt-new-two-20261109/snapshot-1/83e5d32a22a6e5aa6df9.txt": "4e516d35602bb730fd3281b6253709e06a9bb89fd8a7acb975157caf4cbdc517",
       "reports/opt-new-two-20261109/snapshot-1/correction-boundary.json": "87a2e49c6892b95828ec42567f70ae62cc337baf4d166874ed32ce91e6b8b3ae",
-      "reports/opt-new-two-20261109/snapshot-1/correction-sources/blobs/65aab30dd91aa63041e11f004d37c875aa7f90da24679164bebb72be385af730/search-index.json": "65aab30dd91aa63041e11f004d37c875aa7f90da24679164bebb72be385af730"
+      "reports/opt-new-two-20261109/snapshot-1/correction-sources/blobs/65aab30dd91aa63041e11f004d37c875aa7f90da24679164bebb72be385af730/search-index.json": "65aab30dd91aa63041e11f004d37c875aa7f90da24679164bebb72be385af730",
+      "reports/opt-new-two-20261109/snapshot-2.json": "2689a364850626539ca3d4227b7c4c8551d88ecd5f332da3936d93b009916188",
+      "reports/opt-new-two-20261109/snapshot-2/83e5d32a22a6e5aa6df9.html": "2f57cb66ba5cdcd81389d60a4ffd37ef50838df790e77df747eb8f097863922a",
+      "reports/opt-new-two-20261109/snapshot-2/83e5d32a22a6e5aa6df9.txt": "7d1076df1dd070b37676fe1108533f1779429dca4403f158c44a0d4ae4cfd5f8",
+      "reports/opt-new-two-20261109/snapshot-2/correction-boundary.json": "0dba88f51bb0d890552e853834087d37177153386acac8c02edcfa44e29c755b",
+      "reports/opt-new-two-20261109/snapshot-2/correction-sources/blobs/65aab30dd91aa63041e11f004d37c875aa7f90da24679164bebb72be385af730/search-index.json": "65aab30dd91aa63041e11f004d37c875aa7f90da24679164bebb72be385af730"
     }
   },
   "reviewJournals": {
@@ -51,9 +57,10 @@
     "fc857fddf4f8543b2d78410a5491c9e6388ec45fb70b0d07fac633be31feb55f": {
       "artifacts": {
         "reports/content-review-journals/blobs/ad77e1fed64bf83232612e9b8d9ec8da25a220228842f0cec65258834b4bd1e2/rendered-review-1.json": "ad77e1fed64bf83232612e9b8d9ec8da25a220228842f0cec65258834b4bd1e2",
-        "reports/content-review-journals/fc857fddf4f8543b2d78410a5491c9e6388ec45fb70b0d07fac633be31feb55f.jsonl": "615cb42062f0c6cab874957c3a4af1d5b0d6dd3a7c2994960de1656581f71697",
+        "reports/content-review-journals/fc857fddf4f8543b2d78410a5491c9e6388ec45fb70b0d07fac633be31feb55f.jsonl": "fe224efb71d75ddf215b41aa69fad4d61b807365149ee5c81245d0c4f177f631",
         "reports/opt-new-two-20261109/audit/findings-1.json": "2703ef08dd1c4e2bba72ffe0a2e3e9bd20f4c06e7e5307d624da80cea3b7117c",
         "reports/opt-new-two-20261109/audit/guide-admission-1.json": "3d55dae2ae59fbbab1e88269658da672cdc8c18c31374bc6e38fea82fa5575d7",
+        "reports/opt-new-two-20261109/audit/guide-admission-2.json": "9dc1e4d79054a0e104142757d043c75970199b451a7fd415d88b0c541b8f6f14",
         "reports/opt-new-two-20261109/audit/index-admission-1.json": "d7b21f648f67280bac8ef63db89d8432ec678927773726b6eddcfca387e1c27b",
         "reports/opt-new-two-20261109/audit/internal-links-1.json": "715e6d0b3d508e628ec2df081f9c4505afaa1ad54fa9ef09ff93a53de7e2218f",
         "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd",
@@ -65,9 +72,14 @@
         "reports/opt-new-two-20261109/snapshot-1/83e5d32a22a6e5aa6df9.html": "d26c08e3fe0dfa104e7acde67ec4cfe8f8feab41f05d1a082f202bb74733a51f",
         "reports/opt-new-two-20261109/snapshot-1/83e5d32a22a6e5aa6df9.txt": "4e516d35602bb730fd3281b6253709e06a9bb89fd8a7acb975157caf4cbdc517",
         "reports/opt-new-two-20261109/snapshot-1/correction-boundary.json": "87a2e49c6892b95828ec42567f70ae62cc337baf4d166874ed32ce91e6b8b3ae",
-        "reports/opt-new-two-20261109/snapshot-1/correction-sources/blobs/65aab30dd91aa63041e11f004d37c875aa7f90da24679164bebb72be385af730/search-index.json": "65aab30dd91aa63041e11f004d37c875aa7f90da24679164bebb72be385af730"
+        "reports/opt-new-two-20261109/snapshot-1/correction-sources/blobs/65aab30dd91aa63041e11f004d37c875aa7f90da24679164bebb72be385af730/search-index.json": "65aab30dd91aa63041e11f004d37c875aa7f90da24679164bebb72be385af730",
+        "reports/opt-new-two-20261109/snapshot-2.json": "2689a364850626539ca3d4227b7c4c8551d88ecd5f332da3936d93b009916188",
+        "reports/opt-new-two-20261109/snapshot-2/83e5d32a22a6e5aa6df9.html": "2f57cb66ba5cdcd81389d60a4ffd37ef50838df790e77df747eb8f097863922a",
+        "reports/opt-new-two-20261109/snapshot-2/83e5d32a22a6e5aa6df9.txt": "7d1076df1dd070b37676fe1108533f1779429dca4403f158c44a0d4ae4cfd5f8",
+        "reports/opt-new-two-20261109/snapshot-2/correction-boundary.json": "0dba88f51bb0d890552e853834087d37177153386acac8c02edcfa44e29c755b",
+        "reports/opt-new-two-20261109/snapshot-2/correction-sources/blobs/65aab30dd91aa63041e11f004d37c875aa7f90da24679164bebb72be385af730/search-index.json": "65aab30dd91aa63041e11f004d37c875aa7f90da24679164bebb72be385af730"
       },
-      "head": "615cb42062f0c6cab874957c3a4af1d5b0d6dd3a7c2994960de1656581f71697",
+      "head": "fe224efb71d75ddf215b41aa69fad4d61b807365149ee5c81245d0c4f177f631",
       "identity": {
         "canonicalBase": "https://themodernwallet.com",
         "route": "/guides/hsa-fsa-reimbursement-checklist",
