@@ -47,7 +47,7 @@ def restore(root):
             raise ValueError("Invalid Hype checkpoint digest")
         known.update(row["names"])
         path = root/"reports/hype-radar/intakes"/(digest+".json")
-        if row.get("review") and not path.exists():
+        if row.get("review") and not row["review"].get("productionTargets") and not path.exists():
             replace(path.parent/"reviewed"/path.name, (json.dumps(row["review"],sort_keys=True)+"\n").encode())
             continue
         if not path.exists():

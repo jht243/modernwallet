@@ -40,8 +40,20 @@ def marker(root, session):
     return Path(folder) / "hype-dispatch" / fingerprint(session.encode())
 
 
+def production():
+    spec=importlib.util.spec_from_file_location('native_hype_production',Path(__file__).with_name('production_recovery.py'))
+    value=importlib.util.module_from_spec(spec);spec.loader.exec_module(value);return value
+
+
 def announce(root, source):
     data = source.read_bytes()
+    receipt=source.parent/'reviewed'/source.name
+    if receipt.is_file():
+        proof=json.loads(receipt.read_bytes());remaining=production().outstanding(root,proof)
+        if remaining:
+            if active_session():save(marker(root,active_session()),str(source.relative_to(root)).encode())
+            print('Resume original Hype production job '+proof['job']+' from branch '+str(proof.get('workBranch') or 'its retained native evidence')+'. Remaining routes: '+json.dumps(remaining)+'. Reuse its chart and draft. Inspect original audit records and counters. If an informal independent FAIL exists without its native admission, retain that finding and its consumed round honestly. Never classify a missing admission as a PASS or reset the tier. Complete native AUDIT preparation and reservation BEFORE every new independent content review. Use exact reviewer-prescribed mechanical corrections where authorized; keep real testing/exclusion and build/live checks. Publish eligible exact candidates under the current native limit. No new harvest or chart.')
+            return
     print(f"Mindmap handoff required for ALL candidates: {source} sha256={fingerprint(data)}")
     print("Persist the frozen intake and ledger; dispatch BUILD with this SHA, the full candidate list and all original evidence. Complete the existing independent chart review and handoff.py finish before closing.")
     date = json.loads(data)["generated_at"][:10]
@@ -89,6 +101,7 @@ def pending(root):
             return source
         proof = json.loads(receipt.read_text())
         validate_proof(source, proof)
+        if production().outstanding(root,proof):return source
     return None
 
 
@@ -137,6 +150,8 @@ def acknowledge(root, source, plan, verdict):
     digest = lambda value: fingerprint(json.dumps(value,sort_keys=True,separators=(",",":"),ensure_ascii=False).encode())
     receipt = {"pull":source.stem, "manifest":verdict["manifestSha256"], "review":digest(verdict),
                "job":verdict["jobId"], "reviewer":verdict["reviewer"], "candidates":names}
+    receipt['productionTargets']=production().publication_targets(plan)
+    receipt['workBranch']=production().work_reference(root)
     path = source.parent / "reviewed" / source.name
     encoded = (json.dumps(receipt,sort_keys=True)+"\n").encode()
     if path.exists():
@@ -172,8 +187,9 @@ def active_pull(root, payload):
     source = root/path.read_text()
     receipt = source.parent / "reviewed" / source.name
     if receipt.is_file():
-        validate_proof(source, json.loads(receipt.read_bytes()))
-        return None
+        proof=json.loads(receipt.read_bytes())
+        validate_proof(source, proof)
+        return source if production().outstanding(root,proof) else None
     return source
 
 
@@ -215,7 +231,7 @@ def stop(root, payload):
         worker_wait=importlib.util.module_from_spec(spec);spec.loader.exec_module(worker_wait)
         if worker_wait.running(payload):return
     # A completed worker is not the independently validated chart handoff.
-    print(json.dumps({"decision":"block","reason":f"Resume {source.relative_to(root)}. Dispatch BUILD with the original pull hash and all candidates. The dispatcher cannot drop the intake or finish as a no-op."}))
+    print(json.dumps({"decision":"block","reason":f"Resume {source.relative_to(root)}. When chart proof exists, finish its outstanding production using the original work and counters. Otherwise dispatch BUILD with the frozen candidates. The dispatcher cannot drop the intake or finish as a no-op."}))
 
 
 if __name__ == "__main__":
