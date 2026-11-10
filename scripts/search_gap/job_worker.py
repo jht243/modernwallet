@@ -104,6 +104,16 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
                       'If the original review is awaiting the render gate, use the saved candidate patch, install the project’s '
                       'locked dependencies, build, capture the preview, and finish the required rendered review and live verification. '
                       'Keep the actual prior verdicts, counters and candidate identity.')
+        if resumed and checkpoints and not summary.get('completionFile'):
+            recovery = missing_decision_chart(packet,path,checkpoints)
+            if recovery:
+                summary['decisionReconciliation'] = recovery
+                action = ('Original chart unavailable. Use the prepared retrospective decision index, original receipt, retained disposition list and source evidence. '
+                          'MAIN dispatches the actual independent chart reviewer now for the already-outstanding final decision attestation. '
+                          'The reviewer must check every original disposition against the immutable intake and evidence. Only that reviewer may write its actual verdict '
+                          'at requiredIndependentReceipt, binding chartSha256, intakeSha256 and decisionsSha256 using the native finish contract. Keep the original chart hash and '
+                          'history of its loss. Use the distinct producer identity of the mechanical index and the actual independent reviewer identity. '
+                          'If validated, finish the proposedCompletion through ALL existing preview/live, ancestry and action gates. Pending observations remain pending. No new content or repeat writing.')
         if summary and summary.get('completionFile'):
             action='Reuse the restored, already independently reviewed recoverySummary.completionFile, reconcile its separate preview, then finish. Do not dispatch BUILD, WRITE or another decision/content review.'
             sid=os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID')
@@ -131,6 +141,46 @@ def artifact_path(value):
     require(not path.is_absolute() and '..' not in path.parts and path.parts and path.parts[0]=='reports','Recovery artifacts must be repository-relative reports files')
     require(path.resolve().is_relative_to(Path.cwd().resolve()/'reports'),'Artifact symlink leaves reports')
     return path
+
+def missing_decision_chart(packet, intake_path, checkpoints):
+    """Prepare a clearly retrospective decision index, never an approval receipt."""
+    for checkpoint in reversed(checkpoints):
+        if checkpoint.get('stage') != 'published-awaiting-finish':
+            continue
+        for ref in checkpoint.get('artifacts', []):
+            path = artifact_path(ref['path'])
+            if path.suffix != '.json' or not path.is_file():
+                continue
+            value = read(path)
+            if not isinstance(value, dict) or value.get('runId') != packet['runId'] or not {'decisions','chartReview','chart'} <= value.keys():
+                continue
+            require(digest(path) == ref['sha256'] and value['intakeSha256'] == digest(intake_path), 'Use the original retained completion and intake')
+            if artifact_path(value['chart']).exists():
+                return None
+            decisions = value['decisions']
+            candidate_ids = [item['id'] for item in packet['candidates']]
+            require(len(set(candidate_ids)) == len(candidate_ids) and sorted(candidate_ids) == sorted(item['id'] for item in decisions), 'Retain every original candidate exactly once')
+            receipt_path = artifact_path(value['chartReview'])
+            revision = checkpoint.get('commit','')
+            require(re.fullmatch('[0-9a-f]{40}',revision), 'Use the pinned prior evidence commit')
+            # Preserve the original receipt even if the worker sandbox omitted it.
+            prior_bytes = subprocess.check_output(['git','show',revision+':'+str(receipt_path)])
+            prior = json.loads(prior_bytes)
+            require(prior.get('verdict') == 'PASS' and prior.get('author') and prior.get('intakeSha256') == value['intakeSha256'] and re.fullmatch('[0-9a-f]{64}',prior.get('chartSha256','')) and prior.get('reviewer') and prior.get('author') != prior['reviewer'], 'Missing independent historical chart identity')
+            folder = Path('reports/search-gap/reconciliation') / ref['sha256']
+            folder.mkdir(parents=True,exist_ok=True)
+            chart, receipt, proposed = folder/'decision-index.md', folder/'independent-decision-review.json', folder/'completion.json'
+            index = ('# Retrospective decision index\n\nOriginal chart unavailable. Original SHA-256: '+prior['chartSha256']+'\n'
+                     +'Original completion SHA-256: '+ref['sha256']+'\nThis is a mechanical transcription of the retained final dispositions. It supplies no historical or current approval.\n\n'
+                     +json.dumps(decisions,ensure_ascii=False,indent=2,sort_keys=True)+'\n').encode()
+            proposal = dict(value,chart=str(chart),chartReview=str(receipt))
+            for target, raw in [(chart,index),(folder/'original-chart-receipt.json',prior_bytes),(proposed,(json.dumps(proposal,ensure_ascii=False,indent=2)+'\n').encode())]:
+                if target.exists():require(target.read_bytes()==raw,'Reconciliation bytes changed; retain their original identity')
+                else:
+                    with target.open('xb') as handle:handle.write(raw)
+            return {'chart':str(chart),'proposedCompletion':str(proposed),'requiredIndependentReceipt':str(receipt),'originalReceipt':str(folder/'original-chart-receipt.json'),'originalChartSha256':prior['chartSha256'],'originalCompletion':str(path),'candidateCount':len(decisions)}
+    return None
+
 
 def completion_checkpoint_paths(paths):
     # Finish reopens the reviewed chart by path. Save its exact bytes in the
