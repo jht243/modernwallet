@@ -1,10 +1,14 @@
 {
- "slug": "best-accounting-software-for-freelancers",
- "rows": [],
- "cut": [
-  {
-   "domain": "epufix.at",
-   "why": "category 3 \u2014 Austria-only invoicing, outside US scope"
-  }
- ]
+  "slug": "best-accounting-software-for-freelancers",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "epufix.at",
+      "why": "category 3 — Austria-only invoicing, outside US scope"
+    },
+    {
+      "domain": "profitbooks.net",
+      "why": "category 3 — India-focused GST accounting software priced in INR; no US tax support stated"
+    }
+  ]
 }

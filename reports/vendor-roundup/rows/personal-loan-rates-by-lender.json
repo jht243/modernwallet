@@ -1,10 +1,14 @@
 {
- "slug": "personal-loan-rates-by-lender",
- "rows": [],
- "cut": [
-  {
-   "domain": "tenivel.com",
-   "why": "category 4 \u2014 German budgeting app, fits budgeting category"
-  }
- ]
+  "slug": "personal-loan-rates-by-lender",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "stoke.money",
+      "why": "category 4 \u2014 wrong category: redirects to sconemoney.com, a cash-flow forecasting app, not a lender"
+    },
+    {
+      "domain": "maali.app",
+      "why": "category 4 \u2014 wrong category: personal spending-tracker app ($99 one-time), not a lender; fits a budgeting-apps vertical"
+    }
+  ]
 }

@@ -843,6 +843,19 @@
       "IRA from a retirement-plan provider"
      ],
      "added": "2026-10-23"
+    },
+    {
+     "name": "American Century Investments",
+     "domain": "americancentury.com",
+     "url": "https://www.americancentury.com/",
+     "values": [
+      "$50 annual IRA fee; waived for accounts over $10,000",
+      "$2,500 brokerage; $1,000 for IRA mutual fund accounts",
+      "No robo-advisor listed; One Choice diversified portfolios",
+      "N/A",
+      "Traditional and Roth IRAs held in American Century funds"
+     ],
+     "added": "2026-11-10"
     }
    ]
   },
@@ -2449,6 +2462,19 @@
       "No; registered California legal document assistant, not a law firm"
      ],
      "added": "2026-10-29"
+    },
+    {
+     "name": "We The People",
+     "domain": "wethepeopleusa.com",
+     "url": "https://www.wethepeopleusa.com/",
+     "values": [
+      "Not published; FAQ cites $250-$3,000 average for any method",
+      "Wills offered as a separate service",
+      "Not published; FAQ explains retitling assets",
+      "Not stated",
+      "Not stated; describes itself as a document preparation service"
+     ],
+     "added": "2026-11-10"
     }
    ]
   },
@@ -4040,6 +4066,18 @@
       "3+ months in business; $10,000+ monthly revenue"
      ],
      "added": "2026-10-27"
+    },
+    {
+     "name": "Noble Funding",
+     "domain": "noblebusinessloans.com",
+     "url": "https://noblebusinessloans.com/",
+     "values": [
+      "Bridge loans, long-term loans, A/R lines of credit; no MCA listed",
+      "Bridge $350,000 to $10M+; loans up to $500,000; A/R lines $2M-$35M+",
+      "Bridge funded in days; other timing not published",
+      "Bridge: $4-$100M+ annual sales; time in business not published"
+     ],
+     "added": "2026-11-10"
     }
    ]
   },
@@ -6180,6 +6218,30 @@
       "Startups, contractors, consultants, SaaS firms and franchisees"
      ],
      "added": "2026-11-04"
+    },
+    {
+     "name": "Amber's Accounting and Bookkeeping",
+     "domain": "ambersbookkeeping.com",
+     "url": "https://ambersbookkeeping.com/",
+     "values": [
+      "From $425/mo; quoted after a diagnostic",
+      "Cleanup and catch-up from $2,000; typically $2,000-$15,000",
+      "No; states it provides no tax filing services",
+      "Small businesses on QuickBooks Online; U.S.-based bookkeepers"
+     ],
+     "added": "2026-11-10"
+    },
+    {
+     "name": "Koody",
+     "domain": "koody.com",
+     "url": "https://koody.com/business",
+     "values": [
+      "Free; Standard $2.99/mo; Plus $4.99/mo (P&L reports)",
+      "No priced service; Plus plan imports past statements",
+      "No; Schedule C worksheet only, not tax advice",
+      "Self-serve app for sole proprietors; not a bookkeeper service"
+     ],
+     "added": "2026-11-10"
     }
    ]
   },

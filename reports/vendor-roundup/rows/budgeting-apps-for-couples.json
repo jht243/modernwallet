@@ -1,1 +1,23 @@
-{"slug":"best-budgeting-apps-for-couples","rows":[{"name":"Spendee","domain":"spendee.com","url":"https://www.spendee.com/","values":["Free Basic; Plus $1.99/mo; Premium $5.99/mo","Shared wallets listed as a feature","Bank sync on paid plans; free tier has none","Not stated","Partners who want separate shared wallets showing who paid"]}],"cut":[]}
+{
+ "slug": "best-budgeting-apps-for-couples",
+ "rows": [
+  {
+   "name": "Spendee",
+   "domain": "spendee.com",
+   "url": "https://www.spendee.com/",
+   "values": [
+    "Free Basic; Plus $1.99/mo; Premium $5.99/mo",
+    "Shared wallets listed as a feature",
+    "Bank sync on paid plans; free tier has none",
+    "Not stated",
+    "Partners who want separate shared wallets showing who paid"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "pennywise-app.com",
+   "why": "category 2 — unverifiable: domain redirects to a /lander page with no product content"
+  }
+ ]
+}

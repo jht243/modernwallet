@@ -1,10 +1,23 @@
 {
  "slug": "best-living-trust-services",
- "rows": [],
+ "rows": [
+  {
+   "name": "We The People",
+   "domain": "wethepeopleusa.com",
+   "url": "https://www.wethepeopleusa.com/",
+   "values": [
+    "Not published; FAQ cites $250-$3,000 average for any method",
+    "Wills offered as a separate service",
+    "Not published; FAQ explains retitling assets",
+    "Not stated",
+    "No; legal document preparation service, not attorney-drafted"
+   ]
+  }
+ ],
  "cut": [
   {
    "domain": "ethos.com",
-   "why": "category 4 \u2014 fits life insurance category"
+   "why": "category 4 — fits life insurance category"
   }
  ]
 }

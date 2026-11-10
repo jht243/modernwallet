@@ -1,14 +1,27 @@
 {
-  "slug": "best-ira-accounts",
-  "rows": [],
-  "cut": [
-    {
-      "domain": "accio.com",
-      "why": "category 3 \u2014 AI sourcing and business-automation tool, not personal or small-business finance and no IRA product"
-    },
-    {
-      "domain": "sophisticatedinvestor.com",
-      "why": "category 1 \u2014 review and affiliate site, no IRA product of its own"
-    }
-  ]
+ "slug": "best-ira-accounts",
+ "rows": [
+  {
+   "name": "American Century Investments",
+   "domain": "americancentury.com",
+   "url": "https://www.americancentury.com/",
+   "values": [
+    "$50 annual IRA fee; waived for accounts over $10,000",
+    "$2,500 brokerage; $1,000 for IRA mutual fund accounts",
+    "No robo-advisor listed; One Choice diversified portfolios",
+    "N/A",
+    "Traditional and Roth IRAs held in American Century funds"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "accio.com",
+   "why": "category 3 — AI sourcing and business-automation tool, not personal or small-business finance and no IRA product"
+  },
+  {
+   "domain": "sophisticatedinvestor.com",
+   "why": "category 1 — review and affiliate site, no IRA product of its own"
+  }
+ ]
 }

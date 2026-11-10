@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T16:11:28.933Z",
+  "generated": "2026-11-10T16:11:06.702Z",
   "rows": [
     {
       "vertical": "dataannotation-alternatives",
@@ -101,7 +101,7 @@
       "roundupSlug": "best-money-market-accounts",
       "route": "ENRICH",
       "qualified": 16,
-      "listed": 13,
+      "listed": 14,
       "missing": [
         {
           "domain": "53.com",
@@ -121,16 +121,6 @@
           "site_kind": "unknown",
           "has_pricing": false,
           "serp_rank": 9,
-          "primary_email": null
-        },
-        {
-          "domain": "santanderbank.com",
-          "name": "Santander Select Money Market Savings",
-          "site_url": "https://santanderbank.com",
-          "one_liner": "Santander Select® Money Market Savings. Keep the momentum going and your savings growing with competitive rates, priority service, and no Monthly Fee. Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 16,
           "primary_email": null
         }
       ]
@@ -168,21 +158,10 @@
       "vertical": "net-worth-tracker",
       "label": "net worth trackers",
       "roundupSlug": "best-net-worth-tracker",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 28,
-      "listed": 27,
-      "missing": [
-        {
-          "domain": "trakyodollas.com",
-          "name": "Personal finance tracker",
-          "site_url": "https://trakyodollas.com/",
-          "one_liner": "Show HN: Personal finance tracker – CSV import, free, no bank login",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": null,
-          "primary_email": "contact@trakyodollas.com"
-        }
-      ]
+      "listed": 28,
+      "missing": []
     },
     {
       "vertical": "tax-relief-companies",
@@ -207,7 +186,7 @@
       "label": "living trust services",
       "roundupSlug": "best-living-trust-services",
       "route": "ENRICH",
-      "qualified": 37,
+      "qualified": 36,
       "listed": 35,
       "missing": [
         {
@@ -219,16 +198,6 @@
           "has_pricing": false,
           "serp_rank": 7,
           "primary_email": null
-        },
-        {
-          "domain": "ethos.com",
-          "name": "How to Create a Living Trust: Step-by-Step Guide",
-          "site_url": "https://ethos.com",
-          "one_liner": "Learn how to create a living trust to protect your assets, avoid probate, and ensure your wishes are honored. Easy step-by-step guide for 2025 and beyond.",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 18,
-          "primary_email": "press@ethos.com"
         }
       ]
     },
@@ -324,21 +293,10 @@
       "vertical": "robo-advisors",
       "label": "robo-advisors",
       "roundupSlug": "best-robo-advisors",
-      "route": "ENRICH",
-      "qualified": 3,
+      "route": "ACCRUE",
+      "qualified": 2,
       "listed": 2,
-      "missing": [
-        {
-          "domain": "financialadvisortransitions.com",
-          "name": "Top 10 Robo-Advisors Ranked by Assets Under ...",
-          "site_url": "https://financialadvisortransitions.com",
-          "one_liner": "Jul 17, 2026 — Top 10 Robo-Advisors Ranked by Assets Under Management · 1. Vanguard Robo-Advisors · 2. Wealthfront · 3. Schwab Intelligent Portfolios · 4. Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 4,
-          "primary_email": null
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "credit-cards-for-fair-credit",
@@ -393,7 +351,7 @@
       "label": "personal loan lenders",
       "roundupSlug": "personal-loan-rates-by-lender",
       "route": "ENRICH",
-      "qualified": 23,
+      "qualified": 24,
       "listed": 20,
       "missing": [
         {
@@ -417,14 +375,24 @@
           "primary_email": null
         },
         {
-          "domain": "tenivel.com",
-          "name": "Tenivel",
-          "site_url": "https://tenivel.com",
-          "one_liner": "Show HN: Tenivel – Local-first personal finance manager, no cloud",
+          "domain": "stoke.money",
+          "name": "Stoke Money",
+          "site_url": "https://stoke.money",
+          "one_liner": "Show HN: Stoke Money – Personal finance app built around a cash flow forecast",
           "site_kind": "vendor",
           "has_pricing": true,
           "serp_rank": null,
-          "primary_email": "info@tenivel.com"
+          "primary_email": null
+        },
+        {
+          "domain": "maali.app",
+          "name": "Maali",
+          "site_url": "https://maali.app/",
+          "one_liner": "Show HN: Maali – Privacy-first personal finance app with a local AI analyst",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": null,
+          "primary_email": "support@maali.app"
         }
       ]
     },
@@ -537,31 +505,10 @@
       "vertical": "invoice-factoring-companies",
       "label": "invoice factoring companies",
       "roundupSlug": "best-invoice-factoring-companies",
-      "route": "ENRICH",
-      "qualified": 33,
+      "route": "ACCRUE",
+      "qualified": 31,
       "listed": 31,
-      "missing": [
-        {
-          "domain": "templatebox.win",
-          "name": "TemplateBox",
-          "site_url": "https://templatebox.win/",
-          "one_liner": "Show HN: TemplateBox – Free resume, invoice and mockup editors in the browser",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": null,
-          "primary_email": "hello@meridian.studio"
-        },
-        {
-          "domain": "xsdhub.com",
-          "name": "XSDHub",
-          "site_url": "https://xsdhub.com/e-invoice-validator",
-          "one_liner": "Show HN: XSDHub – checks correctness of invoice format and local standards",
-          "site_kind": "unknown",
-          "has_pricing": true,
-          "serp_rank": null,
-          "primary_email": "support@xsdhub.com"
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "business-line-of-credit-rates-by-lender",
@@ -624,7 +571,7 @@
       "label": "accounting software for freelancers",
       "roundupSlug": "best-accounting-software-for-freelancers",
       "route": "ENRICH",
-      "qualified": 25,
+      "qualified": 24,
       "listed": 23,
       "missing": [
         {
@@ -636,16 +583,6 @@
           "has_pricing": true,
           "serp_rank": 3,
           "primary_email": null
-        },
-        {
-          "domain": "epufix.at",
-          "name": "EPUfix",
-          "site_url": "https://epufix.at",
-          "one_liner": "Show HN: EPUfix – Invoicing software for the self-employed in Austria",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": null,
-          "primary_email": "contact@epufix.at"
         }
       ]
     },

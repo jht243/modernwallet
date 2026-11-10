@@ -1,16 +1,10 @@
 {
   "slug": "best-portfolio-backtesting-and-analysis-tools",
-  "rows": [
+  "rows": [],
+  "cut": [
     {
-      "name": "Portfolio Lab",
-      "domain": "portfoliolab.app",
-      "url": "https://www.portfoliolab.app/",
-      "values": [
-        "Yes, historical backtests back to 1926 for ETFs, funds and 57 asset classes",
-        "No for public tools; free account unlocks full platform",
-        "Self-directed investors, FIRE planners, advisors and finance students"
-      ]
+      "domain": "findmymoat.com",
+      "why": "category 1 \u2014 directory of investing tools with no backtesting product of its own"
     }
-  ],
-  "cut": []
+  ]
 }

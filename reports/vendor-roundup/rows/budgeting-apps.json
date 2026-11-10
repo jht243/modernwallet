@@ -1,1 +1,22 @@
-{"slug":"best-budgeting-apps","rows":[{"name":"PocketSmith","domain":"pocketsmith.com","url":"https://www.pocketsmith.com/","values":["Free plan; paid from $9.99/mo billed annually","No; free plan allows manual imports","Calendar-based budgets with optional rollover","Forecasting cash flow years ahead across multiple currencies"]}],"cut":[]}
+{
+ "slug": "best-budgeting-apps",
+ "rows": [
+  {
+   "name": "PocketSmith",
+   "domain": "pocketsmith.com",
+   "url": "https://www.pocketsmith.com/",
+   "values": [
+    "Free plan; paid from $9.99/mo billed annually",
+    "No; free plan allows manual imports",
+    "Calendar-based budgets with optional rollover",
+    "Forecasting cash flow years ahead across multiple currencies"
+   ]
+  }
+ ],
+ "cut": [
+  {
+   "domain": "expenie.com",
+   "why": "category 2 — unverifiable: own site renders only a title ('Expense Tracker with Optional AI Capture'), no price, features or US availability fetchable"
+  }
+ ]
+}

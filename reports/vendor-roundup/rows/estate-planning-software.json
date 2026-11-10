@@ -18,7 +18,11 @@
  "cut": [
   {
    "domain": "openlaw.com",
-   "why": "category 1 \u2014 attorney-matching marketplace; page says it is not a law firm and sells no estate planning software"
+   "why": "category 1 — attorney-matching marketplace; page says it is not a law firm and sells no estate planning software"
+  },
+  {
+   "domain": "daviswillsandtrusts.com",
+   "why": "category 4 — California estate-planning law practice (attorney services, no software); fits an attorney/estate-planning-services vertical, not software"
   }
  ]
 }

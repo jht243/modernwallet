@@ -1,22 +1,44 @@
 {
- "slug": "best-bookkeeping-services-for-small-businesses",
- "rows": [
-  {
-   "name": "Slate Ridge Finance",
-   "domain": "slateridgefinance.com",
-   "url": "https://www.slateridgefinance.com",
-   "values": [
-    "Not published; see plans page",
-    "Clean-up/catch-up service offered; price not published",
-    "Tax support through a CPA partner",
-    "Startups, contractors, consultants, SaaS firms and franchisees"
-   ]
-  }
- ],
- "cut": [
-  {
-   "domain": "fastcorp.eu",
-   "why": "category 3 \u2014 Bulgarian company formation and compliance, outside this site's US scope"
-  }
- ]
+  "slug": "best-bookkeeping-services-for-small-businesses",
+  "rows": [
+    {
+      "name": "Slate Ridge Finance",
+      "domain": "slateridgefinance.com",
+      "url": "https://www.slateridgefinance.com",
+      "values": [
+        "Not published; see plans page",
+        "Clean-up/catch-up service offered; price not published",
+        "Tax support through a CPA partner",
+        "Startups, contractors, consultants, SaaS firms and franchisees"
+      ]
+    },
+    {
+      "name": "Amber's Accounting and Bookkeeping",
+      "domain": "ambersbookkeeping.com",
+      "url": "https://ambersbookkeeping.com/",
+      "values": [
+        "From $425/mo; quoted after a diagnostic",
+        "Cleanup and catch-up from $2,000; typically $2,000-$15,000",
+        "No; states it provides no tax filing services",
+        "Small businesses on QuickBooks Online; U.S.-based bookkeepers"
+      ]
+    },
+    {
+      "name": "Koody",
+      "domain": "koody.com",
+      "url": "https://koody.com/business",
+      "values": [
+        "Free; Standard $2.99/mo; Plus $4.99/mo (P&L reports)",
+        "No priced service; Plus plan imports past statements",
+        "No; Schedule C worksheet only, not tax advice",
+        "Self-serve app for sole proprietors; not a bookkeeper service"
+      ]
+    }
+  ],
+  "cut": [
+    {
+      "domain": "fastcorp.eu",
+      "why": "category 3 — Bulgarian company formation and compliance, outside this site's US scope"
+    }
+  ]
 }
