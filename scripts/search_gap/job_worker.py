@@ -123,6 +123,8 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
                 marker.parent.mkdir(parents=True,exist_ok=True)
                 marker.write_text(json.dumps({'completionFile':summary['completionFile'],'sha256':digest(summary['completionFile']),'runId':packet['runId']}))
         # Control and recovery state must precede the potentially long candidate list.
+        if job.get('status')=='claimed':
+            remember_lease(site,packet['runId'],owner)
         return dict(nextAction=action,resumed=resumed,recoverySummary=summary,durableJob=True,
                     intakeFile=str(path),intakeSha256=digest(path),checkpointFile=str(checkpoint_file) if checkpoint_file else None,
                     checkpointCount=len(checkpoints),**packet)
@@ -271,6 +273,33 @@ def finish(intake_path,completion_path,store,owner):
         raise
     return {'ok':not pending,'status':'failure' if pending else 'success','pendingCandidates':pending,'site':packet['site'],'runId':packet['runId'],'durableJob':True}
 
+def lease_marker(payload=None):
+    session = os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID') or (payload or {}).get('session_id')
+    if not session:
+        return None
+    key = hashlib.sha256(session.encode()).hexdigest()
+    path = subprocess.check_output(['git','rev-parse','--git-path','search-gap-recovery/leases/'+key+'.json'],text=True).strip()
+    return Path(path)
+
+
+def remember_lease(site, run, owner):
+    marker = lease_marker()
+    if marker:
+        marker.parent.mkdir(parents=True,exist_ok=True)
+        marker.write_text(json.dumps({'site':site,'run':run,'owner':owner}),encoding='utf-8')
+        marker.chmod(0o600)
+
+
+def release_at_session_end(payload):
+    if payload.get('hook_event_name')!='SessionEnd':
+        return
+    marker = lease_marker(payload)
+    if marker and marker.is_file():
+        saved = read(marker)
+        Store().release_job(saved['site'],saved['run'],saved['owner'])
+        marker.unlink(missing_ok=True)
+
+
 def invocation_owner():
     if os.environ.get('WORKFLOW_RUN_ID'):return os.environ['WORKFLOW_RUN_ID']
     # Legacy cloud prompts predate --owner. Bind them to the real native
@@ -279,7 +308,7 @@ def invocation_owner():
     return hashlib.sha256(('search-gap-native:'+session).encode()).hexdigest() if session else None
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('command',choices=['list-gaps','checkpoint','restore','adopt','finish']);p.add_argument('--site',required=True);p.add_argument('--owner',default=invocation_owner());p.add_argument('--out');p.add_argument('--intake');p.add_argument('--completion');p.add_argument('--metadata');p.add_argument('--files',nargs='*',default=[]);p.add_argument('--checkpoint-file');p.add_argument('--days');p.add_argument('--limit');p.add_argument('--min-count');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('command',choices=['list-gaps','checkpoint','restore','adopt','finish']);p.add_argument('--site',required=True);p.add_argument('--owner',default=invocation_owner());p.add_argument('--out');p.add_argument('--intake');p.add_argument('--completion');p.add_argument('--metadata');p.add_argument('--files',nargs='*',default=[]);p.add_argument('--end-invocation', action='store_true',help='Release only this owner after the checkpoint is safely retained');p.add_argument('--checkpoint-file');p.add_argument('--days');p.add_argument('--limit');p.add_argument('--min-count');a=p.parse_args()
     store=Store()
     if a.command=='list-gaps':result=dict(intake(a.site,store,a.out,a.owner),invocationOwner=a.owner)
     elif a.command=='restore':result=restore_artifacts(read(a.checkpoint_file))
@@ -295,6 +324,8 @@ def main():
             require(all(isinstance(v,str) and v for v in metadata['canonicalJobs'].values()),'Canonical job IDs required')
             require(all(isinstance(v,int) and not isinstance(v,bool) and v>=0 for v in metadata['reviewCounters'].values()),'Nonnegative integer review counters required')
             metadata['artifacts']=capture_artifacts(a.files);result=store.checkpoint_job(a.site,packet['runId'],a.owner,metadata)
+            if a.end_invocation and result.get('ok',True):
+                store.release_job(a.site,packet['runId'],a.owner)
         else:result=finish(a.intake,a.completion,store,a.owner)
     print(json.dumps(result,ensure_ascii=False));return 0 if result.get('ok',True) else 1
 if __name__=='__main__':

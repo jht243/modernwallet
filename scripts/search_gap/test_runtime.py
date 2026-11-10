@@ -36,6 +36,19 @@ class RuntimeRecovery(unittest.TestCase):
         self.assertEqual(path.read_bytes(),b'original candidate');self.assertEqual(resumed['recoverySummary']['nextAction'],stage['nextAction'])
         self.assertEqual(resumed['recoverySummary']['results'],[str(path)])
 
+    def test_only_terminal_session_releases_its_recorded_owner(self):
+        worker.subprocess.run(['git','init','--quiet'],check=True)
+        with patch.dict(os.environ,{'CLAUDE_CODE_REMOTE_SESSION_ID':'fixture-cloud-a'}),patch.object(worker,'Store') as store:
+            worker.remember_lease('fixture.site','saved-job','original-owner')
+            worker.release_at_session_end({'hook_event_name':'Stop'})
+            store.assert_not_called()
+            with patch.dict(os.environ,{'CLAUDE_CODE_REMOTE_SESSION_ID':'different-session'}):
+                worker.release_at_session_end({'hook_event_name':'SessionEnd'})
+                store.assert_not_called()
+            worker.release_at_session_end({'hook_event_name':'SessionEnd'})
+            store.return_value.release_job.assert_called_once_with('fixture.site','saved-job','original-owner')
+            self.assertFalse(worker.lease_marker().exists())
+
     def test_busy_job_does_not_write_replacement_intake(self):
         class Durable:
             def pending(self,site):return []

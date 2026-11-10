@@ -93,6 +93,16 @@
           }
         ]
       }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/search_gap/session_end.py\""
+          }
+        ]
+      }
     ]
   },
   "modelSettings": {
