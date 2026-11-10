@@ -32,6 +32,13 @@ class Store(native.Store):
             except (urllib.error.URLError,TimeoutError):
                 if attempt==2:raise
             time.sleep(2**attempt)
+    def release_job(self,site,run,owner):
+        # Conditional ownership filter cannot expire a different invocation's lease.
+        params=__import__('urllib.parse',fromlist=['urlencode']).urlencode({
+            'site':'eq.'+site,'run_id':'eq.'+run,'owner':'eq.'+owner,'status':'eq.active'})
+        now=native.dt.datetime.now(native.dt.timezone.utc).isoformat()
+        return self.request('search_gap_jobs?'+params,'PATCH',{'lease_until':now,'updated_at':now})
+
     def claim_job(self,site,owner,raw,adopt=False):
         require(owner and len(owner)>=16,'Pass --owner with this invocation fresh workflow run ID')
         return self.request('rpc/search_gap_job_claim','POST',{'p_site':site,'p_owner':owner,'p_packet':raw,'p_adopt':adopt})
@@ -112,13 +119,31 @@ def restore_artifacts(checkpoints):
 def finish(intake_path,completion_path,store,owner):
     packet,completion=read(intake_path),read(completion_path)
     require(completion.get('intakeSha256')==digest(intake_path),'Intake changed')
-    decisions=native.validate_completion(packet,completion)
-    for decision in decisions:
-        if decision['status']!='pending':
-            store.acknowledge_job(packet['site'],packet['runId'],owner,decision,{'runId':packet['runId'],'decision':decision,'completionSha256':digest(completion_path),'chartReviewSha256':digest(completion['chartReview'])})
-    pending=sum(d['status']=='pending' for d in decisions)
-    closed=store.close_job(packet['site'],packet['runId'],owner)
-    require(pending or closed['complete'],'Production queue is not fully acknowledged')
+    try:
+        decisions=native.validate_completion(packet,completion)
+        for decision in decisions:
+            if decision['status']!='pending':
+                store.acknowledge_job(packet['site'],packet['runId'],owner,decision,{'runId':packet['runId'],'decision':decision,'completionSha256':digest(completion_path),'chartReviewSha256':digest(completion['chartReview'])})
+        pending=sum(d['status']=='pending' for d in decisions)
+        closed=store.close_job(packet['site'],packet['runId'],owner)
+        require(pending or closed['complete'],'Production queue is not fully acknowledged')
+    except Exception:
+        # Retain the exact final decisions before making this unfinished job retryable.
+        try:
+            location=subprocess.check_output(['git','rev-parse','--git-path','search-gap-recovery/'+packet['runId']+'/checkpoints.json'],text=True).strip()
+            history=read(location)
+            metadata={k:v for k,v in history[-1].items() if k not in ('artifacts','recordedAt')}
+            saved=Path('reports/search-gap/recovery')/(digest(completion_path)+'-completion.json')
+            saved.parent.mkdir(parents=True,exist_ok=True);saved.write_bytes(Path(completion_path).read_bytes())
+            metadata.update(stage='completion-recovery',completionFile=str(saved))
+            metadata['artifacts']=capture_artifacts([str(saved),completion['chart'],completion['chartReview']])
+            store.checkpoint_job(packet['site'],packet['runId'],owner,metadata)
+        except Exception as checkpoint_error:
+            print('Completion checkpoint unavailable: '+type(checkpoint_error).__name__,file=sys.stderr)
+        try:store.release_job(packet['site'],packet['runId'],owner)
+        except Exception as release_error:
+            print('Lease release unconfirmed: '+type(release_error).__name__,file=sys.stderr)
+        raise
     return {'ok':not pending,'status':'failure' if pending else 'success','pendingCandidates':pending,'site':packet['site'],'runId':packet['runId'],'durableJob':True}
 
 def main():
