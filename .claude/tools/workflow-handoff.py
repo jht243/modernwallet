@@ -75,7 +75,7 @@ def preparation_scope_check(root, h, old, phase):
         current = start
         while current:
             require(not any(current.get(k) for k in
-                            ['publicationAuthority', 'phase0Approval', 'approval', 'reviewRelease', 'snapshot', 'review']),
+                            ['publicationAuthority', 'phase0Approval', 'approval', 'reviewRelease', 'snapshot', 'review', 'reviewPairs']),
                     'Approved or reviewed route scope is locked')
             for ref in current.get('sources', []) + current.get('candidates', []):
                 require(not re.search(r'phase[-_]?0[-_]approval', Path(ref['path']).name, re.I),
@@ -155,6 +155,27 @@ def handoff_check(root, path, actor=None, phase=None, visited=None):
     if phase == 'publish':
         spec = importlib.util.spec_from_file_location('handoff_renderer', root / '.claude/tools/rendered-audit.py')
         renderer = importlib.util.module_from_spec(spec); spec.loader.exec_module(renderer)
+        if 'reviewPairs' in h:
+            pairs = h['reviewPairs']
+            require(isinstance(pairs, list) and pairs and
+                    not any(h.get(k) for k in ('reviewRelease', 'snapshot', 'review')),
+                    'Use a single editorial release authority for each route')
+            covered = set()
+            for pair in pairs:
+                snap = read(evidence_ref(root, pair.get('snapshot')))
+                report = read(evidence_ref(root, pair.get('review')))
+                manifest = snap.get('manifest', {})
+                require(manifest.get('workflowKind') == 'mindmap-pass' and
+                        manifest.get('jobId') == report.get('jobId') == h['jobId'] and
+                        manifest.get('canonicalBase') == h['canonicalBase'],
+                        'Each editorial approval must belong to this exact job and site')
+                renderer.review_check(snap, report)
+                routes = [row['path'] for row in snap['routes']]
+                require(routes and len(routes) == len(set(routes)) and covered.isdisjoint(routes),
+                        'Each approved route must appear exactly once')
+                covered.update(routes)
+            require(covered == set(h['routes']), 'Editorial approvals must cover the complete handoff')
+            return h
         snapshot = read(evidence_ref(root, h.get('snapshot')))
         if h.get('reviewRelease'):
             release = read(evidence_ref(root, h['reviewRelease']))
@@ -207,6 +228,13 @@ def seal(root, draft, out, local, actor=None, phase=None):
         value[collection] = [{**ref, **snapshot(root, local.evidence_ref(root, ref), out.parent, local, ref['sha256']),
                               'originPath': ref.get('originPath', ref['path'])}
                              for ref in value[collection]]
+    if 'reviewPairs' in value:
+        for pair in value['reviewPairs']:
+            for field in ('snapshot', 'review'):
+                ref = pair[field]
+                pair[field] = {**ref, **snapshot(root, local.evidence_ref(root, ref), out.parent,
+                                                  local, ref['sha256']),
+                               'originPath': ref.get('originPath', ref['path'])}
     for field in ('previous', 'snapshot', 'review', 'reviewRelease'):
         if value.get(field):
             ref = value[field]
