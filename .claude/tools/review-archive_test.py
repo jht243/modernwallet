@@ -43,6 +43,17 @@ with tempfile.TemporaryDirectory() as parent:
   assert (rec/'sources/src/page.ts').read_bytes()==expected_src and (rec/'sources/src/style.css').read_bytes()==expected_css
   assert (rec/'reports/original.html').read_bytes()==original_html and (rec/'reports/original.txt').is_file()
   assert json.loads((rec/'index.json').read_bytes())['baseCommit']==base
+  # A fresh worker with a different lease owner can publish only the exact retained source.
+  lease=m.marker(fresh,'search-gap-recovery/leases/');lease.parent.mkdir(parents=True,exist_ok=True)
+  lease.write_text(json.dumps({'site':'fixture.test','run':'original-search','owner':'replacement-owner'}))
+  for name in changes:shutil.copyfile(rec/'sources'/name,fresh/name)
+  git(fresh,'config','user.name','fixture');git(fresh,'config','user.email','fixture@invalid.test')
+  git(fresh,'add','src');git(fresh,'commit','-qm','restored original reviewed source')
+  m.require_search_archive(fresh,changes)
+  lease.write_text(json.dumps({'site':'different.test','run':'original-search','owner':'replacement-owner'}))
+  try:m.require_search_archive(fresh,changes)
+  except ValueError:pass
+  else:raise AssertionError('Different site borrowed the original release')
   # An archive whose remote storage no longer contains the object must fail.
   try:m.verified_objects(fresh,base,[hashlib.sha256(original_html).hexdigest()])
   except ValueError as e:assert 'missing' in str(e)

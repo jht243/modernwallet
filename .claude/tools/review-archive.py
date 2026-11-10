@@ -217,7 +217,7 @@ def persist(root,store,d,refs,base,files,job,job_id,release,history=None):
     else:
         more={v['path']:v['sha256'] for v in files.values() if v}
         paths={**(history or {}),**d.collect(root,None,{**refs,**more})}
-        index_bytes=json.dumps({'roots':refs,'paths':paths,'baseCommit':base,'sourceFiles':files,'jobId':job_id},sort_keys=True).encode()
+        index_bytes=json.dumps({'roots':refs,'paths':paths,'baseCommit':base,'sourceFiles':files,'jobId':job_id,'searchSite':job['site'] if job else None},sort_keys=True).encode()
         index=d.sha(index_bytes)
         index_file=d.cache(root,'release-index.json',index,index_bytes)
         paths[str(index_file.relative_to(root))]=index
@@ -278,16 +278,25 @@ def require_search_archive(root, changed):
     receipt=marker(root,'review-release-receipts/')
     scope=hashlib.sha256(json.dumps(job,sort_keys=True).encode()).hexdigest()
     receipts=list((receipt.parent/receipt.stem/scope).glob('*.json'))
-    if not receipts:raise ValueError('Before publishing this Search Gap job, run the native rendered-audit check --recapture on its approved preview and review. It archives and reads back the evidence.')
     _,store=durable(root).backend(root);revision,state=store.read()
+    records=state.get('verifiedReleasePairs',{})
+    proofs=[json.loads(file.read_bytes()) for file in receipts]
+    if not proofs:
+        # A replacement worker has a new lease owner and no local receipts. Recover only
+        # the original verified packages for this site's still-active canonical intake.
+        proofs=[{'pair':pair,'index':index,'archiveCommit':None,'job':job}
+                for pair,index in state.get('reviewPairsByJob',{}).get(job['run'],{}).items()]
+    if not proofs:
+        raise ValueError('Archive the approved preview and review using the native rendered-audit check before publishing this Search Gap job')
     matched=set()
-    for file in receipts:
-        proof=json.loads(file.read_bytes())
-        if proof.get('job')!=job or state.get('verifiedReleasePairs',{}).get(proof['pair'])!=proof['index']:
+    for proof in proofs:
+        if proof.get('job')!=job or records.get(proof['pair'])!=proof['index']:
             raise ValueError('The checked review package is unavailable on the remote')
         raw=call(root,'show',revision+':artifacts/'+proof['index']).stdout
         if hashlib.sha256(raw).hexdigest()!=proof['index']:raise ValueError('Release archive index differs')
         saved=json.loads(raw)
+        if saved.get('jobId')!=job['run'] or (not receipts and saved.get('searchSite')!=job['site']):
+            continue
         if revision!=proof['archiveCommit']:verified_objects(root,revision,saved['paths'].values())
         for name in changed.intersection(saved['sourceFiles']):
             captured=saved['sourceFiles'][name]
