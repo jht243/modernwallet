@@ -51,6 +51,8 @@ def announce(root, source):
     if receipt.is_file():
         proof=json.loads(receipt.read_bytes());remaining=production().outstanding(root,proof)
         if remaining:
+            archive = production().restore_work(root,proof)
+            if archive: print('Recovered the original reviewed plan, candidate and available audit evidence in '+str(archive)+'. Use them directly; apply only the identified changes to current source.')
             if active_session():save(marker(root,active_session()),str(source.relative_to(root)).encode())
             print('Resume original Hype production job '+proof['job']+' from branch '+str(proof.get('workBranch') or 'its retained native evidence')+'. Remaining routes: '+json.dumps(remaining)+'. Reuse its chart and draft. Inspect original audit records and counters. If an informal independent FAIL exists without its native admission, retain that finding and its consumed round honestly. Never classify a missing admission as a PASS or reset the tier. Complete native AUDIT preparation and reservation BEFORE every new independent content review. Use exact reviewer-prescribed mechanical corrections where authorized; keep real testing/exclusion and build/live checks. Publish eligible exact candidates under the current native limit. No new harvest or chart.')
             return
@@ -159,7 +161,7 @@ def acknowledge(root, source, plan, verdict):
         if old["pull"]!=source.stem or old["candidates"]!=names:
             raise ValueError("Changed original Hype handoff")
         return
-    checkpoint_module().reviewed(root,receipt)
+    checkpoint_module().reviewed(root,receipt,plan,verdict)
     save(path,encoded)
 
 

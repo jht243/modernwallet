@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 def publication_targets(plan):
-    return sorted({action['target'].rstrip('/') or '/' for action in plan.get('actions',[])})
+    return sorted({action['target'].rstrip('/') or '/' for action in plan.get('actions',[]) if action.get('bucket') != 'consolidation advisory'})
 
 
 def outstanding(root, proof):
@@ -27,3 +27,53 @@ def outstanding(root, proof):
 def work_reference(root):
     branch=subprocess.check_output(['git','branch','--show-current'],cwd=root,text=True).strip()
     return branch if branch.startswith('claude/') else ''
+
+
+def restore_work(root, proof):
+    # A recovery archive is evidence only. Never check out the old branch over
+    # current application files or import a past preflight as today's reading.
+    import hashlib
+    import re
+    from pathlib import PurePosixPath
+    revision = proof.get('retainedWorkCommit')
+    branch = proof.get('workBranch')
+    if not branch or not re.fullmatch(r'claude/[A-Za-z0-9._/-]+', branch):
+        return None
+    if revision and not re.fullmatch(r'[0-9a-f]{40}', revision):
+        raise ValueError('Invalid retained Hype revision')
+    ref = revision or ('refs/heads/' + branch)
+    get = lambda *args: subprocess.run(['git', *args], cwd=root, capture_output=True)
+    if not revision or get('cat-file', '-e', revision + '^{commit}').returncode:
+        fetched = get('fetch', '--quiet', '--no-tags', 'origin', ref)
+        if fetched.returncode:
+            if revision: raise ValueError('Restore pinned Hype work before rebuilding any paid stage')
+            return None
+        if not revision: revision = get('rev-parse', 'FETCH_HEAD').stdout.decode().strip()
+    prefix = 'reports/mindmap-pass/'
+    paths = get('ls-tree', '-r', '--name-only', revision, '--', prefix).stdout.decode().splitlines()
+    canonical = lambda obj: hashlib.sha256(json.dumps(obj,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()).hexdigest()
+    def original(name):
+        result = get('show', revision + ':' + name)
+        if result.returncode: raise ValueError('Missing original Hype file: '+name)
+        return result.stdout
+    for name in paths:
+        if not name.endswith('/approval-manifest.json'): continue
+        parent = name.rsplit('/',1)[0]
+        if proof['job'] not in parent: continue
+        review_name = parent + '/chart-review.json'
+        if review_name not in paths: continue
+        plan, review = json.loads(original(name)), json.loads(original(review_name))
+        if canonical(plan)!=proof['manifest'] or canonical(review)!=proof['review']: continue
+        archive = Path(get('rev-parse','--absolute-git-dir').stdout.decode().strip()) / 'hype-resume' / revision
+        wanted = [name, review_name, plan['chartPath']]
+        wanted.extend(p for p in paths if p.startswith((parent+'/drafts/',parent+'/audit/',parent+'/evidence/',parent+'/handoffs/')) or p==parent+'/HOLD.md')
+        for p in dict.fromkeys(wanted):
+            rel = PurePosixPath(p)
+            if not p.startswith(prefix) or '..' in rel.parts or rel.is_absolute():
+                raise ValueError('Invalid Hype archive path')
+            dst = archive.joinpath(*rel.parts); dst.parent.mkdir(parents=True,exist_ok=True)
+            if not dst.exists(): dst.write_bytes(original(p))
+        return archive
+    if proof.get('retainedWorkCommit'):
+        raise ValueError('Original Hype archive does not match the independent manifest and verdict')
+    return None

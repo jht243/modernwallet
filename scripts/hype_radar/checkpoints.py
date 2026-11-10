@@ -10,7 +10,7 @@ REF = "refs/heads/automation/hype-control"
 
 
 def backend(root):
-    if not (os.environ.get("CLAUDE_CODE_REMOTE_SESSION_ID") or os.environ.get("CLAUDE_CODE_REMOTE", "").lower() in ("1","true","yes")):
+    if not (os.environ.get("HYPE_DURABLE_RUN") == "1" or os.environ.get("CLAUDE_CODE_REMOTE_SESSION_ID") or os.environ.get("CLAUDE_CODE_REMOTE", "").lower() in ("1","true","yes")):
         return None
     path = root / ".claude/tools/workflow-control-store.py"
     spec = importlib.util.spec_from_file_location("hype_git_store", path)
@@ -46,6 +46,23 @@ def restore(root):
         if len(digest)!=64 or any(c not in "0123456789abcdef" for c in digest):
             raise ValueError("Invalid Hype checkpoint digest")
         known.update(row["names"])
+        packet = row.get("chartRecovery")
+        if packet:
+            import subprocess
+            base = Path(subprocess.check_output(["git","rev-parse","--absolute-git-dir"],cwd=root,text=True).strip())/"hype-resume"/digest
+            raw = module.git(root, "show", revision+":artifacts/"+packet["sha256"]).stdout
+            if hashlib.sha256(raw).hexdigest() != packet["sha256"]:
+                raise ValueError("Retained reviewed Hype chart changed")
+            rel = Path(packet["path"])
+            if rel.is_absolute() or ".." in rel.parts or rel.parts[:2] != ("reports","mindmap-pass"):
+                raise ValueError("Invalid reviewed Hype chart destination")
+            replace(base/rel,raw)
+            for name,key in [("approval-manifest.json","manifest"),("chart-review.json","review")]:
+                value=json.dumps(packet[key],sort_keys=True,separators=(",",":"),ensure_ascii=False).encode()
+                if hashlib.sha256(value).hexdigest()!=row["review"][key]:
+                    raise ValueError("Retained Hype chart judgment changed")
+                replace(base/name,value)
+            print("Original independently reviewed Hype chart and decision files:",base)
         path = root/"reports/hype-radar/intakes"/(digest+".json")
         if row.get("review") and not row["review"].get("productionTargets") and not path.exists():
             replace(path.parent/"reviewed"/path.name, (json.dumps(row["review"],sort_keys=True)+"\n").encode())
@@ -79,7 +96,7 @@ def persist(root, path):
     store.mutate(add, [str(path.relative_to(root))])
 
 
-def reviewed(root, proof):
+def reviewed(root, proof, plan, verdict):
     connection = backend(root)
     if not connection:
         return
@@ -89,7 +106,11 @@ def reviewed(root, proof):
         if row.get("review") and row["review"] != proof:
             raise ValueError("The original reviewed Hype handoff is already closed")
         row["review"] = proof
-    store.mutate(close)
+        if proof.get("productionTargets"):
+            row["chartRecovery"] = {"path":plan["chartPath"], "sha256":hashlib.sha256(chart.read_bytes()).hexdigest(),
+                                    "manifest":plan,"review":verdict}
+    chart = root / plan["chartPath"]
+    store.mutate(close, [plan["chartPath"]] if proof.get("productionTargets") else [])
 
 
 def reserve_writer(root,key,local,admit):
