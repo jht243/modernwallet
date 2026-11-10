@@ -1,8 +1,8 @@
 {
   "version": "risk-review-budget-2026-11-08.1",
   "siteId": "jht243/modernwallet",
-  "defaultProfile": "high",
-  "minimumProfile": "high",
+  "defaultProfile": "standard",
+  "minimumProfile": "standard",
   "roundLimits": {
     "light": 1,
     "standard": 2,
@@ -38,6 +38,11 @@
       "sha256": "59585d30bdf19ee11e0a0a181cd6928f9b021da11a3e5340bf22b4448659a143",
       "commit": "3b394fff6e4269314726bc261f56b9d0305ceccd",
       "reason": "Retain genuine earlier independent verdicts and counters while removing obsolete editorial hold wording from the existing release contract."
+    },
+    {
+      "sha256": "433bc827af6dd4d6b7219394aa8dcacce623ade86af052b9a739e049abdc65dc",
+      "commit": "95a778093a35ea66a15fdaefc43b9864ad9f988d",
+      "reason": "Preserve independent reviews recorded before the owner changed this site’s default and minimum editorial review levels."
     }
   ],
   "releaseAtAuditLimit": true
