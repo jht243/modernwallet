@@ -214,6 +214,9 @@ def validate_manifest(manifest):
 
 def capture(manifest, base, out, dom_dir=None, comparison_only=False):
     validate_manifest(manifest)
+    if dom_dir:
+        missing=[r['path'] for r in manifest['routes'] if not (Path(dom_dir)/r['path'].lstrip('/')/'index.html').is_file()]
+        require(not missing,'--dom-dir is existing hydrated DOM input, not an output directory. Save every route first; omit it for complete server-rendered HTTP HTML. Missing routes: '+', '.join(missing))
     folder=Path(out).with_suffix(''); folder.mkdir(parents=True,exist_ok=True)
     def one(route):
         url=base.rstrip('/')+route['path']
@@ -345,7 +348,7 @@ def record(s, approved, review, commit, host, ledger):
 
 def main():
     parser=argparse.ArgumentParser(); sub=parser.add_subparsers(dest='command',required=True)
-    p=sub.add_parser('capture'); p.add_argument('--manifest',required=True); p.add_argument('--base-url',required=True); p.add_argument('--out',required=True); p.add_argument('--dom-dir')
+    p=sub.add_parser('capture'); p.add_argument('--manifest',required=True); p.add_argument('--base-url',required=True); p.add_argument('--out',required=True); p.add_argument('--dom-dir',help='Existing hydrated DOM input by route; not an output directory. Omit for complete server-rendered HTTP HTML.')
     p=sub.add_parser('check'); p.add_argument('--snapshot',required=True); p.add_argument('--review',required=True); p.add_argument('--recapture',action='store_true')
     p=sub.add_parser('compare'); p.add_argument('--approved',required=True); p.add_argument('--live',required=True); p.add_argument('--review',required=True)
     p=sub.add_parser('record-deployment')

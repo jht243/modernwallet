@@ -152,6 +152,12 @@ def restore_artifacts(checkpoints):
 def finish(intake_path,completion_path,store,owner):
     packet,completion=read(intake_path),read(completion_path)
     require(completion.get('intakeSha256')==digest(intake_path),'Intake changed')
+    # Renew/reacquire this exact immutable job before any expensive recapture.
+    # A failed earlier finish releases its lease; retries must not render first
+    # and discover that ownership was lost only at the acknowledgement step.
+    lease=store.claim_job(packet['site'],owner,Path(intake_path).read_text(encoding='utf-8'))
+    require(lease.get('status')=='claimed','Search job is not available to this invocation; preserve it without repeating render checks')
+    require(lease.get('packetSha256')==digest(intake_path),'Claimed search job differs from the retained intake')
     try:
         decisions=native.validate_completion(packet,completion)
         for decision in decisions:
