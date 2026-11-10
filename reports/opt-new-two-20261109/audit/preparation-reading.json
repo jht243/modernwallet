@@ -1,0 +1,40 @@
+{
+  "reviewer": "fleet-guide-auditor",
+  "jobId": "opt-new-two-wallet-reimbursement-20261109",
+  "runId": "5b818cf326e449799be53e945ccedfde",
+  "contextId": "/root/safe_medication_guide/fleet_guide_auditor",
+  "contextEpoch": 2,
+  "status": "instructions-current-preparation-not-yet-reviewed",
+  "preflight": "reports/opt-new-two-20261109/preflight-auditor-build",
+  "reading": "All28parts delivered once sequentially and read fully; native completeness/freshness check passed. Paused at8/28for requested Safe livehubreview, resumed9/28in same retained epoch. No actual context loss occurred.",
+  "application": {
+    "localPermission": "ModernWallet personalfinance guides and calculator editorial experience licenses source-based explanation, not a tax-planning engagement or executed financial-service test. Use existing site author only, no invented professional review.",
+    "riskBudget": "Actual tax/medical-payment applicability makes HIGH mandatory, consistent with sitehighfloor. Preparation review consumes no content slot; subsequent independent content checks include corrections within3roundsoriginaljob.",
+    "readerIntent": "Approve only a paperwork/process how-to with finite receipt/timing/no-double-claim/submission checklist. No calculator, feature, comparison rewrite or unsupported vendor reimbursement guarantee.",
+    "evidence": "Require actual IRS969/502andNotice2026-5 qualification and timing support, distinguish reimbursement eligibility from HSA contribution eligibility and2026DPCexception. Source-only ordinary article, clear IRS attribution and no TESTEDlabel.",
+    "takeaway": "Collect itemized records, identify qualified service/date/account window, prevent insurance/account/deduction doubleclaim, then check actual administrator requirements. Do not promise reimbursement or represent Opt/membershipasqualified.",
+    "renderedReview": "Complete current native render must retain conditions across intro/table/FAQ/takeaway, truthful byline and dates, deep primary links and bottomdisclaimer. Exact live compare/hostcommit required before closure."
+  },
+  "coverageObservation": {
+    "proposed": "/guides/hsa-fsa-reimbursement-checklist/",
+    "existingHsaTripleTax": "Read actual source record: contributions/benefits/limits/rollover and broad double-count rule. It does not provide receiptfields, FSAservicewindow/substantiation or claimsubmission checklist.",
+    "existingHsaVsFsa": "Read actual source record: choice, investment, annualcontributions and portability. It has save-every-receipt investmentstrategy but no full reimbursement process. Existing employerHDHPrestriction/bothheldprohibition/Medicarealways assertions are material errors outside authorized repair; will not cite them as source for new guide.",
+    "otherNearMatch": "average-hsa-balance-by-age contains InvestNowReimburseYourselfLater and receipt/proof-after-opened-account discussion; remains investment/benchmark intent and no FSA paperwork workflow. Hsa-vs-roth-ira has retirementcomparison intent.",
+    "coverageLimits": "Initial allsrcdataslugscan is lexical candidate discovery, not exact parser or independent public-sitemap proof. Full manifest dedup artifacts/public inventory still need inspection before preparation verdict.",
+    "sourceRefs": [
+      {
+        "path": "src/data/guides.ts",
+        "sha256": "b0a37e1867d190bc1f969297a04b8d458c0fd24681426a0630135f0e9525b3fa"
+      },
+      {
+        "path": "src/data/comparisons.ts",
+        "sha256": "0df4aa3766a2dc4cd25b9ae8b66a36fd4fe3eead1d392a6f47301b53e037dbb8"
+      }
+    ]
+  },
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "findings": []
+}

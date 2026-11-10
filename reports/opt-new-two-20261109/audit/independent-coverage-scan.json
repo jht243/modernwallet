@@ -1,0 +1,238 @@
+{
+  "reviewer": "fleet-guide-auditor",
+  "scope": "All src/data TypeScript slug records scanned for actual HealthSavings/FlexibleSpending/HSAterms. This is source coverage, not proof of public sitemap completeness.",
+  "matches": [
+    {
+      "file": "src/data/spokes-investing.ts",
+      "slug": "withdrawal-calculator",
+      "line": 499,
+      "processTerms": []
+    },
+    {
+      "file": "src/data/roundups.ts",
+      "slug": "best-ira-accounts",
+      "line": 2277,
+      "processTerms": []
+    },
+    {
+      "file": "src/data/roundups.ts",
+      "slug": "best-retirement-accounts-for-self-employed",
+      "line": 3666,
+      "processTerms": [
+        "establish",
+        "administrator"
+      ]
+    },
+    {
+      "file": "src/data/roundups.ts",
+      "slug": "best-estate-planning-software",
+      "line": 4457,
+      "processTerms": [
+        "administrator"
+      ]
+    },
+    {
+      "file": "src/data/roundups-business.ts",
+      "slug": "best-business-credit-cards",
+      "line": 1205,
+      "processTerms": [
+        "establish"
+      ]
+    },
+    {
+      "file": "src/data/spokes-retirement.ts",
+      "slug": "retirement-income-calculator",
+      "line": 445,
+      "processTerms": []
+    },
+    {
+      "file": "src/data/comparisons.ts",
+      "slug": "hsa-vs-hra",
+      "line": 41,
+      "processTerms": [
+        "reimburse"
+      ]
+    },
+    {
+      "file": "src/data/comparisons.ts",
+      "slug": "standard-vs-itemized-deduction",
+      "line": 870,
+      "processTerms": []
+    },
+    {
+      "file": "src/data/comparisons.ts",
+      "slug": "freetaxusa-vs-hr-block",
+      "line": 3492,
+      "processTerms": [
+        "receipt",
+        "reimburse",
+        "establish"
+      ]
+    },
+    {
+      "file": "src/data/comparisons.ts",
+      "slug": "etf-vs-mutual-fund",
+      "line": 5268,
+      "processTerms": []
+    },
+    {
+      "file": "src/data/comparisons.ts",
+      "slug": "hsa-vs-fsa",
+      "line": 5373,
+      "processTerms": [
+        "receipt",
+        "reimburse",
+        "double"
+      ]
+    },
+    {
+      "file": "src/data/comparisons.ts",
+      "slug": "401k-vs-brokerage-account",
+      "line": 10079,
+      "processTerms": [
+        "administrator"
+      ]
+    },
+    {
+      "file": "src/data/comparisons.ts",
+      "slug": "iul-vs-401k",
+      "line": 14901,
+      "processTerms": []
+    },
+    {
+      "file": "src/data/comparisons.ts",
+      "slug": "iul-vs-roth-ira",
+      "line": 15021,
+      "processTerms": []
+    },
+    {
+      "file": "src/data/comparisons.ts",
+      "slug": "hsa-vs-roth-ira",
+      "line": 16333,
+      "processTerms": [
+        "receipt",
+        "reimburse",
+        "establish"
+      ]
+    },
+    {
+      "file": "src/data/comparisons.ts",
+      "slug": "robinhood-vs-fidelity",
+      "line": 19431,
+      "processTerms": []
+    },
+    {
+      "file": "src/data/guides.ts",
+      "slug": "brrrr-method",
+      "line": 550,
+      "processTerms": [
+        "reimburse"
+      ]
+    },
+    {
+      "file": "src/data/guides.ts",
+      "slug": "hsa-triple-tax-advantage",
+      "line": 632,
+      "processTerms": [
+        "double"
+      ]
+    },
+    {
+      "file": "src/data/guides.ts",
+      "slug": "average-retirement-savings-by-age",
+      "line": 878,
+      "processTerms": []
+    },
+    {
+      "file": "src/data/guides.ts",
+      "slug": "tax-tips",
+      "line": 10020,
+      "processTerms": [
+        "double"
+      ]
+    },
+    {
+      "file": "src/data/guides.ts",
+      "slug": "trump-account-alternatives",
+      "line": 11059,
+      "processTerms": []
+    },
+    {
+      "file": "src/data/guides.ts",
+      "slug": "how-to-invest-200k",
+      "line": 13324,
+      "processTerms": []
+    },
+    {
+      "file": "src/data/guides.ts",
+      "slug": "how-to-become-a-401k-millionaire",
+      "line": 13964,
+      "processTerms": [
+        "double"
+      ]
+    },
+    {
+      "file": "src/data/guides.ts",
+      "slug": "common-tax-filing-mistakes",
+      "line": 14786,
+      "processTerms": [
+        "receipt",
+        "double"
+      ]
+    },
+    {
+      "file": "src/data/guides.ts",
+      "slug": "tax-deductions-checklist",
+      "line": 16513,
+      "processTerms": [
+        "receipt"
+      ]
+    },
+    {
+      "file": "src/data/guides.ts",
+      "slug": "average-hsa-balance-by-age",
+      "line": 16847,
+      "processTerms": [
+        "receipt",
+        "reimburse",
+        "administrator"
+      ]
+    },
+    {
+      "file": "src/data/guides.ts",
+      "slug": "tax-free-retirement-account",
+      "line": 17516,
+      "processTerms": [
+        "receipt",
+        "reimburse",
+        "double"
+      ]
+    },
+    {
+      "file": "src/data/guides.ts",
+      "slug": "how-long-will-150k-last-in-retirement",
+      "line": 21637,
+      "processTerms": [
+        "double"
+      ]
+    },
+    {
+      "file": "src/data/guides.ts",
+      "slug": "how-much-will-i-need-to-retire-in-2050",
+      "line": 21827,
+      "processTerms": [
+        "establish",
+        "double"
+      ]
+    },
+    {
+      "file": "src/data/guides.ts",
+      "slug": "how-long-will-my-pension-last",
+      "line": 22804,
+      "processTerms": [
+        "double",
+        "administrator"
+      ]
+    }
+  ]
+}

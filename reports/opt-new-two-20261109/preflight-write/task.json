@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "siteId": "jht243/modernwallet",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "opt-new-two-wallet-reimbursement-20261109",
+  "producer": "safe-medication-guide",
+  "nextAction": "Generate the single approved native reimbursement guide through configured writer. One full generation; retain all provenance. No code/helper/workflow repair, no accountcomparison edits. Then template exact Guide object, minimal newroute sitemapdate declaration, full build and independent rendered HIGH review.",
+  "routes": [
+    "/guides/hsa-fsa-reimbursement-checklist"
+  ],
+  "candidates": [
+    {
+      "path": "reports/opt-new-two-20261109/blobs/96427a5b030552ec2acf765b7511e11bdf01dd147172b11e6ac24c303e25176d/approval-manifest.json",
+      "sha256": "96427a5b030552ec2acf765b7511e11bdf01dd147172b11e6ac24c303e25176d",
+      "originPath": "reports/opt-new-two-20261109/approval-manifest.json"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/b8724f4b3a2cc41de9e0e61f94850efd2bfe75073ec6ee2765d5c87c0f6efaaf/chart-review.json",
+      "sha256": "b8724f4b3a2cc41de9e0e61f94850efd2bfe75073ec6ee2765d5c87c0f6efaaf",
+      "originPath": "reports/opt-new-two-20261109/chart-review.json"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/42ead3bdb9ee23df67b92aed24164b3db29f6c0cc1bcc94fad75beacd0392735/evidence.json",
+      "sha256": "42ead3bdb9ee23df67b92aed24164b3db29f6c0cc1bcc94fad75beacd0392735",
+      "originPath": "reports/opt-new-two-20261109/evidence/hsa-fsa-reimbursement-checklist/evidence.json"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/8953b61eb33665e1c2cb9b0985bc1dc6dc228860b0eb77c15ab4b39053d01b65/system.md",
+      "sha256": "8953b61eb33665e1c2cb9b0985bc1dc6dc228860b0eb77c15ab4b39053d01b65",
+      "originPath": "reports/opt-new-two-20261109/prompts/system.md"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/a42bb8aa217a99d9a7260125e21f91d41e6e16cf8529c22aee03dbdcd4d4174e/hsa-fsa-reimbursement-checklist.prompt.md",
+      "sha256": "a42bb8aa217a99d9a7260125e21f91d41e6e16cf8529c22aee03dbdcd4d4174e",
+      "originPath": "reports/opt-new-two-20261109/prompts/hsa-fsa-reimbursement-checklist.prompt.md"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/5a1b703c59eec83135522d17e42c6f29bd90ba011bd02c872b5252a7648d3437/allowed-urls.txt",
+      "sha256": "5a1b703c59eec83135522d17e42c6f29bd90ba011bd02c872b5252a7648d3437",
+      "originPath": "reports/opt-new-two-20261109/prompts/allowed-urls.txt"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/opt-new-two-20261109/blobs/9078a2a16e287a29fe5eae39f88bb331c8b831ab00ef02e7c04c53a0a93f2e37/inspected-facts.md",
+      "sha256": "9078a2a16e287a29fe5eae39f88bb331c8b831ab00ef02e7c04c53a0a93f2e37",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "IRS source or rule changes before release",
+      "scope": "Federal HSA/FSA paperwork, timing and conditional DPCSA reimbursement",
+      "originPath": "reports/opt-new-two-20261109/research/inspected-facts.md"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "phase0Approval": {
+    "source": "Root explicit user same-as-previous end-to-end publication authority in bounded task; automatic continuation under _mindmap-execution.md.",
+    "approvedManifest": "6f3860edec39d83308e88d80b02824131cada5931ea3a2ef8989a264c842a626"
+  },
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/opt-new-two-20261109/handoff-write.json",
+    "sha256": "5ed683b50c2c1b324c9b70a4e3d250bf2c596ff86246603e3187cb54de855658"
+  }
+}

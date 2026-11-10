@@ -1,0 +1,85 @@
+{
+  "updated": "2026-11-09",
+  "published": "2026-11-09",
+  "slug": "hsa-fsa-reimbursement-checklist",
+  "title": "Health Account Reimbursement Checklist",
+  "metaDescription": "Prepare a health savings account (HSA) or flexible spending account (FSA) claim with itemized records, timing checks and no duplicate reimbursement.",
+  "h1": "Health Account Reimbursement Checklist",
+  "cardBlurb": "",
+  "introText": "To prepare a health account reimbursement claim, match an itemized medical record to your coverage dates, confirm no other plan paid the balance, and follow your account administrator's instructions. A health savings account (HSA) and a health flexible spending arrangement (FSA) handle distributions under different federal tax rules. In the [money guides](/guides/) we publish, our approach starts directly with primary rules from the [Internal Revenue Service (IRS)](https://www.irs.gov/publications/p969).\n\nAn HSA reimburses qualified medical expenses incurred after the account is established under state law. You keep the records with your tax files rather than submitting every receipt to the government. An FSA generally reimburses qualified expenses incurred during your coverage period and requires third-party substantiation. Some qualifying debit-card transactions need no additional information.\n\nNeither account permits double reimbursement. If health insurance or another party paid a portion of the bill, only your remaining out-of-pocket share qualifies for reimbursement. You also cannot claim an itemized medical deduction on Schedule A (Form 1040) for any medical expense paid with tax-free funds from an HSA or an FSA.",
+  "sections": [
+    {
+      "heading": "Reimbursement Checklist Before You File",
+      "body": "Before you request an HSA distribution or submit an FSA claim, walk through these six steps in order:\n\n1. Obtain an itemized bill or provider statement showing the patient name, provider name, date of service, service description, and amount charged.\n2. Verify timing against account rules, confirming your HSA was already established when the expense occurred, or that the expense fell within your active FSA coverage period.\n3. Subtract all insurance payments, provider discounts, and outside reimbursements to calculate your remaining out-of-pocket responsibility.\n4. Check that you have not previously reimbursed this amount through another account or claimed it as an itemized deduction on Schedule A.\n5. Match the claim against your specific account requirements, submitting third-party substantiation for an FSA or logging the records into your tax files for an HSA.\n6. Save the submission confirmation, administrator response, and actual reimbursement record alongside your itemized invoices.\n\nThese checks help you identify duplicate payments and missing records before requesting reimbursement."
+    },
+    {
+      "heading": "Records for Your Reimbursement Checklist",
+      "body": "A complete reimbursement checklist relies on documentation that demonstrates what care was provided, who received it, when it occurred, and how much you paid. Do not rely on a generic payment receipt that only lists a total charge.\n\n| Document field | Practical purpose |\n|---|---|\n| Provider or facility name | Identifies the independent party that delivered the care or medical product |\n| Patient name | Identifies who received the care so you can check beneficiary eligibility |\n| Item or service description | Helps you assess the medical purpose against the applicable account rules |\n| Date of service or purchase | Provides the date to compare with account establishment or coverage dates |\n| Total charge and patient responsibility | Shows the exact unreimbursed dollar amount owed after any adjustments |\n\nFor expenses processed through health insurance, an Explanation of Benefits (EOB) provides helpful documentation. An EOB details what the provider billed, the portion paid by insurance, and your final responsibility. An EOB alone does not serve as proof of payment, so retain your final payment receipt as well.\n\nKeep documentation showing you paid the remaining balance. If an invoice bundles multiple items together, request an itemized statement from your provider so that each individual charge is visible."
+    },
+    {
+      "heading": "HSA Expense Timing and Recordkeeping",
+      "body": "[IRS Publication 969](https://www.irs.gov/publications/p969) states that an HSA can pay or reimburse qualified medical expenses incurred after the account is established. State law determines when an HSA is established, and a rollover account may inherit an earlier establishment date. Contact your HSA custodian if you need to confirm your formal account establishment records.\n\nYou do not mail receipts to the IRS when you withdraw money from an HSA. Instead, you report total distributions on Form 8889 with your annual tax return. [IRS Publication 969](https://www.irs.gov/publications/p969) requires you to keep records in your personal files showing that all distributions paid exclusive qualified medical expenses.\n\nYour HSA records must establish three things:\n\n- The distributions paid or reimbursed qualified medical expenses incurred after the account was established.\n- The medical expenses were not previously paid or reimbursed from another source.\n- You did not claim the expenses as an itemized deduction on Schedule A in any tax year.\n\nExpense timing carries one narrow conditional exception. For a qualifying direct primary care service arrangement (DPCSA), [IRS Notice 2026-5, question 19](https://www.irs.gov/irb/2026-02_IRB) permits three HSA expense dates:\n\n- The first day of each month of coverage, on a pro rata basis.\n- The first day of the coverage period.\n- The date the fees are paid. This rule generally permits reimbursement of substantiated periodic fees before the associated coverage begins, provided the arrangement satisfies all statutory criteria. That flexibility applies strictly to qualifying arrangements under HSA rules and does not alter timing requirements for an FSA."
+    },
+    {
+      "heading": "FSA Coverage and Substantiation",
+      "body": "A health FSA operates under distinct statutory constraints. [IRS Publication 969](https://www.irs.gov/publications/p969) explains that health FSA distributions generally reimburse qualified medical expenses incurred during your actual period of coverage. \n\nAn FSA cannot advance reimburse future or projected expenses. You must receive the medical care before an FSA can issue reimbursement. Plan documents determine whether your employer offers a grace period or carryover provision, so review your plan materials for your specific claim submission deadline.\n\nSubstantiating an FSA claim requires written statements from an independent third party showing that the medical expense was incurred and listing the exact amount. The employee must also provide a written statement confirming the expense has not been paid or reimbursed by any other health plan.\n\nWhen you use an FSA debit card, certain transactions meeting automated substantiation methods do not require additional documentation. Paying with a card does not guarantee that substantiation is complete, and your plan administrator may still request an itemized invoice. Keep your receipts and substantiation confirmations with your claim records."
+    },
+    {
+      "heading": "Membership Fees Need a Separate Check",
+      "body": "Fixed periodic medical membership fees require careful analysis before you submit a claim or withdraw funds. An itemized invoice or provider marketing statement does not automatically transform a nonqualified membership fee into a qualified medical expense.\n\n[IRS Publication 502](https://www.irs.gov/publications/p502) defines medical expenses to include diagnosis, treatment and prevention of disease, and care affecting body structure or function. The medical purpose still has to meet the applicable HSA or FSA rules. Amounts spent for general health improvement are excluded. If an agreement bundles administrative services, wellness benefits, and clinical access together, request an itemized description of included services from the organization to determine what care was delivered.\n\nFor HSA reimbursement, [IRS Notice 2026-5, question 20](https://www.irs.gov/irb/2026-02_IRB) requires solely primary care services from qualifying primary care practitioners. A fixed periodic fee must be the sole compensation for that care. The arrangement cannot include procedures requiring general anesthesia, prescription drugs other than vaccines, or laboratory tests not typically administered in an ambulatory primary care setting.\n\nQuestion 20 notes there is no specific dollar cap on fees eligible for HSA reimbursement under this rule, though contribution eligibility remains separate. Under [IRS Notice 2026-5, question 18](https://www.irs.gov/irb/2026-02_IRB), employer-paid DPCSA fees are not expenses of the HSA beneficiary and cannot be reimbursed from the HSA. This includes DPCSA fees paid through salary reduction under a cafeteria plan. A fee that fails the DPCSA conditions does not qualify under this special HSA reimbursement rule. Separately billed medical services still need their own qualification and timing checks."
+    },
+    {
+      "heading": "Submit One Claim and Save the Result",
+      "body": "To file your claim, follow the specific submission steps provided by your account custodian or third-party administrator. \n\nFor an FSA claim, submit the required third-party statement and no-other-payment certification in the format your administrator requests. For an HSA, follow your custodian's platform instructions to request a distribution.\n\nAfter submitting documentation, retain the following records:\n\n- The submission confirmation number or upload receipt.\n- A copy of all itemized statements and explanations of benefits provided.\n- The administrator's approval or payment statement.\n- The actual reimbursement record.\n\nIf your administrator flags an expense due to missing details, request an itemized invoice directly from your medical provider. A confirmation receipt acknowledges that paperwork was received, but it does not guarantee claim approval or tax-free status."
+    },
+    {
+      "heading": "Finish Your Reimbursement Checklist",
+      "body": "Completing a health account reimbursement requires matching verified documents to applicable tax regulations. Start by assembling the itemized records for a single expense, confirm your account establishment date or coverage window, and verify that no other coverage has paid the bill.\n\nIf an expense involves bundled services, questionable qualification, or incomplete receipts, pause the reimbursement. Review the relevant federal criteria in [IRS Publication 969](https://www.irs.gov/publications/p969) and [IRS Publication 502](https://www.irs.gov/publications/p502) before withdrawing funds or filing claims.\n\nTake the next action on your reimbursement checklist by requesting an itemized invoice for your most recent unreimbursed medical expense and checking your account timing rules."
+    }
+  ],
+  "tools": [
+    {
+      "href": "https://www.irs.gov/publications/p969",
+      "label": "IRS Reimbursement Rules"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I reimburse myself out of my HSA?",
+      "answer": "Yes, you can reimburse yourself out of your HSA for qualified medical expenses incurred after the account was established under state law. You must maintain records showing the expenses were not reimbursed by insurance or other sources and were not claimed as an itemized deduction on your tax return."
+    },
+    {
+      "question": "Does HSA reimbursement require a receipt?",
+      "answer": "IRS rules require sufficient records showing that your HSA distribution paid or reimbursed qualified medical expenses. Keep itemized receipts and other records showing the expense was not paid elsewhere or claimed as an itemized deduction. Keep these with your tax records rather than sending them with your return."
+    },
+    {
+      "question": "Can an FSA reimburse an expense before the service happens?",
+      "answer": "No, an FSA cannot advance reimburse future or projected expenses. Under IRS Publication 969, expenses are only eligible for FSA reimbursement after the medical care has actually been provided during your active coverage period."
+    },
+    {
+      "question": "Can I reimburse a medical membership fee?",
+      "answer": "Check the services, payment source and applicable account rules before reimbursing a membership fee. For an HSA, a qualifying DPCSA must meet the primary-care and sole fixed-fee conditions in [IRS Notice 2026-5, question 20](https://www.irs.gov/irb/2026-02_IRB). Question 19 generally permits substantiated HSA reimbursement before qualifying DPCSA coverage begins. Question 18 excludes employer-paid DPCSA fees, including fees paid through salary reduction. That exclusion concerns payment of the DPCSA fee and does not prohibit reimbursement merely because an employer contributed money to the HSA."
+    }
+  ],
+  "sources": [
+    {
+      "label": "IRS Publication 969, Health Savings Accounts and Other Tax-Favored Health Plans",
+      "url": "https://www.irs.gov/publications/p969"
+    },
+    {
+      "label": "IRS Publication 502, Medical and Dental Expenses",
+      "url": "https://www.irs.gov/publications/p502"
+    },
+    {
+      "label": "IRS Notice 2026-5, Internal Revenue Bulletin 2026-02",
+      "url": "https://www.irs.gov/irb/2026-02_IRB"
+    }
+  ],
+  "disclaimerText": "This guide provides general educational federal tax information. Individual plan rules and account terms differ. Confirm specific expense qualification and substantiation requirements with your plan administrator or a qualified tax professional.",
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

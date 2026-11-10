@@ -1,0 +1,66 @@
+{
+ "keyword": "hsa reimbursement",
+ "verdict": "locked",
+ "forum_dominated": false,
+ "ai_overview_present": true,
+ "ai_overview_cited_domains": [
+  "www.fidelity.com",
+  "www.optum.com",
+  "livelyme.com",
+  "www.alliancebenefits.org",
+  "www.cigna.com",
+  "google.com",
+  "www.empower.com"
+ ],
+ "featured_snippet": null,
+ "top10_domains": [
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com"
+ ],
+ "major_domains": [
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com",
+  "google.com"
+ ],
+ "forum_domains": [],
+ "serp_feature_mix": {
+  "ai_overview": 1,
+  "images": 1,
+  "organic": 8,
+  "people_also_ask": 1,
+  "product_considerations": 1,
+  "related_searches": 1
+ },
+ "paa": [
+  "Can I reimburse myself out of my HSA?",
+  "Are humidifiers HSA eligible?",
+  "Should I use my HSA or save it?",
+  "What surprising things are HSA eligible for?",
+  "What is the HSA loophole?",
+  "What cool stuff can I buy with HSA?"
+ ],
+ "related_searches": [
+  "Hsa reimbursement form",
+  "Hsa reimbursement reddit",
+  "How does HSA work with insurance",
+  "How to use HSA reimbursement",
+  "How does an HSA work when I Go to the doctor",
+  "Can you use HSA for health insurance premiums after retirement",
+  "HSA tax deduction example",
+  "Where does HSA money come from"
+ ],
+ "recommended_shape": "standard article/guide is viable",
+ "evidence": "8/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites www.fidelity.com, www.optum.com, livelyme.com, www.alliancebenefits.org",
+ "se_results_count": 113
+}

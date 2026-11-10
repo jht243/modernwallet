@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "siteId": "jht243/modernwallet",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "opt-new-two-wallet-reimbursement-20261109",
+  "producer": "safe-medication-guide",
+  "nextAction": "Independently review complete preparation for one bounded reimbursement paperworkguide. Confirm exactintentdedup/sourcecounterexamples/labels/nativefields. No content drafted yet; do not reserve editorial contentround.",
+  "routes": [
+    "/guides/hsa-fsa-reimbursement-checklist"
+  ],
+  "candidates": [
+    {
+      "path": "reports/opt-new-two-20261109/blobs/0f90f9c5fc4bd14a9d3daf04be67416b8cd8a9cdd275d6c232d344de29cb5b1f/approval-manifest.json",
+      "sha256": "0f90f9c5fc4bd14a9d3daf04be67416b8cd8a9cdd275d6c232d344de29cb5b1f",
+      "originPath": "reports/opt-new-two-20261109/approval-manifest.json"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/acd117430bfdcff4f647b0ba9dfd7d9f81a1e6ca3a8500d49617bc0576e16d98/readiness.md",
+      "sha256": "acd117430bfdcff4f647b0ba9dfd7d9f81a1e6ca3a8500d49617bc0576e16d98",
+      "originPath": "reports/opt-new-two-20261109/readiness.md"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/290df0c4941f0dadb390ed3d0f0f267c3d774e1dfdfaeb62a9ccfe1923a6cc5b/application.json",
+      "sha256": "290df0c4941f0dadb390ed3d0f0f267c3d774e1dfdfaeb62a9ccfe1923a6cc5b",
+      "originPath": "reports/opt-new-two-20261109/application.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/opt-new-two-20261109/blobs/9078a2a16e287a29fe5eae39f88bb331c8b831ab00ef02e7c04c53a0a93f2e37/inspected-facts.md",
+      "sha256": "9078a2a16e287a29fe5eae39f88bb331c8b831ab00ef02e7c04c53a0a93f2e37",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "IRS source or rule changes before release",
+      "scope": "Federal HSA/FSA paperwork, timing and conditional DPCSA reimbursement",
+      "originPath": "reports/opt-new-two-20261109/research/inspected-facts.md"
+    }
+  ],
+  "findings": [],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  }
+}

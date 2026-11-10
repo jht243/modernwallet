@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "jobId": "opt-new-two-wallet-reimbursement-20261109",
+  "author": "safe-medication-guide",
+  "date": "2026-11-09",
+  "source": "Explicit root bounded twofleetguide instruction and existing same-as-previous endtoendpublicationauthority; compactPhase3/4.",
+  "interpretedBrief": "One absent paperwork/process guide for medical reimbursement from existing US HSA/FSA, no comparisonrewrite/features/individualtaxdeterminations.",
+  "chartPath": "reports/opt-new-two-20261109/chart.md",
+  "actions": [
+    {
+      "id": "W1",
+      "problem": "lookup: strongest existing matches answer account choice or HSA taxbenefits, not documentation. No receipt/reimbursement steps in HSAguide; no target history.",
+      "solution": "Create one plain native paperwork guide with finite checklist and primary IRS support.",
+      "bucket": "create new content",
+      "target": "/guides/hsa-fsa-reimbursement-checklist",
+      "format": "article",
+      "best_medium": "text",
+      "resolved_deliverable": "text",
+      "serp_verdict": "unread",
+      "serp_evidence": "Raw SERP8organic google proxy domains cannot support auto lockedclassification; 1/6PAA practical reimbursement,5offscope.45realquestion completions include receipt/submission/timing.",
+      "reader_question": "How do I prepare an HSA or FSA reimbursement claim? [PAA 1/6 on-topic; 5/6 off-topic eligibility/shopping/saving; ac receipt, submission and timing completions]",
+      "answer": "method: gather itemized records, identify HSA establishment or FSA coverage timing, verify qualified unreimbursed costs, retain or submit substantiation using actual account instructions.",
+      "answer_placement": "section 1: Reimbursement Checklist Before You File",
+      "reviewProfile": "high",
+      "claimCategories": [
+        "financial",
+        "legal"
+      ]
+    }
+  ],
+  "newPageBriefs": [
+    {
+      "actionId": "W1",
+      "target": "/guides/hsa-fsa-reimbursement-checklist",
+      "identity": {
+        "title": "Health Account Reimbursement Checklist",
+        "metaTitle": "Health Account Reimbursement Checklist for Medical Costs",
+        "description": "Prepare a health savings account (HSA) or flexible spending account (FSA) claim with itemized records, timing checks and no duplicate reimbursement.",
+        "pageType": "explainer",
+        "format": "article",
+        "medium": "text"
+      },
+      "readerAndAnswer": {
+        "question": "How do I prepare an HSA or FSA reimbursement claim? [PAA 1/6 on-topic; 5/6 off-topic eligibility/shopping/saving; ac receipt, submission and timing completions]",
+        "answer": "method: gather itemized records, identify HSA establishment or FSA coverage timing, verify qualified unreimbursed costs, retain or submit substantiation using actual account instructions.",
+        "placement": "section 1: Reimbursement Checklist Before You File",
+        "audience": "US account holders organizing medical expense reimbursement",
+        "intent": "Practical paperwork method"
+      },
+      "keywordEvidence": {
+        "path": "reports/opt-new-two-20261109/research/keywords.json",
+        "sha256": "621dd5405dd57bb4f49b5e9410b0f80cd3467a55581db3364b80cb249cd2f14a"
+      },
+      "serpAndQuestions": {
+        "serp": {
+          "path": "reports/opt-new-two-20261109/research/serp.json",
+          "sha256": "b444b8db6839e7a63ab697eabd20b1a91b635f1d47ff740f38a31869b22ca3ce"
+        },
+        "autocomplete": {
+          "path": "reports/opt-new-two-20261109/research/autocomplete.csv",
+          "sha256": "77d79ed6d94cedae8f2817e626f76a9779480b52b9cad0a969a4e1688d4e200d"
+        },
+        "primary": "reimbursement checklist20/mo KD0 SEMrushUS2026-11-09",
+        "supporting": "hsa reimbursement1600/mo KD36; fsa reimbursement1300/mo KD55, SEMrushUS",
+        "questions": [
+          "Can I reimburse myself out of my HSA?",
+          "Does HSA reimbursement require a receipt?",
+          "When can I submit an HSA reimbursement?"
+        ],
+        "limits": "Eligibility/shopping/saving PAA excluded because they expand into unrelated account/treatmentchoices."
+      },
+      "whyNewPage": {
+        "coverage": {
+          "path": "reports/opt-new-two-20261109/coverage.txt",
+          "sha256": "1abcbc164e58726380301d1ad6b2faa732d04e179d63fef73465df5df7a78475"
+        },
+        "strongestMatches": [
+          "/compare/hsa-vs-fsa/ chooses accounts with existing material wrongclaims, not rewritten.",
+          "/guides/hsa-triple-tax-advantage/ benefits/contributionlimits;0receipt or reimbursement mentions in body, separate intent.",
+          "/guides/average-hsa-balance-by-age/ has a delayed-reimbursement investing paragraph and receipt reference, but not a combined HSA/FSA substantiation, coverage-window, itemization and submission workflow. No investment advice or repair in this task."
+        ],
+        "inspection": {
+          "path": "reports/opt-new-two-20261109/research/hsa-existing-guide.json",
+          "sha256": "569ec98e8a06d98ca7eba07d65be04024801f430230d6c33f1fec7eb131620f6"
+        },
+        "history": "No target history or redirects found; no same-run overlap.",
+        "noAddition": "No complete exact-intent paperwork home exists.",
+        "additionalInspection": {
+          "path": "reports/opt-new-two-20261109/research/average-hsa-balance-inspection.txt",
+          "sha256": "4d42cf56c2e00ffe86ce2da722858582fd1ed5c7e2ff30d489d14a274f7f88fd"
+        }
+      },
+      "outline": [
+        {
+          "heading": "Reimbursement Checklist Before You File",
+          "purpose": "Give complete ordered record/timing/payment/submission sequence immediately."
+        },
+        {
+          "heading": "Records for Your Reimbursement Checklist",
+          "purpose": "Finite2column receipt fields/why; proofpayment and EOB conditions."
+        },
+        {
+          "heading": "HSA Expense Timing and Recordkeeping",
+          "purpose": "Afterestablishment, qualifiedunreimbursed, noitemizedduplicate, records vs filing; conditionalDPCtimingexception."
+        },
+        {
+          "heading": "FSA Coverage and Substantiation",
+          "purpose": "Actualcoverageperiod, independentthirdparty statement, notfuture/projected, actualplan filingdeadline and possiblecard exceptions."
+        },
+        {
+          "heading": "Membership Fees Need a Separate Check",
+          "purpose": "Itemization notqualification; exactconditionalDPCdefinition, Q19/Q20limits, noOptassumptions."
+        },
+        {
+          "heading": "Submit One Claim and Save the Result",
+          "purpose": "Followactualportal/custodian, retainconfirmations, resolvemissingproof withoutguarantees."
+        },
+        {
+          "heading": "Finish Your Reimbursement Checklist",
+          "purpose": "Source-based nextaction; pauseuncertain qualification, scopeaccountchooser excluded."
+        }
+      ],
+      "contributionAndEvidence": {
+        "path": "reports/opt-new-two-20261109/evidence/hsa-fsa-reimbursement-checklist/evidence.json",
+        "sha256": "42ead3bdb9ee23df67b92aed24164b3db29f6c0cc1bcc94fad75beacd0392735"
+      },
+      "tablesToolsVisuals": "Plain on-page checklist plus receiptfield/purpose table; no toolbuild, download or customUI. Native reference pill links IRS969.",
+      "testingAndReview": "Source-only financial howto excluded from TESTED; HIGH3roundceiling independentauditor. Reuse nativeJonathanVelezwithoutinventedprofessionalreview.",
+      "takeaway": "Use actual expense records, account timing and prior payment checks before claim. A membership invoice alone cannot establish eligibility; actual qualifiedDPCexception is conditional.",
+      "inboundLinks": {
+        "required": 1,
+        "placements": [
+          {
+            "source": "/guides/",
+            "target": "/guides/hsa-fsa-reimbursement-checklist",
+            "section": "Native GUIDES card collection",
+            "anchor": "Health Account Reimbursement Checklist",
+            "purpose": "Find actual medical expense records process among native guides",
+            "inspection": {
+              "path": "reports/opt-new-two-20261109/research/link-inspection-guides-index.astro",
+              "sha256": "90e5aae0b880601c6df5da235e4bba1b70389364e5d1e94fba59cf0d30a4eff3"
+            }
+          }
+        ]
+      },
+      "outboundLinks": {
+        "placements": [
+          {
+            "source": "/guides/hsa-fsa-reimbursement-checklist",
+            "target": "/guides/",
+            "section": "Further financial guides",
+            "anchor": "money guides",
+            "purpose": "Return to broader native guide hub without linking materially incorrect accountcomparison advice",
+            "inspection": {
+              "path": "reports/opt-new-two-20261109/research/link-inspection-guides-index.astro",
+              "sha256": "90e5aae0b880601c6df5da235e4bba1b70389364e5d1e94fba59cf0d30a4eff3"
+            }
+          }
+        ]
+      },
+      "technicalAndMeasurement": "UnchangedAstroGuide and schema/nativebuild. Auto /guides/ card, sitemapintegration, WWWselfcanonical, published/updatedNov9. Preserve normal generalguide sitemap no-lastmod exception, no configrepair. Real hostcommit and exactreviewlive200 thenIndexNow; newrouteunavailablebaseline.",
+      "evidenceFiles": [
+        {
+          "path": "reports/opt-new-two-20261109/evidence/hsa-fsa-reimbursement-checklist/evidence.json",
+          "sha256": "42ead3bdb9ee23df67b92aed24164b3db29f6c0cc1bcc94fad75beacd0392735"
+        },
+        {
+          "path": "reports/opt-new-two-20261109/research/inspected-facts.md",
+          "sha256": "9078a2a16e287a29fe5eae39f88bb331c8b831ab00ef02e7c04c53a0a93f2e37"
+        }
+      ]
+    }
+  ],
+  "preparation": {
+    "status": "PASS",
+    "readiness": {
+      "path": "reports/opt-new-two-20261109/readiness.md",
+      "sha256": "acd117430bfdcff4f647b0ba9dfd7d9f81a1e6ca3a8500d49617bc0576e16d98"
+    }
+  },
+  "evidenceFiles": [
+    {
+      "path": "reports/opt-new-two-20261109/evidence/hsa-fsa-reimbursement-checklist/evidence.json",
+      "sha256": "42ead3bdb9ee23df67b92aed24164b3db29f6c0cc1bcc94fad75beacd0392735"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/research/inspected-facts.md",
+      "sha256": "9078a2a16e287a29fe5eae39f88bb331c8b831ab00ef02e7c04c53a0a93f2e37"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/application.json",
+      "sha256": "290df0c4941f0dadb390ed3d0f0f267c3d774e1dfdfaeb62a9ccfe1923a6cc5b"
+    }
+  ],
+  "emergingClusters": [
+    "No broader clusters explored; user expressly bounded one needed paperwork destination."
+  ],
+  "exclusions": [
+    "No comparison repair, accountcontributionadvice, numericalcaps/tables, treatmenteligibility, Opt invoicepromises, inventedLMNrules or calculator/toolbuild."
+  ],
+  "executionPlan": [
+    {
+      "phase": 1,
+      "action": "No consolidationedit."
+    },
+    {
+      "phase": 2,
+      "action": "Newguide metadataonly."
+    },
+    {
+      "phase": 3,
+      "action": "Generate one native guide from closed primary facts."
+    },
+    {
+      "phase": 4,
+      "action": "Independently review exact final rendered guide and native indexcard."
+    },
+    {
+      "phase": 5,
+      "action": "No existing bodyexpansion."
+    },
+    {
+      "phase": 6,
+      "action": "Use auto guideindex inbound; no forced links."
+    },
+    {
+      "phase": 7,
+      "action": "Use native sitemap output and prepare verifiedURLlist."
+    },
+    {
+      "phase": 8,
+      "action": "Record actual results and limitations."
+    },
+    {
+      "phase": 9,
+      "action": "Publish only owned reviewedsource/records, verify hostcommit200exactrender, thenIndexNow."
+    }
+  ],
+  "publicationScope": {
+    "commit": true,
+    "push": true,
+    "liveVerification": true,
+    "indexNow": true
+  }
+}

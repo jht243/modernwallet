@@ -1,0 +1,170 @@
+{
+  "revision": "9e3ab1c955dfa2e49bd75ba2c4c112fc5827c2ec",
+  "localHead": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+  "headIsPublishedAncestor": true,
+  "proof": [
+    {
+      "path": "evidence/how-to-make-a-financial-plan/cases.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "aa38ed0b62dceaf572a12a4e4d1cc117b5c1bf31"
+    },
+    {
+      "path": "evidence/how-to-make-a-financial-plan/evidence.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "5b1065e765de909a35b6ef32de61a2876aa21c6a"
+    },
+    {
+      "path": "evidence/how-to-make-a-financial-plan/growth.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "bfda1e4b561ae6ad7c3417c62b1ee829d9eeca23"
+    },
+    {
+      "path": "evidence/how-to-make-a-financial-plan/sources.md",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "f234ad8cee75e65e34f6378eb6eb1dbbd74d2de4"
+    },
+    {
+      "path": "evidence/questions-to-ask-a-financial-advisor/cases.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "9b9484acb5bed67089f7541a0fdbf734f333848e"
+    },
+    {
+      "path": "evidence/questions-to-ask-a-financial-advisor/evidence.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "0fd01c40744f3df43f0b6adf537ba8d6e17309ac"
+    },
+    {
+      "path": "evidence/questions-to-ask-a-financial-advisor/growth.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "11776a904207ba686a0cb55d181f9d6fb2185398"
+    },
+    {
+      "path": "evidence/questions-to-ask-a-financial-advisor/sources.md",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "46c5c801c342456c5be2293a203193b9cf122623"
+    },
+    {
+      "path": "evidence/what-does-a-financial-advisor-do/cases.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "265495732b5d1982f1441c6440689b43e70fe773"
+    },
+    {
+      "path": "evidence/what-does-a-financial-advisor-do/evidence.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "eb229824923366b738793bce82de60c46d35a503"
+    },
+    {
+      "path": "evidence/what-does-a-financial-advisor-do/growth.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "603d3b6166cba9780258e2cc00febd163145e1f6"
+    },
+    {
+      "path": "evidence/what-does-a-financial-advisor-do/sources.md",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "12d3043d42a0699051bd652a5cad3d73237cc97a"
+    },
+    {
+      "path": "evidence/what-is-a-cfp/cases.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "a85d85502104706d33cf3718c0f93364ae85e3de"
+    },
+    {
+      "path": "evidence/what-is-a-cfp/evidence.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "32cfc8b24de2b5f28270bf0a281ebd89c97f8859"
+    },
+    {
+      "path": "evidence/what-is-a-cfp/growth.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "7719754159e8a84791131c541bde5f34d80430e0"
+    },
+    {
+      "path": "evidence/what-is-a-cfp/sources.md",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "640131bb3ad29bf40b8bbdec2dc1968a14d33c48"
+    },
+    {
+      "path": "evidence/what-is-a-fiduciary/cases.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "7f6e0986fadb26be7ed55c71a715e3782be61ab4"
+    },
+    {
+      "path": "evidence/what-is-a-fiduciary/evidence.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "afc390e4ffc996d5fa6f4e6529d7d1deae1efe9d"
+    },
+    {
+      "path": "evidence/what-is-a-fiduciary/growth.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "f8e765008cd79522d44cbb1c1a6621470b3b1a2a"
+    },
+    {
+      "path": "evidence/what-is-a-fiduciary/sources.md",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "fa85eedce31211cdf10f0a0003196c289c187163"
+    },
+    {
+      "path": "evidence/what-is-a-robo-advisor/cases.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "7545095bee9e26be051014356de81d2db8ebf35b"
+    },
+    {
+      "path": "evidence/what-is-a-robo-advisor/evidence.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "b9bc485baa93590c32cc8eee014e4ef288cec816"
+    },
+    {
+      "path": "evidence/what-is-a-robo-advisor/growth.json",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "e85a50f582906efcf3d5072ecdda938679b96f9a"
+    },
+    {
+      "path": "evidence/what-is-a-robo-advisor/sources.md",
+      "localBlob": null,
+      "publishedAncestor": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+      "targetBlob": "05873af937d28121fe73d711444108714d6162b1"
+    },
+    {
+      "path": "src/data/comparisons.ts",
+      "localBlob": "ab30fa440f9eff6968b81acf92296c94fe9fc14e",
+      "publishedAncestor": "8ac665ad24f6a8949e7c23f46d7d1395f403f546",
+      "targetBlob": "711e4782fd113a51b3851c1614f5affac03cf1db"
+    },
+    {
+      "path": "src/data/guides.ts",
+      "localBlob": "ef39bce2fd46d995b79d214ab675e2289ead743e",
+      "publishedAncestor": "8ac665ad24f6a8949e7c23f46d7d1395f403f546",
+      "targetBlob": "c21c19accf87a42802e05e0d59cdc532482334ec"
+    },
+    {
+      "path": "src/data/roundups.ts",
+      "localBlob": "5e9c061151582d2db6933a5b36ea2acc7b0d4ef3",
+      "publishedAncestor": "2990507f1f00d18017a1c4521cfe71d0f2d83c69",
+      "targetBlob": "18fcbf104a00d307dfaafe5f7fdbc1c6b5ec1027"
+    }
+  ],
+  "blocked": []
+}

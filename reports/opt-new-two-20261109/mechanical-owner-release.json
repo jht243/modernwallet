@@ -1,0 +1,17 @@
+{
+  "basis": "Owner-authorized release; mechanical equality only, no independent final PASS",
+  "routes": [
+    {
+      "path": "/guides/hsa-fsa-reimbursement-checklist/",
+      "status": 200,
+      "fingerprint": "af8c081dd5ac411889fc333d7523404dc497f5482b8249066209e695a578a1c7",
+      "matchesRetainedCandidate": true
+    },
+    {
+      "path": "/guides/",
+      "status": 200,
+      "fingerprint": "9d8402e051992ff7d1e1b0da2fbf8baeb9ccc9e2e76bfe4986ba28728e7eae6f",
+      "matchesRetainedCandidate": true
+    }
+  ]
+}

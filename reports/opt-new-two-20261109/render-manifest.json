@@ -1,0 +1,37 @@
+{
+  "author": "safe-medication-guide",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "workflowKind": "mindmap-pass",
+  "routes": [
+    {
+      "path": "/guides/hsa-fsa-reimbursement-checklist/",
+      "expectedUpdatedDate": "2026-11-09",
+      "requiredText": [
+        "Health Account Reimbursement Checklist"
+      ],
+      "forbiddenText": [
+        "We tested",
+        "clinically reviewed",
+        "guaranteed reimbursement"
+      ],
+      "growthFile": "reports/opt-new-two-20261109/evidence/hsa-fsa-reimbursement-checklist/growth.json",
+      "evidenceFile": "reports/opt-new-two-20261109/evidence/hsa-fsa-reimbursement-checklist/evidence.json",
+      "reviewProfile": "high",
+      "claimCategories": [
+        "financial",
+        "legal"
+      ]
+    },
+    {
+      "path": "/guides/",
+      "requiredText": [
+        "Health Account Reimbursement Checklist"
+      ],
+      "reviewProfile": "high",
+      "claimCategories": [
+        "financial"
+      ],
+      "datePolicyException": "Automatically changed native collection card only; no article editorial date or Article schema, no date bump on collection."
+    }
+  ]
+}

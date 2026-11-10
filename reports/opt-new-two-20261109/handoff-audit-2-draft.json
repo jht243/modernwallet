@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "siteId": "jht243/modernwallet",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "opt-new-two-wallet-reimbursement-20261109",
+  "producer": "safe-medication-guide",
+  "nextAction": "Second HIGH review of exact corrected main guide after native fix11/12 and exact independent Rung1 FAQ replacement for false source-number guard. Full native rebuild and new capture complete. Preserve unchanged index PASS, freshly recaptured after fix. No regeneration or helper repair. Resolve actual12IDs explicitly if supported; remaining mainbudget2/3.",
+  "routes": [
+    "/guides/hsa-fsa-reimbursement-checklist"
+  ],
+  "candidates": [
+    {
+      "path": "reports/opt-new-two-20261109/candidate-native.json",
+      "sha256": "2be61d923f8ddaf810562474e034f73f22d7e2a072e9cd03d060234d82193aa9"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/snapshot-2.json",
+      "sha256": "2689a364850626539ca3d4227b7c4c8551d88ecd5f332da3936d93b009916188"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/audit/rung1-verbatim-F02.json",
+      "sha256": "1c03add4ff06ca538014d30d10509160d94da943b306ff50acd39220a95182e9"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/fix-1.log",
+      "sha256": "4788e022982c5db4f5bac3ad9ff4d090007e0af94524e35019211924056d5c55"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/mechanical-fix-templating.json",
+      "sha256": "ef7fc003ffa4704c2687770e397d0f8dfcebc2d2c9f5fbd9289b6516073125b6"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/audit/index-approved-review-1.json",
+      "sha256": "f77c99bb363fec6c2139fcc040c3380f9585de29a000f34917ecde5b19b32713"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/opt-new-two-20261109/blobs/9078a2a16e287a29fe5eae39f88bb331c8b831ab00ef02e7c04c53a0a93f2e37/inspected-facts.md",
+      "sha256": "9078a2a16e287a29fe5eae39f88bb331c8b831ab00ef02e7c04c53a0a93f2e37",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "IRS source or rule changes before release",
+      "scope": "Federal HSA/FSA paperwork, timing and conditional DPCSA reimbursement",
+      "originPath": "reports/opt-new-two-20261109/research/inspected-facts.md"
+    }
+  ],
+  "findings": [
+    {
+      "id": "W1-F01",
+      "status": "open",
+      "quote": "Yes, IRS rules require you to keep receipts and documentation showing your distributions were used exclusively to pay or reimburse qualified medical expenses. You do not submit these receipts with your tax return, but you must retain them in your tax records to substantiate distributions reported on Form 8889.",
+      "replacement": "IRS rules require sufficient records showing that your HSA distribution paid or reimbursed qualified medical expenses. Keep itemized receipts and other records showing the expense was not paid elsewhere or claimed as an itemized deduction. Keep these with your tax records rather than sending them with your return.",
+      "evidence": "IRS969requires sufficient records, not a universal receipt-specific mandate. The categorical Yes changes a useful record recommendation into a false statutory requirement.",
+      "source": "IRS969 Recordkeeping; closedF03/F04"
+    },
+    {
+      "id": "W1-F02",
+      "status": "open",
+      "quote": "A medical membership fee can only be reimbursed if it meets specific federal tax criteria. Fees for general health improvement or arrangements paid by employer contributions do not qualify.",
+      "replacement": "Check the services, payment source and applicable account rules before reimbursing a membership fee. For an HSA, a qualifying DPCSA must meet the primary-care and sole fixed-fee conditions in [IRS Notice 2026-5, question 20](https://www.irs.gov/irb/2026-02_IRB). Question 19 generally permits substantiated HSA reimbursement before qualifying DPCSA coverage begins. Question 18 excludes employer-paid DPCSA fees, including fees paid through salary reduction. That exclusion concerns payment of the DPCSA fee and does not prohibit reimbursement merely because an employer contributed money to the HSA.",
+      "evidence": "Current FAQconfuses employer-paidDPCSAfees with employerHSAcontributions and drops material conditionalDPCqualification/timing. Narrow to actualQ18/Q19/Q20distinction.",
+      "source": "IRSNotice2026-5Q18-Q20; IRS969 HSAbenefits; closedF23-F26"
+    },
+    {
+      "id": "W1-F03",
+      "status": "open",
+      "quote": "For an HSA, question 20 of [IRS Notice 2026-5, Internal Revenue Bulletin 2026-02](https://www.irs.gov/irb/2026-02_IRB) defines a qualifying DPCSA as an arrangement where an individual receives solely primary care medical services provided by qualifying primary care practitioners in exchange for a fixed periodic fee.",
+      "replacement": "For HSA reimbursement, [IRS Notice 2026-5, question 20](https://www.irs.gov/irb/2026-02_IRB) requires solely primary care services from qualifying primary care practitioners. A fixed periodic fee must be the sole compensation for that care.",
+      "evidence": "The42worddefinition omits solecompensation, a material statutory condition. Fixedfee in exchangeforcare is insufficient if care is separately billed. Two precise sentences preserve all approvedmeaning.",
+      "source": "Notice2026-5Q20; closedF23"
+    },
+    {
+      "id": "W1-F04",
+      "status": "open",
+      "quote": "If an arrangement fails to satisfy these conditions, the fee does not qualify for tax-free reimbursement.",
+      "replacement": "A fee that fails the DPCSA conditions does not qualify under this special HSA reimbursement rule. Separately billed medical services still need their own qualification and timing checks.",
+      "evidence": "Avoid a universal denial of every medical membership/service under every applicable account rule. Define the actual limit of the specialDPCrule and retain approvedseparatelybilledservicequalificationcondition.",
+      "source": "NoticeQ20; closedF22-F25"
+    },
+    {
+      "id": "W1-F05",
+      "status": "open",
+      "quote": "Under [IRS Notice 2026-5, Internal Revenue Bulletin 2026-02](https://www.irs.gov/irb/2026-02_IRB), question 19 explains that an HSA may treat a substantiated fee for a qualifying direct primary care service arrangement (DPCSA) as incurred on the first day of each month pro rata, the first day of the coverage period, or the date the fee is paid.",
+      "replacement": "For a qualifying direct primary care service arrangement (DPCSA), [IRS Notice 2026-5, question 19](https://www.irs.gov/irb/2026-02_IRB) permits three HSA expense dates:\n\n- The first day of each month of coverage, on a pro rata basis.\n- The first day of the coverage period.\n- The date the fees are paid.\n",
+      "evidence": "This53wordsentenceburies three consequential alternative dates. Use the existing list-capable body to make the actual alternatives readable without new facts or a newsection.",
+      "source": "_anti-ai-language overloadedsentence; NoticeQ19"
+    },
+    {
+      "id": "W1-F06",
+      "status": "open",
+      "quote": "Question 18 of [IRS Notice 2026-5, Internal Revenue Bulletin 2026-02](https://www.irs.gov/irb/2026-02_IRB) notes that employer-paid DPCSA fees, including salary reduction contributions under a cafeteria plan, are not considered beneficiary-paid expenses and cannot be reimbursed from an HSA.",
+      "replacement": "Under [IRS Notice 2026-5, question 18](https://www.irs.gov/irb/2026-02_IRB), employer-paid DPCSA fees are not expenses of the HSA beneficiary and cannot be reimbursed from the HSA. This includes DPCSA fees paid through salary reduction under a cafeteria plan.",
+      "evidence": "Specify employer payment of the actualDPCSAfee rather than ambiguous salary-reductioncontributions that could mean HSAfunding. Splitting the35wordcitationstack also makes the source condition readable.",
+      "source": "NoticeQ18; closedF26"
+    },
+    {
+      "id": "W1-F07",
+      "status": "open",
+      "quote": "An FSA reimburses qualified expenses incurred during your actual period of coverage and requires written substantiation from an independent third party before payment.",
+      "replacement": "An FSA generally reimburses qualified expenses incurred during your coverage period and requires third-party substantiation. Some qualifying debit-card transactions need no additional information.",
+      "evidence": "Top answer must preserve the material card-substantiationexception already correctly stated later, rather than imply everypayment requires a separate written claim beforehand.",
+      "source": "IRS969 FSA Distributions; closedF06-F09"
+    },
+    {
+      "id": "W1-F08",
+      "status": "open",
+      "quote": "| Document field | Practical purpose |\n|---|---|\n| Provider or facility name | Identifies the independent party that delivered the care or medical product |\n| Patient name | Shows the expense was incurred for an eligible individual |\n| Item or service description | Establishes whether the expense represents diagnosis, cure, mitigation, treatment, or prevention of disease |\n| Date of service or purchase | Confirms the expense occurred within the allowable HSA or FSA timing window |\n| Total charge and patient responsibility | Shows the exact unreimbursed dollar amount owed after any adjustments |",
+      "replacement": "| Document field | Practical purpose |\n|---|---|\n| Provider or facility name | Identifies the independent party that delivered the care or medical product |\n| Patient name | Identifies who received the care so you can check beneficiary eligibility |\n| Item or service description | Helps you assess the medical purpose against the applicable account rules |\n| Date of service or purchase | Provides the date to compare with account establishment or coverage dates |\n| Total charge and patient responsibility | Shows the exact unreimbursed dollar amount owed after any adjustments |",
+      "evidence": "Names/descriptions/dates are useful records but do not independently establish eligibleperson, medicalpurpose or accounttiming. Keep tablefieldpurpose conditional and consistent with invoice-not-eligibility finding.",
+      "source": "IRS969 qualification/records; IRS502 medicaldefinition; closedF16/F21"
+    },
+    {
+      "id": "W1-F09",
+      "status": "open",
+      "quote": "Taking these steps in sequence prevents duplicate claims and ensures your records align with federal tax rules.",
+      "replacement": "These checks help you identify duplicate payments and missing records before requesting reimbursement.",
+      "evidence": "The steps support checking; they cannot guarantee prevention or taxcompliance for everyexpense or plan.",
+      "source": "closedF18/F19/F27"
+    },
+    {
+      "id": "W1-F10",
+      "status": "open",
+      "quote": "Always save your receipts until your administrator confirms the expense is approved.",
+      "replacement": "Keep your receipts and substantiation confirmations with your claim records.",
+      "evidence": "Approval is not a supported enddate for keeping records. The sources and brief do not establish a universal retentionperiod or permission to discard records afterapproval.",
+      "source": "closedF04/F19"
+    },
+    {
+      "id": "W1-F11",
+      "status": "open",
+      "quote": "[IRS Publication 502](https://www.irs.gov/publications/p502) clarifies that expenses qualifying for tax-free medical spending are those paid for the diagnosis, cure, mitigation, treatment, or prevention of disease, or for affecting any structure or function of the body.",
+      "replacement": "[IRS Publication 502](https://www.irs.gov/publications/p502) defines medical expenses to include diagnosis, treatment and prevention of disease, and care affecting body structure or function. The medical purpose still has to meet the applicable HSA or FSA rules.",
+      "evidence": "Publication502primarilygoverns the itemized deduction. Do not attribute a complete tax-freeHSA/FSArule to its medicaldefinition or let the definition alone establish eligibility. Narrow this34wordlist and retain actualaccount-specificconditions.",
+      "source": "IRS502 Introduction/MedicalExpenses; IRS969; closedF13-F15"
+    },
+    {
+      "id": "W1-F12",
+      "status": "open",
+      "quote": "When filing an FSA claim, upload your independent third-party statement and complete the required certification that no other plan has reimbursed the balance.",
+      "replacement": "For an FSA claim, submit the required third-party statement and no-other-payment certification in the format your administrator requests.",
+      "evidence": "No universal upload process is established; actualadministratorinstructions govern format. Retain substantiveFSArequirements without inventing a single channel.",
+      "source": "IRS969FSA; closedF07/F27"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 1,
+    "reworks": 0
+  },
+  "previous": {
+    "path": "reports/opt-new-two-20261109/handoff-fix-1.json",
+    "sha256": "b75af01dc1735bf17e8a9d9a86cf4e0603a081f79608eb7deba6ba43646b9ca8"
+  },
+  "phase0Approval": {
+    "source": "Root explicit user same-as-previous end-to-end publication authority in bounded task; automatic continuation under _mindmap-execution.md.",
+    "approvedManifest": "6f3860edec39d83308e88d80b02824131cada5931ea3a2ef8989a264c842a626"
+  },
+  "affectedRoutes": [
+    "/guides/"
+  ],
+  "perRouteReviewCounters": {
+    "/guides/hsa-fsa-reimbursement-checklist": {
+      "reviews": 1,
+      "reworks": 0
+    },
+    "/guides": {
+      "reviews": 1,
+      "reworks": 0
+    }
+  }
+}

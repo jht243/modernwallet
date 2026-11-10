@@ -1,0 +1,93 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "safe-medication-guide",
+  "route": "/guides/hsa-fsa-reimbursement-checklist",
+  "readerQuestion": "How do I prepare an HSA or FSA reimbursement claim? [PAA 1/6 on-topic; 5/6 off-topic eligibility/shopping/saving; ac receipt, submission and timing completions]",
+  "decisionGap": "Existing HSA benefits/limits and account comparisons do not explain a complete claim paperwork and timing sequence.",
+  "finding": "Gather itemized medical records, establish actual account timing, reconcile prior payments, and submit or retain records under actual administrator rules.",
+  "conditions": [
+    "Qualified expense and timing rules still apply despite a receipt or debit-card purchase.",
+    "FSA future-expense ban is scoped FSA; qualifying DPCSA HSA timing exception retained.",
+    "No membership or Opt eligibility determination."
+  ],
+  "whatWouldChange": "Actual plan documentation or a nonqualified/mixed membership changes whether and what can be claimed; request administrator or taxprofessional clarification before distribution.",
+  "basis": "reported",
+  "whyNoQuantitativeAnalysis": "Paperwork and qualification are rule-based; arbitrary dollar arithmetic or a calculator adds no supported decision.",
+  "reasoning": [
+    "IRS969 requires both qualification and records; an itemized bill alone cannot establish tax-free eligibility.",
+    "An ordinary service date after HSA establishment differs from FSA coverage-period substantiation. Submission date and service date have different jobs.",
+    "IRS2026-5Q19/Q20 prevents blanket membership and future-expense claims. A qualifying DPCSA is conditional, with no reimbursement fee cap.",
+    "A bounded finite checklist tells readers which record to gather next without promising provider paperwork or approval."
+  ],
+  "sourceArtifacts": [
+    {
+      "path": "reports/opt-new-two-20261109/research/inspected-facts.md",
+      "sha256": "9078a2a16e287a29fe5eae39f88bb331c8b831ab00ef02e7c04c53a0a93f2e37"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/research/sources.json",
+      "sha256": "62cedf86e9dcf6127afe3b3ae924dfd043f013248ee6962f854658a0e07f8be0"
+    }
+  ],
+  "caseSelection": {
+    "path": "reports/opt-new-two-20261109/evidence/hsa-fsa-reimbursement-checklist/cases.json",
+    "sha256": "785237fc33e15ab2ebdebc8b5545581b4080230a2e205b959686dc3f7c089cd8"
+  },
+  "caseDecisions": [
+    {
+      "id": "client-professional-bowlers-association-pba",
+      "decision": "rejected",
+      "reason": "Lexical match only; no medical reimbursement records or relevant public finding."
+    },
+    {
+      "id": "owned-property-drones-defense",
+      "decision": "rejected",
+      "reason": "Lexical match only; no medical reimbursement records or relevant public finding."
+    },
+    {
+      "id": "owned-property-medical-frontier",
+      "decision": "rejected",
+      "reason": "Lexical match only; no medical reimbursement records or relevant public finding."
+    },
+    {
+      "id": "testimonial-gamestation",
+      "decision": "rejected",
+      "reason": "Lexical match only; no medical reimbursement records or relevant public finding."
+    },
+    {
+      "id": "client-bowlero-corporation",
+      "decision": "rejected",
+      "reason": "Lexical match only; no medical reimbursement records or relevant public finding."
+    },
+    {
+      "id": "client-game-station",
+      "decision": "rejected",
+      "reason": "Lexical match only; no medical reimbursement records or relevant public finding."
+    },
+    {
+      "id": "client-jane-goodall-institute",
+      "decision": "rejected",
+      "reason": "Lexical match only; no medical reimbursement records or relevant public finding."
+    },
+    {
+      "id": "client-ethereal-collective",
+      "decision": "rejected",
+      "reason": "Lexical match only; no medical reimbursement records or relevant public finding."
+    }
+  ],
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [
+      "IRS969",
+      "IRS502",
+      "IRSNotice2026-5Q18-Q20"
+    ],
+    "scopeAndLimits": "Federal informational process only, actual plan qualification not adjudicated.",
+    "publicMethod": "Primary IRS links beside rules and conditional exception.",
+    "placement": "Opening checklist, timing and membership sections; takeaway."
+  },
+  "medium": "text with finite checklist/table",
+  "register": "operator",
+  "pageType": "explainer",
+  "teeupExempt": "No firsthand medical-claim practice or namedclient history is established; source attribution is more useful."
+}

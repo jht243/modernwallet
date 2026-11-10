@@ -1,0 +1,7 @@
+{
+  "indexSha256": "3d1806da58bc2d846ecf7d2aa18611b63f3cddf734b97ec400e9ea4869b05a74",
+  "head": "3af7b0f47328650b3b674762f8550c606d0dc4de",
+  "staged": [
+    "reports/content-gen-usage.jsonl"
+  ]
+}

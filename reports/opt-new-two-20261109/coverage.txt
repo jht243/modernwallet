@@ -1,0 +1,19 @@
+coverage_lookup: 1 candidate(s) vs 808 repo pages / 829 sitemap routes (https://themodernwallet.com) / 0 redirects / 1008 past-chart lines
+
+### /guides/hsa-fsa-reimbursement-checklist/  — row - · create new content
+keyword: hsa fsa reimbursement
+reader question (new page intent): What documents do I need to claim HSA or FSA reimbursement?
+lookup terms: hsa fsa reimbursement   format cues: template
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/hsa-vs-fsa  [PARENT PAGE · in sitemap · src/data/comparisons.ts · topic match 0.67 on hsa fsa]
+    title: HSA vs FSA: Which Account Saves You More?
+    desc:  HSA vs FSA compared: contribution limits, rollover rules, investment options, and which pre-tax health savings account is right for you in 2025.
+- /compare/hsa-vs-hra  [in sitemap · (sitemap only) · topic match 0.67 on hsa reimbursement]
+    title: HSA vs HRA: Who Owns It and Who Can Fund It
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms: none
+Commits naming the topic: none
+Same run overlap: none
+

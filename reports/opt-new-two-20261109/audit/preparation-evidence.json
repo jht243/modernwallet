@@ -1,0 +1,44 @@
+{
+  "reviewer": "fleet-guide-auditor",
+  "jobId": "opt-new-two-wallet-reimbursement-20261109",
+  "verdict": "PASS",
+  "scope": "Preparation only; no generated page, contentreviewreservation, implementation or deployment PASS implied.",
+  "contextId": "/root/safe_medication_guide/fleet_guide_auditor",
+  "contextEpoch": 2,
+  "instructionEvidence": "Own full28part ModernWalletBUILD reading and current1part sealedpreparation continuation complete/current. Existing shared rules and siteexperience remain accessible and understood. Default/minimumHIGH3rounds and financial/howtoTESTEDexclusions apply; no Layer3localpolicy transplanted.",
+  "manifest": {
+    "path": "reports/opt-new-two-20261109/approval-manifest.json",
+    "sha256": "96427a5b030552ec2acf765b7511e11bdf01dd147172b11e6ac24c303e25176d"
+  },
+  "readiness": {
+    "path": "reports/opt-new-two-20261109/readiness.md",
+    "sha256": "963e29d382ddd2bb66a8017684411235f09df6f95ec86d7a50d6d81b13ff7f57"
+  },
+  "checks": {
+    "intakeAndScope": "One W1nativeguide only, exactnormalized route and originaljob consistent across action/brief/evidence/cases/handoff. Public canonical explicitlyWWWtrailing slash. Existing explicit endtoend authority covers only owned source/indexcard/sitemap/records, actualhost and exactlive verification beforeIndexNow.",
+    "demandAndCoverage": "Read real3rowSEMrush metrics1600/1300/20with KD36/55/0and45autocompletecompletions. Practicalreceipt/submission/timing/recordqueries support processintent;1of6PAAonintent and5offscope correctly separated. Raw8organicgoogleproxy domainclassification is unreliable; manifest honestly marks unread and makes no competitorwideuniqueclaim. Coverage808repo829sitemap0redirects1008chartlines plus no targethistory supports absence; not claimed exhaustive openwebcoverage.",
+    "dedup": "Independently read HSAtriple-taxguidebenefits/contributionlimitrecord and HSA/FSAaccountchoicecomparison; neither provides combined receiptfields/FSAcoverage/substantiation/submission process. ExactaverageHSAbalanceInvestNowReimburseLater paragraph gives delayedHSAreceiptstrategy with growth math, but no FSAworkflow. Currentmanifest properly includes this strongestnear-match/frozeninspection. Noadditionbranch rejected on distinct practicalreaderdecision, not merely a newslug. Existingwrongcomparisons/eligibilityguides are not rewritten or linked as advice.",
+    "sources": "Independently opened actualcurrentIRS969(2025),502(2025),Notice2026-5onofficialIRSsite and inspected keysections alongside retainedraw200records.969HSAestablishment, records/no-otherpayment/noitemizeddeduction/Form8889 distinction;FSAcoverage/thirdpartystatement/noadvancefutureexpenses/cardexception;502medicalpurpose/generalhealthlimit and separateScheduleAtiming all support bounded plan. No outdated dollar tables needed.",
+    "counterexample": "Strongest primary contradiction to universalfutureexpenseban isNotice2026-5Q19, allowing qualifiedDPCSAfeeincurrencealternatives and substantiatedadvanceHSAreimbursement. Q20requires solelyprimarycareservices/qualifiedpractitioners/fixedperiodicsolefee/excludedservices; no reimbursementfee cap. Contributionfee threshold is separate and excluded. Q18employerpaidfeesnotbeneficiaryexpense retained. Plan explicitly keeps alltheseconditions and neverassertsOpt/membershipqualification.",
+    "provenanceAndTakeaway": "Source-onlyreported qualitative synthesis is useful without a calculator or inventedtest. Checklistfirst, finite receiptfield/purpose table, accounttiming, no-doubleclaimandactualadministrator nextaction matchquestion andstopuncertainmembershipcondition. Recommendations for receiptfields/EOB/payment/confirmation are labeledpracticalrecordgathering, not universal statutorytemplate or providerpromise.",
+    "labelsAndAuthor": "ActualModernWallet_experience excludesfinancial/professionalservicesfromTESTED. ExistingJonathanVelezPersonalFinanceWriterEditoridentityverified in site.ts; REVIEWERundefined is truthful and no mandatoryhumanreviewisestablished for this informationalprocess. No clinicaltreatmentorindividualtaxeligibilitydetermination allowed.",
+    "formatAndNativeRender": "ExistingGuideobject/layout/schema reused; packetrecordsoperator/explainer1200floor/teeupexemption sourcebased. NativeIRS969resourcepill uses existingtool-linkfield; nofeaturedevelopmentorinteractivepromise. ActualguidesindexGUIDES.map autoadds one relevantcard and guidehuboutbound avoids incorrectcomparisons. Fullnewguide/indexcard still requireactualPhase4render includingnativeattribution/dates/links.",
+    "growth": "Newroutebaseline notyetpublished, GSCunavailable, age-matchedguidecomparatorplanned. No inventedzero, trafficuplift ornewmeasurementautomation. Actualverifieddeployment must supply28/56daywindows.",
+    "hashAndBinding": "All semanticcontent/sourcefacts/demand/intent/labels/scopelimits unchanged. Currentplan adds only one new-route lastmodcase using existing astro.config.mjs serializepattern; readiness/applicationrefsupdated. Currentsealedhandoffreadandpreflightcheckpassed in sameactualepoch2. Allcurrentartifactrefschecked.",
+    "technicalSitemap": "Read actual existing astro.config.mjs serializer with narrowly scoped benefits/cancelplanner/Robinhoodcases. Plannedexactnewroutecasefor2026-11-09lastmodis normal owned sitemapintegration, no page/template/workflow/routing change. Actualsource/build/sitemap and ownership diff remain required after implementation; no implementationPASSisclaimed."
+  },
+  "limitations": [
+    "Source-only federal general process; administrator decides actualdocumentation workflow and unclearcosts require clarification.",
+    "RawSERPtopdomainsproxy cannot establish competitive ranking opportunity.",
+    "Readiness opening is the priorwriterstage status awaiting this separate independentdecision; this actualsignedchartreview closes that historicalpending state without falsely claiming pagecontent alreadyreviewed."
+  ],
+  "resolvedFindingIds": [],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "supersedes": {
+    "path": "reports/opt-new-two-20261109/audit/before-sitemap-preparation-evidence.json",
+    "sha256": "c32eca3947b63d274c3ce5d77334c55d31129ad79e3217e59645181c70d855d6"
+  }
+}

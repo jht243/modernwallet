@@ -1,0 +1,25 @@
+{
+  "route": "/guides/hsa-fsa-reimbursement-checklist",
+  "originRoutine": "mindmap-pass",
+  "queryFamily": [
+    "hsa reimbursement",
+    "fsa reimbursement",
+    "reimbursement checklist"
+  ],
+  "hypothesis": "A dedicated source-based paperwork sequence answers process queries beyond account benefits/comparison.",
+  "primaryMetric": "incremental Google clicks",
+  "baselineStatus": "not-yet-published",
+  "dataAvailability": "unavailable",
+  "baseline": {
+    "status": "not-yet-published",
+    "property": "sc-domain:themodernwallet.com",
+    "canonicalUrl": "https://www.themodernwallet.com/guides/hsa-fsa-reimbursement-checklist/",
+    "window": null
+  },
+  "comparatorPlan": "Age-matched unchanged informational guides at later eligible day28/day56 review.",
+  "changeScope": "One plain native guide and automatic guideindex card.",
+  "sourceRefreshTrigger": "IRS rule or actual primary guidance change",
+  "outcomeStatus": "unknown",
+  "deploymentStatus": "not-yet-published",
+  "productionCost": "Native generator meta/usage after actual call; unknown beforegeneration."
+}

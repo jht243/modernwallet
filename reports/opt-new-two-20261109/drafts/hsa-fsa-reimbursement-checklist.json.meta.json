@@ -1,0 +1,231 @@
+{
+ "slug": "hsa-fsa-reimbursement-checklist",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1754,
+ "floor": 1200,
+ "input_tokens": 23557,
+ "output_tokens": 3044,
+ "thinking_tokens": null,
+ "cached_tokens": 20537,
+ "est_cost_usd": 0.0152,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 1772,
+  "numbers_not_in_facts": [
+   "1040",
+   "18",
+   "19",
+   "8889",
+   "969"
+  ],
+  "fact_budget": {
+   "fact_words": 1031,
+   "floor": 1200,
+   "ratio": 0.86,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    5,
+    3
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "6. Save the submission confirmation, administrator response, and banking records alongside your itemized invoices.",
+     "replacement": "6. Save the submission confirmation, administrator response, and actual reimbursement record alongside your itemized invoices.",
+     "type": "unsupported",
+     "why": "SOURCE specifies an actual reimbursement record rather than banking records."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Custodians offer online portals, mobile applications, or paper claim forms to process requests.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention mobile applications or paper claim forms."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "For an HSA, log into your custodian platform to authorize a distribution directly to your personal bank account or request a check.",
+     "replacement": "For an HSA, follow your custodian's platform instructions to request a distribution.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention bank account deposits or requesting checks."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "- Bank account records showing when the reimbursement deposited.",
+     "replacement": "- The actual reimbursement record.",
+     "type": "unsupported",
+     "why": "SOURCE specifies retaining an actual reimbursement record rather than bank account records."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Maintaining clear records protects your tax position if an account distribution is later examined.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that records protect tax positions in examinations."
+    },
+    {
+     "id": "cardBlurb",
+     "quote": "Organize your health savings account or flexible spending account medical records with timing checks, required invoice fields and no duplicate claims.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "SOURCE states invoice fields are a recommendation rather than universally required."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "An expense is incurred when the care is provided, not when you are billed or pay for it.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state expenses are not incurred when billed or paid."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Under IRS Notice 2026-5, an HSA can reimburse periodic fees for a qualifying direct primary care arrangement that provides solely primary care services from qualifying practitioners without general anesthesia, non-vaccine drugs, or complex laboratory tests.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE excludes non-ambulatory primary care labs, not complex laboratory tests."
+    }
+   ],
+   "deleted_final": 3,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1886
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-09T22:34:16-0500",
+    "findings_file": "reports/opt-new-two-20261109/audit/hsa-fsa-reimbursement-checklist.findings-1.txt",
+    "applied": [
+     {
+      "id": "faqs[1].answer",
+      "quote": "Yes, IRS rules require you to keep receipts and documentation showing your distributions were used exclusively to pay or reimburse qualified medical expenses. You do not submit these receipts with your tax return, but you must retain them in your tax records to substantiate distributions reported on Form 8889.",
+      "replacement": "IRS rules require sufficient records showing that your HSA distribution paid or reimbursed qualified medical expenses. Keep itemized receipts and other records showing the expense was not paid elsewhere or claimed as an itemized deduction. Keep these with your tax records rather than sending them with your return.",
+      "type": "FIX W1-F01",
+      "why": "IRS rules require sufficient records, not an absolute receipt-specific mandate."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "For an HSA, question 20 of [IRS Notice 2026-5, Internal Revenue Bulletin 2026-02](https://www.irs.gov/irb/2026-02_IRB) defines a qualifying DPCSA as an arrangement where an individual receives solely primary care medical services provided by qualifying primary care practitioners in exchange for a fixed periodic fee.",
+      "replacement": "For HSA reimbursement, [IRS Notice 2026-5, question 20](https://www.irs.gov/irb/2026-02_IRB) requires solely primary care services from qualifying primary care practitioners. A fixed periodic fee must be the sole compensation for that care.",
+      "type": "FIX W1-F03",
+      "why": "Includes the sole compensation requirement and improves readability."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "If an arrangement fails to satisfy these conditions, the fee does not qualify for tax-free reimbursement.",
+      "replacement": "A fee that fails the DPCSA conditions does not qualify under this special HSA reimbursement rule. Separately billed medical services still need their own qualification and timing checks.",
+      "type": "FIX W1-F04",
+      "why": "Limits denial to the special DPCSA rule and preserves separately billed service qualification."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Under [IRS Notice 2026-5, Internal Revenue Bulletin 2026-02](https://www.irs.gov/irb/2026-02_IRB), question 19 explains that an HSA may treat a substantiated fee for a qualifying direct primary care service arrangement (DPCSA) as incurred on the first day of each month pro rata, the first day of the coverage period, or the date the fee is paid.",
+      "replacement": "For a qualifying direct primary care service arrangement (DPCSA), [IRS Notice 2026-5, question 19](https://www.irs.gov/irb/2026-02_IRB) permits three HSA expense dates:\n\n- The first day of each month of coverage, on a pro rata basis.\n- The first day of the coverage period.\n- The date the fees are paid.",
+      "type": "FIX W1-F05",
+      "why": "Breaks buried alternative timing dates into a readable list."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Question 18 of [IRS Notice 2026-5, Internal Revenue Bulletin 2026-02](https://www.irs.gov/irb/2026-02_IRB) notes that employer-paid DPCSA fees, including salary reduction contributions under a cafeteria plan, are not considered beneficiary-paid expenses and cannot be reimbursed from an HSA.",
+      "replacement": "Under [IRS Notice 2026-5, question 18](https://www.irs.gov/irb/2026-02_IRB), employer-paid DPCSA fees are not expenses of the HSA beneficiary and cannot be reimbursed from the HSA. This includes DPCSA fees paid through salary reduction under a cafeteria plan.",
+      "type": "FIX W1-F06",
+      "why": "Clarifies payment of DPCSA fees rather than ambiguous HSA salary reduction contributions."
+     },
+     {
+      "id": "introText",
+      "quote": "An FSA reimburses qualified expenses incurred during your actual period of coverage and requires written substantiation from an independent third party before payment.",
+      "replacement": "An FSA generally reimburses qualified expenses incurred during your coverage period and requires third-party substantiation. Some qualifying debit-card transactions need no additional information.",
+      "type": "FIX W1-F07",
+      "why": "Preserves debit card substantiation exceptions in top answer."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "| Document field | Practical purpose |\n|---|---|\n| Provider or facility name | Identifies the independent party that delivered the care or medical product |\n| Patient name | Shows the expense was incurred for an eligible individual |\n| Item or service description | Establishes whether the expense represents diagnosis, cure, mitigation, treatment, or prevention of disease |\n| Date of service or purchase | Confirms the expense occurred within the allowable HSA or FSA timing window |\n| Total charge and patient responsibility | Shows the exact unreimbursed dollar amount owed after any adjustments |",
+      "replacement": "| Document field | Practical purpose |\n|---|---|\n| Provider or facility name | Identifies the independent party that delivered the care or medical product |\n| Patient name | Identifies who received the care so you can check beneficiary eligibility |\n| Item or service description | Helps you assess the medical purpose against the applicable account rules |\n| Date of service or purchase | Provides the date to compare with account establishment or coverage dates |\n| Total charge and patient responsibility | Shows the exact unreimbursed dollar amount owed after any adjustments |",
+      "type": "FIX W1-F08",
+      "why": "Aligns practical field purposes without implying records alone establish tax eligibility."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Taking these steps in sequence prevents duplicate claims and ensures your records align with federal tax rules.",
+      "replacement": "These checks help you identify duplicate payments and missing records before requesting reimbursement.",
+      "type": "FIX W1-F09",
+      "why": "Avoids unwarranted guarantee of prevention or compliance."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Always save your receipts until your administrator confirms the expense is approved.",
+      "replacement": "Keep your receipts and substantiation confirmations with your claim records.",
+      "type": "FIX W1-F10",
+      "why": "Approval does not establish a supported cutoff for retaining records."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "[IRS Publication 502](https://www.irs.gov/publications/p502) clarifies that expenses qualifying for tax-free medical spending are those paid for the diagnosis, cure, mitigation, treatment, or prevention of disease, or for affecting any structure or function of the body.",
+      "replacement": "[IRS Publication 502](https://www.irs.gov/publications/p502) defines medical expenses to include diagnosis, treatment and prevention of disease, and care affecting body structure or function. The medical purpose still has to meet the applicable HSA or FSA rules.",
+      "type": "FIX W1-F11",
+      "why": "Pub 502 medical definition alone does not establish complete HSA/FSA eligibility."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "When filing an FSA claim, upload your independent third-party statement and complete the required certification that no other plan has reimbursed the balance.",
+      "replacement": "For an FSA claim, submit the required third-party statement and no-other-payment certification in the format your administrator requests.",
+      "type": "FIX W1-F12",
+      "why": "Refers to administrator-requested format rather than mandating an upload channel."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "faqs[3].answer",
+      "quote": "A medical membership fee can only be reimbursed if it meets specific federal tax criteria. Fees for general health improvement or arrangements paid by employer contributions do not qualify.",
+      "finding": "FIX W1-F02",
+      "why": "Distinguishes employer DPCSA fee payment from HSA contributions and notes conditional DPC rules.",
+      "replacement": "Check the services, payment source and applicable account rules before reimbursing a membership fee. For an HSA, a qualifying DPCSA must meet the primary-care and sole fixed-fee conditions in [IRS Notice 2026-5, question 20](https://www.irs.gov/irb/2026-02_IRB). Question 19 generally permits substantiated HSA reimbursement before qualifying DPCSA coverage begins. Question 18 excludes employer-paid DPCSA fees, including fees paid through salary reduction. That exclusion concerns payment of the DPCSA fee and does not prohibit reimbursement merely because an employer contributed money to the HSA.",
+      "reason": "replacement adds ['19', '18'] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 1754,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 226.3,
+ "response_id": "UIvyaua1JvvT0_gP06Ou-Ak",
+ "generated_at": "2026-11-09T22:14:55-0500"
+}

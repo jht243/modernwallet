@@ -1,0 +1,13 @@
+{
+  "reviewer": "fleet-guide-auditor",
+  "verdict": "PASS",
+  "jobId": "opt-new-two-wallet-reimbursement-20261109",
+  "manifestSha256": "b9d3d233007406a4839656bd42742b14f76d3da37aef417364dbd813b6d63c79",
+  "readinessSha256": "963e29d382ddd2bb66a8017684411235f09df6f95ec86d7a50d6d81b13ff7f57",
+  "evidence": "Independently checked completecurrentplan/sourcepacket/keywordandquestionevidence/exactintentnear-matches/nativeindexcard and publication scope. DirectIRS969/502andNotice2026-5Q18-Q20inspection confirms record/timing/no-doubleclaim method and strongestDPCadvanceexpensecounterexample, with reimbursement/contribution cap distinction preserved. Reportedordinaryformat, actualJonathanVelezidentity andHIGHceilings appropriate. Detailed actual observations in audit/preparation-evidence.json; no contentround consumed.",
+  "artifact": {
+    "path": "reports/opt-new-two-20261109/audit/preparation-evidence.json",
+    "sha256": "c32eca3947b63d274c3ce5d77334c55d31129ad79e3217e59645181c70d855d6"
+  },
+  "resolvedFindingIds": []
+}

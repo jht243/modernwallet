@@ -1,0 +1,98 @@
+ position: .claude/commands/_content-standard.md, paragraph 6. Use its exact text under this source/section context.]
+
+# Phase 6 — Internal linking
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 8. Use its exact text under this source/section context.]
+
+
+> **Anchor text should match the destination's `reader_question` (chart col 10) where one exists.** A page whose question is "how do I automate client onboarding" earns anchors that read like the question or its answer ("how to build the onboarding automation"), not the bare page title. This is the same principle as the page opener: link on what the reader wants, not on what the page is called.
+
+Execute the internal-linking rows from the chart, AND add inbound internal links to every page created in Phase 3 (**target ~3 links each** from relevant existing pages).
+
+**The ~3 is a target, not a quota — relevance wins over the count.** Only add a link where it is genuinely contextually relevant and reads naturally. If a new page has fewer than 3 *logical* placements, add the ones that fit and STOP — do not manufacture a forced, marginal, or over-optimized exact-match link just to hit the number, and never repeat the same anchor across unrelated pages. A page with 1–2 strong, relevant inbound links is better than 3 where one is a stretch. When you land below the target, note in the phase report which page and why (no more relevant placements exist) — that is an accepted outcome, not a failure.
+
+Guidance:
+- Use the framework `<Link>` with descriptive anchor text — never "click here".
+- **If linking from the homepage, do NOT update the header/nav.** Add links in the footer or within the body of the homepage instead.
+- Any update must maintain the existing UX/UI — do not break the page, clutter it, or make it look ugly. Match the surrounding design, spacing, and styling.
+- Only add links that are genuinely relevant in context; don't force them.
+- `git add`. Do not commit.
+
+## Reviewer gate (Explore subagent)
+- ☐ all chart internal-link rows actioned
+- ☐ every Phase-3 page has inbound links up to the ~3 target where relevant; any page below 3 has a noted reason (no more logical placements) — a relevant 1–2 is acceptable, a forced/marginal link to hit 3 is NOT
+- ☐ homepage header/nav untouched (links only in footer/body)
+- ☐ links use framework `<Link>` + descriptive anchors
+- ☐ no layout/UX breakage or visual clutter
+- ☐ links are contextually relevant
+
+Reject with specifics; retry rule 4 (2 attempts then STOP) applies.
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-4-audit.md, paragraph 48. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-4-audit.md, paragraph 49. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-4-audit.md, paragraph 50. Use its exact text under this source/section context.]
+
+
+## Updated-page date-bump rule (MANDATORY — workflow-wide, added 2026-07-12)
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-4-audit.md, paragraph 52. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-4-audit.md, paragraph 53. Use its exact text under this source/section context.]
+
+**Auditors / reviewer gates (adversarial review):** for EVERY existing page this run edited, verify the rendered "Last updated" date (and JSON-LD `dateModified`) now equals the run date. A stale date on an updated page is a **HARD FAIL** — the page does not pass until the date is bumped. The fix is a one-field update; never rewrite the page. Conversely, a bumped date on a page whose rendered content did NOT change is also a fail (date churn fakes freshness) — revert it.
+
+[Source: .claude/commands/mindmap-pass/phase-7-sitemap-indexnow.md]
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 9. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 6. Use its exact text under this source/section context.]
+
+# Phase 7 — Sitemap + IndexNow
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 8. Use its exact text under this source/section context.]
+
+
+## Worker
+1. Add every Phase-3 route to the correct sitemap (per the discovered route→file routing) with today's `<lastmod>`.
+2. Refresh `<lastmod>` to today **only for pages with a substantive change** — i.e. modified in Phase 2 (metadata), Phase 3 (new), or Phase 5 (body). **Do NOT bump `<lastmod>` for a page whose only change this run was a Phase 6 internal link** — a link-only touch is not a content change, and stamping lastmod on it trains Google to distrust your lastmod signal and deprioritize crawls. (If a page got both a substantive edit AND a link, it counts as substantive — refresh it.)
+3. Consolidation is advisory-only now, so there are normally no removed routes. If `reports/mindmap-pass/<date>.consolidation.txt` exists (legacy) remove those routes; otherwise skip this step.
+4. **Prepare the IndexNow URL list — do NOT submit here.** Write the added + updated routes (full URLs, NOT removed losers) to `reports/mindmap-pass/<date>.indexnow.txt`, one URL per line. The actual IndexNow POST now happens in **Phase 9, after push + deploy**, so we only ever ping search engines with URLs that are already live (submitting a not-yet-deployed URL makes crawlers hit 404s and wastes crawl budget). If no IndexNow key was discovered in Phase 0, note that submission will be skipped.
+5. `git add`. Do not commit.
+
+## Reviewer checklist
+- ☐ each new route in exactly one correct sitemap, lastmod=today
+- ☐ lastmod=today on every **substantively** changed page (Phase 2/3/5); **no lastmod bump on link-only (Phase 6) pages**
+- ☐ no consolidation losers to remove (advisory-only), or any legacy `.consolidation.txt` routes removed
+- ☐ IndexNow URL list written to `<date>.indexnow.txt` (added + updated only, no losers); **no submission made in this phase** — it is deferred to Phase 9 post-deploy
+
+Reject with specifics on any failure.
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-4-audit.md, paragraph 48. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-4-audit.md, paragraph 49. Use its exact text under this source/section context.]
+
+Everything between those two — including this phase — runs automatically. The reviewer gates are adversarial SUBAGENTS, not human checkpoints; a passing gate means YOU proceed on your own. Keep going through Phase 8 and the Phase 9 push without stopping.
+
+[Source: .claude/commands/mindmap-pass/phase-9-commit-deliver.md]
+[Repeated passage at this position: .claude/commands/_workflow-checkpoints.md, paragraph 1. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/_workflow-checkpoints.md, paragraph 2. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 6. Use its exact text under this source/section context.]
+
+# Phase 9 — Commit + deliver
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-0-discover.md, paragraph 5. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-0-discover.md, paragraph 6. Use its exact text under this source/section context.]
+
+
+**Testing publication check:** Apply `_testing-labels.md` to every affected route. Verify its exact-content evidence decision and built title, metadata, byline, methods and schema with the active site's adapter. If a shared rendering change affects other routes, include them in validation. Missing/stale approval, mismatched labels or unsupported leftover testing claims block publication of the affected content. Missing adapters must be wired and verified before tested labels can be enabled; do not create permission or fabricate records. Preserve local medical/psychedelic and other exclusions. This is a publication condition, not permission to rewrite unrelated historical pages.
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-0-discover.md, paragraph 8. Use its exact text under this source/section context.]
+
+<!-- testing-evidence-v1 -->
+Before publication, validate evidence decisions and built labels for all affected routes (all routes using a changed shared template). Missing evidence or residual unsupported testing claims block publication. A local framework adapter is required before enabling any tested label.
+
+**Testing evidence and exclusions:** Read `.claude/commands/_testing-labels.md` before creating, enriching or auditing content. It supersedes older automatic TESTED eligibility i

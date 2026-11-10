@@ -1,0 +1,15 @@
+[content_gen] anthropic key CONTENT_ANTHROPIC_KEY unusable (HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access th) — trying the next key in the pool
+[content_gen] anthropic key CONTENT_ANTHROPIC_KEY_2 unusable (HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access th) — trying the next key in the pool
+[content_gen] primary   : claude-opus-5-5 (anthropic)
+[content_gen] fallback  : gemini-3.8-flash -> gpt-6-sol
+[content_gen] claude effort: high (adaptive thinking)
+[content_gen] thinking  : medium   max_tokens: 40000
+[content_gen] claude-opus-5-5        FAIL — every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance 
+[content_gen] gemini-3.8-flash       OK  key=GEMINI_API_KEY(…s3YA) replied='OK'
+[content_gen] gpt-6-sol              FAIL — HTTP 403: {
+  "error": {
+    "message": "Project `proj_h7ZkxgMuJPuaRxl0KEfiGD1k` does not have access to model `gpt-6-sol`",
+    "type": "invalid_request_error"
+[content_gen] WARNING: primary claude-opus-5-5 unusable — this run will write via the FALLBACK (gemini-3.8-flash). Every page will be marked fallback_used in its meta.
+[content_gen] preflight OK
+[content_gen] RUN TOTAL caller=- calls=1 in=7 out=1 think=0 cost≈$0.0000

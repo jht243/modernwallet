@@ -1,0 +1,7 @@
+{
+  "path": "astro.config.mjs",
+  "beforeSha256": "214baf8eacbf6ff631fbc89c23f615dcb26303be4d83934c4e6a558dfe9c80d4",
+  "afterSha256": "621e97349314cdeefa9ebce10e3036300e3877841c8b6f3c84fb43f5527c3806",
+  "scope": "Only exact newroute lastmod in existing native serializer. No workflow, route/template or helper repair.",
+  "addedLine": "if (pathname === \"/guides/hsa-fsa-reimbursement-checklist/\") return { ...item, lastmod: new Date(\"2026-11-09T00:00:00.000Z\") };"
+}

@@ -1,0 +1,27 @@
+{
+  "reviewer": "fleet-guide-auditor",
+  "purpose": "Mechanical candidate identity/replacement replay, not independent content verdict before native admission.",
+  "originalSha256": "3b54a2e48e5a3e13c70b4e80182e70ba901122bb8c84b995c70b6deadae0507a",
+  "newSha256": "2be61d923f8ddaf810562474e034f73f22d7e2a072e9cd03d060234d82193aa9",
+  "exactReplacementIds": [
+    "W1-F07",
+    "W1-F09",
+    "W1-F08",
+    "W1-F05",
+    "W1-F10",
+    "W1-F03",
+    "W1-F04",
+    "W1-F06",
+    "W1-F11",
+    "W1-F12",
+    "W1-F01",
+    "W1-F02"
+  ],
+  "remainingDeltas": [
+    {
+      "path": "/sections/2/body",
+      "old": "[IRS Publication 969](https://www.irs.gov/publications/p969) states that an HSA can pay or reimburse qualified medical expenses incurred after the account is established. State law determines when an HSA is established, and a rollover account may inherit an earlier establishment date. Contact your HSA custodian if you need to confirm your formal account establishment records.\n\nYou do not mail receipts to the IRS when you withdraw money from an HSA. Instead, you report total distributions on Form 8889 with your annual tax return. [IRS Publication 969](https://www.irs.gov/publications/p969) requires you to keep records in your personal files showing that all distributions paid exclusive qualified medical expenses.\n\nYour HSA records must establish three things:\n\n- The distributions paid or reimbursed qualified medical expenses incurred after the account was established.\n- The medical expenses were not previously paid or reimbursed from another source.\n- You did not claim the expenses as an itemized deduction on Schedule A in any tax year.\n\nExpense timing carries one narrow conditional exception. For a qualifying direct primary care service arrangement (DPCSA), [IRS Notice 2026-5, question 19](https://www.irs.gov/irb/2026-02_IRB) permits three HSA expense dates:\n\n- The first day of each month of coverage, on a pro rata basis.\n- The first day of the coverage period.\n- The date the fees are paid.\n This rule generally permits reimbursement of substantiated periodic fees before the associated coverage begins, provided the arrangement satisfies all statutory criteria. That flexibility applies strictly to qualifying arrangements under HSA rules and does not alter timing requirements for an FSA.",
+      "new": "[IRS Publication 969](https://www.irs.gov/publications/p969) states that an HSA can pay or reimburse qualified medical expenses incurred after the account is established. State law determines when an HSA is established, and a rollover account may inherit an earlier establishment date. Contact your HSA custodian if you need to confirm your formal account establishment records.\n\nYou do not mail receipts to the IRS when you withdraw money from an HSA. Instead, you report total distributions on Form 8889 with your annual tax return. [IRS Publication 969](https://www.irs.gov/publications/p969) requires you to keep records in your personal files showing that all distributions paid exclusive qualified medical expenses.\n\nYour HSA records must establish three things:\n\n- The distributions paid or reimbursed qualified medical expenses incurred after the account was established.\n- The medical expenses were not previously paid or reimbursed from another source.\n- You did not claim the expenses as an itemized deduction on Schedule A in any tax year.\n\nExpense timing carries one narrow conditional exception. For a qualifying direct primary care service arrangement (DPCSA), [IRS Notice 2026-5, question 19](https://www.irs.gov/irb/2026-02_IRB) permits three HSA expense dates:\n\n- The first day of each month of coverage, on a pro rata basis.\n- The first day of the coverage period.\n- The date the fees are paid.\n\nThis rule generally permits reimbursement of substantiated periodic fees before the associated coverage begins, provided the arrangement satisfies all statutory criteria. That flexibility applies strictly to qualifying arrangements under HSA rules and does not alter timing requirements for an FSA."
+    }
+  ]
+}

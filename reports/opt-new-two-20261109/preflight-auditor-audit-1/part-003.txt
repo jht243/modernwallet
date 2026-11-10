@@ -1,0 +1,106 @@
+quentialClaims`, `limitationsAndJurisdiction`, `professionalReview`. All levels add `riskClassification` and `seoQuality`; sites already requiring `instructionUnderstanding` retain it. Use real observations, not generated PASS defaults. An inapplicable professional check needs a specific NA reason; a required one needs its real artifact.
+5. Record the actual per-route PASS/FAIL before applying another correction:
+
+   `python3 .claude/tools/content-review-policy.py record --review ACTUAL_RENDERED_REVIEW.json`
+
+   This records the review; it never generates a verdict. A changed candidate uses the next reservation under the SAME job and page journal. Keep the same independent reviewer where its genuine current context can be retained. Follow normal complete-reading, access/understanding and context-loss requirements.
+6. Run the existing rendered check and Mindmap analysis audit. Their policy hooks require the actual latest recorded PASS within budget. Publishing still uses the approved exact content and existing build/link/live/host checks. `rendered-audit.py record-deployment` closes the cycle only after verified publication; land the appended journal and its immutable admissions/reports with the normal internal receipts. A future genuinely new revision may then begin a new cycle. A failed/unpublished page cannot acquire a new budget by changing its job ID.
+
+If a multi-page review leaves a page held but others genuinely passed, retain those exact approvals with `python3 .claude/tools/content-review-policy.py project --snapshot SNAPSHOT --review ACTUAL_REVIEW --route PASSING_ROUTE --out-snapshot SUBSET_SNAPSHOT --out-review SUBSET_REVIEW` (repeat `--route` as needed). This is a mechanical subset of the same evidence, not a new audit or verdict; it cannot include a failed page or alter findings. Keep the original snapshot/review unchanged. Use `sources --review ACTUAL_REVIEW` to list the exact internal journal, admissions and frozen report dependencies to retain with normal publication receipts; retain the appended journal again after verified live closure. None belongs in visitor-facing files.
+
+Existing source-bound snapshot/review pairs enumerated before activation still run their ORIGINAL validators; the inventory is not a new PASS or a retrospective understanding attestation. New candidates must use this policy. Preserve any native client/upsell exception solely through its existing validating release path, with actual counters, eligibility and holds intact; an ordinary editorial caller cannot self-declare such an exception.
+
+Owner durable-review continuation 2026-11-09: Install content-review-durable.py with content-review-policy.py and workflow-control-store.py (and their regression tests). reserve/record automatically retain the actual hash-chained journal, admissions, rendered/source artifacts and original PASS/FAIL reports in the native non-forced Git control store. A clean checkout restores that exact history before another reservation. A genuine partial result remains recorded when a later route is invalid; native all-or-nothing validation stays all-or-nothing. Missing/conflicting evidence blocks, never resets a counter or invents a PASS. Exact passing-subset projection preserves the original source assessment and independent evidence; a serializer repair is not a new editorial audit. Existing native composition and stricter rules remain.
+
+[Source: reports/opt-new-two-20261109/preflight-auditor-audit-1/task.json]
+{
+  "version": 1,
+  "siteId": "jht243/modernwallet",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "opt-new-two-wallet-reimbursement-20261109",
+  "producer": "safe-medication-guide",
+  "nextAction": "Independently audit exact first full final-render candidate after all native post-build transformations. Main guide first HIGH round0->1, affected /guides/ collectioncard first round. Review closed primary facts and all native claimcheck flags honestly; targeted exact replacements only, no regeneration, no helper repairs.",
+  "routes": [
+    "/guides/hsa-fsa-reimbursement-checklist"
+  ],
+  "candidates": [
+    {
+      "path": "reports/opt-new-two-20261109/blobs/3b54a2e48e5a3e13c70b4e80182e70ba901122bb8c84b995c70b6deadae0507a/candidate-native.json",
+      "sha256": "3b54a2e48e5a3e13c70b4e80182e70ba901122bb8c84b995c70b6deadae0507a",
+      "originPath": "reports/opt-new-two-20261109/candidate-native.json"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/5a66eac3f975b22949e7bc6dca755b14c92a72bfd9b2e0f6f0a7e322be833c9f/snapshot-1.json",
+      "sha256": "5a66eac3f975b22949e7bc6dca755b14c92a72bfd9b2e0f6f0a7e322be833c9f",
+      "originPath": "reports/opt-new-two-20261109/snapshot-1.json"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/178e571d5ab8c1f3712f8745b3ddf4028444c13cdf79ed6b7d42dda10ee5b06b/mechanical-templating.json",
+      "sha256": "178e571d5ab8c1f3712f8745b3ddf4028444c13cdf79ed6b7d42dda10ee5b06b",
+      "originPath": "reports/opt-new-two-20261109/mechanical-templating.json"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/b54fe0e8aa53d4826db67f67cdfea28006488f612122a44d2457a13c3cf6c15e/hsa-fsa-reimbursement-checklist.json.meta.json",
+      "sha256": "b54fe0e8aa53d4826db67f67cdfea28006488f612122a44d2457a13c3cf6c15e",
+      "originPath": "reports/opt-new-two-20261109/drafts/hsa-fsa-reimbursement-checklist.json.meta.json"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/a42bb8aa217a99d9a7260125e21f91d41e6e16cf8529c22aee03dbdcd4d4174e/hsa-fsa-reimbursement-checklist.prompt.md",
+      "sha256": "a42bb8aa217a99d9a7260125e21f91d41e6e16cf8529c22aee03dbdcd4d4174e",
+      "originPath": "reports/opt-new-two-20261109/prompts/hsa-fsa-reimbursement-checklist.prompt.md"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/5a1b703c59eec83135522d17e42c6f29bd90ba011bd02c872b5252a7648d3437/allowed-urls.txt",
+      "sha256": "5a1b703c59eec83135522d17e42c6f29bd90ba011bd02c872b5252a7648d3437",
+      "originPath": "reports/opt-new-two-20261109/prompts/allowed-urls.txt"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/934b07e4aee4350dfb1516a33c53c4e08efca047f0b9ce106ed4ab51a9bef938/sitemap-metadata-change.json",
+      "sha256": "934b07e4aee4350dfb1516a33c53c4e08efca047f0b9ce106ed4ab51a9bef938",
+      "originPath": "reports/opt-new-two-20261109/sitemap-metadata-change.json"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/32d8d531cfb05acaccb8dde5d4fd88206a68247dfbd55b792c5c143c186a5c8f/runtime-published-proof.json",
+      "sha256": "32d8d531cfb05acaccb8dde5d4fd88206a68247dfbd55b792c5c143c186a5c8f",
+      "originPath": "reports/opt-new-two-20261109/research/runtime-published-proof.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/opt-new-two-20261109/blobs/9078a2a16e287a29fe5eae39f88bb331c8b831ab00ef02e7c04c53a0a93f2e37/inspected-facts.md",
+      "sha256": "9078a2a16e287a29fe5eae39f88bb331c8b831ab00ef02e7c04c53a0a93f2e37",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "IRS source or rule changes before release",
+      "scope": "Federal HSA/FSA paperwork, timing and conditional DPCSA reimbursement",
+      "originPath": "reports/opt-new-two-20261109/research/inspected-facts.md"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "phase0Approval": {
+    "source": "Root explicit user same-as-previous end-to-end publication authority in bounded task; automatic continuation under _mindmap-execution.md.",
+    "approvedManifest": "6f3860edec39d83308e88d80b02824131cada5931ea3a2ef8989a264c842a626"
+  },
+  "affectedRoutes": [
+    "/guides/"
+  ],
+  "perRouteReviewCounters": {
+    "/guides/hsa-fsa-reimbursement-checklist": {
+      "reviews": 0,
+      "reworks": 0
+    },
+    "/guides": {
+      "reviews": 0,
+      "reworks": 0
+    }
+  },
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/opt-new-two-20261109/handoff-audit-1.json",
+    "sha256": "c86404e8635e5db710339a2737c6ddfe423c10d47f24a39c1ab42a0f506068dd"
+  }
+}
+

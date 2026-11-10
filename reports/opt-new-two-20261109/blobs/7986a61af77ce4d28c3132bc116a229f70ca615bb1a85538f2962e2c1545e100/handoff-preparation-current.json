@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "siteId": "jht243/modernwallet",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "opt-new-two-wallet-reimbursement-20261109",
+  "producer": "safe-medication-guide",
+  "nextAction": "Independently review complete preparation for one bounded reimbursement paperworkguide. Confirm exactintentdedup/sourcecounterexamples/labels/nativefields. No content drafted yet; do not reserve editorial contentround.",
+  "routes": [
+    "/guides/hsa-fsa-reimbursement-checklist"
+  ],
+  "candidates": [
+    {
+      "path": "reports/opt-new-two-20261109/blobs/ffbf099c8ae2176df8cb34a5657c8983b31997bf17c11109e15999d4252953d4/approval-manifest.json",
+      "sha256": "ffbf099c8ae2176df8cb34a5657c8983b31997bf17c11109e15999d4252953d4",
+      "originPath": "reports/opt-new-two-20261109/approval-manifest.json"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/acd117430bfdcff4f647b0ba9dfd7d9f81a1e6ca3a8500d49617bc0576e16d98/readiness.md",
+      "sha256": "acd117430bfdcff4f647b0ba9dfd7d9f81a1e6ca3a8500d49617bc0576e16d98",
+      "originPath": "reports/opt-new-two-20261109/readiness.md"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/290df0c4941f0dadb390ed3d0f0f267c3d774e1dfdfaeb62a9ccfe1923a6cc5b/application.json",
+      "sha256": "290df0c4941f0dadb390ed3d0f0f267c3d774e1dfdfaeb62a9ccfe1923a6cc5b",
+      "originPath": "reports/opt-new-two-20261109/application.json"
+    },
+    {
+      "path": "reports/opt-new-two-20261109/blobs/4d42cf56c2e00ffe86ce2da722858582fd1ed5c7e2ff30d489d14a274f7f88fd/average-hsa-balance-inspection.txt",
+      "sha256": "4d42cf56c2e00ffe86ce2da722858582fd1ed5c7e2ff30d489d14a274f7f88fd",
+      "originPath": "reports/opt-new-two-20261109/research/average-hsa-balance-inspection.txt"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/opt-new-two-20261109/blobs/9078a2a16e287a29fe5eae39f88bb331c8b831ab00ef02e7c04c53a0a93f2e37/inspected-facts.md",
+      "sha256": "9078a2a16e287a29fe5eae39f88bb331c8b831ab00ef02e7c04c53a0a93f2e37",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "IRS source or rule changes before release",
+      "scope": "Federal HSA/FSA paperwork, timing and conditional DPCSA reimbursement",
+      "originPath": "reports/opt-new-two-20261109/research/inspected-facts.md"
+    }
+  ],
+  "findings": [],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "previous": {
+    "path": "reports/opt-new-two-20261109/blobs/d974620635d2270a65d57e1aac581c1400f4f29d9b79048f89512fb8595de871/handoff-preparation.json",
+    "sha256": "d974620635d2270a65d57e1aac581c1400f4f29d9b79048f89512fb8595de871",
+    "originPath": "reports/opt-new-two-20261109/handoff-preparation.json"
+  }
+}

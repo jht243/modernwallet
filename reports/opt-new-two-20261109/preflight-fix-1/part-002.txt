@@ -1,0 +1,52 @@
+mburses qualified expenses incurred during your coverage period and requires third-party substantiation. Some qualifying debit-card transactions need no additional information.",
+      "evidence": "Top answer must preserve the material card-substantiationexception already correctly stated later, rather than imply everypayment requires a separate written claim beforehand.",
+      "source": "IRS969 FSA Distributions; closedF06-F09"
+    },
+    {
+      "id": "W1-F08",
+      "status": "open",
+      "quote": "| Document field | Practical purpose |\n|---|---|\n| Provider or facility name | Identifies the independent party that delivered the care or medical product |\n| Patient name | Shows the expense was incurred for an eligible individual |\n| Item or service description | Establishes whether the expense represents diagnosis, cure, mitigation, treatment, or prevention of disease |\n| Date of service or purchase | Confirms the expense occurred within the allowable HSA or FSA timing window |\n| Total charge and patient responsibility | Shows the exact unreimbursed dollar amount owed after any adjustments |",
+      "replacement": "| Document field | Practical purpose |\n|---|---|\n| Provider or facility name | Identifies the independent party that delivered the care or medical product |\n| Patient name | Identifies who received the care so you can check beneficiary eligibility |\n| Item or service description | Helps you assess the medical purpose against the applicable account rules |\n| Date of service or purchase | Provides the date to compare with account establishment or coverage dates |\n| Total charge and patient responsibility | Shows the exact unreimbursed dollar amount owed after any adjustments |",
+      "evidence": "Names/descriptions/dates are useful records but do not independently establish eligibleperson, medicalpurpose or accounttiming. Keep tablefieldpurpose conditional and consistent with invoice-not-eligibility finding.",
+      "source": "IRS969 qualification/records; IRS502 medicaldefinition; closedF16/F21"
+    },
+    {
+      "id": "W1-F09",
+      "status": "open",
+      "quote": "Taking these steps in sequence prevents duplicate claims and ensures your records align with federal tax rules.",
+      "replacement": "These checks help you identify duplicate payments and missing records before requesting reimbursement.",
+      "evidence": "The steps support checking; they cannot guarantee prevention or taxcompliance for everyexpense or plan.",
+      "source": "closedF18/F19/F27"
+    },
+    {
+      "id": "W1-F10",
+      "status": "open",
+      "quote": "Always save your receipts until your administrator confirms the expense is approved.",
+      "replacement": "Keep your receipts and substantiation confirmations with your claim records.",
+      "evidence": "Approval is not a supported enddate for keeping records. The sources and brief do not establish a universal retentionperiod or permission to discard records afterapproval.",
+      "source": "closedF04/F19"
+    },
+    {
+      "id": "W1-F11",
+      "status": "open",
+      "quote": "[IRS Publication 502](https://www.irs.gov/publications/p502) clarifies that expenses qualifying for tax-free medical spending are those paid for the diagnosis, cure, mitigation, treatment, or prevention of disease, or for affecting any structure or function of the body.",
+      "replacement": "[IRS Publication 502](https://www.irs.gov/publications/p502) defines medical expenses to include diagnosis, treatment and prevention of disease, and care affecting body structure or function. The medical purpose still has to meet the applicable HSA or FSA rules.",
+      "evidence": "Publication502primarilygoverns the itemized deduction. Do not attribute a complete tax-freeHSA/FSArule to its medicaldefinition or let the definition alone establish eligibility. Narrow this34wordlist and retain actualaccount-specificconditions.",
+      "source": "IRS502 Introduction/MedicalExpenses; IRS969; closedF13-F15"
+    },
+    {
+      "id": "W1-F12",
+      "status": "open",
+      "quote": "When filing an FSA claim, upload your independent third-party statement and complete the required certification that no other plan has reimbursed the balance.",
+      "replacement": "For an FSA claim, submit the required third-party statement and no-other-payment certification in the format your administrator requests.",
+      "evidence": "No universal upload process is established; actualadministratorinstructions govern format. Retain substantiveFSArequirements without inventing a single channel.",
+      "source": "IRS969FSA; closedF07/F27"
+    }
+  ],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/opt-new-two-20261109/handoff-fix-1.json",
+    "sha256": "b75af01dc1735bf17e8a9d9a86cf4e0603a081f79608eb7deba6ba43646b9ca8"
+  }
+}
+

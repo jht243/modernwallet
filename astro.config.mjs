@@ -20,6 +20,7 @@ export default defineConfig({
     filter: (page) => !isNoindexedPath(new URL(page).pathname),
     serialize(item) {
       const pathname = new URL(item.url).pathname;
+      if (pathname === "/guides/hsa-fsa-reimbursement-checklist/") return { ...item, lastmod: new Date("2026-11-09T00:00:00.000Z") };
       if (BENEFITS_PATHS.has(pathname)) return { ...item, lastmod: new Date("2026-11-04T00:00:00.000Z") };
       if (pathname === CANCEL_PLANNER_PATH) return { ...item, lastmod: new Date(`${CANCEL_PLANNER_UPDATED}T00:00:00.000Z`) };
       if (pathname === ROBINHOOD_GOLD_PATH) return { ...item, lastmod: new Date(`${ROBINHOOD_GOLD_UPDATED}T00:00:00.000Z`) };

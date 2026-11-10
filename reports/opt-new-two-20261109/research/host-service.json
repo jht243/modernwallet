@@ -1,0 +1,36 @@
+{
+  "autoDeploy": "yes",
+  "autoDeployTrigger": "commit",
+  "branch": "main",
+  "createdAt": "2026-06-27T18:33:36.81253Z",
+  "dashboardUrl": "https://dashboard.render.com/static/srv-d901evv7f7vs739n02b0",
+  "environmentId": "evm-d7jajc57vvec738qn7tg",
+  "id": "srv-d901evv7f7vs739n02b0",
+  "name": "modernwallet",
+  "notifyOnFail": "default",
+  "ownerId": "tea-d40dhfbuibrs73b9cgbg",
+  "repo": "https://github.com/jht243/modernwallet",
+  "rootDir": "",
+  "serviceDetails": {
+    "buildCommand": "npm ci && npm run build",
+    "buildPlan": "starter",
+    "ipAllowList": [
+      {
+        "cidrBlock": "0.0.0.0/0",
+        "description": "everywhere"
+      }
+    ],
+    "previews": {
+      "generation": "off"
+    },
+    "publishPath": "dist",
+    "pullRequestPreviewsEnabled": "no",
+    "renderSubdomainPolicy": "enabled",
+    "url": "https://modernwallet.onrender.com"
+  },
+  "slug": "modernwallet",
+  "suspended": "not_suspended",
+  "suspenders": [],
+  "type": "static_site",
+  "updatedAt": "2026-11-09T23:38:33.800072Z"
+}

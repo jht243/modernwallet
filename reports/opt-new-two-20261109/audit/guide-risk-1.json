@@ -1,0 +1,162 @@
+{
+  "profile": "high",
+  "maximumRounds": 3,
+  "textSha256": "82208aa595fbbf49873509df0e183f15ecf1d8c1d34219fe7e8d278434161151",
+  "riskPassages": [
+    {
+      "term": "medical",
+      "quote": "mber 9, 2026 To prepare a health account reimbursement claim, match an itemized medical record to your coverage dates, confirm no other plan paid the balance, and foll"
+    },
+    {
+      "term": "medical",
+      "quote": "ary rules from the Internal Revenue Service (IRS) . An HSA reimburses qualified medical expenses incurred after the account is established under state law. You keep th"
+    },
+    {
+      "term": "medical",
+      "quote": "-of-pocket share qualifies for reimbursement. You also cannot claim an itemized medical deduction on Schedule A (Form 1040) for any medical expense paid with tax-free "
+    },
+    {
+      "term": "medical",
+      "quote": "so cannot claim an itemized medical deduction on Schedule A (Form 1040) for any medical expense paid with tax-free funds from an HSA or an FSA. Tools for this journey "
+    },
+    {
+      "term": "medical",
+      "quote": "er or facility name Identifies the independent party that delivered the care or medical product Patient name Shows the expense was incurred for an eligible individual "
+    },
+    {
+      "term": "diagnosis",
+      "quote": "dividual Item or service description Establishes whether the expense represents diagnosis, cure, mitigation, treatment, or prevention of disease Date of service or purch"
+    },
+    {
+      "term": "treatment",
+      "quote": "ription Establishes whether the expense represents diagnosis, cure, mitigation, treatment, or prevention of disease Date of service or purchase Confirms the expense occu"
+    },
+    {
+      "term": "disease",
+      "quote": "the expense represents diagnosis, cure, mitigation, treatment, or prevention of disease Date of service or purchase Confirms the expense occurred within the allowable "
+    },
+    {
+      "term": "medical",
+      "quote": "rdkeeping IRS Publication 969 states that an HSA can pay or reimburse qualified medical expenses incurred after the account is established. State law determines when a"
+    },
+    {
+      "term": "medical",
+      "quote": " in your personal files showing that all distributions paid exclusive qualified medical expenses. Your HSA records must establish three things: The distributions paid "
+    },
+    {
+      "term": "medical",
+      "quote": "rds must establish three things: The distributions paid or reimbursed qualified medical expenses incurred after the account was established. The medical expenses were "
+    },
+    {
+      "term": "medical",
+      "quote": "rsed qualified medical expenses incurred after the account was established. The medical expenses were not previously paid or reimbursed from another source. You did no"
+    },
+    {
+      "term": "treat",
+      "quote": "026-5, Internal Revenue Bulletin 2026-02 , question 19 explains that an HSA may treat a substantiated fee for a qualifying direct primary care service arrangement (D"
+    },
+    {
+      "term": "medical",
+      "quote": "cation 969 explains that health FSA distributions generally reimburse qualified medical expenses incurred during your actual period of coverage. An FSA cannot advance "
+    },
+    {
+      "term": "medical",
+      "quote": "FSA cannot advance reimburse future or projected expenses. You must receive the medical care before an FSA can issue reimbursement. Plan documents determine whether yo"
+    },
+    {
+      "term": "medical",
+      "quote": "im requires written statements from an independent third party showing that the medical expense was incurred and listing the exact amount. The employee must also provi"
+    },
+    {
+      "term": "medical",
+      "quote": "s the expense is approved. Membership Fees Need a Separate Check Fixed periodic medical membership fees require careful analysis before you submit a claim or withdraw "
+    },
+    {
+      "term": "medical",
+      "quote": "does not automatically transform a nonqualified membership fee into a qualified medical expense. IRS Publication 502 clarifies that expenses qualifying for tax-free me"
+    },
+    {
+      "term": "medical",
+      "quote": "al expense. IRS Publication 502 clarifies that expenses qualifying for tax-free medical spending are those paid for the diagnosis, cure, mitigation, treatment, or prev"
+    },
+    {
+      "term": "diagnosis",
+      "quote": "s that expenses qualifying for tax-free medical spending are those paid for the diagnosis, cure, mitigation, treatment, or prevention of disease, or for affecting any st"
+    },
+    {
+      "term": "treatment",
+      "quote": "r tax-free medical spending are those paid for the diagnosis, cure, mitigation, treatment, or prevention of disease, or for affecting any structure or function of the bo"
+    },
+    {
+      "term": "disease",
+      "quote": "are those paid for the diagnosis, cure, mitigation, treatment, or prevention of disease, or for affecting any structure or function of the body. Amounts spent for gene"
+    },
+    {
+      "term": "clinical",
+      "quote": "cluded. If an agreement bundles administrative services, wellness benefits, and clinical access together, request an itemized description of included services from the "
+    },
+    {
+      "term": "medical",
+      "quote": "ifying DPCSA as an arrangement where an individual receives solely primary care medical services provided by qualifying primary care practitioners in exchange for a fi"
+    },
+    {
+      "term": "prescription",
+      "quote": "ic fee. The arrangement cannot include procedures requiring general anesthesia, prescription drugs other than vaccines, or laboratory tests not typically administered in an"
+    },
+    {
+      "term": "medical",
+      "quote": " expense due to missing details, request an itemized invoice directly from your medical provider. A confirmation receipt acknowledges that paperwork was received, but "
+    },
+    {
+      "term": "medical",
+      "quote": "t checklist by requesting an itemized invoice for your most recent unreimbursed medical expense and checking your account timing rules. Frequently Asked Questions Can "
+    },
+    {
+      "term": "medical",
+      "quote": "lf out of my HSA? Yes, you can reimburse yourself out of your HSA for qualified medical expenses incurred after the account was established under state law. You must m"
+    },
+    {
+      "term": "medical",
+      "quote": " showing your distributions were used exclusively to pay or reimburse qualified medical expenses. You do not submit these receipts with your tax return, but you must r"
+    },
+    {
+      "term": "medical",
+      "quote": "IRS Publication 969, expenses are only eligible for FSA reimbursement after the medical care has actually been provided during your active coverage period. Can I reimb"
+    },
+    {
+      "term": "medical",
+      "quote": "as actually been provided during your active coverage period. Can I reimburse a medical membership fee? A medical membership fee can only be reimbursed if it meets spe"
+    },
+    {
+      "term": "medical",
+      "quote": "during your active coverage period. Can I reimburse a medical membership fee? A medical membership fee can only be reimbursed if it meets specific federal tax criteria"
+    },
+    {
+      "term": "Medical",
+      "quote": "Health Savings Accounts and Other Tax-Favored Health Plans IRS Publication 502, Medical and Dental Expenses IRS Notice 2026-5, Internal Revenue Bulletin 2026-02 This g"
+    },
+    {
+      "term": "Medical",
+      "quote": "ard or commission at no cost to you.\nHealth Account Reimbursement Checklist for Medical Costs\nwidth=device-width, initial-scale=1.0\nAstro v4.16.19\nPrepare a health sav"
+    },
+    {
+      "term": "Medical",
+      "quote": " reimbursement.\nwebsite\nModernWallet\nHealth Account Reimbursement Checklist for Medical Costs\nPrepare a health savings account (HSA) or flexible spending account (FSA)"
+    },
+    {
+      "term": "Medical",
+      "quote": "/favicon-192.png\nsummary_large_image\nHealth Account Reimbursement Checklist for Medical Costs\nPrepare a health savings account (HSA) or flexible spending account (FSA)"
+    }
+  ],
+  "requiredFactualChecks": [
+    "centralFacts",
+    "truthfulEvidence",
+    "currentDetails",
+    "recommendationSupport",
+    "primarySources",
+    "consequentialClaims",
+    "limitationsAndJurisdiction",
+    "professionalReview"
+  ],
+  "fullSeoRequired": true
+}

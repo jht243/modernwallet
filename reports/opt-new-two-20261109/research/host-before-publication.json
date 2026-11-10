@@ -1,0 +1,19 @@
+[
+  {
+    "deploy": {
+      "id": "dep-dbp5i4rbc2fs73b5tei0",
+      "commit": {
+        "id": "9e3ab1c955dfa2e49bd75ba2c4c112fc5827c2ec",
+        "message": "competitor-monitor 2026-11-09: record dispositions, baseline, deployment evidence and published review journals\n\nChart: reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89.md; publication commit 5541f2a0ff26ab679d6a1d27a8f53bc86c04456a\n\nCo-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01YLDLKCHCAMoMPAkaj8bUeg",
+        "createdAt": "2026-11-09T23:36:41Z"
+      },
+      "status": "live",
+      "trigger": "new_commit",
+      "createdAt": "2026-11-09T23:36:51.009932Z",
+      "updatedAt": "2026-11-09T23:38:33.797671Z",
+      "startedAt": "2026-11-09T23:36:51.008551Z",
+      "finishedAt": "2026-11-09T23:38:33.797475Z"
+    },
+    "cursor": "FRUrRQxnqKlpNHJiYzJmczczYjV0ZWkw"
+  }
+]

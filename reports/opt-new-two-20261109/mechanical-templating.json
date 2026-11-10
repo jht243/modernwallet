@@ -1,0 +1,35 @@
+{
+  "sourcePath": "src/data/guides.ts",
+  "beforeSha256": "b0a37e1867d190bc1f969297a04b8d458c0fd24681426a0630135f0e9525b3fa",
+  "afterSha256": "3c4ef49fc613bfc65d04334d212bf06e2b53dc7041c1233ade34beb17fb52ae0",
+  "draftPath": "reports/opt-new-two-20261109/drafts/hsa-fsa-reimbursement-checklist.json",
+  "template": "Native Guide fields only, single object insertion; all existing store bytes retained.",
+  "mechanicalChanges": [
+    {
+      "field": "title",
+      "from": "Health Account Reimbursement Checklist",
+      "to": "Health Account Reimbursement Checklist for Medical Costs",
+      "basis": "Exact independently approved metadata56chars."
+    },
+    {
+      "field": "cardBlurb",
+      "from": "",
+      "to": "Organize your medical expense records for health account reimbursement.",
+      "author": "safe-medication-guide",
+      "basis": "One bounded source-supported card description, missing nativefield after checker deleted universal requiredinvoiceclaim. Single clarifying sentence exception, subject to complete independent review."
+    },
+    {
+      "fieldsDropped": [
+        "metaTitle",
+        "subtitle",
+        "ctaTitle",
+        "ctaText",
+        "ctaButton",
+        "faqItems"
+      ],
+      "basis": "Generic schema placeholder keys unused by this site; no reader prose changed."
+    }
+  ],
+  "provisionalBodyWords": 1610,
+  "lint": "No native script; slugunique, requiredfields populated, metadata56/148, dateNov9, TitleCaseheadings, noHTML/em dash. Semantic opener/rhythm/factual qualifications reserved for independent reader."
+}

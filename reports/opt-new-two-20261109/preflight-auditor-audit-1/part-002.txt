@@ -1,0 +1,73 @@
+s a page by itself (2026-10-08 keyword-gap: both drafts were dropped as "failed the audit twice" after one fix round, while same-day mindmap pages with thinner fact lists shipped after their second). Only what `fix` lists as NOT FIXABLE IN PLACE, a page its fixes push under the depth floor, an auditor note that the floor can only be met by restating facts, or a page still failing after 3 fix rounds goes to Rung 2.
+
+### Rung 2 — REWORK (back to the writer, this page only)
+
+Reserved for findings that need new substance, new research, or a structurally different page:
+
+- a claim `content_gen.py fix` reported NOT FIXABLE IN PLACE (the page needs a fact it does not have)
+- depth under the floor after unsupported claims were removed, or a page that can only reach its floor by restating the same facts: EXPAND THE CLOSED FACT LIST with sourced facts first (the draft meta's `thin fact list` flag says so), then regenerate; never pad, never loosen the audit
+- an experience claim `_experience.md` does not license
+- the wrong register for what the page does
+- depth under the floor for its page type
+- a missing required page element (direct answer up top, who-this-is-not-for, what-would-change-our-answer, the proprietary anchor)
+- a dead-end problem the page raises and never resolves
+- a section that has to be rewritten rather than repaired
+
+Hand the reviewer's notes for **that page only** to the writer phase and re-run it for that page. A regenerated API page gets the claim check again automatically; anything the audit still finds goes back through Rung 1 `fix`, not straight to another rework. The reworked page then gets a full audit again, from Rung 0.
+
+**Max 2 rework attempts per page.** If a page still fails after its second rework, STOP this workflow and escalate its unresolved findings. Do not commit, push or publish. Preserve unrelated work and the review evidence for unchanged pages; do not silently drop the failed page and continue publication.
+
+---
+
+## PER-PAGE PASS STATE
+
+A page that PASSED stays passed. Fixing or reworking one page does not re-open the audit on its siblings, and the rework counter is **per page**, never per phase. This is what stops one bad page from consuming both attempts on behalf of a batch that was otherwise fine.
+
+This does not weaken the re-audit invariant: a page whose own text changed is always re-checked on that exact text (Rung 1 re-reads the edited fields in context; Rung 2 re-audits the page in full). What is forbidden is re-auditing a page whose bytes did not change.
+
+The reviewer report ends with one line per page:
+
+```
+<page>: PASS | FIX-IN-PLACE (n) | REWORK (attempt k/2) | BLOCKED — <reason>
+```
+
+## STOP AND ESCALATE WHEN
+
+- any page still fails after two rework attempts, or
+- a rung cannot be executed at all (the lint script is broken, a canonical standard file is missing, the reviewer subagent cannot run).
+
+Then STOP the workflow and report the outstanding notes. Do not commit, push or publish while the required review is unresolved. Preserve unrelated work and retain valid evidence for unchanged pages.
+
+[Source: .claude/commands/_content-review-policy.md]
+# Claim-based review depth and one per-page audit budget
+
+Owner instruction, 2026-11-08. Applies to Mindmap Pass and routines that hand content to it across the fleet. This contract supersedes older uniform factual depth, separate fix-round allowances and separate two-rework limits for ordinary editorial content. It does not change Phase 0 authorization, independent preparation/chart review, publication scope, full SEO, source/testing honesty, site exclusions, professional obligations or native paid-client/upsell release policies. Never use a budget cap as approval of material falsehoods.
+
+## Depth follows actual claims
+
+The site's `.claude/content-review-policy.json` supplies its default and floor. LIGHT has at most ONE independent content-review round; STANDARD at most TWO; HIGH at most THREE. These are ceilings, never targets: publish after the first genuine PASS once all normal release checks succeed.
+
+- LIGHT: ordinary grooming, reading and product-use guides. Check central facts, truthful evidence/testing language and the reader's answer. Do not perform clinical/legal investigations on content that makes no such claims.
+- STANDARD: general AI/software/product comparisons. Also verify material prices, availability, capabilities, important numbers and recommendation conditions from appropriate sources.
+- HIGH: medical/treatment, consequential legal/financial/investment/security/safety claims and stricter site floors. Add current primary sources, conditions/units/jurisdictions, contrary evidence and any genuinely required professional review. Three AI rounds never substitute for required professional review.
+
+Every level keeps the complete applicable SEO/intent/demand/deduplication, usefulness, attribution, testing-label, indexability, link, schema/date, rendered-layout and exact-live checks. Preserve specific local owner exemptions, including American Pivot's existing no-keyword/demand-gate scope. A health or safety claim on a nominally low-risk site escalates. A risk word occurring only in a related URL is not itself a consequential claim. Incidental visible mentions need exact-passage explanations, independently checked; missing/uncertain classification stays HIGH. Review all actual reader claims, including inherited text and descriptive metadata/schema. Do not hide a risky paragraph or reclassify genuine advice as incidental to obtain a cheaper profile.
+
+## One actual counter, including corrections
+
+The initial independent content audit is round 1. Every subsequent independent AI verification counts too, whether called `fix-in-place`, claim check, final QA, rework or re-audit. The three old fix rounds and two old rework attempts do NOT create extra allowances. Deterministic lint/build/link/hash checks and the separate preparation/chart review do not consume editorial rounds and cannot make an editorial PASS. A writer's internal validation does not replace the independent audit or create an additional independent-review budget.
+
+Track each canonical site/page in the append-only journal managed by `.claude/tools/content-review-policy.py`. Retain actual source-bound reports, findings, attempts and canonical job across retries/conversations; a different run ID or draft filename cannot reset the counter. Import actual pre-existing content-review reports in their real order on resumption. Never count a chart review as a content review, manufacture missing reports, omit prior failed reviews or convert a failure into PASS.
+
+After the limit, stop editorial work on that page. Preserve material unresolved errors and report it held; an authorized unattended run may continue with genuinely passing independent pages under its existing rules. Minor preferences may be advisory only when the actual reviewer finds the existing standard satisfied. Do not downgrade a genuine blocker merely because the budget is exhausted. No additional human gate is created.
+
+## Existing Phase 4 integration
+
+1. Mark the normal render manifest with `workflowKind: "mindmap-pass"` before capture. Use the existing production-path full capture after all content/template/link changes. Capture attaches the active policy hash; it is not approval.
+2. The independent auditor uses `content-review-policy.py classify --snapshot SNAPSHOT --route ROUTE` to see the site's provisional profile, actual risk passages and text hash. The reviewer writes a genuine `riskAssessment` with `textSha256`, a specific `rationale`, `consequentialClaims` (exact quote, category and reason) and `incidentalMentions` (exact contextual quote and reason). HIGH needs no repetitive explanation of every medical keyword; lower classifications must account for all flagged passages. Quotes/reasons must describe the actual page, not copied fixture answers.
+3. BEFORE the independent content audit, reserve its actual round:
+
+   `python3 .claude/tools/content-review-policy.py reserve --snapshot SNAPSHOT --route ROUTE --job-id ORIGINAL_JOB --reviewer ACTUAL_AUDITOR --out NEW_ADMISSION.json`
+
+   For a legacy unfinished job, repeat `--prior-review ACTUAL_OLD_REPORT.json` for every real previous content round. An already pending identical reservation is resumed; it is not permission to audit a changed draft without another slot. The first independent judgment can resolve a conservative provisional risk classification; later rounds cannot lower the established risk or erase history.
+4. The real rendered review keeps all existing seven checks, author/reviewer independence and exact fingerprints. Each route additionally carries `reviewProfile`, its actual independent `riskAssessment`, `reviewBudget: {path, sha256}` referencing the reservation, and evidence-backed `factualReview` fields. LIGHT requires `centralFacts`, `truthfulEvidence`; STANDARD adds `currentDetails`, `recommendationSupport`; HIGH adds `primarySources`, `conse

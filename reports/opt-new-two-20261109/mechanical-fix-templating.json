@@ -1,0 +1,12 @@
+{
+  "sourceWords": 1643,
+  "preservedIndexFields": [
+    "h1",
+    "title",
+    "cardBlurb",
+    "tools.length",
+    "sections.length"
+  ],
+  "mechanicalFormatting": "Restore blank line between last Q19 expense-date bullet and subsequent existing paragraph; no reader words altered. Nativefix trimmed delimiter.",
+  "metadata": "Approved title/card retained as in initial mechanical templating. No sharedpage/template changes."
+}

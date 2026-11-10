@@ -1,0 +1,20 @@
+{
+  "kind": "owner-authorized-review-waiver",
+  "jobId": "opt-new-two-wallet-reimbursement-20261109",
+  "instruction": "no second review for modernwallet, just go live with what you have now",
+  "authority": "Explicit latest user instruction relayed by root; bounded ModernWallet second editorial review only.",
+  "candidate": {
+    "path": "reports/opt-new-two-20261109/candidate-native-round2.json",
+    "sha256": "2be61d923f8ddaf810562474e034f73f22d7e2a072e9cd03d060234d82193aa9",
+    "sourceBodyWords": 1643
+  },
+  "renderedSnapshot": {
+    "path": "reports/opt-new-two-20261109/snapshot-2.json",
+    "sha256": "2689a364850626539ca3d4227b7c4c8551d88ecd5f332da3936d93b009916188"
+  },
+  "firstReview": "FAIL, 12 exact findings preserved in audit/findings-1.json",
+  "corrections": "All12 mechanically replayed exact independently supplied replacements; nativefix11 and logged exactRung1FAQ source-IDguard rejection.",
+  "secondReview": "WAIVED by owner, no final independent PASS claimed",
+  "reviewState": "review-state-at-owner-waiver.json retains actual native admissions/counters, including any pending reservation",
+  "mechanicalScope": "Existing full build passed after corrections; verify exact current source/build and production host/render before IndexNow. No policy/helper/code repairs or fabricated review."
+}

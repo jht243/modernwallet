@@ -1,0 +1,26 @@
+[
+  {
+    "id": "irs969",
+    "url": "https://www.irs.gov/publications/p969",
+    "status": 200,
+    "checkedAt": "2026-11-09",
+    "path": "reports/opt-new-two-20261109/research/irs969.html",
+    "sha256": "ba4bedb376c582f2e66f591199d5f03a55b9f5e4aa9e22010b81cd3546e4ece0"
+  },
+  {
+    "id": "irs502",
+    "url": "https://www.irs.gov/publications/p502",
+    "status": 200,
+    "checkedAt": "2026-11-09",
+    "path": "reports/opt-new-two-20261109/research/irs502.html",
+    "sha256": "4775b719da076c53d04f53cf701b62a161c17bcf6089306ee126a71e129f7493"
+  },
+  {
+    "id": "irs-notice2026-5",
+    "url": "https://www.irs.gov/irb/2026-02_IRB",
+    "status": 200,
+    "checkedAt": "2026-11-09",
+    "path": "reports/opt-new-two-20261109/research/irs-notice2026-5.html",
+    "sha256": "ea767a78316b24c54bde5fe9bb661b2143b14e2e6fb3f23a78f4e8ee9b00d8a2"
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "path": "reports/content-review-journals/eb1aa08ba25730d5bdb6a4c555c270ee2ab05a309e72359230061b91050628f4.jsonl",
+    "events": [
+      {
+        "data": {
+          "cycleId": "5e2deee3659f49639fa7dca5df1102c1",
+          "jobId": "opt-new-two-wallet-reimbursement-20261109",
+          "profile": "high"
+        },
+        "eventSha256": "d39dc7866d3c2384d0d15afd29401e28033c1b7d61efbaf88fe5541bb97cacf6",
+        "identity": {
+          "canonicalBase": "https://themodernwallet.com",
+          "route": "/guides",
+          "siteId": "jht243/modernwallet"
+        },
+        "kind": "begin",
+        "previous": null,
+        "recordedAt": "2026-11-10T03:19:36.943072+00:00"
+      },
+      {
+        "data": {
+          "admission": {
+            "path": "reports/opt-new-two-20261109/audit/index-admission-1.json",
+            "sha256": "d7b21f648f67280bac8ef63db89d8432ec678927773726b6eddcfca387e1c27b"
+          },
+          "fingerprint": "9d8402e051992ff7d1e1b0da2fbf8baeb9ccc9e2e76bfe4986ba28728e7eae6f",
+          "number": 1,
+          "reviewer": "fleet-guide-auditor"
+        },
+        "eventSha256": "b49e99563c440cfcb0415fc1d96475f9d1c3a29c5c33ecb618b6c52bb0c7f799",
+        "identity": {
+          "canonicalBase": "https://themodernwallet.com",
+          "route": "/guides",
+          "siteId": "jht243/modernwallet"
+        },
+        "kind": "reserve",
+        "previous": "d39dc7866d3c2384d0d15afd29401e28033c1b7d61efbaf88fe5541bb97cacf6",
+        "recordedAt": "2026-11-10T03:19:36.944278+00:00"
+      },
+      {
+        "data": {
+          "admission": {
+            "path": "reports/opt-new-two-20261109/audit/index-admission-1.json",
+            "sha256": "d7b21f648f67280bac8ef63db89d8432ec678927773726b6eddcfca387e1c27b"
+          },
+          "fingerprint": "9d8402e051992ff7d1e1b0da2fbf8baeb9ccc9e2e76bfe4986ba28728e7eae6f",
+          "number": 1,
+          "profile": "high",
+          "report": {
+            "path": "reports/content-review-journals/blobs/ad77e1fed64bf83232612e9b8d9ec8da25a220228842f0cec65258834b4bd1e2/rendered-review-1.json",
+            "sha256": "ad77e1fed64bf83232612e9b8d9ec8da25a220228842f0cec65258834b4bd1e2"
+          },
+          "reportObjectSha256": "6c107bfc082a7f7b538284de3d0472a897c4c14ec18bd17521bf0e0e6a044e86",
+          "verdict": "PASS"
+        },
+        "eventSha256": "d3cdb5c85f4353cd8dcef6f7b0abcad38c9055638fdebbcc053508d8a346f6af",
+        "identity": {
+          "canonicalBase": "https://themodernwallet.com",
+          "route": "/guides",
+          "siteId": "jht243/modernwallet"
+        },
+        "kind": "record",
+        "previous": "b49e99563c440cfcb0415fc1d96475f9d1c3a29c5c33ecb618b6c52bb0c7f799",
+        "recordedAt": "2026-11-10T03:31:07.319943+00:00"
+      }
+    ]
+  },
+  {
+    "path": "reports/content-review-journals/fc857fddf4f8543b2d78410a5491c9e6388ec45fb70b0d07fac633be31feb55f.jsonl",
+    "events": [
+      {
+        "data": {
+          "cycleId": "3c8d42ecb4c4434e8e3d053276481bd6",
+          "jobId": "opt-new-two-wallet-reimbursement-20261109",
+          "profile": "high"
+        },
+        "eventSha256": "a423cb76e6c889ceaa7c6154b5333911c73c7f55d950481838e7355c0e943bb5",
+        "identity": {
+          "canonicalBase": "https://themodernwallet.com",
+          "route": "/guides/hsa-fsa-reimbursement-checklist",
+          "siteId": "jht243/modernwallet"
+        },
+        "kind": "begin",
+        "previous": null,
+        "recordedAt": "2026-11-10T03:19:53.741960+00:00"
+      },
+      {
+        "data": {
+          "admission": {
+            "path": "reports/opt-new-two-20261109/audit/guide-admission-1.json",
+            "sha256": "3d55dae2ae59fbbab1e88269658da672cdc8c18c31374bc6e38fea82fa5575d7"
+          },
+          "fingerprint": "93ed10fd6b567321ce390335fd54ad6be4deadee1fdd57c72b0cc547741fbcc7",
+          "number": 1,
+          "reviewer": "fleet-guide-auditor"
+        },
+        "eventSha256": "343eb172a27b26740c982af1ab9e304478bc171987abd3215e7acaacf2e7a010",
+        "identity": {
+          "canonicalBase": "https://themodernwallet.com",
+          "route": "/guides/hsa-fsa-reimbursement-checklist",
+          "siteId": "jht243/modernwallet"
+        },
+        "kind": "reserve",
+        "previous": "a423cb76e6c889ceaa7c6154b5333911c73c7f55d950481838e7355c0e943bb5",
+        "recordedAt": "2026-11-10T03:19:53.743062+00:00"
+      },
+      {
+        "data": {
+          "admission": {
+            "path": "reports/opt-new-two-20261109/audit/guide-admission-1.json",
+            "sha256": "3d55dae2ae59fbbab1e88269658da672cdc8c18c31374bc6e38fea82fa5575d7"
+          },
+          "fingerprint": "93ed10fd6b567321ce390335fd54ad6be4deadee1fdd57c72b0cc547741fbcc7",
+          "number": 1,
+          "profile": "high",
+          "report": {
+            "path": "reports/content-review-journals/blobs/ad77e1fed64bf83232612e9b8d9ec8da25a220228842f0cec65258834b4bd1e2/rendered-review-1.json",
+            "sha256": "ad77e1fed64bf83232612e9b8d9ec8da25a220228842f0cec65258834b4bd1e2"
+          },
+          "reportObjectSha256": "6c107bfc082a7f7b538284de3d0472a897c4c14ec18bd17521bf0e0e6a044e86",
+          "verdict": "FAIL"
+        },
+        "eventSha256": "409723ce4c40c23bd5d823fe33adb104d82c3ade072cda9096cb3d78f5175c34",
+        "identity": {
+          "canonicalBase": "https://themodernwallet.com",
+          "route": "/guides/hsa-fsa-reimbursement-checklist",
+          "siteId": "jht243/modernwallet"
+        },
+        "kind": "record",
+        "previous": "343eb172a27b26740c982af1ab9e304478bc171987abd3215e7acaacf2e7a010",
+        "recordedAt": "2026-11-10T03:31:07.273865+00:00"
+      },
+      {
+        "data": {
+          "admission": {
+            "path": "reports/opt-new-two-20261109/audit/guide-admission-2.json",
+            "sha256": "9dc1e4d79054a0e104142757d043c75970199b451a7fd415d88b0c541b8f6f14"
+          },
+          "fingerprint": "af8c081dd5ac411889fc333d7523404dc497f5482b8249066209e695a578a1c7",
+          "number": 2,
+          "reviewer": "fleet-guide-auditor"
+        },
+        "eventSha256": "8635e4960284f3e00d1424e4270c2fa9d4048357c989802efdc167b63e09814b",
+        "identity": {
+          "canonicalBase": "https://themodernwallet.com",
+          "route": "/guides/hsa-fsa-reimbursement-checklist",
+          "siteId": "jht243/modernwallet"
+        },
+        "kind": "reserve",
+        "previous": "409723ce4c40c23bd5d823fe33adb104d82c3ade072cda9096cb3d78f5175c34",
+        "recordedAt": "2026-11-10T03:40:52.719711+00:00"
+      }
+    ]
+  }
+]

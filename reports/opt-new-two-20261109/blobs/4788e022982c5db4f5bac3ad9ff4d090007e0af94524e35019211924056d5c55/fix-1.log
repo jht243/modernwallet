@@ -1,0 +1,12 @@
+[content_gen] anthropic key CONTENT_ANTHROPIC_KEY unusable (HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access th) — trying the next key in the pool
+[content_gen] anthropic key CONTENT_ANTHROPIC_KEY_2 unusable (HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access th) — trying the next key in the pool
+[content_gen] claude-opus-5-5 failed -> claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {"type":"error","error":{"type":"invalid_request_error",
+[content_gen] ok model=gemini-3.8-flash in=7950 out=2106 think=4392 cached=0 cost≈$0.0303 FALLBACK
+[content_gen] complete(): FALLBACK USED -> gemini-3.8-flash (claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. )
+[content_gen] claude-opus-5-5 failed -> claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) — dry: CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'
+[content_gen] ok model=gemini-3.8-flash in=6088 out=97 think=8759 cached=0 cost≈$0.0378 FALLBACK
+[content_gen] complete(): FALLBACK USED -> gemini-3.8-flash (claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) — dry: CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2')
+[content_gen] NOTE hsa-fsa-reimbursement-checklist: 5 number(s) not traceable to the fact list -> auditor: ['1040', '18', '19', '8889', '969']
+[content_gen] fix round 1 on reports/opt-new-two-20261109/drafts/hsa-fsa-reimbursement-checklist.json: 11 finding(s) fixed in place, 1 not fixable in place, 0 further unsupported claim(s) deleted by the re-check; 1754 words (floor 1200); backup hsa-fsa-reimbursement-checklist.json.pre-fix-1
+[content_gen]    NOT FIXABLE IN PLACE (replacement adds ['19', '18'] not in SOURCE): 'A medical membership fee can only be reimbursed if it meets specific federal tax criteria. Fees for general health impro'
+[content_gen] RUN TOTAL caller=opt-new-two-20261109 calls=2 in=14,038 out=2,203 think=13,151 cost≈$0.0681

@@ -1,0 +1,68 @@
+ template/affiliate/link changes; verify the exact reviewed render live using `rendered-audit.py` and close deployment/measurement records. A read-only reviewer may write internal receipts. A loader receipt or worker assertion is not a review PASS. Preserve the sole Phase 0 human gate.
+<!-- /workflow-checkpoint-cron-v1 -->
+
+Make sure all article pages meet metadata length requirements (title/description), follow FAQ JSON, schema.org, and have good internal linking.
+
+**FAIL — heading not in Title Case.** Every H1 and section heading (H2/H3) must use Title Case: the first letter of each major word is capitalized. If any heading has a major word starting lowercase — e.g. `"Who Spark fits, and who should look elsewhere"`, `"Spark pros and cons"` — set fail with note `heading-case: [the heading]`. The fix is a one-field capitalization (capitalize the major words; keep minor words a/an/the/and/or/nor/but/for/to/of/in/on/at/by/with/from/vs/via/per lowercase unless first or last; preserve acronyms and brand casing like AI, API, SEO, GPT-5, iOS exactly — never lowercase them). FAQ `question` fields are exempt (they are questions, keep sentence casing).
+
+**FAIL — byline/date in body prose.** Reviewer byline + review date belong in the header/byline area + JSON-LD schema, never in body content. If any prose field (intro, sections, verdict, callouts, FAQ answers) contains a reviewer/author attribution or review-date sentence — e.g. "Reviewed by …", "Last updated …", "on [date]", "We research using …", "[Name], Founder of …" — set fail with note "byline-in-body: [field/heading]". Fix: delete it from prose and rely on the record's date fields + the template/schema byline.
+
+---
+
+## Advisory notes (record, do NOT block publication)
+
+These are NON-BLOCKING observations the reviewer records for the run summary. Do NOT set fail for any of them. The reviewer continues to auto-continue exactly as today.
+
+- **Low Information Gain** — if a section reads like conventional wisdom with no original example, case-specific insight, or non-obvious implication, note: "low information gain: [section heading]".
+- **AEO gap** — if a major section's opening sentence is a rhetorical question or transition phrase ("In this section…") rather than a self-contained declarative claim, note: "AEO: [section heading] does not open with a direct claim".
+- **Missed long-tail opportunity** (NOT a quota) — only if the page targeted broad head terms while ignoring a clearly relevant question-format query that had no stronger alternative and would have fit naturally, note: "missed long-tail: [topic]". Do NOT note this merely because a page lacks question-format headings/FAQs — a page already well-targeted to stronger keywords is correct as-is.
+- **Authorship missing** — if a YMYL page (compliance, finance, medical, legal) has Organization-only author, no Person JSON-LD, or no `reviewer`/`lastReviewed` in schema, note: "authorship: [missing element]". (The visible byline belongs in the header + schema — do NOT expect or reward a "reviewed by" line in body prose; that is a FAIL, see above.)
+- **Missing external link** — if the page names a clickable external entity that this project does NOT auto-link (a niche/newer tool, a specific company, a named law/standard, a cited study/dataset, or the source behind a statistic) without a link to its official primary source on first mention, note: "external link: [entity/source]". Do NOT flag entities the project auto-links at render time (common models/IDEs/AI-labs/benchmarks) — those stay plain text in the source.
+- **Not task-complete** — if the page redirects out (or thin-wraps an external link) without first answering the reader's intent on-page, or cites an aggregator instead of the first-party source, note: "task-complete: [issue]".
+
+A page with any/all of these notes and no hard-fail issues still passes audit.
+
+---
+
+---
+
+## ‼️ SELF-SERVING DISCLAIMER GATE — blocks the phase (MANDATORY — added 2026-08-21)
+
+**Never write a sentence asserting our own neutrality, independence, or lack of a financial interest.** This is a hard fail, not a style note. Strip every instance before the page ships.
+
+Banned constructions (non-exhaustive — judge by intent, not exact wording):
+- "Layer3 Labs does not resell / resells none of / does not refer / does not partner with…"
+- "We take no referral fee / no commission / no kickback from…"
+- "This ranking is independent." / "A note on objectivity:" / "Layer3 Labs is vendor-neutral."
+- "No paid placement" / "No sponsored placement" / "We don't take payment to be listed" / "Our rankings are editorial, not paid" — the site sells paid placements, so any claim it doesn't is false.
+- "We run our own repositories on this stack, so this is written from the position of someone who has to live with the choice."
+- Any variant that asks the reader to trust our motives rather than showing our reasoning.
+
+**Why this is a hard fail, on two independent grounds:**
+
+1. **It is frequently FALSE.** This repo auto-inserts `rel="sponsored"` affiliate links via the `ENTITY_LINKS` registry in `src/utils/sectionContent.tsx`. Any entity there with `sponsored: true` (Cursor, ElevenLabs, Murf, Apollo.io, Instantly.ai, Dext, Nutshell, Pinecone, Netlify, RunPod, Carepatron, Prezi, ZoomInfo — re-read the registry, it grows) earns us a referral fee **on that very page**. A page that autolinks Cursor and also says "we take no referral fee from Cursor" is publishing a false statement about a material financial relationship. On 2026-08-21 two such sentences shipped and had to be removed.
+2. **It does not work even when true.** Objectivity is demonstrated by the analysis: naming who should NOT pick our preferred option, stating what would change the verdict, and citing what each vendor actually publishes. Asserting neutrality adds nothing a skeptical reader will credit, and reads as protesting too much.
+
+**Auditor procedure — run this on every page in the phase:**
+```bash
+grep -inE "does not resell|do not resell|resells? none|takes? no (referral|commission|kickback)|no commission on|does not (refer|partner)|vendor.neutral|this (ranking|comparison|page) is independent|note on objectivity|we are not (paid|sponsored)|no financial (interest|stake)|no sponsored placement|not paid placements|(do not|don.t) (charge|take payment) to be (listed|included|ranked)" <the new/edited entries>
+```
+Any hit → **FAIL the page** and require removal. Delete the claim outright; do not soften it. Where the sentence also carried real methodology ("we weighed what each vendor publishes about X"), keep only the methodology half and drop the financial/neutrality assertion.
+
+**What to do instead:** nothing. Say what the page found and why. If a genuine affiliate relationship exists, that is handled by the site's affiliate-disclosure mechanism, **not** by prose in the body — and never by a sentence claiming the relationship does not exist.
+
+**Scope note:** this gate covers the pages THIS pass creates or edits. If the auditor notices the pattern on pre-existing pages, record it as an advisory finding for the human, do not mass-edit other pages inside this run.
+
+---
+
+## ‼️ DEPTH GATE — deterministic, blocks the phase (MANDATORY — added 2026-08-11, ported from `/new-site`)
+
+**This is not a reviewer judgment call and no subagent opinion overrides it.** Run it as the FIRST action of this phase and again as the last. It applies to `article` format rows only — spec-only (non-article) rows are exempt, since their deliverable is a spec, not prose.
+
+**Measurement — use the first rung that applies:**
+1. **If Phase 0 found a `check-depth` script in this repo** (`npm run check-depth`, installed by `/new-site`): run it. A non-zero exit **blocks this phase**. This is authoritative — it measures the built output, so it catches thinness the source view can miss.
+2. **Otherwise, measure from source.** For each new page record, concatenate every reader-facing prose field (intro + section bodies + FAQ answers + verdict) — excluding title, meta description, schema, `inlineCta`, CTA boilerplate, and code blocks — and word-count it. Do this with an actual command (e.g. pipe the extracted text through `wc -w`), never by eyeballing length.
+
+**Verdict:** compare each page against the floors table in `phase-3-new-content.md` (comparison/review 1,500 · persona 1,400 · hub/worth-it/explainer 1,200 · cost 1,000 · editorial 600; **explainer 1,200 is the default** for anything that doesn't clearly match another type). Any page under its floor is a **HARD FAIL** — hand it back to Phase 3 for expansion with real substance, and re-measure. It is not fixable by padding: a page that clears the floor but trips BAR 1 (AI filler) fails anyway, so expansion must add actual information.
+
+**Report the distribution, not per-page verdicts.** Print `passing / failing / median` across all article pages this run. Page-by-page review is structurally blind to run-wide thinness — a 300-word page reads as concise and o

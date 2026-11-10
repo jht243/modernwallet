@@ -1,0 +1,70 @@
+N}  | Per-row plan: "FLAG /page-a vs /page-b (same cluster) — recommend manual-consolidate / differentiate; **no edits, detection only**" |
+| 2 — Metadata           | {N}  | Per-row plan: "Rewrite metaTitle+desc on: {target 1}, {target 2}, ..." (or "skipped — no rows") |
+| 3 — New content        | {N}  | Per-row plan: "Create /route-a [article, page type + its depth floor — e.g. `comparison, ≥1,500 words`] — **answers "{reader_question}" in {answer_placement}**; create /route-b [calculator — user inputs X → outputs Y, BUILT in Phase 3c] — answers "{reader_question}"; ..." — name format for each row, the floor from the `phase-3-new-content.md` table, AND the chart's `reader_question` + `answer_placement` (cols 10–12) so the user approves the *question each page answers*, not just its topic |
+| 4 — Audit              | —    | "Adversarial review of {N} new pages from Phase 3" |
+| 5 — Body text          | {N}  | Per-row plan: "{target}: {section description} — answers "{reader_question}" at {answer_placement}; ..." |
+| 6 — Internal linking   | {N} + inbound | Per-row plan: "Add inbound to {target 1}, {target 2}; reinforce {N} Phase-3 pages with ≥3 inbound each" |
+| 7 — Sitemap + IndexNow | —    | "Add {N} routes; refresh lastmod on {N}; remove {N} consolidation losers; submit to IndexNow" |
+| 8 — Summary            | —    | "Print run summary, then auto-continue to Phase 9 (no approval stop)" |
+| 9 — Commit + deliver   | —    | "Single commit; push to {branch}; verify every affected live route and canonical; report failures; submit only verified live URLs to IndexNow after deployment; report SHA. Local-only scope excludes these publication actions and leaves deployment fields empty" |
+
+### Emerging search patterns detected this run (print directly above the phase table)
+
+This block makes the Lens 2 findings visible so the user reviews the *new search demand* — not just per-page tweaks — before approving. Source it from the chart's `## Emerging search patterns (clusters)` block:
+
+| Cluster (theme) | Member queries | Why emerging | Lever | Target | Format |
+|---|---|---|---|---|---|
+| {theme} | {q1; q2; q3} | {coverage gap / intent mismatch / rising} | {create new content / update existing body text / update existing metadata / flag→Phase 1} | {route or file} | {article / calculator / quiz/assessment / template / etc. — or n/a if lever isn't create-new-content} |
+
+- If zero clusters were detected, print exactly: **"⚠️ No emerging search patterns detected this run."** — and call it out explicitly, because emerging-pattern detection is a core tenet. A run with zero clusters AND only literal-intent rows is a signal the brief was too narrow or Lens 2's SEMRUSH expansion underperformed; tell the user so they can decide whether to re-run with a richer brief.
+- Each cluster's lever here must reconcile with the phase counts below (a `create new content` cluster is counted in Phase 3's rows, a `update existing body text` cluster in Phase 5, etc.).
+
+### Rules
+- **Rows column**: integer count of chart rows in that bucket, or `—` if the phase has no chart rows (audit, sitemap, summary, commit).
+- **Reader question is part of the approval.** Every Phase-3 and Phase-5 row in the Plan column carries the chart's `reader_question` **with its evidence tag** (`[PAA n/m <pattern>; ac n/m]`) and `answer_placement` (cols 10–12). A create/body row whose chart entry lacks them, or whose col 10 has no evidence tag, is an **Ambiguous / skipped** row (HARD STOP below) — the pass does not write a page whose question was never decided from evidence.
+- **Print the question-evidence flags above the phase table**, as their own short list, so the user sees them before approving: every row tagged `[verb-only — no PAA, no completions]` (the question is a guess, not a measurement) and every row tagged with half or more off-topic PAA (`[PAA 3/6 off-topic: lawyer salary]` — Google is not confident the phrase means what we think). Zero flags → print `Question evidence: every content row's question is PAA- or completion-backed.`
+- **Plan column**: must list the **actual targets and actions per row** — never just row numbers. Sourced from each chart row's `solution` / `target` columns, restated in one short clause per row, joined with semicolons. If a phase has zero rows, write `skipped — no rows` instead of leaving the cell blank.
+- **Omit rows whose count is 0** unless it's one of the always-present phases (4, 7, 8, 9). For 0-row buckets, write `skipped — no rows` in the Plan column instead of dropping the row.
+- **Ambiguous / skipped rows**: if any chart rows could not be classified, append a final row to the table:
+
+  | — | Ambiguous / skipped | {N} | "**HARD STOP** — list each ambiguous row + why it could not be classified. User must reclassify or remove before approving." |
+
+  If `N > 0` here, the gate cannot be approved until the user resolves them.
+
+### After printing the table
+
+Prompt the user with **exactly this question** (or its functional equivalent):
+> "Manifest above ({N} actionable rows across {M} phases, including {C} emerging search-pattern clusters). Approve to start Phase 1, or pause to revise the chart?"
+
+Acceptable approvals: "approve", "go", "start", "yes", or any clear affirmative.
+
+If the user declines or wants to revise: STOP cleanly. Do not start Phase 1. Wait for them to either edit the chart and re-run, or give new direction.
+
+Only after explicit approval, begin Phase 1.
+
+**Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.
+
+<!-- mindmap-execution-v1 -->
+Load `_mindmap-execution.md` and validate/render this exact chart from its independently reviewed manifest before presenting it. Preserve every full brief and the single evidenced preparation row; revalidate imported charts rather than accepting missing detail. The existing Phase 0 approval remains the sole human gate.
+<!-- /mindmap-execution-v1 -->
+
+[Source: .claude/commands/mindmap-pass/phase-3-new-content.md]
+<!-- workflow-source-freshness-v1 -->
+**WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+Run startup as a standalone command and inspect its actual exit code; never pipe it through head/tail/tee or continue after failure.
+Startup returns a fresh `runId` after verification; pass it via `--run-id` to this run's later startup checks and every `workflow-preflight.py prepare`. Never reuse an old run ID for a new routine, including in the same chat. A runner may instead supply a fresh per-invocation `WORKFLOW_RUN_ID` consistently.
+<!-- /workflow-source-freshness-v1 -->
+
+# Phase 3 — New content creation (API-generated — see `_content-generation.md`)
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 8. Use its exact text under this source/section context.]
+
+
+<!-- intent-takeaway-v1 -->
+**Intent-based takeaway:** Read `_decision-evidence.md` in the active project's `.claude/commands/`, especially “Close with a takeaway that answers the page's intent.” Pass the planned conclusion, applicable reader/task, actual evidence basis and decision-changing condition into the existing writer brief. Reuse a sufficient verdict; preserve the no-addition branch and local exclusions. For global commands, resolve/install the sibling shared contract in the active project while preserving local rules.
+<!-- /intent-takeaway-v1 -->
+
+<!-- decision-evidence-v1 -->
+## Decision evidence before drafting
+
+Read and apply `.claude/commands/_decision-evidence.md` inside this phase, before assembling the writer prompt. Reuse the approved reader question, produce the strongest feasible evidence and counterexample, then select the presentation. Calculators remain an option, not a quot

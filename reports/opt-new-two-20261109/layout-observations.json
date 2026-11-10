@@ -1,0 +1,15 @@
+{
+  "observer": "safe-medication-guide",
+  "scope": "Writer observation, not independent editorial approval",
+  "desktop": "Actual CUA screenshot shows native header, Jonathan Velez source-review byline/date and readable main column. Existing Grow sticky third-party ad occupies bottom viewport.",
+  "mobile": {
+    "viewport": "390x844",
+    "bodyScrollWidth": 375,
+    "tableWidth": 335,
+    "tableParentWidth": 335,
+    "observed": "Actual mobile screenshot shows wrapped readable H1/byline/intro without horizontal overflow. Table geometry fits; table itself not visually captured because anchor scroll/ad reflow showed TOC instead. Reviewer must inspect any remaining relevant layout.",
+    "temporaryViewportReset": true
+  },
+  "controls": "No custom interactive UI. Native source pill and native TOC links only.",
+  "sourceChangesAfterSnapshot": false
+}

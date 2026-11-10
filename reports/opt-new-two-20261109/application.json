@@ -1,0 +1,25 @@
+{
+  "actor": "safe-medication-guide",
+  "contextId": "/root/safe_medication_guide",
+  "contextEpoch": 2,
+  "preflight": "preflight-epoch2 complete33current",
+  "sourceHashes": {
+    ".claude/commands/_anti-ai-language.md": "59194cdd7f83f7423489faa07759e571c73ef993a681bd917faa8a6f1a6803ac",
+    ".claude/commands/_rendered-page-audit.md": "199e40d292b5c59f94fe6d9f56beeb4f4d2493b5a9a5cd011f6af32b2b595ef9",
+    ".claude/commands/_decision-evidence.md": "7f801f579fc9393e73a06d1ba0b91559a652318fe49bdbc91892ddc8c22ed719",
+    ".claude/commands/_content-standard.md": "c100ce0716ab042e4ee80f0cd6764a51cbe75238416ba0d350402dfe87f83786",
+    ".claude/commands/_experience.md": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f",
+    ".claude/commands/_testing-labels.md": "8a9dc3c646a583d7afe80339efb880be431a9f528e491ef0ea156bee4db053d9"
+  },
+  "understanding": "Current rules remain accessible and understood. ModernWallet uses JonathanVelez/native Guide object and source-only financial informational scope, HIGH ceiling3, no TESTED/professionalcredit. I will use one configured generation, exact targeted corrections, complete final build/render and independent review; no edits to inaccurate comparison or stale contribution guides.",
+  "application": {
+    "dedup": "coverage.txt plus hsa-existing-guide.json show benefits/contribution scope, zero receipts/reimbursements. New paperwork intent remains unmet.",
+    "source": "All3current IRS200 evidence inspected, Q19/Q20 counterexample closed before preparation.",
+    "takeaway": "One expense record with timing and no-doubleclaim checks; uncertain membership pauses for administrator.",
+    "format": "Plain existing Guide fields, finite checklist/table, no toolbuild. Native tools link points to IRS969 as reference.",
+    "links": "Automatic /guides/ native card provides one strong inbound. Existing broader HSA guide and comparison have material contribution-rule contradictions, so not used as advice links or edited to force3links. Outbound /guides/ generic hub only.",
+    "dates": "New guide published/updated2026-11-09 with native Article/FAQ/selfcanonical. Add one existing-pattern sitemap serialize condition for this exact guide route only with2026-11-09 lastmod; no workflow/helper/routing or template repair.",
+    "growth": "Existing ledger recent outcomes unknown, no proven prior uplift. Newroutebaseline notyetpublished and unavailableGSC; no inventedzero.",
+    "publication": "Actualremote9e3ab..., nativeRender modernwallet npmci/npmrunbuild staticdist. Privateindex owned guideobject/records only; unchangedsharedcode. WWWcanonical200exactreview/IndexNow after hostcommit."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "currentCandidate": "reports/opt-new-two-20261109/candidate-native-round2.json",
+  "currentSha256": "2be61d923f8ddaf810562474e034f73f22d7e2a072e9cd03d060234d82193aa9",
+  "restoredAlias": "reports/opt-new-two-20261109/candidate-native.json",
+  "provenOldBlob": "reports/opt-new-two-20261109/blobs/3b54a2e48e5a3e13c70b4e80182e70ba901122bb8c84b995c70b6deadae0507a/candidate-native.json",
+  "oldSha256": "3b54a2e48e5a3e13c70b4e80182e70ba901122bb8c84b995c70b6deadae0507a",
+  "scope": "Report alias only, original reviewer evidence hash restored. No native source/build/render/helper/counter change."
+}

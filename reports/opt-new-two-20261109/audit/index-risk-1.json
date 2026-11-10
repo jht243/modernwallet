@@ -1,0 +1,102 @@
+{
+  "profile": "high",
+  "maximumRounds": 3,
+  "textSha256": "83e271564cbda3c87a448980c8c93ea51915bb6516b0f934dc0e904963e4f62a",
+  "riskPassages": [
+    {
+      "term": "medical",
+      "quote": "calculator for every step. Health Account Reimbursement Checklist Organize your medical expense records for health account reimbursement. 1 tools \u00b7 7 steps How to Make"
+    },
+    {
+      "term": "fiduciary",
+      "quote": "ation, exam, experience and ethics requirements work, what a CFP professional's fiduciary duty covers, and what to look up before hiring one. 1 tools \u00b7 6 steps What Is a"
+    },
+    {
+      "term": "Fiduciary",
+      "quote": "aches differ, based on Investor.gov and CFPB pages. 1 tools \u00b7 6 steps What Is a Fiduciary? Which standard applies to an investment adviser, a broker-dealer or a Certifie"
+    },
+    {
+      "term": "Medical",
+      "quote": "ees, while VA disability compensation waits on Congress. 3 tools \u00b7 8 steps 2026 Medical Mileage Rate and the Charity and Military Moving Rates Medical and military mov"
+    },
+    {
+      "term": "Medical",
+      "quote": "s \u00b7 8 steps 2026 Medical Mileage Rate and the Charity and Military Moving Rates Medical and military moving miles are 20.5 cents, then 23.5 cents from July 1, 2026, an"
+    },
+    {
+      "term": "tax obligations",
+      "quote": "rk paying $15 to $125 or more per hour, but project droughts, unpaid setup, and tax obligations are common. 3 tools \u00b7 7 steps How to Make Money With ChatGPT Learn how to make "
+    },
+    {
+      "term": "Medical",
+      "quote": "their distinct impacts on your credit score. 3 tools \u00b7 8 steps How to Deal with Medical Debt A practical checklist for handling medical debt: review itemized bills, ap"
+    },
+    {
+      "term": "medical",
+      "quote": "ools \u00b7 8 steps How to Deal with Medical Debt A practical checklist for handling medical debt: review itemized bills, apply for hospital financial assistance, set up in"
+    },
+    {
+      "term": "fiduciary",
+      "quote": "Investment Advisor (RIA)? A registered investment advisor manages money under a fiduciary standard. Learn how RIAs get paid, who regulates them, and how to run a free pu"
+    },
+    {
+      "term": "medical",
+      "quote": "by Year A complete historical table of standard IRS mileage rates for business, medical, moving, and charity from 2010 to 2026. 1 tools \u00b7 7 steps How to Buy Treasury B"
+    },
+    {
+      "term": "treatment",
+      "quote": "nding, but using the money for business, investing, or education alters the tax treatment. 1 tools \u00b7 8 steps Can You Take a Loan From an IRA? Federal rules prohibit taki"
+    },
+    {
+      "term": "Fiduciary",
+      "quote": "ools \u00b7 7 steps How to Choose a Financial Advisor: A Step-by-Step Decision Guide Fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify a re"
+    },
+    {
+      "term": "Newborns",
+      "quote": " the taxes, and whether it's worth opening. 2 tools \u00b7 6 steps Trump Account for Newborns: The $1,000 Baby Seed Babies born 2025\u20132028 get a free $1,000 federal seed. Her"
+    },
+    {
+      "term": "newborns",
+      "quote": "orn 2025\u20132028 get a free $1,000 federal seed. Here is how the Trump account for newborns works and how to open one. 2 tools \u00b7 6 steps How to Open a Trump Account: A Ste"
+    },
+    {
+      "term": "treatment",
+      "quote": "P Sale or loan? The GAAP journal entries, reserve accounting, and balance-sheet treatment for factored invoices, with a worked example. 3 tools \u00b7 8 steps How to Get a Bu"
+    },
+    {
+      "term": "treats",
+      "quote": "es. 4 tools \u00b7 7 steps Will an Inheritance Affect Your SSI Benefits? See how SSI treats an inheritance, when to report it, and which tool protects it, step by step. 3 "
+    },
+    {
+      "term": "medical",
+      "quote": " Actually Claim Standard vs. itemized, the $40,400 SALT cap, mortgage interest, medical expenses, and the above-the-line write-offs you get either way. 4 tools \u00b7 8 ste"
+    },
+    {
+      "term": "Fiduciary",
+      "quote": "and what to enter for your job. 1 tools \u00b7 8 steps What Is a Certified Trust and Fiduciary Advisor (CTFA)? What it takes to earn a CTFA, and when you need one instead of "
+    },
+    {
+      "term": "Medical",
+      "quote": "rget nest egg, automate savings, and set up your investments. 3 tools \u00b7 8 steps Medical Loan Explained What a medical loan costs across credit tiers and how to avoid t"
+    },
+    {
+      "term": "medical",
+      "quote": "s, and set up your investments. 3 tools \u00b7 8 steps Medical Loan Explained What a medical loan costs across credit tiers and how to avoid the retroactive interest trap o"
+    },
+    {
+      "term": "treats",
+      "quote": "ng trust. 4 tools \u00b7 9 steps How Taxes on Options Trading Work Learn how the IRS treats options trades, including the tax rules for expiring worthless, exercising shar"
+    }
+  ],
+  "requiredFactualChecks": [
+    "centralFacts",
+    "truthfulEvidence",
+    "currentDetails",
+    "recommendationSupport",
+    "primarySources",
+    "consequentialClaims",
+    "limitationsAndJurisdiction",
+    "professionalReview"
+  ],
+  "fullSeoRequired": true
+}

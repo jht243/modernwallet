@@ -1,0 +1,22 @@
+{
+  "jobId": "opt-new-two-wallet-reimbursement-20261109",
+  "reviewCounters": {
+    "reviews": 1,
+    "reworks": 0
+  },
+  "nativeAttempt": "fix-1.log",
+  "actualNativeResult": "11 finding(s) fixed in place, 1 not fixable in place. Numericguard replacement adds [19,18] not in SOURCE. Actual IRS Q19/Q18 were already inspected in closed facts; no new factual source introduced.",
+  "finding": {
+    "id": "W1-F02",
+    "status": "open",
+    "quote": "A medical membership fee can only be reimbursed if it meets specific federal tax criteria. Fees for general health improvement or arrangements paid by employer contributions do not qualify.",
+    "replacement": "Check the services, payment source and applicable account rules before reimbursing a membership fee. For an HSA, a qualifying DPCSA must meet the primary-care and sole fixed-fee conditions in [IRS Notice 2026-5, question 20](https://www.irs.gov/irb/2026-02_IRB). Question 19 generally permits substantiated HSA reimbursement before qualifying DPCSA coverage begins. Question 18 excludes employer-paid DPCSA fees, including fees paid through salary reduction. That exclusion concerns payment of the DPCSA fee and does not prohibit reimbursement merely because an employer contributed money to the HSA.",
+    "evidence": "Current FAQconfuses employer-paidDPCSAfees with employerHSAcontributions and drops material conditionalDPCqualification/timing. Narrow to actualQ18/Q19/Q20distinction.",
+    "source": "IRSNotice2026-5Q18-Q20; IRS969 HSAbenefits; closedF23-F26"
+  },
+  "proseAuthor": "fleet-guide-auditor",
+  "appliedVerbatimBy": "safe-medication-guide",
+  "beforeSha256": "112358caee2667e2b9a8adbfb8395d6acdf04e31d06c45cddb2ed33fc1a8f7bd",
+  "afterSha256": "907ad426bbe84cbb6657421217b00628a458f3fbb56b5cacaabadda52fa3d6e3",
+  "scope": "Existing Rung1 exact independently authored replacement after nativefix attempt; no regeneration, extra paid call, helper/config/schema/counter alteration."
+}

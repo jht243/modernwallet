@@ -1,0 +1,132 @@
+{
+ "slug": "hsa-fsa-reimbursement-checklist",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1772,
+ "floor": 1200,
+ "input_tokens": 23557,
+ "output_tokens": 3044,
+ "thinking_tokens": null,
+ "cached_tokens": 20537,
+ "est_cost_usd": 0.0152,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['Reimbursement Checklist Before You File', 'Records for Your Reimbursement Checklist', 'HSA Expense Timing and Recordkeeping', 'FSA Coverage and Substantiation', 'Membership Fees Need a Separate Check'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 1772,
+  "numbers_not_in_facts": [
+   "1040",
+   "18",
+   "19",
+   "8889",
+   "969"
+  ],
+  "fact_budget": {
+   "fact_words": 1031,
+   "floor": 1200,
+   "ratio": 0.86,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    5,
+    3
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "6. Save the submission confirmation, administrator response, and banking records alongside your itemized invoices.",
+     "replacement": "6. Save the submission confirmation, administrator response, and actual reimbursement record alongside your itemized invoices.",
+     "type": "unsupported",
+     "why": "SOURCE specifies an actual reimbursement record rather than banking records."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Custodians offer online portals, mobile applications, or paper claim forms to process requests.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention mobile applications or paper claim forms."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "For an HSA, log into your custodian platform to authorize a distribution directly to your personal bank account or request a check.",
+     "replacement": "For an HSA, follow your custodian's platform instructions to request a distribution.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention bank account deposits or requesting checks."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "- Bank account records showing when the reimbursement deposited.",
+     "replacement": "- The actual reimbursement record.",
+     "type": "unsupported",
+     "why": "SOURCE specifies retaining an actual reimbursement record rather than bank account records."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Maintaining clear records protects your tax position if an account distribution is later examined.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that records protect tax positions in examinations."
+    },
+    {
+     "id": "cardBlurb",
+     "quote": "Organize your health savings account or flexible spending account medical records with timing checks, required invoice fields and no duplicate claims.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "SOURCE states invoice fields are a recommendation rather than universally required."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "An expense is incurred when the care is provided, not when you are billed or pay for it.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state expenses are not incurred when billed or paid."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Under IRS Notice 2026-5, an HSA can reimburse periodic fees for a qualifying direct primary care arrangement that provides solely primary care services from qualifying practitioners without general anesthesia, non-vaccine drugs, or complex laboratory tests.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE excludes non-ambulatory primary care labs, not complex laboratory tests."
+    }
+   ],
+   "deleted_final": 3,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1886
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 226.3,
+ "response_id": "UIvyaua1JvvT0_gP06Ou-Ak",
+ "generated_at": "2026-11-09T22:14:55-0500"
+}
