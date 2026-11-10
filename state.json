@@ -71,7 +71,9 @@
       ],
       "jobId": "competitor-18b9b55e45cc",
       "previousJobs": [],
-      "repairs": [],
+      "repairs": [
+        "38e5e12d6ca854d21bc58689ca42ee7d41a4d8aa2a5161e05cdeabb4c29cafe8"
+      ],
       "route": "/guides/when-to-switch-financial-advisors"
     },
     "90d5b87862b71ed39f55ed1fd36ba72fbb57f26ab0401a8a2d73440977e6432b": {
