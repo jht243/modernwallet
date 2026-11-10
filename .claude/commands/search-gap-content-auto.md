@@ -5,6 +5,8 @@ argument-hint: "[optional: --days N (lookback, default 1)]"
 
 ## Scheduled Search Gap recovery
 
+For a verified empty intake, send the required collector no-op once and finish. An empty intake needs no Git commit, branch push, audit, build or deployment.
+
 Apply the current site risk floor and release policy throughout this scheduled Search Gap run. Before dispatching the writer, retain the approved chart and manifest together. Before dispatching an independent content auditor, register the reviewer and seal the exact candidate and its evidence through the native AUDIT handoff. A saved independent PASS or last allowed editorial FAIL goes straight to the normal publication checks. Preserve professional reviews, exclusions and source requirements. A pending item or failed intake must appear as unfinished in the collector.
 
 On partial finish, resume only the saved pending candidate IDs. Previously acknowledged decisions keep their evidence. Use the original job, actual independent review counts and latest saved stage.

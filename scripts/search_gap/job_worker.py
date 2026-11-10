@@ -151,6 +151,17 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
             action = ('Resume only recoverySummary.pendingCandidateIds from the original intake. Reuse the independently reviewed '
                       'decisions in priorCompletionFile and the latest stage, findings and counters for each open item. '
                       'Validate the combined final decisions through the native finish before reporting success.')
+        if resumed and not checkpoints and not (summary or {}).get('completionFile'):
+            recovered = retained_local_completion(packet, digest(path))
+            if recovered:
+                name, pending_ids = recovered
+                if pending_ids:
+                    summary = {'priorCompletionFile': name, 'pendingCandidateIds': pending_ids}
+                    action = ('Reuse the signed chart and decisions in priorCompletionFile. Work only the pending IDs, '
+                              'locate their original audit records, and complete native release and live checks. '
+                              'Validate the combined decisions and fresh live evidence through normal finish.')
+                else:
+                    summary = {'completionFile': name}
         if summary and summary.get('completionFile') and not dispatch:
             action='Reuse the restored, already independently reviewed recoverySummary.completionFile, reconcile its separate preview, then finish. For an expired original loopback preview use a separate current build and postPublicationRecovery with the original approved hash and original publication commit. Run python3 scripts/search_gap/publication_history.py FULL_COMMIT for genuine current remote ancestry, including shallow checkouts. Keep all exact-render and live comparisons. Do not dispatch BUILD, WRITE or another decision/content review.'
             sid=os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID')
@@ -159,6 +170,8 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
                 marker=Path(subprocess.check_output(['git','rev-parse','--git-path',name],text=True).strip())
                 marker.parent.mkdir(parents=True,exist_ok=True)
                 marker.write_text(json.dumps({'completionFile':summary['completionFile'],'sha256':digest(summary['completionFile']),'runId':packet['runId']}))
+        if job.get('status') == 'empty':
+            action = 'Verified empty intake. Submit the required collector no-op once, then finish. No Git commit, push, build, review or deployment is needed.'
         # Control and recovery state must precede the potentially long candidate list.
         if job.get('status')=='claimed':
             remember_lease(site,packet['runId'],owner)
@@ -274,6 +287,39 @@ def restore_artifacts(checkpoints):
     for path,raw in staged:path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(raw)
     return {'ok':True,'restored':len(staged)}
 
+def retained_local_completion(packet, intake_hash):
+    """Look up a committed decision file only when the durable checkpoint is missing."""
+    matches = subprocess.run(['git', 'grep', '-l', '-F', packet['runId'], '--',
+                              'reports/mindmap-pass/*/completion.json', 'reports/search-gap/*/completion.json'],
+                             capture_output=True, text=True)
+    if matches.returncode != 0:
+        return None
+    found = []
+    for filename in matches.stdout.splitlines():
+        path = artifact_path(filename)
+        candidate = read(path)
+        if candidate.get('runId') != packet['runId'] or candidate.get('intakeSha256') != intake_hash:
+            continue
+        if candidate.get('site', packet['site']) != packet['site']:
+            continue
+        try:
+            chart = artifact_path(candidate['chart'])
+            receipt = read(artifact_path(candidate['chartReview']))
+            decisions = candidate['decisions']
+            signed = hashlib.sha256(json.dumps(decisions, sort_keys=True).encode()).hexdigest()
+            if (receipt.get('verdict') != 'PASS' or not receipt.get('author') or not receipt.get('reviewer')
+                    or receipt['author'] == receipt['reviewer'] or receipt.get('chartSha256') != digest(chart)
+                    or receipt.get('decisionsSha256') != signed or receipt.get('intakeSha256') != intake_hash
+                    or sorted(d['id'] for d in decisions) != sorted(c['id'] for c in packet['candidates'])):
+                continue
+        except (KeyError, FileNotFoundError, ValueError, TypeError):
+            continue
+        found.append((filename, [d['id'] for d in decisions if d['status'] == 'pending']))
+    if len(found) == 1:
+        return found[0]
+    return None
+
+
 def finish(intake_path,completion_path,store,owner):
     packet,completion=read(intake_path),read(completion_path)
     require(completion.get('intakeSha256')==digest(intake_path),'Intake changed')
@@ -372,6 +418,12 @@ def main():
             require(metadata.get('stage') and isinstance(metadata.get('canonicalJobs'),dict) and isinstance(metadata.get('reviewCounters'),dict),'Stage, canonicalJobs and reviewCounters required')
             require(all(isinstance(v,str) and v for v in metadata['canonicalJobs'].values()),'Canonical job IDs required')
             require(all(isinstance(v,int) and not isinstance(v,bool) and v>=0 for v in metadata['reviewCounters'].values()),'Nonnegative integer review counters required')
+            lease = store.claim_job(a.site, a.owner, Path(a.intake).read_text(encoding='utf-8'))
+            require(lease.get('status') == 'claimed' and lease.get('packetSha256') == digest(a.intake),
+                    'Cannot checkpoint another owner or a different search intake')
+            previous = (lease.get('checkpoints') or [{}])[-1]
+            for key in ('canonicalJobs', 'reviewCounters'):
+                metadata[key] = {**previous.get(key, {}), **metadata[key]}
             metadata['artifacts']=capture_artifacts(a.files);result=store.checkpoint_job(a.site,packet['runId'],a.owner,metadata)
             if a.end_invocation and result.get('ok',True):
                 store.release_job(a.site,packet['runId'],a.owner)
