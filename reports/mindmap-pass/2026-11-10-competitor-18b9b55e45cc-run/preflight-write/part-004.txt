@@ -1,0 +1,44 @@
+"2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.investor.gov_introduction-investing_investing-basics_glossary_form-adv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/7130d5ef7c6566807b7fed84fc2eb5360a88a8d0d55db936e360064e8a0192f9/www.irs.gov_retirement-plans_plan-participant-employee_rollovers-of-retirement-plan-and-ira-distributions",
+      "sha256": "7130d5ef7c6566807b7fed84fc2eb5360a88a8d0d55db936e360064e8a0192f9",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.irs.gov_retirement-plans_plan-participant-employee_rollovers-of-retirement-plan-and-ira-distributions"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "findings": [
+    {
+      "id": "phase4-advisory-a",
+      "status": "open",
+      "evidence": "Chart review: Clayton excerpt verified only for the duty of care/loyalty and Regulation Best Interest best-interest quotes; do not rely on the four component obligations."
+    },
+    {
+      "id": "phase4-advisory-b",
+      "status": "open",
+      "evidence": "A4 must not restate the flat-fee vs AUM comparison; A1 must not conflict with the worth-it H2 or restate what-is-a-robo-advisor; A3 must not be a restatement of the RIA and conflicts sections (defer and remove links otherwise)."
+    },
+    {
+      "id": "phase4-advisory-c",
+      "status": "open",
+      "evidence": "Touched existing pages (inbound link insertions) need rendered re-audit; no dateModified bump."
+    }
+  ],
+  "resolvedFindingIds": [
+    "chart-review-round1-CR1-CR10"
+  ],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/writer-handoff.json",
+    "sha256": "79618cfb77787ee55ee9fcf6af46ef4a67456c58497cef16220fa94ca991c9ff"
+  }
+}
+

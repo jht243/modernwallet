@@ -1,0 +1,36 @@
+{
+ "reviewer": "mindmap-auditor-p4",
+ "verdict": "FAIL",
+ "packetSha256": "2454ccafee435d396f6d94bcdd7bf3da3d120e0cef4991e1ef105bc70379f6a2",
+ "route": "/compare/robo-advisor-vs-financial-advisor/",
+ "round": 1,
+ "usefulness": {
+  "status": "FAIL",
+  "evidence": "Reported-basis synthesis resolves the reader question only partly: conclusion \"low-cost\" omits the SEC small-balance fee counterexample (A1-F1) and duplicates itself four times (A1-F4)."
+ },
+ "sourceAndAssumptions": {
+  "status": "FAIL",
+  "evidence": "See phase4-round1-review.json route findings and checks.sourceSupport for this route: claims traced to captures 8afe23f0, 9586a28f, ffda7445, 183c0f08, 953e89fd, 22f45649, 7130d5ef, 0225/5270 pages; listed findings are unsupported or contradicted."
+ },
+ "conditionsAndCounterexample": {
+  "status": "FAIL",
+  "evidence": "Strongest primary-source counterexample tested per route; see factualReview.consequentialClaims in phase4-round1-review.json (A1-F1 small-balance subscription fee; A2-F3 switching or termination fees; A3-F3/F5 Part 1 delivery and negotiated fees; A4-F1 percentage versus flat fee)."
+ },
+ "renderedConsistency": {
+  "status": "FAIL",
+  "evidence": "Opening answer, tables, FAQs and takeaway checked against each other in the rendered snapshot; inconsistencies are listed in the route findings."
+ },
+ "localExclusions": {
+  "status": "PASS",
+  "evidence": "TESTED excluded: financial services are outside _experience.md section G; no testing claims, tested schema or fallback disclosure appear in rendered text or HTML."
+ },
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot.json",
+  "sha256": "b8a2cf55cd5bd1494aa18250f8a9172c2ae230146544f8b2757478489199bb6b"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/phase4-round1-review.json",
+  "sha256": "2e68707c0d66a6226e715b3420797a77e6753c90a3404653d75a05c8eb10ecbd"
+ },
+ "note": "FAIL decision artifact. mindmap-gates.py audit-analysis accepts only PASS and is expected to refuse; no PASS was written."
+}

@@ -1,0 +1,11 @@
+{
+ "status": "blocked",
+ "intakeSha256": "18b9b55e45ccb60c43b868b5825bc0008f192b06daa118dfb508fd17b0b2f9a1",
+ "blockingKind": "external-service",
+ "recoveryAttempted": true,
+ "reason": "Phase 3 content generation is unavailable: scripts/lib/content_gen.py preflight reports KEY MISSING for every model in the chain (claude-opus-5-5, gemini-3.8-flash, gpt-6-sol), no secrets file or env key exists in this cloud run, and the contract forbids the agent writing pages itself. The distinct independent chart/Phase 4 reviewer also could not be spawned from this worker.",
+ "nextAction": "Provide CONTENT_ANTHROPIC_KEY (or GEMINI_API_KEY/OPENAI_API_KEY) to the cloud routine and resume this intake: review reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc.md with an independent reviewer, run the build, audit, publish and live verification, then record dispositions.",
+ "evidence": [
+  {"path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc.md", "sha256": "affb0c6e42c65f1f40f558cbda923bffc399486b0e971c5e53b8d62815d1a4e0"}
+ ]
+}

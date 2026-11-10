@@ -1,0 +1,559 @@
+diff --git a/src/data/comparisons.ts b/src/data/comparisons.ts
+index 711e478..56069a0 100644
+--- a/src/data/comparisons.ts
++++ b/src/data/comparisons.ts
+@@ -9868,7 +9868,7 @@ export const COMPARISONS: ComparisonEntry[] = [
+       {
+         question: "Is a wealth manager the same as a financial advisor?",
+         answer:
+-          "Not exactly. \"Wealth manager\" generally implies a broader, bundled service for high-net-worth clients that adds tax and estate coordination to investment management, while \"financial advisor\" is a broader term that can describe someone doing narrower investment-focused work for a wider range of client sizes. Neither title is legally regulated, so always verify the actual services and credentials.",
++          "Not exactly. \"Wealth manager\" generally implies a broader, bundled service for high-net-worth clients that adds tax and estate coordination to [investment management](/guides/what-is-investment-management/), while \"financial advisor\" is a broader term that can describe someone doing narrower investment-focused work for a wider range of client sizes. Neither title is legally regulated, so always verify the actual services and credentials.",
+       },
+       {
+         question: "Do wealth managers charge higher fees than financial advisors?",
+@@ -20032,6 +20032,157 @@ export const COMPARISONS: ComparisonEntry[] = [
+         "href": "/investing/investment-growth-calculator/"
+       }
+     ]
++  },
++  // ── mindmap-pass 2026-11-10 (competitor): robo-advisor-vs-financial-advisor ──
++  {
++    "updated": "2026-11-10",
++    "slug": "robo-advisor-vs-financial-advisor",
++    "title": "Robo-Advisor vs Financial Advisor: Which Fits You?",
++    "metaDescription": "Compare a robo-advisor and a human financial advisor on cost, human contact, services and standard of care, and see which fits your balance and needs.",
++    "targetKeyword": "robo advisor vs financial advisor",
++    "optionA": "Robo-Advisor",
++    "optionB": "Human Financial Advisor",
++    "segment": "Choosing a financial advisor",
++    "h1": "Robo-Advisor vs Financial Advisor: Which One Fits You?",
++    "introText": "Pick a robo-advisor if you want low-cost automated investing for a defined goal and accept little human contact; pick a human adviser if you need advice beyond investing or want a person to talk to. In the guides we publish here, we look at the specific legal duties and disclosure filings behind financial advice rather than sales marketing. At ModernWallet, we show the math, name what moves it, and explain the tradeoff.\n\nBoth models can provide ongoing portfolio management, but their operational methods and service scopes differ. An automated digital investment advisory program collects your goals and risk tolerance through an online questionnaire, then builds and manages a portfolio. A human investment adviser provides ongoing investment advice and monitoring, and can deliver planning services alongside securities management.",
++    "comparisonTable": {
++      "rows": [
++        {
++          "dimension": "Primary service model",
++          "a": "Automated digital program creating and managing an investment portfolio",
++          "b": "Ongoing advice, portfolio monitoring, and optional broad financial planning"
++        },
++        {
++          "dimension": "Intake method",
++          "a": "Online questionnaire collecting financial goals, time horizon, and risk tolerance",
++          "b": "Conversation with a person to gather your needs"
++        },
++        {
++          "dimension": "Typical fee structures",
++          "a": "Asset-based percentage fees or monthly subscriptions such as $3, $5, or $10",
++          "b": "Ongoing asset-based fee on total portfolio value or negotiated planning fees"
++        },
++        {
++          "dimension": "Human contact",
++          "a": "Ranges from technical support only to hybrid access or minimum balance thresholds",
++          "b": "Direct personal conversations with an investment professional"
++        },
++        {
++          "dimension": "Standard of conduct",
++          "a": "Fiduciary duty of care and loyalty",
++          "b": "Fiduciary duty for investment advisers; brokers follow Regulation Best Interest"
++        },
++        {
++          "dimension": "Key regulatory disclosures",
++          "a": "Form ADV Part 1, Part 2A brochure, and Form CRS relationship summary",
++          "b": "Form ADV Part 1, Part 2A brochure, Part 2B supplements, and Form CRS"
++        },
++        {
++          "dimension": "Underlying investments",
++          "a": "Commonly constructed using exchange-traded funds (ETFs)",
++          "b": "Securities"
++        }
++      ]
++    },
++    "verdict": "A robo-advisor fits a reader who wants low-cost automated investing for a defined goal and accepts little human contact; a human adviser fits a reader who needs advice beyond investing or wants a person to call. If the human is a registered investment adviser, the duty of care and loyalty is the same as a robo-advisor's; if the person is a broker or dual registrant, a different standard may apply, shown in Form CRS. This outcome changes if an automated platform provides a hybrid human adviser at your balance level, or if the human is broker-only. Read both firms' relationship summaries and Form ADV Part 2 disclosures to compare all-in costs and human access before opening an account.",
++    "sections": [
++      {
++        "heading": "Robo-Advisor or Financial Advisor: Which Fits Your Situation",
++        "content": "Pick a robo-advisor if you want low-cost automated investing for a defined goal and accept little human contact; pick a human adviser if you need advice beyond investing or want a person to talk to. Your choice between a robo-advisor and a traditional human advisor depends on the complexity of your financial profile and your preferences for personal support. If your goal is automated investing for a defined goal, an automated platform builds and manages a portfolio. If you require advice across taxes, estate planning, or complex situations, a human advisor can supply planning services.\n\nAccording to the [SEC Investor Bulletin on Robo-Advisers](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-45) published by the Securities and Exchange Commission (SEC) Office of Investor Education and Advocacy (OIEA), a robo-advisor is an automated digital investment advisory program. These platforms collect your financial goals, investment time horizon, household income, other assets, and risk tolerance through an online questionnaire. The software then uses that collected information to build and manage an investment portfolio for you. Robo-advisors often present lower costs and fees and lower account minimums than traditional advisory programs.\n\nHuman investment advisers operate differently during the initial evaluation process. As detailed by [Investor.gov on Investment Advisers](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers), an investment adviser is a firm or person that provides investment advice about securities for compensation. These professionals typically provide ongoing advice about buying, selling, or holding investments, monitor performance, and may give planning services. Unlike an automated program that relies on an online questionnaire, a traditional adviser can hold a conversation to gather your needs. Understanding [what a financial advisor is worth](/guides/financial-advisor-worth-it/) starts with matching these specific service capabilities to your financial needs."
++      },
++      {
++        "heading": "Side-by-Side Comparison of Advisory Models",
++        "content": "Evaluating automated programs and human advisors side by side clarifies their operational differences. Both categories manage investment securities for individual clients, yet their workflows, fee mechanisms, and client obligations differ. The following table contrasts a robo-advisor with a human investment adviser who is a registered investment adviser.\n\n| Feature | Robo-Advisor | Human Registered Investment Adviser |\n| :--- | :--- | :--- |\n| Primary focus | Automated digital portfolio management | Ongoing portfolio oversight and comprehensive planning |\n| Intake procedure | Structured online questionnaire | Direct conversation to gather your needs |\n| Portfolio building blocks | Frequently exchange-traded funds (ETFs) | Securities |\n| Human communication | Technical help only, tiered balance access, or hybrid | Direct conversation with a person |\n| Legal standard | Fiduciary duty of care and loyalty | Fiduciary duty of care and loyalty |\n| Disciplinary and background checks | Form ADV Part 1 and Form CRS | Form ADV Part 1, Part 2B supplements, and Form CRS |\n| Client responsibility | Must manually update profile details online | Negotiated by contract |\n\nSelecting between these formats requires balancing automated simplicity against customized human guidance. You can track your total accumulated wealth as you evaluate these structures by using our [net worth calculator](/net-worth/)."
++      },
++      {
++        "heading": "What Robo-Advisors and Financial Advisors Cost You",
++        "content": "Comparing costs between automated platforms and personal advisers requires examining both fee structures and auxiliary account expenses. Most traditional investment advisers charge an asset-based fee calculated as a percentage of the total assets held in your account. As noted in the [Investor.gov Relationship Summary (Form CRS)](https://www.investor.gov/CRS) guidance, advisers are generally focused on your portfolio over time and typically paid an ongoing asset-based fee on total account value.\n\nRobo-advisors utilize diverse pricing frameworks, ranging from asset-based percentage fees to recurring subscriptions. The [SEC Investor Bulletin on Subscription-Based Advisory Fees](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/subscription-based-advisory-fees) notes that subscription pricing entails a set recurring fee, typically billed monthly. For smaller robo-adviser accounts, that fee might be $3, $5, or $10 per month for investment management. Many automated firms use these fixed monthly fees to market advisory services to newer investors with smaller account balances. \n\nAdvisory management charges do not encompass all investment expenses. Both human advisers and robo-advisers invest client money into underlying funds that carry internal operational expenses. The SEC bulletin on robo-advisers notes that many digital programs build portfolios using exchange-traded funds (ETFs), which deduct ongoing management expenses from fund performance. Similarly, clients may pay other fees such as brokerage, custody, and fund expenses. For detailed comparisons of conventional percentage models and fixed advisory retainers, read our comparison of [flat-fee vs AUM advisors](/compare/flat-fee-vs-aum-based-financial-advisors/), or explore specific automated choices in our guide to the [best robo-advisors](/roundup/best-robo-advisors/)."
++      },
++      {
++        "heading": "How Much Human Contact You Get with Each Option",
++        "content": "The level of personal contact varies widely across advisory options and should dictate which path you select. When working with a traditional human financial advisor, direct personal dialogue serves as the foundation of the relationship. You talk directly with a person who gathers your needs and provides ongoing advice. \n\nRobo-advisory platforms deliver varying levels of human communication. The SEC bulletin on robo-advisers explains that some digital programs offer access to an investment professional, often described as a hybrid or bionic model. Other automated platforms restrict human contact entirely to technical support staff. Furthermore, some automated firms condition access to human professionals on maintaining a minimum account size, leaving smaller account holders with purely digital interfaces.\n\nUnlike traditional advisory relationships, digital programs typically lack an initial conversation with a person to assess your personal needs. The SEC bulletin points out that robo-adviser recommendations are limited by the information requested, and the burden to update your profile data falls squarely on you. If your information changes, the platform cannot incorporate those developments until you update your profile."
++      },
++      {
++        "heading": "Duty of Care Depends on How Your Advisor Is Registered",
++        "content": "The legal standard of conduct governing your investment professional depends entirely on their regulatory registration. Many investors assume every financial professional operates under the same legal obligations, but regulatory classifications establish distinct legal duties. In a public statement on [Regulation Best Interest and the Investment Adviser Fiduciary Duty](https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty), SEC Chairman Clayton explained that the investment adviser fiduciary duty is comprised of a duty of care and a duty of loyalty. This fiduciary framework applies to registered investment advisers, requiring them to act in the best interest of their clients and avoid placing their own financial interests ahead of the client's interests.\n\nRobo-advisors registered with the SEC operate as registered investment advisers, which means they owe clients an adviser fiduciary duty of care and loyalty. Similarly, human professionals who operate as registered investment advisers are held to this same fiduciary standard. However, many individual financial professionals do not operate solely as investment advisers. Some professionals are registered representatives of broker-dealers, while others are dual registrants licensed as both brokers and investment advisers. For broker-dealers, Regulation Best Interest establishes the governing standard of conduct, requiring brokers to act in the best interest of retail customers when making investment recommendations.\n\nDetermining which standard applies to your advisory relationship requires reviewing regulatory disclosure documents. According to the [SEC Investor Bulletin on Form ADV](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71), retail investors should review Form ADV Part 2 and the Form CRS relationship summary. Form ADV Part 2A serves as an adviser's primary narrative brochure, detailing advisory business practices, fee schedules, conflict points, and disciplinary history across 18 standardized items. Form CRS explicitly states whether a firm is an investment adviser, a broker-dealer, or a dual registrant. You can verify firm registrations and review public filings on the SEC [Investment Adviser Public Disclosure (IAPD)](https://adviserinfo.sec.gov) database. Understanding [what a fiduciary is](/guides/what-is-a-fiduciary/) provides essential context when evaluating these legal relationships."
++      },
++      {
++        "heading": "Who Each Option Is Not For and What Would Change the Answer",
++        "content": "A robo-advisor is not suitable for individuals who need tax or estate planning, or direct phone access to an adviser. \n\nSpecific operational changes can flip this general advisory recommendation. If an automated robo-advisory platform offers a hybrid service tier with an investment professional at your balance, the robo-advisor may satisfy your need for personal communication. If you want to understand automated services in depth, read our overview of [what a robo-advisor is](/guides/what-is-a-robo-advisor/).\n\nConversely, if a human professional you interview is registered exclusively as a broker-dealer representative rather than an investment adviser, the regulatory baseline shifts. Checking Form CRS confirms whether your prospective advisor operates as an investment adviser or a broker. Reviewing your personal planning targets with our [retirement calculator](/retirement/) will help clarify which advisory model supports your goals."
++      },
++      {
++        "heading": "Our Takeaway on Picking the Right Advisory Structure",
++        "content": "A robo-advisor fits a reader who wants low-cost automated investing for a defined goal and accepts little human contact, while a human adviser fits a reader who needs advice beyond investing or wants a person to call. When the human professional is a registered investment adviser, the duty of care and loyalty matches what an automated robo-adviser owes under federal law. If that professional operates as a broker or dual registrant, a different legal standard may govern transactions, as outlined in Form CRS. This assessment changes if an automated platform provides hybrid human consultation at your account balance, or if a prospective human adviser operates under a broker-only registration.\n\nTake action by examining public regulatory disclosures before opening an account with any firm. Search the firm and individual professional on the SEC [IAPD](https://adviserinfo.sec.gov) website to review their Form ADV Part 2 narrative brochure and Form CRS relationship summary. Compare total all-in costs, including advisory fees, fund expenses, and platform charges, and verify the exact scope of human communication provided in your written advisory contract."
++      }
++    ],
++    "faqs": [
++      {
++        "question": "Are robo-advisors better than financial advisors?",
++        "answer": "Robo-advisors are better for investors who want automated, low-cost investment management for a defined goal and do not require personal financial planning. Human financial advisors are better for individuals with complex assets, tax planning requirements, or estate planning needs who want ongoing personal communication. The right option depends on your account size and the breadth of services you require."
++      },
++      {
++        "question": "Is a robo-advisor a good idea?",
++        "answer": "A robo-advisor is a good idea if you are seeking an automated, lower-cost way to build and manage a portfolio using exchange-traded funds. However, it may not be a good idea if you need advice across taxes and estate planning, or want a person to talk to."
++      },
++      {
++        "question": "Robo-advisor vs financial planner: what is the difference?",
++        "answer": "The regulatory sources reviewed do not provide a formal legal definition for the generic title financial planner. A robo-advisor is an automated digital investment advisory program that builds and manages securities portfolios based on questionnaire responses."
++      }
++    ],
++    "sources": [
++      {
++        "label": "SEC Investor Bulletin: Robo-Advisers",
++        "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-45"
++      },
++      {
++        "label": "SEC Investor Bulletin: Subscription-based Advisory Fees",
++        "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/subscription-based-advisory-fees"
++      },
++      {
++        "label": "Investor.gov, Investment Advisers",
++        "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers"
++      },
++      {
++        "label": "Investor.gov, Relationship Summary (Form CRS)",
++        "url": "https://www.investor.gov/CRS"
++      },
++      {
++        "label": "SEC Chairman Clayton, Regulation Best Interest and the Investment Adviser Fiduciary Duty",
++        "url": "https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty"
++      },
++      {
++        "label": "SEC Investor Bulletin: Form ADV, Investment Adviser Brochure and Brochure Supplement",
++        "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71"
++      },
++      {
++        "label": "SEC Investment Adviser Public Disclosure (IAPD)",
++        "url": "https://adviserinfo.sec.gov"
++      },
++      {
++        "label": "FINRA BrokerCheck",
++        "url": "https://brokercheck.finra.org"
++      }
++    ],
++    "relatedComparisons": [
++      "financial-advisor-vs-financial-planner",
++      "financial-advisor-vs-wealth-manager",
++      "flat-fee-vs-aum-based-financial-advisors",
++      "ai-investing-vs-robo-advisors"
++    ],
++    "calculatorLinks": [
++      {
++        "label": "Net worth calculator",
++        "href": "/net-worth/"
++      },
++      {
++        "label": "Retirement calculator",
++        "href": "/retirement/"
++      },
++      {
++        "label": "Investing calculator",
++        "href": "/investing/"
++      }
++    ]
+   }
+ ];
+ 
+diff --git a/src/data/guides.ts b/src/data/guides.ts
+index a096b7d..e4f1da0 100644
+--- a/src/data/guides.ts
++++ b/src/data/guides.ts
+@@ -35,6 +35,324 @@ export interface Guide {
+ }
+ 
+ export const GUIDES: Guide[] = [
++  // ── mindmap-pass 2026-11-10 (competitor): when-to-switch-financial-advisors ──
++  {
++    "updated": "2026-11-10",
++    "slug": "when-to-switch-financial-advisors",
++    "title": "When to Switch Financial Advisors and How to Do It",
++    "metaDescription": "Checks that show it may be time to switch financial advisors, what to read in your contract, how account transfers work and what to avoid while they run.",
++    "h1": "When Should You Switch Financial Advisors?",
++    "cardBlurb": "When your adviser's costs, services, or conflicts no longer fit, follow this order to transfer accounts smoothly without disrupting your investments.",
++    "introText": "You should switch financial advisors when your current adviser's services, all-in costs, or conflicts of interest no longer fit what you need. In the guides we publish here, we find that the cleanest transition happens when you keep the process in order: read your advisory contract for termination terms, research and verify your new professional, open your replacement account, and let the receiving institution initiate the transfer directly instead of selling off your holdings yourself.\n\nYou can have your financial institution or plan directly transfer the payment, whereas rolling over a distribution paid to you requires depositing funds within 60 days and replacing any withheld taxes.",
++    "sections": [
++      {
++        "heading": "When to Switch Financial Advisors and the Steps to Do It in Order",
++        "body": "The right moment to switch financial advisors is when your adviser's fee structure, scope of services, or disclosed conflicts no longer serve your financial goals. Once you decide to move, acting in the correct technical order protects your portfolio from unnecessary selling and settlement freezes.\n\nHere is our suggested order to execute the switch cleanly:\n\n1. Review your current advisory agreement for termination terms and fee terms.\n2. Research prospective replacements on official public registries.\n3. Open your new account at the receiving institution before contacting your current firm.\n4. Submit a Transfer Initiation Form to your receiving firm so they pull the assets directly.\n5. Pause all buying and selling while the automated transfer runs.\n6. Confirm delivery of your holdings.\n\n| Step | Who acts | What to check | Source |\n| --- | --- | --- | --- |\n| 1. Review contract | Client | Termination terms and fee schedule | [Investor.gov advisory guidance](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers) |\n| 2. Check credentials | Client | Form ADV Part 2 brochure and disciplinary history | [SEC Form ADV bulletin](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71) |\n| 3. Open new account | Client and receiving firm | Not published | [FINRA transfer rules](https://www.finra.org/investors/investing/investment-accounts/brokerage-accounts/account-transfers) |\n| 4. Start transfer | Receiving firm | Transfer Initiation Form and eligible assets | [FINRA transfer rules](https://www.finra.org/investors/investing/investment-accounts/brokerage-accounts/account-transfers) |\n| 5. Freeze trading | Client and both firms | Not published | [FINRA transfer rules](https://www.finra.org/investors/investing/investment-accounts/brokerage-accounts/account-transfers) |\n| 6. Confirm closure | Both firms and client | Delivery of positions | [Investor.gov advisory guidance](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers) |\n\nFollowing this sequence ensures that your new custodian requests your assets directly."
++      },
++      {
++        "heading": "Checks That Show the Advice or Fees No Longer Fit",
++        "body": "According to [Investor.gov](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional), an investment adviser is a firm or person that provides investment advice about securities for compensation. Investor.gov states that investment advisers are required to act in your best interest and not put their interest ahead of yours. Even so, the specific way advisers make money introduces inherent conflicts of interest that require continuous evaluation.\n\nEvaluate five baseline questions to determine whether your professional relationship still works:\n\n- Services you need: Does your current adviser provide ongoing advice about buying, selling, or holding investments alongside broader financial planning, or has your situation outgrown their service limits?\n- Cost and fee models: Are you paying an ongoing fee based on the total value of all assets in your account when your transaction volume or service needs have dropped?\n- How the adviser is paid: As outlined in [Investor.gov's guide to Form CRS](https://www.investor.gov/CRS), brokers are generally transactional and paid through commissions or markups per trade, while advisers typically charge an asset-based fee. Asset-based fees may cost more than transaction-based fees, but they suit ongoing portfolio monitoring.\n- Disclosed conflicts: Does the way the adviser makes money create conflicts of interest to ask about? Our guide on [financial advisor conflicts of interest](/guides/financial-advisor-conflicts-of-interest/) outlines how these arrangements operate.\n- Disciplinary record: Has the individual or firm accumulated legal or disciplinary history?\n\nIf your adviser cannot clearly justify their fees or resolve disclosed conflicts, switching to another professional is a reasonable step."
++      },
++      {
++        "heading": "What to Read in Your Advisory Contract Before You Leave",
++        "body": "Before contacting a new firm, locate and read your original investment advisory agreement. Investor.gov notes that the exact services and fees you receive depend on the contract you negotiate. The contract governs the formal terms of your relationship, including termination procedures and fee terms.\n\nWhile your contract contains legal termination mechanics, your adviser's Form ADV Part 2A brochure details their broad billing practices. The [SEC Form ADV bulletin](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71) states that Part 2A is a plain-English narrative brochure containing 18 standardized items. The brochure covers fees and compensation, explaining how the firm is compensated, its fee schedule, whether fees are negotiable, whether fees are billed directly or deducted from client accounts, and other fees such as brokerage, custody, and fund expenses.\n\nForm ADV Part 2A does not contain your specific termination clause. You must examine your signed contract to identify any notice requirements. If you have questions about ending the agreement, ask your adviser in writing to confirm the steps required to terminate the contract."
++      },
++      {
++        "heading": "How to Check the New Adviser",
++        "body": "Selecting a replacement adviser requires independent verification before you sign an agreement or open accounts. Advisers generally must register with the Securities and Exchange Commission (SEC) or state regulatory authorities. Investor.gov advises investors to check both the firm and the individual representative.\n\nYou can research both the individual and the firm using the [Investment Adviser Public Disclosure (IAPD)](https://adviserinfo.sec.gov) database, which is also accessible via the Check Out Your Investment Professional tool on Investor.gov. If the professional operates as a registered broker or dual registrant, you can review their background on [FINRA BrokerCheck](https://brokercheck.finra.org).\n\nWhen reviewing records on IAPD, examine three critical filings:\n\n- Form ADV Part 1: A structured form detailing the firm's business, ownership structure, client types, employees, business affiliations, and disciplinary events involving the adviser or its staff.\n- Form ADV Part 2A Brochure: The primary disclosure document covering 18 standard items, including advisory services, assets under management, fee schedules, methods of analysis, risk of loss, and a ten-year history of material disciplinary events. Our breakdown on [how to read Form ADV](/guides/how-to-read-form-adv/) explains each item.\n- Form ADV Part 2B Brochure Supplement: A disclosure detailing the specific individuals who formulate investment advice, have direct client contact, or exercise discretionary authority. It lists their educational background, business experience over the past five years, disciplinary events, and other business activities.\n\nReviewing Form ADV Part 3, also known as Form CRS, provides a summary of the firm's services, fees, conflicts, standard of conduct, and disciplinary history. You can use these disclosures to prepare relevant [questions to ask a financial advisor](/guides/questions-to-ask-a-financial-advisor/) during introductory meetings, or reference our guide on [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/)."
++      },
++      {
++        "heading": "How the Account Moves",
++        "body": "Transferring your portfolio does not require you to liquidate your investments or mail paper checks between firms. According to the [Financial Industry Regulatory Authority (FINRA)](https://www.finra.org/investors/investing/investment-accounts/brokerage-accounts/account-transfers), most customer accounts move between broker-dealers through the Automated Customer Account Transfer Service (ACATS).\n\nTo begin an account transfer, you complete a Transfer Initiation Form (TIF) and submit it directly to your receiving firm. Once submitted, validation and delivery between broker-dealers generally takes about three to four business days. Transfers originating from non-broker-dealers, such as banks, credit unions, or mutual fund companies, generally take more time. Furthermore, accounts that require a third-party custodian, like an individual retirement account (IRA), may require additional processing time.\n\nA receiving firm is not legally required to accept your account. The most common reason a firm rejects a transfer involves credit policies, but rejections also happen when an account holds nontransferable assets. Nontransferable assets include proprietary products exclusive to the delivering firm or third-party mutual funds that lack a selling agreement with the new institution. FINRA rules require firms to notify customers of any nontransferable assets and provide alternatives.\n\nWhile the transfer is actively processing, avoid buying or selling securities. FINRA warns that buying and selling during an active transfer often complicates and delays the process, and some firms freeze all trading in the account until the transfer completes."
++      },
++      {
++        "heading": "Retirement Money: Direct Transfer vs a Check to You",
++        "body": "Moving retirement assets requires careful attention to tax administration rules. According to the [Internal Revenue Service (IRS)](https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions), most pre-retirement payments from a retirement plan or an IRA can be rolled over by depositing the funds into another eligible plan or IRA within 60 days.\n\nYou can also arrange for your financial institution or retirement plan to directly transfer the payment to another plan or IRA. The IRS states that the one-per-year rollover limit does not apply to rollovers from traditional IRAs to Roth IRAs (conversions), trustee-to-trustee transfers to another IRA, IRA-to-plan rollovers, plan-to-IRA rollovers, or plan-to-plan rollovers.\n\nUnder IRS rules, if taxes are withheld on a distribution paid to you and you roll the money over within the 60-day window, you must use other funds to make up the withheld amount. \n\nBecause the tax effects of selling investments in taxable accounts or distributing retirement funds depend on individual circumstances, consult a qualified tax professional before initiating any liquidation."
++      },
++      {
++        "heading": "Our Takeaway on When to Switch Financial Advisors",
++        "body": "In our editorial judgment, the decision to switch financial advisors should be driven by measurable gaps in service, misaligned costs, or unaddressed conflicts of interest. Once you confirm that your existing relationship no longer fits, moving through the steps in order protects your capital from administrative and operational headaches.\n\nReview your advisory contract for termination rules, verify your new professional on IAPD or FINRA BrokerCheck, open your new account, and let the receiving institution initiate the transfer via ACATS. This process applies to retail clients working with SEC-registered or state-registered investment advisers and broker-dealers across the United States.\n\nYour next concrete step is to locate your current contract and read its termination clause before asking your new firm for a Transfer Initiation Form."
++      },
++      {
++        "heading": "Who This Is Not For and What Would Change the Answer",
++        "body": "This transition guide is not intended for investors seeking to switch financial advisors simply due to normal, short-term market declines. A short-term market move is not by itself a check that shows the advice or fees no longer fit.\n\nCertain contractual or portfolio conditions can change the decision to switch:\n\n- Termination charges: If your current advisory contract contains termination charges, that cost can change the answer.\n- Proprietary, nontransferable holdings: If your portfolio holds proprietary funds, the receiving firm is not required to accept those nontransferable assets. \n- Pending retirement plan events: A pending tax event can change the timing of your switch.\n\nReviewing your holdings and contract terms with both firms beforehand ensures you avoid unintended costs or portfolio freezes."
++      }
++    ],
++    "tools": [
++      {
++        "href": "/investing/",
++        "label": "Investing"
++      },
++      {
++        "href": "/retirement/",
++        "label": "Retirement"
++      },
++      {
++        "href": "/net-worth/",
++        "label": "Net worth"
++      }
++    ],
++    "faqs": [
++      {
++        "question": "Can you switch financial advisors?",
++        "answer": "Yes, you can switch financial advisors. Your ability to terminate the relationship and the required notice period depend on the specific terms negotiated in your written advisory contract."
++      },
++      {
++        "question": "Is it hard to switch financial advisors?",
++        "answer": "By completing a Transfer Initiation Form with your new receiving firm, most broker-dealer accounts move directly through ACATS in about three to four business days without requiring you to manage individual sales."
++      },
++      {
++        "question": "Does it cost money to switch financial advisors?",
++        "answer": "Regulatory guidance publishes no standard fee to switch financial advisors. The sources read state no standard charge; check your contract and ask both firms."
++      },
++      {
++        "question": "What happens when you switch financial advisors?",
++        "answer": "When you switch, your receiving firm requests your assets from your old firm using a Transfer Initiation Form. Your positions move through an automated transfer service like ACATS, after which your new adviser takes over portfolio monitoring and management."
++      }
++    ],
++    "sources": [
++      {
++        "label": "Investor.gov, Investment Advisers",
++        "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers"
++      },
++      {
++        "label": "SEC Investor Bulletin: Form ADV",
++        "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71"
++      },
++      {
++        "label": "Investor.gov, Relationship Summary (Form CRS)",
++        "url": "https://www.investor.gov/CRS"
++      },
++      {
++        "label": "FINRA, Brokerage Accounts: Account Transfers",
++        "url": "https://www.finra.org/investors/investing/investment-accounts/brokerage-accounts/account-transfers"
++      },
++      {
++        "label": "IRS, Rollovers of Retirement Plan and IRA Distributions",
++        "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/rollovers-of-retirement-plan-and-ira-distributions"
++      },
++      {
++        "label": "Investor.gov, Working with an Investment Professional",
++        "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional"
++      },
++      {
++        "label": "SEC Investment Adviser Public Disclosure (IAPD)",
++        "url": "https://adviserinfo.sec.gov"
++      },
++      {
++        "label": "FINRA BrokerCheck",
++        "url": "https://brokercheck.finra.org"
++      }
++    ]
++  },
++  // ── mindmap-pass 2026-11-10 (competitor): how-to-read-form-adv ──
++  {
++    "updated": "2026-11-10",
++    "slug": "how-to-read-form-adv",
++    "title": "How to Read Form ADV Before You Hire an Advisor",
++    "metaDescription": "Learn what Form ADV Part 1, the Part 2A brochure, the Part 2B supplement and the relationship summary show, and where to find them free before you hire.",
++    "h1": "How to Read a Financial Advisor's Form ADV",
++    "cardBlurb": "Learn how to read Form ADV step by step, from the Part 2A narrative brochure and Part 2B supplement to Part 1 and the Part 3 relationship summary.",
++    "introText": "To evaluate a financial advisor, find the firm on the Securities and Exchange Commission (SEC) Investment Adviser Public Disclosure (IAPD) database and read the narrative brochure first. In the guides we publish here, we start from the official public filings because they reveal fee structures, conflicts, and past regulatory actions before you sign an agreement. At ModernWallet, we suggest opening the Part 2A brochure before other sections because the regulatory agency designates it as the primary disclosure document for advisory practices.\n\nLearning how to read Form ADV gives you a direct look at how an advisory firm operates and how its professionals get paid. The document serves as the uniform registration filing for both federal and state authorities. Reviewing the brochure, the individual supplement, and the relationship summary prepares you to spot material disciplinary events and ask direct questions during your first meeting.",
++    "sections": [
++      {
++        "heading": "How to Find and Read Form ADV in the Order That Helps",
++        "body": "To start your search, open the [Investor.gov](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional) Check Out Your Investment Professional tool, which directs you straight to the [SEC Investment Adviser Public Disclosure database](https://adviserinfo.sec.gov). This public portal lets you search by individual name or firm name.\n\nThe regulatory agency does not mandate an official reading sequence for clients. Our suggested order is an editorial judgment designed to help you absorb the most practical information first:\n\n1. Search for the advisory firm on the SEC public portal to confirm its registration status.\n2. Open the Form ADV Part 2A narrative brochure to review services, fee schedules, conflicts, and disciplinary history.\n3. Open the Form ADV Part 2B brochure supplement to review the specific background of the individual who manages your portfolio.\n4. Read the Form ADV Part 3 relationship summary to compare service tiers, conduct standards, and basic fee models across firms.\n5. Check the Form ADV Part 1 filing for formal corporate ownership, affiliate connections, and recorded disciplinary items.\n\nTaking this sequence lets you focus on fees and conflicts before reviewing corporate census data. Anything unclear during your reading should become an immediate question for the professional."
++      },
++      {
++        "heading": "What Each Part of Form ADV Contains",
++        "body": "According to the [SEC investor bulletin on Form ADV](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71), the uniform registration filing divides into several distinct segments. Each part addresses different elements of an advisory firm's business practices and personnel.\n\n| Part | About | What it contains | Delivered to clients? |\n|---|---|---|---|\n| Part 1 | The advisory firm | Check-the-box details on business operations, ownership structure, total clients, employee counts, business practices, corporate affiliations, and disciplinary events of the adviser or its employees | No; public on IAPD portal |\n| Part 2A | The advisory firm | Plain-English narrative brochure covering 18 standardized items, including advisory services, asset amounts, fee schedules, conflicts, risk descriptions, and disciplinary details | Yes; delivered to clients initially and offered annually |\n| Part 2B | Individual professionals | Brochure supplement covering six items on individual background, including education, five-year business history, disciplinary history, and outside business activities | Yes; delivered for supervised individuals formulating advice or exercising discretion |\n| Part 3 | The advisory firm | Form CRS relationship summary covering services, fees, conflicts, required standard of conduct, disciplinary history, and key conversation starters | Yes; delivered to retail investors |\n\nAs summarized in the [Investor.gov glossary entry on Form ADV](https://www.investor.gov/introduction-investing/investing-basics/glossary/form-adv), Part 1 provides structured business data, while Part 2 functions as the narrative disclosure document explaining practical terms."
++      },
++      {
++        "heading": "What to Look For in the Part 2A Brochure",
++        "body": "The Part 2A brochure contains 18 items presented in a standardized order so that you can evaluate multiple firms side by side. The SEC investor bulletin identifies several critical areas that every investor should inspect closely.\n\n- **Advisory business**: The firm describes the types of advisory services it provides and discloses the total amount of client assets it manages. Reviewing this section helps you understand if the firm handles portfolio management, financial planning, or specialized strategies, which connects to the details in our guide to [what is a registered investment advisor](/guides/what-is-a-registered-investment-advisor/).\n- **Fees and compensation**: The brochure outlines fee schedules, explains whether rates are negotiable, and specifies whether payments are billed directly to you or deducted from your account. It also lists additional expenses you might incur, such as brokerage commissions, custody charges, and underlying fund fees. You can use these details to assess total costs before signing an advisory contract.\n- **Performance-based fees and side-by-side management**: This item covers performance-based fees and side-by-side management. \n- **Methods of analysis, investment strategies, and risk of loss**: The firm explains its research methods, core strategies, and the risks associated with its recommendations. \n- **Disciplinary information**: The SEC bulletin explains that firms must disclose material legal or disciplinary events. Certain regulatory or legal actions within the last 10 years are presumed to be material. \n- **Code of ethics, participation in client transactions, and personal trading**: This disclosure covers code of ethics, participation in client transactions, and personal trading, connecting to [financial advisor conflicts of interest](/guides/financial-advisor-conflicts-of-interest/).\n- **Brokerage practices**: The brochure covers the firm's brokerage practices.\n\nEvery firm answers these 18 items in the exact same sequence. That fixed layout allows you to open two brochures from competing firms and compare identical sections without searching through different page structures."
++      },
++      {
++        "heading": "Reviewing Part 2B, Part 3, and Part 1 for Complete Background",
++        "body": "While Part 2A covers the entire firm, the Part 2B brochure supplement focuses on the individual professional handling your money. The SEC bulletin explains that an adviser must deliver this supplement for each supervised individual who formulates investment advice and maintains direct client contact, or who exercises discretionary trading authority over client assets.\n\nThe Part 2B supplement covers six specific items. It outlines the individual's formal education, business background over the past five years, disciplinary information, and outside business activities. \n\nPart 3, also known as the relationship summary or Form CRS, provides a succinct comparison format. Per [Investor.gov guidance on Form CRS](https://www.investor.gov/CRS), the relationship summary covers services offered, fees and costs, conflicts of interest, required standards of conduct, legal or disciplinary history, and key conversation starters. It serves as an accessible starting point before you dig into the comprehensive narrative of Part 2A.\n\nPart 1 remains available on the SEC IAPD portal for investors who want institutional data. It uses a check-the-box layout to record exact ownership structures, business practices, employee counts, corporate affiliations, and disciplinary events involving the firm or its staff. If a firm operates under several parent entities or affiliates, Part 1 lists those corporate connections."
++      },
++      {
++        "heading": "Check the Person and the Firm",
++        "body": "According to [Investor.gov advice on investment advisers](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers), investors should always check both the advisory firm and the individual representative before establishing a working relationship. \n\nInvestment advisers generally must register with either the SEC or relevant state securities authorities. Advisers provide ongoing portfolio advice over time, monitor performance, and are required to act in your best interest without placing their interests ahead of yours. Their fees are typically based on the total value of assets held in your account, though some provide planning services under different fee arrangements.\n\nBrokers operate under a different business model. As outlined in the SEC guidance on Form CRS, broker-dealers generally execute discrete transactions and earn sales commissions or markups on each trade. While investment advisers file Form ADV, broker-dealers and individual brokers register through FINRA and file disclosures accessible on [FINRA BrokerCheck](https://brokercheck.finra.org).\n\nMany financial firms maintain dual registration, operating as both an investment adviser and a broker-dealer. In those environments, you must clarify when a professional is acting as an investment adviser and when they are acting as a broker. You can prepare for these discussions by reviewing our suggested [questions to ask a financial advisor](/guides/questions-to-ask-a-financial-advisor/) during your initial interview."
++      },
++      {
++        "heading": "Limits of Form ADV and When the Answer Changes",
++        "body": "Reading Form ADV will not help you evaluate professionals who are not registered investment advisers. Unregistered individuals and professionals who act purely as brokers do not submit Form ADV filings. For pure brokerage accounts, you must rely on FINRA BrokerCheck and Form CRS rather than narrative brochures.\n\nIn our editorial judgment, a clean Form ADV filing does not show advice quality. \n\nCertain conditions will change how you read Form ADV or alter the conclusions you draw from the text:\n\n- The firm files an annual summary of material changes with a revised brochure, altering fee percentages, service structures, or conflict disclosures.\n- A newly recorded legal or disciplinary event appears in Part 1 or Part 2B, requiring you to reconsider whether to keep the relationship under the guidelines in our breakdown of [when to switch financial advisors](/guides/when-to-switch-financial-advisors/).\n- You negotiate a customized contract with negotiated billing terms that supersede standard schedule numbers shown in Part 2A.\n- The regulatory agency updates filing requirements or disclosure thresholds for registered entities.\n\nThe SEC requires investment advisers to deliver an annual summary of material changes to existing clients along with a revised brochure or an offer to deliver one. If you notice unexpected updates in that annual summary, schedule a meeting to review those changes with your advisor."
++      },
++      {
++        "heading": "How to Read Form ADV and Take Practical Action",
++        "body": "When you open the Part 2A brochure, confirm that the fee calculation method matches the payment structure the professional described to you in person. \n\nFinally, review the Part 2B educational and employment background. Reading Form ADV before you sign an agreement gives you the facts needed to hire the right professional or walk away before committing your assets."
++      }
++    ],
++    "tools": [
++      {
++        "href": "/investing/",
++        "label": "Investing"
++      },
++      {
++        "href": "/retirement/",
++        "label": "Retirement"
++      },
++      {
++        "href": "/net-worth/",
++        "label": "Net worth"
++      }
++    ],
++    "faqs": [
++      {
++        "question": "Is Form ADV public?",
++        "answer": "Yes, Form ADV is a public document. Form ADV filings for registered investment advisory firms and their representatives are public on the SEC Investment Adviser Public Disclosure database."
++      },
++      {
++        "question": "How do I search Form ADV?",
++        "answer": "You can search Form ADV by visiting the Investor.gov Check Out Your Investment Professional search tool, which directs you to the SEC Investment Adviser Public Disclosure portal. Enter the firm or individual advisor name to view their current filings."
++      },
++      {
++        "question": "What is Form ADV Part 2A?",
++        "answer": "Form ADV Part 2A is the narrative brochure that registered investment advisers must prepare. It contains 18 standardized items written in plain English, detailing services offered, fee schedules, conflicts of interest, investment strategies, and disciplinary information."
++      },
++      {
++        "question": "What is Form ADV Part 3?",
++        "answer": "Form ADV Part 3, also known as Form CRS, is the relationship summary document designed for retail investors. It provides concise information about the firm's services, fees and costs, conflicts of interest, standard of conduct, and disciplinary history."
++      },
++      {
++        "question": "Is Form ADV annual?",
++        "answer": "Advisers must deliver an annual summary of material changes to their clients along with a revised brochure or an offer to deliver the revised brochure. This annual disclosure ensures clients stay informed about updates to business practices, fee schedules, or disciplinary records."
++      }
++    ],
++    "sources": [
++      {
++        "label": "SEC OIEA Investor Bulletin: Form ADV - Investment Adviser Brochure and Brochure Supplement",
++        "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71"
++      },
++      {
++        "label": "Investor.gov Glossary: Form ADV",
++        "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/form-adv"
++      },
++      {
++        "label": "Investor.gov: Investment Advisers",
++        "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers"
++      },
++      {
++        "label": "Investor.gov: Relationship Summary (Form CRS)",
++        "url": "https://www.investor.gov/CRS"
++      },
++      {
++        "label": "Investor.gov: Working with an Investment Professional",
++        "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional"
++      },
++      {
++        "label": "SEC Investment Adviser Public Disclosure (IAPD)",
++        "url": "https://adviserinfo.sec.gov"
++      },
++      {
++        "label": "FINRA BrokerCheck",
++        "url": "https://brokercheck.finra.org"
++      }
++    ]
++  },
++  // ── mindmap-pass 2026-11-10 (competitor): what-is-investment-management ──
++  {
++    "updated": "2026-11-10",
++    "slug": "what-is-investment-management",
++    "title": "What Is Investment Management and What AUM Means for You",
++    "metaDescription": "Investment management means choosing and monitoring investments for a goal. Learn how DIY compares to hiring an adviser and what AUM means for account fees.",
++    "h1": "What Is Investment Management and How to Choose DIY or an Adviser",
++    "cardBlurb": "Learn what investment management involves, how managing your own portfolio compares to hiring an adviser, and what assets under management means for fees.",
++    "introText": "Investment management is choosing, monitoring, and adjusting investments for a specific financial goal. In the guides we publish here, we show the tradeoffs between managing money yourself and paying an ongoing professional fee. You can manage your own portfolio by making every trade yourself, or you can hire an adviser for ongoing oversight.\n\nAt ModernWallet, we show the math, name what moves it, and explain the tradeoff. Choosing between investing on your own and hiring a professional depends on the services you require, all-in costs, and potential conflicts of interest.",
++    "sections": [
++      {
++        "heading": "What Is Investment Management and Whether to Invest on Your Own",
++        "body": "Investment management involves selecting securities, tracking their performance against defined objectives, and reallocating positions over time. Per guidance from [Investor.gov on investing on your own](https://www.investor.gov/introduction-investing/getting-started/investing-your-own), the first step in self-directed investing is creating a clear financial plan. That plan establishes how much capital you invest, how long you plan to invest, your specific goals, and your risk tolerance.\n\nWhen you invest on your own, you accept sole responsibility for every investment decision. Investor.gov notes that self-directed investors execute trades through online investing platforms, direct investing programs, or dividend reinvestment plans. \n\nIn contrast, hiring an investment professional delegates ongoing portfolio oversight to an external manager. [Investor.gov on investment advisers](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers) notes that an investment adviser is a firm or person paid to give advice about securities. Advisers generally provide ongoing recommendations about buying, selling, or holding securities."
++      },
++      {
++        "heading": "Services That Explain What Investment Management Covers",
++        "body": "An investment manager provides ongoing portfolio oversight, performance reviews, and asset selection tailored to client goals. Under guidance published by [Investor.gov on working with an investment professional](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional), investment advisers are required to act in your best interest and cannot place their own interests ahead of yours. \n\nAdvisers may also offer optional financial planning services alongside ongoing portfolio monitoring. In discretionary accounts, an adviser makes trades and delegated decisions. \n\nThe scope of work provided by an adviser differs substantially from transaction-based brokerage services. As detailed on [Investor.gov regarding the relationship summary (Form CRS)](https://www.investor.gov/CRS), brokers are generally transactional professionals paid commissions or markups per transaction. Investment advisers focus on managing your portfolio over time. Dual-registered firms operate under both models, so you should understand when they act as a broker and when as an adviser."
++      },
++      {
++        "heading": "What Assets Under Management Means for Account Fees",
++        "body": "According to the [Securities and Exchange Commission (SEC) investor bulletin on Form ADV](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71), an adviser must disclose the amount of client assets managed in Form ADV Part 2A. \n\nInvestor.gov states that an adviser's fee is typically based on the value of all of the assets held in your account with the adviser. The Form CRS disclosure guidance explains that an asset-based fee can cost more than transaction-based fees. However, an asset-based fee aligns with continuous portfolio monitoring and delegated trading authority.\n\n Form ADV Part 2A requires firms to disclose whether fees are negotiable, how billing occurs, and whether custodial or fund expenses apply. Our [flat-fee vs AUM financial advisers comparison](/compare/flat-fee-vs-aum-based-financial-advisors/) covers the cost math for these pricing models."
++      },
++      {
++        "heading": "Decision Framework for Managing Investments or Hiring an Adviser",
++        "body": "Deciding between self-directed investing and hiring an investment adviser depends on required services, total costs, and potential conflicts. Sourced regulatory guidance highlights six core factors: required services, account limits, total costs, payment structure, potential conflicts, and legal or disciplinary history. Our judgment is that self-directed investing works best when you want complete control and have a clear financial plan.\n\n| Your situation | Do it yourself | Hire an adviser | What to check |\n| :--- | :--- | :--- | :--- |\n| Portfolio planning | Create your own financial plan | Receive ongoing advice and optional planning | Required services and account limits |\n| Trading authority | Retain sole responsibility for trades | Delegate discretionary trades | Client contract terms and trading discretion |\n| Fee structure | Not published | Pay an ongoing asset-based fee on total account value | Fee schedules and deduction methods |\n| Oversight requirements | Monitor and rebalance your own holdings | Rely on continuous professional oversight | Form CRS relationship summary disclosures |\n| Professional history | No external professional evaluation required | Research background via public databases | Form ADV Part 1 and Part 2 disciplinary history |\n\nOur suggested order for evaluating this decision begins by determining whether you need ongoing monitoring. If you only require occasional guidance, paying an ongoing asset-based fee may be unnecessary. If you prefer continuous portfolio adjustments and delegated execution, hiring an adviser provides that service."
++      },
++      {
++        "heading": "Steps to Check an Investment Adviser Before Hiring",
++        "body": "Before hiring an investment manager, examine their regulatory registration and public disciplinary record. The SEC Investor Bulletin confirms that Form ADV is the uniform registration document filed by investment advisers with the SEC or state securities authorities. Form ADV contains three separate sections that provide verifiable background details on advisory firms and their individual representatives.\n\nPart 1 uses a check-the-box format covering ownership, business practices, and disciplinary events involving the firm or its employees. Part 2A is a plain-English narrative brochure answering 18 mandatory items, including advisory services, fee schedules, methods of analysis, and material disciplinary disclosures occurring within the past ten years. Part 2B supplements detail the educational background, five-year business history, and disciplinary events of supervised individuals who formulate investment advice or direct client portfolios.\n\nRetail investors can review Part 3, known as Form CRS, to examine core services, fees, conflicts of interest, and required conduct standards. The SEC makes these brochures and relationship summaries accessible on the [Investment Adviser Public Disclosure (IAPD) database](https://adviserinfo.sec.gov). You can also run background searches through the [Investor.gov professional search tool](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional). To learn more about navigating these filings, review our guide on [how to read Form ADV](/guides/how-to-read-form-adv/) and our overview of [what is a registered investment advisor](/guides/what-is-a-registered-investment-advisor/)."
++      },
++      {
++        "heading": "Situations Where Hiring an Adviser Does Not Fit",
++        "body": "Hiring an investment manager is not necessary for every investor. Hiring an adviser does not fit if you want self-direction and accept responsibility for every decision. Investor.gov notes that ways to invest on your own include online investing, direct investing, and dividend reinvestment plans.\n\n An asset-based fee can represent a larger share of a small account balance. \n\nYour approach changes if you only need infrequent trade execution rather than ongoing portfolio supervision. A registered broker paid per transaction offers a different model that avoids ongoing asset-based management fees. Investor.gov notes that how financial professionals make money creates specific conflicts of interest, so you must always verify fee structures before entering into an advisory agreement."
++      },
++      {
++        "heading": "Our Takeaway on What Is Investment Management",
++        "body": "Our takeaway is to invest on your own if you can create a financial plan, manage risk tolerance, and accept complete responsibility for your investment decisions. Conversely, hire an investment adviser if you need ongoing portfolio monitoring, desire discretionary trade execution, and accept an asset-based fee calculated on your assets under management. This choice applies to investors who hold investable assets and must balance continuous oversight against ongoing advisory fees.\n\nThis decision changes if your investable balance is small relative to total advisory expenses, or if your needs are met through single transactions executed by a broker. To determine your next step regarding what is investment management, write down your timeline and risk goals, review our guide on [what a financial advisor does](/guides/what-does-a-financial-advisor-do/), and compare a prospective adviser's Form CRS against investing on your own."
++      }
++    ],
++    "tools": [
++      {
++        "href": "/investing/",
++        "label": "Investing"
++      },
++      {
++        "href": "/retirement/",
++        "label": "Retirement"
++      },
++      {
++        "href": "/net-worth/",
++        "label": "Net worth"
++      }
++    ],
++    "faqs": [
++      {
++        "question": "What does assets under management mean?",
++        "answer": "The SEC bulletin lists the amount of client assets an adviser manages as a required Part 2A advisory-business disclosure. Investor.gov notes that ongoing advisory fees are typically based on the total value of all assets held in your account."
++      },
++      {
++        "question": "What are assets under management fees?",
++        "answer": "Assets under management fees are advisory charges typically based on the value of all assets held in your account with the adviser. The SEC Form ADV Part 2A requires firms to describe their fee schedules, explain whether fees are negotiable, and state how payments are deducted. Investor.gov notes that asset-based fees may cost more than transactional commissions but support continuous portfolio monitoring."
++      },
++      {
++        "question": "How does assets under management work?",
++        "answer": "An investment adviser monitors your investments over time and assesses a fee tied to the total account balance. Under Form ADV Part 2A guidelines, the adviser must specify its methods of analysis, investment strategies, and how other costs like custody and fund fees apply."
++      },
++      {
++        "question": "Is investment management the same as wealth management?",
++        "answer": "Investment management focuses specifically on buying, selling, monitoring, and adjusting securities within a portfolio. Our comparison of a [financial advisor vs wealth manager](/compare/financial-advisor-vs-wealth-manager/) covers the difference between the titles. This guide addresses investment management and the choice between managing securities yourself or hiring an investment adviser."
++      }
++    ],
++    "sources": [
++      {
++        "label": "Investor.gov, Investment Advisers",
++        "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers"
++      },
++      {
++        "label": "SEC Investor Bulletin: Form ADV - Investment Adviser Brochure and Brochure Supplement",
++        "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71"
++      },
++      {
++        "label": "Investor.gov, Relationship Summary (Form CRS)",
++        "url": "https://www.investor.gov/CRS"
++      },
++      {
++        "label": "Investor.gov, Investing on Your Own",
++        "url": "https://www.investor.gov/introduction-investing/getting-started/investing-your-own"
++      },
++      {
++        "label": "Investor.gov, Working with an Investment Professional",
++        "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional"
++      },
++      {
++        "label": "Investment Adviser Public Disclosure (IAPD)",
++        "url": "https://adviserinfo.sec.gov"
++      },
++      {
++        "label": "FINRA BrokerCheck",
++        "url": "https://brokercheck.finra.org"
++      }
++    ]
++  },
+   // opt-new-two-wallet-reimbursement-20261109
+   {
+     "updated": "2026-11-09",
+@@ -307,7 +625,7 @@ export const GUIDES: Guide[] = [
+       },
+       {
+         "heading": "Who a Robo-Advisor Does Not Fit",
+-        "body": "Our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) compares a robo-advisor with a human advisor.\n\nThe SEC bulletin also notes that in some cases robo-advisers may not have been tested under stressed market conditions. If you want a person to talk to during a downturn, a robo-advisor that offers only technical support leaves you without one.\n\n| Your situation | Robo-advisor fit | Source |\n|---|---|---|\n| Comfortable with a questionnaire, online disclosures and limited human contact | Fits | SEC bulletin |\n| Want a person to talk to during downturns | Fits only with hybrid access | SEC bulletin |\n| Debts, real estate or retirement accounts the questionnaire skips | The advice leaves them out | SEC bulletin |\n| Want lower fees and lower minimums | Often fits. Add up total costs first | Investor.gov glossary, SEC bulletin |\n\nOur answer changes in two cases. If a robo-advisor's questionnaire asks about your debts, real estate and outside retirement accounts, the information objection shrinks. If it offers a hybrid human adviser, or a person for accounts above a minimum size you meet, the downturn objection shrinks. Our [best robo-advisors roundup](/roundup/best-robo-advisors/) ranks individual providers."
++        "body": "Our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) compares a robo-advisor with a human advisor.\n\nThe SEC bulletin also notes that in some cases robo-advisers may not have been tested under stressed market conditions. If you want a person to talk to during a downturn, a robo-advisor that offers only technical support leaves you without one.\n\n| Your situation | Robo-advisor fit | Source |\n|---|---|---|\n| Comfortable with a questionnaire, online disclosures and limited human contact | Fits | SEC bulletin |\n| Want a person to talk to during downturns | Fits only with hybrid access | SEC bulletin |\n| Debts, real estate or retirement accounts the questionnaire skips | The advice leaves them out | SEC bulletin |\n| Want lower fees and lower minimums | Often fits. Add up total costs first | Investor.gov glossary, SEC bulletin |\n\nOur answer changes in two cases. If a robo-advisor's questionnaire asks about your debts, real estate and outside retirement accounts, the information objection shrinks. If it offers a hybrid human adviser, or a person for accounts above a minimum size you meet, the downturn objection shrinks. Our [best robo-advisors roundup](/roundup/best-robo-advisors/) ranks individual providers.\n\nIf you want the head-to-head, see our [robo-advisor vs financial advisor](/compare/robo-advisor-vs-financial-advisor/) comparison."
+       },
+       {
+         "heading": "Our Takeaway",
+@@ -7971,7 +8289,7 @@ export const GUIDES: Guide[] = [
+     "sections": [
+       {
+         "heading": "How to Check an RIA Before You Hire One",
+-        "body": "You can verify the credentials, fee schedule, and disciplinary background of any registered investment advisor for free on the official [Investment Adviser Public Disclosure (IAPD)](https://adviserinfo.sec.gov/) database. Before you sign an agreement or transfer money, search the firm name or the individual representative's name on that portal.\n\nThe database provides two critical documents that every retail investor should review. The first is Form ADV Part 2, commonly called the brochure, which describes the firm's business practices, fee structures, investment strategies, potential conflicts of interest, and any past disciplinary actions. The second is Form CRS, a relationship summary designed to let you quickly evaluate services, legal standards, and costs. Reviewing these filings allows you to confirm that the firm holds active registration and shows the firm's disciplinary history."
++        "body": "You can verify the credentials, fee schedule, and disciplinary background of any registered investment advisor for free on the official [Investment Adviser Public Disclosure (IAPD)](https://adviserinfo.sec.gov/) database. Before you sign an agreement or transfer money, search the firm name or the individual representative's name on that portal.\n\nThe database provides two critical documents that every retail investor should review. The first is [Form ADV Part 2, commonly called the brochure](/guides/how-to-read-form-adv/), which describes the firm's business practices, fee structures, investment strategies, potential conflicts of interest, and any past disciplinary actions. The second is Form CRS, a relationship summary designed to let you quickly evaluate services, legal standards, and costs. Reviewing these filings allows you to confirm that the firm holds active registration and shows the firm's disciplinary history."
+       },
+       {
+         "heading": "What an RIA Is and the Legal Meaning of Adviser",
+@@ -7991,7 +8309,7 @@ export const GUIDES: Guide[] = [
+       },
+       {
+         "heading": "How RIAs Make Money",
+-        "body": "A registered investment advisor is generally paid through a percentage of assets under management, though many firms charge fixed flat fees or hourly rates. The method of compensation changes your total annual cost significantly as your balance grows, which makes it worth comparing fee structures before hiring.\n\nUnder a standard 1% assets-under-management fee structure, managing a $500,000 portfolio costs $5,000 per year, whereas a $2,500 flat annual fee for the same planning scope costs half that amount. If that same portfolio grows to $1,000,000, a 1% annual fee rises to $10,000 every year even if the underlying planning workload remains identical. These worked figures illustrate how asset-percentage models scale automatically with portfolio size. To evaluate which billing arrangement suits your situation, you can review our [guide on flat-fee vs AUM-based financial advisors](/compare/flat-fee-vs-aum-based-financial-advisors/) or test long-term compounding outcomes using our [portfolio tools](/portfolio/)."
++        "body": "A registered investment advisor is generally paid through a [percentage of assets under management](/guides/what-is-investment-management/), though many firms charge fixed flat fees or hourly rates. The method of compensation changes your total annual cost significantly as your balance grows, which makes it worth comparing fee structures before hiring.\n\nUnder a standard 1% assets-under-management fee structure, managing a $500,000 portfolio costs $5,000 per year, whereas a $2,500 flat annual fee for the same planning scope costs half that amount. If that same portfolio grows to $1,000,000, a 1% annual fee rises to $10,000 every year even if the underlying planning workload remains identical. These worked figures illustrate how asset-percentage models scale automatically with portfolio size. To evaluate which billing arrangement suits your situation, you can review our [guide on flat-fee vs AUM-based financial advisors](/compare/flat-fee-vs-aum-based-financial-advisors/) or test long-term compounding outcomes using our [portfolio tools](/portfolio/)."
+       },
+       {
+         "heading": "How an RIA Can Help and Questions to Ask",
+@@ -10153,7 +10471,7 @@ export const GUIDES: Guide[] = [
+       { heading: "Step 1: Understand fiduciary vs suitability", body: "The single most important test is the standard your advisor follows. A fiduciary is required by law to act in your best interest, disclose conflicts, and avoid self-dealing. The SEC applies this fiduciary duty to registered investment advisers under the Investment Advisers Act of 1940.\n\nBrokers historically only had to recommend something suitable, a weaker rule that allowed higher-fee products when a cheaper option would also fit. Regulation Best Interest now raises the broker standard, but it is still not the same as fiduciary duty. Ask any advisor in writing which standard covers each of your accounts, and read the firm's Form CRS.\n\nOur guide to [what a fiduciary is](/guides/what-is-a-fiduciary/) explains which standard applies to advisers, brokers and CFP professionals." },
+       { heading: "Step 2: Compare fee-only, commission, and hybrid", body: "How an advisor is paid shapes what they recommend. Fee-only advisors are paid only by you, either as a percentage of assets managed (often around 1% per year), a flat fee, or an hourly rate. This model reduces conflicts because their pay does not depend on which product you buy.\n\nCommission-based advisors earn from the products they sell you, like mutual funds, annuities, or insurance. Hybrid advisors can charge both. The SEC recommends comparing fees in actual dollars, not just percentages. A 1% fee on $500,000 is $5,000 a year, which needs to buy real value to be worth it." },
+       { heading: "Step 3: Look for the CFP credential", body: "The CFP (Certified Financial Planner) is the most respected credential in personal financial planning. CFP professionals must complete college-level coursework, pass a rigorous exam, meet an experience requirement, and follow a code of ethics. CFP Board rules require them to act as fiduciaries when giving financial advice. Our guide to [what a CFP is and what it takes to earn one](/guides/what-is-a-cfp/) lists the four certification requirements.\n\nOther credentials exist and vary widely in rigor. The SEC warns that professional designations do not all require the same difficulty, and some may indicate product limitations. A CFP with a fee-only fiduciary practice is a strong starting point for most families. If you're sizing up a fund manager rather than hiring a personal planner, see [what a CFA charter actually means](/guides/what-is-a-cfa/) and how it differs from a CFP." },
+-      { heading: "Step 4: Verify the advisor before you hire", body: "Never hire an advisor without checking their record. The SEC provides two free tools you should always use. Investment Adviser Public Disclosure (IAPD) at adviserinfo.sec.gov shows the firm's Form ADV, services, fees, conflicts, and any disciplinary history. FINRA's BrokerCheck at brokercheck.finra.org covers brokers.\n\nThe SEC also requires most advisors to give you Form CRS, the Customer Relationship Summary. It discloses services, fees, conflicts, and any disciplinary events in plain language. If someone will not send you a Form CRS or ADV, walk away." },
++      { heading: "Step 4: Verify the advisor before you hire", body: "Never hire an advisor without checking their record. The SEC provides two free tools you should always use. Investment Adviser Public Disclosure (IAPD) at adviserinfo.sec.gov shows the firm's Form ADV, services, fees, conflicts, and any disciplinary history. FINRA's BrokerCheck at brokercheck.finra.org covers brokers.\n\nThe SEC also requires most advisors to give you Form CRS, the Customer Relationship Summary. It discloses services, fees, conflicts, and any disciplinary events in plain language. If someone will not send you a Form CRS or ADV, walk away.\n\nIf you are replacing an advisor, see [when to switch financial advisors](/guides/when-to-switch-financial-advisors/) before you move any accounts." },
+       { heading: "Step 5: Questions to ask on the first call", body: "Bring the same short list to every advisor you interview. Ask: Which standard covers each of my accounts, in writing? How are you paid, exactly, and what will my total annual cost be in dollars? What credentials do you hold, and is one the CFP?\n\nAlso ask: Who is your typical client, and do they look like me? How often will we meet, and who is my main contact? What happens to my accounts if you leave or retire? A good advisor answers each question directly. A vague or evasive answer is your signal to keep looking.\n\nFor the full interview script, see our [questions to ask a financial advisor](/guides/questions-to-ask-a-financial-advisor/)." },
+     ],
+     tools: [
+@@ -10196,7 +10514,7 @@ export const GUIDES: Guide[] = [
+       { heading: "Step 3: When paying for a financial advisor is worth it", body: "A financial advisor tends to earn their fee when your situation has real complexity: a business sale, an inheritance, stock compensation with vesting and tax timing decisions, a pending retirement with Social Security claiming and withdrawal-order questions, or simply not having the time or temperament to manage investments yourself. High-net-worth households, roughly $1 million or more in investable assets, often layer on estate and tax coordination that is hard to DIY well.\n\nAn advisor is also worth it if you know, honestly, that you panic-sell during downturns or chase performance after the fact. That behavioral gap alone can cost more than any advisor fee over a full market cycle." },
+       { heading: "Step 4: When DIY investing is the smarter choice", body: "If your situation is simple — one or two retirement accounts, no complex tax events, and the discipline to keep contributing on autopilot — a low-cost target-date fund or a robo-advisor at roughly 0.25% can capture most of the same diversification benefit at a fraction of the cost. Our [investing hub](/investing/) and [portfolio calculator](/portfolio/) can model the same allocation math a paid advisor would run.\n\nSmall balances are the clearest DIY case. A 1% fee on a $20,000 account is $200 a year, which needs to buy real behavioral or tax value to be worth it. As the dollar amount and the complexity both grow, the math shifts in the advisor's favor." },
+       { heading: "Step 5: Run your own break-even math", body: "Compare the dollar cost of the fee to a realistic estimate of the value an advisor adds for your specific situation, not the average 3% figure. On $500,000, a 1% fee is $5,000 a year. If a disciplined plan and better tax placement genuinely save you more than $5,000 a year in avoided mistakes and tax drag, the advisor pays for themselves; if your situation is simple enough that you would not make those mistakes anyway, the fee is a pure cost.\n\nOnce you decide an advisor is worth it, our [guide to choosing a financial advisor](/guides/how-to-choose-a-financial-advisor/) walks through fiduciary status, fee models, the CFP credential, and how to verify anyone before you hire them. Our [questions to ask a financial advisor](/guides/questions-to-ask-a-financial-advisor/) give you a script for those interviews." },
+-      { heading: "Robo-advisor vs. financial advisor: a quick side-by-side", body: "A robo-advisor and a financial advisor solve the same core problem, building and managing a portfolio, at very different price points and service levels. Cost is the starkest difference: a robo-advisor typically charges around 0.25% of assets with no dedicated human attached, while a traditional fee-only financial advisor charges roughly 1% AUM, about four times more, for a relationship with an actual person.\n\nThat extra cost buys judgment a robo-advisor's algorithm can't replicate: behavioral coaching during a downturn, tax-aware moves like asset location and loss harvesting timed to your specific situation, and guidance through one-time events like a business sale or inheritance. A robo-advisor rebalances on schedule and diversifies well, but it can't talk you out of a panic sell or plan around a stock-compensation vesting schedule.\n\nPick a robo-advisor if your situation is simple, one or two retirement accounts with no complex tax events, and you mainly need low-cost diversification and rebalancing. Pick a financial advisor once your situation has real complexity, or if you know you tend to make emotional investment decisions during volatility; the behavioral coaching alone is often worth more than the extra fee. See our [financial advisor vs financial planner](/compare/financial-advisor-vs-financial-planner/) comparison for the difference between those two credentials once you decide a human advisor is the right call.\n\nTo see how robo-advisors work and who they fit, read [what a robo-advisor is](/guides/what-is-a-robo-advisor/)." },
++      { heading: "Robo-advisor vs. financial advisor: a quick side-by-side", body: "A robo-advisor and a financial advisor solve the same core problem, building and managing a portfolio, at very different price points and service levels. Cost is the starkest difference: a robo-advisor typically charges around 0.25% of assets with no dedicated human attached, while a traditional fee-only financial advisor charges roughly 1% AUM, about four times more, for a relationship with an actual person.\n\nThat extra cost buys judgment a robo-advisor's algorithm can't replicate: behavioral coaching during a downturn, tax-aware moves like asset location and loss harvesting timed to your specific situation, and guidance through one-time events like a business sale or inheritance. A robo-advisor rebalances on schedule and diversifies well, but it can't talk you out of a panic sell or plan around a stock-compensation vesting schedule.\n\nPick a robo-advisor if your situation is simple, one or two retirement accounts with no complex tax events, and you mainly need low-cost diversification and rebalancing. Pick a financial advisor once your situation has real complexity, or if you know you tend to make emotional investment decisions during volatility; the behavioral coaching alone is often worth more than the extra fee. See our [financial advisor vs financial planner](/compare/financial-advisor-vs-financial-planner/) comparison for the difference between those two credentials once you decide a human advisor is the right call.\n\nTo see how robo-advisors work and who they fit, read [what a robo-advisor is](/guides/what-is-a-robo-advisor/).\n\nFor the full side-by-side with sources, see our [robo-advisor vs financial advisor](/compare/robo-advisor-vs-financial-advisor/) comparison." },
+     ],
+     tools: [
+       { href: "/guides/what-is-a-registered-investment-advisor/", label: "What is a registered investment advisor" },
+@@ -23646,11 +23964,11 @@ export const GUIDES: Guide[] = [
+       },
+       {
+         "heading": "How to Verify Advisor Disclosures",
+-        "body": "You do not have to rely solely on verbal answers, because regulatory filings require advisory firms to publish their compensation structures, background records, and legal disciplinary actions in plain view.\n\nForm CRS (Customer Relationship Summary) is a short plain-language document most advisers and brokers must give retail clients. It outlines services, fees, conflicts of interest, and disciplinary history in a standardized format. Alongside it, Form ADV Part 2 (the brochure) describes an investment adviser's business practices, fee structure, conflicts of interest, and disciplinary history in greater narrative detail. If an advisor will not provide a Form CRS or Form ADV, that is a reason to keep looking.\n\nYou can independently verify these documents through free public databases. Use the [Investment Adviser Public Disclosure (IAPD)](https://adviserinfo.sec.gov/) database to review registered investment advisers and read their active Form ADV filings. For broker-dealer representatives, check [FINRA BrokerCheck](https://brokercheck.finra.org/) to see the free public database for brokers. Reviewing these databases ensures the advisor's verbal claims match their official regulatory filings."
++        "body": "You do not have to rely solely on verbal answers, because regulatory filings require advisory firms to publish their compensation structures, background records, and legal disciplinary actions in plain view.\n\nForm CRS (Customer Relationship Summary) is a short plain-language document most advisers and brokers must give retail clients. It outlines services, fees, conflicts of interest, and disciplinary history in a standardized format. Alongside it, [Form ADV Part 2 (the brochure)](/guides/how-to-read-form-adv/) describes an investment adviser's business practices, fee structure, conflicts of interest, and disciplinary history in greater narrative detail. If an advisor will not provide a Form CRS or Form ADV, that is a reason to keep looking.\n\nYou can independently verify these documents through free public databases. Use the [Investment Adviser Public Disclosure (IAPD)](https://adviserinfo.sec.gov/) database to review registered investment advisers and read their active Form ADV filings. For broker-dealer representatives, check [FINRA BrokerCheck](https://brokercheck.finra.org/) to see the free public database for brokers. Reviewing these databases ensures the advisor's verbal claims match their official regulatory filings."
+       },
+       {
+         "heading": "Getting a Second Opinion on Large Decisions",
+-        "body": "When facing a major portfolio adjustment, seeking a second opinion provides an effective sanity check against potential advisor conflicts of interest.\n\nA second opinion from an unconnected advisor, paid by flat fee or hourly, is a way to test a recommendation, especially a product like an annuity or a switch of investments. \n\nThis check is valuable whenever an existing planner suggests liquidating long-held assets or transferring retirement balances into complex proprietary vehicles. Using resources in our [retirement calculators](/retirement/) hub alongside an unaligned second opinion helps you calculate whether a proposed change actually serves your long-term goals. Reading our analysis on whether a [financial advisor is worth it](/guides/financial-advisor-worth-it/) offers extra perspective on balancing these ongoing fees against objective guidance."
++        "body": "When facing a major portfolio adjustment, seeking a second opinion provides an effective sanity check against potential advisor conflicts of interest.\n\nA second opinion from an unconnected advisor, paid by flat fee or hourly, is a way to test a recommendation, especially a product like an annuity or a switch of investments. \n\nThis check is valuable whenever an existing planner suggests liquidating long-held assets or transferring retirement balances into complex proprietary vehicles. Using resources in our [retirement calculators](/retirement/) hub alongside an unaligned second opinion helps you calculate whether a proposed change actually serves your long-term goals. Reading our analysis on whether a [financial advisor is worth it](/guides/financial-advisor-worth-it/) offers extra perspective on balancing these ongoing fees against objective guidance.\n\nIf a second opinion leads you to change firms, see [when to switch financial advisors](/guides/when-to-switch-financial-advisors/) for the steps."
+       },
+       {
+         "heading": "Who This Advice Is Not For and When the Approach Shifts",

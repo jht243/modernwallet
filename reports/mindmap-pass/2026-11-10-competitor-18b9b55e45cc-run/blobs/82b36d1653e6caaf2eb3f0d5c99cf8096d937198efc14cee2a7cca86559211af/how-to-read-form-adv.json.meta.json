@@ -1,0 +1,227 @@
+{
+ "slug": "how-to-read-form-adv",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1915,
+ "floor": 1200,
+ "input_tokens": 24878,
+ "output_tokens": 3574,
+ "thinking_tokens": 216,
+ "cached_tokens": 21695,
+ "est_cost_usd": 0.0182,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['How to Find and Read Form ADV in the Order That Helps', 'What Each Part of Form ADV Contains', 'What to Look For in the Part 2A Brochure', 'Reviewing Part 2B, Part 3, and Part 1 for Complete Background', 'Check the Person and the Firm'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced",
+   "claim check: 1 claim(s) still unsupported after 3 pass(es) \u2014 auditor must cut or source: 'This annual disclosure ensures clients stay informed about updates to business p'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1915,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 606,
+   "floor": 1200,
+   "ratio": 0.51,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    14,
+    6,
+    1
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "This public portal lets you search by individual name or firm name without paying any fees or creating an account.",
+     "replacement": "This public portal lets you search by individual name or firm name.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that searching requires no fees or account creation."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "The text reminds investors that investing in securities involves risk of loss that you must be prepared to handle.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that the brochure reminds investors to handle losses."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "A clean record here provides confidence, whereas disclosed events warrant careful inquiry.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that a clean record provides confidence."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "An advisor with extensive outside business commitments might face time constraints or separate financial conflicts that affect client recommendations.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state outside commitments create time constraints or affect recommendations."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "A firm might carry a spotless record while employing an individual with recent disciplinary disclosures, or an individual might have a clean history inside a firm with past regulatory penalties.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not state these hypothetical contrast scenarios between firms and individuals."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Unregistered financial planners, general coaches, and professionals who act purely as brokers do not submit Form ADV filings.",
+     "replacement": "Unregistered individuals and professionals who act purely as brokers do not submit Form ADV filings.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention financial planners or general coaches."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "In our editorial judgment, a clean Form ADV filing does not guarantee high investment returns or superior advice quality.",
+     "replacement": "In our editorial judgment, a clean Form ADV filing does not show advice quality.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention investment returns."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "A spotless disciplinary history confirms that the regulator has not penalized the firm for material violations within the disclosed window, but it does not measure whether an advisor's asset allocation aligns with your financial targets.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention asset allocation or financial targets."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Reviewing an advisor's Form ADV gives you the leverage you need to verify claims, compare ongoing expenses, and evaluate business ethics.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Form ADV provides leverage or evaluates business ethics."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Taking a methodical approach ensures you do not overlook critical disclosures hidden behind marketing language.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state disclosures are hidden behind marketing language."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Finally, compare the Part 2B educational and employment background with the professional's public r\u00e9sum\u00e9.",
+     "replacement": "Finally, review the Part 2B educational and employment background.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention a professional's public r\u00e9sum\u00e9."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Gaps in five-year business records or newly disclosed outside business ventures require clarification.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that gaps in records require clarification."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "You can search, view, and download Form ADV filings for registered investment advisory firms and their representatives through the SEC Investment Adviser Public Disclosure database.",
+     "replacement": "Form ADV filings for registered investment advisory firms and their representatives are public on the SEC Investment Adviser Public Disclosure database.",
+     "type": "unsupported",
+     "why": "SOURCE does not list a download feature for IAPD filings."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "This item discloses whether the firm charges fees based on account gains while also managing accounts that pay standard asset-based fees.",
+     "replacement": "This item covers performance-based fees and side-by-side management.",
+     "type": "unsupported",
+     "why": "SOURCE does not define performance-based fees or side-by-side management."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "This combination can create an incentive to favor certain accounts over others.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that side-by-side management creates account-favoring incentives."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "This disclosure details whether the firm or its employees invest in the same securities recommended to clients, creating potential conflicts that we outline in our review of [financial advisor conflicts of interest](/guides/financial-advisor-conflicts-of-interest/).",
+     "replacement": "This disclosure covers code of ethics, participation in client transactions, and personal trading, connecting to [financial advisor conflicts of interest](/guides/financial-advisor-conflicts-of-interest/).",
+     "type": "unsupported",
+     "why": "SOURCE does not state that this item details investing in recommended client securities."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "The brochure explains how the firm selects broker-dealers for client transactions, handles transaction costs, and decides where to direct trades.",
+     "replacement": "The brochure covers the firm's brokerage practices.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe broker selection, transaction costs, or trade direction details."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "If the advisor claims to charge a flat percentage of assets under management, verify whether that percentage covers custody and administrative costs or if additional custodial fees apply to your account balance.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention administrative costs or additional custodial fees."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [
+    {
+     "quote": "This annual disclosure ensures clients stay informed about updates to business practices, fee schedules, or disciplinary records.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that annual disclosure ensures clients stay informed.",
+     "replacement": "",
+     "id": "faqs[4].answer",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    },
+    {
+     "quote": "This annual disclosure ensures clients stay informed about updates to business practices, fee schedules, or disciplinary records.",
+     "type": "unsupported",
+     "why": "SOURCE does not state the purpose or contents of the annual disclosure.",
+     "replacement": "",
+     "id": "faqs[4].answer",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    },
+    {
+     "quote": "This annual disclosure ensures clients stay informed about updates to business practices, fee schedules, or disciplinary records.",
+     "type": "unsupported",
+     "why": "SOURCE limits answer strictly to annual delivery of summary of material changes.",
+     "replacement": "",
+     "id": "faqs[4].answer",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "faqs[4].answer",
+     "quote": "This annual disclosure ensures clients stay informed about updates to business practices, fee schedules, or disciplinary records.",
+     "type": "unsupported",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2186
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 364.8,
+ "response_id": "ecHyataCN8yCytMPs77l6As",
+ "generated_at": "2026-11-10T07:08:21+0000"
+}

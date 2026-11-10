@@ -1,0 +1,47 @@
+== git log -S "robo-advisor-vs-financial-advisor" --oneline -- src/data reports/mindmap-pass
+
+== git log -S "when-to-switch-financial-advisors" --oneline -- src/data reports/mindmap-pass
+
+== git log -S "how-to-read-form-adv" --oneline -- src/data reports/mindmap-pass
+
+== git log -S "what-is-investment-management" --oneline -- src/data reports/mindmap-pass
+
+== git log -S "fee-only-vs-fee-based" --oneline -- src/data reports/mindmap-pass
+
+== git log -S "assets-under-management" --oneline -- src/data reports/mindmap-pass
+ae64c1f x-trends: Nov 4 scout empty for themodernwallet.com
+
+== git log -S "registered-investment" --oneline -- src/data reports/mindmap-pass
+9e3ab1c competitor-monitor 2026-11-09: record dispositions, baseline, deployment evidence and published review journals
+5541f2a Mindmap pass: 0 consolidations, 0 metadata, 6 new pages, 0 body, 7 link passes (chart: reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89.md)
+3f2561b mindmap-pass (competitor 2026-11-09): WIP candidates, evidence and review journals (unpublished, under independent review)
+8ac665a Mindmap pass: 0 consolidations, 0 metadata, 5 new pages, 0 body, 3 link passes (chart: reports/mindmap-pass/2026-11-04-aca-snap.md)
+ae64c1f x-trends: Nov 4 scout empty for themodernwallet.com
+
+== git log -S "financial-therapist" --oneline -- src/data reports/mindmap-pass
+
+== git log -S "lgbtq" --oneline -- src/data reports/mindmap-pass
+3f2561b mindmap-pass (competitor 2026-11-09): WIP candidates, evidence and review journals (unpublished, under independent review)
+8ac665a Mindmap pass: 0 consolidations, 0 metadata, 5 new pages, 0 body, 3 link passes (chart: reports/mindmap-pass/2026-11-04-aca-snap.md)
+
+== git log -20 --oneline
+15bf9d2 Complete durable search recovery without repeat reviews or system dependency conflicts
+7a4ef07 Complete durable search recovery without repeat reviews or system dependency conflicts
+3b54817 Complete durable search recovery without repeat reviews or system dependency conflicts
+503bcff Complete unattended timeout and owned lease recovery across native routine variants
+f2a69e4 Remove observed unattended deployment retries and retain exact search recovery evidence
+245e690 Roll out verified Mindmap resume, audit-limit release and competitor deduplication fixes
+cf529f5 Publish medical reimbursement checklist under explicit owner review waiver
+9e3ab1c competitor-monitor 2026-11-09: record dispositions, baseline, deployment evidence and published review journals
+5541f2a Mindmap pass: 0 consolidations, 0 metadata, 6 new pages, 0 body, 7 link passes (chart: reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89.md)
+3f2561b mindmap-pass (competitor 2026-11-09): WIP candidates, evidence and review journals (unpublished, under independent review)
+4c8a9d3 Reduce redundant Mindmap instruction, research and recovery overhead
+3ca86f5 competitor-monitor: freeze 2026-11-09 intake (10 candidates pending mindmap handoff)
+d0a0adc Reduce redundant Mindmap instruction, research and recovery overhead
+57b583a Reduce redundant Mindmap instruction, research and recovery overhead
+2990507 Roundup correction: Public on cash + beginners roundups (vendor-confirmed)
+ec999bc page-1-2-no-clicks: 2026-11-09 detect + measure reports (no pages picked)
+059b168 vendor-roundup 2026-11-09: +2 vendors across 2 pages (+0 new pages)
+2c65d93 Reduce redundant Mindmap instruction, research and recovery overhead
+b42f639 Reduce redundant Mindmap instruction, research and recovery overhead
+1ad9fb9 Page quality pass 2026-11-09: no under-engaging content pages actionable (report + pull)

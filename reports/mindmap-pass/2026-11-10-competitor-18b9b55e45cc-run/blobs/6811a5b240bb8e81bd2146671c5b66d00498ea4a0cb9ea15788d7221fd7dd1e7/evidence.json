@@ -1,0 +1,96 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "mindmap-builder-ae12db",
+ "route": "/guides/how-to-read-form-adv",
+ "readerQuestion": "How do I read a financial advisor's Form ADV? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 14/46 on-topic in the saved sweep: what is form adv / part 2a / part 2b / part 3 / how to search form adv / how to download form adv / is form adv public / is form adv annual; 32/46 off-topic: parole, adverb, form W/E/NR variants]",
+ "origin": "competitor-monitor-auto 2026-11-10 (frozen intake 18b9b55e45cc)",
+ "demandSource": "Google Autocomplete (estimate, NOT measured); SEMRUSH and DataForSEO keys unavailable, SERP unread",
+ "decisionGap": "Readers asking this cannot get the primary-source answer and its conditions on this site; nearest pages answer neighbouring decisions (see whyNewPage in the manifest and coverage.txt).",
+ "finding": "Form ADV has separate parts for separate jobs: Part 1 (check-the-box business, ownership and disciplinary data, public on IAPD), Part 2A (a plain-English brochure of 18 items in a fixed order covering services, fees, conflicts, strategies and risk, discipline and personal trading, the primary disclosure document), Part 2B (a supplement on the individuals who advise you) and Part 3 (a short relationship summary); reading the brochure first answers the questions that matter most before hiring, which is an editorial ordering, not an SEC instruction.",
+ "conditions": "US readers; SEC- or state-registered advisers only; exempt advisers and broker-dealers use other filings; no form-item detail beyond the SEC bulletin is asserted.",
+ "whatWouldChange": "The adviser being unregistered or broker-only, SEC form revisions, or a new disciplinary event in the filing.",
+ "basis": "reported",
+ "method": "Reported primary-source synthesis; no test or model.",
+ "whyNoQuantitativeAnalysis": "The reader decision is procedural or definitional and rests on regulator statements; no defensible numerical input exists beyond source figures, so arithmetic would only restate them.",
+ "reasoning": "From the saved primary pages in sources.md to the answer: Form ADV has separate parts for separate jobs: Part 1 (check-the-box business, ownership and disciplinary data, public on IAPD), Part 2A (a plain-English brochure of 18 items in a fixed order covering services, fees, conflicts, strategies and risk, discipline and personal trading, the primary disclosure document), Part 2B (a supplement on the individuals who advise you) and Part 3 (a short relationship summary); reading the brochure first answers the questions that matter most before hiring, which is an editorial ordering, not an SEC instruction.",
+ "sourceArtifacts": [
+  {
+   "path": "evidence/how-to-read-form-adv/sources.md",
+   "sha256": "1b91477977474aabfb3e03a267cf5c88a54c21a4cb21bb01311d0f58ac0020d9"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_investor-bulletins-71",
+   "sha256": "953e89fd695e8cd41b47b9fc76382e695de82d904f09d46dc2fe0c657e8086d7"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.investor.gov_introduction-investing_investing-basics_glossary_form-adv",
+   "sha256": "55da2b2c1ddf24be8c7e3b67f360c0da0adfc17dfe0f9968a5836756fac10ed3"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.investor.gov_introduction-investing_getting-started_working-investment-professional_investment-advisers",
+   "sha256": "ffda7445ecd73d962912bb3ead41eca63f60c2bd345b4af5908368d646816d38"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/investor.gov_CRS-2026-11-09.txt",
+   "sha256": "183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/research/sources/www.investor.gov_introduction-investing_getting-started_working-investment-professional",
+   "sha256": "527060a93bc96c0c3a9cf3c764724cc66a9801a8afcb19d3b9d9e881759a7a51"
+  }
+ ],
+ "caseSelection": {
+  "path": "evidence/how-to-read-form-adv/cases.json",
+  "sha256": "0e52d7fb0e7a5e5baad8991b6ef2bc50531770c03751203ed87aa1d88321fd6a"
+ },
+ "caseDecisions": "Approved-case lookup run for the exact reader question (cases.json). This site has no named-client claims in _experience.md; no case or client-conversation claim is used.",
+ "provenance": {
+  "basis": "reported",
+  "supportingRecordIds": [
+   "INV-bulletin-formadv",
+   "INV-formadv-glossary",
+   "INV-advisers",
+   "INV-CRS",
+   "INV-working"
+  ],
+  "scopeAndLimits": "US readers; SEC- or state-registered advisers only; exempt advisers and broker-dealers use other filings; no form-item detail beyond the SEC bulletin is asserted.",
+  "publicMethod": "Sources linked in-line and in a Sources list; third-person attribution to the named body beside each finding.",
+  "placement": "Opening section and Takeaway name the regulator as the basis; no \"we tested\" or modeling claim; editorial judgments labeled as such."
+ },
+ "sources": [
+  {
+   "id": "INV-bulletin-formadv",
+   "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71",
+   "checkedAt": "2026-11-10",
+   "scope": "SEC OIEA Investor Bulletin \"Form ADV - Investment Adviser Brochure and Brochure Supplement\" (June 24, 2016, updated Aug. 27, 2020). Form ADV is the uniform regi"
+  },
+  {
+   "id": "INV-formadv-glossary",
+   "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/form-adv",
+   "checkedAt": "2026-11-10",
+   "scope": "Investor.gov glossary: Form ADV is the uniform form to register with the SEC and state authorities; Part 1 business information (check-the-box), Part 2 narrativ"
+  },
+  {
+   "id": "INV-advisers",
+   "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers",
+   "checkedAt": "2026-11-10",
+   "scope": "Investor.gov: investment advisers are required to act in your best interest and not put their interest ahead of yours; the way advisers make money creates confl"
+  },
+  {
+   "id": "INV-CRS",
+   "url": "https://www.investor.gov/CRS",
+   "checkedAt": "2026-11-09",
+   "scope": "Investor.gov/CRS (captured 2026-11-09): registered broker-dealers and registered investment advisers must provide a relationship summary (Form CRS) to retail in"
+  },
+  {
+   "id": "INV-working",
+   "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional",
+   "checkedAt": "2026-11-10",
+   "scope": "Investor.gov: working with an investment professional (fetched 2026-11-10); used for the registration-check and Check Out Your Investment Professional tool refe"
+  }
+ ],
+ "exclusions": "TESTED format excluded (financial services outside _experience.md section G; no executed tests).",
+ "unknowns": "Measured search volume, SERP and PAA unavailable; vendor-specific fees only from existing dated site pages.",
+ "selectedMedium": "text",
+ "mediumReason": "Procedural or definitional answer; a table carries the finite comparison; no calculator adds value."
+}

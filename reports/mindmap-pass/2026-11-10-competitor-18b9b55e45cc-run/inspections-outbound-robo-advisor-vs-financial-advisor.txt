@@ -1,0 +1,18 @@
+OUTBOUND INSPECTION for /compare/robo-advisor-vs-financial-advisor (2026-11-10)
+Date/review policy: existing-anchor links and the declared one-sentence insertions below are link-only text edits to existing pages: no new factual claim, no dateModified bump; every touched page is re-captured and reviewed in the rendered audit. If the new page is deferred, its links are removed (isolation rule).
+
+page /guides/what-is-a-robo-advisor/ - title: What a Robo-Advisor Is and When Using One Makes Sense
+section: Section 4 human contact | purpose: definition and what to check before opening an account
+
+page /compare/flat-fee-vs-aum-based-financial-advisors/ - title: Flat-Fee vs. AUM Financial Advisors Compared by Cost
+section: Section 3 costs | purpose: dollar crossover benchmarks for human advisors
+
+page /roundup/best-robo-advisors/ - title: Best Robo Advisors of 2026: Fees and Minimums Compared
+section: Section 3 costs | purpose: dated vendor fees and minimums
+
+page /guides/financial-advisor-worth-it/ - title: Is a Financial Advisor Worth It? What to Know
+section: Section 6 who not for | purpose: break-even math for paying any advisor
+
+page /guides/what-is-a-fiduciary/ - title: What Is a Fiduciary and Which Advisors Must Act for You
+section: Section 5 duty of care | purpose: who owes which standard of conduct
+

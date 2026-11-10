@@ -1,0 +1,22 @@
+a restatement of the RIA and conflicts sections (defer and remove links otherwise)."
+    },
+    {
+      "id": "writer-note-1",
+      "status": "open",
+      "evidence": "All four drafts were written by the gemini-3.8-flash FALLBACK (Anthropic keys have no credit); meta.json records fallback_used true. Claim checks left flags in meta.guards (A1: \"Negotiated by contract\"; A3: \"This annual disclosure ensures clients stay informed...\"); known tells to verify: A1 \"the platform\", \"essential\"; A2 table cells \"Not published\" and step 3 \"before contacting your current firm\"; A2 intro second paragraph; experience framing \"In the guides we publish here, we find...\"; A3 FAQ \"Is Form ADV annual?\" must stay within the bulletin statement."
+    },
+    {
+      "id": "writer-note-2",
+      "status": "open",
+      "evidence": "A1 comparison has two option columns (robo vs human RIA); the broker or dual-registrant condition is in the standard-of-conduct row and section 5 instead of a third column (template supports a and b only). Inbound edits: 4 declared one-sentence insertions (worth-it, what-is-a-robo-advisor, conflicts guide, how-to-choose) and 4 existing-anchor links (RIA guide x2, conflicts guide, wealth-manager comparison); no updated-date change; see src-candidate.diff and inspections."
+    }
+  ],
+  "resolvedFindingIds": [
+    "chart-review-round1-CR1-CR10"
+  ],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit-handoff.json",
+    "sha256": "f94039e26ef073f9c6c9668d673057782f1206316fbce6badc66a2b2b655c634"
+  }
+}
+

@@ -1,0 +1,40 @@
+A4-F1 [blocker] where: Section "Situations Where Hiring an Adviser Does Not Fit" and takeaway
+quote: An asset-based fee can represent a larger share of a small account balance.
+defect: False or unsupported, and it contradicts existing pages. A percentage-of-assets fee takes the same share of any balance. The SEC subscription-fee bulletin says flat subscription fees ($3/month on $500 is over 7 percent a year) are what can take a large share; our /compare/flat-fee-vs-aum-based-financial-advisors/ page says a fixed retainer exceeds 1 percent to 1.5 percent on smaller portfolios. The packet's own whatWouldChange says "an asset-based OR subscription fee". The new inbound link from /guides/what-is-a-registered-investment-advisor/ sends readers here.
+fix: Replace with: "An asset-based fee is a fixed percentage of your balance, so it takes the same share of a small account as a large one. A flat subscription or minimum fee is the kind that can take a large share of a small balance: the SEC bulletin gives $3 a month on a $500 account, more than 7 percent a year." Takeaway: change "if your investable balance is small relative to total advisory expenses" to "if a flat or minimum fee would be a large share of your balance".
+
+A4-F2 [blocker] where: Table "Your situation / Do it yourself / Hire an adviser / What to check"
+quote: Fee structure | Not published |
+defect: "Not published" in the Do-it-yourself fee cell is false/meaningless (investing on your own has costs) and is claim-check residue. "Professional history: No external professional evaluation required" is unsourced.
+fix: Fee cell: "No ongoing advisory fee. You still pay other fees and costs related to services and investments (Investor.gov Form CRS page)". Professional history DIY cell: "Check any broker you use on FINRA BrokerCheck".
+
+A4-F3 [blocker] where: Intro paragraphs 1-2
+quote: At ModernWallet, we show the math, name what moves it, and explain the tradeoff.
+defect: Experience truth: the page contains no math. Tee-up is two sentences ("In the guides we publish here, we show the tradeoffs..." plus this one) and the second is verbatim identical to A1's. Intro sentence 3 ("You can manage your own portfolio by making every trade yourself, or you can hire an adviser for ongoing oversight.") and sentence 5 restate each other.
+fix: Delete both tee-up sentences (or keep one that is true, e.g. "This guide rests on Investor.gov and the SEC Form ADV bulletin."). Delete the sentence "Choosing between investing on your own and hiring a professional depends on the services you require, all-in costs, and potential conflicts of interest." which restates the H2.
+
+A4-F4 [blocker] where: H1, SEO title, meta description, H2s
+quote: What Is Investment Management and How to Choose DIY or an Adviser
+defect: Headline two-clause formula in H1, SEO title ("...and What AUM Means for You") and H2 "What Is Investment Management and Whether to Invest on Your Own". AUM is not defined in the title or meta description. H2 "Services That Explain What Investment Management Covers" is a cleft with no reader meaning.
+fix: H1: "What Is Investment Management?" Title (50-60 chars, one clause): "What Is Investment Management? DIY or Hiring an Adviser" is acceptable only if the question form is kept as a query; otherwise "Investment Management Means Choosing and Monitoring Investments". Meta: spell out "assets under management (AUM)". H2s: "What Investment Management Is" and "What an Investment Manager Does".
+
+A4-F5 [blocker] where: FAQ items 1-4
+quote: This guide addresses investment management and the choice between managing securities yourself or hiring an investment adviser.
+defect: FAQ 1, 2 and 3 are three rewordings of the same two facts already stated in the AUM section (fee typically based on total account value; Part 2A requires a fee schedule). FAQ 4 does not answer "is investment management the same as wealth management" in sentence 1 and ends with page self-reference (banned meta-narration).
+fix: Delete FAQ 3 ("How does assets under management work?"). FAQ 1: "Assets under management (AUM) is the amount of client assets an adviser manages, which Form ADV Part 2A requires the adviser to disclose." FAQ 2: "An assets under management fee is an advisory charge typically based on the value of all assets in your account. See [flat-fee vs AUM advisors](/compare/flat-fee-vs-aum-based-financial-advisors/) for the cost math." FAQ 4: "Not exactly. Investment management is choosing and monitoring securities. A wealth manager generally adds tax and estate coordination for higher-net-worth clients, and neither title is legally regulated; see [financial advisor vs wealth manager](/compare/financial-advisor-vs-wealth-manager/)." Update FAQ JSON-LD accordingly.
+
+A4-F6 [blocker] where: Section "Steps to Check an Investment Adviser Before Hiring"
+quote: Form ADV contains three separate sections that provide verifiable background details on advisory firms and their individual representatives.
+defect: Restates the Form ADV Part 1/2A/2B/3 descriptions that /guides/how-to-read-form-adv/ (A3) now owns, plus the IAPD check from /guides/what-is-a-registered-investment-advisor/ ("How to Check an RIA Before You Hire One"). The brief (section 5) planned a short check with links to those guides.
+fix: Reduce to two or three sentences: search the person and the firm on IAPD via Investor.gov, read the Part 2A brochure fee items and the Form CRS, then link [how to read Form ADV](/guides/how-to-read-form-adv/) and [what is a registered investment advisor](/guides/what-is-a-registered-investment-advisor/). Delete the Part 1, Part 2A, Part 2B and Part 3 bullet paragraphs.
+
+A4-F7 [blocker] where: Takeaway and closing sentence
+quote: Our takeaway is to invest on your own if you can create a financial plan, manage risk tolerance, and accept complete responsibility for your investment decisions.
+defect: HIGH-risk investment recommendation without a labeled basis: "manage risk tolerance" is not a skill any source describes (Investor.gov says understand your tolerance for risk); the do-it-yourself criteria are our own and not marked editorial; the cost counter-condition in the Form CRS page is not tied to the recommendation. The final sentence "To determine your next step regarding what is investment management, write down your timeline and risk goals..." is keyword-stuffed and unparseable.
+fix: Rewrite: "Investor.gov says investing on your own starts with a financial plan (how much, for how long, your goals and your tolerance for risk) and that you are responsible for your decisions. Hire an adviser if you want ongoing advice and monitoring, or someone to place trades for you, and accept an asset-based fee; Form CRS says that fee may cost more than a transaction-based fee. This is our reading of those sources, not an SEC recommendation. A flat or minimum fee, or a broker you pay per trade, changes the cost picture, so compare the Part 2A fee schedule and Form CRS in dollars." Next step: "Write down your timeline and goals, read what a financial advisor does, and compare any adviser's Form CRS with the cost of investing on your own."
+
+A4-F8 [required-minor] where: Section "Decision Framework", AI tells
+quote: Sourced regulatory guidance highlights six core factors: required services, account limits, total costs, payment structure, potential conflicts, and legal or disciplinary history.
+defect: "Sourced regulatory guidance highlights ... core factors" is meta-narration and an inflated frame; Investor.gov lists these as questions to ask an adviser, not DIY-versus-hire factors. "Our suggested order for evaluating this decision begins by determining whether you need ongoing monitoring." is a nominalization. Overlap with /guides/financial-advisor-worth-it/ Step 4 (DIY vs hire, small balances) is not linked.
+fix: "Investor.gov lists six things to check about an adviser: services, limits on services, total cost, how the adviser is paid, conflicts and legal or disciplinary history." "First decide whether you need ongoing monitoring." Add a link to /guides/financial-advisor-worth-it/ in the decision section.
+

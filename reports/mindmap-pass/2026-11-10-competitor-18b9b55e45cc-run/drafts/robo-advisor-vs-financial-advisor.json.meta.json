@@ -1,0 +1,594 @@
+{
+ "slug": "robo-advisor-vs-financial-advisor",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2091,
+ "floor": 1500,
+ "input_tokens": 26015,
+ "output_tokens": 4489,
+ "thinking_tokens": 1429,
+ "cached_tokens": 22491,
+ "est_cost_usd": 0.0265,
+ "guards": {
+  "repairs": [
+   "added relatedLinks: [] (undefined crashes next build)"
+  ],
+  "flags": [
+   "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Many use ETFs; some limit products to broad-based ETFs'; 'If you require advice across taxes, estate planning, or complex situations, a hu'; 'Both human advisers and robo-advisers invest client money into underlying funds '; 'The SEC bulletin on robo-advisers notes that many digital programs build portfol'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2233,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 798,
+   "floor": 1500,
+   "ratio": 0.53,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    23,
+    8,
+    12
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "Both models can provide ongoing portfolio management, but their operational methods and service scopes differ significantly.",
+     "replacement": "Both models can provide ongoing portfolio management, but their operational methods and service scopes differ.",
+     "type": "unsupported",
+     "why": "SOURCE does not use the degree word significantly for differences."
+    },
+    {
+     "id": "introText",
+     "quote": "A human investment adviser conducts direct consultations, reviews your complete financial picture, and can deliver personalized financial planning alongside securities management.",
+     "replacement": "A human investment adviser provides ongoing investment advice and monitoring, and can deliver planning services alongside securities management.",
+     "type": "unsupported",
+     "why": "SOURCE does not state human advisers review your complete financial picture."
+    },
+    {
+     "id": "comparisonTable.rows[1].b",
+     "quote": "Direct discussions and review of your assets, liabilities, and broader needs",
+     "replacement": "Conversation with a person to gather your needs",
+     "type": "unsupported",
+     "why": "SOURCE does not state human advisers review assets and liabilities during intake."
+    },
+    {
+     "id": "comparisonTable.rows[6].b",
+     "quote": "Individual securities, mutual funds, exchange-traded funds, or custom assets",
+     "replacement": "Securities",
+     "type": "unsupported",
+     "why": "SOURCE states advisers give advice about securities, not mutual funds or custom assets."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "If your goal is straightforward wealth accumulation for retirement using a diversified portfolio, an automated platform provides structured management without the administrative overhead of individual office appointments.",
+     "replacement": "If your goal is automated investing for a defined goal, an automated platform builds and manages a portfolio.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention administrative overhead of individual office appointments."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "If you require comprehensive tax planning, estate document coordination, or guidance through complicated business sales, a qualified human advisor can supply personalized oversight that algorithms cannot deliver.",
+     "replacement": "If you require advice across taxes, estate planning, or complex situations, a human advisor can supply planning services.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention estate document coordination or complicated business sales."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "These professionals typically review your entire financial balance sheet, discuss personal priorities, and help identify unstated risks or opportunities.",
+     "replacement": "These professionals typically provide ongoing advice about buying, selling, or holding investments, monitor performance, and may give planning services.",
+     "type": "unsupported",
+     "why": "SOURCE does not state advisers review balance sheets or identify unstated risks."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "While an automated program relies entirely on the answers entered into an intake form, a human professional can ask clarifying questions, adjust assumptions during market turbulence, and coordinate multi-faceted financial strategies.",
+     "replacement": "Unlike an automated program that relies on an online questionnaire, a traditional adviser can hold a conversation to gather your needs.",
+     "type": "unsupported",
+     "why": "SOURCE does not state advisers ask clarifying questions or adjust assumptions in turbulence."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Direct personal consultation and financial discovery",
+     "replacement": "Direct conversation to gather your needs",
+     "type": "unsupported",
+     "why": "SOURCE does not state financial discovery for intake."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Individual equities, bonds, mutual funds, or ETFs",
+     "replacement": "Securities",
+     "type": "unsupported",
+     "why": "SOURCE does not state human advisers use mutual funds or specific asset classes."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Regular scheduled meetings, phone calls, and email",
+     "replacement": "Direct conversation with a person",
+     "type": "unsupported",
+     "why": "SOURCE does not state human advisers use scheduled meetings or email."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Updates gathered during periodic client reviews",
+     "replacement": "Negotiated by contract",
+     "type": "unsupported",
+     "why": "SOURCE does not state updates are gathered during periodic client reviews."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Investors managing single-account goals often find automated tools sufficient, while those managing complex trusts or taxable accounts benefit from human consultation.",
+     "replacement": "Investors with a defined goal often find automated tools sufficient, while those needing advice beyond investing benefit from human consultation.",
+     "type": "unsupported",
+     "why": "SOURCE does not state human advisers are for complex trusts or taxable accounts."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Similarly, custodial platforms may assess transaction costs, wire fees, or account administration charges.",
+     "replacement": "Similarly, clients may pay other fees such as brokerage, custody, and fund expenses.",
+     "type": "unsupported",
+     "why": "SOURCE lists brokerage, custody, and fund expenses, not wire fees or administration charges."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "You talk directly with a professional to discuss cash flow changes, family milestones, retirement timelines, and emotional anxieties during market volatility.",
+     "replacement": "You talk directly with a person who gathers your needs and provides ongoing advice.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention cash flow changes, family milestones, or emotional anxieties."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "This access allows the adviser to gather qualitative context that standard web forms cannot capture.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention gathering qualitative context."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Other automated platforms restrict human contact entirely to technical support staff who can fix login glitches or explain dashboard features but cannot provide personalized financial advice.",
+     "replacement": "Other automated platforms restrict human contact entirely to technical support staff.",
+     "type": "unsupported",
+     "why": "SOURCE mentions technical support only, not fixing login glitches or explaining dashboard features."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "If your marital status, tax bracket, or career plans change, the algorithm cannot incorporate those developments until you log in and manually alter your account settings.",
+     "replacement": "If your information changes, the platform cannot incorporate those developments until you update your profile.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention marital status, tax bracket, or career plans."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "A robo-advisor is not suitable for individuals who need customized estate planning, complex business succession guidance, or direct phone access to an adviser during market downturns.",
+     "replacement": "A robo-advisor is not suitable for individuals who need tax or estate planning, or direct phone access to an adviser.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention complex business succession guidance."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "If your financial situation requires coordinating trust distributions, minimizing corporate tax liabilities, or managing concentrated stock positions, an automated algorithm cannot handle those nuanced demands.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention trust distributions, corporate tax liabilities, or concentrated stock positions."
+    },
+    {
+     "id": "sections[6].content",
+     "quote": "Search the firm and individual professional on the SEC IAPD website to review their Form ADV Part 2 narrative brochure and Form CRS relationship summary.",
+     "replacement": "Search the firm and individual professional on the SEC [IAPD](https://adviserinfo.sec.gov) website to review their Form ADV Part 2 narrative brochure and Form CRS relationship summary.",
+     "type": "unlinked-directive",
+     "why": "Sentence directs reader to an outside website without a markdown link."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "A robo-advisor is a good idea if you are seeking a convenient, lower-cost way to build a diversified portfolio using exchange-traded funds without managing daily trades yourself.",
+     "replacement": "A robo-advisor is a good idea if you are seeking an automated, lower-cost way to build and manage a portfolio using exchange-traded funds.",
+     "type": "unsupported",
+     "why": "SOURCE does not state robo-advisors avoid managing daily trades yourself."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "However, it may not be a good idea if you need comprehensive tax guidance, customized financial planning, or reassurance from an experienced person during volatile market conditions.",
+     "replacement": "However, it may not be a good idea if you need advice across taxes and estate planning, or want a person to talk to.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention reassurance from an experienced person during volatile conditions."
+    },
+    {
+     "id": "comparisonTable.rows[4].a",
+     "quote": "Fiduciary duty of care and loyalty under the Investment Advisers Act",
+     "replacement": "Fiduciary duty of care and loyalty",
+     "type": "unsupported",
+     "why": "SOURCE does not name the Investment Advisers Act."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Advisory fees represent an ongoing expense that reduces your net investment returns over time.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that advisory fees reduce net investment returns over time."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "However, on very small balances, a monthly fee of $5 or $10 can represent a high percentage of your overall assets, which makes calculating the relative impact necessary.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not state that monthly fees represent a high percentage on small balances."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "former SEC Chairman Jay Clayton explained that the investment adviser fiduciary duty is comprised of a duty of care and a duty of loyalty.",
+     "replacement": "SEC Chairman Clayton explained that the investment adviser fiduciary duty is comprised of a duty of care and a duty of loyalty.",
+     "type": "unsupported",
+     "why": "SOURCE does not list the first name Jay."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "In that scenario, paying higher traditional advisory costs becomes harder to justify.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE does not state that traditional advisory costs become harder to justify."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "Because a broker is held to Regulation Best Interest rather than the comprehensive fiduciary duty of care and loyalty under the Investment Advisers Act, an investor seeking an ongoing fiduciary partnership might prefer a registered robo-adviser.",
+     "replacement": "Because a broker is held to Regulation Best Interest rather than an adviser's fiduciary duty of care and loyalty, an investor seeking an ongoing fiduciary partnership might prefer a registered robo-adviser.",
+     "type": "unsupported",
+     "why": "SOURCE does not name the Investment Advisers Act."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Many human financial planners operate as registered investment advisers who deliver broad financial planning alongside portfolio monitoring.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not define financial planners or describe their operations."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Read each professional's Form CRS and Form ADV Part 2 brochure to examine their specific credentials and service scopes.",
+     "replacement": "",
+     "type": "unlinked-directive",
+     "why": "Directs reader to outside documents without a markdown link in the sentence."
+    },
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we evaluate advisor and investing choices through regulatory protections, direct disclosures, and the concrete services you actually receive.",
+     "replacement": "At ModernWallet, we show the math, name what moves it, and explain the tradeoff.",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not support this first-person evaluation claim."
+    },
+    {
+     "id": "introText",
+     "quote": "An automated digital investment program builds and monitors your portfolio through software algorithms based on your questionnaire responses.",
+     "replacement": "An automated digital investment advisory program collects your goals and risk tolerance through an online questionnaire, then builds and manages a portfolio.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that programs use software algorithms."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "Because the onboarding workflow is automated, robo-advisors generally present lower fees and smaller account minimums than traditional advisory programs.",
+     "replacement": "Robo-advisors often present lower costs and fees and lower account minimums than traditional advisory programs.",
+     "type": "inference",
+     "why": "SOURCE does not state lower fees result from automated onboarding workflows."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Investors with a defined goal often find automated tools sufficient, while those needing advice beyond investing benefit from human consultation.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what investors find sufficient or benefit from."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "As noted in the [Investor.gov Relationship Summary (Form CRS)](https://www.investor.gov/CRS) guidance, an asset-based fee compensates the professional for ongoing portfolio monitoring, but it means the dollar amount you pay increases as your portfolio grows.",
+     "replacement": "As noted in the [Investor.gov Relationship Summary (Form CRS)](https://www.investor.gov/CRS) guidance, advisers are generally focused on your portfolio over time and typically paid an ongoing asset-based fee on total account value.",
+     "type": "unsupported",
+     "why": "SOURCE does not state fee dollar amounts increase as portfolios grow."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "For detailed comparisons of conventional percentage models and fixed advisory retainers, read our analysis of [flat-fee vs AUM advisors](/compare/flat-fee-vs-aum-based-financial-advisors/), or explore specific automated choices in our guide to the [best robo-advisors](/roundup/best-robo-advisors/).",
+     "replacement": "For detailed comparisons of conventional percentage models and fixed advisory retainers, read our comparison of [flat-fee vs AUM advisors](/compare/flat-fee-vs-aum-based-financial-advisors/), or explore specific automated choices in our guide to the [best robo-advisors](/roundup/best-robo-advisors/).",
+     "type": "unsupported",
+     "why": "SOURCE explicitly forbids writing 'our analysis'."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Instead, the algorithm generates recommendations strictly from the factual prompts contained in its online questionnaire.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention algorithms or factual prompts."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "You can verify firm registrations and review public filings on the SEC [Investment Adviser Public Disclosure (IAPD)](https://adviserinfo.sec.gov) database or check individual broker backgrounds through the FINRA [BrokerCheck](https://brokercheck.finra.org) portal.",
+     "replacement": "You can verify firm registrations and review public filings on the SEC [Investment Adviser Public Disclosure (IAPD)](https://adviserinfo.sec.gov) database.",
+     "type": "unsupported",
+     "why": "SOURCE does not name FINRA or state BrokerCheck features."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "Conversely, an ongoing human registered investment adviser is not suitable for an investor who holds a small account balance, pursues a single straightforward retirement goal, and wants basic index investing without paying high fees.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state basic index investing."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "If an automated robo-advisory platform offers a hybrid service tier that grants direct access to a dedicated human adviser at your specific balance level, the robo-advisor may satisfy your need for personal communication at a competitive price.",
+     "replacement": "If an automated robo-advisory platform offers a hybrid service tier with an investment professional at your balance, the robo-advisor may satisfy your need for personal communication.",
+     "type": "unsupported",
+     "why": "SOURCE does not state dedicated human advisers or competitive pricing."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "Because a broker is held to Regulation Best Interest rather than an adviser's fiduciary duty of care and loyalty, an investor seeking an ongoing fiduciary partnership might prefer a registered robo-adviser.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what an investor seeking fiduciary care prefers."
+    }
+   ],
+   "deleted_final": 11,
+   "unapplied": [
+    {
+     "quote": "Negotiated by contract",
+     "type": "unsupported",
+     "why": "SOURCE does not state client responsibility is negotiated by contract.",
+     "replacement": "Not published",
+     "id": "sections[1].content",
+     "reason": "replacement would change the table's columns"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "sections[1].content",
+     "quote": "Negotiated by contract",
+     "type": "unsupported",
+     "reason": "replacement would change the table's columns"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2606
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-10T07:41:00+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/robo-advisor-vs-financial-advisor.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "Pick a robo-advisor if you want low-cost automated investing for a defined goal and accept little human contact; pick a human adviser if you need advice beyond investing or want a person to talk to.",
+      "replacement": "Pick a robo-advisor if you want automated investing for a defined goal and accept little human contact, keeping in mind it is low-cost for larger balances but you should check the dollar fee if your balance is small. Pick a human adviser if you need advice beyond investing or want a person to talk to.",
+      "type": "A1-F1 / A1-F4: Unconditional cost claim and long semicolon opener",
+      "why": "Condition cost claim for small balances and split into two sentences."
+     },
+     {
+      "id": "introText",
+      "quote": "In the guides we publish here, we look at the specific legal duties and disclosure filings behind financial advice rather than sales marketing. At ModernWallet, we show the math, name what moves it, and explain the tradeoff.",
+      "replacement": "This comparison rests on Investor.gov, two SEC investor bulletins and a 2019 SEC chairman statement.",
+      "type": "A1-F5: Two-sentence tee-up with unsupported claims",
+      "why": "Delete two-sentence tee-up containing untrue math claim and unsupported contrast."
+     },
+     {
+      "id": "comparisonTable.rows[4].b",
+      "quote": "Fiduciary duty for investment advisers; brokers follow Regulation Best Interest",
+      "replacement": "Fiduciary duty for investment advisers; brokers follow [Regulation Best Interest](https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty)",
+      "type": "A1-F7: Regulation Best Interest unlinked",
+      "why": "Link Regulation Best Interest at first mention to the SEC Clayton statement URL."
+     },
+     {
+      "id": "comparisonTable.rows[6].a",
+      "quote": "Commonly constructed using exchange-traded funds (ETFs)",
+      "replacement": "Many use ETFs; some limit products to broad-based ETFs",
+      "type": "A1-F3: Incomplete robo underlying investments cell",
+      "why": "Align robo underlying investment cell with source capture."
+     },
+     {
+      "id": "comparisonTable.rows[6].b",
+      "quote": "Securities",
+      "replacement": "Securities the adviser recommends (Investor.gov)",
+      "type": "A1-F3: Unsourced generic cell in table 1",
+      "why": "Update human investments cell to cite Investor.gov."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "Pick a robo-advisor if you want low-cost automated investing for a defined goal and accept little human contact; pick a human adviser if you need advice beyond investing or want a person to talk to. ",
+      "replacement": "",
+      "type": "A1-F4: Verbatim repeat of opening sentence",
+      "why": "Delete verbatim restatement from section opening."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "Robo-advisors often present lower costs and fees and lower account minimums than traditional advisory programs.",
+      "replacement": "Robo-advisors often seek to offer lower costs and fees, and some require lower account minimums.",
+      "type": "A1-F1: Loose paraphrase of bulletin",
+      "why": "Align wording with SEC bulletin source."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": " Understanding [what a financial advisor is worth](/guides/financial-advisor-worth-it/) starts with matching these specific service capabilities to your financial needs.",
+      "replacement": "",
+      "type": "A1-F6: Editorial filler",
+      "why": "Delete filler sentence."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "Robo-advisors utilize diverse pricing frameworks, ranging from asset-based percentage fees to recurring subscriptions.",
+      "replacement": "Robo-advisors use diverse pricing frameworks, ranging from asset-based percentage fees to recurring subscriptions.",
+      "type": "A1-F6: Banned word 'utilize'",
+      "why": "Replace utilize with use."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "Many automated firms use these fixed monthly fees to market advisory services to newer investors with smaller account balances.",
+      "replacement": "The SEC bulletin warns that on small balances a flat monthly fee can cost more than a traditional asset-based fee. A $3 monthly fee on a $500 account is $36 a year, more than 7 percent.",
+      "type": "A1-F1: Missing reversing condition from SEC subscription bulletin",
+      "why": "Add bulletin warning about small-balance percentage impact."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "If your information changes, the platform cannot incorporate those developments until you update your profile.",
+      "replacement": "If your information changes, the robo-advisor cannot incorporate those developments until you update your profile.",
+      "type": "A1-F6: AI tell generic platform cycling",
+      "why": "Replace the platform with the robo-advisor."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "Many investors assume every financial professional operates under the same legal obligations, but regulatory classifications establish distinct legal duties. ",
+      "replacement": "",
+      "type": "A1-F6: Unsupported weasel claim",
+      "why": "Delete unsourced weasel sentence."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "SEC Chairman Clayton explained that the investment adviser fiduciary duty is comprised of a duty of care and a duty of loyalty.",
+      "replacement": "In a July 2019 statement, then SEC Chairman Jay Clayton explained that the investment adviser fiduciary duty is comprised of a duty of care and a duty of loyalty.",
+      "type": "A1-F7: SEC Chairman Clayton phrasing dated",
+      "why": "Add date and then title to Clayton statement."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": " Understanding [what a fiduciary is](/guides/what-is-a-fiduciary/) provides essential context when evaluating these legal relationships.",
+      "replacement": "",
+      "type": "A1-F6: Editorial filler",
+      "why": "Delete filler sentence."
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "A robo-advisor is not suitable for individuals who need tax or estate planning, or direct phone access to an adviser.",
+      "replacement": "A robo-advisor may not fit you if you want a person to call or your finances include accounts its questionnaire does not ask about. The SEC bulletin says some robo-advisers offer hybrid access to an investment professional and some use tax loss harvesting, so ask each one. A human adviser may not fit a small balance with one simple goal; see [is a financial advisor worth it](/guides/financial-advisor-worth-it/) for the break-even math.",
+      "type": "A1-F2: Unsupported universal claim and missing human advisor boundary",
+      "why": "Replace with nuanced SEC bulletin facts and human advisor boundary."
+     },
+     {
+      "id": "sections[6].content",
+      "quote": "A robo-advisor fits a reader who wants low-cost automated investing for a defined goal and accepts little human contact, while a human adviser fits a reader who needs advice beyond investing or wants a person to call. When the human professional is a registered investment adviser, the duty of care and loyalty matches what an automated robo-adviser owes under federal law. If that professional operates as a broker or dual registrant, a different legal standard may govern transactions, as outlined in Form CRS. This assessment changes if an automated platform provides hybrid human consultation at your account balance, or if a prospective human adviser operates under a broker-only registration.\n\nTake action by examining public regulatory disclosures before opening an account with any firm. Search the firm and individual professional on the SEC [IAPD](https://adviserinfo.sec.gov) website to review their Form ADV Part 2 narrative brochure and Form CRS relationship summary. Compare total all-in costs, including advisory fees, fund expenses, and platform charges, and verify the exact scope of human communication provided in your written advisory contract.",
+      "replacement": "",
+      "type": "A1-F4: Duplicate takeaway section content",
+      "why": "Delete duplicate takeaway section content."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "Robo-advisors are better for investors who want automated, low-cost investment management for a defined goal and do not require personal financial planning.",
+      "replacement": "Robo-advisors are better for investors who want automated investment management for a defined goal, which is low-cost for larger balances, and who do not require personal financial planning.",
+      "type": "A1-F1: Unconditional low-cost claim in FAQ 1",
+      "why": "Condition low-cost claim for small balances."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "A robo-advisor is a good idea if you are seeking an automated, lower-cost way to build and manage a portfolio using exchange-traded funds. However, it may not be a good idea if you need advice across taxes and estate planning, or want a person to talk to.",
+      "replacement": "A robo-advisor is a good idea if you want an automated portfolio built with exchange-traded funds. It is low-cost for larger balances, though dollar fees can add up on a small balance. It may not fit if you want a dedicated person to call, but some robo-advisors offer hybrid professional access or tax loss harvesting, so check each service.",
+      "type": "A1-F1 / A1-F2: Unconditional cost claim and unsupported tax/estate universal in FAQ 2",
+      "why": "Condition cost and reflect bulletin tax loss harvesting / hybrid support."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "The regulatory sources reviewed do not provide a formal legal definition for the generic title financial planner. A robo-advisor is an automated digital investment advisory program that builds and manages securities portfolios based on questionnaire responses.",
+      "replacement": "A robo-advisor is an automated digital investment advisory program that builds a portfolio from your questionnaire answers. Financial planner is a job title, and Investor.gov lists a financial planner among the people you can hire to help with investment decisions, so ask what services and registration the person has. See [financial advisor vs financial planner](/compare/financial-advisor-vs-financial-planner/).",
+      "type": "A1-F6: Meta-research narration and failure to answer the difference",
+      "why": "Provide direct comparative answer citing Investor.gov and internal link."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "verdict",
+      "quote": "A robo-advisor fits a reader who wants low-cost automated investing for a defined goal and accepts little human contact; a human adviser fits a reader who needs advice beyond investing or want a person to call. If the human is a registered investment adviser, the duty of care and loyalty is the same as a robo-advisor's; if the person is a broker or dual registrant, a different standard may apply, shown in Form CRS. This outcome changes if an automated platform provides a hybrid human adviser at your balance level, or if the human is broker-only. Read both firms' relationship summaries and Form ADV Part 2 disclosures to compare all-in costs and human access before opening an account.",
+      "finding": "A1-F1 / A1-F2 / A1-F4: Semicolon run-ons, unconditional cost, and omitted takeaway action steps",
+      "why": "Condition cost claim, integrate takeaway steps, and remove semicolons.",
+      "replacement": "A robo-advisor fits a reader who wants automated investing for a defined goal and accepts little human contact. It is low-cost for larger balances, but check the dollar fee if your balance is small. A human adviser fits a reader who needs advice beyond investing or wants a person to call. If the human is a registered investment adviser, the duty of care and loyalty is the same as a robo-advisor's. If the person is a broker or dual registrant, a different standard may apply, shown in Form CRS. This outcome changes if a robo-advisor provides a hybrid human adviser at your balance level, or if the human is broker-only. Search the firm and individual professional on the SEC [IAPD](https://adviserinfo.sec.gov) website to review their Form ADV Part 2 narrative brochure and Form CRS relationship summary. Compare total all-in costs and verify the exact scope of human communication before opening an account.",
+      "reason": "quote not found on the page"
+     },
+     {
+      "id": "sections[1].heading",
+      "quote": "Side-by-Side Comparison of Advisory Models",
+      "finding": "A1-F3: Redundant and conflicting second table section",
+      "why": "Delete section heading.",
+      "replacement": "",
+      "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "Evaluating automated programs and human advisors side by side clarifies their operational differences. Both categories manage investment securities for individual clients, yet their workflows, fee mechanisms, and client obligations differ. The following table contrasts a robo-advisor with a human investment adviser who is a registered investment adviser. | Feature | Robo-Advisor | Human Registered Investment Adviser | | :--- | :--- | :--- | | Primary focus | Automated digital portfolio management | Ongoing portfolio oversight and comprehensive planning | | Intake procedure | Structured online questionnaire | Direct conversation to gather your needs | | Portfolio building blocks | Frequently exchange-traded funds (ETFs) | Securities | | Human communication | Technical help only, tiered balance access, or hybrid | Direct conversation with a person | | Legal standard | Fiduciary duty of care and loyalty | Fiduciary duty of care and loyalty | | Disciplinary and background checks | Form ADV Part 1 and Form CRS | Form ADV Part 1, Part 2B supplements, and Form CRS | | Client responsibility | Must manually update profile details online | Negotiated by contract | Selecting between these formats requires balancing automated simplicity against customized human guidance. You can track your total accumulated wealth as you evaluate these structures by using our [net worth calculator](/net-worth/).",
+      "finding": "A1-F3: Redundant second table section with conflicting unsourced rows",
+      "why": "Delete entire redundant section content.",
+      "replacement": "",
+      "reason": "replacement would change the table's columns"
+     },
+     {
+      "id": "sections[6].heading",
+      "quote": "Our Takeaway on Picking the Right Advisory Structure",
+      "finding": "A1-F4: Duplicate conclusion section",
+      "why": "Delete duplicate takeaway section heading.",
+      "replacement": "",
+      "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      5
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "comparisonTable.rows[6].a",
+       "quote": "Many use ETFs; some limit products to broad-based ETFs",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[0].content",
+       "quote": "If you require advice across taxes, estate planning, or complex situations, a human advisor can supply planning services.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[2].content",
+       "quote": "Both human advisers and robo-advisers invest client money into underlying funds that carry internal operational expenses.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[2].content",
+       "quote": "The SEC bulletin on robo-advisers notes that many digital programs build portfolios using exchange-traded funds (ETFs), which deduct ongoing management expenses from fund performance.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[0].answer",
+       "quote": "Human financial advisors are better for individuals with complex assets, tax planning requirements, or estate planning needs who want ongoing personal communication.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2091,
+    "flags": [
+     "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Many use ETFs; some limit products to broad-based ETFs'; 'If you require advice across taxes, estate planning, or complex situations, a hu'; 'Both human advisers and robo-advisers invest client money into underlying funds '; 'The SEC bulletin on robo-advisers notes that many digital programs build portfol'"
+    ]
+   }
+  ]
+ },
+ "seconds": 437.0,
+ "response_id": "-r3yao7tF5n9wbUPns6lkAs",
+ "generated_at": "2026-11-10T06:54:37+0000"
+}

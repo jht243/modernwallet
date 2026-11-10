@@ -1,0 +1,113 @@
+{
+ "reviewer": "mindmap-auditor-p4",
+ "snapshotSha256": "ddadf119093a1f68f6df0dac266940badc77ce97816b1cbbcf944b9566d17def",
+ "jobId": "competitor-18b9b55e45cc",
+ "round": 1,
+ "summary": "Round 1 independent audit of link-edited existing route /guides/financial-advisor-worth-it/. Addendum to phase4-round1-review.json, which could not include this route in its single record call.",
+ "routes": [
+  {
+   "path": "/guides/financial-advisor-worth-it/",
+   "fingerprint": "99bff919f9f1f819dacb73c69a4e4ece245e4bf8a14b290a94ec445328e7ac8b",
+   "verdict": "FAIL",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/financial-advisor-worth-it-round1-reservation.json",
+    "sha256": "6a64f2c79d4f0db905f2a6820cda843318517a9911010bbebf089426f64cc97d"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "textSha256": "1616d70e5d6afa1ef51672731c3df521ead16a71bc2ee875e02b022c2925d9ed",
+    "rationale": "Existing investment-adviser guidance page that received a link-only edit; carries fee and advice-cost claims for a consequential investment decision; no professional-review obligation applies to this site.",
+    "consequentialClaims": [
+     {
+      "category": "investment",
+      "quote": "tax-aware moves like asset location and loss harvesting",
+      "reason": "The sentence tells readers what a robo-advisor cannot do for taxes in an investment-adviser decision section where we added a link to sourced comparison."
+     }
+    ],
+    "incidentalMentions": []
+   },
+   "checks": {
+    "wholePageCoherence": {
+     "status": "FAIL",
+     "evidence": "Read the rendered decision path. The section that received the inserted link sentence asserts a robo-advisor algorithm cannot replicate loss harvesting, which the SEC robo bulletin contradicts (E1-F1)."
+    },
+    "sourceSupport": {
+     "status": "FAIL",
+     "evidence": "Inserted sentence is accurate, but the adjacent inherited claim about loss harvesting and the \"around 0.25 percent\" robo fee are unsupported by the captures; SEC bulletin capture 8afe23f0 lists tax loss harvesting as a robo feature."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing claims in the render; inherited byline label unchanged."
+    },
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Visible Updated June 25, 2026 and JSON-LD dateModified 2026-06-25 equal HEAD; diff has no date edit (link-only edit correctly did not bump the date)."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Inserted link /compare/robo-advisor-vs-financial-advisor/ resolves to a built route, anchor matches destination."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Static inspection: inline link added to an existing paragraph; no layout change."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Link-only edit; TESTED not applicable."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Link-only edit scope: inserted sentence and destination verified; the inherited loss-harvesting claim failed review under _rendered-page-audit (E1-F1), other inherited claims not re-researched."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Link-only edit scope: inserted sentence and destination verified; the inherited loss-harvesting claim failed review under _rendered-page-audit (E1-F1), other inherited claims not re-researched."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Link-only edit scope: inserted sentence and destination verified; the inherited loss-harvesting claim failed review under _rendered-page-audit (E1-F1), other inherited claims not re-researched."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Link-only edit scope: inserted sentence and destination verified; the inherited loss-harvesting claim failed review under _rendered-page-audit (E1-F1), other inherited claims not re-researched."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "Link-only edit scope: inserted sentence and destination verified; the inherited loss-harvesting claim failed review under _rendered-page-audit (E1-F1), other inherited claims not re-researched."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "Link-only edit scope: inserted sentence and destination verified; the inherited loss-harvesting claim failed review under _rendered-page-audit (E1-F1), other inherited claims not re-researched."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Link-only edit scope: inserted sentence and destination verified; the inherited loss-harvesting claim failed review under _rendered-page-audit (E1-F1), other inherited claims not re-researched."
+    },
+    "recommendationSupport": {
+     "status": "FAIL",
+     "evidence": "Inherited recommendation that a robo-advisor cannot do tax-aware moves is contradicted by the SEC robo-adviser bulletin (E1-F1)."
+    },
+    "consequentialClaims": {
+     "status": "FAIL",
+     "evidence": "Strongest counterexample: the SEC bulletin says some robo-advisers use tax loss harvesting and some offer hybrid human access; the inherited absolute omits both (E1-F1)."
+    },
+    "professionalReview": {
+     "status": "NA",
+     "evidence": "No professionalReviewRequired on this route; no professional review claimed."
+    }
+   },
+   "findings": [
+    {
+     "id": "E1-F1",
+     "severity": "blocker",
+     "where": "Section \"Robo-advisor vs. financial advisor: a quick side-by-side\" (the section that received the inserted link sentence)",
+     "quote": "That extra cost buys judgment a robo-advisor's algorithm can't replicate: behavioral coaching during a downturn, tax-aware moves like asset location and loss harvesting timed to your specific situation",
+     "defect": "Inherited contradiction in the section that now says \"For the full side-by-side with sources, see our robo-advisor vs financial advisor comparison\". The SEC robo-adviser bulletin (capture 8afe23f0) says some robo-advisers use tax loss harvesting and some offer hybrid human access, and our own /guides/what-is-a-robo-advisor/ covers both. The linked page also gives subscription pricing rather than the \"around 0.25 percent\" figure. The inserted link sentence itself is accurate and the date is unchanged.",
+     "fix": "Either (a) narrow the quoted sentence (\"Some robo-advisers offer tax loss harvesting and hybrid human access; ask each one\") and bump the page date because this is a substantive body edit, or (b) remove the inserted link sentence and leave the page as it was. Do not leave the link next to the unsupported absolute."
+    }
+   ]
+  }
+ ]
+}

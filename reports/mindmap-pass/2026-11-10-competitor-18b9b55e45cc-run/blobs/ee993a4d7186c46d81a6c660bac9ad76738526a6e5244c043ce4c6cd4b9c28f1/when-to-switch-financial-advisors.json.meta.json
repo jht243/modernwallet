@@ -1,0 +1,420 @@
+{
+ "slug": "when-to-switch-financial-advisors",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2001,
+ "floor": 1200,
+ "input_tokens": 25195,
+ "output_tokens": 3916,
+ "thinking_tokens": 763,
+ "cached_tokens": 21695,
+ "est_cost_usd": 0.0218,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Most customer accounts move between broker-dealers through an automated process '; 'It is a short procedure when your assets can move as they are.'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 2011,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 783,
+   "floor": 1200,
+   "ratio": 0.65,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    17,
+    11,
+    0
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we see investors run into costly delays when they liquidate positions prematurely or take cash payouts from retirement plans. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not support claims of observing investors or client experiences."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "6. Confirm delivery of your holdings, request written confirmation of account closure, and settle any final advisory fees.",
+     "replacement": "6. Confirm delivery of your holdings.",
+     "type": "unsupported",
+     "why": "SOURCE does not state requesting written confirmation of closure or settling fees."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Matching registration names and account types",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not list checking registration names or account types."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Open orders, pending dividends, and settlement holds",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not list checking open orders, pending dividends, or settlement holds."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Delivery of positions and zero remaining balance",
+     "replacement": "Delivery of positions",
+     "type": "unsupported",
+     "why": "SOURCE does not state checking for a zero remaining balance."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Following this sequence ensures that your new custodian requests your assets directly, which prevents common liquidation mistakes.",
+     "replacement": "Following this sequence ensures that your new custodian requests your assets directly.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that this sequence prevents common liquidation mistakes."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Asset-based fees may cost more than transaction fees if you trade infrequently, but they suit ongoing portfolio monitoring.",
+     "replacement": "Asset-based fees may cost more than transaction-based fees, but they suit ongoing portfolio monitoring.",
+     "type": "unsupported",
+     "why": "SOURCE does not state asset-based fees cost more if you trade infrequently."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Has the individual or firm accumulated recent customer complaints, regulatory sanctions, or civil judgments?",
+     "replacement": "Has the individual or firm accumulated legal or disciplinary history?",
+     "type": "unsupported",
+     "why": "SOURCE lists legal or disciplinary history, not customer complaints, sanctions, or civil judgments."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "The contract governs the formal terms of your relationship, including termination procedures, required written notice periods, and how unearned advisory fees are handled.",
+     "replacement": "The contract governs the formal terms of your relationship, including termination procedures and fee terms.",
+     "type": "unsupported",
+     "why": "SOURCE does not state how unearned advisory fees are handled."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "If you have questions about ending the agreement, ask your adviser in writing to confirm the steps required to terminate the contract and clarify how any prepaid, unearned management fees will be refunded.",
+     "replacement": "If you have questions about ending the agreement, ask your adviser in writing to confirm the steps required to terminate the contract.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention clarifying refunds of prepaid unearned fees."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "FINRA rules require firms to notify customers of any nontransferable assets and provide alternative handling options, such as retaining the asset at the old firm or liquidating it.",
+     "replacement": "FINRA rules require firms to notify customers of any nontransferable assets and provide alternatives.",
+     "type": "unsupported",
+     "why": "SOURCE does not state retaining the asset at the old firm or liquidating it."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "If you fail to deposit the full gross amount including the withheld tax, the missing amount is treated as a taxable distribution.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that missing withheld amounts are taxable distributions."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "If your portfolio holds proprietary funds that the receiving firm refuses to accept, transferring may force a taxable liquidation.",
+     "replacement": "If your portfolio holds proprietary funds, the receiving firm is not required to accept those nontransferable assets.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that transferring proprietary funds forces a taxable liquidation."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "If you are within a narrow administrative window for retirement plan distributions, initiating an account transfer can freeze transactions at an inconvenient moment.",
+     "replacement": "A pending tax event can change the timing of your switch.",
+     "type": "unsupported",
+     "why": "SOURCE does not state a narrow administrative window for retirement plan distributions."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Yes, you can legally switch financial advisors at any time.",
+     "replacement": "Yes, you can switch financial advisors.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that you can switch at any time."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Switching is generally a straightforward administrative process when handled through automated systems. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not describe switching as a straightforward administrative process."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Your total cost depends entirely on your specific advisory agreement, any contractual termination provisions, and whether the delivering or receiving institutions charge account transfer fees.",
+     "replacement": "The sources read state no standard charge; check your contract and ask both firms.",
+     "type": "unsupported",
+     "why": "SOURCE does not state whether institutions charge account transfer fees."
+    },
+    {
+     "id": "introText",
+     "quote": "Taking a distribution check from an IRA or retirement account creates strict tax withholding and rollover rules, whereas letting institutions handle direct transfers keeps your assets intact throughout the move.",
+     "replacement": "You can have your financial institution or plan directly transfer the payment, whereas rolling over a distribution paid to you requires depositing funds within 60 days and replacing any withheld taxes.",
+     "type": "unsupported",
+     "why": "SOURCE does not state strict withholding rules or that direct transfers keep assets intact."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "1. Review your current advisory agreement for written notice requirements and fee schedules.",
+     "replacement": "1. Review your current advisory agreement for termination terms and fee terms.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that advisory agreements require written notice."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Written notice rules and fee deduction schedule",
+     "replacement": "Termination terms and fee schedule",
+     "type": "unsupported",
+     "why": "SOURCE does not state written notice rules in advisory agreements."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Federal regulations require investment advisers to act in your best interest and not put their own interests ahead of yours.",
+     "replacement": "Investor.gov states that investment advisers are required to act in your best interest and not put their interest ahead of yours.",
+     "type": "unsupported",
+     "why": "SOURCE does not cite federal regulations; Investor.gov states this requirement."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Does the adviser recommend proprietary products or receive compensation from third parties that create misaligned incentives?",
+     "replacement": "Does the way the adviser makes money create conflicts of interest to ask about?",
+     "type": "unsupported",
+     "why": "SOURCE does not state that advisers receive compensation from third parties."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Item 5 covers fees and compensation, explaining how the firm is compensated, its standard fee schedule, whether fees are negotiable, whether fees are billed directly or deducted from client accounts, and other costs such as brokerage, custody, and mutual fund expenses.",
+     "replacement": "The brochure covers fees and compensation, explaining how the firm is compensated, its fee schedule, whether fees are negotiable, whether fees are billed directly or deducted from client accounts, and other fees such as brokerage, custody, and fund expenses.",
+     "type": "unsupported",
+     "why": "SOURCE lists fees and compensation in Form ADV Part 2A without numbering it Item 5."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "If you choose to receive a distribution check payable to you directly, tax consequences can occur immediately. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that tax consequences occur immediately upon receiving a check."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "When an administrator pays money to you, mandatory tax withholding may apply. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that mandatory tax withholding applies."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "Investment advisers monitor performance and manage assets according to agreed investment strategies, and temporary market fluctuations do not inherently signal a breakdown in advisory service or fiduciary duty.",
+     "replacement": "A short-term market move is not by itself a check that shows the advice or fees no longer fit.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that market fluctuations do not signal breakdown in fiduciary duty."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "- Substantial termination penalties: If your current advisory agreement contains termination charges, you must evaluate whether the cost of leaving outweighs the near-term fee savings of a new provider.",
+     "replacement": "- Termination charges: If your current advisory contract contains termination charges, that cost can change the answer.",
+     "type": "unsupported",
+     "why": "SOURCE does not state substantial termination penalties or near-term fee savings."
+    },
+    {
+     "id": "sections[7].body",
+     "quote": "In that situation, holding the position or negotiating an alternative arrangement may be preferable.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that holding the position may be preferable."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2235
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-10T07:46:28+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/audit/when-to-switch-financial-advisors.findings.txt",
+    "applied": [
+     {
+      "id": "introText",
+      "quote": "In the guides we publish here, we find that the cleanest transition happens when you keep the process in order: read your advisory contract for termination terms, research and verify your new professional, open your replacement account, and let the receiving institution initiate the transfer directly instead of selling off your holdings yourself.",
+      "replacement": "Move in this order: read your contract's termination terms, check the new adviser on IAPD, open the account at the receiving firm, and let that firm start the transfer so you do not sell holdings or take a check yourself.",
+      "type": "A2-F1 invented finding",
+      "why": "No record supports a 'we find' claim; evidence basis is reported regulator guidance."
+     },
+     {
+      "id": "introText",
+      "quote": "You can have your financial institution or plan directly transfer the payment, whereas rolling over a distribution paid to you requires depositing funds within 60 days and replacing any withheld taxes.",
+      "replacement": "",
+      "type": "A2-F1 misplaced IRS aside",
+      "why": "Abrupt aside duplicating later retirement section before direct answer is finished."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Open your new account at the receiving institution before contacting your current firm.",
+      "replacement": "Open your new account at the receiving firm.",
+      "type": "A2-F2 unsupported step",
+      "why": "FINRA rules do not say to avoid contacting your current firm first."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "| 3. Open new account | Client and receiving firm | Not published | [FINRA transfer rules](https://www.finra.org/investors/investing/investment-accounts/brokerage-accounts/account-transfers) |",
+      "replacement": "| 3. Open new account | Client and receiving firm | Ask the receiving firm about policies or constraints that could affect the transfer | [FINRA transfer rules](https://www.finra.org/investors/investing/investment-accounts/brokerage-accounts/account-transfers) |",
+      "type": "A2-F2 claim-check residue in table",
+      "why": "Replace meaningless 'Not published' cell with FINRA transfer guidance."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "| 5. Freeze trading | Client and both firms | Not published | [FINRA transfer rules](https://www.finra.org/investors/investing/investment-accounts/brokerage-accounts/account-transfers) |",
+      "replacement": "| 5. Freeze trading | Client and both firms | Whether either firm freezes trading during the transfer | [FINRA transfer rules](https://www.finra.org/investors/investing/investment-accounts/brokerage-accounts/account-transfers) |",
+      "type": "A2-F2 claim-check residue in table",
+      "why": "Replace meaningless 'Not published' cell with FINRA guidance on trading freezes."
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "Regulatory guidance publishes no standard fee to switch financial advisors. The sources read state no standard charge; check your contract and ask both firms.",
+      "replacement": "It can. Your advisory contract sets the fees and terms (Investor.gov), so read its termination terms and ask both the current and the receiving firm what they charge before you start. The sources we read list no standard switching fee.",
+      "type": "A2-F3 inferred universal negative",
+      "why": "Contract sets fees and termination terms; source silence does not mean switching is free."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "By completing a Transfer Initiation Form with your new receiving firm, most broker-dealer accounts move directly through ACATS in about three to four business days without requiring you to manage individual sales.",
+      "replacement": "It is a short procedure when your assets can move as they are. You complete a Transfer Initiation Form with the receiving firm, and most broker-dealer accounts then move through ACATS in about three to four business days. Accounts at banks, credit unions or fund companies, and IRAs, take longer, and the receiving firm can refuse nontransferable assets.",
+      "type": "A2-F4 misses direct answer and overgeneralizes",
+      "why": "Answer question directly and note that IRAs, banks, and nontransferable assets differ."
+     },
+     {
+      "id": "sections[4].body",
+      "quote": "Transferring your portfolio does not require you to liquidate your investments or mail paper checks between firms.",
+      "replacement": "Most customer accounts move between broker-dealers through an automated process called ACATS, and cash, stocks, bonds and listed options are readily transferable that way.",
+      "type": "A2-F5 overclaim contradicting proprietary assets",
+      "why": "Contradicts nontransferable asset rules and IRS direct rollover check procedures."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Following this sequence ensures that your new custodian requests your assets directly.",
+      "replacement": "In this order the receiving firm requests your assets from the delivering firm.",
+      "type": "A2-F5 unsourced promise of outcome",
+      "why": "No source promises or ensures this operational outcome."
+     },
+     {
+      "id": "sections[7].body",
+      "quote": "Reviewing your holdings and contract terms with both firms beforehand ensures you avoid unintended costs or portfolio freezes.",
+      "replacement": "Asking both firms about your holdings and contract terms beforehand shows you costs and trading freezes before they surprise you.",
+      "type": "A2-F5 unsourced promise of outcome",
+      "why": "No source guarantees avoiding unintended costs or portfolio freezes."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "| 6. Confirm closure | Both firms and client | Delivery of positions | [Investor.gov advisory guidance](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers) |",
+      "replacement": "| 6. Confirm completion | Both firms and client | How each firm tells you the transfer is complete | [FINRA transfer rules](https://www.finra.org/investors/investing/investment-accounts/brokerage-accounts/account-transfers) |",
+      "type": "A2-F6 mis-sourced and mislabeled table row",
+      "why": "Investor.gov does not cover transfer completion; FINRA covers confirmation rules."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "Once you confirm that your existing relationship no longer fits, moving through the steps in order protects your capital from administrative and operational headaches.",
+      "replacement": "",
+      "type": "A2-F6 unsourced outcome in takeaway",
+      "why": "Sources do not support protecting capital from administrative and operational headaches."
+     },
+     {
+      "id": "title",
+      "quote": "When to Switch Financial Advisors and How to Do It",
+      "replacement": "When and How to Switch Financial Advisors Step by Step",
+      "type": "A2-F7 title two-clause formula",
+      "why": "Avoid repetitive two-clause headline formula."
+     },
+     {
+      "id": "sections[0].heading",
+      "quote": "When to Switch Financial Advisors and the Steps to Do It in Order",
+      "replacement": "The Steps to Switch Financial Advisors in Order",
+      "type": "A2-F7 heading two-clause formula",
+      "why": "Avoid repetitive two-clause formula in H2 heading."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Here is our suggested order to execute the switch cleanly:",
+      "replacement": "Our suggested order:",
+      "type": "A2-F7 AI tell signpost",
+      "why": "Remove wordy conversational AI signposting phrase."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Once you decide to move, acting in the correct technical order protects your portfolio from unnecessary selling and settlement freezes.",
+      "replacement": "In this order the receiving firm, not you, requests the assets.",
+      "type": "A2-F7 unsourced promise",
+      "why": "Sources do not support outcome promises about settlement freezes."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Asset-based fees may cost more than transaction-based fees, but they suit ongoing portfolio monitoring.",
+      "replacement": "From a cost perspective, you may prefer an asset-based fee if you want ongoing advice or want someone to make investment decisions for you.",
+      "type": "A2-F7 unsupported fee claim",
+      "why": "Form CRS states you may prefer asset-based fees for ongoing advice, not that they suit monitoring."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "three critical filings",
+      "replacement": "three filings",
+      "type": "A2-F7 AI hype word",
+      "why": "Remove unnecessary hype word 'critical'."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      2
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "sections[4].body",
+       "quote": "Most customer accounts move between broker-dealers through an automated process called ACATS, and cash, stocks, bonds and listed options are readily transferable that way.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "faqs[1].answer",
+       "quote": "It is a short procedure when your assets can move as they are.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2001,
+    "flags": [
+     "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Most customer accounts move between broker-dealers through an automated process '; 'It is a short procedure when your assets can move as they are.'"
+    ]
+   }
+  ]
+ },
+ "seconds": 382.5,
+ "response_id": "6b_yas_BN_equMYP5-zjkAw",
+ "generated_at": "2026-11-10T07:01:58+0000"
+}

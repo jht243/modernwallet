@@ -1,0 +1,28 @@
+{
+ "reviewer": "mindmap-auditor-p4",
+ "round": 1,
+ "jobId": "competitor-18b9b55e45cc",
+ "preflight": {
+  "runDir": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/preflight-audit",
+  "parts": "31/31 read via workflow-delivery-serial.local.py, check=delivery-complete-sources-current",
+  "contextId": "mindmap-auditor-p4-ctx1",
+  "epoch": 1
+ },
+ "verdicts": {
+  "/compare/robo-advisor-vs-financial-advisor/": "FAIL",
+  "/guides/when-to-switch-financial-advisors/": "FAIL",
+  "/guides/how-to-read-form-adv/": "FAIL",
+  "/guides/what-is-investment-management/": "FAIL",
+  "/guides/financial-advisor-worth-it/": "FAIL (inherited contradiction, link edit)",
+  "/guides/what-is-a-robo-advisor/": "PASS",
+  "/guides/how-to-choose-a-financial-advisor/": "PASS",
+  "/guides/financial-advisor-conflicts-of-interest/": "PASS",
+  "/guides/what-is-a-registered-investment-advisor/": "PASS",
+  "/compare/financial-advisor-vs-wealth-manager/": "PASS"
+ },
+ "corrections": [
+  "phase4-round1-review.json field editedRoutesNotReserved is inaccurate. reserve for worth-it, what-is-a-robo-advisor and how-to-choose printed BLOCKED (durable checkpoint, prior-run dependency reports/mindmap-pass/2026-11-09-competitor-9031ce2b2c89/rendered-snapshot.json hash changed) AFTER writing the reservation file and journal events. All ten routes have reserve and record events in reports/content-review-journals. what-is-a-robo-advisor and how-to-choose were recorded PASS inside phase4-round1-review.json; worth-it was recorded FAIL via phase4-round1-worth-it-review.json.",
+  "content-review-policy.py record also printed the same BLOCKED message after journaling (post-write checkpoint). The immutable journal blobs hold the recorded reports."
+ ],
+ "budget": "Each recorded route used round 1 of 3 (HIGH)."
+}

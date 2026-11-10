@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "siteId": "jht243/modernwallet",
+  "canonicalBase": "https://themodernwallet.com",
+  "jobId": "competitor-18b9b55e45cc",
+  "producer": "mindmap-builder-ae12db",
+  "routes": [
+    "/compare/robo-advisor-vs-financial-advisor/",
+    "/guides/when-to-switch-financial-advisors/",
+    "/guides/how-to-read-form-adv/",
+    "/guides/what-is-investment-management/"
+  ],
+  "nextAction": "Independently audit the exact rendered candidate for each of the four new pages and the six link-edited existing pages under the HIGH-tier budget (max 3 rounds including rechecks); record PASS or FAIL with concrete findings per route. The six link-edited existing pages are in the rendered snapshot and manifest (routes list limited to the four new routes to match the writer handoff).",
+  "previous": {
+    "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/79618cfb77787ee55ee9fcf6af46ef4a67456c58497cef16220fa94ca991c9ff/writer-handoff.json",
+    "sha256": "79618cfb77787ee55ee9fcf6af46ef4a67456c58497cef16220fa94ca991c9ff",
+    "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/writer-handoff.json"
+  },
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/b8a2cf55cd5bd1494aa18250f8a9172c2ae230146544f8b2757478489199bb6b/rendered-snapshot.json",
+      "sha256": "b8a2cf55cd5bd1494aa18250f8a9172c2ae230146544f8b2757478489199bb6b",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/4a448b34eb9ec368b203f8f5b3b3487cbb8b41ce99413def142c0cfd77c7eaef/rendered-manifest.json",
+      "sha256": "4a448b34eb9ec368b203f8f5b3b3487cbb8b41ce99413def142c0cfd77c7eaef",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/1fa16a7b3edbc956fc67e51470af96d4c407ebd46cd42fce46059db8199e8076/src-candidate.diff",
+      "sha256": "1fa16a7b3edbc956fc67e51470af96d4c407ebd46cd42fce46059db8199e8076",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/src-candidate.diff"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/64b8cbd1a8095769879cc8b5aaa2eed0045d1a76c7fbcba9d2251bf353f6525c/approval-manifest.json",
+      "sha256": "64b8cbd1a8095769879cc8b5aaa2eed0045d1a76c7fbcba9d2251bf353f6525c",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/95c73859061d8f31b0556e143d53d3cd6db6b014af15a04979258e3c57d3ea99/chart-review.json",
+      "sha256": "95c73859061d8f31b0556e143d53d3cd6db6b014af15a04979258e3c57d3ea99",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/48d793aebfa109b4fcef8fd6bbbd995a5781d421080a71faf0997c12b6a1f082/robo-advisor-vs-financial-advisor.json",
+      "sha256": "48d793aebfa109b4fcef8fd6bbbd995a5781d421080a71faf0997c12b6a1f082",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/robo-advisor-vs-financial-advisor.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/e07289103b137a3cf51dc2cdfbf00a83a1f4633a8a94991988af241739624c73/robo-advisor-vs-financial-advisor.json.meta.json",
+      "sha256": "e07289103b137a3cf51dc2cdfbf00a83a1f4633a8a94991988af241739624c73",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/robo-advisor-vs-financial-advisor.json.meta.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/9ca212544f0ee7a70a2237636df5859bb0a581b5901c7011562f4650256de195/robo-advisor-vs-financial-advisor.prompt.md",
+      "sha256": "9ca212544f0ee7a70a2237636df5859bb0a581b5901c7011562f4650256de195",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/prompts/robo-advisor-vs-financial-advisor.prompt.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/60ac2c4f8f833b9b4f635916fc4aad622662ef0a22d1f1f44caf44885e3b7147/when-to-switch-financial-advisors.json",
+      "sha256": "60ac2c4f8f833b9b4f635916fc4aad622662ef0a22d1f1f44caf44885e3b7147",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/when-to-switch-financial-advisors.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/f6f58203429915ea69159538af8d7f547d0f0dcb9d3aee4b4480e7ab952eb46b/when-to-switch-financial-advisors.json.meta.json",
+      "sha256": "f6f58203429915ea69159538af8d7f547d0f0dcb9d3aee4b4480e7ab952eb46b",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/when-to-switch-financial-advisors.json.meta.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/f5177c332ab5ee3ad39e6b88cb07a54dd20bd9d5e9aa4e26f8b3366d6a126ecc/when-to-switch-financial-advisors.prompt.md",
+      "sha256": "f5177c332ab5ee3ad39e6b88cb07a54dd20bd9d5e9aa4e26f8b3366d6a126ecc",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/prompts/when-to-switch-financial-advisors.prompt.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/a6b4f80468cc907dbb731ac68cefca5e7545cd4004046864399357948ba832ea/how-to-read-form-adv.json",
+      "sha256": "a6b4f80468cc907dbb731ac68cefca5e7545cd4004046864399357948ba832ea",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/how-to-read-form-adv.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/82b36d1653e6caaf2eb3f0d5c99cf8096d937198efc14cee2a7cca86559211af/how-to-read-form-adv.json.meta.json",
+      "sha256": "82b36d1653e6caaf2eb3f0d5c99cf8096d937198efc14cee2a7cca86559211af",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/how-to-read-form-adv.json.meta.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/01a30048ff78ab393dc4bc38cc9de66123c51326bd960d0533b8fdb7c54997c7/how-to-read-form-adv.prompt.md",
+      "sha256": "01a30048ff78ab393dc4bc38cc9de66123c51326bd960d0533b8fdb7c54997c7",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/prompts/how-to-read-form-adv.prompt.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/ed0de7d9e0b3c099799eed779ed4dca3f49c94c7515728558fff40f61fa69db8/what-is-investment-management.json",
+      "sha256": "ed0de7d9e0b3c099799eed779ed4dca3f49c94c7515728558fff40f61fa69db8",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/what-is-investment-management.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/ba0b69a02a6965b558ffb537136d4a55cf3b79322a54a22ecac1017c0dfeaaea/what-is-investment-management.json.meta.json",
+      "sha256": "ba0b69a02a6965b558ffb537136d4a55cf3b79322a54a22ecac1017c0dfeaaea",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/drafts/what-is-investment-management.json.meta.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/9e9f1a57df533a06bdc511a1775ef1972e04dfc50d5d88dc233b0ce0c16a20f8/what-is-investment-management.prompt.md",
+      "sha256": "9e9f1a57df533a06bdc511a1775ef1972e04dfc50d5d88dc233b0ce0c16a20f8",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/prompts/what-is-investment-management.prompt.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/81124b05b9415046d93ab0debe254cd2fac133172a08aac5d72fd6954b670daa/allowed-urls.txt",
+      "sha256": "81124b05b9415046d93ab0debe254cd2fac133172a08aac5d72fd6954b670daa",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/prompts/allowed-urls.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/4b1f88a127c2fc0fc92b72695291ebf3ab2fc66e34af71d2b233428e1bcdc009/inspections-inbound-robo-advisor-vs-financial-advisor.txt",
+      "sha256": "4b1f88a127c2fc0fc92b72695291ebf3ab2fc66e34af71d2b233428e1bcdc009",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-inbound-robo-advisor-vs-financial-advisor.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/f87cc7d29c188a762c8a6928a99a2de45e5e1a7db0463a5ec2e85a45afebf50e/inspections-inbound-when-to-switch-financial-advisors.txt",
+      "sha256": "f87cc7d29c188a762c8a6928a99a2de45e5e1a7db0463a5ec2e85a45afebf50e",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-inbound-when-to-switch-financial-advisors.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/2fb43024a0933a38cec574dfff2829f33f4ea4872e8ada9db573edd7e13b33a0/inspections-inbound-how-to-read-form-adv.txt",
+      "sha256": "2fb43024a0933a38cec574dfff2829f33f4ea4872e8ada9db573edd7e13b33a0",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-inbound-how-to-read-form-adv.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/c1070f34441231cb3c2fb37d836001ac3f3801dc877adbc8f26d2aee772e719f/inspections-inbound-what-is-investment-management.txt",
+      "sha256": "c1070f34441231cb3c2fb37d836001ac3f3801dc877adbc8f26d2aee772e719f",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-inbound-what-is-investment-management.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/c0a6956dcff7bd0a11af8136c9d5598d091b09caffef67ee49ac8db4a3434723/evidence.json",
+      "sha256": "c0a6956dcff7bd0a11af8136c9d5598d091b09caffef67ee49ac8db4a3434723",
+      "originPath": "evidence/robo-advisor-vs-financial-advisor/evidence.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/a216a2eda39b74d88c5588d7c1a70c822d3f4fe39b6798e20c8bdff4e1601b8a/evidence.json",
+      "sha256": "a216a2eda39b74d88c5588d7c1a70c822d3f4fe39b6798e20c8bdff4e1601b8a",
+      "originPath": "evidence/when-to-switch-financial-advisors/evidence.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/6811a5b240bb8e81bd2146671c5b66d00498ea4a0cb9ea15788d7221fd7dd1e7/evidence.json",
+      "sha256": "6811a5b240bb8e81bd2146671c5b66d00498ea4a0cb9ea15788d7221fd7dd1e7",
+      "originPath": "evidence/how-to-read-form-adv/evidence.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/bcb3f96797361def1df9a4534e36aa2f60c9e19feed1942ea2d62ebac9da290b/evidence.json",
+      "sha256": "bcb3f96797361def1df9a4534e36aa2f60c9e19feed1942ea2d62ebac9da290b",
+      "originPath": "evidence/what-is-investment-management/evidence.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971/investor.gov_CRS-2026-11-09.txt",
+      "sha256": "183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971/investor.gov_CRS-2026-11-09.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/49b463337a5d37e8e1b6a56977dd6b25e90aae848a163dc296ae8448c64310d3/sec-clayton-excerpt-2026-11-09.txt",
+      "sha256": "49b463337a5d37e8e1b6a56977dd6b25e90aae848a163dc296ae8448c64310d3",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/49b463337a5d37e8e1b6a56977dd6b25e90aae848a163dc296ae8448c64310d3/sec-clayton-excerpt-2026-11-09.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/22f45649106d7d5cb55a278b9632333abaaa2761a52bd723191da4e45115a8d8/www.finra.org_investors_investing_investment-accounts_brokerage-accounts_account-transfers",
+      "sha256": "22f45649106d7d5cb55a278b9632333abaaa2761a52bd723191da4e45115a8d8",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/22f45649106d7d5cb55a278b9632333abaaa2761a52bd723191da4e45115a8d8/www.finra.org_investors_investing_investment-accounts_brokerage-accounts_account-transfers"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/8afe23f0fa40bb14922d7f9450a898b9623b04226cced16c867cafc45fa15530/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_investor-bulletins-45",
+      "sha256": "8afe23f0fa40bb14922d7f9450a898b9623b04226cced16c867cafc45fa15530",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/8afe23f0fa40bb14922d7f9450a898b9623b04226cced16c867cafc45fa15530/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_investor-bulletins-45"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/953e89fd695e8cd41b47b9fc76382e695de82d904f09d46dc2fe0c657e8086d7/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_investor-bulletins-71",
+      "sha256": "953e89fd695e8cd41b47b9fc76382e695de82d904f09d46dc2fe0c657e8086d7",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/953e89fd695e8cd41b47b9fc76382e695de82d904f09d46dc2fe0c657e8086d7/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_investor-bulletins-71"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/9586a28f2f160f3c3afdfb5589cfcd0ff2c94c2e8a555b67ca0e02d30bc53b79/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_subscription-based-advisory-fees",
+      "sha256": "9586a28f2f160f3c3afdfb5589cfcd0ff2c94c2e8a555b67ca0e02d30bc53b79",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/9586a28f2f160f3c3afdfb5589cfcd0ff2c94c2e8a555b67ca0e02d30bc53b79/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_subscription-based-advisory-fees"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/022592e5e1ce0485059a3d0318ca0c2d90c3071e6b2eec9b5e40bfd7f5477068/www.investor.gov_introduction-investing_getting-started_investing-your-own",
+      "sha256": "022592e5e1ce0485059a3d0318ca0c2d90c3071e6b2eec9b5e40bfd7f5477068",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/022592e5e1ce0485059a3d0318ca0c2d90c3071e6b2eec9b5e40bfd7f5477068/www.investor.gov_introduction-investing_getting-started_investing-your-own"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/527060a93bc96c0c3a9cf3c764724cc66a9801a8afcb19d3b9d9e881759a7a51/www.investor.gov_introduction-investing_getting-started_working-investment-professional",
+      "sha256": "527060a93bc96c0c3a9cf3c764724cc66a9801a8afcb19d3b9d9e881759a7a51",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/527060a93bc96c0c3a9cf3c764724cc66a9801a8afcb19d3b9d9e881759a7a51/www.investor.gov_introduction-investing_getting-started_working-investment-professional"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/ffda7445ecd73d962912bb3ead41eca63f60c2bd345b4af5908368d646816d38/www.investor.gov_introduction-investing_getting-started_working-investment-professional_investment-advisers",
+      "sha256": "ffda7445ecd73d962912bb3ead41eca63f60c2bd345b4af5908368d646816d38",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/ffda7445ecd73d962912bb3ead41eca63f60c2bd345b4af5908368d646816d38/www.investor.gov_introduction-investing_getting-started_working-investment-professional_investment-advisers"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/55da2b2c1ddf24be8c7e3b67f360c0da0adfc17dfe0f9968a5836756fac10ed3/www.investor.gov_introduction-investing_investing-basics_glossary_form-adv",
+      "sha256": "55da2b2c1ddf24be8c7e3b67f360c0da0adfc17dfe0f9968a5836756fac10ed3",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/55da2b2c1ddf24be8c7e3b67f360c0da0adfc17dfe0f9968a5836756fac10ed3/www.investor.gov_introduction-investing_investing-basics_glossary_form-adv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/7130d5ef7c6566807b7fed84fc2eb5360a88a8d0d55db936e360064e8a0192f9/www.irs.gov_retirement-plans_plan-participant-employee_rollovers-of-retirement-plan-and-ira-distributions",
+      "sha256": "7130d5ef7c6566807b7fed84fc2eb5360a88a8d0d55db936e360064e8a0192f9",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/7130d5ef7c6566807b7fed84fc2eb5360a88a8d0d55db936e360064e8a0192f9/www.irs.gov_retirement-plans_plan-participant-employee_rollovers-of-retirement-plan-and-ira-distributions"
+    }
+  ],
+  "findings": [
+    {
+      "id": "chart-review-round1-CR1-CR10",
+      "status": "resolved",
+      "evidence": "Round 1 FAIL findings resolved in revision 2; round 2 PASS (chart-review.json)."
+    },
+    {
+      "id": "phase4-advisory-a",
+      "status": "open",
+      "evidence": "Round 1 FAIL findings resolved in revision 2; round 2 PASS (chart-review.json)."
+    },
+    {
+      "id": "phase4-advisory-b",
+      "status": "open",
+      "evidence": "Chart review: Clayton excerpt verified only for the duty of care/loyalty and Regulation Best Interest best-interest quotes; do not rely on the four component obligations."
+    },
+    {
+      "id": "phase4-advisory-c",
+      "status": "open",
+      "evidence": "A4 must not restate the flat-fee vs AUM comparison; A1 must not conflict with the worth-it H2 or restate what-is-a-robo-advisor; A3 must not be a restatement of the RIA and conflicts sections (defer and remove links otherwise)."
+    },
+    {
+      "id": "writer-note-1",
+      "status": "open",
+      "evidence": "All four drafts were written by the gemini-3.8-flash FALLBACK (Anthropic keys have no credit); meta.json records fallback_used true. Claim checks left flags in meta.guards (A1: \"Negotiated by contract\"; A3: \"This annual disclosure ensures clients stay informed...\"); known tells to verify: A1 \"the platform\", \"essential\"; A2 table cells \"Not published\" and step 3 \"before contacting your current firm\"; A2 intro second paragraph; experience framing \"In the guides we publish here, we find...\"; A3 FAQ \"Is Form ADV annual?\" must stay within the bulletin statement."
+    },
+    {
+      "id": "writer-note-2",
+      "status": "open",
+      "evidence": "A1 comparison has two option columns (robo vs human RIA); the broker or dual-registrant condition is in the standard-of-conduct row and section 5 instead of a third column (template supports a and b only). Inbound edits: 4 declared one-sentence insertions (worth-it, what-is-a-robo-advisor, conflicts guide, how-to-choose) and 4 existing-anchor links (RIA guide x2, conflicts guide, wealth-manager comparison); no updated-date change; see src-candidate.diff and inspections."
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  }
+}

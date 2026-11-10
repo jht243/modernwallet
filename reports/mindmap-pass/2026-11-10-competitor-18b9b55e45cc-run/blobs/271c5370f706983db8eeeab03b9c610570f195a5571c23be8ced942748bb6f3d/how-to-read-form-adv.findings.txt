@@ -1,0 +1,40 @@
+A3-F1 [blocker] where: Section "What to Look For in the Part 2A Brochure" (rendered HTML <ul class="prose-list">)
+quote: **Advisory business**: The firm describes the types of advisory services it provides
+defect: Rendering defect: 14 literal "**" markers appear in the live HTML list items (seven bold labels). Bold markdown inside list items is not parsed by this template, so readers see asterisks.
+fix: Move the seven items to the section's list field (or write them as plain "Label: text" with no asterisks) and re-capture.
+
+A3-F2 [blocker] where: Same section, three bullets
+quote: **Performance-based fees and side-by-side management**: This item covers performance-based fees and side-by-side management.
+defect: Claim-check residue: three bullets restate their own label and tell the reader nothing (also "Code of ethics, participation in client transactions, and personal trading: This disclosure covers code of ethics, participation in client transactions, and personal trading" and "Brokerage practices: The brochure covers the firm's brokerage practices."). The reader is told to inspect items but not what each shows. The SEC bulletin (capture 953e89fd) has the facts.
+fix: Performance-based fees: "An adviser that accepts performance-based fees, or supervises someone who does, must disclose it. If it also manages accounts without a performance fee, it must explain the resulting conflicts and how it addresses them." Code of ethics: "The adviser must briefly describe its code of ethics, state that a copy is available on request, and disclose whether it or a related person invests in the same securities it recommends, with the conflicts involved." Brokerage practices: "The adviser must describe how it selects broker-dealers and judges their compensation, and must disclose soft dollar practices."
+
+A3-F3 [blocker] where: Table "What Each Part of Form ADV Contains", column "Delivered to clients?"
+quote: No; public on IAPD portal
+defect: Part 1 "No" is source silence turned into an affirmative claim: the SEC bulletin says Part 1 filings are public on IAPD and says nothing about whether Part 1 is delivered to clients. Part 2A cell "delivered to clients initially and offered annually" paraphrases the annual-summary rule loosely.
+fix: Part 1 cell: "Public on the IAPD website". Part 2A cell: "Advisers must deliver the brochure to prospective and existing clients, and each year deliver a summary of material changes with a revised brochure or an offer to deliver one".
+
+A3-F4 [blocker] where: Intro sentence 3; section 1; "Limits" section
+quote: because the regulatory agency designates it as the primary disclosure document for advisory practices
+defect: Coy abstraction: "the regulatory agency" (three times) where the SEC is the named source; the tee-up is two sentences ("In the guides we publish here, we start from the official public filings because they reveal fee structures..." plus "At ModernWallet, we suggest..."). First mention of the Securities and Exchange Commission and IAPD in the intro is plain text, not linked.
+fix: Intro: keep sentence 1, delete the "At ModernWallet, we suggest..." sentence, and rewrite sentence 2 as one sentence naming the SEC bulletin ("The SEC investor bulletin on Form ADV calls the Part 2A brochure the primary disclosure document for investment advisers."). Link "Securities and Exchange Commission (SEC) Investment Adviser Public Disclosure (IAPD) database" in the intro to https://adviserinfo.sec.gov. Replace "The regulatory agency does not mandate an official reading sequence for clients." with "The SEC does not set a reading order for clients."
+
+A3-F5 [blocker] where: Section "Limits of Form ADV and When the Answer Changes"
+quote: You negotiate a customized contract with negotiated billing terms that supersede standard schedule numbers shown in Part 2A.
+defect: Garbled, unsupported condition bullets: "The firm files an annual summary of material changes with a revised brochure, altering fee percentages, service structures, or conflict disclosures." (the bulletin says the adviser delivers the summary to clients; "altering fee percentages" is not stated), the "supersede" bullet above, and "The regulatory agency updates filing requirements or disclosure thresholds for registered entities." (a filler condition no reader can act on).
+fix: Replace the three bullets with: (1) "The adviser delivers a new annual summary of material changes: read it against the brochure you already have." (2) existing disciplinary-event bullet (keep). (3) "The brochure says fees are negotiable: your contract sets the fees you pay (Investor.gov), so compare the contract with the Part 2A fee schedule."
+
+A3-F6 [blocker] where: Closing section "How to Read Form ADV and Take Practical Action" and FAQ "Is Form ADV annual?"
+quote: Reading Form ADV before you sign an agreement gives you the facts needed to hire the right professional or walk away before committing your assets.
+defect: Takeaway overclaims and contradicts the page's own "a clean Form ADV filing does not show advice quality". It also opens "Finally, review the Part 2B..." with no earlier list, so it is not a usable next action. FAQ "Is Form ADV annual?" never answers yes or no and keeps the open claim-check flag: "This annual disclosure ensures clients stay informed about updates to business practices, fee schedules, or disciplinary records." (SOURCE does not state it).
+fix: Closing section: "Open the Part 2A brochure and confirm the fee method matches what the adviser told you. Read the Part 2B supplement for the person who will handle your account. Bring any unclear item to the adviser as a written question before you sign. A clean filing does not show advice quality, so use it to ask better questions." FAQ answer: "The SEC bulletin says advisers must deliver a summary of material changes to clients every year, along with a revised brochure or an offer to deliver one." Delete the "ensures clients stay informed" sentence.
+
+A3-F7 [blocker] where: Section "Check the Person and the Firm"
+quote: Brokers operate under a different business model. As outlined in the SEC guidance on Form CRS, broker-dealers generally execute discrete transactions and earn sales commissions or markups on each trade.
+defect: Restates content already on existing pages (/guides/what-is-a-registered-investment-advisor/ "RIA vs IAR vs Broker-Dealer Representative", /guides/financial-advisor-conflicts-of-interest/ "Fiduciary vs Non-Fiduciary Legal Standards") and repeated again in A2 and A4. The Part 2A/2B/Part 1 walkthrough is not on those pages, so A3 itself stays, but this section is a restatement.
+fix: Cut the section to two sentences plus links: "Check both the firm and the individual representative on IAPD. Broker-only professionals file with FINRA, not Form ADV: check them on FINRA BrokerCheck and read their Form CRS. See what a registered investment advisor is and how conflicts of interest work." Delete the broker business-model and dual-registration paragraphs.
+
+A3-F8 [required-minor] where: SEO title
+quote: How to Read Form ADV Before You Hire an Advisor
+defect: SEO title is 47 characters (floor 50); spelling "Advisor" differs from the H1/body "adviser" usage.
+fix: "How to Read Form ADV Before You Hire a Financial Advisor" (56 chars).
+

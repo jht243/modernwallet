@@ -1,0 +1,151 @@
+{
+  "updated": "2026-11-10",
+  "slug": "robo-advisor-vs-financial-advisor",
+  "title": "Robo-Advisor vs Financial Advisor: Which Fits You?",
+  "metaDescription": "Compare a robo-advisor and a human financial advisor on cost, human contact, services and standard of care, and see which fits your balance and needs.",
+  "targetKeyword": "robo advisor vs financial advisor",
+  "optionA": "Robo-Advisor",
+  "optionB": "Human Financial Advisor",
+  "segment": "Choosing a financial advisor",
+  "h1": "Robo-Advisor vs Financial Advisor: Which One Fits You?",
+  "introText": "Pick a robo-advisor if you want automated investing for a defined goal and accept little human contact, keeping in mind it is low-cost for larger balances but you should check the dollar fee if your balance is small. Pick a human adviser if you need advice beyond investing or want a person to talk to. This comparison rests on Investor.gov, two SEC investor bulletins and a 2019 SEC chairman statement.\n\nBoth models can provide ongoing portfolio management, but their operational methods and service scopes differ. An automated digital investment advisory program collects your goals and risk tolerance through an online questionnaire, then builds and manages a portfolio. A human investment adviser provides ongoing investment advice and monitoring, and can deliver planning services alongside securities management.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Primary service model",
+        "a": "Automated digital program creating and managing an investment portfolio",
+        "b": "Ongoing advice, portfolio monitoring, and optional broad financial planning"
+      },
+      {
+        "dimension": "Intake method",
+        "a": "Online questionnaire collecting financial goals, time horizon, and risk tolerance",
+        "b": "Conversation with a person to gather your needs"
+      },
+      {
+        "dimension": "Typical fee structures",
+        "a": "Asset-based percentage fees or monthly subscriptions such as $3, $5, or $10",
+        "b": "Ongoing asset-based fee on total portfolio value or negotiated planning fees"
+      },
+      {
+        "dimension": "Human contact",
+        "a": "Ranges from technical support only to hybrid access or minimum balance thresholds",
+        "b": "Direct personal conversations with an investment professional"
+      },
+      {
+        "dimension": "Standard of conduct",
+        "a": "Fiduciary duty of care and loyalty",
+        "b": "Fiduciary duty for investment advisers; brokers follow [Regulation Best Interest](https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty)"
+      },
+      {
+        "dimension": "Key regulatory disclosures",
+        "a": "Form ADV Part 1, Part 2A brochure, and Form CRS relationship summary",
+        "b": "Form ADV Part 1, Part 2A brochure, Part 2B supplements, and Form CRS"
+      },
+      {
+        "dimension": "Underlying investments",
+        "a": "Many use ETFs; some limit products to broad-based ETFs",
+        "b": "Securities the adviser recommends (Investor.gov)"
+      }
+    ]
+  },
+  "verdict": "A robo-advisor fits a reader who wants low-cost automated investing for a defined goal and accepts little human contact; a human adviser fits a reader who needs advice beyond investing or wants a person to call. If the human is a registered investment adviser, the duty of care and loyalty is the same as a robo-advisor's; if the person is a broker or dual registrant, a different standard may apply, shown in Form CRS. This outcome changes if an automated platform provides a hybrid human adviser at your balance level, or if the human is broker-only. Read both firms' relationship summaries and Form ADV Part 2 disclosures to compare all-in costs and human access before opening an account.",
+  "sections": [
+    {
+      "heading": "Robo-Advisor or Financial Advisor: Which Fits Your Situation",
+      "content": "Your choice between a robo-advisor and a traditional human advisor depends on the complexity of your financial profile and your preferences for personal support. If your goal is automated investing for a defined goal, an automated platform builds and manages a portfolio. If you require advice across taxes, estate planning, or complex situations, a human advisor can supply planning services.\n\nAccording to the [SEC Investor Bulletin on Robo-Advisers](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-45) published by the Securities and Exchange Commission (SEC) Office of Investor Education and Advocacy (OIEA), a robo-advisor is an automated digital investment advisory program. These platforms collect your financial goals, investment time horizon, household income, other assets, and risk tolerance through an online questionnaire. The software then uses that collected information to build and manage an investment portfolio for you. Robo-advisors often seek to offer lower costs and fees, and some require lower account minimums.\n\nHuman investment advisers operate differently during the initial evaluation process. As detailed by [Investor.gov on Investment Advisers](https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers), an investment adviser is a firm or person that provides investment advice about securities for compensation. These professionals typically provide ongoing advice about buying, selling, or holding investments, monitor performance, and may give planning services. Unlike an automated program that relies on an online questionnaire, a traditional adviser can hold a conversation to gather your needs."
+    },
+    {
+      "heading": "What Robo-Advisors and Financial Advisors Cost You",
+      "content": "Comparing costs between automated platforms and personal advisers requires examining both fee structures and auxiliary account expenses. Most traditional investment advisers charge an asset-based fee calculated as a percentage of the total assets held in your account. As noted in the [Investor.gov Relationship Summary (Form CRS)](https://www.investor.gov/CRS) guidance, advisers are generally focused on your portfolio over time and typically paid an ongoing asset-based fee on total account value.\n\nRobo-advisors use diverse pricing frameworks, ranging from asset-based percentage fees to recurring subscriptions. The [SEC Investor Bulletin on Subscription-Based Advisory Fees](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/subscription-based-advisory-fees) notes that subscription pricing entails a set recurring fee, typically billed monthly. For smaller robo-adviser accounts, that fee might be $3, $5, or $10 per month for investment management. The SEC bulletin warns that on small balances a flat monthly fee can cost more than a traditional asset-based fee. A $3 monthly fee on a $500 account is $36 a year, more than 7 percent. \n\nAdvisory management charges do not encompass all investment expenses. Both human advisers and robo-advisers invest client money into underlying funds that carry internal operational expenses. The SEC bulletin on robo-advisers notes that many digital programs build portfolios using exchange-traded funds (ETFs), which deduct ongoing management expenses from fund performance. Similarly, clients may pay other fees such as brokerage, custody, and fund expenses. For detailed comparisons of conventional percentage models and fixed advisory retainers, read our comparison of [flat-fee vs AUM advisors](/compare/flat-fee-vs-aum-based-financial-advisors/), or explore specific automated choices in our guide to the [best robo-advisors](/roundup/best-robo-advisors/)."
+    },
+    {
+      "heading": "How Much Human Contact You Get with Each Option",
+      "content": "The level of personal contact varies widely across advisory options and should dictate which path you select. When working with a traditional human financial advisor, direct personal dialogue serves as the foundation of the relationship. You talk directly with a person who gathers your needs and provides ongoing advice. \n\nRobo-advisory platforms deliver varying levels of human communication. The SEC bulletin on robo-advisers explains that some digital programs offer access to an investment professional, often described as a hybrid or bionic model. Other automated platforms restrict human contact entirely to technical support staff. Furthermore, some automated firms condition access to human professionals on maintaining a minimum account size, leaving smaller account holders with purely digital interfaces.\n\nUnlike traditional advisory relationships, digital programs typically lack an initial conversation with a person to assess your personal needs. The SEC bulletin points out that robo-adviser recommendations are limited by the information requested, and the burden to update your profile data falls squarely on you. If your information changes, the robo-advisor cannot incorporate those developments until you update your profile."
+    },
+    {
+      "heading": "Duty of Care Depends on How Your Advisor Is Registered",
+      "content": "The legal standard of conduct governing your investment professional depends entirely on their regulatory registration. In a [July 2019 statement](https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty), then SEC Chairman Jay Clayton explained that the investment adviser fiduciary duty is comprised of a duty of care and a duty of loyalty. This fiduciary framework applies to registered investment advisers, requiring them to act in the best interest of their clients and avoid placing their own financial interests ahead of the client's interests.\n\nRobo-advisors registered with the SEC operate as registered investment advisers, which means they owe clients an adviser fiduciary duty of care and loyalty. Similarly, human professionals who operate as registered investment advisers are held to this same fiduciary standard. However, many individual financial professionals do not operate solely as investment advisers. Some professionals are registered representatives of broker-dealers, while others are dual registrants licensed as both brokers and investment advisers. For broker-dealers, Regulation Best Interest establishes the governing standard of conduct, requiring brokers to act in the best interest of retail customers when making investment recommendations.\n\nDetermining which standard applies to your advisory relationship requires reviewing regulatory disclosure documents. According to the [SEC Investor Bulletin on Form ADV](https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71), retail investors should review Form ADV Part 2 and the Form CRS relationship summary. Form ADV Part 2A serves as an adviser's primary narrative brochure, detailing advisory business practices, fee schedules, conflict points, and disciplinary history across 18 standardized items. Form CRS explicitly states whether a firm is an investment adviser, a broker-dealer, or a dual registrant. You can verify firm registrations and review public filings on the SEC [Investment Adviser Public Disclosure (IAPD)](https://adviserinfo.sec.gov) database."
+    },
+    {
+      "heading": "Who Each Option Is Not For and What Would Change the Answer",
+      "content": "A robo-advisor may not fit you if you want a person to call or your finances include accounts its questionnaire does not ask about. The SEC bulletin says some robo-advisers offer hybrid access to an investment professional and some use tax loss harvesting, so ask each one. A human adviser may not fit a small balance with one simple goal; see [is a financial advisor worth it](/guides/financial-advisor-worth-it/) for the break-even math. \n\nSpecific operational changes can flip this general advisory recommendation. If an automated robo-advisory platform offers a hybrid service tier with an investment professional at your balance, the robo-advisor may satisfy your need for personal communication. If you want to understand automated services in depth, read our overview of [what a robo-advisor is](/guides/what-is-a-robo-advisor/).\n\nConversely, if a human professional you interview is registered exclusively as a broker-dealer representative rather than an investment adviser, the regulatory baseline shifts. Checking Form CRS confirms whether your prospective advisor operates as an investment adviser or a broker. Reviewing your personal planning targets with our [retirement calculator](/retirement/) will help clarify which advisory model supports your goals."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Are robo-advisors better than financial advisors?",
+      "answer": "Robo-advisors are better for investors who want automated investment management for a defined goal, which is low-cost for larger balances, and who do not require personal financial planning. Human financial advisors are better for individuals with complex assets, tax planning requirements, or estate planning needs who want ongoing personal communication. The right option depends on your account size and the breadth of services you require."
+    },
+    {
+      "question": "Is a robo-advisor a good idea?",
+      "answer": "A robo-advisor is a good idea if you want an automated portfolio built with exchange-traded funds. It is low-cost for larger balances, though dollar fees can add up on a small balance. It may not fit if you want a dedicated person to call, but some robo-advisors offer hybrid professional access or tax loss harvesting, so check each service."
+    },
+    {
+      "question": "Robo-advisor vs financial planner: what is the difference?",
+      "answer": "A robo-advisor is an automated digital investment advisory program that builds a portfolio from your questionnaire answers. Financial planner is a job title, and Investor.gov lists a financial planner among the people you can hire to help with investment decisions, so ask what services and registration the person has. See [financial advisor vs financial planner](/compare/financial-advisor-vs-financial-planner/)."
+    }
+  ],
+  "sources": [
+    {
+      "label": "SEC Investor Bulletin: Robo-Advisers",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-45"
+    },
+    {
+      "label": "SEC Investor Bulletin: Subscription-based Advisory Fees",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/subscription-based-advisory-fees"
+    },
+    {
+      "label": "Investor.gov, Investment Advisers",
+      "url": "https://www.investor.gov/introduction-investing/getting-started/working-investment-professional/investment-advisers"
+    },
+    {
+      "label": "Investor.gov, Relationship Summary (Form CRS)",
+      "url": "https://www.investor.gov/CRS"
+    },
+    {
+      "label": "SEC Chairman Clayton, Regulation Best Interest and the Investment Adviser Fiduciary Duty",
+      "url": "https://www.sec.gov/newsroom/speeches-statements/clayton-regulation-best-interest-investment-adviser-fiduciary-duty"
+    },
+    {
+      "label": "SEC Investor Bulletin: Form ADV, Investment Adviser Brochure and Brochure Supplement",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-71"
+    },
+    {
+      "label": "SEC Investment Adviser Public Disclosure (IAPD)",
+      "url": "https://adviserinfo.sec.gov"
+    },
+    {
+      "label": "FINRA BrokerCheck",
+      "url": "https://brokercheck.finra.org"
+    }
+  ],
+  "relatedComparisons": [
+    "financial-advisor-vs-financial-planner",
+    "financial-advisor-vs-wealth-manager",
+    "flat-fee-vs-aum-based-financial-advisors",
+    "ai-investing-vs-robo-advisors"
+  ],
+  "calculatorLinks": [
+    {
+      "label": "Net worth calculator",
+      "href": "/net-worth/"
+    },
+    {
+      "label": "Retirement calculator",
+      "href": "/retirement/"
+    },
+    {
+      "label": "Investing calculator",
+      "href": "/investing/"
+    }
+  ],
+  "metaTitle": "",
+  "subtitle": "",
+  "optionAName": "",
+  "optionBName": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": [],
+  "relatedLinks": []
+}

@@ -1,0 +1,59 @@
+e (`phrase_related` / `phrase_fullsearch` / `phrase_questions`), validate each candidate once (`phrase_these` for volume/CPC, `phrase_kdi` for difficulty). Batch phrases with `;` joins (both `phrase_these` and `phrase_kdi` accept a `;`-separated `phrase` list) instead of one call per keyword.
+- **Only look up metrics for real candidates**, not every raw expansion result. Filter to plausible, on-mission phrases first, then validate that shortlist.
+- **Keep the seed set tight** (a handful of seeds derived from the brief). Cache intermediate JSON/CSV under `reports/mindmap-pass/` and read from it instead of re-querying.
+- Prefer free signals (the Autocomplete tool, web search, the codebase, the target-keyword doc) for judgment calls; spend SEMRUSH credits only where a real metric is needed.
+
+## SEMRUSH report types (same endpoint the repo scripts already use)
+| Need | `type=` | Notes |
+|---|---|---|
+| Volume / CPC / competition for exact phrases | `phrase_these` | Batch with `phrase=a;b;c`. The primary validation call. |
+| Keyword difficulty (KD) | `phrase_kdi` | Batch with `phrase=a;b;c`. |
+| Related-keyword expansion | `phrase_related` | Per seed; cap with `display_limit`. |
+| Broad-match expansion | `phrase_fullsearch` | Per seed; cap with `display_limit`. |
+| Question-format expansion | `phrase_questions` | Per seed; the "what/how/can/is" long-tail. |
+| Who ranks (SERP / competition read) | `phrase_organic` | Per top candidate — tells you how contested the term is and who owns it. |
+
+Free live-demand miner (no SEMRUSH credits, real Google data) — run it on every core seed to widen long-tail/question coverage:
+```bash
+python3 .claude/tools/autocomplete-paa/autocomplete.py \
+  --seed "<seed phrase from the brief>" \
+  --mode all \
+  --csv reports/mindmap-pass/<TODAY>.autocomplete.<seed-slug>.csv
+```
+`--mode all` runs the 10 question-prefix sweep + the a–z alphabet sweep and dedups; output is `seed,suggestion,via` CSV. Treat every row as a Lens-2 candidate. If the project has a tracked-keyword inventory file, pass `--inventory <that file>` so new suggestions are appended (deduped) to THIS project's inventory only.
+
+---
+
+## ► ANALYZE THE BRIEF THROUGH THREE MANDATORY LENSES — ALL RUN ON EVERY PASS
+
+- **Lens 1 — Direct intent (what the user explicitly wants added).** Parse the interpreted brief into the concrete topics/pages the user is actually asking for. For each, derive the exact keyword phrase(s) a searcher would use, **validate them on SEMRUSH** (`phrase_these` + `phrase_kdi`, and `phrase_organic` on the strongest to read competition), and shape each into a chart row with a real target. This lens honors the user's request literally.
+- **Lens 2 — Adjacent-demand discovery (CORE TENET — never skip).** The brief is a seed, not a ceiling. Expand around it with SEMRUSH (`phrase_related` / `phrase_fullsearch` / `phrase_questions`) + the Autocomplete miner + a quick web/news scan, and surface **clusters of real demand the user did NOT name but that belong with their idea** — sibling questions, adjacent audiences/verticals, comparison/format variants, news-driven spikes. This is the same emerging-search-pattern engine `/seo-gsc-pass` runs, re-pointed from "the GSC query set" to "the demand space around the user's brief." **A pass that returns only the literal terms the user typed, with no SEMRUSH-driven adjacent clusters, has failed this rule.**
+- **Lens 3 — Comparison / Alternatives / Pricing (CORE TENET — run on EVERY pass; see the dedicated section below).** For every primary entity the brief names or implies (product, tool, vendor, model, platform, service), systematically mine the three highest-commercial-intent bottom-funnel formats: **`{entity} vs {rival}` comparisons**, **`{entity} alternatives`**, and **`{entity} pricing / cost / is it worth it`**. These convert and are where competitors concentrate — a mindmap pass that ships topical/how-to rows but no vs/alternatives/pricing coverage for the brief's entities has failed this rule. All three lenses feed the same output table.
+- **Lens 3b — Model-launch overlay (CONDITIONAL).** Runs only on an AI-content repo when the brief or the lenses surfaced a **new AI model release**; every other repo and brief skips it. It forces the Tier 0 Launch Core rows into the chart regardless of keyword-tool volume. See the dedicated section below.
+
+## LENS 1 — Direct intent → validated rows
+
+1. **Extract seeds from the interpreted brief.** List the concrete topics/entities/audiences/angles the user wants. Convert each into 1–3 candidate search phrases (how a real searcher phrases it), not marketing copy.
+2. **Validate on SEMRUSH.** Batch the candidates through `phrase_these` (volume, CPC, competition) and `phrase_kdi` (difficulty). For the strongest 3–5, run `phrase_organic` to see who ranks and how contested the SERP is. **No fabrication** — real phrases and real figures only; a phrase SEMRUSH returns no data for is labeled `no tool volume` (still may be worth a long-tail slot, but say so — never invent a number).
+3. **Decide the home + lever** for each validated intent using the ladder in "Decide the lever" below. Name the exact target file/route.
+4. A brief item the site **already answers well** with a dedicated, intent-matched page is **not** a new row — record it under exclusions ("already covered by `<route>`"), don't pad the table. "Already answers well" is judged from the **coverage lookup** (see "Decide the lever"), not from memory.
+
+## LENS 2 — Adjacent-demand discovery (CORE TENET — run on every pass)
+
+Lens 1 stays inside what the user typed. Lens 2 reads the **demand space around it** and finds the themes worth owning that the user didn't name. Do all four steps; use only real SEMRUSH/Autocomplete/web data — never invent queries, volume, or movement.
+
+1. **Expand the seeds.** For each Lens-1 seed, pull `phrase_related` + `phrase_fullsearch` + `phrase_questions` from SEMRUSH and run the Autocomplete miner. Merge the results into one candidate pool.
+2. **Cluster the pool.** Group candidates into semantic clusters by shared intent, entity, or modifier — a recurring product/model/vendor name, a compliance framework, an audience/use-case modifier ("for dentists", "for startups", "for enterprise"), a format signal ("vs", "alternative", "pricing", "template", "checklist", "calculator", "example"), or a question shape ("can X do Y", "is X compliant", "how to X"). A **cluster** is ≥2 related phrases sharing a theme, OR a single phrase carrying a distinct modifier/entity the site has no dedicated answer for.
+3. **Identify EMERGING / under-served clusters.** A cluster is emerging/under-served when SEMRUSH/Autocomplete show real demand (volume, question frequency, or a live news signal) but the site has no page that is the clear, dedicated, intent-matched answer for it. Evidence must be real:
+   - The cluster's phrases carry SEMRUSH volume (or repeated Autocomplete completions) but no existing page squarely targets the theme — a coverage gap at the *theme* level.
+   - An existing page surfaces for the cluster but is an intent/format mismatch (a pillar that structurally can't satisfy a "vs"/pricing/calculator query).
+   - **News-driven demand** the brief pointed at (if the input was an article): translate the breaking theme into the phrases searchers will reach for; validate plausibility with SEMRUSH volume where it exists, or label it `demand inferred from live news/Autocomplete — no tool volume yet` and cite the signal. First-mover clusters often have no competitor footprint — that's the upside, not a reason to drop.
+   - A cluster the site ALREADY answers well with a dedicated page is **not** emerging — drop it (note under exclusions if noteworthy). Judge "already answers well" from the coverage lookup (see "Decide the lever"), not from memory.
+4. **Decide the lever per cluster** (ladder below) and emit each actionable cluster as a real row **and** as a row in the required `## Emerging search patterns (clusters)` block.
+
+## LENS 3 — Comparison / Alternatives / Pricing (CORE TENET — run on every pass)
+
+Lenses 1 & 2 find topical and adjacent demand. Lens 3 guarantees the **bottom-funnel, high-commercial-intent** formats are covered for the brief's entities — the pages that capture buyers already in evaluation. Run all steps with real SEMRUSH/Autocomplete data only; never invent rivals, volume, or prices.
+
+1. **Enumerate the primary entities.** From the interpreted brief (Lens 1) and the strongest adjacent clusters (Lens 2), list the concrete named entities a searcher would compare or price — products, tools, vendors, platforms, models, services. (Pure topic/how-to briefs with no comparable entity: attempt to identify the category leaders a searcher in that space would weigh; if genuinely none exist, say so under exclusions — do not force empty rows.)
+2. **Generate the three format families per entity** and validate each phrase on SEMRUSH (`phrase_these` + `phrase_kdi`; `phrase_organic` on the st

@@ -1,0 +1,16 @@
+{
+ "originRoutine": "competitor-monitor-auto",
+ "queryFamily": "switch financial advisors",
+ "hypothesis": "A dedicated primary-source page earns clicks for a query family the site does not answer today; unproven",
+ "primaryMetric": "GSC clicks",
+ "baseline": {
+  "status": "unavailable",
+  "reason": "No verified pre-change GSC extract in the run evidence; retry historical date-filtered extraction during the existing measurement routine.",
+  "priorSpecification": "unavailable (new route, not zero)"
+ },
+ "comparatorPlan": "age-matched new guides",
+ "changeScope": "new route",
+ "sourceRefreshTrigger": "Rule or form change at the cited bodies",
+ "outcomeStatus": "not-yet-published",
+ "path": "/guides/when-to-switch-financial-advisors/"
+}

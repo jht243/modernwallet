@@ -1,0 +1,13 @@
+INBOUND INSPECTION for /guides/when-to-switch-financial-advisors (2026-11-10)
+Date/review policy: existing-anchor links and the declared one-sentence insertions below are link-only text edits to existing pages: no new factual claim, no dateModified bump; every touched page is re-captured and reviewed in the rendered audit. If the new page is deferred, its links are removed (isolation rule).
+
+page /guides/financial-advisor-conflicts-of-interest/ - title: How to Spot Financial Advisor Conflicts of Interest
+section: Getting a Second Opinion on Large Decisions | purpose: the section covers a second opinion; if it leads to changing firms the new page is the process
+DECLARED MINIMAL BODY EDIT (inserted sentence, end of section): If a second opinion leads you to change firms, see [when to switch financial advisors](/guides/when-to-switch-financial-advisors/) for the steps.
+  section opening for context: "heading": "Getting a Second Opinion on Large Decisions",         "body": "When facing a major portfolio adjustment, seeking a second opinion provides an effective sanity check against potential advisor conflicts of interest.\n\nA second opinion from an unconnected advisor, paid by flat fee or hourl
+
+page /guides/how-to-choose-a-financial-advisor/ - title: How to Choose a Financial Advisor: A Decision Guide
+section: Step 4: Verify the advisor before you hire | purpose: readers verifying a new advisor are often replacing one; the new page covers the move
+DECLARED MINIMAL BODY EDIT (inserted sentence, end of section): If you are replacing an advisor, see [when to switch financial advisors](/guides/when-to-switch-financial-advisors/) before you move any accounts.
+  section opening for context: heading: "Step 4: Verify the advisor before you hire", body: "Never hire an advisor without checking their record. The SEC provides two free tools you should always use. Investment Adviser Public Disclosure (IAPD) at adviserinfo.sec.gov shows the firm's Form ADV, services, fees, conflicts, and any d
+

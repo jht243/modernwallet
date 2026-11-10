@@ -1,0 +1,13 @@
+INBOUND INSPECTION for /compare/robo-advisor-vs-financial-advisor (2026-11-10)
+Date/review policy: existing-anchor links and the declared one-sentence insertions below are link-only text edits to existing pages: no new factual claim, no dateModified bump; every touched page is re-captured and reviewed in the rendered audit. If the new page is deferred, its links are removed (isolation rule).
+
+page /guides/financial-advisor-worth-it/ - title: Is a Financial Advisor Worth It? What to Know
+section: Robo-advisor vs. financial advisor: a quick side-by-side | purpose: the H2 gives a short unsourced pick; the new page is the full sourced head-to-head
+DECLARED MINIMAL BODY EDIT (inserted sentence, end of section): For the full side-by-side with sources, see our [robo-advisor vs financial advisor](/compare/robo-advisor-vs-financial-advisor/) comparison.
+  section opening for context: heading: "Robo-advisor vs. financial advisor: a quick side-by-side", body: "A robo-advisor and a financial advisor solve the same core problem, building and managing a portfolio, at very different price points and service levels. Cost is the starkest difference: a robo-advisor typically charges arou
+
+page /guides/what-is-a-robo-advisor/ - title: What a Robo-Advisor Is and When Using One Makes Sense
+section: Who a Robo-Advisor Does Not Fit | purpose: the section hands the comparison off to the worth-it guide; the new page is the direct comparison
+DECLARED MINIMAL BODY EDIT (inserted sentence, end of section): If you want the head-to-head, see our [robo-advisor vs financial advisor](/compare/robo-advisor-vs-financial-advisor/) comparison.
+  section opening for context: "heading": "Who a Robo-Advisor Does Not Fit",         "body": "Our guide on [whether a financial advisor is worth it](/guides/financial-advisor-worth-it/) compares a robo-advisor with a human advisor.\n\nThe SEC bulletin also notes that in some cases robo-advisers may not have been tested under stre
+

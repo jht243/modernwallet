@@ -1,0 +1,75 @@
+, scope, artifact: {path, sha256}}]`. Existing relevant verified owner/product records are reusable. Physical or stochastic product tests do not need identical fresh API responses. Preserve the separate testing-label adapter's exact full-coverage/approval requirements.
+- `basis: reported|client-record`: retain `whyNoQuantitativeAnalysis` and the actual `reasoning` from sources to conclusion. A useful non-numerical synthesis or relevant documented case can pass. Do not imply an executed product test.
+
+The packet reader question and case-retrieval query must match the approved action.reader_question exactly, including its internal question-evidence tag. If that string changes, rerun deterministic case retrieval and refresh caseSelection and affected artifact hashes together before writer dispatch. Keep the tag internal; public reader questions and copy contain no workflow labels. Keep the existing source URLs, provenance, takeaway, survey and applicable growth fields. These gate fields extend the current packet; they do not create a second evidence system. If the page needs a claim the sources cannot support, narrow/exclude it rather than manufacturing numbers.
+
+Mindmap `content_gen.py write`, `section` and `fix` calls require:
+
+```text
+--mindmap-manifest <RUN>/approval-manifest.json --mindmap-review <RUN>/chart-review.json --analysis-packet <RUN>/evidence/<slug>/evidence.json
+```
+
+The shared writer checks these before spending a call when caller/path identifies Mindmap. Do not relocate prompts or change caller names to bypass it. The target must match the manifest and packet. This verifies preparation/evidence structure, not Phase 0 human approval or a final content PASS; the existing permissions and independent review remain mandatory.
+
+## 3. Existing Phase 4 verifies usefulness, reproducibility and the render
+
+First judge whether the finding resolves the approved reader decision beyond a rewrite of sources. Reject trivial arithmetic used as an originality claim, unsupported assumptions, missing material conditions, or an asset that adds no value. Accept relevant non-numerical reasoning and justified no-addition decisions.
+
+For calculations/modeling, inspect code and inputs, independently rerun the safe deterministic calculation, and save fresh JSON output to a distinct reviewer artifact (never the original output or an alias). Compare its results, units, boundary cases and counterexample to the exact article. Do not execute unreviewed code or spend on unnecessary repeat product/API runs. For measured work, inspect actual raw task records and independently verify the scoring/claims; do not demand identical stochastic outputs. For source-only/client work, verify the reasoning and exact approved public scope.
+
+Perform the existing complete rendered-page audit after all content, asset, template, affiliate and link transformations. Save the normal rendered snapshot and independent rendered review. In the analysis review JSON retain `reviewer`, `verdict: "PASS"`, canonical `packetSha256`, and `{status: "PASS", evidence: <concrete observation>}` for `usefulness`, `sourceAndAssumptions`, `conditionsAndCounterexample`, `renderedConsistency`, `localExclusions`. Include file-hashed `renderedSnapshot` and `renderedReview` references from that same reviewer. Quantitative replays also include canonical `replaySha256`.
+
+```bash
+python3 .claude/tools/mindmap-gates.py audit-analysis --packet <RUN>/evidence/<slug>/evidence.json --review <RUN>/audit/<slug>-analysis.json --replay-output <RUN>/audit/<slug>-replay.json
+```
+
+Omit `--replay-output` for measured/source/client work without a deterministic calculation. Independently check any numerical derived claims separately. This gate supplements the existing `rendered-audit.py check/compare` and does not replace them. Missing evidence is a failure; changed outputs invalidate affected approvals. Keep the existing rework limit and publication/live-verification process.
+
+The terminal no-addition branch needs no new rendered capture, product run, asset, numerical packet or growth registration. Its existing evidence-backed independent chart decision suffices. If explicitly checking a saved no-addition note with this helper, use `basis: no-addition`, `author`, `route`, `readerQuestion`, `whyNoAddition`, `existingAnswer: {path, sha256}` and an independent `noAddition: {status: PASS, evidence}` decision bound to that note; the helper returns before render/replay requirements.
+
+## 4. Finish the selected useful asset in the approved run
+
+Use prose, a finite table, SVG, a genuine screenshot, an image/illustration, downloadable data or an interactive tool when that format improves the answer and available capabilities support it. Reuse components. Generated illustrations never prove product use. Build and audit the actual asset and its page within Phase 3/4; no placeholder, spec-only completion or future-human-build branch. Determine feasibility before the chart; narrow or exclude an infeasible asset while retaining a supported useful answer. Do not force an asset or add another URL for existing intent. Videos remain outside this Mindmap evidence workflow.
+
+[Source: .claude/commands/_keyword-demand-ladder.md]
+# Keyword demand ladder — NEVER block a routine on a dry API key
+
+<!-- keyword-discovery-bounds-v1 -->
+**Discovery limits:** `expand --limit N` returns up to N provider ideas PLUS N unique autocomplete ideas (at most 2N, default N=20). This is a per-source batch bound, not a chart/page quota or coverage guarantee. Keep existing provider pins and spending caps. Save raw outputs; filter off-topic matches before ranking, validate exact shortlisted phrases, and record counts by source, rejected topics and the stop/widen reason. If relevant families remain unexplored, prefer free question-prefix mining or narrower seeds before raising the limit. The existing chart reviewer checks these artifacts under `_workflow-checkpoints.md`. Never terminate other runs with a broad process-name kill; use this run's task ID/PID.
+<!-- /keyword-discovery-bounds-v1 -->
+
+
+**Standing rule (applies to EVERY pass that needs keyword volume/difficulty):
+a routine must never stop, skip, or email failure because a keyword API key is
+missing, expired, or out of credits.** Demote one rung and keep going.
+
+## The ladder — SEMRUSH FIRST, with ranked backups
+
+**USER RULE 2026-11-02: SEMRUSH is the primary keyword tool wherever it can
+answer; DataForSEO is primary only for what SEMRUSH does not have (live SERPs
+with titles/snippets, People Also Ask text, AI Overview citations, long-tail
+phrases SEMRUSH does not track).** Ahrefs units are reserved for site audits,
+so Ahrefs is last. The best **usable** provider wins each field for the whole run:
+
+| Field | Order | Why this order |
+|---|---|---|
+| **volume** | `semrush` → `dataforseo` → `ahrefs` | SEMRUSH `phrase_these` (10 units/keyword, prepaid). DataForSEO `keyword_overview` only when SEMRUSH has no key, no units, or errors. |
+| **kd** | `semrush` → `dataforseo` → `ahrefs` | SEMRUSH KDI (`phrase_kdi`, 50 units/keyword). DataForSEO Labs KD is modeled; fallback only. |
+| **expand** | `semrush` → `dataforseo` → `ahrefs` | SEMRUSH `phrase_related` + `phrase_questions` (dedicated questions report). |
+| **ranked keywords / competitors / movers** | `semrush` → `dataforseo` | `scripts/lib/semrush.py` (`domain_organic`, `domain_organic_organic`, `display_positions`) behind `dfs_keyword_gap.py` and `dfs_winner_loser.py`. |
+| **vendor roster for head keywords** | `semrush` → `dataforseo` | SEMRUSH `phrase_organic` top 10 (no titles); a keyword SEMRUSH does not track falls back to the live SERP. |
+| **SERP** | `dataforseo` only | No other vendor sells live SERP with PAA text and AI Overview citations at any price. Not a ladder — see `scripts/lib/serp.py`. |
+| **technical site audit** | `ahrefs` → `dataforseo` | Ahrefs' crawler sees what a page alone cannot (backlink-driven issues, crawl depth, orphan pages). DataForSEO OnPage covers every issue the auto-fix table can act on, at ~$0.00015/URL — see `scripts/lib/site_audit.py`, which emits **Ahrefs' issue slugs** so nothing downstream changes. |
+
+**One provider per field, for the whole run.** Every row's volume comes from one
+vendor and every row's KD comes from one vendor, so rows stay comparable to each
+other. Different fields may come from different vendors — a row can carry Ahrefs
+KD next to DataForSEO volume, and both `source` (volume) and `kd_source` are
+stamped on it. What is forbidden is two vendors' volumes inside one chart.
+
+**Google Autocomplete is NOT a rung — it ALWAYS runs, on top.** It is free,
+keyless and live, so it adds to every call regardless of which provider
+answered: `expand()` merges its suggestions into the provider's ideas, and
+`volumes()` attaches an `autocomplete: {completions, corroborates}` signal to
+every row. Phrases no provider has data for still fall back to a conservative
+autocomplete BAND labelled `source: estimate`. Di

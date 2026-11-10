@@ -1,0 +1,113 @@
+62ebac9da290b",
+      "originPath": "evidence/what-is-investment-management/evidence.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971/investor.gov_CRS-2026-11-09.txt",
+      "sha256": "183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/183c0f08980e287f0df63ce50510a966f39d1c68fc15ba9368707d1405670971/investor.gov_CRS-2026-11-09.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/49b463337a5d37e8e1b6a56977dd6b25e90aae848a163dc296ae8448c64310d3/sec-clayton-excerpt-2026-11-09.txt",
+      "sha256": "49b463337a5d37e8e1b6a56977dd6b25e90aae848a163dc296ae8448c64310d3",
+      "checkedAt": "2026-11-09",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/49b463337a5d37e8e1b6a56977dd6b25e90aae848a163dc296ae8448c64310d3/sec-clayton-excerpt-2026-11-09.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/22f45649106d7d5cb55a278b9632333abaaa2761a52bd723191da4e45115a8d8/www.finra.org_investors_investing_investment-accounts_brokerage-accounts_account-transfers",
+      "sha256": "22f45649106d7d5cb55a278b9632333abaaa2761a52bd723191da4e45115a8d8",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/22f45649106d7d5cb55a278b9632333abaaa2761a52bd723191da4e45115a8d8/www.finra.org_investors_investing_investment-accounts_brokerage-accounts_account-transfers"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/8afe23f0fa40bb14922d7f9450a898b9623b04226cced16c867cafc45fa15530/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_investor-bulletins-45",
+      "sha256": "8afe23f0fa40bb14922d7f9450a898b9623b04226cced16c867cafc45fa15530",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/8afe23f0fa40bb14922d7f9450a898b9623b04226cced16c867cafc45fa15530/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_investor-bulletins-45"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/953e89fd695e8cd41b47b9fc76382e695de82d904f09d46dc2fe0c657e8086d7/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_investor-bulletins-71",
+      "sha256": "953e89fd695e8cd41b47b9fc76382e695de82d904f09d46dc2fe0c657e8086d7",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/953e89fd695e8cd41b47b9fc76382e695de82d904f09d46dc2fe0c657e8086d7/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_investor-bulletins-71"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/9586a28f2f160f3c3afdfb5589cfcd0ff2c94c2e8a555b67ca0e02d30bc53b79/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_subscription-based-advisory-fees",
+      "sha256": "9586a28f2f160f3c3afdfb5589cfcd0ff2c94c2e8a555b67ca0e02d30bc53b79",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/9586a28f2f160f3c3afdfb5589cfcd0ff2c94c2e8a555b67ca0e02d30bc53b79/www.investor.gov_introduction-investing_general-resources_news-alerts_alerts-bulletins_subscription-based-advisory-fees"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/022592e5e1ce0485059a3d0318ca0c2d90c3071e6b2eec9b5e40bfd7f5477068/www.investor.gov_introduction-investing_getting-started_investing-your-own",
+      "sha256": "022592e5e1ce0485059a3d0318ca0c2d90c3071e6b2eec9b5e40bfd7f5477068",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/022592e5e1ce0485059a3d0318ca0c2d90c3071e6b2eec9b5e40bfd7f5477068/www.investor.gov_introduction-investing_getting-started_investing-your-own"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/527060a93bc96c0c3a9cf3c764724cc66a9801a8afcb19d3b9d9e881759a7a51/www.investor.gov_introduction-investing_getting-started_working-investment-professional",
+      "sha256": "527060a93bc96c0c3a9cf3c764724cc66a9801a8afcb19d3b9d9e881759a7a51",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/527060a93bc96c0c3a9cf3c764724cc66a9801a8afcb19d3b9d9e881759a7a51/www.investor.gov_introduction-investing_getting-started_working-investment-professional"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/ffda7445ecd73d962912bb3ead41eca63f60c2bd345b4af5908368d646816d38/www.investor.gov_introduction-investing_getting-started_working-investment-professional_investment-advisers",
+      "sha256": "ffda7445ecd73d962912bb3ead41eca63f60c2bd345b4af5908368d646816d38",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/ffda7445ecd73d962912bb3ead41eca63f60c2bd345b4af5908368d646816d38/www.investor.gov_introduction-investing_getting-started_working-investment-professional_investment-advisers"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/55da2b2c1ddf24be8c7e3b67f360c0da0adfc17dfe0f9968a5836756fac10ed3/www.investor.gov_introduction-investing_investing-basics_glossary_form-adv",
+      "sha256": "55da2b2c1ddf24be8c7e3b67f360c0da0adfc17dfe0f9968a5836756fac10ed3",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/55da2b2c1ddf24be8c7e3b67f360c0da0adfc17dfe0f9968a5836756fac10ed3/www.investor.gov_introduction-investing_investing-basics_glossary_form-adv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/7130d5ef7c6566807b7fed84fc2eb5360a88a8d0d55db936e360064e8a0192f9/www.irs.gov_retirement-plans_plan-participant-employee_rollovers-of-retirement-plan-and-ira-distributions",
+      "sha256": "7130d5ef7c6566807b7fed84fc2eb5360a88a8d0d55db936e360064e8a0192f9",
+      "checkedAt": "2026-11-10",
+      "refreshWhen": "rule, form or page change at the cited body",
+      "scope": "primary-source capture used by the approved briefs",
+      "originPath": "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/blobs/7130d5ef7c6566807b7fed84fc2eb5360a88a8d0d55db936e360064e8a0192f9/www.irs.gov_retirement-plans_plan-participant-employee_rollovers-of-retirement-plan-and-ira-distributions"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "findings": [
+    {
+      "id": "phase4-advisory-a",
+      "status": "open",
+      "evidence": "Round 1 FAIL findings resolved in revision 2; round 2 PASS (chart-review.json)."
+    },
+    {
+      "id": "phase4-advisory-b",
+      "status": "open",
+      "evidence": "Chart review: Clayton excerpt verified only for the duty of care/loyalty and Regulation Best Interest best-interest quotes; do not rely on the four component obligations."
+    },
+    {
+      "id": "phase4-advisory-c",
+      "status": "open",
+      "evidence": "A4 must not restate the flat-fee vs AUM comparison; A1 must not conflict with the worth-it H2 or restate what-is-a-robo-advisor; A3 must not be 
