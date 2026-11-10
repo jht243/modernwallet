@@ -62,6 +62,9 @@ def announce(root,path):
  gaps=publication_gaps(root,path.stem)
  if gaps and not repairs:
   print('RESUME ORIGINAL PUBLICATION PROOF, no discovery/chart/generation restart. Run competitor-handoff.py publication-plan --out NEW_INTERNAL_DIRECTORY/plan.json to select each actual LAST journal decision, never an earlier batch round. Capture/compare its exact live output and record-deployment. Use deployment-evidence.py --expected-commit FULL_PUBLICATION_SHA --out NEW_HOST_PROOF.json with a long Bash timeout: this reads actual build provenance without a Render key. No connector/key permission is needed. On substantive post-review drift, retain newer source bytes/diffs and restore only the exact affected reviewed route, preserving unrelated work and explicit holds. Never roll back a whole shared data file. Use only an original remaining audit slot where genuinely needed; no extra round or reset. An HTTP 200 is insufficient. '+json.dumps([{k:r[k] for k in ('route','status','remainingReviews')} for r in gaps]))
+  eligible=[row['route'] for row in gaps if row['status']=='needs-fix' and row['remainingReviews']>0]
+  if eligible:
+   print('Complete these eligible original audit slots FIRST, before working on or reporting any held siblings: '+json.dumps(eligible)+'. MAIN must seal the current handoff, dispatch the real independent AUDIT worker now and finish its original remaining round. A different route reaching its ceiling or drifting is not a hold on these routes. Preserve any documented owner-approved corrections. Keep a real historical override distinct from exact reviewed publication.')
   return
  if repairs:
   print('RESUME EXISTING PENDING AUDIT, even if the URL is already live or the old ledger says complete. Do not rewrite content, redo chart/discovery or reset any review counter. Restore immutable prior dependencies through the normal durable backend, capture to a new immutable output, use content-review-policy.py repair-pending only for an actually corrupt pending capture, and have a real independent reviewer complete this SAME numbered slot with its actual verdict. A reservation or unrecorded reading cannot release a changed page. First call content-review-durable.py restore for the exact canonical origin/route; keep the current content unchanged. For an overwritten capture, retain the actual auditor error report, capture the exact current page to a NEW output, call repair-pending once with the actual independent reviewer identity, then record that real reviewer result using the returned admission (not another reserve/round). Reuse the saved auditor where available. Complete exact live verification and retain the true repair/error history. '+json.dumps(repairs))
@@ -149,7 +152,9 @@ def publication_plan(root,out):
   else:
    admission=read(policy.artifact(root,row['admission']));snapshot=policy.artifact(root,admission['snapshot']);review=policy.artifact(root,row['report'])
    key=sha(canonical({'route':row['route'],'admission':row['admission'],'report':row['report']}))[:20]
-   projected=policy.project(root,snapshot,review,[row['route']],out.parent/(key+'-approved.json'),out.parent/(key+'-review.json'))
+   matches=[route['path'] for route in read(snapshot)['routes'] if route['path'].rstrip('/')==row['route'].rstrip('/')]
+   require(len(matches)==1,'Route must uniquely match the admitted snapshot: '+row['route'])
+   projected=policy.project(root,snapshot,review,matches,out.parent/(key+'-approved.json'),out.parent/(key+'-review.json'))
    item.update(next='exact-live-compare-and-record-deployment',**projected)
   result['routes'].append(item)
  save(out,canonical(result));return result
