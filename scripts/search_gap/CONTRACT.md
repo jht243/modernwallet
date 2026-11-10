@@ -63,3 +63,5 @@ A verifiedContinuation on the current server job names still-outstanding product
 When the latest eligible round produced multiple exact approval projections, keep each original snapshot/review pair intact. Use the rendered helper to check each projected preview before deployment. After deployment, capture and compare each matching live manifest. Supply `completion.rendered` as an array of the native approved/review/live objects (or the original single object). Together they must cover all changed routes without overlap. Resume from an audit-pass or release-form checkpoint at this step and retain all original findings and counters. Full finish follows live verification.
 
 Validated finish or verified empty intake ends this invocation. Report that outcome once. Later searches remain queued for the next schedule. Do not start a second job or generate a new owner ID to harvest again.
+
+An active-lease response names the original job and the expiry returned by the server. Record that response once and end the invocation. No extra database lookup, manual retry, paid provider check or worker dispatch is needed. Preserve the lease owner.

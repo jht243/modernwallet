@@ -1698,6 +1698,8 @@ def cmd_preflight(a) -> int:
             print(f"[content_gen] {m:22} OK  key={name}(…{key[-4:]}) replied={r['text'].strip()[:12]!r}")
             record(r, kind="preflight")   # a real billable call on every routine run — never invisible
             usable.append(m)
+            if not getattr(a, "all_models", False):
+                break
         except Exception as e:  # noqa: BLE001
             print(f"[content_gen] {m:22} FAIL — {str(e)[:160]}")
     if not usable:
@@ -2146,7 +2148,8 @@ def cmd_usage(a) -> int:
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("preflight")
+    sub.add_parser("preflight").add_argument("--all-models", action="store_true",
+        help="Also probe standby providers for an explicit diagnostic")
     u = sub.add_parser("usage", help="per-caller spend from the usage ledger")
     u.add_argument("--log", default="", help="ledger path (default: the run's own)")
     u.add_argument("--since", default="", help="ISO date prefix, e.g. 2026-09-07")

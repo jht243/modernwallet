@@ -39,12 +39,12 @@ Keys: `GEMINI_API_KEY` (or `GEMINI_ACCESS_TOKEN`), `OPENAI_API_KEY` (site-scoped
 their prompt carries an inline key block, and the routine `export`s those values before
 calling the generator — the same mechanism the DataForSEO / humanize keys use.
 
-## Step 0 — preflight ONCE per run
+## Check the writer once when a reviewed job is ready to write
 
 ```bash
 python3 scripts/lib/content_gen.py preflight
 ```
-Verifies every model in the chain has a key and answers. A failing preflight STOPS the phase.
+Use this check only for an actual writing step, after its existing chart and evidence requirements are satisfied. Empty intakes, busy workers, and jobs resuming at audit or publication skip the paid writer probe. Check providers in configured order and stop at the first working model. If none work, preserve the job and report the writer failure. An explicit `preflight --all-models` diagnostic checks standby providers too.
 
 ## Testing-format decision
 

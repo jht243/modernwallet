@@ -20,6 +20,19 @@ read=native.read
 digest=native.digest
 require=native.require
 
+class BusyJob(ValueError):
+    def __init__(self, job):
+        super().__init__('Another search run holds the active job lease; do not duplicate it')
+        self.run_id = job.get('runId')
+        self.retry_after = job.get('leaseUntil')
+
+    def result(self):
+        return {'ok': False, 'status': 'failure', 'reason': 'active-lease',
+                'runId': self.run_id, 'leaseUntil': self.retry_after,
+                'error': str(self),
+                'nextAction': 'Record the busy result once and end this invocation. The current owner continues. Use the next scheduled invocation after lease expiry if unfinished.'}
+
+
 class Store(native.Store):
     def request(self,path,method='GET',body=None):
         headers={'apikey':self.key,'Authorization':'Bearer '+self.key,'Content-Type':'application/json','Prefer':'return=representation'}
@@ -62,7 +75,8 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
         if job['status']=='refresh':
             require(refresh_attempt<2,'Intake changed repeatedly; retain demand and retry')
             return intake(site,store,output,owner,refresh_attempt+1)
-        require(job['status']!='busy','Another search run holds the active job lease; do not duplicate it')
+        if job['status'] == 'busy':
+            raise BusyJob(job)
         checkpoints=[];resumed=False
         if job['status']=='claimed':
             raw=job['packetText'];require(hashlib.sha256(raw.encode()).hexdigest()==job['packetSha256'],'Saved intake bytes changed')
@@ -466,4 +480,5 @@ def main():
     print(json.dumps(result,ensure_ascii=False));return 0 if result.get('ok',True) else 1
 if __name__=='__main__':
     try:sys.exit(main())
+    except BusyJob as error:print(json.dumps(error.result()));sys.exit(1)
     except Exception as error:print(json.dumps({'ok':False,'status':'failure','error':type(error).__name__+': '+str(error)}));sys.exit(1)
