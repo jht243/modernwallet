@@ -359,6 +359,45 @@ def generation(root, plan, review, packet, slug, section=False):
     require(slug == expected or (section and slug.startswith(expected + '--')), 'Writer slug differs from analysis route')
 
 
+def analysis_render_pair(root, packet, review):
+    snapshot_ref = review.get('renderedSnapshot')
+    snapshot = read(artifact(root, snapshot_ref))
+    rendered = read(artifact(root, review.get('renderedReview')))
+    rows = rendered.get('routes', [])
+    route = packet['route'].rstrip('/') or '/'
+    matches = [r for r in rows if (r['path'].rstrip('/') or '/') == route]
+    if (rendered.get('approvalProjection') or len(matches) != 1 or not matches[0].get('reviewBudget')
+            or not any(not r.get('reviewBudget') for r in rows)
+            or not (root/'.claude/content-review-policy.json').is_file()):
+        return snapshot, rendered
+    # A mixed render can contain a budgeted article and link-only sibling checks.
+    # Bind this article's analysis to its actual journal record, without changing
+    # the signed analysis, its underlying full capture or any sibling's verdict.
+    row = matches[0]
+    require(rendered.get('snapshotSha256') == snapshot.get('snapshotSha256')
+            and rendered.get('reviewer') == review.get('reviewer'), 'Mixed review identity changed')
+    spec = importlib.util.spec_from_file_location('analysis_budget', root/'.claude/tools/content-review-policy.py')
+    policy = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(policy)
+    admission = read(policy.artifact(root, row['reviewBudget']))
+    with policy.Journal(root, snapshot['manifest']['canonicalBase'], row['path']) as journal:
+        cycle = next((c for c in journal.cycles if c['cycleId'] == admission['cycleId']), None)
+        require(cycle and cycle['rounds'], 'Missing original review cycle')
+        final = cycle['rounds'][-1]
+        require(final['status'] == 'complete' and final['admission'] == row['reviewBudget']
+                and final.get('report'), 'Only the latest recorded route judgment can be projected')
+        authority_ref = final['report']
+        authority = read(policy.artifact(root, authority_ref))
+        require(final['reportObjectSha256'] == policy.digest(authority)
+                and authority.get('reviewer') == rendered.get('reviewer')
+                and authority.get('snapshotSha256') == rendered.get('snapshotSha256')
+                and [item for item in authority['routes'] if item['path'] == row['path']] == [row],
+                'Combined route evidence differs from the original recorded independent review')
+    scoped, result = policy.copy_subset(snapshot, authority, {row['path']}, policy.capped_release(root, snapshot))
+    result['approvalProjection'] = {'snapshot': snapshot_ref, 'review': authority_ref}
+    return scoped, result
+
+
 def audit_analysis(root, packet, review, replay):
     analysis(root, packet)
     at_limit = False
@@ -366,7 +405,7 @@ def audit_analysis(root, packet, review, replay):
         result = read(artifact(root, review['renderedReview']))
         row = next((item for item in result.get('routes', []) if item.get('path', '').rstrip('/') == packet['route'].rstrip('/')), {})
         if row.get('verdict') == 'FAIL':
-            snapshot = read(artifact(root, review.get('renderedSnapshot')))
+            snapshot, result = analysis_render_pair(root, packet, review)
             spec = importlib.util.spec_from_file_location('mindmap_release_renderer', local(root, '.claude/tools/rendered-audit.py'))
             renderer = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(renderer)
@@ -388,8 +427,7 @@ def audit_analysis(root, packet, review, replay):
         c = review.get(key, {})
         require(c.get('status') in (('PASS','FAIL') if at_limit and key!='localExclusions' else ('PASS',)), 'Missing independent analysis check: ' + key)
         content(c.get('evidence'), key + ' evidence')
-    snapshot = read(artifact(root, review.get('renderedSnapshot')))
-    rendered = read(artifact(root, review.get('renderedReview')))
+    snapshot, rendered = analysis_render_pair(root, packet, review)
     module_path = local(root, '.claude/tools/rendered-audit.py')
     spec = importlib.util.spec_from_file_location('mindmap_rendered_audit', module_path)
     renderer = importlib.util.module_from_spec(spec)
