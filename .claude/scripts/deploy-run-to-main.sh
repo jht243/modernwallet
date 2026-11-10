@@ -158,6 +158,9 @@ rebase_or_regen() {
 # layer3labs: a merged-entry duplicate-key break blocked all deploys 05:05-12:08 UTC).
 PRECHECK="$(git rev-parse --show-toplevel 2>/dev/null || pwd)/.claude/scripts/deploy-precheck.sh"
 run_precheck() {
+  if [ -f ".claude/content-review-policy.json" ]; then
+    python3 .claude/tools/final-reviewed-source.py "$run_base" || return 1
+  fi
   [ -f "$PRECHECK" ] || return 0
   local changed
   changed="$(git diff --name-only --diff-filter=ACMR origin/main HEAD)"
