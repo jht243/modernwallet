@@ -125,9 +125,38 @@ def artifact_path(value):
     require(path.resolve().is_relative_to(Path.cwd().resolve()/'reports'),'Artifact symlink leaves reports')
     return path
 
+def completion_checkpoint_paths(paths):
+    # Finish reopens the reviewed chart by path. Save its exact bytes in the
+    # same durable checkpoint even when a caller names only the completion.
+    selected = dict.fromkeys(map(str, paths))
+    for value in tuple(selected):
+        path = artifact_path(value)
+        if path.suffix != '.json':
+            continue
+        if path.stat().st_size > 2_000_000:
+            raise ValueError("Artifact too large; use a reviewed private Git artifact reference")
+        try:
+            document = read(path)
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            continue  # Opaque artifacts still go through the normal credential and size checks.
+        if not isinstance(document, dict) or not {'runId', 'intakeSha256', 'decisions', 'chart', 'chartReview'} <= document.keys():
+            continue
+        chart = artifact_path(document['chart'])
+        review_path = artifact_path(document['chartReview'])
+        review = read(review_path)
+        require(digest(chart) == review.get('chartSha256'), 'Checkpoint requires the exact independently reviewed chart bytes')
+        require(document['intakeSha256'] == review.get('intakeSha256'), 'Completion and chart receipt belong to different intakes')
+        selected[str(chart)] = None
+        selected[str(review_path)] = None
+        for key in ('manifest', 'review'):
+            if isinstance(review.get(key), str):
+                selected[str(artifact_path(review[key]))] = None
+    return selected
+
+
 def capture_artifacts(paths):
     artifacts=[]
-    for value in paths:
+    for value in completion_checkpoint_paths(paths):
         path=artifact_path(value);raw=path.read_bytes();require(len(raw)<=2_000_000,'Artifact too large; use a reviewed private Git artifact reference')
         for key,secret in os.environ.items():
             if any(x in key.upper() for x in ('KEY','TOKEN','PASSWORD','SECRET','AUTH','B64','DATABASE_URL')) and len(secret)>=16:

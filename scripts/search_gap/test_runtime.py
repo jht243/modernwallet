@@ -42,6 +42,18 @@ class RuntimeRecovery(unittest.TestCase):
     def test_checkpoint_round_trip_preserves_exact_bytes(self):
         Path('reports').mkdir();p=Path('reports/audit.json');raw=b'{"findings":["FAIL"], "reworks":2}\n';p.write_bytes(raw)
         cp=worker.capture_artifacts([str(p)]);p.unlink();worker.restore_artifacts([{'artifacts':cp}]);self.assertEqual(p.read_bytes(),raw)
+    def test_completion_only_checkpoint_recovers_bound_chart_and_receipt(self):
+        root = Path('reports'); root.mkdir()
+        chart = root/'chart.md'; chart.write_bytes(b'Exact original chart.\n')
+        receipt = root/'decision.json'; receipt.write_text(json.dumps({'chartSha256': worker.digest(chart), 'intakeSha256': 'fixture'}))
+        completion = root/'completion.json'; completion.write_text(json.dumps({'runId':'fixture-run','intakeSha256':'fixture','decisions':[], 'chart':str(chart), 'chartReview':str(receipt)}))
+        stored = worker.capture_artifacts([str(completion)])
+        chart.unlink(); receipt.unlink(); worker.restore_artifacts([{'artifacts':stored}])
+        self.assertEqual(chart.read_bytes(), b'Exact original chart.\n')
+        chart.write_bytes(b'Changed chart')
+        with self.assertRaisesRegex(ValueError,'exact independently reviewed'):
+            worker.capture_artifacts([str(completion)])
+
     def test_checkpoint_refuses_source_and_path_escape(self):
         for p in ['src/page.md','reports/../../.env','/tmp/token']:
             with self.assertRaises(ValueError):worker.artifact_path(p)
