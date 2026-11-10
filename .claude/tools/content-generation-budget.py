@@ -54,7 +54,12 @@ def claim_limit(root,args,text):
         return None
     _,_,row=selected;policy=load_policy(root)
     level=policy.profile(root,{'text':text},row.get('claimCategories',[]),row.get('reviewProfile'))
-    return policy.audit_limit(policy.policy(root), level, row.get('riskAssessment'))
+    assessment = row.get('riskAssessment') or {}
+    # Standby claim-check passes cannot use an assessment from a different draft.
+    current_text = policy.claim_text({'text': text})
+    if assessment.get('textSha256') != policy.sha(current_text.encode()):
+        assessment = None
+    return policy.audit_limit(policy.policy(root), level, assessment)
 
 def reserve(root,args,operation):
     selected=scope(root,args)
