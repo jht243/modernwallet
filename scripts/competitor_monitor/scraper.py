@@ -447,7 +447,7 @@ def fetch_page_meta(url: str, boiler: set[str] | None = None) -> tuple[str, str,
     return title, h, outline, io
 
 
-def detect(roster: list[dict], ledger: dict, today: str, only: str | None) -> tuple[list[Candidate], dict, list[str], list[dict]]:
+def detect(roster: list[dict], ledger: dict, today: str, only: str | None, observations=None) -> tuple[list[Candidate], dict, list[str], list[dict]]:
     candidates: list[Candidate] = []
     fetch_failures: list[str] = []
     skipped_off_niche: list[dict] = []
@@ -468,6 +468,8 @@ def detect(roster: list[dict], ledger: dict, today: str, only: str | None) -> tu
 
         print(f"\n== {name} ({key}) ==")
         live = collect_competitor_urls(comp)
+        if observations is not None and live:
+            observations[key] = {"roster": comp, "urls": sorted(live)}
         print(f"  sitemap URLs: {len(live)}  | ledger pages: {len(pages)}  | first_run: {first_run}")
 
         if not live and first_run:
@@ -606,15 +608,33 @@ def detect(roster: list[dict], ledger: dict, today: str, only: str | None) -> tu
 
 
 # ── record ────────────────────────────────────────────────────────────────────
-def record(ledger: dict, dispositions: dict, today: str) -> int:
+def record(ledger: dict, dispositions: dict, today: str, frozen=None) -> int:
     """dispositions = {url: {"disposition": "...", "our_url": "..."}}.
     disposition ∈ published | enriched | skipped-duplicate | skipped-low-value | fetch-failed
     """
+    prior_versions = set()
+    if frozen is not None:
+        selected = frozen['candidates']
+        if {row['url'] for row in selected} != set(dispositions):
+            raise ValueError('Record the exact frozen intake, including every selected URL')
+        observed = frozen['generated'][:10]
+        for row in selected:
+            pages = _comp_entry(ledger,row['competitor'])['pages']
+            entry = pages.setdefault(row['url'],{'first_seen':observed})
+            # Preserve a newly observed material change for the next harvest.
+            if (entry.get('last_seen','') > observed and entry.get('content_hash') and
+                    entry['content_hash'] != row.get('content_hash')):
+                version=row.get('content_hash') or row.get('lastmod') or observed
+                entry.setdefault('prior_dispositions',{})[version] = {**dispositions[row['url']],'acted_date':today}
+                prior_versions.add(row['url'])
+                continue
+            entry['last_seen'] = max(observed,entry.get('last_seen',''))
+            entry.update({key:row[key] for key in ('title','content_hash','lastmod','kind','outline','tool_io') if key in row})
     acted_set = {"published", "enriched"}
-    n = 0
+    n = len(prior_versions)
     for comp in ledger.get("competitors", {}).values():
         for u, rec in comp.get("pages", {}).items():
-            if u in dispositions:
+            if u in dispositions and u not in prior_versions:
                 d = dispositions[u]
                 rec["status"] = "done"
                 rec["disposition"] = d.get("disposition", "skipped-low-value")
@@ -622,6 +642,8 @@ def record(ledger: dict, dispositions: dict, today: str) -> int:
                 rec["our_url"] = d.get("our_url", "")
                 rec["acted_date"] = today
                 n += 1
+    if frozen is not None and n != len(dispositions):
+        raise ValueError(f"Expected {len(dispositions)} unique dispositions; recorded {n}")
     return n
 
 
@@ -631,7 +653,8 @@ def cmd_detect(args) -> int:
     today = args.today or date.today().isoformat()
     roster = load_roster()
     ledger = load_ledger()
-    candidates, ledger, failures, off_niche = detect(roster, ledger, today, args.only)
+    observations = {}
+    candidates, ledger, failures, off_niche = detect(roster, ledger, today, args.only, observations)
 
     payload = {
         "generated": today,
@@ -662,6 +685,12 @@ def cmd_detect(args) -> int:
             print(f"(--dry-run: would have written {args.out})")
         return 0
 
+    if candidates and observations:
+        raw=json.dumps({'date':today,'domains':observations},sort_keys=True,separators=(',',':')).encode()
+        digest=hashlib.sha256(raw).hexdigest()
+        capture=LEDGER_FILE.parent/'harvests'/(digest+'.json')
+        capture.parent.mkdir(parents=True,exist_ok=True);capture.write_bytes(raw)
+        payload['baselineObservation']={'path':str(capture.relative_to(ROOT)),'sha256':digest}
     save_ledger(ledger)
     print(f"\nledger written: {LEDGER_FILE.relative_to(ROOT)}")
     out_path = Path(args.out) if args.out else (LEDGER_FILE.parent / f"candidates-{today}.json")
@@ -677,7 +706,8 @@ def cmd_record(args) -> int:
     if isinstance(dispositions, dict) and "dispositions" in dispositions:
         dispositions = dispositions["dispositions"]
     ledger = load_ledger()
-    n = record(ledger, dispositions, today)
+    h=workflow_handoff();intake=h.active(ROOT)
+    n = record(ledger, dispositions, today, h.validate_source(intake) if intake else None)
     if not args.dry_run:
         save_ledger(ledger)
     print(f"recorded {n} dispositions into ledger" + (" (dry-run, not written)" if args.dry_run else ""))
@@ -708,11 +738,20 @@ def cmd_baseline(args) -> int:
     today = args.today or date.today().isoformat()
     roster = load_roster()
     rows = []
+    h=workflow_handoff();active=h.active(ROOT);observations={}
+    if active:
+        ref=h.validate_source(active).get('baselineObservation')
+        if ref:
+            raw=h.inside(ROOT,ref['path']).read_bytes()
+            if h.sha(raw)!=ref['sha256']:raise ValueError('Original harvest observation changed')
+            snapshot=json.loads(raw)
+            if snapshot['date']==today:observations=snapshot['domains']
     for c in roster:
         if args.only and args.only.lower() not in domain_key(c["domain"]):
             continue
         try:
-            urls = collect_competitor_urls(c)
+            observed=observations.get(domain_key(c['domain']),{})
+            urls=observed['urls'] if observed.get('roster')==c else collect_competitor_urls(c)
         except Exception as e:
             print(f"  ! {c['domain']}: ERROR {e}")
             urls = {}

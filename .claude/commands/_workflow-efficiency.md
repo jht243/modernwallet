@@ -1,3 +1,12 @@
+
+<!-- fleet-resume-release-20261109 -->
+Owner-authorized fleet update, 2026-11-09. Apply the installed shared tools through this site's native workflow. Resume the same canonical job, source intake, chart approval, candidate and actual review history after retries. Pass the current task and open findings, retain retrievable history, and reuse unchanged rules only with actual continued access and understanding. Join each real worker's terminal result once. Use eligible correction scope for changed sections; an unchanged reviewed render needs publication checks, without another writing or editorial pass.
+
+Use this site's existing factual risk floor and 1/2/3 independent review ceiling. After its final allowed audit, automatically publish the exact latest reviewed candidate, retaining FAIL findings honestly as audit-limit release. Preserve full SEO, mechanical build/render/live/link checks, exclusions, ownership, required professional review and explicit client promises/holds. An editorial FAIL at the ceiling must not create another pass or a manual merge gate. Publication or reporting recovery retains the original reviews and counters.
+
+For competitor monitors, run the native detect/resume entry first. The installed competitor-handoff helper restores saved work before fresh discovery. For completed recovered reviews, use verify-preview against the current local preview; identical previews are removed, changed output retains evidence for targeted review. Use the native ledger adapter's batch --dispositions path to record every selected URL/version; preserve newer observations separately. Applicable sitemap-based monitors reuse the matching same-day harvest for their baseline. Ledger-only baselines already reuse collected data. Use the existing automatic publication/reporting paths and preserve schedules. No additional content, approval gate or paid test is introduced.
+<!-- /fleet-resume-release-20261109 -->
+
 # Mindmap efficiency, owner rollout 2026-11-09
 
 Apply these optimizations inside the existing workflow and native publication path. Keep each site's instructions, authorizations, exclusions, professional-review requirements and release exceptions.

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Let a native parent pause for its own finite worker; never approve output."""
-import hashlib,json,os,sys
+import hashlib,json,os,sys,importlib.util
+from pathlib import Path
 
 def worker_tag(payload=None):
  sid=os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID') or (payload or {}).get('session_id')
@@ -14,14 +15,25 @@ def running(payload):
             and isinstance(t.get('description'),str) and tag in t['description'] for t in tasks)
 
 def bind(payload):
- if payload.get('tool_name')!='Agent':return
+ if payload.get('tool_name') not in ('Agent','Task'):return
+ root=Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve()
+ helper=root/'.claude/tools/competitor-handoff.py'
+ inline=False
+ if helper.is_file() and worker_tag(payload):
+  spec=importlib.util.spec_from_file_location('competitor_release_lane',helper)
+  monitor=importlib.util.module_from_spec(spec);spec.loader.exec_module(monitor)
+  inline=monitor.active(root,payload) is not None
+  try:monitor.guard_recovered_stage(root,payload)
+  except ValueError as error:
+   print(str(error),file=sys.stderr);raise SystemExit(2)
  value=payload.get('tool_input',{});tag=worker_tag(payload)
  if not tag or not isinstance(value,dict):return
  description=value.get('description')
- if not isinstance(description,str) or not description.strip() or tag in description:return
- # Metadata only: do not emit a permission decision or change model, prompt,
- # blocking mode, resume identity, or any native security/approval field.
- updated=dict(value,description=description+' '+tag)
+ if not isinstance(description,str) or not description.strip():return
+ # Competitor jobs join once in the foreground. Keep permission, model and worker identity.
+ updated=dict(value,description=description if tag in description else description+' '+tag)
+ if inline:updated['run_in_background']=False
+ if updated==value:return
  print(json.dumps({'hookSpecificOutput':{'hookEventName':'PreToolUse','updatedInput':updated}}))
 
 if __name__=='__main__':

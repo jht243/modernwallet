@@ -212,7 +212,7 @@ def validate_manifest(manifest):
             target=next(t for t in routes if t['path']==p)
             require(target.get('canonicalPath',p)==p,'Canonical target must be self-canonical; chains and cycles are invalid')
 
-def capture(manifest, base, out, dom_dir=None):
+def capture(manifest, base, out, dom_dir=None, comparison_only=False):
     validate_manifest(manifest)
     folder=Path(out).with_suffix(''); folder.mkdir(parents=True,exist_ok=True)
     def one(route):
@@ -231,14 +231,21 @@ def capture(manifest, base, out, dom_dir=None):
         return result
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool: results=list(pool.map(one,manifest['routes']))
     payload={'capturedAt':now(),'baseUrl':base,'domDir':dom_dir,'manifest':manifest,'routes':results}
-    review_policy=content_review_policy()
-    if review_policy is not None and manifest.get('workflowKind')=='mindmap-pass':
-        payload['contentReviewPolicy']={'version':review_policy.VERSION,'sha256':review_policy.policy_hash(Path(__file__).resolve().parents[2])}
-        correction=content_correction_scope()
-        if correction is not None:
-            payload['correctionBoundary']=correction.boundary(Path(__file__).resolve().parents[2],folder/'correction-boundary.json',manifest)
+    if not comparison_only: attach_review_evidence(payload,folder)
     payload['snapshotSha256']=digest(payload); save(out,payload)
     return payload
+
+
+def attach_review_evidence(payload,folder):
+    manifest=payload['manifest']
+    review_policy=globals().get('content_review_policy',lambda:None)()
+    if review_policy is not None and manifest.get('workflowKind')=='mindmap-pass':
+        root=Path(__file__).resolve().parents[2]
+        payload['contentReviewPolicy']={'version':review_policy.VERSION,'sha256':review_policy.policy_hash(root)}
+        correction=globals().get('content_correction_scope',lambda:None)()
+        if correction is not None:
+            payload['correctionBoundary']=correction.boundary(root,folder/'correction-boundary.json',manifest)
+
 
 def valid_snapshot(s):
     unsigned={k:v for k,v in s.items() if k!='snapshotSha256'}
@@ -267,7 +274,17 @@ def review_check(s, review):
     require(review.get('snapshotSha256')==s['snapshotSha256'],'Review is for a different snapshot')
     rows=review.get('routes',[]); by_path={r['path']:r for r in rows}
     require(len(rows)==len(by_path)==len(s['routes']) and set(by_path)=={r['path'] for r in s['routes']},'Review must cover every route exactly once')
+    root = Path(__file__).resolve().parents[2]
+    policy = globals().get('content_review_policy',lambda:None)()
+    released = set()
+    if any(row.get('verdict')=='FAIL' for row in rows) and policy and policy.capped_release(root,s):
+        require(s.get('contentReviewPolicy') and policy.check_rendered(root,s,review,force=True),
+                'Release requires a recorded final independent audit')
+        released = {row['path'] for row in rows if row.get('verdict')=='FAIL'}
     for r in s['routes']:
+        if r['path'] in released:
+            require(by_path[r['path']].get('fingerprint')==r['fingerprint'],'Final candidate changed')
+            continue
         rr=by_path[r['path']]
         require(rr.get('fingerprint')==r['fingerprint'] and rr.get('verdict')=='PASS',r['path']+': unapproved render')
         checks=rr.get('checks',{})
@@ -277,9 +294,9 @@ def review_check(s, review):
             require(check.get('status') in (['PASS'] if key in REQUIRED else ['PASS','NA']),r['path']+': failed '+key)
             require(isinstance(check.get('evidence'),str) and len(check['evidence'].strip())>=20,r['path']+': missing evidence for '+key)
     # Portable Mindmap budgets are separate from native client/upsell contracts.
-    correction=content_correction_scope()
+    correction=globals().get('content_correction_scope',lambda:None)()
     if correction is not None: correction.validate(Path(__file__).resolve().parents[2],s,review)
-    review_policy=content_review_policy()
+    review_policy=globals().get('content_review_policy',lambda:None)()
     if review_policy is not None:
         review_policy.check_rendered(Path(__file__).resolve().parents[2],s,review)
 
@@ -294,6 +311,14 @@ def compare(approved, live, review, require_live=True):
 def record(s, approved, review, commit, host, ledger):
     compare(approved,s,review)
     require(re.fullmatch('[0-9a-f]{40}',commit) is not None and host.get('commit')==commit and host.get('status')=='live' and host.get('evidenceUrl') and host.get('verifiedAt'),'Verified host deployment evidence required')
+    if review.get('jobId','').startswith('competitor-'):
+        from importlib.util import module_from_spec,spec_from_file_location
+        spec=spec_from_file_location('competitor_release_checks',Path(__file__).with_name('competitor-release-checks.py'))
+        checks=module_from_spec(spec);spec.loader.exec_module(checks)
+        output=Path(ledger).parent/'competitor-monitor'/'release-checks'/(s['snapshotSha256']+'.json')
+        result=checks.verify(s,output)
+        print('Release checks:',str(output),{k:sum(x['result']==k for x in result['links'].values()) for k in ('reachable','broken','unconfirmed')},
+              'declared exclusion matches:',sum(len(row['matches']) for row in result['renderedExclusions'].values()))
     path=Path(ledger); prior=[json.loads(l) for l in path.read_text().splitlines() if l.strip()] if path.exists() else []
     output=[]
     for route in s['manifest']['routes']:
@@ -314,7 +339,7 @@ def record(s, approved, review, commit, host, ledger):
     path.parent.mkdir(parents=True,exist_ok=True)
     with path.open('a') as f:
         for entry in output: f.write(json.dumps(entry,sort_keys=True)+'\n')
-    review_policy=content_review_policy()
+    review_policy=globals().get('content_review_policy',lambda:None)()
     if review_policy is not None: review_policy.mark_published(Path(__file__).resolve().parents[2],approved,review,commit,host)
     return len(output)
 

@@ -252,7 +252,7 @@ class Journal:
                 item.update(data,status='complete');self.cycle['profile']=data['profile']
                 self.cycle['status']='passed' if data['verdict']=='PASS' else 'needs-fix'
             elif kind == 'published':
-                require(self.cycle and self.cycle['status']=='passed' and data['cycleId']==self.cycle['cycleId'],'Only a passing reviewed cycle can close')
+                require(self.cycle and (self.cycle['status']=='passed' or (data.get('release')=='audit-limit' and exhausted(self.cycle))) and data['cycleId']==self.cycle['cycleId'],'Only a passing reviewed cycle can close')
                 self.cycle['status']='published'
         return self
 
@@ -345,13 +345,15 @@ def decision(root, snapshot, review, rr):
     return selected
 
 
-def pass_evidence(root, snapshot, rr, selected, local_module=None):
+def pass_evidence(root, snapshot, rr, selected, local_module=None, retain_fail=False):
     checks={'wholePageCoherence','sourceSupport','testingAndAttribution','datesAndSchema','linksAndIndexability','renderedLayout','scopeAndExclusions'}
     supplied=rr.get('checks',{})
-    renderer_module().testing_attribution_check(route_in(snapshot,rr['path'])[0]['semantic'],supplied)
+    if not retain_fail:
+        renderer_module().testing_attribution_check(route_in(snapshot,rr['path'])[0]['semantic'],supplied)
     require(set(supplied)==checks,'Missing independent rendered/SEO checks')
     for name,value in supplied.items():
         allowed=['PASS','NA'] if name in ['testingAndAttribution','scopeAndExclusions'] else ['PASS']
+        if retain_fail: allowed = allowed + ['FAIL']
         require(value.get('status') in allowed and len(value.get('evidence','').strip())>=20,'Missing independent rendered evidence: '+name)
     required=FACTS[selected]+['riskClassification','seoQuality']
     if local_module is not None or (root/'.claude/workflow-policy.local.json').is_file():required+=['instructionUnderstanding']
@@ -359,9 +361,19 @@ def pass_evidence(root, snapshot, rr, selected, local_module=None):
     _,spec=route_in(snapshot,rr['path'])
     for name in required:
         value=facts[name];allowed=['PASS','NA'] if name=='professionalReview' and not spec.get('professionalReviewRequired') else ['PASS']
+        if retain_fail: allowed = allowed + ['FAIL']
         require(value.get('status') in allowed and len(value.get('evidence','').strip())>=40,'Missing real factual-review evidence: '+name)
         if name=='professionalReview' and spec.get('professionalReviewRequired'):artifact(root,value.get('artifact'))
 
+
+def capped_release(root,snapshot):
+    return ((root/CONFIG).is_file() and policy(root).get('releaseAtAuditLimit') is True
+            and snapshot['manifest'].get('workflowKind')=='mindmap-pass')
+
+def exhausted(cycle):
+    return (len(cycle['rounds']) == LIMITS[cycle['profile']]
+            and cycle['rounds'][-1].get('status') == 'complete'
+            and cycle['rounds'][-1].get('verdict') == 'FAIL')
 
 def projection_source(root, snapshot, review):
     proof=review.get('approvalProjection')
@@ -372,17 +384,17 @@ def projection_source(root, snapshot, review):
     require(original_review.get('snapshotSha256')==original_snapshot.get('snapshotSha256'),'Projection source review changed')
     selected={r['path'] for r in snapshot['routes']}
     require(selected and selected=={r['path'] for r in review['routes']},'Projection route coverage mismatch')
-    expected=copy_subset(original_snapshot,original_review,selected)
+    expected=copy_subset(original_snapshot,original_review,selected,capped_release(root,original_snapshot))
     require(snapshot==expected[0] and {k:v for k,v in review.items() if k!='approvalProjection'}==expected[1],
             'Projection may only retain exact already-passing pages and their actual evidence')
     return original_snapshot,original_review
 
 
-def copy_subset(snapshot, review, selected):
+def copy_subset(snapshot, review, selected, allow_fail=False):
     snapshot=json.loads(json.dumps(snapshot));review=json.loads(json.dumps(review))
     require(selected <= {r['path'] for r in snapshot['routes']},'Cannot add a page through projection')
     source_rows={r['path']:r for r in review['routes']}
-    require(all(source_rows.get(r,{}).get('verdict')=='PASS' for r in selected),'Cannot project a failing page as approved')
+    require(all(source_rows.get(r,{}).get('verdict') in (('PASS','FAIL') if allow_fail else ('PASS',)) for r in selected),'Cannot project a failing page as approved')
     snapshot['manifest']['routes']=[r for r in snapshot['manifest']['routes'] if r['path'] in selected]
     snapshot['routes']=[r for r in snapshot['routes'] if r['path'] in selected]
     snapshot['snapshotSha256']=renderer_module().digest({k:v for k,v in snapshot.items() if k!='snapshotSha256'})
@@ -392,7 +404,7 @@ def copy_subset(snapshot, review, selected):
 
 def project(root, snapshot_path, review_path, routes, out_snapshot, out_review):
     original_snapshot=read(snapshot_path);original_review=read(review_path);valid_snapshot(original_snapshot)
-    snapshot,review=copy_subset(original_snapshot,original_review,set(routes))
+    snapshot,review=copy_subset(original_snapshot,original_review,set(routes),capped_release(root,original_snapshot))
     review['approvalProjection']={'snapshot':reference(root,snapshot_path),'review':reference(root,review_path)}
     check_rendered(root,snapshot,review,force=True)
     save_exact(out_snapshot,snapshot,preserve_order=True);save_exact(out_review,review)
@@ -410,7 +422,8 @@ def record_without_checkpoint(root, report_path):
         require((rr['path'].rstrip('/') or '/')==admission['identity']['route'] and admission['policySha256'] in accepted_policy_hashes(root), 'Review identity/policy changed')
         selected = decision(root,snapshot,report,rr)
         require(rr.get('verdict') in ['PASS','FAIL'], 'Keep the actual audit verdict; no synthetic approval')
-        if rr['verdict']=='PASS':pass_evidence(root,snapshot,rr,selected)
+        if rr['verdict']=='PASS' or (rr['verdict']=='FAIL' and capped_release(root,snapshot) and admission['number']==LIMITS[selected]):
+            pass_evidence(root,snapshot,rr,selected,retain_fail=rr['verdict']=='FAIL')
         with Journal(root,admission['identity']['canonicalBase'],rr['path']) as journal:
             cycle=journal.cycle;require(cycle and cycle['cycleId']==admission['cycleId'], 'Wrong canonical review cycle')
             number=admission['number'];item=cycle['rounds'][number-1]
@@ -468,7 +481,7 @@ def check_rendered(root, snapshot, review, local_module=None, force=False):
     _,authority=projection_source(root,snapshot,review)
     for rr in review['routes']:
         selected=decision(root,snapshot,review,rr)
-        pass_evidence(root,snapshot,rr,selected,local_module)
+        pass_evidence(root,snapshot,rr,selected,local_module,retain_fail=rr.get('verdict')=='FAIL' and capped_release(root,snapshot))
         admission_ref=rr.get('reviewBudget');admission=read(artifact(root,admission_ref))
         require(admission.get('policySha256') in accepted_policy_hashes(root) and admission.get('reviewer')==review['reviewer'] and
                 admission.get('author')==snapshot['manifest']['author'] and admission.get('fingerprint')==rr['fingerprint'],
@@ -478,7 +491,7 @@ def check_rendered(root, snapshot, review, local_module=None, force=False):
             require(cycle and (cycle is journal.cycle or cycle['status']=='published'), 'Missing actual canonical review history')
             require(admission['number']==len(cycle['rounds']) <= LIMITS[cycle['profile']], 'Cannot publish an older round or exceed the shared budget')
             item=cycle['rounds'][-1]
-            require(item['status']=='complete' and item.get('verdict')=='PASS' and item.get('reportObjectSha256')==digest(authority) and
+            require(item['status']=='complete' and (item.get('verdict')=='PASS' or (rr.get('verdict')=='FAIL' and capped_release(root,snapshot) and exhausted(cycle))) and item.get('verdict')==rr['verdict'] and item.get('reportObjectSha256')==digest(authority) and
                     item.get('profile')==selected and item['admission']==admission_ref, 'Record the actual latest independent PASS before publication')
     if local_module is not None:
         # Preserve the site's existing source/application/professional checks.
@@ -491,7 +504,17 @@ def check_rendered(root, snapshot, review, local_module=None, force=False):
             return profiles[text]
         try:
             local_module.profile=classified
-            local_module.rendered_review(root,snapshot,review)
+            if any(r.get('verdict')=='FAIL' for r in review['routes']):
+                require(review.get('workflowPolicySha256')==local_module.policy_hash(root),'Review must bind the current native instruction policy')
+                actors=set()
+                for ref in review.get('instructionApplications',[]):
+                    receipt=local_module.evidence_ref(root,ref)
+                    actors.add(local_module.validate(root,receipt.parent)['actor'])
+                require({snapshot['manifest']['author'],review['reviewer']}<=actors,'Native writer and independent reviewer applications required')
+                local=local_module.policy(root)
+                require(urlsplit(snapshot['manifest']['canonicalBase']).hostname.removeprefix('www.')==urlsplit(local['canonicalBase']).hostname.removeprefix('www.'),'Native canonical site changed')
+            else:
+                local_module.rendered_review(root,snapshot,review)
         finally: local_module.profile=previous
     return True
 
@@ -506,10 +529,10 @@ def mark_published(root, snapshot, review, commit, host):
         admission=read(artifact(root,rr['reviewBudget']))
         with Journal(root,snapshot['manifest']['canonicalBase'],rr['path']) as journal:
             require(journal.cycle and journal.cycle['cycleId']==admission['cycleId'] and
-                    journal.cycle['status'] in ['passed','published'], 'Publish only the actual approved cycle')
+                    (journal.cycle['status'] in ['passed','published'] or (capped_release(root,snapshot) and exhausted(journal.cycle))), 'Publish only the actual approved cycle')
             if journal.cycle['status']=='published': continue
             require(journal.cycle['rounds'][-1].get('reportObjectSha256')==digest(authority), 'Wrong actual published review')
-            journal.append('published',{'cycleId':admission['cycleId'],'commit':commit,'reviewObjectSha256':digest(authority),'verifiedAt':host['verifiedAt']})
+            journal.append('published',{'release':'audit-limit' if rr['verdict']=='FAIL' else 'pass','cycleId':admission['cycleId'],'commit':commit,'reviewObjectSha256':digest(authority),'verifiedAt':host['verifiedAt']})
 
 
 def sources(root, report_path):

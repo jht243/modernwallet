@@ -26,6 +26,7 @@ def restore(root,journal):
   paths=entry['artifacts'];rel=str(journal.path.relative_to(root));require(paths.get(rel)==head,'Durable review identity changed')
   for name,expected in paths.items():
    target=(root/name).resolve();require(root.resolve() in target.parents and name.startswith('reports/'),'Internal review evidence only')
+   if target.is_file() and sha(target.read_bytes())==expected:continue
    raw=module.git(root,'show',revision+':artifacts/'+expected).stdout;require(sha(raw)==expected,'Durable review artifact changed')
    if target.exists():
     current=target.read_bytes()
@@ -62,7 +63,9 @@ def collect(root,journal):
  return paths
 def checkpoint(root,journal,context):
  if context is None or not journal.path.is_file():return
- paths=collect(root,journal);rel=str(journal.path.relative_to(root));head=paths[rel];expected=context['expectedHead']
+ expected=context['expectedHead']
+ if expected and sha(journal.path.read_bytes())==expected:return  # restore already verified this exact archive
+ paths=collect(root,journal);rel=str(journal.path.relative_to(root));head=paths[rel]
  def retain(state):
   entries=state.setdefault('reviewJournals',{});current=entries.get(journal.key,{}).get('head')
   require(current in (expected,head),'Another worker advanced this canonical review; restore its actual history before retrying')

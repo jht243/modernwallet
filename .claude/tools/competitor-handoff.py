@@ -58,6 +58,17 @@ def quality_findings(root,data):
 def announce(root,path):
  data=validate_source(path);point(root,path)
  print('AUTOMATED MINDMAP HANDOFF REQUIRED: '+str(path.relative_to(root))+' sha256='+path.stem)
+ if path.with_suffix('.chart.json').is_file():
+  proof=chart_value(root,path)
+  plan=json.loads(proof['planText']);review=json.loads(proof['reviewText'])
+  validate_chart(root,path,plan,review)
+  print('RESUME APPROVED CHART '+str(path.with_suffix('.chart.json').relative_to(root))+'. Skip harvest, source/keyword discovery, BUILD and chart review. Preserve job, findings and counters.')
+  continuation=recovery_path(root,path)
+  if continuation.exists():
+   hint=read(continuation)
+   print('RESUME SAVED PRODUCTION for '+path.stem+' from '+str(hint.get('workCommit') or hint.get('workBranch') or 'saved evidence')+'. Detect performs the restore. Follow its current AUTOMATIC PRODUCTION RECOVERY result. Archived blocker instructions describe the old checkout; do not dispatch WRITE to refresh a historically verified application or AUDIT to repeat a recorded decision.')
+  else:print('Continue from the recorded chart and existing handoffs at the first unfinished production step.')
+  return
  print('Send every selected candidate, without root filtering, to the existing independent preparation/chart workflow. Complete its approved native production and record every terminal disposition. A next scheduled pass is not a production handoff.')
  print('Use unique chartPath reports/mindmap-pass/'+data['generated'][:10]+'-competitor-'+path.stem[:12]+'.md. Include the exact intake path/hash in evidenceFiles and one candidateDispositions row per original selected URL: candidate=URL, decision, reason, and target for production. Preserve the native max-items cap, site rules and real blocking/failed states.')
  refs,ids=quality_findings(root,data)
@@ -82,6 +93,43 @@ def completed(root,path):
  require(value.get('intake')==path.stem and value.get('manifest')==review['manifestSha256'] and value.get('review')==sha(canonical(review)),'Completed handoff evidence changed')
  return True
 
+def recovery_path(root,path):
+ # A private checkout hint, never a new candidate, review or completion receipt.
+ return marker(root,'recovery-'+path.stem).with_suffix('.json')
+
+
+def remember_work_branch(root,path,row):
+ blocked=row.get('blockedEvidence')
+ if not blocked:return
+ require(blocked['intake']==path.stem,'Recovery evidence belongs to another intake')
+ hint={'intake':path.stem,'priorSession':blocked['session'],'nextAction':blocked['failure']['nextAction'],
+       'evidence':blocked['failure']['evidence']}
+ branch=row.get('workBranch')
+ if branch:hint['workBranch']=branch
+ if row.get('workCommit'):hint['workCommit']=row['workCommit']
+ target=recovery_path(root,path);target.parent.mkdir(parents=True,exist_ok=True)
+ replace_pointer(target,hint)
+
+
+def register_recovery(root,path,branch,commit):
+ """Pin an existing remote worker commit only if it contains this exact blocked intake and chart."""
+ import re
+ require(re.fullmatch(r'claude/[A-Za-z0-9._/-]+',branch) and re.fullmatch(r'[0-9a-f]{40}',commit),'Use a real cloud work branch and full commit')
+ m,store=connection(root)
+ m.git(root,'check-ref-format','refs/heads/'+branch)
+ tip=m.git(root,'ls-remote','--exit-code','origin','refs/heads/'+branch).stdout.split()[0].decode()
+ m.git(root,'fetch','--quiet','--no-tags','--no-write-fetch-head','origin',tip)
+ m.git(root,'merge-base','--is-ancestor',commit,tip)
+ def register(state):
+  row=state['competitorIntakes'][path.stem];failure=row['blockedEvidence']
+  require(not row.get('complete') and failure['intake']==path.stem,'Only an unfinished matching intake may resume')
+  refs=[{'path':str(path.relative_to(root)),'sha256':path.stem},row['chartRef'],*failure['failure']['evidence']]
+  for ref in refs:
+   require(sha(m.git(root,'show',commit+':'+ref['path']).stdout)==ref['sha256'],'Recovery commit lacks the exact saved work')
+  row.update(workBranch=branch,workCommit=commit)
+ store.mutate(register)
+
+
 def pending(root):
  closed=set()
  c=connection(root)
@@ -95,7 +143,11 @@ def pending(root):
     p=state_dir(root)/(digest+'.json')
     if not p.exists():save(p,m.git(root,'show',revision+':artifacts/'+digest).stdout)
     validate_source(p)
-    for rel,expected in row.get('support',{}).items():
+    remember_work_branch(root,p,row)
+    support=dict(row.get('support',{}))
+    if row.get('baselineObservation'):
+     ref=row['baselineObservation'];support[ref['path']]=ref['sha256']
+    for rel,expected in support.items():
      destination=inside(root,rel)
      if not destination.exists():
       artifact=m.git(root,'show',revision+':artifacts/'+expected).stdout
@@ -124,7 +176,20 @@ def resume(root,out_path):
  path=pending(root)
  if path is None:return False
  point(root,path);ensure_registered(root,path)
- data=validate_source(path);out=Path(out_path);out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(canonical(data)+b'\n');announce(root,path);return True
+ data=validate_source(path);out=Path(out_path);out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(canonical(data)+b'\n');announce(root,path)
+ continuation=recovery_path(root,path)
+ if path.with_suffix('.chart.json').is_file() and continuation.exists():
+  hint=read(continuation)
+  if hint.get('workBranch'):
+   require(hint['intake']==path.stem,'Recovery checkpoint belongs to a different intake')
+   module=load('competitor_saved_work',Path(__file__).with_name('competitor-recover-work.py'))
+   result=module.restore(root,path,hint)
+   if result.get('release'):
+    release_path=marker(root,'release-'+str(session())+path.stem).with_suffix('.json')
+    release_path.parent.mkdir(parents=True,exist_ok=True);replace_pointer(release_path,result['release'])
+   print('AUTOMATIC PRODUCTION RECOVERY: '+json.dumps(result))
+   print('Dispatch only PUBLISH when release.phase=publish. Rebuild the indexes and start the current preview first, then use competitor-handoff.py verify-preview --base-url http://127.0.0.1:PORT. The helper captures once and retains only material differences. Do not capture a second 33 MB approval bundle or send the already recorded batch through WRITE or AUDIT again.')
+ return True
 def freeze(root,payload,limit=10):
  require(type(limit) is int and limit>0,'Keep the explicit positive native item cap')
  if not rows(payload):return None
@@ -145,8 +210,12 @@ def freeze(root,payload,limit=10):
   def add(state):
    state.setdefault('job',None)
    if state['job'] is None:state['job']={'artifacts':{}}
-   state.setdefault('competitorIntakes',{}).setdefault(path.stem,{'complete':False})
-  store.mutate(add,[str(path.relative_to(root))])
+   row=state.setdefault('competitorIntakes',{}).setdefault(path.stem,{'complete':False})
+   if data.get('baselineObservation'):row['baselineObservation']=data['baselineObservation']
+  artifacts=[str(path.relative_to(root))]
+  if data.get('baselineObservation'):
+   ref=data['baselineObservation'];require(ref['path']=='reports/competitor-monitor/harvests/'+ref['sha256']+'.json' and sha(inside(root,ref['path']).read_bytes())==ref['sha256'],'Invalid original sitemap observation');artifacts.append(ref['path'])
+  store.mutate(add,artifacts)
  announce(root,path);return path
 def validate_chart(root,path,plan,review):
  data=validate_source(path)
@@ -247,9 +316,81 @@ def blocked(root,evidence):
  c=connection(root)
  if c:
   _,store=c
-  def keep(state):state['competitorIntakes'][path.stem]['blockedEvidence']=proof
+  module=load('competitor_saved_work',Path(__file__).with_name('competitor-recover-work.py'))
+  saved=module.checkpoint(root,path,value)
+  branch=subprocess.run(['git','branch','--show-current'],cwd=root,capture_output=True,text=True).stdout.strip()
+  def keep(state):
+   row=state['competitorIntakes'][path.stem]
+   row['blockedEvidence']=proof
+   if saved:
+    row.update(saved)
+   elif branch.startswith('claude/'):
+    row['workBranch']=branch
+    row.pop('workCommit',None)  # This new checkpoint can precede its branch push.
   store.mutate(keep,[ref['path'] for ref in value['evidence']])
  return {'status':'blocked-work-preserved','intake':str(path.relative_to(root)),'reportStatus':'failure'}
+
+def release_state(root,payload=None):
+ sid=session(payload)
+ if not sid:return None,None
+ path=active(root,payload)
+ if path is None:return None,None
+ target=marker(root,'release-'+str(sid)+path.stem).with_suffix('.json')
+ return (target,read(target)) if target.is_file() else (None,None)
+
+
+def guard_recovered_stage(root,payload):
+ """After exact recorded recovery, only the publisher is needed until the render actually changes."""
+ if payload.get('agent_id'):return
+ _,release=release_state(root,payload)
+ if not release or release.get('changedRoutes'):return
+ value=payload.get('tool_input',{})
+ role=value.get('subagent_type','').lower()
+ description=value.get('description','').lower()
+ if role.endswith('publish') or 'publish' in description or 'deploy' in description:return
+ raise ValueError('Recovered job '+release['jobId']+' has recorded independent decisions. Only dispatch PUBLISH using '+str(release.get('publishHandoff',release['review'])['path'])+'. No BUILD, WRITE refresh, or repeat AUDIT. If preview differs, capture it then run competitor-handoff.py compare-preview --snapshot PATH.')
+
+
+def compare_preview(root,snapshot_path):
+ target,release=release_state(root)
+ require(release is not None,'No recorded competitor release in this invocation')
+ policy=load('competitor_policy',root/'.claude/tools/content-review-policy.py')
+ renderer=policy.renderer_module()
+ earlier=read(policy.artifact(root,release['approvedSnapshot']));current=read(snapshot_path)
+ renderer.valid_snapshot(current)
+ require(earlier['manifest']==current['manifest'],'Compare the same complete release manifest')
+ old={r['path']:r['fingerprint'] for r in earlier['routes']}
+ changed=[r['path'] for r in current['routes'] if old[r['path']]!=r['fingerprint']]
+ release.update(changedRoutes=changed,currentPreview=policy.reference(root,snapshot_path))
+ replace_pointer(target,release)
+ return {'changedRoutes':changed,'next':'Review only changed routes' if changed else 'Publish the exact reviewed candidate'}
+
+
+def verify_preview(root,base):
+ import shutil
+ from urllib.parse import urlsplit
+ require(urlsplit(base).hostname in {'127.0.0.1','localhost','::1'},'Use the running local preview')
+ target,release=release_state(root);require(release is not None,'No recovered release')
+ policy=load('preview_policy',root/'.claude/tools/content-review-policy.py')
+ renderer=policy.renderer_module()
+ approved=read(policy.artifact(root,release['approvedSnapshot']));review=read(policy.artifact(root,release['review']))
+ parent=root/'reports/competitor-monitor/previews';parent.mkdir(parents=True,exist_ok=True)
+ directory=Path(tempfile.mkdtemp(prefix='verify-',dir=parent));shot=directory/'capture.json'
+ current=renderer.capture(approved['manifest'],base,str(shot.relative_to(root)),comparison_only=True)
+ renderer.valid_snapshot(current)
+ expected={r['path']:r['fingerprint'] for r in approved['routes']}
+ changed=[r['path'] for r in current['routes'] if r['fingerprint']!=expected[r['path']]]
+ if changed:
+  # Promote this very capture for the affected reviewer. Preserve all original HTML bytes.
+  renderer.attach_review_evidence(current,shot.with_suffix(''))
+  current['snapshotSha256']=renderer.digest({k:v for k,v in current.items() if k!='snapshotSha256'})
+  renderer.save(shot,current)
+  return {**compare_preview(root,shot),'snapshot':str(shot.relative_to(root))}
+ renderer.compare(approved,current,review,require_live=False)
+ release.update(changedRoutes=[],verifiedPreview={'capturedAt':current['capturedAt'],'fingerprints':expected})
+ replace_pointer(target,release);shutil.rmtree(directory)
+ return {'changedRoutes':[],'verified':len(expected),'next':'Publish the exact reviewed candidate'}
+
 
 def worker_wait_api():return load('workflow_native_wait',Path(__file__).with_name('native-worker-wait.py'))
 def worker_tag(path):return worker_wait_api().worker_tag()  # Compatibility for intake-bound callers.
@@ -258,6 +399,8 @@ def waiting_for_owned_worker(path,payload):
  if payload.get('hook_event_name')!='Stop' or not Path(__file__).with_name('native-worker-wait.py').is_file():return False
  return worker_wait_api().running(payload)
 def stop(root,payload):
+ if payload.get('hook_event_name') == 'Stop' and payload.get('stop_hook_active') is True:
+  return  # The first reminder already fired. Report guards still enforce completion.
  path=active(root,payload)
  if path is None or completed(root,path):return
  validate_source(path)
@@ -317,9 +460,16 @@ def execute(root,main):
     return result
 
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('command',choices=['stop','blocked','report-guard','status','bind-worker']);p.add_argument('--evidence',type=Path);a=p.parse_args();root=Path(__file__).resolve().parents[2]
+ p=argparse.ArgumentParser();p.add_argument('command',choices=['stop','blocked','report-guard','status','bind-worker','register-recovery','recover-work','compare-preview','verify-preview']);p.add_argument('--evidence',type=Path);p.add_argument('--base-url');p.add_argument('--snapshot',type=Path);p.add_argument('--branch');p.add_argument('--commit');p.add_argument('--intake',type=Path);a=p.parse_args();root=Path(__file__).resolve().parents[2]
  try:
-  if a.command=='stop':stop(root,json.load(sys.stdin))
+  if a.command=='verify-preview':print(json.dumps(verify_preview(root,a.base_url)))
+  elif a.command=='compare-preview':print(json.dumps(compare_preview(root,inside(root,a.snapshot))))
+  elif a.command=='recover-work':
+   path=active(root);require(path is not None,'Detect/resume the original intake first')
+   hint=read(recovery_path(root,path));require(hint['intake']==path.stem,'Work checkpoint belongs to a different intake')
+   module=load('native_competitor_recovery',Path(__file__).with_name('competitor-recover-work.py'));print(json.dumps(module.restore(root,path,hint)))
+  elif a.command=='register-recovery':register_recovery(root,inside(root,a.intake),a.branch,a.commit)
+  elif a.command=='stop':stop(root,json.load(sys.stdin))
   elif a.command=='report-guard':report_guard(root,json.load(sys.stdin))
   elif a.command=='bind-worker':bind_worker(root,json.load(sys.stdin))
   elif a.command=='status':print(json.dumps(status(root)))

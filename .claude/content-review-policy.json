@@ -18,6 +18,12 @@
       "sha256": "025acd144fe43eda5150936b7470c2b0dc7a01f1545c8a23134e403c6ed19c25",
       "commit": "3ca86f560919113cc1be53bd9df7e1f67bcdda48",
       "reason": "Mechanical serializer, evidence-checkpoint and native-worker continuation migration only; retain exact genuine recorded verdicts and all current factual, SEO, safety and release checks."
+    },
+    {
+      "sha256": "710d2007855d901e1e5e2afdf569f5dafa46c19fb9089f89b99560ff80db016d",
+      "commit": "cf529f5fa4018366052d6225637b4765421aa968",
+      "reason": "Owner-authorized fleet release and mechanical resume migration; preserve every actual existing admission, verdict, source and review counter."
     }
-  ]
+  ],
+  "releaseAtAuditLimit": true
 }
