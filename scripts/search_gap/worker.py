@@ -104,8 +104,8 @@ def recovery_preview(artifacts, approved, check_render):
     commit = proof.get('publishedCommit', '')
     require(re.fullmatch('[0-9a-f]{40}', commit) is not None,
             'Use the original actually published full commit')
-    subprocess.run(['git','merge-base','--is-ancestor',commit,'origin/main'],
-                   check=True,capture_output=True)
+    from publication_history import published
+    published(commit)
     preview = read(proof['preview'])
     require(urllib.parse.urlsplit(preview['baseUrl']).hostname in ('127.0.0.1','localhost','::1'),
             'Retrospective recovery requires an independently running local build')
@@ -187,7 +187,8 @@ def validate_completion(packet, completion, check_render=True):
         host = urllib.parse.urlsplit(approved['manifest']['canonicalBase']).hostname or ''
         require(host.removeprefix('www.') == packet['site'].removeprefix('www.'), 'Cross-site render refused')
         preview_host = urllib.parse.urlsplit(approved['baseUrl']).hostname or ''
-        if not preview_host or preview_host.removeprefix('www.') == host.removeprefix('www.'):
+        recovery = artifacts.get('postPublicationRecovery')
+        if recovery or not preview_host or preview_host.removeprefix('www.') == host.removeprefix('www.'):
             require(artifacts.get('postPublicationRecovery'),
                     'Approved candidate must be rendered separately from production; two live captures cannot prove publication matches a reviewed preview')
             recovery_preview(artifacts,approved,check_render)
@@ -195,7 +196,7 @@ def validate_completion(packet, completion, check_render=True):
         if check_render:
             helper = str(Path('.claude/tools/rendered-audit.py'))
             subprocess.run([sys.executable, helper, 'check', '--snapshot', artifacts['approved'],
-                            '--review', artifacts['review'], '--recapture'], check=True, capture_output=True)
+                            '--review', artifacts['review']] + ([] if recovery else ['--recapture']), check=True, capture_output=True)
             subprocess.run([sys.executable, helper, 'compare', '--approved', artifacts['approved'],
                             '--live', artifacts['live'], '--review', artifacts['review']], check=True, capture_output=True)
             # A saved live receipt alone cannot establish what is served now.

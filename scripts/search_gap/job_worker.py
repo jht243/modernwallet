@@ -104,6 +104,20 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
                       'If the original review is awaiting the render gate, use the saved candidate patch, install the project’s '
                       'locked dependencies, build, capture the preview, and finish the required rendered review and live verification. '
                       'Keep the actual prior verdicts, counters and candidate identity.')
+        if resumed and checkpoints and checkpoints[-1].get('stage') == 'completion-recovery':
+            previous = checkpoints[-1]
+            name = previous.get('completionFile')
+            # Restore only the exact checkpointed, independently reviewed decisions.
+            files = {item['path']: item['sha256'] for item in previous['artifacts']}
+            if name in files:
+                completion = read(artifact_path(name))
+                require(digest(name) == files[name] and completion['runId'] == packet['runId']
+                        and completion['intakeSha256'] == digest(path), 'Recovered completion identity changed')
+                receipt = read(artifact_path(completion['chartReview']))
+                require(receipt.get('verdict') == 'PASS' and receipt.get('chartSha256') == digest(completion['chart'])
+                        and receipt.get('decisionsSha256') == hashlib.sha256(json.dumps(completion['decisions'],sort_keys=True).encode()).hexdigest(),
+                        'Decisions differ from the retained independent judgment')
+                summary['completionFile'] = name
         if resumed and checkpoints and not summary.get('completionFile'):
             recovery = missing_decision_chart(packet,path,checkpoints)
             if recovery:
@@ -115,7 +129,7 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
                           'history of its loss. Use the distinct producer identity of the mechanical index and the actual independent reviewer identity. '
                           'If validated, finish the proposedCompletion through ALL existing preview/live, ancestry and action gates. Pending observations remain pending. No new content or repeat writing.')
         if summary and summary.get('completionFile'):
-            action='Reuse the restored, already independently reviewed recoverySummary.completionFile, reconcile its separate preview, then finish. Do not dispatch BUILD, WRITE or another decision/content review.'
+            action='Reuse the restored, already independently reviewed recoverySummary.completionFile, reconcile its separate preview, then finish. For an expired original loopback preview use a separate current build and postPublicationRecovery with the original approved hash and original publication commit. Run python3 scripts/search_gap/publication_history.py FULL_COMMIT for genuine current remote ancestry, including shallow checkouts. Keep all exact-render and live comparisons. Do not dispatch BUILD, WRITE or another decision/content review.'
             sid=os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID')
             if sid:
                 name='search-gap-continuation/'+hashlib.sha256(sid.encode()).hexdigest()+'.json'
