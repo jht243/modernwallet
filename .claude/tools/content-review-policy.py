@@ -70,7 +70,11 @@ def reference(root, path):
 def artifact(root, ref):
     require(isinstance(ref,dict), 'Missing source-bound review artifact')
     p = inside(root,ref.get('path'))
-    require(p.is_file() and sha(p.read_bytes()) == ref.get('sha256'), 'Review artifact changed or missing: '+str(ref.get('path')))
+    if not p.is_file() or sha(p.read_bytes())!=ref.get('sha256'):
+        # Resolve the exact earlier bytes, never accept the current changed file.
+        cached=durable_reviews(root).cache_path(root,ref['path'],str(ref.get('sha256','')))
+        require(cached.is_file() and sha(cached.read_bytes())==ref.get('sha256'),'Review artifact changed or missing: '+str(ref.get('path')))
+        return cached
     return p
 
 
@@ -237,13 +241,21 @@ class Journal:
         self.cycle = None
         for event in self.events:
             data = event['data'];kind = event['kind']
-            require(kind in ['begin','reserve','record','published'],'Unknown journal event')
+            require(kind in ['begin','reserve','repair-pending','record','published'],'Unknown journal event')
             if kind == 'begin':
                 require(self.cycle is None or self.cycle['status']=='published', 'An unfinished page cannot start a new budget')
                 self.cycle = {**data,'rounds':[],'status':'open'};self.cycles.append(self.cycle)
             elif kind == 'reserve':
                 require(self.cycle is not None and data['number'] == len(self.cycle['rounds'])+1, 'Invalid round sequence')
                 self.cycle['rounds'].append(dict(data,status='pending'))
+            elif kind == 'repair-pending':
+                require(self.cycle is not None and data['number']==len(self.cycle['rounds']),'Repair only the existing final pending slot')
+                item=self.cycle['rounds'][-1]
+                require(item['status']=='pending' and item['admission']==data['previousAdmission'] and not item.get('repaired'),'Cannot change a completed verdict or repair a slot twice')
+                old=read(artifact(self.root,item['admission']));new=read(artifact(self.root,data['admission']))
+                require(data.get('invalidatedReferences')==[old['snapshot']] and new['number']==old['number'] and new['cycleId']==old['cycleId'] and new['jobId']==old['jobId'],'Keep the original slot, job and actual lost capture reference')
+                artifact(self.root,data['failureEvidence'])
+                item.update(admission=data['admission'],fingerprint=new['fingerprint'],reviewer=new['reviewer'],repaired=True)
             elif kind == 'record':
                 if data.get('report'):
                     require(digest(read(artifact(self.root,data['report'])))==data['reportObjectSha256'],'Retain the actual prior independent report')
@@ -348,12 +360,11 @@ def decision(root, snapshot, review, rr):
 def pass_evidence(root, snapshot, rr, selected, local_module=None, retain_fail=False):
     checks={'wholePageCoherence','sourceSupport','testingAndAttribution','datesAndSchema','linksAndIndexability','renderedLayout','scopeAndExclusions'}
     supplied=rr.get('checks',{})
-    if not retain_fail:
-        renderer_module().testing_attribution_check(route_in(snapshot,rr['path'])[0]['semantic'],supplied)
+    renderer_module().testing_attribution_check(route_in(snapshot,rr['path'])[0]['semantic'],supplied)
     require(set(supplied)==checks,'Missing independent rendered/SEO checks')
     for name,value in supplied.items():
         allowed=['PASS','NA'] if name in ['testingAndAttribution','scopeAndExclusions'] else ['PASS']
-        if retain_fail: allowed = allowed + ['FAIL']
+        if retain_fail and name not in {'testingAndAttribution','scopeAndExclusions'}: allowed = allowed + ['FAIL']
         require(value.get('status') in allowed and len(value.get('evidence','').strip())>=20,'Missing independent rendered evidence: '+name)
     required=FACTS[selected]+['riskClassification','seoQuality']
     if local_module is not None or (root/'.claude/workflow-policy.local.json').is_file():required+=['instructionUnderstanding']
@@ -361,7 +372,7 @@ def pass_evidence(root, snapshot, rr, selected, local_module=None, retain_fail=F
     _,spec=route_in(snapshot,rr['path'])
     for name in required:
         value=facts[name];allowed=['PASS','NA'] if name=='professionalReview' and not spec.get('professionalReviewRequired') else ['PASS']
-        if retain_fail: allowed = allowed + ['FAIL']
+        if retain_fail and not (name=='professionalReview' and spec.get('professionalReviewRequired')): allowed = allowed + ['FAIL']
         require(value.get('status') in allowed and len(value.get('evidence','').strip())>=40,'Missing real factual-review evidence: '+name)
         if name=='professionalReview' and spec.get('professionalReviewRequired'):artifact(root,value.get('artifact'))
 
@@ -457,6 +468,33 @@ def reserve(root, snapshot_path, route, job, reviewer, out, prior_reports=()):
     context=durable.restore(root,journal)
     try:return reserve_without_checkpoint(root,snapshot_path,route,job,reviewer,out,prior_reports)
     finally:durable.checkpoint(root,journal,context)
+
+def repair_pending(root,snapshot_path,route,job,reviewer,out,failure):
+    """Rebind one corrupt, unfinished capture admission; no verdict or new round."""
+    snapshot=read(snapshot_path);valid_snapshot(snapshot);row,spec=route_in(snapshot,route)
+    require(snapshot.get('contentReviewPolicy',{}).get('sha256') in accepted_policy_hashes(root),'Use an actual recognised captured candidate')
+    require(reviewer and reviewer!=snapshot['manifest']['author'],'Use an actual independent reviewer')
+    durable=durable_reviews(root);journal=Journal(root,snapshot['manifest']['canonicalBase'],route)
+    context=durable.restore(root,journal)
+    with journal as actual:
+        cycle=actual.cycle
+        require(cycle and cycle['jobId']==job and cycle['rounds'],'Recover the original canonical job')
+        last=cycle['rounds'][-1]
+        require(last['status']=='pending' and not last.get('repaired'),'Repair only one unfinished slot; never reset a completed review')
+        old=read(artifact(root,last['admission']));original=inside(root,old['snapshot']['path'])
+        require(not original.is_file() or sha(original.read_bytes())!=old['snapshot']['sha256'],'The original admission is intact; resume it normally')
+        require(failure.is_file() and str(failure.relative_to(root)).startswith('reports/'),'Retain the actual independent failure handback')
+        require(len(failure.read_bytes())>=100,'Retain the complete actual failure, not an invented summary')
+        value={**old,'snapshot':freeze(root,snapshot_path,actual.path.parent),'fingerprint':row['fingerprint'],
+               'author':snapshot['manifest']['author'],'reviewer':reviewer,'policySha256':policy_hash(root),
+               'repairOf':last['admission'],'failureEvidence':freeze(root,failure,actual.path.parent)}
+        save_exact(out,value)
+        actual.append('repair-pending',{'number':old['number'],'previousAdmission':last['admission'],
+                      'admission':reference(root,out),'failureEvidence':value['failureEvidence'],
+                      'invalidatedReferences':[old['snapshot']],'reason':'Original pending snapshot was overwritten; retain the loss and complete this same slot. No verdict, counter reset or additional round.'})
+    durable.checkpoint(root,journal,context)
+    return {**value,'admissionArtifact':reference(root,out),'scope':'Pending capture repair only; the real independent verdict is still required.'}
+
 
 def record(root, report_path):
     durable=durable_reviews(root);report=read(report_path);contexts=[];seen=set()
@@ -560,7 +598,11 @@ def sources(root, report_path):
                     ref=data['admission']
                     if ref.get('legacyImport'):add(ref['legacyImport'])
                     else:
-                        old_admission=read(add(ref));snapshot_files(old_admission['snapshot'])
+                        old_admission=read(add(ref))
+                        invalid=[v for e in journal.events if e['kind']=='repair-pending' for v in e['data']['invalidatedReferences']]
+                        if old_admission['snapshot'] not in invalid:snapshot_files(old_admission['snapshot'])
+                if event['kind']=='repair-pending':
+                    repaired=read(add(data['admission']));snapshot_files(repaired['snapshot']);add(data['failureEvidence'])
                 if event['kind']=='record':add(data['report'])
     return {'paths':sorted(found),'scope':'Internal evidence only; retain the updated journal again after live closure.'}
 
@@ -577,6 +619,8 @@ def main():
     p=sub.add_parser('project')
     for name in ['snapshot','review','out-snapshot','out-review']:p.add_argument('--'+name,required=True)
     p.add_argument('--route',required=True,action='append')
+    p=sub.add_parser('repair-pending')
+    for name in ['snapshot','route','job-id','reviewer','out','failure']:p.add_argument('--'+name,required=True)
     args=parser.parse_args();root=Path(args.root).resolve();policy(root)
     if args.command=='classify':
         snapshot=read(inside(root,args.snapshot));page,spec=route_in(snapshot,args.route);text=claim_text(page['semantic'])
@@ -584,6 +628,7 @@ def main():
         print(json.dumps({'profile':selected,'maximumRounds':LIMITS[selected],'textSha256':sha(text.encode()),'riskPassages':flags(text),'requiredFactualChecks':FACTS[selected],'fullSeoRequired':True},indent=2))
     elif args.command=='reserve':
         print(json.dumps(reserve(root,inside(root,args.snapshot),args.route,args.job_id,args.reviewer,inside(root,args.out),[inside(root,p) for p in args.prior_review]),indent=2))
+    elif args.command=='repair-pending':print(json.dumps(repair_pending(root,inside(root,args.snapshot),args.route,args.job_id,args.reviewer,inside(root,args.out),inside(root,args.failure)),indent=2))
     elif args.command=='record':print(json.dumps(record(root,inside(root,args.review)),indent=2))
     elif args.command=='sources':print(json.dumps(sources(root,inside(root,args.review)),indent=2))
     else:print(json.dumps(project(root,inside(root,args.snapshot),inside(root,args.review),args.route,inside(root,args.out_snapshot),inside(root,args.out_review)),indent=2))

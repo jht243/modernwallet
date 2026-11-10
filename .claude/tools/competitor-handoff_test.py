@@ -32,6 +32,30 @@ class Tests(unittest.TestCase):
   output=io.StringIO()
   with contextlib.redirect_stdout(output):h.stop(self.root,{'session_id':'synthetic-owner'})
   self.assertEqual(output.getvalue(),'')
+ def test_activated_audit_limit_is_not_a_new_manual_review_allowance(self):
+  (self.root/'.claude/content-review-policy.json').write_text(json.dumps({'releaseAtAuditLimit':True}))
+  evidence=self.root/'failure.json';evidence.write_text(json.dumps({'intakeSha256':self.path.stem,'status':'blocked','blockingKind':'exhausted-review-budget'}))
+  with self.assertRaisesRegex(ValueError,'automatic release'):h.blocked(self.root,evidence)
+
+ def test_unrecorded_audit_cannot_be_published_or_hidden_by_done_receipt(self):
+  self.approve();outcomes={'dispositions':{c['url']:{'disposition':'skipped-low-value'} for c in self.payload['candidates']}}
+  h.complete(self.root,h.record(self.root,outcomes))
+  pending=[{'route':'/fixture','round':2}]
+  with patch.object(h,'pending_reviews',return_value=pending):
+   self.assertFalse(h.completed(self.root,self.path))
+   with self.assertRaises(ValueError):h.record(self.root,outcomes)
+   with self.assertRaises(SystemExit),contextlib.redirect_stderr(io.StringIO()):
+    h.publication_guard(self.root,{'tool_input':{'command':'git push origin HEAD:main'}})
+   h.publication_guard(self.root,{'tool_input':{'command':'git push origin HEAD:claude/fixture'}})
+
+ def test_http_success_cannot_close_reviewed_route_without_exact_deployment(self):
+  self.approve();outcomes={'dispositions':{c['url']:{'disposition':'skipped-low-value'} for c in self.payload['candidates']}}
+  verified=h.record(self.root,outcomes);h.complete(self.root,verified)
+  with patch.object(h,'publication_gaps',return_value=[{'route':'/fixture','jobId':'competitor-'+self.path.stem[:12]}]):
+   self.assertFalse(h.completed(self.root,self.path))
+   with self.assertRaisesRegex(ValueError,'exact rendered-live'):h.record(self.root,outcomes)
+   with self.assertRaisesRegex(ValueError,'Exact rendered-live'):h.complete(self.root,verified)
+
  def test_pending_intake_resumes_without_calling_discovery(self):
   target=self.root/'output.json'
   with patch.object(sys,'argv',['scraper.py','detect','--out',str(target)]),contextlib.redirect_stdout(io.StringIO()):

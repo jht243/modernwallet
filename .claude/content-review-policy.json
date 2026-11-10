@@ -23,6 +23,11 @@
       "sha256": "710d2007855d901e1e5e2afdf569f5dafa46c19fb9089f89b99560ff80db016d",
       "commit": "cf529f5fa4018366052d6225637b4765421aa968",
       "reason": "Owner-authorized fleet release and mechanical resume migration; preserve every actual existing admission, verdict, source and review counter."
+    },
+    {
+      "sha256": "0fedd7deb4bb7494df4c8b60edf5dff1b1a5870a03f7a0e67884edf958461f1e",
+      "commit": "8e1080e0fd031c4ff5fca8ffc9280127347c1aa8",
+      "reason": "Preserve exact prior admissions and review counters across immutable evidence and pending-slot repair."
     }
   ],
   "releaseAtAuditLimit": true

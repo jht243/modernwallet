@@ -214,9 +214,21 @@ def validate_manifest(manifest):
 
 def capture(manifest, base, out, dom_dir=None, comparison_only=False):
     validate_manifest(manifest)
+    require(not Path(out).exists() and not Path(out).with_suffix('').exists(),'Capture output is immutable. Use a new versioned output path; never overwrite a reserved snapshot or its HTML.')
     if dom_dir:
         missing=[r['path'] for r in manifest['routes'] if not (Path(dom_dir)/r['path'].lstrip('/')/'index.html').is_file()]
         require(not missing,'--dom-dir is existing hydrated DOM input, not an output directory. Save every route first; omit it for complete server-rendered HTTP HTML. Missing routes: '+', '.join(missing))
+    preview=None
+    if manifest.get('workflowKind')=='mindmap-pass' and urlsplit(base).hostname in ('127.0.0.1','localhost'):
+        import importlib.util
+        root=Path(__file__).resolve().parents[2];helper=root/'.claude/tools/preview-session.py'
+        package=read(root/'package.json') if (root/'package.json').is_file() else {}
+        dependencies={**package.get('dependencies',{}),**package.get('devDependencies',{})}
+        if 'next' in dependencies or 'astro' in dependencies:
+            require(helper.is_file(),'Restore the checked-in preview-session.py before Node preview capture')
+            spec=importlib.util.spec_from_file_location('actual_preview',helper);preview_module=importlib.util.module_from_spec(spec);spec.loader.exec_module(preview_module)
+            try:preview=preview_module.verify(root,base)
+            except (ValueError,OSError) as error:raise ValueError('Start the actual current-build loopback preview with preview-session.py start --run-id ACTUAL_RUN_ID before capture: '+str(error))
     folder=Path(out).with_suffix(''); folder.mkdir(parents=True,exist_ok=True)
     def one(route):
         url=base.rstrip('/')+route['path']
@@ -234,6 +246,7 @@ def capture(manifest, base, out, dom_dir=None, comparison_only=False):
         return result
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool: results=list(pool.map(one,manifest['routes']))
     payload={'capturedAt':now(),'baseUrl':base,'domDir':dom_dir,'manifest':manifest,'routes':results}
+    if preview:payload['previewProvenance']=preview
     if not comparison_only: attach_review_evidence(payload,folder)
     payload['snapshotSha256']=digest(payload); save(out,payload)
     return payload

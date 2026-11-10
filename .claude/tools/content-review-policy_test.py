@@ -86,6 +86,81 @@ class Tests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError,'budget exhausted'):self.reserve(level+'-extra')
                 with self.assertRaisesRegex(ValueError,'renaming'):self.reserve(level+'-renamed',job='new-name')
 
+    def test_corrupt_pending_capture_reuses_the_same_slot_and_requires_actual_verdict(self):
+        first=self.reserve(1);p.record(self.root,self.put('reports/r1.json',self.report(first)))
+        second=self.reserve(2);old_path=self.snapshot_path;old_admission=second['admissionArtifact']
+        old_path.write_text('{"overwritten":true}')
+        self.snap=self.snapshot('actual corrected candidate');fresh=self.put('reports/corrected-capture.json',self.snap)
+        failure=self.put('reports/actual-independent-error.md','Synthetic negative-path fixture only: the auditor documented an overwritten snapshot and no recorded verdict. '*3)
+        repaired=p.repair_pending(self.root,fresh,'/guide','fixture-job','independent',self.root/'reports/repaired-admission.json',failure)
+        with p.Journal(self.root,'https://example.com','/guide') as journal:
+            self.assertEqual(len(journal.cycle['rounds']),2);self.assertEqual(journal.cycle['rounds'][-1]['status'],'pending')
+            self.assertEqual(journal.events[-1]['kind'],'repair-pending');self.assertEqual(journal.events[-1]['data']['previousAdmission'],old_admission)
+        with self.assertRaisesRegex(ValueError,'one unfinished'):
+            p.repair_pending(self.root,fresh,'/guide','fixture-job','independent',self.root/'reports/third.json',failure)
+        report=self.report(repaired,'PASS');p.record(self.root,self.put('reports/actual-r2.json',report))
+        self.assertTrue(p.check_rendered(self.root,self.snap,report))
+        with p.Journal(self.root,'https://example.com','/guide') as journal:
+            self.assertEqual(len(journal.cycle['rounds']),2);self.assertEqual([x.get('verdict') for x in journal.cycle['rounds']],['FAIL','PASS'])
+        p.sources(self.root,self.put('reports/actual-r2.json',report))
+
+    def test_intact_or_completed_admission_cannot_be_rebound(self):
+        admission=self.reserve(1);failure=self.put('reports/error.md','Synthetic fixture, not a real failure. '*5)
+        with self.assertRaisesRegex(ValueError,'intact'):
+            p.repair_pending(self.root,self.snapshot_path,'/guide','fixture-job','independent',self.root/'reports/repaired.json',failure)
+        p.record(self.root,self.put('reports/pass.json',self.report(admission,'PASS')))
+        with self.assertRaisesRegex(ValueError,'unfinished'):
+            p.repair_pending(self.root,self.snapshot_path,'/guide','fixture-job','independent',self.root/'reports/repaired.json',failure)
+
+    def test_prior_dependency_bytes_are_archived_while_current_candidate_stays_current(self):
+        d=load('cache_fixture','content-review-durable.py')
+        current=self.put('reports/working.json',{'version':'original'});ref=p.reference(self.root,current)
+        self.snap['manifest']['reviewDependencies']=[ref];self.snap['snapshotSha256']=render.digest({k:v for k,v in self.snap.items() if k!='snapshotSha256'});self.snapshot_path=self.put('reports/snapshot-v1.json',self.snap)
+        admission=p.reserve(self.root,self.snapshot_path,'/guide','fixture-job','independent',self.root/'reports/admit.json')
+        with p.Journal(self.root,'https://example.com','/guide') as journal:d.collect(self.root,journal)
+        current.write_text('{"version":"corrected"}')
+        self.assertEqual(json.loads(p.artifact(self.root,ref).read_text()),{'version':'original'})
+        self.assertEqual(json.loads(current.read_text()),{'version':'corrected'})
+        with p.Journal(self.root,'https://example.com','/guide') as journal:files=d.collect(self.root,journal)
+        self.assertEqual(files['reports/working.json'],p.sha(current.read_bytes()));self.assertIn(str(d.cache_path(self.root,ref['path'],ref['sha256']).relative_to(self.root)),files)
+
+    def test_capped_editorial_fail_never_waives_real_exclusions_or_professional_approval(self):
+        self.set_level('high');self.snap=self.snapshot();report=self.report({'admissionArtifact':{}},'FAIL');rr=report['routes'][0]
+        for name in ['testingAndAttribution','scopeAndExclusions']:
+            changed=copy.deepcopy(rr);changed['checks'][name]['status']='FAIL'
+            with self.assertRaises(ValueError):p.pass_evidence(self.root,self.snap,changed,'high',retain_fail=True)
+        self.snap['manifest']['routes'][0]['professionalReviewRequired']=True;rr['factualReview']['professionalReview']['status']='FAIL'
+        with self.assertRaisesRegex(ValueError,'professionalReview'):p.pass_evidence(self.root,self.snap,rr,'high',retain_fail=True)
+
+    def test_real_durable_round_two_survives_mutable_dependencies_and_fresh_checkout(self):
+        import shutil
+        d=load('durable_round_fixture','content-review-durable.py')
+        remote=self.root/'remote.git';subprocess.run(['git','init','--bare','-q',str(remote)],check=True)
+        subprocess.run(['git','-C',str(self.root),'remote','add','origin',str(remote)],check=True)
+        store_path=Path(__file__).with_name('workflow-control-store.py')
+        self.put('.claude/tools/workflow-control-store.py',store_path.read_text())
+        working=self.put('reports/working.json',{'version':'original'});old_ref=p.reference(self.root,working)
+        self.snap=self.snapshot('one');self.snap['manifest']['reviewDependencies']=[old_ref]
+        self.snap['snapshotSha256']=render.digest({k:v for k,v in self.snap.items() if k!='snapshotSha256'});old_snapshot=self.put('reports/first.json',self.snap)
+        first=p.reserve(self.root,old_snapshot,'/guide','fixture-job','independent',self.root/'reports/admit1.json')
+        p.record(self.root,self.put('reports/first-review.json',self.report(first)))
+        working.write_text('{"version":"corrected"}')
+        stale=self.put('reports/stale-second.json',self.snap)
+        second=p.reserve(self.root,stale,'/guide','fixture-job','independent',self.root/'reports/admit2.json')
+        stale.write_text('{"overwritten":true}')
+        self.snap=self.snapshot('two');self.snap['manifest']['reviewDependencies']=[p.reference(self.root,working)]
+        self.snap['snapshotSha256']=render.digest({k:v for k,v in self.snap.items() if k!='snapshotSha256'});fresh=self.put('reports/actual-second.json',self.snap)
+        failure=self.put('reports/auditor-error.md','Synthetic fixture only: an actual overwritten pending snapshot; not a production report or permission. '*3)
+        repair=p.repair_pending(self.root,fresh,'/guide','fixture-job','independent',self.root/'reports/repaired2.json',failure)
+        p.record(self.root,self.put('reports/second-review.json',self.report(repair,'PASS')))
+        other=self.root/'fresh-checkout';other.mkdir();subprocess.run(['git','init','-q',str(other)],check=True);subprocess.run(['git','-C',str(other),'remote','add','origin',str(remote)],check=True)
+        for name in [p.CONFIG,p.CONTRACT,'.claude/tools/workflow-control-store.py']:
+            target=other/name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(self.root/name,target)
+        journal=p.Journal(other,'https://example.com','/guide');d.restore(other,journal)
+        with journal as actual:self.assertEqual([x.get('verdict') for x in actual.cycle['rounds']],['FAIL','PASS'])
+        self.assertEqual(json.loads(p.artifact(other,old_ref).read_text()),{'version':'original'})
+        self.assertEqual(json.loads((other/'reports/working.json').read_text()),{'version':'corrected'})
+
     def test_first_real_pass_does_not_require_extra_reviews(self):
         self.set_level('standard');admission=self.reserve(1);report=self.report(admission,'PASS')
         p.record(self.root,self.put('reports/review.json',report))

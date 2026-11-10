@@ -14,6 +14,13 @@ class Tests(unittest.TestCase):
   s={'manifest':m,'routes':[r],'baseUrl':'https://example.com','capturedAt':'2026-10-27T18:00:00+00:00'}; s['snapshotSha256']=a.digest(s); return s
  def review(self,s):
   return {'reviewer':'independent','snapshotSha256':s['snapshotSha256'],'routes':[{'path':'/guide','fingerprint':s['routes'][0]['fingerprint'],'verdict':'PASS','checks':{k:{'status':'PASS','evidence':'Fixture evidence for negative-path testing only.'} for k in a.CHECKS}}]}
+ def test_capture_never_overwrites_a_reserved_output_or_contacts_the_server(self):
+  from unittest.mock import patch
+  with tempfile.TemporaryDirectory() as tmp:
+   out=pathlib.Path(tmp)/'reserved.json';out.write_text('original immutable bytes')
+   with patch.object(a.urllib.request,'urlopen',side_effect=AssertionError('Must fail before network')):
+    with self.assertRaisesRegex(ValueError,'immutable'):a.capture(self.snapshot()['manifest'],'http://localhost:1',str(out))
+   self.assertEqual(out.read_text(),'original immutable bytes')
  def test_valid(self):
   s=self.snapshot(); a.review_check(s,self.review(s))
  def test_date_regression(self):

@@ -58,6 +58,12 @@ def quality_findings(root,data):
 def announce(root,path):
  data=validate_source(path);point(root,path)
  print('AUTOMATED MINDMAP HANDOFF REQUIRED: '+str(path.relative_to(root))+' sha256='+path.stem)
+ repairs=pending_reviews(root,path.stem)
+ gaps=publication_gaps(root,path.stem)
+ if gaps and not repairs:
+  print('RESUME MECHANICAL PUBLICATION VERIFICATION ONLY: these original reviewed routes lack rendered-audit.py record-deployment: '+json.dumps(gaps)+'. Do not rewrite, regenerate, repeat research/chart or reserve any additional editorial audit. Use each genuine saved approved snapshot and actual final report (project subsets through the native policy helper where necessary), capture exact canonical live output to NEW immutable paths, compare, obtain actual host commit evidence, and record-deployment. Complete current PUBLISH preflight with a sealed current handoff. HTTP 200 or unchanged content never substitutes for exact comparison. Preserve all original findings/counters and record the native ledger completion only after this proof exists.')
+ if repairs:
+  print('RESUME EXISTING PENDING AUDIT, even if the URL is already live or the old ledger says complete. Do not rewrite content, redo chart/discovery or reset any review counter. Restore immutable prior dependencies through the normal durable backend, capture to a new immutable output, use content-review-policy.py repair-pending only for an actually corrupt pending capture, and have a real independent reviewer complete this SAME numbered slot with its actual verdict. A reservation or unrecorded reading cannot release a changed page. First call content-review-durable.py restore for the exact canonical origin/route; keep the current content unchanged. For an overwritten capture, retain the actual auditor error report, capture the exact current page to a NEW output, call repair-pending once with the actual independent reviewer identity, then record that real reviewer result using the returned admission (not another reserve/round). Reuse the saved auditor where available. Complete exact live verification and retain the true repair/error history. '+json.dumps(repairs))
  if path.with_suffix('.chart.json').is_file():
   proof=chart_value(root,path)
   plan=json.loads(proof['planText']);review=json.loads(proof['reviewText'])
@@ -86,13 +92,71 @@ def replace_pointer(path,value):
  with tempfile.NamedTemporaryFile(dir=path.parent,delete=False) as stream:stream.write(raw);name=stream.name
  os.replace(name,path)
 
+def pending_reviews(root,digest=None):
+ """Actual reserved-but-unrecorded slots for this retained canonical intake."""
+ if not (root/'.claude/content-review-policy.json').is_file():return []
+ result=[]
+ for path in (root/'reports/content-review-journals').glob('*.jsonl'):
+  events=[json.loads(line) for line in path.read_bytes().splitlines() if line.strip()]
+  if not events:continue
+  job=None;pending={}
+  for event in events:
+   data=event['data']
+   if event['kind']=='begin':job=data.get('jobId');pending={}
+   elif event['kind']=='reserve':pending[data['number']]=data
+   elif event['kind']=='record':pending.pop(data['number'],None)
+  if pending and isinstance(job,str) and (digest is None or digest[:12] in job):
+   if digest is None:
+    result.append({'jobId':job});continue
+   policy=load('pending_native_review_policy',root/'.claude/tools/content-review-policy.py');identity=events[0]['identity']
+   with policy.Journal(root,identity['canonicalBase'],identity['route']) as journal:
+    if journal.cycle and journal.cycle['rounds'][-1]['status']=='pending':
+     result.append({'route':identity['route'],'jobId':job,'round':journal.cycle['rounds'][-1]['number'],'admission':journal.cycle['rounds'][-1]['admission']})
+ return result
+
+def publication_gaps(root,digest=None):
+ """Real reviewed routes still lack the native exact-live deployment receipt."""
+ if not (root/'.claude/content-review-policy.json').is_file():return []
+ result=[]
+ for path in (root/'reports/content-review-journals').glob('*.jsonl'):
+  events=[json.loads(line) for line in path.read_bytes().splitlines() if line.strip()]
+  if not events:continue
+  begin=next((e for e in reversed(events) if e['kind']=='begin'),None)
+  if not begin:continue
+  job=begin['data'].get('jobId','')
+  if not isinstance(job,str) or (digest is not None and digest[:12] not in job):continue
+  if digest is None:
+   index=events.index(begin)
+   if not any(e['kind']=='published' for e in events[index:]):result.append({'jobId':job})
+   continue
+  policy=load('publication_native_review_policy',root/'.claude/tools/content-review-policy.py');identity=events[0]['identity']
+  with policy.Journal(root,identity['canonicalBase'],identity['route']) as journal:
+   if journal.cycle and journal.cycle['status']!='published':
+    rounds=journal.cycle['rounds'];last=rounds[-1] if rounds else {}
+    result.append({'route':identity['route'],'jobId':job,'status':journal.cycle['status'],'round':last.get('number'),'report':last.get('report'),'admission':last.get('admission')})
+ return result
+
+
+def publication_guard(root,payload):
+ command=payload.get('tool_input',{}).get('command','')
+ import re
+ if not re.search(r'(?:^|[;&|\n])\s*(?:\S*deploy-run-to-main\.sh\s+push|git\s+(?:-\S+\s+)*push\b)',command):return
+ if re.search(r'(?:HEAD:|refs/heads/)(?:claude|automation)/',command) and not re.search(r':(?:refs/heads/)?(?:main|master)\b',command):return
+ path=active(root,payload)
+ if path is None:return
+ pending=pending_reviews(root,path.stem)
+ if pending:
+  print('A reserved audit is not a completed audit. Preserve the exact latest candidate, reuse the actual auditor and finish its existing slot. If its snapshot was overwritten, use content-review-policy.py repair-pending with the real failure handback and a new immutable capture; never release on an older FAIL or buy another round. '+json.dumps(pending),file=sys.stderr)
+  raise SystemExit(2)
+
+
 def completed(root,path):
  receipt=path.with_suffix('.done.json')
  if not receipt.is_file():return False
  value=read(receipt);proof=chart_value(root,path);plan=json.loads(proof['planText']);review=json.loads(proof['reviewText'])
  validate_chart(root,path,plan,review)
  require(value.get('intake')==path.stem and value.get('manifest')==review['manifestSha256'] and value.get('review')==sha(canonical(review)),'Completed handoff evidence changed')
- return True
+ return not pending_reviews(root,path.stem) and not publication_gaps(root,path.stem)
 
 def recovery_path(root,path):
  # A private checkout hint, never a new candidate, review or completion receipt.
@@ -132,14 +196,14 @@ def register_recovery(root,path,branch,commit):
 
 
 def pending(root):
- closed=set()
+ closed=set();open_jobs=[row['jobId'] for row in pending_reviews(root)+publication_gaps(root)]
  c=connection(root)
  if c:
   m,store=c;revision,state=store.read()
   if revision:
    for digest,row in state.get('competitorIntakes',{}).items():
     require(len(digest)==64 and all(x in '0123456789abcdef' for x in digest),'Invalid durable intake hash')
-    if row.get('complete'):
+    if row.get('complete') and not any(digest[:12] in job for job in open_jobs):
      closed.add(digest);continue
     p=state_dir(root)/(digest+'.json')
     if not p.exists():save(p,m.git(root,'show',revision+':artifacts/'+digest).stdout)
@@ -179,7 +243,7 @@ def resume(root,out_path):
  point(root,path);ensure_registered(root,path)
  data=validate_source(path);out=Path(out_path);out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(canonical(data)+b'\n');announce(root,path)
  continuation=recovery_path(root,path)
- if path.with_suffix('.chart.json').is_file() and continuation.exists():
+ if path.with_suffix('.chart.json').is_file() and continuation.exists() and not pending_reviews(root,path.stem) and not publication_gaps(root,path.stem):
   hint=read(continuation)
   if hint.get('workBranch'):
    require(hint['intake']==path.stem,'Recovery checkpoint belongs to a different intake')
@@ -282,6 +346,8 @@ def chart_proof(root,path):
 def record(root,dispositions):
  path=active(root)
  if path is None:return
+ require(not pending_reviews(root,path.stem),'Finish the actual pending independent audit before closing production; a reserved slot is not a verdict')
+ require(not publication_gaps(root,path.stem),'Finish native exact rendered-live comparison and rendered-audit.py record-deployment for each actual saved reviewed route before closing production. Reuse genuine verdicts; no new writing or editorial review.')
  proof=chart_proof(root,path);data=validate_source(path);expected={c['url'] for c in rows(data)};outcomes=dispositions.get('dispositions',{})
  require(set(outcomes)==expected,'Record every selected candidate. Do not silently leave an owned gap pending or consume cap-deferred candidates')
  decisions={r['candidate']:r for r in proof['plan']['candidateDispositions']};actions=proof['plan']['actions']
@@ -296,6 +362,8 @@ def record(root,dispositions):
 
 def complete(root,verified):
  if verified is None:return
+ require(not pending_reviews(root,verified[0].stem),'Complete the existing pending audit before closing production')
+ require(not publication_gaps(root,verified[0].stem),'Exact rendered-live verification and native record-deployment are still missing; an HTTP 200 is insufficient.')
  path,proof=verified;receipt={'intake':path.stem,'manifest':proof['review']['manifestSha256'],'review':sha(canonical(proof['review'])),'scope':'Terminal ledger handoff only. Native content/audit/live/reporting gates remain authoritative.'};save(path.with_suffix('.done.json'),canonical(receipt))
  c=connection(root)
  if c:
@@ -463,7 +531,7 @@ def execute(root,main):
     return result
 
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('command',choices=['stop','blocked','report-guard','status','bind-worker','register-recovery','recover-work','compare-preview','verify-preview']);p.add_argument('--evidence',type=Path);p.add_argument('--base-url');p.add_argument('--snapshot',type=Path);p.add_argument('--branch');p.add_argument('--commit');p.add_argument('--intake',type=Path);a=p.parse_args();root=Path(__file__).resolve().parents[2]
+ p=argparse.ArgumentParser();p.add_argument('command',choices=['stop','blocked','report-guard','publication-guard','status','bind-worker','register-recovery','recover-work','compare-preview','verify-preview']);p.add_argument('--evidence',type=Path);p.add_argument('--base-url');p.add_argument('--snapshot',type=Path);p.add_argument('--branch');p.add_argument('--commit');p.add_argument('--intake',type=Path);a=p.parse_args();root=Path(__file__).resolve().parents[2]
  try:
   if a.command=='verify-preview':print(json.dumps(verify_preview(root,a.base_url)))
   elif a.command=='compare-preview':print(json.dumps(compare_preview(root,inside(root,a.snapshot))))
@@ -474,6 +542,7 @@ if __name__=='__main__':
   elif a.command=='register-recovery':register_recovery(root,inside(root,a.intake),a.branch,a.commit)
   elif a.command=='stop':stop(root,json.load(sys.stdin))
   elif a.command=='report-guard':report_guard(root,json.load(sys.stdin))
+  elif a.command=='publication-guard':publication_guard(root,json.load(sys.stdin))
   elif a.command=='bind-worker':bind_worker(root,json.load(sys.stdin))
   elif a.command=='status':print(json.dumps(status(root)))
   else:

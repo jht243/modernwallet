@@ -3,11 +3,28 @@
 This stores existing evidence only; it never creates a verdict or a review round.
 """
 from pathlib import Path
-import importlib.util,json,os,subprocess,hashlib
+import importlib.util,json,os,subprocess,hashlib,tempfile
 REF='refs/heads/automation/content-review-journals'
 def sha(raw):return hashlib.sha256(raw).hexdigest()
 def require(ok,message):
  if not ok:raise ValueError(message)
+def cache_path(root,name,expected):
+ require(len(expected)==64 and all(c in '0123456789abcdef' for c in expected),'Invalid archived evidence hash')
+ path=(root/'reports/content-review-evidence'/(expected+Path(name).suffix)).resolve()
+ require(root.resolve() in path.parents and 'public' not in path.relative_to(root.resolve()).parts,'Archive must remain internal to the repository')
+ return path
+def cache(root,name,expected,raw):
+ require(sha(raw)==expected,'Archived evidence changed')
+ path=cache_path(root,name,expected);path.parent.mkdir(parents=True,exist_ok=True)
+ if path.exists():require(path.read_bytes()==raw,'Immutable review archive changed')
+ else:
+  with tempfile.NamedTemporaryFile(dir=path.parent,delete=False) as stream:stream.write(raw);temporary=Path(stream.name)
+  try:
+   try:os.link(temporary,path)
+   except FileExistsError:require(path.read_bytes()==raw,'Immutable review archive changed')
+  finally:temporary.unlink()
+ return path
+
 def backend(root):
  path=root/'.claude/tools/workflow-control-store.py'
  cloud=bool(os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID'))
@@ -33,21 +50,32 @@ def restore(root,journal):
     if name==rel:
      require(raw.startswith(current) or current.startswith(raw),'Divergent review histories; preserve both before continuation')
      if current.startswith(raw):continue
-    else:require(current==raw,'Restore the exact prior independent review evidence: '+name);continue
+    else:cache(root,name,expected,raw);continue
    target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(raw)
  return {'module':module,'store':store,'expectedHead':head,'key':journal.key}
 def collect(root,journal):
- paths={};seen=set()
+ paths={};seen=set();events=[json.loads(line) for line in journal.path.read_bytes().splitlines() if line.strip()]
+ invalid={(ref['path'],ref['sha256']) for e in events if e['kind']=='repair-pending' for ref in e['data'].get('invalidatedReferences',[])}
  def file(name,expected=None):
   target=(root/name).resolve()
   if root.resolve() not in target.parents or not str(target.relative_to(root)).startswith('reports/'):return
-  require(target.is_file() or expected is None,'Missing actual review dependency before checkpoint: '+name)
-  if not target.is_file():return
-  name=str(target.relative_to(root));raw=target.read_bytes()
-  if expected:require(sha(raw)==expected,'Review dependency changed before checkpoint: '+name)
-  paths[name]=sha(raw)
-  if name in seen:return
-  seen.add(name)
+  name=str(target.relative_to(root))
+  if (name,expected) in invalid:
+   saved=cache_path(root,name,expected)
+   if saved.is_file() and sha(saved.read_bytes())==expected:paths[str(saved.relative_to(root))]=expected
+   return  # Exact unavailable pending capture remains declared, never fabricated.
+  current=target.read_bytes() if target.is_file() else None
+  if current is not None:paths[name]=sha(current)
+  raw=current
+  if expected and (raw is None or sha(raw)!=expected):
+   saved=cache_path(root,name,expected);require(saved.is_file(),'Missing actual review dependency before checkpoint: '+name)
+   raw=saved.read_bytes();require(sha(raw)==expected,'Archived review dependency changed')
+  if raw is None:
+   require(expected is None,'Missing actual review dependency before checkpoint: '+name);return
+  wanted=expected or sha(raw);saved=cache(root,name,wanted,raw);paths[str(saved.relative_to(root))]=wanted
+  key=(name,wanted)
+  if key in seen:return
+  seen.add(key)
   if target.suffix=='.json':visit(json.loads(raw))
  def visit(value):
   if isinstance(value,dict):
@@ -59,8 +87,9 @@ def collect(root,journal):
   elif isinstance(value,list):
    for child in value:visit(child)
  file(str(journal.path.relative_to(root)))
- for line in journal.path.read_bytes().splitlines():visit(json.loads(line))
+ for event in events:visit(event)
  return paths
+
 def checkpoint(root,journal,context):
  if context is None or not journal.path.is_file():return
  expected=context['expectedHead']
@@ -77,13 +106,13 @@ def checkpoint(root,journal,context):
 
 def main():
  import argparse
- parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('command',choices=['checkpoint']);parser.add_argument('--canonical-base',required=True);parser.add_argument('--route',required=True);args=parser.parse_args()
+ parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('command',choices=['checkpoint','restore']);parser.add_argument('--canonical-base',required=True);parser.add_argument('--route',required=True);args=parser.parse_args()
  root=Path(__file__).resolve().parents[2];path=Path(__file__).with_name('content-review-policy.py')
  spec=importlib.util.spec_from_file_location('checkpoint_actual_review_policy',path);policy=importlib.util.module_from_spec(spec);spec.loader.exec_module(policy)
  journal=policy.Journal(root,args.canonical_base,args.route);context=restore(root,journal)
  require(context is not None,'An actual native Git checkpoint origin is required')
  with journal as actual:require(bool(actual.events),'No actual review history exists to checkpoint')
- checkpoint(root,journal,context)
- print(json.dumps({'status':'actual-review-history-checkpointed','identity':journal.identity,'scope':'Existing journal/evidence only; no new review, verdict or publication.'}))
+ if args.command=='checkpoint':checkpoint(root,journal,context)
+ print(json.dumps({'status':'actual-review-history-'+('checkpointed' if args.command=='checkpoint' else 'restored'),'identity':journal.identity,'scope':'Existing journal/evidence only; no new review, verdict or publication.'}))
 
 if __name__=='__main__':main()
