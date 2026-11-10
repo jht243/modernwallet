@@ -1,5 +1,6 @@
 """Portable canonical handoffs using the verified native validators and snapshot logic."""
 import argparse,copy,datetime,hashlib,importlib.util,json,os,uuid
+import re
 from pathlib import Path
 from types import SimpleNamespace
 from urllib.parse import urlsplit
