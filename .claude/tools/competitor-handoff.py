@@ -64,7 +64,7 @@ def announce(root,path):
   print('RESUME ORIGINAL PUBLICATION PROOF, no discovery/chart/generation restart. Run competitor-handoff.py publication-plan --out NEW_INTERNAL_DIRECTORY/plan.json to select each actual LAST journal decision, never an earlier batch round. Capture/compare its exact live output and record-deployment. Use deployment-evidence.py --expected-commit FULL_PUBLICATION_SHA --out NEW_HOST_PROOF.json with a long Bash timeout: this reads actual build provenance without a Render key. No connector/key permission is needed. On substantive post-review drift, retain newer source bytes/diffs and restore only the exact affected reviewed route, preserving unrelated work and explicit holds. Never roll back a whole shared data file. Use only an original remaining audit slot where genuinely needed; no extra round or reset. An HTTP 200 is insufficient. '+json.dumps([{k:r[k] for k in ('route','status','remainingReviews')} for r in gaps]))
   eligible=[row['route'] for row in gaps if row['status']=='needs-fix' and row['remainingReviews']>0]
   if eligible:
-   print('Complete these eligible original audit slots FIRST, before working on or reporting any held siblings: '+json.dumps(eligible)+'. MAIN must seal the current handoff, dispatch the real independent AUDIT worker now and finish its original remaining round. A different route reaching its ceiling or drifting is not a hold on these routes. Preserve any documented owner-approved corrections. Keep a real historical override distinct from exact reviewed publication.')
+   print('Complete these eligible original audit slots FIRST, before working on or reporting any held siblings: '+json.dumps(eligible)+'. MAIN must seal the current handoff and dispatch the real independent AUDIT worker on the latest source-backed candidate. A writer returning no edits is a terminal handback: send that candidate directly to AUDIT. Record the actual verdict even when a word-count or other editorial FAIL is expected. No padding, new generation credits, or owner waiver of an editorial finding is required to perform that audit. A different route reaching its ceiling or drifting is not a hold on these routes. Preserve any documented owner-approved corrections. Keep a real historical override distinct from exact reviewed publication.')
   return
  if repairs:
   print('RESUME EXISTING PENDING AUDIT, even if the URL is already live or the old ledger says complete. Do not rewrite content, redo chart/discovery or reset any review counter. Restore immutable prior dependencies through the normal durable backend, capture to a new immutable output, use content-review-policy.py repair-pending only for an actually corrupt pending capture, and have a real independent reviewer complete this SAME numbered slot with its actual verdict. A reservation or unrecorded reading cannot release a changed page. First call content-review-durable.py restore for the exact canonical origin/route; keep the current content unchanged. For an overwritten capture, retain the actual auditor error report, capture the exact current page to a NEW output, call repair-pending once with the actual independent reviewer identity, then record that real reviewer result using the returned admission (not another reserve/round). Reuse the saved auditor where available. Complete exact live verification and retain the true repair/error history. '+json.dumps(repairs))
@@ -400,6 +400,10 @@ def blocked(root,evidence):
  require(value.get('blockingKind') in ('professional-review','exhausted-review-budget','external-service','source-freshness','authorization-hold'),'Only actual native holds/failures can stop unfinished production')
  config=root/'.claude/content-review-policy.json'
  require(not (value.get('blockingKind')=='exhausted-review-budget' and config.is_file() and read(config).get('releaseAtAuditLimit') is True),'An editorial audit limit uses the configured automatic release; finish missing original reviews and publish eligible exact candidates, without a new allowance or reset')
+ reason=(value.get('reason','')+' '+value.get('nextAction','')).lower()
+ if value.get('blockingKind')=='authorization-hold' and any(word in reason for word in ('word floor','word-count','word count','1,200','1200','under-length','generation budget')):
+  unfinished=[r for r in publication_gaps(root,path.stem) if r['status']=='needs-fix' and r['remainingReviews']>0]
+  require(not unfinished or value.get('explicitOwnerHoldEvidence') in [ref for ref in value.get('evidence',[]) if isinstance(ref,dict)],'Word count, a spent writing allowance, or an expected editorial FAIL cannot authorize skipping an original independent audit. Audit the actual retained candidate now, preserve its findings and use the configured ceiling. Only an explicit independent owner hold, identified by its actual evidence reference, can supersede this.')
  for name in ('reason','nextAction'):require(isinstance(value.get(name),str) and len(value[name].strip())>=60,'Preserve the real blocker and exact automated next action')
  require(not any(x in value['reason'].lower() for x in ('not enough time','context window','save tokens','next scheduled pass')),'Time/context/token convenience is not a blocking gate')
  require(value.get('recoveryAttempted') is True and value.get('evidence'),'Attempt native recovery and retain concrete source/gate/failure artifacts')
@@ -548,6 +552,10 @@ def execute(root,main):
         require(out.is_file(),'Native monitor output missing; preserve the actual failure, do not claim a no-op')
         payload=read(out);require(isinstance(payload.get('candidates'),list),'Unknown native monitor intake schema; preserve it for its native adapter')
         freeze(root,payload,limit);return result
+    intake=active(root)
+    if intake is not None and completed(root,intake):
+        print('Already recorded this exact selected intake; preserve the original terminal dispositions.')
+        return 0
     raw=read(Path(argument('--dispositions')))
     values=raw.get('dispositions',raw)
     normalized={'dispositions':{url:({'disposition':value} if isinstance(value,str) else value) for url,value in values.items()}}
