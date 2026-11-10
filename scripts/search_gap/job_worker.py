@@ -78,7 +78,7 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
             result=subprocess.run(['git','rev-parse','--git-path','search-gap-recovery/'+packet['runId']+'/checkpoints.json'],check=True,capture_output=True,text=True)
             checkpoint_file=Path(result.stdout.strip());checkpoint_file.parent.mkdir(parents=True,exist_ok=True,mode=0o700)
             checkpoint_file.write_text(json.dumps(checkpoints),encoding='utf-8');checkpoint_file.chmod(0o600)
-        summary={k:checkpoints[-1].get(k) for k in ('stage','canonicalJobs','reviewCounters','gitRef','commit')} if checkpoints else None
+        summary={k:checkpoints[-1].get(k) for k in ('stage','canonicalJobs','reviewCounters','gitRef','commit','nextAction','results','evidence')} if checkpoints else None
         retained=Path('reports/search-gap/recovery')/(digest(path)+'.json')
         if resumed and retained.is_file():
             saved=read(retained)
@@ -97,8 +97,15 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
                 if exists.returncode:
                     subprocess.run(['git','fetch','--quiet','--no-tags','--no-write-fetch-head','origin',revision],check=True,capture_output=True)
         action='Continue the existing native search workflow.'
+        if resumed and checkpoints:
+            restore_artifacts(checkpoints)
+            action = ('Resume at the recorded stage. The saved files have been restored and their hashes checked. '
+                      'Use recoverySummary.results/evidence and the recorded nextAction under the current native rules. '
+                      'If the original review is awaiting the render gate, use the saved candidate patch, install the project’s '
+                      'locked dependencies, build, capture the preview, and finish the required rendered review and live verification. '
+                      'Keep the actual prior verdicts, counters and candidate identity.')
         if summary and summary.get('completionFile'):
-            action='Restore the checkpoint, reuse the already independently reviewed recoverySummary.completionFile, reconcile its separate preview, then finish. Do not dispatch BUILD, WRITE or another decision/content review.'
+            action='Reuse the restored, already independently reviewed recoverySummary.completionFile, reconcile its separate preview, then finish. Do not dispatch BUILD, WRITE or another decision/content review.'
             sid=os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID')
             if sid:
                 name='search-gap-continuation/'+hashlib.sha256(sid.encode()).hexdigest()+'.json'

@@ -23,6 +23,19 @@ class RuntimeRecovery(unittest.TestCase):
             def claim_job(self,site,owner,new):return {'status':'claimed','packetText':raw,'packetSha256':hashlib.sha256(raw.encode()).hexdigest(),'checkpoints':[]}
         result=worker.intake('one.test',Durable(),None,'new-owner-12345678')
         self.assertTrue(result['resumed']);self.assertEqual(result['runId'],'original-job');self.assertEqual(Path(result['intakeFile']).read_text(),raw)
+    def test_resume_restores_saved_candidate_and_next_stage(self):
+        worker.subprocess.run(['git','init','--quiet'],check=True)
+        path=Path('reports/candidate.patch');path.parent.mkdir();path.write_bytes(b'original candidate')
+        stage={'stage':'audit-round2-PASS-awaiting-render-gate','results':[str(path)],'nextAction':'build and capture preview','artifacts':worker.capture_artifacts([str(path)])}
+        path.unlink()
+        packet={'ok':True,'site':'example.test','runId':'prior-run','candidates':[]};raw=json.dumps(packet)
+        class Durable:
+            def pending(self,site):return []
+            def claim_job(self,site,owner,new):return {'status':'claimed','packetText':raw,'packetSha256':hashlib.sha256(raw.encode()).hexdigest(),'checkpoints':[stage]}
+        resumed=worker.intake('example.test',Durable(),None,'new-owner-12345678')
+        self.assertEqual(path.read_bytes(),b'original candidate');self.assertEqual(resumed['recoverySummary']['nextAction'],stage['nextAction'])
+        self.assertEqual(resumed['recoverySummary']['results'],[str(path)])
+
     def test_busy_job_does_not_write_replacement_intake(self):
         class Durable:
             def pending(self,site):return []
