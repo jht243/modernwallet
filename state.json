@@ -1,0 +1,39 @@
+{
+  "candidates": {},
+  "job": {
+    "artifacts": {
+      "reports/content-review-journals/eb1aa08ba25730d5bdb6a4c555c270ee2ab05a309e72359230061b91050628f4.jsonl": "d588bb7c8b224eb476fc37c1b7cd4a6fbb60e9066b52814669679c824c2648c9",
+      "reports/opt-new-two-20261109/audit/index-admission-1.json": "d7b21f648f67280bac8ef63db89d8432ec678927773726b6eddcfca387e1c27b",
+      "reports/opt-new-two-20261109/snapshot-1.json": "5a66eac3f975b22949e7bc6dca755b14c92a72bfd9b2e0f6f0a7e322be833c9f",
+      "reports/opt-new-two-20261109/snapshot-1/65c77e41e1a7cacb4c0a.html": "f3d0b54f63c8d959d18096e64a8424361b79e494e4f074a293ce85e69425b80a",
+      "reports/opt-new-two-20261109/snapshot-1/65c77e41e1a7cacb4c0a.txt": "5b3a6898480538e6ab111824451a6ed300ce6941dc8b01fc84fbab953dbd5bf5",
+      "reports/opt-new-two-20261109/snapshot-1/83e5d32a22a6e5aa6df9.html": "d26c08e3fe0dfa104e7acde67ec4cfe8f8feab41f05d1a082f202bb74733a51f",
+      "reports/opt-new-two-20261109/snapshot-1/83e5d32a22a6e5aa6df9.txt": "4e516d35602bb730fd3281b6253709e06a9bb89fd8a7acb975157caf4cbdc517",
+      "reports/opt-new-two-20261109/snapshot-1/correction-boundary.json": "87a2e49c6892b95828ec42567f70ae62cc337baf4d166874ed32ce91e6b8b3ae",
+      "reports/opt-new-two-20261109/snapshot-1/correction-sources/blobs/65aab30dd91aa63041e11f004d37c875aa7f90da24679164bebb72be385af730/search-index.json": "65aab30dd91aa63041e11f004d37c875aa7f90da24679164bebb72be385af730"
+    }
+  },
+  "reviewJournals": {
+    "eb1aa08ba25730d5bdb6a4c555c270ee2ab05a309e72359230061b91050628f4": {
+      "artifacts": {
+        "reports/content-review-journals/eb1aa08ba25730d5bdb6a4c555c270ee2ab05a309e72359230061b91050628f4.jsonl": "d588bb7c8b224eb476fc37c1b7cd4a6fbb60e9066b52814669679c824c2648c9",
+        "reports/opt-new-two-20261109/audit/index-admission-1.json": "d7b21f648f67280bac8ef63db89d8432ec678927773726b6eddcfca387e1c27b",
+        "reports/opt-new-two-20261109/snapshot-1.json": "5a66eac3f975b22949e7bc6dca755b14c92a72bfd9b2e0f6f0a7e322be833c9f",
+        "reports/opt-new-two-20261109/snapshot-1/65c77e41e1a7cacb4c0a.html": "f3d0b54f63c8d959d18096e64a8424361b79e494e4f074a293ce85e69425b80a",
+        "reports/opt-new-two-20261109/snapshot-1/65c77e41e1a7cacb4c0a.txt": "5b3a6898480538e6ab111824451a6ed300ce6941dc8b01fc84fbab953dbd5bf5",
+        "reports/opt-new-two-20261109/snapshot-1/83e5d32a22a6e5aa6df9.html": "d26c08e3fe0dfa104e7acde67ec4cfe8f8feab41f05d1a082f202bb74733a51f",
+        "reports/opt-new-two-20261109/snapshot-1/83e5d32a22a6e5aa6df9.txt": "4e516d35602bb730fd3281b6253709e06a9bb89fd8a7acb975157caf4cbdc517",
+        "reports/opt-new-two-20261109/snapshot-1/correction-boundary.json": "87a2e49c6892b95828ec42567f70ae62cc337baf4d166874ed32ce91e6b8b3ae",
+        "reports/opt-new-two-20261109/snapshot-1/correction-sources/blobs/65aab30dd91aa63041e11f004d37c875aa7f90da24679164bebb72be385af730/search-index.json": "65aab30dd91aa63041e11f004d37c875aa7f90da24679164bebb72be385af730"
+      },
+      "head": "d588bb7c8b224eb476fc37c1b7cd4a6fbb60e9066b52814669679c824c2648c9",
+      "identity": {
+        "canonicalBase": "https://themodernwallet.com",
+        "route": "/guides",
+        "siteId": "jht243/modernwallet"
+      }
+    }
+  },
+  "slots": [],
+  "version": 1
+}
