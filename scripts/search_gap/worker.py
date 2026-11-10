@@ -89,6 +89,14 @@ def intake(site, store, output):
     return dict(packet, intakeFile=str(path), intakeSha256=digest(path))
 
 
+def verification_directory(prefix):
+    # The renderer binds captured files to the repository. Always supply an
+    # in-repo directory, including on hosts where TMPDIR is shared or external.
+    folder = Path('reports/search-gap').resolve()
+    folder.mkdir(parents=True, exist_ok=True)
+    return tempfile.TemporaryDirectory(prefix=prefix, dir=folder)
+
+
 def recovery_preview(artifacts, approved, check_render):
     """Reconcile a historical live-only review using a separately running current build.
 
@@ -121,7 +129,7 @@ def recovery_preview(artifacts, approved, check_render):
         spec = importlib.util.spec_from_file_location('search_recovery_renderer', helper)
         renderer = importlib.util.module_from_spec(spec);spec.loader.exec_module(renderer)
         renderer.compare(approved,preview,read(artifacts['review']),require_live=False)
-        with tempfile.TemporaryDirectory(prefix='search-gap-recovery-preview-') as folder:
+        with verification_directory('search-gap-recovery-preview-') as folder:
             fresh = renderer.capture(approved['manifest'],preview['baseUrl'],str(Path(folder)/'preview.json'),comparison_only=True)
             renderer.compare(approved,fresh,read(artifacts['review']),require_live=False)
     return proof
@@ -200,7 +208,7 @@ def validate_completion(packet, completion, check_render=True):
             subprocess.run([sys.executable, helper, 'compare', '--approved', artifacts['approved'],
                             '--live', artifacts['live'], '--review', artifacts['review']], check=True, capture_output=True)
             # A saved live receipt alone cannot establish what is served now.
-            with tempfile.TemporaryDirectory(prefix='search-gap-live-') as folder:
+            with verification_directory('search-gap-live-') as folder:
                 manifest = Path(folder)/'manifest.json'
                 manifest.write_text(json.dumps(approved['manifest']))
                 fresh = str(Path(folder)/'live.json')
