@@ -1,0 +1,70 @@
+{
+ "rows": [
+  {
+   "keyword": "utma",
+   "volume": 12100,
+   "volume_low": 12100,
+   "volume_high": 12100,
+   "kd": "4",
+   "cpc": "1.81",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "utma account",
+   "volume": 22200,
+   "volume_low": 22200,
+   "volume_high": 22200,
+   "kd": "51",
+   "cpc": "1.82",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "utma custodial account",
+   "volume": 1000,
+   "volume_low": 1000,
+   "volume_high": 1000,
+   "kd": "53",
+   "cpc": "3.42",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "nerdwallet auto loan calculator",
+   "volume": 49500,
+   "volume_low": 49500,
+   "volume_high": 49500,
+   "kd": "59",
+   "cpc": "2.61",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using semrush (quality order semrush > dataforseo > ahrefs)",
+  "semrush returned volume for 4/4 phrases",
+  "kd: using semrush (quality order semrush > dataforseo > ahrefs)",
+  "Autocomplete: 4/4 rows corroborated live"
+ ]
+}

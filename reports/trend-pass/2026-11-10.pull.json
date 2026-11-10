@@ -1,0 +1,128 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window": {
+    "start": "2026-11-03",
+    "end": "2026-11-10",
+    "days": 7
+  },
+  "top_queries": [
+    {
+      "query": "nerdwallet auto loan calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 75.5
+    },
+    {
+      "query": "site:themodernwallet.com",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "utma",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 94
+    }
+  ],
+  "coverage_queries": [
+    {
+      "query": "nerdwallet auto loan calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 75.5
+    },
+    {
+      "query": "site:themodernwallet.com",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "utma",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 94
+    }
+  ],
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/guides/",
+      "clicks": 0,
+      "impressions": 31,
+      "ctr": 0,
+      "position": 5.16
+    },
+    {
+      "page": "https://www.themodernwallet.com/",
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 4.19
+    },
+    {
+      "page": "https://www.themodernwallet.com/about/",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 2.84
+    },
+    {
+      "page": "https://www.themodernwallet.com/budget/",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 6.76
+    },
+    {
+      "page": "https://www.themodernwallet.com/calculators/",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 8.2
+    },
+    {
+      "page": "https://www.themodernwallet.com/methodology/",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 4.04
+    },
+    {
+      "page": "https://www.themodernwallet.com/portfolio/",
+      "clicks": 0,
+      "impressions": 25,
+      "ctr": 0,
+      "position": 2.12
+    },
+    {
+      "page": "https://www.themodernwallet.com/investing/",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 5.25
+    },
+    {
+      "page": "https://www.themodernwallet.com/probate/",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 7.52
+    },
+    {
+      "page": "https://www.themodernwallet.com/retirement/",
+      "clicks": 0,
+      "impressions": 19,
+      "ctr": 0,
+      "position": 5
+    }
+  ],
+  "top10_pages_total_clicks": 0,
+  "top10_queries_total_clicks": 0
+}
