@@ -1,0 +1,41 @@
+{
+ "dispositions": {
+  "https://www.nerdwallet.com/financial-advisors/learn/what-is-investment-management": {
+   "disposition": "published",
+   "our_url": "https://www.themodernwallet.com/guides/what-is-investment-management/"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/fee-only-vs-fee-based-planners": {
+   "disposition": "skipped-duplicate",
+   "our_url": "https://www.themodernwallet.com/guides/financial-advisor-conflicts-of-interest/"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/financial-advisor-vs-robo-advisor": {
+   "disposition": "published",
+   "our_url": "https://www.themodernwallet.com/compare/robo-advisor-vs-financial-advisor/"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/change-financial-advisors": {
+   "disposition": "published",
+   "our_url": "https://www.themodernwallet.com/guides/when-to-switch-financial-advisors/"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/form-adv": {
+   "disposition": "published",
+   "our_url": "https://www.themodernwallet.com/guides/how-to-read-form-adv/"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/how-financial-therapist-shift-your-money-mindset": {
+   "disposition": "skipped-low-value"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/how-to-find-lgbtq-financial-advisor": {
+   "disposition": "skipped-low-value"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/registered-investment-advisor": {
+   "disposition": "skipped-duplicate",
+   "our_url": "https://www.themodernwallet.com/guides/what-is-a-registered-investment-advisor/"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/what-i-learned-from-my-first-meeting-with-a-financial-advisor": {
+   "disposition": "skipped-low-value"
+  },
+  "https://www.nerdwallet.com/financial-advisors/learn/aum-assets-under-management": {
+   "disposition": "published",
+   "our_url": "https://www.themodernwallet.com/guides/what-is-investment-management/"
+  }
+ }
+}
