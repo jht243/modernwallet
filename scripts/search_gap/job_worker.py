@@ -402,10 +402,41 @@ def invocation_owner():
     session=os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID')
     return hashlib.sha256(('search-gap-native:'+session).encode()).hexdigest() if session else None
 
+def terminal_record(site, owner):
+    """Use only the fresh invocation identity; a persisted Claude session may span schedules."""
+    if not owner or len(owner) < 16:
+        return None
+    sid = os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID')
+    if sid and owner == hashlib.sha256(('search-gap-native:' + sid).encode()).hexdigest():
+        return None
+    key = hashlib.sha256((site + '\0' + owner).encode()).hexdigest()
+    relative = 'search-gap-recovery/completed-invocations/' + key + '.json'
+    return Path(subprocess.check_output(['git', 'rev-parse', '--git-path', relative], text=True).strip())
+
+
+def save_terminal_record(path, result):
+    if path is None:
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    record = {'ok': True, 'status': 'invocation-complete', 'site': result['site'],
+              'runId': result['runId'], 'outcome': result.get('status', 'no-op'),
+              'nextAction': 'Report the verified outcome once and end this invocation. Later searches belong to the next schedule.'}
+    with tempfile.NamedTemporaryFile(mode='w', dir=path.parent, delete=False) as target:
+        json.dump(record, target)
+    os.replace(target.name, path)
+
+
 def main():
     p=argparse.ArgumentParser();p.add_argument('command',choices=['list-gaps','checkpoint','restore','adopt','finish']);p.add_argument('--site',required=True);p.add_argument('--owner',default=invocation_owner());p.add_argument('--out');p.add_argument('--intake');p.add_argument('--completion');p.add_argument('--metadata');p.add_argument('--files',nargs='*',default=[]);p.add_argument('--end-invocation', action='store_true',help='Release only this owner after the checkpoint is safely retained');p.add_argument('--checkpoint-file');p.add_argument('--days');p.add_argument('--limit');p.add_argument('--min-count');a=p.parse_args()
+    terminal = terminal_record(a.site, a.owner) if a.command in ('list-gaps', 'finish') else None
+    if a.command == 'list-gaps' and terminal and terminal.is_file():
+        print(json.dumps(read(terminal)))
+        return 0
     store=Store()
-    if a.command=='list-gaps':result=dict(intake(a.site,store,a.out,a.owner),invocationOwner=a.owner)
+    if a.command=='list-gaps':
+        result=dict(intake(a.site,store,a.out,a.owner),invocationOwner=a.owner)
+        if not result['candidateCount'] and not result['resumed']:
+            save_terminal_record(terminal, result)
     elif a.command=='restore':result=restore_artifacts(read(a.checkpoint_file))
     else:
         packet=read(a.intake);require(packet['site']==a.site,'Cross-site job refused')
@@ -427,7 +458,11 @@ def main():
             metadata['artifacts']=capture_artifacts(a.files);result=store.checkpoint_job(a.site,packet['runId'],a.owner,metadata)
             if a.end_invocation and result.get('ok',True):
                 store.release_job(a.site,packet['runId'],a.owner)
-        else:result=finish(a.intake,a.completion,store,a.owner)
+        else:
+            result=finish(a.intake,a.completion,store,a.owner)
+            if result['ok']:
+                save_terminal_record(terminal, result)
+                result['nextAction'] = 'Send the final collector report once and end this invocation. New searches belong to the next schedule.'
     print(json.dumps(result,ensure_ascii=False));return 0 if result.get('ok',True) else 1
 if __name__=='__main__':
     try:sys.exit(main())
