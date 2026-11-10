@@ -59,7 +59,7 @@ This phase IS the gate for Phase 3. It checks net-new pages and substantive new 
 - Works at 390px and desktop width, labelled controls, no console errors; the site build passes and the route rendered ✓/✗
 - Print-to-PDF (if the tool prints): only the output, white page, title + Name/Date + directions, not bunched at the top ✓/✗
 - The page prose describes the tool that was built (labels, steps, defaults, worked example match the code) ✓/✗
-Fix in place per the remediation ladder; after two failed rework attempts, stop the workflow and escalate with unresolved findings. Preserve unrelated work and do not commit, push or publish.
+For editorial Mindmap pages, publish the exact latest independently reviewed version at the site’s LIGHT (1), STANDARD (2), or HIGH (3) audit limit, including a recorded editorial FAIL. Preserve the verdict and findings. Complete the normal build, deployment and exact live comparison. Retry publication on the same version. Required professional review, testing evidence, site exclusions and explicit customer prepublication terms still apply.
 
 **For other asset rows (`template`, `comparison table/database`, `glossary/reference`, `data report`, chart, image or download):** audit the completed real asset plus its complete rendered page under `_mindmap-execution.md`. Verify source-to-output consistency, useful reader purpose, actual fields/format, accessibility/mobile behavior, exports/links and applicable boundary cases. Generated illustrations are not test evidence. A spec, placeholder or deferred human-build handoff fails; a useful finite table is acceptable when that is the approved complete deliverable. Framing prose gets the normal content/evidence review. Preserve justified no-addition and local exclusions.
 

@@ -361,7 +361,24 @@ def generation(root, plan, review, packet, slug, section=False):
 
 def audit_analysis(root, packet, review, replay):
     analysis(root, packet)
-    independent(review, packet['author'], 'packetSha256', digest(packet))
+    at_limit = False
+    if packet['basis'] != 'no-addition' and review.get('renderedReview'):
+        result = read(artifact(root, review['renderedReview']))
+        row = next((item for item in result.get('routes', []) if item.get('path', '').rstrip('/') == packet['route'].rstrip('/')), {})
+        if row.get('verdict') == 'FAIL':
+            snapshot = read(artifact(root, review.get('renderedSnapshot')))
+            spec = importlib.util.spec_from_file_location('mindmap_release_renderer', local(root, '.claude/tools/rendered-audit.py'))
+            renderer = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(renderer)
+            policy = renderer.content_review_policy()
+            require(policy and policy.capped_release(root,snapshot) and snapshot.get('contentReviewPolicy'), 'Capped release needs current Mindmap review evidence')
+            # This also checks the real last round, page, candidate and independent check results.
+            renderer.review_check(snapshot, result)
+            require(review.get('reviewer') == result['reviewer'] != packet['author'] and review.get('packetSha256') == digest(packet)
+                    and review.get('verdict') in ('PASS','FAIL'), 'Bind the analysis decision to the independently reviewed candidate')
+            at_limit = True
+    if not at_limit:
+        independent(review, packet['author'], 'packetSha256', digest(packet))
     if packet['basis'] == 'no-addition':
         decision = review.get('noAddition', {})
         require(decision.get('status') == 'PASS', 'Missing independent no-addition decision')
@@ -369,7 +386,7 @@ def audit_analysis(root, packet, review, replay):
         return True
     for key in ['usefulness', 'sourceAndAssumptions', 'conditionsAndCounterexample', 'renderedConsistency', 'localExclusions']:
         c = review.get(key, {})
-        require(c.get('status') == 'PASS', 'Missing independent analysis check: ' + key)
+        require(c.get('status') in (('PASS','FAIL') if at_limit and key!='localExclusions' else ('PASS',)), 'Missing independent analysis check: ' + key)
         content(c.get('evidence'), key + ' evidence')
     snapshot = read(artifact(root, review.get('renderedSnapshot')))
     rendered = read(artifact(root, review.get('renderedReview')))
@@ -387,8 +404,8 @@ def audit_analysis(root, packet, review, replay):
     require(rendered.get('reviewer') == review['reviewer'], 'Bind the analysis decision to its independent final rendered reviewer')
     require(rendered.get('snapshotSha256') == snapshot.get('snapshotSha256') and snapshot.get('snapshotSha256'),
             'Rendered review and snapshot disagree')
-    require(any(r.get('path', '').rstrip('/') == packet['route'].rstrip('/') and r.get('verdict') == 'PASS'
-                for r in rendered.get('routes', [])), 'Analysis route lacks a final rendered PASS')
+    require(any(r.get('path', '').rstrip('/') == packet['route'].rstrip('/') and r.get('verdict') in (('PASS','FAIL') if at_limit else ('PASS',))
+                for r in rendered.get('routes', [])), 'Analysis route lacks its verified release verdict')
     if packet['basis'] in ['calculated', 'modeled']:
         require(replay, 'Reviewer must supply a fresh independently replayed output')
         original_path = artifact(root, packet['execution']['output'])
