@@ -179,10 +179,17 @@ def finish(intake_path,completion_path,store,owner):
         raise
     return {'ok':not pending,'status':'failure' if pending else 'success','pendingCandidates':pending,'site':packet['site'],'runId':packet['runId'],'durableJob':True}
 
+def invocation_owner():
+    if os.environ.get('WORKFLOW_RUN_ID'):return os.environ['WORKFLOW_RUN_ID']
+    # Legacy cloud prompts predate --owner. Bind them to the real native
+    # invocation, never a random per-command ID or another run's saved owner.
+    session=os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID')
+    return hashlib.sha256(('search-gap-native:'+session).encode()).hexdigest() if session else None
+
 def main():
-    p=argparse.ArgumentParser();p.add_argument('command',choices=['list-gaps','checkpoint','restore','adopt','finish']);p.add_argument('--site',required=True);p.add_argument('--owner',default=os.environ.get('WORKFLOW_RUN_ID'));p.add_argument('--out');p.add_argument('--intake');p.add_argument('--completion');p.add_argument('--metadata');p.add_argument('--files',nargs='*',default=[]);p.add_argument('--checkpoint-file');p.add_argument('--days');p.add_argument('--limit');p.add_argument('--min-count');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('command',choices=['list-gaps','checkpoint','restore','adopt','finish']);p.add_argument('--site',required=True);p.add_argument('--owner',default=invocation_owner());p.add_argument('--out');p.add_argument('--intake');p.add_argument('--completion');p.add_argument('--metadata');p.add_argument('--files',nargs='*',default=[]);p.add_argument('--checkpoint-file');p.add_argument('--days');p.add_argument('--limit');p.add_argument('--min-count');a=p.parse_args()
     store=Store()
-    if a.command=='list-gaps':result=intake(a.site,store,a.out,a.owner)
+    if a.command=='list-gaps':result=dict(intake(a.site,store,a.out,a.owner),invocationOwner=a.owner)
     elif a.command=='restore':result=restore_artifacts(read(a.checkpoint_file))
     else:
         packet=read(a.intake);require(packet['site']==a.site,'Cross-site job refused')
