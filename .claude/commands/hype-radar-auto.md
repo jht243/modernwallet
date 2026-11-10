@@ -32,6 +32,8 @@ Scans Hacker News, Google Trends daily RSS and Reddit; keeps a name only when it
 
 `candidates: []` → exit 0. Done.
 
+Before dispatching the independent content audit, seal its current rendered handoff and include its exact path in the prompt. The reviewer finishes AUDIT preflight and reserves the round before auditing. Complete link/build checks before the final review so the published version matches that review.
+
 If the pull reports an existing reviewed production job, continue from its saved chart, draft and audit. Skip STEP 2 and all new research or chart work for that intake.
 
 ## STEP 2 — Send them all

@@ -33,6 +33,15 @@ def bind(payload):
    repeat_build='build' in role or ('build' in description and 'preview' not in description)
    if editorial or repeat_build:
     print('This search job already has its independent final decisions. Reuse '+saved['completionFile']+' and perform only the separate-preview reconciliation and native finish. Preserve all reviews and counters.',file=sys.stderr);raise SystemExit(2)
+
+ hype=root/'scripts/hype_radar/handoff.py'
+ if hype.is_file() and (hype.parent/'production_recovery.py').is_file():
+  spec=importlib.util.spec_from_file_location('native_hype_dispatch',hype)
+  radar=importlib.util.module_from_spec(spec);spec.loader.exec_module(radar)
+  if hasattr(radar,'guard_paid_dispatch'):
+   try:radar.guard_paid_dispatch(root,payload)
+   except ValueError as error:
+    print(str(error),file=sys.stderr);raise SystemExit(2)
  helper=root/'.claude/tools/competitor-handoff.py'
  inline=False
  if helper.is_file() and worker_tag(payload):

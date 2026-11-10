@@ -195,6 +195,42 @@ def active_pull(root, payload):
     return source
 
 
+
+def guard_paid_dispatch(root,payload):
+    session = active_session() or payload.get("session_id")
+    if not session:
+        return
+    active = marker(root,session)
+    if not active.is_file():
+        return
+    source = root/active.read_text()
+    receipt = source.parent/"reviewed"/source.name
+    if not receipt.is_file():
+        return
+    proof = json.loads(receipt.read_bytes())
+    validate_proof(source,proof)
+    task = payload.get("tool_input",{})
+    role = (str(task.get("subagent_type",""))+" "+str(task.get("description",""))).casefold()
+    chart = "chart" in role or re.search(r"\bbuild\b",role) and "preview" not in role
+    if chart and "render" not in role:
+        raise ValueError("The original Hype chart was independently reviewed. Use its preserved review, source and candidate. Resume production without repeating BUILD or chart review.")
+    if not any(label in role for label in ("auditor","audit","phase 4","phase-4","phase4")):
+        return
+    native = root/".claude/tools/workflow-handoff.py"
+    if not native.is_file(): return
+    spec = importlib.util.spec_from_file_location("hype_stage_handoff",native)
+    module = importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+    for rel in set(re.findall(r"reports/[A-Za-z0-9._/-]+[.]json",str(task.get("prompt","")))):
+        path = (root/rel).resolve()
+        if not path.is_relative_to(root/"reports") or not path.is_file(): continue
+        try: handoff = json.loads(path.read_bytes())
+        except (UnicodeDecodeError,ValueError):continue
+        if not isinstance(handoff,dict) or handoff.get("jobId") != proof["job"] or not handoff.get("snapshot"):continue
+        module.focused(root,path,"audit")
+        return
+    raise ValueError("Before dispatching the independent content auditor, MAIN must seal the actual rendered AUDIT handoff for this Hype job and include its reports/...json path in the prompt. The auditor completes current preflight and reserves the real round before judging the page.")
+
+
 def report_guard(root, payload):
     command = payload.get("tool_input", {}).get("command", "")
     if "/api/routine-run" not in command:
@@ -219,11 +255,13 @@ def report_guard(root, payload):
                 return
     except (ValueError,OSError,AttributeError):
         pass
-    print(f"Pending Hype candidates cannot be reported as a no-op or success. Dispatch BUILD with {source.relative_to(root)}. Only a prepared failure report can be submitted before independent chart accounting.",file=sys.stderr)
+    print(f"Pending Hype candidates cannot be reported as a no-op or success. Dispatch BUILD with {source.relative_to(root)}. For a genuine terminal failure, post the existing native failure JSON with curl --data-binary @/absolute/path/report.json as a separate command. Keep the original work pending.",file=sys.stderr)
     raise SystemExit(2)
 
 
 def stop(root, payload):
+    if payload.get('hook_event_name') == 'Stop' and payload.get('stop_hook_active') is True:
+        return  # The first reminder fired; report_guard still refuses false success.
     source = active_pull(root,payload)
     if source is None:
         return
