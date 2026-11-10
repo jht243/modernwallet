@@ -1,0 +1,544 @@
+---
+mindmap_pass_date: 2026-11-10
+source: "competitor-monitor-auto 2026-11-10: ten NerdWallet financial-advisor learn pages from frozen intake 18b9b55e45cc; dispatcher-recorded unattended owner authorization in readiness.md; revision 2 after independent chart review FAIL"
+interpreted_brief: "NerdWallet published or updated ten financial-advisor explainers (investment management, fee-only vs fee-based, robo vs advisor, switching advisors, Form ADV, financial therapist, LGBTQ advisor, RIA, first meeting, AUM). The site already covers RIA and fee-only vs fee-based, but not investment management or AUM as definitions, a robo-vs-human comparison, leaving an advisor, or reading Form ADV. This run builds four original primary-source pages for US readers (investment management with an AUM section, robo vs advisor, switching advisors, Form ADV); competitor text is topic evidence only; the other candidates get independent skip decisions."
+status: ready-for-approval
+---
+
+# Content approval plan
+
+## Action chart
+
+| Problem | Solution | Bucket | Target (file or route) | Format | Best medium | Resolved deliverable | SERP verdict | SERP evidence | Reader question | Answer | Answer placement | ID |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Lens 1 direct intent (competitor monitor: NerdWallet robo-advisors vs financial advisors) plus Lens 3 comparison format. Head 'robo advisor vs financial advisor': autocomplete estimate 75-750/mo, NOT measured. lookup: /guides/what-is-a-robo-advisor/ - reader learns what a robo is and who it does not fit (fit table; its section links to the worth-it guide for the comparison); /guides/financial-advisor-worth-it/ - reader judges the break-even of paying any advisor; its H2 'Robo-advisor vs. financial advisor: a quick side-by-side' is an unsourced short pick; /compare/ai-investing-vs-robo-advisors/ - AI apps vs robos; /roundup/best-robo-advisors/ - vendor picks. No existing /compare/ page is the human-vs-robo decision; git-dedup.txt shows no commit creates the route. | Create /compare/robo-advisor-vs-financial-advisor targeting 'robo advisor vs financial advisor' [comparison, answer-first pick with boundary] | create new content | /compare/robo-advisor-vs-financial-advisor | comparison table/database | text | comparison table/database | unread | SERP not read: DataForSEO unavailable (no credentials); no PAA | Should I use a robo-advisor or a human financial advisor? [PAA unavailable (SERP unread, no DataForSEO credentials); ac head sweep 4 sweeps, 38 unique completions saved; on-topic question forms: are robo advisors better than financial advisors / is a robo advisor a good idea / is robo advisor good / robo advisor or financial advisor / robo advisor vs financial planner; off-topic: a literature-review paper title] | Pick a robo-advisor if you want low-cost automated investing for a defined goal and accept little human contact; pick a human adviser if you need advice beyond investing or want a person to talk to; if your human advisor is a registered investment adviser the duty of care matches the robo-advisor's, but a broker or dual registrant may be held to a different standard, so read each firm's Form CRS and Form ADV Part 2. (pick with its boundary) | section 1 "Robo-Advisor or Financial Advisor: Which Fits Your Situation" | A1 |
+| Lens 1 direct intent (competitor monitor: NerdWallet when and how to switch advisors). Head 'switch financial advisors': autocomplete estimate 75-750/mo, NOT measured. lookup: /guides/financial-advisor-conflicts-of-interest/ - reader wants to spot conflicts and verify disclosures; its 'Getting a Second Opinion on Large Decisions' mentions 'a switch of investments' (a product), not changing firms; /guides/how-to-choose-a-financial-advisor/ - reader hiring a first advisor. No page covers leaving an advisor, contract terms or account transfers; git-dedup.txt shows no commit creates the route. | Create /guides/when-to-switch-financial-advisors targeting 'switch financial advisors' [article with numbered sequence and a step table] | create new content | /guides/when-to-switch-financial-advisors | article | text | text | unread | SERP not read: DataForSEO unavailable (no credentials); no PAA | When should I switch financial advisors, and how do I do it? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 13/28 on-topic in the saved sweep: should i switch financial advisors / how to change financial advisors / why change financial advisors / is it hard to switch financial advisors / what happens when you switch financial advisors / does it cost money to switch financial advisors / can you switch financial advisors; 15/28 off-topic: Canada, UK, India and brand-specific variants] | Switch when your adviser's services, cost or conflicts no longer fit what you need, then move in order: read your advisory contract for termination and fee terms, choose and check the new adviser, open the new account, and let the receiving firm start the account transfer instead of selling everything yourself; retirement accounts move the same way, only slower, and a direct transfer or direct rollover avoids the 60-day and once-per-year rollover limits the IRS applies to money paid to you. (method with the sequence) | section 1 "When to Switch and the Steps to Do It in Order" | A2 |
+| Lens 1 direct intent (competitor monitor: NerdWallet use Form ADV to check an advisor). Head 'how to read form adv': autocomplete estimate 10-100/mo; 'form adv' 50-500/mo, NOT measured; many 'form adv' completions are off-topic senses. lookup: /guides/what-is-a-registered-investment-advisor/ - reader wants who RIAs are and how to check one; its 'How to Check an RIA Before You Hire One' names Form ADV Part 2 and Form CRS in one paragraph; /guides/financial-advisor-conflicts-of-interest/ - reader wants conflict types; its 'How to Verify Advisor Disclosures' describes Part 2 in one sentence. Neither walks the form's parts or items; git-dedup.txt shows no commit creates the route. | Create /guides/how-to-read-form-adv targeting 'how to read form adv' [article with reading sequence and a parts table] | create new content | /guides/how-to-read-form-adv | article | text | text | unread | SERP not read: DataForSEO unavailable (no credentials); no PAA | How do I read a financial advisor's Form ADV? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 14/46 on-topic in the saved sweep: what is form adv / part 2a / part 2b / part 3 / how to search form adv / how to download form adv / is form adv public / is form adv annual; 32/46 off-topic: parole, adverb, form W/E/NR variants] | Find the firm on the SEC's IAPD site through Investor.gov's Check Out Your Investment Professional tool, then read the Part 2A brochure first because the SEC calls it the primary disclosure document (fees, conflicts, discipline), use the Part 2B supplement for the individual who advises you, the Part 3 relationship summary to compare firms and Part 1 for ownership and disciplinary data; this reading order is our editorial judgment, not an SEC instruction, and anything unclear becomes a question for the adviser. (method with the reading order) | section 1 "How to Find and Read Form ADV, in the Order That Helps" | A3 |
+| Lens 1 direct intent (competitor monitor: NerdWallet investment management and AUM, two candidates, one reader decision). Heads 'what is investment management' 500-5000/mo and 'what is aum in finance' 250-2500/mo, estimates NOT measured. lookup: /guides/what-does-a-financial-advisor-do/ - reader compares advisor, credit counselor and coach roles (no 'investment management' or AUM text); /compare/financial-advisor-vs-wealth-manager/ - lists investment management as a service row; /compare/flat-fee-vs-aum-based-financial-advisors/ - AUM as a fee model, defined inline as 'a percentage of the assets they oversee'; /guides/what-is-a-registered-investment-advisor/ - 'regulatory assets under management' for registration thresholds and a one-line 'percentage of assets under management' pay statement. No page defines investment management or AUM or frames DIY-vs-hire; git-dedup.txt shows no commit creates the route. | Create /guides/what-is-investment-management targeting 'what is investment management' and 'what is aum' [article, answer-first, with an AUM section] | create new content | /guides/what-is-investment-management | article | text | text | unread | SERP not read: DataForSEO unavailable (no credentials); no PAA | What is investment management, and should I do it myself or hire someone? [PAA unavailable (SERP unread, no DataForSEO credentials); ac head sweep 63 rows: on-topic what is investment management / is investment management the same as wealth management / same as asset management; off-topic: careers, interviews, firm names (about 40/63)]. Also serves: What does assets under management (AUM) mean? [ac 35 rows: what does assets under management mean / what are assets under management fees / how does assets under management work / what is included in assets under management; off-topic: firm AUM totals] | Investment management is choosing, monitoring and adjusting investments for a goal: you can do it yourself, where you are responsible for every decision and should start from a financial plan, or hire a registered investment adviser, who typically gives ongoing advice and monitoring for a fee based on the value of the assets in your account, called assets under management (AUM); decide by the services you need, the all-in cost and the adviser's conflicts. (definition with the DIY-vs-hire verdict) | section 1 "What Investment Management Is and Whether to Do It Yourself" | A4 |
+
+## Emerging search patterns (clusters)
+
+- **cluster:** Financial advisor decisions A1
+**members:** robo advisor vs financial advisor; Should I use a robo-advisor or a human financial advisor?
+**why:** coverage gap at theme level (neighbouring decisions are covered)
+**coverage:** partial
+**lever:** create new content
+**target:** /compare/robo-advisor-vs-financial-advisor
+**format:** comparison table/database
+**medium:** text
+**serp:** unread
+- **cluster:** Financial advisor decisions A2
+**members:** switch financial advisors; When should I switch financial advisors, and how do I do it?
+**why:** coverage gap at theme level (neighbouring decisions are covered)
+**coverage:** partial
+**lever:** create new content
+**target:** /guides/when-to-switch-financial-advisors
+**format:** article
+**medium:** text
+**serp:** unread
+- **cluster:** Financial advisor decisions A3
+**members:** how to read form adv; How do I read a financial advisor's Form ADV?
+**why:** coverage gap at theme level (neighbouring decisions are covered)
+**coverage:** partial
+**lever:** create new content
+**target:** /guides/how-to-read-form-adv
+**format:** article
+**medium:** text
+**serp:** unread
+- **cluster:** Financial advisor decisions A4
+**members:** what is investment management; what is aum; What is investment management, and should I do it myself or hire someone?
+**why:** coverage gap at theme level (neighbouring decisions are covered)
+**coverage:** partial
+**lever:** create new content
+**target:** /guides/what-is-investment-management
+**format:** article
+**medium:** text
+**serp:** unread
+
+## Exclusions
+
+- NerdWallet fee-only-vs-fee-based and registered-investment-advisor: skipped-duplicate against pages named in candidateDispositions (independently confirmed).
+- NerdWallet financial therapist: skipped; mental-health-adjacent with no supportable primary-source basis or professional-review path.
+- NerdWallet LGBTQ-supportive advisor: skipped and deferred; no objective primary-source ranking for this run; a non-ranking vetting guide is a possible later page.
+- NerdWallet first-meeting story: skipped; first-person experience; reader intent covered by questions-to-ask-a-financial-advisor.
+- Measured volumes, KD and SERP/PAA unavailable (no provider keys); labelled estimate only. Generation runs on the gemini-3.8-flash fallback because Anthropic keys have no credit.
+- Isolation: A2 and A3 cross-link and every new page is linked from existing pages; if a page is deferred its links are removed.
+
+## New-page briefs
+
+### A1 — /compare/robo-advisor-vs-financial-advisor
+
+**Identity**
+
+**title:** Robo-Advisor vs Financial Advisor: Which Fits You?
+**h1:** Robo-Advisor vs Financial Advisor: Which One Fits You?
+**metaDescription:** Compare a robo-advisor and a human financial advisor on cost, human contact, services and standard of care, and see which fits your balance and needs.
+**pageType:** comparison (floor 1,500 words)
+**format:** comparison table/database
+**medium:** comparison table/database
+
+**Reader and answer**
+
+**question:** Should I use a robo-advisor or a human financial advisor? [PAA unavailable (SERP unread, no DataForSEO credentials); ac head sweep 4 sweeps, 38 unique completions saved; on-topic question forms: are robo advisors better than financial advisors / is a robo advisor a good idea / is robo advisor good / robo advisor or financial advisor / robo advisor vs financial planner; off-topic: a literature-review paper title]
+**answer:** Pick a robo-advisor if you want low-cost automated investing for a defined goal and accept little human contact; pick a human adviser if you need advice beyond investing or want a person to talk to; if your human advisor is a registered investment adviser the duty of care matches the robo-advisor's, but a broker or dual registrant may be held to a different standard, so read each firm's Form CRS and Form ADV Part 2. (pick with its boundary)
+**placement:** section 1 "Robo-Advisor or Financial Advisor: Which Fits Your Situation"
+**audience:** US readers making this decision, including first-time readers and current clients.
+**searchIntent:** informational with a deciding question
+
+**Keyword evidence**
+
+Google Autocomplete estimate bands, US, checked 2026-11-10, source: estimate, NOT measured (keyword-volumes.json): 'robo advisor vs financial advisor' 75-750/mo (exact autocomplete match, 5 completions); no supporting measured data. No SEMRUSH or DataForSEO data (no keys); KEYWORD_PROVIDERS=semrush,dataforseo pin retained. Question sweeps saved to the autocomplete CSVs listed in evidenceFiles. Stop reason: free sweeps complete; no paid provider usable. Competitor signal: NerdWallet published or updated this topic 2026-11-09 (frozen intake).
+
+**SERP and questions**
+
+SERP not read (DataForSEO unavailable); no PAA. Question evidence is the saved autocomplete sweep cited in the reader question. FAQ spec = on-topic sweep rows, edits labeled editorial. Opportunity unknown.
+
+**Why a new page**
+
+Existing matches: (1) /guides/financial-advisor-worth-it/ H2 'Robo-advisor vs. financial advisor: a quick side-by-side' - a reader deciding whether any advisor is worth the fee gets a four-paragraph pick there, with unsourced '0.25% vs 1%' figures; (2) /guides/what-is-a-robo-advisor/ - a reader learning what a robo is; its 'Who a Robo-Advisor Does Not Fit' section hands the comparison off to (1); (3) /compare/ai-investing-vs-robo-advisors/ and the best-robo-advisors roundup serve other intents. None gives a head-to-head decision in comparison format (contact, pay, scope, standard of conduct, where each is disclosed) for this query family, which is a comparison-intent search (est. 75-750/mo). The /compare/ route is justified only as that format; the page will not restate or conflict with (1): it carries no percentage-fee benchmarks of its own, only the SEC bulletin's own $3/$5/$10 subscription example and links to the flat-fee vs AUM comparison and the roundup for dated figures. git-dedup.txt: no commit creates /compare/robo-advisor-vs-financial-advisor. Decision: create, conditional on Phase 4 overlap checks against (1) and (2).
+
+**Planned outline**
+
+- 1 Robo-Advisor or Financial Advisor: Which Fits Your Situation: direct pick and boundary in sentences 1-2; decision rules by need (one defined goal with little human contact vs advice across taxes/estate/complex situations vs wanting a person to call)
+- 2 Side-by-Side Comparison: GFM table with rows human contact, how paid, services and scope, what it needs from you, standard of conduct by registration type, where disclosed; every cell from the SEC OIEA bulletins, investor.gov and Form CRS capture
+- 3 What Each Costs You: asset-based vs subscription fees; SEC bulletin example of $3, $5 or $10 per month on small robo accounts; a lower advisory fee is not a lower total cost (bulletin: ask about all costs); links to the flat-fee vs AUM comparison and best-robo-advisors for dated figures; no new price claims
+- 4 How Much Human Contact You Get: SEC bulletin tiers (hybrid, technical support only, minimum-balance access, no initial conversation); questions to ask
+- 5 Duty of Care Depends on How Your Advisor Is Registered: a registered investment adviser, robo or human, owes the adviser fiduciary duty of care and loyalty (SEC chairman); a broker is held to Regulation Best Interest; dual registrants switch roles; Form CRS states which applies
+- 6 Who Each Option Is Not For and What Would Change the Answer: robo not for readers needing tax/estate planning or phone access; human adviser not for a small balance with one simple goal; a hybrid robo, or a broker-only 'advisor', changes the answer
+- FAQ (rows present in the saved sweeps): Are robo-advisors better than financial advisors? Is a robo-advisor a good idea? Robo-advisor vs financial planner: what is the difference? (editorial rewording of the sweep row 'robo advisor vs financial planner')
+
+**Contribution and evidence**
+
+Basis reported. Contribution: the head-to-head decision on one page with the comparison table and the registration-type condition that the neighbouring pages leave out, built only from the SEC robo bulletin, the SEC subscription-fee bulletin, investor.gov adviser and Form CRS pages and the SEC chairman's fiduciary/Reg BI statement. No modeling or test. Sources saved 2026-11-10 (or the dates stated) in evidence/robo-advisor-vs-financial-advisor/sources.md with hashes in evidence.json.
+
+**Tables, tools or visuals**
+
+One GFM table, rows: human contact, how paid, services/scope, what it needs from you, standard of conduct by registration type, where disclosed; columns: robo-advisor, human adviser (registered investment adviser), broker or dual registrant. Every cell carries a sourced fact or 'not stated in sources read'; no price benchmarks beyond the SEC $3/$5/$10 illustration.
+
+**Testing and review**
+
+TESTED excluded: financial advice topics are outside _experience.md section G and no executed tests exist. Ordinary presentation; no 'we tested' or modeling attribution; third-person attribution to the named regulator; editorial judgments labeled. Byline via the existing template; no professional-review claim; YMYL not-advice disclaimer at the bottom only.
+
+**Planned takeaway**
+
+A robo-advisor fits a reader who wants low-cost automated investing for a defined goal and accepts little human contact; a human adviser fits a reader who needs advice beyond investing or wants a person to call. If the human is a registered investment adviser the duty of care and loyalty is the same as a robo-advisor's; if the person is a broker or dual registrant a different standard may apply, shown in Form CRS. Evidence basis: reported (SEC OIEA bulletins, investor.gov, SEC chairman statement). Changes if a robo offers a hybrid human adviser at your balance, or the human is broker-only. Next step: read both firms' relationship summaries and Form ADV Part 2 and compare all-in cost and human access before opening an account.
+
+**Inbound internal links**
+
+**required:** 2
+**placements:** - **source:** /guides/financial-advisor-worth-it/
+**target:** /compare/robo-advisor-vs-financial-advisor
+**section:** Robo-advisor vs. financial advisor: a quick side-by-side
+**anchor:** robo-advisor vs financial advisor
+**purpose:** the H2 gives a short unsourced pick; the new page is the full sourced head-to-head
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-inbound-robo-advisor-vs-financial-advisor.txt
+**sha256:** 4b1f88a127c2fc0fc92b72695291ebf3ab2fc66e34af71d2b233428e1bcdc009
+- **source:** /guides/what-is-a-robo-advisor/
+**target:** /compare/robo-advisor-vs-financial-advisor
+**section:** Who a Robo-Advisor Does Not Fit
+**anchor:** robo-advisor vs financial advisor
+**purpose:** the section hands the comparison off to the worth-it guide; the new page is the direct comparison
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-inbound-robo-advisor-vs-financial-advisor.txt
+**sha256:** 4b1f88a127c2fc0fc92b72695291ebf3ab2fc66e34af71d2b233428e1bcdc009
+
+**Outbound internal links**
+
+**placements:** - **source:** /compare/robo-advisor-vs-financial-advisor
+**target:** /guides/what-is-a-robo-advisor/
+**section:** Section 4 human contact
+**anchor:** what a robo-advisor is
+**purpose:** definition and what to check before opening an account
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-robo-advisor-vs-financial-advisor.txt
+**sha256:** f10556a4d4c77b7d81bfb732c80b68fa36efe70597966a75b83f2d2593f2789c
+- **source:** /compare/robo-advisor-vs-financial-advisor
+**target:** /compare/flat-fee-vs-aum-based-financial-advisors/
+**section:** Section 3 costs
+**anchor:** flat-fee vs AUM advisor comparison
+**purpose:** dollar crossover benchmarks for human advisors
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-robo-advisor-vs-financial-advisor.txt
+**sha256:** f10556a4d4c77b7d81bfb732c80b68fa36efe70597966a75b83f2d2593f2789c
+- **source:** /compare/robo-advisor-vs-financial-advisor
+**target:** /roundup/best-robo-advisors/
+**section:** Section 3 costs
+**anchor:** best robo-advisors
+**purpose:** dated vendor fees and minimums
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-robo-advisor-vs-financial-advisor.txt
+**sha256:** f10556a4d4c77b7d81bfb732c80b68fa36efe70597966a75b83f2d2593f2789c
+- **source:** /compare/robo-advisor-vs-financial-advisor
+**target:** /guides/financial-advisor-worth-it/
+**section:** Section 6 who not for
+**anchor:** is a financial advisor worth it
+**purpose:** break-even math for paying any advisor
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-robo-advisor-vs-financial-advisor.txt
+**sha256:** f10556a4d4c77b7d81bfb732c80b68fa36efe70597966a75b83f2d2593f2789c
+- **source:** /compare/robo-advisor-vs-financial-advisor
+**target:** /guides/what-is-a-fiduciary/
+**section:** Section 5 duty of care
+**anchor:** what a fiduciary is
+**purpose:** who owes which standard of conduct
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-robo-advisor-vs-financial-advisor.txt
+**sha256:** f10556a4d4c77b7d81bfb732c80b68fa36efe70597966a75b83f2d2593f2789c
+
+**Technical and measurement scope**
+
+New entry in src/data/comparisons.ts (existing template; JSON-LD, canonical and sitemap derive from it), published 2026-11-10. Inbound edits: existing-anchor links where marked, otherwise the declared one-sentence link insertions in the inspection file; no dateModified bump; each touched page is re-captured and reviewed. IndexNow after exact live verification. growth.json: baseline unavailable (not zero), metric GSC clicks, no uplift claimed. Isolation: if this page is deferred, remove its links from the other new pages and the inbound edits.
+
+### A2 — /guides/when-to-switch-financial-advisors
+
+**Identity**
+
+**title:** When to Switch Financial Advisors and How to Do It
+**h1:** When Should You Switch Financial Advisors?
+**metaDescription:** Checks that show it may be time to switch financial advisors, what to read in your contract, how account transfers work and what to avoid while they run.
+**pageType:** explainer (floor 1,200 words)
+**format:** article
+**medium:** text
+
+**Reader and answer**
+
+**question:** When should I switch financial advisors, and how do I do it? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 13/28 on-topic in the saved sweep: should i switch financial advisors / how to change financial advisors / why change financial advisors / is it hard to switch financial advisors / what happens when you switch financial advisors / does it cost money to switch financial advisors / can you switch financial advisors; 15/28 off-topic: Canada, UK, India and brand-specific variants]
+**answer:** Switch when your adviser's services, cost or conflicts no longer fit what you need, then move in order: read your advisory contract for termination and fee terms, choose and check the new adviser, open the new account, and let the receiving firm start the account transfer instead of selling everything yourself; retirement accounts move the same way, only slower, and a direct transfer or direct rollover avoids the 60-day and once-per-year rollover limits the IRS applies to money paid to you. (method with the sequence)
+**placement:** section 1 "When to Switch and the Steps to Do It in Order"
+**audience:** US readers making this decision, including first-time readers and current clients.
+**searchIntent:** informational with a deciding question
+
+**Keyword evidence**
+
+Google Autocomplete estimate bands, US, checked 2026-11-10, source: estimate, NOT measured (keyword-volumes.json): 'when to switch financial advisors' 75-750/mo (exact autocomplete match, 3 completions); no supporting measured data. No SEMRUSH or DataForSEO data (no keys); KEYWORD_PROVIDERS=semrush,dataforseo pin retained. Question sweeps saved to the autocomplete CSVs listed in evidenceFiles. Stop reason: free sweeps complete; no paid provider usable. Competitor signal: NerdWallet published or updated this topic 2026-11-09 (frozen intake).
+
+**SERP and questions**
+
+SERP not read (DataForSEO unavailable); no PAA. Question evidence is the saved autocomplete sweep cited in the reader question. FAQ spec = on-topic sweep rows, edits labeled editorial. Opportunity unknown.
+
+**Why a new page**
+
+Existing matches: /guides/financial-advisor-conflicts-of-interest/ (reader screens an advisor for conflicts; the only switching mention is 'a switch of investments' inside the second-opinion section) and /guides/how-to-choose-a-financial-advisor/ (reader hiring; Step 4 verifies a new advisor and Step 5 asks 'what happens to my accounts if you leave or retire', which is the departing advisor, not leaving one). Neither covers a client's exit: reading the contract, how an account transfer is started and what slows it, or the retirement-account transfer type. The saved sweep shows 13 on-topic switching questions (should/how/why/is it hard/what happens/does it cost). git-dedup.txt: no commit or route for the slug. Decision: create.
+
+**Planned outline**
+
+- 1 When to Switch and the Steps to Do It in Order: direct answer and numbered sequence (contract, new adviser check, open account, receiving firm starts transfer, avoid trading during it, confirm and close) in section 1, with a step table (Step / Who acts / What to check / Source)
+- 2 Checks That Show the Advice or Fees No Longer Fit: investor.gov selection questions (services, cost, how paid, conflicts, disciplinary history) turned into checks; no unsupported statistics on why people switch
+- 3 What to Read in Your Advisory Contract Before You Leave: investor.gov says the contract sets services and fees; Form ADV Part 2A states how the firm bills and its fee schedule; termination terms are in the contract itself, so read it and ask in writing; no standard term is asserted
+- 4 How to Check the New Adviser: search the person and the firm on IAPD, read the Form ADV Part 2 brochure and relationship summary (link to the Form ADV guide)
+- 5 How the Account Moves: receiving firm and Transfer Initiation Form, ACATS validation and delivery of about three to four business days for broker-dealer accounts, longer for IRAs and for bank, credit-union or fund sources, receiving firm may refuse nontransferable assets and must notify you of alternatives, trading during transfer can delay or freeze it
+- 6 Retirement Money: Direct Transfer vs a Check to You: IRS words: money can be directly transferred or rolled over within 60 days; the one-per-year limit does not apply to trustee-to-trustee transfers or direct rollovers; if taxes are withheld on money paid to you the withheld amount must be made up from other funds; tax effects of selling are not covered by the sources read, so say to ask a tax professional
+- 7 Who This Is Not For and What Would Change the Answer: a contract with termination charges, nontransferable proprietary assets, or a pending tax event can change the answer; a short-term market move is not by itself a check from section 2
+- FAQ (rows present in the saved sweep): Is it hard to switch financial advisors? Does it cost money to switch financial advisors? (answer: the sources read state no standard charge; read the contract and ask both firms) What happens when you switch financial advisors? Can you switch financial advisors?
+
+**Contribution and evidence**
+
+Basis reported. Contribution: one ordered procedure for leaving an adviser that joins the adviser-selection questions, contract/Form ADV Part 2A, FINRA account-transfer facts and IRS rollover wording, which no existing page combines; conditions stated where sources are silent (termination charges, tax on sales). No modeling or test. Sources saved 2026-11-10 (or the dates stated) in evidence/when-to-switch-financial-advisors/sources.md with hashes in evidence.json.
+
+**Tables, tools or visuals**
+
+One step table, columns Step / Who acts / What to check / Source, rows: read contract, check new adviser, open new account, receiving firm starts transfer, avoid trading during transfer, confirm assets arrived. No calculator or visual adds value; cells cite only the sources read.
+
+**Testing and review**
+
+TESTED excluded: financial advice topics are outside _experience.md section G and no executed tests exist. Ordinary presentation; no 'we tested' or modeling attribution; third-person attribution to the named regulator; editorial judgments labeled. Byline via the existing template; no professional-review claim; YMYL not-advice disclaimer at the bottom only.
+
+**Planned takeaway**
+
+Switch when your adviser's services, all-in cost or conflicts no longer fit what you need, and move in order: read your contract, check the new adviser on IAPD, open the new account and let the receiving firm start the transfer rather than selling or taking a check yourself. Applies to clients of SEC- or state-registered advisers and broker-dealers in the US. Evidence basis: reported (investor.gov, FINRA, IRS). Changes if your contract has termination charges, some assets cannot transfer, or the account is a retirement account where a payment to you triggers withholding and rollover limits. Next step: read your current contract's termination and fee terms before asking the new firm for its Transfer Initiation Form.
+
+**Inbound internal links**
+
+**required:** 2
+**placements:** - **source:** /guides/financial-advisor-conflicts-of-interest/
+**target:** /guides/when-to-switch-financial-advisors
+**section:** Getting a Second Opinion on Large Decisions
+**anchor:** when to switch financial advisors
+**purpose:** the section covers a second opinion; if it leads to changing firms the new page is the process
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-inbound-when-to-switch-financial-advisors.txt
+**sha256:** f87cc7d29c188a762c8a6928a99a2de45e5e1a7db0463a5ec2e85a45afebf50e
+- **source:** /guides/how-to-choose-a-financial-advisor/
+**target:** /guides/when-to-switch-financial-advisors
+**section:** Step 4: Verify the advisor before you hire
+**anchor:** when to switch financial advisors
+**purpose:** readers verifying a new advisor are often replacing one; the new page covers the move
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-inbound-when-to-switch-financial-advisors.txt
+**sha256:** f87cc7d29c188a762c8a6928a99a2de45e5e1a7db0463a5ec2e85a45afebf50e
+
+**Outbound internal links**
+
+**placements:** - **source:** /guides/when-to-switch-financial-advisors
+**target:** /guides/how-to-choose-a-financial-advisor/
+**section:** Section 4 how to check the new adviser
+**anchor:** guide to choosing a financial advisor
+**purpose:** full hiring steps
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-when-to-switch-financial-advisors.txt
+**sha256:** 23c682119184872a90dcbb4ca731edf78ca0547a15160f358899b07b9b5ffd82
+- **source:** /guides/when-to-switch-financial-advisors
+**target:** /guides/how-to-read-form-adv/
+**section:** Sections 3 and 4
+**anchor:** how to read Form ADV
+**purpose:** where billing and fee schedule are disclosed
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-when-to-switch-financial-advisors.txt
+**sha256:** 23c682119184872a90dcbb4ca731edf78ca0547a15160f358899b07b9b5ffd82
+- **source:** /guides/when-to-switch-financial-advisors
+**target:** /guides/financial-advisor-conflicts-of-interest/
+**section:** Section 2 checks
+**anchor:** advisor conflicts of interest guide
+**purpose:** how to spot the conflicts that justify leaving
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-when-to-switch-financial-advisors.txt
+**sha256:** 23c682119184872a90dcbb4ca731edf78ca0547a15160f358899b07b9b5ffd82
+- **source:** /guides/when-to-switch-financial-advisors
+**target:** /guides/questions-to-ask-a-financial-advisor/
+**section:** Section 4 new adviser
+**anchor:** questions to ask a financial advisor
+**purpose:** interview list for the new adviser
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-when-to-switch-financial-advisors.txt
+**sha256:** 23c682119184872a90dcbb4ca731edf78ca0547a15160f358899b07b9b5ffd82
+
+**Technical and measurement scope**
+
+New entry in src/data/guides.ts (existing template; JSON-LD, canonical and sitemap derive from it), published 2026-11-10. Inbound edits: existing-anchor links where marked, otherwise the declared one-sentence link insertions in the inspection file; no dateModified bump; each touched page is re-captured and reviewed. IndexNow after exact live verification. growth.json: baseline unavailable (not zero), metric GSC clicks, no uplift claimed. Isolation: if this page is deferred, remove its links from the other new pages and the inbound edits.
+
+### A3 — /guides/how-to-read-form-adv
+
+**Identity**
+
+**title:** How to Read Form ADV Before You Hire an Advisor
+**h1:** How to Read a Financial Advisor's Form ADV
+**metaDescription:** Learn what Form ADV Part 1, the Part 2A brochure, the Part 2B supplement and the relationship summary show, and where to find them free before you hire.
+**pageType:** explainer (floor 1,200 words)
+**format:** article
+**medium:** text
+
+**Reader and answer**
+
+**question:** How do I read a financial advisor's Form ADV? [PAA unavailable (SERP unread, no DataForSEO credentials); ac 14/46 on-topic in the saved sweep: what is form adv / part 2a / part 2b / part 3 / how to search form adv / how to download form adv / is form adv public / is form adv annual; 32/46 off-topic: parole, adverb, form W/E/NR variants]
+**answer:** Find the firm on the SEC's IAPD site through Investor.gov's Check Out Your Investment Professional tool, then read the Part 2A brochure first because the SEC calls it the primary disclosure document (fees, conflicts, discipline), use the Part 2B supplement for the individual who advises you, the Part 3 relationship summary to compare firms and Part 1 for ownership and disciplinary data; this reading order is our editorial judgment, not an SEC instruction, and anything unclear becomes a question for the adviser. (method with the reading order)
+**placement:** section 1 "How to Find and Read Form ADV, in the Order That Helps"
+**audience:** US readers making this decision, including first-time readers and current clients.
+**searchIntent:** informational with a deciding question
+
+**Keyword evidence**
+
+Google Autocomplete estimate bands, US, checked 2026-11-10, source: estimate, NOT measured (keyword-volumes.json): 'how to read form adv' 10-100/mo (4 completions); supporting 'form adv' 50-500/mo (10 completions, half off-topic senses); no measured data. No SEMRUSH or DataForSEO data (no keys); KEYWORD_PROVIDERS=semrush,dataforseo pin retained. Question sweeps saved to the autocomplete CSVs listed in evidenceFiles. Stop reason: free sweeps complete; no paid provider usable. Competitor signal: NerdWallet published or updated this topic 2026-11-09 (frozen intake).
+
+**SERP and questions**
+
+SERP not read (DataForSEO unavailable); no PAA. Question evidence is the saved autocomplete sweep cited in the reader question. FAQ spec = on-topic sweep rows, edits labeled editorial. Opportunity unknown.
+
+**Why a new page**
+
+Existing matches: /guides/what-is-a-registered-investment-advisor/ ('How to Check an RIA Before You Hire One': search IAPD, read Form ADV Part 2 and Form CRS in two sentences) and /guides/financial-advisor-conflicts-of-interest/ ('How to Verify Advisor Disclosures': one sentence on Part 2). Both tell the reader to open the documents; neither teaches what Part 1, Part 2A (18 items in a fixed order), Part 2B or Part 3 contain, which item to read for fees or discipline, or how the brochure supplement differs. The SEC bulletin now captured (investor-bulletins-71) supports that walkthrough. Demand is the weakest of the four pages (10-100/mo estimate, half of 'form adv' completions off-topic), so the page is justified as a how-to complement linked from both, not as a volume play. git-dedup.txt: no route or commit. Decision: create, narrowed to what the SEC bulletin states; if Phase 4 finds it a restatement of the two sections, defer it and remove its cross-links.
+
+**Planned outline**
+
+- 1 How to Find and Read Form ADV, in the Order That Helps: direct answer and numbered reading order (Investor.gov search to IAPD, Part 2A brochure, Part 2B supplement, Part 3 relationship summary, Part 1) in section 1, order labeled editorial judgment
+- 2 What Each Part of Form ADV Contains: GFM table (Part, who it is about, what it contains, delivered to clients?) strictly from the SEC bulletin: Part 1 check-the-box business data; Part 2A 18-item brochure; Part 2B brochure supplement of six items; Part 3 relationship summary
+- 3 What to Look For in the Part 2A Brochure: items named by the SEC (advisory business, fees and compensation, performance-based fees, methods of analysis and risk of loss, disciplinary information presumed material within 10 years, code of ethics and personal trading, brokerage practices) with the question each should trigger; items appear in the same order for every adviser, which makes brochures comparable
+- 4 Part 2B, Part 3 and Part 1: supplement covers the individual (education, past five years of business experience, disciplinary information, other business activities); relationship summary lists services, fees, conflicts, standard of conduct, history and questions to ask; Part 1 covers ownership, affiliations and disciplinary events and is public on IAPD
+- 5 Check the Person and the Firm: Investor.gov says check both; read the firm's latest Form ADV with brochure and supplement; brokers use FINRA BrokerCheck and Form CRS
+- 6 Who Form ADV Will Not Help and What Would Change the Answer: unregistered people or brokers-only have no Form ADV; a clean filing does not show advice quality (not stated by the SEC; editorial); a new disciplinary event or revised brochure changes the read; annual delivery of a summary of material changes is the SEC's update mechanism
+- FAQ (rows present in the saved sweep): Is Form ADV public? How do I search Form ADV? What is Form ADV Part 2A? What is Form ADV Part 3? Is Form ADV annual? (answer limited to the bulletin's statement on annual delivery of a summary of material changes)
+
+**Contribution and evidence**
+
+Basis reported. Contribution: a part-by-part reading guide with the SEC's own item names and the delivery rules, plus a labeled editorial reading order, which the RIA and conflicts guides compress into one or two sentences. Strictly from the SEC OIEA Form ADV bulletin, the Investor.gov glossary and adviser pages and the Form CRS page; no form-item numbers beyond the bulletin, no custody or other items it does not name. No modeling or test. Sources saved 2026-11-10 (or the dates stated) in evidence/how-to-read-form-adv/sources.md with hashes in evidence.json.
+
+**Tables, tools or visuals**
+
+One parts table, columns Part / About / What it contains / Delivered to clients, rows Part 1, Part 2A, Part 2B, Part 3; cells quote the SEC bulletin wording only; a short second list of the named Part 2A items with the question each triggers (editorial, labeled).
+
+**Testing and review**
+
+TESTED excluded: financial advice topics are outside _experience.md section G and no executed tests exist. Ordinary presentation; no 'we tested' or modeling attribution; third-person attribution to the named regulator; editorial judgments labeled. Byline via the existing template; no professional-review claim; YMYL not-advice disclaimer at the bottom only.
+
+**Planned takeaway**
+
+Read Form ADV in order: find the firm on IAPD via Investor.gov, start with the Part 2A brochure (the SEC calls it the primary disclosure document) for fees, conflicts and discipline, then Part 2B for the individual, Part 3 for a quick firm comparison and Part 1 for ownership and disciplinary data; the order is our editorial judgment, and anything unclear becomes a question for the adviser. Applies to anyone hiring or reviewing a registered investment adviser in the US. Evidence basis: reported (SEC OIEA bulletin, Investor.gov). Changes if the person is a broker only (use FINRA BrokerCheck and Form CRS) or the SEC revises the form. Next step: search your adviser on IAPD and read Part 2A items on fees and disciplinary information before the next meeting.
+
+**Inbound internal links**
+
+**required:** 2
+**placements:** - **source:** /guides/what-is-a-registered-investment-advisor/
+**target:** /guides/how-to-read-form-adv
+**section:** How to Check an RIA Before You Hire One
+**anchor:** Form ADV Part 2, commonly called the brochure
+**purpose:** existing words in the section; the new page shows how to read the brochure
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-inbound-how-to-read-form-adv.txt
+**sha256:** 2fb43024a0933a38cec574dfff2829f33f4ea4872e8ada9db573edd7e13b33a0
+- **source:** /guides/financial-advisor-conflicts-of-interest/
+**target:** /guides/how-to-read-form-adv
+**section:** How to Verify Advisor Disclosures
+**anchor:** Form ADV Part 2 (the brochure)
+**purpose:** existing words in the section; the new page walks through the brochure
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-inbound-how-to-read-form-adv.txt
+**sha256:** 2fb43024a0933a38cec574dfff2829f33f4ea4872e8ada9db573edd7e13b33a0
+
+**Outbound internal links**
+
+**placements:** - **source:** /guides/how-to-read-form-adv
+**target:** /guides/what-is-a-registered-investment-advisor/
+**section:** Section 5 check the person and the firm
+**anchor:** what is a registered investment advisor
+**purpose:** who RIAs are and how they are regulated
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-how-to-read-form-adv.txt
+**sha256:** 8930035b814e63f4f05a09f82dc4ea64f47a735d33f028b8e7ec254f2687b9c9
+- **source:** /guides/how-to-read-form-adv
+**target:** /guides/financial-advisor-conflicts-of-interest/
+**section:** Section 3 brochure
+**anchor:** advisor conflicts of interest
+**purpose:** conflict types to look for in Part 2A
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-how-to-read-form-adv.txt
+**sha256:** 8930035b814e63f4f05a09f82dc4ea64f47a735d33f028b8e7ec254f2687b9c9
+- **source:** /guides/how-to-read-form-adv
+**target:** /guides/questions-to-ask-a-financial-advisor/
+**section:** Section 4 questions
+**anchor:** questions to ask a financial advisor
+**purpose:** question list to use with the form
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-how-to-read-form-adv.txt
+**sha256:** 8930035b814e63f4f05a09f82dc4ea64f47a735d33f028b8e7ec254f2687b9c9
+- **source:** /guides/how-to-read-form-adv
+**target:** /guides/when-to-switch-financial-advisors/
+**section:** Section 6
+**anchor:** when to switch financial advisors
+**purpose:** what to do when the filing shows a problem
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-how-to-read-form-adv.txt
+**sha256:** 8930035b814e63f4f05a09f82dc4ea64f47a735d33f028b8e7ec254f2687b9c9
+
+**Technical and measurement scope**
+
+New entry in src/data/guides.ts (existing template; JSON-LD, canonical and sitemap derive from it), published 2026-11-10. Inbound edits: existing-anchor links where marked, otherwise the declared one-sentence link insertions in the inspection file; no dateModified bump; each touched page is re-captured and reviewed. IndexNow after exact live verification. growth.json: baseline unavailable (not zero), metric GSC clicks, no uplift claimed. Isolation: if this page is deferred, remove its links from the other new pages and the inbound edits.
+
+### A4 — /guides/what-is-investment-management
+
+**Identity**
+
+**title:** What Investment Management Is and What AUM Means
+**h1:** What Is Investment Management? Doing It Yourself or Hiring It Out
+**metaDescription:** Investment management means choosing and monitoring investments for a goal. See DIY vs hiring an adviser and what assets under management (AUM) means for fees.
+**pageType:** explainer (floor 1,200 words)
+**format:** article
+**medium:** text
+
+**Reader and answer**
+
+**question:** What is investment management, and should I do it myself or hire someone? [PAA unavailable (SERP unread, no DataForSEO credentials); ac head sweep 63 rows: on-topic what is investment management / is investment management the same as wealth management / same as asset management; off-topic: careers, interviews, firm names (about 40/63)]. Also serves: What does assets under management (AUM) mean? [ac 35 rows: what does assets under management mean / what are assets under management fees / how does assets under management work / what is included in assets under management; off-topic: firm AUM totals]
+**answer:** Investment management is choosing, monitoring and adjusting investments for a goal: you can do it yourself, where you are responsible for every decision and should start from a financial plan, or hire a registered investment adviser, who typically gives ongoing advice and monitoring for a fee based on the value of the assets in your account, called assets under management (AUM); decide by the services you need, the all-in cost and the adviser's conflicts. (definition with the DIY-vs-hire verdict)
+**placement:** section 1 "What Investment Management Is and Whether to Do It Yourself"
+**audience:** US readers making this decision, including first-time readers and current clients.
+**searchIntent:** informational with a deciding question
+
+**Keyword evidence**
+
+Google Autocomplete estimate bands, US, checked 2026-11-10, source: estimate, NOT measured (keyword-volumes.json): 'what is investment management' 500-5000/mo (exact autocomplete match plus broad completion set) and 'what is aum in finance' 250-2500/mo; 'investment management' alone 50-500/mo; large share of completions off-topic (careers, employers); no measured data. No SEMRUSH or DataForSEO data (no keys); KEYWORD_PROVIDERS=semrush,dataforseo pin retained. Question sweeps saved to the autocomplete CSVs listed in evidenceFiles. Stop reason: free sweeps complete; no paid provider usable. Competitor signal: NerdWallet published or updated this topic 2026-11-09 (frozen intake).
+
+**SERP and questions**
+
+SERP not read (DataForSEO unavailable); no PAA. Question evidence is the saved autocomplete sweep cited in the reader question. FAQ spec = on-topic sweep rows, edits labeled editorial. Opportunity unknown.
+
+**Why a new page**
+
+The previous round marked both candidates duplicates; the independent review rejected that. Corrected: (1) /guides/what-does-a-financial-advisor-do/ has no 'investment management' or AUM text (its reader compares advisor, credit counselor and coach roles); (2) /compare/financial-advisor-vs-wealth-manager/ uses investment management only as a table row and body phrase for a different decision (which professional title to hire); (3) /compare/flat-fee-vs-aum-based-financial-advisors/ covers AUM as a fee model for readers already choosing between fee structures (crossover, tiers, conflicts) and defines it only inline; (4) the RIA guide uses regulatory AUM for registration thresholds. No page answers the definitional question or the DIY-vs-hire decision, and the two heads (est. 500-5000 and 250-2500 per month) share one answer because AUM is how the hired version is priced, so one page with an AUM section serves both intents without a second URL. The fee-model intent stays with the flat-fee comparison (linked, not repeated). git-dedup.txt: no commit or route. Decision: create one combined page; Phase 4 must check it does not restate the flat-fee comparison.
+
+**Planned outline**
+
+- 1 What Investment Management Is and Whether to Do It Yourself: direct definition and DIY-vs-hire verdict in sentences 1-2; DIY means you are responsible for decisions and should begin with a financial plan (Investor.gov); hiring means an adviser with ongoing advice and monitoring
+- 2 What an Investment Manager Does for You: ongoing advice on buying, selling or holding, monitoring performance against objectives, optional planning (Investor.gov adviser page; Form CRS adviser vs broker description); discretionary accounts where the adviser makes trades
+- 3 What Assets Under Management (AUM) Means: the amount of client assets an adviser manages (Part 2A advisory business item); the fee is typically based on the value of all assets in your account; asset-based fee may cost more than a transaction fee but suits ongoing advice (Form CRS page); link to the flat-fee vs AUM comparison for cost math
+- 4 How to Decide: DIY or Hire: GFM table (your situation / DIY / hire an adviser / what to check) from the sourced selection questions: services you need, limits, cost, how the adviser is paid, conflicts, disciplinary history; hiring decision criteria are editorial judgment grounded in those questions
+- 5 How to Check an Adviser Before You Hire: Investor.gov search of person and firm, Form ADV Part 2 brochure (fees and compensation item) and relationship summary; links to the RIA and Form ADV guides
+- 6 Who Hiring Is Not For and What Would Change the Answer: readers who want self-direction and accept responsibility for decisions; a small balance where the fee is a larger share; a broker-only professional paid per transaction is a different model
+- FAQ (rows present in the saved sweeps): What does assets under management mean? What are assets under management fees? How does assets under management work? Is investment management the same as wealth management? (answer only from the site's existing wealth-manager comparison, linked)
+
+**Contribution and evidence**
+
+Basis reported. Contribution: the definition of investment management, the DIY-vs-hire decision and the AUM term on one page using Investor.gov's adviser and Investing on Your Own pages, the SEC Form ADV bulletin (advisory business and fees items) and the Form CRS page; the neighbouring pages cover title comparisons, fee crossovers and registration. No modeling or test; no figures beyond the sources read. Sources saved 2026-11-10 (or the dates stated) in evidence/what-is-investment-management/sources.md with hashes in evidence.json.
+
+**Tables, tools or visuals**
+
+One decision table, columns Your situation / Do it yourself / Hire an adviser / What to check; rows: how decisions are made, ongoing monitoring, how it is paid, responsibility, conflicts; cells from Investor.gov and Form CRS wording, no fee figures.
+
+**Testing and review**
+
+TESTED excluded: financial advice topics are outside _experience.md section G and no executed tests exist. Ordinary presentation; no 'we tested' or modeling attribution; third-person attribution to the named regulator; editorial judgments labeled. Byline via the existing template; no professional-review claim; YMYL not-advice disclaimer at the bottom only.
+
+**Planned takeaway**
+
+Do it yourself if you will start from a financial plan and accept responsibility for every decision; hire a registered investment adviser if you want ongoing advice and monitoring and accept an asset-based fee tied to your assets under management, after checking services, all-in cost and conflicts in Form ADV Part 2 and the relationship summary. Applies to US readers with investable assets. Evidence basis: reported (Investor.gov, SEC OIEA bulletin, Form CRS page); the choice criteria are editorial judgment. Changes if the professional is a broker paid per transaction, or if your balance is small relative to the fee. Next step: write down your goal and tolerance for risk, then compare one adviser's Form CRS against doing it yourself.
+
+**Inbound internal links**
+
+**required:** 2
+**placements:** - **source:** /guides/what-is-a-registered-investment-advisor/
+**target:** /guides/what-is-investment-management
+**section:** How RIAs Make Money
+**anchor:** percentage of assets under management
+**purpose:** existing words in the section; the new page explains the term and the DIY-vs-hire decision
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-inbound-what-is-investment-management.txt
+**sha256:** c1070f34441231cb3c2fb37d836001ac3f3801dc877adbc8f26d2aee772e719f
+- **source:** /compare/financial-advisor-vs-wealth-manager/
+**target:** /guides/what-is-investment-management
+**section:** How to decide which one you actually need
+**anchor:** investment management
+**purpose:** existing words in the section; the new page defines investment management
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-inbound-what-is-investment-management.txt
+**sha256:** c1070f34441231cb3c2fb37d836001ac3f3801dc877adbc8f26d2aee772e719f
+
+**Outbound internal links**
+
+**placements:** - **source:** /guides/what-is-investment-management
+**target:** /compare/flat-fee-vs-aum-based-financial-advisors/
+**section:** Section 3 AUM
+**anchor:** flat-fee vs AUM advisor comparison
+**purpose:** cost math and crossover for the fee models
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-what-is-investment-management.txt
+**sha256:** acff9ffc4086893260530f6d288c92e25b7c0be286501a42d15eaf23e251f83c
+- **source:** /guides/what-is-investment-management
+**target:** /guides/what-is-a-registered-investment-advisor/
+**section:** Section 5 check an adviser
+**anchor:** what is a registered investment advisor
+**purpose:** who RIAs are and how they are regulated
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-what-is-investment-management.txt
+**sha256:** acff9ffc4086893260530f6d288c92e25b7c0be286501a42d15eaf23e251f83c
+- **source:** /guides/what-is-investment-management
+**target:** /guides/how-to-read-form-adv/
+**section:** Section 5 check an adviser
+**anchor:** how to read Form ADV
+**purpose:** where fees are disclosed
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-what-is-investment-management.txt
+**sha256:** acff9ffc4086893260530f6d288c92e25b7c0be286501a42d15eaf23e251f83c
+- **source:** /guides/what-is-investment-management
+**target:** /compare/financial-advisor-vs-wealth-manager/
+**section:** FAQ and section 2
+**anchor:** financial advisor vs wealth manager
+**purpose:** different title, broader bundled service
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-what-is-investment-management.txt
+**sha256:** acff9ffc4086893260530f6d288c92e25b7c0be286501a42d15eaf23e251f83c
+- **source:** /guides/what-is-investment-management
+**target:** /guides/what-does-a-financial-advisor-do/
+**section:** Section 2 what a manager does
+**anchor:** what a financial advisor does
+**purpose:** advisor vs counselor vs coach roles
+**inspection:** **path:** reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/inspections-outbound-what-is-investment-management.txt
+**sha256:** acff9ffc4086893260530f6d288c92e25b7c0be286501a42d15eaf23e251f83c
+
+**Technical and measurement scope**
+
+New entry in src/data/guides.ts (existing template; JSON-LD, canonical and sitemap derive from it), published 2026-11-10. Inbound edits: existing-anchor links where marked, otherwise the declared one-sentence link insertions in the inspection file; no dateModified bump; each touched page is re-captured and reviewed. IndexNow after exact live verification. growth.json: baseline unavailable (not zero), metric GSC clicks, no uplift claimed. Isolation: if this page is deferred, remove its links from the other new pages and the inbound edits.
+
+## Execution plan
+
+1. Skip: no consolidation rows; advisory only
+2. Skip: no metadata rows
+3. Generate the four new routes with content_gen.py write using each approved row prompt, closed fact list, closed URL list and the manifest/review/packet flags; template into src/data/comparisons.ts and src/data/guides.ts; record fallback_used
+4. Independent Phase 4 audit of each exact built page, rendered snapshot and review, analysis-packet review; up to the HIGH-tier budget of three audits per page, defer any page that still fails and remove its links
+5. Skip: no body rows
+6. Add the inbound links listed in each brief: existing-anchor links and the declared one-sentence insertions on existing guides and comparison pages, no dateModified bump, each touched page re-captured and reviewed
+7. Add the four routes to the sitemap and prepare the IndexNow URL list (submit only after live verification)
+8. Print the summary table and continue
+9. Commit and push to main (fetch, rebase, fast-forward), verify exact live output with rendered-audit.py and HTTP 200, submit verified URLs to IndexNow, record scraper dispositions and baseline
+
+Publication scope: commit: True, push: True, liveVerification: True, indexNow: True
+
+## Preparation check
+
+| Check | Result | Evidence |
+|---|---|---|
+| Preparation check | ✅ Passed | [Full readiness report](reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/readiness.md) |
+
+Approve this plan to start the listed content work?

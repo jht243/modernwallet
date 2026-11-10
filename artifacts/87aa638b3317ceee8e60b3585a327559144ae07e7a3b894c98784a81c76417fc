@@ -1,0 +1,160 @@
+$ coverage_lookup --candidate "/compare/robo-advisor-vs-financial-advisor|robo advisor vs financial advisor|Should I use a robo-advisor or a human financial advisor?"
+coverage_lookup: 1 candidate(s) vs 817 repo pages / 830 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1130 past-chart lines
+
+### /compare/robo-advisor-vs-financial-advisor  — row - · create new content
+keyword: robo advisor vs financial advisor
+reader question (new page intent): Should I use a robo-advisor or a human financial advisor?
+lookup terms: robo advisor financial   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/what-does-a-financial-advisor-do  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on advisor financial · same format: vs]
+    title: What Does a Financial Advisor Do Versus a Credit Counselor
+    desc:  A financial advisor gives ongoing investment advice, monitors your holdings and may add planning. Credit counselors help with budgets and debts.
+- /guides/what-is-a-robo-advisor  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on robo advisor]
+    title: What a Robo-Advisor Is and When Using One Makes Sense
+    desc:  A robo-advisor builds and manages a portfolio from an online questionnaire. See who it fits, what it cannot do and what to check first.
+- /guides/how-to-choose-a-financial-advisor  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on advisor financial]
+    title: How to Choose a Financial Advisor: A Decision Guide
+    desc:  Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.
+- /guides/financial-advisor-worth-it  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on advisor financial]
+    title: Is a Financial Advisor Worth It? What to Know
+    desc:  Is a financial advisor worth it? See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.
+- /roundup/best-robo-advisors  [PARENT PAGE · in sitemap · src/data/roundups.ts · topic match 0.67 on robo advisor]
+    title: Best Robo Advisors of 2026: Fees and Minimums Compared
+    desc:  Compare the best robo advisors of 2026 by advisory fee, account minimum, tax-loss harvesting threshold, and what adding a human CFP costs.
+- /compare/ai-investing-vs-robo-advisors  [in sitemap · src/data/comparisons.ts · topic match 0.67 on robo advisor · same format: vs]
+    title: AI Investing vs Robo-Advisor: Which Fits Your Goals?
+    desc:  Compare AI investing apps and robo-advisors on fees, control, and automation to see which setup matches your portfolio goals and trading style.
+- /compare/financial-advisor-vs-financial-planner  [in sitemap · src/data/comparisons.ts · topic match 0.67 on advisor financial · same format: vs]
+    title: Financial Advisor vs Financial Planner: Key Differences
+    desc:  Financial advisor vs financial planner: neither title is regulated, but the CFP credential signals real planning expertise. Compare scope, fees, and fit.
+- /compare/financial-advisor-vs-cpa  [in sitemap · src/data/comparisons.ts · topic match 0.67 on advisor financial · same format: vs]
+    title: Financial Advisor vs CPA: Who Should You Hire?
+    desc:  Financial advisor vs CPA: investment management versus tax and accounting expertise, plus when the CPA/PFS credential means one person can do both.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | 4 | nerdwallet .../change-financial-advisors | create (/guides/when-to-switch-financial-advisors) | none | No coverage |
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | 5 | nerdwallet .../form-adv | create (/guides/how-to-read-form-adv) | /guides/how-to-choose-a-financial-advisor/ mentions it twice | Primary-source (SEC IAPD) walkthrough absent |
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | 7 | nerdwallet .../how-to-find-lgbtq-financial-advisor | skipped-low-value (candidate) | /guides/how-to-choose-a-financial-advisor/ | Narrow audience, no primary-source angle without sponsor/sourcing |
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | 8 | nerdwallet .../registered-investment-advisor | create or skipped-duplicate | /compare/financial-advisor-vs-wealth-manager/, /guides/how-to-choose-a-financial-advisor/ | RIA covered inside other pages; dedicated exp
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | 9 | nerdwallet .../what-i-learned-from-my-first-meeting-with-a-financial-advisor | skipped-low-value | none | First-person NerdWallet experience; not reproducible by us |
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | 10 | nerdwallet .../aum-assets-under-management | skipped-duplicate | /compare/flat-fee-vs-aum-based-financial-advisors/ | AUM fee mechanics covered in depth |
+Commits naming the topic: none
+Same run overlap: none
+
+
+$ coverage_lookup --candidate "/guides/when-to-switch-financial-advisors|when to switch financial advisors|When should I switch financial advisors and how do I do it?"
+coverage_lookup: 1 candidate(s) vs 817 repo pages / 830 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1130 past-chart lines
+
+### /guides/when-to-switch-financial-advisors  — row - · create new content
+keyword: when to switch financial advisors
+reader question (new page intent): When should I switch financial advisors and how do I do it?
+lookup terms: switch financial advisor   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/what-does-a-financial-advisor-do  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on financial advisor]
+    title: What Does a Financial Advisor Do Versus a Credit Counselor
+    desc:  A financial advisor gives ongoing investment advice, monitors your holdings and may add planning. Credit counselors help with budgets and debts.
+- /guides/how-to-choose-a-financial-advisor  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on financial advisor]
+    title: How to Choose a Financial Advisor: A Decision Guide
+    desc:  Choosing a financial advisor: fiduciary vs suitability, fee-only vs commission, CFP credentials, and how to verify with SEC IAPD and FINRA BrokerCheck.
+- /guides/financial-advisor-worth-it  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on financial advisor]
+    title: Is a Financial Advisor Worth It? What to Know
+    desc:  Is a financial advisor worth it? See what advisors typically cost, what research says about the value they add, and when DIY investing makes more sense.
+- /compare/financial-advisor-vs-financial-planner  [in sitemap · src/data/comparisons.ts · topic match 0.67 on financial advisor]
+    title: Financial Advisor vs Financial Planner: Key Differences
+    desc:  Financial advisor vs financial planner: neither title is regulated, but the CFP credential signals real planning expertise. Compare scope, fees, and fit.
+- /compare/financial-advisor-vs-cpa  [in sitemap · src/data/comparisons.ts · topic match 0.67 on financial advisor]
+    title: Financial Advisor vs CPA: Who Should You Hire?
+    desc:  Financial advisor vs CPA: investment management versus tax and accounting expertise, plus when the CPA/PFS credential means one person can do both.
+- /compare/financial-advisor-vs-wealth-manager  [in sitemap · src/data/comparisons.ts · topic match 0.67 on financial advisor]
+    title: Financial Advisor vs Wealth Manager: What's Different
+    desc:  Financial advisor vs wealth manager: minimums, services, and cost compared, so you know which one actually fits your net worth and needs.
+- /guides/questions-to-ask-a-financial-advisor  [in sitemap · src/data/guides.ts · topic match 0.67 on financial advisor]
+    title: Questions To Ask a Financial Advisor Before You Hire
+    desc:  Ask these questions before hiring a financial advisor: how they are paid, their duty to you, fees on $10,000 and any disciplinary history.
+- /guides/financial-advisor-conflicts-of-interest  [in sitemap · src/data/guides.ts · topic match 0.67 on financial advisor]
+    title: How to Spot Financial Advisor Conflicts of Interest
+    desc:  Learn how financial advisor conflicts of interest work, fee-only vs fee-based differences, disclosure forms, and the exact questions to ask.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | 4 | nerdwallet .../change-financial-advisors | create (/guides/when-to-switch-financial-advisors) | none | No coverage |
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | 5 | nerdwallet .../form-adv | create (/guides/how-to-read-form-adv) | /guides/how-to-choose-a-financial-advisor/ mentions it twice | Primary-source (SEC IAPD) walkthrough absent |
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | 7 | nerdwallet .../how-to-find-lgbtq-financial-advisor | skipped-low-value (candidate) | /guides/how-to-choose-a-financial-advisor/ | Narrow audience, no primary-source angle without sponsor/sourcing |
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | 8 | nerdwallet .../registered-investment-advisor | create or skipped-duplicate | /compare/financial-advisor-vs-wealth-manager/, /guides/how-to-choose-a-financial-advisor/ | RIA covered inside other pages; dedicated exp
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | 9 | nerdwallet .../what-i-learned-from-my-first-meeting-with-a-financial-advisor | skipped-low-value | none | First-person NerdWallet experience; not reproducible by us |
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | 10 | nerdwallet .../aum-assets-under-management | skipped-duplicate | /compare/flat-fee-vs-aum-based-financial-advisors/ | AUM fee mechanics covered in depth |
+Commits naming the topic: none
+Same run overlap: none
+
+
+$ coverage_lookup --candidate "/guides/how-to-read-form-adv|how to read form adv|How do I read a financial advisor's Form ADV?"
+coverage_lookup: 1 candidate(s) vs 817 repo pages / 830 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1130 past-chart lines
+
+### /guides/how-to-read-form-adv  — row - · create new content
+keyword: how to read form adv
+reader question (new page intent): How do I read a financial advisor's Form ADV?
+lookup terms: read form adv   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-29-xtrends.md [table] | Scout bullet marked [ENRICH /guides/fed-rate-hike-savings-investments/]. The guide (updated 2026-09-16) stops at the Sept 16 hike and says nothing about the Oct 28 hold with two dissents for a hike. 'fed rate decision'
+- 2026-11-04-tool-usage.md [table] | 4 | social-security-taxable-benefits-calculator (46 people, 51 uses, 109 views; data_days 27). Walkthrough: married-filing-separately-living-together prints 'above $0'; no hint on what counts as other income (Roth with
+- 2026-11-04-tool-usage.md [table] | 6 | self-employment-tax (40 people, 42 uses, 117 views; data_days 27). Walkthrough: $420 profit shows $59 SE tax though net earnings $387.87 < $400 owe none (Schedule SE line 4c); QBI phase-in warning tests gross incom
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet fiduciary). Head 'what is a fiduciary / what is a fiduciary financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/what-is-
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet questions-ask-financial-advisor). Head 'questions to ask a financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/how-to-ch
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | 5 | nerdwallet .../form-adv | create (/guides/how-to-read-form-adv) | /guides/how-to-choose-a-financial-advisor/ mentions it twice | Primary-source (SEC IAPD) walkthrough absent |
+Commits naming the topic: none
+Same run overlap: none
+
+
+$ coverage_lookup --candidate "/guides/what-is-investment-management|what is investment management|What is investment management and should I do it myself or hire someone?"
+coverage_lookup: 1 candidate(s) vs 817 repo pages / 830 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1130 past-chart lines
+
+### /guides/what-is-investment-management  — row - · create new content
+keyword: what is investment management
+reader question (new page intent): What is investment management and should I do it myself or hire someone?
+lookup terms: investment management   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/how-to-choose-an-investment-calculator  [in sitemap · src/data/guides.ts · topic match 0.5 on investment]
+    title: How to Choose an Investment Calculator
+    desc:  Investment calculators don't all compute the same thing. See what growth, goal-planning, drawdown, and tax-aware tools each measure before you pick one.
+- /investing/investment-growth-calculator  [in sitemap · src/data/spokes-investing.ts · topic match 0.5 on investment]
+    title: Investment Growth Calculator: Project Returns
+    desc:  Use this free investment growth calculator to project how regular contributions and compounding can grow your portfolio over time.
+- /investing/sp500-calculator  [in sitemap · src/data/spokes-investing.ts · topic match 0.5 on investment]
+    title: S&P 500 Calculator: Project Index Fund Returns
+    desc:  Project S&P 500 investment growth at the historical ~10.5% average annual return. Model monthly contributions and lump sums in our free calculator.
+- /investing/withdrawal-calculator  [in sitemap · src/data/spokes-investing.ts · topic match 0.5 on investment]
+    title: Withdrawal Calculator: How Long Will Your Money Last?
+    desc:  See how long your withdrawals last (also called a drawdown calculator) based on your balance, withdrawal amount, and expected return. Includes the 4% rule.
+- /investing/sip-calculator  [in sitemap · src/data/spokes-investing.ts · topic match 0.5 on investment]
+    title: SIP Calculator: Systematic Investment Plan Growth
+    desc:  Use this SIP calculator to project systematic investment plan growth from regular contributions and compounding. Works in any currency, free to use.
+- /investing/stock-investment-calculator  [in sitemap · src/data/spokes-investing.ts · topic match 0.5 on investment]
+    title: Stock Investment Calculator: Project Ticker Growth
+    desc:  Project growth for a specific stock or ETF with this stock investment calculator. See the compounding math and why past returns aren't a guarantee.
+- /guides/what-is-a-registered-investment-advisor  [in sitemap · src/data/guides.ts · topic match 0.5 on investment]
+    title: What a Registered Investment Advisor Is and How to Check One
+    desc:  Learn what a registered investment advisor is, who regulates RIAs, how they make money, and how to verify any firm on the free SEC database before hiring.
+- /guides/best-investment-account-for-kids  [in sitemap · src/data/guides.ts · topic match 0.5 on investment]
+    title: Best Investment Account for Kids (2026 Guide)
+    desc:  The best investment account for kids depends on your goal. Compare the Trump Account, 529, custodial brokerage, and custodial Roth IRA — and layer them.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet fiduciary). Head 'what is a fiduciary / what is a fiduciary financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/what-is-
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-does-a-financial-advisor-do). Head 'what does a financial advisor do / financial counselor / financial coach': autocomplete estimate only, NOT measured (no prov
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet questions-ask-financial-advisor). Head 'questions to ask a financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/how-to-ch
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | 1 | nerdwallet .../what-is-investment-management | skipped-duplicate | /compare/financial-advisor-vs-wealth-manager/ | Reader intent largely served; low added value |
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | 8 | nerdwallet .../registered-investment-advisor | create or skipped-duplicate | /compare/financial-advisor-vs-wealth-manager/, /guides/how-to-choose-a-financial-advisor/ | RIA covered inside other pages; dedicated exp
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | 10 | nerdwallet .../aum-assets-under-management | skipped-duplicate | /compare/flat-fee-vs-aum-based-financial-advisors/ | AUM fee mechanics covered in depth |
+Commits naming the topic: none
+Same run overlap: none
+
+
