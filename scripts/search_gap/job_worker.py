@@ -104,6 +104,10 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
                       'If the original review is awaiting the render gate, use the saved candidate patch, install the project’s '
                       'locked dependencies, build, capture the preview, and finish the required rendered review and live verification. '
                       'Keep the actual prior verdicts, counters and candidate identity.')
+        if resumed and checkpoints and not summary.get('completionFile'):
+            from preserved_evidence import restore
+            recovered = restore(Path.cwd().resolve(), packet, digest(path))
+            if recovered: summary.update(recovered)
         if resumed and checkpoints and checkpoints[-1].get('stage') == 'completion-recovery':
             previous = checkpoints[-1]
             name = previous.get('completionFile')
