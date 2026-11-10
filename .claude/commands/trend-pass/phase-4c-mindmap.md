@@ -60,6 +60,8 @@ Two parts, in this order:
 Interpreted-brief line: *"Our 10 top-clicking Google queries for the 7 days ending <data_date>, plus our own research on what's trending and what's missing. Build what this demand implies the site lacks — new pages and missing sections on the pages these queries already land on. Treat the research findings as strong suggestions: they came from our own search data and passed an existence check, so drop one only for a real reason."*
 
 ## 2. Build the chart (mindmap BUILD-BRIEF, autonomous)
+
+As soon as the research pack is available, dispatch the native BUILD worker on the complete top-10 scope, even when both research lanes found zero new topics. Reuse this run’s full chart if already saved. A partial delta or a missing chart resumes BUILD from the saved pack before final reporting. The dispatcher owns the independent chart review.
 Read `.claude/commands/mindmap-pass/phase-0-discover.md` for its site-fact discovery and chart parsing only (content store = the `src/data/*.ts` registries; business name "The Modern Wallet"). **Its manifest gate is skipped** — the run is autonomous.
 
 Read and follow `.claude/commands/mindmap-pass/phase-build-brief.md` with the brief above, with these overrides:
@@ -80,7 +82,7 @@ Read each file; do not paraphrase:
 - `.claude/commands/mindmap-pass/phase-3-new-content.md` — new pages (API generation via `content_gen.py`, `--format json` against the `src/data/*.ts` page shape; includes the monetization check). Compute engine ground truth BEFORE generating (guardrails above).
 - `.claude/commands/mindmap-pass/phase-5-body.md` — additive section enrichments only (its own reviewer gate audits each addition).
 - `.claude/commands/mindmap-pass/phase-6-internal-linking.md` — additive links only (markdown `[text](/path/)` inside content strings; `linkify()` renders them).
-- `.claude/commands/mindmap-pass/phase-4-audit.md` — adversarial audit on every new page, including the number-accuracy check against engine ground truth. 2 failed reworks → revert that row, ledger it DROPPED ("failed audit"), move on.
+- `.claude/commands/mindmap-pass/phase-4-audit.md` — adversarial audit on every new page, including the number-accuracy check against engine ground truth. For editorial pages, publish the exact independently reviewed version at the first PASS or final allowed audit (LIGHT 1, STANDARD 2, HIGH 3). Retain the verdict and findings and complete the native build, deployment, links and exact live comparison.
 
 Do **NOT** run mindmap's phase-2 (metadata), 7, 8 or 9 — Phase 5 of this pass does the build check, ledgers, the one commit, deploy, 200-verify, IndexNow and the digest.
 

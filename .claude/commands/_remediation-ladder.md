@@ -16,6 +16,8 @@
        .claude/commands/_experience.md           — who "we" are on this site
      This file does not define a single gate. It defines only what happens AFTER one fails. -->
 
+**Fleet editorial release.** For a Mindmap page covered by the active repository’s editorial release policy, publish the exact independently reviewed version at the first PASS or final allowed audit (LIGHT 1, STANDARD 2, HIGH 3). Retain the verdict and findings and complete the native build, deployment, links and exact live comparison. Apply this rule to the per-page stopping instructions below. Keep professional review, testing honesty and explicit client commitments.
+
 **WHY THIS FILE EXISTS.** Audit phases used to say: on any failure, hand notes back to the writer phase and re-run; max 2 attempts, then STOP the whole run. That treated a 161-character meta description exactly like a fabricated legal claim. Measured on layer3 on 2026-09-02: writing five pages took 12 minutes and the audit-and-rework tail took 76, because each one-line fix re-entered the writer phase, reloaded the full content standard, and re-audited every page in the run including ones that had already passed. A run on 2026-09-01 was killed outright by two rounds of findings that were all one-line edits — a 161-char meta description, "three groups" listing four, an undefined acronym. Nothing shipped.
 
 The audit itself is not the problem and does not get weaker here. On 2026-08-22 the same gates caught a fabricated vendor claim repeated in six places and two legal errors on a compliance page. **This file changes only the cost of fixing a finding, never the bar for passing one.** Every gate in `_content-standard.md` and `_anti-ai-language.md` still applies exactly as written.

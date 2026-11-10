@@ -79,7 +79,9 @@ Brief for `/mindmap-pass` (read each phase file; do not paraphrase them):
 > - Per this site's content standard: health/YMYL sites stay neutral (cost, legality, regulatory status, safety); never efficacy claims.
 > Unattended run: save the chart to `reports/mindmap-pass/<YYYY-MM-DD>-xtrends.md` (this exact name, so it never collides with another mindmap run today), treat the Phase 0 manifest as approved, and continue to Phase 9 without stopping.
 
-Phases that matter most: `phase-build-brief.md` → `phase-3-new-content.md` (API writer, see the prose rule) → `phase-4-audit.md` (hard-fail after 2 reworks → drop that topic) → `phase-7-sitemap-indexnow.md` → `phase-9-commit-deliver.md` (commit → `deploy-run-to-main.sh push` → 200-verify → IndexNow).
+Before the first paid write, the dispatcher retains the native approval manifest, the independent chart reviewer’s receipt for that exact manifest, and the page-specific analysis packet. Run the existing generation-check using the original job and target. Pass the same files to content_gen.py with --mindmap-manifest, --mindmap-review and --analysis-packet. Resume saved research or drafts at their first unfinished step. If preflight selects a configured fallback, use it and record the actual model. A primary key being out of credit alone does not stop this work. Preserve the site’s source, eligibility and professional-review rules.
+
+Phases that matter most: `phase-build-brief.md` → `phase-3-new-content.md` (API writer, see the prose rule) → `phase-4-audit.md` (publish the exact independently reviewed version at the first PASS or final allowed audit (LIGHT 1, STANDARD 2, HIGH 3). Retain the verdict and findings and complete the native build, deployment, links and exact live comparison) → `phase-7-sitemap-indexnow.md` → `phase-9-commit-deliver.md` (commit → `deploy-run-to-main.sh push` → 200-verify → IndexNow).
 
 ## STEP 4 — Verify before you trust it
 - The repo's build gate passes (including `check-depth` / bundle checks where present).

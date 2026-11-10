@@ -238,8 +238,8 @@ chart format `.claude/commands/mindmap-pass/phase-build-brief.md` produces: fron
 the clusters block `No emerging clusters detected this run.` Run mindmap's duplicate check against the live
 sitemap + `ROUNDUPS` first: an existing roundup means ENRICH (Phase 4a), not a new page.
 
-**STEP 3 — Execute the mindmap phases, autonomously** (no Phase 0 manifest gate). Read each file and
-follow it; do not paraphrase:
+**STEP 3 — Complete the unattended Mindmap handoff.** Before the first paid write, the dispatcher retains the native approval manifest, the independent chart reviewer’s receipt for that exact manifest, and the page-specific analysis packet. Run the existing generation-check using the original job and target. Pass the same files to content_gen.py with --mindmap-manifest, --mindmap-review and --analysis-packet. Resume saved research or drafts at their first unfinished step. If preflight selects a configured fallback, use it and record the actual model. A primary key being out of credit alone does not stop this work. Preserve the site’s source, eligibility and professional-review rules. The existing schedule supplies authorization.
+
 - `.claude/commands/mindmap-pass/phase-3-new-content.md` — the page prose through
   `scripts/lib/content_gen.py`, with the research file + the vendors' own pages as the closed fact list and
   `_roundup-blend.md` (if present) as the format brief. The new page is a `RoundupEntry` object inserted at
@@ -253,8 +253,7 @@ follow it; do not paraphrase:
   verified vendors through `reports/vendor-roundup/rows/<vertical>.json` + `apply_vendor_rows.mts`.
   Commit the writer's `.meta.json`.
 - `.claude/commands/mindmap-pass/phase-4-audit.md` — adversarial audit of the page AND every table row
-  (Phase 6's checks apply too). Max 2 reworks; still failing → the page does not ship (set it
-  `draft: true`), the category stays BUILD for tomorrow, and the digest says why.
+  (Phase 6's checks apply too). For editorial pages, publish the exact independently reviewed version at the first PASS or final allowed audit (LIGHT 1, STANDARD 2, HIGH 3). Retain the verdict and findings and complete the native build, deployment, links and exact live comparison.
 - `.claude/commands/mindmap-pass/phase-6-internal-linking.md` — link the new roundup from 2-4 related
   guides / calculators / sibling roundups (additive links only).
 - `.claude/commands/mindmap-pass/phase-7-sitemap-indexnow.md` — the sitemap is generated at build; its

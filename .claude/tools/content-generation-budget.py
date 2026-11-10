@@ -31,6 +31,7 @@ def scope(root,args):
     return job,route,row
 
 def current_cycle(root,route,policy):
+    route = route.rstrip('/') or '/'  # The review journal stores canonical routes without trailing slashes.
     found=[]
     for path in (root/'reports/content-review-journals').glob('*.jsonl'):
         with path.open() as stream:
