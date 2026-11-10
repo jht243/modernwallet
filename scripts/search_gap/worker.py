@@ -169,6 +169,42 @@ def metadata_coverage(completion):
     return covered
 
 
+def validate_render_groups(site, changed, rendered, check_render):
+    # Each immutable projection retains its own admission, reviewer and exact live evidence.
+    groups = rendered if isinstance(rendered, list) else [rendered]
+    require(groups and all(isinstance(group, dict) for group in groups), 'Missing rendered approval group')
+    covered = set()
+    for artifacts in groups:
+        approved = read(artifacts['approved'])
+        host = urllib.parse.urlsplit(approved['manifest']['canonicalBase']).hostname or ''
+        require(host.removeprefix('www.') == site.removeprefix('www.'), 'Cross-site render refused')
+        preview_host = urllib.parse.urlsplit(approved['baseUrl']).hostname or ''
+        recovery = artifacts.get('postPublicationRecovery')
+        if recovery or not preview_host or preview_host.removeprefix('www.') == host.removeprefix('www.'):
+            require(artifacts.get('postPublicationRecovery'),
+                    'Approved candidate must be rendered separately from production; two live captures cannot prove publication matches a reviewed preview')
+            recovery_preview(artifacts,approved,check_render)
+        paths = {r['path'] for r in approved['routes']}
+        require(paths and not covered.intersection(paths), 'Duplicate or empty approval subset')
+        covered.update(paths)
+        if check_render:
+            helper = str(Path('.claude/tools/rendered-audit.py'))
+            subprocess.run([sys.executable, helper, 'check', '--snapshot', artifacts['approved'],
+                            '--review', artifacts['review']] + ([] if recovery else ['--recapture']), check=True, capture_output=True)
+            subprocess.run([sys.executable, helper, 'compare', '--approved', artifacts['approved'],
+                            '--live', artifacts['live'], '--review', artifacts['review']], check=True, capture_output=True)
+            # A saved live receipt alone cannot establish what is served now.
+            with verification_directory('search-gap-live-') as folder:
+                manifest = Path(folder)/'manifest.json'
+                manifest.write_text(json.dumps(approved['manifest']))
+                fresh = str(Path(folder)/'live.json')
+                subprocess.run([sys.executable, helper, 'capture', '--manifest', str(manifest),
+                    '--base-url', approved['manifest']['canonicalBase'], '--out', fresh], check=True, capture_output=True)
+                subprocess.run([sys.executable, helper, 'compare', '--approved', artifacts['approved'],
+                    '--live', fresh, '--review', artifacts['review']], check=True, capture_output=True)
+    require(changed <= covered, 'Render does not cover published routes')
+
+
 def validate_completion(packet, completion, check_render=True):
     require(completion['site'] == packet['site'] and completion['runId'] == packet['runId'], 'Wrong site/run')
     chart = completion['chart']
@@ -190,32 +226,7 @@ def validate_completion(packet, completion, check_render=True):
     changed -= metadata_coverage(completion)
     require(all(d.get('paths') for d in decisions if d['status'] == 'published'), 'Published decision lacks routes')
     if changed:
-        artifacts = completion['rendered']
-        approved = read(artifacts['approved'])
-        host = urllib.parse.urlsplit(approved['manifest']['canonicalBase']).hostname or ''
-        require(host.removeprefix('www.') == packet['site'].removeprefix('www.'), 'Cross-site render refused')
-        preview_host = urllib.parse.urlsplit(approved['baseUrl']).hostname or ''
-        recovery = artifacts.get('postPublicationRecovery')
-        if recovery or not preview_host or preview_host.removeprefix('www.') == host.removeprefix('www.'):
-            require(artifacts.get('postPublicationRecovery'),
-                    'Approved candidate must be rendered separately from production; two live captures cannot prove publication matches a reviewed preview')
-            recovery_preview(artifacts,approved,check_render)
-        require(changed <= {r['path'] for r in approved['routes']}, 'Render does not cover published routes')
-        if check_render:
-            helper = str(Path('.claude/tools/rendered-audit.py'))
-            subprocess.run([sys.executable, helper, 'check', '--snapshot', artifacts['approved'],
-                            '--review', artifacts['review']] + ([] if recovery else ['--recapture']), check=True, capture_output=True)
-            subprocess.run([sys.executable, helper, 'compare', '--approved', artifacts['approved'],
-                            '--live', artifacts['live'], '--review', artifacts['review']], check=True, capture_output=True)
-            # A saved live receipt alone cannot establish what is served now.
-            with verification_directory('search-gap-live-') as folder:
-                manifest = Path(folder)/'manifest.json'
-                manifest.write_text(json.dumps(approved['manifest']))
-                fresh = str(Path(folder)/'live.json')
-                subprocess.run([sys.executable, helper, 'capture', '--manifest', str(manifest),
-                    '--base-url', approved['manifest']['canonicalBase'], '--out', fresh], check=True, capture_output=True)
-                subprocess.run([sys.executable, helper, 'compare', '--approved', artifacts['approved'],
-                    '--live', fresh, '--review', artifacts['review']], check=True, capture_output=True)
+        validate_render_groups(packet['site'], changed, completion['rendered'], check_render)
     return decisions
 
 

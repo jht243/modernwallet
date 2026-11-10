@@ -57,3 +57,7 @@ A recoverable missing dependency is handled in this invocation with the native l
 For historical completion recovery, use publication_history.py FULL_COMMIT to verify the current remote default branch. A retired loopback preview may be replaced only by postPublicationRecovery with exact original fingerprints, a freshly running separate build, and a real current live comparison. Reuse an independently reviewed, restored completionFile.
 
 A verifiedContinuation on the current server job names still-outstanding production work and SHA-bound evidence. Reuse retained decisions and audit history. Follow the identified corrective work before retrying finish. Publish exact final capped candidates without another review, and use targeted review only for a genuinely changed version still within its allowed budget. Preserve separate native paid and professional conditions.
+
+### Several independently reviewed subsets
+
+When the latest eligible round produced multiple exact approval projections, keep each original snapshot/review pair intact. Use the rendered helper to check each projected preview before deployment. After deployment, capture and compare each matching live manifest. Supply `completion.rendered` as an array of the native approved/review/live objects (or the original single object). Together they must cover all changed routes without overlap. Resume from an audit-pass or release-form checkpoint at this step and retain all original findings and counters. Full finish follows live verification.
