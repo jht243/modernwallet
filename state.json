@@ -138,6 +138,15 @@
       ],
       "route": "/guides/questions-to-ask-a-financial-advisor"
     },
+    "c78924422bf84c65be4c5560200112867c5e6a562863b62672d95cc58063b16f": {
+      "generated": [
+        "simple-ira-vs-401k--withdrawal"
+      ],
+      "jobId": "search-gap-themodernwallet-6931aeadbaf0403bb8d5862c930c0bdd",
+      "previousJobs": [],
+      "repairs": [],
+      "route": "/compare/simple-ira-vs-401k/"
+    },
     "d44663880ab5a5ff293cffcf6c62918a5b9e895ab45cf2649f8387b59e2a48e1": {
       "generated": [
         "full"
