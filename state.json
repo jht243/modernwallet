@@ -3,6 +3,7 @@
   "job": {
     "artifacts": {
       "reports/content-review-journals/67fdff5861e31c3db07910b2641c23ddfb19f9cc32e415ebd09b203b3944da3a.jsonl": "29d320d1d4f74f7275e178a8b2fcab7ac44acc4fe60bd7125ef36a3b1359cd27",
+      "reports/content-review-journals/7dd8503f734a786dae42833003981b9c2f628838c00601f949f14fd1de214872.jsonl": "1e079794d582db7e6eef4c13edeff732f03a0ace995a3943b835b5ec66fe662d",
       "reports/content-review-journals/blobs/ad77e1fed64bf83232612e9b8d9ec8da25a220228842f0cec65258834b4bd1e2/rendered-review-1.json": "ad77e1fed64bf83232612e9b8d9ec8da25a220228842f0cec65258834b4bd1e2",
       "reports/content-review-journals/c8ba5738c4771d372e2addda61151c3fb8bd312e3db9301f085744174d0879c5.jsonl": "9ea94c57e8f21fa8f18cd1831ab9eb4b5d5cb90cc6a191a9ff7514568dbef8c7",
       "reports/content-review-journals/e5d70572fb74791baab5059ef33dceeef3fcdcf903bda42b358980fcc7f4c4b9.jsonl": "db7e94bebf57bf6469f2f3de03ef9ac789c3b7fe7264792aa46f54c6b738805f",
@@ -32,6 +33,7 @@
       "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/e0c6fc5cc6738828def6.txt": "3b55def7bac1d1570d33f021c9da2a33b38101ecda421dafc0e5b6209fcf334d",
       "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/f39463264c8125f44ea0.html": "47b39c332364943996bc23f466da7b9d20bb348af4deaeed3da956fbf7e328dc",
       "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/f39463264c8125f44ea0.txt": "2e228eba93a5f4052175e60521e857575939862ce154df7be4a18335331adaed",
+      "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/financial-advisor-conflicts-of-interest-round1-reservation.json": "52883cf336583aba1a4eeae147fb9dbf6639f081699a6a5b6ef37b41e0592042",
       "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/how-to-read-form-adv-round1-reservation.json": "eb48126eda346ad13515c1e7a3bd58f5fd8009074a95e0fcf275370287605632",
       "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/robo-advisor-vs-financial-advisor-round1-reservation.json": "83af42bc4328b458fb275db2bb872679bf5a3990dee5011db4fae6c9dc7c562b",
       "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/what-is-investment-management-round1-reservation.json": "16e7c1aebd53ae85c7ee0271dfd138ad4ffa77a3a24ef6be65876520e4b4b87e",
@@ -91,6 +93,41 @@
       "identity": {
         "canonicalBase": "https://themodernwallet.com",
         "route": "/guides/what-is-investment-management",
+        "siteId": "jht243/modernwallet"
+      }
+    },
+    "7dd8503f734a786dae42833003981b9c2f628838c00601f949f14fd1de214872": {
+      "artifacts": {
+        "reports/content-review-journals/7dd8503f734a786dae42833003981b9c2f628838c00601f949f14fd1de214872.jsonl": "1e079794d582db7e6eef4c13edeff732f03a0ace995a3943b835b5ec66fe662d",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot.json": "b8a2cf55cd5bd1494aa18250f8a9172c2ae230146544f8b2757478489199bb6b",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/05036d02ea00107c8892.html": "0468125865bbe0cffa55b2a615e3254315e72e36664c633f18be6a06f62941b3",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/05036d02ea00107c8892.txt": "541b26adf8fe49f871064601cdcbce17faedc2c9562c408202dff3fae4c4e16a",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/163ee94f012018e31daf.html": "7bab1487e8e6a70edc6ed070cf453dcd7fbdfa8d2e60c1022053d98ed2d56b0a",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/163ee94f012018e31daf.txt": "a86ca42719654ac2a693823e912bef9d15f58632b906e62d1cc27cd065127fc7",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/5b3459bc703029029bed.html": "e0bbf650c220242e51016ae4f4393dc6b1efc90f6d94f88cf1bfde3409703304",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/5b3459bc703029029bed.txt": "99c5f002fc2b2af910c7ab0b867886aba559d22395b84e4c3dc018fa15cea317",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/5e3e250881f49d155c42.html": "e89e7d69001657399afbce0fe502fbd462b0ebd79d071da4d89b20e29ef6c6ca",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/5e3e250881f49d155c42.txt": "4332c9451451a44bcadea3b45adf4e587806e8d224ddb78434f273360c33b45e",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/ae1f38925fd0f02dc593.html": "93ae572e38fba8126f616bca69551c867305806a02c4c8f1c50215d5cf46bfd5",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/ae1f38925fd0f02dc593.txt": "80bb653116172aa50237ae00f21da47156e2e4f500db148a71ef9da924db6a69",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/af94e9ac50cca8dc63f3.html": "917215c8dfaf62fda1886a44189405f6ac452d117d95da60708465b5ff8cfe62",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/af94e9ac50cca8dc63f3.txt": "b2ee3b8e7992f804e77be6a89eaa8a172c2637a346aa5a4a8054dc386ead96bc",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/c9a21128d2821258cd1b.html": "ec366b095980c6bf7c95819fcb48b4c8e55c00993b3c683b5ab52e0c5ac2ccd4",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/c9a21128d2821258cd1b.txt": "8e96f11932b121e2df4a4ded50c83f9bcde0f1cacb5c4ec58cd0eac5646fbbed",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/correction-boundary.json": "7d3437b2bbd11d308fc972037bd74534b588e8d8298c18256e1a612c48941df8",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/correction-sources/blobs/6451e55b6e31695eb9b569e24015044a134cacecff07408e85dd726f4f30deec/search-index.json": "6451e55b6e31695eb9b569e24015044a134cacecff07408e85dd726f4f30deec",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/db7f993787e7890fe9b2.html": "81f64427f213bdb76a3bb2ef6a19aa7edb748a3a31a8863740f9ef1e527943c6",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/db7f993787e7890fe9b2.txt": "4dc76b79d911df33705ec814b7bae3a882a0cf1302492d4e5b039675149fd20e",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/e0c6fc5cc6738828def6.html": "c233efdad3762d69f8b410ebaab483e9259a7faac788b337ccbf5d7119e1ea8b",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/e0c6fc5cc6738828def6.txt": "3b55def7bac1d1570d33f021c9da2a33b38101ecda421dafc0e5b6209fcf334d",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/f39463264c8125f44ea0.html": "47b39c332364943996bc23f466da7b9d20bb348af4deaeed3da956fbf7e328dc",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/rendered-snapshot/f39463264c8125f44ea0.txt": "2e228eba93a5f4052175e60521e857575939862ce154df7be4a18335331adaed",
+        "reports/mindmap-pass/2026-11-10-competitor-18b9b55e45cc-run/review-rounds/financial-advisor-conflicts-of-interest-round1-reservation.json": "52883cf336583aba1a4eeae147fb9dbf6639f081699a6a5b6ef37b41e0592042"
+      },
+      "head": "1e079794d582db7e6eef4c13edeff732f03a0ace995a3943b835b5ec66fe662d",
+      "identity": {
+        "canonicalBase": "https://themodernwallet.com",
+        "route": "/guides/financial-advisor-conflicts-of-interest",
         "siteId": "jht243/modernwallet"
       }
     },
