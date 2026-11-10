@@ -12,6 +12,15 @@
       ],
       "route": "/guides/what-is-a-cfp"
     },
+    "235b520f982a3adb24d995215a53eaecd19add95fb5fc35ea07d3008469b2b5c": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "competitor-18b9b55e45cc",
+      "previousJobs": [],
+      "repairs": [],
+      "route": "/compare/robo-advisor-vs-financial-advisor"
+    },
     "60791aceae3034e7f9002bf271cf03f06d125c36d25249c6eae288a8b59f4fca": {
       "generated": [
         "full"
