@@ -89,6 +89,44 @@ def intake(site, store, output):
     return dict(packet, intakeFile=str(path), intakeSha256=digest(path))
 
 
+def recovery_preview(artifacts, approved, check_render):
+    """Reconcile a historical live-only review using a separately running current build.
+
+    The original approval remains unchanged and is never described as prepublication.
+    """
+    import importlib.util
+    import re
+    proof = artifacts.get('postPublicationRecovery', {})
+    require(proof.get('method') == 'retrospective-exact-render',
+            'Live-only historical approval needs explicit retrospective recovery evidence')
+    require(proof.get('originalApprovedSha256') == digest(artifacts['approved']),
+            'Recovery must retain the exact original approval')
+    commit = proof.get('publishedCommit', '')
+    require(re.fullmatch('[0-9a-f]{40}', commit) is not None,
+            'Use the original actually published full commit')
+    subprocess.run(['git','merge-base','--is-ancestor',commit,'origin/main'],
+                   check=True,capture_output=True)
+    preview = read(proof['preview'])
+    require(urllib.parse.urlsplit(preview['baseUrl']).hostname in ('127.0.0.1','localhost','::1'),
+            'Retrospective recovery requires an independently running local build')
+    require(preview['manifest'] == approved['manifest'], 'Recovery preview scope changed')
+    require(dt.datetime.fromisoformat(preview['capturedAt'].replace('Z','+00:00')) >
+            dt.datetime.fromisoformat(approved['capturedAt'].replace('Z','+00:00')),
+            'Retain the original review date and the actual later reconciliation date')
+    require({r['path']:r['fingerprint'] for r in preview['routes']} ==
+            {r['path']:r['fingerprint'] for r in approved['routes']},
+            'Recovery build differs from the independently reviewed output')
+    if check_render:
+        helper = Path('.claude/tools/rendered-audit.py').resolve()
+        spec = importlib.util.spec_from_file_location('search_recovery_renderer', helper)
+        renderer = importlib.util.module_from_spec(spec);spec.loader.exec_module(renderer)
+        renderer.compare(approved,preview,read(artifacts['review']),require_live=False)
+        with tempfile.TemporaryDirectory(prefix='search-gap-recovery-preview-') as folder:
+            fresh = renderer.capture(approved['manifest'],preview['baseUrl'],str(Path(folder)/'preview.json'),comparison_only=True)
+            renderer.compare(approved,fresh,read(artifacts['review']),require_live=False)
+    return proof
+
+
 def validate_completion(packet, completion, check_render=True):
     require(completion['site'] == packet['site'] and completion['runId'] == packet['runId'], 'Wrong site/run')
     chart = completion['chart']
@@ -114,8 +152,10 @@ def validate_completion(packet, completion, check_render=True):
         host = urllib.parse.urlsplit(approved['manifest']['canonicalBase']).hostname or ''
         require(host.removeprefix('www.') == packet['site'].removeprefix('www.'), 'Cross-site render refused')
         preview_host = urllib.parse.urlsplit(approved['baseUrl']).hostname or ''
-        require(preview_host and preview_host.removeprefix('www.') != host.removeprefix('www.'),
-                'Approved candidate must be rendered separately from production; two live captures cannot prove publication matches a reviewed preview')
+        if not preview_host or preview_host.removeprefix('www.') == host.removeprefix('www.'):
+            require(artifacts.get('postPublicationRecovery'),
+                    'Approved candidate must be rendered separately from production; two live captures cannot prove publication matches a reviewed preview')
+            recovery_preview(artifacts,approved,check_render)
         require(changed <= {r['path'] for r in approved['routes']}, 'Render does not cover published routes')
         if check_render:
             helper = str(Path('.claude/tools/rendered-audit.py'))

@@ -244,6 +244,11 @@ case "$cmd" in
       fi
       if git push origin HEAD:main; then
         echo "[deploy] pushed $(git rev-parse --short HEAD) to main (attempt ${attempt})."
+        # Mirror this invocation's owned cloud branch at the same published commit.
+        # Claude's native completion check then sees the branch as fully pushed.
+        case "$branch" in
+          claude/*) git push --set-upstream origin "HEAD:refs/heads/$branch" || exit 3 ;;
+        esac
         rm -f "$base_file"
         # Never leave the checkout detached: the next run must start on a real branch.
         if [ "$(git rev-parse --abbrev-ref HEAD)" = "HEAD" ]; then

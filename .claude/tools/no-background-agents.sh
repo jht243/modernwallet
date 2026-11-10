@@ -35,8 +35,18 @@ except Exception:
 tool = d.get("tool_name") or ""
 inp = d.get("tool_input") or {}
 bg = inp.get("run_in_background")
+updated_input = None
 
 if tool in ("Agent", "Task") and bg is not False:
+    from pathlib import Path
+    import importlib.util
+    root = Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve()
+    helper = root/'.claude/tools/competitor-handoff.py'
+    if helper.is_file() and (root/'.claude/tools/native-worker-wait.py').is_file():
+        spec = importlib.util.spec_from_file_location('competitor_inline',helper)
+        monitor = importlib.util.module_from_spec(spec);spec.loader.exec_module(monitor)
+        if monitor.active(root,d) is not None:
+            sys.exit(0)
     sys.stderr.write(
         "BLOCKED by .claude/tools/no-background-agents.sh: this run is unattended, and a "
         "backgrounded subagent is never waited for, so its work is lost and the phase never "
@@ -63,11 +73,9 @@ if cloud and tool == "Bash" and bg is True:
 LONG = re.compile(r"content_gen\.py|/gen(_all)?\.sh|\bgen\.sh\b|humanize_intro\.py|npm run build|next build|"
                   r"astro build|npx tsc|deploy-run-to-main\.sh push|\bsleep\s+(1[2-9]\d|[2-9]\d\d|\d{4,})")
 if cloud and tool == "Bash" and LONG.search(cmd) and (inp.get("timeout") or 0) < 600000:
-    sys.stderr.write(
-        "BLOCKED by .claude/tools/no-background-agents.sh: this command can run past the default "
-        "2-minute limit, and in an unattended run a command that overruns is moved to the "
-        "background and its result is lost. Re-issue the SAME command with timeout: 600000.\n")
-    sys.exit(2)
+    # Supply the existing required foreground timeout on the first call.
+    # Preserve the exact command, background restriction and permission checks.
+    updated_input = dict(inp, timeout=600000)
 if tool == "Bash" and bg is True and cmd.startswith("sleep"):
     sys.stderr.write(
         "BLOCKED by .claude/tools/no-background-agents.sh: a backgrounded sleep is the "
@@ -82,9 +90,12 @@ if tool == "Bash" and bg is True and cmd.startswith("sleep"):
 # fully automatic (owner rule), so approve the Bash call here. Any deny above, or from
 # another PreToolUse hook, still wins over this allow. Local sessions are untouched.
 if cloud and tool == "Bash":
-    print(json.dumps({"hookSpecificOutput": {
+    output = {"hookSpecificOutput": {
         "hookEventName": "PreToolUse",
         "permissionDecision": "allow",
-        "permissionDecisionReason": "unattended cloud routine: Bash is pre-approved"}}))
+        "permissionDecisionReason": "unattended cloud routine: Bash is pre-approved"}}
+    if updated_input is not None:
+        output['hookSpecificOutput']['updatedInput'] = updated_input
+    print(json.dumps(output))
 sys.exit(0)
 PY

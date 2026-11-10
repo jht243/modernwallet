@@ -70,6 +70,13 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
         checkpoint_file=Path(result.stdout.strip());checkpoint_file.parent.mkdir(parents=True,exist_ok=True,mode=0o700)
         checkpoint_file.write_text(json.dumps(checkpoints),encoding='utf-8');checkpoint_file.chmod(0o600)
     summary={k:checkpoints[-1].get(k) for k in ('stage','canonicalJobs','reviewCounters','gitRef','commit')} if checkpoints else None
+    retained=Path('reports/search-gap/recovery')/(digest(path)+'.json')
+    if resumed and retained.is_file():
+        saved=read(retained)
+        require(saved.get('intakeSha256')==digest(path) and saved.get('runId')==packet['runId'],'Saved completion belongs to another search job')
+        for ref in saved['artifacts']:
+            require(digest(artifact_path(ref['path']))==ref['sha256'],'Saved completed decision evidence changed')
+        summary=dict(summary or {},completionFile=saved['completionFile'],completionSourceCommit=saved['sourceCommit'])
     return dict(packet,durableJob=True,intakeFile=str(path),intakeSha256=digest(path),resumed=resumed,checkpointFile=str(checkpoint_file) if checkpoint_file else None,checkpointCount=len(checkpoints),recoverySummary=summary)
 
 def artifact_path(value):
