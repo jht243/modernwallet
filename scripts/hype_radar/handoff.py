@@ -134,6 +134,19 @@ def finish(root, source, manifest, review):
     gate = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(gate)
     plan, verdict = (json.loads(p.read_text()) for p in (manifest,review))
+    retained = source.parent / 'reviewed' / source.name
+    if retained.is_file():
+        proof = json.loads(retained.read_bytes())
+        validate_proof(source, proof)
+        stable = lambda obj: fingerprint(json.dumps(obj, sort_keys=True, separators=(',',':'), ensure_ascii=False).encode())
+        if (proof['manifest'] != stable(plan) or proof['review'] != stable(verdict)
+                or proof['job'] != verdict.get('jobId') or proof['reviewer'] != verdict.get('reviewer')):
+            raise ValueError('Use the unchanged original independently reviewed chart and verdict')
+        # Production is allowed to change the pre-write sources. The original
+        # chart was already validated against them and is bound by both hashes.
+        remaining = production().outstanding(root,proof)
+        print(json.dumps({'chart':'original-independent-review-retained','pendingPublication':remaining}))
+        return
     gate.chart(root, plan, verdict)
     gate.saved_chart(root, plan)
     acknowledge(root, source, plan, verdict)
