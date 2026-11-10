@@ -482,6 +482,28 @@ def reserve(root, snapshot_path, route, job, reviewer, out, prior_reports=(),pre
     try:return reserve_without_checkpoint(root,snapshot_path,route,job,reviewer,out,prior_reports)
     finally:durable.checkpoint(root,journal,context)
 
+def changed_pending_dependencies(root, original, replacement):
+    """Identify original source references whose exact bytes are missing from an unused slot."""
+    prior = original.get('manifest', {}).get('reviewDependencies', [])
+    current = replacement.get('manifest', {}).get('reviewDependencies', [])
+    for ref in current:
+        artifact(root, ref)
+    updated = {ref['path']: ref for ref in current}
+    missing = []
+    for ref in prior:
+        name = ref['path']
+        expected = ref['sha256']
+        source = inside(root, name)
+        cached = durable_reviews(root).cache_path(root, name, expected)
+        if any(path.is_file() and sha(path.read_bytes()) == expected for path in (source, cached)):
+            continue
+        require(name in updated and updated[name]['sha256'] != expected,
+                'Retain the source path and capture its actual replacement before repairing the pending slot')
+        artifact(root, updated[name])
+        missing.append({'path': name, 'sha256': expected, 'replacementSha256': updated[name]['sha256']})
+    return missing
+
+
 def repair_pending(root,snapshot_path,route,job,reviewer,out,failure):
     """Rebind one corrupt, unfinished capture admission; no verdict or new round."""
     snapshot=read(snapshot_path);valid_snapshot(snapshot);row,spec=route_in(snapshot,route)
@@ -495,16 +517,25 @@ def repair_pending(root,snapshot_path,route,job,reviewer,out,failure):
         last=cycle['rounds'][-1]
         require(last['status']=='pending' and not last.get('repaired'),'Repair only one unfinished slot; never reset a completed review')
         old=read(artifact(root,last['admission']));original=inside(root,old['snapshot']['path'])
-        require(not original.is_file() or sha(original.read_bytes())!=old['snapshot']['sha256'],'The original admission is intact; resume it normally')
+        changed_sources = []
+        if original.is_file() and sha(original.read_bytes()) == old['snapshot']['sha256']:
+            original_capture = read(original)
+            require(original_capture['manifest']['canonicalBase'] == snapshot['manifest']['canonicalBase']
+                    and original_capture['manifest'].get('jobId') == snapshot['manifest'].get('jobId'),
+                    'Keep the original canonical site and job')
+            changed_sources = changed_pending_dependencies(root, original_capture, snapshot)
+            require(changed_sources, 'The original admission is intact; resume it normally')
         require(failure.is_file() and str(failure.relative_to(root)).startswith('reports/'),'Retain the actual independent failure handback')
         require(len(failure.read_bytes())>=100,'Retain the complete actual failure, not an invented summary')
         value={**old,'snapshot':freeze(root,snapshot_path,actual.path.parent),'fingerprint':row['fingerprint'],
                'author':snapshot['manifest']['author'],'reviewer':reviewer,'policySha256':policy_hash(root),
                'repairOf':last['admission'],'failureEvidence':freeze(root,failure,actual.path.parent)}
+        if changed_sources:
+            value['unavailableOriginalSources'] = changed_sources
         save_exact(out,value)
         actual.append('repair-pending',{'number':old['number'],'previousAdmission':last['admission'],
                       'admission':reference(root,out),'failureEvidence':value['failureEvidence'],
-                      'invalidatedReferences':[old['snapshot']],'reason':'Original pending snapshot was overwritten; retain the loss and complete this same slot. No verdict, counter reset or additional round.'})
+                      'invalidatedReferences':[old['snapshot']],'reason':'Original pending capture or a bound source is unavailable; retain the loss and complete this same slot. No verdict, counter reset or additional round.'})
     durable.checkpoint(root,journal,context)
     return {**value,'admissionArtifact':reference(root,out),'scope':'Pending capture repair only; the real independent verdict is still required.'}
 

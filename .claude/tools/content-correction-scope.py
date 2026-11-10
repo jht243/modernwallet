@@ -216,11 +216,20 @@ def validate(root,snapshot,report):
         if not row.get('correctionScope'):continue
         receipt=read(p.artifact(root,row['correctionScope']))
         require(receipt.get('version')==VERSION and receipt.get('route')==row['path'],'Wrong correction scope')
-        fresh=scope(root,p.artifact(root,receipt['previousSnapshot']),p.artifact(root,receipt['previousReview']),p.artifact(root,receipt['snapshot']),row['path'],p.digest(report))
-        require(receipt==fresh and receipt['mode']=='targeted','Scope changed or requires a full affected-page review')
-        require(read(p.artifact(root,receipt['snapshot']))==snapshot,'Targeted review belongs to a different snapshot')
+        source_snapshot, source_report = p.projection_source(root, snapshot, report)
+        approved = read(p.artifact(root,receipt['snapshot']))
+        require(approved == source_snapshot, 'Correction review belongs to a different snapshot')
         admission=read(p.artifact(root,row.get('reviewBudget')))
         require(admission['jobId']==receipt['jobId'] and admission['reviewer']==report.get('reviewer'),'Retain the original job and actual independent reviewer')
+        fresh=scope(root,p.artifact(root,receipt['previousSnapshot']),p.artifact(root,receipt['previousReview']),p.artifact(root,receipt['snapshot']),row['path'],p.digest(source_report))
+        require(receipt == fresh, 'Scope changed or requires a full affected-page review')
+        if receipt['mode'] == 'full':
+            require(not row.get('carriedFactualChecks') and not row.get('carriedRenderedChecks'),
+                    'Full review cannot authorize carrying earlier checks')
+            selected = p.decision(root, source_snapshot, source_report, row)
+            p.pass_evidence(root, source_snapshot, row, selected, retain_fail=row.get('verdict')=='FAIL' and p.capped_release(root,source_snapshot))
+            continue
+        require(receipt['mode']=='targeted','Unknown correction scope')
         previous=read(p.artifact(root,receipt['previousReview']));old=next(x for x in previous['routes'] if x['path']==row['path'])
         require(row.get('reviewProfile') in p.LEVELS and
                 (row['reviewProfile']==old.get('reviewProfile') if row.get('verdict')=='PASS' else

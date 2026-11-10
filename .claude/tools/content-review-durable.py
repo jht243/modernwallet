@@ -62,6 +62,9 @@ def collect(root,journal):
   name=str(target.relative_to(root))
   if (name,expected) in invalid:
    saved=cache_path(root,name,expected)
+   if target.is_file() and sha(target.read_bytes()) == expected:
+    saved = cache(root, name, expected, target.read_bytes())
+    paths[name] = expected
    if saved.is_file() and sha(saved.read_bytes())==expected:paths[str(saved.relative_to(root))]=expected
    return  # Exact unavailable pending capture remains declared, never fabricated.
   current=target.read_bytes() if target.is_file() else None

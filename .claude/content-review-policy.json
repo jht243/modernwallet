@@ -43,6 +43,11 @@
       "sha256": "433bc827af6dd4d6b7219394aa8dcacce623ade86af052b9a739e049abdc65dc",
       "commit": "95a778093a35ea66a15fdaefc43b9864ad9f988d",
       "reason": "Preserve independent reviews recorded before the owner changed this site’s default and minimum editorial review levels."
+    },
+    {
+      "sha256": "c9a60ad70ed51c9e2998e2ca855d489a288bef5f8b6832b0c89f7ff559882c8f",
+      "commit": "3b09245b3daf65665ab09f7c1ea2da8398be4744",
+      "reason": "Preserve recorded candidates when installing the same-slot repair for independently verifiable changes to unfinished source evidence."
     }
   ],
   "releaseAtAuditLimit": true
