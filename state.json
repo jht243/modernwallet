@@ -18,7 +18,9 @@
       ],
       "jobId": "competitor-18b9b55e45cc",
       "previousJobs": [],
-      "repairs": [],
+      "repairs": [
+        "38e5e12d6ca854d21bc58689ca42ee7d41a4d8aa2a5161e05cdeabb4c29cafe8"
+      ],
       "route": "/compare/robo-advisor-vs-financial-advisor"
     },
     "60791aceae3034e7f9002bf271cf03f06d125c36d25249c6eae288a8b59f4fca": {
