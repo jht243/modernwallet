@@ -108,8 +108,8 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
             from preserved_evidence import restore
             recovered = restore(Path.cwd().resolve(), packet, digest(path))
             if recovered: summary.update(recovered)
-        if resumed and checkpoints and checkpoints[-1].get('stage') == 'completion-recovery':
-            previous = checkpoints[-1]
+        previous = next((cp for cp in reversed(checkpoints) if cp.get('completionFile') and cp.get('stage','').startswith('completion-recovery')),None)
+        if resumed and previous:
             name = previous.get('completionFile')
             # Restore only the exact checkpointed, independently reviewed decisions.
             files = {item['path']: item['sha256'] for item in previous['artifacts']}
@@ -132,7 +132,18 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
                           'at requiredIndependentReceipt, binding chartSha256, intakeSha256 and decisionsSha256 using the native finish contract. Keep the original chart hash and '
                           'history of its loss. Use the distinct producer identity of the mechanical index and the actual independent reviewer identity. '
                           'If validated, finish the proposedCompletion through ALL existing preview/live, ancestry and action gates. Pending observations remain pending. No new content or repeat writing.')
-        if summary and summary.get('completionFile'):
+        dispatch = checkpoints[-1].get('verifiedContinuation') if checkpoints else None
+        if dispatch:
+            require(dispatch.get('runId')==packet['runId'] and dispatch.get('intakeSha256')==digest(path),'Recovery belongs to another original intake')
+            for ref in dispatch.get('evidence',[]):
+                require(digest(artifact_path(ref['path']))==ref['sha256'],'The original scoped recovery evidence changed')
+            summary['verifiedContinuation']=dispatch
+            action = ('Continue the original saved work described in recoverySummary.verifiedContinuation. Read its evidence and '
+                      'nextAction. Preserve every earlier verdict, counter and site constraint. Reuse the existing decisions and candidate. '
+                      'Only the identified changed route may need targeted independent review. Release the exact candidate already at its '
+                      'authorized editorial limit using its original review. Complete outstanding native production and live checks. '
+                      'The unchanged old completion is evidence, not a substitute for finishing these still-open scoped actions.')
+        if summary and summary.get('completionFile') and not dispatch:
             action='Reuse the restored, already independently reviewed recoverySummary.completionFile, reconcile its separate preview, then finish. For an expired original loopback preview use a separate current build and postPublicationRecovery with the original approved hash and original publication commit. Run python3 scripts/search_gap/publication_history.py FULL_COMMIT for genuine current remote ancestry, including shallow checkouts. Keep all exact-render and live comparisons. Do not dispatch BUILD, WRITE or another decision/content review.'
             sid=os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID')
             if sid:
