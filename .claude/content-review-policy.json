@@ -33,6 +33,11 @@
       "sha256": "2b50043d3a5456445993cd34bc2fe404a02f5740217355350b623127ad0d151c",
       "commit": "f98b11f3b66b7078c11a9abd0a088b2b52807564",
       "reason": "Preserve exact prior admissions and review counters across immutable evidence and pending-slot repair."
+    },
+    {
+      "sha256": "59585d30bdf19ee11e0a0a181cd6928f9b021da11a3e5340bf22b4448659a143",
+      "commit": "3b394fff6e4269314726bc261f56b9d0305ceccd",
+      "reason": "Retain genuine earlier independent verdicts and counters while removing obsolete editorial hold wording from the existing release contract."
     }
   ],
   "releaseAtAuditLimit": true

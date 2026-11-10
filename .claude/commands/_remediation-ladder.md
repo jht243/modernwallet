@@ -1,6 +1,6 @@
 
 <!-- mindmap-unattended-publication-v1 -->
-**Unattended Mindmap authorization and recovery:** Apply `_mindmap-execution.md`, “Authorized unattended Mindmap: continue through publication,” before the default Phase 0/stop rules below. Explicitly authorized end-to-end routines record their existing authorization, save the complete independently reviewed chart and continue through publication without asking. Repair failures automatically; after the existing per-page repair limit, isolate only failed pages and their dependencies, rebuild/review the passing subset, then publish and verify that subset. Preserve mandatory audits, exact rendered/live checks, professional review, local exclusions and authorization limits. Manual runs retain their Phase 0 gate and stop rules. A generated `ready-for-approval` chart is accepted after structural validation plus the separately recorded authorization; never rewrite it merely to change status.
+**Unattended Mindmap authorization and recovery:** Apply `_mindmap-execution.md`, “Authorized unattended Mindmap: continue through publication,” before the default Phase 0/stop rules below. Explicitly authorized end-to-end routines record their existing authorization, save the complete independently reviewed chart and continue through publication without asking. Use the single shared per-page audit budget. Where the configured Mindmap capped-release policy applies, publish the exact final candidate at its limit with every factual or cosmetic FAIL finding preserved; do not isolate it merely for an editorial failure or request another review. Keep existing non-editorial publication safeguards. Preserve mandatory audits, exact rendered/live checks, professional review, local exclusions and authorization limits. Manual runs retain their Phase 0 gate and stop rules. A generated `ready-for-approval` chart is accepted after structural validation plus the separately recorded authorization; never rewrite it merely to change status.
 <!-- /mindmap-unattended-publication-v1 -->
 
 # Remediation ladder — how an audit finding gets fixed
@@ -89,7 +89,7 @@ Reserved for findings that need new substance, new research, or a structurally d
 
 Hand the reviewer's notes for **that page only** to the writer phase and re-run it for that page. A regenerated API page gets the claim check again automatically; anything the audit still finds goes back through Rung 1 `fix`, not straight to another rework. The reworked page then gets a full audit again, from Rung 0.
 
-**Max 2 rework attempts per page.** If a page still fails after its second rework, STOP this workflow and escalate its unresolved findings. Do not commit, push or publish. Preserve unrelated work and the review evidence for unchanged pages; do not silently drop the failed page and continue publication.
+**One shared Mindmap audit budget.** An activated Mindmap page has its configured total 1/2/3 independent rounds, including corrections; there is no separate two-rework allowance. At its limit stop editorial work and publish the exact final reviewed candidate with factual/cosmetic FAIL findings intact. Preserve unrelated work and unchanged-page evidence. Non-Mindmap native workflows retain their own existing limits and explicit client/upsell release exceptions.
 
 ---
 
@@ -105,9 +105,6 @@ The reviewer report ends with one line per page:
 <page>: PASS | FIX-IN-PLACE (n) | REWORK (attempt k/2) | BLOCKED — <reason>
 ```
 
-## STOP AND ESCALATE WHEN
+## Actual dependency failures
 
-- any page still fails after two rework attempts, or
-- a rung cannot be executed at all (the lint script is broken, a canonical standard file is missing, the reviewer subagent cannot run).
-
-Then STOP the workflow and report the outstanding notes. Do not commit, push or publish while the required review is unresolved. Preserve unrelated work and retain valid evidence for unchanged pages.
+A required lint/build/runtime, canonical instruction, independent-review execution, scope/payment/ownership, testing-honesty, exclusion, explicit customer-hold or professional-approval dependency remains required. Repair it automatically within existing authority, retaining exact work and evidence; report an actual unavailable dependency honestly. An ordinary editorial FAIL at an activated Mindmap audit limit is a capped release, not such a hold. Never fabricate a PASS or silently add another audit. Other native workflows retain their own stop/release rules.

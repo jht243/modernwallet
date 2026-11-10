@@ -5,7 +5,7 @@
 
 
 <!-- mindmap-unattended-publication-v1 -->
-**Unattended Mindmap authorization and recovery:** Apply `_mindmap-execution.md`, “Authorized unattended Mindmap: continue through publication,” before the default Phase 0/stop rules below. Explicitly authorized end-to-end routines record their existing authorization, save the complete independently reviewed chart and continue through publication without asking. Repair failures automatically; after the existing per-page repair limit, isolate only failed pages and their dependencies, rebuild/review the passing subset, then publish and verify that subset. Preserve mandatory audits, exact rendered/live checks, professional review, local exclusions and authorization limits. Manual runs retain their Phase 0 gate and stop rules. A generated `ready-for-approval` chart is accepted after structural validation plus the separately recorded authorization; never rewrite it merely to change status.
+**Unattended Mindmap authorization and recovery:** Apply `_mindmap-execution.md`, “Authorized unattended Mindmap: continue through publication,” before the default Phase 0/stop rules below. Explicitly authorized end-to-end routines record their existing authorization, save the complete independently reviewed chart and continue through publication without asking. Use the single shared per-page audit budget. Where the configured Mindmap capped-release policy applies, publish the exact final candidate at its limit with every factual or cosmetic FAIL finding preserved; do not isolate it merely for an editorial failure or request another review. Keep existing non-editorial publication safeguards. Preserve mandatory audits, exact rendered/live checks, professional review, local exclusions and authorization limits. Manual runs retain their Phase 0 gate and stop rules. A generated `ready-for-approval` chart is accepted after structural validation plus the separately recorded authorization; never rewrite it merely to change status.
 <!-- /mindmap-unattended-publication-v1 -->
 
 
@@ -34,7 +34,7 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 <!-- /fleet-evidence-contract-v2 -->
 
 ## Worker
-After the informational Phase 8 summary, continue automatically within the publication scope authorized at Phase 0, provided every required independent review and final rendered check passes. Phase 8 adds no human approval gate:
+After the informational Phase 8 summary, continue automatically within the publication scope authorized at Phase 0, provided every required independent review is complete with an actual PASS or configured final capped-FAIL release, and the exact rendered/non-editorial checks pass. Phase 8 adds no human approval gate:
 1. Inspect the working tree and staging. Commit only this run’s independently approved changes. Preserve unrelated edits and pre-existing staged work, using a separate index or an isolated reviewed publication checkout when needed. Unexpected changes require attribution and reconciliation, never a blanket add, stash or reset.
 2. Single commit:
    `Mindmap pass: {C} consolidations, {M} metadata, {N} new pages, {B} body, {L} link passes (chart: reports/mindmap-pass/<date>.md)`
@@ -47,7 +47,7 @@ After the informational Phase 8 summary, continue automatically within the publi
 8. **‼️ FINAL STEP — Direct links to every newly created page (REQUIRED, always last).** After the exact live verification (step 6) and IndexNow (step 7), end the run by giving the user a clickable link list of EVERY newly created page from this run, so they can open each one directly in a browser and see it. Rules:
    - One page per line, as a full absolute URL (`https://<BASE_URL>/<path>`) — never a relative path, never a file path, never a route name.
    - Format each line as a markdown link whose text is the page's H1/title: `- [Page Title](https://<BASE_URL>/<path>)`.
-   - Include ONLY pages that returned 200 and passed exact reviewed-output verification in step 6. Pages that were reverted/FAILED go in a separate `⚠️ Not live` list underneath with their final status code — never mixed into the clickable list.
+   - Include ONLY pages that returned 200 and passed exact reviewed-output verification in step 6. Routes not published or failing exact live verification go in a separate `⚠️ Not live` list underneath with their final status code — never mixed into the clickable list.
    - This list is for NEW pages created this run. If existing pages were significantly enriched (body sections added), add a second, clearly separated `Updated pages` link list in the same format.
    - This must be the LAST section of the final response — nothing after it — so the links are immediately visible and clickable at the end of the run.
 
