@@ -462,7 +462,20 @@ def durable_reviews(root):
     spec=importlib.util.spec_from_file_location('review_durability',path)
     module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);return module
 
-def reserve(root, snapshot_path, route, job, reviewer, out, prior_reports=()):
+def audit_preflight_check(root,directory,job,reviewer,route):
+    if not (root/'.claude/commands/_workflow-efficiency.md').is_file():return
+    require(directory,'Before reserving an audit, MAIN must seal the current canonical handoff and the actual independent auditor must complete AUDIT preflight; pass --preflight ITS_COMPLETED_DIRECTORY. Do not begin the content audit or consume a round on a missing handoff.')
+    spec=importlib.util.spec_from_file_location('review_audit_preflight',root/'.claude/tools/workflow-preflight.py')
+    preflight=importlib.util.module_from_spec(spec);spec.loader.exec_module(preflight)
+    m=preflight.validate(root,directory)
+    require(m.get('phase')=='audit' and m.get('actor')==reviewer,'Use this actual independent auditor’s completed AUDIT reading, not BUILD or another actor’s receipt')
+    require(m.get('runId') and m.get('contextId') and m.get('contextEpoch'),'Retain actual run and uninterrupted auditor context identities')
+    h=read(inside(root,m['handoff']['path']))
+    require(h.get('jobId')==job and route in h.get('routes',[]),'AUDIT handoff must bind the original canonical job and this actual route')
+
+
+def reserve(root, snapshot_path, route, job, reviewer, out, prior_reports=(),preflight=None):
+    audit_preflight_check(root,preflight,job,reviewer,route)
     durable=durable_reviews(root);snapshot=read(snapshot_path)
     journal=Journal(root,snapshot['manifest']['canonicalBase'],route)
     context=durable.restore(root,journal)
@@ -614,6 +627,7 @@ def main():
     p=sub.add_parser('reserve')
     for name in ['snapshot','route','job-id','reviewer','out']:p.add_argument('--'+name,required=True)
     p.add_argument('--prior-review',action='append',default=[])
+    p.add_argument('--preflight',help='This actual auditor’s completed current AUDIT preflight directory')
     p=sub.add_parser('record');p.add_argument('--review',required=True)
     p=sub.add_parser('sources');p.add_argument('--review',required=True)
     p=sub.add_parser('project')
@@ -627,7 +641,7 @@ def main():
         selected=profile(root,page['semantic'],spec.get('claimCategories',[]),spec.get('reviewProfile'),read(inside(root,args.assessment)) if args.assessment else None)
         print(json.dumps({'profile':selected,'maximumRounds':LIMITS[selected],'textSha256':sha(text.encode()),'riskPassages':flags(text),'requiredFactualChecks':FACTS[selected],'fullSeoRequired':True},indent=2))
     elif args.command=='reserve':
-        print(json.dumps(reserve(root,inside(root,args.snapshot),args.route,args.job_id,args.reviewer,inside(root,args.out),[inside(root,p) for p in args.prior_review]),indent=2))
+        print(json.dumps(reserve(root,inside(root,args.snapshot),args.route,args.job_id,args.reviewer,inside(root,args.out),[inside(root,p) for p in args.prior_review],inside(root,args.preflight) if args.preflight else None),indent=2))
     elif args.command=='repair-pending':print(json.dumps(repair_pending(root,inside(root,args.snapshot),args.route,args.job_id,args.reviewer,inside(root,args.out),inside(root,args.failure)),indent=2))
     elif args.command=='record':print(json.dumps(record(root,inside(root,args.review)),indent=2))
     elif args.command=='sources':print(json.dumps(sources(root,inside(root,args.review)),indent=2))

@@ -28,6 +28,11 @@
       "sha256": "0fedd7deb4bb7494df4c8b60edf5dff1b1a5870a03f7a0e67884edf958461f1e",
       "commit": "8e1080e0fd031c4ff5fca8ffc9280127347c1aa8",
       "reason": "Preserve exact prior admissions and review counters across immutable evidence and pending-slot repair."
+    },
+    {
+      "sha256": "2b50043d3a5456445993cd34bc2fe404a02f5740217355350b623127ad0d151c",
+      "commit": "f98b11f3b66b7078c11a9abd0a088b2b52807564",
+      "reason": "Preserve exact prior admissions and review counters across immutable evidence and pending-slot repair."
     }
   ],
   "releaseAtAuditLimit": true

@@ -14,6 +14,25 @@ class Tests(unittest.TestCase):
   s={'manifest':m,'routes':[r],'baseUrl':'https://example.com','capturedAt':'2026-10-27T18:00:00+00:00'}; s['snapshotSha256']=a.digest(s); return s
  def review(self,s):
   return {'reviewer':'independent','snapshotSha256':s['snapshotSha256'],'routes':[{'path':'/guide','fingerprint':s['routes'][0]['fingerprint'],'verdict':'PASS','checks':{k:{'status':'PASS','evidence':'Fixture evidence for negative-path testing only.'} for k in a.CHECKS}}]}
+ def test_live_compare_accepts_only_generated_document_font_hash_drift(self):
+  approved=self.snapshot(HTML.replace('<html>','<html class="__variable_482ce5">'))
+  live=self.snapshot(HTML.replace('<html>','<html class="__variable_eb41fe">'))
+  a.compare(approved,live,self.review(approved))
+  self.assertNotEqual(approved['routes'][0]['fingerprint'],live['routes'][0]['fingerprint'])
+  changed=self.snapshot(HTML.replace('<html>','<html class="__variable_eb41fe hidden">'))
+  with self.assertRaises(ValueError):a.compare(approved,changed,self.review(approved))
+
+ def test_build_font_identifiers_preserve_copy_and_visibility_checks(self):
+  original={'text':'Exact actual reader copy','structure':[['html',{'class':'__variable_482ce5 __variable_d8ebd1'}],['p',{'class':'visible'}]]}
+  current=copy.deepcopy(original);current['structure'][0][1]['class']='__variable_eb41fe __variable_f367f3'
+  self.assertEqual(a.publication_semantic(original),a.publication_semantic(current))
+  current['text']='Changed claim'
+  self.assertNotEqual(a.publication_semantic(original),a.publication_semantic(current))
+  current=copy.deepcopy(original);current['structure'][1][1]['class']='hidden'
+  self.assertNotEqual(a.publication_semantic(original),a.publication_semantic(current))
+  current=copy.deepcopy(original);current['structure'][1][1]['class']='__variable_abcdef'
+  self.assertNotEqual(a.publication_semantic(original),a.publication_semantic(current))
+
  def test_capture_never_overwrites_a_reserved_output_or_contacts_the_server(self):
   from unittest.mock import patch
   with tempfile.TemporaryDirectory() as tmp:

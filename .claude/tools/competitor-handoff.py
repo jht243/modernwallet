@@ -61,7 +61,7 @@ def announce(root,path):
  repairs=pending_reviews(root,path.stem)
  gaps=publication_gaps(root,path.stem)
  if gaps and not repairs:
-  print('RESUME MECHANICAL PUBLICATION VERIFICATION ONLY: these original reviewed routes lack rendered-audit.py record-deployment: '+json.dumps(gaps)+'. Do not rewrite, regenerate, repeat research/chart or reserve any additional editorial audit. Use each genuine saved approved snapshot and actual final report (project subsets through the native policy helper where necessary), capture exact canonical live output to NEW immutable paths, compare, obtain actual host commit evidence, and record-deployment. Complete current PUBLISH preflight with a sealed current handoff. HTTP 200 or unchanged content never substitutes for exact comparison. Preserve all original findings/counters and record the native ledger completion only after this proof exists.')
+  print('RESUME ORIGINAL REVIEW/PUBLICATION PROOF, without new discovery: these original reviewed routes lack rendered-audit.py record-deployment: '+json.dumps(gaps)+'. Do not regenerate or repeat research/chart. Start with each genuine saved approved snapshot and actual final report (project subsets through the native policy helper where necessary), capture exact canonical live output to NEW immutable paths, compare, obtain actual host commit evidence, and record-deployment. Complete current PUBLISH preflight with a sealed current handoff. HTTP 200 or unchanged content never substitutes for exact comparison. Preserve all original findings/counters and record the native ledger completion only after this proof exists. If a live/current candidate differs substantively from its final recorded review, this is recoverable production drift, not a request for another allowance: preserve those exact newer source bytes/diffs internally, and restore only the affected route to its exact latest genuinely reviewed source using its original correction-boundary source blobs or actual reviewed commit. Preserve unrelated routes and actual explicit customer/owner holds. No generated replacement, whole shared-file rollback or new editorial pass at an exhausted limit. If that route still has an original allowed round remaining and its final editorial result needs correction, use its existing native writer/auditor with the current sealed handoff and actual AUDIT preflight, within the SAME cycle; this is not an extra round. Known Next-generated root font hashes are normalized mechanically; other content/visibility changes still fail. Never ask the owner to fix a recoverable post-review drift or invent an authorization hold merely because its audit limit is reached.')
  if repairs:
   print('RESUME EXISTING PENDING AUDIT, even if the URL is already live or the old ledger says complete. Do not rewrite content, redo chart/discovery or reset any review counter. Restore immutable prior dependencies through the normal durable backend, capture to a new immutable output, use content-review-policy.py repair-pending only for an actually corrupt pending capture, and have a real independent reviewer complete this SAME numbered slot with its actual verdict. A reservation or unrecorded reading cannot release a changed page. First call content-review-durable.py restore for the exact canonical origin/route; keep the current content unchanged. For an overwritten capture, retain the actual auditor error report, capture the exact current page to a NEW output, call repair-pending once with the actual independent reviewer identity, then record that real reviewer result using the returned admission (not another reserve/round). Reuse the saved auditor where available. Complete exact live verification and retain the true repair/error history. '+json.dumps(repairs))
  if path.with_suffix('.chart.json').is_file():
@@ -69,7 +69,7 @@ def announce(root,path):
   plan=json.loads(proof['planText']);review=json.loads(proof['reviewText'])
   validate_chart(root,path,plan,review)
   print('RESUME APPROVED CHART '+str(path.with_suffix('.chart.json').relative_to(root))+'. Skip harvest, source/keyword discovery, BUILD and chart review. Preserve job, findings and counters.')
-  print('Use each route’s actual recorded reviews, not an archived batch-level blocker. Already-published routes retain completion and are not rewritten. An unfinished draft without an independent audit must finish its original production/review; a truly exhausted route follows the current configured capped-release policy, preserving FAIL findings. Archived instructions to grant more reviews or rewrite completed siblings are not current authorization requirements.')
+  print('Use each route’s actual recorded reviews, not an archived batch-level blocker. Already-published routes with native exact-live proof retain completion and are not rewritten. An unfinished draft without an independent audit must finish its original production/review; a truly exhausted route follows the current configured capped-release policy, preserving FAIL findings. Archived instructions to grant more reviews or rewrite completed siblings are not current authorization requirements.')
   continuation=recovery_path(root,path)
   if continuation.exists():
    hint=read(continuation)
@@ -133,7 +133,7 @@ def publication_gaps(root,digest=None):
   with policy.Journal(root,identity['canonicalBase'],identity['route']) as journal:
    if journal.cycle and journal.cycle['status']!='published':
     rounds=journal.cycle['rounds'];last=rounds[-1] if rounds else {}
-    result.append({'route':identity['route'],'jobId':job,'status':journal.cycle['status'],'round':last.get('number'),'report':last.get('report'),'admission':last.get('admission')})
+    result.append({'route':identity['route'],'jobId':job,'status':journal.cycle['status'],'round':last.get('number'),'report':last.get('report'),'admission':last.get('admission'),'remainingReviews':max(0,policy.LIMITS[journal.cycle['profile']]-len(rounds))})
  return result
 
 
@@ -383,7 +383,9 @@ def blocked(root,evidence):
  for ref in value['evidence']:
   source=inside(root,ref['path']);require(source.is_file() and sha(source.read_bytes())==ref['sha256'],'Actual blocking evidence missing or changed')
  proof={'intake':path.stem,'session':session(),'failure':value,'scope':'Recorded claimed blocker evidence only; not an editorial PASS, publication or independent proof that a command executed.'}
- save(path.with_suffix('.blocked-'+sha(session().encode())[:12]+'.json'),canonical(proof))
+ failure_path=path.with_suffix('.blocked-'+sha(session().encode())[:12]+'-'+sha(canonical(proof))[:12]+'.json')
+ save(failure_path,canonical(proof))
+ replace_pointer(path.with_suffix('.blocked-'+sha(session().encode())[:12]+'.json'),proof)
  c=connection(root)
  if c:
   _,store=c

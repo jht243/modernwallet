@@ -74,6 +74,26 @@ class Tests(unittest.TestCase):
         rr['factualReview']={k:{'status':'PASS','evidence':'Synthetic fixture evidence exercising validation only; it is never a production review.'} for k in p.FACTS[rr['reviewProfile']]+['riskClassification','seoQuality']}
         return report
 
+    def test_audit_checkpoint_binds_actual_actor_phase_job_and_route(self):
+        (self.root/'.claude/commands/_workflow-efficiency.md').write_text('Synthetic activated native workflow.')
+        self.put('reports/handoff.json',{'jobId':'fixture-job','routes':['/guide']})
+        reading={'phase':'audit','actor':'independent','runId':'actual-fixture-run','contextId':'fixture-context','contextEpoch':'1','handoff':{'path':'reports/handoff.json'}}
+        fake=types.SimpleNamespace(validate=lambda root,directory:reading)
+        with mock.patch.object(p.importlib.util,'spec_from_file_location',return_value=types.SimpleNamespace(loader=types.SimpleNamespace(exec_module=lambda module:None))),mock.patch.object(p.importlib.util,'module_from_spec',return_value=fake):
+            p.audit_preflight_check(self.root,self.root/'reports/reading','fixture-job','independent','/guide')
+            for field,value in [('actor','writer'),('phase','build'),('contextId',None)]:
+                saved=reading[field];reading[field]=value
+                with self.assertRaises(ValueError):p.audit_preflight_check(self.root,self.root/'reports/reading','fixture-job','independent','/guide')
+                reading[field]=saved
+            with self.assertRaises(ValueError):p.audit_preflight_check(self.root,self.root/'reports/reading','another-job','independent','/guide')
+            with self.assertRaises(ValueError):p.audit_preflight_check(self.root,self.root/'reports/reading','fixture-job','independent','/unowned')
+
+    def test_missing_audit_handoff_fails_before_reserving_any_round(self):
+        (self.root/'.claude/commands/_workflow-efficiency.md').write_text('Synthetic activated native workflow.')
+        with self.assertRaisesRegex(ValueError,'--preflight'):
+            p.reserve(self.root,self.put('reports/current.json',self.snap),'/guide','fixture-job','independent',self.root/'reports/admission.json')
+        self.assertFalse(any((self.root/'reports/content-review-journals').glob('*.jsonl')))
+
     def test_exact_one_two_three_shared_limits(self):
         for level,maximum in p.LIMITS.items():
             with self.subTest(level=level):

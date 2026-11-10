@@ -316,12 +316,27 @@ def review_check(s, review):
     if review_policy is not None:
         review_policy.check_rendered(Path(__file__).resolve().parents[2],s,review)
 
+def publication_semantic(semantic):
+    # Next font loader hashes vary with build paths. Keep exact archived HTML,
+    # signed fingerprints and all editorial/visibility attributes unchanged;
+    # compare only these known generated identifiers on document roots.
+    result={**semantic}
+    structure=[]
+    for tag,attributes in semantic.get('structure',[]):
+        attributes=dict(attributes)
+        if tag in ('html','body') and 'class' in attributes:
+            attributes['class']=' '.join(re.sub(r'^(__variable_|__className_)[0-9a-f]{6}$',r'\1BUILD',token) for token in attributes['class'].split())
+        structure.append([tag,attributes])
+    if 'structure' in semantic:result['structure']=structure
+    return result
+
+
 def compare(approved, live, review, require_live=True):
     review_check(approved,review); valid_snapshot(live)
     if require_live:
         require(urlsplit(live['baseUrl']).scheme=='https' and live['baseUrl'].rstrip('/')==live['manifest']['canonicalBase'].rstrip('/'),'Live verification requires canonical production origin')
     require(approved['manifest']==live['manifest'],'Live manifest differs from approved scope')
-    a={r['path']:r['fingerprint'] for r in approved['routes']}; b={r['path']:r['fingerprint'] for r in live['routes']}
+    a={r['path']:digest(publication_semantic(r['semantic'])) for r in approved['routes']}; b={r['path']:digest(publication_semantic(r['semantic'])) for r in live['routes']}
     require(a==b,'Rendered content differs: '+str([p for p in set(a)|set(b) if a.get(p)!=b.get(p)]))
 
 def record(s, approved, review, commit, host, ledger):
