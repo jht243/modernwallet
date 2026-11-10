@@ -736,6 +736,11 @@ _PROSE_KEYS = {
 }
 
 
+def _vendor_slot_text(value):
+    # The renderer fills this empty placeholder. Judge the last actual sentence.
+    return re.sub(r'\s*<div\s+data-vendor-table-slot(?:="")?\s*>\s*</div>\s*$', '', value, flags=re.I).rstrip()
+
+
 def _clipped_strings(node, out=None, where=""):
     out = [] if out is None else out
     if isinstance(node, dict):
@@ -745,7 +750,7 @@ def _clipped_strings(node, out=None, where=""):
         for i, v in enumerate(node):
             _clipped_strings(v, out, f"{where}[{i}]")
     elif isinstance(node, str):
-        s = node.strip()
+        s = _vendor_slot_text(node.strip())
         s = re.sub(r"[*_`~]+$", "", s).strip()  # ITALIC-END: closing emphasis is not a cut-off
         key = re.sub(r"\[\d+\]", "", where).split(".")[-1].lower()
         if key not in _PROSE_KEYS:
@@ -776,7 +781,7 @@ def looks_truncated(text: str, json_mode: bool) -> str:
             return f"{len(bad)} field(s) stop mid-sentence, e.g. {where}: ...{tail!r}"
         return ""
     # prose/markdown mode: judge the last substantive line
-    lines = [l for l in t.split("\n") if l.strip()]
+    lines = [l for l in _vendor_slot_text(t).split("\n") if l.strip()]
     last = lines[-1].strip() if lines else ""
     # CLAUDE-64K-AND-HTML-END (2026-10-10): judge the TEXT, not a closing tag — "...policies.</p>" ends cleanly (it was read as
     # "stops mid-sentence" and a finished section was billed and thrown away).

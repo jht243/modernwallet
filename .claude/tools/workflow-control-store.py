@@ -9,6 +9,25 @@ import tempfile
 REF = "refs/heads/automation/mindmap-control"
 SECRET = re.compile(rb'(?<![A-Za-z0-9_])(?:sk-(?:proj-|ant-)?[A-Za-z0-9_-]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY|ri_[A-Za-z0-9_-]{20,}|AQ\.[A-Za-z0-9_-]{20,})')
 
+# These public article URLs contain the company name SK Telecom. Limit the exception
+# to the verified public paths, and continue scanning the rest of the original bytes.
+_SK_TELECOM_NEWS = re.compile(
+    rb'https://dronedj\.com/(?:'
+    rb'2018/06/13/dji-partners-with-south-korean-telecom-provider-sk-telecom-to-develop-drone-based-video-streaming-products-and-solutions|'
+    rb'2018/06/14/dronerise-first-african-passenger-drone-sk-telecom-and-dji-partnership-and-newport-ri|'
+    rb'2022/02/08/joby-sk-telecom-join-in-south-korean-mid-range-evtol-plan'
+    rb')(?=[/?#\s"<>\x27]|$)'
+)
+
+
+def has_sensitive_material(data):
+    if not SECRET.search(data):
+        return False
+    redacted = _SK_TELECOM_NEWS.sub(lambda match: match.group().replace(b'sk-telecom', b'south-korean-telecom'), data)
+    return bool(SECRET.search(redacted))
+
+
+
 
 class ControlError(RuntimeError):
     pass
@@ -65,7 +84,7 @@ class Store:
         blobs = {}
         for rel in artifacts:
             data = safe_path(self.root, rel).read_bytes()
-            if len(data) > 20_000_000 or SECRET.search(data):
+            if len(data) > 20_000_000 or has_sensitive_material(data):
                 raise ControlError('Sensitive or oversized artifact refused')
             blobs[rel] = (sha(data), data)
         for _ in range(5):
@@ -79,7 +98,7 @@ class Store:
                            GIT_COMMITTER_NAME='routine-controller', GIT_COMMITTER_EMAIL='routines@layer3labs.io')
                 git(self.root, 'read-tree', base if base else '--empty', env=env)
                 files = {'state.json': (json.dumps(state, sort_keys=True, indent=2) + '\n').encode()}
-                if len(files['state.json']) > 20_000_000 or SECRET.search(files['state.json']):
+                if len(files['state.json']) > 20_000_000 or has_sensitive_material(files['state.json']):
                     raise ControlError('Sensitive workflow state refused')
                 files.update({'artifacts/' + digest: data for digest, data in blobs.values()})
                 for path, data in files.items():
