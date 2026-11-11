@@ -259,10 +259,10 @@ def cmd_final(a):
             probs.append("audit.md final verdict is FAIL")
     led = Path("reports/standards-ledger.jsonl")
     today = [l for l in (led.read_text().splitlines() if led.exists() else []) if m["date"] in l]
-    if any("create new content" in r.get("bucket", "").lower() for r in rows) and not any('"phase-3"' in l for l in today):
+    if any("create new content" in r.get("bucket", "").lower() for r in rows) and not any('"phase-3"' in l or '"write"' in l for l in today):
         probs.append("no phase-3 entry in reports/standards-ledger.jsonl today (load-standards.sh was skipped)")
     if any("update existing body text" in r.get("bucket", "").lower() and not is_fix(r)
-           for r in rows) and not any('"phase-5"' in l for l in today):
+           for r in rows) and not any('"phase-5"' in l or '"write"' in l for l in today):
         probs.append("no phase-5 entry in reports/standards-ledger.jsonl today")
     metas = glob.glob(f"reports/mindmap-pass/{m['date']}*/**/*.meta.json", recursive=True)
     for r in rows:

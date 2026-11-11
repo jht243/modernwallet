@@ -1,5 +1,10 @@
 # Anti-AI language — the canonical tell list
 
+<!-- chart-obligation: aal-outline-and-headline-bans -->
+Planned titles, working H1s, subtitles, and section outlines in Mindmap charts and new-page briefs must obey headline rules: never plan `Conclusion`, `Summary`, or `Final Thoughts` headings; never use coy abstractions where the subject name belongs (`the Vendor`, `the Platform`, `this Tool`); never presuppose reader ownership (`before you switch`, `your current system`) or prior state (`still`, `now`, `no longer`); avoid two-clause spliced headlines (`X: What It Is and How to Choose`, `X, and Why It Matters`), tricolons, em-dashes, `"honest"`, or `"actually"`/`"really"`/`"truly"`. Full prose tell checks run in WRITE and Phase 4 AUDIT.
+<!-- /chart-obligation -->
+
+
 > **STOP — if you opened this file directly, you have skipped the load receipt.** Run `bash .claude/tools/load-standards.sh "<routine>" "<phase>"` now; it prints this file (and its two companions) AND records the load in `reports/standards-ledger.jsonl`. A run with no ledger entry is treated as a run that never loaded the standard.
 
 <!-- SOURCE OF TRUTH. Every writer, auditor, and body-edit phase in every routine loads THIS file.

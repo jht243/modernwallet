@@ -27,6 +27,64 @@ COLUMNS = ['problem', 'solution', 'bucket', 'target', 'format', 'best_medium',
 HEADINGS = ['Problem', 'Solution', 'Bucket', 'Target (file or route)', 'Format', 'Best medium',
             'Resolved deliverable', 'SERP verdict', 'SERP evidence', 'Reader question',
             'Answer', 'Answer placement', 'ID']
+SUBSTANTIVE = {'create new content', 'update existing body text'}
+
+
+def presentation(decision):
+    require(isinstance(decision, dict), 'Missing presentation decision')
+    for key in ['medium', 'placement', 'reason']:
+        prose(decision.get(key), 'presentation.' + key)
+    require(not re.search(r'\bvideo\b', decision['medium'], re.I), 'Video is outside this workflow')
+    inputs = decision.get('readerInputs')
+    require(isinstance(inputs, list), 'presentation.readerInputs must list meaningful reader choices (or [])')
+    for item in inputs:
+        prose(item, 'reader input')
+    for key, allowed in [('interaction', {'build', 'reuse', 'not-useful', 'unavailable'}),
+                         ('animation', {'use', 'not-useful'})]:
+        item = decision.get(key, {})
+        require(isinstance(item, dict), 'Missing presentation.' + key)
+        require(item.get('decision') in allowed, 'Missing presentation.' + key + ' decision')
+        prose(item.get('reason'), 'presentation.' + key + ' reasoning')
+    interactive = bool(re.search(r'\b(interactive|calculator|quiz|assessment)\b', decision['medium'], re.I))
+    chosen = decision['interaction']['decision'] in {'build', 'reuse'}
+    require(interactive == chosen, 'Presentation medium and interaction decision disagree')
+    require(not chosen or bool(inputs), 'Interactive delivery needs meaningful reader inputs')
+    require(decision['animation']['decision'] != 'use' or chosen, 'Interactive animation needs an interactive delivery')
+
+
+def request_contract(root, plan):
+    """Bind the actual request to planned work; truth/coverage still needs independent judgment."""
+    rows = {r['id']: r for r in plan['actions'] if r['bucket'] in SUBSTANTIVE}
+    if not rows:
+        return
+    request = plan.get('request', {})
+    require(isinstance(request, dict), 'Missing original request')
+    artifact(root, request.get('source'))
+    prose(request.get('goal'), 'original request goal')
+    requirements = request.get('requirements')
+    require(isinstance(requirements, list) and requirements, 'Missing original request requirements')
+    seen, covered = set(), set()
+    for item in requirements:
+        for key in ['id', 'description', 'acceptance']:
+            prose(item.get(key), 'requirement.' + key)
+        require(item['id'] not in seen, 'Duplicate request requirement')
+        seen.add(item['id'])
+        ids = item.get('actionIds')
+        require(isinstance(ids, list) and ids and all(i in rows for i in ids),
+                'Request requirement needs matching substantive action IDs')
+        covered.update(ids)
+    require(covered == set(rows), 'Substantive action is not tied to the original request')
+
+
+def request_review(review, request):
+    checks = review.get('requestCoverage', [])
+    require(isinstance(checks, list), 'Missing request coverage review')
+    expected = {r['id'] for r in request['requirements']}
+    require(len(checks) == len(expected) and {c.get('requirementId') for c in checks} == expected,
+            'Review must cover every original request requirement exactly once')
+    for check in checks:
+        require(check.get('status') == 'PASS', 'Original request is not fulfilled: ' + str(check.get('requirementId')))
+        prose(check.get('evidence'), 'original request coverage evidence')
 
 
 def require(ok, message):
@@ -77,6 +135,29 @@ def content(value, label):
             content(item, label + '.' + key)
 
 
+def prose(value, label):
+    require(isinstance(value, str), 'Expected readable text for ' + label)
+    content(value, label)
+
+
+def preparation_artifact(root, ref):
+    """Preparation precedes the packet that hashes its approved plan; avoid a hash cycle."""
+    path = artifact(root, ref)
+    if path.suffix == '.json':
+        def check(value):
+            if isinstance(value, dict):
+                execution_packet = {'gateSchemaVersion', 'basis', 'route'} <= set(value)
+                require(not (execution_packet and (value['basis'] != 'no-addition' or 'approvedPlan' in value)),
+                        'Preparation must reference source inputs, not a final execution packet (circular plan binding)')
+                for nested in value.values():
+                    check(nested)
+            elif isinstance(value, list):
+                for nested in value:
+                    check(nested)
+        check(read(path))
+    return path
+
+
 def placements(root, brief, key):
     value = brief[key]
     require(isinstance(value, dict) and isinstance(value.get('placements'), list), key + ' requires actual inspected placements')
@@ -109,49 +190,6 @@ def independent(review, author, bound_key, expected):
     require(review.get(bound_key) == expected, 'Review belongs to a different artifact')
 
 
-def approved_intent(plan, packet):
-    target = packet['route']
-    rows = [r for r in plan['actions'] if r['target'].rstrip('/') == target.rstrip('/') and r['bucket'] in
-            ['create new content', 'update existing body text']]
-    require(rows, 'Writer target is outside approved substantive actions')
-    require(any(r['reader_question'] == packet['readerQuestion'] for r in rows), 'Analysis reader question differs from approved intent')
-
-
-def preparation_packets(root, plan, args):
-    # Move existing writer checks earlier without reinterpreting historical
-    # chart receipts or reserving any paid generation/review budget.
-    targets = {row['target'].rstrip('/') for row in plan['actions'] if row['bucket'] in
-               ['create new content','update existing body text']}
-    errors = []
-    for ref in plan['evidenceFiles']:
-        if Path(ref['path']).suffix.lower() != '.json':
-            continue
-        source = artifact(root, ref)
-        try:
-            packet = read(source)
-        except ValueError:
-            continue
-        if (isinstance(packet, dict) and packet.get('gateSchemaVersion') == VERSION and
-                isinstance(packet.get('route'), str) and packet['route'].rstrip('/') in targets):
-            for check in (lambda: analysis(root, packet), lambda: approved_intent(plan, packet)):
-                try:
-                    check()
-                except (ValueError, OSError, KeyError) as error:
-                    errors.append(ref['path']+': '+str(error))
-    budget = root/'.claude/tools/content-generation-budget.py'
-    if targets and budget.is_file():
-        spec=importlib.util.spec_from_file_location('preparation_generation_scope',budget)
-        module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
-        for route in sorted(targets):
-            try:
-                module.scope(root,argparse.Namespace(mindmap_manifest=args.manifest,
-                             mindmap_review=args.review,slug=route.rsplit('/',1)[-1]))
-            except (ValueError, OSError, KeyError) as error:
-                errors.append(str(error))
-    require(not errors,'Repair these existing preparation identities before dispatching a writer: '+
-            '; '.join(dict.fromkeys(errors)))
-
-
 def chart(root, plan, review):
     require(plan.get('schemaVersion') == VERSION, 'Unsupported chart schemaVersion')
     content(plan.get('author'), 'author')
@@ -164,7 +202,7 @@ def chart(root, plan, review):
     ids, targets, creates = set(), set(), {}
     for row in rows:
         for key in COLUMNS:
-            optional = ((key in ['format', 'best_medium', 'resolved_deliverable'] and row.get('bucket') != 'create new content')
+            optional = ((key in ['format', 'best_medium', 'resolved_deliverable'] and row.get('bucket') not in SUBSTANTIVE)
                         or key in ['serp_verdict', 'serp_evidence', 'reader_question', 'answer', 'answer_placement']
                         and row.get('bucket') in ['consolidation advisory', 'update existing metadata', 'add internal links'])
             if optional and str(row.get(key, '')).strip().lower() in ['n/a', 'na']:
@@ -176,11 +214,14 @@ def chart(root, plan, review):
                                   'update existing body text', 'add internal links'], 'Unknown action bucket')
         if row['bucket'] in ['create new content', 'update existing body text']:
             require(row['target'].startswith('/') and not row['target'].startswith('//'), 'Content actions need exact local route targets')
+            presentation(row.get('presentation'))
+            require(row['presentation']['medium'] == row['resolved_deliverable'], 'Action/presentation medium differs')
         if row['bucket'] == 'create new content':
             target = row['target'].rstrip('/') or '/'
             require(target not in targets, 'Duplicate new-page target')
             targets.add(target)
             creates[row['id']] = row
+    request_contract(root, plan)
     briefs = plan.get('newPageBriefs', [])
     require(isinstance(briefs, list), 'newPageBriefs must be an array')
     seen = set()
@@ -209,15 +250,15 @@ def chart(root, plan, review):
             placements(root, brief, key)
         require(brief.get('evidenceFiles'), 'Each brief requires its inspected evidence files')
         for ref in brief['evidenceFiles']:
-            artifact(root, ref)
+            preparation_artifact(root, ref)
     require(seen == set(creates), 'Every new-page action needs its complete inline brief')
     prep = plan.get('preparation', {})
     require(prep.get('status') == 'PASS', 'Preparation incomplete: show a blocked report, not an approval chart')
-    readiness = artifact(root, prep.get('readiness'))
+    readiness = preparation_artifact(root, prep.get('readiness'))
     refs = plan.get('evidenceFiles')
     require(isinstance(refs, list) and refs, 'Missing preparation evidence files')
     for ref in refs:
-        artifact(root, ref)
+        preparation_artifact(root, ref)
     require([p.get('phase') for p in plan.get('executionPlan', [])] == list(range(1, 10)),
             'Retain the full future execution plan, Phases 1–9')
     for p in plan['executionPlan']:
@@ -232,12 +273,22 @@ def chart(root, plan, review):
     independent(review, plan['author'], 'manifestSha256', digest(plan))
     require(review.get('readinessSha256') == file_sha(readiness), 'Readiness changed since review')
     content(review.get('evidence'), 'independent preparation review evidence')
+    if any(r['bucket'] in SUBSTANTIVE for r in rows):
+        request_review(review, plan['request'])
     if plan.get('vendorResearchPlan'):
         spec=importlib.util.spec_from_file_location('mindmap_vendor_research',root/'.claude/tools/vendor-research.py')
         vendor_research=importlib.util.module_from_spec(spec);spec.loader.exec_module(vendor_research)
         allocation=vendor_research.validate(root,artifact(root,plan['vendorResearchPlan']))
         require(plan.get('jobId')==allocation['jobId'],'Vendor research and chart must preserve the same canonical job')
     return plan
+
+
+def complete_news_chart(root, plan, review):
+    path = root/'scripts/news_radar/news_intake.py'
+    if path.is_file() and any(ref.get('path','').startswith('reports/news-radar/intakes/') for ref in plan.get('evidenceFiles', [])):
+        spec=importlib.util.spec_from_file_location('news_intake_receipt',path)
+        news=importlib.util.module_from_spec(spec);spec.loader.exec_module(news)
+        news.after_saved_chart(root,plan,review)
 
 
 def complete_hype_chart(root, plan, review):
@@ -273,6 +324,12 @@ def render(plan):
              '| ' + ' | '.join(HEADINGS) + ' |', '| ' + ' | '.join(['---'] * len(COLUMNS)) + ' |']
     for row in plan['actions']:
         lines.append('| ' + ' | '.join(str(row[k]).replace('|', '\\|').replace('\n', '<br>') for k in COLUMNS) + ' |')
+    if plan.get('request'):
+        lines += ['', '## Original request and acceptance', '', display(plan['request']['goal']), '',
+                  display(plan['request']['requirements'])]
+    for row in plan['actions']:
+        if row.get('presentation'):
+            lines += ['', '### Presentation — ' + row['id'], '', display(row['presentation'])]
     lines += ['', '## Emerging search patterns (clusters)', '', display(plan['emergingClusters']), '', '## Exclusions', '', display(plan['exclusions']), '', '## New-page briefs']
     for brief in plan.get('newPageBriefs', []):
         lines += ['', f"### {brief['actionId']} — {brief['target']}"]
@@ -293,6 +350,91 @@ def saved_chart(root, plan):
             'Actual saved chart differs from the complete reviewed manifest; render it again')
 
 
+def layer3_comparisons(root, packet):
+    """Optional comparison records inside the existing packet; not editorial approval."""
+    comparisons = packet.get('comparisons', [])
+    require(isinstance(comparisons, list), 'comparisons must be an array')
+    for comparison in comparisons:
+        require(isinstance(comparison, dict), 'Invalid comparison record')
+        kind = comparison.get('kind')
+        require(kind in ['public-data', 'practical'], 'Unknown comparison kind')
+        status = comparison.get('status')
+        require(status in ['used', 'unavailable', 'not-comparable', 'not-useful'], 'Unknown comparison status')
+        content(comparison.get('reason'), 'comparison selection/fallback reason')
+        # A skipped optional method never demands a numerical packet or a new task.
+        if status != 'used':
+            for ref in comparison.get('artifacts', []):
+                artifact(root, ref)
+            continue
+        content(comparison.get('scope'), 'comparison scope and limits')
+        plan = read(artifact(root, comparison.get('plan')))
+        require(plan.get('kind') == kind and plan.get('readerQuestion') == packet['readerQuestion'],
+                'Comparison plan belongs to another method or reader question')
+        items = plan.get('items')
+        require(isinstance(items, list) and len(items) >= 2
+                and all(isinstance(item, str) and item.strip() for item in items)
+                and len(set(items)) == len(items), 'Comparison needs distinct planned items')
+        covered = comparison.get('coveredItems')
+        require(isinstance(covered, list) and len(covered) >= 2
+                and all(isinstance(item, str) for item in covered)
+                and len(set(covered)) == len(covered) and set(covered) <= set(items),
+                'Comparison needs at least two supported items')
+        excluded = comparison.get('excludedItems', {})
+        require(isinstance(excluded, dict) and set(excluded) == set(items) - set(covered),
+                'Explain every unobserved/excluded comparison item')
+        for reason in excluded.values():
+            content(reason, 'excluded comparison item reason')
+        for key in ['decision', 'conditions', 'dimensions']:
+            content(plan.get(key), 'comparison plan.' + key)
+        if kind == 'public-data':
+            require(comparison.get('basis') in ['calculated', 'modeled', 'reported'],
+                    'Public-data comparison is not our product testing')
+            for key in ['normalization', 'unknowns', 'sourceRefreshTrigger']:
+                content(plan.get(key), 'public comparison.' + key)
+            sources = comparison.get('sources')
+            require(isinstance(sources, list) and sources, 'Missing public source snapshots')
+            seen = set()
+            for source in sources:
+                require(isinstance(source, dict) and source.get('item') in covered,
+                        'Public source is outside compared items')
+                seen.add(source['item'])
+                require(isinstance(source.get('url'), str) and re.match(r'^https?://[^/\s]+', source['url']),
+                        'Public source needs its actual URL')
+                checked = datetime.datetime.fromisoformat(source.get('checkedAt', '').replace('Z', '+00:00'))
+                require(checked.tzinfo is not None, 'Public source check needs timezone')
+                artifact(root, source.get('snapshot'))
+                content(source.get('extractedFacts'), 'source facts with exact supporting location')
+            require(seen == set(covered), 'Public comparison lacks a source for every compared item')
+        else:
+            require(comparison.get('basis') == 'measured', 'Practical comparison needs actual measured work')
+            task = plan.get('task', {})
+            input_path = artifact(root, task.get('input'))
+            expected_path = artifact(root, task.get('expected'))
+            content(task.get('successCriterion'), 'objective task success criterion')
+            repetitions = task.get('repetitions')
+            require(type(repetitions) is int and repetitions >= 1, 'Actual planned repetitions required')
+            runs = comparison.get('runs')
+            require(isinstance(runs, list) and runs, 'Practical comparison lacks actual runs')
+            seen = set()
+            for run in runs:
+                item, repetition = run.get('item'), run.get('repetition')
+                require(item in covered and type(repetition) is int and 1 <= repetition <= repetitions,
+                        'Practical run is outside the planned comparison')
+                require((item, repetition) not in seen, 'Duplicate practical run')
+                seen.add((item, repetition))
+                require(run.get('inputSha256') == file_sha(input_path)
+                        and run.get('expectedSha256') == file_sha(expected_path),
+                        'Practical options must use the same planned input and expected result')
+                performed = datetime.datetime.fromisoformat(run.get('performedAt', '').replace('Z', '+00:00'))
+                require(performed.tzinfo is not None, 'Actual run time needs timezone')
+                for key in ['version', 'environment', 'conditions']:
+                    content(run.get(key), 'practical run.' + key)
+                for key in ['rawOutput', 'scoring']:
+                    artifact(root, run.get(key))
+            require(seen == {(item, n) for item in covered for n in range(1, repetitions + 1)},
+                    'Incomplete practical item/repetition coverage')
+
+
 def analysis(root, packet):
     require(packet.get('gateSchemaVersion') == VERSION, 'Missing current analysis gate packet')
     for field in ['author', 'route', 'readerQuestion']:
@@ -303,6 +445,20 @@ def analysis(root, packet):
         content(packet.get('whyNoAddition'), 'terminal no-addition rationale')
         artifact(root, packet.get('existingAnswer'))
         return packet
+    bound = packet.get('approvedPlan', {})
+    plan = read(artifact(root, bound.get('manifest')))
+    chart(root, plan, read(artifact(root, bound.get('review'))))
+    rows = [r for r in plan['actions'] if r['id'] == bound.get('actionId') and r['bucket'] in SUBSTANTIVE]
+    require(len(rows) == 1 and rows[0]['target'].rstrip('/') == packet['route'].rstrip('/'),
+            'Analysis is not bound to its approved action')
+    require(rows[0]['reader_question'] == packet['readerQuestion'], 'Analysis differs from approved intent')
+    presentation(packet.get('presentation'))
+    require(packet['presentation'] == rows[0]['presentation'], 'Presentation changed; revalidate the affected plan')
+    if packet['presentation']['interaction']['decision'] in {'build', 'reuse'}:
+        refs = packet.get('presentationArtifacts')
+        require(isinstance(refs, list) and refs, 'Interactive contribution needs its actual implementation artifacts')
+        for ref in refs:
+            artifact(root, ref)
     for field in ['decisionGap', 'finding', 'conditions', 'whatWouldChange']:
         content(packet.get(field), 'analysis.' + field)
     selected = read(artifact(root, packet.get('caseSelection')))
@@ -312,13 +468,29 @@ def analysis(root, packet):
             'Local experience permission changed; rerun retrieval')
     require(isinstance(selected.get('publisher'), str) and re.fullmatch(r'[a-z0-9.-]+\.[a-z]{2,}', selected['publisher']),
             'Case retrieval requires the active publisher domain')
-    require(selected == cases(root, packet['readerQuestion'], selected['publisher']),
+    require(selected == cases(root, packet['readerQuestion'], selected['publisher'], packet.get('caseSearchContext', [])),
             'Case receipt is incomplete, altered or belongs to another reader question')
     content(packet.get('caseDecisions'), 'case selection/rejection reasoning')
+    if selected['publisher'].removeprefix('www.') == 'layer3labs.io':
+        uses = packet.get('caseUses')
+        require(isinstance(uses, list), 'List actual case uses (or [] when no case is used)')
+        candidates = {c['record']['id']: c['record'] for c in selected['candidates']}
+        for use in uses:
+            require(use.get('recordId') in candidates, 'Selected case was not retrieved')
+            require(use.get('use') in {'context', 'implementation', 'outcome'}, 'Unknown case use')
+            require(use.get('publicDescription') == candidates[use['recordId']]['publicDescription'],
+                    'Use the approved anonymous case description')
+            for key in ['claim', 'limits']:
+                prose(use.get(key), 'case use ' + key)
+            require(use.get('sourceArtifacts'), 'Case claim needs inspected supporting records')
+            for ref in use['sourceArtifacts']:
+                artifact(root, ref)
     refs = packet.get('sourceArtifacts')
     require(isinstance(refs, list) and refs, 'Missing sourced inputs/reasoning records')
     for ref in refs:
         artifact(root, ref)
+    if selected['publisher'].removeprefix('www.') == 'layer3labs.io':
+        layer3_comparisons(root, packet)
     if basis in ['calculated', 'modeled', 'measured']:
         for key in ['method', 'units', 'limitations', 'counterexample']:
             content(packet.get(key), 'analysis.' + key)
@@ -349,14 +521,60 @@ def analysis(root, packet):
 def generation(root, plan, review, packet, slug, section=False):
     chart(root, plan, review)
     saved_chart(root, plan)
+    complete_news_chart(root, plan, review)
     complete_hype_chart(root, plan, review)
     complete_competitor_chart(root, plan, review)
     analysis(root, packet)
     require(packet['basis'] != 'no-addition', 'No-addition is terminal; do not call the writer')
+    require(digest(read(artifact(root, packet['approvedPlan']['manifest']))) == digest(plan),
+            'Writer and analysis refer to different approved plans')
     target = packet['route']
-    approved_intent(plan, packet)
+    rows = [r for r in plan['actions'] if r['target'].rstrip('/') == target.rstrip('/') and r['bucket'] in
+            ['create new content', 'update existing body text']]
+    require(rows, 'Writer target is outside approved substantive actions')
+    require(any(r['reader_question'] == packet['readerQuestion'] for r in rows), 'Analysis reader question differs from approved intent')
     expected = target.rstrip('/').split('/')[-1]
     require(slug == expected or (section and slug.startswith(expected + '--')), 'Writer slug differs from analysis route')
+
+
+def native_customer_service_analysis(root, snapshot, rendered):
+    """Recognize an existing delivered-order edit, never a caller's label alone.
+
+    The native renderer still validates the independent whole-page review. Such
+    service work retains its service history rather than acquiring a second,
+    unrelated editorial Mindmap budget at analysis closure.
+    """
+    manifest = snapshot.get('manifest', {})
+    if manifest.get('workflowKind') != 'client-service-correction':
+        return False
+    service_id = manifest.get('nativeServiceId')
+    require(service_id and manifest.get('jobId') == 'service:' + service_id,
+            'Native customer service identity required')
+    rows = read(local(root, 'scripts/paid_placements/fix-queue.json'))
+    row = next((r for r in rows if r.get('id') == service_id), None)
+    require(row and row.get('kind') == 'customerEdit' and row.get('serviceSla') is True,
+            'Existing canonical delivered-customer edit required')
+    require(not any(row.get(k) for k in ('sourceHold', 'ownerReviewHold', 'customerReviewBeforePublish',
+            'customerApprovalRequired', 'professionalReviewPending', 'optOut', 'suppression', 'cancelledAt'))
+            and not (row.get('professionalReviewRequired') and row.get('professionalReviewStatus') not in ('approved', 'PASS')),
+            'Native customer service cannot override a protected dependency')
+    from urllib.parse import urlsplit
+    route = urlsplit(row.get('pageUrl', '')).path.rstrip('/') or '/'
+    require({r.get('path', '').rstrip('/') or '/' for r in snapshot.get('routes', [])} == {route}
+            and all(r.get('verdict') == 'PASS' for r in rendered.get('routes', [])),
+            'Native customer service requires its exact existing route and actual PASS')
+    spec = importlib.util.spec_from_file_location('analysis_service_queue', local(root, 'scripts/paid_placements/service_queue.py'))
+    service = importlib.util.module_from_spec(spec); spec.loader.exec_module(service)
+    from datetime import datetime, timezone
+    source = {'messageId': row.get('sourceMessageId'), 'threadId': row.get('threadId'),
+              'from': row.get('vendorEmail'), 'at': row.get('requestedAt'), 'text': row.get('requestText')}
+    actual = service.intake({'source': source, 'sourcePaymentId': row.get('sourcePaymentId'),
+                             'pageUrl': row.get('pageUrl'), 'serviceOwner': row.get('serviceOwner'),
+                             'requestItems': row.get('requestItems')},
+                            read(local(root, 'scripts/paid_placements/ledger.json')), rows,
+                            datetime.now(timezone.utc))
+    require(actual is row, 'Retain the original canonical service and deadline')
+    return True
 
 
 def analysis_render_pair(root, packet, review):
@@ -427,6 +645,13 @@ def audit_analysis(root, packet, review, replay):
         c = review.get(key, {})
         require(c.get('status') in (('PASS','FAIL') if at_limit and key!='localExclusions' else ('PASS',)), 'Missing independent analysis check: ' + key)
         content(c.get('evidence'), key + ' evidence')
+    plan = read(artifact(root, packet['approvedPlan']['manifest']))
+    request_review(review, {'requirements': [r for r in plan['request']['requirements']
+                                            if packet['approvedPlan']['actionId'] in r['actionIds']]})
+    for key in ['presentationReview', 'caseUseReview']:
+        c = review.get(key, {})
+        require(c.get('status') == 'PASS', 'Missing independent check: ' + key)
+        prose(c.get('evidence'), key + ' evidence')
     snapshot, rendered = analysis_render_pair(root, packet, review)
     module_path = local(root, '.claude/tools/rendered-audit.py')
     spec = importlib.util.spec_from_file_location('mindmap_rendered_audit', module_path)
@@ -435,7 +660,8 @@ def audit_analysis(root, packet, review, replay):
     renderer.review_check(snapshot, rendered)
     # Every substantive Mindmap action uses the portable budget, even if an
     # older caller forgot to mark its render manifest. No-addition stays above.
-    if (root/'.claude/content-review-policy.json').is_file():
+    native_service = native_customer_service_analysis(root, snapshot, rendered)
+    if (root/'.claude/content-review-policy.json').is_file() and not native_service:
         policy_spec=importlib.util.spec_from_file_location('mindmap_content_review_policy',root/'.claude/tools/content-review-policy.py')
         review_policy=importlib.util.module_from_spec(policy_spec);policy_spec.loader.exec_module(review_policy)
         review_policy.check_rendered(root,snapshot,rendered,force=True)
@@ -456,10 +682,120 @@ def audit_analysis(root, packet, review, replay):
     return True
 
 
-def cases(root, query, publisher):
+def clean_reader_question(query):
+    """Question-evidence annotations belong in the record, never in source search terms."""
+    clean = query.strip()
+    while True:
+        trimmed = re.sub(r'\s*\[(?:verb-only|PAA)\b[^\]]*\]\s*$', '', clean, flags=re.I).strip()
+        if trimmed == clean:
+            return clean
+        clean = trimmed
+
+
+def case_terms(text):
+    # Discovery aliases only: a match never establishes the claimed work or outcome.
+    aliases = {'customer': 'client', 'customers': 'client', 'clients': 'client',
+               'editors': 'editor', 'commenters': 'commenter', 'permissions': 'permission',
+               'workflows': 'workflow', 'invoices': 'invoice', 'onboarding': 'intake'}
+    stop = {'the', 'and', 'for', 'from', 'with', 'this', 'that', 'what', 'when', 'where',
+            'which', 'how', 'our', 'your', 'are', 'can', 'does', 'should', 'using', 'use',
+            'only', 'also', 'much', 'versus'}
+    return {aliases.get(w, w) for w in re.findall(r'[a-z0-9]{3,}', text.lower()) if w not in stop}
+
+
+def layer3_cases(root, query, publisher, bank, experience, context_queries=None):
+    """Layer3-only discovery material; not automatic claim or testing approval."""
+    catalog_path = local(root, '.claude/commands/_layer3-experience-catalog.json')
+    catalog = read(catalog_path)
+    require(catalog.get('schemaVersion') == VERSION and catalog.get('publisher') == 'layer3labs.io',
+            'Invalid Layer3 experience catalog')
+    records = catalog.get('records')
+    require(isinstance(records, list), 'Layer3 experience catalog requires records')
+    public_fields = {'id', 'publicDescription', 'relationship', 'topic', 'workSummary',
+                     'possibleUses', 'evidenceStatus', 'limits', 'outcomeLeads',
+                     'privateTestimonialRecords', 'verification'}
+    seen = set()
+    for record in records:
+        require(isinstance(record, dict) and set(record) <= public_fields,
+                'Layer3 catalog contains unexpected/private fields; use the anonymized export')
+        for field in public_fields - {'outcomeLeads', 'privateTestimonialRecords'}:
+            require(isinstance(record.get(field), str), 'Experience catalog text must be a scalar: ' + field)
+            content(record.get(field), 'experience catalog.' + field)
+        require(record['id'] not in seen, 'Duplicate experience catalog record id')
+        seen.add(record['id'])
+        count = record.get('privateTestimonialRecords', 0)
+        require(type(count) is int and count >= 0, 'Invalid private testimonial count')
+        leads = record.get('outcomeLeads', [])
+        require(isinstance(leads, list), 'Outcome leads must be an array')
+        for lead in leads:
+            require(isinstance(lead, dict) and set(lead) == {'metric', 'periods', 'values', 'basis'},
+                    'Outcome lead contains unexpected/private fields')
+            require(all(isinstance(lead[k], str) and lead[k].strip() for k in ['metric', 'basis']),
+                    'Outcome lead descriptions must be scalar text')
+            periods, values = lead['periods'], lead['values']
+            require(isinstance(periods, list) and periods and
+                    all(isinstance(v, str) and v.strip() for v in periods),
+                    'Outcome periods must be text labels')
+            require(isinstance(values, list) and len(values) == len(periods) and
+                    all(type(v) in (int, float) and math.isfinite(v) for v in values),
+                    'Outcome values must be finite numbers matching the periods')
+    search_query = clean_reader_question(query)
+    content(search_query, 'clean case search question')
+    context_queries = context_queries or []
+    require(isinstance(context_queries, list) and all(isinstance(q, str) and q.strip() for q in context_queries),
+            'Case context queries must be nonempty text')
+    contexts = [clean_reader_question(q) for q in context_queries]
+    for context in contexts:
+        content(context, 'clean case context')
+    words = case_terms(search_query)
+    context_words = set().union(*(case_terms(q) for q in contexts))
+    candidates = []
+    for record in records:
+        searchable = {k: record.get(k, '') for k in
+                      ['publicDescription', 'topic', 'workSummary', 'possibleUses']}
+        terms = case_terms(' '.join(searchable.values()))
+        direct, contextual = words & terms, context_words & terms
+        matches = sorted(direct | contextual)
+        if matches:
+            candidates.append({'record': record, 'topicMatches': matches,
+                               'matchSources': {'question': sorted(direct), 'context': sorted(contextual)},
+                               'attribution': 'Use the anonymous public description for clients. '
+                               'Verify the specific claim and its basis before adding it to writer facts; '
+                               'a discovered project is not an observed outcome or product test.'})
+    return {'schemaVersion': VERSION, 'query': query, 'searchQuery': search_query,
+            'contextQueries': context_queries, 'publisher': publisher,
+            'bankSha256': file_sha(bank), 'experienceSha256': file_sha(experience),
+            'localExperience': 'Read .claude/commands/_experience.md as internal permission context; '
+                               'its named client examples are private and superseded by the local anonymity rule.',
+            'experienceCatalog': {'path': str(catalog_path.relative_to(root.resolve())),
+                                  'sha256': file_sha(catalog_path), 'recordsSearched': len(records)},
+            'sourcePolicy': artifact_ref(root, '.claude/commands/_layer3-evidence-sources.md'),
+            'candidates': sorted(candidates, key=lambda r: (-len(r['topicMatches']), r['record']['id'])),
+            'privateClientContext': [],
+            'instruction': 'This catalog is one optional source, not the sole source or a source-count target. '
+                           'Combine as many relevant sources as needed: experience, internal modeling/calculations, '
+                           'actual survey records, primary documents, external research and executed tasks. '
+                           'Verify each claim, retain its own evidence basis and record actual sources in sourceArtifacts. '
+                           'No relevant case means use other supported sources, not force a case or stop. '
+                           'Never publish client identities or searchable testimonial text; preserve local exclusions '
+                           'and the terminal no-addition branch.'}
+
+
+def artifact_ref(root, relative):
+    path = local(root, relative)
+    return {'path': relative, 'sha256': file_sha(path)}
+
+
+def cases(root, query, publisher, context_queries=None):
     bank = root / '.claude/commands/_approved-cases.json'
     experience = local(root, '.claude/commands/_experience.md')
-    words = set(re.findall(r'[a-z0-9]{3,}', query.lower()))
+    # Other publishers keep their existing behavior. No global/fleet rollout is implied.
+    if (publisher.lower().removeprefix('www.') == 'layer3labs.io' and
+            any((root / '.claude/commands' / name).exists() for name in
+                ['_layer3-experience-catalog.json', '_layer3-evidence-sources.md'])):
+        return layer3_cases(root.resolve(), query, publisher, bank, experience, context_queries)
+    require(not context_queries, 'Context query expansion is currently Layer3-only')
+    words = set(re.findall(r'[a-z0-9]{3,}', clean_reader_question(query).lower()))
     candidates = []
     for record in read(bank)['records']:
         searchable = {k: record[k] for k in ['entity', 'approvedFacts', 'quotes']}
@@ -485,6 +821,36 @@ def cases(root, query, publisher):
             'instruction': 'Select only relevant approved facts/quotes; save selection/rejection reasons in the existing evidence packet. Local exclusions and public-use scope still govern. No result is an automatic testing permission.'}
 
 
+def cases_batch(root, manifest_path, publisher, out_dir):
+    plan = read(local(root, manifest_path))
+    actions = plan.get('actions')
+    require(isinstance(actions, list), 'Manifest requires actions list')
+    target_dir = (root.resolve() / out_dir).resolve()
+    require(target_dir.is_relative_to(root.resolve()), 'Output directory escapes active repository: ' + out_dir)
+    results = []
+    for row in actions:
+        if row.get('bucket') not in SUBSTANTIVE:
+            continue
+        target = str(row.get('target', '')).strip()
+        question = str(row.get('reader_question', '')).strip()
+        require(target and question, f"Substantive action {row.get('id')} missing target or reader_question")
+        slug = target.strip('/').rsplit('/', 1)[-1] or 'index'
+        slug = re.sub(r'[^a-zA-Z0-9._-]+', '-', slug).strip('-') or 'index'
+        dest = target_dir / slug / 'cases.json'
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        payload = cases(root, question, publisher)
+        dest.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + '\n')
+        results.append({
+            'actionId': row.get('id'),
+            'target': target,
+            'slug': slug,
+            'path': str(dest.relative_to(root.resolve())),
+            'sha256': file_sha(dest),
+            'candidates': len(payload['candidates']),
+        })
+    return {'status': 'retrieved-not-approved', 'count': len(results), 'items': results}
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--root', default='.')
@@ -499,14 +865,21 @@ def main():
             q.add_argument('--packet', required=True)
             q.add_argument('--slug', required=True)
             q.add_argument('--section', action='store_true')
+    q = s.add_parser('validate-analysis')
+    q.add_argument('--packet', required=True)
     q = s.add_parser('audit-analysis')
     q.add_argument('--packet', required=True)
     q.add_argument('--review', required=True)
     q.add_argument('--replay-output')
     q = s.add_parser('cases')
     q.add_argument('--query', required=True)
+    q.add_argument('--context-query', action='append', default=[], help='Layer3: relevant workflow/problem query; repeat as needed')
     q.add_argument('--publisher', required=True)
     q.add_argument('--out', required=True)
+    q = s.add_parser('cases-batch')
+    q.add_argument('--manifest', required=True)
+    q.add_argument('--publisher', required=True)
+    q.add_argument('--out-dir', required=True)
     q = s.add_parser('hash')
     q.add_argument('--file', required=True)
     a = p.parse_args()
@@ -516,17 +889,20 @@ def main():
         print(json.dumps({'sha256': file_sha(path), 'canonicalJsonSha256': digest(read(path))}))
         return
     if a.command == 'cases':
-        result = cases(root, a.query, a.publisher)
+        result = cases(root, a.query, a.publisher, a.context_query)
         Path(a.out).write_text(json.dumps(result, indent=2, ensure_ascii=False) + '\n')
         print(json.dumps({'status': 'retrieved-not-approved', 'candidates': len(result['candidates'])}))
         return
-    if a.command == 'audit-analysis':
+    if a.command == 'cases-batch':
+        print(json.dumps(cases_batch(root, a.manifest, a.publisher, a.out_dir), indent=2))
+        return
+    if a.command == 'validate-analysis':
+        analysis(root, read(a.packet))
+    elif a.command == 'audit-analysis':
         audit_analysis(root, read(a.packet), read(a.review), a.replay_output)
     else:
         plan, review = read(a.manifest), read(a.review)
         chart(root, plan, review)
-        if a.command in ('validate-chart','render-chart'):
-            preparation_packets(root, plan, a)
         if a.command == 'generation-check':
             generation(root, plan, review, read(a.packet), a.slug, a.section)
         if a.command == 'render-chart':
@@ -536,6 +912,7 @@ def main():
             destination.write_text(render(plan))
         else:
             saved_chart(root, plan)
+            complete_news_chart(root, plan, review)
             complete_hype_chart(root, plan, review)
             complete_competitor_chart(root, plan, review)
     print(json.dumps({'status': 'PASS', 'scope': 'Structural/artifact checks only; independent judgment and existing approval/rendered-publication gates remain required.'}))

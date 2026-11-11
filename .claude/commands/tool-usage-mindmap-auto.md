@@ -24,12 +24,17 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 # /tool-usage-mindmap-auto — used tools → better tools + the next tools
 
+<!-- mindmap-caller-thin-dispatch-v1 -->
+**Thin dispatcher & role-scoped Mindmap workers:** `MAIN` acts strictly as an operational dispatcher (`_workflow-checkpoints.md` / `mindmap-role-bundle-v1`). `MAIN` runs standalone `workflow-start.sh`, `land-run.sh mark` (or `deploy-run-to-main.sh mark`), and this routine's local harvest/intake steps directly **without** loading a `workflow-preflight.py` content bundle into `MAIN` (and when harvest yields zero candidates, finishes/exits immediately with zero preflight cost). When delegating to Mindmap (or running `/mindmap-pass`), spawn fresh stage workers for `BUILD`, independent `CHART-REVIEW`, `WRITE`, independent `AUDIT`, and mechanical `PUBLISH` (using `layer3-mindmap-*` project agents when `.claude/workflow-policy.local.json` activates `layer3labs`, or fresh `general-purpose` stage agents via `workflow-handoff.py` on portable fleet repos). Each worker runs its own role-scoped `workflow-preflight.py` on Turn 1 without pre-reading contracts beforehand, delivers up to 4 consecutive parts per turn via `workflow-delivery-serial.local.py`, and returns sealed artifacts/verdicts to `MAIN`. Never absorb full phase bundles, writer drafts, or rendered HTML into `MAIN`.
+<!-- /mindmap-caller-thin-dispatch-v1 -->
+
+
 <!-- workflow-checkpoints-v1 -->
 **Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Follow the sibling `_rendered-page-audit.md`: finish central source research before the preparation PASS; audit the complete rendered pages after all template/affiliate/link changes, block inherited contradictions affecting the answer, and verify exact reviewed output live with `rendered-audit.py` before closing deployment and measurement records. Install that contract and helper with the checkpoint dependencies. A read-only reviewer may write internal evidence receipts without editing content. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
 <!-- /workflow-checkpoints-v1 -->
 
 
-> **‼️ AUTONOMOUS.** No human checkpoint. Never print "Approve?". **Every run ends with an owner email (USER RULE 2026-10-11)** — shipped, nothing to work, or failed (STEP 8).
+> **‼️ AUTONOMOUS.** No human checkpoint. Never print "Approve?". **Every run ends with an owner email (USER RULE 2026-10-11)** — shipped, nothing to work, or failed (STEP 8). Never stop early after walkthroughs or mark a healthy run "INCOMPLETE": you have full unattended turn/context budget to complete STEP 3 persona files, `tool_usage_gate.py persona`, STEP 4, STEP 5 Mindmap stage workers, `chart`/`build`/`final` gates, deploy, `live` gate, and STEP 8 in this single session.
 > Run `.claude/scripts/deploy-run-to-main.sh mark` FIRST, before any commit.
 
 **Inputs from the routine prompt:** `TOOL_SITE` (the bare domain as tracked, e.g. `chalkbox.org`) and `BASE_URL` (the host that answers 200, e.g. `https://chalkbox.org`).
@@ -68,7 +73,7 @@ Otherwise open the run now: `python3 scripts/tool_usage/tool_usage_gate.py start
 **Young-data rule.** `data_days` is how long this site has been tracked. Under ~30 days the numbers only decide WHICH tools to look at, never how big a change to make. Don't read meaning into rank order between tools 3 people apart.
 
 ## STEP 2 — Pick this week's tools
-Ledger = `reports/tool-usage-pass/ledger.jsonl` (one JSON object per line, this repo). Skip any tool with a `worked` line in the last 28 days — UNLESS its `people_7d` is now at least double what the ledger recorded (it took off; look again).
+Ledger = `reports/tool-usage-pass/ledger.jsonl` (one JSON object per line, this repo). Skip any tool with a `worked` line in the last 28 days — UNLESS its `people_7d` is now at least double what the ledger recorded (it took off; look again). Also defer to next week any tool whose `path` currently has an open (unclosed) route cycle in `reports/content-review-journals/*.jsonl` from another routine, noting it in the summary rather than colliding on its held route lock.
 
 Work up to **5 `persona` tools** (most people first) and **2 `low-use` tools** (most views first). The rest wait for next week.
 

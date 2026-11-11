@@ -6,6 +6,7 @@ checks, chart review and pre-review lint do not consume content-review rounds.
 Every initial content audit, fix verification and rework audit does consume one.
 """
 import argparse
+from types import SimpleNamespace
 import datetime as dt
 import fcntl
 import hashlib
@@ -16,6 +17,7 @@ from pathlib import Path
 import re
 import subprocess
 import sys
+import tempfile
 import uuid
 from urllib.parse import urlsplit
 
@@ -78,10 +80,8 @@ def artifact(root, ref):
     return p
 
 
-def save_exact(path, value, preserve_order=False):
-    # Snapshot dict traversal is part of an existing claim-text assessment.
-    # Keep that original order; canonical hashes still sort object keys.
-    raw = (json.dumps(value,separators=(',', ':'),ensure_ascii=False).encode() if preserve_order else canonical(value))+b'\n';path.parent.mkdir(parents=True,exist_ok=True)
+def save_exact(path, value):
+    raw = canonical(value)+b'\n';path.parent.mkdir(parents=True,exist_ok=True)
     try:
         with path.open('xb') as stream: stream.write(raw)
     except FileExistsError:
@@ -106,17 +106,21 @@ def policy(root):
     if 'thirdReviewClaimCategories' in p:
         allowed = [] if p['siteId'].rsplit('/', 1)[-1] == 'the_bot_scout' else ['medical', 'legal']
         require(p['thirdReviewClaimCategories'] == allowed, 'Invalid owner third-audit eligibility')
+    for item in p.get('compatiblePolicies',[]):
+        require(isinstance(item,dict) and re.fullmatch('[0-9a-f]{64}',str(item.get('sha256',''))) and
+                re.fullmatch('[0-9a-f]{40}',str(item.get('commit',''))) and len(str(item.get('reason','')).strip())>=40,
+                'Invalid compatible review-policy record')
     return p
 
 
 def accepted_policy_hashes(root):
-    """Committed compatibility receipts apply to recorded evidence, never new reservations."""
-    items=policy(root).get('compatiblePolicies',[])
-    for item in items:
-        require(isinstance(item,dict) and re.fullmatch('[0-9a-f]{64}',str(item.get('sha256',''))) and
-                re.fullmatch('[0-9a-f]{40}',str(item.get('commit',''))) and len(str(item.get('reason','')).strip())>=40,
-                'Invalid compatible review-policy record')
-    return {policy_hash(root)} | {x['sha256'] for x in items}
+    """Current policy plus exact earlier hashes whose recorded reviews stay valid.
+
+    Editing the policy tool changes its own hash. Records admitted under a listed
+    earlier hash keep their original admission; new reservations always need the
+    current hash. The list is committed configuration, never supplied by a review.
+    """
+    return {policy_hash(root)} | {x['sha256'] for x in policy(root).get('compatiblePolicies',[])}
 
 
 def policy_hash(root):
@@ -386,7 +390,7 @@ def reserve_without_checkpoint(root, snapshot_path, route, job, reviewer, out, p
             require(value['fingerprint']==row['fingerprint'] and value['reviewer']==reviewer,
                     'Finish or resume the pending review before starting another one')
             return {**value,'admissionArtifact':last['admission']}
-        require(number <= ceiling, 'Review budget exhausted for this page; retain findings and release the exact latest eligible review under the site policy')
+        require(number <= ceiling, 'Review budget exhausted for this page; apply the site release policy to the exact latest reviewed candidate')
         require(not any(x.get('reportObjectSha256') for x in cycle['rounds'] if x.get('verdict')=='PASS' and x.get('fingerprint')==row['fingerprint']),
                 'This exact page already passed; do not audit it again')
         admission = {'version':VERSION,'identity':journal.identity,'cycleId':cycle['cycleId'],'jobId':job,
@@ -430,14 +434,45 @@ def pass_evidence(root, snapshot, rr, selected, local_module=None, retain_fail=F
         if name=='professionalReview' and spec.get('professionalReviewRequired'):artifact(root,value.get('artifact'))
 
 
-def capped_release(root,snapshot):
-    return ((root/CONFIG).is_file() and policy(root).get('releaseAtAuditLimit') is True
-            and snapshot['manifest'].get('workflowKind')=='mindmap-pass')
+LAYER3_HOSTS = {'layer3labs.io','www.layer3labs.io'}
+LOCAL_POLICY = '.claude/workflow-policy.local.json'
+
+
+def local_module(root, snapshot):
+    """The Layer3-only instruction layer, or None for every other site."""
+    path = Path(__file__).with_name('workflow-local.py')
+    if not (root/LOCAL_POLICY).is_file() or not path.is_file(): return None
+    if urlsplit(snapshot['manifest']['canonicalBase']).hostname not in LAYER3_HOSTS: return None
+    spec = importlib.util.spec_from_file_location('review_policy_local_layer',path)
+    module = importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+    return module
+
+
+def capped_release(root, snapshot):
+    config = root / CONFIG
+    if not config.is_file():
+        return False
+    policy_data = policy(root)
+    hosts=policy_data.get('canonicalHosts')
+    if hosts is None and policy_data['siteId']=='jht243/layer3labs':
+        hosts=sorted(LAYER3_HOSTS)  # Retain already-admitted pilot authority.
+    return (policy_data.get('releaseAtAuditLimit') is True
+            and isinstance(hosts,list) and bool(hosts)
+            and all(isinstance(host,str) and re.fullmatch(r'[a-z0-9.-]+',host) for host in hosts)
+            and snapshot['manifest'].get('workflowKind') == 'mindmap-pass'
+            and urlsplit(snapshot['manifest']['canonicalBase']).hostname in hosts)
+
 
 def exhausted(cycle):
     final = last_authoritative_round(cycle)
     return (final.get('number', 0) >= cycle.get('maximumRounds', LIMITS[cycle['profile']])
             and final.get('status') == 'complete' and final.get('verdict') == 'FAIL')
+
+
+def stamp_ok(root, snapshot):
+    stamp = snapshot.get('contentReviewPolicy',{})
+    return isinstance(stamp,dict) and set(stamp)=={'version','sha256'} and stamp['version']==VERSION and stamp['sha256'] in accepted_policy_hashes(root)
+
 
 def projection_source(root, snapshot, review):
     proof=review.get('approvalProjection')
@@ -452,6 +487,200 @@ def projection_source(root, snapshot, review):
     require(snapshot==expected[0] and {k:v for k,v in review.items() if k!='approvalProjection'}==expected[1],
             'Projection may only retain exact already-passing pages and their actual evidence')
     return original_snapshot,original_review
+
+
+COMPOSITION_KEYS = {'reviewer','snapshotSha256','routes','approvalProjection'}
+
+
+def authorities(root, snapshot, review):
+    """Map every approved route to the immutable snapshot/review that independently judged it.
+
+    A projection or composition is only a wrapper: risk text, profile and the
+    recorded report digest are always verified against the ORIGINAL authority.
+    Re-serialising a snapshot sorts its JSON keys, which changes claim_text's
+    traversal order and so the hash of the exact passages the reviewer assessed.
+    Returns (route -> (snapshot, review, snapshot reference or None), bindings or None).
+    """
+    proof=review.get('approvalProjection')
+    if not proof:return {r['path']:(snapshot,review,None) for r in review['routes']},None
+    if 'groups' not in proof:
+        source_snapshot,source_review=projection_source(root,snapshot,review)
+        return {r['path']:(source_snapshot,source_review,proof['snapshot']) for r in review['routes']},None
+    require(set(proof)<={'groups','bindings'} and set(review)<=COMPOSITION_KEYS,'A composition may only join exact recorded approvals')
+    groups=proof['groups'];require(isinstance(groups,list) and groups,'Composition needs at least one recorded approval group')
+    current={r['path']:r for r in snapshot['routes']};current_specs={r['path']:r for r in snapshot['manifest']['routes']}
+    rows={r['path']:r for r in review['routes']}
+    require(len(rows)==len(review['routes']) and set(rows)==set(current),'Composition must cover every route exactly once')
+    result={}
+    for group in groups:
+        reference=group.get('snapshot')
+        group_snapshot=read(artifact(root,reference));group_review=read(artifact(root,group.get('review')))
+        renderer_module().valid_snapshot(group_snapshot)
+        require(not group_review.get('approvalProjection'),'Do not stack approval projections')
+        require(group_review.get('snapshotSha256')==group_snapshot.get('snapshotSha256'),'Composition source review changed')
+        require(stamp_ok(root,group_snapshot),'Composition source was not captured under a recognised review policy')
+        require(group_review.get('reviewer')==review.get('reviewer') and group_snapshot['manifest']['author']==snapshot['manifest']['author'] and
+                group_snapshot['manifest']['canonicalBase']==snapshot['manifest']['canonicalBase'],
+                'Composition may only join one independent reviewer and one author')
+        paths=group.get('routes');require(isinstance(paths,list) and paths,'Composition group needs its routes')
+        group_pages={r['path']:r for r in group_snapshot['routes']};group_rows={r['path']:r for r in group_review['routes']}
+        group_specs={r['path']:r for r in group_snapshot['manifest']['routes']}
+        for path in paths:
+            require(path in current and path not in result,'Composition route is unknown or duplicated')
+            source=group_rows.get(path);page=group_pages.get(path)
+            require(source is not None and page is not None and (source.get('verdict')=='PASS' or (capped_release(root,snapshot) and source.get('verdict')=='FAIL')),'Compose only recorded independent PASS or authorized final capped FAIL routes; preserve actual verdicts')
+            require(rows[path]==source,'Composition must retain the exact recorded review row')
+            require(current[path]['fingerprint']==page['fingerprint'] and current[path]['semantic']==page['semantic'] and
+                    current[path].get('textSha256')==page.get('textSha256') and current_specs[path]==group_specs.get(path),
+                    'Approved page differs from the page that was independently reviewed')
+            result[path]=(group_snapshot,group_review,reference)
+    require(set(result)==set(current),'Composition leaves a route without its own recorded approval')
+    return result,proof.get('bindings')
+
+
+def historical_policy_hash(root, commit):
+    """Recompute the Layer3 local instruction-policy hash exactly as it was at an earlier commit."""
+    require(isinstance(commit,str) and re.fullmatch('[0-9a-f]{40}',commit),'Use the full policy commit')
+    require(subprocess.run(['git','merge-base','--is-ancestor',commit,'HEAD'],cwd=root).returncode==0,'Policy commit is not in this history')
+    def blob(name):
+        done=subprocess.run(['git','show',commit+':'+name],cwd=root,capture_output=True)
+        return done.stdout if done.returncode==0 else None
+    config=blob(LOCAL_POLICY);require(config is not None,'Policy commit has no local workflow policy')
+    local=json.loads(config)
+    names=[LOCAL_POLICY,local.get('policy'),local.get('legacyReviews'),'.claude/tools/workflow-local.py','.claude/tools/workflow-preflight.py',
+           '.claude/tools/workflow-context.py','.claude/tools/workflow-dispatch.local.py','.claude/commands/_workflow-dispatch.local.md',
+           'scripts/paid_placements/approved_draft_release.py','scripts/publisher_failover/client_review.py']
+    names=[n for n in names if n and blob(n) is not None]
+    with tempfile.TemporaryDirectory() as folder:
+        for name in names:
+            target=Path(folder)/name;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(blob(name))
+        spec=importlib.util.spec_from_file_location('historical_local_policy',Path(folder)/'.claude/tools/workflow-local.py')
+        module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+        return module.policy_hash(Path(folder))
+
+
+def bundle_manifest(root, reference):
+    path=artifact(root,reference);require(path.name=='manifest.json','A bundle binding must name its checked manifest.json')
+    return path
+
+
+def verify_release_bindings(root, snapshot, reviewer, jobs, bindings, local, saved_report=None):
+    """Bind the actual writer and reviewer instruction bundles of an already-recorded review.
+
+    Uses the layer's immutable-delivery verification, so it holds after later
+    instruction edits, and proves the bundles' policy and sources against the
+    commit they name. Missing proof is a failure; nothing here is a verdict.
+    """
+    require(local is not None and hasattr(local,'historical_delivery'),'Release proof needs the Layer3 instruction layer')
+    require(isinstance(bindings,dict) and set(bindings)>={'writer','reviewer','policyCommit','workflowPolicySha256'},'Missing writer/reviewer release bindings')
+    policy_value=bindings['workflowPolicySha256'];commit=bindings['policyCommit']
+    require(historical_policy_hash(root,commit)==policy_value,'Bound workflow policy is not the policy at its named commit')
+    seen=[]
+    for role,actor,phase in [('writer',snapshot['manifest']['author'],'write'),('reviewer',reviewer,'audit')]:
+        path=bundle_manifest(root,bindings[role])
+        role_commit=bindings.get('roleCommits',{}).get(role,commit)
+        if role_commit!=commit:
+            require(historical_policy_hash(root,role_commit)==policy_value,'Role policy hash differs at its original source revision')
+        if saved_report is None:
+            manifest,_=local.historical_delivery(root,path.parent)
+        else:
+            require(bindings[role] in saved_report['instructionApplications'],'Recovered bundle is not cited by the original reviewer')
+            manifest,_=local.historical_delivery(root,path.parent,archived_root=read(path)['root'])
+        require(manifest['phase']==phase and manifest['role']==local.ROLES[phase] and manifest['actor']==actor,
+                'The '+role+' instruction bundle belongs to a different actor or role')
+        require(manifest.get('policySha256')==policy_value,'The '+role+' bundle was prepared under a different workflow policy')
+        for rel,expected in manifest['files'].items():
+            if rel.startswith('reports/'):
+                require(sha(inside(root,rel).read_bytes())==expected,'Bundle evidence changed: '+rel)
+            else:
+                done=subprocess.run(['git','show',role_commit+':'+rel],cwd=root,capture_output=True)
+                require(done.returncode==0 and sha(done.stdout)==expected,'Bundle source is not the source at the policy commit: '+rel)
+        require(manifest.get('handoff') and read(inside(root,manifest['handoff'])).get('jobId') in jobs and len(jobs)==1,
+                'The '+role+' bundle belongs to a different canonical job')
+        seen.append(manifest)
+    require(seen[0]['runId']==seen[1]['runId'],'Writer and reviewer bundles belong to different invocations')
+
+
+def saved_applications(root,report):
+    path=root/'reports/content-review-journals/recovered-applications'/(digest(report)+'.json')
+    if not path.is_file():return None
+    value=read(path)
+    commit=value['savedCommit']
+    require(re.fullmatch('[0-9a-f]{40}',commit),'Invalid saved review commit')
+    ref=value['savedReport']
+    require(ref['path'].startswith(('reports/mindmap-pass/','reports/search-gap/')) and '..' not in Path(ref['path']).parts,'Unexpected saved review location')
+    original=subprocess.check_output(['git','show',commit+':'+ref['path']],cwd=root)
+    require(sha(original)==ref['sha256'] and json.loads(original)==report,'Archived independent report changed')
+    return value['bindings']
+
+
+RELEASE_CLARIFICATION = "**Fleet editorial release.** For a Mindmap page covered by the active repository’s editorial release policy, publish the exact independently reviewed version at the first PASS or final allowed audit (LIGHT 1, STANDARD 2, HIGH 3). Retain the verdict and findings and complete the native build, deployment, links and exact live comparison. Apply this rule to the per-page stopping instructions below. Keep professional review, testing honesty and explicit client commitments.\n\n"
+WRITER_PROBE_OLD = 'Verifies every model in the chain has a key and answers. A failing preflight STOPS the phase.'
+WRITER_PROBE_NEW = 'Use this check only for an actual writing step, after its existing chart and evidence requirements are satisfied. Empty intakes, busy workers, and jobs resuming at audit or publication skip the paid writer probe. Check providers in configured order and stop at the first working model. If none work, preserve the job and report the writer failure. An explicit `preflight --all-models` diagnostic checks standby providers too.'
+PENDING_SOURCE_CLARIFICATION = 'For an existing pending audit reservation with a corrupted source dependency, use the existing repair-pending command on the same job and round with its retained failure evidence and a replacement snapshot. The validator compares source hashes and retains the original and replacement identities. The independent reviewer must complete that slot. A recorded verdict cannot use this repair.'
+
+
+def release_only_instruction_change(rel, old, current):
+    if rel == '.claude/commands/_content-review-policy.md':
+        return (PENDING_SOURCE_CLARIFICATION not in old
+                and current == old + '\n' + PENDING_SOURCE_CLARIFICATION + '\n')
+    if rel == '.claude/commands/_remediation-ladder.md':
+        return (RELEASE_CLARIFICATION not in old and current.count(RELEASE_CLARIFICATION) == 1
+                and current.replace(RELEASE_CLARIFICATION, '', 1) == old)
+    if rel == '.claude/commands/_content-generation.md':
+        heading = '## Step 0 — preflight ONCE per run'
+        return (old.count(heading) == old.count(WRITER_PROBE_OLD) == 1
+                and current == old.replace(heading, '## Check the writer once when a reviewed job is ready to write', 1)
+                                  .replace(WRITER_PROBE_OLD, WRITER_PROBE_NEW, 1))
+    return False
+
+
+def recorded_release_application(root, path, local):
+    """Retain a completed review across the exact release/probe clarifications.
+
+    Called only AFTER check_rendered has verified the original report against
+    the actual latest completed canonical journal round. It cannot admit a new
+    review, accept another instruction change, or supply a reading attestation.
+    """
+    manifest, texts = local.historical_delivery(root, path.parent)
+    changed = []
+    for rel, expected in manifest['files'].items():
+        current = inside(root, rel).read_bytes()
+        if sha(current) == expected:
+            continue
+        old = texts[rel]
+        require(release_only_instruction_change(rel, old, current.decode()),
+                'Recorded instruction changed beyond the exact editorial release clarification: ' + rel)
+        changed.append(rel)
+    require(changed, 'No matching recorded release clarification')
+    return manifest
+
+
+def verify_current_applications(root, snapshot, reviewer, report, local, recorded=False):
+    """Record-time twin of the layer's own release check, for reports carrying current bundles."""
+    if recorded and report.get('workflowPolicySha256') != local.policy_hash(root):
+        # Only a completed canonical ordinary correction with its separate
+        # current mechanical continuity proof may retain its historical policy.
+        path = root / '.claude/tools/recorded-mindmap-correction-continuity.py'
+        if path.is_file():
+            spec = importlib.util.spec_from_file_location('ordinary_recorded_correction_continuity', path)
+            module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
+            if module.apply(root, snapshot, report, local, SimpleNamespace(**globals()), recorded=True):
+                return
+    require(report.get('workflowPolicySha256')==local.policy_hash(root),'Layer3 review must bind current local review policy')
+    applications=report.get('instructionApplications',[])
+    require(isinstance(applications,list) and len(applications)>=2,'Independent review must inspect writer and reviewer instruction applications')
+    actors=set()
+    for reference in applications:
+        path=local.evidence_ref(root,reference);require(path.name=='manifest.json','Instruction application reference must identify its checked bundle manifest')
+        try:
+            manifest = local.validate(root,path.parent)
+        except ValueError:
+            if not recorded:
+                raise
+            manifest = recorded_release_application(root,path,local)
+        actors.add(manifest['actor'])
+    require({snapshot['manifest']['author'],reviewer}<=actors,'Instruction applications must include the actual author and independent reviewer')
 
 
 def copy_subset(snapshot, review, selected, allow_fail=False):
@@ -471,30 +700,66 @@ def project(root, snapshot_path, review_path, routes, out_snapshot, out_review):
     snapshot,review=copy_subset(original_snapshot,original_review,set(routes),capped_release(root,original_snapshot))
     review['approvalProjection']={'snapshot':reference(root,snapshot_path),'review':reference(root,review_path)}
     check_rendered(root,snapshot,review,force=True)
-    save_exact(out_snapshot,snapshot,preserve_order=True);save_exact(out_review,review)
+    save_exact(out_snapshot,snapshot);save_exact(out_review,review)
     return {'snapshot':reference(root,out_snapshot),'review':reference(root,out_review),
             'scope':'Mechanical projection of exact existing independent approvals; no new audit or PASS.'}
 
 
+def compose(root, snapshot_path, groups, bindings, out_review):
+    """Join separately recorded PASS routes for one publication snapshot. Writes no judgment."""
+    snapshot=read(snapshot_path);valid_snapshot(snapshot)
+    proof={'groups':[{'snapshot':reference(root,Path(g['snapshot'])),'review':reference(root,Path(g['review'])),'routes':list(g['routes'])} for g in groups]}
+    rows=[];reviewer=None
+    for group in proof['groups']:
+        source=read(artifact(root,group['review']));reviewer=reviewer or source.get('reviewer')
+        by_path={r['path']:r for r in source['routes']}
+        rows.extend(by_path[path] for path in group['routes'] if path in by_path)
+    order={r['path']:n for n,r in enumerate(snapshot['routes'])}
+    rows=sorted(rows,key=lambda r:order.get(r['path'],len(order)))
+    review={'reviewer':reviewer,'snapshotSha256':snapshot['snapshotSha256'],'routes':rows,'approvalProjection':proof}
+    if bindings:
+        proof['bindings']={'policyCommit':bindings['policyCommit'],'workflowPolicySha256':bindings['workflowPolicySha256'],
+                           'writer':reference(root,Path(bindings['writer'])),'reviewer':reference(root,Path(bindings['reviewer']))}
+    check_rendered(root,snapshot,review,local_module=local_module(root,snapshot),force=True)
+    save_exact(out_review,review)
+    return {'review':reference(root,out_review),'scope':'Mechanical composition of exact existing independent approvals; no new audit or PASS.'}
+
+
 def record_without_checkpoint(root, report_path):
     report = read(report_path);require(isinstance(report.get('routes'),list) and report['routes'], 'Record the actual per-route independent content review')
-    result = []
+    require(len({rr.get('path') for rr in report['routes']})==len(report['routes']),'Each page appears once in a recorded review')
+    accepted = accepted_policy_hashes(root)
+    plan = []
+    # Phase 1 validates EVERY page before anything is appended, so a later page
+    # that cannot be recorded never leaves a partly recorded, unrecoverable report.
     for rr in report['routes']:
         admission_ref = rr.get('reviewBudget');admission = read(artifact(root,admission_ref))
         snapshot = read(artifact(root,admission['snapshot']))
         require(report.get('snapshotSha256')==snapshot['snapshotSha256'] and report.get('reviewer')==admission['reviewer'], 'Result must belong to the reserved independent review')
-        require((rr['path'].rstrip('/') or '/')==admission['identity']['route'] and admission['policySha256'] in accepted_policy_hashes(root), 'Review identity/policy changed')
+        require((rr['path'].rstrip('/') or '/')==admission['identity']['route'] and admission['policySha256'] in accepted, 'Review identity/policy changed')
         selected = decision(root,snapshot,report,rr)
         ceiling = audit_limit(policy(root), selected, rr.get('riskAssessment'))
         require(rr.get('verdict') in ['PASS','FAIL'], 'Keep the actual audit verdict; no synthetic approval')
-        if rr['verdict']=='PASS' or (rr['verdict']=='FAIL' and capped_release(root,snapshot) and admission['number']>=ceiling):
-            pass_evidence(root,snapshot,rr,selected,retain_fail=rr['verdict']=='FAIL')
+        final_fail = (rr['verdict']=='FAIL' and capped_release(root,snapshot) and admission['number']>=ceiling)
+        if rr['verdict']=='PASS' or final_fail:
+            pass_evidence(root,snapshot,rr,selected,retain_fail=final_fail)
+            layer=local_module(root,snapshot)
+            if layer is not None:
+                # A PASS that cannot be released is not recoverable once its round is spent.
+                effective_job = admission.get('continuationJobId') or admission['jobId']
+                recovered=saved_applications(root,report)
+                if recovered is not None:
+                    verify_release_bindings(root,snapshot,report['reviewer'],{effective_job},recovered,layer,saved_report=report)
+                elif report.get('releaseBindings') is not None:
+                    verify_release_bindings(root,snapshot,report['reviewer'],{effective_job},report['releaseBindings'],layer)
+                else:
+                    verify_current_applications(root,snapshot,report['reviewer'],report,layer)
         with Journal(root,admission['identity']['canonicalBase'],rr['path']) as journal:
             cycle=journal.cycle;require(cycle and cycle['cycleId']==admission['cycleId'], 'Wrong canonical review cycle')
             number=admission['number'];item=cycle['rounds'][number-1]
             if item['status']=='complete':
                 require(item.get('reportObjectSha256')==digest(report), 'Review result is immutable')
-                result.append({'route':rr['path'],'round':number,'verdict':rr['verdict']});continue
+                plan.append((rr,None,None,number,None));continue
             require(item['admission']==admission_ref and number==len(cycle['rounds']), 'Actual reserved round required')
             # The first independent judgment may correct a provisional keyword
             # escalation. Later rounds can raise risk but cannot buy a reset.
@@ -505,9 +770,17 @@ def record_without_checkpoint(root, report_path):
                                       and bool(admission.get('thirdAuditEligibility'))
                                       and bool(policy(root).get('thirdReviewClaimCategories')))
             require(number <= ceiling or already_admitted_third, 'This page has already used its content-review budget')
-            journal.append('record',{'number':number,'admission':admission_ref,'report':freeze(root,report_path,journal.path.parent),
-                                    'reportObjectSha256':digest(report),'profile':selected,'maximumRounds':ceiling,'verdict':rr['verdict'],
-                                    'fingerprint':rr['fingerprint']})
+        plan.append((rr,admission,admission_ref,number,selected))
+    result = []
+    for rr,admission,admission_ref,number,selected in plan:
+        if admission is None:
+            result.append({'route':rr['path'],'round':number,'verdict':rr['verdict']});continue
+        with Journal(root,admission['identity']['canonicalBase'],rr['path']) as journal:
+            item=journal.cycle['rounds'][number-1]
+            if item['status']=='pending':
+                journal.append('record',{'number':number,'admission':admission_ref,'report':freeze(root,report_path,journal.path.parent),
+                                         'reportObjectSha256':digest(report),'profile':selected,'maximumRounds':ceiling,'verdict':rr['verdict'],
+                                         'fingerprint':rr['fingerprint']})
             result.append({'route':rr['path'],'round':number,'maximumRounds':ceiling,'verdict':rr['verdict']})
     return result
 
@@ -527,7 +800,11 @@ def audit_preflight_check(root,directory,job,reviewer,route):
     m=preflight.validate(root,directory)
     require(m.get('phase')=='audit' and m.get('actor')==reviewer,'Use this actual independent auditor’s completed AUDIT reading, not BUILD or another actor’s receipt')
     require(m.get('runId') and m.get('contextId') and m.get('contextEpoch'),'Retain actual run and uninterrupted auditor context identities')
-    h=read(inside(root,m['handoff']['path']))
+    # validate() checks the exact handoff or its hash-bound context packet.
+    # Local preflight returns its path directly, portable preflight a reference.
+    handoff = m.get('handoff')
+    name = handoff.get('path') if isinstance(handoff, dict) else handoff
+    h = read(inside(root, name))
     require(h.get('jobId')==job and route in h.get('routes',[]),'AUDIT handoff must bind the original canonical job and this actual route')
 
 
@@ -577,18 +854,27 @@ def repair_pending(root,snapshot_path,route,job,reviewer,out,failure):
                 'Review budget exhausted; retain the pending admission and release the last completed round')
         old=read(artifact(root,last['admission']));original=inside(root,old['snapshot']['path'])
         changed_sources = []
+        snap_job = snapshot['manifest'].get('jobId')
+        cross_job_continuation = bool(isinstance(snap_job, str) and snap_job.strip() and snap_job != old.get('jobId') and snapshot.get('snapshotSha256') != old['snapshot']['sha256'])
         if original.is_file() and sha(original.read_bytes()) == old['snapshot']['sha256']:
             original_capture = read(original)
-            require(original_capture['manifest']['canonicalBase'] == snapshot['manifest']['canonicalBase']
-                    and original_capture['manifest'].get('jobId') == snapshot['manifest'].get('jobId'),
+            require(original_capture['manifest']['canonicalBase'] == snapshot['manifest']['canonicalBase'],
                     'Keep the original canonical site and job')
-            changed_sources = changed_pending_dependencies(root, original_capture, snapshot)
-            require(changed_sources, 'The original admission is intact; resume it normally')
+            if cross_job_continuation:
+                for ref in snapshot.get('manifest', {}).get('reviewDependencies', []):
+                    artifact(root, ref)
+            else:
+                require(original_capture['manifest'].get('jobId') == snap_job,
+                        'Keep the original canonical site and job')
+                changed_sources = changed_pending_dependencies(root, original_capture, snapshot)
+                require(changed_sources, 'The original admission is intact; resume it normally')
         require(failure.is_file() and str(failure.relative_to(root)).startswith('reports/'),'Retain the actual independent failure handback')
         require(len(failure.read_bytes())>=100,'Retain the complete actual failure, not an invented summary')
         value={**old,'snapshot':freeze(root,snapshot_path,actual.path.parent),'fingerprint':row['fingerprint'],
                'author':snapshot['manifest']['author'],'reviewer':reviewer,'policySha256':policy_hash(root),
                'repairOf':last['admission'],'failureEvidence':freeze(root,failure,actual.path.parent)}
+        if cross_job_continuation:
+            value['continuationJobId'] = snap_job
         if changed_sources:
             value['unavailableOriginalSources'] = changed_sources
         save_exact(out,value)
@@ -617,15 +903,18 @@ def check_rendered(root, snapshot, review, local_module=None, force=False):
     """Return True for current-policy records; old records still run old checks."""
     if not (root/CONFIG).is_file() or is_legacy(root,snapshot,review): return False
     if not force and not snapshot.get('contentReviewPolicy'): return False
-    stamp=snapshot.get('contentReviewPolicy',{})
-    require(isinstance(stamp,dict) and stamp.get('version')==VERSION and stamp.get('sha256') in accepted_policy_hashes(root), 'Capture the current candidate under the active review policy')
-    _,authority=projection_source(root,snapshot,review)
+    accepted=accepted_policy_hashes(root)
+    require(stamp_ok(root,snapshot), 'Capture the current candidate under the active review policy')
+    sources,bindings=authorities(root,snapshot,review)
     for rr in review['routes']:
-        selected=decision(root,snapshot,review,rr)
-        pass_evidence(root,snapshot,rr,selected,local_module,retain_fail=rr.get('verdict')=='FAIL' and capped_release(root,snapshot))
+        auth_snapshot,auth_review,auth_ref=sources[rr['path']]
+        selected=decision(root,auth_snapshot,auth_review,rr)
+        at_limit = rr.get('verdict') == 'FAIL' and capped_release(root,auth_snapshot)
+        pass_evidence(root,auth_snapshot,rr,selected,local_module,retain_fail=at_limit)
         admission_ref=rr.get('reviewBudget');admission=read(artifact(root,admission_ref))
-        require(admission.get('policySha256') in accepted_policy_hashes(root) and admission.get('reviewer')==review['reviewer'] and
-                admission.get('author')==snapshot['manifest']['author'] and admission.get('fingerprint')==rr['fingerprint'],
+        require(admission.get('policySha256') in accepted and admission.get('reviewer')==auth_review['reviewer'] and
+                admission.get('author')==auth_snapshot['manifest']['author'] and admission.get('fingerprint')==rr['fingerprint'] and
+                (auth_ref is None or admission.get('snapshot')==auth_ref),
                 'Wrong current review admission')
         with Journal(root,snapshot['manifest']['canonicalBase'],rr['path']) as journal:
             cycle=next((c for c in journal.cycles if c['cycleId']==admission['cycleId']),None)
@@ -633,9 +922,24 @@ def check_rendered(root, snapshot, review, local_module=None, force=False):
             item=last_authoritative_round(cycle)
             require(admission['number']==item.get('number') and admission['number'] <= LIMITS[cycle['profile']],
                     'Cannot publish an older round or exceed the historical shared budget')
-            require(item['status']=='complete' and (item.get('verdict')=='PASS' or (rr.get('verdict')=='FAIL' and capped_release(root,snapshot) and exhausted(cycle))) and item.get('verdict')==rr['verdict'] and item.get('reportObjectSha256')==digest(authority) and
-                    item.get('profile')==selected and item['admission']==admission_ref, 'Record the actual latest independent PASS before publication')
-    if local_module is not None:
+            require(item['status']=='complete' and (item.get('verdict')=='PASS' or (at_limit and exhausted(cycle))) and item.get('verdict')==rr['verdict'] and item.get('reportObjectSha256')==digest(auth_review) and
+                    item.get('profile')==selected and item['admission']==admission_ref, 'Record the actual latest independent verdict eligible for publication')
+    if local_module is not None and bindings is None and sources and all(saved_applications(root,v[1]) for v in sources.values()):
+        for path,(original,report,_) in sources.items():
+            rr=next(row for row in report['routes'] if row['path']==path)
+            adm=read(artifact(root,rr['reviewBudget']))
+            job=adm.get('continuationJobId') or adm['jobId']
+            verify_release_bindings(root,original,report['reviewer'],{job},saved_applications(root,report),local_module,saved_report=report)
+        return True
+    if local_module is not None and bindings is not None:
+        jobs={
+            (adm.get('continuationJobId') or adm['jobId'])
+            for rr in review['routes']
+            for adm in [read(artifact(root,rr['reviewBudget']))]
+        }
+        verify_release_bindings(root,snapshot,review['reviewer'],jobs,bindings,local_module)
+    elif local_module is not None:
+        require(not (review.get('approvalProjection') or {}).get('groups'),'A composition needs verified release bindings')
         # Preserve the site's existing source/application/professional checks.
         # Only the old keyword-only risk resolver is replaced, after the new
         # independent exact-passage risk assessment has already passed above.
@@ -646,15 +950,8 @@ def check_rendered(root, snapshot, review, local_module=None, force=False):
             return profiles[text]
         try:
             local_module.profile=classified
-            if any(r.get('verdict')=='FAIL' for r in review['routes']):
-                require(review.get('workflowPolicySha256')==local_module.policy_hash(root),'Review must bind the current native instruction policy')
-                actors=set()
-                for ref in review.get('instructionApplications',[]):
-                    receipt=local_module.evidence_ref(root,ref)
-                    actors.add(local_module.validate(root,receipt.parent)['actor'])
-                require({snapshot['manifest']['author'],review['reviewer']}<=actors,'Native writer and independent reviewer applications required')
-                local=local_module.policy(root)
-                require(urlsplit(snapshot['manifest']['canonicalBase']).hostname.removeprefix('www.')==urlsplit(local['canonicalBase']).hostname.removeprefix('www.'),'Native canonical site changed')
+            if any(row.get('verdict')=='FAIL' for row in review['routes']):
+                verify_current_applications(root,snapshot,review['reviewer'],review,local_module,recorded=True)
             else:
                 local_module.rendered_review(root,snapshot,review)
         finally: local_module.profile=previous
@@ -665,9 +962,10 @@ def mark_published(root, snapshot, review, commit, host):
     if not (root/CONFIG).is_file() or not snapshot.get('contentReviewPolicy') or is_legacy(root,snapshot,review): return
     require(host.get('commit')==commit and host.get('status')=='live' and host.get('verifiedAt') and host.get('evidenceUrl'), 'Actual verified host evidence required')
     require(review.get('snapshotSha256')==snapshot.get('snapshotSha256'), 'Close only the exact reviewed publication')
-    _,authority=projection_source(root,snapshot,review)
+    sources,_=authorities(root,snapshot,review)
     for rr in review['routes']:
         page,_=route_in(snapshot,rr['path']);require(rr.get('fingerprint')==page['fingerprint'],'Published page differs from its real review')
+        authority=sources[rr['path']][1]
         admission=read(artifact(root,rr['reviewBudget']))
         with Journal(root,snapshot['manifest']['canonicalBase'],rr['path']) as journal:
             require(journal.cycle and journal.cycle['cycleId']==admission['cycleId'] and
@@ -675,6 +973,18 @@ def mark_published(root, snapshot, review, commit, host):
             if journal.cycle['status']=='published': continue
             require(last_authoritative_round(journal.cycle).get('reportObjectSha256')==digest(authority), 'Wrong actual published review')
             journal.append('published',{'release':'audit-limit' if rr['verdict']=='FAIL' else 'pass','cycleId':admission['cycleId'],'commit':commit,'reviewObjectSha256':digest(authority),'verifiedAt':host['verifiedAt']})
+
+
+def bundle_files(root, manifest_path, found):
+    """Every file of an instruction bundle and the bundles it reuses."""
+    manifest=read(manifest_path);folder=manifest_path.parent
+    found.update(str(x.relative_to(root)) for x in folder.rglob('*') if x.is_file())
+    for key in ['application','contextPacket']:
+        value=manifest.get(key)
+        if isinstance(value,dict):found.add(str(artifact(root,value).relative_to(root)))
+        elif isinstance(value,str) and value:found.add(str(inside(root,value).relative_to(root)))
+    if manifest.get('handoff'):found.add(str(inside(root,manifest['handoff']).relative_to(root)))
+    if manifest.get('reuse'):bundle_files(root,inside(root,manifest['reuse']['directory'])/'manifest.json',found)
 
 
 def sources(root, report_path):
@@ -690,8 +1000,18 @@ def sources(root, report_path):
                 captured=Path(page[key]);captured=captured if captured.is_absolute() else root/captured
                 relative=str(captured.resolve().relative_to(root))
                 add({'path':relative,'sha256':page[hash_key]})
-    if report.get('approvalProjection'):
-        snapshot_files(report['approvalProjection']['snapshot']);add(report['approvalProjection']['review'])
+    recovered=saved_applications(root,report)
+    if recovered:
+        found.add('reports/content-review-journals/recovered-applications/'+digest(report)+'.json')
+        for role in ('writer','reviewer'):bundle_files(root,add(recovered[role]),found)
+    proof=report.get('approvalProjection')
+    if proof and 'groups' in proof:
+        for group in proof['groups']:
+            snapshot_files(group['snapshot']);add(group['review'])
+        for role in ['writer','reviewer']:
+            if proof.get('bindings'):bundle_files(root,add(proof['bindings'][role]),found)
+    elif proof:
+        snapshot_files(proof['snapshot']);add(proof['review'])
     for row in report['routes']:
         admission=read(add(row['reviewBudget']));snapshot_files(admission['snapshot'])
         with Journal(root,admission['identity']['canonicalBase'],row['path']) as journal:
@@ -724,6 +1044,8 @@ def main():
     p=sub.add_parser('project')
     for name in ['snapshot','review','out-snapshot','out-review']:p.add_argument('--'+name,required=True)
     p.add_argument('--route',required=True,action='append')
+    p=sub.add_parser('compose')
+    for name in ['snapshot','spec','out-review']:p.add_argument('--'+name,required=True)
     p=sub.add_parser('repair-pending')
     for name in ['snapshot','route','job-id','reviewer','out','failure']:p.add_argument('--'+name,required=True)
     args=parser.parse_args();root=Path(args.root).resolve();policy(root)
@@ -737,6 +1059,11 @@ def main():
     elif args.command=='repair-pending':print(json.dumps(repair_pending(root,inside(root,args.snapshot),args.route,args.job_id,args.reviewer,inside(root,args.out),inside(root,args.failure)),indent=2))
     elif args.command=='record':print(json.dumps(record(root,inside(root,args.review)),indent=2))
     elif args.command=='sources':print(json.dumps(sources(root,inside(root,args.review)),indent=2))
+    elif args.command=='compose':
+        spec=read(inside(root,args.spec));bound=spec.get('bindings')
+        groups=[{'snapshot':inside(root,g['snapshot']),'review':inside(root,g['review']),'routes':g['routes']} for g in spec['groups']]
+        if bound:bound={**bound,'writer':inside(root,bound['writer']),'reviewer':inside(root,bound['reviewer'])}
+        print(json.dumps(compose(root,inside(root,args.snapshot),groups,bound,inside(root,args.out_review)),indent=2))
     else:print(json.dumps(project(root,inside(root,args.snapshot),inside(root,args.review),args.route,inside(root,args.out_snapshot),inside(root,args.out_review)),indent=2))
 
 

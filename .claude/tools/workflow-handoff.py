@@ -1,18 +1,31 @@
 """Portable canonical handoffs using the verified native validators and snapshot logic."""
-import argparse,copy,datetime,hashlib,importlib.util,json,os,uuid
-import re
+import argparse, copy, datetime, hashlib, importlib.util, json, os, re, uuid
 from pathlib import Path
 from types import SimpleNamespace
 from urllib.parse import urlsplit
-ROOT=Path(__file__).resolve().parents[2]
-def require(ok,message):
-    if not ok:raise ValueError(message)
-def read(path):return json.loads(Path(path).read_bytes())
-def sha(raw):return hashlib.sha256(raw).hexdigest()
-def inside(root,rel):
-    path=(root/rel).resolve()
-    require(root.resolve() in path.parents,'Keep workflow artifacts inside the active repository')
+
+ROOT = Path(__file__).resolve().parents[2]
+
+
+def require(ok, message):
+    if not ok:
+        raise ValueError(message)
+
+
+def read(path):
+    return json.loads(Path(path).read_bytes())
+
+
+def sha(raw):
+    return hashlib.sha256(raw).hexdigest()
+
+
+def inside(root, rel):
+    path = (root / rel).resolve()
+    require(root.resolve() in path.parents, 'Keep workflow artifacts inside the active repository')
     return path
+
+
 def evidence_ref(root, ref):
     require(isinstance(ref, dict) and set(ref) >= {'path', 'sha256'}, 'Missing hash-bound artifact')
     path = inside(root, ref['path'])
@@ -75,7 +88,7 @@ def preparation_scope_check(root, h, old, phase):
         current = start
         while current:
             require(not any(current.get(k) for k in
-                            ['publicationAuthority', 'phase0Approval', 'approval', 'reviewRelease', 'snapshot', 'review', 'reviewPairs']),
+                            ['publicationAuthority', 'phase0Approval', 'approval', 'reviewRelease', 'snapshot', 'review']),
                     'Approved or reviewed route scope is locked')
             for ref in current.get('sources', []) + current.get('candidates', []):
                 require(not re.search(r'phase[-_]?0[-_]approval', Path(ref['path']).name, re.I),
@@ -118,11 +131,11 @@ def handoff_check(root, path, actor=None, phase=None, visited=None):
     require(key not in visited, 'Circular handoff history')
     visited.add(key)
     h = read(path)
-    origin=urlsplit(h.get('canonicalBase',''))
-    require(h.get('version')==1 and h.get('siteId')==read(root/'.claude/content-review-policy.json')['siteId'],
+    origin = urlsplit(h.get('canonicalBase', ''))
+    require(h.get('version') == 1 and h.get('siteId') == read(root / '.claude/content-review-policy.json')['siteId'],
             'Handoff belongs to another site or protocol')
-    require(origin.scheme=='https' and origin.hostname and not origin.username and not origin.password
-            and origin.port in (None,443) and not origin.path.strip('/') and not origin.query and not origin.fragment,
+    require(origin.scheme == 'https' and origin.hostname and not origin.username and not origin.password
+            and origin.port in (None, 443) and not origin.path.strip('/') and not origin.query and not origin.fragment,
             'Use the actual canonical HTTPS origin')
     for name in ['jobId', 'producer', 'nextAction']:
         require(isinstance(h.get(name), str) and h[name].strip(), 'Missing handoff ' + name)
@@ -145,7 +158,7 @@ def handoff_check(root, path, actor=None, phase=None, visited=None):
                 'Findings must preserve status and concrete evidence')
     if h.get('previous'):
         old = handoff_check(root, evidence_ref(root, h['previous']), visited=visited)
-        require(h['jobId'] == old['jobId'] and h['canonicalBase']==old['canonicalBase'], 'Canonical job identity changed')
+        require(h['jobId'] == old['jobId'] and h['canonicalBase'] == old['canonicalBase'], 'Canonical job identity changed')
         if set(h['routes']) != set(old['routes']):
             preparation_scope_check(root, h, old, phase)
         require(all(counters[k] >= old['reviewCounters'][k] for k in counters), 'Review counters cannot reset')
@@ -154,35 +167,16 @@ def handoff_check(root, path, actor=None, phase=None, visited=None):
         require(actor != h['producer'], 'Independent reviewer cannot review their own handoff')
     if phase == 'publish':
         spec = importlib.util.spec_from_file_location('handoff_renderer', root / '.claude/tools/rendered-audit.py')
-        renderer = importlib.util.module_from_spec(spec); spec.loader.exec_module(renderer)
-        if 'reviewPairs' in h:
-            pairs = h['reviewPairs']
-            require(isinstance(pairs, list) and pairs and
-                    not any(h.get(k) for k in ('reviewRelease', 'snapshot', 'review')),
-                    'Use a single editorial release authority for each route')
-            covered = set()
-            for pair in pairs:
-                snap = read(evidence_ref(root, pair.get('snapshot')))
-                report = read(evidence_ref(root, pair.get('review')))
-                manifest = snap.get('manifest', {})
-                require(manifest.get('workflowKind') == 'mindmap-pass' and
-                        manifest.get('jobId') == report.get('jobId') == h['jobId'] and
-                        manifest.get('canonicalBase') == h['canonicalBase'],
-                        'Each editorial approval must belong to this exact job and site')
-                renderer.review_check(snap, report)
-                routes = [row['path'] for row in snap['routes']]
-                require(routes and len(routes) == len(set(routes)) and covered.isdisjoint(routes),
-                        'Each approved route must appear exactly once')
-                covered.update(routes)
-            require(covered == set(h['routes']), 'Editorial approvals must cover the complete handoff')
-            return h
+        renderer = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(renderer)
         snapshot = read(evidence_ref(root, h.get('snapshot')))
         if h.get('reviewRelease'):
             release = read(evidence_ref(root, h['reviewRelease']))
             if release.get('kind') == 'source-approved-capped-paid-resume-v1':
                 spec = importlib.util.spec_from_file_location('approved_paid_draft_release',
-                    root / 'scripts/paid_placements/approved_draft_release.py')
-                paid_resume = importlib.util.module_from_spec(spec); spec.loader.exec_module(paid_resume)
+                                                              root / 'scripts/paid_placements/approved_draft_release.py')
+                paid_resume = importlib.util.module_from_spec(spec)
+                spec.loader.exec_module(paid_resume)
                 paid_resume.publish_check(root, h, snapshot, renderer)
             else:
                 client_service_release_check(root, h, snapshot, renderer)
@@ -220,28 +214,17 @@ def write_json(path, value, local):
 
 def seal(root, draft, out, local, actor=None, phase=None):
     local.require(not out.exists() and draft != out, 'Handoffs are immutable; use a new output path')
-    # Validate BEFORE reading/snapshotting refs. A stale old hash is never repaired
-    # by silently substituting today's file. Previous chains must already be valid.
     local.handoff_check(root, draft, actor=actor, phase=phase)
     value = copy.deepcopy(local.read(draft))
     for collection in ('candidates', 'sources'):
         value[collection] = [{**ref, **snapshot(root, local.evidence_ref(root, ref), out.parent, local, ref['sha256']),
                               'originPath': ref.get('originPath', ref['path'])}
                              for ref in value[collection]]
-    if 'reviewPairs' in value:
-        for pair in value['reviewPairs']:
-            for field in ('snapshot', 'review'):
-                ref = pair[field]
-                pair[field] = {**ref, **snapshot(root, local.evidence_ref(root, ref), out.parent,
-                                                  local, ref['sha256']),
-                               'originPath': ref.get('originPath', ref['path'])}
     for field in ('previous', 'snapshot', 'review', 'reviewRelease'):
         if value.get(field):
             ref = value[field]
             value[field] = {**ref, **snapshot(root, local.evidence_ref(root, ref), out.parent, local, ref['sha256']),
                             'originPath': ref.get('originPath', ref['path'])}
-    # Validate the complete snapshotted chain before a final filename is visible.
-    # Link is atomic and refuses to overwrite a competing worker's output.
     pending = out.with_name(out.name + '.pending-' + uuid.uuid4().hex)
     try:
         write_json(pending, value, local)
@@ -267,8 +250,6 @@ def reconcile_findings(root, current, authority, out, local):
                   and review['reviewer'].strip() and review['reviewer'] != value['producer'],
                   'Actual independent PASS authority is required; producer cannot resolve its own findings')
     local.require(review.get('jobId') == value['jobId'], 'Resolution authority belongs to another canonical job')
-    # Mindmap gate reviews bind the canonical parsed-JSON digest; handoff refs
-    # separately bind raw file bytes. They are deliberately different hashes.
     matched = []
     for candidate_ref in value['candidates']:
         try:
@@ -316,25 +297,44 @@ def reconcile_findings(root, current, authority, out, local):
 
 
 def api():
-    return SimpleNamespace(require=require,read=read,sha=sha,inside=inside,evidence_ref=evidence_ref,handoff_check=handoff_check,object_sha=lambda value:sha(json.dumps(value,sort_keys=True,separators=(",",":"),ensure_ascii=False).encode()))
+    return SimpleNamespace(
+        require=require,
+        read=read,
+        sha=sha,
+        inside=inside,
+        evidence_ref=evidence_ref,
+        handoff_check=handoff_check,
+        object_sha=lambda value: sha(json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode()),
+    )
 
-def focused(root,path,stage,actor=None):
-    h=handoff_check(root,path,actor=actor,phase=stage)
-    return {k:v for k,v in h.items() if k not in ('previous','findings')} | {
-        'findings':[f for f in h['findings'] if f['status']=='open'],
-        'resolvedFindingIds':[f['id'] for f in h['findings'] if f['status']=='resolved'],
-        'handoff':{'path':str(path.relative_to(root)),'sha256':sha(path.read_bytes())}}
+
+def focused(root, path, stage, actor=None):
+    h = handoff_check(root, path, actor=actor, phase=stage)
+    return {k: v for k, v in h.items() if k not in ('previous', 'findings')} | {
+        'findings': [f for f in h['findings'] if f['status'] == 'open'],
+        'resolvedFindingIds': [f['id'] for f in h['findings'] if f['status'] == 'resolved'],
+        'handoff': {'path': str(path.resolve().relative_to(root.resolve())), 'sha256': sha(path.read_bytes())},
+    }
+
 
 def main():
-    parser=argparse.ArgumentParser(description=__doc__);sub=parser.add_subparsers(dest='command',required=True)
-    q=sub.add_parser('seal');q.add_argument('--draft',required=True);q.add_argument('--out',required=True)
-    q=sub.add_parser('check');q.add_argument('--handoff',required=True)
-    q=sub.add_parser('reconcile-findings');q.add_argument('--handoff',required=True);q.add_argument('--review',required=True);q.add_argument('--out',required=True)
-    q=sub.add_parser('snapshot');q.add_argument('--file',required=True);q.add_argument('--directory',required=True)
-    args=parser.parse_args()
-    if args.command=='seal':seal(ROOT,inside(ROOT,args.draft),inside(ROOT,args.out),api())
-    elif args.command=='check':
-        h=handoff_check(ROOT,inside(ROOT,args.handoff));print(json.dumps({'jobId':h['jobId'],'status':'evidence-current-not-an-approval'}))
-    elif args.command=='snapshot':print(json.dumps(snapshot(ROOT,inside(ROOT,args.file),inside(ROOT,args.directory),api())))
-    else:reconcile_findings(ROOT,inside(ROOT,args.handoff),inside(ROOT,args.review),inside(ROOT,args.out),api())
-if __name__=='__main__':main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    sub = parser.add_subparsers(dest='command', required=True)
+    q = sub.add_parser('seal'); q.add_argument('--draft', required=True); q.add_argument('--out', required=True)
+    q = sub.add_parser('check'); q.add_argument('--handoff', required=True)
+    q = sub.add_parser('reconcile-findings'); q.add_argument('--handoff', required=True); q.add_argument('--review', required=True); q.add_argument('--out', required=True)
+    q = sub.add_parser('snapshot'); q.add_argument('--file', required=True); q.add_argument('--directory', required=True)
+    args = parser.parse_args()
+    if args.command == 'seal':
+        seal(ROOT, inside(ROOT, args.draft), inside(ROOT, args.out), api())
+    elif args.command == 'check':
+        h = handoff_check(ROOT, inside(ROOT, args.handoff))
+        print(json.dumps({'jobId': h['jobId'], 'status': 'evidence-current-not-an-approval'}))
+    elif args.command == 'snapshot':
+        print(json.dumps(snapshot(ROOT, inside(ROOT, args.file), inside(ROOT, args.directory), api())))
+    else:
+        reconcile_findings(ROOT, inside(ROOT, args.handoff), inside(ROOT, args.review), inside(ROOT, args.out), api())
+
+
+if __name__ == '__main__':
+    main()

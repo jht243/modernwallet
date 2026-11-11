@@ -20,6 +20,38 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 # Content standard — the canonical page-writing guide
 
+<!-- chart-obligation: cs-tested-anchor-neutrality -->
+**Applies to** operator-register pages whose `page type:` is a roundup ("best X", "X alternatives", any ranked list), a product or model review, or an "X vs Y" comparison. **Skip** pricing, how-to, explainer, definition, tool and news (reporter-register) pages. **Also skip** any page whose ranked or compared items fall outside what this site's `_experience.md` section G licenses as tested (for example medical treatments, clinics, drugs, legal or financial services). If the site's `_experience.md` has no section G, skip TESTED entirely. Only relevant executed runs, independently reviewed against the exact page, license first-person testing claims; calculations, modeling, client observations and external research use their own accurate labels.
+
+Plan an extra 3–5-row comparison table + "when to choose X" section (`COMPARISON` net-add) whenever a natural comparison axis exists; plan one honest proprietary `ANCHOR` from `_experience.md` / original analysis (max 2 named-client refs, or explicit `anchor-exempt:` justification — never force-fit); and never plan claims of vendor neutrality, "no paid placement", or self-undercutting disclaimers about what we have not tested or used (`NEUTRALITY`). Reuse this site's established author/publisher identity automatically without blocking on missing Person/reviewer profiles.
+<!-- /chart-obligation -->
+
+
+<!-- chart-obligation: cs-seo-and-elements -->
+Every planned new page and substantive outline must budget for these required elements (in both `operator` and `reporter` registers unless noted):
+- **50–60 char SEO title** carrying the primary keyword; Title Case H1/H2/H3 headings; sentence-case FAQ questions; define every acronym on first use; link related hub/spoke/cluster pages; no `Conclusion` or `Summary` heading.
+- **Reader question & answer placement (INTENT):** decide `reader question: "<in the reader's words>"` with its PAA/autocomplete evidence tag (`[PAA n/m ...]` or `[verb-only ...]`), place the working answer in section 1 or 2 ahead of any scope/definition/history material, answer the top on-intent PAA in the opener, and place remaining on-topic PAA questions in the FAQ.
+- **Who this is not for** and **What would change our answer** on any page that recommends, ranks, or picks a winner; **concrete next action** as the final body sentence; **disclaimers at the bottom only** (required on YMYL sites per `_experience.md`, never in title/intro/section 1); and a subject-specific `inlineCta` where the repo's page record supports one.
+<!-- /chart-obligation -->
+
+
+<!-- chart-obligation: cs-medium-and-row-records -->
+Choose the useful deliverable from the actual reader finding and verified capabilities, following `_decision-evidence.md` and `_mindmap-execution.md`. Prose, finite tables, SVG charts, genuine screenshots, images/illustrations, downloadable data and interactive tools are supported when this run can actually produce them. Generated illustrations never establish product testing. Videos remain outside the Mindmap evidence workflow.
+
+Record `medium: <picked> → <resolved>`, `register: operator|reporter`, and `page type: <type>` (from the DEPTH floor table: comparison 1,500 / review 1,500 / persona 1,400 / hub 1,200 / worth-it 1,200 / explainer 1,200 / cost-pricing 1,000 / editorial 600 body words; pick the higher floor when ambiguous, and merge topics too thin to clear their floor without filler). Assess inputs, logic, sources, implementation and feasibility before the approval chart. Prefer existing components and the smallest format that makes the answer useful. Keep the main answer readable without interaction.
+
+Build the approved asset and its framing page in Phase 3 and independently audit both in Phase 4. A spec, stub, placeholder or promise that a human will build it later is not completion. If a requested format cannot be produced with available authorized capabilities, narrow/exclude that asset before approval, or resolve to a useful complete supported format. Do not force a calculator or visual when it adds nothing. Preserve local scope, exclusions and publication permissions.
+<!-- /chart-obligation -->
+
+
+<!-- chart-obligation: cs-defend-lock -->
+**Before editing, rewriting, or appending to ANY existing page, check `reports/ai-answer-citation-pass/defended-pages.json` (if it exists in this repo).** If the page's route is listed in `pages[].route`, the page is **AIO-defended**: Google's AI Overview currently cites it as the source for its query, and rewriting it risks losing that citation.
+
+- A defended route is **frozen** — do NOT rewrite, append to, or metadata-edit it. Skip it and log `skipped — AIO-defended` in your digest, exactly like a cooldown skip.
+- The ONE exception: correcting a genuine factual error (e.g. a YMYL fact went stale). Such an edit still runs the full audit, and you note it so the next `/ai-answer-citation-pass` run re-checks the citation survived.
+<!-- /chart-obligation -->
+
+
 <!-- workflow-checkpoints-v1 -->
 **Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Follow the sibling `_rendered-page-audit.md`: finish central source research before the preparation PASS; audit the complete rendered pages after all template/affiliate/link changes, block inherited contradictions affecting the answer, and verify exact reviewed output live with `rendered-audit.py` before closing deployment and measurement records. Install that contract and helper with the checkpoint dependencies. A read-only reviewer may write internal evidence receipts without editing content. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
 <!-- /workflow-checkpoints-v1 -->

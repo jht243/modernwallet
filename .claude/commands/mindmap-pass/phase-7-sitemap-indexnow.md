@@ -12,6 +12,11 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 # Phase 7 — Sitemap + IndexNow
 
+<!-- chart-obligation: p7-sitemap-and-indexnow-scope -->
+Plan every new Phase-3 route for the correct discovered sitemap with today's `<lastmod>`, refresh `<lastmod>` ONLY for substantively changed pages (Phase 2/3/5 — never link-only Phase 6 touches), and prepare `<date>.indexnow.txt` for added + substantively updated canonical URLs while deferring actual IndexNow submission to Phase 9 after live verification.
+<!-- /chart-obligation -->
+
+
 <!-- workflow-checkpoints-v1 -->
 **Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Follow the sibling `_rendered-page-audit.md`: finish central source research before the preparation PASS; audit the complete rendered pages after all template/affiliate/link changes, block inherited contradictions affecting the answer, and verify exact reviewed output live with `rendered-audit.py` before closing deployment and measurement records. Install that contract and helper with the checkpoint dependencies. A read-only reviewer may write internal evidence receipts without editing content. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
 <!-- /workflow-checkpoints-v1 -->

@@ -7,6 +7,11 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 # Phase 8 — Summary (auto-continues to Phase 9 push)
 
+<!-- chart-obligation: p8-growth-and-cluster-accounting -->
+For each substantive contribution, plan `growth.json` registration in `reports/content-evidence.jsonl` with a stable run/route ID, hypothesis, and honest baseline/comparator status (unavailable GSC is recorded as `unavailable`, never zero, and publishing is never claimed as uplift; respect terminal `no-addition` exemptions), plus complete accounting of emerging search clusters and PAA/completion vs `verb-only` question-evidence tags.
+<!-- /chart-obligation -->
+
+
 <!-- mindmap-visible-checks-v1 -->
 **Approval chart: completed preparation only.** Follow `_workflow-checkpoints.md`, “Approval chart — completed preparation only.” Finish all applicable instruction reading, research, duplicate review, testing eligibility/evidence decisions, supported takeaway/attribution briefs and internal-link/technical/publication planning BEFORE showing the chart. Show exactly one **Preparation check** row: `✅ Passed` with a link to the complete readiness evidence. Keep the full read/application and per-page checklist in that linked report. On `❌ Failed`, show only the specific failures and fixes and block approval; do not expand passed items. Unfinished preparation blocks the ready approval chart. Keep the full action table and Phases 1–9 as the future execution plan, including writing, independent content audit, internal-link edits, sitemap and publication. Do not show pending cells or claim those execution steps already happened. Every new-page action must also have a complete, page-specific **New-page brief** shown inline in the saved chart AND on-screen approval output: identity, validated keyword/SERP evidence, existing-page/duplicate rationale, reader question and answer placement, concrete outline, inspected sources and contribution, testing/review decision, takeaway, inbound/outbound link placements, and technical/measurement scope. A title/URL row or link to a separate file is insufficient. Missing/mismatched briefs block the chart; never shorten them out. Approval remains the sole existing human gate.
 <!-- /mindmap-visible-checks-v1 -->

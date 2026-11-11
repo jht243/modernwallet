@@ -12,6 +12,11 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 # Phase 1 — Cannibalization detection (ADVISORY ONLY — writes no page edits)
 
+<!-- chart-obligation: p1-advisory-only -->
+> ⚠️ **This phase no longer executes consolidation.** A backwards 301/canonical is the single most destructive action in SEO — a bot acting on partial GSC data can redirect the page Google actually ranks into a weaker one and crater a whole cluster. The *detection* (knowing two pages compete) is valuable; the *automated execution* is not. So this phase **only detects and flags** cannibalization for the human. It writes **no canonical, no 301, no body change, no link re-point, no sitemap removal.** Near-ties (within ~3×) must never be recommended for consolidation; differentiate angles (Phase 5) or add internal links (Phase 6) instead.
+<!-- /chart-obligation -->
+
+
 <!-- workflow-checkpoints-v1 -->
 **Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Follow the sibling `_rendered-page-audit.md`: finish central source research before the preparation PASS; audit the complete rendered pages after all template/affiliate/link changes, block inherited contradictions affecting the answer, and verify exact reviewed output live with `rendered-audit.py` before closing deployment and measurement records. Install that contract and helper with the checkpoint dependencies. A read-only reviewer may write internal evidence receipts without editing content. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
 <!-- /workflow-checkpoints-v1 -->

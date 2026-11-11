@@ -12,6 +12,12 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 # Phase 3c — Build the tool rows (interactive tool / calculator / quiz-assessment)
 
+<!-- chart-obligation: p3c-tool-feasibility -->
+Phase 3 routes every `create new content` row whose format is `interactive tool`, `calculator` or
+`quiz/assessment` here (plus approved tools embedded in existing articles). Planned tools must be BUILT in this run as client-side, deterministic components (`data-tool="<slug>"`, `<= ~30 KB gz`, no per-use paid API or new backend) mirroring an existing repo tool's wiring, with named sourced constants/formulas and result export/print where appropriate. If no defensible math or scoring exists, re-route the row to a normal article before approval — never ship a spec, stub, or invented math.
+<!-- /chart-obligation -->
+
+
 <!-- workflow-checkpoints-v1 -->
 **Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Follow the sibling `_rendered-page-audit.md`: finish central source research before the preparation PASS; audit the complete rendered pages after all template/affiliate/link changes, block inherited contradictions affecting the answer, and verify exact reviewed output live with `rendered-audit.py` before closing deployment and measurement records. Install that contract and helper with the checkpoint dependencies. A read-only reviewer may write internal evidence receipts without editing content. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
 <!-- /workflow-checkpoints-v1 -->

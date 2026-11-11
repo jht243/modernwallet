@@ -58,4 +58,30 @@ with tempfile.TemporaryDirectory() as parent:
   try:m.verified_objects(fresh,base,[hashlib.sha256(original_html).hexdigest()])
   except ValueError as e:assert 'missing' in str(e)
   else:raise AssertionError('Missing remote evidence accepted')
+  # Repaired pending slots carry invalidatedReferences in the journal; save_checked_pair
+  # must propagate those invalidated references into persist() so a composed review does
+  # not fail trying to walk an unavailable dependency inside the superseded snapshot.
+  shutil.copyfile(original/'.claude/tools/content-review-policy.py',fresh/'.claude/tools/content-review-policy.py')
+  (fresh/'.claude/content-review-policy.json').write_text(json.dumps({'version':'risk-review-budget-2026-11-08.1','siteId':'fixture','defaultProfile':'standard','minimumProfile':'standard','roundLimits':{'light':1,'standard':2,'high':3},'legacyInventory':{'path':'.claude/legacy.json','sha256':'0'*64},'scope':'test'}))
+  (fresh/'.claude/legacy.json').write_text('{"version":"risk-review-budget-2026-11-08.1","pairs":[],"histories":[]}')
+  rdir=fresh/'reports';rdir.mkdir(exist_ok=True)
+  old_snap=rdir/'old-snap.json';old_snap.write_text(json.dumps({'manifest':{'reviewDependencies':[{'path':'reports/missing-draft.json','sha256':'a'*64}]}}))
+  old_sha=hashlib.sha256(old_snap.read_bytes()).hexdigest()
+  m.durable(fresh).cache(fresh,'reports/old-snap.json',old_sha,old_snap.read_bytes())
+  old_snap.unlink()
+  adm=rdir/'adm.json';adm.write_text(json.dumps({'identity':{'canonicalBase':'https://fixture.test','route':'/repaired'},'repairOf':{'path':'reports/old-snap.json','sha256':old_sha}}))
+  adm_sha=hashlib.sha256(adm.read_bytes()).hexdigest()
+  spec_p=importlib.util.spec_from_file_location('pol',fresh/'.claude/tools/content-review-policy.py');pol=importlib.util.module_from_spec(spec_p);spec_p.loader.exec_module(pol)
+  j=pol.Journal(fresh,'https://fixture.test','/repaired')
+  j.path.parent.mkdir(parents=True,exist_ok=True)
+  j.path.write_text(
+   json.dumps({'kind':'begin','identity':j.identity,'data':{}})+'\n'+
+   json.dumps({'kind':'repair-pending','identity':j.identity,'data':{'invalidatedReferences':[{'path':'reports/old-snap.json','sha256':old_sha}]}})+'\n'
+  )
+  html2=rdir/'repaired.html';html2.write_text('<main>repaired</main>')
+  snap2=rdir/'snap2.json';snap2.write_text(json.dumps({'manifest':{'canonicalBase':'https://fixture.test','workflowKind':'mindmap-pass','jobId':'repaired-job'},'baseUrl':'http://localhost:4455','reviewSourceArchive':m.snapshot_sources(fresh,rdir),'routes':[{'path':'/repaired','htmlFile':'reports/repaired.html','htmlSha256':hashlib.sha256(html2.read_bytes()).hexdigest()}]}))
+  rev2=rdir/'rev2.json';rev2.write_text(json.dumps({'routes':[{'path':'/repaired','reviewBudget':{'path':'reports/adm.json','sha256':adm_sha}}]}))
+  lease.write_text(json.dumps({'site':'fixture.test','run':'repaired-search','owner':'replacement-owner'}))
+  idx2=m.save_checked_pair(fresh,snap2,rev2)
+  assert idx2 and len(idx2)==64
   os.chdir(original)

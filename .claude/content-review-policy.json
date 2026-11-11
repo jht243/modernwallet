@@ -42,7 +42,7 @@
     {
       "sha256": "433bc827af6dd4d6b7219394aa8dcacce623ade86af052b9a739e049abdc65dc",
       "commit": "95a778093a35ea66a15fdaefc43b9864ad9f988d",
-      "reason": "Preserve independent reviews recorded before the owner changed this site’s default and minimum editorial review levels."
+      "reason": "Preserve independent reviews recorded before the owner changed this site\u2019s default and minimum editorial review levels."
     },
     {
       "sha256": "c9a60ad70ed51c9e2998e2ca855d489a288bef5f8b6832b0c89f7ff559882c8f",
@@ -58,6 +58,11 @@
       "sha256": "7780f117cfe6de322f3ec685c97179f1fc2ebaa40288090b234717dc064d990d",
       "commit": "e858c6e177eb6bba705f7ff7ce35258d7d984e06",
       "reason": "Keep all independent reviews under the initial subject-based cap while retaining historical pending reservations and exact source restoration."
+    },
+    {
+      "sha256": "85bb8966befd90370705ae0b5f1c4965fcc2026eaa165103a1fea15fab3d7855",
+      "commit": "0043cb488c804f02ccaaaa2be14b5d1519196f80",
+      "reason": "Preserve completed and pending independent review history across shared content-review-policy and durable-evidence tool sync."
     }
   ],
   "releaseAtAuditLimit": true,

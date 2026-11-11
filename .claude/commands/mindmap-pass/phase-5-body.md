@@ -7,6 +7,11 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 # Phase 5 — Body text updates
 
+<!-- chart-obligation: p5-enrichment-placement-and-monetization -->
+**Where an `update existing body text` row carries `reader_question` / `answer` / `answer_placement` (cols 10–12), the added section IS that answer and goes in the named slot** — section 1 or 2, ahead of the page's existing scope/definition material, preserving unrelated content and bumping the rendered "Last updated" date + `dateModified`. Any addition longer than one sentence uses `content_gen.py section` with closed facts + `.meta.json`. Where the inline affiliate engine (`src/utils/affiliateInject.ts` + `data/affiliate/catalog.ts`) exists, plan natural-fit-only monetization (never force an off-intent block, double-monetize, or fabricate referral URLs).
+<!-- /chart-obligation -->
+
+
 <!-- workflow-checkpoints-v1 -->
 **Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Follow the sibling `_rendered-page-audit.md`: finish central source research before the preparation PASS; audit the complete rendered pages after all template/affiliate/link changes, block inherited contradictions affecting the answer, and verify exact reviewed output live with `rendered-audit.py` before closing deployment and measurement records. Install that contract and helper with the checkpoint dependencies. A read-only reviewer may write internal evidence receipts without editing content. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
 <!-- /workflow-checkpoints-v1 -->

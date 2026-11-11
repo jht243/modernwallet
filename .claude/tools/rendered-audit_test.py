@@ -8,8 +8,9 @@ spec=importlib.util.spec_from_file_location('audit',pathlib.Path(__file__).with_
 a=importlib.util.module_from_spec(spec); spec.loader.exec_module(a)
 HTML='''<html><head><title>Model guide</title><link rel="canonical" href="https://example.com/guide"><meta name="robots" content="index,follow"><script type="application/ld+json">{"@type":"Article","datePublished":"2026-10-27","dateModified":"2026-10-27","url":"https://example.com/guide"}</script></head><body><main><h1>Model guide</h1><p>Updated Oct 27, 2026</p><p>'''+('Useful complete reader-facing content. '*12)+'''</p><a href="https://example.com/other">Related guide</a></main><script>build123</script></body></html>'''
 class Tests(unittest.TestCase):
- def snapshot(self,html=HTML):
+ def snapshot(self,html=HTML,class_spaces=False):
   m={'author':'writer','canonicalBase':'https://example.com','routes':[{'path':'/guide','expectedUpdatedDate':'2026-10-27'}]}
+  if class_spaces:m['routes'][0]['normalizeClassTokenWhitespace']=True
   r=a.parse(html,m['routes'][0],'http://localhost:3000',m['canonicalBase'])
   s={'manifest':m,'routes':[r],'baseUrl':'https://example.com','capturedAt':'2026-10-27T18:00:00+00:00'}; s['snapshotSha256']=a.digest(s); return s
  def review(self,s):
@@ -42,6 +43,43 @@ class Tests(unittest.TestCase):
    self.assertEqual(out.read_text(),'original immutable bytes')
  def test_valid(self):
   s=self.snapshot(); a.review_check(s,self.review(s))
+ def test_framework_counter_only_is_ignored(self):
+  base=self.snapshot()['routes'][0]['fingerprint']
+  for value in ['32','33']:
+   self.assertEqual(base,self.snapshot(HTML.replace('</head>','<meta name="next-head-count" content="'+value+'"></head>'))['routes'][0]['fingerprint'])
+  for meta in ['<meta name="description" content="Changed">','<meta property="og:title" content="Changed">','<meta property="next-head-count" content="32">']:
+   self.assertNotEqual(base,self.snapshot(HTML.replace('</head>',meta+'</head>'))['routes'][0]['fingerprint'])
+ def test_only_empty_style_is_ignored(self):
+  base=HTML.replace('</main>','<input type="number" value="10"></main>')
+  fp=self.snapshot(base)['routes'][0]['fingerprint']
+  for style in ['', '   ']:
+   self.assertEqual(fp,self.snapshot(base.replace('value="10"','value="10" style="'+style+'"'))['routes'][0]['fingerprint'])
+  for change in ['value="11"','value="10" style="display:none"','value="10" style="width:100px"','value="10" disabled']:
+   self.assertNotEqual(fp,self.snapshot(base.replace('value="10"',change))['routes'][0]['fingerprint'])
+ def test_class_ascii_token_spacing_not_a_page_change(self):
+  base=HTML.replace('<main>','<main class="article comparison">')
+  before=self.snapshot(base,class_spaces=True); approved=self.review(before)
+  for value in [' article comparison ', 'article\tcomparison', '\narticle\r\ncomparison\f']:
+   with self.subTest(value=value):
+    captured=self.snapshot(base.replace('class="article comparison"','class="'+value+'"'),class_spaces=True)
+    a.compare(before,captured,approved)
+    self.assertNotEqual(before['routes'][0]['htmlSha256'],captured['routes'][0]['htmlSha256'])
+ def test_class_tokens_order_duplicates_and_non_html_whitespace_remain_bound(self):
+  base=HTML.replace('<main>','<main class="article comparison">'); before=self.snapshot(base,class_spaces=True)
+  for value in ['article', 'article comparison hidden', 'comparison article', 'article article comparison', 'article\u00a0comparison', 'article\vcomparison']:
+   with self.subTest(value=value),self.assertRaisesRegex(ValueError,'Rendered content differs'):
+    a.compare(before,self.snapshot(base.replace('class="article comparison"','class="'+value+'"'),class_spaces=True),self.review(before))
+ def test_class_spacing_never_normalizes_other_attributes(self):
+  base=HTML.replace('<main>','<main class="article comparison" aria-label="Reader guide" style="width: 100px">'); before=self.snapshot(base,class_spaces=True)
+  for old,new in [('aria-label="Reader guide"','aria-label="Reader  guide"'),('style="width: 100px"','style="width:  100px"'),('class="article comparison"','')]:
+   with self.subTest(new=new),self.assertRaisesRegex(ValueError,'Rendered content differs'):
+    a.compare(before,self.snapshot(base.replace(old,new),class_spaces=True),self.review(before))
+ def test_class_spacing_requires_explicit_boolean_opt_in(self):
+  base=HTML.replace('<main>','<main class="article comparison">')
+  self.assertNotEqual(self.snapshot(base)['routes'][0]['fingerprint'],self.snapshot(base.replace('article comparison','article comparison '))['routes'][0]['fingerprint'])
+  for flag in ['true',1,None]:
+   manifest=self.snapshot(base)['manifest'];manifest['routes'][0]['normalizeClassTokenWhitespace']=flag
+   with self.subTest(flag=flag),self.assertRaisesRegex(ValueError,'must be boolean'):a.validate_manifest(manifest)
  def test_date_regression(self):
   s=self.snapshot(HTML.replace('"dateModified":"2026-10-27"','"dateModified":"2026-09-09"'))
   with self.assertRaises(ValueError): a.valid_snapshot(s)
@@ -140,7 +178,7 @@ class Ads(unittest.TestCase):
  def test_generic_ad_box_remains_bound(self):
   self.assertNotEqual(self.parse('<div class="mv-ad-box">Original CTA</div>')['fingerprint'],self.parse('<div class="mv-ad-box">Changed CTA</div>')['fingerprint'])
  def test_protected_content_nested_in_verified_ad_rejected(self):
-  for protected in ['<main>Answer</main>','<article>Answer</article>','<h1>Answer</h1>','<section id="reader-survey">2 responses</section>','<aside class="affiliate-card">Product</aside>','<span class="tested-badge">TESTED</span>','<script type="application/ld+json">{"dateModified":"2026-10-29"}</script>']:
+  for protected in ['<main>Answer</main>','<article>Answer</article>','<h1>Answer</h1>','<section id="reader-survey">2 responses</section>','<aside class="affiliate-card">Product</aside>','<span class="tested-badge">TESTED</span>','<span class="byline">Author</span>','<script type="application/ld+json">{"dateModified":"2026-10-29"}</script>']:
    with self.subTest(protected=protected),self.assertRaises(ValueError):self.parse('<div class="mv-ad-box" data-slotid="content_btf">'+protected+'</div>')
  def test_unclosed_ad_rejected(self):
   with self.assertRaises(ValueError):self.parse('<div class="mv-ad-box" data-slotid="content_btf">Ad')

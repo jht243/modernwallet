@@ -82,11 +82,27 @@ class Store:
 
     def mutate(self, fn, artifacts=(), source_parent=None):
         blobs = {}
+        raw_items = {}
+        large_digests = set()
         for rel in artifacts:
             data = safe_path(self.root, rel).read_bytes()
-            if len(data) > 20_000_000 or has_sensitive_material(data):
+            digest = sha(data)
+            raw_items[rel] = (digest, data)
+            if (rel.startswith('reports/') and '/correction-sources/blobs/' in rel
+                    and Path(rel).name in {'guides-new.ts', 'comparisons-new.ts'}
+                    and Path(rel).parent.name == digest):
+                large_digests.add(digest)
+        for rel, (digest, data) in raw_items.items():
+            large_source = (
+                digest in large_digests
+                or (rel.startswith('reports/content-review-evidence/')
+                    and Path(rel).suffix == '.ts'
+                    and Path(rel).stem == digest)
+            )
+            limit = 90_000_000 if large_source else 20_000_000
+            if len(data) > limit or has_sensitive_material(data):
                 raise ControlError('Sensitive or oversized artifact refused')
-            blobs[rel] = (sha(data), data)
+            blobs[rel] = (digest, data)
         for _ in range(5):
             base, state = self.read()
             result = fn(state)

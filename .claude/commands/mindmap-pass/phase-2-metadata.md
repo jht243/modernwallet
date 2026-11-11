@@ -12,6 +12,14 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 # Phase 2 — Metadata fixes
 
+<!-- chart-obligation: p2-metadata-gates-and-dates -->
+> **The title and description answer the reader's question, not the topic.** Where the chart row
+> carries `reader_question` (cols 10–12, build-brief Step 4.6), the rewritten `metaTitle` and
+> `metaDescription` must promise THAT answer in the reader's own words — a "how do I…" row gets a
+> title that promises the method, a "how much" row promises the figure. Metadata rows touch ONLY head-level fields within discovered length limits, obey Gate 1 cooldown (`< 7` days hard defer; `7–21` days soft defer if `performing`; `>= 3` rewrites in 90d requires `>= 1,000` 30d GSC impressions), Gate 2 live GSC performance check (`performing` → defer), and Gate 3 top-impression query selection, and bump the rendered "Last updated" date + JSON-LD `dateModified` on every edited existing page.
+<!-- /chart-obligation -->
+
+
 <!-- workflow-checkpoints-v1 -->
 **Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Follow the sibling `_rendered-page-audit.md`: finish central source research before the preparation PASS; audit the complete rendered pages after all template/affiliate/link changes, block inherited contradictions affecting the answer, and verify exact reviewed output live with `rendered-audit.py` before closing deployment and measurement records. Install that contract and helper with the checkpoint dependencies. A read-only reviewer may write internal evidence receipts without editing content. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
 <!-- /workflow-checkpoints-v1 -->

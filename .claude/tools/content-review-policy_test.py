@@ -37,6 +37,61 @@ class RenderFixtures:
 fixtures=types.SimpleNamespace(Tests=RenderFixtures,HTML=HTML)
 
 
+class RecordedInstructionClarificationTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory(); self.addCleanup(self.tmp.cleanup)
+        self.root = Path(self.tmp.name)
+        self.rel = '.claude/commands/_remediation-ladder.md'
+        self.old = '# Existing remediation\n\nKeep every professional and source check.\n'
+        target = self.root / self.rel; target.parent.mkdir(parents=True)
+        target.write_text('# Existing remediation\n\n' + p.RELEASE_CLARIFICATION + 'Keep every professional and source check.\n')
+        self.manifest = {'files': {self.rel: p.sha(self.old.encode())}, 'actor': 'actual-auditor'}
+        self.layer = types.SimpleNamespace(historical_delivery=lambda root, directory: (self.manifest, {self.rel: self.old}))
+
+    def test_only_exact_append_preserves_actual_historical_application(self):
+        self.assertEqual(p.recorded_release_application(self.root, self.root / 'reports/manifest.json', self.layer), self.manifest)
+
+    def test_changed_professional_or_other_instruction_still_refused(self):
+        target = self.root / self.rel
+        target.write_text(target.read_text().replace('Keep every professional', 'Skip every professional'))
+        with self.assertRaisesRegex(ValueError, 'beyond the exact'):
+            p.recorded_release_application(self.root, self.root / 'reports/manifest.json', self.layer)
+        target.write_text(self.old + p.RELEASE_CLARIFICATION)
+        other = '.claude/commands/phase-4-audit.md'; (self.root / other).write_text('Changed review obligation')
+        self.manifest['files'][other] = p.sha(b'Original review obligation')
+        self.layer.historical_delivery = lambda root, directory: (self.manifest, {self.rel: self.old, other: 'Original review obligation'})
+        with self.assertRaisesRegex(ValueError, 'beyond the exact'):
+            p.recorded_release_application(self.root, self.root / 'reports/manifest.json', self.layer)
+
+    def test_new_review_never_uses_historical_release_exception(self):
+        path = self.root / 'reports/manifest.json'; path.parent.mkdir(); path.write_text('{}')
+        self.layer.policy_hash = lambda root: 'current-policy'
+        self.layer.evidence_ref = lambda root, ref: path
+        self.layer.validate = mock.Mock(side_effect=ValueError('Instructions changed'))
+        self.layer.historical_delivery = mock.Mock(side_effect=AssertionError('New review must not archive-fallback'))
+        report = {'workflowPolicySha256': 'current-policy', 'instructionApplications': [{}, {}]}
+        with self.assertRaisesRegex(ValueError, 'Instructions changed'):
+            p.verify_current_applications(self.root, {'manifest': {'author': 'writer'}}, 'auditor', report, self.layer)
+        self.layer.historical_delivery.assert_not_called()
+
+    def test_only_exact_paid_probe_scope_change_is_compatible(self):
+        old = 'Before\n## Step 0 — preflight ONCE per run\n' + p.WRITER_PROBE_OLD + '\nKeep source and professional checks.'
+        new = old.replace('## Step 0 — preflight ONCE per run', '## Check the writer once when a reviewed job is ready to write').replace(p.WRITER_PROBE_OLD, p.WRITER_PROBE_NEW)
+        rel = '.claude/commands/_content-generation.md'
+        self.assertTrue(p.release_only_instruction_change(rel, old, new))
+        self.assertFalse(p.release_only_instruction_change(rel, old, new.replace('Keep source', 'Skip source')))
+        self.assertFalse(p.release_only_instruction_change('.claude/commands/phase-4-audit.md', old, new))
+
+    def test_pending_source_repair_clarification_preserves_only_completed_reviews(self):
+        old = 'Keep professional checks and recorded verdicts.\n'
+        new = old + '\n' + p.PENDING_SOURCE_CLARIFICATION + '\n'
+        rel = '.claude/commands/_content-review-policy.md'
+        self.assertTrue(p.release_only_instruction_change(rel, old, new))
+        self.assertFalse(p.release_only_instruction_change(rel, old, new.replace('Keep professional', 'Skip professional')))
+        self.assertFalse(p.release_only_instruction_change(rel, old, new.replace('A recorded verdict cannot', 'A recorded verdict can')))
+        self.assertFalse(p.release_only_instruction_change(rel, new, new))
+
+
 class Tests(unittest.TestCase):
     def setUp(self):
         self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup)
@@ -81,6 +136,8 @@ class Tests(unittest.TestCase):
         fake=types.SimpleNamespace(validate=lambda root,directory:reading)
         with mock.patch.object(p.importlib.util,'spec_from_file_location',return_value=types.SimpleNamespace(loader=types.SimpleNamespace(exec_module=lambda module:None))),mock.patch.object(p.importlib.util,'module_from_spec',return_value=fake):
             p.audit_preflight_check(self.root,self.root/'reports/reading','fixture-job','independent','/guide')
+            reading['handoff'] = 'reports/handoff.json'
+            p.audit_preflight_check(self.root,self.root/'reports/reading','fixture-job','independent','/guide')
             for field,value in [('actor','writer'),('phase','build'),('contextId',None)]:
                 saved=reading[field];reading[field]=value
                 with self.assertRaises(ValueError):p.audit_preflight_check(self.root,self.root/'reports/reading','fixture-job','independent','/guide')
@@ -94,6 +151,16 @@ class Tests(unittest.TestCase):
             p.reserve(self.root,self.put('reports/current.json',self.snap),'/guide','fixture-job','independent',self.root/'reports/admission.json')
         self.assertFalse(any((self.root/'reports/content-review-journals').glob('*.jsonl')))
 
+    def test_third_audit_requires_substantive_medical_or_legal_claim_and_never_bot_scout(self):
+        config = {'thirdReviewClaimCategories': ['medical', 'legal']}
+        claim = {'quote': 'A substantive independently reviewed passage.', 'reason': 'The actual independent reviewer documented the specific material effect of this claim.'}
+        for category in ('medical','legal','safety-critical','financial','investment','security-critical'):
+            assessment = {'consequentialClaims': [{**claim,'category':category}]}
+            self.assertEqual(p.audit_limit(config,'high',assessment), 3 if category in ('medical','legal') else 2)
+            self.assertEqual(p.audit_limit({'thirdReviewClaimCategories':[]},'high',assessment),2)
+        self.assertEqual(p.audit_limit(config,'high',{'incidentalMentions':[dict(claim,category='medical')]}),2)
+        self.assertEqual(p.audit_limit(config,'light',assessment),1)
+
     def test_exact_one_two_three_shared_limits(self):
         for level,maximum in p.LIMITS.items():
             with self.subTest(level=level):
@@ -105,6 +172,63 @@ class Tests(unittest.TestCase):
                     value=p.record(self.root,path);self.assertEqual(value[0]['round'],n)
                 with self.assertRaisesRegex(ValueError,'budget exhausted'):self.reserve(level+'-extra')
                 with self.assertRaisesRegex(ValueError,'renaming'):self.reserve(level+'-renamed',job='new-name')
+
+    def test_layer3_release_at_limit_retains_fail_and_closes_only_exact_candidate(self):
+        self.exercise_release_at_limit('jht243/layer3labs','https://www.layer3labs.io')
+
+    def test_activated_other_fleet_site_releases_actual_factual_fail_at_limit(self):
+        self.config['canonicalHosts']=['example.com']
+        self.exercise_release_at_limit('synthetic-other-fleet-site','https://example.com')
+
+    def exercise_release_at_limit(self,site,base):
+        self.config.update(siteId=site,releaseAtAuditLimit=True)
+        self.set_level('standard')
+        self.snap['manifest']['canonicalBase']=base
+        for number in (1,2):
+            snap=self.snapshot('revision-'+str(number))
+            snap['manifest']['canonicalBase']=base
+            snap['snapshotSha256']=render.digest({k:v for k,v in snap.items() if k!='snapshotSha256'})
+            self.snap=snap
+            target=self.put('reports/cap-'+str(number)+'.json',snap)
+            admission=p.reserve(self.root,target,'/guide','fixture-job','independent',self.root/('reports/a'+str(number)+'.json'))
+            report=self.report(admission,'FAIL')
+            report['routes'][0]['checks']['sourceSupport']['status']='FAIL'
+            with self.assertRaises(ValueError):p.check_rendered(self.root,snap,report)
+            p.record(self.root,self.put('reports/result-'+str(number)+'.json',report))
+            if number==1:
+                with self.assertRaises(ValueError):p.check_rendered(self.root,snap,report)
+        self.assertTrue(p.check_rendered(self.root,snap,report))
+        with mock.patch.object(render,'__file__',str(self.root/'.claude/tools/rendered-audit.py')),mock.patch.object(render,'content_review_policy',return_value=p):
+            render.review_check(snap,report)
+        commit='1'*40
+        p.mark_published(self.root,snap,report,commit,{'commit':commit,'status':'live','verifiedAt':'2026-11-09','evidenceUrl':base+'/guide'})
+        with p.Journal(self.root,snap['manifest']['canonicalBase'],'/guide') as journal:
+            self.assertEqual(journal.cycle['status'],'published')
+            self.assertEqual([r['verdict'] for r in journal.cycle['rounds']],['FAIL','FAIL'])
+
+    def test_fleet_release_requires_opt_in_host_and_mindmap_scope(self):
+        self.config.update(releaseAtAuditLimit=True,canonicalHosts=['example.com']);self.put(p.CONFIG,self.config)
+        self.assertTrue(p.capped_release(self.root,self.snap))
+        wrong=copy.deepcopy(self.snap);wrong['manifest']['canonicalBase']='https://unrelated.example'
+        self.assertFalse(p.capped_release(self.root,wrong))
+        wrong['manifest']['canonicalBase']='https://example.com';wrong['manifest']['workflowKind']='client-delivery'
+        self.assertFalse(p.capped_release(self.root,wrong))
+        del self.config['canonicalHosts'];self.put(p.CONFIG,self.config)
+        self.assertFalse(p.capped_release(self.root,self.snap))
+
+    def test_capped_release_preserves_exclusions_and_testing_honesty(self):
+        admission=self.reserve(1);rr=self.report(admission)['routes'][0]
+        rr['checks']['scopeAndExclusions']['status']='FAIL'
+        with self.assertRaisesRegex(ValueError,'scopeAndExclusions'):p.pass_evidence(self.root,self.snap,rr,'standard',retain_fail=True)
+        rr['checks']['scopeAndExclusions']['status']='PASS'
+        rr['checks']['testingAndAttribution']['status']='FAIL'
+        with self.assertRaisesRegex(ValueError,'testingAndAttribution'):p.pass_evidence(self.root,self.snap,rr,'standard',retain_fail=True)
+
+    def test_capped_release_preserves_required_professional_approval(self):
+        self.set_level('high');admission=self.reserve(1);rr=self.report(admission)['routes'][0]
+        self.snap['manifest']['routes'][0]['professionalReviewRequired']=True
+        rr['factualReview']['professionalReview']['status']='FAIL'
+        with self.assertRaisesRegex(ValueError,'professionalReview'):p.pass_evidence(self.root,self.snap,rr,'high',retain_fail=True)
 
     def test_corrupt_pending_capture_reuses_the_same_slot_and_requires_actual_verdict(self):
         first=self.reserve(1);p.record(self.root,self.put('reports/r1.json',self.report(first)))
@@ -382,6 +506,203 @@ class Tests(unittest.TestCase):
             p.project(self.root,self.snapshot_path,path,['/other'],self.root/'reports/forged.json',self.root/'reports/forged-review.json')
         changed=copy.deepcopy(review);changed['routes'][0]['factualReview']['centralFacts']['evidence']='A different fabricated finding must never replace the real independent evidence.'
         with self.assertRaisesRegex(ValueError,'only retain exact'):p.check_rendered(self.root,projected,changed)
+
+
+class ReleaseGateTests(Tests):
+    """Authority snapshots, exact compositions, policy migration and record-time proof."""
+
+    def two_route_snapshot(self, guide_word):
+        s=self.snapshot(guide_word)
+        spec={'path':'/other','expectedUpdatedDate':'2026-10-27','claimCategories':['ordinary']}
+        s['manifest']['routes'].append(spec)
+        s['routes'].append(render.parse(fixtures.HTML.replace('/guide','/other'),spec,'http://localhost:3000','https://example.com'))
+        s['snapshotSha256']=render.digest({k:v for k,v in s.items() if k!='snapshotSha256'})
+        return s
+
+    def assess(self, page):
+        return self.assessment(page['semantic'])
+
+    def row(self, page, admission, verdict):
+        rr=fixtures.Tests().review(self.snap)['routes'][0]
+        rr.update(path=page['path'],fingerprint=page['fingerprint'],verdict=verdict,reviewProfile=self.config['defaultProfile'],
+                  riskAssessment=self.assess(page),reviewBudget=admission['admissionArtifact'])
+        rr['factualReview']={k:{'status':'PASS','evidence':'Synthetic fixture evidence exercising validation only; it is never a production review.'}
+                             for k in p.FACTS[rr['reviewProfile']]+['riskClassification','seoQuality']}
+        return rr
+
+    def report_for(self, snapshot, rows):
+        return {'reviewer':'independent','snapshotSha256':snapshot['snapshotSha256'],'routes':rows}
+
+    def recorded_pair(self):
+        """/guide FAIL + /other PASS on snapshot two, then /guide PASS alone on snapshot three."""
+        two=self.two_route_snapshot('old');path2=self.put('reports/s2.json',two)
+        a=p.reserve(self.root,path2,'/guide','fixture-job','independent',self.root/'reports/a-guide-1.json')
+        b=p.reserve(self.root,path2,'/other','fixture-job','independent',self.root/'reports/a-other-1.json')
+        r2=self.report_for(two,[self.row(two['routes'][0],a,'FAIL'),self.row(two['routes'][1],b,'PASS')])
+        r2path=self.put('reports/r2.json',r2);p.record(self.root,r2path)
+        three=self.two_route_snapshot('new');path3=self.put('reports/s3.json',three)
+        c=p.reserve(self.root,path3,'/guide','fixture-job','independent',self.root/'reports/a-guide-2.json')
+        self.snap=three
+        r3=self.report_for(three,[self.row(three['routes'][0],c,'PASS')])
+        r3path=self.put('reports/r3.json',r3);p.record(self.root,r3path)
+        return three,path3,r3path,two,path2,r2path
+
+    def composition(self, three_path, r3path, two_path, r2path, bindings=None):
+        groups=[{'snapshot':self.root/three_path.name if False else three_path,'review':r3path,'routes':['/guide']},
+                {'snapshot':two_path,'review':r2path,'routes':['/other']}]
+        return groups
+
+    # -- the actual validator integration defect -------------------------------------------------
+    def test_projection_survives_reserialised_key_order(self):
+        self.set_level('light');s=self.snapshot('Order fixture')
+        for page in s['routes']:
+            page['semantic']['meta']={'zulu':'Zulu statement for readers','alpha':'Alpha statement for readers'}
+            page['fingerprint']=render.digest(page['semantic'])
+        s['snapshotSha256']=render.digest({k:v for k,v in s.items() if k!='snapshotSha256'});self.snap=s
+        path=self.put('reports/order-snapshot.json',s)
+        admission=p.reserve(self.root,path,'/guide','fixture-job','independent',self.root/'reports/order-admission.json')
+        rr=self.row(s['routes'][0],admission,'PASS');report=self.report_for(s,[rr])
+        review_path=self.put('reports/order-review.json',report);p.record(self.root,review_path)
+        out_s=self.root/'reports/order-projected.json';out_r=self.root/'reports/order-projected-review.json'
+        p.project(self.root,path,review_path,['/guide'],out_s,out_r)
+        projected=p.read(out_s)
+        # Precondition for the historical bug: a canonical re-save sorts keys, so claim_text changes.
+        self.assertNotEqual(p.claim_text(s['routes'][0]['semantic']),p.claim_text(projected['routes'][0]['semantic']))
+        self.assertEqual(s['routes'][0]['semantic'],projected['routes'][0]['semantic'])
+        self.assertTrue(p.check_rendered(self.root,projected,p.read(out_r)))
+
+    # -- composition ---------------------------------------------------------------------------
+    def test_separately_recorded_passes_compose_into_one_exact_publication(self):
+        three,path3,r3path,two,path2,r2path=self.recorded_pair()
+        groups=[{'snapshot':path3,'review':r3path,'routes':['/guide']},{'snapshot':path2,'review':r2path,'routes':['/other']}]
+        out=self.root/'reports/composite-review.json'
+        result=p.compose(self.root,path3,groups,None,out);self.assertIn('no new audit',result['scope'])
+        composite=p.read(out)
+        self.assertEqual(composite['routes'],[p.read(r3path)['routes'][0],p.read(r2path)['routes'][1]])
+        self.assertTrue(p.check_rendered(self.root,three,composite))
+        before=p.digest(p.read(r2path))
+        host={'commit':'b'*40,'status':'live','verifiedAt':'2026-11-09T12:00:00+00:00','evidenceUrl':'https://example.com/synthetic-host'}
+        p.mark_published(self.root,three,composite,'b'*40,host)
+        for route in ['/guide','/other']:
+            with p.Journal(self.root,'https://example.com',route) as journal:self.assertEqual(journal.cycle['status'],'published')
+        self.assertEqual(before,p.digest(p.read(r2path)),'Recorded PASS digests must stay unchanged')
+        paths=p.sources(self.root,out)['paths']
+        self.assertIn('reports/r2.json',paths);self.assertIn('reports/r3.json',paths);self.assertIn('reports/s2.json',paths)
+
+    def test_composition_fails_closed_on_forged_or_unreviewed_pages(self):
+        three,path3,r3path,two,path2,r2path=self.recorded_pair()
+        good=[{'snapshot':path3,'review':r3path,'routes':['/guide']},{'snapshot':path2,'review':r2path,'routes':['/other']}]
+        out=lambda n:self.root/('reports/bad-'+n+'.json')
+        with self.assertRaisesRegex(ValueError,'recorded independent PASS'):   # /guide FAILed in report two
+            p.compose(self.root,path3,[{'snapshot':path2,'review':r2path,'routes':['/guide','/other']}],None,out('failed'))
+        changed=self.two_route_snapshot('new');spec=changed['manifest']['routes'][1]
+        changed['routes'][1]=render.parse(fixtures.HTML.replace('/guide','/other').replace('Useful','Altered after review'),spec,'http://localhost:3000','https://example.com')
+        changed['snapshotSha256']=render.digest({k:v for k,v in changed.items() if k!='snapshotSha256'})
+        changed_path=self.put('reports/changed-snapshot.json',changed)
+        with self.assertRaisesRegex(ValueError,'differs from the page'):       # /other was edited after its independent review
+            p.compose(self.root,changed_path,good,None,out('old'))
+        with self.assertRaisesRegex(ValueError,'cover every route'):
+            p.compose(self.root,path3,good[:1],None,out('partial'))
+        with self.assertRaisesRegex(ValueError,'cover every route|unknown or duplicated'):
+            p.compose(self.root,path3,good+[{'snapshot':path3,'review':r3path,'routes':['/guide']}],None,out('dup'))
+        forged=p.read(r2path);forged['reviewer']='someone-else';forged_path=self.put('reports/forged-reviewer.json',forged)
+        with self.assertRaisesRegex(ValueError,'one independent reviewer'):
+            p.compose(self.root,path3,[good[0],{'snapshot':path2,'review':forged_path,'routes':['/other']}],None,out('reviewer'))
+        composite=p.read(self.root/'reports/composite-ok.json') if False else None
+        p.compose(self.root,path3,good,None,out('ok'));composite=p.read(out('ok'))
+        changed=copy.deepcopy(composite);changed['routes'][1]['factualReview']['centralFacts']['evidence']='A fabricated replacement for the real independent evidence record.'
+        with self.assertRaisesRegex(ValueError,'exact recorded review row'):p.check_rendered(self.root,three,changed)
+        extra=copy.deepcopy(composite);extra['workflowPolicySha256']='0'*64
+        with self.assertRaisesRegex(ValueError,'only join exact'):p.check_rendered(self.root,three,extra)
+
+    # -- policy migration --------------------------------------------------------------------------
+    def test_listed_earlier_policy_hash_keeps_recorded_reviews_valid_but_never_new_ones(self):
+        admission=self.reserve(1);report=self.report(admission,'PASS');p.record(self.root,self.put('reports/old-policy-review.json',report))
+        old=p.policy_hash(self.root)
+        self.put(p.CONTRACT,'Synthetic fixture policy edited later; hash must change.')
+        with self.assertRaisesRegex(ValueError,'active review policy'):p.check_rendered(self.root,self.snap,report)
+        self.config['compatiblePolicies']=[{'sha256':old,'commit':'a'*40,'reason':'Synthetic fixture: policy edited after this review was admitted and recorded.'}]
+        self.put(p.CONFIG,self.config)
+        self.assertTrue(p.check_rendered(self.root,self.snap,report))
+        with self.assertRaisesRegex(ValueError,'Capture the current'):   # new reservations need the current hash
+            p.reserve(self.root,self.snapshot_path,'/guide','other-job','independent',self.root/'reports/never.json')
+        self.config['compatiblePolicies']=[{'sha256':'not-a-hash','commit':'a'*40,'reason':'x'}]
+        with self.assertRaisesRegex(ValueError,'Invalid compatible'):
+            self.put(p.CONFIG,self.config);p.policy(self.root)
+
+    # -- record cannot strand a partial report ---------------------------------------------------
+    def test_record_validates_every_page_before_appending_any(self):
+        two=self.two_route_snapshot('atomic');path=self.put('reports/atomic.json',two)
+        a=p.reserve(self.root,path,'/guide','fixture-job','independent',self.root/'reports/atomic-a.json')
+        b=p.reserve(self.root,path,'/other','fixture-job','independent',self.root/'reports/atomic-b.json')
+        self.snap=two
+        rows=[self.row(two['routes'][0],a,'PASS'),self.row(two['routes'][1],b,'PASS')]
+        rows[1]['factualReview']['centralFacts']['evidence']='short'
+        with self.assertRaisesRegex(ValueError,'Missing real factual-review evidence'):
+            p.record(self.root,self.put('reports/atomic-review.json',self.report_for(two,rows)))
+        for route in ['/guide','/other']:
+            with p.Journal(self.root,'https://example.com',route) as journal:
+                self.assertEqual([r['status'] for r in journal.cycle['rounds']],['pending'])
+        rows[1]=self.row(two['routes'][1],b,'PASS')
+        done=p.record(self.root,self.put('reports/atomic-review-fixed.json',self.report_for(two,rows)))
+        self.assertEqual([x['verdict'] for x in done],['PASS','PASS'])
+
+    # -- Layer3 release proof ------------------------------------------------------------------
+    def fake_layer(self, tamper=None):
+        def historical_delivery(root, directory):
+            manifest=p.read(directory/'manifest.json')
+            if tamper:manifest.update(tamper.get(directory.name,{}))
+            return manifest,{}
+        return types.SimpleNamespace(historical_delivery=historical_delivery,ROLES={'write':'writer','audit':'independent-reviewer'},
+                                     policy_hash=lambda _root:'p'*64,evidence_ref=lambda _root,ref:p.artifact(self.root,ref),
+                                     validate=lambda _root,directory:p.read(directory/'manifest.json'))
+
+    def bundles(self, job='fixture-job'):
+        self.put('reports/handoff.json',{'jobId':job})
+        evidence=p.reference(self.root,self.put('reports/bundle-evidence.json',{'fixture':True}))
+        common={'policySha256':'p'*64,'runId':'run-1','handoff':'reports/handoff.json','files':{evidence['path']:evidence['sha256']}}
+        writer=self.put('reports/bundle-writer/manifest.json',{**common,'phase':'write','role':'writer','actor':'writer'})
+        reviewer=self.put('reports/bundle-reviewer/manifest.json',{**common,'phase':'audit','role':'independent-reviewer','actor':'independent'})
+        return {'policyCommit':'c'*40,'workflowPolicySha256':'p'*64,'writer':p.reference(self.root,writer),'reviewer':p.reference(self.root,reviewer)}
+
+    def test_release_bindings_verify_actor_policy_job_and_sources_or_fail_closed(self):
+        bound=self.bundles()
+        with mock.patch.object(p,'historical_policy_hash',return_value='p'*64):
+            p.verify_release_bindings(self.root,self.snap,'independent',{'fixture-job'},bound,self.fake_layer())
+            with self.assertRaisesRegex(ValueError,'Missing writer/reviewer'):
+                p.verify_release_bindings(self.root,self.snap,'independent',{'fixture-job'},{},self.fake_layer())
+            with self.assertRaisesRegex(ValueError,'different canonical job'):
+                p.verify_release_bindings(self.root,self.snap,'independent',{'another-job'},bound,self.fake_layer())
+            with self.assertRaisesRegex(ValueError,'different actor or role'):
+                p.verify_release_bindings(self.root,self.snap,'someone-else',{'fixture-job'},bound,self.fake_layer())
+            with self.assertRaisesRegex(ValueError,'different workflow policy'):
+                p.verify_release_bindings(self.root,self.snap,'independent',{'fixture-job'},bound,
+                                          self.fake_layer({'bundle-writer':{'policySha256':'q'*64}}))
+            with self.assertRaisesRegex(ValueError,'different invocations'):
+                p.verify_release_bindings(self.root,self.snap,'independent',{'fixture-job'},bound,
+                                          self.fake_layer({'bundle-writer':{'runId':'run-2'}}))
+            (self.root/'reports/bundle-evidence.json').write_text('{"fixture": false}')
+            with self.assertRaisesRegex(ValueError,'Bundle evidence changed|changed or missing'):
+                p.verify_release_bindings(self.root,self.snap,'independent',{'fixture-job'},bound,self.fake_layer())
+        with mock.patch.object(p,'historical_policy_hash',return_value='z'*64):
+            with self.assertRaisesRegex(ValueError,'not the policy at its named commit'):
+                p.verify_release_bindings(self.root,self.snap,'independent',{'fixture-job'},self.bundles(),self.fake_layer())
+
+    def test_a_pass_without_release_proof_cannot_be_recorded_on_layer3(self):
+        admission=self.reserve(1);report=self.report(admission,'PASS')
+        layer=self.fake_layer()
+        with mock.patch.object(p,'local_module',return_value=layer):
+            with self.assertRaisesRegex(ValueError,'must bind current local review policy'):
+                p.record(self.root,self.put('reports/no-proof.json',report))
+            with p.Journal(self.root,'https://example.com','/guide') as journal:
+                self.assertEqual([r['status'] for r in journal.cycle['rounds']],['pending'])   # round not spent
+            report['releaseBindings']=self.bundles()
+            with mock.patch.object(p,'historical_policy_hash',return_value='p'*64):
+                self.assertEqual(p.record(self.root,self.put('reports/with-proof.json',report))[0]['verdict'],'PASS')
+
+
+for _name in [n for n in dir(Tests) if n.startswith('test_') and n not in ReleaseGateTests.__dict__]:
+    setattr(ReleaseGateTests,_name,None)   # inherited fixtures only; do not run the base tests twice
 
 
 if __name__=='__main__':unittest.main()

@@ -183,12 +183,13 @@ def save_checked_pair(root, snapshot_file, review_file, fresh=False):
     if not base:raise ValueError('Missing source base commit for the reviewed release')
     job_id = (job and job['run']) or snapshot['manifest'].get('jobId') or key_for_refs(refs)
     history = {}
+    invalid = set()
     report = json.loads(review_file.read_bytes())
     for row in report.get('routes', []):
         admission_ref = row.get('reviewBudget')
         if not admission_ref:
             continue
-        if not history:
+        if not history and not invalid:
             path = root/'.claude/tools/content-review-policy.py'
             spec = importlib.util.spec_from_file_location('release_review_policy', path)
             policy = importlib.util.module_from_spec(spec)
@@ -201,14 +202,15 @@ def save_checked_pair(root, snapshot_file, review_file, fresh=False):
         if not journal.path.is_file():
             raise ValueError('Missing original review journal for '+identity['route'])
         history.update(d.collect(root,journal))
-    return persist(root,store,d,refs,base,files,job,job_id,True,history)
+        invalid.update(d.invalidated(journal))
+    return persist(root,store,d,refs,base,files,job,job_id,True,history,invalid)
 
 
 def key_for_refs(refs):
     return hashlib.sha256(json.dumps(refs,sort_keys=True).encode()).hexdigest()
 
 
-def persist(root,store,d,refs,base,files,job,job_id,release,history=None):
+def persist(root,store,d,refs,base,files,job,job_id,release,history=None,invalid=None):
     key=d.sha(json.dumps([refs,base,files,job_id],sort_keys=True).encode())
     revision,state=store.read()
     indexes=state.get('verifiedReleasePairs',{})
@@ -216,7 +218,7 @@ def persist(root,store,d,refs,base,files,job,job_id,release,history=None):
         index=indexes[key]
     else:
         more={v['path']:v['sha256'] for v in files.values() if v}
-        paths={**(history or {}),**d.collect(root,None,{**refs,**more})}
+        paths={**(history or {}),**d.collect(root,None,{**refs,**more},invalid=invalid)}
         index_bytes=json.dumps({'roots':refs,'paths':paths,'baseCommit':base,'sourceFiles':files,'jobId':job_id,'searchSite':job['site'] if job else None},sort_keys=True).encode()
         index=d.sha(index_bytes)
         index_file=d.cache(root,'release-index.json',index,index_bytes)

@@ -1,4 +1,10 @@
 
+
+<!-- client-live-feedback-20261104 -->
+**Client-delivery exception — Jonathan, 2026-11-04:** For an actual canonical verified-paid client page/article/placement or already explicitly authorized publish-first invoice order, keep the normal independent review and maximum two targeted reworks; at that limit automatically publish the exact latest candidate and send its live links through the existing native delivery path for client feedback. Do not ask for another internal pass or reset/regenerate. Preserve FAIL findings/counters honestly as `client-review-release`, never fabricate PASS or client approval. Keep mechanical build/live/link/ownership/payment/scope checks, required professional review, testing honesty, exclusions, explicit customer prepublication promises, holds, original deadlines, native P9 floor/windows/caps and actual SENT receipts. Speculative upsells, test/unpaid inquiries and unrelated editorial work keep their existing stop. Read/install the shared `_client-delivery-review.md` contract when executing client publishing; this scoped rule supersedes older blanket stop/PASS-only language for qualifying client deliverables only.
+<!-- /client-live-feedback-20261104 -->
+
+
 <!-- fleet-author-defaults-v1 -->
 **Author defaults — owner instruction, 2026-10-29:** Apply `_content-standard.md`, “Existing site author by default; missing person never holds publication,” ahead of older generic named-reviewer rules. Reuse this site's established default/category author automatically. If no person exists, use the existing publisher/editorial identity or omit an optional personal byline; a person can be added later. Do not ask for an author/professional assignment, block preparation or publication, or fabricate credentials/review dates. The independent Phase 4 reviewer is an automatic agent; internal `author`/`reviewer` actor IDs remain distinct and are separate from the public byline. Keep source, safety/exclusion, rendered-page and live-verification checks.
 <!-- /fleet-author-defaults-v1 -->
@@ -9,7 +15,9 @@ This contract applies to every routine that creates or changes website content, 
 
 ## Prepare the answer before the approval chart
 
-Finish research needed for the proposed answer, setup instructions, pricing, product availability, comparisons and takeaway before marking preparation Passed. “Fetch/verify in Phase 3” is unfinished preparation when the source supports the proposed answer. Optional unsupported material must be explicitly excluded from the approved scope, not presented as planned content with a future verification condition. Missing paid metrics may retain the authorized labeled fallback. Keep one preparation summary row and every complete new-page brief.
+<!-- chart-obligation: rpa-prepare-answer-and-scope -->
+Finish research needed for the proposed answer, setup instructions, pricing, product availability, comparisons and takeaway before marking preparation Passed. “Fetch/verify in Phase 3” is unfinished preparation when the source supports the proposed answer. Optional unsupported material must be explicitly excluded from the approved scope, not presented as planned content with a future verification condition. Missing paid metrics may retain the authorized labeled fallback. Keep one preparation summary row and every complete new-page brief. Enumerate every changed route and all routes affected by shared template/affiliate/link/date changes; test consequential conclusions against plausible primary-source counterexamples (source silence is not proof of a universal negative); and verify inherited “Tested and reviewed by” / “tested guidance” labels have real permitted evidence or plan their removal/narrowing.
+<!-- /chart-obligation -->
 
 ## Define the actual affected scope
 

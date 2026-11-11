@@ -53,9 +53,16 @@ def restore(root,journal):
     else:cache(root,name,expected,raw);continue
    target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(raw)
  return {'module':module,'store':store,'expectedHead':head,'key':journal.key}
-def collect(root,journal,extra=None):
+def invalidated(journal):
+ if not journal or not journal.path.is_file():return set()
+ events=[json.loads(line) for line in journal.path.read_bytes().splitlines() if line.strip()]
+ last_begin=max((i for i,e in enumerate(events) if e.get('kind')=='begin'),default=0)
+ return {(ref['path'],ref['sha256']) for e in events[last_begin:] if e['kind']=='repair-pending' for ref in e['data'].get('invalidatedReferences',[])}
+def collect(root,journal,extra=None,invalid=None):
  paths={};seen=set();events=[json.loads(line) for line in journal.path.read_bytes().splitlines() if line.strip()] if journal else []
- invalid={(ref['path'],ref['sha256']) for e in events if e['kind']=='repair-pending' for ref in e['data'].get('invalidatedReferences',[])}
+ last_begin=max((i for i,e in enumerate(events) if e.get('kind')=='begin'),default=0)
+ active_events=events[last_begin:]
+ invalid=set(invalid or ())|invalidated(journal)
  def file(name,expected=None):
   target=(root/name).resolve()
   if root.resolve() not in target.parents or not str(target.relative_to(root)).startswith('reports/'):return
@@ -91,7 +98,7 @@ def collect(root,journal,extra=None):
    for child in value:visit(child)
  if journal:file(str(journal.path.relative_to(root)))
  for name,digest in (extra or {}).items():file(name,digest)
- for event in events:visit(event)
+ for event in active_events:visit(event)
  return paths
 
 def checkpoint(root,journal,context):
@@ -100,22 +107,23 @@ def checkpoint(root,journal,context):
  if expected and sha(journal.path.read_bytes())==expected:return  # restore already verified this exact archive
  paths=collect(root,journal);rel=str(journal.path.relative_to(root));head=paths[rel]
  def retain(state):
-  entries=state.setdefault('reviewJournals',{});current=entries.get(journal.key,{}).get('head')
+  entries=state.setdefault('reviewJournals',{});existing=entries.get(journal.key,{});current=existing.get('head')
   require(current in (expected,head),'Another worker advanced this canonical review; restore its actual history before retrying')
   state.setdefault('job',{'artifacts':{}})
   if state['job'] is None:state['job']={'artifacts':{}}
-  entries[journal.key]={'identity':journal.identity,'head':head,'artifacts':paths}
+  merged={**existing.get('artifacts',{}),**paths}
+  entries[journal.key]={'identity':journal.identity,'head':head,'artifacts':merged}
  context['store'].mutate(retain,list(paths))
  revision,remote=context['store'].read()
  saved=remote.get('reviewJournals',{}).get(journal.key,{})
- if saved.get('head') != head or saved.get('artifacts') != paths:
+ if saved.get('head') != head or not (paths.items() <= saved.get('artifacts',{}).items()):
   raise ValueError('Remote did not confirm the exact review journal and its evidence; resume the original slot')
  archive=Path(__file__).with_name('review-archive.py')
  if not archive.is_file() and os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID'):
   raise ValueError('Missing native review archive verifier')
  if archive.is_file():
   spec=importlib.util.spec_from_file_location('review_archive_check',archive);module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
-  module.verified_objects(root,revision,paths.values())
+  module.verified_objects(root,revision,saved['artifacts'].values())
  context['expectedHead']=head
 
 
