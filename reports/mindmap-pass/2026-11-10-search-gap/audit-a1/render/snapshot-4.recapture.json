@@ -1,6 +1,6 @@
 {
-  "capturedAt": "2026-11-10T16:22:57.354171+00:00",
-  "baseUrl": "http://127.0.0.1:48435",
+  "capturedAt": "2026-11-12T05:40:27.425385+00:00",
+  "baseUrl": "http://127.0.0.1:45235",
   "domDir": null,
   "manifest": {
     "author": "build-worker-1",
@@ -3141,22 +3141,22 @@
     }
   ],
   "previewProvenance": {
-    "runId": "8af59d4971184c32ade181bdf5b6b231",
-    "baseUrl": "http://127.0.0.1:48435",
+    "runId": "recapture-check",
+    "baseUrl": "http://127.0.0.1:45235",
     "framework": "astro",
     "buildId": "444d7a512a0ed1a62614d527484264bd92696eb8468d76a423fea1e7e6d8ffec",
     "sourceSha256": "3acfce08847a1b4e684b99370167b629cadb622f155d48d97061ff0b34ebd9d6",
-    "pid": 27940,
-    "processStart": "Tue Nov 10 16:21:02 2026"
+    "pid": 1825,
+    "processStart": "Thu Nov 12 05:40:25 2026"
   },
   "contentReviewPolicy": {
     "version": "risk-review-budget-2026-11-08.1",
-    "sha256": "433bc827af6dd4d6b7219394aa8dcacce623ade86af052b9a739e049abdc65dc"
+    "sha256": "727de984caa3bc99b3124dfadf1b1e1e073b2995c85ead165052d25a904f3cfc"
   },
   "correctionBoundary": {
     "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/render/snapshot-4.recapture/correction-boundary.json",
-    "sha256": "89a83611ce08f4e9938d66f26cb2aaa7d3d227b6ce380d06c294217309f52669",
+    "sha256": "4ebbe075aa19c1a93af3a27d5b0f54b84669d2f7df01b253c818b1531199bb27",
     "version": "targeted-corrections-2026-11-08.1"
   },
-  "snapshotSha256": "737e56ae890b79a97bf0ab61735e23e8d908976c66b57facd8d47431a3e58672"
+  "snapshotSha256": "64d57eaf02b90bfffd34b1ec4a916da24ff00852818fdbc016e4567adf2a5726"
 }
