@@ -276,4 +276,31 @@ class Ads(unittest.TestCase):
         patch.object(sys,'argv',['rendered-audit.py','check','--snapshot',str(snap_path),'--review',str(rev_path),'--recapture']):
     a.main()
     self.assertEqual(cap_local.call_count,1)
+ def test_valid_snapshot_resolves_repo_root_and_durable_evidence_cache(self):
+  import hashlib, os, tempfile
+  from pathlib import Path
+  from unittest.mock import patch
+  with tempfile.TemporaryDirectory() as td, tempfile.TemporaryDirectory() as other_cwd:
+   fake_root=Path(td);fake_tool=fake_root/'.claude/tools/rendered-audit.py'
+   fake_tool.parent.mkdir(parents=True);fake_tool.write_text('# stub')
+   html_bytes=self.core.replace('{ad}','').encode()
+   html_sha=hashlib.sha256(html_bytes).hexdigest()
+   rel_html='reports/mindmap-pass/snap/guide.html'
+   (fake_root/rel_html).parent.mkdir(parents=True);(fake_root/rel_html).write_bytes(html_bytes)
+   route_res=self.parse()
+   route_res['htmlFile']=rel_html;route_res['htmlSha256']=html_sha;route_res['textFile']=''
+   snap={'capturedAt':'2026-11-12T00:00:00Z','baseUrl':'https://example.com','manifest':{'canonicalBase':'https://example.com','author':'writer-1','routes':[self.route]},'routes':[route_res]}
+   snap['snapshotSha256']=a.digest(snap)
+   prev=os.getcwd()
+   try:
+    os.chdir(other_cwd)
+    with patch.object(a,'__file__',str(fake_tool)):
+     a.valid_snapshot(snap)
+     (fake_root/rel_html).write_bytes(b'overwritten by later round')
+     with self.assertRaisesRegex(ValueError,'Captured HTML changed'):a.valid_snapshot(snap)
+     ev=fake_root/'reports/content-review-evidence'/(html_sha+'.html')
+     ev.parent.mkdir(parents=True);ev.write_bytes(html_bytes)
+     a.valid_snapshot(snap)
+   finally:
+    os.chdir(prev)
 if __name__=='__main__': unittest.main()

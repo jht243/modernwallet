@@ -185,4 +185,44 @@ class Tests(unittest.TestCase):
   }}
   verified=h.record(self.root,outcomes);h.complete(self.root,verified)
   self.assertTrue(h.completed(self.root,self.path))
+ def test_pre_capped_release_held_fail_closes_via_held_audit_limit_without_blocking_siblings(self):
+  spec=importlib.util.spec_from_file_location('actual_policy_fixtures_held',here/'content-review-policy_test.py');pf=importlib.util.module_from_spec(spec);spec.loader.exec_module(pf)
+  fixture=pf.Tests();fixture.setUp();self.addCleanup(fixture.doCleanups)
+  fixture.config.update(releaseAtAuditLimit=False,canonicalHosts=['example.com']);fixture.put(pf.p.CONFIG,fixture.config)
+  job='competitor-'+self.path.stem[:12]
+  for number in (1,2):
+   admission=fixture.reserve(number,job=job)
+   report=fixture.report(admission,'FAIL')
+   report['routes'][0]['checks']={}
+   path=fixture.put('reports/pre-rollout-'+str(number)+'.json',report)
+   pf.p.record(fixture.root,path)
+  fixture.config['releaseAtAuditLimit']=True;fixture.put(pf.p.CONFIG,fixture.config)
+  with patch.object(h,'active',return_value=self.path),patch.object(h,'load',return_value=pf.p):
+   self.assertEqual(h.publication_gaps(fixture.root,self.path.stem),[])
+   self.assertEqual(h.historical_held_routes(fixture.root,self.path.stem),['/guide'])
+   result=h.publication_plan(fixture.root,fixture.root/'reports/publication/plan-held.json')
+   self.assertEqual(result['routes'],[])
+  plan=copy.deepcopy(self.fixture.plan)
+  plan['actions'][0]['target']='/guide'
+  plan['evidenceFiles'].append({'path':str(self.path.relative_to(self.root)),'sha256':self.path.stem})
+  plan.pop('request',None)
+  for action in plan['actions']:action.pop('presentation',None)
+  plan['candidateDispositions']=[
+   {'candidate':self.payload['candidates'][0]['url'],'decision':'create','target':'/guide','reason':'Synthetic historical held target recorded before capped release.'},
+   {'candidate':self.payload['candidates'][1]['url'],'decision':'skipped-news-event','reason':'Synthetic news-event skip disposition in competitor fixture.'},
+  ]
+  review={'jobId':job,'reviewer':'independent-chart-reviewer','manifestSha256':h.sha(h.canonical(plan)),'verdict':'PASS','findings':[],'resolvedFindingIds':[]}
+  h.after_chart(self.root,plan,review)
+  with self.assertRaisesRegex(ValueError,'genuine pre-capped-release'):
+   h.record(self.root,{'dispositions':{
+    self.payload['candidates'][0]['url']:{'disposition':'held-audit-limit'},
+    self.payload['candidates'][1]['url']:{'disposition':'skipped-news-event'},
+   }})
+  with patch.object(h,'historical_held_routes',return_value=['/guide']):
+   verified=h.record(self.root,{'dispositions':{
+    self.payload['candidates'][0]['url']:{'disposition':'held-audit-limit'},
+    self.payload['candidates'][1]['url']:{'disposition':'skipped-news-event'},
+   }})
+   h.complete(self.root,verified)
+   self.assertTrue(h.completed(self.root,self.path))
 if __name__=='__main__':unittest.main()

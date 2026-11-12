@@ -302,6 +302,27 @@ def attach_review_evidence(payload,folder):
             payload['correctionBoundary']=correction.boundary(root,folder/'correction-boundary.json',manifest)
 
 
+def _read_captured_blob(name, expected):
+    raw_path=Path(name)
+    root=Path(__file__).resolve().parents[2]
+    candidates=[raw_path] if raw_path.is_absolute() else [raw_path, root/raw_path]
+    if isinstance(expected,str) and len(expected)==64:
+        candidates.append(root/'reports/content-review-evidence'/(expected+raw_path.suffix))
+    seen=set()
+    for candidate in candidates:
+        resolved=candidate.resolve()
+        if resolved in seen or not candidate.is_file():
+            continue
+        seen.add(resolved)
+        data=candidate.read_bytes()
+        if hashlib.sha256(data).hexdigest()==expected:
+            return data
+    for candidate in candidates:
+        if candidate.is_file():
+            return candidate.read_bytes()
+    return (raw_path if raw_path.is_absolute() else root/raw_path).read_bytes()
+
+
 def valid_snapshot(s):
     unsigned={k:v for k,v in s.items() if k!='snapshotSha256'}
     require(digest(unsigned)==s['snapshotSha256'],'Snapshot evidence changed')
@@ -312,9 +333,9 @@ def valid_snapshot(s):
         require(not r['failures'],r['path']+': '+str(r['failures']))
         require(digest(r['semantic'])==r['fingerprint'],'Semantic fingerprint mismatch')
         if r.get('htmlFile'):
-            require(hashlib.sha256(Path(r['htmlFile']).read_bytes()).hexdigest()==r['htmlSha256'],'Captured HTML changed')
+            require(hashlib.sha256(_read_captured_blob(r['htmlFile'],r['htmlSha256'])).hexdigest()==r['htmlSha256'],'Captured HTML changed')
         if r.get('textFile'):
-            require(hashlib.sha256(Path(r['textFile']).read_bytes()).hexdigest()==r['textSha256'],'Captured readable text changed')
+            require(hashlib.sha256(_read_captured_blob(r['textFile'],r['textSha256'])).hexdigest()==r['textSha256'],'Captured readable text changed')
 
 def testing_attribution_check(semantic, checks):
     text = semantic.get('text', '')

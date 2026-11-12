@@ -60,11 +60,17 @@ def announce(root,path):
  print('AUTOMATED MINDMAP HANDOFF REQUIRED: '+str(path.relative_to(root))+' sha256='+path.stem)
  repairs=pending_reviews(root,path.stem)
  gaps=publication_gaps(root,path.stem)
+ held=historical_held_routes(root,path.stem)
+ unstarted=unstarted_chart_targets(root,path)
  if gaps and not repairs:
   print('RESUME ORIGINAL PUBLICATION PROOF, no discovery/chart/generation restart. Run competitor-handoff.py publication-plan --out NEW_INTERNAL_DIRECTORY/plan.json to select each actual LAST journal decision, never an earlier batch round. Capture/compare its exact live output and record-deployment. Use deployment-evidence.py --expected-commit FULL_PUBLICATION_SHA --out NEW_HOST_PROOF.json with a long Bash timeout: this reads actual build provenance without a Render key. No connector/key permission is needed. On substantive post-review drift, retain newer source bytes/diffs and restore only the exact affected reviewed route, preserving unrelated work and explicit holds. Never roll back a whole shared data file. Use only an original remaining audit slot where genuinely needed; no extra round or reset. An HTTP 200 is insufficient. '+json.dumps([{k:r[k] for k in ('route','status','remainingReviews')} for r in gaps]))
   eligible=[row['route'] for row in gaps if row['status']=='needs-fix' and row['remainingReviews']>0]
   if eligible:
    print('Complete these eligible original audit slots FIRST, before working on or reporting any held siblings: '+json.dumps(eligible)+'. MAIN must seal the current handoff and dispatch the real independent AUDIT worker on the latest source-backed candidate. A writer returning no edits is a terminal handback: send that candidate directly to AUDIT. Record the actual verdict even when a word-count or other editorial FAIL is expected. No padding, new generation credits, or owner waiver of an editorial finding is required to perform that audit. A different route reaching its ceiling or drifting is not a hold on these routes. Preserve any documented owner-approved corrections. Keep a real historical override distinct from exact reviewed publication.')
+  if held:
+   print('HISTORICAL HELD ROUTES (exhausted pre-capped-release FAILs): '+json.dumps(held)+'. Record their candidates with {"disposition":"held-audit-limit"} in --dispositions after completing eligible siblings; never regenerate or reset their spent counters.')
+  if unstarted:
+   print('ALSO COMPLETE UNSTARTED APPROVED CHART TARGETS before closing intake: '+json.dumps(unstarted)+'. After recording deployment for already-reviewed routes, finish production, independent audit, and live verification for these approved chart targets.')
   return
  if repairs:
   print('RESUME EXISTING PENDING AUDIT, even if the URL is already live or the old ledger says complete. Do not rewrite content, redo chart/discovery or reset any review counter. Restore immutable prior dependencies through the normal durable backend, capture to a new immutable output, use content-review-policy.py repair-pending only for an actually corrupt pending capture, and have a real independent reviewer complete this SAME numbered slot with its actual verdict. A reservation or unrecorded reading cannot release a changed page. First call content-review-durable.py restore for the exact canonical origin/route; keep the current content unchanged. For an overwritten capture, retain the actual auditor error report, capture the exact current page to a NEW output, call repair-pending once with the actual independent reviewer identity, then record that real reviewer result using the returned admission (not another reserve/round). Reuse the saved auditor where available. Complete exact live verification and retain the true repair/error history. '+json.dumps(repairs))
@@ -74,6 +80,10 @@ def announce(root,path):
   validate_chart(root,path,plan,review)
   print('RESUME APPROVED CHART '+str(path.with_suffix('.chart.json').relative_to(root))+'. Skip harvest, source/keyword discovery, BUILD and chart review. Preserve job, findings and counters.')
   print('Use each route’s actual recorded reviews, not an archived batch-level blocker. Already-published routes with native exact-live proof retain completion and are not rewritten. An unfinished draft without an independent audit must finish its original production/review; a truly exhausted route follows the current configured capped-release policy, preserving FAIL findings. Archived instructions to grant more reviews or rewrite completed siblings are not current authorization requirements.')
+  if held:
+   print('HISTORICAL HELD ROUTES (exhausted pre-capped-release FAILs): '+json.dumps(held)+'. Record their candidates with {"disposition":"held-audit-limit"} in --dispositions after completing any remaining approved siblings; never regenerate or reset their spent counters.')
+  if unstarted:
+   print('UNSTARTED APPROVED CHART TARGETS: '+json.dumps(unstarted)+'. Complete production, independent audit, and live verification for these approved chart targets before closing the intake.')
   continuation=recovery_path(root,path)
   if continuation.exists():
    hint=read(continuation)
@@ -97,7 +107,7 @@ def replace_pointer(path,value):
  os.replace(name,path)
 
 def _sync_durable_journal_files(root):
- """Materialize missing committed review journal .jsonl files from the durable ref in fresh checkouts."""
+ """Materialize committed review journals and open-cycle artifacts from the durable ref in fresh checkouts."""
  durable_path=root/'.claude/tools/content-review-durable.py'
  if not durable_path.is_file() or not (root/'.claude/tools/workflow-control-store.py').is_file():return
  try:
@@ -109,13 +119,31 @@ def _sync_durable_journal_files(root):
   site_id=read(root/'.claude/content-review-policy.json').get('siteId') if (root/'.claude/content-review-policy.json').is_file() else None
   for entry in state.get('reviewJournals',{}).values():
    if site_id and entry.get('identity',{}).get('siteId')!=site_id:continue
-   head=entry.get('head')
-   rel=next((p for p,h in entry.get('artifacts',{}).items() if h==head and p.startswith('reports/content-review-journals/') and p.endswith('.jsonl')),None)
+   head=entry.get('head');paths=entry.get('artifacts',{})
+   rel=next((p for p,h in paths.items() if h==head and p.startswith('reports/content-review-journals/') and p.endswith('.jsonl')),None)
    if not rel or not head:continue
-   target=inside(root,rel)
-   if target.is_file():continue
-   raw=m.git(root,'show',revision+':artifacts/'+head).stdout
-   if sha(raw)==head:target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(raw)
+   jtarget=inside(root,rel)
+   if not jtarget.is_file() or sha(jtarget.read_bytes())!=head:
+    raw=m.git(root,'show',revision+':artifacts/'+head).stdout
+    if sha(raw)==head:
+     if not jtarget.is_file():
+      jtarget.parent.mkdir(parents=True,exist_ok=True);jtarget.write_bytes(raw)
+     else:
+      current=jtarget.read_bytes()
+      if raw.startswith(current):jtarget.write_bytes(raw)
+   if not jtarget.is_file():continue
+   events=[json.loads(line) for line in jtarget.read_bytes().splitlines() if line.strip()]
+   begin_idx=max((i for i,e in enumerate(events) if e.get('kind')=='begin'),default=-1)
+   if begin_idx<0 or any(e.get('kind')=='published' for e in events[begin_idx:]):continue
+   for name,expected in paths.items():
+    if name==rel:continue
+    target=(root/name).resolve()
+    if root.resolve() not in target.parents or not name.startswith('reports/'):continue
+    if target.is_file() and sha(target.read_bytes())==expected:continue
+    raw=m.git(root,'show',revision+':artifacts/'+expected).stdout
+    if sha(raw)!=expected:continue
+    if target.exists():durable.cache(root,name,expected,raw)
+    else:target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(raw)
  except Exception:
   return
 
@@ -140,27 +168,72 @@ def pending_reviews(root,digest=None):
      result.append({'route':identity['route'],'jobId':job,'round':journal.cycle['rounds'][-1]['number'],'admission':journal.cycle['rounds'][-1]['admission']})
  return result
 
-def publication_gaps(root,digest=None):
- """Real reviewed routes still lack the native exact-live deployment receipt."""
+def _is_historical_held_fail(root,policy,row):
+ """True only for exhausted pre-capped-release FAIL cycles recorded without capped-release pass_evidence."""
+ if row.get('status')!='needs-fix' or row.get('remainingReviews',1)!=0:return False
+ if not row.get('admission') or not row.get('report'):return False
+ try:
+  admission=read(policy.artifact(root,row['admission']))
+  snapshot=read(policy.artifact(root,admission['snapshot']))
+  review=read(policy.artifact(root,row['report']))
+  rr=next((r for r in review.get('routes',[]) if r.get('path','').rstrip('/')==row['route'].rstrip('/')),None)
+  if rr is None or rr.get('verdict')!='FAIL':return False
+  if not policy.capped_release(root,snapshot):return True
+  selected=policy.decision(root,snapshot,review,rr)
+  policy.pass_evidence(root,snapshot,rr,selected,policy.local_module(root,snapshot),retain_fail=True)
+  return False
+ except ValueError:
+  return True
+
+def _raw_cycle_rows(root,digest=None):
  if not (root/'.claude/content-review-policy.json').is_file():return []
  _sync_durable_journal_files(root)
- result=[]
+ policy=None;rows_out=[]
  for path in (root/'reports/content-review-journals').glob('*.jsonl'):
   events=[json.loads(line) for line in path.read_bytes().splitlines() if line.strip()]
   if not events:continue
-  begin=next((e for e in reversed(events) if e['kind']=='begin'),None)
-  if not begin:continue
-  job=begin['data'].get('jobId','')
+  index=max((i for i,e in enumerate(events) if e['kind']=='begin'),default=-1)
+  if index<0:continue
+  job=events[index]['data'].get('jobId','')
   if not isinstance(job,str) or (digest is not None and digest[:12] not in job):continue
-  if digest is None:
-   index=events.index(begin)
-   if not any(e['kind']=='published' for e in events[index:]):result.append({'jobId':job})
-   continue
-  policy=load('publication_native_review_policy',root/'.claude/tools/content-review-policy.py');identity=events[0]['identity']
+  if any(e['kind']=='published' for e in events[index:]):continue
+  if policy is None:policy=load('publication_native_review_policy',root/'.claude/tools/content-review-policy.py')
+  identity=events[0]['identity']
   with policy.Journal(root,identity['canonicalBase'],identity['route']) as journal:
    if journal.cycle and journal.cycle['status']!='published':
     rounds=journal.cycle['rounds'];last=policy.last_authoritative_round(journal.cycle)
-    result.append({'route':identity['route'],'jobId':job,'status':journal.cycle['status'],'round':last.get('number'),'report':last.get('report'),'admission':last.get('admission'),'remainingReviews':max(0,journal.cycle.get('maximumRounds', policy.audit_limit(policy.policy(root), journal.cycle['profile']))-len(rounds))})
+    row={'route':identity['route'],'jobId':job,'status':journal.cycle['status'],'round':last.get('number'),'report':last.get('report'),'admission':last.get('admission'),'remainingReviews':max(0,journal.cycle.get('maximumRounds',policy.audit_limit(policy.policy(root),journal.cycle['profile']))-len(rounds))}
+    rows_out.append((policy,row))
+ return rows_out
+
+def historical_held_routes(root,digest):
+ return sorted(row['route'] for policy,row in _raw_cycle_rows(root,digest) if _is_historical_held_fail(root,policy,row))
+
+def unstarted_chart_targets(root,path):
+ if not (root/'.claude/content-review-policy.json').is_file() or not path.with_suffix('.chart.json').is_file():return []
+ try:
+  plan=json.loads(chart_value(root,path)['planText'])
+ except Exception:
+  return []
+ targets=[r.get('target') for r in plan.get('actions',[]) if r.get('bucket') in {'create new content','update existing body text'} and isinstance(r.get('target'),str)]
+ if not targets:return []
+ _sync_durable_journal_files(root)
+ seen=set()
+ for jpath in (root/'reports/content-review-journals').glob('*.jsonl'):
+  events=[json.loads(line) for line in jpath.read_bytes().splitlines() if line.strip()]
+  if not events:continue
+  route=events[0].get('identity',{}).get('route','')
+  for e in events:
+   if e.get('kind')=='begin' and path.stem[:12] in str(e.get('data',{}).get('jobId','')):
+    seen.add(route.rstrip('/') or '/')
+ return [t for t in targets if (t.rstrip('/') or '/') not in seen]
+
+def publication_gaps(root,digest=None):
+ """Real reviewed routes still lack the native exact-live deployment receipt."""
+ result=[]
+ for policy,row in _raw_cycle_rows(root,digest):
+  if _is_historical_held_fail(root,policy,row):continue
+  result.append({'jobId':row['jobId']} if digest is None else row)
  return result
 
 
@@ -409,12 +482,16 @@ def record(root,dispositions):
  require(set(outcomes)==expected,'Record every selected candidate. Do not silently leave an owned gap pending or consume cap-deferred candidates')
  decisions={r['candidate']:r for r in proof['plan']['candidateDispositions']};actions=proof['plan']['actions']
  for url,result in outcomes.items():
-  status=result.get('disposition');require(status in ('published','enriched','skipped-duplicate','skipped-low-value','fetch-failed'),'Use actual terminal native dispositions, never arbitrary pending/success labels')
+  status=result.get('disposition');require(status in ('published','enriched','held-audit-limit','skipped-duplicate','skipped-low-value','skipped-off-niche','skipped-news-event','fetch-failed'),'Use actual terminal native dispositions, never arbitrary pending/success labels')
   decision=decisions[url]
   if status in ('published','enriched'):
    target=decision.get('target');require(target and any(r.get('target')==target for r in actions),'Production must match the independently approved action')
    require(result.get('our_url','').rstrip('/').endswith(target.rstrip('/')),'Record the actual approved canonical destination')
-  else:require(decision['decision'].lower() in ('drop','dropped','skip','skipped','duplicate','skipped-duplicate','skipped-low-value','already-covered','no-addition'),'A dropped outcome must have an independent chart disposition')
+  elif status=='held-audit-limit':
+   target=decision.get('target');require(target and any(r.get('target')==target for r in actions),'Held audit-limit outcome must match an independently approved action')
+   held_routes={r.rstrip('/') or '/' for r in historical_held_routes(root,path.stem)}
+   require((target.rstrip('/') or '/') in held_routes,'held-audit-limit requires a genuine pre-capped-release exhausted FAIL cycle for that target')
+  else:require(decision['decision'].lower() in ('drop','dropped','skip','skipped','duplicate','skipped-duplicate','skipped-low-value','skipped-off-niche','skipped-news-event','off-niche','news-event','already-covered','no-addition'),'A dropped outcome must have an independent chart disposition')
  return path,proof
 
 def complete(root,verified):
