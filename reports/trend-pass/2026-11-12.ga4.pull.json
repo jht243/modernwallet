@@ -1,0 +1,124 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-11-11",
+  "window_start": "2026-11-11",
+  "window_end": "2026-11-11",
+  "window_days": 1,
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 52,
+      "sessions": 54,
+      "active_users": 48,
+      "clicks": 52
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 29,
+      "sessions": 35,
+      "active_users": 29,
+      "clicks": 29
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 16,
+      "sessions": 17,
+      "active_users": 14,
+      "clicks": 16
+    },
+    {
+      "page": "/guides/tax-deductions-checklist/",
+      "views": 15,
+      "sessions": 15,
+      "active_users": 14,
+      "clicks": 15
+    },
+    {
+      "page": "/sponsor",
+      "views": 15,
+      "sessions": 15,
+      "active_users": 15,
+      "clicks": 15
+    },
+    {
+      "page": "/investing/high-yield-savings-calculator/",
+      "views": 13,
+      "sessions": 12,
+      "active_users": 9,
+      "clicks": 13
+    },
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 11,
+      "sessions": 12,
+      "active_users": 11,
+      "clicks": 11
+    },
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 10,
+      "sessions": 10,
+      "active_users": 10,
+      "clicks": 10
+    },
+    {
+      "page": "/compare/checking-vs-savings-account/",
+      "views": 9,
+      "sessions": 3,
+      "active_users": 3,
+      "clicks": 9
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 9,
+      "sessions": 9,
+      "active_users": 9,
+      "clicks": 9
+    }
+  ],
+  "top10_pages_total_views": 179,
+  "top10_pages_total_clicks": 179,
+  "channel_split": {
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 53,
+      "Unassigned": 3,
+      "Direct": 1
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 34,
+      "Unassigned": 2,
+      "Direct": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 15,
+      "Direct": 2,
+      "Unassigned": 2
+    },
+    "/guides/tax-deductions-checklist/": {
+      "Organic Search": 15,
+      "Unassigned": 1
+    },
+    "/sponsor": {
+      "Direct": 15
+    },
+    "/guides/trump-account-worth-it/": {
+      "Organic Search": 11,
+      "Unassigned": 1
+    },
+    "/investing/high-yield-savings-calculator/": {
+      "Organic Search": 11,
+      "Direct": 1
+    },
+    "/social-security-cola-calculator/": {
+      "Organic Search": 10
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 7,
+      "Direct": 2
+    },
+    "/compare/checking-vs-savings-account/": {
+      "Direct": 3
+    }
+  }
+}

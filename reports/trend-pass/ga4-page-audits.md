@@ -335,3 +335,9 @@
 | /investing/high-yield-savings-calculator/ | 2026-11-10 | 10 | 0/0/0/0/0 | 0 |
 | /guides/trump-account-worth-it/ | 2026-11-10 | 9 | 0/0/0/0/0 | 0 |
 | / | 2026-11-10 | 13 | 0/0/0/0/0 | 0 |
+| /mileage-deduction/irs-mileage-rate-2026/ | 2026-11-12 | 52 | 0/0/0/0/0 | 0 |
+| /guides/inherited-ira-taxes-explained/ | 2026-11-12 | 29 | 0/0/0/0/0 | 1 |
+| /guides/is-social-security-taxable/ | 2026-11-12 | 16 | 0/0/0/0/0 | 0 |
+| /sponsor | 2026-11-12 | 15 | 0/0/0/0/0 | 0 |
+| /guides/how-to-open-a-trump-account/ | 2026-11-12 | 9 | 0/0/0/0/0 | 0 |
+| /compare/checking-vs-savings-account/ | 2026-11-12 | 9 | 0/0/0/0/0 | 0 |
