@@ -27,6 +27,7 @@
       "reports/content-review-evidence/5f3d043b11357c8b0fbfc88a162bd981caaecbbd0725df8b20226120a97d9098.html": "5f3d043b11357c8b0fbfc88a162bd981caaecbbd0725df8b20226120a97d9098",
       "reports/content-review-evidence/61d086974463ae3637ac036e23b58cc0e5cba4224e72c3c7472d51276af9d9dd.json": "61d086974463ae3637ac036e23b58cc0e5cba4224e72c3c7472d51276af9d9dd",
       "reports/content-review-evidence/65769727cf30aba5d3ac1af80249fda665dfdb1518b4f86bc6012a33955ec8f0.jsonl": "65769727cf30aba5d3ac1af80249fda665dfdb1518b4f86bc6012a33955ec8f0",
+      "reports/content-review-evidence/6c61b2b604f3820598c772560a33d8bd5edb7dbfbc890fcf3e9bd0b12cfdd17f.jsonl": "6c61b2b604f3820598c772560a33d8bd5edb7dbfbc890fcf3e9bd0b12cfdd17f",
       "reports/content-review-evidence/70e6180b0acaae6acbcf9aa2de46da573cb547c9a4c5f1d8e9ba4f98acf8a932.txt": "70e6180b0acaae6acbcf9aa2de46da573cb547c9a4c5f1d8e9ba4f98acf8a932",
       "reports/content-review-evidence/834b268de71ef21849910c07d2da04c2a52211cbfa02b77400a2445eee3204e6.txt": "834b268de71ef21849910c07d2da04c2a52211cbfa02b77400a2445eee3204e6",
       "reports/content-review-evidence/8632c5b25b90f4b01396bc42966718d263a881c64d05b39444fd1cb8f50f70ad.json": "8632c5b25b90f4b01396bc42966718d263a881c64d05b39444fd1cb8f50f70ad",
@@ -48,6 +49,7 @@
       "reports/content-review-evidence/d1ba26f07b1ea3ba1b5a5619eb42ae7b1d1bb301e1391112211dc98d0e760dd0.json": "d1ba26f07b1ea3ba1b5a5619eb42ae7b1d1bb301e1391112211dc98d0e760dd0",
       "reports/content-review-evidence/de58509cd2cca18d2f7bceef630d4cadf5251a881ec108e1f6f447e19511099d.json": "de58509cd2cca18d2f7bceef630d4cadf5251a881ec108e1f6f447e19511099d",
       "reports/content-review-evidence/df16f05a78ccb20e0a3d8881534bc172b4ef6852fa6bbe87b29bc67977556282.json": "df16f05a78ccb20e0a3d8881534bc172b4ef6852fa6bbe87b29bc67977556282",
+      "reports/content-review-evidence/df26ea264ef432baca6010cde791e834acb87ed530fb5767294d8f8a9189f537.json": "df26ea264ef432baca6010cde791e834acb87ed530fb5767294d8f8a9189f537",
       "reports/content-review-evidence/dfd2b38625309dd7a25b698abb6f5b28f22bab0e260ad5c5802ed691ae0ce567.json": "dfd2b38625309dd7a25b698abb6f5b28f22bab0e260ad5c5802ed691ae0ce567",
       "reports/content-review-evidence/e161eb27f5d1e0d410e4b3cf3c48d2443c0eadd9d804a30ea27219c776425e41.ts": "e161eb27f5d1e0d410e4b3cf3c48d2443c0eadd9d804a30ea27219c776425e41",
       "reports/content-review-evidence/e5f64f1d552bc1ada273349cba688f7dc0f02d343d7613b5e101857eec83d41f.json": "e5f64f1d552bc1ada273349cba688f7dc0f02d343d7613b5e101857eec83d41f",
@@ -60,6 +62,7 @@
       "reports/content-review-journals/67fdff5861e31c3db07910b2641c23ddfb19f9cc32e415ebd09b203b3944da3a.jsonl": "f63ba38a75bf5e75618d1c6ef2fd575371500437ffd43df2a14bfdf6d3a5f53d",
       "reports/content-review-journals/7dd8503f734a786dae42833003981b9c2f628838c00601f949f14fd1de214872.jsonl": "1e079794d582db7e6eef4c13edeff732f03a0ace995a3943b835b5ec66fe662d",
       "reports/content-review-journals/a28c5693f72aae96613f503c89fe680abd9f1bbf47b667c73ed7f583057807c6.jsonl": "74dc8ccf51c5c5f858c9fa2c77eed803513cf2dfb0d602b5010989eb43bd1916",
+      "reports/content-review-journals/a387d5b783e1eb8c5ef0d2befca5d79c2e9c19f20f7cbc79a77f861f7f8d507c.jsonl": "6c61b2b604f3820598c772560a33d8bd5edb7dbfbc890fcf3e9bd0b12cfdd17f",
       "reports/content-review-journals/blobs/2c992f1295fb40e3f01d0c4bce09d2b82a005c6ae418ca61c496632953ae67f1/rendered-review-3.json": "2c992f1295fb40e3f01d0c4bce09d2b82a005c6ae418ca61c496632953ae67f1",
       "reports/content-review-journals/blobs/2e68707c0d66a6226e715b3420797a77e6753c90a3404653d75a05c8eb10ecbd/phase4-round1-review.json": "2e68707c0d66a6226e715b3420797a77e6753c90a3404653d75a05c8eb10ecbd",
       "reports/content-review-journals/blobs/61d086974463ae3637ac036e23b58cc0e5cba4224e72c3c7472d51276af9d9dd/rendered-review-2.json": "61d086974463ae3637ac036e23b58cc0e5cba4224e72c3c7472d51276af9d9dd",
@@ -193,6 +196,7 @@
       "reports/mindmap-pass/2026-11-10-search-gap/research/live-simple-ira-vs-401k.html": "f51366ce147ec1ab2f9e9c6e20726550e7dc9a593a816dc03602eac1b6e096de",
       "reports/mindmap-pass/2026-11-10-search-gap/research/notice-2025-67.pdf": "1eea8f141b0cddd182f9f09b3bc8ffad683d27ceb806dfc6da126811dc0a1f8d",
       "reports/mindmap-pass/2026-11-12-xtrends-run/audit/admissions/admission-1.json": "cf8f4b2f7900288b82bec9580870ab16a366b3e762988e4318063f5890947425",
+      "reports/mindmap-pass/2026-11-12-xtrends-run/audit/admissions/admission-2.json": "df26ea264ef432baca6010cde791e834acb87ed530fb5767294d8f8a9189f537",
       "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot-v2.json": "8632c5b25b90f4b01396bc42966718d263a881c64d05b39444fd1cb8f50f70ad",
       "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot-v2/5dd19a02230e4a15c07c.html": "527f73fb53b8104b52eebd8ff72b64f28b0db5e6ac594d0f36eba27f1da3fa4a",
       "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot-v2/5dd19a02230e4a15c07c.txt": "834b268de71ef21849910c07d2da04c2a52211cbfa02b77400a2445eee3204e6",
@@ -538,6 +542,36 @@
       "identity": {
         "canonicalBase": "https://themodernwallet.com",
         "route": "/guides/what-is-a-registered-investment-advisor",
+        "siteId": "jht243/modernwallet"
+      }
+    },
+    "a387d5b783e1eb8c5ef0d2befca5d79c2e9c19f20f7cbc79a77f861f7f8d507c": {
+      "artifacts": {
+        "reports/content-review-evidence/492214a30032bf72e5f2c28d438270490351c65461eace16a96fd2e521c909d7.txt": "492214a30032bf72e5f2c28d438270490351c65461eace16a96fd2e521c909d7",
+        "reports/content-review-evidence/4f50d509bfd35f5e39d4de4d8b23199dab78064a7c47c9db32637b605352a93d.ts": "4f50d509bfd35f5e39d4de4d8b23199dab78064a7c47c9db32637b605352a93d",
+        "reports/content-review-evidence/527f73fb53b8104b52eebd8ff72b64f28b0db5e6ac594d0f36eba27f1da3fa4a.html": "527f73fb53b8104b52eebd8ff72b64f28b0db5e6ac594d0f36eba27f1da3fa4a",
+        "reports/content-review-evidence/5f3d043b11357c8b0fbfc88a162bd981caaecbbd0725df8b20226120a97d9098.html": "5f3d043b11357c8b0fbfc88a162bd981caaecbbd0725df8b20226120a97d9098",
+        "reports/content-review-evidence/6c61b2b604f3820598c772560a33d8bd5edb7dbfbc890fcf3e9bd0b12cfdd17f.jsonl": "6c61b2b604f3820598c772560a33d8bd5edb7dbfbc890fcf3e9bd0b12cfdd17f",
+        "reports/content-review-evidence/834b268de71ef21849910c07d2da04c2a52211cbfa02b77400a2445eee3204e6.txt": "834b268de71ef21849910c07d2da04c2a52211cbfa02b77400a2445eee3204e6",
+        "reports/content-review-evidence/8632c5b25b90f4b01396bc42966718d263a881c64d05b39444fd1cb8f50f70ad.json": "8632c5b25b90f4b01396bc42966718d263a881c64d05b39444fd1cb8f50f70ad",
+        "reports/content-review-evidence/a88d6741a83ea3072da59371b961eb6c648e60eaeb001d794509e144a5de26ce.json": "a88d6741a83ea3072da59371b961eb6c648e60eaeb001d794509e144a5de26ce",
+        "reports/content-review-evidence/df16f05a78ccb20e0a3d8881534bc172b4ef6852fa6bbe87b29bc67977556282.json": "df16f05a78ccb20e0a3d8881534bc172b4ef6852fa6bbe87b29bc67977556282",
+        "reports/content-review-evidence/df26ea264ef432baca6010cde791e834acb87ed530fb5767294d8f8a9189f537.json": "df26ea264ef432baca6010cde791e834acb87ed530fb5767294d8f8a9189f537",
+        "reports/content-review-journals/a387d5b783e1eb8c5ef0d2befca5d79c2e9c19f20f7cbc79a77f861f7f8d507c.jsonl": "6c61b2b604f3820598c772560a33d8bd5edb7dbfbc890fcf3e9bd0b12cfdd17f",
+        "reports/mindmap-pass/2026-11-12-xtrends-run/audit/admissions/admission-2.json": "df26ea264ef432baca6010cde791e834acb87ed530fb5767294d8f8a9189f537",
+        "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot-v2.json": "8632c5b25b90f4b01396bc42966718d263a881c64d05b39444fd1cb8f50f70ad",
+        "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot-v2/5dd19a02230e4a15c07c.html": "527f73fb53b8104b52eebd8ff72b64f28b0db5e6ac594d0f36eba27f1da3fa4a",
+        "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot-v2/5dd19a02230e4a15c07c.txt": "834b268de71ef21849910c07d2da04c2a52211cbfa02b77400a2445eee3204e6",
+        "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot-v2/correction-boundary.json": "a88d6741a83ea3072da59371b961eb6c648e60eaeb001d794509e144a5de26ce",
+        "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot-v2/correction-sources/blobs/4f50d509bfd35f5e39d4de4d8b23199dab78064a7c47c9db32637b605352a93d/guides.ts": "4f50d509bfd35f5e39d4de4d8b23199dab78064a7c47c9db32637b605352a93d",
+        "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot-v2/correction-sources/blobs/df16f05a78ccb20e0a3d8881534bc172b4ef6852fa6bbe87b29bc67977556282/search-index.json": "df16f05a78ccb20e0a3d8881534bc172b4ef6852fa6bbe87b29bc67977556282",
+        "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot-v2/d19dea4d18a321bd06c5.html": "5f3d043b11357c8b0fbfc88a162bd981caaecbbd0725df8b20226120a97d9098",
+        "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot-v2/d19dea4d18a321bd06c5.txt": "492214a30032bf72e5f2c28d438270490351c65461eace16a96fd2e521c909d7"
+      },
+      "head": "6c61b2b604f3820598c772560a33d8bd5edb7dbfbc890fcf3e9bd0b12cfdd17f",
+      "identity": {
+        "canonicalBase": "https://themodernwallet.com",
+        "route": "/guides/medicare-part-d-2027-premiums",
         "siteId": "jht243/modernwallet"
       }
     },
