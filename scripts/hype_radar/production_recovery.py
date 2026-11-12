@@ -9,11 +9,29 @@ def publication_targets(plan):
     return sorted({action['target'].rstrip('/') or '/' for action in plan.get('actions',[]) if action.get('bucket') != 'consolidation advisory'})
 
 
+def _restore_durable_routes(root, policy, routes):
+    durable_path = root / '.claude/tools/content-review-durable.py'
+    if not durable_path.is_file() or not (root / '.claude/tools/workflow-control-store.py').is_file():
+        return
+    try:
+        hosts = policy.policy(root).get('canonicalHosts') or []
+        if not hosts:
+            return
+        spec = importlib.util.spec_from_file_location('hype_durable_restore', durable_path)
+        durable = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(durable)
+        for route in list(routes):
+            durable.restore(root, policy.Journal(root, 'https://' + hosts[0], route))
+    except Exception:
+        return
+
+
 def outstanding(root, proof):
     routes=set(proof.get('productionTargets',[]))
     if not routes:return []
     spec=importlib.util.spec_from_file_location('hype_review_history',root/'.claude/tools/content-review-policy.py')
     policy=importlib.util.module_from_spec(spec);spec.loader.exec_module(policy)
+    _restore_durable_routes(root, policy, routes)
     for path in (root/'reports/content-review-journals').glob('*.jsonl'):
         with path.open() as stream:first=stream.readline()
         if not first.strip():continue

@@ -108,6 +108,25 @@ class Tests(unittest.TestCase):
   with self.assertRaisesRegex(ValueError,'Visible updated'): a.valid_snapshot(s)
  def test_readable_date_variants_and_review_date(self):
   s=self.snapshot(HTML.replace('Updated Oct 27, 2026','Updated on October 27 2026 Last reviewed September 9, 2026')); a.valid_snapshot(s)
+ def shaving_school_date_failures(self,label='Last reviewed November 11, 2026',modified='2026-11-11'):
+  # Exact ordinary-publication Hero structure, with its date also in Article JSON-LD.
+  hero='<p class="meta">By <a href="/about/">Shaving School</a> · '+label+' · 6 min read</p>'
+  html=HTML.replace('<p>Updated Oct 27, 2026</p>',hero).replace('"dateModified":"2026-10-27"','"dateModified":"'+modified+'"')
+  return a.parse(html,{'path':'/guide','expectedUpdatedDate':'2026-11-11'},'https://example.com','https://example.com')['failures']
+ def test_shaving_school_last_reviewed_hero_matches_schema(self):
+  self.assertEqual(self.shaving_school_date_failures(),[])
+ def test_last_reviewed_date_must_match_expected(self):
+  self.assertIn('Visible updated date missing or inconsistent',self.shaving_school_date_failures('Last reviewed November 10, 2026'))
+ def test_last_reviewed_date_still_requires_matching_schema(self):
+  self.assertIn('Structured-data updated date mismatch',self.shaving_school_date_failures(modified='2026-11-10'))
+ def test_publication_or_missing_label_cannot_replace_last_reviewed(self):
+  for label in ['November 11, 2026','Published November 11, 2026','First reviewed November 11, 2026']:
+   with self.subTest(label=label):
+    self.assertIn('Visible updated date missing or inconsistent',self.shaving_school_date_failures(label))
+ def test_inline_historical_last_reviewed_is_not_metadata(self):
+  self.assertIn('Visible updated date missing or inconsistent',self.shaving_school_date_failures('The product was last reviewed November 11, 2026'))
+ def test_updated_label_remains_authoritative_when_review_date_also_exists(self):
+  self.assertIn('Visible updated date missing or inconsistent',self.shaving_school_date_failures('Updated November 10, 2026 · Last reviewed November 11, 2026'))
  def test_robots_none(self):
   s=self.snapshot(HTML.replace('index,follow','none'))
   with self.assertRaisesRegex(ValueError,'blocks indexing'): a.valid_snapshot(s)
@@ -133,6 +152,11 @@ class Tests(unittest.TestCase):
   with self.assertRaises(ValueError): a.record(s,s,self.review(s),'a'*40,{'commit':'b'*40,'status':'live'},'/tmp/should-not-write-render-audit.jsonl')
  def test_historical_inline_date_is_not_article_date(self):
   s=self.snapshot(HTML.replace('</main>','<p>The model was <strong>updated on August 13, 2026</strong>.</p></main>')); a.valid_snapshot(s)
+ def test_inline_source_policy_last_updated_is_not_article_date(self):
+  s=self.snapshot(HTML.replace('</main>','<p>Its privacy policy, last updated August 26, 2026, permits account controls.</p></main>')); a.valid_snapshot(s)
+ def test_standalone_last_updated_label_still_rejects_stale_date(self):
+  s=self.snapshot(HTML.replace('Updated Oct 27, 2026','Last updated Oct 26, 2026'))
+  with self.assertRaisesRegex(ValueError,'Visible updated'): a.valid_snapshot(s)
  def test_split_updated_label_keeps_date(self):
   s=self.snapshot(HTML.replace('Updated Oct 27, 2026','<span>Updated </span><time>Oct 27, 2026</time>')); a.valid_snapshot(s)
  def test_alias_requires_audited_self_canonical_target(self):

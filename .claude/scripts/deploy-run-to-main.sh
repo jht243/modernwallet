@@ -19,10 +19,13 @@
 # THE FIX
 # -------
 # Pin the branch tip at run START (`mark`), then at deploy replay ONLY the commits this run
-# added (RUN_BASE..HEAD) onto the LATEST origin/main via `git rebase --onto`. Any inherited
+# added onto the LATEST origin/main. When RUN_BASE is already published, normal rebase
+# excludes main history merged during the run; otherwise `--onto` excludes unpublished
+# foreign history below RUN_BASE. Any inherited
 # / foreign commits below RUN_BASE are never touched — they are another routine's problem to
 # ship from its own run. On a genuine content conflict we ABORT (never force-push main); the
-# caller then falls back to pushing the ephemeral branch + emailing a manual-merge note.
+# unattended caller preserves the branch/pending work and reports a genuine failure.
+# Existing permitted targeted corrections/reviews can resume; no operator is assumed.
 #
 # USAGE
 # -----
@@ -41,11 +44,13 @@
 # EXIT CODES (push)
 #   0  pushed to main
 #   3  could not land cleanly (a conflict outside deploy-regenerable.txt, or a repeatedly-moving base) -> caller does the safe
-#      ephemeral-branch fallback + manual-merge email. NEVER force-push main.
+#      preserved-branch failure report. NEVER force-push main or wait for an operator.
 #   4  .claude/scripts/deploy-precheck.sh rejected the merged tree -> nothing pushed; fix the
 #      reported file (or drop the bad row), commit, and run push again.
 #   5  (land only) the claude/land/* branch is pushed but the workflow has not merged it within
-#      LAND_DEADLINE seconds (default 600) -> check the repo's Actions tab; nothing is lost.
+#      LAND_DEADLINE seconds (default 600) -> check the repo's Actions tab; nothing is lost. Exit 5
+#      also comes promptly when land-run-status.py verifies a terminal failure of this attempt's own
+#      land run (failure, cancelled, timed_out, action_required, startup_failure, stale).
 #
 # EXIT CODES (verify)
 #   0  every URL is live (200, needle present)
@@ -93,6 +98,11 @@ fi
 
 is_regenerable() {
   local i
+  # URL-aware three-way merging preserves independent sitemap additions/deletions.
+  # The helper refuses ambiguous edits; this does not permit arbitrary XML merges.
+  case "$1" in public/sitemap*.xml)
+    [ -f .claude/scripts/merge-sitemap.py ] && return 0 ;;
+  esac
   for i in "${!REGEN_GLOBS[@]}"; do
     # shellcheck disable=SC2053
     [[ "$1" == ${REGEN_GLOBS[$i]} ]] && return 0
@@ -120,6 +130,11 @@ resolve_generated() {
     done
     for f in $conflicted; do
       # In a rebase, --ours is the upstream side (latest main + already-replayed commits).
+      case "$f" in public/sitemap*.xml)
+        python3 .claude/scripts/merge-sitemap.py --index "$f" || return 1
+        git add -- "$f" || return 1
+        continue ;;
+      esac
       git checkout --ours -- "$f" 2>/dev/null || git checkout --theirs -- "$f" 2>/dev/null || true
       echo "[deploy] regenerating conflicted generated file: $f" >&2
     done
@@ -145,7 +160,16 @@ resolve_generated() {
 
 # Run `git rebase <args>`; on conflict try resolve_generated, else abort. 0 = landed.
 rebase_or_regen() {
-  if git -c rebase.autoStash=true rebase "$@"; then return 0; fi
+  local autostash=true
+  [ "${LAND_PRESERVE_WORKTREE:-}" != "1" ] || autostash=false
+  if [ "${LAND_PRESERVE_WORKTREE:-}" = "1" ] &&
+     { ! git diff --quiet || ! git diff --cached --quiet; }; then
+    echo '[deploy] main moved while unrelated working changes are present; preserve them without autostash and reconcile the publication branch.' >&2
+    return 1
+  fi
+  if git -c "rebase.autoStash=$autostash" rebase "$@"; then return 0; fi
+  # A refused rebase never created a conflict state; do not report it as resolved.
+  if [ ! -d "$(git rev-parse --git-path rebase-merge)" ] && [ ! -d "$(git rev-parse --git-path rebase-apply)" ]; then return 1; fi
   if resolve_generated; then return 0; fi
   git rebase --abort 2>/dev/null || true
   return 1
@@ -158,7 +182,7 @@ rebase_or_regen() {
 # layer3labs: a merged-entry duplicate-key break blocked all deploys 05:05-12:08 UTC).
 PRECHECK="$(git rev-parse --show-toplevel 2>/dev/null || pwd)/.claude/scripts/deploy-precheck.sh"
 run_precheck() {
-  if [ -f ".claude/content-review-policy.json" ]; then
+  if [ -f ".claude/content-review-policy.json" ] && [ -f ".claude/tools/final-reviewed-source.py" ]; then
     python3 .claude/tools/final-reviewed-source.py "$run_base" || return 1
   fi
   [ -f "$PRECHECK" ] || return 0
@@ -172,6 +196,14 @@ run_precheck() {
 case "$cmd" in
   mark)
     # Record the tip we inherited. Everything committed after this is THIS run's work.
+    if [ -s "$base_file" ]; then
+      if git merge-base --is-ancestor "$(cat "$base_file")" HEAD; then
+        echo "[deploy] retaining original RUN_BASE for '$branch' = $(cat "$base_file")"
+        exit 0
+      fi
+      echo '[deploy] existing RUN_BASE is unrelated; preserve it and report the failed dependency.' >&2
+      exit 3
+    fi
     git rev-parse HEAD > "$base_file"
     echo "[deploy] pinned RUN_BASE for '$branch' = $(cat "$base_file")"
     ;;
@@ -183,7 +215,7 @@ case "$cmd" in
       # Fallback when the caller never marked: use the merge-base with main. This is exactly
       # correct for a cleanly-forked branch. It is NOT sufficient to strip foreign commits on
       # a shared branch (that is what `mark` is for) — so warn loudly.
-      git fetch origin main >/dev/null 2>&1 || true
+      git fetch origin main >/dev/null 2>&1 || { echo '[deploy] current main unavailable; NOT pushed.' >&2; exit 3; }
       run_base="$(git merge-base HEAD origin/main 2>/dev/null || true)"
       echo "[deploy] WARN: no RUN_BASE mark found; falling back to merge-base ${run_base:-<none>}." >&2
       echo "[deploy] WARN: call 'deploy-run-to-main.sh mark' at run start to guarantee only this run ships." >&2
@@ -194,10 +226,15 @@ case "$cmd" in
       exit 3
     fi
 
-    git fetch origin main || echo "[deploy] WARN: initial fetch failed, using local origin/main ref" >&2
+    git fetch origin main || { echo '[deploy] current main unavailable; NOT pushed.' >&2; exit 3; }
+    if ! git merge-base --is-ancestor "$run_base" HEAD; then
+      echo '[deploy] recorded run base is not an ancestor of this run; NOT pushed.' >&2
+      exit 3
+    fi
 
     # Isolate this run's commits onto the latest main. A conflict here is a genuine
-    # overlap with concurrent work -> abort and let the caller do the safe fallback.
+    # overlap with concurrent work -> abort and preserve it for the caller's existing
+    # correction/review or automatic failure-report path.
     # rebase.autoStash: a routine's working tree is often still dirty at deploy time
     # (generated ledgers, rebuilt dist/, lockfiles the run never staged). Without this,
     # git refuses with "cannot rebase: You have unstaged changes" and the whole run is
@@ -207,8 +244,26 @@ case "$cmd" in
     # a DETACHED HEAD, so the local branch never moves and the next run's per-branch state
     # key collapses to "HEAD" (ported from the_bot_scout).
     if [ "$branch" != "HEAD" ]; then rebase_target="$branch"; else rebase_target="HEAD"; fi
+    # When the marked base is already on main, all inherited history is published.
+    # A normal rebase excludes main commits merged DURING the run. --onto with the
+    # older mark would replay that published history and manufacture conflicts.
+    # If the mark contains unpublished foreign history, retain --onto isolation.
+    rebase_args=(--onto origin/main "$run_base" "$rebase_target")
+    if git merge-base --is-ancestor "$run_base" origin/main; then
+      rebase_args=(origin/main "$rebase_target")
+      echo '[deploy] inherited run base is published; replaying only commits absent from current main.'
+    fi
     # Conflicts confined to .claude/scripts/deploy-regenerable.txt files are rebuilt automatically.
-    if ! rebase_or_regen --onto origin/main "$run_base" "$rebase_target"; then
+    for pending_state in rebase-merge rebase-apply MERGE_HEAD CHERRY_PICK_HEAD REVERT_HEAD; do
+      if [ -e "$(git rev-parse --git-path "$pending_state")" ]; then
+        echo "[deploy] unfinished Git operation ($pending_state); preserve it and reconcile before publication." >&2
+        exit 3
+      fi
+    done
+    if git merge-base --is-ancestor "$run_base" origin/main &&
+       git merge-base --is-ancestor origin/main HEAD; then
+      echo '[deploy] current main is already included; no rebase or autostash needed.'
+    elif ! rebase_or_regen "${rebase_args[@]}"; then
       echo "[deploy] CONFLICT: could not replay this run's commits onto latest main (see git error above)." >&2
       exit 3
     fi
@@ -218,9 +273,24 @@ case "$cmd" in
     # commit below our run's commits is already on the remote, so a plain rebase now
     # replays ONLY our commits — it can never re-introduce foreign work.
     for attempt in 1 2 3; do
+      if [ -n "${PUBLISHER_RELEASE_DIR:-}" ]; then
+        python3 -m scripts.publisher_failover.worker --restage "$PUBLISHER_RELEASE_DIR" || {
+          echo '[deploy] Publisher ownership or exact reviewed content changed; NOT pushed.' >&2
+          exit 4
+        }
+      fi
       if ! run_precheck; then
         echo "[deploy] PRECHECK FAILED: this run's changes would break the build; NOT pushed (see errors above)." >&2
         exit 4
+      fi
+      # A primary publisher can finish a long build after its lease expires.
+      # Bind its exact committed blobs only after precheck, immediately before
+      # every push; trusted main verifies the same native fence again in CI.
+      if [ -z "${PUBLISHER_RELEASE_DIR:-}" ] && [ -f scripts/publisher_failover/primary_release.py ]; then
+        python3 -m scripts.publisher_failover.primary_release || {
+          echo '[deploy] Primary publisher ownership expired or changed; NOT pushed.' >&2
+          exit 4
+        }
       fi
       if [ "$target" = "land" ]; then
         land_branch="claude/land/${key}-$(date +%s)"
@@ -229,6 +299,16 @@ case "$cmd" in
           exit 3
         fi
         head_sha="$(git rev-parse HEAD)"
+        # GITHUB_TOKEN pushes cannot start another push workflow. Dispatch the SAME
+        # reviewed landing workflow explicitly; do not bypass it or push main directly.
+        if [ "${GITHUB_ACTIONS:-}" = "true" ]; then
+          landing_priority=normal
+          [ -z "${PUBLISHER_RELEASE_DIR:-}" ] || landing_priority=paid-publisher
+          if ! gh workflow run land.yml --ref main -f "branch=${land_branch}" -f "priority=${landing_priority}"; then
+            echo "[deploy] landing dispatch failed; branch preserved, not landed." >&2
+            exit 5
+          fi
+        fi
         echo "[deploy] pushed $(git rev-parse --short "$head_sha") to ${land_branch}; waiting for the land workflow to merge it into main."
         rm -f "$base_file"
         land_deadline=$(( $(date +%s) + ${LAND_DEADLINE:-600} ))
@@ -238,11 +318,22 @@ case "$cmd" in
             echo "[deploy] landed: origin/main ($(git rev-parse --short origin/main)) now contains $(git rev-parse --short "$head_sha")."
             exit 0
           fi
-          if [ "$(date +%s)" -ge "$land_deadline" ]; then
+          # Read-only check of THIS attempt's own land run (bound by its unique title and sha). A verified
+          # terminal failure (e.g. a billing block that never starts the job) stops the wait now instead of
+          # polling to the deadline. Unknown, pending or unrelated runs never stop it; nothing is retried,
+          # re-dispatched or pushed to main, and the branch stays on the remote.
+          run_state="$(python3 "$(dirname "$0")/land-run-status.py" --branch "$land_branch" --sha "$head_sha" 2>/dev/null || true)"
+          case "$run_state" in
+            *'"state": "failed"'*)
+              echo "[deploy] NOT LANDED: the land workflow run for ${land_branch} ended without merging: ${run_state}. Branch preserved on the remote; nothing was retried or pushed to main." >&2
+              exit 5
+              ;;
+          esac
+          if [ "$(date +%s)" -gt "$land_deadline" ]; then
             echo "[deploy] NOT LANDED after ${LAND_DEADLINE:-600}s: ${land_branch} is on the remote but the land workflow has not merged it (see the repo's Actions tab). Nothing is lost." >&2
             exit 5
           fi
-          sleep 15
+          sleep "${LAND_POLL_SECONDS:-15}"
         done
       fi
       if git push origin HEAD:main; then
@@ -262,7 +353,7 @@ case "$cmd" in
         exit 0
       fi
       echo "[deploy] push rejected (base moved); rebasing + retrying (${attempt}/3)." >&2
-      git fetch origin main || true
+      git fetch origin main || { echo '[deploy] retry could not refresh main; NOT pushed.' >&2; exit 3; }
       if ! rebase_or_regen origin/main; then
         echo "[deploy] CONFLICT on retry rebase; aborting." >&2
         exit 3

@@ -143,7 +143,9 @@ class Tests(unittest.TestCase):
    restored=h.pending(fresh)
    self.assertEqual(restored.read_bytes(),self.path.read_bytes());self.assertEqual((fresh/'reports/support/source.txt').read_bytes(),(support/'source.txt').read_bytes())
    h.chart_proof(fresh,restored)
-   h.announce(fresh,restored)
+   continuation=io.StringIO()
+   with contextlib.redirect_stdout(continuation):h.announce(fresh,restored)
+   self.assertIn('RESUME APPROVED CHART',continuation.getvalue());self.assertNotIn('Send every selected candidate',continuation.getvalue())
    terminal={'dispositions':{c['url']:{'disposition':'skipped-low-value'} for c in self.payload['candidates']}}
    h.complete(fresh,h.record(fresh,terminal))
    third=self.root/'local-global-run';subprocess.run(['git','clone',str(remote),str(third)],check=True,capture_output=True)
@@ -165,4 +167,22 @@ class Tests(unittest.TestCase):
   output=io.StringIO()
   with patch.dict(os.environ,{'CLAUDE_CODE_SESSION_ID':'new-synthetic-owner'}),contextlib.redirect_stdout(output):h.stop(self.root,{'session_id':'new-synthetic-owner'})
   self.assertIn('block',output.getvalue())
+ def test_legacy_signed_chart_predating_presentation_and_request_still_closes_cleanly(self):
+  plan=copy.deepcopy(self.fixture.plan)
+  plan['evidenceFiles'].append({'path':str(self.path.relative_to(self.root)),'sha256':self.path.stem})
+  plan.pop('request',None)
+  for action in plan['actions']:
+   action.pop('presentation',None)
+  plan['candidateDispositions']=[
+   {'candidate':self.payload['candidates'][0]['url'],'decision':'create','target':plan['actions'][0]['target'],'reason':'Synthetic historical chart approved before presentation/request schema existed.'},
+   {'candidate':self.payload['candidates'][1]['url'],'decision':'drop','reason':'Synthetic duplicate disposition in historical chart fixture.'},
+  ]
+  review={'jobId':'legacy-fixture','reviewer':'independent-chart-reviewer','manifestSha256':h.sha(h.canonical(plan)),'verdict':'PASS','findings':[],'resolvedFindingIds':[]}
+  h.after_chart(self.root,plan,review)
+  outcomes={'dispositions':{
+   self.payload['candidates'][0]['url']:{'disposition':'published','our_url':'https://example.com'+plan['actions'][0]['target']},
+   self.payload['candidates'][1]['url']:{'disposition':'skipped-duplicate'},
+  }}
+  verified=h.record(self.root,outcomes);h.complete(self.root,verified)
+  self.assertTrue(h.completed(self.root,self.path))
 if __name__=='__main__':unittest.main()

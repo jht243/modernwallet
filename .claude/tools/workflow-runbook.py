@@ -106,10 +106,17 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
             'python3 .claude/tools/content-review-policy.py project --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json --route <PASS_ROUTE> --out-snapshot <RUN_DIR>/audit/approved-snapshot.json --out-review <RUN_DIR>/audit/approved-review.json',
         ])
     elif phase == 'publish':
+        has_land = (root / '.github/workflows/land.yml').is_file() and (root / '.claude/scripts/land-run.sh').is_file()
+        deploy_cmd = (
+            'bash .claude/scripts/land-run.sh land'
+            if has_land
+            else 'bash .claude/scripts/deploy-run-to-main.sh push'
+        )
         lines.extend([
-            '2. Host commit provenance (1 foreground call): '
+            f'2. Land commits onto main (run directly from MAIN, never inside a subagent): {deploy_cmd}',
+            '3. Host commit provenance (1 foreground call): '
             'python3 .claude/tools/deployment-evidence.py --expected-commit <FULL_40_CHAR_SHA> --out <RUN_DIR>/audit/host-proof.json',
-            '3. Live capture, compare & journal close: '
+            '4. Live capture, compare & journal close: '
             'python3 .claude/tools/rendered-audit.py capture --manifest <CAPTURE_MANIFEST> --base-url ' + canonical_base + ' --out <RUN_DIR>/audit/live-snapshot.json '
             '&& python3 .claude/tools/rendered-audit.py compare --approved <APPROVED_SNAPSHOT> --live <RUN_DIR>/audit/live-snapshot.json --review <APPROVED_REVIEW> '
             '&& python3 .claude/tools/rendered-audit.py record-deployment --snapshot <LIVE_SNAPSHOT> --approved <APPROVED_SNAPSHOT> --review <APPROVED_REVIEW> --commit <FULL_SHA> --deployment-evidence <RUN_DIR>/audit/host-proof.json --ledger <RUN_DIR>/audit/deployment-ledger.json',

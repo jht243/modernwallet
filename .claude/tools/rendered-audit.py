@@ -207,7 +207,12 @@ def parse(html, route, base, canonical, status=200):
         # Labels begin a visible text block or follow a byline separator. A
         # historical sentence such as 'the model was updated on August 13'
         # is not the article's update date.
-        labels=re.findall(r'(?:^|[\n·|]|\blast\s+)\s*updated\s*(?:on\s+)?[:·-]?\s*(\d{4}-\d{2}-\d{2}|[A-Za-z]+\s+\d{1,2},?\s+\d{4})',''.join(p.date_text),re.I)
+        labels=re.findall(r'(?:^|[\n·|])\s*(?:last\s+)?updated\s*(?:on\s+)?[:·-]?\s*(\d{4}-\d{2}-\d{2}|[A-Za-z]+\s+\d{1,2},?\s+\d{4})',''.join(p.date_text),re.I)
+        if not labels:
+            # Ordinary Shaving School pages label the same modification date
+            # "Last reviewed". Keep a distinct review date separate when an
+            # explicit Updated label exists, and require a metadata boundary.
+            labels=re.findall(r'(?:^|[\n·|])\s*last\s+reviewed\s*(?:on\s+)?[:·-]?\s*(\d{4}-\d{2}-\d{2}|[A-Za-z]+\s+\d{1,2},?\s+\d{4})',''.join(p.date_text),re.I)
         parsed=[]
         for value in labels:
             for fmt in ['%Y-%m-%d','%b %d %Y','%B %d %Y']:

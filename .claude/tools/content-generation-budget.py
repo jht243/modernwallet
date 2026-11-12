@@ -30,8 +30,21 @@ def scope(root,args):
     route,row=matched[0]
     return job,route,row
 
+def _restore_durable_route(root,route,policy):
+    durable_path=root/'.claude/tools/content-review-durable.py'
+    if not durable_path.is_file() or not (root/'.claude/tools/workflow-control-store.py').is_file():return
+    try:
+        hosts=policy.policy(root).get('canonicalHosts') or []
+        if not hosts:return
+        spec=importlib.util.spec_from_file_location('budget_durable_restore',durable_path)
+        durable=importlib.util.module_from_spec(spec);spec.loader.exec_module(durable)
+        durable.restore(root,policy.Journal(root,'https://'+hosts[0],route))
+    except Exception:
+        return
+
 def current_cycle(root,route,policy):
-    route = route.rstrip('/') or '/'  # The review journal stores canonical routes without trailing slashes.
+    route = route.rstrip('/') or '/'
+    _restore_durable_route(root,route,policy)  # The review journal stores canonical routes without trailing slashes.
     found=[]
     for path in (root/'reports/content-review-journals').glob('*.jsonl'):
         with path.open() as stream:

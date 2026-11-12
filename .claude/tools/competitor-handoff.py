@@ -96,9 +96,33 @@ def replace_pointer(path,value):
  with tempfile.NamedTemporaryFile(dir=path.parent,delete=False) as stream:stream.write(raw);name=stream.name
  os.replace(name,path)
 
+def _sync_durable_journal_files(root):
+ """Materialize missing committed review journal .jsonl files from the durable ref in fresh checkouts."""
+ durable_path=root/'.claude/tools/content-review-durable.py'
+ if not durable_path.is_file() or not (root/'.claude/tools/workflow-control-store.py').is_file():return
+ try:
+  durable=load('competitor_durable_journals',durable_path)
+  conn=durable.backend(root)
+  if conn is None:return
+  m,store=conn;revision,state=store.read()
+  if not revision:return
+  site_id=read(root/'.claude/content-review-policy.json').get('siteId') if (root/'.claude/content-review-policy.json').is_file() else None
+  for entry in state.get('reviewJournals',{}).values():
+   if site_id and entry.get('identity',{}).get('siteId')!=site_id:continue
+   head=entry.get('head')
+   rel=next((p for p,h in entry.get('artifacts',{}).items() if h==head and p.startswith('reports/content-review-journals/') and p.endswith('.jsonl')),None)
+   if not rel or not head:continue
+   target=inside(root,rel)
+   if target.is_file():continue
+   raw=m.git(root,'show',revision+':artifacts/'+head).stdout
+   if sha(raw)==head:target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(raw)
+ except Exception:
+  return
+
 def pending_reviews(root,digest=None):
  """Actual reserved-but-unrecorded slots for this retained canonical intake."""
  if not (root/'.claude/content-review-policy.json').is_file():return []
+ _sync_durable_journal_files(root)
  result=[]
  for path in (root/'reports/content-review-journals').glob('*.jsonl'):
   events=[json.loads(line) for line in path.read_bytes().splitlines() if line.strip()]
@@ -119,6 +143,7 @@ def pending_reviews(root,digest=None):
 def publication_gaps(root,digest=None):
  """Real reviewed routes still lack the native exact-live deployment receipt."""
  if not (root/'.claude/content-review-policy.json').is_file():return []
+ _sync_durable_journal_files(root)
  result=[]
  for path in (root/'reports/content-review-journals').glob('*.jsonl'):
   events=[json.loads(line) for line in path.read_bytes().splitlines() if line.strip()]
@@ -361,9 +386,20 @@ def after_chart(root,plan,review):
    if row.get('chartRef') and row['chartRef']!=pointer and row['chartRef'] not in history:history.append(row['chartRef'])
    row.update(chartRef=pointer,support=support)
   store.mutate(record,list(support))
+def _is_legacy_recorded_chart(root,path,plan):
+ """True only when re-reading an already-signed .chart.json proof recorded before presentation/request existed."""
+ if not path.with_suffix('.chart.json').is_file():return False
+ substantive=[r for r in plan.get('actions',[]) if r.get('bucket') in {'create new content','update existing body text'}]
+ if not substantive:return False
+ return any('presentation' not in r for r in substantive) or 'request' not in plan
+
 def chart_proof(root,path):
  proof=chart_value(root,path);plan=json.loads(proof['planText']);review=json.loads(proof['reviewText']);gate=load('competitor_chart_gate',root/'.claude/tools/mindmap-gates.py')
- gate.chart(root,plan,review);gate.saved_chart(root,plan);validate_chart(root,path,plan,review);return {**proof,'plan':plan,'review':review}
+ if _is_legacy_recorded_chart(root,path,plan):
+  gate.independent(review,plan.get('author'),'manifestSha256',sha(canonical(plan)))
+ else:
+  gate.chart(root,plan,review);gate.saved_chart(root,plan)
+ validate_chart(root,path,plan,review);return {**proof,'plan':plan,'review':review}
 def record(root,dispositions):
  path=active(root)
  if path is None:return
@@ -550,6 +586,7 @@ def execute(root,main):
         require(out.is_file(),'Native monitor output missing; preserve the actual failure, do not claim a no-op')
         payload=read(out);require(isinstance(payload.get('candidates'),list),'Unknown native monitor intake schema; preserve it for its native adapter')
         freeze(root,payload,limit);return result
+    if not argument('--dispositions'):return main()
     intake=active(root)
     if intake is not None and completed(root,intake):
         print('Already recorded this exact selected intake; preserve the original terminal dispositions.')
@@ -557,7 +594,13 @@ def execute(root,main):
     raw=read(Path(argument('--dispositions')))
     values=raw.get('dispositions',raw)
     normalized={'dispositions':{url:({'disposition':value} if isinstance(value,str) else value) for url,value in values.items()}}
-    verified=record(root,normalized);result=main()
+    verified=record(root,normalized)
+    ledger_helper=Path(__file__).with_name('competitor-ledger.py')
+    if ledger_helper.is_file():
+        native=load('native_competitor_ledger',ledger_helper)
+        result=native.record(root,validate_source(active(root)),normalized['dispositions'],main.__globals__)
+    else:
+        result=main()
     if result in (None,0):complete(root,verified)
     return result
 
@@ -581,5 +624,12 @@ if __name__=='__main__':
   else:
    require(a.evidence is not None,'Record actual blocking evidence');print(json.dumps(blocked(root,a.evidence)))
  except (ValueError,OSError,KeyError) as error:
-  if a.command=='stop':print(json.dumps({'decision':'block','reason':'Recover the original competitor handoff evidence: '+str(error)}))
+  if a.command=='verify-preview':print(json.dumps(verify_preview(root,a.base_url)))
+  elif a.command=='compare-preview':print(json.dumps(compare_preview(root,inside(root,a.snapshot))))
+  elif a.command=='recover-work':
+   path=active(root);require(path is not None,'Detect/resume the original intake first')
+   hint=read(recovery_path(root,path));require(hint['intake']==path.stem,'Work checkpoint belongs to a different intake')
+   module=load('native_competitor_recovery',Path(__file__).with_name('competitor-recover-work.py'));print(json.dumps(module.restore(root,path,hint)))
+  elif a.command=='register-recovery':register_recovery(root,inside(root,a.intake),a.branch,a.commit)
+  elif a.command=='stop':print(json.dumps({'decision':'block','reason':'Recover the original competitor handoff evidence: '+str(error)}))
   else:print('BLOCKED: '+str(error),file=sys.stderr);sys.exit(2 if a.command in ('report-guard','bind-worker') else 1)

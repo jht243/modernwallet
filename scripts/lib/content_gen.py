@@ -741,6 +741,9 @@ def _vendor_slot_text(value):
     return re.sub(r'\s*<div\s+data-vendor-table-slot(?:="")?\s*>\s*</div>\s*$', '', value, flags=re.I).rstrip()
 
 
+_TRAILING_HTML_TAGS = re.compile(r'(?:\s*</?[A-Za-z][^<>]*>)+\s*$')
+
+
 def _clipped_strings(node, out=None, where=""):
     out = [] if out is None else out
     if isinstance(node, dict):
@@ -750,7 +753,7 @@ def _clipped_strings(node, out=None, where=""):
         for i, v in enumerate(node):
             _clipped_strings(v, out, f"{where}[{i}]")
     elif isinstance(node, str):
-        s = _vendor_slot_text(node.strip())
+        s = _TRAILING_HTML_TAGS.sub("", _vendor_slot_text(node.strip())).strip()  # closing HTML tags are not cut-offs
         s = re.sub(r"[*_`~]+$", "", s).strip()  # ITALIC-END: closing emphasis is not a cut-off
         key = re.sub(r"\[\d+\]", "", where).split(".")[-1].lower()
         if key not in _PROSE_KEYS:
@@ -780,12 +783,11 @@ def looks_truncated(text: str, json_mode: bool) -> str:
             where, tail = bad[0]
             return f"{len(bad)} field(s) stop mid-sentence, e.g. {where}: ...{tail!r}"
         return ""
-    # prose/markdown mode: judge the last substantive line
-    lines = [l for l in _vendor_slot_text(t).split("\n") if l.strip()]
+    # prose/markdown/HTML mode: strip trailing closing HTML tags before judging the last substantive line
+    cleaned = _TRAILING_HTML_TAGS.sub("", _vendor_slot_text(t)).strip()
+    lines = [l for l in cleaned.split("\n") if l.strip()]
     last = lines[-1].strip() if lines else ""
-    # CLAUDE-64K-AND-HTML-END (2026-10-10): judge the TEXT, not a closing tag — "...policies.</p>" ends cleanly (it was read as
-    # "stops mid-sentence" and a finished section was billed and thrown away).
-    last = re.sub(r"(?:\s*</?[A-Za-z][^<>]*>)+\s*$", "", last).strip()
+    last = _TRAILING_HTML_TAGS.sub("", last).strip()
     # ITALIC-END (2026-10-11): a closing markdown emphasis/code marker is not a cut-off.
     # "...speak with an attorney licensed in your state.*" ends cleanly (an Opus page was
     # thrown away for it and Gemini wrote the page instead); judge the text inside the marker.

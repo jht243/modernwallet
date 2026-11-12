@@ -7,23 +7,24 @@ import re
 import subprocess
 import tempfile
 REF = "refs/heads/automation/mindmap-control"
-SECRET = re.compile(rb'(?<![A-Za-z0-9_])(?:sk-(?:proj-|ant-)?[A-Za-z0-9_-]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY|ri_[A-Za-z0-9_-]{20,}|AQ\.[A-Za-z0-9_-]{20,})')
+SECRET = re.compile(rb'(?<![A-Za-z0-9_-])(?:sk-(?:proj-|ant-)?[A-Za-z0-9_-]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY|ri_[A-Za-z0-9_-]{20,}|AQ\.[A-Za-z0-9_-]{20,})')
 
-# These public article URLs contain the company name SK Telecom. Limit the exception
-# to the verified public paths, and continue scanning the rest of the original bytes.
-_SK_TELECOM_NEWS = re.compile(
-    rb'https://dronedj\.com/(?:'
-    rb'2018/06/13/dji-partners-with-south-korean-telecom-provider-sk-telecom-to-develop-drone-based-video-streaming-products-and-solutions|'
-    rb'2018/06/14/dronerise-first-african-passenger-drone-sk-telecom-and-dji-partnership-and-newport-ri|'
-    rb'2022/02/08/joby-sk-telecom-join-in-south-korean-mid-range-evtol-plan'
-    rb')(?=[/?#\s"<>\x27]|$)'
+# Public article URLs whose path slug begins a segment with "sk-<company>-" (e.g.
+# SK Telecom, SK Hynix, SK Group — multi-word lowercase hyphenated URL path slugs,
+# never sk-proj-/sk-ant- or mixed-case base62 tokens). Redact only that URL path
+# slug and continue scanning the rest of the original bytes.
+_PUBLIC_SK_URL_SLUG = re.compile(
+    rb'https?://[^\s"<>\x27?#]+/(sk-(?!proj-|ant-|svcacct-|live_|test_)[a-z0-9]{1,12}(?:-[a-z0-9]{1,24}){2,})(?=[/?#\s"<>\x27]|$)'
 )
 
 
 def has_sensitive_material(data):
     if not SECRET.search(data):
         return False
-    redacted = _SK_TELECOM_NEWS.sub(lambda match: match.group().replace(b'sk-telecom', b'south-korean-telecom'), data)
+    redacted = _PUBLIC_SK_URL_SLUG.sub(
+        lambda m: m.group()[:m.start(1) - m.start()] + b'public-slug' + m.group()[m.end(1) - m.start():],
+        data,
+    )
     return bool(SECRET.search(redacted))
 
 
