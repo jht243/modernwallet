@@ -1,0 +1,21 @@
+{
+ "workflowKind": "mindmap-pass",
+ "author": "mindmap-write",
+ "canonicalBase": "https://www.themodernwallet.com",
+ "routes": [
+  {
+   "path": "/guides/medicare-part-d-2027-premiums/",
+   "requiredText": [
+    "large self-insured employer plan are covered by a separate federal rule"
+   ],
+   "forbiddenText": [],
+   "expectedUpdatedDate": "2026-11-02",
+   "correctionContentFiles": [
+    "src/data/guides.ts"
+   ],
+   "reviewDependencies": [
+    "reports/mindmap-pass/2026-11-12-xtrends-run/links/inbound-source-sections.txt"
+   ]
+  }
+ ]
+}
