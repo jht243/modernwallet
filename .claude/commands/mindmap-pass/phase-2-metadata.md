@@ -3,7 +3,6 @@
 **Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
 <!-- /fleet-evidence-contract-v2 -->
 
-
 <!-- workflow-source-freshness-v1 -->
 **WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
 Run startup as a standalone command and inspect its actual exit code; never pipe it through head/tail/tee or continue after failure.
@@ -28,10 +27,7 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 > **The title and description answer the reader's question, not the topic.** Where the chart row
 > carries `reader_question` (cols 10–12, build-brief Step 4.6), the rewritten `metaTitle` and
 > `metaDescription` must promise THAT answer in the reader's own words — a "how do I…" row gets a
-> title that promises the method, a "how much" row promises the figure. A title that names the
-> topic while the reader asked how to do it is the same failure this workflow fixed on the page
-> body. Where a row has no `reader_question` (a pure metadata row with no content change), work
-> the target term in as before.
+> title that promises the method, a "how much" row promises the figure. Metadata rows touch ONLY head-level fields within discovered length limits, obey Gate 1 cooldown (`< 7` days hard defer; `7–21` days soft defer if `performing`; `>= 3` rewrites in 90d requires `>= 1,000` 30d GSC impressions), Gate 2 live GSC performance check (`performing` → defer), and Gate 3 top-impression query selection, and bump the rendered "Last updated" date + JSON-LD `dateModified` on every edited existing page.
 
 Act on every **metadata** row in the chart.
 
@@ -124,7 +120,6 @@ The `/mindmap-pass` run has EXACTLY ONE human stop (the Phase 0 manifest approva
 - (Phase 8 is an informational summary that auto-continues to the Phase 9 push — NOT a stop.)
 
 Everything between those two — including this phase — runs automatically. The reviewer gates are adversarial SUBAGENTS, not human checkpoints; a passing gate means YOU proceed on your own. Keep going through Phase 8 and the Phase 9 push without stopping.
-
 
 ## Updated-page date-bump rule (MANDATORY — workflow-wide, added 2026-07-12)
 

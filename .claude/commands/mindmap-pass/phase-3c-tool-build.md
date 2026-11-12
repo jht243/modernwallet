@@ -3,7 +3,6 @@
 **Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
 <!-- /fleet-evidence-contract-v2 -->
 
-
 <!-- workflow-source-freshness-v1 -->
 **WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
 Run startup as a standalone command and inspect its actual exit code; never pipe it through head/tail/tee or continue after failure.
@@ -24,8 +23,7 @@ Phase 3 routes every `create new content` row whose format is `interactive tool`
 
 
 Phase 3 routes every `create new content` row whose format is `interactive tool`, `calculator` or
-`quiz/assessment` here. These are BUILT in this run — a working tool on a live route — not
-specced for later. `git add` your work; do NOT commit. Phase 4 (tool checklist) is the gate.
+`quiz/assessment` here (plus approved tools embedded in existing articles). Planned tools must be BUILT in this run as client-side, deterministic components (`data-tool="<slug>"`, `<= ~30 KB gz`, no per-use paid API or new backend) mirroring an existing repo tool's wiring, with named sourced constants/formulas and result export/print where appropriate. If no defensible math or scoring exists, re-route the row to a normal article before approval — never ship a spec, stub, or invented math.
 
 Same rules as Phase 3: NET-NEW routes only (a row pointing at an existing route → STOP and flag it),
 and page PROSE (intro, how-to, explanation, FAQ) comes from the API writer —

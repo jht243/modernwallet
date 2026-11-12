@@ -7,6 +7,7 @@ node_modules/
 *.log
 
 .claude/*
+!.claude/agents/
 !.claude/commands/
 !.claude/scripts/
 !.claude/tools/

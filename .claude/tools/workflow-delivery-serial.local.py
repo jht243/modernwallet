@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Serialize explicit single-part deliveries without changing preflight or its rules.
 
-An actor may request up to four SEPARATE Bash tool calls in one model turn. Each call
+An actor may request up to ten SEPARATE Bash tool calls in one model turn. Each call
 still emits exactly one original bounded part through the existing validator.
 This wrapper only orders the receipt writes; it never combines/summarizes parts,
 writes understanding, changes sources, or creates an editorial verdict.
@@ -28,6 +28,13 @@ def deliver(root, directory, number, preflight, timeout=30):
                     # Existing emit performs full source/part validation, prints
                     # ONE original part, flushes stdout, then records delivery.
                     preflight.emit(root, directory, number)
+                    if number == len(manifest['parts']):
+                        runbook_file = Path(__file__).with_name('workflow-runbook.py')
+                        if runbook_file.is_file():
+                            rb_spec = importlib.util.spec_from_file_location('stage_runbook', runbook_file)
+                            rb_mod = importlib.util.module_from_spec(rb_spec)
+                            rb_spec.loader.exec_module(rb_mod)
+                            print('\n' + rb_mod.render_runbook(root, directory, manifest.get('phase')))
                     return
             finally:
                 fcntl.flock(lock, fcntl.LOCK_UN)

@@ -6,8 +6,10 @@ import datetime as dt
 import hashlib
 from html.parser import HTMLParser
 import json
+import os
 from pathlib import Path
 import re
+import subprocess
 import sys
 import urllib.request
 from urllib.parse import urlsplit, quote
@@ -505,7 +507,7 @@ def inspect_pack(s, selected_routes=()):
             prof = policy.profile(root, sem, spec.get('claimCategories', []), spec.get('reviewProfile'))
             entry['riskClassification'] = {
                 'provisionalProfile': prof,
-                'maximumRounds': policy.audit_limit(policy.policy(root), prof),
+                'maximumRounds': (policy.audit_limit(policy.policy(root), prof) if hasattr(policy, 'audit_limit') else policy.LIMITS[prof]),
                 'textSha256': policy.sha(ctext.encode()),
                 'riskPassages': policy.flags(ctext),
                 'requiredFactualChecks': policy.FACTS[prof],
@@ -521,9 +523,42 @@ def inspect_pack(s, selected_routes=()):
     }
 
 
+def capture_local(manifest_path, run_id, out, dom_dir=None, build=False, root=None):
+    """One-shot build (optional) + owned loopback preview + complete capture + stop."""
+    import importlib.util
+    root = Path(root or Path(__file__).resolve().parents[2]).resolve()
+    manifest = read(manifest_path)
+    validate_manifest(manifest)
+    preview_path = Path(__file__).with_name('preview-session.py')
+    require(preview_path.is_file(), 'Missing preview-session.py helper')
+    spec = importlib.util.spec_from_file_location('owned_preview_session', preview_path)
+    preview_mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(preview_mod)
+    env = preview_mod._node20_env() if hasattr(preview_mod, '_node20_env') else dict(os.environ)
+    kind = preview_mod.framework(root)
+    marker = root / ('.next/BUILD_ID' if kind == 'next' else 'dist/index.html')
+    if build or not marker.is_file():
+        done = subprocess.run(['npm', 'run', 'build'], cwd=str(root), env=env, capture_output=True, text=True)
+        require(done.returncode == 0, 'Production build failed before capture: ' + (done.stderr or done.stdout)[-800:])
+    first_route = manifest['routes'][0]['path'] if manifest.get('routes') else '/'
+    meta = preview_mod.start(root, run_id, first_route)
+    try:
+        prev_cwd = Path.cwd()
+        os.chdir(str(root))
+        try:
+            snap = capture(manifest, meta['baseUrl'], out, dom_dir)
+            valid_snapshot(snap)
+        finally:
+            os.chdir(str(prev_cwd))
+    finally:
+        preview_mod.stop(root, meta)
+    return snap
+
+
 def main():
     parser=argparse.ArgumentParser(); sub=parser.add_subparsers(dest='command',required=True)
     p=sub.add_parser('capture'); p.add_argument('--manifest',required=True); p.add_argument('--base-url',required=True); p.add_argument('--out',required=True); p.add_argument('--dom-dir',help='Existing hydrated DOM input by route; not an output directory. Omit for complete server-rendered HTTP HTML.')
+    p=sub.add_parser('capture-local'); p.add_argument('--manifest',required=True); p.add_argument('--run-id',required=True); p.add_argument('--out',required=True); p.add_argument('--dom-dir'); p.add_argument('--build',action='store_true')
     p=sub.add_parser('inspect-pack'); p.add_argument('--snapshot',required=True); p.add_argument('--route',action='append',default=[]); p.add_argument('--out')
     p=sub.add_parser('check'); p.add_argument('--snapshot',required=True); p.add_argument('--review',required=True); p.add_argument('--recapture',action='store_true')
     p=sub.add_parser('compare'); p.add_argument('--approved',required=True); p.add_argument('--live',required=True); p.add_argument('--review',required=True)
@@ -532,6 +567,9 @@ def main():
     a=parser.parse_args()
     if a.command=='capture':
         s=capture(read(a.manifest),a.base_url,a.out,a.dom_dir); valid_snapshot(s); print(f"Captured {len(s['routes'])} complete routes")
+    elif a.command=='capture-local':
+        s=capture_local(a.manifest,a.run_id,a.out,a.dom_dir,a.build)
+        print(json.dumps({'status':'captured','routes':len(s['routes']),'snapshot':a.out,'snapshotSha256':s['snapshotSha256']}))
     elif a.command=='inspect-pack':
         pack=inspect_pack(read(a.snapshot),a.route)
         if a.out: save(a.out,pack)

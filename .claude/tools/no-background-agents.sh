@@ -38,13 +38,16 @@ bg = inp.get("run_in_background")
 updated_input = None
 
 if tool in ("Agent", "Task") and bg is not False:
+    # The installed Agent bind hook sets this exact dispatch to foreground.
+    # Other routines still use their existing admission check.
     from pathlib import Path
     import importlib.util
     root = Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve()
     helper = root/'.claude/tools/competitor-handoff.py'
     if helper.is_file() and (root/'.claude/tools/native-worker-wait.py').is_file():
         spec = importlib.util.spec_from_file_location('competitor_inline',helper)
-        monitor = importlib.util.module_from_spec(spec);spec.loader.exec_module(monitor)
+        monitor = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(monitor)
         if monitor.active(root,d) is not None:
             sys.exit(0)
     sys.stderr.write(
@@ -70,7 +73,7 @@ if cloud and tool == "Bash" and bg is True:
         "returns to a backgrounded command. Re-issue it in the FOREGROUND with timeout: 600000 "
         "(split very long work into several foreground calls).\n")
     sys.exit(2)
-LONG = re.compile(r"\b(?:pip3?|uv)\s+(?:install|sync)\b|\bpython3?\s+-m\s+(?:pip|venv)\b|prepare_preview\.py|\b(?:npm|pnpm|yarn)\s+(?:ci|install)\b|content_gen\.py|/gen(_all)?\.sh|\bgen\.sh\b|humanize_intro\.py|npm run build|next build|"
+LONG = re.compile(r"\b(?:pip3?|uv)\s+(?:install|sync)\b|\bpython3?\s+-m\s+(?:pip|venv)\b|prepare_preview\.py|rendered-audit\.py\s+capture-local|\b(?:npm|pnpm|yarn)\s+(?:ci|install)\b|content_gen\.py|/gen(_all)?\.sh|\bgen\.sh\b|humanize_intro\.py|npm run build|next build|"
                   r"astro build|npx tsc|deploy-run-to-main\.sh push|\bsleep\s+(1[2-9]\d|[2-9]\d\d|\d{4,})")
 if cloud and tool == "Bash" and LONG.search(cmd) and (inp.get("timeout") or 0) < 600000:
     # Supply the existing required foreground timeout on the first call.

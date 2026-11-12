@@ -17,6 +17,8 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 <!-- /workflow-checkpoints-v1 -->
 
 
+**Where an `update existing body text` row carries `reader_question` / `answer` / `answer_placement` (cols 10–12), the added section IS that answer and goes in the named slot** — section 1 or 2, ahead of the page's existing scope/definition material, preserving unrelated content and bumping the rendered "Last updated" date + `dateModified`. Any addition longer than one sentence uses `content_gen.py section` with closed facts + `.meta.json`. Where the inline affiliate engine (`src/utils/affiliateInject.ts` + `data/affiliate/catalog.ts`) exists, plan natural-fit-only monetization (never force an off-intent block, double-monetize, or fabricate referral URLs).
+
 <!-- intent-takeaway-v1 -->
 **Intent-based takeaway:** Read `_decision-evidence.md` in the active project's `.claude/commands/`, especially “Close with a takeaway that answers the page's intent.” Pass the planned conclusion, applicable reader/task, actual evidence basis and decision-changing condition into the existing writer brief. Reuse a sufficient verdict; preserve the no-addition branch and local exclusions. For global commands, resolve/install the sibling shared contract in the active project while preserving local rules.
 <!-- /intent-takeaway-v1 -->
@@ -47,10 +49,11 @@ Read and apply `.claude/commands/_decision-evidence.md` inside this phase, befor
 > "generate it through the section command"; the prose rules below are the writer's system
 > prompt, not a licence to write the prose yourself.
 
+**Where an `update existing body text` row carries `reader_question` / `answer` / `answer_placement` (cols 10–12), the added section IS that answer and goes in the named slot** — section 1 or 2, ahead of the page's existing scope/definition material, preserving unrelated content and bumping the rendered "Last updated" date + `dateModified`. Any addition longer than one sentence uses `content_gen.py section` with closed facts + `.meta.json`. Where the inline affiliate engine (`src/utils/affiliateInject.ts` + `data/affiliate/catalog.ts`) exists, plan natural-fit-only monetization (never force an off-intent block, double-monetize, or fabricate referral URLs).
+
 **Where the row carries `reader_question` / `answer` / `answer_placement` (cols 10–12), the added section IS that answer and goes in the named slot** — section 1 or 2, ahead of the page's existing scope/definition material, exactly as a new page would. Copy all three into the `section` command's row prompt. An enrichment that appends the answer to the bottom of a page whose opener still answers the wrong question has not done the job. Where the row has no question (a pure gap-fill), place the section where it reads best, as before.
 
 Act on every **body** row in the chart. Do NOT touch titles, meta descriptions, or H1s (that was Phase 2). Internal linking is handled separately in Phase 6 — do not add links here beyond what a body section naturally contains. `git add` your work but do NOT commit.
-
 
 ## Content standard
 
@@ -86,7 +89,6 @@ The `/mindmap-pass` run has EXACTLY ONE human stop (the Phase 0 manifest approva
 
 Everything between those two — including this phase — runs automatically. The reviewer gates are adversarial SUBAGENTS, not human checkpoints; a passing gate means YOU proceed on your own. Keep going through Phase 8 and the Phase 9 push without stopping.
 
-
 ## Anti-AI language — applies to every sentence you ADD here (MANDATORY — added 2026-08-17)
 
 Body-text updates are additive prose, held to the **same** anti-AI-language bar as net-new pages. New substantive body content must pass the independent Phase 4 decision-evidence gate before delivery; pure mechanical/link edits keep their existing checks. Load `.claude/commands/_anti-ai-language.md` and apply its **WRITER** section to every sentence you add. If the file is missing, STOP and report it.
@@ -100,7 +102,6 @@ Body-text updates are additive prose, held to the **same** anti-AI-language bar 
 Also refresh every surface derived from that date: JSON-LD `dateModified`, and the sitemap `<lastmod>` when the generator does not derive it from the same field. **New pages created this run are exempt** (their date fields already default to now). **Purely non-rendering technical fixes are exempt** (robots.txt, redirects, canonical tags, sitemap-only hygiene) — do NOT bump dates for those.
 
 **Auditors / reviewer gates (adversarial review):** for EVERY existing page this run edited, verify the rendered "Last updated" date (and JSON-LD `dateModified`) now equals the run date. A stale date on an updated page is a **HARD FAIL** — the page does not pass until the date is bumped. The fix is a one-field update; never rewrite the page. Conversely, a bumped date on a page whose rendered content did NOT change is also a fail (date churn fakes freshness) — revert it.
-
 
 ## Content standard — sequencing
 > **‼️ HARD SEQUENCING RULE — do not skip.** Do NOT treat this phase as complete, and do NOT show, serve, publish, or hand off anything you write here, until the Phase 4 audit has run on THIS exact output and PASSED. Any rewrite (including fixing an audit finding) voids a prior pass and requires re-auditing. See the PHASE 4 IS NOT OPTIONAL rule at the top of `.claude/commands/_content-standard.md`.

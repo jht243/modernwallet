@@ -64,6 +64,18 @@ def verify(root,base):
  require(all(meta.get(k)==v for k,v in signature(root).items()),'Preview is serving another build/source revision. Start the current build with preview-session.py')
  return {k:meta[k] for k in ['runId','baseUrl','framework','buildId','sourceSha256','pid','processStart']}
 
+def _node20_env():
+ env=dict(os.environ)
+ try:
+  ver=subprocess.run(['node','-v'],env=env,capture_output=True,text=True,timeout=5).stdout.strip()
+  if ver.startswith('v') and int(ver[1:].split('.',1)[0])>=20:return env
+ except (OSError,ValueError,subprocess.SubprocessError):pass
+ nvm=Path('/opt/nvm/versions/node')
+ if nvm.is_dir():
+  bins=sorted([p/'bin' for p in nvm.glob('v*') if (p/'bin/node').is_file() and p.name[1:].split('.',1)[0].isdigit() and int(p.name[1:].split('.',1)[0])>=20])
+  if bins:env['PATH']=str(bins[-1])+':'+env.get('PATH','')
+ return env
+
 def start(root,run,route='/'):
  require(re.fullmatch(r'[A-Za-z0-9._-]{6,128}',run),'Use the actual verified invocation run ID')
  require(route.startswith('/') and not route.startswith('//') and '..' not in route and '?' not in route and '#' not in route,'Use an actual local route')
@@ -74,7 +86,7 @@ def start(root,run,route='/'):
  elif current['framework']=='astro':command=[str(root/'node_modules/.bin/astro'),'preview','--host','127.0.0.1','--port',str(port)]
  else:command=[sys.executable,'-m','http.server',str(port),'--bind','127.0.0.1','--directory',str(root/'dist')]
  log=folder/('port-'+str(port)+'-'+str(time.time_ns())+'.log')
- with log.open('xb') as output:process=subprocess.Popen(command,cwd=root,stdout=output,stderr=subprocess.STDOUT,start_new_session=True)
+ with log.open('xb') as output:process=subprocess.Popen(command,cwd=root,env=_node20_env(),stdout=output,stderr=subprocess.STDOUT,start_new_session=True)
  _children[process.pid]=process
  meta={**current,'root':str(root),'runId':run,'baseUrl':'http://127.0.0.1:'+str(port),'pid':process.pid,'processStart':started(process.pid)}
  deadline=time.monotonic()+90

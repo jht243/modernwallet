@@ -22,6 +22,8 @@ For each substantive contribution, plan `growth.json` registration in `reports/c
 <!-- /workflow-checkpoints-v1 -->
 
 
+For each substantive contribution, plan `growth.json` registration in `reports/content-evidence.jsonl` with a stable run/route ID, hypothesis, and honest baseline/comparator status (unavailable GSC is recorded as `unavailable`, never zero, and publishing is never claimed as uplift; respect terminal `no-addition` exemptions), plus complete accounting of emerging search clusters and PAA/completion vs `verb-only` question-evidence tags.
+
 <!-- decision-evidence-v1 -->
 ## Evidence and growth hand-off
 
@@ -31,6 +33,8 @@ Follow `_decision-evidence.md`, section 5. For each substantive contribution, re
 <!-- fleet-evidence-contract-v2 -->
 **Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
 <!-- /fleet-evidence-contract-v2 -->
+
+For each substantive contribution, plan `growth.json` registration in `reports/content-evidence.jsonl` with a stable run/route ID, hypothesis, and honest baseline/comparator status (unavailable GSC is recorded as `unavailable`, never zero, and publishing is never claimed as uplift; respect terminal `no-addition` exemptions), plus complete accounting of emerging search clusters and PAA/completion vs `verb-only` question-evidence tags.
 
 > **Report question coverage.** For every page created or enriched this run, print one line:
 > `<route> — asked "<reader_question>" <evidence tag> → answered in <answer_placement>`. Then the
