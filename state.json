@@ -15,6 +15,7 @@
       "reports/content-review-evidence/29c0daab32baec9c13c39bf02c38895feb1070a2db026cf2e29b02c52a3375af.jsonl": "29c0daab32baec9c13c39bf02c38895feb1070a2db026cf2e29b02c52a3375af",
       "reports/content-review-evidence/2c992f1295fb40e3f01d0c4bce09d2b82a005c6ae418ca61c496632953ae67f1.json": "2c992f1295fb40e3f01d0c4bce09d2b82a005c6ae418ca61c496632953ae67f1",
       "reports/content-review-evidence/37eb5fb99748ab1902d11e657eec0b0638a073189befb2fcaa095f6643b9b91d.json": "37eb5fb99748ab1902d11e657eec0b0638a073189befb2fcaa095f6643b9b91d",
+      "reports/content-review-evidence/3c17c24365c01ffb3b09c5e6a935002fc62f6f0e637024a2913b96c5d3f0972f.json": "3c17c24365c01ffb3b09c5e6a935002fc62f6f0e637024a2913b96c5d3f0972f",
       "reports/content-review-evidence/42ee74cf2cd5b7570b9ca134e84ed8d697f48e166e4eba970696b8963000c898.html": "42ee74cf2cd5b7570b9ca134e84ed8d697f48e166e4eba970696b8963000c898",
       "reports/content-review-evidence/4f2bd77e1659a0a71ea9e1b319375a18dd8cbc26bcaad6578a5fb0cca61af508.json": "4f2bd77e1659a0a71ea9e1b319375a18dd8cbc26bcaad6578a5fb0cca61af508",
       "reports/content-review-evidence/539446c77eb75a674e0fa99f42664cf4ea225b48934fb56f0c3d258ca4ade475.html": "539446c77eb75a674e0fa99f42664cf4ea225b48934fb56f0c3d258ca4ade475",
@@ -853,6 +854,14 @@
       }
     }
   },
+  "reviewPairsByJob": {
+    "6931aeadbaf0403bb8d5862c930c0bdd": {
+      "10d1d03a5da3f4be1a279c1a9a135792abfb6a53157023258f702812d048af10": "3c17c24365c01ffb3b09c5e6a935002fc62f6f0e637024a2913b96c5d3f0972f"
+    }
+  },
   "slots": [],
+  "verifiedReleasePairs": {
+    "10d1d03a5da3f4be1a279c1a9a135792abfb6a53157023258f702812d048af10": "3c17c24365c01ffb3b09c5e6a935002fc62f6f0e637024a2913b96c5d3f0972f"
+  },
   "version": 1
 }
