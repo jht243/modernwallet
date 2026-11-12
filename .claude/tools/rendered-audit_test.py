@@ -254,4 +254,26 @@ class Ads(unittest.TestCase):
    with self.assertRaises(ValueError):self.parse(body=body.replace('</body>',holder+'</body>'))
  def test_encoded_origin_prefix_lookalike_not_normalized(self):
   self.assertNotEqual(a.normalize('http%3A%2F%2Flocalhost%3A3000.evil%2Fguide','http://localhost:3000','https://example.com'),'https%3A%2F%2Fexample.com.evil%2Fguide')
+ def test_check_recapture_falls_back_to_capture_local_on_dead_loopback(self):
+  import sys, tempfile
+  from pathlib import Path
+  from unittest.mock import patch
+  with tempfile.TemporaryDirectory() as td:
+   tdp=Path(td);snap_path=tdp/'snap.json';rev_path=tdp/'rev.json'
+   route_res=self.parse()
+   route_res['htmlFile']='';route_res['textFile']=''
+   manifest={'canonicalBase':'https://example.com','author':'writer-1','routes':[self.route]}
+   snap={'capturedAt':'2026-11-12T00:00:00Z','baseUrl':'http://127.0.0.1:48435','domDir':None,'manifest':manifest,'routes':[route_res]}
+   snap['snapshotSha256']=a.digest(snap)
+   checks={k:{'status':'PASS','evidence':'Verified synthetic fixture check passes cleanly.'} for k in a.CHECKS}
+   rev={'reviewer':'auditor-1','snapshotSha256':snap['snapshotSha256'],'routes':[{'path':'/guide','fingerprint':route_res['fingerprint'],'verdict':'PASS','checks':checks}]}
+   a.save(str(snap_path),snap);a.save(str(rev_path),rev)
+   fresh=dict(snap,baseUrl='http://127.0.0.1:51234')
+   fresh.pop('snapshotSha256',None);fresh['snapshotSha256']=a.digest(fresh)
+   with patch.object(a,'capture',side_effect=ValueError('dead prior container port')), \
+        patch.object(a,'capture_local',return_value=fresh) as cap_local, \
+        patch.object(Path,'is_file',autospec=True,side_effect=lambda p: False if p.name=='review-archive.py' else p.exists()), \
+        patch.object(sys,'argv',['rendered-audit.py','check','--snapshot',str(snap_path),'--review',str(rev_path),'--recapture']):
+    a.main()
+    self.assertEqual(cap_local.call_count,1)
 if __name__=='__main__': unittest.main()

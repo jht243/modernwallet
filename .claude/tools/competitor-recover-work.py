@@ -137,6 +137,7 @@ def restore(root, intake, hint):
         report=json.loads(git(root,'show',commit+':'+ref['path']))
         if not isinstance(report,dict) or not report.get('snapshotSha256') or not report.get('reviewer'):continue
         for row in report.get('routes',[]):
+            if not row.get('reviewBudget'):continue
             admitted=json.loads(git(root,'show',commit+':'+row['reviewBudget']['path']))
             snapshot=json.loads(git(root,'show',commit+':'+admitted['snapshot']['path']))
             for route in snapshot['manifest']['routes']:declared.update(route.get('correctionContentFiles',[]))
@@ -156,7 +157,7 @@ def restore(root, intake, hint):
                      name.startswith('reports/competitor-monitor/intakes/') and intake.stem in name)
             if not belongs:
                 continue  # The ledger and canonical route journals have their own restore operations.
-        elif name not in declared:
+        elif name not in declared and not (part.parent==Path('data') and part.suffix=='.ts'):
             raise ValueError('Reconcile this additional source path before paid work: '+name)
         saved=git(root,'show',commit+':'+name)
         if not name.startswith('reports/'):
@@ -205,9 +206,11 @@ def restore(root, intake, hint):
         report=json.loads(evidence.read_bytes())
         if not isinstance(report,dict) or not report.get('snapshotSha256'):
             continue
+        budgeted_rows=[row for row in report.get('routes',[]) if row.get('reviewBudget')]
+        if not budgeted_rows:
+            continue  # Retain raw legacy/preview evidence without inventing a budget or recording it.
         archive_applications(root,policy,report,ref,commit,base)
-        for row in report.get('routes',[]):
-            if not row.get('reviewBudget'):continue  # Retain raw legacy/preview evidence without inventing a budget.
+        for row in budgeted_rows:
             admission=json.loads(policy.artifact(root,row['reviewBudget']).read_bytes())
             ident=admission['identity']
             journal=policy.Journal(root,ident['canonicalBase'],ident['route'])

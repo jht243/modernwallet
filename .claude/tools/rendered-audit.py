@@ -565,7 +565,7 @@ def main():
     p=sub.add_parser('capture'); p.add_argument('--manifest',required=True); p.add_argument('--base-url',required=True); p.add_argument('--out',required=True); p.add_argument('--dom-dir',help='Existing hydrated DOM input by route; not an output directory. Omit for complete server-rendered HTTP HTML.')
     p=sub.add_parser('capture-local'); p.add_argument('--manifest',required=True); p.add_argument('--run-id',required=True); p.add_argument('--out',required=True); p.add_argument('--dom-dir'); p.add_argument('--build',action='store_true')
     p=sub.add_parser('inspect-pack'); p.add_argument('--snapshot',required=True); p.add_argument('--route',action='append',default=[]); p.add_argument('--out')
-    p=sub.add_parser('check'); p.add_argument('--snapshot',required=True); p.add_argument('--review',required=True); p.add_argument('--recapture',action='store_true')
+    p=sub.add_parser('check'); p.add_argument('--snapshot',required=True); p.add_argument('--review',required=True); p.add_argument('--recapture',action='store_true'); p.add_argument('--base-url')
     p=sub.add_parser('compare'); p.add_argument('--approved',required=True); p.add_argument('--live',required=True); p.add_argument('--review',required=True)
     p=sub.add_parser('record-deployment')
     for name in ['snapshot','approved','review','commit','deployment-evidence','ledger']: p.add_argument('--'+name,required=True)
@@ -582,7 +582,21 @@ def main():
     elif a.command=='check':
         s=read(a.snapshot); review=read(a.review); review_check(s,review)
         if a.recapture:
-            fresh=capture(s['manifest'],s['baseUrl'],str(Path(a.snapshot).with_suffix('.recapture.json')),s.get('domDir')); compare(s,fresh,review,require_live=False)
+            recap_out=str(Path(a.snapshot).with_suffix('.recapture.json'))
+            target_base=a.base_url or s['baseUrl']
+            try:
+                fresh=capture(s['manifest'],target_base,recap_out,s.get('domDir'))
+            except (ValueError,OSError):
+                if a.base_url or urlsplit(target_base).hostname not in ('127.0.0.1','localhost'):
+                    raise
+                import tempfile
+                with tempfile.NamedTemporaryFile(mode='w',suffix='-manifest.json',delete=False) as mf:
+                    json.dump(s['manifest'],mf);mf_path=mf.name
+                try:
+                    fresh=capture_local(mf_path,'recapture-check',recap_out,s.get('domDir'),build=False)
+                finally:
+                    Path(mf_path).unlink(missing_ok=True)
+            compare(s,fresh,review,require_live=False)
         archive_path=Path(__file__).with_name('review-archive.py')
         if archive_path.is_file():
             import importlib.util
