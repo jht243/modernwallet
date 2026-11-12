@@ -251,7 +251,7 @@ BRANCH="$(git rev-parse --abbrev-ref HEAD)"; SHA="$(git rev-parse HEAD)"
 
 For no-changes (clean audit) / failure with no commit, pass `--commit-sha ""` and `--commit-url ""`.
 
-If Ahrefs returned 0 fixable issues → status `no-changes` ("Ahrefs audit clean — no fixable issues this week").
+If Ahrefs returned 0 fixable issues → still push the mandatory STEP 3b source receipt (`reports/site-audit/<date>.*.json`) to `main` via `.claude/scripts/deploy-run-to-main.sh push` before emailing so `claude/*` never stays ahead of `main`, then report status `no-changes` ("Ahrefs audit clean — no fixable issues this week").
 
 ## What this skill MUST NOT do
 

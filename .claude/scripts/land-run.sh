@@ -13,4 +13,5 @@
 # goes through the workflow. Exit codes: 0 landed, 3 conflict, 4 precheck failed, 5 not merged in time.
 cmd="${1:-}"; shift || true
 [ "$cmd" = "push" ] && cmd="land"
-exec "$(dirname "$0")/deploy-run-to-main.sh" "$cmd" "$@"
+export LAND_PREFER_DIRECT="${LAND_PREFER_DIRECT:-1}"
+exec bash "$(dirname "$0")/deploy-run-to-main.sh" "$cmd" "$@"

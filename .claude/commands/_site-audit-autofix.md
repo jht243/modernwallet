@@ -87,16 +87,24 @@ Every step below is REQUIRED and leaves a receipt that is committed with the run
 
 **Run them every run, even when this run changed nothing else** — a run with
 only receipts to commit still runs the build and every required check first.
-Every check the routine's prompt or the repo's CLAUDE.md says MUST pass (e.g.
-`npm run check-headings`, `check-depth`, typecheck, the build) must pass on the
-commit this run pushes — including failures that existed before the run. A
-failing required check is this run's to fix when the fix is mechanical and
-fact-safe (shorten an over-length deck/H1/title to the limit keeping its meaning
-and keyword; fix a type error). Run `rewrite-gate.py` on every content file you
-touch this way. Never push past a failing required check and never call its
-items "backlog". If an item truly cannot be fixed safely, revert only this run's
-changes that depend on it and report the exact check output under
-`## Not fixed this run`.
+Every build/structural check the routine's prompt or the repo's CLAUDE.md says
+MUST pass (e.g. `npm run check-headings`, JSON-LD validation, typecheck, and
+the production build) must pass on the commit this run pushes — including
+failures that existed before the run when the fix is mechanical and fact-safe
+(shorten an over-length deck/H1/title to the limit keeping its meaning and
+keyword; fix a type error). Run `rewrite-gate.py` on every content file you
+touch this way. **Exception — `check-depth` / `low_word_count` floors:** thin
+body word-count expansion belongs to `/indexing-pass-auto` (see the table row
+above — never pad or rewrite thin pages here). Run `check-depth` as a
+**no-regression check on files whose body prose this run edited**: pre-existing
+`check-depth` failures on untouched pages (or pages where this run only edited
+short metadata/alt/link fields without reducing body word count) MUST NOT block
+pushing this run's valid fixes and source receipt to `main` — note the
+pre-existing count as handled by `/indexing-pass-auto` and push normally. Never
+push past a failing build, typecheck, heading/schema check, or a depth
+regression introduced by this run. If an item truly cannot be fixed safely,
+revert only this run's changes that depend on it and report the exact check
+output under `## Not fixed this run`.
 
 ## Email
 

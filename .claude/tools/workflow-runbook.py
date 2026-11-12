@@ -108,7 +108,8 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
     elif phase == 'publish':
         has_land = (root / '.github/workflows/land.yml').is_file() and (root / '.claude/scripts/land-run.sh').is_file()
         deploy_cmd = (
-            'bash .claude/scripts/land-run.sh land'
+            'bash .claude/scripts/deploy-run-to-main.sh push '
+            '(falls back to `bash .claude/scripts/land-run.sh land` only if direct push to main is refused or PUBLISHER_RELEASE_DIR is set)'
             if has_land
             else 'bash .claude/scripts/deploy-run-to-main.sh push'
         )

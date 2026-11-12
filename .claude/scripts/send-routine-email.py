@@ -755,6 +755,38 @@ def main() -> int:
             return subprocess.run(["git", *a], capture_output=True, text=True, timeout=10).stdout.strip()
         except Exception:
             return ""
+    # Auto-reconcile routine branch state before recording/emailing (send-routine-email-main-sync-v1):
+    # 1) On no-op/no-changes runs, clean up untracked temporary pull JSONs under reports/ so
+    #    Claude Code's session-exit check never commits them onto an unmerged claude/* branch.
+    # 2) On non-failure runs, if HEAD on claude/* has unpushed commits touching ONLY reports/**
+    #    (source/pull/ledger receipts, never reader-facing content), land them via deploy-run-to-main.sh push.
+    raw_branch = _git("rev-parse", "--abbrev-ref", "HEAD")
+    auto_landed_sha = ""
+    if not args.dry_run and args.status in ("success", "no-op", "no-changes") and raw_branch.startswith("claude/"):
+        if args.status in ("no-op", "no-changes"):
+            porcelain = _git("status", "--porcelain", "-uall")
+            for status_line in porcelain.splitlines():
+                if status_line.startswith("?? "):
+                    rel_untracked = status_line[3:].strip()
+                    if rel_untracked.startswith("reports/") and rel_untracked.endswith(".pull.json"):
+                        try:
+                            (Path.cwd() / rel_untracked).unlink()
+                        except OSError:
+                            pass
+        deploy_helper = Path.cwd() / ".claude" / "scripts" / "deploy-run-to-main.sh"
+        if deploy_helper.is_file():
+            subprocess.run(["git", "fetch", "-q", "origin", "main"], capture_output=True, timeout=20)
+            in_main = subprocess.run(
+                ["git", "merge-base", "--is-ancestor", "HEAD", "origin/main"],
+                capture_output=True,
+                timeout=10,
+            ).returncode == 0
+            if not in_main:
+                ahead_paths = [p.strip() for p in _git("diff", "--name-only", "origin/main...HEAD").splitlines() if p.strip()]
+                if ahead_paths and all(p.startswith("reports/") for p in ahead_paths):
+                    if subprocess.run(["bash", str(deploy_helper), "push"], timeout=120).returncode == 0:
+                        auto_landed_sha = _git("rev-parse", "HEAD")
+                    raw_branch = _git("rev-parse", "--abbrev-ref", "HEAD") or raw_branch
     if not args.repo:
         url = _git("remote", "get-url", "origin")
         import re as _re
@@ -762,7 +794,7 @@ def main() -> int:
         if m:
             args.repo = m.group(1)
     if not args.branch:
-        args.branch = _git("rev-parse", "--abbrev-ref", "HEAD")
+        args.branch = raw_branch
     if not args.commit_sha:
         # Only fill if HEAD actually moved past origin's default branch base —
         # i.e. this run produced a commit. If nothing was committed, leave blank.
@@ -770,8 +802,22 @@ def main() -> int:
         # Heuristic: show the commit if the current branch is an ephemeral claude/* work branch
         # (routines always commit onto it) or if HEAD differs from origin/main.
         base = _git("rev-parse", "origin/main")
-        if head and (args.branch.startswith("claude/") or (base and head != base)):
-            args.commit_sha = head
+        if auto_landed_sha:
+            args.commit_sha = auto_landed_sha
+        elif head and (raw_branch.startswith("claude/") or (base and head != base)):
+            if args.status == "success" or (base and head != base):
+                args.commit_sha = head
+    check_ref = args.commit_sha or "HEAD"
+    if args.branch.startswith("claude/"):
+        try:
+            if subprocess.run(
+                ["git", "merge-base", "--is-ancestor", check_ref, "origin/main"],
+                capture_output=True,
+                timeout=10,
+            ).returncode == 0:
+                args.branch = "main"
+        except Exception:
+            pass
     if args.commit_sha and not args.commit_url and args.repo:
         args.commit_url = f"https://github.com/{args.repo}/commit/{args.commit_sha}"
 

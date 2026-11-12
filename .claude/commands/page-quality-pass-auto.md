@@ -79,6 +79,7 @@ This skill is repo-agnostic. The **routine message supplies this site's GA4 prop
 - No page clears the flagging bar (traffic floor + ≥2 weak signals) → digest "No under-engaging pages this window", `--status no-changes`, exit 0. Expected on a healthy site.
 - All flagged pages on cooldown/buffer → digest with the per-page table and next-eligible dates, `--status no-changes`, exit 0. Expected often — this pass treats a page at most once per week and defers to the GA4 pass's fresh audits.
 - Diagnosis says every flagged page is `QUICK_ANSWER_OK` → digest the verdicts, no edits, exit 0. **A page that answers fast and loses the visitor satisfied is a SUCCESS, not a defect.**
+- **Branch cleanliness on early exit (MANDATORY):** If you committed any `reports/**` receipt/ledger on an early exit, you MUST run `.claude/scripts/deploy-run-to-main.sh push` before calling `send-routine-email.py` so `claude/*` is never left ahead of `main`. If you made zero commits, delete the untracked `reports/page-quality-pass/<YYYY-MM-DD>.pull.json` file before exiting so session-exit hooks do not commit a branch-only pull file.
 
 ## Caps
 **None.** Every page that clears Phase 1 gets diagnosed; every prescription that clears Phase 4's audit ships. What bounds this pass is evidence (the flagging bar), cooldowns, and the audit — not numeric ceilings.

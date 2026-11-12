@@ -292,7 +292,44 @@ case "$cmd" in
           exit 4
         }
       fi
+      use_land_workflow=false
       if [ "$target" = "land" ]; then
+        if [ "${LAND_PREFER_DIRECT:-0}" != "1" ] || [ "${GITHUB_ACTIONS:-}" = "true" ] || [ -n "${PUBLISHER_RELEASE_DIR:-}" ] ||
+           git diff --name-only origin/main...HEAD 2>/dev/null | grep -Eq '^reports/paid-placements/publisher-(primary|backup)/.*/release\.json$'; then
+          use_land_workflow=true
+        elif git push origin HEAD:main; then
+          echo "[deploy] pushed $(git rev-parse --short HEAD) directly to main (attempt ${attempt})."
+          case "$branch" in
+            claude/*)
+              git fetch -q origin "$branch" 2>/dev/null || true
+              git push --force-with-lease --set-upstream origin "HEAD:refs/heads/$branch" 2>/dev/null \
+                || git push --set-upstream origin "HEAD:refs/heads/$branch" 2>/dev/null \
+                || echo "[deploy] WARN: main updated, but could not mirror refs/heads/$branch." >&2
+              ;;
+          esac
+          rm -f "$base_file"
+          if [ "$(git rev-parse --abbrev-ref HEAD)" = "HEAD" ]; then
+            git checkout -B main >/dev/null 2>&1 \
+              && echo "[deploy] reattached to main at $(git rev-parse --short HEAD)." \
+              || echo "[deploy] WARN: still detached; run 'git checkout -B main' by hand." >&2
+          fi
+          exit 0
+        else
+          git fetch -q origin main 2>/dev/null || true
+          if git merge-base --is-ancestor origin/main HEAD 2>/dev/null; then
+            echo "[deploy] direct push to main refused while base is current; falling back to claude/land/* workflow." >&2
+            use_land_workflow=true
+          else
+            echo "[deploy] push rejected (base moved); rebasing + retrying (${attempt}/3)." >&2
+            if ! rebase_or_regen origin/main; then
+              echo "[deploy] CONFLICT on retry rebase; aborting." >&2
+              exit 3
+            fi
+            continue
+          fi
+        fi
+      fi
+      if [ "$use_land_workflow" = "true" ]; then
         land_branch="claude/land/${key}-$(date +%s)"
         if ! git push origin "HEAD:refs/heads/${land_branch}"; then
           echo "[deploy] FAILED: could not push ${land_branch}." >&2
@@ -315,6 +352,13 @@ case "$cmd" in
         while :; do
           git fetch -q origin main 2>/dev/null || true
           if git merge-base --is-ancestor "$head_sha" origin/main 2>/dev/null; then
+            case "$branch" in
+              claude/*)
+                git fetch -q origin "$branch" 2>/dev/null || true
+                git push --force-with-lease --set-upstream origin "origin/main:refs/heads/$branch" 2>/dev/null \
+                  || git push --set-upstream origin "origin/main:refs/heads/$branch" 2>/dev/null || true
+                ;;
+            esac
             echo "[deploy] landed: origin/main ($(git rev-parse --short origin/main)) now contains $(git rev-parse --short "$head_sha")."
             exit 0
           fi
@@ -339,9 +383,14 @@ case "$cmd" in
       if git push origin HEAD:main; then
         echo "[deploy] pushed $(git rev-parse --short HEAD) to main (attempt ${attempt})."
         # Mirror this invocation's owned cloud branch at the same published commit.
-        # Claude's native completion check then sees the branch as fully pushed.
+        # Claude's native completion check then sees the branch as fully pushed even after rebase.
         case "$branch" in
-          claude/*) git push --set-upstream origin "HEAD:refs/heads/$branch" || exit 3 ;;
+          claude/*)
+            git fetch -q origin "$branch" 2>/dev/null || true
+            git push --force-with-lease --set-upstream origin "HEAD:refs/heads/$branch" 2>/dev/null \
+              || git push --set-upstream origin "HEAD:refs/heads/$branch" 2>/dev/null \
+              || echo "[deploy] WARN: main updated, but could not mirror refs/heads/$branch." >&2
+            ;;
         esac
         rm -f "$base_file"
         # Never leave the checkout detached: the next run must start on a real branch.

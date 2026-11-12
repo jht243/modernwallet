@@ -210,5 +210,64 @@ done
         self.assertEqual(len(self.checklog.read_text().splitlines()),1)
         self.assertEqual(len(self.fencelog.read_text().splitlines()),1)
 
+    def test_land_pushes_directly_to_main_when_permitted_and_mirrors_claude_branch(self):
+        land_sh = Path(__file__).resolve().with_name('land-run.sh').read_text()
+        self.write('.claude/scripts/land-run.sh', land_sh)
+        self.git(self.work,'checkout','-qb','claude/test-direct-land')
+        self.cmd(['bash','.claude/scripts/land-run.sh','mark'], self.work)
+        self.own_change()
+        r=self.cmd(['bash','.claude/scripts/land-run.sh','land'], self.work)
+        self.assertIn('directly to main',r.stdout)
+        self.assertEqual(self.git(self.remote,'show','main:run.txt').stdout,'exact reviewed candidate\n')
+        self.assertEqual(
+            self.git(self.remote,'rev-parse','refs/heads/claude/test-direct-land').stdout.strip(),
+            self.remote_tip(),
+        )
+        self.assertIn(self.remote_tip(),self.checklog.read_text().splitlines())
+        self.assertIn(self.remote_tip(),self.fencelog.read_text().splitlines())
+
+    def test_land_falls_back_to_claude_land_branch_when_direct_main_push_refused(self):
+        land_sh = Path(__file__).resolve().with_name('land-run.sh').read_text()
+        self.write('.claude/scripts/land-run.sh', land_sh)
+        hook=self.remote/'hooks/pre-receive'
+        hook.write_text('''#!/usr/bin/env bash
+while read old new ref; do
+  if [ "$ref" = "refs/heads/main" ] && [ "${ALLOW_MAIN_MERGE:-0}" != "1" ]; then
+    echo "restricted branch push: main not permitted" >&2
+    exit 1
+  fi
+  if git cat-file -e "$new:run.txt" 2>/dev/null; then
+    grep -qx "$new" "$CHECK_LOG" || exit 1
+    grep -qx "$new" "$FENCE_LOG" || exit 1
+  fi
+done
+'''); hook.chmod(0o755)
+        self.git(self.work,'checkout','-qb','claude/test-restricted-land')
+        self.cmd(['bash','.claude/scripts/land-run.sh','mark'], self.work)
+        self.own_change()
+        self.env['LAND_DEADLINE']='1'
+        self.env['LAND_POLL_SECONDS']='1'
+        r=self.cmd(['bash','.claude/scripts/land-run.sh','land'], self.work, ok=False)
+        self.assertEqual(r.returncode,5)
+        self.assertIn('falling back to claude/land/* workflow',r.stderr)
+        refs=self.git(self.remote,'for-each-ref','--format=%(refname)','refs/heads/claude/land/').stdout.splitlines()
+        self.assertEqual(len(refs),1)
+
+    def test_rebased_claude_branch_updates_existing_remote_claude_ref_without_failing(self):
+        self.git(self.work,'checkout','-qb','claude/test-rebased-mirror')
+        self.helper('mark')
+        # Simulate an earlier receipt push to origin/claude/test-rebased-mirror before origin/main advanced
+        self.write('reports/checkpoint.json','{}\n')
+        self.commit(self.work,'checkpoint')
+        self.git(self.work,'push','-q','origin','HEAD:refs/heads/claude/test-rebased-mirror')
+        self.own_change()
+        self.advance('concurrent-main\n')
+        r=self.helper('push')
+        self.assertEqual(r.returncode,0)
+        self.assertEqual(
+            self.git(self.remote,'rev-parse','refs/heads/claude/test-rebased-mirror').stdout.strip(),
+            self.remote_tip(),
+        )
+
 
 if __name__=='__main__': unittest.main()
