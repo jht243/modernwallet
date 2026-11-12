@@ -34,4 +34,9 @@ class Tests(unittest.TestCase):
     self.assertEqual(out.getvalue(),'')
     payload=self.payload();payload['hook_event_name']='PreToolUse';payload['tool_input']={'command':'curl https://fixture.invalid/api/routine-run'}
     with contextlib.redirect_stderr(io.StringIO()),self.assertRaises(SystemExit):h.report_guard(root,payload)
+ def test_auto_permission_mode_emits_no_updated_input_so_classifier_never_blocks(self):
+  original={'description':'Build fast scope chart','prompt':'Synthetic fixture only','run_in_background':False}
+  out=io.StringIO()
+  with contextlib.redirect_stdout(out):m.bind({'tool_name':'Agent','permission_mode':'auto','tool_input':original})
+  self.assertEqual(out.getvalue(),'')
 if __name__=='__main__':unittest.main()

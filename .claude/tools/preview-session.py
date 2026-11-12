@@ -12,9 +12,26 @@ def digest(raw):return hashlib.sha256(raw).hexdigest()
 def read(path):return json.loads(path.read_text())
 def framework(root):
  p=root/'package.json';v=read(p) if p.exists() else {};deps={**v.get('dependencies',{}),**v.get('devDependencies',{})}
- return 'next' if 'next' in deps else 'astro' if 'astro' in deps else 'static'
+ if 'next' in deps:return 'next'
+ if 'astro' in deps:return 'astro'
+ if not p.exists() and not (root/'dist/index.html').is_file() and (root/'server.py').is_file():return 'wsgi'
+ return 'static'
 def signature(root):
- kind=framework(root);marker=root/('.next/BUILD_ID' if kind=='next' else 'dist/index.html')
+ kind=framework(root)
+ if kind=='wsgi':
+  require((root/'server.py').is_file(),'WSGI server.py missing before starting preview')
+  names=subprocess.check_output(['git','ls-files','-co','--exclude-standard','-z'],cwd=root).decode().split('\0')
+  rows={}
+  for name in sorted(set(names)):
+   p=Path(name)
+   if not name or p.suffix not in {'.py','.html','.jinja','.jinja2','.json','.md','.mdx','.css','.js'}:continue
+   if p.parts[0] not in {'src','templates','static','data','content','seo','lib'} and name not in {'server.py','requirements.txt'}:continue
+   file=root/p
+   if not file.is_file() or file.is_symlink():continue
+   rows[name]=digest(file.read_bytes())
+  src_sha=digest(json.dumps(rows,sort_keys=True).encode())
+  return {'framework':kind,'buildId':src_sha,'sourceSha256':src_sha}
+ marker=root/('.next/BUILD_ID' if kind=='next' else 'dist/index.html')
  require(marker.is_file(),'Build the actual candidate before starting its preview')
  names=subprocess.check_output(['git','ls-files','-co','--exclude-standard','-z'],cwd=root).decode().split('\0')
  rows={};latest=0
@@ -66,15 +83,55 @@ def verify(root,base):
 
 def _node20_env():
  env=dict(os.environ)
+ env.pop('CLAUDECODE',None)
+ env.pop('CLAUDE_CODE_ENTRYPOINT',None)
+ env['ASTRO_PREVIEW_BACKGROUND']='1'
+ env.setdefault('CI','1')
  try:
   ver=subprocess.run(['node','-v'],env=env,capture_output=True,text=True,timeout=5).stdout.strip()
   if ver.startswith('v') and int(ver[1:].split('.',1)[0])>=20:return env
  except (OSError,ValueError,subprocess.SubprocessError):pass
- nvm=Path('/opt/nvm/versions/node')
- if nvm.is_dir():
-  bins=sorted([p/'bin' for p in nvm.glob('v*') if (p/'bin/node').is_file() and p.name[1:].split('.',1)[0].isdigit() and int(p.name[1:].split('.',1)[0])>=20])
-  if bins:env['PATH']=str(bins[-1])+':'+env.get('PATH','')
+ for nvm_base in [env.get('NVM_DIR'),'/opt/nvm',str(Path.home()/'.nvm'),'/root/.nvm','/usr/local/nvm','/usr/local/share/nvm']:
+  if not nvm_base:continue
+  nvm=Path(nvm_base)/'versions/node'
+  if nvm.is_dir():
+   bins=sorted([p/'bin' for p in nvm.glob('v*') if (p/'bin/node').is_file() and p.name[1:].split('.',1)[0].isdigit() and int(p.name[1:].split('.',1)[0])>=20])
+   if bins:
+    env['PATH']=str(bins[-1])+':'+env.get('PATH','')
+    return env
+ for brew in ['/opt/homebrew/opt/node@20/bin','/usr/local/opt/node@20/bin']:
+  if (Path(brew)/'node').is_file():
+   env['PATH']=brew+':'+env.get('PATH','')
+   return env
  return env
+
+def _wsgi_command(root,port,folder):
+ import ast,importlib.util as _ilu
+ py=sys.executable
+ if (root/'requirements.txt').is_file():
+  missing=False
+  try:
+   tree=ast.parse((root/'server.py').read_text(errors='replace'))
+   mods={n.names[0].name.split('.')[0] for n in ast.walk(tree) if isinstance(n,ast.Import)} | {n.module.split('.')[0] for n in ast.walk(tree) if isinstance(n,ast.ImportFrom) and n.module and n.level==0}
+   for m in sorted(mods):
+    if not (root/(m+'.py')).is_file() and not (root/m/'__init__.py').is_dir() and _ilu.find_spec(m) is None:
+     missing=True;break
+  except SyntaxError:
+   missing=True
+  if missing:
+   venv_dir=folder/'wsgi-venv'
+   venv_py=venv_dir/'bin/python'
+   if not venv_py.is_file():
+    subprocess.run([py,'-m','venv',str(venv_dir)],cwd=root,check=True,capture_output=True)
+   subprocess.run([str(venv_py),'-m','pip','install','-q','--disable-pip-version-check','--ignore-installed','blinker','-r',str(root/'requirements.txt')],cwd=root,check=True,capture_output=True)
+   py=str(venv_py)
+ runner=(
+  'import sys; sys.path.insert(0, "."); import server; '
+  f'server.app.run(host="127.0.0.1", port={port}, debug=False, use_reloader=False) '
+  'if hasattr(server.app, "run") else '
+  f'__import__("wsgiref.simple_server").simple_server.make_server("127.0.0.1", {port}, server.app).serve_forever()'
+ )
+ return [py,'-c',runner]
 
 def start(root,run,route='/'):
  require(re.fullmatch(r'[A-Za-z0-9._-]{6,128}',run),'Use the actual verified invocation run ID')
@@ -84,6 +141,7 @@ def start(root,run,route='/'):
  with socket.socket() as sock:sock.bind(('127.0.0.1',0));port=sock.getsockname()[1]
  if current['framework']=='next':command=[str(root/'node_modules/.bin/next'),'start','--hostname','127.0.0.1','--port',str(port)]
  elif current['framework']=='astro':command=[str(root/'node_modules/.bin/astro'),'preview','--host','127.0.0.1','--port',str(port)]
+ elif current['framework']=='wsgi':command=_wsgi_command(root,port,folder)
  else:command=[sys.executable,'-m','http.server',str(port),'--bind','127.0.0.1','--directory',str(root/'dist')]
  log=folder/('port-'+str(port)+'-'+str(time.time_ns())+'.log')
  with log.open('xb') as output:process=subprocess.Popen(command,cwd=root,env=_node20_env(),stdout=output,stderr=subprocess.STDOUT,start_new_session=True)

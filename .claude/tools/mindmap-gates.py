@@ -190,8 +190,65 @@ def independent(review, author, bound_key, expected):
     require(review.get(bound_key) == expected, 'Review belongs to a different artifact')
 
 
+SCOPE_BRIEFS = {
+    'identity': 'Identity',
+    'readerAndAnswer': 'Reader and answer',
+    'keywordEvidence': 'Keyword evidence',
+    'whyNewPage': 'Why a new page',
+    'outline': 'Planned outline',
+    'takeaway': 'Planned takeaway',
+}
+SUBLAUNCH_TOKENS = ('-mini', '-flash', '-haiku', '-nano', '-lite', '-hydrogen')
+
+
+def model_launch_check(root, plan, creates):
+    """Enforce docs/model-launch-page-family.md Lean Launch Set when present."""
+    family_doc = root / 'docs/model-launch-page-family.md'
+    if not family_doc.is_file() or 'Lean Launch Set' not in family_doc.read_text(errors='ignore'):
+        return
+    slugs = [row['target'].rstrip('/').split('/')[-1] for row in creates.values()]
+    launch = plan.get('modelLaunch')
+    inferred_slug = None
+    if launch is not None:
+        require(isinstance(launch, dict), 'modelLaunch must be an object when present')
+        level = launch.get('level')
+        require(level in ('small', 'mid', 'frontier'), 'modelLaunch.level must be small, mid or frontier')
+        prose(launch.get('modelSlug'), 'modelLaunch.modelSlug')
+        inferred_slug = launch['modelSlug'].strip().strip('/')
+    else:
+        explained = {s[:-len('-explained')] for s in slugs if s.endswith('-explained')}
+        pricing = {s[:-len('-pricing')] for s in slugs if s.endswith('-pricing')}
+        both = sorted(explained & pricing)
+        if len(both) == 1:
+            inferred_slug = both[0]
+            level = 'small' if any(inferred_slug.endswith(tok) or (tok + '-') in inferred_slug for tok in SUBLAUNCH_TOKENS) else None
+        else:
+            level = None
+    if not inferred_slug:
+        return
+    forbidden = [s for s in slugs if s.endswith('-alternatives') or s.endswith('-for-business')]
+    require(
+        not forbidden,
+        'Lean Launch Set (docs/model-launch-page-family.md) forbids -alternatives and -for-business on model launches: '
+        + ', '.join(forbidden),
+    )
+    if level == 'small':
+        require(
+            len(creates) <= 3,
+            f'Lean Launch Set (docs/model-launch-page-family.md) caps small/sub-tier model launches ({inferred_slug}) at 3 new pages max '
+            '({model}-explained, {model}-pricing, {model}-vs-{prev}); fold how-to, free-tier, limits and benchmarks into sections of those 3 pages',
+        )
+    elif level == 'mid':
+        require(
+            len(creates) <= 10,
+            f'Lean Launch Set (docs/model-launch-page-family.md) caps mid-tier model launches ({inferred_slug}) at 10 new pages max',
+        )
+
+
 def chart(root, plan, review):
     require(plan.get('schemaVersion') == VERSION, 'Unsupported chart schemaVersion')
+    mode = plan.get('preparationMode', 'full')
+    require(mode in ('full', 'fast-scope'), 'Unsupported preparationMode: must be full or fast-scope')
     content(plan.get('author'), 'author')
     datetime.date.fromisoformat(plan.get('date', ''))
     content(plan.get('source'), 'chart source')
@@ -221,37 +278,68 @@ def chart(root, plan, review):
             require(target not in targets, 'Duplicate new-page target')
             targets.add(target)
             creates[row['id']] = row
+    model_launch_check(root, plan, creates)
     request_contract(root, plan)
-    briefs = plan.get('newPageBriefs', [])
-    require(isinstance(briefs, list), 'newPageBriefs must be an array')
-    seen = set()
-    for brief in briefs:
-        key = brief.get('actionId')
-        require(key in creates and key not in seen, 'Brief lacks unique matching new-page action')
-        seen.add(key)
-        require(brief.get('target') == creates[key]['target'], 'Brief/action targets disagree')
-        for field in BRIEFS:
-            content(brief.get(field), 'brief.' + field)
-        require(isinstance(brief['outline'], list) and brief['outline'], 'Planned outline requires specific sections')
-        identity = brief['identity']
-        require(isinstance(identity, dict), 'Identity must contain explicit fields')
-        for field in ['title', 'pageType', 'format', 'medium']:
-            content(identity.get(field), 'identity.' + field)
-        row = creates[key]
-        require(identity['format'] == row['format'] and identity['medium'] == row['resolved_deliverable'],
-                'Action and brief format/resolved medium disagree')
-        require(not re.search(r'\bvideo\b', identity['format'] + ' ' + identity['medium'], re.I),
-                'Video is outside this workflow')
-        answer = brief['readerAndAnswer']
-        require(isinstance(answer, dict) and answer.get('question') == row['reader_question']
-                and answer.get('answer') == row['answer'] and answer.get('placement') == row['answer_placement'],
-                'Brief must preserve the approved reader question, answer and placement')
-        for key in ['inboundLinks', 'outboundLinks']:
-            placements(root, brief, key)
-        require(brief.get('evidenceFiles'), 'Each brief requires its inspected evidence files')
-        for ref in brief['evidenceFiles']:
-            preparation_artifact(root, ref)
-    require(seen == set(creates), 'Every new-page action needs its complete inline brief')
+    if mode == 'fast-scope':
+        scope_briefs = plan.get('scopeBriefs') if 'scopeBriefs' in plan else plan.get('newPageBriefs', [])
+        require(isinstance(scope_briefs, list), 'scopeBriefs must be an array in fast-scope mode')
+        seen = set()
+        for brief in scope_briefs:
+            key = brief.get('actionId')
+            require(key in creates and key not in seen, 'Scope brief lacks unique matching new-page action')
+            seen.add(key)
+            require(brief.get('target') == creates[key]['target'], 'Scope brief/action targets disagree')
+            for field in SCOPE_BRIEFS:
+                content(brief.get(field), 'scopeBrief.' + field)
+            require(isinstance(brief['outline'], list) and brief['outline'], 'Planned outline requires specific sections')
+            identity = brief['identity']
+            require(isinstance(identity, dict), 'Identity must contain explicit fields')
+            for field in ['title', 'pageType', 'format', 'medium']:
+                content(identity.get(field), 'identity.' + field)
+            row = creates[key]
+            require(identity['format'] == row['format'] and identity['medium'] == row['resolved_deliverable'],
+                    'Action and scope brief format/resolved medium disagree')
+            require(not re.search(r'\bvideo\b', identity['format'] + ' ' + identity['medium'], re.I),
+                    'Video is outside this workflow')
+            answer = brief['readerAndAnswer']
+            require(isinstance(answer, dict) and answer.get('question') == row['reader_question']
+                    and answer.get('answer') == row['answer'] and answer.get('placement') == row['answer_placement'],
+                    'Scope brief must preserve the approved reader question, answer and placement')
+            require(brief.get('evidenceFiles'), 'Each scope brief requires its inspected evidence files')
+            for ref in brief['evidenceFiles']:
+                preparation_artifact(root, ref)
+        require(seen == set(creates), 'Every new-page action needs its scope brief in fast-scope mode')
+    else:
+        briefs = plan.get('newPageBriefs', [])
+        require(isinstance(briefs, list), 'newPageBriefs must be an array')
+        seen = set()
+        for brief in briefs:
+            key = brief.get('actionId')
+            require(key in creates and key not in seen, 'Brief lacks unique matching new-page action')
+            seen.add(key)
+            require(brief.get('target') == creates[key]['target'], 'Brief/action targets disagree')
+            for field in BRIEFS:
+                content(brief.get(field), 'brief.' + field)
+            require(isinstance(brief['outline'], list) and brief['outline'], 'Planned outline requires specific sections')
+            identity = brief['identity']
+            require(isinstance(identity, dict), 'Identity must contain explicit fields')
+            for field in ['title', 'pageType', 'format', 'medium']:
+                content(identity.get(field), 'identity.' + field)
+            row = creates[key]
+            require(identity['format'] == row['format'] and identity['medium'] == row['resolved_deliverable'],
+                    'Action and brief format/resolved medium disagree')
+            require(not re.search(r'\bvideo\b', identity['format'] + ' ' + identity['medium'], re.I),
+                    'Video is outside this workflow')
+            answer = brief['readerAndAnswer']
+            require(isinstance(answer, dict) and answer.get('question') == row['reader_question']
+                    and answer.get('answer') == row['answer'] and answer.get('placement') == row['answer_placement'],
+                    'Brief must preserve the approved reader question, answer and placement')
+            for key in ['inboundLinks', 'outboundLinks']:
+                placements(root, brief, key)
+            require(brief.get('evidenceFiles'), 'Each brief requires its inspected evidence files')
+            for ref in brief['evidenceFiles']:
+                preparation_artifact(root, ref)
+        require(seen == set(creates), 'Every new-page action needs its complete inline brief')
     prep = plan.get('preparation', {})
     require(prep.get('status') == 'PASS', 'Preparation incomplete: show a blocked report, not an approval chart')
     readiness = preparation_artifact(root, prep.get('readiness'))
@@ -286,6 +374,8 @@ def chart(root, plan, review):
 def complete_news_chart(root, plan, review):
     path = root/'scripts/news_radar/news_intake.py'
     if path.is_file() and any(ref.get('path','').startswith('reports/news-radar/intakes/') for ref in plan.get('evidenceFiles', [])):
+        require(plan.get('preparationMode', 'full') == 'full',
+                'Automated news-radar intakes require full chart preparation (preparationMode="full")')
         spec=importlib.util.spec_from_file_location('news_intake_receipt',path)
         news=importlib.util.module_from_spec(spec);spec.loader.exec_module(news)
         news.after_saved_chart(root,plan,review)
@@ -296,6 +386,12 @@ def complete_hype_chart(root, plan, review):
     if hype.is_file() and ((root/'.claude/workflow-policy.local.json').is_file() or (root/'.claude/tools/workflow-efficiency.py').is_file()) and (root/'reports/hype-radar/intakes').is_dir():
         spec=importlib.util.spec_from_file_location('hype_chart_handoff',hype)
         handoff=importlib.util.module_from_spec(spec);spec.loader.exec_module(handoff)
+        if plan.get('preparationMode', 'full') != 'full':
+            directory = root/'reports/hype-radar/intakes'
+            matched = [directory/(ref['sha256']+'.json') for ref in plan.get('evidenceFiles', []) if (directory/(ref.get('sha256', '')+'.json')).is_file()]
+            require(not matched and handoff.active_pull(root, {}) is None,
+                    'Automated hype-radar intakes require full chart preparation (preparationMode="full")')
+            return
         handoff.after_chart(root,plan,review)
 
 
@@ -304,6 +400,11 @@ def complete_competitor_chart(root, plan, review):
     if path.is_file():
         spec=importlib.util.spec_from_file_location('competitor_chart_handoff',path)
         module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+        if plan.get('preparationMode', 'full') != 'full':
+            active_intake = module.active(root)
+            require(active_intake is None or module.completed(root, active_intake),
+                    'Automated competitor-monitor intakes require full chart preparation (preparationMode="full")')
+            return
         module.after_chart(root,plan,review)
 
 
@@ -318,10 +419,14 @@ def display(value):
 
 
 def render(plan):
-    lines = ['---', 'mindmap_pass_date: ' + plan['date'], 'source: ' + json.dumps(plan['source'], ensure_ascii=False),
-             'interpreted_brief: ' + json.dumps(plan['interpretedBrief'], ensure_ascii=False),
-             'status: ready-for-approval', '---', '', '# Content approval plan', '', '## Action chart', '',
-             '| ' + ' | '.join(HEADINGS) + ' |', '| ' + ' | '.join(['---'] * len(COLUMNS)) + ' |']
+    prep_mode = plan.get('preparationMode', 'full')
+    frontmatter = ['---', 'mindmap_pass_date: ' + plan['date'], 'source: ' + json.dumps(plan['source'], ensure_ascii=False),
+                   'interpreted_brief: ' + json.dumps(plan['interpretedBrief'], ensure_ascii=False)]
+    if prep_mode == 'fast-scope':
+        frontmatter.append('preparation_mode: fast-scope')
+    frontmatter += ['status: ready-for-approval', '---', '', '# Content approval plan', '', '## Action chart', '',
+                    '| ' + ' | '.join(HEADINGS) + ' |', '| ' + ' | '.join(['---'] * len(COLUMNS)) + ' |']
+    lines = frontmatter
     for row in plan['actions']:
         lines.append('| ' + ' | '.join(str(row[k]).replace('|', '\\|').replace('\n', '<br>') for k in COLUMNS) + ' |')
     if plan.get('request'):
@@ -330,11 +435,20 @@ def render(plan):
     for row in plan['actions']:
         if row.get('presentation'):
             lines += ['', '### Presentation — ' + row['id'], '', display(row['presentation'])]
-    lines += ['', '## Emerging search patterns (clusters)', '', display(plan['emergingClusters']), '', '## Exclusions', '', display(plan['exclusions']), '', '## New-page briefs']
-    for brief in plan.get('newPageBriefs', []):
-        lines += ['', f"### {brief['actionId']} — {brief['target']}"]
-        for key, label in BRIEFS.items():
-            lines += ['', '**' + label + '**', '', display(brief[key])]
+    if prep_mode == 'fast-scope':
+        lines += ['', '## Emerging search patterns (clusters)', '', display(plan['emergingClusters']), '',
+                  '## Exclusions', '', display(plan['exclusions']), '',
+                  '## Scope briefs (fast-scope — full briefs & link inspections run after Phase 0 approval)']
+        for brief in plan.get('scopeBriefs', []):
+            lines += ['', f"### {brief['actionId']} — {brief['target']}"]
+            for key, label in SCOPE_BRIEFS.items():
+                lines += ['', '**' + label + '**', '', display(brief[key])]
+    else:
+        lines += ['', '## Emerging search patterns (clusters)', '', display(plan['emergingClusters']), '', '## Exclusions', '', display(plan['exclusions']), '', '## New-page briefs']
+        for brief in plan.get('newPageBriefs', []):
+            lines += ['', f"### {brief['actionId']} — {brief['target']}"]
+            for key, label in BRIEFS.items():
+                lines += ['', '**' + label + '**', '', display(brief[key])]
     lines += ['', '## Execution plan', '']
     for item in plan['executionPlan']:
         lines.append(f"{item['phase']}. {item['action']}")
@@ -447,6 +561,8 @@ def analysis(root, packet):
         return packet
     bound = packet.get('approvedPlan', {})
     plan = read(artifact(root, bound.get('manifest')))
+    require(plan.get('preparationMode', 'full') == 'full',
+            'Fast-scope chart requires post-approval full brief and link-inspection expansion before Phase 3 analysis or writing')
     chart(root, plan, read(artifact(root, bound.get('review'))))
     rows = [r for r in plan['actions'] if r['id'] == bound.get('actionId') and r['bucket'] in SUBSTANTIVE]
     require(len(rows) == 1 and rows[0]['target'].rstrip('/') == packet['route'].rstrip('/'),
@@ -519,6 +635,8 @@ def analysis(root, packet):
 
 
 def generation(root, plan, review, packet, slug, section=False):
+    require(plan.get('preparationMode', 'full') == 'full',
+            'Fast-scope chart requires post-approval full brief and link-inspection expansion before Phase 3 analysis or writing')
     chart(root, plan, review)
     saved_chart(root, plan)
     complete_news_chart(root, plan, review)
@@ -859,6 +977,8 @@ def main():
         q = s.add_parser(name)
         q.add_argument('--manifest', required=True)
         q.add_argument('--review', required=True)
+        if name == 'validate-chart':
+            q.add_argument('--chart', help='Optional expected rendered chart path')
         if name == 'render-chart':
             q.add_argument('--out', required=True)
         if name == 'generation-check':
@@ -874,11 +994,11 @@ def main():
     q = s.add_parser('cases')
     q.add_argument('--query', required=True)
     q.add_argument('--context-query', action='append', default=[], help='Layer3: relevant workflow/problem query; repeat as needed')
-    q.add_argument('--publisher', required=True)
+    q.add_argument('--publisher', '--site-host', dest='publisher', required=True)
     q.add_argument('--out', required=True)
     q = s.add_parser('cases-batch')
     q.add_argument('--manifest', required=True)
-    q.add_argument('--publisher', required=True)
+    q.add_argument('--publisher', '--site-host', dest='publisher', required=True)
     q.add_argument('--out-dir', required=True)
     q = s.add_parser('hash')
     q.add_argument('--file', required=True)
@@ -911,6 +1031,9 @@ def main():
             destination.parent.mkdir(parents=True, exist_ok=True)
             destination.write_text(render(plan))
         else:
+            if a.command == 'validate-chart' and getattr(a, 'chart', None):
+                require(Path(a.chart).resolve() == (root / plan['chartPath']).resolve(),
+                        'Specified --chart path differs from manifest chartPath')
             saved_chart(root, plan)
             complete_news_chart(root, plan, review)
             complete_hype_chart(root, plan, review)

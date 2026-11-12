@@ -22,8 +22,10 @@ def source(name):
             and not any(x.startswith('.') for x in p.parts) and not PRIVATE.search(name)
             and (name in ROOT_FILES or (p.parts[0] in SOURCE_DIRS and p.suffix.lower() in SOURCE_EXTS)))
 
+PROMISOR_FLAGS = ('-c', 'remote.origin.promisor=true', '-c', 'remote.origin.partialclonefilter=blob:none')
+
 def call(root, *args, check=True):
-    return subprocess.run(['git', *args],cwd=root,capture_output=True,check=check)
+    return subprocess.run(['git', *PROMISOR_FLAGS, *args],cwd=root,capture_output=True,check=check)
 
 def changed_sources(root):
     """Save render-affecting edits, including styles, templates, additions and deletions."""
@@ -64,7 +66,7 @@ def verified_objects(root, revision, digests):
     if not all(re.fullmatch('[0-9a-f]{64}',v) for v in wanted_list):
         raise ValueError('Invalid archive digest')
     specs=''.join(revision+':artifacts/'+v+'\n' for v in wanted_list).encode()
-    result=subprocess.run(['git','cat-file','--batch-check=%(objectname) %(objecttype)'],cwd=root,input=specs,capture_output=True,check=True)
+    result=subprocess.run(['git',*PROMISOR_FLAGS,'cat-file','--batch-check=%(objectname) %(objecttype)'],cwd=root,input=specs,capture_output=True,check=True)
     headers=result.stdout.splitlines()
     if len(headers)!=len(wanted_list):raise ValueError('Incomplete archive index')
     cache=Path(call(root,'rev-parse','--absolute-git-dir').stdout.decode().strip())/'verified-review-blobs'
@@ -76,7 +78,7 @@ def verified_objects(root, revision, digests):
         receipt=cache/wanted
         if not receipt.is_file() or receipt.read_bytes()!=parts[0]:new.append((wanted,parts[0]))
     if not new:return
-    process=subprocess.Popen(['git','cat-file','--batch'],cwd=root,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.DEVNULL)
+    process=subprocess.Popen(['git',*PROMISOR_FLAGS,'cat-file','--batch'],cwd=root,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.DEVNULL)
     try:
         for wanted, oid in new:
             if not re.fullmatch('[0-9a-f]{64}',wanted):raise ValueError('Invalid review archive digest')

@@ -50,11 +50,19 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
         'No --help / grep / sed on .claude/tools/*.py needed; use these exact verified commands:',
     ]
     if is_local:
-        lines.append(
-            f'1. Complete preflight: python3 .claude/tools/workflow-preflight.py challenge --run-dir {rel_dir} '
-            f'&& write application.json (verbatim >=30-char quotes sliced from manifest["files"]) '
-            f'&& python3 .claude/tools/workflow-preflight.py check --run-dir {rel_dir} --application {rel_dir}/application.json'
-        )
+        if manifest.get('reuse') and (root / '.claude/tools/instruction-understanding.py').is_file():
+            lines.append(
+                f'1. Complete --reuse preflight in 1 turn (carry unchanged explanations without rewriting 16 sources): '
+                f'python3 .claude/tools/instruction-understanding.py challenge --run-dir {rel_dir} '
+                f'&& write {rel_dir}/confirmation.json (freshUnderstanding ONLY for freshExplanationSources) '
+                f'&& python3 .claude/tools/instruction-understanding.py record --run-dir {rel_dir} --confirmation {rel_dir}/confirmation.json --out {rel_dir}/application.json'
+            )
+        else:
+            lines.append(
+                f'1. Complete preflight: python3 .claude/tools/workflow-preflight.py challenge --run-dir {rel_dir} '
+                f'&& write application.json (verbatim >=30-char quotes sliced from manifest["files"]) '
+                f'&& python3 .claude/tools/workflow-preflight.py check --run-dir {rel_dir} --application {rel_dir}/application.json'
+            )
     else:
         lines.append(
             f'1. Complete preflight: python3 .claude/tools/workflow-preflight.py check --run-dir {rel_dir}'
@@ -62,16 +70,26 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
 
     if phase == 'build':
         lines.extend([
-            '2. Batch case lookup (if BUILD writes approval-manifest.json): '
-            f'python3 .claude/tools/mindmap-gates.py cases-batch --manifest <RUN_DIR>/approval-manifest.json --site-host {canonical_base.replace("https://", "")} --out-dir <RUN_DIR>/evidence',
-            '3. Chart Reviewer ONLY (never self-approve in BUILD): write <RUN_DIR>/chart-review.json '
-            '(keys: jobId, reviewer, manifestSha256, verdict ["PASS"|"FAIL"], findings, resolvedFindingIds), then on PASS run: '
+            '2. Manual interactive /mindmap-pass pre-Phase-0 scope chart (never unattended *-auto): set "preparationMode": "fast-scope" and "scopeBriefs": '
+            '[{"actionId", "target", "identity": {"title","pageType","format","medium"}, "readerAndAnswer": {"question","answer","placement"}, '
+            '"keywordEvidence", "whyNewPage", "outline": [{"heading","purpose"}], "takeaway", "evidenceFiles": [{"path","sha256"}]}] '
+            '(plus "modelLaunch": {"level": "small"|"mid"|"frontier", "modelSlug": "<slug>"} on AI model launches when docs/model-launch-page-family.md exists).',
+            '3. Batch case lookup (full preparation mode; skipped during manual pre-Phase-0 fast-scope): '
+            f'python3 .claude/tools/mindmap-gates.py cases-batch --manifest <RUN_DIR>/approval-manifest.json --publisher {canonical_base.replace("https://", "")} --out-dir <RUN_DIR>/evidence',
+            '4. Chart Reviewer ONLY (never self-approve in BUILD): write <RUN_DIR>/chart-review.json '
+            '(keys: jobId, reviewer, manifestSha256, readinessSha256, verdict ["PASS"|"FAIL"], evidence, requestCoverage, findings, resolvedFindingIds), then on PASS run: '
             'python3 .claude/tools/mindmap-gates.py render-chart --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json --out <CHART_PATH> '
-            '&& python3 .claude/tools/mindmap-gates.py validate-chart --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json --chart <CHART_PATH>',
+            '&& python3 .claude/tools/mindmap-gates.py validate-chart --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json',
+            '5. MAIN dispatcher 1-command WRITE handoff seal (after full chart PASS & authorization): '
+            + (
+                'python3 .claude/tools/workflow-handoff.py auto-seal --phase write --manifest <RUN_DIR>/approval-manifest.json --producer <BUILDER_ACTOR> --out <RUN_DIR>/handoff-write.json --pack-out <RUN_DIR>/packet-write.json'
+                if is_local
+                else 'python3 .claude/tools/workflow-handoff.py auto-seal --phase write --manifest <RUN_DIR>/approval-manifest.json --producer <BUILDER_ACTOR> --out <RUN_DIR>/handoff-write.json'
+            ),
         ])
         if has_hype_check:
             lines.append(
-                '4. Hype angle gate (when a frozen hype intake exists): '
+                '6. Hype angle gate (when a frozen hype intake exists): '
                 'python3 scripts/hype_radar/check_chart.py --pull <FROZEN_INTAKE> --chart <CHART_PATH>'
             )
     elif phase == 'write':
@@ -80,17 +98,27 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
                 f'2. Standards ledger (no 140KB dump): WORKFLOW_RUN_ID={run_id} bash .claude/tools/load-standards.sh "<routine>" "write" --run-id {run_id} --ledger-only'
             )
         lines.append(
-            f'3. Batch cases (if needed): python3 .claude/tools/mindmap-gates.py cases-batch --manifest <RUN_DIR>/approval-manifest.json --site-host {canonical_base.replace("https://", "")} --out-dir <RUN_DIR>/evidence'
+            f'3. Batch cases (if needed): python3 .claude/tools/mindmap-gates.py cases-batch --manifest <RUN_DIR>/approval-manifest.json --publisher {canonical_base.replace("https://", "")} --out-dir <RUN_DIR>/evidence'
         )
         if lint_cmd:
             lines.append(f'4. Content lint (single batch pass): {lint_cmd}')
         if has_fresh_preview:
-            lines.append('5. Build & capture rendered preview (1-shot): python3 .claude/tools/fresh-preview.local.py ...')
+            lines.append(
+                f'5. Build & capture rendered preview in 1 command (auto-generates render manifest & installs deps if missing): '
+                f'python3 .claude/tools/fresh-preview.local.py --auto-manifest <RUN_DIR>/approval-manifest.json --author {actor} --manifest <RUN_DIR>/audit/capture-manifest.json --run-id {run_id} --out <RUN_DIR>/audit/preview-snapshot.json'
+            )
+            lines.append(
+                f'6. MAIN dispatcher 1-command AUDIT handoff seal: '
+                f'python3 .claude/tools/workflow-handoff.py auto-seal --phase audit --manifest <RUN_DIR>/approval-manifest.json --previous <RUN_DIR>/handoff-write.json --snapshot <RUN_DIR>/audit/preview-snapshot.json --producer {actor} --actor <AUDITOR_ACTOR> --out <RUN_DIR>/handoff-audit.json --pack-out <RUN_DIR>/packet-audit.json'
+            )
         else:
             lines.append(
-                f'5. Build & capture rendered preview in 1 turn (starts & stops preview automatically): '
-                f'write <RUN_DIR>/audit/capture-manifest.json ({{"workflowKind":"mindmap-pass","author":"{actor}","canonicalBase":"{canonical_base}","routes":[{{"path":"/route/","claimCategories":["capability"]}}]}}) '
-                f'&& python3 .claude/tools/rendered-audit.py capture-local --manifest <RUN_DIR>/audit/capture-manifest.json --run-id {run_id} --out <RUN_DIR>/audit/preview-snapshot.json --build'
+                f'5. Build & capture rendered preview in 1 command (auto-generates capture-manifest.json, handles Node/Astro/WSGI, starts & stops preview): '
+                f'python3 .claude/tools/rendered-audit.py capture-local --auto-manifest <RUN_DIR>/approval-manifest.json --author {actor} --manifest <RUN_DIR>/audit/capture-manifest.json --run-id {run_id} --out <RUN_DIR>/audit/preview-snapshot.json --build'
+            )
+            lines.append(
+                f'6. MAIN dispatcher 1-command AUDIT handoff seal: '
+                f'python3 .claude/tools/workflow-handoff.py auto-seal --phase audit --manifest <RUN_DIR>/approval-manifest.json --previous <RUN_DIR>/handoff-write.json --snapshot <RUN_DIR>/audit/preview-snapshot.json --producer {actor} --actor <AUDITOR_ACTOR> --out <RUN_DIR>/handoff-audit.json'
             )
     elif phase == 'audit':
         lines.extend([
@@ -98,9 +126,12 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
             'python3 .claude/tools/rendered-audit.py inspect-pack --snapshot <SNAPSHOT_JSON>',
             f'3. Reserve all routes & emit pre-bound review skeleton in 1 turn (never hand-roll hashes): '
             f'python3 .claude/tools/audit-batch.py reserve-batch --snapshot <SNAPSHOT_JSON> --job-id <JOB_ID> '
-            f'--reviewer {actor} --preflight {rel_dir} --out-dir <RUN_DIR>/audit/admissions --skeleton <RUN_DIR>/audit/review.json',
-            '4. After genuine full-text, primary-source & layout audit, populate real PASS/FAIL verdicts + >=40-char factualReview & >=20-char checks evidence in <RUN_DIR>/audit/review.json, then run: '
-            'python3 .claude/tools/content-review-policy.py record --review <RUN_DIR>/audit/review.json '
+            f'--reviewer {actor} --preflight {rel_dir} '
+            + ('--writer-preflight <RUN_DIR>/preflight-write ' if is_local else '')
+            + '--out-dir <RUN_DIR>/audit/admissions --skeleton <RUN_DIR>/audit/review.json',
+            '4. Populate real PASS/FAIL verdicts + >=40-char riskAssessment.rationale (and >=40-char reason on every incidentalMentions/consequentialClaims item) + >=40-char factualReview + >=20-char checks evidence in <RUN_DIR>/audit/review.json, then sync profile/keys & record in 1 turn: '
+            'python3 .claude/tools/audit-batch.py finalize-review --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json '
+            '&& python3 .claude/tools/content-review-policy.py record --review <RUN_DIR>/audit/review.json '
             '&& python3 .claude/tools/rendered-audit.py check --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json',
             '5. If a subset of routes PASS and others FAIL below ceiling, project passing subset mechanically: '
             'python3 .claude/tools/content-review-policy.py project --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json --route <PASS_ROUTE> --out-snapshot <RUN_DIR>/audit/approved-snapshot.json --out-review <RUN_DIR>/audit/approved-review.json',
@@ -113,11 +144,14 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
             if has_land
             else 'bash .claude/scripts/deploy-run-to-main.sh push'
         )
+        dep_tool = '.claude/tools/deployment-evidence.local.py' if (root / '.claude/tools/deployment-evidence.local.py').is_file() and is_local else '.claude/tools/deployment-evidence.py'
         lines.extend([
             f'2. Land commits onto main (run directly from MAIN, never inside a subagent): {deploy_cmd}',
-            '3. Host commit provenance (1 foreground call): '
-            'python3 .claude/tools/deployment-evidence.py --expected-commit <FULL_40_CHAR_SHA> --out <RUN_DIR>/audit/host-proof.json',
-            '4. Live capture, compare & journal close: '
+            '3. Bounded 1-turn live URL verification (never spin manual curl/sleep turns): '
+            'python3 .claude/tools/verify-live-urls.py --manifest <CAPTURE_MANIFEST> --timeout 180 --out <RUN_DIR>/audit/live-urls.json',
+            f'4. Host commit provenance (1 foreground call): '
+            f'python3 {dep_tool} --expected-commit <FULL_40_CHAR_SHA> --out <RUN_DIR>/audit/host-proof.json',
+            '5. Live capture, compare & journal close: '
             'python3 .claude/tools/rendered-audit.py capture --manifest <CAPTURE_MANIFEST> --base-url ' + canonical_base + ' --out <RUN_DIR>/audit/live-snapshot.json '
             '&& python3 .claude/tools/rendered-audit.py compare --approved <APPROVED_SNAPSHOT> --live <RUN_DIR>/audit/live-snapshot.json --review <APPROVED_REVIEW> '
             '&& python3 .claude/tools/rendered-audit.py record-deployment --snapshot <LIVE_SNAPSHOT> --approved <APPROVED_SNAPSHOT> --review <APPROVED_REVIEW> --commit <FULL_SHA> --deployment-evidence <RUN_DIR>/audit/host-proof.json --ledger <RUN_DIR>/audit/deployment-ledger.json',

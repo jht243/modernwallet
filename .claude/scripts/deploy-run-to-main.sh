@@ -103,6 +103,10 @@ is_regenerable() {
   case "$1" in public/sitemap*.xml)
     [ -f .claude/scripts/merge-sitemap.py ] && return 0 ;;
   esac
+  case "$1" in
+    scripts/paid_placements/ledger.json|scripts/paid_placements/fix-queue.json|scripts/paid_placements/upsell-queue.json|scripts/paid_placements/profiles.json|scripts/agency/packs.json|scripts/agency/upsells.json)
+      [ -f scripts/paid_placements/merge_queues.py ] && return 0 ;;
+  esac
   for i in "${!REGEN_GLOBS[@]}"; do
     # shellcheck disable=SC2053
     [[ "$1" == ${REGEN_GLOBS[$i]} ]] && return 0
@@ -115,8 +119,8 @@ is_regenerable() {
 # rule's command in file order on the merged tree, stage all generated outputs, continue.
 # Loops because the rebase can stop again on a later commit. Non-zero = caller aborts.
 resolve_generated() {
-  local conflicted f i ran n=0
-  [ ${#REGEN_GLOBS[@]} -gt 0 ] || return 1
+  local conflicted f i ran n=0 need_regen="" need_queue_merge=""
+  [ ${#REGEN_GLOBS[@]} -gt 0 ] || [ -f scripts/paid_placements/merge_queues.py ] || return 1
   while [ -d "$(git rev-parse --git-path rebase-merge)" ] || [ -d "$(git rev-parse --git-path rebase-apply)" ]; do
     n=$((n + 1)); [ "$n" -le 50 ] || { echo "[deploy] rebase still stopped after 50 resolve rounds" >&2; return 1; }
     conflicted="$(git diff --name-only --diff-filter=U)"
@@ -128,31 +132,43 @@ resolve_generated() {
     for f in $conflicted; do
       is_regenerable "$f" || { echo "[deploy] non-generated conflict: $f" >&2; return 1; }
     done
+    need_regen=""
+    need_queue_merge=""
     for f in $conflicted; do
       # In a rebase, --ours is the upstream side (latest main + already-replayed commits).
-      case "$f" in public/sitemap*.xml)
-        python3 .claude/scripts/merge-sitemap.py --index "$f" || return 1
-        git add -- "$f" || return 1
-        continue ;;
+      case "$f" in
+        public/sitemap*.xml)
+          python3 .claude/scripts/merge-sitemap.py --index "$f" || return 1
+          git add -- "$f" || return 1
+          continue ;;
+        scripts/paid_placements/ledger.json|scripts/paid_placements/fix-queue.json|scripts/paid_placements/upsell-queue.json|scripts/paid_placements/profiles.json|scripts/agency/packs.json|scripts/agency/upsells.json)
+          need_queue_merge=1
+          continue ;;
       esac
+      need_regen=1
       git checkout --ours -- "$f" 2>/dev/null || git checkout --theirs -- "$f" 2>/dev/null || true
       echo "[deploy] regenerating conflicted generated file: $f" >&2
     done
-    ran=" "
-    for i in "${!REGEN_CMDS[@]}"; do
-      case "$ran" in *" $i "*) continue ;; esac
-      # Same command listed for several globs runs once.
-      for j in "${!REGEN_CMDS[@]}"; do [ "${REGEN_CMDS[$j]}" = "${REGEN_CMDS[$i]}" ] && ran="$ran$j "; done
-      bash -c "${REGEN_CMDS[$i]}" >&2 || { echo "[deploy] regen failed: ${REGEN_CMDS[$i]}" >&2; return 1; }
-    done
-    # Stage every generated output (incl. new files, e.g. a new sitemap-*.xml) so a
-    # leftover unstaged diff never blocks `rebase --continue`.
-    for i in "${!REGEN_GLOBS[@]}"; do
-      git add -A -- ":(glob)${REGEN_GLOBS[$i]}" 2>/dev/null || true
-    done
-    # Drop any other tracked file a generator touched as a side effect (e.g. robots.txt):
-    # mid-rebase the worktree holds no user edits (autoStash parked them), only regen output.
-    git checkout -- . 2>/dev/null || true
+    if [ -n "$need_queue_merge" ]; then
+      python3 scripts/paid_placements/merge_queues.py --resolve-git-conflicts --repo . || return 1
+    fi
+    if [ -n "$need_regen" ]; then
+      ran=" "
+      for i in "${!REGEN_CMDS[@]}"; do
+        case "$ran" in *" $i "*) continue ;; esac
+        # Same command listed for several globs runs once.
+        for j in "${!REGEN_CMDS[@]}"; do [ "${REGEN_CMDS[$j]}" = "${REGEN_CMDS[$i]}" ] && ran="$ran$j "; done
+        bash -c "${REGEN_CMDS[$i]}" >&2 || { echo "[deploy] regen failed: ${REGEN_CMDS[$i]}" >&2; return 1; }
+      done
+      # Stage every generated output (incl. new files, e.g. a new sitemap-*.xml) so a
+      # leftover unstaged diff never blocks `rebase --continue`.
+      for i in "${!REGEN_GLOBS[@]}"; do
+        git add -A -- ":(glob)${REGEN_GLOBS[$i]}" 2>/dev/null || true
+      done
+      # Drop any other tracked file a generator touched as a side effect (e.g. robots.txt):
+      # mid-rebase the worktree holds no user edits (autoStash parked them), only regen output.
+      git checkout -- . 2>/dev/null || true
+    fi
     GIT_EDITOR=true git rebase --continue || true
   done
   return 0
@@ -421,8 +437,10 @@ case "$cmd" in
     shift
     [ $# -eq 0 ] && { echo "usage: deploy-run-to-main.sh verify URL[=needle]..." >&2; exit 2; }
     start=$(date +%s)
-    deadline=$(( start + ${VERIFY_DEADLINE:-420} ))
-    nudge_at=$(( start + ${VERIFY_DEADLINE:-420} / 2 ))
+    v_deadline=${VERIFY_DEADLINE:-720}
+    deadline=$(( start + v_deadline ))
+    nudge_delay=${VERIFY_NUDGE_AT:-$(( v_deadline >= 840 ? v_deadline / 2 : (v_deadline > 420 ? 420 : v_deadline / 2) ))}
+    nudge_at=$(( start + nudge_delay ))
     nudged=""
     pending=("$@")
     # HOST CHECK — with RENDER_API_KEY, ask the host what it did with main every ~30s. A FAILED

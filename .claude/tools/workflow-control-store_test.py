@@ -26,4 +26,29 @@ class Tests(unittest.TestCase):
   with self.assertRaises(m.ControlError):self.store.mutate(lambda state:None,['reports/input.json'])
   with self.assertRaises(m.ControlError):m.safe_path(self.root,'../outside.json')
   self.assertEqual(self.store.read()[0],None)
+ def test_partial_clone_read_and_mutate_avoid_downloading_historical_blobs(self):
+  origin=self.base/'origin'
+  for k in ('uploadpack.allowFilter','uploadpack.allowAnySHA1InWant','protocol.version'):
+   subprocess.run(['git','-C',str(origin),'config',k,'2' if k=='protocol.version' else 'true'],check=True,capture_output=True)
+  fresh=self.base/'fresh'
+  subprocess.run(['git','-c','protocol.version=2','clone','file://'+str(origin),str(fresh)],check=True,capture_output=True)
+  old_payload=b'historical-artifact-'+(b'x'*65536)
+  old_digest=hashlib.sha256(old_payload).hexdigest()
+  (self.root/'reports/old.bin').write_bytes(old_payload)
+  def seed(state):state['job']={'artifacts':{}}
+  self.store.mutate(seed,['reports/old.bin'])
+  rev1,_=self.store.read()
+  old_oid=subprocess.check_output(['git','-C',str(origin),'rev-parse',rev1+':artifacts/'+old_digest]).decode().strip()
+  fresh_store=m.Store(fresh)
+  rev_read,st_read=fresh_store.read()
+  self.assertEqual(rev_read,rev1)
+  self.assertEqual(st_read['job']['artifacts']['reports/old.bin'],old_digest)
+  no_lazy=dict(__import__('os').environ,GIT_NO_LAZY_FETCH='1')
+  self.assertNotEqual(subprocess.run(['git','-C',str(fresh),'cat-file','-e',old_oid],env=no_lazy,capture_output=True).returncode,0)
+  (fresh/'reports').mkdir(exist_ok=True);(fresh/'reports/new.json').write_bytes(b'{"new":true}')
+  fresh_store.mutate(lambda s:s.update(step=2),['reports/new.json'])
+  self.assertNotEqual(subprocess.run(['git','-C',str(fresh),'cat-file','-e',old_oid],env=no_lazy,capture_output=True).returncode,0)
+  rev2,st2=fresh_store.read()
+  self.assertEqual(st2['step'],2)
+  self.assertEqual(m.git(fresh,'show',rev2+':artifacts/'+old_digest).stdout,old_payload)
 if __name__=='__main__':unittest.main()

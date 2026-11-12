@@ -317,16 +317,298 @@ def focused(root, path, stage, actor=None):
     }
 
 
-def main():
+def _resolve_site_origin(root, snapshot_obj=None, previous_obj=None):
+    site_id = None
+    crp_path = root / '.claude/content-review-policy.json'
+    crp_cfg = read(crp_path) if crp_path.is_file() else {}
+    if isinstance(crp_cfg.get('siteId'), str) and crp_cfg['siteId'].strip():
+        site_id = crp_cfg['siteId'].strip()
+    if previous_obj and previous_obj.get('canonicalBase'):
+        return site_id, previous_obj['canonicalBase']
+    if snapshot_obj and isinstance(snapshot_obj.get('manifest'), dict) and snapshot_obj['manifest'].get('canonicalBase'):
+        return site_id, snapshot_obj['manifest']['canonicalBase']
+    local_path = root / '.claude/workflow-policy.local.json'
+    if local_path.is_file():
+        local_cfg = read(local_path)
+        if isinstance(local_cfg.get('canonicalBase'), str) and local_cfg['canonicalBase'].startswith('https://'):
+            return site_id, local_cfg['canonicalBase']
+    hosts = crp_cfg.get('canonicalHosts') or []
+    if hosts:
+        non_www = [h for h in hosts if isinstance(h, str) and not h.startswith('www.')]
+        chosen = non_www[0] if non_www else hosts[0]
+        return site_id, 'https://' + chosen
+    raise ValueError('Cannot determine canonicalBase; configure .claude/content-review-policy.json canonicalHosts')
+
+
+def _extract_routes(manifest_obj, snapshot_obj=None, explicit_routes=()):
+    if explicit_routes:
+        routes = [r.strip() for r in explicit_routes if r and r.strip()]
+    else:
+        routes = []
+        for act in manifest_obj.get('actions', []):
+            if not isinstance(act, dict) or act.get('bucket') == 'consolidation advisory':
+                continue
+            target = str(act.get('target') or '').strip()
+            if target.startswith('/'):
+                clean_route = target.split('#', 1)[0].split('?', 1)[0]
+                if clean_route:
+                    routes.append(clean_route)
+        for brief in manifest_obj.get('newPageBriefs', []):
+            if isinstance(brief, dict):
+                target = str(brief.get('target') or '').strip()
+                if target.startswith('/'):
+                    routes.append(target.split('#', 1)[0].split('?', 1)[0])
+        if snapshot_obj and isinstance(snapshot_obj.get('routes'), list):
+            for r in snapshot_obj['routes']:
+                if isinstance(r, dict) and str(r.get('path') or '').startswith('/'):
+                    routes.append(r['path'])
+    deduped = list(dict.fromkeys(routes))
+    require(bool(deduped), 'No route paths starting with "/" found in approval manifest; pass --route /actual-route explicitly')
+    return deduped
+
+
+def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previous_path=None,
+              snapshot_path=None, review_path=None, chart_review_path=None, readiness_path=None,
+              extra_candidates=(), extra_sources=(), explicit_routes=(), next_action=None,
+              actor=None, pack_out=None, rework=False):
+    """Build, validate, and seal a canonical stage handoff (plus optional focused packet) in 1 command."""
+    require(not out_path.exists(), 'Handoffs are immutable; use a new output path: ' + str(out_path))
+    manifest_obj = read(manifest_path)
+    prev_obj = read(previous_path) if previous_path else None
+    snap_obj = read(snapshot_path) if snapshot_path else None
+    rev_obj = read(review_path) if review_path else None
+
+    site_id, canonical_base = _resolve_site_origin(root, snap_obj, prev_obj)
+    resolved_job = (job_id or (prev_obj or {}).get('jobId') or manifest_obj.get('jobId') or '').strip()
+    require(bool(resolved_job), 'Missing jobId in approval-manifest.json; pass --job-id explicitly')
+    require(isinstance(producer, str) and producer.strip(), 'Provide a non-empty --producer identity')
+
+    routes = list(prev_obj['routes']) if prev_obj else _extract_routes(manifest_obj, snap_obj, explicit_routes)
+    now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
+
+    def make_ref(p):
+        resolved = p.resolve()
+        require(resolved.is_file() and root.resolve() in resolved.parents, 'Artifact must exist inside repository: ' + str(p))
+        return {'path': str(resolved.relative_to(root.resolve())), 'sha256': sha(resolved.read_bytes())}
+
+    cand_paths = [manifest_path.resolve()]
+    chart_rel = manifest_obj.get('chartPath')
+    if isinstance(chart_rel, str) and chart_rel.strip():
+        cp = (root / chart_rel).resolve()
+        if cp.is_file() and root.resolve() in cp.parents:
+            cand_paths.append(cp)
+    for extra in extra_candidates:
+        cand_paths.append(extra.resolve())
+    if snapshot_path:
+        cand_paths.append(snapshot_path.resolve())
+    candidates = [make_ref(p) for p in dict.fromkeys(cand_paths)]
+
+    sources_by_path = {}
+    if prev_obj:
+        for s in prev_obj.get('sources', []):
+            sp = inside(root, s['path'])
+            if sp.is_file() and sha(sp.read_bytes()) == s.get('sha256'):
+                sources_by_path[str(sp)] = dict(s)
+
+    def add_source(p, scope_desc):
+        if p is None:
+            return
+        rp = p.resolve()
+        if not rp.is_file() or root.resolve() not in rp.parents or str(rp) in sources_by_path:
+            return
+        sources_by_path[str(rp)] = {
+            **make_ref(rp),
+            'checkedAt': now_iso,
+            'refreshWhen': 'Whenever primary evidence or approved plan changes',
+            'scope': scope_desc,
+        }
+
+    if readiness_path:
+        add_source(readiness_path, 'Preparation readiness checklist and evidence verification')
+    else:
+        prep_ref = (manifest_obj.get('preparation') or {}).get('readiness')
+        if isinstance(prep_ref, dict) and prep_ref.get('path'):
+            add_source(inside(root, prep_ref['path']), 'Preparation readiness checklist and evidence verification')
+        elif (manifest_path.parent / 'readiness.md').is_file():
+            add_source(manifest_path.parent / 'readiness.md', 'Preparation readiness checklist and evidence verification')
+
+    if chart_review_path:
+        add_source(chart_review_path, 'Independent chart review approval and obligation verification')
+    elif (manifest_path.parent / 'chart-review.json').is_file():
+        add_source(manifest_path.parent / 'chart-review.json', 'Independent chart review approval and obligation verification')
+
+    req_ref = (manifest_obj.get('request') or {}).get('source')
+    if isinstance(req_ref, dict) and req_ref.get('path'):
+        add_source(inside(root, req_ref['path']), 'Original intake brief and candidate scope record')
+
+    for ev in manifest_obj.get('evidenceFiles', []):
+        if isinstance(ev, dict) and ev.get('path'):
+            add_source(inside(root, ev['path']), 'Inspected primary-source and preparation evidence')
+    for s_extra in extra_sources:
+        add_source(s_extra, 'Supplementary verified stage evidence artifact')
+
+    counters = copy.deepcopy(prev_obj['reviewCounters']) if prev_obj else {'reviews': 0, 'reworks': 0}
+    findings = copy.deepcopy(prev_obj['findings']) if prev_obj else []
+    known_ids = {f['id'] for f in findings}
+
+    if rev_obj is not None:
+        add_source(review_path, 'Recorded independent Phase 4 rendered-page audit report')
+        if phase in ('write', 'publish'):
+            prev_rev_sha = (prev_obj or {}).get('review', {}).get('sha256') if prev_obj else None
+            cur_rev_sha = sha(review_path.read_bytes())
+            if prev_rev_sha != cur_rev_sha:
+                counters['reviews'] += 1
+        if phase == 'write':
+            for r_idx, r_item in enumerate(rev_obj.get('routes', []), 1):
+                for f_idx, f_item in enumerate(r_item.get('findings', []), 1):
+                    if isinstance(f_item, dict):
+                        fid = str(f_item.get('id') or f'R{counters["reviews"]}-{r_idx}-F{f_idx}')
+                        raw_ev = str(f_item.get('evidence') or f_item.get('description') or f_item.get('fix') or json.dumps(f_item))
+                    else:
+                        fid = f'R{counters["reviews"]}-{r_idx}-F{f_idx}'
+                        raw_ev = str(f_item)
+                    if len(raw_ev.strip()) < 30:
+                        raw_ev = f'Route {r_item.get("path", "/")} audit finding: {raw_ev.strip()} (requires targeted fix)'
+                    if fid not in known_ids:
+                        findings.append({'id': fid, 'status': 'open', 'evidence': raw_ev})
+                        known_ids.add(fid)
+                for group_name in ('checks', 'factualReview'):
+                    group = r_item.get(group_name)
+                    if not isinstance(group, dict):
+                        continue
+                    for ck, cv in group.items():
+                        if isinstance(cv, dict) and cv.get('status') == 'FAIL':
+                            fid = f'R{counters["reviews"]}-{r_idx}-{group_name}-{ck}'
+                            raw_ev = str(cv.get('evidence') or f'{group_name}.{ck} failed independent audit')
+                            if len(raw_ev.strip()) < 30:
+                                raw_ev = f'Route {r_item.get("path", "/")} {group_name}.{ck} FAIL: {raw_ev.strip()}'
+                            if fid not in known_ids:
+                                findings.append({'id': fid, 'status': 'open', 'evidence': raw_ev})
+                                known_ids.add(fid)
+
+    if phase == 'audit' and rework:
+        counters['reworks'] += 1
+
+    default_actions = {
+        'write': 'Execute approved Mindmap write actions, lint, and capture local rendered preview.',
+        'audit': 'Independently audit captured rendered Mindmap routes against primary sources and editorial standards.',
+        'publish': 'Publish exact independently reviewed Mindmap output to main and verify live.',
+    }
+    draft = {
+        'version': 1,
+        'canonicalBase': canonical_base,
+        'jobId': resolved_job,
+        'producer': producer.strip(),
+        'routes': routes,
+        'nextAction': (next_action or default_actions[phase]).strip(),
+        'candidates': candidates,
+        'sources': list(sources_by_path.values()),
+        'findings': findings,
+        'reviewCounters': counters,
+    }
+    if site_id:
+        draft['siteId'] = site_id
+    if previous_path:
+        draft['previous'] = make_ref(previous_path)
+    if snapshot_path:
+        draft['snapshot'] = make_ref(snapshot_path)
+    if review_path and phase == 'publish':
+        draft['review'] = make_ref(review_path)
+
+    is_layer3_local = False
+    local_cfg_path = root / '.claude/workflow-policy.local.json'
+    if local_cfg_path.is_file() and (root / '.claude/tools/workflow-dispatch.local.py').is_file():
+        try:
+            is_layer3_local = read(local_cfg_path).get('site') == 'layer3labs'
+        except ValueError:
+            is_layer3_local = False
+
+    pending_draft = out_path.with_name(out_path.name + '.autodraft-' + uuid.uuid4().hex + '.json')
+    try:
+        if is_layer3_local:
+            spec_l = importlib.util.spec_from_file_location('auto_local', root / '.claude/tools/workflow-local.py')
+            local_mod = importlib.util.module_from_spec(spec_l); spec_l.loader.exec_module(local_mod)
+            spec_d = importlib.util.spec_from_file_location('auto_dispatch', root / '.claude/tools/workflow-dispatch.local.py')
+            disp_mod = importlib.util.module_from_spec(spec_d); spec_d.loader.exec_module(disp_mod)
+            write_json(pending_draft, draft, local_mod)
+            sealed = disp_mod.seal(root, pending_draft, out_path, local_mod, actor=actor, phase=phase)
+            if pack_out:
+                spec_c = importlib.util.spec_from_file_location('auto_ctx', root / '.claude/tools/workflow-context.py')
+                ctx_mod = importlib.util.module_from_spec(spec_c); spec_c.loader.exec_module(ctx_mod)
+                pkt = ctx_mod.projection(root, out_path, phase, local_mod)
+                write_json(pack_out, pkt, local_mod)
+                ctx_mod.check(root, pack_out, out_path, phase, local_mod)
+        else:
+            helper_api = api()
+            write_json(pending_draft, draft, helper_api)
+            sealed = seal(root, pending_draft, out_path, helper_api, actor=actor, phase=phase)
+            if pack_out:
+                pkt = focused(root, out_path, phase, actor)
+                write_json(pack_out, pkt, helper_api)
+    finally:
+        if pending_draft.exists():
+            pending_draft.unlink()
+
+    res = {
+        'status': 'sealed',
+        'phase': phase,
+        'jobId': resolved_job,
+        'handoff': str(out_path.resolve().relative_to(root.resolve())),
+        'routes': routes,
+        'reviewCounters': sealed['reviewCounters'],
+        'openFindings': sum(1 for f in sealed['findings'] if f.get('status') == 'open'),
+    }
+    if pack_out:
+        res['contextPacket'] = str(pack_out.resolve().relative_to(root.resolve()))
+    return res
+
+
+def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
     q = sub.add_parser('seal'); q.add_argument('--draft', required=True); q.add_argument('--out', required=True)
+    q = sub.add_parser('auto-seal')
+    q.add_argument('--phase', choices=['write', 'audit', 'publish'], required=True)
+    q.add_argument('--manifest', required=True, help='Path to approval-manifest.json')
+    q.add_argument('--producer', required=True, help='Actor identity sealing this handoff')
+    q.add_argument('--out', required=True, help='Immutable output handoff JSON path')
+    q.add_argument('--job-id', help='Explicit jobId (defaults to approval-manifest.json jobId)')
+    q.add_argument('--previous', help='Previous sealed handoff JSON path')
+    q.add_argument('--snapshot', help='Captured rendered snapshot JSON path')
+    q.add_argument('--review', help='Recorded Phase 4 review JSON path')
+    q.add_argument('--chart-review', help='Independent chart-review.json path')
+    q.add_argument('--readiness', help='Preparation readiness.md path')
+    q.add_argument('--candidate', action='append', default=[], help='Additional candidate file path (repeatable)')
+    q.add_argument('--source', action='append', default=[], help='Additional source evidence file path (repeatable)')
+    q.add_argument('--route', action='append', default=[], help='Explicit route override when manifest targets are file paths')
+    q.add_argument('--next-action', help='Custom nextAction summary')
+    q.add_argument('--actor', help='Target stage actor for immediate independence check')
+    q.add_argument('--pack-out', help='Optional focused context-packet JSON output path')
+    q.add_argument('--rework', action='store_true', help='Increment rework counter for a Round-2+ rework handoff')
     q = sub.add_parser('check'); q.add_argument('--handoff', required=True)
     q = sub.add_parser('reconcile-findings'); q.add_argument('--handoff', required=True); q.add_argument('--review', required=True); q.add_argument('--out', required=True)
     q = sub.add_parser('snapshot'); q.add_argument('--file', required=True); q.add_argument('--directory', required=True)
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
     if args.command == 'seal':
         seal(ROOT, inside(ROOT, args.draft), inside(ROOT, args.out), api())
+    elif args.command == 'auto-seal':
+        res = auto_seal(
+            ROOT, args.phase, inside(ROOT, args.manifest), args.producer, inside(ROOT, args.out),
+            job_id=args.job_id,
+            previous_path=inside(ROOT, args.previous) if args.previous else None,
+            snapshot_path=inside(ROOT, args.snapshot) if args.snapshot else None,
+            review_path=inside(ROOT, args.review) if args.review else None,
+            chart_review_path=inside(ROOT, args.chart_review) if args.chart_review else None,
+            readiness_path=inside(ROOT, args.readiness) if args.readiness else None,
+            extra_candidates=[inside(ROOT, c) for c in args.candidate],
+            extra_sources=[inside(ROOT, s) for s in args.source],
+            explicit_routes=args.route,
+            next_action=args.next_action,
+            actor=args.actor,
+            pack_out=inside(ROOT, args.pack_out) if args.pack_out else None,
+            rework=args.rework,
+        )
+        print(json.dumps(res, indent=2))
     elif args.command == 'check':
         h = handoff_check(ROOT, inside(ROOT, args.handoff))
         print(json.dumps({'jobId': h['jobId'], 'status': 'evidence-current-not-an-approval'}))
@@ -337,4 +619,9 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except (ValueError, KeyError, OSError) as exc:
+        import sys
+        print('BLOCKED: ' + str(exc), file=sys.stderr)
+        sys.exit(1)

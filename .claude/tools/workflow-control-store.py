@@ -30,13 +30,16 @@ def has_sensitive_material(data):
 
 
 
+PROMISOR_FLAGS = ('-c', 'remote.origin.promisor=true', '-c', 'remote.origin.partialclonefilter=blob:none')
+
+
 class ControlError(RuntimeError):
     pass
 
 
-def git(root, *args, data=None, env=None, check=True):
-    r = subprocess.run(['git', '-C', str(root), *args], input=data, env=env,
-                       stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=90)
+def git(root, *args, data=None, env=None, check=True, timeout=90):
+    r = subprocess.run(['git', *PROMISOR_FLAGS, '-C', str(root), *args], input=data, env=env,
+                       stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=timeout)
     if check and r.returncode:
         # Never repeat remote URLs, command arguments, or credential-bearing stderr.
         raise ControlError('Git control operation failed: ' + args[0])
@@ -74,7 +77,11 @@ class Store:
             raise ControlError('Durable control store unavailable; do not duplicate work')
         revision = listing.stdout.split()[0].decode()
         if git(self.root, 'cat-file', '-e', revision + '^{commit}', check=False).returncode:
-            git(self.root, 'fetch', '--quiet', '--no-tags', '--no-write-fetch-head', 'origin', revision)
+            fetched = git(self.root, 'fetch', '--filter=blob:none', '--quiet', '--no-tags', '--no-write-fetch-head',
+                          'origin', revision, check=False, timeout=90)
+            if fetched.returncode:
+                git(self.root, 'fetch', '--quiet', '--no-tags', '--no-write-fetch-head',
+                    'origin', revision, timeout=180)
         data = git(self.root, 'show', revision + ':state.json').stdout
         state = json.loads(data)
         if state.get('version') != 1:
@@ -109,28 +116,56 @@ class Store:
             result = fn(state)
             for rel, (digest, _) in blobs.items():
                 state['job'].setdefault('artifacts', {})[rel] = digest
-            with tempfile.TemporaryDirectory(prefix='routine-control-') as td:
-                env = dict(os.environ, GIT_INDEX_FILE=td + '/index',
-                           GIT_AUTHOR_NAME='routine-controller', GIT_AUTHOR_EMAIL='routines@layer3labs.io',
-                           GIT_COMMITTER_NAME='routine-controller', GIT_COMMITTER_EMAIL='routines@layer3labs.io')
-                git(self.root, 'read-tree', base if base else '--empty', env=env)
-                files = {'state.json': (json.dumps(state, sort_keys=True, indent=2) + '\n').encode()}
-                if len(files['state.json']) > 20_000_000 or has_sensitive_material(files['state.json']):
-                    raise ControlError('Sensitive workflow state refused')
-                files.update({'artifacts/' + digest: data for digest, data in blobs.values()})
-                for path, data in files.items():
-                    oid = git(self.root, 'hash-object', '-w', '--stdin', data=data).stdout.decode().strip()
-                    git(self.root, 'update-index', '--add', '--cacheinfo', '100644', oid, path, env=env)
-                tree = git(self.root, 'write-tree', env=env).stdout.decode().strip()
-                args = ['commit-tree', tree] + (['-p', base] if base else [])
-                if source_parent is not None:
-                    if not re.fullmatch('[0-9a-f]{40,64}',source_parent):
-                        raise ControlError('Invalid review source base')
-                    git(self.root,'cat-file','-e',source_parent+'^{commit}')
-                    if not base or git(self.root,'merge-base','--is-ancestor',source_parent,base,check=False).returncode:
-                        args.extend(['-p',source_parent])
-                commit = git(self.root, *args, data=b'Checkpoint workflow controller\n', env=env).stdout.decode().strip()
-            push = git(self.root, 'push', '--quiet', 'origin', commit + ':' + self.ref, check=False)
+            state_bytes = (json.dumps(state, sort_keys=True, indent=2) + '\n').encode()
+            if len(state_bytes) > 20_000_000 or has_sensitive_material(state_bytes):
+                raise ControlError('Sensitive workflow state refused')
+            no_lazy_env = dict(
+                os.environ,
+                GIT_NO_LAZY_FETCH='1',
+                GIT_AUTHOR_NAME='routine-controller',
+                GIT_AUTHOR_EMAIL='routines@layer3labs.io',
+                GIT_COMMITTER_NAME='routine-controller',
+                GIT_COMMITTER_EMAIL='routines@layer3labs.io',
+            )
+            state_oid = git(self.root, 'hash-object', '-w', '--stdin', data=state_bytes, env=no_lazy_env).stdout.decode().strip()
+            new_art_oids = {
+                digest: git(self.root, 'hash-object', '-w', '--stdin', data=data, env=no_lazy_env).stdout.decode().strip()
+                for digest, data in blobs.values()
+            }
+            root_entries = {}
+            if base:
+                for line in git(self.root, 'ls-tree', base).stdout.decode().splitlines():
+                    meta, name = line.split('\t', 1)
+                    mode, kind, oid = meta.split()
+                    root_entries[name] = (mode, kind, oid)
+            art_entries = {}
+            if 'artifacts' in root_entries and root_entries['artifacts'][1] == 'tree':
+                for line in git(self.root, 'ls-tree', root_entries['artifacts'][2]).stdout.decode().splitlines():
+                    meta, name = line.split('\t', 1)
+                    mode, kind, oid = meta.split()
+                    art_entries[name] = (mode, kind, oid)
+            for digest, oid in new_art_oids.items():
+                art_entries[digest] = ('100644', 'blob', oid)
+            if art_entries:
+                art_input = ''.join(
+                    f'{mode} {kind} {oid}\t{name}\n' for name, (mode, kind, oid) in sorted(art_entries.items())
+                ).encode()
+                art_tree = git(self.root, 'mktree', '--missing', data=art_input, env=no_lazy_env).stdout.decode().strip()
+                root_entries['artifacts'] = ('040000', 'tree', art_tree)
+            root_entries['state.json'] = ('100644', 'blob', state_oid)
+            root_input = ''.join(
+                f'{mode} {kind} {oid}\t{name}\n' for name, (mode, kind, oid) in sorted(root_entries.items())
+            ).encode()
+            tree = git(self.root, 'mktree', '--missing', data=root_input, env=no_lazy_env).stdout.decode().strip()
+            args = ['commit-tree', tree] + (['-p', base] if base else [])
+            if source_parent is not None:
+                if not re.fullmatch('[0-9a-f]{40,64}', source_parent):
+                    raise ControlError('Invalid review source base')
+                git(self.root, 'cat-file', '-e', source_parent + '^{commit}')
+                if not base or git(self.root, 'merge-base', '--is-ancestor', source_parent, base, check=False).returncode:
+                    args.extend(['-p', source_parent])
+            commit = git(self.root, *args, data=b'Checkpoint workflow controller\n', env=no_lazy_env).stdout.decode().strip()
+            push = git(self.root, 'push', '--quiet', 'origin', commit + ':' + self.ref, env=no_lazy_env, check=False, timeout=120)
             if not push.returncode:
                 return result
         raise ControlError('Control ref contention/unavailable; retry later without duplicating work')

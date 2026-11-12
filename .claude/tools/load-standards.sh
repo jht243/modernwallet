@@ -31,6 +31,13 @@ for arg in "$@"; do
 done
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 cd "$ROOT"
+if [ "${CLAUDE_CODE_REMOTE:-}" = "1" ] || [ "${CLAUDE_CODE_REMOTE:-}" = "true" ]; then
+  HAS_CLOUD=false
+  for a in "${START_ARGS[@]:-}"; do
+    [ "$a" = "--cloud" ] && HAS_CLOUD=true
+  done
+  [ "$HAS_CLOUD" = false ] && START_ARGS+=("--cloud")
+fi
 if [ "${#START_ARGS[@]}" -gt 0 ]; then
   bash "$ROOT/.claude/tools/workflow-start.sh" "${START_ARGS[@]}" || exit $?
 else

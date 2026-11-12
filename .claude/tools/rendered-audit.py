@@ -251,8 +251,9 @@ def capture(manifest, base, out, dom_dir=None, comparison_only=False):
         root=Path(__file__).resolve().parents[2];helper=root/'.claude/tools/preview-session.py'
         package=read(root/'package.json') if (root/'package.json').is_file() else {}
         dependencies={**package.get('dependencies',{}),**package.get('devDependencies',{})}
-        if 'next' in dependencies or 'astro' in dependencies:
-            require(helper.is_file(),'Restore the checked-in preview-session.py before Node preview capture')
+        is_wsgi=(not (root/'package.json').is_file() and not (root/'dist/index.html').is_file() and (root/'server.py').is_file())
+        if 'next' in dependencies or 'astro' in dependencies or is_wsgi:
+            require(helper.is_file(),'Restore the checked-in preview-session.py before loopback preview capture')
             spec=importlib.util.spec_from_file_location('actual_preview',helper);preview_module=importlib.util.module_from_spec(spec);spec.loader.exec_module(preview_module)
             try:preview=preview_module.verify(root,base)
             except (ValueError,OSError) as error:raise ValueError('Start the actual current-build loopback preview with preview-session.py start --run-id ACTUAL_RUN_ID before capture: '+str(error))
@@ -549,10 +550,84 @@ def inspect_pack(s, selected_routes=()):
     }
 
 
-def capture_local(manifest_path, run_id, out, dom_dir=None, build=False, root=None):
+def init_manifest(approval_manifest_path, author, out_path, root=None, explicit_routes=(),
+                  claim_categories=('ordinary',), canonical_base=None, volatile_ads=None):
+    """Generate a validated capture-manifest.json directly from approval-manifest.json in 1 command."""
+    root = Path(root or Path(__file__).resolve().parents[2]).resolve()
+    require(not Path(out_path).exists(), 'Capture manifest output already exists; choose a new path: ' + str(out_path))
+    require(isinstance(author, str) and author.strip(), 'Provide a non-empty --author identity')
+    plan = read(approval_manifest_path)
+
+    resolved_base = canonical_base
+    if not resolved_base:
+        local_cfg = root / '.claude/workflow-policy.local.json'
+        if local_cfg.is_file():
+            lc = read(local_cfg)
+            if isinstance(lc.get('canonicalBase'), str) and lc['canonicalBase'].startswith('https://'):
+                resolved_base = lc['canonicalBase']
+    if not resolved_base:
+        crp_cfg_path = root / '.claude/content-review-policy.json'
+        if crp_cfg_path.is_file():
+            cc = read(crp_cfg_path)
+            hosts = cc.get('canonicalHosts') or []
+            if hosts:
+                non_www = [h for h in hosts if isinstance(h, str) and not h.startswith('www.')]
+                resolved_base = 'https://' + (non_www[0] if non_www else hosts[0])
+    require(bool(resolved_base) and resolved_base.startswith('https://'),
+            'Cannot resolve HTTPS canonicalBase; pass --canonical-base explicitly')
+
+    if explicit_routes:
+        routes_list = [r.strip() for r in explicit_routes if r and r.strip()]
+    else:
+        routes_list = []
+        for act in plan.get('actions', []):
+            if not isinstance(act, dict) or act.get('bucket') == 'consolidation advisory':
+                continue
+            target = str(act.get('target') or '').strip()
+            if target.startswith('/'):
+                clean_route = target.split('#', 1)[0].split('?', 1)[0]
+                if clean_route:
+                    routes_list.append(clean_route)
+        for brief in plan.get('newPageBriefs', []):
+            if isinstance(brief, dict):
+                target = str(brief.get('target') or '').strip()
+                if target.startswith('/'):
+                    routes_list.append(target.split('#', 1)[0].split('?', 1)[0])
+    deduped = list(dict.fromkeys(routes_list))
+    require(bool(deduped), 'No route paths starting with "/" found in approval-manifest.json; pass --route /actual-route')
+
+    cats = list(claim_categories) if claim_categories else ['ordinary']
+    route_objs = []
+    for rp in deduped:
+        entry = {'path': rp, 'claimCategories': cats}
+        if volatile_ads:
+            entry['volatileThirdPartyAds'] = volatile_ads
+        route_objs.append(entry)
+
+    manifest = {
+        'workflowKind': 'mindmap-pass',
+        'author': author.strip(),
+        'canonicalBase': resolved_base.rstrip('/'),
+        'routes': route_objs,
+    }
+    if isinstance(plan.get('jobId'), str) and plan['jobId'].strip():
+        manifest['jobId'] = plan['jobId'].strip()
+    validate_manifest(manifest)
+    save(str(out_path), manifest)
+    return manifest
+
+
+def capture_local(manifest_path, run_id, out, dom_dir=None, build=False, root=None,
+                  auto_manifest=None, author=None, explicit_routes=(), claim_categories=('ordinary',)):
     """One-shot build (optional) + owned loopback preview + complete capture + stop."""
     import importlib.util
     root = Path(root or Path(__file__).resolve().parents[2]).resolve()
+    if auto_manifest and not Path(manifest_path).exists():
+        require(bool(author), 'Pass --author <WRITER_ACTOR> when using --auto-manifest')
+        init_manifest(
+            auto_manifest, author, manifest_path, root=root,
+            explicit_routes=explicit_routes, claim_categories=claim_categories,
+        )
     manifest = read(manifest_path)
     validate_manifest(manifest)
     preview_path = Path(__file__).with_name('preview-session.py')
@@ -562,10 +637,15 @@ def capture_local(manifest_path, run_id, out, dom_dir=None, build=False, root=No
     spec.loader.exec_module(preview_mod)
     env = preview_mod._node20_env() if hasattr(preview_mod, '_node20_env') else dict(os.environ)
     kind = preview_mod.framework(root)
-    marker = root / ('.next/BUILD_ID' if kind == 'next' else 'dist/index.html')
-    if build or not marker.is_file():
-        done = subprocess.run(['npm', 'run', 'build'], cwd=str(root), env=env, capture_output=True, text=True)
-        require(done.returncode == 0, 'Production build failed before capture: ' + (done.stderr or done.stdout)[-800:])
+    if kind != 'wsgi':
+        marker = root / ('.next/BUILD_ID' if kind == 'next' else 'dist/index.html')
+        if (build or not marker.is_file()) and (root / 'package.json').is_file():
+            if not (root / 'node_modules').is_dir():
+                install_cmd = ['npm', 'ci', '--prefer-offline', '--no-audit', '--no-fund'] if (root / 'package-lock.json').is_file() else ['npm', 'install', '--prefer-offline', '--no-audit', '--no-fund']
+                inst = subprocess.run(install_cmd, cwd=str(root), env=env, capture_output=True, text=True)
+                require(inst.returncode == 0, 'Dependency install failed before capture: ' + (inst.stderr or inst.stdout)[-800:])
+            done = subprocess.run(['npm', 'run', 'build'], cwd=str(root), env=env, capture_output=True, text=True)
+            require(done.returncode == 0, 'Production build failed before capture: ' + (done.stderr or done.stdout)[-800:])
     first_route = manifest['routes'][0]['path'] if manifest.get('routes') else '/'
     meta = preview_mod.start(root, run_id, first_route)
     try:
@@ -581,20 +661,24 @@ def capture_local(manifest_path, run_id, out, dom_dir=None, build=False, root=No
     return snap
 
 
-def main():
+def main(argv=None):
     parser=argparse.ArgumentParser(); sub=parser.add_subparsers(dest='command',required=True)
+    p=sub.add_parser('init-manifest'); p.add_argument('--approval-manifest',required=True); p.add_argument('--author',required=True); p.add_argument('--out',required=True); p.add_argument('--route',action='append',default=[]); p.add_argument('--claim-category',action='append',default=[]); p.add_argument('--canonical-base'); p.add_argument('--volatile-ads')
     p=sub.add_parser('capture'); p.add_argument('--manifest',required=True); p.add_argument('--base-url',required=True); p.add_argument('--out',required=True); p.add_argument('--dom-dir',help='Existing hydrated DOM input by route; not an output directory. Omit for complete server-rendered HTTP HTML.')
-    p=sub.add_parser('capture-local'); p.add_argument('--manifest',required=True); p.add_argument('--run-id',required=True); p.add_argument('--out',required=True); p.add_argument('--dom-dir'); p.add_argument('--build',action='store_true')
+    p=sub.add_parser('capture-local'); p.add_argument('--manifest',required=True); p.add_argument('--run-id',required=True); p.add_argument('--out',required=True); p.add_argument('--dom-dir'); p.add_argument('--build',action='store_true'); p.add_argument('--auto-manifest',help='Optional approval-manifest.json to auto-generate --manifest'); p.add_argument('--author',help='Writer actor identity when using --auto-manifest'); p.add_argument('--route',action='append',default=[]); p.add_argument('--claim-category',action='append',default=[])
     p=sub.add_parser('inspect-pack'); p.add_argument('--snapshot',required=True); p.add_argument('--route',action='append',default=[]); p.add_argument('--out')
     p=sub.add_parser('check'); p.add_argument('--snapshot',required=True); p.add_argument('--review',required=True); p.add_argument('--recapture',action='store_true'); p.add_argument('--base-url')
     p=sub.add_parser('compare'); p.add_argument('--approved',required=True); p.add_argument('--live',required=True); p.add_argument('--review',required=True)
     p=sub.add_parser('record-deployment')
     for name in ['snapshot','approved','review','commit','deployment-evidence','ledger']: p.add_argument('--'+name,required=True)
-    a=parser.parse_args()
-    if a.command=='capture':
+    a=parser.parse_args(argv)
+    if a.command=='init-manifest':
+        m=init_manifest(a.approval_manifest,a.author,a.out,explicit_routes=a.route,claim_categories=a.claim_category or ['ordinary'],canonical_base=a.canonical_base,volatile_ads=a.volatile_ads)
+        print(json.dumps({'status':'manifest-initialized','out':a.out,'routes':[r['path'] for r in m['routes']],'canonicalBase':m['canonicalBase']}))
+    elif a.command=='capture':
         s=capture(read(a.manifest),a.base_url,a.out,a.dom_dir); valid_snapshot(s); print(f"Captured {len(s['routes'])} complete routes")
     elif a.command=='capture-local':
-        s=capture_local(a.manifest,a.run_id,a.out,a.dom_dir,a.build)
+        s=capture_local(a.manifest,a.run_id,a.out,a.dom_dir,a.build,auto_manifest=a.auto_manifest,author=a.author,explicit_routes=a.route,claim_categories=a.claim_category or ['ordinary'])
         print(json.dumps({'status':'captured','routes':len(s['routes']),'snapshot':a.out,'snapshotSha256':s['snapshotSha256']}))
     elif a.command=='inspect-pack':
         pack=inspect_pack(read(a.snapshot),a.route)

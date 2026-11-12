@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "$CLAUDE_PROJECT_DIR/.claude/tools/log-standard-read.sh"
+            "command": "\"$CLAUDE_PROJECT_DIR/.claude/tools/log-standard-read.sh\""
           }
         ]
       }
@@ -44,7 +44,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "$CLAUDE_PROJECT_DIR/.claude/tools/no-background-agents.sh"
+            "command": "\"$CLAUDE_PROJECT_DIR/.claude/tools/no-background-agents.sh\""
           }
         ]
       },
@@ -53,7 +53,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "$CLAUDE_PROJECT_DIR/.claude/tools/tool-usage-gates.sh"
+            "command": "\"$CLAUDE_PROJECT_DIR/.claude/tools/tool-usage-gates.sh\""
           }
         ]
       },

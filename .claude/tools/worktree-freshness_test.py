@@ -121,7 +121,30 @@ class FreshnessTests(unittest.TestCase):
         result = subprocess.run(['bash', str(self.target / '.claude/tools/load-standards.sh'), 'fixture', 'phase-3'], cwd=self.target, capture_output=True, text=True)
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn('standard-loaded:', result.stdout)
+        self.assertIn('===== _content-standard.md =====', result.stdout)
         self.assertTrue((self.target / 'reports/standards-ledger.jsonl').exists())
+        # When an active completed workflow-preflight bundle already delivered the exact
+        # three canonical files in this run, load-standards.sh records the ledger receipt
+        # without dumping 140 KB a second time; changing a standard file re-enables full dump.
+        import hashlib as _hl
+        req = ['.claude/commands/_content-standard.md', '.claude/commands/_anti-ai-language.md', '.claude/commands/_experience.md']
+        bdir = self.target / 'reports/mindmap-pass/test/preflight-write-v1'
+        bdir.mkdir(parents=True, exist_ok=True)
+        (bdir / 'manifest.json').write_text(json.dumps({
+            'runId': os.environ['WORKFLOW_RUN_ID'],
+            'parts': [{'path': 'part-001.txt'}],
+            'delivered': [1],
+            'files': {r: _hl.sha256((self.target / r).read_bytes()).hexdigest() for r in req},
+        }))
+        dedup = subprocess.run(['bash', str(self.target / '.claude/tools/load-standards.sh'), 'fixture', 'write', '--ledger-only'], cwd=self.target, capture_output=True, text=True)
+        self.assertEqual(dedup.returncode, 0, dedup.stderr)
+        self.assertIn('standard-loaded:', dedup.stdout)
+        self.assertIn('preflight-verified:', dedup.stdout)
+        self.assertNotIn('===== _content-standard.md =====', dedup.stdout)
+        self.write('.claude/commands/_content-standard.md', '## DOMAIN\nChanged\n', target=True)
+        changed = subprocess.run(['bash', str(self.target / '.claude/tools/load-standards.sh'), 'fixture', 'write', '--ledger-only'], cwd=self.target, capture_output=True, text=True)
+        self.assertEqual(changed.returncode, 0, changed.stderr)
+        self.assertIn('===== _content-standard.md =====', changed.stdout)
 
     def setup_remote(self):
         remote = Path(self.tmp.name) / 'remote.git'
@@ -155,6 +178,60 @@ class FreshnessTests(unittest.TestCase):
         env = {'RENDER_GIT_REPO_SLUG': 'fixture/site', 'RENDER_GIT_COMMIT': 'old'}
         with patch.dict(os.environ, env, clear=True), patch.object(freshness.urllib.request, 'urlopen', side_effect=[io.StringIO('{"default_branch":"main"}'), io.StringIO('{"sha":"new"}')]):
             self.assertEqual(freshness.cloud_check('/no-git')['missing'], ['deployed-build-revision'])
+
+    def test_render_scoped_build_passes_unrelated_commits_and_blocks_scoped_edits(self):
+        env = {'RENDER_GIT_REPO_SLUG': 'fixture/site', 'RENDER_GIT_COMMIT': 'old'}
+        responses_ok = [
+            io.StringIO('{"default_branch":"main"}'),
+            io.StringIO('{"sha":"new"}'),
+            io.StringIO('{"status":"ahead","files":[{"filename":"data/guides.ts"},{"filename":"reports/out.json"}]}'),
+        ]
+        with patch.dict(os.environ, env, clear=True), patch.object(freshness.urllib.request, 'urlopen', side_effect=responses_ok):
+            self.assertEqual(freshness.cloud_check('/no-git', scopes=['scripts/tool_usage/'])['status'], 'current')
+        responses_stale = [
+            io.StringIO('{"default_branch":"main"}'),
+            io.StringIO('{"sha":"new"}'),
+            io.StringIO('{"status":"ahead","files":[{"filename":"scripts/tool_usage/build_dashboard.py"}]}'),
+        ]
+        with patch.dict(os.environ, env, clear=True), patch.object(freshness.urllib.request, 'urlopen', side_effect=responses_stale):
+            self.assertEqual(
+                freshness.cloud_check('/no-git', scopes=['scripts/tool_usage/'])['missing'],
+                ['scripts/tool_usage/build_dashboard.py'],
+            )
+
+    def test_render_scoped_build_handles_300_file_compare_cap_via_merkle_tree_shas(self):
+        env = {'RENDER_GIT_REPO_SLUG': 'fixture/site', 'RENDER_GIT_COMMIT': 'old'}
+        capped_compare = json.dumps({'status': 'ahead', 'files': [{'filename': f'reports/r{i}.json'} for i in range(300)]})
+        tools_listing = json.dumps([
+            {'name': 'worktree-freshness.py', 'sha': 't1'},
+            {'name': 'workflow-start.sh', 'sha': 't2'},
+        ])
+        responses_ok = [
+            io.StringIO('{"default_branch":"main"}'),
+            io.StringIO('{"sha":"new"}'),
+            io.StringIO(capped_compare),
+            io.StringIO(tools_listing),
+            io.StringIO(tools_listing),
+            io.StringIO('[{"name":"tool_usage","sha":"same-tree"}]'),
+            io.StringIO('[{"name":"tool_usage","sha":"same-tree"}]'),
+        ]
+        with patch.dict(os.environ, env, clear=True), patch.object(freshness.urllib.request, 'urlopen', side_effect=responses_ok):
+            self.assertEqual(freshness.cloud_check('/no-git', scopes=['scripts/tool_usage/'])['status'], 'current')
+
+        responses_stale = [
+            io.StringIO('{"default_branch":"main"}'),
+            io.StringIO('{"sha":"new"}'),
+            io.StringIO(capped_compare),
+            io.StringIO(tools_listing),
+            io.StringIO(tools_listing),
+            io.StringIO('[{"name":"tool_usage","sha":"old-tree"}]'),
+            io.StringIO('[{"name":"tool_usage","sha":"new-tree"}]'),
+        ]
+        with patch.dict(os.environ, env, clear=True), patch.object(freshness.urllib.request, 'urlopen', side_effect=responses_stale):
+            self.assertEqual(
+                freshness.cloud_check('/no-git', scopes=['scripts/tool_usage/'])['missing'],
+                ['scripts/tool_usage'],
+            )
 
     def test_render_uses_dedicated_reader_without_changing_publishing_credentials(self):
         env = {'RENDER_GIT_REPO_SLUG': 'fixture/site', 'RENDER_GIT_COMMIT': 'abc',
@@ -246,6 +323,116 @@ class PrimaryTests(unittest.TestCase):
   f.primary_check(self.root);self.publish('new.txt','new');receipt=f.receipt_file(self.root,'primary',f.run_identity());r=json.loads(receipt.read_text());r['identity']='wrong';r['revision']=self.g('rev-parse','HEAD',root=self.publisher).decode().strip();receipt.write_text(json.dumps(r));self.assertEqual(f.primary_check(self.root)['missing'],['new.txt'])
  def test_no_worktree_or_index_mutations(self):
   before=self.g('status','--porcelain');self.publish();f.primary_check(self.root);self.assertEqual(self.g('status','--porcelain'),before)
+
+class AlternateMetadataTests(unittest.TestCase):
+    def setUp(self):
+        FreshnessTests.setUp(self)
+        self.metadata = Path(self.tmp.name) / 'source-metadata.git'
+        subprocess.check_output(['git', 'clone', '-q', '--bare', str(self.source), str(self.metadata)])
+        subprocess.check_output(['git', '--git-dir='+str(self.metadata), 'remote', 'remove', 'origin'])
+        subprocess.check_output(['git', '--git-dir='+str(self.metadata), 'config', 'core.bare', 'false'])
+        subprocess.check_output(['git', '--git-dir='+str(self.metadata), 'config', 'core.worktree', str(self.source)])
+        target = Path(self.tmp.name) / 'metadata-target'
+        subprocess.check_output(['git', '--git-dir='+str(self.metadata), 'worktree', 'add', '-q', '--detach', str(target)])
+        self.target = target
+        routing = patch.dict(os.environ, {'WORKFLOW_SOURCE_ROOT': str(self.source), 'WORKFLOW_SOURCE_GIT_DIR': str(self.metadata), 'GIT_DIR': str(self.metadata), 'GIT_WORK_TREE': str(self.source)})
+        routing.start(); self.addCleanup(routing.stop)
+
+    def check(self):
+        return freshness.check(self.target, self.source)
+
+    def run_git(self, *args):
+        if not hasattr(self, 'metadata'):
+            return FreshnessTests.run_git(self, *args)
+        return subprocess.check_output(['git', '-C', str(self.source), *args], env=freshness.git_env(self.source), stderr=subprocess.PIPE)
+
+    write = FreshnessTests.write
+    test_new_dependency_and_deletion = FreshnessTests.test_new_dependency_and_deletion
+    test_rechecking_allows_run_edits_but_detects_later_source_changes = FreshnessTests.test_rechecking_allows_run_edits_but_detects_later_source_changes
+    test_unpushed_source_commit_is_input = FreshnessTests.test_unpushed_source_commit_is_input
+
+    def test_target_metadata_is_not_redirected_by_inherited_env(self):
+        self.write('src/runtime.py', 'source changed')
+        self.assertEqual(self.check()['missing'], ['src/runtime.py'])
+        self.write('src/runtime.py', 'source changed', target=True)
+        self.assertEqual(self.check()['status'], 'current')
+        self.assertNotEqual(freshness.git(self.target, 'rev-parse', '--absolute-git-dir'), freshness.git(self.source, 'rev-parse', '--absolute-git-dir'))
+
+    def test_original_repository_target_is_not_an_alternate_worktree(self):
+        original_target = Path(self.tmp.name) / 'target'
+        with self.assertRaisesRegex(RuntimeError, 'same repository'):
+            freshness.check(original_target, self.source)
+
+    def test_wrong_source_binding_is_rejected(self):
+        with patch.dict(os.environ, {'WORKFLOW_SOURCE_ROOT': str(self.target)}):
+            with self.assertRaisesRegex(RuntimeError, 'not bound'):
+                freshness.git(self.target, 'rev-parse', 'HEAD')
+
+
+class PinnedRunAndCleanWorktreeTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.source = Path(self.tmp.name) / 'source'
+        self.source.mkdir()
+        subprocess.check_call(['git', '-C', str(self.source), 'init', '-q', '-b', 'main'])
+        subprocess.check_call(['git', '-C', str(self.source), 'config', 'user.email', 'test@example.invalid'])
+        subprocess.check_call(['git', '-C', str(self.source), 'config', 'user.name', 'Fixture'])
+        (self.source / 'src').mkdir()
+        (self.source / 'src/runtime.py').write_text('old\n')
+        subprocess.check_call(['git', '-C', str(self.source), 'add', '.'])
+        subprocess.check_call(['git', '-C', str(self.source), 'commit', '-qm', 'base'])
+
+    def test_pinned_to_run_keeps_mid_run_subagent_current_when_origin_advances(self):
+        remote = Path(self.tmp.name) / 'origin.git'
+        subprocess.check_call(['git', 'init', '--bare', '-q', '-b', 'main', str(remote)])
+        cloud = Path(self.tmp.name) / 'cloud'
+        subprocess.check_call(['git', 'clone', '-q', str(remote), str(cloud)])
+        for k, v in [('user.email', 't@e.invalid'), ('user.name', 'Fixture')]:
+            subprocess.check_call(['git', '-C', str(cloud), 'config', k, v])
+        (cloud / 'src').mkdir()
+        (cloud / 'src/app.py').write_text('v1\n')
+        subprocess.check_call(['git', '-C', str(cloud), 'add', '.'])
+        subprocess.check_call(['git', '-C', str(cloud), 'commit', '-qm', 'v1'])
+        subprocess.check_call(['git', '-C', str(cloud), 'push', '-q', 'origin', 'HEAD:main'])
+        with patch.dict(os.environ, {'WORKFLOW_RUN_ID': 'mid-run-pin-1'}):
+            r1 = freshness.cloud_check(cloud)
+            self.assertEqual(r1['status'], 'current')
+            peer = Path(self.tmp.name) / 'peer'
+            subprocess.check_call(['git', 'clone', '-q', str(remote), str(peer)])
+            for k, v in [('user.email', 't@e.invalid'), ('user.name', 'Fixture')]:
+                subprocess.check_call(['git', '-C', str(peer), 'config', k, v])
+            (peer / 'src/other.py').write_text('concurrent routine push\n')
+            subprocess.check_call(['git', '-C', str(peer), 'add', '.'])
+            subprocess.check_call(['git', '-C', str(peer), 'commit', '-qm', 'v2'])
+            subprocess.check_call(['git', '-C', str(peer), 'push', '-q', 'origin', 'HEAD:main'])
+            pinned = freshness.cloud_check(cloud, pinned_to_run=True)
+            self.assertEqual(pinned['status'], 'current')
+            self.assertTrue(pinned.get('pinnedToRun'))
+            live = freshness.cloud_check(cloud, pinned_to_run=False)
+            self.assertEqual(live['status'], 'stale')
+
+    def test_clean_worktree_cut_from_origin_main_self_sources_when_primary_is_behind(self):
+        remote = Path(self.tmp.name) / 'origin2.git'
+        subprocess.check_call(['git', 'init', '--bare', '-q', '-b', 'main', str(remote)])
+        subprocess.check_call(['git', '-C', str(self.source), 'remote', 'add', 'origin', str(remote)])
+        subprocess.check_call(['git', '-C', str(self.source), 'push', '-q', 'origin', 'HEAD:main'])
+        peer = Path(self.tmp.name) / 'peer2'
+        subprocess.check_call(['git', 'clone', '-q', str(remote), str(peer)])
+        for k, v in [('user.email', 't@e.invalid'), ('user.name', 'Fixture')]:
+            subprocess.check_call(['git', '-C', str(peer), 'config', k, v])
+        (peer / 'src/upstream.py').write_text('upstream v2\n')
+        subprocess.check_call(['git', '-C', str(peer), 'add', '.'])
+        subprocess.check_call(['git', '-C', str(peer), 'commit', '-qm', 'upstream v2'])
+        subprocess.check_call(['git', '-C', str(peer), 'push', '-q', 'origin', 'HEAD:main'])
+        subprocess.check_call(['git', '-C', str(self.source), 'fetch', '-q', 'origin', 'main'])
+        (self.source / 'src/runtime.py').write_text('local uncommitted edit on stale primary\n')
+        clean_wt = Path(self.tmp.name) / 'clean-wt'
+        subprocess.check_call(['git', '-C', str(self.source), 'worktree', 'add', '-q', '-b', 'mindmap/clean-test', str(clean_wt), 'origin/main'])
+        with patch.dict(os.environ, {'WORKFLOW_RUN_ID': 'clean-wt-run'}):
+            res = freshness.check(clean_wt)
+            self.assertEqual(res['status'], 'current')
+            self.assertTrue(res.get('selfSourcedWorktree'))
 
 if __name__ == '__main__':
     unittest.main()

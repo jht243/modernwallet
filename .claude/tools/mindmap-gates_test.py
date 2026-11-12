@@ -540,6 +540,113 @@ class Gates(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'readable text'):
             g.audit_analysis(self.root, self.packet, review, 'replay.json')
 
+    def test_fast_scope_chart_renders_and_blocks_writing_until_full_mode(self):
+        fast_plan = copy.deepcopy(self.plan)
+        fast_plan['preparationMode'] = 'fast-scope'
+        del fast_plan['newPageBriefs']
+        fast_plan['scopeBriefs'] = [{
+            'actionId': 'A1',
+            'target': '/guides/fixture',
+            'identity': {
+                'title': 'Fixture guide',
+                'pageType': 'guide',
+                'format': self.row['format'],
+                'medium': self.row['resolved_deliverable'],
+            },
+            'readerAndAnswer': {
+                'question': self.row['reader_question'],
+                'answer': self.row['answer'],
+                'placement': self.row['answer_placement'],
+            },
+            'keywordEvidence': 'Exact phrase validated with SERP read',
+            'whyNewPage': 'coverage_lookup checked; no existing page matches intent',
+            'outline': [{'heading': 'Opening answer', 'purpose': 'Deliver the direct answer in H2 #1'}],
+            'takeaway': 'Ordinary non-tested format; cost threshold takeaway',
+            'evidenceFiles': [self.ref('source.txt')],
+        }]
+        (self.root / 'manifest.json').write_text(json.dumps(fast_plan))
+        fast_rev = {
+            'reviewer': 'chart-reviewer-1',
+            'verdict': 'PASS',
+            'manifestSha256': g.digest(fast_plan),
+            'readinessSha256': g.file_sha(self.root / 'readiness.md'),
+            'evidence': 'Reviewed scope chart and primary sources',
+            'requestCoverage': [{'requirementId': 'R1', 'status': 'PASS', 'evidence': 'Covered by A1'}],
+        }
+        (self.root / 'chart-review.json').write_text(json.dumps(fast_rev))
+        g.chart(self.root, fast_plan, fast_rev)
+        rendered = g.render(fast_plan)
+        self.assertIn('preparation_mode: fast-scope', rendered)
+        self.assertIn('## Scope briefs (fast-scope', rendered)
+        (self.root / 'chart.md').write_text(rendered)
+        g.saved_chart(self.root, fast_plan)
+        # Phase 3 analysis and writer generation MUST stay blocked until expanded to preparationMode="full"
+        fast_packet = copy.deepcopy(self.packet)
+        fast_packet['approvedPlan'] = {'manifest': self.ref('manifest.json'), 'review': self.ref('chart-review.json'), 'actionId': 'A1'}
+        with self.assertRaisesRegex(ValueError, 'Fast-scope chart requires post-approval full brief'):
+            g.analysis(self.root, fast_packet)
+        with self.assertRaisesRegex(ValueError, 'Fast-scope chart requires post-approval full brief'):
+            g.generation(self.root, fast_plan, fast_rev, fast_packet, 'fixture')
+
+    def test_model_launch_lean_set_enforces_small_3_page_cap_and_rejects_alternatives(self):
+        (self.root / 'docs').mkdir(exist_ok=True)
+        (self.root / 'docs/model-launch-page-family.md').write_text('# Lean Launch Set\n')
+        small_plan = copy.deepcopy(self.plan)
+        small_plan['modelLaunch'] = {'level': 'small', 'modelSlug': 'gemini-4-hydrogen'}
+        targets = [
+            '/guides/gemini-4-hydrogen-explained',
+            '/guides/gemini-4-hydrogen-pricing',
+            '/comparisons/gemini-4-hydrogen-vs-gemini-3-8-flash',
+        ]
+        small_plan['actions'] = []
+        small_plan['newPageBriefs'] = []
+        for idx, target in enumerate(targets, 1):
+            aid = f'A{idx}'
+            row = copy.deepcopy(self.row)
+            row.update(id=aid, target=target)
+            small_plan['actions'].append(row)
+            brief = copy.deepcopy(self.plan['newPageBriefs'][0])
+            brief.update(
+                actionId=aid,
+                target=target,
+                inboundLinks={'required': 1, 'placements': [self.link('/existing', target)]},
+                outboundLinks={'placements': [self.link(target, '/existing')]},
+            )
+            small_plan['newPageBriefs'].append(brief)
+        small_plan['request']['requirements'][0]['actionIds'] = ['A1', 'A2', 'A3']
+        rev = self.review()
+        rev['manifestSha256'] = g.digest(small_plan)
+        g.chart(self.root, small_plan, rev)
+        # Adding a 4th page (e.g. how-to-use) on a small launch is rejected
+        extra_target = '/guides/how-to-use-gemini-4-hydrogen'
+        extra_row = copy.deepcopy(self.row)
+        extra_row.update(id='A4', target=extra_target)
+        extra_brief = copy.deepcopy(self.plan['newPageBriefs'][0])
+        extra_brief.update(
+            actionId='A4',
+            target=extra_target,
+            inboundLinks={'required': 1, 'placements': [self.link('/existing', extra_target)]},
+            outboundLinks={'placements': [self.link(extra_target, '/existing')]},
+        )
+        small_plan['actions'].append(extra_row)
+        small_plan['newPageBriefs'].append(extra_brief)
+        small_plan['request']['requirements'][0]['actionIds'].append('A4')
+        rev['manifestSha256'] = g.digest(small_plan)
+        with self.assertRaisesRegex(ValueError, 'caps small/sub-tier model launches'):
+            g.chart(self.root, small_plan, rev)
+        # -alternatives is rejected even on mid/frontier launches
+        alt_target = '/comparisons/gemini-4-hydrogen-alternatives'
+        small_plan['modelLaunch']['level'] = 'mid'
+        small_plan['actions'][-1]['target'] = alt_target
+        small_plan['newPageBriefs'][-1].update(
+            target=alt_target,
+            inboundLinks={'required': 1, 'placements': [self.link('/existing', alt_target)]},
+            outboundLinks={'placements': [self.link(alt_target, '/existing')]},
+        )
+        rev['manifestSha256'] = g.digest(small_plan)
+        with self.assertRaisesRegex(ValueError, 'forbids -alternatives'):
+            g.chart(self.root, small_plan, rev)
+
 
 if __name__ == '__main__':
     unittest.main()

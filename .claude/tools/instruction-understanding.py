@@ -46,10 +46,10 @@ def job(m,texts,root):
     return {'jobId':value['jobId'],'canonicalBase':value['canonicalBase'],'routes':value['routes']}
 
 
-def previous(root,m,l,current_texts=None):
+def previous(root,m,l,current_texts=None,archived_root=None):
     reuse=m.get('reuse');require(reuse,'No prior retained reading: complete the normal first full application')
     path=artifact(root,{'path':reuse['directory']+'/manifest.json','sha256':reuse['sha256']})
-    old,texts=l.historical_delivery(root,path.parent,application_override=reuse.get('application'))
+    old,texts=l.historical_delivery(root,path.parent,application_override=reuse.get('application'),**({'archived_root':archived_root} if archived_root else {}))
     retained=getattr(l,'retained_context_check',None)
     if retained:retained(old,m)
     else:
@@ -82,16 +82,16 @@ def challenge(root,directory):
             'instruction':'Write your genuine CURRENT confirmation, concrete task and changed-focus/application explanation. Set the statements only if true. Supply freshUnderstanding entries for changed/new/task sources and any unchanged rule whose application no longer fits. Do not rewrite eligible unchanged explanations. Lost/unclear context requires the normal full reread/application. This command does not provide answers or a PASS.'}
 
 
-def expand(root,m,c,l,seen=None,current_texts=None):
+def expand(root,m,c,l,seen=None,current_texts=None,archived_root=None):
     require(c.get('version')==VERSION,'Unknown retained-understanding confirmation')
     for key in IDENTITY:require(c.get(key)==m.get(key),'Confirmation belongs to another current '+key)
     for key in ['currentContextAvailable','rulesUnderstood','contextRetained','unchangedApplicationsStillApply','recallStillUnderstood','reuseEligibleSources']:
         require(c.get(key) is True,'Current access/understanding unavailable or unclear: reread and explain normally ('+key+')')
     for key in ['task','accessEvidence','currentApplication']:
         require(isinstance(c.get(key),str) and len(c[key].strip())>=60,'Write the actual current '+key+'; no automatic/generic affirmation')
-    old,a,texts,manifest_ref,application_ref,eligible=previous(root,m,l,current_texts)
+    old,a,texts,manifest_ref,application_ref,eligible=previous(root,m,l,current_texts,archived_root)
     require(c.get('previousBundleId')==old['bundleId'],'Wrong retained instruction bundle')
-    if a.get('understandingReuse'):verify_view(root,artifact(root,manifest_ref).parent,artifact(root,application_ref),historical=True,seen=seen)
+    if a.get('understandingReuse'):verify_view(root,artifact(root,manifest_ref).parent,artifact(root,application_ref),historical=True,seen=seen,archived_root=archived_root)
     fresh=c.get('freshUnderstanding',[]);require(isinstance(fresh,list),'Fresh source explanations must be a list')
     mapping={x.get('source'):x for x in fresh if isinstance(x,dict)}
     require(len(mapping)==len(fresh) and set(mapping)<=set(m['files']),'Unknown or repeated fresh source explanation')
@@ -140,18 +140,18 @@ def record(root,directory,confirmation,out):
             'instruction':'Use inspect for the compact independent-review view; original attributed explanations remain retrievable.'}
 
 
-def verify_view(root,directory,path,historical=False,seen=None):
+def verify_view(root,directory,path,historical=False,seen=None,archived_root=None):
     seen=set() if seen is None else seen;key=str(path.resolve())
     require(key not in seen,'Circular retained-understanding evidence');seen.add(key)
     l=local(root);require(l is not None,'Retained local explanation evidence requires its original site protocol')
-    if historical:m,current_texts=l.historical_delivery(root,directory)
+    if historical:m,current_texts=l.historical_delivery(root,directory,**({'archived_root':archived_root} if archived_root else {}))
     else:m=l.validate(root,directory,False);current_texts=None
     require(m.get('application') and artifact(root,m['application'])==path.resolve(),'Verify the actually recorded application')
     view=read(path);proof=view.get('understandingReuse');require(isinstance(proof,dict),'Missing retained-understanding provenance')
     require(m.get('understandingReuse')=={'version':VERSION,'confirmation':proof.get('confirmation'),'application':ref(root,path)},
             'Retained-understanding bundle registration missing or changed')
     c=read(artifact(root,proof.get('confirmation')))
-    expected,binding=expand(root,m,c,l,seen,current_texts)
+    expected,binding=expand(root,m,c,l,seen,current_texts,archived_root)
     expected['understandingReuse']={**binding,'confirmation':proof['confirmation']}
     require(view==expected,'Retained explanations, identities or current confirmation changed')
     return {'application':ref(root,path),'confirmation':proof['confirmation'],'identity':{key:m[key] for key in IDENTITY},
@@ -161,7 +161,7 @@ def verify_view(root,directory,path,historical=False,seen=None):
             'scope':'Fresh current-context confirmation and source-bound retained explanations. Not comprehension proof or an audit PASS.'}
 
 
-def review_check(root,review):
+def review_check(root,review,archived=False):
     for reference in review.get('instructionApplications',[]):
         # Existing legacy/native transport validators retain their own paths.
         # This hook adds verification only for the new opt-in receipt format.
@@ -171,7 +171,7 @@ def review_check(root,review):
         except (OSError,KeyError,ValueError,TypeError):continue
         if m.get('understandingReuse') or view.get('understandingReuse'):
             manifest_path=artifact(root,reference);path=artifact(root,m['application'])
-            verify_view(root,manifest_path.parent,path)
+            verify_view(root,manifest_path.parent,path,historical=archived,archived_root=m['root'] if archived else None)
     return True
 
 

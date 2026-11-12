@@ -22,6 +22,13 @@ BASE = ['_decision-evidence.md', '_testing-labels.md', '_content-standard.md',
         '_mindmap-execution.md']
 BUILD_BASE = ['_decision-evidence.md', '_testing-labels.md', '_experience.md',
               '_workflow-checkpoints.md', '_mindmap-execution.md', '_keyword-demand-ladder.md']
+MINDMAP_WRITE_BASE = ['_testing-labels.md', '_content-standard.md',
+                      '_anti-ai-language.md', '_experience.md']
+MINDMAP_AUDIT_BASE = ['_testing-labels.md', '_content-standard.md',
+                      '_anti-ai-language.md', '_experience.md',
+                      '_rendered-page-audit.md', '_remediation-ladder.md']
+MINDMAP_PUBLISH_BASE = ['_testing-labels.md', '_experience.md',
+                        '_workflow-checkpoints.md', '_rendered-page-audit.md']
 OPTIONAL = ['_testing-labels.local.md', '_content-standard.local.md',
             '_layer3-evidence-sources.md']
 CHUNK = 9000  # characters, deliberately below ordinary tool-output truncation
@@ -254,11 +261,18 @@ def sources(root, phase, instructions):
             extract_chart_obligations(root)
             rels.append(OBLIGATIONS_SOURCE)
             return list(dict.fromkeys(rels))
-        names = list(BASE)
-        if phase == 'audit':
-            names.append('_remediation-ladder.md')
+        base_map = {
+            'write': MINDMAP_WRITE_BASE,
+            'audit': MINDMAP_AUDIT_BASE,
+            'publish': MINDMAP_PUBLISH_BASE,
+        }
+        names = [n for n in base_map.get(phase, BASE) if (root / '.claude/commands' / n).is_file() or n in BASE]
         rels = ['.claude/commands/' + n for n in names]
         rels += ['.claude/commands/' + n for n in OPTIONAL if (root / '.claude/commands' / n).is_file()]
+        if phase == 'audit':
+            review_policy = '.claude/commands/_content-review-policy.md'
+            if (root / review_policy).is_file():
+                rels.append(review_policy)
         strip_map = {'write': WRITE_STRIP, 'audit': AUDIT_STRIP, 'publish': PUBLISH_STRIP}
         kept = _filter_instructions(instructions, strip_map.get(phase, set()))
         rels += kept
@@ -292,10 +306,11 @@ def prepare(root, phase, instructions, directory, cloud=False, reuse=None, actor
             publication_preparation=None):
     # Capture/check the exit code directly: no shell pipeline can turn failure into success.
     command = ['bash', str(root / '.claude/tools/workflow-start.sh')]
-    if cloud:
+    is_cloud = cloud or str(os.environ.get('CLAUDE_CODE_REMOTE', '')).strip().lower() in ('1', 'true', 'yes')
+    if is_cloud:
         command.append('--cloud')
     if run_id:
-        command.extend(['--run-id', run_id])
+        command.extend(['--run-id', run_id, '--pinned-to-run'])
     if source:
         command.extend(['--source', source])
     startup = subprocess.run(command, cwd=str(root), check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -452,7 +467,7 @@ def main():
                         inside(ROOT, args.reuse_application) if args.reuse_application else None, args.context_packet, args.source,
                         args.publication_preparation)
             print(json.dumps({'status': 'prepared-not-read', 'runDir': args.run_dir, 'parts': len(m['parts']), 'reusedFiles': len(m['reused']),
-                              'next': 'Use workflow-delivery-serial.local.py (up to 4 consecutive parts per turn) until every part is read, then run check.'}))
+                              'next': 'Issue up to 10 SEPARATE workflow-delivery-serial.local.py Bash tool calls per turn (never a shell for-loop in one Bash call, which triggers >30KB output truncation) until every part is read, then run check.'}))
         elif args.command == 'next':
             emit(ROOT, directory, args.part)
         elif args.command == 'challenge':
