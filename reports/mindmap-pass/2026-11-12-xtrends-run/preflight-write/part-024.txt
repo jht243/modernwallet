@@ -1,0 +1,54 @@
+ints.md`; filling generic strings does not pass independent review.
+- `inboundLinks` contains `required` (this site's real required count, at least one) and `placements`; `outboundLinks` contains `placements`. Each placement has exact local `source`, `target`, `section`, `anchor`, `purpose` and `inspection` artifact. Preserve stricter site coverage. An honestly empty outbound plan needs `notApplicableReason`. Link inspections happen before approval.
+- `preparation`: `{status: "PASS", readiness: {path, sha256}}`, pointing to the completed detailed readiness report. `evidenceFiles` lists the inspected source/research artifacts. Every artifact reference is `{path, sha256}`, relative to the active repository, with the current actual file hash. Per-page references may reuse the same inspected source.
+- `emergingClusters`, `exclusions` and `executionPlan`: retain the original clusters, exceptions and all Phases 1–9. Each execution entry is `{phase: 1..9, action: <specific future action>}`. These are planned actions, never claimed completed work.
+- `publicationScope`: explicit booleans `commit`, `push`, `liveVerification`, `indexNow`, matching the actual authorization being requested or the existing authorized local-only scope. Do not broaden it.
+
+### Preserve the original request and choose the presentation
+
+For every substantive run (new pages or existing-page body updates), add `request` to the manifest:
+- `source: {path, sha256}` points to the actual saved user request and relevant context, or the actual authorized caller/routine brief. Keep its wording intact; an agent-written narrower brief is not the source request.
+- `goal` states the intended reader/business result in plain language.
+- `requirements` contains `{id, description, acceptance, actionIds}` for every material requested outcome. Each requirement maps to real substantive actions; every substantive action maps back to a requirement. Acceptance describes observable output, not completed-work checkmarks. Preserve requested capabilities and constraints. Do not quietly reduce a demonstration of several capabilities to a single easy addition. Select an appropriate example before writing, or record a supported limitation within the authorized scope.
+
+Both `create new content` and `update existing body text` rows require meaningful `format`, `best_medium`, and `resolved_deliverable`; N/A remains valid only for metadata, link and advisory rows. Each substantive row also carries `presentation`:
+
+```json
+{
+  "medium": "interactive tool + text",
+  "placement": "Existing article, after the opening answer",
+  "reason": "The reader needs the result for their own team size",
+  "readerInputs": ["Editing-role users", "Commenter-only users", "Billing term"],
+  "interaction": {"decision": "build", "reason": "These inputs change the cheaper plan and total cost"},
+  "animation": {"decision": "use", "reason": "Cost bars show which plan changes as the reader adjusts headcount"}
+}
+```
+
+`medium` equals `resolved_deliverable`. `interaction.decision` is `build`, `reuse`, `not-useful` or `unavailable`; `animation.decision` is `use` or `not-useful`. Give each a specific reason, including what a static alternative does or does not let the reader decide. `readerInputs` lists meaningful choices, or `[]` if none. Select interaction when it materially improves a variable-input decision; a finite table can still be the better answer for genuinely finite cases. Do not force a calculator, animation, case study or source-count quota. “No tool necessary” alone is not a reason. Useful animation explains a change or sequence; provide reduced-motion behavior and keep the answer readable without animation.
+
+An existing-page tool stays on the approved route and goes through Phase 3c implementation, Phase 5 integration and independent Phase 4 review. A new tool page uses normal new-page routing. Before/after preview tabs and audit controls are not visitor-facing article tools. Build/reuse the selected actual asset; do not substitute a specification or silently downgrade it after review. A changed presentation needs affected preparation and final review again, within existing authorization and without another planned human gate.
+
+The existing independent chart reviewer checks the complete manifest, original request, source research, local rules, coverage, evidence and every brief. It writes `<RUN>/chart-review.json`: `reviewer` distinct from `author`, `verdict: "PASS"`, `jobId` exactly matching the manifest, canonical `manifestSha256`, actual file `readinessSha256`, concrete `evidence`, and `requestCoverage: [{requirementId, status: "PASS", evidence}]` covering each request requirement exactly once. Evidence explains how the actual plan satisfies the request, including example selection and useful presentation; reject a narrowed substitute even when its own facts are correct. Use `mindmap-gates.py hash --file <file>` to calculate hashes. A hash or helper return is not independent judgment. Never fabricate a review or populate PASS defaults.
+
+```bash
+python3 .claude/tools/mindmap-gates.py render-chart --manifest <RUN>/approval-manifest.json --review <RUN>/chart-review.json --out <CHART>
+python3 .claude/tools/mindmap-gates.py validate-chart --manifest <RUN>/approval-manifest.json --review <RUN>/chart-review.json
+```
+
+Present the complete generated chart, including the original request/acceptance, presentation decisions, every actual brief and link placement, unchanged. If long, show it in complete bounded parts before the sole approval question. The renderer provides exactly one preparation summary row. A failed command means a blocked readiness report with specific failures, never an approval-ready chart. Do not hand-render a shortened substitute. Revalidate imported/old Markdown charts by reconstructing their actual supported manifest; do not grandfather missing requirements/medium decisions or invent research. Changed sources, readiness or scope invalidate the affected review. No-addition charts may have empty action/brief arrays with their real explanation and do not request pointless content approval. Automatic revalidation of an already-approved unchanged scope adds no human gate. Preserve the original 12 action-column positions, appended row IDs, date frontmatter and `## Emerging search patterns (clusters)` heading. Non-content rows retain explicit N/A fields and exact file-or-route targets; body rows require actual format/medium decisions, reader intent and an exact route. The writer also checks that the actual saved chart exactly matches the complete deterministic rendering.
+
+## 2. Execute relevant analysis before the writer
+
+Choose the method that improves the actual reader decision. Run accessible calculations/modeling when meaningful; records are outputs of the run, not a demand that the owner supply a historical test log. A useful model starts from supported public facts, explicit assumptions and a decision-changing condition. Estimates need defensible inputs/ranges. Never derive actual product accuracy, operating success or customer savings from unrelated public benchmarks.
+
+Do not force calculations. For a combat drone with undisclosed price/performance, for example, use verified public facts, useful comparisons, unknowns and the limits of any defensible estimate. If there is no defensible estimate, explain that in the internal record and narrow the answer. News, definitions, qualitative comparisons and already sufficient pages may require no numerical work. Preserve medical/psychedelic/professional exclusions and required human professional review. A source-based or inconclusive answer can pass; arbitrary arithmetic cannot create value. The existing no-addition branch remains terminal and skips writing, tool building and numerical/growth work unless another real experiment needs them.
+
+Before assembling closed facts, retrieve the relevant approved client/fleet records:
+
+```bash
+python3 .claude/tools/mindmap-gates.py cases --query "<exact approved reader_question, including its internal evidence tag>" --publisher <active-site-domain> --out <RUN>/evidence/<slug>/cases.json
+```
+
+This reads the active site's full `_experience.md` plus the shared approved bank, preserving source IDs, exact quotes, ownership and attribution limits. It does not grant another site Layer3's history or testing permission. Record selected/rejected matches and why; never force a client mention. Additional accessible approved records can be added with their source, precise public-use scope and supported facts; a client list alone does not establish outcomes. Keep private records private. Update the shared bank through the existing reviewed sync when approved source facts change. For Layer3, also run the existing durable reader-survey catalog/facts lookup every Phase 3 run. No completed survey is not zero demand; do not simulate respondents or require waiting for a new survey.
+
+Extend the existing `evidence/<slug>/evidence.json` w

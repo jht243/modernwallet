@@ -1,0 +1,20 @@
+coverage_lookup: 1 candidate(s) vs 821 repo pages / 834 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1150 past-chart lines
+
+### /guides/dol-pbm-fee-disclosure-rule  — row - · create new content
+keyword: DOL PBM fee disclosure rule; PBM transparency rule employer drug plan copays
+reader question (new page intent): How does the DOL PBM fee-disclosure rule change my employer drug plan and copays?
+lookup terms: dol pbm fee disclosure rule transparency employer drug copay   format cues: pricing
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-25.md [table] | 5 | **Lens 1 (direct intent — brief item 4, renting out as owner/landlord).** `tenant screening checklist` 250/KD 5 ($2.00 CPC), `first time landlord checklist` 200/KD 1, `landlord checklist` 150/KD 0, `rental property
+- 2026-10-25.md [table] | 7 | **Lens 1 (direct intent — brief item 2, house selling).** `home selling checklist` 400/KD 8 ($0.90 CPC), `checklist for selling a house` 250/KD 6, `checklist for selling home` 150/KD 11, `home selling checklist pdf
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-robo-advisor). Head 'what is a robo advisor / robo advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /roundup/best-robo-adviso
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet when and how to switch advisors). Head 'switch financial advisors': autocomplete estimate 75-750/mo, NOT measured. lookup: /guides/financial-advisor-conflicts-of-int
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet use Form ADV to check an advisor). Head 'how to read form adv': autocomplete estimate 10-100/mo; 'form adv' 50-500/mo, NOT measured; many 'form adv' completions are 
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+Commits naming the topic: none
+Same run overlap: none
+

@@ -1,0 +1,78 @@
+r the depth floor, an auditor note that the floor can only be met by restating facts, or a page still failing after 3 fix rounds goes to Rung 2.
+
+### Rung 2 — REWORK (back to the writer, this page only)
+
+Reserved for findings that need new substance, new research, or a structurally different page:
+
+- a claim `content_gen.py fix` reported NOT FIXABLE IN PLACE (the page needs a fact it does not have)
+- depth under the floor after unsupported claims were removed, or a page that can only reach its floor by restating the same facts: EXPAND THE CLOSED FACT LIST with sourced facts first (the draft meta's `thin fact list` flag says so), then regenerate; never pad, never loosen the audit
+- an experience claim `_experience.md` does not license
+- the wrong register for what the page does
+- depth under the floor for its page type
+- a missing required page element (direct answer up top, who-this-is-not-for, what-would-change-our-answer, the proprietary anchor)
+- a dead-end problem the page raises and never resolves
+- a section that has to be rewritten rather than repaired
+
+Hand the reviewer's notes for **that page only** to the writer phase and re-run it for that page. A regenerated API page gets the claim check again automatically; anything the audit still finds goes back through Rung 1 `fix`, not straight to another rework. The reworked page then gets a full audit again, from Rung 0.
+
+**One shared Mindmap audit budget.** An activated Mindmap page has its configured total 1/2/3 independent rounds, including corrections; there is no separate two-rework allowance. At its limit stop editorial work and publish the exact final reviewed candidate with factual/cosmetic FAIL findings intact. Preserve unrelated work and unchanged-page evidence. Non-Mindmap native workflows retain their own existing limits and explicit client/upsell release exceptions.
+
+---
+
+## PER-PAGE PASS STATE
+
+A page that PASSED stays passed. Fixing or reworking one page does not re-open the audit on its siblings, and the rework counter is **per page**, never per phase. This is what stops one bad page from consuming both attempts on behalf of a batch that was otherwise fine.
+
+This does not weaken the re-audit invariant: a page whose own text changed is always re-checked on that exact text (Rung 1 re-reads the edited fields in context; Rung 2 re-audits the page in full). What is forbidden is re-auditing a page whose bytes did not change.
+
+The reviewer report ends with one line per page:
+
+```
+<page>: PASS | FIX-IN-PLACE (n) | REWORK (attempt k/2) | BLOCKED — <reason>
+```
+
+## Actual dependency failures
+
+A required lint/build/runtime, canonical instruction, independent-review execution, scope/payment/ownership, testing-honesty, exclusion, explicit customer-hold or professional-approval dependency remains required. Repair it automatically within existing authority, retaining exact work and evidence; report an actual unavailable dependency honestly. An ordinary editorial FAIL at an activated Mindmap audit limit is a capped release, not such a hold. Never fabricate a PASS or silently add another audit. Other native workflows retain their own stop/release rules.
+
+[Source: .claude/commands/mindmap-pass/phase-4-audit.md]
+[Repeated passage at this position: .claude/commands/_workflow-checkpoints.md, paragraph 4. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/_workflow-checkpoints.md, paragraph 5. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 6. Use its exact text under this source/section context.]
+
+# Phase 4 — Confirm new content (dedicated adversarial review)
+
+<!-- chart-obligation: p4-request-and-audit-gate -->
+**Check the original request and actual presentation before applying the checklist.** Read the request artifact, its mapped requirements, approved action and presentation decision. Independently judge whether the rendered result delivers this action's share of the user's goal, rather than accepting a narrower writer brief as the whole request. Record `requestCoverage`, `presentationReview` and `caseUseReview` under `_mindmap-execution.md` with concrete evidence. Every planned substantive action (`create new content` or `update existing body text` / embedded tool) must map to the original request requirements, carry verifiable closed facts + allowed URLs, justify static vs interactive `presentation` where adjustable inputs could help, and clear its page-type depth floor without padding.
+<!-- /chart-obligation -->
+
+
+<!-- mindmap-visible-checks-v1 -->
+**Approval chart: completed preparation only.** Follow `_workflow-checkpoints.md`, “Approval chart — completed preparation only.” Finish all applicable instruction reading, research, duplicate review, testing eligibility/evidence decisions, supported takeaway/attribution briefs and internal-link/technical/publication planning BEFORE showing the chart. Show exactly one **Preparation check** row: `✅ Passed` with a link to the complete readiness evidence. Keep the full read/application and per-page checklist in that linked report. On `❌ Failed`, show only the specific failures and fixes and block approval; do not expand passed items. Unfinished preparation blocks the ready approval chart. Keep the full action table and Phases 1–9 as the future execution plan, including writing, independent content audit, internal-link edits, sitemap and publication. Do not show pending cells or claim those execution steps already happened. Every new-page action must also have a complete, page-specific **New-page brief** shown inline in the saved chart AND on-screen approval output: identity, validated keyword/SERP evidence, existing-page/duplicate rationale, reader question and answer placement, concrete outline, inspected sources and contribution, testing/review decision, takeaway, inbound/outbound link placements, and technical/measurement scope. A title/URL row or link to a separate file is insufficient. Missing/mismatched briefs block the chart; never shorten them out. Approval remains the sole existing human gate.
+<!-- /mindmap-visible-checks-v1 -->
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 16. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 17. Use its exact text under this source/section context.]
+
+<!-- intent-takeaway-v1 -->
+**Intent-based takeaway audit:** Read `_decision-evidence.md` in the active project's `.claude/commands/`, including its takeaway requirements and section 4. Verify the conclusion answers the approved question, matches actual evidence and retains important conditions; compare the opening answer, tables, calculator and FAQs. An existing sufficient verdict or a supported inconclusive answer can pass. Never require a canned heading or unsupported testing language. For global commands, resolve/install the sibling shared contract in the active project while preserving local rules.
+<!-- /intent-takeaway-v1 -->
+
+
+**Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.
+
+
+<!-- decision-evidence-v1 -->
+## Decision-evidence gate
+
+Read `.claude/commands/_decision-evidence.md`, section 4, and independently audit its evidence packet against the exact rendered contribution. This includes new substantive content/tools embedded in an existing page. Verify visible attribution states what we did, what we found and how readers can check it; naming published inputs alone is insufficient. Match explicit “internal testing,” “internal modeling” or “internal analysis” wording to the saved evidence, without requiring an exact phrase: calculations, hypothetical models, actual tests and documented client observations must remain distinct. Require reproducible findings, important conditions and a counterexample; reject fabricated testing and unsupported benefit assumptions. Audit an optional calculator as a planning aid when that is all it establishes. Verify the growth record exists, but never treat its hypothesis as proven uplift. After two failed rework attempts, stop this workflow and escalate; do not continue to commit, push or publish.
+<!-- /decision-evidence-v1 -->
+
+This phase IS the gate for Phase 3. It checks net-new pages and substantive new content/tools embedded in existing pages. Pure metadata/link corrections retain their existing reviewer gates. Run as an Explore subagent that did NOT write those pages.
+
+**Check the `format` column of each Phase 3 row before applying the checklist.** Article rows and non-article rows have different review criteria:
+
+**For BUILT tool rows (`interactive tool`, `calcul

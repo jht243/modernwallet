@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "siteId": "jht243/modernwallet",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "xtrends-2026-11-12",
+  "producer": "mindmap-write",
+  "nextAction": "independent audit of v5 snapshot: route 1 round 3 targeted (AUD-V4-1 rhythm), route 2 already PASS in round 2 (unchanged)",
+  "routes": [
+    "/guides/dol-pbm-fee-disclosure-rule/",
+    "/guides/medicare-part-d-2027-premiums/"
+  ],
+  "candidates": [
+    {
+      "path": "src/data/guides.ts",
+      "sha256": "40d26a4d6a303fb02cc181ee55c290276a829b60a5a9b3b3d519d41446815398"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/drafts/dol-pbm-fee-disclosure-rule.json",
+      "sha256": "15b6cd27f18bb98400d9339dc01fc09e68c487f804dee17fe17b954b6c33a190"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/write-report.md",
+      "sha256": "1512dc7c36d12df0018ff57d7dbca91be1f4205330f9fb7db0fb93711d5b876e"
+    }
+  ],
+  "sources": [
+    {
+      "path": "evidence/dol-pbm-fee-disclosure-rule/sources.md",
+      "sha256": "ef41bf2e84a60405ba9c5d5d461f1cc39f8a44d14b17578b5da3ad975f761993",
+      "checkedAt": "2026-11-12",
+      "refreshWhen": "before any content correction or if the rule is amended",
+      "scope": "primary-source evidence for the DOL PBM fee disclosure rule"
+    },
+    {
+      "path": "evidence/dol-pbm-fee-disclosure-rule/cases.json",
+      "sha256": "db15ec6baa1498b9023813be9fc2f1aedba4495c3f3526b939fc2f05473510a6",
+      "checkedAt": "2026-11-12",
+      "refreshWhen": "before any content correction or if the rule is amended",
+      "scope": "primary-source evidence for the DOL PBM fee disclosure rule"
+    }
+  ],
+  "findings": [
+    {
+      "id": "AUD-V4-1",
+      "status": "open",
+      "evidence": "v4 audit: cosmetic monotone-rhythm run in open enrollment section; fixed in v5 and awaiting re-audit."
+    },
+    {
+      "id": "AUD-V3-F1",
+      "status": "open",
+      "evidence": "v3 audit remaining: unsupported Medicare Part D scope claim, dramatic fragments, antithesis, rhythm; fixed in v4 and awaiting re-audit."
+    },
+    {
+      "id": "AUD-R0-F1",
+      "status": "open",
+      "evidence": "Pre-round substantive audit FAIL (nothing recorded): timing inference, 20 percent misattribution, spread pricing, paragraph (b) qualifier, 100-employee simplification, links, antithesis, rhythm, error-correction wording, Part D overbroad sentence. Writer applied fixes; v3 snapshot needs re-audit."
+    },
+    {
+      "id": "CR-A1",
+      "status": "open",
+      "evidence": "Chart review: research section/takeaway must state both directions of DOL cost statements (lower costs anticipated; could exceed CBO; Scanlon 2024)."
+    },
+    {
+      "id": "CR-A2",
+      "status": "open",
+      "evidence": "Chart review: state paragraph (b) qualifier; not simply self-insured only; specified large plan wording."
+    },
+    {
+      "id": "CR-A3",
+      "status": "open",
+      "evidence": "Chart review: Byline Reviewed against primary sources must be verified by audit against FR text."
+    },
+    {
+      "id": "WR-1",
+      "status": "open",
+      "evidence": "Writer defects to check: mid-2027/2028 timing inference; 20 percent coinsurance illustration; spread pricing not defined claim; fewer than 100 employees simplification."
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 2,
+    "reworks": 0
+  },
+  "snapshot": {
+    "path": "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot-v5.json",
+    "sha256": "6d5a604a8d575c6eb465bfc5a953f17c522659f1d333007147d11d7f0c819fb0"
+  }
+}

@@ -1,0 +1,119 @@
+{
+ "slug": "dol-pbm-fee-disclosure-rule",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 3074,
+ "floor": 1200,
+ "input_tokens": 28147,
+ "output_tokens": 4831,
+ "thinking_tokens": null,
+ "cached_tokens": 22473,
+ "est_cost_usd": 0.0241,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "emptied by the claim check (nothing in the fact list could carry it): ['What the Rule Changes for Workers During Open Enrollment', 'Which Employer Plans the Rule Covers', 'What PBMs Must Disclose to Plan Fiduciaries', 'When the Disclosures Start', 'How Disclosure Could Reach Copays Indirectly'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 3074,
+  "numbers_not_in_facts": [
+   "1974"
+  ],
+  "fact_budget": {
+   "fact_words": 2397,
+   "floor": 1200,
+   "ratio": 2.0,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    4,
+    4
+   ],
+   "applied": [
+    {
+     "id": "sections[5].body",
+     "quote": "In section 8.1 of the regulatory text, the Department references an October 2024 report from the [Congressional Budget Office (CBO)](https://www.cbo.gov/system/files/2024-10/58793-rx-drug-prices.pdf).",
+     "replacement": "In section 8.1 of the regulatory impact discussion, the Department references an October 2024 report from the [Congressional Budget Office (CBO)](https://www.cbo.gov/system/files/2024-10/58793-rx-drug-prices.pdf).",
+     "type": "contradicted",
+     "why": "Section 8.1 is in the regulatory impact discussion, while regulatory text is paragraphs (a)-(p)."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Plan sponsors, fiduciaries, and benefits consultants seeking specific guidance on contract compliance, reporting standards, and fiduciary liability under ERISA should consult the full text of the rule in the Federal Register.",
+     "replacement": "Plan sponsors, fiduciaries, and benefits consultants seeking specific guidance on contract compliance, reporting standards, and fiduciary liability under ERISA should consult the full text of the [rule in the Federal Register](https://www.federalregister.gov/documents/2026/11/02/2026-22306/improving-transparency-into-pharmacy-benefit-manager-fee-disclosure).",
+     "type": "unlinked-directive",
+     "why": "Directs reader to consult Federal Register without a markdown link in the sentence."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "The Department of Labor's rule defines PBM services functionally, covering entities that handle pharmacy networks, drug claims processing, rebate negotiation, and formulary administration, regardless of whether the company formally calls itself a PBM.",
+     "replacement": "The Department of Labor's rule defines PBM services functionally, covering providers of pharmacy benefit management services regardless of whether the person identifies itself as a PBM.",
+     "type": "unsupported",
+     "why": "SOURCE does not list pharmacy networks, drug claims processing, or rebate negotiation as functions."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Spread pricing occurs when a PBM charges an employer health plan a higher amount for a prescription drug than the reimbursement amount it pays to the pharmacy dispensing the medication, retaining the difference as compensation.",
+     "replacement": "The rule does not explicitly define spread pricing, but treats it as a category of compensation.",
+     "type": "unsupported",
+     "why": "SOURCE does not define spread pricing."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Under paragraph (b) of the rule, a covered plan is a group health plan offered by a specified large employer or that is a specified large plan, subject to two statutory exclusions.",
+     "replacement": "Under paragraph (b) of the rule, a covered plan is a group health plan offered by a specified large employer or that is a specified large plan, subject to two exclusions.",
+     "type": "unsupported",
+     "why": "SOURCE describes exclusions in regulatory paragraph (b), not statutory exclusions."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Department is reserving action; existing statutory rules continue to apply",
+     "replacement": "The Department is reserving action",
+     "type": "unsupported",
+     "why": "SOURCE states only that the Department is reserving action on fully insured plans."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Under the new rule, plan fiduciaries will see itemized copay claw-back figures, identifying instances where a worker's copay at the pharmacy counter exceeded the reimbursement the PBM actually remitted to the pharmacy.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE defines copay claw-back compensation as the difference between payment and reimbursement."
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "The regulation defines copay claw-back compensation as the difference between the copayment or coinsurance paid by a plan participant to a pharmacy and the lower reimbursement the PBM actually pays to that pharmacy.",
+     "replacement": "The regulation defines copay claw-back compensation as the difference between a copayment or coinsurance amount paid to the pharmacy by a plan participant and the reimbursement to the pharmacy.",
+     "type": "inference",
+     "why": "SOURCE defines it as difference between participant payment and reimbursement to pharmacy."
+    }
+   ],
+   "deleted_final": 4,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3141
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 202.6,
+ "response_id": "OPP1auGbFb2yytMPnZy-8Ak",
+ "generated_at": "2026-11-12T17:14:41+0000"
+}

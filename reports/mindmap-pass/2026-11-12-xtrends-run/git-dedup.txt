@@ -1,0 +1,71 @@
+git dedup 2026-11-12
+## git log -20 --stat (names only)
+--- 4982bf4 Sync mindmap-pass and workflow efficiency from layer3labs 5a7837b2
+
+.claude/commands/_site-audit-autofix.md
+.claude/commands/ahrefs-site-audit-auto.md
+.claude/commands/ai-answer-citation-pass-auto.md
+.claude/commands/autocomplete-pass-auto.md
+.claude/commands/comparison-content-auto.md
+.claude/commands/ga4-top-pages-pass-auto.md
+.claude/commands/hype-radar-auto.md
+.claude/commands/keyword-gap-pass-auto.md
+.claude/commands/mindmap-pass.md
+.claude/commands/page-quality-pass-auto.md
+.claude/commands/podcast-pain-pass-auto.md
+.claude/commands/question-gap-pass-auto.md
+.claude/commands/rank-drop-recovery-auto.md
+.claude/commands/search-gap-content-auto.md
+.claude/commands/tool-usage-mindmap-auto.md
+.claude/commands/trend-pass-auto.md
+.claude/commands/vendor-roundup-auto.md
+.claude/commands/x-trends-mindmap-auto.md
+.claude/scripts/deploy-run-to-main.sh
+.claude/scripts/deploy-run-to-main_test.py
+.claude/scripts/land-run.sh
+.claude/scripts/send-routine-email.py
+.claude/tools/workflow-runbook.py
+--- 1822c7d page-quality-pass: 2026-11-12 pull + no-change digest
+
+reports/page-quality-pass/2026-11-12.md
+reports/page-quality-pass/2026-11-12.pull.json
+--- a51a1e0 ga4-top-pages: 2026-11-12 audit ledger + GA4 pull (no content changes)
+
+reports/trend-pass/2026-11-12.ga4.pull.json
+reports/trend-pass/ga4-page-audits.md
+--- f13a564 chore(site-audit): DataForSEO source receipt 2026-11-12 (Ahrefs units exhausted)
+
+reports/site-audit/2026-11-12.dataforseo.json
+--- 462284c Sync mindmap-pass and workflow efficiency from layer3labs 97879776
+
+.claude/tools/competitor-handoff.py
+.claude/tools/competitor-handoff_test.py
+.claude/tools/rendered-audit.py
+.claude/tools/rendered-audit_test.py
+--- 2cbfd7a trend-pass 2026-11-12: Lane C no-addition chart, ledger rows (no pages shipped)
+
+reports/mindmap-pass/2026-11-12-trend-lane-c-run/approval-manifest.json
+reports/mindmap-pass/2026-11-12-trend-lane-c-run/chart-review.json
+reports/mindmap-pass/2026-11-12-trend-lane-c-run/preflight-build/.delivery-order.lock
+reports/mindmap-pass/2026-11-12-trend-lane-c-run/preflight-build/manifest.json
+reports/mindmap-pass/2026-11-12-trend-lane-c-run/preflight-build/part-001.txt
+reports/mindmap-pass/2026-11-12-trend-lane-c-run/preflight-build/part-002.txt
+reports/mindmap-pass/2026-11-12-trend-lane-c-run/preflight-build/part-003.txt
+reports/mindmap-pass/2026-11-12-trend-lane-c-run/preflight-build/part-004.txt
+reports/mindmap-pass/2026-11-12-trend-lane-c-run/preflight-build/part-005.txt
+reports/mindmap-pass/2026-11-12-trend-lane-c-run/preflight-build/part-006.txt
+reports/mindmap-pass/2026-11-12-trend-lane-c-run/preflight-build/part-007.txt
+reports/mindmap-pass/2026-11-12-trend-lane-c-run/preflight-build/part-008.txt
+reports/mindmap-pass/2026-11-12-trend-lane-c-run/preflight-build/part-009.txt
+reports/mindmap-pass/2026-11-12-trend-lane-c-run/preflight-build/part-010.txt
+reports/mindmap-pass/2026-11-12-trend-lane-c-run/preflight-build/part-011.txt
+reports/mindmap-pass/2026-11-12-trend-lane-c-run/preflight-build/part-012.txt
+
+## git log -S pbm / pharmacy benefit / dol-pbm (all)
+36491ff Restore saved search candidates and surface their original remaining stage
+(empty above = no commits name the topic)
+## reports/mindmap-pass mentions
+reports/x-trends/2026-11-12.md
+
+## Note
+Commit 36491ff matched the pickaxe only because it bulk-restored workflow instruction files (.claude/commands/*) and the saved x-trends intake text; it creates no page, route or section on the PBM topic. Conclusion: no prior commit touches this topic; no page/route data names PBM or pharmacy benefit managers (grep of src/data and data returned nothing).

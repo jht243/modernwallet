@@ -1,0 +1,185 @@
+=== /guides/medicare-part-d-2027-premiums/ (src/data/guides.ts line approx 1354) ===
+
+## How Much Medicare Part D 2027 Premiums Rise
+KFF projects the average monthly premium for stand-alone prescription drug plans (PDPs) will rise to $51 in 2027, up 50 percent from $34 in 2026. The projection assumes current enrollees do not switch plans. 
+
+The arithmetic on KFF's two averages works out as follows:
+
+- $34 a month in 2026 equals $408 a year.
+- $51 a month in 2027 equals $612 a year.
+- The gap between the two averages is $17 a month, or $204 a year.
+
+KFF says more than 4 million people enrolled in zero-premium PDPs will face higher premiums, because no zero-premium PDPs are available in 2027. For Medicare Advantage plans with drug coverage (MA-PDs), KFF projects an average of $9 a month in 2027, an increase of less than $2.
+
+The $51 figure is an average projection, so a given enrollee may pay more or less. [Medicare.gov](https://www.medicare.gov/health-drug-plans/part-d/basics/costs) says Part D premiums vary by plan and may be higher depending on income. Medicare.gov does not list premiums by state or for any individual on the page cited here.
+
+## No Zero-Premium Stand-Alone Plans in 2027
+KFF reports that no zero-premium stand-alone drug plans are available in 2027. KFF's release does not say why plans raised premiums.
+
+The [Centers for Medicare & Medicaid Services (CMS)](https://www.cms.gov/newsroom/fact-sheets/medicare-part-d-2027-national-average-monthly-bid-amount-information) addressed a change to stand-alone plans in a fact sheet dated July 28, 2026. CMS said it will discontinue the voluntary premium stabilization demonstration for stand-alone plans, which began in 2025, at the end of 2026. CMS said plan sponsors had enough experience under the redesigned benefit, so the program returns to traditional market conditions in 2027.
+
+ CMS does not present the end of the demonstration in the fact sheet as the reason zero-premium plans are absent, and KFF does not offer it as an explanation either.
+
+The same CMS fact sheet sets the 2027 national average monthly bid amount at $296.05 and the base beneficiary premium at $41.33. Under the Inflation Reduction Act's premium stabilization provision, the base premium can rise no more than 6 percent per year. Medicare.gov lists the 2026 base beneficiary premium as $38.99, and $38.99 times 1.06 equals $41.33, so by arithmetic the 2027 figure rose by the full 6 percent allowed.
+
+## What the Lowest- and Highest-Premium National Plans Cost
+KFF counts eight national PDPs for 2027, with projected average premiums ranging from about $6 to $204 a month. The lowest is [Centene](https://www.centene.com/)'s [Wellcare](https://www.wellcare.com/) Value Script Rx at $6.50, up from $5.80. The highest is [United](https://www.uhc.com/)'s [AARP](https://www.aarp.org/) Medicare Rx Preferred at $204.50, up from $126.00.
+
+| Plan | 2026 Monthly Premium | 2027 Projected Monthly Premium | 2027 Annual Premium (Arithmetic) |
+| --- | --- | --- | --- |
+| Wellcare Value Script Rx (Centene) | $5.80 | $6.50 | $78 |
+| AARP Medicare Rx Preferred (United) | $126.00 | $204.50 | $2,454 |
+
+By arithmetic, the Wellcare plan rises $0.70 a month and the AARP plan rises $78.50 a month. 
+
+These are average premiums for national plans, and premiums vary by plan. The table covers premiums only, so it does not show what either plan charges as a deductible or for a specific drug. Plans can be compared in [Medicare Plan Finder](https://www.medicare.gov/plan-compare), the Medicare.gov tool for finding and comparing plans.
+
+## Deductibles and Cost Sharing in Medicare Part D 2027
+KFF reports the maximum Part D deductible allowed in 2027 is $700, up from $615 in 2026, and plans may charge less. Medicare.gov lists the same $700 ceiling and notes that some plans have no deductible.
+
+Average deductibles and the share of enrollees facing one also rise, according to KFF:
+
+- PDP enrollees: $643 on average, up from $540.
+- MA-PD enrollees: $489 on average, up from $360.
+- 99.8 percent of PDP enrollees face a deductible if they keep their plans, up from 96 percent.
+- 85 percent of MA-PD enrollees face a deductible if they keep their plans, up from 80 percent.
+
+ 
+
+After the deductible, Medicare.gov says enrollees pay 25 percent coinsurance until out-of-pocket spending reaches $2,100 in 2026 or $2,400 in 2027. Once spending reaches that limit, enrollees pay nothing for covered Part D drugs for the rest of the calendar year. The 2027 limit is $300 higher than the 2026 limit, by arithmetic.
+
+KFF says most enrollees will pay coinsurance rather than copayments for preferred and non-preferred drugs, which can make out-of-pocket costs less predictable. Medicare.gov defines a copayment as a fixed dollar amount per prescription and coinsurance as a percentage of the drug cost. A 25 percent coinsurance charge moves with the price of the drug, while a copayment stays the same.
+
+## How to Compare and Switch Before December 7
+Open enrollment runs through December 7, according to KFF, and KFF says relatively low-premium PDP options exist. Medicare Plan Finder at medicare.gov/plan-compare is the Medicare.gov tool for finding and comparing plans.
+
+A premium is only part of a plan's yearly cost, because the deductible and coinsurance are added to it. A plan with a lower premium may carry a deductible as high as $700 plus 25 percent coinsurance. A plan with a higher premium may charge a smaller deductible or none.
+
+These four items cover the main 2027 drug costs that KFF and Medicare.gov list:
+
+1. The 2027 monthly premium, multiplied by 12 for the annual premium.
+2. The deductible, which can be anywhere from $0 to $700.
+3. Whether drugs carry coinsurance or copayments after the deductible.
+4. The $2,400 out-of-pocket limit, after which covered drugs cost $0 for the rest of 2027.
+
+Twelve times the monthly premium plus the deductible is the least a plan costs in a year when the full deductible is paid. Coinsurance on each prescription then adds to that total until out-of-pocket spending reaches $2,400.
+
+ No source cited publishes any individual's 2027 premium, so each plan's own figures are the numbers to compare.
+
+## Who Pays Less with Extra Help
+Extra Help is a Medicare program for people with limited income and resources, according to Medicare.gov's [Extra Help page](https://www.medicare.gov/basics/costs/help/drug-costs). KFF notes that the 2027 premium increases affect most PDP enrollees who do not receive the extra subsidies provided to low-income enrollees.
+
+Medicare.gov lists these 2026 limits:
+
+- Individual: income of $23,940 and resources of $18,090.
+- Married couple: income of $32,460 and resources of $36,100.
+
+Medicare.gov says these limits may rise each year, and Alaska and Hawaii have separate limits that the page does not list. Extra Help is not available in Puerto Rico, the U.S. Virgin Islands, Guam, the Northern Mariana Islands or American Samoa.
+
+Some people qualify automatically: those with full-benefit Medicaid, those getting state help with Part B premiums through a Medicare Savings Program, and those receiving Supplemental Security Income (SSI). Medicare.gov says people can apply for Extra Help and a Medicare Savings Program together. The [Medicare Savings Programs guide](/guides/medicare-savings-programs/) covers that second program.
+
+For 2027, Medicare.gov's Extra Help page describes these costs:
+
+- Plan premium: $0.
+- Plan deductible: $0.
+- Up to $5.80 per generic drug and up to $14.40 per brand-name drug at participating pharmacies.
+- $0 per covered drug once total drug costs reach $2,400.
+
+Medic
+
+## Medicare Advantage Plans with Drug Coverage
+KFF projects MA-PD premiums will average $9 a month in 2027, up less than $2, and says the stand-alone PDP premium is more than five times higher. That comparison covers average premiums only.
+
+MA-PD enrollees face deductibles too. KFF puts the average MA-PD deductible at $489 in 2027, and 85 percent of MA-PD enrollees face one if they keep their plans.
+
+Choosing Medicare Advantage is a different decision from choosing a stand-alone drug plan. The [Medicare vs. Medicare Advantage comparison](/compare/medicare-vs-medicare-advantage/) covers those differences.
+
+## Takeaway
+A stand-alone Part D enrollee who keeps the same plan may see the average increase in KFF's October 30, 2026 projection. The average rise is $17 a month, or $204 a year by arithmetic, and KFF says people facing large increases need to take action to avoid paying significantly more. This applies to stand-alone plan enrollees who do not receive Extra Help, whose plan premium Medicare.gov lists as $0. MA-PD premiums average $9 a month.
+
+Keeping the current plan can still be the cheaper choice. If a plan's own 2027 premium, deductible and coinsurance on the enrollee's drugs add up to a lower yearly total than the other plans, staying costs less. A low premium paired with a $700 deductible can cost more over a year than a higher premium with a smaller deductible.
+
+Before December 7, you can open [Medicare Plan Finder](https://www.medicare.gov/plan-compare) and compare each Medicare Part D 2027 plan's premium together with its deductible and coinsurance.
+
+=== /guides/hsa-triple-tax-advantage/ (src/data/guides.ts line approx 1026) ===
+
+## HSA Triple Tax Advantage Limits for 2026
+The HSA triple tax advantage is three separate tax breaks that apply when money goes in, while it earns and when it comes out for medical bills. [IRS Publication 969](https://www.irs.gov/publications/p969) describes each break. The 2026 dollar limits come from [IRS Revenue Procedure 2025-19 (Rev. Proc. 2025-19)](https://www.irs.gov/pub/irs-drop/rp-25-19.pdf).
+
+- Contributions: Publication 969 says you can deduct contributions that you, or anyone other than your employer, make to your HSA, even if you do not itemize deductions on Schedule A (Form 1040). Contributions from your employer, including those made through a cafeteria plan, may be excluded from your gross income instead.
+- Earnings: Interest and other earnings on the assets in the account are tax free.
+- Withdrawals: Distributions are tax free when you use them to pay qualified medical expenses.
+
+You report contributions on Form 8889 with your Form 1040. The HSA trustee reports contributions on Form 5498-SA and distributions on Form 1099-SA. Employer contributions appear on your Form W-2 in box 12 with code W.
+
+The 2026 figures below apply only when your coverage meets the IRS definition of an HDHP.
+
+| 2026 figure | Self-only coverage | Family coverage |
+|---|---|---|
+| HSA contribution limit | $4,400 | $8,750 |
+| Added amount at age 55 or older | $1,000 (total $5,400) | $1,000 for each eligible individual age 55 or old
+
+## Who Can Contribute to an HSA
+Only an eligible individual covered by a qualifying HDHP can contribute to an HSA, and for 2026 the plan must meet the deductible and out-of-pocket figures in the table above. A self-only plan with a deductible under $1,700 does not meet the 2026 definition. Neither does a family plan whose deductible and out-of-pocket costs can run past $17,000.
+
+Medicare enrollment ends new contributions. Publication 969 says that beginning with the first month you are enrolled in Medicare, your contribution limit is zero. Excess contributions carry a 6% excise tax, covered in the next section.
+
+The Medicare rule can apply to earlier months. If you delay applying for Medicare and your enrollment is backdated, contributions made during the retroactive period count as excess contributions. If you are near Medicare enrollment, our [Medicare Savings Programs guide](/guides/medicare-savings-programs/) explains that your state can pay your Medicare premiums through a Medicare Savings Program if you qualify.
+
+The last-month rule lets some people contribute a full year's amount. Under Publication 969, if you have family HDHP coverage on the first day of the last month of your tax year, you can contribute the full-year limit. The last-month rule carries a testing period that begins with the last month of your tax year and ends on the last day of the 12th month after that month.
+
+If you fail to stay an
+
+## Where the Three Tax Breaks End
+Four IRS rules limit the three tax breaks.
+
+- Excess contributions: Publication 969 says you generally pay a 6% excise tax on excess contributions. The tax applies to each tax year the excess stays in the account, and you report it on Form 5329.
+- Non-medical withdrawals: You can take a distribution at any time, but only amounts used exclusively for qualified medical expenses are tax free. Other distributions are subject to income tax and may be subject to an additional 20% tax.
+- Insurance premiums: You may not use HSA funds to pay for insurance, with four exceptions. The exceptions are long-term care insurance, health care continuation coverage, health care coverage while you receive unemployment compensation, and Medicare and other health care coverage if you are 65 or older. Premiums for a Medicare supplemental policy such as Medigap do not qualify.
+- Double counting: You cannot deduct, as an itemized deduction on Schedule A, qualified medical expenses equal to the tax-free distribution from your HSA.
+
+The 20% additional tax does not apply to distributions made after you become disabled, reach age 65 or die. Income tax on a non-medical withdrawal still applies after 65. Only the extra 20% goes away.
+
+## Year-to-Year Carryover and Portability
+HSA funds do not expire. Publication 969 says amounts left at the end of the year generally carry over to the next year, and you do not have to make withdrawals each year. The contributions stay in the account until you use them, and the HSA itself is generally exempt from tax.
+
+The account is portable. It stays with you if you change employers or leave the work force.
+
+You can roll over amounts from Archer medical savings accounts (MSAs) and from other HSAs into an HSA. Rollovers are not subject to the annual contribution limit, and you do not need to be an eligible individual to roll over from an existing HSA to a new HSA.
+
+## HSA Triple Tax Advantage Compared with an FSA or Roth IRA
+Two other ModernWallet guides compare the HSA triple tax advantage with a flexible spending account (FSA) and with a Roth individual retirement account (IRA). Our [HSA vs. FSA comparison](/compare/hsa-vs-fsa/) puts the two health accounts side by side. Our [HSA vs. Roth IRA comparison](/compare/hsa-vs-roth-ira/) does the same for the HSA and the Roth IRA.
+
+## What the HSA Triple Tax Advantage Does Not Cover
+IRS Publication 969 and Rev. Proc. 2025-19 do not cover these questions:
+
+- State income tax treatment of HSAs.
+
+
+
+
+- Your own tax saving, which depends on your marginal tax rate and your state. A tax professional can apply your state's rules and your marginal rate to your return.
+
+The 2026 figures above do not fit three readers.
+
+- No qualifying HDHP: Without a qualifying HDHP, the contribution limits above do not apply to you. The [HSA vs. FSA comparison](/compare/hsa-vs-fsa/) covers the FSA side.
+- Already enrolled in Medicare and wanting to contribute: Your contribution limit is zero from the first month of enrollment. You do not need to be an eligible individual to roll over from an existing HSA to a new HSA.
+- Expecting to spend the money on non-medical costs before 65: Those withdrawals owe income tax and may owe the additional 20% tax. The [HSA vs. Roth IRA comparison](/compare/hsa-vs-roth-ira/) covers the retirement-account side.
+
+Our answer would change if the IRS publishes new contribution limits or changes the HDHP deductible and out-of-pocket rules. Every dollar figure here is for 2026 only. For other planning moves at tax time, our [tax tips guide](/guides/tax-tips/) lists more.
+
+## Our Takeaway
+An HSA fits an eligible person on a qualifying HDHP who expects to use the money for qualified medical expenses. The deduction, the tax-free earnings and the tax-free medical withdrawals all apply to the same dollars. That answer rests on IRS Publication 969 and Rev. Proc. 2025-19.
+
+The answer changes in three cases. Your plan may not be a qualifying HDHP. Your state may tax HSAs differently, and a tax professional can apply your state's rules.
+
+You may also expect to need the money for non-medical costs before 65, when a withdrawal costs income tax plus a possible 20% additional tax. Contributions end once Medicare enrollment starts. Confirm your plan meets the 2026 high-deductible definition in [Rev. Proc. 2025-19](https://www.irs.gov/pub/irs-drop/rp-25-19.pdf) before you count on the HSA triple tax advantage, then compare the HSA with an [FSA](/compare/hsa-vs-fsa/) or a [Roth IRA](/compare/hsa-vs-roth-ira/).
+
+## What Tax Loss Harvesting Can Deduct Each Year
+Tax loss harvesting works by selling an asset for less than its adjusted basis and claiming the difference as a capital loss. IRS Topic 409 says an asset's basis is generally its cost, and a sale for more than that basis is a capital gain. Losses from selling personal-use property, such as a home or car, are not tax deductible.
+
+A capital loss on an investment cancels capital gains. If losses are still left over, you can claim the lesser of $3,000 ($1,500 if married filing separately) or your total net loss from line 16 of Schedule D against your other income. Any net loss above that limit carries forward to later years.
+
+The holding period sets the type of loss. IRS Topic 409 treats an asset held more than one year as long-term and one held one year or less as short-term.
+
+The type matters because the two are taxed differently. Net short-term capital gains are taxed as ordinary income at graduated rates. Most net capital gain is taxed at 0%, 15% or 20%. IRS Topic 409 names higher maximum rates for a few gains: 28% for collectibles and section 1202 stock, and 25% for unrecaptured section 1250 gain.

@@ -1,0 +1,163 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "mindmap-write",
+ "route": "/guides/dol-pbm-fee-disclosure-rule/",
+ "readerQuestion": "Will the DOL's PBM fee disclosure rule change my employer drug plan or my copays? [PAA unavailable (SERP unread, DataForSEO unavailable); ac: question sweep on \"pbm rule\" returned 0 rows; \"pbm transparency\" and \"pbm fee disclosure\" a-z sweeps returned 45 unique completions of which 7 are rule-intent (dol pbm fee disclosure rule, pbm fee disclosure proposed rule, dol pbm transparency rule, ebsa pbm transparency rule, pbm transparency proposed rule, pbm transparency regulations, pbm rules) and the rest are state laws, insurer names or vendor lists; dominant pattern verdict (does it change X); verb-only on the copay clause]",
+ "approvedPlan": {
+  "manifest": {
+   "path": "reports/mindmap-pass/2026-11-12-xtrends-run/approval-manifest.json",
+   "sha256": "d0d6a96c036c062365287b4f3001f9d4b5fa7c1160a77437613b3efc3dc55212"
+  },
+  "review": {
+   "path": "reports/mindmap-pass/2026-11-12-xtrends-run/chart-review.json",
+   "sha256": "74ba0378ed0bd32a355b37a20d150291a289c16d8936f8b9248ec3eb01d1f21c"
+  },
+  "actionId": "A1"
+ },
+ "presentation": {
+  "medium": "text",
+  "placement": "New guide; the finite table sits after the opening answer in section 2",
+  "reason": "The reader needs a yes or no on their own plan and a date; the answer turns on three facts (self-insured or not, 100 or more employees or participants, plan year start) that a short finite table settles",
+  "readerInputs": [],
+  "interaction": {
+   "decision": "not-useful",
+   "reason": "Three plan-type rows answer who is covered and when; a calculator would have no defensible formula because the rule sets no price or copay, and a worker cannot enter an unknown plan type that a table row does not already explain"
+  },
+  "animation": {
+   "decision": "not-useful",
+   "reason": "There is no changing quantity to animate; the sequence (contract, semiannual disclosure, audit) is three short items readable as a list"
+  }
+ },
+ "demandSource": "Google Autocomplete sweeps saved in the run (autocomplete-pbm*.csv, volumes.json): rule-intent completions for \"pbm fee disclosure\" and \"pbm transparency\"; volumes are estimate bands, not measured; SERP unread (DataForSEO unavailable).",
+ "decisionGap": "Trade press and the DOL promotion describe the rule for plan fiduciaries. A worker cannot tell from them whether the plan on offer in 2026 open enrollment or its copays change, or what the Department itself says about costs in both directions.",
+ "finding": "The rule changes who sees PBM compensation (the employer's plan fiduciaries) and when (before a contract is entered, extended or renewed and every six months after), changes nothing in plans on offer for 2026 or for a calendar-year plan's 2027 plan year, and sets no copay, premium or formulary term. Indirect effects on copays are possible: the Department expects lower plan costs and possibly lower participant out-of-pocket costs and says the effect could exceed CBO's estimates, while the studies it cites disagree (Scanlon 2024: plan costs +3.5 percent, participant out-of-pocket -1 percent; a 2025 Part D study of state laws: no reduction).",
+ "conditions": [
+  "Covered plan per para (b): offered by a specified large employer (average 100 or more employees, counted under IRC 4980H) or a specified large plan (sponsor described in 29 U.S.C. 1002(16)(B)(ii) or (iii), average 100 or more participants), excluding plans whose benefits are all provided through an insurance policy and plans of drug-supply-chain-affiliated sponsors",
+  "Applies to plan years beginning on or after July 1, 2027; effective Jan 4, 2027",
+  "Disclosures go to the responsible plan fiduciary, not to participants",
+  "Cost statements are the Department's stated expectations (could, may, can) and third-party studies of state laws or bills, not measurements of this rule"
+ ],
+ "whatWouldChange": "A plan year starting on or after July 1, 2027; an employer redesign of cost sharing after reading disclosures; an amendment or court action changing the rule; the Department publishing participant-facing disclosure requirements.",
+ "basis": "reported",
+ "whyNoQuantitativeAnalysis": "The rule sets no price, copay or formula. The only numbers are dates, thresholds and third-party study results that the Federal Register preamble reports; arithmetic on them would be trivial (the calendar-year first covered plan year is labelled arithmetic) and would not be the contribution.",
+ "reasoning": "Reader asks whether the rule changes an employer drug plan or copays. The regulatory text (paras (a) to (p)) imposes disclosure and audit duties on covered service providers toward the responsible plan fiduciary and contains no cost-sharing term and no participant disclosure duty (grep of operative text). DATES and para (p) fix effective Jan 4, 2027 and applicability to plan years beginning on or after July 1, 2027. Para (b) and (m)(6)-(7) define coverage by size, sponsor type and two exclusions. The strongest counterexample is the preamble: it says disclosures could lead to lower out-of-pocket costs, says the rule could have a bigger impact than CBO estimates because covered plans are not subject to state disclosure laws, and cites Scanlon (2024) showing participant out-of-pocket costs down 1 percent while plan costs rose 3.5 percent; the page states these directions beside the studies that found no reduction, as the Department's expectation or third-party findings, and keeps the verdict that the rule itself sets no copay and reaches no 2026 open-enrollment plan. Source silence on future employer decisions is not proof that no plan will change, so the page says the rule does not itself change copays and an employer could use the information.",
+ "sourceArtifacts": [
+  {
+   "path": "reports/mindmap-pass/2026-11-12-xtrends-run/fr-2026-22306-text.txt",
+   "sha256": "880ff6fc526091aad9b50a710f5c8c87197229c25fb1ff223fefb63e52a6d357"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-12-xtrends-run/fr-2026-22306-operative-text.txt",
+   "sha256": "02ddb85589c01c41efb6eae9eca9f12360b0599b9ef0063ccbff5f57d6405dfe"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-12-xtrends-run/fr-meta.json",
+   "sha256": "7abdc64fe4b88e546732b23809aed53cd4fd21990e2e67caac56b8a6d8d5b57c"
+  },
+  {
+   "path": "evidence/dol-pbm-fee-disclosure-rule/sources.md",
+   "sha256": "ef41bf2e84a60405ba9c5d5d461f1cc39f8a44d14b17578b5da3ad975f761993"
+  }
+ ],
+ "sources": [
+  {
+   "label": "Federal Register: Improving Transparency Into Pharmacy Benefit Manager Fee Disclosure (91 FR 69092)",
+   "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22306/improving-transparency-into-pharmacy-benefit-manager-fee-disclosure",
+   "checkedAt": "2026-11-12",
+   "supports": "dates, scope paras (b) (m)(6) (m)(7), disclosure items, timing, no cost-sharing term, regulatory impact discussion sections 8.1 and 8.3 (Department expectation, bigger-impact statement, Scanlon 2024, CBO, Fiore 2025)"
+  },
+  {
+   "label": "CBO: Alternative Approaches to Reducing Prescription Drug Prices (Oct. 2024)",
+   "url": "https://www.cbo.gov/system/files/2024-10/58793-rx-drug-prices.pdf",
+   "checkedAt": "2026-11-12",
+   "supports": "cited by the Federal Register preamble for the 0.1 to 1.0 percent estimate; read only through the preamble"
+  },
+  {
+   "label": "CBO: S. 1339 Pharmacy Benefit Manager Reform Act cost estimate",
+   "url": "https://www.cbo.gov/system/files/2024-12/s1339.pdf",
+   "checkedAt": "2026-11-12",
+   "supports": "cited by the Federal Register preamble for the 0.5 percent and premium estimates; read only through the preamble"
+  },
+  {
+   "label": "Scanlon, Prescription for Savings? Disclosure in the Drug Market (Dec. 20, 2024)",
+   "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5021179",
+   "checkedAt": "2026-11-12",
+   "supports": "cited by the Federal Register preamble for plan cost +3.5 percent and participant out-of-pocket -1 percent; read only through the preamble"
+  },
+  {
+   "label": "Fiore, Can Transparency Reduce Drug Costs (revised Apr. 17, 2026)",
+   "url": "https://ssrn.com/abstract=5710162",
+   "checkedAt": "2026-11-12",
+   "supports": "cited by the Federal Register preamble for no reduction in Part D costs from state rebate-disclosure laws; read only through the preamble"
+  }
+ ],
+ "caseSelection": {
+  "path": "evidence/dol-pbm-fee-disclosure-rule/cases.json",
+  "sha256": "db15ec6baa1498b9023813be9fc2f1aedba4495c3f3526b939fc2f05473510a6"
+ },
+ "caseDecisions": [
+  {
+   "recordId": "client-bowlero-corporation",
+   "decision": "rejected",
+   "reason": "Layer3Labs-owned client or property record with no topical overlap with a federal PBM disclosure rule and no public-use scope for themodernwallet.com; reporter-register page makes no client claim"
+  },
+  {
+   "recordId": "client-professional-bowlers-association-pba",
+   "decision": "rejected",
+   "reason": "Layer3Labs-owned client or property record with no topical overlap with a federal PBM disclosure rule and no public-use scope for themodernwallet.com; reporter-register page makes no client claim"
+  },
+  {
+   "recordId": "client-horizen-labs",
+   "decision": "rejected",
+   "reason": "Layer3Labs-owned client or property record with no topical overlap with a federal PBM disclosure rule and no public-use scope for themodernwallet.com; reporter-register page makes no client claim"
+  },
+  {
+   "recordId": "client-multiple-hoa-and-condo-boards-across-the-usa",
+   "decision": "rejected",
+   "reason": "Layer3Labs-owned client or property record with no topical overlap with a federal PBM disclosure rule and no public-use scope for themodernwallet.com; reporter-register page makes no client claim"
+  },
+  {
+   "recordId": "client-multiple-law-firms",
+   "decision": "rejected",
+   "reason": "Layer3Labs-owned client or property record with no topical overlap with a federal PBM disclosure rule and no public-use scope for themodernwallet.com; reporter-register page makes no client claim"
+  },
+  {
+   "recordId": "owned-property-cuban-insights",
+   "decision": "rejected",
+   "reason": "Layer3Labs-owned client or property record with no topical overlap with a federal PBM disclosure rule and no public-use scope for themodernwallet.com; reporter-register page makes no client claim"
+  },
+  {
+   "recordId": "owned-property-drones-defense",
+   "decision": "rejected",
+   "reason": "Layer3Labs-owned client or property record with no topical overlap with a federal PBM disclosure rule and no public-use scope for themodernwallet.com; reporter-register page makes no client claim"
+  },
+  {
+   "recordId": "owned-property-orbitalintel",
+   "decision": "rejected",
+   "reason": "Layer3Labs-owned client or property record with no topical overlap with a federal PBM disclosure rule and no public-use scope for themodernwallet.com; reporter-register page makes no client claim"
+  }
+ ],
+ "provenance": {
+  "basis": "reported",
+  "supportingRecordIds": [
+   "FR-2026-22306"
+  ],
+  "scopeAndLimits": "Statements of the Federal Register final rule and the studies the Department cites. No internal test, model or client observation. Regulatory explainer, not legal, medical or benefits advice.",
+  "publicMethod": "Third-person attribution to the Federal Register final rule (linked at first use) beside each finding, with the Department's and each cited researcher's statements named; calendar-year date arithmetic labelled as arithmetic.",
+  "placement": "introText, sections 2 to 7 and 10, FAQs"
+ },
+ "plannedTakeaway": "For plan year 2027 choices, treat the rule as background: it starts Jan 4, 2027, reaches a plan only from its first plan year beginning on or after July 1, 2027 (for a calendar-year plan, Jan 1, 2028), covers only large self-insured plans, and gives PBM compensation details to the employer's fiduciaries, not to workers. Compare the plans on offer by their own published copays, deductible and formulary, because the rule sets none of those. Whether copays ever fall depends on what the employer does with the disclosures and the Department's cited research calls the direct effect uncertain. Applies to workers in employer plans; fully insured and small self-insured plans are outside the detailed disclosures. Changes if the plan year starts on or after July 1, 2027, if an employer redesigns the benefit after reading disclosures, or if the rule changes. Next action: ask the benefits team whether the plan is self-insured and when its plan year begins. Cost evidence in both directions (CR-A1): the Department expects lower plan costs and possibly lower participant out-of-pocket costs and says the effect could exceed CBO's estimates; the studies it cites disagree, so pass-through to workers is uncertain.",
+ "exclusions": [
+  "TESTED format off: regulatory explainer outside _experience.md section G; no executed test; no howWeTested; no tested schema",
+  "No professional-review claim; byline and reviewer line come from the existing template",
+  "No medical, efficacy or drug claim; no legal or benefits advice",
+  "DOL X post and law-firm commentary not used (not retrievable)"
+ ],
+ "unknowns": [
+  "Search demand not measured (estimate bands only)",
+  "SERP and PAA unread (DataForSEO unavailable)",
+  "Which employers are covered and how many workers are affected",
+  "What any employer will do with disclosures"
+ ],
+ "selectedMedium": "prose + one finite table, no calculator (presentation decisions copied from the approved action)"
+}

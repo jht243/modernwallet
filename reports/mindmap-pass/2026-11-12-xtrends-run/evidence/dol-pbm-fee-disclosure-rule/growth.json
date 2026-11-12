@@ -1,0 +1,18 @@
+{
+ "origin": "x-trends-mindmap-auto 2026-11-12 (jobId xtrends-2026-11-12)",
+ "queryFamily": "dol pbm fee disclosure rule / pbm transparency rule",
+ "hypothesis": "A worker-facing, sourced answer on whether the DOL PBM fee disclosure rule changes an employer drug plan or copays earns clicks for the rule-intent query family that fiduciary-aimed pages do not answer. Unproven.",
+ "primaryMetric": "GSC clicks to /guides/dol-pbm-fee-disclosure-rule/ for the query family",
+ "baseline": {
+  "status": "unavailable",
+  "reason": "new route, not zero; GSC not queried"
+ },
+ "comparator": "age-matched new guides from x-trends-mindmap-auto (for example medicare-part-d-2027-premiums)",
+ "changeScope": "new guide route plus one inbound link sentence on /guides/medicare-part-d-2027-premiums/",
+ "sourceRefreshTrigger": "amendment of 29 CFR 2550.408b-22, a court action, or DOL participant-disclosure guidance",
+ "outcomeStatus": "not-yet-published",
+ "canonicalUrl": "https://www.themodernwallet.com/guides/dol-pbm-fee-disclosure-rule/",
+ "path": "/guides/dol-pbm-fee-disclosure-rule",
+ "growthFile": "reports/mindmap-pass/2026-11-12-xtrends-run/evidence/dol-pbm-fee-disclosure-rule/growth.json",
+ "evidenceFile": "reports/mindmap-pass/2026-11-12-xtrends-run/evidence/dol-pbm-fee-disclosure-rule/evidence.json"
+}

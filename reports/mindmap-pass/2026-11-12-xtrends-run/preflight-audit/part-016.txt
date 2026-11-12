@@ -1,0 +1,61 @@
+adlines** that withhold the answer to force a click: "What Nobody Tells You About X", "The One Thing X Won't Say". State the finding in the heading.
+
+### The meaning bar — POSITIVE tests every sentence must pass
+
+Everything else in this file is a ban. Bans alone produce empty prose, because a writer dodging them drifts toward abstraction: the safest sentence to write is one that says nothing. These tests are the other half. A page can carry zero banned phrases and still fail here, and that failure is worse, because it wastes the reader's time while looking compliant.
+
+- **Never raise a problem you do not resolve.** If you name a problem, objection, risk, limitation, or complaint, the same passage must give the reader somewhere to go: the answer, the workaround, the tradeoff to accept, or a link to the page that handles it. A problem raised and abandoned is worse than silence, because you have told the reader they have a fire and then walked out. "There is a fifth complaint, that reminders are manual and orders go cold, and no dashboard fixes it" leaves the reader holding it. Either resolve it, route it, or cut the sentence. This applies to caveats and limitations too: "X is supported but not automated" must be followed by what to do about it.
+- **The say-it-out-loud test.** Would you say this sentence, in these words, to a smart colleague across a table? If it would sound stilted spoken aloud, it is stilted written down. "Naming the problem first separates a good switch from an expensive lateral move" is not something a person says. "Work out what you actually need before you compare the options" is.
+- **Concrete nouns, not placeholders.** Every sentence needs at least one noun the reader can picture. `problem`, `platform`, `solution`, `option`, `approach`, `thing`, `piece`, `area`, `aspect`, `move`, `one` are placeholders. A wait time, a refill pack, a duplicate row, $49 a month: those are things. A sentence built only from placeholders means nothing however grammatical it is.
+- **Each sentence adds a new fact.** If a sentence restates its predecessor in different words, delete it. The predecessor can be the previous body sentence or the subtitle/deck. "Each constraint points at a different option. Overnight, ground, and pickup each fit a different one." is one idea written twice. A subtitle that states the finding, then an intro sentence that restates it, is the same fail.
+- **No pronoun that sends the reader backwards.** "a different one", "if it cannot be stated", "that matters when". A pronoun whose antecedent sits in a previous sentence forces a re-read. Repeat the noun.
+- **Verbs do the work; do not nominalize.** "Naming the problem first separates…" hides an instruction inside a noun. Write the instruction: "Name the problem first." Watch for `-ing` and `-tion` subjects.
+- **Right collocations.** Use the words that actually go together. Products do not "answer" problems; they fit a need, solve a problem, or handle a job. A wrong pairing is the clearest signal that a machine assembled the sentence.
+- **No abstract metaphor where a plain verb exists.** "separates a good switch from an expensive lateral move", "drives the real cost", "points at". Say what happens.
+
+**If a reader could ask "what does this actually mean?" about a sentence, it fails, no matter how many bans it clears.**
+
+### Overloaded sentences (any one is a failure)
+
+- One idea per sentence. A sentence fails if it packs three or more ideas, chains clauses with commas / "and" / "from X to Y to Z", runs past ~30 words, or needs a second read. Split a stack. Do not split a clear spoken sentence just to get under 20 words.
+
+### Inflated adjectives & hype verbs (cut the word, state the fact)
+
+- Banned as filler: crucial, vital, essential, pivotal, paramount, powerful, profound, remarkable, notable, significant, key, game-changer, cutting-edge, revolutionary, breakthrough, robust, holistic, "wealth of", myriad, plethora, delve, realm, landscape, testament, "plays a key/vital/pivotal role", "cannot be overstated", unlock, harness, supercharge, boost, foster, utilize, facilitate, empower, streamline, tapestry, beacon, multifaceted, meticulous, intricate, embark, elevate, transformative. Name the actual feature and what it does instead.
+
+### Punctuation tells (any one is a failure)
+
+- Rhetorical-question section openers, colon-drama ("The result:", "The catch:"), exclamation points, scare-quote overuse, semicolon-stacked sentences.
+
+### Formatting slop (any one is a failure)
+
+- Emoji in headings, bold sprinkled mid-sentence for emphasis, bullet lists where two sentences of prose read better, and a header over a two-sentence section. Format follows the content; it does not decorate it.
+- Three or more parallel steps, checks, or tests announced as a set, then written as paragraphs that open First / Second / Third (or 1. / 2. / 3. in body copy). Those belong in a list. Two related sentences, or a story that uses "first … then …", stay prose.
+
+### Phrasing tells (two or more fail the page)
+
+- Throat-clearing openers ("When it comes to…", "In today's fast-paced world…", "In the ever-evolving landscape of…").
+- Empty tricolons ("efficient, effective, and scalable"); hedged non-conclusions ("ultimately, the right choice depends on your needs").
+- Filler verbs/phrases: "delve into", "leverage" (verb), "navigate the complexities of", "unlock the power of", "it's worth noting that", "a testament to".
+- Symmetrical listicle padding where every bullet is the same length and shape with no concrete specifics.
+
+Write with concrete specifics, commit to a verdict, and vary sentence shape.
+
+---
+
+## AUDITOR
+
+**GATE 1 — Reads like unedited ChatGPT → HARD FAIL (objective, no exemption).** Two classes of tell. The **single-instance bans** set `ok=false` on one occurrence. The **phrasing tells** set `ok=false` at two or more. Set fail with note `chatgpt-tells: [list which]`. The fix is a targeted rewrite of the offending sentences — never a full-page rewrite.
+
+### Single-instance bans (any one occurrence = FAIL on its own)
+
+- **Meta-narration & condescending signposting** — prose that announces the writing, rates the point just made, or narrates the reader's search or the page's reason for existing. Signpost openers ("Here is the gap.", "The truth is,", "What this means is,", "Now, the interesting part.", "Here's the thing/catch/reality."); point-rating ("that is the direct answer, and it matters more than…", "the short answer is…", "and that matters", "make no mistake"); page/reader self-reference ("this guide covers…", "in this article", "as we'll see", "you might be wondering", "that's why you're here", "which is the reason this search exists", "if you're still reading this"). Structural labels and section headings are fine — the fail is narrating the writing inside the prose.
+- **Em-dash used as a connector or aside** — any em-dash (— or --) joining or setting off a clause. COUNT them (`grep -o "—" <file> | wc -l`); a single one fails. The fix recasts with a period, comma, colon, or parentheses; number ranges use "to". Never delete the content.
+- **"honest" / "honestly" / "honesty"** applied to anything non-human or to the writing itself. `grep -inE "\bhonest"` the changed content; one hit fails.
+- **"X, not Y" antithesis** — the compressed comma-antithesis ("variety, not high doses") or the "it's not just X, it's Y" / "isn't just about X — it's about Y" cadence. A plain full-sentence negation is fine; the compressed flourish fails.
+- **Software "death" metaphor** — "died", "is dead", "killed", "kill it", "death of [X]", "on life support", "flatlined", "RIP [product]" for a demo, feature, product, tool, model, or technology.
+- **Coy abstraction where a name belongs** — "the vendor", "the platform", "this provider", "the company", "the tool", "one major provider", "a leading tool" used anywhere on a page that already names its subject. Scan body prose, FAQ answers, CTA copy, and every heading field, not just headlines. Any one occurrence FAILS; report as `coy-abstraction: "[text]"`. The fix substitutes the real name.
+- **Unlinked directive to check a source** — any sentence telling the reader to verify, confirm, check, or look something up without a link to the exact page that answers it. FAILS; report as `unlinked-directive: "[text]"`. The fix adds the deep link, not a homepage.
+- **Vague abstraction that names nothing concrete** — impressive adjective-noun combos with no referent ("seamless synergy", "strategic inflection point", "holistic approach", "next-level solution", "digital transformation journey"). Fails a "what does this literally mean?" test.
+- **Overloaded / run-on sentence** — three or more ideas, clauses chained with commas / "and" / "from X to Y to Z", past ~30 words, or needing a second read. Each such sentence fails. Do not fail a clear spoken sentence for sitting a few words over 20.
+- **Inflated adjective / hype verb** — crucial, vital, essential, pivotal, paramount

@@ -1,0 +1,117 @@
+{
+ "rows": [
+  {
+   "keyword": "pbm transparency rule",
+   "volume": 150,
+   "volume_low": 150,
+   "volume_high": 1500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+   "seed": "pbm transparency rule"
+  },
+  {
+   "keyword": "pbm transparency law",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 5 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "seed": "pbm transparency rule"
+  },
+  {
+   "keyword": "pbm transparency regulations",
+   "volume": 150,
+   "volume_low": 150,
+   "volume_high": 1500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+   "seed": "pbm transparency rule"
+  },
+  {
+   "keyword": "dol pbm transparency rule",
+   "volume": 150,
+   "volume_low": 150,
+   "volume_high": 1500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+   "seed": "pbm transparency rule"
+  },
+  {
+   "keyword": "ebsa pbm transparency rule",
+   "volume": 150,
+   "volume_low": 150,
+   "volume_high": 1500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+   "seed": "pbm transparency rule"
+  },
+  {
+   "keyword": "pbm transparency proposed rule",
+   "volume": 150,
+   "volume_low": 150,
+   "volume_high": 1500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+   "seed": "pbm transparency rule"
+  },
+  {
+   "keyword": "what is a transparent pbm",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "seed": "pbm transparency rule"
+  },
+  {
+   "keyword": "list of transparent pbms",
+   "volume": 150,
+   "volume_low": 150,
+   "volume_high": 1500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+   "seed": "pbm transparency rule"
+  },
+  {
+   "keyword": "pbm rules",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 7 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "seed": "pbm transparency rule"
+  }
+ ],
+ "notes": [
+  "semrush unusable (no SEMRUSH_API_KEY)",
+  "expand: no provider usable \u2014 autocomplete estimate only",
+  "Expansion returned 0 provider + 9 unique autocomplete ideas for 'pbm transparency rule' (limit=20 per source; unmeasured autocomplete metrics remain estimates)"
+ ]
+}

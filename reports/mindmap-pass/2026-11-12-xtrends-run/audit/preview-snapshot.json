@@ -1,0 +1,5908 @@
+{
+  "capturedAt": "2026-11-12T17:17:14.989106+00:00",
+  "baseUrl": "http://127.0.0.1:42415",
+  "domDir": null,
+  "manifest": {
+    "workflowKind": "mindmap-pass",
+    "author": "mindmap-write",
+    "canonicalBase": "https://www.themodernwallet.com",
+    "routes": [
+      {
+        "path": "/guides/dol-pbm-fee-disclosure-rule/",
+        "requiredText": [
+          "DOL PBM fee disclosure rule",
+          "January 4, 2027",
+          "Reviewed against primary sources"
+        ],
+        "forbiddenText": [
+          "we tested",
+          "Tested and reviewed by",
+          "dol pbm fee"
+        ],
+        "correctionContentFiles": [
+          "src/data/guides.ts"
+        ],
+        "reviewDependencies": [
+          "reports/mindmap-pass/2026-11-12-xtrends-run/fr-2026-22306-text.txt",
+          "reports/mindmap-pass/2026-11-12-xtrends-run/fr-2026-22306-operative-text.txt",
+          "reports/mindmap-pass/2026-11-12-xtrends-run/fr-meta.json",
+          "evidence/dol-pbm-fee-disclosure-rule/sources.md",
+          "reports/mindmap-pass/2026-11-12-xtrends-run/evidence/dol-pbm-fee-disclosure-rule/evidence.json",
+          "reports/mindmap-pass/2026-11-12-xtrends-run/evidence/dol-pbm-fee-disclosure-rule/growth.json"
+        ],
+        "growthFile": "reports/mindmap-pass/2026-11-12-xtrends-run/evidence/dol-pbm-fee-disclosure-rule/growth.json",
+        "evidenceFile": "reports/mindmap-pass/2026-11-12-xtrends-run/evidence/dol-pbm-fee-disclosure-rule/evidence.json",
+        "expectedUpdatedDate": "2026-11-12"
+      },
+      {
+        "path": "/guides/medicare-part-d-2027-premiums/",
+        "requiredText": [
+          "DOL's PBM fee disclosure rule for employer drug plans"
+        ],
+        "forbiddenText": [],
+        "expectedUpdatedDate": "2026-11-02",
+        "correctionContentFiles": [
+          "src/data/guides.ts"
+        ],
+        "reviewDependencies": [
+          "reports/mindmap-pass/2026-11-12-xtrends-run/links/inbound-source-sections.txt"
+        ]
+      }
+    ]
+  },
+  "routes": [
+    {
+      "path": "/guides/dol-pbm-fee-disclosure-rule/",
+      "status": 200,
+      "fingerprint": "89f943fb95dbe641e95f862ba04818c69eed8fdafc1a4888773d639ffa415d34",
+      "semantic": {
+        "text": "ModernWallet Free Financial Calculators Calculators All calculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate Elder Care Trump Account 529 College Savings Coast FIRE Business Loan Payoff Personal Loan Interest Per Day Taxable vs. Tax-Deferred Credit Card Payoff IUL Merchant Cash Advance Invoice Factoring Business Line of Credit PTO Cash-Out Zakat Life Insurance Needs Self-Employment Tax Operating Cash Flow Mileage Deduction Cash Conversion Cycle Freelance Rate HELOC S-Corp Tax Commercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Mileage Reimbursement Portfolio Rebalancing Hurricane Deductible Annuity Credit Card Interest Loan Payment HYSA vs CD Trump Account vs 529 Mortgage Recast Social Security COLA Biweekly Mortgage Roth vs Traditional 401(k) Pay Off Mortgage or Invest Florida Amendment 3 Student Loan Garnishment Tax Bracket Debt-to-Income Ratio Taxable Social Security Checklists Charitable Donation Deduction Car Loan Interest Deduction Rent vs Buy Stock Capital Gains Tax Hidden Cost of Owning a Home × ModernWallet / Guides / What the DOL PBM Fee Disclosure Rule Means for Employer Drug Plans and Copays What the DOL PBM Fee Disclosure Rule Means for Employer Drug Plans and Copays By Jonathan Velez , Personal Finance Writer & Editor · Reviewed against primary sources · Updated November 12, 2026 The DOL PBM fee disclosure rule does not change the prescription drug plans or copays that workers choose during 2026 open enrollment. Released by the Employee Benefits Security Administration (EBSA) of the Department of Labor (DOL), the final regulation on Improving Transparency Into Pharmacy Benefit Manager Fee Disclosure becomes effective January 4, 2027. It applies to plan years beginning on or after July 1, 2027. The rule requires pharmacy benefit managers (PBMs) to disclose their direct and indirect compensation to the fiduciaries of large, self-insured group health plans. It does not mandate disclosures directly to workers, nor does it require employers to change their copays, deductibles, premiums, or drug formularies. The regulation governs fee transparency between commercial vendors and employer plan sponsors rather than establishing consumer price limits. Workers comparing employer coverage for the upcoming calendar year will not see adjustments driven by this regulation. The initial disclosures will not reach plan fiduciaries until mid-2027 or 2028 depending on the plan year, and any future shift in copays depends on how employers use the fee data. Tools for this journey What the Rule Changes for Workers During Open Enrollment The final regulation does not alter the prescription drug plans, copayment tiers, or deductibles presented to workers during 2026 open enrollment. The rule takes effect on January 4, 2027, and its disclosure obligations apply only to plan years beginning on or after July 1, 2027. Furthermore, the regulation applies strictly to covered large self-insured plans, and its operative text creates no obligation for service providers or employers to send fee disclosures to plan participants. The rule sets no limits on copays, establishes no caps on coinsurance, and contains no requirements regarding plan premiums or covered drug lists. What the regulation changes is the level of compensation detail delivered to responsible plan fiduciaries who oversee covered employer health plans. Service providers of pharmacy benefit management services expecting $1,000 or more in direct or indirect compensation must provide written disclosures detailing their fees, manufacturer rebates, spread pricing, and pharmacy recoupment. Plan fiduciaries must receive this information in advance of signing, extending, or renewing a service contract, followed by semiannual or quarterly reporting. For an employee selecting a workplace benefit package today, the terms displayed in open enrollment materials remain the operative terms. The regulation does not automatically lower out-of-pocket costs at the pharmacy counter, and it does not mandate refunds of pharmacy revenue to individual workers. Any eventual change in cost sharing would occur later and indirectly, if an employer uses the reported fee data to negotiate different contract terms with its PBM. Which Employer Plans the Rule Covers The regulation defines covered plans using specific employer size standards while explicitly excluding several categories of group health coverage. Under paragraph (b) of the rule, a covered plan is a group health plan offered by a specified large employer or that is a specified large plan, subject to two exclusions. It excludes any group health plan in which all benefits are provided exclusively through an insurance policy issued by a health insurance issuer. It also excludes any plan established by a sponsor that is, or is affiliated with, a drug manufacturer, distributor, wholesaler, PBM, or rebate aggregator. For plans maintained by a single employer, paragraph (m)(6) defines a specified large employer as an employer that employed an average of at least 100 employees on business days during the preceding calendar year and employs at least one worker on the first day of the calendar year. These counts follow the aggregation and employee-counting rules of Internal Revenue Code section 4980H. A specified large plan, defined in paragraph (m)(7), covers plans established or maintained by sponsors described in 29 U.S.C. 1002(16)(B)(ii) or (iii) that averaged at least 100 participants on business days during the preceding plan year. Smaller self-insured plans below these thresholds do not receive the detailed fee schedules mandated by this regulation. Under preamble section 1.2.1, smaller self-insured plans remain subject to the statutory exemption in the Employee Retirement Income Security Act of 1974 (ERISA) section 408(b)(2)(B), meaning their service providers must supply generalized statutory compensation disclosures. The Department stated that it is reserving action regarding fully insured health plans. Plan type Detailed disclosures under this rule What applies instead Large self-insured employer plan Yes, for plans meeting size tests under paragraph (b) Detailed advance and semiannual written disclosures under 29 CFR 2550.408b-22 Smaller self-insured plan No, exempt from this rule's detailed disclosures Generalized statutory compensation disclosures under ERISA section 408(b)(2)(B) Fully insured plan No, excluded when all benefits are provided through insurance The Department is reserving action Plan sponsored by drug-supply-chain affiliate No, excluded under paragraph (b)(2) Excluded from this regulation's disclosure requirements What PBMs Must Disclose to Plan Fiduciaries The disclosure obligations apply to providers of pharmacy benefit management services and affiliated providers of brokerage and consulting services entering contracts where they reasonably expect $1,000 or more in direct or indirect compensation. The rule applies based on the functions performed, regardless of whether a company identifies itself as a pharmacy benefit manager. The disclosure must be delivered in writing to a responsible plan fiduciary with the authority to enter, extend, or renew the contract. Under paragraphs (e) and (g) of the regulation, service providers must supply comprehensive data on services and compensation streams: A detailed description of all pharmacy benefit management, consulting, and brokerage services provided to the plan. Direct compensation received from the plan, reported both in the aggregate and broken down by individual service. Indirect compensation, including manufacturer payments such as rebates, administration fees, alternative discounts, and other remuneration, reported in the aggregate and for each formulary drug, specifying amounts passed to the plan and amounts retained by the provider. Spread compensation broken down by drug National Drug Code (NDC) and pharmacy channel (retail, mail order, and specialty), including arrangements steering patients toward affiliated pharmacies. Pharmacy recoupment figures, including copay claw-back compensation, defined as the difference between a copayment or coinsurance paid by a participant to a pharmacy and the actual reimbursement paid to that pharmacy. Price-protection agreements, formulary placement incentives, and explanations of why reasonably available therapeutic equivalent alternatives were omitted from the formulary. Net price per fill by drug and pharmacy channel, or an objective methodology that allows the plan fiduciary to verify the calculation. The fiduciary status of the service provider and a formal audit right permitting the plan to review provider records. All dollar figures must be stated as actual dollar amounts, though good-faith estimates are permitted when exact figures cannot be determined. Covered service providers must provide disclosures in a machine-readable file upon request. Additionally, providers may not restrict the plan fiduciary's use of the disclosed information, except through reasonable confidentiality agreements for third parties, and cannot prevent sharing with legal counsel or regulatory agencies. When the Disclosures Start The Department published the final regulation in the Federal Register on November 2, 2026, following its signing on October 28, 2026, by Daniel Aronowitz, Assistant Secretary of EBSA. The rule establishes an effective date of January 4, 2027, but sets its applicability date to plan years beginning on or after July 1, 2027. The Department adopted this delayed applicability date to allow employers and service providers adequate time to renegotiate existing contracts and structure future arrangements. By simple arithmetic on the Federal Register dates, the regulation does not apply to a standard calendar-year employer plan for its 2027 plan year. A calendar-year plan's first plan year beginning on or after July 1, 2027, starts on January 1, 2028. The earliest plans subject to the regulation will be non-calendar-year plans whose coverage years begin on or shortly after July 1, 2027. When the rule applies, initial disclosures must be provided reasonably in advance of entering, extending, or renewing a service contract. For contract extensions and renewals, the rule deems 90 calendar days in advance to be a reasonable timeframe. Ongoing disclosures must follow on a semiannual basis, or quarterly upon the covered plan's request, delivered no later than 30 calendar days following the end of each reporting period. If a provider discovers an error, it must correct the disclosure within 30 calendar days of learning of the inaccuracy. These requirements operate separately from ERISA section 726, an amendment added by the Consolidated Appropriations Act, 2026, which mandates separate semiannual reporting on drug spending for plan years beginning on or after August 3, 2028. How Disclosure Could Reach Copays Indirectly Because the regulation imposes disclosure duties rather than drug pricing mandates, any effect on worker out-of-pocket spending depends entirely on employer action. In the preamble to the rule, the Department notes that in many self-insured plans, coinsurance charges are calculated based on a drug's list price rather than its net cost after manufacturer rebates. When a manufacturer increases a list price while offering larger rebates to the PBM, an employee paying 20 percent coinsurance pays a share of that elevated list price, even when the net cost to the plan is much lower. The Department also observed that participants frequently pay the full cost of prescription drugs until satisfying their annual deductibles. PBMs market cost-control mechanisms to employers that can result in less favorable copayments or higher coinsurance for employees. Seeing these figures does not trigger a direct refund to the worker who paid the copayment. The rule requires that claw-backs and retained manufacturer fees be disclosed to the employer's plan fiduciary, not returned to participants. An employer receiving this information could decide to renegotiate its contract, demand that rebates pass through to reduce cost sharing, or shift coinsurance calculations from list price to net price. For employees managing out-of-pocket medical costs through tax-advantaged accounts, reviewing HSA tax advantages helps contextualize how personal savings interact with plan deductible structures. What the Research Says About Costs The Department of Labor and independent economic researchers present differing perspectives on whether transparency mandates reduce prescription spending, showing that marketwide outcomes remain uncertain. The Department expects that disclosing spread pricing, rebate retention, and formulary placement incentives will enable fiduciaries to attain more equitable patient cost sharing and broader medication access. In the regulatory impact analysis, the Department states that disclosures may help self-insured plans retain higher rebate shares, expand generic adoption, and lower out-of-pocket costs for participants filling prescriptions. In section 8.1 of the regulatory impact discussion, the Department references an October 2024 report from the Congressional Budget Office (CBO) . The CBO estimated that requiring PBMs to share drug price information with health issuers would reduce drug prices by 0.1 percent to 1.0 percent, noting that transparency helps smaller plans negotiate but produces limited overall savings because many contracts already include data sharing. Directly addressing this finding, the Department stated: \"the self-insured plans covered in this final rule is not subject to state disclosure laws, thus the final rule could have a bigger impact than CBO's estimates.\" A separate CBO analysis of S. 1339 , the Pharmacy Benefit Manager Reform Act, examined a different legislative proposal. CBO estimated that measure could reduce net retail drug spending by more than 0.5 percent in year one, lowering commercial premiums by less than 0.1 percent initially, with premium effects falling below 0.01 percent by 2034. CBO emphasized this slowed the rate of premium growth rather than causing premiums to decline. Empirical research on state-level transparency mandates reveals mixed results. A study by Ginger Scanlon titled Prescription for Savings? Disclosure in the Drug Market examined employer-sponsored claims from 2014 to 2022. Scanlon found that inter-firm disclosures most comparable to this rule increased prescription drug costs for plans by 3.5 percent while reducing participant out-of-pocket costs by 1 percent. In monopoly drug markets, patient costs declined by 9.4 percent with no significant impact on plan costs, whereas in competitive markets, plan costs rose without significant gains for workers. Conversely, a study of Medicare Part D data by Nicola Maria Fiore titled Can Transparency Reduce Drug Costs found state PBM rebate disclosure laws did not reduce drug spending, premiums, deductibles, or out-of-pocket costs. The Department concluded that while disclosure mandates improve transparency, their direct effects on consumer drug spending remain uncertain. Who This Is Not For This regulation does not apply to all health plans, and workers in several categories of coverage will see no change in how their PBM operates. Employees covered by fully insured group health plans, where an employer purchases pre-packaged coverage from an insurance carrier, are excluded from the rule's detailed disclosures. Similarly, workers in smaller self-insured plans sponsored by businesses with fewer than 100 employees do not receive the detailed fee schedules established under paragraph (b). Medicare beneficiaries are also outside the scope of this rulemaking. Coverage for Medicare enrollees is governed by distinct federal statutes, and prescription drug costs for those plans are reviewed under separate standards. Individuals seeking information on Medicare drug benefit trends can consult the guide on Medicare Part D 2027 premiums . Finally, this overview is an informational explainer for workers and plan participants, not legal, financial, or compliance advice for employers. Plan sponsors, fiduciaries, and benefits consultants seeking specific guidance on contract compliance, reporting standards, and fiduciary liability under ERISA should consult the full text of the rule in the Federal Register . What Would Change This Answer The conclusion that the rule does not alter current worker copays could change under specific circumstances in future plan years. The primary trigger for change is the calendar: once an employer's plan year begins on or after July 1, 2027, the disclosure mandates become legally enforceable against covered PBM service providers. For employers operating on non-calendar fiscal years starting in late 2027, disclosures will arrive months earlier than for calendar-year plans starting January 1, 2028. Second, the outcome could change if an employer actively redesigns its prescription drug benefit after reviewing the newly disclosed data. If a plan fiduciary discovers substantial spread pricing or retained rebates and renegotiates the PBM contract to pass those savings through at the pharmacy counter, employee copays or coinsurance structures could shift. Third, administrative or judicial actions could alter the regulation's implementation. If federal agencies modify the regulatory text, publish supplementary guidance expanding coverage to fully insured plans, or alter implementation dates, the legal obligations described here would adjust accordingly. Takeaway For 2026 open enrollment, workers should treat the DOL PBM fee disclosure rule as regulatory background rather than a factor affecting their immediate out-of-pocket health costs. When choosing coverage for 2027, compare each employer plan option based on its published copayment schedule, annual deductible, coinsurance rates, and formulary coverage. The regulation sets no copays, applies only to large self-insured plans, and delivers its fee disclosures to plan fiduciaries rather than individual workers starting in mid-2027 or 2028. The economic evidence cited by the Department shows that long-term cost impacts remain uncertain. While the Department expects lower plan spending and potential out-of-pocket savings, and noted the rule could have a bigger impact than CBO's 0.1 to 1.0 percent price reduction estimate, independent researchers found conflicting results, including one study showing plan costs rose 3.5 percent while worker costs fell 1 percent. Workers weighing plan structures alongside flexible spending options can review the comparison between HSA vs FSA accounts. To verify how this regulatory timeline aligns with workplace benefits, ask your employer's human resources or benefits department whether your health plan is self-insured and what date its plan year begins. Frequently asked questions What is a PBM? A pharmacy benefit manager (PBM) is a third-party intermediary hired by a health plan to manage its prescription drug benefit. The Department of Labor's rule defines PBM services functionally, covering providers of pharmacy benefit management services regardless of whether the person identifies itself as a PBM. Does the DOL PBM fee disclosure rule lower my copays? The rule does not directly lower worker copays. It imposes disclosure requirements on PBMs to report compensation to employer plan fiduciaries, but it contains no legal mandate setting or reducing copayments, coinsurance, or deductibles. Any change in worker costs depends on whether an employer renegotiates its contract after reviewing the fee disclosures. When does the DOL PBM fee disclosure rule take effect? The regulation takes effect on January 4, 2027, and applies to plan years beginning on or after July 1, 2027. For standard calendar-year employer plans, the first covered plan year begins on January 1, 2028, by simple arithmetic on the Federal Register dates. Does the rule apply to my employer's drug plan? The rule applies only to large self-insured group health plans. For a single-employer plan, the employer must have employed an average of at least 100 employees during the preceding calendar year. It does not apply to fully insured group health plans, smaller self-insured plans, or plans sponsored by entities affiliated with drug manufacturers, distributors, or PBMs. Will workers see the PBM disclosures? No. The regulation requires PBMs to provide written disclosures to responsible employer plan fiduciaries who have the authority to contract for plan services. The operative text contains no requirement to distribute fee schedules, rebate amounts, or spread pricing data directly to plan participants. What is spread pricing? The rule does not explicitly define spread pricing, but treats it as a category of compensation. The new rule requires PBMs to disclose this spread compensation broken down by drug National Drug Code and pharmacy channel. What is a copay claw-back? The regulation defines copay claw-back compensation as the difference between a copayment or coinsurance amount paid to the pharmacy by a plan participant and the reimbursement to the pharmacy. Under the rule, PBMs must disclose these recoupment amounts to plan fiduciaries. What is ERISA section 726? ERISA section 726 is a separate statutory provision added by the Consolidated Appropriations Act, 2026. It requires PBMs to provide semiannual drug spending reports to large self-insured plans starting with plan years on or after August 3, 2028, and mandates a summary document that plans can provide to participants upon request. Sources We prioritize primary sources for rules, formulas, rates, limits, and definitions. See our calculator methodology and editorial policy . Federal Register: Improving Transparency Into Pharmacy Benefit Manager Fee Disclosure (91 FR 69092) CBO: Alternative Approaches to Reducing Prescription Drug Prices (Oct. 2024) CBO: S. 1339 Pharmacy Benefit Manager Reform Act cost estimate Scanlon, Prescription for Savings? Disclosure in the Drug Market (Dec. 20, 2024) Fiore, Can Transparency Reduce Drug Costs (revised Apr. 17, 2026) ModernWallet Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results. 📣 Advertise With Us Calculators All calculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate Elder Care Trump Account 529 College Savings Coast FIRE Business Loan Payoff Personal Loan Interest Per Day Taxable vs. Tax-Deferred Credit Card Payoff IUL Merchant Cash Advance Invoice Factoring Business Line of Credit PTO Cash-Out Zakat Life Insurance Needs Self-Employment Tax Operating Cash Flow Mileage Deduction Cash Conversion Cycle Freelance Rate HELOC S-Corp Tax Commercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Mileage Reimbursement Portfolio Rebalancing Hurricane Deductible Annuity Credit Card Interest Loan Payment HYSA vs CD Trump Account vs 529 Mortgage Recast Social Security COLA Biweekly Mortgage Roth vs Traditional 401(k) Pay Off Mortgage or Invest Florida Amendment 3 Student Loan Garnishment Tax Bracket Debt-to-Income Ratio Taxable Social Security Checklists Charitable Donation Deduction Car Loan Interest Deduction Rent vs Buy Stock Capital Gains Tax Hidden Cost of Owning a Home Comparisons All comparisons 401(k) vs Roth IRA Roth vs Traditional 401(k) 529 vs Roth IRA ETF vs Mutual Fund HSA vs FSA VA Loan vs Conventional 15 vs 30-Year Mortgage Fixed vs ARM Mortgage HYSA vs Money Market Stocks vs Bonds Free Templates All templates Freelance Invoice Freelance Contract Statement of Work Retainer Agreement Mileage Log Expense Report S-Corp Tax Calculator QBI Deduction Explained LLC vs S Corp Guides & Best-of All best-of roundups First-Time Home Buyer How to Buy a Car Best 401(k) Providers Best Budgeting Apps Best Money Market Accounts Best Net Worth Trackers Best Retirement Accounts Best Mileage Tracker Apps Best Freelance Accounting Software Best Invoicing Apps © 2026 ModernWallet · For educational purposes — not financial advice. Guides · About · Contact · Editorial Policy · Methodology · Privacy Policy · Powered by Layer3Labs Some links on this site are referral or affiliate links, including our Robinhood referral link — we may earn a reward or commission at no cost to you. This never affects our rankings or editorial coverage.",
+        "h1": "What the DOL PBM Fee Disclosure Rule Means for Employer Drug Plans and Copays",
+        "title": "What the DOL PBM Fee Disclosure Rule Means for Workers",
+        "canonical": "https://www.themodernwallet.com/guides/dol-pbm-fee-disclosure-rule/",
+        "meta": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "generator": "Astro v4.16.19",
+          "description": "The DOL PBM fee disclosure rule takes effect Jan 4, 2027. Disclosures go to employer plan fiduciaries, not workers, and the rule sets no copay.",
+          "og:type": "website",
+          "og:site_name": "ModernWallet",
+          "og:title": "What the DOL PBM Fee Disclosure Rule Means for Workers",
+          "og:description": "The DOL PBM fee disclosure rule takes effect Jan 4, 2027. Disclosures go to employer plan fiduciaries, not workers, and the rule sets no copay.",
+          "og:url": "https://www.themodernwallet.com/guides/dol-pbm-fee-disclosure-rule/",
+          "og:image": "https://www.themodernwallet.com/favicon-192.png",
+          "twitter:card": "summary_large_image",
+          "twitter:title": "What the DOL PBM Fee Disclosure Rule Means for Workers",
+          "twitter:description": "The DOL PBM fee disclosure rule takes effect Jan 4, 2027. Disclosures go to employer plan fiduciaries, not workers, and the rule sets no copay.",
+          "twitter:image": "https://www.themodernwallet.com/favicon-192.png"
+        },
+        "links": [
+          "/",
+          "/calculators/",
+          "/auto-loan/",
+          "/mortgage/",
+          "/retirement/",
+          "/investing/",
+          "/portfolio/",
+          "/real-estate/",
+          "/net-worth/",
+          "/budget/",
+          "/tax-resolution/",
+          "/estate-planning/",
+          "/probate/",
+          "/elder-care/",
+          "/trump-account/",
+          "/529-savings-calculator/",
+          "/coast-fire/",
+          "/business-loan-payoff/",
+          "/personal-loan/",
+          "/interest-per-day/",
+          "/taxable-vs-tax-deferred/",
+          "/credit-card-payoff/",
+          "/iul-calculator/",
+          "/merchant-cash-advance/",
+          "/invoice-factoring/",
+          "/business-line-of-credit/",
+          "/pto-cashout/",
+          "/zakat/",
+          "/life-insurance-needs/",
+          "/self-employment-tax/",
+          "/operating-cash-flow/",
+          "/mileage-deduction/",
+          "/cash-conversion-cycle/",
+          "/freelance-rate/",
+          "/heloc-calculator/",
+          "/s-corp-tax/",
+          "/commercial-mortgage-calculator/",
+          "/cd-calculator/",
+          "/emergency-fund-calculator/",
+          "/debt-consolidation-calculator/",
+          "/inflation-calculator/",
+          "/expense-ratio-calculator/",
+          "/social-security-break-even-calculator/",
+          "/mileage-reimbursement-calculator/",
+          "/portfolio-rebalancing-calculator/",
+          "/hurricane-deductible-calculator/",
+          "/annuity-calculator/",
+          "/credit-card-interest-calculator/",
+          "/loan-payment-calculator/",
+          "/hysa-vs-cd-calculator/",
+          "/trump-account-vs-529-calculator/",
+          "/mortgage-recast-calculator/",
+          "/social-security-cola-calculator/",
+          "/biweekly-mortgage-calculator/",
+          "/roth-vs-traditional-401k-calculator/",
+          "/pay-off-mortgage-or-invest-calculator/",
+          "/florida-amendment-3-calculator/",
+          "/student-loan-wage-garnishment-calculator/",
+          "/tax-bracket-calculator/",
+          "/debt-to-income-ratio-calculator/",
+          "/social-security-taxable-benefits-calculator/",
+          "/checklists/",
+          "/charitable-donation-tax-deduction-calculator/",
+          "/car-loan-interest-deduction-calculator/",
+          "/rent-vs-buy-calculator/",
+          "/stock-capital-gains-tax-calculator/",
+          "/hidden-cost-of-owning-a-home-calculator/",
+          "/",
+          "/guides/",
+          "/about/",
+          "https://www.dol.gov/agencies/ebsa",
+          "https://www.federalregister.gov/documents/2026/11/02/2026-22306/improving-transparency-into-pharmacy-benefit-manager-fee-disclosure",
+          "/guides/hsa-triple-tax-advantage/",
+          "https://www.cbo.gov/system/files/2024-10/58793-rx-drug-prices.pdf",
+          "https://www.cbo.gov/system/files/2024-12/s1339.pdf",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5021179",
+          "https://ssrn.com/abstract=5710162",
+          "/guides/medicare-part-d-2027-premiums/",
+          "https://www.federalregister.gov/documents/2026/11/02/2026-22306/improving-transparency-into-pharmacy-benefit-manager-fee-disclosure",
+          "/compare/hsa-vs-fsa/",
+          "/methodology/",
+          "/editorial-policy/",
+          "https://www.federalregister.gov/documents/2026/11/02/2026-22306/improving-transparency-into-pharmacy-benefit-manager-fee-disclosure",
+          "https://www.cbo.gov/system/files/2024-10/58793-rx-drug-prices.pdf",
+          "https://www.cbo.gov/system/files/2024-12/s1339.pdf",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5021179",
+          "https://ssrn.com/abstract=5710162",
+          "/",
+          "/sponsor",
+          "/calculators/",
+          "/auto-loan/",
+          "/mortgage/",
+          "/retirement/",
+          "/investing/",
+          "/portfolio/",
+          "/real-estate/",
+          "/net-worth/",
+          "/budget/",
+          "/tax-resolution/",
+          "/estate-planning/",
+          "/probate/",
+          "/elder-care/",
+          "/trump-account/",
+          "/529-savings-calculator/",
+          "/coast-fire/",
+          "/business-loan-payoff/",
+          "/personal-loan/",
+          "/interest-per-day/",
+          "/taxable-vs-tax-deferred/",
+          "/credit-card-payoff/",
+          "/iul-calculator/",
+          "/merchant-cash-advance/",
+          "/invoice-factoring/",
+          "/business-line-of-credit/",
+          "/pto-cashout/",
+          "/zakat/",
+          "/life-insurance-needs/",
+          "/self-employment-tax/",
+          "/operating-cash-flow/",
+          "/mileage-deduction/",
+          "/cash-conversion-cycle/",
+          "/freelance-rate/",
+          "/heloc-calculator/",
+          "/s-corp-tax/",
+          "/commercial-mortgage-calculator/",
+          "/cd-calculator/",
+          "/emergency-fund-calculator/",
+          "/debt-consolidation-calculator/",
+          "/inflation-calculator/",
+          "/expense-ratio-calculator/",
+          "/social-security-break-even-calculator/",
+          "/mileage-reimbursement-calculator/",
+          "/portfolio-rebalancing-calculator/",
+          "/hurricane-deductible-calculator/",
+          "/annuity-calculator/",
+          "/credit-card-interest-calculator/",
+          "/loan-payment-calculator/",
+          "/hysa-vs-cd-calculator/",
+          "/trump-account-vs-529-calculator/",
+          "/mortgage-recast-calculator/",
+          "/social-security-cola-calculator/",
+          "/biweekly-mortgage-calculator/",
+          "/roth-vs-traditional-401k-calculator/",
+          "/pay-off-mortgage-or-invest-calculator/",
+          "/florida-amendment-3-calculator/",
+          "/student-loan-wage-garnishment-calculator/",
+          "/tax-bracket-calculator/",
+          "/debt-to-income-ratio-calculator/",
+          "/social-security-taxable-benefits-calculator/",
+          "/checklists/",
+          "/charitable-donation-tax-deduction-calculator/",
+          "/car-loan-interest-deduction-calculator/",
+          "/rent-vs-buy-calculator/",
+          "/stock-capital-gains-tax-calculator/",
+          "/hidden-cost-of-owning-a-home-calculator/",
+          "/compare/",
+          "/compare/401k-vs-roth-ira/",
+          "/compare/roth-401k-vs-traditional-401k/",
+          "/compare/529-vs-roth-ira/",
+          "/compare/etf-vs-mutual-fund/",
+          "/compare/hsa-vs-fsa/",
+          "/compare/va-loan-vs-conventional-loan/",
+          "/compare/15-year-vs-30-year-mortgage/",
+          "/compare/fixed-vs-arm-mortgage/",
+          "/compare/hysa-vs-money-market/",
+          "/compare/stocks-vs-bonds/",
+          "/templates/",
+          "/templates/freelance-invoice-template/",
+          "/templates/freelance-contract-template/",
+          "/templates/statement-of-work-template/",
+          "/templates/retainer-agreement-template/",
+          "/templates/mileage-log-template/",
+          "/templates/expense-report-template/",
+          "/s-corp-tax/",
+          "/guides/qbi-deduction-explained/",
+          "/compare/llc-vs-s-corp/",
+          "/roundup/",
+          "/guides/first-time-home-buyer-guide/",
+          "/guides/how-to-buy-a-car/",
+          "/roundup/best-401k-providers-for-small-business/",
+          "/roundup/best-budgeting-apps-for-couples/",
+          "/roundup/best-money-market-accounts/",
+          "/roundup/best-net-worth-tracker/",
+          "/roundup/best-retirement-accounts-for-self-employed/",
+          "/roundup/best-mileage-tracker-apps/",
+          "/roundup/best-accounting-software-for-freelancers/",
+          "/roundup/best-invoicing-apps-for-freelancers/",
+          "/guides/",
+          "/about/",
+          "/contact/",
+          "/editorial-policy/",
+          "/methodology/",
+          "/privacy-policy/",
+          "https://www.layer3labs.io"
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://www.themodernwallet.com/#organization",
+            "name": "ModernWallet",
+            "url": "https://www.themodernwallet.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.themodernwallet.com/favicon.svg"
+            },
+            "description": "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results.",
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "Layer3Labs",
+              "url": "https://www.layer3labs.io"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://www.themodernwallet.com/#website",
+            "url": "https://www.themodernwallet.com/",
+            "name": "ModernWallet",
+            "description": "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results."
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ModernWallet",
+                "item": "https://www.themodernwallet.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Guides",
+                "item": "https://www.themodernwallet.com/guides/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "What the DOL PBM Fee Disclosure Rule Means for Employer Drug Plans and Copays",
+                "item": "https://www.themodernwallet.com/guides/dol-pbm-fee-disclosure-rule/"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is a PBM?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A pharmacy benefit manager (PBM) is a third-party intermediary hired by a health plan to manage its prescription drug benefit. The Department of Labor's rule defines PBM services functionally, covering providers of pharmacy benefit management services regardless of whether the person identifies itself as a PBM."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does the DOL PBM fee disclosure rule lower my copays?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The rule does not directly lower worker copays. It imposes disclosure requirements on PBMs to report compensation to employer plan fiduciaries, but it contains no legal mandate setting or reducing copayments, coinsurance, or deductibles. Any change in worker costs depends on whether an employer renegotiates its contract after reviewing the fee disclosures."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When does the DOL PBM fee disclosure rule take effect?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The regulation takes effect on January 4, 2027, and applies to plan years beginning on or after July 1, 2027. For standard calendar-year employer plans, the first covered plan year begins on January 1, 2028, by simple arithmetic on the Federal Register dates."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does the rule apply to my employer's drug plan?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The rule applies only to large self-insured group health plans. For a single-employer plan, the employer must have employed an average of at least 100 employees during the preceding calendar year. It does not apply to fully insured group health plans, smaller self-insured plans, or plans sponsored by entities affiliated with drug manufacturers, distributors, or PBMs."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Will workers see the PBM disclosures?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. The regulation requires PBMs to provide written disclosures to responsible employer plan fiduciaries who have the authority to contract for plan services. The operative text contains no requirement to distribute fee schedules, rebate amounts, or spread pricing data directly to plan participants."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is spread pricing?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The rule does not explicitly define spread pricing, but treats it as a category of compensation. The new rule requires PBMs to disclose this spread compensation broken down by drug National Drug Code and pharmacy channel."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is a copay claw-back?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The regulation defines copay claw-back compensation as the difference between a copayment or coinsurance amount paid to the pharmacy by a plan participant and the reimbursement to the pharmacy. Under the rule, PBMs must disclose these recoupment amounts to plan fiduciaries."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is ERISA section 726?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ERISA section 726 is a separate statutory provision added by the Consolidated Appropriations Act, 2026. It requires PBMs to provide semiannual drug spending reports to large self-insured plans starting with plan years on or after August 3, 2028, and mandates a summary document that plans can provide to participants upon request."
+                }
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Jonathan Velez",
+            "url": "https://www.themodernwallet.com/about/",
+            "jobTitle": "Personal Finance Writer & Editor",
+            "description": "Jonathan Velez writes and edits ModernWallet's personal-finance content, focused on loans, interest, and debt payoff. Every calculator page is reviewed against primary sources like the CFPB and Federal Reserve.",
+            "knowsAbout": [
+              "Auto loans",
+              "Loan amortization",
+              "Interest and APR",
+              "Debt payoff strategies",
+              "Personal finance"
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "ModernWallet",
+              "url": "https://www.themodernwallet.com"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "What the DOL PBM Fee Disclosure Rule Means for Employer Drug Plans and Copays",
+            "description": "The DOL PBM fee disclosure rule takes effect Jan 4, 2027. Disclosures go to employer plan fiduciaries, not workers, and the rule sets no copay.",
+            "url": "https://www.themodernwallet.com/guides/dol-pbm-fee-disclosure-rule/",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://www.themodernwallet.com/favicon.svg"
+            },
+            "datePublished": "2026-11-12",
+            "dateModified": "2026-11-12",
+            "author": {
+              "@type": "Person",
+              "name": "Jonathan Velez",
+              "url": "https://www.themodernwallet.com/about/"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "ModernWallet",
+              "url": "https://www.themodernwallet.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.themodernwallet.com/favicon.svg"
+              }
+            },
+            "citation": [
+              {
+                "@type": "CreativeWork",
+                "name": "Federal Register: Improving Transparency Into Pharmacy Benefit Manager Fee Disclosure (91 FR 69092)",
+                "url": "https://www.federalregister.gov/documents/2026/11/02/2026-22306/improving-transparency-into-pharmacy-benefit-manager-fee-disclosure"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "CBO: Alternative Approaches to Reducing Prescription Drug Prices (Oct. 2024)",
+                "url": "https://www.cbo.gov/system/files/2024-10/58793-rx-drug-prices.pdf"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "CBO: S. 1339 Pharmacy Benefit Manager Reform Act cost estimate",
+                "url": "https://www.cbo.gov/system/files/2024-12/s1339.pdf"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Scanlon, Prescription for Savings? Disclosure in the Drug Market (Dec. 20, 2024)",
+                "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5021179"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Fiore, Can Transparency Reduce Drug Costs (revised Apr. 17, 2026)",
+                "url": "https://ssrn.com/abstract=5710162"
+              }
+            ]
+          }
+        ],
+        "structure": [
+          [
+            "html",
+            {}
+          ],
+          [
+            "body",
+            {}
+          ],
+          [
+            "header",
+            {
+              "class": "site-header"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "hdr-inner"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "brand-group"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "brand",
+              "href": "/",
+              "aria-label": "ModernWallet home"
+            }
+          ],
+          [
+            "svg",
+            {
+              "viewbox": "0 0 32 32",
+              "width": "26",
+              "height": "26",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "rect",
+            {
+              "width": "32",
+              "height": "32",
+              "fill": "var(--primary)"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "8",
+              "y": "6",
+              "width": "16",
+              "height": "20",
+              "fill": "none",
+              "stroke": "#fff"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "11",
+              "y": "9.5",
+              "width": "10",
+              "height": "4",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "16",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "19.8",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "22",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-name"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-divider",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-tagline"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "primary-nav",
+              "aria-label": "Primary"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "nav-dd"
+            }
+          ],
+          [
+            "button",
+            {
+              "type": "button",
+              "class": "nav-trigger"
+            }
+          ],
+          [
+            "svg",
+            {
+              "class": "chev",
+              "viewbox": "0 0 24 24",
+              "width": "16",
+              "height": "16",
+              "fill": "none",
+              "stroke": "currentColor",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "polyline",
+            {
+              "points": "6 9 12 15 18 9"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "nav-menu",
+              "role": "menu"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "menu-all",
+              "href": "/calculators/",
+              "role": "menuitem"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "menu-cols"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/auto-loan/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/investing/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/real-estate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/net-worth/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/budget/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/estate-planning/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/probate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/elder-care/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/529-savings-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/coast-fire/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-loan-payoff/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/personal-loan/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/interest-per-day/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/taxable-vs-tax-deferred/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-payoff/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/iul-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/merchant-cash-advance/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/invoice-factoring/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-line-of-credit/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pto-cashout/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/zakat/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/life-insurance-needs/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/operating-cash-flow/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-deduction/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cash-conversion-cycle/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/freelance-rate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/heloc-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/commercial-mortgage-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cd-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/emergency-fund-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-consolidation-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/inflation-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/expense-ratio-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-break-even-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-reimbursement-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio-rebalancing-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hurricane-deductible-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/annuity-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-interest-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/loan-payment-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hysa-vs-cd-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account-vs-529-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage-recast-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-cola-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/biweekly-mortgage-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roth-vs-traditional-401k-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pay-off-mortgage-or-invest-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/florida-amendment-3-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/student-loan-wage-garnishment-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-to-income-ratio-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-taxable-benefits-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/checklists/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/charitable-donation-tax-deduction-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/car-loan-interest-deduction-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rent-vs-buy-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/stock-capital-gains-tax-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hidden-cost-of-owning-a-home-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns"
+            }
+          ],
+          [
+            "button",
+            {
+              "class": "ns__toggle",
+              "type": "button",
+              "aria-label": "Search"
+            }
+          ],
+          [
+            "svg",
+            {
+              "width": "18",
+              "height": "18",
+              "viewbox": "0 0 24 24",
+              "fill": "none",
+              "stroke": "currentColor",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "11",
+              "cy": "11",
+              "r": "7"
+            }
+          ],
+          [
+            "path",
+            {
+              "d": "m20 20-3.5-3.5"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__panel",
+              "hidden": ""
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__box"
+            }
+          ],
+          [
+            "input",
+            {
+              "class": "ns__input",
+              "type": "search",
+              "placeholder": "Search calculators, guides…",
+              "aria-label": "Search the site",
+              "role": "combobox"
+            }
+          ],
+          [
+            "button",
+            {
+              "class": "ns__close",
+              "type": "button",
+              "aria-label": "Close search"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__results",
+              "role": "listbox"
+            }
+          ],
+          [
+            "main",
+            {
+              "class": "page"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "crumb",
+              "aria-label": "Breadcrumb"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "crumb-current"
+            }
+          ],
+          [
+            "header",
+            {
+              "class": "hero"
+            }
+          ],
+          [
+            "h1",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "byline"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "by"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/about/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "sep",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "rev"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.dol.gov/agencies/ebsa",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.federalregister.gov/documents/2026/11/02/2026-22306/improving-transparency-into-pharmacy-benefit-manager-fee-disclosure",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "tools",
+              "aria-label": "Tools for this journey"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "tools-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "tool-pills"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "table-wrap"
+            }
+          ],
+          [
+            "table",
+            {
+              "class": "prose-table"
+            }
+          ],
+          [
+            "thead",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "tbody",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ul",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/hsa-triple-tax-advantage/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.cbo.gov/system/files/2024-10/58793-rx-drug-prices.pdf",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.cbo.gov/system/files/2024-12/s1339.pdf",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5021179",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://ssrn.com/abstract=5710162",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/medicare-part-d-2027-premiums/"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.federalregister.gov/documents/2026/11/02/2026-22306/improving-transparency-into-pharmacy-benefit-manager-fee-disclosure",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hsa-vs-fsa/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "faqs"
+            }
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section sources"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "source-note"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/methodology/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/editorial-policy/"
+            }
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.federalregister.gov/documents/2026/11/02/2026-22306/improving-transparency-into-pharmacy-benefit-manager-fee-disclosure",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.cbo.gov/system/files/2024-10/58793-rx-drug-prices.pdf",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.cbo.gov/system/files/2024-12/s1339.pdf",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5021179",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://ssrn.com/abstract=5710162",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "footer",
+            {
+              "class": "site-footer"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-inner"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-left"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "brand",
+              "href": "/",
+              "aria-label": "ModernWallet home"
+            }
+          ],
+          [
+            "svg",
+            {
+              "viewbox": "0 0 32 32",
+              "width": "22",
+              "height": "22",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "rect",
+            {
+              "width": "32",
+              "height": "32",
+              "fill": "var(--primary)"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "8",
+              "y": "6",
+              "width": "16",
+              "height": "20",
+              "fill": "none",
+              "stroke": "#fff"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "11",
+              "y": "9.5",
+              "width": "10",
+              "height": "4",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "16",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "tagline"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "sponsor-pill",
+              "href": "/sponsor",
+              "rel": "nofollow"
+            }
+          ],
+          [
+            "span",
+            {
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-navs"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer calculators"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/calculators/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/auto-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/investing/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/real-estate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/net-worth/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/budget/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/estate-planning/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/probate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/elder-care/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/529-savings-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/coast-fire/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-loan-payoff/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/personal-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/interest-per-day/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/taxable-vs-tax-deferred/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-payoff/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/iul-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/merchant-cash-advance/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/invoice-factoring/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-line-of-credit/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pto-cashout/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/zakat/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/life-insurance-needs/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/operating-cash-flow/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-deduction/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cash-conversion-cycle/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/freelance-rate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/heloc-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/commercial-mortgage-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cd-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/emergency-fund-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-consolidation-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/inflation-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/expense-ratio-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-break-even-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-reimbursement-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio-rebalancing-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hurricane-deductible-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/annuity-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-interest-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/loan-payment-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hysa-vs-cd-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account-vs-529-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage-recast-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-cola-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/biweekly-mortgage-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roth-vs-traditional-401k-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pay-off-mortgage-or-invest-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/florida-amendment-3-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/student-loan-wage-garnishment-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-to-income-ratio-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-taxable-benefits-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/checklists/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/charitable-donation-tax-deduction-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/car-loan-interest-deduction-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rent-vs-buy-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/stock-capital-gains-tax-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hidden-cost-of-owning-a-home-calculator/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer comparisons"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/401k-vs-roth-ira/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/roth-401k-vs-traditional-401k/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/529-vs-roth-ira/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/etf-vs-mutual-fund/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hsa-vs-fsa/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/va-loan-vs-conventional-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/15-year-vs-30-year-mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/fixed-vs-arm-mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hysa-vs-money-market/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/stocks-vs-bonds/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer templates"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp links-grid--single"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/freelance-invoice-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/freelance-contract-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/statement-of-work-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/retainer-agreement-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/mileage-log-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/expense-report-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/qbi-deduction-explained/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/llc-vs-s-corp/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer guides"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp links-grid--single"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/first-time-home-buyer-guide/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/how-to-buy-a-car/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-401k-providers-for-small-business/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-budgeting-apps-for-couples/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-money-market-accounts/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-net-worth-tracker/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-retirement-accounts-for-self-employed/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-mileage-tracker-apps/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-accounting-software-for-freelancers/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-invoicing-apps-for-freelancers/"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-legal"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "legal-left"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "legal-right"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/about/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/contact/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/editorial-policy/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/methodology/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/privacy-policy/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.layer3labs.io",
+              "target": "_blank",
+              "rel": "noopener noreferrer"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-disclosure"
+            }
+          ],
+          [
+            "p",
+            {}
+          ]
+        ]
+      },
+      "failures": [
+        "Forbidden text: dol pbm fee"
+      ],
+      "htmlSha256": "527f73fb53b8104b52eebd8ff72b64f28b0db5e6ac594d0f36eba27f1da3fa4a",
+      "htmlFile": "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot/5dd19a02230e4a15c07c.html",
+      "textFile": "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot/5dd19a02230e4a15c07c.txt",
+      "textSha256": "834b268de71ef21849910c07d2da04c2a52211cbfa02b77400a2445eee3204e6"
+    },
+    {
+      "path": "/guides/medicare-part-d-2027-premiums/",
+      "status": 200,
+      "fingerprint": "cdafcabc833d620b08f1223ca550970883e9bf384b8f022ba7cb68c06d1fb8f8",
+      "semantic": {
+        "text": "ModernWallet Free Financial Calculators Calculators All calculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate Elder Care Trump Account 529 College Savings Coast FIRE Business Loan Payoff Personal Loan Interest Per Day Taxable vs. Tax-Deferred Credit Card Payoff IUL Merchant Cash Advance Invoice Factoring Business Line of Credit PTO Cash-Out Zakat Life Insurance Needs Self-Employment Tax Operating Cash Flow Mileage Deduction Cash Conversion Cycle Freelance Rate HELOC S-Corp Tax Commercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Mileage Reimbursement Portfolio Rebalancing Hurricane Deductible Annuity Credit Card Interest Loan Payment HYSA vs CD Trump Account vs 529 Mortgage Recast Social Security COLA Biweekly Mortgage Roth vs Traditional 401(k) Pay Off Mortgage or Invest Florida Amendment 3 Student Loan Garnishment Tax Bracket Debt-to-Income Ratio Taxable Social Security Checklists Charitable Donation Deduction Car Loan Interest Deduction Rent vs Buy Stock Capital Gains Tax Hidden Cost of Owning a Home × ModernWallet / Guides / Medicare Part D 2027 Stand-Alone Plan Premiums Projected to Rise 50 Percent Medicare Part D 2027 Stand-Alone Plan Premiums Projected to Rise 50 Percent By Jonathan Velez , Personal Finance Writer & Editor · Reviewed against primary sources · Updated November 2, 2026 Medicare Part D 2027 premiums for stand-alone plans are projected to average $51 a month, up 50 percent from $34, according to KFF . KFF's projection assumes current enrollees keep their plans. The increase is $17 a month, or $204 a year, by simple arithmetic on KFF's figures. KFF also reports that no zero-premium stand-alone plans are available in 2027. In its October 30, 2026 release, KFF says people facing large premium increases need to take action if they want to avoid paying significantly more. Open enrollment runs through December 7. Tools for this journey Medicare IRMAA Calculator → How Much Medicare Part D 2027 Premiums Rise KFF projects the average monthly premium for stand-alone prescription drug plans (PDPs) will rise to $51 in 2027, up 50 percent from $34 in 2026. The projection assumes current enrollees do not switch plans. The arithmetic on KFF's two averages works out as follows: $34 a month in 2026 equals $408 a year. $51 a month in 2027 equals $612 a year. The gap between the two averages is $17 a month, or $204 a year. KFF says more than 4 million people enrolled in zero-premium PDPs will face higher premiums, because no zero-premium PDPs are available in 2027. For Medicare Advantage plans with drug coverage (MA-PDs), KFF projects an average of $9 a month in 2027, an increase of less than $2. The $51 figure is an average projection, so a given enrollee may pay more or less. Medicare.gov says Part D premiums vary by plan and may be higher depending on income. Medicare.gov does not list premiums by state or for any individual on the page cited here. No Zero-Premium Stand-Alone Plans in 2027 KFF reports that no zero-premium stand-alone drug plans are available in 2027. KFF's release does not say why plans raised premiums. The Centers for Medicare & Medicaid Services (CMS) addressed a change to stand-alone plans in a fact sheet dated July 28, 2026. CMS said it will discontinue the voluntary premium stabilization demonstration for stand-alone plans, which began in 2025, at the end of 2026. CMS said plan sponsors had enough experience under the redesigned benefit, so the program returns to traditional market conditions in 2027. CMS does not present the end of the demonstration in the fact sheet as the reason zero-premium plans are absent, and KFF does not offer it as an explanation either. The same CMS fact sheet sets the 2027 national average monthly bid amount at $296.05 and the base beneficiary premium at $41.33. Under the Inflation Reduction Act's premium stabilization provision, the base premium can rise no more than 6 percent per year. Medicare.gov lists the 2026 base beneficiary premium as $38.99, and $38.99 times 1.06 equals $41.33, so by arithmetic the 2027 figure rose by the full 6 percent allowed. What the Lowest- and Highest-Premium National Plans Cost KFF counts eight national PDPs for 2027, with projected average premiums ranging from about $6 to $204 a month. The lowest is Centene 's Wellcare Value Script Rx at $6.50, up from $5.80. The highest is United 's AARP Medicare Rx Preferred at $204.50, up from $126.00. Plan 2026 Monthly Premium 2027 Projected Monthly Premium 2027 Annual Premium (Arithmetic) Wellcare Value Script Rx (Centene) $5.80 $6.50 $78 AARP Medicare Rx Preferred (United) $126.00 $204.50 $2,454 By arithmetic, the Wellcare plan rises $0.70 a month and the AARP plan rises $78.50 a month. These are average premiums for national plans, and premiums vary by plan. The table covers premiums only, so it does not show what either plan charges as a deductible or for a specific drug. Plans can be compared in Medicare Plan Finder , the Medicare.gov tool for finding and comparing plans. Deductibles and Cost Sharing in Medicare Part D 2027 KFF reports the maximum Part D deductible allowed in 2027 is $700, up from $615 in 2026, and plans may charge less. Medicare.gov lists the same $700 ceiling and notes that some plans have no deductible. Average deductibles and the share of enrollees facing one also rise, according to KFF: PDP enrollees: $643 on average, up from $540. MA-PD enrollees: $489 on average, up from $360. 99.8 percent of PDP enrollees face a deductible if they keep their plans, up from 96 percent. 85 percent of MA-PD enrollees face a deductible if they keep their plans, up from 80 percent. After the deductible, Medicare.gov says enrollees pay 25 percent coinsurance until out-of-pocket spending reaches $2,100 in 2026 or $2,400 in 2027. Once spending reaches that limit, enrollees pay nothing for covered Part D drugs for the rest of the calendar year. The 2027 limit is $300 higher than the 2026 limit, by arithmetic. KFF says most enrollees will pay coinsurance rather than copayments for preferred and non-preferred drugs, which can make out-of-pocket costs less predictable. Medicare.gov defines a copayment as a fixed dollar amount per prescription and coinsurance as a percentage of the drug cost. A 25 percent coinsurance charge moves with the price of the drug, while a copayment stays the same. How to Compare and Switch Before December 7 Open enrollment runs through December 7, according to KFF, and KFF says relatively low-premium PDP options exist. Medicare Plan Finder at medicare.gov/plan-compare is the Medicare.gov tool for finding and comparing plans. A premium is only part of a plan's yearly cost, because the deductible and coinsurance are added to it. A plan with a lower premium may carry a deductible as high as $700 plus 25 percent coinsurance. A plan with a higher premium may charge a smaller deductible or none. These four items cover the main 2027 drug costs that KFF and Medicare.gov list: The 2027 monthly premium, multiplied by 12 for the annual premium. The deductible, which can be anywhere from $0 to $700. Whether drugs carry coinsurance or copayments after the deductible. The $2,400 out-of-pocket limit, after which covered drugs cost $0 for the rest of 2027. Twelve times the monthly premium plus the deductible is the least a plan costs in a year when the full deductible is paid. Coinsurance on each prescription then adds to that total until out-of-pocket spending reaches $2,400. No source cited publishes any individual's 2027 premium, so each plan's own figures are the numbers to compare. People who get drug coverage through a job instead of Medicare fall under a separate federal rule, DOL's PBM fee disclosure rule for employer drug plans , which does not change the plans offered in 2026 open enrollment. Who Pays Less with Extra Help Extra Help is a Medicare program for people with limited income and resources, according to Medicare.gov's Extra Help page . KFF notes that the 2027 premium increases affect most PDP enrollees who do not receive the extra subsidies provided to low-income enrollees. Medicare.gov lists these 2026 limits: Individual: income of $23,940 and resources of $18,090. Married couple: income of $32,460 and resources of $36,100. Medicare.gov says these limits may rise each year, and Alaska and Hawaii have separate limits that the page does not list. Extra Help is not available in Puerto Rico, the U.S. Virgin Islands, Guam, the Northern Mariana Islands or American Samoa. Some people qualify automatically: those with full-benefit Medicaid, those getting state help with Part B premiums through a Medicare Savings Program, and those receiving Supplemental Security Income (SSI). Medicare.gov says people can apply for Extra Help and a Medicare Savings Program together. The Medicare Savings Programs guide covers that second program. For 2027, Medicare.gov's Extra Help page describes these costs: Plan premium: $0. Plan deductible: $0. Up to $5.80 per generic drug and up to $14.40 per brand-name drug at participating pharmacies. $0 per covered drug once total drug costs reach $2,400. Medicare.gov says applications go through Social Security online, and free help is available from the State Health Insurance Assistance Program (SHIP). Someone who does not qualify now can reapply at any time. If an approved applicant has no Part D plan, Medicare enrolls that person in one. Medicare Advantage Plans with Drug Coverage KFF projects MA-PD premiums will average $9 a month in 2027, up less than $2, and says the stand-alone PDP premium is more than five times higher. That comparison covers average premiums only. MA-PD enrollees face deductibles too. KFF puts the average MA-PD deductible at $489 in 2027, and 85 percent of MA-PD enrollees face one if they keep their plans. Choosing Medicare Advantage is a different decision from choosing a stand-alone drug plan. The Medicare vs. Medicare Advantage comparison covers those differences. Takeaway A stand-alone Part D enrollee who keeps the same plan may see the average increase in KFF's October 30, 2026 projection. The average rise is $17 a month, or $204 a year by arithmetic, and KFF says people facing large increases need to take action to avoid paying significantly more. This applies to stand-alone plan enrollees who do not receive Extra Help, whose plan premium Medicare.gov lists as $0. MA-PD premiums average $9 a month. Keeping the current plan can still be the cheaper choice. If a plan's own 2027 premium, deductible and coinsurance on the enrollee's drugs add up to a lower yearly total than the other plans, staying costs less. A low premium paired with a $700 deductible can cost more over a year than a higher premium with a smaller deductible. Before December 7, you can open Medicare Plan Finder and compare each Medicare Part D 2027 plan's premium together with its deductible and coinsurance. Frequently asked questions How much will Part D cost in 2027? KFF projects the average stand-alone Part D premium at $51 a month in 2027, up from $34, if enrollees keep their current plans. That works out to $612 a year, or $204 more than 2026, by arithmetic. Individual premiums vary by plan, and Medicare.gov lists the maximum 2027 deductible as $700. Is Medicare Part D going away in 2027? No. CMS sets a 2027 base beneficiary premium of $41.33. KFF lists eight national stand-alone plans with projected 2027 premiums, and Medicare.gov publishes 2027 deductible and out-of-pocket limits. What KFF reports is that no zero-premium stand-alone plans are available in 2027. What do KFF and CMS say about the 2027 increase? KFF projects the average stand-alone premium will rise 50 percent, from $34 to $51 a month, if enrollees do not switch plans. CMS says it will end the voluntary premium stabilization demonstration for stand-alone plans at the end of 2026 and sets the 2027 base beneficiary premium at $41.33. KFF's release does not say why plans raised premiums. When does Medicare open enrollment end? KFF says open enrollment runs through December 7. Plans can be compared before then in Medicare Plan Finder at medicare.gov/plan-compare. What is the Part D deductible in 2027? The maximum Part D deductible in 2027 is $700, up from $615 in 2026, and some plans charge less or nothing. KFF puts the average at $643 for stand-alone plan enrollees and $489 for MA-PD enrollees. After the deductible, Medicare.gov says enrollees pay 25 percent coinsurance until out-of-pocket spending reaches $2,400. Does Extra Help lower Part D premiums? Medicare.gov's Extra Help page lists the 2027 plan premium and deductible as $0 for people in the program. Generic drugs cost up to $5.80 and brand-name drugs up to $14.40 at participating pharmacies, and covered drugs cost $0 once total drug costs reach $2,400. Medicare.gov says applications go through Social Security . Sources We prioritize primary sources for rules, formulas, rates, limits, and definitions. See our calculator methodology and editorial policy . KFF: Average monthly premium for Medicare Part D stand-alone plans projected to increase 50% in 2027 CMS: Medicare Part D 2027 national average monthly bid amount information Medicare.gov: Medicare Plan Finder Medicare.gov: Help with drug costs (Extra Help) Medicare.gov: Costs for Medicare drug coverage ModernWallet Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results. 📣 Advertise With Us Calculators All calculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate Elder Care Trump Account 529 College Savings Coast FIRE Business Loan Payoff Personal Loan Interest Per Day Taxable vs. Tax-Deferred Credit Card Payoff IUL Merchant Cash Advance Invoice Factoring Business Line of Credit PTO Cash-Out Zakat Life Insurance Needs Self-Employment Tax Operating Cash Flow Mileage Deduction Cash Conversion Cycle Freelance Rate HELOC S-Corp Tax Commercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Mileage Reimbursement Portfolio Rebalancing Hurricane Deductible Annuity Credit Card Interest Loan Payment HYSA vs CD Trump Account vs 529 Mortgage Recast Social Security COLA Biweekly Mortgage Roth vs Traditional 401(k) Pay Off Mortgage or Invest Florida Amendment 3 Student Loan Garnishment Tax Bracket Debt-to-Income Ratio Taxable Social Security Checklists Charitable Donation Deduction Car Loan Interest Deduction Rent vs Buy Stock Capital Gains Tax Hidden Cost of Owning a Home Comparisons All comparisons 401(k) vs Roth IRA Roth vs Traditional 401(k) 529 vs Roth IRA ETF vs Mutual Fund HSA vs FSA VA Loan vs Conventional 15 vs 30-Year Mortgage Fixed vs ARM Mortgage HYSA vs Money Market Stocks vs Bonds Free Templates All templates Freelance Invoice Freelance Contract Statement of Work Retainer Agreement Mileage Log Expense Report S-Corp Tax Calculator QBI Deduction Explained LLC vs S Corp Guides & Best-of All best-of roundups First-Time Home Buyer How to Buy a Car Best 401(k) Providers Best Budgeting Apps Best Money Market Accounts Best Net Worth Trackers Best Retirement Accounts Best Mileage Tracker Apps Best Freelance Accounting Software Best Invoicing Apps © 2026 ModernWallet · For educational purposes — not financial advice. Guides · About · Contact · Editorial Policy · Methodology · Privacy Policy · Powered by Layer3Labs Some links on this site are referral or affiliate links, including our Robinhood referral link — we may earn a reward or commission at no cost to you. This never affects our rankings or editorial coverage.",
+        "h1": "Medicare Part D 2027 Stand-Alone Plan Premiums Projected to Rise 50 Percent",
+        "title": "Medicare Part D 2027: KFF Projects Premiums Up 50%",
+        "canonical": "https://www.themodernwallet.com/guides/medicare-part-d-2027-premiums/",
+        "meta": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "generator": "Astro v4.16.19",
+          "description": "KFF projects stand-alone Medicare Part D premiums averaging $51 a month in 2027, up from $34. See what to compare before open enrollment ends December 7.",
+          "og:type": "website",
+          "og:site_name": "ModernWallet",
+          "og:title": "Medicare Part D 2027: KFF Projects Premiums Up 50%",
+          "og:description": "KFF projects stand-alone Medicare Part D premiums averaging $51 a month in 2027, up from $34. See what to compare before open enrollment ends December 7.",
+          "og:url": "https://www.themodernwallet.com/guides/medicare-part-d-2027-premiums/",
+          "og:image": "https://www.themodernwallet.com/favicon-192.png",
+          "twitter:card": "summary_large_image",
+          "twitter:title": "Medicare Part D 2027: KFF Projects Premiums Up 50%",
+          "twitter:description": "KFF projects stand-alone Medicare Part D premiums averaging $51 a month in 2027, up from $34. See what to compare before open enrollment ends December 7.",
+          "twitter:image": "https://www.themodernwallet.com/favicon-192.png"
+        },
+        "links": [
+          "/",
+          "/calculators/",
+          "/auto-loan/",
+          "/mortgage/",
+          "/retirement/",
+          "/investing/",
+          "/portfolio/",
+          "/real-estate/",
+          "/net-worth/",
+          "/budget/",
+          "/tax-resolution/",
+          "/estate-planning/",
+          "/probate/",
+          "/elder-care/",
+          "/trump-account/",
+          "/529-savings-calculator/",
+          "/coast-fire/",
+          "/business-loan-payoff/",
+          "/personal-loan/",
+          "/interest-per-day/",
+          "/taxable-vs-tax-deferred/",
+          "/credit-card-payoff/",
+          "/iul-calculator/",
+          "/merchant-cash-advance/",
+          "/invoice-factoring/",
+          "/business-line-of-credit/",
+          "/pto-cashout/",
+          "/zakat/",
+          "/life-insurance-needs/",
+          "/self-employment-tax/",
+          "/operating-cash-flow/",
+          "/mileage-deduction/",
+          "/cash-conversion-cycle/",
+          "/freelance-rate/",
+          "/heloc-calculator/",
+          "/s-corp-tax/",
+          "/commercial-mortgage-calculator/",
+          "/cd-calculator/",
+          "/emergency-fund-calculator/",
+          "/debt-consolidation-calculator/",
+          "/inflation-calculator/",
+          "/expense-ratio-calculator/",
+          "/social-security-break-even-calculator/",
+          "/mileage-reimbursement-calculator/",
+          "/portfolio-rebalancing-calculator/",
+          "/hurricane-deductible-calculator/",
+          "/annuity-calculator/",
+          "/credit-card-interest-calculator/",
+          "/loan-payment-calculator/",
+          "/hysa-vs-cd-calculator/",
+          "/trump-account-vs-529-calculator/",
+          "/mortgage-recast-calculator/",
+          "/social-security-cola-calculator/",
+          "/biweekly-mortgage-calculator/",
+          "/roth-vs-traditional-401k-calculator/",
+          "/pay-off-mortgage-or-invest-calculator/",
+          "/florida-amendment-3-calculator/",
+          "/student-loan-wage-garnishment-calculator/",
+          "/tax-bracket-calculator/",
+          "/debt-to-income-ratio-calculator/",
+          "/social-security-taxable-benefits-calculator/",
+          "/checklists/",
+          "/charitable-donation-tax-deduction-calculator/",
+          "/car-loan-interest-deduction-calculator/",
+          "/rent-vs-buy-calculator/",
+          "/stock-capital-gains-tax-calculator/",
+          "/hidden-cost-of-owning-a-home-calculator/",
+          "/",
+          "/guides/",
+          "/about/",
+          "https://www.kff.org/medicare/the-average-monthly-premium-for-medicare-part-d-stand-alone-plans-is-projected-to-increase-by-50-from-34-to-51-in-2027-unless-enrollees-switch-to-lower-cost-plans/",
+          "/retirement/medicare-irmaa-calculator/",
+          "https://www.medicare.gov/health-drug-plans/part-d/basics/costs",
+          "https://www.cms.gov/newsroom/fact-sheets/medicare-part-d-2027-national-average-monthly-bid-amount-information",
+          "https://www.centene.com/",
+          "https://www.wellcare.com/",
+          "https://www.uhc.com/",
+          "https://www.aarp.org/",
+          "https://www.medicare.gov/plan-compare",
+          "/guides/dol-pbm-fee-disclosure-rule/",
+          "https://www.medicare.gov/basics/costs/help/drug-costs",
+          "/guides/medicare-savings-programs/",
+          "https://www.ssa.gov/medicare/part-d-extra-help",
+          "/compare/medicare-vs-medicare-advantage/",
+          "https://www.medicare.gov/plan-compare",
+          "https://www.ssa.gov/medicare/part-d-extra-help",
+          "/methodology/",
+          "/editorial-policy/",
+          "https://www.kff.org/medicare/the-average-monthly-premium-for-medicare-part-d-stand-alone-plans-is-projected-to-increase-by-50-from-34-to-51-in-2027-unless-enrollees-switch-to-lower-cost-plans/",
+          "https://www.cms.gov/newsroom/fact-sheets/medicare-part-d-2027-national-average-monthly-bid-amount-information",
+          "https://www.medicare.gov/plan-compare",
+          "https://www.medicare.gov/basics/costs/help/drug-costs",
+          "https://www.medicare.gov/health-drug-plans/part-d/basics/costs",
+          "/",
+          "/sponsor",
+          "/calculators/",
+          "/auto-loan/",
+          "/mortgage/",
+          "/retirement/",
+          "/investing/",
+          "/portfolio/",
+          "/real-estate/",
+          "/net-worth/",
+          "/budget/",
+          "/tax-resolution/",
+          "/estate-planning/",
+          "/probate/",
+          "/elder-care/",
+          "/trump-account/",
+          "/529-savings-calculator/",
+          "/coast-fire/",
+          "/business-loan-payoff/",
+          "/personal-loan/",
+          "/interest-per-day/",
+          "/taxable-vs-tax-deferred/",
+          "/credit-card-payoff/",
+          "/iul-calculator/",
+          "/merchant-cash-advance/",
+          "/invoice-factoring/",
+          "/business-line-of-credit/",
+          "/pto-cashout/",
+          "/zakat/",
+          "/life-insurance-needs/",
+          "/self-employment-tax/",
+          "/operating-cash-flow/",
+          "/mileage-deduction/",
+          "/cash-conversion-cycle/",
+          "/freelance-rate/",
+          "/heloc-calculator/",
+          "/s-corp-tax/",
+          "/commercial-mortgage-calculator/",
+          "/cd-calculator/",
+          "/emergency-fund-calculator/",
+          "/debt-consolidation-calculator/",
+          "/inflation-calculator/",
+          "/expense-ratio-calculator/",
+          "/social-security-break-even-calculator/",
+          "/mileage-reimbursement-calculator/",
+          "/portfolio-rebalancing-calculator/",
+          "/hurricane-deductible-calculator/",
+          "/annuity-calculator/",
+          "/credit-card-interest-calculator/",
+          "/loan-payment-calculator/",
+          "/hysa-vs-cd-calculator/",
+          "/trump-account-vs-529-calculator/",
+          "/mortgage-recast-calculator/",
+          "/social-security-cola-calculator/",
+          "/biweekly-mortgage-calculator/",
+          "/roth-vs-traditional-401k-calculator/",
+          "/pay-off-mortgage-or-invest-calculator/",
+          "/florida-amendment-3-calculator/",
+          "/student-loan-wage-garnishment-calculator/",
+          "/tax-bracket-calculator/",
+          "/debt-to-income-ratio-calculator/",
+          "/social-security-taxable-benefits-calculator/",
+          "/checklists/",
+          "/charitable-donation-tax-deduction-calculator/",
+          "/car-loan-interest-deduction-calculator/",
+          "/rent-vs-buy-calculator/",
+          "/stock-capital-gains-tax-calculator/",
+          "/hidden-cost-of-owning-a-home-calculator/",
+          "/compare/",
+          "/compare/401k-vs-roth-ira/",
+          "/compare/roth-401k-vs-traditional-401k/",
+          "/compare/529-vs-roth-ira/",
+          "/compare/etf-vs-mutual-fund/",
+          "/compare/hsa-vs-fsa/",
+          "/compare/va-loan-vs-conventional-loan/",
+          "/compare/15-year-vs-30-year-mortgage/",
+          "/compare/fixed-vs-arm-mortgage/",
+          "/compare/hysa-vs-money-market/",
+          "/compare/stocks-vs-bonds/",
+          "/templates/",
+          "/templates/freelance-invoice-template/",
+          "/templates/freelance-contract-template/",
+          "/templates/statement-of-work-template/",
+          "/templates/retainer-agreement-template/",
+          "/templates/mileage-log-template/",
+          "/templates/expense-report-template/",
+          "/s-corp-tax/",
+          "/guides/qbi-deduction-explained/",
+          "/compare/llc-vs-s-corp/",
+          "/roundup/",
+          "/guides/first-time-home-buyer-guide/",
+          "/guides/how-to-buy-a-car/",
+          "/roundup/best-401k-providers-for-small-business/",
+          "/roundup/best-budgeting-apps-for-couples/",
+          "/roundup/best-money-market-accounts/",
+          "/roundup/best-net-worth-tracker/",
+          "/roundup/best-retirement-accounts-for-self-employed/",
+          "/roundup/best-mileage-tracker-apps/",
+          "/roundup/best-accounting-software-for-freelancers/",
+          "/roundup/best-invoicing-apps-for-freelancers/",
+          "/guides/",
+          "/about/",
+          "/contact/",
+          "/editorial-policy/",
+          "/methodology/",
+          "/privacy-policy/",
+          "https://www.layer3labs.io"
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://www.themodernwallet.com/#organization",
+            "name": "ModernWallet",
+            "url": "https://www.themodernwallet.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.themodernwallet.com/favicon.svg"
+            },
+            "description": "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results.",
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "Layer3Labs",
+              "url": "https://www.layer3labs.io"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://www.themodernwallet.com/#website",
+            "url": "https://www.themodernwallet.com/",
+            "name": "ModernWallet",
+            "description": "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results."
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ModernWallet",
+                "item": "https://www.themodernwallet.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Guides",
+                "item": "https://www.themodernwallet.com/guides/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Medicare Part D 2027 Stand-Alone Plan Premiums Projected to Rise 50 Percent",
+                "item": "https://www.themodernwallet.com/guides/medicare-part-d-2027-premiums/"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much will Part D cost in 2027?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "KFF projects the average stand-alone Part D premium at $51 a month in 2027, up from $34, if enrollees keep their current plans. That works out to $612 a year, or $204 more than 2026, by arithmetic. Individual premiums vary by plan, and Medicare.gov lists the maximum 2027 deductible as $700."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is Medicare Part D going away in 2027?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. CMS sets a 2027 base beneficiary premium of $41.33. KFF lists eight national stand-alone plans with projected 2027 premiums, and Medicare.gov publishes 2027 deductible and out-of-pocket limits. What KFF reports is that no zero-premium stand-alone plans are available in 2027."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What do KFF and CMS say about the 2027 increase?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "KFF projects the average stand-alone premium will rise 50 percent, from $34 to $51 a month, if enrollees do not switch plans. CMS says it will end the voluntary premium stabilization demonstration for stand-alone plans at the end of 2026 and sets the 2027 base beneficiary premium at $41.33. KFF's release does not say why plans raised premiums."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When does Medicare open enrollment end?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "KFF says open enrollment runs through December 7. Plans can be compared before then in Medicare Plan Finder at medicare.gov/plan-compare."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the Part D deductible in 2027?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The maximum Part D deductible in 2027 is $700, up from $615 in 2026, and some plans charge less or nothing. KFF puts the average at $643 for stand-alone plan enrollees and $489 for MA-PD enrollees. After the deductible, Medicare.gov says enrollees pay 25 percent coinsurance until out-of-pocket spending reaches $2,400."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Extra Help lower Part D premiums?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Medicare.gov's Extra Help page lists the 2027 plan premium and deductible as $0 for people in the program. Generic drugs cost up to $5.80 and brand-name drugs up to $14.40 at participating pharmacies, and covered drugs cost $0 once total drug costs reach $2,400. Medicare.gov says applications go through Social Security."
+                }
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Jonathan Velez",
+            "url": "https://www.themodernwallet.com/about/",
+            "jobTitle": "Personal Finance Writer & Editor",
+            "description": "Jonathan Velez writes and edits ModernWallet's personal-finance content, focused on loans, interest, and debt payoff. Every calculator page is reviewed against primary sources like the CFPB and Federal Reserve.",
+            "knowsAbout": [
+              "Auto loans",
+              "Loan amortization",
+              "Interest and APR",
+              "Debt payoff strategies",
+              "Personal finance"
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "ModernWallet",
+              "url": "https://www.themodernwallet.com"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Medicare Part D 2027 Stand-Alone Plan Premiums Projected to Rise 50 Percent",
+            "description": "KFF projects stand-alone Medicare Part D premiums averaging $51 a month in 2027, up from $34. See what to compare before open enrollment ends December 7.",
+            "url": "https://www.themodernwallet.com/guides/medicare-part-d-2027-premiums/",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://www.themodernwallet.com/favicon.svg"
+            },
+            "datePublished": "2026-11-02",
+            "dateModified": "2026-11-02",
+            "author": {
+              "@type": "Person",
+              "name": "Jonathan Velez",
+              "url": "https://www.themodernwallet.com/about/"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "ModernWallet",
+              "url": "https://www.themodernwallet.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.themodernwallet.com/favicon.svg"
+              }
+            },
+            "citation": [
+              {
+                "@type": "CreativeWork",
+                "name": "KFF: Average monthly premium for Medicare Part D stand-alone plans projected to increase 50% in 2027",
+                "url": "https://www.kff.org/medicare/the-average-monthly-premium-for-medicare-part-d-stand-alone-plans-is-projected-to-increase-by-50-from-34-to-51-in-2027-unless-enrollees-switch-to-lower-cost-plans/"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "CMS: Medicare Part D 2027 national average monthly bid amount information",
+                "url": "https://www.cms.gov/newsroom/fact-sheets/medicare-part-d-2027-national-average-monthly-bid-amount-information"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Medicare.gov: Medicare Plan Finder",
+                "url": "https://www.medicare.gov/plan-compare"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Medicare.gov: Help with drug costs (Extra Help)",
+                "url": "https://www.medicare.gov/basics/costs/help/drug-costs"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Medicare.gov: Costs for Medicare drug coverage",
+                "url": "https://www.medicare.gov/health-drug-plans/part-d/basics/costs"
+              }
+            ]
+          }
+        ],
+        "structure": [
+          [
+            "html",
+            {}
+          ],
+          [
+            "body",
+            {}
+          ],
+          [
+            "header",
+            {
+              "class": "site-header"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "hdr-inner"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "brand-group"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "brand",
+              "href": "/",
+              "aria-label": "ModernWallet home"
+            }
+          ],
+          [
+            "svg",
+            {
+              "viewbox": "0 0 32 32",
+              "width": "26",
+              "height": "26",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "rect",
+            {
+              "width": "32",
+              "height": "32",
+              "fill": "var(--primary)"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "8",
+              "y": "6",
+              "width": "16",
+              "height": "20",
+              "fill": "none",
+              "stroke": "#fff"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "11",
+              "y": "9.5",
+              "width": "10",
+              "height": "4",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "16",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "19.8",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "22",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-name"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-divider",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-tagline"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "primary-nav",
+              "aria-label": "Primary"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "nav-dd"
+            }
+          ],
+          [
+            "button",
+            {
+              "type": "button",
+              "class": "nav-trigger"
+            }
+          ],
+          [
+            "svg",
+            {
+              "class": "chev",
+              "viewbox": "0 0 24 24",
+              "width": "16",
+              "height": "16",
+              "fill": "none",
+              "stroke": "currentColor",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "polyline",
+            {
+              "points": "6 9 12 15 18 9"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "nav-menu",
+              "role": "menu"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "menu-all",
+              "href": "/calculators/",
+              "role": "menuitem"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "menu-cols"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/auto-loan/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/investing/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/real-estate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/net-worth/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/budget/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/estate-planning/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/probate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/elder-care/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/529-savings-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/coast-fire/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-loan-payoff/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/personal-loan/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/interest-per-day/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/taxable-vs-tax-deferred/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-payoff/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/iul-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/merchant-cash-advance/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/invoice-factoring/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-line-of-credit/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pto-cashout/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/zakat/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/life-insurance-needs/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/operating-cash-flow/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-deduction/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cash-conversion-cycle/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/freelance-rate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/heloc-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/commercial-mortgage-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cd-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/emergency-fund-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-consolidation-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/inflation-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/expense-ratio-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-break-even-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-reimbursement-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio-rebalancing-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hurricane-deductible-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/annuity-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-interest-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/loan-payment-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hysa-vs-cd-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account-vs-529-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage-recast-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-cola-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/biweekly-mortgage-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roth-vs-traditional-401k-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pay-off-mortgage-or-invest-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/florida-amendment-3-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/student-loan-wage-garnishment-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-to-income-ratio-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-taxable-benefits-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/checklists/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/charitable-donation-tax-deduction-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/car-loan-interest-deduction-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rent-vs-buy-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/stock-capital-gains-tax-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hidden-cost-of-owning-a-home-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns"
+            }
+          ],
+          [
+            "button",
+            {
+              "class": "ns__toggle",
+              "type": "button",
+              "aria-label": "Search"
+            }
+          ],
+          [
+            "svg",
+            {
+              "width": "18",
+              "height": "18",
+              "viewbox": "0 0 24 24",
+              "fill": "none",
+              "stroke": "currentColor",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "11",
+              "cy": "11",
+              "r": "7"
+            }
+          ],
+          [
+            "path",
+            {
+              "d": "m20 20-3.5-3.5"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__panel",
+              "hidden": ""
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__box"
+            }
+          ],
+          [
+            "input",
+            {
+              "class": "ns__input",
+              "type": "search",
+              "placeholder": "Search calculators, guides…",
+              "aria-label": "Search the site",
+              "role": "combobox"
+            }
+          ],
+          [
+            "button",
+            {
+              "class": "ns__close",
+              "type": "button",
+              "aria-label": "Close search"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__results",
+              "role": "listbox"
+            }
+          ],
+          [
+            "main",
+            {
+              "class": "page"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "crumb",
+              "aria-label": "Breadcrumb"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "crumb-current"
+            }
+          ],
+          [
+            "header",
+            {
+              "class": "hero"
+            }
+          ],
+          [
+            "h1",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "byline"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "by"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/about/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "sep",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "rev"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.kff.org/medicare/the-average-monthly-premium-for-medicare-part-d-stand-alone-plans-is-projected-to-increase-by-50-from-34-to-51-in-2027-unless-enrollees-switch-to-lower-cost-plans/",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "tools",
+              "aria-label": "Tools for this journey"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "tools-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "tool-pills"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "tool-pill",
+              "href": "/retirement/medicare-irmaa-calculator/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "arrow",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ul",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.medicare.gov/health-drug-plans/part-d/basics/costs",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.cms.gov/newsroom/fact-sheets/medicare-part-d-2027-national-average-monthly-bid-amount-information",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.centene.com/",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.wellcare.com/",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.uhc.com/",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.aarp.org/",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "table-wrap"
+            }
+          ],
+          [
+            "table",
+            {
+              "class": "prose-table"
+            }
+          ],
+          [
+            "thead",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "tbody",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.medicare.gov/plan-compare",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ul",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ol",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/dol-pbm-fee-disclosure-rule/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.medicare.gov/basics/costs/help/drug-costs",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ul",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/medicare-savings-programs/"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "ul",
+            {
+              "class": "prose-list"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.ssa.gov/medicare/part-d-extra-help",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/medicare-vs-medicare-advantage/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.medicare.gov/plan-compare",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "faqs"
+            }
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.ssa.gov/medicare/part-d-extra-help",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section sources"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "source-note"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/methodology/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/editorial-policy/"
+            }
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.kff.org/medicare/the-average-monthly-premium-for-medicare-part-d-stand-alone-plans-is-projected-to-increase-by-50-from-34-to-51-in-2027-unless-enrollees-switch-to-lower-cost-plans/",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.cms.gov/newsroom/fact-sheets/medicare-part-d-2027-national-average-monthly-bid-amount-information",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.medicare.gov/plan-compare",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.medicare.gov/basics/costs/help/drug-costs",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.medicare.gov/health-drug-plans/part-d/basics/costs",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "footer",
+            {
+              "class": "site-footer"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-inner"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-left"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "brand",
+              "href": "/",
+              "aria-label": "ModernWallet home"
+            }
+          ],
+          [
+            "svg",
+            {
+              "viewbox": "0 0 32 32",
+              "width": "22",
+              "height": "22",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "rect",
+            {
+              "width": "32",
+              "height": "32",
+              "fill": "var(--primary)"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "8",
+              "y": "6",
+              "width": "16",
+              "height": "20",
+              "fill": "none",
+              "stroke": "#fff"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "11",
+              "y": "9.5",
+              "width": "10",
+              "height": "4",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "16",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "tagline"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "sponsor-pill",
+              "href": "/sponsor",
+              "rel": "nofollow"
+            }
+          ],
+          [
+            "span",
+            {
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-navs"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer calculators"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/calculators/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/auto-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/investing/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/real-estate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/net-worth/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/budget/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/estate-planning/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/probate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/elder-care/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/529-savings-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/coast-fire/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-loan-payoff/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/personal-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/interest-per-day/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/taxable-vs-tax-deferred/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-payoff/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/iul-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/merchant-cash-advance/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/invoice-factoring/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-line-of-credit/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pto-cashout/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/zakat/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/life-insurance-needs/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/operating-cash-flow/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-deduction/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cash-conversion-cycle/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/freelance-rate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/heloc-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/commercial-mortgage-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cd-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/emergency-fund-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-consolidation-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/inflation-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/expense-ratio-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-break-even-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-reimbursement-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio-rebalancing-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hurricane-deductible-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/annuity-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-interest-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/loan-payment-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hysa-vs-cd-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account-vs-529-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage-recast-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-cola-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/biweekly-mortgage-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roth-vs-traditional-401k-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pay-off-mortgage-or-invest-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/florida-amendment-3-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/student-loan-wage-garnishment-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-to-income-ratio-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-taxable-benefits-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/checklists/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/charitable-donation-tax-deduction-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/car-loan-interest-deduction-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rent-vs-buy-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/stock-capital-gains-tax-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hidden-cost-of-owning-a-home-calculator/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer comparisons"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/401k-vs-roth-ira/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/roth-401k-vs-traditional-401k/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/529-vs-roth-ira/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/etf-vs-mutual-fund/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hsa-vs-fsa/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/va-loan-vs-conventional-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/15-year-vs-30-year-mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/fixed-vs-arm-mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hysa-vs-money-market/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/stocks-vs-bonds/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer templates"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp links-grid--single"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/freelance-invoice-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/freelance-contract-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/statement-of-work-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/retainer-agreement-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/mileage-log-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/expense-report-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/qbi-deduction-explained/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/llc-vs-s-corp/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer guides"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp links-grid--single"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/first-time-home-buyer-guide/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/how-to-buy-a-car/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-401k-providers-for-small-business/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-budgeting-apps-for-couples/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-money-market-accounts/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-net-worth-tracker/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-retirement-accounts-for-self-employed/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-mileage-tracker-apps/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-accounting-software-for-freelancers/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-invoicing-apps-for-freelancers/"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-legal"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "legal-left"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "legal-right"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/about/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/contact/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/editorial-policy/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/methodology/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/privacy-policy/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.layer3labs.io",
+              "target": "_blank",
+              "rel": "noopener noreferrer"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-disclosure"
+            }
+          ],
+          [
+            "p",
+            {}
+          ]
+        ]
+      },
+      "failures": [],
+      "htmlSha256": "5f3d043b11357c8b0fbfc88a162bd981caaecbbd0725df8b20226120a97d9098",
+      "htmlFile": "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot/d19dea4d18a321bd06c5.html",
+      "textFile": "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot/d19dea4d18a321bd06c5.txt",
+      "textSha256": "492214a30032bf72e5f2c28d438270490351c65461eace16a96fd2e521c909d7"
+    }
+  ],
+  "previewProvenance": {
+    "runId": "0761ec0aa2274b288aa32b3041c09138",
+    "baseUrl": "http://127.0.0.1:42415",
+    "framework": "astro",
+    "buildId": "444d7a512a0ed1a62614d527484264bd92696eb8468d76a423fea1e7e6d8ffec",
+    "sourceSha256": "dcd0c68f432d1dde5f1a6530be002f378cb88530d30cbc872606175700d47093",
+    "pid": 10875,
+    "processStart": "Thu Nov 12 17:17:13 2026"
+  },
+  "contentReviewPolicy": {
+    "version": "risk-review-budget-2026-11-08.1",
+    "sha256": "727de984caa3bc99b3124dfadf1b1e1e073b2995c85ead165052d25a904f3cfc"
+  },
+  "correctionBoundary": {
+    "path": "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot/correction-boundary.json",
+    "sha256": "c44b414c6c37d1b7393d5c63d85ac4be77b94a7caa31dd88cd7980d17b4cb5c4",
+    "version": "targeted-corrections-2026-11-08.1"
+  },
+  "snapshotSha256": "a4612499c44dc3b9378f235781e19a26d21db493e04243e6ce070a429d00b3fe"
+}

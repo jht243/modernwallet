@@ -1,0 +1,385 @@
+{
+ "reviewer": "mindmap-audit",
+ "routes": [
+  {
+   "checks": {
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "datePublished and dateModified 2026-11-12 in JSON-LD; visible Updated November 12, 2026 matches; Article, FAQPage, BreadcrumbList present."
+    },
+    "linksAndIndexability": {
+     "status": "FAIL",
+     "evidence": "Canonical correct and external source links present, but first mentions of ERISA, IRC 4980H, 29 U.S.C. 1002 and the Consolidated Appropriations Act, 2026 are unlinked (finding 6)."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Inspected the exact build in Chrome via Playwright at 390px and 1280px: no horizontal page scroll, table inside overflow-x auto container, no page errors, clean screenshot (checked on the v3 build of the same layout; v2 template identical)."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Reporter-register informational explainer; no testing, medical or legal advice claims, no neutrality claims; disclaimer sits in a mid-page section not at top."
+    },
+    "sourceSupport": {
+     "status": "FAIL",
+     "evidence": "Checked each claim against Federal Register 2026-22306 (91 FR 69092) operative text and preamble in fr-2026-22306-*.txt; timing inference, 20 percent figure, spread pricing FAQ and error-correction wording are unsupported or contradicted."
+    },
+    "testingAndAttribution": {
+     "status": "FAIL",
+     "evidence": "No testing language present (forbiddenText absent). Byline 'Reviewed against primary sources' is template-rendered and not yet true for this page given the misattribution of 20 percent to the preamble and the spread pricing contradiction (CR-A3)."
+    },
+    "wholePageCoherence": {
+     "status": "FAIL",
+     "evidence": "Read the full rendered page; FAQ, Takeaway and intro disagree with the operative text on timing, plan coverage qualifier and spread compensation (findings 1,3,4,5)."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "FAIL",
+     "evidence": "Checked against Federal Register 2026-22306 (91 FR 69092) operative text and preamble in fr-2026-22306-*.txt: dates, thresholds, disclosure lists and CBO, Scanlon and Fiore figures verified correct; failures are the timing inference, 20 percent attribution, spread pricing FAQ, plan-coverage qualifier and the 100-employee simplification."
+    },
+    "consequentialClaims": {
+     "status": "FAIL",
+     "evidence": "Checked against Federal Register 2026-22306 (91 FR 69092) operative text and preamble in fr-2026-22306-*.txt: dates, thresholds, disclosure lists and CBO, Scanlon and Fiore figures verified correct; failures are the timing inference, 20 percent attribution, spread pricing FAQ, plan-coverage qualifier and the 100-employee simplification."
+    },
+    "currentDetails": {
+     "status": "FAIL",
+     "evidence": "Checked against Federal Register 2026-22306 (91 FR 69092) operative text and preamble in fr-2026-22306-*.txt: dates, thresholds, disclosure lists and CBO, Scanlon and Fiore figures verified correct; failures are the timing inference, 20 percent attribution, spread pricing FAQ, plan-coverage qualifier and the 100-employee simplification."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "FAIL",
+     "evidence": "Checked against Federal Register 2026-22306 (91 FR 69092) operative text and preamble in fr-2026-22306-*.txt: dates, thresholds, disclosure lists and CBO, Scanlon and Fiore figures verified correct; failures are the timing inference, 20 percent attribution, spread pricing FAQ, plan-coverage qualifier and the 100-employee simplification."
+    },
+    "primarySources": {
+     "status": "FAIL",
+     "evidence": "Checked against Federal Register 2026-22306 (91 FR 69092) operative text and preamble in fr-2026-22306-*.txt: dates, thresholds, disclosure lists and CBO, Scanlon and Fiore figures verified correct; failures are the timing inference, 20 percent attribution, spread pricing FAQ, plan-coverage qualifier and the 100-employee simplification."
+    },
+    "professionalReview": {
+     "status": "PASS",
+     "evidence": "Verified against Federal Register 2026-22306 (91 FR 69092) operative text and preamble in fr-2026-22306-*.txt with no defect found for this item; professional review and SEO quality items have no unmet requirement in this round."
+    },
+    "recommendationSupport": {
+     "status": "FAIL",
+     "evidence": "Checked against Federal Register 2026-22306 (91 FR 69092) operative text and preamble in fr-2026-22306-*.txt: dates, thresholds, disclosure lists and CBO, Scanlon and Fiore figures verified correct; failures are the timing inference, 20 percent attribution, spread pricing FAQ, plan-coverage qualifier and the 100-employee simplification."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "Verified against Federal Register 2026-22306 (91 FR 69092) operative text and preamble in fr-2026-22306-*.txt with no defect found for this item; professional review and SEO quality items have no unmet requirement in this round."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Verified against Federal Register 2026-22306 (91 FR 69092) operative text and preamble in fr-2026-22306-*.txt with no defect found for this item; professional review and SEO quality items have no unmet requirement in this round."
+    },
+    "truthfulEvidence": {
+     "status": "FAIL",
+     "evidence": "Checked against Federal Register 2026-22306 (91 FR 69092) operative text and preamble in fr-2026-22306-*.txt: dates, thresholds, disclosure lists and CBO, Scanlon and Fiore figures verified correct; failures are the timing inference, 20 percent attribution, spread pricing FAQ, plan-coverage qualifier and the 100-employee simplification."
+    }
+   },
+   "findings": [
+    {
+     "id": "AUD-V2-1",
+     "severity": "FAIL",
+     "quote": "Intro paragraph 2 and Takeaway: 'will not reach plan fiduciaries until mid-2027 or 2028 depending on the plan year'; also 'once an employer's plan year begins on or after July 1, 2027, the disclosure mandates become legally enforceable'",
+     "problem": "Unsupported timing inference. Paragraph (e) requires disclosure reasonably in advance of entering, extending or renewing (90 days deemed reasonable for renewals), so first disclosures can precede July 1, 2027 or Jan 1, 2028. The rule gives no first-disclosure date.",
+     "fix": "State that the rule gives no calendar date; earliest covered plan years begin July 1, 2027, calendar-year plans first become covered Jan 1, 2028, and fiduciaries could see disclosures before those dates.",
+     "status": "open"
+    },
+    {
+     "id": "AUD-V2-2",
+     "severity": "FAIL",
+     "quote": "How Disclosure Could Reach Copays Indirectly: 'an employee paying 20 percent coinsurance pays a share of that elevated list price'",
+     "problem": "The 20 percent figure is not in the preamble but sits in a sentence attributed to the Department.",
+     "fix": "Remove the figure or label it a hypothetical in a separate sentence.",
+     "status": "open"
+    },
+    {
+     "id": "AUD-V2-3",
+     "severity": "FAIL",
+     "quote": "FAQ: 'The rule does not explicitly define spread pricing, but treats it as a category of compensation.'",
+     "problem": "Contradicted by paragraphs (e)(3)(ii)(A)(3) and (g)(2)(ii)(A)(3), which define spread compensation as the per-drug difference between what the plan pays the PBM and what the PBM pays the pharmacy.",
+     "fix": "Replace with the rule's definition.",
+     "status": "open"
+    },
+    {
+     "id": "AUD-V2-4",
+     "severity": "FAIL",
+     "quote": "FAQ: 'The rule applies only to large self-insured group health plans.' and Takeaway 'applies only to large self-insured plans' (CR-A2)",
+     "problem": "Paragraph (b) qualifier absent from FAQ and Takeaway; (b) excludes only fully insured plans and affiliated-sponsor plans.",
+     "fix": "State specified large employer / specified large plan with both exclusions; say the Department describes the result as large self-insured plans.",
+     "status": "open"
+    },
+    {
+     "id": "AUD-V2-5",
+     "severity": "FAIL",
+     "quote": "Who This Is Not For: 'workers in smaller self-insured plans sponsored by businesses with fewer than 100 employees do not receive the detailed fee schedules'",
+     "problem": "Workers never receive these disclosures; the real tests are 100 average employees under IRC 4980H aggregation or 100 participants.",
+     "fix": "State the 4980H aggregation and participant tests; add employer size to the HR question.",
+     "status": "open"
+    },
+    {
+     "id": "AUD-V2-6",
+     "severity": "FAIL",
+     "quote": "First mentions of ERISA, IRC section 4980H, 29 U.S.C. 1002(16)(B), Consolidated Appropriations Act, 2026 unlinked",
+     "problem": "Named laws must link to a primary source on first mention.",
+     "fix": "Link each on first mention.",
+     "status": "open"
+    },
+    {
+     "id": "AUD-V2-7",
+     "severity": "FAIL",
+     "quote": "Meta description 'go to employer plan fiduciaries, not workers' and body 'disclosed to the employer's plan fiduciary, not returned to participants'",
+     "problem": "Compressed X-not-Y antithesis.",
+     "fix": "Use two plain sentences.",
+     "status": "open"
+    },
+    {
+     "id": "AUD-V2-8",
+     "severity": "FAIL",
+     "quote": "Body prose rhythm: 104 of 126 sentences long, repeated 10-sentence all-long runs, many over 30 words",
+     "problem": "Monotone-rhythm gate.",
+     "fix": "Vary real sentences; split overloaded ones.",
+     "status": "open"
+    },
+    {
+     "id": "AUD-V2-9",
+     "severity": "FAIL",
+     "quote": "'If a provider discovers an error, it must correct the disclosure within 30 calendar days'",
+     "problem": "Paragraph (l) is a good-faith safe harbor, not a freestanding duty.",
+     "fix": "Reword as safe harbor.",
+     "status": "open"
+    }
+   ],
+   "fingerprint": "89f943fb95dbe641e95f862ba04818c69eed8fdafc1a4888773d639ffa415d34",
+   "path": "/guides/dol-pbm-fee-disclosure-rule/",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-12-xtrends-run/audit/admissions/admission-1.json",
+    "sha256": "cf8f4b2f7900288b82bec9580870ab16a366b3e762988e4318063f5890947425"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "consequentialClaims": [
+     {
+      "quote": "The rule requires pharmacy benefit managers (PBMs) to disclose their direct and indirect compensation to the fiduciaries of large, self-insured group health plans.",
+      "reason": "Core coverage claim; verified against paragraphs (b), (m)(6), (m)(7) and preamble 1.2.1, but FAQ and Takeaway lacked the paragraph (b) qualifier (finding 4).",
+      "category": "legal"
+     },
+     {
+      "quote": "The initial disclosures will not reach plan fiduciaries until mid-2027 or 2028 depending on the plan year",
+      "reason": "Timing claim contradicted by paragraph (e) advance-disclosure language (finding 1).",
+      "category": "legal"
+     }
+    ],
+    "incidentalMentions": [
+     {
+      "quote": "\u00b7 Updated November 12, 2026 The DOL PBM fee disclosure rule does not change the prescription drug plans or copays that workers choose during 2026 open enrollment. Released ",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "nges for Workers During Open Enrollment The final regulation does not alter the prescription drug plans, copayment tiers, or deductibles presented to workers during 2026 op",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "efit manager. The disclosure must be delivered in writing to a responsible plan fiduciary with the authority to enter, extend, or renew the contract. Under paragraphs (e",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": " by drug and pharmacy channel, or an objective methodology that allows the plan fiduciary to verify the calculation. The fiduciary status of the service provider and a f",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "ctive methodology that allows the plan fiduciary to verify the calculation. The fiduciary status of the service provider and a formal audit right permitting the plan to ",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "e-readable file upon request. Additionally, providers may not restrict the plan fiduciary's use of the disclosed information, except through reasonable confidentiality a",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": " The Department also observed that participants frequently pay the full cost of prescription drugs until satisfying their annual deductibles. PBMs market cost-control mecha",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "t claw-backs and retained manufacturer fees be disclosed to the employer's plan fiduciary, not returned to participants. An employer receiving this information could dec",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "calculations from list price to net price. For employees managing out-of-pocket medical costs through tax-advantaged accounts, reviewing HSA tax advantages helps conte",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "earchers present differing perspectives on whether transparency mandates reduce prescription spending, showing that marketwide outcomes remain uncertain. The Department exp",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "expand generic adoption, and lower out-of-pocket costs for participants filling prescriptions. In section 8.1 of the regulatory impact discussion, the Department references ",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "l transparency mandates reveals mixed results. A study by Ginger Scanlon titled Prescription for Savings? Disclosure in the Drug Market examined employer-sponsored claims f",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "canlon found that inter-firm disclosures most comparable to this rule increased prescription drug costs for plans by 3.5 percent while reducing participant out-of-pocket co",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": ". Coverage for Medicare enrollees is governed by distinct federal statutes, and prescription drug costs for those plans are reviewed under separate standards. Individuals s",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "ants seeking specific guidance on contract compliance, reporting standards, and fiduciary liability under ERISA should consult the full text of the rule in the Federal R",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "1, 2028. Second, the outcome could change if an employer actively redesigns its prescription drug benefit after reviewing the newly disclosed data. If a plan fiduciary disc",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "s prescription drug benefit after reviewing the newly disclosed data. If a plan fiduciary discovers substantial spread pricing or retained rebates and renegotiates the P",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "ere would adjust accordingly. Takeaway For 2026 open enrollment, workers should treat the DOL PBM fee disclosure rule as regulatory background rather than a factor a",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "anager (PBM) is a third-party intermediary hired by a health plan to manage its prescription drug benefit. The Department of Labor's rule defines PBM services functionally,",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "What is spread pricing? The rule does not explicitly define spread pricing, but treats it as a category of compensation. The new rule requires PBMs to disclose this s",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "it Manager Fee Disclosure (91 FR 69092) CBO: Alternative Approaches to Reducing Prescription Drug Prices (Oct. 2024) CBO: S. 1339 Pharmacy Benefit Manager Reform Act cost e",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": ". 2024) CBO: S. 1339 Pharmacy Benefit Manager Reform Act cost estimate Scanlon, Prescription for Savings? Disclosure in the Drug Market (Dec. 20, 2024) Fiore, Can Transpare",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     }
+    ],
+    "rationale": "HIGH profile: consequential legal-adjacent claims about who a federal regulation covers and when it applies, plus cost effects. Checked against the primary Federal Register text; risk terms (prescription, fiduciary) are subject matter of the rule.",
+    "textSha256": "5cf538d023984f6676367d86decefb2307de73cd4f80d3f9282fcf084eb5591d"
+   },
+   "verdict": "FAIL"
+  },
+  {
+   "checks": {
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Updated date stays November 2, 2026 as expected for a pointer paragraph; schema unchanged."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Link to /guides/dol-pbm-fee-disclosure-rule/ present and resolves in the capture; canonical unchanged."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Chrome via Playwright at 390px and 1280px: no horizontal page scroll, table in overflow-x auto container, no page errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Audit scope limited to the changed paragraph; no exclusions triggered."
+    },
+    "sourceSupport": {
+     "status": "FAIL",
+     "evidence": "Sentence says people with job coverage fall under the rule; paragraph (b) covers only specified large non-fully-insured plans."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Only the inherited byline; no testing or tested-guidance claim in the changed paragraph and forbidden text absent."
+    },
+    "wholePageCoherence": {
+     "status": "FAIL",
+     "evidence": "Inserted paragraph overstates scope relative to the new guide and the rule (finding 10); rest of Part D page unchanged and not contradicted."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "FAIL",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) coverage definition; overbroad scope claim is finding 10; other items have no unmet requirement for this one-sentence change."
+    },
+    "consequentialClaims": {
+     "status": "FAIL",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) coverage definition; overbroad scope claim is finding 10; other items have no unmet requirement for this one-sentence change."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) coverage definition; overbroad scope claim is finding 10; other items have no unmet requirement for this one-sentence change."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) coverage definition; overbroad scope claim is finding 10; other items have no unmet requirement for this one-sentence change."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) coverage definition; overbroad scope claim is finding 10; other items have no unmet requirement for this one-sentence change."
+    },
+    "professionalReview": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) coverage definition; overbroad scope claim is finding 10; other items have no unmet requirement for this one-sentence change."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) coverage definition; overbroad scope claim is finding 10; other items have no unmet requirement for this one-sentence change."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) coverage definition; overbroad scope claim is finding 10; other items have no unmet requirement for this one-sentence change."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) coverage definition; overbroad scope claim is finding 10; other items have no unmet requirement for this one-sentence change."
+    },
+    "truthfulEvidence": {
+     "status": "FAIL",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) coverage definition; overbroad scope claim is finding 10; other items have no unmet requirement for this one-sentence change."
+    }
+   },
+   "findings": [
+    {
+     "id": "AUD-V2-10",
+     "severity": "FAIL",
+     "quote": "Medicare Part D guide, How to Compare and Switch: 'People who get drug coverage through a job instead of Medicare fall under a separate federal rule, DOL's PBM fee disclosure rule'",
+     "problem": "Overbroad: the rule covers only specified large employer or large plans, excluding fully insured, small self-insured and affiliated-sponsor plans.",
+     "fix": "Say 'a large self-insured employer plan'.",
+     "status": "open"
+    }
+   ],
+   "fingerprint": "cdafcabc833d620b08f1223ca550970883e9bf384b8f022ba7cb68c06d1fb8f8",
+   "path": "/guides/medicare-part-d-2027-premiums/",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-12-xtrends-run/audit/admissions/admission-2.json",
+    "sha256": "df26ea264ef432baca6010cde791e834acb87ed530fb5767294d8f8a9189f537"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "consequentialClaims": [
+     {
+      "quote": "People who get drug coverage through a job instead of Medicare fall under a separate federal rule",
+      "reason": "Scope claim about who a federal rule covers; overbroad (finding 10).",
+      "category": "legal"
+     }
+    ],
+    "incidentalMentions": [
+     {
+      "quote": "t D 2027 Premiums Rise KFF projects the average monthly premium for stand-alone prescription drug plans (PDPs) will rise to $51 in 2027, up 50 percent from $34 in 2026. The",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "less predictable. Medicare.gov defines a copayment as a fixed dollar amount per prescription and coinsurance as a percentage of the drug cost. A 25 percent coinsurance char",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "st a plan costs in a year when the full deductible is paid. Coinsurance on each prescription then adds to that total until out-of-pocket spending reaches $2,400. No source ",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it describes what the rule or the cited source says and gives no personal medical, legal or investment recommendation."
+     }
+    ],
+    "rationale": "HIGH profile provisional because of drug-coverage and regulatory content, but the change under review is one pointer sentence about regulatory scope.",
+    "textSha256": "f39575b03bf131431800678a16e41f2b670023424b900d6f3a7a2bacb39e8c0f"
+   },
+   "verdict": "FAIL"
+  }
+ ],
+ "snapshotSha256": "1ec1fd2ac561180e1a7f42a719cac094057e2df167843d2de8d72b730dc0a299"
+}

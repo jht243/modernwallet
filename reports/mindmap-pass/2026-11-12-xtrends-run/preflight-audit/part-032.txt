@@ -1,0 +1,42 @@
+isclosure rule",
+      "originPath": "evidence/dol-pbm-fee-disclosure-rule/cases.json"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "snapshot": {
+    "path": "reports/mindmap-pass/2026-11-12-xtrends-run/handoffs/blobs/8632c5b25b90f4b01396bc42966718d263a881c64d05b39444fd1cb8f50f70ad/preview-snapshot-v2.json",
+    "sha256": "8632c5b25b90f4b01396bc42966718d263a881c64d05b39444fd1cb8f50f70ad",
+    "originPath": "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot-v2.json"
+  },
+  "findings": [
+    {
+      "id": "CR-A1",
+      "status": "open",
+      "evidence": "Chart review: research section/takeaway must state both directions of DOL cost statements (lower costs anticipated; could exceed CBO; Scanlon 2024)."
+    },
+    {
+      "id": "CR-A2",
+      "status": "open",
+      "evidence": "Chart review: state paragraph (b) qualifier; not simply self-insured only; specified large plan wording."
+    },
+    {
+      "id": "CR-A3",
+      "status": "open",
+      "evidence": "Chart review: Byline Reviewed against primary sources must be verified by audit against FR text."
+    },
+    {
+      "id": "WR-1",
+      "status": "open",
+      "evidence": "Writer defects to check: mid-2027/2028 timing inference; 20 percent coinsurance illustration; spread pricing not defined claim; fewer than 100 employees simplification."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-12-xtrends-run/handoffs/audit-handoff.json",
+    "sha256": "fdb42e7ca4a7e3b4d40621b0fb3c9a4666e13f3dbfc2722cafb030346c32dae4"
+  }
+}
+

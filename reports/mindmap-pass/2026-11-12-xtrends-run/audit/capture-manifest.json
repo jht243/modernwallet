@@ -1,0 +1,50 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "mindmap-write",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/guides/dol-pbm-fee-disclosure-rule/",
+      "requiredText": [
+        "DOL PBM fee disclosure rule",
+        "January 4, 2027",
+        "Reviewed against primary sources"
+      ],
+      "forbiddenText": [
+        "we tested",
+        "Tested and reviewed by",
+        "mid-2027",
+        "20 percent coinsurance",
+        "not returned to participants"
+      ],
+      "correctionContentFiles": [
+        "src/data/guides.ts"
+      ],
+      "reviewDependencies": [
+        "reports/mindmap-pass/2026-11-12-xtrends-run/fr-2026-22306-text.txt",
+        "reports/mindmap-pass/2026-11-12-xtrends-run/fr-2026-22306-operative-text.txt",
+        "reports/mindmap-pass/2026-11-12-xtrends-run/fr-meta.json",
+        "evidence/dol-pbm-fee-disclosure-rule/sources.md",
+        "reports/mindmap-pass/2026-11-12-xtrends-run/evidence/dol-pbm-fee-disclosure-rule/evidence.json",
+        "reports/mindmap-pass/2026-11-12-xtrends-run/evidence/dol-pbm-fee-disclosure-rule/growth.json"
+      ],
+      "growthFile": "reports/mindmap-pass/2026-11-12-xtrends-run/evidence/dol-pbm-fee-disclosure-rule/growth.json",
+      "evidenceFile": "reports/mindmap-pass/2026-11-12-xtrends-run/evidence/dol-pbm-fee-disclosure-rule/evidence.json",
+      "expectedUpdatedDate": "2026-11-12"
+    },
+    {
+      "path": "/guides/medicare-part-d-2027-premiums/",
+      "requiredText": [
+        "large self-insured employer plan are covered by a separate federal rule"
+      ],
+      "forbiddenText": [],
+      "expectedUpdatedDate": "2026-11-02",
+      "correctionContentFiles": [
+        "src/data/guides.ts"
+      ],
+      "reviewDependencies": [
+        "reports/mindmap-pass/2026-11-12-xtrends-run/links/inbound-source-sections.txt"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+Outbound target inspection, 2026-11-12 (routes verified present in source data)
+
+/guides/medicare-part-d-2027-premiums/  present=True title=Medicare Part D 2027: KFF Projects Premiums Up 50%
+/guides/hsa-triple-tax-advantage/  present=True title=The HSA Triple Tax Advantage Allows $4,400 Self-Only in 2026
+/compare/hsa-vs-fsa/  present=True title=HSA vs FSA: Which Account Saves You More?
+
+Rejected inbound candidate: /guides/hsa-triple-tax-advantage/ (sections cover contribution limits, eligibility, tax breaks; none discusses prescription costs or employer plan design; a link would be forced).

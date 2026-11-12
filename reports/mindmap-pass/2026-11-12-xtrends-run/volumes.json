@@ -1,0 +1,115 @@
+{
+ "rows": [
+  {
+   "keyword": "pbm fee disclosure",
+   "volume": 500,
+   "volume_low": 500,
+   "volume_high": 5000,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 500-5000/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "dol pbm rule",
+   "volume": 500,
+   "volume_low": 500,
+   "volume_high": 5000,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 500-5000/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "pbm transparency",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 10 live autocomplete completions (est. 50-500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "what is a pbm",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 10 live autocomplete completions (est. 50-500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "pharmacy benefit manager",
+   "volume": 500,
+   "volume_low": 500,
+   "volume_high": 5000,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 500-5000/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how do pbms affect copays",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "employer drug plan costs",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  }
+ ],
+ "notes": [
+  "semrush unusable (no SEMRUSH_API_KEY)",
+  "volume: no provider usable \u2014 autocomplete estimate only",
+  "No tool volume for 7 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 5/7 rows corroborated live"
+ ]
+}

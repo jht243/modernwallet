@@ -1,0 +1,73 @@
+This is the most commonly missed part of this file.** Every tell below applies to the H1, the SEO title, the meta description, the subtitle/deck/standfirst, every section heading, every FAQ question, and CTA copy — exactly as it applies to body paragraphs. These are the most-read text on the page and the text an AI extractor quotes first.
+
+Do not confuse two different exclusions. Headings and metadata are excluded from **body word counts** so they cannot pad a depth floor. They are NOT excluded from **this scan**. An audit that extracts body prose for word-counting and then scans only that extract has left every headline unchecked, which is how a tell reaches the top of a live page. Scan the headline fields separately and explicitly.
+
+Body edits are explicitly in scope. New pages and substantive body updates, enrichments or tool copy must pass independent Phase 4 review of the exact final rendered page under `_rendered-page-audit.md`. Metadata/link-only changes retain their existing reviewer gates. Unrelated historical style issues may remain advisory; inherited contradictions affecting the revised answer remain blockers.
+
+[Source: .claude/commands/_experience.md]
+# Experience — who "we" are on this site
+
+<!-- PER-REPO. NOT synced, NEVER overwritten by sync-standards.sh. Loaded by
+     _content-standard.md (## VOICE / ## ANCHOR). If ## DOMAIN is empty the run STOPS. -->
+
+## DOMAIN
+
+The Modern Wallet (themodernwallet.com) is a personal-finance site built around free calculators and plain-language money guides, with 400-plus pages spanning auto loans, mortgages, retirement, investing, rentals, and net worth. Our reader is making one concrete decision and wants an accurate number, fast, with no signup. We show the math, name what moves it, and explain the tradeoff.
+
+**General framings this section licenses** (editorial "we", no client roster required):
+
+- "In the guides we publish here..."
+- "What we see readers get wrong most often is..."
+- "Every guide we write starts from..."
+- "When we reviewed this ourselves..."
+
+These license a real editorial observation about work on this site. They never license a fabricated specific.
+
+---
+
+## SPECIFICS
+
+_(No named-client claims. This is a content property; the editorial "we" above is the voice.)_
+
+---
+
+### G — Products and models we test (added 2026-10-20)
+
+The site owner tests every product, app, software tool and AI model this site writes about. On roundup, review and comparison pages this licenses first-person testing claims about those items: "we tested", "in our testing", "we picked it because". It does not license invented specifics: no measurements, scores, benchmark figures, durations, test dates, prices paid, or test setups unless they appear in the row's fact list.
+
+It never covers medical treatments, clinics, drugs, the health effects of supplements, or legal, financial or professional services. Never claim to have tested those. See `_content-standard.md` ## TESTED for the required page format.
+
+
+[Source: .claude/commands/_workflow-checkpoints.md]
+<!-- upsell-live-feedback-20261104 -->
+**Upsell release rule — Jonathan, 2026-11-04 (latest):** An actual source-backed canonical upsell page follows the same release principle as client work. Run TWO independent reviews, with at most one targeted correction between them; after the second review publish the exact latest candidate even if it retains editorial FAIL findings. Existing candidates with more reviews already meet the limit. Do not ask for another pass, regenerate/reset, fabricate PASS or treat an unpaid upsell as paid. Preserve all findings, counters, source evidence and canonical identity as `review-release` under `upsell-live-feedback-2026-11-04.1`. Keep mechanical build/full-render/live/link checks, required professional review, testing honesty, destination/client exclusions, explicit prepublication promises, holds, ownership/caps and the native U2 weekday send window/actual Gmail SENT receipts. This supersedes older speculative-upsell stop/PASS-only clauses; ordinary unrelated editorial and unpaid inquiries retain their existing rules. Apply `_client-delivery-review.md` and the canonical `content_review.py` release/resume helpers.
+<!-- /upsell-live-feedback-20261104 -->
+
+
+
+<!-- client-live-feedback-20261104 -->
+**Client-delivery exception — Jonathan, 2026-11-04:** For an actual canonical verified-paid client page/article/placement or already explicitly authorized publish-first invoice order, keep the normal independent review and maximum two targeted reworks; at that limit automatically publish the exact latest candidate and send its live links through the existing native delivery path for client feedback. Do not ask for another internal pass or reset/regenerate. Preserve FAIL findings/counters honestly as `client-review-release`, never fabricate PASS or client approval. Keep mechanical build/live/link/ownership/payment/scope checks, required professional review, testing honesty, exclusions, explicit customer prepublication promises, holds, original deadlines, native P9 floor/windows/caps and actual SENT receipts. Speculative upsells, test/unpaid inquiries and unrelated editorial work keep their existing stop. Read/install the shared `_client-delivery-review.md` contract when executing client publishing; this scoped rule supersedes older blanket stop/PASS-only language for qualifying client deliverables only.
+<!-- /client-live-feedback-20261104 -->
+
+
+<!-- fleet-author-defaults-v1 -->
+**Author defaults — owner instruction, 2026-10-29:** Apply `_content-standard.md`, “Existing site author by default; missing person never holds publication,” ahead of older generic named-reviewer rules. Reuse this site's established default/category author automatically. If no person exists, use the existing publisher/editorial identity or omit an optional personal byline; a person can be added later. Do not ask for an author/professional assignment, block preparation or publication, or fabricate credentials/review dates. The independent Phase 4 reviewer is an automatic agent; internal `author`/`reviewer` actor IDs remain distinct and are separate from the public byline. Keep source, safety/exclusion, rendered-page and live-verification checks.
+<!-- /fleet-author-defaults-v1 -->
+
+
+<!-- mindmap-unattended-publication-v1 -->
+**Unattended Mindmap authorization and recovery:** Apply `_mindmap-execution.md`, “Authorized unattended Mindmap: continue through publication,” before the default Phase 0/stop rules below. Explicitly authorized end-to-end routines record their existing authorization, save the complete independently reviewed chart and continue through publication without asking. Use the single shared per-page audit budget. Where the configured Mindmap capped-release policy applies, publish the exact final candidate at its limit with every factual or cosmetic FAIL finding preserved; do not isolate it merely for an editorial failure or request another review. Keep existing non-editorial publication safeguards. Preserve mandatory audits, exact rendered/live checks, professional review, local exclusions and authorization limits. Manual runs retain their Phase 0 gate and stop rules. A generated `ready-for-approval` chart is accepted after structural validation plus the separately recorded authorization; never rewrite it merely to change status.
+<!-- /mindmap-unattended-publication-v1 -->
+
+# Workflow checkpoints — complete instructions and evidence of application
+
+These are substeps of the existing workflow, not new phases or human gates. Preserve scope, professional review, local exclusions, schedules and the Phase 0 approval. A delivery log proves only that text was emitted; it does not prove comprehension, correct application, independent review or permission to publish.
+
+## Startup and complete reading
+
+Run `bash .claude/tools/workflow-start.sh` directly as a standalone command (add `--cloud` in cloud). Inspect its actual exit status. Never pipe it through `tail`, `head`, `tee` or another command, chain past failure, or treat a checkbox as proof. The wrapper's internal pipefail cannot protect its caller's pipeline. Startup returns a fresh `runId` after verification. Pass that exact ID via `--run-id <runId>` to subsequent startup checks and every `workflow-preflight.py prepare` in this same routine. Never reuse a previous routine's ID, including when starting another routine in the same chat. Runners may instead supply a fresh per-invocation `WORKFLOW_RUN_ID` consistently in their environment. For the legacy standards loader, use `WORKFLOW_RUN_ID=<runId> bash .claude/tools/load-standards.sh <routine> <phase>` so its internal startup continues the same verified run. This preserves this run's edits without carrying exemptions into later routines.
+
+Before chart research/planning, substantive writing/enrichment, independent audit and publication, prepare the applicable instruction bundle:
+
+```bash
+python3 .claude/tools/workflow-preflight.py prepar

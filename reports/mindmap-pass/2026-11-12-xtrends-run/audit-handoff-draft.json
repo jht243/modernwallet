@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "siteId": "jht243/modernwallet",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "xtrends-2026-11-12",
+  "producer": "mindmap-write",
+  "nextAction": "independent rendered audit of the exact snapshot",
+  "routes": [
+    "/guides/dol-pbm-fee-disclosure-rule/",
+    "/guides/medicare-part-d-2027-premiums/"
+  ],
+  "candidates": [
+    {
+      "path": "src/data/guides.ts",
+      "sha256": "4f50d509bfd35f5e39d4de4d8b23199dab78064a7c47c9db32637b605352a93d"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/drafts/dol-pbm-fee-disclosure-rule.json",
+      "sha256": "15b6cd27f18bb98400d9339dc01fc09e68c487f804dee17fe17b954b6c33a190"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/write-report.md",
+      "sha256": "1512dc7c36d12df0018ff57d7dbca91be1f4205330f9fb7db0fb93711d5b876e"
+    }
+  ],
+  "sources": [
+    {
+      "path": "evidence/dol-pbm-fee-disclosure-rule/sources.md",
+      "sha256": "ef41bf2e84a60405ba9c5d5d461f1cc39f8a44d14b17578b5da3ad975f761993",
+      "checkedAt": "2026-11-12",
+      "refreshWhen": "before any content correction or if the rule is amended",
+      "scope": "primary-source evidence for the DOL PBM fee disclosure rule"
+    },
+    {
+      "path": "evidence/dol-pbm-fee-disclosure-rule/cases.json",
+      "sha256": "db15ec6baa1498b9023813be9fc2f1aedba4495c3f3526b939fc2f05473510a6",
+      "checkedAt": "2026-11-12",
+      "refreshWhen": "before any content correction or if the rule is amended",
+      "scope": "primary-source evidence for the DOL PBM fee disclosure rule"
+    }
+  ],
+  "findings": [
+    {
+      "id": "CR-A1",
+      "status": "open",
+      "evidence": "Chart review: research section/takeaway must state both directions of DOL cost statements (lower costs anticipated; could exceed CBO; Scanlon 2024)."
+    },
+    {
+      "id": "CR-A2",
+      "status": "open",
+      "evidence": "Chart review: state paragraph (b) qualifier; not simply self-insured only; specified large plan wording."
+    },
+    {
+      "id": "CR-A3",
+      "status": "open",
+      "evidence": "Chart review: Byline Reviewed against primary sources must be verified by audit against FR text."
+    },
+    {
+      "id": "WR-1",
+      "status": "open",
+      "evidence": "Writer defects to check: mid-2027/2028 timing inference; 20 percent coinsurance illustration; spread pricing not defined claim; fewer than 100 employees simplification."
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "previous": {
+    "path": "reports/mindmap-pass/2026-11-12-xtrends-run/handoffs/write-handoff.json",
+    "sha256": "40a6c718a61a40d825afb4f7a62ab042d682b739e36e3fca3b0b9efd55c20a44"
+  },
+  "snapshot": {
+    "path": "reports/mindmap-pass/2026-11-12-xtrends-run/audit/preview-snapshot-v2.json",
+    "sha256": "8632c5b25b90f4b01396bc42966718d263a881c64d05b39444fd1cb8f50f70ad"
+  }
+}

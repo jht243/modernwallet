@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 1,
+  "jobId": "xtrends-2026-11-12",
+  "author": "mindmap-build",
+  "date": "2026-11-12",
+  "source": "x-trends-mindmap-auto 2026-11-12: daily Fleet trend scout (Grok Bot) section for themodernwallet.com, 1 candidate (DOL PBM fee-disclosure final rule); frozen intake reports/x-trends/2026-11-12.md; autocomplete-estimate demand (no provider usable); Federal Register 2026-22306 verified",
+  "interpretedBrief": "The scout bullet for themodernwallet.com is the Department of Labor's final PBM fee-disclosure rule (Federal Register 2026-22306, 91 FR 69092): PBMs and affiliated brokers and consultants must disclose direct and indirect compensation to fiduciaries of large self-insured ERISA group health plans before contracts and every six months after; effective Jan 4, 2027; applicable to plan years beginning on or after July 1, 2027. The angle is what changes for workers, and what does not, during open enrollment. Verified against the primary source, the rule's disclosures go to the employer's plan fiduciaries, cover only large self-insured plans and set no copay, so the page answers the worker's question with those conditions. No existing page serves this reader, so the run creates one guide and adds one inbound link from the Medicare Part D guide. Health/YMYL-adjacent: factual, no advice beyond sources.",
+  "chartPath": "reports/mindmap-pass/2026-11-12-xtrends.md",
+  "request": {
+    "source": {
+      "path": "reports/x-trends/2026-11-12.md",
+      "sha256": "aba5d917cdd40f96f693a3e3727d3f33f19aad938211f14b1617bdb4b82ad4e8"
+    },
+    "goal": "Give a worker with employer health coverage a sourced, plain answer to whether the DOL's new PBM fee-disclosure rule changes their drug plan or copays, including what the rule does not change during open enrollment.",
+    "requirements": [
+      {
+        "id": "R1",
+        "description": "Explain the rule as finalized: who must disclose what to whom, before contracts and twice a year after, effective Jan 4, 2027 and applicable to plan years beginning on or after July 1, 2027, verified against Federal Register 2026-22306.",
+        "acceptance": "The published guide states each date, the recipients (plan fiduciaries of large self-insured plans) and the disclosure cadence, each linked to or attributed to the Federal Register final rule.",
+        "actionIds": [
+          "A1"
+        ]
+      },
+      {
+        "id": "R2",
+        "description": "Answer what changes for workers and what does not during open enrollment, without advice beyond sources.",
+        "acceptance": "The opening section gives the verdict with its conditions (plan type, plan year start, no copay or premium requirement), and the Takeaway and FAQs agree with it.",
+        "actionIds": [
+          "A1"
+        ]
+      }
+    ]
+  },
+  "actions": [
+    {
+      "id": "A1",
+      "problem": "Lens 1 direct intent + news-driven (DOL promoted the final rule on X Nov 10 during open enrollment; Federal Register 2026-22306 published 2026-11-02). 'pbm fee disclosure' 500-5000/mo, 'dol pbm rule' 500-5000/mo, 'pbm transparency' 50-500/mo, 'pharmacy benefit manager' 500-5000/mo (Google Autocomplete bands, estimate, NOT measured; SEMRUSH and DataForSEO unavailable, US, 2026-11-12); 'how do pbms affect copays' 0-25 (no signal). Lens 2: no adjacent cluster is a separate page (what is a PBM and how PBMs make money are answered inside the same guide; state PBM laws and vendor lists are off-intent). Lens 3: no comparable entity (a rule, not a product). lookup: no match (coverage_lookup 2026-11-12: 'Possible existing homes: none found'); nearest pages /guides/medicare-part-d-2027-premiums/ (Medicare enrollee comparing Part D plans; different law and reader) and /compare/hsa-vs-fsa/ (account choice; no prescription-plan content). Commits checked: no prior commits touch this topic (git-dedup.txt). Same-run overlap: none.",
+      "solution": "Create /guides/dol-pbm-fee-disclosure-rule/ targeting 'dol pbm fee disclosure rule' [article, answer-first verdict explainer with one finite who/when table], with one inbound link sentence added to /guides/medicare-part-d-2027-premiums/",
+      "bucket": "create new content",
+      "target": "/guides/dol-pbm-fee-disclosure-rule/",
+      "format": "article",
+      "best_medium": "text",
+      "resolved_deliverable": "text",
+      "serp_verdict": "unread",
+      "serp_evidence": "SERP not read: serp.py returned 'DataForSEO unavailable'; no PAA, no AI Overview information",
+      "reader_question": "Will the DOL's PBM fee disclosure rule change my employer drug plan or my copays? [PAA unavailable (SERP unread, DataForSEO unavailable); ac: question sweep on \"pbm rule\" returned 0 rows; \"pbm transparency\" and \"pbm fee disclosure\" a-z sweeps returned 45 unique completions of which 7 are rule-intent (dol pbm fee disclosure rule, pbm fee disclosure proposed rule, dol pbm transparency rule, ebsa pbm transparency rule, pbm transparency proposed rule, pbm transparency regulations, pbm rules) and the rest are state laws, insurer names or vendor lists; dominant pattern verdict (does it change X); verb-only on the copay clause]",
+      "answer": "Not for the plans workers are choosing in 2026 open enrollment: the rule is effective Jan 4, 2027, applies only from the first plan year beginning on or after July 1, 2027, covers only large self-insured plans, requires disclosures to the employer's plan fiduciaries rather than to workers, and sets no copay, premium or formulary requirement; any effect on copays would come later and indirectly, through what an employer does with the information (verdict with conditions)",
+      "answer_placement": "section 1: \"What the Rule Changes for Workers During Open Enrollment\"",
+      "presentation": {
+        "medium": "text",
+        "placement": "New guide; the finite table sits after the opening answer in section 2",
+        "reason": "The reader needs a yes or no on their own plan and a date; the answer turns on three facts (self-insured or not, 100 or more employees or participants, plan year start) that a short finite table settles",
+        "readerInputs": [],
+        "interaction": {
+          "decision": "not-useful",
+          "reason": "Three plan-type rows answer who is covered and when; a calculator would have no defensible formula because the rule sets no price or copay, and a worker cannot enter an unknown plan type that a table row does not already explain"
+        },
+        "animation": {
+          "decision": "not-useful",
+          "reason": "There is no changing quantity to animate; the sequence (contract, semiannual disclosure, audit) is three short items readable as a list"
+        }
+      }
+    }
+  ],
+  "newPageBriefs": [
+    {
+      "actionId": "A1",
+      "target": "/guides/dol-pbm-fee-disclosure-rule/",
+      "identity": {
+        "title": "What the DOL PBM Fee Disclosure Rule Means for Workers",
+        "pageType": "explainer (floor 1,200 body words); guide in the GUIDES store (src/data/guides.ts)",
+        "format": "article",
+        "medium": "text",
+        "plannedMetadata": "metaTitle 'What the DOL PBM Fee Disclosure Rule Means for Workers' (54 characters) containing 'dol pbm fee disclosure rule'; metaDescription at most 155 characters stating the effective date, that disclosures go to employer plan fiduciaries and that the rule sets no copay; h1 'What the DOL PBM Fee Disclosure Rule Means for Employer Drug Plans and Copays'",
+        "register": "reporter"
+      },
+      "readerAndAnswer": {
+        "question": "Will the DOL's PBM fee disclosure rule change my employer drug plan or my copays? [PAA unavailable (SERP unread, DataForSEO unavailable); ac: question sweep on \"pbm rule\" returned 0 rows; \"pbm transparency\" and \"pbm fee disclosure\" a-z sweeps returned 45 unique completions of which 7 are rule-intent (dol pbm fee disclosure rule, pbm fee disclosure proposed rule, dol pbm transparency rule, ebsa pbm transparency rule, pbm transparency proposed rule, pbm transparency regulations, pbm rules) and the rest are state laws, insurer names or vendor lists; dominant pattern verdict (does it change X); verb-only on the copay clause]",
+        "answer": "Not for the plans workers are choosing in 2026 open enrollment: the rule is effective Jan 4, 2027, applies only from the first plan year beginning on or after July 1, 2027, covers only large self-insured plans, requires disclosures to the employer's plan fiduciaries rather than to workers, and sets no copay, premium or formulary requirement; any effect on copays would come later and indirectly, through what an employer does with the information (verdict with conditions)",
+        "placement": "section 1: \"What the Rule Changes for Workers During Open Enrollment\"",
+        "audience": "US workers with employer health coverage reading about the DOL rule during open enrollment, and people who heard 'PBM rule' in the news and want to know whether their copays or plan choices change",
+        "intent": "verdict: the reader wants to know whether the rule changes their plan or copays, and under what conditions"
+      },
+      "keywordEvidence": "Primary 'dol pbm fee disclosure rule' (live autocomplete completion of 'pbm fee disclosure'; est. 500-5000/mo for 'pbm fee disclosure' and 'dol pbm rule'); supporting 'pbm transparency rule', 'pbm transparency regulations', 'dol pbm transparency rule', 'ebsa pbm transparency rule' (est. 150-1500/mo each, exact autocomplete matches), 'what is a pbm' and 'pbm transparency' (est. 50-500/mo), 'how do pbms affect copays' (0-25, no signal). All volumes are Google Autocomplete bands, source=estimate, NOT measured (SEMRUSH key absent, DataForSEO off); US; check date 2026-11-12; no KD. Fresh-trend rule applied: unmeasured volume does not veto; the topic is a federal rule published Nov 2 and promoted by DOL Nov 10 during open enrollment. Raw: volumes.json, expand-pbm.json (limit 20: 0 provider + 9 autocomplete ideas; cap not reached), autocomplete-pbm.csv, autocomplete-pbm-transparency-all.csv, autocomplete-pbm-questions.csv, autocomplete-pbm-rule-questions.csv. Rejected as off-topic or other intent: state PBM laws (Louisiana, Minnesota), insurer-specific PBM lists, 'list of transparent pbms', faze/core/PBMC senses. Stop reason: free sweeps complete, no paid provider usable.",
+      "serpAndQuestions": "SERP not read: serp.py read 'pbm fee disclosure rule' returned 'DataForSEO unavailable'; serp_verdict unread, no PAA, no AI Overview data; this is a weakness label, not a drop signal. Question evidence is the autocomplete sweeps: rule-intent completions are 'dol pbm fee disclosure rule', 'pbm fee disclosure proposed rule', 'dol pbm transparency rule', 'ebsa pbm transparency rule'; adjacent question completions 'how do pbms make money', 'how pbms work', 'why are pbms a problem', 'why are pbms controversial' become FAQ questions answered only from the Federal Register text. Opportunity: a worker-facing answer to 'does it change my copays' with the rule's dates and scope; likely page one is law-firm client alerts and DOL pages aimed at plan fiduciaries (not read, not asserted). Limit: no SERP sample, no uniqueness claim.",
+      "whyNewPage": "coverage_lookup (2026-11-12) lists no existing home; git-dedup.txt shows no commit on the topic; a grep of src/data and data for 'pharmacy benefit' and 'PBM' returns nothing. Nearest pages: /guides/medicare-part-d-2027-premiums/ serves a Medicare enrollee choosing a Part D plan (a different statute and enrollment system; no employer-plan or ERISA content) and /compare/hsa-vs-fsa/ and /guides/hsa-triple-tax-advantage/ serve a worker choosing a tax-advantaged account (no prescription-plan content). Enrichment was considered and rejected: it would mix employer ERISA plans into a Medicare page or add an off-intent section to an account page; the brief's enrich-over-thin-new rule is satisfied because the new page is substantive (rule scope, disclosures, dates, effect on workers, cited research, 8 FAQs), not thin. Independent duplicate review recorded in chart-review.json by the independent reviewer.",
+      "outline": [
+        "Section 1 'What the Rule Changes for Workers During Open Enrollment': the verdict paragraph (effective Jan 4, 2027; applies from plan years beginning on or after July 1, 2027; large self-insured plans; disclosures to plan fiduciaries; no copay, premium or formulary requirement) and one paragraph on what it does change (who sees PBM compensation and how often); cites the Federal Register final rule (91 FR 69092) at first use",
+        "Section 2 'Which Employer Plans the Rule Covers': specified large employer (average 100+ employees, counted under Code section 4980H) or specified large plan (average 100+ participants), self-insured only; excluded: fully insured plans, plans whose sponsor is affiliated with a drug manufacturer, wholesaler, PBM or rebate aggregator; smaller self-insured plans get the statute's generalized disclosures instead; finite table: plan type x detailed disclosure under this rule x what applies instead",
+        "Section 3 'What PBMs Must Disclose to Plan Fiduciaries': who must disclose (PBMs, affiliated brokers and consultants expecting $1,000 or more); the list from paras (e) and (g) in plain words: direct compensation, manufacturer rebates by drug with the amount retained, spread compensation by drug and pharmacy channel, copay claw-backs, price protection, formulary placement incentives, net price per fill; machine-readable file on request; audit right",
+        "Section 4 'When the Disclosures Start': Nov 2, 2026 publication; Jan 4, 2027 effective; plan years beginning on or after July 1, 2027; before a contract is entered, extended or renewed (90 days in advance for renewals), then within 30 days after each six-month period (quarterly on request); date arithmetic that a calendar-year plan's first covered plan year begins Jan 1, 2028, labeled as arithmetic; ERISA section 726 report and participant summary is separate and applies from plan years beginning on or after Aug 3, 2028",
+        "Section 5 'How Disclosure Could Reach Copays Indirectly': the Department's own description that coinsurance is often based on list price and that participants often pay the full drug cost up to the deductible; what a fiduciary can do with the information is the employer's decision; copay claw-back disclosure is to the plan, not a refund to the worker",
+        "Section 6 'What the Research Says About Costs': the CBO estimate the Department cites for a different bill (premiums lower by less than 0.1 percent in the first year, diminishing) and the 2025 Medicare Part D study of state disclosure laws (no reduction in drug costs; direct effects uncertain); stated as third-party findings, not about this rule",
+        "Section 'Who This Is Not For' (short): workers on fully insured or small self-insured plans, Medicare enrollees (link to the Part D guide), employers seeking compliance advice (not legal advice)",
+        "Section 'What Would Change This Answer' (short): a plan year starting on or after July 1, 2027, an employer redesign after reading disclosures, or a change to the rule",
+        "Section 'Takeaway' then FAQ (8 questions, sentence case, answered only from the saved rule text): what is a PBM; does the rule lower copays; when does it take effect; does it apply to my employer plan; will workers see the disclosures; what is spread pricing; what is a copay claw-back; what is ERISA section 726. Final body sentence is the concrete next action; disclaimer at the bottom only"
+      ],
+      "contributionAndEvidence": "Basis reported. The contribution is a worker-facing reading of one primary document, 91 FR 69092 (Federal Register 2026-22306, published 2026-11-02, EBSA, RIN 1210-AB37), fetched in full 2026-11-12 via govinfo (the Federal Register site served a bot-check shell for its text endpoints; metadata via its API). Decision gap: the scout and trade press describe the rule for plan fiduciaries; a worker cannot tell from them whether copays or open-enrollment choices change. Finding: the rule changes who sees PBM compensation (the employer's fiduciaries) and when (before contracts and semiannually), changes nothing in the plans on offer for 2027, and sets no cost-sharing term; indirect effects on copays are possible but the Department's cited research calls the direct effect on consumer spending uncertain. Sources inspected with check dates 2026-11-12 and twelve numbered facts with quotes: evidence/dol-pbm-fee-disclosure-rule/sources.md. Strongest counterexample tested (the preamble's list-price coinsurance and copay claw-back discussion) and resolved there. Not used: DOL X post and Morgan Lewis alert (not retrievable). Attribution: third-person to the Federal Register final rule beside each finding; date arithmetic labeled as ours; no testing, modeling or client-conversation claim.",
+      "tablesToolsVisuals": "One finite table in section 2 (plan type x is it covered by the rule's detailed disclosures x what applies): large self-insured; smaller self-insured; fully insured; plan sponsored by a drug-supply-chain affiliate. Every cell carries a fact from paragraph (b) or preamble 1.2.1 and 1.2.2. No calculator, image or animation (see presentation decisions); the answer and its conditions are readable as plain text.",
+      "testingAndReview": "TESTED format off: regulatory explainer outside _experience.md section G (health, legal and financial services excluded) with no ranked items and no executed test; ordinary presentation; no 'we tested' or 'howWeTested'. Health/YMYL-adjacent: states what the rule requires; no medical, efficacy or drug claims; no advice claims beyond sources. Attribution third-person to the Federal Register and the cited researchers. Byline and reviewer line come from the existing template; no professional-review claim; disclaimer at the bottom only. Content-review profile HIGH provisional (up to 3 audits only if the auditor quotes a genuine consequential medical or legal claim, else 2).",
+      "takeaway": "For plan year 2027 choices, treat the rule as background: it starts Jan 4, 2027, reaches a plan only from its first plan year beginning on or after July 1, 2027 (for a calendar-year plan, Jan 1, 2028), covers only large self-insured plans, and gives PBM compensation details to the employer's fiduciaries, not to workers. Compare the plans on offer by their own published copays, deductible and formulary, because the rule sets none of those. Whether copays ever fall depends on what the employer does with the disclosures and the Department's cited research calls the direct effect uncertain. Applies to workers in employer plans; fully insured and small self-insured plans are outside the detailed disclosures. Changes if the plan year starts on or after July 1, 2027, if an employer redesigns the benefit after reading disclosures, or if the rule changes. Next action: ask the benefits team whether the plan is self-insured and when its plan year begins.",
+      "inboundLinks": {
+        "required": 1,
+        "placements": [
+          {
+            "source": "/guides/medicare-part-d-2027-premiums/",
+            "target": "/guides/dol-pbm-fee-disclosure-rule/",
+            "section": "How to Compare and Switch Before December 7 (declared inserted sentence at the end of the section)",
+            "anchor": "DOL's PBM fee disclosure rule for employer drug plans",
+            "purpose": "a reader weighing drug coverage in open enrollment who gets coverage from a job, not Medicare, learns that employer plans fall under a separate federal rule that changes nothing for 2027 choices",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-12-xtrends-run/links/inbound-source-sections.txt",
+              "sha256": "40807778d88528b798e819ca4d8f55796ace7b0e27b93a1d66a3d5c60dd00ccc"
+            }
+          }
+        ]
+      },
+      "outboundLinks": {
+        "placements": [
+          {
+            "source": "/guides/dol-pbm-fee-disclosure-rule/",
+            "target": "/guides/medicare-part-d-2027-premiums/",
+            "section": "Who This Is Not For",
+            "anchor": "Medicare Part D 2027 premiums",
+            "purpose": "Medicare enrollees choosing a drug plan follow a different set of rules and deadlines",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-12-xtrends-run/links/outbound-targets.txt",
+              "sha256": "e09f3d7a1c0ff3d9128649f4cb23b25965d81f0c44d520b7939a6a7cbd3074cb"
+            }
+          },
+          {
+            "source": "/guides/dol-pbm-fee-disclosure-rule/",
+            "target": "/compare/hsa-vs-fsa/",
+            "section": "Takeaway",
+            "anchor": "HSA vs FSA",
+            "purpose": "next open-enrollment decision a worker controls: how to pay out-of-pocket drug costs, since the rule changes no copay",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-12-xtrends-run/links/outbound-targets.txt",
+              "sha256": "e09f3d7a1c0ff3d9128649f4cb23b25965d81f0c44d520b7939a6a7cbd3074cb"
+            }
+          },
+          {
+            "source": "/guides/dol-pbm-fee-disclosure-rule/",
+            "target": "/guides/hsa-triple-tax-advantage/",
+            "section": "How Disclosure Could Reach Copays Indirectly",
+            "anchor": "HSA tax advantages",
+            "purpose": "participants often pay the full drug cost up to the deductible (Department's description), and a high-deductible plan pairs with an HSA",
+            "inspection": {
+              "path": "reports/mindmap-pass/2026-11-12-xtrends-run/links/outbound-targets.txt",
+              "sha256": "e09f3d7a1c0ff3d9128649f4cb23b25965d81f0c44d520b7939a6a7cbd3074cb"
+            }
+          }
+        ]
+      },
+      "technicalAndMeasurement": "New entry in src/data/guides.ts (existing guide template; Article, FAQPage and BreadcrumbList JSON-LD, canonical and sitemap derive from it), published and updated 2026-11-12. Inbound edit: one declared sentence in the Part D guide's 'How to Compare and Switch Before December 7' section; link-only, so no sitemap lastmod bump and no dateModified bump for that route; that route is re-captured and reviewed. Sitemap lastmod today for the new route; IndexNow after exact live verification. growth.json: origin x-trends-mindmap-auto, query family 'dol pbm fee disclosure rule / pbm transparency rule', hypothesis unproven, metric GSC clicks, baseline unavailable (new route, not zero), comparator age-matched new guides, outcome not-yet-published; no uplift claimed. Isolation: if this page is deferred, remove the inbound sentence.",
+      "evidenceFiles": [
+        {
+          "path": "evidence/dol-pbm-fee-disclosure-rule/sources.md",
+          "sha256": "ef41bf2e84a60405ba9c5d5d461f1cc39f8a44d14b17578b5da3ad975f761993"
+        },
+        {
+          "path": "evidence/dol-pbm-fee-disclosure-rule/cases.json",
+          "sha256": "db15ec6baa1498b9023813be9fc2f1aedba4495c3f3526b939fc2f05473510a6"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-12-xtrends-run/fr-2026-22306-operative-text.txt",
+          "sha256": "02ddb85589c01c41efb6eae9eca9f12360b0599b9ef0063ccbff5f57d6405dfe"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-12-xtrends-run/fr-2026-22306-text.txt",
+          "sha256": "880ff6fc526091aad9b50a710f5c8c87197229c25fb1ff223fefb63e52a6d357"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-12-xtrends-run/fr-meta.json",
+          "sha256": "7abdc64fe4b88e546732b23809aed53cd4fd21990e2e67caac56b8a6d8d5b57c"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-12-xtrends-run/coverage.txt",
+          "sha256": "7e9096e899fa43fb2ec04ed5b7e181ac1fdd7ee1561975bee531df7a100d16a4"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-12-xtrends-run/git-dedup.txt",
+          "sha256": "0b40565bd9d1a3f38a1870d118006f318463e558c346aed96a9bbea18130245b"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-12-xtrends-run/volumes.json",
+          "sha256": "e42f3b420376b7ba8802c8c2d8b4354d6d5b66c536a2693147ee80911ef7eb95"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-12-xtrends-run/expand-pbm.json",
+          "sha256": "bfe53f463824704272950641e5fdeb6268fc5258a997b3d0dfee7a8907b40650"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-12-xtrends-run/autocomplete-pbm.csv",
+          "sha256": "374f5d6f814b8f095fb61ec89f0bdc5db0406aa75faf830ac9da5ca6b0c69a59"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-12-xtrends-run/autocomplete-pbm-transparency-all.csv",
+          "sha256": "5459651d991d7a97bcc4a4c9d90adc3ab03b651cdc7259c2ee9c4fb154d5f57c"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-12-xtrends-run/autocomplete-pbm-questions.csv",
+          "sha256": "0c35f4a071c76c5e8932143f2192198ecf4f953896c6b171fa2d5227fd8876cd"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-12-xtrends-run/autocomplete-pbm-rule-questions.csv",
+          "sha256": "388e20b264c592bbc926255f8b1d0b6ed9b19706426a5665c196c26648ea1f4b"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-12-xtrends-run/links/inbound-source-sections.txt",
+          "sha256": "40807778d88528b798e819ca4d8f55796ace7b0e27b93a1d66a3d5c60dd00ccc"
+        },
+        {
+          "path": "reports/mindmap-pass/2026-11-12-xtrends-run/links/outbound-targets.txt",
+          "sha256": "e09f3d7a1c0ff3d9128649f4cb23b25965d81f0c44d520b7939a6a7cbd3074cb"
+        },
+        {
+          "path": "reports/x-trends/2026-11-12.md",
+          "sha256": "aba5d917cdd40f96f693a3e3727d3f33f19aad938211f14b1617bdb4b82ad4e8"
+        }
+      ]
+    }
+  ],
+  "preparation": {
+    "status": "PASS",
+    "readiness": {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/readiness.md",
+      "sha256": "6ab188cd673eca8a17ae4813f0dc716619ee7f191d570a4c27a10851ff031246"
+    }
+  },
+  "evidenceFiles": [
+    {
+      "path": "evidence/dol-pbm-fee-disclosure-rule/sources.md",
+      "sha256": "ef41bf2e84a60405ba9c5d5d461f1cc39f8a44d14b17578b5da3ad975f761993"
+    },
+    {
+      "path": "evidence/dol-pbm-fee-disclosure-rule/cases.json",
+      "sha256": "db15ec6baa1498b9023813be9fc2f1aedba4495c3f3526b939fc2f05473510a6"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/fr-2026-22306-operative-text.txt",
+      "sha256": "02ddb85589c01c41efb6eae9eca9f12360b0599b9ef0063ccbff5f57d6405dfe"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/fr-2026-22306-text.txt",
+      "sha256": "880ff6fc526091aad9b50a710f5c8c87197229c25fb1ff223fefb63e52a6d357"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/fr-meta.json",
+      "sha256": "7abdc64fe4b88e546732b23809aed53cd4fd21990e2e67caac56b8a6d8d5b57c"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/coverage.txt",
+      "sha256": "7e9096e899fa43fb2ec04ed5b7e181ac1fdd7ee1561975bee531df7a100d16a4"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/git-dedup.txt",
+      "sha256": "0b40565bd9d1a3f38a1870d118006f318463e558c346aed96a9bbea18130245b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/volumes.json",
+      "sha256": "e42f3b420376b7ba8802c8c2d8b4354d6d5b66c536a2693147ee80911ef7eb95"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/expand-pbm.json",
+      "sha256": "bfe53f463824704272950641e5fdeb6268fc5258a997b3d0dfee7a8907b40650"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/autocomplete-pbm.csv",
+      "sha256": "374f5d6f814b8f095fb61ec89f0bdc5db0406aa75faf830ac9da5ca6b0c69a59"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/autocomplete-pbm-transparency-all.csv",
+      "sha256": "5459651d991d7a97bcc4a4c9d90adc3ab03b651cdc7259c2ee9c4fb154d5f57c"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/autocomplete-pbm-questions.csv",
+      "sha256": "0c35f4a071c76c5e8932143f2192198ecf4f953896c6b171fa2d5227fd8876cd"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/autocomplete-pbm-rule-questions.csv",
+      "sha256": "388e20b264c592bbc926255f8b1d0b6ed9b19706426a5665c196c26648ea1f4b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/links/inbound-source-sections.txt",
+      "sha256": "40807778d88528b798e819ca4d8f55796ace7b0e27b93a1d66a3d5c60dd00ccc"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/links/outbound-targets.txt",
+      "sha256": "e09f3d7a1c0ff3d9128649f4cb23b25965d81f0c44d520b7939a6a7cbd3074cb"
+    },
+    {
+      "path": "reports/x-trends/2026-11-12.md",
+      "sha256": "aba5d917cdd40f96f693a3e3727d3f33f19aad938211f14b1617bdb4b82ad4e8"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-xtrends-run/source-brief.md",
+      "sha256": "aba5d917cdd40f96f693a3e3727d3f33f19aad938211f14b1617bdb4b82ad4e8"
+    }
+  ],
+  "candidateDispositions": [
+    {
+      "candidate": "The DOL's new PBM fee-disclosure rule: what it means for your employer drug plan and your copays (scout bullet 1 of 1; sources: x.com/USDOL/status/2120228724767424929, federalregister.gov 2026-22306, morganlewis.com alert)",
+      "decision": "create",
+      "reason": "No existing page serves a worker asking whether the rule changes their employer plan or copays: coverage_lookup found no home, no commit or page data names PBMs, and the nearest pages (Medicare Part D 2027 premiums; HSA vs FSA) answer different decisions under different rules. Not an enrichment because it would mix a different law and reader into those pages; the new page is substantive, not thin. Independent duplicate review pending.",
+      "target": "/guides/dol-pbm-fee-disclosure-rule/"
+    }
+  ],
+  "emergingClusters": [
+    {
+      "cluster": "DOL PBM fee disclosure rule",
+      "members": "dol pbm fee disclosure rule; pbm fee disclosure proposed rule; dol pbm transparency rule; ebsa pbm transparency rule; pbm transparency regulations; Will the DOL's PBM fee disclosure rule change my employer drug plan or my copays?",
+      "why": "news-driven (final rule published Nov 2, DOL promotion Nov 10, open enrollment); coverage gap at theme level; demand inferred from live autocomplete, no tool volume",
+      "coverage": "none",
+      "lever": "create new content",
+      "target": "/guides/dol-pbm-fee-disclosure-rule/",
+      "format": "article",
+      "medium": "text",
+      "serp": "unread"
+    }
+  ],
+  "exclusions": [
+    "Separate pages for 'what is a PBM' and 'how do PBMs make money': definitional and mechanism questions answered inside the same guide's FAQ from the rule text; no separate demand evidence beyond autocomplete bands and the head page would cannibalize.",
+    "State PBM transparency laws (Louisiana, Minnesota completions) and vendor lists ('transparent PBM list'): different intent (state law, employer vendor selection), not the worker question; no page created.",
+    "Comparison/alternatives/pricing (Lens 3): no comparable entity; a federal rule is not a product.",
+    "DOL X post and Morgan Lewis alert: not retrievable (post not fetched; law-firm page HTTP 403); not cited; the Federal Register final rule is the sole fact source."
+  ],
+  "executionPlan": [
+    {
+      "phase": 1,
+      "action": "Skipped: no consolidation rows (advisory only; none flagged)"
+    },
+    {
+      "phase": 2,
+      "action": "Skipped: no metadata rows"
+    },
+    {
+      "phase": 3,
+      "action": "Retrieve cases (mindmap-gates.py cases-batch), build evidence.json and growth.json for dol-pbm-fee-disclosure-rule, then generate A1 prose with scripts/lib/content_gen.py write (manifest, review and analysis-packet flags) and add the guide entry to src/data/guides.ts"
+    },
+    {
+      "phase": 4,
+      "action": "Independent audit of A1 on the exact built output and the touched Part D guide: content standard and anti-AI gates, source-to-claim check against the Federal Register text, rendered-audit.py capture and review, content-review-policy reservation per round; HIGH provisional profile with shared per-page budget"
+    },
+    {
+      "phase": 5,
+      "action": "Skipped: no existing-body rows"
+    },
+    {
+      "phase": 6,
+      "action": "Add the one declared inbound sentence to /guides/medicare-part-d-2027-premiums/ (How to Compare and Switch Before December 7); outbound links ship inside A1 prose"
+    },
+    {
+      "phase": 7,
+      "action": "Confirm the sitemap entry for the new guide with lastmod 2026-11-12; no lastmod bump for the link-only Part D edit; write reports/mindmap-pass/2026-11-12-xtrends.indexnow.txt"
+    },
+    {
+      "phase": 8,
+      "action": "Print the run summary and continue to Phase 9 without stopping"
+    },
+    {
+      "phase": 9,
+      "action": "Commit, land-run.sh land to main, deployment-evidence.py host proof, curl and rendered-audit.py compare the live pages, submit verified URLs via indexnow-submit.py, append the ledger line, send the routine email"
+    }
+  ],
+  "publicationScope": {
+    "commit": true,
+    "push": true,
+    "liveVerification": true,
+    "indexNow": true
+  }
+}

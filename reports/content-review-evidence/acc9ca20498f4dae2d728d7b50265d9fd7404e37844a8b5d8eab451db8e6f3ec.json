@@ -1,0 +1,292 @@
+{
+ "reviewer": "mindmap-audit",
+ "routes": [
+  {
+   "checks": {
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "datePublished and dateModified 2026-11-12 in JSON-LD, visible Updated November 12, 2026, Article, FAQPage and BreadcrumbList schema present."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Canonical correct; ERISA, IRC 4980H, 29 U.S.C. 1002, the Act and all source links present; advisory only: law.cornell.edu is not an official source and the Act link points to the Federal Register document."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Built the exact current source and loaded it in Chrome via Playwright at 390px and 1280px: scrollWidth equals clientWidth, table in an overflow-x auto container, no page errors, screenshot clean."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Reporter-register informational explainer; no testing, medical or legal-advice claims, no neutrality claims; disclaimer not at top."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Checked every changed claim against Federal Register 2026-22306 (91 FR 69092) operative text and preamble saved in fr-2026-22306-*.txt: timing wording, spread compensation, paragraph (b) qualifier, 4980H and 100-participant tests, safe-harbor wording, Scanlon market split, CBO premium wording and the Medicare sentence all supported."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "No testing language and forbiddenText absent. Byline 'Reviewed against primary sources' is template-rendered and is now supported for this page by this audit against the Federal Register text; the earlier 20 percent misattribution and spread pricing contradiction are gone (CR-A3 closed)."
+    },
+    "wholePageCoherence": {
+     "status": "FAIL",
+     "evidence": "Whole rendered page reads consistently across lede, table, FAQ and Takeaway after the v4 fixes; the only remaining defect is the 10-sentence all-long run in section 2 (AUD-V4-1)."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Re-verified in v4 against Federal Register 2026-22306 (91 FR 69092) operative text and preamble saved in fr-2026-22306-*.txt: effective and applicability dates, coverage tests, spread compensation definition, safe-harbor error wording, CBO, Scanlon and Fiore figures all match; the Medicare retiree sentence is true (the text has no retiree or employer group waiver reference)."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Re-verified in v4 against Federal Register 2026-22306 (91 FR 69092) operative text and preamble saved in fr-2026-22306-*.txt: effective and applicability dates, coverage tests, spread compensation definition, safe-harbor error wording, CBO, Scanlon and Fiore figures all match; the Medicare retiree sentence is true (the text has no retiree or employer group waiver reference)."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Re-verified in v4 against Federal Register 2026-22306 (91 FR 69092) operative text and preamble saved in fr-2026-22306-*.txt: effective and applicability dates, coverage tests, spread compensation definition, safe-harbor error wording, CBO, Scanlon and Fiore figures all match; the Medicare retiree sentence is true (the text has no retiree or employer group waiver reference)."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "Re-verified in v4 against Federal Register 2026-22306 (91 FR 69092) operative text and preamble saved in fr-2026-22306-*.txt: effective and applicability dates, coverage tests, spread compensation definition, safe-harbor error wording, CBO, Scanlon and Fiore figures all match; the Medicare retiree sentence is true (the text has no retiree or employer group waiver reference)."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Re-verified in v4 against Federal Register 2026-22306 (91 FR 69092) operative text and preamble saved in fr-2026-22306-*.txt: effective and applicability dates, coverage tests, spread compensation definition, safe-harbor error wording, CBO, Scanlon and Fiore figures all match; the Medicare retiree sentence is true (the text has no retiree or employer group waiver reference)."
+    },
+    "professionalReview": {
+     "status": "PASS",
+     "evidence": "Re-verified in v4 against Federal Register 2026-22306 (91 FR 69092) operative text and preamble saved in fr-2026-22306-*.txt: effective and applicability dates, coverage tests, spread compensation definition, safe-harbor error wording, CBO, Scanlon and Fiore figures all match; the Medicare retiree sentence is true (the text has no retiree or employer group waiver reference)."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Re-verified in v4 against Federal Register 2026-22306 (91 FR 69092) operative text and preamble saved in fr-2026-22306-*.txt: effective and applicability dates, coverage tests, spread compensation definition, safe-harbor error wording, CBO, Scanlon and Fiore figures all match; the Medicare retiree sentence is true (the text has no retiree or employer group waiver reference)."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "Re-verified in v4 against Federal Register 2026-22306 (91 FR 69092) operative text and preamble saved in fr-2026-22306-*.txt: effective and applicability dates, coverage tests, spread compensation definition, safe-harbor error wording, CBO, Scanlon and Fiore figures all match; the Medicare retiree sentence is true (the text has no retiree or employer group waiver reference)."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Re-verified in v4 against Federal Register 2026-22306 (91 FR 69092) operative text and preamble saved in fr-2026-22306-*.txt: effective and applicability dates, coverage tests, spread compensation definition, safe-harbor error wording, CBO, Scanlon and Fiore figures all match; the Medicare retiree sentence is true (the text has no retiree or employer group waiver reference)."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Re-verified in v4 against Federal Register 2026-22306 (91 FR 69092) operative text and preamble saved in fr-2026-22306-*.txt: effective and applicability dates, coverage tests, spread compensation definition, safe-harbor error wording, CBO, Scanlon and Fiore figures all match; the Medicare retiree sentence is true (the text has no retiree or employer group waiver reference)."
+    }
+   },
+   "findings": [
+    {
+     "id": "AUD-V4-1",
+     "severity": "FAIL",
+     "quote": "Section 'What the Rule Changes for Workers During Open Enrollment': sentences 14 to 25 by word count run 20, 21, 22, 23, 24, 24, 27, 27, 29, 30 and more words with no medium or short sentence",
+     "problem": "Monotone-rhythm gate: a run of 10 consecutive sentences uses only the long band (15+). Cosmetic; all factual, source, link, date and layout checks pass.",
+     "fix": "Vary real sentences in this section, for example turn one clause into a short sentence of the actual point; do not pad or split clear sentences just to hit a count.",
+     "status": "open"
+    }
+   ],
+   "fingerprint": "27770d2ebfbdf0e19f523f3b3d357508efea4a385a6c96aa7742229fa9844d89",
+   "path": "/guides/dol-pbm-fee-disclosure-rule/",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-12-xtrends-run/audit/admissions-v4/admission-1.json",
+    "sha256": "ee95e9074e24c78bf4332835d8a1046578424f7a28b30be429b7015206b1205b"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "consequentialClaims": [
+     {
+      "category": "legal",
+      "quote": "The rule requires PBMs to disclose their direct and indirect compensation to the fiduciaries of large, self-insured group health plans.",
+      "reason": "Coverage claim verified against paragraphs (b), (m)(6), (m)(7) and preamble 1.2.1; FAQ and Takeaway now carry the paragraph (b) qualifier and both exclusions."
+     },
+     {
+      "category": "legal",
+      "quote": "The rule gives no calendar date for the first disclosures.",
+      "reason": "Timing claim verified: paragraph (e) requires disclosure reasonably in advance of entering or renewing a contract, 90 days deemed reasonable for renewals, and paragraph (p) sets July 1, 2027 plan-year applicability."
+     }
+    ],
+    "incidentalMentions": [
+     {
+      "quote": "(DOL) rule on pharmacy benefit manager (PBM) fee disclosure does not change the prescription drug plans or copays that workers choose during 2026 open enrollment. The Emplo",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "nges for Workers During Open Enrollment The final regulation does not alter the prescription drug plans, copayment tiers, or deductibles presented to workers during 2026 op",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "efit manager. The disclosure must be delivered in writing to a responsible plan fiduciary with the authority to enter, extend, or renew the contract. Under paragraphs (e",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": " by drug and pharmacy channel, or an objective methodology that allows the plan fiduciary to verify the calculation. The fiduciary status of the service provider and a f",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "ctive methodology that allows the plan fiduciary to verify the calculation. The fiduciary status of the service provider and a formal audit right permitting the plan to ",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "es in a machine-readable file upon request. Providers may not restrict the plan fiduciary's use of the disclosed information, except through reasonable confidentiality a",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "s not by itself make the contract unreasonable. The provider must give the plan fiduciary the correct information as soon as practicable and within 30 calendar days of l",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": " The Department also observed that participants frequently pay the full cost of prescription drugs until satisfying their annual deductibles. PBMs market cost-control mecha",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "t claw-backs and retained manufacturer fees be disclosed to the employer's plan fiduciary. The rule does not return that money to participants. An employer receiving thi",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "or and independent researchers disagree on whether transparency mandates reduce prescription spending. The Department expects that disclosing spread pricing, rebate retenti",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "lowly. Research on state-level transparency mandates is mixed. Ginger Scanlon's Prescription for Savings? Disclosure in the Drug Market examined employer-sponsored claims f",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "iduciaries and benefits consultants who need guidance on contract compliance or fiduciary liability under ERISA should consult the full text of the rule in the Federal R",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "s could see them earlier. The second trigger is an employer redesign. If a plan fiduciary finds substantial spread pricing or retained rebates and renegotiates the PBM c",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": " described here would change. Takeaway For 2026 open enrollment, workers should treat the DOL PBM fee disclosure rule as regulatory background rather than a factor a",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "anager (PBM) is a third-party intermediary hired by a health plan to manage its prescription drug benefit. The Department of Labor's rule defines PBM services functionally,",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "it Manager Fee Disclosure (91 FR 69092) CBO: Alternative Approaches to Reducing Prescription Drug Prices (Oct. 2024) CBO: S. 1339 Pharmacy Benefit Manager Reform Act cost e",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": ". 2024) CBO: S. 1339 Pharmacy Benefit Manager Reform Act cost estimate Scanlon, Prescription for Savings? Disclosure in the Drug Market (Dec. 20, 2024) Fiore, Can Transpare",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     }
+    ],
+    "rationale": "HIGH profile: legal-adjacent claims about which plans a federal regulation covers and when it applies, plus cost effects. Each was checked against the primary Federal Register text; risk terms such as prescription and fiduciary are the subject matter of the rule.",
+    "textSha256": "32936c4d6420d7428bc962d3f71e762df737ed8940dbefe40e9df866e51ae96a"
+   },
+   "verdict": "FAIL"
+  },
+  {
+   "checks": {
+    "datesAndSchema": {
+     "status": "PASS",
+     "evidence": "Updated date stays November 2, 2026 for a pointer paragraph; schema unchanged."
+    },
+    "linksAndIndexability": {
+     "status": "PASS",
+     "evidence": "Link to /guides/dol-pbm-fee-disclosure-rule/ present and resolves in the capture; canonical unchanged."
+    },
+    "renderedLayout": {
+     "status": "PASS",
+     "evidence": "Chrome via Playwright at 390px and 1280px: no horizontal page scroll, table in overflow-x auto container, no page errors."
+    },
+    "scopeAndExclusions": {
+     "status": "PASS",
+     "evidence": "Audit scope limited to the changed paragraph; no exclusions triggered."
+    },
+    "sourceSupport": {
+     "status": "PASS",
+     "evidence": "Sentence limited to large self-insured employer plans, verified against paragraph (b) and preamble 1.2.1."
+    },
+    "testingAndAttribution": {
+     "status": "PASS",
+     "evidence": "Only the inherited byline; no testing claim in the changed paragraph and forbiddenText absent."
+    },
+    "wholePageCoherence": {
+     "status": "PASS",
+     "evidence": "Read the Part D page around the inserted paragraph; the pointer fits the compare-and-switch section and contradicts nothing else."
+    }
+   },
+   "factualReview": {
+    "centralFacts": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) and preamble 1.2.1 coverage language; it now says large self-insured employer plan, matching the source. Rest of the page is unchanged and not contradicted."
+    },
+    "consequentialClaims": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) and preamble 1.2.1 coverage language; it now says large self-insured employer plan, matching the source. Rest of the page is unchanged and not contradicted."
+    },
+    "currentDetails": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) and preamble 1.2.1 coverage language; it now says large self-insured employer plan, matching the source. Rest of the page is unchanged and not contradicted."
+    },
+    "limitationsAndJurisdiction": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) and preamble 1.2.1 coverage language; it now says large self-insured employer plan, matching the source. Rest of the page is unchanged and not contradicted."
+    },
+    "primarySources": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) and preamble 1.2.1 coverage language; it now says large self-insured employer plan, matching the source. Rest of the page is unchanged and not contradicted."
+    },
+    "professionalReview": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) and preamble 1.2.1 coverage language; it now says large self-insured employer plan, matching the source. Rest of the page is unchanged and not contradicted."
+    },
+    "recommendationSupport": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) and preamble 1.2.1 coverage language; it now says large self-insured employer plan, matching the source. Rest of the page is unchanged and not contradicted."
+    },
+    "riskClassification": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) and preamble 1.2.1 coverage language; it now says large self-insured employer plan, matching the source. Rest of the page is unchanged and not contradicted."
+    },
+    "seoQuality": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) and preamble 1.2.1 coverage language; it now says large self-insured employer plan, matching the source. Rest of the page is unchanged and not contradicted."
+    },
+    "truthfulEvidence": {
+     "status": "PASS",
+     "evidence": "Compared the inserted sentence with the Federal Register paragraph (b) and preamble 1.2.1 coverage language; it now says large self-insured employer plan, matching the source. Rest of the page is unchanged and not contradicted."
+    }
+   },
+   "findings": [],
+   "fingerprint": "450b4c27c73c02550f723babcea169b6d1f2e72c228b566970d72ac559734d2f",
+   "path": "/guides/medicare-part-d-2027-premiums/",
+   "reviewBudget": {
+    "path": "reports/mindmap-pass/2026-11-12-xtrends-run/audit/admissions-v4/admission-2.json",
+    "sha256": "046d10edb4063a0e36353b2df30d325dfb7a64bd73dc513e1f1c3ed21a81a61a"
+   },
+   "reviewProfile": "high",
+   "riskAssessment": {
+    "consequentialClaims": [
+     {
+      "category": "legal",
+      "quote": "People who get drug coverage through a large self-insured employer plan are covered by a separate federal rule",
+      "reason": "Scope claim now matches paragraph (b) and preamble 1.2.1 (large self-insured plans)."
+     }
+    ],
+    "incidentalMentions": [
+     {
+      "quote": "t D 2027 Premiums Rise KFF projects the average monthly premium for stand-alone prescription drug plans (PDPs) will rise to $51 in 2027, up 50 percent from $34 in 2026. The",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "less predictable. Medicare.gov defines a copayment as a fixed dollar amount per prescription and coinsurance as a percentage of the drug cost. A 25 percent coinsurance char",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     },
+     {
+      "quote": "st a plan costs in a year when the full deductible is paid. Coinsurance on each prescription then adds to that total until out-of-pocket spending reaches $2,400. No source ",
+      "reason": "Passage in a plain-language explainer of a Department of Labor disclosure rule; it reports what the rule or a cited source says and gives no personal medical, legal or investment recommendation."
+     }
+    ],
+    "rationale": "HIGH profile provisional for drug-coverage content, but the change under review is one pointer sentence about the scope of a federal rule.",
+    "textSha256": "db96826faeaa2368c8f6201eac5c94034b9aed6f8b400392a43688bff07c06af"
+   },
+   "verdict": "PASS"
+  }
+ ],
+ "snapshotSha256": "27c8aa900e1ba84e024e1945828eaefb80142653e064ecd1146b2a69e350792f"
+}

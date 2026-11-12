@@ -1,0 +1,651 @@
+No. 1-2011, 77 FR 1088 (Jan. 9, 2012). Section 2550.401c-1 also 
+issued under 29 U.S.C. 1101. Sections 2550.404a-2 and 2550.404a-3 
+also issued under sec. 657, Pub. L. 107-16, 115 Stat. 38. Sections 
+2550.404a-5, 2550.404c-1 and 2550.404c-5 also issued under 29 U.S.C. 
+1104. Sec. 2550.408b-1 also issued under 29 U.S.C. 1108(b)(1). Sec. 
+2550.408b-19 also issued under sec. 611, Pub. L. 109-280, 120 Stat. 
+780, 972. Sec. 2550.412-1 also issued under 29 U.S.C. 1112.
+
+
+0
+2. Amend Sec.  2550.408b-2 by revising paragraph (c)(2) to read as 
+follows:
+
+
+Sec.  2550.408b-2  General statutory exemption for services or office 
+space.
+
+* * * * *
+    (c) * * *
+    (2) Welfare plan disclosure. See Sec.  2550.408b-22.
+* * * * *
+
+0
+3. Add Sec.  2550.408b-22 to read as follows:
+
+
+Sec.  2550.408b-22  Compensation transparency; pharmacy benefit 
+management services.
+
+    (a) General. Section 408(b)(2) of the Employee Retirement Income 
+Security Act of 1974 (the Act) exempts from the prohibitions of section 
+406(a) of the Act payment by a plan to a party in interest, including a 
+fiduciary, for office space or any service (or a combination of 
+services) if such office space or service is furnished under a contract 
+or arrangement which is reasonable. No contract or arrangement for 
+services between a covered plan and a covered service provider, nor any 
+extension or renewal, is reasonable within the meaning of section 
+408(b)(2) of the Act unless, in addition to meeting the general 
+requirements in Sec.  2550.408b-2, the requirements of section 
+408(b)(2)(B) of the Act are met. This section implements section 
+408(b)(2)(B) of the Act with respect to the covered service providers 
+defined in this section. A contract or arrangement between a covered 
+plan and a covered service provider as defined in this section that 
+satisfies the requirements of this section also satisfies the 
+requirements of section 408(b)(2)(B) of the Act.
+
+[[Page 69192]]
+
+    (b) Covered plan. For purposes of this section, a ``covered plan'' 
+means a group health plan as defined in section 733(a) of the Act that 
+is offered by a specified large employer or that is a specified large 
+plan, each as defined in paragraph (m) of this section, other than:
+    (1) A group health plan in which all of the benefits are provided 
+exclusively through a contract or policy of insurance issued by a 
+health insurance issuer as defined in Sec.  2590.701-2 of this chapter; 
+and
+    (2) A group health plan established by a plan sponsor that is, or 
+that is affiliated with, a drug manufacturer, distributor, wholesaler, 
+pharmacy benefit manager, rebate aggregator (or other purchasing entity 
+designed to aggregate rebates).
+    (c) Covered service provider. (1) For purposes of this section, a 
+``covered service provider'' means a service provider that enters a 
+contract or arrangement with the covered plan and reasonably expects 
+$1,000 or more in compensation, direct or indirect, to be received in 
+connection with:
+    (i) Providing any pharmacy benefit management services, as defined 
+in paragraph (d) of this section, pursuant to the service contract or 
+arrangement, regardless of whether such services will be performed, or 
+such compensation received, by the covered service provider, an 
+affiliate, an agent, or a subcontractor; or
+    (ii) Providing advice, recommendations, or referrals regarding the 
+provision of pharmacy benefit management services, as defined in 
+paragraph (d) of this section, pursuant to the service contract or 
+arrangement, and is the entity described in paragraph (c)(1)(i) of this 
+section or an affiliate of such entity.
+    (2) No person or entity is a ``covered service provider'' solely on 
+the basis of providing services as an affiliate, an agent, or a 
+subcontractor of the covered service provider, with respect to 
+performing one or more of the services described in paragraph (c)(1)(i) 
+or (ii) of this section under the contract or arrangement with the 
+covered plan.
+    (3) Nothing in this section requires disclosure of the compensation 
+of an individual who is an officer, director, employee, or partner of a 
+covered service provider, an affiliate, an agent or a subcontractor, 
+received for their duties performed as set forth in their job 
+description or as expected in their role in connection with the 
+provision of pharmacy benefit management services described in 
+paragraph (d) of this section.
+    (d) Pharmacy benefit management services--(1) General. For purposes 
+of this section, the term ``pharmacy benefit management services'' 
+means services necessary for the management or administration of a 
+covered plan's prescription drug benefits (including the covered plan's 
+provision of prescription drugs through the plan's medical benefit), 
+regardless of whether the person, business, or entity performing the 
+service identifies itself as a ``pharmacy benefit manager.''
+    (2) Examples. Pharmacy benefit management services include but are 
+not limited to:
+    (i) Acting as a negotiator or aggregator of rebates, fees, 
+discounts, and other price concessions for prescription drugs.
+    (ii) Establishing or maintaining prescription drug formularies.
+    (iii) Establishing or maintaining pharmacy networks, through 
+contract or otherwise, including a mail order pharmacy, a specialty 
+pharmacy, a retail pharmacy, a nursing home pharmacy, a long-term care 
+pharmacy, and an infusion or other outpatient pharmacy, to provide 
+prescription drugs.
+    (iv) Performing utilization review and management, including the 
+instituting or processing of prior authorization requests for drugs, 
+step therapy protocols, patient compliance analyses, conducting 
+therapeutic intervention, and administering generic and biosimilar 
+substitution programs.
+    (v) In conjunction with any of these other services, processing and 
+payment of claims for prescription drugs; adjudicating appeals or 
+grievances related to the covered plan's prescription drug benefits; 
+recordkeeping related to the covered plan's prescription drug benefits; 
+or performing regulatory compliance with respect to the covered plan's 
+prescription drug benefits under the service contract or arrangement.
+    (e) Initial disclosure requirements. A covered service provider 
+shall disclose to a responsible plan fiduciary, in writing, the 
+following information in paragraphs (e)(1) through (9) of this section, 
+not later than the date that is reasonably in advance of the date on 
+which the service contract or arrangement is entered, and extended or 
+renewed (for extensions and renewals, 90 calendar days in advance is 
+deemed to be a reasonable period of time):
+    (1) Description of services. A description of each pharmacy benefit 
+management service, or of the advice, recommendations, or referrals 
+regarding the provision of pharmacy benefit management services, to be 
+provided to the covered plan pursuant to the service contract or 
+arrangement.
+    (2) Direct compensation. A description of the amount of all direct 
+compensation, both in the aggregate and by service, that the covered 
+service provider, an affiliate, an agent, or a subcontractor reasonably 
+expects to receive on a semiannual (or at the request of the covered 
+plan, quarterly) basis in connection with services under the service 
+contract or arrangement. For purposes of this paragraph (e)(2), the 
+term ``direct compensation'' means compensation received directly from 
+a covered plan or from the plan sponsor on behalf of the plan 
+(regardless of whether such compensation is paid from plan assets). An 
+example is an administrative fee calculated on a per-participant, per-
+month basis. In the case of a bundled service or aggregated 
+compensation arrangement, the description must include a reasonable and 
+good faith allocation of the compensation associated with each service 
+in the bundle.
+    (3) Indirect compensation. A description of the following, which 
+shall include compensation based on a structure of incentives not 
+solely related to the contract or arrangement with the covered plan:
+    (i) Manufacturer payments. A description of the amount of any 
+rebate, fee, alternative discount or other remuneration, both in the 
+aggregate and for each drug on the formulary, reasonably expected to be 
+received from any drug manufacturer, distributor, wholesaler, or rebate 
+aggregator (or other purchasing entity designed to aggregate rebates), 
+by the covered service provider, an affiliate, an agent, or a 
+subcontractor in connection with the service contract or arrangement, 
+for the semiannual period (or quarter):
+    (A) For claims incurred during the period; and
+    (B) Related to utilization of such drug or spending on such drug 
+during the period, specifying both the amount that is reasonably 
+expected to be passed on to the covered plan and, if applicable, plan 
+sponsor and the amount that will be retained by the covered service 
+provider, an affiliate, an agent, or a subcontractor.
+    (ii) Spread compensation. (A) A list of drugs on the formulary and 
+with respect to each such drug on such list:
+    (1) The contracted compensation to be paid by the covered plan for 
+each drug (identified by the National Drug Code) to the covered service 
+provider, an affiliate, an agent, or a subcontractor on behalf of the 
+covered plan;
+    (2) The contracted compensation to be paid to the pharmacy by the 
+covered service provider, an affiliate, an agent, or a subcontractor on 
+behalf of the covered plan for each drug (identified by the National 
+Drug Code); and
+
+[[Page 69193]]
+
+    (3) For each drug, the difference between the amount to be paid 
+under paragraph (e)(3)(ii)(A)(1) of this section and the amount paid 
+under paragraph (e)(3)(ii)(A)(2) of this section (spread compensation);
+    (B) A description of the amount of spread compensation reasonably 
+expected to be received by the covered service provider, an affiliate, 
+an agent, or a subcontractor in connection with the service contract or 
+arrangement, for claims filed during each semiannual period (or 
+quarter) both in the aggregate and for each drug on the formulary, and 
+for each pharmacy channel (i.e., retail, mail order, and specialty 
+pharmacy); and
+    (C) A description of arrangements, incentives, contractual 
+provisions, and policies that will be implemented under the service 
+contract or arrangement that direct patients to pharmacies that are 
+affiliates of the covered service provider.
+    (iii) Pharmacy recoupment. A description of the amount of copay 
+claw-back compensation and any other retroactive adjustment to pharmacy 
+reimbursement reasonably expected to be recouped from a pharmacy by a 
+covered service provider, an affiliate, an agent, or a subcontractor in 
+connection with prescription drugs dispensed under the service contract 
+or arrangement for each semiannual period (or quarter), specifying the 
+anticipated total number of transactions resulting in recoupment. For 
+purpose of this paragraph (e)(3)(iii), copay claw-back compensation 
+means the dollar amount of the difference between a copayment or 
+coinsurance amount paid to the pharmacy by a plan participant or 
+beneficiary and the reimbursement to the pharmacy.
+    (iv) Price protection agreements. A description of any inflation 
+protection or price protection agreements that the covered service 
+provider, an affiliate, an agent, or a subcontractor has entered with 
+any drug manufacturer, distributor, wholesaler, or rebate aggregator 
+(or other purchasing entity designed to aggregate rebates), in 
+connection with prescription drugs dispensed under the service contract 
+or arrangement, specifying the amount reasonably expected to be 
+retained by the covered service provider, an affiliate, an agent, or a 
+subcontractor in connection with each such inflation protection or 
+price protection contract or arrangement for each semiannual period (or 
+quarter):
+    (A) For claims incurred during the period; and
+    (B) That is related to utilization of such drug or spending on such 
+drug during the period, and the amount that will be passed on to the 
+plan and, if applicable, plan sponsor.
+    (4) Compensation for termination of service contract or 
+arrangement. A description of any compensation that the covered service 
+provider, an affiliate, an agent, or a subcontractor reasonably expects 
+to receive in connection with termination of the service contract or 
+arrangement, and how any prepaid amounts will be calculated and 
+refunded upon such termination.
+    (5) Description of other compensation. To the extent not already 
+disclosed under paragraphs (e)(1) through (4) of this section--
+    (i) A description of any compensation that the covered service 
+provider, an affiliate, an agent, or a subcontractor reasonably expects 
+to receive in connection with the service contract or arrangement for 
+the semiannual period (or quarter), regardless of whether such 
+compensation is paid regularly or irregularly or from plan assets or is 
+subject to any contingency or other condition;
+    (ii) The identification of the payer of such compensation;
+    (iii) An identification of the services for which such compensation 
+will be received; and
+    (iv) A description of the arrangement between the payer and the 
+covered service provider, an affiliate, an agent, or a subcontractor, 
+as applicable, pursuant to which such compensation is paid.
+    (6) Description of formulary placement incentives. (i) A 
+description of any formulary placement incentives and arrangements that 
+the covered service provider, an affiliate, an agent, or a 
+subcontractor has entered with any drug manufacturer in connection with 
+the service contract or arrangement, along with an explanation of how 
+the incentives and arrangements affect services to and are aligned with 
+the interests of the plan and/or its participants and beneficiaries 
+(e.g., incentives or arrangements are to control prescription drug 
+costs, provide clinically superior drugs, or both).
+    (ii) For any drug on the formulary with respect to which the 
+covered service provider, an affiliate, an agent, or a subcontractor 
+reasonably expects to receive any payment by the manufacturer or 
+aggregator in connection with the service contract or arrangement (and 
+that is not passed through to the plan), an identification of any 
+reasonably available therapeutically equivalent alternatives (including 
+biosimilar biological products), and the reason for omitting the 
+alternatives from the formulary.
+    (iii) If the covered service provider, an affiliate, an agent, or a 
+subcontractor retains authority to modify the formulary during the term 
+of the service contract or arrangement, such as by adding or deleting 
+drugs or changing their tiering, an explanation of the reasons for 
+retaining such authority, the expected frequency of such changes, and 
+that the responsible plan fiduciary will be notified reasonably in 
+advance of any modifications that, individually or in the aggregate, 
+are reasonably expected to have a material impact on the reasonableness 
+of compensation under the service contract or arrangement, as well as 
+the covered plan's right to terminate the service contract or 
+arrangement on reasonably short notice under the circumstances. For 
+purposes of this paragraph (e)(6)(iii), the term ``material'' means an 
+amount that is 5 percent or more, or such lower percentage or dollar 
+amount as may be agreed to by the responsible plan fiduciary and set 
+forth in writing in the contract or arrangement, of the aggregate 
+compensation (on a semiannual basis, or at the request of the covered 
+plan, quarterly basis) disclosed pursuant to paragraph (e)(3)(i) of 
+this section, adjusted for any increases previously disclosed under 
+this paragraph (e)(6).
+    (7) Drug pricing methodology. A description of the net price per 
+course of treatment or single fill, such as a 30-day supply or 90-day 
+supply, to the covered plan of each drug on the formulary, as defined 
+by National Drug Code, after rebates, fees, alternative discounts, or 
+other remuneration received from drug manufacturers, distributors, 
+wholesalers, or rebate aggregators (or other purchasing entities 
+designed to aggregate rebates), for each pharmacy channel, expressed as 
+a monetary amount. If a monetary amount is not ascertainable, the 
+covered service provider must disclose the methodology used by the 
+covered service provider, an affiliate, an agent, or a subcontractor, 
+under the service contract or arrangement, to determine the net price 
+per course of treatment or single fill, the covered plan will pay for 
+each drug on the formulary, for each pharmacy channel, along with an 
+objective means to verify the accuracy.
+    (8) Statement of fiduciary status. If applicable, a statement that 
+the covered service provider, an affiliate, an agent, or a 
+subcontractor will provide, or reasonably expects to provide, services 
+pursuant to the service contract or arrangement directly to the covered 
+plan as a fiduciary (within the meaning of section 3(21) of the Act).
+    (9) Statement of audit right. A statement of the covered plan's 
+right to
+
+[[Page 69194]]
+
+the audit described in paragraph (j) of this section and the procedures 
+for requesting such an audit.
+    (f) [Reserved]
+    (g) Semiannual disclosure requirements. A covered service provider 
+shall disclose to a responsible plan fiduciary, in writing, on a 
+semiannual basis (or at the request of the covered plan, quarterly) no 
+later than 30 calendar days after the end of each six-month period or 
+quarter beginning on the date the service contract or arrangement is 
+entered, the following information with respect to the preceding six-
+month period (or quarter):
+    (1) Direct compensation. A description of all direct compensation 
+(within the meaning of paragraph (e)(2) of this section), both in the 
+aggregate and by service, that the covered service provider, an 
+affiliate, an agent, or a subcontractor received or reasonably expects 
+to receive for the semiannual period (or quarter) in connection with 
+services under the service contract or arrangement. In the case of a 
+bundled service or aggregated compensation arrangement, the description 
+must include a reasonable and good faith allocation of the compensation 
+associated with each service in the bundle.
+    (2) Indirect compensation. A description of the following, which 
+shall include compensation based on a structure of incentives not 
+solely related to the contract or arrangement with the covered plan:
+    (i) Manufacturer payments. A description of all rebates, fees, 
+alternative discounts or other remuneration, both in the aggregate and 
+for each drug on the formulary, received or reasonably expected to be 
+received from any drug manufacturer, distributor, wholesaler, or rebate 
+aggregator (or other purchasing entity designed to aggregate rebates), 
+by the covered service provider, an affiliate, an agent, or a 
+subcontractor in connection with the service contract arrangement for 
+the semiannual period (or quarter):
+    (A) For claims incurred during the period; and
+    (B) That are related to utilization of such drug or spending on 
+such drug during such period, specifying both the amount passed on to 
+the plan and, if applicable, plan sponsor and the amount retained by 
+the covered service provider, an affiliate, and agent, or a 
+subcontractor.
+    (ii) Spread compensation. (A) A list of drugs for which a claim was 
+filed during the semiannual period or quarter, and with respect to each 
+drug on the list:
+    (1) The contracted compensation paid by the covered plan for each 
+drug (identified by the National Drug Code) to the covered service 
+provider, an affiliate, an agent, or a subcontractor on behalf of the 
+covered plan;
+    (2) The contracted compensation paid to the pharmacy by the covered 
+service provider, an affiliate, an agent, or a subcontractor on behalf 
+of the covered plan for each drug (identified by the National Drug 
+Code); and
+    (3) For each such claim, the difference between the amount paid 
+under paragraph (g)(2)(ii)(A)(1) of this section and the amount paid 
+under paragraph (g)(2)(ii)(A)(2) of this section (spread compensation); 
+and
+    (B) A description of the amount of all spread compensation (within 
+the meaning of paragraph (e)(3)(ii) of this section) received for the 
+semiannual period (or quarter) by the covered service provider, an 
+affiliate, an agent, or a subcontractor in connection with the service 
+contract or arrangement, both in the aggregate and for each drug, and 
+for each pharmacy channel (i.e., retail, mail order, and specialty 
+pharmacy).
+    (iii) Pharmacy recoupment. A description of all amounts of copay 
+claw-back compensation (as described in paragraph (e)(3)(iii) of this 
+section) and any other retroactive adjustment to pharmacy reimbursement 
+recouped for the semiannual period (or quarter) from a pharmacy by a 
+covered service provider, an affiliate, an agent, or a subcontractor in 
+connection with prescription drugs dispensed under the service contract 
+or arrangement, specifying the total number of transactions resulting 
+in recoupment.
+    (iv) Price protection agreements. A description of all amounts 
+received or reasonably expected to be received from a drug 
+manufacturer, distributor, wholesaler, or rebate aggregator (or other 
+purchasing entity designed to aggregate rebates), by the covered 
+service provider, an affiliate, an agent, or a subcontractor for the 
+semiannual period (or quarter):
+    (A) For claims incurred during the period; and
+    (B) That is related to the utilization of such drug or spending on 
+such drug during the period pursuant to any inflation protection or 
+price protection agreements that the covered service provider, an 
+affiliate, an agent, or a subcontractor entered with any drug 
+manufacturer, distributor, wholesaler, or rebate aggregator (or other 
+purchasing entity designed to aggregate rebates), in connection with 
+prescription drugs dispensed under the service contract or arrangement, 
+specifying both the amount passed on to the plan and, if applicable, 
+plan sponsor and the amount retained by the covered service provider, 
+an affiliate, and agent, or a subcontractor.
+    (3) Other compensation. To the extent not already disclosed under 
+paragraph (g)(1) or (2) of this section--
+    (i) A description of any compensation that the covered service 
+provider, an affiliate, an agent, or a subcontractor received or 
+reasonably expects to receive in connection with services under the 
+service contract or arrangement for the semiannual period (or quarter), 
+regardless of whether such compensation is paid regularly or 
+irregularly or from plan assets or is subject to any contingency or 
+other condition;
+    (ii) The identification of the payer of indirect compensation;
+    (iii) An identification of the services for which indirect 
+compensation was received; and
+    (iv) A description of the arrangement between the payer and the 
+covered service provider, an affiliate, an agent, or a subcontractor, 
+as applicable, pursuant to which such compensation was paid.
+    (4) Overage explanation. If any category of compensation to the 
+covered service provider, an affiliate, an agent, or a subcontractor 
+described in this paragraph (g), in the aggregate, materially exceeds 
+the corresponding semiannual (or quarterly) estimate described in 
+paragraph (e) of this section, an identification of the amount of the 
+overage (in the aggregate) and the reason for the overage. For purposes 
+of this paragraph (g)(4), the term ``materially'' means 5 percent or 
+more, or such lower percentage or dollar amount as may be agreed to by 
+the responsible plan fiduciary and set forth in writing in the contract 
+or arrangement.
+    (5) Statement of fiduciary status. To the extent not previously 
+disclosed under paragraph (e) of this section, if applicable, a 
+statement that the covered service provider, an affiliate, an agent, or 
+a subcontractor will provide, or reasonably expects to provide, 
+services pursuant to the service contract or arrangement directly to 
+the covered plan as a fiduciary (within the meaning of section 3(21) of 
+the Act).
+    (6) Statement of audit right. A statement of the covered plan's 
+right to the audit described in paragraph (j) of this section and the 
+procedures for requesting such an audit.
+    (h) [Reserved]
+    (i) Information on request. (1) Upon the written request of the 
+responsible plan fiduciary, the covered service
+
+[[Page 69195]]
+
+provider must furnish any other information relating to the contract or 
+arrangement that is required for the covered plan to comply with the 
+reporting and disclosure requirements of Title I of the Act, the 
+regulations in this chapter, and forms and schedules issued under Title 
+I.
+    (2) The covered service provider must disclose the information 
+required by paragraph (i)(1) of this section reasonably in advance of 
+the date upon which such responsible plan fiduciary states that it must 
+comply with the applicable reporting or disclosure requirement, unless 
+such disclosure is precluded due to extraordinary circumstances beyond 
+the covered service provider's control, in which case the information 
+must be disclosed as soon as practicable.
+    (j) Right to audit--(1) Frequency and scope. Not less than once per 
+year, at the written request of the covered plan, the covered service 
+provider shall allow for an audit of the covered service provider for 
+accuracy of any disclosure made to comply with this section.
+    (2) Auditor. A responsible plan fiduciary of the covered plan shall 
+have the right to select an auditor. The covered service provider shall 
+not impose any limitations on the selection of such auditor.
+    (3) Provision of information. The covered service provider shall 
+make available to the auditor all records, claims and transaction-level 
+data, and other information reasonably necessary to confirm the 
+accuracy of any disclosure made to comply with this section, including 
+contracts with retail pharmacies, drug manufacturers, and rebate 
+aggregators, subject to reasonable confidentiality agreements to 
+prevent redisclosure of such information and to limit use of such 
+information for purposes related to the covered plan's contract or 
+arrangement.
+    (4) Fees. The covered plan shall bear responsibility for all 
+expenses related to the selection and retention of the auditor. The 
+covered service provider shall bear the cost of providing the requested 
+information.
+    (5) Timing. The covered service provider shall confirm receipt of a 
+request for an audit under this section no later than ten (10) business 
+days after the information is requested. The covered service provider 
+shall provide the information required under paragraph (j)(3) of this 
+section within a commercially reasonable period but in no event later 
+than 60 calendar days absent extraordinary circumstances beyond their 
+control.
+    (6) Restrictions. The covered service provider may not impose 
+conditions that would restrict the covered plan's right to conduct an 
+audit under this section, including restrictions on the period of the 
+audit, the location of the audit, or the number of records to be 
+provided, except that the scope of the audit is limited to the period 
+covered by the disclosures under this section.
+    (7) Information from affiliates and subcontractors. The covered 
+service provider shall be responsible for providing such auditor with 
+the information required under paragraph (j)(3) of this section that is 
+owned or held by an affiliate, an agent, or a subcontractor of the 
+covered service provider.
+    (k) Manner of disclosure--(1) General. All disclosures under this 
+section must be clear and concise, free of misrepresentations, and 
+contain sufficient specificity to permit evaluation of the 
+reasonableness of the service contract or arrangement. For example, the 
+Department will consider the use of generic industry terms, jargon, or 
+legalese, without definition, to lack the sufficient specificity 
+required under the preceding sentence unless the language in question 
+specifically refers to objectively determinable definitions, standards, 
+or other similar guidelines, that are publicly available or will be 
+provided by the covered service provider to the responsible plan 
+fiduciary free of charge and within a reasonable period of time 
+following the request.
+    (2) Descriptions of compensation. Descriptions of compensation or 
+amounts required under this section must be expressed as a monetary 
+amount (e.g., $1,000) and may be estimated to the extent that the 
+actual amount is not reasonably ascertainable but shall contain 
+sufficient information and specificity to permit evaluation of the 
+reasonableness of the compensation received by the covered service 
+provider, an affiliate, an agent, or a subcontractor. Estimates shall 
+be grounded in good faith assumptions based on contractually defined 
+methodologies, historical utilization and rebate experience, or other 
+information reasonably available at the time of disclosure.
+    (3) Machine-readability format. Upon request of a responsible plan 
+fiduciary of a covered plan, descriptions of compensation required 
+under this section must also be provided, within a reasonable time 
+after such request, in a standard machine-readable file. For purposes 
+of this paragraph (k)(3), ``machine-readable file'' means a digital 
+representation of data or information in a file that can be imported or 
+read by a computer system for further processing without human 
+intervention, while ensuring no semantic meaning is lost. Drugs must be 
+referred to using an industry standard name and include a useful, non-
+proprietary identifier such as the National Drug Code, promulgated by 
+the U.S. Food and Drug Administration.
+    (4) Confidentiality agreements. (i) Except as provided in paragraph 
+(j)(3) of this section, the covered service provider and its 
+affiliates, agents, and subcontractors may not impose restrictions on 
+the covered plan's use of disclosures required under this section, or 
+the contract or arrangement described in paragraph (c)(1) of this 
+section, except that the covered contract or arrangement may require 
+the responsible plan fiduciary to require third parties to whom it 
+rediscloses such information and any subcontractors of those third 
+parties to execute reasonable confidentiality agreements preventing 
+redisclosure by such parties and limiting use of such information to 
+purposes related to the covered plan's contract or arrangement.
+    (ii) Neither this paragraph (k)(4) nor paragraph (j)(3) of this 
+section restrict a covered plan, auditor, or a third party hired by the 
+plan, or their subcontractors, from sharing information with State or 
+Federal Government regulators or with legal counsel, even if the 
+activities of those entities are unrelated to the purpose of a covered 
+plan's contract or arrangement.
+    (l) Disclosure errors. No service contract or arrangement will fail 
+to be reasonable under this section solely because the covered service 
+provider, acting in good faith and with reasonable diligence, makes an 
+error or omission in disclosing the information required pursuant to 
+paragraph (e), (g), or (j) of this section, provided that the covered 
+service provider discloses the correct information to the responsible 
+plan fiduciary as soon as practicable, but not later than 30 calendar 
+days from the date on which the covered service provider knows of such 
+error or omission.
+    (m) Definitions--(1) Affiliate. A person's or entity's 
+``affiliate'' directly or indirectly (through one or more 
+intermediaries) controls, is controlled by, or is under common control 
+with such person or entity; or is an officer, director, or employee of, 
+or partner in, such person or entity. Unless otherwise specified, an 
+``affiliate'' in this section refers to an affiliate of the covered 
+service provider.
+    (2) Agent. An ``agent'' is any person or entity authorized (whether 
+that authorization is expressed or implied) to
+
+[[Page 69196]]
+
+represent or act on behalf of another person or entity. Unless 
+otherwise specified, an ``agent'' in this section refers to an agent of 
+the covered service provider.
+    (3) Compensation. The term ``compensation'' means anything of 
+monetary value but does not include any item or service valued at $250 
+or less, in the aggregate, during the term of the service contract or 
+arrangement.
+    (4) Responsible plan fiduciary. A ``responsible plan fiduciary'' is 
+a fiduciary with authority to cause the covered plan to enter, extend, 
+or renew the service contract or arrangement.
+    (5) Subcontractor. A ``subcontractor'' is any person or entity (or 
+an affiliate of such person or entity) that is not an affiliate of the 
+covered service provider and that, pursuant to a contract or 
+arrangement with the covered service provider or an affiliate, 
+reasonably expects to receive $1,000 or more in compensation for 
+performing one or more services described pursuant to paragraph (d) of 
+this section provided for by the service contract or arrangement with 
+the covered plan.
+    (6) Specified large employer. The term ``specified large employer'' 
+means, in connection with a group health plan established or maintained 
+by a single employer, with respect to a calendar year, an employer who 
+employed an average of at least 100 employees on business days during 
+the preceding calendar year and who employs at least 1 employee on the 
+first day of the calendar year. Whether an employer is a specified 
+large employer shall be determined in accordance with the rules for 
+counting employees and employer aggregation under section 4980H of the 
+Internal Revenue Code and its implementing regulations at 26 CFR 
+54.4980H.
+    (7) Specified large plan. The term ``specified large plan'' means a 
+group health plan established or maintained by a plan sponsor described 
+in 29 U.S.C. 1002(16)(B)(ii) or (iii) that had an average of at least 
+100 participants on business days during the preceding plan year. 
+Whether a group health plan is a specified large plan is determined by 
+taking the sum of the total number of participants (not including 
+beneficiaries) for each calendar month in the preceding plan year, and 
+dividing by 12. The result, if not a whole number, is then rounded to 
+the next lowest whole number.
+    (n) Exemption for responsible plan fiduciary--(1) General. Pursuant 
+to section 408(a) of the Act, the restrictions of section 406(a)(1)(C) 
+and (D) of the Act shall not apply to a responsible plan fiduciary, 
+notwithstanding any failure by a covered service provider to meet the 
+requirements in paragraphs (e) through (l) of this section, if the 
+following conditions are met:
+    (i) The responsible plan fiduciary did not know that the covered 
+service provider failed or would fail to meet the requirements in 
+paragraphs (e) through (l) of this section and reasonably believed that 
+such requirements had been met.
+    (ii) The responsible plan fiduciary, upon discovering that the 
+covered service provider failed to meet any requirement in paragraphs 
+(e) through (l) of this section, requests in writing that the covered 
+service provider correct the failure, e.g., to furnish required 
+information or comply with the audit requirement.
+    (iii) If the covered service provider fails to comply with the 
+written request described in paragraph (n)(1)(ii) of this section 
+within 90 calendar days of the request, the responsible plan fiduciary 
+notifies the Secretary of the covered service provider's failure, in 
+accordance with paragraphs (n)(2) and (3) of this section.
+    (2) Notice content. The notice to the Secretary shall contain--
+    (i) The name of the covered plan;
+    (ii) The plan number used for the annual report on the covered 
+plan;
+    (iii) The plan sponsor's name, address, and employer identification 
+number;
+    (iv) The name, address, and telephone number of the responsible 
+plan fiduciary;
+    (v) The name, address, phone number, and, if known, employer 
+identification number of the covered service provider;
+    (vi) A description of the services provided to the covered plan;
+    (vii) A description of the covered service provider's failure;
+    (viii) The date on which the corrective action described in 
+paragraph (n)(1)(ii) of this section was requested in writing from the 
+covered service provider; and
+    (ix) A statement as to whether the covered service provider 
+continues to provide services to the plan.
+    (3) Notice timing. The notice described in paragraph (n)(2) of this 
+section shall be filed with the Department not later than 30 calendar 
+days following the earlier of:
+    (i) The covered service provider's refusal to correct the failure 
+identified in the written request described in paragraph (n)(1)(ii) of 
+this section; or
+    (ii) 90 calendar days after the written request described paragraph 
+(n)(1)(ii) of this section is made.
+    (4) Where to file notice. The notice described in paragraph (n)(2) 
+of this section shall be furnished to the U.S. Department of Labor 
+electronically in accordance with instructions published by the 
+Department; or may be sent to the following address: U.S. Department of 
+Labor, Employee Benefits Security Administration, Office of 
+Enforcement, P.O. Box 75296, Washington, DC 20013.
+    (5) Termination of service contract or arrangement. If the covered 
+service provider fails to comply with the written request under 
+paragraph (n)(1)(ii) of this section within 90 calendar days of such 
+request, the responsible plan fiduciary shall determine whether to 
+terminate or continue the service contract or arrangement consistent 
+with its duty of prudence under section 404 of the Act and shall 
+document the basis for that determination.
+    (o) Severability. If any provision of this section is held to be 
+invalid or unenforceable by its terms, or as applied to any person or 
+circumstance, or stayed pending further agency action, the provision 
+shall be construed so as to continue to give the maximum effect to the 
+provision permitted by law, unless such holding shall be one of 
+invalidity or unenforceability, in which event the provision shall be 
+severable from this section and shall not affect the remainder thereof.
+    (p) Effective and applicability dates. (1) This section is 
+effective January 4, 2027.
+    (2) This section shall apply to plan years beginning on or after 
+July 1, 2027.
+
+    Signed at Washington, DC, on this 28th day of October 2026.
+Daniel Aronowitz,
+Assistant Secretary, Employee Benefits Security Administration, U.S. 
+Department of Labor.
+[FR Doc. 2026-22306 Filed 10-30-26; 8:45 am]
+BILLING CODE 4510-29-P
+

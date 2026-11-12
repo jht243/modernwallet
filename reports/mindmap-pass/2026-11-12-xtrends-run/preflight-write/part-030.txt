@@ -1,0 +1,89 @@
+s source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-2-metadata.md, paragraph 31. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-2-metadata.md, paragraph 32. Use its exact text under this source/section context.]
+
+## Anti-AI language — applies to every sentence you ADD here (MANDATORY — added 2026-08-17)
+
+Body-text updates are additive prose, held to the **same** anti-AI-language bar as net-new pages. New substantive body content must pass the independent Phase 4 decision-evidence gate before delivery; pure mechanical/link edits keep their existing checks. Load `.claude/commands/_anti-ai-language.md` and apply its **WRITER** section to every sentence you add. If the file is missing, STOP and report it.
+
+## Updated-page date-bump rule (MANDATORY — workflow-wide, added 2026-07-12)
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-2-metadata.md, paragraph 34. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-2-metadata.md, paragraph 35. Use its exact text under this source/section context.]
+
+**Auditors / reviewer gates (adversarial review):** for EVERY existing page this run edited, verify the rendered "Last updated" date (and JSON-LD `dateModified`) now equals the run date. A stale date on an updated page is a **HARD FAIL** — the page does not pass until the date is bumped. The fix is a one-field update; never rewrite the page. Conversely, a bumped date on a page whose rendered content did NOT change is also a fail (date churn fakes freshness) — revert it.
+
+## Content standard — sequencing
+> **‼️ HARD SEQUENCING RULE — do not skip.** Do NOT treat this phase as complete, and do NOT show, serve, publish, or hand off anything you write here, until the Phase 4 audit has run on THIS exact output and PASSED. Any rewrite (including fixing an audit finding) voids a prior pass and requires re-auditing. See the PHASE 4 IS NOT OPTIONAL rule at the top of `.claude/commands/_content-standard.md`.
+
+If `.claude/commands/_content-standard.local.md` exists in this repo, its sections override the same-named sections of the standard; see PRECEDENCE at the top of the standard. Neutrality and paid-placement claims are governed by the standard's neutrality rules (Phase 4 hard-fails them).
+
+<!-- mindmap-execution-v1 -->
+Apply `_mindmap-execution.md` to substantive additions on existing pages: current approved manifest, relevant executed/source-based evidence, case/survey retrieval and writer flags. The same independent Phase 4 usefulness/replay/rendered checks apply. Pure metadata/link corrections retain their existing scope.
+<!-- /mindmap-execution-v1 -->
+
+**Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.
+
+[Source: .claude/commands/mindmap-pass/phase-6-internal-linking.md]
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 17. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 6. Use its exact text under this source/section context.]
+
+# Phase 6 — Internal linking
+
+<!-- chart-obligation: p6-inbound-links-and-nav -->
+> **Anchor text should match the destination's `reader_question` (chart col 10) where one exists.** Plan inbound internal links to every new Phase-3 page (**target ~3 links each** from genuinely relevant existing pages; relevance wins over count — 1–2 strong placements beat a forced link, and homepage header/nav is never touched, footer/body only) plus descriptive outbound internal links to related hubs/spokes (never `"click here"`). Bump rendered updated dates on existing pages edited for links per the repo's date-bump rule, without bumping sitemap `<lastmod>` on link-only touches.
+<!-- /chart-obligation -->
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 16. Use its exact text under this source/section context.]
+
+
+> **Anchor text should match the destination's `reader_question` (chart col 10) where one exists.** A page whose question is "how do I automate client onboarding" earns anchors that read like the question or its answer ("how to build the onboarding automation"), not the bare page title. This is the same principle as the page opener: link on what the reader wants, not on what the page is called.
+
+Execute the internal-linking rows from the chart, AND add inbound internal links to every page created in Phase 3 (**target ~3 links each** from relevant existing pages).
+
+**The ~3 is a target, not a quota — relevance wins over the count.** Only add a link where it is genuinely contextually relevant and reads naturally. If a new page has fewer than 3 *logical* placements, add the ones that fit and STOP — do not manufacture a forced, marginal, or over-optimized exact-match link just to hit the number, and never repeat the same anchor across unrelated pages. A page with 1–2 strong, relevant inbound links is better than 3 where one is a stretch. When you land below the target, note in the phase report which page and why (no more relevant placements exist) — that is an accepted outcome, not a failure.
+
+Guidance:
+- Use the framework `<Link>` with descriptive anchor text — never "click here".
+- **If linking from the homepage, do NOT update the header/nav.** Add links in the footer or within the body of the homepage instead.
+- Any update must maintain the existing UX/UI — do not break the page, clutter it, or make it look ugly. Match the surrounding design, spacing, and styling.
+- Only add links that are genuinely relevant in context; don't force them.
+- `git add`. Do not commit.
+
+## Reviewer gate (Explore subagent)
+- ☐ all chart internal-link rows actioned
+- ☐ every Phase-3 page has inbound links up to the ~3 target where relevant; any page below 3 has a noted reason (no more logical placements) — a relevant 1–2 is acceptable, a forced/marginal link to hit 3 is NOT
+- ☐ homepage header/nav untouched (links only in footer/body)
+- ☐ links use framework `<Link>` + descriptive anchors
+- ☐ no layout/UX breakage or visual clutter
+- ☐ links are contextually relevant
+
+Reject with specifics; retry rule 4 (2 attempts then STOP) applies.
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-2-metadata.md, paragraph 30. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-2-metadata.md, paragraph 31. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-2-metadata.md, paragraph 32. Use its exact text under this source/section context.]
+
+
+## Updated-page date-bump rule (MANDATORY — workflow-wide, added 2026-07-12)
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-2-metadata.md, paragraph 34. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-2-metadata.md, paragraph 35. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-2-metadata.md, paragraph 36. Use its exact text under this source/section context.]
+
+
+[Source: .claude/commands/_workflow-efficiency.md]
+<!-- fleet-resume-release-20261109 -->
+Owner-authorized fleet update, 2026-11-09. Apply the installed shared tools through this site's native workflow. Resume the same canonical job, source intake, chart approval, candidate and actual review history after retries. Pass the current task and open findings, retain retrievable history, and reuse unchanged rules only with actual continued access and understanding. Join each real worker's terminal result once. Use eligible correction scope for changed sections; an unchanged reviewed render needs publication checks, without another writing or editorial pass.
+
+Use this site's existing factual risk floor and 1/2/3 independent review ceiling. After its final allowed audit, automatically publish the exact latest reviewed candidate, retaining FAIL findings honestly as audit-limit release. Preserve full SEO, mechanical build/render/live/link checks, exclusions, ownership, required professional review and explicit client promises/holds. An editorial FAIL at the ceiling must not create another pass or a manual merge gate. Publication or reporting recovery retains the original reviews and counters.
+
+For competitor monitors, run the native detect/resume entry first. The installed competitor-handoff helper restores saved work before fresh discovery. For completed recovered reviews, use verify-pr
