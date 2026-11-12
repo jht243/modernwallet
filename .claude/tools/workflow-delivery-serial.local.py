@@ -14,7 +14,7 @@ from pathlib import Path
 import time
 
 
-def deliver(root, directory, number, preflight, timeout=30):
+def deliver(root, directory, number, preflight, timeout=5):
     if not isinstance(number, int) or number < 1:
         raise ValueError('Specify the actual positive original part number')
     deadline = time.monotonic() + timeout

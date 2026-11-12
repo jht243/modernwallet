@@ -7,12 +7,12 @@ import sys
 import time
 
 # The model transcript lags the live request. Measured in the live runtime: when
-# the first hook of a genuine batch starts, the tool_use rows of that message may
-# not be flushed yet; they appear together within ~2 seconds, still before the
-# first call executes (tool calls and their hooks run one after another). The
+# the first hook of a genuine 10-call batch starts, the tool_use rows of that
+# message may still be streaming (~10-12s for 10 calls on Sonnet), still before
+# the first call executes (tool calls and their hooks run one after another). The
 # guard polls boundedly for the companion rows; a lone singleton call never gains
 # a partner and is rejected when the window ends.
-WINDOW = float(os.environ.get("DELIVERY_PAIR_WINDOW", "8"))
+WINDOW = float(os.environ.get("DELIVERY_PAIR_WINDOW", "25"))
 POLL = 0.1
 MAX_GROUP = int(os.environ.get("DELIVERY_GROUP_SIZE", "10"))
 
