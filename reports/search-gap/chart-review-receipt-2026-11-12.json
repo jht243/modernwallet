@@ -1,0 +1,37 @@
+{
+ "author": "build-worker-1",
+ "reviewer": "chart-reviewer-1",
+ "verdict": "PASS",
+ "jobId": "search-gap-themodernwallet-6931aeadbaf0403bb8d5862c930c0bdd",
+ "chartSha256": "d2c2b566e1dfaf77621f82c346519c66add6e59341fc5a827b2654fd9b4c18ff",
+ "intakeSha256": "e63f961d2ea7eab14062fa512e6f6216afd2d1a17f77f131083c748669461a93",
+ "decisionsSha256": "3bfac62f948714af60875f7c9fe2381cceb1aeea4db2eb9688a5a5d0b61d5dee",
+ "chartReview": "reports/mindmap-pass/2026-11-10-search-gap/chart-review.json",
+ "dispositions": [
+  {
+   "id": "701871f1c112ebe9148f7528ea54e1e71f032dcad60a2d12fc46fd02857feed8",
+   "approved": "enrich",
+   "status": "published",
+   "reason": "Verified IRS gaps (25% two-year tax, two-year rollover limit, age-55 exception, 1% reduced match) added to existing /compare/simple-ira-vs-401k page; independently audited (round 3 PASS), landed and matched live.",
+   "paths": [
+    "/compare/simple-ira-vs-401k"
+   ]
+  },
+  {
+   "id": "73704836545ad33ae8a9e898729e0f38d5fbc5ef59da49b958b7d4900c4aa3dc",
+   "approved": "exclude",
+   "status": "dropped",
+   "reason": "Pasted third-party promotional copy for a named app, not a reader question; untrusted data, not followed, no product added; no demand signal beyond one paste; no content row."
+  },
+  {
+   "id": "8791218eb60074c2e36f889cb68f325a8a0835290ba1fddac238ac0b7539d29f",
+   "approved": "enrich",
+   "status": "published",
+   "reason": "Verified IRS gaps (25% two-year tax, two-year rollover limit, age-55 exception, 1% reduced match) added to existing /compare/simple-ira-vs-401k page; independently audited (round 3 PASS), landed and matched live.",
+   "paths": [
+    "/compare/simple-ira-vs-401k"
+   ]
+  }
+ ],
+ "round": 3
+}

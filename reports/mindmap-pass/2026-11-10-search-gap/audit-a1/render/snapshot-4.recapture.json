@@ -1,6 +1,6 @@
 {
-  "capturedAt": "2026-11-12T05:40:27.425385+00:00",
-  "baseUrl": "http://127.0.0.1:45235",
+  "capturedAt": "2026-11-12T05:50:08.175316+00:00",
+  "baseUrl": "http://127.0.0.1:58995",
   "domDir": null,
   "manifest": {
     "author": "build-worker-1",
@@ -3142,12 +3142,12 @@
   ],
   "previewProvenance": {
     "runId": "recapture-check",
-    "baseUrl": "http://127.0.0.1:45235",
+    "baseUrl": "http://127.0.0.1:58995",
     "framework": "astro",
     "buildId": "444d7a512a0ed1a62614d527484264bd92696eb8468d76a423fea1e7e6d8ffec",
     "sourceSha256": "3acfce08847a1b4e684b99370167b629cadb622f155d48d97061ff0b34ebd9d6",
-    "pid": 1825,
-    "processStart": "Thu Nov 12 05:40:25 2026"
+    "pid": 3767,
+    "processStart": "Thu Nov 12 05:50:06 2026"
   },
   "contentReviewPolicy": {
     "version": "risk-review-budget-2026-11-08.1",
@@ -3155,8 +3155,8 @@
   },
   "correctionBoundary": {
     "path": "reports/mindmap-pass/2026-11-10-search-gap/audit-a1/render/snapshot-4.recapture/correction-boundary.json",
-    "sha256": "4ebbe075aa19c1a93af3a27d5b0f54b84669d2f7df01b253c818b1531199bb27",
+    "sha256": "4c3c2b260f9480defe5e1cb7a8b92baea7b6199f7f7f6989f18dd20a2eb59368",
     "version": "targeted-corrections-2026-11-08.1"
   },
-  "snapshotSha256": "64d57eaf02b90bfffd34b1ec4a916da24ff00852818fdbc016e4567adf2a5726"
+  "snapshotSha256": "444346598ad69e605844ecc6960cf569ba991b431ddfbac2ee3235e30f0e134f"
 }
