@@ -1,0 +1,70 @@
+ none / partial / snippet-mismatch / cannibalized | create new content | /proposed-route | calculator — searchers want a personalized estimate | interactive tool | interactive tool | winnable (AI Overview) | 1/10 major platforms; AI Overview cites x.com, y.com |
+```
+- `Lever` uses exact canonical bucket wording (or `consolidation advisory` flag for cannibalized clusters).
+- `Format` / `Best medium` / `Resolved deliverable` are populated ONLY for `create new content` clusters (`n/a` otherwise), with the same capability-aware selection under `_mindmap-execution.md`; do not promise an infeasible asset.
+- **Every actionable cluster row here must ALSO appear as a row in the main action table** (same bucket + target) — the main table is the parseable handoff; this block is the human/manifest-facing view. The two must agree.
+- If no emerging clusters were found, write exactly: `No emerging clusters detected this run.` Do not invent clusters to fill the block.
+
+---
+
+## Duplicate-suppression gate (adversarial reviewer — runs after the table is built, BEFORE the chart is saved)
+
+The author of the chart does not clear its own duplicates. After the table is produced but before saving, spawn a read-only adversarial reviewer (Agent tool, `subagent_type: Explore`) that did NOT build the chart. Hand it the proposed rows + the repo, and have it independently:
+1. Check the commits (`git log -20 --stat` for topic context + `git log -p -- <target>` per row, and `reports/mindmap-pass/*.md`), without trusting the author's dedup. Also run `python3 scripts/mindmap/coverage_lookup.py --site-url <BASE_URL> --chart <draft chart>` yourself and check every row's `lookup:` claim against the tool's output — a row that names no match while the tool lists a page with the same reader intent, or that omits a `lookup:` entry, fails the gate. The tool runs the same everywhere (cloud included), so when no reviewer subagent can be spawned the orchestrator runs it inline and records that it did.
+2. For each row, decide whether the work is **already shipped** per the three-bucket duplicate definitions (page created / body section added / metadata rewritten for that term).
+3. Return `KEEP` or `DROP — already shipped in <SHA>`, SHA cited.
+4. **Cluster rows get TWO extra checks (Lens 2 integrity):**
+   - **Real evidence:** the cluster's member phrases must actually come from SEMRUSH/Autocomplete/the brief — not invented. A cluster built on unsupported phrases → `DROP — unsupported`.
+   - **Right lever:** verify no existing page is already the dedicated, intent-matched answer. If one is, `create new content` is wrong → `RECLASSIFY — <correct bucket>` (or `DROP` if fully served). Conversely, if a row enriches a page that isn't a reasonable home, `RECLASSIFY — create new content`.
+   - Every cluster row in the main table must have a matching row in the `## Emerging search patterns (clusters)` block (same bucket + target). A mismatch fails the gate.
+
+**Gate rule:** if the reviewer flags ANY row as already-shipped or unsupported, remove it from the table (and clusters block) and record it under exclusions. Apply any `RECLASSIFY` in BOTH the table and the block. Before dispatch, apply the independent chart review limit in `_mindmap-execution.md` to the original job and its existing rounds. The chart saves only once the reviewer confirms **zero** surviving rows duplicate shipped work, every cluster row is evidence-supported and correctly leveled, and table + block agree. A row without a cited SHA (or "no prior commits touch this file/route") is unverified and fails the gate. At the permitted limit retain unresolved findings and accept only an exact chart the reviewer actually approved.
+
+## After saving
+Print: `Chart saved to reports/mindmap-pass/<TODAY>.md ({N} proposed rows, {C} emerging clusters). Interpreted brief: <one line>.` Control returns to Phase 0, which loads this file, runs the staleness check (passes — brand new), and presents the manifest gate.
+
+<!-- mindmap-execution-v1 -->
+Follow `_mindmap-execution.md` to save the full structured approval manifest, complete inspected per-page briefs and link placements, and independent preparation review. Render the actual chart using `mindmap-gates.py`; no handwritten abbreviated substitute. Complete feasibility/source research first; do not claim Phase 3 execution has occurred.
+<!-- /mindmap-execution-v1 -->
+
+[Source: .claude/commands/mindmap-pass/phase-0-discover.md]
+[Repeated passage at this position: .claude/commands/_workflow-checkpoints.md, paragraph 4. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/_workflow-checkpoints.md, paragraph 5. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass.md, paragraph 4. Use its exact text under this source/section context.]
+
+# Phase 0 — Discover project facts + load chart
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-build-brief.md, paragraph 3. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass.md, paragraph 8. Use its exact text under this source/section context.]
+
+
+Before presenting the manifest, read available `reports/content-evidence.jsonl` outcomes under `_decision-evidence.md`, even when reusing an existing chart. Use them to explain proposed priorities within the requested scope; do not silently expand or replace an approved chart.
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-build-brief.md, paragraph 7. Use its exact text under this source/section context.]
+
+Auto-discover every project fact by inspecting the repo. Hardcode nothing; print what you find.
+
+- **BASE_URL** — from sitemap `<loc>`, the canonical logic, or JsonLd builders.
+- **Framework + deploy mode** — e.g. Next.js static export vs server. Static export = **no server-side 301s**; consolidation must use canonical, never `redirects()`.
+- **Canonical mechanism** — where `<link rel="canonical">` is emitted (often a shared Layout/Head). Note whether it's auto self-referential and whether a prop overrides it. Note any auto title-branding or description truncation.
+- **IndexNow key** — find `public/<32-hex>.txt` (filename = key, content = same key). If absent, note IndexNow will be skipped + flagged.
+- **Sitemaps** — list `public/sitemap*.xml`. Infer the route→file routing from existing `<loc>` entries. Note the `<url><loc>…</loc><lastmod>…</lastmod></url>` format.
+- **Page template + schema builders** — the strongest existing pillar page and the reusable SEO components / JsonLd builders it uses. New pages mirror these.
+- **Depth checker** — does `package.json` expose a `check-depth` script (i.e. `scripts/check_depth.mjs`, installed by `/new-site`)? Record yes/no. Phase 4's depth gate runs it when present and falls back to source-level word counting when absent. Do NOT create it here if it's missing — that is `/new-site`'s job at build time.
+- **CONTENT STANDARD** — read 2–3 of the highest-quality existing pages and extract voice, depth, claims discipline, structure, and CTA style. This derived profile is the quality bar Phases 3 and 5 must match. Print a short summary.
+- **Business / brand name** — the site's own brand name (from the `<title>` branding suffix, logo alt text, footer, `package.json`, schema.org `Organization`/`publisher`, or the About page). This is the `{BUSINESS_NAME}` value: Phase 3 substitutes it into the content-writing prompt wherever `{BUSINESS_NAME}` appears, so internal-link guidance names the right brand. If genuinely undiscoverable, fall back to the bare domain.
+- **Push target** — default to the repo's default branch unless conventions say otherwise.
+
+## Load the chart
+
+By the time Phase 0 runs, the chart already exists — Step 1 in the orchestrator (`phase-build-brief.md`) built it from the user's input brief (SEMRUSH-validated), OR the user passed an existing chart path. Phase 0 only needs to LOAD the right file. Selection rules, in order:
+
+1. **Argument path wins.** If the user passed a chart path as an argument, use that file exactly.
+2. **Today's chart.** Else use `reports/mindmap-pass/<TODAY>.md` (`<TODAY>` = `date +%Y-%m-%d`) — this is the file Step 1 just wrote.
+3. **Newest by filename date.** Else, list all `reports/mindmap-pass/*.md`, parse the `YYYY-MM-DD` from each filename, and pick the latest date **in the filename** (NOT by mtime — re-saving an old chart bumps mtime misleadingly).
+4. **Ambiguity → STOP and ask.** Tie on filename date, or a filename that doesn't parse as `YYYY-MM-DD.md` → STOP and list candidates. Do not guess.
+5. **Nothing to load → STOP.** If no chart exists, Step 1 should have built it. If it didn't (no input brief was provided), STOP: "No chart to load. Paste the text / attach the image / drop the news article or link describing what you want added, then re-run — or pass `/mindmap-pass <path/to/chart.md>`."
+

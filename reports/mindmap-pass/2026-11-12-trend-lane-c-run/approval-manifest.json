@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "jobId": "trend-lane-c-2026-11-12",
+  "author": "mindmap-build-worker",
+  "date": "2026-11-12",
+  "source": "trend-pass-auto Lane C 2026-11-12: top-10 GSC queries (7d to 2026-11-12) plus research pack, SEMRUSH-validated",
+  "interpretedBrief": "Our top GSC queries for the 7 days ending 2026-11-12 are 4 low-volume queries (one is a search operator) with 0 clicks; the research lanes found no trend and no new uncovered query, and left one HELD enrichment candidate on guides/utma-custodial-account-explained. Build only what this demand implies the site lacks. BUILD finds every query already served by an existing page and the held enrichment still not groundable from primary sources, so the outcome is a no-addition chart.",
+  "chartPath": "reports/mindmap-pass/2026-11-12-trend-lane-c.md",
+  "actions": [],
+  "newPageBriefs": [],
+  "preparation": {
+    "status": "PASS",
+    "readiness": {
+      "path": "reports/mindmap-pass/2026-11-12-trend-lane-c-run/readiness.md",
+      "sha256": "8f282d0c570d1bf97b98fb32cab3e911e5ddf81908c9f03fc0bfbdfa269650cc"
+    }
+  },
+  "evidenceFiles": [
+    {
+      "path": "reports/mindmap-pass/2026-11-12-trend-lane-c-run/source-brief.md",
+      "sha256": "d7058fcccc2951450d61485fc9cc998f6b096c48ad376dbc7ed83478fffe8f47"
+    },
+    {
+      "path": "reports/trend-pass/2026-11-12.pull.json",
+      "sha256": "689487605870a968eb8737fdd5301d6be86167b097f4f42250cdb49ea0350b21"
+    },
+    {
+      "path": "reports/trend-pass/2026-11-12.research.md",
+      "sha256": "bfe5590482b8972f04a986d905076715fffc260cd2ea1a5f0f46e4ea35c9f644"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-trend-lane-c.volumes.json",
+      "sha256": "ae2191eff919b6632ffd519fe069cd23eb4ca4bf2a1d090be4e249e3690d45f2"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-trend-lane-c.serp.json",
+      "sha256": "7774c8b3e188a51c945bba6d4a0c4b3744884ab9f8db459e6af019c023976f25"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-trend-lane-c.serp2.json",
+      "sha256": "c8f3e8de3364932d570e479d24e71b7cb534d9547b8e94e360aea3f4d91eb5e2"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-trend-lane-c.coverage.txt",
+      "sha256": "98209110c6ed11a25c187d02d5b2afc3260d8b7efb7fb35b5770ee7772383014"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-trend-lane-c.autocomplete.utma.csv",
+      "sha256": "f98efdd4bfd6899400e90ac30598d8ae49f9b7e0802b4d37542d54c61814cc5e"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-12-trend-lane-c.expand.utma.json",
+      "sha256": "5c56b10133cd77abe42c6f578a4812969583e5f7c2ad7e4a216209e0fbb65858"
+    }
+  ],
+  "candidateDispositions": [
+    {
+      "candidate": "site:themodernwallet.com",
+      "decision": "skip",
+      "reason": "Search operator, not a reader query; no intent to answer (source top-10)."
+    },
+    {
+      "candidate": "nerdwallet auto loan calculator",
+      "decision": "skip",
+      "reason": "Branded competitor query, 49,500/mo KD59 (SEMRUSH us 2026-11-12), SERP locked with AIO citing nerdwallet.com; /auto-loan/ hub and 7 spokes serve the generic intent; ledger DROPPED 2026-11-09 and 2026-11-10 (source top-10).",
+      "target": "/auto-loan/"
+    },
+    {
+      "candidate": "tax deferred growth calculator",
+      "decision": "skip",
+      "reason": "30/mo KD0; /taxable-vs-tax-deferred/ Taxable vs. Tax-Deferred Growth Calculator is the dedicated same-intent page (coverage lookup match 0.67); no new page (source top-10).",
+      "target": "/taxable-vs-tax-deferred/"
+    },
+    {
+      "candidate": "utma",
+      "decision": "skip",
+      "reason": "12,100/mo KD4; head served by guides/utma-custodial-account-explained plus compare pages; ledger DROPPED 2026-11-10 for a new page (source top-10).",
+      "target": "/guides/utma-custodial-account-explained/"
+    },
+    {
+      "candidate": "HELD enrichment: guides/utma-custodial-account-explained state age-of-majority table, what happens at 18/21, transfer or close a UTMA, 2 FAQs",
+      "decision": "defer",
+      "reason": "Real small gap, but the central claim (state termination ages) cannot be grounded from primary state statutes on this runner (CA/NY/Justia 403, FL 429, IL unreachable, TX/PA JS shell); aggregators barred by the YMYL guardrail; no data/sources copy. Ledger HELD, re-competes (source coverage/top-10).",
+      "target": "/guides/utma-custodial-account-explained/"
+    }
+  ],
+  "emergingClusters": "No emerging clusters detected this run.",
+  "exclusions": [
+    "site:themodernwallet.com: search operator, not a query.",
+    "nerdwallet auto loan calculator: DROP, branded, locked SERP, already dropped 2026-11-09 and 2026-11-10; generic intent served by /auto-loan/ hub and spokes.",
+    "tax deferred growth calculator: DROP, exists as /taxable-vs-tax-deferred/; 30/mo.",
+    "utma standalone page: DROP, exists (guides/utma-custodial-account-explained, compare/utma-vs-ugma, compare/529-vs-utma, guides/custodial-roth-ira-for-kids and others).",
+    "UTMA enrichment (state table, 18/21, transfer/close): HELD, state statutes not retrievable as text from this runner; not DROPPED. Re-competes next run.",
+    "Lens 3 vs/alternatives/pricing: no uncovered comparison; nerdwallet is branded on a locked SERP and UTMA comparisons (ugma, 529, roth, trump account) already exist.",
+    "Lens 3b model-launch overlay skipped per caller (not an AI-content repo)."
+  ],
+  "executionPlan": [
+    {
+      "phase": 1,
+      "action": "Skip: no consolidation rows; advisory only"
+    },
+    {
+      "phase": 2,
+      "action": "Skip: no metadata rows"
+    },
+    {
+      "phase": 3,
+      "action": "Skip: no new-content rows; no writer call"
+    },
+    {
+      "phase": 4,
+      "action": "Skip: nothing to audit"
+    },
+    {
+      "phase": 5,
+      "action": "Skip: no body rows; UTMA enrichment HELD"
+    },
+    {
+      "phase": 6,
+      "action": "Skip: no link rows"
+    },
+    {
+      "phase": 7,
+      "action": "Skip: no routes to add; nothing for IndexNow"
+    },
+    {
+      "phase": 8,
+      "action": "Print the summary table and continue"
+    },
+    {
+      "phase": 9,
+      "action": "No commit of site files; ledger rows only by Phase 5 of the caller"
+    }
+  ],
+  "publicationScope": {
+    "commit": false,
+    "push": false,
+    "liveVerification": false,
+    "indexNow": false
+  }
+}

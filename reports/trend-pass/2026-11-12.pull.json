@@ -1,0 +1,142 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window": {
+    "start": "2026-11-05",
+    "end": "2026-11-12",
+    "days": 7
+  },
+  "top_queries": [
+    {
+      "query": "site:themodernwallet.com",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "nerdwallet auto loan calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 75.5
+    },
+    {
+      "query": "tax deferred growth calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92
+    },
+    {
+      "query": "utma",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 94
+    }
+  ],
+  "coverage_queries": [
+    {
+      "query": "site:themodernwallet.com",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "nerdwallet auto loan calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 75.5
+    },
+    {
+      "query": "tax deferred growth calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92
+    },
+    {
+      "query": "utma",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 94
+    }
+  ],
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-retirement-accounts-for-self-employed/",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 1
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/",
+      "clicks": 0,
+      "impressions": 26,
+      "ctr": 0,
+      "position": 5.15
+    },
+    {
+      "page": "https://www.themodernwallet.com/portfolio/",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "position": 2.21
+    },
+    {
+      "page": "https://www.themodernwallet.com/",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 4.52
+    },
+    {
+      "page": "https://www.themodernwallet.com/investing/",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 5.09
+    },
+    {
+      "page": "https://www.themodernwallet.com/about/",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 2.95
+    },
+    {
+      "page": "https://www.themodernwallet.com/budget/",
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 6.55
+    },
+    {
+      "page": "https://www.themodernwallet.com/calculators/",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 8.29
+    },
+    {
+      "page": "https://www.themodernwallet.com/methodology/",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 4.1
+    },
+    {
+      "page": "https://www.themodernwallet.com/probate/",
+      "clicks": 0,
+      "impressions": 21,
+      "ctr": 0,
+      "position": 7.38
+    }
+  ],
+  "top10_pages_total_clicks": 1,
+  "top10_queries_total_clicks": 0
+}

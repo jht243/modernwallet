@@ -1,0 +1,183 @@
+{
+ "rows": [
+  {
+   "keyword": "utma",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.glenmede.com",
+    "www.fidelity.com",
+    "www.investopedia.com",
+    "google.com",
+    "www.thrivent.com",
+    "lohmlaw.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 8,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "Which is better, 529 or UTMA?",
+    "How does an UTMA account work?",
+    "What are the disadvantages of an UTMA account?",
+    "Do children pay taxes on UTMA?",
+    "How to avoid kiddie tax in UTMA?",
+    "Can I give my daughter $50,000 tax-free?"
+   ],
+   "related_searches": [
+    "UTMA vs 529",
+    "UTMA Vanguard",
+    "UTMA tax",
+    "UTMA UT Austin",
+    "UTMA rules",
+    "UTMA benefits",
+    "UTMA Fidelity",
+    "UTMA Schwab"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "8/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites www.glenmede.com, www.fidelity.com, www.investopedia.com, google.com",
+   "se_results_count": 129
+  },
+  {
+   "keyword": "utma age of majority by state",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "finaid.org",
+    "google.com",
+    "www.savingforcollege.com",
+    "www.experian.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "people_also_ask": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "What happens to an UTMA account when the minor turns 18?",
+    "Which is better for my child, a 529 plan or a custodial account?",
+    "What is the difference between UTMA and UGMA by state?",
+    "What is an UGMA account?",
+    "Do I need to report UTMA on my taxes?",
+    "Can I use UTMA to buy a car?"
+   ],
+   "related_searches": [
+    "Utma age of majority by state 2022",
+    "Utma age of majority by state california",
+    "UGMA vs UTMA",
+    "UTMA account",
+    "UTMA withdrawal rules",
+    "UTMA vs custodial account",
+    "How to open a UGMA account",
+    "UTMA vs Trump account"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "9/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites finaid.org, google.com, www.savingforcollege.com, www.experian.com",
+   "se_results_count": 178
+  },
+  {
+   "keyword": "tax deferred growth calculator",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "related_searches": 1
+   },
+   "paa": [],
+   "related_searches": [
+    "Tax deferred growth calculator fidelity",
+    "Tax deferred growth calculator s&p 500",
+    "Best tax deferred growth calculator",
+    "Tax deferred growth calculator mutual fund",
+    "If i invest $200 a month for 20 years calculator",
+    "$10,000 invested in S&P 500 calculator",
+    "Monthly investment calculator",
+    "5 year investment calculator"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "9/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present",
+   "se_results_count": 139
+  }
+ ],
+ "cost": "DataForSEO: 3 calls, $0.00630 of $2.00 budget"
+}

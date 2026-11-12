@@ -1,0 +1,14 @@
+[keyword_data] volume: using semrush (quality order semrush > dataforseo)
+[keyword_data] kd: using semrush (quality order semrush > dataforseo)
+[keyword_data] expand: using semrush (quality order semrush > dataforseo)
+{
+ "dataforseo": "ok (balance $25.702857999999992)",
+ "semrush": "ok",
+ "ahrefs": "off: excluded by KEYWORD_PROVIDERS",
+ "autocomplete": "ok",
+ "selected": {
+  "volume": "semrush",
+  "kd": "semrush",
+  "expand": "semrush"
+ }
+}

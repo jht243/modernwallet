@@ -1,0 +1,108 @@
+et/defer rules and do not misreport deferred work. Include file-hashed `renderedSnapshot` and `renderedReview` references from that same reviewer. Quantitative replays also include canonical `replaySha256`.
+
+```bash
+python3 .claude/tools/mindmap-gates.py audit-analysis --packet <RUN>/evidence/<slug>/evidence.json --review <RUN>/audit/<slug>-analysis.json --replay-output <RUN>/audit/<slug>-replay.json
+```
+
+Omit `--replay-output` for measured/source/client work without a deterministic calculation. Independently check any numerical derived claims separately. This gate supplements the existing `rendered-audit.py check/compare` and does not replace them. Missing evidence is a failure; changed outputs invalidate affected approvals. Keep the existing rework limit and publication/live-verification process.
+
+The terminal no-addition branch needs no new rendered capture, product run, asset, numerical packet or growth registration. Its existing evidence-backed independent chart decision suffices. If explicitly checking a saved no-addition note with this helper, use `basis: no-addition`, `author`, `route`, `readerQuestion`, `whyNoAddition`, `existingAnswer: {path, sha256}` and an independent `noAddition: {status: PASS, evidence}` decision bound to that note; the helper returns before render/replay requirements.
+
+## 4. Finish the selected useful asset in the approved run
+
+Use prose, a finite table, SVG, a genuine screenshot, an image/illustration, downloadable data or an interactive tool when that format improves the answer and available capabilities support it. Reuse components. Generated illustrations never prove product use. Build and audit the actual asset and its page within Phase 3/4; no placeholder, spec-only completion or future-human-build branch. Determine feasibility before the chart; narrow or exclude an infeasible asset while retaining a supported useful answer. Do not force an asset or add another URL for existing intent. Videos remain outside this Mindmap evidence workflow.
+
+For an editorial PUBLISH handoff with routes approved in different rounds, supply `reviewPairs`, an array of original hash-bound `snapshot` and `review` references. Include each route exactly once, using its native approved projection if needed. The normal handoff seal and publication preflight validate each independent decision and complete coverage. Keep the existing counters. Build and compare every route live. Report partial verification when any route differs, listing the exact matches separately.
+
+[Source: .claude/commands/_keyword-demand-ladder.md]
+# Keyword demand ladder — NEVER block a routine on a dry API key
+
+<!-- keyword-discovery-bounds-v1 -->
+**Discovery limits:** `expand --limit N` returns up to N provider ideas PLUS N unique autocomplete ideas (at most 2N, default N=20). This is a per-source batch bound, not a chart/page quota or coverage guarantee. Keep existing provider pins and spending caps. Save raw outputs; filter off-topic matches before ranking, validate exact shortlisted phrases, and record counts by source, rejected topics and the stop/widen reason. If relevant families remain unexplored, prefer free question-prefix mining or narrower seeds before raising the limit. The existing chart reviewer checks these artifacts under `_workflow-checkpoints.md`. Never terminate other runs with a broad process-name kill; use this run's task ID/PID.
+<!-- /keyword-discovery-bounds-v1 -->
+
+
+**Standing rule (applies to EVERY pass that needs keyword volume/difficulty):
+a routine must never stop, skip, or email failure because a keyword API key is
+missing, expired, or out of credits.** Demote one rung and keep going.
+
+## The ladder — SEMRUSH FIRST, with ranked backups
+
+**USER RULE 2026-11-02: SEMRUSH is the primary keyword tool wherever it can
+answer; DataForSEO is primary only for what SEMRUSH does not have (live SERPs
+with titles/snippets, People Also Ask text, AI Overview citations, long-tail
+phrases SEMRUSH does not track).** Ahrefs units are reserved for site audits,
+so Ahrefs is last. The best **usable** provider wins each field for the whole run:
+
+| Field | Order | Why this order |
+|---|---|---|
+| **volume** | `semrush` → `dataforseo` → `ahrefs` | SEMRUSH `phrase_these` (10 units/keyword, prepaid). DataForSEO `keyword_overview` only when SEMRUSH has no key, no units, or errors. |
+| **kd** | `semrush` → `dataforseo` → `ahrefs` | SEMRUSH KDI (`phrase_kdi`, 50 units/keyword). DataForSEO Labs KD is modeled; fallback only. |
+| **expand** | `semrush` → `dataforseo` → `ahrefs` | SEMRUSH `phrase_related` + `phrase_questions` (dedicated questions report). |
+| **ranked keywords / competitors / movers** | `semrush` → `dataforseo` | `scripts/lib/semrush.py` (`domain_organic`, `domain_organic_organic`, `display_positions`) behind `dfs_keyword_gap.py` and `dfs_winner_loser.py`. |
+| **vendor roster for head keywords** | `semrush` → `dataforseo` | SEMRUSH `phrase_organic` top 10 (no titles); a keyword SEMRUSH does not track falls back to the live SERP. |
+| **SERP** | `dataforseo` only | No other vendor sells live SERP with PAA text and AI Overview citations at any price. Not a ladder — see `scripts/lib/serp.py`. |
+| **technical site audit** | `ahrefs` → `dataforseo` | Ahrefs' crawler sees what a page alone cannot (backlink-driven issues, crawl depth, orphan pages). DataForSEO OnPage covers every issue the auto-fix table can act on, at ~$0.00015/URL — see `scripts/lib/site_audit.py`, which emits **Ahrefs' issue slugs** so nothing downstream changes. |
+
+**One provider per field, for the whole run.** Every row's volume comes from one
+vendor and every row's KD comes from one vendor, so rows stay comparable to each
+other. Different fields may come from different vendors — a row can carry Ahrefs
+KD next to DataForSEO volume, and both `source` (volume) and `kd_source` are
+stamped on it. What is forbidden is two vendors' volumes inside one chart.
+
+**Google Autocomplete is NOT a rung — it ALWAYS runs, on top.** It is free,
+keyless and live, so it adds to every call regardless of which provider
+answered: `expand()` merges its suggestions into the provider's ideas, and
+`volumes()` attaches an `autocomplete: {completions, corroborates}` signal to
+every row. Phrases no provider has data for still fall back to a conservative
+autocomplete BAND labelled `source: estimate`. Disable only with
+`AUTOCOMPLETE_ENRICH=0`; cap corroboration with `AUTOCOMPLETE_ENRICH_CAP`
+(default 80 rows).
+
+A provider is skipped automatically on `ERROR 132 :: API UNITS BALANCE IS ZERO`,
+`API units limit reached`, HTTP 401/402/403, or a missing key — the exact
+condition that killed the podcast-pain runs on 2026-08-18, and the condition
+Ahrefs and SEMRUSH are BOTH in as of 2026-08-23.
+
+### The rule generalizes beyond keywords
+
+This file is named for keyword demand because that is where it started, but the
+standing rule is about **vendors, not fields**: no routine in this fleet ends
+because one vendor's meter ran out. When you add a data source to any routine,
+give it a rung below and a way to say which rung answered.
+
+Two corollaries learned the hard way:
+
+- **A check that did not run is not a pass.** A fallback with narrower coverage
+  must report what it could not see (`unavailable_on_this_source`), never let a
+  silent omission read as a clean bill of health.
+- **Normalize at the source, not downstream.** `site_audit.py` translates
+  DataForSEO's checks into Ahrefs' issue slugs inside the helper, so the fix
+  table, gates and email are untouched. Compare the winner/loser pass, whose two
+  Ahrefs sources need a field-mapping table in the skill itself — that mapping is
+  a cost you pay on every future edit.
+
+### DataForSEO specifics
+
+Keys: `$DATAFORSEO_LOGIN` + `$DATAFORSEO_PASSWORD`, or the pre-encoded
+`$DATAFORSEO_B64`. Pay-as-you-go against a prepaid balance, so unlike a metered
+monthly allowance it does not hit a cliff mid-month. Two controls, neither
+needing a code change: `DFS_ENABLED=0` removes it from every field ladder, and
+`DFS_MAX_COST_USD` (default `$2.00`) caps per-process spend — on hitting the cap
+the field demotes to the next provider instead of spending on.
+
+### Pinned order — `KEYWORD_PROVIDERS`
+
+Set `KEYWORD_PROVIDERS` (comma list, e.g. `semrush,dataforseo`) to replace the
+per-field order above for every field; a provider left off the list is never called.
+**/mindmap-pass always runs with `KEYWORD_PROVIDERS=semrush,dataforseo`** (never
+Ahrefs, USER RULE 2026-10-20; SEMRUSH first, USER RULE 2026-11-02). An older pin of
+just `dataforseo` is widened to `semrush,dataforseo` by the helper itself
+(`SEMRUSH_ENABLED=0` turns that off). If both are down or capped, the run falls to
+the labelled autocomplete estimate, not to Ahrefs.
+
+## How to call it — always through the shared helper
+
+`scripts/lib/keyword_data.py` implements the whole ladder (stdlib only, no pip).
+**Do not hand-roll a SEMRUSH or Ahrefs call in a phase.** **Never hardcode a key
+into a committed file.** Keys resolve exactly l

@@ -1,0 +1,57 @@
+{
+ "rows": [
+  {
+   "keyword": "nerdwallet auto loan calculator",
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "major_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "related_searches": 1
+   },
+   "paa": [],
+   "related_searches": [
+    "NerdWallet auto loan rates",
+    "NerdWallet loan calculator",
+    "How much is a $30K car payment for 72 months",
+    "Estimate car loan interest rate",
+    "35000 car loan 72 months",
+    "$25000 car loan payment 72 months",
+    "How much is a car payment on 15000",
+    "50k car payment 72 months"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "9/10 major platforms (google.com, google.com, google.com, google.com); AI Overview present, cites www.nerdwallet.com",
+   "se_results_count": 89
+  }
+ ],
+ "cost": "DataForSEO: 1 calls, $0.00200 of $2.00 budget"
+}

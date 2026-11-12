@@ -1,0 +1,176 @@
+{
+ "rows": [
+  {
+   "keyword": "utma",
+   "volume": 12100,
+   "volume_low": 12100,
+   "volume_high": 12100,
+   "kd": "4",
+   "cpc": "1.81",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "tax deferred growth calculator",
+   "volume": 30,
+   "volume_low": 30,
+   "volume_high": 30,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "nerdwallet auto loan calculator",
+   "volume": 49500,
+   "volume_low": 49500,
+   "volume_high": 49500,
+   "kd": "59",
+   "cpc": "2.61",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "utma age of majority by state",
+   "volume": 260,
+   "volume_low": 260,
+   "volume_high": 260,
+   "kd": "36",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how to close a utma account",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 0,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "utma termination age by state",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "utma to 529 transfer",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "utma account",
+   "volume": 22200,
+   "volume_low": 22200,
+   "volume_high": 22200,
+   "kd": "51",
+   "cpc": "1.82",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "what is a utma account",
+   "volume": 1900,
+   "volume_low": 1900,
+   "volume_high": 1900,
+   "kd": "45",
+   "cpc": "1.47",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "utma age 21",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 10 live autocomplete completions (est. 50-500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "what happens to utma at 18",
+   "volume": 75,
+   "volume_low": 75,
+   "volume_high": 750,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using semrush (quality order semrush > dataforseo)",
+  "semrush returned volume for 9/11 phrases",
+  "kd: using semrush (quality order semrush > dataforseo)",
+  "No tool volume for 2 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 11/11 rows corroborated live"
+ ]
+}

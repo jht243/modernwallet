@@ -1,0 +1,89 @@
+coverage_lookup: 3 candidate(s) vs 821 repo pages / 834 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1141 past-chart lines
+
+### /guides/utma-custodial-account-explained  — row - · create new content
+keyword: utma age of majority by state; what happens to utma at 18 or 21; close or transfer a utma
+reader question (new page intent): What age does a UTMA end in my state and what happens then?
+lookup terms: utma custodial account age majority by state happen at v18 v21 close transfer   format cues: explained
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/utma-custodial-account-explained  [EXACT SLUG · in sitemap · src/data/guides.ts · topic match 0.23 on utma custodial account · same format: explained]
+    title: UTMA Custodial Account Explained: Pros & Cons
+    desc:  A UTMA account lets an adult invest for a child until they come of age. See how custodial accounts work, the real pros and cons, and who they fit.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 13 | probate (2 people; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Evidence: reports/tool-usage-pass/2026-11-
+- 2026-11-06-trend-lane-c.md [table] | 1 | Lens 2 adjacent demand off top-10 "living trust services": "what is a living trust" 14,800 KD40, "how does a living trust work" 1,000 KD34. lookup: /guides/what-is-a-family-trust (exact-slug sibling; covers revocab
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet when and how to switch advisors). Head 'switch financial advisors': autocomplete estimate 75-750/mo, NOT measured. lookup: /guides/financial-advisor-conflicts-of-int
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet investment management and AUM, two candidates, one reader decision). Heads 'what is investment management' 500-5000/mo and 'what is aum in finance' 250-2500/mo, esti
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-10-trend-lane-c.md [exclusions] - standalone utma page: DROP, exists (guides/utma-custodial-account-explained, compare/utma-vs-ugma, 529-vs-utma, custodial-roth-ira-vs-utma, trump-account-vs-custodial-account, how-to-open-a-custodial-brokerage-account-
+Commits naming the topic: none
+Same run overlap: none
+
+### /calculators/tax-deferred-growth-calculator  — row - · create new content
+keyword: tax deferred growth calculator
+reader question (new page intent): How much more does money grow tax-deferred versus taxable?
+lookup terms: tax deferred growth   format cues: calculator vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /taxable-vs-tax-deferred  [in sitemap · (sitemap only) · title fetched live · topic match 0.67 on tax deferred · same format: vs]
+    title: Taxable vs. Tax-Deferred Growth Calculator
+    desc:  See the real dollar gap between a taxable brokerage account and a tax-deferred 401(k)/IRA for your own return, tax rate, and years invested.
+- /investing/roth-ira-calculator  [in sitemap · src/data/spokes-investing.ts · topic match 0.67 on tax growth · same format: calculator]
+    title: Roth IRA Calculator: Project Tax-Free Growth
+    desc:  Project your Roth IRA balance using 2026 contribution limits. See how post-tax contributions grow tax-free over decades. Includes income phase-out info.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-12-trend-lane-c.md [table] | Lens 2 (adjacent to top-10 query "529 vs brokerage account", 210/mo KD 1; PAA "What is the downside of a 529 plan?"). Cluster: `is a 529 plan worth it` 880/mo KD 7; `529 plan pros and cons` 1,000 KD 12; `disadvantages 
+- 2026-10-14-autocomplete.md [table] | Lens 1/2, seed "annuity calculator": `annuity calculator` 33,100/mo KD 32 CPC $5.24; `annuity payout calculator` 9,900 KD 23; `present value of annuity calculator` 1,900 KD 22; `future value of annuity calculator` 1,30
+- 2026-10-14-autocomplete.md [exclusions] - **Paycheck calculator** (550,000/mo, KD 52): needs sourced federal and state withholding tables and a yearly refresh. Deferred, not dropped: no tool ships on invented tax math.
+- 2026-10-14-tool-usage.md [table] | 14 | Lens 1/2 (next tool after trump-account — parent deciding where this year's money goes; queued as a spec 2026-10-11). `trump account vs 529 calculator` est. 0–25/mo (estimate, NOT measured) — demand inferred: a re
+- 2026-10-14-tool-usage.md [table] | 16 | Lens 1 (tool usage — found walking the mortgage persona, row 1, then confirmed by a browser sweep of every live calculator on the local build): typing "6.5" into a rate/percent field shows 65 on 15 more calculator
+- 2026-10-29-xtrends.md [table] | Lens 1 direct intent + news-driven (Zillow and Thumbtack 2026 study, Fox Business 2026-10-22). 'hidden cost of owning a home' 210/mo KD 4, 'cost of owning a home calculator' 170/mo KD 25, 'home maintenance cost calcula
+Commits naming the topic: none
+Same run overlap: none
+
+### /auto-loan/nerdwallet-auto-loan-calculator  — row - · create new content
+keyword: nerdwallet auto loan calculator
+reader question (new page intent): Where is a free auto loan calculator?
+lookup terms: nerdwallet auto loan   format cues: calculator free
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /auto-loan  [in sitemap · (sitemap only) · title fetched live · topic match 0.67 on auto loan]
+    title: Auto Loan Calculator: Enter Any Amount, Instant Payment
+    desc:  Enter any car loan amount and APR to see your exact monthly payment instantly. Free calculator with amortization, refinance tools, and 2026 rates.
+- /auto-loan/payoff-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.67 on auto loan · same format: calculator]
+    title: Auto Loan Payoff Calculator: See Your Payoff Date Fast
+    desc:  Use our free auto loan payoff calculator to find your payoff date and full payment schedule, and see how much extra payments save in interest instantly.
+- /auto-loan/interest-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.67 on auto loan · same format: calculator]
+    title: Auto Loan Interest Calculator: Total Interest in 2026
+    desc:  Use our auto loan interest calculator to see total interest paid by rate, term, and down payment. See how a longer loan quietly costs you more.
+- /auto-loan/refinance-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.67 on auto loan · same format: calculator]
+    title: Auto Loan Refinance Calculator: New Payment & Savings
+    desc:  See your new monthly payment and total interest savings before you refinance your car loan. Free auto loan refinance calculator, updated for 2026.
+- /compare/personal-loan-vs-auto-loan  [in sitemap · src/data/comparisons.ts · topic match 0.67 on auto loan]
+    title: Personal Loan vs Auto Loan for Buying a Car
+    desc:  Personal loan vs auto loan compared with real payment math: why the auto loan's collateral usually wins, and when a personal loan is worth it instead.
+- /compare/auto-loan-vs-lease  [in sitemap · src/data/comparisons.ts · topic match 0.67 on auto loan]
+    title: Auto Loan vs Lease: How to Choose for Your Car
+    desc:  Compare an auto loan vs lease on monthly payments, equity, mileage caps, and exit fees to see whether financing or leasing matches your vehicle budget.
+- /auto-loan/extra-payment-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.67 on auto loan · same format: calculator]
+    title: Auto Loan Extra Payment Calculator: Biweekly vs Extra
+    desc:  Use this auto loan extra payment calculator to compare biweekly vs. extra monthly payments and see how much interest and time you save on your car loan.
+- /auto-loan/amortization-schedule  [in sitemap · src/data/spokes-auto.ts · topic match 0.67 on auto loan · same format: calculator]
+    title: Auto Loan Amortization Calculator & Schedule
+    desc:  Free auto loan amortization calculator — like an Excel schedule — showing a year-by-year breakdown of principal, interest, and balance for your loan.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-28-competitor.md [exclusions] - NerdWallet business loan deferment: skipped-low-value, 1 completion, no verified primary source.
+- 2026-10-28-competitor.md [exclusions] - NerdWallet high-interest loans: skipped-duplicate, /guides/payday-loan-calculator-explained/ (already has the 391% APR, the alternatives sequence, a 36% installment comparison and rollover steps; reviewer RECLASSIFY ac
+- 2026-11-06-trend-lane-c.md [exclusions] - nerdwallet auto loan / retirement calculator: DROP, branded competitor queries; generic /auto-loan/ and /retirement/ calculators and /roundup/best-retirement-calculators/ exist; nerdwallet holds SERP (ledger 2026-10-19
+- 2026-11-09-trend-lane-c.md [exclusions] - nerdwallet auto loan / calculator / retirement calculator: DROP, branded competitor queries on a locked SERP; generic intents served by /auto-loan/ (+7 spokes in spokes-auto.ts), /retirement/, /roundup/best-retirement-
+- 2026-11-09-trend-lane-c.md [exclusions] - auto-loan autocomplete questions ("how are auto loan payments calculated" etc.): covered by the /auto-loan/ hub howItWorks and /guides/how-long-should-a-car-loan-be; rate-lookup queries are not calculator intent.
+- 2026-11-10-trend-lane-c.md [exclusions] - nerdwallet auto loan calculator: DROP, branded, already dropped 2026-11-09.
+Commits naming the topic: none
+Same run overlap: none
+

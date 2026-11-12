@@ -1,0 +1,40 @@
+# Readiness evidence, trend-pass-auto Lane C BUILD, 2026-11-12 (job trend-lane-c-2026-11-12)
+
+Author: mindmap-build-worker (BUILD). Independent chart review and the adversarial duplicate-suppression review are NOT done here (BUILD never self-approves, never spawns agents); MAIN dispatches them. Duplicate check was run inline from coverage_lookup.py (no reviewer subagent available to BUILD) and is recorded as such.
+
+## Preflight
+- Bundle: reports/mindmap-pass/2026-11-12-trend-lane-c-run/preflight-build, 30/30 parts read in full, `workflow-preflight.py check` returned delivery-complete-sources-current. Actor mindmap-build-worker, context-id trend-lane-c-2026-11-12, epoch 1, runId 933a69f3bd394404b0273ed27379e630.
+
+## Brief and request mapping (every original item)
+| # | Original item | Disposition | Evidence |
+|---|---|---|---|
+| 1 | site:themodernwallet.com (5 impr, pos 1) | DROP, not a reader query (search operator) | no intent to answer; no row |
+| 2 | nerdwallet auto loan calculator (2 impr, pos 75.5) | DROP, branded competitor, exists | SEMRUSH us 49,500/mo KD59 (2026-11-12); SERP locked, AIO cites www.nerdwallet.com, 9/10 major platforms (serp2.json); /auto-loan/ hub + 7 spokes serve the generic intent; ledger DROPPED 2026-11-09 and 2026-11-10; no new evidence |
+| 3 | tax deferred growth calculator (1 impr, pos 92) | DROP, exists | SEMRUSH us 30/mo KD0; SERP locked (AIO, no PAA); /taxable-vs-tax-deferred/ "Taxable vs. Tax-Deferred Growth Calculator" is the dedicated same-intent tool (lookup topic match 0.67); autocomplete has 8 rows, all variants of the same tool intent |
+| 4 | utma (1 impr, pos 94) | DROP new page; head served | SEMRUSH us 12,100/mo KD4; SERP locked, AIO cites glenmede/fidelity/investopedia; guides/utma-custodial-account-explained + compare/utma-vs-ugma, 529-vs-utma and 4 more already exist (ledger DROPPED 2026-11-10) |
+| 5 | Top pages (10) | no row; hubs/trust pages plus one roundup (1 click) with no query-level gap | research pack: no >=3 same-theme group |
+| 6 | HELD enrichment guides/utma-custodial-account-explained (state age-of-majority table, what happens at 18/21, transfer/close UTMA + FAQs) | HELD again, NOT built: central claim not groundable unattended | see below |
+
+## HELD enrichment, concrete evidence
+- Gap is real and small (re-read src/data/guides.ts slug utma-custodial-account-explained): body says "18 to 21 / up to 25 depending on state" only; no state list, no step-by-step of what happens at the termination age, nothing on closing/transferring a UTMA (no 529/Roth/successor-custodian section).
+- Demand (SEMRUSH us, measured, 2026-11-12): utma age of majority by state 260/mo KD36; utma termination age by state 20; utma to 529 transfer 20; how to close a utma account 0; estimates (autocomplete band, NOT measured): what happens to utma at 18 75, utma age 21 50. Autocomplete (342 rows) carries 14+ state-specific forms (california, florida, texas, new york, pennsylvania, illinois, maryland, nc, oregon age of majority). SERP: locked, AIO cites finaid.org, savingforcollege.com, experian.com; PAA "What happens to an UTMA account when the minor turns 18?".
+- YMYL source test (guardrail: primary sources only; aggregators finaid.org/savingforcollege barred): state statute pages could not be read as text from this runner on 2026-11-12: leginfo.legislature.ca.gov 403, law.justia.com (CA) 403, nysenate.gov 403, flsenate.gov 429, ilga.gov no connection, statutes.capitol.texas.gov and palegis.us return HTTP 200 but only JS shell/navigation text (no statute body). No owner-committed copy: data/sources/ does not exist. savingforcollege 404 on the guessed URL. So a state-by-state table, the central claim, cannot be grounded; no state figure is invented. Non-state parts (what happens at termination, close/transfer) have only thin reachable primary support (SEC investor.gov glossary ~2.4k chars; FINRA custodial page reachable at /investors/learn-to-invest/types-investments/custodial-accounts).
+- Side finding for MAIN: the guide's cited source "FINRA - Custodial Accounts" URL (/investors/investing/investment-accounts/custodial-accounts) returns HTTP 404; the live FINRA page is /investors/learn-to-invest/types-investments/custodial-accounts (HTTP 200). A link correction is a possible later task, not a Lane C row (no metadata/rewrite rows).
+- Per _decision-evidence no-addition branch and the Lane C rule (source unreachable is HELD, never DROPPED), the enrichment is ledgered HELD and re-competes. If MAIN or the owner can supply the statute texts (or a reachable primary compilation) the row can be reopened as one `update existing body text` action: section 1 slot ahead of the existing definition, `content_gen.py section`, state table limited to statutes actually read, independent state-law fact review (HIGH profile, consequential legal claim), basis reported (statutes), no TESTED label (financial topic outside _experience.md section G).
+
+## Application map (rules to concrete decisions)
+- Keyword ladder: KEYWORD_PROVIDERS=semrush,dataforseo; volume=semrush, kd=semrush, expand=semrush (status.json); DataForSEO used for 4 SERP reads, $0.0083 total of $2.00 cap; Ahrefs off. 2 phrases (utma age 21, what happens to utma at 18) had no provider volume: labelled `source: estimate (autocomplete) NOT measured`. Rung used: SEMRUSH (top rung) + live Autocomplete on top.
+- Discovery bounds: expand --limit 20 on seed utma returned 40 rows (20 provider + 20 autocomplete); autocomplete --mode all on 2 seeds (utma 341 suggestions, tax deferred growth calculator 7). On-topic accepted: age/state/termination/transfer/close/tax forms; rejected off-topic: utmail, ut martin, utma sewage, utma utexas, UT Austin. Stop reason: additional sampling adds no new reader intent; remaining families (kiddie tax, taxes, UTMA vs 529/Roth) have dedicated pages already.
+- Lenses: Lens 1 direct intent = rows 2-4; Lens 2 adjacent = the utma age/transfer cluster (only actionable cluster, HELD); Lens 3 vs/alternatives/pricing: entities are nerdwallet (branded, no generic comparison gap on a locked SERP) and UTMA (utma vs ugma, vs 529, vs roth, vs trump account all exist per coverage_lookup/past charts). Lens 3b skipped per caller (not an AI-content repo).
+- Duplicate/coverage: coverage_lookup.py run for 3 candidates (coverage.txt); every row names its strongest match. Same-run overlap none; commits naming the topic none. Adversarial duplicate-suppression reviewer: not run by BUILD (cannot spawn); MAIN reports the independent review PASSED with 0 survivors and 0 wrongful drops, reviewer re-ran coverage_lookup.py. Chart review round 1 failed mechanically (CR1: emergingClusters empty); fixed by setting emergingClusters to the exact string "No emerging clusters detected this run."
+- YMYL guardrails: no figure published, no engine numbers needed; no row builds without primary source; no metadata/redirect/consolidation rows; cap 25 not approached (0 new pages).
+- Testing labels and attribution: no TESTED format (finance topics outside section G; nothing executed); no testing claims; basis for any later work would be reported (statutes). Takeaway: none (no addition).
+- Author/identity: template-rendered byline untouched; no content written.
+- Growth: no growth.json registration (terminal no-addition); read of reports/content-evidence.jsonl not applicable to a zero-row chart.
+- Publication scope: nothing to publish; all four publicationScope booleans false.
+
+## Per-page preparation checks
+No page rows. Page: guides/utma-custodial-account-explained / Duplicate check: n/a (enrichment of exact existing home) / Testing eligibility: excluded (financial, section G) / Evidence and label decision: reported, no label / Takeaway brief: n/a (held) / Evidence: coverage.txt, volumes.json, serp.json, this report.
+
+## Artifact index
+All under reports/mindmap-pass/2026-11-12-trend-lane-c.* (phrases.txt, volumes.json, status.json, expand.utma.json, autocomplete.utma.csv, autocomplete.tax-deferred-growth-calculator.csv, serp.json, serp2.json, coverage.txt, cache/ statute reachability probes) and source-brief.md in the run dir.

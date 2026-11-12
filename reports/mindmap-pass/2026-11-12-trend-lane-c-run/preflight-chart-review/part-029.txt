@@ -1,0 +1,5 @@
+ons remain. Competitor publication recovery begins with `competitor-handoff.py publication-plan --out NEW_INTERNAL_DIRECTORY/plan.json`, which selects the actual last per-route journal records and projects existing decisions without adding reviews. A remaining original content round is distinct from an exhausted budget. Native clients retain their scoped release rules.
+<!-- /credential-free-deployment-proof-20261110 -->
+
+For new scheduled editorial runs, use this repository’s checked-in land-run.sh mark and land commands from the start. Continue to build and compare the exact approved content live. An explicit production denial remains pending at its original boundary; never try a different release path after a denial.
+

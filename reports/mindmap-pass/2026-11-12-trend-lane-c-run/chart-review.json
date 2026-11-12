@@ -1,0 +1,21 @@
+{
+ "jobId": "trend-lane-c-2026-11-12",
+ "reviewer": "mindmap-chart-reviewer",
+ "manifestSha256": "32e6c6d6a569e2f79c207b53579464547c8ac06e692d990b94ace5f5ae4b61a6",
+ "readinessSha256": "8f282d0c570d1bf97b98fb32cab3e911e5ddf81908c9f03fc0bfbdfa269650cc",
+ "verdict": "PASS",
+ "round": 2,
+ "findings": [
+  {
+   "id": "CR1",
+   "severity": "blocking-mechanical",
+   "summary": "approval-manifest.json has emergingClusters: [] which mindmap-gates.py render-chart and validate-chart reject ('Missing emerging clusters'; content() requires a non-empty str/list/dict). Substantive review of the no-addition decision is otherwise clean, so this is the only blocker.",
+   "fix": "BUILD (not reviewer) sets emergingClusters to a non-empty value, e.g. the exact build-brief wording \"No emerging clusters detected this run.\" (preferred; the UTMA age/transfer cluster is HELD, not an action, and is already explained in exclusions), then re-hash/re-seal the manifest, update any dependent hash, and request Round-2 recheck with resolvedFindingIds [\"CR1\"]. No change to dispositions, exclusions, readiness content or HELD status is required. Do not add a fake action row for the held cluster."
+  }
+ ],
+ "resolvedFindingIds": [
+  "CR1"
+ ],
+ "evidence": "Round 2 recheck by the same independent reviewer (mindmap-chart-reviewer, retained context and own preflight bundle). Recomputed from disk: manifest canonicalJsonSha256 32e6c6d6a569e2f79c207b53579464547c8ac06e692d990b94ace5f5ae4b61a6 matches the claim; readiness sha matches the manifest reference; all 9 evidenceFiles hashes still match. CR1 resolved: emergingClusters is now 'No emerging clusters detected this run.' (the build-brief wording); no fake action row added. Nothing else substantive changed: 0 actions, 0 briefs, 5 candidateDispositions identical (4 queries skip, HELD UTMA enrichment defer), 7 exclusions, executionPlan phases 1-9, publicationScope all false. Readiness.md and the chart Duplicate check line changed only to record Round 1 result and that my independent duplicate review passed (coverage_lookup re-run, 0 survivors, 0 wrongful drops); I checked those edits and they accurately state my Round 1 findings. Round 1 substantive conclusions stand and were not re-opened by any new artifact: all three non-operator queries map to exact existing pages (/guides/utma-custodial-account-explained, /taxable-vs-tax-deferred, /auto-loan + 7 spokes), drops are evidenced by SEMRUSH volumes, locked SERPs and ledger rows; HELD (not DROPPED) is correct per phase-4c-mindmap.md line 76 since data/sources/ is absent and CA/NY/FL/IL statute sources were reproduced as unreachable and TX/PA/ULC as shells; no testing label, no invented figures, terminal no-addition branch.",
+ "requestCoverage": []
+}

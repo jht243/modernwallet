@@ -1,0 +1,112 @@
+ and may run; it writes no edits.)
+4. **"Owned by another engine" is NEVER a stop/drop reason.** Overlap is resolved solely by content-existence dedup (mutual — whoever writes it first wins).
+5. **Winner protection lives in mindmap** — this pass adds no separate winner-protection filter.
+6. **Cap: 25 new pages per run TOTAL**, across everything mindmap builds. Body enrichments don't count. Overflow is flagged "over cap — not built" and left un-ledgered so it re-competes next run.
+7. **No external data in Lanes A/B** — only the Phase 0 GSC pull, local files and the ledgers.
+8. **YMYL caution (binding in Phase 4c)** — every figure comes from the site's `src/lib/*` engine or a primary source (CFPB, Fed/FRED, IRS, FTC, SEC, BLS); never invent figures, rates, limits, statutes or advice. If a fact can't be grounded, drop the row instead of building.
+9. **Digest email passes the site voice standard** like every Resend report.
+
+## Email digest (ALWAYS sent) — write `/tmp/trend-pass-auto-<YYYY-MM-DD>.md` with these EXACT headings (include every heading even if empty — write "None this run")
+Three top-level sections — `# Trends` (Lane A's verdict + what mindmap built from it), `# Query check` (Lane B's findings + what mindmap built from them) and `# Mindmap` (the brief, plus pages built from the top-10 queries directly) — then `# Run details`. Every shipped page/enrichment is listed ONCE, under the section of the finding it came from (`source: trend` / `coverage` / `top-10`).
+
+```markdown
+# Trends
+## Trend verdict
+<one of: "NEW TREND: <theme statement>" / "Trend already caught on <date>: <theme>" / "No clear trend" — plus the query/page evidence counts that triggered or failed the bar>
+
+## Trend findings sent to mindmap (N)
+- <suggested slug/angle> — <gap cell>
+
+## Built from trend findings (N)
+- **<Title>** → <live URL>
+
+# Query check
+## Coverage verdict (top-20 queries)
+<counts: covered / uncovered — and the list of UNCOVERED queries sent to mindmap, or "All top-20 queries already covered">
+
+## Built from query-check findings (N)
+- **<Title>** → <live URL> (query "<query>")
+
+# Mindmap
+## Brief
+<the 10 queries sent with clicks, the count of A/B findings attached, and the chart path reports/mindmap-pass/<date>-trend-lane-c.md>
+
+## Built from top-10 queries (N)
+- **<Title>** → <live URL> (query "<query>")
+
+## Body enrichments (N)
+- **<route>** — <section added> (source: trend / coverage / top-10)
+
+## Flagged specs, not built (N)
+- <slug> — <template/glossary/data-report spec path> (tool/calculator/quiz rows are built, not specced)
+
+## Over cap, not built (N)
+- <slug> — over the 25-page per-run cap. NOT ledgered — re-competes next run.
+
+## Dropped by mindmap (N)
+- <slug> — <source> — <reason: exists / ledger / winner protection / weak demand / SERP locked / metadata or redirect row / spec-only format (template/glossary/data report) / non-groundable YMYL fact / failed audit>
+
+## Cannibalization advisory
+<pairs mindmap's advisory phase flagged, or "None this run">
+
+# Run details
+## Ledger deltas
+trends.md: <new trend row added, or "None — already-caught / no-trend run">
+ledger.md: <KEPT/DROPPED rows appended, or "None this run">
+
+## Keyword data
+<the demand-ladder rung mindmap's BUILD-BRIEF used, e.g. "ahrefs (SEMRUSH units exhausted)">
+
+## Audit
+<mindmap audit result: X/Y passed; reverts and why>
+
+## IndexNow
+<URLs submitted + HTTP status, or "skipped — <reason>">
+
+## Blocker (only if the run stopped early)
+<what stopped it and the exact reason; omit on success>
+```
+
+**Email SUBJECT is fixed for this routine.** It is always `Trend (yes|no) / Query (yes|no) / Mindmap (yes|no)` and nothing else — pass it verbatim as `--headline`: `Trend yes` = at least one page shipped from a trend finding; `Query yes` = at least one page shipped from a query-check finding; `Mindmap yes` = at least one page shipped from the top-10 queries directly. The `--summary` stays the longer one-liner (it becomes the inbox preview) and leads with all three.
+
+```bash
+REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##; s#\.git$##')"
+BRANCH="$(git rev-parse --abbrev-ref HEAD)"; SHA="$(git rev-parse HEAD)"
+.claude/scripts/send-routine-email.py --status <success|failure|no-changes> \
+  --skill trend-pass-auto --site "<BASE_URL>" --repo "$REPO" --branch "$BRANCH" \
+  --headline "Trend (<yes|no>) / Query (<yes|no>) / Mindmap (<yes|no>)" \
+  --summary "Trend: <NO — no clear trend / YES — <theme>>. Query check: <NO — all top-20 already covered / YES — N page(s): <titles>>. Mindmap: <NO — nothing built / YES — N page(s), M enrichment(s)>.<deploy/verify note if anything shipped>" \
+  --details-file /tmp/trend-pass-auto-$(date +%Y-%m-%d).md \
+  --commit-sha "$SHA" --commit-url "https://github.com/$REPO/commit/$SHA"
+```
+No-changes/failure with nothing committed → `--commit-sha "" --commit-url ""`. Helper is best-effort; log to stdout on failure, never error the routine.
+
+## What this skill MUST NOT do
+- Never ask a human anything.
+- Never let Lane A or Lane B build, write, or publish anything, or call any external API/data source (Autocomplete, SEMrush, Ahrefs, DataForSEO, SERP reads, extra GSC calls). They research and hand off.
+- Never do trend-gap research on a trend that matches a `trends.md` row — Lane A reports the verdict only. (This does NOT stop the run — Lanes B and C still run.)
+- Never put a finding into the research pack whose slug/intent appears in `ledger.md` as KEPT or DROPPED (an owner OVERRIDE row beats DROPPED; HELD rows never block — they re-compete every run).
+- Never exceed 25 new pages in one run, under any reasoning.
+- Never run mindmap's metadata phase (phase-2) or its own sitemap/summary/commit phases (7/8/9) inside this pass, and never consolidate, redirect, or rewrite existing pages.
+- Never invent YMYL facts — figures, rates, limits, statutes, or advice.
+- Never widen the *trend* input beyond the two top-10 lists (`coverage_queries[20]` feeds only Lane B).
+- Never hardcode an API key into a committed file. Never commit secrets/.env. Never commit `dist/`.
+
+## Reference
+Breadth framework: `.claude/commands/trend-pass/_breadth-framework.md` · Pull: `scripts/trend_pass/gsc_pull_7d.py` (adds `coverage_queries[20]`) · Inventory: `scripts/trend_pass/slug_inventory.py` · Builder: `.claude/commands/mindmap-pass/` phases (via Phase 4c) · Ledgers: `reports/trend-pass/{trends,ledger}.md` · Content system: `CONTENT.md` + `.claude/commands/_content-standard.md` + `mindmap-pass/phase-4-audit.md` · Email: `.claude/scripts/send-routine-email.py`
+
+## IndexNow Fallback Key (workflow-wide)
+
+**Submit with the fleet helper first:** `python3 .claude/scripts/indexnow-submit.py --urls-file <list>` (or pass the URLs as arguments). It uses the key Bing accepts for this host (a few hosts are pinned to an older key, so the fleet key returns 403 there), tries api.indexnow.org, then www.bing.com, then yandex.com, and relays through layer3labs-web `/api/indexnow-relay` when the sandbox blocks those hosts. Exit 0 means accepted. Use the manual steps below only if that script is missing. Never POST to `api.indexnow.com`; that host does not exist.
+On any IndexNow error (missing `public/<32-hex>.txt`, key not discoverable, 403/422), fall back to env `INDEXNOW_KEY` (default `dc557f6bfced447aa1a71771d8a0d24a`): create `public/<key>.txt` containing the key, commit+push before the POST, retry; if still failing, note the status in the digest and continue.
+
+[Source: .claude/commands/_mindmap-chart-obligations.generated.md]
+# Mindmap Downstream Chart-Planning Obligations (Compiled Verbatim)
+
+These obligations are extracted verbatim from this repository's downstream writing, tool, audit, linking, sitemap, and publication contracts so BUILD and CHART-REVIEW enforce every planning constraint without loading execution-only procedures. Execution workers (WRITE, AUDIT, PUBLISH) still load their full phase and standard files.
+
+## [cs-tested-anchor-neutrality] (.claude/commands/_content-standard.md @ 944c2d85565a)
+
+**Applies to** operator-register pages whose `page type:` is a roundup ("best X", "X alternatives", any ranked list), a product or model review, or an "X vs Y" comparison. **Skip** pricing, how-to, explainer, definition, tool and news (reporter-register) pages. **Also skip** any page whose ranked or compared items fall outside what this site's `_experience.md` section G licenses as tested (for example medical treatments, clinics, drugs, legal or financial services). If the site's `_experience.md` has no section G, skip TESTED entirely. Only relevant executed runs, independently reviewed against the exact page, license first-person testing claims; calculations, modeling, client observations and external research use their own accurate labels.
+
+Plan an extra 3–5-row comparison table + "when to choose X" section (`COMPARISON` net-add) whenever a natural comparison axis exists; plan one honest proprietary `ANCHOR` from `_experience.md` / original analysis (max 2 named-
