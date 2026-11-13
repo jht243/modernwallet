@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-10T16:11:06.702Z",
+  "generated": "2026-11-13T16:27:26.396Z",
   "rows": [
     {
       "vertical": "dataannotation-alternatives",
@@ -34,10 +34,21 @@
       "vertical": "ai-trading-bots",
       "label": "AI trading bots",
       "roundupSlug": "best-ai-trading-bots",
-      "route": "ACCRUE",
-      "qualified": 12,
+      "route": "ENRICH",
+      "qualified": 13,
       "listed": 12,
-      "missing": []
+      "missing": [
+        {
+          "domain": "store.galileofx.com",
+          "name": "store.galileofx.com",
+          "site_url": "https://store.galileofx.com",
+          "one_liner": "",
+          "site_kind": "vendor",
+          "has_pricing": true,
+          "serp_rank": 7,
+          "primary_email": "support@galileofx.com"
+        }
+      ]
     },
     {
       "vertical": "ai-stock-pickers",
@@ -70,29 +81,18 @@
       "vertical": "ira-accounts",
       "label": "IRA providers",
       "roundupSlug": "best-ira-accounts",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 11,
-      "listed": 10,
-      "missing": [
-        {
-          "domain": "americancentury.com",
-          "name": "What Is an IRA? Get the Basics",
-          "site_url": "https://americancentury.com",
-          "one_liner": "Pricing & Trading Info. Each type of IRA offers advantages before and after you retire. Contributions are tax deductible. No minimum distributions are required.",
-          "site_kind": "vendor",
-          "has_pricing": false,
-          "serp_rank": 1,
-          "primary_email": null
-        }
-      ]
+      "listed": 11,
+      "missing": []
     },
     {
       "vertical": "investment-apps-for-beginners",
       "label": "investment apps",
       "roundupSlug": "best-investment-apps-for-beginners",
       "route": "ACCRUE",
-      "qualified": 5,
-      "listed": 5,
+      "qualified": 4,
+      "listed": 4,
       "missing": []
     },
     {
@@ -129,21 +129,10 @@
       "vertical": "budgeting-apps-for-couples",
       "label": "budgeting apps for couples",
       "roundupSlug": "best-budgeting-apps-for-couples",
-      "route": "ENRICH",
-      "qualified": 18,
+      "route": "ACCRUE",
+      "qualified": 17,
       "listed": 17,
-      "missing": [
-        {
-          "domain": "pennywise-app.com",
-          "name": "Best Budget App for Couples: How to Track Shared Expenses ...",
-          "site_url": "https://pennywise-app.com",
-          "one_liner": "Use Pennywise on a shared tablet or phone. Both partners can log expenses to the same account, giving you a unified view of household spending. Option 2 ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 10,
-          "primary_email": null
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "401k-providers-for-small-business",
@@ -185,61 +174,28 @@
       "vertical": "living-trust-services",
       "label": "living trust services",
       "roundupSlug": "best-living-trust-services",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 36,
-      "listed": 35,
-      "missing": [
-        {
-          "domain": "wethepeopleusa.com",
-          "name": "Living Trust Faq",
-          "site_url": "https://wethepeopleusa.com",
-          "one_liner": "A living trust is a legal document that you create before your death to specify what your wishes are regarding assets, heirs, and beneficiaries.",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 7,
-          "primary_email": null
-        }
-      ]
+      "listed": 36,
+      "missing": []
     },
     {
       "vertical": "estate-planning-software",
       "label": "estate planning software",
       "roundupSlug": "best-estate-planning-software",
-      "route": "ENRICH",
-      "qualified": 11,
+      "route": "ACCRUE",
+      "qualified": 10,
       "listed": 10,
-      "missing": [
-        {
-          "domain": "daviswillsandtrusts.com",
-          "name": "daviswillsandtrusts.com",
-          "site_url": "https://daviswillsandtrusts.com",
-          "one_liner": "",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 9,
-          "primary_email": "info@daviswillsandtrusts.com"
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "budgeting-apps",
       "label": "budgeting apps",
       "roundupSlug": "best-budgeting-apps",
-      "route": "ENRICH",
-      "qualified": 14,
+      "route": "ACCRUE",
+      "qualified": 13,
       "listed": 13,
-      "missing": [
-        {
-          "domain": "expenie.com",
-          "name": "Best Budget App Alternatives",
-          "site_url": "https://expenie.com",
-          "one_liner": "Discover the best free budget apps available in India. Compare Expenie, Walnut, Money Manager, and more to find the perfect expense tracker. Read more",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 14,
-          "primary_email": "hello@expenie.com"
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "brokers-for-treasury-bonds",
@@ -312,7 +268,7 @@
       "label": "custodial Roth IRA providers",
       "roundupSlug": "best-custodial-roth-ira-providers",
       "route": "ENRICH",
-      "qualified": 5,
+      "qualified": 4,
       "listed": 3,
       "missing": [
         {
@@ -324,16 +280,6 @@
           "has_pricing": false,
           "serp_rank": 6,
           "primary_email": null
-        },
-        {
-          "domain": "farther.com",
-          "name": "What Is Roth IRA for Kids & How Does It Work?",
-          "site_url": "https://farther.com",
-          "one_liner": "Money in a child's Roth IRA grows without taxation, which offers particular advantages given that children typically have minimal income taxes. Kids can use ... Read more",
-          "site_kind": "vendor",
-          "has_pricing": false,
-          "serp_rank": 16,
-          "primary_email": "hello@farther.com"
         }
       ]
     },
@@ -351,7 +297,7 @@
       "label": "personal loan lenders",
       "roundupSlug": "personal-loan-rates-by-lender",
       "route": "ENRICH",
-      "qualified": 24,
+      "qualified": 22,
       "listed": 20,
       "missing": [
         {
@@ -373,26 +319,6 @@
           "has_pricing": false,
           "serp_rank": 9,
           "primary_email": null
-        },
-        {
-          "domain": "stoke.money",
-          "name": "Stoke Money",
-          "site_url": "https://stoke.money",
-          "one_liner": "Show HN: Stoke Money – Personal finance app built around a cash flow forecast",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": null,
-          "primary_email": null
-        },
-        {
-          "domain": "maali.app",
-          "name": "Maali",
-          "site_url": "https://maali.app/",
-          "one_liner": "Show HN: Maali – Privacy-first personal finance app with a local AI analyst",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": null,
-          "primary_email": "support@maali.app"
         }
       ]
     },
@@ -465,50 +391,39 @@
       "vertical": "portfolio-backtesting-and-analysis-tools",
       "label": "portfolio analysis tools",
       "roundupSlug": "best-portfolio-backtesting-and-analysis-tools",
-      "route": "ENRICH",
-      "qualified": 20,
+      "route": "ACCRUE",
+      "qualified": 19,
       "listed": 19,
-      "missing": [
-        {
-          "domain": "findmymoat.com",
-          "name": "Portfolio Visualizer Alternatives for Backtesting & Analysis",
-          "site_url": "https://findmymoat.com",
-          "one_liner": "Compare Portfolio Visualizer alternatives for portfolio backtesting, Monte Carlo simulations, optimization, factor analysis, correlations, and reports.",
-          "site_kind": "unknown",
-          "has_pricing": true,
-          "serp_rank": 8,
-          "primary_email": "support@findmymoat.com"
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "merchant-cash-advance-companies",
       "label": "merchant cash advance companies",
       "roundupSlug": "best-merchant-cash-advance-companies",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 34,
-      "listed": 33,
-      "missing": [
-        {
-          "domain": "noblebusinessloans.com",
-          "name": "noblebusinessloans.com",
-          "site_url": "https://noblebusinessloans.com",
-          "one_liner": "",
-          "site_kind": "vendor",
-          "has_pricing": false,
-          "serp_rank": 4,
-          "primary_email": null
-        }
-      ]
+      "listed": 34,
+      "missing": []
     },
     {
       "vertical": "invoice-factoring-companies",
       "label": "invoice factoring companies",
       "roundupSlug": "best-invoice-factoring-companies",
-      "route": "ACCRUE",
-      "qualified": 31,
+      "route": "ENRICH",
+      "qualified": 32,
       "listed": 31,
-      "missing": []
+      "missing": [
+        {
+          "domain": "newcenturyfinancial.com",
+          "name": "7 Industries that Use Invoice Factoring to Thrive and Grow",
+          "site_url": "https://newcenturyfinancial.com",
+          "one_liner": "Sep 22, 2022 — 1. The Staffing Industry · 2. Manufacturers · 3. The Service Industry · 4. Distributors · 5. The Oil and Gas Industry · 6. Energy Companies · 7. The ... Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 2,
+          "primary_email": "info@newcenturyfinancial.com"
+        }
+      ]
     },
     {
       "vertical": "business-line-of-credit-rates-by-lender",
@@ -532,21 +447,10 @@
       "vertical": "same-day-business-loans",
       "label": "business lenders",
       "roundupSlug": "best-same-day-business-loans",
-      "route": "ENRICH",
-      "qualified": 10,
+      "route": "ACCRUE",
+      "qualified": 9,
       "listed": 9,
-      "missing": [
-        {
-          "domain": "goviceversa.com",
-          "name": "8 Best Types of Alternative Funding for Small Businesses",
-          "site_url": "https://goviceversa.com",
-          "one_liner": "Dec 4, 2024 — 1. Peer-to-Peer (P2P) Lending · 2. Crowdfunding · 3. Merchant Cash Advances (MCA) · 4. Invoice Financing · 5. Revenue-Based Financing (RBF) · 6. Read more",
-          "site_kind": "vendor",
-          "has_pricing": false,
-          "serp_rank": 4,
-          "primary_email": "info@goviceversa.com"
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "business-bank-accounts",
@@ -570,21 +474,10 @@
       "vertical": "accounting-software-for-freelancers",
       "label": "accounting software for freelancers",
       "roundupSlug": "best-accounting-software-for-freelancers",
-      "route": "ENRICH",
-      "qualified": 24,
+      "route": "ACCRUE",
+      "qualified": 23,
       "listed": 23,
-      "missing": [
-        {
-          "domain": "profitbooks.net",
-          "name": "Top Zoho Invoice Alternatives In India (2026 List)",
-          "site_url": "https://profitbooks.net",
-          "one_liner": "Top Zoho Invoice Alternatives in India · 1. ProfitBooks — The Small Business Whisperer ·. Square Invoice — The Ecosystem Player · 3. Bookipi — The Freelancer's ... Read more",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 3,
-          "primary_email": null
-        }
-      ]
+      "missing": []
     },
     {
       "vertical": "invoicing-apps-for-freelancers",
@@ -600,28 +493,18 @@
       "label": "bookkeeping services for small businesses",
       "roundupSlug": "best-bookkeeping-services-for-small-businesses",
       "route": "ENRICH",
-      "qualified": 30,
-      "listed": 28,
+      "qualified": 31,
+      "listed": 30,
       "missing": [
         {
-          "domain": "ambersbookkeeping.com",
-          "name": "Denver Bookkeeping Services for Service-Based Businesses",
-          "site_url": "https://ambersbookkeeping.com",
-          "one_liner": "Sep 14, 2026 — How much does a bookkeeper cost for a small business in Denver? Bookkeeping packages start at $425 per month. Your price depends on how many ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 19,
-          "primary_email": null
-        },
-        {
-          "domain": "koody.com",
-          "name": "Koody for Business",
-          "site_url": "https://koody.com/business",
-          "one_liner": "Show HN: Koody for Business – AI bookkeeping for people who aren't accountants",
+          "domain": "blockadvisors.com",
+          "name": "blockadvisors.com",
+          "site_url": "https://blockadvisors.com",
+          "one_liner": "",
           "site_kind": "vendor",
           "has_pricing": false,
-          "serp_rank": null,
-          "primary_email": "hello@koody.com"
+          "serp_rank": 3,
+          "primary_email": null
         }
       ]
     },

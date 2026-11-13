@@ -323,6 +323,18 @@
       "Forex and CFD traders outside the US; $50 minimum deposit"
      ],
      "added": "2026-11-04"
+    },
+    {
+     "name": "Galileo FX",
+     "domain": "store.galileofx.com",
+     "url": "https://store.galileofx.com/",
+     "values": [
+      "Traders running fully automated strategies on their own MetaTrader broker account",
+      "From €399 one-time on homepage; its FAQ cites $1,100 lifetime",
+      "Automated software on MetaTrader 4/5; you open your own broker account",
+      "Forex, CFDs, indexes, futures, metals via 400+ brokers; US eligibility not stated"
+     ],
+     "added": "2026-11-13"
     }
    ]
   },
@@ -4388,6 +4400,18 @@
       "Advances up to 90% of invoices; fixed or floating discount fee"
      ],
      "added": "2026-10-27"
+    },
+    {
+     "name": "New Century Financial",
+     "domain": "newcenturyfinancial.com",
+     "url": "https://newcenturyfinancial.com/",
+     "values": [
+      "Telecom, manufacturing, staffing, oil and gas, transportation; start-ups financed",
+      "Not published; lists \"No-Risk Factoring\" without defining it",
+      "24-hour approval; funding time after approval not published",
+      "No term contract or minimum volume; facilities up to $10 million; 0.05% per diem"
+     ],
+     "added": "2026-11-13"
     }
    ]
   },

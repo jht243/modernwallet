@@ -1,17 +1,1 @@
-{
- "slug": "best-ai-trading-bots",
- "rows": [
-  {
-   "name": "Switch Markets",
-   "domain": "switchmarkets.com",
-   "url": "https://switchmarkets.com",
-   "values": [
-    "Non-US traders wanting a plain-English AI strategy builder on MT4/MT5",
-    "AlgoBuilder free with a live account; $0 commission account, spreads from 0.0",
-    "Not published",
-    "Forex and CFD traders outside the US; $50 minimum deposit"
-   ]
-  }
- ],
- "cut": []
-}
+{"slug":"best-ai-trading-bots","rows":[{"name":"Galileo FX","domain":"store.galileofx.com","url":"https://store.galileofx.com/","values":["Traders running fully automated strategies on their own MetaTrader broker account","From €399 one-time on homepage; its FAQ cites $1,100 lifetime","Automated software on MetaTrader 4/5; you open your own broker account","Forex, CFDs, indexes, futures, metals via 400+ brokers; US eligibility not stated"]}],"cut":[]}
