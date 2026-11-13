@@ -88,16 +88,10 @@ of this file. Day = America/Bogota date (`TZ=America/Bogota date +%F`).
   `{vendor, product, officialUrl, targetQuery, demand, category, priority, source}` and run
   `backlog.py add --file …`. Never re-add a product already in the backlog (the helper refuses).
 - Claim today's rows: `backlog.py claim --ids a,b,c`. The helper enforces 3 per day.
-- Nothing to do (cap reached or nothing qualifies) → report a no-op and stop.
+- Nothing new to do (cap reached or nothing qualifies) → skip to step 7b (upgrade pass), then step 8.
 
-**1b. Upgrade pass (owner rule 2026-11-14).** Pages this routine published before the full SEO
-standard existed may be thin. Each run, after today's new pages are published (or if none are),
-take up to 3 rows with `status: published` and no `seoUpgraded` field, oldest first, and bring each
-page up to page rule 5 in place (same URL, slug and title start; refresh prices from each
-vendor's site). Give each upgraded page ONE audit as in step 4 and record it with
-`backlog.py audit --id <id> --file <file> --upgrade`, fix the findings, publish and live-check as in
-steps 6–7 (submit the upgraded URLs to IndexNow), then
-`backlog.py set --id <id> --status published --note "seo upgrade" --field seoUpgraded='"<day>"' --field bodyWords=<n>`.
+**1b.** The upgrade pass for older thin pages is step 7b. It runs on EVERY run, after
+today's pages are published, and also when step 1 finds nothing new to publish.
 
 **2. Research and write** each claimed page per the page rules and the site adapter. Read
 `.claude/commands/_content-standard.md` and `_anti-ai-language.md` first and run the standard's
@@ -138,12 +132,24 @@ A failure here is a real defect: fix it, commit, push, verify again.
 **7. Index and record.** Write the verified URLs to `reports/alternatives-daily/<day>/indexnow.txt`
 and run `python3 .claude/scripts/indexnow-submit.py --urls-file <that file>` (only new pages; listing
 pages that merely gained a card are not submitted). For each page:
-`backlog.py set --id <id> --status published --note "live-verified" --field liveUrl='"<url>"' --field commit='"<sha>"' --field indexnow='"<result>"'`.
+`backlog.py set --id <id> --status published --note "live-verified" --field liveUrl='"<url>"' --field commit='"<sha>"' --field indexnow='"<result>"' --field seoUpgraded='"<day>"' --field bodyWords=<n>`
+(new pages are written to page rule 5, so they never need the upgrade pass).
 Commit `reports/alternatives-daily/` (backlog + receipts) and push with the deploy helper
 (metadata only — no second live verify needed).
 
+**7b. Upgrade pass (owner rule 2026-11-14) — ALWAYS run this step, including on a no-op day.**
+Pages this routine published before the full SEO
+standard existed may be thin. Take up to 3 rows with `status: published` and no `seoUpgraded` field, oldest first, and bring each
+page up to page rule 5 in place (same URL, slug and title start; refresh prices from each
+vendor's site). Give each upgraded page ONE audit as in step 4 and record it with
+`backlog.py audit --id <id> --file <file> --upgrade`, fix the findings, publish and live-check as in
+steps 6–7 (submit the upgraded URLs to IndexNow), then
+`backlog.py set --id <id> --status published --note "seo upgrade" --field seoUpgraded='"<day>"' --field bodyWords=<n>`.
+A row whose live page already has at least 1,500 body words and the page rule 5 sections only
+gets marked with that `set` command (no rewrite, no audit). Commit and push the receipts as in step 7.
+
 **8. Report** through the routine prompt's central reporting: pages published with links, rows
-held/excluded and why, audit verdicts and how many findings were fixed, IndexNow result, backlog
+held/excluded and why, pages upgraded in step 7b (with body word counts), audit verdicts and how many findings were fixed, IndexNow result, backlog
 counts, commit SHAs. Before finishing, confirm this run's commits are on `origin/main`.
 
 Never reset a row, delete history, or re-audit a page. A page is `published` only after the live
