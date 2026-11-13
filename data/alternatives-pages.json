@@ -1,4 +1,29 @@
 {
   "_comment": "Registry for /alternatives/<slug>/ pages (daily alternatives routine, owner rules 2026-11-13). A page renders ONLY when its route is listed here. Listing a route turns on: the two vendor CTAs, the outbound-link guard (the only external links allowed are officialHosts), no Mediavine ads, no entity/referral auto-links, and no external links in the site footer. One row per page: {\"route\": \"/alternatives/<slug>/\", \"vendorHost\": \"<apex host of the subject product>\", \"officialHosts\": [\"<every exact host the page links>\"]}. Content lives in src/data/alternatives.json.",
-  "pages": []
+  "pages": [
+    {
+      "route": "/alternatives/quickbooks/",
+      "vendorHost": "quickbooks.intuit.com",
+      "officialHosts": [
+        "quickbooks.intuit.com",
+        "www.quickbooks.intuit.com"
+      ]
+    },
+    {
+      "route": "/alternatives/quicken/",
+      "vendorHost": "quicken.com",
+      "officialHosts": [
+        "www.quicken.com",
+        "quicken.com"
+      ]
+    },
+    {
+      "route": "/alternatives/wise/",
+      "vendorHost": "wise.com",
+      "officialHosts": [
+        "wise.com",
+        "www.wise.com"
+      ]
+    }
+  ]
 }

@@ -1,1 +1,295 @@
-[]
+[
+  {
+    "slug": "quickbooks",
+    "product": "QuickBooks",
+    "officialUrl": "https://quickbooks.intuit.com/",
+    "title": "QuickBooks Alternatives 2026: Pricing Compared",
+    "h1": "QuickBooks Alternatives 2026: Pricing and Plans Compared",
+    "metaDescription": "QuickBooks alternatives for small business accounting and invoicing, with each product's published plan prices compared side by side.",
+    "published": "2026-11-13",
+    "intro": "The most common alternatives to [QuickBooks](https://quickbooks.intuit.com/) are FreshBooks, Xero, Zoho Books, Wave and Zoho Invoice. They differ mainly in billing unit: QuickBooks and Xero price by plan tier, FreshBooks by number of billable clients, and Zoho Books by plan with user and invoice limits.\n\nThis page lists each product's published prices and plan limits. It describes what the providers publish and is not financial, tax or accounting advice.",
+    "tableTitle": "QuickBooks and alternatives: published prices",
+    "tableNote": "Prices from each provider's own website, checked November 13, 2026.",
+    "tableColumns": [
+      "Product",
+      "Fees and pricing",
+      "Best fit"
+    ],
+    "rows": [
+      {
+        "product": "QuickBooks Online",
+        "pricing": "Free plan ($0, 1 user, 2 invoices per month); Simple Start $38/mo; Essentials $85/mo; Plus $140/mo; Advanced $340/mo (regular prices; 3-month promotional discounts shown for new customers)",
+        "bestFit": "Fits businesses that want a widely used accountant-friendly platform with tiered plans",
+        "subject": true
+      },
+      {
+        "product": "FreshBooks",
+        "pricing": "Lite $23/mo (5 billable clients); Plus $43/mo (50); Premium $70/mo (unlimited); Select by quote. Regular prices; promotional discount for the first 4 months",
+        "bestFit": "Fits freelancers and service businesses billed by client count"
+      },
+      {
+        "product": "Xero",
+        "pricing": "Early $27/mo (20 invoices and quotes, 5 bills); Growing $59/mo; Established $97/mo. Regular prices; promotional discount for the first 3 months",
+        "bestFit": "Fits small businesses that want plans without per-user license fees"
+      },
+      {
+        "product": "Zoho Books",
+        "pricing": "Free $0 (1 user plus 1 accountant, 1,000 invoices/yr); Standard $20/mo ($15 billed annually); Professional $50/mo ($40 annually); Premium $70/mo ($60 annually); Elite $150/mo ($120 annually); Ultimate $275/mo ($240 annually)",
+        "bestFit": "Fits small businesses that want a free entry plan and add-on-style growth tiers"
+      },
+      {
+        "product": "Wave",
+        "pricing": "Starter $0; Pro $19/mo or $190/yr; Starter card payments 2.9% + $0.60 per transaction (Amex 3.4% + $0.60)",
+        "bestFit": "Fits very small businesses and freelancers that need basic invoicing and accounting"
+      },
+      {
+        "product": "Zoho Invoice",
+        "pricing": "Free: up to 2 users, 3 projects and 500 invoices per year",
+        "bestFit": "Fits freelancers that only need invoicing"
+      }
+    ],
+    "chooseSection": {
+      "heading": "How to choose a QuickBooks alternative",
+      "body": "Billing unit is the quickest way to tell these products apart. FreshBooks counts billable clients, Zoho Books and QuickBooks count users and plan tier, and Wave charges for card payments rather than a subscription on its free plan.\n\nPromotional first-months prices are different from regular prices. The table shows regular prices, and each provider's checkout shows what a new account pays today.\n\n- Check how many users and accountants the plan includes.\n- Check invoice, bill and client limits.\n- Check payment processing fees, which are separate from subscription prices."
+    },
+    "alternatives": [
+      {
+        "heading": "FreshBooks",
+        "body": "FreshBooks publishes Lite, Plus and Premium plans priced by billable clients (5, 50 and unlimited), with a Select plan priced through sales. Plus adds proposals, retainers and accountant access; Premium adds project profitability."
+      },
+      {
+        "heading": "Xero",
+        "body": "Xero lists Early, Growing and Established plans. The Early plan limits invoices and quotes to 20 and bills to 5 a month; the two higher plans list no such limit."
+      },
+      {
+        "heading": "Zoho Books",
+        "body": "Zoho Books has a Free plan with one user plus one accountant and 1,000 invoices a year, and paid plans from Standard to Ultimate with larger user and invoice limits. Annual billing is cheaper per month than monthly billing."
+      },
+      {
+        "heading": "Wave",
+        "body": "Wave's Starter plan is $0 and its Pro plan is $19 a month or $190 a year. Card processing on Starter is 2.9% + $0.60 per transaction (Amex 3.4% + $0.60). Payroll and bookkeeping are paid add-ons."
+      },
+      {
+        "heading": "Zoho Invoice",
+        "body": "Zoho Invoice is a free invoicing product with limits of two users, three projects and 500 invoices a year. It covers invoicing rather than full accounting."
+      }
+    ],
+    "stillBetterFit": {
+      "heading": "When QuickBooks is still the better fit",
+      "body": "QuickBooks fits businesses whose accountant or bookkeeper already works in it, or that need its higher tiers such as inventory management, project profitability or up to 25 users on Advanced. Its free plan is limited to one user and two invoices a month."
+    },
+    "verdict": "Each product above publishes its prices on its own site. QuickBooks sits at the higher end of published tier prices, FreshBooks prices by client count, and Zoho Books, Wave and Zoho Invoice list free entry plans with limits, as does QuickBooks (1 user, 2 invoices a month).",
+    "faqs": [
+      {
+        "question": "What is the cheapest QuickBooks alternative?",
+        "answer": "Zoho Books, Wave and Zoho Invoice publish free plans with limits. Free plans cap users, invoices or features, so compare limits before prices."
+      },
+      {
+        "question": "Do the prices on this page include promotions?",
+        "answer": "No. The table shows regular published prices. QuickBooks, FreshBooks and Xero each advertise first-months discounts for new customers on their own sites."
+      },
+      {
+        "question": "Does this page give accounting advice?",
+        "answer": "No. It lists published prices and plan limits only and is not financial, tax or accounting advice."
+      }
+    ],
+    "related": [
+      {
+        "label": "Compare products",
+        "href": "/compare/"
+      }
+    ]
+  },
+  {
+    "slug": "quicken",
+    "product": "Quicken",
+    "officialUrl": "https://www.quicken.com/",
+    "title": "Quicken Alternatives 2026: Pricing Compared",
+    "h1": "Quicken Alternatives 2026: Pricing and Features Compared",
+    "metaDescription": "Quicken alternatives for budgeting and money tracking, with published subscription prices for Monarch, YNAB, Copilot and others compared.",
+    "published": "2026-11-13",
+    "intro": "The most common alternatives to [Quicken](https://www.quicken.com/) are Monarch, YNAB, Copilot, Empower and Rocket Money. They split between subscription budgeting apps with published monthly and annual prices and dashboards whose pricing is not on the main page.\n\nThis page lists each product's published prices. It describes what providers publish and is not financial or investment advice.",
+    "tableTitle": "Quicken and alternatives: published prices",
+    "tableNote": "Prices from each provider's own website, checked November 13, 2026.",
+    "rows": [
+      {
+        "product": "Quicken",
+        "pricing": "Quicken Simplifi: $3.99/mo or $6.99 billed annually (first-year offer for new members through December 13, 2026; renews at then-current rates). Classic desktop plans: Published plans; see vendor site",
+        "bestFit": "Fits people who want long-running desktop or web money tracking",
+        "subject": true
+      },
+      {
+        "product": "Monarch",
+        "pricing": "$14.99/mo or $99.99/yr; first week free (the pricing page does not say which plan these apply to)",
+        "bestFit": "Fits households that want shared budgeting with account syncing"
+      },
+      {
+        "product": "YNAB",
+        "pricing": "$14.99/mo or $109/yr; 34-day free trial",
+        "bestFit": "Fits people who like zero-based budgeting methods"
+      },
+      {
+        "product": "Copilot",
+        "pricing": "$9/mo; $109 billed yearly",
+        "bestFit": "Fits Apple users that want a mobile-first app (iPhone, iPad, Mac, web)"
+      },
+      {
+        "product": "Empower",
+        "pricing": "Homepage lists no dashboard fees; advisory fees are based on assets managed. See vendor site",
+        "bestFit": "Fits people who want a net worth and investment dashboard"
+      },
+      {
+        "product": "Rocket Money",
+        "pricing": "Homepage compares free and Premium plans but lists no Premium price; see vendor site",
+        "bestFit": "Fits people focused on subscription tracking and bill cancellation"
+      }
+    ],
+    "chooseSection": {
+      "heading": "How to choose a Quicken alternative",
+      "body": "These products take different approaches. YNAB teaches an assign-every-dollar method, Monarch and Copilot focus on syncing accounts into a dashboard, and Quicken offers both web and long-standing desktop software.\n\n- Check whether the price is monthly or billed annually.\n- Check platform support, since Copilot lists Apple devices plus web.\n- Check which accounts and institutions the app connects to."
+    },
+    "alternatives": [
+      {
+        "heading": "Monarch",
+        "body": "Monarch lists a monthly subscription at $14.99 and a yearly subscription at $99.99, with a promo code for new annual customers advertised on its pricing page. The page does not specify which plan (Core or Plus) those prices apply to."
+      },
+      {
+        "heading": "YNAB",
+        "body": "YNAB lists $14.99 a month or $109 billed annually (about $9.08 a month) and a 34-day free trial."
+      },
+      {
+        "heading": "Copilot",
+        "body": "Copilot lists $9 per month and $109 billed yearly, on iPhone, iPad, Mac and web."
+      },
+      {
+        "heading": "Empower",
+        "body": "Empower provides a financial dashboard for tracking net worth and investments. Its homepage lists no dashboard fees and states advisory fees are based on assets managed; see its site."
+      },
+      {
+        "heading": "Rocket Money",
+        "body": "Rocket Money centres on subscription tracking, bill negotiation and budgeting. Its homepage compares free and Premium plans but lists no Premium price; see its site."
+      }
+    ],
+    "stillBetterFit": {
+      "heading": "When Quicken is still the better fit",
+      "body": "Quicken fits people who already keep years of data in Quicken Classic, or who prefer its desktop plans. Quicken's Simplifi lists investment tracking, a retirement planner and cash-flow projections; several alternatives are web or mobile only."
+    },
+    "verdict": "Monarch, YNAB and Copilot publish subscription prices in the same range, while Quicken's Simplifi entry price is lower for the first year. Empower and Rocket Money do not publish a single comparable price on their main pages.",
+    "faqs": [
+      {
+        "question": "Is Quicken free?",
+        "answer": "No. Quicken's plans are paid subscriptions."
+      },
+      {
+        "question": "Which Quicken alternatives publish a free trial?",
+        "answer": "YNAB lists a 34-day free trial and Monarch lists a free first week."
+      },
+      {
+        "question": "Does this page give financial advice?",
+        "answer": "No. It lists published prices and plan details only."
+      }
+    ],
+    "related": [
+      {
+        "label": "Compare products",
+        "href": "/compare/"
+      }
+    ]
+  },
+  {
+    "slug": "wise",
+    "product": "Wise",
+    "officialUrl": "https://wise.com/",
+    "title": "Wise Alternatives 2026: Transfer Fees Compared",
+    "h1": "Wise Alternatives 2026: Transfer Fees Compared",
+    "metaDescription": "Wise alternatives for international money transfers, comparing how Remitly, Revolut, Western Union, Xoom and OFX publish their fees.",
+    "published": "2026-11-13",
+    "intro": "The most common alternatives to [Wise](https://wise.com/) are Remitly, Revolut, Western Union, Xoom and OFX. Wise publishes a percentage fee starting from 0.23% that varies by currency, while the others publish fees on separate pages or within their transfer flow.\n\nThis page lists what each provider publishes. Transfer fees and exchange rates change by corridor and amount, and this page is not financial advice.",
+    "tableTitle": "Wise and alternatives: how fees are published",
+    "tableNote": "Prices from each provider's own website, checked November 13, 2026.",
+    "rows": [
+      {
+        "product": "Wise",
+        "pricing": "Sending money from 0.23% (varies by currency); account opening free; Multi-Currency Card 9 USD; ATM free up to 250 USD per month, then 1.95 USD + 1.95%",
+        "bestFit": "Fits people who want published percentage fees and a multi-currency account",
+        "subject": true
+      },
+      {
+        "product": "Remitly",
+        "pricing": "Pricing page lists no fee amounts; see its Rates and Fees page",
+        "bestFit": "Fits people sending money to family abroad"
+      },
+      {
+        "product": "Revolut",
+        "pricing": "Published plans; see vendor site",
+        "bestFit": "Fits people who want a banking app with currency features"
+      },
+      {
+        "product": "Western Union",
+        "pricing": "Home page lists no fee amounts; see vendor site",
+        "bestFit": "Fits people who want cash-pickup options"
+      },
+      {
+        "product": "Xoom",
+        "pricing": "Exact fee shown before you send; fees and limitations apply",
+        "bestFit": "Fits people already using PayPal"
+      },
+      {
+        "product": "OFX",
+        "pricing": "Fees listed on a separate pricing page; no minimum balance",
+        "bestFit": "Fits people who want an account with no minimum balance"
+      }
+    ],
+    "chooseSection": {
+      "heading": "How to choose a Wise alternative",
+      "body": "Total cost of a transfer is the fee plus the gap between the exchange rate offered and the mid-market rate. Providers publish fees in different ways, so the exact fee and rate are confirmed on each provider's own site.\n\n- Check the exact fee and the rate before sending.\n- Check delivery options, such as bank deposit or cash pickup.\n- Check limits and verification requirements."
+    },
+    "alternatives": [
+      {
+        "heading": "Remitly",
+        "body": "Remitly's pricing page does not list fee amounts and points to a Rates and Fees page."
+      },
+      {
+        "heading": "Revolut",
+        "body": "Revolut offers a banking app with currency features. See its own site for plans and fees, which vary by plan and region."
+      },
+      {
+        "heading": "Western Union",
+        "body": "Western Union's home page does not list fee amounts and offers cash-pickup options; see its site for fees."
+      },
+      {
+        "heading": "Xoom",
+        "body": "Xoom states that it shows the exact fee and the amount the recipient receives before you send, noting that fees and limitations apply."
+      },
+      {
+        "heading": "OFX",
+        "body": "OFX states it has no minimum balance and links to a separate pricing page for fees."
+      }
+    ],
+    "stillBetterFit": {
+      "heading": "When Wise is still the better fit",
+      "body": "Wise publishes a starting percentage fee, free account opening, free holding of money and domestic receiving details in nine currencies on its pricing page."
+    },
+    "verdict": "Wise publishes a starting percentage fee on its pricing page, while the alternatives above either list no fee amounts on the pages reviewed or point to separate pricing pages.",
+    "faqs": [
+      {
+        "question": "What are Wise's published fees?",
+        "answer": "Sending money starts from 0.23% and varies by currency, the Multi-Currency Card costs 9 USD, and ATM withdrawals are free up to 250 USD a month."
+      },
+      {
+        "question": "Why do alternatives not list fixed fees?",
+        "answer": "Fees depend on currency pair, amount and delivery method, so several providers publish them on separate pages or in a quote."
+      },
+      {
+        "question": "Does this page give financial advice?",
+        "answer": "No. It lists published fee information only."
+      }
+    ],
+    "related": [
+      {
+        "label": "Compare products",
+        "href": "/compare/"
+      }
+    ]
+  }
+]
