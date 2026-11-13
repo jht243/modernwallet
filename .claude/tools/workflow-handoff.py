@@ -560,6 +560,25 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
     }
     if pack_out:
         res['contextPacket'] = str(pack_out.resolve().relative_to(root.resolve()))
+    role_agent = (
+        f'.claude/agents/layer3-mindmap-{phase}.md'
+        if is_layer3_local
+        else f'.claude/agents/mindmap-{phase}.md'
+    )
+    phase_instr = {
+        'write': '--instruction .claude/commands/mindmap-pass/phase-3-new-content.md --instruction .claude/commands/mindmap-pass/phase-6-internal-linking.md',
+        'audit': '--instruction .claude/commands/mindmap-pass/phase-4-audit.md',
+        'publish': '--instruction .claude/commands/mindmap-pass/phase-7-sitemap-indexnow.md --instruction .claude/commands/mindmap-pass/phase-9-commit-deliver.md',
+    }[phase]
+    pkt_flag = f" --context-packet {res['contextPacket']}" if pack_out else ''
+    role_flag = f' --instruction {role_agent}' if is_layer3_local else ''
+    res['workerPrepareCommand'] = (
+        f"python3 .claude/tools/workflow-preflight.py prepare --phase {phase} "
+        f"--handoff {res['handoff']}{pkt_flag} --run-id <RUN_ID> "
+        f"--actor {actor or '<ACTOR>'} --context-id <CONTEXT_ID> --context-epoch <EPOCH> "
+        f"--run-dir {str(out_path.parent.resolve().relative_to(root.resolve()))}/preflight-{phase}"
+        f"{role_flag} {phase_instr}"
+    )
     return res
 
 

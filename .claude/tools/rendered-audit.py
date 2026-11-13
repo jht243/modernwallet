@@ -27,6 +27,26 @@ def require(condition, message):
 def now(): return dt.datetime.now(dt.timezone.utc).isoformat()
 def clean(text): return re.sub(r'\s+', ' ', text).strip()
 
+# First-party regions whose content is a rolling feed of OTHER published pages
+# (it changes whenever a new item publishes, independent of the reviewed page).
+# A route opts in explicitly via manifest `volatileRenderRegions`; the manifest
+# is bound to the independent review. Only a <section data-render-volatile=NAME>
+# root is recognised, its content may use only plain card markup, and every link
+# must match the region's pattern. The removed text/links stay in the snapshot
+# under `volatileRegions` (outside the fingerprint) and in the archived HTML.
+VOLATILE_RENDER_REGIONS = {
+    'latest-briefings': re.compile(r'/briefing(?:/[A-Za-z0-9][A-Za-z0-9._-]*)?/?'),
+}
+VOLATILE_REGION_TAGS = {'section','header','div','h2','h3','p','a','span','strong','em','b','i','br'}
+# Visible text may sit only inside a region link (a card or footer link) or in
+# the region's own <header> heading line. Excluded text is still screened for
+# forbiddenText and for testing, affiliate and byline labels.
+VOLATILE_REGION_TEXT_CHECKS = [
+    ('testing label', r'\btested\s+(?:and|&)\s+reviewed\s+by\b|\btested\s+guidance\b|\(\s*tested\s+\d{4}\s*\)|\bhands-on\s+tested\b'),
+    ('affiliate disclosure', r'\baffiliate\s+(?:link|disclosure|commission|partner)s?\b|\bwe\s+(?:may\s+)?earn\s+(?:a\s+)?commissions?\b|\bsponsored\b'),
+    ('byline', r'\b(?:written|reported|edited)\s+by\b|\bauthor\s*:'),
+]
+
 def content_review_policy():
     root=Path(__file__).resolve().parents[2]
     if not (root/'.claude/content-review-policy.json').is_file(): return None
@@ -54,9 +74,10 @@ def content_correction_scope():
     return module
 
 class Page(HTMLParser):
-    def __init__(self, volatile_ads=None, normalize_class_whitespace=False):
+    def __init__(self, volatile_ads=None, normalize_class_whitespace=False, volatile_regions=()):
         super().__init__(convert_charrefs=True)
         self.normalize_class_whitespace=normalize_class_whitespace
+        self.volatile_regions=frozenset(volatile_regions or ()); self.region_stack=[]; self.region=None; self.excluded_regions=[]
         self.volatile_ads=volatile_ads; self.ad_stack=[]; self.fixed_ad_root=False; self.fixed_ad_children=0; self.confiant_root=False; self.vendor_body=False; self.closed_body=False; self.closed_html=False
         self.stack=[]; self.text=[]; self.date_text=[]; self.headings=[]; self.links=[]; self.meta={}; self.schemas=[]; self.json=[]; self.is_json=False; self.title=[]; self.canonical=''; self.article=0; self.article_text=[]; self.structure=[]
     def handle_starttag(self, tag, attrs):
@@ -69,6 +90,8 @@ class Page(HTMLParser):
         # Hydration may add an empty style attribute; retain every actual CSS value.
         if 'style' in a and not a['style'].strip(): del a['style']
         void=tag in {'meta','link','img','input','br','hr','source','wbr','area','base','embed','param','track','col'}
+        if not self.ad_stack and (self.region_stack or (self.volatile_regions and a.get('data-render-volatile') in self.volatile_regions)):
+            self.volatile_region_start(tag,a,void); return
         classes=set(a.get('class','').split()); ident=a.get('id','')
         if tag=='body':self.vendor_body='mv-loaded' in classes
         displays=[part.split(':',1)[1].strip().lower() for part in a.get('style','').split(';') if ':' in part and part.split(':',1)[0].strip().lower()=='display']
@@ -126,8 +149,31 @@ class Page(HTMLParser):
         if tag=='link' and 'canonical' in a.get('rel','').split(): self.canonical=a.get('href','')
         if tag=='a' and a.get('href'): self.links.append(a['href'])
         if tag=='script' and a.get('type')=='application/ld+json': self.is_json=True; self.json=[]
+    def volatile_region_start(self, tag, a, void):
+        if not self.region_stack:
+            require(tag=='section' and 'body' in self.stack and not any(t in self.stack for t in ['head','script','style','noscript']),
+                    'Volatile render region root must be a <section> in the page body')
+            require(a['data-render-volatile'] not in {r['name'] for r in self.excluded_regions},
+                    'Duplicate volatile render region on one route: '+a['data-render-volatile'])
+            self.region={'name':a['data-render-volatile'],'text':[],'links':[]}
+        protected=' '.join(str(a.get(k,'')) for k in ['id','class','aria-label','data-testid']).lower()
+        require(tag in VOLATILE_REGION_TAGS and not any(token in protected for token in ['reader-survey','readersurvey','reader survey','affiliate','tested','testing','byline']),
+                'Protected or unsupported content inside a volatile render region: <'+tag+'>')
+        if tag=='a':
+            href=a.get('href','')
+            require(VOLATILE_RENDER_REGIONS[self.region['name']].fullmatch(href) is not None,
+                    'Link outside the allowed pattern inside volatile render region '+self.region['name']+': '+href)
+            self.region['links'].append(href)
+        if not void: self.region_stack.append(tag)
     def handle_endtag(self, tag):
         if tag in {'meta','link','img','input','br','hr','source','wbr','area','base','embed','param','track','col'}:return
+        if self.region_stack:
+            require(tag in self.region_stack,'Unterminated volatile render region')
+            self.region_stack=self.region_stack[:len(self.region_stack)-1-self.region_stack[::-1].index(tag)]
+            if not self.region_stack:
+                self.excluded_regions.append({'name':self.region['name'],'text':clean(' '.join(self.region['text'])),'links':self.region['links']})
+                self.region=None
+            return
         if self.ad_stack:
             require(tag in self.ad_stack,'Unterminated volatile ad region')
             self.ad_stack=self.ad_stack[:len(self.ad_stack)-1-self.ad_stack[::-1].index(tag)]
@@ -145,6 +191,11 @@ class Page(HTMLParser):
         if tag in self.stack:
             self.stack=self.stack[:len(self.stack)-1-self.stack[::-1].index(tag)]
     def handle_data(self, data):
+        if self.region_stack:
+            stack=self.region_stack
+            require(not data.strip() or 'a' in stack or (len(stack)>=3 and stack[1]=='header' and set(stack[2:])<={'h2','span','strong','em'}),
+                    'Visible text outside a link or heading inside volatile render region '+self.region['name'])
+            self.region['text'].append(data); return
         if self.ad_stack:
             require(not ((self.fixed_ad_root or self.confiant_root) and len(self.ad_stack)==1 and data.strip()),'Unexpected text in fixed third-party ad container')
             return
@@ -173,7 +224,7 @@ def objects(value):
 
 def parse(html, route, base, canonical, status=200):
     require(re.search(r'</body\s*>',html,re.I) and re.search(r'</html\s*>\s*$',html,re.I),'Incomplete full-page capture; recapture without truncation')
-    p=Page(route.get('volatileThirdPartyAds'), route.get('normalizeClassTokenWhitespace') is True); p.feed(html); require(not p.ad_stack,'Unterminated volatile ad region'); require(p.closed_body and p.closed_html,'Incomplete full-page capture; document closures were not parsed')
+    p=Page(route.get('volatileThirdPartyAds'), route.get('normalizeClassTokenWhitespace') is True, route.get('volatileRenderRegions')); p.feed(html); require(not p.ad_stack,'Unterminated volatile ad region'); require(not p.region_stack,'Unterminated volatile render region'); require(p.closed_body and p.closed_html,'Incomplete full-page capture; document closures were not parsed')
     semantic=normalize({'text':clean(' '.join(p.text)), 'h1':clean(' '.join(p.headings)), 'title':clean(''.join(p.title)), 'canonical':p.canonical,'meta':p.meta,'links':p.links,'schema':p.schemas,'structure':p.structure},base,canonical)
     failures=[]
     def test(ok, reason):
@@ -221,7 +272,13 @@ def parse(html, route, base, canonical, status=200):
         test(bool(parsed) and len(parsed)==len(labels) and all(v==expected for v in parsed),'Visible updated date missing or inconsistent')
     for phrase in route.get('requiredText',[]): test(phrase in semantic['text'],f'Missing required text: {phrase}')
     for phrase in route.get('forbiddenText',[]): test(phrase.casefold() not in semantic['text'].casefold(),f'Forbidden text: {phrase}')
-    return {'path':route['path'],'status':status,'fingerprint':digest(semantic),'semantic':semantic,'failures':failures,'htmlSha256':hashlib.sha256(html.encode()).hexdigest()}
+    for region in p.excluded_regions:
+        for phrase in route.get('forbiddenText',[]): test(phrase.casefold() not in region['text'].casefold(),f"Forbidden text in volatile region {region['name']}: {phrase}")
+        for label,pattern in VOLATILE_REGION_TEXT_CHECKS: test(not re.search(pattern,region['text'],re.I),f"Unreviewed {label} in volatile region {region['name']}")
+    result={'path':route['path'],'status':status,'fingerprint':digest(semantic),'semantic':semantic,'failures':failures,'htmlSha256':hashlib.sha256(html.encode()).hexdigest()}
+    # Opt-in routes keep the excluded rolling-feed content visible for review.
+    if route.get('volatileRenderRegions'): result['volatileRegions']=p.excluded_regions
+    return result
 
 def validate_manifest(manifest):
     require(manifest.get('author') and manifest.get('canonicalBase','').startswith('https://'),'Manifest needs author and HTTPS canonicalBase')
@@ -233,6 +290,10 @@ def validate_manifest(manifest):
     for r in routes:
         require(r.get('volatileThirdPartyAds') in (None,'mediavine'),'Unsupported volatile third-party region')
         require('normalizeClassTokenWhitespace' not in r or isinstance(r['normalizeClassTokenWhitespace'],bool),'Class token whitespace opt-in must be boolean')
+        if 'volatileRenderRegions' in r:
+            names=r['volatileRenderRegions']
+            require(isinstance(names,list) and names and all(isinstance(n,str) and n in VOLATILE_RENDER_REGIONS for n in names) and len(names)==len(set(names)),
+                    'Unsupported volatile render region; known: '+', '.join(sorted(VOLATILE_RENDER_REGIONS)))
         if 'canonicalPath' in r:
             p=r['canonicalPath']
             require(p in paths and p.startswith('/') and not p.startswith('//') and '..' not in p and '?' not in p and '#' not in p,'Canonical target must be an audited same-site route')
@@ -551,7 +612,7 @@ def inspect_pack(s, selected_routes=()):
 
 
 def init_manifest(approval_manifest_path, author, out_path, root=None, explicit_routes=(),
-                  claim_categories=('ordinary',), canonical_base=None, volatile_ads=None):
+                  claim_categories=('ordinary',), canonical_base=None, volatile_ads=None, volatile_regions=()):
     """Generate a validated capture-manifest.json directly from approval-manifest.json in 1 command."""
     root = Path(root or Path(__file__).resolve().parents[2]).resolve()
     require(not Path(out_path).exists(), 'Capture manifest output already exists; choose a new path: ' + str(out_path))
@@ -602,6 +663,8 @@ def init_manifest(approval_manifest_path, author, out_path, root=None, explicit_
         entry = {'path': rp, 'claimCategories': cats}
         if volatile_ads:
             entry['volatileThirdPartyAds'] = volatile_ads
+        if volatile_regions:
+            entry['volatileRenderRegions'] = list(dict.fromkeys(volatile_regions))
         route_objs.append(entry)
 
     manifest = {
@@ -663,7 +726,7 @@ def capture_local(manifest_path, run_id, out, dom_dir=None, build=False, root=No
 
 def main(argv=None):
     parser=argparse.ArgumentParser(); sub=parser.add_subparsers(dest='command',required=True)
-    p=sub.add_parser('init-manifest'); p.add_argument('--approval-manifest',required=True); p.add_argument('--author',required=True); p.add_argument('--out',required=True); p.add_argument('--route',action='append',default=[]); p.add_argument('--claim-category',action='append',default=[]); p.add_argument('--canonical-base'); p.add_argument('--volatile-ads')
+    p=sub.add_parser('init-manifest'); p.add_argument('--approval-manifest',required=True); p.add_argument('--author',required=True); p.add_argument('--out',required=True); p.add_argument('--route',action='append',default=[]); p.add_argument('--claim-category',action='append',default=[]); p.add_argument('--canonical-base'); p.add_argument('--volatile-ads'); p.add_argument('--volatile-region',action='append',default=[],help='Opt every route into a known first-party rolling-feed region, e.g. latest-briefings')
     p=sub.add_parser('capture'); p.add_argument('--manifest',required=True); p.add_argument('--base-url',required=True); p.add_argument('--out',required=True); p.add_argument('--dom-dir',help='Existing hydrated DOM input by route; not an output directory. Omit for complete server-rendered HTTP HTML.')
     p=sub.add_parser('capture-local'); p.add_argument('--manifest',required=True); p.add_argument('--run-id',required=True); p.add_argument('--out',required=True); p.add_argument('--dom-dir'); p.add_argument('--build',action='store_true'); p.add_argument('--auto-manifest',help='Optional approval-manifest.json to auto-generate --manifest'); p.add_argument('--author',help='Writer actor identity when using --auto-manifest'); p.add_argument('--route',action='append',default=[]); p.add_argument('--claim-category',action='append',default=[])
     p=sub.add_parser('inspect-pack'); p.add_argument('--snapshot',required=True); p.add_argument('--route',action='append',default=[]); p.add_argument('--out')
@@ -673,7 +736,7 @@ def main(argv=None):
     for name in ['snapshot','approved','review','commit','deployment-evidence','ledger']: p.add_argument('--'+name,required=True)
     a=parser.parse_args(argv)
     if a.command=='init-manifest':
-        m=init_manifest(a.approval_manifest,a.author,a.out,explicit_routes=a.route,claim_categories=a.claim_category or ['ordinary'],canonical_base=a.canonical_base,volatile_ads=a.volatile_ads)
+        m=init_manifest(a.approval_manifest,a.author,a.out,explicit_routes=a.route,claim_categories=a.claim_category or ['ordinary'],canonical_base=a.canonical_base,volatile_ads=a.volatile_ads,volatile_regions=a.volatile_region)
         print(json.dumps({'status':'manifest-initialized','out':a.out,'routes':[r['path'] for r in m['routes']],'canonicalBase':m['canonicalBase']}))
     elif a.command=='capture':
         s=capture(read(a.manifest),a.base_url,a.out,a.dom_dir); valid_snapshot(s); print(f"Captured {len(s['routes'])} complete routes")

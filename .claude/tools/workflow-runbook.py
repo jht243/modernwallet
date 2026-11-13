@@ -50,19 +50,44 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
         'No --help / grep / sed on .claude/tools/*.py needed; use these exact verified commands:',
     ]
     if is_local:
+        bundle_id = manifest.get('bundleId') or '<BUNDLE_ID>'
+        ctx_id = manifest.get('contextId') or '<CONTEXT_ID>'
+        ctx_epoch = manifest.get('contextEpoch') or '<CONTEXT_EPOCH>'
+        req_sources = list(manifest.get('files') or {})
+        reused_sources = set(manifest.get('reused') or [])
         if manifest.get('reuse') and (root / '.claude/tools/instruction-understanding.py').is_file():
-            lines.append(
-                f'1. Complete --reuse preflight in 1 turn (carry unchanged explanations without rewriting 16 sources): '
-                f'python3 .claude/tools/instruction-understanding.py challenge --run-dir {rel_dir} '
-                f'&& write {rel_dir}/confirmation.json (freshUnderstanding ONLY for freshExplanationSources) '
-                f'&& python3 .claude/tools/instruction-understanding.py record --run-dir {rel_dir} --confirmation {rel_dir}/confirmation.json --out {rel_dir}/application.json'
-            )
+            fresh_sources = [s for s in req_sources if s not in reused_sources or s in {manifest.get('handoff'), manifest.get('contextPacket')} or s.startswith('reports/')]
+            fresh_tpl = json.dumps([
+                {
+                    'source': s,
+                    'quote': '<EXACT >=30-char contiguous raw substring sliced from this source>',
+                    'meaning': '<>=50-char unique explanation in your own words>',
+                    'application': '<>=50-char specific application to this current task>',
+                }
+                for s in fresh_sources
+            ])
+            lines.extend([
+                f'1. Complete --reuse preflight in 1 turn (carry unchanged explanations without rewriting unchanged sources; never grep docs):',
+                f'   Run: python3 .claude/tools/instruction-understanding.py challenge --run-dir {rel_dir} '
+                f'&& write {rel_dir}/confirmation.json && python3 .claude/tools/instruction-understanding.py record --run-dir {rel_dir} --confirmation {rel_dir}/confirmation.json --out {rel_dir}/application.json',
+                f'   Blank confirmation.json layout (identity keys MUST be flat top-level, never nested under "identity"; set booleans true ONLY if genuinely true):',
+                f'   {{"version": "retained-understanding-2026-11-08.1", "bundleId": "{bundle_id}", "actor": "{actor}", "runId": "{run_id}", "contextId": "{ctx_id}", "contextEpoch": "{ctx_epoch}", "previousBundleId": "<previousBundleId from challenge>", '
+                f'"currentContextAvailable": <true|false>, "rulesUnderstood": <true|false>, "contextRetained": <true|false>, "unchangedApplicationsStillApply": <true|false>, "recallStillUnderstood": <true|false>, "reuseEligibleSources": <true|false>, '
+                f'"task": "<>=60 chars concrete current task>", "accessEvidence": "<>=60 chars genuine current-context retention statement>", "currentApplication": "<>=60 chars changed-focus/current application>", "freshUnderstanding": {fresh_tpl}}}',
+            ])
         else:
-            lines.append(
-                f'1. Complete preflight: python3 .claude/tools/workflow-preflight.py challenge --run-dir {rel_dir} '
-                f'&& write application.json (verbatim >=30-char quotes sliced from manifest["files"]) '
-                f'&& python3 .claude/tools/workflow-preflight.py check --run-dir {rel_dir} --application {rel_dir}/application.json'
-            )
+            src_preview = json.dumps(req_sources) if req_sources else '["<each path in manifest[\'files\']>"]'
+            lines.extend([
+                f'1. Complete preflight in 1 turn (no --help or doc grepping needed; answer from what you just read):',
+                f'   Run: python3 .claude/tools/workflow-preflight.py challenge --run-dir {rel_dir} '
+                f'&& write {rel_dir}/application.json '
+                f'&& python3 .claude/tools/workflow-preflight.py check --run-dir {rel_dir} --application {rel_dir}/application.json',
+                f'   Blank application.json layout (fill every field genuinely; slice quote verbatim from raw file bytes — note `.claude/commands/_mindmap-chart-obligations.generated.md` is virtual, so slice its quote from `{rel_dir}/part-*.txt`, not disk):',
+                f'   {{"bundleId": "{bundle_id}", "actor": "{actor}", "runId": "{run_id}", "contextId": "{ctx_id}", "contextEpoch": "{ctx_epoch}", '
+                f'"currentContextAvailable": <true|false>, "rulesUnderstood": <true|false>, "task": "<>=40 chars concrete current stage task>", '
+                f'"scenarios": {{"lostContext": "<reread|reuse|ignore>", "changedRules": "<reread|reuse|ignore>", "writerAsFinalReviewer": "<independent-reviewer|writer|self>", "calculationIsProductTest": "<yes|no>", "higherRiskClaim": "<light|standard|high>", "lightSeo": "<none|partial|full>"}}, '
+                f'"understanding": [{{"source": "<one entry for EACH path in {src_preview}>", "quote": "<EXACT >=30-char contiguous raw substring>", "meaning": "<>=50-char unique explanation in your own words (no duplicates)>", "application": "<>=50-char specific application to this task>"}}]}}',
+            ])
     else:
         lines.append(
             f'1. Complete preflight: python3 .claude/tools/workflow-preflight.py check --run-dir {rel_dir}'

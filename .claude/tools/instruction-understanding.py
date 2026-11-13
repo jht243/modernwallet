@@ -75,11 +75,35 @@ def challenge(root,directory):
     if l is None:return {'mode':'existing-protocol','instruction':'Keep this site\'s normal complete reading and independent application checks. No per-document explanation gate is added.'}
     m=l.validate(root,directory,False);old,a,texts,manifest_ref,application_ref,eligible=previous(root,m,l)
     require(m['delivered']==list(range(1,len(m['parts'])+1)),'Read every newly delivered instruction chunk first')
+    fresh_sources=sorted(set(m['files'])-eligible)
+    try:rel_dir=str(directory.resolve().relative_to(root.resolve()))
+    except ValueError:rel_dir=str(directory)
     return {'version':VERSION,'identity':{key:m[key] for key in IDENTITY},'previousBundleId':old['bundleId'],
-            'eligibleUnchangedSources':len(eligible),'freshExplanationSources':sorted(set(m['files'])-eligible),
+            'eligibleUnchangedSources':len(eligible),'freshExplanationSources':fresh_sources,
             'requiredCurrentStatements':['currentContextAvailable','rulesUnderstood','contextRetained','unchangedApplicationsStillApply','recallStillUnderstood','reuseEligibleSources'],
             'requiredCurrentExplanations':['task','accessEvidence','currentApplication'],
-            'instruction':'Write your genuine CURRENT confirmation, concrete task and changed-focus/application explanation. Set the statements only if true. Supply freshUnderstanding entries for changed/new/task sources and any unchanged rule whose application no longer fits. Do not rewrite eligible unchanged explanations. Lost/unclear context requires the normal full reread/application. This command does not provide answers or a PASS.'}
+            'confirmationTemplate':{
+                'version':VERSION,
+                **{key:m[key] for key in IDENTITY},
+                'previousBundleId':old['bundleId'],
+                'currentContextAvailable':'<bool: true ONLY if full rules remain in current context>',
+                'rulesUnderstood':'<bool: true ONLY if all rules are understood>',
+                'contextRetained':'<bool: true ONLY if prior context epoch is unbroken>',
+                'unchangedApplicationsStillApply':'<bool: true ONLY if unchanged explanations still fit>',
+                'recallStillUnderstood':'<bool: true ONLY if scenario rules are still recalled>',
+                'reuseEligibleSources':'<bool: true ONLY to retain eligible unchanged explanations>',
+                'task':'<string >=60 chars: concrete current stage task>',
+                'accessEvidence':'<string >=60 chars: genuine statement of current-context rule retention>',
+                'currentApplication':'<string >=60 chars: specific changed-focus/current task application>',
+                'freshUnderstanding':[
+                    {'source':s,'quote':'<EXACT >=30-char contiguous raw substring from source>',
+                     'meaning':'<>=50-char unique explanation in your own words>',
+                     'application':'<>=50-char specific application to this current task>'}
+                    for s in fresh_sources
+                ],
+            },
+            'recordCommand':f'python3 .claude/tools/instruction-understanding.py record --run-dir {rel_dir} --confirmation {rel_dir}/confirmation.json --out {rel_dir}/application.json',
+            'instruction':'Write your genuine CURRENT confirmation (using top-level identity keys as shown in confirmationTemplate), concrete task and changed-focus/application explanation. Set the statements only if true. Supply freshUnderstanding entries for changed/new/task sources and any unchanged rule whose application no longer fits. Do not rewrite eligible unchanged explanations. Lost/unclear context requires the normal full reread/application. This command does not provide answers or a PASS.'}
 
 
 def expand(root,m,c,l,seen=None,current_texts=None,archived_root=None):

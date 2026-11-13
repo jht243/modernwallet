@@ -303,4 +303,64 @@ class Ads(unittest.TestCase):
      a.valid_snapshot(snap)
    finally:
     os.chdir(prev)
+class VolatileRenderRegions(unittest.TestCase):
+ RAIL='<section class="cr-card-section" aria-label="Latest related briefings" data-render-volatile="latest-briefings"><header class="cr-card-header"><h2 class="cr-card-title">Latest related briefings</h2></header><div class="cr-card-grid"><a class="cr-card" href="/briefing/{slug}"><span class="cr-card-eyebrow">POLICY</span><h3 class="cr-card-headline">{title}</h3><div class="cr-card-meta-rows"><span><strong>Nov 13, 2026</strong></span><br></div><span class="cr-card-cta">Read analysis</span></a></div><p class="cr-card-footer"><a href="/briefing"><strong>Browse all daily briefings</strong></a></p></section>'
+ def setUp(self):
+  self.route={'path':'/guide','volatileRenderRegions':['latest-briefings']}
+  self.core=HTML.replace('</main>','{rail}<p>Closing reviewed paragraph</p></main>')
+ def rail(self,slug='ai-bill-20261113-1',title='AI bill advances'):return self.RAIL.replace('{slug}',slug).replace('{title}',title)
+ def parse(self,rail='',route=None,core=None):return a.parse((core or self.core).replace('{rail}',rail),route or self.route,'http://localhost:3000','https://example.com')
+ def snap(self,rail='',route=None):
+  route=route or self.route;m={'author':'writer','canonicalBase':'https://example.com','routes':[dict(route)]}
+  s={'manifest':m,'routes':[self.parse(rail,route)],'baseUrl':'https://example.com','capturedAt':'2026-11-13T18:00:00+00:00'};s['snapshotSha256']=a.digest(s);return s
+ def test_rolling_rail_absent_or_rotated_matches_only_with_opt_in(self):
+  fp=self.parse()['fingerprint']
+  self.assertEqual(fp,self.parse(self.rail())['fingerprint'])
+  self.assertEqual(fp,self.parse(self.rail('eu-act-20261114-2','EU act delayed'))['fingerprint'])
+  self.assertEqual(self.parse(self.rail())['volatileRegions'],[{'name':'latest-briefings','text':'Latest related briefings POLICY AI bill advances Nov 13, 2026 Read analysis Browse all daily briefings','links':['/briefing/ai-bill-20261113-1','/briefing']}])
+  plain={'path':'/guide'}
+  self.assertNotEqual(self.parse(route=plain)['fingerprint'],self.parse(self.rail(),route=plain)['fingerprint'])
+  self.assertNotIn('volatileRegions',self.parse(self.rail(),route=plain))
+ def test_marker_attribute_alone_never_changes_existing_fingerprints(self):
+  plain={'path':'/guide'};unmarked=self.rail().replace(' data-render-volatile="latest-briefings"','')
+  self.assertEqual(self.parse(unmarked,route=plain)['fingerprint'],self.parse(self.rail(),route=plain)['fingerprint'])
+  self.assertNotEqual(self.parse()['fingerprint'],self.parse(unmarked)['fingerprint'])
+ def test_reviewed_content_outside_region_remains_bound(self):
+  for before,after in [('Closing reviewed paragraph','Changed claim'),('Model guide</h1>','Other guide</h1>'),('https://example.com/other','https://example.com/changed')]:
+   self.assertNotEqual(self.parse(self.rail())['fingerprint'],self.parse(self.rail(),core=self.core.replace(before,after))['fingerprint'])
+ def test_live_compare_accepts_rail_drift_and_binds_opt_in_to_review(self):
+  approved=self.snap();live=self.snap(self.rail())
+  review={'reviewer':'independent','snapshotSha256':approved['snapshotSha256'],'routes':[{'path':'/guide','fingerprint':approved['routes'][0]['fingerprint'],'verdict':'PASS','checks':{k:{'status':'PASS','evidence':'Fixture evidence for negative-path testing only.'} for k in a.CHECKS}}]}
+  a.compare(approved,live,review)
+  with self.assertRaisesRegex(ValueError,'manifest differs'):a.compare(approved,self.snap(self.rail(),{'path':'/guide'}),review)
+ def test_manifest_accepts_only_known_region_lists(self):
+  base={'author':'a','canonicalBase':'https://example.com'}
+  a.validate_manifest({**base,'routes':[{'path':'/guide','volatileRenderRegions':['latest-briefings']}]})
+  for value in ['latest-briefings',[],['reader-survey'],['latest-briefings','latest-briefings'],[['latest-briefings']],None]:
+   with self.subTest(value=value),self.assertRaisesRegex(ValueError,'volatile render region'):a.validate_manifest({**base,'routes':[{'path':'/guide','volatileRenderRegions':value}]})
+ def test_unlisted_region_name_and_non_section_root_stay_bound_or_fail(self):
+  other=self.rail().replace('"latest-briefings"','"sidebar"')
+  self.assertNotEqual(self.parse()['fingerprint'],self.parse(other)['fingerprint'])
+  with self.assertRaisesRegex(ValueError,'root must be a <section>'):self.parse(self.rail().replace('<section ','<div ',1).replace('</section>','</div>'))
+ def test_protected_unsupported_or_foreign_link_content_rejected(self):
+  for inner in ['<h1>Answer</h1>','<main>Answer</main>','<article>Answer</article>','<script type="application/ld+json">{"dateModified":"2026-11-14"}</script>','<img src="/x.png">','<iframe src="https://ads.example"></iframe>','<form action="/x"></form>','<span class="tested-badge">TESTED</span>','<span class="byline">Author</span>','<div class="affiliate-card">Deal</div>','<a href="https://partner.example/deal">Deal</a>','<a href="/explainers/other">Other</a>','<a href="/briefing/../admin">x</a>','<a>no link</a>']:
+   with self.subTest(inner=inner),self.assertRaises(ValueError):self.parse(self.rail().replace('</section>',inner+'</section>'))
+ def test_unterminated_region_rejected(self):
+  # Following page text is swallowed into the open region; either guard blocks.
+  with self.assertRaisesRegex(ValueError,'Unterminated volatile render region|Visible text outside a link'):self.parse(self.rail().replace('</section>',''))
+  with self.assertRaisesRegex(ValueError,'Unterminated volatile render region'):a.parse(HTML.replace('</main>',self.rail().replace('</section>','')+'</main>'),self.route,'http://localhost:3000','https://example.com')
+ def test_forbidden_and_label_text_inside_region_fails_capture(self):
+  route={**self.route,'forbiddenText':['Grok']}
+  self.assertEqual(self.parse(self.rail(),route)['failures'],[])
+  self.assertIn('Forbidden text in volatile region latest-briefings: Grok',self.parse(self.rail(title='Grok 5 ships'),route)['failures'])
+  for title,label in [('Tested and reviewed by our lab','testing label'),('Best VPN (Tested 2026)','testing label'),('Deals via affiliate links','affiliate disclosure'),('Sponsored: AI pick','affiliate disclosure'),('Written by Jane Doe','byline')]:
+   with self.subTest(title=title):self.assertIn('Unreviewed '+label+' in volatile region latest-briefings',self.parse(self.rail(title=title))['failures'])
+  self.assertEqual(self.parse(self.rail(title='Lawmakers tested AI rules in court'))['failures'],[])
+ def test_one_region_per_name_per_route(self):
+  with self.assertRaisesRegex(ValueError,'Duplicate volatile render region'):self.parse(self.rail()+self.rail('other-20261113-2'))
+ def test_visible_text_only_in_links_or_region_heading(self):
+  self.parse(self.rail().replace('</h2>','</h2><span class="cr-card-meta">Updated daily</span>'))
+  for extra in ['<p class="cr-card-intro">Unreviewed claim</p>','<div>Loose text</div>','<span>Stray</span>','Bare text']:
+   with self.subTest(extra=extra),self.assertRaisesRegex(ValueError,'Visible text outside a link'):self.parse(self.rail().replace('</header>','</header>'+extra))
+  with self.assertRaisesRegex(ValueError,'Visible text outside a link'):self.parse(self.rail().replace('<h2 class="cr-card-title">','<h2 class="cr-card-title"><div>x</div>'))
 if __name__=='__main__': unittest.main()
