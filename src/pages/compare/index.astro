@@ -2,9 +2,11 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { SITE } from "../../data/site";
 import { COMPARISONS } from "../../data/comparisons";
+import { ALTERNATIVES } from "../../data/alternatives";
 
 const canonicalUrl = new URL("/compare/", Astro.site).toString();
 const entries = COMPARISONS.filter((c) => !c.draft).sort((a, b) => a.title.localeCompare(b.title));
+const altEntries = [...ALTERNATIVES].sort((a, b) => a.product.localeCompare(b.product));
 
 const jsonLdBreadcrumb = {
   "@context": "https://schema.org",
@@ -40,6 +42,19 @@ const jsonLdBreadcrumb = {
         </a>
       ))}
     </div>
+    {altEntries.length > 0 && (
+      <section class="alt-hub" aria-label="Alternatives pages">
+        <h2>Alternatives: published prices compared</h2>
+        <div class="grid">
+          {altEntries.map((p) => (
+            <a class="ccard" href={`/alternatives/${p.slug}/`}>
+              <span class="ccard-vs">{p.product} alternatives</span>
+              <span class="ccard-title">{p.h1}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
   </main>
 
   <style>
@@ -55,6 +70,8 @@ const jsonLdBreadcrumb = {
     .ccard:hover { border-color: var(--primary); transform: translateY(-1px); box-shadow: 0 8px 20px -12px rgba(0,0,0,0.12); }
     .ccard-vs { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--primary-dark, #0a5c4a); }
     .ccard-title { font-weight: 600; font-size: 1.02rem; line-height: 1.4; }
+    .alt-hub { margin-top: 36px; }
+    .alt-hub h2 { font-size: 1.5rem; margin: 0 0 16px; }
     @media (max-width: 600px) { .hero h1 { font-size: 1.9rem; } }
   </style>
 </BaseLayout>

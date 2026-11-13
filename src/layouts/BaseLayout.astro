@@ -14,8 +14,11 @@ export interface Props {
   noAds?: boolean;
   /** Route-specific disclosure when the sitewide wording is unsuitable for the page. */
   affiliateDisclosureText?: string;
+  /** true renders the footer's external links (e.g. "Powered by Layer3Labs") as plain text.
+   *  Used by /alternatives/ pages, whose only external link may be the subject's official site. */
+  noExternalFooterLinks?: boolean;
 }
-const { title, description, canonical, noindex, robots, noAds, affiliateDisclosureText } = Astro.props;
+const { title, description, canonical, noindex, robots, noAds, affiliateDisclosureText, noExternalFooterLinks } = Astro.props;
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
 const toolSharingImages: Record<string, string> = {
   "/retirement/inherited-ira-withdrawal-calculator/": "/images/tools/inherited-ira-withdrawal-calculator.png",
@@ -162,6 +165,6 @@ const websiteJsonLd = {
   <body>
     <SiteHeader />
     <slot />
-    <SiteFooter disclosureText={affiliateDisclosureText} />
+    <SiteFooter disclosureText={affiliateDisclosureText} noExternalLinks={noExternalFooterLinks} />
   </body>
 </html>

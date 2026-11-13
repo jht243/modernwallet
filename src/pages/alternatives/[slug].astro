@@ -1,0 +1,214 @@
+---
+// "<Product> Alternatives" page (daily alternatives routine, owner rules 2026-11-13).
+// Renders only for entries listed in data/alternatives-pages.json. On these routes:
+//   - the only external link is the subject's official site (src/lib/alternatives.ts guard);
+//   - no Mediavine ads (noAds), no entity / referral auto-links (data-no-entity-link on <main>),
+//     no SponsorSlot / LeadForm, and no external link in the site footer;
+//   - two vendor CTAs, never adjacent: "Update your listing" line directly under the table, and
+//     the "Want to be added" dark band at the end of the second section.
+// The page lists products and their published prices. It gives no financial advice.
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Byline from "../../components/Byline.astro";
+import { SITE } from "../../data/site";
+import { ALTERNATIVES, registryRow, alternativesRoute } from "../../data/alternatives";
+import { altInline, altBlocks, altPlain } from "../../lib/alternatives";
+import { personSchema, articleSchema } from "../../lib/jsonld";
+
+export function getStaticPaths() {
+  return ALTERNATIVES.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const reg = registryRow(entry.slug)!;
+const hosts = reg.officialHosts;
+const route = alternativesRoute(entry.slug);
+const canonicalUrl = new URL(route, Astro.site).toString();
+const updated = entry.updated ?? entry.published;
+const columns = entry.tableColumns ?? ["Product", "Fees and pricing", "Best fit"];
+const from = encodeURIComponent(route);
+const stillHeading = entry.stillBetterFit.heading || `When ${entry.product} is still the better fit`;
+
+const jsonLdBreadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: SITE.name, item: new URL("/", Astro.site).toString() },
+    { "@type": "ListItem", position: 2, name: "Compare", item: new URL("/compare/", Astro.site).toString() },
+    { "@type": "ListItem", position: 3, name: entry.h1, item: canonicalUrl },
+  ],
+};
+const jsonLdFaq = entry.faqs.length
+  ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: entry.faqs.map((f) => ({
+        "@type": "Question",
+        name: f.question,
+        acceptedAnswer: { "@type": "Answer", text: altPlain(f.answer) },
+      })),
+    }
+  : null;
+const jsonLdPerson = personSchema();
+const jsonLdArticle = articleSchema({
+  headline: entry.h1,
+  description: entry.metaDescription,
+  url: canonicalUrl,
+  datePublished: entry.published,
+  dateModified: updated,
+});
+---
+<BaseLayout
+  title={entry.title}
+  description={entry.metaDescription}
+  canonical={canonicalUrl}
+  noAds={true}
+  noExternalFooterLinks={true}
+  affiliateDisclosureText="This page lists products and the fees and prices their providers publish. It has no affiliate or referral links and is not financial advice."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
+  {jsonLdFaq && <script type="application/ld+json" set:html={JSON.stringify(jsonLdFaq)} />}
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdPerson)} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdArticle)} />
+
+  <main class="page" data-no-entity-link data-alternatives-page={entry.slug}>
+    <nav class="crumb" aria-label="Breadcrumb">
+      <a href="/">{SITE.name}</a> <span>/</span>
+      <a href="/compare/">Compare</a> <span>/</span>
+      <span class="crumb-current">{entry.product} Alternatives</span>
+    </nav>
+
+    <header class="hero">
+      <h1>{entry.h1}</h1>
+      <Byline updated={updated} />
+      <Fragment set:html={altBlocks(entry.intro, hosts).replace(/<p>/g, '<p class="lede">')} />
+    </header>
+
+    <section class="section table-section" id="compare">
+      <h2>{entry.tableTitle}</h2>
+      {entry.tableNote && <p class="table-note" set:html={altInline(entry.tableNote, hosts)} />}
+      <div class="table-wrap">
+        <table class="alt-table">
+          <thead>
+            <tr>{columns.map((c) => <th scope="col">{c}</th>)}</tr>
+          </thead>
+          <tbody>
+            {entry.rows.map((row) => (
+              <tr class={row.subject ? "is-subject" : undefined}>
+                <th scope="row" set:html={altInline(row.product, hosts)} />
+                <td set:html={altInline(row.pricing, hosts)} />
+                <td set:html={altInline(row.bestFit, hosts)} />
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="alt-update" data-alternatives-update-cta>Are you one of these vendors? <a rel="nofollow" href={`/update-listing/?from=${from}`}>Update your listing</a></p>
+    </section>
+
+    <section class="section" id="choose">
+      <h2>{entry.chooseSection.heading}</h2>
+      <Fragment set:html={altBlocks(entry.chooseSection.body, hosts)} />
+      <div class="alt-add-cta" data-alternatives-add-cta>
+        <p>Want to be added to this alternatives page?</p>
+        <a rel="nofollow" href={`/sponsor/?from=${from}`}>Contact us</a>
+      </div>
+    </section>
+
+    {entry.alternatives.map((alt) => (
+      <section class="section">
+        <h2>{alt.heading}</h2>
+        <Fragment set:html={altBlocks(alt.body, hosts)} />
+      </section>
+    ))}
+
+    <section class="section">
+      <h2>{stillHeading}</h2>
+      <Fragment set:html={altBlocks(entry.stillBetterFit.body, hosts)} />
+    </section>
+
+    <section class="section verdict-section">
+      <h2>Verdict</h2>
+      <div class="verdict-box"><Fragment set:html={altBlocks(entry.verdict, hosts)} /></div>
+    </section>
+
+    {entry.faqs.length > 0 && (
+      <section class="section">
+        <h2>Frequently asked questions</h2>
+        <div class="faqs">
+          {entry.faqs.map((f) => (
+            <details class="faq">
+              <summary><h3>{f.question}</h3></summary>
+              <p set:html={altInline(f.answer, hosts)} />
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <p class="alt-disclaimer">{SITE.name} lists these products and the fees and prices each provider publishes on its own website. This is not financial advice. Fees and terms change, so check the provider's site before you open an account or sign up.</p>
+
+    {entry.related && entry.related.filter((r) => r.href.startsWith("/")).length > 0 && (
+      <section class="section">
+        <h2>Related on {SITE.name}</h2>
+        <ul class="related">
+          {entry.related.filter((r) => r.href.startsWith("/")).map((r) => <li><a href={r.href}>{r.label}</a></li>)}
+        </ul>
+      </section>
+    )}
+  </main>
+
+  <style>
+    .page { max-width: 920px; margin: 0 auto; padding: 16px 20px 56px; }
+    .crumb { font-size: 0.875rem; color: #666; padding: 8px 0 12px; }
+    .crumb a { color: var(--primary-dark); text-decoration: none; }
+    .crumb a:hover { text-decoration: underline; }
+    .crumb-current { color: #999; }
+    .hero { padding: 8px 0 16px; }
+    .hero h1 { font-size: 2.3rem; margin: 0 0 14px; line-height: 1.2; }
+    .hero :global(.lede) { font-size: 1.15rem; color: #3a3a3a; margin: 0 0 14px; line-height: 1.7; }
+    .section { padding: 18px 0 13px; border-top: 1px solid #EEF2F0; }
+    .section h2 { font-size: 1.5rem; margin: 0 0 16px; }
+    .section :global(p) { color: #2c2c2c; font-size: 1.05rem; line-height: 1.85; margin: 0 0 16px; }
+    .section :global(ul) { margin: 0 0 16px; padding-left: 22px; color: #2c2c2c; font-size: 1.05rem; line-height: 1.85; }
+    .section .table-note { font-size: 0.95rem; color: var(--muted); margin: 0 0 12px; }
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .alt-table { width: 100%; border-collapse: collapse; font-size: 0.97rem; }
+    .alt-table th, .alt-table td { padding: 11px 14px; text-align: left; vertical-align: top; border: 1px solid #e2ece8; }
+    .alt-table thead th { background: #f0f8f5; font-weight: 700; color: #1a3a30; }
+    .alt-table th[scope="row"] { font-weight: 600; color: #333; white-space: nowrap; }
+    .alt-table tbody tr:nth-child(even) td, .alt-table tbody tr:nth-child(even) th { background: #fafcfb; }
+    .alt-table tr.is-subject th, .alt-table tr.is-subject td { background: #FFF8EA; }
+    .section .alt-update { margin: 12px 0 0; font-size: 0.95rem; color: var(--muted); }
+    .alt-add-cta {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;
+      margin: 28px 0 8px; padding: 22px 28px; background: #0E1A16;
+      border-left: 4px solid var(--accent); border-radius: 14px;
+    }
+    .section .alt-add-cta p { margin: 0; flex: 1 1 260px; color: #F2F7F5; font-size: 1.02rem; line-height: 1.5; font-weight: 600; }
+    .alt-add-cta a {
+      flex-shrink: 0; padding: 12px 24px; border-radius: 999px; background: var(--accent); color: #0E1A16;
+      font-size: 0.95rem; font-weight: 700; line-height: 1; white-space: nowrap; text-decoration: none;
+    }
+    .alt-add-cta a:hover { background: #F0B95A; }
+    .verdict-box {
+      background: linear-gradient(135deg, #f0f9f5 0%, #e6f4ef 100%);
+      border-left: 4px solid var(--primary, #0e7c66); border-radius: 0 10px 10px 0; padding: 18px 22px;
+    }
+    .faqs { display: flex; flex-direction: column; gap: 8px; }
+    .faq { border: 1px solid #eee; border-radius: 8px; padding: 16px 18px; background: #fff; }
+    .faq summary { cursor: pointer; list-style: none; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary h3 { display: inline; font-size: 1.02rem; margin: 0; font-weight: 600; }
+    .faq[open] summary h3 { color: var(--primary-dark, #0a5c4a); }
+    .faq p { margin: 12px 0 0; }
+    .alt-disclaimer { margin: 24px 0 0; padding-top: 16px; border-top: 1px solid #EEF2F0; font-size: 0.9rem; line-height: 1.6; color: var(--muted); }
+    .related { margin: 0; padding-left: 22px; line-height: 1.9; }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.8rem; }
+      .section h2 { font-size: 1.28rem; }
+      .alt-table th, .alt-table td { padding: 8px 10px; font-size: 0.9rem; }
+      .alt-table th[scope="row"] { white-space: normal; }
+      .alt-add-cta { padding: 18px 20px; }
+    }
+  </style>
+</BaseLayout>

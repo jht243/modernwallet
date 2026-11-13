@@ -38,6 +38,7 @@ async function loadSources() {
         export { COMPARISONS } from './src/data/comparisons';
         export { ROUNDUPS } from './src/data/roundups';
         export { TEMPLATES } from './src/data/templates';
+        export { ALTERNATIVES } from './src/data/alternatives';
         export { STATE_BY_SLUG } from './src/data/states';
         export { isNoindexedPath } from './src/data/noindex';
       `,
@@ -97,6 +98,7 @@ async function buildIndex() {
   for (const c of src.COMPARISONS.filter((e) => !e.draft)) add(`/compare/${c.slug}`, c.h1 || c.title, 'Comparisons', `${c.title} ${c.optionA || ''} ${c.optionB || ''} ${c.targetKeyword || ''} vs`)
   for (const r of src.ROUNDUPS.filter((e) => !e.draft)) add(`/roundup/${r.slug}`, r.h1 || r.title, 'Roundups', `${r.title} ${r.targetKeyword || ''} ${r.category || ''} best`)
   for (const t of src.TEMPLATES) add(`/templates/${t.slug}`, t.h1 || t.title, 'Templates', `${t.title} ${t.targetKeyword || ''} template download`)
+  for (const p of src.ALTERNATIVES || []) add(`/alternatives/${p.slug}`, p.h1 || p.title, 'Comparisons', `${p.title} ${p.product} alternatives vs compare`)
 
   return [...byPath.values()]
 }
