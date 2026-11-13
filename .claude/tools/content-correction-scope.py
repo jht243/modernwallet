@@ -112,8 +112,8 @@ def literal_correction(root,name,before,after,old_text,new_text,route):
                 quote = match.group('q')
                 raw=match.group()[1:-1]
                 if '${' in raw:
-                    if quote == '`':
-                        return None, None
+                    # Preserve interpolated code verbatim. Only a change to it
+                    # invalidates the text-only correction in another literal.
                     # Quoted examples are literal text. Keep them byte-for-byte
                     # in the source shape so editing the example stays a full review.
                     shape.append(match.group())

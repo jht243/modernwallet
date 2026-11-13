@@ -508,7 +508,7 @@ def blocked(root,evidence):
  path=active(root);require(path is not None,'No owned competitor intake')
  value=read(evidence)
  require(value.get('intakeSha256')==path.stem and value.get('status')=='blocked','Bind an honest failure to this original intake')
- require(value.get('blockingKind') in ('professional-review','exhausted-review-budget','external-service','source-freshness','authorization-hold'),'Only actual native holds/failures can stop unfinished production')
+ require(value.get('blockingKind') in ('professional-review','liability-hold','exhausted-review-budget','external-service','source-freshness','authorization-hold'),'Only actual native holds/failures can stop unfinished production')
  config=root/'.claude/content-review-policy.json'
  require(not (value.get('blockingKind')=='exhausted-review-budget' and config.is_file() and read(config).get('releaseAtAuditLimit') is True),'An editorial audit limit uses the configured automatic release; finish missing original reviews and publish eligible exact candidates, without a new allowance or reset')
  reason=(value.get('reason','')+' '+value.get('nextAction','')).lower()

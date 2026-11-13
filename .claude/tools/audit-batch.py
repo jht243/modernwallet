@@ -258,8 +258,15 @@ def _finalize_review_in_root(root, snapshot_path, review_path, target_path):
 
         eff_prof = selected or rr.get('reviewProfile') or cfg['defaultProfile']
         ceiling = crp.audit_limit(cfg, eff_prof, ra if isinstance(ra, dict) else None)
+        liability_blocked = False
+        if hasattr(crp, 'validate_liability_block'):
+            try:
+                liability_blocked = crp.validate_liability_block(rr, page)
+            except ValueError as exc:
+                errors.append(f'[{rpath}] liabilityBlock invalid: {exc}')
         final_fail = (
             verdict == 'FAIL'
+            and not liability_blocked
             and crp.capped_release(root, snapshot)
             and admission is not None
             and admission.get('number', 0) >= ceiling
@@ -273,7 +280,10 @@ def _finalize_review_in_root(root, snapshot_path, review_path, target_path):
         else:
             if verdict == 'PASS' or final_fail:
                 try:
-                    renderer.testing_attribution_check(page['semantic'], supplied_checks)
+                    if 'allow_fail' in inspect.signature(renderer.testing_attribution_check).parameters:
+                        renderer.testing_attribution_check(page['semantic'], supplied_checks, allow_fail=final_fail)
+                    elif not final_fail:
+                        renderer.testing_attribution_check(page['semantic'], supplied_checks)
                 except ValueError as exc:
                     errors.append(f'[{rpath}] testingAndAttribution check failed: {exc}')
             for ck, cv in supplied_checks.items():
@@ -284,7 +294,7 @@ def _finalize_review_in_root(root, snapshot_path, review_path, target_path):
                 ev_len = len(str(cv.get('evidence') or '').strip())
                 if verdict == 'PASS' or final_fail:
                     allowed = ['PASS', 'NA'] if ck in ('testingAndAttribution', 'scopeAndExclusions') else ['PASS']
-                    if final_fail and ck not in ('testingAndAttribution', 'scopeAndExclusions'):
+                    if final_fail:
                         allowed = allowed + ['FAIL']
                     if st not in allowed:
                         errors.append(f'[{rpath}] checks.{ck}.status is {st!r}; allowed={allowed}')

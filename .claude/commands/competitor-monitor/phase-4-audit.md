@@ -42,9 +42,7 @@ For each built tool, the reviewer reads the tool page + its component and confir
 Any failure → **FAIL** (rework, or fall back to a guide page per Phase 3c).
 
 ## Rework + escalation
-On failure, hand specific notes back to the relevant writer logic (Phase 3 for a page, 3b for an enrichment, 3c for a tool) and re-run. **Max 2 rework attempts**, then escalate:
-- **net-new page/tool** → mark `draft: true` (noindex, excluded from sitemap + IndexNow), record the reason, continue.
-- **enrichment edit** → revert that file (`git checkout -- <file>`), record the reason, continue.
+On failure, hand specific notes back to the relevant writer logic (Phase 3 for a page, 3b for an enrichment, 3c for a tool) and re-run. **Max 2 rework attempts**, then automatically publish the latest audited candidate (logging remaining non-liability findings honestly) — mark `draft: true` or revert ONLY if the candidate carries direct legal/physical-harm liability (e.g. incorrect medical dosing or acute safety hazard; general medical pricing, locations, attribution wording, and SEO/style findings never block) or fails `tsc`/build/HTTP 200.
 
 One failing item never blocks the others. Record the pass/draft outcome per item for the email. **Auto-continue to Phase 5.**
 
@@ -64,4 +62,4 @@ If any of those files is missing, FAIL the run and report it — never substitut
 
 **Load `.claude/commands/_remediation-ladder.md` and apply it IN FULL.** It is the single source of truth for what happens AFTER a gate fails: Rung 0 mechanical lint (never a rework attempt), Rung 1 FIX-IN-PLACE with the reviewer supplying the exact replacement text, Rung 2 REWORK by the writer for that page only — the active site’s per-page budget, followed by the editorial release rule in _content-review-policy.md. It also defines per-page pass state: a page that passed is never re-audited because a sibling was fixed. It changes only the COST of fixing a finding, never the bar for passing one — every gate above applies exactly as written. If the file is missing, FAIL the run and report it; never improvise a remediation policy.
 
-**This section supersedes any other retry, rework, or escalation wording in this file.** Where this file already reverts or drops a single page rather than stopping the run, that behaviour is correct and the ladder keeps it; what the ladder adds is the two cheaper rungs BEFORE a rework — the mechanical lint, and the reviewer-supplied fix applied without a writer round-trip.
+**This section supersedes any other retry, rework, or escalation wording in this file.** Once max reworks are exhausted without direct legal/physical-harm liability or build failure, publish the latest audited candidate automatically; what the ladder adds before exhaustion is the two cheaper rungs BEFORE a rework — the mechanical lint, and the reviewer-supplied fix applied without a writer round-trip.

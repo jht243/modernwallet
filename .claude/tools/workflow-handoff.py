@@ -450,6 +450,9 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
     counters = copy.deepcopy(prev_obj['reviewCounters']) if prev_obj else {'reviews': 0, 'reworks': 0}
     findings = copy.deepcopy(prev_obj['findings']) if prev_obj else []
     known_ids = {f['id'] for f in findings}
+    releasable_exhausted = []
+    liability_blocked_exhausted = []
+    rework_eligible = []
 
     if rev_obj is not None:
         add_source(review_path, 'Recorded independent Phase 4 rendered-page audit report')
@@ -459,7 +462,48 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
             if prev_rev_sha != cur_rev_sha:
                 counters['reviews'] += 1
         if phase == 'write':
+            exhausted_paths = set()
+            crp_path = root / '.claude/tools/content-review-policy.py'
+            if (root / '.claude/content-review-policy.json').is_file() and crp_path.is_file():
+                spec_crp = importlib.util.spec_from_file_location('handoff_crp_guard', crp_path)
+                crp_mod = importlib.util.module_from_spec(spec_crp)
+                spec_crp.loader.exec_module(crp_mod)
+                active_route_norms = {(r.rstrip('/') or '/') for r in routes}
+                for r_item in rev_obj.get('routes', []):
+                    r_raw = r_item.get('path', '')
+                    r_norm = r_raw.rstrip('/') or '/'
+                    if r_norm not in active_route_norms or r_item.get('verdict') != 'FAIL':
+                        continue
+                    try:
+                        with crp_mod.Journal(root, canonical_base, r_norm) as journal:
+                            cyc = journal.cycle
+                    except (ValueError, KeyError, OSError):
+                        cyc = None
+                    if cyc is None:
+                        continue
+                    last_r = crp_mod.last_authoritative_round(cyc)
+                    max_r = cyc.get('maximumRounds', crp_mod.audit_limit(crp_mod.policy(root), cyc['profile'], cyc.get('lastRiskAssessment')))
+                    used_r = last_r.get('number', len(cyc.get('rounds', [])))
+                    if last_r.get('status') == 'complete' and used_r >= max_r:
+                        exhausted_paths.add(r_norm)
+                        if last_r.get('liabilityBlock'):
+                            liability_blocked_exhausted.append(r_raw)
+                        else:
+                            releasable_exhausted.append(r_raw)
+                    else:
+                        rework_eligible.append(r_raw)
+                require(
+                    not ((releasable_exhausted or liability_blocked_exhausted) and not rework_eligible),
+                    'All failing routes have exhausted their audit budget (0 rounds remaining; '
+                    'publishAtAuditLimit=' + json.dumps(releasable_exhausted)
+                    + ', liabilityBlocked=' + json.dumps(liability_blocked_exhausted)
+                    + '). NEVER run --phase write on exhausted routes (post-cap edits invalidate the final audited snapshot while reserve refuses another round): '
+                    'run auto-seal --phase publish directly on the final audited snapshot/review '
+                    '(or project non-liability-blocked routes via content-review-policy.py project when liabilityBlocked is non-empty).'
+                )
             for r_idx, r_item in enumerate(rev_obj.get('routes', []), 1):
+                if (r_item.get('path', '').rstrip('/') or '/') in exhausted_paths:
+                    continue
                 for f_idx, f_item in enumerate(r_item.get('findings', []), 1):
                     if isinstance(f_item, dict):
                         fid = str(f_item.get('id') or f'R{counters["reviews"]}-{r_idx}-F{f_idx}')
@@ -494,13 +538,20 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
         'audit': 'Independently audit captured rendered Mindmap routes against primary sources and editorial standards.',
         'publish': 'Publish exact independently reviewed Mindmap output to main and verify live.',
     }
+    effective_next_action = (next_action or default_actions[phase]).strip()
+    if phase == 'write' and (releasable_exhausted or liability_blocked_exhausted) and rework_eligible:
+        locked_all = releasable_exhausted + liability_blocked_exhausted
+        effective_next_action = (
+            'DO NOT EDIT EXHAUSTED ROUTES (' + ', '.join(locked_all)
+            + '); rework ONLY ' + ', '.join(rework_eligible) + '. ' + effective_next_action
+        )
     draft = {
         'version': 1,
         'canonicalBase': canonical_base,
         'jobId': resolved_job,
         'producer': producer.strip(),
         'routes': routes,
-        'nextAction': (next_action or default_actions[phase]).strip(),
+        'nextAction': effective_next_action,
         'candidates': candidates,
         'sources': list(sources_by_path.values()),
         'findings': findings,
@@ -560,6 +611,12 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
     }
     if pack_out:
         res['contextPacket'] = str(pack_out.resolve().relative_to(root.resolve()))
+    if releasable_exhausted:
+        res['lockedAtAuditLimitRoutes'] = releasable_exhausted
+    if liability_blocked_exhausted:
+        res['liabilityBlockedRoutes'] = liability_blocked_exhausted
+    if rework_eligible:
+        res['reworkEligibleRoutes'] = rework_eligible
     role_agent = (
         f'.claude/agents/layer3-mindmap-{phase}.md'
         if is_layer3_local

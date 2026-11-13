@@ -68,6 +68,11 @@
       "sha256": "a01af567ba004b01efcea1405991abcb33cfad1864f8d8966749ad7220a1a6ae",
       "commit": "f6b6ebd859a1fe7f85c54af24cf4f04237565ff3",
       "reason": "Preserve completed and pending independent review history across shared content-review-policy and durable-evidence tool sync."
+    },
+    {
+      "sha256": "727de984caa3bc99b3124dfadf1b1e1e073b2995c85ead165052d25a904f3cfc",
+      "commit": "cd22ec0d8a1406460223d04c7c061e226e5ce882",
+      "reason": "Preserve completed and pending independent review history across the November 13 fleet audit-exhaustion auto-publish and narrow direct legal-liability block update."
     }
   ],
   "releaseAtAuditLimit": true,

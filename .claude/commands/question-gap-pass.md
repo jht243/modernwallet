@@ -52,7 +52,7 @@ Phase 3 — Coverage scoring: per question → Answered / Partial / Missing, + c
         ▼   ‼️ HARD HUMAN GATE: approve which sections to add before ANY page is edited
 Phase 4 — Enrich pages in place: add ONLY approved high-value missing sections (targeted Edits, never regenerate)
         ▼
-Phase 5 — Adversarial audit (gates the enriched pages; max 2 reworks → revert that page's edit)
+Phase 5 — Adversarial audit (gates the enriched pages; max 2 reworks → publish latest audited edit unless direct legal/physical-harm liability)
         ▼
 Phase 6 — STAGE + push: sitemap lastmod bump + typecheck + commit + push + IndexNow (enriched URLs)
 ```

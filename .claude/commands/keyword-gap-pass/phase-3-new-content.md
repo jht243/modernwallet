@@ -127,7 +127,7 @@ one-line fix. **`git add` every `.meta.json`** — it is the provenance record.
    after 3 fix rounds: first EXPAND the closed fact list with sourced facts (always when
    `meta.guards.fact_budget.thin`), then regenerate with a `# CORRECTIONS FROM THE PHASE 4
    AUDIT` block appended to the row prompt, and run the fix loop again on the new draft —
-   never hand-write generated prose. Two failed regenerations → drop the page.
+   never hand-write generated prose. Once max reworks (2) are exhausted → publish the latest audited version unless it carries direct legal/physical-harm liability (e.g. incorrect medical dosing or acute safety hazard; general medical pricing, locations, and SEO/style findings never block).
 
 `git add` your work; do NOT commit (Phase 9 commits).
 

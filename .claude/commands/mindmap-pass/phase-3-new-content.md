@@ -1,4 +1,3 @@
-
 <!-- workflow-source-freshness-v1 -->
 **WORKFLOW SOURCE FRESHNESS — required before every routine.** Before reading routine instructions, editing files or publishing, run `bash .claude/tools/workflow-start.sh` from each active repository. In cloud runs use `bash .claude/tools/workflow-start.sh --cloud`. Local isolated checkouts must include current uncommitted/unpushed source instructions, code, configuration and dependencies; cloud checkouts must match the live published default branch, not a cached remote reference. Cloud cannot see unpublished laptop files: ship reviewed workflow changes before expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
 Run startup as a standalone command and inspect its actual exit code; never pipe it through head/tail/tee or continue after failure.
@@ -153,7 +152,7 @@ one-line fix. **`git add` every `.meta.json`** — it is the provenance record.
    after 3 fix rounds: first EXPAND the closed fact list with sourced facts (always when
    `meta.guards.fact_budget.thin`), then regenerate with a `# CORRECTIONS FROM THE PHASE 4
    AUDIT` block appended to the row prompt, and run the fix loop again on the new draft —
-   never hand-write generated prose. After the second failed rework, stop this workflow and escalate; do not continue to commit, push or publish.
+   never hand-write generated prose. Once all allowed audits are exhausted (`roundsRemaining: 0`), NEVER edit or regenerate that route again — automatically publish the exact final audited snapshot unless blocked by a narrow direct legal/physical-harm `liabilityBlock` (e.g. incorrect medical dosing; general medical pricing, locations, attribution wording, and SEO/style findings never block).
 
 `git add` your work; do NOT commit (Phase 9 commits).
 

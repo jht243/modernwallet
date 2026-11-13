@@ -216,13 +216,24 @@ class Tests(unittest.TestCase):
         del self.config['canonicalHosts'];self.put(p.CONFIG,self.config)
         self.assertFalse(p.capped_release(self.root,self.snap))
 
-    def test_capped_release_preserves_exclusions_and_testing_honesty(self):
-        admission=self.reserve(1);rr=self.report(admission)['routes'][0]
+    def test_capped_release_allows_non_liability_findings_while_blocking_lazy_na_and_direct_liability(self):
+        self.snap=self.snapshot('Tested and reviewed by our clinic editorial team')
+        admission=p.reserve(self.root,self.put('reports/tested-snap.json',self.snap),'/guide','fixture-job','independent',self.root/'reports/tested-admit.json')
+        rr=self.report(admission)['routes'][0]
         rr['checks']['scopeAndExclusions']['status']='FAIL'
-        with self.assertRaisesRegex(ValueError,'scopeAndExclusions'):p.pass_evidence(self.root,self.snap,rr,'standard',retain_fail=True)
-        rr['checks']['scopeAndExclusions']['status']='PASS'
         rr['checks']['testingAndAttribution']['status']='FAIL'
-        with self.assertRaisesRegex(ValueError,'testingAndAttribution'):p.pass_evidence(self.root,self.snap,rr,'standard',retain_fail=True)
+        p.pass_evidence(self.root,self.snap,rr,'standard',retain_fail=True)
+        rr['checks']['testingAndAttribution']['status']='NA'
+        with self.assertRaisesRegex(ValueError,'Visible testing attribution cannot be NA'):
+            p.pass_evidence(self.root,self.snap,rr,'standard',retain_fail=True)
+        rr['checks']['testingAndAttribution']['status']='FAIL'
+        rr['liabilityBlock']={
+            'category':'medical-dosing-or-treatment-harm',
+            'quote':'Tested and reviewed by',
+            'harm':'Direct actionable medical dosing/clinical sign-off liability fixture for negative-path validation.',
+        }
+        with self.assertRaisesRegex(ValueError,'Direct legal/physical liability'):
+            p.pass_evidence(self.root,self.snap,rr,'standard',retain_fail=True)
 
     def test_capped_release_preserves_required_professional_approval(self):
         self.set_level('high');admission=self.reserve(1);rr=self.report(admission)['routes'][0]
@@ -268,13 +279,128 @@ class Tests(unittest.TestCase):
         with p.Journal(self.root,'https://example.com','/guide') as journal:files=d.collect(self.root,journal)
         self.assertEqual(files['reports/working.json'],p.sha(current.read_bytes()));self.assertIn(str(d.cache_path(self.root,ref['path'],ref['sha256']).relative_to(self.root)),files)
 
-    def test_capped_editorial_fail_never_waives_real_exclusions_or_professional_approval(self):
-        self.set_level('high');self.snap=self.snapshot();report=self.report({'admissionArtifact':{}},'FAIL');rr=report['routes'][0]
+    def test_capped_editorial_fail_publishes_non_liability_checks_while_preserving_liability_and_professional_approval(self):
+        self.set_level('high');self.snap=self.snapshot('Outpatient MRI pricing ranges from $450 to $1,100 across our three Austin clinic locations');report=self.report({'admissionArtifact':{}},'FAIL');rr=report['routes'][0]
         for name in ['testingAndAttribution','scopeAndExclusions']:
             changed=copy.deepcopy(rr);changed['checks'][name]['status']='FAIL'
-            with self.assertRaises(ValueError):p.pass_evidence(self.root,self.snap,changed,'high',retain_fail=True)
+            p.pass_evidence(self.root,self.snap,changed,'high',retain_fail=True)
+        liab=copy.deepcopy(rr)
+        liab['liabilityBlock']={
+            'category':'medical-dosing-or-treatment-harm',
+            'quote':'Outpatient MRI pricing ranges',
+            'harm':'Synthetic direct medical dosing harm fixture verifying that liabilityBlock hard-blocks release.',
+        }
+        with self.assertRaisesRegex(ValueError,'Direct legal/physical liability'):p.pass_evidence(self.root,self.snap,liab,'high',retain_fail=True)
         self.snap['manifest']['routes'][0]['professionalReviewRequired']=True;rr['factualReview']['professionalReview']['status']='FAIL'
         with self.assertRaisesRegex(ValueError,'professionalReview'):p.pass_evidence(self.root,self.snap,rr,'high',retain_fail=True)
+
+    def test_general_medical_pricing_and_locations_publish_at_audit_exhaustion(self):
+        self.set_level('standard')
+        self.config.update(releaseAtAuditLimit=True,canonicalHosts=['example.com']);self.put(p.CONFIG,self.config)
+        for round_num in (1,2):
+            self.snap=self.snapshot(f'Round {round_num}: Outpatient MRI pricing ranges from $450 to $1,100 across our three Austin clinic locations; call scheduling to confirm insurance')
+            snap_path=self.put(f'reports/med-pricing-s{round_num}.json',self.snap)
+            admit=p.reserve(self.root,snap_path,'/guide','med-pricing-job','independent',self.root/f'reports/med-pricing-a{round_num}.json')
+            report=self.report(admit,'FAIL')
+            report['routes'][0]['checks']['sourceSupport']['status']='FAIL'
+            report['routes'][0]['checks']['scopeAndExclusions']['status']='FAIL'
+            report['routes'][0]['checks']['testingAndAttribution']['status']='FAIL'
+            res=p.record(self.root,self.put(f'reports/med-pricing-r{round_num}.json',report))
+            if round_num==1:
+                self.assertEqual(res[0]['roundsRemaining'],1)
+                self.assertEqual(res[0]['disposition'],'rework-and-reaudit')
+            else:
+                self.assertEqual(res[0]['roundsRemaining'],0)
+                self.assertEqual(res[0]['disposition'],'publish-at-audit-limit')
+        self.assertTrue(p.check_rendered(self.root,self.snap,report))
+        with mock.patch.object(render,'__file__',str(self.root/'.claude/tools/rendered-audit.py')),mock.patch.object(render,'content_review_policy',return_value=p):
+            render.review_check(self.snap,report)
+        commit='9'*40
+        p.mark_published(self.root,self.snap,report,commit,{'commit':commit,'status':'live','verifiedAt':'2026-11-13','evidenceUrl':'https://example.com/guide'})
+        with p.Journal(self.root,'https://example.com','/guide') as journal:
+            self.assertEqual(journal.cycle['status'],'published')
+
+    def test_direct_liability_medical_dosing_blocks_at_audit_exhaustion_while_sibling_publishes(self):
+        self.set_level('light')
+        self.config.update(releaseAtAuditLimit=True,canonicalHosts=['example.com']);self.put(p.CONFIG,self.config)
+        dosing_html=fixtures.HTML.replace('/guide','/dosing').replace('Useful complete','Adults should take 5000 mg of warfarin daily to treat blood clots. Useful complete')
+        pricing_html=fixtures.HTML.replace('/guide','/clinic-pricing').replace('Useful complete','Clinic MRI pricing is $550 at our Dallas location. Useful complete')
+        manifest={
+            'author':'writer','canonicalBase':'https://example.com','workflowKind':'mindmap-pass',
+            'routes':[
+                {'path':'/dosing','expectedUpdatedDate':'2026-10-27','claimCategories':['ordinary']},
+                {'path':'/clinic-pricing','expectedUpdatedDate':'2026-10-27','claimCategories':['ordinary']},
+            ],
+        }
+        r_dosing=render.parse(dosing_html,manifest['routes'][0],'http://localhost:3000','https://example.com')
+        r_pricing=render.parse(pricing_html,manifest['routes'][1],'http://localhost:3000','https://example.com')
+        snap={
+            'manifest':manifest,'routes':[r_dosing,r_pricing],'baseUrl':'https://example.com',
+            'capturedAt':'2026-11-13T18:00:00+00:00',
+            'contentReviewPolicy':{'version':p.VERSION,'sha256':p.policy_hash(self.root)},
+        }
+        snap['snapshotSha256']=render.digest({k:v for k,v in snap.items() if k!='snapshotSha256'})
+        self.snap=snap
+        snap_path=self.put('reports/mixed-liab-snap.json',snap)
+        a_dos=p.reserve(self.root,snap_path,'/dosing','liab-job','independent',self.root/'reports/a-dos.json')
+        a_pri=p.reserve(self.root,snap_path,'/clinic-pricing','liab-job','independent',self.root/'reports/a-pri.json')
+        base_checks={k:{'status':'PASS','evidence':'Synthetic fixture evidence for negative-path testing only.'} for k in render.CHECKS}
+        dos_facts={k:{'status':'PASS','evidence':'Synthetic fixture evidence exercising validation only; never a production review.'} for k in p.FACTS['high']+['riskClassification','seoQuality']}
+        pri_facts={k:{'status':'PASS','evidence':'Synthetic fixture evidence exercising validation only; never a production review.'} for k in p.FACTS['light']+['riskClassification','seoQuality']}
+        dos_text=p.claim_text(r_dosing['semantic'])
+        dos_assess={
+            'textSha256':p.sha(dos_text.encode()),
+            'rationale':'Actionable warfarin dosage instruction creates direct clinical patient harm if erroneous.',
+            'consequentialClaims':[{'category':'medical','quote':'take 5000 mg of warfarin daily','reason':'Actionable medication dosing instruction on blood-thinner regimen.'}],
+            'incidentalMentions':[],
+        }
+        row_dos={
+            'path':'/dosing','fingerprint':r_dosing['fingerprint'],'verdict':'FAIL','reviewProfile':'high',
+            'riskAssessment':dos_assess,'reviewBudget':a_dos['admissionArtifact'],
+            'checks':{**copy.deepcopy(base_checks),'sourceSupport':{'status':'FAIL','evidence':'5000 mg warfarin is 1000x normal therapeutic dosing and causes fatal hemorrhage.'}},
+            'factualReview':dos_facts,
+            'liabilityBlock':{
+                'category':'medical-dosing-or-treatment-harm',
+                'quote':'take 5000 mg of warfarin daily',
+                'harm':'Incorrect 5000 mg warfarin dosing instruction creates severe hemorrhage and fatal overdose liability if acted upon by a reader.',
+            },
+        }
+        # Verify invalid liabilityBlock shapes fail closed
+        for bad_block in (
+            {'category':'pricing','quote':'take 5000 mg of warfarin daily','harm':'x'*50},
+            {'category':'medical-dosing-or-treatment-harm','quote':'not on page at all','harm':'x'*50},
+            {'category':'medical-dosing-or-treatment-harm','quote':'take 5000 mg of warfarin daily','harm':'too short'},
+        ):
+            bad_row=copy.deepcopy(row_dos);bad_row['liabilityBlock']=bad_block
+            with self.assertRaises(ValueError):p.validate_liability_block(bad_row,r_dosing)
+        # Advance /dosing through all 3 high-risk rounds with liabilityBlock still unresolved
+        row_pri={
+            'path':'/clinic-pricing','fingerprint':r_pricing['fingerprint'],'verdict':'FAIL','reviewProfile':'light',
+            'riskAssessment':self.assessment(r_pricing['semantic']),'reviewBudget':a_pri['admissionArtifact'],
+            'checks':{**copy.deepcopy(base_checks),'scopeAndExclusions':{'status':'FAIL','evidence':'Editorial scope boundary note on general clinic pricing range.'}},
+            'factualReview':pri_facts,
+        }
+        r1={'reviewer':'independent','snapshotSha256':snap['snapshotSha256'],'routes':[row_dos,row_pri]}
+        r1_path=self.put('reports/mixed-r1.json',r1)
+        res1=p.record(self.root,r1_path)
+        by_path1={x['route']:x for x in res1}
+        self.assertEqual(by_path1['/clinic-pricing']['disposition'],'publish-at-audit-limit')
+        self.assertEqual(by_path1['/dosing']['disposition'],'rework-liability-and-reaudit')
+        for rnum in (2,3):
+            ad=p.reserve(self.root,snap_path,'/dosing','liab-job','independent',self.root/f'reports/a-dos-{rnum}.json')
+            rd_row=copy.deepcopy(row_dos);rd_row['reviewBudget']=ad['admissionArtifact']
+            rn={'reviewer':'independent','snapshotSha256':snap['snapshotSha256'],'routes':[rd_row]}
+            rn_path=self.put(f'reports/mixed-r{rnum}.json',rn)
+            res_n=p.record(self.root,rn_path)
+            if rnum==3:
+                self.assertEqual(res_n[0]['roundsRemaining'],0)
+                self.assertEqual(res_n[0]['disposition'],'blocked-liability')
+        with self.assertRaises(ValueError):p.check_rendered(self.root,snap,r1)
+        with self.assertRaisesRegex(ValueError,'liability-blocked'):
+            p.project(self.root,snap_path,r1_path,['/dosing'],self.root/'reports/bad-s.json',self.root/'reports/bad-r.json')
+        out_s=self.root/'reports/clean-pri-s.json';out_r=self.root/'reports/clean-pri-r.json'
+        p.project(self.root,snap_path,r1_path,['/clinic-pricing'],out_s,out_r)
+        self.assertTrue(p.check_rendered(self.root,p.read(out_s),p.read(out_r)))
 
     def test_real_durable_round_two_survives_mutable_dependencies_and_fresh_checkout(self):
         import shutil

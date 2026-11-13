@@ -11,7 +11,7 @@ class Tests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
-        self.root = Path(self.tmp.name)
+        self.root = Path(self.tmp.name).resolve()
         (self.root / '.claude').mkdir()
         (self.root / '.claude/content-review-policy.json').write_text('{"siteId":"fixture"}')
         self.candidate = self.root / 'candidate.txt'
@@ -150,6 +150,94 @@ class Tests(unittest.TestCase):
         )
         self.assertEqual(res_p['reviewCounters'], {'reviews': 3, 'reworks': 1})
         h.handoff_check(self.root, hp)
+
+    def test_auto_seal_refuses_post_cap_write_when_all_audits_exhausted(self):
+        crp_src = Path(__file__).with_name('content-review-policy.py')
+        ren_src = Path(__file__).with_name('rendered-audit.py')
+        dur_src = Path(__file__).with_name('content-review-durable.py')
+        (self.root / '.claude/tools').mkdir(parents=True, exist_ok=True)
+        (self.root / '.claude/commands').mkdir(parents=True, exist_ok=True)
+        (self.root / '.claude/tools/content-review-policy.py').write_bytes(crp_src.read_bytes())
+        (self.root / '.claude/tools/rendered-audit.py').write_bytes(ren_src.read_bytes())
+        (self.root / '.claude/tools/content-review-durable.py').write_bytes(dur_src.read_bytes())
+        (self.root / '.claude/commands/_content-review-policy.md').write_text('Fixture policy contract.\n')
+        (self.root / '.claude/content-review-policy.json').write_text(json.dumps({
+            'version': 'risk-review-budget-2026-11-08.1',
+            'siteId': 'fixture',
+            'defaultProfile': 'light',
+            'minimumProfile': 'light',
+            'roundLimits': {'light': 1, 'standard': 2, 'high': 3},
+            'releaseAtAuditLimit': True,
+            'canonicalHosts': ['fixture.example'],
+        }))
+        import subprocess
+        subprocess.run(['git', 'init', '-q', str(self.root)], check=True)
+        spec_c = importlib.util.spec_from_file_location('crp_handoff_t', self.root / '.claude/tools/content-review-policy.py')
+        crp = importlib.util.module_from_spec(spec_c); spec_c.loader.exec_module(crp)
+        spec_r = importlib.util.spec_from_file_location('ren_handoff_t', self.root / '.claude/tools/rendered-audit.py')
+        ren = importlib.util.module_from_spec(spec_r); spec_r.loader.exec_module(ren)
+
+        run_dir = self.root / 'reports/mindmap-pass/run-cap'
+        run_dir.mkdir(parents=True)
+        manifest = run_dir / 'approval-manifest.json'
+        manifest.write_text(json.dumps({
+            'jobId': 'job-cap-1',
+            'actions': [{'id': 'A1', 'bucket': 'create new content', 'target': '/guides/alpha'}],
+        }))
+        html = (
+            '<html><head><title>Alpha</title><link rel="canonical" href="https://fixture.example/guides/alpha">'
+            '<meta name="robots" content="index,follow">'
+            '<script type="application/ld+json">{"@type":"Article","datePublished":"2026-11-13","dateModified":"2026-11-13","url":"https://fixture.example/guides/alpha"}</script>'
+            '</head><body><main><h1>Alpha</h1><p>Updated Nov 13, 2026</p><p>' + ('Plain clinic pricing overview. ' * 15) + '</p></main></body></html>'
+        )
+        rspec = {'path': '/guides/alpha', 'expectedUpdatedDate': '2026-11-13', 'claimCategories': ['ordinary']}
+        page = ren.parse(html, rspec, 'http://localhost:3000', 'https://fixture.example')
+        snap = {
+            'manifest': {'author': 'writer-1', 'canonicalBase': 'https://fixture.example', 'workflowKind': 'mindmap-pass', 'routes': [rspec]},
+            'routes': [page],
+            'baseUrl': 'https://fixture.example',
+            'capturedAt': '2026-11-13T18:00:00+00:00',
+            'contentReviewPolicy': {'version': crp.VERSION, 'sha256': crp.policy_hash(self.root)},
+        }
+        snap['snapshotSha256'] = ren.digest({k: v for k, v in snap.items() if k != 'snapshotSha256'})
+        snap_path = run_dir / 'snapshot-r1.json'
+        snap_path.write_text(json.dumps(snap))
+        admit = crp.reserve(self.root, snap_path, '/guides/alpha', 'job-cap-1', 'auditor-1', run_dir / 'admit-r1.json')
+        text = crp.claim_text(page['semantic'])
+        rev = {
+            'reviewer': 'auditor-1',
+            'snapshotSha256': snap['snapshotSha256'],
+            'routes': [{
+                'path': '/guides/alpha',
+                'fingerprint': page['fingerprint'],
+                'verdict': 'FAIL',
+                'reviewProfile': 'light',
+                'reviewBudget': admit['admissionArtifact'],
+                'riskAssessment': {
+                    'textSha256': crp.sha(text.encode()),
+                    'rationale': 'Ordinary pricing overview with zero medical dosing or acute safety liability.',
+                    'consequentialClaims': [],
+                    'incidentalMentions': [],
+                },
+                'checks': {
+                    k: {'status': 'FAIL' if k == 'sourceSupport' else 'PASS', 'evidence': 'Synthetic test evidence verifying audit-exhaustion guard behavior.'}
+                    for k in ren.CHECKS
+                },
+                'factualReview': {
+                    k: {'status': 'PASS', 'evidence': 'Synthetic factual check evidence for handoff cap test.'}
+                    for k in crp.FACTS['light'] + ['riskClassification', 'seoQuality']
+                },
+            }],
+        }
+        rev_path = run_dir / 'review-r1.json'
+        rev_path.write_text(json.dumps(rev))
+        crp.record(self.root, rev_path)
+
+        with self.assertRaisesRegex(ValueError, 'exhausted their audit budget'):
+            h.auto_seal(
+                self.root, phase='write', manifest_path=manifest, producer='auditor-1',
+                out_path=run_dir / 'forbidden-write.json', snapshot_path=snap_path, review_path=rev_path, rework=True,
+            )
 
 
 if __name__ == '__main__':

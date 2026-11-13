@@ -76,14 +76,15 @@ def request_contract(root, plan):
     require(covered == set(rows), 'Substantive action is not tied to the original request')
 
 
-def request_review(review, request):
+def request_review(review, request, allow_fail=False):
     checks = review.get('requestCoverage', [])
     require(isinstance(checks, list), 'Missing request coverage review')
     expected = {r['id'] for r in request['requirements']}
     require(len(checks) == len(expected) and {c.get('requirementId') for c in checks} == expected,
             'Review must cover every original request requirement exactly once')
+    allowed = ('PASS', 'FAIL') if allow_fail else ('PASS',)
     for check in checks:
-        require(check.get('status') == 'PASS', 'Original request is not fulfilled: ' + str(check.get('requirementId')))
+        require(check.get('status') in allowed, 'Original request is not fulfilled: ' + str(check.get('requirementId')))
         prose(check.get('evidence'), 'original request coverage evidence')
 
 
@@ -761,14 +762,14 @@ def audit_analysis(root, packet, review, replay):
         return True
     for key in ['usefulness', 'sourceAndAssumptions', 'conditionsAndCounterexample', 'renderedConsistency', 'localExclusions']:
         c = review.get(key, {})
-        require(c.get('status') in (('PASS','FAIL') if at_limit and key!='localExclusions' else ('PASS',)), 'Missing independent analysis check: ' + key)
+        require(c.get('status') in (('PASS','FAIL') if at_limit else ('PASS',)), 'Missing independent analysis check: ' + key)
         content(c.get('evidence'), key + ' evidence')
     plan = read(artifact(root, packet['approvedPlan']['manifest']))
     request_review(review, {'requirements': [r for r in plan['request']['requirements']
-                                            if packet['approvedPlan']['actionId'] in r['actionIds']]})
+                                            if packet['approvedPlan']['actionId'] in r['actionIds']]}, allow_fail=at_limit)
     for key in ['presentationReview', 'caseUseReview']:
         c = review.get(key, {})
-        require(c.get('status') == 'PASS', 'Missing independent check: ' + key)
+        require(c.get('status') in (('PASS','FAIL') if at_limit else ('PASS',)), 'Missing independent check: ' + key)
         prose(c.get('evidence'), key + ' evidence')
     snapshot, rendered = analysis_render_pair(root, packet, review)
     module_path = local(root, '.claude/tools/rendered-audit.py')

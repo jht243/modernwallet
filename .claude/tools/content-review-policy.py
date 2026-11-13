@@ -34,6 +34,11 @@ FACTS = {
 }
 CATEGORIES = {'ordinary', 'product', 'pricing', 'capability', 'medical', 'legal', 'investment', 'financial', 'security-critical', 'safety-critical'}
 CONSEQUENTIAL = {'medical', 'legal', 'investment', 'financial', 'security-critical', 'safety-critical'}
+LIABILITY_BLOCK_CATEGORIES = {
+    'medical-dosing-or-treatment-harm',
+    'acute-physical-safety-hazard',
+    'unlawful-or-defamatory-liability',
+}
 FLAGS = re.compile(r'\b(?:medical|clinical|diagnos\w*|treat(?:s|ment|ments|ing)?|dosage|doses?|'
                    r'prescri\w*|contraindicat\w*|cancer|diabet\w*|asthma|disease\w*|'
                    r'insulin|antidepressants?|hipaa|gdpr|fiduciary|jurisdiction\w*|'
@@ -306,6 +311,7 @@ class Journal:
                 item = self.cycle['rounds'][data['number']-1]
                 require(item['status']=='pending' and item['admission']==data['admission'], 'Review result must finish its real reserved round')
                 item.update(data,status='complete');self.cycle['profile']=data['profile']
+                self.cycle['liabilityBlocked']=bool(data.get('liabilityBlock'))
                 self.cycle['status']='passed' if data['verdict']=='PASS' else 'needs-fix'
             elif kind == 'published':
                 require(self.cycle and (self.cycle['status']=='passed' or (data.get('release')=='audit-limit' and exhausted(self.cycle))) and data['cycleId']==self.cycle['cycleId'],'Only a passing reviewed cycle can close')
@@ -390,7 +396,7 @@ def reserve_without_checkpoint(root, snapshot_path, route, job, reviewer, out, p
             require(value['fingerprint']==row['fingerprint'] and value['reviewer']==reviewer,
                     'Finish or resume the pending review before starting another one')
             return {**value,'admissionArtifact':last['admission']}
-        require(number <= ceiling, 'Review budget exhausted for this page; apply the site release policy to the exact latest reviewed candidate')
+        require(number <= ceiling, 'Review budget exhausted for this page; do NOT edit or re-audit it — publish the exact latest reviewed snapshot directly (unless blocked by a recorded direct legal/physical liabilityBlock)')
         require(not any(x.get('reportObjectSha256') for x in cycle['rounds'] if x.get('verdict')=='PASS' and x.get('fingerprint')==row['fingerprint']),
                 'This exact page already passed; do not audit it again')
         admission = {'version':VERSION,'identity':journal.identity,'cycleId':cycle['cycleId'],'jobId':job,
@@ -414,19 +420,56 @@ def decision(root, snapshot, review, rr):
     return selected
 
 
+def validate_liability_block(rr, page):
+    """True only for narrow direct legal or physical-harm liability edge cases.
+
+    General medical/health pricing, clinic locations, addresses, hours, provider
+    directories, scheduling/insurance logistics, educational condition overviews,
+    attribution phrasing, scope notes, and SEO/style findings NEVER qualify as a
+    liabilityBlock and publish automatically once audits are exhausted.
+    """
+    lb = rr.get('liabilityBlock')
+    if lb in (None, False):
+        return False
+    require(rr.get('verdict') == 'FAIL', 'liabilityBlock is valid only on a FAIL verdict')
+    require(isinstance(lb, dict) and lb.get('category') in LIABILITY_BLOCK_CATEGORIES,
+            'liabilityBlock.category must be one of ' + str(sorted(LIABILITY_BLOCK_CATEGORIES)))
+    text = claim_text(page['semantic'])
+    quote = lb.get('quote')
+    harm = lb.get('harm')
+    require(isinstance(quote, str) and len(quote.strip()) >= 8 and quote in text,
+            'liabilityBlock.quote must be an exact >=8-char substring of the rendered page claims')
+    require(isinstance(harm, str) and len(harm.strip()) >= 40,
+            'liabilityBlock.harm must explain direct legal or physical-harm liability in >=40 chars')
+    return True
+
+
+def _route_disposition(verdict, liability_blocked, release_enabled, number, ceiling):
+    if verdict == 'PASS':
+        return 'publish'
+    if liability_blocked:
+        return 'blocked-liability' if number >= ceiling else 'rework-liability-and-reaudit'
+    if number >= ceiling:
+        return 'publish-at-audit-limit' if release_enabled else 'blocked-audit-limit'
+    return 'rework-and-reaudit'
+
+
 def pass_evidence(root, snapshot, rr, selected, local_module=None, retain_fail=False):
+    page,spec=route_in(snapshot,rr['path'])
+    require(not validate_liability_block(rr,page),
+            'Direct legal/physical liability finding blocks publication at audit exhaustion: '
+            + str((rr.get('liabilityBlock') or {}).get('category')))
     checks={'wholePageCoherence','sourceSupport','testingAndAttribution','datesAndSchema','linksAndIndexability','renderedLayout','scopeAndExclusions'}
     supplied=rr.get('checks',{})
-    renderer_module().testing_attribution_check(route_in(snapshot,rr['path'])[0]['semantic'],supplied)
+    renderer_module().testing_attribution_check(page['semantic'],supplied,allow_fail=retain_fail)
     require(set(supplied)==checks,'Missing independent rendered/SEO checks')
     for name,value in supplied.items():
         allowed=['PASS','NA'] if name in ['testingAndAttribution','scopeAndExclusions'] else ['PASS']
-        if retain_fail and name not in {'testingAndAttribution','scopeAndExclusions'}: allowed = allowed + ['FAIL']
+        if retain_fail: allowed = allowed + ['FAIL']
         require(value.get('status') in allowed and len(value.get('evidence','').strip())>=20,'Missing independent rendered evidence: '+name)
     required=FACTS[selected]+['riskClassification','seoQuality']
     if local_module is not None or (root/'.claude/workflow-policy.local.json').is_file():required+=['instructionUnderstanding']
     facts=rr.get('factualReview',{});require(set(facts)==set(required),'Missing profile-specific factual/SEO checks')
-    _,spec=route_in(snapshot,rr['path'])
     for name in required:
         value=facts[name];allowed=['PASS','NA'] if name=='professionalReview' and not spec.get('professionalReviewRequired') else ['PASS']
         if retain_fail and not (name=='professionalReview' and spec.get('professionalReviewRequired')): allowed = allowed + ['FAIL']
@@ -466,7 +509,9 @@ def capped_release(root, snapshot):
 def exhausted(cycle):
     final = last_authoritative_round(cycle)
     return (final.get('number', 0) >= cycle.get('maximumRounds', LIMITS[cycle['profile']])
-            and final.get('status') == 'complete' and final.get('verdict') == 'FAIL')
+            and final.get('status') == 'complete'
+            and final.get('verdict') == 'FAIL'
+            and not final.get('liabilityBlock'))
 
 
 def stamp_ok(root, snapshot):
@@ -528,7 +573,7 @@ def authorities(root, snapshot, review):
         for path in paths:
             require(path in current and path not in result,'Composition route is unknown or duplicated')
             source=group_rows.get(path);page=group_pages.get(path)
-            require(source is not None and page is not None and (source.get('verdict')=='PASS' or (capped_release(root,snapshot) and source.get('verdict')=='FAIL')),'Compose only recorded independent PASS or authorized final capped FAIL routes; preserve actual verdicts')
+            require(source is not None and page is not None and (source.get('verdict')=='PASS' or (capped_release(root,snapshot) and source.get('verdict')=='FAIL' and not validate_liability_block(source,page))),'Compose only recorded independent PASS or authorized final capped FAIL routes; preserve actual verdicts')
             require(rows[path]==source,'Composition must retain the exact recorded review row')
             require(current[path]['fingerprint']==page['fingerprint'] and current[path]['semantic']==page['semantic'] and
                     current[path].get('textSha256')==page.get('textSha256') and current_specs[path]==group_specs.get(path),
@@ -687,7 +732,12 @@ def copy_subset(snapshot, review, selected, allow_fail=False):
     snapshot=json.loads(json.dumps(snapshot));review=json.loads(json.dumps(review))
     require(selected <= {r['path'] for r in snapshot['routes']},'Cannot add a page through projection')
     source_rows={r['path']:r for r in review['routes']}
-    require(all(source_rows.get(r,{}).get('verdict') in (('PASS','FAIL') if allow_fail else ('PASS',)) for r in selected),'Cannot project a failing page as approved')
+    source_pages={r['path']:r for r in snapshot['routes']}
+    for r in selected:
+        row=source_rows.get(r,{})
+        require(row.get('verdict') in (('PASS','FAIL') if allow_fail else ('PASS',)),'Cannot project a failing page as approved')
+        if row.get('verdict')=='FAIL':
+            require(not validate_liability_block(row,source_pages[r]),'Cannot project a liability-blocked page as approved')
     snapshot['manifest']['routes']=[r for r in snapshot['manifest']['routes'] if r['path'] in selected]
     snapshot['routes']=[r for r in snapshot['routes'] if r['path'] in selected]
     snapshot['snapshotSha256']=renderer_module().digest({k:v for k,v in snapshot.items() if k!='snapshotSha256'})
@@ -740,7 +790,10 @@ def record_without_checkpoint(root, report_path):
         selected = decision(root,snapshot,report,rr)
         ceiling = audit_limit(policy(root), selected, rr.get('riskAssessment'))
         require(rr.get('verdict') in ['PASS','FAIL'], 'Keep the actual audit verdict; no synthetic approval')
-        final_fail = (rr['verdict']=='FAIL' and capped_release(root,snapshot) and admission['number']>=ceiling)
+        page, _ = route_in(snapshot, rr['path'])
+        liability_blocked = validate_liability_block(rr, page)
+        release_enabled = capped_release(root, snapshot)
+        final_fail = (rr['verdict']=='FAIL' and not liability_blocked and release_enabled and admission['number']>=ceiling)
         if rr['verdict']=='PASS' or final_fail:
             pass_evidence(root,snapshot,rr,selected,retain_fail=final_fail)
             layer=local_module(root,snapshot)
@@ -759,7 +812,9 @@ def record_without_checkpoint(root, report_path):
             number=admission['number'];item=cycle['rounds'][number-1]
             if item['status']=='complete':
                 require(item.get('reportObjectSha256')==digest(report), 'Review result is immutable')
-                plan.append((rr,None,None,number,None));continue
+                eff_ceiling = item.get('maximumRounds', ceiling)
+                disp = _route_disposition(rr['verdict'], liability_blocked, release_enabled, number, eff_ceiling)
+                plan.append((rr,None,None,number,None,eff_ceiling,liability_blocked,disp));continue
             require(item['admission']==admission_ref and number==len(cycle['rounds']), 'Actual reserved round required')
             # The first independent judgment may correct a provisional keyword
             # escalation. Later rounds can raise risk but cannot buy a reset.
@@ -770,18 +825,41 @@ def record_without_checkpoint(root, report_path):
                                       and bool(admission.get('thirdAuditEligibility'))
                                       and bool(policy(root).get('thirdReviewClaimCategories')))
             require(number <= ceiling or already_admitted_third, 'This page has already used its content-review budget')
-        plan.append((rr,admission,admission_ref,number,selected))
+            eff_ceiling = max(ceiling, admission['maximumRounds']) if already_admitted_third else ceiling
+            disp = _route_disposition(rr['verdict'], liability_blocked, release_enabled, number, eff_ceiling)
+        plan.append((rr,admission,admission_ref,number,selected,eff_ceiling,liability_blocked,disp))
     result = []
-    for rr,admission,admission_ref,number,selected in plan:
+    for rr,admission,admission_ref,number,selected,eff_ceiling,liability_blocked,disp in plan:
+        out_row = {
+            'route': rr['path'],
+            'round': number,
+            'maximumRounds': eff_ceiling,
+            'roundsRemaining': max(0, eff_ceiling - number),
+            'verdict': rr['verdict'],
+            'disposition': disp,
+        }
+        if liability_blocked:
+            out_row['liabilityBlockCategory'] = rr['liabilityBlock']['category']
         if admission is None:
-            result.append({'route':rr['path'],'round':number,'verdict':rr['verdict']});continue
+            result.append(out_row);continue
         with Journal(root,admission['identity']['canonicalBase'],rr['path']) as journal:
             item=journal.cycle['rounds'][number-1]
             if item['status']=='pending':
-                journal.append('record',{'number':number,'admission':admission_ref,'report':freeze(root,report_path,journal.path.parent),
-                                         'reportObjectSha256':digest(report),'profile':selected,'maximumRounds':ceiling,'verdict':rr['verdict'],
-                                         'fingerprint':rr['fingerprint']})
-            result.append({'route':rr['path'],'round':number,'maximumRounds':ceiling,'verdict':rr['verdict']})
+                rec_event = {
+                    'number': number,
+                    'admission': admission_ref,
+                    'report': freeze(root, report_path, journal.path.parent),
+                    'reportObjectSha256': digest(report),
+                    'profile': selected,
+                    'maximumRounds': eff_ceiling,
+                    'verdict': rr['verdict'],
+                    'fingerprint': rr['fingerprint'],
+                }
+                if liability_blocked:
+                    rec_event['liabilityBlock'] = True
+                    rec_event['liabilityCategory'] = rr['liabilityBlock']['category']
+                journal.append('record', rec_event)
+            result.append(out_row)
     return result
 
 

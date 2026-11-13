@@ -123,7 +123,8 @@ class Tests(unittest.TestCase):
             literal = quote + 'Header: ${EXAMPLE}' + quote
             self.assertTrue(proven(literal, literal))
             self.assertFalse(proven(literal, literal.replace('EXAMPLE', 'CHANGED')))
-        self.assertFalse(proven('`Header: ${compute()}`', '`Header: ${compute()}`'))
+        self.assertTrue(proven('`Header: ${compute()}`', '`Header: ${compute()}`'))
+        self.assertFalse(proven('`Header: ${compute()}`', '`Header: ${changed()}`'))
 
     def test_seo_and_risk_checks_cannot_be_copied_as_fresh(self):
         self.prepare();report=self.actual();report['routes'][0]['checks']['linksAndIndexability']=copy.deepcopy(self.old['routes'][0]['checks']['linksAndIndexability'])

@@ -399,10 +399,11 @@ def valid_snapshot(s):
         if r.get('textFile'):
             require(hashlib.sha256(_read_captured_blob(r['textFile'],r['textSha256'])).hexdigest()==r['textSha256'],'Captured readable text changed')
 
-def testing_attribution_check(semantic, checks):
+def testing_attribution_check(semantic, checks, allow_fail=False):
     text = semantic.get('text', '')
     claimed = re.search(r'\btested\s+(?:and|&)\s+reviewed\s+by\b|\btested\s+guidance\b', text, re.I)
-    require(not claimed or checks.get('testingAndAttribution', {}).get('status') == 'PASS',
+    allowed = ('PASS', 'FAIL') if allow_fail else ('PASS',)
+    require(not claimed or checks.get('testingAndAttribution', {}).get('status') in allowed,
             'Visible testing attribution cannot be NA: verify actual local permission, evidence and identity, or remove the unsupported inherited label')
 
 
@@ -415,10 +416,15 @@ def review_check(s, review):
     root = Path(__file__).resolve().parents[2]
     policy = content_review_policy()
     released = set()
+    pages_by_path = {r['path']: r for r in s['routes']}
     if any(row.get('verdict')=='FAIL' for row in rows) and policy and policy.capped_release(root,s):
         require(s.get('contentReviewPolicy') and policy.check_rendered(root,s,review,force=True),
                 'Release requires a recorded final independent audit')
-        released = {row['path'] for row in rows if row.get('verdict')=='FAIL'}
+        validate_lb = getattr(policy, 'validate_liability_block', lambda _row, _page: False)
+        released = {
+            row['path'] for row in rows
+            if row.get('verdict')=='FAIL' and not validate_lb(row, pages_by_path[row['path']])
+        }
     for r in s['routes']:
         if r['path'] in released:
             require(by_path[r['path']].get('fingerprint')==r['fingerprint'],'Final candidate changed')

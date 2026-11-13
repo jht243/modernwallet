@@ -178,8 +178,8 @@ re-audit that page in full on the same bar. A **regeneration** with a `# CORRECT
 PHASE 4 AUDIT` block appended to the row prompt (defect → the exact offending text → the
 replacing rule) is only for what `fix` lists as NOT FIXABLE IN PLACE or a page now under its
 floor — and for that, expand the fact list with sourced facts first. Never hand-write generated
-prose; it defeats the routine and falsifies the provenance record. Two failed regenerations
-on the same defect → stop the workflow and escalate with the unresolved findings. Do not continue to commit, push or publish. Higher-priority user/project gate rules override older drop-and-continue instructions.
+prose; it defeats the routine and falsifies the provenance record. Once all allowed audits/reworks
+are exhausted, do NOT edit or regenerate the page again — automatically publish the exact final audited version (logging remaining non-liability findings honestly) unless blocked by a narrow direct legal/physical-harm `liabilityBlock` (e.g. incorrect medical dosing or acute safety hazard; general medical pricing, locations, scheduling, attribution wording, and SEO/style findings never block).
 
 ## Step 4 — template + provenance
 
