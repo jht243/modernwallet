@@ -46,7 +46,9 @@ class Store:
         self.request('rpc/search_gap_harvest', 'POST', {'p_site': site})
         rows, offset = [], 0
         while True:
+            # Parked observations (jobs-park.sql) stay unresolved but belong to their parked job.
             params = urllib.parse.urlencode({'site': 'eq.'+site, 'resolved_at': 'is.null',
+                'resolution->parked': 'is.null',
                 'select': 'event_id,payload', 'order': 'event_id.asc', 'limit': 500, 'offset': offset})
             page = self.request('search_gap_queue?'+params)
             require(isinstance(page, list), 'Invalid intake response')
@@ -205,7 +207,8 @@ def validate_render_groups(site, changed, rendered, check_render):
     require(changed <= covered, 'Render does not cover published routes')
 
 
-def validate_completion(packet, completion, check_render=True):
+def validate_decisions(packet, completion):
+    """Decision accounting and independent chart review, without render evidence."""
     require(completion['site'] == packet['site'] and completion['runId'] == packet['runId'], 'Wrong site/run')
     chart = completion['chart']
     review = read(completion['chartReview'])
@@ -222,6 +225,12 @@ def validate_completion(packet, completion, check_render=True):
     for decision in decisions:
         require(decision['status'] in ('published', 'no-addition', 'dropped', 'pending'), 'Invalid decision')
         require(len(decision.get('reason', '').strip()) >= 20, 'Concrete reason required')
+        require(decision['status'] != 'published' or decision.get('paths'), 'Published decision lacks routes')
+    return decisions
+
+
+def validate_completion(packet, completion, check_render=True):
+    decisions = validate_decisions(packet, completion)
     changed = {p for d in decisions if d['status'] == 'published' for p in d.get('paths', [])}
     changed -= metadata_coverage(completion)
     require(all(d.get('paths') for d in decisions if d['status'] == 'published'), 'Published decision lacks routes')
