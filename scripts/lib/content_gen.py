@@ -2187,9 +2187,13 @@ def cmd_fix(a) -> int:
     draft = pathlib.Path(a.draft)
     fmt = a.format or ("json" if draft.suffix == ".json" else "markdown")
     if not CALLER:
-        parts = draft.resolve().parts
-        if "reports" in parts and parts.index("reports") + 1 < len(parts):
-            CALLER = parts[parts.index("reports") + 1]
+        for _cand in (draft, pathlib.Path(a.findings), pathlib.Path(a.facts) if a.facts else None, pathlib.Path(a.prompt) if a.prompt else None):
+            if not _cand:
+                continue
+            parts = _cand.resolve().parts
+            if "reports" in parts and parts.index("reports") + 1 < len(parts):
+                CALLER = parts[parts.index("reports") + 1]
+                break
     a.prompt = a.prompt or a.facts
     a.out = str(draft)
     mindmap_gate(a)
@@ -2225,7 +2229,7 @@ def cmd_fix(a) -> int:
         if changed:
             mini = "\n".join(f"{uid} ::: {txt}" for uid, txt, _ in changed)
             prompt_cc = f"SOURCE\n======\n{_source_text(a)}\n\nUNITS\n=====\n{mini}\n"
-            doubts = _checker_call(CLAIMCHECK_SYSTEM, prompt_cc, CLAIMCHECK_THINKING) or []
+            doubts = _checker_call(CLAIMCHECK_SYSTEM, prompt_cc, CLAIMCHECK_FINAL_THINKING) or []
             cc["passes"] = 1
             cc["found"] = [len(doubts)]
             cc["remaining"] = [{"id": f.get("id"), "quote": f.get("quote"), "type": f.get("type"),
