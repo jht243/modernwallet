@@ -33,6 +33,9 @@ Owner rules, November 13, 2026 (Jonathan). These supersede the local-controller 
    today. If a vendor publishes no price, write "Quote-based; no public price" (a fact, not a deferral). Never estimate,
    round into a new number or carry a price from memory. Name the source in plain text where useful;
    keep the source URLs in `reports/alternatives-daily/<day>/<slug>-sources.json`, not as links.
+   Read vendor pages with `python3 scripts/alternatives_daily/fetch_page.py <url> [--grep price]`
+   (writer AND auditor): it renders JavaScript pages in a headless browser when a plain fetch is
+   blocked or empty. A vendor page counts as unreadable only after this helper also fails.
 5. **Full Mindmap SEO standard (owner rule 2026-11-14).** Every page follows this site's
    `.claude/commands/_content-standard.md` IN FULL (SEO, INTENT, DEPTH, QUALITY, STYLE, VOICE,
    COMPARISON, LINKS, ANCHOR, NEUTRALITY, AUDITOR, INTRO HUMANIZE) and `_anti-ai-language.md`,
