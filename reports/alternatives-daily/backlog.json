@@ -263,10 +263,20 @@
           "at": "2026-11-13T22:26:34+00:00",
           "status": "published",
           "note": "upgrade audit FAIL"
+        },
+        {
+          "at": "2026-11-13T22:30:04+00:00",
+          "status": "published",
+          "note": "seo upgrade",
+          "fields": [
+            "bodyWords",
+            "seoUpgraded",
+            "upgradeCommit"
+          ]
         }
       ],
       "status": "published",
-      "updatedAt": "2026-11-13T22:07:53+00:00",
+      "updatedAt": "2026-11-13T22:30:04+00:00",
       "claimedOn": "2026-11-13",
       "writer": "main",
       "slug": "wise",
@@ -394,7 +404,10 @@
           "kind": "seo-upgrade",
           "recordedAt": "2026-11-13T22:26:34+00:00"
         }
-      ]
+      ],
+      "seoUpgraded": "2026-11-13",
+      "upgradeCommit": "4057a67",
+      "bodyWords": 2300
     },
     {
       "vendor": "Quicken",
@@ -456,10 +469,20 @@
           "at": "2026-11-13T22:26:34+00:00",
           "status": "published",
           "note": "upgrade audit FAIL"
+        },
+        {
+          "at": "2026-11-13T22:30:04+00:00",
+          "status": "published",
+          "note": "seo upgrade",
+          "fields": [
+            "bodyWords",
+            "seoUpgraded",
+            "upgradeCommit"
+          ]
         }
       ],
       "status": "published",
-      "updatedAt": "2026-11-13T22:07:53+00:00",
+      "updatedAt": "2026-11-13T22:30:04+00:00",
       "claimedOn": "2026-11-13",
       "writer": "main",
       "slug": "quicken",
@@ -587,7 +610,10 @@
           "kind": "seo-upgrade",
           "recordedAt": "2026-11-13T22:26:34+00:00"
         }
-      ]
+      ],
+      "seoUpgraded": "2026-11-13",
+      "upgradeCommit": "4057a67",
+      "bodyWords": 2300
     },
     {
       "vendor": "Monarch Money",
@@ -674,10 +700,20 @@
           "at": "2026-11-13T22:26:34+00:00",
           "status": "published",
           "note": "upgrade audit FAIL"
+        },
+        {
+          "at": "2026-11-13T22:30:04+00:00",
+          "status": "published",
+          "note": "seo upgrade",
+          "fields": [
+            "bodyWords",
+            "seoUpgraded",
+            "upgradeCommit"
+          ]
         }
       ],
       "status": "published",
-      "updatedAt": "2026-11-13T22:07:53+00:00",
+      "updatedAt": "2026-11-13T22:30:04+00:00",
       "claimedOn": "2026-11-13",
       "writer": "main",
       "slug": "quickbooks",
@@ -798,7 +834,10 @@
           "kind": "seo-upgrade",
           "recordedAt": "2026-11-13T22:26:34+00:00"
         }
-      ]
+      ],
+      "seoUpgraded": "2026-11-13",
+      "upgradeCommit": "4057a67",
+      "bodyWords": 2300
     },
     {
       "vendor": "FreshBooks",
