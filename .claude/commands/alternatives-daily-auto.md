@@ -87,7 +87,9 @@ Save it to `reports/alternatives-daily/<day>/<slug>-audit.json` and record it:
 **5. Fix.** Apply every finding as a targeted edit (same writer). A price that cannot be confirmed
 becomes "Published plans; see vendor site". No second audit. If a hard blocker cannot be fixed
 (e.g. the product no longer exists), `set --status held --note "<reason>"` and leave that page out
-of the commit. Re-run the build gate.
+of the commit. A held page frees its slot: run `backlog.py next` again, claim a replacement
+and produce it the same way, until 3 pages are published today or nothing eligible is left
+(qualify or discover more if needed). Re-run the build gate.
 
 **6. Publish.** Commit only this run's files, then `.claude/scripts/deploy-run-to-main.sh push`.
 Exit 3 → push the branch, report the manual-merge note, stop. Then

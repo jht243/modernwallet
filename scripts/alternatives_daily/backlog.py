@@ -84,7 +84,10 @@ def log(row, status, note, **extra):
 
 
 def claimed_today(state):
-    return [r for r in state['rows'] if r.get('claimedOn') == today()]
+    # A page held or excluded after claiming frees its slot: the cap is 3 pages
+    # actually produced per day, so the run can claim a replacement.
+    return [r for r in state['rows'] if r.get('claimedOn') == today()
+            and r['status'] not in ('held', 'excluded', 'duplicate')]
 
 
 def cmd_status(state, _):
