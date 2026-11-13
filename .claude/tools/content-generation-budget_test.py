@@ -62,4 +62,51 @@ class Tests(unittest.TestCase):
                 except ValueError as error:
                     self.assertIn('Generation already reserved',str(error));return 0
             with ThreadPoolExecutor(2) as pool:self.assertEqual(sum(pool.map(attempt,copies)),1)
+    def test_restarted_search_gap_candidate_can_reserve_only_when_prior_job_closed_unpublished(self):
+        self.manifest.write_text(json.dumps({'jobId':'search-gap-af1233d99e49','actions':[{'target':'/guides/page','bucket':'create new content'}]}))
+        self.review.write_text('{"jobId":"search-gap-af1233d99e49"}')
+        b.reserve(self.root,self.args,'write')
+        self.manifest.write_text(json.dumps({'jobId':'search-gap-newjob999999','actions':[{'target':'/guides/page','bucket':'create new content'}]}))
+        self.review.write_text('{"jobId":"search-gap-newjob999999"}')
+        active_row=[{'run_id':'oldrun','status':'active','packet_text':json.dumps({'candidates':[{'id':'af1233d99e490000'}]}),'parked':None}]
+        published_row=[{'run_id':'oldrun','status':'owner-closed','packet_text':json.dumps({'candidates':[{'id':'af1233d99e490000'}]}),'parked':{'published':{'af1233d99e490000':['/guides/page']},'restart':[]}}]
+        restarted_row=[{'run_id':'oldrun','status':'owner-closed','packet_text':json.dumps({'candidates':[{'id':'af1233d99e490000'}]}),'parked':{'published':{},'restart':['af1233d99e490000']}}]
+        def fake_urlopen(rows):
+            class Resp:
+                def __enter__(self):return self
+                def __exit__(self,*a):return False
+                def read(self):return json.dumps(rows).encode()
+            return lambda *a,**k:Resp()
+        with patch.dict(os.environ,{'SUPABASE_URL':'https://example.supabase.co','SUPABASE_SERVICE_ROLE_KEY':'srv-key'}), \
+             patch.object(b,'_candidate_search_sites',return_value=['fixture.test']):
+            with patch('urllib.request.urlopen',side_effect=fake_urlopen(active_row)), \
+                 patch.object(b,'current_cycle',return_value=None):
+                with self.assertRaisesRegex(ValueError,'Resume the unfinished original page job'):
+                    b.reserve(self.root,self.args,'write')
+            with patch('urllib.request.urlopen',side_effect=fake_urlopen(published_row)), \
+                 patch.object(b,'current_cycle',return_value=None):
+                with self.assertRaisesRegex(ValueError,'Resume the unfinished original page job'):
+                    b.reserve(self.root,self.args,'write')
+            with patch('urllib.request.urlopen',side_effect=fake_urlopen(restarted_row)), \
+                 patch.object(b,'current_cycle',return_value={'jobId':'search-gap-af1233d99e49','status':'needs-fix','rounds':[]}):
+                with self.assertRaisesRegex(ValueError,'Resume the unfinished original page job'):
+                    b.reserve(self.root,self.args,'write')
+            second_active=restarted_row+[{'run_id':'newerrun','status':'active','packet_text':json.dumps({'candidates':[{'id':'af1233d99e490000'}]}),'parked':None}]
+            with patch('urllib.request.urlopen',side_effect=fake_urlopen(second_active)), \
+                 patch.object(b,'current_cycle',return_value=None):
+                with self.assertRaisesRegex(ValueError,'Resume the unfinished original page job'):
+                    b.reserve(self.root,self.args,'write')
+            second_complete=restarted_row+[{'run_id':'newerrun','status':'complete','packet_text':json.dumps({'candidates':[{'id':'af1233d99e490000'}]}),'parked':None}]
+            with patch('urllib.request.urlopen',side_effect=fake_urlopen(second_complete)), \
+                 patch.object(b,'current_cycle',return_value=None):
+                with self.assertRaisesRegex(ValueError,'Resume the unfinished original page job'):
+                    b.reserve(self.root,self.args,'write')
+            with patch('urllib.request.urlopen',side_effect=fake_urlopen(restarted_row)), \
+                 patch.object(b,'current_cycle',return_value=None):
+                b.reserve(self.root,self.args,'write')
+                saved_files=list((self.root/'reports/workflow-generation-budgets').glob('*.json'))
+                self.assertEqual(len(saved_files),1)
+                saved=json.loads(saved_files[0].read_text())
+                self.assertEqual(saved['jobId'],'search-gap-newjob999999')
+                self.assertEqual(len(saved['previousJobs']),1)
 if __name__=='__main__':unittest.main()

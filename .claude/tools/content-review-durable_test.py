@@ -39,4 +39,36 @@ class Tests(unittest.TestCase):
    # Preserve native all-or-nothing validation: a rejected batch invented no PASS.
    self.assertEqual(p.reserve(fresh,snapshot,'/guide','fixture-job','independent',fresh/'reports/same-ticket.json')['number'],1)
   with p.Journal(fresh,'https://example.com','/guide') as journal:self.assertEqual(len(journal.cycle['rounds']),1)
+ def test_closed_unpublished_search_gap_cycle_retires_preserving_evidence_but_active_or_published_blocks(self):
+  import os
+  from unittest.mock import patch
+  snap1=self.fixture.put('reports/sg-old.json',self.fixture.snapshot('abandoned search gap draft'))
+  p.reserve(self.root,snap1,'/guide','search-gap-af1233d99e49','independent',self.root/'reports/sg-adm1.json')
+  def fake_urlopen(rows):
+   class Resp:
+    def __enter__(s):return s
+    def __exit__(s,*a):return False
+    def read(s):return json.dumps(rows).encode()
+   return lambda *a,**k:Resp()
+  active_rows=[{'run_id':'oldrun1234','status':'active','packet_text':json.dumps({'candidates':[{'id':'af1233d99e490000'}]}),'parked':None}]
+  closed_pub_rows=[{'run_id':'oldrun1234','status':'owner-closed','packet_text':json.dumps({'candidates':[{'id':'af1233d99e490000'}]}),'parked':{'published':{'af1233d99e490000':['/guide']},'restart':[]}}]
+  closed_restarted_rows=[{'run_id':'oldrun1234','status':'owner-closed','packet_text':json.dumps({'candidates':[{'id':'af1233d99e490000'}]}),'parked':{'published':{},'restart':['af1233d99e490000']}}]
+  with patch.dict(os.environ,{'SUPABASE_URL':'https://example.supabase.co','SUPABASE_SERVICE_ROLE_KEY':'srv-key'}):
+   fresh_active=self.fresh('sg-active');snap_a=fresh_active/'reports/new.json';snap_a.parent.mkdir(exist_ok=True);snap_a.write_text(json.dumps(self.fixture.snapshot('fresh retry draft')))
+   with patch('urllib.request.urlopen',side_effect=fake_urlopen(active_rows)):
+    with self.assertRaisesRegex(ValueError,'Resume the existing canonical page job'):
+     p.reserve(fresh_active,snap_a,'/guide','search-gap-newjob999999','independent',fresh_active/'reports/new-adm.json')
+   fresh_pub=self.fresh('sg-pub');snap_p=fresh_pub/'reports/new.json';snap_p.parent.mkdir(exist_ok=True);snap_p.write_text(json.dumps(self.fixture.snapshot('fresh retry draft')))
+   with patch('urllib.request.urlopen',side_effect=fake_urlopen(closed_pub_rows)):
+    with self.assertRaisesRegex(ValueError,'Resume the existing canonical page job'):
+     p.reserve(fresh_pub,snap_p,'/guide','search-gap-newjob999999','independent',fresh_pub/'reports/new-adm.json')
+   fresh_ok=self.fresh('sg-restarted');snap_ok=fresh_ok/'reports/new.json';snap_ok.parent.mkdir(exist_ok=True);snap_ok.write_text(json.dumps(self.fixture.snapshot('fresh retry draft')))
+   with patch('urllib.request.urlopen',side_effect=fake_urlopen(closed_restarted_rows)):
+    admitted=p.reserve(fresh_ok,snap_ok,'/guide','search-gap-newjob999999','independent',fresh_ok/'reports/new-adm.json')
+    self.assertEqual(admitted['number'],1)
+    self.assertEqual(admitted['jobId'],'search-gap-newjob999999')
+   spec_s=importlib.util.spec_from_file_location('wcs_check',fresh_ok/'.claude/tools/workflow-control-store.py')
+   wcs=importlib.util.module_from_spec(spec_s);spec_s.loader.exec_module(wcs)
+   _,remote_state=wcs.Store(fresh_ok,ref='refs/heads/automation/content-review-journals').read()
+   self.assertEqual(len(remote_state.get('retiredSearchGapJournals',{})),1)
 if __name__=='__main__':unittest.main()

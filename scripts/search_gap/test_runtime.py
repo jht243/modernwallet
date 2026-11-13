@@ -2,6 +2,8 @@ import base64
 import hashlib
 import json
 import os
+import shutil
+import subprocess
 from pathlib import Path
 from types import SimpleNamespace
 import tempfile
@@ -375,4 +377,238 @@ class FontInputs(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             p=Path(d);(p/'fonts').mkdir();raw=b'font fixture';sha=hashlib.sha256(raw).hexdigest();(p/'fonts'/(sha+'.woff2')).write_bytes(raw)
             env=fonts.write_environment(p,{'inputs':{'url':'src:url(sgfont://'+sha+')'},'fontFiles':{sha:{}}});self.assertIn(str(p.resolve()),Path(env['NEXT_FONT_GOOGLE_MOCKED_RESPONSES']).read_text())
+
+class EvidencePersistenceTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup)
+        self.cwd=Path.cwd();os.chdir(self.tmp.name);self.addCleanup(os.chdir,self.cwd)
+        subprocess.run(['git','init','-q'],check=True)
+        subprocess.run(['git','config','user.email','test@example.com'],check=True)
+        subprocess.run(['git','config','user.name','Test'],check=True)
+        Path('README.md').write_text('init\n')
+        subprocess.run(['git','add','README.md'],check=True)
+        subprocess.run(['git','commit','-q','-m','init'],check=True)
+
+    def test_large_reports_use_private_storage_and_verify_sha256_on_restore(self):
+        Path('reports/mindmap-pass').mkdir(parents=True)
+        big=('Reviewed evidence line with detailed rendering notes.\n'*500).encode()
+        small=b'{"verdict":"PASS"}'
+        Path('reports/mindmap-pass/render-pack.json').write_bytes(big)
+        Path('reports/mindmap-pass/receipt.json').write_bytes(small)
+        blobs={}
+        store=MagicMock()
+        store.supports_evidence_storage=True
+        def up(site,run_id,sha,raw):
+            key=f'{site}/{run_id}/{sha}';blobs[key]=raw;return key
+        store.upload_evidence.side_effect=up
+        store.download_evidence.side_effect=lambda key:blobs[key]
+        saved=worker.capture_artifacts(['reports/mindmap-pass/render-pack.json','reports/mindmap-pass/receipt.json'],store,'one.test','run-123')
+        by_path={item['path']:item for item in saved}
+        self.assertIn('storageKey',by_path['reports/mindmap-pass/render-pack.json'])
+        self.assertNotIn('base64',by_path['reports/mindmap-pass/render-pack.json'])
+        self.assertIn('base64',by_path['reports/mindmap-pass/receipt.json'])
+        shutil.rmtree('reports')
+        restored=worker.restore_artifacts([{'artifacts':saved}],store)
+        self.assertEqual(restored['restored'],2)
+        self.assertEqual(Path('reports/mindmap-pass/render-pack.json').read_bytes(),big)
+        self.assertEqual(Path('reports/mindmap-pass/receipt.json').read_bytes(),small)
+        shutil.rmtree('reports')
+        blobs[by_path['reports/mindmap-pass/render-pack.json']['storageKey']]=b'tampered'
+        with self.assertRaisesRegex(ValueError,'Saved artifact bytes changed'):
+            worker.restore_artifacts([{'artifacts':saved}],store)
+
+    def test_auto_sweep_captures_reports_and_excludes_intakes_and_secrets(self):
+        Path('reports/search-gap').mkdir(parents=True)
+        Path('reports/mindmap-pass').mkdir(parents=True)
+        Path('reports/search-gap/intake-current.json').write_text('{"candidates":[{"term":"raw visitor query"}]}')
+        Path('reports/mindmap-pass/chart.md').write_text('# Chart\nApproved action plan\n')
+        store=SimpleNamespace(supports_evidence_storage=True)
+        paths=worker.auto_evidence_paths(store=store)
+        self.assertIn('reports/mindmap-pass/chart.md',paths)
+        self.assertNotIn('reports/search-gap/intake-current.json',paths)
+        Path('reports/mindmap-pass/secret.txt').write_text('token sk-ant-api03-secretvalue1234567890abcdef')
+        with self.assertRaisesRegex(ValueError,'Credential value found'):
+            worker.capture_artifacts(['reports/mindmap-pass/secret.txt'])
+
+class FreshRuleAccountingAndEndRunTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup)
+        self.cwd=Path.cwd();os.chdir(self.tmp.name);self.addCleanup(os.chdir,self.cwd)
+        subprocess.run(['git','init','-q'],check=True)
+        Path('reports/search-gap').mkdir(parents=True)
+
+    def test_fresh_job_receives_standing_owner_rule_immediately(self):
+        owner='fresh-run-12345678'
+        class FreshStore:
+            def pending(self,site):
+                return [{'event_id':'ev1','payload':{'term':'shbg levels','source':'search','path':'/','created_at':'2026-11-13T18:00:00Z'}}]
+            def claim_job(self,site,owner_arg,packet_text):
+                parsed=json.loads(packet_text)
+                return {'status':'claimed','runId':parsed['runId'],'packetText':packet_text,'packetSha256':hashlib.sha256(packet_text.encode()).hexdigest(),'checkpoints':[]}
+            def owner_policy(self,site):return True
+            def owner_request_sha(self,site,run):return None
+        with patch.object(worker,'remember_lease'):
+            out=worker.intake('one.test',FreshStore(),'reports/search-gap/intake-current.json',owner)
+        self.assertFalse(out['resumed'])
+        self.assertTrue(out['nextAction'].startswith('STANDING OWNER RULE'))
+
+    def test_partial_finish_and_settled_dispositions_preserved_in_auto_close(self):
+        packet={'site':'one.test','runId':'job-p','candidates':[
+            {'id':'already_pub','eventIds':['e1']},
+            {'id':'already_drop','eventIds':['e2']},
+            {'id':'retained_noadd','eventIds':['e3']},
+            {'id':'unfinished','eventIds':['e4']}
+        ]}
+        intake_path=Path('reports/search-gap/intake-current.json')
+        intake_path.write_text(json.dumps(packet))
+        chart_path=Path('reports/search-gap/chart.md');chart_path.write_text('# Chart\n')
+        decisions=[
+            {'id':'already_pub','status':'published','reason':'Published SHBG guide with full clinical citations','paths':['/biomarkers/shbg']},
+            {'id':'already_drop','status':'dropped','reason':'Off-mission query outside site scope','paths':[]},
+            {'id':'retained_noadd','status':'no-addition','reason':'Already covered thoroughly on /guide','paths':[]},
+            {'id':'unfinished','status':'pending','reason':'Held on missing clinical source','paths':[]}
+        ]
+        receipt_path=Path('reports/search-gap/chart-review.json')
+        receipt_path.write_text(json.dumps({
+            'author':'builder-1','reviewer':'reviewer-2','verdict':'PASS',
+            'chartSha256':worker.digest(chart_path),
+            'intakeSha256':worker.digest(intake_path),
+            'decisionsSha256':hashlib.sha256(json.dumps(decisions,sort_keys=True).encode()).hexdigest()
+        }))
+        comp_path=Path('reports/search-gap/completion.json')
+        comp_path.write_text(json.dumps({
+            'site':'one.test','runId':'job-p','intakeSha256':worker.digest(intake_path),
+            'chart':str(chart_path),'chartReview':str(receipt_path),'decisions':decisions
+        }))
+        store=MagicMock()
+        store.owner_policy.return_value=True
+        store.prior_restarted_events.return_value=set()
+        store.acknowledged_decisions.return_value={
+            'already_pub':{'id':'already_pub','status':'published','paths':['/biomarkers/shbg']},
+            'already_drop':{'id':'already_drop','status':'dropped','paths':[]}
+        }
+        store.claim_job.return_value={
+            'status':'claimed',
+            'packetSha256':hashlib.sha256(intake_path.read_bytes()).hexdigest(),
+            'checkpoints':[
+                {'stage':'build-pass','canonicalJobs':{'c1':'job-a'}},
+                {'stage':'partial-finish','completionFile':str(comp_path),'canonicalJobs':{'c2':'job-b'}}
+            ],
+            'createdAt':worker.native.dt.datetime.now(worker.native.dt.timezone.utc).isoformat()
+        }
+        self.assertEqual(worker.recorded_canonical_jobs(store.claim_job.return_value['checkpoints']),{'job-a','job-b'})
+        self.assertEqual(worker.recorded_canonical_jobs([{'reviewCounters':{'chart-review:job-fallback':1}}]),{'job-fallback'})
+        with patch.object(worker,'capture_artifacts',return_value=[]), \
+             patch.object(worker,'site_base',return_value='https://www.one.test'), \
+             patch.object(worker,'home_text',return_value='Home'), \
+             patch.object(worker,'live_ok',return_value=True):
+            res=worker.owner_close(str(intake_path),None,store,'owner-1234567890abcdef',None,None,False,'')
+        self.assertEqual(res['status'],'owner-closed')
+        acked={c.args[3]['id']:c.args[3]['status'] for c in store.acknowledge_job.call_args_list}
+        self.assertEqual(acked,{'retained_noadd':'no-addition'})
+        receipt=store.owner_close_job.call_args.args[3]
+        self.assertEqual(receipt['published'],{'already_pub':['/biomarkers/shbg']})
+        self.assertEqual(sorted(receipt['settled']),['already_drop','retained_noadd'])
+        self.assertEqual(receipt['dropped'],[])
+        self.assertEqual(receipt['restart'],['unfinished'])
+
+    def test_end_run_records_blocker_and_auto_closes_uncheckpointed_job(self):
+        packet={'site':'one.test','runId':'job-b','candidates':[{'id':'c1','eventIds':['e1']}]}
+        intake_path=Path('reports/search-gap/intake-current.json')
+        intake_path.write_text(json.dumps(packet))
+        store=MagicMock()
+        store.owner_policy.return_value=True
+        store.prior_restarted_events.return_value=set()
+        store.acknowledged_decisions.return_value={}
+        checkpoints=[]
+        def claim_side_effect(*a):
+            return {'status':'claimed','runId':'job-b','packetSha256':hashlib.sha256(intake_path.read_bytes()).hexdigest(),'checkpoints':list(checkpoints),'createdAt':worker.native.dt.datetime.now(worker.native.dt.timezone.utc).isoformat()}
+        def cp_side_effect(site,run_id,owner,meta):
+            checkpoints.append(meta);return {'checkpointCount':len(checkpoints)}
+        store.claim_job.side_effect=claim_side_effect
+        store.checkpoint_job.side_effect=cp_side_effect
+        with patch.dict(os.environ,{'CLAUDE_CODE_SESSION_ID':'sess-endrun'}), \
+             patch.object(worker,'capture_artifacts',return_value=[]), \
+             patch.object(worker,'site_base',return_value='https://www.one.test'), \
+             patch.object(worker,'home_text',return_value='Home'):
+            worker.remember_lease('one.test','job-b','owner-1234567890abcdef',str(intake_path),True)
+            res=worker.end_run(str(intake_path),store,'owner-1234567890abcdef',reason='write reservation blocked')
+        self.assertEqual(res['status'],'owner-closed')
+        self.assertEqual(checkpoints[0]['stage'],'run-blocked')
+        lease_files=list((Path('.git/search-gap-recovery/leases')).glob('*.json'))
+        self.assertTrue(lease_files and json.loads(lease_files[0].read_text()).get('closed') is True)
+
+class SessionEndHookAndArchiveTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp=tempfile.TemporaryDirectory();self.addCleanup(self.tmp.cleanup)
+        self.cwd=Path.cwd();os.chdir(self.tmp.name);self.addCleanup(os.chdir,self.cwd)
+        subprocess.run(['git','init','-q'],check=True)
+        subprocess.run(['git','config','user.email','test@example.com'],check=True)
+        subprocess.run(['git','config','user.name','Test'],check=True)
+
+    def test_pre_bash_and_stop_hooks_enforce_close_out_before_reporting_or_exit(self):
+        import session_end
+        root=Path(self.tmp.name)
+        with patch.dict(os.environ,{'CLAUDE_CODE_SESSION_ID':'sess-abc'}):
+            worker.remember_lease('one.test','job-x','owner-1234567890abcdef','reports/search-gap/intake-current.json',True)
+            allow,msg=session_end.decide_pre_bash(root,{'session_id':'sess-abc','tool_input':{'command':'curl -X POST https://api.example/api/routine-run'}})
+            self.assertFalse(allow);self.assertIn('end-run',msg)
+            allow,msg=session_end.decide_pre_bash(root,{'session_id':'sess-abc','tool_input':{'command':'.claude/scripts/send-routine-email.py --status failure'}})
+            self.assertFalse(allow)
+            allow,msg=session_end.decide_pre_bash(root,{'session_id':'sess-abc','tool_input':{'command':'python3 scripts/search_gap/job_worker.py end-run --deploy || true'}})
+            self.assertFalse(allow);self.assertIn('exit-code',msg)
+            allow,msg=session_end.decide_pre_bash(root,{'session_id':'sess-abc','tool_input':{'command':'python3 scripts/search_gap/job_worker.py end-run --deploy || : '}})
+            self.assertFalse(allow);self.assertIn('exit-code',msg)
+            allow,msg=session_end.decide_pre_bash(root,{'session_id':'sess-abc','tool_input':{'command':'python3 scripts/search_gap/job_worker.py end-run --deploy || exit 0'}})
+            self.assertFalse(allow);self.assertIn('exit-code',msg)
+            allow,_=session_end.decide_pre_bash(root,{'session_id':'sess-abc','tool_input':{'command':'.claude/scripts/send-routine-email.py --skill competitor-content-auto --status success'}})
+            self.assertTrue(allow)
+            allow,msg=session_end.decide_pre_bash(root,{'session_id':'sess-abc','tool_input':{'command':'python3 scripts/search_gap/job_worker.py end-run --site one.test --owner owner-1234567890abcdef --intake reports/search-gap/intake-current.json --deploy'}})
+            self.assertTrue(allow)
+            allow_stop,stop_reason=session_end.decide_stop(root,{'session_id':'sess-abc'})
+            self.assertFalse(allow_stop);self.assertIn('end-run',stop_reason)
+            worker.mark_lease_closed('job-x')
+            allow,_=session_end.decide_pre_bash(root,{'session_id':'sess-abc','tool_input':{'command':'curl -X POST https://api.example/api/routine-run'}})
+            self.assertTrue(allow)
+            allow_stop_after,_=session_end.decide_stop(root,{'session_id':'sess-abc'})
+            self.assertTrue(allow_stop_after)
+
+    def test_install_runtime_is_idempotent(self):
+        import session_end
+        root=Path(self.tmp.name)
+        target_dir=root/'user-claude';target_dir.mkdir()
+        target=target_dir/'settings.json'
+        target.write_text(json.dumps({'env':{'FOO':'1'}}))
+        session_end.install_runtime(root,target_dir)
+        session_end.install_runtime(root,target_dir)
+        cfg=json.loads(target.read_text())
+        self.assertEqual(cfg['env']['FOO'],'1')
+        self.assertEqual(len(cfg['hooks']['Stop']),1)
+        self.assertEqual(len(cfg['hooks']['SessionEnd']),1)
+        self.assertEqual(len(cfg['hooks']['PreToolUse']),1)
+
+    def test_review_archive_owner_close_allows_reverted_sibling_and_rejects_unreviewed_lines(self):
+        import importlib.util
+        ra_path=(self.cwd/'../../.claude/tools/review-archive.py').resolve()
+        spec=importlib.util.spec_from_file_location('review_archive_mod',ra_path)
+        ra=importlib.util.module_from_spec(spec);spec.loader.exec_module(ra)
+        root=Path(self.tmp.name)
+        (root/'data').mkdir()
+        (root/'data/prayers.ts').write_bytes(b'line 1\nline 2\n')
+        subprocess.run(['git','add','data/prayers.ts'],check=True)
+        subprocess.run(['git','commit','-q','-m','base'],check=True)
+        base_rev=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+        approved_sent='Approved kolbe addition sentence that exceeds twenty five chars. Required medical disclaimer stays intact here.'
+        reviewed=(f'line 1\n{approved_sent}\nheld /prayers/salvation addition\nline 2\n').encode()
+        reverted_sibling=(f'line 1\n{approved_sent}\nline 2\n').encode()
+        sneaky_edit=(f'line 1\n{approved_sent}\nunreviewed extra claim\nline 2\n').encode()
+        stripped_disclaimer=b'line 1\nApproved kolbe addition sentence that exceeds twenty five chars.\nline 2\n'
+        deleted_base=(f'{approved_sent}\nline 2\n').encode()
+        kwargs={'approved_texts':[approved_sent],'held_routes':['/prayers/salvation'],'pub_route_set':{'/prayers/kolbe'}}
+        self.assertTrue(ra._verified_route_subset(root,'data/prayers.ts',reverted_sibling,reviewed,base_rev,**kwargs))
+        self.assertFalse(ra._verified_route_subset(root,'data/prayers.ts',sneaky_edit,reviewed,base_rev,**kwargs))
+        self.assertFalse(ra._verified_route_subset(root,'data/prayers.ts',stripped_disclaimer,reviewed,base_rev,**kwargs))
+        self.assertFalse(ra._verified_route_subset(root,'data/prayers.ts',reviewed,reviewed,base_rev,**kwargs))
+        self.assertFalse(ra._verified_route_subset(root,'data/prayers.ts',deleted_base,reviewed,base_rev,**kwargs))
+
 if __name__=='__main__':unittest.main()

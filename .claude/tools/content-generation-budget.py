@@ -74,6 +74,100 @@ def claim_limit(root,args,text):
         assessment = None
     return policy.audit_limit(policy.policy(root), level, assessment)
 
+def _candidate_search_sites(root, policy, args=None):
+    import re
+    from urllib.parse import urlsplit
+    raw = [os.environ.get('SEARCH_SITE', '')]
+    try:
+        raw.extend(policy.policy(root).get('canonicalHosts') or [])
+    except Exception:
+        pass
+    manifest = getattr(args, 'mindmap_manifest', None) if args is not None else None
+    if manifest and Path(manifest).is_file():
+        try:
+            host = urlsplit(str(read(manifest).get('canonicalBase') or '')).hostname or ''
+            raw.append(host)
+        except Exception:
+            pass
+    leases_dir = root / '.git/search-gap-recovery/leases'
+    if leases_dir.is_dir():
+        for lf in leases_dir.glob('*.json'):
+            try:
+                raw.append(str(read(lf).get('site') or ''))
+            except Exception:
+                pass
+    cleaned = {s.strip().lower().removeprefix('www.').rstrip('.') for s in raw if isinstance(s, str) and s.strip()}
+    return sorted(s for s in cleaned if re.fullmatch(r'[a-z0-9.-]+\.[a-z]{2,}', s))
+
+
+def _job_matches_row(old_job_id, row):
+    run_id = str(row.get('run_id') or '')
+    if old_job_id == run_id:
+        return True
+    recorded = {v for cp in (row.get('checkpoints') or []) if isinstance(cp, dict)
+                for v in (cp.get('canonicalJobs') or {}).values() if isinstance(v, str)}
+    if old_job_id in recorded:
+        return True
+    if old_job_id.startswith(('search-gap-', 'sg-')) or 'search-gap' in old_job_id.lower():
+        if len(run_id) >= 8 and run_id[:8] in old_job_id:
+            return True
+        try:
+            cids = [str(c.get('id') or '') for c in (json.loads(row.get('packet_text') or '{}').get('candidates') or [])]
+        except Exception:
+            cids = []
+        if any(len(cid) >= 12 and cid[:12] in old_job_id for cid in cids):
+            return True
+    return False
+
+
+def _search_gap_job_closed_for_restart(root, old_job_id, route, policy, args=None):
+    """Allow a fresh Search Gap job to reserve generation when the prior Search Gap job that reserved
+    this route was owner-closed or parked without publishing this route, no matching job is active,
+    and no matching or later job already published this route."""
+    import urllib.parse, urllib.request
+    url = os.environ.get('SUPABASE_URL', '').strip().rstrip('/')
+    svc_key = os.environ.get('SUPABASE_SERVICE_ROLE_KEY', '').strip()
+    if not url or not svc_key or not isinstance(old_job_id, str) or not old_job_id:
+        return False
+    sites = _candidate_search_sites(root, policy, args=args)
+    if not sites:
+        return False
+    params = urllib.parse.urlencode({
+        'site': 'in.(' + ','.join(sites) + ')',
+        'status': 'in.(active,complete,owner-closed,parked)',
+        'select': 'site,run_id,status,checkpoints,parked,packet_text,created_at',
+        'order': 'created_at.desc',
+        'limit': '200',
+    })
+    req = urllib.request.Request(
+        url + '/rest/v1/search_gap_jobs?' + params,
+        headers={'apikey': svc_key, 'Authorization': 'Bearer ' + svc_key},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            rows = json.loads(resp.read() or b'[]')
+    except Exception:
+        return False
+    if not isinstance(rows, list):
+        return False
+    norm_route = route.rstrip('/') or '/'
+    closed_match = False
+    for row in rows:
+        if not isinstance(row, dict) or not _job_matches_row(old_job_id, row):
+            continue
+        status = row.get('status')
+        if status == 'active' or status == 'complete':
+            return False
+        pub_paths = {str(p).rstrip('/') or '/'
+                     for paths in ((row.get('parked') or {}).get('published') or {}).values()
+                     for p in (paths or []) if isinstance(p, str)}
+        if norm_route in pub_paths:
+            return False
+        if status in ('owner-closed', 'parked'):
+            closed_match = True
+    return closed_match
+
+
 def reserve(root,args,operation):
     selected=scope(root,args)
     if selected is None:
@@ -95,7 +189,8 @@ def reserve(root,args,operation):
             cycle=None
             if state['jobId']!=job:
                 cycle=current_cycle(root,route,policy)
-                if not cycle or cycle['jobId']!=state['jobId'] or cycle['status']!='published':
+                restarted=(cycle is None or cycle['status']=='published') and _search_gap_job_closed_for_restart(root,state['jobId'],route,policy,args)
+                if not restarted and (not cycle or cycle['jobId']!=state['jobId'] or cycle['status']!='published'):
                     raise ValueError('Resume the unfinished original page job; a new job cannot restart paid generation')
                 state={'jobId':job,'route':route,'generated':[],'repairs':[],
                        'previousJobs':state['previousJobs']+[{k:v for k,v in state.items() if k!='previousJobs'}]}

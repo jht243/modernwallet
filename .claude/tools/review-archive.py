@@ -99,6 +99,17 @@ def verified_objects(root, revision, digests):
 
 def marker(root, prefix):
     sid=os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID')
+    if not sid:
+        hint=Path(os.fsdecode(call(root,'rev-parse','--git-path','search-gap-recovery/current-session.json').stdout).strip())
+        hint=hint if hint.is_absolute() else root/hint
+        if hint.is_file():
+            try:
+                import time as _time
+                data=json.loads(hint.read_bytes())
+                if _time.time()-float(data.get('updatedAt',0))<=3600:
+                    sid=str(data.get('sessionId') or '')
+            except Exception:
+                sid=''
     if not sid:return None
     key=hashlib.sha256(sid.encode()).hexdigest()+'.json'
     p=Path(os.fsdecode(call(root,'rev-parse','--git-path',prefix+key).stdout).strip())
@@ -108,6 +119,10 @@ def search_job(root):
     lease=marker(root,'search-gap-recovery/leases/')
     if not lease or not lease.is_file():return None
     value=json.loads(lease.read_bytes())
+    if value.get('closed'):return None
+    if value.get('createdAt'):
+        import time as _time
+        if _time.time()-float(value['createdAt'])>21600:return None
     return {k:value[k] for k in ('site','run','owner')}
 
 def snapshot_sources(root, folder):
@@ -360,11 +375,336 @@ def restore_package(root, job_id):
         print('Verified recovery package:',folder)
 
 
+def _route_key_of_index_row(row):
+    if not isinstance(row, dict):
+        return None
+    for field in ('u', 'url', 'path', 'route', 'href', 'slug'):
+        val = row.get(field)
+        if isinstance(val, str) and val.strip():
+            s = val.strip()
+            return (s.rstrip('/') or '/') if s.startswith('/') else s
+    return None
+
+
+def _held_tokens_in_added_lines(base_lines, cur_lines, held_routes):
+    if not held_routes:
+        return False
+    import difflib, re
+    added = []
+    for tag, _, _, j1, j2 in difflib.SequenceMatcher(None, base_lines, cur_lines, autojunk=False).get_opcodes():
+        if tag in ('insert', 'replace'):
+            added.extend(cur_lines[j1:j2])
+    if not added:
+        return False
+    base_set = set(base_lines)
+    for hroute in held_routes:
+        hpath = hroute.rstrip('/')
+        hslug = hroute.strip('/').rsplit('/', 1)[-1] if hroute.strip('/') else ''
+        slug_re = re.compile(r'(?<![A-Za-z0-9_-])' + re.escape(hslug) + r'(?![A-Za-z0-9_-])') if len(hslug) >= 4 else None
+        for line in added:
+            if line in base_set:
+                continue
+            if len(hpath) > 1 and hpath in line:
+                return True
+            if slug_re and slug_re.search(line):
+                return True
+    return False
+
+
+def _verified_route_subset(root, name, current_bytes, reviewed_bytes, base_rev, approved_texts=(), held_routes=(), pub_route_set=()):
+    """Verify current_bytes equals reviewed_bytes with ONLY non-published sibling hunks cleanly reverted
+    back to base_rev: zero unreviewed additions, zero base deletions, zero edits/deletions inside kept approved content."""
+    import difflib, re
+    if b'\0' in current_bytes or b'\0' in reviewed_bytes:
+        return False
+    base_bytes = b''
+    if base_rev:
+        shown = call(root, 'show', base_rev + ':' + name, check=False)
+        if shown.returncode == 0:
+            if b'\0' in shown.stdout:
+                return False
+            base_bytes = shown.stdout
+    try:
+        base_str = base_bytes.decode('utf-8')
+        cur_str = current_bytes.decode('utf-8')
+        rev_str = reviewed_bytes.decode('utf-8')
+    except UnicodeDecodeError:
+        return False
+    base_lines = base_str.splitlines()
+    cur_lines = cur_str.splitlines()
+    rev_lines = rev_str.splitlines()
+    if _held_tokens_in_added_lines(base_lines, cur_lines, held_routes):
+        return False
+    if name.endswith('search-index.json'):
+        try:
+            b_arr = json.loads(base_str) if base_str.strip() else []
+            c_arr = json.loads(cur_str)
+            r_arr = json.loads(rev_str)
+            if isinstance(b_arr, list) and isinstance(c_arr, list) and isinstance(r_arr, list):
+                b_map = {_route_key_of_index_row(x): x for x in b_arr}
+                c_map = {_route_key_of_index_row(x): x for x in c_arr}
+                r_map = {_route_key_of_index_row(x): x for x in r_arr}
+                if None not in b_map and None not in c_map and None not in r_map and len(c_map) == len(c_arr):
+                    pub_slugs = {p.strip('/').rsplit('/', 1)[-1] for p in pub_route_set if p.strip('/')}
+                    def _is_pub(k):
+                        return k in pub_route_set or k in pub_slugs
+                    for k, val in b_map.items():
+                        if not _is_pub(k) and c_map.get(k) != val:
+                            return False
+                    for k, val in c_map.items():
+                        if _is_pub(k):
+                            if r_map.get(k) != val:
+                                return False
+                        elif b_map.get(k) != val:
+                            return False
+                    return True
+        except Exception:
+            return False
+    if current_bytes == reviewed_bytes:
+        return not held_routes
+    if not held_routes:
+        return False
+    rev_ops = {}
+    rev_inserts = {}
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, base_lines, rev_lines, autojunk=False).get_opcodes():
+        if tag != 'equal':
+            rev_ops[(tag, i1, i2)] = rev_lines[j1:j2]
+        if tag == 'insert':
+            rev_inserts[i1] = rev_lines[j1:j2]
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, base_lines, cur_lines, autojunk=False).get_opcodes():
+        if tag == 'equal':
+            continue
+        cur_chunk = cur_lines[j1:j2]
+        if (tag, i1, i2) in rev_ops and rev_ops[(tag, i1, i2)] == cur_chunk:
+            continue
+        if tag == 'insert' and i1 in rev_inserts:
+            sub_ops = difflib.SequenceMatcher(None, rev_inserts[i1], cur_chunk, autojunk=False).get_opcodes()
+            if all(st in ('equal', 'delete') for st, _, _, _, _ in sub_ops):
+                continue
+        return False
+    base_norm = ' '.join(base_str.split())
+    rev_norm = ' '.join(rev_str.split())
+    cur_norm = ' '.join(cur_str.split())
+    for ap_text in approved_texts:
+        for sent in re.split(r'(?<=[.!?])\s+', ap_text or ''):
+            norm_sent = ' '.join(sent.split()).strip()
+            if len(norm_sent) >= 25 and norm_sent in rev_norm and norm_sent not in base_norm:
+                if norm_sent not in cur_norm:
+                    return False
+    return True
+
+
+def _report_blocks_auto_release(rep_doc, verdict):
+    if not isinstance(rep_doc, dict):
+        return False
+    if rep_doc.get('professionalReviewRequired') is True or rep_doc.get('releaseAtLimitEligible') is False:
+        return True
+    pr = rep_doc.get('professionalReview')
+    if isinstance(pr, str) and pr.strip().upper() in ('REQUIRED', 'MISSING', 'BLOCKED', 'HOLD'):
+        return True
+    if isinstance(pr, dict) and (pr.get('required') is True and not pr.get('verified') and pr.get('status') not in ('verified', 'approved', 'not-applicable')):
+        return True
+    if verdict != 'PASS' and rep_doc.get('holdRelease') is True:
+        return True
+    return False
+
+
+def archive_owner_close(root, intake, request, store=None, lease=None):
+    job = search_job(root)
+    if not job:
+        raise ValueError('Use the active native Search Gap session')
+    intake_path = Path(intake).resolve()
+    request_path = Path(request).resolve()
+    packet = json.loads(intake_path.read_bytes())
+    req = json.loads(request_path.read_bytes())
+    if (packet.get('runId') != job['run'] or packet.get('site') != job['site']
+            or req.get('runId') != job['run'] or req.get('site') != job['site']):
+        raise ValueError('The owner-close request belongs to a different intake')
+    req_rel = request_path.relative_to(root).as_posix()
+    if not req_rel.startswith('reports/') or not request_path.is_relative_to(root / 'reports'):
+        raise ValueError('Store owner-close request under internal reports')
+    pub_routes = [r for entry in (req.get('candidates') or {}).values()
+                  if isinstance(entry, dict) and entry.get('action') == 'publish-as-written'
+                  for r in (entry.get('routes') or [])]
+    if not pub_routes:
+        return None
+    d = durable(root)
+    conn = d.backend(root)
+    if conn is None:
+        return None
+    _, git_store = conn
+    base_commit, changed = changed_sources(root)
+    if not changed:
+        return None
+    if not base_commit:
+        raise ValueError('Missing source base commit for the reviewed release')
+    import sys
+    sg_dir = str(root / 'scripts/search_gap')
+    if sg_dir not in sys.path:
+        sys.path.insert(0, sg_dir)
+    import job_worker as sg_worker
+    sg_store = store if store is not None else sg_worker.Store()
+    if req.get('autoClose'):
+        if not sg_worker.auto_close_allowed(sg_store, job['site']):
+            raise ValueError('Automatic close-out is not enabled for this site')
+    elif not sg_worker.authorized_request(sg_store, job['site'], job['run'], request_path):
+        raise ValueError('Owner request is not registered by the owner for these exact bytes')
+    claimed_locally = lease is None
+    if claimed_locally:
+        lease = sg_store.claim_job(job['site'], job['owner'], intake_path.read_text(encoding='utf-8'))
+    try:
+        if lease.get('status') != 'claimed' or lease.get('packetSha256') != sg_worker.digest(intake_path):
+            raise ValueError('Search job lease is not held by this invocation')
+        canonical_jobs = sg_worker.recorded_canonical_jobs(lease.get('checkpoints') or [])
+        created_at = sg_worker.native.dt.datetime.fromisoformat(lease['createdAt'].replace('Z', '+00:00'))
+        policy_path = root / '.claude/tools/content-review-policy.py'
+        spec = importlib.util.spec_from_file_location('owner_close_review_policy', policy_path)
+        policy = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(policy)
+        canon_base = req['canonicalBase'].rstrip('/')
+        boilerplate = sg_worker.home_text(canon_base) if req.get('autoClose') else ''
+        refs = {req_rel: d.sha(request_path.read_bytes())}
+        history = {}
+        invalid = set()
+        reviewed_blobs = {}
+        pub_route_set = {r['path'].rstrip('/') or '/' for r in pub_routes}
+        for route_spec in pub_routes:
+            route = route_spec['path']
+            norm_route = route.rstrip('/') or '/'
+            rev_text = None
+            if req.get('autoClose'):
+                old_cwd = Path.cwd()
+                os.chdir(root)
+                try:
+                    rev_text = sg_worker.reviewed_text(canon_base, route, canonical_jobs, created_at)
+                finally:
+                    os.chdir(old_cwd)
+                if not rev_text or not all(len(x.strip()) >= 20 and ' '.join(x.split()) in rev_text and ' '.join(x.split()) not in boilerplate
+                                           for x in route_spec.get('requiredText', [])):
+                    raise ValueError('Draft text is not verified by a completed independent review of ' + route)
+            journal_inst = policy.Journal(root, canon_base, route)
+            if not journal_inst.path.is_file():
+                d.restore(root, journal_inst)
+            if not journal_inst.path.is_file():
+                raise ValueError('Missing original review journal for ' + route)
+            with policy.Journal(root, canon_base, route) as journal:
+                cycle = journal.cycle
+                all_rounds = list((cycle or {}).get('rounds') or [])
+            if (not cycle or not all_rounds or all_rounds[-1].get('status') != 'complete'
+                    or cycle.get('status') in ('in-review', 'repair-pending')
+                    or (req.get('autoClose') and cycle.get('jobId') not in canonical_jobs)):
+                raise ValueError('No completed independent review cycle for ' + route)
+            last_round = all_rounds[-1]
+            admission = json.loads(policy.artifact(root, last_round['admission']).read_bytes())
+            snap_file = policy.artifact(root, admission['snapshot'])
+            snapshot = json.loads(snap_file.read_bytes())
+            if last_round.get('report'):
+                rep_file = policy.artifact(root, last_round['report'])
+                rep_bytes = rep_file.read_bytes()
+                refs[rep_file.resolve().relative_to(root).as_posix()] = d.sha(rep_bytes)
+                if req.get('autoClose') and _report_blocks_auto_release(json.loads(rep_bytes), last_round.get('verdict')):
+                    raise ValueError('Audit report holds ' + route + ' from automatic release')
+            if rev_text is None:
+                snap_entry = next((sr for sr in (snapshot.get('routes') or []) if (sr.get('path', '').rstrip('/') or '/') == norm_route), None)
+                if snap_entry and snap_entry.get('textFile') and (root / snap_entry['textFile']).is_file():
+                    rev_text = ' '.join((root / snap_entry['textFile']).read_text(encoding='utf-8', errors='replace').split())
+            history.update(d.collect(root, journal_inst))
+            if hasattr(d, 'invalidated'):
+                invalid.update(d.invalidated(journal_inst))
+            boundary = snapshot.get('correctionBoundary') or snapshot.get('reviewSourceArchive')
+            if not boundary:
+                raise ValueError('Missing signed source boundary for ' + route)
+            bp = root / boundary['path']
+            if not bp.is_file() or d.sha(bp.read_bytes()) != boundary['sha256']:
+                bp = d.cache_path(root, boundary['path'], boundary['sha256'])
+            if not bp.is_file() or d.sha(bp.read_bytes()) != boundary['sha256']:
+                raise ValueError('Missing signed source boundary blob for ' + route)
+            boundary_data = json.loads(bp.read_bytes())
+            rec_base = boundary_data.get('recoveryBaseCommit')
+            manifest_routes = (snapshot.get('manifest') or {}).get('routes') or []
+            snap_route_paths = {(sr.get('path', '').rstrip('/') or '/') for sr in (snapshot.get('routes') or []) if sr.get('path')}
+            snap_route_paths |= {(mr.get('path', '').rstrip('/') or '/') for mr in manifest_routes if mr.get('path')}
+            held_routes = sorted(p for p in snap_route_paths if p not in pub_route_set)
+            approved_mfiles = {f for mr in manifest_routes if (mr.get('path', '').rstrip('/') or '/') in pub_route_set
+                               for f in (mr.get('correctionContentFiles') or [])}
+            sibling_mfiles = {f for mr in manifest_routes if (mr.get('path', '').rstrip('/') or '/') not in pub_route_set
+                              for f in (mr.get('correctionContentFiles') or [])}
+            sibling_only_files = sibling_mfiles - approved_mfiles
+            for fname, fentry in (boundary_data.get('files') or {}).items():
+                if fname in sibling_only_files:
+                    continue
+                if not isinstance(fentry, dict) or not fentry.get('sha256'):
+                    continue
+                expected_sha = fentry['sha256']
+                art = fentry.get('artifact') or {}
+                blob_file = (root / art['path']) if art.get('path') else Path('/nonexistent')
+                if not blob_file.is_file() or d.sha(blob_file.read_bytes()) != expected_sha:
+                    blob_file = d.cache_path(root, fname, expected_sha)
+                if blob_file.is_file() and d.sha(blob_file.read_bytes()) == expected_sha:
+                    exclusive_approved = bool(approved_mfiles) and fname in approved_mfiles and fname not in sibling_mfiles
+                    allow_subset = bool(held_routes) and not exclusive_approved
+                    reviewed_blobs.setdefault(fname, []).append({
+                        'sha': expected_sha,
+                        'bytes': blob_file.read_bytes(),
+                        'rec_base': rec_base,
+                        'allow_subset': allow_subset,
+                        'held_routes': held_routes,
+                        'approved_texts': [rev_text] if rev_text else [],
+                    })
+        files = {}
+        for name in sorted(changed):
+            target = root / name
+            if target.is_symlink():
+                raise ValueError('Resolve the changed source symlink before archiving: ' + name)
+            if name not in reviewed_blobs:
+                raise ValueError('Changed source is outside the publish-as-written reviewed snapshots: ' + name)
+            if not target.is_file():
+                raise ValueError('Changed source deletes a tracked file outside reviewed release: ' + name)
+            raw = target.read_bytes()
+            raw_sha = d.sha(raw)
+            matched = False
+            for cand in reviewed_blobs[name]:
+                b_rev = cand['rec_base'] or base_commit
+                if cand['sha'] == raw_sha and not cand['held_routes']:
+                    matched = True
+                    break
+                if cand['sha'] == raw_sha and not cand['allow_subset']:
+                    b_shown = call(root, 'show', b_rev + ':' + name, check=False)
+                    b_lines = b_shown.stdout.decode('utf-8', 'replace').splitlines() if b_shown.returncode == 0 else []
+                    if not _held_tokens_in_added_lines(b_lines, raw.decode('utf-8', 'replace').splitlines(), cand['held_routes']):
+                        matched = True
+                        break
+                if cand['allow_subset'] and _verified_route_subset(
+                    root, name, raw, cand['bytes'], b_rev,
+                    approved_texts=cand['approved_texts'],
+                    held_routes=cand['held_routes'],
+                    pub_route_set=pub_route_set,
+                ):
+                    matched = True
+                    break
+            if not matched:
+                raise ValueError('Changed source adds unreviewed content beyond the reviewed snapshot: ' + name)
+            saved = d.cache(root, name, raw_sha, raw)
+            files[name] = {'path': str(saved.relative_to(root)), 'sha256': raw_sha}
+        import inspect
+        if 'invalid' in inspect.signature(persist).parameters:
+            return persist(root, git_store, d, refs, base_commit, files, job, job['run'], True, history, invalid)
+        return persist(root, git_store, d, refs, base_commit, files, job, job['run'], True, history)
+    finally:
+        if claimed_locally:
+            try:
+                sg_store.release_job(job['site'], job['run'], job['owner'])
+            except Exception:
+                pass
+
+
 if __name__=='__main__':
     import argparse
     parser=argparse.ArgumentParser();sub=parser.add_subparsers(dest='action',required=True)
     recover=sub.add_parser('restore');recover.add_argument('--job',required=True)
     meta=sub.add_parser('metadata');meta.add_argument('--intake',type=Path,required=True);meta.add_argument('--completion',type=Path,required=True)
+    oc=sub.add_parser('owner-close');oc.add_argument('--intake',type=Path,required=True);oc.add_argument('--request',type=Path,required=True)
     args=parser.parse_args();root=Path(__file__).resolve().parents[2]
     if args.action=='restore':restore_package(root,args.job)
+    elif args.action=='owner-close':print('Verified owner-close package:',archive_owner_close(root,args.intake,args.request))
     else:print('Verified metadata package:',archive_metadata(root,args.intake,args.completion))

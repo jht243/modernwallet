@@ -74,6 +74,15 @@
             "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/tools/competitor-handoff.py\" publication-guard"
           }
         ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/search_gap/session_end.py\" pre-bash"
+          }
+        ]
       }
     ],
     "Stop": [
@@ -92,6 +101,14 @@
             "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/hype_radar/handoff.py\" stop"
           }
         ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/search_gap/session_end.py\" stop"
+          }
+        ]
       }
     ],
     "SessionEnd": [
@@ -99,7 +116,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/search_gap/session_end.py\""
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/search_gap/session_end.py\"",
+            "timeout": 60
           }
         ]
       }

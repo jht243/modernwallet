@@ -34,10 +34,107 @@ def backend(root):
  require(path.is_file(),'Restore the existing durable review backend before reserving another audit')
  spec=importlib.util.spec_from_file_location('durable_review_store',path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
  return m,m.Store(root,ref=REF)
+def _job_matches_search_gap_row(old_job_id,row):
+ run_id=str(row.get('run_id') or '')
+ if old_job_id==run_id:return True
+ recorded={v for cp in (row.get('checkpoints') or []) if isinstance(cp,dict)
+           for v in (cp.get('canonicalJobs') or {}).values() if isinstance(v,str)}
+ if old_job_id in recorded:return True
+ if old_job_id.startswith(('search-gap-','sg-')) or 'search-gap' in old_job_id.lower():
+  if len(run_id)>=8 and run_id[:8] in old_job_id:return True
+  try:cids=[str(c.get('id') or '') for c in (json.loads(row.get('packet_text') or '{}').get('candidates') or [])]
+  except Exception:cids=[]
+  if any(len(cid)>=12 and cid[:12] in old_job_id for cid in cids):return True
+ return False
+
+def _search_gap_job_closed_for_restart(root,journal,old_job_id):
+ import re,urllib.parse,urllib.request
+ url=os.environ.get('SUPABASE_URL','').strip().rstrip('/')
+ svc_key=os.environ.get('SUPABASE_SERVICE_ROLE_KEY','').strip()
+ if not url or not svc_key or not isinstance(old_job_id,str) or not old_job_id:return False
+ raw=[os.environ.get('SEARCH_SITE',''),urllib.parse.urlsplit(journal.base).hostname or '']
+ cfg=root/'.claude/content-review-policy.json'
+ if cfg.is_file():
+  try:raw.extend(json.loads(cfg.read_text()).get('canonicalHosts') or [])
+  except Exception:pass
+ leases_dir=root/'.git/search-gap-recovery/leases'
+ if leases_dir.is_dir():
+  for lf in leases_dir.glob('*.json'):
+   try:raw.append(str(json.loads(lf.read_text()).get('site') or ''))
+   except Exception:pass
+ sites=sorted({s.strip().lower().removeprefix('www.').rstrip('.') for s in raw if isinstance(s,str) and s.strip() and re.fullmatch(r'[a-z0-9.-]+\.[a-z]{2,}',s.strip().lower().removeprefix('www.').rstrip('.'))})
+ if not sites:return False
+ params=urllib.parse.urlencode({'site':'in.('+','.join(sites)+')','status':'in.(active,complete,owner-closed,parked)','select':'site,run_id,status,checkpoints,parked,packet_text,created_at','order':'created_at.desc','limit':'200'})
+ req=urllib.request.Request(url+'/rest/v1/search_gap_jobs?'+params,headers={'apikey':svc_key,'Authorization':'Bearer '+svc_key})
+ try:
+  with urllib.request.urlopen(req,timeout=15) as resp:rows=json.loads(resp.read() or b'[]')
+ except Exception:return False
+ if not isinstance(rows,list):return False
+ norm_route=journal.route.rstrip('/') or '/'
+ closed_match=False
+ for row in rows:
+  if not isinstance(row,dict) or not _job_matches_search_gap_row(old_job_id,row):continue
+  st=row.get('status')
+  if st in ('active','complete'):return False
+  pub_paths={str(p).rstrip('/') or '/' for paths in ((row.get('parked') or {}).get('published') or {}).values() for p in (paths or []) if isinstance(p,str)}
+  if norm_route in pub_paths:return False
+  if st in ('owner-closed','parked'):closed_match=True
+ return closed_match
+
+def _maybe_retire_closed_search_gap_cycle(root,journal,module,store,revision,entry):
+ head=entry.get('head')
+ if not head:return None
+ rel=str(journal.path.relative_to(root))
+ raw_journal=module.git(root,'show',revision+':artifacts/'+head).stdout
+ require(sha(raw_journal)==head,'Durable review artifact changed')
+ lines=[ln for ln in raw_journal.splitlines(keepends=True) if ln.strip()]
+ events=[json.loads(ln) for ln in lines]
+ last_begin=max((i for i,e in enumerate(events) if e.get('kind')=='begin'),default=-1)
+ if last_begin<0:return None
+ active_events=events[last_begin:]
+ if any(e.get('kind')=='published' for e in active_events):return None
+ old_job_id=str((active_events[0].get('data') or {}).get('jobId') or '').strip()
+ if not old_job_id or not _search_gap_job_closed_for_restart(root,journal,old_job_id):return None
+ kept_raw=b''.join(lines[:last_begin])
+ committed=subprocess.run(['git','show','HEAD:'+rel],cwd=root,capture_output=True)
+ if committed.returncode==0 and not kept_raw.startswith(committed.stdout):return None
+ if last_begin==0:
+  def retire_empty(st):
+   st.setdefault('job',{'artifacts':{}})
+   if st['job'] is None:st['job']={'artifacts':{}}
+   cur=(st.get('reviewJournals') or {}).get(journal.key)
+   if cur and cur.get('head')==head:
+    st.setdefault('retiredSearchGapJournals',{})[journal.key+':'+head]=cur
+    st['reviewJournals'].pop(journal.key,None)
+  store.mutate(retire_empty,[])
+  if journal.path.is_file() and sha(journal.path.read_bytes())==head:
+   journal.path.unlink()
+   if journal.anchor.is_file():journal.anchor.unlink()
+  return {'module':module,'store':store,'expectedHead':None,'key':journal.key}
+ kept_head=sha(kept_raw)
+ journal.path.parent.mkdir(parents=True,exist_ok=True);journal.path.write_bytes(kept_raw)
+ journal.anchor.write_text(events[last_begin-1]['eventSha256']+'\n');journal.anchor.chmod(0o600)
+ saved=cache(root,rel,kept_head,kept_raw);saved_rel=str(saved.relative_to(root))
+ def retire_truncate(st):
+  st.setdefault('job',{'artifacts':{}})
+  if st['job'] is None:st['job']={'artifacts':{}}
+  cur=(st.get('reviewJournals') or {}).get(journal.key)
+  if cur and cur.get('head')==head:
+   st.setdefault('retiredSearchGapJournals',{})[journal.key+':'+head]=cur
+   merged={**cur.get('artifacts',{}),rel:kept_head,saved_rel:kept_head}
+   st['reviewJournals'][journal.key]={'identity':journal.identity,'head':kept_head,'artifacts':merged}
+ store.mutate(retire_truncate,[rel,saved_rel])
+ revision2,st2=store.read();entry2=st2.get('reviewJournals',{}).get(journal.key)
+ return (revision2,entry2)
+
 def restore(root,journal):
  connection=backend(root)
  if connection is None:return None
  module,store=connection;revision,state=store.read();entry=state.get('reviewJournals',{}).get(journal.key)
+ if entry:
+  retired=_maybe_retire_closed_search_gap_cycle(root,journal,module,store,revision,entry)
+  if isinstance(retired,dict):return retired
+  if isinstance(retired,tuple):revision,entry=retired
  head=entry.get('head') if entry else None
  if entry:
   paths=entry['artifacts'];rel=str(journal.path.relative_to(root));require(paths.get(rel)==head,'Durable review identity changed')

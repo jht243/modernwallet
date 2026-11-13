@@ -83,6 +83,10 @@ begin
  select count(*) into n from public.search_gap_queue q where q.site=p_site and q.resolved_at is null
   and q.event_id in(select e::uuid from jsonb_array_elements(j.packet_text::jsonb->'candidates') c cross join lateral jsonb_array_elements_text(c->'eventIds') e where c->>'id'=any(done_ids));
  if n>0 then raise exception 'Published, settled or dropped candidates are not acknowledged: %', n; end if;
+ if exists(select 1 from public.search_gap_queue q where q.site=p_site and q.resolved_at is not null
+  and q.event_id in(select e::uuid from jsonb_array_elements(j.packet_text::jsonb->'candidates') c cross join lateral jsonb_array_elements_text(c->'eventIds') e where c->>'id'=any(restart_ids))) then
+  raise exception 'Already-resolved candidates cannot be marked restart';
+ end if;
  update public.search_gap_jobs set status='owner-closed',parked=p_receipt||jsonb_build_object('kind',case when (p_receipt->>'autoClose')='true' then 'auto-close' else 'owner-close' end,'ownerClosedAt',now()),updated_at=now() where site=p_site and run_id=p_run;
  return jsonb_build_object('ok',true,'restarted',cardinality(restart_ids));
 end $$;

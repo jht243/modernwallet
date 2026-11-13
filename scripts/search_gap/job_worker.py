@@ -33,19 +33,102 @@ class BusyJob(ValueError):
                 'nextAction': 'Record the busy result once and end this invocation. The current owner continues. Use the next scheduled invocation after lease expiry if unfinished.'}
 
 
+EVIDENCE_BUCKET = 'search-gap-evidence'
+SECRET_PATTERNS = re.compile(
+    rb'(?:-----BEGIN [A-Z ]*PRIVATE KEY-----|sk-ant-[A-Za-z0-9_-]{20,}|sk-proj-[A-Za-z0-9_-]{20,}|'
+    rb'sbp_[A-Za-z0-9]{20,}|sb_secret_[A-Za-z0-9_-]{20,}|ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|'
+    rb'rnd_[A-Za-z0-9]{20,}|re_[A-Za-z0-9_]{20,}|AIza[0-9A-Za-z_-]{30,}|AQ\.[A-Za-z0-9_-]{20,}|'
+    rb'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\.[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,})'
+)
+
+
+def _http_timeout(default=30):
+    try:
+        override = int(os.environ.get('SEARCH_GAP_HTTP_TIMEOUT', '') or 0)
+        return override if override > 0 else default
+    except ValueError:
+        return default
+
+
 class Store(native.Store):
+    supports_evidence_storage = True
+
     def request(self,path,method='GET',body=None):
         headers={'apikey':self.key,'Authorization':'Bearer '+self.key,'Content-Type':'application/json','Prefer':'return=representation'}
         request=urllib.request.Request(self.url+'/rest/v1/'+path,method=method,headers=headers,data=json.dumps(body).encode() if body is not None else None)
+        timeout = _http_timeout(30)
         for attempt in range(3):
             try:
-                with urllib.request.urlopen(request,timeout=30) as response:
+                with urllib.request.urlopen(request,timeout=timeout) as response:
                     raw=response.read();return json.loads(raw) if raw else None
             except urllib.error.HTTPError as error:
                 if error.code not in (408,429,500,502,503,504) or attempt==2:raise
             except (urllib.error.URLError,TimeoutError):
                 if attempt==2:raise
             time.sleep(2**attempt)
+
+    def storage_request(self, object_key, method='GET', raw=None):
+        headers = {'apikey': self.key, 'Authorization': 'Bearer ' + self.key}
+        if raw is not None:
+            headers.update({'Content-Type': 'application/octet-stream', 'x-upsert': 'true'})
+        quoted = urllib.parse.quote(object_key, safe='/')
+        req = urllib.request.Request(self.url + '/storage/v1/object/' + EVIDENCE_BUCKET + '/' + quoted,
+                                     method=method, headers=headers, data=raw)
+        timeout = _http_timeout(60)
+        for attempt in range(3):
+            try:
+                with urllib.request.urlopen(req, timeout=timeout) as response:
+                    return response.read()
+            except urllib.error.HTTPError as error:
+                if error.code not in (408, 429, 500, 502, 503, 504) or attempt == 2:
+                    raise
+            except (urllib.error.URLError, TimeoutError):
+                if attempt == 2:
+                    raise
+            time.sleep(2 ** attempt)
+
+    def upload_evidence(self, site, run, sha256, raw):
+        require(re.fullmatch(r'[a-z0-9.-]{1,120}', str(site or '')), 'Invalid evidence site key')
+        require(re.fullmatch(r'[A-Za-z0-9_-]{1,80}', str(run or '')), 'Invalid evidence run ID')
+        require(re.fullmatch(r'[0-9a-f]{64}', str(sha256 or '')), 'Invalid evidence sha256')
+        key = f'{site}/{run}/{sha256}'
+        self.storage_request(key, 'POST', raw)
+        return key
+
+    def download_evidence(self, storage_key, expected_site=None):
+        require(isinstance(storage_key, str)
+                and re.fullmatch(r'[a-z0-9.-]{1,120}/[A-Za-z0-9_-]{1,80}/[0-9a-f]{64}', storage_key),
+                'Invalid evidence storage key')
+        if expected_site:
+            require(storage_key.startswith(expected_site + '/'), 'Evidence storage key belongs to another site')
+        return self.storage_request(storage_key, 'GET')
+
+    def acknowledged_decisions(self, site, run, packet):
+        all_events = [eid for c in packet.get('candidates', []) for eid in c.get('eventIds', []) if isinstance(eid, str) and eid]
+        if not all_events:
+            return {}
+        by_event = {}
+        for index in range(0, len(all_events), 100):
+            chunk = all_events[index:index + 100]
+            params = urllib.parse.urlencode({
+                'site': 'eq.' + site,
+                'event_id': 'in.(' + ','.join(chunk) + ')',
+                'resolved_at': 'not.is.null',
+                'select': 'event_id,resolution',
+            })
+            for row in (self.request('search_gap_queue?' + params) or []):
+                res = row.get('resolution') or {}
+                if res.get('runId') == run and isinstance(res.get('decision'), dict):
+                    by_event[row['event_id']] = res['decision']
+        settled = {}
+        for candidate in packet.get('candidates', []):
+            eids = candidate.get('eventIds') or []
+            if eids and all(eid in by_event for eid in eids):
+                decision = by_event[eids[0]]
+                if decision.get('id') == candidate['id'] and decision.get('status') in ('published', 'no-addition', 'dropped'):
+                    settled[candidate['id']] = decision
+        return settled
+
     def release_job(self,site,run,owner):
         # Conditional ownership filter cannot expire a different invocation's lease.
         params=urllib.parse.urlencode({
@@ -136,7 +219,7 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
                     subprocess.run(['git','fetch','--quiet','--no-tags','--no-write-fetch-head','origin',revision],check=True,capture_output=True)
         action='Continue the existing native search workflow.'
         if resumed and checkpoints:
-            restore_artifacts(checkpoints)
+            restore_artifacts(checkpoints, store)
             action = ('Resume at the recorded stage. The saved files have been restored and their hashes checked. '
                       'Use recoverySummary.results/evidence and the recorded nextAction under the current native rules. '
                       'If the original review is awaiting the render gate, use the saved candidate patch, install the project’s '
@@ -231,15 +314,18 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
                       '--published-commit <full published commit>]. A publish-as-written candidate with no written page is left out of --published and is '
                       'restarted. Candidates marked restart need no work: they return to the queue and the next invocation writes them fresh. '
                       'Report exactly what was published and what was restarted.')
-        if resumed and not summary_has_close(summary) and auto_close_allowed(store, site):
-            action = ('STANDING OWNER RULE (2026-11-13): this job was left unfinished by an earlier run. Finish it in THIS invocation; if finish '
-                      'fails or cannot be reached, close it before ending with owner-close --auto (see CONTRACT "Automatic same-day close-out"). '
-                      'Never leave it for a later run. ' + action)
+        auto_close = job.get('status') == 'claimed' and auto_close_allowed(store, site)
+        if auto_close and not summary_has_close(summary):
+            lead = 'this job was left unfinished by an earlier run.' if resumed else 'every claimed Search Gap job must finish or close in this same run.'
+            action = ('STANDING OWNER RULE (2026-11-13): ' + lead + ' Finish it in THIS invocation; if finish '
+                      'fails or cannot be reached, close it before ending with python3 scripts/search_gap/job_worker.py end-run --site ' + site +
+                      ' --owner <this runId> --intake ' + str(path) + ' --deploy --reason "<specific blocker>" '
+                      '(or owner-close --auto; see CONTRACT "Automatic same-day close-out"). Never leave it for a later run. ' + action)
         if job.get('status') == 'empty':
             action = 'Verified empty intake. Submit the required collector no-op once, then finish. No Git commit, push, build, review or deployment is needed.'
         # Control and recovery state must precede the potentially long candidate list.
         if job.get('status')=='claimed':
-            remember_lease(site,packet['runId'],owner)
+            remember_lease(site,packet['runId'],owner,str(path),auto_close)
             heartbeat(store,site,packet['runId'],owner)
         return dict(nextAction=action,resumed=resumed,recoverySummary=summary,durableJob=True,
                     intakeFile=str(path),intakeSha256=digest(path),checkpointFile=str(checkpoint_file) if checkpoint_file else None,
@@ -300,7 +386,85 @@ def missing_decision_chart(packet, intake_path, checkpoints):
     return None
 
 
-def completion_checkpoint_paths(paths):
+EVIDENCE_DIRS = (
+    'reports/search-gap',
+    'reports/mindmap-pass',
+    'reports/content-review-journals',
+    'reports/content-review-evidence',
+    'reports/workflow-generation-budgets',
+)
+EVIDENCE_SKIP_SUFFIXES = ('.lock', '.tmp', '.pyc', '.recapture.json', '.recapture.html', '.recapture.txt')
+
+
+def has_evidence_storage(store):
+    return isinstance(store, Store) or getattr(store, 'supports_evidence_storage', None) is True
+
+
+def contains_secret(raw):
+    if SECRET_PATTERNS.search(raw):
+        return True
+    for key, secret in os.environ.items():
+        if any(x in key.upper() for x in ('KEY', 'TOKEN', 'PASSWORD', 'SECRET', 'AUTH', 'B64', 'DATABASE_URL')) and len(secret) >= 16:
+            if secret.encode() in raw:
+                return True
+    return False
+
+
+def auto_evidence_paths(extra=(), store=None):
+    selected = dict.fromkeys(str(p) for p in (extra or ()) if p)
+    if not has_evidence_storage(store):
+        return list(selected)
+    existing_dirs = [d for d in EVIDENCE_DIRS if Path(d).is_dir()]
+    if not existing_dirs:
+        return list(selected)
+    in_git = subprocess.run(['git', 'rev-parse', '--is-inside-work-tree'], capture_output=True, text=True)
+    if in_git.returncode != 0 or in_git.stdout.strip() != 'true':
+        return list(selected)
+    candidates = set()
+    untracked = subprocess.run(['git', 'ls-files', '--others', '--modified', '--exclude-standard', '-z', '--', *existing_dirs],
+                               capture_output=True)
+    if untracked.returncode == 0 and untracked.stdout:
+        candidates.update(p for p in os.fsdecode(untracked.stdout).split('\0') if p)
+    has_origin_main = subprocess.run(['git', 'rev-parse', '--verify', 'refs/remotes/origin/main^{commit}'],
+                                     capture_output=True).returncode == 0
+    if has_origin_main:
+        committed = subprocess.run(['git', 'diff', '--name-only', '-z', 'refs/remotes/origin/main...HEAD', '--', *existing_dirs],
+                                   capture_output=True)
+        if committed.returncode == 0 and committed.stdout:
+            candidates.update(p for p in os.fsdecode(committed.stdout).split('\0') if p)
+    reports_root = (Path.cwd().resolve() / 'reports')
+    for rel in sorted(candidates):
+        if (rel in selected
+                or rel.startswith('reports/search-gap/intakes/')
+                or (rel.startswith('reports/search-gap/intake') and rel.endswith('.json'))
+                or rel.endswith(EVIDENCE_SKIP_SUFFIXES)):
+            continue
+        p = Path(rel)
+        if p.is_absolute() or '..' in p.parts or not p.parts or p.parts[0] != 'reports' or p.is_symlink() or not p.is_file():
+            continue
+        if not p.resolve().is_relative_to(reports_root):
+            continue
+        size = p.stat().st_size
+        if size > 20_000_000:
+            continue
+        try:
+            raw = p.read_bytes()
+        except OSError:
+            continue
+        if contains_secret(raw):
+            continue
+        if p.suffix == '.json' and size <= 2_000_000:
+            try:
+                doc = json.loads(raw)
+                if isinstance(doc, dict) and {'candidates', 'runId', 'site'} <= doc.keys() and 'autoClose' not in doc and isinstance(doc.get('candidates'), list):
+                    continue
+            except Exception:
+                pass
+        selected[str(p)] = None
+    return list(selected)
+
+
+def completion_checkpoint_paths(paths, max_size=2_000_000):
     # Finish reopens the reviewed chart by path. Save its exact bytes in the
     # same durable checkpoint even when a caller names only the completion.
     selected = dict.fromkeys(map(str, paths))
@@ -308,7 +472,7 @@ def completion_checkpoint_paths(paths):
         path = artifact_path(value)
         if path.suffix != '.json':
             continue
-        if path.stat().st_size > 2_000_000:
+        if path.stat().st_size > max_size:
             raise ValueError("Artifact too large; use a reviewed private Git artifact reference")
         try:
             document = read(path)
@@ -329,29 +493,73 @@ def completion_checkpoint_paths(paths):
     return selected
 
 
-def capture_artifacts(paths):
-    artifacts=[]
-    for value in completion_checkpoint_paths(paths):
-        path=artifact_path(value);raw=path.read_bytes();require(len(raw)<=2_000_000,'Artifact too large; use a reviewed private Git artifact reference')
-        for key,secret in os.environ.items():
-            if any(x in key.upper() for x in ('KEY','TOKEN','PASSWORD','SECRET','AUTH','B64','DATABASE_URL')) and len(secret)>=16:
-                require(secret.encode() not in raw,'Credential value found in checkpoint artifact')
-        artifacts.append({'path':str(path),'sha256':hashlib.sha256(raw).hexdigest(),'base64':base64.b64encode(raw).decode()})
-    require(sum(len(x['base64']) for x in artifacts)<=3_000_000,'Checkpoint too large; save bounded batches')
+def capture_artifacts(paths, store=None, site=None, run=None):
+    use_storage = bool(site and run and has_evidence_storage(store))
+    max_file = 20_000_000 if use_storage else 2_000_000
+    artifacts = []
+    inline_b64 = 0
+    for value in completion_checkpoint_paths(paths, max_size=max_file):
+        path = artifact_path(value)
+        raw = path.read_bytes()
+        require(len(raw) <= max_file, 'Artifact too large; use a reviewed private Git artifact reference')
+        require(not contains_secret(raw), 'Credential value found in checkpoint artifact')
+        sha = hashlib.sha256(raw).hexdigest()
+        if use_storage and (len(raw) > 16_384 or inline_b64 + ((len(raw) + 2) // 3) * 4 > 250_000):
+            storage_key = store.upload_evidence(site, run, sha, raw)
+            artifacts.append({'path': str(path), 'sha256': sha, 'storageKey': storage_key, 'size': len(raw)})
+        else:
+            encoded = base64.b64encode(raw).decode()
+            inline_b64 += len(encoded)
+            artifacts.append({'path': str(path), 'sha256': sha, 'base64': encoded})
+    require(sum(len(x.get('base64', '')) for x in artifacts) <= 3_000_000, 'Checkpoint too large; save bounded batches')
     return artifacts
 
-def restore_artifacts(checkpoints):
-    latest={}
+
+def _decode_artifact_bytes(artifact, store=None):
+    if 'base64' in artifact:
+        return base64.b64decode(artifact['base64'], validate=True)
+    if 'storageKey' in artifact:
+        active_store = store if store is not None and hasattr(store, 'download_evidence') else Store()
+        return active_store.download_evidence(artifact['storageKey'])
+    raise ValueError('Checkpoint artifact lacks payload bytes or storageKey: ' + str(artifact.get('path')))
+
+
+def restore_artifacts(checkpoints, store=None):
+    latest = {}
     for checkpoint in checkpoints:
-        for artifact in checkpoint.get('artifacts',[]):latest[artifact['path']]=artifact
-    staged=[]
-    for value,artifact in latest.items():
-        path=artifact_path(value);raw=base64.b64decode(artifact['base64'],validate=True)
-        require(hashlib.sha256(raw).hexdigest()==artifact['sha256'],'Saved artifact bytes changed')
-        require(not path.exists() or path.read_bytes()==raw,'Local evidence differs; reconcile without overwriting: '+value)
-        staged.append((path,raw))
-    for path,raw in staged:path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(raw)
-    return {'ok':True,'restored':len(staged)}
+        for artifact in checkpoint.get('artifacts', []):
+            latest[artifact['path']] = artifact
+    staged = []
+    for value, artifact in latest.items():
+        path = artifact_path(value)
+        raw = _decode_artifact_bytes(artifact, store)
+        require(hashlib.sha256(raw).hexdigest() == artifact['sha256'], 'Saved artifact bytes changed')
+        require(not path.exists() or path.read_bytes() == raw, 'Local evidence differs; reconcile without overwriting: ' + value)
+        staged.append((path, raw))
+    for path, raw in staged:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(raw)
+    return {'ok': True, 'restored': len(staged)}
+
+
+def restore_missing_artifacts(checkpoints, store=None):
+    """Restore missing checkpointed artifacts without failing on newer local stage files."""
+    latest = {}
+    for checkpoint in checkpoints:
+        for artifact in checkpoint.get('artifacts', []):
+            latest[artifact['path']] = artifact
+    restored = 0
+    for value, artifact in latest.items():
+        path = artifact_path(value)
+        if path.exists():
+            continue
+        raw = _decode_artifact_bytes(artifact, store)
+        require(hashlib.sha256(raw).hexdigest() == artifact['sha256'], 'Saved artifact bytes changed')
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(raw)
+        restored += 1
+    return restored
+
 
 def retained_local_completion(packet, intake_hash):
     """Look up a committed decision file only when the durable checkpoint is missing."""
@@ -404,8 +612,9 @@ def finish(intake_path,completion_path,store,owner):
         saved = Path('reports/search-gap/recovery') / (digest(completion_path) + '-completion.json')
         saved.parent.mkdir(parents=True, exist_ok=True)
         saved.write_bytes(Path(completion_path).read_bytes())
+        paths = auto_evidence_paths([str(saved), completion['chart'], completion['chartReview']], store)
         metadata.update(stage=stage, completionFile=str(saved),
-                        artifacts=capture_artifacts([str(saved), completion['chart'], completion['chartReview']]))
+                        artifacts=capture_artifacts(paths, store, packet['site'], packet['runId']))
         if pending_ids is not None:
             metadata.update(pendingCandidateIds=pending_ids, nextAction='Resume only these unresolved candidate IDs; retain all finished decisions.')
         store.checkpoint_job(packet['site'], packet['runId'], owner, metadata)
@@ -422,6 +631,7 @@ def finish(intake_path,completion_path,store,owner):
         else:
             closed=store.close_job(packet['site'],packet['runId'],owner)
             require(closed['complete'],'Production queue is not fully acknowledged')
+            mark_lease_closed('complete')
     except Exception:
         # Retain the exact final decisions before making this unfinished job retryable.
         try:
@@ -585,9 +795,8 @@ def park(intake_path, completion_path, store, owner, reason, holds_path=None):
         require(created, 'jobs-park.sql is not applied; parking is unavailable')
         history = lease.get('checkpoints') or []
         latest = history[-1] if history else {}
-        # Canonical IDs cannot change, so a genuine one appears in every checkpoint that records any.
-        recorded = [set(cp['canonicalJobs'].values()) for cp in history if cp.get('canonicalJobs')]
-        canonical_jobs = set.intersection(*recorded) if recorded else set()
+        # Canonical IDs cannot change; union preserves candidates added across checkpoints.
+        canonical_jobs = recorded_canonical_jobs(history)
         base = canonical_base(packet['site'], completion)
         decisions = native.validate_decisions(packet, completion)
         full_history()
@@ -647,14 +856,16 @@ def park(intake_path, completion_path, store, owner, reason, holds_path=None):
         # Keep every prior resume key (continuations, findings, evidence pointers); add the request.
         metadata = {k: v for k, v in latest.items() if k not in ('stage', 'artifacts', 'completionFile', 'recordedAt')}
         metadata.setdefault('canonicalJobs', {}); metadata.setdefault('reviewCounters', {})
+        park_paths = auto_evidence_paths([str(saved), str(record), completion['chart'], completion['chartReview']], store)
         metadata.update(stage='park-requested', completionFile=str(saved), parkReceipt=str(record),
-                        artifacts=capture_artifacts([str(saved), str(record), completion['chart'], completion['chartReview']]))
+                        artifacts=capture_artifacts(park_paths, store, packet['site'], packet['runId']))
         store.checkpoint_job(packet['site'], packet['runId'], owner, metadata)
         for decision in acknowledged:
             store.acknowledge_job(packet['site'], packet['runId'], owner, decision,
                                   {'runId': packet['runId'], 'decision': decision, 'completionSha256': digest(completion_path),
                                    'chartReviewSha256': digest(completion['chartReview'])})
         store.park_job(packet['site'], packet['runId'], owner, receipt)
+        mark_lease_closed('parked')
     except Exception:
         try:
             store.release_job(packet['site'], packet['runId'], owner)
@@ -666,11 +877,52 @@ def park(intake_path, completion_path, store, owner, reason, holds_path=None):
             'nextAction': 'Report parked candidates honestly (not published, not dropped). New searches start a fresh job on the next invocation.'}
 
 
-OWNER_ACTIONS = ('restart', 'publish-as-written', 'settled', 'drop-after-retry')
+OWNER_ACTIONS = ('restart', 'publish-as-written', 'settled', 'drop-after-retry', 'already-acknowledged')
 OWNER_REQUESTS = Path('reports/search-gap/owner-requests')
-
-
 AUTO_REQUESTS = Path('reports/search-gap/auto-close')
+ATTEMPT_STAGE_RE = re.compile(r'build|chart|write|draft|audit|review|publish|finish|recover|partial|blocked|held', re.I)
+
+
+def recorded_canonical_jobs(history):
+    jobs = {v for cp in (history or []) for v in (cp.get('canonicalJobs') or {}).values() if isinstance(v, str) and v}
+    if not jobs:
+        for cp in (history or []):
+            for key in (cp.get('reviewCounters') or {}):
+                for pattern in (r'^chart-review:([A-Za-z0-9_-]{4,})$', r'^([A-Za-z0-9_-]{4,}):(?:chart|content|phase4[-_]audit)'):
+                    match = re.match(pattern, str(key))
+                    if match:
+                        jobs.add(match.group(1))
+    return jobs
+
+
+def store_acknowledged_decisions(store, site, run, packet):
+    fn = getattr(store, 'acknowledged_decisions', None)
+    if not callable(fn):
+        return {}
+    value = fn(site, run, packet)
+    return value if isinstance(value, dict) else {}
+
+
+def retained_settled_decisions(packet, intake_path, history):
+    if not intake_path or not Path(intake_path).is_file():
+        return {}
+    intake_sha = digest(intake_path)
+    for cp in reversed(history or []):
+        name = cp.get('completionFile')
+        if not isinstance(name, str) or not name:
+            continue
+        try:
+            path = artifact_path(name)
+            if not path.is_file():
+                continue
+            completion = read(path)
+            if completion.get('runId') != packet['runId'] or completion.get('intakeSha256') != intake_sha:
+                continue
+            decisions = native.validate_decisions(packet, completion)
+            return {d['id']: (str(path), d) for d in decisions if d.get('status') in ('no-addition', 'dropped')}
+        except Exception:
+            continue
+    return {}
 
 
 def summary_has_close(summary):
@@ -687,7 +939,7 @@ def auto_close_allowed(store, site):
 def site_base(site):
     """The site's real canonical https origin (apex or www), from where its home page settles."""
     try:
-        with urllib.request.urlopen(urllib.request.Request('https://' + site.removeprefix('www.') + '/', headers={'User-Agent': 'search-gap'}), timeout=30) as response:
+        with urllib.request.urlopen(urllib.request.Request('https://' + site.removeprefix('www.') + '/', headers={'User-Agent': 'search-gap'}), timeout=_http_timeout(30)) as response:
             final = urllib.parse.urlsplit(response.geturl())
             if final.scheme == 'https' and (final.hostname or '').removeprefix('www.') == site.removeprefix('www.'):
                 return 'https://' + final.netloc
@@ -698,26 +950,50 @@ def site_base(site):
 
 def home_text(base):
     """Site-wide text (navigation, footer, calls to action) seen on the home page; never accepted as draft proof."""
-    with urllib.request.urlopen(urllib.request.Request(base + '/', headers={'User-Agent': 'search-gap'}), timeout=30) as response:
+    with urllib.request.urlopen(urllib.request.Request(base + '/', headers={'User-Agent': 'search-gap'}), timeout=_http_timeout(30)) as response:
         return page_text(response.read().decode('utf-8', 'replace'))
+
+
+def _report_blocks_auto_release(rep_doc, verdict):
+    if not isinstance(rep_doc, dict):
+        return False
+    if rep_doc.get('professionalReviewRequired') is True or rep_doc.get('releaseAtLimitEligible') is False:
+        return True
+    pr = rep_doc.get('professionalReview')
+    if isinstance(pr, str) and pr.strip().upper() in ('REQUIRED', 'MISSING', 'BLOCKED', 'HOLD'):
+        return True
+    if isinstance(pr, dict) and (pr.get('required') is True and not pr.get('verified') and pr.get('status') not in ('verified', 'approved', 'not-applicable')):
+        return True
+    if verdict != 'PASS' and rep_doc.get('holdRelease') is True:
+        return True
+    return False
 
 
 def reviewed_text(base, route, canonical_jobs, created_at):
     """Visible text of this route exactly as captured for its latest completed independent review,
-    only when that review belongs to this job (canonical job) and started after the job did."""
+    only when that review belongs to this job (canonical job), has no trailing pending/invalidated round,
+    has no professional-review hold, and started after the job did."""
     policy = native_tool('content-review-policy.py')
     with policy.Journal(Path.cwd(), base, route) as journal:
         cycle = journal.cycle
         begins = [e for e in journal.events if e.get('kind') == 'begin']
     if not cycle or cycle.get('jobId') not in canonical_jobs or not begins:
         return None
+    if cycle.get('status') in ('in-review', 'repair-pending'):
+        return None
     if native.dt.datetime.fromisoformat(begins[-1]['recordedAt'].replace('Z', '+00:00')) < created_at:
         return None
-    rounds = [r for r in cycle.get('rounds', []) if r.get('status') == 'complete']
-    if not rounds:
+    all_rounds = list(cycle.get('rounds') or [])
+    if not all_rounds or all_rounds[-1].get('status') != 'complete':
         return None
+    last_round = all_rounds[-1]
     try:
-        admission = read(rounds[-1]['admission']['path'])
+        if last_round.get('report'):
+            rep_path = last_round['report']['path'] if isinstance(last_round['report'], dict) else last_round['report']
+            if Path(rep_path).is_file():
+                if _report_blocks_auto_release(read(rep_path), last_round.get('verdict')):
+                    return None
+        admission = read(last_round['admission']['path'])
         ref = admission['snapshot']
         require(digest(ref['path']) == ref['sha256'], 'Reviewed capture changed')
         entry = next(r for r in read(ref['path'])['routes'] if r['path'] == route)
@@ -728,31 +1004,148 @@ def reviewed_text(base, route, canonical_jobs, created_at):
     return ' '.join(raw.decode('utf-8', 'replace').split())
 
 
-def build_auto_request(packet, store, written, canonical_jobs, created_at):
-    """The routine's own close-out under the owner's standing rule: drafts whose exact reviewed text is
-    given publish, the rest restart once, and a search whose retry also failed is closed as dropped."""
+WRITE_ACTION_BUCKETS = {None, '', 'create new content', 'expand / enrich existing', 'refresh / update', 'create', 'enrich', 'update'}
+DISCOVER_SKIP_SUBDIRS = ('reports/search-gap/auto-close/', 'reports/search-gap/owner-requests/',
+                         'reports/search-gap/park-requests/', 'reports/search-gap/intakes/')
+
+
+def discover_passing_written(packet, base, boilerplate, canonical_jobs, created_at, explicit_written=None, intake_sha=None):
+    """Supplement explicit written drafts with routes that passed independent Journal review in this job
+    when a manifest or completion maps the route unambiguously to a candidate. Held/failed drafts are never added."""
+    discovered = {}
+    journals_dir = Path('reports/content-review-journals')
+    if not journals_dir.is_dir() or not Path('.claude/tools/content-review-policy.py').is_file() or not canonical_jobs:
+        return discovered
+    candidate_routes = {}
+    for folder in (Path('reports/search-gap'), Path('reports/mindmap-pass')):
+        if not folder.is_dir():
+            continue
+        for mf in folder.rglob('*.json'):
+            rel = mf.as_posix()
+            if any(rel.startswith(prefix) for prefix in DISCOVER_SKIP_SUBDIRS) or mf.stat().st_size > 2_000_000:
+                continue
+            try:
+                doc = read(mf)
+            except Exception:
+                continue
+            if not isinstance(doc, dict):
+                continue
+            if doc.get('runId') == packet['runId'] and isinstance(doc.get('decisions'), list):
+                if intake_sha and doc.get('intakeSha256') and doc.get('intakeSha256') != intake_sha:
+                    continue
+                for dec in doc['decisions']:
+                    if (isinstance(dec, dict) and dec.get('status') == 'published'
+                            and dec.get('id') and isinstance(dec.get('paths'), list) and dec['paths']):
+                        candidate_routes.setdefault(dec['id'], []).extend(p for p in dec['paths'] if isinstance(p, str) and p.startswith('/'))
+            if doc.get('jobId') in canonical_jobs and isinstance(doc.get('actions'), list):
+                disp_by_target = {}
+                for drow in (doc.get('candidateDispositions') or []):
+                    if isinstance(drow, dict) and isinstance(drow.get('target'), str) and isinstance(drow.get('id'), str):
+                        disp_by_target.setdefault(drow['target'].rstrip('/') or '/', []).append(drow['id'])
+                for act in doc['actions']:
+                    if not isinstance(act, dict):
+                        continue
+                    bucket = str(act.get('bucket') or '').strip().lower() if act.get('bucket') is not None else None
+                    if bucket not in WRITE_ACTION_BUCKETS:
+                        continue
+                    target = act.get('target')
+                    if not isinstance(target, str) or not target.startswith('/'):
+                        continue
+                    cids = act.get('candidateIds') or act.get('sourceIds') or disp_by_target.get(target.rstrip('/') or '/')
+                    if not cids and isinstance(act.get('candidateId'), str):
+                        cids = [act['candidateId']]
+                    if not cids and len(packet.get('candidates', [])) == 1:
+                        cids = [packet['candidates'][0]['id']]
+                    if isinstance(cids, list):
+                        for cid in cids:
+                            if isinstance(cid, str):
+                                candidate_routes.setdefault(cid, []).append(target)
+    if not candidate_routes:
+        return discovered
+    policy = native_tool('content-review-policy.py')
+    skip_ids = set(explicit_written or ())
+    for candidate in packet.get('candidates', []):
+        cid = candidate['id']
+        if cid in skip_ids or cid not in candidate_routes:
+            continue
+        routes = sorted(set(candidate_routes[cid]))
+        route_specs = []
+        ok = True
+        for route in routes:
+            try:
+                with policy.Journal(Path.cwd(), base, route) as journal:
+                    cycle = journal.cycle
+                all_rounds = list((cycle or {}).get('rounds') or [])
+                if (not cycle or cycle.get('jobId') not in canonical_jobs or cycle.get('status') in ('in-review', 'repair-pending')
+                        or not all_rounds or all_rounds[-1].get('status') != 'complete' or all_rounds[-1].get('verdict') != 'PASS'):
+                    ok = False
+                    break
+                text = reviewed_text(base, route, canonical_jobs, created_at)
+                if not text:
+                    ok = False
+                    break
+                phrases = [s.strip() for s in re.split(r'(?<=[.!?])\s+', text)
+                           if 25 <= len(s.strip()) <= 160 and ' '.join(s.split()) not in boilerplate]
+                if not phrases:
+                    ok = False
+                    break
+                route_specs.append({'path': route, 'requiredText': phrases[:2]})
+            except Exception:
+                ok = False
+                break
+        if ok and route_specs:
+            discovered[cid] = route_specs
+    return discovered
+
+
+def build_auto_request(packet, store, written, canonical_jobs, created_at, intake_path=None, history=None):
+    """The routine's own close-out under the owner's standing rule: already-acknowledged decisions stay
+    intact, drafts whose exact reviewed text is verified publish, reviewed no-addition/dropped decisions
+    settle, the rest restart once, and a search whose retry also failed is closed as dropped."""
     AUTO_REQUESTS.mkdir(parents=True, exist_ok=True)
     path = AUTO_REQUESTS / (packet['runId'] + '.json')
     # Always rebuilt from native review evidence; an existing file is never trusted or reused.
     base = site_base(packet['site'])
     boilerplate = home_text(base)
     retried = store.prior_restarted_events(packet['site'])
+    prior_acked = store_acknowledged_decisions(store, packet['site'], packet['runId'], packet)
+    settled_map = retained_settled_decisions(packet, intake_path, history)
+    intake_sha = digest(intake_path) if intake_path and Path(intake_path).is_file() else None
+    explicit_written = dict(written or {})
+    auto_written = discover_passing_written(packet, base, boilerplate, canonical_jobs, created_at, explicit_written, intake_sha=intake_sha)
+    def _verified_written_routes(routes):
+        if not routes:
+            return None
+        require(all(isinstance(r, dict) and str(r.get('path', '')).startswith('/') and isinstance(r.get('requiredText'), list) and r['requiredText']
+                    and all(isinstance(x, str) and len(x.strip()) >= 12 for x in r['requiredText']) for r in routes),
+                'Each written draft needs its routes with text only the draft contains')
+        texts = {r['path']: reviewed_text(base, r['path'], canonical_jobs, created_at) for r in routes}
+        if all(texts[r['path']] and all(' '.join(x.split()) in texts[r['path']] and ' '.join(x.split()) not in boilerplate and len(x.strip()) >= 20
+                   for x in r['requiredText']) for r in routes):
+            return routes
+        return None
     candidates = {}
     for candidate in packet['candidates']:
-        routes = written.get(candidate['id'])
-        if routes:
-            require(all(isinstance(r, dict) and str(r.get('path', '')).startswith('/') and isinstance(r.get('requiredText'), list) and r['requiredText']
-                        and all(isinstance(x, str) and len(x.strip()) >= 12 for x in r['requiredText']) for r in routes),
-                    'Each written draft needs its routes with text only the draft contains')
-            texts = {r['path']: reviewed_text(base, r['path'], canonical_jobs, created_at) for r in routes}
-            if all(texts[r['path']] and all(' '.join(x.split()) in texts[r['path']] and ' '.join(x.split()) not in boilerplate and len(x.strip()) >= 20
-                       for x in r['requiredText']) for r in routes):
-                candidates[candidate['id']] = {'action': 'publish-as-written', 'routes': routes}
-                continue
+        cid = candidate['id']
+        if cid in prior_acked:
+            candidates[cid] = {'action': 'already-acknowledged', 'decision': prior_acked[cid]}
+            continue
+        verified_explicit = _verified_written_routes(explicit_written.get(cid))
+        if verified_explicit:
+            candidates[cid] = {'action': 'publish-as-written', 'routes': verified_explicit}
+            continue
+        if cid in settled_map:
+            comp_file, _ = settled_map[cid]
+            candidates[cid] = {'action': 'settled', 'completion': comp_file}
+            continue
+        verified_auto = _verified_written_routes(auto_written.get(cid))
+        if verified_auto:
+            candidates[cid] = {'action': 'publish-as-written', 'routes': verified_auto}
+            continue
         if set(candidate.get('eventIds', [])) & retried:
-            candidates[candidate['id']] = {'action': 'drop-after-retry'}
+            candidates[cid] = {'action': 'drop-after-retry'}
         else:
-            candidates[candidate['id']] = {'action': 'restart'}
+            candidates[cid] = {'action': 'restart'}
     request = {'runId': packet['runId'], 'site': packet['site'], 'canonicalBase': base, 'autoClose': True,
                'reason': 'Standing owner rule 2026-11-13: anything stuck is fixed in the same run.', 'candidates': candidates}
     path.write_text(json.dumps(request, ensure_ascii=False, indent=2, sort_keys=True) + '\n', encoding='utf-8')
@@ -787,9 +1180,33 @@ def live_ok(url, required):
             if not (response.status == 200 and final.netloc == wanted.netloc and final.path.rstrip('/') == wanted.path.rstrip('/')):
                 return False
             text = page_text(response.read().decode('utf-8', 'replace'))
-    except urllib.error.HTTPError:
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError):
         return False
     return all(' '.join(phrase.split()) in text for phrase in required)
+
+
+def _is_repo_built_site():
+    if not (Path('.claude/content-review-policy.json').is_file() or Path('.claude/scripts/deploy-run-to-main.sh').is_file()):
+        return False
+    in_git = subprocess.run(['git', 'rev-parse', '--is-inside-work-tree'], capture_output=True, text=True)
+    return in_git.returncode == 0 and in_git.stdout.strip() == 'true'
+
+
+def maybe_archive_owner_close(intake_path, request_path, store=None, lease=None):
+    archive_file = Path('.claude/tools/review-archive.py')
+    durable_file = Path('.claude/tools/content-review-durable.py')
+    if not archive_file.is_file() or not durable_file.is_file():
+        return None
+    in_git = subprocess.run(['git', 'rev-parse', '--is-inside-work-tree'], capture_output=True, text=True)
+    if in_git.returncode != 0 or in_git.stdout.strip() != 'true':
+        return None
+    archive = native_tool('review-archive.py')
+    if not hasattr(archive, 'archive_owner_close'):
+        return None
+    import inspect
+    if 'lease' in inspect.signature(archive.archive_owner_close).parameters:
+        return archive.archive_owner_close(Path.cwd().resolve(), Path(intake_path).resolve(), Path(request_path).resolve(), store=store, lease=lease)
+    return archive.archive_owner_close(Path.cwd().resolve(), Path(intake_path).resolve(), Path(request_path).resolve(), store=store)
 
 
 def owner_close(intake_path, request_path, store, owner, published_path=None, published_commit=None, check_only=False, auto_written=None):
@@ -808,13 +1225,14 @@ def owner_close(intake_path, request_path, store, owner, published_path=None, pu
         require(lease.get('status') == 'claimed' and lease.get('packetSha256') == digest(intake_path), 'Search job is not available to this invocation')
         try:
             history = lease.get('checkpoints') or []
-            require(any(re.search(r'build|chart|write|draft|audit|review|publish|finish|recover|partial|blocked|held', str(cp.get('stage', '')), re.I)
+            require(any(ATTEMPT_STAGE_RE.search(str(cp.get('stage', '')))
                         and not str(cp.get('stage', '')).endswith('-requested') for cp in history),
                     'No recorded attempt on this job yet; do the work first (auto close-out is for work that could not finish)')
-            recorded = [set(cp['canonicalJobs'].values()) for cp in history if cp.get('canonicalJobs')]
-            canonical_jobs = set.intersection(*recorded) if recorded else set()
+            restore_missing_artifacts(history, store)
+            canonical_jobs = recorded_canonical_jobs(history)
             created = native.dt.datetime.fromisoformat(lease['createdAt'].replace('Z', '+00:00'))
-            request_path = build_auto_request(packet, store, read(auto_written) if auto_written else {}, canonical_jobs, created)
+            written_data = read(auto_written) if isinstance(auto_written, (str, Path)) and str(auto_written) else (auto_written if isinstance(auto_written, dict) else {})
+            request_path = build_auto_request(packet, store, written_data, canonical_jobs, created, intake_path=intake_path, history=history)
         except Exception:
             store.release_job(packet['site'], packet['runId'], owner)
             raise
@@ -828,12 +1246,14 @@ def owner_close(intake_path, request_path, store, owner, published_path=None, pu
     require(set(actions) == {c['id'] for c in packet['candidates']} and all(a.get('action') in OWNER_ACTIONS for a in actions.values()),
             'The owner request must give every candidate exactly one action')
     for entry in actions.values():
+        require(auto or entry['action'] != 'already-acknowledged', 'Only automatic close-out uses already-acknowledged queue state')
+        require(auto or entry['action'] != 'drop-after-retry', 'Only automatic close-out uses drop-after-retry')
         if entry['action'] == 'publish-as-written':
             routes = entry.get('routes')
             require(isinstance(routes, list) and routes and all(isinstance(r, dict) and str(r.get('path', '')).startswith('/')
                     and isinstance(r.get('requiredText'), list) and r['requiredText'] and all(isinstance(x, str) and len(x.strip()) >= 12 for x in r['requiredText'])
                     for r in routes), 'Each publish-as-written candidate needs its draft routes, each with text that only the draft contains')
-    published = read(published_path) if published_path and not check_only else {}
+    published = (published_path if isinstance(published_path, dict) else read(published_path)) if published_path and not check_only else {}
     for cid, paths in published.items():
         require(actions.get(cid, {}).get('action') == 'publish-as-written', 'Only publish-as-written candidates can be reported as published')
         require(isinstance(paths, list) and set(paths) == {r['path'] for r in actions[cid]['routes']}, 'Published paths must be exactly the request\'s draft routes')
@@ -845,11 +1265,16 @@ def owner_close(intake_path, request_path, store, owner, published_path=None, pu
         created = lease.get('createdAt')
         require(created, 'jobs-park.sql is not applied; close-out is unavailable')
         created_at = native.dt.datetime.fromisoformat(created.replace('Z', '+00:00'))
+        prior_acked = store_acknowledged_decisions(store, packet['site'], packet['runId'], packet) if auto else {}
         completions = {}
-        acks, restart = [], []
+        acks, prior_done, restart = [], [], []
         for candidate in packet['candidates']:
             entry = actions[candidate['id']]
-            if entry['action'] == 'settled':
+            if entry['action'] == 'already-acknowledged':
+                verified_dec = prior_acked.get(candidate['id'])
+                require(verified_dec is not None, 'Candidate is not acknowledged in search_gap_queue: ' + candidate['id'])
+                prior_done.append(verified_dec)
+            elif entry['action'] == 'settled':
                 name = entry.get('completion', '')
                 if name not in completions:
                     completion = read(name)
@@ -869,9 +1294,17 @@ def owner_close(intake_path, request_path, store, owner, published_path=None, pu
             else:
                 restart.append(candidate['id'])
         if check_only:
+            archived_release = None
+            if any(e['action'] == 'publish-as-written' for e in actions.values()):
+                archived_release = maybe_archive_owner_close(intake_path, request_path, store=store, lease=lease)
             store.release_job(packet['site'], packet['runId'], owner)
             return {'ok': True, 'status': 'owner-close-check-passed', 'site': packet['site'], 'runId': packet['runId'],
+                    'requestFile': str(request_path),
+                    'publishAsWritten': [cid for cid, e in actions.items() if e['action'] == 'publish-as-written'],
+                    'releaseArchive': archived_release,
                     'nextAction': 'Publish the publish-as-written drafts, then run owner-close without --check.'}
+        if published and _is_repo_built_site():
+            require(published_commit, 'Repository-built sites must pass --published-commit proving the default-branch commit')
         if published and published_commit:
             # Repository-built sites: also prove the deploying commit. Database-backed content is proven by the live text below.
             from publication_history import published as on_default_branch
@@ -890,18 +1323,28 @@ def owner_close(intake_path, request_path, store, owner, published_path=None, pu
                 require(live_ok(base + route['path'], route['requiredText']),
                         'Draft is not live at exactly this route (HTTP 200, no redirect, draft text present): ' + base + route['path'])
         acks = [(d, extra or {'ownerRelease': {'commit': published_commit, 'requestSha256': digest(request_path)}}) for d, extra in acks]
+        published_map = {d['id']: d['paths'] for d in prior_done if d['status'] == 'published'}
+        published_map.update({d['id']: d['paths'] for d, _ in acks if d['status'] == 'published'})
+        settled_ids = [d['id'] for d in prior_done if d['status'] in ('no-addition', 'dropped')]
+        settled_ids.extend(d['id'] for d, e in acks if d['status'] in ('no-addition', 'dropped') and 'settledFrom' in (e or {}))
         receipt = {'runId': packet['runId'], 'requestSha256': digest(request_path), 'reason': request.get('reason'), 'autoClose': auto,
-                   'request': str(request_path), 'restart': restart, 'published': {d['id']: d['paths'] for d, _ in acks if d['status'] == 'published'},
-                   'settled': [d['id'] for d, e in acks if d['status'] in ('no-addition', 'dropped') and 'settledFrom' in (e or {})],
-                   'dropped': [d['id'] for d, e in acks if d['status'] == 'dropped' and 'autoClose' in (e or {})], 'publishedCommit': published_commit}
+                   'request': str(request_path), 'restart': restart, 'published': published_map,
+                   'settled': settled_ids,
+                   'dropped': [d['id'] for d, e in acks if d['status'] == 'dropped' and 'autoClose' in (e or {})],
+                   'publishedCommit': published_commit}
+        if prior_done:
+            receipt['alreadyAcknowledged'] = [d['id'] for d in prior_done]
         latest = (lease.get('checkpoints') or [{}])[-1]
         metadata = {k: v for k, v in latest.items() if k not in ('stage', 'artifacts', 'completionFile', 'recordedAt')}
         metadata.setdefault('canonicalJobs', {}); metadata.setdefault('reviewCounters', {})
-        metadata.update(stage='owner-close-requested', ownerCloseReceipt=receipt, artifacts=capture_artifacts([str(request_path)]))
+        close_paths = auto_evidence_paths([str(request_path)], store)
+        metadata.update(stage='owner-close-requested', ownerCloseReceipt=receipt,
+                        artifacts=capture_artifacts(close_paths, store, packet['site'], packet['runId']))
         store.checkpoint_job(packet['site'], packet['runId'], owner, metadata)
         for decision, extra in acks:
             store.acknowledge_job(packet['site'], packet['runId'], owner, decision, dict({'runId': packet['runId'], 'decision': decision}, **extra))
         store.owner_close_job(packet['site'], packet['runId'], owner, receipt)
+        mark_lease_closed('owner-closed')
     except Exception:
         try:
             store.release_job(packet['site'], packet['runId'], owner)
@@ -911,6 +1354,190 @@ def owner_close(intake_path, request_path, store, owner, published_path=None, pu
     return {'ok': True, 'status': 'owner-closed', 'site': packet['site'], 'runId': packet['runId'],
             'published': receipt['published'], 'restarted': restart, 'settled': receipt['settled'], 'dropped': receipt['dropped'],
             'nextAction': 'Report what was published and restarted. Restarted searches are written fresh by the next invocation.'}
+
+
+def _origin_main_head():
+    in_git = subprocess.run(['git', 'rev-parse', '--is-inside-work-tree'], capture_output=True, text=True)
+    if in_git.returncode != 0 or in_git.stdout.strip() != 'true':
+        return None
+    subprocess.run(['git', 'fetch', '--quiet', '--no-tags', 'origin', 'main'], capture_output=True)
+    rev = subprocess.run(['git', 'rev-parse', '--verify', 'refs/remotes/origin/main^{commit}'], capture_output=True, text=True)
+    return rev.stdout.strip() if rev.returncode == 0 and rev.stdout.strip() else None
+
+
+def _find_route_commit_after(created_at, routes):
+    head = _origin_main_head()
+    if not head:
+        return None
+    slugs = {r.strip('/').rsplit('/', 1)[-1] for r in routes if r.strip('/')}
+    log = subprocess.run(['git', 'log', '--format=%H %cI', '-n', '30', head], capture_output=True, text=True)
+    if log.returncode != 0:
+        return None
+    for line in log.stdout.splitlines():
+        parts = line.strip().split(' ', 1)
+        if len(parts) != 2:
+            continue
+        sha, stamp = parts
+        try:
+            if native.dt.datetime.fromisoformat(stamp) <= created_at:
+                break
+        except ValueError:
+            continue
+        diff = subprocess.run(['git', 'show', '--name-only', '--format=', sha], capture_output=True, text=True)
+        changed = [p for p in diff.stdout.splitlines() if p and not p.startswith('reports/') and not p.startswith('.claude/')]
+        if not changed:
+            continue
+        if not slugs or any(any(sl in p for sl in slugs) or p.startswith(('src/', 'app/', 'pages/', 'content/', 'data/', 'public/')) for p in changed):
+            return sha
+    return None
+
+
+def _harvest_canonical_jobs(swept_paths, created_at):
+    harvested = {}
+    created_epoch = created_at.timestamp() - 5
+    for p_str in (swept_paths or ()):
+        p = Path(p_str)
+        if not p.is_file() or p.suffix not in ('.json', '.jsonl'):
+            continue
+        try:
+            if p.stat().st_mtime < created_epoch:
+                continue
+            if p.suffix == '.jsonl':
+                for line in p.read_text(encoding='utf-8', errors='replace').splitlines():
+                    if not line.strip():
+                        continue
+                    ev = json.loads(line)
+                    jid = (ev.get('data') or {}).get('jobId')
+                    if isinstance(jid, str) and len(jid) >= 4:
+                        harvested[f'journal:{p.stem}'] = jid
+            else:
+                doc = json.loads(p.read_bytes())
+                if isinstance(doc, dict) and isinstance(doc.get('jobId'), str) and len(doc['jobId']) >= 4:
+                    if isinstance(doc.get('actions'), list) or isinstance(doc.get('generated'), list):
+                        harvested[f'swept:{p.stem}'] = doc['jobId']
+        except Exception:
+            continue
+    return harvested
+
+
+def _deploy_and_poll_reviewed_drafts(intake_path, request_path, store, packet, owner, base, pub_routes, created_at, deploy):
+    lease = store.claim_job(packet['site'], owner, Path(intake_path).read_text(encoding='utf-8'))
+    require(lease.get('status') == 'claimed' and lease.get('packetSha256') == digest(intake_path), 'Search job lease unavailable for deploy')
+    heartbeat(store, packet['site'], packet['runId'], owner)
+    try:
+        already_live = {cid: [r['path'] for r in routes] for cid, routes in pub_routes.items()
+                        if all(live_ok(base + r['path'], r['requiredText']) for r in routes)}
+        deployed_commit = None
+        if len(already_live) < len(pub_routes) and deploy:
+            maybe_archive_owner_close(intake_path, request_path, store=store, lease=lease)
+            heartbeat(store, packet['site'], packet['runId'], owner)
+            before_main = _origin_main_head()
+            if Path('.github/workflows/land.yml').is_file() and Path('.claude/scripts/land-run.sh').is_file():
+                cmd = ['bash', '.claude/scripts/land-run.sh', 'land']
+            elif Path('.claude/scripts/deploy-run-to-main.sh').is_file():
+                cmd = ['bash', '.claude/scripts/deploy-run-to-main.sh', 'push']
+            else:
+                cmd = None
+            if cmd is not None:
+                res = subprocess.run(cmd, capture_output=True, text=True)
+                heartbeat(store, packet['site'], packet['runId'], owner)
+                if res.returncode == 0:
+                    after_main = _origin_main_head()
+                    if after_main and after_main != before_main:
+                        deployed_commit = after_main
+                    deadline = time.time() + 180
+                    while time.time() < deadline:
+                        already_live = {cid: [r['path'] for r in routes] for cid, routes in pub_routes.items()
+                                        if all(live_ok(base + r['path'], r['requiredText']) for r in routes)}
+                        if len(already_live) == len(pub_routes):
+                            break
+                        time.sleep(10)
+        if already_live and not deployed_commit:
+            live_paths = [p for paths in already_live.values() for p in paths]
+            deployed_commit = _find_route_commit_after(created_at, live_paths)
+        return already_live, deployed_commit
+    finally:
+        store.release_job(packet['site'], packet['runId'], owner)
+
+
+def end_run(intake_path, store, owner, completion_path=None, written_path=None, published_path=None, published_commit=None, reason=None, deploy=False):
+    """Guarantee that an invocation finishes its Search Gap job or closes it out before ending."""
+    packet = read(intake_path)
+    if not packet.get('candidates'):
+        marker = lease_marker()
+        if marker and marker.is_file():
+            try:
+                saved_m = read(marker)
+                if saved_m.get('closed') or saved_m.get('run') == packet.get('runId'):
+                    mark_lease_closed('empty')
+            except Exception:
+                pass
+        else:
+            mark_lease_closed('empty')
+        result = {'ok': True, 'status': 'empty', 'site': packet['site'], 'runId': packet['runId'], 'durableJob': True,
+                  'nextAction': 'Verified empty intake; report no-op once and end this invocation.'}
+        save_terminal_record(terminal_record(packet['site'], owner), result)
+        return result
+    finish_failure = None
+    if completion_path and Path(completion_path).is_file():
+        try:
+            done = finish(intake_path, completion_path, store, owner)
+            if done.get('ok'):
+                save_terminal_record(terminal_record(packet['site'], owner), done)
+                done['nextAction'] = 'Send the final collector report once and end this invocation. New searches belong to the next schedule.'
+                return done
+            finish_failure = f"partial-finish ({done.get('pendingCandidates')} pending)"
+        except Exception as error:
+            finish_failure = f'{type(error).__name__}: {error}'
+    require(auto_close_allowed(store, packet['site']), 'The owner has not enabled automatic close-out for this site')
+    lease = store.claim_job(packet['site'], owner, Path(intake_path).read_text(encoding='utf-8'))
+    require(lease.get('status') == 'claimed' and lease.get('packetSha256') == digest(intake_path),
+            'Search job is not available to this invocation')
+    created_at = native.dt.datetime.fromisoformat(lease['createdAt'].replace('Z', '+00:00'))
+    try:
+        history = list(lease.get('checkpoints') or [])
+        restore_missing_artifacts(history, store)
+        has_attempt = any(ATTEMPT_STAGE_RE.search(str(cp.get('stage', '')))
+                          and not str(cp.get('stage', '')).endswith('-requested') for cp in history)
+        if not has_attempt:
+            swept = auto_evidence_paths(store=store)
+            effective_reason = (reason or finish_failure or '').strip()
+            if not effective_reason and not swept:
+                raise ValueError('No recorded attempt on this job yet; pass --reason explaining the blocker or complete a stage checkpoint first')
+            previous = history[-1] if history else {}
+            canon_jobs = dict(previous.get('canonicalJobs') or {})
+            if not canon_jobs:
+                canon_jobs.update(_harvest_canonical_jobs(swept, created_at))
+            blocked_cp = {
+                'stage': 'run-blocked',
+                'reason': effective_reason or 'Unfinished invocation auto-closed with swept evidence',
+                'canonicalJobs': canon_jobs,
+                'reviewCounters': dict(previous.get('reviewCounters') or {}),
+                'artifacts': capture_artifacts(swept, store, packet['site'], packet['runId']),
+            }
+            store.checkpoint_job(packet['site'], packet['runId'], owner, blocked_cp)
+    finally:
+        store.release_job(packet['site'], packet['runId'], owner)
+    written_arg = written_path or ''
+    check_res = owner_close(intake_path, None, store, owner, check_only=True, auto_written=written_arg)
+    request_file = Path(check_res['requestFile'])
+    built = read(request_file)
+    base = built['canonicalBase'].rstrip('/')
+    pub_routes = {cid: entry['routes'] for cid, entry in built['candidates'].items() if entry.get('action') == 'publish-as-written'}
+    effective_pub = published_path
+    effective_commit = published_commit
+    if not effective_pub and pub_routes:
+        already_live, deployed_commit = _deploy_and_poll_reviewed_drafts(
+            intake_path, request_file, store, packet, owner, base, pub_routes, created_at, deploy
+        )
+        if already_live:
+            effective_pub = already_live
+            effective_commit = effective_commit or deployed_commit
+    result = owner_close(intake_path, None, store, owner, effective_pub, effective_commit, check_only=False, auto_written=written_arg)
+    if finish_failure:
+        result['finishAttempt'] = finish_failure
+    save_terminal_record(terminal_record(packet['site'], owner), result)
+    return result
 
 
 def heartbeat(store, site, run, owner):
@@ -924,18 +1551,61 @@ def heartbeat(store, site, run, owner):
 def lease_marker(payload=None):
     session = os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID') or (payload or {}).get('session_id')
     if not session:
+        try:
+            hint = Path(subprocess.check_output(['git', 'rev-parse', '--git-path', 'search-gap-recovery/current-session.json'], text=True).strip())
+            if hint.is_file():
+                data = read(hint)
+                if time.time() - float(data.get('updatedAt', 0)) <= 3600:
+                    session = str(data.get('sessionId') or '')
+        except Exception:
+            session = ''
+    if not session:
         return None
     key = hashlib.sha256(session.encode()).hexdigest()
     path = subprocess.check_output(['git','rev-parse','--git-path','search-gap-recovery/leases/'+key+'.json'],text=True).strip()
     return Path(path)
 
 
-def remember_lease(site, run, owner):
+def remember_lease(site, run, owner, intake_path=None, auto_close=False):
     marker = lease_marker()
     if marker:
         marker.parent.mkdir(parents=True,exist_ok=True)
-        marker.write_text(json.dumps({'site':site,'run':run,'owner':owner}),encoding='utf-8')
+        record = {
+            'site': site,
+            'run': run,
+            'owner': owner,
+            'createdAt': time.time(),
+            'workflowRunEnv': os.environ.get('WORKFLOW_RUN_ID', '').strip(),
+        }
+        if intake_path:
+            record['intake'] = str(Path(intake_path).resolve())
+            record['autoClose'] = bool(auto_close)
+            record['closed'] = False
+        marker.write_text(json.dumps(record),encoding='utf-8')
         marker.chmod(0o600)
+    try:
+        root = Path.cwd().resolve()
+        if root.parent == Path('/home/user') and (root / 'scripts/search_gap/session_end.py').is_file():
+            import session_end
+            session_end.install_runtime(root)
+    except Exception:
+        pass
+
+
+def mark_lease_closed(outcome='closed', payload=None):
+    try:
+        marker = lease_marker(payload)
+    except Exception:
+        return
+    if marker and marker.is_file():
+        try:
+            saved = read(marker)
+            saved['closed'] = True
+            saved['closedOutcome'] = outcome
+            marker.write_text(json.dumps(saved), encoding='utf-8')
+            marker.chmod(0o600)
+        except Exception:
+            pass
 
 
 def release_at_session_end(payload):
@@ -944,8 +1614,22 @@ def release_at_session_end(payload):
     marker = lease_marker(payload)
     if marker and marker.is_file():
         saved = read(marker)
-        Store().release_job(saved['site'],saved['run'],saved['owner'])
-        marker.unlink(missing_ok=True)
+        try:
+            if saved.get('closed'):
+                return
+            if (saved.get('autoClose') and saved.get('intake') and Path(saved['intake']).is_file()
+                    and os.environ.get('SUPABASE_URL') and os.environ.get('SUPABASE_SERVICE_ROLE_KEY')):
+                store = Store()
+                try:
+                    end_run(saved['intake'], store, saved['owner'],
+                            reason='Session ended with an unfinished Search Gap job; closed automatically by SessionEnd.')
+                    return
+                except Exception:
+                    store.release_job(saved['site'], saved['run'], saved['owner'])
+                    return
+            Store().release_job(saved['site'],saved['run'],saved['owner'])
+        finally:
+            marker.unlink(missing_ok=True)
 
 
 def invocation_owner():
@@ -980,8 +1664,8 @@ def save_terminal_record(path, result):
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('command',choices=['list-gaps','checkpoint','restore','adopt','finish','park','owner-close','heartbeat']);p.add_argument('--site',required=True);p.add_argument('--owner',default=invocation_owner());p.add_argument('--out');p.add_argument('--intake');p.add_argument('--completion');p.add_argument('--metadata');p.add_argument('--files',nargs='*',default=[]);p.add_argument('--end-invocation', action='store_true',help='Release only this owner after the checkpoint is safely retained');p.add_argument('--checkpoint-file');p.add_argument('--reason');p.add_argument('--holds');p.add_argument('--request');p.add_argument('--published');p.add_argument('--published-commit');p.add_argument('--check',action='store_true');p.add_argument('--auto',action='store_true');p.add_argument('--written');p.add_argument('--days');p.add_argument('--limit');p.add_argument('--min-count');a=p.parse_args()
-    terminal = terminal_record(a.site, a.owner) if a.command in ('list-gaps', 'finish') else None
+    p=argparse.ArgumentParser();p.add_argument('command',choices=['list-gaps','checkpoint','restore','adopt','finish','park','owner-close','end-run','heartbeat']);p.add_argument('--site',required=True);p.add_argument('--owner',default=invocation_owner());p.add_argument('--out');p.add_argument('--intake');p.add_argument('--completion');p.add_argument('--metadata');p.add_argument('--files',nargs='*',default=[]);p.add_argument('--end-invocation', action='store_true',help='Release only this owner after the checkpoint is safely retained');p.add_argument('--checkpoint-file');p.add_argument('--reason');p.add_argument('--holds');p.add_argument('--request');p.add_argument('--published');p.add_argument('--published-commit');p.add_argument('--check',action='store_true');p.add_argument('--auto',action='store_true');p.add_argument('--deploy',action='store_true');p.add_argument('--written');p.add_argument('--days');p.add_argument('--limit');p.add_argument('--min-count');a=p.parse_args()
+    terminal = terminal_record(a.site, a.owner) if a.command in ('list-gaps', 'finish', 'end-run') else None
     if a.command == 'list-gaps' and terminal and terminal.is_file():
         print(json.dumps(read(terminal)))
         return 0
@@ -990,7 +1674,7 @@ def main():
         result=dict(intake(a.site,store,a.out,a.owner),invocationOwner=a.owner)
         if not result['candidateCount'] and not result['resumed']:
             save_terminal_record(terminal, result)
-    elif a.command=='restore':result=restore_artifacts(read(a.checkpoint_file))
+    elif a.command=='restore':result=restore_artifacts(read(a.checkpoint_file), store)
     else:
         packet=read(a.intake);require(packet['site']==a.site,'Cross-site job refused')
         if a.command=='adopt':
@@ -1008,7 +1692,8 @@ def main():
             previous = (lease.get('checkpoints') or [{}])[-1]
             for key in ('canonicalJobs', 'reviewCounters'):
                 metadata[key] = {**previous.get(key, {}), **metadata[key]}
-            metadata['artifacts']=capture_artifacts(a.files);result=store.checkpoint_job(a.site,packet['runId'],a.owner,metadata)
+            swept_files = auto_evidence_paths(a.files, store)
+            metadata['artifacts']=capture_artifacts(swept_files, store, a.site, packet['runId']);result=store.checkpoint_job(a.site,packet['runId'],a.owner,metadata)
             heartbeat(store,a.site,packet['runId'],a.owner)
             if a.end_invocation and result.get('ok',True):
                 store.release_job(a.site,packet['runId'],a.owner)
@@ -1016,6 +1701,8 @@ def main():
             store.heartbeat_job(a.site,packet['runId'],a.owner);result={'ok':True,'status':'alive'}
         elif a.command=='owner-close':
             result=owner_close(a.intake,a.request,store,a.owner,a.published,a.published_commit,a.check,(a.written or '') if a.auto else None)
+        elif a.command=='end-run':
+            result=end_run(a.intake,store,a.owner,a.completion,a.written,a.published,a.published_commit,a.reason,a.deploy)
         elif a.command=='park':
             result=park(a.intake,a.completion,store,a.owner,a.reason,a.holds)
         else:
