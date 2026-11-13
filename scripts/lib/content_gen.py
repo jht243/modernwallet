@@ -619,7 +619,7 @@ def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinki
                "output_config": {"effort": effort}}
     if (system or "").strip():   # a whitespace-only system block is a 400 on Claude
         payload["system"] = [{"type": "text", "text": system,
-                              **({"cache_control": {"type": "ephemeral"}} if CACHE_ON and len(system) >= 8000 else {})}]
+                              **({"cache_control": {"type": "ephemeral"}} if CACHE_ON and len(system) >= 4096 else {})}]
     errors = []
     for name, key in _anthropic_keys():
         try:

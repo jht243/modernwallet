@@ -36,7 +36,9 @@ Exit codes: 0 ok · 2 no credentials · 3 permission denied · 5 no data in wind
 import argparse
 import json
 import os
+import random
 import sys
+import time
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -47,6 +49,9 @@ from gsc_search_analytics import build_session, load_credentials  # noqa: E402
 
 GA4_SCOPE = "https://www.googleapis.com/auth/analytics.readonly"
 API = "https://analyticsdata.googleapis.com/v1beta"
+DEFAULT_TIMEOUT = int(os.environ.get("GA4_HTTP_TIMEOUT", "90"))
+DEFAULT_RETRIES = int(os.environ.get("GA4_HTTP_RETRIES", "5"))
+RETRYABLE_STATUS = {408, 429, 500, 502, 503, 504}
 
 
 def _with_ga4_scope(creds):
@@ -56,14 +61,43 @@ def _with_ga4_scope(creds):
     return creds
 
 
-def run_report(session, property_id: str, body: dict) -> dict:
+def _post_report(session, property_id: str, body: dict, *,
+                 timeout: int = DEFAULT_TIMEOUT,
+                 retries: int = DEFAULT_RETRIES):
+    """POST runReport with jittered exponential backoff for fleet-cron thundering herds."""
+    import requests as req_lib
+
     endpoint = f"{API}/properties/{property_id}:runReport"
-    r = session.post(endpoint, json=body, timeout=30)
-    if r.status_code == 403:
-        print(f"ERROR 403: service account lacks access to GA4 property {property_id}. "
-              f"Add the SA email as Viewer in GA4 Admin → Property Access Management, "
-              f"and enable the Analytics Data API in its Cloud project.", file=sys.stderr)
-        sys.exit(3)
+    last_err = None
+    for attempt in range(retries):
+        try:
+            r = session.post(endpoint, json=body, timeout=timeout)
+            if r.status_code == 403:
+                print(f"ERROR 403: service account lacks access to GA4 property {property_id}. "
+                      f"Add the SA email as Viewer in GA4 Admin → Property Access Management, "
+                      f"and enable the Analytics Data API in its Cloud project.", file=sys.stderr)
+                sys.exit(3)
+            if r.status_code in RETRYABLE_STATUS and attempt < retries - 1:
+                wait = min(2 ** (attempt + 1), 30) + random.uniform(1.0, 4.5)
+                print(f"[ga4_pull_24h] HTTP {r.status_code} on property {property_id}; "
+                      f"retry {attempt + 1}/{retries - 1} in {wait:.1f}s", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            return r
+        except req_lib.RequestException as exc:
+            last_err = exc
+            if attempt < retries - 1:
+                wait = min(2 ** (attempt + 1), 30) + random.uniform(1.0, 4.5)
+                print(f"[ga4_pull_24h] {type(exc).__name__} on property {property_id}; "
+                      f"retry {attempt + 1}/{retries - 1} in {wait:.1f}s", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            raise
+    raise RuntimeError(f"GA4 runReport exhausted {retries} attempts: {last_err}")
+
+
+def run_report(session, property_id: str, body: dict, *, timeout: int = DEFAULT_TIMEOUT) -> dict:
+    r = _post_report(session, property_id, body, timeout=timeout)
     r.raise_for_status()
     return r.json()
 
@@ -93,92 +127,77 @@ def freshest_date_with_data(session, property_id: str) -> str | None:
     return max(dates) if dates else None
 
 
-def top_pages(session, property_id: str, start: str, end: str, top: int,
-              with_engagement: bool = False) -> list[dict]:
+# Engagement metrics appended when --with-engagement is set (page-quality pass).
+# scrolledUsers (enhanced-measurement 90%-scroll) is not guaranteed on every
+# property, so the request retries without it on a 400.
+_ENGAGEMENT_METRICS = [
+    {"name": "userEngagementDuration"},
+    {"name": "engagementRate"},
+    {"name": "bounceRate"},
+    {"name": "scrolledUsers"},
+]
+
+
+def top10_pages(session, property_id: str, day: str, *, start_day: str | None = None,
+                top: int = 10, with_engagement: bool = False,
+                timeout: int = DEFAULT_TIMEOUT) -> list[dict]:
     metrics = [
         {"name": "screenPageViews"},
         {"name": "sessions"},
         {"name": "totalUsers"},
     ]
     if with_engagement:
-        metrics += [
-            {"name": "userEngagementDuration"},
-            {"name": "engagementRate"},
-            {"name": "bounceRate"},
-        ]
+        metrics = metrics + _ENGAGEMENT_METRICS
     body = {
-        "dateRanges": [{"startDate": start, "endDate": end}],
+        "dateRanges": [{"startDate": start_day or day, "endDate": day}],
         "dimensions": [{"name": "pagePath"}],
         "metrics": metrics,
         "orderBys": [{"metric": {"metricName": "screenPageViews"}, "desc": True}],
         "limit": top,
     }
-    resp = run_report(session, property_id, body)
+    r = _post_report(session, property_id, body, timeout=timeout)
+    if with_engagement and r.status_code == 400 and "scrolledUsers" in r.text:
+        # property without scroll tracking — drop that one metric and retry
+        body["metrics"] = [m for m in body["metrics"] if m["name"] != "scrolledUsers"]
+        r = _post_report(session, property_id, body, timeout=timeout)
+    r.raise_for_status()
+    resp = r.json()
+    has_scroll = any(m["name"] == "scrolledUsers" for m in body["metrics"])
     rows = []
     for row in resp.get("rows", []):
         page = row["dimensionValues"][0]["value"]
         m = row["metricValues"]
         views = int(m[0]["value"])
-        active_users = int(m[2]["value"])
-        out = {
+        entry = {
             "page": page,
             "views": views,
             "sessions": int(m[1]["value"]),
-            "active_users": active_users,
+            "active_users": int(m[2]["value"]),
             # compatibility alias so the GSC-shaped Phase 1 trigger runs unchanged:
             "clicks": views,
         }
         if with_engagement:
-            eng_duration_s = float(m[3]["value"])
-            out["avg_eng_s"] = round(eng_duration_s / active_users, 1) if active_users else 0.0
-            out["engagement_rate"] = round(float(m[4]["value"]), 4)
-            out["bounce_rate"] = round(float(m[5]["value"]), 4)
-        rows.append(out)
+            users = entry["active_users"]
+            eng_dur = float(m[3]["value"])
+            entry["avg_eng_s"] = round(eng_dur / users, 1) if users else 0.0
+            entry["engagement_rate"] = round(float(m[4]["value"]), 4)
+            entry["bounce_rate"] = round(float(m[5]["value"]), 4)
+            if has_scroll:
+                scrolled = int(m[6]["value"])
+                entry["scrolled_users"] = scrolled
+                entry["scrolled_pct"] = round(scrolled / users, 4) if users else 0.0
+        rows.append(entry)
     return rows[:top]
 
 
-def scrolled_pct_by_page(session, property_id: str, start: str, end: str,
-                          pages: list[dict]) -> None:
-    """Share of active users who fired the default 90%-scroll event, per page.
-
-    Mutates `pages` in place, adding scrolled_users / scrolled_pct. Silently
-    no-ops (leaves the fields absent) on properties without enhanced-measurement
-    scroll tracking — callers must treat scrolled_pct as optional.
-    """
-    body = {
-        "dateRanges": [{"startDate": start, "endDate": end}],
-        "dimensions": [{"name": "pagePath"}],
-        "metrics": [{"name": "activeUsers"}],
-        "dimensionFilter": {
-            "filter": {"fieldName": "eventName", "stringFilter": {"value": "scroll"}}
-        },
-        "limit": 200,
-    }
-    try:
-        resp = run_report(session, property_id, body)
-    except Exception as exc:  # noqa: BLE001 — best-effort, property may lack scroll tracking
-        print(f"WARNING: scroll-depth metric unavailable ({exc}); skipping scrolled_pct.",
-              file=sys.stderr)
-        return
-    scrolled = {
-        row["dimensionValues"][0]["value"]: int(row["metricValues"][0]["value"])
-        for row in resp.get("rows", [])
-    }
-    for p in pages:
-        su = scrolled.get(p["page"])
-        if su is None:
-            continue
-        p["scrolled_users"] = su
-        p["scrolled_pct"] = round(su / p["active_users"], 4) if p["active_users"] else 0.0
-
-
-def channel_split(session, property_id: str, start: str, end: str, pages: list[str]) -> dict:
+def channel_split(session, property_id: str, day: str, pages: list[str],
+                  *, start_day: str | None = None) -> dict:
     """Per-page sessions by default channel group (Direct/Referral/Organic/…),
-    scoped to the top pages. This is where AI/Direct traffic becomes visible."""
+    scoped to the top-10 pages. This is where AI/Direct traffic becomes visible."""
     if not pages:
         return {}
     body = {
-        "dateRanges": [{"startDate": start, "endDate": end}],
+        "dateRanges": [{"startDate": start_day or day, "endDate": day}],
         "dimensions": [{"name": "pagePath"}, {"name": "sessionDefaultChannelGroup"}],
         "metrics": [{"name": "sessions"}],
         "dimensionFilter": {
@@ -207,11 +226,19 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--with-channels", action="store_true",
                     help="Add per-page channel split (Direct/Referral/etc.).")
     ap.add_argument("--with-engagement", action="store_true",
-                    help="Add avg_eng_s, engagement_rate, bounce_rate, scrolled_pct per page.")
+                    help="Add per-page engagement metrics (avg engagement time, "
+                         "engagement rate, bounce rate, 90%%-scroll users). "
+                         "Used by the page-quality pass.")
     ap.add_argument("--days", type=int, default=1,
-                    help="Window size in days, ending on the freshest day with data (default 1).")
+                    help="Window size in days ending at the freshest day with data "
+                         "(default 1 = the original 24h behavior). Engagement rates "
+                         "need a wide window — the page-quality pass uses 28.")
     ap.add_argument("--top", type=int, default=10,
-                    help="Number of top pages to return, ranked by views (default 10).")
+                    help="How many top pages to return (default 10).")
+    ap.add_argument("--timeout", type=int, default=DEFAULT_TIMEOUT,
+                    help="HTTP read timeout in seconds per GA4 API attempt (default 90).")
+    ap.add_argument("--base-url", default="",
+                    help="Optional compatibility flag accepted for routine CLI parity (ignored).")
     ap.add_argument("--json", help="Write result to file instead of stdout.")
     args = ap.parse_args(argv)
 
@@ -222,39 +249,42 @@ def main(argv: list[str] | None = None) -> int:
     creds = _with_ga4_scope(load_credentials(args.sa_file))
     session = build_session(creds)
 
-    end = freshest_date_with_data(session, args.property_id)
-    if not end:
+    day = freshest_date_with_data(session, args.property_id)
+    if not day:
         print(f"ERROR: no GA4 data in the last 4 days for property {args.property_id}",
               file=sys.stderr)
         return 5
-    start = (date.fromisoformat(end) - timedelta(days=args.days - 1)).isoformat()
 
-    pages = top_pages(session, args.property_id, start, end, args.top,
-                       with_engagement=args.with_engagement)
-    if args.with_engagement:
-        scrolled_pct_by_page(session, args.property_id, start, end, pages)
+    start_day = None
+    if args.days > 1:
+        end_dt = date.fromisoformat(day)
+        start_day = (end_dt - timedelta(days=args.days - 1)).isoformat()
 
+    pages = top10_pages(session, args.property_id, day, start_day=start_day,
+                        top=args.top, with_engagement=args.with_engagement,
+                        timeout=args.timeout)
     payload = {
         "property_id": args.property_id,
-        "data_date": end,
-        "window_start": start,
-        "window_end": end,
-        "window_days": args.days,
+        "data_date": day,
         "source": "ga4",
         "top_pages": pages,
         "top10_pages_total_views": sum(p["views"] for p in pages),
         "top10_pages_total_clicks": sum(p["clicks"] for p in pages),  # alias mirror
     }
+    if start_day:
+        payload["start_date"] = start_day
+        payload["window_days"] = args.days
     if args.with_channels:
         payload["channel_split"] = channel_split(
-            session, args.property_id, start, end, [p["page"] for p in pages]
+            session, args.property_id, day, [p["page"] for p in pages],
+            start_day=start_day,
         )
 
     if args.json:
         Path(args.json).parent.mkdir(parents=True, exist_ok=True)
         with open(args.json, "w") as f:
             json.dump(payload, f, indent=2)
-        print(f"Wrote GA4 pull for {start}..{end} to {args.json}", file=sys.stderr)
+        print(f"Wrote GA4 pull for {day} to {args.json}", file=sys.stderr)
     else:
         json.dump(payload, sys.stdout, indent=2)
         sys.stdout.write("\n")

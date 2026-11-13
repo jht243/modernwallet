@@ -121,10 +121,13 @@ def derive_site_url(base_url: str, override: Optional[str] = None) -> str:
     return f"sc-domain:{host}"
 
 
-def query_search_analytics(session, site_url: str, body: dict, retries: int = 3) -> dict:
+def query_search_analytics(session, site_url: str, body: dict, retries: int = 4) -> dict:
     """Hit the SearchAnalytics:query endpoint and return parsed JSON."""
+    import random
+    import time
     import requests as req_lib
 
+    timeout_s = int(os.environ.get("GSC_HTTP_TIMEOUT", "60"))
     quoted_site = urllib.parse.quote(site_url, safe="")
     endpoint = (
         f"https://searchconsole.googleapis.com/webmasters/v3/sites/"
@@ -133,22 +136,54 @@ def query_search_analytics(session, site_url: str, body: dict, retries: int = 3)
     last_err = None
     for attempt in range(retries):
         try:
-            r = session.post(endpoint, json=body, timeout=30)
+            r = session.post(endpoint, json=body, timeout=timeout_s)
             if r.status_code == 403:
                 print(f"ERROR 403: service account lacks permission on {site_url}. "
                       f"Add it as Full/Owner in GSC → Settings → Users and permissions.",
                       file=sys.stderr)
                 sys.exit(3)
+            if r.status_code in (408, 429, 500, 502, 503, 504) and attempt < retries - 1:
+                time.sleep(min(2 ** (attempt + 1), 24) + random.uniform(0.5, 2.5))
+                continue
             r.raise_for_status()
             return r.json()
         except req_lib.RequestException as e:
             last_err = e
             if attempt < retries - 1:
-                import time
-                time.sleep(1.5 ** attempt)
+                time.sleep(min(2 ** (attempt + 1), 24) + random.uniform(0.5, 2.5))
                 continue
             raise
     raise RuntimeError(f"unreachable: {last_err}")
+
+
+def fetch_top_pages(session, site_url: str, window_days: int, limit: int) -> list[dict]:
+    """Site-wide top pages ranked by clicks then impressions over the last N days.
+
+    This is the "most visited pages" selector. GSC returns rows ordered by clicks
+    desc; we over-fetch and re-sort by (clicks, impressions) so a pre-click site
+    (lots of impressions, ~0 clicks) still ranks sensibly by visibility.
+    """
+    end = date.today()
+    start = end - timedelta(days=window_days)
+    fetch_n = max(limit * 5, 100)
+    body = {
+        "startDate": start.isoformat(),
+        "endDate": end.isoformat(),
+        "dimensions": ["page"],
+        "rowLimit": fetch_n,
+    }
+    resp = query_search_analytics(session, site_url, body)
+    rows = []
+    for row in resp.get("rows", []):
+        rows.append({
+            "page": row.get("keys", [""])[0],
+            "clicks": int(row.get("clicks", 0)),
+            "impressions": int(row.get("impressions", 0)),
+            "ctr": round(row.get("ctr", 0.0), 4),
+            "position": round(row.get("position", 0.0), 2),
+        })
+    rows.sort(key=lambda r: (r["clicks"], r["impressions"]), reverse=True)
+    return rows[:limit]
 
 
 def fetch_page_summary(session, site_url: str, page_url: str, window_days: int) -> dict:
@@ -338,6 +373,9 @@ def main(argv: list[str] | None = None) -> int:
                     help="Full page URL to inspect. Use --stdin for batch.")
     ap.add_argument("--stdin", action="store_true",
                     help="Read one page URL per line from stdin (overrides --page).")
+    ap.add_argument("--top-pages", type=int, metavar="N",
+                    help="Site-wide: return the top N pages by clicks then impressions "
+                         "(the 'most visited pages' selector). Ignores --page/--stdin.")
     ap.add_argument("--site-url",
                     help="Override the derived GSC property (e.g. URL-prefix property).")
     ap.add_argument("--sa-file", help="Path to service-account JSON (overrides env vars).")
@@ -348,12 +386,26 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--json", help="Write JSON results to file instead of stdout.")
     args = ap.parse_args(argv)
 
-    if not args.page and not args.stdin:
-        ap.error("--page or --stdin required")
+    if not args.page and not args.stdin and not args.top_pages:
+        ap.error("--page, --stdin, or --top-pages required")
 
     site_url = derive_site_url(args.base_url, args.site_url)
     creds = load_credentials(args.sa_file)
     session = build_session(creds)
+
+    # Site-wide top-pages mode: the "most visited pages" selector.
+    if args.top_pages:
+        top = fetch_top_pages(session, site_url, args.days, args.top_pages)
+        payload = {"site_url": site_url, "window_days": args.days,
+                   "top_pages": top}
+        if args.json:
+            with open(args.json, "w") as f:
+                json.dump(payload, f, indent=2)
+            print(f"Wrote {len(top)} top pages to {args.json}", file=sys.stderr)
+        else:
+            json.dump(payload, sys.stdout, indent=2)
+            sys.stdout.write("\n")
+        return 0
 
     pages = ([line.strip() for line in sys.stdin if line.strip()]
              if args.stdin else [args.page])
