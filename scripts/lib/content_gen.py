@@ -345,7 +345,9 @@ def _post(url: str, headers: dict, payload: dict, timeout: int = 900) -> dict:
                 return json.load(r)
         except urllib.error.HTTPError as e:
             detail = e.read().decode("utf-8", "replace")[:600]
-            last = f"HTTP {e.code}: {detail}"
+            last = f"HTTP {e.code} ({url}): {detail}" if "api.openai.com" in url and e.code in (401, 403) else f"HTTP {e.code}: {detail}"
+            if _openai_key_dead(last):
+                raise RuntimeError(last)
             if e.code not in (429, 500, 502, 503, 504) and 400 <= e.code < 500:
                 raise RuntimeError(last)
         except Exception as e:  # noqa: BLE001
@@ -454,16 +456,160 @@ def call_gemini(model: str, system: str, prompt: str, max_tokens: int, thinking:
             "response_id": resp.get("responseId")}
 
 
+# OPENAI_BUDGET_GUARD_V1 — zero-retry quota shutoff + monthly free-credit cap
+_OPENAI_DRY = set()
+_OPENAI_BUDGET_URL = os.environ.get(
+    "OPENAI_BUDGET_GUARD_URL",
+    "https://kqsepnhrhiwqsiazcozg.supabase.co/functions/v1/openai-budget-guard",
+)
+
+
+def _openai_key_dead(err: str) -> bool:
+    low = (err or "").lower()
+    return any(tok in low for tok in (
+        "insufficient_quota",
+        "billing_hard_limit",
+        "exceeded your current quota",
+        "account_deactivated",
+        "billing_not_active",
+        "invalid_api_key",
+        "incorrect api key",
+    )) or ("api.openai.com" in low and ("http 401" in low or "http 403" in low))
+
+
+def _openai_utc_month() -> str:
+    return os.environ.get("CONTENT_OPENAI_BUDGET_MONTH", "").strip() or time.strftime("%Y-%m", time.gmtime())
+
+
+def _openai_budget_cache_file(month: str) -> pathlib.Path:
+    import tempfile
+    d = pathlib.Path(tempfile.gettempdir()) / "content_gen_cache"
+    d.mkdir(parents=True, exist_ok=True)
+    return d / f"openai_budget_{month}.json"
+
+
+def _check_openai_monthly_budget() -> None:
+    if os.environ.get("CONTENT_OPENAI_DISABLED", "").strip() == "1":
+        raise RuntimeError("openai disabled via CONTENT_OPENAI_DISABLED=1")
+    if os.environ.get("CONTENT_OPENAI_BUDGET_GUARD", "1").strip() == "0":
+        return
+    month = _openai_utc_month()
+    cwd = pathlib.Path.cwd().resolve()
+    for anc in [cwd] + list(cwd.parents):
+        st = anc / ".claude" / "openai-budget-status.json"
+        if st.exists():
+            try:
+                data = json.loads(st.read_text(errors="ignore") or "{}")
+                if data.get("disabledForMonth") == month:
+                    mtd = data.get("mtdSpendUsd")
+                    cap = data.get("capUsd")
+                    detail = f" (${mtd:.2f} >= ${cap:.2f})" if isinstance(mtd, (int, float)) and isinstance(cap, (int, float)) else ""
+                    raise RuntimeError(f"openai paused for {month}: monthly free-credit cap reached{detail}")
+            except RuntimeError:
+                raise
+            except Exception:
+                pass
+        if (anc / ".git").exists():
+            break
+
+    cf = _openai_budget_cache_file(month)
+    now = time.time()
+    try:
+        if cf.exists():
+            cached = json.loads(cf.read_text(errors="ignore") or "{}")
+            if cached.get("month") == month and cached.get("expires", 0) > now:
+                if cached.get("allowOpenai") is False:
+                    raise RuntimeError(
+                        f"openai paused for {month}: monthly free-credit cap reached "
+                        f"(${float(cached.get('mtdSpendUsd') or 0):.2f} >= ${float(cached.get('capUsd') or 0):.2f})"
+                    )
+                return
+    except RuntimeError:
+        raise
+    except Exception:
+        pass
+
+    url = os.environ.get("OPENAI_BUDGET_GUARD_URL", _OPENAI_BUDGET_URL).strip()
+    if not url:
+        return
+    sep = "&" if "?" in url else "?"
+    try:
+        req = urllib.request.Request(f"{url}{sep}month={month}", headers={"Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=2.5) as resp:
+            status = json.loads(resp.read().decode("utf-8", "replace") or "{}")
+        allow = status.get("allowOpenai") is not False
+        ttl = 300 if allow else 1800
+        status["expires"] = now + ttl
+        try:
+            cf.write_text(json.dumps(status))
+        except Exception:
+            pass
+        if not allow:
+            raise RuntimeError(
+                f"openai paused for {month}: monthly free-credit cap reached "
+                f"(${float(status.get('mtdSpendUsd') or 0):.2f} >= ${float(status.get('capUsd') or 0):.2f})"
+            )
+    except RuntimeError:
+        raise
+    except Exception:
+        # Fail open on transient status-endpoint network errors so runs never stall.
+        return
+
+
+def _report_openai_budget_spend(model: str, in_tok, out_tok, think_tok) -> None:
+    if os.environ.get("CONTENT_OPENAI_BUDGET_GUARD", "1").strip() == "0":
+        return
+    url = os.environ.get("OPENAI_BUDGET_GUARD_URL", _OPENAI_BUDGET_URL).strip()
+    if not url:
+        return
+    try:
+        it = int(in_tok or 0)
+        ot = int(out_tok or 0)
+        if it <= 0 and ot <= 0:
+            return
+        delta = None
+        if "est_cost" in globals():
+            delta = globals()["est_cost"](model, it, ot, think_tok, 0)
+        if delta is None:
+            delta = (it * 2.0 + ot * 10.0) / 1e6
+        if delta <= 0:
+            return
+        month = _openai_utc_month()
+        sep = "&" if "?" in url else "?"
+        body = json.dumps({"month": month, "deltaUsd": round(float(delta), 6), "model": model}).encode("utf-8")
+        req = urllib.request.Request(
+            f"{url}{sep}action=report",
+            data=body,
+            headers={"Content-Type": "application/json", "Accept": "application/json"},
+            method="POST",
+        )
+        with urllib.request.urlopen(req, timeout=1.5) as resp:
+            status = json.loads(resp.read().decode("utf-8", "replace") or "{}")
+        if status.get("month") == month and status.get("allowOpenai") is False:
+            status["expires"] = time.time() + 1800
+            _openai_budget_cache_file(month).write_text(json.dumps(status))
+    except Exception:
+        pass
+
+
 def call_openai(model: str, system: str, prompt: str, max_tokens: int, thinking: str) -> dict:
+    _check_openai_monthly_budget()
     name, key = resolve_key("openai")
+    if name in _OPENAI_DRY:
+        raise RuntimeError(f"openai key {name} already marked exhausted/invalid in this process")
     payload = {"model": model, "instructions": system, "input": prompt,
                "max_output_tokens": max_tokens}
     if thinking in ("low", "medium", "high"):
         payload["reasoning"] = {"effort": thinking}
     if JSON_MODE:
         payload["text"] = {"format": {"type": "json_object"}}
-    resp = _post("https://api.openai.com/v1/responses",
-                 {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}, payload)
+    try:
+        resp = _post("https://api.openai.com/v1/responses",
+                     {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}, payload)
+    except RuntimeError as e:
+        if _openai_key_dead(str(e)) or "HTTP 401" in str(e) or "HTTP 403" in str(e):
+            _OPENAI_DRY.add(name)
+        raise
     text = resp.get("output_text") or ""
     if not text:
         chunks = []
@@ -474,6 +620,7 @@ def call_openai(model: str, system: str, prompt: str, max_tokens: int, thinking:
         text = "\n".join(chunks)
     u = resp.get("usage") or {}
     det = u.get("output_tokens_details") or {}
+    _report_openai_budget_spend(resp.get("model", model), u.get("input_tokens"), u.get("output_tokens"), det.get("reasoning_tokens"))
     finish = "MAX_TOKENS" if (resp.get("incomplete_details") or {}).get("reason") == "max_output_tokens" else "STOP"
     return {"text": text, "finish": finish, "key_source": name,
             "model": resp.get("model", model), "provider": "openai",
