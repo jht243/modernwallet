@@ -147,6 +147,12 @@ steps 6–7 (submit the upgraded URLs to IndexNow), then
 `backlog.py set --id <id> --status published --note "seo upgrade" --field seoUpgraded='"<day>"' --field bodyWords=<n>`.
 A row whose live page already has at least 1,500 body words and the page rule 5 sections only
 gets marked with that `set` command (no rewrite, no audit). Commit and push the receipts as in step 7.
+A vendor page that cannot be read during an upgrade (403, JavaScript-only, missing price) never
+blocks the upgrade. Keep that product's facts exactly as the page already states them (they passed
+the page's original audit; keep their check date in the sources file) and expand the rest of the
+page. A cell that currently defers ("see vendor site") becomes the fact the vendor's site does show
+(e.g. "Quote-based; no public price") or the product is swapped for an alternative whose site can
+be read. Hold an upgrade only if the subject product itself no longer exists.
 
 **8. Report** through the routine prompt's central reporting: pages published with links, rows
 held/excluded and why, pages upgraded in step 7b (with body word counts), audit verdicts and how many findings were fixed, IndexNow result, backlog
