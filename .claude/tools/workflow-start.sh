@@ -40,7 +40,10 @@ else
   SOURCE_ROOT=$(git -C "$ROOT" worktree list --porcelain | python3 -c 'import sys; lines=sys.stdin.read().splitlines(); print(next(line[len("worktree "):] for line in lines if line.startswith("worktree ")))')
   fi
   GUARD="$SOURCE_ROOT/.claude/tools/worktree-freshness.py"
-  if [ "$SOURCE_ROOT" != "$ROOT" ] && [ -f "$ROOT/.claude/tools/worktree-freshness.py" ] && grep -q -- '--pinned-to-run' "$ROOT/.claude/tools/worktree-freshness.py" 2>/dev/null && ! grep -q -- '--pinned-to-run' "$GUARD" 2>/dev/null; then
+  if [ "$SOURCE_ROOT" != "$ROOT" ] && [ -f "$ROOT/.claude/tools/worktree-freshness.py" ] && {
+    { grep -q -- '--auto-worktree' "$ROOT/.claude/tools/worktree-freshness.py" 2>/dev/null && ! grep -q -- '--auto-worktree' "$GUARD" 2>/dev/null; } ||
+    { grep -q -- '--pinned-to-run' "$ROOT/.claude/tools/worktree-freshness.py" 2>/dev/null && ! grep -q -- '--pinned-to-run' "$GUARD" 2>/dev/null; }
+  }; then
     GUARD="$ROOT/.claude/tools/worktree-freshness.py"
   fi
   [ -f "$GUARD" ] || { echo "FATAL: source freshness checker missing; do not continue with stale instructions." >&2; exit 1; }

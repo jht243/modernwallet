@@ -174,6 +174,33 @@ resolve_generated() {
   return 0
 }
 
+# Remove untracked content-addressed review evidence files ONLY when target_ref
+# already tracks the exact same path with the exact same Git blob OID (concurrent
+# runs freezing the same shared policy/source artifact). Never touch differing files.
+clean_identical_evidence_collisions() {
+  python3 - "${1:-origin/main}" <<'PY' 2>/dev/null || true
+import os, subprocess, sys
+target = sys.argv[1]
+if subprocess.run(['git', 'rev-parse', '--verify', '-q', target], capture_output=True).returncode != 0:
+    sys.exit(0)
+untracked = subprocess.check_output(
+    ['git', 'ls-files', '--others', '--exclude-standard', '-z', '--', 'reports/content-review-evidence']
+).split(b'\0')
+for raw in untracked:
+    if not raw:
+        continue
+    rel = os.fsdecode(raw)
+    if os.path.islink(rel) or not os.path.isfile(rel):
+        continue
+    r = subprocess.run(['git', 'rev-parse', '--verify', '-q', f'{target}:{rel}'], capture_output=True, text=True)
+    if r.returncode != 0 or not r.stdout.strip():
+        continue
+    l = subprocess.run(['git', 'hash-object', '--', rel], capture_output=True, text=True)
+    if l.returncode == 0 and l.stdout.strip() == r.stdout.strip():
+        os.unlink(rel)
+PY
+}
+
 # Run `git rebase <args>`; on conflict try resolve_generated, else abort. 0 = landed.
 rebase_or_regen() {
   local autostash=true
@@ -183,6 +210,7 @@ rebase_or_regen() {
     echo '[deploy] main moved while unrelated working changes are present; preserve them without autostash and reconcile the publication branch.' >&2
     return 1
   fi
+  clean_identical_evidence_collisions origin/main
   if git -c "rebase.autoStash=$autostash" rebase "$@"; then return 0; fi
   # A refused rebase never created a conflict state; do not report it as resolved.
   if [ ! -d "$(git rev-parse --git-path rebase-merge)" ] && [ ! -d "$(git rev-parse --git-path rebase-apply)" ]; then return 1; fi

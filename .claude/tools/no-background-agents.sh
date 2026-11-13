@@ -36,8 +36,11 @@ tool = d.get("tool_name") or ""
 inp = d.get("tool_input") or {}
 bg = inp.get("run_in_background")
 updated_input = None
+cmd = (inp.get("command") or "").lstrip()
+cloud = os.environ.get("CLAUDE_CODE_REMOTE", "").lower() in ("1", "true") \
+    or (os.environ.get("CLAUDE_PROJECT_DIR") or os.getcwd()).startswith("/home/user")
 
-if tool in ("Agent", "Task") and bg is not False:
+if cloud and tool in ("Agent", "Task") and bg is not False:
     # The installed Agent bind hook sets this exact dispatch to foreground.
     # Other routines still use their existing admission check.
     from pathlib import Path
@@ -57,9 +60,6 @@ if tool in ("Agent", "Task") and bg is not False:
         "its result before continuing. Never poll for it, never end your turn to wait for it.\n")
     sys.exit(2)
 
-cmd = (inp.get("command") or "").lstrip()
-cloud = os.environ.get("CLAUDE_CODE_REMOTE", "").lower() in ("1", "true") \
-    or (os.environ.get("CLAUDE_PROJECT_DIR") or os.getcwd()).startswith("/home/user")
 if cloud and tool == "Monitor":
     sys.stderr.write(
         "BLOCKED by .claude/tools/no-background-agents.sh: this run is unattended. A Monitor only "
@@ -80,6 +80,8 @@ if cloud and tool == "Bash" and LONG.search(cmd) and (inp.get("timeout") or 0) <
     # Preserve the exact command, background restriction and permission checks.
     updated_input = dict(inp, timeout=600000)
 if tool == "Bash" and bg is True and cmd.startswith("sleep"):
+    if not cloud:
+        sys.exit(0)
     sys.stderr.write(
         "BLOCKED by .claude/tools/no-background-agents.sh: a backgrounded sleep is the "
         "'wait for a background agent' idiom, and this run is unattended, so ending your turn "

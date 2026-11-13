@@ -486,13 +486,152 @@ def publication_semantic(semantic):
     return result
 
 
+RELATED_CARDS_CLASS = re.compile(
+    r'^(?:[A-Za-z0-9]+_)?related(?:-(?:links|resources|articles|guides|posts|reading|comparisons|tools))?(?:__[A-Za-z0-9_-]{3,12})?$',
+    re.I,
+)
+RELATED_CARDS_TAGS = {
+    'div','section','aside','nav','header','ul','ol','li','h2','h3','h4',
+    'p','a','span','strong','em','b','i','small','time','button',
+    'svg','path','polyline','line','circle','br',
+}
+RELATED_CARDS_TOGGLE_RE = re.compile(r'^(?:(?:see|show|view)\s+\d+\s+more|show\s+(?:more|less))$', re.I)
+
+
+class _RelatedCardsStrippingPage(Page):
+    def __init__(self, base, canonical, volatile_ads=None, normalize_class_whitespace=False, volatile_regions=()):
+        super().__init__(volatile_ads, normalize_class_whitespace, volatile_regions)
+        self._base = base
+        self._canonical = canonical
+        self.related_stack = []
+        self.related_current = None
+        self.stripped_related = []
+
+    def handle_starttag(self, tag, attrs):
+        a = {k: v or "" for k, v in attrs}
+        void = tag in {'meta','link','img','input','br','hr','source','wbr','area','base','embed','param','track','col'}
+        if not self.ad_stack and not self.region_stack:
+            classes = a.get('class', '').split()
+            is_related_root = (
+                not self.related_stack
+                and tag in {'div', 'section', 'aside', 'nav'}
+                and 'body' in self.stack
+                and not any(t in self.stack for t in ['head', 'script', 'style', 'noscript'])
+                and any(RELATED_CARDS_CLASS.fullmatch(tok) for tok in classes)
+            )
+            if self.related_stack or is_related_root:
+                if is_related_root:
+                    self.related_current = {'text': [], 'links': []}
+                protected = ' '.join(str(a.get(k, '')) for k in ['id', 'class', 'aria-label', 'data-testid']).lower()
+                require(
+                    tag in RELATED_CARDS_TAGS
+                    and not any(tok in protected for tok in ['reader-survey','readersurvey','reader survey','affiliate','tested','testing','byline']),
+                    'Protected or unsupported content inside related-cards container: <' + tag + '>',
+                )
+                if tag == 'a':
+                    href = normalize(a.get('href', ''), self._base, self._canonical)
+                    canon_prefix = self._canonical.rstrip('/') + '/'
+                    require(
+                        bool(href) and (
+                            (href.startswith('/') and not href.startswith('//') and '..' not in href)
+                            or (href.startswith(canon_prefix) and '..' not in href[len(canon_prefix):])
+                        ),
+                        'Non-internal link inside related-cards container: ' + href,
+                    )
+                    self.related_current['links'].append(href)
+                if not void:
+                    self.related_stack.append(tag)
+                return
+        super().handle_starttag(tag, attrs)
+
+    def handle_endtag(self, tag):
+        if tag in {'meta','link','img','input','br','hr','source','wbr','area','base','embed','param','track','col'}:
+            return
+        if self.related_stack:
+            require(tag in self.related_stack, 'Unterminated related-cards container')
+            self.related_stack = self.related_stack[:len(self.related_stack) - 1 - self.related_stack[::-1].index(tag)]
+            if not self.related_stack:
+                self.stripped_related.append({
+                    'text': clean(' '.join(self.related_current['text'])),
+                    'links': self.related_current['links'],
+                })
+                self.related_current = None
+            return
+        super().handle_endtag(tag)
+
+    def handle_data(self, data):
+        if self.related_stack:
+            text_clean = clean(data)
+            if text_clean:
+                in_link = 'a' in self.related_stack
+                in_heading = ('h2' in self.related_stack or 'h3' in self.related_stack) and set(self.related_stack[1:]) <= {'header','div','h2','h3','span','strong','em'}
+                in_toggle = 'button' in self.related_stack and RELATED_CARDS_TOGGLE_RE.fullmatch(text_clean) is not None
+                require(in_link or in_heading or in_toggle, 'Visible text outside link or heading inside related-cards container')
+            self.related_current['text'].append(data)
+            return
+        super().handle_data(data)
+
+
+def _parse_stripping_related_cards(html, route, base, canonical):
+    require(re.search(r'</body\s*>', html, re.I) and re.search(r'</html\s*>\s*$', html, re.I), 'Incomplete full-page capture')
+    p = _RelatedCardsStrippingPage(
+        base, canonical,
+        route.get('volatileThirdPartyAds'),
+        route.get('normalizeClassTokenWhitespace') is True,
+        route.get('volatileRenderRegions'),
+    )
+    p.feed(html)
+    require(not p.ad_stack and not p.region_stack and not p.related_stack and p.closed_body and p.closed_html, 'Incomplete related-cards parse')
+    semantic = normalize({
+        'text': clean(' '.join(p.text)),
+        'h1': clean(' '.join(p.headings)),
+        'title': clean(''.join(p.title)),
+        'canonical': p.canonical,
+        'meta': p.meta,
+        'links': p.links,
+        'schema': p.schemas,
+        'structure': p.structure,
+    }, base, canonical)
+    return semantic, p.stripped_related
+
+
+def _matches_ignoring_related_cards(approved, live, path):
+    m_route = next((r for r in approved['manifest']['routes'] if r['path'] == path), None)
+    a_row = next((r for r in approved['routes'] if r['path'] == path), None)
+    b_row = next((r for r in live['routes'] if r['path'] == path), None)
+    if not m_route or not a_row or not b_row:
+        return False
+    if not (a_row.get('htmlFile') and a_row.get('htmlSha256') and b_row.get('htmlFile') and b_row.get('htmlSha256')):
+        return False
+    try:
+        a_html = _read_captured_blob(a_row['htmlFile'], a_row['htmlSha256']).decode('utf-8')
+        b_html = _read_captured_blob(b_row['htmlFile'], b_row['htmlSha256']).decode('utf-8')
+        a_sem, a_rel = _parse_stripping_related_cards(a_html, m_route, approved['baseUrl'], approved['manifest']['canonicalBase'])
+        b_sem, b_rel = _parse_stripping_related_cards(b_html, m_route, live['baseUrl'], live['manifest']['canonicalBase'])
+    except (OSError, UnicodeDecodeError, ValueError):
+        return False
+    if not a_rel and not b_rel:
+        return False
+    for region in b_rel:
+        for phrase in m_route.get('forbiddenText', []):
+            if phrase.casefold() in region['text'].casefold():
+                return False
+        for _, pattern in VOLATILE_REGION_TEXT_CHECKS:
+            if re.search(pattern, region['text'], re.I):
+                return False
+    return digest(publication_semantic(a_sem)) == digest(publication_semantic(b_sem))
+
+
 def compare(approved, live, review, require_live=True):
     review_check(approved,review); valid_snapshot(live)
     if require_live:
         require(urlsplit(live['baseUrl']).scheme=='https' and live['baseUrl'].rstrip('/')==live['manifest']['canonicalBase'].rstrip('/'),'Live verification requires canonical production origin')
     require(approved['manifest']==live['manifest'],'Live manifest differs from approved scope')
     a={r['path']:digest(publication_semantic(r['semantic'])) for r in approved['routes']}; b={r['path']:digest(publication_semantic(r['semantic'])) for r in live['routes']}
-    require(a==b,'Rendered content differs: '+str([p for p in set(a)|set(b) if a.get(p)!=b.get(p)]))
+    mismatched=[p for p in sorted(set(a)|set(b)) if a.get(p)!=b.get(p)]
+    if mismatched:
+        mismatched=[p for p in mismatched if not _matches_ignoring_related_cards(approved,live,p)]
+    require(not mismatched,'Rendered content differs: '+str(mismatched))
 
 def record(s, approved, review, commit, host, ledger):
     compare(approved,s,review)

@@ -434,5 +434,78 @@ class PinnedRunAndCleanWorktreeTests(unittest.TestCase):
             self.assertEqual(res['status'], 'current')
             self.assertTrue(res.get('selfSourcedWorktree'))
 
+    def test_auto_worktree_cuts_clean_worktree_off_origin_without_touching_dirty_primary(self):
+        remote = Path(self.tmp.name) / 'origin3.git'
+        subprocess.check_call(['git', 'init', '--bare', '-q', '-b', 'main', str(remote)])
+        tools_dir = self.source / '.claude/tools'
+        tools_dir.mkdir(parents=True, exist_ok=True)
+        (tools_dir / 'worktree-freshness.py').write_bytes(Path(__file__).with_name('worktree-freshness.py').read_bytes())
+        (tools_dir / 'workflow-start.sh').write_bytes(Path(__file__).with_name('workflow-start.sh').read_bytes())
+        (tools_dir / 'workflow-start.sh').chmod(0o755)
+        (self.source / 'scripts/paid_placements').mkdir(parents=True, exist_ok=True)
+        (self.source / 'scripts/paid_placements/ledger.json').write_text('{"v":1}\n')
+        subprocess.check_call(['git', '-C', str(self.source), 'add', '.'])
+        subprocess.check_call(['git', '-C', str(self.source), 'commit', '-qm', 'with tools'])
+        subprocess.check_call(['git', '-C', str(self.source), 'remote', 'add', 'origin', str(remote)])
+        subprocess.check_call(['git', '-C', str(self.source), 'push', '-q', 'origin', 'HEAD:main'])
+
+        # Peer advances origin/main with conflicting changes on ledger.json
+        peer = Path(self.tmp.name) / 'peer3'
+        subprocess.check_call(['git', 'clone', '-q', str(remote), str(peer)])
+        for k, v in [('user.email', 't@e.invalid'), ('user.name', 'Fixture')]:
+            subprocess.check_call(['git', '-C', str(peer), 'config', k, v])
+        (peer / 'scripts/paid_placements/ledger.json').write_text('{"v":2,"upstream":true}\n')
+        subprocess.check_call(['git', '-C', str(peer), 'add', '.'])
+        subprocess.check_call(['git', '-C', str(peer), 'commit', '-qm', 'upstream ledger v2'])
+        subprocess.check_call(['git', '-C', str(peer), 'push', '-q', 'origin', 'HEAD:main'])
+
+        # Primary has dirty local billing edits + untracked personal file
+        dirty_ledger = '{"v":1,"localUncommittedBillingEdit":true}\n'
+        (self.source / 'scripts/paid_placements/ledger.json').write_text(dirty_ledger)
+        (self.source / 'personal-scratch.txt').write_text('keep untouched\n')
+
+        wt_parent = Path(self.tmp.name) / 'auto-wts'
+        env = dict(os.environ)
+        for k in ('WORKFLOW_RUN_ID', 'CLAUDE_CODE_REMOTE', 'RENDER_GIT_COMMIT', 'CI'):
+            env.pop(k, None)
+        proc = subprocess.run(
+            [
+                'bash', '.claude/tools/workflow-start.sh',
+                '--auto-worktree',
+                '--worktree-parent', str(wt_parent),
+            ],
+            cwd=self.source,
+            env=env,
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+        self.assertEqual(proc.returncode, 0, msg=proc.stdout + proc.stderr)
+        import json
+        out = json.loads(proc.stdout)
+        self.assertEqual(out['status'], 'current')
+        self.assertTrue(out.get('autoCreatedWorktree'))
+        self.assertEqual(out['missing'], [])
+        wt_path = Path(out['worktree'])
+        self.assertTrue(wt_path.is_dir())
+        self.assertEqual((wt_path / 'scripts/paid_placements/ledger.json').read_text(), '{"v":2,"upstream":true}\n')
+        # Primary dirty billing file and untracked scratch file were 100% untouched!
+        self.assertEqual((self.source / 'scripts/paid_placements/ledger.json').read_text(), dirty_ledger)
+        self.assertEqual((self.source / 'personal-scratch.txt').read_text(), 'keep untouched\n')
+
+        # Even if primary has an older worktree-freshness.py lacking --auto-worktree,
+        # workflow-start.sh inside the clean worktree uses the clean worktree's checker.
+        old_guard = (tools_dir / 'worktree-freshness.py').read_text().replace('--auto-worktree', '--legacy-noop-flag')
+        (tools_dir / 'worktree-freshness.py').write_text(old_guard)
+        sub_proc = subprocess.run(
+            ['bash', '.claude/tools/workflow-start.sh', '--run-id', out['runId'], '--source', str(wt_path)],
+            cwd=wt_path,
+            env=dict(env, WORKFLOW_SOURCE_ROOT=str(wt_path)),
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+        self.assertEqual(sub_proc.returncode, 0, msg=sub_proc.stdout + sub_proc.stderr)
+
 if __name__ == '__main__':
     unittest.main()

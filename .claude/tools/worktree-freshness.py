@@ -573,6 +573,48 @@ def check(root, source=None, pinned_to_run=False):
     return result
 
 
+def ensure_auto_worktree(root, stale_result, run_id=None, worktree_parent=None):
+    """Cut a clean isolated worktree from live origin HEAD without touching the dirty local checkout."""
+    import re
+    import tempfile
+    top = Path(os.fsdecode(git(root, 'rev-parse', '--show-toplevel')).strip()).resolve()
+    revision = stale_result.get('revision')
+    if not revision or not _commit_present(top, revision):
+        listing = git(top, 'ls-remote', '--symref', 'origin', 'HEAD').decode().splitlines()
+        ref = next((l.split()[1] for l in listing if l.startswith('ref: refs/heads/')), None)
+        revision = next((l.split()[0] for l in listing if l.endswith('\tHEAD') and not l.startswith('ref:')), None)
+        if not ref or not revision:
+            raise RuntimeError('Cannot verify the live published default branch for auto-worktree')
+        git(top, 'fetch', '--quiet', '--no-tags', '--no-write-fetch-head', 'origin', revision)
+    short_id = re.sub(r'[^a-f0-9]', '', (run_id or os.environ.get('WORKFLOW_RUN_ID') or '').lower())[:12]
+    if not short_id:
+        short_id = dt.datetime.now(dt.timezone.utc).strftime('%Y%m%d%H%M%S')
+    repo_slug = re.sub(r'[^A-Za-z0-9._-]+', '-', top.name).strip('-') or 'repo'
+    parent_dir = Path(worktree_parent).resolve() if worktree_parent else Path(tempfile.gettempdir()).resolve()
+    parent_dir.mkdir(parents=True, exist_ok=True)
+    suffix = ''
+    for idx in range(1, 50):
+        wt_path = parent_dir / f'{repo_slug}-run-{short_id}{suffix}'
+        branch_name = f'mindmap/run-{short_id}{suffix}'
+        branch_exists = subprocess.run(
+            ['git', '-C', str(top), 'show-ref', '--verify', '--quiet', 'refs/heads/' + branch_name],
+            env=git_env(top), capture_output=True, timeout=60,
+        ).returncode == 0
+        if not wt_path.exists() and not branch_exists:
+            break
+        suffix = f'-{idx + 1}'
+    else:
+        raise RuntimeError('Could not allocate clean worktree path')
+    git(top, 'worktree', 'add', '-q', '-b', branch_name, str(wt_path), revision)
+    clean_result = check(wt_path, wt_path, pinned_to_run=False)
+    clean_result['autoCreatedWorktree'] = True
+    clean_result['worktree'] = str(wt_path)
+    clean_result['worktreeBranch'] = branch_name
+    clean_result['previousCheckout'] = str(top)
+    clean_result['previousMissingCount'] = len(stale_result.get('missing', []))
+    return clean_result
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', default='.')
@@ -581,6 +623,8 @@ def main():
     parser.add_argument('--run-id', help='Unique routine invocation ID for runtimes without a session ID; preserve within this run only')
     parser.add_argument('--cloud', action='store_true', help='Verify against the live published default branch, not a laptop checkout')
     parser.add_argument('--pinned-to-run', action='store_true', help='Pin mid-run subagent rechecks to the verified run-start baseline when a valid receipt already exists for --run-id')
+    parser.add_argument('--auto-worktree', action='store_true', help='On local non-cloud startup, automatically create a clean worktree from live origin HEAD instead of failing on a stale/dirty local checkout')
+    parser.add_argument('--worktree-parent', help='Optional parent directory for --auto-worktree')
     parser.add_argument('--scope', action='append', default=[], help='For buildFilter-scoped Render services, verify only scoped path prefixes against default_branch')
     args = parser.parse_args()
     if args.source_git_dir:
@@ -603,6 +647,13 @@ def main():
             if args.cloud
             else check(args.root, args.source, pinned_to_run=args.pinned_to_run)
         )
+        if args.auto_worktree and not args.cloud and not args.source_git_dir and result.get('missing'):
+            result = ensure_auto_worktree(
+                args.root,
+                result,
+                run_id=os.environ.get('WORKFLOW_RUN_ID'),
+                worktree_parent=args.worktree_parent,
+            )
     except (OSError, RuntimeError, subprocess.SubprocessError) as exc:
         print(f'FATAL: workflow freshness could not be verified ({type(exc).__name__}); resolve access/source availability before continuing.', file=sys.stderr)
         return 2

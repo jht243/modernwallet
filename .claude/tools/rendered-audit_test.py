@@ -363,4 +363,104 @@ class VolatileRenderRegions(unittest.TestCase):
   for extra in ['<p class="cr-card-intro">Unreviewed claim</p>','<div>Loose text</div>','<span>Stray</span>','Bare text']:
    with self.subTest(extra=extra),self.assertRaisesRegex(ValueError,'Visible text outside a link'):self.parse(self.rail().replace('</header>','</header>'+extra))
   with self.assertRaisesRegex(ValueError,'Visible text outside a link'):self.parse(self.rail().replace('<h2 class="cr-card-title">','<h2 class="cr-card-title"><div>x</div>'))
+
+
+class RelatedCardsLiveCompareTests(unittest.TestCase):
+ APPROVED_REL = (
+  '<div class="Pillar_pillar__related-wrap__qbcVo">'
+  '<div class="RelatedResources_related__t0w8B">'
+  '<h3 class="RelatedResources_related__title__eq30W">Related Resources</h3>'
+  '<div class="RelatedResources_related__grid__Pt53_">'
+  '<a class="RelatedResources_related__card__uJcZ0" href="/guides/email-tools">'
+  '<span class="RelatedResources_related__card-category__WY8_n">Guide</span>'
+  '<h4 class="RelatedResources_related__card-title__YuLza">Best Email Tools</h4>'
+  '<p class="RelatedResources_related__card-desc__SsbMI">Reviewed comparison of email tools.</p>'
+  '</a></div></div></div>'
+ )
+ LIVE_REL = (
+  '<div class="Pillar_pillar__related-wrap__qbcVo">'
+  '<div class="RelatedResources_related__t0w8B">'
+  '<h3 class="RelatedResources_related__title__eq30W">Related Resources</h3>'
+  '<div class="RelatedResources_related__grid__Pt53_">'
+  '<a class="RelatedResources_related__card__uJcZ0" href="/guides/email-tools">'
+  '<span class="RelatedResources_related__card-category__WY8_n">Guide</span>'
+  '<h4 class="RelatedResources_related__card-title__YuLza">Best Email Tools</h4>'
+  '<p class="RelatedResources_related__card-desc__SsbMI">Reviewed comparison of email tools.</p>'
+  '</a>'
+  '<a class="RelatedResources_related__card__uJcZ0 RelatedResources_related__card--hidden__x1" href="/guides/how-ai-email-automation-works">'
+  '<span class="RelatedResources_related__card-category__WY8_n">Guide</span>'
+  '<h4 class="RelatedResources_related__card-title__YuLza">How AI Email Automation Works</h4>'
+  '<p class="RelatedResources_related__card-desc__SsbMI">Concurrent routine sibling card.</p>'
+  '</a></div>'
+  '<button class="RelatedResources_related__more-btn__z9" type="button">See 1 more</button>'
+  '</div></div>'
+ )
+
+ def _build_snap(self, td, name, html_str, route=None):
+  import hashlib
+  from pathlib import Path
+  route = route or {'path': '/guide', 'forbiddenText': ['BannedVendor']}
+  res = a.parse(html_str, route, 'https://example.com', 'https://example.com')
+  html_path = Path(td) / f'{name}.html'
+  html_path.write_text(html_str)
+  res['htmlFile'] = str(html_path)
+  res['htmlSha256'] = hashlib.sha256(html_str.encode()).hexdigest()
+  res['textFile'] = ''
+  snap = {
+   'capturedAt': '2026-11-13T19:00:00+00:00',
+   'baseUrl': 'https://example.com',
+   'manifest': {'author': 'writer', 'canonicalBase': 'https://example.com', 'routes': [dict(route)]},
+   'routes': [res],
+  }
+  snap['snapshotSha256'] = a.digest(snap)
+  return snap
+
+ def test_related_cards_addition_passes_live_compare_while_preserving_audit_fingerprints(self):
+  import tempfile
+  with tempfile.TemporaryDirectory() as td:
+   approved_html = HTML.replace('</main>', '</main>' + self.APPROVED_REL)
+   live_html = HTML.replace('</main>', '</main>' + self.LIVE_REL)
+   approved = self._build_snap(td, 'approved', approved_html)
+   live = self._build_snap(td, 'live', live_html)
+   # Audit fingerprints remain 100% distinct (parse() is completely unchanged!)
+   self.assertNotEqual(approved['routes'][0]['fingerprint'], live['routes'][0]['fingerprint'])
+   review = {
+    'reviewer': 'independent-auditor',
+    'snapshotSha256': approved['snapshotSha256'],
+    'routes': [{
+     'path': '/guide',
+     'fingerprint': approved['routes'][0]['fingerprint'],
+     'verdict': 'PASS',
+     'checks': {k: {'status': 'PASS', 'evidence': 'Verified full-page audit evidence.'} for k in a.CHECKS},
+    }],
+   }
+   # Live compare succeeds because 100% of main editorial content, metadata, H1, and schema match!
+   a.compare(approved, live, review)
+
+   # Any 1-word edit in <main>, <h1>, <title>, or external/forbidden/loose text inside RelatedResources MUST fail!
+   edited_main = self._build_snap(td, 'live_edit_main', live_html.replace('Model guide</h1>', 'Altered guide</h1>'))
+   with self.assertRaisesRegex(ValueError, 'Rendered content differs'):
+    a.compare(approved, edited_main, review)
+
+   ext_link_rel = self.LIVE_REL.replace('href="/guides/how-ai-email-automation-works"', 'href="https://affiliate.example/deal"')
+   live_ext = self._build_snap(td, 'live_ext', HTML.replace('</main>', '</main>' + ext_link_rel))
+   with self.assertRaisesRegex(ValueError, 'Rendered content differs'):
+    a.compare(approved, live_ext, review)
+
+   loose_prose_rel = self.LIVE_REL.replace('</h3>', '</h3><p>Unreviewed prose paragraph outside link</p>')
+   live_loose = self._build_snap(td, 'live_loose', HTML.replace('</main>', '</main>' + loose_prose_rel))
+   with self.assertRaisesRegex(ValueError, 'Rendered content differs'):
+    a.compare(approved, live_loose, review)
+
+   banned_rel = self.LIVE_REL.replace('Concurrent routine sibling card.', 'Includes BannedVendor pitch.')
+   live_banned = self._build_snap(td, 'live_banned', HTML.replace('</main>', '</main>' + banned_rel))
+   with self.assertRaisesRegex(ValueError, 'Forbidden text: BannedVendor|Rendered content differs'):
+    a.compare(approved, live_banned, review)
+
+   tested_claim_rel = self.LIVE_REL.replace('Concurrent routine sibling card.', 'Tested and reviewed by our lab.')
+   live_tested_claim = self._build_snap(td, 'live_tested_claim', HTML.replace('</main>', '</main>' + tested_claim_rel))
+   with self.assertRaisesRegex(ValueError, 'Rendered content differs'):
+    a.compare(approved, live_tested_claim, review)
+
+
 if __name__=='__main__': unittest.main()

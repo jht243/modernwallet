@@ -269,5 +269,35 @@ done
             self.remote_tip(),
         )
 
+    def test_identical_untracked_review_evidence_collision_is_cleaned_before_rebase(self):
+        ev_rel = 'reports/content-review-evidence/fac7853e213bd811023de5e809d1b55d4308c009789f7b718d4ff34b23514f0a.json'
+        ev_body = '{"policy":"shared-frozen-evidence"}\n'
+        # Concurrent routine commits and pushes the identical content-addressed evidence file to main
+        self.write(ev_rel, ev_body, self.other)
+        self.commit(self.other, 'concurrent evidence freeze')
+        self.git(self.other, 'push', '-q', 'origin', 'main')
+
+        # Our run has its own commit AND an untracked byte-identical copy of that evidence file
+        self.own_change()
+        self.write(ev_rel, ev_body, self.work)
+        r = self.helper('push')
+        self.assertEqual(r.returncode, 0, msg=r.stdout + r.stderr)
+        self.assertEqual(self.git(self.remote, 'show', 'main:' + ev_rel).stdout, ev_body)
+        self.assertEqual((self.work / ev_rel).read_text(), ev_body)
+
+    def test_differing_untracked_review_evidence_collision_still_aborts_safely(self):
+        ev_rel = 'reports/content-review-evidence/deadbeef.json'
+        self.write(ev_rel, '{"main":1}\n', self.other)
+        self.commit(self.other, 'main evidence')
+        self.git(self.other, 'push', '-q', 'origin', 'main')
+        before = self.remote_tip()
+
+        self.own_change()
+        self.write(ev_rel, '{"local_different":2}\n', self.work)
+        r = self.helper('push', ok=False)
+        self.assertEqual(r.returncode, 3)
+        self.assertEqual(self.remote_tip(), before)
+        self.assertEqual((self.work / ev_rel).read_text(), '{"local_different":2}\n')
+
 
 if __name__=='__main__': unittest.main()
