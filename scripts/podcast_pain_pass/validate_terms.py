@@ -83,7 +83,44 @@ def main():
                     "volume_high": r.get("volume_high"),
                     "scored_volume": score_volume(r),
                     "theme": meta["theme"], "hub": HUBS.get(meta["theme"], "/")})
+    # PODCAST_VALIDATE_BATCH_CAP_V1 — filter already-covered slugs & cap per-run batch so >20 never holds
+    import re as _re
+    _ledger_path = ROOT / "reports" / "podcast-pain-pass" / "ledger.json"
+    _covered = set()
+    try:
+        if _ledger_path.is_file():
+            _ld = json.loads(_ledger_path.read_text() or "{}")
+            for _s in (_ld.get("shipped_slugs") or []):
+                if isinstance(_s, str) and _s.strip():
+                    _covered.add(_s.strip().strip("/").rsplit("/", 1)[-1].lower())
+    except Exception:
+        pass
+    for _gdir in ("src/content/guides", "src/content/posts", "content/guides", "content/posts"):
+        _gp = ROOT / _gdir
+        if _gp.is_dir():
+            for _f in _gp.glob("*.md*"):
+                _covered.add(_f.stem.lower())
+    def _term_covered(_phrase: str) -> bool:
+        _sl = _re.sub(r"[^a-z0-9]+", "-", (_phrase or "").lower()).strip("-")
+        if not _sl:
+            return False
+        if _sl in _covered:
+            return True
+        _dest = _re.sub(
+            r"(?:^(?:is-it-safe-to-travel-to-|is-it-safe-to-visit-|is-(?:the-)?)|-safe(?:-to-travel|-to-visit)?$)",
+            "",
+            _sl,
+        ).strip("-")
+        if _dest and _dest != _sl and not _sl.endswith("for-solo-female-travelers") and _dest in _covered:
+            return True
+        return False
+    out = [_row for _row in out if not _term_covered(_row.get("phrase", ""))]
     out.sort(key=lambda x: -x["scored_volume"])
+    _max_terms = max(1, int(os.environ.get("PODCAST_MAX_VALIDATED_TERMS", "10") or "10"))
+    if len(out) > _max_terms:
+        _overflow = out[_max_terms:]
+        out = out[:_max_terms]
+        (run / "validated_terms_overflow.json").write_text(json.dumps(_overflow, indent=1))
     (run / "validated_terms.json").write_text(json.dumps(out, indent=1))
     (run / "keyword_data_notes.json").write_text(json.dumps(notes(), indent=1))
     _src = {}

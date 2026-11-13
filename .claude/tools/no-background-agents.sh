@@ -74,7 +74,7 @@ if cloud and tool == "Bash" and bg is True:
         "(split very long work into several foreground calls).\n")
     sys.exit(2)
 LONG = re.compile(r"\b(?:pip3?|uv)\s+(?:install|sync)\b|\bpython3?\s+-m\s+(?:pip|venv)\b|prepare_preview\.py|rendered-audit\.py\s+capture-local|\b(?:npm|pnpm|yarn)\s+(?:ci|install)\b|content_gen\.py|/gen(_all)?\.sh|\bgen\.sh\b|humanize_intro\.py|npm run build|next build|"
-                  r"astro build|npx tsc|deploy-run-to-main\.sh\s+(?:push|verify)|land-run\.sh\s+(?:land|push|verify)|job_worker\.py\s+end-run|\bsleep\s+(1[2-9]\d|[2-9]\d\d|\d{4,})")
+                  r"astro build|npx tsc|deploy-run-to-main\.sh push|land-run\.sh\s+(?:land|push|verify)|job_worker\.py\s+end-run|\bsleep\s+(1[2-9]\d|[2-9]\d\d|\d{4,})")
 if cloud and tool == "Bash" and LONG.search(cmd) and (inp.get("timeout") or 0) < 600000:
     # Supply the existing required foreground timeout on the first call.
     # Preserve the exact command, background restriction and permission checks.
