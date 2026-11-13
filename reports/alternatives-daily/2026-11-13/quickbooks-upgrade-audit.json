@@ -1,0 +1,69 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "subject link",
+   "problem": "rendered HTML has no quickbooks.intuit.com link (likely unlink_pitched)",
+   "fix": "check renderer",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "It is not financial, tax or accounting advice.",
+   "problem": "disclaimer in intro",
+   "fix": "remove from intro",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "What should I use instead of QuickBooks? The products...",
+   "problem": "question-first opener",
+   "fix": "open with direct answer",
+   "hard_blocker": true
+  },
+  {
+   "id": "F4",
+   "quote": "unlimited receipt capture",
+   "problem": "Wave Pro: receipt capture is a paid add-on",
+   "fix": "correct to supported features",
+   "hard_blocker": true
+  },
+  {
+   "id": "F5",
+   "quote": "Check the current Pro card-fee terms...",
+   "problem": "unlinked directive; withholds published fact",
+   "fix": "state Wave Pro 10 free-fee txns then +$0.60; replace 'confirm at sign-up', 'the company'",
+   "hard_blocker": true
+  },
+  {
+   "id": "F6",
+   "quote": "FreshBooks features list",
+   "problem": "features not on cited pricing page",
+   "fix": "rewrite from pricing page",
+   "hard_blocker": true
+  },
+  {
+   "id": "F7",
+   "quote": "a firm that...",
+   "problem": "third-person register",
+   "fix": "use 'you'",
+   "hard_blocker": true
+  },
+  {
+   "id": "F8",
+   "quote": "promo wording",
+   "problem": "verified",
+   "fix": "none",
+   "hard_blocker": false
+  },
+  {
+   "id": "F9",
+   "quote": "sentence rhythm",
+   "problem": "borderline",
+   "fix": "vary",
+   "hard_blocker": false
+  }
+ ]
+}

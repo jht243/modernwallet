@@ -1,0 +1,129 @@
+{
+  "slug": "wise",
+  "product": "Wise",
+  "officialUrl": "https://wise.com/",
+  "title": "Wise Alternatives 2026: Transfer Fees and Features Compared",
+  "h1": "Wise Alternatives 2026: Transfer Fees and Features Compared",
+  "metaDescription": "Wise alternatives for international money transfers: how Remitly, Revolut, Western Union, Xoom and OFX publish fees, limits and delivery options, checked November 13, 2026.",
+  "published": "2026-11-13",
+  "updated": "2026-11-13",
+  "intro": "For sending money abroad, the most common choices instead of [Wise](https://wise.com/) are Remitly, Revolut, Western Union, Xoom and OFX, and the right Wise alternatives depend on whether the sender wants a bank-to-bank transfer, cash pickup, a mobile wallet or a business account. Wise publishes a percentage fee that starts at 0.23% and varies by currency; the other five publish fees inside their transfer flow, on separate pages, or in a plan table.\n\nThis page sets out what each provider says on its own website as of November 13, 2026, with fee arithmetic only where a provider publishes enough to compute it. Transfer fees and exchange rates change by corridor (the sending and receiving country pair) and by amount, so treat every figure here as a published starting point. This page lists products and does not give financial advice.",
+  "tableTitle": "Wise and Alternatives: How Fees Are Published",
+  "tableNote": "Prices from each provider's own website, checked November 13, 2026. Transfer fees vary by currency, amount and payment method.",
+  "rows": [
+    {
+      "product": "Wise",
+      "pricing": "Sending from 0.23% (varies by currency); account opening free; holding money free; Multi-Currency Card 9 USD one time; ATM withdrawals free up to 250 USD per calendar month, then 1.95 USD + 1.95%",
+      "bestFit": "Fits people who want a published percentage fee and a multi-currency account",
+      "subject": true
+    },
+    {
+      "product": "Remitly",
+      "pricing": "No fee amounts on its pricing page; fees are shown per corridor in the transfer flow; serves 170+ countries",
+      "bestFit": "Fits people sending money to family abroad"
+    },
+    {
+      "product": "Revolut",
+      "pricing": "No fee figure confirmed on November 13, 2026; vendor pricing page blocked automated access",
+      "bestFit": "Fits people who want a banking app with currency features"
+    },
+    {
+      "product": "Western Union",
+      "pricing": "No fee amounts on its home page; first-transfer offer of 0 USD transfer fee on eligible online transfers; exchange-rate margin also applies",
+      "bestFit": "Fits people who want cash pickup or bank delivery"
+    },
+    {
+      "product": "Xoom",
+      "pricing": "Fee shown with the recipient amount before you send; no fee amounts or limits on its home page",
+      "bestFit": "Fits people already using PayPal"
+    },
+    {
+      "product": "OFX",
+      "pricing": "Business plans: Standard 0 USD per user per month, Full Suite 75 USD per month; cross-border SWIFT payment 20 USD each; no minimum balance",
+      "bestFit": "Fits businesses and people who want an account with no minimum balance"
+    }
+  ],
+  "chooseSection": {
+    "heading": "How to Choose a Wise Alternative",
+    "body": "The cost of an international transfer has two parts: the fee the provider charges, and the gap between the exchange rate it applies and the mid-market rate, which is the midpoint between buy and sell prices on currency markets. A provider can show a low or zero fee and recover its margin in the rate, so a fee comparison alone is incomplete. Western Union says this itself on its home page, noting that it also earns money from currency exchange and that senders should compare both fees and exchange rates.\n\nThese criteria help sort the Wise alternatives on this page:\n\n- Delivery method. Bank deposit, cash pickup, mobile wallet and card delivery are priced and timed differently. Western Union and Xoom both list cash pickup; Wise and OFX are built around account-to-account payments.\n- Fee transparency. Wise states a percentage. Remitly, Xoom and Western Union show the amount only once a corridor, amount and payment method are entered. Compare the quote screens, not the marketing pages.\n- Payment method. Paying by credit card can trigger a cash advance fee and interest from the card issuer, which Western Union flags on its page. Bank transfers and debit cards usually avoid that.\n- Account needs. If you also want to hold balances, receive payments or spend abroad, the account features matter more than the single-transfer fee.\n- Personal or business use. OFX publishes business plan prices; the others discussed here are mostly consumer products.\n- Limits and verification. Providers set transfer limits and identity checks that depend on country and account history, and several do not publish limits on their public pages.\n\nA practical method is to request quotes from two or three providers for the same corridor, amount and payment method on the same day, then compare the amount the recipient receives. That figure includes both the fee and the rate. For wider context on comparing products on this site, see [Compare Products](/compare/), and for how pages here are researched, see the [methodology](/methodology/) page."
+  },
+  "alternatives": [
+    {
+      "heading": "Remitly",
+      "body": "Remitly is a money transfer service aimed at people sending money from the United States to family and others abroad. Its site says it serves customers in over 170 countries, and it lists currency pair pages such as US dollars to Mexican pesos or Indian rupees.\n\nIts pricing page and fees page do not list fee amounts. They point to a Rates and Fees resource, and they say exchange rates change frequently, sometimes many times a day. That means a cost cannot be worked out from the public pages alone, so no worked example is given here. The fee and the recipient amount appear in the transfer flow once a corridor and amount are entered.\n\nCompared with Wise, Remitly fits senders whose main need is a one-off transfer to a recipient abroad and who do not need a multi-currency balance. Where it falls short versus Wise on published detail: Wise states a percentage starting at 0.23% on its pricing page, while Remitly publishes no comparable starting figure on the pages checked. Fees vary by currency, amount and payment method, so the only reliable comparison is a live quote."
+    },
+    {
+      "heading": "Revolut",
+      "body": "Revolut is a banking app that combines everyday spending with currency exchange and international payments. It offers tiered plans, and the tier determines which currency and transfer features are included.\n\nOn November 13, 2026, Revolut's pricing pages returned an access-blocked response to automated requests, so no plan price, exchange allowance or transfer fee could be confirmed from the vendor's own site. No figure is stated here rather than carrying one from memory. A reader comparing Revolut to Wise should open the vendor's current plan table for their country, since plans and fees differ by region.\n\nRevolut fits people who want a single app for spending, saving and occasional currency exchange. Versus Wise, the difference is structural: Wise states that it has no subscriptions or plans and charges per transaction, while Revolut organizes its features by plan. Which model costs less depends on how often someone converts money and in what amounts, and that cannot be computed without the plan table."
+    },
+    {
+      "heading": "Western Union",
+      "body": "Western Union is a long-established money transfer company with delivery by cash pickup at agent locations, direct to bank accounts in other countries, and to mobile wallets in some countries. Its home page says many transfers may be available for pickup in minutes, depending on service type, destination and receiver method, and adds that funds may be delayed or services unavailable depending on amount, destination and agent hours.\n\nThe home page shows no fee amounts. It advertises a 0 USD transfer fee on a first online transfer, with a footnote that the reduction applies only to the transfer fee for a single transfer and cannot be combined with other promotions. The offer excludes transfers within the United States, credit card payments and Google Play purchases. The page also states that Western Union makes money from currency exchange, advises comparing fees and exchange rates, and warns that paying by credit card may bring a cash advance fee and interest from the card issuer. Its rewards program lists 100 points per online transfer, with 500 points worth up to 2 USD off transfer fees.\n\nIt fits people whose recipient needs cash in hand and has no bank account. Where it falls short versus Wise: a zero fee is not a zero cost, because the exchange rate is a separate charge, and Wise publishes a mid-market rate statement and a starting percentage that Western Union does not match with a public figure."
+    },
+    {
+      "heading": "Xoom",
+      "body": "Xoom is a PayPal service for sending money abroad. Its home page lists delivery to bank accounts and debit cards, mobile wallets including UPI (Unified Payments Interface) and PIX (the Brazilian instant payment system), cash pickup or delivery, and mobile phone reloads. It says it has served customers since 2001.\n\nXoom states: \"We'll show you the exact fee and the amount they'll receive before you hit send.\" It also states that fees and limitations apply, and links to a separate fees page. No fee amounts or transfer limits appear on the home page, so no worked cost example can be built from published data.\n\nXoom fits people who already have a PayPal relationship and want to see the fee and recipient amount up front on a quote screen. Versus Wise, it has no multi-currency account or card described on the pages checked, and it gives no starting percentage."
+    },
+    {
+      "heading": "OFX",
+      "body": "OFX is a foreign exchange (FX) and international payments company. Its home page says it has no minimum balance, supports 30+ currencies and payments to 180+ countries, and offers new personal customers an introductory rate across seven currencies (AUD, USD, SGD, GBP, NZD, EUR and CAD) on a first personal transfer, with terms and conditions applying.\n\nOFX is the only provider here with a published business price list. Its US business pricing page shows three tiers. Standard costs 0 USD per user per month and includes 20 domestic US dollar ACH (Automated Clearing House) payments per month. Full Suite costs 75 USD per month with five users included, then 10 USD per additional user per month, and includes 50 ACH payments. A third tier is custom. Both listed tiers charge a cross-border SWIFT (Society for Worldwide Interbank Financial Telecommunication) fee of 20 USD per transaction, a FedWIRE fee of 5 USD, 0.50 USD per ACH payment over the allowance, a 1.5% FX margin on international card payments, and service fees of 2.9% for paying by domestic card and 3.4% by international card. The 5 USD fee on receiving international funds is stated as waived for Standard and Full Suite clients from May 12, 2026.\n\nA worked example from those figures: a business sending three cross-border SWIFT payments in a month pays 60 USD in SWIFT fees (3 x 20 USD) on Standard, or 135 USD on Full Suite once the 75 USD subscription is added. The page does not state a margin for ordinary spot transfers, so the total cost of an actual payment cannot be computed from it.\n\nOFX fits businesses and frequent senders who want published plan prices and account-based payments. Versus Wise, the OFX page lists a flat 20 USD per SWIFT payment, which is a different structure from Wise's percentage, and no consumer fee table was found."
+    },
+    {
+      "heading": "Who This Is Not For",
+      "body": "This page is a list of published fee information, and it is a poor fit for some readers.\n\n- People who need an exact cost today. Every provider here quotes by corridor, amount and payment method, so a page cannot replace a live quote.\n- People weighing investment or tax questions. Currency conversion for a home purchase, an inheritance or a business tax bill can carry legal and tax consequences that a fee list does not address.\n- Readers looking for a ranking. The providers are listed side by side without a score, and the order of sections is not a recommendation.\n- Anyone who needs figures for Revolut. No Revolut fee figure was confirmed for this page, so its row and section should be read with that gap in mind.\n- Small-value senders comparing only headline fees. A 20 USD flat fee and a percentage fee behave very differently at 200 USD and at 20,000 USD, and the cheaper structure flips with the amount.\n\nFor adjacent comparisons on cash and accounts, the site's [best business bank accounts](/roundup/best-business-bank-accounts/) roundup and its guide to [international high-yield savings accounts](/guides/international-high-yield-savings-accounts/) cover products that hold money rather than move it."
+    },
+    {
+      "heading": "What Would Change Our Answer on Wise Alternatives",
+      "body": "The comparison above rests on pages as they read on November 13, 2026. Several things would change how these providers line up.\n\n- A provider publishing a fee table. If Remitly, Xoom or Western Union posted fixed or percentage fees by corridor, the worked examples missing above could be added.\n- A confirmed Revolut plan table. A readable pricing page would let the Revolut row carry real figures and a cost example.\n- A change in Wise's own pricing. Wise states that its sending fee starts at 0.23% and varies by currency; a different starting figure, or new fixed fees, would alter every comparison on this page.\n- A different corridor or amount. A 500 USD transfer to one country and a 50,000 USD transfer to another can reverse which structure is cheapest.\n- Vendor corrections. Providers can ask to update their row, and a corrected figure replaces the one shown.\n\nReaders who want a method for working through those cases can use the site's [freelancer accounting software roundup](/roundup/best-accounting-software-for-freelancers/) to see how recurring currency receipts fit into bookkeeping."
+    }
+  ],
+  "stillBetterFit": {
+    "heading": "When Wise Is Still the Better Fit",
+    "body": "On the pages checked, Wise is the one provider here that states a starting percentage for sending and converting money: from 0.23%, varying by currency. At that lowest published rate, converting 1,000 USD would carry a fee of 2.30 USD, and other currencies cost more. Fees vary by currency, amount and payment method, so that is an illustration of the starting figure and not a quote.\n\nWise also publishes the rest of its price list in one place. Registering an account is free, holding money is free, paying with the card is free, and the Multi-Currency Card costs 9 USD once with no subscription fee. ATM withdrawals are free up to 250 USD per calendar month, then cost 1.95 USD plus 1.95% per withdrawal; ATM operators may add their own fees. Receiving details are free in 22 currencies, domestic payments are free in AUD, CAD, EUR, GBP, HUF, NZD, PHP, SGD and USD, and a USD wire through SWIFT carries a fixed 6.11 USD fee per payment.\n\nIt is the stronger fit for people who value a stated percentage and one account that holds and spends several currencies. It is the weaker fit for a recipient who needs cash pickup, which Western Union and Xoom list and Wise's pricing page does not."
+  },
+  "verdict": "Wise states a starting percentage fee of 0.23% and a full account price list, while Remitly, Western Union and Xoom show fees only inside a quote, Revolut's figures could not be confirmed, and OFX publishes business plan prices, so the Wise alternatives here can be compared fairly only by requesting live quotes for the same corridor and amount.",
+  "faqs": [
+    {
+      "question": "What should I use instead of Wise?",
+      "answer": "The providers most often named as Wise alternatives are Remitly, Revolut, Western Union, Xoom and OFX. Which one fits depends on delivery method: Western Union and Xoom list cash pickup, Remitly focuses on transfers to family abroad, Revolut is a banking app with currency features, and OFX publishes business plan prices. Compare live quotes for your corridor, amount and payment method, because fees vary by currency, amount and payment method."
+    },
+    {
+      "question": "What are Wise's published fees?",
+      "answer": "As of November 13, 2026, Wise publishes sending and converting fees starting from 0.23%, varying by currency. Registering is free, holding money is free, the Multi-Currency Card costs 9 USD once, and ATM withdrawals are free up to 250 USD per calendar month, then 1.95 USD plus 1.95% per withdrawal."
+    },
+    {
+      "question": "Why do the alternatives not list fixed fees?",
+      "answer": "Remitly, Western Union and Xoom set fees by currency pair, amount and delivery method, and show them in the transfer flow or on separate pages. Their public pages carry no fee amounts, so this page does not estimate any."
+    },
+    {
+      "question": "Is a 0 USD transfer fee the same as a free transfer?",
+      "answer": "No. Western Union states on its home page that it also makes money from currency exchange and advises comparing both fees and exchange rates. The amount the recipient receives is the figure to compare."
+    },
+    {
+      "question": "Does OFX publish its fees?",
+      "answer": "For business accounts, yes. Its US business pricing page lists Standard at 0 USD per user per month and Full Suite at 75 USD per month, with a 20 USD fee per cross-border SWIFT payment. It states no margin for ordinary spot transfers on that page."
+    },
+    {
+      "question": "Does this page give financial advice?",
+      "answer": "No. It lists published fee information from each provider's own website and does not recommend a provider or rank them for a reader's situation."
+    }
+  ],
+  "related": [
+    {
+      "label": "Compare products",
+      "href": "/compare/"
+    },
+    {
+      "label": "Best business bank accounts",
+      "href": "/roundup/best-business-bank-accounts/"
+    },
+    {
+      "label": "International high-yield savings accounts",
+      "href": "/guides/international-high-yield-savings-accounts/"
+    },
+    {
+      "label": "Best accounting software for freelancers",
+      "href": "/roundup/best-accounting-software-for-freelancers/"
+    }
+  ]
+}

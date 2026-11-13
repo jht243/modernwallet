@@ -1,0 +1,32 @@
+[
+  {
+    "product": "Quicken",
+    "url": "https://www.quicken.com/",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "Monarch",
+    "url": "https://www.monarch.com/pricing",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "YNAB",
+    "url": "https://www.ynab.com/pricing",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "Copilot",
+    "url": "https://www.copilot.money/pricing",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "Empower",
+    "url": "https://www.empower.com/",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "Rocket Money",
+    "url": "https://www.rocketmoney.com/",
+    "checkedOn": "2026-11-13"
+  }
+]

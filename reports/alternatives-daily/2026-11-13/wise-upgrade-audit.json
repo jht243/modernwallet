@@ -1,0 +1,62 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "subject link",
+   "problem": "missing in render (likely unlink_pitched)",
+   "fix": "check",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "48-word first sentence",
+   "problem": "weak opener",
+   "fix": "short direct answer first",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "This page lists products and does not give financial advice.",
+   "problem": "disclaimer in intro",
+   "fix": "remove",
+   "hard_blocker": true
+  },
+  {
+   "id": "F4",
+   "quote": "Western Union offer exclusions",
+   "problem": "incomplete: also Quick Collect",
+   "fix": "add Quick Collect",
+   "hard_blocker": true
+  },
+  {
+   "id": "F5",
+   "quote": "6.11 USD SWIFT fee",
+   "problem": "is a receiving fee",
+   "fix": "reword",
+   "hard_blocker": true
+  },
+  {
+   "id": "F6",
+   "quote": "Revolut directive",
+   "problem": "unlinked directive",
+   "fix": "reword",
+   "hard_blocker": true
+  },
+  {
+   "id": "F7",
+   "quote": "Revolut cell process note",
+   "problem": "advisory",
+   "fix": "'Plan prices not confirmed on November 13, 2026'",
+   "hard_blocker": false
+  },
+  {
+   "id": "F8",
+   "quote": "FedWIRE",
+   "problem": "unexpanded",
+   "fix": "expand",
+   "hard_blocker": true
+  }
+ ]
+}

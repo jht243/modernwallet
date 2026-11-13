@@ -1,0 +1,42 @@
+[
+  {
+    "product": "Wise",
+    "url": "https://wise.com/us/pricing/",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "Remitly",
+    "url": "https://www.remitly.com/us/en/pricing",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "Remitly",
+    "url": "https://www.remitly.com/us/en/pricing/fees",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "Revolut",
+    "url": "https://www.revolut.com/en-US/our-pricing-plans/ (HTTP 403, unconfirmed)",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "Western Union",
+    "url": "https://www.westernunion.com/",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "Xoom",
+    "url": "https://www.xoom.com/",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "OFX",
+    "url": "https://www.ofx.com/en-us/",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "OFX",
+    "url": "https://www.ofx.com/en-us/business/pricing/",
+    "checkedOn": "2026-11-13"
+  }
+]

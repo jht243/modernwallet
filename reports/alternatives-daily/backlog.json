@@ -258,6 +258,11 @@
             "indexnow",
             "liveUrl"
           ]
+        },
+        {
+          "at": "2026-11-13T22:26:34+00:00",
+          "status": "published",
+          "note": "upgrade audit FAIL"
         }
       ],
       "status": "published",
@@ -323,7 +328,73 @@
       },
       "liveUrl": "https://www.themodernwallet.com/alternatives/wise/",
       "commit": "f1cf7d0",
-      "indexnow": "submitted"
+      "indexnow": "submitted",
+      "upgradeAudits": [
+        {
+          "reviewer": "audit-subagent",
+          "verdict": "FAIL",
+          "findings": [
+            {
+              "id": "F1",
+              "quote": "subject link",
+              "problem": "missing in render (likely unlink_pitched)",
+              "fix": "check",
+              "hard_blocker": true
+            },
+            {
+              "id": "F2",
+              "quote": "48-word first sentence",
+              "problem": "weak opener",
+              "fix": "short direct answer first",
+              "hard_blocker": true
+            },
+            {
+              "id": "F3",
+              "quote": "This page lists products and does not give financial advice.",
+              "problem": "disclaimer in intro",
+              "fix": "remove",
+              "hard_blocker": true
+            },
+            {
+              "id": "F4",
+              "quote": "Western Union offer exclusions",
+              "problem": "incomplete: also Quick Collect",
+              "fix": "add Quick Collect",
+              "hard_blocker": true
+            },
+            {
+              "id": "F5",
+              "quote": "6.11 USD SWIFT fee",
+              "problem": "is a receiving fee",
+              "fix": "reword",
+              "hard_blocker": true
+            },
+            {
+              "id": "F6",
+              "quote": "Revolut directive",
+              "problem": "unlinked directive",
+              "fix": "reword",
+              "hard_blocker": true
+            },
+            {
+              "id": "F7",
+              "quote": "Revolut cell process note",
+              "problem": "advisory",
+              "fix": "'Plan prices not confirmed on November 13, 2026'",
+              "hard_blocker": false
+            },
+            {
+              "id": "F8",
+              "quote": "FedWIRE",
+              "problem": "unexpanded",
+              "fix": "expand",
+              "hard_blocker": true
+            }
+          ],
+          "kind": "seo-upgrade",
+          "recordedAt": "2026-11-13T22:26:34+00:00"
+        }
+      ]
     },
     {
       "vendor": "Quicken",
@@ -380,6 +451,11 @@
             "indexnow",
             "liveUrl"
           ]
+        },
+        {
+          "at": "2026-11-13T22:26:34+00:00",
+          "status": "published",
+          "note": "upgrade audit FAIL"
         }
       ],
       "status": "published",
@@ -431,7 +507,87 @@
       },
       "liveUrl": "https://www.themodernwallet.com/alternatives/quicken/",
       "commit": "f1cf7d0",
-      "indexnow": "submitted"
+      "indexnow": "submitted",
+      "upgradeAudits": [
+        {
+          "reviewer": "audit-subagent",
+          "verdict": "FAIL",
+          "findings": [
+            {
+              "id": "F1",
+              "quote": "subject link",
+              "problem": "missing in render (likely unlink_pitched)",
+              "fix": "check",
+              "hard_blocker": true
+            },
+            {
+              "id": "F2",
+              "quote": "not financial or investment advice (intro)",
+              "problem": "disclaimer in intro",
+              "fix": "remove",
+              "hard_blocker": true
+            },
+            {
+              "id": "F3",
+              "quote": "What should you use instead of Quicken? ...",
+              "problem": "question opener",
+              "fix": "answer first",
+              "hard_blocker": true
+            },
+            {
+              "id": "F4",
+              "quote": "neutral checks, not a ranking",
+              "problem": "self-asserted neutrality",
+              "fix": "'checks to run on any provider, not a ranking'",
+              "hard_blocker": true
+            },
+            {
+              "id": "F5",
+              "quote": "sharing up to six vs five",
+              "problem": "YNAB sharing wording",
+              "fix": "say FAQ says up to six",
+              "hard_blocker": false
+            },
+            {
+              "id": "F6",
+              "quote": "quote-based",
+              "problem": "Rocket Money/Empower not described as quote-based",
+              "fix": "'Not published on the page checked'",
+              "hard_blocker": false
+            },
+            {
+              "id": "F7",
+              "quote": "Rocket Money Free feature list",
+              "problem": "unsupported items",
+              "fix": "use page wording",
+              "hard_blocker": false
+            },
+            {
+              "id": "F8",
+              "quote": "Monarch household sharing",
+              "problem": "unsupported",
+              "fix": "remove",
+              "hard_blocker": false
+            },
+            {
+              "id": "F9",
+              "quote": "Simplifi price wording",
+              "problem": "FAQ too definitive; Classic Starter excluded",
+              "fix": "qualify",
+              "hard_blocker": false
+            },
+            {
+              "id": "F10",
+              "quote": "US/UK/EU/FAQ",
+              "problem": "acronyms",
+              "fix": "expand",
+              "hard_blocker": false
+            }
+          ],
+          "kind": "seo-upgrade",
+          "recordedAt": "2026-11-13T22:26:34+00:00"
+        }
+      ]
     },
     {
       "vendor": "Monarch Money",
@@ -513,6 +669,11 @@
             "indexnow",
             "liveUrl"
           ]
+        },
+        {
+          "at": "2026-11-13T22:26:34+00:00",
+          "status": "published",
+          "note": "upgrade audit FAIL"
         }
       ],
       "status": "published",
@@ -564,7 +725,80 @@
       },
       "liveUrl": "https://www.themodernwallet.com/alternatives/quickbooks/",
       "commit": "f1cf7d0",
-      "indexnow": "submitted"
+      "indexnow": "submitted",
+      "upgradeAudits": [
+        {
+          "reviewer": "audit-subagent",
+          "verdict": "FAIL",
+          "findings": [
+            {
+              "id": "F1",
+              "quote": "subject link",
+              "problem": "rendered HTML has no quickbooks.intuit.com link (likely unlink_pitched)",
+              "fix": "check renderer",
+              "hard_blocker": true
+            },
+            {
+              "id": "F2",
+              "quote": "It is not financial, tax or accounting advice.",
+              "problem": "disclaimer in intro",
+              "fix": "remove from intro",
+              "hard_blocker": true
+            },
+            {
+              "id": "F3",
+              "quote": "What should I use instead of QuickBooks? The products...",
+              "problem": "question-first opener",
+              "fix": "open with direct answer",
+              "hard_blocker": true
+            },
+            {
+              "id": "F4",
+              "quote": "unlimited receipt capture",
+              "problem": "Wave Pro: receipt capture is a paid add-on",
+              "fix": "correct to supported features",
+              "hard_blocker": true
+            },
+            {
+              "id": "F5",
+              "quote": "Check the current Pro card-fee terms...",
+              "problem": "unlinked directive; withholds published fact",
+              "fix": "state Wave Pro 10 free-fee txns then +$0.60; replace 'confirm at sign-up', 'the company'",
+              "hard_blocker": true
+            },
+            {
+              "id": "F6",
+              "quote": "FreshBooks features list",
+              "problem": "features not on cited pricing page",
+              "fix": "rewrite from pricing page",
+              "hard_blocker": true
+            },
+            {
+              "id": "F7",
+              "quote": "a firm that...",
+              "problem": "third-person register",
+              "fix": "use 'you'",
+              "hard_blocker": true
+            },
+            {
+              "id": "F8",
+              "quote": "promo wording",
+              "problem": "verified",
+              "fix": "none",
+              "hard_blocker": false
+            },
+            {
+              "id": "F9",
+              "quote": "sentence rhythm",
+              "problem": "borderline",
+              "fix": "vary",
+              "hard_blocker": false
+            }
+          ],
+          "kind": "seo-upgrade",
+          "recordedAt": "2026-11-13T22:26:34+00:00"
+        }
+      ]
     },
     {
       "vendor": "FreshBooks",

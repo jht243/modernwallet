@@ -1,0 +1,76 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "subject link",
+   "problem": "missing in render (likely unlink_pitched)",
+   "fix": "check",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "not financial or investment advice (intro)",
+   "problem": "disclaimer in intro",
+   "fix": "remove",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "What should you use instead of Quicken? ...",
+   "problem": "question opener",
+   "fix": "answer first",
+   "hard_blocker": true
+  },
+  {
+   "id": "F4",
+   "quote": "neutral checks, not a ranking",
+   "problem": "self-asserted neutrality",
+   "fix": "'checks to run on any provider, not a ranking'",
+   "hard_blocker": true
+  },
+  {
+   "id": "F5",
+   "quote": "sharing up to six vs five",
+   "problem": "YNAB sharing wording",
+   "fix": "say FAQ says up to six",
+   "hard_blocker": false
+  },
+  {
+   "id": "F6",
+   "quote": "quote-based",
+   "problem": "Rocket Money/Empower not described as quote-based",
+   "fix": "'Not published on the page checked'",
+   "hard_blocker": false
+  },
+  {
+   "id": "F7",
+   "quote": "Rocket Money Free feature list",
+   "problem": "unsupported items",
+   "fix": "use page wording",
+   "hard_blocker": false
+  },
+  {
+   "id": "F8",
+   "quote": "Monarch household sharing",
+   "problem": "unsupported",
+   "fix": "remove",
+   "hard_blocker": false
+  },
+  {
+   "id": "F9",
+   "quote": "Simplifi price wording",
+   "problem": "FAQ too definitive; Classic Starter excluded",
+   "fix": "qualify",
+   "hard_blocker": false
+  },
+  {
+   "id": "F10",
+   "quote": "US/UK/EU/FAQ",
+   "problem": "acronyms",
+   "fix": "expand",
+   "hard_blocker": false
+  }
+ ]
+}

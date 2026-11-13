@@ -1,0 +1,32 @@
+[
+  {
+    "product": "QuickBooks Online",
+    "url": "https://quickbooks.intuit.com/pricing/",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "FreshBooks",
+    "url": "https://www.freshbooks.com/pricing",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "Xero",
+    "url": "https://www.xero.com/us/pricing-plans/",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "Zoho Books",
+    "url": "https://www.zoho.com/us/books/pricing/",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "Wave",
+    "url": "https://www.waveapps.com/pricing",
+    "checkedOn": "2026-11-13"
+  },
+  {
+    "product": "Zoho Invoice",
+    "url": "https://www.zoho.com/us/invoice/pricing/",
+    "checkedOn": "2026-11-13"
+  }
+]
