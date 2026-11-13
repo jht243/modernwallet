@@ -1,0 +1,8 @@
+{
+  "status": "FAIL",
+  "exit_code": 12,
+  "error": "429 from https://analyticsdata.googleapis.com/v1beta/properties/543459487:runReport: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+  "site": "sc-domain:themodernwallet.com",
+  "generated_at": "2026-11-13T17:06:47.931643+00:00",
+  "rule": "Google first-party data unavailable \u2014 run must stop. No fallback source is permitted."
+}
