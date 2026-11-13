@@ -139,7 +139,7 @@ Commit `reports/alternatives-daily/` (backlog + receipts) and push with the depl
 
 **7b. Upgrade pass (owner rule 2026-11-14) — ALWAYS run this step, including on a no-op day.**
 Pages this routine published before the full SEO
-standard existed may be thin. Take up to 3 rows with `status: published` and no `seoUpgraded` field, oldest first, and bring each
+standard existed may be thin. Take the `upgradeQueue` rows from `backlog.py next` (published, no `seoUpgraded`, oldest first, up to 3), and bring each
 page up to page rule 5 in place (same URL, slug and title start; refresh prices from each
 vendor's site). Give each upgraded page ONE audit as in step 4 and record it with
 `backlog.py audit --id <id> --file <file> --upgrade`, fix the findings, publish and live-check as in
@@ -150,7 +150,9 @@ gets marked with that `set` command (no rewrite, no audit). Commit and push the 
 
 **8. Report** through the routine prompt's central reporting: pages published with links, rows
 held/excluded and why, pages upgraded in step 7b (with body word counts), audit verdicts and how many findings were fixed, IndexNow result, backlog
-counts, commit SHAs. Before finishing, confirm this run's commits are on `origin/main`.
+counts, commit SHAs. Before reporting, run `backlog.py status`: if `upgradePending` still lists
+rows that this run did not try in step 7b, go back and do step 7b for them first (up to 3 per run).
+Before finishing, confirm this run's commits are on `origin/main`.
 
 Never reset a row, delete history, or re-audit a page. A page is `published` only after the live
 check passes.
