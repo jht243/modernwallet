@@ -1,0 +1,41 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "intro link",
+   "problem": "Official link absent in built output; subject is on the outreach pitched list so unlink_pitched unwraps it (site rule 2026-10-15)",
+   "fix": "None; accepted per site adapter",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "unlimited users on tiered plans",
+   "problem": "Xero publishes 'no per-user license fees', not a user count",
+   "fix": "Reword",
+   "hard_blocker": false
+  },
+  {
+   "id": "F3",
+   "quote": "2.9% + $0.60 on Starter",
+   "problem": "Amex 3.4% + $0.60 omitted",
+   "fix": "Add Amex rate",
+   "hard_blocker": false
+  },
+  {
+   "id": "F4",
+   "quote": "verdict free plans",
+   "problem": "QuickBooks also has a free plan",
+   "fix": "Mention it",
+   "hard_blocker": false
+  },
+  {
+   "id": "F5",
+   "quote": "Standard to Ultimate",
+   "problem": "Elite/Ultimate absent from table",
+   "fix": "Optional",
+   "hard_blocker": false
+  }
+ ]
+}

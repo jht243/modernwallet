@@ -1,0 +1,394 @@
+[
+ {
+  "vendor": "Chime",
+  "product": "Chime",
+  "officialUrl": "https://www.chime.com/",
+  "targetQuery": "chime alternatives",
+  "demand": {
+   "volume": 260,
+   "kd": "12",
+   "source": "semrush"
+  },
+  "category": "banking",
+  "priority": 260,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "YNAB",
+  "product": "YNAB",
+  "officialUrl": "https://www.ynab.com/pricing",
+  "targetQuery": "ynab alternatives",
+  "demand": {
+   "volume": 170,
+   "kd": "13",
+   "source": "semrush"
+  },
+  "category": "budgeting",
+  "priority": 170,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Acorns",
+  "product": "Acorns",
+  "officialUrl": "https://www.acorns.com/pricing/",
+  "targetQuery": "acorns alternatives",
+  "demand": {
+   "volume": 50,
+   "kd": "16",
+   "source": "semrush"
+  },
+  "category": "investing",
+  "priority": 50,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Betterment",
+  "product": "Betterment",
+  "officialUrl": "https://www.betterment.com/pricing",
+  "targetQuery": "betterment alternatives",
+  "demand": {
+   "volume": 40,
+   "kd": "29",
+   "source": "semrush"
+  },
+  "category": "robo-advisor",
+  "priority": 40,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Wealthfront",
+  "product": "Wealthfront",
+  "officialUrl": "https://www.wealthfront.com/",
+  "targetQuery": "wealthfront alternatives",
+  "demand": {
+   "volume": 110,
+   "kd": "21",
+   "source": "semrush"
+  },
+  "category": "robo-advisor",
+  "priority": 110,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Robinhood",
+  "product": "Robinhood",
+  "officialUrl": "https://robinhood.com/us/en/support/articles/robinhood-gold/",
+  "targetQuery": "robinhood alternatives",
+  "demand": {
+   "volume": 590,
+   "kd": "33",
+   "source": "semrush"
+  },
+  "category": "brokerage",
+  "priority": 590,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Cash App",
+  "product": "Cash App",
+  "officialUrl": "https://cash.app/",
+  "targetQuery": "cash app alternatives",
+  "demand": {
+   "volume": 320,
+   "kd": "18",
+   "source": "semrush"
+  },
+  "category": "payments",
+  "priority": 320,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Venmo",
+  "product": "Venmo",
+  "officialUrl": "https://venmo.com/",
+  "targetQuery": "venmo alternatives",
+  "demand": {
+   "volume": 480,
+   "kd": "42",
+   "source": "semrush"
+  },
+  "category": "payments",
+  "priority": 480,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Wise",
+  "product": "Wise",
+  "officialUrl": "https://wise.com/pricing/",
+  "targetQuery": "wise alternatives",
+  "demand": {
+   "volume": 590,
+   "kd": "14",
+   "source": "semrush"
+  },
+  "category": "money transfer",
+  "priority": 590,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Quicken",
+  "product": "Quicken",
+  "officialUrl": "https://www.quicken.com/products/",
+  "targetQuery": "quicken alternatives",
+  "demand": {
+   "volume": 590,
+   "kd": "16",
+   "source": "semrush"
+  },
+  "category": "budgeting",
+  "priority": 590,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Monarch Money",
+  "product": "Monarch Money",
+  "officialUrl": "https://www.monarchmoney.com/pricing",
+  "targetQuery": "monarch money alternatives",
+  "demand": {
+   "volume": 210,
+   "kd": "3",
+   "source": "semrush"
+  },
+  "category": "budgeting",
+  "priority": 210,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "QuickBooks",
+  "product": "QuickBooks",
+  "officialUrl": "https://quickbooks.intuit.com/pricing/",
+  "targetQuery": "quickbooks alternatives",
+  "demand": {
+   "volume": 3600,
+   "kd": "11",
+   "source": "semrush"
+  },
+  "category": "accounting",
+  "priority": 3600,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "FreshBooks",
+  "product": "FreshBooks",
+  "officialUrl": "https://www.freshbooks.com/pricing",
+  "targetQuery": "freshbooks alternatives",
+  "demand": {
+   "volume": 320,
+   "kd": "21",
+   "source": "semrush"
+  },
+  "category": "invoicing",
+  "priority": 320,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Wave",
+  "product": "Wave",
+  "officialUrl": "https://www.waveapps.com/pricing",
+  "targetQuery": "wave alternatives",
+  "demand": {
+   "volume": 50,
+   "kd": "13",
+   "source": "semrush"
+  },
+  "category": "accounting",
+  "priority": 50,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "TurboTax",
+  "product": "TurboTax",
+  "officialUrl": "https://turbotax.intuit.com/personal-taxes/online/",
+  "targetQuery": "turbotax alternatives",
+  "demand": {
+   "volume": 720,
+   "kd": "39",
+   "source": "semrush"
+  },
+  "category": "tax software",
+  "priority": 720,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Credit Karma",
+  "product": "Credit Karma",
+  "officialUrl": "https://www.creditkarma.com/",
+  "targetQuery": "credit karma alternatives",
+  "demand": {
+   "volume": 170,
+   "kd": "22",
+   "source": "semrush"
+  },
+  "category": "credit",
+  "priority": 170,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "SoFi",
+  "product": "SoFi",
+  "officialUrl": "https://www.sofi.com/",
+  "targetQuery": "sofi alternatives",
+  "demand": {
+   "volume": 110,
+   "kd": "21",
+   "source": "semrush"
+  },
+  "category": "banking",
+  "priority": 110,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Ally Bank",
+  "product": "Ally Bank",
+  "officialUrl": "https://www.ally.com/bank/",
+  "targetQuery": "ally bank alternatives",
+  "demand": {
+   "volume": 50,
+   "kd": "0",
+   "source": "semrush"
+  },
+  "category": "banking",
+  "priority": 50,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Stash",
+  "product": "Stash",
+  "officialUrl": "https://www.stash.com/pricing",
+  "targetQuery": "stash alternatives",
+  "demand": {
+   "volume": 30,
+   "kd": "0",
+   "source": "semrush"
+  },
+  "category": "investing",
+  "priority": 30,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Dave",
+  "product": "Dave",
+  "officialUrl": "https://dave.com/",
+  "targetQuery": "dave alternatives",
+  "demand": {
+   "volume": 70,
+   "kd": "39",
+   "source": "semrush"
+  },
+  "category": "banking",
+  "priority": 70,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Albert",
+  "product": "Albert",
+  "officialUrl": "https://albert.com/",
+  "targetQuery": "albert alternatives",
+  "demand": {
+   "volume": 20,
+   "kd": "0",
+   "source": "semrush"
+  },
+  "category": "banking",
+  "priority": 20,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Rocket Money",
+  "product": "Rocket Money",
+  "officialUrl": "https://www.rocketmoney.com/",
+  "targetQuery": "rocket money alternatives",
+  "demand": {
+   "volume": 320,
+   "kd": "12",
+   "source": "semrush"
+  },
+  "category": "subscription tracking",
+  "priority": 320,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Empower",
+  "product": "Empower",
+  "officialUrl": "https://www.empower.com/",
+  "targetQuery": "empower alternatives",
+  "demand": {
+   "volume": 90,
+   "kd": "12",
+   "source": "semrush"
+  },
+  "category": "net worth",
+  "priority": 90,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "LegalZoom",
+  "product": "LegalZoom",
+  "officialUrl": "https://www.legalzoom.com/",
+  "targetQuery": "legalzoom alternatives",
+  "demand": {
+   "volume": 260,
+   "kd": "7",
+   "source": "semrush"
+  },
+  "category": "estate planning",
+  "priority": 260,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "MileIQ",
+  "product": "MileIQ",
+  "officialUrl": "https://www.mileiq.com/pricing",
+  "targetQuery": "mileiq alternatives",
+  "demand": {
+   "volume": 20,
+   "kd": "0",
+   "source": "semrush"
+  },
+  "category": "mileage",
+  "priority": 20,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Bluevine",
+  "product": "Bluevine",
+  "officialUrl": "https://www.bluevine.com/",
+  "targetQuery": "bluevine alternatives",
+  "demand": {
+   "volume": 70,
+   "kd": "12",
+   "source": "semrush"
+  },
+  "category": "business banking",
+  "priority": 70,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Novo",
+  "product": "Novo",
+  "officialUrl": "https://www.novo.co/",
+  "targetQuery": "novo alternatives",
+  "demand": {
+   "volume": 20,
+   "kd": "0",
+   "source": "semrush"
+  },
+  "category": "business banking",
+  "priority": 20,
+  "source": "discovery 2026-11-13"
+ },
+ {
+  "vendor": "Mercury",
+  "product": "Mercury",
+  "officialUrl": "https://mercury.com/",
+  "targetQuery": "mercury alternatives",
+  "demand": {
+   "volume": 90,
+   "kd": "18",
+   "source": "semrush"
+  },
+  "category": "business banking",
+  "priority": 90,
+  "source": "discovery 2026-11-13"
+ }
+]

@@ -2,5 +2,969 @@
   "version": 1,
   "timezone": "America/Bogota",
   "dailyCap": 3,
-  "rows": []
+  "rows": [
+    {
+      "vendor": "Chime",
+      "product": "Chime",
+      "officialUrl": "https://www.chime.com/",
+      "targetQuery": "chime alternatives",
+      "demand": {
+        "volume": 260,
+        "kd": "12",
+        "source": "semrush"
+      },
+      "category": "banking",
+      "priority": 260,
+      "source": "discovery 2026-11-13",
+      "id": "alt-chime-com",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "YNAB",
+      "product": "YNAB",
+      "officialUrl": "https://www.ynab.com/pricing",
+      "targetQuery": "ynab alternatives",
+      "demand": {
+        "volume": 170,
+        "kd": "13",
+        "source": "semrush"
+      },
+      "category": "budgeting",
+      "priority": 170,
+      "source": "discovery 2026-11-13",
+      "id": "alt-ynab-com-pricing",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Acorns",
+      "product": "Acorns",
+      "officialUrl": "https://www.acorns.com/pricing/",
+      "targetQuery": "acorns alternatives",
+      "demand": {
+        "volume": 50,
+        "kd": "16",
+        "source": "semrush"
+      },
+      "category": "investing",
+      "priority": 50,
+      "source": "discovery 2026-11-13",
+      "id": "alt-acorns-com-pricing",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Betterment",
+      "product": "Betterment",
+      "officialUrl": "https://www.betterment.com/pricing",
+      "targetQuery": "betterment alternatives",
+      "demand": {
+        "volume": 40,
+        "kd": "29",
+        "source": "semrush"
+      },
+      "category": "robo-advisor",
+      "priority": 40,
+      "source": "discovery 2026-11-13",
+      "id": "alt-betterment-com-pricing",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Wealthfront",
+      "product": "Wealthfront",
+      "officialUrl": "https://www.wealthfront.com/",
+      "targetQuery": "wealthfront alternatives",
+      "demand": {
+        "volume": 110,
+        "kd": "21",
+        "source": "semrush"
+      },
+      "category": "robo-advisor",
+      "priority": 110,
+      "source": "discovery 2026-11-13",
+      "id": "alt-wealthfront-com",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Robinhood",
+      "product": "Robinhood",
+      "officialUrl": "https://robinhood.com/us/en/support/articles/robinhood-gold/",
+      "targetQuery": "robinhood alternatives",
+      "demand": {
+        "volume": 590,
+        "kd": "33",
+        "source": "semrush"
+      },
+      "category": "brokerage",
+      "priority": 590,
+      "source": "discovery 2026-11-13",
+      "id": "alt-robinhood-com-us-en-support-articles-robinhood-gold",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Cash App",
+      "product": "Cash App",
+      "officialUrl": "https://cash.app/",
+      "targetQuery": "cash app alternatives",
+      "demand": {
+        "volume": 320,
+        "kd": "18",
+        "source": "semrush"
+      },
+      "category": "payments",
+      "priority": 320,
+      "source": "discovery 2026-11-13",
+      "id": "alt-cash-app",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Venmo",
+      "product": "Venmo",
+      "officialUrl": "https://venmo.com/",
+      "targetQuery": "venmo alternatives",
+      "demand": {
+        "volume": 480,
+        "kd": "42",
+        "source": "semrush"
+      },
+      "category": "payments",
+      "priority": 480,
+      "source": "discovery 2026-11-13",
+      "id": "alt-venmo-com",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Wise",
+      "product": "Wise",
+      "officialUrl": "https://wise.com/pricing/",
+      "targetQuery": "wise alternatives",
+      "demand": {
+        "volume": 590,
+        "kd": "14",
+        "source": "semrush"
+      },
+      "category": "money transfer",
+      "priority": 590,
+      "source": "discovery 2026-11-13",
+      "id": "alt-wise-com-pricing",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-13T22:00:19+00:00",
+          "status": "eligible",
+          "note": "qualified: no existing page",
+          "fields": []
+        },
+        {
+          "at": "2026-11-13T22:00:19+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-13"
+        },
+        {
+          "at": "2026-11-13T22:01:55+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-13T22:04:51+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-13T22:07:53+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "commit",
+            "indexnow",
+            "liveUrl"
+          ]
+        }
+      ],
+      "status": "published",
+      "updatedAt": "2026-11-13T22:07:53+00:00",
+      "claimedOn": "2026-11-13",
+      "writer": "main",
+      "slug": "wise",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Remitly fees at checkout",
+            "problem": "Not stated on pricing page",
+            "fix": "Reword",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Western Union before sending",
+            "problem": "Not stated on home page",
+            "fix": "Remove",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Revolut",
+            "problem": "Unverifiable (403)",
+            "fix": "Soften",
+            "hard_blocker": false
+          },
+          {
+            "id": "F4",
+            "quote": "OFX",
+            "problem": "Pricing page unread; 'larger transfers' unsupported",
+            "fix": "Soften",
+            "hard_blocker": false
+          },
+          {
+            "id": "F5",
+            "quote": "intro link",
+            "problem": "Absent due to pitched-list unlink",
+            "fix": "None; accepted per adapter",
+            "hard_blocker": true
+          },
+          {
+            "id": "F6",
+            "quote": "H1 'and Plans'",
+            "problem": "Mismatch",
+            "fix": "Drop",
+            "hard_blocker": false
+          },
+          {
+            "id": "F7",
+            "quote": "verdict most fee detail",
+            "problem": "Comparative unverified",
+            "fix": "Soften",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-13T22:04:51+00:00"
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/wise/",
+      "commit": "f1cf7d0",
+      "indexnow": "submitted"
+    },
+    {
+      "vendor": "Quicken",
+      "product": "Quicken",
+      "officialUrl": "https://www.quicken.com/products/",
+      "targetQuery": "quicken alternatives",
+      "demand": {
+        "volume": 590,
+        "kd": "16",
+        "source": "semrush"
+      },
+      "category": "budgeting",
+      "priority": 590,
+      "source": "discovery 2026-11-13",
+      "id": "alt-quicken-com-products",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-13T22:00:19+00:00",
+          "status": "eligible",
+          "note": "qualified: no existing page",
+          "fields": []
+        },
+        {
+          "at": "2026-11-13T22:00:19+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-13"
+        },
+        {
+          "at": "2026-11-13T22:01:55+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-13T22:04:51+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-13T22:07:53+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "commit",
+            "indexnow",
+            "liveUrl"
+          ]
+        }
+      ],
+      "status": "published",
+      "updatedAt": "2026-11-13T22:07:53+00:00",
+      "claimedOn": "2026-11-13",
+      "writer": "main",
+      "slug": "quicken",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "intro link",
+            "problem": "Official link absent in built output (pitched-list unlink)",
+            "fix": "None; accepted per adapter",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "$3.99 to $6.99 per month",
+            "problem": "Reads as range; offer is time-limited",
+            "fix": "Reword",
+            "hard_blocker": false
+          },
+          {
+            "id": "F3",
+            "quote": "Monarch prices",
+            "problem": "Plan name (Core/Plus) not attributed",
+            "fix": "Add caveat",
+            "hard_blocker": false
+          },
+          {
+            "id": "F6",
+            "quote": "free-to-use dashboards / Rocket Money app flow / Empower",
+            "problem": "Unsupported inference",
+            "fix": "Reword",
+            "hard_blocker": false
+          },
+          {
+            "id": "F7",
+            "quote": "cost basis and cash-flow projections",
+            "problem": "Unverified for Classic",
+            "fix": "Soften",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-13T22:04:51+00:00"
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/quicken/",
+      "commit": "f1cf7d0",
+      "indexnow": "submitted"
+    },
+    {
+      "vendor": "Monarch Money",
+      "product": "Monarch Money",
+      "officialUrl": "https://www.monarchmoney.com/pricing",
+      "targetQuery": "monarch money alternatives",
+      "demand": {
+        "volume": 210,
+        "kd": "3",
+        "source": "semrush"
+      },
+      "category": "budgeting",
+      "priority": 210,
+      "source": "discovery 2026-11-13",
+      "id": "alt-monarchmoney-com-pricing",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "QuickBooks",
+      "product": "QuickBooks",
+      "officialUrl": "https://quickbooks.intuit.com/pricing/",
+      "targetQuery": "quickbooks alternatives",
+      "demand": {
+        "volume": 3600,
+        "kd": "11",
+        "source": "semrush"
+      },
+      "category": "accounting",
+      "priority": 3600,
+      "source": "discovery 2026-11-13",
+      "id": "alt-quickbooks-intuit-com-pricing",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-13T22:00:19+00:00",
+          "status": "eligible",
+          "note": "qualified: no existing page",
+          "fields": []
+        },
+        {
+          "at": "2026-11-13T22:00:19+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-13"
+        },
+        {
+          "at": "2026-11-13T22:01:55+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-13T22:04:51+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-13T22:07:53+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "commit",
+            "indexnow",
+            "liveUrl"
+          ]
+        }
+      ],
+      "status": "published",
+      "updatedAt": "2026-11-13T22:07:53+00:00",
+      "claimedOn": "2026-11-13",
+      "writer": "main",
+      "slug": "quickbooks",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "intro link",
+            "problem": "Official link absent in built output; subject is on the outreach pitched list so unlink_pitched unwraps it (site rule 2026-10-15)",
+            "fix": "None; accepted per site adapter",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "unlimited users on tiered plans",
+            "problem": "Xero publishes 'no per-user license fees', not a user count",
+            "fix": "Reword",
+            "hard_blocker": false
+          },
+          {
+            "id": "F3",
+            "quote": "2.9% + $0.60 on Starter",
+            "problem": "Amex 3.4% + $0.60 omitted",
+            "fix": "Add Amex rate",
+            "hard_blocker": false
+          },
+          {
+            "id": "F4",
+            "quote": "verdict free plans",
+            "problem": "QuickBooks also has a free plan",
+            "fix": "Mention it",
+            "hard_blocker": false
+          },
+          {
+            "id": "F5",
+            "quote": "Standard to Ultimate",
+            "problem": "Elite/Ultimate absent from table",
+            "fix": "Optional",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-13T22:04:51+00:00"
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/quickbooks/",
+      "commit": "f1cf7d0",
+      "indexnow": "submitted"
+    },
+    {
+      "vendor": "FreshBooks",
+      "product": "FreshBooks",
+      "officialUrl": "https://www.freshbooks.com/pricing",
+      "targetQuery": "freshbooks alternatives",
+      "demand": {
+        "volume": 320,
+        "kd": "21",
+        "source": "semrush"
+      },
+      "category": "invoicing",
+      "priority": 320,
+      "source": "discovery 2026-11-13",
+      "id": "alt-freshbooks-com-pricing",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Wave",
+      "product": "Wave",
+      "officialUrl": "https://www.waveapps.com/pricing",
+      "targetQuery": "wave alternatives",
+      "demand": {
+        "volume": 50,
+        "kd": "13",
+        "source": "semrush"
+      },
+      "category": "accounting",
+      "priority": 50,
+      "source": "discovery 2026-11-13",
+      "id": "alt-waveapps-com-pricing",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "TurboTax",
+      "product": "TurboTax",
+      "officialUrl": "https://turbotax.intuit.com/personal-taxes/online/",
+      "targetQuery": "turbotax alternatives",
+      "demand": {
+        "volume": 720,
+        "kd": "39",
+        "source": "semrush"
+      },
+      "category": "tax software",
+      "priority": 720,
+      "source": "discovery 2026-11-13",
+      "id": "alt-turbotax-intuit-com-personal-taxes-online",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Credit Karma",
+      "product": "Credit Karma",
+      "officialUrl": "https://www.creditkarma.com/",
+      "targetQuery": "credit karma alternatives",
+      "demand": {
+        "volume": 170,
+        "kd": "22",
+        "source": "semrush"
+      },
+      "category": "credit",
+      "priority": 170,
+      "source": "discovery 2026-11-13",
+      "id": "alt-creditkarma-com",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "SoFi",
+      "product": "SoFi",
+      "officialUrl": "https://www.sofi.com/",
+      "targetQuery": "sofi alternatives",
+      "demand": {
+        "volume": 110,
+        "kd": "21",
+        "source": "semrush"
+      },
+      "category": "banking",
+      "priority": 110,
+      "source": "discovery 2026-11-13",
+      "id": "alt-sofi-com",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Ally Bank",
+      "product": "Ally Bank",
+      "officialUrl": "https://www.ally.com/bank/",
+      "targetQuery": "ally bank alternatives",
+      "demand": {
+        "volume": 50,
+        "kd": "0",
+        "source": "semrush"
+      },
+      "category": "banking",
+      "priority": 50,
+      "source": "discovery 2026-11-13",
+      "id": "alt-ally-com-bank",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Stash",
+      "product": "Stash",
+      "officialUrl": "https://www.stash.com/pricing",
+      "targetQuery": "stash alternatives",
+      "demand": {
+        "volume": 30,
+        "kd": "0",
+        "source": "semrush"
+      },
+      "category": "investing",
+      "priority": 30,
+      "source": "discovery 2026-11-13",
+      "id": "alt-stash-com-pricing",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Dave",
+      "product": "Dave",
+      "officialUrl": "https://dave.com/",
+      "targetQuery": "dave alternatives",
+      "demand": {
+        "volume": 70,
+        "kd": "39",
+        "source": "semrush"
+      },
+      "category": "banking",
+      "priority": 70,
+      "source": "discovery 2026-11-13",
+      "id": "alt-dave-com",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Albert",
+      "product": "Albert",
+      "officialUrl": "https://albert.com/",
+      "targetQuery": "albert alternatives",
+      "demand": {
+        "volume": 20,
+        "kd": "0",
+        "source": "semrush"
+      },
+      "category": "banking",
+      "priority": 20,
+      "source": "discovery 2026-11-13",
+      "id": "alt-albert-com",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Rocket Money",
+      "product": "Rocket Money",
+      "officialUrl": "https://www.rocketmoney.com/",
+      "targetQuery": "rocket money alternatives",
+      "demand": {
+        "volume": 320,
+        "kd": "12",
+        "source": "semrush"
+      },
+      "category": "subscription tracking",
+      "priority": 320,
+      "source": "discovery 2026-11-13",
+      "id": "alt-rocketmoney-com",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Empower",
+      "product": "Empower",
+      "officialUrl": "https://www.empower.com/",
+      "targetQuery": "empower alternatives",
+      "demand": {
+        "volume": 90,
+        "kd": "12",
+        "source": "semrush"
+      },
+      "category": "net worth",
+      "priority": 90,
+      "source": "discovery 2026-11-13",
+      "id": "alt-empower-com",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "LegalZoom",
+      "product": "LegalZoom",
+      "officialUrl": "https://www.legalzoom.com/",
+      "targetQuery": "legalzoom alternatives",
+      "demand": {
+        "volume": 260,
+        "kd": "7",
+        "source": "semrush"
+      },
+      "category": "estate planning",
+      "priority": 260,
+      "source": "discovery 2026-11-13",
+      "id": "alt-legalzoom-com",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "MileIQ",
+      "product": "MileIQ",
+      "officialUrl": "https://www.mileiq.com/pricing",
+      "targetQuery": "mileiq alternatives",
+      "demand": {
+        "volume": 20,
+        "kd": "0",
+        "source": "semrush"
+      },
+      "category": "mileage",
+      "priority": 20,
+      "source": "discovery 2026-11-13",
+      "id": "alt-mileiq-com-pricing",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Bluevine",
+      "product": "Bluevine",
+      "officialUrl": "https://www.bluevine.com/",
+      "targetQuery": "bluevine alternatives",
+      "demand": {
+        "volume": 70,
+        "kd": "12",
+        "source": "semrush"
+      },
+      "category": "business banking",
+      "priority": 70,
+      "source": "discovery 2026-11-13",
+      "id": "alt-bluevine-com",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Novo",
+      "product": "Novo",
+      "officialUrl": "https://www.novo.co/",
+      "targetQuery": "novo alternatives",
+      "demand": {
+        "volume": 20,
+        "kd": "0",
+        "source": "semrush"
+      },
+      "category": "business banking",
+      "priority": 20,
+      "source": "discovery 2026-11-13",
+      "id": "alt-novo-co",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    },
+    {
+      "vendor": "Mercury",
+      "product": "Mercury",
+      "officialUrl": "https://mercury.com/",
+      "targetQuery": "mercury alternatives",
+      "demand": {
+        "volume": 90,
+        "kd": "18",
+        "source": "semrush"
+      },
+      "category": "business banking",
+      "priority": 90,
+      "source": "discovery 2026-11-13",
+      "id": "alt-mercury-com",
+      "createdAt": "2026-11-13T22:00:11+00:00",
+      "history": [
+        {
+          "at": "2026-11-13T22:00:11+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-13"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-13T22:00:11+00:00"
+    }
+  ]
 }

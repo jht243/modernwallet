@@ -1,0 +1,41 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "intro link",
+   "problem": "Official link absent in built output (pitched-list unlink)",
+   "fix": "None; accepted per adapter",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "$3.99 to $6.99 per month",
+   "problem": "Reads as range; offer is time-limited",
+   "fix": "Reword",
+   "hard_blocker": false
+  },
+  {
+   "id": "F3",
+   "quote": "Monarch prices",
+   "problem": "Plan name (Core/Plus) not attributed",
+   "fix": "Add caveat",
+   "hard_blocker": false
+  },
+  {
+   "id": "F6",
+   "quote": "free-to-use dashboards / Rocket Money app flow / Empower",
+   "problem": "Unsupported inference",
+   "fix": "Reword",
+   "hard_blocker": false
+  },
+  {
+   "id": "F7",
+   "quote": "cost basis and cash-flow projections",
+   "problem": "Unverified for Classic",
+   "fix": "Soften",
+   "hard_blocker": false
+  }
+ ]
+}

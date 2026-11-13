@@ -1,0 +1,55 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "Remitly fees at checkout",
+   "problem": "Not stated on pricing page",
+   "fix": "Reword",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "Western Union before sending",
+   "problem": "Not stated on home page",
+   "fix": "Remove",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "Revolut",
+   "problem": "Unverifiable (403)",
+   "fix": "Soften",
+   "hard_blocker": false
+  },
+  {
+   "id": "F4",
+   "quote": "OFX",
+   "problem": "Pricing page unread; 'larger transfers' unsupported",
+   "fix": "Soften",
+   "hard_blocker": false
+  },
+  {
+   "id": "F5",
+   "quote": "intro link",
+   "problem": "Absent due to pitched-list unlink",
+   "fix": "None; accepted per adapter",
+   "hard_blocker": true
+  },
+  {
+   "id": "F6",
+   "quote": "H1 'and Plans'",
+   "problem": "Mismatch",
+   "fix": "Drop",
+   "hard_blocker": false
+  },
+  {
+   "id": "F7",
+   "quote": "verdict most fee detail",
+   "problem": "Comparative unverified",
+   "fix": "Soften",
+   "hard_blocker": false
+  }
+ ]
+}
