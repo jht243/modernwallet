@@ -1,0 +1,293 @@
+coverage_lookup: 9 candidate(s) vs 822 repo pages / 835 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1157 past-chart lines
+
+### /compare/roth-ira-vs-401k  — row - · create new content
+keyword: roth ira vs 401k; 401k vs roth ira
+reader question (new page intent): Should I use a Roth IRA or my 401k?
+lookup terms: roth ira 401k   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/401k-vs-roth-ira  [in sitemap · src/data/comparisons.ts · topic match 1.0 on roth ira 401k · same format: vs]
+    title: 401(k) vs Roth IRA: Which Retirement Account Wins?
+    desc:  401(k) vs Roth IRA compared: contribution limits, tax rules, employer match, and which account saves you more in retirement.
+- /compare/roth-ira-vs-roth-401k  [in sitemap · src/data/comparisons.ts · topic match 1.0 on roth ira 401k · same format: vs]
+    title: Roth IRA vs Roth 401(k): Which Should You Max First?
+    desc:  Roth IRA vs Roth 401(k) compared: contribution limits, income caps, employer match, and which to prioritize when you can't max both in 2026.
+- /investing/roth-ira-calculator  [PARENT PAGE · in sitemap · src/data/spokes-investing.ts · topic match 0.67 on roth ira]
+    title: Roth IRA Calculator: Project Tax-Free Growth
+    desc:  Project your Roth IRA balance using 2026 contribution limits. See how post-tax contributions grow tax-free over decades. Includes income phase-out info.
+- /compare/annuity-vs-roth-ira  [in sitemap · src/data/comparisons.ts · topic match 0.67 on roth ira · same format: vs]
+    title: Annuity vs Roth IRA: How to Choose for Retirement
+    desc:  Compare an annuity vs Roth IRA on tax rules, contribution caps, income guarantees, and withdrawal flexibility to see which belongs in your retirement plan.
+- /compare/roth-401k-vs-traditional-401k  [in sitemap · src/data/comparisons.ts · topic match 0.67 on roth 401k · same format: vs]
+    title: Roth 401(k) vs Traditional 401(k): Which Saves More?
+    desc:  Roth 401(k) vs Traditional 401(k): taxes, contribution limits, employer match, and which version saves more based on your tax rate.
+- /compare/529-vs-roth-ira  [in sitemap · src/data/comparisons.ts · topic match 0.67 on roth ira · same format: vs]
+    title: 529 vs Roth IRA: Which Saves More for College?
+    desc:  529 plan vs Roth IRA for college: see which wins on tax breaks, financial aid impact, and flexibility if your child skips college, plus the rollover rule.
+- /compare/roth-ira-vs-traditional-ira  [in sitemap · src/data/comparisons.ts · topic match 0.67 on roth ira · same format: vs]
+    title: Roth IRA vs Traditional IRA: 2025 Comparison
+    desc:  Roth IRA vs Traditional IRA: compare tax treatment, contribution limits, income rules, RMDs, and early withdrawals to pick the right retirement account.
+- /compare/traditional-ira-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.67 on ira 401k · same format: vs]
+    title: Traditional IRA vs 401(k): 2025 Guide
+    desc:  Traditional IRA vs 401(k) compared: 2025 limits, employer match, investment choice, and fees. See which to fund first and how to use both.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-02-trend-lane-c.md [exclusions] - roth 401k vs regular 401k (12,100/mo KD 9): DROP. /compare/roth-401k-vs-traditional-401k/ (live 200); regular/normal/standard are the same intent. Wording-only gap; metadata rows are out of scope for this pass.
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'Maxxing HSA Benefits'). 'hsa triple tax advantage' 2,400/mo KD 37 CPC $1.11 (SEMRUSH us 2026-11-04, measured); supporting 'hsa contribution limits 2026' 33,100 KD 44, 'hsa t
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-10-search-gap.md [exclusions] - Not created: any new page (exact-intent page /compare/simple-ira-vs-401k exists).
+- 2026-11-10-trend-lane-c.md [exclusions] - standalone utma page: DROP, exists (guides/utma-custodial-account-explained, compare/utma-vs-ugma, 529-vs-utma, custodial-roth-ira-vs-utma, trump-account-vs-custodial-account, how-to-open-a-custodial-brokerage-account-
+- 2026-11-12-trend-lane-c.md [exclusions] - utma standalone page: DROP, exists (guides/utma-custodial-account-explained, compare/utma-vs-ugma, compare/529-vs-utma, guides/custodial-roth-ira-for-kids and others).
+Commits naming the topic: none
+Same run overlap: row - /compare/roth-vs-traditional-ira (0.67); row - /retirement/roth-401k-limits (0.67); row - /retirement/roth-or-traditional-401k-calculator (0.67)
+
+### /compare/roth-vs-traditional-ira  — row - · create new content
+keyword: roth ira vs traditional ira
+reader question (new page intent): Roth or traditional IRA?
+lookup terms: roth traditional ira   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/roth-ira-vs-traditional-ira  [in sitemap · src/data/comparisons.ts · topic match 1.0 on roth traditional ira · same format: vs]
+    title: Roth IRA vs Traditional IRA: 2025 Comparison
+    desc:  Roth IRA vs Traditional IRA: compare tax treatment, contribution limits, income rules, RMDs, and early withdrawals to pick the right retirement account.
+- /compare/custodial-roth-ira-vs-traditional-ira  [in sitemap · src/data/comparisons.ts · topic match 1.0 on roth traditional ira · same format: vs]
+    title: Custodial Roth IRA vs Traditional IRA for Kids
+    desc:  Custodial Roth IRA vs Traditional IRA: both need earned income, but a minor's deduction is often worth $0 while the Roth's growth is tax-free forever.
+- /investing/roth-ira-calculator  [PARENT PAGE · in sitemap · src/data/spokes-investing.ts · topic match 0.67 on roth ira]
+    title: Roth IRA Calculator: Project Tax-Free Growth
+    desc:  Project your Roth IRA balance using 2026 contribution limits. See how post-tax contributions grow tax-free over decades. Includes income phase-out info.
+- /compare/annuity-vs-roth-ira  [in sitemap · src/data/comparisons.ts · topic match 0.67 on roth ira · same format: vs]
+    title: Annuity vs Roth IRA: How to Choose for Retirement
+    desc:  Compare an annuity vs Roth IRA on tax rules, contribution caps, income guarantees, and withdrawal flexibility to see which belongs in your retirement plan.
+- /compare/401k-vs-roth-ira  [in sitemap · src/data/comparisons.ts · topic match 0.67 on roth ira · same format: vs]
+    title: 401(k) vs Roth IRA: Which Retirement Account Wins?
+    desc:  401(k) vs Roth IRA compared: contribution limits, tax rules, employer match, and which account saves you more in retirement.
+- /compare/roth-401k-vs-traditional-401k  [in sitemap · src/data/comparisons.ts · topic match 0.67 on roth traditional · same format: vs]
+    title: Roth 401(k) vs Traditional 401(k): Which Saves More?
+    desc:  Roth 401(k) vs Traditional 401(k): taxes, contribution limits, employer match, and which version saves more based on your tax rate.
+- /compare/529-vs-roth-ira  [in sitemap · src/data/comparisons.ts · topic match 0.67 on roth ira · same format: vs]
+    title: 529 vs Roth IRA: Which Saves More for College?
+    desc:  529 plan vs Roth IRA for college: see which wins on tax breaks, financial aid impact, and flexibility if your child skips college, plus the rollover rule.
+- /compare/traditional-ira-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.67 on traditional ira · same format: vs]
+    title: Traditional IRA vs 401(k): 2025 Guide
+    desc:  Traditional IRA vs 401(k) compared: 2025 limits, employer match, investment choice, and fees. See which to fund first and how to use both.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-28-trend-lane-c.md [exclusions] - /retirement/roth-vs-traditional-401k-calculator (1,300/mo KD 0): DROP. /roth-vs-traditional-401k-calculator already exists (calculators.ts) with the same keyword.
+- 2026-11-02-trend-lane-c.md [exclusions] - roth 401k vs regular 401k (12,100/mo KD 9): DROP. /compare/roth-401k-vs-traditional-401k/ (live 200); regular/normal/standard are the same intent. Wording-only gap; metadata rows are out of scope for this pass.
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'Maxxing HSA Benefits'). 'hsa triple tax advantage' 2,400/mo KD 37 CPC $1.11 (SEMRUSH us 2026-11-04, measured); supporting 'hsa contribution limits 2026' 33,100 KD 44, 'hsa t
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-10-trend-lane-c.md [exclusions] - standalone utma page: DROP, exists (guides/utma-custodial-account-explained, compare/utma-vs-ugma, 529-vs-utma, custodial-roth-ira-vs-utma, trump-account-vs-custodial-account, how-to-open-a-custodial-brokerage-account-
+- 2026-11-12-trend-lane-c.md [exclusions] - utma standalone page: DROP, exists (guides/utma-custodial-account-explained, compare/utma-vs-ugma, compare/529-vs-utma, guides/custodial-roth-ira-for-kids and others).
+Commits naming the topic: none
+Same run overlap: row - /compare/roth-ira-vs-401k (0.67); row - /retirement/roth-or-traditional-401k-calculator (0.67)
+
+### /retirement/roth-401k-limits  — row - · create new content
+keyword: roth 401k limits; 401k and roth 401k limits
+reader question (new page intent): What are the Roth 401k contribution limits?
+lookup terms: roth 401k   format cues: limits
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/401k-contribution-limits-2026  [in sitemap · src/data/guides.ts · topic match 1.0 on roth 401k · same format: limits]
+    title: 401(k) Contribution Limits for 2026: The Complete Guide
+    desc:  The 2026 401(k) contribution limit is $24,500 ($32,500 if you're 50+, $35,750 if you're 60-63). See the Roth/Traditional combined cap and catch-up rules.
+- /compare/401k-vs-roth-ira  [in sitemap · src/data/comparisons.ts · topic match 1.0 on roth 401k]
+    title: 401(k) vs Roth IRA: Which Retirement Account Wins?
+    desc:  401(k) vs Roth IRA compared: contribution limits, tax rules, employer match, and which account saves you more in retirement.
+- /compare/roth-401k-vs-traditional-401k  [in sitemap · src/data/comparisons.ts · topic match 1.0 on roth 401k]
+    title: Roth 401(k) vs Traditional 401(k): Which Saves More?
+    desc:  Roth 401(k) vs Traditional 401(k): taxes, contribution limits, employer match, and which version saves more based on your tax rate.
+- /compare/roth-ira-vs-roth-401k  [in sitemap · src/data/comparisons.ts · topic match 1.0 on roth 401k]
+    title: Roth IRA vs Roth 401(k): Which Should You Max First?
+    desc:  Roth IRA vs Roth 401(k) compared: contribution limits, income caps, employer match, and which to prioritize when you can't max both in 2026.
+- /roth-vs-traditional-401k-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 1.0 on roth 401k]
+    title: Roth vs Traditional 401(k) Calculator: Taxes & Balance
+    desc:  Free Roth vs Traditional 401(k) calculator. See which account leaves more after tax, find your break-even tax rate, and compare balances.
+- /guides/mega-backdoor-roth-401k  [in sitemap · src/data/guides.ts · topic match 1.0 on roth 401k]
+    title: Mega Backdoor Roth 401(k): How It Actually Works
+    desc:  A mega backdoor Roth 401(k) converts after-tax contributions above the deferral limit into Roth money. See the 2026 IRS limits and who can use it.
+- /retirement/401k-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 0.5 on 401k]
+    title: 401k Calculator: How Much You'll Have at Retirement
+    desc:  See how much your 401(k) could be worth at retirement. Enter your balance, contributions, employer match, and expected return for a free projection.
+- /compare/457b-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k · same format: limits]
+    title: 457(b) vs 401(k): Contribution Limits, Penalties & Risk
+    desc:  457(b) vs 401(k) compared: separate contribution limits, no early-withdrawal penalty after leaving your job, and the real risk of a non-governmental plan.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 4 | social-security-taxable-benefits-calculator (46 people, 51 uses, 109 views; data_days 27). Walkthrough: married-filing-separately-living-together prints 'above $0'; no hint on what counts as other income (Roth with
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-10-search-gap.md [exclusions] - Not created: any new page (exact-intent page /compare/simple-ira-vs-401k exists).
+- 2026-11-10-trend-lane-c.md [exclusions] - standalone utma page: DROP, exists (guides/utma-custodial-account-explained, compare/utma-vs-ugma, 529-vs-utma, custodial-roth-ira-vs-utma, trump-account-vs-custodial-account, how-to-open-a-custodial-brokerage-account-
+- 2026-11-12-trend-lane-c.md [exclusions] - utma standalone page: DROP, exists (guides/utma-custodial-account-explained, compare/utma-vs-ugma, compare/529-vs-utma, guides/custodial-roth-ira-for-kids and others).
+- 2026-11-12-trend-lane-c.md [exclusions] - Lens 3 vs/alternatives/pricing: no uncovered comparison; nerdwallet is branded on a locked SERP and UTMA comparisons (ugma, 529, roth, trump account) already exist.
+Commits naming the topic: none
+Same run overlap: row - /compare/roth-ira-vs-401k (1.0); row - /compare/roth-vs-traditional-ira (0.5); row - /retirement/roth-or-traditional-401k-calculator (1.0); row - /guides/how-much-should-i-have-in-my-401k (0.5); row - /guides/401k-vs-retirement-account (0.5)
+
+### /retirement/roth-or-traditional-401k-calculator  — row - · create new content
+keyword: roth or traditional 401k calculator; roth or regular 401k
+reader question (new page intent): Should I pick Roth or traditional 401k?
+lookup terms: roth traditional 401k regular   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /roth-vs-traditional-401k-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.75 on roth traditional 401k · same format: calculator]
+    title: Roth vs Traditional 401(k) Calculator: Taxes & Balance
+    desc:  Free Roth vs Traditional 401(k) calculator. See which account leaves more after tax, find your break-even tax rate, and compare balances.
+- /compare/roth-401k-vs-traditional-401k  [PARENT PAGE · in sitemap · src/data/comparisons.ts · topic match 0.75 on roth traditional 401k]
+    title: Roth 401(k) vs Traditional 401(k): Which Saves More?
+    desc:  Roth 401(k) vs Traditional 401(k): taxes, contribution limits, employer match, and which version saves more based on your tax rate.
+- /guides/401k-contribution-limits-2026  [in sitemap · src/data/guides.ts · topic match 0.75 on roth traditional 401k]
+    title: 401(k) Contribution Limits for 2026: The Complete Guide
+    desc:  The 2026 401(k) contribution limit is $24,500 ($32,500 if you're 50+, $35,750 if you're 60-63). See the Roth/Traditional combined cap and catch-up rules.
+- /compare/401k-vs-roth-ira  [in sitemap · src/data/comparisons.ts · topic match 0.5 on roth 401k]
+    title: 401(k) vs Roth IRA: Which Retirement Account Wins?
+    desc:  401(k) vs Roth IRA compared: contribution limits, tax rules, employer match, and which account saves you more in retirement.
+- /compare/roth-ira-vs-traditional-ira  [in sitemap · src/data/comparisons.ts · topic match 0.5 on roth traditional]
+    title: Roth IRA vs Traditional IRA: 2025 Comparison
+    desc:  Roth IRA vs Traditional IRA: compare tax treatment, contribution limits, income rules, RMDs, and early withdrawals to pick the right retirement account.
+- /compare/traditional-ira-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on traditional 401k]
+    title: Traditional IRA vs 401(k): 2025 Guide
+    desc:  Traditional IRA vs 401(k) compared: 2025 limits, employer match, investment choice, and fees. See which to fund first and how to use both.
+- /compare/roth-ira-vs-roth-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on roth 401k]
+    title: Roth IRA vs Roth 401(k): Which Should You Max First?
+    desc:  Roth IRA vs Roth 401(k) compared: contribution limits, income caps, employer match, and which to prioritize when you can't max both in 2026.
+- /compare/custodial-roth-ira-vs-traditional-ira  [in sitemap · src/data/comparisons.ts · topic match 0.5 on roth traditional]
+    title: Custodial Roth IRA vs Traditional IRA for Kids
+    desc:  Custodial Roth IRA vs Traditional IRA: both need earned income, but a minor's deduction is often worth $0 while the Roth's growth is tax-free forever.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-27-trend-lane-c.md [exclusions] - regular vs roth 401k / roth 401k vs regular 401k / roth 401 k vs traditional 401 k: /compare/roth-401k-vs-traditional-401k exists (82.9 average position over 16 impressions), trends.md row 4. DROPPED (exists).
+- 2026-10-28-trend-lane-c.md [exclusions] - /retirement/roth-vs-traditional-401k-calculator (1,300/mo KD 0): DROP. /roth-vs-traditional-401k-calculator already exists (calculators.ts) with the same keyword.
+- 2026-10-28-trend-lane-c.md [exclusions] - will online / roth 401k variants / calculators / lenders / living trust / coast fire / index funds: exist (ledger 2026-10-22 to 10-27).
+- 2026-10-29-trend-lane-c.md [exclusions] - free-online-will / are-online-wills-legal: DROP, 2026-10-28 disposition holds. will online, roth 401k variants, trump account vs brokerage, lenders, living trust: exist (ledger 2026-10-22 to 10-28).
+- 2026-11-02-trend-lane-c.md [exclusions] - roth 401k vs regular 401k (12,100/mo KD 9): DROP. /compare/roth-401k-vs-traditional-401k/ (live 200); regular/normal/standard are the same intent. Wording-only gap; metadata rows are out of scope for this pass.
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+Commits naming the topic: none
+Same run overlap: row - /compare/roth-ira-vs-401k (0.5); row - /compare/roth-vs-traditional-ira (0.5); row - /retirement/roth-401k-limits (0.5)
+
+### /guides/how-much-should-i-have-in-my-401k  — row - · create new content
+keyword: how much should i have in my 401k
+reader question (new page intent): How much should I have in my 401k by age?
+lookup terms: have 401k   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /retirement/401k-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 1.0 on have 401k]
+    title: 401k Calculator: How Much You'll Have at Retirement
+    desc:  See how much your 401(k) could be worth at retirement. Enter your balance, contributions, employer match, and expected return for a free projection.
+- /compare/401k-vs-529  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k]
+    title: 401k vs 529: How to Choose in 2026
+    desc:  401(k) vs 529 on 2026 contribution limits, tax treatment, penalties for non-qualified use, and the 529 to Roth IRA rollover rules.
+- /compare/pension-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k]
+    title: Pension vs 401(k): Key Differences (2025)
+    desc:  Pension vs 401(k): a pension pays guaranteed lifetime income and the employer takes the risk; a 401(k) is your portable, market-based balance instead.
+- /compare/403b-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k]
+    title: 403(b) vs 401(k): What's the Real Difference in 2026?
+    desc:  403(b) vs 401(k) compared: who can offer each, 2026 contribution limits, the 403(b)'s 15-year catch-up, fees, and which is riskier for your money.
+- /compare/tsp-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k]
+    title: TSP vs 401(k): Which Retirement Plan Wins in 2026?
+    desc:  TSP vs 401(k) compared: agency/employer match, fund menu, fees, and the unique G Fund — see which is better for federal employees and military.
+- /compare/457b-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k]
+    title: 457(b) vs 401(k): Contribution Limits, Penalties & Risk
+    desc:  457(b) vs 401(k) compared: separate contribution limits, no early-withdrawal penalty after leaving your job, and the real risk of a non-governmental plan.
+- /compare/iul-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k]
+    title: IUL vs 401k Comes Down to the Employer Match
+    desc:  IUL vs 401k compared on employer match, 2026 IRS limits, cost of insurance, fees, and taxes, plus when an indexed universal life policy earns its price.
+- /guides/what-to-do-with-401k-when-you-retire  [in sitemap · src/data/guides.ts · topic match 0.5 on 401k]
+    title: What to Do With Your 401(k) When You Retire: 4 Choices
+    desc:  Deciding what to do with your 401k when you retire? Compare direct rollovers, keeping plan assets, cash payouts, the 20% withholding trap, and Rule of 55.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet fiduciary). Head 'what is a fiduciary / what is a fiduciary financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/what-is-
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet questions-ask-financial-advisor). Head 'questions to ask a financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/how-to-ch
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-robo-advisor). Head 'what is a robo advisor / robo advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /roundup/best-robo-adviso
+- 2026-11-10-competitor-18b9b55e45cc.md [exclusions] - Measured volumes, KD and SERP/PAA unavailable (no provider keys); labelled estimate only. Generation runs on the gemini-3.8-flash fallback because Anthropic keys have no credit.
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-10-search-gap.md [exclusions] - Not created: any new page (exact-intent page /compare/simple-ira-vs-401k exists).
+Commits naming the topic: none
+Same run overlap: row - /compare/roth-ira-vs-401k (0.5); row - /retirement/roth-401k-limits (0.5); row - /retirement/roth-or-traditional-401k-calculator (0.5); row - /guides/401k-vs-retirement-account (0.5)
+
+### /guides/what-is-tax-deferred-growth  — row - · create new content
+keyword: what is tax-deferred growth; what does grow tax deferred mean
+reader question (new page intent): What does tax-deferred growth mean?
+lookup terms: tax deferred growth grow mean   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-14.md [table] | Lens 2, cluster "2027 Social Security changes (beyond the COLA)". Phrases: `social security changes 2027` 3,600/mo; `social security changes for 2027` 210; `social security earnings limit 2027` 210 KD 28; `social secur
+- 2026-10-23-trend-lane-c.md [table] | 1 | source: coverage + top-10 (Lens 2 adjacent to the top-20 query "investment calculator with increasing contributions", pos 17, 1 impr). Cluster: investment calculator with increasing contributions 320/mo KD 21 (meas
+- 2026-10-29-xtrends.md [table] | Lens 1 direct intent + news-driven (Zillow and Thumbtack 2026 study, Fox Business 2026-10-22). 'hidden cost of owning a home' 210/mo KD 4, 'cost of owning a home calculator' 170/mo KD 25, 'home maintenance cost calcula
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'capital gains harvesting', Ready For Retirement brokerage episode). 'tax loss harvesting' 12,100/mo KD 53 CPC $3.93 (SEMRUSH us 2026-11-04, measured); 'tax loss harvesting r
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'Maxxing HSA Benefits'). 'hsa triple tax advantage' 2,400/mo KD 37 CPC $1.11 (SEMRUSH us 2026-11-04, measured); supporting 'hsa contribution limits 2026' 33,100 KD 44, 'hsa t
+- 2026-11-12-trend-lane-c.md [exclusions] - tax deferred growth calculator: DROP, exists as /taxable-vs-tax-deferred/; 30/mo.
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/utma-custodial-account-explained  — row - · create new content
+keyword: utma; what is a utma account
+reader question (new page intent): What is a UTMA account?
+lookup terms: utma custodial account   format cues: explained
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/utma-custodial-account-explained  [EXACT SLUG · in sitemap · src/data/guides.ts · topic match 1.0 on utma custodial account · same format: explained]
+    title: UTMA Custodial Account Explained: Pros & Cons
+    desc:  A UTMA account lets an adult invest for a child until they come of age. See how custodial accounts work, the real pros and cons, and who they fit.
+- /compare/trump-account-vs-custodial-account  [in sitemap · src/data/comparisons.ts · topic match 1.0 on utma custodial account]
+    title: Trump Account vs Custodial Account: Which to Open?
+    desc:  Trump Account vs custodial account (UTMA/UGMA): see whether the free $1,000 seed or a flexible, uncapped custodial account fits your child best.
+- /compare/utma-vs-ugma  [in sitemap · src/data/comparisons.ts · topic match 1.0 on utma custodial account]
+    title: UTMA vs UGMA: Custodial Account Differences (2026)
+    desc:  UTMA vs UGMA: both are custodial accounts for a child, but UTMA holds more asset types and often transfers later. Here's which one you actually get.
+- /compare/custodial-roth-ira-vs-utma  [in sitemap · src/data/comparisons.ts · topic match 1.0 on utma custodial account]
+    title: Custodial Roth IRA vs UTMA: Which for Your Kid?
+    desc:  Custodial Roth IRA vs UTMA (or UGMA): the Roth grows tax-free but needs a job; a UTMA has no income rule or cap. See which one fits your child best.
+- /compare/custodial-account-vs-savings-account  [in sitemap · src/data/comparisons.ts · topic match 0.67 on custodial account]
+    title: Custodial Account vs Savings Account: Kids' Money
+    desc:  Custodial account vs savings account for a child: a UTMA/UGMA invests and is irrevocably theirs, while a savings account stays simple, liquid, and yours.
+- /compare/529-vs-utma  [in sitemap · src/data/comparisons.ts · topic match 0.67 on utma account]
+    title: 529 vs UTMA: Which Is Better for Your Child? (2026)
+    desc:  529 vs UTMA compared: taxes, financial aid impact, and contribution limits — plus can you convert a UTMA to a 529? See which account wins for your family.
+- /compare/trump-account-vs-529-vs-utma  [in sitemap · src/data/comparisons.ts · topic match 0.67 on utma account]
+    title: Trump Account vs 529 vs UTMA: 3-Way Compared
+    desc:  Trump Account vs 529 vs UTMA compared: the free $1,000 seed, tax-free college savings, and flexible custodial money. See which account fits your kid.
+- /guides/custodial-account-taxes-kiddie-tax  [in sitemap · src/data/guides.ts · topic match 0.67 on custodial account · same format: explained]
+    title: Custodial Account Taxes: How the Kiddie Tax Works
+    desc:  How custodial account taxes work and how the kiddie tax hits a child's unearned income in 2025 — brackets, filing rules, and planning tips.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-23-trend-lane-c.md [exclusions] - deposit vs custodial account: compare/custodial-account-vs-savings-account and custodial-roth-ira-vs-* exist. DROPPED (exists).
+- 2026-10-26-trend-lane-c.md [exclusions] - trump account vs brokerage account for kids (75-750/mo estimate, NOT measured): /compare/trump-account-vs-brokerage-account and custodial/kid brokerage pages exist. DROPPED (exists).
+- 2026-11-10-trend-lane-c.md [exclusions] - standalone utma page: DROP, exists (guides/utma-custodial-account-explained, compare/utma-vs-ugma, 529-vs-utma, custodial-roth-ira-vs-utma, trump-account-vs-custodial-account, how-to-open-a-custodial-brokerage-account-
+- 2026-11-12-trend-lane-c.md [exclusions] - utma standalone page: DROP, exists (guides/utma-custodial-account-explained, compare/utma-vs-ugma, compare/529-vs-utma, guides/custodial-roth-ira-for-kids and others).
+- 2026-11-12-trend-lane-c.md [exclusions] - UTMA enrichment (state table, 18/21, transfer/close): HELD, state statutes not retrievable as text from this runner; not DROPPED. Re-competes next run.
+- 2026-11-12-trend-lane-c.md [exclusions] - Lens 3 vs/alternatives/pricing: no uncovered comparison; nerdwallet is branded on a locked SERP and UTMA comparisons (ugma, 529, roth, trump account) already exist.
+Commits naming the topic: none
+Same run overlap: row - /guides/utma-taxes (0.67)
+
+### /guides/utma-taxes  — row - · create new content
+keyword: are utma accounts taxable; how are utmas taxed
+reader question (new page intent): How is a UTMA taxed?
+lookup terms: utma taxe account taxable taxed   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/trump-account-taxes  [in sitemap · src/data/guides.ts · topic match 0.6 on taxe account taxed]
+    title: Trump Account Taxes: Deductible? How It's Taxed
+    desc:  Trump account taxes explained: contributions are not deductible and growth is tax-deferred, not tax-free. See how withdrawals after 18 are taxed.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-28-autocomplete.md [table] | 2 | Lens 1 (seed "capital gains tax calculator", 281 completions). `capital gains tax calculator stocks` 480/mo KD 18 CPC $7.02 and `stock capital gains tax calculator` 480/mo KD 18 (DataForSEO measured); completions "
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'Maxxing HSA Benefits'). 'hsa triple tax advantage' 2,400/mo KD 37 CPC $1.11 (SEMRUSH us 2026-11-04, measured); supporting 'hsa contribution limits 2026' 33,100 KD 44, 'hsa t
+- 2026-11-04-tool-usage.md [table] | 6 | self-employment-tax (40 people, 42 uses, 117 views; data_days 27). Walkthrough: $420 profit shows $59 SE tax though net earnings $387.87 < $400 owe none (Schedule SE line 4c); QBI phase-in warning tests gross incom
+- 2026-11-10-trend-lane-c.md [exclusions] - standalone utma page: DROP, exists (guides/utma-custodial-account-explained, compare/utma-vs-ugma, 529-vs-utma, custodial-roth-ira-vs-utma, trump-account-vs-custodial-account, how-to-open-a-custodial-brokerage-account-
+- 2026-11-12-trend-lane-c.md [exclusions] - utma standalone page: DROP, exists (guides/utma-custodial-account-explained, compare/utma-vs-ugma, compare/529-vs-utma, guides/custodial-roth-ira-for-kids and others).
+- 2026-11-12-trend-lane-c.md [exclusions] - Lens 3 vs/alternatives/pricing: no uncovered comparison; nerdwallet is branded on a locked SERP and UTMA comparisons (ugma, 529, roth, trump account) already exist.
+Commits naming the topic: none
+Same run overlap: none
+

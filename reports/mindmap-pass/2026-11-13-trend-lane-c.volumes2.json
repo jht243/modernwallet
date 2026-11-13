@@ -1,0 +1,145 @@
+{
+ "rows": [
+  {
+   "keyword": "how much should i have in my 401k",
+   "volume": 6600,
+   "volume_low": 6600,
+   "volume_high": 6600,
+   "kd": "44",
+   "cpc": "0.66",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "average 401k balance by age",
+   "volume": 12100,
+   "volume_low": 12100,
+   "volume_high": 12100,
+   "kd": "50",
+   "cpc": "0.7",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "401k by age",
+   "volume": 1600,
+   "volume_low": 1600,
+   "volume_high": 1600,
+   "kd": "39",
+   "cpc": "1.42",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how much should i have in my 401k at 40",
+   "volume": 1300,
+   "volume_low": 1300,
+   "volume_high": 1300,
+   "kd": "40",
+   "cpc": "0.55",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "what is a good 401k balance",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "whats a 401k",
+   "volume": 12100,
+   "volume_low": 12100,
+   "volume_high": 12100,
+   "kd": "54",
+   "cpc": "0.81",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "what is a 401k",
+   "volume": 135000,
+   "volume_low": 135000,
+   "volume_high": 135000,
+   "kd": "60",
+   "cpc": "0.81",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "is roth or traditional 401k better",
+   "volume": 320,
+   "volume_low": 320,
+   "volume_high": 320,
+   "kd": "34",
+   "cpc": "0.11",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "downside of roth 401k",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 0,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using semrush (quality order semrush > dataforseo)",
+  "semrush returned volume for 9/9 phrases",
+  "kd: using semrush (quality order semrush > dataforseo)",
+  "Autocomplete: 8/9 rows corroborated live"
+ ]
+}

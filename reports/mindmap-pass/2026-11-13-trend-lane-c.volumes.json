@@ -1,0 +1,190 @@
+{
+ "rows": [
+  {
+   "keyword": "tax deferred growth calculator",
+   "volume": 30,
+   "volume_low": 30,
+   "volume_high": 30,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "what is tax-deferred growth",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": "37",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "tax deferred vs taxable calculator",
+   "volume": 30,
+   "volume_low": 30,
+   "volume_high": 30,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 8,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "roth or regular 401k",
+   "volume": 880,
+   "volume_low": 880,
+   "volume_high": 880,
+   "kd": "40",
+   "cpc": "0.23",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "roth or traditional 401k calculator",
+   "volume": 720,
+   "volume_low": 720,
+   "volume_high": 720,
+   "kd": "16",
+   "cpc": "0.63",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "utma",
+   "volume": 12100,
+   "volume_low": 12100,
+   "volume_high": 12100,
+   "kd": "4",
+   "cpc": "1.81",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "are utma accounts taxable",
+   "volume": 170,
+   "volume_low": 170,
+   "volume_high": 170,
+   "kd": "16",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "how are utmas taxed",
+   "volume": 140,
+   "volume_low": 140,
+   "volume_high": 140,
+   "kd": "18",
+   "cpc": "26.39",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "who pays taxes on an utma account",
+   "volume": 140,
+   "volume_low": 140,
+   "volume_high": 140,
+   "kd": "13",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "utma tax rules",
+   "volume": 320,
+   "volume_low": 320,
+   "volume_high": 320,
+   "kd": "18",
+   "cpc": "1.46",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "utma age of majority",
+   "volume": 140,
+   "volume_low": 140,
+   "volume_high": 140,
+   "kd": "28",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "utma age of majority by state",
+   "volume": 260,
+   "volume_low": 260,
+   "volume_high": 260,
+   "kd": "36",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using semrush (quality order semrush > dataforseo)",
+  "semrush returned volume for 12/12 phrases",
+  "kd: using semrush (quality order semrush > dataforseo)",
+  "Autocomplete: 12/12 rows corroborated live"
+ ]
+}

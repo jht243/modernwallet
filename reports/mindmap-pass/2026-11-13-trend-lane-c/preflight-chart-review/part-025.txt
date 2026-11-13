@@ -1,0 +1,68 @@
+n auto-continue to Phase 9 (no approval stop)" |
+| 9 — Commit + deliver   | —    | "Single commit; push to {branch}; verify every affected live route and canonical; report failures; submit only verified live URLs to IndexNow after deployment; report SHA. Local-only scope excludes these publication actions and leaves deployment fields empty" |
+
+### Emerging search patterns detected this run (print directly above the phase table)
+
+This block makes the Lens 2 findings visible so the user reviews the *new search demand* — not just per-page tweaks — before approving. Source it from the chart's `## Emerging search patterns (clusters)` block:
+
+| Cluster (theme) | Member queries | Why emerging | Lever | Target | Format |
+|---|---|---|---|---|---|
+| {theme} | {q1; q2; q3} | {coverage gap / intent mismatch / rising} | {create new content / update existing body text / update existing metadata / flag→Phase 1} | {route or file} | {article / calculator / quiz/assessment / template / etc. — or n/a if lever isn't create-new-content} |
+
+- If zero clusters were detected, print exactly: **"⚠️ No emerging search patterns detected this run."** — and call it out explicitly, because emerging-pattern detection is a core tenet. A run with zero clusters AND only literal-intent rows is a signal the brief was too narrow or Lens 2's SEMRUSH expansion underperformed; tell the user so they can decide whether to re-run with a richer brief.
+- Each cluster's lever here must reconcile with the phase counts below (a `create new content` cluster is counted in Phase 3's rows, a `update existing body text` cluster in Phase 5, etc.).
+
+### Rules
+- **Rows column**: integer count of chart rows in that bucket, or `—` if the phase has no chart rows (audit, sitemap, summary, commit).
+- **Reader question is part of the approval.** Every Phase-3 and Phase-5 row in the Plan column carries the chart's `reader_question` **with its evidence tag** (`[PAA n/m <pattern>; ac n/m]`) and `answer_placement` (cols 10–12). A create/body row whose chart entry lacks them, or whose col 10 has no evidence tag, is an **Ambiguous / skipped** row (HARD STOP below) — the pass does not write a page whose question was never decided from evidence.
+- **Print the question-evidence flags above the phase table**, as their own short list, so the user sees them before approving: every row tagged `[verb-only — no PAA, no completions]` (the question is a guess, not a measurement) and every row tagged with half or more off-topic PAA (`[PAA 3/6 off-topic: lawyer salary]` — Google is not confident the phrase means what we think). Zero flags → print `Question evidence: every content row's question is PAA- or completion-backed.`
+- **Plan column**: must list the **actual targets and actions per row** — never just row numbers. Sourced from each chart row's `solution` / `target` columns, restated in one short clause per row, joined with semicolons. If a phase has zero rows, write `skipped — no rows` instead of leaving the cell blank.
+- **Omit rows whose count is 0** unless it's one of the always-present phases (4, 7, 8, 9). For 0-row buckets, write `skipped — no rows` in the Plan column instead of dropping the row.
+- **Ambiguous / skipped rows**: if any chart rows could not be classified, append a final row to the table:
+
+  | — | Ambiguous / skipped | {N} | "**HARD STOP** — list each ambiguous row + why it could not be classified. User must reclassify or remove before approving." |
+
+  If `N > 0` here, the gate cannot be approved until the user resolves them.
+
+### After printing the table
+
+Prompt the user with **exactly this question** (or its functional equivalent):
+> "Manifest above ({N} actionable rows across {M} phases, including {C} emerging search-pattern clusters). Approve to start Phase 1, or pause to revise the chart?"
+
+Acceptable approvals: "approve", "go", "start", "yes", or any clear affirmative.
+
+If the user declines or wants to revise: STOP cleanly. Do not start Phase 1. Wait for them to either edit the chart and re-run, or give new direction.
+
+Only after explicit approval, begin Phase 1.
+
+**Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.
+
+<!-- mindmap-execution-v1 -->
+Load `_mindmap-execution.md` and validate/render this exact chart from its independently reviewed manifest before presenting it. Preserve every full brief and the single evidenced preparation row; revalidate imported charts rather than accepting missing detail. The existing Phase 0 approval remains the sole human gate.
+<!-- /mindmap-execution-v1 -->
+
+[Source: .claude/commands/_mindmap-chart-obligations.generated.md]
+# Mindmap Downstream Chart-Planning Obligations (Compiled Verbatim)
+
+These obligations are extracted verbatim from this repository's downstream writing, tool, audit, linking, sitemap, and publication contracts so BUILD and CHART-REVIEW enforce every planning constraint without loading execution-only procedures. Execution workers (WRITE, AUDIT, PUBLISH) still load their full phase and standard files.
+
+## [cs-tested-anchor-neutrality] (.claude/commands/_content-standard.md @ 944c2d85565a)
+
+**Applies to** operator-register pages whose `page type:` is a roundup ("best X", "X alternatives", any ranked list), a product or model review, or an "X vs Y" comparison. **Skip** pricing, how-to, explainer, definition, tool and news (reporter-register) pages. **Also skip** any page whose ranked or compared items fall outside what this site's `_experience.md` section G licenses as tested (for example medical treatments, clinics, drugs, legal or financial services). If the site's `_experience.md` has no section G, skip TESTED entirely. Only relevant executed runs, independently reviewed against the exact page, license first-person testing claims; calculations, modeling, client observations and external research use their own accurate labels.
+
+Plan an extra 3–5-row comparison table + "when to choose X" section (`COMPARISON` net-add) whenever a natural comparison axis exists; plan one honest proprietary `ANCHOR` from `_experience.md` / original analysis (max 2 named-client refs, or explicit `anchor-exempt:` justification — never force-fit); and never plan claims of vendor neutrality, "no paid placement", or self-undercutting disclaimers about what we have not tested or used (`NEUTRALITY`). Reuse this site's established author/publisher identity automatically without blocking on missing Person/reviewer profiles.
+
+## [cs-seo-and-elements] (.claude/commands/_content-standard.md @ 944c2d85565a)
+
+Every planned new page and substantive outline must budget for these required elements (in both `operator` and `reporter` registers unless noted):
+- **50–60 char SEO title** carrying the primary keyword; Title Case H1/H2/H3 headings; sentence-case FAQ questions; define every acronym on first use; link related hub/spoke/cluster pages; no `Conclusion` or `Summary` heading.
+- **Reader question & answer placement (INTENT):** decide `reader question: "<in the reader's words>"` with its PAA/autocomplete evidence tag (`[PAA n/m ...]` or `[verb-only ...]`), place the working answer in section 1 or 2 ahead of any scope/definition/history material, answer the top on-intent PAA in the opener, and place remaining on-topic PAA questions in the FAQ.
+- **Who this is not for** and **What would change our answer** on any page that recommends, ranks, or picks a winner; **concrete next action** as the final body sentence; **disclaimers at the bottom only** (required on YMYL sites per `_experience.md`, never in title/intro/section 1); and a subject-specific `inlineCta` where the repo's page record supports one.
+
+## [cs-medium-and-row-records] (.claude/commands/_content-standard.md @ 944c2d85565a)
+
+Choose the useful deliverable from the actual reader finding and verified capabilities, following `_decision-evidence.md` and `_mindmap-execution.md`. Prose, finite tables, SVG charts, genuine screenshots, images/illustrations, downloadable data and interactive tools are supported when this run can actually produce them. Generated illustrations never establish product testing. Videos remain outside the Mindmap evidence workflow.
+
+Record `medium: <picked> → <resolved>`, `register: operator|reporter`, and `page type: <type>` (from the DEPTH floor table: comparison 1,500 / review 1,500 / persona 1,400 / hub 1,200 / worth-it 1,200 / explainer 1,200 / cost-pricing 1,000 / editorial 600 body words; pick the higher floor when ambiguous, and merge topics too thin to clear their floor without filler). Assess inputs, logic, sources, implementation and feasibility before the approval chart. Prefer existing components and the smallest format that makes the answer useful. Keep the main answer readable without interaction.
+
+Build the appr

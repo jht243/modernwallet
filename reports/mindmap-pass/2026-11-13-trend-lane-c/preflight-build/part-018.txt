@@ -1,0 +1,63 @@
+new content / enriched page / metadata / flagged)**, consolidation losers, **Live verification (each created/changed URL → 200 OK or FAILED)**, IndexNow status, commit SHA / PR URL, and every "Ambiguous / skipped" row for the user to resolve manually.
+
+**The report MUST open with a `## Duplicate check` section** — one line copied from the Phase 0 manifest's Duplicate check row (`passed — N new-page rows checked, M matched an existing page`, or `FAILED — <rows>`). Any routine that wraps /mindmap-pass (X trends, search gap, chat requests, trend pass, hype radar, inbox, YouTube) puts this same section first in the email it sends.
+
+**The report MUST end with a `🔗 New pages` section**: a clickable markdown link (page title as text, full absolute `https://` URL as target) for EVERY newly created page that verified 200, so the user can open each page directly from the chat. Enriched existing pages get a separate `Updated pages` link list; failed/reverted pages a separate `⚠️ Not live` list. Nothing comes after this section. (Details in `phase-9-commit-deliver.md` step 8.)
+
+## IndexNow Fallback Key (workflow-wide)
+
+**Submit with the fleet helper first:** `python3 .claude/scripts/indexnow-submit.py --urls-file <list>` (or pass the URLs as arguments). It uses the key Bing accepts for this host (a few hosts are pinned to an older key, so the fleet key returns 403 there), tries api.indexnow.org, then www.bing.com, then yandex.com, and relays through layer3labs-web `/api/indexnow-relay` when the sandbox blocks those hosts. Exit 0 means accepted. Use the manual steps below only if that script is missing. Never POST to `api.indexnow.com`; that host does not exist.
+
+If any phase in this workflow hits an IndexNow error — the site's `public/<32-hex>.txt` challenge file is missing, the key can't be discovered, or the IndexNow API returns a key-verification error (403/422) — **fall back to this project-wide key**:
+
+- **env var name:** `INDEXNOW_KEY`
+- **key value (default):** `dc557f6bfced447aa1a71771d8a0d24a`
+
+When falling back:
+1. Create `public/dc557f6bfced447aa1a71771d8a0d24a.txt` with the content `dc557f6bfced447aa1a71771d8a0d24a` (filename = key = content) so search engines can verify.
+2. Commit + push it as part of the run (before the IndexNow POST fires) so the challenge file is live.
+3. After the deploy is verified, retry the IndexNow POST using this key.
+4. If retry still fails, note the HTTP status in the final report but do NOT block the rest of the run.
+
+This applies to **every phase that discovers or submits to IndexNow** in this workflow — Phase 0 (discovery), any prep phase that stages the IndexNow URL list, and the final submission phase. Prefer the env var if set; otherwise use the hard-coded default above.
+
+<!-- mindmap-execution-v1 -->
+Follow `_mindmap-execution.md` for mechanical chart rendering/validation, relevant same-run analysis, approved-case retrieval and final analysis/rendered checks. Revalidate an existing/imported chart against the complete current structured manifest; its existence is never a readiness exemption.
+<!-- /mindmap-execution-v1 -->
+
+[Source: .claude/commands/mindmap-pass/phase-build-brief.md]
+[Repeated passage at this position: .claude/commands/mindmap-pass.md, paragraph 4. Use its exact text under this source/section context.]
+
+# Phase BUILD-BRIEF — Generate the chart from a free-form input brief (SEMRUSH-validated)
+
+<!-- mindmap-visible-checks-v1 -->
+**Approval chart: completed preparation only.** Follow `_workflow-checkpoints.md`, “Approval chart — completed preparation only.” Finish applicable instruction reading, primary-source research, duplicate review, testing/evidence decisions, and takeaway briefs BEFORE showing the chart. Show one **Preparation check** row: `✅ Passed` linking readiness evidence (or `❌ Failed` with specific failures blocking approval). Keep Phases 1–9 as future execution; never show pending cells. Unattended `*-auto` callers build `preparationMode: "full"` (`## New-page briefs` + link inspections) upfront. Manual `/mindmap-pass` runs use `preparationMode: "fast-scope"` (`## Scope briefs` inline in saved and displayed charts) before the Phase 0 human gate, then expand `preparationMode: "full"` for approved rows right after approval before Phase 3 writing. Approval remains the sole human gate.
+<!-- /mindmap-visible-checks-v1 -->
+
+
+<!-- keyword-discovery-bounds-v1 -->
+**Discovery limits:** `expand --limit N` returns up to N provider ideas PLUS N unique autocomplete ideas (at most 2N, default N=20). This is a per-source batch bound, not a chart/page quota or coverage guarantee. Keep existing provider pins and spending caps. Save raw outputs; filter off-topic matches before ranking, validate exact shortlisted phrases, and record counts by source, rejected topics and the stop/widen reason. If relevant families remain unexplored, prefer free question-prefix mining or narrower seeds before raising the limit. When `docs/model-launch-page-family.md` exists on an AI-model launch brief, its Lean Launch Set overrides legacy Tier-0 lists and Lens-3 `-alternatives`: set `modelLaunch: {level, modelSlug}` (`small`/sub-tier = 3 new pages max `{model}-explained`, `{model}-pricing`, `{model}-vs-{prev}`; never `-alternatives` or `-for-business`; manual caps are ceilings, never quotas). Never terminate other runs with a broad process-name kill; use this run's task ID/PID.
+<!-- /keyword-discovery-bounds-v1 -->
+
+[Repeated passage at this position: .claude/commands/mindmap-pass.md, paragraph 8. Use its exact text under this source/section context.]
+
+
+<!-- decision-evidence-v1 -->
+Before selecting expansion work, read available outcomes in `reports/content-evidence.jsonl` and the linked growth records. Reuse the existing reader-question/demand checks; do not add another intent quota. Prefer demonstrated useful approaches where the evidence transfers, retain inconclusive labels, and avoid duplicating existing tools or topics. Phase 3 confirms the evidence and presentation before writing; a tool idea alone is not a growth case.
+<!-- /decision-evidence-v1 -->
+
+<!-- fleet-evidence-contract-v2 -->
+**Shared evidence and takeaway rules:** Read the active project's `.claude/commands/_decision-evidence.md` and `_testing-labels.md` before planning, writing, enriching, auditing or publishing substantive content. These contracts govern original analysis, honest visible attribution, intent-based takeaways and tested-label decisions, including work handed to mindmap by another routine. Apply them inside the existing Phase 3 / independent Phase 4 process; no separate workflow or extra human gate. Preserve site permissions, medical/psychedelic and all other exclusions, required professional review, existing sufficient verdicts and the no-addition branch. Local eligibility or an old TESTED template never proves a test happened. If this is a global routine, resolve its sibling shared contracts and install them in the active project before use while preserving local rules. These requirements supersede older blanket testing licenses, copied methods and automatic year/label instructions.
+<!-- /fleet-evidence-contract-v2 -->
+
+This is Step 1 of `/mindmap-pass`. It replaces seo-gsc-pass's "build chart from 5 GSC screenshots" step. Instead of reading GSC keyword screenshots, it reads **whatever the user handed you** — free text, an image, a chart/screenshot of data, a pasted news article, a URL, or a half-formed "here's a thought" — interprets it into concrete topics the user wants on the site, **validates and expands that intent through the keyword demand ladder (best available provider PER FIELD, plus Google Autocomplete on top of every call)**, reads the LIVE SERP for the surviving cluster heads, clusters the demand, and produces the **same machine-readable chart** the rest of the phases (0–9) consume unchanged.
+
+Run this phase **only when** Phase 0 cannot find a chart at `reports/mindmap-pass/<TODAY>.md`. If today's chart already exists, or the user passed a chart path argument, skip this phase and let Phase 0 load it.
+
+This phase produces the file Phase 0 then loads. Once it is saved, control returns to Phase 0 for selection, staleness check, parsing, and the manifest gate.
+
+## The input can be ANYTHING — capture it first, do not ask for GSC data
+Unlike `/seo-gsc-pass`, this workflow does **not** want GSC screenshots. Its input is the user's own brief about what they want added to the site. Accept and handle every input modality present in the current conversation:
+
+- **Free text / a "random thought"** — e.g. "I think we should own the 'AI receptionist for dental offices' angle." Treat the text as the statement of intent; extract the topics, entities, audiences, and angles inside it.
+- **An image** — read it. A **photo/screenshot of a whiteboard, slide, or notes** → OCR/transcribe the concepts. A **chart or data screenshot** (e.g. a trend graph, a competitor's traffic table, a keyword list) → read the axes/labels/rows and 

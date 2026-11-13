@@ -1,0 +1,46 @@
+estSha256`, actual file `readinessSha256`, concrete `evidence`, and `requestCoverage: [{requirementId, status: "PASS", evidence}]` covering each request requirement exactly once. Evidence explains how the actual plan satisfies the request, including example selection and useful presentation; reject a narrowed substitute even when its own facts are correct. Use `mindmap-gates.py hash --file <file>` to calculate hashes. A hash or helper return is not independent judgment. Never fabricate a review or populate PASS defaults.
+
+```bash
+python3 .claude/tools/mindmap-gates.py render-chart --manifest <RUN>/approval-manifest.json --review <RUN>/chart-review.json --out <CHART>
+python3 .claude/tools/mindmap-gates.py validate-chart --manifest <RUN>/approval-manifest.json --review <RUN>/chart-review.json
+```
+
+Present the complete generated chart, including the original request/acceptance, presentation decisions, every actual brief and link placement, unchanged. If long, show it in complete bounded parts before the sole approval question. The renderer provides exactly one preparation summary row. A failed command means a blocked readiness report with specific failures, never an approval-ready chart. Do not hand-render a shortened substitute. Revalidate imported/old Markdown charts by reconstructing their actual supported manifest; do not grandfather missing requirements/medium decisions or invent research. Changed sources, readiness or scope invalidate the affected review. No-addition charts may have empty action/brief arrays with their real explanation and do not request pointless content approval. Automatic revalidation of an already-approved unchanged scope adds no human gate. Preserve the original 12 action-column positions, appended row IDs, date frontmatter and `## Emerging search patterns (clusters)` heading. Non-content rows retain explicit N/A fields and exact file-or-route targets; body rows require actual format/medium decisions, reader intent and an exact route. The writer also checks that the actual saved chart exactly matches the complete deterministic rendering.
+
+## 2. Execute relevant analysis before the writer
+
+Choose the method that improves the actual reader decision. Run accessible calculations/modeling when meaningful; records are outputs of the run, not a demand that the owner supply a historical test log. A useful model starts from supported public facts, explicit assumptions and a decision-changing condition. Estimates need defensible inputs/ranges. Never derive actual product accuracy, operating success or customer savings from unrelated public benchmarks.
+
+Do not force calculations. For a combat drone with undisclosed price/performance, for example, use verified public facts, useful comparisons, unknowns and the limits of any defensible estimate. If there is no defensible estimate, explain that in the internal record and narrow the answer. News, definitions, qualitative comparisons and already sufficient pages may require no numerical work. Preserve medical/psychedelic/professional exclusions and required human professional review. A source-based or inconclusive answer can pass; arbitrary arithmetic cannot create value. The existing no-addition branch remains terminal and skips writing, tool building and numerical/growth work unless another real experiment needs them.
+
+Before assembling closed facts, retrieve the relevant approved client/fleet records:
+
+```bash
+python3 .claude/tools/mindmap-gates.py cases --query "<exact approved reader_question, including its internal evidence tag>" --publisher <active-site-domain> --out <RUN>/evidence/<slug>/cases.json
+```
+
+This reads the active site's full `_experience.md` plus the shared approved bank, preserving source IDs, exact quotes, ownership and attribution limits. It does not grant another site Layer3's history or testing permission. Record selected/rejected matches and why; never force a client mention. Additional accessible approved records can be added with their source, precise public-use scope and supported facts; a client list alone does not establish outcomes. Keep private records private. Update the shared bank through the existing reviewed sync when approved source facts change. For Layer3, also run the existing durable reader-survey catalog/facts lookup every Phase 3 run. No completed survey is not zero demand; do not simulate respondents or require waiting for a new survey.
+
+Extend the existing `evidence/<slug>/evidence.json` with `gateSchemaVersion: 1`, `author`, `route`, `readerQuestion`, `decisionGap`, actual `finding`, `conditions`, `whatWouldChange`, `basis`, `sourceArtifacts` (artifact references alongside the existing source URLs/check dates), `caseSelection` (the retrieval artifact reference) and `caseDecisions` (actual selections/rejections and reasons).
+
+Include `approvedPlan: {manifest: {path, sha256}, review: {path, sha256}, actionId}` and copy the approved action's `presentation` exactly. The helper revalidates that plan and its independent request-coverage review; changing or substituting a plan cannot silently narrow the final audit. For a built/reused interactive contribution, `presentationArtifacts` contains the actual implementation files as `{path, sha256}` before framing-prose generation. If the page uses Layer3 context queries, record their exact array as `caseSearchContext`; its receipt is regenerated from the question and that context. Include `caseUses` as described in `_layer3-evidence-sources.md` (or `[]` for none). Keep the terminal no-addition exemption.
+
+Keep the dependency order acyclic: source/request inputs → preparation manifest/readiness → independent chart review → execution packet → final review. Preparation may reference source snapshots, case retrievals, input data and completed analysis outputs; it must not hash or embed the final execution packet or final review, because those bind back to the approved plan. When revalidating an older manifest that references `evidence.json`, replace that reference with its actual preparation input artifacts, then independently review the updated plan before constructing the final bound packet. Do not edit historical PASS receipts or fake a fixed-point hash. An unbound terminal no-addition decision can remain preparation evidence because it does not point back to a plan; it still cannot authorize a writer call.
+
+- `basis: calculated|modeled`: include `method`, `units`, `limitations`, `counterexample`, and `execution: {command: [actual executable and arguments], code: {path, sha256}, inputs: [{path, sha256}], output: {path, sha256}}`. Execute the reviewed code, save machine-readable JSON results and retain all sourced inputs/assumptions. Fixed seeds are required where relevant. Do not merely copy arithmetic into a report and claim a saved executable run.
+- `basis: measured`: include method, units, limitations, counterexample and actual `runs: [{testedAt, scope, artifact: {path, sha256}}]`. Existing relevant verified owner/product records are reusable. Physical or stochastic product tests do not need identical fresh API responses. Preserve the separate testing-label adapter's exact full-coverage/approval requirements.
+- `basis: reported|client-record`: retain `whyNoQuantitativeAnalysis` and the actual `reasoning` from sources to conclusion. A useful non-numerical synthesis or relevant documented case can pass. Do not imply an executed product test.
+
+The packet reader question and case-retrieval query must match the approved action.reader_question exactly, including its internal question-evidence tag. If that string changes, rerun deterministic case retrieval and refresh caseSelection and affected artifact hashes together before writer dispatch. Keep the tag internal; public reader questions and copy contain no workflow labels. Keep the existing source URLs, provenance, takeaway, survey and applicable growth fields. These gate fields extend the current packet; they do not create a second evidence system. If the page needs a claim the sources cannot support, narrow/exclude it rather than manufacturing numbers.
+
+Mindmap `content_gen.py write`, `section` and `fix` calls require:
+
+```text
+--mindmap-manifest <RUN>/approval-manifest.json --mindmap-review <RUN>/chart-review.json --analysis-packet <RUN>/evidence/<slug>/evidence.json
+```
+
+The shared writer checks these before spending a call when caller/path identifies Mindmap. Do not relocate prompts or change caller names to bypass it. The target must match the manifest and packet. This verifies preparation/evidence structure, not Phase 0 human approval or a final content PASS; the existing permissions and independent review remain mandatory.
+
+## 3. Existing Phase 4 verifies usefulness, reproducibility and the render
+
+First judge whether the finding resolves the approved reader decision beyond a rewrite of sources. Reject trivial arithmetic used as an originality claim, unsupported assumptions, missing material conditions, or an asset that adds no v

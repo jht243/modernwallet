@@ -1,0 +1,165 @@
+{
+ "schemaVersion": 1,
+ "jobId": "trend-lane-c-2026-11-13",
+ "author": "mindmap-build-worker",
+ "date": "2026-11-13",
+ "source": "trend-pass-auto Lane C 2026-11-13: top GSC queries (7d to 2026-11-13) plus research pack, SEMRUSH-validated",
+ "interpretedBrief": "Our top GSC queries for the 7 days ending 2026-11-13 are 4 near-zero-demand queries (one a search operator) with 0 clicks; the research lanes found no trend and flagged 'tax deferred growth calculator' as uncovered. BUILD found that flag wrong (/taxable-vs-tax-deferred/ exists), found every query already served by an existing page, and found one adjacent cluster (401(k) balances by age) whose central by-age figures cannot be grounded (Vanguard's own page contradicts itself; its PDF has no by-age table). The outcome is a no-addition chart with two HELD enrichments.",
+ "chartPath": "reports/mindmap-pass/2026-11-13-trend-lane-c.md",
+ "actions": [],
+ "newPageBriefs": [],
+ "preparation": {
+  "status": "PASS",
+  "readiness": {
+   "path": "reports/mindmap-pass/2026-11-13-trend-lane-c/readiness.md",
+   "sha256": "c6d83328e27782a68aecde02f408c0ae6a6322dec12eb1905a53685861f56a3e"
+  }
+ },
+ "evidenceFiles": [
+  {
+   "path": "reports/mindmap-pass/2026-11-13-trend-lane-c/source-brief.md",
+   "sha256": "68ea513462eac0ac1249988daf83aad215e68e0b99f09596558e9d86d8363972"
+  },
+  {
+   "path": "reports/trend-pass/2026-11-13.pull.json",
+   "sha256": "2e37b424ec230e575cf651a4700f1f826378a9cde69eebb27493f3ba1f952daa"
+  },
+  {
+   "path": "reports/trend-pass/2026-11-13.research.md",
+   "sha256": "19dc3ecbac8a8427d3c976e172ab5ae28ec70ad11133580869c43c85bd4f1084"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-13-trend-lane-c.volumes.json",
+   "sha256": "532a94847cf54aa1d6111c26b8d67554841596b0db13ad2d93e28aa161773d8d"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-13-trend-lane-c.volumes2.json",
+   "sha256": "323f7d35bddfd43728cea87303cf78485a55ade816558107d7da41d431470d89"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-13-trend-lane-c.serp.json",
+   "sha256": "b8a6097cef9c9723e3a8fb62db8845f5d388b72afb9d6bddbaa8b2c047835f08"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-13-trend-lane-c.coverage.txt",
+   "sha256": "dfd3de113cdb62968e7a22f72958571c68edd5287cdca3722a8039c48dace861"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-13-trend-lane-c.expand.roth-or-regular-401k.json",
+   "sha256": "d826a72441b296a81c237fd63b2faaeb115c1fe45a3c42c230b7d732f6363a27"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-13-trend-lane-c.expand.tax-deferred-growth-calculator.json",
+   "sha256": "c26e3daaffad388f5b79ea037c08cfa4f50d769e368bd648e72c736a70988ca0"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-13-trend-lane-c.expand.utma.json",
+   "sha256": "5c56b10133cd77abe42c6f578a4812969583e5f7c2ad7e4a216209e0fbb65858"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-13-trend-lane-c.autocomplete.roth-or-regular-401k.csv",
+   "sha256": "0064a63a78c913182410ed4a2b10d450dad233befb8284a15915e97bb08fa2c7"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-13-trend-lane-c.autocomplete.tax-deferred-growth-calculator.csv",
+   "sha256": "5beb99018a32ad4c382bc7c5ce1aa17fa5f162fcb088128a8709325473b91141"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-13-trend-lane-c.autocomplete.utma.csv",
+   "sha256": "f98efdd4bfd6899400e90ac30598d8ae49f9b7e0802b4d37542d54c61814cc5e"
+  }
+ ],
+ "candidateDispositions": [
+  {
+   "candidate": "site:themodernwallet.com",
+   "decision": "skip",
+   "reason": "Search operator, not a reader query (source top-10)."
+  },
+  {
+   "candidate": "roth or regular 401k",
+   "decision": "skip",
+   "reason": "880/mo KD40 (SEMRUSH us 2026-11-13); /compare/roth-401k-vs-traditional-401k, /roth-vs-traditional-401k-calculator and /compare/401k-vs-roth-ira already answer it; wording-only gap, prior DROP 2026-11-02 (source top-10).",
+   "target": "/compare/roth-401k-vs-traditional-401k/"
+  },
+  {
+   "candidate": "tax deferred growth calculator",
+   "decision": "skip",
+   "reason": "30/mo KD0; research-pack UNCOVERED flag refuted: /taxable-vs-tax-deferred/ with engine src/lib/taxable-vs-tax-deferred.ts exists and is live; ledger DROPPED 2026-11-12 (source coverage/top-10).",
+   "target": "/taxable-vs-tax-deferred/"
+  },
+  {
+   "candidate": "utma",
+   "decision": "skip",
+   "reason": "12,100/mo KD4; head and UTMA tax cluster served by guides/utma-custodial-account-explained, compare/utma-vs-ugma, compare/529-vs-utma and guides/custodial-account-taxes-kiddie-tax; ledger DROPPED 2026-11-10 (source top-10).",
+   "target": "/guides/utma-custodial-account-explained/"
+  },
+  {
+   "candidate": "Lens 2 enrichment: 401(k) balance by age section on guides/average-retirement-savings-by-age (how much should i have in my 401k 6,600; average 401k balance by age 12,100; 401k by age 1,600)",
+   "decision": "defer",
+   "reason": "Real gap (page is Fed combined-account data, not 401(k)-specific) but the central by-age figures are not groundable: Vanguard HAS 2025 PDF has no by-age table, Vanguard's investor page table and prose disagree, HAS 2026 PDF unretrievable, Fidelity 403. HELD, not DROPPED; re-competes (source Lens 2).",
+   "target": "/guides/average-retirement-savings-by-age/"
+  },
+  {
+   "candidate": "HELD enrichment: guides/utma-custodial-account-explained state age-of-majority table, 18/21, transfer or close a UTMA, 2 FAQs",
+   "decision": "defer",
+   "reason": "State statute texts still not available (no data/sources/); ledger HELD 2026-11-10 and 2026-11-12; re-competes (source coverage/top-10).",
+   "target": "/guides/utma-custodial-account-explained/"
+  }
+ ],
+ "emergingClusters": "No emerging clusters detected this run.",
+ "exclusions": [
+  "site:themodernwallet.com: search operator, not a query.",
+  "roth or regular 401k: DROP, exists (/compare/roth-401k-vs-traditional-401k, /roth-vs-traditional-401k-calculator, /compare/401k-vs-roth-ira); wording-only gap.",
+  "tax deferred growth calculator: DROP, exists as /taxable-vs-tax-deferred/ (research-pack UNCOVERED flag was a grep miss on the hyphenated string); 30/mo.",
+  "utma standalone page and UTMA tax cluster: DROP, exist (utma explained guide, utma-vs-ugma, 529-vs-utma, custodial-account-taxes-kiddie-tax).",
+  "what is tax-deferred growth: DROP, 10/mo KD37, too thin; calculator FAQs answer it.",
+  "401(k) balance by age enrichment: HELD, by-age figures not groundable from a consistent primary source; not DROPPED.",
+  "UTMA state table/transfer enrichment: HELD, state statutes unavailable; not DROPPED.",
+  "Lens 3 vs/alternatives/pricing: no uncovered comparison; Roth/traditional 401k and UTMA vs pages exist; no branded competitor query this run.",
+  "Lens 3b model-launch overlay skipped per caller (not an AI-content repo)."
+ ],
+ "executionPlan": [
+  {
+   "phase": 1,
+   "action": "Skip: no consolidation rows; advisory only"
+  },
+  {
+   "phase": 2,
+   "action": "Skip: no metadata rows"
+  },
+  {
+   "phase": 3,
+   "action": "Skip: no new-content rows; no writer call"
+  },
+  {
+   "phase": 4,
+   "action": "Skip: nothing to audit"
+  },
+  {
+   "phase": 5,
+   "action": "Skip: no body rows; 401(k)-by-age and UTMA enrichments HELD"
+  },
+  {
+   "phase": 6,
+   "action": "Skip: no link rows"
+  },
+  {
+   "phase": 7,
+   "action": "Skip: no routes to add; nothing for IndexNow"
+  },
+  {
+   "phase": 8,
+   "action": "Print the summary table and continue"
+  },
+  {
+   "phase": 9,
+   "action": "No commit of site files; ledger rows only by Phase 5 of the caller"
+  }
+ ],
+ "publicationScope": {
+  "commit": false,
+  "push": false,
+  "liveVerification": false,
+  "indexNow": false
+ }
+}

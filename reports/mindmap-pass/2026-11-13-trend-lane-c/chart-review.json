@@ -1,0 +1,25 @@
+{
+ "jobId": "trend-lane-c-2026-11-13",
+ "reviewer": "review-trend-lane-c",
+ "manifestSha256": "03a4bf2815a7ef2f8e4acd4509e7343decaf2160a8a5be97c23d7f9c6bc429d4",
+ "readinessSha256": "c6d83328e27782a68aecde02f408c0ae6a6322dec12eb1905a53685861f56a3e",
+ "verdict": "PASS",
+ "round": 1,
+ "findings": [
+  {
+   "id": "CR-A1",
+   "severity": "advisory",
+   "summary": "coverage.txt header says 9 candidates (8 sections) while readiness.md says 10 candidates plus a separate 401k-by-age run, and no candidate was submitted for the head 'tax deferred growth calculator' itself. The lookup returned 'none found' for 'what is tax-deferred growth' and did not surface /taxable-vs-tax-deferred/ or /guides/custodial-account-taxes-kiddie-tax for the utma-taxes candidate.",
+   "fix": "No chart change needed; the reviewer verified the homes directly against src/data and live pages. Future BUILD runs should correct the candidate count in readiness and include the calculator head phrase as a lookup candidate; lookup misses are not evidence of no coverage."
+  },
+  {
+   "id": "CR-A2",
+   "severity": "advisory",
+   "summary": "'what is tax-deferred growth' (10/mo KD37) appears in exclusions but not in candidateDispositions; the 401(k)-by-age reader question carries only a verb-only tag (no PAA read).",
+   "fix": "None required for a terminal no-addition chart. If the 401(k)-by-age HELD enrichment re-competes, read PAA/question sweep for the head before any row is built, and ground the by-age table from a single clean primary source (Vanguard HAS 2026 table as text, or owner-supplied data/sources/)."
+  }
+ ],
+ "resolvedFindingIds": [],
+ "evidence": "Independent CHART-REVIEW (round 1) by review-trend-lane-c in its own bundle (preflight-chart-review, 28/28 parts read, check delivery-complete-sources-current). Recomputed from disk: manifest canonical hash and readiness sha256 match; all 13 evidenceFiles hashes and the frozen intake (pull.json, 4 queries) match. candidateDispositions account for all 4 intake queries (operator skip, 3 skips) plus the two HELD enrichments; none silently dropped. Independent verification: (1) /taxable-vs-tax-deferred/ returns 200 live, title 'Taxable vs. Tax-Deferred Growth Calculator', calculators.ts id taxable-vs-tax-deferred, targetKeyword 'taxable vs tax deferred calculator', engine src/lib/taxable-vs-tax-deferred.ts exists, FAQ 'difference between tax-deferred and tax-exempt' present; the Lane B UNCOVERED claim ('no tax deferred string in src/data') is refuted by grep hits in calculators.ts, guides.ts, comparisons.ts, cross-links.ts. (2) Targets for roth or regular 401k (compare/roth-401k-vs-traditional-401k, roth-vs-traditional-401k-calculator, compare/401k-vs-roth-ira) and utma (guides/utma-custodial-account-explained, compare/utma-vs-ugma, compare/529-vs-utma, guides/custodial-account-taxes-kiddie-tax) all return 200; kiddie-tax page has H2 'Who pays tax on a custodial account?' and the matching FAQ; UTMA guide has no state age-of-majority table, so the HELD enrichment is a real gap. (3) SEMRUSH figures in volumes.json/volumes2.json match the manifest (30, 880, 12,100 utma, 6,600/12,100/1,600 for 401k-by-age); prior ledger rows (2026-11-02 roth DROP, 2026-11-10 UTMA HELD and DROP, 2026-11-12 tax-deferred DROP and UTMA HELD) exist in earlier charts and coverage.txt. (4) Held-source claim reproduced: I fetched investor.vanguard.com/.../retirement/savings (HTTP 200) and the page prose says 65+ average $299,442 / median $95,425 and under-25 $6,899 / $1,948 while its table says 65+ $272,588 / $88,488 and a different under-25 row ($7,351 / $2,816); table 35-44 $91,281/$35,537 and 25-34 $37,557/$14,933 also present. Vanguard's own page is internally inconsistent, so HELD (not DROPPED) is correct and no unsupported YMYL figure enters the plan. The existing average-retirement-savings-by-age page already states the Fed combined-account figures are the closest match for 401(k) savings, so no contradiction is left on the page. (5) Adversarial duplicate-suppression: I inspected coverage.txt directly (not re-run) and cross-checked each candidate against the site; zero survivors and zero wrongful drops; no new-page or body row exists to cannibalize. (6) Keyword discovery: expand --limit 20 per seed, counts by source, accepted/rejected topics and stop reason recorded in readiness; SERP locked on all heads; autocomplete provenance retained. (7) Terminal no-addition branch: 0 actions, 0 briefs, no testing label (finance excluded under _experience.md section G), no growth.json, publicationScope all false, emergingClusters uses the exact build-brief wording, executionPlan phases 1-9 all explicit skips. Chart review limit: no prior chart-review.json exists for this job. Advisory findings only; none blocks.",
+ "requestCoverage": []
+}

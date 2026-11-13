@@ -1,0 +1,78 @@
+n auto-continue to Phase 9 (no approval stop)" |
+| 9 — Commit + deliver   | —    | "Single commit; push to {branch}; verify every affected live route and canonical; report failures; submit only verified live URLs to IndexNow after deployment; report SHA. Local-only scope excludes these publication actions and leaves deployment fields empty" |
+
+### Emerging search patterns detected this run (print directly above the phase table)
+
+This block makes the Lens 2 findings visible so the user reviews the *new search demand* — not just per-page tweaks — before approving. Source it from the chart's `## Emerging search patterns (clusters)` block:
+
+| Cluster (theme) | Member queries | Why emerging | Lever | Target | Format |
+|---|---|---|---|---|---|
+| {theme} | {q1; q2; q3} | {coverage gap / intent mismatch / rising} | {create new content / update existing body text / update existing metadata / flag→Phase 1} | {route or file} | {article / calculator / quiz/assessment / template / etc. — or n/a if lever isn't create-new-content} |
+
+- If zero clusters were detected, print exactly: **"⚠️ No emerging search patterns detected this run."** — and call it out explicitly, because emerging-pattern detection is a core tenet. A run with zero clusters AND only literal-intent rows is a signal the brief was too narrow or Lens 2's SEMRUSH expansion underperformed; tell the user so they can decide whether to re-run with a richer brief.
+- Each cluster's lever here must reconcile with the phase counts below (a `create new content` cluster is counted in Phase 3's rows, a `update existing body text` cluster in Phase 5, etc.).
+
+### Rules
+- **Rows column**: integer count of chart rows in that bucket, or `—` if the phase has no chart rows (audit, sitemap, summary, commit).
+- **Reader question is part of the approval.** Every Phase-3 and Phase-5 row in the Plan column carries the chart's `reader_question` **with its evidence tag** (`[PAA n/m <pattern>; ac n/m]`) and `answer_placement` (cols 10–12). A create/body row whose chart entry lacks them, or whose col 10 has no evidence tag, is an **Ambiguous / skipped** row (HARD STOP below) — the pass does not write a page whose question was never decided from evidence.
+- **Print the question-evidence flags above the phase table**, as their own short list, so the user sees them before approving: every row tagged `[verb-only — no PAA, no completions]` (the question is a guess, not a measurement) and every row tagged with half or more off-topic PAA (`[PAA 3/6 off-topic: lawyer salary]` — Google is not confident the phrase means what we think). Zero flags → print `Question evidence: every content row's question is PAA- or completion-backed.`
+- **Plan column**: must list the **actual targets and actions per row** — never just row numbers. Sourced from each chart row's `solution` / `target` columns, restated in one short clause per row, joined with semicolons. If a phase has zero rows, write `skipped — no rows` instead of leaving the cell blank.
+- **Omit rows whose count is 0** unless it's one of the always-present phases (4, 7, 8, 9). For 0-row buckets, write `skipped — no rows` in the Plan column instead of dropping the row.
+- **Ambiguous / skipped rows**: if any chart rows could not be classified, append a final row to the table:
+
+  | — | Ambiguous / skipped | {N} | "**HARD STOP** — list each ambiguous row + why it could not be classified. User must reclassify or remove before approving." |
+
+  If `N > 0` here, the gate cannot be approved until the user resolves them.
+
+### After printing the table
+
+Prompt the user with **exactly this question** (or its functional equivalent):
+> "Manifest above ({N} actionable rows across {M} phases, including {C} emerging search-pattern clusters). Approve to start Phase 1, or pause to revise the chart?"
+
+Acceptable approvals: "approve", "go", "start", "yes", or any clear affirmative.
+
+If the user declines or wants to revise: STOP cleanly. Do not start Phase 1. Wait for them to either edit the chart and re-run, or give new direction.
+
+Only after explicit approval, begin Phase 1.
+
+**Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.
+
+<!-- mindmap-execution-v1 -->
+Load `_mindmap-execution.md` and validate/render this exact chart from its independently reviewed manifest before presenting it. Preserve every full brief and the single evidenced preparation row; revalidate imported charts rather than accepting missing detail. The existing Phase 0 approval remains the sole human gate.
+<!-- /mindmap-execution-v1 -->
+
+[Source: .claude/commands/trend-pass/phase-4c-mindmap.md]
+[Repeated passage at this position: .claude/commands/mindmap-pass.md, paragraph 9. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass.md, paragraph 4. Use its exact text under this source/section context.]
+
+# Phase 4c — Mindmap lane (Lane C — the ONLY builder, EVERY run)
+
+<!-- workflow-checkpoints-v1 -->
+**Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Follow the sibling `_rendered-page-audit.md`: finish central source research before the preparation PASS; audit the complete rendered pages after all template/affiliate/link changes, block inherited contradictions affecting the answer, and verify exact reviewed output live with `rendered-audit.py` before closing deployment and measurement records. Install that contract and helper with the checkpoint dependencies. A read-only reviewer may write internal evidence receipts without editing content. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
+<!-- /workflow-checkpoints-v1 -->
+
+
+> **‼️ LANE C IS THE PASS — NEVER SKIP OR SHORTEN IT (owner rule 2026-10-07).** Lanes A and B only
+> feed Lane C; without Lane C this routine does nothing. Phase 4c runs on EVERY run, in full:
+> mindmap's complete `phase-build-brief.md` (all lenses, keyword demand ladder, Autocomplete, SERP
+> reads, adversarial duplicate-suppression reviewer) on the top-10 queries plus the research pack.
+> An empty research pack, an already-caught trend, "all top-20 queries covered", or low clicks are
+> NEVER reasons to skip Phase 4c, run a "reduced" BUILD-BRIEF, or replace it with your own
+> classification of the queries. A run that does not save a full BUILD-BRIEF chart at
+> `reports/mindmap-pass/<date>-trend-lane-c.md` is a FAILED run (`--status failure`), even if it
+> builds nothing.
+
+
+**Owner design (layer3 2026-10-05, ported here 2026-10-06):** Lanes A and B research; mindmap builds. Every run, mindmap gets the top-10 queries (7-day window) plus the research pack from Phase 4 as its brief, and decides what ships. It runs even when the research pack is empty.
+
+## Owner decisions — do not relitigate
+- **Inline, same run.** No separate routine, no handoff file beyond the research pack.
+- **Mindmap decides scope.** It may drop or reshape any Lane A/B finding (it usually won't). This pass adds no winner-protection filter of its own — mindmap's process handles it.
+- **Cap: 25 new pages per run TOTAL** (one shared budget across all lanes).
+
+## Still binding (run-wide guardrails)
+- **No metadata rows** — drop any `update existing metadata` row from the chart; never run mindmap phase-2.
+- **No consolidation/redirects** — mindmap phase-1 runs in its ADVISORY form only (writes no edits); drop any row that would 301/canonicalize.
+- **Additive only** — `update existing body text` rows ADD a section via `content_gen.py section`; never rewrite existing copy. `add internal links` rows are allowed.
+- **Format guard** — `article` / `comparison table/database` rows AND tool rows (`interactive tool` / `calculator` / `quiz/assessment`) are auto-built — tool rows by mindmap Phase 3c (`.claude/commands/mindmap-pass/phase-3c-tool-build.md`: mirror this repo's existing tool wiring, client-side logic, `data-tool` root) and audited by Phase 4's tool checklist; only `template` / `glossary/reference` / `data report` rows go to the digest as flagged specs (`reports/mindmap-pass/specs/<slug>-spec.md`). (MINDMAP-BUILDS

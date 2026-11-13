@@ -1,0 +1,64 @@
+efore expecting cloud to use them. Missing helpers, failed verification or stale inputs block the affected repository; resolve/integrate the listed dependencies while preserving unrelated work, then recheck. Never bulk-copy dirty files, bypass the check, invent a passing receipt or publish inherited changes without their required review. The check permits this run's own edits after a verified start. Preserve all existing scope, exclusions, schedules, approvals and publication rules. Non-repository tasks have no checkout to check. No new human approval gate.
+Run startup as a standalone command and inspect its actual exit code; never pipe it through head/tail/tee or continue after failure.
+Startup returns a fresh `runId` after verification; pass it via `--run-id` to this run's later startup checks and every `workflow-preflight.py prepare`. Never reuse an old run ID for a new routine, including in the same chat. A runner may instead supply a fresh per-invocation `WORKFLOW_RUN_ID` consistently.
+<!-- /workflow-source-freshness-v1 -->
+
+# Phase 0 — Discover project facts + load chart
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-build-brief.md, paragraph 3. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass.md, paragraph 8. Use its exact text under this source/section context.]
+
+
+Before presenting the manifest, read available `reports/content-evidence.jsonl` outcomes under `_decision-evidence.md`, even when reusing an existing chart. Use them to explain proposed priorities within the requested scope; do not silently expand or replace an approved chart.
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-build-brief.md, paragraph 7. Use its exact text under this source/section context.]
+
+Auto-discover every project fact by inspecting the repo. Hardcode nothing; print what you find.
+
+- **BASE_URL** — from sitemap `<loc>`, the canonical logic, or JsonLd builders.
+- **Framework + deploy mode** — e.g. Next.js static export vs server. Static export = **no server-side 301s**; consolidation must use canonical, never `redirects()`.
+- **Canonical mechanism** — where `<link rel="canonical">` is emitted (often a shared Layout/Head). Note whether it's auto self-referential and whether a prop overrides it. Note any auto title-branding or description truncation.
+- **IndexNow key** — find `public/<32-hex>.txt` (filename = key, content = same key). If absent, note IndexNow will be skipped + flagged.
+- **Sitemaps** — list `public/sitemap*.xml`. Infer the route→file routing from existing `<loc>` entries. Note the `<url><loc>…</loc><lastmod>…</lastmod></url>` format.
+- **Page template + schema builders** — the strongest existing pillar page and the reusable SEO components / JsonLd builders it uses. New pages mirror these.
+- **Depth checker** — does `package.json` expose a `check-depth` script (i.e. `scripts/check_depth.mjs`, installed by `/new-site`)? Record yes/no. Phase 4's depth gate runs it when present and falls back to source-level word counting when absent. Do NOT create it here if it's missing — that is `/new-site`'s job at build time.
+- **CONTENT STANDARD** — read 2–3 of the highest-quality existing pages and extract voice, depth, claims discipline, structure, and CTA style. This derived profile is the quality bar Phases 3 and 5 must match. Print a short summary.
+- **Business / brand name** — the site's own brand name (from the `<title>` branding suffix, logo alt text, footer, `package.json`, schema.org `Organization`/`publisher`, or the About page). This is the `{BUSINESS_NAME}` value: Phase 3 substitutes it into the content-writing prompt wherever `{BUSINESS_NAME}` appears, so internal-link guidance names the right brand. If genuinely undiscoverable, fall back to the bare domain.
+- **Push target** — default to the repo's default branch unless conventions say otherwise.
+
+## Load the chart
+
+By the time Phase 0 runs, the chart already exists — Step 1 in the orchestrator (`phase-build-brief.md`) built it from the user's input brief (SEMRUSH-validated), OR the user passed an existing chart path. Phase 0 only needs to LOAD the right file. Selection rules, in order:
+
+1. **Argument path wins.** If the user passed a chart path as an argument, use that file exactly.
+2. **Today's chart.** Else use `reports/mindmap-pass/<TODAY>.md` (`<TODAY>` = `date +%Y-%m-%d`) — this is the file Step 1 just wrote.
+3. **Newest by filename date.** Else, list all `reports/mindmap-pass/*.md`, parse the `YYYY-MM-DD` from each filename, and pick the latest date **in the filename** (NOT by mtime — re-saving an old chart bumps mtime misleadingly).
+4. **Ambiguity → STOP and ask.** Tie on filename date, or a filename that doesn't parse as `YYYY-MM-DD.md` → STOP and list candidates. Do not guess.
+5. **Nothing to load → STOP.** If no chart exists, Step 1 should have built it. If it didn't (no input brief was provided), STOP: "No chart to load. Paste the text / attach the image / drop the news article or link describing what you want added, then re-run — or pass `/mindmap-pass <path/to/chart.md>`."
+
+After selecting:
+- Print the selected chart path AND the date in its filename, so the user can verify.
+- **Staleness check:** parse `mindmap_pass_date:` from the chart's frontmatter. If it is more than **7 days old** vs today, STOP and warn: "Chart is N days old — the brief and its SEMRUSH validation may have moved on. Run anyway, or rebuild from a fresh brief?" Wait for confirmation. (Old SEMRUSH/news data ⇒ stale recommendations.)
+- Require frontmatter `status: ready-for-approval` (or legacy `status: ready-for-execution`) validated by `mindmap-gates.py validate-chart`. If missing, STOP — chart isn't ready.
+- Parse each row → `problem`, `solution`, `bucket`, `target`. Classify `bucket` by intent (consolidation / metadata / new-content / body / internal-links), not literal string. Ambiguous rows → "Ambiguous / skipped."
+- **Parse the `## Emerging search patterns (clusters)` block** (Lens 2 output). For each cluster capture: theme, member queries, lever (bucket), and target. If the block says `No emerging clusters detected this run.`, record zero clusters. Cross-check: every actionable cluster MUST have a matching row in the main action table (same bucket + target). If a cluster has no matching table row — or a cluster claims `create new content`/`update existing body text`/`update existing metadata` but no corresponding row exists in that bucket — treat it as a chart defect and STOP (the chart is internally inconsistent; the cluster would be silently dropped from execution).
+
+## Pre-execution manifest gate (HARD HUMAN GATE)
+
+After parsing the chart, verify coverage results and the independent duplicate-review report for every applicable content target, including the recorded existing-page intent decision and checked commits. A `lookup:` entry alone never passes the Duplicate check. Complete every applicable preparation check and link its independent review evidence before presenting the approval chart. Then **STOP and print the manifest table, then wait for the user's explicit approval before starting Phase 1.** Never auto-proceed past this gate.
+
+The manifest mirrors the format of the Phase 8 end-of-run summary so the user sees the same shape going in and coming out. One table, three columns: **Phase / Rows / Plan**. No redundant bucket column — each phase maps to exactly one bucket.
+
+### Manifest format
+
+| Phase                  | Rows | Plan |
+|------------------------|------|------|
+| 1 — Cannibalization detection (advisory) | {N}  | Per-row plan: "FLAG /page-a vs /page-b (same cluster) — recommend manual-consolidate / differentiate; **no edits, detection only**" |
+| 2 — Metadata           | {N}  | Per-row plan: "Rewrite metaTitle+desc on: {target 1}, {target 2}, ..." (or "skipped — no rows") |
+| 3 — New content        | {N}  | Per-row plan: "Create /route-a [article, page type + its depth floor — e.g. `comparison, ≥1,500 words`] — **answers "{reader_question}" in {answer_placement}**; create /route-b [calculator — user inputs X → outputs Y, BUILT in Phase 3c] — answers "{reader_question}"; ..." — name format for each row, the floor from the `phase-3-new-content.md` table, AND the chart's `reader_question` + `answer_placement` (cols 10–12) so the user approves the *question each page answers*, not just its topic |
+| 4 — Audit              | —    | "Adversarial review of {N} new pages from Phase 3" |
+| 5 — Body text          | {N}  | Per-row plan: "{target}: {section description} — answers "{reader_question}" at {answer_placement}; ..." |
+| 6 — Internal linking   | {N} + inbound | Per-row plan: "Add inbound to {target 1}, {target 2}; reinforce {N} Phase-3 pages with ≥3 inbound each" |
+| 7 — Sitemap + IndexNow | —    | "Add {N} routes; refresh lastmod on {N}; remove {N} consolidation losers; submit to IndexNow" |
+| 8 — Summary            | —    | "Print run summary, the
