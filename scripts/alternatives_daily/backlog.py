@@ -154,6 +154,18 @@ def cmd_set(state, args):
 
 def cmd_audit(state, args):
     row = find(state, args.id)
+    if getattr(args, 'upgrade', False):
+        # One audit per SEO upgrade of an already-published page (owner rule 2026-11-14).
+        if row['status'] != 'published' or row.get('seoUpgraded'):
+            fail('upgrade audits apply to published rows not yet upgraded')
+        audit = json.loads(Path(args.file).read_text())
+        if audit.get('verdict') not in ('PASS', 'FAIL') or not isinstance(audit.get('findings'), list) or not audit.get('reviewer'):
+            fail('audit needs verdict PASS|FAIL, findings list and reviewer')
+        if any(a.get('kind') == 'seo-upgrade' for a in row.get('upgradeAudits', [])):
+            fail('one audit per upgrade: this row already has its upgrade audit')
+        row.setdefault('upgradeAudits', []).append({**audit, 'kind': 'seo-upgrade', 'recordedAt': now()})
+        row.setdefault('history', []).append({'at': now(), 'status': row['status'], 'note': 'upgrade audit ' + audit['verdict']})
+        return {'id': args.id, 'upgradeVerdict': audit['verdict'], 'findings': len(audit['findings'])}
     if row.get('audit'):
         fail('one content audit per page: %s already has one (%s)' % (args.id, row['audit'].get('verdict')))
     audit = json.loads(Path(args.file).read_text())
@@ -205,6 +217,7 @@ def main():
     p = sub.add_parser('set'); p.add_argument('--id', required=True); p.add_argument('--status', required=True)
     p.add_argument('--note', required=True); p.add_argument('--field', action='append')
     p = sub.add_parser('audit'); p.add_argument('--id', required=True); p.add_argument('--file', required=True)
+    p.add_argument('--upgrade', action='store_true', help='record the one audit for an SEO upgrade of a published page')
     p = sub.add_parser('add'); p.add_argument('--file', required=True)
     p.add_argument('--status', default='eligible', choices=['eligible', 'pending'])
     args = parser.parse_args()

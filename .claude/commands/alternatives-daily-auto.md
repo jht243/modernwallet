@@ -30,14 +30,35 @@ Owner rules, November 13, 2026 (Jonathan). These supersede the local-controller 
    - "Want to be added to this alternatives page? Contact us" — the full-width dark CTA band with a
      pill button at the end of the second section (the first body section after the table section).
 4. **Facts:** every price, plan name, limit or feature comes from that product's own website as of
-   today. If a vendor publishes no price, write "Published plans; see vendor site". Never estimate,
+   today. If a vendor publishes no price, write "Quote-based; no public price" (a fact, not a deferral). Never estimate,
    round into a new number or carry a price from memory. Name the source in plain text where useful;
    keep the source URLs in `reports/alternatives-daily/<day>/<slug>-sources.json`, not as links.
-5. **Shape:** intro that answers "what should I use instead of <Product>?" in the first two
-   sentences; a comparison table (the subject plus 5–8 real alternatives: product, billing unit and
-   entry price, best fit); one short section per alternative; "When <Product> is still the better
-   fit"; a short verdict; 3–5 FAQs. Plain, neutral wording: "fits teams that…", not "you should…".
-   Follow `.claude/commands/_anti-ai-language.md` where it exists.
+5. **Full Mindmap SEO standard (owner rule 2026-11-14).** Every page follows this site's
+   `.claude/commands/_content-standard.md` IN FULL (SEO, INTENT, DEPTH, QUALITY, STYLE, VOICE,
+   COMPARISON, LINKS, ANCHOR, NEUTRALITY, AUDITOR, INTRO HUMANIZE) and `_anti-ai-language.md`,
+   exactly as a /mindmap-pass page would. Run its PREFLIGHT load step and record its row records:
+   `page type: comparison` (floor **1,500 body words**), `register: operator`, `medium: prose → prose`,
+   and `reader question: "…"` with its evidence tag. Minimum shape:
+   - SEO title 50–60 characters, H1 and title start "<Product> Alternatives"; Title Case headings;
+     primary keyword in the title, H1, first paragraph, final next-action sentence and 2–3 headings;
+     every acronym defined on first use; meta description with the keyword.
+   - First body sentence answers "what should I use instead of <Product>?"; answer the top
+     People-Also-Ask question in the opener; remaining on-topic PAA questions go in the FAQ.
+   - Comparison table: subject + 5–8 real alternatives (product, billing unit and entry price,
+     limits, best fit). Then one substantive H2 section PER alternative (what it is, pricing tiers
+     from its own site, who it fits, where it falls short versus <Product>, a worked cost example
+     where pricing allows), plus "How to Choose a <Product> Alternative" (decision criteria),
+     "When <Product> Is Still the Better Fit", "Who This Is Not For", "What Would Change Our
+     Answer", a short verdict and 4–6 FAQs (FAQ schema). Close on a concrete next action.
+   - Depth comes from answering more of the query (sub-questions, failure modes, cost arithmetic),
+     never padding. Table of contents when over 2,000 words.
+   - LINKS: 3+ contextual internal links to related pages on this site (hub, related guides,
+     comparisons) — internal links are encouraged. Owner override of the standard's link gate:
+     the ONLY external link is the subject product's official site (rule 2); other companies are
+     named in plain text.
+   - Data cells never defer ("see vendor site" fails the standard's deferral gate): state the fact
+     ("Quote-based; no public price", "Free plan; paid tiers from $X/month").
+   - TESTED never applies (nothing on these pages was tested). Neutral wording: "fits teams that…".
 6. **No ads, affiliate links, sponsored boxes or self-promotion** on these pages beyond the template's CTAs.
 
 ## Run steps
@@ -69,7 +90,19 @@ of this file. Day = America/Bogota date (`TZ=America/Bogota date +%F`).
 - Claim today's rows: `backlog.py claim --ids a,b,c`. The helper enforces 3 per day.
 - Nothing to do (cap reached or nothing qualifies) → report a no-op and stop.
 
-**2. Research and write** each claimed page per the page rules and the site adapter. Record the
+**1b. Upgrade pass (owner rule 2026-11-14).** Pages this routine published before the full SEO
+standard existed may be thin. Each run, after today's new pages are published (or if none are),
+take up to 3 rows with `status: published` and no `seoUpgraded` field, oldest first, and bring each
+page up to page rule 5 in place (same URL, slug and title start; refresh prices from each
+vendor's site). Give each upgraded page ONE audit as in step 4 and record it with
+`backlog.py audit --id <id> --file <file> --upgrade`, fix the findings, publish and live-check as in
+steps 6–7 (submit the upgraded URLs to IndexNow), then
+`backlog.py set --id <id> --status published --note "seo upgrade" --field seoUpgraded='"<day>"' --field bodyWords=<n>`.
+
+**2. Research and write** each claimed page per the page rules and the site adapter. Read
+`.claude/commands/_content-standard.md` and `_anti-ai-language.md` first and run the standard's
+PREFLIGHT load step. Count body words before the audit; under 1,500 means research more of the
+query, not pad. Record the
 writer: `backlog.py set --id <id> --status in_progress --note "drafted" --field writer='"main"' --field slug='"<slug>"'`.
 
 **3. Build gate** (site adapter). Fix failures before going on.
@@ -79,13 +112,17 @@ page content (the data entry and the locally rendered text if available), the so
 instructions: open each product's own website (pricing page) and check every price, plan, limit and
 named feature on the page; check the title/H1 rule, that the only external link is the subject's
 official site, that both CTAs are present and apart, and that there is no testing claim or advice
-framing. Return JSON only:
+framing. ALSO apply every hard-fail gate in the `## AUDITOR` section of
+`.claude/commands/_content-standard.md` (Depth ≥ 1,500 body words, required page elements, title
+length, headings, acronyms, reader question, anchor, neutrality, sentence rhythm, no deferral in
+data cells), with the owner overrides in page rules 2 and 5 (only the subject is linked; TESTED
+skipped). Return JSON only:
 `{"reviewer":"audit-subagent","verdict":"PASS|FAIL","findings":[{"id":"F1","quote":"…","problem":"…","fix":"…","hard_blocker":true|false}]}`.
 Save it to `reports/alternatives-daily/<day>/<slug>-audit.json` and record it:
 `backlog.py audit --id <id> --file <that file>`. The helper refuses a second audit for a page.
 
 **5. Fix.** Apply every finding as a targeted edit (same writer). A price that cannot be confirmed
-becomes "Published plans; see vendor site". No second audit. If a hard blocker cannot be fixed
+becomes "Quote-based; no public price" (a fact, not a deferral). No second audit. If a hard blocker cannot be fixed
 (e.g. the product no longer exists), `set --status held --note "<reason>"` and leave that page out
 of the commit. A held page frees its slot: run `backlog.py next` again, claim a replacement
 and produce it the same way, until 3 pages are published today or nothing eligible is left
