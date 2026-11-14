@@ -23,6 +23,15 @@
       ],
       "route": "/compare/robo-advisor-vs-financial-advisor"
     },
+    "31acc46cae6925881d8562aa39d9fa9b9d286324b6e2030e06d922eb59774ce7": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "trend-lane-c-2026-11-14",
+      "previousJobs": [],
+      "repairs": [],
+      "route": "/real-estate/bridge-loan-calculator/"
+    },
     "60791aceae3034e7f9002bf271cf03f06d125c36d25249c6eae288a8b59f4fca": {
       "generated": [
         "full"
