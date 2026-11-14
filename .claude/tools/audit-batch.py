@@ -53,70 +53,33 @@ def _reserve_or_repair_route(root, crp, snapshot, snapshot_path, page, job, revi
     if last and last.get('status') == 'pending':
         old = crp.read(crp.artifact(root, last['admission']))
         old_snap_ref = old['snapshot']
-        old_snap_doc = None
-        try:
-            old_snap_doc = crp.read(crp.artifact(root, old_snap_ref))
-        except Exception:
-            old_snap_doc = None
-        same_snapshot = (
-            old_snap_doc is not None
-            and old_snap_doc.get('snapshotSha256') == snapshot.get('snapshotSha256')
-            and (not old.get('fingerprint') or old.get('fingerprint') == page.get('fingerprint'))
-        )
-        if same_snapshot and old.get('reviewer') == reviewer:
+        if snapshot.get('snapshotSha256') == old_snap_ref.get('sha256') and old.get('reviewer') == reviewer:
             return {**old, 'admissionArtifact': last['admission']}
-        crp.require(
-            not last.get('repaired'),
-            f"Pending round #{last['number']} on {page['path']} was already repaired once "
-            f"(bound to reviewer={old.get('reviewer')!r}, snapshot={old_snap_ref.get('path')}); "
-            f"complete and record it using --reviewer {old.get('reviewer')}",
-        )
-        failure_file = repair_pending_failure
-        if failure_file is None:
-            failure_file = adm_path.parent / f"pending-repair-handback-{adm_path.stem}.md"
-            handback_text = (
-                f"# Pending Audit Slot Repair Handback — {page['path']}\n\n"
-                f"- **Job ID**: `{job}`\n"
-                f"- **Route**: `{page['path']}` (round #{last['number']})\n"
-                f"- **Previous Admission**: `{last['admission'].get('path')}` (reviewer `{old.get('reviewer')}`, "
-                f"snapshot `{old_snap_ref.get('path')}` `{old_snap_ref.get('sha256', '')[:12]}`)\n"
-                f"- **Replacement Binding**: reviewer `{reviewer}`, snapshot `{Path(snapshot_path).resolve().relative_to(Path(root).resolve())}` "
-                f"(`{snapshot.get('snapshotSha256', '')[:12]}`)\n"
-                f"- **Reason**: Prior pending reservation did not complete `content-review-policy.py record` before "
-                f"snapshot recapture or auditor retry; rebinding the existing round #{last['number']} slot in place "
-                f"without resetting review counters.\n"
+        if repair_pending_failure is None:
+            raise ValueError(
+                f"Route {page['path']} has an unfinished pending round #{last['number']} bound to snapshot "
+                f"{old_snap_ref['path']} ({old_snap_ref['sha256'][:12]}). Resume that snapshot, or pass "
+                f"--repair-pending-failure <reports/.../failure.md> (>=100 bytes) to rebind this same round without resetting counters."
             )
-            failure_file.parent.mkdir(parents=True, exist_ok=True)
-            failure_file.write_text(handback_text, encoding='utf-8')
+        crp.require(not last.get('repaired'), f"Pending round #{last['number']} on {page['path']} was already repaired once; complete and record it")
         original = crp.inside(root, old_snap_ref['path'])
-        same_path = original.resolve() == Path(snapshot_path).resolve()
-        superseded = original.with_name(f"{original.stem}.superseded-{old_snap_ref['sha256'][:12]}{original.suffix}")
-        temp_snap = None
-        moved_same_path = False
-        try:
-            if original.is_file() and crp.sha(original.read_bytes()) == old_snap_ref['sha256']:
-                durable.cache(root, old_snap_ref['path'], old_snap_ref['sha256'], original.read_bytes())
-                if same_path:
-                    temp_snap = adm_path.parent / f"repair-input-{adm_path.stem}-{original.name}"
-                    temp_snap.write_bytes(original.read_bytes())
-                    if not superseded.exists():
-                        original.rename(superseded)
-                    else:
-                        original.unlink()
-                    moved_same_path = True
-                else:
-                    if not superseded.exists():
-                        original.rename(superseded)
-                    else:
-                        original.unlink()
-            return crp.repair_pending(
-                root, temp_snap or snapshot_path, page['path'], job, reviewer, adm_path, failure_file,
+        if original.is_file() and crp.sha(original.read_bytes()) == old_snap_ref['sha256']:
+            orig_doc = crp.read(original)
+            orig_page = next((r for r in orig_doc.get('routes', []) if r.get('path') == page['path']), None)
+            candidate_changed = (
+                orig_page is None
+                or orig_page.get('fingerprint') != page.get('fingerprint')
+                or orig_doc.get('reviewSourceArchive') != snapshot.get('reviewSourceArchive')
             )
-        finally:
-            if moved_same_path and superseded.is_file() and not original.exists():
-                superseded.rename(original)
-            if temp_snap is not None and temp_snap.is_file():
-                temp_snap.unlink()
+            crp.require(candidate_changed, f"Original pending snapshot for {page['path']} has identical content; resume it without repair-pending")
+            if not crp.changed_pending_dependencies(root, orig_doc, snapshot):
+                durable.cache(root, old_snap_ref['path'], old_snap_ref['sha256'], original.read_bytes())
+                superseded = original.with_name(f"{original.stem}.superseded-{old_snap_ref['sha256'][:12]}{original.suffix}")
+                if not superseded.exists():
+                    original.rename(superseded)
+                else:
+                    original.unlink()
+        return crp.repair_pending(root, snapshot_path, page['path'], job, reviewer, adm_path, repair_pending_failure)
     if accepts_preflight:
         return crp.reserve(root, snapshot_path, page['path'], job, reviewer, adm_path, prior_reports, preflight)
     return crp.reserve(root, snapshot_path, page['path'], job, reviewer, adm_path, prior_reports)
@@ -132,22 +95,6 @@ def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton
     renderer.valid_snapshot(snapshot)
 
     wanted = [r.rstrip('/') or '/' for r in routes] if routes else None
-    if wanted is None and preflight is not None:
-        try:
-            pf_manifest = crp.read(crp.inside(root, preflight) / 'manifest.json')
-            handoff_ref = pf_manifest.get('handoff') if isinstance(pf_manifest, dict) else None
-            if isinstance(handoff_ref, dict) and handoff_ref.get('path'):
-                handoff_obj = crp.read(crp.inside(root, handoff_ref['path']))
-                handoff_routes = [
-                    str(r).rstrip('/') or '/'
-                    for r in (handoff_obj.get('routes') or [])
-                    if str(r).startswith('/')
-                ]
-                snap_routes = {p['path'].rstrip('/') or '/' for p in snapshot.get('routes', [])}
-                if handoff_routes and all(hr in snap_routes for hr in handoff_routes):
-                    wanted = handoff_routes
-        except Exception:
-            pass
     selected_pages = [
         p for p in snapshot['routes']
         if wanted is None or (p['path'].rstrip('/') or '/') in wanted
@@ -163,9 +110,6 @@ def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton
     has_local = layer is not None or (root / '.claude/workflow-policy.local.json').is_file()
 
     accepts_preflight = 'preflight' in inspect.signature(crp.reserve).parameters
-    if accepts_preflight and preflight is not None and not has_local and hasattr(crp, 'audit_preflight_check'):
-        for page in selected_pages:
-            crp.audit_preflight_check(root, preflight, job, reviewer, page['path'])
     checks_keys = sorted(renderer.CHECKS)
     skeleton_routes = []
     summaries = []
