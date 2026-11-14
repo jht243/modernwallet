@@ -52,10 +52,11 @@ These come from `CONTENT.md` and `_content-standard.md` and override any mindmap
 - **Comparisons and roundups stay objective** — no option is the automatic winner; affiliate/partner wiring (`src/data/partners.ts`) is handled by the templates, never by body prose.
 
 ## 1. Build the brief
-Two parts, in this order:
+Three parts, in this order:
 
 1. **Top-10 queries** — `top_queries[10]` from the Phase 0 pull JSON (7-day window), verbatim, in click order, each with clicks/impressions/position and the `top_pages[10]` page it lands on (if known).
-2. **Research from Lanes A/B** — paste the research pack (`reports/trend-pass/<YYYY-MM-DD>.research.md`) in full: the trend verdict, trend gap findings, and uncovered top-20 queries with their suggested angles.
+2. **Research from Lanes A/B** — paste the research pack (`reports/trend-pass/<YYYY-MM-DD>.research.md`) in full: the trend verdict, trend gap findings, and uncovered top-20 queries with their suggested angles, rising & spillover uncovered queries, and sideways formula / pattern expansion candidates.
+3. **Additive GSC velocity & formula snapshot** — attach `rising_queries`, `spillover_queries`, and `modifier_patterns` from the Phase 0 pull JSON so Mindmap's Lenses 1, 2, **2b (sideways formula expansion)**, and 3 can validate both emerging breakouts and sibling-category swaps via SEMRUSH + Autocomplete.
 
 Interpreted-brief line: *"Our 10 top-clicking Google queries for the 7 days ending <data_date>, plus our own research on what's trending and what's missing. Build what this demand implies the site lacks — new pages and missing sections on the pages these queries already land on. Treat the research findings as strong suggestions: they came from our own search data and passed an existence check, so drop one only for a real reason."*
 

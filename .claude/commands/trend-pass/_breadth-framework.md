@@ -27,6 +27,12 @@ Rank matters: the cap fills from the top, so the highest-intent angles win the r
 - **Health compound / peptide / supplement / protocol / treatment** → 1,2,3,5,6(how-to-take/dosage),8(side-effects/safety),9(studies/results),10; pricing/where-to-buy only if the site normally covers it and it's compliant. **Follow the site's medical/controlled-substance guardrails** — never give dosing or medical advice the site standard forbids, never fabricate a study or a dose.
 - **Concept / topic / how-to** → explainer hub + spokes + FAQ only (Step 1 "broad concept" path).
 
+## Step 2b — Sideways formula / pattern expansion (ADDITIVE — hold the modifier constant, swap the category/entity)
+Steps 1–2 expand **vertically** (one entity × all relevant angles). Whenever the Phase 0 pull's `modifier_patterns` (or winning queries in `top_queries` / `coverage_queries` / `rising_queries`) reveals a **repeatable search modifier formula** — e.g. `dumb <X>`, `non-smart <X>`, `<X> alternatives without AI`, `<X> without AI`, `<X> free trial`, `how to turn off <X>`, `<X> for <audience>` — ALSO expand **sideways**:
+1. **Hold the winning modifier formula constant** and swap `<X>` across **8–15 concrete sibling categories, products, tools, devices, or audiences** that belong on this site and are NOT yet covered in `slug_inventory` or `ledger.md`.
+2. **Anti-suppression rule (CRITICAL):** Even when the seed page(s) that proved the formula (e.g. `dumb-tv` or `pinterest-alternatives-without-ai`) are ALREADY `COVERED` on the site or matched as `MINED` / `EVERGREEN` in `trends.md`, **that only covers the already-built noun — it NEVER blocks sideways expansion of that winning modifier formula into new uncovered sibling categories.**
+3. Apply the **exact same Step 3 HARD fit gate** below to every sibling swap (real products/facts must exist for that category; never invent nonexistent products, numbers, or claims to fill a slot). Use the site's existing slug conventions for every proposed sibling page.
+
 ## Step 3 — The fit gate (HARD — this is what stops thin/forced pages)
 Attempt an angle ONLY when ALL of these hold; otherwise SKIP it and record "angle skipped — <reason>" for the digest (never pad a page to hit the framework):
 1. **Type fit** — the angle genuinely applies to this entity type (no "vs" for a concept, no "pricing" for a free tool, no "side effects" for a SaaS).

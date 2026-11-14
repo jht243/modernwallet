@@ -37,7 +37,7 @@ A theme qualifies when **≥3 of the surviving top-10 queries share it** (same e
 
 ## 4. Trend ledger check (BEFORE any mining)
 Read `reports/trend-pass/trends.md`. Match semantically against the MINED rows (trends whose content already exists) and the EVERGREEN rows (steady site demand).
-- **MATCH → the TREND lane stops.** No trend gap research, no trend findings, no queue, no backlog for the trend. Record the verdict ("Trend already caught on <date>: <theme> — no trend work this run") for the digest, then **go to Phase 1b** (the coverage lane still runs). Do NOT exit the run.
+- **MATCH → the TREND lane stops.** No trend gap research, no trend findings, no queue, no backlog for the trend. Record the verdict ("Trend already caught on <date>: <theme> — no trend work this run") for the digest, then **go to Phase 1b** (the coverage lane still runs). **Important additive rule:** a `trends.md` MATCH (`MINED` / `EVERGREEN`) only stops re-mining the already-built vertical entity cluster in Lane A — `rising_queries`, `spillover_queries`, and `modifier_patterns` ALWAYS continue forward to Phase 1b and Phase 4c so sideways formula expansion into new uncovered sibling categories is never suppressed. Do NOT exit the run.
 - **Ownership by another engine is NOT a match/stop** — there is no RADAR-OWNED class; if the theme isn't a MINED/EVERGREEN row, it's a NO MATCH even if some other engine also covers that surface.
 - **NO MATCH** → step 5.
 

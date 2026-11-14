@@ -33,6 +33,8 @@ Apply the framework's entity-type presets and its **HARD fit gate** (`_breadth-f
 
 Every surviving cell whose slug is FREE is a candidate. Follow the site's existing slug conventions exactly (copy the shape from a built sibling; do not invent a new layout).
 
+**Sideways formula / pattern expansion (`_breadth-framework.md` Step 2b).** When the confirmed trend also carries a repeatable search modifier wrapper (e.g. `dumb <X>`, `non-smart <X>`, `<X> alternatives without ai`, `<X> free trial`, `how to turn off <X>`), hold that modifier constant and also propose FREE sibling-category/entity candidates that pass the Step 3 HARD fit gate (`source: trend`).
+
 ## 3. Evidence-rank candidates
 Rank by sibling evidence from the Phase 0 pull only (a candidate inherits the clicks of its nearest built sibling in the top-10). No-evidence cells rank last but stay in the list; mindmap handles volume and the cap.
 

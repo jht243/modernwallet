@@ -44,6 +44,11 @@ Verdict: <NEW TREND: <theme> / Trend already caught on <date>: <theme> / No clea
 Verdict: <N covered / M uncovered of top-20>
 - "<uncovered query>" (<clicks> clicks, <impr> impr) — entity: <entity> — suggested angles: <anchor, angle, angle…>
 
+### Rising & spillover uncovered queries (additive)
+- "<rising or spillover query>" (<clicks> clicks, <impr> impr, pos <pos>, <rising|spillover>) — entity: <entity> — suggested angles: <anchor, angle, angle…>
+### Sideways formula / pattern expansion candidates (additive)
+- <suggested slug> — formula `<pattern>` (proven by <seed queries>) — sibling category/entity: <entity> — proposed title: <title>
+
 ## Pre-filtered out (already exists)
 - <slug> — <reason>
 ```

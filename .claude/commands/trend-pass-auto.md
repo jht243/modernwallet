@@ -74,9 +74,9 @@ This is a thin orchestrator. Phase instructions live at `.claude/commands/trend-
 ## Execution — phases in order
 | Phase | File | Purpose |
 |---|---|---|
-| 0 | `trend-pass/phase-0-pull.md` | Top-10 queries + top-10 pages + top-20 queries, **7 days** (the ONLY external data call before mindmap) |
+| 0 | `trend-pass/phase-0-pull.md` | Top-10 queries + top-10 pages + top-20 queries (+ additive `rising_queries`, `spillover_queries`, `modifier_patterns` from the same 25k pull) |
 | 1 | `trend-pass/phase-1-trend-detect.md` | **Lane A (research):** classify → clear-trend rule → trend-ledger match → refutation subagent |
-| 1b | `trend-pass/phase-1b-coverage.md` | **Lane B (research, EVERY run):** which top-20 queries have no dedicated page |
+| 1b | `trend-pass/phase-1b-coverage.md` | **Lane B (research, EVERY run):** uncovered top-20 + rising/spillover gaps + sideways formula expansion (`modifier_patterns`) |
 | 2 | `trend-pass/phase-2-matrix.md` | **Lane A (research):** entity × angle gap matrix (ledger-NEW trends only) |
 | 4 | `trend-pass/phase-4-dedup.md` | Local pre-filter (slug inventory + git + ledger) → assemble the **research pack** |
 | 4c | `trend-pass/phase-4c-mindmap.md` | **Lane C (the ONLY builder):** top-10 queries + research pack → mindmap brief → chart → build ≤25 pages + enrichments → audit, under binding finance/YMYL guardrails |
@@ -189,7 +189,7 @@ No-changes/failure with nothing committed → `--commit-sha "" --commit-url ""`.
 - Never exceed 25 new pages in one run, under any reasoning.
 - Never run mindmap's metadata phase (phase-2) or its own sitemap/summary/commit phases (7/8/9) inside this pass, and never consolidate, redirect, or rewrite existing pages.
 - Never invent YMYL facts — figures, rates, limits, statutes, or advice.
-- Never widen the *trend* input beyond the two top-10 lists (`coverage_queries[20]` feeds only Lane B).
+- Never widen the *trend* input beyond the two top-10 lists (`coverage_queries[20]` plus additive `rising_queries`, `spillover_queries`, and `modifier_patterns` from the Phase 0 pull feed only Lane B and Mindmap Lane C).
 - Never hardcode an API key into a committed file. Never commit secrets/.env. Never commit `dist/`.
 
 ## Reference

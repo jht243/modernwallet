@@ -21,6 +21,11 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 **One sanctioned addition — `coverage_queries` (top 20 queries).** The pull also returns the top **20** queries (same 7-day window) for the COVERAGE lane (Phase 1b), which asks *"are any top queries missing a dedicated page?"* Trend detection (Phase 1) ignores this field and still works only from `top_queries[10]`.
 
+**Additive discovery signals from the same 25k GSC pull (`rising_queries`, `spillover_queries`, `modifier_patterns`).** Without changing `top_queries[10]`, `coverage_queries[20]`, or `top_pages[10]`, `gsc_pull_7d.py` also mines the rest of the 25,000-row query pull (plus a best-effort prior 7-day baseline comparison) and attaches three additive lists for Phase 1b and Phase 4c (Mindmap):
+- `rising_queries` — breakout or newly appearing queries whose impressions/clicks surged vs. the prior 7-day window (catching emerging demand before it cracks the top-10 click list).
+- `spillover_queries` — rank 6–50 queries outside `coverage_queries[20]` earning meaningful impressions with low clicks (`0–3`), where Google is already testing the site on topics that may lack a dedicated page.
+- `modifier_patterns` — recurring search modifier formulas across up to 500 queries (e.g. `dumb <X>`, `non smart <X>`, `<X> alternatives without ai`, `<X> without ai`, `how to turn off <X>`, `<X> for <Y>`) that feed sideways sibling-category expansion in Phase 1b and Mindmap Lens 2b.
+
 ```bash
 python3 scripts/trend_pass/gsc_pull_7d.py --base-url <BASE_URL> \
   --json reports/trend-pass/$(date +%Y-%m-%d).pull.json
@@ -32,4 +37,4 @@ python3 scripts/trend_pass/gsc_pull_7d.py --base-url <BASE_URL> \
 - A low/zero-click week is NOT a failure — it's a valid "no clear trend" input; continue to Phase 1.
 
 ## Output
-The pull JSON (now with `top_queries[10]`, `coverage_queries[20]`, `top_pages[10]`) → Phase 1 (trend lane) **and** Phase 1b (coverage lane). Fetch nothing else from GSC this run. This pull is the ONLY external data call Lanes A/B make — keyword/SERP data is fetched later, and only by mindmap (Phase 4c).
+The pull JSON (with `top_queries[10]`, `coverage_queries[20]`, `top_pages[10]`, plus additive `rising_queries`, `spillover_queries`, and `modifier_patterns`) → Phase 1 (trend lane) **and** Phase 1b (coverage lane). Fetch nothing else from GSC this run. This pull is the ONLY external data call Lanes A/B make — keyword/SERP data is fetched later, and only by mindmap (Phase 4c).

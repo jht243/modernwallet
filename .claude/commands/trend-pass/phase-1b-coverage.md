@@ -24,7 +24,7 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 Those uncovered queries are **findings** for the research pack (Phase 4). **Research only (2026-10-05):** this lane never builds or writes pages and calls no external API — local files + the Phase 0 pull only. Mindmap (Phase 4c) decides what gets built, and handles winner protection. This is the lane that keeps the engine productive on the (common) runs when the trend lane stops.
 
 ## Input
-`coverage_queries[20]` from the Phase 0 pull JSON, plus `top_pages[10]`.
+`coverage_queries[20]` from the Phase 0 pull JSON, plus `top_pages[10]` — and the additive Phase 0 pull lists `rising_queries`, `spillover_queries`, and `modifier_patterns` when present.
 
 ## 1. Enumerate what the site already covers (FREE, local)
 ```bash
@@ -45,6 +45,18 @@ For every query in `coverage_queries`, decide — **by intent, not string equali
 2. **UNCOVERED** — real demand (it's a top-20 query, so it already gets impressions), no dedicated page. **This is a finding — and it triggers the breadth framework, not a lone page.** Identify the entity behind the query (the company/service/product/model/compound/tool it's about) and expand it into the full angle cluster per `_breadth-framework.md` (deep-dive, comparison, alternatives, pricing, is-it-worth-it, how-to-use, safety, etc.), applying that file's HARD fit gate so no thin or forced angle is suggested (reasoning only — no keyword lookups). The uncovered query itself is usually the deep-dive/anchor; the cluster captures the rest of the traffic around the same topic. Tag every surviving angle `source: coverage` + its angle.
 
 Print the classification table (query, clicks, impressions, verdict COVERED/UNCOVERED, matched page/slug if covered) so it lands in the transcript and can be pasted into the digest.
+
+## 2b. Additive rising & spillover query check (`rising_queries` + `spillover_queries`)
+Do NOT stop at the top 20 by clicks. Using the exact same `/tmp/trend-slugs.txt` and content-source check from Steps 1–2:
+1. Check every query in `rising_queries` (where `in_top20` is `false`) and every query in `spillover_queries` (rank 6–50 high-impression, low-click queries outside top-20).
+2. Drop any query that is `COVERED` by an existing dedicated page.
+3. Every `UNCOVERED` rising or spillover query is real emerging or page-2/3 Google demand we don't have a home for yet — expand its entity/topic via `_breadth-framework.md` (applying the HARD fit gate, reasoning + local files only) and emit surviving findings tagged `source: coverage` (with `[rising]` or `[spillover]` noted for the research pack).
+
+## 2c. Additive sideways formula / pattern expansion (`modifier_patterns`)
+Read `modifier_patterns` from the Phase 0 pull JSON (plus any clear repeatable modifier wrapper visible across `top_queries` / `coverage_queries` / `rising_queries`, e.g. `dumb <X>`, `non smart <X>`, `<X> alternatives without ai`, `<X> without ai`, `<X> free trial`, `how to turn off <X>`, `<X> for <audience>`).
+1. **Never let an already-covered noun suppress a winning formula:** even if every query in `coverage_queries[20]` is `COVERED` or part of an `EVERGREEN`/`MINED` row in `trends.md`, apply `_breadth-framework.md` **Step 2b** to each on-mission modifier formula.
+2. Hold the winning modifier wrapper constant and propose **8–15 concrete sibling categories/products/entities** that fit this site's editorial mission, pass the Step 3 HARD fit gate (real products/facts exist; zero fabrication), and are `FREE` in `/tmp/trend-slugs.txt`.
+3. Tag surviving sideways candidates `source: coverage` (with `[pattern: <formula>]` noted for the research pack) so Phase 4 pre-filters them and hands them to Mindmap (Phase 4c) for SEMRUSH + Autocomplete validation.
 
 ## 3. Ledger check (don't re-propose what we already judged)
 Read `reports/trend-pass/ledger.md`. Drop any `source: coverage` finding whose slug/intent already appears as **KEPT** (we built it — it should already be COVERED next run) or **DROPPED** (we considered and declined it). This stops the lane from re-surfacing the same sticky uncovered query every single run. Anything that survives is genuinely new to consider.
