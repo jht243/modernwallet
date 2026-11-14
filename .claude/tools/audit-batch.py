@@ -42,6 +42,17 @@ def reserve_batch(root, snapshot_path, job, reviewer, out_dir, skeleton_path,
         os.chdir(str(prev_cwd))
 
 
+def _unused_path(path: Path, tag: str = 'v') -> Path:
+    if not path.exists():
+        return path
+    n = 2
+    while True:
+        cand = path.with_name(f"{path.stem}-{tag}{n}{path.suffix}")
+        if not cand.exists():
+            return cand
+        n += 1
+
+
 def _reserve_or_repair_route(root, crp, snapshot, snapshot_path, page, job, reviewer, adm_path,
                              prior_reports, preflight, accepts_preflight, repair_pending_failure):
     durable = crp.durable_reviews(root)
@@ -71,9 +82,10 @@ def _reserve_or_repair_route(root, crp, snapshot, snapshot_path, page, job, revi
             f"(bound to reviewer={old.get('reviewer')!r}, snapshot={old_snap_ref.get('path')}); "
             f"complete and record it using --reviewer {old.get('reviewer')}",
         )
+        target_adm = _unused_path(adm_path, 'repaired')
         failure_file = repair_pending_failure
         if failure_file is None:
-            failure_file = adm_path.parent / f"pending-repair-handback-{adm_path.stem}.md"
+            failure_file = _unused_path(adm_path.parent / f"pending-repair-handback-{adm_path.stem}.md", 'v')
             handback_text = (
                 f"# Pending Audit Slot Repair Handback — {page['path']}\n\n"
                 f"- **Job ID**: `{job}`\n"
@@ -91,14 +103,15 @@ def _reserve_or_repair_route(root, crp, snapshot, snapshot_path, page, job, revi
         original = crp.inside(root, old_snap_ref['path'])
         same_path = original.resolve() == Path(snapshot_path).resolve()
         superseded = original.with_name(f"{original.stem}.superseded-{old_snap_ref['sha256'][:12]}{original.suffix}")
-        temp_snap = None
+        repaired_snap = None
         moved_same_path = False
         try:
             if original.is_file() and crp.sha(original.read_bytes()) == old_snap_ref['sha256']:
                 durable.cache(root, old_snap_ref['path'], old_snap_ref['sha256'], original.read_bytes())
                 if same_path:
-                    temp_snap = adm_path.parent / f"repair-input-{adm_path.stem}-{original.name}"
-                    temp_snap.write_bytes(original.read_bytes())
+                    repaired_snap = _unused_path(adm_path.parent / f"repaired-capture-{original.name}", 'v')
+                    repaired_snap.parent.mkdir(parents=True, exist_ok=True)
+                    repaired_snap.write_bytes(original.read_bytes())
                     if not superseded.exists():
                         original.rename(superseded)
                     else:
@@ -110,16 +123,15 @@ def _reserve_or_repair_route(root, crp, snapshot, snapshot_path, page, job, revi
                     else:
                         original.unlink()
             return crp.repair_pending(
-                root, temp_snap or snapshot_path, page['path'], job, reviewer, adm_path, failure_file,
+                root, repaired_snap or snapshot_path, page['path'], job, reviewer, target_adm, failure_file,
             )
         finally:
             if moved_same_path and superseded.is_file() and not original.exists():
                 superseded.rename(original)
-            if temp_snap is not None and temp_snap.is_file():
-                temp_snap.unlink()
+    target_adm = _unused_path(adm_path, 'r')
     if accepts_preflight:
-        return crp.reserve(root, snapshot_path, page['path'], job, reviewer, adm_path, prior_reports, preflight)
-    return crp.reserve(root, snapshot_path, page['path'], job, reviewer, adm_path, prior_reports)
+        return crp.reserve(root, snapshot_path, page['path'], job, reviewer, target_adm, prior_reports, preflight)
+    return crp.reserve(root, snapshot_path, page['path'], job, reviewer, target_adm, prior_reports)
 
 
 def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton_path,
