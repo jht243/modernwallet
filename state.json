@@ -1,6 +1,15 @@
 {
   "candidates": {},
   "generationBudgets": {
+    "1add31ce2b1614e581353f18f7971f28766cdd5bc8a846500cf781cb197f0db8": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "trend-lane-c-2026-11-14",
+      "previousJobs": [],
+      "repairs": [],
+      "route": "/retirement/401k-loan-calculator/"
+    },
     "1eef756765dabd9b8a52d7d985ee506fbbf6184de1d2b6c527214f42baaf486b": {
       "generated": [
         "full"
