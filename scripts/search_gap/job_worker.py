@@ -284,13 +284,39 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
                 else:
                     summary = {'completionFile': name}
         if summary and summary.get('completionFile') and not dispatch:
-            action='Reuse the restored, already independently reviewed recoverySummary.completionFile, reconcile its separate preview, then finish. For an expired original loopback preview use a separate current build and postPublicationRecovery with the original approved hash and original publication commit. Run python3 scripts/search_gap/publication_history.py FULL_COMMIT for genuine current remote ancestry, including shallow checkouts. Keep all exact-render and live comparisons. Do not dispatch BUILD, WRITE or another decision/content review.'
-            sid=os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID')
-            if sid:
-                name='search-gap-continuation/'+hashlib.sha256(sid.encode()).hexdigest()+'.json'
-                marker=Path(subprocess.check_output(['git','rev-parse','--git-path',name],text=True).strip())
-                marker.parent.mkdir(parents=True,exist_ok=True)
-                marker.write_text(json.dumps({'completionFile':summary['completionFile'],'sha256':digest(summary['completionFile']),'runId':packet['runId']}))
+            comp_doc = read(artifact_path(summary['completionFile'])) if Path(summary['completionFile']).is_file() else {}
+            pending_in_comp = [d['id'] for d in (comp_doc.get('decisions') or []) if isinstance(d, dict) and d.get('status') == 'pending' and d.get('id')]
+            if pending_in_comp:
+                summary['priorCompletionFile'] = summary.pop('completionFile')
+                summary['pendingCandidateIds'] = pending_in_comp
+                action = ('Reuse the signed chart and decisions in priorCompletionFile. Work only pendingCandidateIds, '
+                          'locate their original audit records, and complete native release and live checks (or close via end-run --deploy).')
+            else:
+                changed_pub = {p for d in (comp_doc.get('decisions') or []) if isinstance(d, dict) and d.get('status') == 'published' for p in (d.get('paths') or [])}
+                changed_pub -= {p for m in (comp_doc.get('metadataOnly') or []) if isinstance(m, dict) for p in (m.get('paths') or [])}
+                rgroups = comp_doc.get('rendered') if isinstance(comp_doc.get('rendered'), list) else ([comp_doc['rendered']] if isinstance(comp_doc.get('rendered'), dict) else [])
+                covered_pub = {r['path'] for g in rgroups if isinstance(g, dict) and g.get('approved') and Path(g['approved']).is_file()
+                               for r in (read(artifact_path(g['approved'])).get('routes') or []) if isinstance(r, dict) and r.get('path')}
+                uncovered_pub = sorted(changed_pub - covered_pub)
+                if uncovered_pub:
+                    summary['uncoveredPublishedRoutes'] = uncovered_pub
+                    action = ('Reuse recoverySummary.completionFile, run a scoped supplemental AUDIT for uncoveredPublishedRoutes '
+                              + json.dumps(uncovered_pub) + ' and append its {approved, live, review} group to completionFile.rendered, '
+                              'then finish (or close via end-run --deploy if blocked). Do not dispatch BUILD, WRITE or chart review.')
+                else:
+                    action='Reuse the restored, already independently reviewed recoverySummary.completionFile, reconcile its separate preview, then finish. For an expired original loopback preview use a separate current build and postPublicationRecovery with the original approved hash and original publication commit (or run a scoped supplemental AUDIT if post-publication sibling drift changed a route). Run python3 scripts/search_gap/publication_history.py FULL_COMMIT for genuine current remote ancestry, including shallow checkouts. Keep all exact-render and live comparisons. Do not dispatch BUILD, WRITE or another decision review.'
+                sid=os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID')
+                if sid:
+                    name='search-gap-continuation/'+hashlib.sha256(sid.encode()).hexdigest()+'.json'
+                    marker=Path(subprocess.check_output(['git','rev-parse','--git-path',name],text=True).strip())
+                    marker.parent.mkdir(parents=True,exist_ok=True)
+                    marker.write_text(json.dumps({
+                        'completionFile': summary['completionFile'],
+                        'sha256': digest(summary['completionFile']),
+                        'runId': packet['runId'],
+                        'chartReview': comp_doc.get('chartReview'),
+                        'allowSupplementalAudit': True,
+                    }))
         request = Path('reports/search-gap/park-requests') / (packet['runId'] + '.json')
         if resumed and request.is_file():
             # Owner-authored, committed request; park itself still verifies every blocked candidate.
@@ -389,6 +415,7 @@ def missing_decision_chart(packet, intake_path, checkpoints):
 EVIDENCE_DIRS = (
     'reports/search-gap',
     'reports/mindmap-pass',
+    'reports/rendered-audit',
     'reports/content-review-journals',
     'reports/content-review-evidence',
     'reports/workflow-generation-budgets',
@@ -796,7 +823,7 @@ def park(intake_path, completion_path, store, owner, reason, holds_path=None):
         history = lease.get('checkpoints') or []
         latest = history[-1] if history else {}
         # Canonical IDs cannot change; union preserves candidates added across checkpoints.
-        canonical_jobs = recorded_canonical_jobs(history)
+        canonical_jobs = recorded_canonical_jobs(history, packet=packet)
         base = canonical_base(packet['site'], completion)
         decisions = native.validate_decisions(packet, completion)
         full_history()
@@ -883,15 +910,52 @@ AUTO_REQUESTS = Path('reports/search-gap/auto-close')
 ATTEMPT_STAGE_RE = re.compile(r'build|chart|write|draft|audit|review|publish|finish|recover|partial|blocked|held', re.I)
 
 
-def recorded_canonical_jobs(history):
+def recorded_canonical_jobs(history, packet=None):
     jobs = {v for cp in (history or []) for v in (cp.get('canonicalJobs') or {}).values() if isinstance(v, str) and v}
-    if not jobs:
-        for cp in (history or []):
-            for key in (cp.get('reviewCounters') or {}):
-                for pattern in (r'^chart-review:([A-Za-z0-9_-]{4,})$', r'^([A-Za-z0-9_-]{4,}):(?:chart|content|phase4[-_]audit)'):
-                    match = re.match(pattern, str(key))
-                    if match:
-                        jobs.add(match.group(1))
+    for cp in (history or []):
+        for key in (cp.get('reviewCounters') or {}):
+            for pattern in (r'^chart-review:([A-Za-z0-9_-]{4,})$', r'^([A-Za-z0-9_-]{4,}):(?:chart|content|phase4[-_]audit)'):
+                match = re.match(pattern, str(key))
+                if match:
+                    jobs.add(match.group(1))
+        for art in (cp.get('artifacts') or []):
+            if not isinstance(art, dict) or not str(art.get('path', '')).endswith('.json'):
+                continue
+            ap = Path(art['path'])
+            if not ap.is_file() or ap.stat().st_size > 2_000_000:
+                continue
+            try:
+                if digest(ap) != art.get('sha256'):
+                    continue
+                doc = read(ap)
+            except Exception:
+                continue
+            if isinstance(doc, dict):
+                jid = doc.get('jobId') or (doc.get('manifest') or {}).get('jobId')
+                if isinstance(jid, str) and len(jid.strip()) >= 4:
+                    jobs.add(jid.strip())
+    if isinstance(packet, dict):
+        run_id = str(packet.get('runId') or '').strip()
+        cids = {str(c.get('id') or '') for c in (packet.get('candidates') or []) if isinstance(c, dict) and c.get('id')}
+        for folder in (Path('reports/search-gap'), Path('reports/mindmap-pass')):
+            if not folder.is_dir():
+                continue
+            for mf in folder.rglob('*.json'):
+                rel = mf.as_posix()
+                if any(rel.startswith(prefix) for prefix in DISCOVER_SKIP_SUBDIRS) or mf.stat().st_size > 2_000_000:
+                    continue
+                try:
+                    doc = read(mf)
+                except Exception:
+                    continue
+                if not isinstance(doc, dict) or not isinstance(doc.get('jobId'), str) or len(doc['jobId'].strip()) < 4:
+                    continue
+                jid = doc['jobId'].strip()
+                if (doc.get('runId') == run_id
+                        or (len(run_id) >= 8 and run_id[:8] in jid)
+                        or any(isinstance(d, dict) and d.get('id') in cids for d in (doc.get('candidateDispositions') or []))
+                        or any(isinstance(a, dict) and set(a.get('candidateIds') or a.get('sourceIds') or ()) & cids for a in (doc.get('actions') or []))):
+                    jobs.add(jid)
     return jobs
 
 
@@ -1077,9 +1141,27 @@ def discover_passing_written(packet, base, boilerplate, canonical_jobs, created_
                     cycle = journal.cycle
                 all_rounds = list((cycle or {}).get('rounds') or [])
                 if (not cycle or cycle.get('jobId') not in canonical_jobs or cycle.get('status') in ('in-review', 'repair-pending')
-                        or not all_rounds or all_rounds[-1].get('status') != 'complete' or all_rounds[-1].get('verdict') != 'PASS'):
+                        or not all_rounds or all_rounds[-1].get('status') != 'complete'):
                     ok = False
                     break
+                last_r = all_rounds[-1]
+                verdict = last_r.get('verdict')
+                if verdict != 'PASS':
+                    max_r = int(cycle.get('maximumRounds') or policy.audit_limit(policy.policy(Path.cwd()), cycle['profile']))
+                    if verdict != 'FAIL' or len(all_rounds) < max_r:
+                        ok = False
+                        break
+                    adm_doc = read(last_r['admission']['path'])
+                    snap_doc = read(adm_doc['snapshot']['path'])
+                    rep_path = last_r['report']['path'] if isinstance(last_r.get('report'), dict) else last_r.get('report')
+                    rep_doc = read(rep_path) if rep_path and Path(rep_path).is_file() else {}
+                    rep_row = next((x for x in (rep_doc.get('routes') or []) if isinstance(x, dict) and x.get('path') == route), {})
+                    snap_page = next((x for x in (snap_doc.get('routes') or []) if isinstance(x, dict) and x.get('path') == route), {})
+                    if (not policy.capped_release(Path.cwd(), snap_doc)
+                            or _report_blocks_auto_release(rep_doc, verdict)
+                            or policy.validate_liability_block(rep_row, snap_page)):
+                        ok = False
+                        break
                 text = reviewed_text(base, route, canonical_jobs, created_at)
                 if not text:
                     ok = False
@@ -1229,7 +1311,7 @@ def owner_close(intake_path, request_path, store, owner, published_path=None, pu
                         and not str(cp.get('stage', '')).endswith('-requested') for cp in history),
                     'No recorded attempt on this job yet; do the work first (auto close-out is for work that could not finish)')
             restore_missing_artifacts(history, store)
-            canonical_jobs = recorded_canonical_jobs(history)
+            canonical_jobs = recorded_canonical_jobs(history, packet=packet)
             created = native.dt.datetime.fromisoformat(lease['createdAt'].replace('Z', '+00:00'))
             written_data = read(auto_written) if isinstance(auto_written, (str, Path)) and str(auto_written) else (auto_written if isinstance(auto_written, dict) else {})
             request_path = build_auto_request(packet, store, written_data, canonical_jobs, created, intake_path=intake_path, history=history)

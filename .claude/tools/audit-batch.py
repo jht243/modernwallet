@@ -21,7 +21,8 @@ def _load(name, path):
 
 
 def reserve_batch(root, snapshot_path, job, reviewer, out_dir, skeleton_path,
-                  routes=(), prior_reports=(), preflight=None, writer_preflight=None):
+                  routes=(), prior_reports=(), preflight=None, writer_preflight=None,
+                  repair_pending_failure=None):
     """Reserve all target routes in one turn and emit an unreviewed schema-exact skeleton.
 
     Never populates a verdict, rationale, or evidence text: every judgment field
@@ -34,14 +35,59 @@ def reserve_batch(root, snapshot_path, job, reviewer, out_dir, skeleton_path,
     try:
         return _reserve_batch_in_root(
             root, snapshot_path, job, reviewer, out_dir, skeleton_path,
-            routes=routes, prior_reports=prior_reports, preflight=preflight, writer_preflight=writer_preflight,
+            routes=routes, prior_reports=prior_reports, preflight=preflight,
+            writer_preflight=writer_preflight, repair_pending_failure=repair_pending_failure,
         )
     finally:
         os.chdir(str(prev_cwd))
 
 
+def _reserve_or_repair_route(root, crp, snapshot, snapshot_path, page, job, reviewer, adm_path,
+                             prior_reports, preflight, accepts_preflight, repair_pending_failure):
+    durable = crp.durable_reviews(root)
+    journal = crp.Journal(root, snapshot['manifest']['canonicalBase'], page['path'])
+    durable.restore(root, journal)
+    with journal as actual:
+        cycle = actual.cycle
+    last = (cycle or {}).get('rounds', [None])[-1] if cycle and cycle.get('rounds') else None
+    if last and last.get('status') == 'pending':
+        old = crp.read(crp.artifact(root, last['admission']))
+        old_snap_ref = old['snapshot']
+        if snapshot.get('snapshotSha256') == old_snap_ref.get('sha256') and old.get('reviewer') == reviewer:
+            return {**old, 'admissionArtifact': last['admission']}
+        if repair_pending_failure is None:
+            raise ValueError(
+                f"Route {page['path']} has an unfinished pending round #{last['number']} bound to snapshot "
+                f"{old_snap_ref['path']} ({old_snap_ref['sha256'][:12]}). Resume that snapshot, or pass "
+                f"--repair-pending-failure <reports/.../failure.md> (>=100 bytes) to rebind this same round without resetting counters."
+            )
+        crp.require(not last.get('repaired'), f"Pending round #{last['number']} on {page['path']} was already repaired once; complete and record it")
+        original = crp.inside(root, old_snap_ref['path'])
+        if original.is_file() and crp.sha(original.read_bytes()) == old_snap_ref['sha256']:
+            orig_doc = crp.read(original)
+            orig_page = next((r for r in orig_doc.get('routes', []) if r.get('path') == page['path']), None)
+            candidate_changed = (
+                orig_page is None
+                or orig_page.get('fingerprint') != page.get('fingerprint')
+                or orig_doc.get('reviewSourceArchive') != snapshot.get('reviewSourceArchive')
+            )
+            crp.require(candidate_changed, f"Original pending snapshot for {page['path']} has identical content; resume it without repair-pending")
+            if not crp.changed_pending_dependencies(root, orig_doc, snapshot):
+                durable.cache(root, old_snap_ref['path'], old_snap_ref['sha256'], original.read_bytes())
+                superseded = original.with_name(f"{original.stem}.superseded-{old_snap_ref['sha256'][:12]}{original.suffix}")
+                if not superseded.exists():
+                    original.rename(superseded)
+                else:
+                    original.unlink()
+        return crp.repair_pending(root, snapshot_path, page['path'], job, reviewer, adm_path, repair_pending_failure)
+    if accepts_preflight:
+        return crp.reserve(root, snapshot_path, page['path'], job, reviewer, adm_path, prior_reports, preflight)
+    return crp.reserve(root, snapshot_path, page['path'], job, reviewer, adm_path, prior_reports)
+
+
 def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton_path,
-                           routes=(), prior_reports=(), preflight=None, writer_preflight=None):
+                           routes=(), prior_reports=(), preflight=None, writer_preflight=None,
+                           repair_pending_failure=None):
     crp = _load('repo_crp', root / '.claude/tools/content-review-policy.py')
     renderer = _load('repo_renderer', root / '.claude/tools/rendered-audit.py')
     crp.policy(root)
@@ -71,10 +117,10 @@ def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton
     for idx, page in enumerate(selected_pages, 1):
         _, spec = crp.route_in(snapshot, page['path'])
         adm_path = out_dir / f'admission-{idx}.json'
-        if accepts_preflight:
-            adm = crp.reserve(root, snapshot_path, page['path'], job, reviewer, adm_path, prior_reports, preflight)
-        else:
-            adm = crp.reserve(root, snapshot_path, page['path'], job, reviewer, adm_path, prior_reports)
+        adm = _reserve_or_repair_route(
+            root, crp, snapshot, snapshot_path, page, job, reviewer, adm_path,
+            prior_reports, preflight, accepts_preflight, repair_pending_failure,
+        )
         text = crp.claim_text(page['semantic'])
         text_sha = crp.sha(text.encode())
         mentions = crp.flags(text)
@@ -379,6 +425,7 @@ def main(argv=None):
     p.add_argument('--prior-review', action='append', default=[])
     p.add_argument('--preflight', help='Completed AUDIT preflight directory (bound automatically when supported)')
     p.add_argument('--writer-preflight', help='Optional WRITE preflight directory for Layer3 local application binding')
+    p.add_argument('--repair-pending-failure', help='Retained failure handback (>=100 bytes under reports/) to rebind an overwritten/revised pending capture on the same round')
     f = sub.add_parser('finalize-review')
     f.add_argument('--snapshot', required=True)
     f.add_argument('--review', required=True)
@@ -398,6 +445,7 @@ def main(argv=None):
             [crp.inside(root, r) for r in args.prior_review],
             crp.inside(root, args.preflight) if args.preflight else None,
             crp.inside(root, args.writer_preflight) if args.writer_preflight else None,
+            crp.inside(root, args.repair_pending_failure) if args.repair_pending_failure else None,
         )
     else:
         result = finalize_review(

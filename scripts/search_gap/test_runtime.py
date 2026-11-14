@@ -589,7 +589,7 @@ class SessionEndHookAndArchiveTests(unittest.TestCase):
 
     def test_review_archive_owner_close_allows_reverted_sibling_and_rejects_unreviewed_lines(self):
         import importlib.util
-        ra_path=(self.cwd/'../../.claude/tools/review-archive.py').resolve()
+        ra_path=(Path(__file__).resolve().parents[2]/'.claude/tools/review-archive.py').resolve()
         spec=importlib.util.spec_from_file_location('review_archive_mod',ra_path)
         ra=importlib.util.module_from_spec(spec);spec.loader.exec_module(ra)
         root=Path(self.tmp.name)
@@ -610,5 +610,19 @@ class SessionEndHookAndArchiveTests(unittest.TestCase):
         self.assertFalse(ra._verified_route_subset(root,'data/prayers.ts',stripped_disclaimer,reviewed,base_rev,**kwargs))
         self.assertFalse(ra._verified_route_subset(root,'data/prayers.ts',reviewed,reviewed,base_rev,**kwargs))
         self.assertFalse(ra._verified_route_subset(root,'data/prayers.ts',deleted_base,reviewed,base_rev,**kwargs))
+
+    def test_recorded_canonical_jobs_discovers_manifest_job_id_bound_to_candidate(self):
+        root=Path(self.tmp.name)
+        mm_dir=root/'reports/mindmap-pass/2026-11-13-search-gap'
+        mm_dir.mkdir(parents=True)
+        (mm_dir/'approval-manifest.json').write_text(json.dumps({
+            'jobId':'sg-20261113-gaps',
+            'candidateDispositions':[{'id':'cand_1','target':'/biomarkers/shbg'}],
+            'actions':[{'target':'/biomarkers/shbg','bucket':'create new content','candidateIds':['cand_1']}]
+        }))
+        packet={'site':'one.test','runId':'9f34c185abcd1234','candidates':[{'id':'cand_1','eventIds':['e1']}]}
+        history=[{'stage':'build-pass','canonicalJobs':{'main':'9f34c185abcd1234'}}]
+        self.assertEqual(worker.recorded_canonical_jobs(history),{'9f34c185abcd1234'})
+        self.assertEqual(worker.recorded_canonical_jobs(history,packet=packet),{'9f34c185abcd1234','sg-20261113-gaps'})
 
 if __name__=='__main__':unittest.main()

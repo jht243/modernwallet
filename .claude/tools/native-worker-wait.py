@@ -26,13 +26,20 @@ def bind(payload):
   if marker and not marker.is_absolute():marker=root/marker
   if marker and marker.is_file():
    saved=json.loads(marker.read_bytes());file=(root/saved['completionFile']).resolve()
-   if not file.is_relative_to(root/'reports') or hashlib.sha256(file.read_bytes()).hexdigest()!=saved['sha256']:
+   if not file.is_relative_to(root/'reports') or not file.is_file():
     print('Restore the exact retained search completion before dispatch.',file=sys.stderr);raise SystemExit(2)
+   same_bytes=hashlib.sha256(file.read_bytes()).hexdigest()==saved['sha256']
+   if not same_bytes:
+    try:comp=json.loads(file.read_bytes())
+    except Exception:comp={}
+    if not (isinstance(comp,dict) and comp.get('runId')==saved.get('runId') and saved.get('chartReview') and comp.get('chartReview')==saved.get('chartReview')):
+     print('Restore the exact retained search completion before dispatch.',file=sys.stderr);raise SystemExit(2)
    value=payload.get('tool_input',{});role=str(value.get('subagent_type','')).lower();description=str(value.get('description','')).lower()
-   editorial=any(word in role or word in description for word in ('writer','write','audit','chart','decision review'))
+   non_audit_editorial=any(word in role or word in description for word in ('writer','write','chart','decision review'))
    repeat_build='build' in role or ('build' in description and 'preview' not in description)
-   if editorial or repeat_build:
-    print('This search job already has its independent final decisions. Reuse '+saved['completionFile']+' and perform only the separate-preview reconciliation and native finish. Preserve all reviews and counters.',file=sys.stderr);raise SystemExit(2)
+   supplemental_audit=('audit' in role or 'audit' in description) and not non_audit_editorial and not repeat_build
+   if non_audit_editorial or repeat_build or (not supplemental_audit and 'audit' in (role+' '+description)):
+    print('This search job already has its independent final decisions. Reuse '+saved['completionFile']+' and perform only the separate-preview reconciliation, supplemental route/drift audit if required, and native finish. Preserve all reviews and counters.',file=sys.stderr);raise SystemExit(2)
  helper=root/'.claude/tools/competitor-handoff.py'
  inline=False
  if helper.is_file() and worker_tag(payload):

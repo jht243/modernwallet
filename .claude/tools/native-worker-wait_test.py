@@ -39,4 +39,22 @@ class Tests(unittest.TestCase):
   out=io.StringIO()
   with contextlib.redirect_stdout(out):m.bind({'tool_name':'Agent','permission_mode':'auto','tool_input':original})
   self.assertEqual(out.getvalue(),'')
+ def test_continuation_marker_blocks_write_and_chart_but_allows_supplemental_audit(self):
+  import subprocess
+  with tempfile.TemporaryDirectory() as directory:
+   root=Path(directory);subprocess.run(['git','init','-q'],cwd=root,check=True)
+   comp=root/'reports/search-gap/comp.json';comp.parent.mkdir(parents=True)
+   comp.write_text(json.dumps({'runId':'r1','chartReview':'reports/search-gap/cr.json'}))
+   sha=m.hashlib.sha256(comp.read_bytes()).hexdigest()
+   sid_sha=m.hashlib.sha256(b'synthetic-parent').hexdigest()
+   marker=root/'.git/search-gap-continuation'/(sid_sha+'.json');marker.parent.mkdir(parents=True)
+   marker.write_text(json.dumps({'completionFile':'reports/search-gap/comp.json','sha256':sha,'runId':'r1','chartReview':'reports/search-gap/cr.json'}))
+   with patch.dict(os.environ,{'CLAUDE_PROJECT_DIR':str(root)}):
+    for blocked_role in ('mindmap-write','mindmap-build','mindmap-chart-review'):
+     with contextlib.redirect_stderr(io.StringIO()),self.assertRaises(SystemExit):
+      m.bind({'tool_name':'Agent','permission_mode':'auto','tool_input':{'subagent_type':blocked_role,'description':'Run stage'}})
+    out=io.StringIO()
+    with contextlib.redirect_stdout(out):
+     m.bind({'tool_name':'Agent','permission_mode':'auto','tool_input':{'subagent_type':'mindmap-audit','description':'Supplemental route audit'}})
+    self.assertEqual(out.getvalue(),'')
 if __name__=='__main__':unittest.main()
