@@ -41,6 +41,15 @@
       ],
       "route": "/compare/robo-advisor-vs-financial-advisor"
     },
+    "2b54356a34112b483099e7d2b5d6c3e960e567d5997d4cb8a88eb4eec003b56c": {
+      "generated": [
+        "401k-loan-rules--solo-401k-loan-section"
+      ],
+      "jobId": "trend-lane-c-2026-11-14",
+      "previousJobs": [],
+      "repairs": [],
+      "route": "/guides/401k-loan-rules/"
+    },
     "31acc46cae6925881d8562aa39d9fa9b9d286324b6e2030e06d922eb59774ce7": {
       "generated": [
         "full"
