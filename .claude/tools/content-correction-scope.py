@@ -52,7 +52,8 @@ def boundary(root,out,manifest):
         if path.is_file():
             raw=path.read_bytes();files[name]={'sha256':sha(raw)}
             if name in copy or name in recovery_sources:
-                files[name]['artifact']=p.freeze(root,path,out.parent/'correction-sources')
+                cached=p.durable_reviews(root).cache(root,name,files[name]['sha256'],raw)
+                files[name]['artifact']=p.reference(root,cached)
                 require(files[name]['artifact']['sha256']==files[name]['sha256'],'Content changed while sealing its source boundary; recapture')
     p.save_exact(out,{'version':VERSION,'files':files,'recoveryBaseCommit':base,'recoverySourcePaths':sorted(recovery_sources)})
     return dict(p.reference(root,out),version=VERSION)

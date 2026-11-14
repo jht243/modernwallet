@@ -152,7 +152,7 @@ class Tests(unittest.TestCase):
         self.prepare();report=self.actual();path=self.f.put('reports/new-review.json',report);s.validate(self.root,self.after,report);p.record(self.root,path)
         paths=s.sources(self.root,path)['paths']
         self.assertIn('reports/scope.json',paths);self.assertIn('reports/boundary-before.json',paths)
-        self.assertTrue(any('correction-sources/blobs/' in name for name in paths))
+        self.assertTrue(any('content-review-evidence/' in name or 'correction-sources/blobs/' in name for name in paths))
 
     def test_normal_renderer_capture_seals_the_source_boundary(self):
         response=mock.MagicMock();response.status=200;response.headers={};response.read.return_value=b.HTML.encode();response.geturl.return_value='https://example.com/guide';response.__enter__.return_value=response
