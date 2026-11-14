@@ -1,0 +1,121 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-11-13",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 37,
+      "sessions": 40,
+      "active_users": 35,
+      "clicks": 37
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 25,
+      "sessions": 22,
+      "active_users": 16,
+      "clicks": 25
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 24,
+      "sessions": 26,
+      "active_users": 20,
+      "clicks": 24
+    },
+    {
+      "page": "/guides/tax-deductions-checklist/",
+      "views": 18,
+      "sessions": 15,
+      "active_users": 14,
+      "clicks": 18
+    },
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 15,
+      "sessions": 14,
+      "active_users": 14,
+      "clicks": 15
+    },
+    {
+      "page": "/investing/high-yield-savings-calculator/",
+      "views": 12,
+      "sessions": 12,
+      "active_users": 11,
+      "clicks": 12
+    },
+    {
+      "page": "/",
+      "views": 10,
+      "sessions": 10,
+      "active_users": 10,
+      "clicks": 10
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 10,
+      "sessions": 10,
+      "active_users": 10,
+      "clicks": 10
+    },
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 9,
+      "sessions": 8,
+      "active_users": 8,
+      "clicks": 9
+    },
+    {
+      "page": "/compare/ordinary-income-vs-capital-gains-tax/",
+      "views": 7,
+      "sessions": 5,
+      "active_users": 5,
+      "clicks": 7
+    }
+  ],
+  "top10_pages_total_views": 167,
+  "top10_pages_total_clicks": 167,
+  "channel_split": {
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 40,
+      "Unassigned": 1
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 22,
+      "Direct": 4
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 22,
+      "Unassigned": 2
+    },
+    "/guides/tax-deductions-checklist/": {
+      "Organic Search": 14,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/social-security-cola-calculator/": {
+      "Organic Search": 14
+    },
+    "/investing/high-yield-savings-calculator/": {
+      "Organic Search": 12
+    },
+    "/": {
+      "Direct": 8,
+      "Referral": 2
+    },
+    "/guides/trump-account-worth-it/": {
+      "Organic Search": 8
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 8,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/compare/ordinary-income-vs-capital-gains-tax/": {
+      "Organic Search": 4,
+      "Direct": 1,
+      "Unassigned": 1
+    }
+  }
+}

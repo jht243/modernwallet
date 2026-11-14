@@ -341,3 +341,5 @@
 | /sponsor | 2026-11-12 | 15 | 0/0/0/0/0 | 0 |
 | /guides/how-to-open-a-trump-account/ | 2026-11-12 | 9 | 0/0/0/0/0 | 0 |
 | /compare/checking-vs-savings-account/ | 2026-11-12 | 9 | 0/0/0/0/0 | 0 |
+| /guides/trump-gold-coin/ | 2026-11-14 | 10 | 0/0/0/0/0 | 0 |
+| /compare/ordinary-income-vs-capital-gains-tax/ | 2026-11-14 | 7 | 0/0/0/0/0 | 0 |
