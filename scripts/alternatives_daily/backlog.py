@@ -97,10 +97,13 @@ def upgrade_queue(state):
 
 
 WRITER_NOTE = (
-    'OWNER RULE (2026-11-14, supersedes any trigger-prompt "no external writing API" wording): '
-    'generate ALL page prose via python3 scripts/lib/content_gen.py (preflight, system, write --schema none, fix; '
-    'content_gen.py loads the site\'s Claude -> OpenAI -> Gemini waterfall keys automatically when not passed in env), '
-    'record --field writer=\'"content_gen"\', and pin every Step 4 / Step 7b audit subagent to model: "sonnet" (never opus).'
+    'OWNER RULE (2026-11-14, supersedes the 2026-11-13 trigger-prompt "no external writing API" sentence): '
+    'run python3 scripts/lib/content_gen.py preflight first (content_gen.py self-bootstraps the site\'s '
+    'Claude -> OpenAI -> Gemini waterfall keys automatically in cloud via fleet guard / Render relay) and '
+    'generate ALL page prose via content_gen.py (--field writer=\'"content_gen"\'). ONLY if content_gen.py '
+    'exits non-zero across all providers (preflight.log saved), fall back to in-session writing '
+    '(--field writer=\'"in_context_fallback"\') rather than blocking the run. Pin every Step 4 / Step 7b '
+    'audit subagent to model: "sonnet" (never opus).'
 )
 
 

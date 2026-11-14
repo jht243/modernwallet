@@ -295,7 +295,11 @@ def _run_total() -> None:
 atexit.register(_run_total)
 
 
+_SECRETS_BOOTSTRAPPED = False
+
+
 def load_secrets() -> None:
+    global _SECRETS_BOOTSTRAPPED
     for p in SECRET_FILES:
         if not p or not os.path.exists(p):
             continue
@@ -306,6 +310,81 @@ def load_secrets() -> None:
             k, v = line.split("=", 1)
             os.environ.setdefault(k.strip().removeprefix("export ").strip(),
                                   v.strip().strip('"').strip("'"))
+    need_keys = (
+        not os.environ.get("CONTENT_ANTHROPIC_KEY", "").strip()
+        or not os.environ.get("CONTENT_OPENAI_KEY", "").strip()
+        or not os.environ.get("GEMINI_API_KEY", "").strip()
+    )
+    if need_keys and not _SECRETS_BOOTSTRAPPED:
+        _SECRETS_BOOTSTRAPPED = True
+        root = pathlib.Path(__file__).resolve().parents[2]
+        slug = root.name
+        try:
+            import subprocess as _sp
+            u = _sp.run(["git", "-C", str(root), "config", "--get", "remote.origin.url"],
+                        capture_output=True, text=True, timeout=2).stdout.strip()
+            if u:
+                slug = u.rstrip("/").rsplit("/", 1)[-1].removesuffix(".git")
+        except Exception:
+            pass
+        fk = pathlib.Path(os.path.expanduser("~/.claude/fleet-openai-keys.json"))
+        if fk.exists() and not os.environ.get("CONTENT_OPENAI_KEY", "").strip():
+            try:
+                fmap = json.loads(fk.read_text(errors="ignore") or "{}")
+                for cand in (slug, slug.removesuffix("-site"), slug.removesuffix("-web")):
+                    entry = fmap.get(cand)
+                    kv = entry.get("key") if isinstance(entry, dict) else entry
+                    if isinstance(kv, str) and kv.strip():
+                        os.environ["CONTENT_OPENAI_KEY"] = kv.strip()
+                        break
+            except Exception:
+                pass
+        if (
+            not os.environ.get("CONTENT_ANTHROPIC_KEY", "").strip()
+            or not os.environ.get("CONTENT_OPENAI_KEY", "").strip()
+            or not os.environ.get("GEMINI_API_KEY", "").strip()
+        ):
+            gurl = os.environ.get(
+                "OPENAI_BUDGET_GUARD_URL",
+                "https://kqsepnhrhiwqsiazcozg.supabase.co/functions/v1/openai-budget-guard",
+            ).strip()
+            relay_url = os.environ.get(
+                "CONTENT_WRITER_KEYS_RELAY_URL",
+                "https://layer3labs-web.onrender.com/api/writer-keys",
+            ).strip()
+            candidates = []
+            for base in (gurl, relay_url):
+                if base and base not in candidates:
+                    candidates.append(base)
+            for base in candidates:
+                try:
+                    sep = "&" if "?" in base else "?"
+                    req = urllib.request.Request(
+                        f"{base}{sep}action=writer-keys&slug={slug}",
+                        headers={
+                            "x-writer-bootstrap-token": "c94f82a71e054b3d8962e1a470c3f58291d46e8b2037a5c1498ef02361a7d4b9",
+                            "Accept": "application/json",
+                            "User-Agent": "layer3-content-gen/1.0",
+                        },
+                    )
+                    with urllib.request.urlopen(req, timeout=4.0) as resp:
+                        wk = json.loads(resp.read().decode("utf-8", "replace") or "{}")
+                    loaded_any = False
+                    for env_k, json_k in (
+                        ("GEMINI_API_KEY", "geminiKey"),
+                        ("CONTENT_OPENAI_KEY", "openaiKey"),
+                        ("CONTENT_ANTHROPIC_KEY", "anthropicKey"),
+                        ("CONTENT_ANTHROPIC_KEY_2", "anthropicKey2"),
+                    ):
+                        val = str(wk.get(json_k) or "").strip()
+                        if val:
+                            loaded_any = True
+                            if not os.environ.get(env_k, "").strip():
+                                os.environ[env_k] = val
+                    if loaded_any:
+                        break
+                except Exception:
+                    continue
 
 
 def provider_for(model: str) -> str:
@@ -534,7 +613,10 @@ def _check_openai_monthly_budget() -> None:
         return
     sep = "&" if "?" in url else "?"
     try:
-        req = urllib.request.Request(f"{url}{sep}month={month}", headers={"Accept": "application/json"})
+        req = urllib.request.Request(
+            f"{url}{sep}month={month}",
+            headers={"Accept": "application/json", "User-Agent": "layer3-content-gen/1.0"},
+        )
         with urllib.request.urlopen(req, timeout=2.5) as resp:
             status = json.loads(resp.read().decode("utf-8", "replace") or "{}")
         allow = status.get("allowOpenai") is not False
@@ -580,7 +662,7 @@ def _report_openai_budget_spend(model: str, in_tok, out_tok, think_tok) -> None:
         req = urllib.request.Request(
             f"{url}{sep}action=report",
             data=body,
-            headers={"Content-Type": "application/json", "Accept": "application/json"},
+            headers={"Content-Type": "application/json", "Accept": "application/json", "User-Agent": "layer3-content-gen/1.0"},
             method="POST",
         )
         with urllib.request.urlopen(req, timeout=1.5) as resp:
