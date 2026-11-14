@@ -613,29 +613,35 @@ def post_run_record(
         "email_sent": email_sent,
     }).encode("utf-8")
 
-    req = urllib.request.Request(
-        url,
-        data=payload,
-        headers={
-            "Authorization": f"Bearer {token}",
-            "Content-Type": "application/json",
-            "User-Agent": "layer3-routines/1.0 (+https://layer3labs.io)",
-            "Accept": "application/json",
-        },
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            ok = 200 <= resp.status < 300
-            print(f"[send-routine-email] ingest {resp.status}")
-            return ok
-    except urllib.error.HTTPError as e:
-        body = e.read().decode("utf-8", errors="replace")[:200] if e.fp else ""
-        print(f"[send-routine-email] ingest HTTP {e.code} {body}", file=sys.stderr)
-        return False
-    except Exception as e:  # network, DNS, timeout, anything — never fatal
-        print(f"[send-routine-email] ingest failed: {e}", file=sys.stderr)
-        return False
+    import time as _time
+    backoffs = (0, 3, 8, 15)
+    for attempt, delay in enumerate(backoffs):
+        if delay:
+            _time.sleep(delay)
+        req = urllib.request.Request(
+            url,
+            data=payload,
+            headers={
+                "Authorization": f"Bearer {token}",
+                "Content-Type": "application/json",
+                "User-Agent": "layer3-routines/1.0 (+https://layer3labs.io)",
+                "Accept": "application/json",
+            },
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                ok = 200 <= resp.status < 300
+                print(f"[send-routine-email] ingest {resp.status} (attempt {attempt + 1})")
+                return ok
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", errors="replace")[:200] if e.fp else ""
+            print(f"[send-routine-email] ingest HTTP {e.code} (attempt {attempt + 1}) {body}", file=sys.stderr)
+            if e.code not in (429, 500, 502, 503, 504):
+                return False
+        except Exception as e:  # network, DNS, timeout, anything — retry transient blips
+            print(f"[send-routine-email] ingest failed (attempt {attempt + 1}): {e}", file=sys.stderr)
+    return False
 
 
 def build_html(args: argparse.Namespace, details_html: str, preheader: str = "", project_disp: str = "") -> str:
