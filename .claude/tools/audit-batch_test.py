@@ -100,6 +100,107 @@ class AuditBatchPendingResumeTests(unittest.TestCase):
             normal = rb.render_runbook(root, normal_dir, 'audit')
             self.assertIn('audit-batch.py reserve-batch', normal)
 
+    def test_repairs_intact_pending_slot_across_reviewers_via_cross_job_continuation(self):
+        mod = load_audit_batch()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            snap_rel = 'reports/run/candidate-r3.json'
+            snap_file = root / snap_rel
+            snap_file.parent.mkdir(parents=True, exist_ok=True)
+            snapshot_doc = {
+                'manifest': {
+                    'author': 'main-builder',
+                    'workflowKind': 'mindmap-pass',
+                    'canonicalBase': 'https://www.banthebots.org',
+                    'routes': [{'path': '/explainers/no-robo-bosses-act-sb-947'}],
+                },
+                'routes': [{'path': '/explainers/no-robo-bosses-act-sb-947', 'fingerprint': 'fp-r3'}],
+                'snapshotSha256': 'orig-semantic-' + 'b' * 50,
+            }
+            snap_bytes = (json.dumps(snapshot_doc, indent=2) + '\n').encode('utf-8')
+            snap_file.write_bytes(snap_bytes)
+            file_sha = hashlib.sha256(snap_bytes).hexdigest()
+
+            adm_rel = 'reports/run/admissions/admission-1.json'
+            adm_doc = {
+                'jobId': 'competitor-8cfa84950fb7',
+                'reviewer': 'old-reviewer-a059',
+                'number': 3,
+                'snapshot': {'path': snap_rel, 'sha256': file_sha},
+            }
+            (root / adm_rel).parent.mkdir(parents=True, exist_ok=True)
+            (root / adm_rel).write_text(json.dumps(adm_doc))
+            adm_ref = {'path': adm_rel, 'sha256': hashlib.sha256(json.dumps(adm_doc).encode()).hexdigest()}
+
+            cycle = {
+                'jobId': 'competitor-8cfa84950fb7',
+                'rounds': [{'number': 3, 'status': 'pending', 'admission': adm_ref}],
+            }
+            cached = []
+
+            def fake_repair_pending(r, sp, route, job, reviewer, out, failure):
+                # Simulate content-review-policy.py's durable.restore re-materializing original
+                if not snap_file.is_file():
+                    snap_file.write_bytes(snap_bytes)
+                rep_doc = json.loads(Path(sp).read_text())
+                snap_job = rep_doc.get('manifest', {}).get('jobId')
+                cross_job = bool(
+                    isinstance(snap_job, str)
+                    and snap_job.strip()
+                    and snap_job != adm_doc['jobId']
+                    and rep_doc.get('snapshotSha256') != adm_doc['snapshot']['sha256']
+                )
+                if not cross_job:
+                    raise ValueError('The original admission is intact; resume it normally')
+                self.assertEqual(job, 'competitor-8cfa84950fb7')
+                self.assertTrue(failure.is_file() and len(failure.read_bytes()) >= 100)
+                out.write_text(json.dumps({'reviewer': reviewer, 'continuationJobId': snap_job}))
+                return {
+                    'number': 3,
+                    'maximumRounds': 3,
+                    'reviewer': reviewer,
+                    'continuationJobId': snap_job,
+                    'admissionArtifact': {'path': str(out.relative_to(r)), 'sha256': 'c' * 64},
+                }
+
+            crp = types.SimpleNamespace(
+                durable_reviews=lambda r: types.SimpleNamespace(
+                    restore=lambda r2, j: None,
+                    cache=lambda r2, name, exp, raw: cached.append((name, exp)),
+                ),
+                Journal=lambda r, base, route: FakeJournalCtx(cycle),
+                artifact=lambda r, ref: r / ref['path'],
+                inside=lambda r, rel: r / rel,
+                read=lambda p: json.loads(Path(p).read_text()),
+                sha=lambda b: hashlib.sha256(b).hexdigest(),
+                require=lambda cond, msg: (_ for _ in ()).throw(ValueError(msg)) if not cond else None,
+                repair_pending=fake_repair_pending,
+            )
+            renderer = types.SimpleNamespace(
+                digest=lambda val: hashlib.sha256(json.dumps(val, sort_keys=True).encode()).hexdigest(),
+            )
+            shared = {}
+            res = mod._reserve_or_repair_route(
+                root,
+                crp,
+                snapshot_doc,
+                snap_file,
+                snapshot_doc['routes'][0],
+                'competitor-8cfa84950fb7',
+                'af6fb3263c7646f4d',
+                root / 'reports/run/admissions/admission-1.json',
+                prior_reports=(),
+                preflight=None,
+                accepts_preflight=True,
+                repair_pending_failure=None,
+                renderer=renderer,
+                shared_cont_state=shared,
+            )
+            self.assertEqual(res['reviewer'], 'af6fb3263c7646f4d')
+            self.assertTrue(res['continuationJobId'].startswith('competitor-8cfa84950fb7-cont-'))
+            self.assertEqual(cached, [(snap_rel, file_sha)])
+            self.assertIn('doc', shared)
+
 
 if __name__ == '__main__':
     unittest.main()

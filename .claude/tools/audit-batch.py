@@ -53,8 +53,32 @@ def _unused_path(path: Path, tag: str = 'v') -> Path:
         n += 1
 
 
+def _write_snapshot_preserving_order(target_path: Path, doc: dict) -> None:
+    import uuid
+    raw = (json.dumps(doc, indent=2, ensure_ascii=False) + '\n').encode('utf-8')
+    target_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = target_path.with_name(target_path.name + '.snap-' + uuid.uuid4().hex)
+    tmp.write_bytes(raw)
+    os.replace(str(tmp), str(target_path))
+
+
+def _sync_snapshot_path_if_mutable(root: Path, snapshot_path: Path, doc: dict) -> None:
+    resolved_root = Path(root).resolve()
+    resolved_snap = Path(snapshot_path).resolve()
+    if resolved_root not in resolved_snap.parents:
+        return
+    rel_parts = resolved_snap.relative_to(resolved_root).parts
+    if rel_parts[:2] in (('reports', 'content-review-evidence'), ('reports', 'content-review-journals')):
+        return
+    _write_snapshot_preserving_order(resolved_snap, doc)
+
+
 def _reserve_or_repair_route(root, crp, snapshot, snapshot_path, page, job, reviewer, adm_path,
-                             prior_reports, preflight, accepts_preflight, repair_pending_failure):
+                             prior_reports, preflight, accepts_preflight, repair_pending_failure,
+                             renderer=None, shared_cont_state=None):
+    import copy
+    import re
+
     durable = crp.durable_reviews(root)
     journal = crp.Journal(root, snapshot['manifest']['canonicalBase'], page['path'])
     durable.restore(root, journal)
@@ -101,33 +125,50 @@ def _reserve_or_repair_route(root, crp, snapshot, snapshot_path, page, job, revi
             failure_file.parent.mkdir(parents=True, exist_ok=True)
             failure_file.write_text(handback_text, encoding='utf-8')
         original = crp.inside(root, old_snap_ref['path'])
-        same_path = original.resolve() == Path(snapshot_path).resolve()
-        superseded = original.with_name(f"{original.stem}.superseded-{old_snap_ref['sha256'][:12]}{original.suffix}")
+        original_intact = original.is_file() and crp.sha(original.read_bytes()) == old_snap_ref['sha256']
+        if original_intact:
+            durable.cache(root, old_snap_ref['path'], old_snap_ref['sha256'], original.read_bytes())
         repaired_snap = None
-        moved_same_path = False
-        try:
-            if original.is_file() and crp.sha(original.read_bytes()) == old_snap_ref['sha256']:
-                durable.cache(root, old_snap_ref['path'], old_snap_ref['sha256'], original.read_bytes())
-                if same_path:
-                    repaired_snap = _unused_path(adm_path.parent / f"repaired-capture-{original.name}", 'v')
-                    repaired_snap.parent.mkdir(parents=True, exist_ok=True)
-                    repaired_snap.write_bytes(original.read_bytes())
-                    if not superseded.exists():
-                        original.rename(superseded)
-                    else:
-                        original.unlink()
-                    moved_same_path = True
-                else:
-                    if not superseded.exists():
-                        original.rename(superseded)
-                    else:
-                        original.unlink()
-            return crp.repair_pending(
-                root, repaired_snap or snapshot_path, page['path'], job, reviewer, target_adm, failure_file,
+        if original_intact:
+            snap_job = snapshot.get('manifest', {}).get('jobId')
+            already_cross_job = bool(
+                isinstance(snap_job, str)
+                and snap_job.strip()
+                and snap_job != old.get('jobId')
+                and snapshot.get('snapshotSha256') != old_snap_ref.get('sha256')
             )
-        finally:
-            if moved_same_path and superseded.is_file() and not original.exists():
-                superseded.rename(original)
+            has_changed_deps = False
+            if not already_cross_job and old_snap_doc is not None and hasattr(crp, 'changed_pending_dependencies'):
+                if old_snap_doc.get('manifest', {}).get('jobId') == snap_job:
+                    try:
+                        has_changed_deps = bool(crp.changed_pending_dependencies(root, old_snap_doc, snapshot))
+                    except Exception:
+                        has_changed_deps = False
+            if not already_cross_job and not has_changed_deps:
+                if shared_cont_state is not None and shared_cont_state.get('path') is not None:
+                    repaired_snap = shared_cont_state['path']
+                else:
+                    if renderer is None:
+                        renderer = _load('repo_renderer_cont', Path(root) / '.claude/tools/rendered-audit.py')
+                    base_job = str(old.get('jobId') or (cycle or {}).get('jobId') or job)
+                    rev_tag = re.sub(r'[^a-zA-Z0-9_-]', '', str(reviewer))[:12] or 'cont'
+                    cont_job_id = f"{base_job}-cont-{rev_tag}"
+                    if cont_job_id == old.get('jobId'):
+                        cont_job_id = cont_job_id + '-2'
+                    cont_doc = copy.deepcopy(snapshot)
+                    cont_doc['manifest'] = {**cont_doc['manifest'], 'jobId': cont_job_id}
+                    unsigned = {k: v for k, v in cont_doc.items() if k != 'snapshotSha256'}
+                    cont_doc['snapshotSha256'] = renderer.digest(unsigned)
+                    repaired_snap = _unused_path(adm_path.parent / f"continuation-{Path(snapshot_path).name}", 'v')
+                    _write_snapshot_preserving_order(repaired_snap, cont_doc)
+                    if shared_cont_state is not None:
+                        shared_cont_state['doc'] = cont_doc
+                        shared_cont_state['path'] = repaired_snap
+                        shared_cont_state['prevSha256'] = snapshot.get('snapshotSha256')
+        repair_job = (cycle or {}).get('jobId') or old.get('jobId') or job
+        return crp.repair_pending(
+            root, repaired_snap or snapshot_path, page['path'], repair_job, reviewer, target_adm, failure_file,
+        )
     target_adm = _unused_path(adm_path, 'r')
     if accepts_preflight:
         return crp.reserve(root, snapshot_path, page['path'], job, reviewer, target_adm, prior_reports, preflight)
@@ -181,6 +222,7 @@ def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton
     checks_keys = sorted(renderer.CHECKS)
     skeleton_routes = []
     summaries = []
+    shared_cont_state = {}
 
     for idx, page in enumerate(selected_pages, 1):
         _, spec = crp.route_in(snapshot, page['path'])
@@ -188,6 +230,7 @@ def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton
         adm = _reserve_or_repair_route(
             root, crp, snapshot, snapshot_path, page, job, reviewer, adm_path,
             prior_reports, preflight, accepts_preflight, repair_pending_failure,
+            renderer=renderer, shared_cont_state=shared_cont_state,
         )
         text = crp.claim_text(page['semantic'])
         text_sha = crp.sha(text.encode())
@@ -222,6 +265,10 @@ def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton
             'riskPassageCount': len(mentions),
             'admission': adm['admissionArtifact'],
         })
+
+    if shared_cont_state.get('doc') is not None:
+        snapshot = shared_cont_state['doc']
+        _sync_snapshot_path_if_mutable(root, snapshot_path, snapshot)
 
     skeleton = {
         'reviewer': reviewer,
@@ -376,14 +423,22 @@ def _finalize_review_in_root(root, snapshot_path, review_path, target_path, job=
             for rr in routes:
                 page, _ = crp.route_in(snapshot, rr['path'])
                 crp.audit_preflight_check(root, preflight, job, bind_reviewer, page['path'])
+        shared_cont_state = {}
         for idx, rr in enumerate(routes, 1):
             page, _ = crp.route_in(snapshot, rr['path'])
             adm_path = out_dir / f'admission-{idx}.json'
             adm = _reserve_or_repair_route(
                 root, crp, snapshot, snapshot_path, page, job, bind_reviewer, adm_path,
                 prior_reports, preflight, accepts_preflight, repair_pending_failure,
+                renderer=renderer, shared_cont_state=shared_cont_state,
             )
             rr['reviewBudget'] = adm['admissionArtifact']
+        if shared_cont_state.get('doc') is not None:
+            prev_sha = shared_cont_state.get('prevSha256')
+            snapshot = shared_cont_state['doc']
+            _sync_snapshot_path_if_mutable(root, snapshot_path, snapshot)
+            if report.get('snapshotSha256') == prev_sha:
+                report['snapshotSha256'] = snapshot['snapshotSha256']
         if layer is not None:
             report['workflowPolicySha256'] = layer.policy_hash(root)
             apps = []
