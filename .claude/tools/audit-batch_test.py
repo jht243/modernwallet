@@ -82,6 +82,24 @@ class AuditBatchPendingResumeTests(unittest.TestCase):
             self.assertEqual(res['round'], 2)
             self.assertEqual(res['admissionArtifact'], adm_ref)
 
+    def test_routine_control_runbook_omits_forbidden_reviewer_bash_helpers(self):
+        rb_path = Path(__file__).with_name('workflow-runbook.py')
+        spec = importlib.util.spec_from_file_location('rb_mod', rb_path)
+        rb = importlib.util.module_from_spec(spec); spec.loader.exec_module(rb)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            rc_dir = root / 'reports/routine-control/preflight/toolu_123'
+            rc_dir.mkdir(parents=True, exist_ok=True)
+            (rc_dir / 'manifest.json').write_text(json.dumps({'phase': 'audit', 'actor': 'a12345', 'runId': 'run-1'}))
+            out = rb.render_runbook(root, rc_dir, 'audit')
+            self.assertIn('ROUTINE-CONTROL READ-ONLY REVIEWER MODE', out)
+            self.assertNotIn('audit-batch.py reserve-batch', out)
+            normal_dir = root / 'reports/mindmap-pass/run/preflight-audit'
+            normal_dir.mkdir(parents=True, exist_ok=True)
+            (normal_dir / 'manifest.json').write_text(json.dumps({'phase': 'audit', 'actor': 'a12345', 'runId': 'run-1'}))
+            normal = rb.render_runbook(root, normal_dir, 'audit')
+            self.assertIn('audit-batch.py reserve-batch', normal)
+
 
 if __name__ == '__main__':
     unittest.main()

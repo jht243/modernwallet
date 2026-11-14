@@ -146,21 +146,36 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
                 f'python3 .claude/tools/workflow-handoff.py auto-seal --phase audit --manifest <RUN_DIR>/approval-manifest.json --previous <RUN_DIR>/handoff-write.json --snapshot <RUN_DIR>/audit/preview-snapshot.json --producer {actor} --actor <AUDITOR_ACTOR> --out <RUN_DIR>/handoff-audit.json'
             )
     elif phase == 'audit':
-        lines.extend([
-            '2. Mechanical surface & risk pack across all routes in 1 turn: '
-            'python3 .claude/tools/rendered-audit.py inspect-pack --snapshot <SNAPSHOT_JSON>',
-            f'3. Reserve all routes & emit pre-bound review skeleton in 1 turn (never hand-roll hashes): '
-            f'python3 .claude/tools/audit-batch.py reserve-batch --snapshot <SNAPSHOT_JSON> --job-id <JOB_ID> '
-            f'--reviewer {actor} --preflight {rel_dir} '
-            + ('--writer-preflight <RUN_DIR>/preflight-write ' if is_local else '')
-            + '--out-dir <RUN_DIR>/audit/admissions --skeleton <RUN_DIR>/audit/review.json',
-            '4. Populate real PASS/FAIL verdicts + >=40-char riskAssessment.rationale (and >=40-char reason on every incidentalMentions/consequentialClaims item) + >=40-char factualReview + >=20-char checks evidence in <RUN_DIR>/audit/review.json, then sync profile/keys & record in 1 turn: '
-            'python3 .claude/tools/audit-batch.py finalize-review --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json '
-            '&& python3 .claude/tools/content-review-policy.py record --review <RUN_DIR>/audit/review.json '
-            '&& python3 .claude/tools/rendered-audit.py check --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json',
-            '5. If a subset of routes PASS and others FAIL below ceiling, project passing subset mechanically: '
-            'python3 .claude/tools/content-review-policy.py project --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json --route <PASS_ROUTE> --out-snapshot <RUN_DIR>/audit/approved-snapshot.json --out-review <RUN_DIR>/audit/approved-review.json',
-        ])
+        is_routine_control = str(rel_dir).replace('\\', '/').startswith('reports/routine-control/preflight/')
+        if is_routine_control:
+            lines.extend([
+                '2. ROUTINE-CONTROL READ-ONLY REVIEWER MODE (shell helpers inspect-pack / reserve-batch / finalize-review / record are intentionally disabled in reviewer Bash — MAIN runs them before/after your turn; NEVER emit a procedural FAIL because Bash denied them):',
+                '3. Use Read to inspect <SNAPSHOT_JSON>, any pre-built <RUN_DIR>/audit/review-skeleton.json (or prior review JSON), the captured HTML/txt files, and raw primary sources.',
+                '4. Populate real PASS/FAIL verdicts + >=40-char riskAssessment.rationale (and >=40-char reason on every incidentalMentions/consequentialClaims item) + >=40-char factualReview + >=20-char checks evidence in the review JSON object, and Write ONLY your assigned reports/routine-control/receipts/<tid>.json receipt including candidates:[...] AND native_receipts:[{"path":"<declared REVIEW_RECEIPT path>","content":<complete review JSON object>}].',
+                '5. After SubagentStop exports native_receipts, MAIN binds your real agent_id + preflight + admissions and records in 1 turn: '
+                'python3 .claude/tools/audit-batch.py finalize-review --snapshot <SNAPSHOT_JSON> --review <REVIEW_RECEIPT_JSON> --job-id <JOB_ID> '
+                f'--reviewer {actor} --preflight {rel_dir} '
+                + ('--writer-preflight <RUN_DIR>/preflight-write ' if is_local else '')
+                + '--out-dir <RUN_DIR>/audit/admissions '
+                '&& python3 .claude/tools/content-review-policy.py record --review <REVIEW_RECEIPT_JSON> '
+                '&& python3 .claude/tools/rendered-audit.py check --snapshot <SNAPSHOT_JSON> --review <REVIEW_RECEIPT_JSON>',
+            ])
+        else:
+            lines.extend([
+                '2. Mechanical surface & risk pack across all routes in 1 turn: '
+                'python3 .claude/tools/rendered-audit.py inspect-pack --snapshot <SNAPSHOT_JSON>',
+                f'3. Reserve all routes & emit pre-bound review skeleton in 1 turn (never hand-roll hashes): '
+                f'python3 .claude/tools/audit-batch.py reserve-batch --snapshot <SNAPSHOT_JSON> --job-id <JOB_ID> '
+                f'--reviewer {actor} --preflight {rel_dir} '
+                + ('--writer-preflight <RUN_DIR>/preflight-write ' if is_local else '')
+                + '--out-dir <RUN_DIR>/audit/admissions --skeleton <RUN_DIR>/audit/review.json',
+                '4. Populate real PASS/FAIL verdicts + >=40-char riskAssessment.rationale (and >=40-char reason on every incidentalMentions/consequentialClaims item) + >=40-char factualReview + >=20-char checks evidence in <RUN_DIR>/audit/review.json, then sync profile/keys & record in 1 turn: '
+                'python3 .claude/tools/audit-batch.py finalize-review --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json '
+                '&& python3 .claude/tools/content-review-policy.py record --review <RUN_DIR>/audit/review.json '
+                '&& python3 .claude/tools/rendered-audit.py check --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json',
+                '5. If a subset of routes PASS and others FAIL below ceiling, project passing subset mechanically: '
+                'python3 .claude/tools/content-review-policy.py project --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json --route <PASS_ROUTE> --out-snapshot <RUN_DIR>/audit/approved-snapshot.json --out-review <RUN_DIR>/audit/approved-review.json',
+            ])
     elif phase == 'publish':
         has_land = (root / '.github/workflows/land.yml').is_file() and (root / '.claude/scripts/land-run.sh').is_file()
         deploy_cmd = (
