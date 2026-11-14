@@ -1,0 +1,277 @@
+{
+ "pages": {
+  "/": {
+   "query": "financial online calculators",
+   "paa": [],
+   "related_searches": [],
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/compare/trump-account-vs-brokerage-account/": {
+   "query": "trump account vs brokerage account for kids",
+   "paa": [
+    "Should I do a Trump investment account for my child?",
+    "Is a Trump Account better than a custodial brokerage account?",
+    "Is it smart to open a brokerage account for your child?",
+    "What are the disadvantages of an UTMA account?",
+    "Which is better, UTMA or Trump Account?",
+    "Do parents pay taxes on UTMA?"
+   ],
+   "related_searches": [],
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.monotelo.com",
+    "www.acorns.com",
+    "www.empower.com",
+    "www.nerdwallet.com",
+    "google.com",
+    "www.psca.org",
+    "www.instagram.com",
+    "www.fidelity.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/investing/": {
+   "query": "investment calculator with increasing contributions",
+   "paa": [],
+   "related_searches": [
+    "Compound interest investment calculator with increasing contributions",
+    "Monthly investment calculator with increasing contributions"
+   ],
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.financialmentor.com",
+    "investor.sebi.gov.in",
+    "www.youtube.com",
+    "www.bankofadvance.com",
+    "www.agfinancial.org",
+    "www.investor.gov",
+    "google.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/compare/roth-401k-vs-traditional-401k/": {
+   "query": "regular vs roth 401k",
+   "paa": [
+    "Is it better to keep money in 401k or Roth IRA?",
+    "Can I retire at 62 with $400,000 in 401k?",
+    "What does Dave Ramsey say about Roth IRAs?",
+    "Can I convert a traditional IRA to a Roth IRA?",
+    "How much will $10,000 make in a Roth IRA?",
+    "What is the downside of converting IRA to Roth?"
+   ],
+   "related_searches": [
+    "Regular vs roth 401k reddit",
+    "Regular vs roth 401k taxes",
+    "Regular vs roth 401k calculator",
+    "Roth 401k vs Roth IRA",
+    "Why Roth 401k is bad",
+    "Pre-tax vs Roth 401k",
+    "401k vs Roth 401k which is better",
+    "Roth vs traditional 401k 100k salary"
+   ],
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.fidelity.com",
+    "google.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/guides/trump-account-worth-it/": {
+   "query": "are trump accounts a scam",
+   "paa": [
+    "Is the Trump account real?",
+    "Is the Trump account app legitimate?",
+    "What are the risks of a Trump account?",
+    "Which Trump account app is real?",
+    "Who owns the Trump account app?",
+    "What platform does the Trump account use?"
+   ],
+   "related_searches": [],
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "home.treasury.gov",
+    "neal.house.gov",
+    "google.com",
+    "www.centralbank.net",
+    "washingtonspectator.org",
+    "rbgcpa.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/investing/withdrawal-calculator/": {
+   "query": "how long will my money last calculator nerdwallet",
+   "paa": [],
+   "related_searches": [
+    "How long will my money last calculator nerdwallet reddit",
+    "How long will my money last calculator nerdwallet free",
+    "How long will my money last calculator nerdwallet based on",
+    "How long will my savings last calculator with inflation",
+    "How long will my money last in retirement calculator free",
+    "How long will my money last calculator retirement",
+    "How long will my money last calculator Mutual of Omaha",
+    "How long will my money last calculator Fidelity"
+   ],
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/auto-loan/": {
+   "query": "nerdwallet auto loan calculator",
+   "paa": [],
+   "related_searches": [],
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "google.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/coast-fire/": {
+   "query": "coast fire amount",
+   "paa": [
+    "What amount do I need for coast fire?",
+    "Is 300k enough to coast fire?",
+    "Can I retire at 40 with 2 million dollars?",
+    "How to work out your coast fire number?",
+    "How do I calculate my FIRE amount?",
+    "How much to coastfire at 35?"
+   ],
+   "related_searches": [
+    "Coast FIRE calculator",
+    "Best Coast FIRE calculator",
+    "What is Coast FIRE",
+    "Barista FIRE calculator",
+    "Coast FIRE number by age",
+    "Fidelity Coast FIRE calculator",
+    "How to calculate Coast FIRE number",
+    "What does Coast FIRE number mean"
+   ],
+   "verdict": "locked",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com",
+    "m1.com",
+    "google.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com",
+    "google.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  }
+ },
+ "cost": "DataForSEO: 8 calls, $0.01660 of $2.00 budget"
+}

@@ -1,0 +1,181 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window_days": 30,
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/",
+      "clicks": 1,
+      "impressions": 69,
+      "ctr": 0.0145,
+      "position": 9.46
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/trump-account-vs-brokerage-account/",
+      "clicks": 1,
+      "impressions": 5,
+      "ctr": 0.2,
+      "position": 47.8
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-retirement-accounts-for-self-employed/",
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 0.3333,
+      "position": 17.67
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/",
+      "clicks": 0,
+      "impressions": 51,
+      "ctr": 0,
+      "position": 5.88
+    },
+    {
+      "page": "https://www.themodernwallet.com/about/",
+      "clicks": 0,
+      "impressions": 45,
+      "ctr": 0,
+      "position": 3.64
+    },
+    {
+      "page": "https://www.themodernwallet.com/calculators/",
+      "clicks": 0,
+      "impressions": 42,
+      "ctr": 0,
+      "position": 8.93
+    },
+    {
+      "page": "https://www.themodernwallet.com/methodology/",
+      "clicks": 0,
+      "impressions": 42,
+      "ctr": 0,
+      "position": 5.33
+    },
+    {
+      "page": "https://www.themodernwallet.com/investing/",
+      "clicks": 0,
+      "impressions": 41,
+      "ctr": 0,
+      "position": 8.54
+    },
+    {
+      "page": "https://www.themodernwallet.com/budget/",
+      "clicks": 0,
+      "impressions": 39,
+      "ctr": 0,
+      "position": 7.49
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/roth-401k-vs-traditional-401k/",
+      "clicks": 0,
+      "impressions": 32,
+      "ctr": 0,
+      "position": 78.66
+    },
+    {
+      "page": "https://www.themodernwallet.com/invoice-factoring/",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 15.3
+    },
+    {
+      "page": "https://www.themodernwallet.com/merchant-cash-advance/",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 7.4
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/trump-account-vs-529/",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 17.94
+    },
+    {
+      "page": "https://www.themodernwallet.com/estate-planning/",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 7.88
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/trump-account-worth-it/",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 22
+    },
+    {
+      "page": "https://www.themodernwallet.com/investing/withdrawal-calculator/",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 18.2
+    },
+    {
+      "page": "https://www.themodernwallet.com/business-line-of-credit/",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 7.57
+    },
+    {
+      "page": "https://www.themodernwallet.com/mortgage/",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 5.38
+    },
+    {
+      "page": "https://www.themodernwallet.com/auto-loan/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 19.42
+    },
+    {
+      "page": "https://www.themodernwallet.com/editorial-policy/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 7.33
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/ai-financial-advice-chatbots-guide/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 5.17
+    },
+    {
+      "page": "https://www.themodernwallet.com/elder-care/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 9.91
+    },
+    {
+      "page": "https://www.themodernwallet.com/investing/compound-interest-calculator/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 18.64
+    },
+    {
+      "page": "https://www.themodernwallet.com/coast-fire/",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 32.33
+    },
+    {
+      "page": "https://www.themodernwallet.com/mortgage/amortization-schedule/",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 6.78
+    }
+  ]
+}

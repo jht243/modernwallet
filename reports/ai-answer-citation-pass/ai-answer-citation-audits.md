@@ -142,3 +142,28 @@
 | /portfolio/ | 2026-11-01 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
 | /retirement/ | 2026-11-01 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
 | /estate-planning/ | 2026-11-01 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| / | 2026-11-14 | financial online calculators | ABSENT | no | (AI Overview present, no cited domains extracted) | none | n/a |
+| /compare/trump-account-vs-brokerage-account/ | 2026-11-14 | trump account vs brokerage account for kids | ABSENT | no | reddit.com/monotelo.com/acorns.com (+5 more) | none | n/a |
+| /investing/ | 2026-11-14 | investment calculator with increasing contributions | ABSENT | no | financialmentor.com/investor.sebi.gov.in/youtube.com (+3 more) | none | n/a |
+| /compare/roth-401k-vs-traditional-401k/ | 2026-11-14 | regular vs roth 401k | ABSENT | no | reddit.com/fidelity.com/youtube.com | none | n/a |
+| /guides/trump-account-worth-it/ | 2026-11-14 | are trump accounts a scam | ABSENT | no | reddit.com/home.treasury.gov/neal.house.gov (+3 more) | none | n/a |
+| /investing/withdrawal-calculator/ | 2026-11-14 | how long will my money last calculator nerdwallet | ABSENT | no | nerdwallet.com | none | n/a |
+| /auto-loan/ | 2026-11-14 | nerdwallet auto loan calculator | ABSENT | no | nerdwallet.com | none | n/a |
+| /coast-fire/ | 2026-11-14 | coast fire amount | ABSENT | no | nerdwallet.com/m1.com/youtube.com | none | n/a |
+| /roundup/best-retirement-accounts-for-self-employed/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /guides/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /about/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /calculators/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /methodology/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /budget/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /invoice-factoring/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /merchant-cash-advance/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /compare/trump-account-vs-529/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /estate-planning/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /business-line-of-credit/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /mortgage/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /editorial-policy/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /guides/ai-financial-advice-chatbots-guide/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /elder-care/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /investing/compound-interest-calculator/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /mortgage/amortization-schedule/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
