@@ -26,10 +26,11 @@ from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
 
 DEFAULT = Path('reports/alternatives-daily/backlog.json')
-STATUSES = {'pending', 'eligible', 'in_progress', 'published', 'held', 'excluded', 'duplicate'}
+STATUSES = {'pending', 'eligible', 'in_progress', 'published', 'held', 'excluded', 'duplicate', 'quarantined'}
 TERMINAL = {'published', 'excluded', 'duplicate'}
 DAILY_CAP = 3
 DISCOVERY_MAX = 60
+MAX_RESUME_ATTEMPTS = 2  # 1 initial claim + max 1 resume; stuck vendors auto-quarantine so siblings flow
 
 
 def now():
@@ -83,11 +84,37 @@ def log(row, status, note, **extra):
     row['updatedAt'] = now()
 
 
+def _write_quarantine_ticket(row, reason):
+    q_dir = Path('reports/quarantine/alternatives-daily')
+    q_dir.mkdir(parents=True, exist_ok=True)
+    safe_id = re.sub(r'[^a-zA-Z0-9._-]+', '-', str(row.get('id') or 'item')).strip('-').lower() or 'item'
+    ticket = {
+        'version': 1,
+        'status': 'quarantined',
+        'skill': 'alternatives-daily',
+        'site': '',
+        'itemId': row['id'],
+        'attempts': int(row.get('attempts') or 1),
+        'maxRetries': 1,
+        'reason': reason,
+        'error': ((row.get('history') or [{}])[-1].get('note') or ''),
+        'routes': [row['liveUrl']] if row.get('liveUrl') else [],
+        'createdAt': now(),
+        'updatedAt': now(),
+        'details': {'vendor': row.get('vendor'), 'product': row.get('product'), 'targetQuery': row.get('targetQuery')},
+    }
+    p = q_dir / f'{safe_id}.json'
+    tmp = p.with_suffix('.tmp')
+    tmp.write_text(json.dumps(ticket, indent=2, sort_keys=True, ensure_ascii=False) + '\n')
+    tmp.replace(p)
+    return str(p)
+
+
 def claimed_today(state):
-    # A page held or excluded after claiming frees its slot: the cap is 3 pages
-    # actually produced per day, so the run can claim a replacement.
+    # A page held, excluded, or quarantined after claiming frees its slot: the cap is 3 pages
+    # actually produced per day, so the run can claim a replacement immediately.
     return [r for r in state['rows'] if r.get('claimedOn') == today()
-            and r['status'] not in ('held', 'excluded', 'duplicate')]
+            and r['status'] not in ('held', 'excluded', 'duplicate', 'quarantined')]
 
 
 def upgrade_queue(state):
@@ -103,7 +130,10 @@ WRITER_NOTE = (
     'generate ALL page prose via content_gen.py (--field writer=\'"content_gen"\'). ONLY if content_gen.py '
     'exits non-zero across all providers (preflight.log saved), fall back to in-session writing '
     '(--field writer=\'"in_context_fallback"\') rather than blocking the run. Pin every Step 4 / Step 7b '
-    'audit subagent to model: "sonnet" (never opus).'
+    'audit subagent to model: "sonnet" (never opus). RETRY & QUARANTINE RULE: if one vendor hits an '
+    'unrecoverable gate/deploy blocker, quarantine ONLY that vendor (`backlog.py set --id <id> --status quarantined '
+    '--note "<why>"`), ship all passing sibling vendors in the same run, and report `--status failure` naming the '
+    'quarantined vendor so the Failure-Fixer AI picks it up.'
 )
 
 
@@ -113,6 +143,7 @@ def cmd_status(state, _):
         counts[row['status']] = counts.get(row['status'], 0) + 1
     return {'day': today(), 'counts': counts, 'claimedToday': [r['id'] for r in claimed_today(state)],
             'resume': [r['id'] for r in state['rows'] if r['status'] == 'in_progress'],
+            'quarantined': [r['id'] for r in state['rows'] if r['status'] == 'quarantined'],
             'eligible': sum(r['status'] == 'eligible' for r in state['rows']),
             'pending': sum(r['status'] == 'pending' for r in state['rows']),
             'upgradePending': upgrade_queue(state),
@@ -120,14 +151,46 @@ def cmd_status(state, _):
 
 
 def cmd_next(state, args):
+    auto_quarantined = []
+    now_dt = dt.datetime.now(dt.timezone.utc)
+    for r in list(state['rows']):
+        if r['status'] != 'in_progress':
+            continue
+        attempts = int(r.get('attempts') or 1)
+        last_seen_raw = r.get('lastNextAt') or r.get('updatedAt') or ''
+        new_session = True
+        if last_seen_raw:
+            try:
+                last_dt = dt.datetime.fromisoformat(last_seen_raw.replace('Z', '+00:00'))
+                if last_dt.tzinfo is None:
+                    last_dt = last_dt.replace(tzinfo=dt.timezone.utc)
+                new_session = (now_dt - last_dt).total_seconds() >= 2700
+            except ValueError:
+                new_session = True
+        if new_session:
+            if attempts >= MAX_RESUME_ATTEMPTS:
+                reason = f'Auto-quarantined after {attempts} unfinished attempts (max 1 resume); sidelined so new vendors flow.'
+                t_path = _write_quarantine_ticket(r, reason)
+                log(r, 'quarantined', reason, ticketPath=t_path)
+                auto_quarantined.append({'id': r['id'], 'ticketPath': t_path})
+                state['_dirty'] = True
+                continue
+            r['attempts'] = attempts + 1
+            r['lastNextAt'] = now()
+            state['_dirty'] = True
     resume = [r for r in state['rows'] if r['status'] == 'in_progress']
     room = max(0, min(args.max, DAILY_CAP) - len(claimed_today(state)))
     fresh = sorted((r for r in state['rows'] if r['status'] == 'eligible'),
                    key=lambda r: (r.get('priority', 999), r['id']))[:room]
+    discovery_allowed = (not resume and not fresh and room > 0 and
+                         not any(r['status'] in ('eligible', 'pending') for r in state['rows']))
+    upgrades = upgrade_queue(state)[:3]
+    zero_work = not resume and not fresh and not discovery_allowed and not upgrades and not auto_quarantined
     return {'day': today(), 'resume': resume, 'new': fresh, 'slotsLeftToday': room,
-            'discoveryAllowed': not resume and not fresh and room > 0 and
-            not any(r['status'] in ('eligible', 'pending') for r in state['rows']),
-            'upgradeQueue': upgrade_queue(state)[:3],
+            'autoQuarantined': auto_quarantined,
+            'discoveryAllowed': discovery_allowed,
+            'upgradeQueue': upgrades,
+            'zeroWorkFastExit': zero_work,
             'upgradeNote': 'step 7b MUST upgrade every upgradeQueue row this run, after today\'s pages (also on a no-op day)',
             'writerNote': WRITER_NOTE}
 
@@ -141,6 +204,8 @@ def cmd_claim(state, args):
         if row['status'] != 'eligible':
             fail(key + ' is ' + row['status'] + ', only eligible rows can be claimed')
         row['claimedOn'] = today()
+        row['attempts'] = int(row.get('attempts') or 0) + 1
+        row['lastNextAt'] = now()
         log(row, 'in_progress', 'claimed for ' + today())
     return {'claimed': ids}
 
@@ -169,9 +234,12 @@ def cmd_set(state, args):
         missing = [k for k in ('vendor', 'product', 'officialUrl', 'targetQuery', 'demand') if not (fields.get(k) or row.get(k))]
         if missing:
             fail('qualification needs ' + ', '.join(missing))
+    if args.status == 'quarantined':
+        t_path = _write_quarantine_ticket(row, args.note)
+        fields['ticketPath'] = t_path
     row.update(fields)
     log(row, args.status, args.note, fields=sorted(fields))
-    return {'id': args.id, 'status': args.status}
+    return {'id': args.id, 'status': args.status, **({'ticketPath': row['ticketPath']} if row.get('ticketPath') else {})}
 
 
 def cmd_audit(state, args):
@@ -248,7 +316,8 @@ def main():
     handler = {'status': cmd_status, 'next': cmd_next, 'claim': cmd_claim, 'set': cmd_set,
                'audit': cmd_audit, 'add': cmd_add}[args.cmd]
     out = handler(state, args)
-    if args.cmd not in ('status', 'next'):
+    dirty = state.pop('_dirty', False)
+    if args.cmd not in ('status', 'next') or dirty:
         save(path, state)
     print(json.dumps(out, indent=2, ensure_ascii=False))
 

@@ -53,7 +53,12 @@ def _reserve_or_repair_route(root, crp, snapshot, snapshot_path, page, job, revi
     if last and last.get('status') == 'pending':
         old = crp.read(crp.artifact(root, last['admission']))
         old_snap_ref = old['snapshot']
-        if snapshot.get('snapshotSha256') == old_snap_ref.get('sha256') and old.get('reviewer') == reviewer:
+        snap_file_sha = crp.sha(Path(snapshot_path).read_bytes()) if Path(snapshot_path).is_file() else None
+        same_snapshot = (
+            snap_file_sha == old_snap_ref.get('sha256')
+            or snapshot.get('snapshotSha256') == old_snap_ref.get('sha256')
+        )
+        if same_snapshot and old.get('reviewer') == reviewer:
             return {**old, 'admissionArtifact': last['admission']}
         if repair_pending_failure is None:
             raise ValueError(

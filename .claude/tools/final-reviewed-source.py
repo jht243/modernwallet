@@ -49,6 +49,42 @@ def _git_blob_or_none(root, spec):
     return git(root, 'show', spec)
 
 
+def _durable_journal_bytes(root, rel_journal_path):
+    """Return bytes of rel_journal_path stored on automation/content-review-journals, if any."""
+    journal_key = Path(rel_journal_path).stem
+    for ref in (
+        'refs/heads/automation/content-review-journals',
+        'refs/remotes/origin/automation/content-review-journals',
+    ):
+        state_raw = _git_blob_or_none(root, ref + ':state.json')
+        if not state_raw:
+            continue
+        try:
+            state = json.loads(state_raw)
+            rj = (state.get('reviewJournals') or {}).get(journal_key) or {}
+            blob_sha = rj.get('head') or (rj.get('artifacts') or {}).get(rel_journal_path)
+            if not blob_sha:
+                for entry in (state.get('reviewJournals') or {}).values():
+                    if isinstance(entry, dict) and rel_journal_path in (entry.get('artifacts') or {}):
+                        blob_sha = entry['artifacts'][rel_journal_path]
+                        break
+            if blob_sha:
+                art = _git_blob_or_none(root, ref + ':artifacts/' + blob_sha)
+                if art is not None:
+                    return art
+        except Exception:
+            pass
+    return None
+
+
+def _event_job_id(events):
+    for ev in reversed(events):
+        jid = (ev.get('data') or {}).get('jobId') or ev.get('jobId')
+        if isinstance(jid, str) and jid:
+            return jid
+    return None
+
+
 def _resolve_merge_base(root, recorded_base, fallback_base):
     for cand in (recorded_base, fallback_base):
         if not cand:
@@ -91,12 +127,28 @@ def prepare(root, base, dry_run=False):
     requirements = {}
     recorded_events = []
     policy = None
-    for name in sorted(changed):
-        log = Path(name)
-        if log.parent != Path('reports/content-review-journals') or log.suffix != '.jsonl':
-            continue
-        events = [json.loads(line) for line in git(root,'show','HEAD:'+name).splitlines() if line]
+    journal_names = [
+        n for n in sorted(changed)
+        if Path(n).parent == Path('reports/content-review-journals') and Path(n).suffix == '.jsonl'
+    ]
+    journal_rows = []
+    fresh_job_ids = set()
+    has_fresh_journal = False
+    for name in journal_names:
+        head_raw = git(root, 'show', 'HEAD:' + name)
+        events = [json.loads(line) for line in head_raw.splitlines() if line]
         if not events:
+            continue
+        durable_raw = _durable_journal_bytes(root, name)
+        is_restored_unchanged = durable_raw is not None and head_raw == durable_raw
+        jid = _event_job_id(events)
+        if not is_restored_unchanged:
+            has_fresh_journal = True
+            if jid:
+                fresh_job_ids.add(jid)
+        journal_rows.append((name, events, is_restored_unchanged, jid))
+    for name, events, is_restored_unchanged, jid in journal_rows:
+        if is_restored_unchanged and has_fresh_journal and (not jid or jid not in fresh_job_ids):
             continue
         last_event = events[-1]
         pending = last_event['kind'] in ('reserve', 'repair-pending')

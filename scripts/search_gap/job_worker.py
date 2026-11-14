@@ -1180,10 +1180,20 @@ def discover_passing_written(packet, base, boilerplate, canonical_jobs, created_
     return discovered
 
 
+def _quarantine_mod():
+    q_path = Path('.claude/tools/quarantine.py')
+    if not q_path.is_file():
+        return None
+    spec = importlib.util.spec_from_file_location('search_gap_quarantine', q_path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
 def build_auto_request(packet, store, written, canonical_jobs, created_at, intake_path=None, history=None):
     """The routine's own close-out under the owner's standing rule: already-acknowledged decisions stay
     intact, drafts whose exact reviewed text is verified publish, reviewed no-addition/dropped decisions
-    settle, the rest restart once, and a search whose retry also failed is closed as dropped."""
+    settle, the rest restart once, and a search whose retry also failed (or was quarantined) is closed as dropped."""
     AUTO_REQUESTS.mkdir(parents=True, exist_ok=True)
     path = AUTO_REQUESTS / (packet['runId'] + '.json')
     # Always rebuilt from native review evidence; an existing file is never trusted or reused.
@@ -1195,6 +1205,8 @@ def build_auto_request(packet, store, written, canonical_jobs, created_at, intak
     intake_sha = digest(intake_path) if intake_path and Path(intake_path).is_file() else None
     explicit_written = dict(written or {})
     auto_written = discover_passing_written(packet, base, boilerplate, canonical_jobs, created_at, explicit_written, intake_sha=intake_sha)
+    q_mod = _quarantine_mod()
+    root_cwd = Path.cwd().resolve()
     def _verified_written_routes(routes):
         if not routes:
             return None
@@ -1224,7 +1236,8 @@ def build_auto_request(packet, store, written, canonical_jobs, created_at, intak
         if verified_auto:
             candidates[cid] = {'action': 'publish-as-written', 'routes': verified_auto}
             continue
-        if set(candidate.get('eventIds', [])) & retried:
+        is_quar = bool(q_mod and q_mod.is_quarantined(root_cwd, 'search-gap-content-auto', item_id=cid))
+        if is_quar or (set(candidate.get('eventIds', [])) & retried):
             candidates[cid] = {'action': 'drop-after-retry'}
         else:
             candidates[cid] = {'action': 'restart'}
@@ -1618,6 +1631,34 @@ def end_run(intake_path, store, owner, completion_path=None, written_path=None, 
     result = owner_close(intake_path, None, store, owner, effective_pub, effective_commit, check_only=False, auto_written=written_arg)
     if finish_failure:
         result['finishAttempt'] = finish_failure
+    dropped_ids = list((result.get('receipt') or result).get('dropped') or built['candidates'] and [cid for cid, e in built['candidates'].items() if e.get('action') == 'drop-after-retry'])
+    if dropped_ids:
+        q_mod = _quarantine_mod()
+        quar_tickets = []
+        if q_mod:
+            cand_by_id = {c['id']: c for c in packet.get('candidates') or []}
+            for cid in dropped_ids:
+                c_obj = cand_by_id.get(cid) or {}
+                t_doc = q_mod.record_ticket(
+                    Path.cwd().resolve(),
+                    skill='search-gap-content-auto',
+                    item_id=cid,
+                    reason=(reason or finish_failure or 'Search Gap candidate hit retry cap and was quarantined so queue keeps flowing.'),
+                    site=packet['site'],
+                    attempts=2,
+                    max_retries=1,
+                    error=(finish_failure or reason or ''),
+                    save_branch=True,
+                    extra={'runId': packet['runId'], 'term': c_obj.get('term') or c_obj.get('query')},
+                )
+                quar_tickets.append({'id': cid, 'ticketPath': t_doc.get('ticketPath'), 'savedBranch': t_doc.get('savedBranch')})
+        result['quarantinedCandidates'] = quar_tickets or dropped_ids
+        result['recommendedReportStatus'] = 'failure'
+        result['nextAction'] = (
+            'Candidate(s) hit retry cap and were quarantined to reports/quarantine/search-gap-content-auto/ '
+            '(with work branch saved if available) while sibling candidates closed cleanly. '
+            'Submit send-routine-email.py --status failure naming quarantinedCandidates so the Failure-Fixer AI picks them up.'
+        )
     save_terminal_record(terminal_record(packet['site'], owner), result)
     return result
 
@@ -1745,8 +1786,25 @@ def save_terminal_record(path, result):
     os.replace(target.name, path)
 
 
+def _send_fast_noop(site):
+    sender = Path('.claude/scripts/send-routine-email.py')
+    if not sender.is_file():
+        return False
+    summary = f'Verified empty Search Gap intake on {site} (0 pending candidates, 0 active jobs); fast no-op exit.'
+    cmd = [
+        sys.executable, str(sender),
+        '--status', 'no-op',
+        '--skill', 'search-gap-content-auto',
+        '--site', site if site.startswith('http') else f'https://{site}',
+        '--summary', summary,
+        '--details', f'# Search Gap fast check\n\n{summary}\n',
+    ]
+    res = subprocess.run(cmd, capture_output=True, text=True)
+    return res.returncode == 0
+
+
 def main():
-    p=argparse.ArgumentParser();p.add_argument('command',choices=['list-gaps','checkpoint','restore','adopt','finish','park','owner-close','end-run','heartbeat']);p.add_argument('--site',required=True);p.add_argument('--owner',default=invocation_owner());p.add_argument('--out');p.add_argument('--intake');p.add_argument('--completion');p.add_argument('--metadata');p.add_argument('--files',nargs='*',default=[]);p.add_argument('--end-invocation', action='store_true',help='Release only this owner after the checkpoint is safely retained');p.add_argument('--checkpoint-file');p.add_argument('--reason');p.add_argument('--holds');p.add_argument('--request');p.add_argument('--published');p.add_argument('--published-commit');p.add_argument('--check',action='store_true');p.add_argument('--auto',action='store_true');p.add_argument('--deploy',action='store_true');p.add_argument('--written');p.add_argument('--days');p.add_argument('--limit');p.add_argument('--min-count');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('command',choices=['list-gaps','checkpoint','restore','adopt','finish','park','owner-close','end-run','heartbeat']);p.add_argument('--site',required=True);p.add_argument('--owner',default=invocation_owner());p.add_argument('--out');p.add_argument('--intake');p.add_argument('--completion');p.add_argument('--metadata');p.add_argument('--files',nargs='*',default=[]);p.add_argument('--end-invocation', action='store_true',help='Release only this owner after the checkpoint is safely retained');p.add_argument('--checkpoint-file');p.add_argument('--reason');p.add_argument('--holds');p.add_argument('--request');p.add_argument('--published');p.add_argument('--published-commit');p.add_argument('--check',action='store_true');p.add_argument('--auto',action='store_true');p.add_argument('--deploy',action='store_true');p.add_argument('--fast-noop',action='store_true');p.add_argument('--written');p.add_argument('--days');p.add_argument('--limit');p.add_argument('--min-count');a=p.parse_args()
     terminal = terminal_record(a.site, a.owner) if a.command in ('list-gaps', 'finish', 'end-run') else None
     if a.command == 'list-gaps' and terminal and terminal.is_file():
         print(json.dumps(read(terminal)))
@@ -1755,6 +1813,16 @@ def main():
     if a.command=='list-gaps':
         result=dict(intake(a.site,store,a.out,a.owner),invocationOwner=a.owner)
         if not result['candidateCount'] and not result['resumed']:
+            if a.fast_noop:
+                try:
+                    if a.out and Path(a.out).is_file():
+                        Path(a.out).unlink(missing_ok=True)
+                except Exception:
+                    pass
+                reported = _send_fast_noop(a.site)
+                result['fastNoopReported'] = reported
+                if reported:
+                    result['nextAction'] = 'Empty intake already reported via --fast-noop. End this invocation immediately with zero further tool calls.'
             save_terminal_record(terminal, result)
     elif a.command=='restore':result=restore_artifacts(read(a.checkpoint_file), store)
     else:

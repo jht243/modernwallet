@@ -147,6 +147,15 @@ def _sync_durable_journal_files(root):
  except Exception:
   return
 
+def _is_quarantined_route(root,route,job_id=None):
+ q_path=root/'.claude/tools/quarantine.py'
+ if not q_path.is_file():return False
+ try:
+  q_mod=load('competitor_quarantine',q_path)
+  return q_mod.is_quarantined(root,'competitor-monitor-auto',item_id=job_id,route=route) is not None
+ except Exception:
+  return False
+
 def pending_reviews(root,digest=None):
  """Actual reserved-but-unrecorded slots for this retained canonical intake."""
  if not (root/'.claude/content-review-policy.json').is_file():return []
@@ -163,13 +172,15 @@ def pending_reviews(root,digest=None):
    elif event['kind']=='record':pending.pop(data['number'],None)
   if pending and isinstance(job,str) and (digest is None or digest[:12] in job):
    policy=load('pending_native_review_policy',root/'.claude/tools/content-review-policy.py');identity=events[0]['identity']
+   if _is_quarantined_route(root,identity['route'],job):continue
    with policy.Journal(root,identity['canonicalBase'],identity['route']) as journal:
     if journal.cycle and policy.last_authoritative_round(journal.cycle).get('status')=='pending':
      result.append({'route':identity['route'],'jobId':job,'round':journal.cycle['rounds'][-1]['number'],'admission':journal.cycle['rounds'][-1]['admission']})
  return result
 
 def _is_historical_held_fail(root,policy,row):
- """True only for exhausted pre-capped-release FAIL cycles recorded without capped-release pass_evidence."""
+ """True for exhausted pre-capped-release FAIL cycles OR routes sidelined via quarantine.py."""
+ if _is_quarantined_route(root,row.get('route',''),row.get('jobId')):return True
  if row.get('status')!='needs-fix' or row.get('remainingReviews',1)!=0:return False
  if not row.get('admission') or not row.get('report'):return False
  try:

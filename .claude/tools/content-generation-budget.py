@@ -168,6 +168,36 @@ def _search_gap_job_closed_for_restart(root, old_job_id, route, policy, args=Non
     return closed_match
 
 
+def _now_iso_utc():
+    import datetime as _dt
+    return _dt.datetime.now(_dt.timezone.utc).isoformat(timespec='seconds').replace('+00:00','Z')
+
+def _prior_job_stale_or_quarantined(root,state,route,cycle):
+    import datetime as _dt
+    old_job=str(state.get('jobId') or '')
+    q_path=root/'.claude/tools/quarantine.py'
+    if q_path.is_file():
+        try:
+            spec=importlib.util.spec_from_file_location('budget_quarantine',q_path)
+            q_mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(q_mod)
+            for t in q_mod.load_active_tickets(root):
+                if t.get('itemId')==old_job or (route.rstrip('/') or '/') in {(str(r).rstrip('/') or '/') for r in (t.get('routes') or []) if r}:
+                    return True
+        except Exception:
+            pass
+    if cycle and cycle.get('jobId')==old_job and cycle.get('status')=='published':
+        return True
+    stamp=state.get('updatedAt')
+    if not isinstance(stamp,str) or not stamp:
+        return True  # Legacy undated reservation from a finished prior container
+    try:
+        ts=_dt.datetime.fromisoformat(stamp.replace('Z','+00:00'))
+        if ts.tzinfo is None:ts=ts.replace(tzinfo=_dt.timezone.utc)
+        return (_dt.datetime.now(_dt.timezone.utc)-ts).total_seconds()>21600
+    except ValueError:
+        return True
+
+
 def reserve(root,args,operation):
     selected=scope(root,args)
     if selected is None:
@@ -189,7 +219,7 @@ def reserve(root,args,operation):
             cycle=None
             if state['jobId']!=job:
                 cycle=current_cycle(root,route,policy)
-                restarted=(cycle is None or cycle['status']=='published') and _search_gap_job_closed_for_restart(root,state['jobId'],route,policy,args)
+                restarted=((cycle is None or cycle['status']=='published') and _search_gap_job_closed_for_restart(root,state['jobId'],route,policy,args)) or _prior_job_stale_or_quarantined(root,state,route,cycle)
                 if not restarted and (not cycle or cycle['jobId']!=state['jobId'] or cycle['status']!='published'):
                     raise ValueError('Resume the unfinished original page job; a new job cannot restart paid generation')
                 state={'jobId':job,'route':route,'generated':[],'repairs':[],
@@ -210,6 +240,7 @@ def reserve(root,args,operation):
                 if 'full' in state['generated'] or unit in state['generated']:
                     raise ValueError('Generation already reserved. Resume the retained candidate; do not regenerate into a different directory')
                 state['generated'].append(unit)
+            state['updatedAt']=_now_iso_utc()
             return state
         cloud = os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_REMOTE','').lower() in ('1','true')
         if cloud:
