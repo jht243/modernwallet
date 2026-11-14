@@ -35,8 +35,45 @@ def plain(url):
         return resp.status, visible_text(resp.read().decode('utf-8', 'replace'))
 
 
+NODE_JS = r"""
+const {chromium} = require('playwright');
+(async () => {
+  const b = await chromium.launch();
+  const c = await b.newContext({userAgent: process.env.UA, locale: 'en-US'});
+  const p = await c.newPage();
+  const r = await p.goto(process.argv[2], {waitUntil: 'domcontentloaded', timeout: 45000});
+  try { await p.waitForLoadState('networkidle', {timeout: 15000}); } catch (e) {}
+  const t = await p.innerText('body');
+  process.stdout.write(JSON.stringify({status: r ? r.status() : 0, text: t}));
+  await b.close();
+})().catch(e => { process.stderr.write(String(e)); process.exit(1); });
+"""
+
+
+def node_browser(url):
+    """Node Playwright fallback (cloud images often ship it without the Python package)."""
+    import os
+    import subprocess
+    import tempfile
+    root = subprocess.run(['npm', 'root', '-g'], capture_output=True, text=True, timeout=30).stdout.strip()
+    env = dict(os.environ, UA=UA, NODE_PATH=os.pathsep.join(x for x in (root, os.environ.get('NODE_PATH', '')) if x))
+    with tempfile.NamedTemporaryFile('w', suffix='.js', delete=False) as f:
+        f.write(NODE_JS)
+    try:
+        out = subprocess.run(['node', f.name, url], capture_output=True, text=True, timeout=120, env=env)
+    finally:
+        os.unlink(f.name)
+    if out.returncode != 0:
+        raise RuntimeError(out.stderr.strip()[:300] or 'node playwright failed')
+    data = json.loads(out.stdout)
+    return data['status'], data['text']
+
+
 def browser(url):
-    from playwright.sync_api import sync_playwright  # noqa: import only when needed
+    try:
+        from playwright.sync_api import sync_playwright  # noqa: import only when needed
+    except ImportError:
+        return node_browser(url)
     with sync_playwright() as p:
         b = p.chromium.launch(headless=True)
         page = b.new_page(user_agent=UA, locale='en-US')
