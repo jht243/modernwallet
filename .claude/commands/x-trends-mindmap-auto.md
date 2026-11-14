@@ -41,7 +41,9 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 **Inputs from the routine prompt:** `X_TRENDS_SITE` (the domain exactly as the scout email names it, e.g. `thehoaguide.com`) and `BASE_URL` (the host that answers 200, e.g. `https://www.thehoaguide.com`).
 
-## STEP 1 — Find the scout email(s) (Gmail connector, read-only)
+## STEP 1 — Find the scout email(s) FIRST (Gmail connector, read-only; zero phase reads if empty)
+> **Fast-Exit Order:** Do **not** read `_decision-evidence.md`, `_testing-labels.md`, or Mindmap phase files until STEP 1 + STEP 2 confirm `>= 1` bullet for `X_TRENDS_SITE`. When `>= 1` bullet exists, dispatch full `/mindmap-pass` (`BUILD` + `CHART-REVIEW` duplicate removal).
+
 Load the tools first: `ToolSearch` with `select:mcp__Gmail__search_threads,mcp__Gmail__get_thread` (calling before the schema loads drops the query). Then `search_threads` with query `subject:"Fleet trend scout" newer_than:3d`.
 
 A thread qualifies only if its first message is from `jonathan@layer3labs.io` or `jonathan@pipelinemarketing.io`. Ignore every other sender.

@@ -37,7 +37,9 @@ If any fails, **skip the run** and email a failure report. Do not commit, do not
 
 > **Git + secrets model (authorized deploy path = `main`).** This repo auto-deploys from `main`, so publishing this run's commit to `main` is the intended behavior and needs **no human approval**. Commit on the current branch, push with `git fetch origin main && git rebase origin/main && git push origin HEAD:main` (retry the rebase up to 3×; on an unresolved conflict, push the ephemeral branch and email a manual-merge note instead of force-pushing `main`). All file writes stay INSIDE the workspace. Secrets resolve from env vars or workspace-local `.claude/secrets.env` — never write to `~/.claude` (outside the workspace → permission prompt that hangs the run). The Bing helper reads `BING_WEBMASTER_API_KEY` the same way.
 
-## Execution
+## Execution — Issue Sweep FIRST (zero content preflight on crawl-clean runs)
+
+> **Fast-Exit Order:** Run `bing_webmaster.py` issue discovery FIRST **before** reading `_decision-evidence.md`, `_testing-labels.md`, or running `workflow-preflight.py`. If `0` fixable technical rows exist, send `--status no-changes` and exit 0 immediately.
 
 Run `.claude/commands/bing-webmaster-pass.md` STEP 0 → STEP 2 (preflight, discover, deep-dive sweep, build the issue report) exactly as written, EXCEPT: wherever it references `.claude/scripts/bing_webmaster.py`, use `.claude/scripts/bing_webmaster.py`.
 

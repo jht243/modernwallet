@@ -76,7 +76,7 @@ Run every subagent INLINE and BLOCKING. Never background anything and end the tu
 (exit 0). Run `.claude/scripts/deploy-run-to-main.sh mark` once. Read the SITE ADAPTER at the end
 of this file. Day = America/Bogota date (`TZ=America/Bogota date +%F`).
 
-**1. Backlog.** `python3 scripts/alternatives_daily/backlog.py status` then `... next`.
+**1. Backlog (run FIRST before loading `_content-standard.md` or `_anti-ai-language.md`).** `python3 scripts/alternatives_daily/backlog.py status` then `... next`. (Only load `_content-standard.md`, `_anti-ai-language.md`, and `_content-generation.md` in Step 2 or Step 7b when `>= 1` page is actually claimed or queued for upgrade; if `slotsLeftToday == 0` and Step 7b has `0` thin pages left, exit 0 cleanly with zero writing contracts loaded.)
 - `resume` rows were claimed on an earlier run: finish them first (check the row history for the
   last step; if the page is already live, go straight to step 6 for it).
 - `new` rows are today's eligible picks. Fewer than `slotsLeftToday`? Qualify `pending` rows in

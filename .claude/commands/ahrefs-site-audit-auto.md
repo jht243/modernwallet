@@ -77,7 +77,9 @@ pages than the sitemap holds.
 `source: ahrefs` or `source: dataforseo (Ahrefs <reason>)`, plus the DataForSEO
 cost when it ran. Cost stays visible, exactly like the winner/loser pass.
 
-## STEP 1 — Discover project facts
+## STEP 1 — Discover project facts & Pull Audit Issues FIRST (zero content preflight on clean runs)
+
+> **Fast-Exit Order:** Do **not** read `_decision-evidence.md`, `_testing-labels.md`, or run `workflow-preflight.py` before pulling Ahrefs / DataForSEO OnPage issues in STEP 2–3. If `0` auto-fixable issues return, push the STEP 3b source receipt to `main`, email `--status no-changes`, and exit 0 immediately.
 
 Reuse Phase 0 from `/keyword-gap-pass`. We need:
 - `BASE_URL` (canonical host, e.g. `www.layer3labs.io`)

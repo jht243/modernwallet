@@ -57,7 +57,9 @@ Run dir = `reports/tool-usage-pass/<DATE>/`. Stamps (`*.ok`) and `/tmp/tool-usag
 
 **USER RULE — adds only.** The fleet is young. Low usage means "needs promotion or a fix", never "cut it". This routine never removes, merges, redirects, hides or deprioritizes a tool, a feature of a tool, or a page.
 
-## STEP 1 — Pull this site's usage
+## STEP 1 — Pull this site's usage FIRST (before reading contracts or installing Playwright)
+> **Turn-1 Fast-Exit Order:** Run `site_tool_usage.py` and STEP 2's ledger/cooldown filter **before** reading `_decision-evidence.md`, `_testing-labels.md`, Mindmap phase files, or installing Playwright/Chromium. If `0` tools qualify after STEP 1 + STEP 2, send the STEP 8 `--status no-op` email and exit 0 immediately. When `>= 1` tool qualifies, run the full STEP 3 browser persona walk and `/mindmap-pass` (`BUILD` + `CHART-REVIEW` duplicate removal).
+
 ```
 python3 scripts/tool_usage/site_tool_usage.py --site "$TOOL_SITE" --days 30 > /tmp/tool-usage.json
 ```

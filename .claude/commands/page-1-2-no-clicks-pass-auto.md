@@ -130,7 +130,9 @@ without this, `prepare.py` cannot locate the pages (2026-10-08 first run: only 2
 
 **Shell:** never `rm` through an unguarded variable (`rm $P/x` is blocked by the runner's safety check); write `rm -f "${P:?}"/"${s:?}"/x`.
 
-## Phase 0 — Detect + measure (Google only)
+## Phase 0 — Detect + measure FIRST (Google only; zero contract/preflight reads if `pages` is empty)
+
+> **Fast-Exit Order:** Run Phase 0 **before** reading `_decision-evidence.md`, `_testing-labels.md`, `load-standards.sh`, or `workflow-preflight.py`. If `detect.py` picks `0` pages and `measure.py` has `0` `WORSE` reverts, commit + deploy the detect/measure report (so `claude/*` never stays ahead of `main`), send `--status no-changes`, and exit 0 with zero Phase 1–5 standards loaded.
 
 **Run every Phase 0 command in the FOREGROUND with the Bash `timeout` set to 600000 (10 min).**
 `detect.py` pulls 90 days of page×query data and takes ~6 minutes; at the default 120 s timeout the

@@ -55,7 +55,9 @@ If any check fails, **skip the run** and email a failure report explaining why. 
 3. **GSC service account has Full/Owner access** — Phase build-report's first API call will tell us. A 403 on the first inspection call means the service account is not authorized → skip, email failure (instruct the user to add it in GSC → Settings → Users and permissions).
 4. **Resend secrets present** in `~/.claude/secrets.env`.
 
-## Execution
+## Execution — Inspection Sweep FIRST (load content contracts ONLY if prose/model-family creation runs)
+
+> **Fast-Exit Order:** Run STEP 1 (`phase-build-report.md`) + Phase 0 manifest assembly **before** reading `_decision-evidence.md`, `_testing-labels.md`, `_content-standard.md`, or running `workflow-preflight.py`. If `0` actionable rows exist, send `--status no-changes` and exit 0 immediately.
 
 Run by reading each phase file in order:
 
