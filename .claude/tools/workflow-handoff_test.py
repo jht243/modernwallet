@@ -239,6 +239,25 @@ class Tests(unittest.TestCase):
                 out_path=run_dir / 'forbidden-write.json', snapshot_path=snap_path, review_path=rev_path, rework=True,
             )
 
+    def test_extract_routes_includes_inbound_link_sources_and_reserve_batch_scopes_to_handoff(self):
+        manifest_obj = {
+            'jobId': 'job-links-1',
+            'actions': [
+                {'id': 'R1', 'bucket': 'create new content', 'target': '/study/alliteration-poems/'},
+            ],
+            'newPageBriefs': [{
+                'target': '/study/alliteration-poems/',
+                'links': {
+                    'inbound': [
+                        {'source': '/study/figurative-language/'},
+                        {'source': '/study/onomatopoeia-examples/#comparing'},
+                    ],
+                },
+            }],
+        }
+        routes = h._extract_routes(manifest_obj)
+        self.assertEqual(routes, ['/study/alliteration-poems/', '/study/figurative-language/', '/study/onomatopoeia-examples/'])
+
 
 if __name__ == '__main__':
     unittest.main()

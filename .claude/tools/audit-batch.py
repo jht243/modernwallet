@@ -100,6 +100,22 @@ def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton
     renderer.valid_snapshot(snapshot)
 
     wanted = [r.rstrip('/') or '/' for r in routes] if routes else None
+    if wanted is None and preflight is not None:
+        try:
+            pf_manifest = crp.read(crp.inside(root, preflight) / 'manifest.json')
+            handoff_ref = pf_manifest.get('handoff') if isinstance(pf_manifest, dict) else None
+            if isinstance(handoff_ref, dict) and handoff_ref.get('path'):
+                handoff_obj = crp.read(crp.inside(root, handoff_ref['path']))
+                handoff_routes = [
+                    str(r).rstrip('/') or '/'
+                    for r in (handoff_obj.get('routes') or [])
+                    if str(r).startswith('/')
+                ]
+                snap_routes = {p['path'].rstrip('/') or '/' for p in snapshot.get('routes', [])}
+                if handoff_routes and all(hr in snap_routes for hr in handoff_routes):
+                    wanted = handoff_routes
+        except Exception:
+            pass
     selected_pages = [
         p for p in snapshot['routes']
         if wanted is None or (p['path'].rstrip('/') or '/') in wanted
@@ -115,6 +131,9 @@ def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton
     has_local = layer is not None or (root / '.claude/workflow-policy.local.json').is_file()
 
     accepts_preflight = 'preflight' in inspect.signature(crp.reserve).parameters
+    if accepts_preflight and preflight is not None and not has_local and hasattr(crp, 'audit_preflight_check'):
+        for page in selected_pages:
+            crp.audit_preflight_check(root, preflight, job, reviewer, page['path'])
     checks_keys = sorted(renderer.CHECKS)
     skeleton_routes = []
     summaries = []

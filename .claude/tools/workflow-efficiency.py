@@ -12,6 +12,29 @@ PUBLISH_PROSE_MANUALS = {
     '.claude/commands/_content-standard.md',
     '.claude/commands/_anti-ai-language.md',
 }
+INLINE_PASS_MARKERS = (
+    'question-gap-pass',
+    'ga4-top-pages-pass',
+    'page-quality-pass',
+    'ai-answer-citation-pass',
+    'seo-gsc-pass',
+    'indexing-issues-gsc-pass',
+    'monetization-pass',
+    'alternatives-daily',
+    'ahrefs-site-audit',
+    'bing-webmaster-pass',
+    'page-1-2-no-clicks-pass',
+    'striking-distance-pass',
+    'rank-drop-recovery',
+)
+
+
+def _requires_handoff(phase, instructions):
+    if phase == 'build':
+        return False
+    if instructions and any(any(marker in str(item) for marker in INLINE_PASS_MARKERS) for item in instructions):
+        return False
+    return True
 
 
 def sha(raw):
@@ -107,7 +130,7 @@ def current_task(root, path, phase, actor):
 
 def prepare(root, phase, instructions, directory, reuse, actor, run_id, context_id, context_epoch, core, handoff=None, context_packet=None):
     require(run_id, 'Use the actual verified startup run ID')
-    require(phase == 'build' or handoff, 'WRITE/AUDIT/PUBLISH require the current canonical handoff')
+    require(not _requires_handoff(phase, instructions) or handoff, 'WRITE/AUDIT/PUBLISH require the current canonical handoff')
     context_id = context_id or os.environ.get('CLAUDE_CODE_SESSION_ID') or os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID')
     require(context_id and context_epoch,
             'Supply the actual --context-id and --context-epoch before preparing any reading. '
@@ -159,7 +182,7 @@ def prepare(root, phase, instructions, directory, reuse, actor, run_id, context_
 def validate(root, directory, core, require_delivery=True):
     m = core.load(directory)
     expected = set(expected_sources(root, m['phase'], m['instructions'], core, has_handoff=bool(m.get('handoff'))))
-    require(m['phase'] == 'build' or m.get('handoff'), 'Missing canonical handoff')
+    require(not _requires_handoff(m['phase'], m.get('instructions')) or m.get('handoff'), 'Missing canonical handoff')
     if m.get('handoff'):
         ref = m['handoff']
         path = core.inside(root, ref['path'])

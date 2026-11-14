@@ -821,6 +821,15 @@ def init_manifest(approval_manifest_path, author, out_path, root=None, explicit_
                 target = str(brief.get('target') or '').strip()
                 if target.startswith('/'):
                     routes_list.append(target.split('#', 1)[0].split('?', 1)[0])
+                links = brief.get('links')
+                if isinstance(links, dict):
+                    for l_item in (links.get('inbound') or []):
+                        if isinstance(l_item, dict):
+                            src = str(l_item.get('source') or '').strip()
+                            if src.startswith('/'):
+                                clean_src = src.split('#', 1)[0].split('?', 1)[0]
+                                if clean_src:
+                                    routes_list.append(clean_src)
     deduped = list(dict.fromkeys(routes_list))
     require(bool(deduped), 'No route paths starting with "/" found in approval-manifest.json; pass --route /actual-route')
 

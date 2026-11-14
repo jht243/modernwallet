@@ -358,6 +358,15 @@ def _extract_routes(manifest_obj, snapshot_obj=None, explicit_routes=()):
                 target = str(brief.get('target') or '').strip()
                 if target.startswith('/'):
                     routes.append(target.split('#', 1)[0].split('?', 1)[0])
+                links = brief.get('links')
+                if isinstance(links, dict):
+                    for l_item in (links.get('inbound') or []):
+                        if isinstance(l_item, dict):
+                            src = str(l_item.get('source') or '').strip()
+                            if src.startswith('/'):
+                                clean_src = src.split('#', 1)[0].split('?', 1)[0]
+                                if clean_src:
+                                    routes.append(clean_src)
         if snapshot_obj and isinstance(snapshot_obj.get('routes'), list):
             for r in snapshot_obj['routes']:
                 if isinstance(r, dict) and str(r.get('path') or '').startswith('/'):

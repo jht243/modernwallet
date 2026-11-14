@@ -115,18 +115,26 @@ def session_for(sa_info: dict, scope: str):
 
 
 def call(s, method: str, url: str, body: dict | None = None) -> dict:
-    for attempt in range(4):
+    backoffs = (5, 10, 20, 35, 60)
+    for attempt in range(len(backoffs) + 1):
         try:
             r = s.request(method, url, json=body, timeout=60)
         except Exception as e:  # noqa: BLE001
-            if attempt == 3:
+            if attempt == len(backoffs):
                 raise HardFail(12, f"{url}: {e}")
-            time.sleep(2 ** attempt)
+            time.sleep(backoffs[attempt])
             continue
         if r.status_code in (401, 403):
             raise HardFail(11, f"{r.status_code} from {url}: {r.text[:300]}")
-        if r.status_code in (429, 500, 502, 503) and attempt < 3:
-            time.sleep(2 ** attempt + 1)
+        if r.status_code in (429, 500, 502, 503, 504) and attempt < len(backoffs):
+            retry_after = r.headers.get("Retry-After") if hasattr(r, "headers") else None
+            delay = backoffs[attempt]
+            if retry_after:
+                try:
+                    delay = max(delay, min(int(float(retry_after)), 90))
+                except ValueError:
+                    pass
+            time.sleep(delay)
             continue
         if r.status_code >= 400:
             raise HardFail(12, f"{r.status_code} from {url}: {r.text[:300]}")

@@ -228,6 +228,25 @@ class Tests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'canonical handoff'):
                 core.prepare(self.root, 'write', ['.claude/commands/phase.md'], self.reading, actor='reader', run_id='actual-fixture-run')
 
+    def test_inline_pass_write_allows_omitting_handoff(self):
+        inline_phase = self.root / '.claude/commands/question-gap-pass/phase-4-enrich.md'
+        inline_phase.parent.mkdir(parents=True, exist_ok=True)
+        inline_phase.write_text('Inline question gap enrich phase.')
+        with patch.object(core.subprocess, 'run'):
+            m = core.prepare(
+                self.root,
+                'write',
+                ['.claude/commands/question-gap-pass/phase-4-enrich.md'],
+                self.reading,
+                actor='reader',
+                run_id='actual-fixture-run',
+                context_id='native-fixture',
+                context_epoch='fresh',
+            )
+        self.assertIsNone(m['handoff'])
+        self.deliver()
+        core.validate(self.root, self.reading)
+
 
 if __name__ == '__main__':
     unittest.main()
