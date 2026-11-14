@@ -1,6 +1,15 @@
 {
   "candidates": {},
   "generationBudgets": {
+    "1083fe477237fcf2d6717a50af5b6d027480d5b7cc12ab586af0676726069536": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "trend-lane-c-2026-11-14",
+      "previousJobs": [],
+      "repairs": [],
+      "route": "/real-estate/hard-money-loan-calculator/"
+    },
     "1add31ce2b1614e581353f18f7971f28766cdd5bc8a846500cf781cb197f0db8": {
       "generated": [
         "full"
