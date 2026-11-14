@@ -40,6 +40,14 @@ def bind(payload):
    supplemental_audit=('audit' in role or 'audit' in description) and not non_audit_editorial and not repeat_build
    if non_audit_editorial or repeat_build or (not supplemental_audit and 'audit' in (role+' '+description)):
     print('This search job already has its independent final decisions. Reuse '+saved['completionFile']+' and perform only the separate-preview reconciliation, supplemental route/drift audit if required, and native finish. Preserve all reviews and counters.',file=sys.stderr);raise SystemExit(2)
+ hype=root/'scripts/hype_radar/handoff.py'
+ if hype.is_file() and (hype.parent/'production_recovery.py').is_file():
+  spec=importlib.util.spec_from_file_location('native_hype_dispatch',hype)
+  radar=importlib.util.module_from_spec(spec);spec.loader.exec_module(radar)
+  if hasattr(radar,'guard_paid_dispatch'):
+   try:radar.guard_paid_dispatch(root,payload)
+   except ValueError as error:
+    print(str(error),file=sys.stderr);raise SystemExit(2)
  helper=root/'.claude/tools/competitor-handoff.py'
  inline=False
  if helper.is_file() and worker_tag(payload):

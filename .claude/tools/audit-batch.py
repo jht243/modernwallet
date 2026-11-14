@@ -53,38 +53,70 @@ def _reserve_or_repair_route(root, crp, snapshot, snapshot_path, page, job, revi
     if last and last.get('status') == 'pending':
         old = crp.read(crp.artifact(root, last['admission']))
         old_snap_ref = old['snapshot']
-        snap_file_sha = crp.sha(Path(snapshot_path).read_bytes()) if Path(snapshot_path).is_file() else None
+        old_snap_doc = None
+        try:
+            old_snap_doc = crp.read(crp.artifact(root, old_snap_ref))
+        except Exception:
+            old_snap_doc = None
         same_snapshot = (
-            snap_file_sha == old_snap_ref.get('sha256')
-            or snapshot.get('snapshotSha256') == old_snap_ref.get('sha256')
+            old_snap_doc is not None
+            and old_snap_doc.get('snapshotSha256') == snapshot.get('snapshotSha256')
+            and (not old.get('fingerprint') or old.get('fingerprint') == page.get('fingerprint'))
         )
         if same_snapshot and old.get('reviewer') == reviewer:
             return {**old, 'admissionArtifact': last['admission']}
-        if repair_pending_failure is None:
-            raise ValueError(
-                f"Route {page['path']} has an unfinished pending round #{last['number']} bound to snapshot "
-                f"{old_snap_ref['path']} ({old_snap_ref['sha256'][:12]}). Resume that snapshot, or pass "
-                f"--repair-pending-failure <reports/.../failure.md> (>=100 bytes) to rebind this same round without resetting counters."
+        crp.require(
+            not last.get('repaired'),
+            f"Pending round #{last['number']} on {page['path']} was already repaired once "
+            f"(bound to reviewer={old.get('reviewer')!r}, snapshot={old_snap_ref.get('path')}); "
+            f"complete and record it using --reviewer {old.get('reviewer')}",
+        )
+        failure_file = repair_pending_failure
+        if failure_file is None:
+            failure_file = adm_path.parent / f"pending-repair-handback-{adm_path.stem}.md"
+            handback_text = (
+                f"# Pending Audit Slot Repair Handback — {page['path']}\n\n"
+                f"- **Job ID**: `{job}`\n"
+                f"- **Route**: `{page['path']}` (round #{last['number']})\n"
+                f"- **Previous Admission**: `{last['admission'].get('path')}` (reviewer `{old.get('reviewer')}`, "
+                f"snapshot `{old_snap_ref.get('path')}` `{old_snap_ref.get('sha256', '')[:12]}`)\n"
+                f"- **Replacement Binding**: reviewer `{reviewer}`, snapshot `{Path(snapshot_path).resolve().relative_to(Path(root).resolve())}` "
+                f"(`{snapshot.get('snapshotSha256', '')[:12]}`)\n"
+                f"- **Reason**: Prior pending reservation did not complete `content-review-policy.py record` before "
+                f"snapshot recapture or auditor retry; rebinding the existing round #{last['number']} slot in place "
+                f"without resetting review counters.\n"
             )
-        crp.require(not last.get('repaired'), f"Pending round #{last['number']} on {page['path']} was already repaired once; complete and record it")
+            failure_file.parent.mkdir(parents=True, exist_ok=True)
+            failure_file.write_text(handback_text, encoding='utf-8')
         original = crp.inside(root, old_snap_ref['path'])
-        if original.is_file() and crp.sha(original.read_bytes()) == old_snap_ref['sha256']:
-            orig_doc = crp.read(original)
-            orig_page = next((r for r in orig_doc.get('routes', []) if r.get('path') == page['path']), None)
-            candidate_changed = (
-                orig_page is None
-                or orig_page.get('fingerprint') != page.get('fingerprint')
-                or orig_doc.get('reviewSourceArchive') != snapshot.get('reviewSourceArchive')
-            )
-            crp.require(candidate_changed, f"Original pending snapshot for {page['path']} has identical content; resume it without repair-pending")
-            if not crp.changed_pending_dependencies(root, orig_doc, snapshot):
+        same_path = original.resolve() == Path(snapshot_path).resolve()
+        superseded = original.with_name(f"{original.stem}.superseded-{old_snap_ref['sha256'][:12]}{original.suffix}")
+        temp_snap = None
+        moved_same_path = False
+        try:
+            if original.is_file() and crp.sha(original.read_bytes()) == old_snap_ref['sha256']:
                 durable.cache(root, old_snap_ref['path'], old_snap_ref['sha256'], original.read_bytes())
-                superseded = original.with_name(f"{original.stem}.superseded-{old_snap_ref['sha256'][:12]}{original.suffix}")
-                if not superseded.exists():
-                    original.rename(superseded)
+                if same_path:
+                    temp_snap = adm_path.parent / f"repair-input-{adm_path.stem}-{original.name}"
+                    temp_snap.write_bytes(original.read_bytes())
+                    if not superseded.exists():
+                        original.rename(superseded)
+                    else:
+                        original.unlink()
+                    moved_same_path = True
                 else:
-                    original.unlink()
-        return crp.repair_pending(root, snapshot_path, page['path'], job, reviewer, adm_path, repair_pending_failure)
+                    if not superseded.exists():
+                        original.rename(superseded)
+                    else:
+                        original.unlink()
+            return crp.repair_pending(
+                root, temp_snap or snapshot_path, page['path'], job, reviewer, adm_path, failure_file,
+            )
+        finally:
+            if moved_same_path and superseded.is_file() and not original.exists():
+                superseded.rename(original)
+            if temp_snap is not None and temp_snap.is_file():
+                temp_snap.unlink()
     if accepts_preflight:
         return crp.reserve(root, snapshot_path, page['path'], job, reviewer, adm_path, prior_reports, preflight)
     return crp.reserve(root, snapshot_path, page['path'], job, reviewer, adm_path, prior_reports)

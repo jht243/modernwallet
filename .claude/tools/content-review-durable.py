@@ -51,6 +51,17 @@ def _search_gap_job_closed_for_restart(root,journal,old_job_id):
  import re,urllib.parse,urllib.request
  url=os.environ.get('SUPABASE_URL','').strip().rstrip('/')
  svc_key=os.environ.get('SUPABASE_SERVICE_ROLE_KEY','').strip()
+ if not url or not svc_key:
+  for env_name in ('.env','.env.local'):
+   env_p=root/env_name
+   if not env_p.is_file():continue
+   try:
+    for ln in env_p.read_text(errors='ignore').splitlines():
+     if '=' not in ln or ln.lstrip().startswith('#'):continue
+     k,v=ln.split('=',1);k=k.strip().removeprefix('export ').strip();v=v.strip().strip('"').strip("'")
+     if k in ('SUPABASE_URL','VITE_SUPABASE_URL','NEXT_PUBLIC_SUPABASE_URL') and not url:url=v.rstrip('/')
+     elif k=='SUPABASE_SERVICE_ROLE_KEY' and not svc_key:svc_key=v
+   except Exception:pass
  if not url or not svc_key or not isinstance(old_job_id,str) or not old_job_id:return False
  raw=[os.environ.get('SEARCH_SITE',''),urllib.parse.urlsplit(journal.base).hostname or '']
  cfg=root/'.claude/content-review-policy.json'

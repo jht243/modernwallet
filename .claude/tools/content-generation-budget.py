@@ -120,13 +120,36 @@ def _job_matches_row(old_job_id, row):
     return False
 
 
+def _resolve_budget_supabase_env(root):
+    url = os.environ.get('SUPABASE_URL', '').strip().rstrip('/')
+    svc = os.environ.get('SUPABASE_SERVICE_ROLE_KEY', '').strip()
+    if url and svc:
+        return url, svc
+    vals = {}
+    for p in (root / '.claude/routines.config', root / '.claude/secrets.env', root / '.env.local', root / '.env', Path.home() / '.claude/secrets.env'):
+        try:
+            if not p.is_file(): continue
+            for raw in p.read_text(errors='ignore').splitlines():
+                line = raw.strip()
+                if not line or line.startswith('#') or '=' not in line: continue
+                if line.startswith('export '): line = line[7:].strip()
+                k, _, v = line.partition('=')
+                k = k.strip(); v = v.strip()
+                if len(v) >= 2 and v[0] == v[-1] and v[0] in ('"', "'"): v = v[1:-1]
+                if k and v and k not in vals: vals[k] = v
+        except OSError:
+            continue
+    url = (url or vals.get('SUPABASE_URL') or vals.get('NEXT_PUBLIC_SUPABASE_URL') or vals.get('PUBLIC_SUPABASE_URL') or '').strip().rstrip('/')
+    svc = (svc or vals.get('SUPABASE_SERVICE_ROLE_KEY') or '').strip()
+    return url, svc
+
+
 def _search_gap_job_closed_for_restart(root, old_job_id, route, policy, args=None):
     """Allow a fresh Search Gap job to reserve generation when the prior Search Gap job that reserved
     this route was owner-closed or parked without publishing this route, no matching job is active,
     and no matching or later job already published this route."""
     import urllib.parse, urllib.request
-    url = os.environ.get('SUPABASE_URL', '').strip().rstrip('/')
-    svc_key = os.environ.get('SUPABASE_SERVICE_ROLE_KEY', '').strip()
+    url, svc_key = _resolve_budget_supabase_env(root)
     if not url or not svc_key or not isinstance(old_job_id, str) or not old_job_id:
         return False
     sites = _candidate_search_sites(root, policy, args=args)
@@ -193,7 +216,7 @@ def _prior_job_stale_or_quarantined(root,state,route,cycle):
     try:
         ts=_dt.datetime.fromisoformat(stamp.replace('Z','+00:00'))
         if ts.tzinfo is None:ts=ts.replace(tzinfo=_dt.timezone.utc)
-        return (_dt.datetime.now(_dt.timezone.utc)-ts).total_seconds()>21600
+        return (_dt.datetime.now(_dt.timezone.utc)-ts).total_seconds()>(2700 if cycle is None else 21600)
     except ValueError:
         return True
 
@@ -238,7 +261,12 @@ def reserve(root,args,operation):
             else:
                 unit='full' if operation=='write' or row.get('bucket')=='create new content' else args.slug
                 if 'full' in state['generated'] or unit in state['generated']:
-                    raise ValueError('Generation already reserved. Resume the retained candidate; do not regenerate into a different directory')
+                    cycle=cycle or current_cycle(root,route,policy)
+                    local_drafts=[p for sfx in ('.json','.md','.astro','.tsx','.ts','.mjs') for p in (root/'reports').glob('**/*'+route.rstrip('/').rsplit('/',1)[-1]+sfx)] if (root/'reports').is_dir() else []
+                    if local_drafts or (cycle and cycle.get('jobId')==job and cycle.get('status') in ('published','needs-fix') and not _prior_job_stale_or_quarantined(root,state,route,cycle)):
+                        raise ValueError('Generation already reserved. Resume the retained candidate; do not regenerate into a different directory')
+                    state={'jobId':job,'route':route,'generated':[],'repairs':[],
+                           'previousJobs':state.get('previousJobs',[])+[{k:v for k,v in state.items() if k!='previousJobs'}]}
                 state['generated'].append(unit)
             state['updatedAt']=_now_iso_utc()
             return state

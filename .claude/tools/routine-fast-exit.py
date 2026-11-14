@@ -16,6 +16,7 @@ import datetime as dt
 import hashlib
 import importlib.util
 import json
+import os
 import re
 import subprocess
 import sys
@@ -137,6 +138,7 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
     actionable_fixes = []
     actionable_upsells = []
     hosted_ready = []
+    active_ids: set[str] = set()
 
     ledger_p = pp_dir / 'ledger.json'
     if ledger_p.is_file():
@@ -151,6 +153,8 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
             # Publish-first rows already live with ownerDelivery sent wait on partner payment, not publisher
             if r.get('liveAt') and (r.get('unpaidPublishFirst') or (r.get('ownerDelivery') or {}).get('sentAt') or r.get('emailSentAt')):
                 continue
+            if rid:
+                active_ids.add(rid)
             if rid and q.is_quarantined(root, 'paid-placement-publish', item_id=f'order:{rid}'):
                 continue
             actionable_orders.append(rid or 'order')
@@ -174,9 +178,13 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
         ups = json.loads(upsell_p.read_text(encoding='utf-8'))
         rows = ups.get('rows', ups.get('queued', [])) if isinstance(ups, dict) else (ups if isinstance(ups, list) else [])
         for r in rows:
-            if not isinstance(r, dict) or r.get('status') != 'queued':
+            if not isinstance(r, dict):
                 continue
             rid = str(r.get('id') or r.get('sessionId') or r.get('brand') or '')
+            if r.get('status') in ('queued', 'building') and rid:
+                active_ids.add(rid)
+            if r.get('status') != 'queued':
+                continue
             if rid and q.is_quarantined(root, 'paid-placement-publish', item_id=f'upsell:{rid}'):
                 continue
             actionable_upsells.append(rid or 'upsell')
@@ -186,20 +194,31 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
         for hf in reports_dir.glob('**/hosted/*.json'):
             try:
                 hdoc = json.loads(hf.read_text(encoding='utf-8'))
-                if isinstance(hdoc, dict) and hdoc.get('completedSpecs') and not hdoc.get('integratedAt'):
-                    hosted_ready.append(str(hf.relative_to(root)))
+                if not (isinstance(hdoc, dict) and hdoc.get('completedSpecs') and not hdoc.get('integratedAt')):
+                    continue
+                ident = hdoc.get('orderIdentity') if isinstance(hdoc.get('orderIdentity'), dict) else {}
+                job_id = str(hdoc.get('jobId') or '')
+                job_row_id = job_id.split(':', 1)[1] if ':' in job_id else ''
+                target_id = str(hdoc.get('rowId') or ident.get('rowId') or job_row_id or '')
+                if target_id and target_id not in active_ids:
+                    continue
+                hosted_ready.append(str(hf.relative_to(root)))
             except Exception:
                 continue
 
-    # Check if writer keys are available when only upsells exist
-    upsells_runnable = bool(hosted_ready)
-    if actionable_upsells and not upsells_runnable:
+    # In remote cloud containers (CLAUDE_CODE_REMOTE), customer-PII upsell queue scripts
+    # are restricted by platform privacy guardrails and Q2b upsell builds are executed by
+    # GitHub Actions publisher-failover.yml. Never attempt to bypass privacy guardrails.
+    is_cloud_remote = os.environ.get('CLAUDE_CODE_REMOTE', '').strip().lower() in ('1', 'true', 'yes')
+    hosted_runnable = [] if is_cloud_remote else hosted_ready
+    upsells_runnable = bool(hosted_runnable)
+    if actionable_upsells and not upsells_runnable and not is_cloud_remote:
         cg = root / 'scripts/lib/content_gen.py'
         if cg.is_file():
             pf = subprocess.run([sys.executable, str(cg), 'preflight'], cwd=root, capture_output=True, text=True, timeout=20)
             upsells_runnable = pf.returncode == 0
 
-    # Standing hash check so Q2c runs whenever sponsorship files change
+    # Standing hash + live dry-run check so Q2c runs whenever sponsorship standing changes
     standing_hasher = hashlib.sha256()
     for cand in sorted(pp_dir.glob('*standing*.json')) + sorted(pp_dir.glob('*sponsorship*.json')):
         if cand.is_file():
@@ -214,15 +233,34 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
             standing_changed = prev.get('standingSha256') != standing_sha
         except Exception:
             standing_changed = True
+    if not standing_changed and not actionable_orders and not actionable_fixes:
+        standing_script = pp_dir / 'sponsor_standing.py'
+        if standing_script.is_file():
+            repo_candidates = []
+            home_user = Path('/home/user')
+            if home_user.is_dir():
+                repo_candidates = [str(p) for p in sorted(home_user.iterdir()) if (p / 'data/category-sponsors.json').is_file()]
+            if not repo_candidates and (root / 'data/category-sponsors.json').is_file():
+                repo_candidates = [str(root)]
+            if repo_candidates:
+                try:
+                    sp = subprocess.run(
+                        [sys.executable, str(standing_script), *repo_candidates],
+                        cwd=root, capture_output=True, text=True, timeout=15,
+                    )
+                    if sp.returncode == 0 and 'Sponsor standing: no changes' not in (sp.stdout or ''):
+                        standing_changed = True
+                except Exception:
+                    pass
 
-    has_work = bool(actionable_orders or actionable_fixes or (actionable_upsells and upsells_runnable) or hosted_ready or standing_changed)
+    has_work = bool(actionable_orders or actionable_fixes or (actionable_upsells and upsells_runnable) or hosted_runnable or standing_changed)
     if has_work:
         return {
             'fastExit': False,
             'orders': actionable_orders,
             'fixes': actionable_fixes,
             'upsells': actionable_upsells if upsells_runnable else [],
-            'hostedReady': hosted_ready,
+            'hostedReady': hosted_runnable,
             'standingChanged': standing_changed,
         }
 
@@ -230,9 +268,14 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
         state_file.write_text(json.dumps({'standingSha256': standing_sha, 'checkedAt': dt.datetime.now(dt.timezone.utc).isoformat()}) + '\n')
     except Exception:
         pass
+    upsell_note = (
+        f'{len(actionable_upsells)} upsells delegated to GitHub Actions publisher-failover'
+        if (is_cloud_remote and actionable_upsells)
+        else f'{len(actionable_upsells)} upsells deferred/unrunnable'
+    )
     summary = (
         f'Quiet paid publisher hour: 0 actionable orders, 0 actionable fixes, '
-        f'{len(actionable_upsells)} upsells deferred/unrunnable, standing unchanged.'
+        f'{upsell_note}, standing unchanged.'
     )
     if send_email:
         _send_noop(root, 'paid-placement-publish', site, summary)

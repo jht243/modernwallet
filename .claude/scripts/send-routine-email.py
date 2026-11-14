@@ -170,6 +170,7 @@ SKILL_LABELS = {
     "ahrefs_winner_loser_pass": "Ahrefs winners & losers",
     "downloadable-asset-pass": "Downloadable asset build",
     "roundup-pass": "Roundups",
+    "runaway-cost-checker-auto": "Runaway cost checker",
 }
 
 # Short pass label for the SUBJECT line (kept tight so the outcome fits too).
@@ -189,6 +190,7 @@ SKILL_SHORT = {
     "downloadable-asset-pass": "Asset build",
     "roundup-pass": "Roundup",
     "amazon-gear-radar-auto": "Amazon deep dives",
+    "runaway-cost-checker-auto": "Runaway cost",
 }
 
 
@@ -514,9 +516,11 @@ def _strip_tables_and_empties(body_lines: list[str]) -> list[str]:
     return out
 
 
-def clean_details(md: str) -> str:
+def clean_details(md: str, status: str = "success") -> str:
     """Reduce a skill's raw digest to only its concrete 'what changed' content.
 
+    - On `failure`, keep ALL diagnostic sections, blocker explanations, and tables
+      so loud failure alerts never strip root-cause evidence or unmerged file lists.
     - No headings at all -> keep the prose, minus tables (covers short/free-form
       success or failure notes).
     - Otherwise -> keep only CHANGE sections (see _is_change_heading); drop every
@@ -526,6 +530,9 @@ def clean_details(md: str) -> str:
     text = (md or "").strip()
     if not text:
         return ""
+
+    if status == "failure":
+        return text
 
     lines = text.splitlines()
     if not any(l.lstrip().startswith("#") for l in lines):
@@ -570,6 +577,7 @@ def post_run_record(
     details_md: str,
     details_html: str,
     project_disp: str,
+    email_sent: bool = False,
 ) -> bool:
     """Record this run in the fleet-wide log that feeds the midday digest.
 
@@ -602,6 +610,7 @@ def post_run_record(
         "details_html": details_html,
         "commit_sha": args.commit_sha,
         "commit_url": args.commit_url,
+        "email_sent": email_sent,
     }).encode("utf-8")
 
     req = urllib.request.Request(
@@ -747,6 +756,16 @@ def main() -> int:
     p.add_argument("--dry-run", action="store_true", help="Print From/Subject/preheader and skip the send")
     args = p.parse_args()
 
+    # Layer3 opt-in only. Pending eligible vendors are a failure, not a quiet day.
+    # Other sites/routines and truthful failure reporting retain their existing path.
+    gate = Path.cwd() / '.claude' / 'tools' / 'vertical-run.local.py'
+    activation = Path.cwd() / '.claude' / 'vertical-recovery.local.json'
+    if args.skill == 'vertical-roundup-auto' and args.status != 'failure' and gate.is_file() and activation.is_file():
+        result = subprocess.run([sys.executable, str(gate), 'report-check'])
+        if result.returncode:
+            print('Vertical job remains unfinished: continue native stages or report failure; success/no-op is blocked.', file=sys.stderr)
+            return 2
+
     # Auto-detect git facts from the current repo when not explicitly passed, so
     # the email ALWAYS shows the real commit + branch (even on "no-op" runs that
     # still committed a report artifact). Best-effort; ignores any git errors.
@@ -856,9 +875,11 @@ def main() -> int:
     if not outcome:
         outcome = {"success": "done", "failure": "failed",
                    "no-op": "no changes", "no-changes": "no changes"}.get(args.status, "done")
-    if args.skill == "trend-pass-auto":
+    if args.skill == "trend-pass-auto" and args.status != "failure":
         # Fixed shape — no pass label, no free-text outcome (see trend_pass_outcome).
         subject = f"{icon} {trend_pass_outcome(args.headline, args.summary)}"
+    elif args.status == "failure":
+        subject = f"{icon} [FAILURE] {short_pass} · {outcome[:64]}"
     else:
         subject = f"{icon} {short_pass} · {outcome[:64]}"
 
@@ -868,9 +889,34 @@ def main() -> int:
         tail = f"commit {args.commit_sha[:7]}"
         preheader = f"{preheader} · {tail}" if preheader else tail
 
-    # Enforce the 4-things-only email policy: strip everything from the passed
-    # details except concrete "what changed" content (no tables, no analytics).
-    details_md = clean_details(details_md)
+    # On failure, auto-detect any unmerged content files on the branch so wasted-token
+    # drafts sitting on claude/* branches are immediately visible for recovery.
+    if args.status == "failure":
+        try:
+            ahead_files = [
+                p.strip()
+                for p in _git("diff", "--name-only", "origin/main...HEAD").splitlines()
+                if p.strip()
+            ]
+            unmerged_content = [p for p in ahead_files if not p.startswith("reports/") and not p.startswith(".claude/")]
+            diag_lines = [
+                "## Loud Failure Diagnostics",
+                f"- **Repo**: `{args.repo or 'unknown'}`",
+                f"- **Branch**: `{args.branch or raw_branch or 'unknown'}`",
+                f"- **HEAD Commit**: `{args.commit_sha or _git('rev-parse', 'HEAD') or 'none'}`",
+            ]
+            if unmerged_content:
+                diag_lines.append(
+                    f"- **Unmerged Content Files ({len(unmerged_content)})**: "
+                    + ", ".join(f"`{p}`" for p in unmerged_content[:20])
+                )
+            details_md = ((details_md or "").strip() + "\n\n" + "\n".join(diag_lines)).strip()
+        except Exception:
+            pass
+
+    # Enforce the 4-things-only email policy on non-failure runs; preserve full
+    # diagnostics on failure runs so root-cause details are never stripped.
+    details_md = clean_details(details_md, status=args.status)
     details_html = markdown_to_html(details_md, _normalize_base(args.site)) if details_md else ""
     body_html = build_html(args, details_html, preheader, project_disp)
 
@@ -879,23 +925,19 @@ def main() -> int:
     #
     #   ROUTINE_DIGEST_MODE = all      -> email every run (DEFAULT — unchanged behavior)
     #                         failures -> email only hard failures; the rest live in the digest
-    #                         off      -> never email; the digest is the only report
+    #                         off      -> email only hard failures; normal runs live in the digest
     #
-    # `all` is the default on purpose: this shipped alongside the existing
-    # per-routine emails so the digest can be checked for parity against them
-    # first. Flipping the whole 17-repo fleet to `failures` later is one env
-    # value in the shared cloud environment — no code change, no per-repo pass.
-    #
-    # The `not ingested` clause is load-bearing: if the ingest endpoint is down
-    # or unconfigured, the run emails regardless of mode. A run must never be
-    # silently lost between "didn't email" and "isn't in the digest either".
+    # Failures ALWAYS send an immediate loud email whenever RESEND_API_KEY is available.
     digest_mode = (secrets.get("ROUTINE_DIGEST_MODE") or "all").strip().lower()
+    will_email_directly = bool(api_key) and (
+        args.status == "failure" or digest_mode not in ("failures", "off")
+    )
     ingested = False if args.dry_run else post_run_record(
-        secrets, args, details_md, details_html, project_disp
+        secrets, args, details_md, details_html, project_disp, email_sent=will_email_directly
     )
     send_individual = (
-        digest_mode not in ("failures", "off")
-        or (digest_mode == "failures" and args.status == "failure")
+        args.status == "failure"
+        or digest_mode not in ("failures", "off")
         or not ingested
     )
 

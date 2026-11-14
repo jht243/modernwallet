@@ -110,14 +110,28 @@ def load_credentials(sa_file_override: Optional[str] = None):
     return service_account.Credentials.from_service_account_info(sa_info, scopes=scopes)
 
 
+def _normalize_url_typo(url: str) -> str:
+    """Fix accidental double-www typos (e.g. https://www.www.droneanddefense.com)."""
+    u = (url or "").strip()
+    while "://www.www." in u.lower():
+        idx = u.lower().index("://www.www.")
+        u = u[: idx + 3] + u[idx + 7 :]
+    while u.lower().startswith("www.www."):
+        u = u[4:]
+    return u
+
+
 def derive_site_url(base_url: str, override: Optional[str] = None) -> str:
     """Derive the GSC property identifier from a base URL.
     base_url=https://www.example.com → sc-domain:example.com (default — covers all hosts/schemes).
     Override with --site-url for a URL-prefix property."""
     if override:
-        return override
-    host = urllib.parse.urlparse(base_url).netloc or base_url
-    host = host.lower().lstrip("www.")
+        return _normalize_url_typo(override)
+    norm_base = _normalize_url_typo(base_url)
+    host = urllib.parse.urlparse(norm_base).netloc or norm_base
+    host = host.lower()
+    while host.startswith("www."):
+        host = host[4:]
     return f"sc-domain:{host}"
 
 
@@ -188,6 +202,7 @@ def fetch_top_pages(session, site_url: str, window_days: int, limit: int) -> lis
 
 def fetch_page_summary(session, site_url: str, page_url: str, window_days: int) -> dict:
     """Get totals + top queries for one page over the last N days."""
+    page_url = _normalize_url_typo(page_url)
     end = date.today()
     start = end - timedelta(days=window_days)
     body_base = {
@@ -232,6 +247,7 @@ def fetch_page_summary(session, site_url: str, page_url: str, window_days: int) 
 
 def fetch_trend(session, site_url: str, page_url: str, window_days: int = 90) -> dict:
     """Get week-bucketed impressions for the page over the last window_days."""
+    page_url = _normalize_url_typo(page_url)
     end = date.today()
     start = end - timedelta(days=window_days)
     body = {
@@ -407,8 +423,8 @@ def main(argv: list[str] | None = None) -> int:
             sys.stdout.write("\n")
         return 0
 
-    pages = ([line.strip() for line in sys.stdin if line.strip()]
-             if args.stdin else [args.page])
+    pages = ([_normalize_url_typo(line.strip()) for line in sys.stdin if line.strip()]
+             if args.stdin else [_normalize_url_typo(args.page)])
 
     results = []
     for page in pages:

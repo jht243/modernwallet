@@ -68,6 +68,33 @@ class RoutineFastExitTests(unittest.TestCase):
         self.assertFalse(active['fastExit'])
         self.assertEqual(active['orders'], ['ord2'])
 
+        # Historical sent upsell hosted job record does not block fast-exit;
+        # queued Q2b upsells under CLAUDE_CODE_REMOTE delegate cleanly to GitHub Actions publisher-failover.
+        import os
+        (pp / 'ledger.json').write_text(json.dumps({'queued': []}))
+        (pp / 'upsell-queue.json').write_text(json.dumps({'rows': [
+            {'id': 'sent_1', 'status': 'sent'},
+            {'id': 'q_1', 'status': 'queued'},
+        ]}))
+        hosted_done = self.root / 'reports/mindmap-pass/2026-11-05-upsell-sent/hosted'
+        hosted_done.mkdir(parents=True, exist_ok=True)
+        (hosted_done / 'job-record.json').write_text(json.dumps({
+            'jobId': 'upsell:sent_1',
+            'orderIdentity': {'rowId': 'sent_1'},
+            'completedSpecs': {'abc': True},
+        }))
+        prev_remote = os.environ.get('CLAUDE_CODE_REMOTE')
+        try:
+            os.environ['CLAUDE_CODE_REMOTE'] = 'true'
+            cloud_quiet = self.mod.check_paid_publisher(self.root)
+            self.assertTrue(cloud_quiet['fastExit'])
+            self.assertIn('delegated to GitHub Actions publisher-failover', cloud_quiet['summary'])
+        finally:
+            if prev_remote is None:
+                os.environ.pop('CLAUDE_CODE_REMOTE', None)
+            else:
+                os.environ['CLAUDE_CODE_REMOTE'] = prev_remote
+
     def test_ga4_cooldown_fast_exits_when_all_pages_recent_and_runs_when_eligible_or_deferred(self):
         today = dt.datetime.now(dt.timezone.utc).date().isoformat()
         pages = self.root / 'reports/ga4-top10.json'
