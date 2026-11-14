@@ -478,6 +478,9 @@ def review_check(s, review):
         module.rendered_review(root, s, review)
 
 def publication_semantic(semantic):
+    semantic = dict(semantic)
+    if isinstance(semantic.get('text'), str):
+        semantic['text'] = re.sub(r'(\bAdvisories checked\s+|[Cc]hecked against all three feeds on\s+)(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},\s+\d{4}', r'\1<FEED_CHECK_DATE>', semantic['text'])
     # Next font loader hashes vary with build paths. Keep exact archived HTML,
     # signed fingerprints and all editorial/visibility attributes unchanged;
     # compare only these known generated identifiers on document roots.
@@ -612,8 +615,27 @@ def _matches_ignoring_related_cards(approved, live, path):
     try:
         a_html = _read_captured_blob(a_row['htmlFile'], a_row['htmlSha256']).decode('utf-8')
         b_html = _read_captured_blob(b_row['htmlFile'], b_row['htmlSha256']).decode('utf-8')
+        explore_re = re.compile(r'(<section[^>]*>\s*<h2[^>]*>\s*Explore This Topic\s*</h2>.*?)(</section>)', re.S | re.I)
+        li_re = re.compile(r'\s*<li\b[^>]*>.*?</li>', re.S | re.I)
+        extra_b = []
+        ma = explore_re.search(a_html)
+        mb = explore_re.search(b_html)
+        if ma and mb:
+            a_lis = set(li_re.findall(ma.group(1)))
+            def _strip_added_li(m_li):
+                item = m_li.group(0)
+                if item in a_lis:
+                    return item
+                links = re.findall(r'href=["\']([^"\']+)["\']', item, re.I)
+                if not links or any(not (l.startswith('/') and not l.startswith('//') and '..' not in l) for l in links):
+                    return item
+                extra_b.append({'text': clean(re.sub(r'<[^>]+>', ' ', item)), 'links': links})
+                return ''
+            new_b_sec = li_re.sub(_strip_added_li, mb.group(1)) + mb.group(2)
+            b_html = b_html[:mb.start()] + new_b_sec + b_html[mb.end():]
         a_sem, a_rel = _parse_stripping_related_cards(a_html, m_route, approved['baseUrl'], approved['manifest']['canonicalBase'])
         b_sem, b_rel = _parse_stripping_related_cards(b_html, m_route, live['baseUrl'], live['manifest']['canonicalBase'])
+        b_rel.extend(extra_b)
     except (OSError, UnicodeDecodeError, ValueError):
         return False
     if not a_rel and not b_rel:

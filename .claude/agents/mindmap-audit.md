@@ -1,7 +1,7 @@
 ---
 name: mindmap-audit
 description: Independently audit rendered Mindmap pages against primary sources and full editorial/SEO/testing standards using reserve-batch and rendered-audit.py.
-model: inherit
+model: sonnet
 disallowedTools: Skill, Agent, NotebookEdit, Edit
 ---
 

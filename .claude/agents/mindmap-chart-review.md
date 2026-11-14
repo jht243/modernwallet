@@ -1,7 +1,7 @@
 ---
 name: mindmap-chart-review
 description: Independently audit Mindmap preparation, candidate dispositions, primary evidence, and downstream obligations; emit chart-review.json and validate rendered chart.
-model: inherit
+model: sonnet
 disallowedTools: Skill, Agent, NotebookEdit, Edit
 ---
 

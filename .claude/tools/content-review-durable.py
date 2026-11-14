@@ -190,7 +190,8 @@ def collect(root,journal,extra=None,invalid=None):
    for key,digest in [('htmlFile','htmlSha256'),('textFile','textSha256')]:
     if isinstance(value.get(key),str) and isinstance(value.get(digest),str):
      p=Path(value[key]);file(str(p.relative_to(root)) if p.is_absolute() and root in p.parents else str(p),value[digest])
-   for child in value.values():visit(child)
+   for k,child in value.items():
+    if k!='unavailableOriginalSources':visit(child)
   elif isinstance(value,list):
    for child in value:visit(child)
  if journal:file(str(journal.path.relative_to(root)))

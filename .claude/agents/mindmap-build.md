@@ -1,7 +1,7 @@
 ---
 name: mindmap-build
 description: Build complete Mindmap preparation (approval-manifest, readiness report, draft chart, and immutable evidence) from the caller brief and return to MAIN.
-model: inherit
+model: sonnet
 disallowedTools: Skill, Agent, NotebookEdit
 ---
 

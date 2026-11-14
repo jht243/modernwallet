@@ -1,7 +1,7 @@
 ---
 name: mindmap-write
 description: Execute approved Mindmap content creation/enrichment, internal linking, lint, build, and 1-shot rendered preview capture from a sealed handoff.
-model: inherit
+model: sonnet
 disallowedTools: Skill, Agent, NotebookEdit
 ---
 

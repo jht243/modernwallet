@@ -96,15 +96,16 @@ of this file. Day = America/Bogota date (`TZ=America/Bogota date +%F`).
 **1b.** The upgrade pass for older thin pages is step 7b. It runs on EVERY run, after
 today's pages are published, and also when step 1 finds nothing new to publish.
 
-**2. Research and write** each claimed page per the page rules and the site adapter. Read
-`.claude/commands/_content-standard.md` and `_anti-ai-language.md` first and run the standard's
-PREFLIGHT load step. Count body words before the audit; under 1,500 means research more of the
-query, not pad. Record the
-writer: `backlog.py set --id <id> --status in_progress --note "drafted" --field writer='"main"' --field slug='"<slug>"'`.
+**2. Research and write (via the shared `content_gen.py` waterfall — never write page prose in-context)** each claimed page per the page rules, `.claude/commands/_content-generation.md`, and the site adapter:
+- Read `.claude/commands/_content-standard.md`, `_anti-ai-language.md`, and `_content-generation.md` first and run the standard's PREFLIGHT load step.
+- Run `python3 scripts/lib/content_gen.py preflight` once per run (prefixing every `scripts/lib/content_gen.py` call with the routine's `CONTENT_ANTHROPIC_KEY` / `CONTENT_OPENAI_KEY` / `GEMINI_API_KEY` env vars when running in the cloud; the model order is set by `.claude/content-gen.env`: Claude API pool $\rightarrow$ OpenAI budget-guarded $\rightarrow$ Gemini).
+- Build `reports/alternatives-daily/<day>/prompts/system.md` once per run with `python3 scripts/lib/content_gen.py system --voice <existing alternatives page or sample> --contract reports/alternatives-daily/<day>/prompts/contract.md --out reports/alternatives-daily/<day>/prompts/system.md`, where `contract.md` specifies the exact output shape required by this repo's `## SITE ADAPTER` (JSON object keys for JSON/TS stores, or Markdown frontmatter + section layout for Markdown stores) and the page rules above.
+- For each claimed product, research the subject product and 5–8 real alternatives from each vendor's own website, save the source URLs to `reports/alternatives-daily/<day>/<slug>-sources.json`, write `reports/alternatives-daily/<day>/prompts/<slug>-allowed-urls.txt` (containing ONLY the subject product's official HTTPS URL/host and internal `/` routes), and assemble the data-only `reports/alternatives-daily/<day>/prompts/<slug>.prompt.md` with the complete `CLOSED FACT LIST`, `reader question`, section plan, and PAA FAQs.
+- Generate the page draft via `python3 scripts/lib/content_gen.py write --system reports/alternatives-daily/<day>/prompts/system.md --prompt reports/alternatives-daily/<day>/prompts/<slug>.prompt.md --out reports/alternatives-daily/<day>/drafts/<slug>.<json|md> --slug <slug> --floor 1500 --schema none --format <json|markdown> --allowed-urls reports/alternatives-daily/<day>/prompts/<slug>-allowed-urls.txt --facts reports/alternatives-daily/<day>/prompts/<slug>.prompt.md --tested no` (retaining `<out>.meta.json` in `reports/alternatives-daily/<day>/drafts/`), then splice/write the generated page into the site's page store per the site adapter. Count body words before the audit; under 1,500 means research more of the query in the fact list and regenerate, not pad. Record the writer: `backlog.py set --id <id> --status in_progress --note "drafted" --field writer='"content_gen"' --field slug='"<slug>"'`.
 
 **3. Build gate** (site adapter). Fix failures before going on.
 
-**4. One audit per page.** For each page start ONE blocking `general-purpose` subagent. Give it the
+**4. One audit per page.** For each page start ONE blocking `general-purpose` subagent pinned to **`model: "sonnet"`** (never `opus`). Give it the
 page content (the data entry and the locally rendered text if available), the sources file and these
 instructions: open each product's own website (pricing page) and check every price, plan, limit and
 named feature on the page; check the title/H1 rule, that the only external link is the subject's
@@ -118,7 +119,7 @@ skipped). Return JSON only:
 Save it to `reports/alternatives-daily/<day>/<slug>-audit.json` and record it:
 `backlog.py audit --id <id> --file <that file>`. The helper refuses a second audit for a page.
 
-**5. Fix.** Apply every finding as a targeted edit (same writer). A price that cannot be confirmed
+**5. Fix.** Apply every finding as a targeted edit (using `python3 scripts/lib/content_gen.py fix --draft <draft> --findings <findings.txt> --facts reports/alternatives-daily/<day>/prompts/<slug>.prompt.md --allowed-urls reports/alternatives-daily/<day>/prompts/<slug>-allowed-urls.txt` for multi-sentence prose rewrites, or direct one-sentence/cell splices for individual price/string corrections). A price that cannot be confirmed
 becomes "Quote-based; no public price" (a fact, not a deferral). No second audit. If a hard blocker cannot be fixed
 (e.g. the product no longer exists), `set --status held --note "<reason>"` and leave that page out
 of the commit. A held page frees its slot: run `backlog.py next` again, claim a replacement
@@ -143,8 +144,8 @@ Commit `reports/alternatives-daily/` (backlog + receipts) and push with the depl
 **7b. Upgrade pass (owner rule 2026-11-14) — ALWAYS run this step, including on a no-op day.**
 Pages this routine published before the full SEO
 standard existed may be thin. Take the `upgradeQueue` rows from `backlog.py next` (published, no `seoUpgraded`, oldest first, up to 3), and bring each
-page up to page rule 5 in place (same URL, slug and title start; refresh prices from each
-vendor's site). Give each upgraded page ONE audit as in step 4 and record it with
+page up to page rule 5 in place using the `scripts/lib/content_gen.py` waterfall (`write`/`section` with `.meta.json` saved under `reports/alternatives-daily/<day>/drafts/`, keeping the same URL, slug and title start, and refreshing prices from each
+vendor's site). Give each upgraded page ONE audit (`model: "sonnet"`) as in step 4 and record it with
 `backlog.py audit --id <id> --file <file> --upgrade`, fix the findings, publish and live-check as in
 steps 6–7 (submit the upgraded URLs to IndexNow), then
 `backlog.py set --id <id> --status published --note "seo upgrade" --field seoUpgraded='"<day>"' --field bodyWords=<n>`.
