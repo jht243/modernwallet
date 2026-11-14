@@ -1,0 +1,114 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "mindmap-write-lane-c",
+ "route": "/real-estate/bridge-loan-calculator/",
+ "readerQuestion": "How much will a bridge loan cost me until my old home sells? [PAA 2/6 adjacent (does a bridge loan cost more; how do you calculate loan to cost), 4/6 off-topic: construction loan payment, 20% down payment, mortgage qualification; ac 3/16 question completions incl. how much bridge loan can i get, how much bridge loan cost]",
+ "approvedPlan": {
+  "manifest": {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/approval-manifest.json",
+   "sha256": "03cf28895e4762681567629b28d4b5241d3113ccf1770090f202b37dfc2d2714"
+  },
+  "review": {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/chart-review.json",
+   "sha256": "85acf88a3d4cb83e2e97a7f5edbe948dd407b103d30d1cef2baf18c44dec64b0"
+  },
+  "actionId": "MW-TL-03"
+ },
+ "presentation": {
+  "medium": "interactive tool",
+  "placement": "New real-estate spoke; calculator is section 1",
+  "reason": "The cost depends on loan size, rate, fees and how many months the old home takes to sell, which only the reader knows.",
+  "readerInputs": [
+   "Expected sale price of the old home",
+   "Old mortgage payoff",
+   "Bridge loan amount",
+   "Interest rate (APR)",
+   "Origination percent and other fees",
+   "Months until the old home sells",
+   "New mortgage payment",
+   "Old home monthly carrying costs",
+   "Selling costs percent"
+  ],
+  "interaction": {
+   "decision": "build",
+   "reason": "Months-to-sell is the main swing factor and changes the answer; a fixed example hides it."
+  },
+  "animation": {
+   "decision": "not-useful",
+   "reason": "Month count is a single number; a cost-by-month table shows the sensitivity without animation."
+  }
+ },
+ "caseSelection": {
+  "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/bridge-loan-calculator/cases.json",
+  "sha256": "ec1fe998d678f001bfd27c4be83d89ee088b6ad910da21ff9c88cfe0f2ca89d5"
+ },
+ "caseDecisions": "Retrieved with the exact approved reader question. 8 candidates, none about 401(k) plan loans, short-term real estate loans or ModernWallet readers: they are other Layer3Labs properties, client engagements and a gaming testimonial. ModernWallet's _experience.md has no named-client specifics. Rejected all; no client claim on the page.",
+ "caseUses": [],
+ "exclusions": "No TESTED label and no reviewed-by claim: financial service, _experience.md section G excludes it and no product test exists. Internal-modeling wording only.",
+ "decisionGap": "Readers can find what a bridge loan is, but not what their own timeline costs: fees plus months of interest, on top of carrying two homes, taken out of the old home's proceeds. Sampled the 2026-11-14 research pack and DataForSEO read; no site-wide uniqueness claimed.",
+ "finding": "In our internal modeling of one example sale (old home sells for $400,000, old mortgage payoff $200,000, bridge loan $100,000 at 10% APR with a 2% fee, 6 months, 6% selling costs), bridge interest is $5,000, fees are $2,000, bridge cost is $7,000, selling costs are $24,000 and net proceeds are $69,000. The same loan costs $4,500 at 3 months, $9,500 at 9 months and $12,000 at 12 months, leaving $71,500, $66,500 and $64,000. With a $2,500 new mortgage payment and $1,800 of old-home carrying costs, the overlap outlay is $4,300 a month, $25,800 over 6 months. Against an example alternative costing $1,500 a month with no up-front fee, the bridge costs less once the old home takes more than 3.0 months to sell. A $300,000 payoff makes net proceeds negative $31,000.",
+ "conditions": "Reader-entered terms only; every rate, fee and limit in the example is an illustrative input, not a lender quote or market figure. Interest is simple and repaid from the sale proceeds; carrying costs are entered by the reader (old mortgage payment, taxes, insurance, utilities).",
+ "whatWouldChange": "A lender quote with different fees or rate, a sale that takes longer or shorter, interest paid monthly instead of at payoff, prepayment terms, closing costs on the new home, or taxes on the sale.",
+ "basis": "calculated",
+ "method": "Deterministic: interest = loan x APR/12 x months; fees = loan x origination% + other fees; bridge cost = fees + interest; net proceeds = sale - payoff - bridge loan - bridge cost - selling costs; overlap outlay = new mortgage payment + old home carrying costs; break-even months = fees/(alternative monthly - bridge monthly interest). Python replica of src/lib/bridge-loan.ts.",
+ "units": "USD, months, percent",
+ "limitations": "No lender rates, fees, terms or loan-to-value limits; net proceeds ignore closing costs on the new home and taxes; the break-even compares against one entered alternative with no up-front fee.",
+ "counterexample": "With a payoff of $300,000 instead of $200,000 the same sale leaves negative $31,000, and with no origination fee the cost falls from $7,000 to $5,000, so fees are not the only lever; if the alternative costs no more per month than the bridge interest of $833.33, the bridge never costs less.",
+ "provenance": {
+  "basis": "calculated",
+  "supportingRecordIds": [
+   "output.json base6mo",
+   "output.json months3",
+   "output.json months9",
+   "output.json months12",
+   "output.json overlap",
+   "output.json breakEvenAlt1500"
+  ],
+  "scopeAndLimits": "reader-entered terms; illustrative example inputs",
+  "publicMethod": "settlement convention and formulas stated next to the tool and in the worked example",
+  "placement": "introText worked example plus What a Bridge Loan Costs Month by Month"
+ },
+ "medium": "interactive tool: sale price, payoff, loan, rate, fees and months to sell change the cost and the net proceeds",
+ "sourceUrls": [],
+ "execution": {
+  "command": [
+   "python3",
+   "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/bridge-loan-calculator/calc.py",
+   "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/bridge-loan-calculator/output.json"
+  ],
+  "code": {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/bridge-loan-calculator/calc.py",
+   "sha256": "b20aaefcd8fd432cb9d550a0701a3dffb56a5526060cf1a31c139dbaeedbf0db"
+  },
+  "inputs": [
+   {
+    "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/bridge-loan-calculator/inputs.json",
+    "sha256": "67ddb531ca083bed7aebe323169f64ee41ca8e249df26bbb81fc9d090eafb666"
+   }
+  ],
+  "output": {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/bridge-loan-calculator/output.json",
+   "sha256": "2acd9dfae5698ff4e082ecfa6724deabd918e3107ece9b2bee2810200e8be437"
+  }
+ },
+ "sourceArtifacts": [
+  {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/bridge-loan-calculator/sources.md",
+   "sha256": "8118d1162c5188af2b58aac610d46e56fad61c75a34d1e4861a85f25a70fe29c"
+  }
+ ],
+ "presentationArtifacts": [
+  {
+   "path": "src/lib/bridge-loan.ts",
+   "sha256": "6f39c3d104499f9f1e3434da43659c5e9fa62652e9d60ede5687dee1fd484e22"
+  },
+  {
+   "path": "src/components/BridgeLoanCalculator.tsx",
+   "sha256": "be35222d189bc76a9e6365da463f2d8cea6b43c6ca1c06a3b6871b26d619b017"
+  },
+  {
+   "path": "src/components/LoanToolKit.tsx",
+   "sha256": "36a1659bb72e81f2ff9c6e99d6afe1872569c41fc83f5e00db4853009693b883"
+  }
+ ]
+}

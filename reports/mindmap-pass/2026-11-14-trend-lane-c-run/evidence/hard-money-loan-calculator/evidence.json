@@ -1,0 +1,114 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "mindmap-write-lane-c",
+ "route": "/real-estate/hard-money-loan-calculator/",
+ "readerQuestion": "How much will a hard money loan cost me in total? [PAA 2/6 on-topic (how do hard money loans work; how do you calculate loan to cost), 4/6 off-topic: personal loan monthly cost, mortgage affordability; ac 3/16 question completions incl. how much hard money loan cost, is hard money loan interest only]",
+ "approvedPlan": {
+  "manifest": {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/approval-manifest.json",
+   "sha256": "03cf28895e4762681567629b28d4b5241d3113ccf1770090f202b37dfc2d2714"
+  },
+  "review": {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/chart-review.json",
+   "sha256": "85acf88a3d4cb83e2e97a7f5edbe948dd407b103d30d1cef2baf18c44dec64b0"
+  },
+  "actionId": "MW-TL-02"
+ },
+ "presentation": {
+  "medium": "interactive tool",
+  "placement": "New real-estate spoke; calculator is section 1",
+  "reason": "Cost depends on loan size, rate, points, months held and optional after-repair value, so the reader must enter their deal.",
+  "readerInputs": [
+   "Purchase price",
+   "Rehab budget",
+   "Percent of purchase price the lender advances",
+   "Percent of rehab financed",
+   "Interest rate (APR)",
+   "Points (percent of loan)",
+   "Months until payoff",
+   "Lender, document and other fees",
+   "Extension months and fee",
+   "After-repair value (optional)",
+   "Selling costs percent and monthly holding costs (optional)"
+  ],
+  "interaction": {
+   "decision": "build",
+   "reason": "Each input changes total financing cost, loan-to-cost and profit; a static example cannot answer a reader whose points or hold time differ."
+  },
+  "animation": {
+   "decision": "not-useful",
+   "reason": "A month-by-month interest table is clearer than motion; reduced-motion safe by default."
+  }
+ },
+ "caseSelection": {
+  "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/hard-money-loan-calculator/cases.json",
+  "sha256": "92c484f148f76e7a30341ff923976d8cb1b0bb12d878bebc41e451abd4263f64"
+ },
+ "caseDecisions": "Retrieved with the exact approved reader question. 8 candidates, none about 401(k) plan loans, short-term real estate loans or ModernWallet readers: they are other Layer3Labs properties, client engagements and a gaming testimonial. ModernWallet's _experience.md has no named-client specifics. Rejected all; no client claim on the page.",
+ "caseUses": [],
+ "exclusions": "No TESTED label and no reviewed-by claim: financial service, _experience.md section G excludes it and no product test exists. Internal-modeling wording only.",
+ "decisionGap": "Readers find calculators that return a payment, but the total cost of a short interest-only loan is points plus months of interest plus fees plus any extension, and the months held move it more than the rate does. Sampled the 2026-11-14 research pack and DataForSEO read; no site-wide uniqueness claimed.",
+ "finding": "In our internal modeling of one example deal (purchase $200,000, rehab $50,000, lender advances 90% of the purchase and 100% of the rehab, 12% APR, 2 points, 6 months, $2,500 in other fees), the loan is $230,000, points are $4,600, interest-only payments are $2,300 a month, interest over 6 months is $13,800, total financing cost is $20,900, the balloon payoff is $230,000 and loan to cost is 92%. Changing months by 3 moves the total by $6,900; one point or 2 points of APR moves it by $2,300. A 3-month extension with a 1% fee adds $9,200 ($6,900 interest and a $2,300 fee). With an example after-repair value of $330,000, 6% selling costs and $1,000 a month of holding costs, loan to ARV is 69.7% and profit before tax is $33,300.",
+ "conditions": "Reader-entered terms only; every rate, point and fee in the example is an illustrative input, not a lender quote or market figure. Interest is simple and interest-only on the full balance (rehab funded at closing); a drawn-evenly option lowers interest on the example to $12,550. Profit is before tax. Default interest, draw inspection fees and prepayment minimums are not modelled unless entered as fees.",
+ "whatWouldChange": "A lender quote with different points, rate, fees or hold time; a different draw schedule; a loan that is not interest-only; extension or default terms; taxes on the profit.",
+ "basis": "calculated",
+ "method": "Deterministic: loan = purchase x advance% + rehab x advance%; points = loan x points%; interest = sum of monthly balance x APR/12; total financing cost = points + fees + interest + extension interest + extension fee; LTC = loan/(purchase + rehab); LTARV = loan/ARV; profit = ARV - selling costs - purchase - rehab - financing cost - holding costs. Python replica of src/lib/hard-money-loan.ts.",
+ "units": "USD, months, percent",
+ "limitations": "No market rates or lender terms; simple annualized cost is total cost over the loan and years held, not an IRR; pre-tax; no default interest or prepayment minimums; no judgment on whether a deal is good.",
+ "counterexample": "At 0% APR the total falls to $7,100 (points and fees only), so points and fees alone do not explain a 6-month total of $20,900; and drawing the rehab evenly instead of at closing cuts interest from $13,800 to $12,550, so the same terms cost less when money is drawn later.",
+ "provenance": {
+  "basis": "calculated",
+  "supportingRecordIds": [
+   "output.json base",
+   "output.json extension3mo1pct",
+   "output.json withArv330k",
+   "output.json sensitivity"
+  ],
+  "scopeAndLimits": "reader-entered terms; illustrative example inputs",
+  "publicMethod": "formulas next to the tool and the worked example table",
+  "placement": "introText worked example plus How the Cost Adds Up"
+ },
+ "medium": "interactive tool: purchase, rehab, advances, rate, points, months, fees, extension and optional ARV change every output",
+ "sourceUrls": [],
+ "execution": {
+  "command": [
+   "python3",
+   "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/hard-money-loan-calculator/calc.py",
+   "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/hard-money-loan-calculator/output.json"
+  ],
+  "code": {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/hard-money-loan-calculator/calc.py",
+   "sha256": "a8e4d5d7ee2fbd264a69e5a5c06c9fa6a036f48447e60eacd056ed272adb78a3"
+  },
+  "inputs": [
+   {
+    "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/hard-money-loan-calculator/inputs.json",
+    "sha256": "42986dcf54846ab5fd9b7089d39e9fbbf106febf56c35d77194bf88cd2610e0d"
+   }
+  ],
+  "output": {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/hard-money-loan-calculator/output.json",
+   "sha256": "49a9bdf1859cb228accc61fd20e749f3a9c5daede9e7630238b2fb16f0fd7b24"
+  }
+ },
+ "sourceArtifacts": [
+  {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/hard-money-loan-calculator/sources.md",
+   "sha256": "4dde35cab7d04bf4acc5850eea30fe2e93a394c01e1ba6764d85b9e9a2fa5f2e"
+  }
+ ],
+ "presentationArtifacts": [
+  {
+   "path": "src/lib/hard-money-loan.ts",
+   "sha256": "f4fa4cced08f1672bc7934390f68ee71451cceae05b4a1553302668f962ffedb"
+  },
+  {
+   "path": "src/components/HardMoneyLoanCalculator.tsx",
+   "sha256": "d58e1e56cdf047929d6c0bd60e3aefa85a7308a412e99876e572bb2c1c7c71f8"
+  },
+  {
+   "path": "src/components/LoanToolKit.tsx",
+   "sha256": "36a1659bb72e81f2ff9c6e99d6afe1872569c41fc83f5e00db4853009693b883"
+  }
+ ]
+}

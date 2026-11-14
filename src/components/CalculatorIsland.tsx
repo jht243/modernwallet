@@ -54,6 +54,9 @@ import StockSplitCalculator from "./StockSplitCalculator";
 import StockAverageCostCalculator from "./StockAverageCostCalculator";
 import StockProfitCalculator from "./StockProfitCalculator";
 import NavCalculator from "./NavCalculator";
+import Loan401kCalculator from "./Loan401kCalculator";
+import HardMoneyLoanCalculator from "./HardMoneyLoanCalculator";
+import BridgeLoanCalculator from "./BridgeLoanCalculator";
 import HelocCalculator from "./HelocCalculator";
 import CommercialMortgageCalculator from "./CommercialMortgageCalculator";
 import CdCalculator from "./CdCalculator";
@@ -245,6 +248,10 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "stock-average-cost": StockAverageCostCalculator,
   "stock-profit": StockProfitCalculator,
   "nav-calculator": NavCalculator,
+  // Trend pass Lane C (2026-11-14): per-spoke override islands for the loan-cost calculators.
+  "loan-401k": Loan401kCalculator,
+  "hard-money-loan": HardMoneyLoanCalculator,
+  "bridge-loan": BridgeLoanCalculator,
 };
 
 interface Props {

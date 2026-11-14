@@ -1,0 +1,5 @@
+{"limitsFields":["vestedBalance","outstandingLoans","highest12"],
+ "limits":[[15000,0,0],[60000,0,0],[200000,0,0],[100000,0,0],[200000,10000,20000],[200000,20000,50000]],
+ "paymentsFields":["amount","aprPct","years","paymentsPerYear"],
+ "payments":[[10000,6,5,12],[10000,8,5,12],[10000,10,5,12],[10000,8,5,4],[10000,8,5,26],[30000,8,5,12],[30000,8,15,12]],
+ "note":"Balances and loans are illustrative. APRs of 6, 8 and 10 percent are example inputs, not plan or market rates. Cases are hard-coded in calc.py in this order."}

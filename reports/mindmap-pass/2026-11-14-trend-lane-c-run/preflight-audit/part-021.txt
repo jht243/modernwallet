@@ -1,0 +1,56 @@
+ADMISSION --failure ACTUAL_FAILURE_HANDOFF`. This performs one append-only mechanical rebind of that same unfinished numbered slot, preserves all original events, findings and counters, and grants no verdict or extra round. It rejects intact or completed admissions and a second repair of the same slot. Complete the real independent result with normal `record`; reuse the actual original auditor when its context remains available. No new writing, chart, generation or completed-page audit is authorized by this metadata repair. An old ledger-done flag cannot hide a pending audit. Preserve genuine required professional approval, exclusions, testing honesty and native client/upsell rules. No additional human gate.
+
+For Node/Next/Astro audit previews, use `python3 .claude/tools/preview-session.py start --run-id ACTUAL_INVOCATION_RUN_ID --route ACTUAL_ROUTE` after the normal build. It reuses only this invocation's verified unchanged build, otherwise starts a fresh owned loopback process and retires its old process. Capture uses its returned baseUrl and verifies the build and current source signature before fetching pages. The helper does not perform an audit or generate content. `stop --run-id ACTUAL_INVOCATION_RUN_ID` retires only the matching owned process. Python/native preview adapters retain their existing paths. To restore hash-bound earlier dependency bytes before a pending repair, use `content-review-durable.py restore --canonical-base ACTUAL_ORIGIN --route ACTUAL_ROUTE`; it preserves the writer's current files and creates no review verdict.
+
+Before the first content-audit reservation, MAIN seals the writer’s actual current canonical handoff through workflow-handoff.py; it must not delegate an auditor without that handoff. The actual independent auditor completes AUDIT preflight with its real actor/run/context/epoch and passes `--preflight ITS_COMPLETED_DIRECTORY` to `content-review-policy.py reserve`. A BUILD receipt or directly reading some contracts is not an AUDIT checkpoint. Missing handoff/reading is repaired before substantive audit, without reserving a slot, restarting research or dropping same-context instruction reuse. The guard does not invalidate or repeat genuine completed historical content verdicts: preserve any historical procedural failure honestly and apply the corrected checkpoint to the next actual stage.
+
+For an existing pending audit reservation with a corrupted source dependency, use the existing repair-pending command on the same job and round with its retained failure evidence and a replacement snapshot. The validator compares source hashes and retains the original and replacement identities. The independent reviewer must complete that slot. A recorded verdict cannot use this repair.
+
+[Source: .claude/commands/mindmap-pass/phase-4-audit.md]
+[Repeated passage at this position: .claude/commands/_rendered-page-audit.md, paragraph 3. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/_remediation-ladder.md, paragraph 1. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 6. Use its exact text under this source/section context.]
+
+# Phase 4 — Confirm new content (dedicated adversarial review)
+
+[Repeated passage at this position: .claude/commands/_remediation-ladder.md, paragraph 5. Use its exact text under this source/section context.]
+
+
+<!-- chart-obligation: p4-request-and-audit-gate -->
+**Check the original request and actual presentation before applying the checklist.** Read the request artifact, its mapped requirements, approved action and presentation decision. Independently judge whether the rendered result delivers this action's share of the user's goal, rather than accepting a narrower writer brief as the whole request. Record `requestCoverage`, `presentationReview` and `caseUseReview` under `_mindmap-execution.md` with concrete evidence. Every planned substantive action (`create new content` or `update existing body text` / embedded tool) must map to the original request requirements, carry verifiable closed facts + allowed URLs, justify static vs interactive `presentation` where adjustable inputs could help, and clear its page-type depth floor without padding.
+<!-- /chart-obligation -->
+
+
+<!-- mindmap-visible-checks-v1 -->
+**Approval chart: completed preparation only.** Follow `_workflow-checkpoints.md`, “Approval chart — completed preparation only.” Finish applicable instruction reading, primary-source research, duplicate review, testing/evidence decisions, and takeaway briefs BEFORE showing the chart. Show one **Preparation check** row: `✅ Passed` linking readiness evidence (or `❌ Failed` with specific failures blocking approval). Keep Phases 1–9 as future execution; never show pending cells. Unattended `*-auto` callers build `preparationMode: "full"` (`## New-page briefs` + link inspections) upfront. Manual `/mindmap-pass` runs use `preparationMode: "fast-scope"` (`## Scope briefs` inline in saved and displayed charts) before the Phase 0 human gate, then expand `preparationMode: "full"` for approved rows right after approval before Phase 3 writing. Approval remains the sole human gate.
+<!-- /mindmap-visible-checks-v1 -->
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 16. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 17. Use its exact text under this source/section context.]
+
+<!-- intent-takeaway-v1 -->
+**Intent-based takeaway audit:** Read `_decision-evidence.md` in the active project's `.claude/commands/`, including its takeaway requirements and section 4. Verify the conclusion answers the approved question, matches actual evidence and retains important conditions; compare the opening answer, tables, calculator and FAQs. An existing sufficient verdict or a supported inconclusive answer can pass. Never require a canned heading or unsupported testing language. For global commands, resolve/install the sibling shared contract in the active project while preserving local rules.
+<!-- /intent-takeaway-v1 -->
+
+
+**Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.
+
+
+<!-- decision-evidence-v1 -->
+## Decision-evidence gate
+
+Read `.claude/commands/_decision-evidence.md`, section 4, and independently audit its evidence packet against the exact rendered contribution. This includes new substantive content/tools embedded in an existing page. Verify visible attribution states what we did, what we found and how readers can check it; naming published inputs alone is insufficient. Match explicit “internal testing,” “internal modeling” or “internal analysis” wording to the saved evidence, without requiring an exact phrase: calculations, hypothetical models, actual tests and documented client observations must remain distinct. Require reproducible findings, important conditions and a counterexample; reject fabricated testing and unsupported benefit assumptions. Audit an optional calculator as a planning aid when that is all it establishes. Verify the growth record exists, but never treat its hypothesis as proven uplift. Once max reworks (2) are exhausted, automatically publish the latest audited version (logging remaining non-liability findings honestly) unless blocked by direct legal/physical-harm liability (e.g. incorrect medical dosing or acute safety hazard; general medical pricing, locations, attribution wording, and SEO/style findings never block).
+<!-- /decision-evidence-v1 -->
+
+This phase IS the gate for Phase 3. It checks net-new pages and substantive new content/tools embedded in existing pages. Pure metadata/link corrections retain their existing reviewer gates. Run as an Explore subagent that did NOT write those pages.
+
+**Check the `format` column of each Phase 3 row before applying the checklist.** Article rows and non-article rows have different review criteria:
+
+**For BUILT tool rows (`interactive tool`, `calculator`, `quiz/assessment` — Phase 3c, MINDMAP-BUILDS-TOOLS):** audit the working tool AND its page. The page prose gets the full standard checklist below (it is a page). The tool gets this checklist on top — any ✗ is hard-fail rework:
+- Logic: work 3 realistic inputs by hand; the tool's outputs match. Every number in the code is a named constant with a stated source/assumption ✓/✗
+- Edge inputs (empty, zero, negative, huge, all-default) never crash or show NaN/undefined ✓/✗
+- It answers the row's `reader_question` start to finish, and the result can be kept (print/copy/download/fullscreen) when the reader's job ends in a thing ✓/✗
+- Mirrors an existing tool's wirin

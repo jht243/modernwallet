@@ -1,0 +1,64 @@
+"not financial advice" disclaimer sits at the bottom of the page, never the top (`_content-standard.md`).
+- **Comparisons and roundups stay objective** — no option is the automatic winner; affiliate/partner wiring (`src/data/partners.ts`) is handled by the templates, never by body prose.
+
+## 1. Build the brief
+Two parts, in this order:
+
+1. **Top-10 queries** — `top_queries[10]` from the Phase 0 pull JSON (7-day window), verbatim, in click order, each with clicks/impressions/position and the `top_pages[10]` page it lands on (if known).
+2. **Research from Lanes A/B** — paste the research pack (`reports/trend-pass/<YYYY-MM-DD>.research.md`) in full: the trend verdict, trend gap findings, and uncovered top-20 queries with their suggested angles.
+
+Interpreted-brief line: *"Our 10 top-clicking Google queries for the 7 days ending <data_date>, plus our own research on what's trending and what's missing. Build what this demand implies the site lacks — new pages and missing sections on the pages these queries already land on. Treat the research findings as strong suggestions: they came from our own search data and passed an existence check, so drop one only for a real reason."*
+
+## 2. Build the chart (mindmap BUILD-BRIEF, autonomous)
+
+As soon as the research pack is available, dispatch the native BUILD worker on the complete top-10 scope, even when both research lanes found zero new topics. Reuse this run’s full chart if already saved. A partial delta or a missing chart resumes BUILD from the saved pack before final reporting. The dispatcher owns the independent chart review.
+Read `.claude/commands/mindmap-pass/phase-0-discover.md` for its site-fact discovery and chart parsing only (content store = the `src/data/*.ts` registries; business name "The Modern Wallet"). **Its manifest gate is skipped** — the run is autonomous.
+
+Read and follow `.claude/commands/mindmap-pass/phase-build-brief.md` with the brief above, with these overrides:
+- **Chart filename:** `reports/mindmap-pass/<TODAY>-trend-lane-c.md` — NEVER the bare `<TODAY>.md` (another mindmap routine may own it). Cache files use the same `<TODAY>-trend-lane-c.` prefix.
+- **No human gate**, and BUILD-BRIEF's "no input → STOP and ask" rule does not apply: the brief above is the input.
+- **Lens 3b (model-launch overlay) is skipped** — this is not an AI-content repo.
+- Tag every chart row with its source: `trend` (from a Lane A finding), `coverage` (from a Lane B finding) or `top-10` (from the queries directly). The digest groups by this tag.
+- Keep mindmap's adversarial duplicate-suppression reviewer — it is the final dedup.
+
+## 3. Ledger check + cap
+- Drop any `create new content` row whose slug/intent is KEPT or DROPPED in `reports/trend-pass/ledger.md`.
+- **Ledger statuses (owner rule 2026-10-07).** Only **KEPT** and **DROPPED** block a row. An owner **OVERRIDE** / **OVERRIDDEN** row beats any earlier DROPPED for the same slug or intent — build it. **HELD** means temporarily blocked (a YMYL fact source unreachable from the runner, a source not yet supplied, an external dependency): a HELD row re-competes every run and is never treated as DROPPED. Log any "source unreachable / not groundable this run" outcome as **HELD**, never DROPPED — DROPPED is only for exists / duplicate / off-mission / failed audit / owner-rejected. Before declaring a source unreachable, check `data/sources/` for an owner-committed copy of it and ground on that.
+- Rank surviving `create new content` rows in mindmap's own row order. Take the first **25**. Past 25 → digest "over cap — not built", **NOT ledgered** (re-competes next run). Enrichments and internal-link rows don't count against the cap.
+
+## 4. Execute (mindmap phases)
+Read each file; do not paraphrase:
+- `.claude/commands/mindmap-pass/phase-1-consolidation.md` — advisory only; record flagged pairs for the digest.
+- `.claude/commands/mindmap-pass/phase-3-new-content.md` — new pages (API generation via `content_gen.py`, `--format json` against the `src/data/*.ts` page shape; includes the monetization check). Compute engine ground truth BEFORE generating (guardrails above).
+- `.claude/commands/mindmap-pass/phase-5-body.md` — additive section enrichments only (its own reviewer gate audits each addition).
+- `.claude/commands/mindmap-pass/phase-6-internal-linking.md` — additive links only (markdown `[text](/path/)` inside content strings; `linkify()` renders them).
+- `.claude/commands/mindmap-pass/phase-4-audit.md` — adversarial audit on every new page, including the number-accuracy check against engine ground truth. For editorial pages, publish the exact independently reviewed version at the first PASS or final allowed audit (LIGHT 1, STANDARD 2, HIGH 3). Retain the verdict and findings and complete the native build, deployment, links and exact live comparison.
+
+Do **NOT** run mindmap's phase-2 (metadata), 7, 8 or 9 — Phase 5 of this pass does the build check, ledgers, the one commit, deploy, 200-verify, IndexNow and the digest.
+
+## 5. Hand-off to Phase 5
+Pass: pages shipped, enrichments, over-cap rows, flagged spec-only rows (template/glossary/data report), cannibalization advisory, and every dropped row with its reason — each tagged with its source (`trend` / `coverage` / `top-10`). Also the keyword demand-ladder rung BUILD-BRIEF used.
+
+[Source: .claude/commands/_vendor-research.md]
+# Coverage-first vendor research
+
+Owner instruction, 2026-11-08. Applies across Mindmap Pass and vendor-producing callers. Remove repeated vendor investigation when the current task is already covered; preserve every applicable SEO, evidence, testing, professional, exclusion, risk-profile, review-budget and release requirement. This is research allocation inside existing preparation/chart review, not another review stage or a replacement for Mindmap deduplication.
+
+## Resolve the task before opening vendor sites
+
+Keep the COMPLETE original intake, canonical job and each original candidate ID. Identify the actual company/product and ORIGINAL target page/reader intent. Inspect current own-page coverage first. The same company on a different page, a footer link, another vendor sharing a hosting domain, an unrelated mention, or a prior cut never proves coverage. A new product/model/version, launch, news item, price update, consequential claim, contradictory evidence or explicit refresh is not covered merely because the company was previously listed.
+
+For a genuine vendor-addition task, an exact current first-column vendor row on the original roundup can support an independently reviewed no-addition decision without reopening its homepage/pricing page. The current own-page capture must be complete canonical HTTPS output, not a preview/shell or an old cached page. Preserve existing source identity and link-policy checks, including any genuine policy that intentionally suppresses an outbound link. No-link exceptions must use the site's actual existing verifier; do not infer identity from unlinked names alone.
+
+## Layer3 native Vertical entry
+
+`vertical-run.local.py prepare` now mechanically reads prior completed, independently reviewed identity evidence, batches current source table-identity queries and captures only relevant own roundups. This operational evidence check occurs before BUILD starts deep vendor research; MAIN still does not make editorial decisions. The returned `vendorResearchPlan` references an immutable internal plan with every original ID and one research allocation:
+
+- `none-covered`: exact original vendor/target has current source/render coverage. BUILD inspects that evidence and records the ordinary candidate-specific covered decision, `canonicalDomain` if appropriate, and the provided `coveredSnapshot`. Do not re-read vendor pricing or research its whole business merely to prove the row already exists.
+- `identity-only`: saved alias evidence is stale. Verify only that identity/redirect/rebrand first. If current coverage then resolves, use the ordinary covered decision. Do not automatically expand this into a new price/capability investigation.
+- `changed-claims-only`: new/unknown intent, product, announcement or refresh signal. Reuse only established identity where valid; research the actual new claims from appropriate current primary sources. Existing coverage does not authorize skipping them.
+- `normal`: coverage is unproven or the vendor is missing. Complete the normal applicable research and existing workflow.
+
+Saved aliases preserve the exact prior independently reviewed chart, decisions, vendor identity record and primary-source captures. Only positive covered/enrichment decisions from completed jobs qualify. Old cuts, source guesses and incomplete work do not seed aliases. The identity window is seven days normally, one day on HIGH-floor sites. These are identity-reuse bounds, never a license to republish old prices, capabilities or clinical claims as current facts. The helper does not create redirect evidence or an editorial PASS.
+
+Pass BUILD both the

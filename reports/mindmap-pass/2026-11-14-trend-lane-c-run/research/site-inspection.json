@@ -1,0 +1,74 @@
+{
+ "inspectedOn": "2026-11-14",
+ "pages": [
+  {
+   "route": "/guides/401k-loan-rules/",
+   "file": "src/data/guides.ts",
+   "sectionsInspected": [
+    "How a 401(k) Loan Works and How Much You Can Borrow",
+    "Plan-Specific Rules and Interest Deductibility Restrictions",
+    "Next Steps for Requesting Your Plan Loan Documents"
+   ],
+   "sectionTextSha256": "cf2131526b7ac83874ef7458e9ad7edfebedb0401d989d726c1082cbcd1bd1bb",
+   "finding": "Existing statute-based rules guide (72(p) via Cornell LII); has a tools[] list holding only the early-withdrawal calculator; no solo/owner-only section, no loan calculator."
+  },
+  {
+   "route": "/compare/401k-loan-vs-heloc/",
+   "file": "src/data/comparisons.ts",
+   "sectionsInspected": [
+    "What Decides Between a 401(k) Loan and a HELOC",
+    "The Job Separation Risk of Retirement Borrowing"
+   ],
+   "sectionTextSha256": "2b166252101cffecd1211722bbfb912432a53aa947fa584e97f23e296a24d567",
+   "finding": "Borrowing-path comparison; no payment math tool linked."
+  },
+  {
+   "route": "/compare/sep-ira-vs-solo-401k/",
+   "file": "src/data/comparisons.ts",
+   "sectionsInspected": [
+    "Roth, loans, and paperwork: the features that break the tie"
+   ],
+   "sectionTextSha256": "6377da3708ab4e998e468ab049ad9d8c0e4383e4745976b44024d287c91d9011",
+   "finding": "Says solo 401(k) offers loans; no loan calculator or limit math."
+  },
+  {
+   "route": "/compare/bridge-loan-vs-heloc/",
+   "file": "src/data/comparisons.ts",
+   "sectionsInspected": [
+    "How a Bridge Loan Works for a Home Purchase",
+    "The Cost Comparison Over a Realistic 6- to 12-Month Hold"
+   ],
+   "sectionTextSha256": "c4f460fb1c25caaaa9ca702d55ccf1bb10f8f082282bba98d93dbfe8fb212ce3",
+   "finding": "Bridge loan vs HELOC comparison for buy-first scenarios; no bridge-loan cost calculator on the site."
+  },
+  {
+   "route": "/guides/real-estate-investment-options/",
+   "file": "src/data/guides.ts",
+   "sectionsInspected": [
+    "Option 3: Flipping houses"
+   ],
+   "sectionTextSha256": "c7de8333af880c9e182259d9873ca69e35ac95681d251fcc013eaae9b6858c7f",
+   "finding": "Flipping section mentions the 70% rule and tax treatment; says nothing about financing cost."
+  },
+  {
+   "route": "/real-estate/cash-on-cash-return-calculator/",
+   "file": "src/data/spokes-real-estate.ts",
+   "sectionsInspected": [
+    "Common mistakes",
+    "Related tools (relatedSlugs)"
+   ],
+   "sectionTextSha256": "e72f200a0b97a825578aeae4163911877b02fc18c19d173083483d96c2a2a40e",
+   "finding": "Rental-property return calculator spoke; financed-amount and financing-cost context but no short-term loan cost tool; relatedSlugs list is the existing cross-link slot."
+  },
+  {
+   "route": "/real-estate/roi-calculator/",
+   "file": "src/data/spokes-real-estate.ts",
+   "sectionsInspected": [
+    "Common mistakes",
+    "Related tools (relatedSlugs)"
+   ],
+   "sectionTextSha256": "2b9e513083ff0c10458d84a06a38c06954eda53917de2a83c00cb884dcefaa7b",
+   "finding": "Rental-property return calculator spoke; financed-amount and financing-cost context but no short-term loan cost tool; relatedSlugs list is the existing cross-link slot."
+  }
+ ]
+}

@@ -1,0 +1,1002 @@
+import type { SpokeEntry } from "./types";
+
+// RetirementIQ (retirement) spokes. Powered by src/lib/retirement.ts (projection / early-withdrawal /
+// RMD), selected by `mode` in each preset. CONTENT: keyword-gap system — guided research+write (IRS /
+// DOL / SSA primary sources, engine ground-truth figures) + adversarial audit per page. See CONTENT.md.
+
+export const RETIREMENT_SPOKES: SpokeEntry[] = [
+  {
+    calculator: "retirement",
+    slug: "401k-early-withdrawal-calculator",
+    title: "401k Early Withdrawal Calculator: See Your Real Cost",
+    metaDescription:
+      "Use our 401k early withdrawal calculator to see the penalty, taxes, and lost growth before you cash out. Find out exactly how much you'd actually keep.",
+    targetKeyword: "401k early withdrawal calculator",
+    estimatedVolume: 8100,
+    estimatedKD: 41,
+    h1: "401k Early Withdrawal Calculator",
+    introText:
+      "This 401k early withdrawal calculator shows exactly how much you'll keep after taxes and penalties. Cashing out a 401(k) before age 59½ usually means paying a 10% IRS penalty, plus regular income tax. But the real cost goes beyond that: you also lose decades of compound growth. Enter your numbers in the calculator above to see the true cost.",
+    howItWorks:
+      "The calculator multiplies your withdrawal by three costs. First, the IRS adds a 10% early-withdrawal penalty on most distributions before age 59½. Second, the money counts as ordinary income, so you owe federal tax at your bracket. Third, most states tax it too.\n\nThe tool then projects what that same money could have earned if left invested. It uses your expected return and years to retirement. This lost growth is often the biggest cost, and it never shows up on your tax bill. To see what your balance could become if you leave it alone, try the [401k calculator](/retirement/401k-calculator/).",
+    commonMistakes: [
+      "Thinking the 10% penalty is the only cost. You also owe federal and state income tax on the full amount.",
+      "Assuming an exception removes all costs. Exceptions like disability or the Rule of 55 waive the 10% penalty, but you still owe income tax.",
+      "Trusting the plan's automatic withholding to cover your taxes. The default 20% federal withholding often falls short of your real bill.",
+      "Ignoring lost compound growth. The withdrawal you spend today can never grow for retirement again.",
+      "Forgetting the withdrawal can push you into a higher tax bracket, raising the rate on your top dollars.",
+    ],
+    workedExample:
+      "A 40-year-old withdraws $25,000 from a 401(k). She is in the 22% federal bracket and pays 5% state tax. The 10% penalty costs $2,500. Federal income tax adds $5,500, and state tax adds $1,250. That is $9,250 in total cost, or 37% of the withdrawal. She keeps just $15,750. Worse, if she left the $25,000 invested at 7% for her 27 years to retirement, it could have grown by about $130,347.",
+    faqs: [
+      { question: "How much do I keep with a 401k early withdrawal calculator?", answer: "You keep your withdrawal minus the 10% penalty, federal income tax, and state tax. For a 40-year-old withdrawing $25,000 in the 22% bracket with 5% state tax, total cost is $9,250, leaving $15,750. The calculator above shows your exact figures." },
+      { question: "What is the penalty for withdrawing from a 401(k) early?", answer: "The penalty is a 10% additional tax on most distributions taken before age 59½. It applies on top of the regular income tax you owe. On a $25,000 withdrawal, the penalty alone is $2,500." },
+      { question: "Are there exceptions to the 10% early withdrawal penalty?", answer: "Yes. The IRS waives the 10% penalty for several situations, including separation from service at age 55 or older, total disability, and large unreimbursed medical expenses. Important: these exceptions remove the penalty but not the income tax." },
+      { question: "Will my 401(k) withholding cover my full tax bill?", answer: "Often not. Plans usually withhold 20% for federal tax by default, but your actual bill can be higher. It may also miss the 10% penalty and state tax, leaving a balance due at tax time." },
+      { question: "Is a hardship withdrawal taxed and penalized?", answer: "Usually yes. According to the IRS, hardship distributions are subject to income tax and may also face the 10% additional tax on early distributions. A hardship reason does not automatically make the withdrawal tax-free." },
+      { question: "What about withdrawing from a 401(k) after age 59½?", answer: "The 10% penalty this calculator estimates no longer applies once you turn 59½. See [how to withdraw money from your 401(k)](/guides/how-to-withdraw-from-401k/) for required minimum distribution rules, how lump-sum versus periodic withdrawals are taxed, and when it pays to wait." },
+    ],
+    sources: [
+      { label: "IRS Topic No. 558, Additional Tax on Early Distributions From Retirement Plans", url: "https://www.irs.gov/taxtopics/tc558" },
+      { label: "IRS — Retirement Topics: Hardship Distributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-hardship-distributions" },
+    ],
+    toolHeading: "What will an early 401(k) withdrawal really cost?",
+    toolSubheading: "See the penalty, taxes, and lost future growth before you cash out.",
+    preset: { mode: "early-withdrawal", withdrawalAmount: 25000, age: 40, federalTaxRatePct: 22, stateTaxRatePct: 5, yearsToRetirement: 27, annualReturnPct: 7 },
+    relatedSlugs: ["401k-calculator", "early-retirement-calculator", "retirement-savings-calculator"],
+  },
+
+  {
+    calculator: "retirement",
+    slug: "ira-early-withdrawal-calculator",
+    title: "IRA Early Withdrawal Calculator: See Your Real Cost",
+    metaDescription:
+      "Use our IRA early withdrawal calculator to see the penalty, taxes, and lost growth before you cash out. Find out exactly how much you'd actually keep.",
+    targetKeyword: "ira early withdrawal calculator",
+    estimatedVolume: 2900,
+    estimatedKD: 33,
+    h1: "IRA Early Withdrawal Calculator",
+    introText:
+      "This IRA early withdrawal calculator shows exactly how much you'll keep after taxes and penalties. If you cash out a traditional IRA before age 59½, you'll usually pay a 10% [IRS](https://www.irs.gov/) penalty plus regular income tax, unless you qualify for one of the IRA-specific exceptions below. But the real damage goes further: you'll also lose decades of compound growth on the money you withdraw. Enter your numbers in the calculator above to see the true cost.",
+    howItWorks:
+      "The calculator multiplies your withdrawal by three costs. First, the IRS adds a 10% additional tax on most traditional IRA distributions taken before age 59½. Second, the money counts as ordinary income, so you owe federal tax at your bracket. Third, most states tax it too.\n\nThe tool then projects what that same money could have earned if left invested, using your expected return and years to retirement. This lost growth never shows up on a 1099-R, but it is often the largest cost of all.\n\nIRAs carry their own set of penalty exceptions that a 401(k) does not have. You can take a penalty-free early distribution (income tax still applies) for a first-time home purchase (up to a $10,000 lifetime limit), qualified higher-education expenses, health insurance premiums while unemployed, a birth or adoption (up to $5,000), or a Substantially Equal Periodic Payment (SEPP) schedule under Section 72(t). None of these waive the income tax — only the 10% penalty. If you are weighing a 401(k) instead, compare the numbers with the [401k early withdrawal calculator](/retirement/401k-early-withdrawal-calculator/).",
+    commonMistakes: [
+      "Assuming the Rule of 55 applies to IRAs. It does not — the Rule of 55 only waives the penalty on a 401(k) or 403(b) from the employer you just left. IRAs have no equivalent age-55 exception.",
+      "Thinking an exception erases the whole tax bill. Exceptions like first-time homebuyer or higher-education expenses remove the 10% penalty, but you still owe ordinary income tax on a traditional IRA withdrawal.",
+      "Treating the $10,000 first-time homebuyer exception as unlimited. It is a $10,000 lifetime limit per person, not a per-purchase or per-year amount.",
+      "Starting a 72(t) SEPP schedule without understanding the commitment. Once you begin Substantially Equal Periodic Payments, you must continue them for five years or until age 59½, whichever is longer, or the 10% penalty applies retroactively to every prior payment.",
+      "Confusing Roth IRA rules with traditional IRA rules. You can withdraw your original Roth contributions any time without tax or penalty, but early withdrawals of Roth earnings still face the 10% penalty and possible tax unless an exception applies.",
+    ],
+    workedExample:
+      "A 35-year-old withdraws $15,000 from a traditional IRA with no exception available. She is in the 24% federal bracket and pays 4% state tax. The 10% penalty costs $1,500. Federal income tax adds $3,600, and state tax adds $600. That is $5,700 in total cost, or 38% of the withdrawal. She keeps just $9,300. Worse, if she left the $15,000 invested at 7% for her 30 years to retirement, it could have grown by roughly $99,184.",
+    faqs: [
+      { question: "How much do I keep with an IRA early withdrawal calculator?", answer: "You keep your withdrawal minus the 10% penalty, federal income tax, and state tax, unless an exception applies. For a 35-year-old withdrawing $15,000 in the 24% bracket with 4% state tax, total cost is $5,700, leaving $9,300. The calculator above shows your exact figures." },
+      { question: "What is the penalty for withdrawing from an IRA early?", answer: "The penalty is a 10% additional tax on most traditional IRA distributions taken before age 59½, on top of regular income tax. On a $15,000 withdrawal, the penalty alone is $1,500." },
+      { question: "What are the exceptions to the 10% IRA early withdrawal penalty?", answer: "The IRS waives the 10% penalty for several IRA-specific situations: a first-time home purchase (up to a $10,000 lifetime limit), qualified higher-education expenses, health insurance premiums while unemployed, birth or adoption expenses (up to $5,000), and Substantially Equal Periodic Payments under Section 72(t). Income tax on a traditional IRA still applies even when the penalty is waived." },
+      { question: "Does the Rule of 55 apply to IRA withdrawals?", answer: "No. The Rule of 55 only applies to a 401(k) or 403(b) from the employer you separate from at age 55 or later. IRAs have no comparable age-55 exception — early IRA withdrawals need one of the IRA-specific exceptions or a 72(t) SEPP schedule to avoid the 10% penalty." },
+      { question: "Are Roth IRA withdrawals penalized the same way?", answer: "Not exactly. You can withdraw your original Roth IRA contributions at any time without tax or penalty, since you already paid tax on that money. But withdrawing earnings early — before age 59½ and before the account is five years old — can still trigger the 10% penalty and income tax unless an exception applies." },
+    ],
+    sources: [
+      { label: "IRS Topic No. 557, Additional Tax on Early Distributions From Traditional and Roth IRAs", url: "https://www.irs.gov/taxtopics/tc557" },
+      { label: "IRS — Publication 590-B, Distributions from Individual Retirement Arrangements (IRAs)", url: "https://www.irs.gov/publications/p590b" },
+      { label: "IRS — Retirement Plans FAQs regarding Substantially Equal Periodic Payments (Section 72(t))", url: "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-substantially-equal-periodic-payments" },
+    ],
+    toolHeading: "What will an early IRA withdrawal really cost?",
+    toolSubheading: "See the penalty, taxes, and lost future growth before you cash out your IRA.",
+    preset: { mode: "early-withdrawal", withdrawalAmount: 15000, age: 35, federalTaxRatePct: 24, stateTaxRatePct: 4, yearsToRetirement: 30, annualReturnPct: 7 },
+    relatedSlugs: ["401k-early-withdrawal-calculator", "rmd-calculator", "retirement-savings-calculator"],
+  },
+
+  {
+    calculator: "retirement",
+    slug: "401k-calculator",
+    title: "401k Calculator: How Much You'll Have at Retirement",
+    metaDescription:
+      "See how much your 401(k) could be worth at retirement. Enter your balance, contributions, employer match, and expected return for a free projection.",
+    targetKeyword: "401k calculator",
+    estimatedVolume: 135000,
+    estimatedKD: 58,
+    h1: "401k Calculator: See How Much Your 401(k) Will Grow",
+    introText:
+      "This 401k calculator projects what your 401(k) will be worth when you retire. Enter your current balance, monthly contributions, expected return, and years until retirement. The calculator above will show your retirement savings and break down how much comes from growth versus your own deposits. Use it to see how small changes today can shape your future nest egg.",
+    howItWorks:
+      "The 401k calculator grows your current balance and monthly contributions forward to your retirement age. It assumes a fixed annual return that compounds each year. You enter your starting balance, monthly contribution (including any employer match), expected yearly return, and target retirement age.\n\nThe tool then splits your final balance into two parts: the money you put in and the investment growth on top. This split reveals the power of compounding. Real markets rise and fall, so treat the result as a planning estimate, not a guarantee. To plan beyond your workplace plan, see the [retirement savings calculator](/retirement/retirement-savings-calculator/).\n\nOne detail most 401(k) planning tools skip: your 401(k) is part of your taxable estate at death. If your projected balance plus other assets is anywhere near the 2026 federal $15M exemption (permanent under the One Big Beautiful Bill Act, P.L. 119-21) or any state estate tax threshold — Oregon starts at $1M, Massachusetts at $2M, Washington at $3M — the estate tax bill can be meaningful. The [estate tax calculator](/estate-planning/estate-tax-calculator/) shows your federal + state exposure using 2026 numbers. And critically, the beneficiary designation on the 401(k) OVERRIDES anything your will or trust says, so keep it current and consistent with your estate plan. See our [401(k) beneficiary rules guide](/guides/401k-beneficiary-rules/) for exactly what happens to the account, and to your beneficiary's tax bill, when you die.",
+    commonMistakes: [
+      "Skipping the full employer match. The match is free money and an instant return on your contribution. Always contribute enough to capture every matching dollar your employer offers.",
+      "Forgetting to include the employer match in your monthly contribution figure. The calculator expects your total monthly deposit, so add your share plus your employer's.",
+      "Setting an unrealistic return rate. A fixed 7% is a common long-term stock estimate, but higher numbers can badly overstate your balance.",
+      "Waiting too long to start. Starting at 30 instead of 40 gives your money an extra decade to compound, which often doubles the final result.",
+      "Ignoring the 2026 contribution limit. You can defer up to $24,500 in 2026, plus an $8,000 catch-up if you are age 50 or older.",
+    ],
+    workedExample:
+      "Say you are 30 years old with $20,000 already in your 401(k). You contribute $800 per month, including your employer match, and expect a 7% annual return until you retire at 65. The calculator projects $1,540,606 in savings at retirement. Your $20,000 starting balance plus $336,000 in contributions over 35 years make up the money you put in, while investment growth adds $1,184,606. Using the 4% rule, that balance could provide about $5,135 per month in your first year of retirement.",
+    faqs: [
+      { question: "What is a 401(k)?", answer: "A 401(k) is an employer-sponsored retirement account that lets you contribute part of your paycheck before it's taxed (traditional) or after it's taxed with tax-free withdrawals later (Roth), and invest those contributions for growth until retirement. Many employers match a portion of what you contribute, and the IRS sets annual limits on how much you can defer — $24,500 in 2026, plus an $8,000 catch-up if you're 50 or older. Use the calculator above to project how your own balance could grow." },
+      { question: "What does a 401k calculator do?", answer: "A 401k calculator projects how much your 401(k) will grow by retirement. You enter your balance, monthly contributions, expected return, and retirement age. It then estimates your final savings and shows how much comes from growth versus your own deposits." },
+      { question: "How much can I contribute to a 401(k) in 2026?", answer: "You can contribute up to $24,500 to your 401(k) in 2026. If you are age 50 or older, you can add an $8,000 catch-up contribution, for a total of $32,500. These limits apply to your own deferrals, not employer matching." },
+      { question: "Does the calculator include my employer match?", answer: "Yes, if you include the match in your monthly contribution. Enter your total monthly deposit, combining your own contribution and your employer's match. The employer match is essentially free money, so contribute enough to earn the full amount offered." },
+      { question: "How much does an employer match add over a career?", answer: "The impact is substantial. On a $50,000 salary with a 3% employer match, your employer contributes $1,500 per year. At a 7% annual return over 30 years, that $1,500 annual match alone grows to approximately $141,700 — without you contributing a single extra dollar. The match is also an instant 100% return on the dollars that trigger it, which is why always contributing enough to capture the full match is the highest-priority step in retirement planning. To model the combined effect of your contributions and the match, include both amounts in the monthly contribution field above, then compare the full projection in the [retirement savings calculator](/retirement/retirement-savings-calculator/)." },
+      { question: "What return rate should I use?", answer: "Many planners use a fixed 7% annual return as a long-term stock market estimate. The calculator assumes this rate stays the same every year. Real returns vary, so treat the projection as an estimate and try a few different rates." },
+      { question: "What if I withdraw from my 401(k) early?", answer: "Withdrawing before age 59½ usually costs a 10% penalty plus income tax, and it erases future growth. Estimate the damage first with our [401k early withdrawal calculator](/retirement/401k-early-withdrawal-calculator/) before cashing out." },
+      { question: "Can I use this calculator if I'm self-employed?", answer: "You can use it to project savings growth, but a workplace 401(k)'s $24,500 employee deferral limit doesn't reflect a self-employed saver's options. A solo 401(k) lets you contribute as both employee and employer, and a SEP-IRA has its own separate limit — see our [SEP-IRA vs. solo 401(k) comparison](/compare/sep-ira-vs-solo-401k/) for which fits your situation." },
+    ],
+    sources: [
+      { label: "IRS — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500", url: "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500" },
+      { label: "IRS — Retirement Topics: 401(k) and Profit-Sharing Plan Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits" },
+      { label: "IRS — Retirement Topics: Catch-up Contributions", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-catch-up-contributions" },
+    ],
+    toolHeading: "Project your 401(k) at retirement",
+    toolSubheading: "See how contributions plus the employer match compound over your career.",
+    preset: { mode: "projection", currentAge: 30, retirementAge: 65, currentSavings: 20000, monthlyContribution: 800, annualReturnPct: 7 },
+    relatedSlugs: ["retirement-savings-calculator", "retirement-income-calculator", "military-retirement-calculator"],
+  },
+
+  {
+    calculator: "retirement",
+    slug: "retirement-savings-calculator",
+    title: "Retirement Savings Calculator: Saving Enough?",
+    metaDescription:
+      "Use our retirement savings calculator to project how much your nest egg will grow and estimate your future monthly income from those savings.",
+    targetKeyword: "retirement savings calculator",
+    estimatedVolume: 14000,
+    estimatedKD: 50,
+    h1: "Retirement Savings Calculator",
+    introText:
+      "This retirement savings calculator shows how much your nest egg could grow by the time you retire. Enter your age, current savings, monthly contribution, and expected return. The calculator will project your balance and estimate your monthly income for the first year, helping you answer one question: Am I saving enough?",
+    howItWorks:
+      "The calculator above grows your current savings and future contributions at a fixed annual return until your chosen retirement age. It then applies the 4% rule to estimate a safe yearly withdrawal, which it shows as monthly income.\n\nTwo numbers here are assumptions, not promises. The return is a single fixed rate, so real markets will vary year to year. The 4% safe-withdrawal rate is a common planning guideline, not a guarantee. Treat the result as a planning estimate and update it as your savings change. To model a workplace plan specifically, use the [401k calculator](/retirement/401k-calculator/). Want to see the underlying formulas yourself? Our [retirement calculator spreadsheet template](/guides/retirement-calculator-spreadsheet-template/) rebuilds this same compound-growth math cell by cell in Google Sheets.",
+    commonMistakes: [
+      "Assuming the fixed return is guaranteed. Real returns swing each year, so treat the projection as an estimate, not a locked-in number.",
+      "Ignoring sequence-of-returns risk. Poor market years early in retirement can shrink a portfolio faster than the 4% rule assumes.",
+      "Waiting to start. Delaying contributions costs you compounding, which does most of the heavy lifting over decades.",
+      "Forgetting inflation. Future dollars buy less, so a projected balance is worth less than it looks today.",
+      "Counting on the 4% rule as a promise. It is a planning guideline, and your safe withdrawal may be higher or lower.",
+    ],
+    workedExample:
+      "Say you are 40, plan to retire at 67, and have $100,000 saved today. You add $1,000 a month and assume a 7% annual return. The calculator projects $1,515,193 at retirement. Of that, your $100,000 starting balance and $324,000 in contributions over 27 years are the money you put in, while investment growth adds $1,091,193. Notice the gap: growth dwarfs the money you put in, thanks to compounding. At the 4% rule, that balance supports about $5,051 a month in first-year retirement income.",
+    faqs: [
+      { question: "How does this retirement savings calculator work?", answer: "This retirement savings calculator grows your current balance and monthly contributions at a fixed annual return until your retirement age. It then applies the 4% rule to estimate your first-year monthly income. The return and withdrawal rate are assumptions, so the result is a planning estimate." },
+      { question: "What is the 4% rule?", answer: "The 4% rule is a guideline that you can withdraw about 4% of your savings in your first year of retirement. The calculator uses it to estimate monthly income. It is a planning assumption, not a guarantee, because market returns and spending vary." },
+      { question: "Why is investment growth larger than what I contribute?", answer: "Compounding does the heavy lifting over long periods. In the example above, a $100,000 starting balance plus $324,000 in contributions grows into $1,515,193, with $1,091,193 of that coming from growth alone. The longer your money stays invested, the more this gap widens." },
+      { question: "When must I start withdrawing from these accounts?", answer: "Age 73 for traditional IRAs and 401(k)s, under the IRS required minimum distribution rules. Roth IRAs are exempt for the owner. Estimate your first required withdrawal with our [RMD calculator](/retirement/rmd-calculator/)." },
+      { question: "What if real returns are lower than my estimate?", answer: "Then your actual balance will be smaller than the projection. The calculator uses one fixed return, but real markets rise and fall. Poor returns early in retirement, called sequence-of-returns risk, can hurt most. Revisit your plan and contributions often." },
+      { question: "Does this retirement calculator account for inflation?", answer: "The calculator uses a nominal return rate that you supply, so it does not automatically strip out inflation. To think in today's dollars, subtract the inflation rate from your expected return. For example, if you expect a 7% nominal return and 3% inflation, enter 4% as your rate. The calculator will then show your projected balance in today's purchasing power. Alternatively, use the nominal rate and remember the final balance will be worth less in real terms — the Federal Reserve targets 2% annual inflation as a long-run benchmark." },
+      { question: "Can this calculator handle an employer match, a one-time contribution, or multiple accounts?", answer: "Yes. Model an employer match by adding it directly into the monthly contribution field, since the calculator treats your monthly contribution as one combined deposit rather than separating your dollars from your employer's. For a one-time lump-sum contribution — a bonus, an inheritance, a rollover — add it to the current savings field rather than spreading it across future months, since the calculator compounds your starting balance from day one. If you're combining multiple accounts, such as a 401(k), an IRA, and a taxable brokerage account, add all their current balances together for 'current savings' and all their combined monthly contributions together for the most accurate total projection." },
+      { question: "Does it matter if my contributions are Roth or traditional?", answer: "Not for the balance itself — a dollar contributed compounds the same way whether it sits in a Roth or a traditional account, since both grow at the same assumed return. What differs is when you pay tax: traditional contributions go in pre-tax and are taxed as ordinary income on withdrawal, while Roth contributions are taxed now and grow tax-free, including on qualified withdrawals. That tax-timing difference can change your real spendable income in retirement even with an identical projected balance. See our [Roth IRA vs. Roth 401(k) comparison](/compare/roth-ira-vs-roth-401k/) for how the two Roth account types differ from each other." },
+      { question: "How much do I need to save for retirement?", answer: "A widely cited benchmark from [Fidelity Investments](https://www.fidelity.com/viewpoints/retirement/how-much-do-i-need-to-retire) is to have saved 1x your annual salary by age 30, 3x by 40, 6x by 50, 8x by 60, and 10x by age 67 — aimed at supporting your pre-retirement lifestyle if you save consistently and stay invested in a mix of stocks and bonds. These are aspirational milestones, not a guarantee, and your actual number depends on your planned retirement age, desired lifestyle, and other income like Social Security or a pension. Run your own current savings, contributions, and target age through the calculator above to see whether you're tracking ahead of or behind that kind of benchmark." },
+      { question: "Why do different retirement calculators give different answers?", answer: "Three assumptions drive almost every gap between two calculators: the annual return rate, the inflation rate, and the withdrawal or spending rate in retirement. A tool using a 7% return will always project a bigger balance than one using 5%, even on identical inputs, and a tool that quietly assumes 3% inflation shows smaller real spending power than one that ignores inflation entirely. Before comparing two results, check which assumptions each tool used. Our calculator above shows you exactly which return rate you entered, so you can trace any difference back to a specific number instead of guessing." },
+    ],
+    sources: [
+      { label: "U.S. Department of Labor — Top 10 Ways to Prepare for Retirement", url: "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/top-10-ways-to-prepare-for-retirement" },
+      { label: "IRS — Retirement Topics: 401(k) and Profit-Sharing Plan Contribution Limits", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits" },
+      { label: "Federal Reserve — Why does the Federal Reserve aim for inflation of 2 percent?", url: "https://www.federalreserve.gov/faqs/economy_14400.htm" },
+    ],
+    toolHeading: "Are you saving enough for retirement?",
+    toolSubheading: "Project your nest egg and your first-year monthly income.",
+    preset: { mode: "projection", currentAge: 40, retirementAge: 67, currentSavings: 100000, monthlyContribution: 1000, annualReturnPct: 7 },
+    relatedSlugs: ["401k-calculator", "retirement-income-calculator", "social-security-retirement-calculator"],
+  },
+
+  {
+    calculator: "retirement",
+    slug: "rmd-calculator",
+    title: "RMD Calculator: Required Minimum Distribution 2026",
+    metaDescription:
+      "Free RMD calculator finds your required minimum distribution. See how much you must withdraw from your IRA or 401(k) at age 73 and avoid the penalty.",
+    targetKeyword: "RMD calculator",
+    estimatedVolume: 33000,
+    estimatedKD: 47,
+    h1: "RMD Calculator: Find Your Required Minimum Distribution",
+    introText:
+      "This RMD calculator shows how much you must withdraw from your retirement account this year. A required minimum distribution (RMD) is the amount the IRS requires you to take from traditional IRAs and 401(k)s once you reach age 73. Just enter your prior year-end balance and age in the calculator above to get your number in seconds.",
+    howItWorks:
+      "The RMD calculator divides your account balance by an IRS life expectancy factor. It uses your balance as of December 31 last year and your age this year. The IRS Uniform Lifetime Table sets the distribution period for your age. At age 73, that period is 26.5.\n\nSo the math is simple: balance divided by the distribution period equals your RMD. A larger balance or a younger age raises the amount you must withdraw. The calculator above handles the table lookup for you.",
+    commonMistakes: [
+      "Missing the deadline. Most RMDs are due by December 31. Your very first RMD can wait until April 1 of the year after you turn 73, but taking two that year raises your taxable income.",
+      "Ignoring the steep penalty. A missed RMD triggers a 25% excise tax on the amount you should have withdrawn. It drops to 10% only if you correct the shortfall within two years.",
+      "Using the wrong balance. The RMD is based on your prior year-end balance, not your current one. Use the December 31 value from last year.",
+      "Combining 401(k) RMDs across plans. You can total your IRA RMDs and take them from one IRA, but each 401(k) RMD must come from that specific plan.",
+      "Forgetting Roth rules. Roth IRAs have no RMDs for the original owner, so do not withdraw from one to meet an IRA requirement.",
+    ],
+    workedExample:
+      "Say you are 73 with $500,000 in a traditional IRA as of December 31 last year. The IRS distribution period at age 73 is 26.5. Divide $500,000 by 26.5 and your RMD is $18,868 for the year. That works out to about $1,572 a month, or roughly 3.77% of your balance. You must withdraw at least that much by December 31 to avoid the penalty.",
+    faqs: [
+      { question: "How does the RMD calculator work?", answer: "The RMD calculator divides your prior year-end account balance by an IRS life expectancy factor for your age. Enter your December 31 balance and your age, and it returns the minimum you must withdraw this year. At age 73 the IRS distribution period is 26.5, so a $500,000 balance produces an RMD of $18,868." },
+      { question: "At what age do RMDs start?", answer: "RMDs start at age 73 under the SECURE Act 2.0. You must take your first distribution by April 1 of the year after you turn 73. Every RMD after that is due by December 31." },
+      { question: "What happens if I miss my RMD?", answer: "Missing an RMD triggers a 25% excise tax on the amount you failed to withdraw. The penalty falls to 10% if you correct the shortfall promptly, generally within two years. You report and pay this tax on IRS Form 5329." },
+      { question: "Do Roth IRAs have RMDs?", answer: "Roth IRAs have no RMDs for the original owner during their lifetime. You can leave the money invested as long as you like. This is a key reason some savers convert traditional balances to Roth accounts before age 73." },
+      { question: "Can I combine RMDs from multiple accounts?", answer: "You can total the RMDs from all your traditional IRAs and take the full amount from just one IRA. This does not work for 401(k) plans. Each 401(k) RMD must be withdrawn separately from that specific plan." },
+    ],
+    sources: [
+      { label: "IRS — Retirement Plan and IRA Required Minimum Distributions FAQs", url: "https://www.irs.gov/retirement-plans/retirement-plan-and-ira-required-minimum-distributions-faqs" },
+      { label: "IRS — Publication 590-B, Distributions from IRAs (Uniform Lifetime Table)", url: "https://www.irs.gov/publications/p590b" },
+      { label: "IRS — Retirement Topics: Required Minimum Distributions (RMDs)", url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds" },
+    ],
+    toolHeading: "Calculate this year's RMD",
+    toolSubheading: "Enter your prior year-end balance and age to find your required withdrawal.",
+    preset: { mode: "rmd", accountBalance: 500000, age: 73 },
+    relatedSlugs: ["401k-calculator", "retirement-income-calculator", "pension-calculator"],
+  },
+
+  {
+    calculator: "retirement",
+    updated: "2026-09-09",
+    slug: "fire-calculator",
+    title: "FIRE Calculator: Find Your FIRE Number",
+    metaDescription:
+      "Use our FIRE calculator to find your Financial Independence number, project your early retirement date, and compare lean FIRE, FIRE, and fat FIRE targets.",
+    targetKeyword: "FIRE calculator",
+    estimatedVolume: 9900,
+    estimatedKD: 38,
+    h1: "FIRE Calculator: Find Your Financial Independence Number",
+    introText:
+      "Your FIRE number is 25 times your annual expenses. It's the lump sum that, when invested at a 4% withdrawal rate, can fund your lifestyle indefinitely without you ever having to work again. This math is the foundation of the FIRE (Financial Independence, Retire Early) movement and comes from the 1998 Trinity Study, which tested withdrawal rates across historical 30-year market periods. Enter your numbers above to see when your portfolio could cross that threshold.",
+    howItWorks:
+      "The calculator grows your current savings and monthly contributions at your expected annual return until the projected balance equals or exceeds 25 times your annual expenses — your FIRE number. It tells you how many years remain at your current savings rate, and what your balance will be at each target retirement age.\n\nThree FIRE variants use different multiples: lean FIRE targets 20× expenses (a frugal lifestyle, roughly a 5% withdrawal rate); standard FIRE targets 25× (4% rule); and fat FIRE targets 33× or more for a comfortable cushion. The more years your money must last, the lower your safe withdrawal rate should be. For a general retirement projection without an early-exit target, see the [retirement savings calculator](/retirement/retirement-savings-calculator/).\n\nNot quite ready to stop working but wondering if you could stop contributing? That's a different question — see our [Coast FIRE calculator](/coast-fire/) to check whether your current savings alone, with zero more contributions, will still compound into this FIRE number by your target retirement age. [Coast FIRE vs. full FIRE](/compare/coast-fire-vs-fire/) runs one saver under both targets and explains why lean, standard and fat are spending targets while coast is a milestone on the way to whichever one you pick.",
+    commonMistakes: [
+      "Using current spending instead of retirement spending. Your FIRE number is based on what you plan to spend in retirement, not necessarily what you spend now — they can differ significantly.",
+      "Ignoring healthcare costs before Medicare eligibility at 65. Private health insurance is often the largest expense for early retirees and can dwarf other budget items.",
+      "Assuming the 4% rule is safe for a 50-year retirement. The Trinity Study modeled 30-year horizons. A 40- or 50-year retirement may need a lower rate, closer to 3.5%, to remain reliable.",
+      "Forgetting taxes on withdrawals. Traditional 401(k) and IRA distributions are taxed as ordinary income, so your after-tax spending power is less than the gross withdrawal.",
+      "Counting on a 100% stock return forever. Sequence-of-returns risk — a market crash in your first retirement years — can permanently damage a portfolio even if long-run returns are good.",
+    ],
+    workedExample:
+      "Suppose you spend $60,000 per year and want to retire at 45. Your FIRE number is $60,000 × 25 = $1,500,000. You are 30 with $100,000 saved and contribute $2,000 per month. At a 7% annual return, the calculator projects your balance reaches $1,500,000 in roughly 17 years — right at age 47. Bumping contributions by $500 per month closes that gap by about two years. The calculator lets you test these levers instantly.",
+    faqs: [
+      {
+        question: "What is a FIRE number?",
+        answer:
+          "Your FIRE number is 25 times your expected annual expenses in retirement. It represents the portfolio size that, with a 4% annual withdrawal, can fund your lifestyle indefinitely based on historical market data from the Trinity Study. For example, $50,000 in annual spending requires a $1,250,000 FIRE number.",
+      },
+      {
+        question: "Is the 4% rule safe for early retirement at 40 or 45?",
+        answer:
+          "It may not be. The original Trinity Study modeled 30-year retirement periods; retiring at 40 could mean a 50-year horizon. Many FIRE planners use a more conservative 3% to 3.5% withdrawal rate — equivalent to 29× to 33× annual expenses — for very early retirements to reduce failure risk.",
+      },
+      {
+        question: "What is the difference between lean FIRE, FIRE, and fat FIRE?",
+        answer:
+          "Lean FIRE targets roughly 20 times annual expenses and assumes a frugal lifestyle with minimal discretionary spending. Standard FIRE targets 25 times expenses. Fat FIRE targets 33 times or more, providing a large cushion for higher spending or market downturns. Each simply reflects a different withdrawal rate assumption. On $50,000 in annual spending, that's roughly a $1,000,000 lean FIRE number, a $1,250,000 standard FIRE number, and a $1,650,000+ fat FIRE number — the same income, three very different portfolio targets.",
+      },
+      {
+        question: "Should I plan for lean FIRE or fat FIRE?",
+        answer:
+          "Pick lean FIRE if you've already tested a frugal budget for a year or more and know you can sustain it, since a 20× multiple leaves little room for lifestyle creep, medical surprises, or a bad market early in retirement. Pick fat FIRE if you want a cushion for those risks, plan to travel or spend more freely, or you're retiring young enough that a 40- to 50-year horizon makes a lower withdrawal rate the safer bet. Most people land at standard FIRE (25×) as the realistic middle ground, then adjust up toward fat FIRE the longer their expected retirement runs.",
+      },
+      {
+        question: "How do I access retirement savings before age 59½ without paying the 10% penalty?",
+        answer:
+          "Several legal paths exist. The IRS Rule of 72(t) — also called Substantially Equal Periodic Payments (SEPP) under IRS Section 72(t) — lets you take penalty-free IRA withdrawals at any age if you commit to a fixed schedule for five years or until age 59½, whichever is later. A Roth IRA conversion ladder is another common FIRE strategy. See the [early retirement calculator](/retirement/early-retirement-calculator/) for more detail.",
+      },
+      {
+        question: "Should I include Social Security in my FIRE number calculation?",
+        answer:
+          "Yes, but carefully. If you retire at 40, Social Security (SSA) benefits may be decades away and your benefit will be lower because of fewer earning years on record. Use SSA's online estimator for your projected benefit, then treat it as a future income offset that reduces the portfolio withdrawals you need after age 62 or 67.",
+      },
+      {
+        question: "Is the 4% rule still valid in 2026?",
+        answer:
+          "It depends on whose research you ask, and neither side says the original number is wrong outright. William Bengen, who created the 4% rule from historical U.S. market returns, has since revised his own view upward — in his 2025 book [A Richer Retirement](https://www.amazon.com/Richer-Retirement-Supercharging-Spend-Enjoy/dp/1394343175), he argues a 'SAFEMAX' of roughly 4.7% to 5.5% is defensible for many of today's retirees. Morningstar's research points the other way: its [State of Retirement Income](https://www.morningstar.com/retirement/morningstars-retirement-income-research-finding-your-safe-withdrawal-rate) report puts a forward-looking 2026 safe withdrawal rate at 3.9% for a 30-year, 90%-confidence retirement with a 30-50% stock allocation — up slightly from 3.7% a year earlier, but still under 4%. The gap comes down to methodology: Bengen leans on historical returns, Morningstar models forward-looking capital-market assumptions. In practice, 4% remains a reasonable starting point for this calculator's projections, but treat it as an adjustable planning assumption, not a fixed law — your own safe rate depends on your asset mix, how flexible your spending can be in a down market, and how long your money needs to last.",
+      },
+      {
+        question: "What is the 'retirement red zone'?",
+        answer:
+          "The retirement red zone is the roughly five years before and five years after your retirement date — the window when sequence-of-returns risk does the most damage, because your portfolio is at or near its largest size right as you begin withdrawing from it. Prudential coined the term for this period, though the underlying math applies regardless of who names it. A market downturn hitting during the red zone forces you to sell more shares at depressed prices to fund the same withdrawal, permanently shrinking the portfolio in a way an identical downturn 15 years into retirement would not. Holding one to two years of spending in cash or short-term bonds, or trimming withdrawals in a down year, are the two most common ways retirees manage red-zone risk.",
+      },
+      {
+        question: "What is the rule of 70 for retirement?",
+        answer:
+          "The rule of 70 estimates how many years it takes inflation to cut your money's purchasing power in half: divide 70 by your expected annual inflation rate. At a typical 3% long-run inflation assumption, that's about 23 years — meaning a fixed income or a static spending target loses roughly half its real value over a typical 25-to-30-year retirement. It's the same style of shortcut as the more familiar rule of 72 used for investment doubling times, just applied to the opposite problem of money losing value rather than growing it. The takeaway for FIRE planning: recheck your FIRE number periodically and adjust your annual expenses for inflation, rather than treating either as fixed forever.",
+      },
+      {
+        question: "What does 'die with zero' mean, and how does it compare to a FIRE number?",
+        answer:
+          "'Die with zero' is a decumulation philosophy from Bill Perkins's book [Die With Zero](https://www.amazon.com/Die-Zero-Getting-Your-Money/dp/0358567092), built on the idea that money left unspent past the point where it could have funded meaningful life experiences is wasted potential, not prudence. Instead of growing a nest egg indefinitely, the framework argues for identifying your 'peak' net worth and then intentionally spending it down — including on experiences while you're still healthy enough to enjoy them — so little is left unspent at death. It's a philosophical counterpoint to FIRE's accumulation focus, not a competing formula: your FIRE number still tells you when you can stop earning, while die-with-zero is a lens for deciding how aggressively to spend that number down afterward. The two ideas can be combined — reach your FIRE number using the calculator above, then decide how much of a lifetime cushion you actually want left unspent.",
+      },
+      {
+        question: "Can I reach FIRE with bitcoin or crypto gains?",
+        answer:
+          "It's a riskier path to the same FIRE number this calculator projects. Bitcoin's price swings far more than a diversified stock-and-bond portfolio, and it pays no yield on its own, so a crypto-heavy FIRE plan is more exposed to sequence-of-returns risk right as you stop working. See our guide on [bitcoin retirement calculator considerations](/guides/bitcoin-retirement-calculator-considerations/) before you count crypto toward your FIRE number.",
+      },
+    ],
+    sources: [
+      {
+        label: "Cooley, Hubbard & Walz — 'Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable' (Trinity Study), AAII Journal, 1998",
+        url: "https://www.aaii.com/journal/article/retirement-savings-choosing-a-withdrawal-rate-that-is-sustainable",
+      },
+      {
+        label: "IRS — Section 72(t): Substantially Equal Periodic Payments",
+        url: "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-substantially-equal-periodic-payments",
+      },
+      {
+        label: "Morningstar — Finding Your Safe Withdrawal Rate (State of Retirement Income)",
+        url: "https://www.morningstar.com/retirement/morningstars-retirement-income-research-finding-your-safe-withdrawal-rate",
+      },
+    ],
+    toolHeading: "When will you hit your FIRE number?",
+    toolSubheading: "Project how long until your savings fund an early retirement at your spending level.",
+    preset: { mode: "projection", currentAge: 30, retirementAge: 45, currentSavings: 100000, monthlyContribution: 2000, annualReturnPct: 7 },
+    relatedSlugs: ["early-retirement-calculator", "retirement-savings-calculator", "retirement-income-calculator"],
+  },
+
+  {
+    calculator: "retirement",
+    slug: "couples-retirement-calculator",
+    title: "Couples Retirement Calculator: Retirement Projection",
+    metaDescription:
+      "See your combined retirement savings projection as a couple, plus how spousal and survivor Social Security benefits can raise your household income.",
+    targetKeyword: "couples retirement calculator",
+    estimatedVolume: 2400,
+    estimatedKD: 32,
+    h1: "Couples Retirement Calculator: Plan Your Retirement Together",
+    introText:
+      "Couples who plan for retirement together typically build more wealth and retire more securely than those who plan separately. That's because coordinating [Social Security (SSA)](https://www.ssa.gov/benefits/retirement/planner/applying7.html) claiming ages, contribution timing, and survivor benefits can add tens of thousands of dollars in lifetime income. Enter your combined savings and contributions above to project your shared nest egg. Then read below to learn how to layer in spousal Social Security benefits. If you're unsure whether your current savings are on track, see [how much a household should have saved by age 50 or 60](/guides/how-much-to-save-for-retirement-average-earner/) for benchmark figures.",
+    howItWorks:
+      "The calculator projects your combined savings — enter both partners' balances and contributions as a single total — at your expected return until the earlier partner's retirement age. Use the notes below to add your Social Security estimate on top of the projected balance.\n\nWhere couples differ from single filers: Social Security offers a spousal benefit equal to up to 50% of the higher earner's full retirement age (FRA) benefit, and survivor benefits that let the surviving spouse keep the larger of the two benefits for life. Coordinating these claiming decisions is one of the highest-value retirement planning levers available. For a breakdown of your workplace accounts, see the [401k calculator](/retirement/401k-calculator/).",
+    commonMistakes: [
+      "Claiming Social Security at the same age. Often the lower-earning spouse should claim earlier and the higher earner should delay to 70, maximizing the survivor benefit that will carry forward for life.",
+      "Forgetting survivor benefits. When one spouse dies, the survivor keeps only the larger of the two Social Security checks — not both. If both partners claimed early at 62, the surviving spouse is left with a permanently reduced benefit. This applies even if the higher earner dies before ever claiming: the surviving spouse can generally step up to the deceased spouse's full earned benefit amount (or keep their own, whichever is larger) as a survivor benefit.",
+      "Treating each partner's account separately. Enter combined savings for an accurate projection of the total household portfolio; when one spouse dies, what happens to their 401(k) or IRA depends on how the surviving spouse chooses to receive it, so check our [401(k) beneficiary rules guide](/guides/401k-beneficiary-rules/) for how a spousal rollover differs from an inherited account.",
+      "Overlooking the spousal benefit floor. A spouse with little or no work history is entitled to up to 50% of the higher earner's FRA benefit, regardless of their own earnings record, per SSA rules. If either spouse also draws a pension from work not covered by Social Security, see our [pension calculator](/retirement/pension-calculator/) for how a non-covered pension factors into the household's Social Security picture.",
+      "Ignoring the age gap. If one partner is 5 or more years younger, the retirement runway is longer and the projection should extend further, requiring a higher savings target.",
+    ],
+    workedExample:
+      "Partner A earns more and has a projected Social Security FRA benefit of $2,400/month. Partner B has a much smaller earnings record with a projected benefit of $800/month — but the spousal benefit floor gives Partner B 50% of Partner A's FRA benefit ($1,200/month) if that is larger. If Partner A delays to age 70, their own benefit grows to about $2,976/month (8% annual Delayed Retirement Credits × 3 years). If Partner A dies first, the surviving Partner B inherits that $2,976 check for life — more than triple Partner B's own $800 benefit. This is why delaying the higher earner often wins on a household lifetime basis.",
+    faqs: [
+      {
+        question: "How does spousal Social Security benefit work?",
+        answer:
+          "A spouse is entitled to up to 50% of the other spouse's full retirement age (FRA) benefit if that amount is larger than their own earned benefit, according to the Social Security Administration. The spousal benefit does not grow if the higher earner delays past FRA — only the earner's own benefit grows with delayed credits.",
+      },
+      {
+        question: "Should both spouses retire at the same age?",
+        answer:
+          "Not necessarily. The optimal plan often has the higher earner work longer to delay Social Security to age 70, while the lower earner retires earlier and claims their own benefit sooner. This coordination maximizes the survivor benefit — the income stream that continues for whichever partner lives longer.",
+      },
+      {
+        question: "What is the break-even age for delaying Social Security?",
+        answer:
+          "For most individuals, the break-even age for claiming at 70 versus 67 (FRA for those born 1960 or later) is roughly age 81. If either partner expects to live past 81, delaying the higher earner's claim to 70 usually generates more total lifetime household income, and it permanently raises the survivor benefit.",
+      },
+      {
+        question: "How should a couple enter data into this calculator?",
+        answer:
+          "Enter the combined total of both partners' current retirement savings in the 'current savings' field. Do the same for monthly contributions — add both partners' amounts together. The projection then shows the household total, which you can compare against a household spending target.",
+      },
+      {
+        question: "Does this calculator include Social Security income?",
+        answer:
+          "Not directly. The calculator projects portfolio growth; it does not fetch your SSA record. Estimate your Social Security benefit at ssa.gov using the SSA's Retirement Estimator, then add that monthly amount to the portfolio withdrawal your balance can support. See the [Social Security retirement calculator](/retirement/social-security-retirement-calculator/) for more guidance. Combined Social Security benefits can also be partly taxable for a married couple once your household income crosses IRS thresholds; see our [guide to Social Security taxation](/guides/is-social-security-taxable/) for the current numbers.",
+      },
+      {
+        question: "What is the best retirement calculator for married couples?",
+        answer:
+          "The best retirement calculator for a married couple is one that projects your combined household savings and also accounts for spousal and survivor Social Security rules — which is exactly what this joint couples retirement calculator and the guidance below are built to do. Enter both partners' total savings and monthly contributions as one combined figure in the calculator above for your joint household projection, then use the spousal-benefit and survivor-benefit notes below to layer in Social Security, since coordinating claiming ages between spouses is often worth more to a married couple's lifetime income than any single portfolio adjustment.",
+      },
+      {
+        question: "Does this calculator include pension income?",
+        answer:
+          "Not directly — like Social Security, the calculator projects portfolio savings and doesn't model a defined-benefit pension. If either partner expects a pension, estimate its monthly payout from your plan administrator's statement and add that figure on top of what your projected household savings can support in withdrawals.",
+      },
+      {
+        question: "What if one spouse retires before the other?",
+        answer:
+          "The calculator projects to the earlier partner's retirement date, since that's when their contributions stop. The working spouse's extra contributions and salary after that date aren't included, so add those separately or re-run the projection once both partners have actually retired for the most accurate total household number. Staggered retirement can also open a health-coverage gap: our [early retirement calculator guide](/retirement/early-retirement-calculator/) covers staying on a still-working spouse's employer health plan, and our [guide to retiring at 67](/guides/how-to-retire-at-67/) covers the Medicare enrollment timing gap when spouses aren't the same age.",
+      },
+      {
+        question: "Do we have to be legally married to claim a spousal Social Security benefit?",
+        answer:
+          "Yes. Social Security's spousal and survivor benefits require a legal marriage recognized by the Social Security Administration (SSA), including marriages that meet a state's common-law marriage rules; an unmarried partnership doesn't qualify no matter how long you've been together. Check your state's common-law marriage rules and SSA's own marital-status guidance at ssa.gov if you're unsure whether your relationship counts.",
+      },
+      {
+        question: "Can I claim Social Security on my ex-spouse's record if we're divorced?",
+        answer:
+          "Yes, if the marriage lasted at least 10 years and you're currently unmarried, you can claim a divorced-spouse benefit worth up to 50% of your ex's full retirement age (FRA) benefit, the same 50% floor married spouses get. Claiming on an ex's record doesn't reduce their own benefit or notify them, and a remarriage on their end doesn't block your claim either. Confirm your exact eligibility and amount with the SSA before you file.",
+      },
+      {
+        question: "Does working reduce a survivor benefit before full retirement age?",
+        answer:
+          "Yes. A surviving spouse collecting a survivor benefit before their own full retirement age is subject to the same Social Security earnings test as a retirement-benefit claimant, which can withhold part or all of the check depending on income. See our [Social Security survivor benefits and the earnings limit](/guides/social-security-survivor-benefits-and-working/) guide for the current-year limits and a worked example.",
+      },
+      {
+        question: "Can a stay-at-home or lower-earning spouse contribute to an IRA (spousal IRA)?",
+        answer:
+          "Yes. A spousal IRA lets a non-earning or lower-earning spouse contribute based on the working spouse's earned income, as long as the couple files a joint tax return. The contribution is still subject to the same annual IRA limit as anyone else — it just lets a household with one income fund two IRAs instead of one.",
+      },
+      {
+        question: "How does divorce affect our 401(k) or IRA — do we have to split retirement accounts?",
+        answer:
+          "Dividing a 401(k) in divorce typically requires a Qualified Domestic Relations Order (QDRO), a separate court order that lets the plan pay a portion directly to the ex-spouse without triggering an early-withdrawal penalty to the account owner. IRAs work differently: they're divided through a transfer incident to divorce specified in the divorce decree, which doesn't require a QDRO.",
+      },
+      {
+        question: "Can I switch from my own Social Security benefit to a spousal benefit later, or vice versa?",
+        answer:
+          "Generally, no — since a 2015 rule change, most people can't freely switch between their own benefit and a spousal benefit at will. When you file, you're typically deemed to be filing for both at once and simply receive whichever is higher. A narrow exception still exists for people born before January 2, 1954, who reached certain ages under the older rules; check with the SSA directly to see if you qualify.",
+      },
+      {
+        question: "Should we combine our retirement accounts as a couple, or can we have a joint IRA?",
+        answer:
+          "No, retirement accounts stay individually owned. IRAs and 401(k)s cannot be merged into one joint account, even for a married couple filing jointly, because each account is tied to one person's Social Security number. Entering a combined total in the calculator above is only a shortcut for projecting your household's total savings. Behind that number, each spouse still has a separate IRA and 401(k), and each account follows that owner's own contribution limits, beneficiary designations, and required minimum distribution rules.",
+      },
+      {
+        question: "Is Social Security going to run out before we retire?",
+        answer:
+          "No, Social Security is not projected to run out entirely. The Social Security trust fund is projected to be able to pay full scheduled benefits only through a specific future year that the Social Security Administration updates annually. After that year, if Congress makes no changes, ongoing payroll tax revenue is still projected to cover most of the scheduled benefit amount. For the current projected year and payable percentage, see the [SSA Trustees Report](https://www.ssa.gov/oact/TR/) directly, since those figures shift with each year's release. Coordinating your own claiming ages, as covered above, matters for your household regardless of how that debate plays out.",
+      },
+    ],
+    sources: [
+      {
+        label: "SSA — Benefits Planner: Retirement — Spousal Benefits",
+        url: "https://www.ssa.gov/benefits/retirement/planner/applying7.html",
+      },
+      {
+        label: "SSA — Benefits Planner: Retirement — Delayed Retirement Credits",
+        url: "https://www.ssa.gov/benefits/retirement/planner/delayret.html",
+      },
+    ],
+    toolHeading: "Project your combined retirement nest egg",
+    toolSubheading: "Enter both partners' total savings and contributions to see your household balance at retirement.",
+    preset: { mode: "projection", currentAge: 38, retirementAge: 65, currentSavings: 180000, monthlyContribution: 3000, annualReturnPct: 7 },
+    relatedSlugs: ["retirement-savings-calculator", "social-security-retirement-calculator", "401k-calculator"],
+  },
+
+  {
+    calculator: "retirement",
+    slug: "retirement-income-calculator",
+    updated: "2026-08-30",
+    title: "Retirement Income Calculator: How Long Savings Last",
+    metaDescription:
+      "Our retirement income calculator shows how long your savings will last in retirement, models withdrawal rates, and flags sequence-of-returns risk.",
+    targetKeyword: "retirement income calculator",
+    estimatedVolume: 6600,
+    estimatedKD: 44,
+    h1: "Retirement Income Calculator: How Long Will Your Savings Last?",
+    introText:
+      "A retirement income calculator answers a key decumulation question: Given a starting balance, an annual withdrawal, and an expected return, how many years will the money last? It's the mirror image of saving. Instead of building a nest egg, you're drawing it down, and the math is more fragile than most people expect.",
+    howItWorks:
+      "The calculator projects how long your savings last by applying your annual withdrawal each year and growing the remaining balance at your expected return. When the balance hits zero, the money is gone. A higher return or a lower withdrawal extends the runway; a poor early sequence of returns — called sequence-of-returns risk — can shorten it dramatically even if the long-run average looks fine.\n\nThe 4% rule is a common starting point: withdraw 4% of your balance in year one, then adjust for inflation each year. Research suggests this rate has historically funded a 30-year retirement in most market conditions. For your required minimum distributions starting at age 73, see the [RMD calculator](/retirement/rmd-calculator/). To model the savings side, see the [retirement savings calculator](/retirement/retirement-savings-calculator/).",
+    commonMistakes: [
+      "Ignoring sequence-of-returns risk. A 20% market loss in year one of retirement has a permanently larger impact than the same loss in year ten, because you are selling assets at depressed prices with no paycheck to recover.",
+      "Using average returns as if they are constant. Averages hide year-to-year volatility. Sequence risk means bad years early in retirement are disproportionately damaging to portfolio longevity.",
+      "Forgetting that withdrawals are taxable. Traditional IRA and 401(k) distributions count as ordinary income. Your gross withdrawal must be larger than your net spending need after taxes.",
+      "Ignoring required minimum distributions. Starting at age 73, the IRS requires withdrawals from traditional accounts whether you need the money or not — which can push you into a higher tax bracket.",
+      "Underestimating longevity. The Social Security Administration reports that a 65-year-old woman has a roughly 1-in-3 chance of reaching age 90. A 25-year retirement is a reasonable planning horizon; a 30-year horizon is prudent.",
+    ],
+    workedExample:
+      "You retire at 65 with $750,000 saved and plan to withdraw $40,000 per year (about 5.3% initial rate), growing with inflation. At a 6% return, the calculator shows the money lasting about 28 years to age 93. But if the market drops 25% in year one of retirement — reducing your balance to $522,500 before you withdraw — the money now lasts only about 23 years. That five-year difference illustrates sequence risk. A common mitigation: hold 1 to 2 years of expenses in cash or short-term bonds so you never sell equities in a panic during a downturn.",
+    faqs: [
+      {
+        question: "What is sequence-of-returns risk?",
+        answer:
+          "Sequence-of-returns risk is the danger that poor market returns early in retirement will permanently reduce how long your savings last. Because you are selling assets each year to fund spending, a market crash in year one forces you to liquidate more shares at low prices — shares that never recover in your portfolio. The same average return with a different sequence produces drastically different outcomes.",
+      },
+      {
+        question: "How can I protect against sequence-of-returns risk?",
+        answer:
+          "One well-tested approach is maintaining a 1- to 2-year cash buffer or a short-term bond allocation equal to your near-term spending needs. This lets you avoid selling equities during a downturn. Another approach is flexible spending — reducing withdrawals by 10–15% in down years and spending more in up years. Both strategies extend portfolio longevity.",
+      },
+      {
+        question: "What withdrawal rate is safe for a 30-year retirement?",
+        answer:
+          "The 4% rule — withdrawing 4% of your initial balance and adjusting for inflation annually — has historically funded a 30-year retirement in most market conditions, based on the Trinity Study's analysis of historical return sequences. For retirements longer than 30 years, a 3% to 3.5% rate is more conservative.",
+      },
+      {
+        question: "When do RMDs start and how do they affect my drawdown plan?",
+        answer:
+          "Required minimum distributions from traditional IRAs and 401(k)s begin at age 73 under IRS rules. The IRS sets the amount based on your account balance and a life expectancy table. RMDs can force you to withdraw more than you planned, increasing your taxable income. A Roth account or an HSA is exempt, so the share of your savings held in [accounts that pay out untaxed](/guides/tax-free-retirement-account/) decides how much of each year's withdrawal you keep. Use the [RMD calculator](/retirement/rmd-calculator/) to estimate your first required withdrawal.",
+      },
+      {
+        question: "Should I include Social Security in this calculation?",
+        answer:
+          "Yes. Social Security income reduces the amount you need to withdraw from savings each year. If your Social Security benefit covers $2,000 per month and you need $4,000 per month total, you only need to withdraw $2,000 from your portfolio — effectively halving your withdrawal rate and significantly extending how long your savings last.",
+      },
+      {
+        question: "Is there a separate calculator just for Social Security?",
+        answer:
+          "Yes. This tool estimates how long your total drawdown lasts once Social Security is factored in. For the separate step of estimating your actual monthly Social Security benefit amount at different claiming ages, use our [Social Security retirement calculator](/retirement/social-security-retirement-calculator/), then bring that monthly figure back here to see how it changes your overall drawdown runway.",
+      },
+    ],
+    sources: [
+      {
+        label: "U.S. Department of Labor — What You Should Know About Your Retirement Plan",
+        url: "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/what-you-should-know-about-your-retirement-plan",
+      },
+      {
+        label: "IRS — Retirement Topics: Required Minimum Distributions (RMDs)",
+        url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-required-minimum-distributions-rmds",
+      },
+      {
+        label: "SSA — Calculators: Life Expectancy",
+        url: "https://www.ssa.gov/oact/population/longevity.html",
+      },
+    ],
+    toolHeading: "How long will your retirement savings last?",
+    toolSubheading: "Project your drawdown runway based on your balance, withdrawal rate, and expected return.",
+    preset: { mode: "projection", currentAge: 60, retirementAge: 65, currentSavings: 750000, monthlyContribution: 1500, annualReturnPct: 6 },
+    relatedSlugs: ["retirement-savings-calculator", "401k-calculator", "rmd-calculator"],
+  },
+
+  {
+    updated: "2026-10-14",
+    calculator: "retirement",
+    slug: "military-retirement-calculator",
+    title: "Military Retirement Calculator: TSP + Pension",
+    metaDescription:
+      "Project your TSP balance alongside your military pension estimate. Covers BRS vs. legacy High-3, TSP matching, 20-year vesting, and survivor benefits.",
+    targetKeyword: "military retirement calculator",
+    estimatedVolume: 3600,
+    estimatedKD: 30,
+    h1: "Military Retirement Calculator: Project TSP Growth and Pension",
+    introText:
+      "Military retirement brings together two income streams that civilian workers rarely have at the same time: a defined-benefit pension based on years of service and a Thrift Savings Plan (TSP) that works like a 401(k). The Blended Retirement System (BRS), introduced by the Department of Defense in 2018, changed the terms for most service members who entered after January 1, 2018.\n\nUse the calculator above to project your TSP growth, then add the pension estimate below to get the full picture.",
+    howItWorks:
+      "This calculator projects your TSP balance — the defined-contribution side of military retirement; for a standalone projection, see the [TSP calculator](/investing/tsp-calculator/). Enter your current TSP balance, monthly contributions (your own plus any BRS matching), expected return, and your target separation age. If you will also have a civilian 401(k) later, compare the two accounts in [TSP vs 401(k)](/compare/tsp-vs-401k/).\n\nFor the pension side, use the formula that applies to your plan. Under the legacy High-3 system: pension = 2.5% × years of service × average of your three highest-pay years. A 20-year retiree receives 50% of High-3 pay. Under BRS: pension = 2.0% × years of service × High-3 average, plus a government TSP match of up to 5% of basic pay after three years of service, plus a one-time continuation pay bonus paid around the 12-year mark as an incentive to continue serving to 20 years; the exact multiple of monthly basic pay varies by service branch and specialty, so check your service's current continuation pay table rather than assuming a fixed amount. If you separate early for a qualifying medical condition instead of reaching 20 years, Chapter 61 retirement uses a different formula; see our [military retirement vs medical retirement](/compare/military-retirement-vs-medical-retirement/) comparison. For general retirement projection, see the [retirement savings calculator](/retirement/retirement-savings-calculator/).",
+    commonMistakes: [
+      "Forgetting the 20-year cliff on the legacy High-3 plan. Under legacy rules, separating before 20 years of service means zero pension — you lose the entire defined-benefit, no matter how many years you served. The BRS was designed specifically to fix this cliff for the modern force.",
+      "Not capturing the full BRS TSP match. BRS provides automatic 1% TSP contribution from the government after 60 days, then a dollar-for-dollar match on the next 3% and 50 cents on the next 2% after three years — a total of up to 5% matching. Service members who do not opt in above the 1% auto-contribution leave free money behind.",
+      "Using current base pay instead of High-3 average. The pension formula uses the average of your three highest consecutive annual base-pay years, not your final pay. Late promotions can shift this number meaningfully.",
+      "Ignoring COLA adjustments. Military pensions are adjusted annually for cost-of-living increases tied to the Consumer Price Index, per Department of Defense policy. This inflation protection is a significant advantage over many civilian pensions. For 2027, see [what the COLA is for military retirees](/guides/2027-cola-federal-military-retirees/).",
+      "Overlooking the Survivor Benefit Plan (SBP). Without enrolling in SBP, your pension stops at death and your surviving spouse receives nothing. SBP covers up to 55% of your retirement pay at a premium, and the election window closes at retirement.",
+    ],
+    workedExample:
+      "A service member enters under BRS at age 22, separates at age 42 with exactly 20 years of service and a High-3 average base pay of $72,000 per year. Legacy pension would have been 50% × $72,000 = $36,000 annually ($3,000/month). Under BRS, pension is 40% × $72,000 = $28,800 annually ($2,400/month). However, over 20 years of TSP contributions at $500/month with a 5% employer match ($300/month = $800/month total) at 7% return, the TSP balance at separation is approximately $500,000. If that TSP is withdrawn at 4%, it provides $20,000/year — bringing BRS total income to $48,800, compared with legacy-only $36,000.",
+    faqs: [
+      {
+        question: "What is the difference between the legacy High-3 plan and BRS?",
+        answer:
+          "Legacy High-3 pays 2.5% × years of service × High-3 average pay (50% at 20 years), with no Thrift Savings Plan (TSP) matching and no benefit for those who leave before 20 years. BRS lowers the multiplier to 2.0% (40% at 20 years) but adds up to 5% TSP matching after three years of service plus a continuation pay bonus. BRS members who leave before 20 years keep their TSP balance and any vested matching. Service members who joined after January 2018 are automatically enrolled in the Blended Retirement System (BRS); members who joined earlier either chose BRS or kept the legacy High-3 plan, and those who kept legacy cannot currently switch. Your service's personnel or retirement office can confirm which system you are under, and the [Military OneSource BRS overview](https://militaryonesource.mil/financial-legal/military-retirement/blended-retirement-system/) lays out the enrollment rules.",
+      },
+      {
+        question: "What happens to my TSP if I separate before 20 years under BRS?",
+        answer:
+          "Under BRS, a service member who leaves before 20 years receives no pension but keeps their entire TSP balance, including vested government matching contributions. Government matching vests after two years of service. This is the key BRS design feature: it extends retirement benefits to the roughly 80% of service members who historically left before the 20-year mark and received nothing under the legacy plan.",
+      },
+      {
+        question: "How much does the government match in the TSP under BRS?",
+        answer:
+          "After 60 days of service, the government automatically contributes 1% of basic pay to your TSP. Beginning in your fourth year of service, the government also matches your contributions: dollar-for-dollar on the first 3% you contribute, and 50 cents per dollar on the next 2%. To capture the full 5% match, you must contribute at least 5% of your basic pay.",
+      },
+      {
+        question: "Can I access my TSP before age 59½ without penalty as a military retiree?",
+        answer:
+          "Possibly. If you separate from service in the year you turn 55 or later, you may qualify for the Rule of 55, which waives the 10% early withdrawal penalty on TSP distributions. Additionally, combat-zone tax exclusion rules may apply to contributions made during qualifying deployments. Consult IRS Publication 590-B and your TSP plan documents for specifics.",
+      },
+      {
+        question: "What is the Survivor Benefit Plan and should I elect it?",
+        answer:
+          "The Survivor Benefit Plan (SBP) is a Department of Defense insurance program that continues up to 55% of your retirement pay to a surviving spouse after you die. Premiums are roughly 6.5% of the covered base amount. Without SBP, your military pension stops at death. The election must be made at retirement; you cannot add it later. The core tradeoff against commercial life insurance: SBP premiums come out pre-tax, coverage is guaranteed regardless of your health with no medical exam, and a private insurer can't cancel it on you — but a healthy applicant can sometimes buy comparable term life coverage from a private insurer for less than SBP's premium, especially earlier in life, so it's worth getting a term quote before you elect SBP by default. For a deeper breakdown of military pay, VA benefits, and survivor protections, see [rankandpay.org's military retirement guide](https://rankandpay.org/military-retirement/).",
+      },
+      {
+        question: "Does the pension formula differ by branch — Army, Navy, Air Force, Marine Corps, or National Guard?",
+        answer:
+          "No — the High-3 and BRS pension formulas are set by federal law and DoD-wide policy, so the math is identical whether you served in the Army, Navy, Air Force, Marine Corps, or Space Force. What differs is the path to eligibility: active-duty members in any branch can retire after 20 years of active service, while National Guard and Reserve members generally need 20 'good years' — each requiring at least 50 retirement points — and typically can't start drawing retired pay until age 60, though qualifying active-duty mobilizations can lower that age. Whichever branch you served in, DFAS (the Defense Finance and Accounting Service) is the single agency that calculates and issues your monthly retired pay, not your individual service. VA disability compensation is a separate benefit administered by the Department of Veterans Affairs and can be received alongside military retired pay, subject to offset rules like Concurrent Retirement and Disability Pay (CRDP); see our [military retirement vs. VA disability](/compare/military-retirement-vs-va-disability/) breakdown for how CRDP and Combat-Related Special Compensation (CRSC) actually work.",
+      },
+      {
+        question: "Is military retirement pay taxable?",
+        answer:
+          "Yes — military retired pay is taxable as ordinary federal income, reported each year on a 1099-R from DFAS, the same as any other pension. VA disability compensation is different: it's entirely tax-free at the federal level and isn't reported on that 1099-R. State treatment of retired pay varies widely — most states either have no state income tax at all or fully exempt military retirement pay, while a small number, including California, still tax it in full. Check your specific state's current rules before assuming your pension is state-tax-free. See our [military retirement vs VA disability](/compare/military-retirement-vs-va-disability/) comparison for how the VA-disability side interacts with your retired pay.",
+      },
+      {
+        question: "How does military retirement work for National Guard and Reserve members?",
+        answer:
+          "National Guard and Reserve retirement — officially non-regular retirement — is points-based rather than a straight count of active-service years. You need 20 'good years,' and a good year requires at least 50 retirement points, earned through roughly 15 automatic membership points plus 1 point per 4-hour drill period and 1 point per day of active duty or annual training. Guard and Reserve retirees generally can't draw retired pay until age 60, though DFAS's Reduced Age Retirement rule can lower that floor to as young as age 50 for members with qualifying periods of active duty. The pension still uses the same 2.0% (BRS) or 2.5% (legacy) multiplier applied to a years-of-service figure derived from your total points, times your High-3 average.",
+      },
+      {
+        question: "How is military retirement pay divided in a divorce?",
+        answer:
+          "The [Uniformed Services Former Spouses' Protection Act (USFSPA)](https://www.dfas.mil/Garnishment/usfspa/legal/) permits — but doesn't require — state courts to treat military retired pay as marital property that can be divided in a divorce; the actual formula and percentage come from state law, not federal law. If the marriage overlapped at least 10 years of the member's creditable service (the '10/10 rule'), DFAS can pay the former spouse's court-awarded share directly, rather than requiring the service member to pay it themselves. Direct payments are capped at 50% of disposable retired pay, or up to 65% when combined with alimony or child-support garnishments. VA disability compensation, by contrast, generally cannot be divided as marital property. Your TSP balance is a separate asset: it gets divided by its own court order sent to the TSP record keeper, not through USFSPA, so confirm both orders are filed correctly during your divorce.",
+      },
+      {
+        question: "Can I collect Social Security in addition to my military pension?",
+        answer:
+          "Yes. Military retired pay and [Social Security](https://www.ssa.gov/benefits/retirement/) are separate benefits, and drawing one does not reduce or disqualify you from the other. If you claim Social Security before your full retirement age while still working a civilian job, the SSA's earnings test can temporarily withhold part of your Social Security check, but it never touches your military pension. Check ssa.gov for the current earnings-test limits before you claim early.",
+      },
+      {
+        question: "Can I take a lump sum instead of full monthly pension under BRS?",
+        answer:
+          "Yes, but only under BRS. The Blended Retirement System lets you take a lump sum of either 25% or 50% of your future retired pay's discounted value at retirement, with your monthly pension reduced by that same percentage until you reach Social Security full retirement age. Legacy High-3 retirees do not have this option, and a lump sum forgoes future COLA growth on the amount you take upfront.",
+      },
+      {
+        question: "Does my High-3 pension calculation include BAH and BAS, or only base pay?",
+        answer:
+          "Only base pay counts toward your High-3 average. Basic Allowance for Housing (BAH) and Basic Allowance for Subsistence (BAS) are tax-free allowances, not base pay, so DFAS excludes both from the pension calculation entirely — even though they can make up a large share of your total take-home pay while serving.",
+      },
+      {
+        question: "Can I collect both a military pension and a federal civilian pension if I take a federal job after retiring?",
+        answer:
+          "In most cases, yes — military retired pay and a separate federal civilian pension (FERS or CSRS) are two distinct retirement systems, and collecting both is often called 'double-dipping' informally, but there's no automatic offset between them the way VA disability and military retired pay can interact. Rules can still vary by agency and by whether you're under FERS or the older CSRS system, so confirm your specific situation with your federal HR or benefits office before you count on both checks.",
+      },
+      {
+        question: "Can I change my Survivor Benefit Plan (SBP) beneficiary later, for example after a divorce or remarriage?",
+        answer:
+          "Changing an existing SBP election after retirement (adding or switching a beneficiary following a divorce or remarriage, for example) is possible only in limited circumstances defined by DFAS, tied to a qualifying life event and a specific window to act. Because that window and the required paperwork can change, contact DFAS directly for the current process rather than assuming a specific deadline; the initial SBP election itself still can't be made after retirement.",
+      },
+      {
+        question: "What is the military retirement pay chart for 2026?",
+        answer:
+          "There's no single 'retirement pay chart' you can look up directly. The official 2026 military basic pay chart, which feeds into the retirement formula, is published by the Department of Defense at [militarypay.defense.gov](https://militarypay.defense.gov/Pay/Basic-Pay/). Your actual retired pay comes from applying the High-3 (2.5%) or BRS (2.0%) multiplier, times your years of service, to the average of your three highest-paid years, so use the current pay chart there for your base-pay inputs and the calculator above to project the resulting pension.",
+      },
+      {
+        question: "What happens to my military retirement pay when I turn 65?",
+        answer:
+          "Your military retired pay itself doesn't change at 65. It continues on the same schedule with the same annual cost-of-living adjustment (COLA) it already receives. Health coverage does change: most retirees become eligible for Medicare Part A and Part B at 65, and once you have both parts, TRICARE For Life automatically takes over as your supplement to Medicare, with no separate enrollment needed. See the official [TRICARE For Life](https://www.tricare.mil/Plans/HealthPlans/TFL) page for the current coverage details.",
+      },
+      {
+        question: "How much is E7 retirement pay with 20 years?",
+        answer:
+          "There's no single dollar figure, because E7 retirement pay depends on years-of-service within the grade at retirement and the current base-pay table, not a fixed amount. To find your own number: look up E7 basic pay at your years of service on the current chart at [militarypay.defense.gov](https://militarypay.defense.gov/Pay/Basic-Pay/), average your three highest-paid years for your High-3 figure, then apply the 2.5% (legacy) or 2.0% (BRS) multiplier from the formula above times 20 years of service. Plug that High-3 average into the pension formula above to get your own estimate rather than relying on a single published number that won't match your actual years of service.",
+      },
+      {
+        question: "How much does a retired military member make a month?",
+        answer:
+          "There's no single average, because pension income depends on rank, years of service, and whether you retired under legacy High-3 or BRS. This page's own worked example illustrates the range: a service member retiring under BRS at 20 years with a $72,000 High-3 average gets a $2,400/month pension, plus roughly $1,667/month if a $500,000 TSP balance is drawn down at a 4% rate, for about $4,067/month total. A legacy High-3 retiree with the same pay and years gets a larger pension alone, $3,000/month, but no BRS TSP match. Treat that as one illustrative scenario, not a national average, and use the calculator above with your own rank, years, and TSP balance for a real estimate.",
+      },
+      {
+        question: "How is REDUX different from BRS or legacy High-3?",
+        answer:
+          "REDUX (formally the Career Status Bonus/REDUX program) was a third retirement option offered only to service members who entered before 2018. It isn't available to anyone entering under BRS. Around the 15-year mark, an eligible member could elect a one-time $30,000 Career Status Bonus in exchange for two long-term reductions versus legacy High-3: a lower pension multiplier at 20 years of service, and a reduced annual COLA (roughly CPI minus one percentage point) that only resets to match full CPI in the year the retiree turns 62, then reduces again after that. That reduced-COLA gap compounds over a long retirement, which is why REDUX retirees who took the bonus can end up meaningfully behind a legacy High-3 retiree of the same rank and years of service over time. If you're not sure which of the three systems (legacy High-3, REDUX, or BRS) applies to you, check with DFAS or your service's retirement office, since it depends on your specific entry date and whether you made a REDUX election.",
+      },
+    ],
+    sources: [
+      {
+        label: "Department of Defense — Blended Retirement System Overview",
+        url: "https://militarypay.defense.gov/Portals/3/Documents/BlendedRetirementDocuments/BRS%20Overview%20Handout.pdf",
+      },
+      {
+        label: "DFAS — Military Retirement",
+        url: "https://www.dfas.mil/RetiredMilitary/plan/retirement-types/",
+      },
+      {
+        label: "VA — Disability Compensation",
+        url: "https://www.va.gov/disability/",
+      },
+      {
+        label: "IRS — Publication 590-B: Distributions from Individual Retirement Arrangements",
+        url: "https://www.irs.gov/publications/p590b",
+      },
+    ],
+    toolHeading: "Project your TSP balance at military retirement",
+    toolSubheading: "Enter your TSP balance and contributions, then add your pension estimate to see your full retirement income.",
+    preset: { mode: "projection", currentAge: 28, retirementAge: 48, currentSavings: 35000, monthlyContribution: 1200, annualReturnPct: 7 },
+    relatedSlugs: ["retirement-savings-calculator", "401k-calculator", "fire-calculator"],
+  },
+
+  {
+    calculator: "retirement",
+    slug: "early-retirement-calculator",
+    title: "Early Retirement Calculator: Can You Retire Now?",
+    metaDescription:
+      "Our early retirement calculator projects your savings gap, models a bridge to Social Security at 62, and shows IRS options for accessing funds before age 59½.",
+    targetKeyword: "early retirement calculator",
+    estimatedVolume: 4400,
+    estimatedKD: 36,
+    h1: "Early Retirement Calculator: Are You Ready to Retire Early?",
+    introText:
+      "Early retirement is financially viable if your projected portfolio balance can cover your spending (without a paycheck) from your planned retirement date until Social Security and Medicare fill the gap years later. Use the calculator above to see whether your current savings trajectory will reach that number by your target date. Then, read below to learn the rules for accessing tax-advantaged funds early.",
+    howItWorks:
+      "The calculator projects your savings to your target retirement age and estimates how many years your portfolio can sustain a given withdrawal rate. It does not automatically add Social Security income, because the earliest you can claim Social Security retired-worker benefits is age 62, and claiming that early reduces your benefit by up to 30% compared with your Full Retirement Age (FRA), according to the Social Security Administration.\n\nTwo IRS rules are critical for early retirees accessing tax-advantaged accounts before age 59½. First, the Rule of 55: if you separate from your employer in the calendar year you turn 55 or later, you can take penalty-free distributions from that employer's 401(k) plan (not IRAs). Second, IRS Section 72(t) Substantially Equal Periodic Payments (SEPP): you can take penalty-free IRA withdrawals at any age if you commit to a fixed payment schedule for at least five years or until age 59½, whichever is longer. For the FIRE-specific version of this question, see the [FIRE calculator](/retirement/fire-calculator/).",
+    commonMistakes: [
+      "Assuming Social Security is available immediately after leaving work. The earliest claim age for retired-worker benefits is 62, and claiming at 62 permanently reduces your benefit by up to 30% versus your FRA benefit, per SSA rules.",
+      "Underestimating health insurance costs before Medicare at 65. Without employer coverage, marketplace premiums for a 55-year-old can easily exceed $1,000 per month per person, significantly affecting your withdrawal rate.",
+      "Misapplying the Rule of 55. The rule applies only to the 401(k) plan of your last employer — the one you separate from at age 55 or later. Old 401(k)s from prior employers and all IRAs require SEPP or age 59½ for penalty-free access.",
+      "Breaking a 72(t) SEPP payment schedule. Modifying or stopping SEPP payments before the required period ends triggers the 10% penalty retroactively on all prior distributions, plus interest.",
+      "Forgetting that 20 to 30 years of retirement changes the math. A 55-year-old who lives to 90 faces a 35-year drawdown — well beyond the 30 years modeled by the standard 4% rule research. A 3% to 3.5% withdrawal rate is more appropriate.",
+    ],
+    workedExample:
+      "You are 50, want to retire at 55, and have $800,000 saved. You contribute $2,500 per month and expect 7% annual returns. The calculator projects your balance at 55 will be approximately $1,216,000. At a 3.5% withdrawal rate (appropriate for a 35-year horizon), that supports about $42,560 per year, or $3,547 per month. From 55 to 62, you bridge entirely on portfolio withdrawals. At 62 you could claim a reduced Social Security benefit; if your estimated FRA benefit is $2,200/month, claiming at 62 gives you roughly $1,540/month instead — permanently. Delaying to your FRA at 67 costs seven more years of portfolio-only withdrawals but preserves the full benefit and the higher survivor benefit for a spouse.\n\nA related scenario worth working through with its own numbers: can you retire at 50 with $875,000 in a 401(k) and $5,000 a month in expenses? $5,000 a month is $60,000 a year. A standard 4% initial withdrawal on $875,000 is $35,000 a year — about $2,917 a month — which falls roughly $25,000 a year ($2,083 a month) short of $60,000 in spending. So a plain 4%-rule withdrawal does not cover this budget on its own. Closing that gap generally takes some combination of: part-time or bridge income covering the shortfall directly; treating the years from 50 to 62 as a defined bridge rather than the start of a 35-to-40-year drawdown, since Social Security can supplement withdrawals once it starts and reduce what the portfolio alone has to produce; and tapering the withdrawal rate down toward the more conservative 3% to 3.5% range described above for the remaining decades once other income arrives. Whether $875,000 actually supports $5,000 a month at 50 depends on what other income — Social Security, a spouse's earnings, part-time work, a pension — is available to cover the pre-62 gap; it isn't something a 4%-rule calculation alone confirms as safe, so run your own numbers in the calculator above.",
+    faqs: [
+      {
+        question: "What is the earliest age I can collect Social Security retirement benefits?",
+        answer:
+          "The earliest you can claim Social Security retired-worker benefits is age 62, according to the Social Security Administration. Claiming at 62 permanently reduces your monthly benefit by up to 30% compared with your Full Retirement Age benefit (age 67 for those born in 1960 or later). Benefits are not available before 62 unless you qualify for Social Security Disability Insurance.",
+      },
+      {
+        question: "How does the IRS Rule of 55 work?",
+        answer:
+          "Under IRS rules, if you separate from your employer in the calendar year you turn 55 or older (age 50 for certain public safety employees), you may take penalty-free distributions from that employer's 401(k) or 403(b) plan. The 10% early withdrawal penalty is waived, but ordinary income tax still applies. This applies only to the plan of the employer you leave — not to old 401(k)s from prior jobs or to IRAs.",
+      },
+      {
+        question: "What is a 72(t) SEPP distribution?",
+        answer:
+          "IRS Section 72(t) allows penalty-free withdrawals from an IRA at any age if you take Substantially Equal Periodic Payments (SEPP) using one of three IRS-approved calculation methods. You must continue the payments for at least five years or until age 59½, whichever is longer. Breaking the schedule before the required period ends retroactively applies the 10% penalty on all prior distributions, plus interest.",
+      },
+      {
+        question: "How do I cover health insurance before Medicare at 65?",
+        answer:
+          "Early retirees under 65 are not eligible for Medicare. Options include COBRA continuation coverage from your former employer (often expensive), marketplace plans under the Affordable Care Act (premiums may qualify for subsidies if your income is low enough), a spouse's employer plan, or short-term health insurance. Healthcare costs are often the largest unplanned expense for early retirees and should be modeled explicitly in your budget.",
+      },
+      {
+        question: "What withdrawal rate is safe for a 35-year early retirement?",
+        answer:
+          "Research based on the Trinity Study and subsequent work suggests that a 3% to 3.5% withdrawal rate is more appropriate than the standard 4% rule for retirements lasting 35 to 40 years. A 3% rate requires approximately 33 times annual expenses in savings — a higher bar than standard FIRE's 25×, but it provides a larger buffer against sequence-of-returns risk and longevity.",
+      },
+      {
+        question: "Can I retire at 50 with $875,000 and $5,000 in monthly expenses?",
+        answer:
+          "It depends on what other income you have, but $875,000 alone doesn't fully cover it on a standard 4% withdrawal. A 4% withdrawal on $875,000 is $35,000 a year (about $2,917 a month), against $60,000 a year ($5,000 a month) in expenses — a shortfall of roughly $25,000 a year. Retiring at 50 in this scenario typically requires bridge or part-time income, lower expenses, or a plan to lean on Social Security once it starts to close that gap. It is not something a 4%-rule calculation confirms as safe on its own; run your own numbers, including any other income sources, in the calculator above.",
+      },
+    ],
+    sources: [
+      {
+        label: "IRS Topic No. 558 — Additional Tax on Early Distributions From Retirement Plans (Rule of 55)",
+        url: "https://www.irs.gov/taxtopics/tc558",
+      },
+      {
+        label: "IRS — Retirement Plans FAQs: Substantially Equal Periodic Payments (Section 72(t))",
+        url: "https://www.irs.gov/retirement-plans/retirement-plans-faqs-regarding-substantially-equal-periodic-payments",
+      },
+      {
+        label: "SSA — Benefits Planner: Retirement — Retirement Age and Benefit Reduction",
+        url: "https://www.ssa.gov/benefits/retirement/planner/agereduction.html",
+      },
+    ],
+    toolHeading: "Will your savings support early retirement?",
+    toolSubheading: "Project your balance at your target age and estimate how long it will last before Social Security kicks in.",
+    preset: { mode: "projection", currentAge: 50, retirementAge: 55, currentSavings: 800000, monthlyContribution: 2500, annualReturnPct: 7 },
+    relatedSlugs: ["fire-calculator", "retirement-savings-calculator", "401k-early-withdrawal-calculator"],
+  },
+
+  {
+    calculator: "retirement",
+    slug: "pension-calculator",
+    title: "Retirement Calculator with Pension: Model Both",
+    metaDescription:
+      "Our retirement calculator with pension lets you model your 401(k) or IRA growth alongside your defined-benefit pension to project your total retirement income.",
+    targetKeyword: "retirement calculator with pension",
+    estimatedVolume: 2900,
+    estimatedKD: 33,
+    h1: "Retirement Calculator with Pension: Model Your 401(k) and Pension Together",
+    introText:
+      "A defined-benefit (DB) pension and a 401(k) or IRA play completely different roles in retirement. To get the most accurate picture of your total income, model them together. Use the calculator above to project your 401(k) or IRA balance, then use the formula below to estimate your pension and add the two income streams together.",
+    howItWorks:
+      "The calculator projects your defined-contribution account — your 401(k), 403(b), or IRA — at your expected return until retirement. For the pension side, most defined-benefit formulas follow this structure: annual pension = years of service × benefit multiplier × final average salary (or average of your highest three to five years of pay).\n\nExample: 25 years of service × 1.5% multiplier × $80,000 average salary = $30,000 per year ($2,500 per month). Check your plan's Summary Plan Description for your exact multiplier and averaging period — the Department of Labor requires employers to provide this document upon request. The non-obvious insight here: a DB pension effectively acts like a large bond allocation in your portfolio, providing stable income regardless of market performance. This allows you to take more equity risk with your 401(k) side, potentially generating higher long-run growth. For the drawdown side of this equation, see the [retirement income calculator](/retirement/retirement-income-calculator/). If you take a pension as a lump sum and draw it down yourself, our guide on [how long your pension money will last](/guides/how-long-will-my-pension-last/) shows the years it lasts at different withdrawal amounts.",
+    commonMistakes: [
+      "Forgetting PBGC insurance limits. If your employer's pension plan is underfunded and the company fails, the Pension Benefit Guaranty Corporation (PBGC) insures benefits up to a maximum that varies by age and year. For 2026, the PBGC maximum monthly guarantee for a single-life annuity at age 65 is set by PBGC tables — consult pbgc.gov for the current figure. Benefits above this limit may not be fully protected.",
+      "Assuming a pension benefit is inflation-adjusted. Many private-sector DB pensions pay a fixed monthly amount with no cost-of-living adjustment. Over a 25-year retirement with 3% annual inflation, fixed payments lose roughly half their purchasing power.",
+      "Ignoring survivor options. Most pension plans offer a joint-and-survivor annuity that pays a reduced amount but continues to your spouse after your death. Choosing the single-life option for higher payments leaves your spouse with no income if you die first.",
+      "Overlooking the pension's impact on Social Security. If you receive a pension from employment not covered by Social Security (common in some state and local government jobs), the Windfall Elimination Provision (WEP) or Government Pension Offset (GPO) may reduce your Social Security benefit, per SSA rules.",
+      "Not requesting your plan's Summary Plan Description. The SPD spells out your exact benefit formula, vesting schedule, and survivor options. The DOL requires your employer to provide it free of charge upon written request.",
+    ],
+    workedExample:
+      "You are 45 with $200,000 in a 401(k), contributing $1,500 per month, and expecting a 6% return until age 65. The calculator projects your 401(k) reaches approximately $833,000 at retirement. Your DB pension formula: 20 years of service × 1.75% × $85,000 average salary = $29,750 per year, or $2,479 per month. At 4% withdrawal, your 401(k) supports an additional $2,777 per month. Total retirement income: $2,479 (pension) + $2,777 (401k) = $5,256 per month, before Social Security. The pension's $2,479 acts as a floor, meaning you can afford to hold more equities in the 401(k) and target higher growth, because your basic expenses are already covered. Layer in a third income source and the picture gets more complete: add a projected Social Security benefit of, say, $2,000 per month at Full Retirement Age, and the combined total — pension + 401(k) withdrawal + Social Security — reaches $7,256 per month ($2,479 + $2,777 + $2,000), before any federal or state tax on that income. Modeling all three sources together, rather than just one or two, is what actually shows whether your total retirement income covers your planned spending.",
+    faqs: [
+      {
+        question: "How do I calculate my pension benefit?",
+        answer:
+          "Most defined-benefit pension formulas follow this structure: annual benefit = years of service × benefit multiplier × final average salary. For example, 20 years × 1.5% × $70,000 = $21,000 per year. Your plan's Summary Plan Description, which your employer must provide under DOL rules, contains your exact multiplier and the averaging method used for your salary.",
+      },
+      {
+        question: "Is my pension protected if my employer goes bankrupt?",
+        answer:
+          "Pensions covered by private-sector defined-benefit plans are insured by the Pension Benefit Guaranty Corporation (PBGC), a federal agency. PBGC guarantees benefits up to an annual maximum that depends on your age at retirement. Benefits above that cap may not be fully covered. Government pensions are not covered by PBGC but are typically backed by the sponsoring government entity.",
+      },
+      {
+        question: "Does my pension affect my Social Security benefit?",
+        answer:
+          "It may. If you worked in a job not covered by Social Security — such as some state and local government positions — and also have Social Security earnings, the Windfall Elimination Provision (WEP) can reduce your Social Security benefit. The Government Pension Offset (GPO) can reduce or eliminate a spousal or survivor Social Security benefit. Check the SSA website for details on whether WEP or GPO applies to your situation.",
+      },
+      {
+        question: "Should I take the pension as a lump sum or monthly annuity?",
+        answer:
+          "This depends on your health, other income sources, and risk tolerance. A monthly annuity provides guaranteed income for life (and potentially for a surviving spouse) regardless of market performance. A lump sum gives you control and the potential for higher returns if invested well, but shifts all longevity and investment risk to you. IRS Publication 575 covers the tax treatment of pension and annuity payments.",
+      },
+      {
+        question: "How does having a pension change how I should invest my 401(k)?",
+        answer:
+          "A defined-benefit pension functions like a bond in your portfolio — it provides predictable, fixed income independent of market returns. Because that income stream reduces your reliance on portfolio withdrawals, you may be able to tolerate more equity exposure in your 401(k) without increasing your overall retirement risk. This is one reason pension holders can sometimes afford a higher stock allocation than conventional rules of thumb suggest.",
+      },
+      {
+        question: "Does this calculator work for CalPERS, CalSTRS, TRS, STRS, PSERS, or NYSLRS?",
+        answer:
+          "Yes, in the sense that the same years-of-service × multiplier × final-average-salary structure underlies major public pension systems like [CalPERS](https://www.calpers.ca.gov/) and [CalSTRS](https://www.calstrs.com/) in California, [PSERS](https://www.psers.pa.gov/) in Pennsylvania, [NYSLRS](https://www.osc.ny.gov/retirement) in New York, and the state teacher retirement systems often called TRS or STRS elsewhere — for example, the [Teacher Retirement System of Texas](https://www.trs.texas.gov/) or the [State Teachers Retirement System of Ohio](https://www.strsoh.org/). But the exact multiplier, final-average-salary period, vesting schedule, and cost-of-living adjustment rules vary by state and by system. Use the calculator's formula fields to plug in your own system's numbers, then confirm the precise figures against your plan's official benefit estimate or your plan administrator — public pension rules are state-specific and this general calculator can't substitute for your system's own statement.",
+      },
+      {
+        question: "How does this calculator apply to FERS, the federal employee pension?",
+        answer:
+          "The same structure applies. Under the [Federal Employees Retirement System (FERS)](https://www.opm.gov/retirement-center/fers-information/), administered by the Office of Personnel Management, most employees use a 1% multiplier on their high-3 average salary, rising to 1.1% if they retire at 62 or later with at least 20 years of service. A federal employee with 25 years of service and a $90,000 high-3 average enters 25, 1%, and $90,000 into the calculator's fields to get a $22,500 annual FERS basic benefit. FERS also includes Social Security and the Thrift Savings Plan as separate pieces of retirement income, similar to how a state teacher's pension sits alongside a 401(k) or 403(b) here. State and local government pension systems, such as those listed above, are structured similarly but run entirely separately from FERS and follow their own state's rules, not the federal formula.",
+      },
+    ],
+    sources: [
+      {
+        label: "DOL — Publication: What You Should Know About Your Retirement Plan (Summary Plan Description)",
+        url: "https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/publications/what-you-should-know-about-your-retirement-plan",
+      },
+      {
+        label: "PBGC — Maximum Monthly Guarantee Tables",
+        url: "https://www.pbgc.gov/wr/benefits/guaranteed-benefits/maximum-guarantee",
+      },
+      {
+        label: "IRS Publication 575 — Pension and Annuity Income",
+        url: "https://www.irs.gov/publications/p575",
+      },
+      {
+        label: "SSA — Windfall Elimination Provision",
+        url: "https://www.ssa.gov/benefits/retirement/planner/wep.html",
+      },
+    ],
+    toolHeading: "Project your 401(k) balance alongside your pension",
+    toolSubheading: "Enter your defined-contribution savings to estimate portfolio income, then add your pension monthly payment for your total retirement income.",
+    preset: { mode: "projection", currentAge: 45, retirementAge: 65, currentSavings: 200000, monthlyContribution: 1500, annualReturnPct: 6 },
+    relatedSlugs: ["retirement-savings-calculator", "retirement-income-calculator", "401k-calculator"],
+  },
+
+  {
+    updated: "2026-10-14",
+    calculator: "retirement",
+    slug: "social-security-retirement-calculator",
+    title: "Social Security Retirement Calculator",
+    metaDescription:
+      "Our Social Security retirement calculator shows how claiming age affects your benefit and how to add SSA income to your total retirement projection.",
+    targetKeyword: "retirement calculator with social security",
+    estimatedVolume: 5400,
+    estimatedKD: 42,
+    h1: "Social Security Retirement Calculator: Add SSA Benefits to Your Plan",
+    introText:
+      "Choosing when to claim Social Security is one of the highest-impact retirement decisions most people make. According to the Social Security Administration, claiming at 62 instead of 70 can change your monthly benefit by more than 75%. That difference is permanent, paid for life, and adjusted for inflation each year through Cost-of-Living Adjustments (COLA).\n\nUse the calculator above to project your savings, then follow the guidance below to model how your SSA benefit changes at each claiming age.",
+    howItWorks:
+      "The calculator projects your savings-side balance — your 401(k), IRA, or other accounts — at your expected return until retirement. To add your Social Security income, estimate your benefit using the Social Security Administration's own [Retirement Estimator](https://www.ssa.gov/benefits/retirement/estimator.html) at ssa.gov — which uses your actual earnings record, something this tool does not have access to — then enter that monthly amount in the calculator's Social Security field to see it added to the portfolio withdrawal your balance supports.\n\nThe key variables: Your Full Retirement Age (FRA) is 67 if you were born in 1960 or later, per SSA rules. Claiming before FRA permanently reduces your benefit — by up to 30% if you claim at 62. Delaying past FRA permanently increases your benefit by 8% per year (Delayed Retirement Credits), up to age 70. There are no additional credits for delaying past 70. The break-even calculation: delaying from 67 to 70 requires about 12 and a half years of higher payments to offset the three years of foregone benefits — meaning if you live past roughly age 82 and a half, delaying to 70 pays more in total lifetime benefits. To run it for your own benefit and claiming ages, use the [Social Security break-even calculator](/social-security-break-even-calculator/). For couples, see the [couples retirement calculator](/retirement/couples-retirement-calculator/) for spousal benefit coordination.",
+    commonMistakes: [
+      "Claiming at 62 without modeling the long-term cost. The 30% reduction at 62 versus FRA (67) is permanent. For someone who lives to 85, claiming at 62 versus 67 often means collecting $50,000 to $100,000 less in total lifetime benefits, depending on the benefit amount.",
+      "Assuming Social Security will fully fund retirement. Social Security is designed to replace approximately 40% of pre-retirement income for average earners, according to SSA. It is a supplement to savings, not a substitute.",
+      "Forgetting the earnings test before FRA. If you claim Social Security before your FRA and keep working, SSA withholds $1 in benefits for every $2 you earn above $24,480 in 2026. In the year you reach FRA, SSA withholds $1 for every $3 above $65,160 ([SSA](https://www.ssa.gov/oact/cola/rtea.html)). For 2027, [SSA raises those limits](https://www.ssa.gov/news/en/cola/factsheets/2027.html) to $25,560 and $67,920. Withheld amounts are eventually recredited after FRA, but the cash flow impact matters.",
+      "Not accounting for Social Security taxation. Up to 85% of Social Security benefits may be subject to federal income tax if your combined income (adjusted gross income + nontaxable interest + half of Social Security) exceeds $34,000 for singles or $44,000 for married couples filing jointly, per IRS rules.",
+      "Overlooking the COLA guarantee. Social Security benefits are adjusted annually for inflation via Cost-of-Living Adjustments tied to the CPI-W. This built-in inflation protection is a significant advantage over fixed pension payments or fixed annuities, and it compounds in value over a long retirement.",
+    ],
+    workedExample:
+      "You are 55 with $400,000 in savings, contributing $1,500 per month, and planning to retire at your FRA of 67. The calculator projects your balance at 67 is approximately $1,122,000. SSA estimates your monthly benefit at FRA as $2,200. At 4% withdrawal, your savings support $3,740/month. Total: $2,200 (SSA) + $3,740 (savings) = $5,940/month. Now consider delaying to 70: your benefit becomes roughly $2,728/month ($2,200 plus 8% a year for 3 years, or 24%). But you work three extra years, growing savings to about $1,367,000 — supporting $4,557/month from savings. Total at 70: $2,728 + $4,557 = $7,285/month. Whether to retire at 67 or 70 depends on health, lifestyle, and longevity expectations, but the numbers make the trade-off concrete.",
+    faqs: [
+      {
+        question: "What is the Full Retirement Age for Social Security?",
+        answer:
+          "Your Full Retirement Age (FRA) is the age at which you receive 100% of your earned Social Security benefit. For anyone born in 1960 or later, FRA is 67, according to the Social Security Administration. For those born between 1943 and 1959, FRA ranges from 66 to 66 years and 10 months.",
+      },
+      {
+        question: "How much does claiming Social Security early reduce my benefit?",
+        answer:
+          "Claiming before your FRA permanently reduces your monthly benefit. Claiming at 62 (the earliest allowed age) reduces your benefit by up to 30% if your FRA is 67. The reduction is roughly 5/9 of 1% per month for the first 36 months before FRA, and 5/12 of 1% per month beyond that, per SSA guidelines.",
+      },
+      {
+        question: "How much does delaying Social Security past FRA increase my benefit?",
+        answer:
+          "Delaying past your FRA earns Delayed Retirement Credits of 8% per year (two-thirds of 1% per month), up to age 70. Delaying from FRA 67 to age 70 increases your benefit by approximately 24%. No additional credits accrue after age 70, so there is no financial benefit to delaying past 70.",
+      },
+      {
+        question: "At what age does delaying Social Security to 70 break even?",
+        answer:
+          "The break-even age for delaying from FRA (67) to 70 is approximately age 82 and a half. If you live past that age, the higher monthly payments from delaying to 70 will have paid out more in total lifetime benefits than claiming at 67 would have. If you expect a shorter lifespan or have an immediate income need, claiming earlier may make more sense for your situation.",
+      },
+      {
+        question: "Are Social Security benefits taxable?",
+        answer:
+          "Up to 85% of Social Security benefits may be subject to federal income tax, depending on your combined income. Combined income is defined as adjusted gross income plus nontaxable interest plus half of your Social Security benefits. If this total exceeds $25,000 for single filers or $32,000 for married couples filing jointly, a portion of benefits is taxable. The maximum taxable percentage is 85%, not 100%. State tax treatment of Social Security varies.",
+      },
+      {
+        question: "Is this the same tool as the Social Security Administration's own retirement calculator?",
+        answer:
+          "No — this is an independent ModernWallet calculator, not an SSA tool, and it doesn't access your actual earnings record. For your official, records-based benefit estimate, use the SSA's own [Retirement Estimator](https://www.ssa.gov/benefits/retirement/estimator.html) or the my Social Security account portal at ssa.gov, both of which pull your real wage history to calculate your benefit. This calculator is meant to be used alongside that official number: get your SSA-estimated monthly benefit first, then plug it into the projection above to see your combined savings-plus-Social-Security income at different claiming ages and retirement dates — a combined view SSA's own calculator doesn't provide.",
+      },
+      {
+        question: "How is my Social Security benefit calculated if I have fewer than 35 years of earnings?",
+        answer:
+          "The Social Security Administration calculates your retirement benefit by averaging your 35 highest-earning years after indexing each year for wage growth. If you have fewer than 35 years of covered earnings, the agency enters $0 for each missing year, which lowers your average. Working additional years can increase your monthly benefit because higher-earning years replace those zeros in the calculation.",
+      },
+    ],
+    sources: [
+      {
+        label: "SSA — Benefits Planner: Retirement — Retirement Age and Benefit Reduction",
+        url: "https://www.ssa.gov/benefits/retirement/planner/agereduction.html",
+      },
+      {
+        label: "SSA — Benefits Planner: Retirement — Delayed Retirement Credits",
+        url: "https://www.ssa.gov/benefits/retirement/planner/delayret.html",
+      },
+      {
+        label: "SSA Publication EN-05-10035 — Understanding the Benefits",
+        url: "https://www.ssa.gov/pubs/EN-05-10035.pdf",
+      },
+      {
+        label: "SSA — Exempt Amounts Under the Earnings Test",
+        url: "https://www.ssa.gov/oact/cola/rtea.html",
+      },
+      {
+        label: "IRS — Publication 915: Social Security and Equivalent Railroad Retirement Benefits",
+        url: "https://www.irs.gov/publications/p915",
+      },
+    ],
+    toolHeading: "Project your savings and Social Security income together",
+    toolSubheading: "See your portfolio balance at retirement, then add your SSA benefit estimate for your total monthly income.",
+    preset: { mode: "projection", currentAge: 55, retirementAge: 67, currentSavings: 400000, monthlyContribution: 1500, annualReturnPct: 7, showSocialSecurity: true },
+    relatedSlugs: ["retirement-savings-calculator", "couples-retirement-calculator", "early-retirement-calculator"],
+  },
+  // -- trend-pass Lane C 2026-11-14: 401k-loan-calculator (generated by content_gen.py; see reports/mindmap-pass/2026-11-14-trend-lane-c-run) --
+  {
+      "published": "2026-11-14",
+      "updated": "2026-11-14",
+      "calculator": "retirement",
+      "slug": "401k-loan-calculator",
+      "title": "401(k) Loan Calculator for Your Maximum Loan and Payment",
+      "metaDescription": "Use this 401(k) loan calculator to find your largest new loan and payment. Enter your vested balance, existing loans, past loan peak, rate and repayment term.",
+      "targetKeyword": "401k loan calculator",
+      "estimatedVolume": 4400,
+      "estimatedKD": 29,
+      "h1": "401(k) Loan Calculator",
+      "introText": "With no earlier plan loans, you can borrow up to half your vested balance, capped at $50,000, with a $10,000 floor. Loans you already owe and your highest plan-loan balance in the past 12 months can lower that amount. The calculator subtracts what you owe. It returns the largest new loan allowed and the payment for the amount you want to borrow. Start with Vested account balance, then enter any Plan loans you owe now and your Highest plan-loan balance, last 12 months. Add the Loan amount you want, Interest rate (APR), Term (years), Payments per year and Loan purpose to see the repayment figures and any rule warnings.\n\nIn our internal modeling, we applied the loan-limit formula to a $60,000 vested balance with no earlier loans. The limit on all plan loans together was $30,000, leaving $30,000 available for a new loan. For a $10,000 loan at an example 8% annual percentage rate (APR), the payment was $202.76 per month over 5 years. Total interest was $2,165.84, and total repaid was $12,165.84. Those payment figures use a level-payment schedule. They do not establish the rate your plan would charge. Change the inputs below to see how a different loan amount, rate or payment schedule changes the result.",
+      "howItWorks": "",
+      "sections": [
+          {
+              "heading": "How the Loan Limit Is Calculated",
+              "body": "Under [26 U.S.C. 72(p)(2)(A)](https://www.law.cornell.edu/uscode/text/26/72), the limit on all plan loans together is the smaller of two amounts. The first starts at $50,000 and falls by the amount your highest plan-loan balance in the past 12 months exceeded what you owe today. The second is the greater of half your vested balance or $10,000.\n\nThe calculator compares those two amounts, then subtracts Plan loans you owe now to show room for a new loan. That distinction matters when you have borrowed before: the limit on all loans is not the same as the amount you can take out today. Enter the highest balance even if you have since paid down that loan, because the earlier balance can reduce the $50,000 prong.\n\n| Vested balance | Owed now | 12-month peak | Limit on all loans | Room for a new loan |\n|---|---|---|---|---|\n| $15,000 | None | None | $10,000 | $10,000 |\n| $60,000 | None | None | $30,000 | $30,000 |\n| $100,000 | None | None | $50,000 | $50,000 |\n| $200,000 | None | None | $50,000 | $50,000 |\n| $200,000 | $10,000 | $20,000 | $40,000 | $30,000 |\n| $200,000 | $20,000 | $50,000 | $20,000 | $0 |\n\nThe $15,000 balance produces a $10,000 limit because half the vested balance is $7,500 and the statutory floor is higher. At a $100,000 vested balance with nothing owed, half the balance reaches the $50,000 cap. A higher vested balance does not raise that cap: the $200,000 example with no loans also has a $50,000 limit.\n\nThe prior-loan example shows why the two subtractions must stay separate. With $10,000 owed and a $20,000 peak, the peak exceeds today's balance by $10,000, reducing the $50,000 prong to $40,000. The calculator then subtracts the $10,000 still owed from the $40,000 limit, leaving $30,000 for a new loan.\n\nSubtracting the $10,000 a second time would count it twice and wrongly leave $20,000 of room. In the last table row, the peak reduces that prong to $20,000, which equals the amount already owed. The result is no room for another loan under the federal cap, even though the vested balance is higher."
+          },
+          {
+              "heading": "Repayment Rules the Calculator Checks",
+              "body": "A general-purpose plan loan must be repayable within 5 years under [26 U.S.C. 72(p)(2)(B) and (C)](https://www.law.cornell.edu/uscode/text/26/72). The statute makes an exception for a loan used to buy a dwelling that will become the participant's main home within a reasonable time. It also requires substantially level payments at least quarterly.\n\nChoose General purpose or Buy a main home under Loan purpose so the calculator can check the term you entered. It warns when a general-purpose term exceeds 5 years or when Payments per year is less often than quarterly. A green note means the entered amount, term and payment frequency fit the federal rules the calculator checks. It does not mean your plan offers loans.\n\nThe calculator also warns when Loan amount you want exceeds Largest new loan allowed. Under [26 U.S.C. 72(p)(1)](https://www.law.cornell.edu/uscode/text/26/72), the portion outside the qualifying loan rules is treated as a distribution. Use the [401(k) early withdrawal calculator](/retirement/401k-early-withdrawal-calculator/) for a tax estimate rather than treating that excess as an ordinary loan payment.\n\nFor payments, the calculator divides APR by Payments per year to get the periodic rate. It multiplies Term (years) by Payments per year to get the number of payments, then applies payment = P x r / (1 - (1 + r)^-n). Each payment covers that period's interest. The remainder reduces the loan balance.\n\n| Example rate | Monthly payment on $10,000 | Term | Total interest |\n|---|---|---|---|\n| 6% | $193.33 | 5 years | $1,599.68 |\n| 8% | $202.76 | 5 years | $2,165.84 |\n| 10% | $212.47 | 5 years | $2,748.23 |\n\nThese rates are examples to replace with the rate in your plan terms. Payment frequency changes the schedule too: at an example 8%, the same $10,000 loan over 5 years has 20 quarterly payments of $611.57 each. At that rate, paying every two weeks produces 130 payments of $93.45 each.\n\nA longer permitted main-home term can lower each payment while increasing total interest in the supplied example. A $30,000 loan at an example 8% costs $608.29 per month over 5 years, with $6,497.51 in total interest. Over 15 years, the main-home example costs $286.70 per month, with $21,605.21 in total interest.\n\nRun your own amount and rate before relying on any example payment. The federal limit and repayment rules determine whether the amount qualifies as a loan rather than a distribution, while the plan document decides whether borrowing is available at all. If the plan document has no loan provision, this calculator cannot make a loan available."
+          },
+          {
+              "heading": "Borrowing From a Solo 401(k)",
+              "body": "The same federal loan-limit formula applies to an owner-only 401(k), so a solo 401k loan calculator needs no separate limit setting. The plan document must provide for loans, and a provision alone does not establish that a participant loan avoids a prohibited transaction under [26 U.S.C. 4975(d)(1)](https://www.law.cornell.edu/uscode/text/26/4975). An owner is generally a key employee under [26 U.S.C. 416(i)](https://www.law.cornell.edu/uscode/text/26/416), so interest on the owner's own plan loan is not deductible under 72(p)(3). Read the solo section of the [401(k) loan rules guide](/guides/401k-loan-rules/), then enter your vested balance in the calculator above."
+          }
+      ],
+      "commonMistakesHeading": "What the Calculator Does Not Include",
+      "commonMistakes": [
+          "The calculator does not include plan fees or determine your plan's interest rate or loan limits. Enter the interest rate and loan amount you want in the calculator.",
+          "The calculator does not estimate income tax or additional tax if a loan is treated as a distribution. Use the [401(k) early withdrawal calculator](/retirement/401k-early-withdrawal-calculator/) for a tax estimate, and ask a tax professional about a missed payment.",
+          "The calculator assigns no market return to money while it is out of the plan and does not determine where repayments are credited. Account for the borrowed money's time out of the market separately. Whether interest you repay is credited to your account depends on the plan document.",
+          "The calculator does not compare a plan loan with another borrowing source. Use [401(k) loan vs HELOC](/compare/401k-loan-vs-heloc/) to compare the borrowing choices."
+      ],
+      "faqs": [
+          {
+              "question": "How are 401k loan amounts calculated?",
+              "answer": "The federal limit on all your plan loans is the smaller of a reduced $50,000 cap or the greater of half your vested balance and $10,000. The cap falls by any amount your highest plan-loan balance in the past 12 months exceeded what you owe today. Subtract loans you owe now from the resulting limit to find room for a new loan. With $60,000 vested and no earlier loans, the limit and room for a new loan are both $30,000."
+          },
+          {
+              "question": "How much would a $10,000 401(k) loan cost per month over 5 years?",
+              "answer": "A $10,000 loan paid monthly over 5 years costs $202.76 per month at an example 8% APR. At example rates of 6% and 10%, the payments are $193.33 and $212.47 per month, respectively. These are example rates. A plan sets its own rate. Enter the interest rate from your plan terms in this calculator to see your own payment."
+          },
+          {
+              "question": "How many 401(k) loans can you have at once?",
+              "answer": "The federal loan-limit text states no maximum number of simultaneous plan loans. It counts every outstanding plan loan toward the limit. Your plan document decides whether loans are available and whether it limits their number. Enter all Plan loans you owe now to calculate the room left for another loan."
+          },
+          {
+              "question": "Can I take a loan from a solo 401(k)?",
+              "answer": "A solo 401(k) can provide for participant loans, but its plan document must allow them. The same federal loan-limit formula applies to an owner-only plan, and a plan provision alone does not settle the prohibited-transaction requirements. Read the solo section of the [401(k) loan rules guide](/guides/401k-loan-rules/) before using the calculator for a proposed loan."
+          },
+          {
+              "question": "What happens if I do not repay a 401(k) loan?",
+              "answer": "A plan loan that fails to meet the qualifying loan rules can be treated as a distribution under 26 U.S.C. 72(p)(1). The calculator does not determine the tax consequences of a missed payment. Ask a tax professional to confirm those consequences, and use the [401(k) early withdrawal calculator](/retirement/401k-early-withdrawal-calculator/) for a tax estimate. Your plan document determines whether loans are offered, the interest rate, fees and any limit on the number of loans."
+          }
+      ],
+      "sources": [
+          {
+              "label": "26 U.S.C. 72(p) — Loans treated as distributions (Cornell Legal Information Institute)",
+              "url": "https://www.law.cornell.edu/uscode/text/26/72"
+          },
+          {
+              "label": "26 U.S.C. 4975 — Tax on prohibited transactions (Cornell Legal Information Institute)",
+              "url": "https://www.law.cornell.edu/uscode/text/26/4975"
+          },
+          {
+              "label": "26 U.S.C. 416(i) — Key employee definition (Cornell Legal Information Institute)",
+              "url": "https://www.law.cornell.edu/uscode/text/26/416"
+          }
+      ],
+      "toolHeading": "Calculate Your 401(k) Loan Limit and Payment",
+      "toolSubheading": "Enter your vested balance, any loans you owe, and the loan you want to see your limit and payment.",
+      "islandId": "loan-401k",
+      "preset": {
+          "vestedBalance": 60000,
+          "outstandingLoans": 0,
+          "highest12": 0,
+          "loanAmount": 10000,
+          "aprPct": 8,
+          "termYears": 5,
+          "paymentsPerYear": 12,
+          "purpose": "general"
+      },
+      "relatedSlugs": [
+          "401k-early-withdrawal-calculator",
+          "retirement-savings-calculator",
+          "rmd-calculator"
+      ]
+  },
+  // -- end 401k-loan-calculator --
+];

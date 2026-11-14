@@ -1,0 +1,103 @@
+>/approval-manifest.json --mindmap-review <RUN>/chart-review.json \
+  --analysis-packet <RUN>/evidence/<slug>/evidence.json
+```
+Check draft one before draft two. The generator applies the remediation ladder to the returned
+draft rather than rejecting it: it **repairs in place** (fence, slug, a missing build-critical
+key, an off-list link stripped with the sentence kept, house style) and logs each repair in
+`meta.guards.repairs`; it **flags** for the auditor (`meta.guards.flags`) a missing content
+field, a stripped citation, a page under the depth floor, and untraceable numbers; it
+**regenerates only** a truncated page (after one retry at double the cap) or unparseable
+output (raw saved). Read `meta.guards` before moving on — never send a whole page back for a
+one-line fix. **`git add` every `.meta.json`** — it is the provenance record.
+
+## Step 3 — verify → template → lint → Phase 4
+
+1. **Topic-residue grep** across each draft for sibling topics that could have leaked from the
+   voice sample or other rows. Read the draft; reject on any claim outside the fact list.
+2. **Template** into THIS repo's store exactly as the pre-migration routine did (the page
+   template, schema builders, dates, related links, and the inline CTA pointing at the
+   consultation route **Phase 0 discovered — never invent a URL**). Every required page field
+   must be present; a missing required field is a lint failure, not a render fallback.
+3. **Mechanical lint (Rung 0)** with whatever this repo ships — `scripts/content_lint.mts`
+   (Next/TS) or the portable `scripts/content_lint.py` — on every new slug, fix until clean.
+   If the repo has no lint, apply the standard's PREFLIGHT list by hand.
+4. **Phase 4 audit is the gate** — hand the auditor the closed fact list(s) AND the allowed URL
+   list with the drafts, so a real sourced fact is not flagged as fabrication. Verify any
+   "unsupported claim" finding against the source before acting on it. Fixes follow
+   `_remediation-ladder.md`, **per page**: Rung-0 mechanical edits in place. Claim and tell
+   findings (unsupported / inferred / contradicted claims, restatements, AI tells) go to
+   **Rung 1 FIX-IN-PLACE first**, never straight to a regeneration — save that page's findings
+   to `reports/mindmap-pass/<TODAY>/audit/<slug>.findings.txt` and run
+   `python3 scripts/lib/content_gen.py fix --draft <draft> --findings <findings.txt> --facts <row prompt> --floor <floor> --allowed-urls <allowed-urls.txt> --mindmap-manifest <RUN>/approval-manifest.json --mindmap-review <RUN>/chart-review.json --analysis-packet <RUN>/evidence/<slug>/evidence.json`,
+   then re-template and re-audit that page in full on the same bar. **A re-audit that still
+   finds claims or tells is another fix round (max 3 per page), not a failed attempt** — it
+   never counts toward the 2-regeneration cap and never drops a page by itself (2026-10-08:
+   both pages were dropped as "failed twice" after a single fix round). A **regeneration**
+   (Rung 2) is only for what `fix` lists as NOT FIXABLE IN PLACE, a page under its floor, an
+   auditor note that the floor can only be met by restating facts, or a page still failing
+   after 3 fix rounds: first EXPAND the closed fact list with sourced facts (always when
+   `meta.guards.fact_budget.thin`), then regenerate with a `# CORRECTIONS FROM THE PHASE 4
+   AUDIT` block appended to the row prompt, and run the fix loop again on the new draft —
+   never hand-write generated prose. Once all allowed audits are exhausted (`roundsRemaining: 0`), NEVER edit or regenerate that route again — automatically publish the exact final audited snapshot unless blocked by a narrow direct legal/physical-harm `liabilityBlock` (e.g. incorrect medical dosing; general medical pricing, locations, attribution wording, and SEO/style findings never block).
+
+`git add` your work; do NOT commit (Phase 9 commits).
+
+## Project specifics for this routine
+
+Match the page template + schema builders Phase 0 discovered so new pages carry the same
+scaffolding as existing pages. Tool rows → built per `phase-3c-tool-build.md`; other asset rows → complete real assets under `_mindmap-execution.md`.
+**The INTRO HUMANIZE step is SKIPPED for every page this phase generated** — they are exempt
+per the content standard's INTRO HUMANIZE section (the generator carries its guards).
+
+## ▶ WHEN THIS PHASE IS DONE — AUTO-CONTINUE. DO NOT ASK THE USER.
+The moment this phase's reviewer gate PASSES, immediately begin the next phase in the SAME
+turn. Do NOT stop or print any question that waits for a human. The `/mindmap-pass` run has
+EXACTLY ONE human stop (the Phase 0 manifest approval); this phase is not it. Phase 8 is an
+informational summary that auto-continues to the Phase 9 push.
+
+**Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.
+
+<!-- mindmap-execution-v1 -->
+Before writing, follow `_mindmap-execution.md`: retrieve approved cases and applicable survey records, execute relevant supported analysis and save current evidence. Use a justified source-based branch when numerical work adds nothing or cannot be defended. Pass the manifest/review/packet flags to every Mindmap writer call.
+<!-- /mindmap-execution-v1 -->
+
+[Source: .claude/commands/mindmap-pass/phase-6-internal-linking.md]
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 17. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 6. Use its exact text under this source/section context.]
+
+# Phase 6 — Internal linking
+
+<!-- chart-obligation: p6-inbound-links-and-nav -->
+> **Anchor text should match the destination's `reader_question` (chart col 10) where one exists.** Plan inbound internal links to every new Phase-3 page (**target ~3 links each** from genuinely relevant existing pages; relevance wins over count — 1–2 strong placements beat a forced link, and homepage header/nav is never touched, footer/body only) plus descriptive outbound internal links to related hubs/spokes (never `"click here"`). Bump rendered updated dates on existing pages edited for links per the repo's date-bump rule, without bumping sitemap `<lastmod>` on link-only touches.
+<!-- /chart-obligation -->
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 16. Use its exact text under this source/section context.]
+
+
+> **Anchor text should match the destination's `reader_question` (chart col 10) where one exists.** A page whose question is "how do I automate client onboarding" earns anchors that read like the question or its answer ("how to build the onboarding automation"), not the bare page title. This is the same principle as the page opener: link on what the reader wants, not on what the page is called.
+
+Execute the internal-linking rows from the chart, AND add inbound internal links to every page created in Phase 3 (**target ~3 links each** from relevant existing pages).
+
+**The ~3 is a target, not a quota — relevance wins over the count.** Only add a link where it is genuinely contextually relevant and reads naturally. If a new page has fewer than 3 *logical* placements, add the ones that fit and STOP — do not manufacture a forced, marginal, or over-optimized exact-match link just to hit the number, and never repeat the same anchor across unrelated pages. A page with 1–2 strong, relevant inbound links is better than 3 where one is a stretch. When you land below the target, note in the phase report which page and why (no more relevant placements exist) — that is an accepted outcome, not a failure.
+
+Guidance:
+- Use the framework `<Link>` with descriptive anchor text — never "click here".
+- **If linking from the homepage, do NOT update the header/nav.** Add links in the footer or within the body of the homepage instead.
+- Any update must maintain the existing UX/UI — do not break the page, clutter it, or make it look ugly. Match the surrounding design, spacing, and styling.
+- Only add links that are genuinely relevant in context; don't force them.
+- `git add`. Do not commit.
+
+## Reviewer gate (Explore subagent)
+- ☐ all chart internal-link rows actioned
+- ☐ every Phase-3 page has inbound links up to the ~3 target where relevant; any page below 3 has a noted reason (no more logical placements) — a relevant 1–2 is acceptable, a forced/marginal link to hit 3 is NOT
+- ☐ homepage header/nav untouched (links only in footer/body)
+- ☐ links use framework `<Link>` + descriptive anchors
+- ☐ no layout/UX breakage or visual clutter
+- ☐ links are contextually relevant
+
+Reject with specifics; retry rule 4 (2 attempts then STOP) applies.
+
+---
+## ▶ WHEN THIS PHASE IS DONE — AUTO-CONTINUE. DO NOT ASK THE USER.
+The moment this phas

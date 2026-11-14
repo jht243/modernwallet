@@ -62,6 +62,8 @@ const howParagraphs = entry.howItWorks.split("\n\n");
 const stats = spokeStats(entry);
 const isBenefitsTool = ["snap-benefits", "aca-subsidy"].includes(entry.islandId ?? "");
 const isUtilityTool = ["inherited-ira-withdrawal-calculator", "medicare-irmaa-calculator", "mileage-log-checker", "snap-benefits", "aca-subsidy"].includes(entry.islandId ?? "");
+// Trend pass Lane C (2026-11-14): the loan-cost islands report usage under their own route slug (Phase 3c data-tool root).
+const isSlugTool = ["loan-401k", "hard-money-loan", "bridge-loan"].includes(entry.islandId ?? "");
 const stateLinks = (entry.stateVariants ?? [])
   .map((slug) => STATE_BY_SLUG[slug])
   .filter((s): s is NonNullable<typeof s> => Boolean(s));
@@ -151,7 +153,7 @@ const jsonLdApp = {
 
     <div class="tool-wrap">
       <ShareButton title={entry.h1} />
-    <section class="tool-section" id={(isChecklist || isSubscriptionCancellationPlanner) ? "checklist-tool" : undefined} aria-label={isSubscriptionCancellationPlanner ? "Interactive subscription cancellation planner" : isChecklist ? "Interactive checklist" : "Interactive calculator"} data-tool={(isChecklist || isSubscriptionCancellationPlanner || isUtilityTool) ? entry.slug : calc.id}>
+    <section class="tool-section" id={(isChecklist || isSubscriptionCancellationPlanner) ? "checklist-tool" : undefined} aria-label={isSubscriptionCancellationPlanner ? "Interactive subscription cancellation planner" : isChecklist ? "Interactive checklist" : "Interactive calculator"} data-tool={(isChecklist || isSubscriptionCancellationPlanner || isUtilityTool || isSlugTool) ? entry.slug : calc.id}>
       <div class="tool-badge"><span class="dot"></span> {isSubscriptionCancellationPlanner ? "Interactive — build your next steps" : isChecklist ? "Interactive — answer a few questions" : "Interactive — edit any field"}</div>
       <CalculatorIsland
         client:only="react"

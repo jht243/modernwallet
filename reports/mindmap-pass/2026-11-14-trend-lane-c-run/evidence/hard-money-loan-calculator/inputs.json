@@ -1,0 +1,3 @@
+{"base":{"purchasePrice":200000,"rehabBudget":50000,"purchaseAdvancePct":90,"rehabAdvancePct":100,"aprPct":12,"pointsPct":2,"months":6,"otherFees":2500},
+ "extension":{"extensionMonths":3,"extensionFeePct":1},"arvCase":{"arv":330000,"sellingCostPct":6,"monthlyHoldingCost":1000},
+ "note":"Every term is an illustrative reader input, not a lender quote or market rate. Cases are hard-coded in calc.py."}

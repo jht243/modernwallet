@@ -1,0 +1,3 @@
+{"base":{"salePrice":400000,"oldMortgagePayoff":200000,"bridgeLoan":100000,"aprPct":10,"originationPct":2,"otherFees":0,"months":6,"sellingCostPct":6},
+ "overlap":{"newMortgagePayment":2500,"oldMonthlyCarrying":1800},"alternative":{"alternativeMonthlyCost":1500},"ltv":{"maxCombinedLtvPct":80},
+ "note":"Every term is an illustrative reader input, not a lender quote or market rate. Cases are hard-coded in calc.py."}

@@ -1,0 +1,79 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "mindmap-write-lane-c",
+ "route": "/guides/401k-loan-rules/",
+ "readerQuestion": "Can I borrow from my solo 401(k)? [ac 4/44 question completions: can i take a loan from a solo 401k, can you borrow from a solo 401k, how do solo 401k loans work, how does a solo 401k loan work; PAA support is for the amount question on the calculator page, not eligibility]",
+ "approvedPlan": {
+  "manifest": {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/approval-manifest.json",
+   "sha256": "03cf28895e4762681567629b28d4b5241d3113ccf1770090f202b37dfc2d2714"
+  },
+  "review": {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/chart-review.json",
+   "sha256": "85acf88a3d4cb83e2e97a7f5edbe948dd407b103d30d1cef2baf18c44dec64b0"
+  },
+  "actionId": "MW-TL-04"
+ },
+ "presentation": {
+  "medium": "text",
+  "placement": "Existing guide, new section 2 after the opening 72(p) limits section",
+  "reason": "A yes-with-conditions verdict about plan documents and the prohibited-transaction exemption is prose; the calculator page handles the numbers.",
+  "readerInputs": [],
+  "interaction": {
+   "decision": "not-useful",
+   "reason": "The answer is a conditional rule, not a computation; a calculator would duplicate TL-01."
+  },
+  "animation": {
+   "decision": "not-useful",
+   "reason": "Nothing changes dynamically."
+  }
+ },
+ "caseSelection": {
+  "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/401k-loan-rules/cases.json",
+  "sha256": "78cd3b4fad795dfeb89e3b684fe86155ff4f023d3ade226f35da869d21ab3fdc"
+ },
+ "caseDecisions": "Retrieved with the exact approved reader question. 8 candidates, none about 401(k) plan loans, short-term real estate loans or ModernWallet readers: they are other Layer3Labs properties, client engagements and a gaming testimonial. ModernWallet's _experience.md has no named-client specifics. Rejected all; no client claim on the page.",
+ "caseUses": [],
+ "exclusions": "No TESTED label and no reviewed-by claim: financial service, _experience.md section G excludes it and no product test exists. Internal-modeling wording only.",
+ "decisionGap": "The guide is framed around employer plans and has no owner-only passage, while 'can i take a loan from a solo 401k' and related questions appear as autocomplete completions. Sampled the 2026-11-14 research pack and autocomplete export; no site-wide uniqueness claimed.",
+ "finding": "A loan from an owner-only 401(k) follows the same 26 U.S.C. 72(p) limits, if the plan document provides for loans. A plan loan is lending between a plan and a disqualified person (4975(c)(1)(B)), and the 4975(d)(1) exemption needs five conditions: availability on a reasonably equivalent basis, no larger amounts for highly compensated employees, specific plan provisions, a reasonable interest rate and adequate security. Section 4975(f)(6) bars the (d) exemption for loans to IRA participants and to employers that establish IRAs, so an IRA-based plan cannot lend to its owner. A 5-percent owner is a key employee (416(i)(1)(A)(ii)), so interest on the owner's own loan is not deductible (72(p)(3)).",
+ "conditions": "Federal statute only; the plan document and its administrator decide whether a given loan meets the conditions. No provider-specific claims. Not tax or legal advice.",
+ "whatWouldChange": "A plan document without a loan provision, a loan that fails any of the five 4975(d)(1) conditions, a change in how a provider administers the plan, or a change to 26 U.S.C. 72(p), 4975 or 416(i).",
+ "basis": "reported",
+ "whyNoQuantitativeAnalysis": "The answer is a conditional legal rule read from statute text, not a computation; the calculator page on the same route family handles the numbers.",
+ "reasoning": "72(p)(1) treats a plan loan as a distribution unless 72(p)(2) applies; 72(p)(2) sets the same caps for every qualified plan. 4975(c)(1)(B) makes lending between a plan and a disqualified person a prohibited transaction; 4975(d)(1)(A)-(E) exempts a participant loan only when all five conditions hold; 4975(f)(6)(A)-(B) disables that exemption for owner-employees, and (B)(iii) limits the loan exclusion to IRA participants and IRA-establishing employers, so a solo 401(k) owner is not categorically barred while an IRA-based plan cannot lend to its owner. 416(i)(1)(A)(ii) makes a 5-percent owner a key employee, and 72(p)(3) denies the interest deduction for a key employee's loan.",
+ "provenance": {
+  "basis": "reported",
+  "supportingRecordIds": [
+   "research/statute-extracts.md"
+  ],
+  "scopeAndLimits": "statute text extracted 2026-11-14; no IRS guidance (404)",
+  "publicMethod": "statute citations linked at first mention",
+  "placement": "new section 2 of the guide and two FAQs"
+ },
+ "medium": "text: a conditional verdict is prose",
+ "sourceUrls": [
+  {
+   "url": "https://www.law.cornell.edu/uscode/text/26/72",
+   "checked": "2026-11-14"
+  },
+  {
+   "url": "https://www.law.cornell.edu/uscode/text/26/4975",
+   "checked": "2026-11-14"
+  },
+  {
+   "url": "https://www.law.cornell.edu/uscode/text/26/416",
+   "checked": "2026-11-14"
+  }
+ ],
+ "sourceArtifacts": [
+  {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/401k-loan-rules/sources.md",
+   "sha256": "162e2c70a7a97b78671dc18c7197480cb01776ce12ebc2a49aa1c93faf2e19fc"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/research/statute-extracts.md",
+   "sha256": "f25d06677f3cf7410054ef1e6639f92f59fb709d605e748204183145225b44e8"
+  }
+ ]
+}

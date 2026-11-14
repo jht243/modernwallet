@@ -1,0 +1,45 @@
+equires narrowing/excluding the proposal rather than presenting an unfinished brief.
+
+The independent chart reviewer must reconcile the action table and briefs one-to-one: every new-page action has a complete brief; every brief has a matching action; targets, keyword evidence, reader question, outline, testing decision, link placements and execution scope agree. Missing or mismatched briefs BLOCK the approval chart. Phase 0 repeats this check when loading an existing/imported chart and renders the full actual briefs before asking for approval. If output length requires multiple messages, show all completed sections before the single approval question; never substitute a shortened example or ask approval on a partial presentation.
+
+After approval, Phase 3 consumes those exact approved briefs. Phase 4 verifies the generated content against them, and the existing later gates verify internal-link/technical/publication execution. Material changes to the proposed scope follow existing approval rules. Brief preparation is not a claim that the page has already been written, professionally reviewed, product-tested or published.
+
+## Compact preparation display takes precedence
+
+The single-row preparation summary supersedes older instructions to display Read/Followed columns or all preparation checks in the approval output. Detailed checking is still mandatory; only its presentation is condensed. Keep every actual new-page brief inline and complete, plus the original action chart, internal-link plan and full execution plan. A successful summary must link the detailed current evidence, never substitute a bare unsupported “passed”.
+
+Fold legacy standalone duplicate-check pass rows into this one preparation summary. Keep the full independent duplicate-review result in the linked readiness evidence and the required existing-page rationale in each page brief. Do not print the aggregate row twice (once in the phase table and again in a separate checklist). Existing final gates accept the preparation-summary pass backed by the detailed duplicate-review evidence.
+
+## Final rendered output and deployment closure
+
+Read and apply `_rendered-page-audit.md` in full. Central answer/setup/availability research must be complete before preparation Passed. Audit complete rendered pages including inherited decision sections, injected copy, dates, schema and links after all planned transformations. Use the shared rendered capture/review/freshness/live comparison commands; changed output invalidates affected approval. Close verified deployment and measurement records. These are enforceable substeps of the existing gates, with no added phase or human approval.
+
+<!-- mindmap-execution-v1 -->
+For Mindmap, enforce `_mindmap-execution.md`: the reviewed structured manifest and `mindmap-gates.py` renderer produce the complete actual chart, its full per-page briefs and one preparation row. Raw/imported charts require revalidation; the writer blocks missing preparation/evidence before a paid call. Install the shared helper, tests and approved public case bank with this contract.
+<!-- /mindmap-execution-v1 -->
+
+
+## Request, presentation and case-use continuity
+
+Inside the existing independent chart and Phase 4 reviews, apply `_mindmap-execution.md`'s original-request mapping, structured presentation decisions and final request-coverage evidence. Both new-page and existing-body actions require a real format/medium choice. Preserve source/request inputs → approved plan/review → execution packet → rendered final review in that order; preparation cannot depend on the final packet that binds back to it. Use the actual source/run artifacts when reusing previous work, without rewriting old PASS receipts. Review context, implementation and outcome uses separately under Layer3's source policy. The final summary must account for every requested requirement across its mapped actions, including honest limits or authorized deferred work. These are checks within existing reviews, not another human approval or a requirement to add every possible content format. Preserve no-addition, local exclusions and all publication permissions.
+
+[Source: .claude/commands/_mindmap-execution.md]
+
+<!-- fleet-author-defaults-v1 -->
+
+**Independent chart review limit.** Before dispatching a chart reviewer, count every completed or reserved independent chart review for the original job, including one from another session or caller. Reuse an approved chart immediately. Allow at most two chart reviews on Bot Scout for every topic. On other sites, allow a third only for unresolved HIGH medical or legal claims specifically substantiated with source evidence by the independent reviewer in the preceding review. Send only those claims and their necessary context. A changed file, a new worker, unrelated edits to the default branch, duplicate checks or formatting cannot create another review slot. Preserve the original rounds and findings. The last reviewer can approve the exact independently verified surviving chart, including an empty chart where warranted. Outstanding unsupported actions stay recorded. Start writing only from a real approved chart. This chart limit is separate from the existing page audit budget.
+
+**Author defaults — owner instruction, 2026-10-29:** Apply `_content-standard.md`, “Existing site author by default; missing person never holds publication,” ahead of older generic named-reviewer rules. Reuse this site's established default/category author automatically. If no person exists, use the existing publisher/editorial identity or omit an optional personal byline; a person can be added later. Do not ask for an author/professional assignment, block preparation or publication, or fabricate credentials/review dates. The independent Phase 4 reviewer is an automatic agent; internal `author`/`reviewer` actor IDs remain distinct and are separate from the public byline. Keep source, safety/exclusion, rendered-page and live-verification checks.
+<!-- /fleet-author-defaults-v1 -->
+
+
+<!-- mindmap-unattended-publication-v1 -->
+## Authorized unattended Mindmap: continue through publication
+
+For local, global and cloud Mindmap runs, resolve execution authority from the actual saved routine or caller before Phase 0. An explicitly authorized end-to-end publishing routine (including the existing `*-auto` callers) uses automatic Phase 0 authorization within its saved site, topic, spending and publication scope. A schedule or cloud environment alone is not authorization. Record the caller/source and authorized scope in the existing run notes; retain the complete independently reviewed chart and explicit `publicationScope`. Never invent approval, broaden permissions, change schedules or enable paused jobs. For an authorized unattended run, save the complete chart, record that existing authorization, and proceed through Phases 1–9 without a confirmation question. Manual runs retain the existing Phase 0 human gate. This scoped rule takes precedence over generic instructions to wait at Phase 0 or stop the whole Mindmap run after one page exhausts rework.
+
+The deterministic chart's `status: ready-for-approval` describes completed preparation. Accept it after `validate-chart` succeeds and the required manual or existing unattended authorization is recorded separately. Do not wait for a nonexistent `ready-for-execution` mutation or edit the generated chart to invent approval. A changed plan requires independent revalidation; changes within existing unattended authorization do not require another human gate. Exclude changes outside that authorization.
+
+**Recover automatically, then continue with publishable work.** Finish missing briefs, source checks, duplicate decisions, evidence records and internal-link plans before preparation PASS. For a failed page, apply the existing remediation ladder: mechanical fixes and targeted corrections only while the page's single shared 1/2/3 audit budget remains. Every independent verification consumes that same budget. Keep valid reviews of unchanged pages. Execute relevant accessible analysis during the run; missing historical test logs do not require owner input. If quantitative analysis adds no value or lacks defensible inputs, use the already permitted, justified source-based answer and truthful labels. When an optional asset or evidence source is unavailable, choose a feasible useful presentation within scope, revise/revalidate its brief, and audit the result. Never replace a central promised deliverable with an unfinished specification. Optional surveys, case matches, numerical analysis and unavailable measurement baselines do not create an extra publication gate; record the real limitation, never fake records, respondents, numbers or PASS results. A source essential to the central answer remains required.
+
+**Release after the configured audit budget.** Across all Mindmap runs (unattended and approved manual runs), once all allowed audits (`1` for `light`, `2` for `standard`, 

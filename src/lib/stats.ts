@@ -16,6 +16,9 @@ import { computeBudget } from "./budget";
 import { computeMca, type McaInput } from "./merchant-cash-advance";
 import { computeFactoring, type FactoringInput } from "./invoice-factoring";
 import { computeLoc, type LocInput } from "./business-line-of-credit";
+import { computeLoan401k, loanLimit, type Loan401kInput } from "./401k-loan";
+import { computeHardMoney, type HardMoneyInput } from "./hard-money-loan";
+import { computeBridge, type BridgeInput } from "./bridge-loan";
 import { fmtUSD, fmtMonths, fmtPct, fmtNum } from "./format";
 
 export interface Stat {
@@ -26,6 +29,10 @@ export interface Stat {
 export function spokeStats(entry: SpokeEntry): Stat[] {
   if (["inherited-ira-withdrawal-calculator", "medicare-irmaa-calculator", "mileage-log-checker", "snap-benefits", "aca-subsidy"].includes(entry.islandId ?? "")) return [];
   // Buyer-journey override tools key off the spoke's islandId + preset.kind.
+  // Trend pass Lane C (2026-11-14): loan-cost islands compute their own headline stats from the preset.
+  if (entry.islandId === "loan-401k") return loan401kStats(entry.preset as Partial<Loan401kInput>);
+  if (entry.islandId === "hard-money-loan") return hardMoneyStats(entry.preset as Partial<HardMoneyInput>);
+  if (entry.islandId === "bridge-loan") return bridgeStats(entry.preset as Partial<BridgeInput>);
   if (entry.islandId === "affordability") return affordabilityStats(entry.preset as Record<string, unknown>);
   if (entry.islandId === "mortgage-extras") return extrasStats(entry.preset as Record<string, unknown>);
   switch (entry.calculator) {
@@ -53,6 +60,39 @@ export function spokeStats(entry: SpokeEntry): Stat[] {
     default:
       return [];
   }
+}
+
+function loan401kStats(preset: Partial<Loan401kInput>): Stat[] {
+  const i: Loan401kInput = { vestedBalance: 0, outstandingLoans: 0, highest12: 0, loanAmount: 0, aprPct: 0, termYears: 0, paymentsPerYear: 12, purpose: "general", ...preset };
+  const lim = loanLimit(i.vestedBalance, i.outstandingLoans, i.highest12);
+  const r = computeLoan401k(i);
+  if (!r.valid) return [];
+  return [
+    { label: `largest new loan at ${fmtUSD(i.vestedBalance)} vested`, value: fmtUSD(lim.maxNewLoan) },
+    { label: `payment on ${fmtUSD(i.loanAmount)} over ${fmtNum(i.termYears)} years`, value: fmtUSD(r.payment, { cents: true }) },
+    { label: "total interest", value: fmtUSD(r.totalInterest) },
+  ];
+}
+
+function hardMoneyStats(preset: Partial<HardMoneyInput>): Stat[] {
+  const i: HardMoneyInput = { purchasePrice: 0, rehabBudget: 0, purchaseAdvancePct: 0, rehabAdvancePct: 0, aprPct: 0, pointsPct: 0, months: 0, otherFees: 0, extensionMonths: 0, extensionFeePct: 0, drawMode: "closing", arv: 0, sellingCostPct: 0, monthlyHoldingCost: 0, ...preset };
+  const r = computeHardMoney(i);
+  if (!r.valid) return [];
+  return [
+    { label: "total financing cost on the example terms", value: fmtUSD(r.totalFinancingCost) },
+    { label: "monthly interest-only payment", value: fmtUSD(r.monthlyInterestFull) },
+    { label: "loan to cost", value: fmtPct(r.ltcPct, 0) },
+  ];
+}
+
+function bridgeStats(preset: Partial<BridgeInput>): Stat[] {
+  const i: BridgeInput = { salePrice: 0, oldMortgagePayoff: 0, bridgeLoan: 0, aprPct: 0, originationPct: 0, otherFees: 0, months: 0, newMortgagePayment: 0, oldMonthlyCarrying: 0, sellingCostPct: 0, alternativeMonthlyCost: 0, maxCombinedLtvPct: 0, ...preset };
+  const r = computeBridge(i);
+  if (!r.valid) return [];
+  return [
+    { label: `bridge cost over ${fmtNum(i.months)} months on the example terms`, value: fmtUSD(r.bridgeCost) },
+    { label: "net proceeds from the old home", value: fmtUSD(r.netProceeds) },
+  ];
 }
 
 function mcaStats(preset: Partial<McaInput>): Stat[] {

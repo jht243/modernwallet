@@ -1,0 +1,91 @@
+{
+ "slug": "401k-loan-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "gpt-6-sol",
+ "provider": "openai",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_OPENAI_KEY",
+ "finish_reason": "STOP",
+ "words": 1645,
+ "floor": 1000,
+ "input_tokens": 23549,
+ "output_tokens": 3146,
+ "thinking_tokens": 516,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.0837,
+ "guards": {
+  "repairs": [
+   "slug None -> '401k-loan-calculator'"
+  ],
+  "flags": [
+   "emptied by the claim check (nothing in the fact list could carry it): ['How the Loan Limit Is Calculated', 'Repayment Rules the Calculator Checks', 'Borrowing From a Solo 401(k)'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1645,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 794,
+   "floor": 1000,
+   "ratio": 0.79,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    4,
+    0
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we applied the loan-limit formula in our internal modeling to a $60,000 vested balance with no earlier loans.",
+     "replacement": "In our internal modeling, we applied the loan-limit formula to a $60,000 vested balance with no earlier loans.",
+     "type": "unsupported",
+     "why": "SOURCE names the site The Modern Wallet, not ModernWallet."
+    },
+    {
+     "id": "commonMistakes[0]",
+     "quote": "Use the rate and borrowing terms in your plan document when entering an amount.",
+     "replacement": "Enter the interest rate and loan amount you want in the calculator.",
+     "type": "unlinked-directive",
+     "why": "Directs readers to plan documentation for terms without a link in the sentence."
+    },
+    {
+     "id": "commonMistakes[2]",
+     "quote": "Account for the missed market exposure separately and use your plan document to determine whether interest you repay is credited to your account.",
+     "replacement": "Account for the borrowed money's time out of the market separately. Whether interest you repay is credited to your account depends on the plan document.",
+     "type": "unlinked-directive",
+     "why": "Directs readers to plan documentation to determine a fact without a link."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Your plan document sets the loan terms you need to review.",
+     "replacement": "Your plan document determines whether loans are offered, the interest rate, fees and any limit on the number of loans.",
+     "type": "unlinked-directive",
+     "why": "Tells readers to review plan documentation without a link in the sentence."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1638
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 50.6,
+ "response_id": "resp_0b3f900ecb6ac521006af812e00b7487d290d89cc089ce78fa",
+ "generated_at": "2026-11-14T07:51:45+0000"
+}

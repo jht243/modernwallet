@@ -1,0 +1,62 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "mindmap-write-lane-c",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/retirement/401k-loan-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/real-estate/hard-money-loan-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/real-estate/bridge-loan-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/401k-loan-rules/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/compare/401k-loan-vs-heloc/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/compare/sep-ira-vs-solo-401k/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/compare/bridge-loan-vs-heloc/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/real-estate-investment-options/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/real-estate/cash-on-cash-return-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "trend-lane-c-2026-11-14"
+}

@@ -1,0 +1,17 @@
+## Can a Solo 401(k) Lend to Its Owner?
+
+Yes, a solo 401(k) can lend to its owner when the plan document provides for loans, and the same [26 U.S.C. § 72(p)(2)](https://www.law.cornell.edu/uscode/text/26/72) limits apply. Lending between a plan and a disqualified person is generally a prohibited transaction under [26 U.S.C. § 4975(c)(1)(B)](https://www.law.cornell.edu/uscode/text/26/4975). The statute provides an exception for a loan to a disqualified person who is a plan participant or beneficiary, but a provision allowing loans is only one part of that exception.
+
+Under § 4975(d)(1), the loan must meet all five conditions:
+
+1. The loan must be available to all such participants or beneficiaries on a reasonably equivalent basis.
+2. Highly compensated employees must not be able to borrow larger amounts than other employees can borrow.
+3. The loan must follow specific provisions for loans set out in the plan.
+4. The loan must bear a reasonable rate of interest.
+5. The loan must be adequately secured.
+
+The loan exception is unavailable for lending to an owner of an individual retirement plan under § 4975(f)(6). A SEP, SIMPLE, or traditional individual retirement account (IRA) therefore cannot lend to its owner. That restriction does not categorically bar a solo 401(k) loan. Nothing in these conditions provides a workaround for borrowing from an IRA. For a different borrowing source, read [401(k) loan vs HELOC](/compare/401k-loan-vs-heloc/).
+
+An owner is generally a key employee because [26 U.S.C. § 416(i)(1)(A)](https://www.law.cornell.edu/uscode/text/26/416) includes a 5-percent owner in that category. Under § 72(p)(3), interest on the owner's own plan loan is not deductible during a period when the owner is a key employee. The plan document and its administrator determine whether a given loan meets the loan conditions.
+
+Run your balance through the [401(k) loan calculator](/retirement/401k-loan-calculator/).

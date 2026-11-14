@@ -1,0 +1,426 @@
+{
+ "limits": [
+  {
+   "vested": 15000,
+   "owed": 0,
+   "highest12": 0,
+   "prongDollar": 50000.0,
+   "prongVested": 10000,
+   "totalLimit": 10000,
+   "maxNewLoan": 10000
+  },
+  {
+   "vested": 60000,
+   "owed": 0,
+   "highest12": 0,
+   "prongDollar": 50000.0,
+   "prongVested": 30000.0,
+   "totalLimit": 30000.0,
+   "maxNewLoan": 30000.0
+  },
+  {
+   "vested": 200000,
+   "owed": 0,
+   "highest12": 0,
+   "prongDollar": 50000.0,
+   "prongVested": 100000.0,
+   "totalLimit": 50000.0,
+   "maxNewLoan": 50000.0
+  },
+  {
+   "vested": 100000,
+   "owed": 0,
+   "highest12": 0,
+   "prongDollar": 50000.0,
+   "prongVested": 50000.0,
+   "totalLimit": 50000.0,
+   "maxNewLoan": 50000.0
+  },
+  {
+   "vested": 200000,
+   "owed": 10000,
+   "highest12": 20000,
+   "prongDollar": 40000,
+   "prongVested": 100000.0,
+   "totalLimit": 40000,
+   "maxNewLoan": 30000
+  },
+  {
+   "vested": 200000,
+   "owed": 20000,
+   "highest12": 50000,
+   "prongDollar": 20000,
+   "prongVested": 100000.0,
+   "totalLimit": 20000,
+   "maxNewLoan": 0.0
+  }
+ ],
+ "payments": [
+  {
+   "amount": 10000,
+   "aprPct": 6,
+   "years": 5,
+   "paymentsPerYear": 12,
+   "periods": 60,
+   "payment": 193.33,
+   "totalInterest": 1599.68,
+   "totalRepaid": 11599.68,
+   "yearly": [
+    {
+     "year": 1,
+     "paid": 2319.94,
+     "interest": 551.9,
+     "endBalance": 8231.97
+    },
+    {
+     "year": 2,
+     "paid": 2319.94,
+     "interest": 442.86,
+     "endBalance": 6354.89
+    },
+    {
+     "year": 3,
+     "paid": 2319.94,
+     "interest": 327.08,
+     "endBalance": 4362.03
+    },
+    {
+     "year": 4,
+     "paid": 2319.94,
+     "interest": 204.17,
+     "endBalance": 2246.27
+    },
+    {
+     "year": 5,
+     "paid": 2319.94,
+     "interest": 73.67,
+     "endBalance": 0.0
+    }
+   ]
+  },
+  {
+   "amount": 10000,
+   "aprPct": 8,
+   "years": 5,
+   "paymentsPerYear": 12,
+   "periods": 60,
+   "payment": 202.76,
+   "totalInterest": 2165.84,
+   "totalRepaid": 12165.84,
+   "yearly": [
+    {
+     "year": 1,
+     "paid": 2433.17,
+     "interest": 738.77,
+     "endBalance": 8305.6
+    },
+    {
+     "year": 2,
+     "paid": 2433.17,
+     "interest": 598.13,
+     "endBalance": 6470.56
+    },
+    {
+     "year": 3,
+     "paid": 2433.17,
+     "interest": 445.82,
+     "endBalance": 4483.22
+    },
+    {
+     "year": 4,
+     "paid": 2433.17,
+     "interest": 280.88,
+     "endBalance": 2330.93
+    },
+    {
+     "year": 5,
+     "paid": 2433.17,
+     "interest": 102.24,
+     "endBalance": 0.0
+    }
+   ]
+  },
+  {
+   "amount": 10000,
+   "aprPct": 10,
+   "years": 5,
+   "paymentsPerYear": 12,
+   "periods": 60,
+   "payment": 212.47,
+   "totalInterest": 2748.23,
+   "totalRepaid": 12748.23,
+   "yearly": [
+    {
+     "year": 1,
+     "paid": 2549.65,
+     "interest": 926.96,
+     "endBalance": 8377.32
+    },
+    {
+     "year": 2,
+     "paid": 2549.65,
+     "interest": 757.05,
+     "endBalance": 6584.72
+    },
+    {
+     "year": 3,
+     "paid": 2549.65,
+     "interest": 569.34,
+     "endBalance": 4604.42
+    },
+    {
+     "year": 4,
+     "paid": 2549.65,
+     "interest": 361.98,
+     "endBalance": 2416.75
+    },
+    {
+     "year": 5,
+     "paid": 2549.65,
+     "interest": 132.9,
+     "endBalance": 0.0
+    }
+   ]
+  },
+  {
+   "amount": 10000,
+   "aprPct": 8,
+   "years": 5,
+   "paymentsPerYear": 4,
+   "periods": 20,
+   "payment": 611.57,
+   "totalInterest": 2231.34,
+   "totalRepaid": 12231.34,
+   "yearly": [
+    {
+     "year": 1,
+     "paid": 2446.27,
+     "interest": 749.95,
+     "endBalance": 8303.68
+    },
+    {
+     "year": 2,
+     "paid": 2446.27,
+     "interest": 610.12,
+     "endBalance": 6467.53
+    },
+    {
+     "year": 3,
+     "paid": 2446.27,
+     "interest": 458.76,
+     "endBalance": 4480.02
+    },
+    {
+     "year": 4,
+     "paid": 2446.27,
+     "interest": 294.93,
+     "endBalance": 2328.68
+    },
+    {
+     "year": 5,
+     "paid": 2446.27,
+     "interest": 117.59,
+     "endBalance": 0.0
+    }
+   ]
+  },
+  {
+   "amount": 10000,
+   "aprPct": 8,
+   "years": 5,
+   "paymentsPerYear": 26,
+   "periods": 130,
+   "payment": 93.45,
+   "totalInterest": 2148.15,
+   "totalRepaid": 12148.15,
+   "yearly": [
+    {
+     "year": 1,
+     "paid": 2429.63,
+     "interest": 735.75,
+     "endBalance": 8306.12
+    },
+    {
+     "year": 2,
+     "paid": 2429.63,
+     "interest": 594.9,
+     "endBalance": 6471.39
+    },
+    {
+     "year": 3,
+     "paid": 2429.63,
+     "interest": 442.33,
+     "endBalance": 4484.09
+    },
+    {
+     "year": 4,
+     "paid": 2429.63,
+     "interest": 277.08,
+     "endBalance": 2331.54
+    },
+    {
+     "year": 5,
+     "paid": 2429.63,
+     "interest": 98.09,
+     "endBalance": 0.0
+    }
+   ]
+  },
+  {
+   "amount": 30000,
+   "aprPct": 8,
+   "years": 5,
+   "paymentsPerYear": 12,
+   "periods": 60,
+   "payment": 608.29,
+   "totalInterest": 6497.51,
+   "totalRepaid": 36497.51,
+   "yearly": [
+    {
+     "year": 1,
+     "paid": 7299.5,
+     "interest": 2216.3,
+     "endBalance": 24916.8
+    },
+    {
+     "year": 2,
+     "paid": 7299.5,
+     "interest": 1794.4,
+     "endBalance": 19411.69
+    },
+    {
+     "year": 3,
+     "paid": 7299.5,
+     "interest": 1337.47,
+     "endBalance": 13449.66
+    },
+    {
+     "year": 4,
+     "paid": 7299.5,
+     "interest": 842.63,
+     "endBalance": 6992.79
+    },
+    {
+     "year": 5,
+     "paid": 7299.5,
+     "interest": 306.71,
+     "endBalance": 0.0
+    }
+   ]
+  },
+  {
+   "amount": 30000,
+   "aprPct": 8,
+   "years": 15,
+   "paymentsPerYear": 12,
+   "periods": 180,
+   "payment": 286.7,
+   "totalInterest": 21605.21,
+   "totalRepaid": 51605.21,
+   "yearly": [
+    {
+     "year": 1,
+     "paid": 3440.35,
+     "interest": 2360.99,
+     "endBalance": 28920.65
+    },
+    {
+     "year": 2,
+     "paid": 3440.35,
+     "interest": 2271.41,
+     "endBalance": 27751.71
+    },
+    {
+     "year": 3,
+     "paid": 3440.35,
+     "interest": 2174.39,
+     "endBalance": 26485.74
+    },
+    {
+     "year": 4,
+     "paid": 3440.35,
+     "interest": 2069.31,
+     "endBalance": 25114.71
+    },
+    {
+     "year": 5,
+     "paid": 3440.35,
+     "interest": 1955.52,
+     "endBalance": 23629.88
+    },
+    {
+     "year": 6,
+     "paid": 3440.35,
+     "interest": 1832.28,
+     "endBalance": 22021.81
+    },
+    {
+     "year": 7,
+     "paid": 3440.35,
+     "interest": 1698.81,
+     "endBalance": 20280.27
+    },
+    {
+     "year": 8,
+     "paid": 3440.35,
+     "interest": 1554.26,
+     "endBalance": 18394.18
+    },
+    {
+     "year": 9,
+     "paid": 3440.35,
+     "interest": 1397.72,
+     "endBalance": 16351.55
+    },
+    {
+     "year": 10,
+     "paid": 3440.35,
+     "interest": 1228.18,
+     "endBalance": 14139.38
+    },
+    {
+     "year": 11,
+     "paid": 3440.35,
+     "interest": 1044.57,
+     "endBalance": 11743.6
+    },
+    {
+     "year": 12,
+     "paid": 3440.35,
+     "interest": 845.72,
+     "endBalance": 9148.98
+    },
+    {
+     "year": 13,
+     "paid": 3440.35,
+     "interest": 630.37,
+     "endBalance": 6339.0
+    },
+    {
+     "year": 14,
+     "paid": 3440.35,
+     "interest": 397.14,
+     "endBalance": 3295.79
+    },
+    {
+     "year": 15,
+     "paid": 3440.35,
+     "interest": 144.56,
+     "endBalance": 0.0
+    }
+   ]
+  }
+ ],
+ "rules": {
+  "termOver5GeneralPurpose": "flag",
+  "paymentsUnderQuarterly": "flag",
+  "residenceException": "term over 5 years allowed"
+ },
+ "doubleDeductionCheck": {
+  "vested": 200000,
+  "owed": 10000,
+  "highest12": 20000,
+  "statute": 30000,
+  "doubleDeductionReading": 20000
+ }
+}

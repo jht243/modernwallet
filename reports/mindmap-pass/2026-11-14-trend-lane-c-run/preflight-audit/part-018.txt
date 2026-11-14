@@ -1,0 +1,69 @@
+lone never substitutes for final rendered review:
+
+1. `[ -d node_modules ] || npm ci --no-audit --no-fund` (fall back to `npm install --no-audit --no-fund` if there is no lockfile), then `npm run build`, then `npm run check-depth` on the new routes. Exit 0 = pass; non-zero = the named pages are under their floor.
+2. If the install or build fails, record the reason and measure source prose as a provisional depth check: concatenate each affected page’s intro, section bodies, FAQ answers and verdict, excluding title, metadata, schema, CTA boilerplate and code. Count with a real command and compare with the applicable floor. Record `depth: measured from source (build unavailable: <reason>)`. Resolve the build/runtime failure before final rendered review and publication.
+
+Source measurement can establish the word-count floor. It cannot establish a rendered-page PASS. Final approval and publication remain blocked until the complete actual render is available and independently checked under `_rendered-page-audit.md`.
+
+**If this repo has no lint script**, the reviewer performs the same mechanical checks itself as an explicit FIRST pass, reports them as `MECHANICAL`, and the orchestrator applies those fixes directly. Mechanical findings still never count as a rework attempt. Do not add judgment gates (neutrality, "honest", inflated adjectives, register, depth) to a lint script — those need a reader and belong to the reviewer.
+
+### Rung 1 — FIX-IN-PLACE (reviewer supplies the replacement; no writer round-trip)
+
+For every finding where the reviewer can quote the offending text **and** write the exact replacement, the reviewer's report carries both, in this shape:
+
+```
+FIX <page> <field>: "<offending text>" → "<replacement text>"
+```
+
+Typical Rung 1 findings: a ChatGPT tell, a pseudo-cleft, an unlinked directive (add the deep link), a coy abstraction (substitute the real name), an unlinked company first-mention (link it), a headline tell, a subtitle restatement, an orphaned first-person "we", a tee-up in the wrong position, a self-asserted neutrality sentence (delete it), a bare feature missing its consequence, a stale "last updated" date on an edited page.
+
+The **orchestrator** applies each replacement verbatim with a targeted edit, re-runs Rung 0, then asks the reviewer to re-read **only the edited fields in their surrounding paragraph** and confirm each fix. Do not reload the content standard for this. Do not re-run the writer phase. Do not re-audit pages that were not edited. **A fix-in-place round is not a rework attempt.**
+
+The rule the reviewer follows: if you can write the corrected sentence, you have already done the work — hand over the replacement rather than a complaint. A finding reported without a replacement, where one was possible, is an incomplete report.
+
+**Unsupported claims are Rung 1 too (API-written pages).** An invented, unsourced, contradicted or inferred claim — a sentence, bullet or table cell the closed fact list does not support — is fixed IN PLACE by deleting it or restating what the fact list does say. Never by regenerating the page: a whole-page re-roll rewrites every sentence and fails on NEW invented claims (2026-10: 19 of 19 drafts dropped that way across 8 routines). For a page written by `scripts/lib/content_gen.py`, save the reviewer's findings for that page (quote + defect per finding, claims AND tells) to a file and run:
+
+```bash
+python3 scripts/lib/content_gen.py fix --draft <draft> --findings <findings.txt> \
+    --facts <row prompt> --floor <floor> [--allowed-urls <urls.txt>]
+```
+
+It splices model-written replacements by exact string match (a replacement may only restate the fact list, or delete), runs one claim-check pass that deletes anything the replacements left unsupported, keeps a `.pre-fix-N` backup, and lists anything it could not fix as `NOT FIXABLE IN PLACE`. Then apply the draft to the store, re-run Rung 0, and re-audit **the fixed page in full** (the bar is unchanged: zero unsupported claims). `fix` never adds a fact and is not a rework attempt, **and neither is a re-audit that still finds claims or tells after a fix round**: save those new findings to a fresh findings file and run `fix` again, up to **3 fix rounds per page** (pages near the fact-budget edge routinely need 2). A failed post-`fix` re-audit never counts toward the Rung 2 cap and never drops a page by itself (2026-10-08 keyword-gap: both drafts were dropped as "failed the audit twice" after one fix round, while same-day mindmap pages with thinner fact lists shipped after their second). Only what `fix` lists as NOT FIXABLE IN PLACE, a page its fixes push under the depth floor, an auditor note that the floor can only be met by restating facts, or a page still failing after 3 fix rounds goes to Rung 2.
+
+### Rung 2 — REWORK (back to the writer, this page only)
+
+Reserved for findings that need new substance, new research, or a structurally different page:
+
+- a claim `content_gen.py fix` reported NOT FIXABLE IN PLACE (the page needs a fact it does not have)
+- depth under the floor after unsupported claims were removed, or a page that can only reach its floor by restating the same facts: EXPAND THE CLOSED FACT LIST with sourced facts first (the draft meta's `thin fact list` flag says so), then regenerate; never pad, never loosen the audit
+- an experience claim `_experience.md` does not license
+- the wrong register for what the page does
+- depth under the floor for its page type
+- a missing required page element (direct answer up top, who-this-is-not-for, what-would-change-our-answer, the proprietary anchor)
+- a dead-end problem the page raises and never resolves
+- a section that has to be rewritten rather than repaired
+
+Hand the reviewer's notes for **that page only** to the writer phase and re-run it for that page. A regenerated API page gets the claim check again automatically; anything the audit still finds goes back through Rung 1 `fix`, not straight to another rework. The reworked page then gets a full audit again, from Rung 0.
+
+**One shared Mindmap audit budget & fleet auto-publish at exhaustion.** An activated Mindmap page has its configured total 1/2/3 independent rounds, including corrections; there is no separate two-rework allowance. Once all allowed audits (or max 2 Rung-2 reworks in non-Mindmap routines) are exhausted, stop editorial edits immediately and automatically publish the exact final audited candidate with FAIL findings logged honestly — blocking ONLY for narrow direct legal/physical-harm liability edge cases (`liabilityBlock`, e.g. incorrect medical dosing or acute safety hazards; never general medical pricing, clinic locations, scheduling, educational overviews, attribution phrasing, or SEO/style notes), explicit `professionalReviewRequired: true`, explicit client holds, or broken build/HTTP 404/500. Preserve unrelated work and unchanged-page evidence.
+
+---
+
+## PER-PAGE PASS STATE
+
+A page that PASSED stays passed. Fixing or reworking one page does not re-open the audit on its siblings, and the rework counter is **per page**, never per phase. This is what stops one bad page from consuming both attempts on behalf of a batch that was otherwise fine.
+
+This does not weaken the re-audit invariant: a page whose own text changed is always re-checked on that exact text (Rung 1 re-reads the edited fields in context; Rung 2 re-audits the page in full). What is forbidden is re-auditing a page whose bytes did not change.
+
+The reviewer report ends with one line per page:
+
+```
+<page>: PASS | FIX-IN-PLACE (n) | REWORK (attempt k/2) | PUBLISH-AT-AUDIT-LIMIT | BLOCKED-LIABILITY — <direct legal/physical harm>
+```
+
+## Actual dependency & direct-liability failures
+
+A required mechanical build/runtime/HTTP-200 check, canonical instruction check, independent-review execution, explicit `professionalReviewRequired: true`, explicit paid-client hold, or narrow direct legal/physical-harm `liabilityBlock` (e.g. incorrect medical dosing — never general medical pricing, locations, attribution wording, `scopeAndExclusions`, or SEO/style findings) remains enforced. Repair mechanical issues automatically within existing authority, retaining exact work and evidence; report an actual unavailable dependency or `liabilityBlock` honestly while publishing all non-blocked sibling pages. Once audits/reworks are exhausted without a `liabilityBlock`, automatically publish the exact final audited candidate — never fabricate a PASS, edit post-cap, or silently add another audit.
+
+[Source: .claude/commands/_content-review-policy.md]
+**Owner fleet audit-exhaustion auto-publish & narrow legal-liability exception, November 13, 2026.** Across the entire fleet, once all allowed independent audits are exhausted (`1` for `light`, `2` for `standard`, `2` or `3` for `high`), **automatically publish the exact final audited snapshot** (`disposition: "publish-at-audit-limit"`). NEVER block, hold, revert, mark `draft: true`, drop, or ask the user how held pages shoul

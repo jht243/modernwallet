@@ -1,0 +1,3 @@
+A solo 401(k) loan is possible if the plan document provides for loans. It must follow the same amount, term, and payment rules under 26 U.S.C. § 72(p) and meet the other conditions in 26 U.S.C. § 4975(d)(1). A loan provision in the plan document alone does not satisfy those conditions.
+
+An owner is generally a key employee under 26 U.S.C. § 416(i)(1)(A)(ii). Under 26 U.S.C. § 72(p)(3), interest on the owner's own plan loan is not deductible. Use the [401(k) loan calculator](/retirement/401k-loan-calculator/) to see the limit and payment for your balance.

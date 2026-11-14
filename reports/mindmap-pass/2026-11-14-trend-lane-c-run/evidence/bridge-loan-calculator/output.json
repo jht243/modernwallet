@@ -1,0 +1,104 @@
+{
+ "base6mo": {
+  "fees": 2000.0,
+  "monthlyInterest": 833.33,
+  "interest": 5000.0,
+  "bridgeCost": 7000.0,
+  "sellingCosts": 24000.0,
+  "netProceeds": 69000.0,
+  "monthlyOverlapOutlay": 0,
+  "totalOverlapOutlay": 0
+ },
+ "months3": {
+  "fees": 2000.0,
+  "monthlyInterest": 833.33,
+  "interest": 2500.0,
+  "bridgeCost": 4500.0,
+  "sellingCosts": 24000.0,
+  "netProceeds": 71500.0,
+  "monthlyOverlapOutlay": 0,
+  "totalOverlapOutlay": 0
+ },
+ "months9": {
+  "fees": 2000.0,
+  "monthlyInterest": 833.33,
+  "interest": 7500.0,
+  "bridgeCost": 9500.0,
+  "sellingCosts": 24000.0,
+  "netProceeds": 66500.0,
+  "monthlyOverlapOutlay": 0,
+  "totalOverlapOutlay": 0
+ },
+ "months12": {
+  "fees": 2000.0,
+  "monthlyInterest": 833.33,
+  "interest": 10000.0,
+  "bridgeCost": 12000.0,
+  "sellingCosts": 24000.0,
+  "netProceeds": 64000.0,
+  "monthlyOverlapOutlay": 0,
+  "totalOverlapOutlay": 0
+ },
+ "overlap": {
+  "fees": 2000.0,
+  "monthlyInterest": 833.33,
+  "interest": 5000.0,
+  "bridgeCost": 7000.0,
+  "sellingCosts": 24000.0,
+  "netProceeds": 69000.0,
+  "monthlyOverlapOutlay": 4300,
+  "totalOverlapOutlay": 25800
+ },
+ "breakEvenAlt1500": {
+  "fees": 2000.0,
+  "monthlyInterest": 833.33,
+  "interest": 5000.0,
+  "bridgeCost": 7000.0,
+  "sellingCosts": 24000.0,
+  "netProceeds": 69000.0,
+  "monthlyOverlapOutlay": 0,
+  "totalOverlapOutlay": 0,
+  "breakEvenMonths": 3.0
+ },
+ "ltv80": {
+  "fees": 2000.0,
+  "monthlyInterest": 833.33,
+  "interest": 5000.0,
+  "bridgeCost": 7000.0,
+  "sellingCosts": 24000.0,
+  "netProceeds": 69000.0,
+  "monthlyOverlapOutlay": 0,
+  "totalOverlapOutlay": 0,
+  "maxBridgeFromLtv": 120000.0
+ },
+ "payoff300k": {
+  "fees": 2000.0,
+  "monthlyInterest": 833.33,
+  "interest": 5000.0,
+  "bridgeCost": 7000.0,
+  "sellingCosts": 24000.0,
+  "netProceeds": -31000.0,
+  "monthlyOverlapOutlay": 0,
+  "totalOverlapOutlay": 0
+ },
+ "noOrigination": {
+  "fees": 0.0,
+  "monthlyInterest": 833.33,
+  "interest": 5000.0,
+  "bridgeCost": 5000.0,
+  "sellingCosts": 24000.0,
+  "netProceeds": 71000.0,
+  "monthlyOverlapOutlay": 0,
+  "totalOverlapOutlay": 0
+ },
+ "zeroMonths": {
+  "fees": 2000.0,
+  "monthlyInterest": 833.33,
+  "interest": 0.0,
+  "bridgeCost": 2000.0,
+  "sellingCosts": 24000.0,
+  "netProceeds": 74000.0,
+  "monthlyOverlapOutlay": 0,
+  "totalOverlapOutlay": 0
+ }
+}

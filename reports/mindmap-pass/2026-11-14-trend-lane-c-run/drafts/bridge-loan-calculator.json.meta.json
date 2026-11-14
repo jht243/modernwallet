@@ -1,0 +1,77 @@
+{
+ "slug": "bridge-loan-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "gpt-6-sol",
+ "provider": "openai",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_OPENAI_KEY",
+ "finish_reason": "STOP",
+ "words": 1542,
+ "floor": 1000,
+ "input_tokens": 22787,
+ "output_tokens": 3184,
+ "thinking_tokens": 979,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.0872,
+ "guards": {
+  "repairs": [
+   "slug None -> 'bridge-loan-calculator'"
+  ],
+  "flags": [
+   "emptied by the claim check (nothing in the fact list could carry it): ['What a Bridge Loan Costs Month by Month', 'How Much You Can Borrow', 'When the Old Home Sells Late'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1542,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 479,
+   "floor": 1000,
+   "ratio": 0.48,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    0
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we ran one example sale through the calculator in our internal modeling and found a $7,000 bridge loan cost after 6 months.",
+     "replacement": "In our internal modeling, we ran one example sale through the calculator and found a $7,000 bridge loan cost after 6 months.",
+     "type": "unsupported",
+     "why": "SOURCE names the site The Modern Wallet, not ModernWallet."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "The [guide to buying and selling a house at the same time](/guides/how-to-buy-and-sell-a-house-at-the-same-time/) covers the broader sequence around the purchase and sale.",
+     "replacement": "For a related guide, see the [guide to buying and selling a house at the same time](/guides/how-to-buy-and-sell-a-house-at-the-same-time/).",
+     "type": "unsupported",
+     "why": "SOURCE identifies the guide but does not state that it covers a broader sequence."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1548
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 48.6,
+ "response_id": "resp_0e6be2dbd315d58b006af8124f92f887d283c2742df7fff60a",
+ "generated_at": "2026-11-14T07:49:18+0000"
+}

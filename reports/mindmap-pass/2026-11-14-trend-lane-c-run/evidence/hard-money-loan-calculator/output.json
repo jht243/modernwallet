@@ -1,0 +1,76 @@
+{
+ "base": {
+  "loan": 230000.0,
+  "downPayment": 20000.0,
+  "points": 4600.0,
+  "cashToClose": 27100.0,
+  "monthlyInterestFull": 2300.0,
+  "interest": 13800.0,
+  "extensionInterest": 0.0,
+  "extensionFee": 0.0,
+  "totalFinancingCost": 20900.0,
+  "balloon": 230000.0,
+  "ltcPct": 92.0,
+  "annualizedCostPct": 18.17
+ },
+ "extension3mo1pct": {
+  "loan": 230000.0,
+  "downPayment": 20000.0,
+  "points": 4600.0,
+  "cashToClose": 27100.0,
+  "monthlyInterestFull": 2300.0,
+  "interest": 13800.0,
+  "extensionInterest": 6900.0,
+  "extensionFee": 2300.0,
+  "totalFinancingCost": 30100.0,
+  "balloon": 230000.0,
+  "ltcPct": 92.0,
+  "annualizedCostPct": 17.45
+ },
+ "rehabDrawnEvenly": {
+  "loan": 230000.0,
+  "downPayment": 20000.0,
+  "points": 4600.0,
+  "cashToClose": 27100.0,
+  "monthlyInterestFull": 2300.0,
+  "interest": 12550.0,
+  "extensionInterest": 0.0,
+  "extensionFee": 0.0,
+  "totalFinancingCost": 19650.0,
+  "balloon": 230000.0,
+  "ltcPct": 92.0,
+  "annualizedCostPct": 17.09
+ },
+ "withArv330k": {
+  "loan": 230000.0,
+  "downPayment": 20000.0,
+  "points": 4600.0,
+  "cashToClose": 27100.0,
+  "monthlyInterestFull": 2300.0,
+  "interest": 13800.0,
+  "extensionInterest": 0.0,
+  "extensionFee": 0.0,
+  "totalFinancingCost": 20900.0,
+  "balloon": 230000.0,
+  "ltcPct": 92.0,
+  "annualizedCostPct": 18.17,
+  "ltarvPct": 69.7,
+  "sellingCosts": 19800.0,
+  "holdingCosts": 6000,
+  "profit": 33300.0
+ },
+ "sensitivity": {
+  "months3": 14000.0,
+  "months9": 27800.0,
+  "points1": 18600.0,
+  "points3": 23200.0,
+  "apr10": 18600.0,
+  "apr14": 23200.0
+ },
+ "boundaries": {
+  "zeroPoints": 0.0,
+  "zeroRate": 7100.0,
+  "noRehab": 180000.0,
+  "fullAdvance": 0.0
+ }
+}

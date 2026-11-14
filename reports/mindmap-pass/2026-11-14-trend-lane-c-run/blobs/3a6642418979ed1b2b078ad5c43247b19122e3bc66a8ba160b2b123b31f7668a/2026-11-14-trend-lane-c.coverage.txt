@@ -1,0 +1,128 @@
+coverage_lookup: 4 candidate(s) vs 825 repo pages / 838 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1168 past-chart lines
+
+### /retirement/401k-loan-calculator/  — row - · create new content
+keyword: 401k loan calculator; solo 401k loan calculator; 401k loan payment calculator
+reader question (new page intent): How much can I borrow from my 401(k) and what will my payments be?
+lookup terms: 401k loan solo payment   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /loan-payment-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on loan payment · same format: calculator]
+    title: Loan Payment Calculator: Monthly Payment & Interest
+    desc:  Free loan payment calculator. Enter the loan amount, rate and term to see your monthly payment, total interest, and what an extra payment saves.
+- /auto-loan/extra-payment-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.5 on loan payment · same format: calculator]
+    title: Auto Loan Extra Payment Calculator: Biweekly vs Extra
+    desc:  Use this auto loan extra payment calculator to compare biweekly vs. extra monthly payments and see how much interest and time you save on your car loan.
+- /auto-loan/refinance-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.5 on loan payment · same format: calculator]
+    title: Auto Loan Refinance Calculator: New Payment & Savings
+    desc:  See your new monthly payment and total interest savings before you refinance your car loan. Free auto loan refinance calculator, updated for 2026.
+- /mortgage/fha-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on loan payment · same format: calculator]
+    title: FHA Loan Calculator: Payment with MIP
+    desc:  Calculate your FHA loan payment including upfront and annual mortgage insurance premiums (MIP). See how 3.5% down affects your true monthly cost.
+- /mortgage/va-loan-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on loan payment · same format: calculator]
+    title: VA Loan Calculator: Payment with Funding Fee
+    desc:  Calculate your VA loan payment with no down payment and no PMI. Includes VA funding fee details for veterans, active duty, and surviving spouses.
+- /compare/401k-loan-vs-heloc  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k loan]
+    title: 401(k) Loan vs HELOC: Which Borrowing Path Fits Best?
+    desc:  Compare a 401k loan vs HELOC on interest rates, tax rules, qualification hurdles, and default risks to find the right borrowing path for your goals.
+- /guides/balloon-payment-business-loan-explained  [in sitemap · src/data/guides-business.ts · topic match 0.5 on loan payment]
+    title: Balloon Payment Business Loans Explained
+    desc:  A balloon payment business loan has small payments for years, then one large final payment due at once. See the payment math and the refinance risk.
+- /guides/401k-loan-rules  [in sitemap · src/data/guides.ts · topic match 0.5 on 401k loan]
+    title: 401(k) Loan Rules: Limits, Repayment Terms, and Default
+    desc:  Learn 401(k) loan rules, borrowing limits up to $50,000, 5-year repayment terms, and tax consequences if a plan loan is treated as a distribution.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-22-xtrends.md [table] | Lens 1. lookup: /guides/current-mortgage-rates-guide/ -- its reader goal (what a 7.40% rate does to a payment) is the same, enriched 2026-10-15 (commit for 2026-10-15-xtrends); it has a $400k example, quarter-point, 15
+- 2026-10-25.md [table] | 2 | **Lens 1 (direct intent — brief item 1, house buying).** `home buying checklist` **1,600/KD 5** (primary), `home buying process checklist` 1,000/KD 7, `what to look for when buying a house` 1,700/KD 0 (secondary on
+- 2026-10-27-podcast.md [table] | 3 | Direct intent (podcast: Rental Income Podcast Ep 510 "Does It Make Sense To Buy Rentals With 15 Year Mortgages?"). Cluster: 15 year mortgage for rental property ~250/mo (DataForSEO ESTIMATE band 250-2,500, NOT meas
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: Rental Income Podcast, Catching Up to FI). 'brrrr method' 6,600/mo KD 41 CPC $0.97 (SEMRUSH us 2026-11-04, measured); 'brrrr strategy' 1,900; 'what is the brrrr method' 720; 'brrrr loans'
+- 2026-11-04-tool-usage.md [table] | 14 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage /mortgage/payoff-calculator/). 'biweekly mortgage calculator' 1,900/mo KD 29, 'bi weekly mortgage calculator' 720, 'biweekly mortga
+- 2026-11-09-trend-lane-c.md [exclusions] - auto-loan autocomplete questions ("how are auto loan payments calculated" etc.): covered by the /auto-loan/ hub howItWorks and /guides/how-long-should-a-car-loan-be; rate-lookup queries are not calculator intent.
+Commits naming the topic: none
+Same run overlap: row - /guides/401k-loan-rules/ (0.75)
+
+### /real-estate/hard-money-loan-calculator/  — row - · create new content
+keyword: hard money loan calculator; hard money calculator
+reader question (new page intent): How much will a hard money loan cost me in total?
+lookup terms: hard money loan   format cues: calculator pricing
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/buy-a-house-with-no-money-down  [in sitemap · src/data/guides.ts · topic match 0.67 on money loan]
+    title: How to Buy a House with No Money Down Using Zero-Down Loans
+    desc:  Buy a house with no money down through Veterans Affairs (VA) or Agriculture Department (USDA) loans, plus closing costs, credit, and 3% to 3.5% options.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-19-competitor.md [table] | 5 | Lens 1 direct (NerdWallet no-money-down). Autocomplete: buy a house with no money down and bad credit; best way to buy a house with no money down; what credit score is needed. lookup: no match for the guide (/compa
+- 2026-10-19-competitor.md [table] | No money down home buying | buy a house with no money down and bad credit; what credit score is needed | coverage gap | partial (pairwise loan comparisons) | create new content | /guides/buy-a-house-with-no-money-down 
+- 2026-10-21-tool-usage.md [exclusions] - **`lease vs buy car calculator` (1,000/mo):** HOLD for a later run — `/compare/auto-loan-vs-lease` partly serves the reader; a calculator needs residual/money-factor assumptions not on our fact list this week.
+- 2026-10-25.md [table] | 2 | **Lens 1 (direct intent — brief item 1, house buying).** `home buying checklist` **1,600/KD 5** (primary), `home buying process checklist` 1,000/KD 7, `what to look for when buying a house` 1,700/KD 0 (secondary on
+- 2026-11-04-tool-usage.md [table] | 15 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage). 'pay off mortgage or invest calculator' 260/mo KD 17, 'pay off mortgage vs invest calculator' 260 KD 11, 'should i pay off my mor
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet when and how to switch advisors). Head 'switch financial advisors': autocomplete estimate 75-750/mo, NOT measured. lookup: /guides/financial-advisor-conflicts-of-int
+Commits naming the topic: none
+Same run overlap: none
+
+### /real-estate/bridge-loan-calculator/  — row - · create new content
+keyword: bridge loan calculator
+reader question (new page intent): How much will a bridge loan cost me until my old home sells?
+lookup terms: bridge loan   format cues: calculator pricing
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/bridge-loan-vs-heloc  [in sitemap · src/data/comparisons.ts · topic match 1.0 on bridge loan]
+    title: Bridge Loan vs HELOC: Which Wins When Buying First?
+    desc:  Bridge loan vs HELOC for buying a new home before selling your current one: rates, speed to close, fees, and which fits your timeline.
+- /auto-loan/interest-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.5 on loan · same format: calculator pricing]
+    title: Auto Loan Interest Calculator: Total Interest in 2026
+    desc:  Use our auto loan interest calculator to see total interest paid by rate, term, and down payment. See how a longer loan quietly costs you more.
+- /guides/payday-loan-calculator-explained  [in sitemap · src/data/guides.ts · topic match 0.5 on loan · same format: calculator]
+    title: Payday Loan Calculator Math for the True APR and Fees
+    desc:  Calculate the true APR on a payday loan. See how a $15 fee becomes a 391% APR, how rollovers compound borrowing costs, and compare cheaper alternatives.
+- /guides/medical-loan-explained  [in sitemap · src/data/guides.ts · topic match 0.5 on loan · same format: pricing]
+    title: How a Medical Loan Works and What It Costs
+    desc:  Interest rates on a medical loan vary sharply by credit tier, and a provider's own payment plan is usually cheaper.
+- /auto-loan/payoff-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.5 on loan · same format: calculator]
+    title: Auto Loan Payoff Calculator: See Your Payoff Date Fast
+    desc:  Use our free auto loan payoff calculator to find your payoff date and full payment schedule, and see how much extra payments save in interest instantly.
+- /auto-loan/refinance-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.5 on loan · same format: calculator]
+    title: Auto Loan Refinance Calculator: New Payment & Savings
+    desc:  See your new monthly payment and total interest savings before you refinance your car loan. Free auto loan refinance calculator, updated for 2026.
+- /mortgage/fha-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on loan · same format: calculator]
+    title: FHA Loan Calculator: Payment with MIP
+    desc:  Calculate your FHA loan payment including upfront and annual mortgage insurance premiums (MIP). See how 3.5% down affects your true monthly cost.
+- /mortgage/va-loan-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on loan · same format: calculator]
+    title: VA Loan Calculator: Payment with Funding Fee
+    desc:  Calculate your VA loan payment with no down payment and no PMI. Includes VA funding fee details for veterans, active duty, and surviving spouses.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-06-trend-lane-c.md [exclusions] - nerdwallet auto loan / retirement calculator: DROP, branded competitor queries; generic /auto-loan/ and /retirement/ calculators and /roundup/best-retirement-calculators/ exist; nerdwallet holds SERP (ledger 2026-10-19
+- 2026-11-09-competitor-9031ce2b2c89.md [exclusions] - Bankrate VA-loan homebuying story: skipped, covered by VA loan calculator and VA comparison pages; a personal story has no distinct query.
+- 2026-11-09-trend-lane-c.md [exclusions] - nerdwallet auto loan / calculator / retirement calculator: DROP, branded competitor queries on a locked SERP; generic intents served by /auto-loan/ (+7 spokes in spokes-auto.ts), /retirement/, /roundup/best-retirement-
+- 2026-11-09-trend-lane-c.md [exclusions] - auto-loan autocomplete questions ("how are auto loan payments calculated" etc.): covered by the /auto-loan/ hub howItWorks and /guides/how-long-should-a-car-loan-be; rate-lookup queries are not calculator intent.
+- 2026-11-10-trend-lane-c.md [exclusions] - nerdwallet auto loan calculator: DROP, branded, already dropped 2026-11-09.
+- 2026-11-12-trend-lane-c.md [exclusions] - nerdwallet auto loan calculator: DROP, branded, locked SERP, already dropped 2026-11-09 and 2026-11-10; generic intent served by /auto-loan/ hub and spokes.
+Commits naming the topic: none
+Same run overlap: row - /retirement/401k-loan-calculator/ (0.5); row - /real-estate/hard-money-loan-calculator/ (0.5); row - /guides/401k-loan-rules/ (0.5)
+
+### /guides/401k-loan-rules/  — row - · create new content
+keyword: solo 401k loan; borrow from solo 401k; solo 401k loan rules
+reader question (new page intent): Can I borrow from my solo 401(k)?
+lookup terms: 401k loan rule solo borrow   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/401k-loan-rules  [EXACT SLUG · in sitemap · src/data/guides.ts · topic match 0.6 on 401k loan rule]
+    title: 401(k) Loan Rules: Limits, Repayment Terms, and Default
+    desc:  Learn 401(k) loan rules, borrowing limits up to $50,000, 5-year repayment terms, and tax consequences if a plan loan is treated as a distribution.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-27-podcast.md [table] | 3 | Direct intent (podcast: Rental Income Podcast Ep 510 "Does It Make Sense To Buy Rentals With 15 Year Mortgages?"). Cluster: 15 year mortgage for rental property ~250/mo (DataForSEO ESTIMATE band 250-2,500, NOT meas
+- 2026-10-28-competitor.md [table] | 2 | Lens 1, NerdWallet "How to Get a Student Loan Deferment" and "Unemployment Deferment" (both updated 2026-10-27). lookup: no match (guides cover refinancing, forgiveness, repayment plans, not deferment). Cluster: st
+- 2026-10-28-competitor.md [table] | Student loan deferment | student loan deferment; how does student loan deferment work; how long does student loan deferment last | rule change for loans disbursed from 2027-07-01 | none | create new content | /guides/s
+- 2026-10-28-competitor.md [exclusions] - NerdWallet loan to buy a business: HELD, SBA acquisition rules (equity injection, seller notes) are mid-revision (SOP 50 10 8.1 reported for 2026-10-01) and no SBA primary page could be read this run.
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: Rental Income Podcast, Catching Up to FI). 'brrrr method' 6,600/mo KD 41 CPC $0.97 (SEMRUSH us 2026-11-04, measured); 'brrrr strategy' 1,900; 'what is the brrrr method' 720; 'brrrr loans'
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+Commits naming the topic: none
+Same run overlap: row - /retirement/401k-loan-calculator/ (0.6)
+

@@ -1,0 +1,3 @@
+Rung 0 mechanical edits by the WRITE worker before the first independent audit:
+SPLIT SEMICOLON in section: 'A SEP, SIMPLE, or traditional individual retirement account (IRA) therefore cannot lend to its owner; that restriction does not categorically bar a solo 401(k) loan.' -> 'A SEP, SIMPLE, or traditional individual retirement account (IRA) therefore cannot lend to its owner. That restriction does not categorically bar a solo 401(k) loan.'
+REPLACE (position word, one sentence): 'For the owner-only plan rule, see "Can a Solo 401(k) Lend to Its Owner?" below.' -> 'For the full list of conditions, see the section "Can a Solo 401(k) Lend to Its Owner?" above.'

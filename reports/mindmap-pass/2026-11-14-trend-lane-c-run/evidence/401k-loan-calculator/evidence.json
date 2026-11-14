@@ -1,0 +1,126 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "mindmap-write-lane-c",
+ "route": "/retirement/401k-loan-calculator/",
+ "readerQuestion": "How much can I borrow from my 401(k), and what will my loan payments be? [PAA 2/6 on-topic (how much loan can I get from my 401k; $10,000 over 5 years per month), 4/6 off-topic: retirement age, contribution percentage, balance growth; ac 6/44 question completions incl. how much 401k loan can i take, how are 401k loans paid back]",
+ "approvedPlan": {
+  "manifest": {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/approval-manifest.json",
+   "sha256": "03cf28895e4762681567629b28d4b5241d3113ccf1770090f202b37dfc2d2714"
+  },
+  "review": {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/chart-review.json",
+   "sha256": "85acf88a3d4cb83e2e97a7f5edbe948dd407b103d30d1cef2baf18c44dec64b0"
+  },
+  "actionId": "MW-TL-01"
+ },
+ "presentation": {
+  "medium": "interactive tool",
+  "placement": "New spoke page; calculator is section 1, above the explanation",
+  "reason": "The answer turns on three reader numbers (vested balance, loans outstanding now and the highest balance in the last 12 months) plus rate and term, which a static table cannot cover.",
+  "readerInputs": [
+   "Vested account balance",
+   "Current outstanding plan loan balance",
+   "Highest plan loan balance in the past 12 months",
+   "Loan amount wanted",
+   "Interest rate (APR)",
+   "Term in years",
+   "Payments per year (quarterly, monthly or per paycheck)",
+   "Loan purpose: general or principal residence"
+  ],
+  "interaction": {
+   "decision": "build",
+   "reason": "Statutory cap, repayment and the 5-year and quarterly rules change with each input; the reader cannot read their own cap from a table."
+  },
+  "animation": {
+   "decision": "not-useful",
+   "reason": "There is no changing quantity worth animating; results update instantly and a 5-row schedule table is the clearer view."
+  }
+ },
+ "caseSelection": {
+  "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/401k-loan-calculator/cases.json",
+  "sha256": "ea9d25dbe5024630416e3087fb629049c24e1b95edf3bb03acd846d081ad099d"
+ },
+ "caseDecisions": "Retrieved with the exact approved reader question. 8 candidates, none about 401(k) plan loans, short-term real estate loans or ModernWallet readers: they are other Layer3Labs properties, client engagements and a gaming testimonial. ModernWallet's _experience.md has no named-client specifics. Rejected all; no client claim on the page.",
+ "caseUses": [],
+ "exclusions": "No TESTED label and no reviewed-by claim: financial service, _experience.md section G excludes it and no product test exists. Internal-modeling wording only.",
+ "decisionGap": "Readers can find the 72(p) rules in plain language (including our own guide) but still cannot read their own cap: the lesser-of / greater-of formula carries a 12-month highest-balance reduction and loans already owed, and a payment needs a rate and a term. Sampled the 2026-11-14 research pack and DataForSEO read for '401k loan calculator'; no site-wide uniqueness claimed.",
+ "finding": "In our internal modeling of 26 U.S.C. 72(p)(2)(A), the loan limit is the lesser of $50,000 reduced by how much the highest plan-loan balance in the past 12 months exceeded today's balance, or the greater of half the vested balance or $10,000, and new loans plus loans already owed must fit under it. Vested balances of $15,000, $60,000 and $200,000 with no prior loans give limits of $10,000, $30,000 and $50,000; vested $200,000 with $10,000 owed and a $20,000 12-month peak gives a $40,000 limit and $30,000 of room (subtracting what is owed twice would give $20,000); $200,000 vested with $20,000 owed and a $50,000 peak leaves $0. A $10,000 loan over 5 years paid monthly costs $193.33, $202.76 or $212.47 a month at example rates of 6%, 8% and 10%, with total interest of $1,599.68, $2,165.84 and $2,748.23.",
+ "conditions": "Federal limits only. The plan document decides whether loans are offered, the rate, fees and how many loans are allowed. A general-purpose loan must be repayable within 5 years (a loan to buy a main home is exempt), with level payments at least quarterly. Rates are reader inputs; the 6%, 8% and 10% examples are not plan or market rates.",
+ "whatWouldChange": "A plan that bars or limits loans, a term over 5 years on a general-purpose loan, payments less often than quarterly, an additional outstanding loan, or a change to 26 U.S.C. 72(p).",
+ "basis": "calculated",
+ "method": "Deterministic: limit = min(50,000 - max(0, highest12 - owed), max(vested/2, 10,000)); room = max(0, limit - owed); level payment = P*r/(1-(1+r)^-n) with r = APR/payments per year and n = years*payments per year; schedule run period by period. Python replica of src/lib/401k-loan.ts, checked against the TypeScript engine fixtures.",
+ "units": "USD, years, payments per year",
+ "limitations": "No plan fees, no tax on a loan treated as a distribution, no lost investment growth, no plan-specific loan count or rate; payments assumed to start one period after the loan.",
+ "counterexample": "Subtracting loans already owed from the $50,000 prong as well as from the whole cap double-counts them: vested $200,000, $10,000 owed and a $20,000 peak gives $30,000 of room under the statute but $20,000 under the faulty reading. When owed loans and the 12-month peak exceed the $50,000 prong (owed $20,000, peak $50,000), the room is $0 even with $200,000 vested.",
+ "provenance": {
+  "basis": "calculated",
+  "supportingRecordIds": [
+   "output.json limits 1-6",
+   "output.json payments 1-7"
+  ],
+  "scopeAndLimits": "statutory federal limits and example rates",
+  "publicMethod": "formula shown beside the tool, then the worked cases",
+  "placement": "introText worked example plus How the Loan Limit Is Calculated"
+ },
+ "medium": "interactive tool: reader inputs (vested balance, loans owed, 12-month peak, amount, rate, term, frequency, purpose) change the answer",
+ "sourceUrls": [
+  {
+   "url": "https://www.law.cornell.edu/uscode/text/26/72",
+   "checked": "2026-11-14"
+  },
+  {
+   "url": "https://www.law.cornell.edu/uscode/text/26/4975",
+   "checked": "2026-11-14"
+  },
+  {
+   "url": "https://www.law.cornell.edu/uscode/text/26/416",
+   "checked": "2026-11-14"
+  }
+ ],
+ "execution": {
+  "command": [
+   "python3",
+   "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/401k-loan-calculator/calc.py",
+   "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/401k-loan-calculator/output.json"
+  ],
+  "code": {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/401k-loan-calculator/calc.py",
+   "sha256": "8985a69d70ce2d9748e4ce71bf0d1d771d5a627e1f658065458c6263024cfcae"
+  },
+  "inputs": [
+   {
+    "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/401k-loan-calculator/inputs.json",
+    "sha256": "30a78410b1cd404093a67b1b2d08286c8c50ebb5cd95ab4858e8a59b1c6bdab2"
+   }
+  ],
+  "output": {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/401k-loan-calculator/output.json",
+   "sha256": "ab56815c4c67b0a21eeebe5218778080ae4f3611fc2777410735fb7ac106ae1a"
+  }
+ },
+ "sourceArtifacts": [
+  {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/evidence/401k-loan-calculator/sources.md",
+   "sha256": "42312c39b7e452df6be357ba7bc5110ad9f0d0aac06161a8f8bb2b74aceb6881"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/research/statute-extracts.md",
+   "sha256": "f25d06677f3cf7410054ef1e6639f92f59fb709d605e748204183145225b44e8"
+  }
+ ],
+ "presentationArtifacts": [
+  {
+   "path": "src/lib/401k-loan.ts",
+   "sha256": "5bff3fda249570b57c71a48bf3fffc807971b220419b70d4700e28f8a16c4d55"
+  },
+  {
+   "path": "src/components/Loan401kCalculator.tsx",
+   "sha256": "adc037b453ee5a11bb46907a085fc467d2d27ef3ae3ce6b19dd94bb622f3133f"
+  },
+  {
+   "path": "src/components/LoanToolKit.tsx",
+   "sha256": "36a1659bb72e81f2ff9c6e99d6afe1872569c41fc83f5e00db4853009693b883"
+  }
+ ]
+}

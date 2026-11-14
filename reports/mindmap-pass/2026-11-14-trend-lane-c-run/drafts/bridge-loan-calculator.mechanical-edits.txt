@@ -1,0 +1,9 @@
+Rung 0 mechanical edits applied by the WRITE worker before the first independent audit (punctuation and single-sentence antithesis/wording only; no claim, figure or link changed):
+REPLACE: 'The figures already in the calculator are examples, not lender data.' -> 'The figures already in the calculator are examples that carry no lender data.'
+REPLACE: 'This bridge loan calculator returns that total cost, the monthly outlay for carrying both homes, and the net proceeds left after the sale pays off the old mortgage, bridge loan, and selling costs.' -> 'This bridge loan calculator returns that total cost and the monthly outlay for carrying both homes. It also returns the net proceeds left after the sale pays off the old mortgage, the bridge loan and selling costs.'
+SPLIT SEMICOLON: ...st adds those fees to interest; t...
+REPLACE: 'The entered limit is an example, not a standard lender limit or a loan offer.' -> 'The entered limit is an example. It is no standard lender limit and no loan offer.'
+SPLIT SEMICOLON: ...bridge cost, and selling costs; t...
+REPLACE: 'No limit shown here is a standard lender limit or a loan offer.' -> 'No limit on this page is a standard lender limit or a loan offer.'
+SPLIT SEMICOLON: ...comes from your lender's quote; t...
+REPLACE (rhythm, one sentence): 'This gives you a figure to compare with the bridge loan amount you plan to enter.' -> 'That gives you a figure to compare with your planned bridge loan.'

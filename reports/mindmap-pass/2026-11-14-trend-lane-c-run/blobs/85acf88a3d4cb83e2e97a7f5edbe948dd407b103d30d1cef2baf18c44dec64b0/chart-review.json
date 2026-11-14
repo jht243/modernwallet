@@ -1,0 +1,144 @@
+{
+  "jobId": "trend-lane-c-2026-11-14",
+  "reviewer": "mindmap-chart-review-lane-c",
+  "round": 2,
+  "manifestSha256": "3bc8222de892d8df64f5dae34395b499bd5c307636ec277e4df79cd38f870068",
+  "manifestFileSha256": "03cf28895e4762681567629b28d4b5241d3113ccf1770090f202b37dfc2d2714",
+  "readinessSha256": "c7b9f9846e2cbee199cb34b6156a2fbf7bcde55cd4787167fe6442fcd99de4f7",
+  "verdict": "PASS",
+  "approvedRows": [
+    "MW-TL-01",
+    "MW-TL-02",
+    "MW-TL-03",
+    "MW-TL-04"
+  ],
+  "rowVerdicts": {
+    "MW-TL-01": "PASS",
+    "MW-TL-02": "PASS",
+    "MW-TL-03": "PASS",
+    "MW-TL-04": "PASS"
+  },
+  "previousRound": {
+    "path": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/chart-review.round1.json",
+    "verdict": "FAIL"
+  },
+  "evidence": "Round 2, same actor, context trend-lane-c-2026-11-14-review, epoch 1; preflight r2 prepared with --reuse of the completed round-1 reading, 0 changed sources, check returned delivery-complete-sources-current. I re-verified every round-1 finding against the artifacts (see each finding's round2Evidence): the TL-01 two-prong sentence and the new fixture by hand, the five 4975(d)(1) conditions, the 4975(c)(1)(B) and 416(i)(1)(A) extracts against my own live Cornell fetches, and all 68 hash references. Unchanged from round 1 and still holding: duplicate/cannibalization rulings (no same-intent page; TL-02 vs TL-03 kept separate), hand-recomputed TL-02/TL-03 fixtures, ledger honoring, trend-pass guardrails (additive only, no metadata or redirect rows, engine-only figures, 3 of 25 new pages), calculated/reported evidence labels with no TESTED claim, volumes matching the saved SEMRUSH JSON. No new defects found.",
+  "requestCoverage": [
+    {
+      "requirementId": "R1",
+      "status": "PASS",
+      "evidence": "TL-01 plans a built 401(k) loan calculator (cap per the correct two-prong 72(p)(2)(A) form plus level payment) and TL-04 the solo section with all five 4975(d)(1) conditions, 4975(c)(1)(B)/(f)(6) for IRA-based plans and key-employee interest non-deductibility; both agree and each statute claim is in the saved extract."
+    },
+    {
+      "requirementId": "R2",
+      "status": "PASS",
+      "evidence": "TL-02 plans a built hard money calculator whose figures come only from reader inputs (points, interest-only payment, total cost, balloon, LTC, LTARV, optional profit); fixture verified by hand; no market-rate claims."
+    },
+    {
+      "requirementId": "R3",
+      "status": "PASS",
+      "evidence": "TL-03 plans a built bridge-loan calculator (cost, overlap outlay, net proceeds), fixture verified by hand, cross-linked to the hard money calculator and /compare/bridge-loan-vs-heloc, no lender-term claims."
+    }
+  ],
+  "findings": [
+    {
+      "id": "CR-C1",
+      "severity": "major",
+      "rows": [
+        "MW-TL-01"
+      ],
+      "problem": "The TL-01 answer sentence (action.answer, newPageBriefs[0].readerAndAnswer.answer, presented as the section 1 answer block) says the cap is 'the lesser of $50,000 (less any higher loan balance you carried in the past 12 months) or the greater of half your vested balance or $10,000, minus loans already outstanding'. The trailing 'minus loans already outstanding' attaches to the whole lesser-of and double-deducts outstanding loans from the $50,000 prong. Under 26 USC 72(p)(2)(A) the new loan plus all outstanding loans must not exceed min(50,000 - (highest12 - outstanding), max(vested/2, 10,000)), i.e. max new loan = min(50,000 - highest12, max(vested/2, 10,000) - outstanding).",
+      "fix": "Rewrite the answer in both places (they must stay identical) with the exact two-prong form, for example: 'Your new loan, added to loans you already owe the plan, cannot exceed the lesser of $50,000 reduced by how much your highest plan-loan balance in the past 12 months exceeded your balance today, or the greater of half your vested balance or $10,000; the calculator subtracts what you already owe and returns the largest new loan and the payment for the amount you enter.' Add an engine fixture with outstanding > 0 and highest12 > outstanding where the double-deduction would differ (for example vested 200,000, outstanding 10,000, highest12 20,000: statute gives min(50,000 - 20,000, 100,000 - 10,000) = 30,000; the faulty reading gives 20,000) to the brief's engine and boundaries text. Check the outline's worked-case section and the TL-04 guide section use the same wording. Re-hash the manifest and readiness afterward.",
+      "round1Status": "open at round 1",
+      "round2Status": "resolved",
+      "round2Evidence": "TL-01 action.answer and newPageBriefs[0].readerAndAnswer.answer are identical and now read: new loan plus loans already owed cannot exceed the lesser of $50,000 reduced by how much the 12-month peak exceeded today's balance, or the greater of half vested or $10,000; the calculator subtracts what is owed. This is the 72(p)(2)(A) two-prong form. By hand: vested 200,000, outstanding 10,000, highest12 20,000: prong A = 50,000-(20,000-10,000)=40,000, prong B = 100,000; limit 40,000 minus 10,000 owed = 30,000, equal to the brief's min(50,000-20,000, 100,000-10,000)=30,000; the double-deduction reading gives 20,000. Existing fixture (highest 50,000, outstanding 20,000 -> 0) still correct. New fixture and boundary are in engine and boundaries text."
+    },
+    {
+      "id": "CR-C2",
+      "severity": "major",
+      "rows": [
+        "MW-TL-01",
+        "MW-TL-04"
+      ],
+      "problem": "The TL-01 and TL-04 answers present the 26 USC 4975(d)(1) conditions as '(provided for in the plan, reasonable interest rate, adequately secured)'. The statute lists five conditions: (A) available to all participants on a reasonably equivalent basis, (B) not made available to highly compensated employees in a greater amount than to other employees, (C) made under specific plan provisions, (D) reasonable rate of interest, (E) adequately secured. Presenting three as the full set understates the boundary of a yes-with-conditions verdict on a YMYL page.",
+      "fix": "Word the answer as 'conditions that include...' or list all five in the closed fact list and say the plan document and its administrator decide whether a given loan meets them. Keep the no-provider-claims limit. Update both action rows and the TL-01 brief, and apply the same wording in the TL-04 section/FAQ plan.",
+      "round1Status": "open at round 1",
+      "round2Status": "resolved",
+      "round2Evidence": "TL-04 answer lists all five 4975(d)(1) conditions (reasonably equivalent availability, no larger amounts for HCEs, specific plan provisions, reasonable rate, adequate security) and says plan document/administrator decide; verified against my live Cornell fetch of 4975(d)(1)(A)-(E). TL-01 solo section is a 2-3 sentence pointer saying conditions include more than a plan provision."
+    },
+    {
+      "id": "CR-C3",
+      "severity": "major",
+      "rows": [
+        "MW-TL-01",
+        "MW-TL-04"
+      ],
+      "problem": "The statement that an IRA-based plan (SEP, SIMPLE, traditional IRA) cannot lend to its owner rests on 26 USC 4975(c)(1)(B) (lending of money or other extension of credit between a plan and a disqualified person is a prohibited transaction) together with 4975(f)(6)(A)(i) and (B)(i)(II)-(III) and (B)(iii). research/statute-extracts.md contains (d)(1) and (f)(6) but not (c)(1)(B), so the central consequential conclusion is not fully grounded in the saved evidence. Per _workflow-checkpoints (rpa-prepare-answer-and-scope) a source the proposed answer depends on is preparation, not a Phase 3 fetch.",
+      "fix": "Add the 4975(c)(1)(B) text (live on Cornell LII, HTTP 200 on 2026-11-14; I verified it reads 'lending of money or other extension of credit between a plan and a disqualified person') and the 4975(f)(6)(B)(i)(II)-(III)/(iii) interplay to research/statute-extracts.md, rehash it in manifest evidenceFiles and every brief's evidenceFiles, and cite (c)(1)(B) in the closed facts for the IRA-plan sentence. Keep the source-silence rule: say the statute text bars the exemption for IRA owners and that plan documents control for solo 401(k)s; do not assert anything about specific providers.",
+      "round1Status": "open at round 1",
+      "round2Status": "resolved",
+      "round2Evidence": "research/statute-extracts.md (sha f25d0667...44e8) now has 4975(c)(1)(B); I confirmed the phrase 'lending of money or other extension of credit between a plan and a disqualified person' appears in both my own fetch and the extract. Cited in legalSources and the TL-04 answer. All 68 manifest hash references (including the new extract hash) recompute correctly."
+    },
+    {
+      "id": "CR-C4",
+      "severity": "advisory",
+      "rows": [
+        "MW-TL-01",
+        "MW-TL-04"
+      ],
+      "problem": "Strongest plausible counterexample to a reader-friendly 'solo owners can borrow' takeaway: 72(p)(3)(B)(i) denies the interest deduction from the first day the borrower is a key employee, and 26 USC 416(i)(1)(A)(ii) makes a 5-percent owner a key employee (text verified live). A solo 401(k) owner will normally be one, so the interest-deductibility condition is decision-relevant and the existing guide already states the key-employee restriction.",
+      "fix": "Either add the 416(i)(1)(A)(ii) text to the closed fact list and one sentence that an owner is generally a key employee so interest on the owner's own loan is not deductible, or link the guide's interest-deductibility section and make no deductibility claim. Do not imply deductibility.",
+      "round1Status": "open at round 1",
+      "round2Status": "resolved",
+      "round2Evidence": "TL-04 answer states an owner is generally a key employee under 416(i)(1)(A)(ii) so interest on the owner's loan is not deductible under 72(p)(3); both texts are in the extract and match my live fetch (72(p)(3)(B)(i) key employee; 416(i)(1)(A)(ii) 5-percent owner). No deductibility implied."
+    },
+    {
+      "id": "CR-C5",
+      "severity": "advisory",
+      "rows": [
+        "MW-TL-01",
+        "MW-TL-04"
+      ],
+      "problem": "(a) TL-01's first outline purpose says 'Solo/owner-only toggle is informational' but readerInputs and the presentation block list no such toggle. (b) TL-04's reader_question tag cites 'PAA 2/6 on-topic (loan amount, monthly cost)'; those two PAA questions support the calculator/amount question, not solo eligibility. The eligibility question is supported by autocomplete (can i take a loan from a solo 401k; can you borrow from a solo 401k; how do solo 401k loans work), which I confirmed in the saved CSV.",
+      "fix": "(a) Remove the toggle from the outline purpose or add it to readerInputs and the tool output description. (b) Re-tag TL-04 as '[ac 4/44 question completions; PAA support is for the amount question on the calculator page]' so the evidence tag is not read as PAA support for eligibility. If either field changes the action row, keep brief and action text identical.",
+      "round1Status": "open at round 1",
+      "round2Status": "resolved",
+      "round2Evidence": "Solo toggle removed from the TL-01 outline with the reason stated; readerInputs unchanged and consistent. TL-04 reader_question tag now cites ac 4/44 completions and says PAA support is for the amount question, matching the CSV."
+    },
+    {
+      "id": "CR-C6",
+      "severity": "advisory",
+      "rows": [
+        "MW-TL-02",
+        "MW-TL-03",
+        "MW-TL-01"
+      ],
+      "problem": "Cannibalization and thin-duplicate guards for WRITE/AUDIT: (a) TL-02 and TL-03 share the interest-only-plus-fees arithmetic; the pages must not reuse boilerplate paragraphs and each must clear the 1,000-word cost-pricing floor with its own outputs. (b) TL-03's FAQ 'Does a bridge loan cost more?' must be answered only as a computed, input-labelled comparison (no universal claim that bridge loans cost more or less), and the 'How much bridge loan can I get' and 'How long does a bridge loan last' FAQs must state no standard LTV or term (autocomplete 'how long bridge loan' and 'how much bridge loan can i get' are in the saved CSV). (c) TL-01's 'Borrowing From a Solo 401(k)' section and its FAQ must stay a short pointer to the TL-04 guide section so the guide remains the canonical owner of 'solo 401k loan' queries.",
+      "fix": "Carry (a)-(c) into the WRITE handoff and Phase 4 audit checklist; no manifest change needed beyond keeping the Phase 1 advisory check already in executionPlan.",
+      "round1Status": "open at round 1",
+      "round2Status": "resolved",
+      "round2Evidence": "Writer guards carried into the TL-02/TL-03 briefs and readiness: no shared boilerplate, 1,000-word floors, TL-03 'Does a bridge loan cost more?' only as a computed comparison, no standard LTV or term; TL-01 solo section stays a pointer; Phase 1 advisory retained in executionPlan."
+    },
+    {
+      "id": "CR-C7",
+      "severity": "process",
+      "rows": [
+        "all"
+      ],
+      "problem": "reports/mindmap-pass/2026-11-14-trend-lane-c.md already exists with status ready-for-approval although no independent chart-review.json existed. It is an unreviewed render of the pre-review manifest.",
+      "fix": "Do not treat it as approved. After the corrected manifest is re-reviewed and passes, regenerate it with mindmap-gates.py render-chart and validate-chart (the renderer overwrites it) before any WRITE handoff.",
+      "round1Status": "open at round 1",
+      "round2Status": "resolved",
+      "round2Evidence": "The stale ready-for-approval chart is being regenerated by render-chart from this reviewed manifest and validated in this round (see chart sha256 in the hand-back)."
+    }
+  ],
+  "resolvedFindingIds": [
+    "CR-C1",
+    "CR-C2",
+    "CR-C3",
+    "CR-C4",
+    "CR-C5",
+    "CR-C6",
+    "CR-C7"
+  ]
+}

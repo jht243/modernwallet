@@ -1,0 +1,888 @@
+{
+  "snapshotSha256": "991097c7a5e910e522a741c01cfad306b491ab412e2cd400e0b81b1b91e696e6",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "author": "mindmap-write-lane-c",
+  "routeCount": 9,
+  "routes": [
+    {
+      "path": "/retirement/401k-loan-calculator/",
+      "fingerprint": "d7c9de2c9a71f00a8255bbdfae533f735990afdba6624c49e02c697490f09b20",
+      "htmlFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/b8153ac38134a9351299.html",
+      "textFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/b8153ac38134a9351299.txt",
+      "title": "401(k) Loan Calculator for Your Maximum Loan and Payment",
+      "h1": "401(k) Loan Calculator",
+      "headings": [],
+      "canonical": "https://www.themodernwallet.com/retirement/401k-loan-calculator/",
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "generator": "Astro v4.16.19",
+        "description": "Use this 401(k) loan calculator to find your largest new loan and payment. Enter your vested balance, existing loans, past loan peak, rate and repayment term.",
+        "og:type": "website",
+        "og:site_name": "ModernWallet",
+        "og:title": "401(k) Loan Calculator for Your Maximum Loan and Payment",
+        "og:description": "Use this 401(k) loan calculator to find your largest new loan and payment. Enter your vested balance, existing loans, past loan peak, rate and repayment term.",
+        "og:url": "https://www.themodernwallet.com/retirement/401k-loan-calculator/",
+        "og:image": "https://www.themodernwallet.com/favicon-192.png",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "401(k) Loan Calculator for Your Maximum Loan and Payment",
+        "twitter:description": "Use this 401(k) loan calculator to find your largest new loan and payment. Enter your vested balance, existing loans, past loan peak, rate and repayment term.",
+        "twitter:image": "https://www.themodernwallet.com/favicon-192.png"
+      },
+      "schemaTypes": [
+        "Organization",
+        "ImageObject",
+        "Organization",
+        "WebSite",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "WebApplication",
+        "Offer",
+        "Person",
+        "Organization",
+        "Article",
+        "ImageObject",
+        "Person",
+        "Organization",
+        "ImageObject",
+        "CreativeWork",
+        "CreativeWork",
+        "CreativeWork"
+      ],
+      "schemaDates": [
+        {
+          "datePublished": "2026-11-14"
+        },
+        {
+          "dateModified": "2026-11-14"
+        }
+      ],
+      "visibleDates": [],
+      "articleWordCount": 2288,
+      "internalLinkCount": 199,
+      "externalLinkCount": 10,
+      "sampleExternalLinks": [
+        "https://www.law.cornell.edu/uscode/text/26/72",
+        "https://www.law.cornell.edu/uscode/text/26/72",
+        "https://www.law.cornell.edu/uscode/text/26/72",
+        "https://www.law.cornell.edu/uscode/text/26/4975",
+        "https://www.law.cornell.edu/uscode/text/26/416",
+        "https://www.law.cornell.edu/uscode/text/26/72",
+        "https://www.law.cornell.edu/uscode/text/26/72",
+        "https://www.law.cornell.edu/uscode/text/26/4975",
+        "https://www.law.cornell.edu/uscode/text/26/416",
+        "https://www.layer3labs.io"
+      ],
+      "testingAttributionClaimed": false,
+      "riskClassification": {
+        "provisionalProfile": "high",
+        "maximumRounds": 2,
+        "textSha256": "4675129665529f277614dc576228c57c4ddd6be266c169c5ea2f8b3d0bdb04f6",
+        "riskPassages": [
+          {
+            "term": "treating",
+            "quote": "tion. Use the 401(k) early withdrawal calculator for a tax estimate rather than treating that excess as an ordinary loan payment. For payments, the calculator divides A"
+          }
+        ],
+        "requiredFactualChecks": [
+          "centralFacts",
+          "truthfulEvidence",
+          "currentDetails",
+          "recommendationSupport",
+          "primarySources",
+          "consequentialClaims",
+          "limitationsAndJurisdiction",
+          "professionalReview"
+        ]
+      }
+    },
+    {
+      "path": "/real-estate/hard-money-loan-calculator/",
+      "fingerprint": "37f0182af33b97ca5e96e594cf5f9392af4e7fcc9fa00b897aa5f2d59b923539",
+      "htmlFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/b58e29318f7fc859b86d.html",
+      "textFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/b58e29318f7fc859b86d.txt",
+      "title": "Hard Money Loan Calculator for Total Cost and Interest",
+      "h1": "Hard Money Loan Calculator",
+      "headings": [],
+      "canonical": "https://www.themodernwallet.com/real-estate/hard-money-loan-calculator/",
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "generator": "Astro v4.16.19",
+        "description": "Use this hard money loan calculator to add points, fees, interest and extensions. See cash to close, balloon payoff, loan ratios and profit before tax.",
+        "og:type": "website",
+        "og:site_name": "ModernWallet",
+        "og:title": "Hard Money Loan Calculator for Total Cost and Interest",
+        "og:description": "Use this hard money loan calculator to add points, fees, interest and extensions. See cash to close, balloon payoff, loan ratios and profit before tax.",
+        "og:url": "https://www.themodernwallet.com/real-estate/hard-money-loan-calculator/",
+        "og:image": "https://www.themodernwallet.com/favicon-192.png",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Hard Money Loan Calculator for Total Cost and Interest",
+        "twitter:description": "Use this hard money loan calculator to add points, fees, interest and extensions. See cash to close, balloon payoff, loan ratios and profit before tax.",
+        "twitter:image": "https://www.themodernwallet.com/favicon-192.png"
+      },
+      "schemaTypes": [
+        "Organization",
+        "ImageObject",
+        "Organization",
+        "WebSite",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "WebApplication",
+        "Offer",
+        "Person",
+        "Organization",
+        "Article",
+        "ImageObject",
+        "Person",
+        "Organization",
+        "ImageObject"
+      ],
+      "schemaDates": [
+        {
+          "datePublished": "2026-11-14"
+        },
+        {
+          "dateModified": "2026-11-14"
+        }
+      ],
+      "visibleDates": [],
+      "articleWordCount": 2063,
+      "internalLinkCount": 188,
+      "externalLinkCount": 1,
+      "sampleExternalLinks": [
+        "https://www.layer3labs.io"
+      ],
+      "testingAttributionClaimed": false,
+      "riskClassification": {
+        "provisionalProfile": "high",
+        "maximumRounds": 2,
+        "textSha256": "5311b4ef01eecb857f154c7ba6eb4ac438bde203e66128f44bf5627895cf2d15",
+        "riskPassages": [
+          {
+            "term": "treating",
+            "quote": "elect the funding method that matches the schedule you are modeling rather than treating the two totals as interchangeable quotes. On the example loan, each extra month"
+          },
+          {
+            "term": "treat",
+            "quote": "not entered, as well as tax. Enter the available selling and holding costs, and treat the result as a calculation based only on those inputs. The calculator does not"
+          }
+        ],
+        "requiredFactualChecks": [
+          "centralFacts",
+          "truthfulEvidence",
+          "currentDetails",
+          "recommendationSupport",
+          "primarySources",
+          "consequentialClaims",
+          "limitationsAndJurisdiction",
+          "professionalReview"
+        ]
+      }
+    },
+    {
+      "path": "/real-estate/bridge-loan-calculator/",
+      "fingerprint": "1285308c900dbd54e20427dcab154fd377f38d92a144451a22caa8da1a75bce2",
+      "htmlFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/63b532f88c2f519c14a8.html",
+      "textFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/63b532f88c2f519c14a8.txt",
+      "title": "Bridge Loan Calculator for Total Cost and Net Proceeds",
+      "h1": "Bridge Loan Calculator",
+      "headings": [],
+      "canonical": "https://www.themodernwallet.com/real-estate/bridge-loan-calculator/",
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "generator": "Astro v4.16.19",
+        "description": "Use this bridge loan calculator to estimate interest, fees, monthly overlap outlay and net proceeds after your old home sells. Enter your lender's terms.",
+        "og:type": "website",
+        "og:site_name": "ModernWallet",
+        "og:title": "Bridge Loan Calculator for Total Cost and Net Proceeds",
+        "og:description": "Use this bridge loan calculator to estimate interest, fees, monthly overlap outlay and net proceeds after your old home sells. Enter your lender's terms.",
+        "og:url": "https://www.themodernwallet.com/real-estate/bridge-loan-calculator/",
+        "og:image": "https://www.themodernwallet.com/favicon-192.png",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Bridge Loan Calculator for Total Cost and Net Proceeds",
+        "twitter:description": "Use this bridge loan calculator to estimate interest, fees, monthly overlap outlay and net proceeds after your old home sells. Enter your lender's terms.",
+        "twitter:image": "https://www.themodernwallet.com/favicon-192.png"
+      },
+      "schemaTypes": [
+        "Organization",
+        "ImageObject",
+        "Organization",
+        "WebSite",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "WebApplication",
+        "Offer",
+        "Person",
+        "Organization",
+        "Article",
+        "ImageObject",
+        "Person",
+        "Organization",
+        "ImageObject"
+      ],
+      "schemaDates": [
+        {
+          "datePublished": "2026-11-14"
+        },
+        {
+          "dateModified": "2026-11-14"
+        }
+      ],
+      "visibleDates": [],
+      "articleWordCount": 2021,
+      "internalLinkCount": 189,
+      "externalLinkCount": 1,
+      "sampleExternalLinks": [
+        "https://www.layer3labs.io"
+      ],
+      "testingAttributionClaimed": false,
+      "riskClassification": {
+        "provisionalProfile": "high",
+        "maximumRounds": 2,
+        "textSha256": "8b31a976f6e609f9f7698095d89e7b70b1ad58b21d8697213d5f5df8b52d87d1",
+        "riskPassages": [
+          {
+            "term": "treating",
+            "quote": "ve a combined loan-to-value figure, leave that optional field empty rather than treating the example as an available borrowing amount. You can still estimate bridge cos"
+          }
+        ],
+        "requiredFactualChecks": [
+          "centralFacts",
+          "truthfulEvidence",
+          "currentDetails",
+          "recommendationSupport",
+          "primarySources",
+          "consequentialClaims",
+          "limitationsAndJurisdiction",
+          "professionalReview"
+        ]
+      }
+    },
+    {
+      "path": "/guides/401k-loan-rules/",
+      "fingerprint": "c9f3ee317d886c13c0fbda07747c970e8eba998891568547f97819ea9d056f28",
+      "htmlFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/f7bb21dd01876f2d6ea1.html",
+      "textFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/f7bb21dd01876f2d6ea1.txt",
+      "title": "401(k) Loan Rules: Limits, Repayment Terms, and Default",
+      "h1": "401(k) Loan Rules: Limits, Repayment Terms, and Tax Consequences",
+      "headings": [],
+      "canonical": "https://www.themodernwallet.com/guides/401k-loan-rules/",
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "generator": "Astro v4.16.19",
+        "description": "Learn 401(k) loan rules, borrowing limits up to $50,000, 5-year repayment terms, and tax consequences if a plan loan is treated as a distribution.",
+        "og:type": "website",
+        "og:site_name": "ModernWallet",
+        "og:title": "401(k) Loan Rules: Limits, Repayment Terms, and Default",
+        "og:description": "Learn 401(k) loan rules, borrowing limits up to $50,000, 5-year repayment terms, and tax consequences if a plan loan is treated as a distribution.",
+        "og:url": "https://www.themodernwallet.com/guides/401k-loan-rules/",
+        "og:image": "https://www.themodernwallet.com/favicon-192.png",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "401(k) Loan Rules: Limits, Repayment Terms, and Default",
+        "twitter:description": "Learn 401(k) loan rules, borrowing limits up to $50,000, 5-year repayment terms, and tax consequences if a plan loan is treated as a distribution.",
+        "twitter:image": "https://www.themodernwallet.com/favicon-192.png"
+      },
+      "schemaTypes": [
+        "Organization",
+        "ImageObject",
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Person",
+        "Organization",
+        "Article",
+        "ImageObject",
+        "Person",
+        "Organization",
+        "ImageObject",
+        "CreativeWork",
+        "CreativeWork",
+        "CreativeWork",
+        "CreativeWork",
+        "CreativeWork"
+      ],
+      "schemaDates": [
+        {
+          "datePublished": "2026-11-14"
+        },
+        {
+          "dateModified": "2026-11-14"
+        }
+      ],
+      "visibleDates": [],
+      "articleWordCount": 2521,
+      "internalLinkCount": 188,
+      "externalLinkCount": 19,
+      "sampleExternalLinks": [
+        "https://www.law.cornell.edu/uscode/text/26/72",
+        "https://www.law.cornell.edu/uscode/text/26/72",
+        "https://www.law.cornell.edu/uscode/text/26/72",
+        "https://www.law.cornell.edu/uscode/text/26/4975",
+        "https://www.law.cornell.edu/uscode/text/26/416",
+        "https://www.law.cornell.edu/uscode/text/26/72",
+        "https://www.law.cornell.edu/uscode/text/26/72",
+        "https://www.law.cornell.edu/uscode/text/26/72",
+        "https://www.law.cornell.edu/uscode/text/26/72",
+        "https://www.irs.gov/taxtopics/tc558",
+        "https://www.law.cornell.edu/uscode/text/26/402",
+        "https://www.law.cornell.edu/uscode/text/26/402",
+        "https://www.law.cornell.edu/uscode/text/26/72",
+        "https://www.law.cornell.edu/uscode/text/26/72",
+        "https://www.law.cornell.edu/uscode/text/26/402",
+        "https://www.irs.gov/taxtopics/tc558",
+        "https://www.law.cornell.edu/uscode/text/26/4975",
+        "https://www.law.cornell.edu/uscode/text/26/416",
+        "https://www.layer3labs.io"
+      ],
+      "testingAttributionClaimed": false,
+      "riskClassification": {
+        "provisionalProfile": "standard",
+        "maximumRounds": 2,
+        "textSha256": "956f1fd1fd227f9aad75ce1b14de17ddb5fe71b97eeaeec126268dcd9a0818a1",
+        "riskPassages": [],
+        "requiredFactualChecks": [
+          "centralFacts",
+          "truthfulEvidence",
+          "currentDetails",
+          "recommendationSupport"
+        ]
+      }
+    },
+    {
+      "path": "/compare/401k-loan-vs-heloc/",
+      "fingerprint": "bf74b00c7e979c1e6afd873b08a14ce820a2d8b4353ba4242636b0889f0b34b5",
+      "htmlFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/30249168b6b531aa8b7c.html",
+      "textFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/30249168b6b531aa8b7c.txt",
+      "title": "401(k) Loan vs HELOC: Which Borrowing Path Fits Best?",
+      "h1": "401k Loan vs HELOC: Which Financing Path Fits Your Plans?",
+      "headings": [],
+      "canonical": "https://www.themodernwallet.com/compare/401k-loan-vs-heloc/",
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "generator": "Astro v4.16.19",
+        "description": "Compare a 401k loan vs HELOC on interest rates, tax rules, qualification hurdles, and default risks to find the right borrowing path for your goals.",
+        "og:type": "website",
+        "og:site_name": "ModernWallet",
+        "og:title": "401(k) Loan vs HELOC: Which Borrowing Path Fits Best?",
+        "og:description": "Compare a 401k loan vs HELOC on interest rates, tax rules, qualification hurdles, and default risks to find the right borrowing path for your goals.",
+        "og:url": "https://www.themodernwallet.com/compare/401k-loan-vs-heloc/",
+        "og:image": "https://www.themodernwallet.com/favicon-192.png",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "401(k) Loan vs HELOC: Which Borrowing Path Fits Best?",
+        "twitter:description": "Compare a 401k loan vs HELOC on interest rates, tax rules, qualification hurdles, and default risks to find the right borrowing path for your goals.",
+        "twitter:image": "https://www.themodernwallet.com/favicon-192.png"
+      },
+      "schemaTypes": [
+        "Organization",
+        "ImageObject",
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Person",
+        "Organization",
+        "Article",
+        "ImageObject",
+        "Person",
+        "Organization",
+        "ImageObject",
+        "CreativeWork",
+        "CreativeWork",
+        "CreativeWork"
+      ],
+      "schemaDates": [
+        {
+          "datePublished": "2026-09-28"
+        },
+        {
+          "dateModified": "2026-09-28"
+        }
+      ],
+      "visibleDates": [],
+      "articleWordCount": 2645,
+      "internalLinkCount": 188,
+      "externalLinkCount": 7,
+      "sampleExternalLinks": [
+        "https://files.consumerfinance.gov/f/documents/cfpb_heloc-brochure.pdf",
+        "https://www.irs.gov/publications/p936",
+        "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-loans",
+        "https://files.consumerfinance.gov/f/documents/cfpb_heloc-brochure.pdf",
+        "https://www.irs.gov/publications/p936",
+        "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-loans",
+        "https://www.layer3labs.io"
+      ],
+      "testingAttributionClaimed": false,
+      "riskClassification": {
+        "provisionalProfile": "standard",
+        "maximumRounds": 2,
+        "textSha256": "9b6b38cd86225f3636f9337b9f15adb38a6a0984099c707028fe17aa07c90165",
+        "riskPassages": [],
+        "requiredFactualChecks": [
+          "centralFacts",
+          "truthfulEvidence",
+          "currentDetails",
+          "recommendationSupport"
+        ]
+      }
+    },
+    {
+      "path": "/compare/sep-ira-vs-solo-401k/",
+      "fingerprint": "8131b0ddcf3bd4da955a379fb15893ac01003c39d1aaca6b6369cb48bec7cbeb",
+      "htmlFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/2afaae13c3a909cb828f.html",
+      "textFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/2afaae13c3a909cb828f.txt",
+      "title": "SEP-IRA vs Solo 401(k): 2025 Guide for the Self-Employed",
+      "h1": "SEP-IRA vs Solo 401(k): Which Retirement Plan Wins?",
+      "headings": [],
+      "canonical": "https://www.themodernwallet.com/compare/sep-ira-vs-solo-401k/",
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "generator": "Astro v4.16.19",
+        "description": "SEP-IRA vs Solo 401(k): the Solo 401(k) lets you save more at low income and offers Roth and loans. See 2025 IRS limits, rules, and how to choose.",
+        "og:type": "website",
+        "og:site_name": "ModernWallet",
+        "og:title": "SEP-IRA vs Solo 401(k): 2025 Guide for the Self-Employed",
+        "og:description": "SEP-IRA vs Solo 401(k): the Solo 401(k) lets you save more at low income and offers Roth and loans. See 2025 IRS limits, rules, and how to choose.",
+        "og:url": "https://www.themodernwallet.com/compare/sep-ira-vs-solo-401k/",
+        "og:image": "https://www.themodernwallet.com/favicon-192.png",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "SEP-IRA vs Solo 401(k): 2025 Guide for the Self-Employed",
+        "twitter:description": "SEP-IRA vs Solo 401(k): the Solo 401(k) lets you save more at low income and offers Roth and loans. See 2025 IRS limits, rules, and how to choose.",
+        "twitter:image": "https://www.themodernwallet.com/favicon-192.png"
+      },
+      "schemaTypes": [
+        "Organization",
+        "ImageObject",
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Person",
+        "Organization",
+        "Article",
+        "ImageObject",
+        "Person",
+        "Organization",
+        "ImageObject",
+        "CreativeWork",
+        "CreativeWork",
+        "CreativeWork"
+      ],
+      "schemaDates": [
+        {
+          "datePublished": "2026-06-25"
+        },
+        {
+          "dateModified": "2026-06-25"
+        }
+      ],
+      "visibleDates": [],
+      "articleWordCount": 1858,
+      "internalLinkCount": 193,
+      "externalLinkCount": 4,
+      "sampleExternalLinks": [
+        "https://www.irs.gov/retirement-plans/one-participant-401k-plans",
+        "https://www.irs.gov/retirement-plans/plan-participant-employee/sep-contribution-limits-including-grandfathered-sarseps",
+        "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits",
+        "https://www.layer3labs.io"
+      ],
+      "testingAttributionClaimed": false,
+      "riskClassification": {
+        "provisionalProfile": "standard",
+        "maximumRounds": 2,
+        "textSha256": "7d6a58163133277b339cea8dc1e0c9c372dcf3615a9f7ad0f1439e3a4caa536d",
+        "riskPassages": [],
+        "requiredFactualChecks": [
+          "centralFacts",
+          "truthfulEvidence",
+          "currentDetails",
+          "recommendationSupport"
+        ]
+      }
+    },
+    {
+      "path": "/compare/bridge-loan-vs-heloc/",
+      "fingerprint": "456ff4ad220c3ceed812cf9eca21041273cf50c01e88744a7827af8fbae1ac2c",
+      "htmlFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/785ad64194cd7073c882.html",
+      "textFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/785ad64194cd7073c882.txt",
+      "title": "Bridge Loan vs HELOC: Which Wins When Buying First?",
+      "h1": "Bridge Loan vs HELOC: Which Covers a Home Purchase Before You Sell?",
+      "headings": [],
+      "canonical": "https://www.themodernwallet.com/compare/bridge-loan-vs-heloc/",
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "generator": "Astro v4.16.19",
+        "description": "Bridge loan vs HELOC for buying a new home before selling your current one: rates, speed to close, fees, and which fits your timeline.",
+        "og:type": "website",
+        "og:site_name": "ModernWallet",
+        "og:title": "Bridge Loan vs HELOC: Which Wins When Buying First?",
+        "og:description": "Bridge loan vs HELOC for buying a new home before selling your current one: rates, speed to close, fees, and which fits your timeline.",
+        "og:url": "https://www.themodernwallet.com/compare/bridge-loan-vs-heloc/",
+        "og:image": "https://www.themodernwallet.com/favicon-192.png",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Bridge Loan vs HELOC: Which Wins When Buying First?",
+        "twitter:description": "Bridge loan vs HELOC for buying a new home before selling your current one: rates, speed to close, fees, and which fits your timeline.",
+        "twitter:image": "https://www.themodernwallet.com/favicon-192.png"
+      },
+      "schemaTypes": [
+        "Organization",
+        "ImageObject",
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Person",
+        "Organization",
+        "Article",
+        "ImageObject",
+        "Person",
+        "Organization",
+        "ImageObject",
+        "CreativeWork",
+        "CreativeWork"
+      ],
+      "schemaDates": [
+        {
+          "datePublished": "2026-06-25"
+        },
+        {
+          "dateModified": "2026-06-25"
+        }
+      ],
+      "visibleDates": [],
+      "articleWordCount": 2612,
+      "internalLinkCount": 190,
+      "externalLinkCount": 5,
+      "sampleExternalLinks": [
+        "https://files.consumerfinance.gov/f/documents/cfpb_heloc-brochure.pdf",
+        "https://www.federalreserve.gov/releases/h15/",
+        "https://files.consumerfinance.gov/f/documents/cfpb_heloc-brochure.pdf",
+        "https://www.federalreserve.gov/releases/h15/",
+        "https://www.layer3labs.io"
+      ],
+      "testingAttributionClaimed": false,
+      "riskClassification": {
+        "provisionalProfile": "high",
+        "maximumRounds": 2,
+        "textSha256": "77256bc195d424c73ba67685e3089f9555f7db1c3f546720faa9c1822260dcfe",
+        "riskPassages": [
+          {
+            "term": "treating",
+            "quote": "er prices the sale of your current home into the deal from day one, rather than treating it as a side fact. How a HELOC Works for This Same Scenario A HELOC is a revolv"
+          },
+          {
+            "term": "treats",
+            "quote": " the home, or after an offer is pending, can make qualifying harder if a lender treats the pending sale as added uncertainty. Free calculators to help you decide Home"
+          }
+        ],
+        "requiredFactualChecks": [
+          "centralFacts",
+          "truthfulEvidence",
+          "currentDetails",
+          "recommendationSupport",
+          "primarySources",
+          "consequentialClaims",
+          "limitationsAndJurisdiction",
+          "professionalReview"
+        ]
+      }
+    },
+    {
+      "path": "/guides/real-estate-investment-options/",
+      "fingerprint": "590a9413f4dac69161d15e38645cc4c7005c6ee8610038ed92fcc08d733d6215",
+      "htmlFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/72cdfa4d8515c70ca69c.html",
+      "textFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/72cdfa4d8515c70ca69c.txt",
+      "title": "Real Estate Investment Options: 5 Ways to Invest",
+      "h1": "Real Estate Investment Options: 5 Ways to Invest in Real Estate Without Just Being a Landlord",
+      "headings": [],
+      "canonical": "https://www.themodernwallet.com/guides/real-estate-investment-options/",
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "generator": "Astro v4.16.19",
+        "description": "Real estate investment options beyond being a landlord: short-term rentals, flipping, REITs, and crowdfunding — with the tax and liquidity tradeoffs.",
+        "og:type": "website",
+        "og:site_name": "ModernWallet",
+        "og:title": "Real Estate Investment Options: 5 Ways to Invest",
+        "og:description": "Real estate investment options beyond being a landlord: short-term rentals, flipping, REITs, and crowdfunding — with the tax and liquidity tradeoffs.",
+        "og:url": "https://www.themodernwallet.com/guides/real-estate-investment-options/",
+        "og:image": "https://www.themodernwallet.com/favicon-192.png",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Real Estate Investment Options: 5 Ways to Invest",
+        "twitter:description": "Real estate investment options beyond being a landlord: short-term rentals, flipping, REITs, and crowdfunding — with the tax and liquidity tradeoffs.",
+        "twitter:image": "https://www.themodernwallet.com/favicon-192.png"
+      },
+      "schemaTypes": [
+        "Organization",
+        "ImageObject",
+        "Organization",
+        "WebSite",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Person",
+        "Organization",
+        "Article",
+        "ImageObject",
+        "Person",
+        "Organization",
+        "ImageObject",
+        "CreativeWork",
+        "CreativeWork",
+        "CreativeWork",
+        "CreativeWork"
+      ],
+      "schemaDates": [
+        {
+          "datePublished": "2026-06-25"
+        },
+        {
+          "dateModified": "2026-06-25"
+        }
+      ],
+      "visibleDates": [],
+      "articleWordCount": 2213,
+      "internalLinkCount": 187,
+      "externalLinkCount": 11,
+      "sampleExternalLinks": [
+        "https://www.irs.gov/publications/p527",
+        "https://www.airbnb.com/",
+        "https://www.irs.gov/taxtopics/tc409",
+        "https://www.investor.gov/introduction-investing/investing-basics/investment-products/real-estate-investment-trusts-reits",
+        "https://www.sec.gov/resources-for-investors/investor-alerts-bulletins/ib_crowdfunding",
+        "https://www.sec.gov/education/capitalraising/building-blocks/exempt-offerings-regulation-d",
+        "https://www.investor.gov/introduction-investing/investing-basics/investment-products/real-estate-investment-trusts-reits",
+        "https://www.sec.gov/resources-for-investors/investor-alerts-bulletins/ib_crowdfunding",
+        "https://www.irs.gov/publications/p527",
+        "https://www.irs.gov/taxtopics/tc409",
+        "https://www.layer3labs.io"
+      ],
+      "testingAttributionClaimed": false,
+      "riskClassification": {
+        "provisionalProfile": "high",
+        "maximumRounds": 2,
+        "textSha256": "b8e1b7d35f7cfe6895edd8d6b1adfd0abc42d45ba36fd1992c896af0c9058de0",
+        "riskPassages": [
+          {
+            "term": "treatment",
+            "quote": "eck your local ordinance before you list a property, not after. Second, the tax treatment can shift: rental income is usually reported on Schedule E and isn't subject to"
+          },
+          {
+            "term": "treatment",
+            "quote": "with our Airbnb income calculator , then confirm the local rules and likely tax treatment before you commit a property to short-term use. Option 3: Flipping houses Flipp"
+          }
+        ],
+        "requiredFactualChecks": [
+          "centralFacts",
+          "truthfulEvidence",
+          "currentDetails",
+          "recommendationSupport",
+          "primarySources",
+          "consequentialClaims",
+          "limitationsAndJurisdiction",
+          "professionalReview"
+        ]
+      }
+    },
+    {
+      "path": "/real-estate/cash-on-cash-return-calculator/",
+      "fingerprint": "0950f1294e61b55986d958b90dee7d102fb2d0cf1ee8fdc668b178ebcc93a158",
+      "htmlFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/e59f2e5da8f45cd97ae7.html",
+      "textFile": "reports/mindmap-pass/2026-11-14-trend-lane-c-run/audit/preview-snapshot.v4/e59f2e5da8f45cd97ae7.txt",
+      "title": "Cash on Cash Return Calculator for Rentals",
+      "h1": "Cash on Cash Return Calculator",
+      "headings": [],
+      "canonical": "https://www.themodernwallet.com/real-estate/cash-on-cash-return-calculator/",
+      "meta": {
+        "viewport": "width=device-width, initial-scale=1.0",
+        "generator": "Astro v4.16.19",
+        "description": "Use our cash on cash return calculator to find the pre-tax yield on the actual cash you invest in a rental property. See a worked example.",
+        "og:type": "website",
+        "og:site_name": "ModernWallet",
+        "og:title": "Cash on Cash Return Calculator for Rentals",
+        "og:description": "Use our cash on cash return calculator to find the pre-tax yield on the actual cash you invest in a rental property. See a worked example.",
+        "og:url": "https://www.themodernwallet.com/real-estate/cash-on-cash-return-calculator/",
+        "og:image": "https://www.themodernwallet.com/favicon-192.png",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Cash on Cash Return Calculator for Rentals",
+        "twitter:description": "Use our cash on cash return calculator to find the pre-tax yield on the actual cash you invest in a rental property. See a worked example.",
+        "twitter:image": "https://www.themodernwallet.com/favicon-192.png"
+      },
+      "schemaTypes": [
+        "Organization",
+        "ImageObject",
+        "Organization",
+        "WebSite",
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "BreadcrumbList",
+        "ListItem",
+        "ListItem",
+        "ListItem",
+        "WebApplication",
+        "Offer",
+        "Person",
+        "Organization",
+        "Article",
+        "ImageObject",
+        "Person",
+        "Organization",
+        "ImageObject",
+        "CreativeWork",
+        "CreativeWork"
+      ],
+      "schemaDates": [
+        {
+          "datePublished": "2026-06-25"
+        },
+        {
+          "dateModified": "2026-06-25"
+        }
+      ],
+      "visibleDates": [],
+      "articleWordCount": 1248,
+      "internalLinkCount": 192,
+      "externalLinkCount": 3,
+      "sampleExternalLinks": [
+        "https://corporatefinanceinstitute.com/resources/wealth-management/cash-on-cash-return/",
+        "https://www.irs.gov/taxtopics/tc414",
+        "https://www.layer3labs.io"
+      ],
+      "testingAttributionClaimed": false,
+      "riskClassification": {
+        "provisionalProfile": "high",
+        "maximumRounds": 2,
+        "textSha256": "8b0a8f4cd5c84e8697242a2b4a09d66262b6e30c4b5f28082408cb0be6613527",
+        "riskPassages": [
+          {
+            "term": "Treating",
+            "quote": "n-cash with cap rate. Cap rate ignores your mortgage; cash-on-cash includes it. Treating it as total return. Cash-on-cash skips appreciation, loan paydown, and tax perk"
+          }
+        ],
+        "requiredFactualChecks": [
+          "centralFacts",
+          "truthfulEvidence",
+          "currentDetails",
+          "recommendationSupport",
+          "primarySources",
+          "consequentialClaims",
+          "limitationsAndJurisdiction",
+          "professionalReview"
+        ]
+      }
+    }
+  ],
+  "scope": "Mechanical surface and provisional risk scan only; read full rendered pages and raw sources for independent judgment."
+}
