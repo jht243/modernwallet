@@ -166,18 +166,20 @@ RECENT=$(git log --since="90 days ago" --format=%H -G "metaTitle|metaDescription
 
 ### Gate 2 — GSC performance check (run once per unique target page)
 
-For each unique page targeted by surviving metadata candidates, call the GSC Search Analytics tool once:
+First run the pure-stdlib credential precheck (`python3 .claude/tools/gsc-search-analytics/gsc_search_analytics.py --check-creds`). If it exits `2` (missing) or `4` (`CREDENTIAL_CORRUPT_NO_RETRY`), **do NOT `pip install` or touch Ahrefs** — simply route all surviving metadata candidates to `update existing body text` (`note: "GSC unavailable (exit 2/4) — routed to body"`).
+
+Otherwise, for each unique page targeted by surviving metadata candidates, call the GSC Search Analytics tool once:
 
 ```bash
-.claude/tools/indexing-issues-gsc-pass/.venv/bin/python \
-  .claude/tools/gsc-search-analytics/gsc_search_analytics.py \
+python3 .claude/tools/gsc-search-analytics/gsc_search_analytics.py \
   --base-url <project base URL discovered in Step A> \
   --page <full page URL> \
   --trend \
   --json reports/keyword-pass/<TODAY>.gsc.<slug>.json
 ```
 
-Read the `verdict.label` and `verdict.rewrite_recommended` fields:
+Read the `verdict.label` and `verdict.rewrite_recommended` fields (or exit code):
+- **Exit `2` / `3` / `4` (credentials missing, permission denied, or corrupt PEM)** → ROUTE all metadata candidates for this page to `update existing body text` (`metadata deferred — GSC unavailable — routed to body`). Never fail the pass or query Ahrefs.
 - **`performing`** (rewrite_recommended=false) → ROUTE all metadata candidates for this page to `update existing body text`. Note `metadata deferred — page performing well (CTR X%, trend up) — routed to body`.
 - **`underperforming` / `no-data` / `mixed`** (rewrite_recommended=true) → metadata candidates stay as-is; survive into the chart.
 

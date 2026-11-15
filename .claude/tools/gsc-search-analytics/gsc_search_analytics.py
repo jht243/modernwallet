@@ -50,10 +50,11 @@ Exit codes:
   0  success
   2  no credentials (place SA JSON at ~/.claude/secrets/gsc-service-account.json)
   3  403 — service account lacks property permission
-  4  bad arguments
+  4  corrupt/truncated service-account credentials across all sources (CREDENTIAL_CORRUPT_NO_RETRY) or bad arguments
 """
 
 import argparse
+import base64
 import json
 import os
 import sys
@@ -63,16 +64,151 @@ from pathlib import Path
 from typing import Optional
 
 
-SA_PATHS = [
-    None,  # placeholder for --sa-file override
-    os.environ.get("GOOGLE_REPORTING_SA_JSON"),
-    os.environ.get("GOOGLE_REPORTING_SA_FILE"),
-    os.environ.get("GSC_SA_FILE"),
-    os.path.expanduser("~/.claude/secrets/gsc-service-account.json"),
-]
+def _parse_env_files_for_sa(repo_root: Optional[Path] = None) -> list[tuple[str, str]]:
+    """Collect fallback GSC SA values from local/home env files without overriding env vars."""
+    root = repo_root or Path.cwd()
+    found: list[tuple[str, str]] = []
+    env_files = [
+        root / ".claude" / "secrets.env",
+        root / ".claude" / "routines.config",
+        root / ".env.local",
+        root / ".env",
+        Path.home() / ".claude" / "secrets.env",
+    ]
+    target_keys = ("GOOGLE_REPORTING_SA_JSON", "GOOGLE_REPORTING_SA_FILE", "GSC_SA_FILE")
+    for ef in env_files:
+        if not ef.is_file():
+            continue
+        try:
+            lines = ef.read_text(encoding="utf-8", errors="ignore").splitlines()
+        except OSError:
+            continue
+        vals: dict[str, str] = {}
+        for raw in lines:
+            line = raw.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            if line.startswith("export "):
+                line = line[7:].strip()
+            k, _, v = line.partition("=")
+            k = k.strip()
+            v = v.strip()
+            if len(v) >= 2 and v[0] == v[-1] and v[0] in ('"', "'"):
+                v = v[1:-1]
+            if k in target_keys and v:
+                vals[k] = v
+        for k in target_keys:
+            if k in vals:
+                found.append((f"{ef}:{k}", vals[k]))
+    return found
+
+
+def _validate_sa_dict(info: object) -> tuple[bool, str]:
+    """Pure-stdlib PKCS#8 / PEM ASN.1 length check — catches truncated env keys in <1ms before pip install."""
+    if not isinstance(info, dict):
+        return False, "not a JSON object"
+    email = str(info.get("client_email") or "").strip()
+    if "@" not in email:
+        return False, "missing client_email"
+    pk = str(info.get("private_key") or "").strip()
+    if not pk:
+        return False, "missing private_key"
+    if "\\n" in pk and "\n" not in pk:
+        pk = pk.replace("\\n", "\n")
+        info["private_key"] = pk
+    if "-----BEGIN " not in pk or "PRIVATE KEY-----" not in pk or "-----END " not in pk:
+        return False, "private_key missing PEM header/footer"
+    b64_lines = [
+        ln.strip()
+        for ln in pk.splitlines()
+        if ln.strip() and not ln.strip().startswith("-----")
+    ]
+    if not b64_lines:
+        return False, "private_key PEM body empty"
+    try:
+        der = base64.b64decode("".join(b64_lines), validate=True)
+    except Exception as exc:
+        return False, f"private_key base64 corrupt ({exc})"
+    if len(der) < 512 or der[0] != 0x30:
+        return False, f"private_key DER truncated ({len(der)} bytes)"
+    first_len = der[1]
+    if first_len < 0x80:
+        seq_len = first_len
+        hdr_len = 2
+    else:
+        n_oct = first_len & 0x7F
+        if n_oct == 0 or n_oct > 4 or len(der) < 2 + n_oct:
+            return False, "private_key ASN.1 length header corrupt"
+        seq_len = int.from_bytes(der[2 : 2 + n_oct], "big")
+        hdr_len = 2 + n_oct
+    if hdr_len + seq_len != len(der):
+        return False, f"private_key ASN.1 short/truncated data (expected {hdr_len + seq_len}B, got {len(der)}B)"
+    return True, "ok"
+
+
+def resolve_sa_info(sa_file_override: Optional[str] = None, repo_root: Optional[Path] = None) -> tuple[dict, str]:
+    """Resolve and validate the first non-corrupt service-account dict across all configured sources.
+    Exits 2 when no credentials exist anywhere, or 4 (CREDENTIAL_CORRUPT_NO_RETRY) when present keys are corrupt."""
+    candidates: list[tuple[str, Optional[str]]] = []
+    if sa_file_override:
+        candidates.append(("--sa-file", sa_file_override))
+    candidates.extend([
+        ("env:GOOGLE_REPORTING_SA_JSON", os.environ.get("GOOGLE_REPORTING_SA_JSON")),
+        ("env:GOOGLE_REPORTING_SA_FILE", os.environ.get("GOOGLE_REPORTING_SA_FILE")),
+        ("env:GSC_SA_FILE", os.environ.get("GSC_SA_FILE")),
+    ])
+    candidates.extend(_parse_env_files_for_sa(repo_root))
+    candidates.append(("~/.claude/secrets/gsc-service-account.json", os.path.expanduser("~/.claude/secrets/gsc-service-account.json")))
+
+    errors: list[str] = []
+    seen_values: set[str] = set()
+    for label, raw in candidates:
+        if not raw or not str(raw).strip():
+            continue
+        val = str(raw).strip()
+        if val in seen_values:
+            continue
+        seen_values.add(val)
+        info = None
+        if val.startswith("{") or ("private_key" in val and "client_email" in val):
+            try:
+                info = json.loads(val)
+            except json.JSONDecodeError as exc:
+                errors.append(f"{label}: invalid inline JSON ({exc.msg})")
+                continue
+        else:
+            p = Path(val).expanduser()
+            if not p.is_file():
+                continue
+            try:
+                info = json.loads(p.read_text(encoding="utf-8"))
+            except Exception as exc:
+                errors.append(f"{label} ({p}): invalid JSON ({exc})")
+                continue
+        ok, reason = _validate_sa_dict(info)
+        if not ok:
+            errors.append(f"{label}: {reason}")
+            continue
+        return info, label
+
+    if errors:
+        print(
+            "CREDENTIAL_CORRUPT_NO_RETRY: GSC service-account key present but corrupt/truncated across all sources "
+            f"({'; '.join(errors)}). Do NOT retry or fall back to Ahrefs; rotate GOOGLE_REPORTING_SA_JSON.",
+            file=sys.stderr,
+        )
+        sys.exit(4)
+
+    print(
+        "ERROR: No service-account credentials found. Place SA JSON at "
+        "~/.claude/secrets/gsc-service-account.json or set GOOGLE_REPORTING_SA_FILE.",
+        file=sys.stderr,
+    )
+    sys.exit(2)
 
 
 def load_credentials(sa_file_override: Optional[str] = None):
+    sa_info, source_label = resolve_sa_info(sa_file_override)
     try:
         from google.oauth2 import service_account
     except ImportError:
@@ -80,34 +216,16 @@ def load_credentials(sa_file_override: Optional[str] = None):
               file=sys.stderr)
         sys.exit(1)
 
-    candidates = list(SA_PATHS)
-    if sa_file_override:
-        candidates[0] = sa_file_override
-
-    sa_info = None
-    for c in candidates:
-        if not c:
-            continue
-        if c.strip().startswith("{"):
-            try:
-                sa_info = json.loads(c)
-                break
-            except json.JSONDecodeError:
-                continue
-        p = Path(c)
-        if p.exists():
-            with open(p) as f:
-                sa_info = json.load(f)
-            break
-
-    if sa_info is None:
-        print("ERROR: No service-account credentials found. Place SA JSON at "
-              "~/.claude/secrets/gsc-service-account.json or set GOOGLE_REPORTING_SA_FILE.",
-              file=sys.stderr)
-        sys.exit(2)
-
     scopes = ["https://www.googleapis.com/auth/webmasters.readonly"]
-    return service_account.Credentials.from_service_account_info(sa_info, scopes=scopes)
+    try:
+        return service_account.Credentials.from_service_account_info(sa_info, scopes=scopes)
+    except Exception as exc:
+        print(
+            f"CREDENTIAL_CORRUPT_NO_RETRY: google-auth rejected {source_label} ({exc}). "
+            "Do NOT retry or fall back to Ahrefs.",
+            file=sys.stderr,
+        )
+        sys.exit(4)
 
 
 def _normalize_url_typo(url: str) -> str:
@@ -383,8 +501,10 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(
         description="GSC Search Analytics fetcher — page-level performance + rewrite verdict."
     )
-    ap.add_argument("--base-url", required=True,
+    ap.add_argument("--base-url",
                     help="e.g. https://www.example.com — used to derive sc-domain:<host>.")
+    ap.add_argument("--check-creds", action="store_true",
+                    help="Validate GSC service-account JSON/PEM in pure stdlib (before pip install) and exit 0/2/4.")
     ap.add_argument("--page",
                     help="Full page URL to inspect. Use --stdin for batch.")
     ap.add_argument("--stdin", action="store_true",
@@ -402,6 +522,13 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--json", help="Write JSON results to file instead of stdout.")
     args = ap.parse_args(argv)
 
+    if args.check_creds:
+        info, source_label = resolve_sa_info(args.sa_file)
+        print(json.dumps({"ok": True, "client_email": info.get("client_email"), "source": source_label}))
+        return 0
+
+    if not args.base_url:
+        ap.error("--base-url is required unless --check-creds is set")
     if not args.page and not args.stdin and not args.top_pages:
         ap.error("--page, --stdin, or --top-pages required")
 

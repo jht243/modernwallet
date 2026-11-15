@@ -20,6 +20,7 @@ import os
 import re
 import subprocess
 import sys
+import urllib.parse
 from pathlib import Path
 
 
@@ -155,7 +156,10 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
                 continue
             if rid:
                 active_ids.add(rid)
-            if rid and q.is_quarantined(root, 'paid-placement-publish', item_id=f'order:{rid}'):
+            if rid and (
+                q.is_quarantined(root, 'paid-placement-publish', item_id=f'order:{rid}')
+                or q.is_quarantined(root, 'paid-placement-publish', item_id=rid)
+            ):
                 continue
             actionable_orders.append(rid or 'order')
 
@@ -169,7 +173,11 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
             if r.get('disposition') == 'superseded':
                 continue
             rid = str(r.get('id') or r.get('fixId') or r.get('brand') or '')
-            if rid and q.is_quarantined(root, 'paid-placement-publish', item_id=f'fix:{rid}'):
+            page_route = urllib.parse.urlparse(str(r.get('pageUrl') or '')).path.rstrip('/') or None if r.get('pageUrl') else None
+            if rid and (
+                q.is_quarantined(root, 'paid-placement-publish', item_id=f'fix:{rid}', route=page_route)
+                or q.is_quarantined(root, 'paid-placement-publish', item_id=rid, route=page_route)
+            ):
                 continue
             actionable_fixes.append(rid or 'fix')
 
@@ -185,7 +193,10 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
                 active_ids.add(rid)
             if r.get('status') != 'queued':
                 continue
-            if rid and q.is_quarantined(root, 'paid-placement-publish', item_id=f'upsell:{rid}'):
+            if rid and (
+                q.is_quarantined(root, 'paid-placement-publish', item_id=f'upsell:{rid}')
+                or q.is_quarantined(root, 'paid-placement-publish', item_id=rid)
+            ):
                 continue
             actionable_upsells.append(rid or 'upsell')
 
@@ -282,6 +293,79 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
     return {'fastExit': True, 'summary': summary}
 
 
+def record_publisher_failure(
+    root: Path,
+    *,
+    kind: str,
+    item_id: str,
+    reason: str,
+    route: str | None = None,
+    max_attempts: int = 2,
+    cooldown_days: int = 7,
+    save_branch: bool = False,
+    send_email: bool = False,
+    site: str = 'https://www.layer3labs.io',
+) -> dict:
+    """Track per-item publisher failure strikes and auto-quarantine at `max_attempts` (default 2)."""
+    q = _load_quarantine(root)
+    norm_kind = kind.strip().lower()
+    prefixed_id = item_id if item_id.startswith(f'{norm_kind}:') else f'{norm_kind}:{item_id}'
+    attempts_file = q.quarantine_dir(root, 'paid-placement-publish') / '_attempts.json'
+    attempts_file.parent.mkdir(parents=True, exist_ok=True)
+    ledger: dict = {}
+    if attempts_file.is_file():
+        try:
+            ledger = json.loads(attempts_file.read_text(encoding='utf-8')) or {}
+        except Exception:
+            ledger = {}
+    entry = ledger.get(prefixed_id) if isinstance(ledger.get(prefixed_id), dict) else {'attempts': 0, 'reasons': []}
+    attempts = int(entry.get('attempts') or 0) + 1
+    reasons = list(entry.get('reasons') or [])
+    if reason:
+        reasons.append(reason)
+    now_iso = dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')
+    ledger[prefixed_id] = {
+        'attempts': attempts,
+        'lastFailedAt': now_iso,
+        'route': route,
+        'reasons': reasons[-5:],
+    }
+    attempts_file.write_text(json.dumps(ledger, indent=2) + '\n', encoding='utf-8')
+    if attempts < max_attempts:
+        return {
+            'quarantined': False,
+            'itemId': prefixed_id,
+            'attempts': attempts,
+            'maxAttempts': max_attempts,
+            'attemptsFile': str(attempts_file.relative_to(root)),
+        }
+    ticket = q.record_ticket(
+        root,
+        skill='paid-placement-publish',
+        item_id=prefixed_id,
+        routes=[route] if route else [],
+        cooldown_days=cooldown_days,
+        reason=f'Failed {attempts}/{max_attempts} publisher runs: {reason}',
+        save_branch=save_branch,
+    )
+    if send_email:
+        _send_noop(
+            root,
+            'paid-placement-publish',
+            site,
+            f'Quarantined {prefixed_id} after {attempts} failed attempts ({reason}); quiet hours unblocked.',
+            status='failure',
+        )
+    return {
+        'quarantined': True,
+        'itemId': prefixed_id,
+        'attempts': attempts,
+        'maxAttempts': max_attempts,
+        'ticketPath': ticket.get('_ticketPath'),
+        'savedBranch': ticket.get('savedBranch'),
+    }
+
+
 def _parse_ledger_dates(ledger_path: Path) -> dict[str, dt.date]:
     if not ledger_path.is_file():
         return {}
@@ -372,6 +456,17 @@ def main(argv: list[str] | None = None) -> int:
     p_pub.add_argument('--site', default='https://www.layer3labs.io')
     p_pub.add_argument('--send-email', action='store_true')
 
+    p_pub_fail = sub.add_parser('record-publisher-failure')
+    p_pub_fail.add_argument('--kind', choices=['fix', 'order', 'upsell'], required=True)
+    p_pub_fail.add_argument('--id', required=True)
+    p_pub_fail.add_argument('--route', default=None)
+    p_pub_fail.add_argument('--reason', required=True)
+    p_pub_fail.add_argument('--max-attempts', type=int, default=2)
+    p_pub_fail.add_argument('--cooldown-days', type=int, default=7)
+    p_pub_fail.add_argument('--save-branch', action='store_true')
+    p_pub_fail.add_argument('--send-email', action='store_true')
+    p_pub_fail.add_argument('--site', default='https://www.layer3labs.io')
+
     p_ga4 = sub.add_parser('ga4-cooldown')
     p_ga4.add_argument('--skill', required=True)
     p_ga4.add_argument('--site', required=True)
@@ -401,6 +496,22 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.cmd == 'paid-publisher':
         res = check_paid_publisher(root, site=args.site, send_email=args.send_email)
+        print(json.dumps(res, ensure_ascii=False))
+        return 0
+
+    if args.cmd == 'record-publisher-failure':
+        res = record_publisher_failure(
+            root,
+            kind=args.kind,
+            item_id=args.id,
+            reason=args.reason,
+            route=args.route,
+            max_attempts=args.max_attempts,
+            cooldown_days=args.cooldown_days,
+            save_branch=args.save_branch,
+            send_email=args.send_email,
+            site=args.site,
+        )
         print(json.dumps(res, ensure_ascii=False))
         return 0
 

@@ -52,6 +52,7 @@ Exit codes: 0 ok, 2 no credentials, 3 first call 403 (SA lacks Full/Owner access
 from __future__ import annotations
 
 import argparse
+import base64
 import json
 import os
 import signal
@@ -61,10 +62,6 @@ import xml.etree.ElementTree as ET
 from datetime import date, datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
-
-import requests
-from google.oauth2 import service_account
-from google.auth.transport.requests import Request as GoogleAuthRequest
 
 SCOPE = "https://www.googleapis.com/auth/webmasters.readonly"
 INSPECT_ENDPOINT = "https://searchconsole.googleapis.com/v1/urlInspection/index:inspect"
@@ -81,23 +78,98 @@ def log(msg: str) -> None:
 
 
 # --------------------------------------------------------------------------- creds
+def _validate_sa_dict(info: object) -> tuple[bool, str]:
+    if not isinstance(info, dict):
+        return False, "not a JSON object"
+    if "@" not in str(info.get("client_email") or ""):
+        return False, "missing client_email"
+    pk = str(info.get("private_key") or "").strip()
+    if "\\n" in pk and "\n" not in pk:
+        pk = pk.replace("\\n", "\n")
+        info["private_key"] = pk
+    if "-----BEGIN " not in pk or "PRIVATE KEY-----" not in pk or "-----END " not in pk:
+        return False, "private_key missing PEM header/footer"
+    b64_lines = [ln.strip() for ln in pk.splitlines() if ln.strip() and not ln.strip().startswith("-----")]
+    if not b64_lines:
+        return False, "private_key PEM body empty"
+    try:
+        der = base64.b64decode("".join(b64_lines), validate=True)
+    except Exception as exc:
+        return False, f"private_key base64 corrupt ({exc})"
+    if len(der) < 512 or der[0] != 0x30:
+        return False, f"private_key DER truncated ({len(der)}B)"
+    first_len = der[1]
+    if first_len < 0x80:
+        hdr_len, seq_len = 2, first_len
+    else:
+        n_oct = first_len & 0x7F
+        if n_oct == 0 or n_oct > 4 or len(der) < 2 + n_oct:
+            return False, "private_key ASN.1 header corrupt"
+        hdr_len, seq_len = 2 + n_oct, int.from_bytes(der[2 : 2 + n_oct], "big")
+    if hdr_len + seq_len != len(der):
+        return False, f"private_key ASN.1 truncated (expected {hdr_len + seq_len}B, got {len(der)}B)"
+    return True, "ok"
+
+
 def load_sa_info(sa_file: str | None) -> dict | None:
+    candidates: list[tuple[str, str | None]] = []
     if sa_file:
-        return json.loads(Path(sa_file).expanduser().read_text(encoding="utf-8"))
-    raw = os.environ.get("GOOGLE_REPORTING_SA_JSON", "").strip()
-    if raw:
-        return json.loads(raw)
-    for env in ("GOOGLE_REPORTING_SA_FILE", "GSC_SA_FILE"):
-        p = os.environ.get(env, "").strip()
-        if p:
-            return json.loads(Path(p).expanduser().read_text(encoding="utf-8"))
-    if DEFAULT_SA.exists():
-        return json.loads(DEFAULT_SA.read_text(encoding="utf-8"))
+        candidates.append(("--sa-file", sa_file))
+    candidates.extend([
+        ("env:GOOGLE_REPORTING_SA_JSON", os.environ.get("GOOGLE_REPORTING_SA_JSON")),
+        ("env:GOOGLE_REPORTING_SA_FILE", os.environ.get("GOOGLE_REPORTING_SA_FILE")),
+        ("env:GSC_SA_FILE", os.environ.get("GSC_SA_FILE")),
+    ])
+    for ef in (Path.cwd() / ".claude/secrets.env", Path.cwd() / ".claude/routines.config", Path.home() / ".claude/secrets.env"):
+        if ef.is_file():
+            for raw in ef.read_text(encoding="utf-8", errors="ignore").splitlines():
+                ln = raw.strip().removeprefix("export ").strip()
+                if ln and not ln.startswith("#") and "=" in ln:
+                    k, _, v = ln.partition("=")
+                    k, v = k.strip(), v.strip().strip("\"'")
+                    if k in ("GOOGLE_REPORTING_SA_JSON", "GOOGLE_REPORTING_SA_FILE", "GSC_SA_FILE") and v:
+                        candidates.append((f"{ef}:{k}", v))
+    candidates.append((str(DEFAULT_SA), str(DEFAULT_SA)))
+
+    errors: list[str] = []
+    seen: set[str] = set()
+    for label, raw in candidates:
+        if not raw or not str(raw).strip():
+            continue
+        val = str(raw).strip()
+        if val in seen:
+            continue
+        seen.add(val)
+        if val.startswith("{") or ("private_key" in val and "client_email" in val):
+            try:
+                info = json.loads(val)
+            except json.JSONDecodeError as exc:
+                errors.append(f"{label}: invalid JSON ({exc.msg})")
+                continue
+        else:
+            p = Path(val).expanduser()
+            if not p.is_file():
+                continue
+            try:
+                info = json.loads(p.read_text(encoding="utf-8"))
+            except Exception as exc:
+                errors.append(f"{label}: invalid JSON ({exc})")
+                continue
+        ok, reason = _validate_sa_dict(info)
+        if not ok:
+            errors.append(f"{label}: {reason}")
+            continue
+        return info
+    if errors:
+        log(f"CREDENTIAL_CORRUPT_NO_RETRY: GSC SA key corrupt across all sources ({'; '.join(errors)}).")
+        raise SystemExit(4)
     return None
 
 
 class Inspector:
     def __init__(self, sa_info: dict, site_url: str):
+        from google.oauth2 import service_account
+        from google.auth.transport.requests import Request as GoogleAuthRequest
         self.site_url = site_url
         self._creds = service_account.Credentials.from_service_account_info(sa_info, scopes=[SCOPE])
         self._auth_req = GoogleAuthRequest()
@@ -111,6 +183,7 @@ class Inspector:
         """Inspect one URL. Retries transient failures (timeouts, 429, 5xx) with
         backoff so a single slow/flaky page can't stall or kill the whole run;
         after `retries` it records the error and the caller moves on."""
+        import requests
         try:
             token = self._token()
         except Exception as exc:  # noqa: BLE001
@@ -198,6 +271,7 @@ def fetch_sitemap_urls(base_url: str) -> tuple[list[str], list[str]]:
 def _get(url: str, retries: int = 3, read_timeout: int = 60) -> bytes:
     """GET with retries + exponential backoff. Transient network/timeout errors
     on a sitemap fetch must NOT silently drop URLs (see fetch_sitemap_urls)."""
+    import requests
     last_exc: Exception | None = None
     for attempt in range(1, retries + 1):
         try:
@@ -436,6 +510,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--recheck-indexed", action="store_true", help="Re-inspect pages that were 'Submitted and indexed' in the most recent prior sweep (default: skip them and carry their status forward — saves API calls on big sites).")
     ap.add_argument("--out", default="reports/indexing-pass", help="Output dir for the dated JSON (default ./reports/indexing-pass).")
     ap.add_argument("--sa-file", help="Path to the service-account JSON (overrides env / default location).")
+    ap.add_argument("--check-creds", action="store_true", help="Validate SA credentials in pure stdlib and exit 0/2/4.")
     ap.add_argument("--verify", nargs=2, metavar=("OLD.json", "NEW.json"), help="Diff two prior sweeps.")
     args = ap.parse_args(argv)
 
@@ -447,6 +522,9 @@ def main(argv: list[str] | None = None) -> int:
         log("No service-account credentials. Set one of: --sa-file, GOOGLE_REPORTING_SA_JSON, "
             f"GOOGLE_REPORTING_SA_FILE, GSC_SA_FILE, or place the JSON at {DEFAULT_SA}.")
         return 2
+    if args.check_creds:
+        print(json.dumps({"ok": True, "client_email": sa_info.get("client_email")}))
+        return 0
 
     if not args.base_url and not args.site_url:
         log("Provide --base-url (and optionally --site-url).")

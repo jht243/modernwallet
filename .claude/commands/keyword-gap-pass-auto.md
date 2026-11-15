@@ -31,17 +31,17 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 > Run `.claude/scripts/deploy-run-to-main.sh mark` FIRST, before any commit.
 
 ## STEP 1 — Harvest
-Run **Step A** (refresh the competitor set live) and **Step B** (Lens 1 competitor gap + Lens 2 whitespace) of `.claude/commands/keyword-gap-pass/phase-build-keywords.md`, with its API-budget rules, every command in the FOREGROUND with a Bash timeout of 600000. Stop before Step C — mindmap does the classifying and dedup. Persist the refreshed competitor set as that file says, and save the raw opportunity table (keyword · volume · KD · competitors ranking · lens) to `reports/keyword-pass/<TODAY>.raw.md`.
+Run **Step A** (refresh the competitor set live) and **Step B** (Lens 1 competitor gap + Lens 2 whitespace) of `.claude/commands/keyword-gap-pass/phase-build-keywords.md`, with its API-budget rules, every command in the FOREGROUND with a Bash timeout of 600000. Stop before Step C — mindmap does the classifying and dedup. Persist the refreshed competitor set as that file says, save the full raw opportunity table (keyword · volume · KD · competitors ranking · lens) to `reports/keyword-pass/<TODAY>.raw.md`, and keep the lossless intent-clustered table produced by `dfs_keyword_gap.py` at `reports/seo-research/keyword-gap.brief.md` (which preserves **100% of raw keywords — zero rows cut** — grouped by SERP intent with pre-matched existing site routes).
 
-Both keyword engines returned nothing → email `failure` naming the API error, exit 0.
+Both keyword engines returned nothing → email `failure` naming the API error, exit 0. If `new_gap_count == 0` AND Lens 2 produced `0` net-new untargeted candidates → email `--status no-changes` and exit 0 immediately without spawning Mindmap workers.
 
-## STEP 2 — Send them all
-The raw opportunity table goes into the brief whole. No filtering, no judging.
+## STEP 2 — Send 100% of opportunities (losslessly clustered by SERP intent)
+Never drop, cap, or filter out adjacent/long-tail keywords. Pass the complete lossless intent-clustered table (`reports/seo-research/keyword-gap.brief.md` + Lens 2 whitespace clusters) into the brief so **every single keyword** is represented while Mindmap `BUILD` and `CHART-REVIEW` evaluate **one row per SERP-intent cluster** (carrying **all** member `Supporting Variants` into the winning page's supporting keywords and `target-keywords.md`, and using `Pre-Matched Existing Route(s)` as starting coverage evidence instead of repeating duplicate file scans per spelling variant).
 
 ## STEP 3 — Run /mindmap-pass with that brief
-Start the brief with these lines, verbatim, then the table:
+Start the brief with these lines, verbatim, then the lossless clustered table:
 
-> Source: weekly competitor keyword-gap pull for <BASE_URL> (competitors: <list>). Every keyword carries measured volume/KD from the gap engine — use those figures, do not re-pull them. Low-difficulty on-intent `adjacent` terms are not deprioritized.
+> Source: weekly competitor keyword-gap pull for <BASE_URL> (competitors: <list>). Every cluster row preserves 100% of discovered keywords (`Primary Keyword` + all `Supporting Variants`) with measured volume/KD from the gap engine — use those figures, do not re-pull them, and never drop `adjacent` or supporting variants (carry every member keyword of an approved cluster into the page's supporting keywords). Evaluate dispositions at the SERP-intent cluster level rather than repeating duplicate prose per spelling inflection.
 > Unattended run: save the chart to `reports/mindmap-pass/<YYYY-MM-DD>-keyword-gap.md` (this exact name, so it never collides with another mindmap run today), treat the Phase 0 manifest as approved, and continue to Phase 9 without stopping.
 
 ```

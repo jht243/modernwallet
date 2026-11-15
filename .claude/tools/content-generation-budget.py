@@ -262,9 +262,16 @@ def reserve(root,args,operation):
                 unit='full' if operation=='write' or row.get('bucket')=='create new content' else args.slug
                 if 'full' in state['generated'] or unit in state['generated']:
                     cycle=cycle or current_cycle(root,route,policy)
-                    local_drafts=[p for sfx in ('.json','.md','.astro','.tsx','.ts','.mjs') for p in (root/'reports').glob('**/*'+route.rstrip('/').rsplit('/',1)[-1]+sfx)] if (root/'reports').is_dir() else []
-                    if local_drafts or (cycle and cycle.get('jobId')==job and cycle.get('status') in ('published','needs-fix') and not _prior_job_stale_or_quarantined(root,state,route,cycle)):
-                        raise ValueError('Generation already reserved. Resume the retained candidate; do not regenerate into a different directory')
+                    stale_same=_prior_job_stale_or_quarantined(root,state,route,cycle)
+                    slug_tail=route.rstrip('/').rsplit('/',1)[-1]
+                    verified_drafts=[
+                        p for sfx in ('.json','.md') for p in ((root/'reports').glob('**/*'+slug_tail+sfx) if (root/'reports').is_dir() else ())
+                        if any(seg.startswith(('drafts','sections')) for seg in p.parts)
+                        and ((p.parent/(p.name+'.meta.json')).is_file() or p.with_suffix('.meta.json').is_file())
+                    ]
+                    if not stale_same and (verified_drafts or (cycle and cycle.get('jobId')==job and cycle.get('status') in ('published','needs-fix'))):
+                        hint=str(verified_drafts[0].relative_to(root)) if verified_drafts else 'review journal'
+                        raise ValueError('Generation already reserved. Resume retained verified draft at '+hint+'; do not regenerate into a different directory')
                     state={'jobId':job,'route':route,'generated':[],'repairs':[],
                            'previousJobs':state.get('previousJobs',[])+[{k:v for k,v in state.items() if k!='previousJobs'}]}
                 state['generated'].append(unit)

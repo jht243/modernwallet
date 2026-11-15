@@ -40,63 +40,161 @@ Output JSON shape:
 
 import argparse
 import csv as csvmod
+import http.client
 import json
 import os
 import re
+import ssl
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import date
 
 
 ENDPOINT = "https://suggestqueries.google.com/complete/search"
+BING_ENDPOINT = "https://api.bing.com/osjson.aspx"
+DDG_ENDPOINT = "https://ac.duckduckgo.com/ac/"
 QUESTION_PREFIXES = [
     "what", "how", "why", "is", "does", "can", "should",
     "when", "where", "which",
 ]
 ALPHABET = "abcdefghijklmnopqrstuvwxyz"
-SLEEP_SECONDS = 0.20  # be polite; Google tolerates this rate from a single host
+SLEEP_SECONDS = 0.04  # Keep-alive single-connection pacing (~2s/seed instead of ~18s)
+
+_GOOGLE_BLOCKED = False
+_BING_BLOCKED = False
+_CONN_POOL: dict[str, http.client.HTTPSConnection] = {}
+_SSL_CTX = ssl.create_default_context()
+
+
+def _reset_runtime_state() -> None:
+    """Test helper: reset sticky provider block flags and keep-alive sockets."""
+    global _GOOGLE_BLOCKED, _BING_BLOCKED
+    _GOOGLE_BLOCKED = False
+    _BING_BLOCKED = False
+    for conn in list(_CONN_POOL.values()):
+        try:
+            conn.close()
+        except Exception:
+            pass
+    _CONN_POOL.clear()
+
+
+def _http_get_json(url: str, timeout: float = 8.0):
+    """Fetch JSON over a reusable keep-alive TLS socket per host."""
+    parsed = urllib.parse.urlsplit(url)
+    host = parsed.netloc
+    path = parsed.path + (f"?{parsed.query}" if parsed.query else "")
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Gecko/20100101 Firefox/128.0",
+        "Accept": "application/json, text/javascript, */*; q=0.1",
+        "Connection": "keep-alive",
+    }
+    for attempt in range(2):
+        conn = _CONN_POOL.get(host)
+        if conn is None:
+            conn = http.client.HTTPSConnection(host, timeout=timeout, context=_SSL_CTX)
+            _CONN_POOL[host] = conn
+        try:
+            conn.request("GET", path, headers=headers)
+            resp = conn.getresponse()
+            body = resp.read()
+            if resp.status in (403, 429, 503):
+                raise urllib.error.HTTPError(url, resp.status, resp.reason, resp.headers, None)
+            if resp.status >= 400:
+                raise urllib.error.HTTPError(url, resp.status, resp.reason, resp.headers, None)
+            return json.loads(body.decode("utf-8", errors="replace"))
+        except (http.client.HTTPException, OSError, ConnectionError):
+            try:
+                conn.close()
+            except Exception:
+                pass
+            _CONN_POOL.pop(host, None)
+            if attempt == 1:
+                raise
+
+
+def _parse_opensearch(data) -> list[str]:
+    if isinstance(data, list) and len(data) >= 2 and isinstance(data[1], list):
+        return [str(x) for x in data[1] if isinstance(x, str) and x.strip()]
+    if isinstance(data, list) and all(isinstance(x, dict) for x in data):
+        return [str(x["phrase"]) for x in data if isinstance(x.get("phrase"), str) and x["phrase"].strip()]
+    return []
+
+
+def fetch_with_source(query: str, hl: str = "en", gl: str = "us") -> tuple[list[str], str]:
+    """Return (suggestions, provider_tag). Automatically switches in 0 retries from Google
+    to Bing OpenSearch Autosuggest (and DuckDuckGo backup) when Google blocks cloud IPs (403/429)."""
+    global _GOOGLE_BLOCKED, _BING_BLOCKED
+
+    if not _GOOGLE_BLOCKED:
+        params = {"client": "firefox", "q": query, "hl": hl, "gl": gl}
+        url = f"{ENDPOINT}?{urllib.parse.urlencode(params)}"
+        try:
+            return _parse_opensearch(_http_get_json(url)), "google"
+        except Exception as exc:
+            code = getattr(exc, "code", None)
+            if code in (403, 429, 503) or isinstance(exc, (TimeoutError, OSError)):
+                _GOOGLE_BLOCKED = True
+                print(
+                    f"[autocomplete] Google suggest returned {code or type(exc).__name__}; "
+                    f"switching immediately to live Bing/DDG OpenSearch autosuggest for remaining queries.",
+                    file=sys.stderr,
+                )
+            else:
+                raise
+
+    if not _BING_BLOCKED:
+        mkt = f"{hl}-{gl.upper()}" if gl else hl
+        b_url = f"{BING_ENDPOINT}?{urllib.parse.urlencode({'query': query, 'mkt': mkt})}"
+        try:
+            return _parse_opensearch(_http_get_json(b_url)), "bing-live"
+        except Exception as exc:
+            code = getattr(exc, "code", None)
+            if code in (403, 429, 503) or isinstance(exc, (TimeoutError, OSError)):
+                _BING_BLOCKED = True
+            else:
+                raise
+
+    d_url = f"{DDG_ENDPOINT}?{urllib.parse.urlencode({'q': query, 'type': 'list'})}"
+    return _parse_opensearch(_http_get_json(d_url)), "ddg-live"
 
 
 def fetch(query: str, hl: str = "en", gl: str = "us") -> list[str]:
-    """Return Google's autocomplete suggestions for a single query string."""
-    params = {"client": "firefox", "q": query, "hl": hl, "gl": gl}
-    url = f"{ENDPOINT}?{urllib.parse.urlencode(params)}"
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=10) as r:
-        raw = r.read().decode("utf-8", errors="replace")
-    data = json.loads(raw)
-    return list(data[1]) if isinstance(data, list) and len(data) >= 2 else []
+    """Return autocomplete suggestions for a single query string (backwards-compatible API)."""
+    suggs, _ = fetch_with_source(query, hl=hl, gl=gl)
+    return suggs
 
 
 def mine(seed: str, mode: str, hl: str, gl: str) -> list[dict]:
     """Mine autocomplete for one seed in the requested mode. De-duped."""
     seen: dict[str, str] = {}
 
-    def record(q: str, via: str):
+    def record(q: str, via: str, provider: str):
         if not q or q.strip().lower() == seed.strip().lower():
             return
         key = q.strip().lower()
         if key not in seen:
-            seen[key] = via
+            seen[key] = via if provider == "google" else f"{via} ({provider})"
 
     if mode in ("simple", "questions", "all"):
         if mode == "simple":
             queries = [(seed, "simple")]
         else:
             queries = [(f"{p} {seed}", f"question:{p}") for p in QUESTION_PREFIXES]
-            if mode == "simple":
-                queries.insert(0, (seed, "simple"))
         for q, via in queries:
-            for sugg in fetch(q, hl=hl, gl=gl):
-                record(sugg, via)
+            suggs, prov = fetch_with_source(q, hl=hl, gl=gl)
+            for sugg in suggs:
+                record(sugg, via, prov)
             time.sleep(SLEEP_SECONDS)
 
     if mode in ("alphabet", "all"):
         for letter in ALPHABET:
-            for sugg in fetch(f"{seed} {letter}", hl=hl, gl=gl):
-                record(sugg, f"alphabet:{letter}")
+            suggs, prov = fetch_with_source(f"{seed} {letter}", hl=hl, gl=gl)
+            for sugg in suggs:
+                record(sugg, f"alphabet:{letter}", prov)
             time.sleep(SLEEP_SECONDS)
 
     return [{"query": q, "via": v} for q, v in seen.items()]

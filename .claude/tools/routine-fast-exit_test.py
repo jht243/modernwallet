@@ -111,6 +111,53 @@ class RoutineFastExitTests(unittest.TestCase):
         def_res = self.mod.check_ga4_cooldown(self.root, skill='ga4-top-pages-pass-auto', site='https://example.com', pages_json=pages, ledger_path=ledger)
         self.assertFalse(def_res['fastExit'])
 
+    def test_two_strike_publisher_failure_quarantines_row_and_restores_quiet_fast_exit(self):
+        pp = self.root / 'scripts/paid_placements'
+        pp.mkdir(parents=True, exist_ok=True)
+        (self.root / '.git').mkdir(exist_ok=True)
+        (pp / 'ledger.json').write_text(json.dumps({'queued': []}))
+        (pp / 'fix-queue.json').write_text(json.dumps({'rows': [{'id': 'stuck_fix_1', 'status': 'queued', 'pageUrl': 'https://www.layer3labs.io/comparisons/ai-crm'}]}))
+        (pp / 'upsell-queue.json').write_text(json.dumps({'rows': []}))
+
+        # Initially actionable
+        self.assertFalse(self.mod.check_paid_publisher(self.root)['fastExit'])
+
+        # Strike 1 -> recorded, NOT yet quarantined (1 retry permitted)
+        s1 = self.mod.record_publisher_failure(self.root, kind='fix', item_id='stuck_fix_1', reason='old snippet mismatch')
+        self.assertFalse(s1['quarantined'])
+        self.assertEqual(s1['attempts'], 1)
+        self.assertFalse(self.mod.check_paid_publisher(self.root)['fastExit'])
+
+        # Strike 2 -> auto-quarantined -> quiet hours fast-exit in Turn 1!
+        s2 = self.mod.record_publisher_failure(self.root, kind='fix', item_id='stuck_fix_1', reason='old snippet mismatch')
+        self.assertTrue(s2['quarantined'])
+        self.assertEqual(s2['attempts'], 2)
+        self.assertTrue(self.mod.check_paid_publisher(self.root)['fastExit'])
+
+    def test_fix_queue_check_locates_repo_source_line_across_markdown_formatting(self):
+        fq_path = Path(__file__).resolve().parents[2] / 'scripts/paid_placements/fix_queue_check.py'
+        if not fq_path.is_file():
+            self.skipTest('scripts/paid_placements/fix_queue_check.py is central-repo only')
+        spec = importlib.util.spec_from_file_location('fq_check', fq_path)
+        fq = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(fq)
+
+        (self.root / 'data').mkdir(parents=True, exist_ok=True)
+        (self.root / 'data/comparisons-new.ts').write_text(
+            'export const rows = [\n'
+            '  { slug: "ai-video-ads", verdict: "Only **Creatify** and [Higgsfield](https://higgsfield.ai) insert the actual product object into the shot." }\n'
+            '];\n'
+        )
+        hit = fq.locate_in_repo(
+            'Only Creatify and Higgsfield insert the actual product object into the shot.',
+            'https://www.layer3labs.io/comparisons/ai-video-ads',
+            str(self.root),
+        )
+        self.assertIsNotNone(hit)
+        self.assertEqual(hit['file'], 'data/comparisons-new.ts')
+        self.assertEqual(hit['line'], 2)
+        self.assertEqual(hit['similarity'], 1.0)
+
 
 if __name__ == '__main__':
     unittest.main()

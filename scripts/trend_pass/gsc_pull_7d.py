@@ -63,12 +63,21 @@ def top_rows(session, site_url: str, start: str, end: str, dimension: str, limit
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description="Trend-pass 7-day pull: top-10 queries + top-10 pages + additive signals.")
-    ap.add_argument("--base-url", required=True, help="e.g. https://www.banthebots.org")
+    ap.add_argument("--base-url", help="e.g. https://www.banthebots.org")
+    ap.add_argument("--check-creds", action="store_true", help="Validate GSC SA credentials in stdlib (exit 0/2/4).")
     ap.add_argument("--site-url", help="Override derived GSC property.")
     ap.add_argument("--sa-file", help="Service-account JSON path override.")
     ap.add_argument("--days", type=int, default=7, help="Window in days (default 7 = weekly).")
     ap.add_argument("--json", help="Write result to file instead of stdout.")
     args = ap.parse_args(argv)
+
+    if args.check_creds:
+        from gsc_search_analytics import resolve_sa_info
+        info, label = resolve_sa_info(args.sa_file)
+        print(json.dumps({"ok": True, "client_email": info.get("client_email"), "source": label}))
+        return 0
+    if not args.base_url:
+        ap.error("--base-url is required unless --check-creds is set")
 
     site_url = derive_site_url(args.base_url, args.site_url)
     session = build_session(load_credentials(args.sa_file))
