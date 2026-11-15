@@ -1,0 +1,11 @@
+{
+ "dataforseo": "ok (balance $17.087118000000032)",
+ "semrush": "ok",
+ "ahrefs": "off: excluded by KEYWORD_PROVIDERS",
+ "autocomplete": "ok",
+ "selected": {
+  "volume": "semrush",
+  "kd": "semrush",
+  "expand": "semrush"
+ }
+}

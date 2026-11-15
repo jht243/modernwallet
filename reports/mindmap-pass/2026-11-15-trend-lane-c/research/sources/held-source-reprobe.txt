@@ -1,0 +1,9 @@
+# HELD-item source reprobe (UTMA state age-of-majority statutes + Vanguard investor savings page)
+# Retrieved: 2026-11-15T07:13:24Z from the cloud runner via curl (UA Mozilla/5.0). Status log only; NO page text from these URLs is relied on for any claim. Purpose: decide whether HELD ledger rows 2026-11-10/12/13 have newly groundable sources.
+https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PROB&sectionNum=3920 -> HTTP 403 (CA Probate Code 3920 et seq., UTMA)
+https://www.nysenate.gov/legislation/laws/EPT/7-6.20 -> HTTP 403 (NY EPTL 7-6)
+https://www.flsenate.gov/Laws/Statutes/2024/710.123 -> HTTP 200, 47077 bytes (FL 710.123 reachable; one state of the CA/NY/FL/IL/TX set only)
+https://www.ilga.gov/legislation/ilcs/ilcs4.asp?DocName=076000050HArt%2E+VI&ActID=2102 -> no connection (curl 000) (IL 760 ILCS 20)
+https://www.finra.org/investors/learn-to-invest/types-investments/custodial-accounts -> HTTP 301 (live FINRA custodial-accounts URL; redirects, still resolves)
+https://investor.vanguard.com/investor-resources-education/retirement/savings -> HTTP 200, 194365 bytes (page already shown on 2026-11-13 to contradict its own by-age table vs prose; not re-read, not today's query set)
+Conclusion: UTMA state-table needs CA, NY, FL, IL, TX statutes together; only FL is reachable, so the enrichment stays HELD (source not groundable). data/sources/ still absent.

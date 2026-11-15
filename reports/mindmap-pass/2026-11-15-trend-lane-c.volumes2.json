@@ -1,0 +1,161 @@
+{
+ "rows": [
+  {
+   "keyword": "hard money vs conventional loan",
+   "volume": 40,
+   "volume_low": 40,
+   "volume_high": 40,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "hard money vs bridge loan",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 0,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "70 rule house flipping calculator",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "fix and flip loan calculator",
+   "volume": 140,
+   "volume_low": 140,
+   "volume_high": 140,
+   "kd": "12",
+   "cpc": "3.58",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "solo 401k loan interest rate",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "solo 401k loan limits",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "roth vs traditional 401k",
+   "volume": 6600,
+   "volume_low": 6600,
+   "volume_high": 6600,
+   "kd": "41",
+   "cpc": "0.42",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "hard money loan vs private money loan",
+   "volume": 75,
+   "volume_low": 75,
+   "volume_high": 750,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "70 percent rule hard money",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "tax deferred vs taxable account",
+   "volume": 75,
+   "volume_low": 75,
+   "volume_high": 750,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 75-750/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using semrush (quality order semrush > dataforseo)",
+  "semrush returned volume for 7/10 phrases",
+  "kd: using semrush (quality order semrush > dataforseo)",
+  "No tool volume for 3 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 9/10 rows corroborated live"
+ ]
+}

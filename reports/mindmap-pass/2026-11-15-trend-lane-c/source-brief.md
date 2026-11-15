@@ -1,0 +1,7 @@
+# Caller brief (trend-pass-auto Lane C, run date 2026-11-15, workflow runId 3f99901ae95f4a81bb6b30e4f0995ed9), saved minus credentials
+Interpreted brief: "Our top-clicking Google queries for the 7 days ending 2026-11-15, plus our own research on what's trending and what's missing. Build what this demand implies the site lacks - new pages and missing sections on the pages these queries already land on. Treat the research findings as strong suggestions; drop one only for a real reason."
+Top queries (reports/trend-pass/2026-11-15.pull.json, 7d 2026-11-08..2026-11-15, 7 real + 1 operator): site:themodernwallet.com 0clk 8impr pos1; solo 401k loan calculator 0/2/37.5; utma 0/2/94; 401k contribution roth vs traditional 0/1/91; hard money calculator 0/1/81; roth or regular 401k 0/1/93; tax deferred calculator 0/1/82; tax deferred growth calculator 0/1/92.
+Top pages: roundup/best-retirement-accounts-for-self-employed (1 click), guides/529-leftover-money-options (1 click), guides/, home, about, investing, methodology, portfolio, retirement, calculators.
+rising_queries=0, spillover_queries=0, modifier_patterns=0.
+Research pack: reports/trend-pass/2026-11-15.research.md (no clear trend; Lane B: 7/7 covered; solo 401k loan calculator near-miss, dedicated slug solo-401k-loan-calculator free).
+Guardrails: skip Lens 3b; no metadata rows; no consolidation/redirects; additive only; cap 25 new pages; tag rows trend/coverage/top-10; no src edits; YMYL figures from src/lib engines or primary sources only; HELD items re-compete.

@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "preparationMode": "full",
+  "jobId": "trend-lane-c-2026-11-15",
+  "author": "mindmap-build-trend-lane-c-2026-11-15",
+  "date": "2026-11-15",
+  "source": "trend-pass-auto Lane C 2026-11-15: top GSC queries (7d to 2026-11-15) plus research pack, SEMRUSH-validated",
+  "interpretedBrief": "Our top-clicking Google queries for the 7 days ending 2026-11-15 are 7 near-zero-demand real queries (plus one search operator) with 0 clicks; the research lanes found no trend and 7 of 7 covered. BUILD re-checked every query against existing pages with coverage_lookup.py and fresh SEMRUSH/SERP data, including the position-37.5 'solo 401k loan calculator' near-miss: the existing 401k loan calculator already carries a solo section and FAQ on the same Loan401k engine, so a dedicated page would be a near-duplicate of a 20/mo intent. No adjacent or comparison cluster has groundable, non-duplicate demand, and both prior HELD enrichments remain source-blocked. The outcome is a no-addition chart with two HELD enrichments.",
+  "chartPath": "reports/mindmap-pass/2026-11-15-trend-lane-c.md",
+  "actions": [],
+  "emergingClusters": "No emerging clusters detected this run.",
+  "exclusions": [
+    "site:themodernwallet.com: search operator, not a query.",
+    "solo 401k loan calculator: DROP, exists; /retirement/401k-loan-calculator/ has a solo section and FAQ on the same engine; dedicated slug solo-401k-loan-calculator would near-duplicate a 20/mo intent.",
+    "utma standalone page and UTMA tax cluster: DROP, exist (utma explained guide, utma-vs-ugma, 529-vs-utma, custodial-account-taxes-kiddie-tax).",
+    "401k contribution roth vs traditional / roth or regular 401k: DROP, exist (/compare/roth-401k-vs-traditional-401k, /roth-vs-traditional-401k-calculator, /compare/401k-vs-roth-ira).",
+    "hard money calculator and fix and flip loan calculator: DROP, exist as /real-estate/hard-money-loan-calculator/ (ranking gap, not coverage gap).",
+    "tax deferred calculator / tax deferred growth calculator: DROP, exist as /taxable-vs-tax-deferred/.",
+    "hard money vs conventional/private money/bridge loan: DROP, demand too thin (40/mo, 75 estimate, 0).",
+    "UTMA state table/transfer enrichment: HELD, state statutes unavailable (CA/NY 403, IL no connect, FL only); not DROPPED.",
+    "401(k) balance by age enrichment: HELD, by-age figures not groundable from a consistent primary source; not DROPPED.",
+    "Lens 3 vs/alternatives/pricing: no uncovered comparison with measurable demand; Roth/traditional 401k and UTMA vs pages exist; no branded competitor query this run.",
+    "Lens 3b model-launch overlay skipped per caller (not an AI-content repo)."
+  ],
+  "preparation": {
+    "status": "PASS",
+    "readiness": {
+      "path": "reports/mindmap-pass/2026-11-15-trend-lane-c/readiness.md",
+      "sha256": "1ba9e8131343fd6cf59e1018bcf0c5fc9ec54445232f21f891998e0c9bc152a1"
+    }
+  },
+  "evidenceFiles": [
+    {
+      "path": "reports/mindmap-pass/2026-11-15-trend-lane-c/source-brief.md",
+      "sha256": "6b2bb5de3eca9ed0b5e0983ef11f3c9c4ee2b68e03b49bc3e401675657cf1744"
+    },
+    {
+      "path": "reports/trend-pass/2026-11-15.pull.json",
+      "sha256": "9a82cd115a61c645d6152d7c5ada6fb2d255c6f98fe332ad6a05630202359fd6"
+    },
+    {
+      "path": "reports/trend-pass/2026-11-15.research.md",
+      "sha256": "2191cbaa60fbda26f7d957a0b11d35c55c92148501f75d23259d3c20b07f15d7"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-trend-lane-c.coverage.txt",
+      "sha256": "c83949109bd1911b71f6b2b9ca619843178b36e20660203d5aee847a0b0e0319"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-trend-lane-c.volumes.json",
+      "sha256": "5b78952975bc65d1d1be00bf29af88a907ba492ef2e8373a60d6ace914725bb2"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-trend-lane-c.volumes2.json",
+      "sha256": "3b4a6be92474de58537ce4d0b215eb2832db53b88673fc4ae295ccf36a1ef382"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-trend-lane-c.serp.json",
+      "sha256": "d60d49417ce2d2e2813753b185e1c5d7958fd5513c8d14bc74f44c4f5db8458f"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-trend-lane-c.status.json",
+      "sha256": "c0578b949af632b0967ce468bff91f0b3606053e83246659ccf13fa2c55e0191"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-trend-lane-c.heads.txt",
+      "sha256": "432acf52c0d0de4811fbfd268c3108825f3840db21048e1c06543e2cecc999b0"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-trend-lane-c.expand.solo-401k-loan.json",
+      "sha256": "671635417efbee35247c942503aeea5cd479898aa573191a00f14b18366860aa"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-trend-lane-c.expand.hard-money-calculator.json",
+      "sha256": "d3413be1eb9fd32583078a8cc3bc0bb2339adae6752f66a00ceda32e32541947"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-trend-lane-c.autocomplete.solo-401k-loan.csv",
+      "sha256": "5715b385df2fd6d6b63a0f805dfbd0bb2c9511ddff547867d53c86451343a26e"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-trend-lane-c.autocomplete.hard-money-calculator.csv",
+      "sha256": "6c3b635fb7e370baf6e62dc36d95875ab4da3c3a5c662b5081066a68cea27ce0"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-trend-lane-c.autocomplete.hard-money-vs.csv",
+      "sha256": "ca86f1ac9b2cb7755a5f69699ac2d574d7f9b1d0f02300a38902978dbab0b6cd"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-trend-lane-c/research/sources/held-source-reprobe.txt",
+      "sha256": "a5a674becd779acd918d6965a7c7d5796b1c5a36e5fb1bb0731ca1bd88c1a38f"
+    },
+    {
+      "path": "reports/trend-pass/ledger.md",
+      "sha256": "6d32c5f37b212d113cb0071fa77c67488c4449c8cc470c1bb9e1aa50fe31d236"
+    }
+  ],
+  "executionPlan": [
+    {
+      "phase": 1,
+      "action": "Skip: no consolidation rows; advisory only"
+    },
+    {
+      "phase": 2,
+      "action": "Skip: no metadata rows"
+    },
+    {
+      "phase": 3,
+      "action": "Skip: no new-content rows; no writer call"
+    },
+    {
+      "phase": 4,
+      "action": "Skip: nothing to audit"
+    },
+    {
+      "phase": 5,
+      "action": "Skip: no body rows; 401(k)-by-age and UTMA state-table enrichments HELD"
+    },
+    {
+      "phase": 6,
+      "action": "Skip: no link rows"
+    },
+    {
+      "phase": 7,
+      "action": "Skip: no routes to add; nothing for IndexNow"
+    },
+    {
+      "phase": 8,
+      "action": "Print the summary table and continue"
+    },
+    {
+      "phase": 9,
+      "action": "No commit of site files; ledger rows only by Phase 5 of the caller"
+    }
+  ],
+  "publicationScope": {
+    "commit": false,
+    "push": false,
+    "liveVerification": false,
+    "indexNow": false
+  },
+  "newPageBriefs": [],
+  "candidateDispositions": [
+    {
+      "candidate": "site:themodernwallet.com",
+      "decision": "skip",
+      "reason": "Search operator, not a reader query (source top-10)."
+    },
+    {
+      "candidate": "solo 401k loan calculator",
+      "decision": "skip",
+      "reason": "20/mo KD0 (SEMRUSH us 2026-11-15; 'solo 401k loan' 140/mo KD9). /retirement/401k-loan-calculator/ already has a dedicated solo section and FAQ on the same src/lib/401k-loan.ts engine (26 U.S.C. 72(p) formula is identical for owner-only plans); a solo-401k-loan-calculator page would be a near-duplicate with no added input or analysis (no-addition branch). Source top-10/coverage.",
+      "target": "/retirement/401k-loan-calculator/"
+    },
+    {
+      "candidate": "utma",
+      "decision": "skip",
+      "reason": "12,100/mo KD4 (SEMRUSH us 2026-11-15); head and tax/transfer cluster served by guides/utma-custodial-account-explained, compare/utma-vs-ugma, compare/529-vs-utma, guides/custodial-account-taxes-kiddie-tax; ledger DROPPED 2026-11-10/12/13 (source top-10).",
+      "target": "/guides/utma-custodial-account-explained/"
+    },
+    {
+      "candidate": "401k contribution roth vs traditional",
+      "decision": "skip",
+      "reason": "20/mo KD0; 'roth vs traditional 401k' 6,600/mo KD41 served by /compare/roth-401k-vs-traditional-401k/, /roth-vs-traditional-401k-calculator/ and /compare/401k-vs-roth-ira/ (source top-10).",
+      "target": "/compare/roth-401k-vs-traditional-401k/"
+    },
+    {
+      "candidate": "roth or regular 401k",
+      "decision": "skip",
+      "reason": "880/mo KD40 (SEMRUSH us 2026-11-13, cached); same existing pages; ledger DROPPED 2026-11-13 (source top-10).",
+      "target": "/compare/roth-401k-vs-traditional-401k/"
+    },
+    {
+      "candidate": "hard money calculator",
+      "decision": "skip",
+      "reason": "480/mo KD19; 'hard money loan calculator' 1,900/mo KD18 served by exact-slug /real-estate/hard-money-loan-calculator/ (src/lib/hard-money-loan.ts); the gap is ranking position (81), not coverage (source top-10).",
+      "target": "/real-estate/hard-money-loan-calculator/"
+    },
+    {
+      "candidate": "tax deferred calculator; tax deferred growth calculator",
+      "decision": "skip",
+      "reason": "40/mo KD5 and 30/mo KD0; /taxable-vs-tax-deferred/ with src/lib/taxable-vs-tax-deferred.ts is the exact-intent tool; ledger DROPPED 2026-11-12/13 (source top-10).",
+      "target": "/taxable-vs-tax-deferred/"
+    },
+    {
+      "candidate": "Lens 2: fix and flip loan calculator (140/mo KD12)",
+      "decision": "skip",
+      "reason": "Same reader task and engine as the existing hard money loan calculator (rehab advance, ARV profit); new URL would near-duplicate (source Lens 2).",
+      "target": "/real-estate/hard-money-loan-calculator/"
+    },
+    {
+      "candidate": "Lens 3: hard money vs conventional loan / vs private money / vs bridge loan",
+      "decision": "skip",
+      "reason": "40/mo KD0, 75 estimate, 0 measured; autocomplete dominated by hard-vs-soft money (politics) noise; no on-topic comparison demand worth a page (source Lens 3)."
+    },
+    {
+      "candidate": "Lens 2 carry-over enrichment: guides/utma-custodial-account-explained state age-of-majority table, 18/21, transfer/close",
+      "decision": "defer",
+      "reason": "HELD (source not groundable): re-probed 2026-11-15, CA leginfo 403, NY nysenate 403, IL ilga no connect, only FL 200; data/sources/ absent; demand 'utma age of majority by state' 260/mo KD36. Not DROPPED; re-competes (source top-10).",
+      "target": "/guides/utma-custodial-account-explained/"
+    },
+    {
+      "candidate": "Lens 2 carry-over enrichment: 401(k) balance by age section on guides/average-retirement-savings-by-age",
+      "decision": "defer",
+      "reason": "HELD (source not groundable): no clean primary by-age table (Vanguard HAS 2025 PDF has none; investor page table and prose disagree per 2026-11-13); not retried this run. Not DROPPED; re-competes (source Lens 2).",
+      "target": "/guides/average-retirement-savings-by-age/"
+    }
+  ]
+}
