@@ -47,6 +47,16 @@ else
     GUARD="$ROOT/.claude/tools/worktree-freshness.py"
   fi
   [ -f "$GUARD" ] || { echo "FATAL: source freshness checker missing; do not continue with stale instructions." >&2; exit 1; }
+  TMP_GUARD=""
+  if { [[ " $* " == *" --auto-worktree "* ]] && ! grep -q -- '--auto-worktree' "$GUARD" 2>/dev/null; } || { [ "${#PIN_ARGS[@]}" -gt 0 ] && ! grep -q -- '--pinned-to-run' "$GUARD" 2>/dev/null; }; then
+    git -C "$ROOT" fetch --quiet origin main 2>/dev/null || true
+    if git -C "$ROOT" cat-file -e origin/main:.claude/tools/worktree-freshness.py 2>/dev/null; then
+      TMP_GUARD="$(mktemp "${TMPDIR:-/tmp}/worktree-freshness.XXXXXX.py")"
+      trap '[ -n "${TMP_GUARD:-}" ] && rm -f "$TMP_GUARD"' EXIT
+      git -C "$ROOT" show origin/main:.claude/tools/worktree-freshness.py > "$TMP_GUARD"
+      GUARD="$TMP_GUARD"
+    fi
+  fi
   python3 "$GUARD" --root "$ROOT" "${PIN_ARGS[@]+"${PIN_ARGS[@]}"}" "$@"
 fi
 # Sales completion Stop hook: a cloud session rooted above the repo does not load repo-level hooks, so install it into the

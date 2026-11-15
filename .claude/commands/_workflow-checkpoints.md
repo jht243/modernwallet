@@ -108,7 +108,8 @@ Maintain **Per-page preparation checks** in the linked readiness evidence (not a
 
 A preparatory testing decision does not approve final testing labels. After approval, Phase 3/4 still checks real run records, exact final content, independent approval, rendered methods/title/byline/schema and professional review as required. Likewise a planned takeaway is reviewed again against the actual generated page. No content is described as written, audited, built or live before those events occur.
 
-Changed rules, targets or research invalidate the affected readiness decisions. Recheck them before presenting a revised approval chart. Imported charts must have their current preparation evidence revalidated. The independent chart reviewer rejects any missing preparation evidence, unsupported check mark or future execution result misrepresented as already complete. Preserve the sole Phase 0 human gate and all existing scope/exclusion/publication rules. This section supersedes older instructions to display unfinished status cells in an approval chart.
+- `identity` contains `title`, `pageType`, `format`, `medium` and planned metadata in scope (`format` matches `row.format` or its `<format> - <rationale>` prefix; non-interactive text mediums like `"text"` and `"text + comparison table"` are compatible).
+- **Zero mechanical pre-Phase-0 prompts:** `BUILD` runs `mindmap-gates.py seal-draft --manifest <M> --out <RUN>/draft-chart.md` before every handback. If mechanical field/hash mismatches or Round-2 (`2 of 2`) non-liability reviewer notes remain after `CHART-REVIEW`, `MAIN` runs `mindmap-gates.py rebind-mechanical --manifest <M> --review <R> --out <CHART>` + `validate-chart` automatically without asking the user, carrying open guardrails into `WRITE` and presenting the ready-for-approval chart immediately.
 
 ## Mandatory new-page briefs in the actual approval output
 

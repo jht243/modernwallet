@@ -36,9 +36,14 @@ class Tests(unittest.TestCase):
     with contextlib.redirect_stderr(io.StringIO()),self.assertRaises(SystemExit):h.report_guard(root,payload)
  def test_auto_permission_mode_emits_no_updated_input_so_classifier_never_blocks(self):
   original={'description':'Build fast scope chart','prompt':'Synthetic fixture only','run_in_background':False}
+  for mode in ('auto','auto_accept','bypassPermissions','default','acceptEdits'):
+   out=io.StringIO()
+   with contextlib.redirect_stdout(out):m.bind({'tool_name':'Agent','permission_mode':mode,'tool_input':original})
+   self.assertEqual(out.getvalue(),'')
+  bg={'description':'Background subagent','prompt':'Synthetic fixture only','run_in_background':True}
   out=io.StringIO()
-  with contextlib.redirect_stdout(out):m.bind({'tool_name':'Agent','permission_mode':'auto','tool_input':original})
-  self.assertEqual(out.getvalue(),'')
+  with contextlib.redirect_stdout(out):m.bind({'tool_name':'Agent','permission_mode':'default','tool_input':bg})
+  self.assertIn(m.worker_tag(),json.loads(out.getvalue())['hookSpecificOutput']['updatedInput']['description'])
  def test_continuation_marker_blocks_write_and_chart_but_allows_supplemental_audit(self):
   import subprocess
   with tempfile.TemporaryDirectory() as directory:

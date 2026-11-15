@@ -105,23 +105,28 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
 
     if phase == 'build':
         lines.extend([
-            '2. Exact CLI JSON Output Schemas (never guess keys or crash inline Python): '
+            '2. Exact CLI JSON Output Schemas (never guess keys or crash inline Python; always single-quote heredocs `python3 - <<\'PY\'` in zsh): '
             '`keyword_data.py volumes|expand` -> `{"rows": [{"keyword","volume","volume_low","volume_high","kd","cpc","source","confidence","autocomplete":{"completions","corroborates"}}], "notes": [...]}` (library `volumes()` returns `dict[lowercase_phrase, row]`; `expand()` returns `list[row]`); '
             '`autocomplete.py` -> `{"seed", "mode", "suggestions": [{"query", "via"}]}`; '
-            'DataForSEO SERP raw response -> `body["tasks"][0]["result"][0]["items"]` (check `any(i.get("type") == "ai_overview" for i in items)` — there is NO top-level `ai_overview_present` key).',
-            '2b. Full-Verbatim Primary-Source Capture Once (zero downstream Browser re-scraping): on FIRST visit to any vendor/help/policy URL, save the COMPLETE verbatim page text + canonical URL + UTC retrieval timestamp to `<RUN_DIR>/research/sources/<source-slug>.txt` and reference it in `evidenceFiles` so `WRITE` and `AUDIT` read from disk without re-opening Browser/WebFetch.',
+            '`python3 scripts/lib/serp.py read "<kw>" --json` -> `{"keyword", "verdict", "organic", "paa", "forum_dominated", "ai_overview_present", "ai_overview_cited_domains"}` (whereas raw DataForSEO HTTP JSON uses `body["tasks"][0]["result"][0]["items"]`).',
+            '2b. Full-Verbatim Primary-Source & Coverage Capture Once (zero downstream Browser re-scraping): on FIRST visit to any vendor/help/policy URL, save the COMPLETE verbatim page text + canonical URL + UTC retrieval timestamp to `<RUN_DIR>/research/sources/<source-slug>.txt`, save `coverage_lookup.py` output to `<RUN_DIR>/research/coverage-lookup.txt`, and reference them in `evidenceFiles` so `CHART-REVIEW`, `WRITE`, and `AUDIT` read from disk without re-opening Browser/WebFetch.',
             '2c. 1-Command Schema Skeletons (never inspect old `reports/` folders or `sed` tools): '
             'init manifest -> `python3 .claude/tools/mindmap-gates.py init-skeleton --kind scope-manifest --mode <fast-scope|full> --job-id <JOB_ID> --author ' + actor + ' --chart <CHART_PATH> --request-file <BRIEF_TXT> --out <RUN_DIR>/approval-manifest.json`; '
+            'init chart-review -> `python3 .claude/tools/mindmap-gates.py init-skeleton --kind chart-review --manifest <RUN_DIR>/approval-manifest.json --author <REVIEWER_ACTOR> --out <RUN_DIR>/chart-review.json`; '
             'after human Phase 0 approval -> `python3 .claude/tools/mindmap-gates.py init-skeleton --kind phase0-approval --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json --out <RUN_DIR>/phase0-approval-v1.json`.',
             '2d. Manual interactive /mindmap-pass pre-Phase-0 scope chart (never unattended *-auto): set "preparationMode": "fast-scope" and "scopeBriefs": '
             '[{"actionId", "target", "identity": {"title","pageType","format","medium"}, "readerAndAnswer": {"question","answer","placement"}, '
             '"keywordEvidence", "whyNewPage", "outline": [{"heading","purpose"}], "takeaway", "evidenceFiles": [{"path","sha256"}]}] '
-            '(plus "modelLaunch": {"level": "small"|"mid"|"frontier", "modelSlug": "<slug>"} on AI model launches when docs/model-launch-page-family.md exists).',
+            '(name real concrete candidate products/entities + verified brand-page figures upfront so Round 1 passes; add "modelLaunch": {"level": "small"|"mid"|"frontier", "modelSlug": "<slug>"} on AI model launches when docs/model-launch-page-family.md exists).',
+            '2e. Mandatory Pre-Review Draft Seal in BUILD (catches 100% of hash, medium, format & requirement-mapping errors in <0.1s BEFORE handing off to CHART-REVIEW): '
+            'python3 .claude/tools/mindmap-gates.py seal-draft --manifest <RUN_DIR>/approval-manifest.json --out <RUN_DIR>/draft-chart.md',
             '3. Batch case lookup (full preparation mode; skipped during manual pre-Phase-0 fast-scope): '
             f'python3 .claude/tools/mindmap-gates.py cases-batch --manifest <RUN_DIR>/approval-manifest.json --publisher {canonical_base.replace("https://", "")} --out-dir <RUN_DIR>/evidence',
-            '4. Chart Reviewer ONLY (never self-approve in BUILD): write <RUN_DIR>/chart-review.json '
-            '(keys: jobId, reviewer, manifestSha256, readinessSha256, verdict ["PASS"|"FAIL"], evidence, requestCoverage, findings, resolvedFindingIds), then on PASS run: '
+            '4. Chart Reviewer ONLY (never self-approve in BUILD; read `<RUN_DIR>/research/sources/*.txt` from disk FIRST before WebFetch): scaffold `<RUN_DIR>/chart-review.json` via `init-skeleton --kind chart-review`, populate real `verdict`, `evidence`, `requestCoverage`, `findings`, `resolvedFindingIds`, then on PASS run: '
             'python3 .claude/tools/mindmap-gates.py render-chart --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json --out <CHART_PATH> '
+            '&& python3 .claude/tools/mindmap-gates.py validate-chart --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json',
+            '4b. MAIN Automatic Mechanical Rebind / Round-2 (2 of 2) Carry-Forward (NEVER ask human permission for mechanical fixes or block at 2-of-2 chart review unless liabilityBlock or exact duplicate collision): '
+            'python3 .claude/tools/mindmap-gates.py rebind-mechanical --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json --out <CHART_PATH> '
             '&& python3 .claude/tools/mindmap-gates.py validate-chart --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json',
             '5. MAIN dispatcher 1-command WRITE handoff seal (after full chart PASS & authorization): '
             + (

@@ -687,6 +687,105 @@ class Gates(unittest.TestCase):
             ev_pkt[k] = f'Substantive verified prose for {k} grounded in source.txt.'
         g.analysis(self.root, ev_pkt)
 
+    def test_compatible_text_medium_format_link_requirements_seal_draft_and_rebind_mechanical(self):
+        # Reproduce exact trecklist-web / DroneZ pre-Phase-0 mechanical scenarios:
+        # CR-9 ("text + comparison table" vs "text"), CR-10 (REQ-3 mapped to link-only A3/A4),
+        # CR-11 ("comparison table/database" vs "comparison table/database - searchers want to choose..."),
+        # plus Round-2 ("2 of 2") reviewer guardrails carried into writing via rebind_mechanical.
+        plan = copy.deepcopy(self.plan)
+        plan['preparationMode'] = 'fast-scope'
+        plan.pop('newPageBriefs', None)
+        plan['actions'][0]['format'] = 'comparison table/database - searchers want to choose between several flasks'
+        plan['actions'][0]['resolved_deliverable'] = 'text'
+        plan['actions'][0]['presentation']['medium'] = 'text + comparison table'
+        link_row = {
+            'id': 'A3', 'problem': 'Existing mug page has no link to travel thermos.',
+            'solution': 'Add contextual inbound link in related gear section.',
+            'bucket': 'add internal links', 'target': '/gear/travel-coffee-mug',
+            'format': 'N/A', 'best_medium': 'N/A', 'resolved_deliverable': 'N/A',
+            'serp_verdict': 'N/A', 'serp_evidence': 'N/A',
+            'reader_question': 'N/A', 'answer': 'N/A', 'answer_placement': 'N/A',
+        }
+        plan['actions'].append(link_row)
+        plan['request']['requirements'].append({
+            'id': 'REQ-3',
+            'description': 'Inbound internal links from existing travel mug coverage.',
+            'acceptance': 'Contextual inbound link added without bumping updatedDate.',
+            'actionIds': ['A3'],
+        })
+        plan['scopeBriefs'] = [{
+            'actionId': 'A1',
+            'target': plan['actions'][0]['target'],
+            'identity': {
+                'title': 'Best Travel Thermos: Heat Retention Compared',
+                'pageType': 'comparison',
+                'format': 'comparison table/database',
+                'medium': 'text + comparison table',
+            },
+            'readerAndAnswer': {
+                'question': plan['actions'][0]['reader_question'],
+                'answer': plan['actions'][0]['answer'],
+                'placement': plan['actions'][0]['answer_placement'],
+            },
+            'keywordEvidence': 'coffee thermos 6,600/mo (SEMrush US, checked 2026-11-15).',
+            'whyNewPage': 'Existing mug page targets 12-16 oz commuter lids, not 24-40 oz insulated flasks.',
+            'outline': [{'heading': 'Heat-Retention Comparison Table', 'purpose': 'Compare brand-stated hours and weights.'}],
+            'takeaway': 'Thermos Stainless King 40 oz leads published 24-hour hot retention at $39.99.',
+            'evidenceFiles': [{'path': 'source.txt', 'sha256': '0' * 64}],
+        }]
+        manifest_path = self.root / 'thermos-manifest.json'
+        manifest_path.write_text(json.dumps(plan, indent=2))
+
+        # 1. seal-draft refreshes stale SHA-256s and validates structure BEFORE chart-review!
+        sealed = g.seal_draft(self.root, 'thermos-manifest.json', out='draft-thermos.md')
+        self.assertEqual(sealed['status'], 'PASS')
+        self.assertTrue((self.root / 'draft-thermos.md').is_file())
+
+        # Genuine interactive vs static mismatch STILL fails closed
+        bad_plan = g.read(manifest_path)
+        bad_plan['actions'][0]['presentation']['medium'] = 'interactive calculator'
+        bad_plan['actions'][0]['presentation']['interaction']['decision'] = 'build'
+        bad_plan['actions'][0]['presentation']['readerInputs'] = ['Oz capacity']
+        with self.assertRaisesRegex(ValueError, 'Action/presentation medium differs'):
+            g.chart_structure(self.root, bad_plan)
+
+        # 2. init-skeleton --kind chart-review creates pre-hashed skeleton with REQ-1 & REQ-3
+        skel_rev = g.init_skeleton(
+            self.root, 'chart-review', out='thermos-review.json',
+            manifest_path='thermos-manifest.json', author='reviewer-1',
+        )
+        self.assertEqual(skel_rev['status'], 'chart-review-skeleton-initialized')
+
+        # 3. Simulate Round-2 ("second and final allowed round (2 of 2)") FAIL with mechanical CR-9
+        # and non-liability writer guardrails CR-5..CR-8 -> rebind_mechanical resolves & renders chart!
+        r2_rev = g.read(self.root / 'thermos-review.json')
+        r2_rev.update({
+            'verdict': 'FAIL',
+            'manifestSha256': 'f' * 64,
+            'evidence': 'Second and final allowed round (2 of 2): content judged PASS-quality; CR-9 mechanical field mismatch plus writer limits CR-5..CR-6.',
+            'requestCoverage': [
+                {'requirementId': 'REQ-1', 'status': 'PASS', 'evidence': 'A1 satisfies core travel thermos comparison intent with primary brand specs.'},
+                {'requirementId': 'REQ-3', 'status': 'PASS', 'evidence': 'A3 wires contextual inbound link from travel-coffee-mug without date bump.'},
+            ],
+            'findings': [
+                {'id': 'CR-9', 'severity': 'mechanical', 'status': 'open', 'summary': 'presentation.medium says text + comparison table while resolved_deliverable says text.'},
+                {'id': 'CR-5', 'severity': 'medium', 'status': 'open', 'summary': 'Stanley saved page says a full day; writer must cite a full day unless 24h listing is saved.'},
+            ],
+            'resolvedFindingIds': ['CR-1', 'CR-2', 'CR-3', 'CR-4'],
+        })
+        (self.root / 'thermos-review.json').write_text(json.dumps(r2_rev, indent=2))
+        rebound = g.rebind_mechanical(
+            self.root, 'thermos-manifest.json', 'thermos-review.json', out=plan['chartPath'],
+        )
+        self.assertEqual(rebound['status'], 'PASS')
+        self.assertIn('CR-9', rebound['resolvedMechanicalIds'])
+        self.assertEqual(rebound['carriedGuardrails'], 1)
+        rendered_md = (self.root / plan['chartPath']).read_text()
+        self.assertIn('## Reviewer guardrails carried into writing', rendered_md)
+        self.assertIn('CR-5', rendered_md)
+        g.chart(self.root, g.read(manifest_path), g.read(self.root / 'thermos-review.json'))
+        g.saved_chart(self.root, g.read(manifest_path))
+
 
 if __name__ == '__main__':
     unittest.main()

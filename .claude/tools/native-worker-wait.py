@@ -59,7 +59,9 @@ def bind(payload):
    print(str(error),file=sys.stderr);raise SystemExit(2)
  value=payload.get('tool_input',{});tag=worker_tag(payload)
  if not tag or not isinstance(value,dict):return
- if payload.get('permission_mode')=='auto':return
+ pmode=str(payload.get('permission_mode') or '').lower()
+ if pmode.startswith('auto') or pmode=='bypasspermissions':return
+ if not inline and value.get('run_in_background') is False and 'permission_mode' in payload:return
  description=value.get('description')
  if not isinstance(description,str) or not description.strip():return
  # Competitor jobs join once in the foreground. Keep permission, model and worker identity.
