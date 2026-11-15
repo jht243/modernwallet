@@ -1,0 +1,20 @@
+{
+  "jobId": "keyword-gap-2026-11-15",
+  "route": "/paycheck-calculator/",
+  "generated": [
+    "full"
+  ],
+  "repairs": [],
+  "previousJobs": [
+    {
+      "jobId": "keyword-gap-2026-11-15",
+      "route": "/paycheck-calculator/",
+      "generated": [
+        "full"
+      ],
+      "repairs": [],
+      "updatedAt": "2026-11-15T08:28:46Z"
+    }
+  ],
+  "updatedAt": "2026-11-15T08:28:49Z"
+}
