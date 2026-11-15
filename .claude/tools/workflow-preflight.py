@@ -79,6 +79,8 @@ AUDIT_STRIP = {
     '.claude/commands/mindmap-pass/phase-8-summary.md',
     '.claude/commands/mindmap-pass/phase-9-commit-deliver.md',
     '.claude/commands/_keyword-demand-ladder.md',
+    '.claude/commands/_content-generation.md',
+    '.claude/commands/_content-correction-scope.md',
 }
 PUBLISH_STRIP = {
     '.claude/commands/mindmap-pass.md',

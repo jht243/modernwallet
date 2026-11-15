@@ -844,6 +844,180 @@ class Gates(unittest.TestCase):
         g.chart(self.root, plan, rev)
         g.generation(self.root, plan, rev, self.packet, 'fixture')
 
+    def test_prepare_write_packets_and_precheck_drafts_fixes_pipe_tables(self):
+        run_dir = self.root / 'reports/mindmap-pass/run-packets'
+        (run_dir / 'research/sources').mkdir(parents=True)
+        (run_dir / 'research/sources/vendor-spec.txt').write_text(
+            'URL: https://vendor.example/specs\nCheckedAt: 2026-11-15T12:00:00Z\n\nBattery lasts 18 hours under continuous load.\n'
+        )
+        manifest_path = run_dir / 'approval-manifest.json'
+        manifest = copy.deepcopy(self.plan)
+        manifest['actions'][0]['target'] = '/guides/vendor-battery-test'
+        manifest['newPageBriefs'][0]['target'] = '/guides/vendor-battery-test'
+        manifest['newPageBriefs'][0]['sources'] = [{'url': 'https://vendor.example/specs', 'title': 'Vendor Specs'}]
+        manifest_path.write_text(json.dumps(manifest, indent=2))
+        rev_path = run_dir / 'chart-review.json'
+        rev_obj = self.review()
+        rev_obj['findings'] = [{'id': 'CR-5', 'status': 'open', 'severity': 'medium', 'summary': 'Cite 18 hours only from saved spec sheet.'}]
+        rev_path.write_text(json.dumps(rev_obj, indent=2))
+
+        ev_dir = run_dir / 'evidence/vendor-battery-test'
+        ev_dir.mkdir(parents=True)
+        (ev_dir / 'evidence.json').write_text(json.dumps(self.packet, indent=2))
+
+        res = g.prepare_write_packets(
+            self.root,
+            manifest_path=str(manifest_path.relative_to(self.root)),
+            out_dir=str((run_dir / 'prompts').relative_to(self.root)),
+            evidence_dir=str((run_dir / 'evidence').relative_to(self.root)),
+            review_path=str(rev_path.relative_to(self.root)),
+        )
+        self.assertEqual(res['status'], 'PASS')
+        self.assertEqual(res['count'], 1)
+        sys_md = (run_dir / 'prompts/system.md').read_text()
+        prompt_md = (run_dir / 'prompts/vendor-battery-test.prompt.md').read_text()
+        urls_txt = (run_dir / 'prompts/vendor-battery-test.allowed-urls.txt').read_text()
+        self.assertIn('structured `table` fields', sys_md)
+        self.assertIn('CR-5', prompt_md)
+        self.assertIn('Battery lasts 18 hours', prompt_md)
+        self.assertIn('https://vendor.example/specs', urls_txt)
+
+        drafts_dir = run_dir / 'drafts'
+        drafts_dir.mkdir(parents=True)
+        body_words = ' '.join(['Verified battery runtime analysis from primary spec sheet with measured discharge curve.'] * 95)
+        draft_path = drafts_dir / 'vendor-battery-test.json'
+        draft_path.write_text(json.dumps({
+            'slug': 'vendor-battery-test',
+            'title': 'Vendor Battery Runtime Guide',
+            'sections': [{
+                'heading': 'Runtime Comparison',
+                'paragraphs': [
+                    body_words + ' Source: https://vendor.example/specs and https://rogue.example/unverified',
+                    '| Model | Runtime |\n| --- | --- |\n| Pro 1 | 18 hours |\n| Lite 2 | 12 hours |',
+                ],
+            }],
+        }, indent=2))
+
+        # Missing .meta.json + rogue URL + raw pipe table fails precheck
+        bad = g.precheck_drafts(
+            self.root,
+            manifest_path=str(manifest_path.relative_to(self.root)),
+            drafts_dir=str(drafts_dir.relative_to(self.root)),
+            prompts_dir=str((run_dir / 'prompts').relative_to(self.root)),
+            fix_pipe_tables=False,
+        )
+        self.assertEqual(bad['status'], 'FAIL')
+        issue_kinds = {item['kind'] for item in bad['issues']}
+        self.assertIn('missing-meta-json', issue_kinds)
+        self.assertIn('pipe-table-in-paragraphs', issue_kinds)
+        self.assertIn('unverified-external-url', issue_kinds)
+
+        # Add .meta.json, remove rogue URL, and enable --fix-pipe-tables -> converts to structured table & PASSes!
+        (drafts_dir / 'vendor-battery-test.json.meta.json').write_text(json.dumps({
+            'provider': 'anthropic',
+            'model': 'claude-opus-4-7',
+        }))
+        draft_obj = json.loads(draft_path.read_text())
+        draft_obj['sections'][0]['paragraphs'][0] = body_words + ' Source: https://vendor.example/specs'
+        draft_path.write_text(json.dumps(draft_obj, indent=2))
+
+        fixed = g.precheck_drafts(
+            self.root,
+            manifest_path=str(manifest_path.relative_to(self.root)),
+            drafts_dir=str(drafts_dir.relative_to(self.root)),
+            prompts_dir=str((run_dir / 'prompts').relative_to(self.root)),
+            fix_pipe_tables=True,
+        )
+        self.assertEqual(fixed['status'], 'PASS')
+        repaired_obj = json.loads(draft_path.read_text())
+        self.assertIn('table', repaired_obj['sections'][0])
+        self.assertEqual(repaired_obj['sections'][0]['table']['headers'], ['Model', 'Runtime'])
+        self.assertEqual(len(repaired_obj['sections'][0]['table']['rows']), 2)
+
+    def test_check_write_scope_catches_unapproved_standalone_and_monolithic_edits_and_reverts(self):
+        repo = self.root / 'scope-repo'
+        (repo / 'src/content/guides').mkdir(parents=True)
+        (repo / 'data').mkdir(parents=True)
+        (repo / 'src/content/guides/approved-slug.md').write_text('# Approved\nInitial.\n')
+        (repo / 'src/content/guides/stray-slug.md').write_text('# Stray\nInitial.\n')
+        (repo / 'data/pages.json').write_text(json.dumps({
+            '/guides/approved-slug': {'title': 'Approved', 'body': 'v1'},
+            '/guides/other-locked': {'title': 'Locked', 'body': 'v1'},
+        }, indent=2))
+        subprocess.run(['git', 'init', '-q'], cwd=repo, check=True)
+        subprocess.run(['git', 'config', 'user.email', 'test@example.com'], cwd=repo, check=True)
+        subprocess.run(['git', 'config', 'user.name', 'Test'], cwd=repo, check=True)
+        subprocess.run(['git', 'add', '.'], cwd=repo, check=True)
+        subprocess.run(['git', 'commit', '-qm', 'init'], cwd=repo, check=True)
+
+        manifest_path = repo / 'reports/run/approval-manifest.json'
+        manifest_path.parent.mkdir(parents=True)
+        manifest_path.write_text(json.dumps({
+            'jobId': 'scope-job-1',
+            'actions': [{'id': 'A1', 'bucket': 'create new content', 'target': '/guides/approved-slug'}],
+        }))
+
+        # Modify approved + stray standalone + unapproved key in monolithic JSON
+        (repo / 'src/content/guides/approved-slug.md').write_text('# Approved\nUpdated.\n')
+        (repo / 'src/content/guides/stray-slug.md').write_text('# Stray\nUnapproved edit!\n')
+        (repo / 'data/pages.json').write_text(json.dumps({
+            '/guides/approved-slug': {'title': 'Approved', 'body': 'v2'},
+            '/guides/other-locked': {'title': 'Locked', 'body': 'UNAPPROVED_V2'},
+        }, indent=2))
+
+        chk_bad = g.check_write_scope(repo, manifest_path='reports/run/approval-manifest.json', fix=False)
+        self.assertEqual(chk_bad['status'], 'FAIL')
+        viol_paths = [v['file'] for v in chk_bad['violations']]
+        self.assertIn('src/content/guides/stray-slug.md', viol_paths)
+        self.assertIn('data/pages.json', viol_paths)
+
+        # Fix monolithic JSON back to approved-only, and let check_write_scope(fix=True) revert stray standalone file
+        (repo / 'data/pages.json').write_text(json.dumps({
+            '/guides/approved-slug': {'title': 'Approved', 'body': 'v2'},
+            '/guides/other-locked': {'title': 'Locked', 'body': 'v1'},
+        }, indent=2))
+        chk_fixed = g.check_write_scope(repo, manifest_path='reports/run/approval-manifest.json', fix=True)
+        self.assertEqual(chk_fixed['status'], 'PASS')
+        self.assertIn('src/content/guides/stray-slug.md', chk_fixed['reverted'])
+        self.assertEqual((repo / 'src/content/guides/stray-slug.md').read_text(), '# Stray\nInitial.\n')
+
+    def test_plan_batches_disjoint_sub_batching_for_large_manifests(self):
+        small_path = self.root / 'small-manifest.json'
+        small_path.write_text(json.dumps({
+            'jobId': 'job-small',
+            'actions': [
+                {'id': 'A1', 'bucket': 'create new content', 'target': '/guides/p1'},
+                {'id': 'A2', 'bucket': 'create new content', 'target': '/guides/p2'},
+            ],
+            'newPageBriefs': [{'target': '/guides/p1', 'inboundLinks': {'placements': [{'source': '/guides/hub'}]}}],
+        }))
+        small = g.plan_batches(self.root, manifest_path='small-manifest.json')
+        self.assertFalse(small['subBatchingRecommended'])
+        self.assertEqual(small['batchCount'], 1)
+        self.assertTrue(small['disjointPartition'])
+
+        large_path = self.root / 'large-manifest.json'
+        large_path.write_text(json.dumps({
+            'jobId': 'job-large',
+            'actions': [
+                {'id': f'A{i}', 'bucket': 'create new content', 'target': f'/guides/new-{i}'}
+                for i in range(1, 6)
+            ],
+            'newPageBriefs': [
+                {'target': '/guides/new-1', 'inboundLinks': {'placements': [{'source': '/guides/hub-a'}, {'source': '/guides/hub-b'}]}},
+                {'target': '/guides/new-4', 'inboundLinks': {'placements': [{'source': '/guides/hub-a'}]}},
+            ],
+        }))
+        large = g.plan_batches(self.root, manifest_path='large-manifest.json', max_new_pages=3)
+        self.assertTrue(large['subBatchingRecommended'])
+        self.assertTrue(large['disjointPartition'])
+        self.assertGreaterEqual(large['batchCount'], 2)
+        seen = []
+        for b in large['batches']:
+            seen.extend(b['routes'])
+        self.assertEqual(len(seen), len(set(seen)))
+        self.assertEqual(set(seen), {'/guides/new-1', '/guides/new-2', '/guides/new-3', '/guides/new-4', '/guides/new-5', '/guides/hub-a', '/guides/hub-b'})
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -315,7 +315,7 @@ def load_secrets() -> None:
         or not os.environ.get("CONTENT_OPENAI_KEY", "").strip()
         or not os.environ.get("GEMINI_API_KEY", "").strip()
     )
-    if need_keys and not _SECRETS_BOOTSTRAPPED:
+    if need_keys and not _SECRETS_BOOTSTRAPPED and ("unittest" not in sys.modules or os.environ.get("CONTENT_BOOTSTRAP_SECRETS_IN_TESTS") == "1"):
         _SECRETS_BOOTSTRAPPED = True
         root = pathlib.Path(__file__).resolve().parents[2]
         slug = root.name
@@ -674,11 +674,89 @@ def _report_openai_budget_spend(model: str, in_tok, out_tok, think_tok) -> None:
         pass
 
 
+# TRANSIENT_DRY_KEY_CACHE_V1 — short-TTL (30-min / single-run) dead-key memo across subprocesses.
+# Keys refresh monthly / on top-up, so entries ALWAYS expire after CONTENT_DEAD_KEY_TTL seconds (default 1800; 0 disables).
+def _dry_key_ttl() -> int:
+    raw = os.environ.get("CONTENT_DEAD_KEY_TTL", "1800").strip()
+    try:
+        return max(0, int(raw))
+    except ValueError:
+        return 1800
+
+
+def _dry_key_cache_file() -> pathlib.Path:
+    import tempfile
+    raw_path = os.environ.get("CONTENT_DEAD_KEY_CACHE_FILE", "").strip()
+    if raw_path:
+        p = pathlib.Path(raw_path)
+        p.parent.mkdir(parents=True, exist_ok=True)
+        return p
+    d = pathlib.Path(tempfile.gettempdir()) / "content_gen_cache"
+    d.mkdir(parents=True, exist_ok=True)
+    return d / "transient_dry_keys.json"
+
+
+def _dry_key_token(provider: str, name: str, key: str) -> str:
+    import hashlib
+    digest = hashlib.sha256((key or "").encode("utf-8")).hexdigest()[:16]
+    return f"{provider}:{name}:{digest}"
+
+
+def _is_key_temporarily_dry(provider: str, name: str, key: str) -> bool:
+    ttl = _dry_key_ttl()
+    if ttl <= 0 or not key:
+        return False
+    if "unittest" in sys.modules and not os.environ.get("CONTENT_DEAD_KEY_CACHE_FILE"):
+        return False
+    try:
+        cf = _dry_key_cache_file()
+        if not cf.exists():
+            return False
+        data = json.loads(cf.read_text(errors="ignore") or "{}")
+        entry = (data.get("keys") or {}).get(_dry_key_token(provider, name, key))
+        return isinstance(entry, dict) and float(entry.get("expires") or 0) > time.time()
+    except Exception:
+        return False
+
+
+def _mark_key_temporarily_dry(provider: str, name: str, key: str, reason: str = "") -> None:
+    ttl = _dry_key_ttl()
+    if ttl <= 0 or not key:
+        return
+    if "unittest" in sys.modules and not os.environ.get("CONTENT_DEAD_KEY_CACHE_FILE"):
+        return
+    try:
+        cf = _dry_key_cache_file()
+        now = time.time()
+        data = {}
+        if cf.exists():
+            try:
+                data = json.loads(cf.read_text(errors="ignore") or "{}")
+            except Exception:
+                data = {}
+        keys_map = {
+            k: v for k, v in (data.get("keys") or {}).items()
+            if isinstance(v, dict) and float(v.get("expires") or 0) > now
+        }
+        keys_map[_dry_key_token(provider, name, key)] = {
+            "provider": provider,
+            "keyName": name,
+            "markedAt": round(now, 3),
+            "expires": round(now + ttl, 3),
+            "reason": (reason or "")[:140],
+        }
+        tmp = cf.with_name(f"{cf.name}.tmp-{os.getpid()}")
+        tmp.write_text(json.dumps({"keys": keys_map}))
+        os.replace(str(tmp), str(cf))
+    except Exception:
+        pass
+
+
 def call_openai(model: str, system: str, prompt: str, max_tokens: int, thinking: str) -> dict:
     _check_openai_monthly_budget()
     name, key = resolve_key("openai")
-    if name in _OPENAI_DRY:
-        raise RuntimeError(f"openai key {name} already marked exhausted/invalid in this process")
+    if name in _OPENAI_DRY or _is_key_temporarily_dry("openai", name, key):
+        raise RuntimeError(f"openai key {name} already marked exhausted/invalid (short-TTL cache)")
     payload = {"model": model, "instructions": system, "input": prompt,
                "max_output_tokens": max_tokens}
     if thinking in ("low", "medium", "high"):
@@ -686,13 +764,14 @@ def call_openai(model: str, system: str, prompt: str, max_tokens: int, thinking:
     if JSON_MODE:
         payload["text"] = {"format": {"type": "json_object"}}
         if "json" not in prompt.lower():
-            payload["input"] = prompt.rstrip() + "\n\nRespond with a valid JSON object only."
+            payload["input"] = "Respond with a valid JSON object only.\n\n" + prompt
     try:
         resp = _post("https://api.openai.com/v1/responses",
                      {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}, payload)
     except RuntimeError as e:
         if _openai_key_dead(str(e)) or "HTTP 401" in str(e) or "HTTP 403" in str(e):
             _OPENAI_DRY.add(name)
+            _mark_key_temporarily_dry("openai", name, key, str(e))
         raise
     text = resp.get("output_text") or ""
     if not text:
@@ -722,14 +801,21 @@ _ANTH_DRY = set()   # key names that came back out-of-credit / unauthorised this
 def _anthropic_keys() -> list:
     load_secrets()
     keys = []
+    cached_dry = []
     # Content keys ONLY — never ANTHROPIC_API_KEY, which may be another account's CLI key.
     for n in ("CONTENT_ANTHROPIC_KEY", "CONTENT_ANTHROPIC_KEY_2"):
         v = os.environ.get(n, "").strip()
-        if v and n not in _ANTH_DRY and v not in [k for _, k in keys]:
+        if not v or n in _ANTH_DRY:
+            continue
+        if _is_key_temporarily_dry("anthropic", n, v):
+            cached_dry.append(n)
+            continue
+        if v not in [k for _, k in keys]:
             keys.append((n, v))
     if not keys:
+        dry_all = sorted(_ANTH_DRY | set(cached_dry))
         raise KeyError("no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2)"
-                       + (f" — dry: {', '.join(sorted(_ANTH_DRY))}" if _ANTH_DRY else ""))
+                       + (f" — dry (short-TTL): {', '.join(dry_all)}" if dry_all else ""))
     return keys
 
 
@@ -858,6 +944,7 @@ def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinki
         except RuntimeError as e:
             if _anth_key_dead(str(e)):
                 _ANTH_DRY.add(name)
+                _mark_key_temporarily_dry("anthropic", name, key, str(e))
                 log(f"anthropic key {name} unusable ({str(e)[:120]}) — trying the next key in the pool")
                 errors.append(f"{name}: {str(e)[:160]}")
                 continue

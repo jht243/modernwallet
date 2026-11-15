@@ -88,7 +88,7 @@ def preparation_scope_check(root, h, old, phase):
         current = start
         while current:
             require(not any(current.get(k) for k in
-                            ['publicationAuthority', 'phase0Approval', 'approval', 'reviewRelease', 'snapshot', 'review']),
+                            ['publicationAuthority', 'phase0Approval', 'approval', 'reviewRelease', 'snapshot', 'review', 'reviewPairs']),
                     'Approved or reviewed route scope is locked')
             for ref in current.get('sources', []) + current.get('candidates', []):
                 require(not re.search(r'phase[-_]?0[-_]approval', Path(ref['path']).name, re.I),
@@ -191,6 +191,27 @@ def handoff_check(root, path, actor=None, phase=None, visited=None):
         spec = importlib.util.spec_from_file_location('handoff_renderer', root / '.claude/tools/rendered-audit.py')
         renderer = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(renderer)
+        if 'reviewPairs' in h:
+            pairs = h['reviewPairs']
+            require(isinstance(pairs, list) and pairs and
+                    not any(h.get(k) for k in ('reviewRelease', 'snapshot', 'review')),
+                    'Use a single editorial release authority for each route')
+            covered = set()
+            for pair in pairs:
+                snap = read(evidence_ref(root, pair.get('snapshot')))
+                report = read(evidence_ref(root, pair.get('review')))
+                manifest = snap.get('manifest', {})
+                require(manifest.get('workflowKind') == 'mindmap-pass' and
+                        manifest.get('jobId') == report.get('jobId', manifest.get('jobId')) == h['jobId'] and
+                        _same_site_origin(root, manifest.get('canonicalBase', ''), h['canonicalBase']),
+                        'Each editorial approval must belong to this exact job and site')
+                renderer.review_check(snap, report)
+                pair_routes = [row['path'] for row in snap['routes']]
+                require(pair_routes and len(pair_routes) == len(set(pair_routes)) and covered.isdisjoint(pair_routes),
+                        'Each approved route must appear exactly once')
+                covered.update(pair_routes)
+            require(_norm_route_set(covered) == _norm_route_set(h['routes']), 'Editorial approvals must cover the complete handoff')
+            return h
         snapshot = read(evidence_ref(root, h.get('snapshot')))
         if h.get('reviewRelease'):
             release = read(evidence_ref(root, h['reviewRelease']))
@@ -242,6 +263,13 @@ def seal(root, draft, out, local, actor=None, phase=None):
         value[collection] = [{**ref, **snapshot(root, local.evidence_ref(root, ref), out.parent, local, ref['sha256']),
                               'originPath': ref.get('originPath', ref['path'])}
                              for ref in value[collection]]
+    if 'reviewPairs' in value:
+        for pair in value['reviewPairs']:
+            for field in ('snapshot', 'review'):
+                ref = pair[field]
+                pair[field] = {**ref, **snapshot(root, local.evidence_ref(root, ref), out.parent,
+                                                  local, ref['sha256']),
+                               'originPath': ref.get('originPath', ref['path'])}
     for field in ('previous', 'snapshot', 'review', 'reviewRelease'):
         if value.get(field):
             ref = value[field]
@@ -436,16 +464,93 @@ def _extract_routes(manifest_obj, snapshot_obj=None, explicit_routes=(), root=No
     return deduped
 
 
+def _active_write_instructions(root, manifest_obj, active_routes=()):
+    route_norms = {(str(r).rstrip('/') or '/') for r in (active_routes or ()) if r}
+    has_new = bool(manifest_obj.get('newPageBriefs'))
+    has_tool = False
+    has_meta = False
+    has_body = False
+    has_links = False
+    for act in (manifest_obj.get('actions') or []):
+        if not isinstance(act, dict):
+            continue
+        tgt = str(act.get('target') or '').split('#', 1)[0].split('?', 1)[0].strip()
+        if route_norms and tgt.startswith('/') and (tgt.rstrip('/') or '/') not in route_norms:
+            continue
+        b = str(act.get('bucket') or '').strip().lower()
+        fmt = (str(act.get('format') or '') + ' ' + str(act.get('medium') or '')).lower()
+        if b == 'create new content':
+            has_new = True
+        elif b == 'update existing metadata':
+            has_meta = True
+        elif b == 'update existing body text':
+            has_body = True
+        elif b == 'add internal links':
+            has_links = True
+        if any(k in fmt for k in ('tool', 'calculator', 'interactive', 'simulator')):
+            has_tool = True
+    for brief in (manifest_obj.get('newPageBriefs') or []) + (manifest_obj.get('scopeBriefs') or []):
+        if not isinstance(brief, dict):
+            continue
+        tgt = str(brief.get('target') or '').split('#', 1)[0].split('?', 1)[0].strip()
+        if route_norms and tgt.startswith('/') and (tgt.rstrip('/') or '/') not in route_norms:
+            continue
+        ident = brief.get('identity') or {}
+        pres = brief.get('presentation') or {}
+        fmt = ' '.join(str(x or '') for x in (ident.get('format'), ident.get('medium'), pres.get('medium'))).lower()
+        if any(k in fmt for k in ('tool', 'calculator', 'interactive', 'simulator')):
+            has_tool = True
+        links = brief.get('links') or {}
+        inbound = brief.get('inboundLinks') or {}
+        for item in list(links.get('inbound') or []) + list(inbound.get('placements') or []):
+            if not isinstance(item, dict):
+                continue
+            src = str(item.get('source') or '').split('#', 1)[0].split('?', 1)[0].strip()
+            if not route_norms or (src.startswith('/') and (src.rstrip('/') or '/') in route_norms):
+                has_links = True
+    chosen = []
+    if has_meta and (root / '.claude/commands/mindmap-pass/phase-2-metadata.md').is_file():
+        chosen.append('.claude/commands/mindmap-pass/phase-2-metadata.md')
+    if has_new:
+        chosen.append('.claude/commands/mindmap-pass/phase-3-new-content.md')
+    if has_tool and (root / '.claude/commands/mindmap-pass/phase-3c-tool-build.md').is_file():
+        chosen.append('.claude/commands/mindmap-pass/phase-3c-tool-build.md')
+    if has_body and (root / '.claude/commands/mindmap-pass/phase-5-body.md').is_file():
+        chosen.append('.claude/commands/mindmap-pass/phase-5-body.md')
+    if has_links:
+        chosen.append('.claude/commands/mindmap-pass/phase-6-internal-linking.md')
+    if not chosen:
+        chosen = [
+            '.claude/commands/mindmap-pass/phase-3-new-content.md',
+            '.claude/commands/mindmap-pass/phase-6-internal-linking.md',
+        ]
+    return ' '.join(f'--instruction {rel}' for rel in chosen)
+
+
+def _parse_review_pair_arg(root, pair_arg):
+    if isinstance(pair_arg, (tuple, list)) and len(pair_arg) == 2:
+        return Path(pair_arg[0]).resolve(), Path(pair_arg[1]).resolve()
+    raw = str(pair_arg or '').strip()
+    require(':' in raw, 'Pass --review-pair as <SNAPSHOT_JSON>:<REVIEW_JSON>: ' + raw)
+    left, right = raw.split(':', 1)
+    return inside(root, left.strip()), inside(root, right.strip())
+
+
 def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previous_path=None,
               snapshot_path=None, review_path=None, chart_review_path=None, readiness_path=None,
               extra_candidates=(), extra_sources=(), explicit_routes=(), next_action=None,
-              actor=None, pack_out=None, rework=False):
+              actor=None, pack_out=None, rework=False, review_pairs=(), batch_handoffs=()):
     """Build, validate, and seal a canonical stage handoff (plus optional focused packet) in 1 command."""
     require(not out_path.exists(), 'Handoffs are immutable; use a new output path: ' + str(out_path))
     manifest_obj = read(manifest_path)
     prev_obj = read(previous_path) if previous_path else None
     snap_obj = read(snapshot_path) if snapshot_path else None
     rev_obj = read(review_path) if review_path else None
+    parsed_pairs = [_parse_review_pair_arg(root, p) for p in (review_pairs or ())]
+    if parsed_pairs:
+        require(phase == 'publish' and not snapshot_path and not review_path,
+                '--review-pair is only for --phase publish and replaces single --snapshot/--review')
+        snap_obj = read(parsed_pairs[0][0])
 
     is_layer3_local = False
     local_cfg_path = root / '.claude/workflow-policy.local.json'
@@ -464,11 +569,13 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
         routes = list(prev_obj['routes'])
         if not is_layer3_local:
             snap_by_norm = {}
-            if snap_obj and isinstance(snap_obj.get('routes'), list):
-                for sr in snap_obj['routes']:
-                    if isinstance(sr, dict) and str(sr.get('path') or '').startswith('/'):
-                        sp = sr['path']
-                        snap_by_norm[sp.rstrip('/') or '/'] = sp
+            snap_sources = [read(sp) for sp, _ in parsed_pairs] if parsed_pairs else ([snap_obj] if snap_obj else [])
+            for s_item in snap_sources:
+                if s_item and isinstance(s_item.get('routes'), list):
+                    for sr in s_item['routes']:
+                        if isinstance(sr, dict) and str(sr.get('path') or '').startswith('/'):
+                            sp = sr['path']
+                            snap_by_norm[sp.rstrip('/') or '/'] = sp
             mod_r = _load_renderer_helper(root)
             aligned = []
             for r in routes:
@@ -480,6 +587,14 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
                 else:
                     aligned.append(r)
             routes = list(dict.fromkeys(aligned))
+    elif parsed_pairs and not explicit_routes:
+        pair_routes = []
+        for sp, _ in parsed_pairs:
+            for sr in read(sp).get('routes', []):
+                if isinstance(sr, dict) and str(sr.get('path') or '').startswith('/'):
+                    pair_routes.append(sr['path'])
+        routes = list(dict.fromkeys(pair_routes))
+        require(bool(routes), 'No routes found in --review-pair snapshots')
     else:
         routes = _extract_routes(manifest_obj, snap_obj, explicit_routes, root=None if is_layer3_local else root)
     now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
@@ -499,6 +614,8 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
         cand_paths.append(extra.resolve())
     if snapshot_path:
         cand_paths.append(snapshot_path.resolve())
+    for sp, _ in parsed_pairs:
+        cand_paths.append(sp.resolve())
     candidates = [make_ref(p) for p in dict.fromkeys(cand_paths)]
 
     sources_by_path = {}
@@ -548,9 +665,27 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
     counters = copy.deepcopy(prev_obj['reviewCounters']) if prev_obj else {'reviews': 0, 'reworks': 0}
     findings = copy.deepcopy(prev_obj['findings']) if prev_obj else []
     known_ids = {f['id'] for f in findings}
+    for bh in (batch_handoffs or ()):
+        bh_path = Path(bh).resolve()
+        add_source(bh_path, 'Sealed sub-batch audit handoff provenance')
+        bh_obj = read(bh_path)
+        bh_c = bh_obj.get('reviewCounters') or {}
+        counters['reviews'] += int(bh_c.get('reviews') or 0)
+        counters['reworks'] += int(bh_c.get('reworks') or 0)
+        for bf in (bh_obj.get('findings') or []):
+            if isinstance(bf, dict) and bf.get('id') and bf['id'] not in known_ids:
+                findings.append(copy.deepcopy(bf))
+                known_ids.add(bf['id'])
+    for sp, rp in parsed_pairs:
+        add_source(rp, 'Recorded independent Phase 4 rendered-page audit report (reviewPair)')
+        if not prev_obj and not batch_handoffs:
+            counters['reviews'] += 1
+
     releasable_exhausted = []
     liability_blocked_exhausted = []
     rework_eligible = []
+    passed_routes = []
+    locked_pair_info = None
 
     if rev_obj is not None:
         add_source(review_path, 'Recorded independent Phase 4 rendered-page audit report')
@@ -561,12 +696,18 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
                 counters['reviews'] += 1
         if phase == 'write':
             exhausted_paths = set()
+            active_route_norms = {(r.rstrip('/') or '/') for r in routes}
+            for r_item in rev_obj.get('routes', []):
+                r_raw = r_item.get('path', '')
+                r_norm = r_raw.rstrip('/') or '/'
+                if r_norm in active_route_norms and r_item.get('verdict') == 'PASS':
+                    passed_routes.append(r_raw)
             crp_path = root / '.claude/tools/content-review-policy.py'
+            crp_mod = None
             if (root / '.claude/content-review-policy.json').is_file() and crp_path.is_file():
                 spec_crp = importlib.util.spec_from_file_location('handoff_crp_guard', crp_path)
                 crp_mod = importlib.util.module_from_spec(spec_crp)
                 spec_crp.loader.exec_module(crp_mod)
-                active_route_norms = {(r.rstrip('/') or '/') for r in routes}
                 for r_item in rev_obj.get('routes', []):
                     r_raw = r_item.get('path', '')
                     r_norm = r_raw.rstrip('/') or '/'
@@ -578,6 +719,7 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
                     except (ValueError, KeyError, OSError):
                         cyc = None
                     if cyc is None:
+                        rework_eligible.append(r_raw)
                         continue
                     last_r = crp_mod.last_authoritative_round(cyc)
                     max_r = cyc.get('maximumRounds', crp_mod.audit_limit(crp_mod.policy(root), cyc['profile'], cyc.get('lastRiskAssessment')))
@@ -599,6 +741,33 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
                     'run auto-seal --phase publish directly on the final audited snapshot/review '
                     '(or project non-liability-blocked routes via content-review-policy.py project when liabilityBlocked is non-empty).'
                 )
+            else:
+                for r_item in rev_obj.get('routes', []):
+                    r_raw = r_item.get('path', '')
+                    r_norm = r_raw.rstrip('/') or '/'
+                    if r_norm in active_route_norms and r_item.get('verdict') == 'FAIL':
+                        rework_eligible.append(r_raw)
+
+            locked_releasable = list(dict.fromkeys(passed_routes + releasable_exhausted))
+            if crp_mod is not None and snapshot_path is not None and locked_releasable and rework_eligible:
+                proj_dir = out_path.parent.resolve()
+                suffix = ''
+                idx = 1
+                while (proj_dir / f'locked-r1-snapshot{suffix}.json').exists() or (proj_dir / f'locked-r1-review{suffix}.json').exists():
+                    idx += 1
+                    suffix = f'-v{idx}'
+                ls_out = proj_dir / f'locked-r1-snapshot{suffix}.json'
+                lr_out = proj_dir / f'locked-r1-review{suffix}.json'
+                try:
+                    crp_mod.project(root, snapshot_path, review_path, locked_releasable, ls_out, lr_out)
+                    locked_pair_info = {
+                        'snapshot': str(ls_out.relative_to(root.resolve())),
+                        'review': str(lr_out.relative_to(root.resolve())),
+                        'routes': locked_releasable,
+                    }
+                except (ValueError, KeyError, OSError):
+                    locked_pair_info = None
+
             for r_idx, r_item in enumerate(rev_obj.get('routes', []), 1):
                 if (r_item.get('path', '').rstrip('/') or '/') in exhausted_paths:
                     continue
@@ -637,10 +806,10 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
         'publish': 'Publish exact independently reviewed Mindmap output to main and verify live.',
     }
     effective_next_action = (next_action or default_actions[phase]).strip()
-    if phase == 'write' and (releasable_exhausted or liability_blocked_exhausted) and rework_eligible:
-        locked_all = releasable_exhausted + liability_blocked_exhausted
+    if phase == 'write' and (passed_routes or releasable_exhausted or liability_blocked_exhausted) and rework_eligible:
+        locked_all = list(dict.fromkeys(passed_routes + releasable_exhausted + liability_blocked_exhausted))
         effective_next_action = (
-            'DO NOT EDIT EXHAUSTED ROUTES (' + ', '.join(locked_all)
+            'DO NOT EDIT PASSED OR EXHAUSTED ROUTES (' + ', '.join(locked_all)
             + '); rework ONLY ' + ', '.join(rework_eligible) + '. ' + effective_next_action
         )
     draft = {
@@ -659,10 +828,13 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
         draft['siteId'] = site_id
     if previous_path:
         draft['previous'] = make_ref(previous_path)
-    if snapshot_path:
-        draft['snapshot'] = make_ref(snapshot_path)
-    if review_path and phase == 'publish':
-        draft['review'] = make_ref(review_path)
+    if parsed_pairs:
+        draft['reviewPairs'] = [{'snapshot': make_ref(sp), 'review': make_ref(rp)} for sp, rp in parsed_pairs]
+    else:
+        if snapshot_path:
+            draft['snapshot'] = make_ref(snapshot_path)
+        if review_path and phase == 'publish':
+            draft['review'] = make_ref(review_path)
 
     pending_draft = out_path.with_name(out_path.name + '.autodraft-' + uuid.uuid4().hex + '.json')
     try:
@@ -701,19 +873,25 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
     }
     if pack_out:
         res['contextPacket'] = str(pack_out.resolve().relative_to(root.resolve()))
+    if passed_routes:
+        res['lockedPassedRoutes'] = passed_routes
     if releasable_exhausted:
         res['lockedAtAuditLimitRoutes'] = releasable_exhausted
     if liability_blocked_exhausted:
         res['liabilityBlockedRoutes'] = liability_blocked_exhausted
     if rework_eligible:
         res['reworkEligibleRoutes'] = rework_eligible
+        if review_path is not None:
+            res['round2CaptureFlags'] = f"--only-rework-from {str(review_path.resolve().relative_to(root.resolve()))}"
+    if locked_pair_info:
+        res['lockedReviewPair'] = locked_pair_info
     role_agent = (
         f'.claude/agents/layer3-mindmap-{phase}.md'
         if is_layer3_local
         else f'.claude/agents/mindmap-{phase}.md'
     )
     phase_instr = {
-        'write': '--instruction .claude/commands/mindmap-pass/phase-3-new-content.md --instruction .claude/commands/mindmap-pass/phase-6-internal-linking.md',
+        'write': _active_write_instructions(root, manifest_obj, rework_eligible or routes),
         'audit': '--instruction .claude/commands/mindmap-pass/phase-4-audit.md',
         'publish': '--instruction .claude/commands/mindmap-pass/phase-7-sitemap-indexnow.md --instruction .claude/commands/mindmap-pass/phase-9-commit-deliver.md',
     }[phase]
@@ -742,6 +920,8 @@ def main(argv=None):
     q.add_argument('--previous', help='Previous sealed handoff JSON path')
     q.add_argument('--snapshot', help='Captured rendered snapshot JSON path')
     q.add_argument('--review', help='Recorded Phase 4 review JSON path')
+    q.add_argument('--review-pair', action='append', default=[], help='Publish review pair <SNAPSHOT_JSON>:<REVIEW_JSON> (repeatable)')
+    q.add_argument('--batch-handoff', action='append', default=[], help='Completed sub-batch audit handoff path for multi-batch publish (repeatable)')
     q.add_argument('--chart-review', help='Independent chart-review.json path')
     q.add_argument('--readiness', help='Preparation readiness.md path')
     q.add_argument('--candidate', action='append', default=[], help='Additional candidate file path (repeatable)')
@@ -773,6 +953,8 @@ def main(argv=None):
             actor=args.actor,
             pack_out=inside(ROOT, args.pack_out) if args.pack_out else None,
             rework=args.rework,
+            review_pairs=args.review_pair,
+            batch_handoffs=[inside(ROOT, bh) for bh in args.batch_handoff],
         )
         print(json.dumps(res, indent=2))
     elif args.command == 'check':

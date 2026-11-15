@@ -8,6 +8,7 @@ import math
 import datetime
 from pathlib import Path
 import re
+import subprocess
 import sys
 
 VERSION = 1
@@ -1607,6 +1608,701 @@ def rebind_mechanical(root, manifest_path, review_path, out=None, render_chart_f
     }
 
 
+def _route_slug(target):
+    s = str(target or '').split('#', 1)[0].split('?', 1)[0].strip('/').rsplit('/', 1)[-1] or 'index'
+    return re.sub(r'[^a-zA-Z0-9._-]+', '-', s).strip('-') or 'index'
+
+
+def _norm_route_path(route):
+    r = str(route or '').split('#', 1)[0].split('?', 1)[0].strip()
+    if not r.startswith('/'):
+        return ''
+    return r.rstrip('/') or '/'
+
+
+def _discover_voice_sample(root, explicit_sample=None):
+    if explicit_sample:
+        p = local(root, explicit_sample)
+        return str(p.relative_to(root)), p.read_text(errors='ignore')[:8000]
+    for cand_glob in (
+        'src/content/**/*.mdx',
+        'src/content/**/*.md',
+        'content/**/*.mdx',
+        'content/**/*.md',
+        'data/pages.generated.json',
+        'data/pages.json',
+        'data/*.ts',
+    ):
+        for p in sorted(root.glob(cand_glob)):
+            if not p.is_file() or p.name.startswith('_') or 'test' in p.name.lower():
+                continue
+            txt = p.read_text(errors='ignore')
+            if 'draft: true' in txt[:600].lower() or len(txt.strip()) < 400:
+                continue
+            return str(p.relative_to(root)), txt[:8000]
+    return None, ''
+
+
+def _collect_verified_urls_from_text(raw_text):
+    urls = set()
+    for m in re.finditer(r'https://[^\s<>"\')\]`]+', raw_text or ''):
+        u = m.group(0).rstrip('.,;:!?)')
+        if 'schema.org' in u or 'localhost' in u or '127.0.0.1' in u:
+            continue
+        urls.add(u)
+    return urls
+
+
+def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice_sample=None, review_path=None, overwrite=False):
+    """Build reusable system.md + per-slug .prompt.md + .allowed-urls.txt from approval-manifest.json in 1 command."""
+    root = root.resolve()
+    m_file = local(root, manifest_path)
+    plan = read(m_file)
+    target_dir = (root / out_dir).resolve()
+    require(target_dir.is_relative_to(root), 'Write packet directory escapes repository: ' + str(out_dir))
+    target_dir.mkdir(parents=True, exist_ok=True)
+    ev_base = (root / evidence_dir).resolve() if evidence_dir else (m_file.parent / 'evidence').resolve()
+
+    sample_rel, sample_txt = _discover_voice_sample(root, voice_sample)
+    sys_parts = [
+        '# Writer System Contract (Auto-Compiled by mindmap-gates.py prepare-write-packets)\n'
+        'Write publication-ready, evidence-grounded content strictly honoring every approved plan field, '
+        'primary-source fact, visible attribution rule, and anti-AI language rule below. '
+        'Never invent benchmarks, prices, dates, citations, or unexecuted tests. '
+        'Never place raw Markdown `| col |` pipe-table rows inside JSON `paragraphs[]` strings; use structured `table` fields (`{"headers": [...], "rows": [[...]]}`) where supported.\n'
+    ]
+    if sample_txt:
+        sys_parts.append(f'## Published Repository Voice & Structure Sample (`{sample_rel}` excerpt)\n\n```\n{sample_txt}\n```\n')
+    anti_ai_path = root / '.claude/commands/_anti-ai-language.md'
+    if anti_ai_path.is_file():
+        anti_txt = anti_ai_path.read_text(errors='ignore')
+        writer_anti = anti_txt.split('\n## AUDITOR', 1)[0] if '\n## AUDITOR' in anti_txt else anti_txt
+        sys_parts.append('## Anti-AI Writing Rules (Writer Contract)\n\n' + writer_anti.strip() + '\n')
+    for contract_rel in (
+        '.claude/commands/_decision-evidence.md',
+        '.claude/commands/_decision-evidence.local.md',
+        '.claude/commands/_testing-labels.md',
+        '.claude/commands/_testing-labels.local.md',
+        '.claude/commands/_experience.md',
+        '.claude/commands/_experience.local.md',
+        '.claude/commands/_layer3-evidence-sources.md',
+        '.claude/commands/_content-standard.local.md',
+        '.claude/commands/_content-standard.md',
+    ):
+        cp = root / contract_rel
+        if cp.is_file():
+            sys_parts.append(f'## `{contract_rel}`\n\n' + cp.read_text(errors='ignore').strip() + '\n')
+    system_file = target_dir / 'system.md'
+    if overwrite or not system_file.exists():
+        system_file.write_text('\n\n'.join(sys_parts))
+
+    global_urls = set()
+    source_excerpts = {}
+    for ref in (plan.get('evidenceFiles') or []):
+        if isinstance(ref, dict) and isinstance(ref.get('path'), str):
+            rp = (root / ref['path']).resolve()
+            if rp.is_relative_to(root) and rp.is_file():
+                txt = rp.read_text(errors='ignore')
+                global_urls.update(_collect_verified_urls_from_text(txt))
+                source_excerpts[ref['path']] = txt[:3500]
+    sources_folder = m_file.parent / 'research/sources'
+    if sources_folder.is_dir():
+        for sp in sorted(sources_folder.glob('*.txt')):
+            rel_sp = str(sp.relative_to(root))
+            txt = sp.read_text(errors='ignore')
+            global_urls.update(_collect_verified_urls_from_text(txt))
+            source_excerpts.setdefault(rel_sp, txt[:3500])
+
+    brief_by_id = {}
+    for b in (plan.get('newPageBriefs') or []) + (plan.get('scopeBriefs') or []):
+        if isinstance(b, dict) and b.get('actionId'):
+            brief_by_id.setdefault(b['actionId'], b)
+
+    guardrails = [str(g) for g in (plan.get('reviewerGuardrails') or []) if g]
+    rev_cand = local(root, review_path) if review_path else (m_file.parent / 'chart-review.json')
+    if rev_cand.is_file():
+        try:
+            rev_obj = read(rev_cand)
+            for f_item in (rev_obj.get('findings') or []):
+                if isinstance(f_item, dict):
+                    fid = str(f_item.get('id') or '').strip()
+                    fsum = str(f_item.get('summary') or f_item.get('detail') or f_item.get('message') or '').strip()
+                    if fid or fsum:
+                        g_line = f'{fid}: {fsum}'.strip(': ')
+                        if g_line and g_line not in guardrails:
+                            guardrails.append(g_line)
+        except Exception:
+            pass
+    packets = []
+    for row in (plan.get('actions') or []):
+        if not isinstance(row, dict) or row.get('bucket') not in SUBSTANTIVE:
+            continue
+        aid = row.get('id', '')
+        target = str(row.get('target') or '').strip()
+        slug = _route_slug(target)
+        brief = brief_by_id.get(aid, {})
+        ident = brief.get('identity') or {}
+        ra = brief.get('readerAndAnswer') or {}
+        row_urls = set(global_urls)
+        row_sources = []
+        seen_src_paths = set()
+        for ref in (brief.get('evidenceFiles') or []):
+            if isinstance(ref, dict) and isinstance(ref.get('path'), str):
+                rp = (root / ref['path']).resolve()
+                if rp.is_relative_to(root) and rp.is_file():
+                    txt = rp.read_text(errors='ignore')
+                    row_urls.update(_collect_verified_urls_from_text(txt))
+                    if ref['path'] not in seen_src_paths:
+                        seen_src_paths.add(ref['path'])
+                        row_sources.append((ref['path'], txt[:3500]))
+        for s_path, s_txt in source_excerpts.items():
+            if len(row_sources) >= 8:
+                break
+            if s_path not in seen_src_paths:
+                seen_src_paths.add(s_path)
+                row_sources.append((s_path, s_txt))
+
+        ev_file = ev_base / slug / 'evidence.json'
+        ev_data = None
+        if ev_file.is_file():
+            try:
+                ev_data = read(ev_file)
+                for sref in (ev_data.get('sourceArtifacts') or []):
+                    if isinstance(sref, dict) and isinstance(sref.get('path'), str):
+                        sp = (root / sref['path']).resolve()
+                        if sp.is_relative_to(root) and sp.is_file():
+                            row_urls.update(_collect_verified_urls_from_text(sp.read_text(errors='ignore')))
+            except Exception:
+                ev_data = None
+
+        urls_file = target_dir / f'{slug}.allowed-urls.txt'
+        if overwrite or not urls_file.exists():
+            urls_file.write_text('\n'.join(sorted(row_urls)) + ('\n' if row_urls else ''))
+
+        fmt_low = str(ident.get('format') or row.get('format') or '').lower()
+        page_type_low = str(ident.get('pageType') or '').lower()
+        depth_floor = 1500 if ('comparison' in fmt_low or 'comparison' in page_type_low or '/compare/' in target) else 1800
+        outline_lines = []
+        for idx, item in enumerate(brief.get('outline') or [], 1):
+            if isinstance(item, dict):
+                outline_lines.append(f"{idx}. **{item.get('heading', '')}** — {item.get('purpose', '')}")
+            else:
+                outline_lines.append(f'{idx}. {item}')
+        outbound_items = []
+        for key_name in ('outboundLinks', 'links'):
+            l_obj = brief.get(key_name)
+            if isinstance(l_obj, dict):
+                for pl in (l_obj.get('placements') or l_obj.get('outbound') or []):
+                    if isinstance(pl, dict):
+                        outbound_items.append(json.dumps(pl, ensure_ascii=False))
+
+        prompt_lines = [
+            f'# Approved Page Assignment: `{target}` (`{slug}`)',
+            f'- **Action ID:** `{aid}` ({row.get("bucket")})',
+            f'- **Title:** {ident.get("title") or row.get("solution") or slug}',
+            f'- **Page Type / Format / Medium:** {ident.get("pageType") or "guide"} | {ident.get("format") or row.get("format")} | {ident.get("medium") or (row.get("presentation") or {}).get("medium")}',
+            f'- **Minimum Visible Depth Floor:** {depth_floor}+ words (substantive, zero filler; never leave raw Markdown `| col |` pipe-table rows inside JSON string `paragraphs[]` arrays — use structured `table` fields where supported)',
+            '',
+            '## Mandatory Reader Question & Opening Answer Contract (Cols 10–12)',
+            f'- **Reader Question (Col 10):** {ra.get("question") or row.get("reader_question")}',
+            f'- **Working Answer (Col 11):** {ra.get("answer") or row.get("answer")}',
+            f'- **Answer Placement (Col 12):** {ra.get("placement") or row.get("answer_placement")}',
+            '',
+            '## Demand & Differentiation Context',
+            f'- **Problem / Gap:** {row.get("problem")}',
+            f'- **Keyword Evidence:** {json.dumps(brief.get("keywordEvidence") or row.get("serp_evidence") or "", ensure_ascii=False)}',
+            f'- **Why New Page / Angle:** {brief.get("whyNewPage") or row.get("solution")}',
+            f'- **Intent-Based Our Takeaway:** {json.dumps(brief.get("takeaway") or "", ensure_ascii=False)}',
+        ]
+        if outline_lines:
+            prompt_lines.extend(['', '## Approved Section Outline', *outline_lines])
+        if outbound_items:
+            prompt_lines.extend(['', '## Approved Internal Outbound Links', *[f'- {x}' for x in outbound_items]])
+        if guardrails:
+            prompt_lines.extend(['', '## Reviewer Guardrails (Must Respect)', *[f'- {g}' for g in guardrails]])
+        if ev_data:
+            prompt_lines.extend([
+                '',
+                '## Verified Same-Run Analysis & First-Party Evidence Packet (`evidence.json`)',
+                'Include honest visible attribution matching `basis` (internal testing, internal modeling with visible assumptions + counterexample, anonymized approved client experience when selected, durable reader-survey facts when matched, and `(Tested YYYY)` ONLY when `runs:[{testedAt}]` is executed & eligible):',
+                '```json',
+                json.dumps(ev_data, indent=2, ensure_ascii=False),
+                '```',
+            ])
+        if row_sources:
+            prompt_lines.append('\n## Captured Primary-Source Evidence Excerpts (Disk Cache)')
+            for s_path, s_txt in row_sources:
+                prompt_lines.append(f'### `{s_path}`\n```\n{s_txt}\n```')
+
+        prompt_file = target_dir / f'{slug}.prompt.md'
+        if overwrite or not prompt_file.exists():
+            prompt_file.write_text('\n'.join(prompt_lines) + '\n')
+        packets.append({
+            'actionId': aid,
+            'slug': slug,
+            'target': target,
+            'prompt': str(prompt_file.relative_to(root)),
+            'allowedUrls': str(urls_file.relative_to(root)),
+            'allowedUrlCount': len(row_urls),
+            'evidencePacket': str(ev_file.relative_to(root)) if ev_file.is_file() else None,
+        })
+
+    return {
+        'status': 'PASS',
+        'system': str(system_file.relative_to(root)),
+        'voiceSample': sample_rel,
+        'count': len(packets),
+        'packets': packets,
+    }
+
+
+_PIPE_ROW_RE = re.compile(r'^\s*\|.*\|.*$')
+_PIPE_SEP_RE = re.compile(r'^\s*\|[\s:|-]+\|\s*$')
+
+
+def _convert_pipe_lines_to_table(lines):
+    rows = []
+    for ln in lines:
+        if _PIPE_SEP_RE.match(ln):
+            continue
+        cells = [c.strip() for c in ln.strip().strip('|').split('|')]
+        if cells:
+            rows.append(cells)
+    if len(rows) >= 2:
+        return {'headers': rows[0], 'rows': rows[1:]}
+    return None
+
+
+def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_tables=False):
+    """1-command pre-splice mechanical lint across writer drafts (.meta.json, pipe-in-paragraphs, URLs, residue, depth)."""
+    root = root.resolve()
+    m_file = local(root, manifest_path)
+    plan = read(m_file)
+    d_dir = (root / drafts_dir).resolve()
+    require(d_dir.is_relative_to(root) and d_dir.is_dir(), 'Drafts directory missing or outside repository: ' + str(drafts_dir))
+    p_dir = (root / prompts_dir).resolve() if prompts_dir else None
+
+    canonical_hosts = set()
+    crp_cfg = root / '.claude/content-review-policy.json'
+    if crp_cfg.is_file():
+        try:
+            for h in (read(crp_cfg).get('canonicalHosts') or []):
+                if isinstance(h, str) and h.strip():
+                    canonical_hosts.add(h.strip().lower().removeprefix('www.'))
+        except Exception:
+            pass
+
+    substantive_rows = [
+        r for r in (plan.get('actions') or [])
+        if isinstance(r, dict) and r.get('bucket') == 'create new content'
+    ]
+    issues = []
+    checked = 0
+    fixed_tables = 0
+
+    for row in substantive_rows:
+        target = str(row.get('target') or '').strip()
+        slug = _route_slug(target)
+        cand_files = [
+            p for p in sorted(d_dir.glob(f'{slug}.*'))
+            if p.is_file() and not p.name.endswith('.meta.json') and p.suffix in ('.json', '.md', '.mdx', '.txt')
+        ]
+        if not cand_files:
+            issues.append({'slug': slug, 'kind': 'missing-draft', 'detail': f'No draft file found for {slug} in {drafts_dir}'})
+            continue
+        draft_file = cand_files[0]
+        checked += 1
+        meta_candidates = [
+            Path(str(draft_file) + '.meta.json'),
+            draft_file.with_suffix('.meta.json'),
+            d_dir / f'{slug}.meta.json',
+        ]
+        meta_file = next((mp for mp in meta_candidates if mp.is_file()), None)
+        if meta_file is None:
+            issues.append({'slug': slug, 'kind': 'missing-meta-json', 'detail': f'Missing .meta.json receipt alongside {draft_file.name}'})
+        else:
+            try:
+                meta_obj = read(meta_file)
+                if not meta_obj.get('provider') or not meta_obj.get('model'):
+                    issues.append({'slug': slug, 'kind': 'invalid-meta-json', 'detail': f'{meta_file.name} missing provider/model'})
+            except Exception as exc:
+                issues.append({'slug': slug, 'kind': 'corrupt-meta-json', 'detail': str(exc)})
+
+        raw_txt = draft_file.read_text(errors='ignore')
+        if draft_file.suffix == '.json':
+            try:
+                data = json.loads(raw_txt)
+            except Exception as exc:
+                issues.append({'slug': slug, 'kind': 'invalid-json', 'detail': str(exc)})
+                continue
+            mutated = False
+            sections = []
+            if isinstance(data, dict):
+                for sec_key in ('sections', 'sectionContent', 'bodySections'):
+                    if isinstance(data.get(sec_key), list):
+                        sections.extend(data[sec_key])
+            for s_idx, sec in enumerate(sections):
+                if not isinstance(sec, dict) or not isinstance(sec.get('paragraphs'), list):
+                    continue
+                paras = sec['paragraphs']
+                pipe_idxs = [
+                    i for i, p in enumerate(paras)
+                    if isinstance(p, str) and any(_PIPE_ROW_RE.match(sub.strip()) for sub in p.splitlines())
+                ]
+                if not pipe_idxs:
+                    continue
+                if fix_pipe_tables and 'table' not in sec:
+                    pipe_lines = []
+                    kept_paras = []
+                    for p in paras:
+                        if isinstance(p, str) and any(_PIPE_ROW_RE.match(sub.strip()) for sub in p.splitlines()):
+                            for sub_ln in p.splitlines():
+                                if _PIPE_ROW_RE.match(sub_ln.strip()):
+                                    pipe_lines.append(sub_ln)
+                                elif sub_ln.strip():
+                                    kept_paras.append(sub_ln)
+                        else:
+                            kept_paras.append(p)
+                    tbl = _convert_pipe_lines_to_table(pipe_lines)
+                    if tbl is not None:
+                        sec['paragraphs'] = kept_paras
+                        sec['table'] = tbl
+                        mutated = True
+                        fixed_tables += 1
+                        continue
+                issues.append({
+                    'slug': slug,
+                    'kind': 'pipe-table-in-paragraphs',
+                    'detail': f'Section {s_idx} ({sec.get("heading", "")}) contains raw Markdown pipe-table rows inside paragraphs[]',
+                })
+            if mutated:
+                draft_file.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n')
+                raw_txt = draft_file.read_text(errors='ignore')
+
+        word_count = len(re.findall(r'\b[A-Za-z0-9][A-Za-z0-9\'-]*\b', raw_txt))
+        if word_count < 900:
+            issues.append({'slug': slug, 'kind': 'thin-draft', 'detail': f'Draft word count ({word_count}) is below 900-word sanity floor'})
+
+        if p_dir is not None:
+            allow_file = p_dir / f'{slug}.allowed-urls.txt'
+            if allow_file.is_file():
+                allowed = {ln.strip().rstrip('/') for ln in allow_file.read_text(errors='ignore').splitlines() if ln.strip()}
+                if allowed:
+                    for u in sorted(_collect_verified_urls_from_text(raw_txt)):
+                        u_norm = u.rstrip('/')
+                        host_match = re.match(r'^https://([^/]+)', u_norm)
+                        h_dom = (host_match.group(1).lower().removeprefix('www.') if host_match else '')
+                        if h_dom in canonical_hosts:
+                            continue
+                        if u_norm not in allowed and not any(u_norm.startswith(a) or a.startswith(u_norm) for a in allowed):
+                            issues.append({'slug': slug, 'kind': 'unverified-external-url', 'detail': f'URL not in {allow_file.name}: {u}'})
+
+    return {
+        'status': 'PASS' if not issues else 'FAIL',
+        'checked': checked,
+        'fixedPipeTables': fixed_tables,
+        'issues': issues,
+    }
+
+
+_SAFE_SHARED_WRITE_PATTERNS = (
+    'reports/',
+    '.claude/',
+    'public/sitemap',
+    'public/robots.txt',
+    'src/pages/sitemap',
+    'scripts/',
+    'package-lock.json',
+)
+
+
+def _load_locked_and_rework_routes(root, plan, prior_review_path):
+    rev = read(local(root, prior_review_path))
+    locked = set()
+    rework_ok = set()
+    crp_path = root / '.claude/tools/content-review-policy.py'
+    crp_mod = None
+    canonical_base = None
+    if (root / '.claude/content-review-policy.json').is_file() and crp_path.is_file():
+        spec_crp = importlib.util.spec_from_file_location('gates_crp_scope', crp_path)
+        crp_mod = importlib.util.module_from_spec(spec_crp)
+        spec_crp.loader.exec_module(crp_mod)
+        hosts = crp_mod.policy(root).get('canonicalHosts') or []
+        if hosts:
+            canonical_base = 'https://' + hosts[0]
+    for r_item in (rev.get('routes') or []):
+        if not isinstance(r_item, dict):
+            continue
+        r_norm = _norm_route_path(r_item.get('path'))
+        if not r_norm:
+            continue
+        if r_item.get('verdict') == 'PASS':
+            locked.add(r_norm)
+            continue
+        exhausted = False
+        if crp_mod is not None and canonical_base:
+            try:
+                with crp_mod.Journal(root, canonical_base, r_norm) as journal:
+                    cyc = journal.cycle
+                if cyc is not None:
+                    last_r = crp_mod.last_authoritative_round(cyc)
+                    max_r = cyc.get('maximumRounds', crp_mod.audit_limit(crp_mod.policy(root), cyc['profile'], cyc.get('lastRiskAssessment')))
+                    used_r = last_r.get('number', len(cyc.get('rounds', [])))
+                    if last_r.get('status') == 'complete' and used_r >= max_r:
+                        exhausted = True
+            except Exception:
+                exhausted = False
+        if exhausted:
+            locked.add(r_norm)
+        else:
+            rework_ok.add(r_norm)
+    return locked, rework_ok
+
+
+def check_write_scope(root, manifest_path, prior_review=None, fix=False):
+    """Verify git working tree modifies ONLY routes authorized in approval-manifest.json (and unlocked on rework)."""
+    root = root.resolve()
+    if not (root / '.git').exists():
+        return {'status': 'PASS', 'note': 'Not a git checkout; scope check skipped', 'violations': [], 'reverted': []}
+    plan = read(local(root, manifest_path))
+    allowed_routes = set()
+    allowed_slugs = set()
+    for act in (plan.get('actions') or []):
+        if not isinstance(act, dict) or act.get('bucket') == 'consolidation advisory':
+            continue
+        rn = _norm_route_path(act.get('target'))
+        if rn:
+            allowed_routes.add(rn)
+            allowed_slugs.add(_route_slug(rn))
+    for brief in (plan.get('newPageBriefs') or []) + (plan.get('scopeBriefs') or []):
+        if not isinstance(brief, dict):
+            continue
+        rn = _norm_route_path(brief.get('target'))
+        if rn:
+            allowed_routes.add(rn)
+            allowed_slugs.add(_route_slug(rn))
+        for k in ('links', 'inboundLinks'):
+            lo = brief.get(k)
+            if isinstance(lo, dict):
+                for pl in (lo.get('inbound') or lo.get('placements') or []):
+                    if isinstance(pl, dict):
+                        sn = _norm_route_path(pl.get('source'))
+                        if sn:
+                            allowed_routes.add(sn)
+                            allowed_slugs.add(_route_slug(sn))
+
+    locked_routes = set()
+    if prior_review:
+        locked_routes, _ = _load_locked_and_rework_routes(root, plan, prior_review)
+
+    proc = subprocess.run(['git', '-C', str(root), 'status', '--porcelain'], capture_output=True, text=True)
+    if proc.returncode != 0:
+        return {'status': 'PASS', 'note': 'git status unavailable', 'violations': [], 'reverted': []}
+
+    violations = []
+    reverted = []
+    for raw_line in proc.stdout.splitlines():
+        if len(raw_line) < 4:
+            continue
+        status_code = raw_line[:2]
+        rel = raw_line[3:].strip().strip('"')
+        if ' -> ' in rel:
+            rel = rel.split(' -> ', 1)[1].strip().strip('"')
+        if any(rel.startswith(p) for p in _SAFE_SHARED_WRITE_PATTERNS):
+            continue
+        p_obj = Path(rel)
+        # Check monolithic JSON page stores for unapproved existing entry mutations
+        if rel in ('data/pages.generated.json', 'data/pages.json') and (root / rel).is_file() and status_code != '??':
+            head_proc = subprocess.run(['git', '-C', str(root), 'show', f'HEAD:{rel}'], capture_output=True, text=True)
+            if head_proc.returncode == 0:
+                try:
+                    old_data = json.loads(head_proc.stdout)
+                    new_data = json.loads((root / rel).read_text(errors='ignore'))
+                    def _entry_route(e):
+                        if not isinstance(e, dict):
+                            return ''
+                        for k in ('path', 'route', 'url', 'permalink'):
+                            if isinstance(e.get(k), str) and e[k].startswith('/'):
+                                return _norm_route_path(e[k])
+                        if isinstance(e.get('slug'), str) and e['slug'].strip():
+                            return '/' + e['slug'].strip('/')
+                        return ''
+                    old_by_r = {}
+                    new_by_r = {}
+                    if isinstance(old_data, list) and isinstance(new_data, list):
+                        old_by_r = {_entry_route(e): e for e in old_data if _entry_route(e)}
+                        new_by_r = {_entry_route(e): e for e in new_data if _entry_route(e)}
+                    elif isinstance(old_data, dict) and isinstance(new_data, dict):
+                        if isinstance(old_data.get('pages'), list) and isinstance(new_data.get('pages'), list):
+                            old_by_r = {_entry_route(e): e for e in old_data['pages'] if _entry_route(e)}
+                            new_by_r = {_entry_route(e): e for e in new_data['pages'] if _entry_route(e)}
+                        else:
+                            old_by_r = {_norm_route_path(k if str(k).startswith('/') else '/' + str(k)): v for k, v in old_data.items()}
+                            new_by_r = {_norm_route_path(k if str(k).startswith('/') else '/' + str(k)): v for k, v in new_data.items()}
+                    for r_key, old_val in old_by_r.items():
+                        if r_key in new_by_r and new_by_r[r_key] != old_val:
+                            r_slug = _route_slug(r_key)
+                            if r_key in locked_routes:
+                                violations.append({'file': rel, 'route': r_key, 'reason': 'Modified locked route in monolithic JSON store'})
+                            elif r_key not in allowed_routes and r_slug not in allowed_slugs:
+                                violations.append({'file': rel, 'route': r_key, 'reason': 'Modified unapproved existing entry in monolithic JSON store'})
+                except Exception:
+                    pass
+            continue
+
+        # Check standalone Markdown/MDX/content page files under src/content/, content/, or src/pages/
+        is_standalone_content = (
+            (rel.startswith('src/content/') or rel.startswith('content/'))
+            and p_obj.suffix in ('.md', '.mdx', '.json')
+            and not p_obj.name.startswith('_')
+            and p_obj.stem not in ('config', 'index')
+        )
+        if is_standalone_content:
+            stem_slug = p_obj.stem
+            locked_slugs = {_route_slug(r) for r in locked_routes}
+            if stem_slug in locked_slugs or stem_slug not in allowed_slugs:
+                if fix and status_code != '??':
+                    rev_proc = subprocess.run(['git', '-C', str(root), 'checkout', 'HEAD', '--', rel], capture_output=True, text=True)
+                    if rev_proc.returncode == 0:
+                        reverted.append(rel)
+                        continue
+                violations.append({'file': rel, 'slug': stem_slug, 'reason': 'Modified or created standalone content file outside approved manifest scope'})
+
+    return {
+        'status': 'PASS' if not violations else 'FAIL',
+        'allowedRoutes': sorted(allowed_routes),
+        'lockedRoutes': sorted(locked_routes),
+        'reverted': reverted,
+        'violations': violations,
+    }
+
+
+def plan_batches(root, manifest_path, max_new_pages=3, max_routes=8, out=None):
+    """Partition large Mindmap manifests into disjoint 2-3 page sub-batches so WRITE/AUDIT contexts never snowball."""
+    root = root.resolve()
+    m_file = local(root, manifest_path)
+    plan = read(m_file)
+    max_new_pages = max(1, int(max_new_pages))
+    max_routes = max(max_new_pages, int(max_routes))
+
+    renderer_path = root / '.claude/tools/rendered-audit.py'
+    norm_fn = lambda r: r
+    if renderer_path.is_file():
+        spec_r = importlib.util.spec_from_file_location('gates_batch_norm', renderer_path)
+        mod_r = importlib.util.module_from_spec(spec_r)
+        spec_r.loader.exec_module(mod_r)
+        if hasattr(mod_r, 'normalize_site_route'):
+            norm_fn = lambda r: mod_r.normalize_site_route(root, r)
+
+    new_items = []
+    existing_routes = []
+    seen_norms = set()
+
+    for act in (plan.get('actions') or []):
+        if not isinstance(act, dict) or act.get('bucket') == 'consolidation advisory':
+            continue
+        raw_t = str(act.get('target') or '').split('#', 1)[0].split('?', 1)[0].strip()
+        if not raw_t.startswith('/'):
+            continue
+        rt = norm_fn(raw_t)
+        rn = _norm_route_path(rt)
+        if rn in seen_norms:
+            continue
+        seen_norms.add(rn)
+        if act.get('bucket') == 'create new content':
+            new_items.append({'actionId': act.get('id'), 'route': rt, 'slug': _route_slug(rt)})
+        else:
+            existing_routes.append(rt)
+
+    for brief in (plan.get('newPageBriefs') or []) + (plan.get('scopeBriefs') or []):
+        if not isinstance(brief, dict):
+            continue
+        for k in ('links', 'inboundLinks'):
+            lo = brief.get(k)
+            if isinstance(lo, dict):
+                for pl in (lo.get('inbound') or lo.get('placements') or []):
+                    if isinstance(pl, dict):
+                        src = str(pl.get('source') or '').split('#', 1)[0].split('?', 1)[0].strip()
+                        if src.startswith('/'):
+                            st = norm_fn(src)
+                            sn = _norm_route_path(st)
+                            if sn not in seen_norms:
+                                seen_norms.add(sn)
+                                existing_routes.append(st)
+
+    total_routes = [x['route'] for x in new_items] + existing_routes
+    needs_split = len(new_items) > max_new_pages or len(total_routes) > max_routes
+
+    batches = []
+    if not needs_split:
+        batches.append({
+            'batchIndex': 1,
+            'label': 'batch-1',
+            'actionIds': [x['actionId'] for x in new_items if x.get('actionId')],
+            'newPageRoutes': [x['route'] for x in new_items],
+            'existingRoutes': existing_routes,
+            'routes': total_routes,
+            'routeFlags': ' '.join(f'--route {r}' for r in total_routes),
+        })
+    else:
+        for i in range(0, max(1, len(new_items)), max_new_pages):
+            chunk = new_items[i:i + max_new_pages]
+            if not chunk and i > 0:
+                break
+            b_idx = len(batches) + 1
+            batches.append({
+                'batchIndex': b_idx,
+                'label': f'batch-{b_idx}',
+                'actionIds': [x['actionId'] for x in chunk if x.get('actionId')],
+                'newPageRoutes': [x['route'] for x in chunk],
+                'existingRoutes': [],
+                'routes': [x['route'] for x in chunk],
+                'routeFlags': '',
+            })
+        # Attach existing-page enrichment & inbound-link routes AFTER all new pages exist, respecting max_routes
+        rem_existing = list(existing_routes)
+        if rem_existing and batches:
+            avail_in_last = max(0, max_routes - len(batches[-1]['routes']))
+            if avail_in_last > 0:
+                take = rem_existing[:avail_in_last]
+                rem_existing = rem_existing[avail_in_last:]
+                batches[-1]['existingRoutes'].extend(take)
+                batches[-1]['routes'].extend(take)
+        while rem_existing:
+            take = rem_existing[:max_routes]
+            rem_existing = rem_existing[max_routes:]
+            b_idx = len(batches) + 1
+            batches.append({
+                'batchIndex': b_idx,
+                'label': f'batch-{b_idx}',
+                'actionIds': [],
+                'newPageRoutes': [],
+                'existingRoutes': take,
+                'routes': list(take),
+                'routeFlags': '',
+            })
+        for b in batches:
+            b['routeFlags'] = ' '.join(f'--route {r}' for r in b['routes'])
+
+    result = {
+        'status': 'PASS',
+        'jobId': plan.get('jobId'),
+        'subBatchingRecommended': len(batches) > 1,
+        'batchCount': len(batches),
+        'totalNewPages': len(new_items),
+        'totalRoutes': len(total_routes),
+        'disjointPartition': True,
+        'batches': batches,
+    }
+    if out:
+        dest = (root / out).resolve()
+        require(dest.is_relative_to(root), 'Batch plan output escapes repository: ' + str(out))
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(json.dumps(result, indent=2, ensure_ascii=False) + '\n')
+        result['out'] = str(dest.relative_to(root))
+    return result
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--root', default='.')
@@ -1662,10 +2358,57 @@ def main():
     q.add_argument('--basis', choices=['calculated', 'modeled', 'measured', 'reported', 'client-record'], default='reported')
     q.add_argument('--approved-by', default='human-operator')
     q.add_argument('--note', default='Approved at Phase 0 human gate')
+    q = s.add_parser('prepare-write-packets')
+    q.add_argument('--manifest', required=True)
+    q.add_argument('--out-dir', required=True)
+    q.add_argument('--evidence-dir')
+    q.add_argument('--voice-sample')
+    q.add_argument('--review')
+    q.add_argument('--overwrite', action='store_true')
+    q = s.add_parser('precheck-drafts')
+    q.add_argument('--manifest', required=True)
+    q.add_argument('--drafts-dir', required=True)
+    q.add_argument('--prompts-dir')
+    q.add_argument('--fix-pipe-tables', action='store_true')
+    q = s.add_parser('check-write-scope')
+    q.add_argument('--manifest', required=True)
+    q.add_argument('--prior-review')
+    q.add_argument('--fix', action='store_true')
+    q = s.add_parser('plan-batches')
+    q.add_argument('--manifest', required=True)
+    q.add_argument('--max-new-pages', type=int, default=3)
+    q.add_argument('--max-routes', type=int, default=8)
+    q.add_argument('--out')
     q = s.add_parser('hash')
     q.add_argument('--file', required=True)
     a = p.parse_args()
     root = Path(a.root).resolve()
+    if a.command == 'prepare-write-packets':
+        print(json.dumps(prepare_write_packets(
+            root, a.manifest, a.out_dir, evidence_dir=a.evidence_dir,
+            voice_sample=a.voice_sample, review_path=a.review, overwrite=a.overwrite,
+        ), indent=2))
+        return
+    if a.command == 'precheck-drafts':
+        res = precheck_drafts(
+            root, a.manifest, a.drafts_dir, prompts_dir=a.prompts_dir,
+            fix_pipe_tables=a.fix_pipe_tables,
+        )
+        print(json.dumps(res, indent=2))
+        if res['status'] != 'PASS':
+            sys.exit(1)
+        return
+    if a.command == 'check-write-scope':
+        res = check_write_scope(root, a.manifest, prior_review=a.prior_review, fix=a.fix)
+        print(json.dumps(res, indent=2))
+        if res['status'] != 'PASS':
+            sys.exit(1)
+        return
+    if a.command == 'plan-batches':
+        print(json.dumps(plan_batches(
+            root, a.manifest, max_new_pages=a.max_new_pages, max_routes=a.max_routes, out=a.out,
+        ), indent=2))
+        return
     if a.command == 'hash':
         path = local(root, a.file)
         print(json.dumps({'sha256': file_sha(path), 'canonicalJsonSha256': digest(read(path))}))

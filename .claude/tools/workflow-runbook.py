@@ -128,7 +128,8 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
             '4b. MAIN Automatic Mechanical Rebind / Round-2 (2 of 2) Carry-Forward (NEVER ask human permission for mechanical fixes or block at 2-of-2 chart review unless liabilityBlock or exact duplicate collision): '
             'python3 .claude/tools/mindmap-gates.py rebind-mechanical --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json --out <CHART_PATH> '
             '&& python3 .claude/tools/mindmap-gates.py validate-chart --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json',
-            '5. MAIN dispatcher 1-command WRITE handoff seal (after full chart PASS & authorization): '
+            '5. MAIN sub-batch planner (>3 new pages or >8 routes -> disjoint 2-3 page WRITE/AUDIT sub-batches) & 1-command WRITE handoff seal: '
+            'python3 .claude/tools/mindmap-gates.py plan-batches --manifest <RUN_DIR>/approval-manifest.json --out <RUN_DIR>/batch-plan.json && '
             + (
                 'python3 .claude/tools/workflow-handoff.py auto-seal --phase write --manifest <RUN_DIR>/approval-manifest.json --producer <BUILDER_ACTOR> --out <RUN_DIR>/handoff-write.json --pack-out <RUN_DIR>/packet-write.json'
                 if is_local
@@ -158,14 +159,17 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
                 'npx tsx scripts/reader-surveys/research.mts catalog && npx tsx scripts/reader-surveys/research.mts facts --slug <SURVEY_SLUG>'
             )
         lines.append(
-            '3c. Personalized analysis packet & writer flags (_decision-evidence.md + _mindmap-execution.md + _testing-labels.md): '
-            'populate <RUN_DIR>/evidence/<slug>/evidence.json (calculated|modeled execution + visible assumptions + counterexample, measured runs:[{testedAt}] for (Tested YYYY) eligibility, or reported|client-record + caseUses), include provenance + visible first-party internal-testing/modeling-assumptions/client/survey attribution + intent Our Takeaway in <slug>.prompt.md, and pass --mindmap-manifest <RUN_DIR>/approval-manifest.json --mindmap-review <RUN_DIR>/chart-review.json --analysis-packet <RUN_DIR>/evidence/<slug>/evidence.json to content_gen.py.'
+            '3c. Personalized analysis packet, 1-command prompt/allowed-URL packet builder & pre-splice draft precheck (_decision-evidence.md + _mindmap-execution.md + _testing-labels.md): '
+            'populate <RUN_DIR>/evidence/<slug>/evidence.json (calculated|modeled execution + visible assumptions + counterexample, measured runs:[{testedAt}] for (Tested YYYY) eligibility, or reported|client-record + caseUses), '
+            'run `python3 .claude/tools/mindmap-gates.py prepare-write-packets --manifest <RUN_DIR>/approval-manifest.json --evidence-dir <RUN_DIR>/evidence --out-dir <RUN_DIR>/prompts` (emits reusable `system.md`, `<slug>.prompt.md`, and `<slug>.allowed-urls.txt` in 1 command), '
+            'invoke parallel `content_gen.py` calls (`--system-file <RUN_DIR>/prompts/system.md --prompt-file <RUN_DIR>/prompts/<slug>.prompt.md --allowed-urls-file <RUN_DIR>/prompts/<slug>.allowed-urls.txt --mindmap-manifest <RUN_DIR>/approval-manifest.json --mindmap-review <RUN_DIR>/chart-review.json --analysis-packet <RUN_DIR>/evidence/<slug>/evidence.json`), '
+            'and run `python3 .claude/tools/mindmap-gates.py precheck-drafts --manifest <RUN_DIR>/approval-manifest.json --drafts-dir <RUN_DIR>/drafts --prompts-dir <RUN_DIR>/prompts --fix-pipe-tables && python3 .claude/tools/mindmap-gates.py check-write-scope --manifest <RUN_DIR>/approval-manifest.json` BEFORE splicing/building.'
         )
         if lint_cmd:
             lines.append(f'4. Content lint (single batch pass): {lint_cmd}')
         if has_fresh_preview:
             lines.append(
-                f'5. Build & capture rendered preview in 1 command (auto-generates render manifest with exact rendered canonicalBase & checks --out immutability BEFORE building; pass --reuse-build if only capture-manifest metadata changed): '
+                f'5. Build & capture rendered preview in 1 command (auto-verifies write scope & generates render manifest; on Round 2+ rework add `--only-rework-from <PRIOR_REVIEW_JSON>` so ONLY rework-eligible FAIL routes are captured & re-audited): '
                 f'python3 .claude/tools/fresh-preview.local.py --auto-manifest <RUN_DIR>/approval-manifest.json --author {actor} --manifest <RUN_DIR>/audit/capture-manifest.json --run-id {run_id} --out <RUN_DIR>/audit/preview-snapshot.json'
             )
             lines.append(
@@ -174,7 +178,7 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
             )
         else:
             lines.append(
-                f'5. Build & capture rendered preview in 1 command (auto-generates capture-manifest.json, handles Node/Astro/WSGI, starts & stops preview): '
+                f'5. Build & capture rendered preview in 1 command (auto-verifies write scope, generates capture-manifest.json, handles Node/Astro/WSGI, starts & stops preview; on Round 2+ rework add `--only-rework-from <PRIOR_REVIEW_JSON>` to capture ONLY rework-eligible FAIL routes): '
                 f'python3 .claude/tools/rendered-audit.py capture-local --auto-manifest <RUN_DIR>/approval-manifest.json --author {actor} --manifest <RUN_DIR>/audit/capture-manifest.json --run-id {run_id} --out <RUN_DIR>/audit/preview-snapshot.json --build'
             )
             lines.append(
@@ -230,10 +234,8 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
             'python3 .claude/tools/verify-live-urls.py --manifest <CAPTURE_MANIFEST> --timeout 180 --out <RUN_DIR>/audit/live-urls.json',
             f'4. Host commit provenance (1 foreground call): '
             f'python3 {dep_tool} --expected-commit <FULL_40_CHAR_SHA> --out <RUN_DIR>/audit/host-proof.json',
-            '5. Live capture, compare & journal close: '
-            'python3 .claude/tools/rendered-audit.py capture --manifest <CAPTURE_MANIFEST> --base-url ' + canonical_base + ' --out <RUN_DIR>/audit/live-snapshot.json '
-            '&& python3 .claude/tools/rendered-audit.py compare --approved <APPROVED_SNAPSHOT> --live <RUN_DIR>/audit/live-snapshot.json --review <APPROVED_REVIEW> '
-            '&& python3 .claude/tools/rendered-audit.py record-deployment --snapshot <LIVE_SNAPSHOT> --approved <APPROVED_SNAPSHOT> --review <APPROVED_REVIEW> --commit <FULL_SHA> --deployment-evidence <RUN_DIR>/audit/host-proof.json --ledger <RUN_DIR>/audit/deployment-ledger.json',
+            '5. Live capture, compare & journal close (supports both single-pair handoffs and multi-pair `reviewPairs` from Round-2 pass-locking or sub-batching in 1 command): '
+            'python3 .claude/tools/rendered-audit.py record-pairs --handoff <PUBLISH_HANDOFF_JSON> --base-url ' + canonical_base + ' --out-dir <RUN_DIR>/audit/live --commit <FULL_SHA> --deployment-evidence <RUN_DIR>/audit/host-proof.json --ledger <RUN_DIR>/audit/deployment-ledger.json',
         ])
     lines.append('=== END STAGE CLI RUNBOOK ===')
     return '\n'.join(lines)

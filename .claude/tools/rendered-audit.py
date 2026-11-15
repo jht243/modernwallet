@@ -908,8 +908,63 @@ def detect_rendered_canonical_base(root):
     return None
 
 
+def _filter_rework_routes(root, routes_list, only_rework_from, canonical_base):
+    if not only_rework_from:
+        return routes_list
+    rev_path = Path(only_rework_from)
+    if not rev_path.is_absolute():
+        rev_path = (root / rev_path).resolve()
+    rev = read(rev_path)
+    policy = content_review_policy()
+    rework_norms = set()
+    for r_item in (rev.get('routes') or []):
+        if not isinstance(r_item, dict) or r_item.get('verdict') != 'FAIL':
+            continue
+        r_raw = str(r_item.get('path') or '').strip()
+        if not r_raw.startswith('/'):
+            continue
+        r_norm = r_raw.rstrip('/') or '/'
+        exhausted = False
+        if policy is not None:
+            try:
+                with policy.Journal(root, canonical_base, r_norm) as journal:
+                    cyc = journal.cycle
+                if cyc is not None:
+                    last_r = policy.last_authoritative_round(cyc)
+                    max_r = cyc.get('maximumRounds', policy.audit_limit(policy.policy(root), cyc['profile'], cyc.get('lastRiskAssessment')))
+                    used_r = last_r.get('number', len(cyc.get('rounds', [])))
+                    if last_r.get('status') == 'complete' and used_r >= max_r:
+                        exhausted = True
+            except Exception:
+                exhausted = False
+        if not exhausted:
+            rework_norms.add(r_norm)
+    filtered = [r for r in routes_list if (r.rstrip('/') or '/') in rework_norms]
+    require(bool(filtered), 'No rework-eligible FAIL routes (roundsRemaining > 0) found in ' + str(only_rework_from))
+    return filtered
+
+
+def _enforce_write_scope(root, approval_manifest_path, prior_review=None):
+    gates_path = Path(__file__).with_name('mindmap-gates.py')
+    if not gates_path.is_file():
+        return
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('rendered_scope_guard', gates_path)
+    gates = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(gates)
+    if hasattr(gates, 'check_write_scope'):
+        rel_man = str(Path(approval_manifest_path).resolve().relative_to(root.resolve())) if Path(approval_manifest_path).resolve().is_relative_to(root.resolve()) else str(approval_manifest_path)
+        rel_rev = None
+        if prior_review:
+            pr = Path(prior_review).resolve()
+            rel_rev = str(pr.relative_to(root.resolve())) if pr.is_relative_to(root.resolve()) else str(prior_review)
+        res = gates.check_write_scope(root, rel_man, prior_review=rel_rev, fix=False)
+        require(res.get('status') == 'PASS', 'Out-of-scope write modifications detected before capture: ' + json.dumps(res.get('violations') or []))
+
+
 def init_manifest(approval_manifest_path, author, out_path, root=None, explicit_routes=(),
-                  claim_categories=('ordinary',), canonical_base=None, volatile_ads=None, volatile_regions=()):
+                  claim_categories=('ordinary',), canonical_base=None, volatile_ads=None, volatile_regions=(),
+                  only_rework_from=None):
     """Generate a validated capture-manifest.json directly from approval-manifest.json in 1 command."""
     root = Path(root or Path(__file__).resolve().parents[2]).resolve()
     require(not Path(out_path).exists(), 'Capture manifest output already exists; choose a new path: ' + str(out_path))
@@ -956,6 +1011,8 @@ def init_manifest(approval_manifest_path, author, out_path, root=None, explicit_
                                 if clean_src:
                                     routes_list.append(clean_src)
         routes_list = [normalize_site_route(root, r) for r in routes_list]
+    if only_rework_from:
+        routes_list = _filter_rework_routes(root, routes_list, only_rework_from, resolved_base.rstrip('/'))
     deduped = list(dict.fromkeys(routes_list))
     require(bool(deduped), 'No route paths starting with "/" found in approval-manifest.json; pass --route /actual-route')
 
@@ -983,15 +1040,19 @@ def init_manifest(approval_manifest_path, author, out_path, root=None, explicit_
 
 
 def capture_local(manifest_path, run_id, out, dom_dir=None, build=False, root=None,
-                  auto_manifest=None, author=None, explicit_routes=(), claim_categories=('ordinary',)):
+                  auto_manifest=None, author=None, explicit_routes=(), claim_categories=('ordinary',),
+                  only_rework_from=None, skip_scope_check=False):
     """One-shot build (optional) + owned loopback preview + complete capture + stop."""
     import importlib.util
     root = Path(root or Path(__file__).resolve().parents[2]).resolve()
+    if auto_manifest and not skip_scope_check:
+        _enforce_write_scope(root, auto_manifest, prior_review=only_rework_from)
     if auto_manifest and not Path(manifest_path).exists():
         require(bool(author), 'Pass --author <WRITER_ACTOR> when using --auto-manifest')
         init_manifest(
             auto_manifest, author, manifest_path, root=root,
             explicit_routes=explicit_routes, claim_categories=claim_categories,
+            only_rework_from=only_rework_from,
         )
     manifest = read(manifest_path)
     validate_manifest(manifest)
@@ -1031,24 +1092,60 @@ def capture_local(manifest_path, run_id, out, dom_dir=None, build=False, root=No
     return snap
 
 
+def record_pairs(handoff_path, base_url, out_dir, commit, deployment_evidence_path, ledger_path, root=None):
+    """Capture live, compare, and record deployment across single-pair OR multi-pair (reviewPairs) handoffs in 1 command."""
+    root = Path(root or Path(__file__).resolve().parents[2]).resolve()
+    h = read(handoff_path)
+    host = read(deployment_evidence_path)
+    out_base = Path(out_dir)
+    out_base.mkdir(parents=True, exist_ok=True)
+    raw_pairs = h.get('reviewPairs') or [{'snapshot': h['snapshot'], 'review': h['review']}]
+    total = 0
+    results = []
+    for idx, pair in enumerate(raw_pairs, 1):
+        s_ref = pair['snapshot']
+        r_ref = pair['review']
+        s_path = (root / s_ref['path']).resolve() if isinstance(s_ref, dict) else Path(s_ref).resolve()
+        r_path = (root / r_ref['path']).resolve() if isinstance(r_ref, dict) else Path(r_ref).resolve()
+        approved = read(s_path)
+        rev = read(r_path)
+        live_out = out_base / f'live-snapshot-pair-{idx}.json'
+        if live_out.exists() or live_out.with_suffix('').exists():
+            live_out = out_base / f'live-snapshot-pair-{idx}-{int(dt.datetime.now().timestamp())}.json'
+        live_snap = capture(approved['manifest'], base_url or h['canonicalBase'], str(live_out), approved.get('domDir'))
+        valid_snapshot(live_snap)
+        n = record(live_snap, approved, rev, commit, host, ledger_path)
+        total += n
+        results.append({
+            'pairIndex': idx,
+            'routes': [r['path'] for r in approved['routes']],
+            'liveSnapshot': str(live_out),
+            'recorded': n,
+        })
+    return {'status': 'PASS', 'pairsVerified': len(results), 'recordsAppended': total, 'pairs': results}
+
+
 def main(argv=None):
     parser=argparse.ArgumentParser(); sub=parser.add_subparsers(dest='command',required=True)
-    p=sub.add_parser('init-manifest'); p.add_argument('--approval-manifest',required=True); p.add_argument('--author',required=True); p.add_argument('--out',required=True); p.add_argument('--route',action='append',default=[]); p.add_argument('--claim-category',action='append',default=[]); p.add_argument('--canonical-base'); p.add_argument('--volatile-ads'); p.add_argument('--volatile-region',action='append',default=[],help='Opt every route into a known first-party rolling-feed region, e.g. latest-briefings')
+    p=sub.add_parser('init-manifest'); p.add_argument('--approval-manifest',required=True); p.add_argument('--author',required=True); p.add_argument('--out',required=True); p.add_argument('--route',action='append',default=[]); p.add_argument('--claim-category',action='append',default=[]); p.add_argument('--canonical-base'); p.add_argument('--volatile-ads'); p.add_argument('--volatile-region',action='append',default=[],help='Opt every route into a known first-party rolling-feed region, e.g. latest-briefings'); p.add_argument('--only-rework-from',help='Prior review JSON path to emit ONLY rework-eligible FAIL routes')
     p=sub.add_parser('capture'); p.add_argument('--manifest',required=True); p.add_argument('--base-url',required=True); p.add_argument('--out',required=True); p.add_argument('--dom-dir',help='Existing hydrated DOM input by route; not an output directory. Omit for complete server-rendered HTTP HTML.')
-    p=sub.add_parser('capture-local'); p.add_argument('--manifest',required=True); p.add_argument('--run-id',required=True); p.add_argument('--out',required=True); p.add_argument('--dom-dir'); p.add_argument('--build',action='store_true'); p.add_argument('--auto-manifest',help='Optional approval-manifest.json to auto-generate --manifest'); p.add_argument('--author',help='Writer actor identity when using --auto-manifest'); p.add_argument('--route',action='append',default=[]); p.add_argument('--claim-category',action='append',default=[])
+    p=sub.add_parser('capture-local'); p.add_argument('--manifest',required=True); p.add_argument('--run-id',required=True); p.add_argument('--out',required=True); p.add_argument('--dom-dir'); p.add_argument('--build',action='store_true'); p.add_argument('--auto-manifest',help='Optional approval-manifest.json to auto-generate --manifest'); p.add_argument('--author',help='Writer actor identity when using --auto-manifest'); p.add_argument('--route',action='append',default=[]); p.add_argument('--claim-category',action='append',default=[]); p.add_argument('--only-rework-from',help='Prior review JSON path to capture ONLY rework-eligible FAIL routes'); p.add_argument('--skip-scope-check',action='store_true')
     p=sub.add_parser('inspect-pack'); p.add_argument('--snapshot',required=True); p.add_argument('--route',action='append',default=[]); p.add_argument('--out')
     p=sub.add_parser('check'); p.add_argument('--snapshot',required=True); p.add_argument('--review',required=True); p.add_argument('--recapture',action='store_true'); p.add_argument('--base-url')
     p=sub.add_parser('compare'); p.add_argument('--approved',required=True); p.add_argument('--live',required=True); p.add_argument('--review',required=True)
     p=sub.add_parser('record-deployment')
     for name in ['snapshot','approved','review','commit','deployment-evidence','ledger']: p.add_argument('--'+name,required=True)
+    p=sub.add_parser('record-pairs')
+    for name in ['handoff','out-dir','commit','deployment-evidence','ledger']: p.add_argument('--'+name,required=True)
+    p.add_argument('--base-url')
     a=parser.parse_args(argv)
     if a.command=='init-manifest':
-        m=init_manifest(a.approval_manifest,a.author,a.out,explicit_routes=a.route,claim_categories=a.claim_category or ['ordinary'],canonical_base=a.canonical_base,volatile_ads=a.volatile_ads,volatile_regions=a.volatile_region)
+        m=init_manifest(a.approval_manifest,a.author,a.out,explicit_routes=a.route,claim_categories=a.claim_category or ['ordinary'],canonical_base=a.canonical_base,volatile_ads=a.volatile_ads,volatile_regions=a.volatile_region,only_rework_from=a.only_rework_from)
         print(json.dumps({'status':'manifest-initialized','out':a.out,'routes':[r['path'] for r in m['routes']],'canonicalBase':m['canonicalBase']}))
     elif a.command=='capture':
         s=capture(read(a.manifest),a.base_url,a.out,a.dom_dir); valid_snapshot(s); print(f"Captured {len(s['routes'])} complete routes")
     elif a.command=='capture-local':
-        s=capture_local(a.manifest,a.run_id,a.out,a.dom_dir,a.build,auto_manifest=a.auto_manifest,author=a.author,explicit_routes=a.route,claim_categories=a.claim_category or ['ordinary'])
+        s=capture_local(a.manifest,a.run_id,a.out,a.dom_dir,a.build,auto_manifest=a.auto_manifest,author=a.author,explicit_routes=a.route,claim_categories=a.claim_category or ['ordinary'],only_rework_from=a.only_rework_from,skip_scope_check=a.skip_scope_check)
         print(json.dumps({'status':'captured','routes':len(s['routes']),'snapshot':a.out,'snapshotSha256':s['snapshotSha256']}))
     elif a.command=='inspect-pack':
         pack=inspect_pack(read(a.snapshot),a.route)
@@ -1079,6 +1176,8 @@ def main(argv=None):
             archive.save_checked_pair(Path(__file__).resolve().parents[2],Path(a.snapshot),Path(a.review),fresh=a.recapture)
         print('Rendered review evidence verified')
     elif a.command=='compare': compare(read(a.approved),read(a.live),read(a.review)); print('Live render matches approved render')
+    elif a.command=='record-pairs':
+        print(json.dumps(record_pairs(a.handoff,a.base_url,a.out_dir,a.commit,a.deployment_evidence,a.ledger),indent=2))
     else: print('Deployment records:',record(read(a.snapshot),read(a.approved),read(a.review),a.commit,read(a.deployment_evidence),a.ledger))
 if __name__=='__main__':
     try: main()
