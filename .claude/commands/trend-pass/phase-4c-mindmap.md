@@ -17,15 +17,7 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 <!-- /workflow-checkpoints-v1 -->
 
 
-> **‼️ LANE C IS THE PASS — NEVER SKIP OR SHORTEN IT (owner rule 2026-10-07).** **NEVER run a "condensed" Lane C, skip spawning `BUILD / CHART-REVIEW / WRITE / AUDIT` stage workers when any uncovered query or candidate exists, or mark a gap `HELD` because the full pipeline was not run this session** (`HELD` is strictly for an external primary source returning 403/unreachable after attempting to fetch it — including public statute mirrors such as `ecfr.gov` and `law.cornell.edu/cfr` — never for skipping stage workers). Lanes A and B only
-> feed Lane C; without Lane C this routine does nothing. Phase 4c runs on EVERY run, in full:
-> mindmap's complete `phase-build-brief.md` (all lenses, keyword demand ladder, Autocomplete, SERP
-> reads, adversarial duplicate-suppression reviewer) on the top-10 queries plus the research pack.
-> An empty research pack, an already-caught trend, "all top-20 queries covered", or low clicks are
-> NEVER reasons to skip Phase 4c, run a "reduced" BUILD-BRIEF, or replace it with your own
-> classification of the queries. A run that does not save a full BUILD-BRIEF chart at
-> `reports/mindmap-pass/<date>-trend-lane-c.md` is a FAILED run (`--status failure`), even if it
-> builds nothing.
+> **‼️ LANE C IS THE PASS — NEVER SKIP OR SHORTEN IT WHEN ANY DISCOVERY LANE FINDS AN OPPORTUNITY (owner rule 2026-10-07, updated 2026-11-15 with Wide-View gate).** **NEVER run a "condensed" Lane C, skip spawning `BUILD / CHART-REVIEW / WRITE / AUDIT` stage workers when any uncovered query, trend gap, or wide-view opportunity exists, or mark a gap `HELD` because the full pipeline was not run this session** (`HELD` is strictly for an external primary source returning 403/unreachable after attempting to fetch it — including public statute mirrors such as `ecfr.gov` and `law.cornell.edu/cfr` — never for skipping stage workers). Before entering Phase 4c, `MAIN` runs `python3 .claude/tools/routine-fast-exit.py trend-research-pack --research-md reports/trend-pass/<YYYY-MM-DD>.research.md --pull-json reports/trend-pass/<YYYY-MM-DD>.pull.json --site <BASE_URL> --send-email`: Phase 4c is skipped **ONLY** when Trend == `0` **AND** Top-20 Query Check == `0` **AND** Wide View (`Rising & spillover` + `Sideways formula`) == `0`. Whenever **ANY** of those three lanes surfaces `>= 1` opportunity (including Wide View alone when Trend = NO and Top-20 = NO), Phase 4c runs **100% in full** (`phase-build-brief.md` + stage workers, saving `reports/mindmap-pass/<date>-trend-lane-c.md`).
 
 
 **Owner design (layer3 2026-10-05, ported here 2026-10-06):** Lanes A and B research; mindmap builds. Every run, mindmap gets the top-10 queries (7-day window) plus the research pack from Phase 4 as its brief, and decides what ships. It runs even when the research pack is empty.
@@ -62,7 +54,7 @@ Interpreted-brief line: *"Our 10 top-clicking Google queries for the 7 days endi
 
 ## 2. Build the chart (mindmap BUILD-BRIEF, autonomous)
 
-As soon as the research pack is available, dispatch the native BUILD worker on the complete top-10 scope, even when both research lanes found zero new topics. Reuse this run’s full chart if already saved. A partial delta or a missing chart resumes BUILD from the saved pack before final reporting. The dispatcher owns the independent chart review.
+As soon as the research pack passes `routine-fast-exit.py trend-research-pack` with `"fastExit": false` (`>= 1` opportunity in Trend, Top-20 Query Check, or Wide View), dispatch the native BUILD worker on the complete top-10 + research-pack scope. Reuse this run’s full chart if already saved. A partial delta or a missing chart resumes BUILD from the saved pack before final reporting. The dispatcher owns the independent chart review.
 Read `.claude/commands/mindmap-pass/phase-0-discover.md` for its site-fact discovery and chart parsing only (content store = the `src/data/*.ts` registries; business name "The Modern Wallet"). **Its manifest gate is skipped** — the run is autonomous.
 
 Read and follow `.claude/commands/mindmap-pass/phase-build-brief.md` with the brief above, with these overrides:

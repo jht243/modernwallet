@@ -17,9 +17,12 @@ Prints a JSON header line ({"url", "method", "status", "chars", ...}) then the p
 but 0 lines matched --grep). Exit 0 = readable page text found, 1 = unreadable.
 """
 import argparse
+import datetime as dt
+import hashlib
 import html
 import json
 import os
+from pathlib import Path
 import re
 import shutil
 import ssl
@@ -237,7 +240,45 @@ def browser(url):
     return status, text
 
 
-def fetch_readable(url):
+def _cache_file_for_url(url, cache_dir=None):
+    base = cache_dir or os.environ.get('ALT_FETCH_CACHE_DIR', '').strip()
+    if not base:
+        today_utc = dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d')
+        base = f'/tmp/alternatives-fetch-cache-{today_utc}'
+    key = hashlib.sha256(url.strip().encode('utf-8')).hexdigest()
+    return Path(base) / f'{key}.json'
+
+
+def _is_cacheable_result(res):
+    if res.get('anti_bot_gate'):
+        return True
+    raw_text = (res.get('raw_text') or '').strip()
+    status = int(res.get('status') or 0)
+    js_shell_unrendered = (
+        0 < status < 400
+        and res.get('method') == 'plain'
+        and len(raw_text) < MIN_READABLE_CHARS
+    )
+    return bool(raw_text) and not js_shell_unrendered and 0 < status < 400
+
+
+def fetch_readable(url, use_cache=True, cache_dir=None):
+    cache_file = _cache_file_for_url(url, cache_dir=cache_dir) if use_cache else None
+    if cache_file is not None and cache_file.is_file():
+        try:
+            cached_doc = json.loads(cache_file.read_text(encoding='utf-8'))
+            if isinstance(cached_doc, dict) and 'raw_text' in cached_doc and _is_cacheable_result(cached_doc):
+                return {
+                    'method': cached_doc.get('method', 'plain'),
+                    'status': int(cached_doc.get('status') or 0),
+                    'raw_text': cached_doc.get('raw_text', ''),
+                    'errors': list(cached_doc.get('errors') or []),
+                    'anti_bot_gate': bool(cached_doc.get('anti_bot_gate')),
+                    'cached': True,
+                }
+        except Exception:
+            pass
+
     method, status, raw_text, errors = 'plain', 0, '', []
     bot_gated = False
     try:
@@ -260,13 +301,31 @@ def fetch_readable(url):
                 method = 'browser'
         except Exception as e:
             errors.append('browser: %s' % e)
-    return {
+    res = {
         'method': method,
         'status': status,
         'raw_text': raw_text,
         'errors': errors,
         'anti_bot_gate': bot_gated,
+        'cached': False,
     }
+    if cache_file is not None and _is_cacheable_result(res):
+        try:
+            cache_file.parent.mkdir(parents=True, exist_ok=True)
+            tmp_path = cache_file.with_suffix(f'.{os.getpid()}.tmp')
+            tmp_path.write_text(json.dumps({
+                'url': url,
+                'fetchedAt': dt.datetime.now(dt.timezone.utc).isoformat(),
+                'method': method,
+                'status': status,
+                'raw_text': raw_text,
+                'errors': errors,
+                'anti_bot_gate': bot_gated,
+            }, ensure_ascii=False), encoding='utf-8')
+            tmp_path.replace(cache_file)
+        except Exception:
+            pass
+    return res
 
 
 def main():
@@ -274,9 +333,10 @@ def main():
     ap.add_argument('url')
     ap.add_argument('--grep', action='append', default=[], help='only print lines containing this (case-insensitive)')
     ap.add_argument('--max', type=int, default=20000)
+    ap.add_argument('--no-cache', action='store_true', help='bypass same-day URL disk cache')
     a = ap.parse_args()
 
-    res = fetch_readable(a.url)
+    res = fetch_readable(a.url, use_cache=not a.no_cache)
     raw_text = res['raw_text']
     status = res['status']
     bot_gated = res['anti_bot_gate']
@@ -307,6 +367,8 @@ def main():
         'chars': len(raw_text),
         'errors': res['errors'],
     }
+    if res.get('cached'):
+        header['cached'] = True
     if bot_gated:
         header['anti_bot_gate'] = True
     if js_shell_unrendered:

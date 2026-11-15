@@ -57,7 +57,13 @@ If any check fails, **skip the run** and email a failure report explaining why. 
 
 ## Execution — Inspection Sweep FIRST (load content contracts ONLY if prose/model-family creation runs)
 
-> **Fast-Exit Order:** Run STEP 1 (`phase-build-report.md`) + Phase 0 manifest assembly **before** reading `_decision-evidence.md`, `_testing-labels.md`, `_content-standard.md`, or running `workflow-preflight.py`. If `0` actionable rows exist, send `--status no-changes` and exit 0 immediately.
+> **Turn-1 Sweep Fast-Exit Order (2026-11-15):** Before reading `phase-build-report.md`, `phase-0..9`, `_decision-evidence.md`, `_testing-labels.md`, `_content-standard.md`, or running `workflow-preflight.py`, run the GSC URL Inspection sweep directly to `reports/indexing-pass/<TODAY>.inspection.json` (`GOOGLE_REPORTING_SA_JSON="..." python3 .claude/tools/indexing-issues-gsc-pass/gsc_url_inspection.py --base-url "<BASE_URL>" --out reports/indexing-pass/<TODAY>.inspection.json`, unless `$ARGUMENTS` or `reports/indexing-pass/<TODAY>.md` already exists), then immediately run:
+> ```bash
+> python3 .claude/tools/routine-fast-exit.py indexing-sweep \
+>   --inspection-json reports/indexing-pass/<TODAY>.inspection.json \
+>   --site "<BASE_URL>" --send-email
+> ```
+> When `"fastExit": true` (0 technical/canonical/thin-content/unlinked defects — every non-indexed URL is either `working as intended`, `already-fixed` in the last 30 commits, or an uncrawled `Discovered`/`Unknown` URL already in `public/sitemap*.xml` with `>= 2` internal links awaiting Googlebot crawl), `/tmp/indexing-pass-auto-<TODAY>.md` (including `## Live verification`) and the `--status no-changes` email are already sent — **exit 0 immediately**! Only when `"fastExit": false` (`>= 1` actionable defect or unlinked orphan URL), proceed through STEP 1 and Phases 0 → 9 below.
 
 Run by reading each phase file in order:
 

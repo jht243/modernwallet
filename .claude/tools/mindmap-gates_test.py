@@ -1018,6 +1018,106 @@ class Gates(unittest.TestCase):
         self.assertEqual(len(seen), len(set(seen)))
         self.assertEqual(set(seen), {'/guides/new-1', '/guides/new-2', '/guides/new-3', '/guides/new-4', '/guides/new-5', '/guides/hub-a', '/guides/hub-b'})
 
+    def test_prune_failed_routes_quarantines_only_failed_page_and_preserves_valid_chart_for_survivors(self):
+        shutil.copyfile(Path(__file__).with_name('quarantine.py'), self.root / '.claude/tools/quarantine.py')
+        subprocess.run(['git', 'init', '-q'], cwd=self.root, check=True)
+        subprocess.run(['git', 'config', 'user.email', 'test@example.com'], cwd=self.root, check=True)
+        subprocess.run(['git', 'config', 'user.name', 'Test'], cwd=self.root, check=True)
+        (self.root / 'src/content/guides').mkdir(parents=True, exist_ok=True)
+        (self.root / 'public').mkdir(parents=True, exist_ok=True)
+        (self.root / 'src/content/guides/existing.md').write_text('# Existing\n')
+        (self.root / 'public/sitemap.xml').write_text('<urlset>\n  <url><loc>https://fixture.invalid/existing</loc></url>\n</urlset>\n')
+        subprocess.run(['git', 'add', '.'], cwd=self.root, check=True)
+        subprocess.run(['git', 'commit', '-qm', 'init'], cwd=self.root, check=True)
+
+        # Build a 2-page manifest (A1=/guides/fixture PASS, A2=/guides/bad-page FAIL, L2=inbound link for A2)
+        row2 = copy.deepcopy(self.row)
+        row2.update(id='A2', target='/guides/bad-page', reader_question='Which bad option fails?')
+        brief2 = copy.deepcopy(self.brief)
+        brief2.update(
+            actionId='A2',
+            target='/guides/bad-page',
+            readerAndAnswer={'question': row2['reader_question'], 'answer': row2['answer'], 'placement': row2['answer_placement']},
+            inboundLinks={'required': 1, 'placements': [self.link('/existing', '/guides/bad-page')]},
+            outboundLinks={'placements': [self.link('/guides/bad-page', '/existing')]},
+        )
+        link_row = {k: 'n/a' for k in g.COLUMNS}
+        link_row.update(id='L2', problem='Add inbound link to /guides/bad-page', solution='Link from /existing to /guides/bad-page', bucket='add internal links', target='/existing')
+
+        self.plan['actions'].extend([row2, link_row])
+        self.plan['newPageBriefs'].append(brief2)
+        self.plan['request']['requirements'].append({
+            'id': 'R2',
+            'description': 'Cover bad-page comparison',
+            'acceptance': 'Reader sees bad-page breakdown',
+            'actionIds': ['A2', 'L2'],
+        })
+        self.bind_plan()
+        g.chart(self.root, self.plan, self.review())
+
+        # Simulate drafted files for both A1 (surviving) and A2 (failed)
+        (self.root / 'src/content/guides/fixture.md').write_text('# Passing Page\n')
+        (self.root / 'src/content/guides/bad-page.md').write_text('# Failing Page\n')
+        (self.root / 'public/sitemap.xml').write_text(
+            '<urlset>\n'
+            '  <url><loc>https://fixture.invalid/existing</loc></url>\n'
+            '  <url><loc>https://fixture.invalid/guides/fixture</loc></url>\n'
+            '  <url><loc>https://fixture.invalid/guides/bad-page</loc></url>\n'
+            '</urlset>\n'
+        )
+        snap = {
+            'manifest': {'author': 'fixture-worker', 'canonicalBase': 'https://fixture.invalid', 'routes': [{'path': '/guides/fixture'}, {'path': '/guides/bad-page'}]},
+            'routes': [{'path': '/guides/fixture', 'fingerprint': 'fp1'}, {'path': '/guides/bad-page', 'fingerprint': 'fp2'}],
+        }
+        snap['snapshotSha256'] = g.digest(snap)
+        r_rev = {
+            'reviewer': 'fixture-independent',
+            'snapshotSha256': snap['snapshotSha256'],
+            'routes': [
+                {'path': '/guides/fixture', 'verdict': 'PASS', 'fingerprint': 'fp1'},
+                {'path': '/guides/bad-page', 'verdict': 'FAIL', 'fingerprint': 'fp2'},
+            ],
+        }
+        (self.root / 'multi-snap.json').write_text(json.dumps(snap))
+        (self.root / 'multi-rev.json').write_text(json.dumps(r_rev))
+
+        pruned = g.prune_failed_routes(
+            self.root,
+            manifest_path='plan.json',
+            review_path='review.json',
+            failed_routes=['/guides/bad-page'],
+            reason='Final audit hard blocker on /guides/bad-page',
+            skill='comparison-content-auto',
+            snapshot_path='multi-snap.json',
+            audit_review_path='multi-rev.json',
+        )
+        self.assertEqual(pruned['status'], 'PASS')
+        self.assertEqual(pruned['prunedRoutes'], ['/guides/bad-page'])
+        self.assertEqual(pruned['survivingSubstantiveRoutes'], ['/guides/fixture'])
+        self.assertFalse((self.root / 'src/content/guides/bad-page.md').exists())
+        self.assertTrue((self.root / 'src/content/guides/fixture.md').exists())
+        self.assertNotIn('bad-page', (self.root / 'public/sitemap.xml').read_text())
+        self.assertIn('/guides/fixture', (self.root / 'public/sitemap.xml').read_text())
+
+        # Pruned manifest + review + chart still pass full validate-chart!
+        saved_plan = g.read(self.root / 'plan.json')
+        saved_rev = g.read(self.root / 'review.json')
+        g.chart(self.root, saved_plan, saved_rev)
+        g.saved_chart(self.root, saved_plan)
+
+        # Projected snapshot + review contain ONLY the passing page
+        proj_snap = g.read(self.root / pruned['projectedAuditPair']['snapshot'])
+        proj_rev = g.read(self.root / pruned['projectedAuditPair']['review'])
+        self.assertEqual([r['path'] for r in proj_snap['routes']], ['/guides/fixture'])
+        self.assertEqual([r['path'] for r in proj_rev['routes']], ['/guides/fixture'])
+
+        # And quarantine ticket was recorded ONLY for bad-page
+        q_spec = importlib.util.spec_from_file_location('qm', self.root / '.claude/tools/quarantine.py')
+        qm = importlib.util.module_from_spec(q_spec)
+        q_spec.loader.exec_module(qm)
+        self.assertTrue(qm.is_quarantined(self.root, 'comparison-content-auto', item_id='bad-page', route='/guides/bad-page'))
+        self.assertFalse(qm.is_quarantined(self.root, 'comparison-content-auto', item_id='fixture', route='/guides/fixture'))
+
 
 if __name__ == '__main__':
     unittest.main()

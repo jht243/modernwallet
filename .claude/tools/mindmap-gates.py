@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Structural/evidence checks, not a substitute for independent editorial judgment."""
 import argparse
+import copy
 import hashlib
 import importlib.util
 import json
@@ -2303,6 +2304,385 @@ def plan_batches(root, manifest_path, max_new_pages=3, max_routes=8, out=None):
     return result
 
 
+def prune_failed_routes(
+    root,
+    manifest_path,
+    review_path,
+    failed_routes,
+    reason,
+    *,
+    skill='mindmap-pass',
+    cooldown_days=7,
+    snapshot_path=None,
+    audit_review_path=None,
+    out_snapshot=None,
+    out_review=None,
+):
+    """Quarantine and revert ONLY failed route(s) in a multi-page Mindmap batch so surviving PASS pages ship cleanly."""
+    root = root.resolve()
+    require(isinstance(failed_routes, list) and failed_routes, 'prune-failed-routes requires at least one --failed-route')
+    prose(reason, 'prune reason')
+    m_file = local(root, manifest_path)
+    r_file = local(root, review_path)
+    plan = read(m_file)
+    rev = read(r_file)
+    m_rel = str(m_file.relative_to(root)).replace('\\', '/')
+    r_rel = str(r_file.relative_to(root)).replace('\\', '/')
+
+    failed_set = set()
+    for raw_rt in failed_routes:
+        rt = str(raw_rt or '').strip()
+        require(rt.startswith('/'), f'Failed route must start with /: {rt}')
+        failed_set.add(rt.rstrip('/') or '/')
+    failed_slugs = {rt.strip('/').rsplit('/', 1)[-1].lower() for rt in failed_set if rt.strip('/')}
+
+    actions = plan.get('actions') or []
+    require(isinstance(actions, list) and actions, 'Manifest has no actions to prune')
+
+    # Identify pruned briefs first so link-only rows exclusive to pruned briefs can also be dropped cleanly
+    pruned_inbound_sources_only = set()
+    surviving_inbound_sources = set()
+    for b_key in ('newPageBriefs', 'scopeBriefs'):
+        for b in (plan.get(b_key) or []):
+            if not isinstance(b, dict):
+                continue
+            bt = (str(b.get('target') or '').rstrip('/') or '/')
+            inb = ((b.get('inboundLinks') or {}).get('placements') or [])
+            srcs = {(str(pl.get('source') or '').rstrip('/') or '/') for pl in inb if isinstance(pl, dict) and pl.get('source')}
+            if bt in failed_set:
+                pruned_inbound_sources_only.update(srcs)
+            else:
+                surviving_inbound_sources.update(srcs)
+    pruned_inbound_sources_only -= surviving_inbound_sources
+
+    pruned_actions = []
+    surviving_actions = []
+    for row in actions:
+        aid = row.get('id')
+        bucket = row.get('bucket')
+        target_raw = str(row.get('target') or '').strip()
+        target_clean = (target_raw.split('#', 1)[0].rstrip('/') or '/') if target_raw.startswith('/') else target_raw
+        target_slug = target_clean.strip('/').rsplit('/', 1)[-1].lower() if target_clean else ''
+
+        drop = False
+        if target_clean in failed_set or (not target_raw.startswith('/') and target_slug in failed_slugs):
+            drop = True
+        elif bucket == 'add internal links':
+            sol_txt = f"{row.get('problem', '')} {row.get('solution', '')} {target_raw}".lower()
+            mentions_failed = any(rt.lower() in sol_txt or (sl and sl in sol_txt) for rt, sl in [(r, r.strip('/').rsplit('/', 1)[-1].lower()) for r in failed_set])
+            mentions_surviving = any(
+                (str(sr.get('target') or '').rstrip('/') or '/').lower() in sol_txt
+                for sr in actions
+                if sr.get('bucket') in SUBSTANTIVE and (str(sr.get('target') or '').rstrip('/') or '/') not in failed_set
+            )
+            if (target_clean in pruned_inbound_sources_only or mentions_failed) and not mentions_surviving:
+                drop = True
+
+        if drop:
+            pruned_actions.append(row)
+        else:
+            surviving_actions.append(row)
+
+    require(pruned_actions, f'None of the specified --failed-route values matched manifest actions: {sorted(failed_set)}')
+    surviving_substantive = [r for r in surviving_actions if r.get('bucket') in SUBSTANTIVE]
+    require(surviving_substantive, 'All substantive actions failed; quarantine the full run instead of partial-batch pruning')
+
+    surviving_ids = {r['id'] for r in surviving_actions}
+    surviving_targets = {(str(r.get('target') or '').rstrip('/') or '/') for r in surviving_substantive if str(r.get('target') or '').startswith('/')}
+
+    # Prune briefs & remove any outboundLinks pointing to a pruned new-page target
+    for b_key in ('newPageBriefs', 'scopeBriefs'):
+        if b_key in plan and isinstance(plan[b_key], list):
+            kept_briefs = []
+            for b in plan[b_key]:
+                if not isinstance(b, dict):
+                    continue
+                if b.get('actionId') not in surviving_ids or (str(b.get('target') or '').rstrip('/') or '/') in failed_set:
+                    continue
+                out_obj = b.get('outboundLinks')
+                if isinstance(out_obj, dict) and isinstance(out_obj.get('placements'), list):
+                    kept_pl = [
+                        pl for pl in out_obj['placements']
+                        if not isinstance(pl, dict) or (str(pl.get('target') or '').rstrip('/') or '/') not in failed_set
+                    ]
+                    out_obj['placements'] = kept_pl
+                    if not kept_pl and not out_obj.get('notApplicableReason'):
+                        out_obj['notApplicableReason'] = 'Pruned sibling target quarantined in partial-batch ship'
+                kept_briefs.append(b)
+            plan[b_key] = kept_briefs
+
+    # Align request.requirements and chart-review requestCoverage
+    req = plan.get('request')
+    if isinstance(req, dict) and isinstance(req.get('requirements'), list):
+        kept_reqs = []
+        for item in req['requirements']:
+            if not isinstance(item, dict):
+                continue
+            rem_aids = [aid for aid in (item.get('actionIds') or []) if aid in surviving_ids]
+            if rem_aids:
+                item = dict(item, actionIds=rem_aids)
+                kept_reqs.append(item)
+        if not kept_reqs and req['requirements']:
+            # Bind the primary requirement to surviving substantive actions so request_contract stays satisfied
+            first_req = dict(req['requirements'][0], actionIds=[r['id'] for r in surviving_substantive])
+            kept_reqs = [first_req]
+        req['requirements'] = kept_reqs
+        kept_req_ids = {r['id'] for r in kept_reqs}
+        if isinstance(rev.get('requestCoverage'), list):
+            cov_by_id = {c.get('requirementId'): c for c in rev['requestCoverage'] if isinstance(c, dict)}
+            rev['requestCoverage'] = [
+                cov_by_id.get(rid, {'requirementId': rid, 'status': 'PASS', 'evidence': 'Preserved surviving requirement coverage after partial-batch prune'})
+                for rid in [r['id'] for r in kept_reqs]
+                if rid in kept_req_ids
+            ]
+
+    plan['actions'] = surviving_actions
+
+    # Revert workspace edits belonging ONLY to the pruned routes
+    reverted_files = []
+    surviving_touch_routes = set(surviving_targets) | set(surviving_inbound_sources)
+    surviving_touch_slugs = {rt.strip('/').rsplit('/', 1)[-1].lower() for rt in surviving_touch_routes if rt.strip('/')}
+
+    if (root / '.git').exists():
+        st = subprocess.run(['git', 'status', '--porcelain'], cwd=root, capture_output=True, text=True)
+        if st.returncode == 0:
+            for raw_line in st.stdout.splitlines():
+                if len(raw_line) < 4:
+                    continue
+                xy = raw_line[:2]
+                rel = raw_line[3:].strip().strip('"')
+                if ' -> ' in rel:
+                    rel = rel.split(' -> ', 1)[1].strip()
+                if rel.startswith('reports/') or rel.startswith('.claude/'):
+                    continue
+                p_abs = root / rel
+                stem_low = p_abs.stem.lower()
+                # Shared JSON page stores: revert only failed keys/entries back to HEAD
+                if rel in ('data/pages.json', 'data/pages.generated.json') and p_abs.is_file():
+                    head_blob = subprocess.run(['git', 'show', f'HEAD:{rel}'], cwd=root, capture_output=True, text=True)
+                    try:
+                        cur_doc = json.loads(p_abs.read_text(encoding='utf-8'))
+                        head_doc = json.loads(head_blob.stdout) if head_blob.returncode == 0 and head_blob.stdout.strip() else None
+                        changed_store = False
+                        if isinstance(cur_doc, dict):
+                            for k in list(cur_doc.keys()):
+                                k_norm = (str(k).rstrip('/') or '/') if str(k).startswith('/') else str(k)
+                                k_slug = k_norm.strip('/').rsplit('/', 1)[-1].lower()
+                                if k_norm in failed_set or k_slug in failed_slugs:
+                                    if isinstance(head_doc, dict) and k in head_doc:
+                                        cur_doc[k] = head_doc[k]
+                                    else:
+                                        del cur_doc[k]
+                                    changed_store = True
+                        elif isinstance(cur_doc, list):
+                            head_by_slug = {}
+                            if isinstance(head_doc, list):
+                                for item in head_doc:
+                                    if isinstance(item, dict):
+                                        s = str(item.get('slug') or item.get('route') or '').strip('/').rsplit('/', 1)[-1].lower()
+                                        if s:
+                                            head_by_slug[s] = item
+                            new_list = []
+                            for item in cur_doc:
+                                if isinstance(item, dict):
+                                    rt_val = str(item.get('route') or item.get('path') or '')
+                                    s_val = str(item.get('slug') or rt_val).strip('/').rsplit('/', 1)[-1].lower()
+                                    if (rt_val and (rt_val.rstrip('/') or '/') in failed_set) or (s_val and s_val in failed_slugs):
+                                        changed_store = True
+                                        if s_val in head_by_slug:
+                                            new_list.append(head_by_slug[s_val])
+                                        continue
+                                new_list.append(item)
+                            cur_doc = new_list
+                        if changed_store:
+                            p_abs.write_text(json.dumps(cur_doc, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+                            reverted_files.append(rel)
+                    except Exception:
+                        pass
+                    continue
+
+                # Shared sitemaps: strip newly added <url> blocks for pruned routes
+                if rel.startswith('public/sitemap') and rel.endswith('.xml') and p_abs.is_file():
+                    sm_txt = p_abs.read_text(encoding='utf-8', errors='ignore')
+                    new_sm = sm_txt
+                    for rt in failed_set:
+                        esc = re.escape(rt.rstrip('/'))
+                        new_sm = re.sub(
+                            rf'\s*<url>\s*<loc>https?://[^<]*{esc}/?</loc>.*?</url>',
+                            '',
+                            new_sm,
+                            flags=re.I | re.S,
+                        )
+                    if new_sm != sm_txt:
+                        p_abs.write_text(new_sm, encoding='utf-8')
+                        reverted_files.append(rel)
+                    continue
+
+                # Standalone content/route file belonging to a pruned slug (or exclusive inbound-link hub)
+                is_failed_file = stem_low in failed_slugs or any(f'/{sl}/' in f'/{rel.lower()}/' for sl in failed_slugs if sl)
+                is_exclusive_inbound_hub = (
+                    stem_low not in surviving_touch_slugs
+                    and any(src.strip('/').rsplit('/', 1)[-1].lower() == stem_low for src in pruned_inbound_sources_only)
+                )
+                if is_failed_file or is_exclusive_inbound_hub:
+                    if '?' in xy:
+                        if p_abs.is_file():
+                            p_abs.unlink()
+                            reverted_files.append(rel)
+                    else:
+                        co = subprocess.run(['git', 'checkout', '--', rel], cwd=root, capture_output=True, text=True)
+                        if co.returncode == 0:
+                            reverted_files.append(rel)
+    else:
+        # Non-git directory fallback: remove standalone files matching failed slugs outside reports/.claude
+        for folder in ('src', 'content', 'app', 'pages'):
+            base = root / folder
+            if not base.is_dir():
+                continue
+            for cand in base.rglob('*'):
+                if cand.is_file() and cand.stem.lower() in failed_slugs:
+                    cand.unlink()
+                    reverted_files.append(str(cand.relative_to(root)))
+
+    # Refresh manifest hashes, re-bind chart-review to pruned subset, validate & re-render chart
+    refresh_manifest_hashes(root, plan)
+    chart_structure(root, plan)
+    m_file.write_text(json.dumps(plan, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+
+    rev['manifestSha256'] = digest(plan)
+    if 'manifestFileSha256' in rev:
+        rev['manifestFileSha256'] = file_sha(m_file)
+    prep_readiness = (plan.get('preparation') or {}).get('readiness')
+    if isinstance(prep_readiness, dict) and prep_readiness.get('sha256') and 'readinessSha256' in rev:
+        rev['readinessSha256'] = prep_readiness['sha256']
+    r_file.write_text(json.dumps(rev, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+
+    chart(root, plan, rev)
+    chart_dest = (root / plan['chartPath']).resolve()
+    require(chart_dest.is_relative_to(root), 'chartPath escapes repository')
+    chart_dest.parent.mkdir(parents=True, exist_ok=True)
+    chart_dest.write_text(render(plan), encoding='utf-8')
+
+    # Refresh approvedPlan hashes inside surviving evidence packets under manifest directory
+    m_new_ref = {'path': m_rel, 'sha256': file_sha(m_file)}
+    r_new_ref = {'path': r_rel, 'sha256': file_sha(r_file)}
+    updated_packets = []
+    for ev_file in sorted(m_file.parent.glob('**/evidence.json')):
+        try:
+            pkt = read(ev_file)
+        except Exception:
+            continue
+        if not isinstance(pkt, dict):
+            continue
+        ap_plan = pkt.get('approvedPlan')
+        if not isinstance(ap_plan, dict):
+            continue
+        pkt_rt = (str(pkt.get('route') or '').rstrip('/') or '/')
+        if pkt_rt in failed_set or ap_plan.get('actionId') not in surviving_ids:
+            continue
+        if isinstance(ap_plan.get('manifest'), dict) and ap_plan['manifest'].get('path') == m_rel:
+            ap_plan['manifest'] = dict(m_new_ref)
+            if isinstance(ap_plan.get('review'), dict) and ap_plan['review'].get('path') == r_rel:
+                ap_plan['review'] = dict(r_new_ref)
+            ev_file.write_text(json.dumps(pkt, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+            updated_packets.append(str(ev_file.relative_to(root)))
+
+    # Quarantine each failed route via .claude/tools/quarantine.py (save_branch=False so surviving batch ships on current branch!)
+    tickets = []
+    q_tool = root / '.claude/tools/quarantine.py'
+    if not q_tool.is_file():
+        q_tool = Path(__file__).with_name('quarantine.py')
+    if q_tool.is_file():
+        q_spec = importlib.util.spec_from_file_location('prune_quarantine_mod', q_tool)
+        q_mod = importlib.util.module_from_spec(q_spec)
+        q_spec.loader.exec_module(q_mod)
+        for rt in sorted(failed_set):
+            slug = rt.strip('/').rsplit('/', 1)[-1] or 'root'
+            t = q_mod.record_ticket(
+                root,
+                skill=skill,
+                item_id=slug,
+                routes=[rt],
+                cooldown_days=cooldown_days,
+                reason=reason,
+                save_branch=False,
+            )
+            tickets.append({'route': rt, 'itemId': slug, 'ticketPath': t.get('_ticketPath')})
+
+    # Optional: mechanically project rendered snapshot + review pair down to surviving routes
+    projected = None
+    if snapshot_path and audit_review_path:
+        snap_in = local(root, snapshot_path)
+        rev_in = local(root, audit_review_path)
+        snap_doc = read(snap_in)
+        surviving_snap_routes = [
+            r['path'] for r in (snap_doc.get('routes') or [])
+            if isinstance(r, dict) and (str(r.get('path') or '').rstrip('/') or '/') not in failed_set
+        ]
+        require(surviving_snap_routes, 'No surviving routes remain in rendered snapshot after pruning')
+        s_out = (root / out_snapshot).resolve() if out_snapshot else (snap_in.parent / 'pruned-snapshot.json')
+        v_out = (root / out_review).resolve() if out_review else (rev_in.parent / 'pruned-review.json')
+        require(s_out.is_relative_to(root) and v_out.is_relative_to(root), 'Projected output paths must stay inside repository')
+        s_out.parent.mkdir(parents=True, exist_ok=True)
+        v_out.parent.mkdir(parents=True, exist_ok=True)
+
+        crp_path = root / '.claude/tools/content-review-policy.py'
+        if crp_path.is_file() and (root / '.claude/content-review-policy.json').is_file():
+            c_spec = importlib.util.spec_from_file_location('prune_crp_mod', crp_path)
+            c_mod = importlib.util.module_from_spec(c_spec)
+            c_spec.loader.exec_module(c_mod)
+            proj_res = c_mod.project(root, snap_in, rev_in, surviving_snap_routes, s_out, v_out)
+            projected = {
+                'snapshot': str(s_out.relative_to(root)),
+                'review': str(v_out.relative_to(root)),
+                'reviewPairFlag': f"{s_out.relative_to(root)}:{v_out.relative_to(root)}",
+                'routes': surviving_snap_routes,
+                'detail': proj_res,
+            }
+        else:
+            rev_doc = read(rev_in)
+            keep_set = set(surviving_snap_routes)
+            snap_sub = copy.deepcopy(snap_doc)
+            if isinstance(snap_sub.get('manifest'), dict) and isinstance(snap_sub['manifest'].get('routes'), list):
+                snap_sub['manifest']['routes'] = [r for r in snap_sub['manifest']['routes'] if r.get('path') in keep_set]
+            snap_sub['routes'] = [r for r in snap_sub.get('routes', []) if r.get('path') in keep_set]
+            snap_sub['snapshotSha256'] = digest({k: v for k, v in snap_sub.items() if k != 'snapshotSha256'})
+            rev_sub = copy.deepcopy(rev_doc)
+            rev_sub['snapshotSha256'] = snap_sub['snapshotSha256']
+            rev_sub['routes'] = [r for r in rev_sub.get('routes', []) if r.get('path') in keep_set]
+            rev_sub['approvalProjection'] = {
+                'snapshot': {'path': str(snap_in.relative_to(root)), 'sha256': file_sha(snap_in)},
+                'review': {'path': str(rev_in.relative_to(root)), 'sha256': file_sha(rev_in)},
+            }
+            s_out.write_text(json.dumps(snap_sub, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+            v_out.write_text(json.dumps(rev_sub, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+            projected = {
+                'snapshot': str(s_out.relative_to(root)),
+                'review': str(v_out.relative_to(root)),
+                'reviewPairFlag': f"{s_out.relative_to(root)}:{v_out.relative_to(root)}",
+                'routes': surviving_snap_routes,
+            }
+
+    receipt = {
+        'status': 'PASS',
+        'prunedRoutes': sorted(failed_set),
+        'prunedActionIds': [r.get('id') for r in pruned_actions],
+        'survivingActionIds': [r.get('id') for r in surviving_actions],
+        'survivingSubstantiveRoutes': sorted(surviving_targets),
+        'revertedFiles': sorted(set(reverted_files)),
+        'updatedEvidencePackets': updated_packets,
+        'quarantineTickets': tickets,
+        'projectedAuditPair': projected,
+        'manifest': m_rel,
+        'review': r_rel,
+        'chart': plan['chartPath'],
+    }
+    receipt_path = m_file.parent / 'pruned-routes.json'
+    receipt_path.write_text(json.dumps(receipt, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+    receipt['receiptPath'] = str(receipt_path.relative_to(root))
+    return receipt
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--root', default='.')
@@ -2379,6 +2759,18 @@ def main():
     q.add_argument('--max-new-pages', type=int, default=3)
     q.add_argument('--max-routes', type=int, default=8)
     q.add_argument('--out')
+    q = s.add_parser('prune-failed-routes')
+    q.add_argument('--manifest', required=True)
+    q.add_argument('--review', required=True)
+    q.add_argument('--failed-route', dest='failed_routes', action='append', required=True,
+                   help='Failed route (e.g. /comparisons/bad-slug) to revert & quarantine; repeat as needed')
+    q.add_argument('--reason', required=True)
+    q.add_argument('--skill', default='mindmap-pass')
+    q.add_argument('--cooldown-days', type=int, default=7)
+    q.add_argument('--snapshot', help='Optional rendered snapshot.json to project to surviving routes')
+    q.add_argument('--audit-review', help='Optional rendered review.json to project to surviving routes')
+    q.add_argument('--out-snapshot', help='Optional output path for projected snapshot')
+    q.add_argument('--out-review', help='Optional output path for projected review')
     q = s.add_parser('hash')
     q.add_argument('--file', required=True)
     a = p.parse_args()
@@ -2407,6 +2799,21 @@ def main():
     if a.command == 'plan-batches':
         print(json.dumps(plan_batches(
             root, a.manifest, max_new_pages=a.max_new_pages, max_routes=a.max_routes, out=a.out,
+        ), indent=2))
+        return
+    if a.command == 'prune-failed-routes':
+        print(json.dumps(prune_failed_routes(
+            root,
+            a.manifest,
+            a.review,
+            a.failed_routes,
+            a.reason,
+            skill=a.skill,
+            cooldown_days=a.cooldown_days,
+            snapshot_path=a.snapshot,
+            audit_review_path=a.audit_review,
+            out_snapshot=a.out_snapshot,
+            out_review=a.out_review,
         ), indent=2))
         return
     if a.command == 'hash':
