@@ -1,0 +1,47 @@
+[
+  {
+    "product": "TurboTax",
+    "url": "https://turbotax.intuit.com/personal-taxes/online/",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "TurboTax Assisted",
+    "url": "https://turbotax.intuit.com/personal-taxes/online/live/",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "TurboTax Desktop",
+    "url": "https://turbotax.intuit.com/personal-taxes/cd-download/",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "TaxAct",
+    "url": "https://www.taxact.com/taxes-online",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "1040.com",
+    "url": "https://www.1040.com/",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "OLT (Online Taxes)",
+    "url": "https://www.olt.com/main/home/pricing.php",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "Jackson Hewitt Online",
+    "url": "https://www.jacksonhewitt.com/file-taxes-online/",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "ezTaxReturn",
+    "url": "https://www.eztaxreturn.com/",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "Keeper",
+    "url": "https://www.keepertax.com/pricing",
+    "checkedOn": "2026-11-15"
+  }
+]

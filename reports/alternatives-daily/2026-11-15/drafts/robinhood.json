@@ -1,0 +1,147 @@
+{
+  "slug": "robinhood",
+  "product": "Robinhood",
+  "officialUrl": "https://robinhood.com/us/en/gold/",
+  "title": "Robinhood Alternatives 2026: Fees and Plans Compared",
+  "h1": "Robinhood Alternatives 2026: Trading Fees and Rates Compared",
+  "metaDescription": "Robinhood alternatives compared: Charles Schwab, Interactive Brokers, E*TRADE, Webull, tastytrade and Public, with published trading fees and rates.",
+  "published": "2026-11-15",
+  "updated": "2026-11-15",
+  "intro": "Charles Schwab, Interactive Brokers, E*TRADE, Webull, tastytrade and Public are the main Robinhood alternatives, splitting on options fees, margin rates and whether cash yield requires a subscription. At The Modern Wallet, we build investing calculators and compare published brokerage fees so you can put contract charges, borrowing costs and subscriptions into a 12-month total.\n\n[Robinhood](https://robinhood.com/us/en/gold/) has a $0 standard account with $0 online United States (US) stock and Exchange-Traded Fund (ETF) commissions, plus a $0.04 combined clearing and regulatory fee per options contract. Gold costs $5 a month and lists a 3.6% Annual Percentage Yield (APY) on eligible cash. It also includes a 3% Individual Retirement Account (IRA) contribution match and the first $1,000 of margin borrowing at $0 interest.\n\nThe [Robinhood Gold cost guide](/guides/is-robinhood-gold-worth-it/) and [broker trading fee guide](/guides/what-do-brokers-charge-to-trade/) cover those charges in more detail.",
+  "tableTitle": "Robinhood Alternatives: Published Prices Compared",
+  "tableNote": "Prices, fees and rates from each brokerage's published pages, checked November 15, 2026.",
+  "tableColumns": [
+    "Product",
+    "Fees and pricing",
+    "Best fit"
+  ],
+  "rows": [
+    {
+      "product": "Robinhood",
+      "pricing": "$0 standard account, US stocks and ETFs, and equity options commissions; $0.04 combined clearing and regulatory fee per options contract. Gold $5/mo; 3.6% APY on eligible cash; first $1,000 of margin borrowing at $0 interest. Margin 5.25% up to $50,000 (down to 4.20% at $50M+); Gold index options $0.35/contract and futures $0.50/contract",
+      "bestFit": "Fits investors who can use Gold's IRA match, included margin borrowing or futures pricing",
+      "subject": true
+    },
+    {
+      "product": "Charles Schwab",
+      "pricing": "$0 online US stock and ETF commissions and $0 account-opening minimum; options $0.65/contract; futures $2.25/contract. Schwab Intelligent Portfolios has a $5,000 minimum and $0 advisory fee",
+      "bestFit": "Fits investors who want a $0-fee automated portfolio and access to listed bonds"
+    },
+    {
+      "product": "Interactive Brokers",
+      "pricing": "Lite: $0 US exchange-listed stock and ETF commissions for eligible accounts. Pro: Fixed $0.005/share ($1/order minimum) or Tiered $0.0005 to $0.0035/share ($0.35/order minimum), plus applicable charges; options $0.15 to $0.65/contract; futures $0.25 to $0.85/contract",
+      "bestFit": "Fits investors who want a choice between Lite stock pricing and Pro's Fixed or Tiered stock pricing"
+    },
+    {
+      "product": "E*TRADE",
+      "pricing": "$0 online US stock and ETF commissions; options $0.65/contract, or $0.50 at 30+ qualifying trades/quarter; standard futures $1.50/contract per side. Core Portfolios 0.30% annually with a $500 minimum",
+      "bestFit": "Fits investors who qualify for the lower options tier or want a $500-minimum automated portfolio"
+    },
+    {
+      "product": "Webull",
+      "pricing": "$0 online US exchange-listed stock, ETF and equity options commissions; certain index options $0.50/contract; optional direct routing $0.004/share ($0.01/order minimum); outgoing stock transfer $75",
+      "bestFit": "Fits options traders who use standard routing and want $0 broker equity-options commissions"
+    },
+    {
+      "product": "tastytrade",
+      "pricing": "$0 stock and ETF commissions; equity options $1/contract to open, capped at $10/leg, and $0 to close; E-mini futures $1/contract per side; Micro E-mini and E-nano futures $0.75/contract per side",
+      "bestFit": "Fits options traders who place large single-leg orders that reach the $10 opening-commission cap"
+    },
+    {
+      "product": "Public",
+      "pricing": "Options rebate of $0.06 to $0.18/contract for enrolled users; 3.30% cash APY in site navigation and 3.75% APY* on homepage hero with no subscription fee; base margin rate 5.15% (down to 4.20%); direct indexing starts at $1,000",
+      "bestFit": "Fits investors who want published cash yield without a subscription and may qualify for options rebates"
+    }
+  ],
+  "chooseSection": {
+    "heading": "How to Choose a Robinhood Alternative",
+    "body": "Start with what you trade. Robinhood and five alternatives publish $0 online US stock and ETF commissions on at least one account, while Public advertises commission-free Application Programming Interface (API) trading on its homepage. Count each options contract side you expect to trade, then apply the relevant commission, rebate and published passthrough fees.\n\nKeep futures and index options separate from stock options. Robinhood Gold charges $0.50 per futures contract and $0.35 per index options contract. E*TRADE charges $1.50 per standard futures contract per side. tastytrade caps equity-options opening commissions at $10 per leg, without applying that cap to broad-based index options.\n\nFor cash, compare annual yield after subscription costs. At a $10,000 balance held for a year, Public's 3.30% navigation APY produces $330 with no subscription fee, while Robinhood Gold's 3.6% APY produces $360 minus $60 in subscription fees, or $300.\n\nBorrowing changes the calculation. Robinhood Gold includes the first $1,000 of margin borrowing at $0 interest, whereas Public lists a 5.15% entry base margin rate.\n\nFive numbers to write down:\n\n- Your monthly equity-options contracts, including opening and closing trades.\n- Your futures and index-options contracts, priced separately from equity options.\n- Your average eligible cash balance and any annual subscription fee.\n- Your expected margin balance and the published rate for that balance.\n- Any outgoing transfer charge, including the $75 fees listed by Webull and E*TRADE.\n\nIf retirement contributions are part of the decision, use the [Roth IRA contribution calculator](/investing/roth-ira-calculator/) alongside Robinhood Gold's match and holding rules."
+  },
+  "alternatives": [
+    {
+      "heading": "Charles Schwab Options Fees and Automated Portfolios",
+      "body": "Charles Schwab charges $0 for online US stock and ETF trades, with no minimum investment to open a brokerage account or IRA. It lists Traditional, Roth, Rollover, Inherited, Simplified Employee Pension (SEP) and Savings Incentive Match Plan for Employees (SIMPLE) IRA accounts. Options cost $0.65 per contract with no base commission, while exercised and assigned options carry $0 commission.\n\nFutures and futures options cost $2.25 per contract. Schwab lists $6.95 for online Over-The-Counter (OTC) equities and $50 for online foreign-stock transactions placed on the US OTC market. Online US Treasury trades cost $0, and secondary corporate and municipal bonds cost $1 per bond with a $10 minimum and $250 maximum.\n\nTransaction-fee mutual funds cost up to $74.95 per purchase, while listed no-load, no-transaction-fee funds cost $0 and broker-assisted phone trades add $25. Schwab Intelligent Portfolios charges $0 in advisory fees and commissions with a $5,000 investment minimum, giving a $10,000 automated account $0 in listed annual advisory fees.\n\nOther managed and advisory programs carry minimums from $25,000 to $2,000,000, with listed starting fees from 0.40% (Schwab Personalized Indexing) to 1.00% (Managed Account Select Equity Strategies), or advisor-set fees through Schwab Advisor Network. Schwab's pricing overview does not itemize margin rates or cash sweep APYs.\n\nCharles Schwab fits investors choosing among retirement account types or seeking a $0-advisory-fee automated portfolio. Frequent equity-options traders pay more than on Robinhood: 240 contracts at $0.65 cost $156 over a year, versus $9.60 at Robinhood's $0.04 combined fee. The [Charles Schwab and Robinhood comparison](/compare/charles-schwab-vs-robinhood/) puts those accounts side by side."
+    },
+    {
+      "heading": "Interactive Brokers Lite vs Pro Pricing",
+      "body": "Interactive Brokers offers Lite and Pro accounts with $0 minimum balance and $0 monthly maintenance fee. Eligible US and Singapore retail investors can use Lite for $0 commissions on US exchange-listed stocks and ETFs across Individual, Joint, IRA and natural-person Trust accounts. Multi-currency deposits and trading cover up to 29 currencies.\n\nPro uses Fixed or Tiered stock pricing rather than Lite's $0 US stock commission. Fixed costs $0.005 per share with a $1 order minimum, while Tiered costs $0.0005 to $0.0035 per share with a $0.35 order minimum, plus applicable exchange, clearing and regulatory charges or rebates. Certain non-retail order patterns on Lite can instead receive Fixed pricing.\n\nOptions commissions run from $0.15 to $0.65 per contract by volume, with $0.65 standard on Fixed and Lite and per-order minimums applying by schedule. Futures run from $0.25 to $0.85 per contract, with $0.85 on Fixed, alongside more than 150 fee-waived ETFs and $0 no-transaction-fee mutual funds.\n\nIts commissions overview advertises US dollar cash interest up to 3.38%, calculated at Benchmark minus 1.5% on Lite and minus 0.5% on Pro, proportional below $100,000 Net Asset Value (NAV). US dollar margin loans start as low as 4.38% (Benchmark plus 2.5% on Lite, or Benchmark plus 1.5% on Pro), with full tier tables on separate rate pages.\n\nInteractive Brokers fits traders comparing global access and volume-based futures tiers. At 600 futures contracts a year, Fixed costs $510 at $0.85 each, Robinhood Gold totals $360 including its $60 subscription, and Interactive Brokers' $0.25 bottom tier costs $150 before exchange fees. Interactive Brokers offers no IRA match."
+    },
+    {
+      "heading": "E*TRADE Options Tiers and Futures Commissions",
+      "body": "E*TRADE charges $0 online commissions for US-listed stocks, ETFs and no-load, no-transaction-fee mutual funds. Paper statements cost $2 quarterly unless electronic statements or a combined balance of at least $10,000 waives the charge. Standard options contracts cost $0.65 each.\n\nThe options fee drops to $0.50 for customers making at least 30 qualifying stock, ETF and options trades per quarter, so contract count alone does not qualify for the lower rate. Closing a short option priced at $0.10 or less carries a $0 contract fee. Standard futures cost $1.50 per contract per side, and E-nano Equity Index futures cost $0.75 per side, plus exchange fees.\n\nSecondary corporate and municipal bonds cost $1 per bond ($10 minimum, $250 maximum), and OTC stocks cost $6.95 per trade or $4.95 at 30-plus qualifying quarterly trades. Core Portfolios charges a 0.30% annual advisory fee with a $500 minimum.\n\nE*TRADE's Morgan Stanley Private Bank Premium Savings Account lists a $0 initial deposit, $0 monthly fee, 90-day unfunded closure rule and a 4.25% promotional APY for six months on new accounts before reverting to a variable Standard APY. A full outgoing brokerage account transfer costs $75, and an outgoing wire costs $25 ($0 incoming).\n\nE*TRADE fits investors who qualify for the $0.50 options tier or want a $500-minimum automated portfolio. At 600 options contracts yearly, the $0.50 tier costs $300 versus $390 at $0.65 and $24 at Robinhood's $0.04 combined fee. A $10,000 Core Portfolios balance costs $30 annually at 0.30%."
+    },
+    {
+      "heading": "Webull Zero-Commission Trading and Routing Fees",
+      "body": "Webull charges $0 broker commissions on online US exchange-listed stocks, ETFs and standard equity options. It also lists no deposit minimums, a $0.10 per-contract fee on oversized options orders and $0.50 per contract on certain index options. Standard equity-options routing differs from optional direct-routing services.\n\nOptional Equity Algo Order Types cost $0.0050 per share, and Direct Routing costs $0.0040 per share with a $0.01 order minimum. Low-priced OTC trades exceeding 100,000 shares under $1 per share cost $0.0002 per share, capped at 5% of principal. Foreign-settlement F-stock trades cost $5 per buy and $0.05 per sell, while an outgoing stock transfer costs $75 ($0 incoming).\n\nWebull also lists regulatory passthroughs: a securities-sale fee of $0.0000206 times sale volume, a Consolidated Audit Trail (CAT) fee of $0.000003 times equity or options trade volume, and $0.00000003 on OTC volume. Its pricing overview displays an APY placeholder and omits margin rates and Webull Premium pricing.\n\nWebull fits equity-options traders using standard routing on standard-sized orders. For 1,200 standard equity-options contracts in a year, Webull's listed broker commission is $0 with regulatory charges separate, compared with $48 at Robinhood's $0.04 combined fee. The [Robinhood and Webull comparison](/compare/robinhood-vs-webull/) covers both accounts directly."
+    },
+    {
+      "heading": "tastytrade Capped Options and Futures Commissions",
+      "body": "tastytrade charges $0 commissions on opening and closing stock and ETF trades, paired with capped opening fees on equity options. Stock and ETF options cost $1 per contract to open, capped at $10 per leg, and $0 per contract to close, plus exchange, clearing and regulatory fees. Broad-based index options cost $1 per contract to open with no cap and $0 to close.\n\nE-mini futures cost $1 per contract per side, while Micro E-mini and E-nano futures cost $0.75 per side. Options on E-mini futures cost $1.25 per contract per side, and options on Micro E-mini and E-nano futures cost $0.75 per side. Cryptocurrency costs 1% to open and 1% to close, or 0.75% each way for Bitcoin (BTC) and Ethereum (ETH).\n\nThe pricing page advertises a 6.75% flat margin rate (Base Rate minus 3.25%) across any balance size when you open a first tastytrade margin account or bring at least $25,000 in new assets. It does not itemize non-promotional margin tiers, an uninvested cash sweep APY or an IRA contribution match, so cash-yield and non-promotional margin totals cannot be calculated from that page.\n\ntastytrade fits traders placing large single-leg equity-options orders that reach the $10 cap. Opening and closing one 50-contract single-leg order costs $10 in tastytrade commissions ($10 to open, $0 to close), whereas 50 separate one-contract orders cost $50 to open. Robinhood collects $4 at $0.04 per side across those 100 contract sides."
+    },
+    {
+      "heading": "Public Options Rebates and Fee-Free Cash Yield",
+      "body": "Public's site navigation lists a 3.30% APY with no fees on its High-Yield Cash Account, while its homepage hero displays 3.75% APY* on cash and separately offers Public Concierge for accounts of $500,000 or more. On margin, Public lists a 5.15% base interest rate stepping down to a 4.20% lowest rate.\n\nPublic's Options Trading Rebate Program pays enrolled users $0.06 to $0.18 per stock or ETF options contract traded, depending on monthly volume, underlying security and whether the order uses Public's commission-free trading API. Because rebate tiers depend on enrollment and order route, apply only the tier your volume qualifies for.\n\nPublic lists US stocks, ETFs, options, bonds, Treasuries, a Crypto IRA and direct indexing starting at a $1,000 minimum across more than 100 customizable indices. Its homepage advertises a 1% annual IRA contribution match (and an uncapped 1% portfolio-transfer match) rather than Robinhood Gold's 3% match, and does not publish futures commissions.\n\nPublic fits investors who want published cash yield without a monthly subscription or qualify for options rebates. At $10,000 held for a year, Public's 3.30% navigation rate yields $330 (or $375 at the 3.75% hero rate), versus $360 minus $60, or $300 net, on Robinhood Gold if no other Gold perk offsets the fee. At $20,000, the 3.30% rate and Gold after its $60 fee both net $660."
+    },
+    {
+      "heading": "Who This Is Not For",
+      "body": "Brokerage fee schedules do not settle whether an account meets your custody or insurance requirements. The [Robinhood safety guide](/guides/is-robinhood-safe/) addresses that separate question, and the [Robinhood and Fidelity comparison](/compare/robinhood-vs-fidelity/) covers Fidelity directly.\n\nFee tables also do not calculate capital-gains taxes or retirement contribution limits. Investors deciding how much to contribute to a Roth IRA can run numbers in the [Roth IRA calculator](/investing/roth-ira-calculator/) before comparing account fees.\n\nPublished commissions cannot measure execution quality or lock in variable cash APYs. Where a brokerage omits a margin tier or cash sweep yield from its main fee overview, leave that line unpriced rather than plugging an estimate into a 12-month total."
+    },
+    {
+      "heading": "What Would Change Our Answer on Robinhood Alternatives",
+      "body": "A change in the published fee schedule can reverse a 12-month cost comparison. The $20,000 cash example ties only while Robinhood Gold costs $60 yearly and the listed cash APYs remain 3.6% and 3.30%. Five changes would call for new arithmetic:\n\n- A change in Robinhood Gold's $5 monthly price or its 3% IRA match and holding rules.\n- A move in Robinhood's or Public's cash APY that changes the $20,000 cash break-even point.\n- A change in Public's $0.06 to $0.18 options rebate terms or a trader's eligibility for them.\n- A change in the contract volume needed for E*TRADE's $0.50 options tier or Interactive Brokers' lower futures tier.\n- A change in a published margin rate, futures commission or $75 outgoing transfer fee.\n\nRobinhood Gold's cash yield is an eligible brokerage-cash rate, while E*TRADE's listed 4.25% is a six-month promotional savings rate. Treating those as the same kind of ongoing rate would change the comparison without any brokerage changing its price. Recalculate with the rates and contract counts that apply to the account you are considering."
+    }
+  ],
+  "stillBetterFit": {
+    "heading": "When Robinhood Is Still the Better Fit",
+    "body": "Robinhood Gold can cost less when you use its 3% IRA contribution match. That match is worth up to $225 on the stated 2026 contribution limit against a $60 annual Gold fee, though keeping the full match requires one year of Gold membership and five years holding the matched IRA assets.\n\nGold also includes the first $1,000 of margin borrowing at $0 interest, $0.35 index-options contracts and $0.50 futures contracts. Standard Robinhood accounts charge $0 equity-options commissions plus the $0.04 combined per-contract fee.\n\nIf you already hold a brokerage account elsewhere, include outgoing transfer fees before switching: both E*TRADE and Webull list $75 outgoing transfer charges. Shared $0 stock commissions alone do not justify moving accounts."
+  },
+  "verdict": "Robinhood and five alternatives publish $0 online US stock and ETF commissions on at least one account, while Public highlights commission-free API trading alongside options rebates and fee-free cash yield. Options, futures, cash and margin terms create wide dollar gaps across active accounts. Count your monthly contracts, average cash balance and annual IRA contribution, then calculate a 12-month total across the Robinhood alternatives that support what you trade.",
+  "faqs": [
+    {
+      "question": "What should I use instead of Robinhood?",
+      "answer": "Charles Schwab, Interactive Brokers, E*TRADE, Webull, tastytrade and Public are Robinhood alternatives with published trading rates. Robinhood and five of those brokerages list $0 online US stock and ETF commissions on at least one account, while Public advertises commission-free API trading alongside options rebates."
+    },
+    {
+      "question": "Which Robinhood alternatives charge $0 per options contract?",
+      "answer": "Webull lists $0 broker commission on online US equity options, with regulatory passthroughs separate. Public pays eligible users a $0.06 to $0.18 rebate per stock or ETF options contract instead of charging a per-contract commission. Robinhood lists $0 equity-options commission but collects a $0.04 combined clearing and regulatory fee per contract."
+    },
+    {
+      "question": "Is Robinhood Gold's 3.6% cash APY higher than fee-free alternatives after the $5 monthly fee?",
+      "answer": "Robinhood Gold's 3.6% APY leaves less than Public's 3.30% fee-free APY at a $10,000 balance held for a year if no other Gold benefit offsets the fee. Robinhood Gold yields $360 minus $60 in subscription costs, or $300, against $330 on Public. At $20,000, both calculations produce $660."
+    },
+    {
+      "question": "How do Robinhood's margin rates compare with Public and Interactive Brokers?",
+      "answer": "Robinhood lists 5.25% on settled margin balances up to $50,000 (stepping down to 4.20% at $50 million or more), while Public lists a 5.15% base rate with lower tiers down to 4.20%. Robinhood Gold includes the first $1,000 of margin borrowing at $0 interest. Interactive Brokers' commissions overview lists US dollar margin loans as low as 4.38% (Benchmark plus 2.5% on Lite, or starting at Benchmark plus 1.5% on Pro), with full tier schedules on its separate margin page."
+    },
+    {
+      "question": "Do Robinhood alternatives charge a fee to transfer stocks out?",
+      "answer": "Webull lists a $75 outgoing stock-transfer fee, and E*TRADE lists $75 for a full outgoing account transfer without specifying a partial-transfer fee on its pricing overview. Charles Schwab, Interactive Brokers, tastytrade and Public do not list an outgoing account-transfer fee on their main pricing overviews."
+    }
+  ],
+  "related": [
+    {
+      "label": "Compare financial products",
+      "href": "/compare/"
+    },
+    {
+      "label": "Is Robinhood Gold worth it?",
+      "href": "/guides/is-robinhood-gold-worth-it/"
+    },
+    {
+      "label": "What brokers charge to trade",
+      "href": "/guides/what-do-brokers-charge-to-trade/"
+    },
+    {
+      "label": "Charles Schwab vs Robinhood",
+      "href": "/compare/charles-schwab-vs-robinhood/"
+    },
+    {
+      "label": "Robinhood vs Webull",
+      "href": "/compare/robinhood-vs-webull/"
+    },
+    {
+      "label": "Roth IRA calculator",
+      "href": "/investing/roth-ira-calculator/"
+    }
+  ]
+}

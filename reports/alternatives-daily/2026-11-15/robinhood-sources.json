@@ -1,0 +1,47 @@
+[
+  {
+    "product": "Robinhood",
+    "url": "https://robinhood.com/us/en/gold/",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "Robinhood (Trading Fees)",
+    "url": "https://robinhood.com/us/en/support/articles/trading-fees-on-robinhood/",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "Robinhood (Margin Rates)",
+    "url": "https://robinhood.com/us/en/support/articles/margin-rates/",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "Charles Schwab",
+    "url": "https://www.schwab.com/pricing",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "Interactive Brokers",
+    "url": "https://www.interactivebrokers.com/en/pricing/commissions-home.php",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "E*TRADE",
+    "url": "https://us.etrade.com/what-we-offer/pricing-and-rates",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "Webull",
+    "url": "https://www.webull.com/pricing",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "tastytrade",
+    "url": "https://tastytrade.com/pricing/",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "Public",
+    "url": "https://public.com/",
+    "checkedOn": "2026-11-15"
+  }
+]

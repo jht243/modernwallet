@@ -1,0 +1,147 @@
+{
+  "slug": "venmo",
+  "product": "Venmo",
+  "officialUrl": "https://venmo.com/",
+  "title": "Venmo Alternatives 2026 for Transfers and Seller Fees",
+  "h1": "Venmo Alternatives 2026 for Transfer and Seller Fees",
+  "metaDescription": "Venmo alternatives compared: Zelle, PayPal, Apple Cash, Wise, Square and Xoom, with published transfer, card, seller and international fees.",
+  "published": "2026-11-15",
+  "updated": "2026-11-15",
+  "intro": "Zelle, PayPal, Apple Cash, Wise, Square and Xoom are six Venmo alternatives covering domestic bank transfers, personal wallets, international sends and business card payments. At The Modern Wallet, we show the fee arithmetic behind payment and banking comparisons so you can see what instant cash-outs, card funding and seller fees subtract.\n\n[Venmo](https://venmo.com/) charges $0 for domestic personal sends funded by a balance, debit card or linked bank account, versus 3.00% when funded by a credit card. A standard bank transfer costs $0, while an instant transfer costs 1.75% ($0.25 minimum, $25 maximum). Venmo also charges the recipient 2.99% when a sender marks a personal-profile payment as goods and services.\n\nFunding choices matter across these apps. The [credit card and debit card comparison](/compare/credit-card-vs-debit-card/) explains the difference between those payment methods, while the [checking and savings account comparison](/compare/checking-vs-savings-account/) covers the accounts behind bank transfers.",
+  "tableTitle": "Venmo Alternatives: Published Prices Compared",
+  "tableNote": "Prices and fees from the listed vendor pages and Apple Cash terms, checked November 15, 2026. Xoom shows transfer-specific fees in a quote rather than a public homepage fee table.",
+  "tableColumns": [
+    "Product",
+    "Fees and pricing",
+    "Best fit"
+  ],
+  "rows": [
+    {
+      "product": "Venmo",
+      "pricing": "$0 account setup, monthly fee and eligible domestic personal sends from balance, debit card or bank. Credit-card sends 3.00%. Standard cash-out $0, or instant cash-out 1.75% ($0.25 minimum, $25 maximum). Personal goods-and-services payments charge the recipient 2.99%, while Business Profiles pay 1.9% + $0.10 per payment or 2.29% + $0.09 via Tap to Pay.",
+      "bestFit": "Fits people who send domestic personal payments and sellers whose buyers use Venmo",
+      "subject": true
+    },
+    {
+      "product": "Zelle",
+      "pricing": "Typically $0 consumer fees to send or receive. A first-quarter 2026 survey found $0 send, receive and request fees at 99.40% of linked consumer checking and savings accounts. No dollar sending limits published on Zelle's homepage or consumer fee page.",
+      "bestFit": "Fits people who hold eligible US bank accounts and want direct bank-to-bank payments without an app balance to cash out."
+    },
+    {
+      "product": "PayPal",
+      "pricing": "Eligible domestic personal sends from balance or bank $0, while credit-card or other debit-card sends cost 2.90% + $0.30. Standard withdrawal $0, or instant withdrawal 1.75% ($0.25 minimum, $25 maximum). International personal send 5.00% ($0.99 minimum, $4.99 maximum), plus applicable funding and conversion fees.",
+      "bestFit": "Fits people who want a wallet for eligible domestic and international personal payments"
+    },
+    {
+      "product": "Apple Cash",
+      "pricing": "$0 monthly fee, personal sends from balance or debit card, and standard bank transfers. Instant debit-card transfer 1.7% ($0.25 minimum, $25 maximum).",
+      "bestFit": "Fits people who use Apple devices and can wait for a free bank transfer or pay for an instant debit-card transfer"
+    },
+    {
+      "product": "Wise",
+      "pricing": "$0 to register, hold money or transfer the same currency between Wise contacts, with currency sending or conversion from 0.23%. United States dollar wire receipt $6.11, and Wise Multi-Currency Card $9. Automated teller machine withdrawals free through $250 per calendar month, then $1.95 + 1.95% per withdrawal.",
+      "bestFit": "Fits people who send or receive money across currencies and can compare the quoted conversion fee"
+    },
+    {
+      "product": "Square",
+      "pricing": "Free $0, Plus $49 or Premium $149 per month per location. In-person cards 2.6% + $0.15, 2.5% + $0.15 or 2.4% + $0.15 by tier, and online or invoice cards 3.3% + $0.30 on Free or 2.9% + $0.30 on paid tiers.",
+      "bestFit": "Fits sellers who need card acceptance and invoices beyond a Venmo Business Profile"
+    },
+    {
+      "product": "Xoom",
+      "pricing": "Quote-based; no public price on Xoom's homepage. Exact fee and recipient amount shown before sending. Fees vary by country, selected features and other factors, and currency conversion also generates revenue for Xoom.",
+      "bestFit": "Fits people who need international bank, wallet, cash pickup or home-delivery options"
+    }
+  ],
+  "chooseSection": {
+    "heading": "How to Choose a Venmo Alternative",
+    "body": "Start with where the money needs to end up. Zelle sends directly between eligible United States (US) bank accounts, so there is no separate wallet balance or instant cash-out fee. Venmo, PayPal and Apple Cash offer $0 standard withdrawals, while their instant withdrawals carry a percentage fee.\n\nNext, separate the cost of sending from the cost of receiving. Venmo charges 3.00% for a credit-card-funded personal send, while a debit-card-funded domestic personal send costs $0. PayPal charges 2.90% + $0.30 for domestic personal sends funded by a credit card or a debit card other than the PayPal Debit Card. For more on cash advances, see the [credit card cash advance guide](/guides/credit-card-cash-advance-guide/).\n\nA payment for goods has different economics from a personal transfer. Venmo's personal-profile goods-and-services fee is 2.99% to the recipient, its standard Business Profile rate is 1.9% + $0.10, and Square prices card acceptance by plan and payment method. When sending across borders, add both the transfer fee and the currency conversion spread.\n\nRun through these five checks before picking an app:\n\n- Does the recipient have an eligible US bank account, a compatible device or a required wallet?\n- Will you fund the send from a bank, balance, debit card or credit card?\n- Do you need funds in an external bank immediately, or can you wait for a $0 standard transfer?\n- Is the payment personal, a sale, a donation or an international transfer?\n- For a sale, will the customer pay in person, by invoice or through a wallet?\n\nFor customer invoices, the [invoicing apps for freelancers](/roundup/best-invoicing-apps-for-freelancers/) roundup covers dedicated billing tools. Zelle's homepage and consumer fee page publish no dollar sending limits and advise checking with your financial institution."
+  },
+  "alternatives": [
+    {
+      "heading": "Zelle Direct Bank Transfers and Fee Structure",
+      "body": "Zelle sends domestic personal payments directly between eligible bank accounts inside more than 2,400 US bank and credit union apps and online banking portals. Zelle notes there are typically no consumer fees to send or receive, and advises confirming with your bank or credit union. A first-quarter 2026 survey on Zelle's site found $0 send, receive and request fees at 99.40% of linked consumer checking and savings accounts.\n\nBoth people need eligible US checking or savings accounts, so Zelle does not send money internationally. For enrolled recipients, money typically moves between bank accounts within minutes with no wallet balance to withdraw and no 1.75% instant cash-out fee. Zelle's homepage and consumer fee page publish no dollar sending limits.\n\nA $1,000 rent payment illustrates the math. Receiving $1,000 through Zelle at a fee-free linked bank puts $1,000 directly into the recipient's checking account for $0 in transfer fees.\n\nReceiving $1,000 through Venmo and cashing out immediately costs 1.75%, or $17.50, totaling $210 across 12 monthly rent payments. Zelle fits domestic bank-to-bank transfers, though payments to enrolled recipients cannot be canceled or reversed once sent (cancellation works only before a recipient enrolls)."
+    },
+    {
+      "heading": "PayPal Personal, Card and International Fees",
+      "body": "PayPal offers a separate wallet for domestic personal payments and international sends, with a card-funding rule that differs from Venmo's. A domestic Friends and Family payment funded by a PayPal balance, PayPal Debit Card, linked bank account or American Express Send Account costs $0. Funding a domestic personal send with a credit card or another debit card costs 2.90% + $0.30, while receiving a personal payment without currency conversion costs $0.\n\nA standard withdrawal to a linked bank account or eligible debit card costs $0, and an instant withdrawal costs 1.75% ($0.25 minimum, $25 maximum). Paper-check withdrawals cost $1.50 on accounts without a PayPal Balance account.\n\nFor international personal sends, PayPal adds 5.00% ($0.99 minimum, $4.99 maximum) on top of any domestic funding fee. Currency conversion adds a 4.00% spread when a personal or Payouts recipient gets another currency or on foreign-currency purchases, and 3.00% on other conversions unless another rate is disclosed.\n\nOn a $500 domestic credit-card-funded personal send, Venmo's 3.00% fee is $15, whereas PayPal's 2.90% ($14.50) plus $0.30 totals $14.80. PayPal saves $0.20 on that credit-card send. By contrast, funding a domestic personal send with a non-PayPal debit card costs $0 on Venmo versus 2.90% + $0.30 on PayPal.\n\nPayPal fits people who want wallet payments or its international personal-send route. PayPal also charges 2.89% + $0.49 to receive a domestic donation (plus 1.50% international), and its cryptocurrency buy and sell tiers run from 2.20% to 1.50%."
+    },
+    {
+      "heading": "Apple Cash Instant Transfer Rates and Device Limits",
+      "body": "Apple Cash provides $0 personal sends between compatible Apple devices and a slightly lower instant-transfer percentage than Venmo. It works in Wallet and Messages on iPhone, iPad, Apple Watch and Apple Vision Pro. Green Dot Bank and Apple Payments Inc. provide the service, with Federal Deposit Insurance Corporation (FDIC) coverage up to $250,000 on registered cards.\n\nApple Cash lists no monthly, purchase, customer-service or inactivity fee, and offers no overdraft or credit feature. Sending or receiving a personal payment funded by an Apple Cash balance or debit card in Wallet costs $0. A standard Automated Clearing House (ACH) bank transfer costs $0 in one to three business days, while an instant debit-card transfer costs 1.7% rounded to the nearest cent ($0.25 minimum, $25 maximum).\n\nFor an $800 instant debit-card withdrawal, Apple Cash charges 1.7% ($13.60) versus Venmo's 1.75% ($14), saving $0.40. At larger amounts, each schedule hits its $25 fee cap: with nearest-cent rounding, Apple Cash reaches $25 at $1,470.30 ($1,470.59 unrounded), while Venmo's 1.75% reaches $25 at $1,428.58 unrounded.\n\nApple Cash fits people whose sender and recipient both use Apple devices and fund personal payments with a balance or debit card. Credit-card funding is unavailable for personal sends, and Android or Windows users cannot send or receive Apple Cash. Apple Cash terms also prohibit business or commercial use."
+    },
+    {
+      "heading": "Wise Multi-Currency Transfers and Card Pricing",
+      "body": "Wise is a Venmo alternative built for moving money between currencies rather than splitting a domestic dinner tab. Registration, holding balances and sending the same currency between Wise contacts all cost $0. Sending or converting between currencies starts at 0.23%, varies by currency pair and uses the mid-market exchange rate. Wise charges no monthly subscription fee.\n\nWise provides free account details for receiving in 22 currencies, with free non-wire domestic receipt in nine currencies: Australian dollars, Canadian dollars, euros, British pounds, Hungarian forints, New Zealand dollars, Philippine pesos, Singapore dollars and US dollars. Receiving a US dollar wire or Society for Worldwide Interbank Financial Telecommunication (SWIFT) payment costs $6.11, while British pound and euro SWIFT receipts cost £2.16 and €2.39.\n\nGetting a Wise Multi-Currency Card costs $9, with no subscription fees and $0 to spend a currency already held. Automated teller machine (ATM) withdrawals are free through $250 per calendar month and cost $1.95 + 1.95% per withdrawal above that threshold, while topping up certain external e-wallets costs 2%.\n\nOn a $1,000 conversion at Wise's starting 0.23% rate, the fee is $2.30, though other currency pairs can cost more. A $1,000 Venmo send to an eligible non-US PayPal account can incur Venmo's capped $4.99 international fee plus a 4.00% conversion spread ($40), totaling $44.99. Wise fits cross-currency transfers, whereas Venmo offers $0 eligible domestic personal sends, a $0 debit card and $0 US MoneyPass ATM withdrawals."
+    },
+    {
+      "heading": "Square Business Processing Among Venmo Alternatives",
+      "body": "Square serves sellers who need card acceptance and customer invoices rather than personal peer-to-peer transfers. Square Free costs $0 per month per location, Plus costs $49 and Premium costs $149, with 30-day free trials on Plus and Premium and custom pricing above $250,000 in annual card volume. In-person tap, dip or swipe payments cost 2.6% + $0.15 on Free, 2.5% + $0.15 on Plus and 2.4% + $0.15 on Premium.\n\nOnline and invoice card payments cost 3.3% + $0.30 on Free or 2.9% + $0.30 on Plus and Premium. Invoice payments by ACH cost 1% with a $1 minimum, uncapped on Free and capped at $10 on Plus and Premium. ACH transfers through Square's web and payments application programming interfaces (APIs) cost 1% with a $1 minimum and a $5 cap across all tiers.\n\nNext-business-day external bank transfers cost $0, while instant external-bank transfers carry an unitemized fee on Square's pricing page. Square Checking is a free business checking account that gives instant debit-card access to Square sales. Square Savings lists a 1.00% annual percentage yield (APY) on folder balances over $10 (APY as published on January 23, 2026), with $0 monthly fees and no minimum deposit to open.\n\nInternational cards add a 1.5% surcharge, optional payroll starts at $35 monthly plus $6 per person paid, and point-of-sale hardware starts at $59. For 100 in-person $50 payments, Square Free costs $145 ($130 percentage plus $15 fixed) versus $105 on a Venmo Business Profile at 1.9% + $0.10.\n\nSquare fits sellers who want major card acceptance and invoicing without requiring buyers to hold Venmo. The [business bank accounts roundup](/roundup/best-business-bank-accounts/) covers dedicated business checking options separately."
+    },
+    {
+      "heading": "Xoom Cash Pickup and International Delivery",
+      "body": "Xoom handles international delivery methods that domestic Venmo balance transfers do not cover. Operated by PayPal, Xoom delivers transfers to foreign bank accounts, debit cards and mobile wallets including India's Unified Payments Interface (UPI) and Brazil's Pix instant payment system. Recipients can also use cash pickup or home cash delivery where available.\n\nXoom additionally lists international bill pay and mobile phone reloads. Cash pickup, home delivery and mobile-wallet payouts reach recipients who do not use a foreign bank account. By comparison, Venmo's international route reaches eligible non-US PayPal accounts for a 5.00% send fee ($0.99 minimum, $4.99 maximum) plus a 4.00% currency-conversion spread unless a lower spread is disclosed.\n\nXoom's homepage publishes no fixed fee table and notes that individual and aggregate transaction limits may apply. Before you submit a transfer, Xoom displays the exact fee and recipient payout in a quote.\n\nFees vary by country, selected features and other factors, and Xoom also earns revenue when converting currencies. Because Xoom's homepage provides no flat percentage or dollar table, compare a live Xoom quote directly against Wise's quoted total. Xoom fits cross-border cash pickup and wallet delivery rather than domestic US peer-to-peer splits; see the [Wise alternatives comparison](/alternatives/wise/) for additional cross-border options."
+    },
+    {
+      "heading": "Who This Is Not For",
+      "body": "Several payment and banking jobs call for a different category of product:\n\n- Business checking and treasury management sit outside peer-to-peer transfer schedules; see the [business bank accounts roundup](/roundup/best-business-bank-accounts/).\n- Dedicated multi-currency comparison beyond Wise and Xoom lives in the [Wise alternatives comparison](/alternatives/wise/).\n- Bank-specific Zelle dollar sending limits do not appear on Zelle's homepage or consumer fee FAQ, so check directly with your bank or credit union.\n- Fixed Xoom pricing prior to running a quote is unavailable on Xoom's homepage because fees vary by country, selected features and other factors.\n\nIf your main question is whether to pay with credit or debit, read the [credit card and debit card comparison](/compare/credit-card-vs-debit-card/)."
+    },
+    {
+      "heading": "What Would Change Our Answer on Venmo Alternatives",
+      "body": "A fee change could shift the lowest-cost route for the same transfer:\n\n- Venmo changing its 1.75% instant-transfer rate or $25 cap.\n- Linked banks introducing consumer Zelle transaction fees above the 99.40% fee-free survey share.\n- PayPal adjusting its 2.90% + $0.30 card-funding rate or $0 standard bank withdrawal.\n- Wise changing its 0.23% starting conversion floor or Venmo changing its 4.00% foreign-exchange spread.\n- Xoom publishing a fixed fee schedule by country and selected delivery features.\n\nFor sellers comparing Square Plus against Square Free, include the $49 monthly location fee alongside the lower in-person and invoice card rates. Browse the [financial product comparison hub](/compare/) for other fee breakdowns."
+    }
+  ],
+  "stillBetterFit": {
+    "heading": "When Venmo Is Still the Better Fit",
+    "body": "Venmo fits domestic personal sends funded by a balance, linked bank account or debit card, each priced at $0. Its $0 standard bank withdrawal avoids instant-transfer charges when a one-to-three-business-day transfer works, and unlike Apple Cash it runs across both iPhone and Android devices.\n\nFor sellers whose buyers already pay with Venmo, the standard Business Profile rate is 1.9% + $0.10 per payment. Venmo's 1.9% + $0.10 rate sits below Square Free's 2.6% + $0.15 in-person card rate on the same ticket size, though Square accepts major cards from buyers without Venmo.\n\nVenmo's debit card costs $0 to acquire or replace and charges $0 at US MoneyPass ATMs. Its Stash rewards offer up to 5% cash back at select brands (capped at $100 monthly, requiring $1,500 in qualifying monthly spend for the 5% tier). Check the fee on the transfer type you run most often before adding a second wallet."
+  },
+  "verdict": "Zelle avoids a wallet cash-out for eligible domestic bank transfers. PayPal and Apple Cash offer other personal-payment routes, Wise and Xoom address international transfers, and Square prices business card acceptance separately from Venmo's Business Profile.\n\nTo compare Venmo alternatives for your next payment, write down the funding method, destination, payment type and required arrival time, then apply the matching fees in the table.",
+  "faqs": [
+    {
+      "question": "What should I use instead of Venmo?",
+      "answer": "Zelle fits eligible US bank-to-bank payments, Apple Cash fits payments between compatible Apple devices, and PayPal fits wallet-based personal sends. Wise and Xoom cover international transfers, while Square handles business card payments and invoices. Zelle notes consumer sends and receipts are typically $0 and advises confirming with your bank or credit union."
+    },
+    {
+      "question": "Which Venmo alternative lets you move money to your bank account instantly for free?",
+      "answer": "Zelle moves money directly between eligible US bank accounts, typically within minutes for enrolled recipients, with no separate wallet cash-out fee. Zelle states consumer transactions are typically $0, and a first-quarter 2026 survey found $0 send, receive and request fees at 99.40% of linked consumer checking and savings accounts. Venmo charges 1.75% for instant withdrawals ($0.25 minimum, $25 maximum)."
+    },
+    {
+      "question": "Is PayPal or Venmo cheaper for sending money with a credit card?",
+      "answer": "PayPal costs $14.80 on a $500 domestic credit-card-funded personal send (2.90% + $0.30) versus $15 on Venmo (3.00%), saving $0.20. On a non-PayPal debit card, however, Venmo charges $0 for eligible domestic personal sends while PayPal charges 2.90% + $0.30."
+    },
+    {
+      "question": "How do Venmo Business Profile fees compare with Square?",
+      "answer": "A standard Venmo Business Profile payment costs 1.9% + $0.10, while Venmo Tap to Pay costs 2.29% + $0.09. Square Free charges 2.6% + $0.15 for an in-person card payment and 3.3% + $0.30 for an online or invoice card payment. Square Free has a $0 monthly software price per location."
+    },
+    {
+      "question": "Can you use Venmo or its alternatives to send money internationally?",
+      "answer": "Venmo supports sends to eligible non-US PayPal accounts for a 5.00% fee, subject to a $0.99 minimum and $4.99 maximum, plus applicable funding and conversion charges. Wise lists currency sending or conversion from 0.23%. Xoom supports foreign bank deposits, mobile wallets and cash delivery options, but its checked homepage provides no fixed fee table."
+    }
+  ],
+  "related": [
+    {
+      "label": "Compare financial products",
+      "href": "/compare/"
+    },
+    {
+      "label": "Wise alternatives",
+      "href": "/alternatives/wise/"
+    },
+    {
+      "label": "Credit card vs debit card",
+      "href": "/compare/credit-card-vs-debit-card/"
+    },
+    {
+      "label": "Credit card cash advance guide",
+      "href": "/guides/credit-card-cash-advance-guide/"
+    },
+    {
+      "label": "Business bank accounts",
+      "href": "/roundup/best-business-bank-accounts/"
+    },
+    {
+      "label": "Invoicing apps for freelancers",
+      "href": "/roundup/best-invoicing-apps-for-freelancers/"
+    }
+  ]
+}

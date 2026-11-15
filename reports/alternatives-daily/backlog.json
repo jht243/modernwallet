@@ -178,10 +178,113 @@
           "at": "2026-11-15T16:55:03+00:00",
           "status": "eligible",
           "note": "qualified: HTTP 200 verified & ranked by search demand"
+        },
+        {
+          "at": "2026-11-15T17:05:59+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-15"
+        },
+        {
+          "at": "2026-11-15T17:20:52+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-15T17:33:07+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "eligible",
-      "updatedAt": "2026-11-15T16:55:03+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-15T17:20:52+00:00",
+      "claimedOn": "2026-11-15",
+      "attempts": 1,
+      "lastNextAt": "2026-11-15T17:05:59+00:00",
+      "writer": "content_gen",
+      "slug": "robinhood",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "severity": "blocker",
+            "location": "alternatives[1].body & faqs[3].answer: \"Its commission overview refers to separate rate pages rather than printing exact margin-rate or cash-APY percentages.\" / \"Interactive Brokers does not print exact margin-rate percentages in its checked commission overview.\"",
+            "issue": "Contradicts fetched ibkr.txt (https://www.interactivebrokers.com/en/pricing/commissions-home.php), which prints headline USD rates directly on the overview page: \"Earn USD 3.38% on uninvested cash. Margin loans start at USD 4.38%.\" (and \"as low as 4.38%\" / \"up to USD 3.38%\"), plus plan spread formulas in its comparison table (Lite: cash Benchmark minus 1.5%, margin Benchmark plus 2.5%; Pro: cash Benchmark minus 0.5%, margin starting at Benchmark plus 1.5%, with cash interest proportional below $100,000 NAV), while linking to separate pages only for full balance-tier tables.",
+            "fix": "In alternatives[1].body paragraph 3, replace that sentence with: \"Its commissions overview advertises USD cash interest up to 3.38% (Benchmark minus 1.5% on Lite and minus 0.5% on Pro, proportional below $100,000 Net Asset Value (NAV)) and USD margin loans as low as 4.38% (Benchmark plus 2.5% on Lite; starting at Benchmark plus 1.5% on Pro), with full balance-tier tables on separate rate pages.\" In faqs[3].answer, replace the final sentence with: \"Interactive Brokers' commissions overview lists USD margin loans as low as 4.38% (Benchmark plus 2.5% on Lite, or starting at Benchmark plus 1.5% on Pro), with full tier schedules on its separate margin page.\""
+          },
+          {
+            "severity": "blocker",
+            "location": "alternatives[4].body: \"Cryptocurrency costs 0.75% to open and 0.75% to close.\" and \"The pricing page advertises one flat margin rate for new margin accounts or accounts bringing at least $25,000 in new assets. It does not itemize an exact base margin-rate table, an uninvested cash sweep APY or an IRA contribution match. Without those figures, a cash-yield or margin-interest total cannot be calculated from that page.\"",
+            "issue": "Two factual errors against fetched tastytrade.txt (https://tastytrade.com/pricing/): (1) lines 127-137 list standard Cryptocurrency at 1% per total purchase to open and 1% to close, while 0.75% open / 0.75% close applies only to Bitcoin and Ethereum (\"Cryptocurrency (BTC/ETH)\"); (2) lines 217-224 explicitly print \"6.75% FLAT MARGIN RATE\" (\"Base Rate - 3.25%\") across any margin balance size when opening a first tastytrade margin account or bringing $25,000+ in new assets.",
+            "fix": "In alternatives[4].body paragraph 2, change the crypto sentence to: \"Cryptocurrency costs 1% to open and 1% to close, or 0.75% each way for Bitcoin (BTC) and Ethereum (ETH).\" In paragraph 3, replace the first three sentences with: \"The pricing page advertises a 6.75% flat margin rate (Base Rate minus 3.25%) across any balance size when you open a first tastytrade margin account or bring at least $25,000 in new assets. It does not itemize non-promotional margin tiers, an uninvested cash sweep APY or an IRA contribution match, so cash-yield and non-promotional margin totals cannot be calculated from that page.\""
+          },
+          {
+            "severity": "blocker",
+            "location": "rows[3].pricing, alternatives[2].body & faqs[4].answer: \"and $0 account minimum\" / \"It lists a $0 initial deposit and $0 monthly account fee. An unfunded new account closes after 90 days.\" / \"A full outgoing account transfer costs $75, a partial transfer $0 and an outgoing wire $25.\" / \"E*TRADE lists $0 for a partial transfer.\"",
+            "issue": "Two factual errors against fetched etrade.txt (https://us.etrade.com/what-we-offer/pricing-and-rates): (1) \"no monthly account fees and no minimum deposit\" (line 200) and \"No minimum initial deposit is required to open an account however, accounts not funded within 90 days will be closed\" (lines 620, 668) appear strictly in Morgan Stanley Private Bank disclosures for the Premium Savings Account and CDs, not E*TRADE brokerage accounts; (2) lines 471-472 print only \"Account transfers (outgoing): $75 for full transfers\" and never mention partial account transfers or a $0 partial-transfer fee.",
+            "fix": "In rows[3].pricing, remove \"and $0 account minimum\" (write \"$0 online US stock and ETF commissions; options $0.65/contract...\"). In alternatives[2].body paragraph 1, delete \"It lists a $0 initial deposit and $0 monthly account fee. An unfunded new account closes after 90 days.\" (or move those terms to paragraph 3 explicitly attributed to the Premium Savings Account). In alternatives[2].body paragraph 3, change the transfer sentence to: \"A full outgoing account transfer costs $75, and an outgoing wire costs $25 ($0 incoming).\" In faqs[4].answer, remove \"E*TRADE lists $0 for a partial transfer.\" and state that E*TRADE's pricing overview lists $75 for full outgoing transfers without specifying a partial-transfer fee."
+          },
+          {
+            "severity": "blocker",
+            "location": "alternatives[5].body, chooseSection.body, verdict & faqs[0].answer / faqs[3].answer: \"Its homepage also advertises 3.75% APY for higher-tier accounts or its $500,000-plus exclusive program.\" / \"Its homepage does not publish futures trading commissions or advertise a 3% IRA contribution match.\" / \"All seven brokerages list $0 online US stock and ETF commissions...\" / \"while Public lists a 5.15% base rate across balances.\"",
+            "issue": "Four discrepancies against public_com.txt and public_pricing.txt: (1) Public's nav lists \"3.30% APY on your cash with no fees\" (line 36) while the homepage hero displays \"3.75% APY* on cash\" / \"High-Yield Cash Account 3.75% APY*\" (lines 94, 105) with zero text tying 3.75% APY to higher-tier accounts or Public Concierge ($500,000+, lines 80-81, 189-196); (2) lines 43-44 and 110-111 explicitly advertise a 1% match on annual Traditional and Roth IRA contributions (and an uncapped 1% transfer match), which the \"3%\" wording obscures; (3) public_com.txt prints \"no commissions\" only under Trading API (\"Program your trading with no commissions\", line 23) and refers general stock/ETF commissions to Public's Fee Schedule; (4) lines 151-154 list \"Base rate 5.15%\" and \"Lowest rate 4.20%\", so 5.15% is the entry base tier rather than a flat rate across all balances (and similarly rows[0].pricing says \"Margin starts at 5.25%\" for Robinhood when 5.25% is the highest rate up to $50,000, stepping down to 4.20% at $50M+).",
+            "fix": "(1) In alternatives[5].body paragraph 1, replace sentence 2 with: \"Public's site navigation lists 3.30% APY with no fees on its High-Yield Cash Account, while its homepage hero displays 3.75% APY* on cash and separately offers Public Concierge for accounts of $500,000 or more.\" (In paragraph 4, note the $330/$660 figures use the 3.30% rate, while 3.75% would yield $375 on $10,000.) (2) In alternatives[5].body paragraph 3, state: \"Its homepage advertises a 1% annual IRA contribution match (and an uncapped 1% portfolio-transfer match) rather than Robinhood Gold's 3% match, and does not publish futures commissions.\" (3) In chooseSection.body, verdict, and faqs[0].answer, state that Robinhood and five alternatives publish $0 online US stock and ETF commissions while Public advertises commission-free API trading on its homepage. (4) In faqs[3].answer, change \"across balances\" to \"(with lower tiers down to 4.20%)\", and in rows[0].pricing change \"Margin starts at 5.25%\" to \"Margin 5.25% up to $50,000 (down to 4.20% at $50M+)\"."
+          },
+          {
+            "severity": "major",
+            "location": "alternatives[0].body: \"Schwab lists $6.95 for online Over-The-Counter (OTC) equities and $50 for online foreign-stock transactions.\" and \"Human-advisor programs have minimums ranging from $25,000 to $2,000,000, with listed starting advisory fees ranging from 0.40% to 0.95% by program.\"",
+            "issue": "Against schwab.txt: (1) Managed Account Select Equity Strategies ($100,000 minimum, lines 364-370) starts at 1.00%, not 0.95%, so published starting fees across Schwab's other managed/advisory programs run from 0.40% to 1.00% (while Schwab Advisor Network at $2,000,000 states advisor-set fees); (2) not all of those programs are \"Human-advisor programs\" (Schwab Personalized Indexing at 0.40% / $100,000 minimum is direct indexing); (3) lines 194-209 specify the $50 online fee applies to foreign-stock transactions placed on the US OTC market (online trades directly on foreign local exchanges are not available, and Canadian securities are $6.95 online).",
+            "fix": "In paragraph 2, write \"$50 for online foreign-stock transactions on the US OTC market\". In paragraph 3, rewrite the advisory sentence as: \"Other managed and advisory programs carry minimums from $25,000 to $2,000,000, with listed starting fees from 0.40% (Schwab Personalized Indexing) to 1.00% (Managed Account Select Equity Strategies), or advisor-set fees through Schwab Advisor Network.\""
+          },
+          {
+            "severity": "major",
+            "location": "alternatives[1].body: \"Options commissions run from $0.15 to $0.65 per contract by volume, with $0.65 standard on Fixed and Lite and a $1 order minimum on applicable schedules.\"",
+            "issue": "In fetched ibkr.txt, \"Minimum per order: USD 1.00\" appears only under IBKR Pro - Fixed for US stocks and ETFs (lines 570-578). For options, ibkr.txt prints $0.15 to $0.65 per contract (Tiered) and $0.65 per contract (Fixed/Lite) and notes only that \"Minimum order fees apply\", without stating $1 as the options order minimum.",
+            "fix": "Replace \"and a $1 order minimum on applicable schedules.\" with \"with per-order minimums applying by schedule.\""
+          },
+          {
+            "severity": "major",
+            "location": "alternatives[3].body: \"It also lists a $0 deposit minimum and $0 account maintenance fee.\" and \"For 1,200 equity-options contracts in a year, Webull's listed broker commission is $0, with regulatory charges separate.\"",
+            "issue": "Fetched webull.txt (https://www.webull.com/pricing, line 81) states \"0 commission trades and no deposit minimums\" and never mentions an account maintenance fee. Line 208 also notes a \"$0.10 per contract fee applies for oversized option orders.\"",
+            "fix": "In paragraph 1, change that sentence to: \"It also lists no deposit minimums, plus a $0.10 per-contract fee on oversized options orders.\" In paragraph 4, clarify \"For 1,200 equity-options contracts in a year on standard-sized orders, Webull's listed broker commission is $0, with regulatory charges separate.\""
+          },
+          {
+            "severity": "major",
+            "location": "alternatives[0].body: \"It lists Traditional, Roth, Rollover, Inherited, SEP and SIMPLE IRA accounts, giving retirement savers several listed account types to consider.\"",
+            "issue": "Fails _content-standard.md SEO acronym gate and Page Rule 5 (\"Define every acronym on first use\"): SEP and SIMPLE appear unexpanded on first use.",
+            "fix": "Expand on first use: \"Simplified Employee Pension (SEP) and Savings Incentive Match Plan for Employees (SIMPLE) IRA accounts\"."
+          },
+          {
+            "severity": "major",
+            "location": "intro (paragraph 1) & tableTitle: \"Use Charles Schwab, Interactive Brokers, E*TRADE, Webull, tastytrade or Public instead of Robinhood...\" and \"Robinhood and Alternatives: Published Prices Compared\"",
+            "issue": "Fails _content-standard.md SEO primary-keyword gate and Page Rule 5: \"Robinhood alternatives\" does not appear anywhere in intro, and tableTitle splits the keyword as \"Robinhood and Alternatives\" (leaving only 1 plural and 1 singular heading match). Also, opening with imperative \"Use ... instead of Robinhood\" leans toward directive advice rather than neutral listing framing (Site Adapter line 205).",
+            "fix": "Change intro sentence 1 to: \"Charles Schwab, Interactive Brokers, E*TRADE, Webull, tastytrade and Public are the main Robinhood alternatives, splitting on options fees, margin rates and whether cash yield requires a subscription.\" Change tableTitle to: \"Robinhood Alternatives: Published Prices Compared\"."
+          },
+          {
+            "severity": "major",
+            "location": "h1, alternatives[0].heading, alternatives[2].heading, alternatives[5].heading: \"Robinhood Alternatives 2026: Commissions, Options Fees and Rates Compared\" / \"Charles Schwab Commissions, Options Fees and Robo Tiers\" / \"E*TRADE Options Tiers, Futures Fees and Savings Rates\" / \"Public Options Rebates, Margin Rate and Cash Yield\"",
+            "issue": "Fails _anti-ai-language.md Headline tells gate (lines 68 & 149) and _content-standard.md PREFLIGHT (line 157): all four headings use a three-item headline tricolon.",
+            "fix": "Use two-item Title Case headings instead: h1 -> \"Robinhood Alternatives 2026: Trading Fees and Rates Compared\"; alternatives[0].heading -> \"Charles Schwab Options Fees and Automated Portfolios\"; alternatives[2].heading -> \"E*TRADE Options Tiers and Futures Commissions\"; alternatives[5].heading -> \"Public Options Rebates and Fee-Free Cash Yield\"."
+          },
+          {
+            "severity": "major",
+            "location": "alternatives[1].body -> alternatives[2].body (sentences 53-57: lengths [12, 15, 12, 13, 14]) and stillBetterFit.body (sentences 149-153: lengths [15, 14, 15, 16, 17]), plus 24 paragraphs of 4-6 sentences across chooseSection.body and alternatives[0..5].body",
+            "issue": "Fails _content-standard.md GATE — Sentence rhythm (two runs of 5 consecutive sentences sit within a 3-word spread) and STYLE paragraph-length rule (\"Keep paragraphs to 3 sentences max\"; e.g. alternatives[2].body paragraph 3 has 6 sentences, and intro sentence 4 is 34 words).",
+            "fix": "Shorten or lengthen at least one sentence in alternatives[1].body paragraph 4 (e.g., \"Interactive Brokers offers no IRA match.\": 6 words) and one sentence in stillBetterFit.body paragraphs 2-3 (e.g., \"Shared $0 stock commissions alone do not justify moving accounts.\": 10 words) so no 5 consecutive sentences fall within 3 words of each other, split 4-6 sentence paragraphs into 2-3 sentence paragraphs, and split the 34-word Gold sentence in intro paragraph 2 into two shorter sentences."
+          },
+          {
+            "severity": "major",
+            "location": "alternatives[6].body & faqs[4].answer: \"The table prices the listed trades and account terms as of November 15, 2026. If a needed rate is absent from the checked pricing overview, this comparison leaves that rate unpriced rather than assigning it an estimate.\" / \"The checked facts do not establish outgoing transfer prices for every other brokerage on this page.\"",
+            "issue": "Triggers _content-standard.md GATE — Byline in body prose (\"on/as of [date]\" inside body prose rather than template byline/tableNote) and PREFLIGHT / _anti-ai-language.md page self-reference ban (\"this comparison leaves\", \"on this page\", \"the checked facts\").",
+            "fix": "In alternatives[6].body paragraph 3, replace those two sentences with: \"Published commissions also cannot measure execution quality or lock in variable cash APYs. Where a brokerage omits a margin rate or cash yield from its main fee overview, leave that line unpriced rather than plugging an estimate into a 12-month total.\" In faqs[4].answer, replace the last sentence with: \"Charles Schwab, Interactive Brokers, tastytrade and Public do not list an outgoing account-transfer fee on their main pricing overviews.\""
+          }
+        ],
+        "recordedAt": "2026-11-15T17:33:07+00:00"
+      }
     },
     {
       "vendor": "Cash App",
@@ -238,10 +341,95 @@
           "at": "2026-11-15T16:55:03+00:00",
           "status": "eligible",
           "note": "qualified: HTTP 200 verified & ranked by search demand"
+        },
+        {
+          "at": "2026-11-15T17:05:59+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-15"
+        },
+        {
+          "at": "2026-11-15T17:21:01+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-15T17:35:11+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "eligible",
-      "updatedAt": "2026-11-15T16:55:03+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-15T17:21:01+00:00",
+      "claimedOn": "2026-11-15",
+      "attempts": 1,
+      "lastNextAt": "2026-11-15T17:05:59+00:00",
+      "writer": "content_gen",
+      "slug": "venmo",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "severity": "major",
+            "location": "rows[1].pricing, chooseSection.body, alternatives[0].body, alternatives[6].body, faqs[0].answer, faqs[1].answer — e.g. \"Zelle charges $0 to send or receive; a first-quarter 2026 survey found $0 send, receive and request fees at 99.40% of linked consumer accounts. Each participating bank sets its own sending limits\" and \"Zelle has no 1.75% instant cash-out fee; it also cannot fund a payment with a credit card or send money internationally. Individual banks set per-transaction and daily sending limits, so Zelle's consumer fee page gives no single network-wide dollar limit.\"",
+            "issue": "Neither zelle_home.txt nor zelle_fees.txt mentions sending limits, per-transaction or daily limits, or credit cards (0 hits for 'limit', 'daily', and 'card'). Those sources also state 'Typically, there are no fees for consumers to send or receive money with Zelle®. We recommend confirming with your bank or credit union that they do not charge fees for Zelle® transactions' alongside the Q1 2026 survey showing $0 fees at 99.40% of linked consumer accounts, rather than an unconditional 'Zelle charges $0'. In addition, alternatives[0].body paragraph 1 contains a 34-word sentence and paragraph 2 joins two independent clauses with a semicolon ('Zelle has no 1.75% instant cash-out fee; it also cannot...'), violating _content-standard.md PREFLIGHT and _anti-ai-language.md.",
+            "fix": "Ground all Zelle claims strictly in zelle_home.txt and zelle_fees.txt: (1) In rows[1].pricing write: \"Typically $0 consumer fees to send or receive. A first-quarter 2026 survey found $0 send, receive and request fees at 99.40% of linked consumer checking and savings accounts. No dollar sending limits published on Zelle's homepage or consumer fee FAQ\". (2) In chooseSection.body final sentence write: \"Zelle's homepage and consumer fee page publish no dollar sending limits and advise checking with your financial institution.\" (3) In alternatives[0].body split the 34-word sentence into two sentences under 25 words, replace the semicolon with a period, replace the unsupported credit-card and daily/per-transaction limit claims with the documented facts that both parties must hold eligible US checking or savings accounts (no international sends) and that Zelle's checked pages list no dollar sending limits. (4) Update alternatives[6].body bullet 3 and faqs[0]/faqs[1] to match."
+          },
+          {
+            "severity": "major",
+            "location": "rows[6].pricing, alternatives[5].body, alternatives[6].body, alternatives[7].body — e.g. \"Fee shown in transfer quote; no fixed public fee table or transfer limits on the checked homepage. Fees vary by destination, delivery feature and funding method; currency conversion also contributes to Xoom's revenue\" and \"Fees vary by destination country, selected delivery feature and funding method.\"",
+            "issue": "xoom_root.txt line 85 states 'Service availability and fees vary by country, features selected and other factors. Individual and aggregate transaction limits may also apply. In addition to transaction fees, Xoom makes money when it changes your send currency into a different currency.' Nowhere in xoom_root.txt does Xoom mention 'funding method'. In addition, alternatives-daily-auto.md Page Rule 4 specifies starting cells for vendors without a published price table with 'Quote-based; no public price'.",
+            "fix": "Replace 'funding method' across rows[6].pricing, alternatives[5].body, alternatives[6].body bullet 4, and alternatives[7].body bullet 5 with Xoom's actual disclosure ('country, selected features and other factors'). Start rows[6].pricing with: \"Quote-based; no public price on Xoom's homepage. Exact fee and recipient amount shown before sending. Fees vary by country, selected features and other factors, and currency conversion also generates revenue for Xoom\"."
+          },
+          {
+            "severity": "major",
+            "location": "rows[4].pricing and alternatives[3].body — \"Wise offers free local account details for receiving in 22 currencies.\" and \"physical card $9\" / \"A Wise physical card costs $9 once, with no monthly subscription.\"",
+            "issue": "wise_pricing.txt line 113 states 'Getting account details to receive in 22 currencies: Free', while free non-wire domestic receipt applies in 9 currencies and SWIFT receipt applies in USD, GBP, EUR plus 'an additional 19 currencies' (22 total). Calling all 22 'local account details' misstates the source. Also, wise_pricing.txt lines 100-102 list 'Getting the Wise Multi-Currency Card / No subscription fees / 9 USD' without stating 'physical'.",
+            "fix": "In alternatives[3].body paragraph 2 change \"free local account details for receiving in 22 currencies\" to \"free account details for receiving in 22 currencies\". In rows[4].pricing change \"physical card $9\" to \"Wise Multi-Currency Card $9\", and in alternatives[3].body paragraph 3 change \"A Wise physical card costs $9 once, with no monthly subscription.\" to \"Getting a Wise Multi-Currency Card costs $9, with no subscription fees.\""
+          },
+          {
+            "severity": "major",
+            "location": "alternatives[4].body paragraphs 2-3 — \"Invoice payments by ACH cost 1%, with a $1 minimum. That fee has no cap on Free, a $10 cap on Plus and Premium, and a $5 cap through Square's application programming interface.\" and \"Square Checking gives instant access to sales through a business debit card with $0 monthly fees. Square Savings lists a 1.00% annual percentage yield (APY) and no fees or minimums.\"",
+            "issue": "(1) In square_pricing.txt lines 1214-1227, 'ACH bank transfer (via API)' ('Applies to ACH transfers through the Web Payments SDK and Payments API: 1%, $1 min, $5 fee cap' across all three plans) is a separate transaction type from 'ACH bank transfer (via invoice)', not a cap on invoice ACH payments; starting with 'That fee' conflates the two rows and triggers backward-pronoun in _anti-ai-language.md. (2) In square_pricing.txt line 1377 (footnote 3), Square Savings accrues 1.00% APY 'per folder on folder balances over $10. APY is subject to change, and current as of Jan 23, 2026', and the ModernWallet site adapter (alternatives-daily-auto.md line 210) requires variable APYs to carry their published date ('APY as published on <date>'). Also, square_pricing.txt line 1159 calls Square Checking 'a free checking account' while '$0 monthly fees' is stated in footnote 3 for Square Savings.",
+            "fix": "In alternatives[4].body paragraph 2 write: \"Invoice payments by ACH cost 1% with a $1 minimum, uncapped on Free and capped at $10 on Plus and Premium. ACH transfers through Square's web and payments application programming interfaces cost 1% with a $1 minimum and a $5 cap across all tiers.\" In paragraph 3 write: \"Square Checking is a free business checking account that gives instant debit-card access to Square sales. Square Savings lists a 1.00% annual percentage yield (APY) on folder balances over $10 (APY as published on January 23, 2026), with $0 monthly fees and no minimum deposit to open.\""
+          },
+          {
+            "severity": "major",
+            "location": "alternatives[2].body final sentence into alternatives[3].body paragraph 1 — \"It also lacks the Venmo Business Profile and Tap to Pay merchant profile described here.\" (15 words) followed by four consecutive Wise sentences of 16, 16, 18, and 17 words",
+            "issue": "Fails GATE — Sentence rhythm in _content-standard.md ('5 or more consecutive sentences fall within 3 words of each other': lengths [15, 16, 16, 18, 17], spread = 3). In addition, 'described here' violates _content-standard.md PREFLIGHT ('When you mention the page itself: Do not.') and _anti-ai-language.md page self-reference, while apple_cash_terms.txt line 131 directly states 'You may not use the Services for business or commercial purposes.'",
+            "fix": "Replace the final sentence of alternatives[2].body with \"Apple Cash terms also prohibit business or commercial use.\" (9 words), and shorten sentence 4 of alternatives[3].body to \"Wise charges no monthly subscription fee.\" (6 words), changing the sequence to [9, 16, 16, 18, 6] and removing the page self-reference."
+          },
+          {
+            "severity": "major",
+            "location": "intro paragraph 1 sentence 1 and faqs[0].answer sentence 1 — \"Use Zelle for direct domestic bank transfers, PayPal or Apple Cash for wallet payments, Wise or Xoom for international transfers, and Square for business card payments instead of Venmo.\" and \"Use Zelle for eligible US bank-to-bank payments, Apple Cash for payments between compatible Apple devices, or PayPal for wallet-based personal sends.\"",
+            "issue": "(1) Missing primary keyword 'Venmo alternatives' in the first paragraph of intro, failing alternatives-daily-auto.md Page Rule 5 (line 56) and _content-standard.md ## SEO (line 196: 'Use the primary keyword in the SEO title, H1, first paragraph, the closing next-action sentence, and 2-3 H2/H3 headings'). (2) Imperative 'Use Zelle...' framing conflicts with alternatives-daily-auto.md non-advice rule (lines 17, 74, 204: 'they give no advice', 'fits people who..., never you should...').",
+            "fix": "Rewrite intro sentence 1 as: \"Zelle, PayPal, Apple Cash, Wise, Square and Xoom are six Venmo alternatives covering domestic bank transfers, personal wallets, international sends and business card payments.\" Rewrite faqs[0].answer sentence 1 as: \"Zelle fits eligible US bank-to-bank payments, Apple Cash fits payments between compatible Apple devices, and PayPal fits wallet-based personal sends.\""
+          },
+          {
+            "severity": "minor",
+            "location": "alternatives[1].body paragraph 2 and alternatives[2].body paragraph 3 — \"Currency conversion adds a 4.00% spread when the recipient receives another currency, or 3.00% on other conversions.\" and \"At larger amounts, each schedule reaches its $25 fee cap: the percentage calculation reaches that level above $1,470.59 for Apple Cash and above $1,428.58 for Venmo.\"",
+            "issue": "(1) In paypal_fees.txt lines 415-420, PayPal's 4.00% spread (or other disclosed amount) also applies when paying for goods or services in another currency and on PayPal Payouts in another currency, with 3.00% (or other disclosed amount) on 'All other transactions'. (2) Unrounded 1.7% and 1.75% already exceed $25.00 at (not strictly above) $1,470.59 ($25.00003) and $1,428.58 ($25.00015), i.e. above $1,470.58 and $1,428.57, and because apple_cash_terms.txt line 64 rounds the 1.7% fee to the nearest cent, Apple Cash rounds to $25.00 starting at $1,470.30 ($24.9951).",
+            "fix": "In alternatives[1].body write: \"Currency conversion adds a 4.00% spread when a personal or Payouts recipient gets another currency or on foreign-currency purchases, and 3.00% on other conversions (unless another rate is disclosed).\" In alternatives[2].body write: \"At larger amounts, each schedule hits its $25 fee cap: with nearest-cent rounding, Apple Cash reaches $25 at $1,470.30 ($1,470.59 unrounded), while Venmo's 1.75% reaches $25 at $1,428.58 unrounded.\""
+          },
+          {
+            "severity": "minor",
+            "location": "alternatives[5].body (Xoom) and alternatives[6].body (Who This Is Not For) — \"Xoom additionally lists international bill pay and mobile phone reloads. Those delivery choices matter when a recipient needs cash or a wallet payment rather than a transfer to a bank account.\", \"Brazil's PIX instant payment system\", and \"This comparison does not settle every question about where to keep or move money.\"",
+            "issue": "(1) In alternatives[5].body paragraph 2, 'Those delivery choices' refers back to 'international bill pay and mobile phone reloads' rather than cash pickup and mobile wallets from paragraph 1 (backward-pronoun / logical mismatch under _anti-ai-language.md). (2) All-caps 'PIX' appears without acronym expansion even though Pix is a proper noun, not an acronym; also 'Xoom's checked homepage' and 'Square's checked pricing page' sound unnatural aloud. (3) 'This comparison does not settle...' and '...will not find a network-wide figure here' in alternatives[6].body reference the page itself (_content-standard.md PREFLIGHT line 151).",
+            "fix": "In alternatives[5].body write 'Brazil's Pix instant payment system', replace 'Those delivery choices matter...' with 'Cash pickup, home delivery and mobile-wallet payouts reach recipients who do not use a foreign bank account.', and change 'checked homepage' / 'checked pricing page' to 'homepage' / 'pricing page'. In alternatives[6].body replace the opening sentence with 'Several payment and banking jobs call for a different category of product.' and remove 'here' in bullet 3."
+          },
+          {
+            "severity": "minor",
+            "location": "intro paragraph 2, rows[0..6].pricing, alternatives[1].body paragraph 3, stillBetterFit.body paragraph 2, faqs[2].answer, and 4-to-5-sentence paragraphs across body sections — e.g. \"Venmo also charges 2.99% when a sender marks a personal-profile payment as goods and services, so the reason for a payment changes its price.\" and \"That saves $0.20 on this transaction. A domestic personal send funded by a debit card other than the PayPal Debit Card costs $0 on Venmo and 2.90% + $0.30 on PayPal, so the cheaper choice changes with the funding method.\"",
+            "issue": "(1) In intro paragraph 2, 'Venmo also charges 2.99% when a sender marks...' omits that the recipient/seller pays the 2.99% fee (venmo_fees.txt lines 83-85). (2) Semicolons appear across rows[0..6].pricing (_content-standard.md PREFLIGHT: 'No semicolons joining clauses; use a period'). (3) alternatives[1].body paragraph 3 has a 34-word sentence and faqs[2].answer has a 31-word sentence (_anti-ai-language.md ~30-word cap), plus bare sentence-initial 'That' in alternatives[1].body ('That saves $0.20...') and stillBetterFit.body ('That is below Square Free's...'). (4) 21 body paragraphs run 4-5 sentences vs _content-standard.md ## STYLE ('Keep paragraphs to 3 sentences max').",
+            "fix": "Clarify 'Venmo also charges the recipient 2.99%...' in intro paragraph 2; replace semicolons in rows[0..6].pricing with periods; split the 34-word PayPal sentence and tighten the 31-word FAQ sentence below 28 words; replace sentence-initial 'That' with 'PayPal saves $0.20...' and 'Venmo's 1.9% + $0.10 rate sits below...'; and split 4-to-5-sentence body paragraphs into 2-to-3-sentence paragraphs."
+          }
+        ],
+        "recordedAt": "2026-11-15T17:35:11+00:00"
+      }
     },
     {
       "vendor": "Wise",
@@ -969,10 +1157,95 @@
           "at": "2026-11-15T16:55:03+00:00",
           "status": "eligible",
           "note": "qualified: HTTP 200 verified & ranked by search demand"
+        },
+        {
+          "at": "2026-11-15T17:05:59+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-15"
+        },
+        {
+          "at": "2026-11-15T17:19:04+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-15T17:30:24+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "eligible",
-      "updatedAt": "2026-11-15T16:55:03+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-15T17:19:04+00:00",
+      "claimedOn": "2026-11-15",
+      "attempts": 1,
+      "lastNextAt": "2026-11-15T17:05:59+00:00",
+      "writer": "content_gen",
+      "slug": "turbotax",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "severity": "blocker",
+            "location": "rows[2].pricing (\"A sibling-page promotion says $55 flat for new customers filing by May 1, while 1040.com's own homepage publishes $34.99.\"), alternatives[1].body (\"A sibling-page promotion mentions $55 flat for new customers filing by May 1, while 1040.com's own homepage publishes $34.99 for federal and state filing.\"), and alternatives[7].body (\"- A change to 1040.com's $34.99 homepage rate or its separate $55 promotion would change its flat-rate position.\")",
+            "issue": "Factual misattribution between taxact.txt and 1040com.txt. 1040com.txt publishes only $34.99 flat and never mentions $55. The '$55 flat to file your federal & state tax return! New customers can file federal and state personal tax return for just $55 total. Must file by 5/1.' text at lines 383-385 of taxact.txt is TaxAct's own sticky new-customer offer banner on taxact.com/taxes-online, not a 1040.com promotion (1040.com only appeared earlier in TaxAct's footer link list under Family Brands at line 367).",
+            "fix": "Remove all three references attributing the $55 May 1 offer to 1040.com. Set rows[2].pricing to \"$34.99 flat for federal and state returns, including multiple states and supported forms and schedules; pay when filing.\" In alternatives[1].body paragraph 3, replace the discrepancy claims with 1040.com facts from 1040com.txt (e.g., Internal Revenue Service (IRS)-authorized e-file provider operated by a Taxwell company, pay only when filing, and the worked $34.99 Schedule C + stock sales + two-state example). If you mention the $55 new-customer federal-and-state offer by May 1, place it in TaxAct's row/section as a promotional banner on taxact.com/taxes-online."
+          },
+          {
+            "severity": "blocker",
+            "location": "alternatives[3].body (\"Jackson Hewitt Online also lists federal and state extension filing, free live chat support, a Maximum Refund Guarantee and Worry-Free Tax Protection up to $1,500.\" and \"A household filing itemized deductions and two state returns pays $25 at the published online rate\")",
+            "issue": "Factual conflation in jacksonhewitt.txt. 'Worry-Free Tax Protection' only appears in the site-wide navigation menu under More Tax Services (lines 16, 71), not as an included feature of the $25 Jackson Hewitt Online DIY product (line 262 excludes add-on services like Protection Plus and eCollect from the $25 guarantee), while 'up to $1,500' comes from the in-office Early Tax Refund Advance (ETRA) loan ('come in for our Money Today Guarantee', lines 103-108, 273-274). Additionally, 'itemized deductions' is not explicitly named on jacksonhewitt.txt (lines 142-151 name W-2, unemployment, gig/1099 freelance income, Child Tax Credits, Form 1098-T education credits, and multi-state returns) and does not trigger TurboTax's $139 top DIY tier (1099 self-employment does).",
+            "fix": "Replace \"a Maximum Refund Guarantee and Worry-Free Tax Protection up to $1,500.\" with \"a Maximum Refund Guarantee, a 100% Accuracy Guarantee and a Satisfaction Guarantee, while deducting prep fees from a refund through eCollect carries an additional fee.\" In paragraph 3, replace \"A household filing itemized deductions and two state returns\" with \"A gig worker filing 1099 freelance income and two state returns\"."
+          },
+          {
+            "severity": "blocker",
+            "location": "alternatives[5].body (\"Standard costs $199 a year, equivalent to $16.58 a month when billed yearly. It includes bookkeeping, quarterly tax estimates, expert guidance, annual federal filing and up to two state returns.\")",
+            "issue": "Factual plan-tier misattribution in keepertax.txt. Per keepertax.txt lines 483-523 and 568-573, Keeper Standard ($199/year) includes year-round bookkeeping (expense, deduction, income, and mileage tracking) plus federal and up to 2 state returns 'Reviewed & signed by a tax pro', whereas 'Quarterly taxes' ('Pay quarterly taxes') and 'Tax pro consultations' / 'expert guidance' ('Meet with a tax pro') are Premium ($399/year) features alongside audit protection, rentals/K-1s/investors, amended returns, and up to 5 years of late returns.",
+            "fix": "In alternatives[5].body paragraph 2, change the second sentence to: \"It includes year-round expense, income and mileage tracking plus annual federal and up to two state returns reviewed and signed by a tax professional.\" In paragraph 3, update Premium ($399/year) to note that it adds three or more state returns, quarterly tax payments, one-on-one tax pro consultations, audit protection, rental and K-1 investment coverage, amended returns and late filing up to five years back."
+          },
+          {
+            "severity": "major",
+            "location": "turbotax-sources.json, stillBetterFit.body (\"TurboTax Desktop separately includes up to five federal electronic filings. Deluxe and Premier include one state download, although state electronic filing costs extra.\"), and faqs[4].answer (\"TurboTax charges an additional $40 Refund Processing Service fee for an individual return paid from a federal refund.\")",
+            "issue": "Source omission and Online-vs-Desktop conflation across turbotax_online.txt and turbotax_desktop.txt. First, stillBetterFit.body cites TurboTax Desktop facts from https://turbotax.intuit.com/personal-taxes/cd-download/, which is missing from turbotax-sources.json, and omits Home & Business (which also includes 1 state download per turbotax_desktop.txt lines 140-146). Second, turbotax_online.txt (lines 502-503) states 'Pay for TurboTax out of your federal refund or state refund: Individual taxes only... A $40 service fee may apply to this payment method', whereas 'Refund Processing Service fee' is the Desktop term in turbotax_desktop.txt line 417 ('Pay for add-on products out of your federal refund. A $40 Refund Processing Service fee applies').",
+            "fix": "Add {\"product\": \"TurboTax Desktop\", \"url\": \"https://turbotax.intuit.com/personal-taxes/cd-download/\", \"checkedOn\": \"2026-11-15\"} to turbotax-sources.json, and update stillBetterFit.body to \"Deluxe, Premier and Home & Business each include one state download, although state electronic filing costs extra.\" Update faqs[4].answer (and intro / rows[0].pricing / chooseSection.body) to match turbotax_online.txt: e.g., \"For TurboTax Online individual returns, Intuit states a $40 service fee may apply when paying fees from a federal or state refund (TurboTax Desktop lists a $40 Refund Processing Service fee for add-on products paid from a federal refund).\""
+          },
+          {
+            "severity": "major",
+            "location": "rows[1].pricing (\"Upper paid DIY prices and per-state dollar fees are not itemized on the checked page.\")",
+            "issue": "Unexpanded acronym on first use (_content-standard.md SEO rule & Page Rule 5). 'DIY' appears in rows[1].pricing without being defined on first use as 'Do It Yourself (DIY)'.",
+            "fix": "Replace \"Upper paid DIY prices\" with \"Upper paid Do It Yourself prices\" in rows[1].pricing (since DIY is not used anywhere else in the draft)."
+          },
+          {
+            "severity": "major",
+            "location": "alternatives[7].body (\"- A fixed TurboTax paid-plan state price would make its total easier to compare with flat-rate filing.\\n- A change to TurboTax Free Edition's form rules or $0 state inclusion would change the simple-return comparison.\\n- A change to 1040.com's $34.99 homepage rate or its separate $55 promotion would change its flat-rate position.\\n- A new per-state charge at Jackson Hewitt Online would change the $25 multi-state calculation.\\n- A change to OLT's $9.95 or $7.95 state fees would change its one-state totals.\")",
+            "issue": "Fails _content-standard.md GATE — Sentence rhythm (5 consecutive sentences with word counts [16, 17, 17, 14, 14], all within a 3-word span) and _anti-ai-language.md symmetrical listicle repetition ('A change to X would change Y' repeated across bullets).",
+            "fix": "Rewrite the five bullets with varied sentence lengths (>3-word spread across every 5-sentence window) and distinct verbs while removing the false $55 1040.com claim, e.g.: \"- TurboTax publishing fixed per-state dollar prices on its paid online tiers so multi-state filers can sum their bill upfront.\\n- TurboTax expanding or narrowing Free Edition's simple Form 1040 rules.\\n- 1040.com changing its $34.99 flat federal-and-state rate or introducing a $0 simple-return tier.\\n- Jackson Hewitt Online adding per-state charges above its $25 flat fee.\\n- OLT changing its $0 all-forms federal plan or its $9.95 and $7.95 state fees.\""
+          },
+          {
+            "severity": "minor",
+            "location": "alternatives[2].body (\"Both tiers include all forms, so moving to Premium pays for support and other services rather than unlocking Schedule C or investment forms.\")",
+            "issue": "Uses 'unlocking', an inflection of the single-instance banned word 'unlock' in _anti-ai-language.md (line 132).",
+            "fix": "Replace \"rather than unlocking Schedule C or investment forms.\" with \"rather than adding Schedule C or investment forms.\""
+          },
+          {
+            "severity": "minor",
+            "location": "alternatives[6].body (\"Businesses comparing ongoing accounting software need a different comparison. See the [QuickBooks alternatives comparison](/alternatives/quickbooks/) for a separate comparison.\")",
+            "issue": "Fails _anti-ai-language.md say-it-out-loud / restatement check by repeating 'comparison'/'comparing' four times in 19 words across two sentences stating the same idea.",
+            "fix": "Combine into one clean sentence: \"Businesses looking for ongoing accounting software rather than annual tax prep can use our [QuickBooks alternatives guide](/alternatives/quickbooks/) instead.\""
+          },
+          {
+            "severity": "minor",
+            "location": "alternatives[1].body (\"Student credits, retirement income, unemployment, investments, stock and cryptocurrency sales, and rental property are also listed.\") and paragraph-4 openers across alternatives[0..5].body (\"Fits filers who...\", \"Fits self-employed filers...\", \"Fits people who...\", \"Fits freelancers...\")",
+            "issue": "1040com.txt line 53 says 'I am a student' rather than specifically 'Student credits'. Also, the fourth paragraph of each of the six vendor sections opens with a subjectless fragment ('Fits filers who...') instead of naming the vendor in prose, and tableTitle ('TurboTax and Alternatives: Published Prices Compared') misses an exact 'TurboTax Alternatives' H2 match.",
+            "fix": "Change \"Student credits\" to \"Student tax situations\" in alternatives[1].body; prepend each vendor's name to the six paragraph-4 openers (\"TaxAct fits...\", \"1040.com fits...\", \"OLT fits...\", \"Jackson Hewitt Online fits...\", \"ezTaxReturn fits...\", \"Keeper fits...\"); and optionally change tableTitle to \"TurboTax Alternatives: Published Prices Compared\"."
+          }
+        ],
+        "recordedAt": "2026-11-15T17:30:24+00:00"
+      }
     },
     {
       "vendor": "Credit Karma",

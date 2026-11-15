@@ -1,0 +1,182 @@
+{
+ "slug": "venmo",
+ "schema": "none",
+ "kind": "write",
+ "model": "gpt-6-sol",
+ "provider": "openai",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_OPENAI_KEY",
+ "finish_reason": "STOP",
+ "words": 3498,
+ "floor": 1500,
+ "input_tokens": 29800,
+ "output_tokens": 6490,
+ "thinking_tokens": 824,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.1327,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3498,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 470,
+   "floor": 1500,
+   "ratio": 0.31,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    15,
+    2,
+    0
+   ],
+   "applied": [
+    {
+     "id": "tableNote",
+     "quote": "Prices and fees from each product's own website, checked November 15, 2026.",
+     "replacement": "Prices and fees from the listed vendor pages and Apple Cash terms, checked November 15, 2026.",
+     "type": "unsupported",
+     "why": "Apple Cash terms were checked on Green Dot Bank\u2019s site, not Apple\u2019s."
+    },
+    {
+     "id": "rows[2].pricing",
+     "quote": "card-funded sends 2.90% + $0.30",
+     "replacement": "credit-card or other debit-card sends 2.90% + $0.30",
+     "type": "contradicted",
+     "why": "PayPal Debit Card-funded domestic personal sends cost $0."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "PayPal charges 2.90% + $0.30 for domestic personal sends funded by either type of card.",
+     "replacement": "PayPal charges 2.90% + $0.30 for domestic personal sends funded by a credit card or a debit card other than the PayPal Debit Card.",
+     "type": "contradicted",
+     "why": "PayPal Debit Card-funded domestic personal sends cost $0."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "The [credit card cash advance guide](/guides/credit-card-cash-advance-guide/) covers another cost to consider when funding a payment with credit.",
+     "replacement": "For more on cash advances, see the [credit card cash advance guide](/guides/credit-card-cash-advance-guide/).",
+     "type": "inference",
+     "why": "SOURCE does not connect credit-funded payments to cash-advance costs."
+    },
+    {
+     "id": "chooseSection.alternatives[0].body",
+     "quote": "Zelle is the closest fit when the job is getting a domestic personal payment straight into a bank account.",
+     "replacement": "Zelle sends domestic personal payments directly between eligible bank accounts.",
+     "type": "unsupported",
+     "why": "SOURCE does not rank Zelle as the closest fit."
+    },
+    {
+     "id": "chooseSection.alternatives[1].body",
+     "quote": "Funding a domestic personal send with a credit or debit card instead costs 2.90% + $0.30.",
+     "replacement": "Funding a domestic personal send with a credit card or a debit card other than the PayPal Debit Card costs 2.90% + $0.30.",
+     "type": "contradicted",
+     "why": "PayPal Debit Card-funded domestic personal sends cost $0."
+    },
+    {
+     "id": "chooseSection.alternatives[1].body",
+     "quote": "A debit-card-funded domestic personal send instead costs $0 on Venmo and 2.90% + $0.30 on PayPal, so the cheaper choice changes with the funding method.",
+     "replacement": "A domestic personal send funded by a debit card other than the PayPal Debit Card costs $0 on Venmo and 2.90% + $0.30 on PayPal, so the cheaper choice changes with the funding method.",
+     "type": "contradicted",
+     "why": "PayPal Debit Card-funded domestic personal sends also cost $0."
+    },
+    {
+     "id": "chooseSection.alternatives[1].body",
+     "quote": "PayPal's card-funded personal-send fee and identical instant-withdrawal rate limit its appeal as a blanket lower-cost replacement for Venmo.",
+     "replacement": "PayPal charges for credit-card and other debit-card-funded personal sends and has the same instant-withdrawal fee schedule as Venmo.",
+     "type": "unsupported",
+     "why": "SOURCE does not assess PayPal\u2019s appeal, and its Debit Card sends are free."
+    },
+    {
+     "id": "chooseSection.alternatives[3].body",
+     "quote": "Fits people comparing cross-currency costs, while Venmo remains simpler for domestic sends among people without Wise accounts and has a $0 debit card and $0 withdrawals at US MoneyPass ATMs.",
+     "replacement": "Fits people comparing cross-currency costs, while Venmo offers $0 eligible domestic personal sends, a $0 debit card and $0 withdrawals at US MoneyPass ATMs.",
+     "type": "unsupported",
+     "why": "SOURCE does not call Venmo simpler."
+    },
+    {
+     "id": "chooseSection.alternatives[6].body",
+     "quote": "- Sellers choosing an account for business funds need more than payment-processing rates.",
+     "replacement": "- Compare business accounts separately from payment-processing rates.",
+     "type": "unsupported",
+     "why": "SOURCE does not state what sellers need to choose a business account."
+    },
+    {
+     "id": "chooseSection.alternatives[6].body",
+     "quote": "- People choosing among international currency services beyond Wise and Xoom need a wider comparison.",
+     "replacement": "- To consider international currency services beyond Wise and Xoom, use a wider comparison.",
+     "type": "unsupported",
+     "why": "SOURCE does not state what those people need."
+    },
+    {
+     "id": "chooseSection.alternatives[7].body",
+     "quote": "Square's per-location subscription also matters at higher payment volume.",
+     "replacement": "Square's per-location subscription and card rates both affect the total at a given payment volume.",
+     "type": "inference",
+     "why": "SOURCE lists plan prices and rates but no volume threshold for their importance."
+    },
+    {
+     "id": "chooseSection.alternatives[7].body",
+     "quote": "The [financial product comparison hub](/compare/) has other comparisons organized around the terms that change a bill.",
+     "replacement": "See the [financial product comparison hub](/compare/) for other comparisons.",
+     "type": "unsupported",
+     "why": "SOURCE identifies the hub but does not describe how its comparisons are organized."
+    },
+    {
+     "id": "chooseSection.stillBetterFit.body",
+     "quote": "Unlike Apple Cash, Venmo is not limited to Apple devices.",
+     "replacement": "Apple Cash works only on Apple devices.",
+     "type": "unsupported",
+     "why": "The closed fact list states Apple Cash\u2019s device limit, not Venmo\u2019s device support."
+    },
+    {
+     "id": "chooseSection.faqs[2].answer",
+     "quote": "Venmo charges $0 for eligible domestic personal sends funded by a debit card, while PayPal applies its card-funded personal-send fee to debit cards.",
+     "replacement": "Venmo charges $0 for eligible domestic personal sends funded by a debit card, while PayPal charges 2.90% + $0.30 when funded by a debit card other than the PayPal Debit Card.",
+     "type": "contradicted",
+     "why": "PayPal Debit Card-funded domestic personal sends cost $0."
+    },
+    {
+     "id": "chooseSection.alternatives[0].body",
+     "quote": "That structure avoids Venmo's 1.75% instant cash-out fee, but it also means Zelle cannot fund a payment with a credit card or send money internationally.",
+     "replacement": "Zelle has no 1.75% instant cash-out fee; it also cannot fund a payment with a credit card or send money internationally.",
+     "type": "inference",
+     "why": "SOURCE lists these constraints but does not attribute them to Zelle\u2019s bank-to-bank structure."
+    },
+    {
+     "id": "chooseSection.alternatives[0].body",
+     "quote": "A payment can be canceled only while the recipient has not enrolled, which makes the recipient's details especially important before sending.",
+     "replacement": "A payment can be canceled only while the recipient has not enrolled.",
+     "type": "inference",
+     "why": "SOURCE states the cancellation rule, not the added evaluation of recipient details."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 3501
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 100.0,
+ "response_id": "resp_09e83226af9fc15e006af9e988448c87d185af251dae2328c5",
+ "generated_at": "2026-11-15T12:20:42-0500"
+}

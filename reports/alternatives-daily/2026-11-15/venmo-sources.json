@@ -1,0 +1,52 @@
+[
+  {
+    "product": "Venmo",
+    "url": "https://venmo.com/",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "Venmo (Fees)",
+    "url": "https://venmo.com/about/fees/",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "Zelle",
+    "url": "https://www.zellepay.com/",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "Zelle (Fees FAQ)",
+    "url": "https://www.zellepay.com/faq/are-there-any-fees-send-money-using-zelle",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "PayPal",
+    "url": "https://www.paypal.com/us/digital-wallet/paypal-consumer-fees",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "Apple Cash",
+    "url": "https://www.apple.com/apple-cash/",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "Apple Cash (Terms and Fees)",
+    "url": "https://applecash.greendot.com/termsconditions/",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "Wise",
+    "url": "https://wise.com/us/pricing/",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "Square",
+    "url": "https://squareup.com/us/en/pricing",
+    "checkedOn": "2026-11-15"
+  },
+  {
+    "product": "Xoom",
+    "url": "https://www.xoom.com/",
+    "checkedOn": "2026-11-15"
+  }
+]

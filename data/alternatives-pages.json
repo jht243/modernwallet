@@ -24,6 +24,30 @@
         "wise.com",
         "www.wise.com"
       ]
+    },
+    {
+      "route": "/alternatives/turbotax/",
+      "vendorHost": "turbotax.intuit.com",
+      "officialHosts": [
+        "turbotax.intuit.com",
+        "www.turbotax.intuit.com"
+      ]
+    },
+    {
+      "route": "/alternatives/robinhood/",
+      "vendorHost": "robinhood.com",
+      "officialHosts": [
+        "robinhood.com",
+        "www.robinhood.com"
+      ]
+    },
+    {
+      "route": "/alternatives/venmo/",
+      "vendorHost": "venmo.com",
+      "officialHosts": [
+        "venmo.com",
+        "www.venmo.com"
+      ]
     }
   ]
 }

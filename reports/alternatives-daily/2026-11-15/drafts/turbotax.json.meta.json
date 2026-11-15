@@ -1,0 +1,86 @@
+{
+ "slug": "turbotax",
+ "schema": "none",
+ "kind": "write",
+ "model": "gpt-6-sol",
+ "provider": "openai",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_OPENAI_KEY",
+ "finish_reason": "STOP",
+ "words": 3207,
+ "floor": 1500,
+ "input_tokens": 29411,
+ "output_tokens": 5733,
+ "thinking_tokens": 635,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.1225,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3207,
+  "numbers_not_in_facts": [
+   "130.93",
+   "82.94"
+  ],
+  "fact_budget": {
+   "fact_words": 2180,
+   "floor": 1500,
+   "ratio": 1.45,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    3,
+    0
+   ],
+   "applied": [
+    {
+     "id": "alternatives[0].body",
+     "quote": "TaxAct also lists a $100,000 Accuracy Guarantee for qualifying software calculation errors, a Refund Transfer payment option, E-file Concierge status calls and optional three-year Audit Defense.",
+     "replacement": "TaxAct also lists a $100,000 Accuracy Guarantee for qualifying software calculation errors, a Refund Transfer payment option, E-file Concierge phone status notifications and optional three-year Audit Defense.",
+     "type": "unsupported",
+     "why": "SOURCE specifies E-file Concierge phone status notifications, not calls."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "This gives a filer with any of those listed forms a published $0 federal price, where TurboTax Free Edition requires a paid upgrade.",
+     "replacement": "This gives a filer with Schedule C or stock sales a published $0 federal price, while TurboTax Free Edition requires a paid upgrade for those forms.",
+     "type": "contradicted",
+     "why": "TurboTax Free Edition covers some listed income, including qualifying retirement distributions and dividends."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "The [QuickBooks alternatives comparison](/alternatives/quickbooks/) covers bookkeeping prices and limits rather than personal return-filing fees.",
+     "replacement": "See the [QuickBooks alternatives comparison](/alternatives/quickbooks/) for a separate comparison.",
+     "type": "unsupported",
+     "why": "SOURCE names the comparison route but does not describe its price or limits coverage."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3208
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 72.2,
+ "response_id": "resp_0e165d6c1f50e602006af9e909867087d18e4bb282605f5823",
+ "generated_at": "2026-11-15T12:18:07-0500"
+}

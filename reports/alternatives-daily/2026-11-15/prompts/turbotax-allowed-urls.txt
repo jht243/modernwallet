@@ -1,0 +1,8 @@
+https://turbotax.intuit.com/personal-taxes/online/
+/compare/
+/self-employment-tax/
+/self-employment-tax/1099-tax-calculator/
+/tax-bracket-calculator/
+/stock-capital-gains-tax-calculator/
+/tax-resolution/
+/alternatives/quickbooks/

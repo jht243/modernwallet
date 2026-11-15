@@ -1,0 +1,60 @@
+{
+  "reviewer": "audit-subagent",
+  "verdict": "FAIL",
+  "findings": [
+    {
+      "severity": "blocker",
+      "location": "rows[2].pricing (\"A sibling-page promotion says $55 flat for new customers filing by May 1, while 1040.com's own homepage publishes $34.99.\"), alternatives[1].body (\"A sibling-page promotion mentions $55 flat for new customers filing by May 1, while 1040.com's own homepage publishes $34.99 for federal and state filing.\"), and alternatives[7].body (\"- A change to 1040.com's $34.99 homepage rate or its separate $55 promotion would change its flat-rate position.\")",
+      "issue": "Factual misattribution between taxact.txt and 1040com.txt. 1040com.txt publishes only $34.99 flat and never mentions $55. The '$55 flat to file your federal & state tax return! New customers can file federal and state personal tax return for just $55 total. Must file by 5/1.' text at lines 383-385 of taxact.txt is TaxAct's own sticky new-customer offer banner on taxact.com/taxes-online, not a 1040.com promotion (1040.com only appeared earlier in TaxAct's footer link list under Family Brands at line 367).",
+      "fix": "Remove all three references attributing the $55 May 1 offer to 1040.com. Set rows[2].pricing to \"$34.99 flat for federal and state returns, including multiple states and supported forms and schedules; pay when filing.\" In alternatives[1].body paragraph 3, replace the discrepancy claims with 1040.com facts from 1040com.txt (e.g., Internal Revenue Service (IRS)-authorized e-file provider operated by a Taxwell company, pay only when filing, and the worked $34.99 Schedule C + stock sales + two-state example). If you mention the $55 new-customer federal-and-state offer by May 1, place it in TaxAct's row/section as a promotional banner on taxact.com/taxes-online."
+    },
+    {
+      "severity": "blocker",
+      "location": "alternatives[3].body (\"Jackson Hewitt Online also lists federal and state extension filing, free live chat support, a Maximum Refund Guarantee and Worry-Free Tax Protection up to $1,500.\" and \"A household filing itemized deductions and two state returns pays $25 at the published online rate\")",
+      "issue": "Factual conflation in jacksonhewitt.txt. 'Worry-Free Tax Protection' only appears in the site-wide navigation menu under More Tax Services (lines 16, 71), not as an included feature of the $25 Jackson Hewitt Online DIY product (line 262 excludes add-on services like Protection Plus and eCollect from the $25 guarantee), while 'up to $1,500' comes from the in-office Early Tax Refund Advance (ETRA) loan ('come in for our Money Today Guarantee', lines 103-108, 273-274). Additionally, 'itemized deductions' is not explicitly named on jacksonhewitt.txt (lines 142-151 name W-2, unemployment, gig/1099 freelance income, Child Tax Credits, Form 1098-T education credits, and multi-state returns) and does not trigger TurboTax's $139 top DIY tier (1099 self-employment does).",
+      "fix": "Replace \"a Maximum Refund Guarantee and Worry-Free Tax Protection up to $1,500.\" with \"a Maximum Refund Guarantee, a 100% Accuracy Guarantee and a Satisfaction Guarantee, while deducting prep fees from a refund through eCollect carries an additional fee.\" In paragraph 3, replace \"A household filing itemized deductions and two state returns\" with \"A gig worker filing 1099 freelance income and two state returns\"."
+    },
+    {
+      "severity": "blocker",
+      "location": "alternatives[5].body (\"Standard costs $199 a year, equivalent to $16.58 a month when billed yearly. It includes bookkeeping, quarterly tax estimates, expert guidance, annual federal filing and up to two state returns.\")",
+      "issue": "Factual plan-tier misattribution in keepertax.txt. Per keepertax.txt lines 483-523 and 568-573, Keeper Standard ($199/year) includes year-round bookkeeping (expense, deduction, income, and mileage tracking) plus federal and up to 2 state returns 'Reviewed & signed by a tax pro', whereas 'Quarterly taxes' ('Pay quarterly taxes') and 'Tax pro consultations' / 'expert guidance' ('Meet with a tax pro') are Premium ($399/year) features alongside audit protection, rentals/K-1s/investors, amended returns, and up to 5 years of late returns.",
+      "fix": "In alternatives[5].body paragraph 2, change the second sentence to: \"It includes year-round expense, income and mileage tracking plus annual federal and up to two state returns reviewed and signed by a tax professional.\" In paragraph 3, update Premium ($399/year) to note that it adds three or more state returns, quarterly tax payments, one-on-one tax pro consultations, audit protection, rental and K-1 investment coverage, amended returns and late filing up to five years back."
+    },
+    {
+      "severity": "major",
+      "location": "turbotax-sources.json, stillBetterFit.body (\"TurboTax Desktop separately includes up to five federal electronic filings. Deluxe and Premier include one state download, although state electronic filing costs extra.\"), and faqs[4].answer (\"TurboTax charges an additional $40 Refund Processing Service fee for an individual return paid from a federal refund.\")",
+      "issue": "Source omission and Online-vs-Desktop conflation across turbotax_online.txt and turbotax_desktop.txt. First, stillBetterFit.body cites TurboTax Desktop facts from https://turbotax.intuit.com/personal-taxes/cd-download/, which is missing from turbotax-sources.json, and omits Home & Business (which also includes 1 state download per turbotax_desktop.txt lines 140-146). Second, turbotax_online.txt (lines 502-503) states 'Pay for TurboTax out of your federal refund or state refund: Individual taxes only... A $40 service fee may apply to this payment method', whereas 'Refund Processing Service fee' is the Desktop term in turbotax_desktop.txt line 417 ('Pay for add-on products out of your federal refund. A $40 Refund Processing Service fee applies').",
+      "fix": "Add {\"product\": \"TurboTax Desktop\", \"url\": \"https://turbotax.intuit.com/personal-taxes/cd-download/\", \"checkedOn\": \"2026-11-15\"} to turbotax-sources.json, and update stillBetterFit.body to \"Deluxe, Premier and Home & Business each include one state download, although state electronic filing costs extra.\" Update faqs[4].answer (and intro / rows[0].pricing / chooseSection.body) to match turbotax_online.txt: e.g., \"For TurboTax Online individual returns, Intuit states a $40 service fee may apply when paying fees from a federal or state refund (TurboTax Desktop lists a $40 Refund Processing Service fee for add-on products paid from a federal refund).\""
+    },
+    {
+      "severity": "major",
+      "location": "rows[1].pricing (\"Upper paid DIY prices and per-state dollar fees are not itemized on the checked page.\")",
+      "issue": "Unexpanded acronym on first use (_content-standard.md SEO rule & Page Rule 5). 'DIY' appears in rows[1].pricing without being defined on first use as 'Do It Yourself (DIY)'.",
+      "fix": "Replace \"Upper paid DIY prices\" with \"Upper paid Do It Yourself prices\" in rows[1].pricing (since DIY is not used anywhere else in the draft)."
+    },
+    {
+      "severity": "major",
+      "location": "alternatives[7].body (\"- A fixed TurboTax paid-plan state price would make its total easier to compare with flat-rate filing.\\n- A change to TurboTax Free Edition's form rules or $0 state inclusion would change the simple-return comparison.\\n- A change to 1040.com's $34.99 homepage rate or its separate $55 promotion would change its flat-rate position.\\n- A new per-state charge at Jackson Hewitt Online would change the $25 multi-state calculation.\\n- A change to OLT's $9.95 or $7.95 state fees would change its one-state totals.\")",
+      "issue": "Fails _content-standard.md GATE — Sentence rhythm (5 consecutive sentences with word counts [16, 17, 17, 14, 14], all within a 3-word span) and _anti-ai-language.md symmetrical listicle repetition ('A change to X would change Y' repeated across bullets).",
+      "fix": "Rewrite the five bullets with varied sentence lengths (>3-word spread across every 5-sentence window) and distinct verbs while removing the false $55 1040.com claim, e.g.: \"- TurboTax publishing fixed per-state dollar prices on its paid online tiers so multi-state filers can sum their bill upfront.\\n- TurboTax expanding or narrowing Free Edition's simple Form 1040 rules.\\n- 1040.com changing its $34.99 flat federal-and-state rate or introducing a $0 simple-return tier.\\n- Jackson Hewitt Online adding per-state charges above its $25 flat fee.\\n- OLT changing its $0 all-forms federal plan or its $9.95 and $7.95 state fees.\""
+    },
+    {
+      "severity": "minor",
+      "location": "alternatives[2].body (\"Both tiers include all forms, so moving to Premium pays for support and other services rather than unlocking Schedule C or investment forms.\")",
+      "issue": "Uses 'unlocking', an inflection of the single-instance banned word 'unlock' in _anti-ai-language.md (line 132).",
+      "fix": "Replace \"rather than unlocking Schedule C or investment forms.\" with \"rather than adding Schedule C or investment forms.\""
+    },
+    {
+      "severity": "minor",
+      "location": "alternatives[6].body (\"Businesses comparing ongoing accounting software need a different comparison. See the [QuickBooks alternatives comparison](/alternatives/quickbooks/) for a separate comparison.\")",
+      "issue": "Fails _anti-ai-language.md say-it-out-loud / restatement check by repeating 'comparison'/'comparing' four times in 19 words across two sentences stating the same idea.",
+      "fix": "Combine into one clean sentence: \"Businesses looking for ongoing accounting software rather than annual tax prep can use our [QuickBooks alternatives guide](/alternatives/quickbooks/) instead.\""
+    },
+    {
+      "severity": "minor",
+      "location": "alternatives[1].body (\"Student credits, retirement income, unemployment, investments, stock and cryptocurrency sales, and rental property are also listed.\") and paragraph-4 openers across alternatives[0..5].body (\"Fits filers who...\", \"Fits self-employed filers...\", \"Fits people who...\", \"Fits freelancers...\")",
+      "issue": "1040com.txt line 53 says 'I am a student' rather than specifically 'Student credits'. Also, the fourth paragraph of each of the six vendor sections opens with a subjectless fragment ('Fits filers who...') instead of naming the vendor in prose, and tableTitle ('TurboTax and Alternatives: Published Prices Compared') misses an exact 'TurboTax Alternatives' H2 match.",
+      "fix": "Change \"Student credits\" to \"Student tax situations\" in alternatives[1].body; prepend each vendor's name to the six paragraph-4 openers (\"TaxAct fits...\", \"1040.com fits...\", \"OLT fits...\", \"Jackson Hewitt Online fits...\", \"ezTaxReturn fits...\", \"Keeper fits...\"); and optionally change tableTitle to \"TurboTax Alternatives: Published Prices Compared\"."
+    }
+  ]
+}

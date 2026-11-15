@@ -1,0 +1,78 @@
+{
+  "reviewer": "audit-subagent",
+  "verdict": "FAIL",
+  "findings": [
+    {
+      "severity": "blocker",
+      "location": "alternatives[1].body & faqs[3].answer: \"Its commission overview refers to separate rate pages rather than printing exact margin-rate or cash-APY percentages.\" / \"Interactive Brokers does not print exact margin-rate percentages in its checked commission overview.\"",
+      "issue": "Contradicts fetched ibkr.txt (https://www.interactivebrokers.com/en/pricing/commissions-home.php), which prints headline USD rates directly on the overview page: \"Earn USD 3.38% on uninvested cash. Margin loans start at USD 4.38%.\" (and \"as low as 4.38%\" / \"up to USD 3.38%\"), plus plan spread formulas in its comparison table (Lite: cash Benchmark minus 1.5%, margin Benchmark plus 2.5%; Pro: cash Benchmark minus 0.5%, margin starting at Benchmark plus 1.5%, with cash interest proportional below $100,000 NAV), while linking to separate pages only for full balance-tier tables.",
+      "fix": "In alternatives[1].body paragraph 3, replace that sentence with: \"Its commissions overview advertises USD cash interest up to 3.38% (Benchmark minus 1.5% on Lite and minus 0.5% on Pro, proportional below $100,000 Net Asset Value (NAV)) and USD margin loans as low as 4.38% (Benchmark plus 2.5% on Lite; starting at Benchmark plus 1.5% on Pro), with full balance-tier tables on separate rate pages.\" In faqs[3].answer, replace the final sentence with: \"Interactive Brokers' commissions overview lists USD margin loans as low as 4.38% (Benchmark plus 2.5% on Lite, or starting at Benchmark plus 1.5% on Pro), with full tier schedules on its separate margin page.\""
+    },
+    {
+      "severity": "blocker",
+      "location": "alternatives[4].body: \"Cryptocurrency costs 0.75% to open and 0.75% to close.\" and \"The pricing page advertises one flat margin rate for new margin accounts or accounts bringing at least $25,000 in new assets. It does not itemize an exact base margin-rate table, an uninvested cash sweep APY or an IRA contribution match. Without those figures, a cash-yield or margin-interest total cannot be calculated from that page.\"",
+      "issue": "Two factual errors against fetched tastytrade.txt (https://tastytrade.com/pricing/): (1) lines 127-137 list standard Cryptocurrency at 1% per total purchase to open and 1% to close, while 0.75% open / 0.75% close applies only to Bitcoin and Ethereum (\"Cryptocurrency (BTC/ETH)\"); (2) lines 217-224 explicitly print \"6.75% FLAT MARGIN RATE\" (\"Base Rate - 3.25%\") across any margin balance size when opening a first tastytrade margin account or bringing $25,000+ in new assets.",
+      "fix": "In alternatives[4].body paragraph 2, change the crypto sentence to: \"Cryptocurrency costs 1% to open and 1% to close, or 0.75% each way for Bitcoin (BTC) and Ethereum (ETH).\" In paragraph 3, replace the first three sentences with: \"The pricing page advertises a 6.75% flat margin rate (Base Rate minus 3.25%) across any balance size when you open a first tastytrade margin account or bring at least $25,000 in new assets. It does not itemize non-promotional margin tiers, an uninvested cash sweep APY or an IRA contribution match, so cash-yield and non-promotional margin totals cannot be calculated from that page.\""
+    },
+    {
+      "severity": "blocker",
+      "location": "rows[3].pricing, alternatives[2].body & faqs[4].answer: \"and $0 account minimum\" / \"It lists a $0 initial deposit and $0 monthly account fee. An unfunded new account closes after 90 days.\" / \"A full outgoing account transfer costs $75, a partial transfer $0 and an outgoing wire $25.\" / \"E*TRADE lists $0 for a partial transfer.\"",
+      "issue": "Two factual errors against fetched etrade.txt (https://us.etrade.com/what-we-offer/pricing-and-rates): (1) \"no monthly account fees and no minimum deposit\" (line 200) and \"No minimum initial deposit is required to open an account however, accounts not funded within 90 days will be closed\" (lines 620, 668) appear strictly in Morgan Stanley Private Bank disclosures for the Premium Savings Account and CDs, not E*TRADE brokerage accounts; (2) lines 471-472 print only \"Account transfers (outgoing): $75 for full transfers\" and never mention partial account transfers or a $0 partial-transfer fee.",
+      "fix": "In rows[3].pricing, remove \"and $0 account minimum\" (write \"$0 online US stock and ETF commissions; options $0.65/contract...\"). In alternatives[2].body paragraph 1, delete \"It lists a $0 initial deposit and $0 monthly account fee. An unfunded new account closes after 90 days.\" (or move those terms to paragraph 3 explicitly attributed to the Premium Savings Account). In alternatives[2].body paragraph 3, change the transfer sentence to: \"A full outgoing account transfer costs $75, and an outgoing wire costs $25 ($0 incoming).\" In faqs[4].answer, remove \"E*TRADE lists $0 for a partial transfer.\" and state that E*TRADE's pricing overview lists $75 for full outgoing transfers without specifying a partial-transfer fee."
+    },
+    {
+      "severity": "blocker",
+      "location": "alternatives[5].body, chooseSection.body, verdict & faqs[0].answer / faqs[3].answer: \"Its homepage also advertises 3.75% APY for higher-tier accounts or its $500,000-plus exclusive program.\" / \"Its homepage does not publish futures trading commissions or advertise a 3% IRA contribution match.\" / \"All seven brokerages list $0 online US stock and ETF commissions...\" / \"while Public lists a 5.15% base rate across balances.\"",
+      "issue": "Four discrepancies against public_com.txt and public_pricing.txt: (1) Public's nav lists \"3.30% APY on your cash with no fees\" (line 36) while the homepage hero displays \"3.75% APY* on cash\" / \"High-Yield Cash Account 3.75% APY*\" (lines 94, 105) with zero text tying 3.75% APY to higher-tier accounts or Public Concierge ($500,000+, lines 80-81, 189-196); (2) lines 43-44 and 110-111 explicitly advertise a 1% match on annual Traditional and Roth IRA contributions (and an uncapped 1% transfer match), which the \"3%\" wording obscures; (3) public_com.txt prints \"no commissions\" only under Trading API (\"Program your trading with no commissions\", line 23) and refers general stock/ETF commissions to Public's Fee Schedule; (4) lines 151-154 list \"Base rate 5.15%\" and \"Lowest rate 4.20%\", so 5.15% is the entry base tier rather than a flat rate across all balances (and similarly rows[0].pricing says \"Margin starts at 5.25%\" for Robinhood when 5.25% is the highest rate up to $50,000, stepping down to 4.20% at $50M+).",
+      "fix": "(1) In alternatives[5].body paragraph 1, replace sentence 2 with: \"Public's site navigation lists 3.30% APY with no fees on its High-Yield Cash Account, while its homepage hero displays 3.75% APY* on cash and separately offers Public Concierge for accounts of $500,000 or more.\" (In paragraph 4, note the $330/$660 figures use the 3.30% rate, while 3.75% would yield $375 on $10,000.) (2) In alternatives[5].body paragraph 3, state: \"Its homepage advertises a 1% annual IRA contribution match (and an uncapped 1% portfolio-transfer match) rather than Robinhood Gold's 3% match, and does not publish futures commissions.\" (3) In chooseSection.body, verdict, and faqs[0].answer, state that Robinhood and five alternatives publish $0 online US stock and ETF commissions while Public advertises commission-free API trading on its homepage. (4) In faqs[3].answer, change \"across balances\" to \"(with lower tiers down to 4.20%)\", and in rows[0].pricing change \"Margin starts at 5.25%\" to \"Margin 5.25% up to $50,000 (down to 4.20% at $50M+)\"."
+    },
+    {
+      "severity": "major",
+      "location": "alternatives[0].body: \"Schwab lists $6.95 for online Over-The-Counter (OTC) equities and $50 for online foreign-stock transactions.\" and \"Human-advisor programs have minimums ranging from $25,000 to $2,000,000, with listed starting advisory fees ranging from 0.40% to 0.95% by program.\"",
+      "issue": "Against schwab.txt: (1) Managed Account Select Equity Strategies ($100,000 minimum, lines 364-370) starts at 1.00%, not 0.95%, so published starting fees across Schwab's other managed/advisory programs run from 0.40% to 1.00% (while Schwab Advisor Network at $2,000,000 states advisor-set fees); (2) not all of those programs are \"Human-advisor programs\" (Schwab Personalized Indexing at 0.40% / $100,000 minimum is direct indexing); (3) lines 194-209 specify the $50 online fee applies to foreign-stock transactions placed on the US OTC market (online trades directly on foreign local exchanges are not available, and Canadian securities are $6.95 online).",
+      "fix": "In paragraph 2, write \"$50 for online foreign-stock transactions on the US OTC market\". In paragraph 3, rewrite the advisory sentence as: \"Other managed and advisory programs carry minimums from $25,000 to $2,000,000, with listed starting fees from 0.40% (Schwab Personalized Indexing) to 1.00% (Managed Account Select Equity Strategies), or advisor-set fees through Schwab Advisor Network.\""
+    },
+    {
+      "severity": "major",
+      "location": "alternatives[1].body: \"Options commissions run from $0.15 to $0.65 per contract by volume, with $0.65 standard on Fixed and Lite and a $1 order minimum on applicable schedules.\"",
+      "issue": "In fetched ibkr.txt, \"Minimum per order: USD 1.00\" appears only under IBKR Pro - Fixed for US stocks and ETFs (lines 570-578). For options, ibkr.txt prints $0.15 to $0.65 per contract (Tiered) and $0.65 per contract (Fixed/Lite) and notes only that \"Minimum order fees apply\", without stating $1 as the options order minimum.",
+      "fix": "Replace \"and a $1 order minimum on applicable schedules.\" with \"with per-order minimums applying by schedule.\""
+    },
+    {
+      "severity": "major",
+      "location": "alternatives[3].body: \"It also lists a $0 deposit minimum and $0 account maintenance fee.\" and \"For 1,200 equity-options contracts in a year, Webull's listed broker commission is $0, with regulatory charges separate.\"",
+      "issue": "Fetched webull.txt (https://www.webull.com/pricing, line 81) states \"0 commission trades and no deposit minimums\" and never mentions an account maintenance fee. Line 208 also notes a \"$0.10 per contract fee applies for oversized option orders.\"",
+      "fix": "In paragraph 1, change that sentence to: \"It also lists no deposit minimums, plus a $0.10 per-contract fee on oversized options orders.\" In paragraph 4, clarify \"For 1,200 equity-options contracts in a year on standard-sized orders, Webull's listed broker commission is $0, with regulatory charges separate.\""
+    },
+    {
+      "severity": "major",
+      "location": "alternatives[0].body: \"It lists Traditional, Roth, Rollover, Inherited, SEP and SIMPLE IRA accounts, giving retirement savers several listed account types to consider.\"",
+      "issue": "Fails _content-standard.md SEO acronym gate and Page Rule 5 (\"Define every acronym on first use\"): SEP and SIMPLE appear unexpanded on first use.",
+      "fix": "Expand on first use: \"Simplified Employee Pension (SEP) and Savings Incentive Match Plan for Employees (SIMPLE) IRA accounts\"."
+    },
+    {
+      "severity": "major",
+      "location": "intro (paragraph 1) & tableTitle: \"Use Charles Schwab, Interactive Brokers, E*TRADE, Webull, tastytrade or Public instead of Robinhood...\" and \"Robinhood and Alternatives: Published Prices Compared\"",
+      "issue": "Fails _content-standard.md SEO primary-keyword gate and Page Rule 5: \"Robinhood alternatives\" does not appear anywhere in intro, and tableTitle splits the keyword as \"Robinhood and Alternatives\" (leaving only 1 plural and 1 singular heading match). Also, opening with imperative \"Use ... instead of Robinhood\" leans toward directive advice rather than neutral listing framing (Site Adapter line 205).",
+      "fix": "Change intro sentence 1 to: \"Charles Schwab, Interactive Brokers, E*TRADE, Webull, tastytrade and Public are the main Robinhood alternatives, splitting on options fees, margin rates and whether cash yield requires a subscription.\" Change tableTitle to: \"Robinhood Alternatives: Published Prices Compared\"."
+    },
+    {
+      "severity": "major",
+      "location": "h1, alternatives[0].heading, alternatives[2].heading, alternatives[5].heading: \"Robinhood Alternatives 2026: Commissions, Options Fees and Rates Compared\" / \"Charles Schwab Commissions, Options Fees and Robo Tiers\" / \"E*TRADE Options Tiers, Futures Fees and Savings Rates\" / \"Public Options Rebates, Margin Rate and Cash Yield\"",
+      "issue": "Fails _anti-ai-language.md Headline tells gate (lines 68 & 149) and _content-standard.md PREFLIGHT (line 157): all four headings use a three-item headline tricolon.",
+      "fix": "Use two-item Title Case headings instead: h1 -> \"Robinhood Alternatives 2026: Trading Fees and Rates Compared\"; alternatives[0].heading -> \"Charles Schwab Options Fees and Automated Portfolios\"; alternatives[2].heading -> \"E*TRADE Options Tiers and Futures Commissions\"; alternatives[5].heading -> \"Public Options Rebates and Fee-Free Cash Yield\"."
+    },
+    {
+      "severity": "major",
+      "location": "alternatives[1].body -> alternatives[2].body (sentences 53-57: lengths [12, 15, 12, 13, 14]) and stillBetterFit.body (sentences 149-153: lengths [15, 14, 15, 16, 17]), plus 24 paragraphs of 4-6 sentences across chooseSection.body and alternatives[0..5].body",
+      "issue": "Fails _content-standard.md GATE — Sentence rhythm (two runs of 5 consecutive sentences sit within a 3-word spread) and STYLE paragraph-length rule (\"Keep paragraphs to 3 sentences max\"; e.g. alternatives[2].body paragraph 3 has 6 sentences, and intro sentence 4 is 34 words).",
+      "fix": "Shorten or lengthen at least one sentence in alternatives[1].body paragraph 4 (e.g., \"Interactive Brokers offers no IRA match.\": 6 words) and one sentence in stillBetterFit.body paragraphs 2-3 (e.g., \"Shared $0 stock commissions alone do not justify moving accounts.\": 10 words) so no 5 consecutive sentences fall within 3 words of each other, split 4-6 sentence paragraphs into 2-3 sentence paragraphs, and split the 34-word Gold sentence in intro paragraph 2 into two shorter sentences."
+    },
+    {
+      "severity": "major",
+      "location": "alternatives[6].body & faqs[4].answer: \"The table prices the listed trades and account terms as of November 15, 2026. If a needed rate is absent from the checked pricing overview, this comparison leaves that rate unpriced rather than assigning it an estimate.\" / \"The checked facts do not establish outgoing transfer prices for every other brokerage on this page.\"",
+      "issue": "Triggers _content-standard.md GATE — Byline in body prose (\"on/as of [date]\" inside body prose rather than template byline/tableNote) and PREFLIGHT / _anti-ai-language.md page self-reference ban (\"this comparison leaves\", \"on this page\", \"the checked facts\").",
+      "fix": "In alternatives[6].body paragraph 3, replace those two sentences with: \"Published commissions also cannot measure execution quality or lock in variable cash APYs. Where a brokerage omits a margin rate or cash yield from its main fee overview, leave that line unpriced rather than plugging an estimate into a 12-month total.\" In faqs[4].answer, replace the last sentence with: \"Charles Schwab, Interactive Brokers, tastytrade and Public do not list an outgoing account-transfer fee on their main pricing overviews.\""
+    }
+  ]
+}

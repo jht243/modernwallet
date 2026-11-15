@@ -1,0 +1,122 @@
+{
+ "slug": "robinhood",
+ "schema": "none",
+ "kind": "write",
+ "model": "gpt-6-sol",
+ "provider": "openai",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_OPENAI_KEY",
+ "finish_reason": "STOP",
+ "words": 3328,
+ "floor": 1500,
+ "input_tokens": 30043,
+ "output_tokens": 6246,
+ "thinking_tokens": 395,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.1265,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 1 claim(s) still unsupported after 2 pass(es) \u2014 auditor must cut or source: 'Finally, a published commission cannot settle execution quality or predict a fut'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3328,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 2144,
+   "floor": 1500,
+   "ratio": 1.43,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    4,
+    3
+   ],
+   "applied": [
+    {
+     "id": "tableNote",
+     "quote": "Some rates and promotions can change.",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE gives checked rates and promotions, but does not state that they can change."
+    },
+    {
+     "id": "rows[2].bestFit",
+     "quote": "Fits investors who want a choice between Lite stock pricing and Pro's global-market pricing",
+     "replacement": "Fits investors who want a choice between Lite stock pricing and Pro's Fixed or Tiered stock pricing",
+     "type": "unsupported",
+     "why": "SOURCE lists Pro's stock pricing and global-market access, not global-market pricing."
+    },
+    {
+     "id": "chooseSection.alternatives[0].body",
+     "quote": "It lists Traditional, Roth, Rollover, Inherited, SEP and SIMPLE IRA accounts, giving retirement savers more listed account types to consider.",
+     "replacement": "It lists Traditional, Roth, Rollover, Inherited, SEP and SIMPLE IRA accounts, giving retirement savers several listed account types to consider.",
+     "type": "inference",
+     "why": "SOURCE lists Schwab's IRA types but does not establish a comparison in account-type counts."
+    },
+    {
+     "id": "chooseSection.stillBetterFit.body",
+     "quote": "E*TRADE and Webull each list a $75 outgoing transfer fee.",
+     "replacement": "E*TRADE lists a $75 full outgoing account-transfer fee, and Webull lists a $75 outgoing stock-transfer fee.",
+     "type": "unsupported",
+     "why": "E*TRADE's $75 fee is specifically for a full outgoing account transfer."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "The [stock capital gains tax calculator](/stock-capital-gains-tax-calculator/) handles a different question: the tax effect of a stock sale.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE names the calculator but does not state what it calculates."
+    },
+    {
+     "id": "chooseSection.alternatives[6].body",
+     "quote": "Use the [stock capital gains tax calculator](/stock-capital-gains-tax-calculator/) for sale proceeds and cost basis.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that the calculator uses sale proceeds and cost basis."
+    }
+   ],
+   "deleted_final": 2,
+   "unapplied": [
+    {
+     "quote": "Finally, a published commission cannot settle execution quality or predict a future APY.",
+     "type": "inference",
+     "why": "SOURCE does not address what commissions establish about execution quality or future APYs.",
+     "replacement": "",
+     "id": "chooseSection.alternatives[6].body",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "chooseSection.alternatives[6].body",
+     "quote": "Finally, a published commission cannot settle execution quality or predict a future APY.",
+     "type": "inference",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3353
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 79.7,
+ "response_id": "resp_08cd37c64f4b6c0c006af9e98715e087d199f7d5d971dfea63",
+ "generated_at": "2026-11-15T12:20:19-0500"
+}
