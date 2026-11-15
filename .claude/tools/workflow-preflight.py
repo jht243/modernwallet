@@ -22,14 +22,15 @@ BASE = ['_decision-evidence.md', '_testing-labels.md', '_content-standard.md',
         '_mindmap-execution.md']
 BUILD_BASE = ['_decision-evidence.md', '_testing-labels.md', '_experience.md',
               '_workflow-checkpoints.md', '_mindmap-execution.md', '_keyword-demand-ladder.md']
-MINDMAP_WRITE_BASE = ['_testing-labels.md', '_content-standard.md',
-                      '_anti-ai-language.md', '_experience.md']
-MINDMAP_AUDIT_BASE = ['_testing-labels.md', '_content-standard.md',
+MINDMAP_WRITE_BASE = ['_decision-evidence.md', '_testing-labels.md', '_content-standard.md',
+                      '_anti-ai-language.md', '_experience.md', '_mindmap-execution.md']
+MINDMAP_AUDIT_BASE = ['_decision-evidence.md', '_testing-labels.md', '_content-standard.md',
                       '_anti-ai-language.md', '_experience.md',
-                      '_rendered-page-audit.md', '_remediation-ladder.md']
+                      '_rendered-page-audit.md', '_remediation-ladder.md', '_mindmap-execution.md']
 MINDMAP_PUBLISH_BASE = ['_testing-labels.md', '_experience.md',
                         '_workflow-checkpoints.md', '_rendered-page-audit.md']
 OPTIONAL = ['_testing-labels.local.md', '_content-standard.local.md',
+            '_decision-evidence.local.md', '_experience.local.md',
             '_layer3-evidence-sources.md']
 CHUNK = 9000  # characters, deliberately below ordinary tool-output truncation
 

@@ -96,5 +96,26 @@ class PreflightTests(unittest.TestCase):
         with patch('builtins.print', side_effect=BrokenPipeError):
             with self.assertRaises(BrokenPipeError): m.emit(self.root, self.run)
         self.assertEqual(m.load(self.run)['delivered'], [])
+    def test_mindmap_write_and_audit_preserve_personalized_evidence_and_testing_contracts(self):
+        mm_brief = self.root / '.claude/commands/mindmap-pass/phase-build-brief.md'
+        mm_brief.parent.mkdir(parents=True, exist_ok=True)
+        mm_brief.write_text('mindmap brief')
+        p3 = self.root / '.claude/commands/mindmap-pass/phase-3-new-content.md'
+        p4 = self.root / '.claude/commands/mindmap-pass/phase-4-audit.md'
+        p3.write_text('phase 3'); p4.write_text('phase 4')
+        (self.root / '.claude/commands/_layer3-evidence-sources.md').write_text('layer3 evidence')
+        (self.root / '.claude/commands/_decision-evidence.local.md').write_text('local evidence')
+        write_files = m.sources(self.root, 'write', ['.claude/commands/mindmap-pass/phase-3-new-content.md'])
+        audit_files = m.sources(self.root, 'audit', ['.claude/commands/mindmap-pass/phase-4-audit.md'])
+        for required in (
+            '.claude/commands/_decision-evidence.md',
+            '.claude/commands/_mindmap-execution.md',
+            '.claude/commands/_testing-labels.md',
+            '.claude/commands/_experience.md',
+            '.claude/commands/_layer3-evidence-sources.md',
+            '.claude/commands/_decision-evidence.local.md',
+        ):
+            self.assertIn(required, write_files)
+            self.assertIn(required, audit_files)
 
 if __name__ == '__main__': unittest.main()

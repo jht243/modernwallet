@@ -123,7 +123,16 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
                 f'2. Standards ledger (no 140KB dump): WORKFLOW_RUN_ID={run_id} bash .claude/tools/load-standards.sh "<routine>" "write" --run-id {run_id} --ledger-only'
             )
         lines.append(
-            f'3. Batch cases (if needed): python3 .claude/tools/mindmap-gates.py cases-batch --manifest <RUN_DIR>/approval-manifest.json --publisher {canonical_base.replace("https://", "")} --out-dir <RUN_DIR>/evidence'
+            f'3. Batch client/site experience cases (_experience.md + _approved-cases.json): python3 .claude/tools/mindmap-gates.py cases-batch --manifest <RUN_DIR>/approval-manifest.json --publisher {canonical_base.replace("https://", "")} --out-dir <RUN_DIR>/evidence'
+        )
+        if (root / 'scripts/reader-surveys/research.mts').is_file():
+            lines.append(
+                '3b. Durable reader-survey evidence (include verified poll/survey facts when matched; never fabricate respondents): '
+                'npx tsx scripts/reader-surveys/research.mts catalog && npx tsx scripts/reader-surveys/research.mts facts --slug <SURVEY_SLUG>'
+            )
+        lines.append(
+            '3c. Personalized analysis packet & writer flags (_decision-evidence.md + _mindmap-execution.md + _testing-labels.md): '
+            'populate <RUN_DIR>/evidence/<slug>/evidence.json (calculated|modeled execution + visible assumptions + counterexample, measured runs:[{testedAt}] for (Tested YYYY) eligibility, or reported|client-record + caseUses), include provenance + visible first-party internal-testing/modeling-assumptions/client/survey attribution + intent Our Takeaway in <slug>.prompt.md, and pass --mindmap-manifest <RUN_DIR>/approval-manifest.json --mindmap-review <RUN_DIR>/chart-review.json --analysis-packet <RUN_DIR>/evidence/<slug>/evidence.json to content_gen.py.'
         )
         if lint_cmd:
             lines.append(f'4. Content lint (single batch pass): {lint_cmd}')
@@ -169,10 +178,12 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
                 f'--reviewer {actor} --preflight {rel_dir} '
                 + ('--writer-preflight <RUN_DIR>/preflight-write ' if is_local else '')
                 + '--out-dir <RUN_DIR>/audit/admissions --skeleton <RUN_DIR>/audit/review.json',
-                '4. Populate real PASS/FAIL verdicts + >=40-char riskAssessment.rationale (and >=40-char reason on every incidentalMentions/consequentialClaims item) + >=40-char factualReview + >=20-char checks evidence in <RUN_DIR>/audit/review.json, then sync profile/keys & record in 1 turn: '
+                '4. Populate real PASS/FAIL verdicts + >=40-char riskAssessment.rationale (and >=40-char reason on every incidentalMentions/consequentialClaims item) + >=40-char factualReview + >=20-char checks evidence in <RUN_DIR>/audit/review.json (verifying _decision-evidence.md visible internal-testing, visible modeling assumptions + counterexample, anonymized/approved client caseUseReview, reader-survey attribution, intent Our Takeaway, and _testing-labels.md (Tested YYYY) year/coverage), then sync profile/keys & record in 1 turn: '
                 'python3 .claude/tools/audit-batch.py finalize-review --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json '
                 '&& python3 .claude/tools/content-review-policy.py record --review <RUN_DIR>/audit/review.json '
                 '&& python3 .claude/tools/rendered-audit.py check --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json',
+                '4b. When <RUN_DIR>/evidence/<slug>/evidence.json exists, also record the analysis/replay receipt: '
+                'python3 .claude/tools/mindmap-gates.py audit-analysis --packet <RUN_DIR>/evidence/<slug>/evidence.json --review <RUN_DIR>/audit/<slug>-analysis.json [--replay-output <RUN_DIR>/audit/<slug>-replay.json]',
                 '5. If a subset of routes PASS and others FAIL below ceiling, project passing subset mechanically: '
                 'python3 .claude/tools/content-review-policy.py project --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json --route <PASS_ROUTE> --out-snapshot <RUN_DIR>/audit/approved-snapshot.json --out-review <RUN_DIR>/audit/approved-review.json',
             ])
