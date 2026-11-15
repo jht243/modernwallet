@@ -343,3 +343,6 @@
 | /compare/checking-vs-savings-account/ | 2026-11-12 | 9 | 0/0/0/0/0 | 0 |
 | /guides/trump-gold-coin/ | 2026-11-14 | 10 | 0/0/0/0/0 | 0 |
 | /compare/ordinary-income-vs-capital-gains-tax/ | 2026-11-14 | 7 | 0/0/0/0/0 | 0 |
+| /guides/how-to-buy-treasury-bills/ | 2026-11-15 | 11 | 0/0/0/0/0 | 0 |
+| /investing/withdrawal-calculator/ | 2026-11-15 | 8 | 0/0/0/0/0 | 0 |
+| /guides/are-church-donations-tax-deductible/ | 2026-11-15 | 6 | 0/0/0/0/0 | 0 |

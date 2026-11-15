@@ -1,0 +1,118 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-11-14",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 16,
+      "sessions": 15,
+      "active_users": 13,
+      "clicks": 16
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 15,
+      "sessions": 14,
+      "active_users": 14,
+      "clicks": 15
+    },
+    {
+      "page": "/guides/tax-deductions-checklist/",
+      "views": 14,
+      "sessions": 13,
+      "active_users": 11,
+      "clicks": 14
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 13,
+      "sessions": 13,
+      "active_users": 12,
+      "clicks": 13
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 12,
+      "sessions": 13,
+      "active_users": 11,
+      "clicks": 12
+    },
+    {
+      "page": "/guides/how-to-buy-treasury-bills/",
+      "views": 11,
+      "sessions": 10,
+      "active_users": 5,
+      "clicks": 11
+    },
+    {
+      "page": "/",
+      "views": 8,
+      "sessions": 7,
+      "active_users": 7,
+      "clicks": 8
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 8,
+      "sessions": 8,
+      "active_users": 8,
+      "clicks": 8
+    },
+    {
+      "page": "/investing/withdrawal-calculator/",
+      "views": 8,
+      "sessions": 7,
+      "active_users": 7,
+      "clicks": 8
+    },
+    {
+      "page": "/guides/are-church-donations-tax-deductible/",
+      "views": 6,
+      "sessions": 4,
+      "active_users": 4,
+      "clicks": 6
+    }
+  ],
+  "top10_pages_total_views": 111,
+  "top10_pages_total_clicks": 111,
+  "channel_split": {
+    "/social-security-cola-calculator/": {
+      "Organic Search": 15,
+      "Unassigned": 2
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 14,
+      "Unassigned": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 13,
+      "Unassigned": 1
+    },
+    "/guides/tax-deductions-checklist/": {
+      "Organic Search": 13
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 13
+    },
+    "/guides/how-to-buy-treasury-bills/": {
+      "Organic Search": 10,
+      "Unassigned": 2
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 8
+    },
+    "/investing/withdrawal-calculator/": {
+      "Organic Search": 7
+    },
+    "/": {
+      "Referral": 4,
+      "Direct": 2,
+      "Organic Search": 1
+    },
+    "/guides/are-church-donations-tax-deductible/": {
+      "Organic Search": 4,
+      "Unassigned": 1
+    }
+  }
+}
