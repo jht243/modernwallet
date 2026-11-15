@@ -150,8 +150,8 @@ if _t and THINKING != _t:
 # They get their own ceiling; the lower of the two levels wins, so a low-tier site stays low.
 # Default "high" = no change; low-tier repos set it in .claude/content-gen.env.
 _LEVELS = ("low", "medium", "high")
-_st = os.environ.get("CONTENT_SECTION_THINKING", "high").strip().lower()
-SECTION_THINKING = _st if _st in _LEVELS else "high"
+_st = os.environ.get("CONTENT_SECTION_THINKING", "medium").strip().lower()
+SECTION_THINKING = _st if _st in _LEVELS else "medium"
 MAX_TOKENS = int(os.environ.get("CONTENT_MAX_TOKENS", "40000"))
 RETRIES = int(os.environ.get("CONTENT_RETRIES", "6"))
 BACKOFF_CAP = int(os.environ.get("CONTENT_BACKOFF_CAP", "20"))
