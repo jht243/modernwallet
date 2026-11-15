@@ -804,6 +804,57 @@ _CANONICAL_PROBE_FILES = (
 )
 
 
+def _strip_code_comments(sample, suffix):
+    if suffix in ('.xml', '.html', '.json'):
+        return re.sub(r'<!--.*?-->', ' ', sample, flags=re.S)
+    if suffix == '.py':
+        return re.sub(r'(?m)^\s*#.*$', '', sample)
+    return re.sub(
+        r'''("(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|`(?:\\.|[^`\\])*`)|/\*.*?\*/|//[^\n]*''',
+        lambda m: m.group(1) if m.group(1) is not None else ' ',
+        sample,
+        flags=re.S,
+    )
+
+
+def detect_trailing_slash_mode(root):
+    """Detect framework trailing-slash policy ('always', 'never', or None)."""
+    root = Path(root).resolve()
+    for rel in ('astro.config.mjs', 'astro.config.ts', 'next.config.js', 'next.config.mjs'):
+        probe = root / rel
+        if not probe.is_file():
+            continue
+        try:
+            cleaned = _strip_code_comments(probe.read_text(errors='ignore')[:65536], probe.suffix)
+        except OSError:
+            continue
+        m = re.search(r'\btrailingSlash\s*:\s*(?:[\'"](always|never|ignore)[\'"]|\b(true|false)\b)', cleaned)
+        if m:
+            if m.group(1) in ('always', 'never'):
+                return m.group(1)
+            if m.group(2) == 'true':
+                return 'always'
+            if m.group(2) == 'false':
+                return 'never'
+    return None
+
+
+def normalize_site_route(root, route):
+    """Normalize a route path to match the repository's trailingSlash configuration."""
+    r = str(route or '').strip()
+    if not r.startswith('/') or r == '/':
+        return r
+    last_seg = r.rstrip('/').rsplit('/', 1)[-1]
+    if '.' in last_seg:
+        return r
+    mode = detect_trailing_slash_mode(root)
+    if mode == 'always':
+        return r.rstrip('/') + '/'
+    if mode == 'never':
+        return r.rstrip('/') or '/'
+    return r
+
+
 def detect_rendered_canonical_base(root):
     """Resolve the exact HTTPS canonical origin emitted by this repository's rendered HTML."""
     root = Path(root).resolve()
@@ -825,16 +876,27 @@ def detect_rendered_canonical_base(root):
                 allowed_hosts.append(h.strip().lower())
     known_apexes = {h.removeprefix('www.') for h in allowed_hosts if h}
     if known_apexes:
+        explicit_re = re.compile(
+            r'\b(?:site|SITE_URL|SITE_ORIGIN|CANONICAL_BASE|canonicalBase)\s*[:=]\s*[\'"]https://([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})(?=[/"\'\s<>`$)]|$)'
+        )
         url_re = re.compile(r'https://([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})(?=[/"\'\s<>`$)]|$)')
+        cleaned_samples = []
         for rel in _CANONICAL_PROBE_FILES:
             probe = root / rel
             if not probe.is_file():
                 continue
             try:
-                sample = probe.read_text(errors='ignore')[:65536]
+                raw_sample = probe.read_text(errors='ignore')[:65536]
             except OSError:
                 continue
-            for m in url_re.finditer(sample):
+            cleaned = _strip_code_comments(raw_sample, probe.suffix)
+            cleaned_samples.append(cleaned)
+            for m in explicit_re.finditer(cleaned):
+                cand = m.group(1).lower()
+                if cand in allowed_hosts or cand.removeprefix('www.') in known_apexes:
+                    return 'https://' + cand
+        for cleaned in cleaned_samples:
+            for m in url_re.finditer(cleaned):
                 cand = m.group(1).lower()
                 if cand in allowed_hosts or cand.removeprefix('www.') in known_apexes:
                     return 'https://' + cand
@@ -884,6 +946,16 @@ def init_manifest(approval_manifest_path, author, out_path, root=None, explicit_
                                 clean_src = src.split('#', 1)[0].split('?', 1)[0]
                                 if clean_src:
                                     routes_list.append(clean_src)
+                inbound = brief.get('inboundLinks')
+                if isinstance(inbound, dict):
+                    for l_item in (inbound.get('placements') or []):
+                        if isinstance(l_item, dict):
+                            src = str(l_item.get('source') or '').strip()
+                            if src.startswith('/'):
+                                clean_src = src.split('#', 1)[0].split('?', 1)[0]
+                                if clean_src:
+                                    routes_list.append(clean_src)
+        routes_list = [normalize_site_route(root, r) for r in routes_list]
     deduped = list(dict.fromkeys(routes_list))
     require(bool(deduped), 'No route paths starting with "/" found in approval-manifest.json; pass --route /actual-route')
 

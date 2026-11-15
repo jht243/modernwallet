@@ -820,6 +820,30 @@ class Gates(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Changed artifact: source.txt'):
             g.chart(self.root, plan, rev)
 
+    def test_inbound_link_inspection_accepts_committed_pre_edit_blob_sha(self):
+        (self.root / 'existing.md').write_text('# Existing Guide\nPre-edit body text.\n')
+        self.brief['inboundLinks']['placements'] = [{
+            'source': '/existing',
+            'target': self.row['target'],
+            'section': 'Relevant fixture section',
+            'anchor': 'Fixture answer',
+            'purpose': 'Resolve related question',
+            'inspection': self.ref('existing.md'),
+        }]
+        self.bind_plan()
+        subprocess.run(['git', 'init', '-q'], cwd=self.root, check=True)
+        subprocess.run(['git', 'config', 'user.email', 'test@example.com'], cwd=self.root, check=True)
+        subprocess.run(['git', 'config', 'user.name', 'Test'], cwd=self.root, check=True)
+        subprocess.run(['git', 'add', 'existing.md'], cwd=self.root, check=True)
+        subprocess.run(['git', 'commit', '-qm', 'pre-edit existing page'], cwd=self.root, check=True)
+
+        plan = copy.deepcopy(self.plan)
+        rev = self.review()
+        # Simulate Phase 6 editing existing.md to insert the approved inbound link
+        (self.root / 'existing.md').write_text((self.root / 'existing.md').read_text() + '\nSee [New Guide](/guides/fixture).\n')
+        g.chart(self.root, plan, rev)
+        g.generation(self.root, plan, rev, self.packet, 'fixture')
+
 
 if __name__ == '__main__':
     unittest.main()

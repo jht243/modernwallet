@@ -258,6 +258,54 @@ class Tests(unittest.TestCase):
         routes = h._extract_routes(manifest_obj)
         self.assertEqual(routes, ['/study/alliteration-poems/', '/study/figurative-language/', '/study/onomatopoeia-examples/'])
 
+    def test_portable_auto_seal_aligns_trailing_slash_and_www_canonical_base_to_snapshot(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            (root / '.claude/tools').mkdir(parents=True)
+            (root / '.claude/tools/rendered-audit.py').write_bytes((Path(__file__).with_name('rendered-audit.py')).read_bytes())
+            (root / '.claude/content-review-policy.json').write_text(json.dumps({
+                'siteId': 'jht243/chalkbox',
+                'canonicalHosts': ['chalkbox.org', 'www.chalkbox.org'],
+            }))
+            (root / 'astro.config.mjs').write_text(
+                "// Business: Chalkbox — https://chalkbox.org\n"
+                "export default defineConfig({ site: 'https://www.chalkbox.org', trailingSlash: 'always' });\n"
+            )
+            (root / 'readiness.md').write_text('# Ready\nVerified preparation checklist.\n')
+            manifest = root / 'approval-manifest.json'
+            manifest.write_text(json.dumps({
+                'jobId': 'trend-chalkbox-1',
+                'actions': [{'id': 'A1', 'bucket': 'create new content', 'target': '/classroom/this-or-that-template'}],
+                'newPageBriefs': [{
+                    'target': '/classroom/this-or-that-template',
+                    'inboundLinks': {'placements': [{'source': '/classroom/icebreakers'}]},
+                }],
+            }))
+            hw = root / 'handoff-write.json'
+            # Simulate an older slashless/apex handoff-write followed by a trailingSlash+www snapshot
+            h.auto_seal(root, phase='write', manifest_path=manifest, producer='build-1', out_path=hw, readiness_path=root / 'readiness.md')
+            raw_hw = json.loads(hw.read_text())
+            self.assertEqual(raw_hw['canonicalBase'], 'https://www.chalkbox.org')
+            self.assertEqual(raw_hw['routes'], ['/classroom/this-or-that-template/', '/classroom/icebreakers/'])
+
+            # Also verify backward-compat when previous handoff had apex + slashless routes
+            legacy_hw = root / 'handoff-write-legacy.json'
+            legacy_obj = dict(raw_hw, canonicalBase='https://chalkbox.org', routes=['/classroom/this-or-that-template', '/classroom/icebreakers'])
+            legacy_hw.write_text(json.dumps(legacy_obj, indent=2) + '\n')
+            snap = root / 'snapshot.json'
+            snap.write_text(json.dumps({
+                'manifest': {'canonicalBase': 'https://www.chalkbox.org'},
+                'routes': [{'path': '/classroom/this-or-that-template/'}, {'path': '/classroom/icebreakers/'}],
+            }))
+            ha = root / 'handoff-audit.json'
+            h.auto_seal(
+                root, phase='audit', manifest_path=manifest, producer='write-1', actor='auditor-1',
+                previous_path=legacy_hw, snapshot_path=snap, out_path=ha, readiness_path=root / 'readiness.md',
+            )
+            sealed_ha = json.loads(ha.read_text())
+            self.assertEqual(sealed_ha['canonicalBase'], 'https://www.chalkbox.org')
+            self.assertEqual(sealed_ha['routes'], ['/classroom/this-or-that-template/', '/classroom/icebreakers/'])
+
 
 if __name__ == '__main__':
     unittest.main()

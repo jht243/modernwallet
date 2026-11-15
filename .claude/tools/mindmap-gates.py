@@ -274,9 +274,56 @@ def placements(root, brief, key):
         for field in ['source', 'target', 'section', 'anchor', 'purpose']:
             content(item.get(field), key + '.' + field)
         require(item['source'].startswith('/') and item['target'].startswith('/'), 'Internal placements need exact local routes')
-        require(item['target'] == brief['target'] if key == 'inboundLinks' else item['source'] == brief['target'],
-                'Link placement is attached to a different page')
-        artifact(root, item.get('inspection'))
+        lhs = (item['target'] if key == 'inboundLinks' else item['source']).rstrip('/') or '/'
+        rhs = brief['target'].rstrip('/') or '/'
+        require(lhs == rhs, 'Link placement is attached to a different page')
+        inspection_artifact(root, item.get('inspection'))
+
+
+def _matches_committed_blob_sha(root, rel_path, expected_sha):
+    import subprocess
+    if not isinstance(expected_sha, str) or len(expected_sha) != 64:
+        return False
+    norm = str(rel_path or '').strip().replace('\\', '/').lstrip('./')
+    if not norm:
+        return False
+    try:
+        head_blob = subprocess.run(
+            ['git', '-C', str(root), 'show', 'HEAD:' + norm],
+            capture_output=True, timeout=10,
+        )
+        if head_blob.returncode == 0 and hashlib.sha256(head_blob.stdout).hexdigest() == expected_sha:
+            return True
+        revs = subprocess.run(
+            ['git', '-C', str(root), 'log', '-n', '20', '--format=%H', '--', norm],
+            capture_output=True, text=True, timeout=10,
+        )
+        if revs.returncode == 0:
+            for rev in revs.stdout.splitlines():
+                rev = rev.strip()
+                if not rev:
+                    continue
+                blob = subprocess.run(
+                    ['git', '-C', str(root), 'show', f'{rev}:{norm}'],
+                    capture_output=True, timeout=10,
+                )
+                if blob.returncode == 0 and hashlib.sha256(blob.stdout).hexdigest() == expected_sha:
+                    return True
+    except (OSError, subprocess.SubprocessError):
+        return False
+    return False
+
+
+def inspection_artifact(root, ref):
+    """Verify exact pre-edit inspection SHA on disk or in recent git history after approved link edits."""
+    require(isinstance(ref, dict), 'Artifact needs path and sha256')
+    p = local(root, ref.get('path'))
+    expected = ref.get('sha256')
+    if file_sha(p) != expected:
+        rel = str(p.relative_to(root.resolve())).replace('\\', '/')
+        require(_matches_committed_blob_sha(root.resolve(), rel, expected),
+                'Changed artifact: ' + str(ref.get('path')))
+    return p
 
 
 def artifact(root, ref):

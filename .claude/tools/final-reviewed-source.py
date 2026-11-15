@@ -116,7 +116,23 @@ def _three_way_integrate_reviewed(root, name, expected, merge_base):
             capture_output=True,
             timeout=60,
         )
-        return merged.stdout if merged.returncode == 0 else None
+        if merged.returncode == 0:
+            return merged.stdout
+        if name == 'data/pages.generated.ts':
+            for mp in (
+                root / '.claude/scripts/merge-pages-generated.py',
+                Path(__file__).resolve().parents[1] / 'scripts/merge-pages-generated.py',
+            ):
+                if mp.is_file():
+                    out_p = td_path / 'out.ts'
+                    mp_res = subprocess.run(
+                        [sys.executable, str(mp), '--base', str(base_p), '--ours', str(orig_p), '--theirs', str(exp_p), '--output', str(out_p)],
+                        capture_output=True,
+                        timeout=60,
+                    )
+                    if mp_res.returncode == 0 and out_p.is_file():
+                        return out_p.read_bytes()
+        return None
 
 
 def prepare(root, base, dry_run=False):

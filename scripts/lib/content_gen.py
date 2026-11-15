@@ -685,6 +685,8 @@ def call_openai(model: str, system: str, prompt: str, max_tokens: int, thinking:
         payload["reasoning"] = {"effort": thinking}
     if JSON_MODE:
         payload["text"] = {"format": {"type": "json_object"}}
+        if "json" not in prompt.lower():
+            payload["input"] = prompt.rstrip() + "\n\nRespond with a valid JSON object only."
     try:
         resp = _post("https://api.openai.com/v1/responses",
                      {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}, payload)

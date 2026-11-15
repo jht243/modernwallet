@@ -125,6 +125,27 @@ def preparation_scope_check(root, h, old, phase):
             evidence_ref(root, ref)
 
 
+def _same_site_origin(root, base_a, base_b):
+    if base_a == base_b:
+        return True
+    ua, ub = urlsplit(str(base_a or '')), urlsplit(str(base_b or ''))
+    if ua.scheme != 'https' or ub.scheme != 'https' or not ua.hostname or not ub.hostname:
+        return False
+    ha, hb = ua.hostname.lower().rstrip('.'), ub.hostname.lower().rstrip('.')
+    if ha.removeprefix('www.') != hb.removeprefix('www.'):
+        return False
+    crp_path = Path(root) / '.claude/content-review-policy.json'
+    if crp_path.is_file():
+        hosts = {str(h).strip().lower().rstrip('.') for h in (read(crp_path).get('canonicalHosts') or []) if h}
+        if hosts:
+            return ha in hosts and hb in hosts
+    return True
+
+
+def _norm_route_set(routes):
+    return {(str(r).rstrip('/') or '/') for r in (routes or []) if str(r or '').strip()}
+
+
 def handoff_check(root, path, actor=None, phase=None, visited=None):
     visited = set() if visited is None else set(visited)
     key = str(path.resolve())
@@ -158,8 +179,9 @@ def handoff_check(root, path, actor=None, phase=None, visited=None):
                 'Findings must preserve status and concrete evidence')
     if h.get('previous'):
         old = handoff_check(root, evidence_ref(root, h['previous']), visited=visited)
-        require(h['jobId'] == old['jobId'] and h['canonicalBase'] == old['canonicalBase'], 'Canonical job identity changed')
-        if set(h['routes']) != set(old['routes']):
+        require(h['jobId'] == old['jobId'] and _same_site_origin(root, h['canonicalBase'], old['canonicalBase']),
+                'Canonical job identity changed')
+        if _norm_route_set(h['routes']) != _norm_route_set(old['routes']):
             preparation_scope_check(root, h, old, phase)
         require(all(counters[k] >= old['reviewCounters'][k] for k in counters), 'Review counters cannot reset')
         require({f['id'] for f in old['findings']} <= set(ids), 'Prior findings cannot disappear')
@@ -317,25 +339,35 @@ def focused(root, path, stage, actor=None):
     }
 
 
-def _resolve_site_origin(root, snapshot_obj=None, previous_obj=None):
+def _load_renderer_helper(root):
+    renderer_path = root / '.claude/tools/rendered-audit.py'
+    if not renderer_path.is_file():
+        return None
+    spec_r = importlib.util.spec_from_file_location('handoff_canonical_probe', renderer_path)
+    mod_r = importlib.util.module_from_spec(spec_r)
+    spec_r.loader.exec_module(mod_r)
+    return mod_r
+
+
+def _resolve_site_origin(root, snapshot_obj=None, previous_obj=None, is_layer3_local=False):
     site_id = None
     crp_path = root / '.claude/content-review-policy.json'
     crp_cfg = read(crp_path) if crp_path.is_file() else {}
     if isinstance(crp_cfg.get('siteId'), str) and crp_cfg['siteId'].strip():
         site_id = crp_cfg['siteId'].strip()
+    if is_layer3_local and previous_obj and previous_obj.get('canonicalBase'):
+        return site_id, previous_obj['canonicalBase']
+    if snapshot_obj and isinstance(snapshot_obj.get('manifest'), dict):
+        snap_base = snapshot_obj['manifest'].get('canonicalBase')
+        if isinstance(snap_base, str) and snap_base.startswith('https://'):
+            return site_id, snap_base
+    mod_r = _load_renderer_helper(root)
+    if mod_r is not None and hasattr(mod_r, 'detect_rendered_canonical_base'):
+        detected = mod_r.detect_rendered_canonical_base(root)
+        if isinstance(detected, str) and detected.startswith('https://'):
+            return site_id, detected
     if previous_obj and previous_obj.get('canonicalBase'):
         return site_id, previous_obj['canonicalBase']
-    if snapshot_obj and isinstance(snapshot_obj.get('manifest'), dict) and snapshot_obj['manifest'].get('canonicalBase'):
-        return site_id, snapshot_obj['manifest']['canonicalBase']
-    renderer_path = root / '.claude/tools/rendered-audit.py'
-    if renderer_path.is_file():
-        spec_r = importlib.util.spec_from_file_location('handoff_canonical_probe', renderer_path)
-        mod_r = importlib.util.module_from_spec(spec_r)
-        spec_r.loader.exec_module(mod_r)
-        if hasattr(mod_r, 'detect_rendered_canonical_base'):
-            detected = mod_r.detect_rendered_canonical_base(root)
-            if isinstance(detected, str) and detected.startswith('https://'):
-                return site_id, detected
     local_path = root / '.claude/workflow-policy.local.json'
     if local_path.is_file():
         local_cfg = read(local_path)
@@ -349,7 +381,7 @@ def _resolve_site_origin(root, snapshot_obj=None, previous_obj=None):
     raise ValueError('Cannot determine canonicalBase; configure .claude/content-review-policy.json canonicalHosts')
 
 
-def _extract_routes(manifest_obj, snapshot_obj=None, explicit_routes=()):
+def _extract_routes(manifest_obj, snapshot_obj=None, explicit_routes=(), root=None):
     if explicit_routes:
         routes = [r.strip() for r in explicit_routes if r and r.strip()]
     else:
@@ -376,10 +408,29 @@ def _extract_routes(manifest_obj, snapshot_obj=None, explicit_routes=()):
                                 clean_src = src.split('#', 1)[0].split('?', 1)[0]
                                 if clean_src:
                                     routes.append(clean_src)
+                inbound = brief.get('inboundLinks')
+                if isinstance(inbound, dict):
+                    for l_item in (inbound.get('placements') or []):
+                        if isinstance(l_item, dict):
+                            src = str(l_item.get('source') or '').strip()
+                            if src.startswith('/'):
+                                clean_src = src.split('#', 1)[0].split('?', 1)[0]
+                                if clean_src:
+                                    routes.append(clean_src)
         if snapshot_obj and isinstance(snapshot_obj.get('routes'), list):
             for r in snapshot_obj['routes']:
                 if isinstance(r, dict) and str(r.get('path') or '').startswith('/'):
                     routes.append(r['path'])
+    if root is not None:
+        mod_r = _load_renderer_helper(root)
+        if mod_r is not None and hasattr(mod_r, 'normalize_site_route'):
+            snap_by_norm = {}
+            if snapshot_obj and isinstance(snapshot_obj.get('routes'), list):
+                for r in snapshot_obj['routes']:
+                    if isinstance(r, dict) and str(r.get('path') or '').startswith('/'):
+                        p = r['path']
+                        snap_by_norm[p.rstrip('/') or '/'] = p
+            routes = [snap_by_norm.get(r.rstrip('/') or '/', mod_r.normalize_site_route(root, r)) for r in routes]
     deduped = list(dict.fromkeys(routes))
     require(bool(deduped), 'No route paths starting with "/" found in approval manifest; pass --route /actual-route explicitly')
     return deduped
@@ -396,12 +447,41 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
     snap_obj = read(snapshot_path) if snapshot_path else None
     rev_obj = read(review_path) if review_path else None
 
-    site_id, canonical_base = _resolve_site_origin(root, snap_obj, prev_obj)
+    is_layer3_local = False
+    local_cfg_path = root / '.claude/workflow-policy.local.json'
+    if local_cfg_path.is_file() and (root / '.claude/tools/workflow-dispatch.local.py').is_file():
+        try:
+            is_layer3_local = read(local_cfg_path).get('site') == 'layer3labs'
+        except ValueError:
+            is_layer3_local = False
+
+    site_id, canonical_base = _resolve_site_origin(root, snap_obj, prev_obj, is_layer3_local=is_layer3_local)
     resolved_job = (job_id or (prev_obj or {}).get('jobId') or manifest_obj.get('jobId') or '').strip()
     require(bool(resolved_job), 'Missing jobId in approval-manifest.json; pass --job-id explicitly')
     require(isinstance(producer, str) and producer.strip(), 'Provide a non-empty --producer identity')
 
-    routes = list(prev_obj['routes']) if prev_obj else _extract_routes(manifest_obj, snap_obj, explicit_routes)
+    if prev_obj:
+        routes = list(prev_obj['routes'])
+        if not is_layer3_local:
+            snap_by_norm = {}
+            if snap_obj and isinstance(snap_obj.get('routes'), list):
+                for sr in snap_obj['routes']:
+                    if isinstance(sr, dict) and str(sr.get('path') or '').startswith('/'):
+                        sp = sr['path']
+                        snap_by_norm[sp.rstrip('/') or '/'] = sp
+            mod_r = _load_renderer_helper(root)
+            aligned = []
+            for r in routes:
+                rn = r.rstrip('/') or '/'
+                if rn in snap_by_norm:
+                    aligned.append(snap_by_norm[rn])
+                elif mod_r is not None and hasattr(mod_r, 'normalize_site_route'):
+                    aligned.append(mod_r.normalize_site_route(root, r))
+                else:
+                    aligned.append(r)
+            routes = list(dict.fromkeys(aligned))
+    else:
+        routes = _extract_routes(manifest_obj, snap_obj, explicit_routes, root=None if is_layer3_local else root)
     now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
 
     def make_ref(p):
@@ -583,14 +663,6 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
         draft['snapshot'] = make_ref(snapshot_path)
     if review_path and phase == 'publish':
         draft['review'] = make_ref(review_path)
-
-    is_layer3_local = False
-    local_cfg_path = root / '.claude/workflow-policy.local.json'
-    if local_cfg_path.is_file() and (root / '.claude/tools/workflow-dispatch.local.py').is_file():
-        try:
-            is_layer3_local = read(local_cfg_path).get('site') == 'layer3labs'
-        except ValueError:
-            is_layer3_local = False
 
     pending_draft = out_path.with_name(out_path.name + '.autodraft-' + uuid.uuid4().hex + '.json')
     try:

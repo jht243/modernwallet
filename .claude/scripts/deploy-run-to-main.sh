@@ -103,6 +103,9 @@ is_regenerable() {
   case "$1" in public/sitemap*.xml)
     [ -f .claude/scripts/merge-sitemap.py ] && return 0 ;;
   esac
+  case "$1" in data/pages.generated.ts)
+    [ -f .claude/scripts/merge-pages-generated.py ] && return 0 ;;
+  esac
   case "$1" in
     scripts/paid_placements/ledger.json|scripts/paid_placements/fix-queue.json|scripts/paid_placements/upsell-queue.json|scripts/paid_placements/profiles.json|scripts/agency/packs.json|scripts/agency/upsells.json)
       [ -f scripts/paid_placements/merge_queues.py ] && return 0 ;;
@@ -139,6 +142,10 @@ resolve_generated() {
       case "$f" in
         public/sitemap*.xml)
           python3 .claude/scripts/merge-sitemap.py --index "$f" || return 1
+          git add -- "$f" || return 1
+          continue ;;
+        data/pages.generated.ts)
+          python3 .claude/scripts/merge-pages-generated.py --index "$f" || return 1
           git add -- "$f" || return 1
           continue ;;
         scripts/paid_placements/ledger.json|scripts/paid_placements/fix-queue.json|scripts/paid_placements/upsell-queue.json|scripts/paid_placements/profiles.json|scripts/agency/packs.json|scripts/agency/upsells.json)
@@ -447,6 +454,12 @@ case "$cmd" in
       fi
       echo "[deploy] push rejected (base moved); rebasing + retrying (${attempt}/3)." >&2
       git fetch origin main || { echo '[deploy] retry could not refresh main; NOT pushed.' >&2; exit 3; }
+      if git merge-base --is-ancestor origin/main HEAD 2>/dev/null && [ -f .github/workflows/land.yml ]; then
+        echo "[deploy] direct push to main refused while base is current; falling back to claude/land/* workflow." >&2
+        target="land"
+        LAND_PREFER_DIRECT="0"
+        continue
+      fi
       if ! rebase_or_regen origin/main; then
         echo "[deploy] CONFLICT on retry rebase; aborting." >&2
         exit 3
