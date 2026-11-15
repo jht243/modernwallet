@@ -130,10 +130,17 @@ WRITER_NOTE = (
     'generate ALL page prose via content_gen.py (--field writer=\'"content_gen"\'). ONLY if content_gen.py '
     'exits non-zero across all providers (preflight.log saved), fall back to in-session writing '
     '(--field writer=\'"in_context_fallback"\') rather than blocking the run. Pin every Step 4 / Step 7b '
-    'audit subagent to model: "sonnet" (never opus). RETRY & QUARANTINE RULE: if one vendor hits an '
-    'unrecoverable gate/deploy blocker, quarantine ONLY that vendor (`backlog.py set --id <id> --status quarantined '
-    '--note "<why>"`), ship all passing sibling vendors in the same run, and report `--status failure` naming the '
-    'quarantined vendor so the Failure-Fixer AI picks it up.'
+    'audit subagent to model: "sonnet" (never opus). '
+    'UNREADABLE VENDOR SCAN-THROUGH RULE: test each candidate\'s officialUrl with fetch_page.py; if fetch_page.py '
+    'exits non-zero WITHOUT anti_bot_gate=true, try built-in WebFetch on officialUrl (and /pricing or /) before '
+    'declaring it unreadable (never solve or bypass CAPTCHAs or anti_bot_gate=true). If a subject vendor\'s official '
+    'site is still unreadable (403/404/JS-shell/anti_bot_gate) or defunct, IMMEDIATELY persist `backlog.py set --id <id> '
+    '--status held --note "official site unreadable (<reason>)"` (or `excluded` if defunct/anti_bot_gate) — which frees '
+    'its daily slot — and keep scanning `new` and `pendingCandidates` until `slotsLeftToday` readable vendors are claimed '
+    'and published. NEVER abort with 0 pages while untested eligible or pending rows remain. '
+    'RETRY & QUARANTINE RULE: if one vendor hits an unrecoverable gate/deploy blocker, quarantine ONLY that vendor '
+    '(`backlog.py set --id <id> --status quarantined --note "<why>"`), ship all passing sibling vendors in the same run, '
+    'and report `--status failure` naming the quarantined vendor so the Failure-Fixer AI picks it up.'
 )
 
 
@@ -182,11 +189,29 @@ def cmd_next(state, args):
     room = max(0, min(args.max, DAILY_CAP) - len(claimed_today(state)))
     fresh = sorted((r for r in state['rows'] if r['status'] == 'eligible'),
                    key=lambda r: (r.get('priority', 999), r['id']))[:room]
+    pending_candidates = []
+    if len(fresh) < room:
+        pending_rows = sorted(
+            (r for r in state['rows'] if r['status'] == 'pending'),
+            key=lambda r: (r.get('priority', 999), r['id']),
+        )[:15]
+        pending_candidates = [
+            {
+                'id': r['id'],
+                'vendor': r.get('vendor'),
+                'product': r.get('product'),
+                'officialUrl': r.get('officialUrl'),
+                'priority': r.get('priority', 999),
+            }
+            for r in pending_rows
+        ]
     discovery_allowed = (not resume and not fresh and room > 0 and
                          not any(r['status'] in ('eligible', 'pending') for r in state['rows']))
     upgrades = upgrade_queue(state)[:3]
-    zero_work = not resume and not fresh and not discovery_allowed and not upgrades and not auto_quarantined
-    return {'day': today(), 'resume': resume, 'new': fresh, 'slotsLeftToday': room,
+    zero_work = not resume and not fresh and not pending_candidates and not discovery_allowed and not upgrades and not auto_quarantined
+    return {'day': today(), 'resume': resume, 'new': fresh,
+            'pendingCandidates': pending_candidates,
+            'slotsLeftToday': room,
             'autoQuarantined': auto_quarantined,
             'discoveryAllowed': discovery_allowed,
             'upgradeQueue': upgrades,

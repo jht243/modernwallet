@@ -32,6 +32,7 @@ import urllib.request
 UA = ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
       '(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36')
 MIN_TEXT = 800  # fewer visible characters than this = treat as a JS shell
+MIN_READABLE_CHARS = 120  # unrendered title-only JS shells below this exit 1 so caller uses WebFetch or skips
 
 BOT_GATE_PATTERNS = (
     re.compile(r"making sure you['\u2019]?re not a bot", re.I),
@@ -279,7 +280,14 @@ def main():
     raw_text = res['raw_text']
     status = res['status']
     bot_gated = res['anti_bot_gate']
-    ok = bool(raw_text.strip()) and not bot_gated and 0 < status < 400
+    stripped = raw_text.strip()
+    js_shell_unrendered = (
+        not bot_gated
+        and 0 < status < 400
+        and res['method'] == 'plain'
+        and len(stripped) < MIN_READABLE_CHARS
+    )
+    ok = bool(stripped) and not bot_gated and not js_shell_unrendered and 0 < status < 400
 
     out_text = raw_text
     grep_matches = None
@@ -301,6 +309,8 @@ def main():
     }
     if bot_gated:
         header['anti_bot_gate'] = True
+    if js_shell_unrendered:
+        header['js_shell_unrendered'] = True
     if grep_matches is not None:
         header['grep_matches'] = grep_matches
 

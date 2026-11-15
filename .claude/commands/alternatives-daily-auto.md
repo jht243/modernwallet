@@ -39,7 +39,13 @@ Claude $\rightarrow$ OpenAI $\rightarrow$ Gemini writer keys in cloud), falling 
    keep the source URLs in `reports/alternatives-daily/<day>/<slug>-sources.json`, not as links.
    Read vendor pages with `python3 scripts/alternatives_daily/fetch_page.py <url> [--grep price]`
    (writer AND auditor): it renders JavaScript pages in a headless browser when a plain fetch is
-   blocked or empty. A vendor page counts as unreadable only after this helper also fails.
+   blocked or empty. If `fetch_page.py` exits non-zero and its JSON header does NOT contain
+   `"anti_bot_gate": true`, try Claude Code's built-in `WebFetch` tool on `<url>` (and `<origin>/pricing`
+   or `<origin>/` if `<url>` was a stale deep path) before declaring a vendor unreadable (never solve,
+   click through, or bypass CAPTCHAs or `"anti_bot_gate": true`). For comparison-table alternatives
+   (the 5–8 competitors compared against the subject vendor), if one competitor's site is unreadable,
+   swap in another real readable competitor in the same category or state `"Quote-based; no public price"`
+   — never fail a subject page because one competitor 403s.
 5. **Full Mindmap SEO standard (owner rule 2026-11-14).** Every page follows this site's
    `.claude/commands/_content-standard.md` IN FULL (SEO, INTENT, DEPTH, QUALITY, STYLE, VOICE,
    COMPARISON, LINKS, ANCHOR, NEUTRALITY, AUDITOR, INTRO HUMANIZE) and `_anti-ai-language.md`,
@@ -79,9 +85,15 @@ of this file. Day = America/Bogota date (`TZ=America/Bogota date +%F`).
 **1. Backlog (run FIRST before loading `_content-standard.md` or `_anti-ai-language.md`).** `python3 scripts/alternatives_daily/backlog.py status` then `... next`. (Only load `_content-standard.md`, `_anti-ai-language.md`, and `_content-generation.md` in Step 2 or Step 7b when `>= 1` page is actually claimed or queued for upgrade; if `slotsLeftToday == 0` and Step 7b has `0` thin pages left, exit 0 cleanly with zero writing contracts loaded.)
 - `resume` rows were claimed on an earlier run: finish them first (check the row history for the
   last step; if the page is already live, go straight to step 6 for it).
-- `new` rows are today's eligible picks. Fewer than `slotsLeftToday`? Qualify `pending` rows in
-  priority order until enough are eligible (only as many as you need today):
-  - find the exact product's official HTTPS URL (pricing page preferred) and the vendor name;
+- `new` rows are today's eligible picks. Fewer than `slotsLeftToday`? Qualify `pendingCandidates` (`pending` rows in
+  priority order from `backlog.py next`) until enough READABLE vendors are eligible (only as many as you need today):
+  - find the exact product's official HTTPS URL (pricing page preferred) and the vendor name, and verify right now
+    with `fetch_page.py` (or built-in `WebFetch` if `fetch_page.py` fails without `anti_bot_gate`) that the page is
+    readable. If a candidate's official site is unreadable (403/404/JS-shell/anti-bot gate) or defunct, IMMEDIATELY
+    persist `backlog.py set --id <id> --status held --note "official site unreadable (<reason>)"` (or `--status excluded`
+    if defunct/anti-bot-gated) — which frees its slot — and keep scanning `new` and `pendingCandidates` until
+    `slotsLeftToday` readable vendors are claimed. NEVER stop with 0, 1, or 2 pages while untested `eligible` or
+    `pending` rows remain in `backlog.json`!
   - check this site does not already have an alternatives page or a page answering
     "<product> alternatives" (search the site's page data and sitemap). Already covered →
     `set --status duplicate`; name ambiguous between unrelated products → `set --status excluded`

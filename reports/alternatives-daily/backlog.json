@@ -23,10 +23,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "held",
+          "note": "held: official site blocks automated cloud fetch (403/error page)"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "held",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "YNAB",
@@ -39,7 +44,7 @@
         "source": "semrush"
       },
       "category": "budgeting",
-      "priority": 170,
+      "priority": 8,
       "source": "discovery 2026-11-13",
       "id": "alt-ynab-com-pricing",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -48,10 +53,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Acorns",
@@ -64,7 +74,7 @@
         "source": "semrush"
       },
       "category": "investing",
-      "priority": 50,
+      "priority": 14,
       "source": "discovery 2026-11-13",
       "id": "alt-acorns-com-pricing",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -73,10 +83,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Betterment",
@@ -89,7 +104,7 @@
         "source": "semrush"
       },
       "category": "robo-advisor",
-      "priority": 40,
+      "priority": 17,
       "source": "discovery 2026-11-13",
       "id": "alt-betterment-com-pricing",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -98,10 +113,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Wealthfront",
@@ -114,7 +134,7 @@
         "source": "semrush"
       },
       "category": "robo-advisor",
-      "priority": 110,
+      "priority": 9,
       "source": "discovery 2026-11-13",
       "id": "alt-wealthfront-com",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -123,15 +143,20 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Robinhood",
       "product": "Robinhood",
-      "officialUrl": "https://robinhood.com/us/en/support/articles/robinhood-gold/",
+      "officialUrl": "https://robinhood.com/us/en/gold/",
       "targetQuery": "robinhood alternatives",
       "demand": {
         "volume": 590,
@@ -139,7 +164,7 @@
         "source": "semrush"
       },
       "category": "brokerage",
-      "priority": 590,
+      "priority": 2,
       "source": "discovery 2026-11-13",
       "id": "alt-robinhood-com-us-en-support-articles-robinhood-gold",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -148,10 +173,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Cash App",
@@ -173,10 +203,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "held",
+          "note": "held: official site blocks automated cloud fetch (403/error page)"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "held",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Venmo",
@@ -189,7 +224,7 @@
         "source": "semrush"
       },
       "category": "payments",
-      "priority": 480,
+      "priority": 3,
       "source": "discovery 2026-11-13",
       "id": "alt-venmo-com",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -198,10 +233,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Wise",
@@ -626,7 +666,7 @@
         "source": "semrush"
       },
       "category": "budgeting",
-      "priority": 210,
+      "priority": 7,
       "source": "discovery 2026-11-13",
       "id": "alt-monarchmoney-com-pricing",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -635,10 +675,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "QuickBooks",
@@ -850,7 +895,7 @@
         "source": "semrush"
       },
       "category": "invoicing",
-      "priority": 320,
+      "priority": 4,
       "source": "discovery 2026-11-13",
       "id": "alt-freshbooks-com-pricing",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -859,10 +904,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Wave",
@@ -875,7 +925,7 @@
         "source": "semrush"
       },
       "category": "accounting",
-      "priority": 50,
+      "priority": 15,
       "source": "discovery 2026-11-13",
       "id": "alt-waveapps-com-pricing",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -884,10 +934,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "TurboTax",
@@ -900,7 +955,7 @@
         "source": "semrush"
       },
       "category": "tax software",
-      "priority": 720,
+      "priority": 1,
       "source": "discovery 2026-11-13",
       "id": "alt-turbotax-intuit-com-personal-taxes-online",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -909,10 +964,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Credit Karma",
@@ -934,10 +994,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "held",
+          "note": "held: official site blocks automated cloud fetch (403/error page)"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "held",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "SoFi",
@@ -959,10 +1024,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "held",
+          "note": "held: official site blocks automated cloud fetch (403/error page)"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "held",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Ally Bank",
@@ -975,7 +1045,7 @@
         "source": "semrush"
       },
       "category": "banking",
-      "priority": 50,
+      "priority": 16,
       "source": "discovery 2026-11-13",
       "id": "alt-ally-com-bank",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -984,10 +1054,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Stash",
@@ -1000,7 +1075,7 @@
         "source": "semrush"
       },
       "category": "investing",
-      "priority": 30,
+      "priority": 18,
       "source": "discovery 2026-11-13",
       "id": "alt-stash-com-pricing",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -1009,10 +1084,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Dave",
@@ -1025,7 +1105,7 @@
         "source": "semrush"
       },
       "category": "banking",
-      "priority": 70,
+      "priority": 13,
       "source": "discovery 2026-11-13",
       "id": "alt-dave-com",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -1034,10 +1114,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Albert",
@@ -1050,7 +1135,7 @@
         "source": "semrush"
       },
       "category": "banking",
-      "priority": 20,
+      "priority": 19,
       "source": "discovery 2026-11-13",
       "id": "alt-albert-com",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -1059,10 +1144,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Rocket Money",
@@ -1075,7 +1165,7 @@
         "source": "semrush"
       },
       "category": "subscription tracking",
-      "priority": 320,
+      "priority": 5,
       "source": "discovery 2026-11-13",
       "id": "alt-rocketmoney-com",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -1084,10 +1174,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Empower",
@@ -1100,7 +1195,7 @@
         "source": "semrush"
       },
       "category": "net worth",
-      "priority": 90,
+      "priority": 10,
       "source": "discovery 2026-11-13",
       "id": "alt-empower-com",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -1109,10 +1204,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "LegalZoom",
@@ -1125,7 +1225,7 @@
         "source": "semrush"
       },
       "category": "estate planning",
-      "priority": 260,
+      "priority": 6,
       "source": "discovery 2026-11-13",
       "id": "alt-legalzoom-com",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -1134,10 +1234,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "MileIQ",
@@ -1159,10 +1264,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Bluevine",
@@ -1175,7 +1285,7 @@
         "source": "semrush"
       },
       "category": "business banking",
-      "priority": 70,
+      "priority": 12,
       "source": "discovery 2026-11-13",
       "id": "alt-bluevine-com",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -1184,10 +1294,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Novo",
@@ -1200,7 +1315,7 @@
         "source": "semrush"
       },
       "category": "business banking",
-      "priority": 20,
+      "priority": 21,
       "source": "discovery 2026-11-13",
       "id": "alt-novo-co",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -1209,10 +1324,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     },
     {
       "vendor": "Mercury",
@@ -1225,7 +1345,7 @@
         "source": "semrush"
       },
       "category": "business banking",
-      "priority": 90,
+      "priority": 11,
       "source": "discovery 2026-11-13",
       "id": "alt-mercury-com",
       "createdAt": "2026-11-13T22:00:11+00:00",
@@ -1234,10 +1354,15 @@
           "at": "2026-11-13T22:00:11+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-13"
+        },
+        {
+          "at": "2026-11-15T16:55:03+00:00",
+          "status": "eligible",
+          "note": "qualified: HTTP 200 verified & ranked by search demand"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-13T22:00:11+00:00"
+      "status": "eligible",
+      "updatedAt": "2026-11-15T16:55:03+00:00"
     }
   ]
 }
