@@ -17202,3 +17202,9 @@ All 22 actionable rows are queued for execution (Phases 1–9 of `/autocomplete-
 | /commercial-mortgage-calculator/ | commercial mortgage calculator | commercial mortgage payment calculator; commercial property loan calculator; commercial real estate loan calculator; commercial mortgage balloon payment; dscr calculator commercial loan |
 | /inflation-calculator/ | inflation calculator | calculator inflation; calculator for inflation rate; purchasing power calculator; future value inflation calculator |
 | /expense-ratio-calculator/ | expense ratio calculator | total expense ratio; mutual fund fee calculator; etf expense ratio calculator; investment fee calculator |
+
+## Keyword-gap 2026-11-15 shipped
+| Target URL | Primary Keyword | Supporting Keywords |
+|---|---|---|
+| /salary-calculator/ | salary calculator | salary calculator salary calculator salary calculator; salary calculator salary calculator |
+| /paycheck-calculator/ | salary to paycheck | figuring out paycheck from salary; figure out salary after taxes; after tax |
