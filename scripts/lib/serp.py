@@ -38,6 +38,7 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 try:
@@ -84,6 +85,57 @@ def _matches(domain: str, table: set) -> bool:
     return d in table or _root(d) in table
 
 
+def _is_google_redirect_url(url: str) -> bool:
+    if not url:
+        return True
+    try:
+        p = urllib.parse.urlparse(url)
+    except ValueError:
+        return False
+    host = (p.hostname or "").lower()
+    if _root(host) != "google.com":
+        return False
+    return p.path in ("/goto", "/url") or p.path.startswith(("/goto/", "/url/"))
+
+
+def _domain_from_text(text: str) -> str:
+    head = re.split(r"\s*[›»>]\s*|\s+", (text or "").strip(), maxsplit=1)[0].strip()
+    if not head:
+        return ""
+    if head.startswith(("http://", "https://")):
+        try:
+            return (urllib.parse.urlparse(head).hostname or "").lower().strip(".")
+        except ValueError:
+            return ""
+    cand = head.split("/", 1)[0].lower().strip(".")
+    if re.fullmatch(r"[a-z0-9-]+(?:\.[a-z0-9-]+)+", cand) and not cand.endswith((".js", ".css", ".png", ".jpg")):
+        return cand
+    return ""
+
+
+def _item_domain(item: dict) -> str:
+    """Resolve real ranking domain when Google wraps organic hrefs in google.com/goto."""
+    raw = (item.get("domain") or "").strip().lower()
+    url = (item.get("url") or "").strip()
+    if _root(raw) == "google.com" and _is_google_redirect_url(url):
+        if url:
+            try:
+                qs = urllib.parse.parse_qs(urllib.parse.urlparse(url).query)
+                for key in ("q", "url"):
+                    for val in qs.get(key, ()):
+                        if val.startswith(("http://", "https://")):
+                            host = (urllib.parse.urlparse(val).hostname or "").lower().strip(".")
+                            if host and _root(host) != "google.com":
+                                return host
+            except ValueError:
+                pass
+        bc_dom = _domain_from_text(item.get("breadcrumb") or "")
+        if bc_dom:
+            return bc_dom
+        return ""
+    return raw
+
+
 def read(keyword: str, database: str = "us", depth: int = 10,
          paa_depth: int = 1) -> dict:
     """One SERP -> one verdict. Raises RuntimeError if the SERP can't be read."""
@@ -102,7 +154,7 @@ def summarize(keyword: str, res: dict) -> dict:
     organic = [i for i in items if i.get("type") == "organic"]
     organic.sort(key=lambda i: i.get("rank_group") or 999)
     top10 = organic[:10]
-    domains = [(i.get("domain") or "") for i in top10]
+    domains = [d for d in (_item_domain(i) for i in top10) if d]
 
     forum_hits = [d for d in domains if _matches(d, FORUM_DOMAINS)]
     major_hits = [d for d in domains if _matches(d, MAJOR_DOMAINS)]
@@ -113,12 +165,12 @@ def summarize(keyword: str, res: dict) -> dict:
     ai_cited: list[str] = []
     for a in ai_items:
         for ref in (a.get("references") or []):
-            d = ref.get("domain")
+            d = _item_domain(ref)
             if d and d not in ai_cited:
                 ai_cited.append(d)
         for sub in (a.get("items") or []):
             for ref in (sub.get("references") or []):
-                d = ref.get("domain")
+                d = _item_domain(ref)
                 if d and d not in ai_cited:
                     ai_cited.append(d)
 

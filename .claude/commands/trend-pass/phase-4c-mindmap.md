@@ -17,7 +17,7 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 <!-- /workflow-checkpoints-v1 -->
 
 
-> **‼️ LANE C IS THE PASS — NEVER SKIP OR SHORTEN IT (owner rule 2026-10-07).** Lanes A and B only
+> **‼️ LANE C IS THE PASS — NEVER SKIP OR SHORTEN IT (owner rule 2026-10-07).** **NEVER run a "condensed" Lane C, skip spawning `BUILD / CHART-REVIEW / WRITE / AUDIT` stage workers when any uncovered query or candidate exists, or mark a gap `HELD` because the full pipeline was not run this session** (`HELD` is strictly for an external primary source returning 403/unreachable after attempting to fetch it — including public statute mirrors such as `ecfr.gov` and `law.cornell.edu/cfr` — never for skipping stage workers). Lanes A and B only
 > feed Lane C; without Lane C this routine does nothing. Phase 4c runs on EVERY run, in full:
 > mindmap's complete `phase-build-brief.md` (all lenses, keyword demand ladder, Autocomplete, SERP
 > reads, adversarial duplicate-suppression reviewer) on the top-10 queries plus the research pack.

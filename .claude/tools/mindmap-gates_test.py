@@ -786,6 +786,40 @@ class Gates(unittest.TestCase):
         g.chart(self.root, g.read(manifest_path), g.read(self.root / 'thermos-review.json'))
         g.saved_chart(self.root, g.read(manifest_path))
 
+    def test_append_only_ledger_prefix_accepted_while_mutation_rejected(self):
+        ledger = self.root / 'reports/trend-pass/ledger.md'
+        ledger.parent.mkdir(parents=True, exist_ok=True)
+        initial = '| 2026-11-13 | wegovy-pill-side-effects | HELD | chart-review PASS |\n'
+        ledger.write_text(initial)
+        plan = copy.deepcopy(self.plan)
+        plan['evidenceFiles'].append(self.ref('reports/trend-pass/ledger.md'))
+        (self.root / 'chart.md').write_text(g.render(plan))
+        rev = {
+            'verdict': 'PASS',
+            'reviewer': 'independent-reviewer',
+            'manifestSha256': g.digest(plan),
+            'readinessSha256': g.file_sha(self.root / 'readiness.md'),
+            'evidence': 'Verified all chart rows and primary evidence.',
+            'requestCoverage': [{'requirementId': 'R1', 'status': 'PASS', 'evidence': 'Covered by A1.'}],
+        }
+        g.chart(self.root, plan, rev)
+
+        # Appending later daily run rows to reports/trend-pass/ledger.md keeps historical prefix valid
+        ledger.write_text(initial + '| 2026-11-14 | run note | N/A | appended daily row |\n')
+        g.chart(self.root, plan, rev)
+
+        # Editing historical prefix bytes inside ledger.md STILL fails closed
+        ledger.write_text(initial.replace('HELD', 'KEPT') + '| 2026-11-14 | run note | N/A | appended daily row |\n')
+        with self.assertRaisesRegex(ValueError, 'Changed artifact: reports/trend-pass/ledger.md'):
+            g.chart(self.root, plan, rev)
+
+        # Appending to non-ledger source evidence STILL fails closed
+        ledger.write_text(initial + '| 2026-11-14 | run note | N/A | appended daily row |\n')
+        orig_src = (self.root / 'source.txt').read_text()
+        (self.root / 'source.txt').write_text(orig_src + '\nAppended unauthorized line\n')
+        with self.assertRaisesRegex(ValueError, 'Changed artifact: source.txt'):
+            g.chart(self.root, plan, rev)
+
 
 if __name__ == '__main__':
     unittest.main()

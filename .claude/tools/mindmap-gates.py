@@ -202,9 +202,49 @@ def prose(value, label):
     content(value, label)
 
 
+APPEND_ONLY_LEDGER_RE = re.compile(
+    r'^reports/(?:[^/]+/(?:ledger|trends|ga4-page-audits|page-quality-audits)\.md|content-gen-usage\.jsonl)$'
+)
+
+
+def _is_append_only_ledger(rel_path):
+    norm = str(rel_path or '').strip().replace('\\', '/').lstrip('./')
+    return bool(APPEND_ONLY_LEDGER_RE.match(norm))
+
+
+def _has_newline_prefix_sha(raw_bytes, expected_sha):
+    if not isinstance(expected_sha, str) or len(expected_sha) != 64:
+        return False
+    h = hashlib.sha256()
+    for chunk in raw_bytes.splitlines(keepends=True):
+        stripped = chunk.rstrip(b'\r\n')
+        if stripped != chunk:
+            h_no_nl = h.copy()
+            h_no_nl.update(stripped)
+            if h_no_nl.hexdigest() == expected_sha:
+                return True
+        h.update(chunk)
+        if h.hexdigest() == expected_sha:
+            return True
+    return False
+
+
+def append_safe_artifact(root, ref):
+    """Verify exact SHA-256, or intact newline-aligned historical prefix for append-only run ledgers."""
+    require(isinstance(ref, dict), 'Artifact needs path and sha256')
+    p = local(root, ref.get('path'))
+    expected = ref.get('sha256')
+    raw = p.read_bytes()
+    if hashlib.sha256(raw).hexdigest() != expected:
+        rel = str(p.relative_to(root.resolve())).replace('\\', '/')
+        require(_is_append_only_ledger(rel) and _has_newline_prefix_sha(raw, expected),
+                'Changed artifact: ' + str(ref.get('path')))
+    return p
+
+
 def preparation_artifact(root, ref):
     """Preparation precedes the packet that hashes its approved plan; avoid a hash cycle."""
-    path = artifact(root, ref)
+    path = append_safe_artifact(root, ref)
     if path.suffix == '.json':
         def check(value):
             if isinstance(value, dict):
@@ -679,7 +719,7 @@ def analysis(root, packet):
     refs = packet.get('sourceArtifacts')
     require(isinstance(refs, list) and refs, 'Missing sourced inputs/reasoning records')
     for ref in refs:
-        artifact(root, ref)
+        append_safe_artifact(root, ref)
     if selected['publisher'].removeprefix('www.') == 'layer3labs.io':
         layer3_comparisons(root, packet)
     if basis in ['calculated', 'modeled', 'measured']:
@@ -1308,7 +1348,9 @@ def init_skeleton(root, kind, out=None, out_dir=None, manifest_path=None, review
             if ev_path.exists():
                 continue
             brief = brief_by_action.get(aid, {})
-            src_refs = list(brief.get('evidenceFiles') or plan.get('evidenceFiles') or [])
+            raw_refs = list(brief.get('evidenceFiles') or plan.get('evidenceFiles') or [])
+            non_ledger_refs = [r for r in raw_refs if not (isinstance(r, dict) and _is_append_only_ledger(r.get('path')))]
+            src_refs = non_ledger_refs or raw_refs
             pkt = {
                 'gateSchemaVersion': VERSION,
                 'author': author.strip(),
