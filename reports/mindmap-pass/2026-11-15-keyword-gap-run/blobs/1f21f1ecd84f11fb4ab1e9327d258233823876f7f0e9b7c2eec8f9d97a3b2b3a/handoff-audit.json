@@ -1,0 +1,335 @@
+{
+  "version": 1,
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "keyword-gap-2026-11-15",
+  "producer": "mindmap-write",
+  "routes": [
+    "/salary-calculator/",
+    "/paycheck-calculator/",
+    "/tax-bracket-calculator/"
+  ],
+  "nextAction": "Independently audit captured rendered Mindmap routes against primary sources and editorial standards.",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/dad959e04b26de51d32ae55d2647c2f467fbd8817e311619645b7a66005f4b09/approval-manifest.json",
+      "sha256": "dad959e04b26de51d32ae55d2647c2f467fbd8817e311619645b7a66005f4b09",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/be27e8b8fe349c313045887b0976433e240335f4d65b16612a1d3efaa231fec8/2026-11-15-keyword-gap.md",
+      "sha256": "be27e8b8fe349c313045887b0976433e240335f4d65b16612a1d3efaa231fec8",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/658029642a66d52f8a483139f466b485b293825589d183c614246a9c8c2dc4a6/preview-snapshot.json",
+      "sha256": "658029642a66d52f8a483139f466b485b293825589d183c614246a9c8c2dc4a6",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/audit/preview-snapshot.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/60b4baafb5cb2ce78791e519175ff31127f45d3960cb16d36b74e7e82cdd92f9/readiness.md",
+      "sha256": "60b4baafb5cb2ce78791e519175ff31127f45d3960cb16d36b74e7e82cdd92f9",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/8e0cc2dd6d704e86c1a306808d56cbfe350ceddd3ae8673d12e2a285583a7e2b/chart-review.json",
+      "sha256": "8e0cc2dd6d704e86c1a306808d56cbfe350ceddd3ae8673d12e2a285583a7e2b",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/9a443695dc58abff500389cdc0d8acf85e413b904a6ce23798f83c374dc54bd5/request.txt",
+      "sha256": "9a443695dc58abff500389cdc0d8acf85e413b904a6ce23798f83c374dc54bd5",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/request.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/f51b5f457a41ae691cc91f591d8f3378e82b82756511575620291dd6d7b971f1/intake-keyword-gap.brief.md",
+      "sha256": "f51b5f457a41ae691cc91f591d8f3378e82b82756511575620291dd6d7b971f1",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/intake-keyword-gap.brief.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/918ed11b6f9b607fa93d353f3e4f29cc6575875a3c827beff7f35add2276488f/keyword-gap.json",
+      "sha256": "918ed11b6f9b607fa93d353f3e4f29cc6575875a3c827beff7f35add2276488f",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/seo-research/keyword-gap.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/941418d2ae34daeab388eb8ba48582c7ec6613e3b82665628ae836e2f489784e/cluster-dispositions.json",
+      "sha256": "941418d2ae34daeab388eb8ba48582c7ec6613e3b82665628ae836e2f489784e",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/cluster-dispositions.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/856aa9966d14e9956e659ac9345afae73b7c9a161d23a58017595bdea6f2e45a/coverage-lookup.txt",
+      "sha256": "856aa9966d14e9956e659ac9345afae73b7c9a161d23a58017595bdea6f2e45a",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/298065bb2c454fd39462aeee9836157e0ea864e3db384904eb7e35b0a2054a09/paycheck-reference-calc.py",
+      "sha256": "298065bb2c454fd39462aeee9836157e0ea864e3db384904eb7e35b0a2054a09",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/paycheck-reference-calc.py"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/8741707d2692d75d5aa14673a4c1d4b95b1b6022bf4af8331b80afefaa65d211/paycheck-reference-output.json",
+      "sha256": "8741707d2692d75d5aa14673a4c1d4b95b1b6022bf4af8331b80afefaa65d211",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/paycheck-reference-output.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/1eb1e4e1dbd59dd5de9eccf2b90f029e8012beea93ee30a31d280b609c0195fe/serp.json",
+      "sha256": "1eb1e4e1dbd59dd5de9eccf2b90f029e8012beea93ee30a31d280b609c0195fe",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/serp.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/71241acec752845a2061dbafb3f3ca434405a63302257d61a7252147cb0189e8/autocomplete.salary.csv",
+      "sha256": "71241acec752845a2061dbafb3f3ca434405a63302257d61a7252147cb0189e8",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/autocomplete.salary.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/49d27b52f277c171b3d0036c56937cdd4586c5e18b7358e9f51dfdb30ea34a95/autocomplete.paycheck.csv",
+      "sha256": "49d27b52f277c171b3d0036c56937cdd4586c5e18b7358e9f51dfdb30ea34a95",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/autocomplete.paycheck.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/77486f2592144845fc85225f631fb7d23bd72e64294705c4297ae266638ff710/irs-2026-inflation-adjustments.txt",
+      "sha256": "77486f2592144845fc85225f631fb7d23bd72e64294705c4297ae266638ff710",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-2026-inflation-adjustments.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/b43d2892e79ca4e7c0f0e7e50e46e47b7d6bbe56eb767b2fccf3e6361836a7c3/irs-rev-proc-2025-32.txt",
+      "sha256": "b43d2892e79ca4e7c0f0e7e50e46e47b7d6bbe56eb767b2fccf3e6361836a7c3",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-rev-proc-2025-32.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/648bf7fb8c4ff08e5282988fe29ba9f2e4a5986eb833f218908fd79c0c06f165/irs-topic-751-fica.txt",
+      "sha256": "648bf7fb8c4ff08e5282988fe29ba9f2e4a5986eb833f218908fd79c0c06f165",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-topic-751-fica.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/fc86f7e090c5991bd5dfcebd51bf8f290920605813fd752b4176efdf2154db6b/irs-topic-560-additional-medicare.txt",
+      "sha256": "fc86f7e090c5991bd5dfcebd51bf8f290920605813fd752b4176efdf2154db6b",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-topic-560-additional-medicare.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/8f750268b4e257e60ee47c965abff0651a8b5babfc2055975c507fc9d83dd212/ny-tax-tables.txt",
+      "sha256": "8f750268b4e257e60ee47c965abff0651a8b5babfc2055975c507fc9d83dd212",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/ny-tax-tables.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/5ed9a3759fc9c10ab3ce2f6f65e7dfd9b05912c7ae460f8f86da2201fc639d72/ny-nyc-resident-tax.txt",
+      "sha256": "5ed9a3759fc9c10ab3ce2f6f65e7dfd9b05912c7ae460f8f86da2201fc639d72",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/ny-nyc-resident-tax.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/60b4baafb5cb2ce78791e519175ff31127f45d3960cb16d36b74e7e82cdd92f9/readiness.md",
+      "sha256": "60b4baafb5cb2ce78791e519175ff31127f45d3960cb16d36b74e7e82cdd92f9",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/8e0cc2dd6d704e86c1a306808d56cbfe350ceddd3ae8673d12e2a285583a7e2b/chart-review.json",
+      "sha256": "8e0cc2dd6d704e86c1a306808d56cbfe350ceddd3ae8673d12e2a285583a7e2b",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/9a443695dc58abff500389cdc0d8acf85e413b904a6ce23798f83c374dc54bd5/request.txt",
+      "sha256": "9a443695dc58abff500389cdc0d8acf85e413b904a6ce23798f83c374dc54bd5",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/request.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/f51b5f457a41ae691cc91f591d8f3378e82b82756511575620291dd6d7b971f1/intake-keyword-gap.brief.md",
+      "sha256": "f51b5f457a41ae691cc91f591d8f3378e82b82756511575620291dd6d7b971f1",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/intake-keyword-gap.brief.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/918ed11b6f9b607fa93d353f3e4f29cc6575875a3c827beff7f35add2276488f/keyword-gap.json",
+      "sha256": "918ed11b6f9b607fa93d353f3e4f29cc6575875a3c827beff7f35add2276488f",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/seo-research/keyword-gap.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/941418d2ae34daeab388eb8ba48582c7ec6613e3b82665628ae836e2f489784e/cluster-dispositions.json",
+      "sha256": "941418d2ae34daeab388eb8ba48582c7ec6613e3b82665628ae836e2f489784e",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/cluster-dispositions.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/856aa9966d14e9956e659ac9345afae73b7c9a161d23a58017595bdea6f2e45a/coverage-lookup.txt",
+      "sha256": "856aa9966d14e9956e659ac9345afae73b7c9a161d23a58017595bdea6f2e45a",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/298065bb2c454fd39462aeee9836157e0ea864e3db384904eb7e35b0a2054a09/paycheck-reference-calc.py",
+      "sha256": "298065bb2c454fd39462aeee9836157e0ea864e3db384904eb7e35b0a2054a09",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/paycheck-reference-calc.py"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/8741707d2692d75d5aa14673a4c1d4b95b1b6022bf4af8331b80afefaa65d211/paycheck-reference-output.json",
+      "sha256": "8741707d2692d75d5aa14673a4c1d4b95b1b6022bf4af8331b80afefaa65d211",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/paycheck-reference-output.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/1eb1e4e1dbd59dd5de9eccf2b90f029e8012beea93ee30a31d280b609c0195fe/serp.json",
+      "sha256": "1eb1e4e1dbd59dd5de9eccf2b90f029e8012beea93ee30a31d280b609c0195fe",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/serp.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/71241acec752845a2061dbafb3f3ca434405a63302257d61a7252147cb0189e8/autocomplete.salary.csv",
+      "sha256": "71241acec752845a2061dbafb3f3ca434405a63302257d61a7252147cb0189e8",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/autocomplete.salary.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/49d27b52f277c171b3d0036c56937cdd4586c5e18b7358e9f51dfdb30ea34a95/autocomplete.paycheck.csv",
+      "sha256": "49d27b52f277c171b3d0036c56937cdd4586c5e18b7358e9f51dfdb30ea34a95",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/autocomplete.paycheck.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/77486f2592144845fc85225f631fb7d23bd72e64294705c4297ae266638ff710/irs-2026-inflation-adjustments.txt",
+      "sha256": "77486f2592144845fc85225f631fb7d23bd72e64294705c4297ae266638ff710",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-2026-inflation-adjustments.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/b43d2892e79ca4e7c0f0e7e50e46e47b7d6bbe56eb767b2fccf3e6361836a7c3/irs-rev-proc-2025-32.txt",
+      "sha256": "b43d2892e79ca4e7c0f0e7e50e46e47b7d6bbe56eb767b2fccf3e6361836a7c3",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-rev-proc-2025-32.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/648bf7fb8c4ff08e5282988fe29ba9f2e4a5986eb833f218908fd79c0c06f165/irs-topic-751-fica.txt",
+      "sha256": "648bf7fb8c4ff08e5282988fe29ba9f2e4a5986eb833f218908fd79c0c06f165",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-topic-751-fica.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/fc86f7e090c5991bd5dfcebd51bf8f290920605813fd752b4176efdf2154db6b/irs-topic-560-additional-medicare.txt",
+      "sha256": "fc86f7e090c5991bd5dfcebd51bf8f290920605813fd752b4176efdf2154db6b",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-topic-560-additional-medicare.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/8f750268b4e257e60ee47c965abff0651a8b5babfc2055975c507fc9d83dd212/ny-tax-tables.txt",
+      "sha256": "8f750268b4e257e60ee47c965abff0651a8b5babfc2055975c507fc9d83dd212",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/ny-tax-tables.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/5ed9a3759fc9c10ab3ce2f6f65e7dfd9b05912c7ae460f8f86da2201fc639d72/ny-nyc-resident-tax.txt",
+      "sha256": "5ed9a3759fc9c10ab3ce2f6f65e7dfd9b05912c7ae460f8f86da2201fc639d72",
+      "checkedAt": "2026-11-15T08:34:42.215353+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/ny-nyc-resident-tax.txt"
+    }
+  ],
+  "findings": [],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "previous": {
+    "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/b1f1fdc646c5df3d0d74a83fb1bd93c9088a0ac14d33d9072bdf79b272b1accd/handoff-write.json",
+    "sha256": "b1f1fdc646c5df3d0d74a83fb1bd93c9088a0ac14d33d9072bdf79b272b1accd",
+    "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/handoff-write.json"
+  },
+  "snapshot": {
+    "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/658029642a66d52f8a483139f466b485b293825589d183c614246a9c8c2dc4a6/preview-snapshot.json",
+    "sha256": "658029642a66d52f8a483139f466b485b293825589d183c614246a9c8c2dc4a6",
+    "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/audit/preview-snapshot.json"
+  }
+}

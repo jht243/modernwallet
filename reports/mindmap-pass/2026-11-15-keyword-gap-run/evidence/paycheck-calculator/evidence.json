@@ -1,0 +1,183 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-write",
+  "route": "/paycheck-calculator/",
+  "readerQuestion": "How much of my paycheck will I keep after federal income tax and payroll tax? [PAA unread - DataForSEO unavailable; ac 2/12 how-much and accuracy pattern: how much will i net on my paycheck, is paycheck calculator accurate]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/approval-manifest.json",
+      "sha256": "dad959e04b26de51d32ae55d2647c2f467fbd8817e311619645b7a66005f4b09"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/chart-review.json",
+      "sha256": "8e0cc2dd6d704e86c1a306808d56cbfe350ceddd3ae8673d12e2a285583a7e2b"
+    },
+    "actionId": "A2"
+  },
+  "presentation": {
+    "medium": "interactive tool",
+    "placement": "Page top, directly under the opening answer",
+    "reason": "Take-home depends on pay, pay frequency, filing status and pre-tax retirement contributions, so the reader needs to enter them.",
+    "readerInputs": [
+      "Gross pay and period",
+      "Pay frequency",
+      "Filing status (single, married filing jointly, head of household)",
+      "Pre-tax retirement contribution"
+    ],
+    "interaction": {
+      "decision": "build",
+      "reason": "Adjustable inputs change the answer; a static table cannot cover each reader's pay, hours or filing status."
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static result cards answer faster; no sequence or change over time needs motion."
+    }
+  },
+  "basis": "calculated",
+  "decisionGap": "Readers see gross pay but not what survives federal income tax and payroll tax, and the site's bracket tool excludes payroll tax so it cannot answer take-home pay.",
+  "finding": "A single filer at $60,000 pays $5,020 federal income tax, $3,720 Social Security and $870 Medicare, leaving $50,390 a year ($1,938.08 per biweekly check, 84.0% of gross) before state tax. Across $40,000 to $150,000 single, take-home share falls from 85.8% to 75.9%.",
+  "conditions": "2026 federal law, standard deduction, annual-liability estimate (not IRS Pub. 15-T withholding). Pre-tax retirement lowers income tax only; Social Security and Medicare apply to gross. Additional Medicare 0.9% modeled as employer withholding above $200,000 for all statuses. State and local tax, credits, health premiums, other pre-tax items, extra W-4 withholding, tips, overtime and senior or QBI deductions are not modeled.",
+  "whatWouldChange": "State or local income tax, itemizing, credits, extra W-4 withholding, pre-tax premiums, or a change in 2026 IRS figures change the paycheck; married couples' final Additional Medicare liability uses the $250,000 MFJ threshold.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/evidence/paycheck-calculator/cases.json",
+    "sha256": "035d26da32b830f10c65ea28795052e57633d27a0aff12b2bc1ea3d983a0bdac"
+  },
+  "caseDecisions": "Retrieved cases.json holds only unrelated Layer3Labs owned-property records (e.g. Drones & Defense); none overlaps a pay-conversion or take-home calculator, so no client or fleet record is used and none is claimed. No client-conversation attribution on this page.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/request.txt",
+      "sha256": "9a443695dc58abff500389cdc0d8acf85e413b904a6ce23798f83c374dc54bd5"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/intake-keyword-gap.brief.md",
+      "sha256": "f51b5f457a41ae691cc91f591d8f3378e82b82756511575620291dd6d7b971f1"
+    },
+    {
+      "path": "reports/seo-research/keyword-gap.json",
+      "sha256": "918ed11b6f9b607fa93d353f3e4f29cc6575875a3c827beff7f35add2276488f"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/cluster-dispositions.json",
+      "sha256": "941418d2ae34daeab388eb8ba48582c7ec6613e3b82665628ae836e2f489784e"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/coverage-lookup.txt",
+      "sha256": "856aa9966d14e9956e659ac9345afae73b7c9a161d23a58017595bdea6f2e45a"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/paycheck-reference-calc.py",
+      "sha256": "298065bb2c454fd39462aeee9836157e0ea864e3db384904eb7e35b0a2054a09"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/paycheck-reference-output.json",
+      "sha256": "8741707d2692d75d5aa14673a4c1d4b95b1b6022bf4af8331b80afefaa65d211"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/serp.json",
+      "sha256": "1eb1e4e1dbd59dd5de9eccf2b90f029e8012beea93ee30a31d280b609c0195fe"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/autocomplete.salary.csv",
+      "sha256": "71241acec752845a2061dbafb3f3ca434405a63302257d61a7252147cb0189e8"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/autocomplete.paycheck.csv",
+      "sha256": "49d27b52f277c171b3d0036c56937cdd4586c5e18b7358e9f51dfdb30ea34a95"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-2026-inflation-adjustments.txt",
+      "sha256": "77486f2592144845fc85225f631fb7d23bd72e64294705c4297ae266638ff710"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-rev-proc-2025-32.txt",
+      "sha256": "b43d2892e79ca4e7c0f0e7e50e46e47b7d6bbe56eb767b2fccf3e6361836a7c3"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-topic-751-fica.txt",
+      "sha256": "648bf7fb8c4ff08e5282988fe29ba9f2e4a5986eb833f218908fd79c0c06f165"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-topic-560-additional-medicare.txt",
+      "sha256": "fc86f7e090c5991bd5dfcebd51bf8f290920605813fd752b4176efdf2154db6b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/ny-tax-tables.txt",
+      "sha256": "8f750268b4e257e60ee47c965abff0651a8b5babfc2055975c507fc9d83dd212"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/ny-nyc-resident-tax.txt",
+      "sha256": "5ed9a3759fc9c10ab3ce2f6f65e7dfd9b05912c7ae460f8f86da2201fc639d72"
+    }
+  ],
+  "presentationArtifacts": [
+    {
+      "path": "src/components/PaycheckCalculator.tsx",
+      "sha256": "f3af1eeda8dccffa0518d538f757700596a38a221936b670e88ba9e6eabe9583"
+    },
+    {
+      "path": "src/lib/paycheck.ts",
+      "sha256": "18e7f6b1b932c77506abfd9a8944bb4875cfbb04994b57cd7606aa34609c9db4"
+    },
+    {
+      "path": "src/lib/tax-bracket.ts",
+      "sha256": "ee67769761fe38cde726dc35aaefac675c47c3df137ee40a8123dd0f19d8431e"
+    }
+  ],
+  "method": "taxable = gross - pretax - standard deduction; federal tax by 2026 brackets (IRS Rev. Proc. 2025-32); Social Security 6.2% up to $184,500; Medicare 1.45% plus 0.9% above $200,000 (IRS Topics 751 and 560); net = gross - pretax - federal - Social Security - Medicare.",
+  "units": "USD per year and USD per paycheck (26 biweekly default); percent of gross",
+  "limitations": "Annual-liability estimate with the standard deduction only; excludes state and local tax, credits, itemized deductions, Section 125 premiums, HSA, extra W-4 withholding, tips, overtime, senior and QBI deductions; filing status limited to single, married filing jointly, head of household.",
+  "counterexample": "A state income tax or a W-4 with extra withholding makes the real check smaller than the estimate; pre-tax 401(k) of $10,000 on $100,000 cuts take-home by $7,800 rather than $10,000 because federal tax falls by $2,200 (modeled output pretax_100000_10000).",
+  "execution": {
+    "command": [
+      "python3",
+      "reports/mindmap-pass/2026-11-15-keyword-gap-run/evidence/paycheck-calculator/model.py"
+    ],
+    "code": {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/evidence/paycheck-calculator/model.py",
+      "sha256": "b8573da82ba1a7191afcb2b09d55af77b4886d1b9daa5060f197408e49ea69d8"
+    },
+    "inputs": [
+      {
+        "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/request.txt",
+        "sha256": "9a443695dc58abff500389cdc0d8acf85e413b904a6ce23798f83c374dc54bd5"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-rev-proc-2025-32.txt",
+        "sha256": "b43d2892e79ca4e7c0f0e7e50e46e47b7d6bbe56eb767b2fccf3e6361836a7c3"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-2026-inflation-adjustments.txt",
+        "sha256": "77486f2592144845fc85225f631fb7d23bd72e64294705c4297ae266638ff710"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-topic-751-fica.txt",
+        "sha256": "648bf7fb8c4ff08e5282988fe29ba9f2e4a5986eb833f218908fd79c0c06f165"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-topic-560-additional-medicare.txt",
+        "sha256": "fc86f7e090c5991bd5dfcebd51bf8f290920605813fd752b4176efdf2154db6b"
+      }
+    ],
+    "output": {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/evidence/paycheck-calculator/output.json",
+      "sha256": "0c2149255867fa074574f9d6eb917c3c032b95ef1afc41debe5673e4dd31dc19"
+    }
+  },
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [
+      "paycheck-calculator/output.json",
+      "paycheck-calculator/model.py",
+      "research/sources/irs-rev-proc-2025-32.txt",
+      "research/sources/irs-topic-751-fica.txt",
+      "research/sources/irs-topic-560-additional-medicare.txt"
+    ],
+    "scopeAndLimits": "Calculated from IRS 2026 figures for a W-2 employee on the standard deduction; annual-liability estimate; federal and payroll tax only.",
+    "publicMethod": "On-page 'How Take-Home Pay Is Calculated' and '2026 Federal Figures Used' sections with IRS links and the exclusions list.",
+    "placement": "howItWorks paragraph and the 'Take-Home Pay at Different Salaries' section"
+  },
+  "takeaway": "Single filer at $60,000 keeps about $50,390 a year before state tax (84.0%). Applies to W-2 employees on the standard deduction; the answer changes with state tax, credits, extra withholding or premiums. Estimate, not withholding advice.",
+  "caseUses": [],
+  "selectedMedium": "interactive tool with the key answer, assumptions and finite tables readable in the static page",
+  "testingDecision": "Ordinary format: calculated page; finance topic and calculator are outside _experience.md section G. No tested label, howWeTested or tested schema."
+}

@@ -5,6 +5,19 @@
 export interface CrossLink { href: string; label: string; }
 
 export const CROSS_LINKS: Record<string, CrossLink[]> = {
+  // Keyword-gap pass (2026-11-15).
+  "salary-calculator": [
+    { href: "/paycheck-calculator/", label: "What do you keep after federal and payroll tax?" },
+    { href: "/budget/", label: "Turn monthly income into a budget" },
+    { href: "/tax-bracket-calculator/", label: "Find your 2026 tax bracket" },
+    { href: "/freelance-rate/1099-vs-w2-calculator/", label: "Compare a salary with a contractor hourly rate" },
+  ],
+  "paycheck-calculator": [
+    { href: "/salary-calculator/", label: "Convert pay between hourly, monthly and annual" },
+    { href: "/tax-bracket-calculator/", label: "Find your 2026 tax bracket" },
+    { href: "/budget/", label: "Plan a budget around take-home pay" },
+    { href: "/pto-cashout/", label: "Estimate a PTO cash-out payout" },
+  ],
   // X-trends pass (2026-10-29).
   "hidden-cost-of-owning-a-home-calculator": [
     { href: "/mortgage/home-affordability-calculator/", label: "How much house can you afford?" },

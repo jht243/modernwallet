@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "/home/user/modernwallet/scripts/lib/content_gen.py", line 2456, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/user/modernwallet/scripts/lib/content_gen.py", line 2451, in main
+    return {"preflight": cmd_preflight, "write": cmd_write, "section": cmd_write,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/modernwallet/scripts/lib/content_gen.py", line 2191, in cmd_write
+    fleet_generation_controls(a, "section" if a.cmd == "section" else "write")
+  File "/home/user/modernwallet/scripts/lib/content_gen.py", line 2183, in fleet_generation_controls
+    module.reserve(root, a, operation)
+  File "/home/user/modernwallet/.claude/tools/content-generation-budget.py", line 291, in reserve
+    state=module.Store(root).mutate(save_remote)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/modernwallet/.claude/tools/workflow-control-store.py", line 116, in mutate
+    result = fn(state)
+             ^^^^^^^^^
+  File "/home/user/modernwallet/.claude/tools/content-generation-budget.py", line 289, in save_remote
+    budgets[key]=admit(previous)
+                 ^^^^^^^^^^^^^^^
+  File "/home/user/modernwallet/.claude/tools/content-generation-budget.py", line 274, in admit
+    raise ValueError('Generation already reserved. Resume retained verified draft at '+hint+'; do not regenerate into a different directory')
+ValueError: Generation already reserved. Resume retained verified draft at reports/mindmap-pass/2026-11-15-keyword-gap-run/drafts/salary-calculator.json; do not regenerate into a different directory

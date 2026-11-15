@@ -1,0 +1,49 @@
+evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-rev-proc-2025-32.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/648bf7fb8c4ff08e5282988fe29ba9f2e4a5986eb833f218908fd79c0c06f165/irs-topic-751-fica.txt",
+      "sha256": "648bf7fb8c4ff08e5282988fe29ba9f2e4a5986eb833f218908fd79c0c06f165",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-topic-751-fica.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/fc86f7e090c5991bd5dfcebd51bf8f290920605813fd752b4176efdf2154db6b/irs-topic-560-additional-medicare.txt",
+      "sha256": "fc86f7e090c5991bd5dfcebd51bf8f290920605813fd752b4176efdf2154db6b",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-topic-560-additional-medicare.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/8f750268b4e257e60ee47c965abff0651a8b5babfc2055975c507fc9d83dd212/ny-tax-tables.txt",
+      "sha256": "8f750268b4e257e60ee47c965abff0651a8b5babfc2055975c507fc9d83dd212",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/ny-tax-tables.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/blobs/5ed9a3759fc9c10ab3ce2f6f65e7dfd9b05912c7ae460f8f86da2201fc639d72/ny-nyc-resident-tax.txt",
+      "sha256": "5ed9a3759fc9c10ab3ce2f6f65e7dfd9b05912c7ae460f8f86da2201fc639d72",
+      "checkedAt": "2026-11-15T08:22:36.974348+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/ny-nyc-resident-tax.txt"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/handoff-write.json",
+    "sha256": "b1f1fdc646c5df3d0d74a83fb1bd93c9088a0ac14d33d9072bdf79b272b1accd"
+  }
+}
+

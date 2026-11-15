@@ -1,0 +1,10 @@
+# Write report (mindmap-write)
+
+## WRITE stage notes (mindmap-write, 2026-11-15)
+- CR-5 guardrails applied: A2 engine (src/lib/paycheck.ts) models 0.9% Additional Medicare withholding above $200,000 for all statuses and the page states the Topic 560 thresholds ($250,000 MFJ) for final liability; pre-tax input lowers income tax only, FICA stays on gross; Section 125, HSA, tips, overtime, senior and QBI deductions, credits and state/local tax are listed under "What This Estimate Leaves Out"; page says annual-liability estimate, not IRS Pub. 15-T; wage base cited to IRS Topic 751. A1 hours table is worded as plain arithmetic and an illustration ("In our internal modeling, we converted..."), not research.
+- Replay evidence: evidence/<slug>/model.py + output.json (executed), evidence/ts_check.out.txt (TypeScript engines match the Python reference on 15 cases; $60k single federal $5,020, SS $3,720, Medicare $870, net $50,390; $52,000/(40x52) = $25.00).
+- CR-6 (mechanical, non-blocking) carried: no action taken by WRITE.
+- Writer: Claude (claude-opus-5-5) unusable (API credit balance too low on both keys); both pages written by fallback gpt-6-sol (meta fallback_used). One generation per page; salary page's thin-fact flag could not be regenerated (budget guard: generation already reserved).
+- Known open items for independent AUDIT: salary prose is about 1,080 body words by this author's count versus a 1,200 explainer floor if that page type applies; paycheck intro paragraphs and some rhythm runs (sentences 26-30 within 3 words); semicolons were removed mechanically (Rung 0); one unsupported "calendar-based" sentence was deleted from salary howItWorks.
+- Template: additive optional CalculatorDef fields `sections` and `howItWorksHeading` rendered in src/pages/[category]/index.astro (existing pages render unchanged).
+- Link-only edits (no updated-date or lastmod bumps): /budget/ FAQ, /pto-cashout/ FAQ, /tax-bracket-calculator/ FAQ (A3), /freelance-rate/1099-vs-w2-calculator/ FAQ, guide how-to-make-a-budget; plus CROSS_LINKS for both new routes.

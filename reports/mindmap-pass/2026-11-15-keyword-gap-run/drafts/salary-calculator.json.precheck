@@ -1,0 +1,52 @@
+{
+  "metaTitle": "Salary Calculator: Convert Annual, Hourly and Monthly Pay",
+  "metaDescription": "Convert salary or wages between hourly, daily, weekly, biweekly, twice-monthly, monthly and annual gross pay using your work hours and paid weeks.",
+  "introText": "Divide annual salary by hours per week times weeks per year to get an hourly rate: $52,000 divided by 2,080 hours is $25.00 an hour. The salary calculator also works in reverse. Enter an hourly wage, your weekly hours and your paid weeks to find annual pay, or choose another pay period to convert that amount.\n\nFor example, enter $25 an hour with a 40-hour week and 52 paid weeks. Annual pay is $52,000. The same pay comes to $1,000.00 a week and $2,000.00 every two weeks. On a monthly basis, it is $4,333.33. Those are gross amounts, before taxes and deductions.",
+  "howItWorksHeading": "How the Salary Conversion Works",
+  "howItWorks": "The salary calculator first turns the pay amount you enter into annual gross pay. For an hourly amount, it multiplies the hourly rate by hours per week and weeks per year. To convert an annual salary back to an hourly rate, it divides annual pay by hours per week times weeks per year. A $52,000 salary spread across 2,080 work hours gives $25.00 an hour.\n\nThe period you select tells the calculator how to interpret your pay amount. You can enter pay by the hour, day, week, every two weeks, half month, month or year. It then shows an hourly headline rate alongside annual, monthly, twice-a-month, every-two-weeks, weekly and daily amounts. Enter the hours and days you work so the time-based amounts use your schedule rather than the starting values.\n\nMonthly pay is annual pay divided by 12; twice-a-month pay is annual pay divided by 24. Every-two-weeks pay divides annual pay by half the number of paid weeks, which means 26 checks across 52 paid weeks. Daily pay divides annual pay by days worked per week times weeks per year. These periods are distinct: twice a month follows a calendar-based split of annual pay, while every two weeks follows the number of paid weeks you enter.\n\nThe starting schedule of 40 hours across 52 weeks produces 2,080 hours because 40 multiplied by 52 equals 2,080. Change either input when a pay offer uses a different schedule. For instance, a $60,000 salary works out to $28.85 an hour across 52 paid weeks at 40 hours a week. Across 50 paid weeks at the same weekly hours, the hourly figure is $30.00. The calculator changes the conversion; it does not add pay for weeks you will not be paid.\n\nYou can start with a monthly or biweekly amount instead of annual pay. Entering $5,000 a month gives $60,000 a year, or $28.85 an hour on the starting schedule. Entering $2,000 every two weeks gives $52,000 a year when you use 52 paid weeks; the hourly result is $25.00. An hourly offer also responds to a change in weekly hours: $30 an hour at 37.5 hours a week gives $58,500 a year and $4,875.00 a month when you enter 52 paid weeks.",
+  "sections": [
+    {
+      "heading": "Salary Versus Hourly Pay by Hours and Weeks Worked",
+      "body": "In our internal modeling, we converted the same $60,000 salary across 35 to 45 hour weeks to see how the hourly rate moves. The table uses 52 paid weeks and gross pay throughout. It holds annual salary steady so you can see the effect of changing weekly hours alone.\n\n| Hours per week | Hours per year | Hourly rate |\n|---|---|---|\n| 35 | 1,820 | $32.97 |\n| 37.5 | 1,950 | $30.77 |\n| 40 | 2,080 | $28.85 |\n| 45 | 2,340 | $25.64 |\n\nMore hours per week lower the hourly rate when annual salary stays the same. The table makes that difference visible without changing the pay offer itself. Paid weeks change the divisor too: at 40 hours a week, using 50 paid weeks instead of 52 moves the rate on a $60,000 salary from $28.85 to $30.00 an hour. Enter the hours and paid weeks that match the offer you want to compare."
+    },
+    {
+      "heading": "What Gross Pay Leaves Out",
+      "body": "The salary calculator shows gross pay before taxes and deductions. An hourly conversion tells you how annual pay relates to work time; it does not tell you what will reach a bank account. Use the [paycheck calculator](/paycheck-calculator/) when you need take-home pay after federal income tax and payroll tax. If you want to plan around a monthly income figure, take that result to the [budget calculator](/budget/).\n\nOvertime, bonuses, unpaid leave and benefits are not modeled. A pay amount that includes those items needs care: enter an average pay amount and average hours if you are paid overtime or commission and want a rough conversion. Keep any comparison on the same basis. An offer with a bonus and an offer without one cannot be compared through base salary alone unless you decide how to account for the bonus separately.\n\nAnyone who needs an after-tax figure should use the paycheck calculator instead of treating the gross result as take-home pay. The hourly answer also changes when you work more hours, have fewer paid weeks or earn overtime, so update the inputs when those parts of an offer differ. To see what a pay figure may leave after tax, enter it in the [paycheck calculator](/paycheck-calculator/)."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How do I convert my annual salary to an hourly wage?",
+      "answer": "Divide annual salary by hours per week multiplied by weeks per year. A $52,000 salary divided by 2,080 work hours is $25.00 an hour. Enter your own hours and paid weeks in the salary calculator if they differ from the starting schedule."
+    },
+    {
+      "question": "How do I convert hourly pay to an annual salary?",
+      "answer": "Multiply your hourly rate by hours per week, then by weeks per year. At $25 an hour, working 40 hours a week across 52 paid weeks gives $52,000 a year. Change the hours or paid weeks to match the pay offer you are comparing."
+    },
+    {
+      "question": "How many hours are in a work year?",
+      "answer": "A 40-hour week across 52 weeks gives 2,080 work hours. That figure comes from multiplying the weekly hours by the weeks worked, so it changes with your schedule. For example, 37.5 hours a week across 52 weeks gives 1,950 hours."
+    },
+    {
+      "question": "Is a salary calculator accurate for monthly or biweekly pay?",
+      "answer": "Yes, the salary calculator converts monthly and every-two-weeks amounts using the annual pay implied by your input. Monthly pay is annual pay divided by 12. Every-two-weeks pay depends on your paid weeks; across 52 paid weeks, it represents 26 checks. Twice-a-month pay uses a different split of annual pay."
+    },
+    {
+      "question": "How do I turn a monthly salary into an hourly rate?",
+      "answer": "Multiply monthly pay by 12 to get annual pay, then divide by hours per week times weeks per year. A $5,000 monthly salary becomes $60,000 a year. At 40 hours across 52 weeks, the hourly rate is $28.85."
+    },
+    {
+      "question": "Does this salary calculator include overtime?",
+      "answer": "No. The salary calculator converts the pay amount and work schedule you enter without modeling separate overtime pay. If your pay varies with overtime, enter an average pay amount and average hours for a rough conversion. The result remains gross pay."
+    },
+    {
+      "question": "Does this salary calculator show pay after taxes?",
+      "answer": "No. The salary calculator shows gross pay before taxes and deductions. To estimate take-home pay after federal income tax and payroll tax, use the [paycheck calculator](/paycheck-calculator/). Do not use the gross monthly figure as an after-tax budget amount."
+    },
+    {
+      "question": "What if I work fewer than 52 weeks a year?",
+      "answer": "Enter the number of paid weeks that matches your schedule. Fewer paid weeks change the hourly conversion for a fixed annual pay amount. At 40 hours a week, a $60,000 salary converts to $30.00 an hour across 50 paid weeks, compared with $28.85 across 52. The calculator does not model unpaid leave separately."
+    }
+  ],
+  "slug": "salary-calculator"
+}

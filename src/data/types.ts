@@ -76,6 +76,10 @@ export interface CalculatorDef {
 
   // ---- Hub-page content ----
   howItWorks: string;
+  /** Optional heading for the howItWorks section (default "How it works"). */
+  howItWorksHeading?: string;
+  /** Optional extra body sections (paragraphs, pipe tables, lists) rendered after howItWorks and before the FAQs. */
+  sections?: Array<{ heading: string; body: string }>;
   faqs: FAQ[];
   /** Authoritative primary sources cited on the page (E-E-A-T). */
   sources?: Source[];

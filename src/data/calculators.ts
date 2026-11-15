@@ -2839,7 +2839,7 @@ export const CALCULATORS: CalculatorDef[] = [
       },
       {
         "question": "Does this calculator include state tax?",
-        "answer": "No. The calculator covers federal ordinary-income brackets only, with no state tax. It also leaves out payroll tax, credits, capital gains rates and the qualified business income deduction. Add your state tax separately, and browse [all calculators](/calculators/) for other money tools."
+        "answer": "No. The calculator covers federal ordinary-income brackets only, with no state tax. It also leaves out payroll tax, credits, capital gains rates and the qualified business income deduction. Add your state tax separately, and browse [all calculators](/calculators/) for other money tools. To [estimate your take-home pay](/paycheck-calculator/) after payroll tax, use the paycheck calculator."
       }
     ],
     "sources": [
@@ -3300,6 +3300,167 @@ export const CALCULATORS: CalculatorDef[] = [
           "growthPct": 3,
           "years": 5
       }
+  },
+  // Salary calculator, keyword-gap pass (2026-11-15). Prose generated via scripts/lib/content_gen.py (meta beside the draft in reports/mindmap-pass/2026-11-15-keyword-gap-run/drafts/).
+  {
+    "id": "salary-calculator",
+    "islandId": "salary-calculator",
+    "label": "Salary",
+    "navOrder": 64,
+    "metaTitle": "Salary Calculator to Convert Hourly Wage and Annual Pay",
+    "metaDescription": "Convert salary or wages between hourly, daily, weekly, biweekly, twice-monthly, monthly and annual gross pay using your work hours and paid weeks.",
+    "targetKeyword": "salary calculator",
+    "h1": "Salary Calculator",
+    "introText": "Divide annual salary by hours per week times weeks per year to get an hourly rate: $52,000 divided by 2,080 hours is $25.00 an hour. The salary calculator also works in reverse. Enter an hourly wage, your weekly hours and your paid weeks to find annual pay, or choose another pay period to convert that amount.\n\nFor example, enter $25 an hour with a 40-hour week and 52 paid weeks. Annual pay is $52,000, or $1,000.00 a week and $2,000.00 every two weeks. Monthly pay is $4,333.33, before taxes and deductions.",
+    "howItWorks": "The salary calculator first turns the pay amount you enter into annual gross pay. For an hourly amount, it multiplies the hourly rate by hours per week and weeks per year. To convert an annual salary back to an hourly rate, it divides annual pay by hours per week times weeks per year. A $52,000 salary spread across 2,080 work hours gives $25.00 an hour.\n\nThe period you select tells the calculator how to interpret your pay amount. You can enter pay by the hour, day, week, every two weeks, half month, month or year. It then shows an hourly headline rate alongside annual, monthly, twice-a-month, every-two-weeks, weekly and daily amounts. Enter the hours and days you work so the time-based amounts use your schedule rather than the starting values.\n\nMonthly pay is annual pay divided by 12. Twice-a-month pay is annual pay divided by 24. Every-two-weeks pay divides annual pay by half the number of paid weeks, which means 26 checks across 52 paid weeks. Daily pay divides annual pay by days worked per week times weeks per year.\n\nThe starting schedule of 40 hours across 52 weeks produces 2,080 hours because 40 multiplied by 52 equals 2,080. Change either input when a pay offer uses a different schedule. For instance, a $60,000 salary works out to $28.85 an hour across 52 paid weeks at 40 hours a week. Across 50 paid weeks at the same weekly hours, the hourly figure is $30.00. The calculator uses the paid weeks you enter. It does not model unpaid leave separately.\n\nYou can start with a monthly or biweekly amount instead of annual pay. Entering $5,000 a month gives $60,000 a year, or $28.85 an hour on the starting schedule. Entering $2,000 every two weeks gives $52,000 a year when you use 52 paid weeks. The hourly result is $25.00. An hourly offer also responds to a change in weekly hours: $30 an hour at 37.5 hours a week gives $58,500 a year and $4,875.00 a month when you enter 52 paid weeks.",
+    "howItWorksHeading": "How the Salary Conversion Works",
+    "sections": [
+      {
+        "heading": "Salary Versus Hourly Pay by Hours and Weeks Worked",
+        "body": "The table converts the same $60,000 salary across 35 to 45 hour weeks to show how the hourly rate moves. The table uses 52 paid weeks and gross pay throughout. It holds annual salary steady so you can see the effect of changing weekly hours alone.\n\n| Hours per week | Hours per year | Hourly rate |\n|---|---|---|\n| 35 | 1,820 | $32.97 |\n| 37.5 | 1,950 | $30.77 |\n| 40 | 2,080 | $28.85 |\n| 45 | 2,340 | $25.64 |\n\nMore hours per week lower the hourly rate when annual salary stays the same. Paid weeks change the divisor too: at 40 hours a week, using 50 paid weeks instead of 52 moves the rate on a $60,000 salary from $28.85 to $30.00 an hour. Enter the hours and paid weeks that match the offer you want to compare."
+      },
+      {
+        "heading": "Comparing Two Pay Offers",
+        "body": "A higher salary can pay less per hour. A $62,000 salary at 45 hours a week works out to $26.50 an hour (62,000 divided by 2,340 hours), while the $60,000 salary at 40 hours a week works out to $28.85 an hour.\n\nPaid weeks change the comparison too. A rate of $25 an hour for 40 hours a week is $52,000 over 52 paid weeks. Over 50 paid weeks, the same rate is $50,000, which averages $24.04 an hour across 2,080 hours (50,000 divided by 2,080).\n\nThe pay schedule changes the size of each check but not the annual total. Twenty-six checks of $2,000 and 24 checks of $2,166.67 (rounded to the cent) both come to $52,000 a year. Put each offer on the same hours and paid weeks before you decide which one pays more."
+      },
+      {
+        "heading": "What Gross Pay Leaves Out",
+        "body": "The salary calculator shows gross pay before taxes and deductions. An hourly conversion tells you how annual pay relates to work time. It does not tell you what will reach a bank account. Use the [paycheck calculator](/paycheck-calculator/) when you need take-home pay after federal income tax and payroll tax.\n\nOvertime, bonuses, unpaid leave and benefits are not modeled. If you are paid overtime or commission, enter an average pay amount and average hours for the conversion. Keep any comparison on the same basis. Bonuses are not modeled, so account for them separately when comparing pay offers.\n\nThe hourly answer also changes when you work more hours, have fewer paid weeks or earn overtime, so update the inputs when those parts of an offer differ. Enter your own hours and paid weeks above, then take the monthly result to the [budget calculator](/budget/) or the [paycheck calculator](/paycheck-calculator/)."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How do I convert my annual salary to an hourly wage?",
+        "answer": "Divide annual salary by hours per week multiplied by weeks per year. A $52,000 salary divided by 2,080 work hours is $25.00 an hour. Enter your own hours and paid weeks in the salary calculator if they differ from the starting schedule."
+      },
+      {
+        "question": "How do I convert hourly pay to an annual salary?",
+        "answer": "Multiply your hourly rate by hours per week, then by weeks per year. At $25 an hour, working 40 hours a week across 52 paid weeks gives $52,000 a year. Change the hours or paid weeks to match the pay offer you are comparing."
+      },
+      {
+        "question": "How many hours are in a work year?",
+        "answer": "A 40-hour week across 52 weeks gives 2,080 work hours. That figure comes from multiplying the weekly hours by the weeks worked, so it changes with your schedule. For example, 37.5 hours a week across 52 weeks gives 1,950 hours."
+      },
+      {
+        "question": "Is a salary calculator accurate for monthly or biweekly pay?",
+        "answer": "The salary calculator converts monthly and every-two-weeks amounts using the annual pay implied by your input. Monthly pay is annual pay divided by 12. Every-two-weeks pay depends on your paid weeks. Across 52 paid weeks, it represents 26 checks. Twice-a-month pay is annual pay divided by 24."
+      },
+      {
+        "question": "How do I turn a monthly salary into an hourly rate?",
+        "answer": "Multiply monthly pay by 12 to get annual pay, then divide by hours per week times weeks per year. A $5,000 monthly salary becomes $60,000 a year. At 40 hours across 52 weeks, the hourly rate is $28.85."
+      },
+      {
+        "question": "Does this salary calculator include overtime?",
+        "answer": "No. The salary calculator converts the pay amount and work schedule you enter without modeling separate overtime pay. If your pay varies with overtime, enter an average pay amount and average hours for the conversion. The result remains gross pay."
+      },
+      {
+        "question": "Does this salary calculator show pay after taxes?",
+        "answer": "No. The salary calculator shows gross pay before taxes and deductions. To estimate take-home pay after federal income tax and payroll tax, use the [paycheck calculator](/paycheck-calculator/). Do not use the gross monthly figure as an after-tax budget amount."
+      },
+      {
+        "question": "What if I work fewer than 52 weeks a year?",
+        "answer": "Enter the number of paid weeks that matches your schedule. Fewer paid weeks change the hourly conversion for a fixed annual pay amount. At 40 hours a week, a $60,000 salary converts to $30.00 an hour across 50 paid weeks, compared with $28.85 across 52. The calculator does not model unpaid leave separately."
+      }
+    ],
+    "sources": [],
+    "published": "2026-11-15",
+    "updated": "2026-11-15",
+    "defaultPreset": {
+      "amount": 52000,
+      "period": "annual",
+      "hoursPerWeek": 40,
+      "weeksPerYear": 52,
+      "daysPerWeek": 5
+    }
+  },
+  // Paycheck calculator, keyword-gap pass (2026-11-15). Prose generated via scripts/lib/content_gen.py (meta beside the draft in reports/mindmap-pass/2026-11-15-keyword-gap-run/drafts/).
+  {
+    "id": "paycheck-calculator",
+    "islandId": "paycheck-calculator",
+    "label": "Paycheck",
+    "navOrder": 65,
+    "metaTitle": "Paycheck Calculator: 2026 Federal Take-Home Pay Estimate",
+    "metaDescription": "Estimate take-home pay per paycheck after 2026 federal income tax, Social Security and Medicare. Compare filing statuses and pre-tax retirement contributions.",
+    "targetKeyword": "paycheck calculator",
+    "h1": "Paycheck Calculator",
+    "introText": "At $60,000, a single filer keeps an estimated $50,390 a year before state tax. That is $1,938.08 per biweekly paycheck after federal income tax and payroll tax. The paycheck calculator above starts with annual gross pay and biweekly checks, but you can enter pay per paycheck and choose a different schedule.\n\nIt shows take-home pay per check as the headline result, with each deduction shown per check and per year. The result estimates annual federal tax liability for a W-2 employee who takes the standard deduction. It does not predict the exact amount an employer will withhold.\n\nFor the worked example, enter $60,000 in annual gross pay, choose single filing and leave pre-tax retirement at $0. The standard deduction leaves $43,900 of taxable income. Federal income tax comes to $5,020, while Social Security takes $3,720 and Medicare takes $870.\n\nTogether, those payroll taxes are $4,590. Subtract federal and payroll tax from gross pay to get $50,390 for the year. Across 26 biweekly checks, that is $1,938.08 per check, or 84.0% of gross pay.\n\nState tax, credits and other withholding could change what appears on a pay stub.",
+    "howItWorks": "The paycheck calculator estimates annual take-home pay, then divides it by the number of checks in your pay schedule. Annual take-home pay equals gross pay minus pre-tax retirement contributions, federal income tax, Social Security and Medicare. For the $60,000 single-filer example, the result is $50,390 a year and $1,938.08 across 26 biweekly checks. You can enter gross pay by year or by paycheck. The schedule choices are weekly, every two weeks, twice a month and monthly, with 52, 26, 24 and 12 checks respectively. If you need to convert a pay figure before entering it, use the [salary calculator](/salary-calculator/).\n\nFederal income tax starts with taxable income: gross pay minus your annual pre-tax retirement contribution and the standard deduction, with a floor of zero. The calculator applies the [Internal Revenue Service (IRS) 2026 brackets](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) band by band to that amount. For a single filer earning $60,000, taxable income is $43,900. The first $12,400 is taxed at 10%, producing $1,240. The remaining $31,500 is taxed at 12%, producing $3,780. Those bands add up to $5,020 in federal income tax. Being in a higher bracket does not apply that bracket's rate to every dollar of taxable income.\n\nSocial Security is 6.2% of gross wages up to the $184,500 wage base. Medicare is 1.45% of all gross wages, and employers withhold an additional 0.9% on wages above $200,000 in a calendar year. Neither tax shrinks when you make a pre-tax retirement contribution. For example, Social Security on a $300,000 salary stops at $11,439, while Medicare comes to $5,250. On $250,000, Medicare is $4,075, which includes $450 in Additional Medicare withholding. The calculator shows Social Security and Medicare separately.\n\nA pre-tax retirement contribution lowers the income used to calculate federal income tax, but it does not lower the gross wages used for Social Security or Medicare. On a $100,000 single-filer salary, a $10,000 contribution reduces federal income tax from $13,170 to $10,970. Social Security stays at $6,200, and Medicare stays at $1,450. Annual take-home pay is $71,380 with the contribution, compared with $79,180 without it. The contribution lowers take-home pay by $7,800 because federal income tax falls by $2,200. Enter the contribution as an annual amount, even if you enter gross pay per paycheck.",
+    "howItWorksHeading": "How Take-Home Pay Is Calculated",
+    "sections": [
+      {
+        "heading": "2026 Federal Figures Used",
+        "body": "The paycheck calculator uses the following 2026 standard deductions, income tax brackets and payroll tax figures.\n\n| Item | 2026 figure | Source |\n|---|---|---|\n| Standard deduction, single | $16,100 | [IRS 2026 adjustments](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill) |\n| Standard deduction, married filing jointly | $32,200 | [IRS 2026 adjustments](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill) |\n| Standard deduction, head of household | $24,150 | [IRS 2026 adjustments](https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill) |\n| Income tax rates | 10%, 12%, 22%, 24%, 32%, 35%, 37% | [IRS Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |\n| Single, top of the 10% and 12% brackets | $12,400 and $50,400 of taxable income | [IRS Rev. Proc. 2025-32](https://www.irs.gov/pub/irs-drop/rp-25-32.pdf) |\n| Social Security tax | 6.2% up to $184,500 of wages | [IRS Topic 751](https://www.irs.gov/taxtopics/tc751) |\n| Medicare tax | 1.45% of all wages | [IRS Topic 751](https://www.irs.gov/taxtopics/tc751) |\n| Additional Medicare withholding | 0.9% of wages above $200,000 | [IRS Topic 751](https://www.irs.gov/taxtopics/tc751) |\n\nFor more detail on where taxable income falls, use the [federal tax bracket calculator](/tax-bracket-calculator/). The figures above were checked on the linked IRS pages on 2026-11-15."
+      },
+      {
+        "heading": "Take-Home Pay at Different Salaries",
+        "body": "In our internal modeling, we ran 2026 federal brackets and payroll tax across salaries from $40,000 to $150,000 to estimate take-home pay. The table assumes a single filer taking the standard deduction, with no state tax, retirement contribution or other deductions. Each biweekly figure spreads the annual estimate across 26 checks. These figures are modeled results, so your entries in the paycheck calculator above may produce different amounts.\n\n| Gross salary | Federal income tax | Social Security | Medicare | Take-home per year | Take-home per biweekly check | Share of gross |\n|---|---|---|---|---|---|---|\n| $40,000 | $2,620 | $2,480 | $580 | $34,320 | $1,320.00 | 85.8% |\n| $60,000 | $5,020 | $3,720 | $870 | $50,390 | $1,938.08 | 84.0% |\n| $100,000 | $13,170 | $6,200 | $1,450 | $79,180 | $3,045.38 | 79.2% |\n| $150,000 | $24,734 | $9,300 | $2,175 | $113,791 | $4,376.58 | 75.9% |\n\nThe take-home share falls from 85.8% to 75.9% across the table as more taxable income reaches higher brackets. Social Security stops applying once wages reach $184,500. Pre-tax retirement can change the income-tax part of the result: a $10,000 contribution lowers take-home pay by $7,800 in the $100,000 single-filer case. Filing status changes the estimate too. At $60,000, married filing jointly produces $52,570 in annual take-home pay, or $2,021.92 per biweekly check. Head of household at $60,000 produces $51,462 annually and $1,979.31 per biweekly check. Choose the filing status that applies to the estimate you want to see. Married filing separately is not offered. The married filing jointly figures treat the pay you enter as the household's only income."
+      },
+      {
+        "heading": "What This Estimate Leaves Out",
+        "body": "The paycheck calculator leaves out taxes, deductions and withholding choices that can change the amount on an actual pay stub.\n\n- State and local income tax.\n- Tax credits, including the child tax credit.\n- Itemized deductions.\n- Health premiums, health savings account (HSA) contributions and other pre-tax items.\n- Extra withholding requested on [Form W-4](https://www.irs.gov/forms-pubs/about-form-w-4).\n- Tips, overtime, senior and qualified business income (QBI) deductions.\n\nThis is an annual-liability estimate using the standard deduction. It does not calculate withholding under [IRS Publication 15-T](https://www.irs.gov/publications/p15t). An employer's actual check can therefore differ from the calculator's per-check figure. The calculator models 0.9% Additional Medicare withholding above $200,000 for every filing status. Final Additional Medicare liability uses different thresholds, including $250,000 for married filing jointly, as explained in [IRS Topic 560](https://www.irs.gov/taxtopics/tc560). A married couple's final liability can therefore differ from the Additional Medicare amount withheld.\n\nThis paycheck calculator is not suited to self-employed or 1099 income, multiple jobs or itemized deductions. For self-employed or 1099 income, use the [self-employment tax calculator](/self-employment-tax/). For multiple jobs or itemized deductions, use the [IRS Tax Withholding Estimator](https://www.irs.gov/individuals/tax-withholding-estimator). State tax, credits or extra W-4 withholding would also change the answer, so treat the result as an estimate rather than personalized withholding advice. Enter your gross pay and filing status in the paycheck calculator above, then compare its result with your pay stub."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much of my paycheck will I keep after taxes?",
+        "answer": "At $60,000 a year, a single filer keeps an estimated $50,390 before state tax. That is $1,938.08 per biweekly check, or 84.0% of gross pay. The estimate subtracts federal income tax, Social Security and Medicare. Enter your own pay in the calculator above because filing status and pre-tax retirement contributions can change the result."
+      },
+      {
+        "question": "Is a paycheck calculator accurate?",
+        "answer": "It is an estimate of annual federal tax liability and take-home pay under the listed assumptions. It uses the standard deduction and does not calculate an employer's exact withholding under IRS Publication 15-T. State tax, credits and health premiums are also left out. Compare the per-check result with a pay stub if you need to understand a difference."
+      },
+      {
+        "question": "How do I calculate my paycheck manually?",
+        "answer": "Start with annual gross pay and subtract pre-tax retirement contributions and the standard deduction to find taxable income. Apply the federal brackets to taxable income band by band. Then subtract federal income tax, Social Security, Medicare and the retirement contribution from gross pay. Divide annual take-home pay by the number of checks in your chosen pay schedule."
+      },
+      {
+        "question": "Does this paycheck calculator include state tax?",
+        "answer": "No. The paycheck calculator does not subtract state or local income tax. Its take-home figure is therefore before those taxes. If state or local tax appears on your pay stub, that is one reason the actual net check can be lower than this estimate."
+      },
+      {
+        "question": "Why is my real paycheck different from this estimate?",
+        "answer": "Your employer's withholding can differ from this annual-liability estimate. The calculator also leaves out state tax, credits, health premiums and extra W-4 withholding. It does not model tips or overtime deductions. Compare the deduction rows with your pay stub to identify which amounts the estimate leaves out."
+      },
+      {
+        "question": "How does a 401(k) contribution change my take-home pay?",
+        "answer": "A pre-tax retirement contribution reduces the income used for federal income tax, while Social Security and Medicare still use gross wages. In the $100,000 single-filer case, a $10,000 contribution lowers federal income tax by $2,200. Take-home pay falls by $7,800 rather than the full contribution amount. Enter your annual contribution to see the change in the calculator."
+      },
+      {
+        "question": "Why does Social Security tax stop on high salaries?",
+        "answer": "Social Security tax applies only up to the 2026 wage base of $184,500. The employee rate is 6.2%, so the modeled Social Security tax on a $300,000 salary is $11,439. Medicare still applies to gross wages above the Social Security wage base. The calculator shows both taxes separately in its results."
+      },
+      {
+        "question": "Does a paycheck calculator include Medicare tax?",
+        "answer": "Yes. This paycheck calculator subtracts Medicare tax at 1.45% of gross wages. It also models an extra 0.9% withheld on wages above $200,000. Final Additional Medicare liability can use a different threshold for married filing jointly, so that withholding estimate may differ from the final tax."
+      }
+    ],
+    "sources": [
+      {
+        "label": "IRS Revenue Procedure 2025-32 (2026 inflation adjustments)",
+        "url": "https://www.irs.gov/pub/irs-drop/rp-25-32.pdf"
+      },
+      {
+        "label": "IRS: Tax inflation adjustments for tax year 2026",
+        "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+      },
+      {
+        "label": "IRS Topic no. 751, Social Security and Medicare withholding rates",
+        "url": "https://www.irs.gov/taxtopics/tc751"
+      },
+      {
+        "label": "IRS Topic no. 560, Additional Medicare Tax",
+        "url": "https://www.irs.gov/taxtopics/tc560"
+      }
+    ],
+    "published": "2026-11-15",
+    "updated": "2026-11-15",
+    "defaultPreset": {
+      "gross": 60000,
+      "basis": "annual",
+      "frequency": "biweekly",
+      "status": "single",
+      "pretax": 0
+    }
   },
 ];
 

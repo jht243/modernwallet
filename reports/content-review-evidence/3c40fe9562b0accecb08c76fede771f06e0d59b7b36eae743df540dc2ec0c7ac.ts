@@ -1,0 +1,342 @@
+// Build-time stat injection: turns a spoke's preset into a few real headline numbers that get
+// baked into the static HTML before the React island hydrates. Good for crawlers + AEO, and gives
+// the page substance even with JS disabled.
+//
+// Calculator-aware: each calculator contributes its own headline stats. Phase 2 extends the switch.
+
+import type { SpokeEntry } from "../data/types";
+import { computeAutoLoan, type AutoLoanInput } from "./auto-loan";
+import { computeRental, type RentalInput } from "./rental";
+import { projectRetirement, early401kWithdrawal, computeRMD } from "./retirement";
+import { computeInvestment, type InvestmentInput } from "./investment";
+import { computePortfolio, type PortfolioInput } from "./portfolio";
+import { computeNetWorth, type NetWorthInput } from "./net-worth";
+import { carAffordability, homeAffordability, downPaymentBreakdown, closingCostEstimate } from "./affordability";
+import { computeBudget } from "./budget";
+import { computeMca, type McaInput } from "./merchant-cash-advance";
+import { computeFactoring, type FactoringInput } from "./invoice-factoring";
+import { computeLoc, type LocInput } from "./business-line-of-credit";
+import { computeLoan401k, loanLimit, type Loan401kInput } from "./401k-loan";
+import { computeHardMoney, type HardMoneyInput } from "./hard-money-loan";
+import { computeBridge, type BridgeInput } from "./bridge-loan";
+import { fmtUSD, fmtMonths, fmtPct, fmtNum } from "./format";
+
+export interface Stat {
+  label: string;
+  value: string;
+}
+
+export function spokeStats(entry: SpokeEntry): Stat[] {
+  if (["inherited-ira-withdrawal-calculator", "medicare-irmaa-calculator", "mileage-log-checker", "snap-benefits", "aca-subsidy"].includes(entry.islandId ?? "")) return [];
+  // Buyer-journey override tools key off the spoke's islandId + preset.kind.
+  // Trend pass Lane C (2026-11-14): loan-cost islands compute their own headline stats from the preset.
+  if (entry.islandId === "loan-401k") return loan401kStats(entry.preset as Partial<Loan401kInput>);
+  if (entry.islandId === "hard-money-loan") return hardMoneyStats(entry.preset as Partial<HardMoneyInput>);
+  if (entry.islandId === "bridge-loan") return bridgeStats(entry.preset as Partial<BridgeInput>);
+  if (entry.islandId === "affordability") return affordabilityStats(entry.preset as Record<string, unknown>);
+  if (entry.islandId === "mortgage-extras") return extrasStats(entry.preset as Record<string, unknown>);
+  switch (entry.calculator) {
+    case "auto-loan":
+    case "mortgage":
+      return autoLoanStats(entry.preset as Partial<AutoLoanInput>);
+    case "real-estate":
+      return rentalStats(entry.preset as Partial<RentalInput>);
+    case "retirement":
+      return retirementStats(entry.preset as Record<string, unknown>);
+    case "investing":
+      return investingStats(entry.preset as Record<string, unknown>);
+    case "portfolio":
+      return portfolioStats(entry.preset as Partial<PortfolioInput>);
+    case "net-worth":
+      return netWorthStats(entry.preset as Partial<NetWorthInput>);
+    case "budget":
+      return budgetStats(entry.preset as Record<string, unknown>);
+    case "merchant-cash-advance":
+      return mcaStats(entry.preset as Partial<McaInput>);
+    case "invoice-factoring":
+      return factoringStats(entry.preset as Partial<FactoringInput>);
+    case "business-line-of-credit":
+      return locStats(entry.preset as Partial<LocInput>);
+    default:
+      return [];
+  }
+}
+
+function loan401kStats(preset: Partial<Loan401kInput>): Stat[] {
+  const i: Loan401kInput = { vestedBalance: 0, outstandingLoans: 0, highest12: 0, loanAmount: 0, aprPct: 0, termYears: 0, paymentsPerYear: 12, purpose: "general", ...preset };
+  const lim = loanLimit(i.vestedBalance, i.outstandingLoans, i.highest12);
+  const r = computeLoan401k(i);
+  if (!r.valid) return [];
+  return [
+    { label: `largest new loan at ${fmtUSD(i.vestedBalance)} vested`, value: fmtUSD(lim.maxNewLoan) },
+    { label: `payment on ${fmtUSD(i.loanAmount)} over ${fmtNum(i.termYears)} years`, value: fmtUSD(r.payment, { cents: true }) },
+    { label: "total interest", value: fmtUSD(r.totalInterest) },
+  ];
+}
+
+function hardMoneyStats(preset: Partial<HardMoneyInput>): Stat[] {
+  const i: HardMoneyInput = { purchasePrice: 0, rehabBudget: 0, purchaseAdvancePct: 0, rehabAdvancePct: 0, aprPct: 0, pointsPct: 0, months: 0, otherFees: 0, extensionMonths: 0, extensionFeePct: 0, drawMode: "closing", arv: 0, sellingCostPct: 0, monthlyHoldingCost: 0, ...preset };
+  const r = computeHardMoney(i);
+  if (!r.valid) return [];
+  return [
+    { label: "total financing cost on the example terms", value: fmtUSD(r.totalFinancingCost) },
+    { label: "monthly interest-only payment", value: fmtUSD(r.monthlyInterestFull) },
+    { label: "loan to cost", value: fmtPct(r.ltcPct, 0) },
+  ];
+}
+
+function bridgeStats(preset: Partial<BridgeInput>): Stat[] {
+  const i: BridgeInput = { salePrice: 0, oldMortgagePayoff: 0, bridgeLoan: 0, aprPct: 0, originationPct: 0, otherFees: 0, months: 0, newMortgagePayment: 0, oldMonthlyCarrying: 0, sellingCostPct: 0, alternativeMonthlyCost: 0, maxCombinedLtvPct: 0, ...preset };
+  const r = computeBridge(i);
+  if (!r.valid) return [];
+  return [
+    { label: `bridge cost over ${fmtNum(i.months)} months on the example terms`, value: fmtUSD(r.bridgeCost) },
+    { label: "net proceeds from the old home", value: fmtUSD(r.netProceeds) },
+  ];
+}
+
+function mcaStats(preset: Partial<McaInput>): Stat[] {
+  const r = computeMca({
+    advanceAmount: 0,
+    factorRate: 0,
+    termMonths: 0,
+    paymentFrequency: "daily",
+    ...preset,
+  } as McaInput);
+  if (r.periodicPayment == null) return [];
+  const cadence = (preset.paymentFrequency ?? "daily") === "weekly" ? "weekly payment" : "daily payment";
+  return [
+    { label: cadence, value: fmtUSD(r.periodicPayment) },
+    { label: "effective APR", value: fmtPct(r.effectiveAprPct, 1) },
+    { label: "total payback", value: fmtUSD(r.totalPayback) },
+  ];
+}
+
+function factoringStats(preset: Partial<FactoringInput>): Stat[] {
+  const r = computeFactoring({
+    invoiceAmount: 0,
+    advanceRatePct: 0,
+    factorFeePct: 0,
+    daysUntilPaid: 0,
+    ...preset,
+  } as FactoringInput);
+  if (r.advanceAmount == null) return [];
+  return [
+    { label: "cash now", value: fmtUSD(r.advanceAmount) },
+    { label: "factoring fee", value: fmtUSD(r.feeAmount) },
+    { label: "effective APR", value: fmtPct(r.effectiveAprPct, 1) },
+  ];
+}
+
+function locStats(preset: Partial<LocInput>): Stat[] {
+  const r = computeLoc({
+    drawAmount: 0,
+    aprPct: 0,
+    repaymentTermMonths: 0,
+    ...preset,
+  } as LocInput);
+  if (r.monthlyPayment == null) return [];
+  return [
+    { label: "monthly payment", value: fmtUSD(r.monthlyPayment) },
+    { label: "total interest", value: fmtUSD(r.totalInterest) },
+    { label: "APR with fees", value: fmtPct(r.effectiveAprPct, 1) },
+  ];
+}
+
+function budgetStats(preset: Record<string, unknown>): Stat[] {
+  const income = Number(preset.monthlyIncome) || 0;
+  const amounts = (preset.amounts as Record<string, number>) || {};
+  if (!(income > 0)) return [];
+  const r = computeBudget({ monthlyIncome: income, amounts });
+  if (preset.mode === "zero-based") {
+    return [
+      { label: "monthly income", value: fmtUSD(income) },
+      { label: "total assigned", value: fmtUSD(r.totalSpending) },
+      { label: "left to assign", value: fmtUSD(r.leftover) },
+    ];
+  }
+  const target = (b: string) => r.buckets.find((x) => x.bucket === b)!.target;
+  return [
+    { label: "needs budget (50%)", value: fmtUSD(target("needs")) },
+    { label: "wants budget (30%)", value: fmtUSD(target("wants")) },
+    { label: "savings budget (20%)", value: fmtUSD(target("savings")) },
+  ];
+}
+
+function affordabilityStats(preset: Record<string, unknown>): Stat[] {
+  if (preset.kind === "home") {
+    const r = homeAffordability({
+      annualIncome: Number(preset.annualIncome) || 0,
+      monthlyDebts: Number(preset.monthlyDebts) || 0,
+      downPayment: Number(preset.downPayment) || 0,
+      interestRatePct: Number(preset.interestRatePct) || 0,
+      loanTermYears: Number(preset.loanTermYears) || 30,
+    });
+    if (r.maxHomePrice == null) return [];
+    return [
+      { label: "home you can afford", value: fmtUSD(r.maxHomePrice) },
+      { label: "monthly budget", value: fmtUSD(r.maxMonthlyPayment) },
+      { label: "loan amount", value: fmtUSD(r.maxLoanAmount) },
+    ];
+  }
+  const r = carAffordability({
+    monthlyBudget: Number(preset.monthlyBudget) || 0,
+    downPayment: Number(preset.downPayment) || 0,
+    tradeInValue: Number(preset.tradeInValue) || 0,
+    interestRatePct: Number(preset.interestRatePct) || 0,
+    loanTermMonths: Number(preset.loanTermMonths) || 60,
+  });
+  if (r.maxVehiclePrice == null) return [];
+  return [
+    { label: "car you can afford", value: fmtUSD(r.maxVehiclePrice) },
+    { label: "max loan", value: fmtUSD(r.maxLoanAmount) },
+    { label: "total interest", value: fmtUSD(r.totalInterest) },
+  ];
+}
+
+function extrasStats(preset: Record<string, unknown>): Stat[] {
+  if (preset.kind === "closing-cost") {
+    const r = closingCostEstimate(Number(preset.homePrice) || 0);
+    if (!r) return [];
+    return [
+      { label: "typical closing costs", value: fmtUSD(r.typical) },
+      { label: "low (2%)", value: fmtUSD(r.low) },
+      { label: "high (5%)", value: fmtUSD(r.high) },
+    ];
+  }
+  const r = downPaymentBreakdown(Number(preset.homePrice) || 0, Number(preset.downPaymentPct) || 0);
+  if (!r) return [];
+  return [
+    { label: "down payment", value: fmtUSD(r.downPaymentAmount) },
+    { label: "loan amount", value: fmtUSD(r.loanAmount) },
+    { label: "loan-to-value", value: fmtPct(r.ltvPct, 0) },
+  ];
+}
+
+function netWorthStats(preset: Partial<NetWorthInput>): Stat[] {
+  const r = computeNetWorth(preset as NetWorthInput);
+  if (r.netWorth == null) return [];
+  const stats: Stat[] = [
+    { label: "net worth", value: fmtUSD(r.netWorth) },
+    { label: "total assets", value: fmtUSD(r.totalAssets) },
+    { label: "total debt", value: fmtUSD(r.totalLiabilities) },
+  ];
+  if (r.medianNetWorthForAge != null) {
+    stats.push({ label: `vs median for ${r.ageBracket}`, value: `${r.aboveMedian ? "+" : ""}${fmtUSD(r.vsMedian)}` });
+  }
+  return stats;
+}
+
+function portfolioStats(preset: Partial<PortfolioInput>): Stat[] {
+  const r = computePortfolio({
+    stocks: Number(preset.stocks) || 0,
+    bonds: Number(preset.bonds) || 0,
+    realEstate: Number(preset.realEstate) || 0,
+    cash: Number(preset.cash) || 0,
+    monthlyContribution: Number(preset.monthlyContribution) || 0,
+    years: Number(preset.years) || 0,
+  } as PortfolioInput);
+  if (r.expectedReturnPct == null) return [];
+  const stats: Stat[] = [
+    { label: "expected return", value: fmtPct(r.expectedReturnPct, 2) },
+    { label: "volatility", value: fmtPct(r.volatilityPct, 2) },
+    { label: "Sharpe ratio", value: r.sharpeRatio == null ? "—" : fmtNum(r.sharpeRatio, 2) },
+  ];
+  return stats;
+}
+
+function investingStats(preset: Record<string, unknown>): Stat[] {
+  const r = computeInvestment({
+    currentBalance: Number(preset.currentBalance) || 0,
+    monthlyContribution: Number(preset.monthlyContribution) || 0,
+    annualReturnPct: Number(preset.annualReturnPct) || 0,
+    years: Number(preset.years) || 0,
+    compoundsPerYear: Number(preset.compoundsPerYear) || 12,
+    targetAmount: Number(preset.targetAmount) || 0,
+  } as InvestmentInput);
+  if (preset.goalMode && r.monthlyNeededForTarget != null) {
+    return [
+      { label: "monthly to hit the goal", value: fmtUSD(r.monthlyNeededForTarget) },
+      { label: "target", value: fmtUSD(r.targetAmount) },
+    ];
+  }
+  if (r.futureValue == null) return [];
+  return [
+    { label: "future value", value: fmtUSD(r.futureValue) },
+    { label: "you put in", value: fmtUSD(r.totalContributions) },
+    { label: "investment growth", value: fmtUSD(r.totalGrowth) },
+  ];
+}
+
+function retirementStats(preset: Record<string, unknown>): Stat[] {
+  const mode = (preset.mode as string) ?? "projection";
+  if (mode === "early-withdrawal") {
+    const r = early401kWithdrawal({
+      withdrawalAmount: Number(preset.withdrawalAmount) || 0,
+      age: Number(preset.age) || 0,
+      federalTaxRatePct: Number(preset.federalTaxRatePct) || 0,
+      stateTaxRatePct: Number(preset.stateTaxRatePct) || 0,
+      yearsToRetirement: Number(preset.yearsToRetirement) || undefined,
+      annualReturnPct: Number(preset.annualReturnPct) || undefined,
+    });
+    const stats: Stat[] = [
+      { label: "you keep", value: fmtUSD(r.netReceived) },
+      { label: "lost to tax & penalty", value: fmtUSD(r.totalCost) },
+    ];
+    if (r.lostFutureValue) stats.push({ label: "lost future growth", value: fmtUSD(r.lostFutureValue) });
+    return stats;
+  }
+  if (mode === "rmd") {
+    const r = computeRMD(Number(preset.accountBalance) || 0, Number(preset.age) || 0);
+    if (r.rmd == null) return [];
+    return [
+      { label: "this year's RMD", value: fmtUSD(r.rmd) },
+      { label: "distribution period", value: r.factor == null ? "—" : String(r.factor) },
+      { label: "of the balance", value: fmtPct(r.rmdPctOfBalance, 2) },
+    ];
+  }
+  const r = projectRetirement({
+    currentAge: Number(preset.currentAge) || 0,
+    retirementAge: Number(preset.retirementAge) || 0,
+    currentSavings: Number(preset.currentSavings) || 0,
+    monthlyContribution: Number(preset.monthlyContribution) || 0,
+    annualReturnPct: Number(preset.annualReturnPct) || 0,
+  });
+  if (r.balanceAtRetirement == null) return [];
+  return [
+    { label: "savings at retirement", value: fmtUSD(r.balanceAtRetirement) },
+    { label: "monthly income (4% rule)", value: fmtUSD(r.monthlyRetirementIncome) },
+    { label: "investment growth", value: fmtUSD(r.growth) },
+  ];
+}
+
+function rentalStats(preset: Partial<RentalInput>): Stat[] {
+  const r = computeRental({ purchasePrice: 0, monthlyRent: 0, downPaymentPct: 0, interestRatePct: 0, loanTermYears: 30, ...preset } as RentalInput);
+  if (r.monthlyCashFlow == null) return [];
+  return [
+    { label: "monthly cash flow", value: fmtUSD(r.monthlyCashFlow) },
+    { label: "cap rate", value: fmtPct(r.capRate, 2) },
+    { label: "cash-on-cash", value: fmtPct(r.cashOnCashReturn, 2) },
+  ];
+}
+
+function autoLoanStats(preset: Partial<AutoLoanInput>): Stat[] {
+  const r = computeAutoLoan({
+    vehiclePrice: 0,
+    interestRatePct: 0,
+    loanTermMonths: 0,
+    ...preset,
+  } as AutoLoanInput);
+  if (r.monthlyPaymentPI == null) return [];
+
+  const stats: Stat[] = [
+    { label: "monthly payment", value: fmtUSD(r.monthlyPaymentPI) },
+    { label: "total interest", value: fmtUSD(r.lifetimeInterest) },
+  ];
+  if (r.interestSaved != null && r.interestSaved > 0) {
+    stats.push({ label: "saved with extra payments", value: fmtUSD(r.interestSaved) });
+  } else if (r.monthsToPayoff != null) {
+    stats.push({ label: "to payoff", value: fmtMonths(r.monthsToPayoff) });
+  }
+  return stats;
+}

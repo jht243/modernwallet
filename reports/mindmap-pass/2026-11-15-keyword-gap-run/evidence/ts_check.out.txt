@@ -1,0 +1,16 @@
+ok salary default_52000 25.00
+ok salary hourly_25_to_annual 25.00
+ok salary monthly_5000 28.85
+ok salary biweekly_2000 25.00
+ok salary hourly_30_37_5h 30.00
+ok salary annual_60000_50_weeks 30.00
+ok paycheck default_60000_single 50390
+ok paycheck mfj_60000 52570
+ok paycheck hoh_60000 51462
+ok paycheck pretax_100000_10000 71380
+ok paycheck ss_cap_300000 215177
+ok paycheck at_std_deduction_16100 14868
+ok paycheck ss_cap_edge_184500_hoh 141115
+ok paycheck addl_medicare_250000 183182
+ok paycheck weekly_60000 50390
+ok per-paycheck basis

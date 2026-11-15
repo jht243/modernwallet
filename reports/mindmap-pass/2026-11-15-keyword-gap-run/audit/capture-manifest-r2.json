@@ -1,0 +1,79 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "mindmap-write",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/salary-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ],
+      "expectedUpdatedDate": "2026-11-15",
+      "requiredText": [
+        "Comparing Two Pay Offers",
+        "Monthly pay is $4,333.33"
+      ]
+    },
+    {
+      "path": "/paycheck-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ],
+      "expectedUpdatedDate": "2026-11-15",
+      "requiredText": [
+        "The married filing jointly figures treat the pay you enter as the household"
+      ]
+    },
+    {
+      "path": "/tax-bracket-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ],
+      "expectedUpdatedDate": "2026-10-21",
+      "requiredText": [
+        "after payroll tax, use the paycheck calculator."
+      ]
+    },
+    {
+      "path": "/budget/",
+      "claimCategories": [
+        "ordinary"
+      ],
+      "expectedUpdatedDate": "2026-06-25",
+      "requiredText": [
+        "converts a salary into monthly income."
+      ]
+    },
+    {
+      "path": "/pto-cashout/",
+      "claimCategories": [
+        "ordinary"
+      ],
+      "expectedUpdatedDate": "2026-06-25",
+      "requiredText": [
+        "estimates take-home pay after federal income tax and payroll tax."
+      ]
+    },
+    {
+      "path": "/freelance-rate/1099-vs-w2-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ],
+      "expectedUpdatedDate": "2026-09-05",
+      "requiredText": [
+        "enter the salary and your weekly hours."
+      ]
+    },
+    {
+      "path": "/guides/how-to-make-a-budget/",
+      "claimCategories": [
+        "ordinary"
+      ],
+      "expectedUpdatedDate": "2026-11-04",
+      "requiredText": [
+        "turns it into a monthly figure."
+      ]
+    }
+  ],
+  "jobId": "keyword-gap-2026-11-15"
+}

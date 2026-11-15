@@ -1,0 +1,160 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-write",
+  "route": "/salary-calculator/",
+  "readerQuestion": "How do I convert my annual salary to an hourly wage, and my hourly wage to an annual salary? [PAA unread - DataForSEO unavailable; ac 3/14 how-pattern: how to salary calculator hourly, how pay calculator, how wage calculator]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/approval-manifest.json",
+      "sha256": "dad959e04b26de51d32ae55d2647c2f467fbd8817e311619645b7a66005f4b09"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/chart-review.json",
+      "sha256": "8e0cc2dd6d704e86c1a306808d56cbfe350ceddd3ae8673d12e2a285583a7e2b"
+    },
+    "actionId": "A1"
+  },
+  "presentation": {
+    "medium": "interactive tool",
+    "placement": "Page top, directly under the opening answer",
+    "reason": "The reader enters one pay figure and hours; the tool returns every pay period at once.",
+    "readerInputs": [
+      "Pay amount",
+      "Pay period it is quoted in",
+      "Hours per week",
+      "Weeks per year"
+    ],
+    "interaction": {
+      "decision": "build",
+      "reason": "Adjustable inputs change the answer; a static table cannot cover each reader's pay, hours or filing status."
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static result cards answer faster; no sequence or change over time needs motion."
+    }
+  },
+  "basis": "calculated",
+  "decisionGap": "Readers compare pay offers quoted per hour, per month or per year, and few see how the weekly hours behind a salary change the effective hourly rate.",
+  "finding": "Hourly pay equals annual pay divided by hours per week times weeks per year, so $52,000 at 40 hours and 52 weeks is $25.00 an hour. The same $60,000 salary is $32.97 an hour at 35 hours a week, $30.77 at 37.5, $28.85 at 40 and $25.64 at 45.",
+  "conditions": "Gross pay before tax. 52 paid weeks and a 5-day week by default; weekly, biweekly, daily and hourly amounts are pay for time worked, monthly and semimonthly amounts divide annual pay by 12 and 24. Overtime premiums, bonuses and unpaid weeks are not modeled.",
+  "whatWouldChange": "Different hours per week, fewer paid weeks, overtime pay or a different pay-period convention change the hourly figure; take-home pay needs tax and is answered by the paycheck calculator.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/evidence/salary-calculator/cases.json",
+    "sha256": "95be785a7ded54bb65c5599d338e03bf2fda5111cb537ad410701cae61057bd4"
+  },
+  "caseDecisions": "Retrieved cases.json holds only unrelated Layer3Labs owned-property records (e.g. Drones & Defense); none overlaps a pay-conversion or take-home calculator, so no client or fleet record is used and none is claimed. No client-conversation attribution on this page.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/request.txt",
+      "sha256": "9a443695dc58abff500389cdc0d8acf85e413b904a6ce23798f83c374dc54bd5"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/intake-keyword-gap.brief.md",
+      "sha256": "f51b5f457a41ae691cc91f591d8f3378e82b82756511575620291dd6d7b971f1"
+    },
+    {
+      "path": "reports/seo-research/keyword-gap.json",
+      "sha256": "918ed11b6f9b607fa93d353f3e4f29cc6575875a3c827beff7f35add2276488f"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/cluster-dispositions.json",
+      "sha256": "941418d2ae34daeab388eb8ba48582c7ec6613e3b82665628ae836e2f489784e"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/coverage-lookup.txt",
+      "sha256": "856aa9966d14e9956e659ac9345afae73b7c9a161d23a58017595bdea6f2e45a"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/paycheck-reference-calc.py",
+      "sha256": "298065bb2c454fd39462aeee9836157e0ea864e3db384904eb7e35b0a2054a09"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/paycheck-reference-output.json",
+      "sha256": "8741707d2692d75d5aa14673a4c1d4b95b1b6022bf4af8331b80afefaa65d211"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/serp.json",
+      "sha256": "1eb1e4e1dbd59dd5de9eccf2b90f029e8012beea93ee30a31d280b609c0195fe"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/autocomplete.salary.csv",
+      "sha256": "71241acec752845a2061dbafb3f3ca434405a63302257d61a7252147cb0189e8"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/autocomplete.paycheck.csv",
+      "sha256": "49d27b52f277c171b3d0036c56937cdd4586c5e18b7358e9f51dfdb30ea34a95"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-2026-inflation-adjustments.txt",
+      "sha256": "77486f2592144845fc85225f631fb7d23bd72e64294705c4297ae266638ff710"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-rev-proc-2025-32.txt",
+      "sha256": "b43d2892e79ca4e7c0f0e7e50e46e47b7d6bbe56eb767b2fccf3e6361836a7c3"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-topic-751-fica.txt",
+      "sha256": "648bf7fb8c4ff08e5282988fe29ba9f2e4a5986eb833f218908fd79c0c06f165"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/irs-topic-560-additional-medicare.txt",
+      "sha256": "fc86f7e090c5991bd5dfcebd51bf8f290920605813fd752b4176efdf2154db6b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/ny-tax-tables.txt",
+      "sha256": "8f750268b4e257e60ee47c965abff0651a8b5babfc2055975c507fc9d83dd212"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/research/sources/ny-nyc-resident-tax.txt",
+      "sha256": "5ed9a3759fc9c10ab3ce2f6f65e7dfd9b05912c7ae460f8f86da2201fc639d72"
+    }
+  ],
+  "presentationArtifacts": [
+    {
+      "path": "src/components/SalaryCalculator.tsx",
+      "sha256": "158997f20d9154780404df4407e03cf0902468b546747b7d9424f58724ed7ae5"
+    },
+    {
+      "path": "src/lib/salary.ts",
+      "sha256": "0c874851aebdf4078233652b1ebad2d9a59576d82d8adbd2e578853a036e1cc7"
+    }
+  ],
+  "method": "annual = hourly x hours per week x weeks per year; every other period derived from annual pay (weekly = annual/weeks, biweekly = annual/(weeks/2), monthly = annual/12, semimonthly = annual/24, daily = annual/(days x weeks)). The 35 to 45 hour table is plain arithmetic shown as an illustration.",
+  "units": "USD per period (hour, day, week, two weeks, half month, month, year); hours per week; weeks per year",
+  "limitations": "Pure arithmetic on reader inputs. No tax, overtime, bonus, benefits or unpaid-leave modeling. The hours table is an illustration, not research.",
+  "counterexample": "The same $60,000 salary is $28.85 an hour at 40 hours but $25.64 at 45 hours, and 50 paid weeks instead of 52 raises the 40-hour rate from $28.85 to $30.00.",
+  "execution": {
+    "command": [
+      "python3",
+      "reports/mindmap-pass/2026-11-15-keyword-gap-run/evidence/salary-calculator/model.py"
+    ],
+    "code": {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/evidence/salary-calculator/model.py",
+      "sha256": "847262ff9ad55fefa643aeb4f6eaafd833a9e052c7d655846361a753ab1d0bbb"
+    },
+    "inputs": [
+      {
+        "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/request.txt",
+        "sha256": "9a443695dc58abff500389cdc0d8acf85e413b904a6ce23798f83c374dc54bd5"
+      }
+    ],
+    "output": {
+      "path": "reports/mindmap-pass/2026-11-15-keyword-gap-run/evidence/salary-calculator/output.json",
+      "sha256": "8d2975406fd133043644cef5569151dc5283fba8ed036aa436f235361847b608"
+    }
+  },
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [
+      "salary-calculator/output.json",
+      "salary-calculator/model.py"
+    ],
+    "scopeAndLimits": "Arithmetic conversion on reader inputs only; the 35-45 hour table is an illustration, not a finding from testing or research; no external figures.",
+    "publicMethod": "On-page 'How the Salary Conversion Works' section states the formula and assumptions; the table section names the fixed inputs.",
+    "placement": "howItWorks paragraph one and the 'Salary Versus Hourly Pay by Hours and Weeks Worked' section"
+  },
+  "takeaway": "Salary / (hours x weeks) = hourly. Applies to any pay offer; the answer changes if hours, unpaid weeks or overtime differ. Gross is not take-home; the paycheck calculator covers take-home.",
+  "caseUses": [],
+  "selectedMedium": "interactive tool with the key answer, assumptions and finite tables readable in the static page",
+  "testingDecision": "Ordinary format: calculated page; finance topic and calculator are outside _experience.md section G. No tested label, howWeTested or tested schema."
+}

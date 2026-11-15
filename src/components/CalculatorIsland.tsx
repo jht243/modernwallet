@@ -86,6 +86,8 @@ import HiddenHomeCostCalculator from "./HiddenHomeCostCalculator";
 import FloridaAmendment3Calculator from "./FloridaAmendment3Calculator";
 import StudentLoanGarnishmentCalculator from "./StudentLoanGarnishmentCalculator";
 import TaxBracketCalculator from "./TaxBracketCalculator";
+import SalaryCalculator from "./SalaryCalculator";
+import PaycheckCalculator from "./PaycheckCalculator";
 import ChecklistBuilder from "./ChecklistBuilder";
 import SubscriptionCancellationPlanner from "./SubscriptionCancellationPlanner";
 import ViewingChecklist from "./ViewingChecklist";
@@ -206,6 +208,8 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "student-loan-wage-garnishment-calculator": StudentLoanGarnishmentCalculator,
   // Mindmap Autocomplete pass (2026-10-21): 2026 federal tax bracket, marginal and effective rate.
   "tax-bracket-calculator": TaxBracketCalculator,
+  "salary-calculator": SalaryCalculator,
+  "paycheck-calculator": PaycheckCalculator,
   // Mindmap pass (2026-10-25): /checklists/ — one rule-driven checklist island for buying, selling,
   // renting, landlord, inspection, final walkthrough, move-in/out and first-apartment pages (preset.checklist).
   "checklists": ChecklistBuilder,

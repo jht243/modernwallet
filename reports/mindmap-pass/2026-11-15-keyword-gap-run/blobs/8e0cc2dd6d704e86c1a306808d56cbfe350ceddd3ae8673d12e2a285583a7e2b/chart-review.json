@@ -1,0 +1,94 @@
+{
+  "jobId": "keyword-gap-2026-11-15",
+  "reviewer": "mindmap-chart-reviewer",
+  "round": 2,
+  "manifestSha256": "c7ba2752d0e6e73cc16594bc49a067c920a775adaaf2578fb46c3dae2629e695",
+  "manifestFileSha256": "dad959e04b26de51d32ae55d2647c2f467fbd8817e311619645b7a66005f4b09",
+  "readinessSha256": "60b4baafb5cb2ce78791e519175ff31127f45d3960cb16d36b74e7e82cdd92f9",
+  "verdict": "PASS",
+  "evidence": "Round 2 of 2 (final allowed), reviewer mindmap-chart-reviewer retained; same preflight bundle re-checked (delivery-complete-sources-current). Hashes: manifest file dad959e0...4b09, dispositions 941418d2...784e, readiness 60b4baaf...92f9. CR-1 RESOLVED: A3 is now bucket 'add internal links' with an explicit no-addition decision naming /tax-bracket-calculator/ and /guides/how-much-tax-will-i-pay/ and their reader intents; phase 5 N/A; the only change is an inbound link to /paycheck-calculator/ (matches A2 inbound placement from the tax-bracket FAQ); ENRICH-A3 removed. CR-2 RESOLVED: I re-checked every named row against the repo. us inflation calculator is COVERED by /inflation-calculator/; budget rows are COVERED-PARTIAL via /budget/ and the how-to-make-a-budget guide; eight mortgage typo/estimate variants are COVERED by /mortgage/; retirement and investment rows point to /retirement/ and /investing/; reverse mortgage and calculate reverse mortgage are one consistent NEW-PAGE-CANDIDATE-DEFERRED with a HECM/HUD note; mortgage calculator games is ADJ-NOT-PURSUED (entertainment intent); 50 year is ADJ-NOT-PURSUED, confirmed by MORTGAGE_TERMS=[120,180,240,360]. A programmatic check of ALL 62 COVERED and 168 COVERED-PARTIAL rows found every route token resolves to a real slug/id in src/data (only false positives were the path word 'guides' and prose). Counts ADJ 168, A1 8, A2 8, COVERED 62, PARTIAL 168, DEFERRED 30 total 444; 522 members, 444 unique ids, still equal to the raw intake. CR-3 RESOLVED: salary to paycheck, figuring out paycheck from salary, figure out salary after taxes and after tax are BUILD-A2 and in A2 keywordEvidence; tax estimator rows are COVERED with both routes; state reasons now say only NY URLs were attempted and note FL/TX are served by federal A2. CR-4 RESOLVED: no /s-corp/s-corp occurrences remain in the manifest or draft; /s-corp-tax/ is used. CR-5 RESOLVED: the A2 brief carries the Additional Medicare 200k withholding vs Topic 560 thresholds, 401(k)-type deferral, Sec125/HSA, tips/overtime/senior/QBI/child tax credit, Pub 15-T and boundary tests; the A1 brief labels the 35-45 hour table an illustration/sensitivity aid with Phase 4 replay cases. Round-1 PASS items unchanged: IRS tables, standard deductions and Topic 751 constants match saved sources; my independent replay (scratchpad review_calc.py) reproduces $5,020 federal / $4,590 payroll / $50,390 net / $1,938.08 biweekly; no testing claims; HIGH profile, 2 audits; no liabilityBlock. Residual CR-6 is mechanical and non-blocking.",
+  "findings": [
+    {
+      "id": "CR-1",
+      "severity": "major",
+      "status": "resolved",
+      "target": "A3 /tax-bracket-calculator/",
+      "problem": "A3 asks to add a section and FAQ answering 'How much federal income tax will I owe?' but the existing page already answers that question and a dedicated guide serves the same reader goal. The calculator intro states estimated tax with a worked $85,000 single example ($9,870), howItWorks shows band-by-band tax and a HoH $60,000 example ($3,948), the tool outputs tax owed, and the page already links the guide /guides/how-much-tax-will-i-pay/ (title 'How Much Tax Will I Pay? Estimate Your 2026 Bill', worked example). coverage-lookup.txt lists that guide at topic match 0.75, higher than the calculator, yet A3's problem cell and readiness duplicate decision never name it or state its reader intent, which the ladder requires. A3 itself says the engine 'already outputs tax owed'.",
+      "fix": "Either (a) convert A3 to the _decision-evidence no-addition branch with a written rationale naming the calculator intro/howItWorks/FAQs and /guides/how-much-tax-will-i-pay/ as the existing answers, and keep only the planned internal link to /paycheck-calculator/ (add internal links bucket) plus any GSC-gated Phase 2 metadata promise later; or (b) keep an addition only if the row records what the reader still cannot decide that neither page answers, names the guide with its reader intent and a cannibalization ruling against it, and uses a differentiated angle (not another worked tax-owed example). Update problem, solution, readiness duplicate table, executionPlan phase 5, REQ-4 acceptance and ENRICH-A3 ledger reasons accordingly.",
+      "resolution": "Verified in round 2 against revised manifest, dispositions and briefs."
+    },
+    {
+      "id": "CR-2",
+      "severity": "major",
+      "status": "resolved",
+      "target": "cluster-dispositions.json (REQ-1)",
+      "problem": "Rows labeled NEW-PAGE-CANDIDATE-DEFERRED with reason 'No existing route' or COVERED have verifiable existing-route contradictions, so the ledger is not honest and could cause a future run to build duplicates. Verified: 'us inflation calculator' 33,100 deferred but /inflation-calculator/ is live (targetKeyword 'inflation calculator', in LIVE_IDS); 'how to create a budget' 135,000, 'budget planner' 40,500 and 'create a budget spreadsheet' 74,000 deferred but /budget/ (targetKeyword 'budget calculator') and /guides/how-to-make-a-budget/ exist; mortgage typo variants 'mortgage calc', 'mortgage calculater', 'mortgage calculatir', 'mortgage calulator', 'mortgage calculaotr', 'mortgage cal', 'mortgage estimate', 'calculate my mortgage' deferred while sibling forms ('mortgage estimate calculator', 'mortgage calculator online') are COVERED by /mortgage/; 'simple retirement calculator' and 'retirement investment calculator' deferred but /retirement/ is live; 'investment calc' deferred but the investment calculator exists. Opposite error: 'reverse mortgage calculator' 12,100 (KD 33, core) is COVERED by '/mortgage/ hub + spokes' yet no reverse-mortgage page or spoke exists (src/data/spokes-mortgage.ts has 13 spokes, none reverse; guides.ts has only an incidental mention) and 'calculate reverse mortgage' 4,400 in the same family is DEFERRED; 'mortgage calculator games' 14,800 and '50 year mortgage calculator' 2,900 are also asserted COVERED without evidence. The 33-row mortgage COVERED rule is a pattern match, not a per-cluster check.",
+      "fix": "Re-disposition each named cluster against the repo: typo/synonym variants of covered intents become COVERED with the exact route; budget and inflation rows become COVERED or COVERED-PARTIAL citing /budget/, /guides/how-to-make-a-budget/, /inflation-calculator/; reverse mortgage (both rows) becomes one consistent NEW-PAGE-CANDIDATE-DEFERRED (or ADJ-NOT-PURSUED with a stated reason, YMYL/HECM needs HUD primary sources), not COVERED; verify 'mortgage calculator games' and '50 year' against the mortgage engine's term input before claiming COVERED. Rerun a per-row check of all 33 mortgage and 9 auto COVERED rows and all 50 deferred rows against slugs/targetKeywords, then update counts in manifest exclusions/interpretedBrief and rebind the dispositions hash in evidenceFiles.",
+      "resolution": "Verified in round 2 against revised manifest, dispositions and briefs."
+    },
+    {
+      "id": "CR-3",
+      "severity": "medium",
+      "status": "resolved",
+      "target": "cluster-dispositions.json and A2/A3 keyword evidence",
+      "problem": "Keyword clusters whose intent is exactly A2 or A3 are dispositioned outside those actions, understating the pages' target set and misdescribing coverage: 'salary to paycheck' 12,100 and 'figuring out paycheck from salary' 12,100 are NEW-PAGE-CANDIDATE-DEFERRED with 'no existing route' although A2 builds that page; 'figure out salary after taxes' 12,100 is COVERED-PARTIAL via 1099-vs-w2 and 'after tax' 8,100 via rental-income-tax-calculator (wrong intents); 'income tax estimator' 49,500, 'federal income tax' 27,100, 'tax estimator' 18,100 and 'tax percentage calculator' 8,100 map to neighbours or deferral rather than A3's tax-bracket engine. State-variant reasons say official schedules are 'not retrievable' but only two guessed NY URLs were tried (404, saved) and no CA/FL/TX source was attempted; 'florida salary calculator' and 'texas salary calculator' are states with no income tax that the federal-only A2 would largely serve.",
+      "fix": "Reassign the A2-intent rows to BUILD-A2 and add their phrases/volumes to A2 keywordEvidence and problem text; map the A3-intent rows per the CR-1 outcome; reword the state-variant reason to 'deferred; only NY URLs attempted, not found; other states not researched' instead of 'not retrievable', and note A2 covers no-income-tax-state salary intent for federal and payroll tax only.",
+      "resolution": "Verified in round 2 against revised manifest, dispositions and briefs."
+    },
+    {
+      "id": "CR-4",
+      "severity": "mechanical",
+      "status": "resolved",
+      "target": "A1 newPageBrief whyNewPage and draft-chart.md line 127",
+      "problem": "A1 whyNewPage names the s-corp neighbour as /s-corp/s-corp-reasonable-salary-calculator/. The real route is under hub id s-corp-tax (src/data/spokes-s-corp.ts slug s-corp-reasonable-salary-calculator; links in repo use /s-corp-tax/s-corp-reasonable-salary-calculator/).",
+      "fix": "Change to /s-corp-tax/s-corp-reasonable-salary-calculator/, re-seal draft chart and rebind hashes.",
+      "resolution": "Verified in round 2 against revised manifest, dispositions and briefs."
+    },
+    {
+      "id": "CR-5",
+      "severity": "advisory",
+      "status": "resolved",
+      "target": "A1 and A2 WRITE/AUDIT guardrails",
+      "problem": "Non-blocking guardrails verified against the saved sources that WRITE must carry and AUDIT must check: (a) Topic 751 withholds 0.9% Additional Medicare above $200,000 regardless of filing status while Topic 560 sets liability thresholds at $250,000 MFJ, $125,000 MFS, $200,000 others; the engine uses $200,000 for all, so the page must say it models employer withholding and that a married couple's final liability can differ; (b) pre-tax retirement input is a traditional 401(k)/403(b)-style deferral that lowers income tax only, FICA stays on gross; Section 125 premiums, HSA and similar payroll deductions are not modeled and must be listed; (c) 'What This Estimate Leaves Out' must also name the 2026 deductions and credits not modeled (tips, overtime, senior and QBI deductions, child tax credit) and say the result is an annual-liability estimate, not IRS Pub 15-T withholding; (d) A1's 35 to 45 hour table is plain arithmetic, so present it as an illustration or sensitivity aid with attribution that does not oversell it as original research (decision-evidence section 4 rejects arithmetic presented as empirical insight); (e) Phase 4 must replay with its own reviewer artifact, test the std-deduction boundary ($16,100 single gives $0), SS cap above $184,500, MFJ and HoH, and 26/24/52/12 period defaults; (f) A2 lists wage-base source as IRS Topic 751 because SSA returned 403, which is acceptable if cited as IRS.",
+      "fix": "Add to the A1/A2 briefs and carry as reviewerGuardrails into WRITE; no new research required.",
+      "resolution": "Verified in round 2 against revised manifest, dispositions and briefs."
+    },
+    {
+      "id": "CR-6",
+      "severity": "mechanical",
+      "status": "open",
+      "target": "manifest executionPlan phase 7 and readiness application map",
+      "problem": "Phase 7 still says 'refresh tax-bracket lastmod', but A3 is now link-only and chart obligation p7 forbids refreshing sitemap lastmod on link-only touches (Phase 6 already says link-only edits do not bump dates). Readiness application map still says '_decision-evidence: no-addition not applicable (real gap)', true for A1/A2 but stale for A3.",
+      "fix": "WRITE/PUBLISH must NOT refresh the /tax-bracket-calculator/ sitemap lastmod or updated date; treat the Phase 7 wording as superseded. Non-blocking; no new review round."
+    }
+  ],
+  "resolvedFindingIds": [
+    "CR-1",
+    "CR-2",
+    "CR-3",
+    "CR-4",
+    "CR-5"
+  ],
+  "requestCoverage": [
+    {
+      "requirementId": "REQ-1",
+      "status": "PASS",
+      "evidence": "All 444 clusters and 522 keywords accounted for; per-row dispositions verified against repo slugs and targetKeywords (CR-2, CR-3 resolved); exclusion counts match the file."
+    },
+    {
+      "requirementId": "REQ-2",
+      "status": "PASS",
+      "evidence": "/auto-loan/ hub plus spokes serve 'car loan calculator'; COVERED with lookup evidence; no duplicate page."
+    },
+    {
+      "requirementId": "REQ-3",
+      "status": "PASS",
+      "evidence": "A1/A2 briefs keep complete IRS-sourced constants, stated assumptions and carried guardrails; independent replay matches $5,020/$50,390."
+    },
+    {
+      "requirementId": "REQ-4",
+      "status": "PASS",
+      "evidence": "Federal tax intent resolved by a documented no-addition for /tax-bracket-calculator/ plus the guide, with a link to A2; NY/state deferred with an honest reason; 2 builds of the allowed 3."
+    }
+  ]
+}
