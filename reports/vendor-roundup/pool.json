@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T16:27:26.396Z",
+  "generated": "2026-11-15T16:08:33.509Z",
   "rows": [
     {
       "vertical": "dataannotation-alternatives",
@@ -34,21 +34,10 @@
       "vertical": "ai-trading-bots",
       "label": "AI trading bots",
       "roundupSlug": "best-ai-trading-bots",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 13,
-      "listed": 12,
-      "missing": [
-        {
-          "domain": "store.galileofx.com",
-          "name": "store.galileofx.com",
-          "site_url": "https://store.galileofx.com",
-          "one_liner": "",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 7,
-          "primary_email": "support@galileofx.com"
-        }
-      ]
+      "listed": 13,
+      "missing": []
     },
     {
       "vertical": "ai-stock-pickers",
@@ -129,10 +118,21 @@
       "vertical": "budgeting-apps-for-couples",
       "label": "budgeting apps for couples",
       "roundupSlug": "best-budgeting-apps-for-couples",
-      "route": "ACCRUE",
-      "qualified": 17,
+      "route": "ENRICH",
+      "qualified": 18,
       "listed": 17,
-      "missing": []
+      "missing": [
+        {
+          "domain": "kasafinance.online",
+          "name": "Kasa, simplest budgeting app you can find",
+          "site_url": "https://kasafinance.online/",
+          "one_liner": "Show HN: Kasa, simplest budgeting app you can find",
+          "site_kind": "vendor",
+          "has_pricing": false,
+          "serp_rank": null,
+          "primary_email": "contact@kasafinance.online"
+        }
+      ]
     },
     {
       "vertical": "401k-providers-for-small-business",
@@ -345,7 +345,7 @@
       "label": "secured credit cards",
       "roundupSlug": "best-secured-credit-cards",
       "route": "ENRICH",
-      "qualified": 7,
+      "qualified": 8,
       "listed": 6,
       "missing": [
         {
@@ -357,6 +357,16 @@
           "has_pricing": false,
           "serp_rank": 10,
           "primary_email": "client.service@bankatfirst.com"
+        },
+        {
+          "domain": "oneunited.com",
+          "name": "UNITY® Visa Secured Credit Card",
+          "site_url": "https://oneunited.com",
+          "one_liner": "A secured card is designed to repair damaged credit or start from scratch.Since approval relies on a deposit rather than a high credit score, it provides ... Read more",
+          "site_kind": "vendor",
+          "has_pricing": false,
+          "serp_rank": 11,
+          "primary_email": null
         }
       ]
     },
@@ -409,21 +419,10 @@
       "vertical": "invoice-factoring-companies",
       "label": "invoice factoring companies",
       "roundupSlug": "best-invoice-factoring-companies",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 32,
-      "listed": 31,
-      "missing": [
-        {
-          "domain": "newcenturyfinancial.com",
-          "name": "7 Industries that Use Invoice Factoring to Thrive and Grow",
-          "site_url": "https://newcenturyfinancial.com",
-          "one_liner": "Sep 22, 2022 — 1. The Staffing Industry · 2. Manufacturers · 3. The Service Industry · 4. Distributors · 5. The Oil and Gas Industry · 6. Energy Companies · 7. The ... Read more",
-          "site_kind": "unknown",
-          "has_pricing": false,
-          "serp_rank": 2,
-          "primary_email": "info@newcenturyfinancial.com"
-        }
-      ]
+      "listed": 32,
+      "missing": []
     },
     {
       "vertical": "business-line-of-credit-rates-by-lender",
