@@ -625,4 +625,32 @@ class SessionEndHookAndArchiveTests(unittest.TestCase):
         self.assertEqual(worker.recorded_canonical_jobs(history),{'9f34c185abcd1234'})
         self.assertEqual(worker.recorded_canonical_jobs(history,packet=packet),{'9f34c185abcd1234','sg-20261113-gaps'})
 
+    def test_open_route_journal_matches_apex_and_www_variants(self):
+        class FakeJournal:
+            def __init__(self, root, base, route):
+                self.cycle = ({'jobId': 'sg-job-1', 'status': 'complete'}
+                              if (base, route) == ('https://banthebots.org', '/explainers/light-phone-alternatives')
+                              else None)
+                self.events = [{'kind': 'begin'}] if self.cycle else []
+            def __enter__(self): return self
+            def __exit__(self, *a): return False
+        fake_policy = SimpleNamespace(Journal=FakeJournal)
+        cycle, events = worker._open_route_journal(
+            fake_policy, Path(self.tmp.name),
+            'https://www.banthebots.org', '/explainers/light-phone-alternatives/',
+            {'sg-job-1'},
+        )
+        self.assertIsNotNone(cycle)
+        self.assertEqual(cycle['jobId'], 'sg-job-1')
+        self.assertEqual(len(events), 1)
+
+    def test_quarantine_mod_loads_without_name_error(self):
+        root = Path(self.tmp.name)
+        qdir = root / '.claude/tools'
+        qdir.mkdir(parents=True, exist_ok=True)
+        (qdir / 'quarantine.py').write_text('def is_quarantined(root, skill, item_id=None):\n    return item_id == "q1"\n')
+        mod = worker._quarantine_mod()
+        self.assertIsNotNone(mod)
+        self.assertTrue(mod.is_quarantined(root, 'search-gap-content-auto', item_id='q1'))
+
 if __name__=='__main__':unittest.main()

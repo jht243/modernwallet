@@ -3,6 +3,7 @@
 import argparse
 import base64
 import hashlib
+import importlib.util
 import json
 import os
 from pathlib import Path
@@ -769,6 +770,40 @@ def live_fingerprint(snapshot_path, route, base):
         return next(r['fingerprint'] for r in read(out)['routes'] if r['path'] == route)
 
 
+def _journal_base_route_candidates(base, route):
+    parsed = urllib.parse.urlsplit(base)
+    host = parsed.hostname or ''
+    scheme = parsed.scheme or 'https'
+    port_suffix = f':{parsed.port}' if parsed.port else ''
+    bases = [base]
+    alt_host = host[4:] if host.startswith('www.') else (f'www.{host}' if host else '')
+    if alt_host:
+        alt_base = f'{scheme}://{alt_host}{port_suffix}'
+        if alt_base not in bases:
+            bases.append(alt_base)
+    routes = [route]
+    if route and route != '/':
+        alt_route = route[:-1] if route.endswith('/') else route + '/'
+        if alt_route not in routes:
+            routes.append(alt_route)
+    return [(b, r) for b in bases for r in routes]
+
+
+def _open_route_journal(policy, root, base, route, canonical_jobs=None):
+    fallback = (None, [])
+    for cand_base, cand_route in _journal_base_route_candidates(base, route):
+        with policy.Journal(root, cand_base, cand_route) as journal:
+            cycle = journal.cycle
+            events = list(getattr(journal, 'events', []) or [])
+        if not cycle:
+            continue
+        if canonical_jobs is None or cycle.get('jobId') in canonical_jobs:
+            return cycle, events
+        if fallback[0] is None:
+            fallback = (cycle, events)
+    return fallback
+
+
 def verify_hold(site, decision, hold, canonical_jobs, base):
     """A pending candidate is parked only with verifiable proof it can never be finished by this job."""
     route = hold.get('route', '')
@@ -778,8 +813,7 @@ def verify_hold(site, decision, hold, canonical_jobs, base):
     if basis == 'released-at-audit-limit':
         # Native, hash-chained content-review journal: never routine-written counters.
         policy = native_tool('content-review-policy.py')
-        with policy.Journal(Path.cwd(), base, route) as journal:
-            cycle = journal.cycle
+        cycle, _ = _open_route_journal(policy, Path.cwd(), base, route, canonical_jobs)
         require(cycle and cycle.get('jobId') in canonical_jobs, 'No native review cycle for this job and route')
         require(cycle.get('status') == 'needs-fix' and policy.exhausted(cycle), 'Audit limit not reached; keep working this candidate')
         final = cycle['rounds'][-1]
@@ -1038,9 +1072,8 @@ def reviewed_text(base, route, canonical_jobs, created_at):
     only when that review belongs to this job (canonical job), has no trailing pending/invalidated round,
     has no professional-review hold, and started after the job did."""
     policy = native_tool('content-review-policy.py')
-    with policy.Journal(Path.cwd(), base, route) as journal:
-        cycle = journal.cycle
-        begins = [e for e in journal.events if e.get('kind') == 'begin']
+    cycle, events = _open_route_journal(policy, Path.cwd(), base, route, canonical_jobs)
+    begins = [e for e in events if e.get('kind') == 'begin']
     if not cycle or cycle.get('jobId') not in canonical_jobs or not begins:
         return None
     if cycle.get('status') in ('in-review', 'repair-pending'):
@@ -1051,6 +1084,7 @@ def reviewed_text(base, route, canonical_jobs, created_at):
     if not all_rounds or all_rounds[-1].get('status') != 'complete':
         return None
     last_round = all_rounds[-1]
+    norm_route = route.rstrip('/') or '/'
     try:
         if last_round.get('report'):
             rep_path = last_round['report']['path'] if isinstance(last_round['report'], dict) else last_round['report']
@@ -1060,7 +1094,7 @@ def reviewed_text(base, route, canonical_jobs, created_at):
         admission = read(last_round['admission']['path'])
         ref = admission['snapshot']
         require(digest(ref['path']) == ref['sha256'], 'Reviewed capture changed')
-        entry = next(r for r in read(ref['path'])['routes'] if r['path'] == route)
+        entry = next(r for r in read(ref['path'])['routes'] if (r['path'].rstrip('/') or '/') == norm_route)
         raw = Path(entry['textFile']).read_bytes()
         require(hashlib.sha256(raw).hexdigest() == entry['textSha256'], 'Reviewed capture text changed')
     except Exception:
@@ -1136,9 +1170,9 @@ def discover_passing_written(packet, base, boilerplate, canonical_jobs, created_
         route_specs = []
         ok = True
         for route in routes:
+            norm_route = route.rstrip('/') or '/'
             try:
-                with policy.Journal(Path.cwd(), base, route) as journal:
-                    cycle = journal.cycle
+                cycle, _ = _open_route_journal(policy, Path.cwd(), base, route, canonical_jobs)
                 all_rounds = list((cycle or {}).get('rounds') or [])
                 if (not cycle or cycle.get('jobId') not in canonical_jobs or cycle.get('status') in ('in-review', 'repair-pending')
                         or not all_rounds or all_rounds[-1].get('status') != 'complete'):
@@ -1155,8 +1189,8 @@ def discover_passing_written(packet, base, boilerplate, canonical_jobs, created_
                     snap_doc = read(adm_doc['snapshot']['path'])
                     rep_path = last_r['report']['path'] if isinstance(last_r.get('report'), dict) else last_r.get('report')
                     rep_doc = read(rep_path) if rep_path and Path(rep_path).is_file() else {}
-                    rep_row = next((x for x in (rep_doc.get('routes') or []) if isinstance(x, dict) and x.get('path') == route), {})
-                    snap_page = next((x for x in (snap_doc.get('routes') or []) if isinstance(x, dict) and x.get('path') == route), {})
+                    rep_row = next((x for x in (rep_doc.get('routes') or []) if isinstance(x, dict) and ((x.get('path') or '').rstrip('/') or '/') == norm_route), {})
+                    snap_page = next((x for x in (snap_doc.get('routes') or []) if isinstance(x, dict) and ((x.get('path') or '').rstrip('/') or '/') == norm_route), {})
                     if (not policy.capped_release(Path.cwd(), snap_doc)
                             or _report_blocks_auto_release(rep_doc, verdict)
                             or policy.validate_liability_block(rep_row, snap_page)):
