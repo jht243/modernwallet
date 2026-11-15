@@ -4,10 +4,19 @@ import tempfile
 import importlib.util
 import pathlib
 import unittest
+from unittest.mock import patch
 spec=importlib.util.spec_from_file_location('audit',pathlib.Path(__file__).with_name('rendered-audit.py'))
 a=importlib.util.module_from_spec(spec); spec.loader.exec_module(a)
 HTML='''<html><head><title>Model guide</title><link rel="canonical" href="https://example.com/guide"><meta name="robots" content="index,follow"><script type="application/ld+json">{"@type":"Article","datePublished":"2026-10-27","dateModified":"2026-10-27","url":"https://example.com/guide"}</script></head><body><main><h1>Model guide</h1><p>Updated Oct 27, 2026</p><p>'''+('Useful complete reader-facing content. '*12)+'''</p><a href="https://example.com/other">Related guide</a></main><script>build123</script></body></html>'''
-class Tests(unittest.TestCase):
+class _UnconfiguredRootTestCase(unittest.TestCase):
+ def setUp(self):
+  super().setUp()
+  # Core renderer fixtures have their own unconfigured root. Site-specific
+  # policy integration is exercised separately by workflow-medical_test.py.
+  root=tempfile.TemporaryDirectory();self.addCleanup(root.cleanup)
+  patcher=patch.object(a,'__file__',str(pathlib.Path(root.name)/'.claude/tools/rendered-audit.py'))
+  patcher.start();self.addCleanup(patcher.stop)
+class Tests(_UnconfiguredRootTestCase):
  def snapshot(self,html=HTML,class_spaces=False):
   m={'author':'writer','canonicalBase':'https://example.com','routes':[{'path':'/guide','expectedUpdatedDate':'2026-10-27'}]}
   if class_spaces:m['routes'][0]['normalizeClassTokenWhitespace']=True
@@ -181,8 +190,9 @@ class Tests(unittest.TestCase):
    self.assertEqual(rows[:3],[legacy,old_same_path,previous]); self.assertEqual(len(rows),4)
    self.assertEqual(rows[-1]['firstVerifiedLiveAt'],previous['firstVerifiedLiveAt']); self.assertEqual(rows[-1]['windows']['days1to28'],{'start':'2026-10-27','end':'2026-11-23'})
    saved=ledger.read_bytes(); self.assertEqual(a.record(s,s,self.review(s),'a'*40,host,ledger),0); self.assertEqual(ledger.read_bytes(),saved)
-class Ads(unittest.TestCase):
+class Ads(_UnconfiguredRootTestCase):
  def setUp(self):
+  super().setUp()
   self.route={'path':'/guide','volatileThirdPartyAds':'mediavine'}
   self.core='<html><head><title>Guide</title><link rel="canonical" href="https://example.com/guide"><script type="application/ld+json">{"@type":"Article","dateModified":"2026-10-28"}</script></head><body><main><h1>Guide</h1><p>'+('Reader-facing guidance. '*20)+'</p><section id="reader-survey"><button>Results</button><p>1 response</p></section><aside class="affiliate-card"><a href="/product">Affiliate product</a></aside>{ad}<p>Following article paragraph</p></main></body></html>'
   self.ad='<div id="content_2_btf_wrapper" class="adunitwrapper content_btf_wrapper"><div id="google_ads_iframe_123"><iframe id="goog_123"></iframe></div></div><div id="mv-first-video" class="mv-video-target"><p>Up next in 15s</p><a href="https://ads.example/one">Advertisement</a></div>'
@@ -303,9 +313,10 @@ class Ads(unittest.TestCase):
      a.valid_snapshot(snap)
    finally:
     os.chdir(prev)
-class VolatileRenderRegions(unittest.TestCase):
+class VolatileRenderRegions(_UnconfiguredRootTestCase):
  RAIL='<section class="cr-card-section" aria-label="Latest related briefings" data-render-volatile="latest-briefings"><header class="cr-card-header"><h2 class="cr-card-title">Latest related briefings</h2></header><div class="cr-card-grid"><a class="cr-card" href="/briefing/{slug}"><span class="cr-card-eyebrow">POLICY</span><h3 class="cr-card-headline">{title}</h3><div class="cr-card-meta-rows"><span><strong>Nov 13, 2026</strong></span><br></div><span class="cr-card-cta">Read analysis</span></a></div><p class="cr-card-footer"><a href="/briefing"><strong>Browse all daily briefings</strong></a></p></section>'
  def setUp(self):
+  super().setUp()
   self.route={'path':'/guide','volatileRenderRegions':['latest-briefings']}
   self.core=HTML.replace('</main>','{rail}<p>Closing reviewed paragraph</p></main>')
  def rail(self,slug='ai-bill-20261113-1',title='AI bill advances'):return self.RAIL.replace('{slug}',slug).replace('{title}',title)
@@ -365,7 +376,7 @@ class VolatileRenderRegions(unittest.TestCase):
   with self.assertRaisesRegex(ValueError,'Visible text outside a link'):self.parse(self.rail().replace('<h2 class="cr-card-title">','<h2 class="cr-card-title"><div>x</div>'))
 
 
-class RelatedCardsLiveCompareTests(unittest.TestCase):
+class RelatedCardsLiveCompareTests(_UnconfiguredRootTestCase):
  APPROVED_REL = (
   '<div class="Pillar_pillar__related-wrap__qbcVo">'
   '<div class="RelatedResources_related__t0w8B">'
@@ -461,6 +472,55 @@ class RelatedCardsLiveCompareTests(unittest.TestCase):
    live_tested_claim = self._build_snap(td, 'live_tested_claim', HTML.replace('</main>', '</main>' + tested_claim_rel))
    with self.assertRaisesRegex(ValueError, 'Rendered content differs'):
     a.compare(approved, live_tested_claim, review)
+
+ def test_detect_rendered_canonical_base_prefers_actual_layout_origin_and_ignores_unrelated_urls(self):
+  import json, tempfile
+  from pathlib import Path
+  with tempfile.TemporaryDirectory() as td:
+   root = Path(td)
+   (root / '.claude').mkdir()
+   (root / '.claude/workflow-policy.local.json').write_text(json.dumps({'canonicalBase': 'https://layer3labs.io'}))
+   (root / '.claude/content-review-policy.json').write_text(json.dumps({'canonicalHosts': ['layer3labs.io', 'www.layer3labs.io']}))
+   (root / 'src/layouts').mkdir(parents=True)
+   (root / 'src/layouts/index.tsx').write_text(
+    "const THIRD_PARTY = 'https://schema.org';\nconst BASE_URL = 'https://www.layer3labs.io';\n"
+   )
+   (root / 'approval.json').write_text(json.dumps({
+    'jobId': 'j-canon',
+    'actions': [{'id': 'A1', 'bucket': 'create new content', 'target': '/guides/chatgpt-vbp'}],
+   }))
+   m = a.init_manifest(str(root / 'approval.json'), 'writer-1', str(root / 'capture-manifest.json'), root=root)
+   self.assertEqual(m['canonicalBase'], 'https://www.layer3labs.io')
+
+   # When another repo's footer links to layer3labs.io, known_apexes restricts detection to that repo's own domain
+   root2 = Path(td) / 'humidor'
+   (root2 / '.claude').mkdir(parents=True)
+   (root2 / '.claude/content-review-policy.json').write_text(json.dumps({'canonicalHosts': ['humidorist.com', 'www.humidorist.com']}))
+   (root2 / 'src/components').mkdir(parents=True)
+   (root2 / 'src/components/Layout.tsx').write_text("const AGENCY = 'https://www.layer3labs.io';\n")
+   (root2 / 'public').mkdir()
+   (root2 / 'public/sitemap.xml').write_text('<url><loc>https://humidorist.com/guides/cedar</loc></url>')
+   self.assertEqual(a.detect_rendered_canonical_base(root2), 'https://humidorist.com')
+
+ def test_capture_local_rejects_existing_immutable_output_before_build(self):
+  import json, tempfile
+  from pathlib import Path
+  from unittest.mock import patch
+  with tempfile.TemporaryDirectory() as td:
+   root = Path(td)
+   m_path = root / 'capture-manifest.json'
+   m_path.write_text(json.dumps({
+    'workflowKind': 'mindmap-pass',
+    'author': 'writer-1',
+    'canonicalBase': 'https://example.com',
+    'routes': [{'path': '/guide', 'claimCategories': ['ordinary']}],
+   }))
+   out_snap = root / 'snapshot-v1.json'
+   out_snap.write_text('{}')
+   with patch.object(a.subprocess, 'run') as mock_run:
+    with self.assertRaisesRegex(ValueError, 'Capture output is immutable'):
+     a.capture_local(str(m_path), 'run-imm-1', str(out_snap), build=True, root=root)
+    mock_run.assert_not_called()
 
 
 if __name__=='__main__': unittest.main()

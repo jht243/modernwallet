@@ -126,7 +126,7 @@ def content(value, label):
         return
     require(isinstance(value, (str, list, dict)) and bool(value), 'Missing ' + label)
     if isinstance(value, str):
-        require(value.strip() and not re.fullmatch(r'(?i)\s*(?:tbd|todo|pending|research later|n/?a)\s*[.!]?\s*', value),
+        require(value.strip() and not re.fullmatch(r'(?i)\s*(?:tbd|todo(?::.*)?|pending|research later|n/?a)\s*[.!]?\s*', value, re.S),
                 'Unfinished or unexplained ' + label)
     elif isinstance(value, list):
         for n, item in enumerate(value):
@@ -970,6 +970,307 @@ def cases_batch(root, manifest_path, publisher, out_dir):
     return {'status': 'retrieved-not-approved', 'count': len(results), 'items': results}
 
 
+def init_skeleton(root, kind, out=None, out_dir=None, manifest_path=None, review_path=None,
+                  author=None, job_id=None, chart_path=None, request_file=None, readiness_file=None,
+                  mode='fast-scope', publisher=None, basis='reported', approved_by='human-operator',
+                  note='Approved at Phase 0 human gate'):
+    """Emit fail-closed, pre-hashed JSON skeletons so workers never scrape old reports/ or sed tools."""
+    root = root.resolve()
+    now_utc = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z')
+    today_iso = datetime.datetime.now(datetime.timezone.utc).date().isoformat()
+
+    if kind in ('scope-manifest', 'manifest'):
+        require(out and author and job_id and chart_path,
+                'scope-manifest requires --out, --author, --job-id, and --chart')
+        require(mode in ('fast-scope', 'full'), 'mode must be fast-scope or full')
+        dest = (root / out).resolve()
+        require(dest.is_relative_to(root) and not dest.exists(), 'Skeleton output already exists or escapes repo: ' + str(out))
+        req_ref = artifact_ref(root, request_file) if request_file else {'path': 'TODO: relative/path/to/request.txt', 'sha256': 'TODO: 64-char sha256'}
+        readiness_ref = artifact_ref(root, readiness_file) if readiness_file and (root / readiness_file).is_file() else {
+            'path': readiness_file or 'TODO: relative/path/to/readiness.md',
+            'sha256': 'TODO: 64-char sha256',
+        }
+        action_tpl = {
+            'id': 'A1',
+            'problem': 'TODO: specific reader/coverage gap backed by search & primary evidence',
+            'solution': 'TODO: proposed page or targeted update',
+            'bucket': 'create new content',
+            'target': '/guides/todo-slug',
+            'format': 'article',
+            'best_medium': 'structured guide with comparison table',
+            'resolved_deliverable': 'structured guide with comparison table',
+            'serp_verdict': 'TODO: SERP gap verdict',
+            'serp_evidence': 'TODO: top SERP results + PAA/autocomplete findings',
+            'reader_question': 'TODO: exact reader question in plain words',
+            'answer': 'TODO: direct working answer grounded in primary sources',
+            'answer_placement': 'Section 1 (opening answer)',
+            'presentation': {
+                'medium': 'structured guide with comparison table',
+                'placement': 'Above-the-fold opening answer followed by structured comparison table',
+                'reason': 'TODO: explain why this medium best answers the reader question without unnecessary widgets',
+                'readerInputs': [],
+                'interaction': {'decision': 'not-useful', 'reason': 'TODO: explain why static structured comparison or interactive calculator fits'},
+                'animation': {'decision': 'not-useful', 'reason': 'Static scannable layout answers faster without decorative motion'},
+            },
+        }
+        plan = {
+            'schemaVersion': VERSION,
+            'preparationMode': mode,
+            'jobId': job_id.strip(),
+            'author': author.strip(),
+            'date': today_iso,
+            'source': request_file or 'TODO: caller source description',
+            'interpretedBrief': 'TODO: concise interpreted brief summary',
+            'chartPath': chart_path,
+            'request': {
+                'source': req_ref,
+                'goal': 'TODO: summarize original caller goal',
+                'requirements': [
+                    {
+                        'id': 'REQ-1',
+                        'description': 'TODO: specific requirement from caller brief',
+                        'acceptance': 'TODO: concrete acceptance check',
+                        'actionIds': ['A1'],
+                    }
+                ],
+            },
+            'actions': [action_tpl],
+            'emergingClusters': ['TODO: discovered adjacent & comparison/pricing clusters with volumes/signals'],
+            'exclusions': ['TODO: explicit deduplicated/off-topic/unsupported exclusions with reasons'],
+            'preparation': {'status': 'PASS', 'readiness': readiness_ref},
+            'evidenceFiles': [req_ref],
+            'executionPlan': [
+                {'phase': 1, 'action': 'Record advisory cannibalization check (no destructive merges).'},
+                {'phase': 2, 'action': 'Apply any approved metadata updates (or N/A when none in chart).'},
+                {'phase': 3, 'action': 'Generate net-new approved routes with verified evidence packets.'},
+                {'phase': 4, 'action': 'Run independent Phase 4 rendered-page audit on all changed routes.'},
+                {'phase': 5, 'action': 'Apply any approved existing-page body enrichments (or N/A when none).'},
+                {'phase': 6, 'action': 'Add approved inbound and outbound internal links across inspected routes.'},
+                {'phase': 7, 'action': 'Update sitemaps and prepare IndexNow URL list without pre-deploy ping.'},
+                {'phase': 8, 'action': 'Compile Phase 8 execution and cluster summary.'},
+                {'phase': 9, 'action': 'Commit, deploy to main, verify HTTP 200 live renders, and submit IndexNow.'},
+            ],
+            'publicationScope': {'commit': True, 'push': True, 'liveVerification': True, 'indexNow': True},
+        }
+        if mode == 'fast-scope':
+            plan['scopeBriefs'] = [
+                {
+                    'actionId': 'A1',
+                    'target': '/guides/todo-slug',
+                    'identity': {
+                        'title': 'TODO: working H1/title',
+                        'pageType': 'guide',
+                        'format': 'article',
+                        'medium': 'structured guide with comparison table',
+                    },
+                    'readerAndAnswer': {
+                        'question': action_tpl['reader_question'],
+                        'answer': action_tpl['answer'],
+                        'placement': action_tpl['answer_placement'],
+                    },
+                    'keywordEvidence': 'TODO: validated primary + supporting keywords, volumes/bands, provider, date',
+                    'whyNewPage': 'TODO: closest existing routes from coverage_lookup.py + why net-new page is required',
+                    'outline': [{'heading': 'TODO: Section 1 heading', 'purpose': 'TODO: concrete section purpose'}],
+                    'takeaway': 'TODO: intent-answering conclusion, conditions, and what would change it',
+                    'evidenceFiles': [req_ref],
+                }
+            ]
+        else:
+            plan['newPageBriefs'] = [
+                {
+                    'actionId': 'A1',
+                    'target': '/guides/todo-slug',
+                    'identity': {
+                        'title': 'TODO: working H1/title',
+                        'pageType': 'guide',
+                        'format': 'article',
+                        'medium': 'structured guide with comparison table',
+                    },
+                    'readerAndAnswer': {
+                        'question': action_tpl['reader_question'],
+                        'answer': action_tpl['answer'],
+                        'placement': action_tpl['answer_placement'],
+                    },
+                    'keywordEvidence': 'TODO: validated primary + supporting keywords, volumes/bands, provider, date',
+                    'serpAndQuestions': 'TODO: competing SERP pages, PAA/autocomplete questions, opportunity & limits',
+                    'whyNewPage': 'TODO: closest existing routes + checked commits + why net-new page is needed',
+                    'outline': [{'heading': 'TODO: Section 1 heading', 'purpose': 'TODO: concrete section purpose'}],
+                    'contributionAndEvidence': 'TODO: decision gap, evidence basis, primary source URLs + check dates',
+                    'tablesToolsVisuals': 'TODO: specific table columns / interactive inputs & sourced assumptions',
+                    'testingAndReview': 'TODO: site testing permission/exclusion, (Tested YYYY) eligibility, review profile',
+                    'takeaway': 'TODO: intent-answering conclusion, conditions, and what would change it',
+                    'inboundLinks': {
+                        'required': 2,
+                        'placements': [
+                            {
+                                'source': '/guides/existing-source',
+                                'target': '/guides/todo-slug',
+                                'section': 'TODO: source section heading',
+                                'anchor': 'TODO: natural anchor text',
+                                'purpose': 'TODO: reader navigation purpose',
+                                'inspection': {'path': 'TODO: inspected source file path', 'sha256': 'TODO: 64-char sha256'},
+                            }
+                        ],
+                    },
+                    'outboundLinks': {
+                        'placements': [
+                            {
+                                'source': '/guides/todo-slug',
+                                'target': '/guides/existing-destination',
+                                'section': 'TODO: section heading',
+                                'anchor': 'TODO: natural anchor text',
+                                'purpose': 'TODO: reader purpose',
+                                'inspection': {'path': 'TODO: inspected destination file path', 'sha256': 'TODO: 64-char sha256'},
+                            }
+                        ],
+                    },
+                    'technicalAndMeasurement': 'TODO: canonical/schema/sitemap wiring + measurement baseline',
+                    'evidenceFiles': [req_ref],
+                }
+            ]
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(json.dumps(plan, indent=2, ensure_ascii=False) + '\n')
+        return {'status': 'skeleton-initialized', 'kind': kind, 'mode': mode, 'out': str(dest.relative_to(root))}
+
+    if kind == 'phase0-approval':
+        require(out and manifest_path and review_path, 'phase0-approval requires --out, --manifest, and --review')
+        dest = (root / out).resolve()
+        require(dest.is_relative_to(root) and not dest.exists(), 'Approval output already exists or escapes repo: ' + str(out))
+        m_file = local(root, manifest_path)
+        r_file = local(root, review_path)
+        plan = read(m_file)
+        rev = read(r_file)
+        require(rev.get('verdict') == 'PASS', 'Chart review must PASS before recording Phase 0 approval')
+        m_rel = str(m_file.relative_to(root))
+        r_rel = str(r_file.relative_to(root))
+        receipt = {
+            'version': VERSION,
+            'kind': 'mindmap-phase0-approval',
+            'jobId': plan.get('jobId', ''),
+            'approvedAt': now_utc,
+            'approvedBy': approved_by,
+            'approvalSource': note,
+            'preparationModeAtApproval': plan.get('preparationMode', 'full'),
+            'approvedManifest': {
+                'path': m_rel,
+                'sha256': file_sha(m_file),
+                'canonicalJsonSha256': digest(plan),
+            },
+            'chartReview': {
+                'path': r_rel,
+                'sha256': file_sha(r_file),
+            },
+            'approvedActionIds': [r.get('id') for r in plan.get('actions', []) if isinstance(r, dict) and r.get('id')],
+            'approvedRoutes': [
+                r.get('target') for r in plan.get('actions', [])
+                if isinstance(r, dict) and str(r.get('target', '')).startswith('/')
+            ],
+        }
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(json.dumps(receipt, indent=2, ensure_ascii=False) + '\n')
+        return {'status': 'phase0-approval-recorded', 'out': str(dest.relative_to(root)), 'jobId': receipt['jobId']}
+
+    if kind == 'evidence-batch':
+        require(out_dir and manifest_path and review_path and author and publisher,
+                'evidence-batch requires --out-dir, --manifest, --review, --author, and --publisher')
+        require(basis in ('calculated', 'modeled', 'measured', 'reported', 'client-record'),
+                'Unsupported basis for evidence-batch')
+        m_file = local(root, manifest_path)
+        r_file = local(root, review_path)
+        plan = read(m_file)
+        m_ref = {'path': str(m_file.relative_to(root)), 'sha256': file_sha(m_file)}
+        r_ref = {'path': str(r_file.relative_to(root)), 'sha256': file_sha(r_file)}
+        batch_cases = cases_batch(root, str(m_file.relative_to(root)), publisher, out_dir)
+        case_by_action = {item['actionId']: item for item in batch_cases['items']}
+        brief_by_action = {
+            b.get('actionId'): b
+            for b in (plan.get('newPageBriefs') or plan.get('scopeBriefs') or [])
+            if isinstance(b, dict) and b.get('actionId')
+        }
+        target_dir = (root / out_dir).resolve()
+        is_l3 = publisher.lower().removeprefix('www.') == 'layer3labs.io'
+        created = []
+        for row in plan.get('actions', []):
+            if not isinstance(row, dict) or row.get('bucket') not in SUBSTANTIVE:
+                continue
+            aid = row['id']
+            c_info = case_by_action[aid]
+            ev_path = target_dir / c_info['slug'] / 'evidence.json'
+            if ev_path.exists():
+                continue
+            brief = brief_by_action.get(aid, {})
+            src_refs = list(brief.get('evidenceFiles') or plan.get('evidenceFiles') or [])
+            pkt = {
+                'gateSchemaVersion': VERSION,
+                'author': author.strip(),
+                'route': row['target'],
+                'readerQuestion': row['reader_question'],
+                'approvedPlan': {
+                    'manifest': m_ref,
+                    'review': r_ref,
+                    'actionId': aid,
+                },
+                'presentation': row['presentation'],
+                'basis': basis,
+                'decisionGap': 'TODO: state the specific reader decision gap not resolved by generic summaries',
+                'finding': 'TODO: state the concrete evidence-backed finding answering readerQuestion',
+                'conditions': 'TODO: state material conditions/assumptions under which finding holds',
+                'whatWouldChange': 'TODO: state concrete price/policy/spec changes that would flip the finding',
+                'caseSelection': {'path': c_info['path'], 'sha256': c_info['sha256']},
+                'caseDecisions': 'TODO: explain which retrieved cases.json records were used (anonymized) or why none applied',
+                'sourceArtifacts': src_refs,
+            }
+            if row['presentation']['interaction']['decision'] in {'build', 'reuse'}:
+                pkt['presentationArtifacts'] = [{'path': 'TODO: interactive component path', 'sha256': 'TODO: 64-char sha256'}]
+            if is_l3:
+                pkt['caseUses'] = []
+                pkt['comparisons'] = [
+                    {
+                        'kind': 'public-data',
+                        'status': 'not-comparable',
+                        'reason': 'TODO: set status="used" with plan/coveredItems/sources when comparing >=2 options, or explain why not-comparable/unavailable/not-useful',
+                    }
+                ]
+            if basis in ('calculated', 'modeled'):
+                pkt.update({
+                    'method': 'TODO: describe calculation/model formula and explicit visible assumptions',
+                    'units': 'TODO: explicit units (e.g., USD/month, ms, tokens)',
+                    'limitations': 'TODO: model boundaries and excluded variables',
+                    'counterexample': 'TODO: concrete scenario/input where the recommendation reverses',
+                    'execution': {
+                        'command': ['python3', f"{out_dir.rstrip('/')}/{c_info['slug']}/model.py"],
+                        'code': {'path': f"{out_dir.rstrip('/')}/{c_info['slug']}/model.py", 'sha256': 'TODO: 64-char sha256'},
+                        'inputs': src_refs[:1],
+                        'output': {'path': f"{out_dir.rstrip('/')}/{c_info['slug']}/output.json", 'sha256': 'TODO: 64-char sha256'},
+                    },
+                })
+            elif basis == 'measured':
+                pkt.update({
+                    'method': 'TODO: describe executed benchmark/test protocol',
+                    'units': 'TODO: explicit measured units',
+                    'limitations': 'TODO: test environment boundaries',
+                    'counterexample': 'TODO: workload where measured ranking changes',
+                    'runs': [
+                        {
+                            'testedAt': today_iso,
+                            'scope': 'TODO: exact tested version, environment, and item coverage',
+                            'artifact': {'path': 'TODO: raw test output path', 'sha256': 'TODO: 64-char sha256'},
+                        }
+                    ],
+                })
+            else:
+                pkt.update({
+                    'whyNoQuantitativeAnalysis': 'TODO: explain why primary documentation/policy facts answer this question directly without synthetic modeling',
+                    'reasoning': 'TODO: trace primary source facts in sourceArtifacts to the conclusion and takeaway',
+                })
+            ev_path.parent.mkdir(parents=True, exist_ok=True)
+            ev_path.write_text(json.dumps(pkt, indent=2, ensure_ascii=False) + '\n')
+            created.append({'actionId': aid, 'slug': c_info['slug'], 'evidence': str(ev_path.relative_to(root)), 'cases': c_info['path']})
+        return {'status': 'evidence-skeletons-initialized', 'count': len(created), 'items': created}
+
+    raise ValueError('Unknown init-skeleton kind: ' + str(kind))
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--root', default='.')
@@ -1001,6 +1302,22 @@ def main():
     q.add_argument('--manifest', required=True)
     q.add_argument('--publisher', '--site-host', dest='publisher', required=True)
     q.add_argument('--out-dir', required=True)
+    q = s.add_parser('init-skeleton')
+    q.add_argument('--kind', choices=['scope-manifest', 'manifest', 'phase0-approval', 'evidence-batch'], required=True)
+    q.add_argument('--out')
+    q.add_argument('--out-dir')
+    q.add_argument('--manifest')
+    q.add_argument('--review')
+    q.add_argument('--author')
+    q.add_argument('--job-id')
+    q.add_argument('--chart')
+    q.add_argument('--request-file')
+    q.add_argument('--readiness')
+    q.add_argument('--mode', choices=['fast-scope', 'full'], default='fast-scope')
+    q.add_argument('--publisher', '--site-host', dest='publisher')
+    q.add_argument('--basis', choices=['calculated', 'modeled', 'measured', 'reported', 'client-record'], default='reported')
+    q.add_argument('--approved-by', default='human-operator')
+    q.add_argument('--note', default='Approved at Phase 0 human gate')
     q = s.add_parser('hash')
     q.add_argument('--file', required=True)
     a = p.parse_args()
@@ -1016,6 +1333,14 @@ def main():
         return
     if a.command == 'cases-batch':
         print(json.dumps(cases_batch(root, a.manifest, a.publisher, a.out_dir), indent=2))
+        return
+    if a.command == 'init-skeleton':
+        print(json.dumps(init_skeleton(
+            root, a.kind, out=a.out, out_dir=a.out_dir, manifest_path=a.manifest, review_path=a.review,
+            author=a.author, job_id=a.job_id, chart_path=a.chart, request_file=a.request_file,
+            readiness_file=a.readiness, mode=a.mode, publisher=a.publisher, basis=a.basis,
+            approved_by=a.approved_by, note=a.note,
+        ), indent=2))
         return
     if a.command == 'validate-analysis':
         analysis(root, read(a.packet))

@@ -35,7 +35,17 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
             policy_cfg = {}
     site_id = policy_cfg.get('siteId', '<SITE_ID>')
     hosts = policy_cfg.get('canonicalHosts') or []
-    canonical_base = f"https://{hosts[-1] if len(hosts) > 1 and hosts[-1].startswith('www.') else (hosts[0] if hosts else '<CANONICAL_HOST>')}"
+    canonical_base = None
+    renderer_path = root / '.claude/tools/rendered-audit.py'
+    if renderer_path.is_file():
+        import importlib.util
+        spec_r = importlib.util.spec_from_file_location('runbook_canonical_probe', renderer_path)
+        mod_r = importlib.util.module_from_spec(spec_r)
+        spec_r.loader.exec_module(mod_r)
+        if hasattr(mod_r, 'detect_rendered_canonical_base'):
+            canonical_base = mod_r.detect_rendered_canonical_base(root)
+    if not canonical_base:
+        canonical_base = f"https://{hosts[-1] if len(hosts) > 1 and hosts[-1].startswith('www.') else (hosts[0] if hosts else '<CANONICAL_HOST>')}"
 
     has_hype_check = (root / 'scripts/hype_radar/check_chart.py').is_file()
     has_fresh_preview = (root / '.claude/tools/fresh-preview.local.py').is_file() and is_local
@@ -95,7 +105,15 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
 
     if phase == 'build':
         lines.extend([
-            '2. Manual interactive /mindmap-pass pre-Phase-0 scope chart (never unattended *-auto): set "preparationMode": "fast-scope" and "scopeBriefs": '
+            '2. Exact CLI JSON Output Schemas (never guess keys or crash inline Python): '
+            '`keyword_data.py volumes|expand` -> `{"rows": [{"keyword","volume","volume_low","volume_high","kd","cpc","source","confidence","autocomplete":{"completions","corroborates"}}], "notes": [...]}` (library `volumes()` returns `dict[lowercase_phrase, row]`; `expand()` returns `list[row]`); '
+            '`autocomplete.py` -> `{"seed", "mode", "suggestions": [{"query", "via"}]}`; '
+            'DataForSEO SERP raw response -> `body["tasks"][0]["result"][0]["items"]` (check `any(i.get("type") == "ai_overview" for i in items)` — there is NO top-level `ai_overview_present` key).',
+            '2b. Full-Verbatim Primary-Source Capture Once (zero downstream Browser re-scraping): on FIRST visit to any vendor/help/policy URL, save the COMPLETE verbatim page text + canonical URL + UTC retrieval timestamp to `<RUN_DIR>/research/sources/<source-slug>.txt` and reference it in `evidenceFiles` so `WRITE` and `AUDIT` read from disk without re-opening Browser/WebFetch.',
+            '2c. 1-Command Schema Skeletons (never inspect old `reports/` folders or `sed` tools): '
+            'init manifest -> `python3 .claude/tools/mindmap-gates.py init-skeleton --kind scope-manifest --mode <fast-scope|full> --job-id <JOB_ID> --author ' + actor + ' --chart <CHART_PATH> --request-file <BRIEF_TXT> --out <RUN_DIR>/approval-manifest.json`; '
+            'after human Phase 0 approval -> `python3 .claude/tools/mindmap-gates.py init-skeleton --kind phase0-approval --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json --out <RUN_DIR>/phase0-approval-v1.json`.',
+            '2d. Manual interactive /mindmap-pass pre-Phase-0 scope chart (never unattended *-auto): set "preparationMode": "fast-scope" and "scopeBriefs": '
             '[{"actionId", "target", "identity": {"title","pageType","format","medium"}, "readerAndAnswer": {"question","answer","placement"}, '
             '"keywordEvidence", "whyNewPage", "outline": [{"heading","purpose"}], "takeaway", "evidenceFiles": [{"path","sha256"}]}] '
             '(plus "modelLaunch": {"level": "small"|"mid"|"frontier", "modelSlug": "<slug>"} on AI model launches when docs/model-launch-page-family.md exists).',
@@ -123,7 +141,11 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
                 f'2. Standards ledger (no 140KB dump): WORKFLOW_RUN_ID={run_id} bash .claude/tools/load-standards.sh "<routine>" "write" --run-id {run_id} --ledger-only'
             )
         lines.append(
-            f'3. Batch client/site experience cases (_experience.md + _approved-cases.json): python3 .claude/tools/mindmap-gates.py cases-batch --manifest <RUN_DIR>/approval-manifest.json --publisher {canonical_base.replace("https://", "")} --out-dir <RUN_DIR>/evidence'
+            '2b. Primary-source disk reuse (0 redundant Browser scrapes): read `<RUN_DIR>/research/sources/*.txt` from disk FIRST; NEVER re-open Browser/WebFetch on URLs already captured in `research/sources/` (fetch live ONLY for a newly needed URL absent from `research/sources/`).'
+        )
+        lines.append(
+            f'3. 1-command cases + analysis-packet skeletons (_experience.md + _approved-cases.json + exact pre-hashed approvedPlan/presentation/caseSelection — never inspect old reports/ or sed content_gen.py): '
+            f'python3 .claude/tools/mindmap-gates.py init-skeleton --kind evidence-batch --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json --author {actor} --publisher {canonical_base.replace("https://", "")} --basis <reported|calculated|modeled|measured|client-record> --out-dir <RUN_DIR>/evidence'
         )
         if (root / 'scripts/reader-surveys/research.mts').is_file():
             lines.append(
@@ -138,7 +160,7 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
             lines.append(f'4. Content lint (single batch pass): {lint_cmd}')
         if has_fresh_preview:
             lines.append(
-                f'5. Build & capture rendered preview in 1 command (auto-generates render manifest & installs deps if missing): '
+                f'5. Build & capture rendered preview in 1 command (auto-generates render manifest with exact rendered canonicalBase & checks --out immutability BEFORE building; pass --reuse-build if only capture-manifest metadata changed): '
                 f'python3 .claude/tools/fresh-preview.local.py --auto-manifest <RUN_DIR>/approval-manifest.json --author {actor} --manifest <RUN_DIR>/audit/capture-manifest.json --run-id {run_id} --out <RUN_DIR>/audit/preview-snapshot.json'
             )
             lines.append(
@@ -173,6 +195,7 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
             lines.extend([
                 '2. Mechanical surface & risk pack across all routes in 1 turn: '
                 'python3 .claude/tools/rendered-audit.py inspect-pack --snapshot <SNAPSHOT_JSON>',
+                '2b. Primary-source disk verification first: read `<RUN_DIR>/research/sources/*.txt` + `<SNAPSHOT_DIR>` from disk FIRST; spot-check live URLs only when a saved source snapshot appears truncated, stale, or disputed.',
                 f'3. Reserve all routes & emit pre-bound review skeleton in 1 turn (never hand-roll hashes): '
                 f'python3 .claude/tools/audit-batch.py reserve-batch --snapshot <SNAPSHOT_JSON> --job-id <JOB_ID> '
                 f'--reviewer {actor} --preflight {rel_dir} '

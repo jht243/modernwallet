@@ -27,8 +27,7 @@ MINDMAP_WRITE_BASE = ['_decision-evidence.md', '_testing-labels.md', '_content-s
 MINDMAP_AUDIT_BASE = ['_decision-evidence.md', '_testing-labels.md', '_content-standard.md',
                       '_anti-ai-language.md', '_experience.md',
                       '_rendered-page-audit.md', '_remediation-ladder.md', '_mindmap-execution.md']
-MINDMAP_PUBLISH_BASE = ['_testing-labels.md', '_experience.md',
-                        '_workflow-checkpoints.md', '_rendered-page-audit.md']
+MINDMAP_PUBLISH_BASE = ['_workflow-checkpoints.md', '_rendered-page-audit.md']
 OPTIONAL = ['_testing-labels.local.md', '_content-standard.local.md',
             '_decision-evidence.local.md', '_experience.local.md',
             '_layer3-evidence-sources.md']
@@ -269,7 +268,8 @@ def sources(root, phase, instructions):
         }
         names = [n for n in base_map.get(phase, BASE) if (root / '.claude/commands' / n).is_file() or n in BASE]
         rels = ['.claude/commands/' + n for n in names]
-        rels += ['.claude/commands/' + n for n in OPTIONAL if (root / '.claude/commands' / n).is_file()]
+        if phase != 'publish':
+            rels += ['.claude/commands/' + n for n in OPTIONAL if (root / '.claude/commands' / n).is_file()]
         if phase == 'audit':
             review_policy = '.claude/commands/_content-review-policy.md'
             if (root / review_policy).is_file():
@@ -467,8 +467,16 @@ def main():
                         args.context_id, args.context_epoch, args.handoff,
                         inside(ROOT, args.reuse_application) if args.reuse_application else None, args.context_packet, args.source,
                         args.publication_preparation)
-            print(json.dumps({'status': 'prepared-not-read', 'runDir': args.run_dir, 'parts': len(m['parts']), 'reusedFiles': len(m['reused']),
-                              'next': 'Issue up to 10 SEPARATE workflow-delivery-serial.local.py Bash tool calls per turn (never a shell for-loop in one Bash call, which triggers >30KB output truncation) until every part is read, then run check.'}))
+            total_parts = len(m['parts'])
+            batch_plan = [f'{s}..{min(s + 11, total_parts)}' for s in range(1, total_parts + 1, 12)]
+            print(json.dumps({
+                'status': 'prepared-not-read',
+                'runDir': args.run_dir,
+                'parts': total_parts,
+                'reusedFiles': len(m['reused']),
+                'batchPlan': batch_plan,
+                'next': 'Issue 10-12 SEPARATE workflow-delivery-serial.local.py --part <N> Bash tool calls in EVERY turn following batchPlan (never 3-4 at a time, and never a shell for-loop in one Bash call, which triggers >30KB output truncation) until every part is read, then run check.',
+            }))
         elif args.command == 'next':
             emit(ROOT, directory, args.part)
         elif args.command == 'challenge':

@@ -14,7 +14,7 @@ import time
 # a partner and is rejected when the window ends.
 WINDOW = float(os.environ.get("DELIVERY_PAIR_WINDOW", "25"))
 POLL = 0.1
-MAX_GROUP = int(os.environ.get("DELIVERY_GROUP_SIZE", "10"))
+MAX_GROUP = int(os.environ.get("DELIVERY_GROUP_SIZE", "15"))
 
 
 def delivery(command):

@@ -647,6 +647,46 @@ class Gates(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'forbids -alternatives'):
             g.chart(self.root, small_plan, rev)
 
+    def test_init_skeleton_scope_manifest_phase0_approval_and_evidence_batch_fail_closed_until_filled(self):
+        # 1. scope-manifest skeleton initializes cleanly and fails closed while TODOs remain
+        res_m = g.init_skeleton(
+            self.root, 'scope-manifest', out='skel/manifest.json', author='builder-1',
+            job_id='job-skel-1', chart_path='reports/skel-chart.md', request_file='request.txt',
+            readiness_file='readiness.md', mode='fast-scope',
+        )
+        self.assertEqual(res_m['status'], 'skeleton-initialized')
+        skel_plan = g.read(self.root / 'skel/manifest.json')
+        self.assertEqual(skel_plan['request']['source']['sha256'], g.file_sha(self.root / 'request.txt'))
+        with self.assertRaisesRegex(ValueError, 'Unfinished or unexplained'):
+            g.chart(self.root, skel_plan, {'reviewer': 'rev-1', 'verdict': 'PASS', 'manifestSha256': g.digest(skel_plan)})
+
+        # 2. phase0-approval records exact hashes on a passing chart review
+        (self.root / 'valid-manifest.json').write_text(json.dumps(self.plan))
+        (self.root / 'valid-review.json').write_text(json.dumps(self.review()))
+        res_p0 = g.init_skeleton(
+            self.root, 'phase0-approval', out='skel/phase0-approval.json',
+            manifest_path='valid-manifest.json', review_path='valid-review.json',
+        )
+        self.assertEqual(res_p0['status'], 'phase0-approval-recorded')
+        p0_obj = g.read(self.root / 'skel/phase0-approval.json')
+        self.assertEqual(p0_obj['approvedManifest']['canonicalJsonSha256'], g.digest(self.plan))
+
+        # 3. evidence-batch retrieves cases.json and writes pre-bound evidence.json that fails closed until TODOs are filled
+        res_ev = g.init_skeleton(
+            self.root, 'evidence-batch', out_dir='skel/evidence',
+            manifest_path='valid-manifest.json', review_path='valid-review.json',
+            author='writer-1', publisher='example.com', basis='reported',
+        )
+        self.assertEqual(res_ev['count'], 1)
+        ev_file = self.root / res_ev['items'][0]['evidence']
+        ev_pkt = g.read(ev_file)
+        self.assertEqual(ev_pkt['approvedPlan']['manifest']['sha256'], g.file_sha(self.root / 'valid-manifest.json'))
+        with self.assertRaisesRegex(ValueError, 'Unfinished or unexplained'):
+            g.analysis(self.root, ev_pkt)
+        for k in ('decisionGap', 'finding', 'conditions', 'whatWouldChange', 'caseDecisions', 'whyNoQuantitativeAnalysis', 'reasoning'):
+            ev_pkt[k] = f'Substantive verified prose for {k} grounded in source.txt.'
+        g.analysis(self.root, ev_pkt)
+
 
 if __name__ == '__main__':
     unittest.main()

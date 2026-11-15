@@ -327,6 +327,15 @@ def _resolve_site_origin(root, snapshot_obj=None, previous_obj=None):
         return site_id, previous_obj['canonicalBase']
     if snapshot_obj and isinstance(snapshot_obj.get('manifest'), dict) and snapshot_obj['manifest'].get('canonicalBase'):
         return site_id, snapshot_obj['manifest']['canonicalBase']
+    renderer_path = root / '.claude/tools/rendered-audit.py'
+    if renderer_path.is_file():
+        spec_r = importlib.util.spec_from_file_location('handoff_canonical_probe', renderer_path)
+        mod_r = importlib.util.module_from_spec(spec_r)
+        spec_r.loader.exec_module(mod_r)
+        if hasattr(mod_r, 'detect_rendered_canonical_base'):
+            detected = mod_r.detect_rendered_canonical_base(root)
+            if isinstance(detected, str) and detected.startswith('https://'):
+                return site_id, detected
     local_path = root / '.claude/workflow-policy.local.json'
     if local_path.is_file():
         local_cfg = read(local_path)

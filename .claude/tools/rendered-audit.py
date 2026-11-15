@@ -443,9 +443,12 @@ def review_check(s, review):
     review_policy=content_review_policy()
     if review_policy is not None:
         review_policy.check_rendered(Path(__file__).resolve().parents[2],s,review)
-    # Layer3-only opt-in. No config means unchanged behavior in every fleet repo.
+    # Explicit local opt-in; every configured site must pass its policy.
     root = Path(__file__).resolve().parents[2]
-    if (root / '.claude/workflow-policy.local.json').is_file() and urlsplit(s['manifest']['canonicalBase']).hostname in ['layer3labs.io', 'www.layer3labs.io']:
+    if (root / '.claude/workflow-policy.local.json').is_file() and (
+        read(root / '.claude/workflow-policy.local.json').get('site') != 'layer3labs'
+        or urlsplit(s['manifest']['canonicalBase']).hostname in ['layer3labs.io', 'www.layer3labs.io']
+    ):
         import importlib.util
         spec = importlib.util.spec_from_file_location('rendered_local_policy', Path(__file__).with_name('workflow-local.py'))
         module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
@@ -778,6 +781,71 @@ def inspect_pack(s, selected_routes=()):
     }
 
 
+_CANONICAL_PROBE_FILES = (
+    'src/layouts/index.tsx',
+    'src/layouts/Layout.astro',
+    'src/layouts/BaseLayout.astro',
+    'src/components/Layout.tsx',
+    'src/components/SEO.astro',
+    'src/components/BaseHead.astro',
+    'src/lib/seo.ts',
+    'src/lib/site.ts',
+    'src/lib/jsonld.ts',
+    'src/lib/testedPage.ts',
+    'src/config.ts',
+    'src/site.config.ts',
+    'astro.config.mjs',
+    'astro.config.ts',
+    'next.config.js',
+    'next.config.mjs',
+    'server.py',
+    'public/sitemap.xml',
+    'public/sitemap-main.xml',
+)
+
+
+def detect_rendered_canonical_base(root):
+    """Resolve the exact HTTPS canonical origin emitted by this repository's rendered HTML."""
+    root = Path(root).resolve()
+    allowed_hosts = []
+    local_base = None
+    local_cfg = root / '.claude/workflow-policy.local.json'
+    if local_cfg.is_file():
+        lc = read(local_cfg)
+        if isinstance(lc.get('canonicalBase'), str) and lc['canonicalBase'].startswith('https://'):
+            local_base = lc['canonicalBase'].rstrip('/')
+            h = (urlsplit(local_base).hostname or '').lower()
+            if h:
+                allowed_hosts.append(h)
+    crp_cfg_path = root / '.claude/content-review-policy.json'
+    if crp_cfg_path.is_file():
+        cc = read(crp_cfg_path)
+        for h in (cc.get('canonicalHosts') or []):
+            if isinstance(h, str) and h.strip():
+                allowed_hosts.append(h.strip().lower())
+    known_apexes = {h.removeprefix('www.') for h in allowed_hosts if h}
+    if known_apexes:
+        url_re = re.compile(r'https://([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})(?=[/"\'\s<>`$)]|$)')
+        for rel in _CANONICAL_PROBE_FILES:
+            probe = root / rel
+            if not probe.is_file():
+                continue
+            try:
+                sample = probe.read_text(errors='ignore')[:65536]
+            except OSError:
+                continue
+            for m in url_re.finditer(sample):
+                cand = m.group(1).lower()
+                if cand in allowed_hosts or cand.removeprefix('www.') in known_apexes:
+                    return 'https://' + cand
+    if local_base:
+        return local_base
+    if allowed_hosts:
+        non_www = [h for h in allowed_hosts if not h.startswith('www.')]
+        return 'https://' + (non_www[0] if non_www else allowed_hosts[0])
+    return None
+
+
 def init_manifest(approval_manifest_path, author, out_path, root=None, explicit_routes=(),
                   claim_categories=('ordinary',), canonical_base=None, volatile_ads=None, volatile_regions=()):
     """Generate a validated capture-manifest.json directly from approval-manifest.json in 1 command."""
@@ -786,21 +854,7 @@ def init_manifest(approval_manifest_path, author, out_path, root=None, explicit_
     require(isinstance(author, str) and author.strip(), 'Provide a non-empty --author identity')
     plan = read(approval_manifest_path)
 
-    resolved_base = canonical_base
-    if not resolved_base:
-        local_cfg = root / '.claude/workflow-policy.local.json'
-        if local_cfg.is_file():
-            lc = read(local_cfg)
-            if isinstance(lc.get('canonicalBase'), str) and lc['canonicalBase'].startswith('https://'):
-                resolved_base = lc['canonicalBase']
-    if not resolved_base:
-        crp_cfg_path = root / '.claude/content-review-policy.json'
-        if crp_cfg_path.is_file():
-            cc = read(crp_cfg_path)
-            hosts = cc.get('canonicalHosts') or []
-            if hosts:
-                non_www = [h for h in hosts if isinstance(h, str) and not h.startswith('www.')]
-                resolved_base = 'https://' + (non_www[0] if non_www else hosts[0])
+    resolved_base = canonical_base or detect_rendered_canonical_base(root)
     require(bool(resolved_base) and resolved_base.startswith('https://'),
             'Cannot resolve HTTPS canonicalBase; pass --canonical-base explicitly')
 
@@ -869,6 +923,11 @@ def capture_local(manifest_path, run_id, out, dom_dir=None, build=False, root=No
         )
     manifest = read(manifest_path)
     validate_manifest(manifest)
+    require(not Path(out).exists() and not Path(out).with_suffix('').exists(),
+            'Capture output is immutable. Use a new versioned output path; never overwrite a reserved snapshot or its HTML.')
+    if dom_dir:
+        missing = [r['path'] for r in manifest['routes'] if not (Path(dom_dir) / r['path'].lstrip('/') / 'index.html').is_file()]
+        require(not missing, '--dom-dir is existing hydrated DOM input, not an output directory. Save every route first; omit it for complete server-rendered HTTP HTML. Missing routes: ' + ', '.join(missing))
     preview_path = Path(__file__).with_name('preview-session.py')
     require(preview_path.is_file(), 'Missing preview-session.py helper')
     spec = importlib.util.spec_from_file_location('owned_preview_session', preview_path)
