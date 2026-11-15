@@ -1,0 +1,107 @@
+{
+ "paycheck": [
+  {
+   "gross": 60000,
+   "status": "single",
+   "pretax": 0,
+   "federal": 5020.0,
+   "ss": 3720.0,
+   "medicare": 870.0,
+   "net_annual": 50390.0,
+   "net_per_period": 1938.08,
+   "periods": 26
+  },
+  {
+   "gross": 60000,
+   "status": "mfj",
+   "pretax": 0,
+   "federal": 2840.0,
+   "ss": 3720.0,
+   "medicare": 870.0,
+   "net_annual": 52570.0,
+   "net_per_period": 2021.92,
+   "periods": 26
+  },
+  {
+   "gross": 100000,
+   "status": "single",
+   "pretax": 10000,
+   "federal": 10970.0,
+   "ss": 6200.0,
+   "medicare": 1450.0,
+   "net_annual": 71380.0,
+   "net_per_period": 2745.38,
+   "periods": 26
+  },
+  {
+   "gross": 250000,
+   "status": "single",
+   "pretax": 0,
+   "federal": 51304.0,
+   "ss": 11439.0,
+   "medicare": 4075.0,
+   "net_annual": 183182.0,
+   "net_per_period": 7045.46,
+   "periods": 26
+  },
+  {
+   "gross": 0,
+   "status": "single",
+   "pretax": 0,
+   "federal": 0,
+   "ss": 0.0,
+   "medicare": 0.0,
+   "net_annual": 0.0,
+   "net_per_period": 0.0,
+   "periods": 26
+  },
+  {
+   "gross": 16100,
+   "status": "single",
+   "pretax": 0,
+   "federal": 0,
+   "ss": 998.2,
+   "medicare": 233.45,
+   "net_annual": 14868.35,
+   "net_per_period": 571.86,
+   "periods": 26
+  },
+  {
+   "gross": 184500,
+   "status": "hoh",
+   "pretax": 0,
+   "federal": 29271.0,
+   "ss": 11439.0,
+   "medicare": 2675.25,
+   "net_annual": 141114.75,
+   "net_per_period": 5427.49,
+   "periods": 26
+  }
+ ],
+ "salary": [
+  {
+   "annual": 52000,
+   "hourly": 25.0,
+   "monthly": 4333.33,
+   "biweekly": 2000.0,
+   "weekly": 1000.0,
+   "daily": 200.0
+  },
+  {
+   "annual": 75000,
+   "hourly": 38.4615,
+   "monthly": 6250.0,
+   "biweekly": 2884.62,
+   "weekly": 1442.31,
+   "daily": 288.46
+  },
+  {
+   "annual": 104000,
+   "hourly": 50.0,
+   "monthly": 8666.67,
+   "biweekly": 4000.0,
+   "weekly": 2000.0,
+   "daily": 400.0
+  }
+ ]
+}
