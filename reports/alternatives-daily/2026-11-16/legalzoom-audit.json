@@ -1,0 +1,48 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "On the headline numbers Bizee Standard costs $50 less than LegalZoom Pro and Premium costs $100 more than LegalZoom Premium.",
+   "problem": "Arithmetic error. Bizee Premium is $299 + state fee and LegalZoom Premium LLC is $299 + state fee (same base; both $399 with the $100 example). The difference is $0, not $100. Both prices verified on live pages.",
+   "fix": "Replace with 'Bizee Premium and LegalZoom Premium both list $299 before state fees.'",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "None of the six alternatives above sells wills, trusts and LLC formation together. / LegalZoom is the only provider here that lists wills, trusts and LLC formation together.",
+   "problem": "Contradicts the page's own Rocket Lawyer row and section: Rocket Lawyer lists unlimited legal documents plus a free first LLC/corporation/nonprofit registration ($99 after). Rocketlawyer.com/pricing confirms both. The 'only provider' claim is unsupported.",
+   "fix": "Rephrase to a verifiable fact, e.g. 'LegalZoom lists priced wills, living trusts and LLC formation as separate products on one site; Rocket Lawyer bundles documents and LLC registration in a membership.' Remove 'only provider'.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "This page lists products and their published prices; it is not legal advice.",
+   "problem": "A legal 'not advice' disclaimer sits in the intro (GATE Disclaimer placement: disclaimer-at-top).",
+   "fix": "Delete from the intro; keep the disclaimer as the page's final element only.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F4",
+   "quote": "Trust & Will's page does not state a couple price for these plans, so the couple comparison needs a check at checkout. / Check the price shown at checkout, along with the renewal terms for consultations, before comparing totals.",
+   "problem": "Unlinked directives to verify (unlinked-directive gate). Also the Trust & Will pricing page has an Individual/Couple toggle, so 'does not state a couple price' may be wrong.",
+   "fix": "Delete the directives or link the exact page (https://www.trustandwill.com/pricing is an external link not allowed; so state the fact only). Re-check the Couple toggle and state any price shown.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F5",
+   "quote": "Attorney support adds $299 to the Trust Plan. / Trust & Will lists attorney support separately at $299 on the Trust Plan",
+   "problem": "trustandwill.com/pricing shows 'Attorney Support +$299' under both the Trust Plan and the Will Plan columns; page says Trust Plan only.",
+   "fix": "Say attorney support adds $299 to either the Will Plan or the Trust Plan, and fix the $798 example wording accordingly.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F6",
+   "quote": "Trust & Will, Rocket Lawyer, FreeWill, ZenBusiness, Northwest Registered Agent and Bizee ... an LLC starts at $0 / ... Employer Identification Number (EIN)",
+   "problem": "LLC is never defined, and EIN is used in the ZenBusiness table row before its definition in the choose section.",
+   "fix": "Define 'limited liability company (LLC)' at first use in the intro and 'Employer Identification Number (EIN)' at first use in the table.",
+   "hard_blocker": false
+  }
+ ]
+}

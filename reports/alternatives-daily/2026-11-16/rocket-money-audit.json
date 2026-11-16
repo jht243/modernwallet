@@ -1,0 +1,41 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "weighing a feature, not only a price",
+   "problem": "Compressed comma-antithesis (\"X, not Y\") is a single-instance ban in _anti-ai-language.md.",
+   "fix": "Rewrite as a plain sentence: 'a household that mainly wants someone else to cancel services is weighing a feature as well as a price.'",
+   "hard_blocker": false
+  },
+  {
+   "id": "F2",
+   "quote": "write down current monthly bills and the services that need handling before switching.",
+   "problem": "Presupposes the reader already uses Rocket Money ('before switching'), and reads as advice; the page rules say list products, give no advice.",
+   "fix": "Reword neutrally: 'The comparison depends on whether a saved bill covers the subscription fee.' and drop 'before switching'.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F3",
+   "quote": "FICO Score 2 from Experian ... FDIC-insured account ... Rowan, the AI assistant",
+   "problem": "FICO, FDIC and AI are not defined on first use.",
+   "fix": "Expand: Fair Isaac Corporation (FICO), Federal Deposit Insurance Corporation (FDIC), artificial intelligence (AI).",
+   "hard_blocker": false
+  },
+  {
+   "id": "F4",
+   "quote": "Premium adds cancellation on your behalf, unlimited budgets, ... with no public Premium price on the pages checked.",
+   "problem": "Subject's Premium price cell states absence of data in hedged form; the rule's accepted wording for an unpublished price is 'Quote-based; no public price' (or state plainly 'Premium price not published'). Verified: rocketmoney.com/faq lists only Premium+ at $15/month; /pricing returns 404.",
+   "fix": "Use 'Premium: no public price' as a plain fact in the cell and FAQ.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F5",
+   "quote": "Copilot Money: \"One plan with no tiers: $109 billed yearly, shown as $9 per month\"",
+   "problem": "Copilot's pricing page has a Yearly/Monthly toggle; the page presents only the yearly price and calls it the single plan, with no monthly figure.",
+   "fix": "State that a monthly option exists but its price was not shown in the fetched page, or omit 'single price' framing.",
+   "hard_blocker": false
+  }
+ ]
+}

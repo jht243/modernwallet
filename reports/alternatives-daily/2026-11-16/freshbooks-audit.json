@@ -1,0 +1,20 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "Zoho Invoice: \"$0 per month; the pricing page lists it as a forever-free invoicing plan ... Includes quotes, recurring invoices, ... and up to two organizations.\" and \"Zoho Invoice costs $0 for the same 12 clients.\"",
+   "problem": "Zoho's pricing-page FAQ states limits the page omits: up to two users, a maximum of three projects, up to 500 invoices per year, and \"Powered by Zoho Invoice\" branding. Table row and section present the plan as unrestricted in a cost comparison against paid plans.",
+   "fix": "Add the limits (2 users, 3 projects, 500 invoices per year, Zoho branding) to the table cell and the Zoho Invoice section.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F2",
+   "quote": "Standard ... adds bank feeds, progress invoicing, sales tax tracking and API access.",
+   "problem": "Acronym API used without definition on first use in the Zoho Books section.",
+   "fix": "Write 'application programming interface (API)' or drop the term.",
+   "hard_blocker": false
+  }
+ ]
+}

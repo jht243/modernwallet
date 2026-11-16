@@ -1131,10 +1131,44 @@
           "at": "2026-11-15T16:55:03+00:00",
           "status": "eligible",
           "note": "qualified: HTTP 200 verified & ranked by search demand"
+        },
+        {
+          "at": "2026-11-16T16:39:08+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-16"
+        },
+        {
+          "at": "2026-11-16T16:49:52+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "eligible",
-      "updatedAt": "2026-11-15T16:55:03+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-16T16:39:08+00:00",
+      "claimedOn": "2026-11-16",
+      "attempts": 1,
+      "lastNextAt": "2026-11-16T16:39:08+00:00",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Zoho Invoice: \"$0 per month; the pricing page lists it as a forever-free invoicing plan ... Includes quotes, recurring invoices, ... and up to two organizations.\" and \"Zoho Invoice costs $0 for the same 12 clients.\"",
+            "problem": "Zoho's pricing-page FAQ states limits the page omits: up to two users, a maximum of three projects, up to 500 invoices per year, and \"Powered by Zoho Invoice\" branding. Table row and section present the plan as unrestricted in a cost comparison against paid plans.",
+            "fix": "Add the limits (2 users, 3 projects, 500 invoices per year, Zoho branding) to the table cell and the Zoho Invoice section.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F2",
+            "quote": "Standard ... adds bank feeds, progress invoicing, sales tax tracking and API access.",
+            "problem": "Acronym API used without definition on first use in the Zoho Books section.",
+            "fix": "Write 'application programming interface (API)' or drop the term.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-16T16:49:52+00:00"
+      }
     },
     {
       "vendor": "Wave",
@@ -1503,10 +1537,65 @@
           "at": "2026-11-15T16:55:03+00:00",
           "status": "eligible",
           "note": "qualified: HTTP 200 verified & ranked by search demand"
+        },
+        {
+          "at": "2026-11-16T16:39:08+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-16"
+        },
+        {
+          "at": "2026-11-16T16:49:52+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "eligible",
-      "updatedAt": "2026-11-15T16:55:03+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-16T16:39:08+00:00",
+      "claimedOn": "2026-11-16",
+      "attempts": 1,
+      "lastNextAt": "2026-11-16T16:39:08+00:00",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "weighing a feature, not only a price",
+            "problem": "Compressed comma-antithesis (\"X, not Y\") is a single-instance ban in _anti-ai-language.md.",
+            "fix": "Rewrite as a plain sentence: 'a household that mainly wants someone else to cancel services is weighing a feature as well as a price.'",
+            "hard_blocker": false
+          },
+          {
+            "id": "F2",
+            "quote": "write down current monthly bills and the services that need handling before switching.",
+            "problem": "Presupposes the reader already uses Rocket Money ('before switching'), and reads as advice; the page rules say list products, give no advice.",
+            "fix": "Reword neutrally: 'The comparison depends on whether a saved bill covers the subscription fee.' and drop 'before switching'.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F3",
+            "quote": "FICO Score 2 from Experian ... FDIC-insured account ... Rowan, the AI assistant",
+            "problem": "FICO, FDIC and AI are not defined on first use.",
+            "fix": "Expand: Fair Isaac Corporation (FICO), Federal Deposit Insurance Corporation (FDIC), artificial intelligence (AI).",
+            "hard_blocker": false
+          },
+          {
+            "id": "F4",
+            "quote": "Premium adds cancellation on your behalf, unlimited budgets, ... with no public Premium price on the pages checked.",
+            "problem": "Subject's Premium price cell states absence of data in hedged form; the rule's accepted wording for an unpublished price is 'Quote-based; no public price' (or state plainly 'Premium price not published'). Verified: rocketmoney.com/faq lists only Premium+ at $15/month; /pricing returns 404.",
+            "fix": "Use 'Premium: no public price' as a plain fact in the cell and FAQ.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F5",
+            "quote": "Copilot Money: \"One plan with no tiers: $109 billed yearly, shown as $9 per month\"",
+            "problem": "Copilot's pricing page has a Yearly/Monthly toggle; the page presents only the yearly price and calls it the single plan, with no monthly figure.",
+            "fix": "State that a monthly option exists but its price was not shown in the fetched page, or omit 'single price' framing.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-16T16:49:52+00:00"
+      }
     },
     {
       "vendor": "Empower",
@@ -1563,10 +1652,72 @@
           "at": "2026-11-15T16:55:03+00:00",
           "status": "eligible",
           "note": "qualified: HTTP 200 verified & ranked by search demand"
+        },
+        {
+          "at": "2026-11-16T16:39:08+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-16"
+        },
+        {
+          "at": "2026-11-16T16:49:52+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "eligible",
-      "updatedAt": "2026-11-15T16:55:03+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-16T16:39:08+00:00",
+      "claimedOn": "2026-11-16",
+      "attempts": 1,
+      "lastNextAt": "2026-11-16T16:39:08+00:00",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "On the headline numbers Bizee Standard costs $50 less than LegalZoom Pro and Premium costs $100 more than LegalZoom Premium.",
+            "problem": "Arithmetic error. Bizee Premium is $299 + state fee and LegalZoom Premium LLC is $299 + state fee (same base; both $399 with the $100 example). The difference is $0, not $100. Both prices verified on live pages.",
+            "fix": "Replace with 'Bizee Premium and LegalZoom Premium both list $299 before state fees.'",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "None of the six alternatives above sells wills, trusts and LLC formation together. / LegalZoom is the only provider here that lists wills, trusts and LLC formation together.",
+            "problem": "Contradicts the page's own Rocket Lawyer row and section: Rocket Lawyer lists unlimited legal documents plus a free first LLC/corporation/nonprofit registration ($99 after). Rocketlawyer.com/pricing confirms both. The 'only provider' claim is unsupported.",
+            "fix": "Rephrase to a verifiable fact, e.g. 'LegalZoom lists priced wills, living trusts and LLC formation as separate products on one site; Rocket Lawyer bundles documents and LLC registration in a membership.' Remove 'only provider'.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "This page lists products and their published prices; it is not legal advice.",
+            "problem": "A legal 'not advice' disclaimer sits in the intro (GATE Disclaimer placement: disclaimer-at-top).",
+            "fix": "Delete from the intro; keep the disclaimer as the page's final element only.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F4",
+            "quote": "Trust & Will's page does not state a couple price for these plans, so the couple comparison needs a check at checkout. / Check the price shown at checkout, along with the renewal terms for consultations, before comparing totals.",
+            "problem": "Unlinked directives to verify (unlinked-directive gate). Also the Trust & Will pricing page has an Individual/Couple toggle, so 'does not state a couple price' may be wrong.",
+            "fix": "Delete the directives or link the exact page (https://www.trustandwill.com/pricing is an external link not allowed; so state the fact only). Re-check the Couple toggle and state any price shown.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F5",
+            "quote": "Attorney support adds $299 to the Trust Plan. / Trust & Will lists attorney support separately at $299 on the Trust Plan",
+            "problem": "trustandwill.com/pricing shows 'Attorney Support +$299' under both the Trust Plan and the Will Plan columns; page says Trust Plan only.",
+            "fix": "Say attorney support adds $299 to either the Will Plan or the Trust Plan, and fix the $798 example wording accordingly.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F6",
+            "quote": "Trust & Will, Rocket Lawyer, FreeWill, ZenBusiness, Northwest Registered Agent and Bizee ... an LLC starts at $0 / ... Employer Identification Number (EIN)",
+            "problem": "LLC is never defined, and EIN is used in the ZenBusiness table row before its definition in the choose section.",
+            "fix": "Define 'limited liability company (LLC)' at first use in the intro and 'Employer Identification Number (EIN)' at first use in the table.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-16T16:49:52+00:00"
+      }
     },
     {
       "vendor": "MileIQ",

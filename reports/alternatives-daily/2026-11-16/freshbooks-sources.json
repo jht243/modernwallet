@@ -1,0 +1,15 @@
+{
+ "slug": "freshbooks",
+ "checked": "2026-11-16",
+ "method": "scripts/alternatives_daily/fetch_page.py (plain fetch); every price read from the vendor's own page on the check date",
+ "sources": [
+  {"product": "FreshBooks", "url": "https://www.freshbooks.com/pricing", "checked": "2026-11-16", "facts": "Lite $23, Plus $43, Premium $70 per month; 5/50/unlimited clients; Select quote-based; Team Members $11, Advanced Payments $20, Payroll $40 + $6 per user; card 2.9% + $0.30, ACH 1%; 80% off 4 months promo; 30-day trial"},
+  {"product": "Wave", "url": "https://www.waveapps.com/pricing", "checked": "2026-11-16", "facts": "Starter $0; Pro $19/month or $190/year; Starter card 2.9% + $0.60, Amex 3.4% + $0.60; Pro 2.9% + $0 (first 10 transactions per month); Wave Advisors from $149/month"},
+  {"product": "Zoho Invoice", "url": "https://www.zoho.com/us/invoice/pricing/", "checked": "2026-11-16", "facts": "$0 forever-free; up to two organizations; 24/5 email and voice support; no payment-processing price listed"},
+  {"product": "Zoho Books", "url": "https://www.zoho.com/us/books/pricing/", "checked": "2026-11-16", "facts": "Free $0 under $50K revenue, 1,000 invoices/year; Standard $20 monthly / $15 annual; Professional $50 / $40; per org; 14-day trial"},
+  {"product": "Xero", "url": "https://www.xero.com/us/pricing-plans/", "checked": "2026-11-16", "facts": "Early $27, Growing $59, Established $97; 80% off first 3 months; Early 20 invoices and 5 bills; Payroll via Gusto $36 + $6 per person"},
+  {"product": "Invoice Ninja", "url": "https://invoiceninja.com/pricing/", "checked": "2026-11-16", "facts": "Free $0 (5 clients); Pro $14/month; Enterprise $18 (1-2 users) to $300 (51-100 users); Premium Business from $280/year"},
+  {"product": "Bonsai", "url": "https://www.hellobonsai.com/pricing", "checked": "2026-11-16", "facts": "Per user/month annual: Basic $9, Essentials $19, Premium $29, Elite $49 (3 min); monthly: $15, $25, $39, $59"},
+  {"product": "Square Invoices", "url": "https://squareup.com/us/en/pricing", "checked": "2026-11-16", "facts": "Free $0, Plus $49, Premium $149 per location; invoice card 3.3% + 30c Free, 2.9% + 30c paid; ACH invoice 1% $1 min, $10 cap on paid tiers; manual entry 3.5% + 15c. Dedicated /invoices page returned 429, pricing page readable."}
+ ]
+}

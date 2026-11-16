@@ -48,6 +48,30 @@
         "venmo.com",
         "www.venmo.com"
       ]
+    },
+    {
+      "route": "/alternatives/rocket-money/",
+      "vendorHost": "rocketmoney.com",
+      "officialHosts": [
+        "rocketmoney.com",
+        "www.rocketmoney.com"
+      ]
+    },
+    {
+      "route": "/alternatives/legalzoom/",
+      "vendorHost": "legalzoom.com",
+      "officialHosts": [
+        "legalzoom.com",
+        "www.legalzoom.com"
+      ]
+    },
+    {
+      "route": "/alternatives/freshbooks/",
+      "vendorHost": "freshbooks.com",
+      "officialHosts": [
+        "freshbooks.com",
+        "www.freshbooks.com"
+      ]
     }
   ]
 }

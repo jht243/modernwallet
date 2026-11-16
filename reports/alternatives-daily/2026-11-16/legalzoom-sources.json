@@ -1,0 +1,64 @@
+[
+  {
+    "product": "LegalZoom",
+    "url": "https://www.legalzoom.com/",
+    "checkedOn": "2026-11-16"
+  },
+  {
+    "product": "LegalZoom (Will)",
+    "url": "https://www.legalzoom.com/personal/estate-planning/last-will-and-testament-overview.html",
+    "checkedOn": "2026-11-16"
+  },
+  {
+    "product": "LegalZoom (Living Trust)",
+    "url": "https://www.legalzoom.com/personal/estate-planning/living-trust-overview.html",
+    "checkedOn": "2026-11-16"
+  },
+  {
+    "product": "LegalZoom (LLC)",
+    "url": "https://www.legalzoom.com/business/business-formation/llc-overview.html",
+    "checkedOn": "2026-11-16"
+  },
+  {
+    "product": "Trust & Will",
+    "url": "https://www.trustandwill.com/pricing",
+    "checkedOn": "2026-11-16"
+  },
+  {
+    "product": "Rocket Lawyer",
+    "url": "https://www.rocketlawyer.com/pricing",
+    "checkedOn": "2026-11-16"
+  },
+  {
+    "product": "FreeWill",
+    "url": "https://www.freewill.com/",
+    "checkedOn": "2026-11-16"
+  },
+  {
+    "product": "ZenBusiness",
+    "url": "https://www.zenbusiness.com/pricing/",
+    "checkedOn": "2026-11-16"
+  },
+  {
+    "product": "Northwest Registered Agent",
+    "url": "https://www.northwestregisteredagent.com/llc",
+    "checkedOn": "2026-11-16"
+  },
+  {
+    "product": "Bizee",
+    "url": "https://bizee.com/pricing",
+    "checkedOn": "2026-11-16"
+  },
+  {
+    "product": "Nolo WillMaker (unreadable, not listed)",
+    "url": "https://www.nolo.com/products/quicken-willmaker-plus.html",
+    "checkedOn": "2026-11-16",
+    "note": "403 on fetch"
+  },
+  {
+    "product": "Willing (unreadable, not listed)",
+    "url": "https://willing.com/pricing",
+    "checkedOn": "2026-11-16",
+    "note": "403 on fetch"
+  }
+]
