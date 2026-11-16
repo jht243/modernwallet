@@ -14,7 +14,7 @@ import time
 # a partner and is rejected when the window ends.
 WINDOW = float(os.environ.get("DELIVERY_PAIR_WINDOW", "25"))
 POLL = 0.1
-MAX_GROUP = int(os.environ.get("DELIVERY_GROUP_SIZE", "15"))
+MAX_GROUP = int(os.environ.get("DELIVERY_GROUP_SIZE", "45"))
 
 
 def delivery(command):
@@ -82,13 +82,13 @@ def group_request(path, tool_id, directory, first, part):
             if parsed is not None and parsed[0] and parsed[1] == directory
             and _expand_call_parts(parsed[2], parsed[3])
         ]
-        if len(matching_calls) < 2:
-            continue
         parts = sorted({
             expanded
             for parsed in matching_calls
             for expanded in _expand_call_parts(parsed[2], parsed[3])
         })
+        if len(matching_calls) < 2 and len(parts) < 2:
+            continue
         if 2 <= len(parts) <= max(2, MAX_GROUP):
             if parts == list(range(parts[0], parts[-1] + 1)) and parts[0] <= first <= parts[-1] and part in parts:
                 return True

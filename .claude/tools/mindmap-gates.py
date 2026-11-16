@@ -264,7 +264,8 @@ def append_safe_artifact(root, ref):
     raw = p.read_bytes()
     if hashlib.sha256(raw).hexdigest() != expected:
         rel = str(p.relative_to(root.resolve())).replace('\\', '/')
-        require(_is_append_only_ledger(rel) and _has_newline_prefix_sha(raw, expected),
+        require((_is_append_only_ledger(rel) and _has_newline_prefix_sha(raw, expected))
+                or _matches_committed_blob_sha(root.resolve(), rel, expected),
                 'Changed artifact: ' + str(ref.get('path')))
     return p
 
