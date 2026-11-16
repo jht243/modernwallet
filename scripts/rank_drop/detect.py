@@ -331,7 +331,7 @@ def detect(gsc, site, base_url, ga4, prop, end: date, min_page_clicks_d: float =
     C2 = index(gsc_rows(gsc, site, half + timedelta(days=1), end, dims))
     BU = peak_positions(gsc, site, base_start, dims, "usa")
     CU = index(gsc_rows(gsc, site, cur_start, end, dims, "usa"))
-    if not B or not C:
+    if not B and not C:
         raise HardFail(14, f"GSC returned an empty page×query set (baseline {len(B)}, current {len(C)})")
 
     # who else on the site holds each query now (cannibalization check)
