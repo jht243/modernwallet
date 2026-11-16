@@ -21,6 +21,16 @@
       "route": "/compare/chase-freedom-flex-vs-unlimited",
       "updatedAt": "2026-11-16T08:34:22Z"
     },
+    "0611f583fb6b4a4f08ec0665cb5945e9ceaafd526776efd37b043e2a34c2cff2": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "2026-11-16-xtrends",
+      "previousJobs": [],
+      "repairs": [],
+      "route": "/guides/google-wallet-gemini-bank-connection",
+      "updatedAt": "2026-11-16T17:16:28Z"
+    },
     "1083fe477237fcf2d6717a50af5b6d027480d5b7cc12ab586af0676726069536": {
       "generated": [
         "full"
