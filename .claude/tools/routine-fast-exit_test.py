@@ -170,6 +170,30 @@ class RoutineFastExitTests(unittest.TestCase):
         res_3strike = self.mod.check_page_quality_pull(self.root, site='https://example.com', pages_json=pages, ledger_path=ledger)
         self.assertTrue(res_3strike['fastExit'])
 
+        # Real ga4_pull_24h.py schema uses {"top_pages": [{"page": "/...", ...}]} — must NOT false-fast-exit!
+        ledger.write_text('')
+        pages.write_text(json.dumps({
+            'property_id': '12345',
+            'data_date': '2026-11-16',
+            'source': 'ga4',
+            'top_pages': [
+                {'page': '/', 'views': 250, 'sessions': 210, 'avg_eng_s': 45, 'engagement_rate': 0.55, 'bounce_rate': 0.45},
+                {'page': '/guides/h1', 'views': 140, 'sessions': 120, 'avg_eng_s': 60, 'engagement_rate': 0.70, 'bounce_rate': 0.30, 'scrolled_pct': 0.65},
+                {'page': '/guides/h2', 'views': 130, 'sessions': 110, 'avg_eng_s': 58, 'engagement_rate': 0.68, 'bounce_rate': 0.32, 'scrolled_pct': 0.62},
+                {'page': '/guides/h3', 'views': 105, 'sessions': 90, 'avg_eng_s': 62, 'engagement_rate': 0.72, 'bounce_rate': 0.28, 'scrolled_pct': 0.70},
+                {'page': '/companies/weak-target', 'views': 88, 'sessions': 73, 'avg_eng_s': 0.3, 'engagement_rate': 0.05, 'bounce_rate': 0.95, 'scrolled_pct': 0.04},
+            ],
+        }))
+        res_real_schema = self.mod.check_page_quality_pull(self.root, site='https://example.com', pages_json=pages, ledger_path=ledger)
+        self.assertFalse(res_real_schema['fastExit'])
+        self.assertEqual([r['route'] for r in res_real_schema['eligible']], ['/companies/weak-target'])
+
+        res_ga4_real_schema = self.mod.check_ga4_cooldown(
+            self.root, skill='ga4-top-pages-pass-auto', site='https://example.com', pages_json=pages, ledger_path=ledger
+        )
+        self.assertFalse(res_ga4_real_schema['fastExit'])
+        self.assertIn('/companies/weak-target', res_ga4_real_schema['eligibleRoutes'])
+
     def test_trend_research_pack_never_skips_when_wide_view_has_findings(self):
         rmd = self.root / 'reports/trend-pass/2026-11-15.research.md'
         rmd.parent.mkdir(parents=True, exist_ok=True)
