@@ -1,0 +1,48 @@
+{
+ "reviewer": "mindmap-auditor-1",
+ "verdict": "PASS",
+ "packetSha256": "2d64b09da2f5e7b9bbea3fedeefbf465c6c4d7b40f17d38441858079d3ec3b6e",
+ "usefulness": {
+  "status": "PASS",
+  "evidence": "The new first section gives a sourced response plan for a premium jump: rerun at realistic income, locate the 400% FPL line, compare bronze and silver with CSRs, catastrophic limits and the Dec 15 deadline."
+ },
+ "sourceAndAssumptions": {
+  "status": "PASS",
+  "evidence": "Basis reported: every figure traces to saved KFF and HealthCare.gov captures; the 2026 deductible figure is caveated as not a 2027 forecast."
+ },
+ "conditionsAndCounterexample": {
+  "status": "PASS",
+  "evidence": "A cheaper plan cannot restore a credit you do not qualify for, state exchanges may set different dates, and the 400% cliff is stated conditionally on KFF's description of 2027 rules."
+ },
+ "renderedConsistency": {
+  "status": "PASS",
+  "evidence": "New section agrees with the existing FPL table, the formula and the does-not-apply section; markdown asterisks are gone in the round 2 render."
+ },
+ "localExclusions": {
+  "status": "PASS",
+  "evidence": "Educational insurance information; no testing, treatment or professional-service claim."
+ },
+ "presentationReview": {
+  "status": "PASS",
+  "evidence": "A short ordered list ahead of the existing calculator keeps the answer readable without interaction and points to the tool."
+ },
+ "caseUseReview": {
+  "status": "PASS",
+  "evidence": "cases.json had only unrelated records; no case or client claim is made."
+ },
+ "requestCoverage": [
+  {
+   "requirementId": "REQ-2",
+   "status": "PASS",
+   "evidence": "Rendered route aca-subsidy-calculator delivers its action's share of REQ-2: verified sections, tables and links in the round 2 snapshot against the saved request acceptance text."
+  }
+ ],
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-16-xtrends-run/audit/preview-snapshot-r2.json",
+  "sha256": "0e04c7e5142efd2587492950cecd2bd4eb8fbb4d32bbfd5190453c2d7c1d76a6"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-16-xtrends-run/audit/review-r2.json",
+  "sha256": "a3dc6f8a7c24e5a83e3f193fe9331888bdb3f5ac5903abac194024fdc7d950e6"
+ }
+}

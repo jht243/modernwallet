@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "jobId": "2026-11-16-xtrends",
+  "subBatchingRecommended": true,
+  "batchCount": 2,
+  "totalNewPages": 2,
+  "totalRoutes": 9,
+  "disjointPartition": true,
+  "batches": [
+    {
+      "batchIndex": 1,
+      "label": "batch-1",
+      "actionIds": [
+        "A1",
+        "A6"
+      ],
+      "newPageRoutes": [
+        "/guides/retirement-contribution-limits-2027",
+        "/guides/google-wallet-gemini-bank-connection"
+      ],
+      "existingRoutes": [
+        "/guides/401k-contribution-limits-2026",
+        "/guides/ira-contribution-limits-2026",
+        "/compare/tsp-vs-401k",
+        "/budget/aca-subsidy-calculator/",
+        "/roundup/best-budgeting-apps",
+        "/retirement/401k-calculator/"
+      ],
+      "routes": [
+        "/guides/retirement-contribution-limits-2027",
+        "/guides/google-wallet-gemini-bank-connection",
+        "/guides/401k-contribution-limits-2026",
+        "/guides/ira-contribution-limits-2026",
+        "/compare/tsp-vs-401k",
+        "/budget/aca-subsidy-calculator/",
+        "/roundup/best-budgeting-apps",
+        "/retirement/401k-calculator/"
+      ],
+      "routeFlags": "--route /guides/retirement-contribution-limits-2027 --route /guides/google-wallet-gemini-bank-connection --route /guides/401k-contribution-limits-2026 --route /guides/ira-contribution-limits-2026 --route /compare/tsp-vs-401k --route /budget/aca-subsidy-calculator/ --route /roundup/best-budgeting-apps --route /retirement/401k-calculator/"
+    },
+    {
+      "batchIndex": 2,
+      "label": "batch-2",
+      "actionIds": [],
+      "newPageRoutes": [],
+      "existingRoutes": [
+        "/budget/monthly-budget-calculator"
+      ],
+      "routes": [
+        "/budget/monthly-budget-calculator"
+      ],
+      "routeFlags": "--route /budget/monthly-budget-calculator"
+    }
+  ]
+}

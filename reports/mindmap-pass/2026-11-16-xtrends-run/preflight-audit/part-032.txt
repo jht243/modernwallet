@@ -1,0 +1,135 @@
+3e87d129a7de1cbe156d8ffa9b34598605e7533396867fa306f8bb82b6a3a",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/audit/preview-snapshot.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/15c81bec9e01366baad9c023f4f67e4fad0d0d495efec5d9a39b07441d33d0cc/readiness.md",
+      "sha256": "15c81bec9e01366baad9c023f4f67e4fad0d0d495efec5d9a39b07441d33d0cc",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/17177e8b5fb2a3ed118030ee4c64ecc46b097be15f06778fc22d55cacfde56de/chart-review.json",
+      "sha256": "17177e8b5fb2a3ed118030ee4c64ecc46b097be15f06778fc22d55cacfde56de",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/ca24a823d3c1b30dc3bcbc58bd24252286b47479c69a6a179680164de983ca3e/2026-11-16.md",
+      "sha256": "ca24a823d3c1b30dc3bcbc58bd24252286b47479c69a6a179680164de983ca3e",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/x-trends/2026-11-16.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/7910f20cf01fd0b852addf3da132b0f2b4957949a8cba50e6d3400f7273ce0cc/coverage-lookup.txt",
+      "sha256": "7910f20cf01fd0b852addf3da132b0f2b4957949a8cba50e6d3400f7273ce0cc",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/8a48d0e90f78219536cc7c3817e98781ea530cd38b4cfd3df8c791aa0c7f102d/autocomplete-2027-limits.csv",
+      "sha256": "8a48d0e90f78219536cc7c3817e98781ea530cd38b4cfd3df8c791aa0c7f102d",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/autocomplete-2027-limits.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/e0fe2ff6a5b6f00e3618c481d1eed2fd00a752e800053e7d115cf7834ef8369f/irs-ir-2026-136.txt",
+      "sha256": "e0fe2ff6a5b6f00e3618c481d1eed2fd00a752e800053e7d115cf7834ef8369f",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/irs-ir-2026-136.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/c30cdc5c7f589b8e679b039d7e868203206f4cf77e18688517337b8f5babfd5f/irs-notice-2026-66.txt",
+      "sha256": "c30cdc5c7f589b8e679b039d7e868203206f4cf77e18688517337b8f5babfd5f",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/irs-notice-2026-66.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/a839b1a99857c81d6d509b42ebb3fd63edd3975deabdb2c0baf88a62c2b3d7e9/kff-2026-what-we-know.txt",
+      "sha256": "a839b1a99857c81d6d509b42ebb3fd63edd3975deabdb2c0baf88a62c2b3d7e9",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/kff-2026-what-we-know.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/d449587431cc2d9c38ca5c72f80f634742eb156ec7999b8ae89adc21874ed72c/kff-2027-oe.txt",
+      "sha256": "d449587431cc2d9c38ca5c72f80f634742eb156ec7999b8ae89adc21874ed72c",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/kff-2027-oe.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/9081fed0f7a4cc9de49ecfd5b431379a4e90debfaababc48d0110751732cded5/healthcare-gov-dates.txt",
+      "sha256": "9081fed0f7a4cc9de49ecfd5b431379a4e90debfaababc48d0110751732cded5",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/healthcare-gov-dates.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/05a5278db883256d4b227edb2fa50bf70c24b365d47d164407b8ed08ae31faa7/gemini-connected-apps-help.txt",
+      "sha256": "05a5278db883256d4b227edb2fa50bf70c24b365d47d164407b8ed08ae31faa7",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/gemini-connected-apps-help.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/11dc7925399506b4219bd493cbd1e7cb97f2b4d6664d6f2060d8633d54c5182b/plaid-consumers.txt",
+      "sha256": "11dc7925399506b4219bd493cbd1e7cb97f2b4d6664d6f2060d8633d54c5182b",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/plaid-consumers.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/34e9ab219bc4f72b8c64d9eaed969d80235d8cb41f4b6b01b8ebd4e5005c9b4a/google-wallet-gemini.txt",
+      "sha256": "34e9ab219bc4f72b8c64d9eaed969d80235d8cb41f4b6b01b8ebd4e5005c9b4a",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/google-wallet-gemini.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/4c63d3b79690a2a0d6b453314bb5593df1178c82d2244cef70c2cac78669a6e2/gemini-help-wallet.txt",
+      "sha256": "4c63d3b79690a2a0d6b453314bb5593df1178c82d2244cef70c2cac78669a6e2",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/gemini-help-wallet.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/c04d0f0571158eb6b62433e1016651109e3acbfc575188225687279a38f47331/googlepay-plaid-help.txt",
+      "sha256": "c04d0f0571158eb6b62433e1016651109e3acbfc575188225687279a38f47331",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/googlepay-plaid-help.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/06481ff0f6174075ff06f07d39df1e2af37c2e92d4195713c455727a965137dc/plaid-blog.txt",
+      "sha256": "06481ff0f6174075ff06f07d39df1e2af37c2e92d4195713c455727a965137dc",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/plaid-blog.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/202

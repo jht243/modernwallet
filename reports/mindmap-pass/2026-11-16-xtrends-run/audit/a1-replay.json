@@ -1,0 +1,38 @@
+{
+  "counterexample": "A worker paid every other Friday can receive 27 paychecks in a calendar year; the 26-period figure then overshoots the cap by one paycheck, and the 27-period figure applies.",
+  "deltas_vs_2026": {
+    "catchup_50": "500",
+    "catchup_60_63": "500",
+    "deferral": "1000",
+    "total_60_63": "1500"
+  },
+  "per_period": {
+    "age_50_plus": {
+      "biweekly_26": "1307.69",
+      "biweekly_27_paychecks": "1259.26",
+      "monthly_12": "2833.33",
+      "semimonthly_24": "1416.67",
+      "weekly_52": "653.85"
+    },
+    "age_60_to_63": {
+      "biweekly_26": "1432.69",
+      "biweekly_27_paychecks": "1379.63",
+      "monthly_12": "3104.17",
+      "semimonthly_24": "1552.08",
+      "weekly_52": "716.35"
+    },
+    "under_50": {
+      "biweekly_26": "980.77",
+      "biweekly_27_paychecks": "944.44",
+      "monthly_12": "2125.00",
+      "semimonthly_24": "1062.50",
+      "weekly_52": "490.38"
+    }
+  },
+  "totals_2027": {
+    "age_50_plus": "34000",
+    "age_60_to_63": "37250",
+    "under_50": "25500"
+  },
+  "units": "US dollars per calendar year (totals) and per pay period (schedules)"
+}

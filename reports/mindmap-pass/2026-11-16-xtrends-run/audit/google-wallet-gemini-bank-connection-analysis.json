@@ -1,0 +1,48 @@
+{
+ "reviewer": "mindmap-auditor-1",
+ "verdict": "PASS",
+ "packetSha256": "dc2e9a94e31d152be40a1e3b2149dcc1b1ccfce61c81aa0a086c61ec6c796921",
+ "usefulness": {
+  "status": "PASS",
+  "evidence": "Answers whether to connect, what Gemini can read and cannot do, what Google and Plaid store, who is eligible and how to turn it off and delete data, now including human review and training disclosures."
+ },
+ "sourceAndAssumptions": {
+  "status": "PASS",
+  "evidence": "Basis reported: Google and Plaid pages saved verbatim, including gemini-connected-apps-data.txt; unanswered retention and Plaid post-unlink questions are disclosed rather than assumed."
+ },
+ "conditionsAndCounterexample": {
+  "status": "PASS",
+  "evidence": "Counterexample from Google's Connected Apps data page (human review, training with Keep Activity on) is incorporated; the omitted nuance that Wallet data is not trained on directly is not contradicted."
+ },
+ "renderedConsistency": {
+  "status": "PASS",
+  "evidence": "Intro, Privacy Trade-Offs, safety FAQ and Sources agree on the privacy points; read-only repetition is an advisory only."
+ },
+ "localExclusions": {
+  "status": "PASS",
+  "evidence": "Consumer privacy guide; no testing claim, no legal or medical advice."
+ },
+ "presentationReview": {
+  "status": "PASS",
+  "evidence": "A capability table and numbered turn-off steps suit finite facts; both render plainly with no interaction needed."
+ },
+ "caseUseReview": {
+  "status": "PASS",
+  "evidence": "cases.json had only unrelated records; no case or client claim is made."
+ },
+ "requestCoverage": [
+  {
+   "requirementId": "REQ-3",
+   "status": "PASS",
+   "evidence": "Rendered route google-wallet-gemini-bank-connection delivers its action's share of REQ-3: verified sections, tables and links in the round 2 snapshot against the saved request acceptance text."
+  }
+ ],
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-16-xtrends-run/audit/preview-snapshot-r2.json",
+  "sha256": "0e04c7e5142efd2587492950cecd2bd4eb8fbb4d32bbfd5190453c2d7c1d76a6"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-16-xtrends-run/audit/review-r2.json",
+  "sha256": "a3dc6f8a7c24e5a83e3f193fe9331888bdb3f5ac5903abac194024fdc7d950e6"
+ }
+}

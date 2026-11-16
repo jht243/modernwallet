@@ -1,0 +1,9 @@
+FINDING 1 (factual, sections[0].body table row)
+Quote: "| Roth catch-up wage threshold used for the following year's designation | Not published | $155,000 | Not published |"
+Defect: The row contradicts the closed fact list. The Notice 2026-66 sentence says the Roth catch-up wage threshold "is increased from $150,000 to $155,000." The earlier claim-check pass wrongly replaced $150,000 and the change with "Not published".
+Fix: restore the row to: | Roth catch-up wage threshold (decides whether next-year catch-ups must be Roth) | $150,000 | $155,000 | Up $5,000 |
+
+FINDING 2 (meta-commentary, sections[3].body paragraph beginning "The unchanged $0 to $10,000 ranges")
+Quote: "The unchanged $0 to $10,000 ranges for married taxpayers filing separately also deserve attention when comparing years. Their presence in both columns is intentional: the IRS says the Traditional IRA deduction range is not adjusted for cost of living, and the listed Roth IRA range is unchanged."
+Defect: Narrates the table instead of stating a fact ("deserve attention", "is intentional").
+Fix: replace those two sentences with the plain fact: "The $0 to $10,000 ranges for married taxpayers filing separately are unchanged because the IRS says they are not adjusted for cost of living." Keep the sentence that links the 2026 IRA limits guide.

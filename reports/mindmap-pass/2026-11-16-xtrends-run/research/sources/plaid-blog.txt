@@ -1,0 +1,128 @@
+URL: https://plaid.com/blog/google-wallet-gemini-plaid/
+HTTP: 200 https://plaid.com/blog/google-wallet-gemini-plaid/
+Retrieved UTC: 2026-11-16T16:52:37.192598Z
+
+Plaid is powering personalized financial insights with Google Wallet in the Gemini app | Plaid
+Skip to main content
+Products
+Solutions
+Developers
+Resources
+Pricing
+Log in
+Contact sales
+November 13, 2026
+open finance
+artificial intelligence
+partnerships
+personal finance
+Plaid is powering personalized financial insights with Google Wallet in the Gemini app
+Kathleen McGuirk
+AI GTM and Partnerships Lead
+Starting today, Plaid is helping power a new personal finance experience in the Google Gemini app, giving people answers based on their own finances, goals, and needs. It’s rolling out now for Gemini app users in the U.S.
+People bring important financial questions to AI: Can we review my spending from last quarter? What subscriptions am I still paying for, and did any of them go up in price this year? How much did I spend on gifts and travel last year? These answers can only go so far without an understanding of someone’s actual financial situation
+Plaid helps close that gap by powering account linking in Google Wallet to inform responses with a person’s spending habits. People can choose to link their bank accounts, credit cards, loans and investment accounts to Google Wallet through Plaid for deeper insights. With that context, Gemini can turn general guidance into responses built on someone’s financial picture, whether that’s visualizing spending, finding places to save, or planning for a major milestone.
+Plaid’s
+State of Intelligent Finance report
+found that 55% of people used AI for a money-related task in the past year. Among those users, 86% say it helps them better understand money.
+From general guidance to personal answers
+Financial guidance is rarely one-size-fits-all. The most helpful answer depends on someone’s income, spending, accounts, priorities, and stage of life. Connecting an account lets someone see where their money goes and identify changes that fit their circumstances.
+Personal Intelligence in Gemini securely connects information from apps people use, like Gmail, Photos, YouTube, and Search, to make responses more tailored and helpful. Google Wallet is now rolling out as a connected app, bringing financial context into the mix.
+Connecting accounts is always the person’s choice. People can turn the Wallet connection on or off at any time in Personal Intelligence settings, and Gemini has read-only access: it cannot move, manage, or invest their money. People can also manage their Plaid connections with
+Plaid Portal
+.
+A new way to deliver financial guidance
+AI is expanding where intelligent financial experiences can happen. Banks and fintechs are bringing AI into the products people rely on, while experiences like Gemini create new ways for people to understand and interact with their money.
+That creates an enormous opportunity across the financial ecosystem. As AI becomes another interface for finance, people will increasingly expect experiences that understand their financial context and help them take the next step, wherever they choose to manage their money. In fact,
+more than half of Americans
+say managing money without AI will soon feel outdated.
+Plaid supports this shift by giving banks, fintechs, and AI platforms the financial context and intelligence to build better experiences. We’re proud to bring that foundation to Gemini, helping more people get useful answers when they need them.
+Products
+Auth
+Identity
+Balance
+Signal
+Transfer
+Identity Verification
+Monitor
+Transactions
+Investments
+Liabilities
+Enrich
+Assets
+Income
+Underwriting
+Plaid Link
+Layer
+Investments Move
+Protect
+Cash Advance Index
+LendScore
+Guarantee
+Database Auth
+About us
+Company
+Careers
+Contact
+Partners
+Press
+Safety
+Legal
+Use cases
+AI companies
+Auto
+Banks & credit unions
+Billing & recurring payments
+Business financial management
+Consumer lending
+Earned wage access
+Fraud & risk prevention
+Gaming
+Government & public sector
+Healthcare
+Inbound bank payments
+Insurance
+KYC & AML compliance
+Mortgage
+Onboarding & identity verification
+Open finance
+Outbound bank payments
+Personal financial management
+Platforms & marketplaces
+Property management
+For consumers
+Troubleshoot account connection
+Trust and safety
+How it works
+Plaid Portal
+Delete my data
+End User Privacy Policy
+Biometric Policy
+FAQs
+Plaid Check Consumer Help Center
+Resources
+Pricing
+Global coverage
+Plaid Blog
+Industry resources
+Annual conference
+Customer stories
+Intelligent finance
+Developers
+Quickstart
+API documentation
+Libraries
+GitHub
+Product demos
+For financial institutions
+Open Finance Solution
+Core Exchange
+Permissions Manager
+App Directory
+©
+2026
+Plaid Inc.
+Choose...
+United States
+United Kingdom
+European Union

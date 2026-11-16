@@ -1,0 +1,49 @@
+{
+ "reviewer": "mindmap-auditor-1",
+ "verdict": "PASS",
+ "packetSha256": "ddaf528d1006f1a4f072fb2842502032f5cbd5009dbba505b9ab2649db7965e3",
+ "usefulness": {
+  "status": "PASS",
+  "evidence": "Gives the reader the 2027 IRS limits, 2026 deltas, the 60 to 63 total the IRS does not publish, and per-paycheck amounts for 26, 24, 12, 52 and 27-pay-period calendars; decides what to enter in payroll."
+ },
+ "sourceAndAssumptions": {
+  "status": "PASS",
+  "evidence": "Inputs are IR-2026-136 and Notice 2026-66 figures saved verbatim; only sums and divisions are ours, labelled 'by our calculation' with the divisors shown on the page."
+ },
+ "conditionsAndCounterexample": {
+  "status": "PASS",
+  "evidence": "Plan caps below the legal limit, plans without catch-up or Roth, and 27-paycheck biweekly calendars are stated and the 27 case ($944.44) is computed and shown."
+ },
+ "renderedConsistency": {
+  "status": "PASS",
+  "evidence": "Rendered table, per-paycheck table, FAQ and Our Takeaway agree on $25,500, $34,000, $37,250 and the conditions; round 2 render has no literal markdown."
+ },
+ "localExclusions": {
+  "status": "PASS",
+  "evidence": "Retirement contribution limits are not within section G testing; no tested label; no medical or professional-service claims."
+ },
+ "presentationReview": {
+  "status": "PASS",
+  "evidence": "Finite IRS figures suit tables over a calculator, as the approved presentation says; tables are readable without interaction, with a pointer to the 401(k) calculator."
+ },
+ "caseUseReview": {
+  "status": "PASS",
+  "evidence": "cases.json returned only unrelated Layer3Labs records; no client or case claim is made, which matches caseDecisions."
+ },
+ "requestCoverage": [
+  {
+   "requirementId": "REQ-1",
+   "status": "PASS",
+   "evidence": "Rendered route retirement-contribution-limits-2027 delivers its action's share of REQ-1: verified sections, tables and links in the round 2 snapshot against the saved request acceptance text."
+  }
+ ],
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-16-xtrends-run/audit/preview-snapshot-r2.json",
+  "sha256": "0e04c7e5142efd2587492950cecd2bd4eb8fbb4d32bbfd5190453c2d7c1d76a6"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-16-xtrends-run/audit/review-r2.json",
+  "sha256": "a3dc6f8a7c24e5a83e3f193fe9331888bdb3f5ac5903abac194024fdc7d950e6"
+ },
+ "replaySha256": "011f861ac7c5ee119c614f2e522455f2005cec988115025a1ec19ed9300239ed"
+}

@@ -1,0 +1,103 @@
+coverage_lookup: 5 candidate(s) vs 834 repo pages / 849 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1205 past-chart lines
+
+### /guides/401k-contribution-limits-2027  — row - · create new content
+keyword: 2027 401k contribution limit; 2027 IRA limit; 2027 TSP limit
+reader question (new page intent): What are the 2027 401(k), IRA and TSP contribution limits?
+lookup terms: 401k contribution 2027 ira tsp   format cues: limits
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/ira-contribution-limits-2026  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.4 on contribution ira · same format: limits]
+    title: IRA Contribution Limits for 2026: The Complete Guide
+    desc:  The 2026 IRA contribution limit is $7,500 ($8,600 if you're 50+). See Roth income limits, deduction rules, and what happens if you contribute too much.
+- /guides/401k-contribution-limits-2026  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.4 on 401k contribution · same format: limits]
+    title: 401(k) Contribution Limits for 2026: The Complete Guide
+    desc:  The 2026 401(k) contribution limit is $24,500 ($32,500 if you're 50+, $35,750 if you're 60-63). See the Roth/Traditional combined cap and catch-up rules.
+- /compare/tsp-vs-401k  [PARENT PAGE · in sitemap · src/data/comparisons.ts · topic match 0.4 on 401k tsp]
+    title: TSP vs 401(k): Which Retirement Plan Wins in 2026?
+    desc:  TSP vs 401(k) compared: agency/employer match, fund menu, fees, and the unique G Fund — see which is better for federal employees and military.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'Maxxing HSA Benefits'). 'hsa triple tax advantage' 2,400/mo KD 37 CPC $1.11 (SEMRUSH us 2026-11-04, measured); supporting 'hsa contribution limits 2026' 33,100 KD 44, 'hsa t
+- 2026-11-04-tool-usage.md [exclusions] - Next in line (specs, cap of 3 builds, 2 built): depreciation-recapture-calculator, 1031-exchange-calculator (prior specs); Social Security withholding (W-4V) estimator; capital loss carryover calculator; Florida homest
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-10-search-gap.md [exclusions] - Not created: any new page (exact-intent page /compare/simple-ira-vs-401k exists).
+- 2026-11-13-trend-lane-c.md [exclusions] - roth or regular 401k: DROP, exists (/compare/roth-401k-vs-traditional-401k, /roth-vs-traditional-401k-calculator, /compare/401k-vs-roth-ira); wording-only gap.
+- 2026-11-15-trend-lane-c.md [exclusions] - 401k contribution roth vs traditional / roth or regular 401k: DROP, exist (/compare/roth-401k-vs-traditional-401k, /roth-vs-traditional-401k-calculator, /compare/401k-vs-roth-ira).
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/amex-india-membership-rewards-clawback  — row - · create new content
+keyword: amex india membership rewards points restored
+reader question (new page intent): Were my Amex India clawed-back points restored and should I transfer to Marriott?
+lookup terms: amex india membership reward clawback point restored   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-08-trend-lane-c.md [table] | 1 | source: coverage. Lens 2 cluster "Chase UR points value": 'chase ultimate rewards points value' 1,600/mo KD 27, 'value of chase ultimate rewards points' 1,600 KD 22 (dataforseo). GSC shows impressions for 'points t
+- 2026-10-08-trend-lane-c.md [table] | Chase UR points value | chase ultimate rewards points value; value of chase ultimate rewards points; chase ultimate rewards points to dollars; chase ultimate rewards points value calculator (110/mo) | intent mismatch (
+- 2026-10-10-trend-lane-c.md [exclusions] - "chase ultimate rewards points value" (est. 250-2500, NOT measured) — DROP: guides/chase-travel-portal-worth-it enriched 2026-10-08. Confirmed.
+- 2026-10-11-trend-lane-c.md [exclusions] - 529 vs brokerage account (210/mo), custodial account vs savings account (20/mo), chase ultimate rewards points to dollars (10/mo), are trump accounts a scam — DROP: dedicated pages exist.
+- 2026-10-12-trend-lane-c.md [exclusions] - chase ultimate rewards points to dollars conversion (10/mo), PAA "How much are 50,000 Chase points worth?" (est. 250, NOT measured) — DROP: /guides/chase-travel-portal-worth-it, ledger 2026-10-10/11; point-value figure
+Commits naming the topic: none
+Same run overlap: none
+
+### /budget/aca-subsidy-calculator  — row - · create new content
+keyword: aca premium doubled subsidy ended open enrollment
+reader question (new page intent): My ACA premium doubled and my subsidy ended: what do I do this open enrollment?
+lookup terms: aca subsidy premium doubled ended open enrollment   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /budget/aca-subsidy-calculator  [EXACT SLUG · in sitemap · src/data/benefits-spokes.ts · topic match 0.43 on aca subsidy premium · same format: calculator]
+    title: ACA Subsidy Calculator for 2027 Marketplace Premiums
+    desc:  Use the ACA subsidy calculator to estimate a 2027 federal premium credit from household income and plan premiums, with limits and the calculation shown.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-02-xtrends.md [table] | Lens 1 direct intent + fresh news. 'medicare part d 2027' 260/mo KD 0 (measured, SEMRUSH us 2026-11-02), 'medicare open enrollment 2027' 140/mo KD 45, 'medicare part d premiums 2027' 20/mo; 'part d premium increase 202
+- 2026-11-02-xtrends.md [exclusions] - Held, not rejected: ACA 2027 premiums (CMS fact sheet fetched did not contain the 13/11/16% figures or the Cigna exit; KFF ACA page not read)
+- 2026-11-04-aca-snap.md [table] | Direct/adjacent demand: aca subsidy calculator, 1,900/month, KD54 (SEMrushUS2026-11-04). lookup: no match. Dedicated reader-intent gap; no prior exact-slug commits at local/pinned published revisions. | Create /budget/
+- 2026-11-04-aca-snap.md [table] | Comparison discovery: aca vs medicaid, 390/month, KD37 (SEMrushUS2026-11-04). lookup: /compare/medicare-vs-medicaid/ — Medicare versus Medicaid, not Marketplace coverage. Dedicated reader-intent gap; no prior exact-slu
+- 2026-11-04-aca-snap.md [exclusions] - ACA alternatives: real completions exist but this run excludes insurer/short-term-plan rankings and unsupported recommendations that require separate coverage analysis. SNAP alternatives completions refer mostly to Lin
+- 2026-11-12-xtrends.md [table] | Lens 1 direct intent + news-driven (DOL promoted the final rule on X Nov 10 during open enrollment; Federal Register 2026-22306 published 2026-11-02). 'pbm fee disclosure' 500-5000/mo, 'dol pbm rule' 500-5000/mo, 'pbm 
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/google-wallet-gemini-bank-connection  — row - · create new content
+keyword: google wallet in gemini; connect bank accounts to gemini
+reader question (new page intent): Should I connect my bank accounts to Gemini through Google Wallet?
+lookup terms: google wallet gemini bank connection connect account   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-21-competitor.md [table] | 2 | /guides/bank-account-bonus-taxes | create new content | article | Are bank account sign-up bonuses taxable? |
+- 2026-10-21-competitor.md [exclusions] - Banking hub: skipped-duplicate (/bank/savings-accounts/). Credit card rates: skipped-duplicate (/guides/good-apr-for-credit-card/).
+- 2026-10-21-tool-usage.md [exclusions] - **`savings rate calculator` (1,000/mo, KD 19):** HOLD — keyword-intent flag. The SERP is banks' interest-rate tools and the PAA is about savings-account interest rates (5/6), not "what share of income am I saving", so 
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'Maxxing HSA Benefits'). 'hsa triple tax advantage' 2,400/mo KD 37 CPC $1.11 (SEMRUSH us 2026-11-04, measured); supporting 'hsa contribution limits 2026' 33,100 KD 44, 'hsa t
+- 2026-11-04-tool-usage.md [table] | 14 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage /mortgage/payoff-calculator/). 'biweekly mortgage calculator' 1,900/mo KD 29, 'bi weekly mortgage calculator' 720, 'biweekly mortga
+- 2026-11-12-xtrends.md [table] | Lens 1 direct intent + news-driven (DOL promoted the final rule on X Nov 10 during open enrollment; Federal Register 2026-22306 published 2026-11-02). 'pbm fee disclosure' 500-5000/mo, 'dol pbm rule' 500-5000/mo, 'pbm 
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/gta-6-boxed-edition-no-code-refund  — row - · create new content
+keyword: gta 6 box no code refund; gta 6 code already used
+reader question (new page intent): How do I get my money back if my GTA 6 box has no code or a used code?
+lookup terms: gta v6 boxed edition no code refund box already used   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-12-trend-lane-c.md [exclusions] - Lens 3 vs/alternatives/pricing: no uncovered comparison; nerdwallet is branded on a locked SERP and UTMA comparisons (ugma, 529, roth, trump account) already exist.
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent (tax calculator 1,911,300 combined, income tax calculator 110,000, federal income tax calculator 14,800, income tax estimator 49,500, tax estimator 18,100, tax percentage calculator 8,100;
+- 2026-11-15-keyword-gap.md [exclusions] - tax calculator / income tax calculator / federal income tax calculator / income tax estimator / tax estimator / tax percentage calculator: COVERED, no-addition (A3). /tax-bracket-calculator/ and /guides/how-much-tax-wi
+- 2026-11-16-comparison.md [table] | lookup: /alternatives/quickbooks - reader wants a list of alternatives, not this pairing. Lens 1 direct intent (brief candidate 2). "quickbooks vs freshbooks" 2,400/mo KD 28 SEMRUSH; no dedicated page on the site; SERP
+- 2026-11-16-comparison.md [table] | lookup: /compare/annuity-vs-cd and /compare/pension-vs-annuity - different pairings. Lens 1 direct intent (brief candidate 6). "annuity vs 401k" 1,600/mo KD 24 SEMRUSH; no page compares the two; SERP winnable. | Create
+Commits naming the topic: none
+Same run overlap: none
+

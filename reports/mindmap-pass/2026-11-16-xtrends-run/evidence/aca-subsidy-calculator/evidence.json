@@ -1,0 +1,108 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "writer-xtrends",
+  "route": "/budget/aca-subsidy-calculator/",
+  "readerQuestion": "My ACA premium doubled and my subsidy ended: what do I do this open enrollment? [verb-only - autocomplete question sweep run (38 suggestions, seed 'aca premium increase 2027'), 0 on-intent question completions: only year and location variants; PAA unread - no DataForSEO key]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/approval-manifest.json",
+      "sha256": "c1d1cd47877d867e8979c0fcf4e22481a42a500e8bc7d4292a5007b2c1bac905"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/chart-review.json",
+      "sha256": "17177e8b5fb2a3ed118030ee4c64ecc46b097be15f06778fc22d55cacfde56de"
+    },
+    "actionId": "A5"
+  },
+  "presentation": {
+    "medium": "text",
+    "placement": "New first section on the existing calculator page, before the formula",
+    "reason": "The reader needs an ordered response plan; the existing calculator already supplies the interactive part",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "The existing calculator on this page already takes income and premiums, so no new tool is built; the section is text that links readers to it"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static layout answers faster; no sequence or input changes to animate"
+    }
+  },
+  "basis": "reported",
+  "decisionGap": "The existing calculator page explains the credit formula, the 400% federal poverty level (FPL) line and uncapped repayment, but never tells a reader whose premium jumped what to do next: re-run the estimate, weigh bronze against silver, and meet the enrollment deadlines.",
+  "finding": "Re-run the estimate at a realistic 2027 income first. The credit is the benchmark silver premium minus an income-based contribution: below 400% of FPL you still get a credit, smaller than under the expired enhanced credits, and above 400% there is no credit by law. A cheaper or bronze plan lowers what you pay but trades premium for deductible (KFF: average deductible rose 37% in 2026 vs 2025 to $3,786 as enrollees moved to bronze) and lower-income enrollees can lose cost-sharing reductions by leaving silver. HealthCare.gov: enroll by December 15 for January 1 coverage, January 15 final deadline on that platform; state exchanges may differ.",
+  "conditions": "KFF figures are dated: average net premium payment +58% ($113 to $178 per month) and average deductible +37% are 2026 vs 2025; finalized 2027 benchmark silver premiums +13% on average (KFF, Nov 6, 2026). HealthCare.gov dates apply to HealthCare.gov; state exchanges can set different dates. Catastrophic plans are open only to a narrow group (under 30, coverage over 8.5% of income, hardship exemption) per KFF.",
+  "whatWouldChange": "A state exchange with different deadlines, a state subsidy program, income near 400% FPL or 250% FPL, a court or CMS change to catastrophic-plan eligibility, or new enhanced credits would change the advice.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-16-xtrends-run/evidence/aca-subsidy-calculator/cases.json",
+    "sha256": "b12deaccd3a22d05dea23cae9366ada72d881c2a2fa71b7567088cf6a98968e0"
+  },
+  "caseDecisions": "cases.json returned no relevant approved case; none used. No survey records.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/x-trends/2026-11-16.md",
+      "sha256": "ca24a823d3c1b30dc3bcbc58bd24252286b47479c69a6a179680164de983ca3e"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/coverage-lookup.txt",
+      "sha256": "7910f20cf01fd0b852addf3da132b0f2b4957949a8cba50e6d3400f7273ce0cc"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/kff-2026-what-we-know.txt",
+      "sha256": "a839b1a99857c81d6d509b42ebb3fd63edd3975deabdb2c0baf88a62c2b3d7e9"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/kff-2027-oe.txt",
+      "sha256": "d449587431cc2d9c38ca5c72f80f634742eb156ec7999b8ae89adc21874ed72c"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/healthcare-gov-dates.txt",
+      "sha256": "9081fed0f7a4cc9de49ecfd5b431379a4e90debfaababc48d0110751732cded5"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/autocomplete-aca-premium.csv",
+      "sha256": "221136fb28ace7f4dcd24dc230c7896964d4315e666d1a83fc7f9aa59e8ea156"
+    }
+  ],
+  "whyNoQuantitativeAnalysis": "The addition is a decision sequence grounded in KFF and HealthCare.gov statements and the page's own formula. The existing calculator already supplies the arithmetic, so no new numeric model is added.",
+  "reasoning": "Page formula: credit = lesser of plan premium or benchmark minus contribution, so a cheaper plan lowers the premium but does not restore a credit. KFF May 19, 2026: enhanced credits expired end of 2025; premiums paid +58% ($113 to $178); deductible +37% ($2,759 to $3,786) as enrollees moved from silver CSR plans to bronze; silver share fell 57% to 43%, bronze rose 30% to 40%; CSR example: average silver deductible $80 for a person at or below 150% FPL vs $5,304 for standard silver. KFF Nov 6, 2026: 2027 benchmark silver +13%; above 400% FPL no premium tax credit; repayment limits eliminated starting tax year 2026; catastrophic eligibility narrow. HealthCare.gov: Nov 1 open enrollment start, Dec 15 for Jan 1 coverage, Jan 15 end. State exchanges differ: stated as a caveat. Counterexample to 'switch to bronze': a lower-income enrollee at or below 250% FPL loses cost-sharing reductions by leaving silver.",
+  "caseUses": [],
+  "sources": [
+    {
+      "url": "https://www.kff.org/affordable-care-act/what-we-know-so-far-about-2026-aca-marketplace-enrollment-premiums-and-deductibles/",
+      "checkedAt": "2026-11-16",
+      "label": "KFF May 19 2026"
+    },
+    {
+      "url": "https://www.kff.org/affordable-care-act/9-things-to-watch-for-the-2027-aca-open-enrollment-period/",
+      "checkedAt": "2026-11-16",
+      "label": "KFF Nov 6 2026"
+    },
+    {
+      "url": "https://www.healthcare.gov/quick-guide/dates-and-deadlines/",
+      "checkedAt": "2026-11-16",
+      "label": "HealthCare.gov dates"
+    }
+  ],
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [
+      "kff-2026-what-we-know.txt",
+      "kff-2027-oe.txt",
+      "healthcare-gov-dates.txt"
+    ],
+    "scopeAndLimits": "Figures belong to KFF (named visibly and dated 2026 vs 2025, or 2027 benchmark) and HealthCare.gov. No testing claim. The X-post Wisconsin 22% and $1,800 figures are excluded.",
+    "publicMethod": "KFF and HealthCare.gov are linked at first mention; each figure carries its year.",
+    "placement": "New first section 'What to Do if Your ACA Premium Jumped' ahead of the formula section."
+  },
+  "findings": [
+    {
+      "label": "reported",
+      "text": "KFF premium +58%, deductible +37%, bronze share 40%, benchmark silver +13% for 2027; HealthCare.gov Dec 15 and Jan 15 dates"
+    }
+  ],
+  "exclusions": "No cheaper-plan-restores-a-credit claim. No state-specific dates. No medical/treatment claims. No TESTED labels.",
+  "unknowns": "Each state exchange's own deadlines; the reader's benchmark premium; PAA text (unread).",
+  "selectedMedium": "text section on existing calculator page",
+  "method": "Reported KFF and HealthCare.gov statements mapped to an ordered response plan, tested against the page's own formula as counterexample."
+}

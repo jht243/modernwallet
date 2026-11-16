@@ -1,0 +1,212 @@
+URL: https://support.google.com/gemini/answer/18112192
+HTTP: 200 https://support.google.com/gemini/answer/18112192
+Retrieved UTC: 2026-11-16T16:52:36.258759Z
+
+Get info & personalized insights from Google Wallet with Gemini Apps - Android phone & tablet - Gemini Apps Help
+Skip to main content
+Gemini Apps Help
+Sign in
+Google Help
+Help Center
+Community
+Gemini Apps
+Privacy Policy
+Terms of Service
+Submit feedback
+Send feedback on...
+This help content & information
+General Help Center experience
+Close
+Next
+Help Center
+Community
+Privacy Hub
+Gemini Apps
+Explore more Connected Apps & other integrated services
+Finance
+Get info & personalized insights from Google Wallet with Gemini Apps
+Get info & personalized insights from Google Wallet with Gemini Apps
+You can get information and personalized insights based on your saved info from Google Wallet in Gemini Apps. With the Google Wallet connected app, you can ask Gemini to:
+Provide insights based on transaction data from financial accounts you’ve linked with services like Plaid
+Summarize expense activity and get budgeting tips
+Check and summarize available rewards and special offers based on cards and passes in Google Wallet
+Important:
+We’re gradually making this feature available, so it might not be available to you just yet.
+Tip:
+You can manage your financial accounts linked to Google Wallet with Plaid at any time.
+Learn how to manage your linked accounts
+.
+What you need
+To connect Google Wallet to Gemini Apps, you must:
+Be 18 or over and in the US.
+Sign in to Gemini Apps with a personal Google Account.
+For now, this feature isn’t available if you sign in with a work or school Google Account.
+Learn how to sign in to Gemini Apps
+.
+Have
+Keep Activity
+on.
+Gemini Apps can’t connect to Google Wallet when this setting is off.
+Important:
+For now, the Google Wallet connected app is:
+Only available in English.
+Only available in the Gemini mobile app and the Gemini web app at
+gemini.google.com
+.
+Not available in certain features, like Gems or Gemini Live.
+Connect Google Wallet to Gemini Apps
+On your phone or tablet, open the Gemini mobile app
+or go to
+gemini.google.com
+.
+Ask Gemini to perform an action using information from Google Wallet. For example, ask for a boarding pass or budgeting tips.
+Tip:
+If Gemini doesn’t use the app, mention “Google Wallet” or add
+@Google Wallet
+to your prompt.
+If Google Wallet isn’t connected, you’ll get the option to connect it.
+Follow the on-screen instructions.
+Tips:
+You can disconnect Google Wallet from Gemini Apps anytime in your
+Connected Apps settings
+.
+If you’ve linked financial accounts to Google Wallet through services like Plaid, you can unlink them at any time in your
+Google Wallet settings
+.
+Example prompts
+Find the boarding pass for my flight to Chicago.
+Show me my airline loyalty numbers.
+How much did I spend on groceries last month?
+What Gemini Apps can’t do
+Gemini Apps can’t perform certain actions for you using the Google Wallet connected app, like:
+Make transactions using payment methods in your Google Wallet.
+Update or delete connected financial accounts.
+To do this, go to your
+Google Wallet settings
+.
+About your data
+Learn more about
+how your data is handled when Gemini works with Connected Apps
+.
+Related resources
+Gemini Apps Privacy Hub
+Connect your Google apps to personalize your Gemini experience
+About personalization with Connected Apps
+Android phone & tablet
+Computer
+iPhone & iPad
+More
+Need more help?
+Try these next steps:
+Post to the help community
+Get answers from community members
+true
+Finance
+1 of 1
+Get info & personalized insights from Google Wallet with Gemini Apps
+©2026 Google
+Privacy Policy
+Terms of Service
+Language
+Afrikaans‎
+azərbaycan‎
+bosanski‎
+català‎
+dansk‎
+Deutsch‎
+eesti‎
+English (United Kingdom)‎
+español‎
+español (Latinoamérica)‎
+euskara‎
+Filipino‎
+français‎
+français (Canada)‎
+galego‎
+hrvatski‎
+Indonesia‎
+isiZulu‎
+italiano‎
+Kiswahili‎
+latviešu‎
+lietuvių‎
+magyar‎
+Melayu‎
+Nederlands‎
+norsk‎
+o‘zbek‎
+polski‎
+português‎
+português (Brasil)‎
+română‎
+shqip‎
+slovenčina‎
+slovenščina‎
+suomi‎
+svenska‎
+Tiếng Việt‎
+Türkçe‎
+íslenska‎
+čeština‎
+Ελληνικά‎
+беларуская‎
+български‎
+македонски‎
+монгол‎
+русский‎
+српски‎
+українська‎
+қазақ тілі‎
+հայերեն‎
+‏
+עברית
+‏
+اردو
+‏
+العربية
+‏
+فارسی
+नेपाली‎
+मराठी‎
+हिन्दी‎
+অসমীয়া‎
+বাংলা‎
+ਪੰਜਾਬੀ‎
+ଓଡ଼ିଆ‎
+தமிழ்‎
+తెలుగు‎
+ไทย‎
+ລາວ‎
+ქართული‎
+አማርኛ‎
+ខ្មែរ‎
+中文（简体）‎
+中文（繁體）‎
+中文（香港）‎
+日本語‎
+한국어‎
+English‎
+Enable Dark Mode
+Send feedback on...
+This help content & information
+General Help Center experience
+Search
+Clear search
+Close search
+Google apps
+Main menu
+15638444694699788965
+true
+Search Help Center
+false
+true
+true
+true
+true
+true
+5295044
+false
+false
+false
+false
+false

@@ -1,0 +1,102 @@
+s-wholePageCoherence",
+      "status": "open",
+      "evidence": "Intro and the first body section ('2027 Contribution Limits at a Glance') both open with the same $25,500 and TSP/403(b)/457 statement, a restatement. Roth threshold row sits under a 2026/2027 column header that does not match the notice's 'threshold for 2026' wording."
+    },
+    {
+      "id": "AUD-A5-1",
+      "status": "open",
+      "evidence": "FIX /budget/aca-subsidy-calculator/ sections[0]: remove the ** pairs from the five labels (Estimate across an income range., Locate the 400% federal poverty level (FPL) line., Compare bronze with silver beyond the monthly premium., Treat catastrophic coverage as a limited possibility., Enroll by your exchange's deadline.) and leave the label as plain text ending in a period."
+    },
+    {
+      "id": "AUD-A5-2",
+      "status": "open",
+      "evidence": "FIX: \"KFF's 2027 enrollment analysis\" -> \"The Kaiser Family Foundation (KFF) 2027 enrollment analysis\""
+    },
+    {
+      "id": "AUD-A5-3",
+      "status": "open",
+      "evidence": "Optional: link the HealthCare.gov CSR and state-exchange pages."
+    },
+    {
+      "id": "R1-5-checks-renderedLayout",
+      "status": "open",
+      "evidence": "The five items under 'What to Do if Your ACA Premium Jumped' render as <li>**Estimate across an income range.** ...</li> with visible literal asterisks (also Locate, Compare, Treat, Enroll)."
+    },
+    {
+      "id": "AUD-A6-1",
+      "status": "open",
+      "evidence": "FIX sections Privacy Trade-Offs: replace the quoted two sentences with \"Google's [Connected Apps data page](https://support.google.com/gemini/answer/16836988) says a subset of Connected Apps data processed by Gemini is reviewed by human reviewers, including summaries, excerpts and inferences from Google Wallet and payment services information, and that Keep Activity lets your chats be used to improve Google AI.\" Then add one clause to the intro limits sentence and the 'Is Google Wallet in Gemini safe?' FAQ answer, and add the page to Sources."
+    },
+    {
+      "id": "AUD-A6-2",
+      "status": "open",
+      "evidence": "FIX sections[How to Turn Off ...].body: remove the ** pairs around the four step labels."
+    },
+    {
+      "id": "AUD-A6-3",
+      "status": "open",
+      "evidence": "FIX FAQ 'Is Google Wallet in Gemini free?': \"Plaid says it does not charge you to connect accounts; Plaid says the app pays a fee.\" -> \"Plaid says it does not charge you to connect accounts and that the app pays Plaid a fee. Its consumer page names Venmo and Oportun as examples, not Google Wallet.\""
+    },
+    {
+      "id": "AUD-A6-4",
+      "status": "open",
+      "evidence": "FIX sections[What Google and Plaid Store ...]: delete that sentence; replace each semicolon with a period; \"AES-256\" -> \"Advanced Encryption Standard (AES) 256-bit\"."
+    },
+    {
+      "id": "AUD-A6-5",
+      "status": "open",
+      "evidence": "Optional: \"Check Google Wallet in Gemini's requirements on Google's Wallet Help page before you opt in.\""
+    },
+    {
+      "id": "R1-6-checks-renderedLayout",
+      "status": "open",
+      "evidence": "The four 'How to Turn Off' steps render as <li>**Disconnect Google Wallet in Gemini.** ...</li> with visible literal ** characters."
+    },
+    {
+      "id": "R1-6-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Verified capabilities, Keep Activity, eligibility, Plaid storage list, unlink deletion and Plaid fee/encryption statements against saved sources (all match), but Google's Connected Apps data page (support.google.com/gemini/answer/16836988), fetched during this audit, says a subset of Connected Apps data is reviewed by human reviewers including inferences from Google Wallet and payment services information, and that Keep Activity on lets chats improve Google AI. The page omits this."
+    },
+    {
+      "id": "R1-6-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read-only and 'limits actions, not storage' message is restated in the intro, section 1, the capabilities section, the storage section, Privacy Trade-Offs and three FAQ answers. Page declares it did not read Google's Connected Apps data-handling page, yet its decision rests on what that page governs."
+    },
+    {
+      "id": "R1-6-factualReview-consequentialClaims",
+      "status": "open",
+      "evidence": "Strongest counterexample tested: Google's own Connected Apps data page contradicts the implication that stored data and chat history are the only privacy costs by adding human review of Wallet-derived inferences."
+    },
+    {
+      "id": "R1-6-factualReview-primarySources",
+      "status": "open",
+      "evidence": "Google and Plaid first-party pages used; the key Connected Apps data-handling page was knowingly left unread although Google's Wallet Help links to it."
+    },
+    {
+      "id": "R1-6-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Conditional recommendation is clear (connect only if you accept sharing, skip otherwise) but its privacy inventory is incomplete without the human-review disclosure."
+    },
+    {
+      "id": "AUD-A7-1",
+      "status": "open",
+      "evidence": "FIX: add 'best-budgeting-apps' to EXCLUDED_SLUGS in src/lib/testedPage.ts so the byline reads 'By Jonathan Velez, Personal Finance Writer & Editor', and reword \"We evaluated each app based on\" to \"We compared each app on\" unless real test records are attached. List other /roundup/ routes with the same legacy label as unresolved legacy, not changed in this run."
+    },
+    {
+      "id": "R1-7-checks-testingAndAttribution",
+      "status": "open",
+      "evidence": "Rendered byline reads 'Tested and reviewed by Jonathan Velez' and intro says 'We evaluated each app based on setup time ... bank-sync reliability', but data/testing-evidence.json and .claude/testing-policy.json do not exist; src/lib/testedPage.ts decides the label from slug/title heuristics only, which _testing-labels.md treats as eligibility, not evidence. Body changed this run so the legacy-snapshot allowance does not apply."
+    },
+    {
+      "id": "R1-7-factualReview-truthfulEvidence",
+      "status": "open",
+      "evidence": "FAIL-relevant: no run records support first-person 'Tested' byline or 'we evaluated' language."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-16-xtrends-run/handoff-audit-r2.json",
+    "sha256": "97569f3caaf9dcad3dc069e895167ae88a95453f65ba7d9a9e6a4acefc7b0513"
+  }
+}
+

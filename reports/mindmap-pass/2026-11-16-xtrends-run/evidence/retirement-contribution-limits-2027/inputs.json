@@ -1,0 +1,9 @@
+{
+  "source": "IRS IR-2026-136 (Nov. 12, 2026) and Notice 2026-66; saved verbatim in research/sources/irs-ir-2026-136.txt and irs-notice-2026-66.txt, retrieved 2026-11-16",
+  "deferral_limit_2027": 25500,
+  "deferral_limit_2026": 24500,
+  "catchup_50_2027": 8500,
+  "catchup_50_2026": 8000,
+  "catchup_60_63_2027": 11750,
+  "catchup_60_63_2026": 11250
+}

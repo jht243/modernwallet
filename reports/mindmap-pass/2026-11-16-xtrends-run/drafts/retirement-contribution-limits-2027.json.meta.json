@@ -1,0 +1,124 @@
+{
+ "slug": "retirement-contribution-limits-2027",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gpt-6-sol",
+ "provider": "openai",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_OPENAI_KEY",
+ "finish_reason": "STOP",
+ "words": 2404,
+ "floor": 1500,
+ "input_tokens": 34379,
+ "output_tokens": 5456,
+ "thinking_tokens": 1143,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.1347,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['2027 Contribution Limits at a Glance', '401(k), 403(b), 457 and TSP Deferral Limits for 2027', 'Roth Catch-Up Wage Threshold for 2027', 'IRA Limits and Income Phase-Outs for 2027', 'SIMPLE Plan Limits for 2027'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced",
+   "claim check: 2 claim(s) still unsupported after 2 pass(es) \u2014 auditor must cut or source: 'Not published'; '$155,000'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 2404,
+  "numbers_not_in_facts": [
+   "3000"
+  ],
+  "fact_budget": {
+   "fact_words": 898,
+   "floor": 1500,
+   "ratio": 0.6,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    3,
+    2
+   ],
+   "applied": [
+    {
+     "id": "sections[0].body",
+     "quote": "$150,000",
+     "replacement": "$155,000",
+     "type": "contradicted",
+     "why": "The notice identifies $155,000 as the 2026 threshold used for 2027 catch-up designations."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "$155,000",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE does not give a 2027 threshold for the following year's catch-up designations."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "Up $5,000",
+     "replacement": "Not published",
+     "type": "unsupported",
+     "why": "SOURCE gives no change from the 2026 threshold to a 2027 threshold."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [
+    {
+     "quote": "Not published",
+     "type": "contradicted",
+     "why": "The notice publishes $155,000 as the 2026 threshold used for 2027 catch-up designation.",
+     "replacement": "$155,000",
+     "id": "sections[0].body",
+     "reason": "replacement would change the table's columns"
+    },
+    {
+     "quote": "$155,000",
+     "type": "contradicted",
+     "why": "The notice identifies $155,000 as the 2026 threshold, not a 2027 threshold.",
+     "replacement": "Not published",
+     "id": "sections[0].body",
+     "reason": "replacement would change the table's columns"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "sections[0].body",
+     "quote": "Not published",
+     "type": "contradicted",
+     "reason": "replacement would change the table's columns"
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "$155,000",
+     "type": "contradicted",
+     "reason": "replacement would change the table's columns"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2403
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 90.4,
+ "response_id": "resp_084945630d6e4d4b006afb39bb8c1487d2a51c250f5ce2f568",
+ "generated_at": "2026-11-16T17:15:01+0000"
+}

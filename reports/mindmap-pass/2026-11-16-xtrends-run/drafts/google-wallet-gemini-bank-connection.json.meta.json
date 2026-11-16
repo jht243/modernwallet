@@ -1,0 +1,84 @@
+{
+ "slug": "google-wallet-gemini-bank-connection",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gpt-6-sol",
+ "provider": "openai",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_OPENAI_KEY",
+ "finish_reason": "STOP",
+ "words": 2958,
+ "floor": 1800,
+ "input_tokens": 34163,
+ "output_tokens": 4639,
+ "thinking_tokens": 366,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.1184,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['Should You Connect Your Bank Accounts to Gemini?', 'What Gemini Can See Through Google Wallet and Plaid', 'What Gemini Cannot Do With Your Money', 'What Google and Plaid Store While Your Accounts Are Linked', 'Who Can Use It Today'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 2958,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 1330,
+   "floor": 1800,
+   "ratio": 0.74,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    1
+   ],
+   "applied": [
+    {
+     "id": "sections[6].body",
+     "quote": "Google describes useful questions: reviewing last quarter's spending, finding recurring subscriptions and comparing last year's holiday purchases with a proposed budget.",
+     "replacement": "Google's examples include reviewing last quarter's spending, finding recurring subscriptions and using last year's gifts and travel spending to suggest a holiday budget.",
+     "type": "unsupported",
+     "why": "SOURCE does not call the questions useful or identify last year's gifts and travel as holiday purchases."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Google's Help pages describe the categories stored while linked; they do not give you a narrower set of data to approve for a single budgeting question.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE lists stored data but does not establish whether narrower, per-question approval is available."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2982
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 69.8,
+ "response_id": "resp_092f082c37b289e8006afb3a704d6887d2be83a599dec1ba45",
+ "generated_at": "2026-11-16T17:17:41+0000"
+}

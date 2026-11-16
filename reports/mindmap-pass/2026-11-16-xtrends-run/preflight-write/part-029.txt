@@ -1,0 +1,72 @@
+indmap-pass/2026-11-16-xtrends-run/research/sources/google-wallet-gemini.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/4c63d3b79690a2a0d6b453314bb5593df1178c82d2244cef70c2cac78669a6e2/gemini-help-wallet.txt",
+      "sha256": "4c63d3b79690a2a0d6b453314bb5593df1178c82d2244cef70c2cac78669a6e2",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/gemini-help-wallet.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/c04d0f0571158eb6b62433e1016651109e3acbfc575188225687279a38f47331/googlepay-plaid-help.txt",
+      "sha256": "c04d0f0571158eb6b62433e1016651109e3acbfc575188225687279a38f47331",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/googlepay-plaid-help.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/06481ff0f6174075ff06f07d39df1e2af37c2e92d4195713c455727a965137dc/plaid-blog.txt",
+      "sha256": "06481ff0f6174075ff06f07d39df1e2af37c2e92d4195713c455727a965137dc",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/plaid-blog.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/77b4813bc043b425da940eaa4727b4d08faa498e4ef87c8525ae78d787dec89d/livemint-amex.txt",
+      "sha256": "77b4813bc043b425da940eaa4727b4d08faa498e4ef87c8525ae78d787dec89d",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/livemint-amex.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/46bf02a4953c5090a6a8f4e3f9acc86956efe0d0f87d656dce6b13a84cb8f77f/kotaku-gta6.txt",
+      "sha256": "46bf02a4953c5090a6a8f4e3f9acc86956efe0d0f87d656dce6b13a84cb8f77f",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/kotaku-gta6.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/221136fb28ace7f4dcd24dc230c7896964d4315e666d1a83fc7f9aa59e8ea156/autocomplete-aca-premium.csv",
+      "sha256": "221136fb28ace7f4dcd24dc230c7896964d4315e666d1a83fc7f9aa59e8ea156",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/autocomplete-aca-premium.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/d4d95255a4c9e9fa9560564b84c611cf0bc0d2e0f01dc2276966614d0c715998/autocomplete-gemini-wallet.csv",
+      "sha256": "d4d95255a4c9e9fa9560564b84c611cf0bc0d2e0f01dc2276966614d0c715998",
+      "checkedAt": "2026-11-16T17:02:59.476315+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/autocomplete-gemini-wallet.csv"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-16-xtrends-run/handoff-write.json",
+    "sha256": "11e1766d843248c5b12f135b8f00f0dcee8c45e33693b1b49338ecc3d45c8166"
+  }
+}
+

@@ -1,0 +1,62 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "writer-xtrends",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/guides/retirement-contribution-limits-2027",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/401k-contribution-limits-2026",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/ira-contribution-limits-2026",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/compare/tsp-vs-401k",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/budget/aca-subsidy-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/google-wallet-gemini-bank-connection",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/roundup/best-budgeting-apps",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/retirement/401k-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/budget/monthly-budget-calculator",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "2026-11-16-xtrends"
+}

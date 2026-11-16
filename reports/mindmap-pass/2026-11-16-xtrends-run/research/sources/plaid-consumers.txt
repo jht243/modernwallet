@@ -1,0 +1,219 @@
+URL: https://plaid.com/how-it-works-for-consumers/
+HTTP: 200 https://plaid.com/how-it-works-for-consumers/
+Retrieved UTC: 2026-11-16T17:00:32.200539Z
+
+Plaid helps you link your financial institutions | Plaid
+Skip to main content
+Products
+Solutions
+Developers
+Resources
+Pricing
+Log in
+Contact sales
+Plaid powers the apps in your financial life
+With Plaid, you can securely connect your financial accounts to an app in seconds
+Discover apps
+Connect effortlessly
+Plaid lets you connect your financial accounts to your apps in seconds.
+Share your data securely
+When you want to share data from your financial accounts with an app, Plaid works to transfer your data securely.
+You're in control
+Plaid provides the tools to easily delete your data from our systems as well as connect, manage and disconnect your fintech apps.
+How Plaid works
+01
+Find and try a new financial app
+Whether you’re building a budget or sending money to a friend, there are thousands of apps to choose from.
+01
+Find and try a new financial app
+Whether you’re building a budget or sending money to a friend, there are thousands of apps to choose from.
+Banking
+Wealth
+Personal finances
+Business finances
+Payment
+Lending
+M1 Finance
+Simple
+Chime
+Oportun
+Oportun uses
+financial data
+to help you save a little bit every single day.
+Pillar
+Pillar uses
+account data
+to give you insights that may help you pay off your loans faster.
+Venmo
+Venmo uses your
+account information
+so you can set up a way to send and receive money.
+Brigit
+Wise
+Betterment
+Expensify
+Qapital
+MoneyLion
+Albert
+Drop
+Rocket Money
+Current
+YNAB
+Varo
+SoFi
+Earnin
+Prosper
+Acorns
+WorldRemit
+Ellevest
+Cleo
+M1 Finance
+Simple
+Chime
+Expensify
+SoFi
+Oportun
+Pillar
+Venmo
+Drop
+Prosper
+SoFi
+Wise
+Betterment
+YNAB
+02
+Understand how Plaid powers your apps
+Plaid provides tools that enable you to share your financial data with apps that provide services to you.
+Oportun
+Oportun uses
+financial data
+to help you save a little bit every single day.
+Pillar
+Pillar uses
+account data
+to give you insights that may help you pay off your loans faster.
+Venmo
+Venmo uses your
+account information
+so you can set up a way to send and receive money.
+The inclusion of certain applications on this page does not constitute or imply an endorsement of the application by Plaid.
+03
+Connect your financial account using Plaid
+When you choose to connect your financial accounts to an app using Plaid, you will be prompted to enter the username and password associated with those accounts. Plaid then links your accounts to the app you want to use so you can share your data.
+How we handle data
+04
+Plaid’s technology helps keep your data safe
+To help keep your data safe, we don’t share the username and password for your financial institution with your apps. Once you give us permission to share your financial data, we securely transfer it from your financial institution to the app through our application programming interface (API).
+Learn more about security
+Advanced Encryption Standard (AES-256) and Transport Layer Security (TLS)
+Secure cloud infrastructure technologies
+Security audits by researchers and financial institutions
+05
+Continue building your financial life with apps powered by Plaid
+Money is one of the biggest sources of stress in people’s lives. We want to make it easier for you to share your financial data with the apps you want to use. Whether you have an account at a national bank, a local bank, a credit union, an investment bank, or a digital bank, Plaid helps you get connected.
+Why is Plaid involved?
+Plaid can help you control access to your data
+When you connect your financial accounts to apps with Plaid, you have control over who you’re sharing your data with. To disconnect your financial accounts from apps, or to delete your data from Plaid’s systems, visit Plaid Portal.
+Explore Plaid Portal
+Plaid doesn’t charge you for our services
+When you connect your financial accounts to an app like Venmo or Oportun, the app pays us a fee to enable that connection. We don’t charge you for connecting your accounts.
+RESOURCES
+Take the next step
+Discover apps
+Meet a few of the apps that are built with Plaid.
+Learn more
+Manage connections
+See the types of data you’ve shared and manage your connections.
+Learn more
+Why is Plaid involved?
+Connecting your financial accounts just got a whole lot easier.
+Learn more
+Products
+Auth
+Identity
+Balance
+Signal
+Transfer
+Identity Verification
+Monitor
+Transactions
+Investments
+Liabilities
+Enrich
+Assets
+Income
+Underwriting
+Plaid Link
+Layer
+Investments Move
+Protect
+Cash Advance Index
+LendScore
+Guarantee
+Database Auth
+About us
+Company
+Careers
+Contact
+Partners
+Press
+Safety
+Legal
+Use cases
+AI companies
+Auto
+Banks & credit unions
+Billing & recurring payments
+Business financial management
+Consumer lending
+Earned wage access
+Fraud & risk prevention
+Gaming
+Government & public sector
+Healthcare
+Inbound bank payments
+Insurance
+KYC & AML compliance
+Mortgage
+Onboarding & identity verification
+Open finance
+Outbound bank payments
+Personal financial management
+Platforms & marketplaces
+Property management
+For consumers
+Troubleshoot account connection
+Trust and safety
+How it works
+Plaid Portal
+Delete my data
+End User Privacy Policy
+Biometric Policy
+FAQs
+Plaid Check Consumer Help Center
+Resources
+Pricing
+Global coverage
+Plaid Blog
+Industry resources
+Annual conference
+Customer stories
+Intelligent finance
+Developers
+Quickstart
+API documentation
+Libraries
+GitHub
+Product demos
+For financial institutions
+Open Finance Solution
+Core Exchange
+Permissions Manager
+App Directory
+©
+2026
+Plaid Inc.
+Choose...
+United States
+United Kingdom
+European Union

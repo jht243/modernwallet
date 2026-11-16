@@ -1,0 +1,150 @@
+{
+ "slug": "google-wallet-gemini-bank-connection",
+ "guards": {
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-16T17:36:06+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-16-xtrends-run/audit/google-wallet-gemini-bank-connection.r2-findings.txt",
+    "applied": [
+     {
+      "id": "sections[6].body",
+      "quote": "- We did not read Google's separate page on how data is handled when Gemini works with Connected Apps.",
+      "replacement": "- Google's [Connected Apps data page](https://support.google.com/gemini/answer/16836988) says human reviewers review a subset of data processed by Gemini, including summaries, excerpts and inferences from Google Wallet and payment services information. It also says Gemini Apps activity can be used to improve Google services, including training generative AI models, when Keep Activity is on.",
+      "type": "AUD-A6-1: omitted Connected Apps data practices",
+      "why": "The closed facts now include Google's Connected Apps data page."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "The Help pages cited here therefore do not support a broader claim about that handling.",
+      "replacement": "",
+      "type": "AUD-A6-1: outdated statement about unread source",
+      "why": "The Connected Apps data page now supports a specific description of that handling."
+     },
+     {
+      "id": "introText",
+      "quote": "Using Wallet with Gemini also requires Keep Activity to be on, so chats are saved to Gemini Apps Activity.",
+      "replacement": "Using Wallet with Gemini also requires Keep Activity to be on, so chats are saved to Gemini Apps Activity. Google says human reviewers review a subset of Connected Apps data, including inferences from Google Wallet and payment services information.",
+      "type": "AUD-A6-1: missing human-review disclosure in intro",
+      "why": "Google says human reviewers review a subset of Connected Apps data, including Wallet inferences."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "Google Pay Help says Google and Plaid store account details and transaction history while an account is linked.",
+      "replacement": "Google Pay Help says Google and Plaid store account details and transaction history while an account is linked. Google says human reviewers review a subset of Connected Apps data, including Wallet inferences.",
+      "type": "AUD-A6-1: missing human-review disclosure in safety FAQ",
+      "why": "The safety answer should also describe Google's stated human review."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "Plaid says it does not charge you to connect accounts; Plaid says the app pays a fee.",
+      "replacement": "Plaid says it does not charge you to connect accounts and that the app pays a fee.",
+      "type": "AUD-A6-3: fee attribution",
+      "why": "The closed facts support Plaid's fee statement, but not the proposed named app examples."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "Google's read-only description addresses account actions; it does not answer how long Gemini keeps chat content that contains account details.",
+      "replacement": "",
+      "type": "AUD-A6-4: repeated read-only distinction and semicolon",
+      "why": "The distinction appears in the intro and capabilities section."
+     },
+     {
+      "id": "sections[1].body",
+      "quote": "Google's launch post also describes a spending review aimed at saving $1,000 over the next three months; it says Gemini can generate charts for cash flow, asset allocation and budgets in the chat.",
+      "replacement": "Google's launch post also describes a spending review aimed at saving $1,000 over the next three months. It says Gemini can generate charts for cash flow, asset allocation and budgets in the chat.",
+      "type": "AUD-A6-4: semicolon joining clauses",
+      "why": "Two sentences preserve the reported example."
+     },
+     {
+      "id": "sections[2].body",
+      "quote": "Cannot do either; account changes happen in Google Wallet settings",
+      "replacement": "Cannot do either. Account changes happen in Google Wallet settings",
+      "type": "AUD-A6-4: semicolon in table text",
+      "why": "A period preserves the table cell and its meaning."
+     },
+     {
+      "id": "sections[3].body",
+      "quote": "AES-256",
+      "replacement": "Advanced Encryption Standard (AES) 256-bit",
+      "type": "AUD-A6-4: unexplained acronym",
+      "why": "Spell out the encryption standard at its mention."
+     },
+     {
+      "id": "sections[5].body",
+      "quote": "Google Pay Help says Plaid continues to store data for accounts linked through Plaid with a non-Google service; manage those connections through Plaid.",
+      "replacement": "Google Pay Help says Plaid continues to store data for accounts linked through Plaid with a non-Google service. Manage those connections through Plaid.",
+      "type": "AUD-A6-4: semicolon joining clauses",
+      "why": "Two sentences preserve the distinction about non-Google links."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "If you want to compare other approaches to tracking spending, the [best budgeting apps](/roundup/best-budgeting-apps/) list covers alternatives; decide how much account access you are willing to grant before choosing one.",
+      "replacement": "If you want to compare other approaches to tracking spending, the [best budgeting apps](/roundup/best-budgeting-apps/) list covers alternatives. Decide how much account access you are willing to grant before choosing one.",
+      "type": "AUD-A6-4: semicolon joining clauses",
+      "why": "Two sentences preserve the alternative and decision point."
+     },
+     {
+      "id": "sections[0].body",
+      "quote": "Read-only access does not mean that Google and Plaid avoid storing financial information.",
+      "replacement": "",
+      "type": "AUD-A6-4: repeated read-only distinction",
+      "why": "The intro and capabilities section already explain this distinction."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "It does not settle the data-sharing concern.",
+      "replacement": "",
+      "type": "AUD-A6-4: repeated read-only distinction",
+      "why": "The following sentences state the storage and chat-activity trade-offs directly."
+     },
+     {
+      "id": "faqs[0].answer",
+      "quote": "That is a limit on actions, not a safety guarantee or a limit on stored data.",
+      "replacement": "That is not a safety guarantee.",
+      "type": "AUD-A6-4: repeated read-only explanation",
+      "why": "Keep the safety caveat without repeating the full distinction."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "Those restrictions do not answer what account information Google and Plaid store while an account is linked.",
+      "replacement": "",
+      "type": "AUD-A6-4: repeated read-only explanation",
+      "why": "The FAQ question concerns actions; storage is addressed elsewhere."
+     },
+     {
+      "id": "sections[6].body",
+      "quote": "So could a change to Google's stated read-only access or data-use terms; [Google's Wallet Help page](https://support.google.com/gemini/answer/18112192) is the place to verify the connection's current requirements before opting in.",
+      "replacement": "So could a change to Google's stated read-only access or data-use terms. Check Google Wallet in Gemini's requirements on [Google's Wallet Help page](https://support.google.com/gemini/answer/18112192) before you opt in.",
+      "type": "AUD-A6-4 and AUD-A6-5: semicolon and closing action",
+      "why": "A direct next action retains the link and names Google Wallet in Gemini."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "AUD-A6-1: add Connected Apps data page to sources",
+      "why": "No sources entry exists among the supplied units.",
+      "replacement": null,
+      "reason": "no quote"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 2802,
+    "flags": []
+   }
+  ],
+  "flags": [],
+  "numbers_not_in_facts": []
+ },
+ "words": 2802
+}

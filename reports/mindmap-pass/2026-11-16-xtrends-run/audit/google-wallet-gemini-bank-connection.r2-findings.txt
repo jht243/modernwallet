@@ -1,0 +1,16 @@
+FINDING AUD-A6-1 (factual omission; Privacy Trade-Offs, introText, FAQ "Is Google Wallet in Gemini safe?", sources)
+Quote: "- We did not read Google's separate page on how data is handled when Gemini works with Connected Apps. The Help pages cited here therefore do not support a broader claim about that handling."
+Defect: Google's Connected Apps data page (now on the closed fact list and URL list) says human reviewers review a subset of Connected Apps data, including Google Wallet inferences, and that Keep Activity lets Gemini Apps activity improve Google AI. The page omits it.
+Fix: replace the quoted bullet (and the sentence about it, and the intro sentence "The published pages considered here do not answer how long Gemini keeps chat content..." only if it mentions the unread page) with: "Google's [Connected Apps data page](https://support.google.com/gemini/answer/16836988) says a subset of Connected Apps data processed by Gemini is reviewed by human reviewers, including summaries, excerpts and inferences from Google Wallet and payment services information, and that Keep Activity lets your chats be used to improve Google AI." Keep the two other unanswered items (chat-retention duration, Plaid after an unlink inside Google Wallet). Add one short clause to the introText limits sentences and to the "Is Google Wallet in Gemini safe?" FAQ answer saying Google says human reviewers see a subset of Connected Apps data including Wallet inferences. Add to sources: {"label": "Google Gemini Apps Help: How Connected Apps data is used", "url": "https://support.google.com/gemini/answer/16836988"}. Use only the closed facts.
+
+FINDING AUD-A6-3 (misattribution, FAQ "Is Google Wallet in Gemini free?")
+Quote: "Plaid says it does not charge you to connect accounts; Plaid says the app pays a fee."
+Fix: "Plaid says it does not charge you to connect accounts and that the app pays Plaid a fee. Its consumer page names Venmo and Oportun as examples, not Google Wallet."
+
+FINDING AUD-A6-4 (restatement, semicolons, acronym)
+Quote: "Google's read-only description addresses account actions; it does not answer how long Gemini keeps chat content that contains account details."
+Fix: delete that sentence. Replace every semicolon that joins clauses in prose with a period and a capitalized next word (launch-post sentence about $1,000, Plaid storage sentence, the sentence "manage those connections through Plaid", the closing Privacy Trade-Offs sentences, the A6 FAQ answers). Replace "AES-256" with "Advanced Encryption Standard (AES) 256-bit". Trim the repeated "read-only limits actions, not storage" restatement: keep it in the introText and the capabilities section only, and shorten the repeats in section 1, Privacy Trade-Offs and the FAQ answers to a short reference without re-explaining.
+
+FINDING AUD-A6-5 (closing sentence)
+Quote: "Google's Wallet Help page is the place to verify the connection's current requirements before opting in."
+Fix: "Check Google Wallet in Gemini's requirements on Google's Wallet Help page before you opt in." (keep the link on Google's Wallet Help page)

@@ -11425,7 +11425,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         question: "Can federal employees have both a TSP and a 401(k)?",
         answer:
-          "Yes, if you also have private-sector income in the same year, but the TSP and a 401(k) (or 403(b)) share one combined IRS elective-deferral limit — $24,500 in 2026 — not two separate limits.",
+          "Yes, if you also have private-sector income in the same year, but the TSP and a 401(k) (or 403(b)) share one combined IRS elective-deferral limit — $24,500 in 2026 — not two separate limits. For 2027, see the [2027 TSP and 401(k) limits](/guides/retirement-contribution-limits-2027/).",
       },
       {
         question: "What happens to my TSP if I leave federal service?",

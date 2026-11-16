@@ -100,6 +100,10 @@ export const BENEFIT_SPOKES: SpokeEntry[] = [
     "howItWorks": "",
     "sections": [
       {
+        "heading": "What to Do if Your ACA Premium Jumped",
+        "body": "If your 2027 ACA premium quote jumped, rerun the estimate at your realistic 2027 income first. Then compare the cost of coverage you could use, including the deductible you would face if you chose a lower-premium plan.\n\n1. Estimate across an income range. Enter your expected 2027 household income in the calculator below. Run it again with a plausible lower estimate and a plausible higher estimate. The results show how a change in income could affect the credit. Use your realistic estimate when applying for coverage, and update your income estimate if your circumstances change. [The Kaiser Family Foundation (KFF) 2027 enrollment analysis](https://www.kff.org/affordable-care-act/9-things-to-watch-for-the-2027-aca-open-enrollment-period/) says accurate income estimates matter especially near the thresholds for premium tax credits and cost-sharing reductions.\n2. Locate the 400% federal poverty level (FPL) line. The ordinary premium tax credit range is 100% to 400% of FPL. Above 400% of FPL, there is no federal premium tax credit under the rules KFF describes for 2027. If your income is within the eligible range, your credit may be smaller than it would have been under the enhanced credits that expired at the end of 2025. KFF reports that finalized 2027 benchmark silver premiums rose 13% on average. \n3. Compare bronze with silver beyond the monthly premium. Bronze plans have lower premiums and higher deductibles. [KFF reports](https://www.kff.org/affordable-care-act/what-we-know-so-far-about-2026-aca-marketplace-enrollment-premiums-and-deductibles/) that the average Marketplace deductible rose 37%, from $2,759 in 2025 to $3,786 in 2026, largely as more people selected bronze instead of silver plans with reduced deductibles. Those figures describe 2026 compared with 2025; they are not a forecast of your 2027 deductible. If your income is 100% to 250% of FPL, check the silver plan's cost-sharing reductions (CSRs) before choosing bronze. CSRs can lower deductibles, copayments and coinsurance, but require enrollment in a silver plan.\n4. Treat catastrophic coverage as a limited possibility. KFF says that, during open enrollment, catastrophic plans are available only to a narrow group. Eligibility includes people under 30, people whose Marketplace or employer coverage would cost more than 8.5% of their income, and people who qualify for a hardship exemption. Do not count on a catastrophic plan until you know whether you meet one of those conditions.\n5. Enroll by your exchange's deadline. [HealthCare.gov](https://www.healthcare.gov/quick-guide/dates-and-deadlines/) says to enroll by December 15 for January 1 coverage. Its open enrollment ends January 15; enrollment or plan changes after that generally require a Special Enrollment Period. State-run exchanges can set different dates, so use the deadline shown by the exchange handling your application.\n\nA cheaper plan can lower your payment, but it cannot restore a credit you do not qualify for. The credit is based on the benchmark silver premium minus an income-based contribution and cannot exceed the premium of the plan you choose. Open the ACA Subsidy Calculator below and enter your expected 2027 household income."
+      },
+      {
         "heading": "How ACA Subsidies Are Calculated",
         "body": "The federal premium tax credit equals the non-tobacco benchmark Silver premium minus an income-based contribution, and it can never be larger than the premium of the eligible plan you enroll in. The [Internal Revenue Service (IRS)](https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit) describes the credit this way. [Revenue Procedure 2026-26](https://www.irs.gov/irb/2026-31_irb) sets the 2027 percentages used for the contribution.\n\nThe calculator runs five steps:\n\n1. Divide expected 2027 household MAGI by the 2026 federal poverty level (FPL) for your household size.\n2. Find that percentage of FPL in the 2027 table below, and interpolate in a straight line inside its band.\n3. Multiply MAGI by the applicable percentage, then divide by 12 for the monthly contribution.\n4. Subtract the monthly contribution from the monthly benchmark premium. A negative result counts as zero.\n5. Cap the result at the monthly premium of the plan you choose.\n\nWritten as one line, the credit is the smaller of two numbers: your plan premium, or the benchmark minus your contribution (never below zero).\n\n| Household income as % of FPL | Starting percentage | Ending percentage |\n|---|---|---|\n| Under 133% | 2.15% | 2.15% |\n| 133% to under 150% | 3.23% | 4.30% |\n| 150% to under 200% | 4.30% | 6.78% |\n| 200% to under 250% | 6.78% | 8.66% |\n| 250% to under 300% | 8.66% | 10.22% |\n| 300% to 400% | 10.22% | 10.22% |\n\nInterpolation turns a band into an exact rate. At 231.05% of FPL, income sits 31.05 points into the 50-point band from 200% to 250%. The rate climbs the same share of the way from 6.78% to 8.66%, which lands at about 7.95%.\n\nThe calculator keeps the dollar result hidden until you confirm the nonfinancial conditions listed under When the ACA Subsidy Calculator Does Not Apply. Below 100% or above 400% of FPL, it shows an explanation in place of a credit. It estimates the federal credit only, with no state subsidy and no estimate of discounts on your share of costs for covered services."
       },
@@ -175,6 +179,18 @@ export const BENEFIT_SPOKES: SpokeEntry[] = [
       {
         "label": "HealthCare.gov: Medicaid programs and qualifying health coverage",
         "url": "https://www.healthcare.gov/medicaid-limited-benefits/"
+      },
+      {
+        "label": "KFF: 9 Things to Watch for the 2027 ACA Open Enrollment Period",
+        "url": "https://www.kff.org/affordable-care-act/9-things-to-watch-for-the-2027-aca-open-enrollment-period/"
+      },
+      {
+        "label": "KFF: What We Know So Far About 2026 ACA Marketplace Enrollment, Premiums, and Deductibles",
+        "url": "https://www.kff.org/affordable-care-act/what-we-know-so-far-about-2026-aca-marketplace-enrollment-premiums-and-deductibles/"
+      },
+      {
+        "label": "HealthCare.gov: Dates and Deadlines",
+        "url": "https://www.healthcare.gov/quick-guide/dates-and-deadlines/"
       }
     ],
     "toolHeading": "2027 Federal Premium Tax Credit Estimate",
@@ -183,6 +199,6 @@ export const BENEFIT_SPOKES: SpokeEntry[] = [
     "preset": {},
     "suppressRelatedFallback": true,
     "disclaimerText": "This page and calculator provide educational estimates of the federal premium tax credit and do not determine eligibility or the credit amount for any household.",
-    "updated": "2026-11-04"
+    "updated": "2026-11-16"
   }
 ];

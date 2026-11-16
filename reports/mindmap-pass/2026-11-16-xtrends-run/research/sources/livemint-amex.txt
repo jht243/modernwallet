@@ -1,0 +1,419 @@
+URL: https://www.livemint.com/money/personal-finance/amex-credit-card-reward-points-deducted-restored-november-2026-11794376350635.html
+HTTP: 200 https://www.livemint.com/money/personal-finance/amex-credit-card-reward-points-deducted-restored-november-2026-11794376350635.html
+Retrieved UTC: 2026-11-16T16:51:05.655349Z
+
+Amex makes U-turn on reward points deductions after complaints from cardholders | Mint
+Subscribe
+Sign in
+View Market Dashboard
+Home
+Markets
+Market News
+Stock Markets
+IPO
+Mint Portfolio
+US Markets
+Mark to Market
+Bonds
+Commodities
+Cryptocurrency
+Market Data
+Stock Pages
+Index pages
+Commodities
+Gold Price Today
+Silver Price Today
+Fuel
+Petrol price today
+Diesel price today
+News
+India
+World
+WSJ
+Economist
+US News
+Trends
+Mint Portfolio
+Money
+Personal Finance
+Insurance
+Ask Mint Money
+Mutual Funds
+MyMint
+Latest news
+Premium
+e-paper
+Global Partners
+WSJ
+Economist
+Barron's
+Mint Specials
+Mint Explainers
+Mark to Market
+Long Story
+Plain Facts
+Snapview
+Sections
+Companies
+Technology
+Markets
+Personal Finance
+Mutual Funds
+Insurance
+Auto
+Industry
+Lounge
+Opinion
+IPO
+Companies
+Start-ups
+Company Results
+People
+Technology
+Mint Hindi
+More
+Technology
+Gadgets
+Tech Reviews
+Sports
+Cricket News
+Football News
+Science
+Health
+Entertainment
+Tools
+IFSC Code Finder
+Income Tax Calculator
+Gold Rate Today
+Gold Rate in Delhi
+Gold Rate Hyderabad
+Silver Rate Today
+Silver Rate in Delhi
+Silver Rate in Bangalore
+US
+US Trending
+Hollywood
+Business
+US Stock Market
+Explore Mint
+About us
+Print subscription
+Subscriber terms of use
+Privacy Policy
+Terms of Use
+Disclaimer
+Mint code
+Cookie Policy
+Code of ethics
+Sitemap
+Contact Us
+Hindustan Times
+Live Hindustan
+HT US News
+Nifty 50
+Auto News
+Seasoned Views 2026
+Mint Money
+Amex makes U-turn on reward points deductions after complaints from cardholders
+Shipra Singh
+6
+min read
+11 Nov 2026, 01:12 PM IST
+Cardholders argued that Amex had historically represented that reward points would not expire as long as they held at least one active card, with points pooled across multiple cards.
+Summary
+Several customers reported losing thousands, and in some cases lakhs, of membership rewards points, with some balances turning negative. Amex has now confirmed it will restore the points, but questions remain over how the deductions were calculated.
+Gift this article
+Check your portfolio
+This is a Mint Premium article gifted to you.
+Subscribe to enjoy similar stories.
+Subscribe now
+NEW DELHI: Several American Express (Amex) credit cardholders woke up on 9 November to find that thousands, and in some cases lakhs, of reward points had disappeared from their accounts. Some even found their rewards balances in the negative. These were points that did not expire as long as customers held at least one active card, with rewards earned across multiple cards accumulated in a common pool.
+Mint spoke to five affected Amex cardholders, who confirmed deductions from their accounts, with some reporting losses running into lakhs of points.
+By the night of 10 November, Amex had moved to reverse the deductions following a spate of complaints from cardholders. Many had threatened to escalate the matter to the Reserve Bank of India Ombudsman if the issuer failed to resolve the issue or provide a clear breakdown of how the deductions had been calculated.
+Emails signed by Sanjay Khanna, chief executive officer of American Express Banking Corp., India, were sent to several cardholders on 10 November, saying the deducted points would be restored and credited to one of their active Amex card accounts within 48–72 hours.
+Mint
+has seen the email sent to an Amex cardholder.
+In response to
+Mint's
+queries, Amex said the adjustments to membership rewards points balances on 9 November were in line with its applicable terms and conditions, which stipulate that unredeemed points associated with cancelled cards are forfeited 30 days after cancellation. “After carefully considering the concerns shared by our Card Members, we have decided to reverse these adjustments. Affected Card Members’ Membership Rewards® points balances will be restored to their 8 November 2026 levels, taking into account any points earned or redeemed since then,” the company said in its statement.
+The deductions came ahead of Amex's transition to a new online portal on 15 November, under which membership rewards points previously pooled across multiple cards will be displayed separately for each card. In its latest email, the issuer clarified that the existing terms and conditions would continue to apply to cards cancelled on or after 15 November.
+Also Read
+|
+How RuPay’s UPI edge is eating into Visa and Mastercard’s turf
+What upset the cardholders
+The biggest grievance was what customers saw as the retrospective application of a 30-day redemption rule.
+Affected cardholders told
+Mint
+that
+Amex
+had long maintained that membership rewards points did not expire as long as the card account remained active. Since points earned across multiple cards were combined into a single pool, many believed their accumulated rewards would remain available as long as they held at least one active card.
+Several cardholders also shared screenshots of chats and emails with
+Mint
+in which customer care executives appeared to assure them of the same.
+Ajay Awtaney, founder of LiveFromALounge and an Amex customer for 15 years, said this was how the programme had operated for years. “The company's website states that membership rewards points have no expiry and can be redeemed while the card account is active and in good standing, subject to programme terms.”
+Moreover, cardholders holding multiple Amex cards see a combined rewards balance rather than a clear breakup of points attributable to each card, making it difficult to establish how many points belong to a particular card.
+Ankur Mittal, co-founder and chief technology officer of Card Insider, said that while customers can access transaction-level points data on the Amex website, it must be reviewed manually, month by month, to work out card-wise accumulation and redemption.
+“There is no simple consolidated card-wise summary showing how many points were earned, redeemed or remain attributable to each card,” Mittal said. “Expecting customers to manually reconcile this information, particularly at the time of card closure, is not practical.”
+The calculation was further complicated by the fact that rewards were generally redeemed on a first-in, first-out (
+FIFO
+) basis, Awtaney added. “Points earned earlier are used first. Customers have no option to specify that they want to redeem points earned on one particular card.”
+This was particularly problematic for customers whose cards had been closed several years earlier.
+Deduction calculations unclear
+Complaints extended beyond points earned on previously closed cards. Several cardholders told
+Mint
+that points had been deducted from their active cards, while others said points earned on a current card appeared to have been attributed to an older, cancelled card.
+Customers who had upgraded their cards also reported losing points, raising questions about whether the system had classified replaced or upgraded cards as cancelled accounts. A few cardholders had their points reinstated on 10 November after complaining to Amex, before the issuer announced the broader restoration.
+Some customers also reported negative reward-point balances following the deductions. A few were able to close their Amex cards despite these balances, although the implications remain unclear. Mittal said card issuers generally generate a final statement after an account is closed, and Amex could potentially levy charges corresponding to negative rewards balances.
+Customers
+might also encounter a negative rewards balance if they applied for another Amex card in the future, he said.
+Amex's latest communication addresses the restoration of points balances but does not specifically clarify how accounts closed during the intervening period, or any charges arising from negative rewards balances, will be treated.
+Also Read
+|
+Are you making these costly credit card mistakes?
+Was Amex trying to cut its rewards liability?
+Experts had questioned whether the deductions were part of a broader effort by Amex to reduce the cost of its rewards programme. Card issuers account for reward points as future redemption obligations, and forfeiting accumulated points can reduce the liability on their books.
+Over the past year, Amex has devalued rewards and benefits on some of its cards. It is not alone: other major issuers, including
+HDFC Bank
+, ICICI Bank and SBI Card, have also revised benefits on several credit cards amid pressure on the economics of their card businesses.
+“Extinguishing accumulated reward points could reduce liabilities carried on the company's books,” Awtaney said.
+Mittal also linked the deductions to efforts to reduce outstanding rewards liability. “It could have been a step to reduce its outstanding rewards liability,” he said, adding that invoking the 30-day clause after years of allowing pooled points to remain available suggested a change in practice aimed at reducing rewards costs.
+While devaluations are common across banks and credit card issuers, retrospectively taking back accumulated rewards is less common. Such deductions are more typically associated with cases where customers are found to have exploited loopholes or misused rewards programmes to maximise benefits.
+Some experts believe Amex's move could have been prompted by customers repeatedly closing and reopening cards to maximise referral and welcome benefits. Mittal said such customers were likely to constitute a relatively small proportion of the cardholder base and that Amex could instead have restricted their eligibility for future applications.
+Amex has now agreed to restore the points, but questions remain over whether the shift to card-wise rewards balances from 15 November will affect how customers can redeem points across multiple cards.
+Customers who received the restoration email should check their balances after the promised 48–72-hour period and reconcile them with their balances as of 8 November, accounting for subsequent earnings and redemptions. Those who continue to find discrepancies can raise a formal complaint with Amex and seek a detailed card-wise calculation.
+Also Read
+|
+Your money this week: PF savings, rising yields and UPI credit-card rewards
+Gift this article
+Check your portfolio
+About the Author
+Shipra Singh
+Shipra joined Mint’s personal finance team in September 2021, and writes on tax, credit cards, banking, estate planning and investments. She began her career in personal finance as an intern with Outlook Money magazine in 2017, and has since worked with The Economic Times and Entrepreneur India as a business journalist covering fintech and emerging financial services.<br><br>Over the years, she has reported on key aspects of household finance, tracking regulatory changes, market trends and evolving consumer behaviour. Shipra’s main beats are tax and banking products, with a focus on compliance gaps and their real-world impact for readers navigating complex financial decisions. Her reporting on GST and personal tax, particularly foreign asset disclosures and NRI taxation, has contributed to wider policy discussions and subsequent changes.<br><br>She also interviews market experts for the Mint Money podcast, covering topics ranging from stock market investing to how credit scores shape financial outcomes and access to credit.<br><br>Shipra has a keen interest in data-driven analysis and writing human-centric features that explore how people’s habits around spending, investing and wealth creation are evolving. Her work focuses on helping readers make informed financial decisions in an increasingly complex economic landscape.<br><br>Shipra holds a Bachelor’s degree (Honours) and a Master’s in English Literature from Delhi University.
+Catch all the
+Instant Personal Loan
+,
+Business Loan
+,
+Business News
+,
+Money news
+,
+Breaking News
+Events and
+Latest News
+Updates on Live Mint. Download The
+Mint News App
+to get Daily Market Updates.
+More
+Topics
+#
+credit cards
+#
+Credit card reward points
+#
+american express
+Download App
+Download the Mint app and read premium stories
+Trending Stories
+US Mid term Election Results 2026
+Quote of the day
+Livemint Hindi
+Mint Money
+Bank Holidays in Gujarat
+Bank Holidays in Delhi
+Income Tax Calculator 2026
+Bank Holidays in Jammu And Kashmir
+Gold Rate in Bangalore
+Gold Rate Today
+Gold Rate in Hyderabad
+Gold Rate in Chennai
+Gold Rate in Mumbai
+Nifty 50 companies
+ADANI ENTERPRISES
+share price
+ADANI PORTS
+share price
+APOLLO HOSPITALS
+share price
+ASIAN PAINTS
+share price
+AXIS BANK
+share price
+BAJAJ AUTO
+share price
+BAJAJ FINANCE
+share price
+BAJAJ FINSERVE
+share price
+BPCL
+share price
+BHARTI AIRTEL
+share price
+BRITANNIA
+share price
+CIPLA
+share price
+COAL INDIA
+share price
+DIVIS LABORATORIES
+share price
+DR REDDYS LABORATORIES
+share price
+EICHER MOTORS
+share price
+GRASIM INDUSTRIES
+share price
+HCL TECHNOLOGIES
+share price
+HDFC BANK
+share price
+HDFC LIFE
+share price
+HERO MOTOCORP
+share price
+HINDALCO INDUSTRIES
+share price
+HINDUSTAN UNILEVER
+share price
+ICICI BANK
+share price
+ITC
+share price
+INDUSIND BANK
+share price
+INFOSYS
+share price
+JSW STEEL
+share price
+KOTAK BANK
+share price
+LARSEN & TOURBO
+share price
+MAHINDRA & MAHINDRA
+share price
+MARUTI SUZUKI
+share price
+NTPC
+share price
+NESTLE INDIA
+share price
+ONGC
+share price
+POWER GRID
+share price
+RELIANCE INDUSTRIES
+share price
+SBI LIFE
+share price
+SBI
+share price
+SUN PHARMA
+share price
+TCS
+share price
+TATA MOTORS
+share price
+TATA STEEL
+share price
+TATA CONSUMER
+share price
+TECH MAHINDRA
+share price
+TITAN
+share price
+UPL
+share price
+ULTRATECH CEMENT
+share price
+WIPRO
+share price
+Gold and Silver Data Pages
+Gold Rate Delhi
+Silver Rate Delhi
+Gold Rate Noida
+Silver Rate Noida
+Gold Rate Mumbai
+Silver Rate Mumbai
+Gold Rate Chennai
+Silver Rate Chennai
+Gold Rate Bangalore
+Silver Rate Bangalore
+Gold Rate Kolkata
+Silver Rate Kolkata
+Gold Rate Hyderabad
+Silver Rate Hyderabad
+Gold Rate Ahmedabad
+Silver Rate Ahmedabad
+Gold Rate Pune
+Silver Rate Pune
+Gold Rate Jaipur
+Silver Rate Jaipur
+Latest Stories
+US-blacklisted Chinese university buys Nvidia H200 AI chips through domestic suppliers: Report
+Moving abroad? Managing banking and finances with IDFC FIRST Bank in India
+Why Shakti Pumps shares are rising 11% today amid Sensex, Nifty rally?
+Scientific research, granular data key to tackling climate, food security
+How the government finance math looks more challenging in H2 FY27
+iPhone 16 gets massive price cut on Flipkart: How to buy it for just  ₹19,655
+Who is Nageshwar Rao? Ex-CBI chief’s SSP seeks candidates for 403 seats in UP
+Artificial intelligence: Why it could be the last blow to higher education
+WhatsApp India head Kunal Shah's lists 3 priorities to make ‘connections richer'
+Once AI darling of shareholders, Nvidia sued by own stock buyers; $420 bn lost
+Sections
+Premium
+Opinion
+News
+Market
+Politics
+Companies
+Money
+Sports
+Mutual Fund
+Industry
+Technology
+Tools
+IFSC Code Finder
+Income Tax Calculator
+Home Loan EMI Calculator
+Car Loan EMI
+NPS Calculator
+Data Pages
+Market Dashboard
+Indices
+Top Gainer
+Mutual Funds
+Gold Price
+Silver Price
+Fuel Price
+Powered by
+Trading Strategies
+Technical Analysis
+F&O Expiry Calendar
+Gold Rates Today
+SIP Calculator
+About Us
+Mint Authors
+Contact us
+Terms of Use
+Code of Ethics
+Privacy Policy
+RSS
+SITEMAP
+Disclaimer
+Mint Code
+Cookie Policy
+Subscriber - Terms of Use
+Mint Apps
+From the House of Hindustan Times
+Copyright
+©
+2026
+HT
+Digital Streams Limited. All Rights Reserved.
+✕
+Wait for it…
+Log in to our website to save your bookmarks. It'll just take a moment.
+Yes, Continue
+✕
+Wait for it…
+Oops! Looks like you have exceeded the limit to bookmark the image. Remove some to bookmark this image.

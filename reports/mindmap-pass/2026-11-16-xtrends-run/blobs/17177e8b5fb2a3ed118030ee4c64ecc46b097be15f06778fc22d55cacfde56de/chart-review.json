@@ -1,0 +1,102 @@
+{
+  "jobId": "2026-11-16-xtrends",
+  "reviewer": "mindmap-chart-reviewer",
+  "round": 2,
+  "manifestSha256": "72c35f9d9ecdd4e6cc0d7538fc5bba48796cfd131a0e8bda8fb6f41767f041d3",
+  "manifestFileSha256": "c1d1cd47877d867e8979c0fcf4e22481a42a500e8bc7d4292a5007b2c1bac905",
+  "readinessSha256": "15c81bec9e01366baad9c023f4f67e4fad0d0d495efec5d9a39b07441d33d0cc",
+  "verdict": "PASS",
+  "evidence": "Round 2 of 2, same reviewer. Re-read revised manifest, readiness corrections and new saved sources (gemini-connected-apps-help.txt, plaid-consumers.txt, three autocomplete CSVs). F1 resolved: A1 gives $34,000 (IRS) and $37,250 (our calculation 25,500+11,750); deltas $1,000/$500/$500 match IRS. F2 resolved: Roth threshold section quotes Notice 2026-66 verbatim, forbids FICA/prior-year-wage paraphrase. F3/F4 resolved: A5 answer states credit = benchmark minus income contribution, credit remains below 400% FPL, none above by law, cheaper/bronze plan trades premium for deductible (KFF 37% deductible, CSR loss), HealthCare.gov Dec 15/Jan 15 with state-exchange caveat, KFF named; traced to saved KFF/HealthCare.gov text. F5 resolved: sweeps saved (aca 38 suggestions/0 on-intent; gemini 37/7 on-intent), tags honest; unread SERP/PAA accepted fallback. F6 resolved: Gemini Connected Apps help (delete chats AND disconnect; Personal Intelligence off does not stop chat saving; Wallet data scope) and Plaid consumer page (Plaid Portal deletion) support the brief; Google Pay Help supports stored fields; unanswered items (Gemini chat retention duration, Plaid handling after unlink in Wallet, Google's separate data-handling page unread) are disclosed, and takeaway says read-only limits actions not data exposure. F7 resolved: A8/A9 added, A1 inbound required 4 = 4 placements, REQ-4 removed with C2/C5 in exclusions and disposition table (acceptable). Duplicate rulings unchanged: A1, A5, A6 PASS, no cannibalization. No TESTED labels; financial/insurance exclusion honored; attribution names IRS, KFF, Google, Plaid. Guardrails for WRITE/AUDIT (non-blocking): A6 keep unanswered-retention disclosure and never say Plaid deletes data after Wallet unlink; A5 date KFF figures and keep state-exchange caveat; A1 Roth paragraph verbatim; per-paycheck figures labelled our calculation; A5 additive edit with date bump; HIGH profile A1 and A5, A6 escalate on privacy claims. No liabilityBlock.",
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "major",
+      "action": "A1",
+      "issue": "Outline section 2 says '$34,000 and $36,250 totals'. 25,500 + 11,750 = 37,250 (2026 equivalent 35,750 is on the live 2026 guide). $36,250 is not in IRS IR-2026-136 or Notice 2026-66.",
+      "fix": "Change to $34,000 (age 50+) and $37,250 (ages 60-63, calculated from IRS $25,500 + $11,750), label the sum as our calculation; add both totals to the closed fact list and re-verify the 2026-vs-2027 table deltas ($1,000, $500, $500).",
+      "status": "resolved-round-2"
+    },
+    {
+      "id": "F2",
+      "severity": "moderate",
+      "action": "A1",
+      "issue": "Roth catch-up wage threshold section is under-specified. Notice 2026-66 words it as the Roth catch-up wage threshold 'for 2026' used to decide whether 2027 catch-ups must be Roth ($150,000 to $155,000). The outline could be written as 'earn over $155,000 in 2027', and employer/FICA-wage detail is not in the saved sources.",
+      "fix": "Quote the notice wording in the fact list (threshold applied to wages measured a year earlier, only for catch-ups, plan-specific), forbid unsourced detail (FICA, same-employer) unless added from a saved primary source, and state the plan-adoption caveat.",
+      "status": "resolved-round-2"
+    },
+    {
+      "id": "F3",
+      "severity": "major",
+      "action": "A5",
+      "issue": "Working answer says under 400% FPL 'a lower-priced plan or updated income can restore a credit'. A cheaper plan does not restore a credit (credit = benchmark silver minus income contribution, capped at the chosen plan premium, per the page's own formula); it lowers the net premium. HIGH-profile consequential claim, unsupported by KFF/HealthCare.gov.",
+      "fix": "Rewrite: below 400% FPL you still get a credit (smaller than under the expired enhanced credits); a corrected income estimate changes the credit; a cheaper or bronze plan lowers what you pay but trades premium for deductible; above 400% FPL there is no credit by law (KFF). Keep consistent with the existing formula and 'Updating income' sections.",
+      "status": "resolved-round-2"
+    },
+    {
+      "id": "F4",
+      "severity": "moderate",
+      "action": "A5",
+      "issue": "(a) Action row states 'December 15 / January 15' without the platform caveat BUILD recorded in readiness (HealthCare.gov dates apply to the HealthCare.gov platform; state exchanges vary). (b) KFF +58% ($113 to $178) and +37% deductible are 2026 vs 2025 figures; row context risks presenting them as 2027. (c) Readiness says 'official sources only' but KFF is a research nonprofit.",
+      "fix": "Carry the state-exchange caveat into the answer, date every KFF figure (2026 vs 2025; 2027 benchmark silver +13%), name KFF visibly as the source, and correct the readiness wording. Do not use the X-post Wisconsin 22% or $1,800 figures (already excluded).",
+      "status": "resolved-round-2"
+    },
+    {
+      "id": "F5",
+      "severity": "moderate",
+      "action": "A5,A6",
+      "issue": "Step 4.6 requires the free keyless Autocomplete question sweep for every content row. A6 says 'autocomplete not run on this seed' yet is tagged '[verb-only - no PAA, no completions]', which misstates a skipped step as an empty result; A5 has the same tag with no sweep. Only A1 had a sweep (95 suggestions).",
+      "fix": "Run autocomplete.py --mode questions for A5 and A6 seeds, save the CSV under research/, update reader_question evidence tags honestly (use real completions, or '[verb-only - sweep run, 0 completions]'), and list real question completions as FAQ spec. SERP/PAA remains honestly 'unread' (no DataForSEO key); that fallback is accepted.",
+      "status": "resolved-round-2"
+    },
+    {
+      "id": "F6",
+      "severity": "major",
+      "action": "A6",
+      "issue": "Privacy research central to the takeaway is unfinished. The A6 answer is a privacy decision, but the outline omits facts already in the saved Help page (Google and Plaid store card/bank account numbers, routing number, transaction history, balances, name, address, phone, email while linked; Keep Activity must be on) and relies on sources that do not cover Gemini-side retention. Google's 'how your data is handled with Connected Apps' page was not read; whether Plaid deletes data after unlinking from Google is not established (Help says only that Plaid keeps data for non-Google links). 'Read-only' must not become an unconditional safety claim.",
+      "fix": "Either fetch and save Google's Connected Apps data-handling / Gemini Privacy Hub page and Plaid's end-user privacy/Portal deletion page and map them into the brief, or narrow the outline: add a 'what Google and Plaid store while linked' row, state Keep Activity requirement and its implication only as sourced, and say plainly which retention questions Google's pages do not answer. Test the takeaway against that counterexample.",
+      "status": "resolved-round-2"
+    },
+    {
+      "id": "F7",
+      "severity": "mechanical",
+      "action": "A1,A6,REQ-4",
+      "issue": "Brief link placements target /retirement/401k-calculator/ (A1 inbound + outbound) and /budget/monthly-budget-calculator (A6 inbound) but no action row exists for those edits, so scope checks would block Phase 6 on them; A1 inbound 'required: 3' lists 4 placements; REQ-4 (rejections) maps only to A1 structurally. Titles/headings pass the 50-60 char and ban checks; minor: 'Turn It Off' pronoun heading in A6 could name Google Wallet in Gemini.",
+      "fix": "Add add-internal-links rows (or drop those placements) so every placement has an action; reconcile counts; MAIN may run rebind-mechanical for field/hash items; keep REQ-4 mapped to the exclusions evidence.",
+      "status": "resolved-round-2"
+    },
+    {
+      "id": "G1",
+      "severity": "note",
+      "action": "A6",
+      "issue": "Google's separate Gemini data-handling page was not read; chat-retention duration unknown.",
+      "fix": "Keep on-page disclosure of what is unanswered; AUDIT confirms no retention or deletion claim beyond saved sources.",
+      "status": "open-guardrail"
+    }
+  ],
+  "resolvedFindingIds": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7"
+  ],
+  "requestCoverage": [
+    {
+      "requirementId": "REQ-1",
+      "status": "PASS",
+      "evidence": "A1 page with corrected IRS figures; A2-A4 and A8 inbound links inspected; acceptance met in plan."
+    },
+    {
+      "requirementId": "REQ-2",
+      "status": "PASS",
+      "evidence": "A5 section 1 enrichment on exact route with corrected credit logic, 400% FPL line, metal-level trade-off, deadlines with caveat; no unsourced figure."
+    },
+    {
+      "requirementId": "REQ-3",
+      "status": "PASS",
+      "evidence": "A6 answers connect/can-cannot/turn-off-and-delete from Google and Plaid primary pages with disclosed unknowns; A7 and A9 inbound links."
+    }
+  ]
+}

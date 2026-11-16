@@ -1,0 +1,126 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "writer-xtrends",
+  "route": "/guides/retirement-contribution-limits-2027",
+  "readerQuestion": "What are the 2027 401(k), IRA and TSP contribution limits? [ac: 3 question completions what-is/what-will/catch-up from 95 autocomplete suggestions; PAA unread - no DataForSEO key]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/approval-manifest.json",
+      "sha256": "c1d1cd47877d867e8979c0fcf4e22481a42a500e8bc7d4292a5007b2c1bac905"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/chart-review.json",
+      "sha256": "17177e8b5fb2a3ed118030ee4c64ecc46b097be15f06778fc22d55cacfde56de"
+    },
+    "actionId": "A1"
+  },
+  "presentation": {
+    "medium": "text",
+    "placement": "Section 1 opening answer then comparison table",
+    "reason": "The reader needs a finite set of figures by account type and age, which a table answers faster than a tool",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "Limits are fixed IRS figures; a per-paycheck helper is a single sentence of arithmetic in the takeaway, not a tool"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static layout answers faster; no sequence or input changes to animate"
+    }
+  },
+  "basis": "calculated",
+  "decisionGap": "Readers choosing 2027 payroll elections during open enrollment cannot get the 2027 limits from our 2026 pages. Existing guides answer 2026 limits only, and the IRS announcement lists figures without a side-by-side 2026-vs-2027 table or the 60-63 total.",
+  "finding": "The 2027 employee deferral limit for 401(k), 403(b), governmental 457 and TSP is $25,500 (up $1,000). Catch-up is $8,500 at 50+ (total $34,000) and $11,750 at ages 60-63 (total $37,250 by our calculation: $25,500 + $11,750). The IRA limit stays $7,500 with a $1,100 catch-up. Maxing $25,500 takes $980.77 per biweekly paycheck (26 pay periods) or $2,125.00 per month, by our calculation.",
+  "conditions": "Figures are the IRS legal maximums; a plan can set a lower cap or not offer catch-up or Roth. Catch-up needs a plan that allows it. The 60-63 catch-up replaces (does not add to) the $8,500 catch-up. Per-paycheck amounts assume 26, 24 or 12 equal pay periods; some biweekly calendars have 27 paychecks.",
+  "whatWouldChange": "A plan-specific deferral cap below the legal limit, a plan that does not offer the 60-63 catch-up or Roth catch-up, a pay calendar with 27 paychecks, or an IRS correction to Notice 2026-66 would change the figure a reader should use.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-16-xtrends-run/evidence/retirement-contribution-limits-2027/cases.json",
+    "sha256": "32ce071e51711f513e343b5f9e6e62b39ffe9f9f231bbc698b6eec5acb3e826a"
+  },
+  "caseDecisions": "cases.json returned 8 low-relevance candidates (topic matches only on 'and/the/what'), all Layer3Labs owned-property records for unrelated products; none applies to retirement limits, so no case or client-conversation claim is used. No survey records exist for this site.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/x-trends/2026-11-16.md",
+      "sha256": "ca24a823d3c1b30dc3bcbc58bd24252286b47479c69a6a179680164de983ca3e"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/coverage-lookup.txt",
+      "sha256": "7910f20cf01fd0b852addf3da132b0f2b4957949a8cba50e6d3400f7273ce0cc"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/autocomplete-2027-limits.csv",
+      "sha256": "8a48d0e90f78219536cc7c3817e98781ea530cd38b4cfd3df8c791aa0c7f102d"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/irs-ir-2026-136.txt",
+      "sha256": "e0fe2ff6a5b6f00e3618c481d1eed2fd00a752e800053e7d115cf7834ef8369f"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/irs-notice-2026-66.txt",
+      "sha256": "c30cdc5c7f589b8e679b039d7e868203206f4cf77e18688517337b8f5babfd5f"
+    }
+  ],
+  "caseUses": [],
+  "method": "Reported IRS figures (IR-2026-136 and Notice 2026-66, saved verbatim 2026-11-16) plus deterministic arithmetic: total = deferral limit + catch-up; per-period = total / pay periods.",
+  "units": "US dollars per calendar year; US dollars per pay period",
+  "limitations": "Arithmetic only. It uses IRS figures as inputs and does not model employer match, plan caps, tax savings or investment growth. Pay-period division is equal-split and ignores payroll calendars with 27 paychecks.",
+  "counterexample": "A worker paid every other Friday can receive 27 paychecks in a calendar year; the 26-period figure ($980.77) then overshoots the $25,500 cap by one paycheck and the 27-period figure ($944.44) applies. Another counterexample: a plan that caps deferrals below $25,500 makes the legal limit irrelevant to that worker.",
+  "execution": {
+    "command": [
+      "python3",
+      "reports/mindmap-pass/2026-11-16-xtrends-run/evidence/retirement-contribution-limits-2027/calc.py",
+      "reports/mindmap-pass/2026-11-16-xtrends-run/evidence/retirement-contribution-limits-2027/inputs.json",
+      "reports/mindmap-pass/2026-11-16-xtrends-run/evidence/retirement-contribution-limits-2027/calc-output.json"
+    ],
+    "code": {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/evidence/retirement-contribution-limits-2027/calc.py",
+      "sha256": "8c2efe805f8ceb8a2488594aecbe5b2d75edae438ffca2c10b285430ecdabc37"
+    },
+    "inputs": [
+      {
+        "path": "reports/mindmap-pass/2026-11-16-xtrends-run/evidence/retirement-contribution-limits-2027/inputs.json",
+        "sha256": "6744f18bb9802cfdd13c6089e331e56ac99f7c657e65f519749fecea8494b2ec"
+      }
+    ],
+    "output": {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/evidence/retirement-contribution-limits-2027/calc-output.json",
+      "sha256": "c20560a08282429e4e1032b9ffc54e00bf24590ddd29828f05cf3be40902f9ce"
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-25500-for-2027-ira-limit-remains-7500",
+      "checkedAt": "2026-11-16",
+      "label": "IRS IR-2026-136"
+    },
+    {
+      "url": "https://www.irs.gov/pub/irs-drop/n-26-66.pdf",
+      "checkedAt": "2026-11-16",
+      "label": "IRS Notice 2026-66"
+    }
+  ],
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [
+      "irs-ir-2026-136",
+      "irs-notice-2026-66",
+      "calc-output.json"
+    ],
+    "scopeAndLimits": "IRS figures are reported as IRS announcements. Only the $37,250 age 60-63 total and the per-paycheck amounts are our calculation. No product test, client record or survey is claimed.",
+    "publicMethod": "Shown on the page beside the figures: the sum ($25,500 + $11,750) and the division by 26 biweekly or 12 monthly pay periods, with the 27-paycheck exception stated.",
+    "placement": "Section 'What Maxing Out 2027 Takes Per Paycheck' and the age 60-63 row note in the limits table; takeaway section."
+  },
+  "findings": [
+    {
+      "label": "reported",
+      "text": "401(k)/403(b)/457/TSP $25,500; catch-up $8,500 (50+) and $11,750 (60-63); IRA $7,500, IRA catch-up $1,100; SIMPLE $17,500 / $19,100; total limit $75,000; Roth catch-up wage threshold $155,000 per Notice 2026-66"
+    },
+    {
+      "label": "calculated",
+      "text": "$37,250 total at 60-63; $980.77 biweekly and $2,125.00 monthly to max $25,500; deltas $1,000, $500, $500"
+    }
+  ],
+  "exclusions": "No TESTED labels, howWeTested or testing claims (financial content excluded under _experience section G). No FICA, same-employer or prior-year-wage detail for the Roth catch-up threshold beyond the quoted Notice text. No professional-review claim.",
+  "unknowns": "Whether a given employer plan offers catch-up, the 60-63 catch-up or Roth catch-up; whether a given pay calendar has 26 or 27 paychecks; PAA text (unread: no DataForSEO key).",
+  "selectedMedium": "text with two tables (limits 2026 vs 2027; IRA phase-outs); no tool because limits are fixed IRS figures"
+}

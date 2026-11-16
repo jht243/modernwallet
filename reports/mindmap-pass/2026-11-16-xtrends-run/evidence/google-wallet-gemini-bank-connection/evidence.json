@@ -1,0 +1,152 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "writer-xtrends",
+  "route": "/guides/google-wallet-gemini-bank-connection",
+  "readerQuestion": "Should I connect my bank accounts to Gemini through Google Wallet? [ac 7/37 on-intent question completions (what it does, how it works, is it safe, is it free, should it be used, does it work, not working); PAA unread - no DataForSEO key]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/approval-manifest.json",
+      "sha256": "c1d1cd47877d867e8979c0fcf4e22481a42a500e8bc7d4292a5007b2c1bac905"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/chart-review.json",
+      "sha256": "17177e8b5fb2a3ed118030ee4c64ecc46b097be15f06778fc22d55cacfde56de"
+    },
+    "actionId": "A6"
+  },
+  "presentation": {
+    "medium": "text",
+    "placement": "Section 1 opening answer then a what-it-can-and-cannot-do table",
+    "reason": "The reader needs a decision plus steps; a finite can/cannot table beats a tool",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "No variable inputs change the answer; it is a policy and privacy decision"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static layout answers faster; no sequence or input changes to animate"
+    }
+  },
+  "basis": "reported",
+  "decisionGap": "Readers deciding whether to link banks to an AI assistant lack one neutral page that lists what Gemini can see, what it cannot do, what Google and Plaid store, who is eligible, how to turn it off, and what Google's pages leave unanswered.",
+  "finding": "Connect Google Wallet to Gemini only if you want conversational spending analysis and accept that Google and Plaid store your account details and transaction history while accounts are linked and that Gemini chats are saved while Keep Activity is on. Google says Gemini can only read the data and cannot move, manage or invest money. That limits actions, not data exposure. To delete what Gemini remembered you must delete the chats and disconnect the app.",
+  "conditions": "US, 18 or over, personal Google Account (not work, school or supervised), Keep Activity on, English, Gemini mobile app and gemini.google.com, not in Gems or Gemini Live; rollout is gradual per the Help page (the blog says rolling out today to all Gemini app users in the U.S.).",
+  "whatWouldChange": "A change to Google's or Plaid's data-use terms, Google publishing chat-retention duration for Wallet data, or Plaid stating how it treats data after an unlink inside Google Wallet would change the privacy trade-off.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-16-xtrends-run/evidence/google-wallet-gemini-bank-connection/cases.json",
+    "sha256": "01baae5c29a8cd8542e5c49502db5e71671b2852378e063d7e2e000ce844fcb4"
+  },
+  "caseDecisions": "cases.json returned no relevant approved case; no client or testing claim used. We did not test Gemini.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/x-trends/2026-11-16.md",
+      "sha256": "ca24a823d3c1b30dc3bcbc58bd24252286b47479c69a6a179680164de983ca3e"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/coverage-lookup.txt",
+      "sha256": "7910f20cf01fd0b852addf3da132b0f2b4957949a8cba50e6d3400f7273ce0cc"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/gemini-connected-apps-help.txt",
+      "sha256": "05a5278db883256d4b227edb2fa50bf70c24b365d47d164407b8ed08ae31faa7"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/plaid-consumers.txt",
+      "sha256": "11dc7925399506b4219bd493cbd1e7cb97f2b4d6664d6f2060d8633d54c5182b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/google-wallet-gemini.txt",
+      "sha256": "34e9ab219bc4f72b8c64d9eaed969d80235d8cb41f4b6b01b8ebd4e5005c9b4a"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/gemini-help-wallet.txt",
+      "sha256": "4c63d3b79690a2a0d6b453314bb5593df1178c82d2244cef70c2cac78669a6e2"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/googlepay-plaid-help.txt",
+      "sha256": "c04d0f0571158eb6b62433e1016651109e3acbfc575188225687279a38f47331"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/plaid-blog.txt",
+      "sha256": "06481ff0f6174075ff06f07d39df1e2af37c2e92d4195713c455727a965137dc"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/gemini-connected-apps-data.txt",
+      "sha256": "1fbcae32f5d0040991f1e05e53fd7bc59b6f952c23ffb3679bed3ab781dd3614"
+    }
+  ],
+  "whyNoQuantitativeAnalysis": "The decision is a policy and privacy question answered by Google's and Plaid's own published statements. No defensible numeric model exists and no Gemini test was run.",
+  "reasoning": "Blog (Nov 13, 2026): Gemini can only read information from your accounts, cannot move, manage or invest money; connection can be turned on or off. Gemini Apps Help 18112192: eligibility list, Keep Activity required, cannot make transactions or update/delete connected accounts, disconnect in Connected Apps, unlink Plaid accounts in Google Wallet settings. Google Pay Help 10193349: Google and Plaid both store account/card number, routing number, transaction history, balance, name, address, phone, email while linked; removing an account from Google Wallet deletes that account's transaction history at Google; Plaid keeps data for non-Google links. Gemini Connected Apps Help 16598406: delete chats containing the info AND disconnect the app; turning Personal Intelligence off does not stop chats being saved; Wallet data covers payment methods, receipts, Wallet data and linked financial account info. Plaid consumer page: delete data from Plaid's systems via Plaid Portal. Counterexample to the read-only claim: read-only limits what Gemini can do with money, but storage and chat retention are separate and not answered by the saved pages (chat-retention duration; Plaid handling after unlink in Wallet; Google's separate Gemini data-handling page not read). Therefore the supported conclusion is conditional.",
+  "caseUses": [],
+  "sources": [
+    {
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+      "checkedAt": "2026-11-16",
+      "label": "Google blog Nov 13 2026"
+    },
+    {
+      "url": "https://support.google.com/gemini/answer/18112192",
+      "checkedAt": "2026-11-16",
+      "label": "Gemini Apps Help Google Wallet"
+    },
+    {
+      "url": "https://support.google.com/gemini/answer/16598406?hl=en",
+      "checkedAt": "2026-11-16",
+      "label": "Gemini Apps Help Connected Apps"
+    },
+    {
+      "url": "https://support.google.com/googlepay/answer/10193349?hl=en",
+      "checkedAt": "2026-11-16",
+      "label": "Google Pay Help Plaid"
+    },
+    {
+      "url": "https://plaid.com/how-it-works-for-consumers/",
+      "checkedAt": "2026-11-16",
+      "label": "Plaid for consumers"
+    },
+    {
+      "url": "https://plaid.com/blog/google-wallet-gemini-plaid/",
+      "checkedAt": "2026-11-16",
+      "label": "Plaid blog Nov 13 2026"
+    },
+    {
+      "url": "https://support.google.com/gemini/answer/16836988?hl=en",
+      "checkedAt": "2026-11-16",
+      "label": "Gemini Apps Help Connected Apps data"
+    }
+  ],
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [
+      "google-wallet-gemini.txt",
+      "gemini-help-wallet.txt",
+      "gemini-connected-apps-help.txt",
+      "googlepay-plaid-help.txt",
+      "plaid-consumers.txt",
+      "plaid-blog.txt",
+      "gemini-connected-apps-data.txt"
+    ],
+    "scopeAndLimits": "All claims are attributed to Google or Plaid ('Google says', 'Google's Help page states'). We did not test Gemini, Google Wallet or Plaid. Unanswered: Gemini chat-retention duration for account details, Plaid treatment of data after unlinking inside Google Wallet, Google's Connected Apps data page was read in audit round 2 and is now cited.",
+    "publicMethod": "Each claim names its source page in the text with a link; the page lists what the sources do not answer.",
+    "placement": "Every section; 'Privacy Trade-Offs for Budgeting' states the unanswered items; takeaway names Google and Plaid as the sources."
+  },
+  "findings": [
+    {
+      "label": "reported",
+      "text": "read-only access statement; stored data fields; eligibility; two-step deletion; Plaid Portal; unlink deletes Google's transaction history for that account"
+    },
+    {
+      "label": "unknown",
+      "text": "Gemini chat-retention duration; Plaid handling after unlink in Wallet"
+    },
+    {
+      "label": "reported",
+      "text": "Google's Connected Apps data page: a subset of Connected Apps data is reviewed by human reviewers, including interactions, summaries, excerpts and inferences from Google Wallet and payment services information; Gemini Apps activity is used to improve Google services including training generative AI if Keep Activity is on"
+    }
+  ],
+  "exclusions": "No testing, TESTED or howWeTested claim. Never say Plaid deletes data after unlinking inside Google Wallet. Never turn 'read-only' into a safety guarantee. No retention duration claim.",
+  "unknowns": "Chat retention duration for chats containing account details; Plaid post-unlink handling; PAA text (unread).",
+  "selectedMedium": "text with one can/cannot table",
+  "method": "Reported statements from saved primary pages mapped to the reader decision, with the strongest counterexample (read-only vs storage and retention) tested."
+}

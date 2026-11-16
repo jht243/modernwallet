@@ -1,0 +1,32 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "writer-xtrends",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/guides/retirement-contribution-limits-2027",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/budget/aca-subsidy-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/google-wallet-gemini-bank-connection",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/roundup/best-budgeting-apps",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "2026-11-16-xtrends"
+}

@@ -88,6 +88,7 @@ const DESCRIPTION_TOPICS: Record<string, string[]> = {
 // Add a slug here to switch a page off by hand; nothing else needs to change.
 const EXCLUDED_SLUGS = new Set<string>([
   'dataannotation-alternatives', // AI-training gig work platforms (employers), not apps
+  'best-budgeting-apps', // no run records or review artifact back a testing label for this roundup
 ]);
 
 const words = (s: string): string[] => s.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);

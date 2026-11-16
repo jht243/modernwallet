@@ -1,0 +1,143 @@
+pected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/kff-2027-oe.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/9081fed0f7a4cc9de49ecfd5b431379a4e90debfaababc48d0110751732cded5/healthcare-gov-dates.txt",
+      "sha256": "9081fed0f7a4cc9de49ecfd5b431379a4e90debfaababc48d0110751732cded5",
+      "checkedAt": "2026-11-16T17:38:44.481229+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/healthcare-gov-dates.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/05a5278db883256d4b227edb2fa50bf70c24b365d47d164407b8ed08ae31faa7/gemini-connected-apps-help.txt",
+      "sha256": "05a5278db883256d4b227edb2fa50bf70c24b365d47d164407b8ed08ae31faa7",
+      "checkedAt": "2026-11-16T17:38:44.481229+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/gemini-connected-apps-help.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/11dc7925399506b4219bd493cbd1e7cb97f2b4d6664d6f2060d8633d54c5182b/plaid-consumers.txt",
+      "sha256": "11dc7925399506b4219bd493cbd1e7cb97f2b4d6664d6f2060d8633d54c5182b",
+      "checkedAt": "2026-11-16T17:38:44.481229+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/plaid-consumers.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/34e9ab219bc4f72b8c64d9eaed969d80235d8cb41f4b6b01b8ebd4e5005c9b4a/google-wallet-gemini.txt",
+      "sha256": "34e9ab219bc4f72b8c64d9eaed969d80235d8cb41f4b6b01b8ebd4e5005c9b4a",
+      "checkedAt": "2026-11-16T17:38:44.481229+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/google-wallet-gemini.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/4c63d3b79690a2a0d6b453314bb5593df1178c82d2244cef70c2cac78669a6e2/gemini-help-wallet.txt",
+      "sha256": "4c63d3b79690a2a0d6b453314bb5593df1178c82d2244cef70c2cac78669a6e2",
+      "checkedAt": "2026-11-16T17:38:44.481229+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/gemini-help-wallet.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/c04d0f0571158eb6b62433e1016651109e3acbfc575188225687279a38f47331/googlepay-plaid-help.txt",
+      "sha256": "c04d0f0571158eb6b62433e1016651109e3acbfc575188225687279a38f47331",
+      "checkedAt": "2026-11-16T17:38:44.481229+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/googlepay-plaid-help.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/06481ff0f6174075ff06f07d39df1e2af37c2e92d4195713c455727a965137dc/plaid-blog.txt",
+      "sha256": "06481ff0f6174075ff06f07d39df1e2af37c2e92d4195713c455727a965137dc",
+      "checkedAt": "2026-11-16T17:38:44.481229+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/plaid-blog.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/77b4813bc043b425da940eaa4727b4d08faa498e4ef87c8525ae78d787dec89d/livemint-amex.txt",
+      "sha256": "77b4813bc043b425da940eaa4727b4d08faa498e4ef87c8525ae78d787dec89d",
+      "checkedAt": "2026-11-16T17:38:44.481229+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/livemint-amex.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/46bf02a4953c5090a6a8f4e3f9acc86956efe0d0f87d656dce6b13a84cb8f77f/kotaku-gta6.txt",
+      "sha256": "46bf02a4953c5090a6a8f4e3f9acc86956efe0d0f87d656dce6b13a84cb8f77f",
+      "checkedAt": "2026-11-16T17:38:44.481229+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/sources/kotaku-gta6.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/221136fb28ace7f4dcd24dc230c7896964d4315e666d1a83fc7f9aa59e8ea156/autocomplete-aca-premium.csv",
+      "sha256": "221136fb28ace7f4dcd24dc230c7896964d4315e666d1a83fc7f9aa59e8ea156",
+      "checkedAt": "2026-11-16T17:38:44.481229+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/autocomplete-aca-premium.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/d4d95255a4c9e9fa9560564b84c611cf0bc0d2e0f01dc2276966614d0c715998/autocomplete-gemini-wallet.csv",
+      "sha256": "d4d95255a4c9e9fa9560564b84c611cf0bc0d2e0f01dc2276966614d0c715998",
+      "checkedAt": "2026-11-16T17:38:44.481229+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/research/autocomplete-gemini-wallet.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/db454c8abf4883692f63cfa7b8c3125bc4e01fc4b830f0b654f114a8eb5eb7f1/review.json",
+      "sha256": "db454c8abf4883692f63cfa7b8c3125bc4e01fc4b830f0b654f114a8eb5eb7f1",
+      "checkedAt": "2026-11-16T17:38:44.481229+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report",
+      "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/audit/review.json"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 1,
+    "reworks": 1
+  },
+  "siteId": "jht243/modernwallet",
+  "snapshot": {
+    "path": "reports/mindmap-pass/2026-11-16-xtrends-run/blobs/0e04c7e5142efd2587492950cecd2bd4eb8fbb4d32bbfd5190453c2d7c1d76a6/preview-snapshot-r2.json",
+    "sha256": "0e04c7e5142efd2587492950cecd2bd4eb8fbb4d32bbfd5190453c2d7c1d76a6",
+    "originPath": "reports/mindmap-pass/2026-11-16-xtrends-run/audit/preview-snapshot-r2.json"
+  },
+  "findings": [
+    {
+      "id": "AUD-A1-1",
+      "status": "open",
+      "evidence": "FIX /guides/retirement-contribution-limits-2027 sections[0].body: \"| Roth catch-up wage threshold used for the following year's designation | $150,000 | $155,000 | Up $5,000 |\" -> \"| Roth catch-up wage threshold (the 2027 column is the 2026 threshold that governs 2027 catch-ups) | $150,000 | $155,000 | Up $5,000 |\""
+    },
+    {
+      "id": "AUD-A1-2",
+      "status": "open",
+      "evidence": "FIX sections[2].body: delete the leading \"> \" and keep the quoted sentence in quotation marks on its own paragraph."
+    },
+    {
+      "id": "AUD-A1-3",
+      "status": "open",
+      "evidence": "FIX sections[0].body: delete those two sentences and start the paragraph at \"The table separates the regular limit from catch-ups so you can use the row that matches your age and account.\""
+    },
+    {
+      "id": "AUD-A1-4",
+      "status": "open",
+      "evidence": "FIX: replace each semicolon with a period and capitalize the next word; delete the sentence \"The notice's wording is important when discussing timing: it identifies a threshold for 2026 that is used for 2027 catch-up contributions.\" only if AUD-A1-1 is applied, because the table row then states it."
+    },
+    {
+      "id": "AUD-A1-5",
+      "status": "open",
+      "evidence": "Route /guides/retirement-contribution-limits-2027 audit finding: None required. (requires targeted fix)"
+    },
+    {
+      "id": "R1-1-checks-renderedLayout",
+      "status": "open",
+      "evidence": "The Roth notice quote renders as a paragraph beginning with a literal '> ' (HTML shows &gt;), because blockquote markdown is not parsed. Tables render as prose-table."
+    },
+    {
+      "id": "R1-1-check
