@@ -246,7 +246,10 @@ def cmd_set(state, args):
     fields = {}
     for item in args.field or []:
         key, _, value = item.partition('=')
-        fields[key] = json.loads(value)
+        try:
+            fields[key] = json.loads(value)
+        except json.JSONDecodeError:
+            fields[key] = value
     if args.status == 'published':
         url = fields.get('liveUrl') or row.get('liveUrl')
         if not (isinstance(url, str) and url.startswith('https://')):
