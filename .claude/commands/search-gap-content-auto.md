@@ -25,6 +25,10 @@ Run startup as a standalone command and inspect its actual exit code; never pipe
 Startup returns a fresh `runId` after verification; pass it via `--run-id` to this run's later startup checks and every `workflow-preflight.py prepare`. Never reuse an old run ID for a new routine, including in the same chat. A runner may instead supply a fresh per-invocation `WORKFLOW_RUN_ID` consistently.
 <!-- /workflow-source-freshness-v1 -->
 
+<!-- turn1-telemetry-opt-v1 -->
+> **⚡ ZERO-TURN COLLECTOR NO-OP RULE (2026-11-16):** Before reading the rest of this file, loading `_decision-evidence.md` / `_testing-labels.md`, or pinning a deploy base, run the STEP 1 intake pull FIRST (`--fast-noop` where supported, or `python3 .claude/tools/routine-fast-exit.py json-candidates --skill search-gap-content-auto --site <BASE_URL> --input <pull.json> --post-collector`). When `candidateCount == 0` / `"fastExit": true` (`"collectorPosted": true`), the collector `no-op` (`https://layer3labs-web.onrender.com/api/routine-run`) is **already posted** — **STOP immediately in this turn**. NEVER grep `.claude/scripts/send-routine-email.py`, NEVER write a scratchpad POST script, and NEVER call `/api/routine-run` again.
+<!-- /turn1-telemetry-opt-v1 -->
+
 
 > **‼️ PROSE RULE FOR THIS RUN (2026-09-07) — READ BEFORE ANY PHASE FILE.** Every page this run
 > creates and every enrichment longer than ONE sentence (a section, an FAQ answer, body

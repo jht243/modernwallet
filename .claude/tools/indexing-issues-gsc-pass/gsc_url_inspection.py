@@ -119,13 +119,36 @@ def resolve_sa_info(sa_file_override: Optional[str] = None) -> tuple[dict, str]:
     sys.exit(2)
 
 
+def _ensure_google_deps() -> None:
+    try:
+        import requests  # noqa: F401
+        from google.auth.transport.requests import Request  # noqa: F401
+        from google.oauth2 import service_account  # noqa: F401
+        return
+    except ImportError:
+        import subprocess
+        for extra in (["--break-system-packages"], []):
+            try:
+                subprocess.check_call(
+                    [sys.executable, "-m", "pip", "install", "-q", "--disable-pip-version-check", *extra, "google-auth", "requests"],
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                )
+                import requests  # noqa: F401
+                from google.oauth2 import service_account  # noqa: F401
+                return
+            except Exception:
+                continue
+
+
 def load_credentials(sa_file_override: Optional[str] = None):
     """Resolve and return google.oauth2.service_account.Credentials."""
     sa_info, source_label = resolve_sa_info(sa_file_override)
+    _ensure_google_deps()
     try:
         from google.oauth2 import service_account
     except ImportError:
-        print("ERROR: google-auth not installed. Run: pip install google-auth requests", file=sys.stderr)
+        print("ERROR: google-auth not installed. Run: pip install --break-system-packages google-auth requests", file=sys.stderr)
         sys.exit(1)
 
     scopes = ["https://www.googleapis.com/auth/webmasters.readonly"]
@@ -139,6 +162,7 @@ def load_credentials(sa_file_override: Optional[str] = None):
 # ── Sitemap fetching ───────────────────────────────────────────────────────────
 def fetch_sitemap_urls(base_url: str) -> tuple[list[str], list[str]]:
     """Return (url_list, skipped_sitemaps). Follows one sitemap-index level."""
+    _ensure_google_deps()
     import requests
     sitemap_url = base_url.rstrip("/") + "/sitemap.xml"
     urls = []

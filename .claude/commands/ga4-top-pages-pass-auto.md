@@ -14,6 +14,10 @@ Run startup as a standalone command and inspect its actual exit code; never pipe
 Startup returns a fresh `runId` after verification; pass it via `--run-id` to this run's later startup checks and every `workflow-preflight.py prepare`. Never reuse an old run ID for a new routine, including in the same chat. A runner may instead supply a fresh per-invocation `WORKFLOW_RUN_ID` consistently.
 <!-- /workflow-source-freshness-v1 -->
 
+<!-- turn1-telemetry-opt-v1 -->
+> **⚡ TURN-1 COOLDOWN & COLLECTOR NO-OP RULE (2026-11-16):** `ga4_top_pages.py` / `ga4_pull_24h.py` / `gsc_search_analytics.py` auto-install `google-auth` + `requests` silently — never run `pip install` manually. Run the Phase 0 GA4 pull + `python3 .claude/tools/routine-fast-exit.py ga4-cooldown --skill ga4-top-pages-pass-auto --site <BASE_URL> --pages-json <pull.json> --post-collector` **BEFORE** reading downstream phase files or pinning a deploy base. When `"fastExit": true` (`"collectorPosted": true`), the collector `no-op` is **already posted** — **STOP immediately in this turn** without grepping `send-routine-email.py` or calling `/api/routine-run`.
+<!-- /turn1-telemetry-opt-v1 -->
+
 
 > **‼️ PROSE RULE FOR THIS RUN (2026-09-07) — READ BEFORE ANY PHASE FILE.** Every page this run
 > creates and every enrichment longer than ONE sentence (a section, an FAQ answer, body

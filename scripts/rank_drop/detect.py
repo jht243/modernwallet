@@ -98,12 +98,13 @@ def load_sa_info() -> dict:
 
 
 def session_for(sa_info: dict, scope: str):
+    _ensure_google_deps()
     try:
         import requests
         from google.auth.transport.requests import Request
         from google.oauth2 import service_account
     except ImportError as e:
-        raise HardFail(10, f"missing dependency: {e} (pip install google-auth requests)")
+        raise HardFail(10, f"missing dependency: {e} (pip install --break-system-packages google-auth requests)")
     creds = service_account.Credentials.from_service_account_info(sa_info, scopes=[scope])
     try:
         creds.refresh(Request())

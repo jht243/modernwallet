@@ -207,23 +207,37 @@ def resolve_sa_info(sa_file_override: Optional[str] = None, repo_root: Optional[
     sys.exit(2)
 
 
+def _ensure_google_deps() -> None:
+    try:
+        import requests  # noqa: F401
+        from google.auth.transport.requests import Request  # noqa: F401
+        from google.oauth2 import service_account  # noqa: F401
+        return
+    except ImportError:
+        import subprocess
+        for extra in (["--break-system-packages"], []):
+            try:
+                subprocess.check_call(
+                    [sys.executable, "-m", "pip", "install", "-q", "--disable-pip-version-check", *extra, "google-auth", "requests"],
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                )
+                import requests  # noqa: F401
+                from google.oauth2 import service_account  # noqa: F401
+                return
+            except Exception:
+                continue
+
+
 def load_credentials(sa_file_override: Optional[str] = None):
     sa_info, source_label = resolve_sa_info(sa_file_override)
+    _ensure_google_deps()
     try:
         from google.oauth2 import service_account
     except ImportError:
-        import subprocess
-        try:
-            subprocess.check_call(
-                [sys.executable, "-m", "pip", "install", "-q", "google-auth", "requests"],
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
-            )
-            from google.oauth2 import service_account
-        except Exception:
-            print("ERROR: google-auth not installed. Run: pip install google-auth requests",
-                  file=sys.stderr)
-            sys.exit(1)
+        print("ERROR: google-auth not installed. Run: pip install --break-system-packages google-auth requests",
+              file=sys.stderr)
+        sys.exit(1)
 
     scopes = ["https://www.googleapis.com/auth/webmasters.readonly"]
     try:

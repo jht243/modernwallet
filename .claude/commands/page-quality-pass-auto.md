@@ -14,6 +14,10 @@ Run startup as a standalone command and inspect its actual exit code; never pipe
 Startup returns a fresh `runId` after verification; pass it via `--run-id` to this run's later startup checks and every `workflow-preflight.py prepare`. Never reuse an old run ID for a new routine, including in the same chat. A runner may instead supply a fresh per-invocation `WORKFLOW_RUN_ID` consistently.
 <!-- /workflow-source-freshness-v1 -->
 
+<!-- turn1-telemetry-opt-v1 -->
+> **⚡ TURN-1 GA4 PULL & COLLECTOR NO-OP RULE (2026-11-16):** Run `scripts/trend_pass/ga4_pull_24h.py --property-id <GA4_PROPERTY_ID> --with-engagement --with-channels --days 28 --top 25 --json reports/page-quality-pass/<YYYY-MM-DD>.pull.json` followed immediately by `python3 .claude/tools/routine-fast-exit.py page-quality-check --site <BASE_URL> --pages-json reports/page-quality-pass/<YYYY-MM-DD>.pull.json --post-collector` **BEFORE** reading the rest of this file or running `deploy-run-to-main.sh mark`. (`ga4_pull_24h.py` auto-installs `google-auth` + `requests` silently — never run `pip install` manually.) When `"fastExit": true` (`"collectorPosted": true`), the collector `no-op` is **already posted** and untracked pull JSON is cleaned up — **STOP immediately in this turn** with zero further tool calls.
+<!-- /turn1-telemetry-opt-v1 -->
+
 
 > **‼️ PROSE RULE FOR THIS RUN (2026-09-07) — READ BEFORE ANY PHASE FILE.** Every page this run
 > creates and every enrichment longer than ONE sentence (a section, an FAQ answer, body

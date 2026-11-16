@@ -470,14 +470,14 @@ def main():
                         inside(ROOT, args.reuse_application) if args.reuse_application else None, args.context_packet, args.source,
                         args.publication_preparation)
             total_parts = len(m['parts'])
-            batch_plan = [f'{s}..{min(s + 11, total_parts)}' for s in range(1, total_parts + 1, 12)]
+            batch_plan = [f'{s}..{min(s + 2, total_parts)}' for s in range(1, total_parts + 1, 3)]
             print(json.dumps({
                 'status': 'prepared-not-read',
                 'runDir': args.run_dir,
                 'parts': total_parts,
                 'reusedFiles': len(m['reused']),
                 'batchPlan': batch_plan,
-                'next': 'Issue 10-12 SEPARATE workflow-delivery-serial.local.py --part <N> Bash tool calls in EVERY turn following batchPlan (never 3-4 at a time, and never a shell for-loop in one Bash call, which triggers >30KB output truncation) until every part is read, then run check.',
+                'next': 'Issue 6-8 SEPARATE 3-part range Bash tool calls in ONE turn: python3 .claude/tools/workflow-delivery-serial.local.py --run-dir ' + str(args.run_dir) + ' --part <S> --through <E> following batchPlan (up to 18-24 parts per turn, <=27KB per call, zero output truncation; never use a shell for-loop in one Bash call) until every part is read, then run check.',
             }))
         elif args.command == 'next':
             emit(ROOT, directory, args.part)

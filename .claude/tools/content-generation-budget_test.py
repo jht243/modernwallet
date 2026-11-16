@@ -109,4 +109,23 @@ class Tests(unittest.TestCase):
                 saved=json.loads(saved_files[0].read_text())
                 self.assertEqual(saved['jobId'],'search-gap-newjob999999')
                 self.assertEqual(len(saved['previousJobs']),1)
+    def test_sanctioned_release_unverified_preserves_siblings_and_refuses_verified_draft(self):
+        self.manifest.write_text(json.dumps({'jobId':'original','actions':[{'target':'/guides/page','bucket':'update existing body text'}]}))
+        self.args.slug='page--s1';b.reserve(self.root,self.args,'section')
+        self.args.slug='page--s2';b.reserve(self.root,self.args,'section')
+        # Verified draft on disk for s1 -> release_unverified MUST refuse
+        d1=self.root/'reports/run/sections/page--s1.md';d1.parent.mkdir(parents=True,exist_ok=True)
+        d1.write_text('body');(self.root/'reports/run/sections/page--s1.md.meta.json').write_text('{}')
+        self.args.slug='page--s1'
+        with self.assertRaisesRegex(ValueError,'Verified draft already exists'):
+            b.release_unverified(self.root,self.args)
+        # s2 has NO verified draft on disk -> sanctioned release succeeds while keeping s1 reserved!
+        self.args.slug='page--s2'
+        rel=b.release_unverified(self.root,self.args)
+        self.assertEqual(rel['status'],'released-unverified')
+        self.assertEqual(rel['remainingGenerated'],['page--s1'])
+        b.reserve(self.root,self.args,'section')
+        self.args.slug='page--s1'
+        with self.assertRaisesRegex(ValueError,'Generation already reserved'):
+            b.reserve(self.root,self.args,'section')
 if __name__=='__main__':unittest.main()

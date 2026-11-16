@@ -348,5 +348,29 @@ class RoutineFastExitTests(unittest.TestCase):
         self.assertEqual(hit['similarity'], 1.0)
 
 
+
+    def test_post_collector_alias_emits_stop_directive(self):
+        pull = self.root / 'reports/search-gap/pull.json'
+        pull.parent.mkdir(parents=True, exist_ok=True)
+        pull.write_text(json.dumps({'candidates': []}))
+        import io
+        from contextlib import redirect_stdout
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            rc = self.mod.main([
+                '--root', str(self.root),
+                'json-candidates',
+                '--skill', 'search-gap-content-auto',
+                '--site', 'https://example.com',
+                '--input', str(pull),
+                '--post-collector',
+            ])
+        self.assertEqual(rc, 0)
+        out = json.loads(buf.getvalue())
+        self.assertTrue(out['fastExit'])
+        self.assertTrue(out['collectorPosted'])
+        self.assertIn('STOP_IMMEDIATELY', out['next'])
+
+
 if __name__ == '__main__':
     unittest.main()

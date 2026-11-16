@@ -14,6 +14,10 @@ Run startup as a standalone command and inspect its actual exit code; never pipe
 Startup returns a fresh `runId` after verification; pass it via `--run-id` to this run's later startup checks and every `workflow-preflight.py prepare`. Never reuse an old run ID for a new routine, including in the same chat. A runner may instead supply a fresh per-invocation `WORKFLOW_RUN_ID` consistently.
 <!-- /workflow-source-freshness-v1 -->
 
+<!-- turn1-telemetry-opt-v1 -->
+> **⚡ TURN-1 INDEXING SWEEP, SCHEMA & LIVE-VERIFY FAST PATH (2026-11-16):** `.claude/tools/indexing-issues-gsc-pass/gsc_url_inspection.py` auto-installs `google-auth` + `requests` silently — never create `/tmp` virtualenvs or run `pip install` manually. Its output `reports/indexing-pass/<YYYY-MM-DD>.inspection.json` uses exact top-level keys `{"inspected": {<url>: {...}}, "deferred": [...], "skipped_sitemaps": [...], "partial": bool}` (never guess `results` or `urls`). Run the sweep + `python3 .claude/tools/routine-fast-exit.py indexing-sweep --inspection-json reports/indexing-pass/<YYYY-MM-DD>.inspection.json --site <BASE_URL> --post-collector` **BEFORE** reading `phase-0..9` or calling `deploy-run-to-main.sh mark`: when `"fastExit": true` (`"collectorPosted": true`), **STOP immediately in this turn**. When fixes DO ship, verify live HTTP `200`s with `python3 .claude/tools/verify-live-urls.py --urls <u1> <u2>` instead of `sleep 240` loops.
+<!-- /turn1-telemetry-opt-v1 -->
+
 
 > **‼️ PROSE RULE FOR THIS RUN (2026-09-07) — READ BEFORE ANY PHASE FILE.** Every page this run
 > creates and every enrichment longer than ONE sentence (a section, an FAQ answer, body

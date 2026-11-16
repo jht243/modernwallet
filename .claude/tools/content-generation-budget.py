@@ -263,16 +263,21 @@ def reserve(root,args,operation):
                 if 'full' in state['generated'] or unit in state['generated']:
                     cycle=cycle or current_cycle(root,route,policy)
                     stale_same=_prior_job_stale_or_quarantined(root,state,route,cycle)
-                    slug_tail=route.rstrip('/').rsplit('/',1)[-1]
+                    slug_tail=route.rstrip('/').rsplit('/',1)[-1] if unit=='full' else unit
                     verified_drafts=[
                         p for sfx in ('.json','.md') for p in ((root/'reports').glob('**/*'+slug_tail+sfx) if (root/'reports').is_dir() else ())
                         if any(seg.startswith(('drafts','sections')) for seg in p.parts)
                         and ((p.parent/(p.name+'.meta.json')).is_file() or p.with_suffix('.meta.json').is_file())
                     ]
-                    if not stale_same and (verified_drafts or (cycle and cycle.get('jobId')==job and cycle.get('status') in ('published','needs-fix'))):
-                        hint=str(verified_drafts[0].relative_to(root)) if verified_drafts else 'review journal'
-                        raise ValueError('Generation already reserved. Resume retained verified draft at '+hint+'; do not regenerate into a different directory')
-                    state={'jobId':job,'route':route,'generated':[],'repairs':[],
+                    if not stale_same:
+                        if verified_drafts:
+                            hint=str(verified_drafts[0].relative_to(root))
+                            raise ValueError('Generation already reserved. Resume retained verified draft at '+hint+'; do not regenerate into a different directory')
+                        raise ValueError(
+                            'Generation already reserved. If resuming after an interrupted container left no verified draft on disk, run sanctioned release: '
+                            'python3 .claude/tools/content-generation-budget.py release-unverified --mindmap-manifest <manifest> --mindmap-review <review> --slug ' + str(args.slug)
+                        )
+                    state={'jobId':job,'route':route,'generated':[u for u in state.get('generated',[]) if u not in ('full',unit)],'repairs':state.get('repairs',[]),
                            'previousJobs':state.get('previousJobs',[])+[{k:v for k,v in state.items() if k!='previousJobs'}]}
                 state['generated'].append(unit)
             state['updatedAt']=_now_iso_utc()
@@ -292,3 +297,79 @@ def reserve(root,args,operation):
         else:
             state=admit(state)
         tmp=path.with_suffix('.tmp');tmp.write_text(json.dumps(state,indent=2)+'\n');os.replace(tmp,path)
+
+
+def release_unverified(root, args):
+    selected = scope(root, args)
+    if selected is None:
+        raise ValueError('Specify --mindmap-manifest, --mindmap-review, and --slug for the approved page/section')
+    job, route, row = selected
+    policy = load_policy(root)
+    cycle = current_cycle(root, route, policy)
+    if cycle and cycle.get('status') == 'published':
+        raise ValueError('Route is already published; reservation cannot be released')
+    unit = 'full' if row.get('bucket') == 'create new content' else args.slug
+    slug_tail = route.rstrip('/').rsplit('/', 1)[-1] if unit == 'full' else unit
+    verified_drafts = [
+        p for sfx in ('.json', '.md') for p in ((root / 'reports').glob('**/*' + slug_tail + sfx) if (root / 'reports').is_dir() else ())
+        if any(seg.startswith(('drafts', 'sections')) for seg in p.parts)
+        and ((p.parent / (p.name + '.meta.json')).is_file() or p.with_suffix('.meta.json').is_file())
+    ]
+    if verified_drafts:
+        raise ValueError('Verified draft already exists at ' + str(verified_drafts[0].relative_to(root)) + '; resume it rather than releasing')
+    key = hashlib.sha256(json.dumps([policy.policy(root)['siteId'], route]).encode()).hexdigest()
+    directory = root / 'reports/workflow-generation-budgets'
+    directory.mkdir(parents=True, exist_ok=True)
+    path = directory / (key + '.json')
+    with (directory / (key + '.lock')).open('a') as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        state = read(path) if path.exists() else {'jobId': job, 'route': route, 'generated': [], 'repairs': [], 'previousJobs': []}
+        def _clear(cur):
+            if cur.get('jobId') != job:
+                raise ValueError('Reservation belongs to a different jobId (' + str(cur.get('jobId')) + '); cannot release from ' + str(job))
+            return {
+                'jobId': job,
+                'route': route,
+                'generated': [u for u in cur.get('generated', []) if u not in ('full', unit)],
+                'repairs': cur.get('repairs', []),
+                'previousJobs': cur.get('previousJobs', []) + [{k: v for k, v in cur.items() if k != 'previousJobs'}],
+                'updatedAt': _now_iso_utc(),
+            }
+        cloud = os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_REMOTE', '').lower() in ('1', 'true')
+        if cloud and (root / '.claude/tools/workflow-control-store.py').is_file():
+            spec = importlib.util.spec_from_file_location('generation_checkpoint_rel', root / '.claude/tools/workflow-control-store.py')
+            module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(module)
+            def save_remote(snapshot):
+                budgets = snapshot.setdefault('generationBudgets', {})
+                budgets[key] = _clear(budgets.get(key, state))
+                return budgets[key]
+            state = module.Store(root).mutate(save_remote)
+        else:
+            state = _clear(state)
+        tmp = path.with_suffix('.tmp')
+        tmp.write_text(json.dumps(state, indent=2) + '\n')
+        os.replace(tmp, path)
+    return {'status': 'released-unverified', 'jobId': job, 'route': route, 'unit': unit, 'remainingGenerated': state['generated']}
+
+
+def _cli_main(argv=None):
+    import argparse
+    ap = argparse.ArgumentParser(description='Manage Mindmap/fleet content generation reservations safely.')
+    sub = ap.add_subparsers(dest='cmd', required=True)
+    rel = sub.add_parser('release-unverified', help='Sanctioned release of a consumed reservation ONLY when no verified .meta.json draft exists on disk')
+    rel.add_argument('--root', default='.')
+    rel.add_argument('--mindmap-manifest', required=True)
+    rel.add_argument('--mindmap-review', required=True)
+    rel.add_argument('--slug', required=True)
+    args = ap.parse_args(argv)
+    if args.cmd == 'release-unverified':
+        res = release_unverified(Path(args.root).resolve(), args)
+        print(json.dumps(res))
+        return 0
+    return 1
+
+
+if __name__ == '__main__':
+    import sys as _sys
+    raise SystemExit(_cli_main())

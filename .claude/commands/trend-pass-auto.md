@@ -14,6 +14,10 @@ Run startup as a standalone command and inspect its actual exit code; never pipe
 Startup returns a fresh `runId` after verification; pass it via `--run-id` to this run's later startup checks and every `workflow-preflight.py prepare`. Never reuse an old run ID for a new routine, including in the same chat. A runner may instead supply a fresh per-invocation `WORKFLOW_RUN_ID` consistently.
 <!-- /workflow-source-freshness-v1 -->
 
+<!-- turn1-telemetry-opt-v1 -->
+> **⚡ AUTO-DEPS & ZERO-EXTRA-TURN FAST-EXIT RULE (2026-11-16):** All Google API pullers (`ga4_pull_24h.py`, `gsc_pull_24h.py`, `gsc_search_analytics.py`) auto-install `google-auth` + `requests` silently — never run `pip install` manually. Preserve all 3 discovery lanes (24h/7d Trend, Top-20 Uncovered Queries, and Wide View `rising`/`spillover`/`modifier_patterns`); right after Phase 4 writes `reports/trend-pass/<YYYY-MM-DD>.research.md`, run `python3 .claude/tools/routine-fast-exit.py trend-research-pack --research-md reports/trend-pass/<YYYY-MM-DD>.research.md --site <BASE_URL> --post-collector`. When `"fastExit": true` (`"collectorPosted": true`), the collector `no-op` is **already posted** — **STOP immediately in this turn**.
+<!-- /turn1-telemetry-opt-v1 -->
+
 
 > **‼️ PROSE RULE FOR THIS RUN (2026-09-07) — READ BEFORE ANY PHASE FILE.** Every page this run
 > creates and every enrichment longer than ONE sentence (a section, an FAQ answer, body

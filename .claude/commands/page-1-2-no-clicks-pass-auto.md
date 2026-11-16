@@ -14,6 +14,10 @@ Run startup as a standalone command and inspect its actual exit code; never pipe
 Startup returns a fresh `runId` after verification; pass it via `--run-id` to this run's later startup checks and every `workflow-preflight.py prepare`. Never reuse an old run ID for a new routine, including in the same chat. A runner may instead supply a fresh per-invocation `WORKFLOW_RUN_ID` consistently.
 <!-- /workflow-source-freshness-v1 -->
 
+<!-- turn1-telemetry-opt-v1 -->
+> **⚡ AUTO-DEPS & 3-PART RANGE PREFLIGHT DELIVERY (2026-11-16):** `scripts/page12/detect.py` (`scripts/rank_drop/detect.py`) auto-installs `google-auth` + `requests` silently — never run `pip install` manually. Whenever `workflow-preflight.py prepare` runs, deliver preflight parts using 6–8 parallel 3-part range calls in ONE turn (`python3 .claude/tools/workflow-delivery-serial.local.py --run-dir <dir> --part 1 --through 3`, `--part 4 --through 6`, etc. = 18–24 parts/turn) rather than 1 part per turn.
+<!-- /turn1-telemetry-opt-v1 -->
+
 
 > **‼️ PIN THE DEPLOY BASE FIRST — before Phase 0 and before ANY commit.**
 > ```
