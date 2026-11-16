@@ -1141,10 +1141,24 @@
           "at": "2026-11-16T16:49:52+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-16T16:53:23+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded",
+            "slug",
+            "writer"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-16T16:39:08+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-16T16:53:23+00:00",
       "claimedOn": "2026-11-16",
       "attempts": 1,
       "lastNextAt": "2026-11-16T16:39:08+00:00",
@@ -1168,7 +1182,14 @@
           }
         ],
         "recordedAt": "2026-11-16T16:49:52+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/freshbooks/",
+      "commit": "7338a5a",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-16",
+      "bodyWords": 2717,
+      "writer": "in_context_fallback",
+      "slug": "freshbooks"
     },
     {
       "vendor": "Wave",
@@ -1547,10 +1568,24 @@
           "at": "2026-11-16T16:49:52+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-16T16:53:23+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded",
+            "slug",
+            "writer"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-16T16:39:08+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-16T16:53:23+00:00",
       "claimedOn": "2026-11-16",
       "attempts": 1,
       "lastNextAt": "2026-11-16T16:39:08+00:00",
@@ -1595,7 +1630,14 @@
           }
         ],
         "recordedAt": "2026-11-16T16:49:52+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/rocket-money/",
+      "commit": "7338a5a",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-16",
+      "bodyWords": 2259,
+      "writer": "in_context_fallback",
+      "slug": "rocket-money"
     },
     {
       "vendor": "Empower",
@@ -1662,10 +1704,24 @@
           "at": "2026-11-16T16:49:52+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-16T16:53:23+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded",
+            "slug",
+            "writer"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-16T16:39:08+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-16T16:53:23+00:00",
       "claimedOn": "2026-11-16",
       "attempts": 1,
       "lastNextAt": "2026-11-16T16:39:08+00:00",
@@ -1717,7 +1773,14 @@
           }
         ],
         "recordedAt": "2026-11-16T16:49:52+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/legalzoom/",
+      "commit": "7338a5a",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-16",
+      "bodyWords": 2688,
+      "writer": "in_context_fallback",
+      "slug": "legalzoom"
     },
     {
       "vendor": "MileIQ",
