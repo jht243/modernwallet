@@ -1,0 +1,126 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-11-15",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 19,
+      "sessions": 22,
+      "active_users": 19,
+      "clicks": 19
+    },
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 19,
+      "sessions": 16,
+      "active_users": 15,
+      "clicks": 19
+    },
+    {
+      "page": "/",
+      "views": 18,
+      "sessions": 15,
+      "active_users": 14,
+      "clicks": 18
+    },
+    {
+      "page": "/update-listing",
+      "views": 16,
+      "sessions": 16,
+      "active_users": 16,
+      "clicks": 16
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 14,
+      "sessions": 15,
+      "active_users": 15,
+      "clicks": 14
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 12,
+      "sessions": 14,
+      "active_users": 12,
+      "clicks": 12
+    },
+    {
+      "page": "/guides/how-to-buy-treasury-bills/",
+      "views": 10,
+      "sessions": 8,
+      "active_users": 6,
+      "clicks": 10
+    },
+    {
+      "page": "/guides/tax-deductions-checklist/",
+      "views": 10,
+      "sessions": 11,
+      "active_users": 11,
+      "clicks": 10
+    },
+    {
+      "page": "/roundup/best-index-funds/",
+      "views": 10,
+      "sessions": 5,
+      "active_users": 2,
+      "clicks": 10
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 8,
+      "sessions": 8,
+      "active_users": 8,
+      "clicks": 8
+    }
+  ],
+  "top10_pages_total_views": 136,
+  "top10_pages_total_clicks": 136,
+  "channel_split": {
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 19,
+      "Direct": 3,
+      "Unassigned": 2
+    },
+    "/social-security-cola-calculator/": {
+      "Organic Search": 16,
+      "Unassigned": 2
+    },
+    "/update-listing": {
+      "Direct": 16
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 15,
+      "Unassigned": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 13,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/guides/tax-deductions-checklist/": {
+      "Organic Search": 11,
+      "Unassigned": 2
+    },
+    "/": {
+      "Direct": 10,
+      "Organic Search": 2,
+      "Unassigned": 2,
+      "Referral": 1
+    },
+    "/guides/how-to-buy-treasury-bills/": {
+      "Organic Search": 8,
+      "Unassigned": 1
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 5,
+      "Direct": 2,
+      "Referral": 1,
+      "Unassigned": 1
+    },
+    "/roundup/best-index-funds/": {
+      "Organic Search": 5,
+      "Unassigned": 1
+    }
+  }
+}

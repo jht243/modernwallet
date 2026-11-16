@@ -346,3 +346,5 @@
 | /guides/how-to-buy-treasury-bills/ | 2026-11-15 | 11 | 0/0/0/0/0 | 0 |
 | /investing/withdrawal-calculator/ | 2026-11-15 | 8 | 0/0/0/0/0 | 0 |
 | /guides/are-church-donations-tax-deductible/ | 2026-11-15 | 6 | 0/0/0/0/0 | 0 |
+| /roundup/best-index-funds/ | 2026-11-16 | 10 | 0/0/0/0/0 | 0 |
+| /update-listing | 2026-11-16 | 16 | 0/0/0/0/0 | 0 |
