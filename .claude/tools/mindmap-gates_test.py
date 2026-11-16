@@ -1118,6 +1118,78 @@ class Gates(unittest.TestCase):
         self.assertTrue(qm.is_quarantined(self.root, 'comparison-content-auto', item_id='bad-page', route='/guides/bad-page'))
         self.assertFalse(qm.is_quarantined(self.root, 'comparison-content-auto', item_id='fixture', route='/guides/fixture'))
 
+    def test_prune_failed_routes_handles_empty_outbound_and_pruned_link_hub_and_src_data_json(self):
+        """Reproduces drones_and_defense partial-batch edge case:
+        - A1 (/guides/fixture) links outbound ONLY to pruned sibling A2 (/guides/bad-page) AND outbound to existing hub (/existing) whose link-edit row L1 is ALSO pruned.
+        - A1's inbound link comes from /existing (L1), which is pruned in --failed-route.
+        - src/data/people.json contains both fixture and bad-page entries.
+        - prune-failed-routes must NOT strip /existing from A1's outboundLinks when /existing is an existing page,
+          AND must still pass chart validation even when outboundLinks.placements or inboundLinks.placements becomes [].
+        """
+        tools_dir = self.root / '.claude/tools'
+        tools_dir.mkdir(parents=True, exist_ok=True)
+        src_q = Path(__file__).with_name('quarantine.py')
+        if src_q.is_file():
+            (tools_dir / 'quarantine.py').write_bytes(src_q.read_bytes())
+
+        subprocess.run(['git', 'init', '-q'], cwd=self.root, check=True)
+        subprocess.run(['git', 'config', 'user.email', 'test@example.com'], cwd=self.root, check=True)
+        subprocess.run(['git', 'config', 'user.name', 'Test'], cwd=self.root, check=True)
+        (self.root / 'src/data').mkdir(parents=True, exist_ok=True)
+        (self.root / 'src/data/people.json').write_text(json.dumps([{'slug': 'founder-zero', 'name': 'Zero'}]) + '\n')
+        subprocess.run(['git', 'add', '.'], cwd=self.root, check=True)
+        subprocess.run(['git', 'commit', '-qm', 'init'], cwd=self.root, check=True)
+
+        # A1's ONLY outbound placement points to pruned net-new A2 (/guides/bad-page) -> becomes [] after prune!
+        # A1's ONLY inbound placement comes from /existing (link-edit row L1), which is ALSO passed to --failed-route -> becomes [] after prune!
+        self.brief['inboundLinks'] = {'required': 1, 'placements': [self.link('/existing', '/guides/fixture')]}
+        self.brief['outboundLinks'] = {'placements': [self.link('/guides/fixture', '/guides/bad-page')]}
+
+        row2 = copy.deepcopy(self.row)
+        row2.update(id='A2', target='/guides/bad-page', reader_question='Who is bad-page?')
+        brief2 = copy.deepcopy(self.brief)
+        brief2.update(
+            actionId='A2',
+            target='/guides/bad-page',
+            readerAndAnswer={'question': row2['reader_question'], 'answer': row2['answer'], 'placement': row2['answer_placement']},
+            inboundLinks={'required': 1, 'placements': [self.link('/existing', '/guides/bad-page')]},
+            outboundLinks={'placements': [self.link('/guides/bad-page', '/existing')]},
+        )
+        link_row = {k: 'n/a' for k in g.COLUMNS}
+        link_row.update(id='L1', problem='Add inbound links on /existing', solution='Link from /existing to /guides/fixture and /guides/bad-page', bucket='add internal links', target='/existing')
+
+        self.plan['actions'].extend([row2, link_row])
+        self.plan['newPageBriefs'].append(brief2)
+        self.plan['request']['requirements'][0]['actionIds'] = ['A1', 'A2', 'L1']
+        self.bind_plan()
+        g.chart(self.root, self.plan, self.review())
+
+        # Simulate edits to src/data/people.json for both fixture (PASS) and bad-page (FAIL)
+        (self.root / 'src/data/people.json').write_text(json.dumps([
+            {'slug': 'founder-zero', 'name': 'Zero'},
+            {'slug': 'fixture', 'route': '/guides/fixture', 'name': 'Pass Person'},
+            {'slug': 'bad-page', 'route': '/guides/bad-page', 'name': 'Fail Person'},
+        ], indent=2) + '\n')
+
+        pruned = g.prune_failed_routes(
+            self.root,
+            manifest_path='plan.json',
+            review_path='review.json',
+            failed_routes=['/guides/bad-page', '/existing'],
+            reason='Lowery failed depth check and /existing bound to older canonical job',
+            skill='trend-pass-auto',
+        )
+        self.assertEqual(pruned['status'], 'PASS')
+        self.assertEqual(pruned['survivingSubstantiveRoutes'], ['/guides/fixture'])
+        saved_plan = g.read(self.root / 'plan.json')
+        saved_rev = g.read(self.root / 'review.json')
+        g.chart(self.root, saved_plan, saved_rev)
+        g.saved_chart(self.root, saved_plan)
+
+        # Verify src/data/people.json kept founder-zero + fixture, and dropped bad-page
+        people_after = json.loads((self.root / 'src/data/people.json').read_text())
+        self.assertEqual([p['slug'] for p in people_after], ['founder-zero', 'fixture'])
+
 
 if __name__ == '__main__':
     unittest.main()

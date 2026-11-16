@@ -268,8 +268,12 @@ def placements(root, brief, key):
     items = value['placements']
     if key == 'inboundLinks':
         required = value.get('required')
-        require(type(required) is int and required >= 1 and len(items) >= required,
-                'Inbound link coverage is incomplete (record actual local required count)')
+        if not items and value.get('notApplicableReason'):
+            require(type(required) is int and required >= 0,
+                    'Inbound link coverage exception requires integer required >= 0')
+        else:
+            require(type(required) is int and required >= 1 and len(items) >= required,
+                    'Inbound link coverage is incomplete (record actual local required count)')
     if not items:
         content(value.get('notApplicableReason'), key + ' exception')
     for item in items:
@@ -471,7 +475,10 @@ def chart_structure(root, plan):
             seen.add(key)
             require(brief.get('target') == creates[key]['target'], 'Brief/action targets disagree')
             for field in BRIEFS:
-                content(brief.get(field), 'brief.' + field)
+                if field in ('inboundLinks', 'outboundLinks'):
+                    require(isinstance(brief.get(field), dict) and bool(brief.get(field)), 'Missing brief.' + field)
+                else:
+                    content(brief.get(field), 'brief.' + field)
             require(isinstance(brief['outline'], list) and brief['outline'], 'Planned outline requires specific sections')
             identity = brief['identity']
             require(isinstance(identity, dict), 'Identity must contain explicit fields')
@@ -2389,8 +2396,15 @@ def prune_failed_routes(
 
     surviving_ids = {r['id'] for r in surviving_actions}
     surviving_targets = {(str(r.get('target') or '').rstrip('/') or '/') for r in surviving_substantive if str(r.get('target') or '').startswith('/')}
+    pruned_new_page_targets = {
+        (str(r.get('target') or '').split('#', 1)[0].rstrip('/') or '/')
+        for r in pruned_actions
+        if r.get('bucket') == 'create new content' and str(r.get('target') or '').startswith('/')
+    }
 
-    # Prune briefs & remove any outboundLinks pointing to a pruned new-page target
+    # Prune briefs:
+    # - outboundLinks only drops targets that were pruned net-new pages (existing pages whose link-edit row was pruned still exist live!)
+    # - inboundLinks drops sources in failed_set (e.g. a pruned new-page sibling or a pruned add-internal-links hub row)
     for b_key in ('newPageBriefs', 'scopeBriefs'):
         if b_key in plan and isinstance(plan[b_key], list):
             kept_briefs = []
@@ -2399,11 +2413,26 @@ def prune_failed_routes(
                     continue
                 if b.get('actionId') not in surviving_ids or (str(b.get('target') or '').rstrip('/') or '/') in failed_set:
                     continue
+                in_obj = b.get('inboundLinks')
+                if isinstance(in_obj, dict) and isinstance(in_obj.get('placements'), list):
+                    kept_in = [
+                        pl for pl in in_obj['placements']
+                        if not isinstance(pl, dict) or (str(pl.get('source') or '').rstrip('/') or '/') not in failed_set
+                    ]
+                    if len(kept_in) != len(in_obj['placements']):
+                        in_obj['placements'] = kept_in
+                        if kept_in:
+                            if isinstance(in_obj.get('required'), int) and in_obj['required'] > len(kept_in):
+                                in_obj['required'] = len(kept_in)
+                        else:
+                            in_obj['required'] = 0
+                            if not in_obj.get('notApplicableReason'):
+                                in_obj['notApplicableReason'] = 'Inbound link source route quarantined in partial-batch ship'
                 out_obj = b.get('outboundLinks')
                 if isinstance(out_obj, dict) and isinstance(out_obj.get('placements'), list):
                     kept_pl = [
                         pl for pl in out_obj['placements']
-                        if not isinstance(pl, dict) or (str(pl.get('target') or '').rstrip('/') or '/') not in failed_set
+                        if not isinstance(pl, dict) or (str(pl.get('target') or '').rstrip('/') or '/') not in pruned_new_page_targets
                     ]
                     out_obj['placements'] = kept_pl
                     if not kept_pl and not out_obj.get('notApplicableReason'):
@@ -2458,7 +2487,11 @@ def prune_failed_routes(
                 p_abs = root / rel
                 stem_low = p_abs.stem.lower()
                 # Shared JSON page stores: revert only failed keys/entries back to HEAD
-                if rel in ('data/pages.json', 'data/pages.generated.json') and p_abs.is_file():
+                is_json_store = (
+                    rel in ('data/pages.json', 'data/pages.generated.json')
+                    or ((rel.startswith('data/') or rel.startswith('src/data/')) and rel.endswith('.json'))
+                )
+                if is_json_store and p_abs.is_file():
                     head_blob = subprocess.run(['git', 'show', f'HEAD:{rel}'], cwd=root, capture_output=True, text=True)
                     try:
                         cur_doc = json.loads(p_abs.read_text(encoding='utf-8'))
@@ -2479,14 +2512,14 @@ def prune_failed_routes(
                             if isinstance(head_doc, list):
                                 for item in head_doc:
                                     if isinstance(item, dict):
-                                        s = str(item.get('slug') or item.get('route') or '').strip('/').rsplit('/', 1)[-1].lower()
+                                        s = str(item.get('slug') or item.get('id') or item.get('route') or '').strip('/').rsplit('/', 1)[-1].lower()
                                         if s:
                                             head_by_slug[s] = item
                             new_list = []
                             for item in cur_doc:
                                 if isinstance(item, dict):
                                     rt_val = str(item.get('route') or item.get('path') or '')
-                                    s_val = str(item.get('slug') or rt_val).strip('/').rsplit('/', 1)[-1].lower()
+                                    s_val = str(item.get('slug') or item.get('id') or rt_val).strip('/').rsplit('/', 1)[-1].lower()
                                     if (rt_val and (rt_val.rstrip('/') or '/') in failed_set) or (s_val and s_val in failed_slugs):
                                         changed_store = True
                                         if s_val in head_by_slug:
@@ -2617,7 +2650,9 @@ def prune_failed_routes(
         snap_doc = read(snap_in)
         surviving_snap_routes = [
             r['path'] for r in (snap_doc.get('routes') or [])
-            if isinstance(r, dict) and (str(r.get('path') or '').rstrip('/') or '/') not in failed_set
+            if isinstance(r, dict)
+            and (str(r.get('path') or '').rstrip('/') or '/') not in failed_set
+            and (str(r.get('path') or '').rstrip('/') or '/') not in pruned_inbound_sources_only
         ]
         require(surviving_snap_routes, 'No surviving routes remain in rendered snapshot after pruning')
         s_out = (root / out_snapshot).resolve() if out_snapshot else (snap_in.parent / 'pruned-snapshot.json')
