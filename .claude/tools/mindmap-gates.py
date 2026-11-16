@@ -59,6 +59,35 @@ def _format_compatible(a, b):
     return bool(ba and bb and (ba == bb or ba in sb or bb in sa))
 
 
+_NEGATED_BLOCK_RE = re.compile(
+    r'\b(?:no|not(?:\s+a|\s+an)?|without|zero|neither|nor|lacks|free\s+of|absent)\s+'
+    r'(?:direct[-_\s]liability\s+or\s+|narrow\s+|exact\s+)?'
+    r'(?:liabilityblock|duplicate[-_\s]collision)',
+    re.I,
+)
+
+
+def _finding_is_hard_block(f, check_duplicate=True):
+    if not isinstance(f, dict):
+        return False
+    if f.get('liabilityBlock') is True or (check_duplicate and f.get('duplicateCollision') is True):
+        return True
+    sev = str(f.get('severity', '')).strip().lower()
+    cat = str(f.get('category', '')).strip().lower()
+    hard_tags = {'liability', 'safety', 'liabilityblock'}
+    if check_duplicate:
+        hard_tags.add('duplicate-collision')
+    if sev in hard_tags or cat in hard_tags:
+        return True
+    prose = ' '.join(
+        str(f.get(k) or '')
+        for k in ('finding', 'summary', 'description', 'fix', 'evidence')
+    )
+    cleaned = _NEGATED_BLOCK_RE.sub('', prose)
+    pat = r'\b(?:liabilityblock|duplicate[-_\s]collision)\b' if check_duplicate else r'\bliabilityblock\b'
+    return bool(re.search(pat, cleaned, re.I))
+
+
 def _chart_review_accepted(review):
     if not isinstance(review, dict):
         return False
@@ -83,11 +112,7 @@ def _chart_review_accepted(review):
         or bool(re.search(r'\b(?:round\s*2|2\s+of\s+2|second\s+and\s+final|final\s+allowed\s+round)\b', ev_text, re.I))
     )
     if at_limit:
-        has_hard_block = any(
-            str(f.get('severity', '')).strip().lower() in {'liability', 'safety', 'duplicate-collision'}
-            or bool(re.search(r'\bliabilityblock\b', json.dumps(f), re.I))
-            for f in open_findings
-        )
+        has_hard_block = any(_finding_is_hard_block(f, check_duplicate=False) for f in open_findings)
         return not has_hard_block
     return False
 
@@ -1538,8 +1563,8 @@ def seal_draft(root, manifest_path, out_chart=None, *, out=None):
     return result
 
 
-def rebind_mechanical(root, manifest_path, review_path, out=None, render_chart_flag=True):
-    """Deterministically rebind review hashes after mechanical manifest fixes or Round-2 completion without blocking."""
+def rebind_mechanical(root, manifest_path, review_path, out=None, render_chart_flag=True, carry_round1_guardrails=False):
+    """Deterministically rebind review hashes after mechanical manifest fixes, Round-2 completion, or unattended Round-1 guardrail carryover."""
     root = root.resolve()
     m_file = local(root, manifest_path)
     r_file = local(root, review_path)
@@ -1547,6 +1572,17 @@ def rebind_mechanical(root, manifest_path, review_path, out=None, render_chart_f
     review = read(r_file)
     require(isinstance(review, dict) and review.get('reviewer') and review['reviewer'] != plan.get('author'),
             'Mechanical rebind requires an existing independent chart review')
+    if carry_round1_guardrails:
+        open_findings = [
+            f for f in (review.get('findings') or [])
+            if isinstance(f, dict) and str(f.get('status', 'open')).lower() != 'resolved'
+        ]
+        hard_block = (
+            review.get('liabilityBlock') is True
+            or any(_finding_is_hard_block(f, check_duplicate=True) for f in open_findings)
+        )
+        require(not hard_block, 'Round-1 chart review found a duplicate-collision or liabilityBlock; prune or drop that route first')
+        review['atReviewLimit'] = True
     refresh_manifest_hashes(root, plan)
 
     resolved_ids = list(review.get('resolvedFindingIds') or [])
@@ -2742,6 +2778,8 @@ def main():
     q.add_argument('--review', required=True)
     q.add_argument('--out', help='Optional chart output path (must equal manifest chartPath)')
     q.add_argument('--no-render', action='store_true')
+    q.add_argument('--carry-round1-guardrails', action='store_true',
+                   help='Unattended -auto runs: carry all non-liability/non-duplicate Round-1 chart-review findings into reviewerGuardrails for WRITE + Phase 4 AUDIT without a second chart-review round')
     q = s.add_parser('validate-analysis')
     q.add_argument('--packet', required=True)
     q = s.add_parser('audit-analysis')
@@ -2867,7 +2905,11 @@ def main():
         print(json.dumps(seal_draft(root, a.manifest, a.out), indent=2))
         return
     if a.command == 'rebind-mechanical':
-        print(json.dumps(rebind_mechanical(root, a.manifest, a.review, out=a.out, render_chart_flag=not a.no_render), indent=2))
+        print(json.dumps(rebind_mechanical(
+            root, a.manifest, a.review, out=a.out,
+            render_chart_flag=not a.no_render,
+            carry_round1_guardrails=a.carry_round1_guardrails,
+        ), indent=2))
         return
     if a.command == 'init-skeleton':
         print(json.dumps(init_skeleton(

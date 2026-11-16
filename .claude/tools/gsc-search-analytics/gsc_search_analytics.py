@@ -212,9 +212,18 @@ def load_credentials(sa_file_override: Optional[str] = None):
     try:
         from google.oauth2 import service_account
     except ImportError:
-        print("ERROR: google-auth not installed. Run: pip install google-auth requests",
-              file=sys.stderr)
-        sys.exit(1)
+        import subprocess
+        try:
+            subprocess.check_call(
+                [sys.executable, "-m", "pip", "install", "-q", "google-auth", "requests"],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
+            from google.oauth2 import service_account
+        except Exception:
+            print("ERROR: google-auth not installed. Run: pip install google-auth requests",
+                  file=sys.stderr)
+            sys.exit(1)
 
     scopes = ["https://www.googleapis.com/auth/webmasters.readonly"]
     try:

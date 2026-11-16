@@ -43,4 +43,18 @@ class Tests(unittest.TestCase):
    self.assertEqual(r.status,200);self.assertIn(b'WSGI OK',r.read())
   self.assertEqual(p.verify(self.root,meta['baseUrl'])['buildId'],meta['buildId'])
   p.stop(self.root,meta);self.assertFalse(p.alive(meta))
+ def test_next_export_preview_lifecycle(self):
+  import shutil,urllib.request
+  shutil.rmtree(self.root/'dist')
+  (self.root/'package.json').write_text('{"dependencies":{"next":"14.2.0"}}')
+  (self.root/'next.config.mjs').write_text("export default { output: 'export' }\n")
+  (self.root/'out').mkdir()
+  (self.root/'out/index.html').write_text('<main>NEXT EXPORT OK</main>')
+  self.assertEqual(p.framework(self.root),'next-export')
+  meta=p.start(self.root,'next-export-fixture');self.addCleanup(lambda:p.stop(self.root,meta))
+  self.assertEqual(meta['framework'],'next-export')
+  with urllib.request.urlopen(meta['baseUrl']+'/',timeout=5) as r:
+   self.assertEqual(r.status,200);self.assertIn(b'NEXT EXPORT OK',r.read())
+  self.assertEqual(p.verify(self.root,meta['baseUrl'])['buildId'],meta['buildId'])
+  p.stop(self.root,meta);self.assertFalse(p.alive(meta))
 if __name__=='__main__':unittest.main()

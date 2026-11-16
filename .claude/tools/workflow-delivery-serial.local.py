@@ -43,10 +43,25 @@ def deliver(root, directory, number, preflight, timeout=5):
             time.sleep(0.03)
 
 
+def deliver_range(root, directory, start_part, end_part, preflight, timeout=8):
+    if not isinstance(start_part, int) or start_part < 1:
+        raise ValueError('Specify the actual positive original part number')
+    if not isinstance(end_part, int) or end_part < start_part:
+        raise ValueError('--through must be >= --part')
+    if end_part - start_part + 1 > 3:
+        raise ValueError('Deliver at most 3 parts per Bash call (<=27KB) so tool output is never truncated')
+    for num in range(start_part, end_part + 1):
+        manifest = json.loads((directory / 'manifest.json').read_text())
+        if num > len(manifest['parts']):
+            break
+        deliver(root, directory, num, preflight, timeout=timeout)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--run-dir', required=True)
     parser.add_argument('--part', required=True, type=int)
+    parser.add_argument('--through', type=int, help='Optional inclusive end part (max 3 parts per call, <=27KB, zero truncation)')
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[2]
     directory = (root / args.run_dir).resolve()
@@ -55,7 +70,10 @@ def main():
     spec = importlib.util.spec_from_file_location('original_preflight', Path(__file__).with_name('workflow-preflight.py'))
     preflight = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(preflight)
-    deliver(root, directory, args.part, preflight)
+    if args.through is not None:
+        deliver_range(root, directory, args.part, args.through, preflight)
+    else:
+        deliver(root, directory, args.part, preflight)
 
 
 if __name__ == '__main__':

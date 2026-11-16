@@ -38,9 +38,20 @@ def delivery(command):
         for _ in range(len(assignments) + 1):
             directory = Template(directory).safe_substitute(assignments)
         part = int(args[args.index("--part") + 1]) if "--part" in args else None
-        return serial, directory, part
+        through = int(args[args.index("--through") + 1]) if "--through" in args else None
+        return serial, directory, part, through
     except (ValueError, IndexError, StopIteration):
         return None
+
+
+def _expand_call_parts(part, through):
+    if not isinstance(part, int):
+        return []
+    if through is None:
+        return [part]
+    if not isinstance(through, int) or through < part or through - part + 1 > 3:
+        return []
+    return list(range(part, through + 1))
 
 
 def group_request(path, tool_id, directory, first, part):
@@ -66,10 +77,17 @@ def group_request(path, tool_id, directory, first, part):
     for calls in requests.values():
         if tool_id not in calls:
             continue
+        matching_calls = [
+            parsed for parsed in calls.values()
+            if parsed is not None and parsed[0] and parsed[1] == directory
+            and _expand_call_parts(parsed[2], parsed[3])
+        ]
+        if len(matching_calls) < 2:
+            continue
         parts = sorted({
-            p for parsed in calls.values()
-            if parsed is not None for s, d, p in [parsed]
-            if s and d == directory and isinstance(p, int)
+            expanded
+            for parsed in matching_calls
+            for expanded in _expand_call_parts(parsed[2], parsed[3])
         })
         if 2 <= len(parts) <= max(2, MAX_GROUP):
             if parts == list(range(parts[0], parts[-1] + 1)) and parts[0] <= first <= parts[-1] and part in parts:
@@ -82,14 +100,15 @@ def block_reason(payload, root):
     call = delivery(payload.get("tool_input", {}).get("command", ""))
     if call is None:
         return None
-    serial, directory, part = call
+    serial, directory, part, through = call
     path = (root / directory / "manifest.json").resolve()
     if not path.is_relative_to(root) or not path.is_file():
         return None
     manifest = json.loads(path.read_text())
     done = manifest["delivered"]
     total = len(manifest["parts"])
-    if part in done or len(done) >= total:
+    expanded_self = _expand_call_parts(part, through)
+    if (part in done and (through is None or all(p in done for p in expanded_self))) or len(done) >= total:
         return None
     first = len(done) + 1
     if not serial:
@@ -97,8 +116,10 @@ def block_reason(payload, root):
                 pair_message(directory, first, total))
     if first == total:
         return None
-    if not isinstance(part, int):
+    if not isinstance(part, int) or (through is not None and not expanded_self):
         return pair_message(directory, first, total)
+    if through is not None and expanded_self and part <= first and through >= total:
+        return None
     transcripts = [payload.get("agent_transcript_path"), payload.get("transcript_path")]
     # Native subagents sometimes receive only the parent transcript location.
     # Use the exact tool ID and request when looking in that session's child logs.

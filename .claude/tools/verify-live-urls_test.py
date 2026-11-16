@@ -50,6 +50,28 @@ class VerifyLiveUrlsTests(unittest.TestCase):
         self.assertEqual(res['pendingCount'], 1)
         self.assertEqual(res['attempts'], 3)
 
+    def test_resolves_approval_manifest_using_content_review_policy_host(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / '.claude').mkdir()
+            (root / '.claude/content-review-policy.json').write_text(json.dumps({
+                'canonicalHosts': ['colombiadesk.com', 'www.colombiadesk.com'],
+            }))
+            run_dir = root / 'reports/mindmap-pass/run1'
+            run_dir.mkdir(parents=True)
+            man = run_dir / 'approval-manifest.json'
+            man.write_text(json.dumps({
+                'actions': [
+                    {'id': 'A1', 'target': '/living/airalo-vs-saily-colombia/'},
+                    {'id': 'A2', 'target': '/living/best-esim-for-colombia#pricing'},
+                ],
+            }))
+            urls = v._resolve_urls(str(man))
+            self.assertEqual(urls, [
+                'https://www.colombiadesk.com/living/airalo-vs-saily-colombia/',
+                'https://www.colombiadesk.com/living/best-esim-for-colombia',
+            ])
+
 
 if __name__ == '__main__':
     unittest.main()

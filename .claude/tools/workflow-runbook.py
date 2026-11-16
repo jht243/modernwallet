@@ -108,7 +108,7 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
             '2. Exact CLI JSON Output Schemas (never guess keys or crash inline Python; always single-quote heredocs `python3 - <<\'PY\'` in zsh): '
             '`keyword_data.py volumes|expand` -> `{"rows": [{"keyword","volume","volume_low","volume_high","kd","cpc","source","confidence","autocomplete":{"completions","corroborates"}}], "notes": [...]}` (library `volumes()` returns `dict[lowercase_phrase, row]`; `expand()` returns `list[row]`); '
             '`autocomplete.py` -> `{"seed", "mode", "suggestions": [{"query", "via"}]}`; '
-            '`python3 scripts/lib/serp.py read "<kw>" --json` -> `{"keyword", "verdict", "organic", "paa", "forum_dominated", "ai_overview_present", "ai_overview_cited_domains"}` (whereas raw DataForSEO HTTP JSON uses `body["tasks"][0]["result"][0]["items"]`).',
+            '`python3 scripts/lib/serp.py read --keyword "<kw>"` (or `batch --keywords-file <FILE> --out <OUT>`) -> `{"keyword", "verdict", "top10_domains", "paa", "forum_dominated", "ai_overview_present", "ai_overview_cited_domains"}` (whereas raw DataForSEO HTTP JSON uses `body["tasks"][0]["result"][0]["items"]`).',
             '2b. Full-Verbatim Primary-Source & Coverage Capture Once (zero downstream Browser re-scraping): on FIRST visit to any vendor/help/policy URL, save the COMPLETE verbatim page text + canonical URL + UTC retrieval timestamp to `<RUN_DIR>/research/sources/<source-slug>.txt`, save `coverage_lookup.py` output to `<RUN_DIR>/research/coverage-lookup.txt`, and reference them in `evidenceFiles` so `CHART-REVIEW`, `WRITE`, and `AUDIT` read from disk without re-opening Browser/WebFetch.',
             '2c. 1-Command Schema Skeletons (never inspect old `reports/` folders or `sed` tools): '
             'init manifest -> `python3 .claude/tools/mindmap-gates.py init-skeleton --kind scope-manifest --mode <fast-scope|full> --job-id <JOB_ID> --author ' + actor + ' --chart <CHART_PATH> --request-file <BRIEF_TXT> --out <RUN_DIR>/approval-manifest.json`; '
@@ -125,8 +125,8 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
             '4. Chart Reviewer ONLY (never self-approve in BUILD; read `<RUN_DIR>/research/sources/*.txt` from disk FIRST before WebFetch): scaffold `<RUN_DIR>/chart-review.json` via `init-skeleton --kind chart-review`, populate real `verdict`, `evidence`, `requestCoverage`, `findings`, `resolvedFindingIds`, then on PASS run: '
             'python3 .claude/tools/mindmap-gates.py render-chart --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json --out <CHART_PATH> '
             '&& python3 .claude/tools/mindmap-gates.py validate-chart --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json',
-            '4b. MAIN Automatic Mechanical Rebind / Round-2 (2 of 2) Carry-Forward (NEVER ask human permission for mechanical fixes or block at 2-of-2 chart review unless liabilityBlock or exact duplicate collision): '
-            'python3 .claude/tools/mindmap-gates.py rebind-mechanical --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json --out <CHART_PATH> '
+            '4b. MAIN Automatic Guardrail Carryover / Mechanical Rebind (on unattended `*-auto` Round-1 non-liability/non-duplicate FAIL, pass `--carry-round1-guardrails` so 100% of Round-1 findings carry into `reviewerGuardrails` for WRITE + Phase 4 AUDIT without a R2 chart loop; manual `/mindmap-pass` uses up to 2 chart-review rounds): '
+            'python3 .claude/tools/mindmap-gates.py rebind-mechanical --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json --out <CHART_PATH> [--carry-round1-guardrails] '
             '&& python3 .claude/tools/mindmap-gates.py validate-chart --manifest <RUN_DIR>/approval-manifest.json --review <RUN_DIR>/chart-review.json',
             '5. MAIN sub-batch planner (>3 new pages or >8 routes -> disjoint 2-3 page WRITE/AUDIT sub-batches) & 1-command WRITE handoff seal: '
             'python3 .claude/tools/mindmap-gates.py plan-batches --manifest <RUN_DIR>/approval-manifest.json --out <RUN_DIR>/batch-plan.json && '
@@ -205,17 +205,13 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
                 '2. Mechanical surface & risk pack across all routes in 1 turn: '
                 'python3 .claude/tools/rendered-audit.py inspect-pack --snapshot <SNAPSHOT_JSON>',
                 '2b. Primary-source disk verification first: read `<RUN_DIR>/research/sources/*.txt` + `<SNAPSHOT_DIR>` from disk FIRST; spot-check live URLs only when a saved source snapshot appears truncated, stale, or disputed.',
-                f'3. Reserve all routes & emit pre-bound review skeleton in 1 turn (never hand-roll hashes): '
+                f'3. Reserve all routes & emit pre-bound review skeleton + pre-hashed `<RUN_DIR>/audit/analysis-reviews/<slug>.json` skeletons in 1 turn (never hand-roll hashes): '
                 f'python3 .claude/tools/audit-batch.py reserve-batch --snapshot <SNAPSHOT_JSON> --job-id <JOB_ID> '
                 f'--reviewer {actor} --preflight {rel_dir} '
                 + ('--writer-preflight <RUN_DIR>/preflight-write ' if is_local else '')
                 + '--out-dir <RUN_DIR>/audit/admissions --skeleton <RUN_DIR>/audit/review.json',
-                '4. Populate real PASS/FAIL verdicts + >=40-char riskAssessment.rationale (and >=40-char reason on every incidentalMentions/consequentialClaims item) + >=40-char factualReview + >=20-char checks evidence in <RUN_DIR>/audit/review.json (verifying _decision-evidence.md visible internal-testing, visible modeling assumptions + counterexample, anonymized/approved client caseUseReview, reader-survey attribution, intent Our Takeaway, and _testing-labels.md (Tested YYYY) year/coverage), then sync profile/keys & record in 1 turn: '
-                'python3 .claude/tools/audit-batch.py finalize-review --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json '
-                '&& python3 .claude/tools/content-review-policy.py record --review <RUN_DIR>/audit/review.json '
-                '&& python3 .claude/tools/rendered-audit.py check --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json',
-                '4b. When <RUN_DIR>/evidence/<slug>/evidence.json exists, also record the analysis/replay receipt: '
-                'python3 .claude/tools/mindmap-gates.py audit-analysis --packet <RUN_DIR>/evidence/<slug>/evidence.json --review <RUN_DIR>/audit/<slug>-analysis.json [--replay-output <RUN_DIR>/audit/<slug>-replay.json]',
+                '4. Populate real PASS/FAIL verdicts + >=40-char riskAssessment.rationale (and >=40-char reason on every incidentalMentions/consequentialClaims item; allowed `categories` values: `ordinary|product|pricing|capability|medical|legal|investment|financial|security-critical|safety-critical`) + >=40-char factualReview + >=20-char checks evidence in <RUN_DIR>/audit/review.json (plus verdict/evidence/findings in <RUN_DIR>/audit/analysis-reviews/<slug>.json when evidence packets exist; verifying _decision-evidence.md visible internal-testing, visible modeling assumptions + counterexample, anonymized/approved client caseUseReview, reader-survey attribution, intent Our Takeaway, and _testing-labels.md (Tested YYYY) year/coverage), then finalize, record, check & replay in 1 single turn (never grep mindmap-gates.py or content-review-policy.py): '
+                'python3 .claude/tools/audit-batch.py finish-audit --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json',
                 '5. If a subset of routes PASS and others FAIL below ceiling, project passing subset mechanically: '
                 'python3 .claude/tools/content-review-policy.py project --snapshot <SNAPSHOT_JSON> --review <RUN_DIR>/audit/review.json --route <PASS_ROUTE> --out-snapshot <RUN_DIR>/audit/approved-snapshot.json --out-review <RUN_DIR>/audit/approved-review.json',
             ])
@@ -230,8 +226,8 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
         dep_tool = '.claude/tools/deployment-evidence.local.py' if (root / '.claude/tools/deployment-evidence.local.py').is_file() and is_local else '.claude/tools/deployment-evidence.py'
         lines.extend([
             f'2. Land commits onto main (run directly from MAIN, never inside a subagent): {deploy_cmd}',
-            '3. Bounded 1-turn live URL verification (never spin manual curl/sleep turns): '
-            'python3 .claude/tools/verify-live-urls.py --manifest <CAPTURE_MANIFEST> --timeout 180 --out <RUN_DIR>/audit/live-urls.json',
+            '3. Bounded 1-turn live URL verification (accepts capture-manifest.json OR approval-manifest.json directly; never spin manual curl/sleep turns): '
+            'python3 .claude/tools/verify-live-urls.py --manifest <CAPTURE_OR_APPROVAL_MANIFEST> --timeout 180 --out <RUN_DIR>/audit/live-urls.json',
             f'4. Host commit provenance (1 foreground call): '
             f'python3 {dep_tool} --expected-commit <FULL_40_CHAR_SHA> --out <RUN_DIR>/audit/host-proof.json',
             '5. Live capture, compare & journal close (supports both single-pair handoffs and multi-pair `reviewPairs` from Round-2 pass-locking or sub-batching in 1 command): '

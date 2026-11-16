@@ -17,17 +17,62 @@ import urllib.error
 import urllib.request
 
 
+def _infer_canonical_base(manifest_file: Path) -> str:
+    # Walk up from manifest_file to find sibling capture-manifest.json or repo .claude/content-review-policy.json
+    sibling_cap = manifest_file.parent / 'audit/capture-manifest.json'
+    if sibling_cap.is_file():
+        try:
+            cb = str(json.loads(sibling_cap.read_text()).get('canonicalBase') or '').rstrip('/')
+            if cb.startswith(('https://', 'http://')):
+                return cb
+        except Exception:
+            pass
+    cur = manifest_file.resolve().parent
+    for _ in range(8):
+        pol = cur / '.claude/content-review-policy.json'
+        if pol.is_file():
+            try:
+                doc = json.loads(pol.read_text())
+                hosts = doc.get('canonicalHosts') or []
+                if hosts:
+                    h = next((x for x in hosts if str(x).startswith('www.')), hosts[0])
+                    return f'https://{str(h).strip("/")}'
+            except Exception:
+                pass
+        loc_pol = cur / '.claude/workflow-policy.local.json'
+        if loc_pol.is_file():
+            try:
+                cb = str(json.loads(loc_pol.read_text()).get('canonicalBase') or '').rstrip('/')
+                if cb.startswith(('https://', 'http://')):
+                    return cb
+            except Exception:
+                pass
+        if cur.parent == cur:
+            break
+        cur = cur.parent
+    return ''
+
+
 def _resolve_urls(manifest_path=None, base_url=None, urls=()):
     resolved = []
     if manifest_path:
-        m = json.loads(Path(manifest_path).read_text())
-        origin = (base_url or m.get('canonicalBase') or '').rstrip('/')
+        mf = Path(manifest_path)
+        m = json.loads(mf.read_text())
+        origin = (base_url or m.get('canonicalBase') or _infer_canonical_base(mf) or '').rstrip('/')
         if not origin.startswith(('https://', 'http://')):
             raise ValueError('Manifest lacks valid canonicalBase; pass --base-url')
-        for r in m.get('routes', []):
-            path = r.get('path') if isinstance(r, dict) else str(r)
-            if path and str(path).startswith('/'):
-                resolved.append(origin + path)
+        if isinstance(m.get('routes'), list) and m['routes']:
+            for r in m['routes']:
+                path = r.get('path') if isinstance(r, dict) else str(r)
+                if path and str(path).startswith('/'):
+                    resolved.append(origin + path)
+        elif isinstance(m.get('actions'), list) and m['actions']:
+            for a in m['actions']:
+                if not isinstance(a, dict):
+                    continue
+                t = str(a.get('target') or '').split('#', 1)[0].strip()
+                if t.startswith('/'):
+                    resolved.append(origin + t)
     for u in urls:
         if u and u.strip():
             resolved.append(u.strip())

@@ -42,5 +42,17 @@ The script probes the last 4 days and uses the freshest date with sessions. The 
 - Exit 5 (no data in 4 days) → email failure ("GA4 returned no data for the last 4 days"), exit 0.
 - Low/zero views is NOT a failure — pages with even a handful of real visits are auditable; continue to Phase 1.
 
-## Output
-The GA4 pull JSON path → Phase 1. Do not fetch anything else from GA4 this run.
+## Output & Mandatory Fast-Exit Check (Run BEFORE Reading Phase 1)
+Immediately after `ga4_pull_24h.py` writes `reports/trend-pass/<date>.ga4.pull.json`, run the deterministic cooldown/eligibility gate BEFORE reading `phase-1-page-audit.md` or any content contracts:
+
+```bash
+python3 .claude/tools/routine-fast-exit.py ga4-cooldown \
+  --skill ga4-top-pages-pass-auto \
+  --site <SITE_BASE_URL> \
+  --pages-json "reports/trend-pass/$(date +%Y-%m-%d).ga4.pull.json" \
+  --ledger reports/trend-pass/ga4-page-audits.md \
+  --send-email
+```
+
+- **If `"fastExit": true`:** the `no-changes` report has already been sent — **STOP IMMEDIATELY (`exit 0`)**. Do **NOT** read `phase-1-page-audit.md`, do **NOT** append empty/cooldown rows to `ga4-page-audits.md`, and do **NOT** commit or push anything to Git (clean untracked `.ga4.pull.json` and exit).
+- **If `"fastExit": false`:** pass the GA4 pull JSON path + `eligibleRoutes` → Phase 1. Do not fetch anything else from GA4 this run.

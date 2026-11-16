@@ -12,7 +12,11 @@ def digest(raw):return hashlib.sha256(raw).hexdigest()
 def read(path):return json.loads(path.read_text())
 def framework(root):
  p=root/'package.json';v=read(p) if p.exists() else {};deps={**v.get('dependencies',{}),**v.get('devDependencies',{})}
- if 'next' in deps:return 'next'
+ if 'next' in deps:
+  for n in ('next.config.js','next.config.mjs','next.config.ts'):
+   c=root/n
+   if c.is_file() and re.search(r"output\s*:\s*['\"]export['\"]",c.read_text()):return 'next-export'
+  return 'next'
  if 'astro' in deps:return 'astro'
  if not p.exists() and not (root/'dist/index.html').is_file() and (root/'server.py').is_file():return 'wsgi'
  return 'static'
@@ -31,7 +35,7 @@ def signature(root):
    rows[name]=digest(file.read_bytes())
   src_sha=digest(json.dumps(rows,sort_keys=True).encode())
   return {'framework':kind,'buildId':src_sha,'sourceSha256':src_sha}
- marker=root/('.next/BUILD_ID' if kind=='next' else 'dist/index.html')
+ marker=root/('.next/BUILD_ID' if kind=='next' else 'out/index.html' if kind=='next-export' else 'dist/index.html')
  require(marker.is_file(),'Build the actual candidate before starting its preview')
  names=subprocess.check_output(['git','ls-files','-co','--exclude-standard','-z'],cwd=root).decode().split('\0')
  rows={};latest=0
@@ -142,7 +146,7 @@ def start(root,run,route='/'):
  if current['framework']=='next':command=[str(root/'node_modules/.bin/next'),'start','--hostname','127.0.0.1','--port',str(port)]
  elif current['framework']=='astro':command=[str(root/'node_modules/.bin/astro'),'preview','--host','127.0.0.1','--port',str(port)]
  elif current['framework']=='wsgi':command=_wsgi_command(root,port,folder)
- else:command=[sys.executable,'-m','http.server',str(port),'--bind','127.0.0.1','--directory',str(root/'dist')]
+ else:command=[sys.executable,'-m','http.server',str(port),'--bind','127.0.0.1','--directory',str(root/('out' if current['framework']=='next-export' else 'dist'))]
  log=folder/('port-'+str(port)+'-'+str(time.time_ns())+'.log')
  with log.open('xb') as output:process=subprocess.Popen(command,cwd=root,env=_node20_env(),stdout=output,stderr=subprocess.STDOUT,start_new_session=True)
  _children[process.pid]=process

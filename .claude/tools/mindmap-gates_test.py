@@ -1190,6 +1190,35 @@ class Gates(unittest.TestCase):
         people_after = json.loads((self.root / 'src/data/people.json').read_text())
         self.assertEqual([p['slug'] for p in people_after], ['founder-zero', 'fixture'])
 
+    def test_rebind_mechanical_carry_round1_guardrails_preserves_findings_and_blocks_duplicates(self):
+        self.bind_plan()
+        # 1. Duplicate-collision finding in Round 1 must still be blocked
+        dup_rev = self.review()
+        dup_rev['verdict'] = 'FAIL'
+        dup_rev['round'] = 1
+        dup_rev['findings'] = [{'id': 'F1', 'severity': 'duplicate-collision', 'status': 'open', 'fix': 'Already covered by /existing'}]
+        (self.root / 'review.json').write_text(json.dumps(dup_rev))
+        with self.assertRaisesRegex(ValueError, 'duplicate-collision'):
+            g.rebind_mechanical(self.root, 'plan.json', 'review.json', carry_round1_guardrails=True)
+
+        # 2. Non-liability, non-duplicate Round-1 finding (including negated prose like "No duplicate-collision" / "no liabilityBlock") carries into reviewerGuardrails and passes chart validation
+        r1_rev = self.review()
+        r1_rev['verdict'] = 'FAIL'
+        r1_rev['round'] = 1
+        r1_rev['findings'] = [
+            {'id': 'F2', 'severity': 'high', 'status': 'open', 'fix': 'Clarify the 30-day roaming fair-use cap in Section 2'},
+            {'id': 'CR9-DUP', 'severity': 'medium', 'status': 'open', 'finding': 'No duplicate-collision ruling; proceeds as a new page and no liabilityBlock arises.'},
+        ]
+        (self.root / 'review.json').write_text(json.dumps(r1_rev))
+        res = g.rebind_mechanical(self.root, 'plan.json', 'review.json', carry_round1_guardrails=True)
+        self.assertEqual(res['status'], 'PASS')
+        self.assertEqual(res['carriedGuardrails'], 2)
+        saved_plan = g.read(self.root / 'plan.json')
+        saved_rev = g.read(self.root / 'review.json')
+        self.assertIn('Clarify the 30-day roaming fair-use cap', saved_plan['reviewerGuardrails'][0])
+        g.chart(self.root, saved_plan, saved_rev)
+        g.saved_chart(self.root, saved_plan)
+
 
 if __name__ == '__main__':
     unittest.main()

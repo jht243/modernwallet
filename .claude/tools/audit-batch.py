@@ -286,15 +286,164 @@ def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton
             skeleton['instructionApplications'] = apps
 
     crp.save_exact(skeleton_path, skeleton)
-    return {
+    analysis_skeletons = _scaffold_analysis_reviews(
+        root, crp, snapshot_path, skeleton_path, reviewer, [p['path'] for p in selected_pages]
+    )
+    res = {
         'status': 'reserved-unreviewed-skeleton',
         'jobId': job,
         'reviewer': reviewer,
         'snapshotSha256': snapshot['snapshotSha256'],
         'skeleton': str(skeleton_path.resolve().relative_to(root)),
         'routes': summaries,
-        'note': 'Populate real PASS/FAIL verdicts, >=40-char riskAssessment.rationale (plus >=40-char reason on every incidentalMentions/consequentialClaims item) & factualReview evidence, and >=20-char checks evidence, then run audit-batch.py finalize-review before content-review-policy.py record.',
+        'note': 'Populate real PASS/FAIL verdicts, >=40-char riskAssessment.rationale (plus >=40-char reason on every incidentalMentions/consequentialClaims item) & factualReview evidence, and >=20-char checks evidence (plus any analysisReviews/*.json prose evidence), then run audit-batch.py finish-audit (or finalize-review + record + check).',
     }
+    if analysis_skeletons:
+        res['analysisReviews'] = analysis_skeletons
+    return res
+
+
+def _find_evidence_packets(root: Path, snapshot_path: Path, route_set: set[str]) -> list[tuple[str, Path, dict]]:
+    """Locate <run_dir>/evidence/*/evidence.json matching selected routes without touching non-run folders."""
+    norm_targets = {(r.rstrip('/') or '/') for r in route_set}
+    cur = snapshot_path.resolve().parent
+    found = []
+    seen_routes = set()
+    for _ in range(4):
+        if not cur.is_relative_to(root):
+            break
+        ev_dir = cur / 'evidence'
+        if ev_dir.is_dir():
+            for p in sorted(ev_dir.glob('*/evidence.json')):
+                try:
+                    pkt = json.loads(p.read_text(encoding='utf-8'))
+                except Exception:
+                    continue
+                if not isinstance(pkt, dict):
+                    continue
+                rt = (str(pkt.get('route') or '').rstrip('/') or '/')
+                if rt in norm_targets and rt not in seen_routes:
+                    seen_routes.add(rt)
+                    found.append((rt, p, pkt))
+        if (cur / 'approval-manifest.json').is_file():
+            break
+        cur = cur.parent
+    return found
+
+
+def _scaffold_analysis_reviews(root: Path, crp, snapshot_path: Path, skeleton_path: Path, reviewer: str, route_paths: list[str]) -> list[dict]:
+    mg_path = root / '.claude/tools/mindmap-gates.py'
+    if not mg_path.is_file():
+        return []
+    mg = _load('repo_mg_scaf', mg_path)
+    packets = _find_evidence_packets(root, snapshot_path, set(route_paths))
+    if not packets:
+        return []
+    ar_dir = skeleton_path.resolve().parent / 'analysis-reviews'
+    ar_dir.mkdir(parents=True, exist_ok=True)
+    snap_ref = crp.reference(root, snapshot_path)
+    rev_rel = str(skeleton_path.resolve().relative_to(root))
+    out_meta = []
+    for rt, pkt_path, pkt in packets:
+        slug = pkt_path.parent.name
+        dest = ar_dir / f'{slug}.json'
+        pkt_sha = mg.digest(pkt)
+        req_cov = []
+        ap_plan = pkt.get('approvedPlan') or {}
+        man_ref = ap_plan.get('manifest') if isinstance(ap_plan, dict) else None
+        if isinstance(man_ref, dict) and man_ref.get('path') and (root / man_ref['path']).is_file():
+            try:
+                plan = json.loads((root / man_ref['path']).read_text(encoding='utf-8'))
+                aid = ap_plan.get('actionId')
+                for r in (plan.get('request') or {}).get('requirements') or []:
+                    if isinstance(r, dict) and aid in (r.get('actionIds') or []):
+                        req_cov.append({'requirementId': r['id'], 'status': 'UNREVIEWED', 'evidence': ''})
+            except Exception:
+                pass
+        if dest.is_file():
+            try:
+                doc = json.loads(dest.read_text(encoding='utf-8'))
+            except Exception:
+                doc = {}
+        else:
+            doc = {}
+        doc['reviewer'] = reviewer
+        doc['packetSha256'] = pkt_sha
+        doc['renderedSnapshot'] = snap_ref
+        doc['renderedReview'] = {'path': rev_rel, 'sha256': 'AUTO_BOUND_ON_FINALIZE'}
+        doc.setdefault('verdict', 'UNREVIEWED')
+        if pkt.get('basis') == 'no-addition':
+            doc.setdefault('noAddition', {'status': 'UNREVIEWED', 'evidence': ''})
+        else:
+            for k in ('usefulness', 'sourceAndAssumptions', 'conditionsAndCounterexample', 'renderedConsistency', 'localExclusions', 'presentationReview', 'caseUseReview'):
+                doc.setdefault(k, {'status': 'UNREVIEWED', 'evidence': ''})
+            if req_cov and not doc.get('requestCoverage'):
+                doc['requestCoverage'] = req_cov
+        crp.save_exact(dest, doc)
+        out_meta.append({
+            'route': rt,
+            'basis': pkt.get('basis'),
+            'packet': str(pkt_path.resolve().relative_to(root)),
+            'analysisReviewSkeleton': str(dest.resolve().relative_to(root)),
+        })
+    return out_meta
+
+
+def _bind_analysis_reviews_after_finalize(root: Path, crp, snapshot_path: Path, review_path: Path, target_path: Path, report: dict) -> list[dict]:
+    import subprocess as _sp
+    mg_path = root / '.claude/tools/mindmap-gates.py'
+    dest_ar_dir = target_path.resolve().parent / 'analysis-reviews'
+    src_ar_dir = dest_ar_dir if dest_ar_dir.is_dir() else (Path(review_path).resolve().parent / 'analysis-reviews')
+    if not mg_path.is_file() or not src_ar_dir.is_dir():
+        return []
+    dest_ar_dir.mkdir(parents=True, exist_ok=True)
+    mg = _load('repo_mg_bind', mg_path)
+    route_verdicts = {(str(r.get('path') or '').rstrip('/') or '/'): r.get('verdict') for r in (report.get('routes') or []) if isinstance(r, dict)}
+    packets = {pkt_path.parent.name: (rt, pkt_path, pkt) for rt, pkt_path, pkt in _find_evidence_packets(root, snapshot_path, set(route_verdicts.keys()))}
+    snap_ref = crp.reference(root, snapshot_path)
+    rev_ref = crp.reference(root, target_path)
+    bound = []
+    for ar_file in sorted(src_ar_dir.glob('*.json')):
+        if ar_file.name.endswith('.replay.json'):
+            continue
+        slug = ar_file.stem
+        if slug not in packets:
+            continue
+        rt, pkt_path, pkt = packets[slug]
+        doc = json.loads(ar_file.read_text(encoding='utf-8'))
+        doc['reviewer'] = report.get('reviewer')
+        doc['packetSha256'] = mg.digest(pkt)
+        doc['renderedSnapshot'] = snap_ref
+        doc['renderedReview'] = rev_ref
+        rv = route_verdicts.get(rt)
+        if rv in ('PASS', 'FAIL') and doc.get('verdict') in (None, '', 'UNREVIEWED'):
+            doc['verdict'] = rv
+        replay_rel = None
+        if pkt.get('basis') in ('calculated', 'modeled'):
+            replay_file = dest_ar_dir / f'{slug}.replay.json'
+            exec_spec = pkt.get('execution') or {}
+            orig_out_ref = exec_spec.get('output') if isinstance(exec_spec, dict) else None
+            cmd_str = exec_spec.get('command') if isinstance(exec_spec, dict) else None
+            if not replay_file.is_file() and isinstance(cmd_str, str) and cmd_str.strip() and isinstance(orig_out_ref, dict) and orig_out_ref.get('path'):
+                orig_rel = str(orig_out_ref['path'])
+                replay_rel_tmp = str(replay_file.resolve().relative_to(root))
+                if orig_rel in cmd_str:
+                    _sp.run(cmd_str.replace(orig_rel, replay_rel_tmp), shell=True, cwd=str(root), capture_output=True, timeout=60)
+            if replay_file.is_file():
+                doc['replaySha256'] = mg.digest(mg.read(replay_file))
+                replay_rel = str(replay_file.resolve().relative_to(root))
+        dest_ar_file = dest_ar_dir / ar_file.name
+        ar_raw = crp.canonical(doc) + b'\n'
+        ar_tmp = dest_ar_file.with_name(dest_ar_file.name + '.fin-' + uuid.uuid4().hex)
+        ar_tmp.write_bytes(ar_raw)
+        os.replace(str(ar_tmp), str(dest_ar_file))
+        bound.append({
+            'route': rt,
+            'packet': str(pkt_path.resolve().relative_to(root)),
+            'analysisReview': str(dest_ar_file.resolve().relative_to(root)),
+            'replayOutput': replay_rel,
+        })
+    return bound
 
 
 def prepare_skeleton(root, snapshot_path, skeleton_path, routes=()):
@@ -641,10 +790,71 @@ def _finalize_review_in_root(root, snapshot_path, review_path, target_path, job=
     if errors:
         raise ValueError('Review validation failed (' + str(len(errors)) + ' issue(s)):\n  - ' + '\n  - '.join(errors))
 
-    return {
+    bound_analysis = _bind_analysis_reviews_after_finalize(root, crp, snapshot_path, review_path, target_path, report)
+    res = {
         'status': 'ready-to-record',
         'review': str(target_path.resolve().relative_to(root)),
         'syncedProfiles': synced_profiles,
+    }
+    if bound_analysis:
+        res['boundAnalysisReviews'] = bound_analysis
+    return res
+
+
+def finish_audit(root, snapshot_path, review_path, out_path=None, job=None,
+                 reviewer=None, out_dir=None, prior_reports=(), preflight=None,
+                 writer_preflight=None, repair_pending_failure=None):
+    """1-command Phase 4 audit closer: finalize-review -> record -> rendered-audit check -> audit-analysis."""
+    import subprocess as _sp
+    import sys as _sys
+    root = Path(root).resolve()
+    fin = finalize_review(
+        root, snapshot_path, review_path, out_path=out_path, job=job,
+        reviewer=reviewer, out_dir=out_dir, prior_reports=prior_reports,
+        preflight=preflight, writer_preflight=writer_preflight,
+        repair_pending_failure=repair_pending_failure,
+    )
+    rev_rel = fin['review']
+    snap_rel = str(Path(snapshot_path).resolve().relative_to(root))
+
+    rec_proc = _sp.run(
+        [_sys.executable, '.claude/tools/content-review-policy.py', 'record', '--review', rev_rel],
+        cwd=str(root), capture_output=True, text=True,
+    )
+    if rec_proc.returncode != 0:
+        raise ValueError('content-review-policy.py record failed: ' + (rec_proc.stderr or rec_proc.stdout).strip())
+    rec_json = json.loads(rec_proc.stdout) if rec_proc.stdout.strip() else {}
+
+    chk_proc = _sp.run(
+        [_sys.executable, '.claude/tools/rendered-audit.py', 'check', '--snapshot', snap_rel, '--review', rev_rel],
+        cwd=str(root), capture_output=True, text=True,
+    )
+    check_status = 'PASS' if chk_proc.returncode == 0 else ('NEEDS_REWORK_OR_SUBSET_PROJECTION: ' + (chk_proc.stderr or chk_proc.stdout).strip()[:240])
+
+    analysis_results = []
+    for item in fin.get('boundAnalysisReviews') or []:
+        ar_doc = json.loads((root / item['analysisReview']).read_text(encoding='utf-8'))
+        # Run audit-analysis for PASS routes (and final-round capped-release routes)
+        cmd = [_sys.executable, '.claude/tools/mindmap-gates.py', 'audit-analysis',
+               '--packet', item['packet'], '--review', item['analysisReview']]
+        if item.get('replayOutput'):
+            cmd.extend(['--replay-output', item['replayOutput']])
+        ap = _sp.run(cmd, cwd=str(root), capture_output=True, text=True)
+        analysis_results.append({
+            'route': item['route'],
+            'analysisReview': item['analysisReview'],
+            'status': 'PASS' if ap.returncode == 0 else 'SKIPPED_OR_FAIL',
+            'detail': (ap.stderr or ap.stdout).strip()[:240] if ap.returncode != 0 else 'verified',
+        })
+        if ap.returncode != 0 and ar_doc.get('verdict') == 'PASS':
+            raise ValueError(f"audit-analysis failed on PASS route {item['route']}: {(ap.stderr or ap.stdout).strip()}")
+
+    return {
+        'status': 'audit-recorded',
+        'review': rev_rel,
+        'recorded': rec_json,
+        'renderedCheck': check_status,
+        'analysisAudits': analysis_results,
     }
 
 
@@ -664,17 +874,18 @@ def main(argv=None):
     ps.add_argument('--snapshot', required=True)
     ps.add_argument('--skeleton', required=True)
     ps.add_argument('--route', action='append', default=[])
-    f = sub.add_parser('finalize-review')
-    f.add_argument('--snapshot', required=True)
-    f.add_argument('--review', required=True)
-    f.add_argument('--out', help='Optional output path (defaults to updating --review in place before recording)')
-    f.add_argument('--job-id', help='Optional jobId to reserve/repair route admissions during finalize-review (routine_control MAIN workflow)')
-    f.add_argument('--reviewer', help='Optional actual independent reviewer identity to bind during finalize-review')
-    f.add_argument('--out-dir', help='Optional admissions output directory when --reviewer is supplied')
-    f.add_argument('--prior-review', action='append', default=[])
-    f.add_argument('--preflight', help='Optional completed AUDIT preflight directory when --reviewer is supplied')
-    f.add_argument('--writer-preflight', help='Optional WRITE preflight directory for Layer3 local application binding')
-    f.add_argument('--repair-pending-failure', help='Optional retained failure handback (>=100 bytes under reports/) for pending slot repair')
+    for sub_name in ('finalize-review', 'finish-audit'):
+        f = sub.add_parser(sub_name)
+        f.add_argument('--snapshot', required=True)
+        f.add_argument('--review', required=True)
+        f.add_argument('--out', help='Optional output path (defaults to updating --review in place before recording)')
+        f.add_argument('--job-id', help='Optional jobId to reserve/repair route admissions during finalize-review (routine_control MAIN workflow)')
+        f.add_argument('--reviewer', help='Optional actual independent reviewer identity to bind during finalize-review')
+        f.add_argument('--out-dir', help='Optional admissions output directory when --reviewer is supplied')
+        f.add_argument('--prior-review', action='append', default=[])
+        f.add_argument('--preflight', help='Optional completed AUDIT preflight directory when --reviewer is supplied')
+        f.add_argument('--writer-preflight', help='Optional WRITE preflight directory for Layer3 local application binding')
+        f.add_argument('--repair-pending-failure', help='Optional retained failure handback (>=100 bytes under reports/) for pending slot repair')
     args = parser.parse_args(argv)
     root = Path(args.root).resolve()
     crp = _load('repo_crp_cli', root / '.claude/tools/content-review-policy.py')
@@ -700,7 +911,8 @@ def main(argv=None):
             crp.inside(root, args.repair_pending_failure) if args.repair_pending_failure else None,
         )
     else:
-        result = finalize_review(
+        fn = finish_audit if args.command == 'finish-audit' else finalize_review
+        result = fn(
             root,
             crp.inside(root, args.snapshot),
             crp.inside(root, args.review),
