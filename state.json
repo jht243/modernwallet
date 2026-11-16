@@ -257,6 +257,16 @@
       "previousJobs": [],
       "repairs": [],
       "route": "/guides/what-is-a-cfp/"
+    },
+    "f784cc7b729f4f8c3b67fabc979e9195132adde91b26404588fb8df328208fe6": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "2026-11-16-comparison",
+      "previousJobs": [],
+      "repairs": [],
+      "route": "/compare/annuity-vs-401k",
+      "updatedAt": "2026-11-16T08:34:15Z"
     }
   },
   "job": null,
