@@ -299,5 +299,28 @@ done
         self.assertEqual(self.remote_tip(), before)
         self.assertEqual((self.work / ev_rel).read_text(), '{"local_different":2}\n')
 
+    def test_append_only_reports_jsonl_conflict_auto_merges_without_generated_conf(self):
+        ledger_rel = 'reports/standards-ledger.jsonl'
+        self.write(ledger_rel, '{"id":"base"}\n', self.other)
+        self.commit(self.other, 'seed standards ledger')
+        self.git(self.other, 'push', '-q', 'origin', 'main')
+        self.git(self.work, 'pull', '-q', 'origin', 'main')
+        self.helper('mark')
+
+        # Concurrent run appends one entry to main
+        self.write(ledger_rel, '{"id":"base"}\n{"id":"comparison-run"}\n', self.other)
+        self.commit(self.other, 'comparison ledger entry')
+        self.git(self.other, 'push', '-q', 'origin', 'main')
+
+        # Current run appends its own entry + content file
+        self.write(ledger_rel, '{"id":"base"}\n{"id":"ga4-run"}\n', self.work)
+        self.write('run.txt', 'exact reviewed candidate\n', self.work)
+        self.commit(self.work, 'ga4 run + ledger')
+
+        r = self.helper('push')
+        self.assertEqual(r.returncode, 0, msg=r.stdout + r.stderr)
+        merged = self.git(self.remote, 'show', 'main:' + ledger_rel).stdout.splitlines()
+        self.assertEqual(merged, ['{"id":"base"}', '{"id":"comparison-run"}', '{"id":"ga4-run"}'])
+
 
 if __name__=='__main__': unittest.main()

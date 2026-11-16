@@ -106,6 +106,9 @@ is_regenerable() {
   case "$1" in data/pages.generated.ts)
     [ -f .claude/scripts/merge-pages-generated.py ] && return 0 ;;
   esac
+  case "$1" in reports/*.jsonl|reports/*/*.jsonl)
+    return 0 ;;
+  esac
   case "$1" in
     scripts/paid_placements/ledger.json|scripts/paid_placements/fix-queue.json|scripts/paid_placements/upsell-queue.json|scripts/paid_placements/profiles.json|scripts/agency/packs.json|scripts/agency/upsells.json)
       [ -f scripts/paid_placements/merge_queues.py ] && return 0 ;;
@@ -123,7 +126,6 @@ is_regenerable() {
 # Loops because the rebase can stop again on a later commit. Non-zero = caller aborts.
 resolve_generated() {
   local conflicted f i ran n=0 need_regen="" need_queue_merge=""
-  [ ${#REGEN_GLOBS[@]} -gt 0 ] || [ -f scripts/paid_placements/merge_queues.py ] || return 1
   while [ -d "$(git rev-parse --git-path rebase-merge)" ] || [ -d "$(git rev-parse --git-path rebase-apply)" ]; do
     n=$((n + 1)); [ "$n" -le 50 ] || { echo "[deploy] rebase still stopped after 50 resolve rounds" >&2; return 1; }
     conflicted="$(git diff --name-only --diff-filter=U)"
@@ -146,6 +148,26 @@ resolve_generated() {
           continue ;;
         data/pages.generated.ts)
           python3 .claude/scripts/merge-pages-generated.py --index "$f" || return 1
+          git add -- "$f" || return 1
+          continue ;;
+        reports/*.jsonl|reports/*/*.jsonl)
+          python3 - "$f" <<'MERGE_JSONL_PY' || return 1
+import pathlib, subprocess, sys
+rel = sys.argv[1]
+def stage_lines(stage):
+    p = subprocess.run(["git", "show", f":{stage}:{rel}"], capture_output=True, text=True)
+    return [l for l in p.stdout.splitlines() if l.strip()] if p.returncode == 0 else []
+base, ours, theirs = stage_lines(1), stage_lines(2), stage_lines(3)
+base_set = set(base)
+if not base_set.issubset(set(ours)) or not base_set.issubset(set(theirs)):
+    sys.exit(1)
+seen, merged = set(), []
+for line in ours + theirs:
+    if line not in seen:
+        seen.add(line)
+        merged.append(line)
+pathlib.Path(rel).write_text(("\n".join(merged) + "\n") if merged else "", encoding="utf-8")
+MERGE_JSONL_PY
           git add -- "$f" || return 1
           continue ;;
         scripts/paid_placements/ledger.json|scripts/paid_placements/fix-queue.json|scripts/paid_placements/upsell-queue.json|scripts/paid_placements/profiles.json|scripts/agency/packs.json|scripts/agency/upsells.json)
