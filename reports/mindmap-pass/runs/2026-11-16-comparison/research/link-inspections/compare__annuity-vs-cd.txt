@@ -1,0 +1,25 @@
+INSPECTED ROUTE: /compare/annuity-vs-cd
+DATA FILE: src/data/comparisons.ts (entry begins line 9039)
+INSPECTED: 2026-11-16 by mindmap-build
+
+SECTION HEADINGS/TITLES FOUND:
+title: "Annuity vs. CD: Which Pays More in Retirement?",
+heading: "How annuity and CD rates compare right now",
+heading: "Taxes: the deferral advantage annuities have and CDs don't",
+heading: "What happens if you need your money early",
+heading: "The one thing a CD can never do: guaranteed lifetime income",
+question: "Is an annuity safer than a CD?",
+question: "Why do annuities pay more than CDs right now?",
+question: "Can I lose money in a fixed annuity?",
+question: "What happens to an annuity when the guarantee period ends?",
+question: "Should retirees put money in annuities or CDs?",
+title: "HELOC vs. Personal Loan: Which Is Cheaper in 2026?",
+heading: "Rate comparison: why a HELOC usually costs less",
+heading: "Speed and paperwork: when a personal loan wins",
+heading: "The tax deduction only a HELOC can offer",
+
+LINES MENTIONING 'annuit' (candidate anchor context):
+slug: "annuity-vs-cd",
+title: "Annuity vs. CD: Which Pays More in Retirement?",
+"Annuity vs CD compared: 2026 rates, taxes, liquidity, and safety — see which one fits your retirement savings and guaranteed-income goals better.",
+targetKeyword: "annuity vs cd",

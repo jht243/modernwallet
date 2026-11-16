@@ -1,0 +1,25 @@
+INSPECTED ROUTE: /guides/credit-card-perks-worth-it
+DATA FILE: src/data/guides.ts (entry begins line 12286)
+INSPECTED: 2026-11-16 by mindmap-build
+
+SECTION HEADINGS/TITLES FOUND:
+title: "Which Credit Card Perks Are Actually Worth It?",
+{ heading: "Some \"perks\" are network rules, not card benefits", body: "Zero fraud liability for unauthorized charges is not a special bene
+{ heading: "Free features that sound premium but cost the issuer nothing", body: "A free credit score, a mobile app, and 24/7 customer servi
+{ heading: "The metal card myth", body: "A metal card's weight has no connection to any benefit — it is a manufacturing choice, not an indic
+{ heading: "How to actually judge whether an annual-fee card is worth it", body: "The only reliable test is a breakeven calculation: add up 
+{ heading: "No-annual-fee cards already cover most people's needs", body: "For most cardholders, a strong no-annual-fee card with baseline f
+{ question: "Is zero fraud liability a real perk?", answer: "It's protection you almost certainly already have. Zero liability for unauthori
+{ question: "Are metal credit cards actually better?", answer: "Not because they're metal. A card's material has no effect on its rewards ra
+{ question: "How do I know if an annual-fee card is worth paying for?", answer: "Add up the realistic dollar value of the benefits you'll ac
+{ question: "Do all credit cards offer a free credit score now?", answer: "Most major issuers offer some form of free credit score access to
+{ question: "What credit card benefits are actually worth paying an annual fee for?", answer: "Benefits tied to your real, recurring spendin
+title: "What Credit Score Do You Need for a 0% APR Card?",
+{ heading: "What \"0% intro APR\" actually means", body: "A 0% intro APR offer charges no interest on purchases, balance transfers, or both,
+{ heading: "The score range issuers typically look for", body: "Issuers generally reserve 0% intro APR cards for applicants in the good-to-e
+
+LINES MENTIONING 'Chase' (candidate anchor context):
+{ heading: "Free features that sound premium but cost the issuer nothing", body: "A free credit score, a mobile app, and 24/7 customer service are now offered by nearly every issuer, including no-annual-fee cards, because the marginal cost of adding them is lo
+{ heading: "What \"0% intro APR\" actually means", body: "A 0% intro APR offer charges no interest on purchases, balance transfers, or both, for a set introductory period — commonly 12 to 21 months — after which the rate jumps to the card's standard variable A
+{ heading: "The deferred-interest trap: not the same as 0% APR", body: "A deferred-interest offer — common on store and retail cards — looks identical to a true 0% intro APR offer at checkout, but works very differently: if any balance remains unpaid when the 
+{ question: "What's the difference between 0% intro APR and deferred interest?", answer: "A true 0% intro APR card charges interest only on whatever balance remains after the promotional period ends. A deferred-interest offer charges interest retroactively on 

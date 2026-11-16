@@ -1,0 +1,25 @@
+INSPECTED ROUTE: /compare/401k-vs-roth-ira
+DATA FILE: src/data/comparisons.ts (entry begins line 4378)
+INSPECTED: 2026-11-16 by mindmap-build
+
+SECTION HEADINGS/TITLES FOUND:
+title: "401(k) vs Roth IRA: Which Retirement Account Wins?",
+heading: "How a 401(k) works",
+heading: "How a Roth IRA works",
+heading: "Which account saves more in taxes?",
+heading: "401(k) vs Roth IRA: can you have both?",
+heading: "The break-even tax rate: exactly when Roth wins",
+question: "Is a Roth IRA better than a 401(k)?",
+question: "What happens to my 401(k) if I change jobs?",
+question: "Can I contribute to both a 401(k) and Roth IRA in the same year?",
+question: "What is the 401(k) income limit for 2024?",
+question: "When can I withdraw from a Roth IRA without penalty?",
+question: "What are the 401(k) and Roth IRA contribution limits for 2026?",
+question: "Did 401(k) and Roth IRA limits go up for 2026?",
+question: "Is maxing out a 401(k) and Roth IRA enough for retirement?",
+
+LINES MENTIONING '401' (candidate anchor context):
+slug: "401k-vs-roth-ira",
+title: "401(k) vs Roth IRA: Which Retirement Account Wins?",
+"401(k) vs Roth IRA compared: contribution limits, tax rules, employer match, and which account saves you more in retirement.",
+targetKeyword: "401k vs roth ira",

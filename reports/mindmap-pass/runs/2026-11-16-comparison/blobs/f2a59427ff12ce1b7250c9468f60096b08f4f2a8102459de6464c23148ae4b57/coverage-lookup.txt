@@ -1,0 +1,324 @@
+coverage_lookup: 11 candidate(s) vs 831 repo pages / 846 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1192 past-chart lines
+
+### /comparisons/chime-vs-sofi  — row - · create new content
+keyword: chime vs sofi
+reader question (new page intent): Which is better, Chime or SoFi?
+lookup terms: chime sofi   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/sofi-invest-vs-robinhood  [in sitemap · src/data/comparisons.ts · topic match 0.5 on sofi · same format: vs]
+    title: SoFi Invest vs Robinhood: Which One Actually Fits You?
+    desc:  SoFi Invest vs Robinhood compared: IRA match rates, crypto access, fractional shares, and support, so beginner investors pick the right app to start with.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-30-robinhood.md [table] | 9 | **Link row — wire the new pages into the shipped Robinhood/AI-trading family.** The 2026-09-09 family and existing Robinhood comparisons (incl. robinhood-vs-webull, 980ad23) are the natural referrers for rows 3–8. 
+- 2026-09-30-robinhood.md [exclusions] - **Already shipped (f28f0e2, 2026-09-09):** "robinhood agentic trading" (2,900) → `/guides/robinhood-agentic-trading-explained` (enriched by row 1, not recreated); "robinhood ai alternatives" → `/roundup/robinhood-agent
+- 2026-10-11-tool-usage.md [table] | 1 | Lens 1 (tool usage, investing — 32 people, top tool). Persona: renter moving a $25k emergency fund to a 4.1% APY HYSA, on a phone. Walkthrough: typed "4.1" → field showed 41, result "$282,876 after 5 years at 41%";
+- 2026-10-14-tool-usage.md [table] | 4 | Lens 1 (tool usage, investing — 72 people, top tool). Persona: renter moving $25,000 to a 4.1% APY HYSA, $500/mo, 5 yrs. Result "$8,911 interest earned" — quote: "my bank sends a 1099-INT and I pay tax on that, rig
+- 2026-10-15-trend-lane-c.md [table] | Lens 3 (vs, off the lender cluster of top-10 queries). `mortgage broker vs lender` 1,300/mo KD 13 (DataForSEO); `mortgage broker vs bank` 390 KD 8; `is a mortgage broker worth it` 140; `mortgage broker vs direct lender
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-robo-advisor). Head 'what is a robo advisor / robo advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /roundup/best-robo-adviso
+Commits naming the topic: none
+Same run overlap: none
+
+### /comparisons/quickbooks-vs-freshbooks  — row - · create new content
+keyword: quickbooks vs freshbooks
+reader question (new page intent): QuickBooks or FreshBooks?
+lookup terms: quickbook freshbook   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /alternatives/quickbooks  [in sitemap · src/data/alternatives.json · topic match 0.5 on quickbook]
+    title: QuickBooks Alternatives 2026: Prices and Plans Compared
+    desc:  QuickBooks alternatives for small business accounting: FreshBooks, Xero, Zoho Books, Wave and Zoho Invoice, with published prices and limits.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-05.md [table] | **Lens 1 — "write off their whole life" is the brief's core claim and the site has no self-employed deduction page.** "tax deductions for self employed" 2,900/mo KD 30; "small business tax deductions" 2,400/mo KD 48; "
+- 2026-09-05.md [table] | Schedule C deductions | tax deductions for self employed (2,900); small business tax deductions (2,400); sole proprietor tax write offs (250); what deduction can i claim without receipts | The brief's "write off their 
+Commits naming the topic: none
+Same run overlap: row - /comparisons/xero-vs-quickbooks (0.5)
+
+### /comparisons/acorns-vs-robinhood  — row - · create new content
+keyword: acorns vs robinhood
+reader question (new page intent): Acorns or Robinhood?
+lookup terms: acorn robinhood   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /alternatives/robinhood  [in sitemap · src/data/alternatives.json · topic match 0.5 on robinhood]
+    title: Robinhood Alternatives 2026: Fees and Plans Compared
+    desc:  Robinhood alternatives compared: Charles Schwab, Interactive Brokers, E*TRADE, Webull, tastytrade and Public, with published trading fees and rates.
+- /compare/robinhood-vs-webull  [in sitemap · src/data/comparisons.ts · topic match 0.5 on robinhood · same format: vs]
+    title: Robinhood vs Webull: Which Brokerage Wins in 2026?
+    desc:  Robinhood vs Webull compared on trading tools, paper trading, cash sweep rates, and beginner usability so you can pick the right brokerage.
+- /compare/robinhood-vs-fidelity  [in sitemap · src/data/comparisons.ts · topic match 0.5 on robinhood · same format: vs]
+    title: Robinhood vs Fidelity: Costs and Account Types Compared
+    desc:  Fidelity has more account types, mutual funds and 215 Investor Centers. Robinhood has a 3% IRA match with Gold, lower margin rates and overnight trading.
+- /guides/is-robinhood-gold-worth-it  [in sitemap · src/data/guides.ts · topic match 0.5 on robinhood]
+    title: Is Robinhood Gold Worth It? Break-Even Math and Rates
+    desc:  Robinhood Gold costs $50 a year. See the break-even math on the IRA match, cash interest and free margin to decide whether it pays for itself.
+- /guides/is-robinhood-safe  [in sitemap · src/data/guides.ts · topic match 0.5 on robinhood]
+    title: Is Robinhood Safe? What Protects Your Money
+    desc:  Robinhood is SIPC-protected against broker failure up to $500,000, but not against market losses, crypto, or AI agent trades. See every limit and gap.
+- /compare/charles-schwab-vs-robinhood  [in sitemap · src/data/comparisons.ts · topic match 0.5 on robinhood · same format: vs]
+    title: Charles Schwab vs. Robinhood: Which Broker Fits You
+    desc:  Charles Schwab vs. Robinhood compared: fees, the IRA match, investment selection, and which broker fits a beginner versus an active investor.
+- /compare/sofi-invest-vs-robinhood  [in sitemap · src/data/comparisons.ts · topic match 0.5 on robinhood · same format: vs]
+    title: SoFi Invest vs Robinhood: Which One Actually Fits You?
+    desc:  SoFi Invest vs Robinhood compared: IRA match rates, crypto access, fractional shares, and support, so beginner investors pick the right app to start with.
+- /guides/robinhood-agentic-trading-explained  [in sitemap · src/data/guides.ts · topic match 0.5 on robinhood]
+    title: Robinhood Agentic Trading and Robinhood Agents Explained
+    desc:  What Robinhood Agents are, how Loops can trade while you sleep, how they differ from plugging in your own AI via MCP, and the risk you carry.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-08.cannibalization.md [table] | /compare/trump-account-trustees/ (new) vs /guides/how-to-open-a-trump-account/ (Step 3) and the pillar /guides/trump-accounts/ (trustee step) | none available | "trump accounts banks / robinhood trump account / trump a
+- 2026-10-08.md [table] | Lens 2 — **employer contributions / match** cluster: `trump account employer contribution` (est. 500), `trump account employer match` (est. 500), `trump accounts employer contributions`, `companies matching trump accou
+- 2026-10-08.md [table] | Lens 3 — **trustee / provider comparison** (entities: Robinhood, Fidelity, Schwab, Vanguard, Bank of America, BNY): `trump accounts on robinhood` (est. 500), `trump account robinhood` (est. 50), `trump accounts banks` 
+- 2026-10-08.md [table] | Trump Account trustee comparison (Lens 3) | trump accounts on robinhood; trump accounts banks; trump account custodian; trump accounts bank of america | bottom-funnel "where to open" with no side-by-side | partial (one
+- 2026-10-19.md [table] | Lens 2 (adjacent, highest measured demand). Cluster "how to buy SpaceX stock": `how to buy spacex stock` 7,400/KD 22 (ahrefs), `how to buy stock in spacex` 800/KD 0, `how to buy spacex stock 2026` 500, `how to buy spac
+- 2026-10-19.md [table] | How to buy SpaceX stock | how to buy spacex stock (7,400); how to buy stock in spacex (800); how to buy spacex stock 2026 (500); on robinhood; on fidelity | coverage gap; page one still describes pre-IPO routes | none 
+Commits naming the topic: none
+Same run overlap: none
+
+### /comparisons/webull-vs-fidelity  — row - · create new content
+keyword: webull vs fidelity
+reader question (new page intent): Webull or Fidelity?
+lookup terms: webull fidelity   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/robinhood-vs-webull  [in sitemap · src/data/comparisons.ts · topic match 0.5 on webull · same format: vs]
+    title: Robinhood vs Webull: Which Brokerage Wins in 2026?
+    desc:  Robinhood vs Webull compared on trading tools, paper trading, cash sweep rates, and beginner usability so you can pick the right brokerage.
+- /compare/vanguard-vs-fidelity  [in sitemap · src/data/comparisons.ts · topic match 0.5 on fidelity · same format: vs]
+    title: Vanguard vs Fidelity: Which Brokerage Wins in 2026?
+    desc:  Vanguard vs Fidelity compared: account minimums, index funds, robo-advisors, and fees, so you can see which brokerage fits your investing style.
+- /compare/fidelity-vs-schwab  [in sitemap · src/data/comparisons.ts · topic match 0.5 on fidelity · same format: vs]
+    title: Fidelity vs Schwab: Which Brokerage Really Wins in 2026?
+    desc:  Fidelity vs Schwab compared: zero-fee index funds, account minimums, robo-advisors, and banking tools, so you can pick the right brokerage.
+- /compare/etrade-vs-fidelity  [in sitemap · src/data/comparisons.ts · topic match 0.5 on fidelity · same format: vs]
+    title: E*TRADE vs Fidelity: Which Brokerage Actually Fits You?
+    desc:  E*TRADE vs Fidelity compared: options and futures fees, robo-advisor cost, research tools, and who owns each platform, so you can pick the right broker.
+- /compare/robinhood-vs-fidelity  [in sitemap · src/data/comparisons.ts · topic match 0.5 on fidelity · same format: vs]
+    title: Robinhood vs Fidelity: Costs and Account Types Compared
+    desc:  Fidelity has more account types, mutual funds and 215 Investor Centers. Robinhood has a 3% IRA match with Gold, lower margin rates and overnight trading.
+- /compare/fidelity-vs-merrill-edge  [in sitemap · src/data/comparisons.ts · topic match 0.5 on fidelity · same format: vs]
+    title: Fidelity vs Merrill Edge: Which Brokerage to Pick in 2026
+    desc:  Fidelity vs Merrill Edge compared on banking perks, retirement accounts, fees, and custodial options to help you choose the right brokerage.
+- /compare/vanguard-vs-fidelity-vs-schwab  [in sitemap · src/data/comparisons.ts · topic match 0.5 on fidelity · same format: vs]
+    title: Vanguard vs Fidelity vs Schwab: Which Broker Wins?
+    desc:  Vanguard vs Fidelity vs Schwab compared: fees, fund selection, robo-advisors, mobile apps, and which brokerage fits your investing style best.
+- /compare/trump-account-trustees  [in sitemap · src/data/comparisons.ts · topic match 0.5 on fidelity · same format: vs]
+    title: Trump Account Trustees: Robinhood vs Fidelity, Vanguard
+    desc:  Compare Trump Account trustees: Robinhood holds initial accounts, while Fidelity, Vanguard, and Schwab await Treasury rules. Check current rollover status.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-27-podcast.md [table] | 401(k) options at retirement | what to do with your 401k when you retire (260); what can you do with your 401k when you retire (ac); where do you put your 401k when you retire (ac) | coverage gap at theme level: withdr
+- 2026-10-27-trend-lane-c.md [table] | 1 | source: coverage (Lens 2, adjacent to top-20 query "how long will my money last calculator nerdwallet"). Cluster: how long will my money last 14,800/mo KD 0 (head, owned by /investing/withdrawal-calculator and /ret
+- 2026-10-27-trend-lane-c.md [table] | How long will $1 million last | how long will 1 million last in retirement (1,000); how long will a million dollars last in retirement (480); can i retire on 1 million dollars (320, answered by /guides/how-to-retire-wi
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'capital gains harvesting', Ready For Retirement brokerage episode). 'tax loss harvesting' 12,100/mo KD 53 CPC $3.93 (SEMRUSH us 2026-11-04, measured); 'tax loss harvesting r
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'Maxxing HSA Benefits'). 'hsa triple tax advantage' 2,400/mo KD 37 CPC $1.11 (SEMRUSH us 2026-11-04, measured); supporting 'hsa contribution limits 2026' 33,100 KD 44, 'hsa t
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-robo-advisor). Head 'what is a robo advisor / robo advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /roundup/best-robo-adviso
+Commits naming the topic: none
+Same run overlap: none
+
+### /comparisons/wealthfront-vs-vanguard  — row - · create new content
+keyword: wealthfront vs vanguard
+reader question (new page intent): Wealthfront or Vanguard?
+lookup terms: wealthfront vanguard   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/vanguard-vs-fidelity  [in sitemap · src/data/comparisons.ts · topic match 0.5 on vanguard · same format: vs]
+    title: Vanguard vs Fidelity: Which Brokerage Wins in 2026?
+    desc:  Vanguard vs Fidelity compared: account minimums, index funds, robo-advisors, and fees, so you can see which brokerage fits your investing style.
+- /compare/vanguard-vs-schwab  [in sitemap · src/data/comparisons.ts · topic match 0.5 on vanguard · same format: vs]
+    title: Vanguard vs Schwab: Which Brokerage Really Wins in 2026?
+    desc:  Vanguard vs Schwab compared: fund fees, account minimums, robo-advisors, and banking tools, so you can see which brokerage fits you.
+- /compare/betterment-vs-wealthfront  [in sitemap · src/data/comparisons.ts · topic match 0.5 on wealthfront · same format: vs]
+    title: Betterment vs Wealthfront: Robo-Advisor Fees Compared
+    desc:  Betterment vs Wealthfront compared on management fees, account minimums, direct indexing, and advisor access so you can pick the right robo-advisor.
+- /compare/vtsax-vs-vti  [in sitemap · src/data/comparisons.ts · topic match 0.5 on vanguard · same format: vs]
+    title: VTSAX vs VTI: Which Vanguard Total Market Fund Fits You
+    desc:  VTSAX vs VTI compared on trading, minimums, expense ratios, and taxes. Both hold the same Vanguard total US stock market portfolio in a different wrapper.
+- /compare/vfiax-vs-voo  [in sitemap · src/data/comparisons.ts · topic match 0.5 on vanguard · same format: vs]
+    title: VFIAX vs VOO: Choosing Vanguard's S&P 500 Fund in 2026
+    desc:  VFIAX vs VOO compared on trading, minimums, costs, and taxes. One Vanguard S&P 500 portfolio in a mutual fund or an exchange-traded fund wrapper.
+- /compare/vti-vs-voo  [in sitemap · src/data/comparisons.ts · topic match 0.5 on vanguard · same format: vs]
+    title: VTI vs VOO: Which Core Vanguard ETF to Pick
+    desc:  VTI vs VOO compared on index rules, holdings, expense ratios, and portfolio overlap so you can pick the right core US stock ETF.
+- /compare/voo-vs-spy  [in sitemap · src/data/comparisons.ts · topic match 0.5 on vanguard · same format: vs]
+    title: VOO vs SPY: Vanguard vs SPDR S&P 500 ETF
+    desc:  VOO vs SPY compared: expense ratio, fund structure, and liquidity, so you can see which S&P 500 ETF fits your investing style.
+- /compare/vanguard-vs-fidelity-vs-schwab  [in sitemap · src/data/comparisons.ts · topic match 0.5 on vanguard · same format: vs]
+    title: Vanguard vs Fidelity vs Schwab: Which Broker Wins?
+    desc:  Vanguard vs Fidelity vs Schwab compared: fees, fund selection, robo-advisors, mobile apps, and which brokerage fits your investing style best.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-26-trend-lane-c.md [table] | 1 | source: coverage + top-10 (Lens 2, adjacent to "index investment funds", 74,000/mo KD 37 head). Cluster: what is an index fund 12,100/mo KD 37 (measured); how to invest in index funds 2,400 KD 37; how to invest in 
+- 2026-10-26-trend-lane-c.md [table] | Index fund basics | what is an index fund; how to invest in index funds; are index funds a good investment; index fund pros and cons | coverage gap at theme level: no definitional page | partial (comparisons, roundup) 
+- 2026-10-27-podcast.md [table] | 2 | Direct intent (podcast: Ready For Retirement "What Should You Do With Your 401k When You Retire?"). Cluster: what to do with your 401k when you retire 260/mo KD 7 (DataForSEO measured); ac: what can you do with you
+- 2026-10-27-podcast.md [table] | 401(k) options at retirement | what to do with your 401k when you retire (260); what can you do with your 401k when you retire (ac); where do you put your 401k when you retire (ac) | coverage gap at theme level: withdr
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'capital gains harvesting', Ready For Retirement brokerage episode). 'tax loss harvesting' 12,100/mo KD 53 CPC $3.93 (SEMRUSH us 2026-11-04, measured); 'tax loss harvesting r
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-robo-advisor). Head 'what is a robo advisor / robo advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /roundup/best-robo-adviso
+Commits naming the topic: none
+Same run overlap: none
+
+### /comparisons/annuity-vs-401k  — row - · create new content
+keyword: annuity vs 401k
+reader question (new page intent): Annuity or 401(k)?
+lookup terms: annuity 401k   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /retirement/401k-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 0.5 on 401k]
+    title: 401k Calculator: How Much You'll Have at Retirement
+    desc:  See how much your 401(k) could be worth at retirement. Enter your balance, contributions, employer match, and expected return for a free projection.
+- /annuity-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on annuity]
+    title: Annuity Calculator: Payout, Growth & Value Today
+    desc:  Free annuity calculator. See what a lump sum pays each month, what level deposits grow to, or what a stream of payments is worth as one sum today.
+- /compare/401k-vs-529  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k · same format: vs]
+    title: 401k vs 529: How to Choose in 2026
+    desc:  401(k) vs 529 on 2026 contribution limits, tax treatment, penalties for non-qualified use, and the 529 to Roth IRA rollover rules.
+- /compare/pension-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k · same format: vs]
+    title: Pension vs 401(k): Key Differences (2025)
+    desc:  Pension vs 401(k): a pension pays guaranteed lifetime income and the employer takes the risk; a 401(k) is your portable, market-based balance instead.
+- /compare/annuity-vs-cd  [in sitemap · src/data/comparisons.ts · topic match 0.5 on annuity · same format: vs]
+    title: Annuity vs. CD: Which Pays More in Retirement?
+    desc:  Annuity vs CD compared: 2026 rates, taxes, liquidity, and safety — see which one fits your retirement savings and guaranteed-income goals better.
+- /compare/403b-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k · same format: vs]
+    title: 403(b) vs 401(k): What's the Real Difference in 2026?
+    desc:  403(b) vs 401(k) compared: who can offer each, 2026 contribution limits, the 403(b)'s 15-year catch-up, fees, and which is riskier for your money.
+- /compare/tsp-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k · same format: vs]
+    title: TSP vs 401(k): Which Retirement Plan Wins in 2026?
+    desc:  TSP vs 401(k) compared: agency/employer match, fund menu, fees, and the unique G Fund — see which is better for federal employees and military.
+- /compare/457b-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k · same format: vs]
+    title: 457(b) vs 401(k): Contribution Limits, Penalties & Risk
+    desc:  457(b) vs 401(k) compared: separate contribution limits, no early-withdrawal penalty after leaving your job, and the real risk of a non-governmental plan.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-10-search-gap.md [exclusions] - Not created: any new page (exact-intent page /compare/simple-ira-vs-401k exists).
+- 2026-11-13-trend-lane-c.md [exclusions] - roth or regular 401k: DROP, exists (/compare/roth-401k-vs-traditional-401k, /roth-vs-traditional-401k-calculator, /compare/401k-vs-roth-ira); wording-only gap.
+- 2026-11-13-trend-lane-c.md [exclusions] - Lens 3 vs/alternatives/pricing: no uncovered comparison; Roth/traditional 401k and UTMA vs pages exist; no branded competitor query this run.
+- 2026-11-15-trend-lane-c.md [exclusions] - solo 401k loan calculator: DROP, exists; /retirement/401k-loan-calculator/ has a solo section and FAQ on the same engine; dedicated slug solo-401k-loan-calculator would near-duplicate a 20/mo intent.
+- 2026-11-15-trend-lane-c.md [exclusions] - 401k contribution roth vs traditional / roth or regular 401k: DROP, exist (/compare/roth-401k-vs-traditional-401k, /roth-vs-traditional-401k-calculator, /compare/401k-vs-roth-ira).
+- 2026-11-15-trend-lane-c.md [exclusions] - Lens 3 vs/alternatives/pricing: no uncovered comparison with measurable demand; Roth/traditional 401k and UTMA vs pages exist; no branded competitor query this run.
+Commits naming the topic: none
+Same run overlap: none
+
+### /comparisons/series-i-bonds-vs-hysa  — row - · create new content
+keyword: i bonds vs high yield savings
+reader question (new page intent): I bonds or HYSA?
+lookup terms: serie bond hysa high yield saving   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /investing/high-yield-savings-calculator  [PARENT PAGE · in sitemap · src/data/spokes-investing.ts · topic match 0.67 on hysa high yield saving]
+    title: High Yield Savings (HYSA) Calculator: APY Earnings
+    desc:  Use this high yield savings calculator to see how much your money earns over time at a given APY, with monthly deposits and compounding.
+- /compare/trump-account-vs-savings-account  [in sitemap · src/data/comparisons.ts · topic match 0.67 on hysa high yield saving · same format: vs]
+    title: Trump Account vs High-Yield Savings Account (HYSA)
+    desc:  Trump Account vs a high-yield savings account (HYSA) for kids: invested growth and a $1,000 seed vs FDIC-insured, liquid cash. See which fits your goals.
+- /compare/custodial-roth-ira-vs-hysa  [in sitemap · src/data/comparisons.ts · topic match 0.67 on hysa high yield saving · same format: vs]
+    title: Custodial Roth IRA vs High-Yield Savings Account
+    desc:  Compare a custodial Roth IRA and a high-yield savings account (HYSA) on taxes, withdrawal access, and rules to help you choose the right account.
+- /guides/hysa-vs-roth-ira-vs-brokerage-account  [in sitemap · src/data/guides.ts · topic match 0.67 on hysa high yield saving · same format: vs]
+    title: High Yield Savings Account vs Roth IRA vs Brokerage
+    desc:  Deciding between a high yield savings account vs Roth IRA vs taxable brokerage? Compare 2026 contribution limits, tax treatment, and liquidity rules.
+- /roundup/best-high-yield-savings-accounts  [in sitemap · src/data/roundups.ts · topic match 0.5 on high yield saving]
+    title: Best High-Yield Savings Accounts of 2026
+    desc:  Compare the best high-yield savings accounts of 2026 by APY range, fees, and sign-up bonuses — no fabricated rates, just what to verify.
+- /guides/international-high-yield-savings-accounts  [in sitemap · src/data/guides.ts · topic match 0.5 on high yield saving]
+    title: International High-Yield Savings Accounts: What to Know
+    desc:  Our high-yield savings guides cover FDIC-insured U.S. accounts. International savers: find your own country's official deposit protection scheme here.
+- /guides/high-yield-savings-account-for-kids-and-teens  [in sitemap · src/data/guides.ts · topic match 0.5 on high yield saving]
+    title: High-Yield Savings Accounts for Kids and Teens
+    desc:  How to open a high-yield savings account for kids, teens, and college students. Custodial rules, joint accounts, and age limits explained.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-19-competitor.md [exclusions] - CD vs High-Yield Savings — DROP: already live at /compare/hysa-vs-cd.
+- 2026-10-21-autocomplete.md [table] | 4 | Lens 1 direct (seed "savings interest calculator"). Cluster: how is savings account interest calculated 1,600/mo KD 7; savings interest calculator 18,100 KD 34; how is savings interest calculated monthly; is saving
+- 2026-10-21-tool-usage.md [table] | 10 | Lens C (monetize, interest-per-day). Result is a daily cost (debt) or daily earnings (savings); APR ≥ 10% signals debt. Verdict fit — YMYL → books. Pick types: debt payoff plan, automated saving system, index-inve
+- 2026-10-26-competitor.md [table] | 2 | SmartAsset "build wealth in high inflation". lookup: no match (/compare/i-bonds-vs-tips/ is narrower) [verb-only on SERP; ac 11/11 question] | Guide: match each dollar to a time horizon; our calculated $10,000 one-
+- 2026-11-04-tool-usage.md [table] | 12 | probate (2 people, 3 uses, 15 views; low-use lane; data_days 27). Walkthrough: intro says 'the calculator above' though it sits below; small-estate banner contradicts the big probate number; trust cost omits the $
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-financial-plan). Head 'how to make a financial plan': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/financial-planning-calcu
+Commits naming the topic: none
+Same run overlap: none
+
+### /comparisons/chase-freedom-flex-vs-unlimited  — row - · create new content
+keyword: chase freedom flex vs unlimited
+reader question (new page intent): Freedom Flex or Unlimited?
+lookup terms: chase freedom flex unlimited   format cues: vs
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms: none
+Commits naming the topic: none
+Same run overlap: none
+
+### /comparisons/capital-one-360-vs-ally  — row - · create new content
+keyword: capital one 360 vs ally
+reader question (new page intent): Capital One 360 or Ally?
+lookup terms: capital one v360 ally   format cues: vs
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-21-tool-usage.md [table] | 3 | Lens 1 (tool usage, real-estate — same persona, reading the body). The page's howItWorks states "For 2024, long-term CG rates are 0% (taxable income under ~$47,025 single / ~$94,050 married) … 20% (income above ~$5
+- 2026-10-21-tool-usage.md [table] | 16 | Lens 2 → RECLASSIFIED by the duplicate-suppression gate (was create /per-diem-interest-calculator/). The interest-per-day card holder paying off on a date asks the payoff amount. `per diem interest calculator` **4
+- 2026-10-21-tool-usage.md [table] | Rental sale tax (capital gains + recapture) | capital gains tax on rental property (880); rental property capital gains calculator (110); How much capital gains will I pay on a rental property? (PAA) | intent mismatch 
+- 2026-10-25.md [table] | 7 | **Lens 1 (direct intent — brief item 2, house selling).** `home selling checklist` 400/KD 8 ($0.90 CPC), `checklist for selling a house` 250/KD 6, `checklist for selling home` 150/KD 11, `home selling checklist pdf
+- 2026-10-28-autocomplete.md [table] | 2 | Lens 1 (seed "capital gains tax calculator", 281 completions). `capital gains tax calculator stocks` 480/mo KD 18 CPC $7.02 and `stock capital gains tax calculator` 480/mo KD 18 (DataForSEO measured); completions "
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'capital gains harvesting', Ready For Retirement brokerage episode). 'tax loss harvesting' 12,100/mo KD 53 CPC $3.93 (SEMRUSH us 2026-11-04, measured); 'tax loss harvesting r
+Commits naming the topic: none
+Same run overlap: none
+
+### /comparisons/xero-vs-quickbooks  — row - · create new content
+keyword: xero vs quickbooks
+reader question (new page intent): Xero or QuickBooks?
+lookup terms: xero quickbook   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /alternatives/quickbooks  [in sitemap · src/data/alternatives.json · topic match 0.5 on quickbook]
+    title: QuickBooks Alternatives 2026: Prices and Plans Compared
+    desc:  QuickBooks alternatives for small business accounting: FreshBooks, Xero, Zoho Books, Wave and Zoho Invoice, with published prices and limits.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-05.md [table] | **Lens 1 — "write off their whole life" is the brief's core claim and the site has no self-employed deduction page.** "tax deductions for self employed" 2,900/mo KD 30; "small business tax deductions" 2,400/mo KD 48; "
+- 2026-09-05.md [table] | Schedule C deductions | tax deductions for self employed (2,900); small business tax deductions (2,400); sole proprietor tax write offs (250); what deduction can i claim without receipts | The brief's "write off their 
+Commits naming the topic: none
+Same run overlap: row - /comparisons/quickbooks-vs-freshbooks (0.5)
+
+### /comparisons/debt-consolidation-vs-balance-transfer  — row - · create new content
+keyword: debt consolidation vs balance transfer
+reader question (new page intent): Debt consolidation loan or balance transfer card?
+lookup terms: debt consolidation balance transfer   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /debt-consolidation-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on debt consolidation]
+    title: Debt Consolidation Calculator: Compare Interest & Payments
+    desc:  Free debt consolidation calculator. Compare your current payments and interest against a new consolidation loan to see whether you save money after fees.
+- /guides/how-to-choose-a-balance-transfer-credit-card  [in sitemap · src/data/guides.ts · topic match 0.5 on balance transfer]
+    title: How to Choose a Balance Transfer Credit Card
+    desc:  How to pick between a dedicated 0% balance transfer card and a rewards card with a transfer offer — based on your score, timeline, and payoff plan.
+- /roundup/best-balance-transfer-credit-cards  [in sitemap · src/data/roundups.ts · topic match 0.5 on balance transfer]
+    title: Best Balance Transfer Credit Cards of 2026
+    desc:  The best balance transfer credit cards compared across six issuers: intro APR window, fee structure, late-fee policy, and rewards.
+- /guides/balance-transfer-credit-card-approval-odds  [in sitemap · src/data/guides.ts · topic match 0.5 on balance transfer]
+    title: Balance Transfer Card Approval Odds by Credit Score
+    desc:  What credit score and income you realistically need to get approved for a balance transfer credit card — plus what to do if you're denied.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-10.md [table] | Lens 2 (adjacent — getting out of debt through bankruptcy). `how to file chapter 7` (12,100, KD 34), `how to file bankruptcy` (8,100, KD 27), `should i file bankruptcy` (est.); PAA: "Can I file Chapter 7 myself?", "Wha
+- 2026-10-10.md [table] | Lens 3 (alternatives). `bankruptcy alternatives` (720, KD 36, CPC $34.95), `debt management plan vs bankruptcy` (50, KD 0), `alternatives to bankruptcy` / `how to get out of debt without bankruptcy` / `how to get out o
+- 2026-10-10.md [table] | Lens 3 (versus). `debt settlement vs bankruptcy` (480, KD 5, CPC $23.14); 5 live Autocomplete completions on the head (question-mode sweep 0); PAA adjacent "What's the difference between debt consolidation and debt set
+- 2026-10-10.md [table] | Bankruptcy alternatives | bankruptcy alternatives (720); debt management plan vs bankruptcy (50); how to get out of debt without bankruptcy (est.) | partial coverage — /guides/how-to-pay-off-debt/ mentions DMPs/consoli
+- 2026-10-16-trend-lane-c.md [table] | Lens 3 (vs) off a Lane B coverage finding: top-20 query `401k vs 529` (1 impression, pos 70). `401k vs 529` 70/mo KD 0 and `529 vs 401k` 70/mo (DataForSEO, measured); `401k or 529` 10; `401k vs 529 for college` ~75 (es
+- 2026-10-26-competitor.md [table] | 1 | Bankrate "credit card companies want you in debt". lookup: no match [verb-only on SERP; ac 11/11 question] | Guide: who pays the issuer (interest, interchange, fees), our calculated $5,300 balance model | create ne
+Commits naming the topic: none
+Same run overlap: none
+

@@ -1,0 +1,21 @@
+INSPECTED ROUTE: /roundup/best-invoicing-apps-for-freelancers
+DATA FILE: src/data/roundups-self-employed.ts (entry begins line 398)
+INSPECTED: 2026-11-16 by mindmap-build
+
+SECTION HEADINGS/TITLES FOUND:
+title: "Best Invoicing Apps for Freelancers in 2026",
+heading: "Processing fees usually cost more than the software",
+heading: "Automatic reminders are the feature that actually pays",
+heading: "What to put on an invoice so it gets paid",
+heading: "Invoices are also your tax records",
+question: "What is the best free invoicing app for freelancers?",
+question: "How much does it cost to accept card payments on an invoice?",
+question: "Should freelancers charge late fees?",
+question: "Do I need invoicing software or is a template enough?",
+question: "What should be on a freelance invoice?",
+
+LINES MENTIONING 'FreshBooks' (candidate anchor context):
+name: "FreshBooks",
+"FreshBooks turns tracked time into invoices with the least friction of anything here, and its reminder and recurring-billing automation is mature. If you bill hourly, the time-to-invoice pipeline is the product and it is worth the subscription; if you bill by
+{ name: "FreshBooks", values: ["$23–$70/mo", "Yes", "Gateway-dependent", "Hourly billing"] },
+"Zoho Invoice is the best free choice, and for most solo freelancers the best choice outright: automatic payment reminders — the feature that most directly shortens how long you wait to be paid — are included at no cost, where Wave puts them behind the $19 Pro

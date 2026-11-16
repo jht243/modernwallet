@@ -1,0 +1,22 @@
+INSPECTED ROUTE: /guides/chase-travel-portal-worth-it
+DATA FILE: src/data/guides.ts (entry begins line 12927)
+INSPECTED: 2026-11-16 by mindmap-build
+
+SECTION HEADINGS/TITLES FOUND:
+title: "Is the Chase Travel Portal Worth It? Point Value Math",
+{ heading: "Baseline Redemption Rates and Points Boost Math", body: "Standard redemptions through the [Chase](https://www.chase.com/personal
+{ heading: "Comparing Portal Value to Airline and Hotel Transfer Partners", body: "Transferring Chase Ultimate Rewards points to airline and
+{ heading: "Circumstances Where the Chase Travel Portal Is Worth It for Simplicity", body: "Booking directly through the Chase Travel portal
+{ heading: "Redemptions Where the Chase Travel Portal Is Rarely Worth It", body: "Transferring points to airline and hotel partners signific
+{ heading: "The Hotel Price Match Guarantee Pilot and Eligibility Rules", body: "Chase is testing a Price Match Guarantee for prepaid hotel 
+{ heading: "When to Skip the Chase Travel Portal", body: "Our verdict on the portal shifts with two specific policy changes, covered below.\
+{ question: "How much are Chase Ultimate Rewards points worth in dollars?", answer: "At the baseline value of 1 cent per point, 100 Chase Ul
+{ question: "Is the Chase Travel portal worth it?", answer: "Yes, the Chase Travel portal is worth using for standard economy flights, indep
+{ question: "Is it cheaper to use the Chase Travel portal or transfer points?", answer: "Transferring points is generally cheaper in terms o
+{ question: "Does the Chase Travel portal price match?", answer: "Chase is testing a hotel Price Match Guarantee, but it is currently in a l
+{ question: "Do all Chase cards get the same value through the portal?", answer: "No, point values through the portal vary based on the spec
+title: "How Much Life Insurance Do I Need? (DIME Method)",
+heading: "The 10 to 12 Times Income Rule",
+
+LINES MENTIONING 'Freedom':
+{ heading: "Baseline Redemption Rates and Points Boost Math", body: "Standard redemptions through the [Chase](https://www.chase.com/personal/credit-cards/education/basics/how-to-use-chase-ultimate-rewards-travel-portal) portal yield a fixed baseline of 1 cent per point across every Ultimate Rewards 

@@ -1,0 +1,613 @@
+{
+ "combinations": 49,
+ "rows": [
+  {
+   "users": 1,
+   "billable_clients": 3,
+   "quickbooks_usd": 38,
+   "freshbooks_usd": 23,
+   "freshbooks_minus_quickbooks_usd": -15,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 1,
+   "billable_clients": 5,
+   "quickbooks_usd": 38,
+   "freshbooks_usd": 23,
+   "freshbooks_minus_quickbooks_usd": -15,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 1,
+   "billable_clients": 6,
+   "quickbooks_usd": 38,
+   "freshbooks_usd": 43,
+   "freshbooks_minus_quickbooks_usd": 5,
+   "cheaper": "quickbooks"
+  },
+  {
+   "users": 1,
+   "billable_clients": 20,
+   "quickbooks_usd": 38,
+   "freshbooks_usd": 43,
+   "freshbooks_minus_quickbooks_usd": 5,
+   "cheaper": "quickbooks"
+  },
+  {
+   "users": 1,
+   "billable_clients": 50,
+   "quickbooks_usd": 38,
+   "freshbooks_usd": 43,
+   "freshbooks_minus_quickbooks_usd": 5,
+   "cheaper": "quickbooks"
+  },
+  {
+   "users": 1,
+   "billable_clients": 51,
+   "quickbooks_usd": 38,
+   "freshbooks_usd": 70,
+   "freshbooks_minus_quickbooks_usd": 32,
+   "cheaper": "quickbooks"
+  },
+  {
+   "users": 1,
+   "billable_clients": 100,
+   "quickbooks_usd": 38,
+   "freshbooks_usd": 70,
+   "freshbooks_minus_quickbooks_usd": 32,
+   "cheaper": "quickbooks"
+  },
+  {
+   "users": 2,
+   "billable_clients": 3,
+   "quickbooks_usd": 85,
+   "freshbooks_usd": 34,
+   "freshbooks_minus_quickbooks_usd": -51,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 2,
+   "billable_clients": 5,
+   "quickbooks_usd": 85,
+   "freshbooks_usd": 34,
+   "freshbooks_minus_quickbooks_usd": -51,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 2,
+   "billable_clients": 6,
+   "quickbooks_usd": 85,
+   "freshbooks_usd": 54,
+   "freshbooks_minus_quickbooks_usd": -31,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 2,
+   "billable_clients": 20,
+   "quickbooks_usd": 85,
+   "freshbooks_usd": 54,
+   "freshbooks_minus_quickbooks_usd": -31,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 2,
+   "billable_clients": 50,
+   "quickbooks_usd": 85,
+   "freshbooks_usd": 54,
+   "freshbooks_minus_quickbooks_usd": -31,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 2,
+   "billable_clients": 51,
+   "quickbooks_usd": 85,
+   "freshbooks_usd": 81,
+   "freshbooks_minus_quickbooks_usd": -4,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 2,
+   "billable_clients": 100,
+   "quickbooks_usd": 85,
+   "freshbooks_usd": 81,
+   "freshbooks_minus_quickbooks_usd": -4,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 3,
+   "billable_clients": 3,
+   "quickbooks_usd": 85,
+   "freshbooks_usd": 45,
+   "freshbooks_minus_quickbooks_usd": -40,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 3,
+   "billable_clients": 5,
+   "quickbooks_usd": 85,
+   "freshbooks_usd": 45,
+   "freshbooks_minus_quickbooks_usd": -40,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 3,
+   "billable_clients": 6,
+   "quickbooks_usd": 85,
+   "freshbooks_usd": 65,
+   "freshbooks_minus_quickbooks_usd": -20,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 3,
+   "billable_clients": 20,
+   "quickbooks_usd": 85,
+   "freshbooks_usd": 65,
+   "freshbooks_minus_quickbooks_usd": -20,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 3,
+   "billable_clients": 50,
+   "quickbooks_usd": 85,
+   "freshbooks_usd": 65,
+   "freshbooks_minus_quickbooks_usd": -20,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 3,
+   "billable_clients": 51,
+   "quickbooks_usd": 85,
+   "freshbooks_usd": 92,
+   "freshbooks_minus_quickbooks_usd": 7,
+   "cheaper": "quickbooks"
+  },
+  {
+   "users": 3,
+   "billable_clients": 100,
+   "quickbooks_usd": 85,
+   "freshbooks_usd": 92,
+   "freshbooks_minus_quickbooks_usd": 7,
+   "cheaper": "quickbooks"
+  },
+  {
+   "users": 4,
+   "billable_clients": 3,
+   "quickbooks_usd": 140,
+   "freshbooks_usd": 56,
+   "freshbooks_minus_quickbooks_usd": -84,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 4,
+   "billable_clients": 5,
+   "quickbooks_usd": 140,
+   "freshbooks_usd": 56,
+   "freshbooks_minus_quickbooks_usd": -84,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 4,
+   "billable_clients": 6,
+   "quickbooks_usd": 140,
+   "freshbooks_usd": 76,
+   "freshbooks_minus_quickbooks_usd": -64,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 4,
+   "billable_clients": 20,
+   "quickbooks_usd": 140,
+   "freshbooks_usd": 76,
+   "freshbooks_minus_quickbooks_usd": -64,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 4,
+   "billable_clients": 50,
+   "quickbooks_usd": 140,
+   "freshbooks_usd": 76,
+   "freshbooks_minus_quickbooks_usd": -64,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 4,
+   "billable_clients": 51,
+   "quickbooks_usd": 140,
+   "freshbooks_usd": 103,
+   "freshbooks_minus_quickbooks_usd": -37,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 4,
+   "billable_clients": 100,
+   "quickbooks_usd": 140,
+   "freshbooks_usd": 103,
+   "freshbooks_minus_quickbooks_usd": -37,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 5,
+   "billable_clients": 3,
+   "quickbooks_usd": 140,
+   "freshbooks_usd": 67,
+   "freshbooks_minus_quickbooks_usd": -73,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 5,
+   "billable_clients": 5,
+   "quickbooks_usd": 140,
+   "freshbooks_usd": 67,
+   "freshbooks_minus_quickbooks_usd": -73,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 5,
+   "billable_clients": 6,
+   "quickbooks_usd": 140,
+   "freshbooks_usd": 87,
+   "freshbooks_minus_quickbooks_usd": -53,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 5,
+   "billable_clients": 20,
+   "quickbooks_usd": 140,
+   "freshbooks_usd": 87,
+   "freshbooks_minus_quickbooks_usd": -53,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 5,
+   "billable_clients": 50,
+   "quickbooks_usd": 140,
+   "freshbooks_usd": 87,
+   "freshbooks_minus_quickbooks_usd": -53,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 5,
+   "billable_clients": 51,
+   "quickbooks_usd": 140,
+   "freshbooks_usd": 114,
+   "freshbooks_minus_quickbooks_usd": -26,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 5,
+   "billable_clients": 100,
+   "quickbooks_usd": 140,
+   "freshbooks_usd": 114,
+   "freshbooks_minus_quickbooks_usd": -26,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 10,
+   "billable_clients": 3,
+   "quickbooks_usd": 340,
+   "freshbooks_usd": 122,
+   "freshbooks_minus_quickbooks_usd": -218,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 10,
+   "billable_clients": 5,
+   "quickbooks_usd": 340,
+   "freshbooks_usd": 122,
+   "freshbooks_minus_quickbooks_usd": -218,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 10,
+   "billable_clients": 6,
+   "quickbooks_usd": 340,
+   "freshbooks_usd": 142,
+   "freshbooks_minus_quickbooks_usd": -198,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 10,
+   "billable_clients": 20,
+   "quickbooks_usd": 340,
+   "freshbooks_usd": 142,
+   "freshbooks_minus_quickbooks_usd": -198,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 10,
+   "billable_clients": 50,
+   "quickbooks_usd": 340,
+   "freshbooks_usd": 142,
+   "freshbooks_minus_quickbooks_usd": -198,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 10,
+   "billable_clients": 51,
+   "quickbooks_usd": 340,
+   "freshbooks_usd": 169,
+   "freshbooks_minus_quickbooks_usd": -171,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 10,
+   "billable_clients": 100,
+   "quickbooks_usd": 340,
+   "freshbooks_usd": 169,
+   "freshbooks_minus_quickbooks_usd": -171,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 25,
+   "billable_clients": 3,
+   "quickbooks_usd": 340,
+   "freshbooks_usd": 287,
+   "freshbooks_minus_quickbooks_usd": -53,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 25,
+   "billable_clients": 5,
+   "quickbooks_usd": 340,
+   "freshbooks_usd": 287,
+   "freshbooks_minus_quickbooks_usd": -53,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 25,
+   "billable_clients": 6,
+   "quickbooks_usd": 340,
+   "freshbooks_usd": 307,
+   "freshbooks_minus_quickbooks_usd": -33,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 25,
+   "billable_clients": 20,
+   "quickbooks_usd": 340,
+   "freshbooks_usd": 307,
+   "freshbooks_minus_quickbooks_usd": -33,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 25,
+   "billable_clients": 50,
+   "quickbooks_usd": 340,
+   "freshbooks_usd": 307,
+   "freshbooks_minus_quickbooks_usd": -33,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 25,
+   "billable_clients": 51,
+   "quickbooks_usd": 340,
+   "freshbooks_usd": 334,
+   "freshbooks_minus_quickbooks_usd": -6,
+   "cheaper": "freshbooks"
+  },
+  {
+   "users": 25,
+   "billable_clients": 100,
+   "quickbooks_usd": 340,
+   "freshbooks_usd": 334,
+   "freshbooks_minus_quickbooks_usd": -6,
+   "cheaper": "freshbooks"
+  }
+ ],
+ "cheaper_by_users_and_client_edges": {
+  "1": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "quickbooks",
+   "50": "quickbooks",
+   "51": "quickbooks",
+   "500": "quickbooks"
+  },
+  "2": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "3": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "quickbooks",
+   "500": "quickbooks"
+  },
+  "4": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "5": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "6": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "7": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "8": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "9": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "10": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "11": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "12": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "13": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "14": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "15": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "16": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "17": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "18": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "19": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "20": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "21": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "22": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "23": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "24": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  },
+  "25": {
+   "1": "freshbooks",
+   "5": "freshbooks",
+   "6": "freshbooks",
+   "50": "freshbooks",
+   "51": "freshbooks",
+   "500": "freshbooks"
+  }
+ },
+ "claims": {
+  "1_user_up_to_5_clients_freshbooks_cheaper": true,
+  "1_user_6_plus_clients_quickbooks_cheaper": true,
+  "2_users_any_clients_freshbooks_cheaper": true,
+  "3_users_up_to_50_clients_freshbooks_cheaper": true,
+  "3_users_51_plus_clients_quickbooks_cheaper": true,
+  "4_to_25_users_any_clients_freshbooks_cheaper": true
+ },
+ "counterexample": {
+  "users": 3,
+  "billable_clients": 51,
+  "quickbooks_usd": 85,
+  "freshbooks_usd": 92
+ }
+}

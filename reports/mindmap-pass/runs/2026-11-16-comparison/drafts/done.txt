@@ -1,0 +1,3 @@
+quickbooks-vs-freshbooks exit=0
+annuity-vs-401k exit=0
+chase-freedom-flex-vs-unlimited exit=0

@@ -1,0 +1,32 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "mindmap-write",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/compare/pension-vs-annuity",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/roundup/best-cash-back-credit-cards",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/chase-travel-portal-guide",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/chase-travel-portal-worth-it",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "2026-11-16-comparison"
+}

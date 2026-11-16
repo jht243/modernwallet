@@ -1,0 +1,87 @@
+{
+ "slug": "quickbooks-vs-freshbooks",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gpt-6-sol",
+ "provider": "openai",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_OPENAI_KEY",
+ "finish_reason": "STOP",
+ "words": 2318,
+ "floor": 1500,
+ "input_tokens": 37197,
+ "output_tokens": 4224,
+ "thinking_tokens": 516,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.1218,
+ "guards": {
+  "repairs": [
+   "added relatedLinks: [] (undefined crashes next build)"
+  ],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'optionAName' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'optionBName' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 2318,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 1600,
+   "floor": 1500,
+   "ratio": 1.07,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    1
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we modeled monthly list prices across 49 user-and-client combinations using the [QuickBooks pricing page](https://quickbooks.intuit.com/pricing/) and [FreshBooks pricing page](https://www.freshbooks.com/pricing) as inputs.",
+     "replacement": "In our internal cost modeling, we compared monthly list prices across 49 user-and-client combinations using the [QuickBooks pricing page](https://quickbooks.intuit.com/pricing/) and [FreshBooks pricing page](https://www.freshbooks.com/pricing) as inputs.",
+     "type": "unsupported",
+     "why": "The site's name is The Modern Wallet, not ModernWallet."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "The cheaper paid plan changes at two client-count boundaries and three QuickBooks user-cap boundaries.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "Crossing QuickBooks\u2019 five-user cap does not switch which product costs less."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2329
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 57.1,
+ "response_id": "resp_06ea737c9e39777b006afac00e1e1087d2a1ffedf35f054421",
+ "generated_at": "2026-11-16T08:35:18+0000"
+}

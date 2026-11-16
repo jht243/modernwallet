@@ -1,0 +1,425 @@
+---
+mindmap_pass_date: 2026-11-16
+source: "reports/mindmap-pass/runs/2026-11-16-comparison/brief.md"
+interpreted_brief: "Unattended comparison-miner run for themodernwallet.com: 11 mined X-vs-Y candidates (all NEW or PARTIAL against existing coverage). Priority is realistic organic-click growth, not lead generation. Each candidate was SEMRUSH-validated and dispositioned; the three with measured demand of 720 or more per month, winnable SERPs and fully sourced primary facts (QuickBooks vs FreshBooks 2,400, annuity vs 401(k) 1,600, Chase Freedom Flex vs Unlimited 720) become new /compare pages; the rest are deferred or dropped with reasons."
+status: ready-for-approval
+---
+
+# Content approval plan
+
+## Action chart
+
+| Problem | Solution | Bucket | Target (file or route) | Format | Best medium | Resolved deliverable | SERP verdict | SERP evidence | Reader question | Answer | Answer placement | ID |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| lookup: /alternatives/quickbooks - reader wants a list of alternatives, not this pairing. Lens 1 direct intent (brief candidate 2). "quickbooks vs freshbooks" 2,400/mo KD 28 SEMRUSH; no dedicated page on the site; SERP winnable. | Create /compare/quickbooks-vs-freshbooks [comparison table/database]: published plans side by side plus a modeled monthly-cost grid by users and billable clients. | create new content | /compare/quickbooks-vs-freshbooks | comparison table/database | text + comparison table | text + comparison table | winnable (AI Overview) | SERP read 2026-11-16 (DataForSEO): verdict winnable, not forum-dominated, AI Overview present citing youtube.com, freshbooks.com, bookkeeping-services.com, stephsbooks.com, business.com, nerdwallet.com. Page one is steemit, hostmerchantservices, vencru, ikeepapp, medium, fitsmallbusiness: mostly thin/affiliate comparisons, no dedicated price-by-usage break-even. | QuickBooks or FreshBooks: which costs less for my small business or freelance work? [PAA 3/6 on-topic (comparable software, what FreshBooks is, leaving QuickBooks); 3/6 off-topic: old QuickBooks versions, CPAs, IRS; ac 4/25 which-is-better question completions] | At monthly list prices, FreshBooks costs less for 1 user with up to 5 billable clients, for 2 users at any client count, and for 4 or more users at any client count; QuickBooks Online costs less for 1 user with 6 or more clients and for exactly 3 users with 51 or more clients, and QuickBooks also has a Free plan (1 user, 2 invoices a month); shape: pick with its flip points. | section 1: "QuickBooks vs FreshBooks at a Glance" | A1 |
+| lookup: /compare/annuity-vs-cd and /compare/pension-vs-annuity - different pairings. Lens 1 direct intent (brief candidate 6). "annuity vs 401k" 1,600/mo KD 24 SEMRUSH; no page compares the two; SERP winnable. | Create /compare/annuity-vs-401k [comparison table/database]: source-led side-by-side of an annuity and a 401(k) with fees, taxes, limits and the inside-a-plan caution. | create new content | /compare/annuity-vs-401k | comparison table/database | text + comparison table | text + comparison table | winnable (AI Overview) | SERP read 2026-11-16: verdict winnable, not forum-dominated, AI Overview present citing annuity.org, northwesternmutual.com, fidelity.com, youtube.com, employeefiduciary.com, smartasset.com. Organic page one: employeefiduciary, thrivent, titanwealthinternational, nerdwallet, carboncollective (insurer/advisor-owned pages with product interest). | Is an annuity better than a 401(k), or are they different things? [PAA 6/6 on-topic annuity questions, 0/6 name 401(k); ac 4/15 "is an annuity better than a 401k"/"what's better" question completions] | They are different tools, not substitutes: a 401(k) is an employer plan with a $24,500 employee deferral limit for 2026 and a possible employer match (IRS), while an annuity is an insurance contract that can provide guaranteed income but carries surrender charges and fees (Investor.gov); shape: verdict with boundary. | section 1: "Annuity vs 401(k) in One Answer" | A2 |
+| lookup: /roundup/best-cash-back-credit-cards - many-card list, not this pairing. Lens 1 direct intent (brief candidate 8). "chase freedom flex vs unlimited" 720/mo KD 36 SEMRUSH; no head-to-head page; SERP winnable. | Create /compare/chase-freedom-flex-vs-unlimited [comparison table/database]: published earn rates and fees side by side plus a modeled annual cash-back break-even. | create new content | /compare/chase-freedom-flex-vs-unlimited | comparison table/database | text + comparison table | text + comparison table | winnable (AI Overview) | SERP read 2026-11-16: verdict winnable, not forum-dominated, AI Overview cites chase.com, creditcards.chase.com, cnbc.com, youtube.com. Page one includes joingerald, bestcreditcardcomparison, reddit, instagram, mypointslife, cardcritics: issuer pages are cited by the AIO but do not compare the two cards. | Which earns more cash back, Chase Freedom Flex or Freedom Unlimited? [PAA 5/6 on-topic (which is better, both cards, perks); 1/6 off-topic: hardest Chase card; ac 4/14 "what's better"/"is ... better" completions] | Freedom Flex earns more cash back only when your spend in its activated 5% rotating category (up to $1,500 a quarter) is at least 12.5% of your total annual spend; otherwise Freedom Unlimited earns more because it pays 1.5% instead of 1% on everything else; at about $48,000 or more of total annual spend Flex cannot beat Unlimited even with the full $1,500 every quarter; both pay 5% on Chase Travel and 3% on dining and drugstores; shape: pick with break-even. | section 1: "Chase Freedom Flex vs Unlimited in One Answer" | A3 |
+
+## Original request and acceptance
+
+Add objective, source-backed comparison pages for the highest realistic-organic-click candidates from the mined list, with every candidate retaining an explicit disposition.
+
+- **id:** REQ-1
+**description:** Account for all 11 mined candidates with an ID and a disposition (build, defer or drop) and no silent drops.
+**acceptance:** readiness.md and manifest candidateDispositions list candidates 1-11 each with disposition and evidence.
+**actionIds:** - A1
+- A2
+- A3
+- **id:** REQ-2
+**description:** Prioritize realistic organic-click opportunity using validated demand, SERP winnability and ability to give a better answer, not lead generation.
+**acceptance:** Selected pages show measured SEMRUSH volume and SERP read; deferred rows show why.
+**actionIds:** - A1
+- A2
+- A3
+- **id:** REQ-3
+**description:** Respect YMYL finance rules and evidence rules: no invented tests or outcomes, calculated and reported bases labelled honestly, source facts verbatim-captured.
+**acceptance:** Each brief states evidence basis, attribution wording and testing decision; sources saved under research/sources.
+**actionIds:** - A1
+- A2
+- A3
+
+### Presentation — A1
+
+**medium:** text + comparison table
+**placement:** Existing comparison template: opening answer, then side-by-side table, then modeled/sourced analysis
+**reason:** The reader's decision turns on finite, sourced thresholds; a scannable table plus a worked break-even answers it without a widget
+**readerInputs:** 
+**interaction:** **decision:** not-useful
+**reason:** The decision has a small number of discrete cases (plan tiers or scenario rows); a static grid shows every case and the break-even, whereas a calculator would only restate the same finite table
+**animation:** **decision:** not-useful
+**reason:** No sequence or changing assumption needs motion; static table is faster to scan
+
+### Presentation — A2
+
+**medium:** text + comparison table
+**placement:** Existing comparison template: opening answer, then side-by-side table, then modeled/sourced analysis
+**reason:** The reader's decision turns on finite, sourced thresholds; a scannable table plus a worked break-even answers it without a widget
+**readerInputs:** 
+**interaction:** **decision:** not-useful
+**reason:** The decision has a small number of discrete cases (plan tiers or scenario rows); a static grid shows every case and the break-even, whereas a calculator would only restate the same finite table
+**animation:** **decision:** not-useful
+**reason:** No sequence or changing assumption needs motion; static table is faster to scan
+
+### Presentation — A3
+
+**medium:** text + comparison table
+**placement:** Existing comparison template: opening answer, then side-by-side table, then modeled/sourced analysis
+**reason:** The reader's decision turns on finite, sourced thresholds; a scannable table plus a worked break-even answers it without a widget
+**readerInputs:** 
+**interaction:** **decision:** not-useful
+**reason:** The decision has a small number of discrete cases (plan tiers or scenario rows); a static grid shows every case and the break-even, whereas a calculator would only restate the same finite table
+**animation:** **decision:** not-useful
+**reason:** No sequence or changing assumption needs motion; static table is faster to scan
+
+## Emerging search patterns (clusters)
+
+- Small-business accounting software head-to-heads: quickbooks vs freshbooks 2,400, xero vs quickbooks 2,400 (deferred), alternatives already at /alternatives/quickbooks (SEMRUSH 2026-11-16).
+- Retirement account vs product comparisons: annuity vs 401k 1,600 (new), existing annuity-vs-cd and pension-vs-annuity cover adjacent pairings.
+- Chase everyday card comparisons: chase freedom flex vs unlimited 720 (new); autocomplete also shows flex vs sapphire preferred, vs discover it, vs capital one savor (not validated this run).
+
+## Exclusions
+
+- C1 chime vs sofi: DEFER - 590/mo KD 27, SERP winnable (top result is chime.com). Chime primary pages return HTTP 403 anti-bot to every fetch method from this environment so Chime facts cannot be primary-sourced; no unverified claims. Next run: retry or use FDIC/CFPB-sourced framing.
+- C3 acorns vs robinhood: DEFER - 480/mo KD 22; lower volume than selected set and Acorns/Robinhood primary captures not obtained this run (capacity). Existing robinhood comparisons overlap partially. Carry forward.
+- C4 webull vs fidelity: DEFER - 480/mo KD 20; robinhood-vs-fidelity and robinhood-vs-webull exist; primary captures not obtained this run (capacity). Carry forward.
+- C5 wealthfront vs vanguard: DEFER - 210/mo KD 12; betterment-vs-wealthfront exists; low volume, below this run's 720 threshold. Carry forward.
+- C7 i bonds vs high yield savings: DROP - 20/mo measured demand: below realistic click threshold; i-bonds-vs-tips and i-bonds-vs-ee-bonds exist; the I-bond/HYSA tradeoff is partly covered in guides.
+- C9 capital one 360 vs ally: DROP - 20/mo measured demand; previously dropped ally-bank-vs-marcus cache pattern; no realistic click opportunity.
+- C10 xero vs quickbooks: DEFER - 2,400/mo KD 50, SERP contested (xero.com, forbes, quickbooks.intuit.com on page one) and higher effort than A1. Distinct rival pairing, not an overlap with A1. Defer to next run; high-priority carry-forward. Xero pricing page already captured.
+- C11 debt consolidation vs balance transfer: DEFER - 210/mo KD 38, PARTIAL: section exists in src/data/guides.ts; balance-transfer-vs-personal-loan was dropped in cache 2026-10-19 for lack of sourced facts. Low volume and enrichment lane, not new page; carry forward.
+
+## New-page briefs
+
+### A1 — /compare/quickbooks-vs-freshbooks
+
+**Identity**
+
+**title:** QuickBooks vs FreshBooks: Price by Users and Clients
+**pageType:** comparison
+**format:** comparison table/database
+**medium:** text + comparison table
+
+**Reader and answer**
+
+**question:** QuickBooks or FreshBooks: which costs less for my small business or freelance work? [PAA 3/6 on-topic (comparable software, what FreshBooks is, leaving QuickBooks); 3/6 off-topic: old QuickBooks versions, CPAs, IRS; ac 4/25 which-is-better question completions]
+**answer:** At monthly list prices, FreshBooks costs less for 1 user with up to 5 billable clients, for 2 users at any client count, and for 4 or more users at any client count; QuickBooks Online costs less for 1 user with 6 or more clients and for exactly 3 users with 51 or more clients, and QuickBooks also has a Free plan (1 user, 2 invoices a month); shape: pick with its flip points.
+**placement:** section 1: "QuickBooks vs FreshBooks at a Glance"
+
+**Keyword evidence**
+
+Primary "quickbooks vs freshbooks" 2,400/mo KD 28 (SEMRUSH phrase_these/phrase_kdi, us database, checked 2026-11-16). Supporting autocomplete completions (live Google, not volume-validated) "what's better quickbooks or freshbooks", "is freshbooks better than quickbooks", "difference between freshbooks and quickbooks", "quickbooks vs freshbooks vs xero", "...for small business" (Google Autocomplete question sweep saved to ac-quickbooks-vs-freshbooks.csv). Measured volume, not an estimate.
+
+**SERP and questions**
+
+SERP read 2026-11-16 (DataForSEO): verdict winnable, not forum-dominated, AI Overview present citing youtube.com, freshbooks.com, bookkeeping-services.com, stephsbooks.com, business.com, nerdwallet.com. Page one is steemit, hostmerchantservices, vencru, ikeepapp, medium, fitsmallbusiness: mostly thin/affiliate comparisons, no dedicated price-by-usage break-even. PAA: What's comparable to QuickBooks?; What is FreshBooks accounting software?; Why are people leaving QuickBooks?; Why do CPAs not like QuickBooks Online?. Limit: AI Overview cites vendor-owned FreshBooks, so a vendor-neutral extractable answer block is needed.
+
+**Why a new page**
+
+lookup: /alternatives/quickbooks (published 2026-11-13) is the QuickBooks alternatives roundup (reader goal: what else could I use, five products) and /roundup/best-accounting-software-for-freelancers (reader goal: pick software from a ranked list); neither answers the head-to-head "which of these two costs less for my users and clients". Same-run overlap: xero-vs-quickbooks (deferred, different rival). No commits touch a quickbooks-vs-freshbooks route (git log -p on src/data/comparisons.ts shows no such slug; coverage-lookup "Commits naming the topic: none"). Independent duplicate review is the CHART-REVIEW stage.
+
+**Planned outline**
+
+- **heading:** QuickBooks vs FreshBooks at a Glance
+**purpose:** Opening answer with the break-even: who pays less at what user and client counts.
+- **heading:** Published Plans and Monthly List Prices Side by Side
+**purpose:** Table of QuickBooks Online (Free $0 with 1 user and 2 invoices a month, Simple Start $38, Essentials $85, Plus $140, Advanced $340) and FreshBooks (Lite $23, Plus $43, Premium $70, Select quote) with user and client limits; labelled "monthly list price, checked 2026-11-16", linked to quickbooks.intuit.com/pricing and freshbooks.com/pricing; promotions excluded.
+- **heading:** Monthly Cost by Number of Users and Clients
+**purpose:** Our modeled grid (users 1/2/3/4/5/10/25 by clients 3/5/6/20/50/51/100) from list prices, with the formula and every flip point.
+- **heading:** What the Price Comparison Leaves Out
+**purpose:** Price-only model: features are not scored. FreshBooks features cited only from its verbatim pricing capture (client-based billing, proposals, projects); no QuickBooks feature claims or quotes beyond price and user caps.
+- **heading:** Who Should Pick QuickBooks or FreshBooks
+**purpose:** Reader-situation guidance, who this is not for, what would change our answer.
+- **heading:** FAQs
+**purpose:** PAA/autocomplete questions answered from sources: comparable software, what FreshBooks is, accountant access.
+
+**Contribution and evidence**
+
+Decision gap: readers cannot see where the cheaper product flips as users and billable clients change. Evidence basis: calculated. In our internal cost modeling, we compared list prices across 20 user/client combinations (qb_vs_fb.py, output qb_vs_fb.out.json). Inputs are vendor-published (freshbooks.com/pricing captured verbatim 2026-11-16; quickbooks.intuit.com/pricing captured via WebFetch summary because direct fetch fails, corroborated by the 2026-11-13 capture in src/data/alternatives.json). Limits: price-only, promos excluded, feature differences not scored, FreshBooks extra-user add-on $11/mo assumed to apply to each user beyond the first, QuickBooks Free plan treated separately. Counterexample: at 3 users and 51 or more clients QuickBooks Essentials ($85) beats FreshBooks Premium plus two seats ($92). QuickBooks source binding: pricing capture is a WebFetch summary, used only for list prices and user caps; page must say "list price, checked 2026-11-16", link quickbooks.intuit.com/pricing, quote nothing verbatim from QuickBooks, and make no testing claim.
+
+**Tables, tools or visuals**
+
+Static plan table plus a finite grid (7 user counts by 7 client counts) with list prices only; no interactive widget because the grid shows every flip point. Inputs on page: users, billable clients, monthly list price.
+
+**Testing and review**
+
+Site section G licenses first-person testing of software tools, but no executed product-test records exist for QuickBooks or FreshBooks. Decision: ordinary (non-TESTED) presentation, no "we tested" or any testing claim, no tested title/byline/schema. Visible attribution is "In our internal cost modeling, we compared..." (calculated basis), vendor prices labelled as sourced inputs. Review profile: STANDARD (software prices/capabilities). No professional review required; accounting/tax advice disclaimer at page bottom only.
+
+**Planned takeaway**
+
+This is a price answer, not a feature verdict. At monthly list prices FreshBooks is cheaper for 1 user with up to 5 clients, for 2 users at every client count and for 4 or more users at every client count; QuickBooks Online is cheaper for 1 user with 6 or more clients and for exactly 3 users with 51 or more clients; the QuickBooks Free plan ($0, 1 user, 2 invoices a month) beats both for a single user sending almost no invoices. The answer changes if promotions, FreshBooks seat add-on pricing or QuickBooks tiers change, or if the reader needs features the price model does not score. Attributed to our internal cost modeling, with vendor list prices as sourced inputs.
+
+**Inbound internal links**
+
+**required:** 3
+**placements:** - **source:** /alternatives/quickbooks
+**target:** /compare/quickbooks-vs-freshbooks
+**section:** Table note / "intro" paragraph
+**anchor:** QuickBooks vs FreshBooks head-to-head
+**purpose:** Readers comparing just the two named products need the price-by-usage grid
+**inspection:** **path:** reports/mindmap-pass/runs/2026-11-16-comparison/research/link-inspections/alternatives__quickbooks.txt
+**sha256:** 74bca72feec19613a1d82889cfdaeaab08f72d4dd051a6bb4eab787481d38187
+- **source:** /roundup/best-accounting-software-for-freelancers
+**target:** /compare/quickbooks-vs-freshbooks
+**section:** FreshBooks entry
+**anchor:** FreshBooks vs QuickBooks price comparison
+**purpose:** Roundup readers weighing the top two get a direct comparison
+**inspection:** **path:** reports/mindmap-pass/runs/2026-11-16-comparison/research/link-inspections/roundup__best-accounting-software-for-freelancers.txt
+**sha256:** 6c402584807eba9d2f6924b0cce73cd968abbae0ae81229b014136d7d55382e4
+- **source:** /roundup/best-invoicing-apps-for-freelancers
+**target:** /compare/quickbooks-vs-freshbooks
+**section:** FreshBooks entry
+**anchor:** QuickBooks vs FreshBooks costs by client count
+**purpose:** Invoicing-app readers deciding between FreshBooks and QuickBooks
+**inspection:** **path:** reports/mindmap-pass/runs/2026-11-16-comparison/research/link-inspections/roundup__best-invoicing-apps-for-freelancers.txt
+**sha256:** c0af77eb617cd4b470a35fec05b830ef00337912bc3ae2b277839e3f6628fd90
+
+**Outbound internal links**
+
+**placements:** - **source:** /compare/quickbooks-vs-freshbooks
+**target:** /alternatives/quickbooks
+**section:** Who Should Pick QuickBooks or FreshBooks
+**anchor:** other QuickBooks alternatives
+**purpose:** Reader wants more than two options
+**inspection:** **path:** reports/mindmap-pass/runs/2026-11-16-comparison/research/link-inspections/alternatives__quickbooks.txt
+**sha256:** 74bca72feec19613a1d82889cfdaeaab08f72d4dd051a6bb4eab787481d38187
+- **source:** /compare/quickbooks-vs-freshbooks
+**target:** /roundup/best-invoicing-apps-for-freelancers
+**section:** Who Should Pick QuickBooks or FreshBooks
+**anchor:** invoicing apps for freelancers
+**purpose:** Freelancers who only need invoicing
+**inspection:** **path:** reports/mindmap-pass/runs/2026-11-16-comparison/research/link-inspections/roundup__best-invoicing-apps-for-freelancers.txt
+**sha256:** c0af77eb617cd4b470a35fec05b830ef00337912bc3ae2b277839e3f6628fd90
+
+**Technical and measurement scope**
+
+Add entry to src/data/comparisons.ts (route /compare/quickbooks-vs-freshbooks/, rendered by the existing /compare/[slug] template with canonical, Article/FAQ JSON-LD and Byline); sitemap generated at build; render-time entity registry handles first-mention vendor links. Measurement: hypothesis = new page earns clicks on 'quickbooks vs freshbooks' query family; baseline not-yet-published (age-matched comparator at day 28/56); GSC data unavailable pre-publication, recorded as unavailable not zero; no uplift claimed.
+
+### A2 — /compare/annuity-vs-401k
+
+**Identity**
+
+**title:** Annuity vs 401(k): They Solve Different Retirement Problems
+**pageType:** comparison
+**format:** comparison table/database
+**medium:** text + comparison table
+
+**Reader and answer**
+
+**question:** Is an annuity better than a 401(k), or are they different things? [PAA 6/6 on-topic annuity questions, 0/6 name 401(k); ac 4/15 "is an annuity better than a 401k"/"what's better" question completions]
+**answer:** They are different tools, not substitutes: a 401(k) is an employer plan with a $24,500 employee deferral limit for 2026 and a possible employer match (IRS), while an annuity is an insurance contract that can provide guaranteed income but carries surrender charges and fees (Investor.gov); shape: verdict with boundary.
+**placement:** section 1: "Annuity vs 401(k) in One Answer"
+
+**Keyword evidence**
+
+Primary "annuity vs 401k" 1,600/mo KD 24 (SEMRUSH, us, 2026-11-16, measured). Supporting autocomplete: "is an annuity better than a 401k", "what's better annuity or 401k", "is annuity the same as 401k", "pension vs 401k vs annuity", "is annuities a good retirement plan" (ac-annuity-vs-401k.csv).
+
+**SERP and questions**
+
+SERP read 2026-11-16: verdict winnable, not forum-dominated, AI Overview present citing annuity.org, northwesternmutual.com, fidelity.com, youtube.com, employeefiduciary.com, smartasset.com. Organic page one: employeefiduciary, thrivent, titanwealthinternational, nerdwallet, carboncollective (insurer/advisor-owned pages with product interest). PAA: How is an annuity taxed?; Can I hold an annuity in my IRA?; What are the cons of an annuity?; Why do people say not to buy an annuity?; Has anyone ever lost money in an annuity?; How much monthly from a $100,000 annuity? Opportunity: a source-led, non-seller comparison; limit: monthly-payout question has no honest single figure, so page states that absence.
+
+**Why a new page**
+
+lookup: /compare/pension-vs-401k (guaranteed pension income vs a 401(k); employer-run defined-benefit, not an insurance annuity contract), /compare/iul-vs-401k (an indexed universal life policy vs a 401(k), with employer-match content; a life-insurance policy, not an annuity), /annuity-calculator (payout/growth calculation tool, not a plan comparison), /compare/annuity-vs-cd, /compare/pension-vs-annuity and the QLAC guide. Ruling: each answers a different reader question; none compares an annuity contract with a 401(k) plan, so the intents are distinct and this is a new page, not a duplicate. Cross-links will connect them (pension-vs-401k and iul-vs-401k as inbound sources). No commits touch an annuity-vs-401k route. Independent duplicate review is the CHART-REVIEW stage.
+
+**Planned outline**
+
+- **heading:** Annuity vs 401(k) in One Answer
+**purpose:** Opening verdict: different tools, not rivals; when each fits.
+- **heading:** Annuity and 401(k) Compared Side by Side
+**purpose:** Table rows only where captured sources support both sides: what it is; who provides it; tax treatment (IRS: pre-tax deferrals excluded from income, distributions taxable, designated Roth exception; Investor.gov: annuity growth tax-deferred); 2026 deferral limit $24,500 (IRS) vs no contribution limit stated in captured annuity source; employer match (IRS: allowed if plan permits, may be discretionary); early-withdrawal tax (IRS tax topic 558: 10% additional tax before 59 1/2 on qualified plans and deferred annuity contracts, with exceptions); surrender charges and ongoing fees (annuity, Investor.gov); risk by annuity type; income guarantee. No 401(k) plan-fee, RMD-age or catch-up-dollar rows because the captures do not support them.
+- **heading:** What an Annuity Costs and What Locks Up Your Money
+**purpose:** Investor.gov: surrender charges, ongoing fees by type (fixed, fixed indexed, RILA, variable), insurer claims-paying ability.
+- **heading:** Taxes and Early Withdrawals
+**purpose:** IRS tax topic 558 and IRS 401(k) plans page; Investor.gov withdrawal taxation.
+- **heading:** Buying an Annuity Inside a 401(k) or IRA
+**purpose:** Investor.gov caution about buying an annuity within a tax-deferred plan; ask how it fits.
+- **heading:** Who This Is Not For and What Would Change Our Answer
+**purpose:** Boundaries and conditions.
+- **heading:** FAQs
+**purpose:** PAA questions answered from Investor.gov/IRS; monthly-payout question answered with the honest absence of a figure.
+
+**Contribution and evidence**
+
+Decision gap: readers treat annuity and 401(k) as alternatives; the sources show they sit at different layers. Evidence basis: reported (no numerical model; payout figures depend on insurer rates, age and contract, which no public source fixes). Sources: Investor.gov annuities page (captured verbatim 2026-11-16) and IRS retirement topics: contributions page ($24,500 for 2026, $23,500 for 2025; captured verbatim 2026-11-16). Reasoning trail in readiness.md. Attribution names the SEC Office of Investor Education and the IRS; no "our test" claims. Counterexample: a person with no employer plan has no 401(k) to compare, so the question becomes annuity vs IRA.
+
+**Tables, tools or visuals**
+
+Finite side-by-side comparison table; no calculator because payout depends on insurer-set rates and contract terms the sources do not publish (calculator would rest on invented assumptions).
+
+**Testing and review**
+
+Annuities and retirement plans are financial products/services: section G excludes them from testing claims. Decision: ordinary presentation; no testing language. Attribution is source-only (Investor.gov, IRS). Review profile HIGH (consequential retirement/investment claims) with 2-round ceiling and no named professional review required by the site content standard (YMYL categorization alone does not require one); IRS early-distribution, 401(k) basics and contributions pages captured verbatim 2026-11-16; disclaimer at bottom only; no guaranteed-return claims.
+
+**Planned takeaway**
+
+If your employer plan offers a match, the IRS says matching contributions are allowed when the plan permits and may be discretionary, so check your plan: a match is available only through the 401(k), which makes it a conditional first step rather than a rule. An annuity answers a different question, guaranteed income, and Investor.gov says annuities suit long time horizons, carry surrender charges and fees, and warrants caution when bought inside a traditional 401(k) or IRA. The answer changes if you have no employer plan, if your plan has no match, or if you are near retirement and need income. Attributed to the IRS and Investor.gov, not to our testing; this is general education, not advice.
+
+**Inbound internal links**
+
+**required:** 3
+**placements:** - **source:** /compare/pension-vs-401k
+**target:** /compare/annuity-vs-401k
+**section:** Guaranteed income vs market balance discussion
+**anchor:** annuity vs 401(k)
+**purpose:** Readers who want guaranteed income may be weighing an insurance annuity against a 401(k)
+**inspection:** **path:** reports/mindmap-pass/runs/2026-11-16-comparison/research/link-inspections/compare__pension-vs-401k.txt
+**sha256:** 69580a57605a3017ec15ed4d8f797d8b442a361b2df2dccde772e57af00aa78a
+- **source:** /compare/iul-vs-401k
+**target:** /compare/annuity-vs-401k
+**section:** Insurance contract vs 401(k) discussion
+**anchor:** annuity vs 401(k)
+**purpose:** Readers comparing an insurance product with a 401(k) get the annuity version
+**inspection:** **path:** reports/mindmap-pass/runs/2026-11-16-comparison/research/link-inspections/compare__iul-vs-401k.txt
+**sha256:** 9caf2809e563bb3976652b6c3e58fae548dbebce223d28e37302f13a909c1e25
+- **source:** /compare/pension-vs-annuity
+**target:** /compare/annuity-vs-401k
+**section:** Section on retirement-plan context
+**anchor:** annuity compared with a 401(k)
+**purpose:** Readers holding a 401(k) and weighing annuity income
+**inspection:** **path:** reports/mindmap-pass/runs/2026-11-16-comparison/research/link-inspections/compare__pension-vs-annuity.txt
+**sha256:** befeb038a6ea7111315a2c6f0343d751bd7d1c10a5d0c14bc8fdf789480bbe78
+
+**Outbound internal links**
+
+**placements:** - **source:** /compare/annuity-vs-401k
+**target:** /guides/401k-contribution-limits-2026
+**section:** Annuity and 401(k) Compared Side by Side
+**anchor:** 2026 401(k) contribution limits
+**purpose:** Reader wants the limit and catch-up detail
+**inspection:** **path:** reports/mindmap-pass/runs/2026-11-16-comparison/research/link-inspections/guides__401k-contribution-limits-2026.txt
+**sha256:** 09513b8d326c4f21ec922f80fdfe8282f48b4380f0f81d5519a6a27dcd4a8781
+- **source:** /compare/annuity-vs-401k
+**target:** /compare/401k-vs-roth-ira
+**section:** Who This Is Not For and What Would Change Our Answer
+**anchor:** 401(k) vs Roth IRA
+**purpose:** Reader with no employer plan or comparing account types
+**inspection:** **path:** reports/mindmap-pass/runs/2026-11-16-comparison/research/link-inspections/compare__401k-vs-roth-ira.txt
+**sha256:** ae8a8e85075fa5a880b4b95bff36e7e9d096f431cb24e70ec286c7d5c66723ea
+
+**Technical and measurement scope**
+
+Add entry to src/data/comparisons.ts (route /compare/annuity-vs-401k/, rendered by the existing /compare/[slug] template with canonical, Article/FAQ JSON-LD and Byline); sitemap generated at build; render-time entity registry handles first-mention vendor links. Measurement: hypothesis = new page earns clicks on 'annuity vs 401k' query family; baseline not-yet-published (age-matched comparator at day 28/56); GSC data unavailable pre-publication, recorded as unavailable not zero; no uplift claimed.
+
+### A3 — /compare/chase-freedom-flex-vs-unlimited
+
+**Identity**
+
+**title:** Chase Freedom Flex vs Unlimited: Which Earns More?
+**pageType:** comparison
+**format:** comparison table/database
+**medium:** text + comparison table
+
+**Reader and answer**
+
+**question:** Which earns more cash back, Chase Freedom Flex or Freedom Unlimited? [PAA 5/6 on-topic (which is better, both cards, perks); 1/6 off-topic: hardest Chase card; ac 4/14 "what's better"/"is ... better" completions]
+**answer:** Freedom Flex earns more cash back only when your spend in its activated 5% rotating category (up to $1,500 a quarter) is at least 12.5% of your total annual spend; otherwise Freedom Unlimited earns more because it pays 1.5% instead of 1% on everything else; at about $48,000 or more of total annual spend Flex cannot beat Unlimited even with the full $1,500 every quarter; both pay 5% on Chase Travel and 3% on dining and drugstores; shape: pick with break-even.
+**placement:** section 1: "Chase Freedom Flex vs Unlimited in One Answer"
+
+**Keyword evidence**
+
+Primary "chase freedom flex vs unlimited" 720/mo KD 36 (SEMRUSH, us, 2026-11-16, measured). Supporting autocomplete: "what's better chase freedom flex or unlimited", "is chase freedom flex or unlimited better", "is chase freedom flex or unlimited easier to get" (ac-chase-freedom-flex-vs.csv).
+
+**SERP and questions**
+
+SERP read 2026-11-16: verdict winnable, not forum-dominated, AI Overview cites chase.com, creditcards.chase.com, cnbc.com, youtube.com. Page one includes joingerald, bestcreditcardcomparison, reddit, instagram, mypointslife, cardcritics: issuer pages are cited by the AIO but do not compare the two cards. PAA: Which is better, Flex or Unlimited?; Can I have both?; Is Sapphire or Unlimited better?; perks of Flex; benefits of Unlimited. Limit: "Can I have both" and approval-difficulty questions are not answered by the captured issuer pages, so the page will say what Chase publishes and point to Chase.
+
+**Why a new page**
+
+lookup: /roundup/best-cash-back-credit-cards (ranked list of many cards), /guides/chase-travel-portal-guide (how portal redemptions work) and /compare/bilt-rewards-vs-chase-ultimate-rewards (points programs); none compares these two Chase cards head to head. No commits touch this route. Independent duplicate review is the CHART-REVIEW stage. Existing mentions of Freedom Flex/Unlimited are only in best-cash-back-credit-cards, chase-travel-portal-worth-it and best-student-credit-cards.
+
+**Planned outline**
+
+- **heading:** Chase Freedom Flex vs Unlimited in One Answer
+**purpose:** Opening answer with the $750-per-quarter break-even.
+- **heading:** Earn Rates and Fees Side by Side
+**purpose:** Table from chase.com captures: annual fee $0, $200 bonus after $500 in 3 months, 0% intro APR 15 months then 18.49%-27.99% variable on both, 5% travel, 3% dining and drugstores, 1% vs 1.5% base, Flex 5% rotating on up to $1,500 per quarter; Flex page states no foreign transaction fee, the Unlimited page text captured does not state one so the page will not claim it.
+- **heading:** Annual Cash Back by Spending Pattern
+**purpose:** Our modeled scenarios, the 12.5%-of-spend break-even rule and a table at $24,000 and $48,000 total spend, including the not-activated counterexample.
+- **heading:** Who Should Pick Flex or Unlimited
+**purpose:** Boundaries, who this is not for, what would change our answer (rate or category changes).
+- **heading:** FAQs
+**purpose:** PAA/autocomplete questions answered from Chase pages; unanswerable items stated as such.
+
+**Contribution and evidence**
+
+Decision gap: readers need the spending level at which the rotating 5% beats the higher flat rate. Evidence basis: calculated. In our internal cost modeling, we compared annual cash back on both cards across five spending patterns using Chase's published earn rates (flex_vs_unlimited.py, output flex_vs_unlimited.out.json). Inputs sourced from creditcards.chase.com Flex and Unlimited pages captured verbatim 2026-11-16. Assumptions: $24,000 annual spend, bonus-category spend fully matches the quarter's category, category activated, no sign-up bonus counted, $0 annual fees, bonus category excludes dining/drugstore/travel overlap. Break-even rule from the script: Flex beats Unlimited only if quarterly bonus-category spend B (capped at $1,500) satisfies 4B x 3.5% > other annual spend x 0.5%, i.e. annual bonus-category spend 4B is at least 12.5% of total annual spend S (B >= S x 0.03125 per quarter); maximum Flex advantage is $210 a year minus 0.5% of all other spend, so Flex cannot win at roughly $48,000 or more total annual spend. Counterexample: a Flex holder who does not activate the bonus earns $120 less than Unlimited on $24,000 of spend.
+
+**Tables, tools or visuals**
+
+Static comparison table plus a finite break-even table by quarterly bonus-category spend (0 to $1,500); no interactive widget because the single break-even number and finite scenarios answer the decision.
+
+**Testing and review**
+
+Credit cards are financial products: section G excludes them from testing claims. Decision: ordinary presentation; no "we tested". Attribution: calculated (internal cost modeling) with issuer-published rates as sourced inputs. Review profile STANDARD floor; auditor classifies APR/rate figures (rates are consequential figures: APR range cited with date and "verify on chase.com"). No professional review required. Issuer affiliate/referral wiring follows the existing render-time registry; disclosure at page template level.
+
+**Planned takeaway**
+
+Choose Freedom Unlimited if your spend is spread across ordinary purchases, your total annual spend is about $48,000 or more, or you will not track quarterly categories. Choose Freedom Flex only if the activated 5% category is at least 12.5% of your total annual spend and within the $1,500 quarterly cap (for example $750 a quarter on $24,000 a year). The answer changes if Chase changes rates, quarterly categories or the 15-month 0% APR; check chase.com for current terms. Attributed to our internal cost modeling with Chase published rates as sourced inputs; no claim is made about holding both cards together.
+
+**Inbound internal links**
+
+**required:** 3
+**placements:** - **source:** /roundup/best-cash-back-credit-cards
+**target:** /compare/chase-freedom-flex-vs-unlimited
+**section:** Chase entry
+**anchor:** Chase Freedom Flex vs Unlimited comparison
+**purpose:** Readers who shortlisted both Chase cards
+**inspection:** **path:** reports/mindmap-pass/runs/2026-11-16-comparison/research/link-inspections/roundup__best-cash-back-credit-cards.txt
+**sha256:** 34df3dc66b2eed94cc1d4d5f79cd236206ade224809f3c9ebe9a5f72d8bfbc4f
+- **source:** /guides/chase-travel-portal-guide
+**target:** /compare/chase-freedom-flex-vs-unlimited
+**section:** Which cards can access the portal
+**anchor:** how Freedom Flex and Unlimited compare
+**purpose:** Both cards earn 5% on Chase Travel; readers choosing between them
+**inspection:** **path:** reports/mindmap-pass/runs/2026-11-16-comparison/research/link-inspections/guides__chase-travel-portal-guide.txt
+**sha256:** 38a917adf7d71750888e28dbe06664c9dac894bf67456fb43c477cfea7324af0
+- **source:** /guides/chase-travel-portal-worth-it
+**target:** /compare/chase-freedom-flex-vs-unlimited
+**section:** Baseline Redemption Rates and Points Boost Math
+**anchor:** Chase Freedom Flex vs Unlimited
+**purpose:** Section already names both cards as Ultimate Rewards earners; readers get the direct earn-rate comparison
+**inspection:** **path:** reports/mindmap-pass/runs/2026-11-16-comparison/research/link-inspections/guides__chase-travel-portal-worth-it.txt
+**sha256:** 6380df2cfd320586afbbbe099d75225e317d0ce3a81a7548927fff5fc6b35d4e
+
+**Outbound internal links**
+
+**placements:** - **source:** /compare/chase-freedom-flex-vs-unlimited
+**target:** /roundup/best-cash-back-credit-cards
+**section:** Who Should Pick Flex or Unlimited
+**anchor:** best cash back credit cards
+**purpose:** Reader wants other cards
+**inspection:** **path:** reports/mindmap-pass/runs/2026-11-16-comparison/research/link-inspections/roundup__best-cash-back-credit-cards.txt
+**sha256:** 34df3dc66b2eed94cc1d4d5f79cd236206ade224809f3c9ebe9a5f72d8bfbc4f
+- **source:** /compare/chase-freedom-flex-vs-unlimited
+**target:** /guides/chase-travel-portal-guide
+**section:** Earn Rates and Fees Side by Side
+**anchor:** Chase Travel portal guide
+**purpose:** Reader wants how the 5% travel earn and portal work
+**inspection:** **path:** reports/mindmap-pass/runs/2026-11-16-comparison/research/link-inspections/guides__chase-travel-portal-guide.txt
+**sha256:** 38a917adf7d71750888e28dbe06664c9dac894bf67456fb43c477cfea7324af0
+
+**Technical and measurement scope**
+
+Add entry to src/data/comparisons.ts (route /compare/chase-freedom-flex-vs-unlimited/, rendered by the existing /compare/[slug] template with canonical, Article/FAQ JSON-LD and Byline); sitemap generated at build; render-time entity registry handles first-mention vendor links. Measurement: hypothesis = new page earns clicks on 'chase freedom flex vs unlimited' query family; baseline not-yet-published (age-matched comparator at day 28/56); GSC data unavailable pre-publication, recorded as unavailable not zero; no uplift claimed.
+
+## Execution plan
+
+1. Record advisory cannibalization check (no destructive merges).
+2. Apply any approved metadata updates (or N/A when none in chart).
+3. Generate net-new approved routes with verified evidence packets.
+4. Run independent Phase 4 rendered-page audit on all changed routes.
+5. Apply any approved existing-page body enrichments (or N/A when none).
+6. Add approved inbound and outbound internal links across inspected routes.
+7. Update sitemaps and prepare IndexNow URL list without pre-deploy ping.
+8. Compile Phase 8 execution and cluster summary.
+9. Commit, deploy to main, verify HTTP 200 live renders, and submit IndexNow.
+
+Publication scope: commit: True, push: True, liveVerification: True, indexNow: True
+
+## Preparation check
+
+| Check | Result | Evidence |
+|---|---|---|
+| Preparation check | ✅ Passed | [Full readiness report](reports/mindmap-pass/runs/2026-11-16-comparison/readiness.md) |
+
+Approve this plan to start the listed content work?

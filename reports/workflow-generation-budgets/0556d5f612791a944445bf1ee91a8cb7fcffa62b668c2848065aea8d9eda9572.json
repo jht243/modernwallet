@@ -1,0 +1,20 @@
+{
+  "jobId": "2026-11-16-comparison",
+  "route": "/compare/chase-freedom-flex-vs-unlimited",
+  "generated": [
+    "full"
+  ],
+  "repairs": [],
+  "previousJobs": [
+    {
+      "jobId": "2026-11-16-comparison",
+      "route": "/compare/chase-freedom-flex-vs-unlimited",
+      "generated": [
+        "full"
+      ],
+      "repairs": [],
+      "updatedAt": "2026-11-16T08:34:15Z"
+    }
+  ],
+  "updatedAt": "2026-11-16T08:34:22Z"
+}

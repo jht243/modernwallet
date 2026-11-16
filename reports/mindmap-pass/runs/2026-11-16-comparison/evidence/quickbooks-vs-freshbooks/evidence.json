@@ -1,0 +1,135 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-write",
+  "route": "/compare/quickbooks-vs-freshbooks",
+  "readerQuestion": "QuickBooks or FreshBooks: which costs less for my small business or freelance work? [PAA 3/6 on-topic (comparable software, what FreshBooks is, leaving QuickBooks); 3/6 off-topic: old QuickBooks versions, CPAs, IRS; ac 4/25 which-is-better question completions]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/approval-manifest.json",
+      "sha256": "e0ffc7e439ee1f9b8516f8272096743ec98675e2d0931cc12efcb9f32c2ec7f4"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/chart-review.json",
+      "sha256": "edd5b6412602730c02214de23d8d69f06ee3782c19e0846e7744e6cf4a2dfb93"
+    },
+    "actionId": "A1"
+  },
+  "presentation": {
+    "medium": "text + comparison table",
+    "placement": "Existing comparison template: opening answer, then side-by-side table, then modeled/sourced analysis",
+    "reason": "The reader's decision turns on finite, sourced thresholds; a scannable table plus a worked break-even answers it without a widget",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "The decision has a small number of discrete cases (plan tiers or scenario rows); a static grid shows every case and the break-even, whereas a calculator would only restate the same finite table"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "No sequence or changing assumption needs motion; static table is faster to scan"
+    }
+  },
+  "basis": "calculated",
+  "decisionGap": "Readers cannot see where the cheaper product flips as users and billable clients change; generic comparisons list plans but not the break-even by team size and client count.",
+  "finding": "At monthly list prices, FreshBooks costs less for 1 user with up to 5 billable clients, for 2 users at any client count, for 3 users up to 50 clients and for 4 or more users at any client count. QuickBooks Online costs less for 1 user with 6 or more clients and for exactly 3 users with 51 or more clients. QuickBooks also has a Free plan (1 user, 2 invoices a month) that is $0.",
+  "conditions": "Price-only model on monthly list prices checked 2026-11-16, promotions excluded, FreshBooks Select (quote-based) excluded, features not scored, FreshBooks Team Members add-on ($11 a month per user) assumed to apply to every user beyond the first, QuickBooks priced by its published user cap.",
+  "whatWouldChange": "A change to QuickBooks tier prices or user caps, FreshBooks plan prices, client caps or the Team Members add-on price; promotions; or a reader who needs features the price model does not score.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/runs/2026-11-16-comparison/evidence/quickbooks-vs-freshbooks/cases.json",
+    "sha256": "e7f0de0df564378e5a3af86168f4b53810cd5931f9db73b9e7d0727827ea2748"
+  },
+  "caseDecisions": "cases.json returned 8 candidates, none relevant to a small-business accounting price comparison (no approved record about QuickBooks, FreshBooks or accounting software). None used; no client-conversation claim is made.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/brief.md",
+      "sha256": "40ad467d7a5d5e0635a93f783dc85563d18370711ba5416cb7716316dabd8af7"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/coverage-lookup.txt",
+      "sha256": "f2a59427ff12ce1b7250c9468f60096b08f4f2a8102459de6464c23148ae4b57"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/keyword-volumes.json",
+      "sha256": "c22e6fd475a66768608ab95050db5022698c857d1fb4f525b5a51b25f76f4de8"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/serp.json",
+      "sha256": "db14f9e5ff96ddf172e40457aeffabc271d75228d3b647fe5e2793cca04fd28d"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/quickbooks-pricing.txt",
+      "sha256": "a9a8cf2c4f854175ed1c68b1437905b6e9a18c2353b2665722386ae1bb155b9e"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/freshbooks-pricing.txt",
+      "sha256": "5510f8965e07fdb6711893795d3cdd3702b4caae5903eed6a6746df92bfcdbfc"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/calc/qb_vs_fb.py",
+      "sha256": "b1138243010b357936465a47ca5c5ae457857d64570a87b5a846cb55c9eb1a2f"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/calc/qb_vs_fb.out.json",
+      "sha256": "70eada5621505957d2480c918699f64010d7c5b30d127026b18684a861b5ff42"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/ac-quickbooks-vs-freshbooks.csv",
+      "sha256": "a259ee202623acd48889b77f358c34926aa785c5f69a0f864b59602380cbe1f2"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/inputs/alternatives.pre-edit.json",
+      "sha256": "543061f27e627d0446ef6f20cdcb4516756ecbd2f6df80af0af0583e5f45eb59"
+    }
+  ],
+  "method": "Python model (model.py): monthly list price of QuickBooks Online by user cap versus FreshBooks by billable-client cap plus $11 per extra user, over a 7 user-count by 7 client-count grid (49 combinations), plus a scan of all user counts 1 to 25 at tier edges. Attribution on page: internal cost modeling, with vendor list prices as sourced inputs.",
+  "units": "USD per month (monthly list price, billed monthly)",
+  "limitations": "Price-only. Promotions excluded. FreshBooks extra-user add-on assumption. QuickBooks pricing capture is a summary used only for list prices and user caps; the page cites the QuickBooks pricing page and quotes nothing from it. No feature, accuracy, support or integration comparison.",
+  "counterexample": "At 3 users and 51 or more billable clients, QuickBooks Essentials ($85) beats FreshBooks Premium plus two Team Members ($92); at 1 user with 5 or fewer clients FreshBooks Lite ($23) beats QuickBooks Simple Start ($38), and QuickBooks Free ($0) beats both for a single user sending at most 2 invoices a month.",
+  "execution": {
+    "command": [
+      "python3",
+      "reports/mindmap-pass/runs/2026-11-16-comparison/evidence/quickbooks-vs-freshbooks/model.py",
+      "reports/mindmap-pass/runs/2026-11-16-comparison/evidence/quickbooks-vs-freshbooks/output.json"
+    ],
+    "code": {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/evidence/quickbooks-vs-freshbooks/model.py",
+      "sha256": "ac12d2c58efb6ad2925bf2e402ac994b3c91c38384dff6992062fa19e039296b"
+    },
+    "inputs": [
+      {
+        "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/quickbooks-pricing.txt",
+        "sha256": "a9a8cf2c4f854175ed1c68b1437905b6e9a18c2353b2665722386ae1bb155b9e"
+      },
+      {
+        "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/freshbooks-pricing.txt",
+        "sha256": "5510f8965e07fdb6711893795d3cdd3702b4caae5903eed6a6746df92bfcdbfc"
+      },
+      {
+        "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/inputs/alternatives.pre-edit.json",
+        "sha256": "543061f27e627d0446ef6f20cdcb4516756ecbd2f6df80af0af0583e5f45eb59"
+      }
+    ],
+    "output": {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/evidence/quickbooks-vs-freshbooks/output.json",
+      "sha256": "fe3d59680ef2aac673ade7a24968efcce7d4c1535a3f478d5436255bbd7a5b97"
+    }
+  },
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [
+      "evidence/quickbooks-vs-freshbooks/model.py",
+      "evidence/quickbooks-vs-freshbooks/output.json"
+    ],
+    "scopeAndLimits": "List-price model over 49 user/client combinations; price only; QuickBooks inputs limited to list prices and user caps.",
+    "publicMethod": "On-page formula and grid in 'Monthly Cost by Number of Users and Clients', with links to both pricing pages.",
+    "placement": "introText second paragraph, the cost-grid section and the verdict"
+  },
+  "takeaway": {
+    "conclusion": "Price answer, not a feature verdict: FreshBooks cheaper for 1 user up to 5 clients, 2 users at any count, 3 users up to 50 clients, 4+ users at any count; QuickBooks Online cheaper for 1 user with 6+ clients and 3 users with 51+ clients; QuickBooks Free beats both for 1 user sending at most 2 invoices a month.",
+    "appliesTo": "Small businesses and freelancers choosing between the two on monthly list price",
+    "recordIds": [
+      "output.json"
+    ],
+    "basis": "calculated",
+    "changeCondition": "A change to QuickBooks tier prices or user caps, FreshBooks plan prices, client caps or the Team Members add-on price; promotions; or a reader who needs features the price model does not score."
+  }
+}

@@ -1,0 +1,25 @@
+INSPECTED ROUTE: /guides/qlac-qualified-longevity-annuity-contract
+DATA FILE: src/data/guides.ts (entry begins line 18188)
+INSPECTED: 2026-11-16 by mindmap-build
+
+SECTION HEADINGS/TITLES FOUND:
+title: "QLAC (Qualified Longevity Annuity Contract) Explained",
+{ heading: "A QLAC Is an Annuity That Delays Part of Your RMDs", body: "A QLAC is a deferred income annuity you buy with money from a qualif
+{ heading: "The 2026 QLAC Dollar Limit Is $210,000", body: "The maximum you can put into QLACs across every IRA and workplace plan you own i
+{ heading: "A QLAC Can Only Be Funded from Pre-Tax Retirement Accounts", body: "A QLAC has to be purchased with money from a traditional IRA
+{ heading: "Congress Removed the Old 25% Cap on QLAC Premiums", body: "QLACs existed years before the current dollar limit, and the rules us
+{ heading: "A QLAC Defers RMDs but Does Not Cut Your Total Tax Bill", body: "A QLAC changes the timing of your required withdrawals. It does
+{ heading: "A QLAC Pays Differently Than a Regular Deferred Annuity", body: "A QLAC is a narrow type of deferred income annuity. It differs 
+{ heading: "A QLAC Helps Only a Narrow Group of Retirees", body: "A QLAC fits someone with a large enough traditional IRA or 401(k) balance 
+{ heading: "Three Things That Would Change Whether a QLAC Fits", body: "Three specific facts would flip the answer for someone weighing a QL
+{ question: "What is a QLAC?", answer: "A Qualified Longevity Annuity Contract (QLAC) is a deferred income annuity purchased inside a tradit
+{ question: "What is the QLAC limit for 2026?", answer: "The 2026 QLAC premium limit is $210,000 per person, unchanged from 2025, according 
+{ question: "How does a QLAC affect my RMDs?", answer: "The money you put into a QLAC is removed from the account balance the IRS uses to ca
+{ question: "Can I fund a QLAC with a Roth IRA?", answer: "No. A QLAC can only be funded from a traditional IRA, 401(k), 403(b), or governme
+{ question: "How are QLAC payments taxed?", answer: "QLAC payments are taxed as ordinary income in the year you receive them, the same as an
+
+LINES MENTIONING '401' (candidate anchor context):
+{ heading: "A QLAC Is an Annuity That Delays Part of Your RMDs", body: "A QLAC is a deferred income annuity you buy with money from a qualified retirement account. It changes your required minimum distribution (RMD) math. Once you turn 73, the IRS normally req
+{ heading: "The 2026 QLAC Dollar Limit Is $210,000", body: "The maximum you can put into QLACs across every IRA and workplace plan you own is $210,000 in 2026, unchanged from 2025. The IRS confirmed the figure in [Notice 2025-67](https://www.irs.gov/pub/irs-dr
+{ heading: "A QLAC Can Only Be Funded from Pre-Tax Retirement Accounts", body: "A QLAC has to be purchased with money from a traditional IRA, 401(k), 403(b), or governmental 457(b) plan. A Roth account cannot fund one. The rule exists because a Roth IRA alread
+{ heading: "A QLAC Pays Differently Than a Regular Deferred Annuity", body: "A QLAC is a narrow type of deferred income annuity. It differs from an ordinary deferred annuity on three points that decide whether it fits: where the money can come from, what it do

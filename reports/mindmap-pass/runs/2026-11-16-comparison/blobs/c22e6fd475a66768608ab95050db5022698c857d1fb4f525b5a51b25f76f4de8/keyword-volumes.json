@@ -1,0 +1,175 @@
+{
+ "rows": [
+  {
+   "keyword": "chime vs sofi",
+   "volume": 590,
+   "volume_low": 590,
+   "volume_high": 590,
+   "kd": "27",
+   "cpc": "8.54",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "quickbooks vs freshbooks",
+   "volume": 2400,
+   "volume_low": 2400,
+   "volume_high": 2400,
+   "kd": "28",
+   "cpc": "10.03",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "acorns vs robinhood",
+   "volume": 480,
+   "volume_low": 480,
+   "volume_high": 480,
+   "kd": "22",
+   "cpc": "2.73",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "webull vs fidelity",
+   "volume": 480,
+   "volume_low": 480,
+   "volume_high": 480,
+   "kd": "20",
+   "cpc": "16.83",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "wealthfront vs vanguard",
+   "volume": 210,
+   "volume_low": 210,
+   "volume_high": 210,
+   "kd": "12",
+   "cpc": "4.72",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "annuity vs 401k",
+   "volume": 1600,
+   "volume_low": 1600,
+   "volume_high": 1600,
+   "kd": "24",
+   "cpc": "1.47",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "i bonds vs high yield savings",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "0",
+   "cpc": "0",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "chase freedom flex vs unlimited",
+   "volume": 720,
+   "volume_low": 720,
+   "volume_high": 720,
+   "kd": "36",
+   "cpc": "4",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "capital one 360 vs ally",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "0",
+   "cpc": "8.29",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "xero vs quickbooks",
+   "volume": 2400,
+   "volume_low": 2400,
+   "volume_high": 2400,
+   "kd": "50",
+   "cpc": "16.75",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "debt consolidation vs balance transfer",
+   "volume": 210,
+   "volume_low": 210,
+   "volume_high": 210,
+   "kd": "38",
+   "cpc": "15.22",
+   "source": "semrush",
+   "confidence": "high",
+   "kd_source": "semrush",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "volume: using semrush (quality order semrush > dataforseo)",
+  "semrush returned volume for 11/11 phrases",
+  "kd: using semrush (quality order semrush > dataforseo)",
+  "Autocomplete: 11/11 rows corroborated live"
+ ]
+}

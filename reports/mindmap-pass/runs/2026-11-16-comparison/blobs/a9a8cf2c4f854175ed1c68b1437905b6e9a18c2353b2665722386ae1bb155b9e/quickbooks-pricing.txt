@@ -1,0 +1,11 @@
+SOURCE_URL: https://quickbooks.intuit.com/pricing/
+RETRIEVED_UTC: 2026-11-16T00:00:00Z (approx; WebFetch tool call during BUILD)
+CAPTURE_LIMITATION: Direct fetch (curl, fetch_page.py browser) failed with HTTP/2 INTERNAL_ERROR / 502. The text below is the WebFetch tool's SUMMARY of the page, NOT verbatim page text. Treat as secondary capture; independently corroborated by src/data/alternatives.json (quickbooks entry, checked 2026-11-13).
+---
+Five QuickBooks Online plans (list/regular price; 50% off first 3 months promo shown on page):
+Free $0, 1 user, no accountant access; income/expense tracking, up to 2 invoices a month, top 3 reports, 1 connected bank account, chat support.
+Simple Start $38/mo list ($19 promo 3 months), 1 user, 2 accountants; expense categorization, automated bookkeeping, invoice payments via QuickBooks Payments; bill pay via ACH carries per-transaction fee above monthly allotments.
+Essentials $85/mo list ($42.50 promo), 3 users, 2 accountants; enhanced reports, custom dashboards, bulk invoice creation (beta), employee time on invoices.
+Plus $140/mo list ($70 promo), 5 users, 2 accountants; bank reconciliation help, budget planning, project profitability, inventory management, classes and locations up to 40.
+Advanced $340/mo list ($170 promo), 25 users, 3 accountants; unlimited classes/locations, custom KPIs, user permissions, automated workflows, Excel sync, batch invoices, free 1099 e-filing, priority support.
+Several features marked beta/new/limited.

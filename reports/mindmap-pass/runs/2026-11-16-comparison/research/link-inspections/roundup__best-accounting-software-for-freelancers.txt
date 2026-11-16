@@ -1,0 +1,25 @@
+INSPECTED ROUTE: /roundup/best-accounting-software-for-freelancers
+DATA FILE: src/data/roundups-self-employed.ts (entry begins line 217)
+INSPECTED: 2026-11-16 by mindmap-build
+
+SECTION HEADINGS/TITLES FOUND:
+title: "Best Accounting Software for Freelancers (2026)",
+heading: "What a freelancer actually needs from accounting software",
+heading: "Why deduction capture matters more than it looks",
+heading: "Separate business banking beats better software",
+heading: "When to stop doing it yourself",
+question: "What is the best free accounting software for freelancers?",
+question: "Do freelancers need accounting software at all?",
+question: "Is QuickBooks worth it for a freelancer?",
+question: "What accounting software works best with a tax preparer?",
+question: "Does accounting software file my taxes?",
+title: "Best Invoicing Apps for Freelancers in 2026",
+heading: "Processing fees usually cost more than the software",
+heading: "Automatic reminders are the feature that actually pays",
+heading: "What to put on an invoice so it gets paid",
+
+LINES MENTIONING 'FreshBooks' (candidate anchor context):
+name: "FreshBooks",
+"FreshBooks is built around the client relationship rather than the ledger: time tracking, project-level billing, proposals, and invoices that chase themselves. For a freelancer who bills hourly across several clients, that focus is worth paying for in a way g
+{ name: "FreshBooks", values: ["$23/mo", "5 on Lite", "Yes", "Hourly client work"] },
+"Start with Wave. Its free plan covers unlimited invoicing and bookkeeping with no client cap, which is more than most solo freelancers need, and paying for software before you have hit a limit is the most common unnecessary expense in a new freelance business

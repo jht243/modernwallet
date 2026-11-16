@@ -1,0 +1,25 @@
+INSPECTED ROUTE: /compare/pension-vs-annuity
+DATA FILE: src/data/comparisons.ts (entry begins line 12954)
+INSPECTED: 2026-11-16 by mindmap-build
+
+SECTION HEADINGS/TITLES FOUND:
+title: "Pension vs Annuity: Which Gives You More Guaranteed Income?",
+heading: "How a pension actually works",
+heading: "How an annuity actually works",
+heading: "The guarantee: PBGC vs. state guaranty associations",
+heading: "When buying an annuity next to a pension makes sense",
+heading: "Qualified Annuity vs Non-Qualified Annuity: The Full Difference",
+question: "Is a pension the same as an annuity?",
+question: "Which is safer, a pension or an annuity?",
+question: "Is pension income fully taxable?",
+question: "How is annuity income taxed differently from a pension?",
+question: "Should I buy an annuity if I already have a pension?",
+question: "Can I lose money in an annuity the way I can with a pension underfunding?",
+title: "REIT vs Rental Property: Which Real Estate Investment Wins?",
+heading: "How a REIT works",
+
+LINES MENTIONING '401' (candidate anchor context):
+{ dimension: "How it's taxed", a: "Fully taxable as ordinary income if funded entirely pre-tax (most pensions); partially taxable if you made after-tax contributions", b: "Non-qualified (after-tax money): only the earnings portion is taxed via the exclusion ra
+"If you have a traditional employer pension, you're not choosing between it and an annuity — you already have one, and the PBGC backstop (for private single-employer plans) makes it about as safe as a lump-sum-purchased annuity gets, without the sales commissi
+"An annuity is a contract you buy from an insurance company, usually with a lump sum, in exchange for a stream of guaranteed payments — either starting right away (an immediate annuity) or years later (a deferred annuity). Unlike a pension, you choose the insu
+"Very few workers today have a traditional pension at all — most retirement savings sit in a 401(k) or IRA, which pays out however you draw it down, not as a guaranteed monthly check. An annuity fills that gap: rolling part of an IRA or 401(k) balance into an 

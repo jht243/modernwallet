@@ -1,0 +1,355 @@
+SOURCE_URL: https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-contributions
+RETRIEVED_UTC: 2026-11-16T08:08:05Z
+{"url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-contributions", "method": "plain", "status": 200, "chars": 9514, "errors": []}
+Retirement topics - Contributions | Internal Revenue Service
+Skip to main content
+An official website of the United States government
+Here's how you know
+Here's how you know
+Official websites use .gov
+A
+.gov
+website belongs to an official government organization in the United States.
+Secure .gov websites use HTTPS
+A
+lock
+(
+)
+or
+https://
+means you've safely connected to the .gov website. Share sensitive information only on official, secure websites.
+English
+Español
+中文 (简体)
+中文 (繁體)
+한국어
+Русский
+Tiếng Việt
+Kreyòl ayisyen
+Information Menu
+Help
+News
+Tax Pros
+Sign in
+Individual
+Business
+Tax Pro
+Access your tax information with an IRS account.
+Refunds
+Payments
+Tax records
+Create account
+Search
+Help Menu Mobile
+Sign in
+Individual
+Business
+Tax Pro
+Access your tax information with an IRS account.
+Refunds
+Payments
+Tax records
+Create account
+Menu
+Main navigation
+File
+Overview
+INFORMATION FOR…
+Individuals
+Business and self-employed
+Charities and nonprofits
+International filers
+Retirement
+Governments and tax-exempt bonds
+Indian Tribal Governments
+FILING FOR INDIVIDUALS
+How to file
+When to file
+Where to file
+Update your information
+POPULAR
+Tax record (transcript)
+Apply for an Employer ID Number (EIN)
+Amend return
+Identity Protection PIN (IP PIN)
+Pay
+Overview
+PAY BY
+Bank Account (Direct Pay)
+Payment Plan (Installment Agreement)
+Electronic Federal Tax Payment System (EFTPS)
+POPULAR
+Your Online Account
+Tax Withholding Estimator
+Estimated Taxes
+Penalties
+Refunds
+Overview
+About refunds
+Direct deposit
+Reduced refunds
+Where’s my amended return?
+Credits & Deductions
+Overview
+INFORMATION FOR...
+Individuals
+For you and your family
+Businesses & Self-Employed
+Standard mileage and other information
+POPULAR
+Earned Income Credit (EITC)
+Child Tax Credit
+Clean Energy and Vehicle Credits
+Standard Deduction
+Retirement Plans
+Forms
+Overview
+POPULAR FORMS & INSTRUCTIONS
+Form 1040
+Individual Income Tax Return
+Form 1040 Instructions
+Instructions for Form 1040
+Form W-9
+Request for Taxpayer Identification Number (TIN) and Certification
+Form 4506-T
+Request for Transcript of Tax Return
+Form W-4
+Employee's Withholding Certificate
+Form 941
+Employer's Quarterly Federal Tax Return
+Form W-2
+Wage and Tax Statement
+Form 9465
+Installment Agreement Request
+POPULAR FOR TAX PROS
+Form 1040-X
+Amended Individual Income Tax Return
+Form 2848
+Power of Attorney
+Form W-7
+Apply for an ITIN
+Circular 230
+Regulations Governing Practice before the IRS
+Report Fraud
+Overview
+Tax fraud and scams
+Identity theft
+Fake IRS email or message
+Tax return preparer misconduct
+Help for tax professionals
+Search
+Include Historical Content
+- Any -
+No
+Include Historical Content
+- Any -
+No
+Search
+File
+Overview
+INFORMATION FOR…
+Individuals
+Business and self-employed
+Charities and nonprofits
+International filers
+Retirement
+Governments and tax-exempt bonds
+Indian Tribal Governments
+FILING FOR INDIVIDUALS
+How to file
+When to file
+Where to file
+Update your information
+POPULAR
+Tax record (transcript)
+Apply for an Employer ID Number (EIN)
+Amend return
+Identity Protection PIN (IP PIN)
+Pay
+Overview
+PAY BY
+Bank Account (Direct Pay)
+Payment Plan (Installment Agreement)
+Electronic Federal Tax Payment System (EFTPS)
+POPULAR
+Your Online Account
+Tax Withholding Estimator
+Estimated Taxes
+Penalties
+Refunds
+Overview
+About refunds
+Direct deposit
+Reduced refunds
+Where’s my amended return?
+Credits & Deductions
+Overview
+INFORMATION FOR...
+Individuals
+Businesses & Self-Employed
+POPULAR
+Earned Income Credit (EITC)
+Child Tax Credit
+Clean Energy and Vehicle Credits
+Standard Deduction
+Retirement Plans
+Forms
+Overview
+POPULAR FORMS & INSTRUCTIONS
+Form 1040
+Form 1040 Instructions
+Form W-9
+Form 4506-T
+Form W-4
+Form 941
+Form W-2
+Form 9465
+POPULAR FOR TAX PROS
+Form 1040-X
+Form 2848
+Form W-7
+Circular 230
+Report Fraud
+Overview
+Tax fraud and scams
+Identity theft
+Fake IRS email or message
+Tax return preparer misconduct
+Help for tax professionals
+Main navigation
+File
+Pay
+Refunds
+Credits & Deductions
+Forms & Instructions
+Info Menu Mobile
+Charities & Nonprofits
+Help
+News
+Tax Pros
+Search
+Include Historical Content
+- Any -
+No
+Include Historical Content
+- Any -
+No
+Search
+Home
+Retirement Plans
+Topic index
+Retirement topics - Contributions
+Retirement topics - Contributions
+More In Retirement Plans
+IRAs
+Types of retirement plans
+Required minimum distributions
+Published guidance
+Forms and publications
+Operate a retirement plan
+News
+Topic index
+A contribution is the amount an employer and employees (including
+self-employed
+individuals) pay into a retirement plan.
+Limits on contributions and benefits
+There are limits to how much employers and employees can contribute to a plan (or IRA) each year. The plan must specifically state that contributions or benefits cannot exceed certain limits. The limits differ depending on the type of plan.
+IRA contribution limits
+401(k) and profit-sharing plan contribution limits
+SEP contribution limits (including grandfathered SARSEPs)
+SIMPLE IRA contribution limits
+403(b) contribution limits
+457(b) contribution limits
+Defined benefit plan benefit limits
+Catch-up contribution limits
+Basic elective deferral limit
+The basic limit on elective deferrals is
+$24,500
+in 2026, $23,500 in 2025, $23,000 in 2024 and $22,500 in 2023, or 100% of the employee's compensation, whichever is less. The elective deferral limit for SIMPLE plans is 100% of compensation or $17,000 in 2026, $16,500 in 2025, $16,000 in 2024, and $15,500 in 2023. Catch-up contributions may also be allowed if the employee is age 50 or older.
+If the employee's total contributions
+exceed the deferral limit
+, the difference is included in the employee's gross income.
+Time for depositing elective deferrals
+Employers must deposit employee contributions to the retirement plan's trust or individual accounts as soon as they can reasonably be segregated from the employer's general assets. The Department of Labor provides a
+7-business-day safe harbor rule
+for employee contributions to plans with fewer than 100 participants.
+If you haven't deposited employees' elective deferrals as soon as you could have, find out how you can
+correct
+this mistake.
+Employer contributions
+Employer matching contributions.
+If the
+plan document
+permits, the employer can make matching contributions for an employee who contributes elective deferrals (for example, 50 cents for each dollar deferred). Employer matching contributions can be discretionary (contributed in some years and not in others, depending on the company's decision) or mandatory, as in SIMPLE plans and Safe Harbor 401(k) plans.
+Employer discretionary or non-elective contributions.
+If the plan document permits, the employer can make contributions other than matching contributions for participants. These contributions are made on behalf of all employees who are plan participants, including participants who choose not to contribute elective deferrals.
+Types of employee contributions
+Salary reduction/
+elective deferral
+contributions
+are pre-tax employee contributions that are a generally a percentage of the employee's compensation. Some plans permit the employee to contribute a specific dollar amount each pay period.
+401(k), 403(b) or SIMPLE IRA plans
+may permit elective deferral contributions.
+Designated Roth contributions
+are a type of elective contribution that, unlike pre-tax elective contributions, are currently includible in gross income but tax-free when distributed. 401(k), 403(b) and governmental 457(b) plans can allow them. If a plan permits designated Roth contributions, it must also offer pre-tax elective deferral contributions.
+After-tax contributions
+are contributions from compensation (other than Roth contributions) that an employee must include in income on his or her tax return. If a plan allows after-tax contributions, they are not excluded from income and an employee cannot deduct them on his or her tax return.
+Catch-up contributions
+if permitted by a 401(k), 403(b), governmental 457(b), SARSEP or SIMPLE IRA plan, participants who are age 50 or over at the end of the calendar year can also make catch-up elective deferral contributions beyond the basic limit on elective deferrals.
+Related
+Consequences to a participant who makes excess annual salary deferrals
+401(k) plans: Deferrals and matching when compensation exceeds the annual limit
+How much salary can you defer if you're eligible for more than one retirement plan?
+Retirement topics: Catch-up contributions
+401(k) plan catch-up contribution eligibility
+Retirement plan FAQs regarding contributions: How much can I contribute to my self-employed SEP plan if I participate in my employer's SIMPLE IRA plan?
+Self-employed individuals: Calculating your own retirement plan contribution and deduction
+COLA increases for dollar limitations on benefits and contributions
+Mid-year retirement savings check-up
+Page Last Reviewed or Updated: 29-Jan-2026
+Share
+Facebook
+Twitter
+Linkedin
+Print
+Footer Navigation
+Our Agency
+About IRS
+Careers
+Financial and Budget Reports
+Tax Statistics
+Help
+Find a Local Office
+Know Your Rights
+Taxpayer Bill of Rights
+Taxpayer Advocate Service
+Independent Office of Appeals
+Civil Rights
+FOIA
+No FEAR Act Data
+Reliance on Guidance
+Resolve an Issue
+IRS Notices and Letters
+Identity Theft
+Tax scams
+Tax Fraud
+Criminal Investigation
+Whistleblower Office
+Languages
+Español
+中文 (简体)
+中文 (繁體)
+한국어
+Pусский
+Tiếng Việt
+Kreyòl ayisyen
+English
+Related Sites
+U.S. Treasury
+Treasury Inspector General for Tax Administration
+USA.gov
+USAspending.gov
+Vote.gov
+Subfooter
+Privacy Policy
+Accessibility

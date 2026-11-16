@@ -1,0 +1,135 @@
+{
+  "jobId": "2026-11-16-comparison",
+  "reviewer": "mindmap-chart-review",
+  "round": 2,
+  "manifestSha256": "bf8e2a0a3612088fb3c87188c8cec22c8d8f06dad780df6d2269a0b0eb9da183",
+  "manifestFileSha256": "2a1b3cda15f7a57a111fb4da7c4b22adfc623a7c8523c27a60df1923b80da8ed",
+  "readinessSha256": "6b1224a19905a167fb496719e00b456dbdae80307a7077b8da0e4552e99f9384",
+  "verdict": "PASS",
+  "evidence": "Round 2 targeted recheck plus full-manifest coherence by the same independent reviewer (mindmap-chart-review; round 1 findings kept in chart-review-round1.json; counters not reset). Manifest file sha e0ffc7e4... and canonical manifestSha256 recomputed by init-skeleton equal the coordinator's values; all 61 path/sha256 references (including new IRS captures, extended qb_vs_fb calc, new link inspections) exist and match; readiness hash rebound. F-A1-1 resolved: A1 answer, action answer and takeaway now state FreshBooks cheaper for 1 user up to 5 clients, 2 users at any count, 4+ users at any count; QuickBooks cheaper for 1 user at 6+ clients and exactly 3 users at 51+; Free plan noted. I re-derived this from the extended qb_vs_fb.out.json (49 rows, users 1/2/3/4/5/10/25 by clients 3/5/6/20/50/51/100): all rows equal qb()/fb() recomputation and the only QuickBooks-cheaper cells are (1 user: 6,20,50,51,100) and (3 users: 51,100). Takeaway is explicitly a price answer, not a feature verdict. F-A1-3 resolved as a binding limit: brief restricts QuickBooks facts to list prices and user caps, label 'list price, checked 2026-11-16', link, no verbatim quotes, no testing claim; the feature-bullet section was replaced by 'What the Price Comparison Leaves Out'. F-A2-1 resolved: new verbatim IRS captures (tc558 early-distribution tax: 10 percent additional tax with exceptions; 401(k) plans page: elective deferrals excluded from taxable income, distributions taxable, designated Roth exception; RMD page) are hashed into A2 evidenceFiles; outline now limits table rows to claims both captures support and expressly excludes 401(k) fee, RMD-age and catch-up-dollar rows; the match advice is now conditional ('check your plan', IRS: allowed if plan permits, may be discretionary). F-A2-2 resolved: title 'Annuity vs 401(k): They Solve Different Retirement Problems' (single claim, no splice). F-A2-3 resolved: whyNewPage rules on pension-vs-401k, iul-vs-401k, /annuity-calculator, annuity-vs-cd, pension-vs-annuity and QLAC; inbound placements are now pension-vs-401k, iul-vs-401k, pension-vs-annuity with saved inspections whose headings support the sections. F-A3-1 largely resolved: answer/takeaway now give the 12.5 percent-of-spend rule, the $1,500 cap, the $24,000 worked case and the roughly $48,000 boundary (I re-verified: Flex max advantage $210 minus 0.5 percent of other spend, zero at S=48,000; at 60,000 Flex 840 vs Unlimited 900), and no longer recommend pairing the cards. Residual: the saved flex_vs_unlimited.py/out.json still contain only the $750 break-even at $24,000, not the 12.5 percent/$48,000 boundary; carried as guardrail G-1. F-A3-2 resolved: the credit-card-perks link was replaced by /guides/chase-travel-portal-worth-it, whose inspection shows a Freedom mention in the named section. F-X-1 resolved: readiness now says defended-pages.json exists and lists none of the touched routes; C10 rationale trimmed to contested SERP and effort. Fresh checks: C1-C11 dispositions unchanged and complete; requirement-to-action mapping REQ-1..3 -> A1-A3 intact; takeaways, answers and outlines agree within each brief; no TESTED claims; Chase Unlimited foreign transaction fee not claimed; no liabilityBlock; no duplicate collision. A2 HIGH-profile claims: every table row is limited to Investor.gov/IRS captured text. Verdict PASS with non-blocking guardrails G-1..G-3 for WRITE/AUDIT.",
+  "findings": [
+    {
+      "id": "F-A1-1",
+      "severity": "major",
+      "target": "A1 answer, readerAndAnswer.answer, planned takeaway",
+      "summary": "The A1 answer and takeaway misstate where the cheaper product flips, contradicting research/calc/qb_vs_fb.out.json.",
+      "evidence": "Re-running the model over 1-25 users: QuickBooks is cheaper at list price ONLY for 1 user with 6+ clients and for exactly 3 users with 51+ clients (FB Premium $70 + 2x$11 = $92 vs Essentials $85). For 2 users FreshBooks is cheaper at every client count (Premium $81 vs $85); for 4+ users FreshBooks is cheaper at every client count. The takeaway says '2+ users, FreshBooks is cheaper until about 100 clients' and the answer says 'cheaper ... for several users', and also omits that QuickBooks Free ($0, 1 user, 2 invoices/mo) beats FreshBooks Lite for 1-5 clients at 2 invoices a month or fewer. The takeaway also says QuickBooks 'fits businesses that need many users', which the price model contradicts (it is a feature argument, not a price one).",
+      "fix": "Rewrite action.answer, newPageBriefs[A1].readerAndAnswer.answer and the Planned takeaway in one consistent form, e.g.: FreshBooks is cheaper at list price for 1-5 billable clients and for teams of 2 or more, except exactly 3 users with more than 50 clients where QuickBooks Essentials ($85) beats FreshBooks Premium plus two seats ($92); QuickBooks Simple Start is cheaper for one user with 6 or more clients; QuickBooks Free ($0) covers a solo user at 2 or fewer invoices a month. State that prices are monthly list prices (FreshBooks yearly billing takes a further 10 percent off; promos excluded). Extend the grid users to 4 (the 3-to-4 user boundary is where QuickBooks moves to Plus at $140) or state the boundary in text, and keep the 'many users or inventory' point only as a clearly separated feature, not price, argument. Rerun and re-hash qb_vs_fb outputs if the grid changes.",
+      "status": "resolved"
+    },
+    {
+      "id": "F-A2-1",
+      "severity": "major",
+      "target": "A2 evidence and outline (Taxes and Withdrawals, side-by-side table, takeaway)",
+      "summary": "HIGH-profile retirement page lacks primary-source capture for the 401(k) side beyond the contribution limit, and its core recommendation is not sourced.",
+      "evidence": "research/sources holds only the IRS contributions topic page and Investor.gov annuities. The planned table rows 'tax treatment', 'access and penalties' and '401(k) plan fees' and the outline line 'penalties before 59 1/2' for a 401(k) are not supported by either capture: the 59 1/2 penalty text is Investor.gov's ANNUITY section; the IRS capture has no early-distribution, RMD or fee text and no catch-up dollar amounts (only the sentence that catch-ups exist at 50+). The takeaway 'fund the 401(k) up to any employer match first' is general planning advice; the IRS capture only says matches exist if the plan permits (discretionary or mandatory). Per _rendered-page-audit [rpa-prepare-answer-and-scope] and the HIGH profile, central answer research must be finished before preparation PASS.",
+      "fix": "Capture verbatim into research/sources (URL, UTC time, full text): (a) the IRS page on tax on early distributions (retirement-topics-tax-on-early-distributions) for the 10 percent additional tax before 59 1/2 and exceptions; (b) an IRS or DOL page covering 401(k) plan basics, plan fees and employer match, and (c) the IRS 2026 catch-up amounts if the page will state them (or drop dollar catch-up figures and link /guides/401k-contribution-limits-2026 instead). Update newPageBriefs[A2] evidence sources and evidenceFiles hashes accordingly. Reframe 'fund the match first' as a conditional, sourced statement (match is plan-dependent per IRS) or remove it from the takeaway, keeping the Investor.gov-based boundary (annuities are for long horizons and guaranteed income; caution inside a tax-deferred plan). Keep 'reported' basis and source-only attribution.",
+      "status": "resolved"
+    },
+    {
+      "id": "F-A2-2",
+      "severity": "moderate",
+      "target": "A2 identity.title",
+      "summary": "Planned title 'Annuity vs 401(k): How They Differ and When Each Fits' is the banned spliced two-clause headline.",
+      "evidence": "_anti-ai-language [aal-outline-and-headline-bans] bans two-clause spliced headlines such as 'X: What It Is and How to Choose'; readiness.md left this for the reviewer to confirm. The A2 title has the same pattern ('How They Differ and When Each Fits').",
+      "fix": "Use a single-claim title of 50-60 characters, e.g. 'Annuity vs 401(k): Which Fits Retirement Income?' or 'Annuity vs 401(k): They Solve Different Problems'. Keep A1 ('QuickBooks vs FreshBooks: Price by Users and Clients') and A3 ('Chase Freedom Flex vs Unlimited: Which Earns More?'), which pass. Update identity.title and the chart title together.",
+      "status": "resolved"
+    },
+    {
+      "id": "F-A2-3",
+      "severity": "moderate",
+      "target": "A2 whyNewPage and inbound/outbound link plan",
+      "summary": "Duplicate ruling for annuity-vs-401k does not name or rule on the closest existing comparisons that the coverage lookup and the repo surface.",
+      "evidence": "coverage-lookup.txt lists /compare/pension-vs-401k (guaranteed income vs 401(k)) among the top existing homes, and src/data/comparisons.ts contains /compare/iul-vs-401k (an insurance contract vs 401(k), same decision shape, with employer-match and 59 1/2 content). The whyNewPage field cites only annuity-vs-cd, pension-vs-annuity and the QLAC guide. The new route is a distinct intent (annuity contract vs 401(k) plan; neither page covers annuities: pension-vs-401k is a defined-benefit plan, iul-vs-401k is life insurance), so no collision, but the ruling must be written and the sibling pages are better inbound sources than annuity-vs-cd.",
+      "fix": "Add pension-vs-401k, iul-vs-401k and /annuity-calculator (sitemap-only) to A2 whyNewPage with each page's reader intent and why it does not answer 'annuity or 401(k)'. Replace or supplement the weakest inbound placement (/compare/annuity-vs-cd, 'closing section' not evidenced in inspection) with inspected placements on /compare/pension-vs-401k and /compare/iul-vs-401k (save inspection files, hash into the manifest). Keep wording consistent with iul-vs-401k's already published 2026 limits.",
+      "status": "resolved"
+    },
+    {
+      "id": "F-A3-2",
+      "severity": "moderate",
+      "target": "A3 inbound link placement 3 (/guides/credit-card-perks-worth-it)",
+      "summary": "Planned inbound link has no relevant section: the inspection shows no mention of Freedom Flex or Unlimited on that guide.",
+      "evidence": "research/link-inspections/guides__credit-card-perks-worth-it.txt lists headings on network-rule perks, metal cards, annual-fee break-even and no-annual-fee cards; the only 'Chase' hit is a generic sentence about free credit scores. 'Chase card perks mention' does not exist. Phase 6 requires relevance over count (1-2 strong placements beat a forced link).",
+      "fix": "Replace with an inspected route that actually discusses Chase Freedom cards or rotating/flat cash back (for example another existing Chase or cash-back guide found via coverage lookup), or drop to 2 inbound links with the stated reason. Re-inspect, save the file and re-hash in the manifest; update inbound.required accordingly.",
+      "status": "resolved"
+    },
+    {
+      "id": "F-A1-3",
+      "severity": "moderate",
+      "target": "A1 QuickBooks source use (binding guardrail)",
+      "summary": "Decision on the QuickBooks pricing capture: sufficient for list prices and user caps only, under stated limits.",
+      "evidence": "quickbooks-pricing.txt is a WebFetch summary, self-labelled non-verbatim; direct fetch failed for BUILD and for this review. Corroboration: src/data/alternatives.json (updated 2026-11-13; source URL quickbooks.intuit.com/pricing in reports/alternatives-daily/2026-11-13/quickbooks-sources.json) states regular prices Free $0 (1 user, 2 invoices/mo), Simple Start $38 (1), Essentials $85 (3), Plus $140 (5), Advanced $340 (25). Those values equal the summary. The outline section 'What Each Plan Includes That the Other Lacks' lists QuickBooks feature items (classes and locations, inventory, bank-reconciliation help) that exist only in the summary.",
+      "fix": "Record in the A1 brief and in the WRITE closed-fact list: QuickBooks facts are limited to tier names, monthly list prices, user caps and the Free plan, each labelled 'list price, checked 2026-11-16' with a link to quickbooks.intuit.com/pricing; no verbatim QuickBooks feature quotes. Either drop the QuickBooks feature-difference bullets or retry capturing a QuickBooks features source verbatim (a second WebFetch of an Intuit plan-comparison URL saved to sources/) before WRITE. AUDIT should re-check the QuickBooks figures against the live page when reachable and treat inability as a recorded limit, not a pass. Never state or imply FreshBooks and QuickBooks were tested.",
+      "status": "resolved"
+    },
+    {
+      "id": "F-X-1",
+      "severity": "minor",
+      "target": "readiness.md and C10 rationale",
+      "summary": "Two accuracy notes: the defended-pages file exists, and C10's deferral rationale mixes a weak reason with a valid one.",
+      "evidence": "readiness.md says defended-pages.json is 'not present in repo'; reports/ai-answer-citation-pass/defended-pages.json exists and none of the 11 inbound/outbound routes is listed (checked), so no lock applies. C10 xero vs quickbooks (2,400/mo, KD 50, SERP contested per serp.json) is deferred partly for 'avoid same-run QuickBooks overlap', but xero-vs-quickbooks is a distinct rival pairing, not an overlap; contested SERP and effort relative to A1 are the real reasons. C3/C4 'capacity' deferrals are honest and sit below the stated 720 threshold.",
+      "fix": "Correct the readiness line to 'defended-pages.json present; none of the touched routes is defended' and trim C10's reason to contested SERP (KD 50, xero.com/forbes/quickbooks.intuit.com page one) plus carry-forward priority. Because readiness.md is hashed into the manifest, rebind after editing (mechanical).",
+      "status": "resolved"
+    },
+    {
+      "id": "F-A3-1",
+      "severity": "major",
+      "target": "A3 answer, planned takeaway, calc",
+      "summary": "The $750-per-quarter break-even is presented as a general rule but only holds at $24,000 of annual spend; the takeaway drops that condition and the $1,500 cap boundary.",
+      "evidence": "From flex_vs_unlimited.py: break-even is bonus-category spend equal to 12.5 percent of total annual spend (S x 0.005 / 0.04 per year) and is capped by Chase's $1,500-per-quarter limit; Flex's maximum advantage is 4 x 1,500 x 0.035 = $210 minus 0.5 percent of all other spend, so at about $48,000 total annual spend or more Flex cannot beat Unlimited on cash back even with a full $1,500 every quarter (re-computed: $60,000 spend, $1,500/quarter activated gives Flex $840 vs Unlimited $900). The takeaway says choose Flex 'only if you reliably put $750 or more per quarter' without the $24,000 premise.",
+      "fix": "State the rule as a share of spend (bonus category at least 12.5 percent of total spend, within the $1,500-per-quarter cap) and show the $24,000 example as the worked case. Add the boundary 'above about $48,000 a year of total spending, Unlimited earns more regardless', and add a row for it to flex_vs_unlimited.py with saved output (re-hash). Make the top answer, table, takeaway and FAQ agree. Also replace 'or use it to complement Unlimited, which Chase pages do not address' with a statement only of what Chase publishes (the existing roundup already covers holding both cards) and keep 'Can I have both' as an explicitly unanswered-by-Chase FAQ.",
+      "status": "resolved-with-guardrail"
+    },
+    {
+      "id": "G-1",
+      "severity": "minor",
+      "target": "A3 calc packet",
+      "summary": "Extend flex_vs_unlimited.py and its saved output with the 12.5 percent-of-spend rule and the roughly $48,000 boundary before the WRITE evidence packet is built.",
+      "evidence": "Script and output hashed in the manifest still hold only the $750-per-quarter break-even at $24,000.",
+      "fix": "WRITE adds the cases (e.g. S=48,000 and S=60,000 at $1,500/quarter) to a new versioned script/output referenced by evidence.json, so audit-analysis can replay the boundary."
+    },
+    {
+      "id": "G-2",
+      "severity": "minor",
+      "target": "A1 and A2 evidence wording",
+      "summary": "Stale wording in contributionAndEvidence: A1 says '20 user/client combinations' (grid now 49); A2 'Sources:' sentence names only Investor.gov and the IRS contributions page though tc558 and the 401(k) plans page are now used.",
+      "evidence": "Manifest text vs calc output and evidenceFiles.",
+      "fix": "WRITE closed-fact list and visible method note should cite the actual grid size and all IRS pages used; no manifest change required."
+    },
+    {
+      "id": "G-3",
+      "severity": "minor",
+      "target": "A2 HIGH profile at WRITE/AUDIT",
+      "summary": "Do not state 401(k) fees, RMD age or catch-up dollar amounts on A2 unless sourced; early-withdrawal wording must follow tc558 (10 percent additional tax, exceptions, IRA distinction) and not extend Investor.gov's annuity text to 401(k)s.",
+      "evidence": "Outline excludes those rows; irs-rmd.txt is captured but not in the evidenceFiles list.",
+      "fix": "AUDIT tests the central consequential conclusions against the captures."
+    }
+  ],
+  "resolvedFindingIds": [
+    "F-A1-1",
+    "F-A1-3",
+    "F-A2-1",
+    "F-A2-2",
+    "F-A2-3",
+    "F-A3-1",
+    "F-A3-2",
+    "F-X-1"
+  ],
+  "requestCoverage": [
+    {
+      "requirementId": "REQ-1",
+      "status": "PASS",
+      "evidence": "candidateDispositions and readiness list C1-C11 with disposition and reasons; build A1-A3 map to REQ-1; C10 rationale corrected."
+    },
+    {
+      "requirementId": "REQ-2",
+      "status": "PASS",
+      "evidence": "Selection by measured SEMRUSH demand and serp.json winnable reads; deferred rows show volume/KD or capture limits; no lead-generation objective assumed."
+    },
+    {
+      "requirementId": "REQ-3",
+      "status": "PASS",
+      "evidence": "Calculated and reported bases are labelled honestly with no invented tests; A2 claims are now bounded to verbatim IRS/Investor.gov captures; QuickBooks use is bounded to corroborated list prices; takeaways carry the conditions from the saved calculations (A3 boundary replay is guardrail G-1)."
+    }
+  ]
+}

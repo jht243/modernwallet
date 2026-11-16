@@ -1,0 +1,25 @@
+INSPECTED ROUTE: /alternatives/quickbooks
+DATA FILE: src/data/alternatives.json (entry begins line 3)
+INSPECTED: 2026-11-16 by mindmap-build
+
+SECTION HEADINGS/TITLES FOUND:
+"title": "QuickBooks Alternatives 2026: Prices and Plans Compared",
+"heading": "How to Choose a QuickBooks Alternative",
+"heading": "FreshBooks",
+"heading": "Xero",
+"heading": "Zoho Books",
+"heading": "Wave",
+"heading": "Free QuickBooks Alternatives: Zoho Invoice",
+"heading": "Who This Is Not For",
+"heading": "What Would Change Our Answer About QuickBooks Alternatives",
+"heading": "When QuickBooks Is Still the Better Fit",
+"question": "What should I use instead of QuickBooks?",
+"question": "What is the cheapest QuickBooks alternative?",
+"question": "Is there a free version of QuickBooks?",
+"question": "Which QuickBooks alternative lets more than one person log in?",
+
+LINES MENTIONING 'FreshBooks' (candidate anchor context):
+"metaDescription": "QuickBooks alternatives for small business accounting: FreshBooks, Xero, Zoho Books, Wave and Zoho Invoice, with published prices and limits.",
+"intro": "The main QuickBooks alternatives are FreshBooks, Xero, Zoho Books, Wave and Zoho Invoice, and the right pick depends on how many people need a login, how many clients or invoices you bill, and whether your accountant needs to work in the same file. T
+"product": "FreshBooks",
+"body": "Start with the billing unit, because it decides how the price grows. QuickBooks charges by plan tier, and each tier caps the number of users: one on Simple Start, three on Essentials, five on Plus and 25 on Advanced. FreshBooks charges by billable cli

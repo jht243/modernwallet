@@ -1,0 +1,10 @@
+f substantively revised later, link Chase Travel's terms or soften to 'often'."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/runs/2026-11-16-comparison/handoff-audit-r2-b2.json",
+    "sha256": "fc8b41396e8ecd16faa4a2463dce9be4092362b9042cd0ee5178845e306e9236"
+  }
+}
+

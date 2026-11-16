@@ -1,0 +1,94 @@
+{
+ "slug": "annuity-vs-401k",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gpt-6-sol",
+ "provider": "openai",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_OPENAI_KEY",
+ "finish_reason": "STOP",
+ "words": 2395,
+ "floor": 1500,
+ "input_tokens": 36920,
+ "output_tokens": 4554,
+ "thinking_tokens": 516,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.1245,
+ "guards": {
+  "repairs": [
+   "added relatedLinks: [] (undefined crashes next build)"
+  ],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'optionAName' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'optionBName' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 2395,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 1741,
+   "floor": 1500,
+   "ratio": 1.16,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    1
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we base this comparison on the [Internal Revenue Service (IRS)](https://www.irs.gov/retirement-plans/401k-plans) rules for 401(k) plans and [Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/investment-products/insurance-products/annuities) guidance on annuities.",
+     "replacement": "At The Modern Wallet, we base this comparison on the [Internal Revenue Service (IRS)](https://www.irs.gov/retirement-plans/401k-plans) rules for 401(k) plans and [Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/investment-products/insurance-products/annuities) guidance on annuities.",
+     "type": "unsupported",
+     "why": "The site description names The Modern Wallet, not ModernWallet."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Each answer comes from the proposed contract rather than from the general label 'annuity.'",
+     "replacement": "Ask about the proposed contract and the insurer's claims-paying ability rather than relying on the general label 'annuity.'",
+     "type": "unsupported",
+     "why": "Insurer claims-paying ability is not established as an answer supplied by the contract."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "Ask how the promised income works and review the insurer information provided with the contract.",
+     "replacement": "Ask how the promised income works and review the insurer's claims-paying ability.",
+     "type": "unsupported",
+     "why": "SOURCE does not say insurer information is provided with the contract."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2392
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 78.4,
+ "response_id": "resp_07f12f0f4c842223006afac00af1d087d2bb2694ff3bf20d14",
+ "generated_at": "2026-11-16T08:35:36+0000"
+}

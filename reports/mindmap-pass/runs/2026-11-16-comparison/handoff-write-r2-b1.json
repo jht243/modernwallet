@@ -1,0 +1,471 @@
+{
+  "version": 1,
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "2026-11-16-comparison",
+  "producer": "mindmap-main-dispatch",
+  "routes": [
+    "/compare/quickbooks-vs-freshbooks",
+    "/compare/annuity-vs-401k",
+    "/compare/chase-freedom-flex-vs-unlimited",
+    "/alternatives/quickbooks",
+    "/roundup/best-accounting-software-for-freelancers",
+    "/roundup/best-invoicing-apps-for-freelancers",
+    "/compare/pension-vs-401k",
+    "/compare/iul-vs-401k",
+    "/compare/pension-vs-annuity",
+    "/roundup/best-cash-back-credit-cards",
+    "/guides/chase-travel-portal-guide",
+    "/guides/chase-travel-portal-worth-it"
+  ],
+  "nextAction": "DO NOT EDIT PASSED OR EXHAUSTED ROUTES (/alternatives/quickbooks, /roundup/best-accounting-software-for-freelancers, /roundup/best-invoicing-apps-for-freelancers, /compare/pension-vs-401k, /compare/iul-vs-401k); rework ONLY /compare/quickbooks-vs-freshbooks, /compare/annuity-vs-401k, /compare/chase-freedom-flex-vs-unlimited. Execute approved Mindmap write actions, lint, and capture local rendered preview.",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/2a1b3cda15f7a57a111fb4da7c4b22adfc623a7c8523c27a60df1923b80da8ed/approval-manifest.json",
+      "sha256": "2a1b3cda15f7a57a111fb4da7c4b22adfc623a7c8523c27a60df1923b80da8ed",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/a0cb1ed880b8ce91335ffc93c71ae7bffc266d91c7203d1fdbde66eaa8f1a119/2026-11-16-comparison.md",
+      "sha256": "a0cb1ed880b8ce91335ffc93c71ae7bffc266d91c7203d1fdbde66eaa8f1a119",
+      "originPath": "reports/mindmap-pass/2026-11-16-comparison.md"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/a9555540585d4e542a050aaea244ec3cf937f2f79666f67885b2c8a0847395ee/preview-snapshot.json",
+      "sha256": "a9555540585d4e542a050aaea244ec3cf937f2f79666f67885b2c8a0847395ee",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/audit/batch-1/preview-snapshot.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/6b1224a19905a167fb496719e00b456dbdae80307a7077b8da0e4552e99f9384/readiness.md",
+      "sha256": "6b1224a19905a167fb496719e00b456dbdae80307a7077b8da0e4552e99f9384",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/edd5b6412602730c02214de23d8d69f06ee3782c19e0846e7744e6cf4a2dfb93/chart-review.json",
+      "sha256": "edd5b6412602730c02214de23d8d69f06ee3782c19e0846e7744e6cf4a2dfb93",
+      "checkedAt": "2026-11-16T08:25:49.552710+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/40ad467d7a5d5e0635a93f783dc85563d18370711ba5416cb7716316dabd8af7/brief.md",
+      "sha256": "40ad467d7a5d5e0635a93f783dc85563d18370711ba5416cb7716316dabd8af7",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/brief.md"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/f2a59427ff12ce1b7250c9468f60096b08f4f2a8102459de6464c23148ae4b57/coverage-lookup.txt",
+      "sha256": "f2a59427ff12ce1b7250c9468f60096b08f4f2a8102459de6464c23148ae4b57",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/c22e6fd475a66768608ab95050db5022698c857d1fb4f525b5a51b25f76f4de8/keyword-volumes.json",
+      "sha256": "c22e6fd475a66768608ab95050db5022698c857d1fb4f525b5a51b25f76f4de8",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/keyword-volumes.json"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/db14f9e5ff96ddf172e40457aeffabc271d75228d3b647fe5e2793cca04fd28d/serp.json",
+      "sha256": "db14f9e5ff96ddf172e40457aeffabc271d75228d3b647fe5e2793cca04fd28d",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/serp.json"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/cc6760d70cd12f1be373afb6beadda1a739fafc624b0c67f6937d74166c764a3/chase-freedom-flex.txt",
+      "sha256": "cc6760d70cd12f1be373afb6beadda1a739fafc624b0c67f6937d74166c764a3",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/chase-freedom-flex.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/310fc09d13d3d4f14d05318d8f63f7a4e3074f7d32b3e7a76000db91ccc6a854/chase-freedom-unlimited.txt",
+      "sha256": "310fc09d13d3d4f14d05318d8f63f7a4e3074f7d32b3e7a76000db91ccc6a854",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/chase-freedom-unlimited.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/46d69a016d2b78042e66986d393ef9e7fc0092c0b8b02b3597b216df2b08dd72/chime-home.txt",
+      "sha256": "46d69a016d2b78042e66986d393ef9e7fc0092c0b8b02b3597b216df2b08dd72",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/chime-home.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/5510f8965e07fdb6711893795d3cdd3702b4caae5903eed6a6746df92bfcdbfc/freshbooks-pricing.txt",
+      "sha256": "5510f8965e07fdb6711893795d3cdd3702b4caae5903eed6a6746df92bfcdbfc",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/freshbooks-pricing.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/e960b20cd75aa1eea3b55f8544c199375539e35002cfa81e40c37c636f0af3f1/investor-gov-annuities.txt",
+      "sha256": "e960b20cd75aa1eea3b55f8544c199375539e35002cfa81e40c37c636f0af3f1",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/investor-gov-annuities.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/ad254005a91ff6d7f75e87523ffc1e450a284bf930e54cadb0cf85ddb975dfc1/irs-401k-contributions.txt",
+      "sha256": "ad254005a91ff6d7f75e87523ffc1e450a284bf930e54cadb0cf85ddb975dfc1",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/irs-401k-contributions.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/f45988f279032431469e8d80b0d5334adc071061be17ef4783c34638d7279e6b/irs-401k-plans.txt",
+      "sha256": "f45988f279032431469e8d80b0d5334adc071061be17ef4783c34638d7279e6b",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/irs-401k-plans.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/e303d54765f05b6977ef6124158d59e03cb64b6845f238a1b6b1844126373e75/irs-early-distribution-tax.txt",
+      "sha256": "e303d54765f05b6977ef6124158d59e03cb64b6845f238a1b6b1844126373e75",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/irs-early-distribution-tax.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/51abd810398bf156494d577fd3fe1ea1a47928898c396b8573fd522f1df96ada/irs-rmd.txt",
+      "sha256": "51abd810398bf156494d577fd3fe1ea1a47928898c396b8573fd522f1df96ada",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/irs-rmd.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/a9a8cf2c4f854175ed1c68b1437905b6e9a18c2353b2665722386ae1bb155b9e/quickbooks-pricing.txt",
+      "sha256": "a9a8cf2c4f854175ed1c68b1437905b6e9a18c2353b2665722386ae1bb155b9e",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/quickbooks-pricing.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/77a8cbfe0fa39eb8bd65bbfd6675cb29b3392a4b2b2f77961c27319237ca9dc8/sofi-banking.txt",
+      "sha256": "77a8cbfe0fa39eb8bd65bbfd6675cb29b3392a4b2b2f77961c27319237ca9dc8",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/sofi-banking.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/96a92828ec6344b5568f61a09512b27c5254e9f29604443ff3527ff7dd5a1666/xero-pricing.txt",
+      "sha256": "96a92828ec6344b5568f61a09512b27c5254e9f29604443ff3527ff7dd5a1666",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/xero-pricing.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/9f5a665c40dd96cb4cb5bc76a0566e3bc7dc8f33294be1cedb1cf12340d76ea1/chart-review.json",
+      "sha256": "9f5a665c40dd96cb4cb5bc76a0566e3bc7dc8f33294be1cedb1cf12340d76ea1",
+      "checkedAt": "2026-11-16T08:42:50.716999+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/6b1224a19905a167fb496719e00b456dbdae80307a7077b8da0e4552e99f9384/readiness.md",
+      "sha256": "6b1224a19905a167fb496719e00b456dbdae80307a7077b8da0e4552e99f9384",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/9f5a665c40dd96cb4cb5bc76a0566e3bc7dc8f33294be1cedb1cf12340d76ea1/chart-review.json",
+      "sha256": "9f5a665c40dd96cb4cb5bc76a0566e3bc7dc8f33294be1cedb1cf12340d76ea1",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/40ad467d7a5d5e0635a93f783dc85563d18370711ba5416cb7716316dabd8af7/brief.md",
+      "sha256": "40ad467d7a5d5e0635a93f783dc85563d18370711ba5416cb7716316dabd8af7",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/brief.md"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/f2a59427ff12ce1b7250c9468f60096b08f4f2a8102459de6464c23148ae4b57/coverage-lookup.txt",
+      "sha256": "f2a59427ff12ce1b7250c9468f60096b08f4f2a8102459de6464c23148ae4b57",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/c22e6fd475a66768608ab95050db5022698c857d1fb4f525b5a51b25f76f4de8/keyword-volumes.json",
+      "sha256": "c22e6fd475a66768608ab95050db5022698c857d1fb4f525b5a51b25f76f4de8",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/keyword-volumes.json"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/db14f9e5ff96ddf172e40457aeffabc271d75228d3b647fe5e2793cca04fd28d/serp.json",
+      "sha256": "db14f9e5ff96ddf172e40457aeffabc271d75228d3b647fe5e2793cca04fd28d",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/serp.json"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/cc6760d70cd12f1be373afb6beadda1a739fafc624b0c67f6937d74166c764a3/chase-freedom-flex.txt",
+      "sha256": "cc6760d70cd12f1be373afb6beadda1a739fafc624b0c67f6937d74166c764a3",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/chase-freedom-flex.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/310fc09d13d3d4f14d05318d8f63f7a4e3074f7d32b3e7a76000db91ccc6a854/chase-freedom-unlimited.txt",
+      "sha256": "310fc09d13d3d4f14d05318d8f63f7a4e3074f7d32b3e7a76000db91ccc6a854",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/chase-freedom-unlimited.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/46d69a016d2b78042e66986d393ef9e7fc0092c0b8b02b3597b216df2b08dd72/chime-home.txt",
+      "sha256": "46d69a016d2b78042e66986d393ef9e7fc0092c0b8b02b3597b216df2b08dd72",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/chime-home.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/5510f8965e07fdb6711893795d3cdd3702b4caae5903eed6a6746df92bfcdbfc/freshbooks-pricing.txt",
+      "sha256": "5510f8965e07fdb6711893795d3cdd3702b4caae5903eed6a6746df92bfcdbfc",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/freshbooks-pricing.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/e960b20cd75aa1eea3b55f8544c199375539e35002cfa81e40c37c636f0af3f1/investor-gov-annuities.txt",
+      "sha256": "e960b20cd75aa1eea3b55f8544c199375539e35002cfa81e40c37c636f0af3f1",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/investor-gov-annuities.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/ad254005a91ff6d7f75e87523ffc1e450a284bf930e54cadb0cf85ddb975dfc1/irs-401k-contributions.txt",
+      "sha256": "ad254005a91ff6d7f75e87523ffc1e450a284bf930e54cadb0cf85ddb975dfc1",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/irs-401k-contributions.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/f45988f279032431469e8d80b0d5334adc071061be17ef4783c34638d7279e6b/irs-401k-plans.txt",
+      "sha256": "f45988f279032431469e8d80b0d5334adc071061be17ef4783c34638d7279e6b",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/irs-401k-plans.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/e303d54765f05b6977ef6124158d59e03cb64b6845f238a1b6b1844126373e75/irs-early-distribution-tax.txt",
+      "sha256": "e303d54765f05b6977ef6124158d59e03cb64b6845f238a1b6b1844126373e75",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/irs-early-distribution-tax.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/51abd810398bf156494d577fd3fe1ea1a47928898c396b8573fd522f1df96ada/irs-rmd.txt",
+      "sha256": "51abd810398bf156494d577fd3fe1ea1a47928898c396b8573fd522f1df96ada",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/irs-rmd.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/a9a8cf2c4f854175ed1c68b1437905b6e9a18c2353b2665722386ae1bb155b9e/quickbooks-pricing.txt",
+      "sha256": "a9a8cf2c4f854175ed1c68b1437905b6e9a18c2353b2665722386ae1bb155b9e",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/quickbooks-pricing.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/77a8cbfe0fa39eb8bd65bbfd6675cb29b3392a4b2b2f77961c27319237ca9dc8/sofi-banking.txt",
+      "sha256": "77a8cbfe0fa39eb8bd65bbfd6675cb29b3392a4b2b2f77961c27319237ca9dc8",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/sofi-banking.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/96a92828ec6344b5568f61a09512b27c5254e9f29604443ff3527ff7dd5a1666/xero-pricing.txt",
+      "sha256": "96a92828ec6344b5568f61a09512b27c5254e9f29604443ff3527ff7dd5a1666",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/xero-pricing.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/4c675184c38c82e19ed895f7b1a78b9c56c03fa0200d1e095ecb3775870782cc/review.json",
+      "sha256": "4c675184c38c82e19ed895f7b1a78b9c56c03fa0200d1e095ecb3775870782cc",
+      "checkedAt": "2026-11-16T08:53:29.493133+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/audit/review.json"
+    }
+  ],
+  "findings": [
+    {
+      "id": "R1-1-F1",
+      "status": "open",
+      "evidence": "FIX /compare/quickbooks-vs-freshbooks section \"What the Price Comparison Leaves Out\": \"The grid compares published monthly list prices, not what each product can do for a particular business.\" -> \"The grid compares published monthly list prices. It does not measure what each product can do for a particular business.\" (single-instance ban: comma antithesis \"X, not Y\")."
+    },
+    {
+      "id": "R1-1-F2",
+      "status": "open",
+      "evidence": "ADVISORY restatement: the same switch points (1 user 5/6 clients; 3 users 50/51 clients; 2 and 4-25 users) are restated in the lede, takeaway, At a Glance, Who Should Pick and FAQ; consider trimming one when the rework is applied."
+    },
+    {
+      "id": "R1-1-F3",
+      "status": "open",
+      "evidence": "ADVISORY closing sentence: \"For a quickbooks vs freshbooks price decision\" renders the keyword in lowercase brand-less form; prefer \"For a QuickBooks vs FreshBooks price decision\"."
+    },
+    {
+      "id": "R1-1-F4",
+      "status": "open",
+      "evidence": "NOTE (not a defect, per reviewer note): first mentions of QuickBooks and FreshBooks and the hand-written pricing-page deep links are not anchors in this snapshot (no render-time entity linker; owner no-link-to-pitched-vendor step). Verify in the live compare step."
+    },
+    {
+      "id": "R1-1-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full render. Top answer, takeaway, 49-cell grid, who-should-pick section and FAQ agree on every switch point (1 user: FB to 5 clients, QB from 6; 3 users: QB from 51; 2 and 4-25 users: FB). One single-instance anti-AI ban remains: compressed antithesis \"monthly list prices, not what each product can do\". Fix is in findings. Heavy repetition of the same switch points across four sections is advisory."
+    },
+    {
+      "id": "R1-2-F1",
+      "status": "open",
+      "evidence": "FIX /compare/annuity-vs-401k table row \"Employer match\" (annuity cell): \"The annuity guidance describes payments made to buy a contract, not an employer match.\" -> \"The annuity guidance describes payments made to buy a contract and does not describe an employer match.\" (comma antithesis ban)."
+    },
+    {
+      "id": "R1-2-F2",
+      "status": "open",
+      "evidence": "FIX /compare/annuity-vs-401k takeaway paragraph: \"This takeaway is based on the IRS and Investor.gov guidance, not on product testing.\" -> \"This takeaway is based on the IRS and Investor.gov guidance. It rests on no product testing.\" (comma antithesis ban)."
+    },
+    {
+      "id": "R1-2-F3",
+      "status": "open",
+      "evidence": "FIX /compare/annuity-vs-401k section \"What an Annuity Costs and What Locks Up Your Money\": \"That is an illustration from its guidance, not a quoted fee for every annuity.\" -> \"That is an illustration from its guidance. It is not a quoted fee for every annuity.\" (comma antithesis ban)."
+    },
+    {
+      "id": "R1-2-F4",
+      "status": "open",
+      "evidence": "ADVISORY: repeated \"Ask for...\" directive openers across four sections read formulaically; vary when applying the fixes."
+    },
+    {
+      "id": "R1-2-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full render. Lede, table, takeaway, who-not-for, sections and FAQs consistently say neither is better, match-first if a match exists, no payout figure available, and agree on $24,500 and 10 percent tax. Three comma-antithesis single-instance bans remain (quotes in findings); everything else coherent."
+    },
+    {
+      "id": "R1-3-F1",
+      "status": "open",
+      "evidence": "FIX /compare/chase-freedom-flex-vs-unlimited FAQ \"Can I have both Chase Freedom Flex and Freedom Unlimited?\": \"This comparison makes no claim about holding both cards together. It models the cash back you would earn by putting the same purchases on one card or the other. For current card eligibility and offer terms, read the Freedom Flex card page and Freedom Unlimited card page.\" -> \"Chase's card pages do not say whether you can hold both cards. The model applies the same purchases to one card or the other. Check eligibility and offer terms on the [Freedom Flex card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) and [Freedom Unlimited card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited) before you apply.\" (dead-end and meta-narration)."
+    },
+    {
+      "id": "R1-3-F2",
+      "status": "open",
+      "evidence": "FIX /compare/chase-freedom-flex-vs-unlimited table and FAQ: replace reader-facing \"captured\" wording: \"as captured November 16, 2026\" -> \"as of November 16, 2026\"; \"No rotating 5% category is listed in the captured card terms.\" -> \"No rotating 5% category is listed on the Freedom Unlimited card page.\"; \"The captured Freedom Unlimited card-page text does not state a foreign transaction fee.\" -> \"The Freedom Unlimited card page does not state a foreign transaction fee. Check Chase pricing and terms for the current fee.\""
+    },
+    {
+      "id": "R1-3-F3",
+      "status": "open",
+      "evidence": "INHERITED CONTRADICTION EVALUATED (/roundup/best-cash-back-credit-cards, batch 2): roundup says Freedom Unlimited \"charges a foreign transaction fee\"; the Unlimited capture shows No Foreign Transaction Fee only as three browse-menu filter labels (chase-freedom-unlimited.txt l.33, 293, 316; WebFetch of the live page confirms \"a category label, not a statement about this card\"), so the capture neither confirms nor refutes the roundup. It is not a contradiction with this page, which asserts nothing about the Unlimited fee. Not a blocker for this route; the roundup claim is unsourced in this run and belongs to the batch-2 audit as advisory."
+    },
+    {
+      "id": "R1-3-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full render. Lede, takeaway, 12.5% rule, break-even and 24,000 tables and FAQs agree. Fail items: FAQ \"Can I have both Chase Freedom Flex and Freedom Unlimited?\" raises a question and answers \"This comparison makes no claim\", a dead end; reader-facing \"captured\" process wording appears repeatedly (table, FAQ, APR cells)."
+    },
+    {
+      "id": "R1-4-F1",
+      "status": "open",
+      "evidence": "NOTE: the sentence calls FreshBooks and QuickBooks \"the two best-known options\", an unsourced popularity claim; harmless, optional rewording to \"the two products compared there\"."
+    },
+    {
+      "id": "R1-4-F2",
+      "status": "open",
+      "evidence": "NOTE: date policy conflict (link-only edit keeps 2026-11-13) versus the phase-4 updated-page date-bump rule; followed the newer owner efficiency rule, not a defect."
+    },
+    {
+      "id": "R1-5-F1",
+      "status": "open",
+      "evidence": "ADVISORY inherited (not blocking, unrelated to link edit): 20 em dashes and \"genuinely free\" in the body; meta description uses an em dash; QuickBooks Solopreneur, Wave, Zoho and Bonsai figures were not re-verified in this run."
+    },
+    {
+      "id": "R1-5-F2",
+      "status": "open",
+      "evidence": "NOTE: the page has an inherited \"Updated September 5, 2026\" date by design (link-only edit not bumped)."
+    },
+    {
+      "id": "R1-6-F1",
+      "status": "open",
+      "evidence": "ADVISORY inherited: 17 em dashes in body; unrelated historical style, not blocking."
+    },
+    {
+      "id": "R1-7-F1",
+      "status": "open",
+      "evidence": "ADVISORY inherited: the only contribution limit shown is for 2025 ($23,500, $31,000 50+, $34,750 ages 60-63) on a page showing Updated June 25, 2026, and the Sources list says \"IRS 401(k) contribution limits (2025)\". It is year-labelled so not false, and the added link sentence does not depend on it, but a reader in November 2026 would find the 2026 $24,500 only on the linked page. Candidate for a later refresh, not blocking."
+    },
+    {
+      "id": "R1-7-F2",
+      "status": "open",
+      "evidence": "NOTE: link-only edit keeps June 25, 2026 date per owner efficiency rule."
+    },
+    {
+      "id": "R1-8-F1",
+      "status": "open",
+      "evidence": "NOTE: link-only edit keeps August 30, 2026 date per owner efficiency rule."
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 1,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "previous": {
+    "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/86307a8ceb1573777081bae5a438b7f6bec6ff03db6835a89798b6c4b64ebd33/handoff-audit-1.json",
+    "sha256": "86307a8ceb1573777081bae5a438b7f6bec6ff03db6835a89798b6c4b64ebd33",
+    "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/handoff-audit-1.json"
+  },
+  "snapshot": {
+    "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/a9555540585d4e542a050aaea244ec3cf937f2f79666f67885b2c8a0847395ee/preview-snapshot.json",
+    "sha256": "a9555540585d4e542a050aaea244ec3cf937f2f79666f67885b2c8a0847395ee",
+    "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/audit/batch-1/preview-snapshot.json"
+  }
+}

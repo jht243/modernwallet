@@ -1,0 +1,345 @@
+[
+ {
+  "users": 1,
+  "billable_clients": 3,
+  "quickbooks": 38,
+  "freshbooks": 23,
+  "freshbooks_minus_quickbooks": -15
+ },
+ {
+  "users": 1,
+  "billable_clients": 5,
+  "quickbooks": 38,
+  "freshbooks": 23,
+  "freshbooks_minus_quickbooks": -15
+ },
+ {
+  "users": 1,
+  "billable_clients": 6,
+  "quickbooks": 38,
+  "freshbooks": 43,
+  "freshbooks_minus_quickbooks": 5
+ },
+ {
+  "users": 1,
+  "billable_clients": 20,
+  "quickbooks": 38,
+  "freshbooks": 43,
+  "freshbooks_minus_quickbooks": 5
+ },
+ {
+  "users": 1,
+  "billable_clients": 50,
+  "quickbooks": 38,
+  "freshbooks": 43,
+  "freshbooks_minus_quickbooks": 5
+ },
+ {
+  "users": 1,
+  "billable_clients": 51,
+  "quickbooks": 38,
+  "freshbooks": 70,
+  "freshbooks_minus_quickbooks": 32
+ },
+ {
+  "users": 1,
+  "billable_clients": 100,
+  "quickbooks": 38,
+  "freshbooks": 70,
+  "freshbooks_minus_quickbooks": 32
+ },
+ {
+  "users": 2,
+  "billable_clients": 3,
+  "quickbooks": 85,
+  "freshbooks": 34,
+  "freshbooks_minus_quickbooks": -51
+ },
+ {
+  "users": 2,
+  "billable_clients": 5,
+  "quickbooks": 85,
+  "freshbooks": 34,
+  "freshbooks_minus_quickbooks": -51
+ },
+ {
+  "users": 2,
+  "billable_clients": 6,
+  "quickbooks": 85,
+  "freshbooks": 54,
+  "freshbooks_minus_quickbooks": -31
+ },
+ {
+  "users": 2,
+  "billable_clients": 20,
+  "quickbooks": 85,
+  "freshbooks": 54,
+  "freshbooks_minus_quickbooks": -31
+ },
+ {
+  "users": 2,
+  "billable_clients": 50,
+  "quickbooks": 85,
+  "freshbooks": 54,
+  "freshbooks_minus_quickbooks": -31
+ },
+ {
+  "users": 2,
+  "billable_clients": 51,
+  "quickbooks": 85,
+  "freshbooks": 81,
+  "freshbooks_minus_quickbooks": -4
+ },
+ {
+  "users": 2,
+  "billable_clients": 100,
+  "quickbooks": 85,
+  "freshbooks": 81,
+  "freshbooks_minus_quickbooks": -4
+ },
+ {
+  "users": 3,
+  "billable_clients": 3,
+  "quickbooks": 85,
+  "freshbooks": 45,
+  "freshbooks_minus_quickbooks": -40
+ },
+ {
+  "users": 3,
+  "billable_clients": 5,
+  "quickbooks": 85,
+  "freshbooks": 45,
+  "freshbooks_minus_quickbooks": -40
+ },
+ {
+  "users": 3,
+  "billable_clients": 6,
+  "quickbooks": 85,
+  "freshbooks": 65,
+  "freshbooks_minus_quickbooks": -20
+ },
+ {
+  "users": 3,
+  "billable_clients": 20,
+  "quickbooks": 85,
+  "freshbooks": 65,
+  "freshbooks_minus_quickbooks": -20
+ },
+ {
+  "users": 3,
+  "billable_clients": 50,
+  "quickbooks": 85,
+  "freshbooks": 65,
+  "freshbooks_minus_quickbooks": -20
+ },
+ {
+  "users": 3,
+  "billable_clients": 51,
+  "quickbooks": 85,
+  "freshbooks": 92,
+  "freshbooks_minus_quickbooks": 7
+ },
+ {
+  "users": 3,
+  "billable_clients": 100,
+  "quickbooks": 85,
+  "freshbooks": 92,
+  "freshbooks_minus_quickbooks": 7
+ },
+ {
+  "users": 4,
+  "billable_clients": 3,
+  "quickbooks": 140,
+  "freshbooks": 56,
+  "freshbooks_minus_quickbooks": -84
+ },
+ {
+  "users": 4,
+  "billable_clients": 5,
+  "quickbooks": 140,
+  "freshbooks": 56,
+  "freshbooks_minus_quickbooks": -84
+ },
+ {
+  "users": 4,
+  "billable_clients": 6,
+  "quickbooks": 140,
+  "freshbooks": 76,
+  "freshbooks_minus_quickbooks": -64
+ },
+ {
+  "users": 4,
+  "billable_clients": 20,
+  "quickbooks": 140,
+  "freshbooks": 76,
+  "freshbooks_minus_quickbooks": -64
+ },
+ {
+  "users": 4,
+  "billable_clients": 50,
+  "quickbooks": 140,
+  "freshbooks": 76,
+  "freshbooks_minus_quickbooks": -64
+ },
+ {
+  "users": 4,
+  "billable_clients": 51,
+  "quickbooks": 140,
+  "freshbooks": 103,
+  "freshbooks_minus_quickbooks": -37
+ },
+ {
+  "users": 4,
+  "billable_clients": 100,
+  "quickbooks": 140,
+  "freshbooks": 103,
+  "freshbooks_minus_quickbooks": -37
+ },
+ {
+  "users": 5,
+  "billable_clients": 3,
+  "quickbooks": 140,
+  "freshbooks": 67,
+  "freshbooks_minus_quickbooks": -73
+ },
+ {
+  "users": 5,
+  "billable_clients": 5,
+  "quickbooks": 140,
+  "freshbooks": 67,
+  "freshbooks_minus_quickbooks": -73
+ },
+ {
+  "users": 5,
+  "billable_clients": 6,
+  "quickbooks": 140,
+  "freshbooks": 87,
+  "freshbooks_minus_quickbooks": -53
+ },
+ {
+  "users": 5,
+  "billable_clients": 20,
+  "quickbooks": 140,
+  "freshbooks": 87,
+  "freshbooks_minus_quickbooks": -53
+ },
+ {
+  "users": 5,
+  "billable_clients": 50,
+  "quickbooks": 140,
+  "freshbooks": 87,
+  "freshbooks_minus_quickbooks": -53
+ },
+ {
+  "users": 5,
+  "billable_clients": 51,
+  "quickbooks": 140,
+  "freshbooks": 114,
+  "freshbooks_minus_quickbooks": -26
+ },
+ {
+  "users": 5,
+  "billable_clients": 100,
+  "quickbooks": 140,
+  "freshbooks": 114,
+  "freshbooks_minus_quickbooks": -26
+ },
+ {
+  "users": 10,
+  "billable_clients": 3,
+  "quickbooks": 340,
+  "freshbooks": 122,
+  "freshbooks_minus_quickbooks": -218
+ },
+ {
+  "users": 10,
+  "billable_clients": 5,
+  "quickbooks": 340,
+  "freshbooks": 122,
+  "freshbooks_minus_quickbooks": -218
+ },
+ {
+  "users": 10,
+  "billable_clients": 6,
+  "quickbooks": 340,
+  "freshbooks": 142,
+  "freshbooks_minus_quickbooks": -198
+ },
+ {
+  "users": 10,
+  "billable_clients": 20,
+  "quickbooks": 340,
+  "freshbooks": 142,
+  "freshbooks_minus_quickbooks": -198
+ },
+ {
+  "users": 10,
+  "billable_clients": 50,
+  "quickbooks": 340,
+  "freshbooks": 142,
+  "freshbooks_minus_quickbooks": -198
+ },
+ {
+  "users": 10,
+  "billable_clients": 51,
+  "quickbooks": 340,
+  "freshbooks": 169,
+  "freshbooks_minus_quickbooks": -171
+ },
+ {
+  "users": 10,
+  "billable_clients": 100,
+  "quickbooks": 340,
+  "freshbooks": 169,
+  "freshbooks_minus_quickbooks": -171
+ },
+ {
+  "users": 25,
+  "billable_clients": 3,
+  "quickbooks": 340,
+  "freshbooks": 287,
+  "freshbooks_minus_quickbooks": -53
+ },
+ {
+  "users": 25,
+  "billable_clients": 5,
+  "quickbooks": 340,
+  "freshbooks": 287,
+  "freshbooks_minus_quickbooks": -53
+ },
+ {
+  "users": 25,
+  "billable_clients": 6,
+  "quickbooks": 340,
+  "freshbooks": 307,
+  "freshbooks_minus_quickbooks": -33
+ },
+ {
+  "users": 25,
+  "billable_clients": 20,
+  "quickbooks": 340,
+  "freshbooks": 307,
+  "freshbooks_minus_quickbooks": -33
+ },
+ {
+  "users": 25,
+  "billable_clients": 50,
+  "quickbooks": 340,
+  "freshbooks": 307,
+  "freshbooks_minus_quickbooks": -33
+ },
+ {
+  "users": 25,
+  "billable_clients": 51,
+  "quickbooks": 340,
+  "freshbooks": 334,
+  "freshbooks_minus_quickbooks": -6
+ },
+ {
+  "users": 25,
+  "billable_clients": 100,
+  "quickbooks": 340,
+  "freshbooks": 334,
+  "freshbooks_minus_quickbooks": -6
+ }
+]

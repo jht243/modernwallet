@@ -1,0 +1,56 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "mindmap-write",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/compare/quickbooks-vs-freshbooks",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/compare/annuity-vs-401k",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/compare/chase-freedom-flex-vs-unlimited",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/alternatives/quickbooks",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/roundup/best-accounting-software-for-freelancers",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/roundup/best-invoicing-apps-for-freelancers",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/compare/pension-vs-401k",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/compare/iul-vs-401k",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "2026-11-16-comparison"
+}

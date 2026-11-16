@@ -1,0 +1,491 @@
+SOURCE_URL: https://www.xero.com/us/pricing-plans/
+RETRIEVED_UTC: 2026-11-16T08:08:02Z
+{"url": "https://www.xero.com/us/pricing-plans/", "method": "plain", "status": 200, "chars": 16324, "errors": []}
+Pricing Plans | Xero US
+Pricing
+Features
+Popular features
+Accounting Software
+Manage all your accounting needs in one place.
+Send Invoices
+Simplify and streamline your billing process.
+Accept Payments
+Get paid up to 2x faster by accepting online payments.
+Pay Bills
+All your bills, in one place.
+Create Purchase Orders
+Create and send digital purchase orders in minutes.
+Claim Expenses
+Scan & submit receipts on-the-go and make expense tracking seamless.
+Bank Reconciliation
+Save time and easily keep your accounting records accurate.
+JAX, your AI finance partner
+Automate work and get financial clarity.
+More features
+Payroll
+Track Projects
+Mileage Tracking
+Send Quotes
+Manage Fixed Assets
+View all features >
+Integrate with 1000+ apps
+Find, try and buy business apps that connect with Xero once you sign up.
+Sign up to get started
+Small Business
+By Industry
+Self Employed
+Non-Profit
+Construction
+Startup
+W9 Contractor
+Real Estate
+View all industries >
+Why Xero
+Xero vs Quickbooks
+Xero vs Freshbooks
+Xero vs Sage
+Find an Accountant or Bookkeeper
+1 on 1 Onboarding with Xero Coaches
+Innovation at Xero
+(opens in a new tab)
+Xero for
+Self-employed
+Small Businesses
+Medium-sized Businesses
+JAX, your AI finance partner
+JAX automates your work and provides clarity, so your books stay current and your next move is always confident.
+Sign up to get started
+Accountants & Bookkeepers
+See what Xero can do for accountants and bookkeepers
+Explore the Partner Program
+Popular features
+Xero Partner Hub
+Xero Cashbook, Xero Ledger
+Xero Partner Hub + Practice Management
+New Workpapers
+Syft Analytics
+By role
+For Accountants
+For Bookkeepers
+For Large Firms
+Tools & Guidance
+Accountant & Bookkeeper Guides
+The Partner Program with perks
+Join 250,000 accountants and bookkeepers who build their practice with Xero, plus the tools, benefits and backing to match.
+Explore the partner program
+Support
+Online Training
+Get Support at Xero Central
+(opens in a new tab)
+Get 1:1 Help with Xero coaches
+Xero Product Training
+(opens in a new tab)
+Xero Community
+(opens in a new tab)
+Get Certified
+Resources
+Guides
+Accounting Glossary
+Free Templates
+Handy Calculators
+Customer Stories
+More Business Resources >
+Get expert help with your Xero journey
+Request a quick call to learn more about Xero and see how Xero can work for you.
+Schedule a call
+A better deal on Xero is waiting
+Purchase any Xero plan and get started today.
+See offers and plans
+Log in
+Menu
+Log in
+Plans backed by
+real support
+Simple software to run your business, with support when needed.
+Free expert setup help
+No per-user license fees
+Real-time financial insights
+Trusted by 5.1 million customers
+Get 80% off your plan for your 3 first months*
+Buy now
+Get one month free
+Forecast with clarity
+Forecast with clarity
+Established
+$
+19
+.
+40
+per month
+for the first 3 months
+Then $97 per month
+Future proof your scaling business - with advanced tools and analytics.
+Features
+Send invoices and quotes
+Accept online invoice payments^
+Automate bill entry and track bills
+Reconcile bank
+transactions
+Smart Document
+Capture
+View real-time reports
+W-9 + 1099 management
+Sales tax
+Visualize performance with graphs
+180 day cash flow forecast
+Make online bill payments (Domestic - Free ACH)
+Make online bill payments (Cross Border)
+Customize performance dashboards
+Tailored financial health scorecards
+Analyze KPIs and ratios
+Use multiple currencies
+Track time and costs for projects
+Employee expense and mileage claims
+Benchmark against the industry
+Make online bill payments (International)
+Budget with smart suggestions
+Auto-reconcile
+transactions
+Track income and expenses
+Free expert setup help
+Optional add-ons
+Inventory Plus (optional)
+Xero Payroll, powered by Gusto
+Buy now
+Learn more
+Growing
+$
+11
+.
+80
+per month
+for the first 3 months
+Then $59 per month
+Go beyond the basics - automate tasks and access performance dashboards.
+Features
+Send invoices and quotes
+Accept online invoice payments^
+Automate bill entry and track bills
+Reconcile bank transactions
+Smart Document
+Capture
+View real-time reports
+W-9 + 1099 management
+Sales tax
+Visualize performance with graphs
+60 day cash flow forecast
+Make online bill payments (Domestic - Free ACH)
+Make online bill payments (Cross Border)
+Customize performance dashboards
+Tailored financial health scorecards
+Budget with smart suggestions
+Auto-reconcile
+transactions
+Track income and expenses
+Free expert setup help
+Optional add-ons
+Inventory Plus (optional)
+Xero Payroll, powered by Gusto
+Buy now
+Learn more
+Early
+$
+5
+.
+40
+per month
+for the first 3 months
+Then $27 per month
+An easy financial foundation - track cash flow with the essentials.
+Features
+Send quotes and 20 invoices†
+Accept online invoice payments^
+5 bills
+Reconcile bank transactions
+Smart Document
+Capture
+View real-time reports
+W-9 + 1099 management
+Sales tax
+Visualize performance with basic graphs
+30 day cash flow forecast
+Make online bill payments (Domestic - Free ACH)
+Make online bill payments (Cross Border)
+Track income and expenses
+Free expert setup help
+Optional add-ons
+Xero Payroll, powered by Gusto
+Auto-reconcile transactions
+Buy now
+Learn more
+Back to top
+Get 80% off your plan for your first 3 months*
+Buy now
+Get one month free
+Early
+$
+5
+.
+40
+per month
+for the first 3 months
+Then $27 per month
+An easy financial foundation - track cash flow with the essentials.
+Includes
+Send quotes and 20 invoices†
+Accept online invoice payments^
+5 bills
+Reconcile bank transactions
+Smart Document
+Capture
+View real-time reports
+W-9 + 1099 management
+Sales tax
+Visualize performance with basic graphs
+30 day cash flow forecast
+Make online bill payments (Domestic - Free ACH)
+Make online bill payments (Cross Border)
+Track income and expenses
+Free expert setup help
+Buy now
+Learn more
+Growing
+$
+11
+.
+80
+per month
+for the first 3 months
+Then $59 per month
+Go beyond the basics - automate tasks and access performance dashboards.
+Everything in Early, plus:
+Send invoices and quotes
+Automate bill entry and track bills
+Visualize performance with graphs
+60 day cash flow forecast
+Customize performance dashboards
+Tailored financial health scorecards
+Budget with smart suggestions
+Auto-reconcile
+transactions
+Buy now
+Learn more
+Forecast with clarity
+Forecast with clarity
+Established
+$
+19
+.
+40
+per month
+for the first 3 months
+Then $97 per month
+Future proof your scaling business - with advanced tools and analytics.
+Everything in Growing, plus:
+Reconcile bank
+transactions
+180 day cash flow forecast
+Analyze KPIs and ratios
+Use multiple currencies
+Track time and costs for projects
+Employee expense and mileage claims
+Benchmark against the industry
+Make online bill payments (International)
+Buy now
+Learn more
+Compare features across plans
+Used by 5.1 million customers worldwide.
+Built for the way US businesses work.
+Compare features across plans
+Forecast with clarity
+Forecast with clarity
+Early
+Buy now
+Growing
+Buy now
+Established
+Buy now
+Send invoices and quotes
+Send quotes and 20 invoices†
+Accept online invoice payments^
+Automate bill entry and track bills
+Enter 5 bills
+Reconcile bank transactions
+Smart Document Capture
+View real-time reports
+W-9 + 1099 management
+Sales tax
+Visualize performance with graphs
+Basic
+Forecast cash flow
+30 day forecast
+60 day forecast
+180 day forecast
+Make online bill payments (Domestic)††
+Free ACH
+Fees apply for other payment methods††
+Free ACH
+Fees apply for other payment methods††
+Free ACH
+Fees apply for other payment methods††
+New
+Make online bill payments (Cross Border)
+Optional
+Payment fees apply††
+Optional
+Payment fees apply††
+Optional
+Payment fees apply††
+Customize performance dashboards
+Tailored financial health scorecards
+Analyze KPIs and ratios
+Track income and expenses
+Free expert setup help
+Budget with smart suggestions
+3 budgets
+Use multiple currencies
+Track time and costs for projects
+Employee expense and mileage claims
+New
+Benchmark against the industry
+New
+Make online bill payments (International)
+Auto-reconcile
+transactions
+Optional
+$5.00 per month
+New
+Xero Payroll, powered by Gusto
+Optional
+$36 a month + $6 per employee/contractor
+Optional
+$36 a month + $6 per employee/contractor
+Optional
+$36 a month + $6 per employee/contractor
+Inventory Plus
+Optional
+Optional
+Back to the top
+Pricing plan details and offer terms
+Xero reserves the right to change pricing at any time. All prices are listed in USD and do not include applicable taxes. Taxes will be calculated based on your billing address before you enter your payment information. Your monthly recurring total will be updated accordingly in the following steps. Xero subscriptions auto-renew monthly until they are cancelled. If you later decide to change to a less expensive plan you can do so 1 month after upgrading.
+*New customers get 80% off for the first 3 months, then Xero’s regular price will apply and auto-renew monthly until cancelled
+as described in our Terms of Use
+. Only available to customers in the United States purchasing their first organization on xero.com using code DC80325309US. Discount applies to base Early, Growing, Established plan subscriptions and does not apply to any additional charges for add‑ons, usage and payment fees, unless otherwise specified. This offer cannot be used with, or exchanged for, any other offer. Xero can change or cancel this offer at any time.
+†Invoice limits for the Early plan apply to both approving and sending invoices. Transactions initiated by app partners may automatically contribute to your invoice limit.
+^Payment fees apply to the use of online invoice payments. See
+here
+for more information.
+**Median payment times of invoices with a payment service included and sent via SMS by customers using Xero in US from 9/1/2024 to 3/31/2025 (compared to invoices sent by email and without payment service included).
+a. ††Payment fees may apply to the use of online bill payments. Standard ACH payments are included in Xero Early, Growing and Established plans (fees apply for other payment methods). Included payments apply to standard ACH payments in USD and excludes same day ACH, international or cross border payments. Any payment fees are in addition to your Xero monthly subscription amount and are not eligible for subscription discounts and offers. Fees exclude applicable taxes. See
+here
+for more information.
+See our terms of use for details
+Hubdoc terms of use
+Xero reserves the right to change pricing at any time. All prices are listed in USD and do not include applicable taxes. Taxes will be calculated based on your billing address before you enter your payment information. Your monthly recurring total will be updated accordingly in the following steps. Xero subscriptions auto-renew monthly until they are cancelled. If you later decide to change to a less expensive plan you can do so 1 month after upgrading.
+*New customers get 80% off for the first 3 months, then Xero’s regular price will apply and auto-renew monthly until cancelled
+as described in our Terms of Use
+. Only available to customers in the United States purchasing their first organization on xero.com using code DC80325309US. Discount applies to base Early, Growing, Established plan subscriptions and does not apply to any additional charges for add‑ons, usage and payment fees, unless otherwise specified. This offer cannot be used with, or exchanged for, any other offer. Xero can change or cancel this offer at any time.
+†Invoice limits for the Early plan apply to both approving and sending invoices. Transactions initiated by app partners may automatically contribute to your invoice limit.
+^Payment fees apply to the use of online invoice payments. See
+here
+for more information.
+**Median payment times of invoices with a payment service included and sent via SMS by customers using Xero in US from 9/1/2024 to 3/31/2025 (compared to invoices sent by email and without payment service included).
+a. ††Payment fees may apply to the use of online bill payments. Standard ACH payments are included in Xero Early, Growing and Established plans (fees apply for other payment methods). Included payments apply to standard ACH payments in USD and excludes same day ACH, international or cross border payments. Any payment fees are in addition to your Xero monthly subscription amount and are not eligible for subscription discounts and offers. Fees exclude applicable taxes. See
+here
+for more information.
+See our terms of use for details
+Hubdoc terms of use
+The quickest move in business? Leaving QuickBooks.
+Friendly layouts, collaborative features and a US-based team make it the ideal QuickBooks alternative to switch to.
+Compare Xero vs. QuickBooks
+.
+1
+Tap to pay your way
+Tap-to-pay on both Android and iPhone. Powered by Stripe, you can accept payments on the spot.
+2
+Insights at first sight
+Rich, visual analytics on every plan with Syft, so you always know where your business stands.
+3
+Help from real humans
+Free, personalized onboarding from a product specialist for your first 90 days. Finally, setup that doesn't burn time.
+Payroll that’s easy to love.
+Xero Payroll, powered by Gusto, is here. Calculate and file payroll taxes, pay your team, and keep up with your compliance obligations, without leaving Xero!
+Learn more about Xero Payroll, powered by Gusto
+Learn the ropes with a Xero Coach.
+A product specialist sets you up, helps connect your banks, and gets your dashboard ready. Free for your first 90 days.
+Learn more about Xero coaches
+Frequently asked questions
+Can I pay the subscription annually?
+You'll receive your invoice at the end of your monthly billing period. Payment will be taken on the date shown on your invoice using the payment details entered when you purchased your subscription.If you’ve incurred usage charges for Xero Payroll, Xero Projects or Xero Expenses – or you have a chargeable direct bank feed – these charges will be invoiced for the previous month.
+You'll receive your invoice at the end of your monthly billing period. Payment will be taken on the date shown on your invoice using the payment details entered when you purchased your subscription.If you’ve incurred usage charges for Xero Payroll, Xero Projects or Xero Expenses – or you have a chargeable direct bank feed – these charges will be invoiced for the previous month.
+Will my data be safe and private?
+We're committed to the security of your data and provide multiple layers of protection for the personal and financial information you trust to Xero. Find out more about Xero’s commitments to data protection and data security.
+Read our privacy notice for more information
+We're committed to the security of your data and provide multiple layers of protection for the personal and financial information you trust to Xero. Find out more about Xero’s commitments to data protection and data security.
+Read our privacy notice for more information
+How can a Xero coach help me?
+Book a free call with a Xero Coach to help you connect your bank, set up invoices and bills, and turn the analytics dashboard into a live pulse check on your whole business.
+Book a free call with a Xero Coach to help you connect your bank, set up invoices and bills, and turn the analytics dashboard into a live pulse check on your whole business.
+Xero subscriptions auto-renew monthly until they are cancelled.
+Footer
+Accounting software
+How Xero accounting software works
+Find an accountant or bookkeeper
+Explore the Xero App Store
+Pricing
+Xero for
+Small business
+Accountants & bookkeepers
+App integrators
+App developers
+Channel partners
+Affiliates
+End of Fiscal Year
+Self-employed
+Nonprofit
+Startup
+Construction
+Resources
+Small business insights
+Small business guides
+Small business templates
+Invoice template
+Pay stub template
+Receipt template
+Calculators
+Accounting glossary
+Business resources
+Customer stories
+Popular features
+Invoicing
+Accept payments
+Inventory management
+Payroll
+Manage expenses
+JAX - Your AI finance partner
+See all features
+Compare
+Xero vs Quickbooks
+Xero vs Freshbooks
+Xero vs Sage
+Company
+About Xero
+Get support
+Innovation at Xero
+Sustainability at Xero
+Governance and leadership
+Blog
+Our brands
+Product updates
+Careers
+Contact us
+Investors
+Media
+© 2026 Xero Limited. All rights reserved. "Xero", "Beautiful business" and "Your business supercharged" are trademarks of Xero Limited.
+Legal
+Privacy notice
+Sitemap
+Accessibility
+Manage cookies
+Region
+United States (USD)

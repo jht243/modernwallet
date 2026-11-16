@@ -1,0 +1,105 @@
+{
+ "assumptions": "see module docstring; category activated unless stated; no sign-up bonus; $0 annual fee",
+ "scenarios_24000": {
+  "no_category_spend": {
+   "total_spend": 24000,
+   "category_spend_per_quarter": 0,
+   "activated": true,
+   "flex_usd": 240.0,
+   "unlimited_usd": 360.0,
+   "flex_minus_unlimited_usd": -120.0
+  },
+  "category_600_per_quarter": {
+   "total_spend": 24000,
+   "category_spend_per_quarter": 600,
+   "activated": true,
+   "flex_usd": 336.0,
+   "unlimited_usd": 360.0,
+   "flex_minus_unlimited_usd": -24.0
+  },
+  "category_750_per_quarter_breakeven": {
+   "total_spend": 24000,
+   "category_spend_per_quarter": 750,
+   "activated": true,
+   "flex_usd": 360.0,
+   "unlimited_usd": 360.0,
+   "flex_minus_unlimited_usd": 0.0
+  },
+  "category_1500_per_quarter": {
+   "total_spend": 24000,
+   "category_spend_per_quarter": 1500,
+   "activated": true,
+   "flex_usd": 480.0,
+   "unlimited_usd": 360.0,
+   "flex_minus_unlimited_usd": 120.0
+  },
+  "category_1500_per_quarter_NOT_activated": {
+   "total_spend": 24000,
+   "category_spend_per_quarter": 1500,
+   "activated": false,
+   "flex_usd": 240.0,
+   "unlimited_usd": 360.0,
+   "flex_minus_unlimited_usd": -120.0
+  }
+ },
+ "breakeven_by_total_spend": {
+  "12000": {
+   "category_spend_needed_annual_usd": 1500.0,
+   "category_spend_needed_per_quarter_usd": 375.0,
+   "within_1500_quarterly_cap": true,
+   "flex_minus_unlimited_at_full_1500_per_quarter_usd": 180.0
+  },
+  "24000": {
+   "category_spend_needed_annual_usd": 3000.0,
+   "category_spend_needed_per_quarter_usd": 750.0,
+   "within_1500_quarterly_cap": true,
+   "flex_minus_unlimited_at_full_1500_per_quarter_usd": 120.0
+  },
+  "36000": {
+   "category_spend_needed_annual_usd": 4500.0,
+   "category_spend_needed_per_quarter_usd": 1125.0,
+   "within_1500_quarterly_cap": true,
+   "flex_minus_unlimited_at_full_1500_per_quarter_usd": 60.0
+  },
+  "48000": {
+   "category_spend_needed_annual_usd": 6000.0,
+   "category_spend_needed_per_quarter_usd": 1500.0,
+   "within_1500_quarterly_cap": false,
+   "flex_minus_unlimited_at_full_1500_per_quarter_usd": 0.0
+  },
+  "60000": {
+   "category_spend_needed_annual_usd": 7500.0,
+   "category_spend_needed_per_quarter_usd": 1875.0,
+   "within_1500_quarterly_cap": false,
+   "flex_minus_unlimited_at_full_1500_per_quarter_usd": -60.0
+  }
+ },
+ "ceiling_checks": {
+  "S_47999_full_cap": 0.005,
+  "S_48000_full_cap": 0.0,
+  "S_60000_full_cap": -60.0,
+  "max_flex_advantage_usd_at_24000": 120.0
+ },
+ "breakeven_24000_by_quarterly_category_spend": {
+  "0": -120.0,
+  "250": -80.0,
+  "500": -40.0,
+  "750": 0.0,
+  "1000": 40.0,
+  "1250": 80.0,
+  "1500": 120.0
+ },
+ "dining_drugstore_heavy_24000_no_category": {
+  "dining_drugstore_usd": 9000,
+  "other_usd": 15000,
+  "flex_usd": 420.0,
+  "unlimited_usd": 495.0,
+  "flex_minus_unlimited_usd": -75.0
+ },
+ "full_cap_60000": {
+  "flex_usd": 840.0,
+  "unlimited_usd": 900.0
+ },
+ "counterexample_not_activated_24000": -120.0,
+ "rule": "Flex beats Unlimited iff 4*B > 0.125*S with B <= 1500, so only when S < 48000"
+}

@@ -1,0 +1,53 @@
+/runs/2026-11-16-comparison/research/sources/irs-early-distribution-tax.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/51abd810398bf156494d577fd3fe1ea1a47928898c396b8573fd522f1df96ada/irs-rmd.txt",
+      "sha256": "51abd810398bf156494d577fd3fe1ea1a47928898c396b8573fd522f1df96ada",
+      "checkedAt": "2026-11-16T08:42:50.835583+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/irs-rmd.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/a9a8cf2c4f854175ed1c68b1437905b6e9a18c2353b2665722386ae1bb155b9e/quickbooks-pricing.txt",
+      "sha256": "a9a8cf2c4f854175ed1c68b1437905b6e9a18c2353b2665722386ae1bb155b9e",
+      "checkedAt": "2026-11-16T08:42:50.835583+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/quickbooks-pricing.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/77a8cbfe0fa39eb8bd65bbfd6675cb29b3392a4b2b2f77961c27319237ca9dc8/sofi-banking.txt",
+      "sha256": "77a8cbfe0fa39eb8bd65bbfd6675cb29b3392a4b2b2f77961c27319237ca9dc8",
+      "checkedAt": "2026-11-16T08:42:50.835583+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/sofi-banking.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/96a92828ec6344b5568f61a09512b27c5254e9f29604443ff3527ff7dd5a1666/xero-pricing.txt",
+      "sha256": "96a92828ec6344b5568f61a09512b27c5254e9f29604443ff3527ff7dd5a1666",
+      "checkedAt": "2026-11-16T08:42:50.835583+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/xero-pricing.txt"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "snapshot": {
+    "path": "reports/mindmap-pass/runs/2026-11-16-comparison/blobs/4b45bb7d960baaa556ff67a19aeeaa673e730ae826003ef2d494bd6ea7015323/preview-snapshot.json",
+    "sha256": "4b45bb7d960baaa556ff67a19aeeaa673e730ae826003ef2d494bd6ea7015323",
+    "originPath": "reports/mindmap-pass/runs/2026-11-16-comparison/audit/batch-2/preview-snapshot.json"
+  },
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/runs/2026-11-16-comparison/handoff-audit-2.json",
+    "sha256": "0d410f071624882ac9af5fef859eb1e1a074bbbb05c25bf74269028bae2c86af"
+  }
+}
+

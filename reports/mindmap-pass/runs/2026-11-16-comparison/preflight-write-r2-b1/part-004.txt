@@ -1,0 +1,72 @@
+,
+      "status": "open",
+      "evidence": "Read the full render. Lede, table, takeaway, who-not-for, sections and FAQs consistently say neither is better, match-first if a match exists, no payout figure available, and agree on $24,500 and 10 percent tax. Three comma-antithesis single-instance bans remain (quotes in findings); everything else coherent."
+    },
+    {
+      "id": "R1-3-F1",
+      "status": "open",
+      "evidence": "FIX /compare/chase-freedom-flex-vs-unlimited FAQ \"Can I have both Chase Freedom Flex and Freedom Unlimited?\": \"This comparison makes no claim about holding both cards together. It models the cash back you would earn by putting the same purchases on one card or the other. For current card eligibility and offer terms, read the Freedom Flex card page and Freedom Unlimited card page.\" -> \"Chase's card pages do not say whether you can hold both cards. The model applies the same purchases to one card or the other. Check eligibility and offer terms on the [Freedom Flex card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) and [Freedom Unlimited card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited) before you apply.\" (dead-end and meta-narration)."
+    },
+    {
+      "id": "R1-3-F2",
+      "status": "open",
+      "evidence": "FIX /compare/chase-freedom-flex-vs-unlimited table and FAQ: replace reader-facing \"captured\" wording: \"as captured November 16, 2026\" -> \"as of November 16, 2026\"; \"No rotating 5% category is listed in the captured card terms.\" -> \"No rotating 5% category is listed on the Freedom Unlimited card page.\"; \"The captured Freedom Unlimited card-page text does not state a foreign transaction fee.\" -> \"The Freedom Unlimited card page does not state a foreign transaction fee. Check Chase pricing and terms for the current fee.\""
+    },
+    {
+      "id": "R1-3-F3",
+      "status": "open",
+      "evidence": "INHERITED CONTRADICTION EVALUATED (/roundup/best-cash-back-credit-cards, batch 2): roundup says Freedom Unlimited \"charges a foreign transaction fee\"; the Unlimited capture shows No Foreign Transaction Fee only as three browse-menu filter labels (chase-freedom-unlimited.txt l.33, 293, 316; WebFetch of the live page confirms \"a category label, not a statement about this card\"), so the capture neither confirms nor refutes the roundup. It is not a contradiction with this page, which asserts nothing about the Unlimited fee. Not a blocker for this route; the roundup claim is unsourced in this run and belongs to the batch-2 audit as advisory."
+    },
+    {
+      "id": "R1-3-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full render. Lede, takeaway, 12.5% rule, break-even and 24,000 tables and FAQs agree. Fail items: FAQ \"Can I have both Chase Freedom Flex and Freedom Unlimited?\" raises a question and answers \"This comparison makes no claim\", a dead end; reader-facing \"captured\" process wording appears repeatedly (table, FAQ, APR cells)."
+    },
+    {
+      "id": "R1-4-F1",
+      "status": "open",
+      "evidence": "NOTE: the sentence calls FreshBooks and QuickBooks \"the two best-known options\", an unsourced popularity claim; harmless, optional rewording to \"the two products compared there\"."
+    },
+    {
+      "id": "R1-4-F2",
+      "status": "open",
+      "evidence": "NOTE: date policy conflict (link-only edit keeps 2026-11-13) versus the phase-4 updated-page date-bump rule; followed the newer owner efficiency rule, not a defect."
+    },
+    {
+      "id": "R1-5-F1",
+      "status": "open",
+      "evidence": "ADVISORY inherited (not blocking, unrelated to link edit): 20 em dashes and \"genuinely free\" in the body; meta description uses an em dash; QuickBooks Solopreneur, Wave, Zoho and Bonsai figures were not re-verified in this run."
+    },
+    {
+      "id": "R1-5-F2",
+      "status": "open",
+      "evidence": "NOTE: the page has an inherited \"Updated September 5, 2026\" date by design (link-only edit not bumped)."
+    },
+    {
+      "id": "R1-6-F1",
+      "status": "open",
+      "evidence": "ADVISORY inherited: 17 em dashes in body; unrelated historical style, not blocking."
+    },
+    {
+      "id": "R1-7-F1",
+      "status": "open",
+      "evidence": "ADVISORY inherited: the only contribution limit shown is for 2025 ($23,500, $31,000 50+, $34,750 ages 60-63) on a page showing Updated June 25, 2026, and the Sources list says \"IRS 401(k) contribution limits (2025)\". It is year-labelled so not false, and the added link sentence does not depend on it, but a reader in November 2026 would find the 2026 $24,500 only on the linked page. Candidate for a later refresh, not blocking."
+    },
+    {
+      "id": "R1-7-F2",
+      "status": "open",
+      "evidence": "NOTE: link-only edit keeps June 25, 2026 date per owner efficiency rule."
+    },
+    {
+      "id": "R1-8-F1",
+      "status": "open",
+      "evidence": "NOTE: link-only edit keeps August 30, 2026 date per owner efficiency rule."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/runs/2026-11-16-comparison/handoff-write-r2-b1.json",
+    "sha256": "37f3b99f22f3a90f7fd6d950a380465c50a6378c36a2e0ba2ab356fb7952bcb4"
+  }
+}
+

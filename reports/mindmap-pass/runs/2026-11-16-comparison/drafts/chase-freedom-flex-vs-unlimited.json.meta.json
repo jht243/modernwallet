@@ -1,0 +1,104 @@
+{
+ "slug": "chase-freedom-flex-vs-unlimited",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gpt-6-sol",
+ "provider": "openai",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_OPENAI_KEY",
+ "finish_reason": "STOP",
+ "words": 2610,
+ "floor": 1500,
+ "input_tokens": 35458,
+ "output_tokens": 5546,
+ "thinking_tokens": 1182,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.1382,
+ "guards": {
+  "repairs": [
+   "added relatedLinks: [] (undefined crashes next build)"
+  ],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'optionAName' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'optionBName' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 2610,
+  "numbers_not_in_facts": [
+   "840",
+   "900"
+  ],
+  "fact_budget": {
+   "fact_words": 1264,
+   "floor": 1500,
+   "ratio": 0.84,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    4,
+    0
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At ModernWallet, we modeled annual cash back using the rates published on the [Freedom Flex card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) and [Freedom Unlimited card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited).",
+     "replacement": "In our internal cost modeling, we compared annual cash back using the rates published on the [Freedom Flex card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) and [Freedom Unlimited card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited).",
+     "type": "unsupported",
+     "why": "The site is named The Modern Wallet, not ModernWallet."
+    },
+    {
+     "id": "verdict",
+     "quote": "Choose Chase Freedom Unlimited if you expect most comparable spending to earn the base rate or you do not want to activate rotating categories.",
+     "replacement": "Choose Chase Freedom Unlimited if activated 5% category spending does not exceed 12.5% of comparable annual spending, or if you do not want to activate rotating categories.",
+     "type": "inference",
+     "why": "A majority at the base rate does not establish that Flex loses."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "The frequently useful $750 figure belongs only to the $24,000 example.",
+     "replacement": "The $750 figure belongs only to the $24,000 example.",
+     "type": "unsupported",
+     "why": "SOURCE limits $750 to the $24,000 example but does not call it frequently useful."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Chase Freedom Unlimited earns more on the modeled spending patterns unless activated Freedom Flex 5% purchases exceed 12.5% of comparable annual spending within the $1,500 quarterly cap.",
+     "replacement": "Chase Freedom Unlimited earns at least as much in the model unless activated Freedom Flex 5% purchases exceed 12.5% of comparable annual spending within the $1,500 quarterly cap.",
+     "type": "contradicted",
+     "why": "At exactly 12.5%, the cards tie; Unlimited does not earn more."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2605
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 72.9,
+ "response_id": "resp_04ce1bb4d3dd26e3006afac011059087d2b806c74ce90e31ea",
+ "generated_at": "2026-11-16T08:35:37+0000"
+}

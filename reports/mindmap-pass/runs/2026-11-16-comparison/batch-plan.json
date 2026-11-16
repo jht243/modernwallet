@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "jobId": "2026-11-16-comparison",
+  "subBatchingRecommended": true,
+  "batchCount": 2,
+  "totalNewPages": 3,
+  "totalRoutes": 12,
+  "disjointPartition": true,
+  "batches": [
+    {
+      "batchIndex": 1,
+      "label": "batch-1",
+      "actionIds": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "newPageRoutes": [
+        "/compare/quickbooks-vs-freshbooks",
+        "/compare/annuity-vs-401k",
+        "/compare/chase-freedom-flex-vs-unlimited"
+      ],
+      "existingRoutes": [
+        "/alternatives/quickbooks",
+        "/roundup/best-accounting-software-for-freelancers",
+        "/roundup/best-invoicing-apps-for-freelancers",
+        "/compare/pension-vs-401k",
+        "/compare/iul-vs-401k"
+      ],
+      "routes": [
+        "/compare/quickbooks-vs-freshbooks",
+        "/compare/annuity-vs-401k",
+        "/compare/chase-freedom-flex-vs-unlimited",
+        "/alternatives/quickbooks",
+        "/roundup/best-accounting-software-for-freelancers",
+        "/roundup/best-invoicing-apps-for-freelancers",
+        "/compare/pension-vs-401k",
+        "/compare/iul-vs-401k"
+      ],
+      "routeFlags": "--route /compare/quickbooks-vs-freshbooks --route /compare/annuity-vs-401k --route /compare/chase-freedom-flex-vs-unlimited --route /alternatives/quickbooks --route /roundup/best-accounting-software-for-freelancers --route /roundup/best-invoicing-apps-for-freelancers --route /compare/pension-vs-401k --route /compare/iul-vs-401k"
+    },
+    {
+      "batchIndex": 2,
+      "label": "batch-2",
+      "actionIds": [],
+      "newPageRoutes": [],
+      "existingRoutes": [
+        "/compare/pension-vs-annuity",
+        "/roundup/best-cash-back-credit-cards",
+        "/guides/chase-travel-portal-guide",
+        "/guides/chase-travel-portal-worth-it"
+      ],
+      "routes": [
+        "/compare/pension-vs-annuity",
+        "/roundup/best-cash-back-credit-cards",
+        "/guides/chase-travel-portal-guide",
+        "/guides/chase-travel-portal-worth-it"
+      ],
+      "routeFlags": "--route /compare/pension-vs-annuity --route /roundup/best-cash-back-credit-cards --route /guides/chase-travel-portal-guide --route /guides/chase-travel-portal-worth-it"
+    }
+  ]
+}

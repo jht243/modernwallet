@@ -1,0 +1,127 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-write",
+  "route": "/compare/chase-freedom-flex-vs-unlimited",
+  "readerQuestion": "Which earns more cash back, Chase Freedom Flex or Freedom Unlimited? [PAA 5/6 on-topic (which is better, both cards, perks); 1/6 off-topic: hardest Chase card; ac 4/14 \"what's better\"/\"is ... better\" completions]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/approval-manifest.json",
+      "sha256": "e0ffc7e439ee1f9b8516f8272096743ec98675e2d0931cc12efcb9f32c2ec7f4"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/chart-review.json",
+      "sha256": "edd5b6412602730c02214de23d8d69f06ee3782c19e0846e7744e6cf4a2dfb93"
+    },
+    "actionId": "A3"
+  },
+  "presentation": {
+    "medium": "text + comparison table",
+    "placement": "Existing comparison template: opening answer, then side-by-side table, then modeled/sourced analysis",
+    "reason": "The reader's decision turns on finite, sourced thresholds; a scannable table plus a worked break-even answers it without a widget",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "The decision has a small number of discrete cases (plan tiers or scenario rows); a static grid shows every case and the break-even, whereas a calculator would only restate the same finite table"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "No sequence or changing assumption needs motion; static table is faster to scan"
+    }
+  },
+  "basis": "calculated",
+  "decisionGap": "Readers need the share of annual spend that must land in Freedom Flex's activated 5% rotating category before it beats Freedom Unlimited's flat 1.5%, and the total spend above which it cannot.",
+  "finding": "Freedom Flex earns more cash back than Freedom Unlimited only when annual spend in the activated 5% rotating category (up to $1,500 a quarter) is more than 12.5% of total annual spend. At $24,000 of total spend that is $750 a quarter. At $48,000 or more of total annual spend Flex cannot beat Unlimited even with the full $1,500 in the category every quarter. Both cards pay 5% on Chase Travel and 3% on dining and drugstores.",
+  "conditions": "Best-case-for-Flex assumptions: category activated every quarter, category spend matches the quarter's category exactly, no sign-up bonus counted, $0 annual fees, travel/dining/drugstore spend assumed zero because both cards pay the same. Rates as published on creditcards.chase.com 2026-11-16.",
+  "whatWouldChange": "Chase changing the Flex 5% cap or rate, the Unlimited 1.5% base rate, the 1% Flex base rate, or the quarterly categories; spend that overlaps the 3% dining or drugstore rate; or a reader who values features other than cash back.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/runs/2026-11-16-comparison/evidence/chase-freedom-flex-vs-unlimited/cases.json",
+    "sha256": "1bfe045386c912b9ba3d5edeca64d8fe528ce2079efff1e3d47f7429e9aaf21b"
+  },
+  "caseDecisions": "cases.json returned candidates, none about credit cards or Chase. None used; no client-conversation claim is made.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/brief.md",
+      "sha256": "40ad467d7a5d5e0635a93f783dc85563d18370711ba5416cb7716316dabd8af7"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/coverage-lookup.txt",
+      "sha256": "f2a59427ff12ce1b7250c9468f60096b08f4f2a8102459de6464c23148ae4b57"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/keyword-volumes.json",
+      "sha256": "c22e6fd475a66768608ab95050db5022698c857d1fb4f525b5a51b25f76f4de8"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/serp.json",
+      "sha256": "db14f9e5ff96ddf172e40457aeffabc271d75228d3b647fe5e2793cca04fd28d"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/chase-freedom-flex.txt",
+      "sha256": "cc6760d70cd12f1be373afb6beadda1a739fafc624b0c67f6937d74166c764a3"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/chase-freedom-unlimited.txt",
+      "sha256": "310fc09d13d3d4f14d05318d8f63f7a4e3074f7d32b3e7a76000db91ccc6a854"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/ac-chase-freedom-flex-vs.csv",
+      "sha256": "3c2e7a4b52e00869c71152e8a0dad8ed05ccd91e10479be781de506c60cb6a49"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/calc/flex_vs_unlimited_v2.py",
+      "sha256": "d702492a38c729c55fc0004b78fd400115ac801fa53074725ec16e3f9fe24293"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/calc/flex_vs_unlimited_v2.out.json",
+      "sha256": "0b9e3fff499a2431868c81000eb5c6420cadda5a27665c60343fa58de0e0424d"
+    }
+  ],
+  "method": "Python model (model.py v2): Flex minus Unlimited = 0.16B - 0.005S, where B is quarterly category spend (<= $1,500) and S is total annual spend; Flex wins iff 4B > 12.5% of S, so only when S < $48,000. Scenarios at $24,000 and a break-even table by quarterly category spend. Attribution on page: internal cost modeling, with Chase published rates as sourced inputs.",
+  "units": "USD per year of cash back; spend in USD",
+  "limitations": "Assumes category spend matches the rotating category exactly (best case for Flex). Sign-up bonus, intro APR, balance-transfer fees and annual-fee differences excluded. Bonus category assumed not to overlap dining/drugstore/travel. No claim about holding both cards.",
+  "counterexample": "A Flex holder who does not activate the quarterly category earns $120 a year less than Unlimited on $24,000 of spend; at $48,000 of total spend Flex ties Unlimited even with the full cap, and at $60,000 it trails by $60.",
+  "execution": {
+    "command": [
+      "python3",
+      "reports/mindmap-pass/runs/2026-11-16-comparison/evidence/chase-freedom-flex-vs-unlimited/model.py",
+      "reports/mindmap-pass/runs/2026-11-16-comparison/evidence/chase-freedom-flex-vs-unlimited/output.json"
+    ],
+    "code": {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/evidence/chase-freedom-flex-vs-unlimited/model.py",
+      "sha256": "d702492a38c729c55fc0004b78fd400115ac801fa53074725ec16e3f9fe24293"
+    },
+    "inputs": [
+      {
+        "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/chase-freedom-flex.txt",
+        "sha256": "cc6760d70cd12f1be373afb6beadda1a739fafc624b0c67f6937d74166c764a3"
+      },
+      {
+        "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/chase-freedom-unlimited.txt",
+        "sha256": "310fc09d13d3d4f14d05318d8f63f7a4e3074f7d32b3e7a76000db91ccc6a854"
+      }
+    ],
+    "output": {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/evidence/chase-freedom-flex-vs-unlimited/output.json",
+      "sha256": "0b9e3fff499a2431868c81000eb5c6420cadda5a27665c60343fa58de0e0424d"
+    }
+  },
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [
+      "evidence/chase-freedom-flex-vs-unlimited/model.py",
+      "evidence/chase-freedom-flex-vs-unlimited/output.json"
+    ],
+    "scopeAndLimits": "Annual cash-back model from published earn rates; best case for Flex; bonus, APR and fees excluded.",
+    "publicMethod": "On-page formula, 12.5% rule and break-even tables in 'Annual Cash Back by Spending Pattern'.",
+    "placement": "introText second paragraph, the modeling section and the verdict"
+  },
+  "takeaway": {
+    "conclusion": "Choose Freedom Unlimited if spend is spread across ordinary purchases, total annual spend is $48,000 or more, or you will not track quarterly categories; choose Freedom Flex only if activated 5% category spend is more than 12.5% of total annual spend and within $1,500 a quarter.",
+    "appliesTo": "Readers choosing between the two Chase cards on cash back",
+    "recordIds": [
+      "output.json"
+    ],
+    "basis": "calculated",
+    "changeCondition": "Chase changing the Flex 5% cap or rate, the Unlimited 1.5% base rate, the 1% Flex base rate, or the quarterly categories; spend that overlaps the 3% dining or drugstore rate; or a reader who values features other than cash back."
+  }
+}

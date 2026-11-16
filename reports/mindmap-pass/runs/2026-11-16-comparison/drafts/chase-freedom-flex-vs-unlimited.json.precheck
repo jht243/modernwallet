@@ -1,0 +1,125 @@
+{
+  "slug": "chase-freedom-flex-vs-unlimited",
+  "title": "Chase Freedom Flex vs Unlimited Cash Back Break-Even",
+  "metaDescription": "Compare Chase Freedom Flex vs Unlimited cash back with a 12.5% break-even rule, worked spending examples, quarterly caps, fees, and introductory rates.",
+  "targetKeyword": "chase freedom flex vs unlimited",
+  "optionA": "Chase Freedom Flex",
+  "optionB": "Chase Freedom Unlimited",
+  "h1": "Chase Freedom Flex vs Unlimited on Cash Back",
+  "introText": "[Chase Freedom Flex](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) earns more cash back than Chase Freedom Unlimited only when activated 5% category spending exceeds 12.5% of comparable annual spending. Comparable spending excludes Chase Travel, dining and drugstores, where both cards earn the same rates. Once that spending reaches $48,000 a year, Freedom Flex cannot earn more, even if you use its full quarterly 5% cap.\n\nAt ModernWallet, we modeled annual cash back using the rates published on the [Freedom Flex card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) and [Freedom Unlimited card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited). Our model assumes you activate each quarterly category and your purchases match it. At $24,000 of comparable annual spending, $750 in the 5% category each quarter produces a tie, so Freedom Flex needs more than $750 a quarter to win.",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Annual fee",
+        "a": "$0.",
+        "b": "$0."
+      },
+      {
+        "dimension": "Ordinary purchases",
+        "a": "1% cash back outside its higher-rate categories.",
+        "b": "1.5% cash back outside its higher-rate categories."
+      },
+      {
+        "dimension": "Rotating categories",
+        "a": "5% on up to $1,500 in combined purchases each quarter in categories you activate.",
+        "b": "No rotating 5% category is listed in the captured card terms."
+      },
+      {
+        "dimension": "Travel through Chase Travel",
+        "a": "5% cash back.",
+        "b": "5% cash back."
+      },
+      {
+        "dimension": "Dining and drugstores",
+        "a": "3% at restaurants, including takeout and eligible delivery, and 3% at drugstores.",
+        "b": "3% at restaurants, including takeout and eligible delivery, and 3% at drugstores."
+      },
+      {
+        "dimension": "New cardmember bonus",
+        "a": "$200 after $500 in purchases in the first 3 months from account opening.",
+        "b": "$200 after $500 in purchases in the first 3 months from account opening."
+      },
+      {
+        "dimension": "Introductory annual percentage rate (APR)",
+        "a": "0% for 15 months from account opening on purchases and balance transfers. A balance transfer fee applies.",
+        "b": "0% for 15 months from account opening on purchases and balance transfers. A balance transfer fee applies."
+      },
+      {
+        "dimension": "APR after the introductory period",
+        "a": "18.49% to 27.99% variable, as captured November 16, 2026.",
+        "b": "18.49% to 27.99% variable, as captured November 16, 2026."
+      },
+      {
+        "dimension": "Foreign transaction fee",
+        "a": "The Freedom Flex card page states no foreign transaction fee.",
+        "b": "The captured Freedom Unlimited card-page text does not state a foreign transaction fee."
+      }
+    ]
+  },
+  "verdictHeading": "Our Takeaway on Chase Freedom Flex vs Unlimited",
+  "verdict": "Choose Chase Freedom Unlimited if you expect most comparable spending to earn the base rate or you do not want to activate rotating categories. Choose Chase Freedom Flex for cash back only if you expect eligible, activated category spending to exceed 12.5% of comparable annual spending within the $1,500 quarterly cap. At $24,000 of comparable spending, $750 per quarter is a tie, and spending above $750 per quarter is needed for Freedom Flex to win. At $48,000 or more, Freedom Flex cannot win under these rates and caps.\n\nThis cash-back recommendation is not for a reader choosing chiefly on introductory borrowing terms or features outside the modeled rewards. Both cards list a 15-month 0% introductory APR, but our cash-back calculation excludes that offer and balance transfer fees. A change to either base rate, the Freedom Flex 5% rate or cap, or the quarterly categories could change the result. Add up the purchases you expect to make outside Chase Travel, dining and drugstores, then compare your eligible quarterly spending with the [current Freedom Flex categories and terms](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex).",
+  "tableHeading": "Earn Rates and Fees Side by Side",
+  "sections": [
+    {
+      "heading": "Annual Cash Back by Spending Pattern",
+      "content": "Chase Freedom Flex vs Unlimited breaks even when activated 5% category purchases equal 12.5% of comparable annual spending. For this calculation, **comparable annual spending** means purchases outside Chase Travel, dining and drugstores. Both cards list the same 5% travel and 3% dining and drugstore rates, so those purchases contribute the same cash back on either card. If you have $24,000 in comparable purchases plus dining purchases, use $24,000 as the spending figure in the break-even rule.\n\nOur internal cost modeling assumes that you activate the Freedom Flex category every quarter and that purchases you count in it match that quarter's category. That is the best case for Freedom Flex. We leave out the new cardmember bonus, introductory APR and balance transfer fees. We also assume the modeled 5% purchases do not overlap with the shared travel, dining or drugstore categories. The calculation compares cash back from the published earn rates, with both annual fees at $0.\n\n### How the 12.5% Rule Works\n\nLet **S** be comparable annual spending and **B** be eligible 5% category spending in each quarter, capped at $1,500 per quarter. Under the model's equal-quarter assumption, annual Freedom Flex cash back minus Freedom Unlimited cash back is **0.16 × B − 0.005 × S**. Freedom Flex wins only when that result is greater than zero. Set the result to zero and the tie occurs when four quarters of eligible spending, or **4 × B**, equal 12.5% of S.\n\nThe formula accounts for both rates on category purchases. Freedom Flex earns 5% on eligible, activated purchases, while Freedom Unlimited earns 1.5% on those same purchases. On the remaining comparable purchases, Freedom Flex earns 1% and Freedom Unlimited earns 1.5%. More spending in a qualifying quarterly category helps Freedom Flex, but more spending at the ordinary rate helps Freedom Unlimited.\n\nThe $1,500 quarterly cap limits how far Freedom Flex can pull ahead. Four quarters at the cap put $6,000 a year into the modeled 5% category. That reaches 12.5% of comparable spending at $48,000, producing a tie. Above $48,000, the full $6,000 is less than 12.5% of S, so Freedom Flex cannot win under these assumptions. The $48,000 boundary applies to comparable spending as defined above, rather than to a total that includes Chase Travel, dining or drugstores.\n\n### Break-Even Spending at Different Annual Totals\n\nThe category amount in this table is the amount needed for a tie. Freedom Flex needs **more** than the listed amount to earn more cash back. Each quarterly figure assumes the same eligible spend in all four quarters.\n\n| Comparable annual spending | Eligible category spend for a tie, per year | Eligible category spend for a tie, per quarter | Result at the full $1,500 quarterly cap |\n|---|---|---|---|\n| $12,000 | $1,500 | $375 | Freedom Flex earns $180 more. |\n| $24,000 | $3,000 | $750 | Freedom Flex earns $120 more. |\n| $36,000 | $4,500 | $1,125 | Freedom Flex earns $60 more. |\n| $48,000 | $6,000 | $1,500 | The cards tie. |\n| $60,000 | $7,500 | $1,875, above the cap | Freedom Flex earns $60 less. |\n\nAt $12,000 of comparable annual spending, the threshold is $375 per quarter. At $36,000, it rises to $1,125 per quarter. The frequently useful $750 figure belongs only to the $24,000 example. Apply the 12.5% rule to your own comparable spending before using any quarterly dollar figure as a target.\n\nFor $60,000 of comparable spending, a tie would require $1,875 in eligible spending each quarter. Freedom Flex pays its rotating 5% rate on no more than $1,500 per quarter under the published cap. Even with the full cap activated in every quarter, the model gives Freedom Flex $840 and Freedom Unlimited $900 for the year. Raising category purchases beyond the cap does not make the required $1,875 eligible for the modeled 5% rate.\n\n### What $24,000 of Spending Produces\n\nThe next examples hold comparable annual spending at $24,000 and change only eligible quarterly category spending or activation. They exclude the shared travel, dining and drugstore categories and the new cardmember bonus. The difference column is Freedom Flex cash back minus Freedom Unlimited cash back.\n\n| Freedom Flex category spending | Freedom Flex annual cash back | Freedom Unlimited annual cash back | Difference |\n|---|---|---|---|\n| $0 per quarter | $240 | $360 | −$120 |\n| $600 per quarter, activated | $336 | $360 | −$24 |\n| $750 per quarter, activated | $360 | $360 | $0 |\n| $1,500 per quarter, activated | $480 | $360 | +$120 |\n| $1,500 per quarter, not activated | $240 | $360 | −$120 |\n\nAt $600 in the activated category each quarter, Freedom Flex does better than it would with no category spending but trails Freedom Unlimited by $24 a year. At $750 per quarter, both earn $360. The full $1,500 per quarter produces a $120 Freedom Flex advantage on this $24,000 spending pattern. Those results show why the category rate alone cannot tell you which card earns more.\n\nActivation changes the same spending pattern. In the model, $1,500 per quarter in purchases that would otherwise match the rotating category earns Freedom Flex $240 for the year if you do not activate it. Freedom Unlimited earns $360 on the same $24,000 of comparable purchases. If you cannot count on activating each quarter, use the unactivated row rather than the full-cap row to judge the cash-back difference.\n\nThe quarterly cap also makes timing relevant to the model. Its 5% allowance is $1,500 **each quarter**, so four quarters of eligible purchases are needed to reach the modeled $6,000 annual maximum. The tables assume the stated amount lands in an activated category in every quarter. They do not treat purchases that miss a quarter's category as eligible 5% spending. Compare your expected purchases with the [Freedom Flex card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) rather than assuming an ordinary purchase will qualify."
+    },
+    {
+      "heading": "Who Should Pick Flex or Unlimited",
+      "content": "Chase Freedom Unlimited fits a cash-back choice when ordinary purchases make up too much of your comparable spending for Freedom Flex to clear the 12.5% threshold. Its 1.5% rate on other purchases beats Freedom Flex's 1% rate on those purchases. If you expect $24,000 of comparable annual spending and only $600 per quarter in an activated category, the model puts Freedom Unlimited ahead by $24 a year. If no purchases qualify for an activated category, Freedom Unlimited leads by $120 on that same $24,000.\n\nFreedom Unlimited also fits if you do not plan to activate Freedom Flex categories each quarter. The $24,000 example with $1,500 of potentially matching purchases per quarter shows the cost of leaving the category unactivated: Freedom Flex earns $120 less than Freedom Unlimited in the model. Compare the unactivated result with your plans if quarterly activation is uncertain. Do not use the 5% scenario simply because you might spend $1,500 during a quarter.\n\nChase Freedom Flex fits a cash-back choice when you expect more than 12.5% of comparable annual purchases to fall into categories you activate, subject to the $1,500 cap in each quarter. With $24,000 of comparable annual spending, $1,500 in the activated category every quarter gives Freedom Flex $480 against Freedom Unlimited's $360. With $36,000 of comparable spending and the same full-cap category purchases, Freedom Flex's modeled lead falls to $60. At $48,000, the full-cap purchases produce a tie, so the larger total removes the Freedom Flex advantage.\n\nThese figures are annual comparisons of the stated cash-back rates. They do not include the $200 new cardmember bonus either card lists after $500 in purchases during the first 3 months from account opening. The [Freedom Flex offer details](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) also state a condition involving whether you have that card or received its new cardmember bonus in the past 24 months. If the introductory offer affects your choice, read the [Freedom Unlimited offer details](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited) alongside the Freedom Flex offer rather than adding a bonus to the annual spending tables.\n\nBoth cards list a $0 annual fee and the same 15-month 0% introductory APR on purchases and balance transfers. Both captured pages then list an 18.49% to 27.99% variable APR and say a balance transfer fee applies. Those terms do not create an advantage for either card in our cash-back model. If the introductory rate or a balance transfer is central to your choice, review each card's linked pricing and terms before using a rewards-only result. APR means annual percentage rate.\n\nThe shared bonus categories also deserve a separate look. Both cards list 5% on travel bought through Chase Travel and 3% on dining and drugstores. A spending plan concentrated in those categories can make the difference from ordinary purchases smaller in dollar terms, even though the 12.5% break-even rule for **comparable** spending is unchanged. For example, our modeled $24,000 pattern with $9,000 in dining and drugstore purchases, $15,000 in ordinary purchases and no rotating-category spend gives Freedom Flex $420 and Freedom Unlimited $495. Their $75 difference comes from the ordinary purchases, where their rates differ. For more on purchases through Chase Travel, read the [Chase Travel portal guide](/guides/chase-travel-portal-guide/).\n\nOur answer would change if Chase changed the Freedom Flex 5% rate or quarterly cap, either card's base earn rate, or which purchases match an activated quarterly category. Purchases that overlap a Freedom Flex rotating category and the shared 3% dining or drugstore categories also fall outside the model. If you are choosing on terms other than annual cash back, use those terms to make a separate comparison. If neither card's listed rewards match what you want to compare, see our [best cash back credit cards](/roundup/best-cash-back-credit-cards/) list for other cards.\n\nFor a Chase Freedom Flex vs Unlimited cash-back decision, total a year of purchases outside Chase Travel, dining and drugstores, work out which could match an activated category each quarter, and review the [current Freedom Flex categories and terms](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex)."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Which is better, Chase Freedom Flex or Freedom Unlimited?",
+      "answer": "Chase Freedom Unlimited earns more on the modeled spending patterns unless activated Freedom Flex 5% purchases exceed 12.5% of comparable annual spending within the $1,500 quarterly cap. Comparable spending excludes Chase Travel, dining and drugstores, where the cards list the same rates. At $24,000 of comparable annual spending, $750 in an activated category each quarter produces a tie, and more than $750 per quarter gives Freedom Flex the lead."
+    },
+    {
+      "question": "Do Freedom Flex and Freedom Unlimited both have no annual fee?",
+      "answer": "Yes. Both cards list a $0 annual fee on their [Freedom Flex](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) and [Freedom Unlimited](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited) pages. Our annual cash-back model therefore makes no annual-fee deduction for either card."
+    },
+    {
+      "question": "Can I have both Chase Freedom Flex and Freedom Unlimited?",
+      "answer": "This comparison makes no claim about holding both cards together. It models the cash back you would earn by putting the same purchases on one card or the other. For current card eligibility and offer terms, read the [Freedom Flex card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) and [Freedom Unlimited card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited)."
+    },
+    {
+      "question": "Do both cards earn 5% on Chase Travel?",
+      "answer": "Yes. Both cards list 5% cash back on travel purchased through Chase Travel. Because that rate is the same, our break-even calculation leaves Chase Travel purchases out of comparable annual spending."
+    },
+    {
+      "question": "What is the intro APR on Freedom Flex and Freedom Unlimited?",
+      "answer": "Both cards list a 0% introductory annual percentage rate (APR) for 15 months from account opening on purchases and balance transfers. A balance transfer fee applies. The captured pages list a variable APR of 18.49% to 27.99% after the introductory period. Review the [Freedom Flex pricing and terms](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) and [Freedom Unlimited pricing and terms](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited) for current rates."
+    },
+    {
+      "question": "Do I have to activate the Freedom Flex 5% categories?",
+      "answer": "Yes. Freedom Flex's listed 5% rotating-category rate applies to up to $1,500 in combined purchases each quarter you activate. In our $24,000 comparable-spending example, failing to activate the category leaves Freedom Flex earning $240 against Freedom Unlimited's $360, even when $1,500 of purchases per quarter would otherwise match the category."
+    },
+    {
+      "question": "Does Freedom Flex have a foreign transaction fee?",
+      "answer": "The [Freedom Flex card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) states no foreign transaction fee. The captured Freedom Unlimited card-page text does not state a foreign transaction fee, so this comparison does not assign one to Freedom Unlimited."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Chase, Freedom Flex card page",
+      "url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex"
+    },
+    {
+      "label": "Chase, Freedom Unlimited card page",
+      "url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited"
+    }
+  ],
+  "relatedComparisons": [
+    "bilt-rewards-vs-chase-ultimate-rewards"
+  ],
+  "calculatorLinks": [],
+  "metaTitle": "",
+  "subtitle": "",
+  "optionAName": "",
+  "optionBName": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": [],
+  "relatedLinks": []
+}

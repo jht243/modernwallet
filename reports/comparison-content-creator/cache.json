@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastRun": "2026-10-26",
+  "lastRun": "2026-11-16",
   "dropped": [
     {
       "slug": "equipment-financing-vs-sba-loan",
@@ -659,6 +659,70 @@
       "slug": "standard-deduction-vs-itemized-deduction",
       "reason": "duplicate of live /compare/standard-vs-itemized-deduction/ (same keyword, updated 2026-10-12), 2026-11-02",
       "score": 0
+    },
+    {
+      "slug": "chime-vs-sofi",
+      "optionA": "Chime",
+      "optionB": "SoFi",
+      "format": "comparison",
+      "reason": "DEFERRED: chime.com 403 anti-bot, no primary Chime facts; vol 590 (2026-11-16)",
+      "score": 0
+    },
+    {
+      "slug": "acorns-vs-robinhood",
+      "optionA": "Acorns",
+      "optionB": "Robinhood",
+      "format": "comparison",
+      "reason": "DEFERRED: vol 480 below threshold, no primary captures (2026-11-16)",
+      "score": 0
+    },
+    {
+      "slug": "webull-vs-fidelity",
+      "optionA": "Webull",
+      "optionB": "Fidelity",
+      "format": "comparison",
+      "reason": "DEFERRED: vol 480 below threshold, no primary captures (2026-11-16)",
+      "score": 0
+    },
+    {
+      "slug": "wealthfront-vs-vanguard",
+      "optionA": "Wealthfront",
+      "optionB": "Vanguard",
+      "format": "comparison",
+      "reason": "DEFERRED: low volume 210 (2026-11-16)",
+      "score": 0
+    },
+    {
+      "slug": "series-i-bonds-vs-hysa",
+      "optionA": "Series I Bonds",
+      "optionB": "High-Yield Savings Account",
+      "format": "comparison",
+      "reason": "DROPPED: negligible demand (20/mo) (2026-11-16)",
+      "score": 0
+    },
+    {
+      "slug": "capital-one-360-vs-ally",
+      "optionA": "Capital One 360",
+      "optionB": "Ally Bank",
+      "format": "comparison",
+      "reason": "DROPPED: negligible demand (20/mo) (2026-11-16)",
+      "score": 0
+    },
+    {
+      "slug": "xero-vs-quickbooks",
+      "optionA": "Xero",
+      "optionB": "QuickBooks",
+      "format": "comparison",
+      "reason": "DEFERRED: contested SERP (KD 50); carry-forward priority (2026-11-16)",
+      "score": 0
+    },
+    {
+      "slug": "debt-consolidation-vs-balance-transfer",
+      "optionA": "Debt consolidation loan",
+      "optionB": "Balance transfer card",
+      "format": "comparison",
+      "reason": "DEFERRED: PARTIAL, existing guide section; enrichment lane (2026-11-16)",
+      "score": 0
     }
   ],
   "published": [
@@ -1258,6 +1322,21 @@
       "slug": "hsa-vs-hra",
       "format": "comparison",
       "date": "2026-10-26"
+    },
+    {
+      "slug": "quickbooks-vs-freshbooks",
+      "format": "comparison",
+      "date": "2026-11-16"
+    },
+    {
+      "slug": "annuity-vs-401k",
+      "format": "comparison",
+      "date": "2026-11-16"
+    },
+    {
+      "slug": "chase-freedom-flex-vs-unlimited",
+      "format": "comparison",
+      "date": "2026-11-16"
     }
   ]
 }

@@ -286,7 +286,7 @@ export const SELF_EMPLOYED_ROUNDUPS: RoundupEntry[] = [
         name: "FreshBooks",
         bestFor: "Client-facing freelancers who bill by time",
         description:
-          "FreshBooks is built around the client relationship rather than the ledger: time tracking, project-level billing, proposals, and invoices that chase themselves. For a freelancer who bills hourly across several clients, that focus is worth paying for in a way general accounting software is not.",
+          "FreshBooks is built around the client relationship rather than the ledger: time tracking, project-level billing, proposals, and invoices that chase themselves. For a freelancer who bills hourly across several clients, that focus is worth paying for in a way general accounting software is not. For the cost side, see our [FreshBooks vs QuickBooks price comparison](/compare/quickbooks-vs-freshbooks/) by users and billable clients.",
         strengths: [
           "Strong time tracking tied directly to billable invoices",
           "Proposals, estimates, and retainers alongside invoicing",
@@ -449,7 +449,7 @@ export const SELF_EMPLOYED_ROUNDUPS: RoundupEntry[] = [
         name: "FreshBooks",
         bestFor: "Freelancers billing hourly across several clients",
         description:
-          "FreshBooks turns tracked time into invoices with the least friction of anything here, and its reminder and recurring-billing automation is mature. If you bill hourly, the time-to-invoice pipeline is the product and it is worth the subscription; if you bill by project, much of what you are paying for goes unused.",
+          "FreshBooks turns tracked time into invoices with the least friction of anything here, and its reminder and recurring-billing automation is mature. If you bill hourly, the time-to-invoice pipeline is the product and it is worth the subscription; if you bill by project, much of what you are paying for goes unused. To see how the monthly price changes as your client list grows, read our [QuickBooks vs FreshBooks costs by client count](/compare/quickbooks-vs-freshbooks/) comparison.",
         strengths: [
           "Time tracking that converts directly into billable invoices",
           "Mature automatic late payment reminders and recurring billing",

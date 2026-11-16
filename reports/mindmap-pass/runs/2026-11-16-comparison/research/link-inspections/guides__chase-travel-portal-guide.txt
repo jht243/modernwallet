@@ -1,0 +1,24 @@
+INSPECTED ROUTE: /guides/chase-travel-portal-guide
+DATA FILE: src/data/guides.ts (entry begins line 12878)
+INSPECTED: 2026-11-16 by mindmap-build
+
+SECTION HEADINGS/TITLES FOUND:
+title: "Chase Travel Portal: How Points Boost & Redemptions Work",
+heading: "What the Chase Travel portal actually is",
+heading: "Which cards can access the portal",
+heading: "How Points Boost changes your point value",
+heading: "Portal vs transferring to a travel partner",
+heading: "How to find and book a Points Boost offer",
+{ question: "What is the baseline value of a Chase Ultimate Rewards point in the travel portal?", answer: "Every Ultimate Rewards-earning ca
+{ question: "Which credit cards can access Chase's travel portal?", answer: "Any Ultimate Rewards-earning card, including Chase Freedom, Sap
+{ question: "How do I find Points Boost offers in the portal?", answer: "Search your travel dates as usual and look for listings tagged with
+{ question: "Is it better to book through the portal or transfer points to a partner?", answer: "For everyday economy flights and mid-range 
+{ question: "Does the Chase Travel portal charge any fees?", answer: "Booking through the portal itself doesn't add a separate fee beyond th
+{ question: "Can I cancel or change a booking made through the Chase Travel portal?", answer: "Yes, but changes generally need to go through
+{ question: "Does the Chase Travel portal offer a price match or price guarantee?", answer: "According to [Forbes Advisor](https://www.forbe
+title: "Is the Chase Travel Portal Worth It? Point Value Math",
+
+LINES MENTIONING 'Freedom' (candidate anchor context):
+body: "Any card that earns Ultimate Rewards points — including Chase Freedom, Sapphire Preferred, Sapphire Reserve, and the Ink Business line — can book through the portal at the baseline 1-cent-per-point value. Points Boost, the elevated redemption rate on se
+{ question: "Which credit cards can access Chase's travel portal?", answer: "Any Ultimate Rewards-earning card, including Chase Freedom, Sapphire Preferred, and Sapphire Reserve, can book through the portal at the standard rate. Points Boost's elevated rates a
+{ heading: "Baseline Redemption Rates and Points Boost Math", body: "Standard redemptions through the [Chase](https://www.chase.com/personal/credit-cards/education/basics/how-to-use-chase-ultimate-rewards-travel-portal) portal yield a fixed baseline of 1 cent 

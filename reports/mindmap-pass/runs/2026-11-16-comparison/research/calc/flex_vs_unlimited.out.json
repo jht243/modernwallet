@@ -1,0 +1,72 @@
+{
+ "no_bonus_category_spend_all_other": {
+  "inputs": {
+   "travel": 0,
+   "dd": 0,
+   "bonus_q": 0,
+   "other": 24000,
+   "activated": true
+  },
+  "flex_usd": 240.0,
+  "unlimited_usd": 360.0,
+  "flex_minus_unlimited_usd": -120.0
+ },
+ "bonus_1500_per_quarter_activated": {
+  "inputs": {
+   "travel": 0,
+   "dd": 0,
+   "bonus_q": 1500,
+   "other": 18000,
+   "activated": true
+  },
+  "flex_usd": 480.0,
+  "unlimited_usd": 360.0,
+  "flex_minus_unlimited_usd": 120.0
+ },
+ "bonus_600_per_quarter_activated": {
+  "inputs": {
+   "travel": 0,
+   "dd": 0,
+   "bonus_q": 600,
+   "other": 21600,
+   "activated": true
+  },
+  "flex_usd": 336.0,
+  "unlimited_usd": 360.0,
+  "flex_minus_unlimited_usd": -24.0
+ },
+ "bonus_1500_per_quarter_NOT_activated": {
+  "inputs": {
+   "travel": 0,
+   "dd": 0,
+   "bonus_q": 1500,
+   "other": 18000,
+   "activated": false
+  },
+  "flex_usd": 240.0,
+  "unlimited_usd": 360.0,
+  "flex_minus_unlimited_usd": -120.0
+ },
+ "dining_drugstore_heavy_no_bonus": {
+  "inputs": {
+   "travel": 0,
+   "dd": 9000,
+   "bonus_q": 0,
+   "other": 15000,
+   "activated": true
+  },
+  "flex_usd": 420.0,
+  "unlimited_usd": 495.0,
+  "flex_minus_unlimited_usd": -75.0
+ },
+ "breakeven_total_24000_by_quarterly_bonus_spend": {
+  "0": -120.0,
+  "250": -80.0,
+  "500": -40.0,
+  "750": 0.0,
+  "1000": 40.0,
+  "1250": 80.0,
+  "1500": 120.0
+ },
+ "breakeven_quarterly_bonus_spend_usd": 750.0
+}

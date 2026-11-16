@@ -1,0 +1,261 @@
+{
+ "rows": [
+  {
+   "keyword": "quickbooks vs freshbooks",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.youtube.com",
+    "www.freshbooks.com",
+    "bookkeeping-services.com",
+    "stephsbooks.com",
+    "www.business.com",
+    "www.nerdwallet.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "steemit.com",
+    "hostmerchantservices.com",
+    "vencru.com",
+    "ikeepapp.com",
+    "medium.com",
+    "buildframe.co",
+    "rosettadigital.com",
+    "viralhomebasedpursuit.com",
+    "fitsmallbusiness.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "medium.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "people_also_ask": 1
+   },
+   "paa": [
+    "What's comparable to QuickBooks?",
+    "What is FreshBooks accounting software?",
+    "Do old versions of QuickBooks still work?",
+    "Why do CPAS not like QuickBooks Online?",
+    "Why are people leaving QuickBooks?",
+    "Can the IRS see your QuickBooks Online?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.youtube.com, www.freshbooks.com, bookkeeping-services.com, stephsbooks.com",
+   "se_results_count": 66
+  },
+  {
+   "keyword": "annuity vs 401k",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.annuity.org",
+    "www.northwesternmutual.com",
+    "www.fidelity.com",
+    "www.youtube.com",
+    "www.employeefiduciary.com",
+    "smartasset.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.employeefiduciary.com",
+    "www.thrivent.com",
+    "titanwealthinternational.com",
+    "www.nerdwallet.com",
+    "www.carboncollective.co"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "images": 1,
+    "organic": 7,
+    "people_also_ask": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "How much would I expect to receive per month from a $100,000 annuity?",
+    "How is an annuity taxed?",
+    "Can I hold an annuity in my IRA?",
+    "What are the cons of an annuity?",
+    "Why do people say not to buy an annuity?",
+    "Has anyone ever lost money in an annuity?"
+   ],
+   "related_searches": [
+    "Annuity vs 401k reddit",
+    "Annuity vs 401k pros and cons",
+    "Annuity vs 401k taxes",
+    "Annuity vs 401k vs IRA",
+    "Convert 401k to annuity calculator",
+    "Is converting 401k to annuity a good idea",
+    "Annuity vs pension",
+    "Benefits of rolling over a 401k to an annuity"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.annuity.org, www.northwesternmutual.com, www.fidelity.com, www.youtube.com",
+   "se_results_count": 130
+  },
+  {
+   "keyword": "chase freedom flex vs unlimited",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.chase.com",
+    "creditcards.chase.com",
+    "www.cnbc.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "joingerald.com",
+    "bestcreditcardcomparison.com",
+    "www.reddit.com",
+    "www.instagram.com",
+    "www.mypointslife.com",
+    "cardcritics.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 8,
+    "people_also_ask": 1,
+    "perspectives": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "Can I have both Chase Freedom and Freedom Flex?",
+    "Is Chase Sapphire or Freedom Unlimited better?",
+    "What are the perks of the Chase Freedom Flex?",
+    "What are the benefits of the Chase Freedom Unlimited credit card?",
+    "Which is better, Chase Freedom Flex or Freedom Unlimited?",
+    "What's the hardest Chase card to get?"
+   ],
+   "related_searches": [
+    "Chase freedom flex vs unlimited reddit",
+    "Chase freedom flex vs unlimited credit card",
+    "Chase freedom flex vs unlimited credit limit"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.chase.com, creditcards.chase.com, www.cnbc.com, www.youtube.com",
+   "se_results_count": 85
+  },
+  {
+   "keyword": "xero vs quickbooks",
+   "verdict": "contested",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.youtube.com",
+    "www.fishbowlinventory.com",
+    "www.forbes.com",
+    "quickbooks.intuit.com",
+    "wise.com",
+    "www.xero.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.xero.com",
+    "www.forbes.com",
+    "quickbooks.intuit.com",
+    "wise.com",
+    "www.rippling.com",
+    "www.hubspot.com",
+    "stephsbooks.com"
+   ],
+   "major_domains": [
+    "www.forbes.com",
+    "quickbooks.intuit.com",
+    "www.hubspot.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 8,
+    "people_also_ask": 1,
+    "related_searches": 1,
+    "video": 1
+   },
+   "paa": [
+    "Do accountants prefer Xero or QuickBooks?",
+    "Why do accountants not like Xero?",
+    "What are the disadvantages of Xero?",
+    "Why are people leaving QuickBooks?",
+    "What is replacing QuickBooks?",
+    "Is QuickBooks becoming obsolete?"
+   ],
+   "related_searches": [
+    "Xero vs quickbooks reddit",
+    "Xero vs QuickBooks vs Sage",
+    "Xero vs quickbooks cost",
+    "Xero vs QuickBooks vs Wave",
+    "QuickBooks vs Xero for small business",
+    "Xero vs quickbooks for contractors",
+    "Xero vs QuickBooks for Sole Trader",
+    "Xero vs QuickBooks vs FreshBooks"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "3/10 major platforms (www.forbes.com, quickbooks.intuit.com, www.hubspot.com); AI Overview present, cites www.reddit.com, www.youtube.com, www.fishbowlinventory.com, www.forbes.com",
+   "se_results_count": 108
+  },
+  {
+   "keyword": "chime vs sofi",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "smartasset.com",
+    "finance.yahoo.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.chime.com",
+    "www.creditdonkey.com",
+    "banksmobile.net",
+    "www.switchwize.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 7,
+    "people_also_ask": 1,
+    "related_searches": 1,
+    "video": 1
+   },
+   "paa": [
+    "How early does SoFi direct deposit hit?",
+    "Are SoFi and Chime the same thing?",
+    "Is Chime better than Cash App?",
+    "How do I get $300 on SoFi?",
+    "What is the downside of SoFi bank?",
+    "Does SoFi support Donald Trump?"
+   ],
+   "related_searches": [
+    "Chime vs sofi reddit",
+    "Chime vs SoFi vs Ally",
+    "Chime vs SoFi hysa",
+    "What time does SoFi direct deposit hit 2 days early",
+    "What time does SoFi direct deposit hit today",
+    "Chime vs Ally",
+    "What time does SoFi direct deposit hit on Friday",
+    "Is SoFi better than Chime"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "AI Overview present, cites www.reddit.com, smartasset.com, finance.yahoo.com",
+   "se_results_count": 101
+  }
+ ],
+ "cost": "DataForSEO: 5 calls, $0.01075 of $2.00 budget"
+}

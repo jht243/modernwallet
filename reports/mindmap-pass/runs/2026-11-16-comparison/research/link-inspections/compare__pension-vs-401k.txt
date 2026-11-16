@@ -1,0 +1,22 @@
+INSPECTED ROUTE: /compare/pension-vs-401k
+DATA FILE: src/data/comparisons.ts (entry begins line 7896)
+INSPECTED: 2026-11-16 by mindmap-build
+
+SECTION HEADINGS/TITLES FOUND:
+title: "Pension vs 401(k): Key Differences (2025)",
+heading: "What is a pension?",
+heading: "What is a 401(k)?",
+heading: "Pension vs 401(k): the core tradeoff",
+heading: "What happens when you change jobs or die",
+question: "Is a pension better than a 401(k)?",
+question: "Can you have both a pension and a 401(k)?",
+question: "What happens to my pension if the company goes bankrupt?",
+question: "How much can I contribute to a 401(k) in 2025?",
+question: "Is a 401(k) guaranteed like a pension?",
+question: "Why are pensions disappearing?",
+title: "Index Fund vs ETF: Key Differences (2026)",
+heading: "What Is an Index Fund vs an ETF?",
+heading: "Trading and Minimum Investment",
+
+LINES MENTIONING 'annuit':
+

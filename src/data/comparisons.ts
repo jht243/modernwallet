@@ -35,6 +35,402 @@ export interface ComparisonEntry {
 
 export const COMPARISONS: ComparisonEntry[] = [
   ...BENEFIT_COMPARISONS,
+  // ── mindmap-pass 2026-11-16-comparison: quickbooks-vs-freshbooks ──
+  {
+    "updated": "2026-11-16",
+    "slug": "quickbooks-vs-freshbooks",
+    "title": "QuickBooks vs FreshBooks: Price by Users and Clients",
+    "metaDescription": "QuickBooks vs FreshBooks monthly list prices compared across 49 user-and-client combinations, with the exact counts where the cheaper choice changes.",
+    "targetKeyword": "quickbooks vs freshbooks",
+    "optionA": "QuickBooks Online",
+    "optionB": "FreshBooks",
+    "h1": "QuickBooks vs FreshBooks by Users and Clients",
+    "introText": "FreshBooks costs less for most user-and-client counts in this price comparison. QuickBooks Online costs less for one user with six or more billable clients and for exactly three users with 51 or more clients. FreshBooks costs less for one user with up to five clients, two users at any client count, three users with up to 50 clients, and four to 25 users at any client count.\n\nIn our internal cost modeling, we compared monthly list prices across 49 user-and-client combinations using the [QuickBooks pricing page](https://quickbooks.intuit.com/pricing/) and [FreshBooks pricing page](https://www.freshbooks.com/pricing) as inputs. Prices were checked November 16, 2026, and promotions are excluded. QuickBooks also has a $0 Free plan for one user sending up to two invoices a month.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Free or lowest-priced plan",
+          "a": "Free: $0 for 1 user sending up to 2 invoices a month.",
+          "b": "Lite: $23 a month for invoicing up to 5 clients."
+        },
+        {
+          "dimension": "Next paid plans",
+          "a": "Simple Start: $38 a month for 1 user. Essentials: $85 a month for up to 3 users.",
+          "b": "Plus: $43 a month for invoicing up to 50 clients."
+        },
+        {
+          "dimension": "Higher published plans",
+          "a": "Plus: $140 a month for up to 5 users. Advanced: $340 a month for up to 25 users.",
+          "b": "Premium: $70 a month for unlimited clients."
+        },
+        {
+          "dimension": "Plan limit used in the cost model",
+          "a": "The published user cap determines the cheapest eligible paid tier.",
+          "b": "The published billable-client cap determines the base tier."
+        },
+        {
+          "dimension": "Additional users",
+          "a": "The modeled paid tier rises from $38 to $85 when a second user is needed, to $140 for a fourth user, and to $340 for a sixth.",
+          "b": "The model adds $11 a month for each user beyond the first on Lite, Plus or Premium."
+        },
+        {
+          "dimension": "One user and 6 to 50 clients",
+          "a": "Simple Start: $38 a month.",
+          "b": "Plus: $43 a month."
+        },
+        {
+          "dimension": "Three users and 51 or more clients",
+          "a": "Essentials: $85 a month.",
+          "b": "Premium plus two $11 Team Members: $92 a month."
+        },
+        {
+          "dimension": "Plan outside the paid-price grid",
+          "a": "Free: $0, with its 1-user and 2-invoice monthly limits.",
+          "b": "Select: quote-based, with no public monthly price."
+        }
+      ]
+    },
+    "verdictHeading": "Our Takeaway for QuickBooks vs FreshBooks",
+    "verdict": "Choose by both user count and billable-client count if monthly list price is your deciding factor. FreshBooks is cheaper for two users at every client count in the model and for four to 25 users at every client count. For one user, FreshBooks Lite costs less through five clients, while QuickBooks Simple Start costs less from six clients onward. At exactly three users, FreshBooks costs less through 50 clients, then QuickBooks Essentials costs less from 51 clients onward.\n\nThis price recommendation is not for someone whose decision depends on features, support or integrations. Compare the specific requirements you need instead of treating the cheaper modeled price as an overall product verdict. A change in either product's prices or plan caps, FreshBooks' $11 seat price, or a promotion could change the result. Count the people who need access and the clients you will invoice, then compare that pair of counts with the grid below.",
+    "tableHeading": "Published Plans and Monthly List Prices Side by Side",
+    "sections": [
+      {
+        "heading": "QuickBooks vs FreshBooks at a Glance",
+        "content": "For one user, the FreshBooks base price rises from $23 to $43 when the client count moves from five to six. QuickBooks Simple Start remains $38 in both cases, so the lower price switches from FreshBooks to QuickBooks.\n\nFor three users, the next switch occurs between 50 and 51 clients. FreshBooks Plus with two added Team Members costs $65 through 50 clients. At 51 clients, Premium with those same two seats costs $92, above QuickBooks Essentials at $85. Two users never reach that QuickBooks advantage in the modeled range: FreshBooks Premium with one added seat is $81, below Essentials at $85.\n\nUser count can reverse the result again. Four users require the $140 QuickBooks Plus tier in the model, while FreshBooks Premium with three added seats costs $103. Even at 25 users and more than 50 clients, modeled FreshBooks Premium costs $334 against QuickBooks Advanced at $340. These comparisons cover one to 25 users. They do not assign a QuickBooks price above its published 25-user cap.\n\nThe $0 QuickBooks Free plan is a separate case. For one user who sends no more than two invoices a month, its price is below every paid plan in this comparison. The paid-plan grid excludes Free because its invoice limit is a separate constraint from user and client counts."
+      },
+      {
+        "heading": "Monthly Cost by Number of Users and Clients",
+        "content": "Our 49-case model prices the cheapest eligible paid QuickBooks tier against a FreshBooks plan selected by billable-client count. QuickBooks costs $38 for one user, $85 for two to three users, $140 for four to five users, and $340 for six to 25 users. FreshBooks starts at $23 for up to five clients, $43 for six to 50, or $70 for 51 or more. We then add $11 for each FreshBooks user beyond the first.\n\nThe grid shows monthly list prices in dollars. QB means QuickBooks Online and FB means FreshBooks. It uses user counts of 1, 2, 3, 4, 5, 10 and 25 against client counts of 3, 5, 6, 20, 50, 51 and 100. The model excludes promotions, QuickBooks Free and quote-based FreshBooks Select.\n\n| Users | 3 clients | 5 clients | 6 clients | 20 clients | 50 clients | 51 clients | 100 clients |\n|---|---|---|---|---|---|---|---|\n| 1 | QB $38 / FB $23 | QB $38 / FB $23 | QB $38 / FB $43 | QB $38 / FB $43 | QB $38 / FB $43 | QB $38 / FB $70 | QB $38 / FB $70 |\n| 2 | QB $85 / FB $34 | QB $85 / FB $34 | QB $85 / FB $54 | QB $85 / FB $54 | QB $85 / FB $54 | QB $85 / FB $81 | QB $85 / FB $81 |\n| 3 | QB $85 / FB $45 | QB $85 / FB $45 | QB $85 / FB $65 | QB $85 / FB $65 | QB $85 / FB $65 | QB $85 / FB $92 | QB $85 / FB $92 |\n| 4 | QB $140 / FB $56 | QB $140 / FB $56 | QB $140 / FB $76 | QB $140 / FB $76 | QB $140 / FB $76 | QB $140 / FB $103 | QB $140 / FB $103 |\n| 5 | QB $140 / FB $67 | QB $140 / FB $67 | QB $140 / FB $87 | QB $140 / FB $87 | QB $140 / FB $87 | QB $140 / FB $114 | QB $140 / FB $114 |\n| 10 | QB $340 / FB $122 | QB $340 / FB $122 | QB $340 / FB $142 | QB $340 / FB $142 | QB $340 / FB $142 | QB $340 / FB $169 | QB $340 / FB $169 |\n| 25 | QB $340 / FB $287 | QB $340 / FB $287 | QB $340 / FB $307 | QB $340 / FB $307 | QB $340 / FB $307 | QB $340 / FB $334 | QB $340 / FB $334 |\n\nAt one user and five clients, the comparison is $23 for FreshBooks Lite against $38 for QuickBooks Simple Start. Adding one billable client moves FreshBooks to its $43 Plus tier. The extra client changes the price-only result even though the QuickBooks user count has not changed.\n\nAt two users and 51 clients, FreshBooks costs $70 for Premium plus $11 for one added seat, or $81. QuickBooks Essentials costs $85. At three users and the same client count, the FreshBooks calculation becomes $70 plus two $11 seats, or $92. Essentials remains $85 because its published cap covers three users. That single added user changes which product costs less.\n\nThe grid samples seven user counts, but the pricing rules also cover the counts between them. For six to 25 users, QuickBooks Advanced stays at $340 in this model. At 25 users and 51 or more clients, FreshBooks reaches $70 plus 24 seats at $11 each, or $334. That leaves FreshBooks $6 below Advanced at the largest published QuickBooks user count. The FreshBooks seat charge is a modeling assumption for every user beyond the first, so compare it with the seats you would need."
+      },
+      {
+        "heading": "What the Price Comparison Leaves Out",
+        "content": "The grid compares published monthly list prices. It does not measure what each product can do for a particular business. QuickBooks inputs are limited to plan prices and user caps, plus the Free plan's invoice limit. No QuickBooks feature, support or accountant-access claim is used to choose a winner.\n\nFreshBooks describes plans built around the number of clients you invoice. Lite covers invoices to five clients, expense tracking and estimates. Plus raises the invoice limit to 50 clients and lists proposals, client retainers, financial and accounting reports, receipt scanning and accountant access. Premium allows unlimited clients and lists project profitability. Those published details can help you identify a requirement, but the cost grid gives none of them a score.\n\nThe FreshBooks base prices in the grid also exclude optional add-ons other than modeled Team Members. FreshBooks lists Advanced Payments at $20 a month and Payroll at $40 a month plus $6 a month per user. Neither charge appears in a grid cell. Select has no public monthly price and is excluded as well, so the table cannot decide whether a Select quote would cost less for a given team.\n\nPromotions are excluded from every modeled figure. If you intend to buy at an advertised discount, compare the amounts and terms shown on the [QuickBooks pricing page](https://quickbooks.intuit.com/pricing/) and [FreshBooks pricing page](https://www.freshbooks.com/pricing) with the list-price result. A discount can change the price comparison for the period it applies. The grid does not assign a discounted price to either product.\n\nFeatures, support and integrations can also change which product you would choose, even when the list-price arithmetic stays the same. Identify any requirement that could outweigh the monthly difference before using a $5 gap, such as the one-user, six-client case, to make the decision."
+      },
+      {
+        "heading": "Who Should Pick QuickBooks or FreshBooks",
+        "content": "QuickBooks Online has the lower modeled paid price for a single user invoicing six or more clients. At six to 50 clients, Simple Start is $38 against FreshBooks Plus at $43. At 51 or more clients, Simple Start remains $38 while FreshBooks Premium is $70. A single user sending up to two invoices a month also has the separate $0 QuickBooks Free option.\n\nQuickBooks Essentials has one other lower-price case: exactly three users with 51 or more clients. Its $85 monthly list price is $7 below FreshBooks Premium with two added Team Members at $92. At 50 clients, FreshBooks Plus with those seats is $65, so count billable clients before applying the three-user result.\n\nFreshBooks has the lower modeled paid price for a one-user business invoicing up to five clients. It also costs less for every modeled client count with two users and with four to 25 users. The margin varies. With two users and 51 or more clients, FreshBooks is $81 against QuickBooks at $85. With four users and that client count, FreshBooks is $103 against QuickBooks at $140.\n\nA reader who needs a feature, support arrangement or integration that this price model does not score should not choose solely from these figures. Write down that requirement and assess it separately. If the decision is limited to sending invoices, the [invoicing apps for freelancers](/roundup/best-invoicing-apps-for-freelancers/) roundup offers a different comparison. If neither product fits the price or requirements you have identified, consider [other QuickBooks alternatives](/alternatives/quickbooks/).\n\nThis answer would change if either published plan price or cap changes, if FreshBooks changes its $11 Team Members charge, or if a promotion changes the amount you would pay. For a QuickBooks vs FreshBooks price decision, count your users and billable clients, find the matching grid cell, and verify today's figures on the [QuickBooks pricing page](https://quickbooks.intuit.com/pricing/) and [FreshBooks pricing page](https://www.freshbooks.com/pricing)."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is QuickBooks or FreshBooks cheaper for a freelancer?",
+        "answer": "For one user on paid plans, FreshBooks Lite costs less with up to five billable clients: $23 a month against QuickBooks Simple Start at $38. From six clients onward, QuickBooks Simple Start has the lower modeled list price. If one user sends up to two invoices a month, QuickBooks Free costs $0."
+      },
+      {
+        "question": "What is comparable to QuickBooks?",
+        "answer": "FreshBooks is an option to compare with QuickBooks Online when choosing by monthly list price, user count and billable-client count. The [QuickBooks alternatives](/alternatives/quickbooks/) roundup covers more products if you want a wider list."
+      },
+      {
+        "question": "What is FreshBooks accounting software?",
+        "answer": "FreshBooks offers invoicing and expense tracking, with plan limits based on how many clients you invoice. Its published plans also list estimates, proposals, projects and reports, with the available features varying by plan."
+      },
+      {
+        "question": "Is there a free QuickBooks plan?",
+        "answer": "Yes. QuickBooks Online lists a Free plan at $0 for one user sending up to two invoices a month. The paid-price grid does not include that invoice-limited plan."
+      },
+      {
+        "question": "How much does adding a team member cost?",
+        "answer": "FreshBooks lists Team Members at $11 a month per additional user on Lite, Plus and Premium. In this model, QuickBooks instead moves to the cheapest paid tier with enough user capacity: $38 for one user, $85 for two to three, $140 for four to five, or $340 for six to 25."
+      },
+      {
+        "question": "Do promotions change the answer?",
+        "answer": "They can change the amount you pay and may change which product costs less during a discount period. Every comparison here uses monthly list prices with promotions excluded. Compare any current offer on the [QuickBooks pricing page](https://quickbooks.intuit.com/pricing/) and [FreshBooks pricing page](https://www.freshbooks.com/pricing)."
+      }
+    ],
+    "sources": [
+      {
+        "label": "QuickBooks Online pricing",
+        "url": "https://quickbooks.intuit.com/pricing/"
+      },
+      {
+        "label": "FreshBooks pricing",
+        "url": "https://www.freshbooks.com/pricing"
+      }
+    ],
+    "relatedComparisons": [],
+    "calculatorLinks": [
+      {
+        "label": "Self-Employment Tax Calculator",
+        "href": "/self-employment-tax/"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-11-16-comparison: annuity-vs-401k ──
+  {
+    "updated": "2026-11-16",
+    "slug": "annuity-vs-401k",
+    "title": "Annuity vs 401(k): They Solve Different Retirement Problems",
+    "metaDescription": "Annuity vs 401k compares an employer retirement plan with an insurance contract, including the 2026 deferral limit, possible match, income and withdrawal costs.",
+    "targetKeyword": "annuity vs 401k",
+    "optionA": "Annuity",
+    "optionB": "401(k) Plan",
+    "h1": "Annuity vs 401(k): They Solve Different Retirement Problems",
+    "introText": "An annuity and a 401(k) do different jobs. A 401(k) is an employer plan for contributing wages to a retirement account, while an annuity is an insurance contract that can provide income payments.\n\nAt The Modern Wallet, we base this comparison on the [Internal Revenue Service (IRS)](https://www.irs.gov/retirement-plans/401k-plans) rules for 401(k) plans and [Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/investment-products/insurance-products/annuities) guidance on annuities. The IRS says a 401(k) may include an employer match if its plan permits one. Investor.gov says an annuity can provide income, but its costs and withdrawal terms depend on the contract.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "What it is",
+          "a": "An insurance contract bought with one payment or a series of payments.",
+          "b": "A feature of a qualified employer plan that lets employees contribute wages to individual accounts."
+        },
+        {
+          "dimension": "Who provides it",
+          "a": "An insurance company agrees to make the contract's income payments.",
+          "b": "An employer provides the plan. Employees contribute wages, and employers can contribute."
+        },
+        {
+          "dimension": "Tax treatment",
+          "a": "Growth can be tax-deferred until income payments begin. A withdrawal may trigger taxes.",
+          "b": "Traditional salary deferrals are excluded from taxable income, and distributions are generally taxable. Designated Roth contributions and qualified distributions follow different rules."
+        },
+        {
+          "dimension": "2026 contribution limit",
+          "a": "The cited Investor.gov annuity guidance states no contribution limit.",
+          "b": "The employee elective-deferral limit is $24,500 or 100% of compensation, whichever is less."
+        },
+        {
+          "dimension": "Employer match",
+          "a": "The annuity guidance describes payments made to buy a contract and does not describe an employer match.",
+          "b": "An employer can match contributions if the plan permits it. A match may be discretionary."
+        },
+        {
+          "dimension": "Early-distribution tax",
+          "a": "A taxable distribution from a deferred annuity contract before age 59½ generally faces a 10% additional tax, subject to exceptions.",
+          "b": "A taxable early distribution from a 401(k) generally faces a 10% additional tax before age 59½, subject to exceptions."
+        },
+        {
+          "dimension": "Withdrawal costs and fees",
+          "a": "Surrender charges can apply during a contract's surrender period. Fees may be explicit or reflected in credited interest and limits on gains.",
+          "b": "The cited IRS plan guidance gives no 401(k) plan-fee figure for comparison."
+        },
+        {
+          "dimension": "Risk",
+          "a": "Risk varies by contract type. Registered index-linked and variable annuities can lose money. Payments depend on the insurer's claims-paying ability.",
+          "b": "The cited IRS pages describe individual accounts but give no investment-risk measure for a particular plan."
+        },
+        {
+          "dimension": "Income payments",
+          "a": "The contract can provide payments for a set period or for life, depending on its terms.",
+          "b": "The cited IRS plan guidance does not describe a guaranteed income payment from the 401(k) itself."
+        }
+      ]
+    },
+    "verdictHeading": "Our Takeaway on Annuity vs 401(k)",
+    "verdict": "If an employer's 401(k) offers a match, start by examining that match. The IRS says a match depends on the plan document and may be discretionary, so it is a conditional reason to contribute rather than a rule for every plan. An annuity addresses a separate need: income payments under an insurance contract. Investor.gov says annuities suit long investment horizons and can carry surrender charges and fees.\n\nThis takeaway is based on the IRS and Investor.gov guidance. It rests on no product testing. It does not fit someone seeking a monthly annuity payout figure, because the cited sources provide no figure that applies across contracts. The answer also changes if you have no employer plan, your plan offers no match, or you are near retirement and need income payments. Read the [IRS contribution rules](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-contributions) to understand how a match can work, then use [Investor.gov's annuity questions](https://www.investor.gov/introduction-investing/investing-basics/investment-products/insurance-products/annuities) to assess any contract you are offered.",
+    "tableHeading": "Annuity and 401(k) Compared Side by Side",
+    "sections": [
+      {
+        "heading": "What an Annuity Costs and What Locks Up Your Money",
+        "content": "An annuity's surrender terms and fees can make access to its value costly. Investor.gov says a surrender charge may apply when you withdraw money within a specified number of years. The charge generally declines over time, so the year in which you withdraw matters when you read a contract.\n\nSome contracts also have adjustments to the amount paid when you withdraw. Investor.gov identifies market value adjustments as one example and says they are often negative. If you may need money during the surrender period, ask for the contract's surrender schedule and an explanation of any adjustment before deciding whether its income terms fit your goal.\n\nAnnuity costs do not all appear as a separate annual bill. Investor.gov says many fixed annuities, fixed indexed annuities and registered index-linked annuities (RILAs) have no explicit ongoing fee. Their costs can instead appear in the interest credited or limits on gains. Compare those contract terms alongside any listed fee rather than treating a zero explicit fee as a complete cost figure.\n\nOther annuities can charge a base contract fee, fees for underlying funds or fees for optional benefits. Investor.gov gives an example of a 1.25% base contract fee on a $300,000 contract, which amounts to $3,750 a year. That is an illustration from its guidance. It is not a quoted fee for every annuity. Ask which charges apply to the specific contract and which benefits each charge buys.\n\nThe type of annuity also changes the risk you accept. A fixed annuity guarantees a minimum interest rate, while a fixed indexed annuity bases interest partly on a benchmark and credits no less than zero interest under the description in Investor.gov's guidance. A RILA can lose money and places limits on gains and losses. A variable annuity directs money to mutual funds and has no stated limit on gains or losses in that guidance.\n\nEven a contract that promises payments depends on the insurance company's financial strength and claims-paying ability. Investor.gov says an insurer in financial difficulty may be unable to pay. Ask how the promised income works and review the insurer's claims-paying ability. After receiving an annuity contract, state law generally provides a free-look period, usually 10 to 30 days, during which you can change your mind."
+      },
+      {
+        "heading": "Taxes and Early Withdrawals",
+        "content": "The tax comparison depends on which 401(k) contribution you make and how you take money from an annuity. Under the [IRS 401(k) plan rules](https://www.irs.gov/retirement-plans/401k-plans), traditional elective salary deferrals are excluded from taxable income when contributed. Distributions, including earnings, are generally included in taxable income at retirement. Designated Roth deferrals are included in income when contributed, while qualified distributions from designated Roth accounts are excluded.\n\nFor 2026, the [IRS contribution rules](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-contributions) set the employee elective-deferral limit at $24,500 or 100% of compensation, whichever is less. Catch-up contributions may be allowed if you are at least 50 and the plan permits them. For more detail on the employee limit, see our [2026 401(k) contribution limits](/guides/401k-contribution-limits-2026/). The cited annuity guidance states no comparable contribution limit for an annuity contract.\n\nInvestor.gov says a deferred annuity can grow tax-deferred during its accumulation phase, before income payments begin. An immediate annuity is bought with one payment and typically starts paying income within a year. Those descriptions tell you when a contract is designed to pay, but they do not establish the tax amount on a particular withdrawal. Investor.gov advises consulting a tax adviser because annuity tax rules are complicated and can change.\n\n[IRS Topic 558](https://www.irs.gov/taxtopics/tc558) supplies the early-distribution rule for both sides of this comparison. It generally treats distributions received before age 59½ from a qualified retirement plan, such as a 401(k), or a deferred annuity contract as early distributions. The additional tax is 10% of the portion included in gross income. A distribution that is not taxable, such as a rollover to another qualified plan, is not subject to that additional tax.\n\nExceptions can change the result. Topic 558 lists exceptions for certain distributions from qualified plans other than individual retirement accounts (IRAs), including total and permanent disability and distributions after separation from service at or after age 55. Its rules for that age-55 exception should not be assumed to apply to every annuity withdrawal. The IRS addresses IRA early distributions separately in Topic 557, so do not use the qualified-plan exception list as an IRA checklist."
+      },
+      {
+        "heading": "Buying an Annuity Inside a 401(k) or IRA",
+        "content": "Investor.gov urges caution when an annuity is proposed inside a traditional 401(k) or traditional IRA. An annuity is a contract, while a 401(k) is an employer plan. The distinction matters because the question is then whether the contract adds a benefit you want within an account that is already tax-deferred.\n\nInvestor.gov says an annuity bought inside a tax-deferred retirement plan provides no additional tax deferral. It also says the annuity is taxed like any other investment in the plan. If tax deferral is the reason given for placing the contract there, ask what else the annuity would provide and what its contract terms would cost. The potential benefit may instead be the income payments or another benefit specified in the contract.\n\nThe income promise needs a close read. Investor.gov says annuity payments may continue for your life, the life of a spouse or partner, or a set period. Those are different payment arrangements, and the contract determines which one applies. Ask when payments start, how long they last and what happens under the contract's death-benefit terms. A payout figure cannot be inferred from the $24,500 401(k) deferral limit or from the description of an annuity type.\n\nAlso distinguish a contract bought for immediate income from one intended to grow before payments begin. An immediate annuity typically starts income within a year after a single payment. A deferred annuity has an accumulation phase before its payout phase and may accept a single payment or flexible payments. Investor.gov says annuities are appropriate only for investors with a long-term investment horizon, and surrender charges can make an early change costly.\n\nA person weighing an annuity inside a traditional plan should ask how it fits their overall financial situation, as Investor.gov recommends. That question includes the contract's income terms, surrender schedule, explicit fees, limits on gains and the insurer's claims-paying ability. Ask about the proposed contract and the insurer's claims-paying ability rather than relying on the general label 'annuity.' For another comparison focused on where retirement income comes from, see [pension vs annuity](/compare/pension-vs-annuity/)."
+      },
+      {
+        "heading": "Who This Is Not For and What Would Change Our Answer",
+        "content": "The match-first takeaway applies only when you can use an employer 401(k) that offers a match. The IRS says an employer may make matching contributions if its plan document permits them, and a match can be discretionary. A plan without a match removes that specific reason to prioritize a 401(k) contribution. Read the plan's match terms before using the match as a deciding factor.\n\nIf you have no employer 401(k), there is no plan match to compare with an annuity. An IRA may be a more relevant account comparison, though the annuity's contract terms remain a separate question. Our [401(k) vs Roth IRA](/compare/401k-vs-roth-ira/) page covers the account distinction. It does not turn an annuity into the same kind of account as either one.\n\nThis takeaway also does not serve someone who needs a dependable monthly payout estimate from a general comparison page. An annuity payment depends on the insurer's terms, your age, the contract type and the payment options. No single monthly figure in the cited sources can stand in for a contract quote. Ask insurers for written quotes using the same proposed payment and payout choices so the quoted income terms can be compared.\n\nIf you may need access to the money during a surrender-charge period, give the withdrawal schedule more weight than a distant income promise. Investor.gov says surrender charges may apply for a specified number of years, and withdrawing a contract's value can also have tax consequences. Ask for the surrender schedule and any market value adjustment terms before considering that contract.\n\nThe answer can shift again when you are near retirement and need income payments. Investor.gov describes immediate annuities that typically begin paying within a year and deferred annuities that pay later. Neither description supplies a monthly payout or makes a particular contract suitable for everyone. Compare the timing and duration of a written income quote with the timing of the income you need.\n\nChanges to the IRS limit or to the published tax rules would also require a fresh comparison. The $24,500 employee deferral limit stated here is for 2026. For an annuity vs 401k decision, read the [IRS contribution rules](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-contributions) for the applicable year, then obtain a written annuity quote and surrender schedule before comparing the two."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is an annuity better than a 401(k)?",
+        "answer": "Neither is better in general because they do different jobs. A 401(k) is an employer plan that may offer a match, while an annuity is an insurance contract that can provide income payments. A match depends on the plan, and annuity costs depend on the contract."
+      },
+      {
+        "question": "Can you have both an annuity and a 401(k)?",
+        "answer": "Yes. An annuity is an insurance contract and a 401(k) is an employer plan. Investor.gov urges caution if an annuity is proposed inside a traditional 401(k) because it provides no additional tax deferral there."
+      },
+      {
+        "question": "What is the 401(k) contribution limit in 2026?",
+        "answer": "The 2026 employee elective-deferral limit is $24,500 or 100% of compensation, whichever is less. Catch-up contributions may be allowed if you are at least 50 and the plan permits them. See the [2026 401(k) contribution limits](/guides/401k-contribution-limits-2026/) guide for more detail."
+      },
+      {
+        "question": "What are surrender charges on an annuity?",
+        "answer": "Surrender charges are amounts you may owe for withdrawing from an annuity within a specified number of years. Investor.gov says they generally decline over time. The proposed contract's schedule determines when a charge applies."
+      },
+      {
+        "question": "Are annuity withdrawals taxed?",
+        "answer": "An annuity withdrawal may be taxable. Under [IRS Topic 558](https://www.irs.gov/taxtopics/tc558), a distribution from a deferred annuity contract before age 59½ generally faces a 10% additional tax on its taxable portion, subject to exceptions."
+      },
+      {
+        "question": "Do annuities have fees?",
+        "answer": "Yes, annuity costs can include contract fees, underlying fund fees, optional-benefit fees or surrender charges. Investor.gov says some contracts have implicit costs reflected in credited interest or limits on gains rather than an explicit ongoing fee."
+      },
+      {
+        "question": "How much does an annuity pay per month?",
+        "answer": "There is no monthly amount that applies to every annuity. Payments depend on the insurer's rates, your age, the contract type and its options. Ask insurers for written quotes and use [Investor.gov's questions to ask before buying](https://www.investor.gov/introduction-investing/investing-basics/investment-products/insurance-products/annuities) to compare their terms."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Investor.gov, Annuities",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/insurance-products/annuities"
+      },
+      {
+        "label": "IRS, 401(k) Plans",
+        "url": "https://www.irs.gov/retirement-plans/401k-plans"
+      },
+      {
+        "label": "IRS, Retirement Topics: Contributions",
+        "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-contributions"
+      },
+      {
+        "label": "IRS, Topic No. 558: Additional Tax on Early Distributions",
+        "url": "https://www.irs.gov/taxtopics/tc558"
+      }
+    ],
+    "relatedComparisons": [
+      "pension-vs-annuity",
+      "pension-vs-401k",
+      "iul-vs-401k",
+      "annuity-vs-cd"
+    ],
+    "calculatorLinks": [
+      {
+        "label": "401(k) Calculator",
+        "href": "/retirement/401k-calculator/"
+      },
+      {
+        "label": "Annuity Calculator",
+        "href": "/annuity-calculator/"
+      }
+    ]
+  },
+  // ── mindmap-pass 2026-11-16-comparison: chase-freedom-flex-vs-unlimited ──
+  {
+    "updated": "2026-11-16",
+    "slug": "chase-freedom-flex-vs-unlimited",
+    "title": "Chase Freedom Flex vs Unlimited Cash Back Break-Even",
+    "metaDescription": "Compare Chase Freedom Flex vs Unlimited cash back with a 12.5% break-even rule, worked spending examples, quarterly caps, fees, and introductory rates.",
+    "targetKeyword": "chase freedom flex vs unlimited",
+    "optionA": "Chase Freedom Flex",
+    "optionB": "Chase Freedom Unlimited",
+    "h1": "Chase Freedom Flex vs Unlimited on Cash Back",
+    "introText": "[Chase Freedom Flex](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) earns more cash back than Chase Freedom Unlimited only when activated 5% category spending exceeds 12.5% of comparable annual spending. Comparable spending excludes Chase Travel, dining and drugstores, where both cards earn the same rates. Once that spending reaches $48,000 a year, Freedom Flex cannot earn more, even if you use its full quarterly 5% cap.\n\nIn our internal cost modeling, we compared annual cash back using the rates published on the [Freedom Flex card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) and [Freedom Unlimited card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited). Our model assumes you activate each quarterly category and your purchases match it. At $24,000 of comparable annual spending, $750 in the 5% category each quarter produces a tie, so Freedom Flex needs more than $750 a quarter to win.",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Annual fee",
+          "a": "$0.",
+          "b": "$0."
+        },
+        {
+          "dimension": "Ordinary purchases",
+          "a": "1% cash back outside its higher-rate categories.",
+          "b": "1.5% cash back outside its higher-rate categories."
+        },
+        {
+          "dimension": "Rotating categories",
+          "a": "5% on up to $1,500 in combined purchases each quarter in categories you activate.",
+          "b": "No rotating 5% category is listed on the Freedom Unlimited card page."
+        },
+        {
+          "dimension": "Travel through Chase Travel",
+          "a": "5% cash back.",
+          "b": "5% cash back."
+        },
+        {
+          "dimension": "Dining and drugstores",
+          "a": "3% at restaurants, including takeout and eligible delivery, and 3% at drugstores.",
+          "b": "3% at restaurants, including takeout and eligible delivery, and 3% at drugstores."
+        },
+        {
+          "dimension": "New cardmember bonus",
+          "a": "$200 after $500 in purchases in the first 3 months from account opening.",
+          "b": "$200 after $500 in purchases in the first 3 months from account opening."
+        },
+        {
+          "dimension": "Introductory annual percentage rate (APR)",
+          "a": "0% for 15 months from account opening on purchases and balance transfers. A balance transfer fee applies.",
+          "b": "0% for 15 months from account opening on purchases and balance transfers. A balance transfer fee applies."
+        },
+        {
+          "dimension": "APR after the introductory period",
+          "a": "18.49% to 27.99% variable, as of November 16, 2026.",
+          "b": "18.49% to 27.99% variable, as of November 16, 2026."
+        },
+        {
+          "dimension": "Foreign transaction fee",
+          "a": "The Freedom Flex card page states no foreign transaction fee.",
+          "b": "The Freedom Unlimited card page does not state a foreign transaction fee. Check Chase pricing and terms for the current fee."
+        }
+      ]
+    },
+    "verdictHeading": "Our Takeaway on Chase Freedom Flex vs Unlimited",
+    "verdict": "Choose Chase Freedom Unlimited if activated 5% category spending does not exceed 12.5% of comparable annual spending, or if you do not want to activate rotating categories. Choose Chase Freedom Flex for cash back only if you expect eligible, activated category spending to exceed 12.5% of comparable annual spending within the $1,500 quarterly cap. At $24,000 of comparable spending, $750 per quarter is a tie, and spending above $750 per quarter is needed for Freedom Flex to win. At $48,000 or more, Freedom Flex cannot win under these rates and caps.\n\nThis cash-back recommendation is not for a reader choosing chiefly on introductory borrowing terms or features outside the modeled rewards. Both cards list a 15-month 0% introductory APR, but our cash-back calculation excludes that offer and balance transfer fees. A change to either base rate, the Freedom Flex 5% rate or cap, or the quarterly categories could change the result. Add up the purchases you expect to make outside Chase Travel, dining and drugstores, then compare your eligible quarterly spending with the [current Freedom Flex categories and terms](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex).",
+    "tableHeading": "Earn Rates and Fees Side by Side",
+    "sections": [
+      {
+        "heading": "Annual Cash Back by Spending Pattern",
+        "content": "Chase Freedom Flex vs Unlimited breaks even when activated 5% category purchases equal 12.5% of comparable annual spending. For this calculation, comparable annual spending means purchases outside Chase Travel, dining and drugstores. Both cards list the same 5% travel and 3% dining and drugstore rates, so those purchases contribute the same cash back on either card. If you have $24,000 in comparable purchases plus dining purchases, use $24,000 as the spending figure in the break-even rule.\n\nOur internal cost modeling assumes that you activate the Freedom Flex category every quarter and that purchases you count in it match that quarter's category. That is the best case for Freedom Flex. We leave out the new cardmember bonus, introductory APR and balance transfer fees. We also assume the modeled 5% purchases do not overlap with the shared travel, dining or drugstore categories. The calculation compares cash back from the published earn rates, with both annual fees at $0."
+      },
+      {
+        "heading": "How the 12.5% Rule Works",
+        "content": "Let S be comparable annual spending and B be eligible 5% category spending in each quarter, capped at $1,500 per quarter. Under the model's equal-quarter assumption, annual Freedom Flex cash back minus Freedom Unlimited cash back is 0.16 × B − 0.005 × S. Freedom Flex wins only when that result is greater than zero. Set the result to zero and the tie occurs when four quarters of eligible spending, or 4 × B, equal 12.5% of S.\n\nThe formula accounts for both rates on category purchases. Freedom Flex earns 5% on eligible, activated purchases, while Freedom Unlimited earns 1.5% on those same purchases. On the remaining comparable purchases, Freedom Flex earns 1% and Freedom Unlimited earns 1.5%. More spending in a qualifying quarterly category helps Freedom Flex, but more spending at the ordinary rate helps Freedom Unlimited.\n\nThe $1,500 quarterly cap limits how far Freedom Flex can pull ahead. Four quarters at the cap put $6,000 a year into the modeled 5% category. That reaches 12.5% of comparable spending at $48,000, producing a tie. Above $48,000, the full $6,000 is less than 12.5% of S, so Freedom Flex cannot win under these assumptions. The $48,000 boundary applies to comparable spending as defined above, rather than to a total that includes Chase Travel, dining or drugstores."
+      },
+      {
+        "heading": "Break-Even Spending at Different Annual Totals",
+        "content": "The category amount in this table is the amount needed for a tie. Freedom Flex needs more than the listed amount to earn more cash back. Each quarterly figure assumes the same eligible spend in all four quarters.\n\n| Comparable annual spending | Eligible category spend for a tie, per year | Eligible category spend for a tie, per quarter | Result at the full $1,500 quarterly cap |\n|---|---|---|---|\n| $12,000 | $1,500 | $375 | Freedom Flex earns $180 more. |\n| $24,000 | $3,000 | $750 | Freedom Flex earns $120 more. |\n| $36,000 | $4,500 | $1,125 | Freedom Flex earns $60 more. |\n| $48,000 | $6,000 | $1,500 | The cards tie. |\n| $60,000 | $7,500 | $1,875, above the cap | Freedom Flex earns $60 less. |\n\nAt $12,000 of comparable annual spending, the threshold is $375 per quarter. At $36,000, it rises to $1,125 per quarter. The $750 figure belongs only to the $24,000 example. Apply the 12.5% rule to your own comparable spending before using any quarterly dollar figure as a target.\n\nFor $60,000 of comparable spending, a tie would require $1,875 in eligible spending each quarter. Freedom Flex pays its rotating 5% rate on no more than $1,500 per quarter under the published cap. Even with the full cap activated in every quarter, the model gives Freedom Flex $840 and Freedom Unlimited $900 for the year. Raising category purchases beyond the cap does not make the required $1,875 eligible for the modeled 5% rate."
+      },
+      {
+        "heading": "What $24,000 of Spending Produces",
+        "content": "The next examples hold comparable annual spending at $24,000 and change only eligible quarterly category spending or activation. They exclude the shared travel, dining and drugstore categories and the new cardmember bonus. The difference column is Freedom Flex cash back minus Freedom Unlimited cash back.\n\n| Freedom Flex category spending | Freedom Flex annual cash back | Freedom Unlimited annual cash back | Difference |\n|---|---|---|---|\n| $0 per quarter | $240 | $360 | −$120 |\n| $600 per quarter, activated | $336 | $360 | −$24 |\n| $750 per quarter, activated | $360 | $360 | $0 |\n| $1,500 per quarter, activated | $480 | $360 | +$120 |\n| $1,500 per quarter, not activated | $240 | $360 | −$120 |\n\nAt $600 in the activated category each quarter, Freedom Flex does better than it would with no category spending but trails Freedom Unlimited by $24 a year. At $750 per quarter, both earn $360. The full $1,500 per quarter produces a $120 Freedom Flex advantage on this $24,000 spending pattern. Those results show why the category rate alone cannot tell you which card earns more.\n\nActivation changes the same spending pattern. In the model, $1,500 per quarter in purchases that would otherwise match the rotating category earns Freedom Flex $240 for the year if you do not activate it. Freedom Unlimited earns $360 on the same $24,000 of comparable purchases. If you cannot count on activating each quarter, use the unactivated row rather than the full-cap row to judge the cash-back difference.\n\nThe quarterly cap also makes timing relevant to the model. Its 5% allowance is $1,500 each quarter, so four quarters of eligible purchases are needed to reach the modeled $6,000 annual maximum. The tables assume the stated amount lands in an activated category in every quarter. They do not treat purchases that miss a quarter's category as eligible 5% spending. Compare your expected purchases with the [Freedom Flex card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) rather than assuming an ordinary purchase will qualify."
+      },
+      {
+        "heading": "Who Should Pick Flex or Unlimited",
+        "content": "Chase Freedom Unlimited fits a cash-back choice when ordinary purchases make up too much of your comparable spending for Freedom Flex to clear the 12.5% threshold. Its 1.5% rate on other purchases beats Freedom Flex's 1% rate on those purchases. If you expect $24,000 of comparable annual spending and only $600 per quarter in an activated category, the model puts Freedom Unlimited ahead by $24 a year. If no purchases qualify for an activated category, Freedom Unlimited leads by $120 on that same $24,000.\n\nFreedom Unlimited also fits if you do not plan to activate Freedom Flex categories each quarter. The $24,000 example with $1,500 of potentially matching purchases per quarter shows the cost of leaving the category unactivated: Freedom Flex earns $120 less than Freedom Unlimited in the model. Compare the unactivated result with your plans if quarterly activation is uncertain. Do not use the 5% scenario simply because you might spend $1,500 during a quarter.\n\nChase Freedom Flex fits a cash-back choice when you expect more than 12.5% of comparable annual purchases to fall into categories you activate, subject to the $1,500 cap in each quarter. With $24,000 of comparable annual spending, $1,500 in the activated category every quarter gives Freedom Flex $480 against Freedom Unlimited's $360. With $36,000 of comparable spending and the same full-cap category purchases, Freedom Flex's modeled lead falls to $60. At $48,000, the full-cap purchases produce a tie, so the larger total removes the Freedom Flex advantage.\n\nThese figures are annual comparisons of the stated cash-back rates. They do not include the $200 new cardmember bonus either card lists after $500 in purchases during the first 3 months from account opening. The [Freedom Flex offer details](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) also state a condition involving whether you have that card or received its new cardmember bonus in the past 24 months. If the introductory offer affects your choice, read the [Freedom Unlimited offer details](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited) alongside the Freedom Flex offer rather than adding a bonus to the annual spending tables.\n\nBoth cards list a $0 annual fee and the same 15-month 0% introductory APR on purchases and balance transfers. Both card pages then list an 18.49% to 27.99% variable APR and say a balance transfer fee applies. Those terms do not create an advantage for either card in our cash-back model. If the introductory rate or a balance transfer is central to your choice, review each card's linked pricing and terms before using a rewards-only result. APR means annual percentage rate.\n\nThe shared bonus categories also deserve a separate look. Both cards list 5% on travel bought through Chase Travel and 3% on dining and drugstores. A spending plan concentrated in those categories can make the difference from ordinary purchases smaller in dollar terms, even though the 12.5% break-even rule for comparable spending is unchanged. For example, our modeled $24,000 pattern with $9,000 in dining and drugstore purchases, $15,000 in ordinary purchases and no rotating-category spend gives Freedom Flex $420 and Freedom Unlimited $495. Their $75 difference comes from the ordinary purchases, where their rates differ. For more on purchases through Chase Travel, read the [Chase Travel portal guide](/guides/chase-travel-portal-guide/).\n\nOur answer would change if Chase changed the Freedom Flex 5% rate or quarterly cap, either card's base earn rate, or which purchases match an activated quarterly category. Purchases that overlap a Freedom Flex rotating category and the shared 3% dining or drugstore categories also fall outside the model. If you are choosing on terms other than annual cash back, use those terms to make a separate comparison. If neither card's listed rewards match what you want to compare, see our [best cash back credit cards](/roundup/best-cash-back-credit-cards/) list for other cards.\n\nFor a Chase Freedom Flex vs Unlimited cash-back decision, total a year of purchases outside Chase Travel, dining and drugstores, work out which could match an activated category each quarter, and review the [current Freedom Flex categories and terms](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex)."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Which is better, Chase Freedom Flex or Freedom Unlimited?",
+        "answer": "Chase Freedom Unlimited earns at least as much in the model unless activated Freedom Flex 5% purchases exceed 12.5% of comparable annual spending within the $1,500 quarterly cap. Comparable spending excludes Chase Travel, dining and drugstores, where the cards list the same rates. At $24,000 of comparable annual spending, $750 in an activated category each quarter produces a tie, and more than $750 per quarter gives Freedom Flex the lead."
+      },
+      {
+        "question": "Do Freedom Flex and Freedom Unlimited both have no annual fee?",
+        "answer": "Yes. Both cards list a $0 annual fee on their [Freedom Flex](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) and [Freedom Unlimited](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited) pages. Our annual cash-back model therefore makes no annual-fee deduction for either card."
+      },
+      {
+        "question": "Can I have both Chase Freedom Flex and Freedom Unlimited?",
+        "answer": "Chase's card pages do not say whether you can hold both cards. The model applies the same purchases to one card or the other. Check eligibility and offer terms on the [Freedom Flex card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) and [Freedom Unlimited card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited) before you apply."
+      },
+      {
+        "question": "Do both cards earn 5% on Chase Travel?",
+        "answer": "Yes. Both cards list 5% cash back on travel purchased through Chase Travel. Because that rate is the same, our break-even calculation leaves Chase Travel purchases out of comparable annual spending."
+      },
+      {
+        "question": "What is the intro APR on Freedom Flex and Freedom Unlimited?",
+        "answer": "Both cards list a 0% introductory annual percentage rate (APR) for 15 months from account opening on purchases and balance transfers. A balance transfer fee applies. The card pages list a variable APR of 18.49% to 27.99% after the introductory period. Review the [Freedom Flex pricing and terms](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) and [Freedom Unlimited pricing and terms](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited) for current rates."
+      },
+      {
+        "question": "Do I have to activate the Freedom Flex 5% categories?",
+        "answer": "Yes. Freedom Flex's listed 5% rotating-category rate applies to up to $1,500 in combined purchases each quarter you activate. In our $24,000 comparable-spending example, failing to activate the category leaves Freedom Flex earning $240 against Freedom Unlimited's $360, even when $1,500 of purchases per quarter would otherwise match the category."
+      },
+      {
+        "question": "Does Freedom Flex have a foreign transaction fee?",
+        "answer": "The [Freedom Flex card page](https://creditcards.chase.com/cash-back-credit-cards/freedom/flex) states no foreign transaction fee. The Freedom Unlimited card page does not state a foreign transaction fee, so this comparison does not assign one to Freedom Unlimited. Check Chase pricing and terms for the current fee."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Chase, Freedom Flex card page",
+        "url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/flex"
+      },
+      {
+        "label": "Chase, Freedom Unlimited card page",
+        "url": "https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited"
+      }
+    ],
+    "relatedComparisons": [
+      "bilt-rewards-vs-chase-ultimate-rewards"
+    ],
+    "calculatorLinks": []
+  },
   // ── comparison-content-auto 2026-10-26: hsa-vs-hra ──
   {
     "updated": "2026-10-26",
@@ -7933,7 +8329,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Pension vs 401(k): the core tradeoff",
         content:
-          "The core tradeoff is guaranteed income versus control and growth. A pension hands you certainty; a 401(k) hands you ownership.\n\nA pension protects you against outliving your money, which is called longevity risk. The check keeps coming no matter how long you live. But you cannot leave a large lump sum to your children, and the benefit rarely moves with you if you switch jobs.\n\nA 401(k) gives you flexibility and upside. You control the investments, you can pass the full balance to your heirs, and a strong market can grow your savings well beyond a pension's value. The price is uncertainty — a weak market or low savings rate can leave you short.\n\nNon-obvious rule: if you have a pension, you can afford to invest your 401(k) more aggressively, because the pension already covers your basic income floor.",
+          "The core tradeoff is guaranteed income versus control and growth. A pension hands you certainty; a 401(k) hands you ownership.\n\nA pension protects you against outliving your money, which is called longevity risk. The check keeps coming no matter how long you live. But you cannot leave a large lump sum to your children, and the benefit rarely moves with you if you switch jobs. If you have no pension and want guaranteed income some other way, compare [annuity vs 401(k)](/compare/annuity-vs-401k/).\n\nA 401(k) gives you flexibility and upside. You control the investments, you can pass the full balance to your heirs, and a strong market can grow your savings well beyond a pension's value. The price is uncertainty — a weak market or low savings rate can leave you short.\n\nNon-obvious rule: if you have a pension, you can afford to invest your 401(k) more aggressively, because the pension already covers your basic income floor.",
       },
       {
         heading: "What happens when you change jobs or die",
@@ -12992,7 +13388,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "When buying an annuity next to a pension makes sense",
         content:
-          "Very few workers today have a traditional pension at all — most retirement savings sit in a 401(k) or IRA, which pays out however you draw it down, not as a guaranteed monthly check. An annuity fills that gap: rolling part of an IRA or 401(k) balance into an immediate annuity converts a lump sum into pension-like guaranteed income for the rest of your life.\n\nThe tradeoff is cost and control. Annuities carry sales commissions, ongoing mortality and expense fees, and often rider fees on top, none of which a pension charges you directly (the employer absorbs the equivalent costs). A common approach: keep enough guaranteed income (Social Security plus any pension) to cover essential fixed expenses, and leave the rest invested for growth and flexibility rather than annuitizing all of it. Use the [Social Security calculator](/retirement/social-security-retirement-calculator/) and the [pension calculator](/retirement/pension-calculator/) to see how much guaranteed income you already have before deciding whether an annuity is worth adding.",
+          "Very few workers today have a traditional pension at all — most retirement savings sit in a 401(k) or IRA, which pays out however you draw it down, not as a guaranteed monthly check. An annuity fills that gap: rolling part of an IRA or 401(k) balance into an immediate annuity converts a lump sum into pension-like guaranteed income for the rest of your life. For how an annuity contract compares with the 401(k) itself, see [annuity compared with a 401(k)](/compare/annuity-vs-401k/).\n\nThe tradeoff is cost and control. Annuities carry sales commissions, ongoing mortality and expense fees, and often rider fees on top, none of which a pension charges you directly (the employer absorbs the equivalent costs). A common approach: keep enough guaranteed income (Social Security plus any pension) to cover essential fixed expenses, and leave the rest invested for growth and flexibility rather than annuitizing all of it. Use the [Social Security calculator](/retirement/social-security-retirement-calculator/) and the [pension calculator](/retirement/pension-calculator/) to see how much guaranteed income you already have before deciding whether an annuity is worth adding.",
       },
       {
         heading: "Qualified Annuity vs Non-Qualified Annuity: The Full Difference",
@@ -14952,7 +15348,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "How an Indexed Universal Life Policy Works",
         content:
-          "An indexed universal life policy is permanent life insurance with a cash value account. The interest that account earns is tied to an index such as the [S&P 500](https://www.spglobal.com/spdji/en/indices/equity/sp-500/) rather than to shares you own. The carrier credits interest using a floor, commonly 0 percent, and a cap or participation rate that limits how much of an index gain reaches your account. You are not invested in the market. You hold an insurance contract whose interest formula refers to the market.\n\nEvery premium splits three ways. Part buys the death benefit, part pays administration and rider charges, and whatever is left goes to cash value. [FINRA](https://www.finra.org/investors/investing/investment-products/insurance) states the mechanic plainly: the cost of your insurance protection, and in some cases other costs, are deducted from the policy account value.\n\nThat structure is why the early years matter so much. A policy funded at the minimum premium sends very little to cash value at the start. That leaves a small balance to compound and a thin cushion when charges climb later.",
+          "An indexed universal life policy is permanent life insurance with a cash value account. The interest that account earns is tied to an index such as the [S&P 500](https://www.spglobal.com/spdji/en/indices/equity/sp-500/) rather than to shares you own. The carrier credits interest using a floor, commonly 0 percent, and a cap or participation rate that limits how much of an index gain reaches your account. You are not invested in the market. You hold an insurance contract whose interest formula refers to the market. For another insurance contract set against a 401(k), see [annuity vs 401(k)](/compare/annuity-vs-401k/).\n\nEvery premium splits three ways. Part buys the death benefit, part pays administration and rider charges, and whatever is left goes to cash value. [FINRA](https://www.finra.org/investors/investing/investment-products/insurance) states the mechanic plainly: the cost of your insurance protection, and in some cases other costs, are deducted from the policy account value.\n\nThat structure is why the early years matter so much. A policy funded at the minimum premium sends very little to cash value at the start. That leaves a small balance to compound and a thin cushion when charges climb later.",
       },
       {
         heading: "What the 2026 Federal Limits Let You Put into a 401(k)",

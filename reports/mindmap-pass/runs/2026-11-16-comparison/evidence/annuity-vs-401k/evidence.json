@@ -1,0 +1,103 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-write",
+  "route": "/compare/annuity-vs-401k",
+  "readerQuestion": "Is an annuity better than a 401(k), or are they different things? [PAA 6/6 on-topic annuity questions, 0/6 name 401(k); ac 4/15 \"is an annuity better than a 401k\"/\"what's better\" question completions]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/approval-manifest.json",
+      "sha256": "e0ffc7e439ee1f9b8516f8272096743ec98675e2d0931cc12efcb9f32c2ec7f4"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/chart-review.json",
+      "sha256": "edd5b6412602730c02214de23d8d69f06ee3782c19e0846e7744e6cf4a2dfb93"
+    },
+    "actionId": "A2"
+  },
+  "presentation": {
+    "medium": "text + comparison table",
+    "placement": "Existing comparison template: opening answer, then side-by-side table, then modeled/sourced analysis",
+    "reason": "The reader's decision turns on finite, sourced thresholds; a scannable table plus a worked break-even answers it without a widget",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "The decision has a small number of discrete cases (plan tiers or scenario rows); a static grid shows every case and the break-even, whereas a calculator would only restate the same finite table"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "No sequence or changing assumption needs motion; static table is faster to scan"
+    }
+  },
+  "basis": "reported",
+  "decisionGap": "Readers treat an annuity and a 401(k) as alternatives; the primary sources show they sit at different layers (an employer plan versus an insurance contract), and the annuity source cautions about buying one inside a traditional 401(k).",
+  "finding": "A 401(k) is an employer plan with a $24,500 employee elective-deferral limit for 2026 (IRS) and possible employer matching contributions if the plan permits; an annuity is an insurance contract that can provide tax-deferred growth and guaranteed income but carries surrender charges and fees (Investor.gov). They are different tools, not substitutes, and Investor.gov urges caution about buying an annuity inside a traditional 401(k) or IRA.",
+  "conditions": "Applies when the reader has access to an employer 401(k); a person with no employer plan has no 401(k) to compare, so the question becomes annuity versus IRA. Match availability depends on the plan document. Early-withdrawal tax follows IRS Topic 558 only: generally 10% additional tax on the taxable part of distributions from a qualified retirement plan or deferred annuity contract before age 59 1/2, with exceptions.",
+  "whatWouldChange": "No employer plan, a plan with no match, needing income soon, or a change to the IRS 2026 limit or to the sources' stated rules.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/runs/2026-11-16-comparison/evidence/annuity-vs-401k/cases.json",
+    "sha256": "fb2ea4eb538ba13b1b97bed954e60b0024c2ce70f861695a02c566f4a36a67d9"
+  },
+  "caseDecisions": "cases.json returned candidates, none about annuities or retirement plans. None used; no client-conversation or testing claim is made.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/brief.md",
+      "sha256": "40ad467d7a5d5e0635a93f783dc85563d18370711ba5416cb7716316dabd8af7"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/coverage-lookup.txt",
+      "sha256": "f2a59427ff12ce1b7250c9468f60096b08f4f2a8102459de6464c23148ae4b57"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/keyword-volumes.json",
+      "sha256": "c22e6fd475a66768608ab95050db5022698c857d1fb4f525b5a51b25f76f4de8"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/serp.json",
+      "sha256": "db14f9e5ff96ddf172e40457aeffabc271d75228d3b647fe5e2793cca04fd28d"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/investor-gov-annuities.txt",
+      "sha256": "e960b20cd75aa1eea3b55f8544c199375539e35002cfa81e40c37c636f0af3f1"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/irs-401k-contributions.txt",
+      "sha256": "ad254005a91ff6d7f75e87523ffc1e450a284bf930e54cadb0cf85ddb975dfc1"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/ac-annuity-vs-401k.csv",
+      "sha256": "303ba6d98714a059a74c8f0b51a48f698d0f8c5ae861dbc6ad854bd20d6a0db1"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/irs-early-distribution-tax.txt",
+      "sha256": "e303d54765f05b6977ef6124158d59e03cb64b6845f238a1b6b1844126373e75"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-16-comparison/research/sources/irs-401k-plans.txt",
+      "sha256": "f45988f279032431469e8d80b0d5334adc071061be17ef4783c34638d7279e6b"
+    }
+  ],
+  "whyNoQuantitativeAnalysis": "Annuity payouts depend on insurer-set rates, age, contract type and riders that no public source fixes, and 401(k) plan fees vary by plan with no figure in the captured sources; a model would rest on invented assumptions.",
+  "reasoning": "Investor.gov defines an annuity as an insurance contract providing tax-deferred growth, possible guaranteed income and death benefits, with surrender charges, ongoing and implicit fees, and a caution about buying one inside a traditional 401(k) or IRA. The IRS says a 401(k) lets employees defer wages into individual accounts, with a 2026 elective deferral limit of $24,500 (or 100% of compensation, whichever is less) and employer matching contributions allowed if the plan permits and sometimes discretionary. Topic 558 applies the 10% additional early-distribution tax to qualified retirement plans such as a 401(k) and to deferred annuity contracts before 59 1/2. Because the two sit at different layers (plan versus contract), the page presents them as complements and conditions, not as ranked rivals. No 401(k) fee figure, required-minimum-distribution age or catch-up dollar amount is stated because the captured sources do not support one.",
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [
+      "research/sources/investor-gov-annuities.txt",
+      "research/sources/irs-401k-contributions.txt",
+      "research/sources/irs-401k-plans.txt",
+      "research/sources/irs-early-distribution-tax.txt"
+    ],
+    "scopeAndLimits": "Source-only: SEC Office of Investor Education and Advocacy (Investor.gov) for annuities, IRS for 401(k) and early-distribution tax. No testing or modeling.",
+    "publicMethod": "On-page citations with links to each source page.",
+    "placement": "throughout; attribution names Investor.gov and the IRS"
+  },
+  "takeaway": {
+    "conclusion": "Different tools: use the 401(k) first when the plan offers a match; an annuity answers a different question, guaranteed income, with surrender charges and fees.",
+    "appliesTo": "Readers with an employer 401(k) weighing an annuity",
+    "recordIds": [
+      "investor-gov-annuities.txt",
+      "irs-401k-contributions.txt"
+    ],
+    "basis": "reported",
+    "changeCondition": "No employer plan, a plan with no match, needing income soon, or a change to the IRS 2026 limit or to the sources' stated rules."
+  }
+}

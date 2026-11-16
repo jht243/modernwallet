@@ -1,0 +1,22 @@
+INSPECTED ROUTE: /compare/iul-vs-401k
+DATA FILE: src/data/comparisons.ts (entry begins line 14925)
+INSPECTED: 2026-11-16 by mindmap-build
+
+SECTION HEADINGS/TITLES FOUND:
+title: "IUL vs 401k Comes Down to the Employer Match",
+heading: "How an Indexed Universal Life Policy Works",
+heading: "What the 2026 Federal Limits Let You Put into a 401(k)",
+heading: "Why the Employer Match Decides IUL vs 401k",
+heading: "What Cost of Insurance Does to an IUL Over Time",
+heading: "Getting Your Money Out of Each Account",
+heading: "How Policy Loans and 401(k) Withdrawals Are Taxed",
+heading: "When an IUL Genuinely Beats More 401k Contributions",
+heading: "Who Should Skip an IUL",
+heading: "What Would Change Our Answer",
+question: "Is an IUL better than a 401k plan?",
+question: "What are the downsides of an IUL?",
+question: "How much do I need in my 401k to get $1,000 a month?",
+question: "Why do wealthy people use IUL?",
+
+LINES MENTIONING 'annuit':
+

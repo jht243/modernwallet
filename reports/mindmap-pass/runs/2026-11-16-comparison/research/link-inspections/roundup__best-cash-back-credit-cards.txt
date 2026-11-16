@@ -1,0 +1,25 @@
+INSPECTED ROUTE: /roundup/best-cash-back-credit-cards
+DATA FILE: src/data/roundups.ts (entry begins line 9297)
+INSPECTED: 2026-11-16 by mindmap-build
+
+SECTION HEADINGS/TITLES FOUND:
+title: "Best Cash Back Credit Cards of 2026",
+heading: "Rotating Categories Beat Flat Rate Only When You Concentrate Spending",
+heading: "How Cash Back Redemption Works",
+heading: "Category Caps Limit How Much You Earn",
+heading: "A Carried Balance Cancels Out the Rewards",
+question: "What is the best cash back credit card if I don't want to track categories?",
+question: "Is Discover it Cash Back's rotating category system worth the effort?",
+question: "Do any of these cash back cards charge an annual fee?",
+question: "How does cash back get paid out on these cards?",
+question: "Will carrying a balance wipe out the cash back I earn?",
+question: "What credit score do I need to qualify for these cards?",
+title: "Best Student Credit Cards of 2026",
+heading: "How a student with no credit history gets approved at all",
+heading: "The habits that build a score fast",
+
+LINES MENTIONING 'Freedom' (candidate anchor context):
+name: "Chase Freedom Unlimited",
+description: "The [Chase Freedom Unlimited](https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited) card pays 5% on travel booked through Chase Travel, 3% on dining including takeout and eligible delivery, 3% at drugstores, and 1.5% on everythi
+name: "Chase Freedom Unlimited",
+verdict: "Pick the Citi Double Cash Card or the Wells Fargo Active Cash Card if you want the simplest possible math: 2% on everything, no activation, no annual fee. Pick the Chase Freedom Unlimited card if restaurants and drugstores make up a real share of you
