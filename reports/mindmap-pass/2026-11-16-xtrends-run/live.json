@@ -1,0 +1,89 @@
+{
+  "status": "all-live",
+  "attempts": 1,
+  "verifiedCount": 9,
+  "pendingCount": 0,
+  "results": [
+    {
+      "url": "https://www.themodernwallet.com/guides/retirement-contribution-limits-2027",
+      "finalUrl": "https://www.themodernwallet.com/guides/retirement-contribution-limits-2027",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/retirement-contribution-limits-2027/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/guides/401k-contribution-limits-2026",
+      "finalUrl": "https://www.themodernwallet.com/guides/401k-contribution-limits-2026",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/401k-contribution-limits-2026/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/guides/ira-contribution-limits-2026",
+      "finalUrl": "https://www.themodernwallet.com/guides/ira-contribution-limits-2026",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/ira-contribution-limits-2026/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/compare/tsp-vs-401k",
+      "finalUrl": "https://www.themodernwallet.com/compare/tsp-vs-401k",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/compare/tsp-vs-401k/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/budget/aca-subsidy-calculator/",
+      "finalUrl": "https://www.themodernwallet.com/budget/aca-subsidy-calculator/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/budget/aca-subsidy-calculator/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/guides/google-wallet-gemini-bank-connection",
+      "finalUrl": "https://www.themodernwallet.com/guides/google-wallet-gemini-bank-connection",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/google-wallet-gemini-bank-connection/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/roundup/best-budgeting-apps",
+      "finalUrl": "https://www.themodernwallet.com/roundup/best-budgeting-apps",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/roundup/best-budgeting-apps/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/retirement/401k-calculator/",
+      "finalUrl": "https://www.themodernwallet.com/retirement/401k-calculator/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/retirement/401k-calculator/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/budget/monthly-budget-calculator",
+      "finalUrl": "https://www.themodernwallet.com/budget/monthly-budget-calculator",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/budget/monthly-budget-calculator/"
+    }
+  ]
+}

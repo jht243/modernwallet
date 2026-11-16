@@ -1,0 +1,13 @@
+{
+  "status": "live",
+  "commit": "352d7e75da03326e5f62e4d4ff48cf5db30cd79e",
+  "expectedPublicationCommit": "352d7e75da03326e5f62e4d4ff48cf5db30cd79e",
+  "includesPublicationCommit": true,
+  "verifiedAt": "2026-11-16T17:45:32.425373+00:00",
+  "evidenceUrl": "https://www.themodernwallet.com/.well-known/fleet-deployment.json",
+  "provider": "render",
+  "repository": "jht243/modernwallet",
+  "builtAt": "2026-11-16T17:44:09.828Z",
+  "runtimeVerifiedAt": null,
+  "source": "Canonical HTTPS host reports its actual provider-bound source commit; repository ancestry verified. No owner credential used."
+}
