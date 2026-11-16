@@ -271,6 +271,16 @@
       "repairs": [],
       "route": "/compare/simple-ira-vs-401k/"
     },
+    "d1a3a8f44631035afae28ef81a8d034f795d06651149a6e15549ab86628ad749": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "2026-11-16-xtrends",
+      "previousJobs": [],
+      "repairs": [],
+      "route": "/guides/retirement-contribution-limits-2027",
+      "updatedAt": "2026-11-16T17:13:28Z"
+    },
     "d44663880ab5a5ff293cffcf6c62918a5b9e895ab45cf2649f8387b59e2a48e1": {
       "generated": [
         "full"
