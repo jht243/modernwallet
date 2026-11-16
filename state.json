@@ -102,6 +102,16 @@
       "repairs": [],
       "route": "/guides/401k-loan-rules/"
     },
+    "2e41215c42aa4dcb13227e5f957ce90e0b3b5b8b5c93aa4f17b634ec51e51df6": {
+      "generated": [
+        "aca-subsidy-calculator"
+      ],
+      "jobId": "2026-11-16-xtrends",
+      "previousJobs": [],
+      "repairs": [],
+      "route": "/budget/aca-subsidy-calculator/",
+      "updatedAt": "2026-11-16T17:17:42Z"
+    },
     "31acc46cae6925881d8562aa39d9fa9b9d286324b6e2030e06d922eb59774ce7": {
       "generated": [
         "full"
