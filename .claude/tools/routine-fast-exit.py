@@ -498,6 +498,22 @@ def _is_utility_route(route: str) -> bool:
     return False
 
 
+def _extract_ga4_rows(doc: object) -> list | None:
+    if isinstance(doc, list):
+        return doc
+    if isinstance(doc, dict):
+        for k in ('top_pages', 'pages', 'rows'):
+            val = doc.get(k)
+            if isinstance(val, list):
+                return val
+    return None
+
+
+def _row_route(r: dict) -> str:
+    raw = str(r.get('page') or r.get('path') or r.get('pagePath') or r.get('route') or '')
+    return raw.split('?', 1)[0].rstrip('/') or '/'
+
+
 def check_ga4_cooldown(
     root: Path,
     *,
@@ -513,8 +529,8 @@ def check_ga4_cooldown(
     if not pages_json.is_file():
         return {'fastExit': False, 'reason': 'missing_pages_json'}
     doc = json.loads(pages_json.read_text(encoding='utf-8'))
-    rows = doc.get('pages') or doc.get('rows') or (doc if isinstance(doc, list) else [])
-    if not isinstance(rows, list):
+    rows = _extract_ga4_rows(doc)
+    if rows is None:
         return {'fastExit': False, 'reason': 'invalid_pages_shape'}
 
     shared_ledger = root / 'reports/trend-pass/ledger.md'
@@ -532,7 +548,7 @@ def check_ga4_cooldown(
     for r in rows:
         if not isinstance(r, dict):
             continue
-        p = str(r.get('path') or r.get('pagePath') or r.get('route') or '').split('?', 1)[0].rstrip('/') or '/'
+        p = _row_route(r)
         if _is_utility_route(p):
             skipped_utility.append(p)
             continue
@@ -619,8 +635,8 @@ def check_page_quality_pull(
     if not pages_json.is_file():
         return {'fastExit': False, 'reason': 'missing_pages_json'}
     doc = json.loads(pages_json.read_text(encoding='utf-8'))
-    rows = doc.get('pages') or doc.get('rows') or (doc if isinstance(doc, list) else [])
-    if not isinstance(rows, list):
+    rows = _extract_ga4_rows(doc)
+    if rows is None:
         return {'fastExit': False, 'reason': 'invalid_pages_shape'}
 
     # If the inline-affiliate engine exists (layer3labs), verify all content top pages are already covered before fast-exiting
@@ -631,7 +647,7 @@ def check_page_quality_pull(
         for r in rows:
             if not isinstance(r, dict):
                 continue
-            p = str(r.get('path') or r.get('pagePath') or r.get('route') or '').split('?', 1)[0].rstrip('/') or '/'
+            p = _row_route(r)
             if _is_utility_route(p):
                 continue
             slug = p.strip('/').rsplit('/', 1)[-1]
@@ -648,7 +664,7 @@ def check_page_quality_pull(
     for r in rows:
         if not isinstance(r, dict):
             continue
-        p = str(r.get('path') or r.get('pagePath') or r.get('route') or '').split('?', 1)[0].rstrip('/') or '/'
+        p = _row_route(r)
         if _is_utility_route(p):
             continue
         content_rows.append((p, r))
