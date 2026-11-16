@@ -81,6 +81,26 @@
       "repairs": [],
       "route": "/real-estate/bridge-loan-calculator/"
     },
+    "4e8d31eb8acc46eaf28071e70d62593065cd60f8116d542863bda35491a94fc7": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "2026-11-16-comparison",
+      "previousJobs": [
+        {
+          "generated": [
+            "full"
+          ],
+          "jobId": "2026-11-16-comparison",
+          "repairs": [],
+          "route": "/compare/quickbooks-vs-freshbooks",
+          "updatedAt": "2026-11-16T08:34:15Z"
+        }
+      ],
+      "repairs": [],
+      "route": "/compare/quickbooks-vs-freshbooks",
+      "updatedAt": "2026-11-16T08:34:20Z"
+    },
     "5d8ebb375f09ff4e60cfcdcf2f93240ab363b5d7f5729f81c8f0617aa16deab1": {
       "generated": [
         "full"
