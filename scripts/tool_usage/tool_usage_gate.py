@@ -57,11 +57,16 @@ def chart_path(m):
     return Path(f"reports/mindmap-pass/{m['date']}-tool-usage.md")
 
 
+def _canon_col(c):
+    s = re.sub(r"\s*\([^)]*\)", "", c.strip().lower())
+    return re.sub(r"[\s-]+", "_", s).strip("_")
+
+
 def chart_rows(text):
     """Return (header_cells, rows) of the first markdown table whose header has 'bucket'."""
     lines = text.splitlines()
     for i, l in enumerate(lines):
-        cells = [c.strip().lower() for c in l.strip().strip("|").split("|")]
+        cells = [_canon_col(c) for c in l.strip().strip("|").split("|")]
         if "bucket" in cells and i + 1 < len(lines) and set(lines[i + 1].replace("|", "").strip()) <= set("-: "):
             rows = []
             for r in lines[i + 2:]:
