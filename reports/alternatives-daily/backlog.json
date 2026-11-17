@@ -58,10 +58,18 @@
           "at": "2026-11-15T16:55:03+00:00",
           "status": "eligible",
           "note": "qualified: HTTP 200 verified & ranked by search demand"
+        },
+        {
+          "at": "2026-11-17T16:39:02+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-17"
         }
       ],
-      "status": "eligible",
-      "updatedAt": "2026-11-15T16:55:03+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-17T16:39:02+00:00",
+      "claimedOn": "2026-11-17",
+      "attempts": 1,
+      "lastNextAt": "2026-11-17T16:39:02+00:00"
     },
     {
       "vendor": "Acorns",
@@ -148,10 +156,18 @@
           "at": "2026-11-15T16:55:03+00:00",
           "status": "eligible",
           "note": "qualified: HTTP 200 verified & ranked by search demand"
+        },
+        {
+          "at": "2026-11-17T16:39:02+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-17"
         }
       ],
-      "status": "eligible",
-      "updatedAt": "2026-11-15T16:55:03+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-17T16:39:02+00:00",
+      "claimedOn": "2026-11-17",
+      "attempts": 1,
+      "lastNextAt": "2026-11-17T16:39:02+00:00"
     },
     {
       "vendor": "Robinhood",
@@ -902,10 +918,18 @@
           "at": "2026-11-15T16:55:03+00:00",
           "status": "eligible",
           "note": "qualified: HTTP 200 verified & ranked by search demand"
+        },
+        {
+          "at": "2026-11-17T16:39:02+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-17"
         }
       ],
-      "status": "eligible",
-      "updatedAt": "2026-11-15T16:55:03+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-17T16:39:02+00:00",
+      "claimedOn": "2026-11-17",
+      "attempts": 1,
+      "lastNextAt": "2026-11-17T16:39:02+00:00"
     },
     {
       "vendor": "QuickBooks",

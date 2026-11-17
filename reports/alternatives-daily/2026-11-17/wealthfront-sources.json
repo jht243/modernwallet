@@ -1,0 +1,10 @@
+{"slug":"wealthfront","checked":"2026-11-17","subject":{"product":"Wealthfront","urls":["https://www.wealthfront.com/","https://www.wealthfront.com/pricing"]},
+"alternatives":[
+{"product":"Betterment","urls":["https://www.betterment.com/pricing"]},
+{"product":"Schwab Intelligent Portfolios","urls":["https://www.schwab.com/intelligent-portfolios"]},
+{"product":"Vanguard Digital Advisor","urls":["https://investor.vanguard.com/advice/digital-advisor"]},
+{"product":"Fidelity Go","urls":["https://www.fidelity.com/managed-accounts/fidelity-go/overview"]},
+{"product":"Ally Invest Robo Portfolios","urls":["https://www.ally.com/invest/robo-portfolios/"]},
+{"product":"Acorns","urls":["https://www.acorns.com/pricing/"]},
+{"product":"M1","urls":["https://m1.com/pricing/"]}],
+"unreadable":[{"product":"SoFi Automated Investing","url":"https://www.sofi.com/invest/automated-investing/","reason":"404; swapped out"}]}
