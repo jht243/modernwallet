@@ -225,4 +225,21 @@ class Tests(unittest.TestCase):
    }})
    h.complete(self.root,verified)
    self.assertTrue(h.completed(self.root,self.path))
+ def test_publication_plan_binds_manifest_job_id_on_projected_review(self):
+  spec=importlib.util.spec_from_file_location('actual_policy_fixtures_proj',here/'content-review-policy_test.py');pf=importlib.util.module_from_spec(spec);spec.loader.exec_module(pf)
+  fixture=pf.Tests();fixture.setUp();self.addCleanup(fixture.doCleanups)
+  fixture.config.update(canonicalHosts=['example.com']);fixture.put(pf.p.CONFIG,fixture.config)
+  job='competitor-'+self.path.stem[:12]
+  admission=fixture.reserve(1,job=job)
+  report=fixture.report(admission,'PASS')
+  report.pop('jobId',None)
+  path=fixture.put('reports/pass-no-jobid.json',report)
+  pf.p.record(fixture.root,path)
+  with patch.object(h,'active',return_value=self.path),patch.object(h,'load',return_value=pf.p):
+   out_file=fixture.root/'reports/publication/pubplan.json'
+   result=h.publication_plan(fixture.root,out_file)
+   self.assertEqual(len(result['routes']),1)
+   rev_ref=result['routes'][0]['review']
+   rev_doc=json.loads((fixture.root/rev_ref['path']).read_text())
+   self.assertEqual(rev_doc.get('jobId'),job)
 if __name__=='__main__':unittest.main()
