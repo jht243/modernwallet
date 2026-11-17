@@ -57,16 +57,19 @@ def chart_path(m):
     return Path(f"reports/mindmap-pass/{m['date']}-tool-usage.md")
 
 
-def _canon_col(c):
-    s = re.sub(r"\s*\([^)]*\)", "", c.strip().lower())
-    return re.sub(r"[\s-]+", "_", s).strip("_")
+def _norm_header(cell: str) -> str:
+    raw = cell.strip()
+    if raw == "#":
+        return "#"
+    s = re.sub(r"\s*\([^)]*\)", "", raw.lower())
+    return re.sub(r"[^a-z0-9]+", "_", s).strip("_")
 
 
 def chart_rows(text):
     """Return (header_cells, rows) of the first markdown table whose header has 'bucket'."""
     lines = text.splitlines()
     for i, l in enumerate(lines):
-        cells = [_canon_col(c) for c in l.strip().strip("|").split("|")]
+        cells = [_norm_header(c) for c in l.strip().strip("|").split("|")]
         if "bucket" in cells and i + 1 < len(lines) and set(lines[i + 1].replace("|", "").strip()) <= set("-: "):
             rows = []
             for r in lines[i + 2:]:
@@ -264,11 +267,11 @@ def cmd_final(a):
             probs.append("audit.md final verdict is FAIL")
     led = Path("reports/standards-ledger.jsonl")
     today = [l for l in (led.read_text().splitlines() if led.exists() else []) if m["date"] in l]
-    if any("create new content" in r.get("bucket", "").lower() for r in rows) and not any('"phase-3"' in l or '"write"' in l for l in today):
-        probs.append("no phase-3 entry in reports/standards-ledger.jsonl today (load-standards.sh was skipped)")
+    if any("create new content" in r.get("bucket", "").lower() for r in rows) and not any(('"phase-3"' in l or '"write"' in l) for l in today):
+        probs.append("no phase-3/write entry in reports/standards-ledger.jsonl today (load-standards.sh was skipped)")
     if any("update existing body text" in r.get("bucket", "").lower() and not is_fix(r)
-           for r in rows) and not any('"phase-5"' in l or '"write"' in l for l in today):
-        probs.append("no phase-5 entry in reports/standards-ledger.jsonl today")
+           for r in rows) and not any(('"phase-5"' in l or '"write"' in l) for l in today):
+        probs.append("no phase-5/write entry in reports/standards-ledger.jsonl today")
     metas = glob.glob(f"reports/mindmap-pass/{m['date']}*/**/*.meta.json", recursive=True)
     for r in rows:
         if "create new content" in r.get("bucket", "").lower():
@@ -360,8 +363,7 @@ def page_bundle(base, route):
     """Picks render after the visitor computes, so read the page AND its same-origin JS chunks."""
     html = fetch(base + route)
     parts = [html]
-    # <script src> plus Astro island chunks (component-url / renderer-url): client:only islands render the picks.
-    for src in re.findall(r'<script[^>]+src="([^"]+)"', html) + re.findall(r'(?:component|renderer)-url="([^"]+)"', html):
+    for src in re.findall(r'<script[^>]+src="([^"]+)"', html):
         if src.startswith("//") or (src.startswith("http") and not src.startswith(base)):
             continue
         parts.append(fetch(src if src.startswith("http") else base + "/" + src.lstrip("/")))
