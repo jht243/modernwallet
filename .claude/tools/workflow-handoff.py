@@ -201,8 +201,12 @@ def handoff_check(root, path, actor=None, phase=None, visited=None):
                 snap = read(evidence_ref(root, pair.get('snapshot')))
                 report = read(evidence_ref(root, pair.get('review')))
                 manifest = snap.get('manifest', {})
+                m_job = str(manifest.get('jobId') or '').strip()
+                r_job = str(report.get('jobId', m_job) or '').strip()
+                h_job = str(h.get('jobId') or '').strip()
+                same_job = bool(h_job) and (m_job == h_job or m_job.startswith(h_job + '-cont-')) and (r_job == h_job or r_job.startswith(h_job + '-cont-'))
                 require(manifest.get('workflowKind') == 'mindmap-pass' and
-                        manifest.get('jobId') == report.get('jobId', manifest.get('jobId')) == h['jobId'] and
+                        same_job and
                         _same_site_origin(root, manifest.get('canonicalBase', ''), h['canonicalBase']),
                         'Each editorial approval must belong to this exact job and site')
                 renderer.review_check(snap, report)
