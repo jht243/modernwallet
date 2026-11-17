@@ -348,3 +348,9 @@
 | /guides/are-church-donations-tax-deductible/ | 2026-11-15 | 6 | 0/0/0/0/0 | 0 |
 | /roundup/best-index-funds/ | 2026-11-16 | 10 | 0/0/0/0/0 | 0 |
 | /update-listing | 2026-11-16 | 16 | 0/0/0/0/0 | 0 |
+| /guides/senior-deduction-social-security/ | 2026-11-17 | 13 | 0/0/0/0/0 | 0 |
+| /guides/trump-account-worth-it/ | 2026-11-17 | 24 | 0/0/0/0/0 | 0 |
+| /guides/tax-deductions-checklist/ | 2026-11-17 | 23 | 0/0/0/0/0 | 0 |
+| /social-security-cola-calculator/ | 2026-11-17 | 22 | 0/0/0/0/0 | 1 |
+| /investing/high-yield-savings-calculator/ | 2026-11-17 | 15 | 0/0/0/0/0 | 0 |
+| / | 2026-11-17 | 12 | 0/0/0/0/0 | 0 |

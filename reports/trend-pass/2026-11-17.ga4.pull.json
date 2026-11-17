@@ -1,0 +1,127 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-11-16",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 70,
+      "sessions": 76,
+      "active_users": 68,
+      "clicks": 70
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 32,
+      "sessions": 33,
+      "active_users": 29,
+      "clicks": 32
+    },
+    {
+      "page": "/guides/trump-account-worth-it/",
+      "views": 24,
+      "sessions": 21,
+      "active_users": 19,
+      "clicks": 24
+    },
+    {
+      "page": "/guides/tax-deductions-checklist/",
+      "views": 23,
+      "sessions": 22,
+      "active_users": 21,
+      "clicks": 23
+    },
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 22,
+      "sessions": 20,
+      "active_users": 19,
+      "clicks": 22
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 19,
+      "sessions": 19,
+      "active_users": 18,
+      "clicks": 19
+    },
+    {
+      "page": "/guides/how-to-buy-treasury-bills/",
+      "views": 16,
+      "sessions": 15,
+      "active_users": 13,
+      "clicks": 16
+    },
+    {
+      "page": "/investing/high-yield-savings-calculator/",
+      "views": 15,
+      "sessions": 14,
+      "active_users": 14,
+      "clicks": 15
+    },
+    {
+      "page": "/guides/senior-deduction-social-security/",
+      "views": 13,
+      "sessions": 11,
+      "active_users": 10,
+      "clicks": 13
+    },
+    {
+      "page": "/",
+      "views": 12,
+      "sessions": 12,
+      "active_users": 11,
+      "clicks": 12
+    }
+  ],
+  "top10_pages_total_views": 246,
+  "top10_pages_total_clicks": 246,
+  "channel_split": {
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 73,
+      "Unassigned": 22,
+      "Direct": 3
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 31,
+      "Unassigned": 7,
+      "Direct": 2
+    },
+    "/guides/tax-deductions-checklist/": {
+      "Organic Search": 22,
+      "Unassigned": 7
+    },
+    "/social-security-cola-calculator/": {
+      "Organic Search": 20,
+      "Unassigned": 4
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 19,
+      "Unassigned": 8
+    },
+    "/guides/trump-account-worth-it/": {
+      "Organic Search": 17,
+      "Direct": 4,
+      "Unassigned": 3
+    },
+    "/investing/high-yield-savings-calculator/": {
+      "Organic Search": 14,
+      "Unassigned": 5
+    },
+    "/guides/how-to-buy-treasury-bills/": {
+      "Organic Search": 13,
+      "Unassigned": 3,
+      "Referral": 1
+    },
+    "/guides/senior-deduction-social-security/": {
+      "Organic Search": 10,
+      "Unassigned": 3
+    },
+    "/": {
+      "Direct": 5,
+      "Organic Search": 5,
+      "Unassigned": 2,
+      "Referral": 1
+    }
+  }
+}
