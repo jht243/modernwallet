@@ -1,0 +1,69 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "YNAB Alternatives 2026: Prices and Plans Compared",
+   "problem": "SEO title is 49 characters; rule 5 requires 50 to 60.",
+   "fix": "Lengthen, e.g. 'YNAB Alternatives 2026: Prices and Plans Compared Side by Side' only if <=60, or 'YNAB Alternatives 2026: Plans, Prices and Features Compared'.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "$3.99 per month billed annually ($47.88 per year; regular list price $6.99 per month, or $83.88 per year)",
+   "problem": "$47.88 and $83.88 are derived (Quicken footnote: final price may differ from monthly x 12); $3.99 is a first-year, new-member offer expiring Dec 8, 2026 but is called 'the published rate', used as the cheapest paid option in verdict/FAQ and in arithmetic ($61.12 lower).",
+   "fix": "Lead with regular $6.99/month billed annually, label $3.99 as a limited first-year new-member offer, drop $47.88 and the '$61.12 lower' comparison or mark as estimate.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "Figures reflect regular list prices in US dollars before local sales taxes. / Copilot Money ... $9 per month billed yearly at $109 (regularly $119). Monthly price not published.",
+   "problem": "Table note says regular list prices but includes promotional prices; Copilot 'monthly price not published' unverified (page has Yearly/Monthly toggle).",
+   "fix": "Fix note wording; remove 'monthly price not published/not displayed' claims everywhere (table, choose section, Copilot section, 'What Would Change' bullet).",
+   "hard_blocker": true
+  },
+  {
+   "id": "F4",
+   "quote": "Does the software support ... / Does the platform offer a one-time purchase ... / The service recommends signing up on the web / The software connects to ... / The company publishes",
+   "problem": "Coy abstractions on a page naming its subjects.",
+   "fix": "Name the products ('Does the app you pick ...' -> 'Does YNAB or the alternative ...').",
+   "hard_blocker": true
+  },
+  {
+   "id": "F5",
+   "quote": "At The Modern Wallet, we lay out the arithmetic behind subscription costs",
+   "problem": "Self-referential 'we' tee-up in the intro; weak.",
+   "fix": "Delete or replace with a concrete fact.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F6",
+   "quote": "YNAB remains the better option for households committed to assigning every dollar a job",
+   "problem": "Reads as a recommendation; page rules say list, never recommend ('fits households that...').",
+   "fix": "Reword to 'YNAB fits households that...'.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F7",
+   "quote": "Monarch Money ... The service recommends signing up on the web and provides a 7-day trial.",
+   "problem": "Monarch's page says 'Your first week is on us', not '7-day trial'; stated as published fact.",
+   "fix": "Quote 'first week free' or say 'first week free (7 days)'.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F8",
+   "quote": "What Would Change Our Answer on YNAB Alternatives",
+   "problem": "Heading plus 'Who This Is Not For' fine, but 'Who This Is Not For' text points to a hub for small business tools rather than stating a limit; sentence 'Those looking for ... can review dedicated alternatives platforms in our financial comparisons hub' is vague.",
+   "fix": "Link a specific page (/compare/) or state the limit directly.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F9",
+   "quote": "reader question: ... (evidence tag: PAA/intent estimate)",
+   "problem": "Evidence tag not in required format.",
+   "fix": "Record proper tag.",
+   "hard_blocker": false
+  }
+ ]
+}

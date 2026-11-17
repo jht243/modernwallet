@@ -1,0 +1,76 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "Monarch Money Alternatives 2026: Plans and Prices",
+   "problem": "SEO title is 49 characters; page rule 5 requires 50 to 60.",
+   "fix": "Use e.g. 'Monarch Money Alternatives 2026: Plans and Prices Compared' (58) in title, H1 and metaTitle.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "Who this is not for: - People who require completely offline bookkeeping ... What would change our answer: - Monarch Money altering ...",
+   "problem": "Both required sections render as run-in paragraphs with literal ' - ' hyphens (markdown list collapsed) inside the choose section, with no headings; 'enterprise enterprise' typo.",
+   "fix": "Make them H2 sections ('Who This Is Not For', 'What Would Change Our Answer') or separate paragraphs with real list markup; fix typo.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "The table lists regular subscription rates in United States Dollars (USD) without promotional discounts.",
+   "problem": "False: table lists Copilot's limited-time $109 (regular $119) and Simplifi promo $3.99; Simplifi cell also mixes both.",
+   "fix": "Reword the note to 'Prices as published; promotional rates are labelled' or list Copilot at $119 regular with the $109 offer labelled.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F4",
+   "quote": "Copilot Money ... Monthly billing is not shown. / Monthly subscription pricing is not published on the page. / Copilot Money does not display a monthly billing option",
+   "problem": "copilot.money/pricing has a Yearly/Monthly toggle (fetched text shows 'Yearly | Monthly'); the monthly price is not in the captured text, so 'not published' is unverified and likely false. Also drives 'What would change our answer' bullet and the YNAB page.",
+   "fix": "Remove all 'monthly not published/not displayed' claims; state only the verified yearly $109 (from $119, limited time) and say a monthly option is toggled on the page without a captured price, or omit.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F5",
+   "quote": "At The Modern Wallet, we calculate the yearly expense of budgeting subscriptions so households can see ...",
+   "problem": "Self-referential 'we' process claim in the intro (unverifiable company claim, tee-up bolted on); second sentence is not the direct answer.",
+   "fix": "Replace with a plain fact sentence about the table or delete.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F6",
+   "quote": "The service begins with a 30-day free trial ... The service connects to 14,000+ ... The company publishes ... Monarch Money utilizes general expense categorizing",
+   "problem": "Coy abstractions ('the service', 'the company') and inflated verb 'utilizes' on a page naming its subjects.",
+   "fix": "Use product names; replace 'utilizes' with 'offers'.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F7",
+   "quote": "Monarch Money Core provides household sharing and partner collaboration without ads. / Monarch Money offers an active For Couples page with household sharing.",
+   "problem": "Household sharing is inferred from a nav item and a customer testimonial; pricing page lists no sharing in Core. The sibling YNAB page says Monarch 'does not list group sharing on its pricing page'. Contradictory.",
+   "fix": "Soften to what is published ('Monarch lists a For Couples page') or drop the sharing claim in both pages.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F8",
+   "quote": "Quicken Simplifi at its regular $6.99 per month billed annually costs $83.88 per year (12 x $6.99)",
+   "problem": "Quicken's footnote says the final annual price may differ from monthly x 12; $83.88 is derived, not published. Promo $3.99 is first-year, new members only, ends Dec 8, 2026, not stated.",
+   "fix": "Label $83.88 as 'about' or drop; add that the $3.99 offer is first-year, new-member only.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F9",
+   "quote": "Copilot Money falls short of Monarch Money on cross-platform accessibility",
+   "problem": "Copilot lists iPhone, iPad, Mac and Web; claim of cross-platform shortfall is not supported by its site.",
+   "fix": "Delete or restate as 'lists iPhone, iPad, Mac and Web; no Android app listed'.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F10",
+   "quote": "reader question: ... (evidence tag: PAA/intent estimate)",
+   "problem": "Evidence tag is generic, not the [PAA n/m; ac n/m] format; no tee-up/anchor record.",
+   "fix": "Record proper evidence tag in prompt/row records.",
+   "hard_blocker": false
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "investors can compare annual costs without marketing spin",
+   "problem": "Self-asserted neutrality claim (hard fail in NEUTRALITY gate) plus self-referential 'At The Modern Wallet, we lay out...' tee-up.",
+   "fix": "Delete the sentence or replace with a factual sentence about what the table contains.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "published advisory fees from $0 up to 0.35% annually",
+   "problem": "Contradicted by the table and Betterment section: Betterment Premium is 0.65% (0.25% base + 0.40%); Premium also has a $100,000 minimum not stated.",
+   "fix": "Say 'from $0 up to 0.65% (Betterment Premium)' and add the $100,000 Premium minimum in the Betterment cell and section.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "Vanguard's published all-index cost of $15 per year totals $75, while Wealthfront's advisory fee totals $125.",
+   "problem": "Apples-to-oranges: Vanguard's $15 to $16 per $10,000 is described by the page as net advisory and fund cost, while Wealthfront's 0.25% is stated 'before underlying ETF expenses'; also ignores the 90-day $0 period. Vanguard's ESG option ($25 per $10,000) is omitted.",
+   "fix": "State both on the same basis (advisory only vs all-in) or drop the five-year comparison; mention ESG $25.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F4",
+   "quote": "$3.18 monthly ... which totals $38.16 over twelve months (or $37.50 based on exact annualized math)",
+   "problem": "Derived figures not on Wealthfront's site; the parenthetical effectively corrects the vendor's own published $3.18 (0.25% x $15,000 / 12 = $3.125).",
+   "fix": "Keep only the vendor's published '$3.18 monthly on $15,000' and delete the $38.16/$37.50 sentence.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F5",
+   "quote": "Wealthfront maintains uniform advisory pricing across its portfolio sizes. / includes tax-loss harvesting on taxable portfolios without a $50,000 threshold / personalized risk-adjusted portfolios, automatic rebalancing",
+   "problem": "Not stated on the fetched wealthfront.com home/pricing pages (absence of a published minimum is not a published fact).",
+   "fix": "Remove or restate only as published ('0.25% annually' and the Classic 4.2x claim, which is on the pricing page).",
+   "hard_blocker": false
+  },
+  {
+   "id": "F6",
+   "quote": "Acorns also lists a Premium plan that includes a $10,000 life insurance policy and a will",
+   "problem": "Acorns pricing page presents these as 'Acorns Gold exclusive' benefits 'included in an Acorns Premium subscription'; no separate Premium price is published, and the table lacks it.",
+   "fix": "Say 'Gold includes (described as Premium on the page) ...' or remove.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F7",
+   "quote": "Who this is not for: ... What would change the answer: ...",
+   "problem": "Required sections render as run-in paragraphs inside the choose section, with no headings; 'Who this is not for' is a pro-con pointer to zero-fee options rather than a limit.",
+   "fix": "Give each its own H2.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F8",
+   "quote": "Compare your current balance and required account features against published fees to find the right automated Wealthfront alternatives. / Wealthfront remains a practical option ... find Wealthfront well matched",
+   "problem": "Advice-flavored framing on an investing page; 'the right' alternatives and 'remains a practical option' read as recommendation.",
+   "fix": "Reword to 'fits investors who...' and drop 'find the right'.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F9",
+   "quote": "The service charges a $0 advisory fee ... The choice depends on",
+   "problem": "Coy abstraction 'The service' (Vanguard section).",
+   "fix": "Use 'Vanguard Digital Advisor'.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F10",
+   "quote": "Related on ModernWallet: Robinhood Alternatives / Wise Alternatives / Quicken Alternatives",
+   "problem": "No contextual internal links in body (3+ required by rule 5); the only internal links are a related list of loosely relevant pages.",
+   "fix": "Add contextual links to relevant site pages (e.g. /compare/ hub or investing roundups).",
+   "hard_blocker": false
+  },
+  {
+   "id": "F11",
+   "quote": "M1 Self-Directed Pies and Platform Fees",
+   "problem": "Heading mentions 'Pies' which the body never explains or sources.",
+   "fix": "Rename to 'M1 Platform Fees and Self-Directed Brokerage'.",
+   "hard_blocker": false
+  }
+ ]
+}
