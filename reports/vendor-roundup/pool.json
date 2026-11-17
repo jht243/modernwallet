@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15T16:08:33.509Z",
+  "generated": "2026-11-17T16:09:34.159Z",
   "rows": [
     {
       "vertical": "dataannotation-alternatives",
@@ -119,18 +119,18 @@
       "label": "budgeting apps for couples",
       "roundupSlug": "best-budgeting-apps-for-couples",
       "route": "ENRICH",
-      "qualified": 18,
-      "listed": 17,
+      "qualified": 19,
+      "listed": 18,
       "missing": [
         {
-          "domain": "kasafinance.online",
-          "name": "Kasa, simplest budgeting app you can find",
-          "site_url": "https://kasafinance.online/",
-          "one_liner": "Show HN: Kasa, simplest budgeting app you can find",
+          "domain": "spendaq.com",
+          "name": "The best budget app for couples and households (no bank ...",
+          "site_url": "https://spendaq.com",
+          "one_liner": "Jul 27, 2026 — The best couples budget app is one you'll both actually keep using: fast to log, private, and able to separate joint spending from personal ... Read more",
           "site_kind": "vendor",
-          "has_pricing": false,
-          "serp_rank": null,
-          "primary_email": "contact@kasafinance.online"
+          "has_pricing": true,
+          "serp_rank": 11,
+          "primary_email": "support@spendaq.com"
         }
       ]
     },
@@ -428,10 +428,21 @@
       "vertical": "business-line-of-credit-rates-by-lender",
       "label": "business line of credit lenders",
       "roundupSlug": "business-line-of-credit-rates-by-lender",
-      "route": "ACCRUE",
-      "qualified": 10,
+      "route": "ENRICH",
+      "qualified": 11,
       "listed": 10,
-      "missing": []
+      "missing": [
+        {
+          "domain": "amucu.org",
+          "name": "Best Business Line of Credit for Your Company",
+          "site_url": "https://amucu.org",
+          "one_liner": "How much credit can I access? In general, business credit lines range from $100,000 to $500,000. Companies that can demonstrate higher revenue can qualify for ... Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 15,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "business-credit-cards",

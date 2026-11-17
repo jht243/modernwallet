@@ -1180,6 +1180,19 @@
       "People wanting a simple tracker without linking a bank"
      ],
      "added": "2026-11-15"
+    },
+    {
+     "name": "Spendaq",
+     "domain": "spendaq.com",
+     "url": "https://www.spendaq.com/",
+     "values": [
+      "Free tier; Pro $29.99/year; Lifetime $79.99 (US App Store)",
+      "Not published; separate vaults for household spending",
+      "No; manual transaction entry",
+      "Envelope budgets per category; zero-based not stated",
+      "Privacy-minded iPhone users comfortable logging spending by hand; iOS 17+"
+     ],
+     "added": "2026-11-17"
     }
    ]
   },
