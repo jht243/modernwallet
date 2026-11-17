@@ -259,9 +259,13 @@ def publication_plan(root,out):
   else:
    admission=read(policy.artifact(root,row['admission']));snapshot=policy.artifact(root,admission['snapshot']);review=policy.artifact(root,row['report'])
    key=sha(canonical({'route':row['route'],'admission':row['admission'],'report':row['report']}))[:20]
-   matches=[route['path'] for route in read(snapshot)['routes'] if route['path'].rstrip('/')==row['route'].rstrip('/')]
+   snap_doc=read(snapshot)
+   matches=[route['path'] for route in snap_doc['routes'] if route['path'].rstrip('/')==row['route'].rstrip('/')]
    require(len(matches)==1,'Route must uniquely match the admitted snapshot: '+row['route'])
    projected=policy.project(root,snapshot,review,matches,out.parent/(key+'-approved.json'),out.parent/(key+'-review.json'))
+   rev_doc=read(out.parent/(key+'-review.json'));snap_job=(snap_doc.get('manifest') or {}).get('jobId') or row.get('jobId')
+   if snap_job and not rev_doc.get('jobId'):
+    rev_doc['jobId']=snap_job;jb_path=out.parent/(key+'-job-review.json');policy.save_exact(jb_path,rev_doc);projected['review']=policy.reference(root,jb_path)
    item.update(next='exact-live-compare-and-record-deployment',**projected)
   result['routes'].append(item)
  save(out,canonical(result));return result
