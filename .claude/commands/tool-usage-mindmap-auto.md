@@ -14,6 +14,13 @@ Run startup as a standalone command and inspect its actual exit code; never pipe
 Startup returns a fresh `runId` after verification; pass it via `--run-id` to this run's later startup checks and every `workflow-preflight.py prepare`. Never reuse an old run ID for a new routine, including in the same chat. A runner may instead supply a fresh per-invocation `WORKFLOW_RUN_ID` consistently.
 <!-- /workflow-source-freshness-v1 -->
 
+<!-- turn1-telemetry-opt-v1 -->
+> **⚡ TURN-1 TOOL-USAGE FAST-EXIT, PURE-STDLIB PNG CHECK & SONNET RANGE DISPATCH (2026-11-16):**
+> 1. Run `site_tool_usage.py` + STEP 2's cooldown/ledger filter **BEFORE** reading `_decision-evidence.md`, `_testing-labels.md`, or installing Playwright. When `0` tools survive into `picked.json`, run `python3 .claude/tools/routine-fast-exit.py json-candidates --skill tool-usage-mindmap-auto --site <BASE_URL> --input reports/tool-usage-pass/<DATE>/picked.json --post-collector` and **STOP immediately in that turn** (`collectorPosted: true`).
+> 2. `.claude/tools/gsc-search-analytics/gsc_search_analytics.py` auto-installs `google-auth` + `requests` silently (`--break-system-packages`) — never run `pip install` manually. To check PNG screenshot dimensions in STEP 2, use pure stdlib `struct.unpack('>II', open(p, 'rb').read(24)[16:24])` (NEVER import `PIL`/`Pillow`, which fails on Debian C-extensions). Always pass `timeout: 600000` on foreground Playwright, build, and `content_gen.py` commands so `.claude/tools/no-background-agents.sh` never blocks.
+> 3. In STEP 3 (`/mindmap-pass`), `MAIN` acts strictly as a thin dispatcher: spawn fresh `model: "sonnet"` `mindmap-build`, `mindmap-chart-review`, `mindmap-write`, and `mindmap-audit` stage workers, deliver preflight in 6–8 parallel 3-part `--through` range calls per turn (`18–24` parts/turn), and end your turn immediately when an async `Agent` launches (zero `sleep` polling loops).
+<!-- /turn1-telemetry-opt-v1 -->
+
 
 > **‼️ PROSE RULE FOR THIS RUN — READ BEFORE ANY PHASE FILE.** Every page this run creates and
 > every enrichment longer than ONE sentence (intro, how-to, FAQ, explanation sections) is
@@ -218,5 +225,5 @@ Copy ALL of these into the target repo, then pilot one run before scheduling mor
    Real ASINs need `AMZ_CLIENT_ID` / `AMZ_CLIENT_SECRET` (layer3labs' Creators API client) exported in the routine prompt; without them `amazon_pick.py` falls back to tagged search links.
 2. In `.claude/settings.json`: add `$CLAUDE_PROJECT_DIR/.claude/tools/tool-usage-gates.sh` as a PreToolUse hook with matcher `Edit|Write|MultiEdit|NotebookEdit|Bash`, and `"modelSettings": {"claude-opus-5-5": {"effortLevel": "medium"}}`.
 3. The repo's mindmap-pass must have Phase 3c (MINDMAP-BUILDS-TOOLS). `scripts/mindmap/coverage_lookup.py` must exist.
-4. Routine: `model: claude-opus-5-5` on the trigger (RemoteTrigger update `{"model": "claude-opus-5-5"}`), branch `claude/tool-usage-<site>` (the hook keys on the `claude/tool-usage` prefix), prompt cloned from Chalkbox's (`trig_01VG4Bqr2GvqHCiihMCwLCq6`) with that site's keys.
+4. Routine: `model: claude-sonnet-5-5` on the trigger (RemoteTrigger update `{"model": "claude-sonnet-5-5"}`), branch `claude/tool-usage-<site>` (the hook keys on the `claude/tool-usage` prefix), prompt cloned from Chalkbox's (`trig_01VG4Bqr2GvqHCiihMCwLCq6`) with that site's keys.
 5. After the first run: `get_run_log` → confirm `init: model=claude-opus-5-5` and that all six gates passed in order.

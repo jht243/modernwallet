@@ -14,6 +14,10 @@ Run startup as a standalone command and inspect its actual exit code; never pipe
 Startup returns a fresh `runId` after verification; pass it via `--run-id` to this run's later startup checks and every `workflow-preflight.py prepare`. Never reuse an old run ID for a new routine, including in the same chat. A runner may instead supply a fresh per-invocation `WORKFLOW_RUN_ID` consistently.
 <!-- /workflow-source-freshness-v1 -->
 
+<!-- turn1-telemetry-opt-v1 -->
+> **⚡ TURN-1 AUTOCOMPLETE FAST-EXIT & 24-PART/TURN RANGE PREFLIGHT (2026-11-16):** Run STEP 1's seed selection and `autocomplete.py` harvest FIRST (with `timeout: 600000` in foreground). When `0` fresh seeds or `0` completions survive, record the collector `no-op` once via `routine-fast-exit.py --post-collector` and **STOP immediately**. In STEP 2 (`/mindmap-pass`), dispatch fresh `model: "sonnet"` stage workers, deliver preflight chunks using 6–8 parallel 3-part `--through` range calls per turn (`18–24` parts/turn, zero single-part loops), and never run `sleep` polling loops while a stage worker is running.
+<!-- /turn1-telemetry-opt-v1 -->
+
 
 # /autocomplete-pass-auto — Google Autocomplete → /mindmap-pass
 
