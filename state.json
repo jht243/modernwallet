@@ -349,6 +349,16 @@
       "repairs": [],
       "route": "/compare/annuity-vs-401k",
       "updatedAt": "2026-11-16T08:34:15Z"
+    },
+    "fcf1d61f31e70995c6bf080e8ce2280e2776e5019dac9f93ac90effcfebb54cb": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "xtrends-2026-11-17",
+      "previousJobs": [],
+      "repairs": [],
+      "route": "/guides/chase-outage-fee-reversal",
+      "updatedAt": "2026-11-17T17:09:28Z"
     }
   },
   "job": null,
