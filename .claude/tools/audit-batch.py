@@ -11,6 +11,7 @@ import json
 import os
 from pathlib import Path
 import sys
+import uuid
 
 
 def _load(name, path):
@@ -270,11 +271,14 @@ def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton
         snapshot = shared_cont_state['doc']
         _sync_snapshot_path_if_mutable(root, snapshot_path, snapshot)
 
+    eff_job = snapshot.get('manifest', {}).get('jobId') or job
     skeleton = {
         'reviewer': reviewer,
         'snapshotSha256': snapshot['snapshotSha256'],
         'routes': skeleton_routes,
     }
+    if eff_job:
+        skeleton['jobId'] = eff_job
     if layer is not None:
         skeleton['workflowPolicySha256'] = layer.policy_hash(root)
         apps = []
@@ -500,11 +504,14 @@ def prepare_skeleton(root, snapshot_path, skeleton_path, routes=()):
                 'factualReview': {k: {'status': 'UNREVIEWED', 'evidence': ''} for k in fact_keys},
                 'findings': [],
             })
+        snap_job = snapshot.get('manifest', {}).get('jobId')
         skeleton = {
             'reviewer': 'PENDING_AUDITOR',
             'snapshotSha256': snapshot['snapshotSha256'],
             'routes': skeleton_routes,
         }
+        if snap_job:
+            skeleton['jobId'] = snap_job
         if layer is not None:
             skeleton['workflowPolicySha256'] = layer.policy_hash(root)
         crp.save_exact(skeleton_path, skeleton)
@@ -597,6 +604,12 @@ def _finalize_review_in_root(root, snapshot_path, review_path, target_path, job=
                 apps.append(crp.reference(root, preflight / 'manifest.json'))
             if apps:
                 report['instructionApplications'] = apps
+
+    snap_job = snapshot.get('manifest', {}).get('jobId')
+    if snap_job:
+        report['jobId'] = snap_job
+    elif job and not report.get('jobId'):
+        report['jobId'] = job
 
     errors = []
     reviewer = report.get('reviewer')
