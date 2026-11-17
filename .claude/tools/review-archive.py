@@ -322,6 +322,20 @@ def require_search_archive(root, changed):
             head=call(root,'show','HEAD:'+name,check=False)
             if captured is None and head.returncode or captured and not head.returncode and hashlib.sha256(head.stdout).hexdigest()==captured['sha256']:
                 matched.add(name)
+            elif captured and not head.returncode and saved.get('baseCommit'):
+                try:
+                    exp_b=call(root,'show',revision+':artifacts/'+captured['sha256'],check=False)
+                    base_b=call(root,'show',saved['baseCommit']+':'+name,check=False)
+                    orig_b=call(root,'show','origin/main:'+name,check=False)
+                    if not exp_b.returncode and not base_b.returncode and not orig_b.returncode:
+                        with tempfile.TemporaryDirectory() as td:
+                            ep,bp,op=Path(td)/'e',Path(td)/'b',Path(td)/'o'
+                            ep.write_bytes(exp_b.stdout);bp.write_bytes(base_b.stdout);op.write_bytes(orig_b.stdout)
+                            m3=subprocess.run(['git','merge-file','-p',str(ep),str(bp),str(op)],capture_output=True,timeout=60)
+                            if m3.returncode==0 and m3.stdout==head.stdout:
+                                matched.add(name)
+                except Exception:
+                    pass
     if changed-matched:
         raise ValueError('The exact changed source must be present in a verified review archive before publishing: '+', '.join(sorted(changed-matched)))
 
