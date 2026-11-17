@@ -1,0 +1,350 @@
+{
+ "slug": "ynab",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'; gpt-6-sol: RuntimeError: openai paused for 2026-11: monthly free-credit cap reached ($152.59 >= $152.51)",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2377,
+ "floor": 1500,
+ "input_tokens": 25954,
+ "output_tokens": 4869,
+ "thinking_tokens": 1723,
+ "cached_tokens": 24440,
+ "est_cost_usd": 0.0277,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 2377,
+  "numbers_not_in_facts": [
+   "218",
+   "24",
+   "25.12",
+   "29",
+   "34.01",
+   "47.88",
+   "59.88",
+   "61.12",
+   "68.01",
+   "83.88",
+   "9.01",
+   "90.99"
+  ],
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    30,
+    3,
+    7
+   ],
+   "applied": [
+    {
+     "id": "intro",
+     "quote": "YNAB pairs account connections with an envelope-style budgeting method where users assign every dollar a job.",
+     "replacement": "YNAB pairs account connections with a budgeting method where users assign every dollar a job.",
+     "type": "unsupported",
+     "why": "SOURCE describes YNAB as a budgeting method plus app, not envelope-style."
+    },
+    {
+     "id": "rows[0].bestFit",
+     "quote": "Fits households and budgeters who want zero-based envelope budgeting and account sharing for up to six people",
+     "replacement": "Fits households and budgeters who want to assign every dollar a job and share an account with up to six people",
+     "type": "unsupported",
+     "why": "SOURCE states YNAB assigns every dollar a job, not zero-based envelope budgeting."
+    },
+    {
+     "id": "rows[2].bestFit",
+     "quote": "Fits Apple platform and web users who want automated transaction tracking with an artificial intelligence assistant",
+     "replacement": "Fits Apple platform and web users who want bank connectivity with a money assistant",
+     "type": "unsupported",
+     "why": "SOURCE lists 16,000+ bank connections and money assistant, not AI assistant."
+    },
+    {
+     "id": "rows[4].bestFit",
+     "quote": "Fits budgeters seeking a one-time lifetime payment option or an automated spend-tracking app with live chat assistance",
+     "replacement": "Fits budgeters seeking a one-time lifetime payment option or priority human support and AI chat",
+     "type": "unsupported",
+     "why": "SOURCE states priority human support and AI chat, not live chat assistance."
+    },
+    {
+     "id": "rows[6].bestFit",
+     "quote": "Fits cash-style budgeters who want digital envelope budgeting with a no-cost entry plan",
+     "replacement": "Fits budgeters who want envelope budgeting with a no-cost entry plan",
+     "type": "unsupported",
+     "why": "SOURCE states envelope budgeting, without mentioning cash-style or digital."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "YNAB relies on assigning every dollar a specific job before spending it, which requires active review when categorizing transactions.",
+     "replacement": "YNAB relies on a budgeting method where users assign every dollar a job and connect accounts.",
+     "type": "unsupported",
+     "why": "SOURCE does not state YNAB requires active review before spending when categorizing transactions."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Goodbudget follows a similar envelope budgeting model, while Quicken Simplifi uses a flexible spending plan, and PocketGuard focuses on calculated spending limits.",
+     "replacement": "Goodbudget uses envelope budgeting, while Quicken Simplifi uses Spending Plan budgeting.",
+     "type": "unsupported",
+     "why": "SOURCE does not state PocketGuard focuses on calculated spending limits."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Tiller downloads transactions directly into Google Sheets or Microsoft Excel workbooks, leaving reporting and categorization structures to spreadsheet formulas.",
+     "replacement": "Tiller puts account data into a spreadsheet automatically using Google Sheets or Microsoft Excel.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Tiller leaves reporting and categorization to spreadsheet formulas."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Monarch Money fits individuals and households looking for multi-account aggregation, investment tracking, and forward-looking financial forecasting without commercial advertisements.",
+     "replacement": "Monarch Money fits individuals and households looking for multiple income tracking, investment tracking, and forecasting without commercial advertisements.",
+     "type": "unsupported",
+     "why": "SOURCE specifies multiple income sources tracking and forecasting, not multi-account aggregation."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Copilot Money runs on iPhone, iPad, Mac, and web platforms, connects with more than 16,000 banks, and includes human customer support alongside an Artificial Intelligence (AI) money assistant.",
+     "replacement": "Copilot Money runs on iPhone, iPad, Mac, and web platforms, connects with more than 16,000 banks, and includes human customer support alongside a money assistant.",
+     "type": "unsupported",
+     "why": "SOURCE lists a money assistant, not an Artificial Intelligence (AI) money assistant."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Copilot Money does not offer an Android app, does not list a standalone monthly billing rate on its pricing page, and has not yet launched its shared household accounts.",
+     "replacement": "Copilot Money lists only iPhone, iPad, Mac, and web platforms, does not list a monthly billing price on its page, and notes Households is coming soon.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention Android for Copilot Money."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Simplifi uses a flexible spending plan rather than zero-based envelope budgeting, does not offer a free monthly-pay plan on its primary page, and does not match YNAB's 34-day card-free trial.",
+     "replacement": "Simplifi uses Spending Plan budgeting rather than assigning every dollar a job, does not list a monthly billing plan on its page, and does not list a free trial.",
+     "type": "unsupported",
+     "why": "SOURCE does not state flexible spending plan or zero-based envelope budgeting."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "PocketGuard provides automated spending tracking with human support and an integrated AI chat tool.",
+     "replacement": "PocketGuard provides subscription plans with priority human support and AI chat included.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe PocketGuard as automated spending tracking."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Tiller fits budgeters, accountants, and analytical users who prefer building and managing custom budgets inside spreadsheets rather than within structured mobile applications.",
+     "replacement": "Tiller fits budgeters who prefer managing budgets inside Google Sheets or Excel spreadsheets.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention accountants, analytical users, or structured mobile applications."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Tiller falls short of YNAB on dedicated mobile interface design and structured zero-based workflows.",
+     "replacement": "Tiller falls short of YNAB on standalone app budgeting workflows.",
+     "type": "unsupported",
+     "why": "SOURCE does not state dedicated mobile interface design or structured zero-based workflows."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Tiller deposits raw transaction data into spreadsheets, leaving category rules and calculations to spreadsheet templates, whereas YNAB provides dedicated mobile apps with proactive envelope assignment.",
+     "replacement": "Tiller puts account data into a spreadsheet automatically, whereas YNAB provides an app where users assign every dollar a job.",
+     "type": "unsupported",
+     "why": "SOURCE does not state raw transaction data, spreadsheet templates, or proactive envelope assignment."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Goodbudget brings traditional paper envelope budgeting to web, Android, and iPhone devices.",
+     "replacement": "Goodbudget brings envelope budgeting to web, Android, and iPhone devices.",
+     "type": "unsupported",
+     "why": "SOURCE describes Goodbudget as envelope budgeting, not traditional paper envelope budgeting."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Goodbudget fits envelope budgeters who want digital cash envelopes without paying an upfront subscription fee, as well as those seeking a low-cost $80 annual plan.",
+     "replacement": "Goodbudget fits budgeters who want envelope budgeting without paying a subscription fee, as well as those seeking an $80 annual plan.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe envelopes as digital cash envelopes or call $80 low-cost."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Goodbudget falls short of YNAB on modern multi-bank sync and group limits.",
+     "replacement": "Goodbudget falls short of YNAB on bank synchronization scope and sharing limits.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe bank synchronization as modern multi-bank sync."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "It is not designed for businesses seeking double-entry general ledgers, client invoicing, or commercial payroll management.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention double-entry ledgers, client invoicing, or commercial payroll."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "Users managing corporate accounts or multi-entity business transactions will find these personal finance apps lack invoicing, sales tax tracking, and enterprise user role permissions.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention corporate accounts, invoicing, or enterprise role permissions."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "YNAB remains the better option for households committed to strict zero-based budgeting who want to share a single subscription.",
+     "replacement": "YNAB remains the better option for households committed to assigning every dollar a job who want to share a single subscription.",
+     "type": "unsupported",
+     "why": "SOURCE describes YNAB as assigning every dollar a job, not zero-based budgeting."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "The application requires users to allocate every dollar earned toward immediate expenses, true expenses, or savings goals.",
+     "replacement": "The application requires users to assign every dollar a job and connect accounts.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention immediate expenses, true expenses, or savings goals."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Because one YNAB subscription supports up to six people across separate accounts for $109 per year, a family of three or four pays roughly $18 to $36 per person annually, which is lower than buying individual subscriptions on other platforms.",
+     "replacement": "Because one YNAB subscription supports up to six people for $109 per year, a group sharing the plan divides that single annual cost.",
+     "type": "unsupported",
+     "why": "SOURCE does not state separate accounts, arithmetic for three to four, or comparisons."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "This lets new users test transaction imports, category funding, and envelope reconciliation across an entire monthly pay cycle before committing money.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state category funding, envelope reconciliation, or monthly pay cycle testing."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "For budgeters who want proactive cash allocation rather than passive expense reporting, YNAB provides a focused operational framework.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention proactive cash allocation, passive expense reporting, or operational frameworks."
+    },
+    {
+     "id": "verdict",
+     "quote": "Goodbudget provides the only functional $0 free tier among these options, while Quicken Simplifi offers the lowest promotional annual cost at $47.88 per year.",
+     "replacement": "Goodbudget provides a $0 free tier among these options, while Quicken Simplifi lists a promotional annual cost of $47.88 per year.",
+     "type": "unsupported",
+     "why": "SOURCE does not use evaluative word functional or rank Simplifi as lowest."
+    },
+    {
+     "id": "verdict",
+     "quote": "PocketGuard stands out with its $149.99 Lifetime plan, Tiller provides automatic imports directly into spreadsheets for $99 per year, and Monarch Money Core matches YNAB's monthly rate while charging $99.99 annually.",
+     "replacement": "PocketGuard offers a $149.99 Lifetime plan, Tiller provides automatic imports directly into spreadsheets for $99 per year, and Monarch Money Core matches YNAB's monthly rate while charging $99.99 annually.",
+     "type": "unsupported",
+     "why": "SOURCE does not use evaluative phrasing like stands out."
+    },
+    {
+     "id": "verdict",
+     "quote": "YNAB remains the primary option for users seeking envelope budgeting with built-in multi-user sharing for up to six people at $109 per year.",
+     "replacement": "YNAB provides a budgeting method where users assign every dollar a job with sharing for up to six people at $109 per year.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe YNAB as envelope budgeting or call it the primary option."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "It allows users to allocate funds into digital envelopes on its $0 Free plan and its $80 annual Premium plan.",
+     "replacement": "It provides envelope budgeting on its $0 Free plan and its $80 annual Premium plan.",
+     "type": "unsupported",
+     "why": "SOURCE states Goodbudget uses envelope budgeting, without specifying digital envelopes."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Bank connectivity separates spreadsheet systems from mobile apps. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that bank connectivity separates spreadsheet systems from mobile apps."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Monarch Money fits individuals and households looking for multiple income tracking, investment tracking, and forecasting without commercial advertisements.",
+     "replacement": "Monarch Money fits individuals looking for multiple income tracking, investment tracking, and forecasting without commercial advertisements.",
+     "type": "unsupported",
+     "why": "SOURCE does not list households as an audience for Monarch Money."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Monarch Money falls short of YNAB on group sharing and trial duration.",
+     "replacement": "Monarch Money falls short of YNAB on trial duration, and does not list group sharing on its pricing page.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Monarch Money lacks group sharing."
+    },
+    {
+     "id": "rows[5].pricing",
+     "quote": "Automated bank sync into spreadsheets.",
+     "replacement": "Puts account data into a spreadsheet automatically.",
+     "type": "unsupported",
+     "why": "SOURCE says Tiller puts account data into spreadsheets automatically, not automated bank sync."
+    },
+    {
+     "id": "rows[5].bestFit",
+     "quote": "Fits spreadsheet users who want bank balances and daily transactions deposited automatically into Google Sheets or Excel",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE says Tiller puts account data into spreadsheets, not bank balances or daily transactions."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "In contrast, Copilot Money connects to over 16,000 financial institutions and presents data in dedicated Apple and web interfaces, while Quicken Simplifi supports over 14,000 institutions.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE says Copilot connects to 16,000+ banks on iPhone, iPad, Mac, and Web."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Copilot Money fits Apple ecosystem users who prioritize automated bank connections across thousands of institutions with an integrated desktop and mobile user interface.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention thousands of institutions or an integrated desktop and mobile interface."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Quicken Simplifi fits budgeters who want cash flow forecasting, net worth oversight, and guided live onboarding at a lower annual entry cost.",
+     "replacement": "Quicken Simplifi fits budgeters who want cash flow forecasting, net worth tracking, and setup help from Quicken experts.",
+     "type": "unsupported",
+     "why": "SOURCE states Quicken Simplifi provides free one-on-one setup help from Quicken experts."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "PocketGuard fits users who want a permanent software license through a one-time purchase or those seeking a lower annual cost than YNAB.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE describes PocketGuard's one-time purchase as Lifetime, not a permanent software license."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Tiller connects to financial institutions and automatically imports balances and transactions into Google Sheets or Microsoft Excel.",
+     "replacement": "Tiller puts account data into a spreadsheet automatically using Google Sheets or Microsoft Excel.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Tiller connects to financial institutions or imports balances and transactions."
+    }
+   ],
+   "deleted_final": 7,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 2637
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 480.9,
+ "response_id": "UoX8ar6bCqWAiLMPvP2jqAo",
+ "generated_at": "2026-11-17T16:56:18+0000"
+}

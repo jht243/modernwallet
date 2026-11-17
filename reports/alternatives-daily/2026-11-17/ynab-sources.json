@@ -1,0 +1,34 @@
+{
+ "subject": "YNAB",
+ "checked": "2026-11-17",
+ "sources": [
+  {
+   "product": "YNAB",
+   "url": "https://www.ynab.com/pricing"
+  },
+  {
+   "product": "Monarch",
+   "url": "https://www.monarchmoney.com/pricing"
+  },
+  {
+   "product": "Copilot Money",
+   "url": "https://copilot.money/pricing"
+  },
+  {
+   "product": "Quicken Simplifi",
+   "url": "https://www.quicken.com/products/simplifi/"
+  },
+  {
+   "product": "PocketGuard",
+   "url": "https://pocketguard.com/pricing"
+  },
+  {
+   "product": "Tiller",
+   "url": "https://tiller.com/pricing"
+  },
+  {
+   "product": "Goodbudget",
+   "url": "https://goodbudget.com/signup"
+  }
+ ]
+}

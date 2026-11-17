@@ -1,0 +1,372 @@
+{
+ "slug": "monarch-money",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'; gpt-6-sol: RuntimeError: openai paused for 2026-11: monthly free-credit cap reached ($152.59 >= $152.51)",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2767,
+ "floor": 1500,
+ "input_tokens": 26008,
+ "output_tokens": 5341,
+ "thinking_tokens": 1661,
+ "cached_tokens": 24440,
+ "est_cost_usd": 0.0293,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 2767,
+  "numbers_not_in_facts": [
+   "0.99",
+   "116.11",
+   "120",
+   "16.11",
+   "19.01",
+   "19.99",
+   "199.98",
+   "24",
+   "25",
+   "297",
+   "299.97",
+   "45.05",
+   "49.99",
+   "499.95",
+   "545",
+   "59.88",
+   "79.89",
+   "83.88",
+   "9.01",
+   "90.99"
+  ],
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    19,
+    11,
+    12
+   ],
+   "applied": [
+    {
+     "id": "rows[0].bestFit",
+     "quote": "Fits households and solo earners wanting net worth tracking, partner sharing, and multi-income planning",
+     "replacement": "Fits households and solo earners wanting forecasting tools, partner sharing, and multi-income planning",
+     "type": "unsupported",
+     "why": "SOURCE does not state Monarch Money tracks net worth"
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Monarch Money, Quicken Simplifi, and Copilot Money link directly to institutions, with Quicken Simplifi citing connections to 14,000+ financial institutions and Copilot Money citing 16,000+ banks.",
+     "replacement": "Quicken Simplifi connects to 14,000+ financial institutions, while Copilot Money connects to 16,000+ banks.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Monarch Money links directly to institutions"
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "PocketGuard calculates disposable funds remaining after accounting for scheduled bills.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state PocketGuard calculates disposable funds after bills"
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Applications like Monarch Money, Copilot Money, and YNAB provide native mobile interfaces and automatic updates.",
+     "replacement": "Applications like Copilot Money and Goodbudget provide mobile app interfaces.",
+     "type": "unsupported",
+     "why": "SOURCE does not state automatic updates or YNAB mobile interfaces"
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "YNAB, short for You Need A Budget, is a personal budgeting application centered on proactive cash allocation.",
+     "replacement": "YNAB is a personal budgeting application with annual and monthly subscription options.",
+     "type": "unsupported",
+     "why": "SOURCE does not state YNAB full name or proactive cash allocation"
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "It appeals to users who prefer a rigid method that discourages category overspending.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state YNAB uses a rigid method discouraging overspending"
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Monarch Money Plus includes tools to track diverse income streams such as small businesses, whereas YNAB focuses squarely on immediate envelope balances.",
+     "replacement": "Monarch Money Plus includes tools to track diverse income streams such as small businesses, along with forecasting tools and deeper investment tracking.",
+     "type": "unsupported",
+     "why": "SOURCE does not state YNAB focuses on envelope balances"
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Furthermore, Monarch Money offers an active For Couples system for partner visibility, whereas YNAB addresses single-budget management.",
+     "replacement": "Furthermore, Monarch Money offers an active For Couples page with household sharing.",
+     "type": "unsupported",
+     "why": "SOURCE does not state YNAB addresses single-budget management"
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Copilot Money fits Mac, iPhone, and iPad users who want an integrated machine-learning money assistant and polished dashboards across their Apple hardware.",
+     "replacement": "Copilot Money fits Mac, iPhone, iPad, and Web users who want a money assistant across their devices.",
+     "type": "unsupported",
+     "why": "SOURCE does not state machine-learning or polished dashboards"
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Copilot Money states on its page that inviting a partner is \"coming this fall\" under a Households feature, whereas Monarch Money already offers operational household accounts with two logins.",
+     "replacement": "Copilot Money states on its page that inviting a partner is \"coming this fall\" under a Households feature, whereas Monarch Money maintains a For Couples page with household sharing.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Monarch Money offers two logins"
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Monarch Money Plus provides specialized tracking for multiple revenue sources like freelance contracts or small businesses, along with deeper investment analysis.",
+     "replacement": "Monarch Money Plus provides specialized tracking for multiple revenue sources like a small business, along with deeper investment tracking.",
+     "type": "unsupported",
+     "why": "SOURCE does not state freelance contracts"
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "PocketGuard is a personal budgeting application designed around spending allowances.",
+     "replacement": "PocketGuard is a personal budgeting application with monthly, annual, and lifetime plan options.",
+     "type": "unsupported",
+     "why": "SOURCE does not state PocketGuard is designed around spending allowances"
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "PocketGuard fits cost-conscious budgeters who want an affordable annual plan or who prefer paying a single one-time fee to eliminate ongoing subscription expenses entirely.",
+     "replacement": "PocketGuard fits budgeters who want an annual plan or who prefer paying a single one-time fee to eliminate ongoing subscription expenses.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe PocketGuard as affordable"
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "PocketGuard falls short of Monarch Money for complex household setups and wealth tracking.",
+     "replacement": "PocketGuard falls short of Monarch Money for partner sharing and multi-income tracking.",
+     "type": "unsupported",
+     "why": "SOURCE does not state wealth tracking for Monarch Money"
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Monarch Money delivers specialized investment monitoring, custom dashboard collaboration for partners, and business revenue tracking on Plus.",
+     "replacement": "Monarch Money delivers deeper investment tracking, a For Couples page, and small-business income tracking on Plus.",
+     "type": "unsupported",
+     "why": "SOURCE does not state custom dashboard collaboration"
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "PocketGuard emphasizes disposable spending guardrails rather than comprehensive net worth reporting.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state PocketGuard uses disposable spending guardrails"
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Tiller does not supply dedicated mobile app interfaces comparable to Monarch Money's iOS and Android apps.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state mobile app availability for Tiller or Monarch"
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Even Goodbudget Premium limits automated sync to US banks and omits advanced investment analysis, net worth monitoring, and small business revenue tracking.",
+     "replacement": "Even Goodbudget Premium limits automated sync to US banks and omits deeper investment tracking, forecasting tools, and small business revenue tracking.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Monarch Money has net worth monitoring"
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "While single-purpose budgeting tools focus strictly on cash transactions, Monarch Money Core combines daily spending categories, net worth aggregation, multi-account syncing, and partner collaboration without charging additional per-seat fees.",
+     "replacement": "While basic budgeting tools focus strictly on spending categories, Monarch Money Core provides household sharing and partner collaboration without ads.",
+     "type": "unsupported",
+     "why": "SOURCE does not state net worth aggregation, multi-account syncing, or per-seat fees"
+    },
+    {
+     "id": "rows[1].bestFit",
+     "quote": "Fits budgeters who assign every dollar a specific job using a proactive zero-based system",
+     "replacement": "Fits budgeters seeking a 34-day free trial with no credit card required",
+     "type": "unsupported",
+     "why": "SOURCE does not state YNAB uses zero-based budgeting or assigns dollars jobs."
+    },
+    {
+     "id": "rows[4].bestFit",
+     "quote": "Fits individuals who want simple spending caps or a one-time purchase option with a 7-day trial",
+     "replacement": "Fits individuals who want a one-time purchase option with a 7-day trial",
+     "type": "unsupported",
+     "why": "SOURCE does not state PocketGuard provides spending caps."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Goodbudget restricts automatic bank synchronization to United States (US) banks on its Premium tier, leaving its Free tier to manual entry.",
+     "replacement": "Goodbudget restricts automatic bank synchronization to United States (US) banks on its Premium tier.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Goodbudget's Free tier uses manual entry."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "YNAB relies on zero-based budgeting, where users allocate funds as they arrive.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state YNAB uses zero-based budgeting or allocates funds."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "YNAB fits people who want an active, zero-based allocation system where every received dollar is assigned a job before spending occurs.",
+     "replacement": "YNAB fits people who want an extended 34-day trial without entering a credit card.",
+     "type": "unsupported",
+     "why": "SOURCE does not state YNAB uses zero-based budgeting or assigns dollars jobs."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Copilot Money is an account tracking and personal finance application designed for Apple devices and Web browsers.",
+     "replacement": "Copilot Money is an account tracking and personal finance application available on iPhone, iPad, Mac, and Web.",
+     "type": "unsupported",
+     "why": "SOURCE states platforms iPhone, iPad, Mac and Web, not designed for."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Tiller fits spreadsheet enthusiasts who want raw data feeds, personalized financial models, and total programmatic control over their calculations without manual bank downloads.",
+     "replacement": "Tiller fits spreadsheet enthusiasts who want account data placed into spreadsheets automatically.",
+     "type": "unsupported",
+     "why": "SOURCE states Tiller puts data into spreadsheets automatically, without mentioning programmatic control."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Tiller falls short of Monarch Money for users who prefer polished, automated mobile applications.",
+     "replacement": "Tiller falls short of Monarch Money for users who prefer an application interface rather than spreadsheets.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe mobile applications as polished."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Goodbudget fits visual planners who want to implement digital cash envelopes and beginners who prefer starting on a permanent $0 plan before paying for software.",
+     "replacement": "Goodbudget fits planners who want envelope budgeting and who prefer starting on a $0 plan before paying for software.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Goodbudget is for beginners."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Goodbudget Free requires manual transaction entry and restricts users to a single account.",
+     "replacement": "Goodbudget Free restricts users to a single account and omits automatic bank sync.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Goodbudget Free requires manual transaction entry."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "These capabilities sit well beyond the boundaries of traditional envelope tools like Goodbudget or single-ledger systems like YNAB.",
+     "replacement": "These capabilities sit beyond envelope tools like Goodbudget or subscriptions like YNAB.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Goodbudget as traditional or YNAB as single-ledger."
+    },
+    {
+     "id": "rows[2].bestFit",
+     "quote": "Fits Apple ecosystem users seeking machine-assisted transaction tracking on Mac, iPhone, and iPad",
+     "replacement": "Fits Apple ecosystem users seeking a money assistant on iPhone, iPad, Mac, and Web",
+     "type": "unsupported",
+     "why": "SOURCE lists a money assistant, not machine-assisted transaction tracking."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Tiller takes the opposite route by feeding live transaction feeds into Google Sheets and Microsoft Excel, giving users complete formula control over their financial records.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state live transaction feeds or formula control."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Additionally, Copilot Money does not provide a native Android mobile application.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state whether Copilot Money has an Android app."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Quicken Simplifi is a cloud-based personal finance tool accessible on mobile devices and the web.",
+     "replacement": "Quicken Simplifi is a personal finance tool accessible on mobile devices and the web.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Quicken Simplifi is cloud-based."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Quicken Simplifi falls short of Monarch Money in advanced portfolio analysis and dual-partner budgeting tools.",
+     "replacement": "Quicken Simplifi falls short of Monarch Money in deeper investment tracking and partner sharing.",
+     "type": "unsupported",
+     "why": "SOURCE states deeper investment tracking rather than advanced portfolio analysis."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Tiller is an automated financial service that imports daily banking transactions and account balances directly into private spreadsheets.",
+     "replacement": "Tiller is a financial service that puts account data into spreadsheets automatically.",
+     "type": "unsupported",
+     "why": "SOURCE does not state daily transactions or private spreadsheets."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Monarch Money also packages built-in investment tools, partner collaboration, and visual category budgets without requiring formula maintenance.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state visual category budgets or formula maintenance."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Monarch Money remains the stronger option for households seeking a complete, unified view of their financial life within a single interface.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state a unified view within a single interface."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "While basic budgeting tools focus strictly on spending categories, Monarch Money Core provides household sharing and partner collaboration without ads.",
+     "replacement": "Monarch Money Core provides household sharing and partner collaboration without ads.",
+     "type": "unsupported",
+     "why": "SOURCE does not state what basic budgeting tools focus strictly on."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "For households managing multiple revenue streams, Monarch Money Plus at $199.99 per year introduces dedicated forecasting tools, small-business income tracking, and comprehensive investment portfolio analysis.",
+     "replacement": "For households managing multiple revenue streams, Monarch Money Plus at $199.99 per year introduces dedicated forecasting tools, small-business income tracking, and deeper investment tracking.",
+     "type": "unsupported",
+     "why": "SOURCE states deeper investment tracking rather than comprehensive investment portfolio analysis."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "New subscribers receive a free first week under the \"Your first week is on us\" trial and access to a no-questions-asked money-back guarantee, allowing complete testing across web and mobile platforms.",
+     "replacement": "New subscribers receive a free first week under the \"Your first week is on us\" trial and access to a no-questions-asked money-back guarantee.",
+     "type": "unsupported",
+     "why": "SOURCE does not state complete testing across web and mobile platforms."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Goodbudget supports shared envelope management across 2 devices on Free and 5 devices on Premium.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE states device limits, not shared envelope management for couples."
+    }
+   ],
+   "deleted_final": 12,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 3031
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 417.0,
+ "response_id": "iIP8atuCDon6wbUP8MPyyQo",
+ "generated_at": "2026-11-17T16:47:36+0000"
+}

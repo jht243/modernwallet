@@ -79,6 +79,20 @@
       "officialHosts": [
         "www.wealthfront.com"
       ]
+    },
+    {
+      "route": "/alternatives/monarch-money/",
+      "vendorHost": "monarchmoney.com",
+      "officialHosts": [
+        "www.monarchmoney.com"
+      ]
+    },
+    {
+      "route": "/alternatives/ynab/",
+      "vendorHost": "ynab.com",
+      "officialHosts": [
+        "www.ynab.com"
+      ]
     }
   ]
 }

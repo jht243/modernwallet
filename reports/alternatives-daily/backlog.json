@@ -63,13 +63,24 @@
           "at": "2026-11-17T16:39:02+00:00",
           "status": "in_progress",
           "note": "claimed for 2026-11-17"
+        },
+        {
+          "at": "2026-11-17T16:56:22+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
         }
       ],
       "status": "in_progress",
-      "updatedAt": "2026-11-17T16:39:02+00:00",
+      "updatedAt": "2026-11-17T16:56:22+00:00",
       "claimedOn": "2026-11-17",
       "attempts": 1,
-      "lastNextAt": "2026-11-17T16:39:02+00:00"
+      "lastNextAt": "2026-11-17T16:39:02+00:00",
+      "writer": "content_gen",
+      "slug": "ynab"
     },
     {
       "vendor": "Acorns",
@@ -934,13 +945,24 @@
           "at": "2026-11-17T16:39:02+00:00",
           "status": "in_progress",
           "note": "claimed for 2026-11-17"
+        },
+        {
+          "at": "2026-11-17T16:47:45+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
         }
       ],
       "status": "in_progress",
-      "updatedAt": "2026-11-17T16:39:02+00:00",
+      "updatedAt": "2026-11-17T16:47:45+00:00",
       "claimedOn": "2026-11-17",
       "attempts": 1,
-      "lastNextAt": "2026-11-17T16:39:02+00:00"
+      "lastNextAt": "2026-11-17T16:39:02+00:00",
+      "writer": "content_gen",
+      "slug": "monarch-money"
     },
     {
       "vendor": "QuickBooks",
