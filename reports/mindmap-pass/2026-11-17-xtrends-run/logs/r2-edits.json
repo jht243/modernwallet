@@ -1,0 +1,201 @@
+[
+ {
+  "id": "A1-DISCRETION",
+  "old": "A bank fee reversal is a customer request decided at the discretion of Chase, not an automatic legal right.",
+  "new": "The checked sources do not show a Chase policy that reverses fees for this outage, so treat each reversal as a request to Chase."
+ },
+ {
+  "id": "A1-DISCRETION",
+  "old": "Chase decides fee reversals on a case-by-case basis at its own discretion.",
+  "new": "The checked sources do not show a Chase policy that guarantees reversals."
+ },
+ {
+  "id": "A1-DISCRETION",
+  "old": "Reversal decisions remain at the discretion of Chase, while a Regulation E error notice serves as a separate legal avenu",
+  "new": "The checked sources do not show that Chase must reverse a fee. A Regulation E error notice is a separate route that applies only if"
+ },
+ {
+  "id": "A1-ANCHOR-EMERGENCY",
+  "old": "then read [how much cash to keep outside one bank](/guides/how-much-emergency-fund/) before the next outage",
+  "new": "then read [how much emergency fund you need](/guides/how-much-emergency-fund/) to cover a gap while a bank is down"
+ },
+ {
+  "id": "A1-CFPB-QUESTIONNAIRE",
+  "old": "The CFPB intake questionnaire asks whether you reached out to Chase before filing.",
+  "new": "The CFPB complaint guide suggests trying the company first."
+ },
+ {
+  "id": "A1-CFPB-QUESTIONNAIRE",
+  "old": "Before submitting a complaint, verify that you attempted to resolve the dispute with Chase first.",
+  "new": "Before submitting a complaint, contact Chase first."
+ },
+ {
+  "id": "A1-COY-BANK",
+  "old": "the bank acknowledged that some transactions",
+  "new": "Chase acknowledged that some transactions"
+ },
+ {
+  "id": "A1-COY-BANK",
+  "old": "submit a CFPB complaint if the bank leaves the charges in place",
+  "new": "submit a CFPB complaint if Chase leaves the charges in place"
+ },
+ {
+  "id": "A1-COY-BANK",
+  "old": "The bank must investigate and determine whether an error occurred within 10 business days, or take up to 45 days if it g",
+  "new": "Chase must decide within 10 business days whether an error occurred, or take up to 45 days if it grants a provisional credit for the disputed amount within the "
+ },
+ {
+  "id": "A1-COY-BANK",
+  "old": "The bank must investigate within 10 business days, or within 45 days if it issues provisional credit.",
+  "new": "Chase must decide within 10 business days, or within 45 days if it issues provisional credit. Longer periods of 20 business days and 90 days apply to some new a"
+ },
+ {
+  "id": "A1-RHYTHM-OVERLOAD",
+  "old": "Fortune noted that when Chase online banking experienced an outage lasting more than a day in 2010, the bank agreed to r",
+  "new": "In 2010, Chase online banking was down for more than a day. Fortune reports that Chase then agreed to refund late fees to customers who missed payments, if they"
+ },
+ {
+  "id": "A1-RHYTHM-OVERLOAD",
+  "old": "Under [12 CFR 1005.11](https://www.ecfr.gov/current/title-12/part-1005/section-1005.11), known as Regulation E, an error",
+  "new": "Regulation E ([12 CFR 1005.11](https://www.ecfr.gov/current/title-12/part-1005/section-1005.11)) lists the errors it covers. Three are an unauthorized electroni"
+ },
+ {
+  "id": "A1-RHYTHM-OVERLOAD",
+  "old": "Consumers generally cannot file a second complaint regarding the exact same problem, so ensure your initial submission c",
+  "new": "You generally cannot file a second CFPB complaint about the same problem. Put every date, fee and document in the first one."
+ },
+ {
+  "id": "A1-EMPTY-TOOLS",
+  "new": "tools -> emergency fund calculator"
+ },
+ {
+  "id": "A2-SMALL-EMPLOYER",
+  "old": "small employers with 10 or fewer workers",
+  "new": "small employers that have not normally employed more than 10 employees (the exemption runs until one year after the close of the first taxable year in which the"
+ },
+ {
+  "id": "A2-SMALL-EMPLOYER",
+  "old": "employers with 10 or fewer employees",
+  "new": "small employers that have not normally employed more than 10 employees, until one year after the close of the first taxable year in which they did"
+ },
+ {
+  "id": "A2-ACRONYMS",
+  "old": "implementing this SECURE 2.0 Act provision",
+  "new": "implementing this SECURE 2.0 Act (Setting Every Community Up for Retirement Enhancement) provision"
+ },
+ {
+  "id": "A2-ACRONYMS",
+  "old": "church plans, governmental plans, and SIMPLE 401(k) plans are exempt",
+  "new": "church plans, governmental plans, and SIMPLE (Savings Incentive Match Plan for Employees) 401(k) plans are exempt"
+ },
+ {
+  "id": "A2-META-3PCT",
+  "old": "start covered plans at 3% and raise it yearly",
+  "new": "start covered plans at a default of at least 3% and raise it yearly"
+ },
+ {
+  "id": "A2-RESTATEMENT",
+  "old": "The [U.S. Department of the Treasury](https://home.treasury.gov/news/press-releases/sb0690) noted that the final regulat",
+  "new": ""
+ },
+ {
+  "id": "A2-CLEAR-PROGRESSION",
+  "old": "Federal law outlines a clear progression for automatic contribution increases over an employee's career.",
+  "new": "The statute sets a minimum path for automatic increases."
+ },
+ {
+  "id": "A2-RHYTHM-OVERLOAD",
+  "old": "If you work at a covered new 401(k) or 403(b) plan, expect enrollment at 3% or more (first-year range 3% to 10%), raised",
+  "new": "Expect enrollment at 3% or more if you work at a covered new 401(k) or 403(b) plan. The first-year default can run from 3% to 10%. It rises 1 point a year to at"
+ },
+ {
+  "id": "A2-RHYTHM-OVERLOAD",
+  "old": "Both dates (the statute applies to plan years beginning after December 31, 2024, while Treasury says final regulations g",
+  "new": "The statute applies to plan years beginning after December 31, 2024. Treasury says the final regulations generally apply to plan years beginning after December "
+ },
+ {
+  "id": "A3-DOR-ATTRIBUTION",
+  "old": "The Department of Revenue notes that final levies can be set lower, but not higher, than preliminary levies, with limite",
+  "new": "The Department of Revenue says final levies can be set lower, but not higher, than preliminary levies. Minn. Stat. 275.065 subd. 6(a) lists limited exceptions."
+ },
+ {
+  "id": "A3-DOR-ATTRIBUTION",
+  "old": "is generally capped at its proposed levy according to the Minnesota Department of Revenue, but your final bill can still",
+  "new": "is generally capped at its proposed levy, which the Minnesota Department of Revenue describes as lower but not higher than preliminary levies. Your final bill c"
+ },
+ {
+  "id": "A3-SUBD6B-CITE",
+  "old": "For townships and the state general tax, different rules apply under subdivision 6(b). For a town or the state general t",
+  "new": "Subdivision 6(b) says the cap does not apply to towns or to special taxing districts other than regional library and metropolitan districts. Under subdivisions "
+ },
+ {
+  "id": "A3-HOMESTEAD-DEADLINE",
+  "old": "by the statutory deadline proving",
+  "new": "by the applicable deadline. The statute does not give the date, so ask your county assessor what it is. The documentation must prove"
+ },
+ {
+  "id": "A3-H2-FORMULA",
+  "old": "What Your Truth-in-Taxation Notice Is and What You Can Do",
+  "new": "What a Truth-in-Taxation Notice Means for Your Tax Bill"
+ },
+ {
+  "id": "A3-H2-FORMULA",
+  "old": "How to Read Your Minnesota Truth-in-Taxation Notice for 2027",
+  "new": "How to Read a Minnesota Truth-in-Taxation Notice for 2027"
+ },
+ {
+  "id": "A3-CAUSAL-CLAIM",
+  "old": "Local budget pressures drive these preliminary numbers. As reported by",
+  "new": "Local-government groups point to budget pressure. As reported by"
+ },
+ {
+  "id": "A3-HOMESTEAD-DEADLINE",
+  "old": "in that assessment year, the assessor must reclassify",
+  "new": "in that assessment year. If it does, the assessor must reclassify"
+ },
+ {
+  "id": "A3-HOMESTEAD-DEADLINE",
+  "old": "by the applicable deadline requires the assessor",
+  "new": "by the applicable deadline (the statute gives no date, so ask your county assessor) requires the assessor"
+ },
+ {
+  "id": "A3-RHYTHM-OVERLOAD",
+  "old": "The county treasurer delivers the notice by first class mail after November 10 and on or before November 24 each year to",
+  "new": "The county treasurer mails the notice by first class mail after November 10 and on or before November 24. It goes to each taxpayer at the address on the county "
+ },
+ {
+  "id": "A3-RHYTHM-OVERLOAD",
+  "old": "Your final bill can still differ because of statutory exclusions under subdivision 3(e), such as special assessments and",
+  "new": "Your final bill can still differ. Subdivision 3(e) exclusions such as special assessments and post-certification referenda move it, and so do separate valuation"
+ },
+ {
+  "id": "A3-RHYTHM-OVERLOAD",
+  "old": "basic services\" and property taxes are \"really",
+  "new": "basic services\". He said property taxes are \"really"
+ },
+ {
+  "id": "A3-EXCEPTIONS-LIST",
+  "old": "natural disaster repairs authorized by the commissioner of revenue.",
+  "new": "natural disaster repairs, if the commissioner of revenue approves."
+ },
+ {
+  "id": "A3-EXCEPTIONS-LIST",
+  "old": "that became final after preliminary levies were set.",
+  "new": "that became final after preliminary levies were set, if the commissioner of revenue approves."
+ },
+ {
+  "id": "A3-EXCEPTIONS-LIST",
+  "old": "certified after the initial proposed levy deadline.\n\nSubdivision 6(b)",
+  "new": "certified after the initial proposed levy deadline.\n\nSubdivision 6(a) also allows amounts for emergency debt certificates and state unallotment.\n\nSubdivision 6("
+ },
+ {
+  "id": "A3-EXCEPTIONS-LIST",
+  "old": "regional library authorities and metropolitan taxing districts.",
+  "new": "regional library authorities, metropolitan taxing districts and certain fire protection and emergency medical services special taxing districts."
+ },
+ {
+  "id": "A3-EXCEPTIONS-LIST",
+  "old": "metropolitan taxing districts and cities with populations over 500 must hold",
+  "new": "metropolitan taxing districts, certain fire protection and emergency medical services special taxing districts and cities with populations over 500 must hold"
+ }
+]

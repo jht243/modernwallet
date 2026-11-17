@@ -1,0 +1,56 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "mindmap-write",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/guides/chase-outage-fee-reversal",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/401k-auto-enrollment-final-rules",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/minnesota-truth-in-taxation-notice",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/how-much-emergency-fund/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/retirement-contribution-limits-2027/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/401k-contribution-limits-2026/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/compare/roth-401k-vs-traditional-401k/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/tax-deductions-for-homeowners/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "xtrends-2026-11-17"
+}

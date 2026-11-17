@@ -1,0 +1,158 @@
+{
+ "slug": "401k-auto-enrollment-final-rules",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'; gpt-6-sol: RuntimeError: openai paused for 2026-11: monthly free-credit cap reached ($153.17 >= $152.51)",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1756,
+ "floor": 1200,
+ "input_tokens": 34333,
+ "output_tokens": 3360,
+ "thinking_tokens": null,
+ "cached_tokens": 24062,
+ "est_cost_usd": 0.0221,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['What the Final Auto-Enrollment Rules Require', 'Which Plans Are Exempt', 'How the Default Rate Rises Year by Year', 'How to Opt Out or Change Your Rate', 'What the Final Regulations Changed for Employers'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1756,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 735,
+   "floor": 1200,
+   "ratio": 0.61,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    10,
+    3
+   ],
+   "applied": [
+    {
+     "id": "metaDescription",
+     "quote": "You can opt out or change your rate at any time.",
+     "replacement": "You can opt out or choose a different contribution rate.",
+     "type": "unsupported",
+     "why": "SOURCE does not state employees may opt out at any time"
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "The statutory escalator increases savings gradually, but you can alter or stop this schedule at any time.",
+     "replacement": "The statutory escalator increases savings gradually, unless you opt out or choose another rate.",
+     "type": "unsupported",
+     "why": "SOURCE does not state contributions may be altered or stopped at any time"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "You can set your rate to 0%, pick an intermediate rate like 5%, or elect to contribute up to the annual legal ceiling.",
+     "replacement": "You can elect not to have contributions made or elect to contribute at a different percentage.",
+     "type": "unsupported",
+     "why": "SOURCE does not state an annual legal ceiling"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Employers must provide participants with formal notices explaining automatic enrollment, default contribution percentages, and opt-out procedures.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not list required notice contents or employer notice mandates"
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "This allows plan sponsors to align automatic escalation dates with payroll calendars or merit review cycles while remaining compliant with the statutory 1-point minimum.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention payroll calendars or merit review cycles"
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "By permitting the combination of certain required participant notices and eliminating redundant annual notices for confirmed non-participants who receive annual reminders, the rules aim to reduce administrative costs.",
+     "replacement": "Treasury stated the rules simplify plan communications by allowing certain required notices to be combined and reducing annual notice requirements for qualifying non-participating employees who receive annual reminders.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that rules aim to reduce administrative costs"
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Finally, the regulations explain how automatic enrollment requirements apply following corporate mergers, clarifying how combined entities must navigate plan differences without disrupting existing employee savings arrangements.",
+     "replacement": "Finally, Treasury stated the regulations explain how automatic enrollment requirements apply following plan mergers.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention navigating plan differences or disrupting savings arrangements"
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Yes, you can opt out of automatic enrollment at any time.",
+     "replacement": "Yes, you can opt out of automatic enrollment.",
+     "type": "unsupported",
+     "why": "SOURCE does not state employees may opt out at any time"
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Your plan administrator must provide an automatic enrollment notice specifying the deadline and procedure for electing a 0% contribution rate before deductions begin.",
+     "replacement": "Under 26 U.S.C. 414A, employees may elect not to have contributions made or choose a different contribution rate.",
+     "type": "unsupported",
+     "why": "SOURCE does not state notice contents or deadlines for plan administrators"
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "No, existing plans are generally exempt under federal law.",
+     "replacement": "The sources checked do not state whether a specific plan must change today.",
+     "type": "contradicted",
+     "why": "SOURCE forbids stating or implying an existing plan is exempt"
+    },
+    {
+     "id": "introText",
+     "quote": "However, plans established before December 29, 2022, businesses under three years old, small employers with 10 or fewer workers, church plans, governmental plans, and Savings Incentive Match Plan for Employees (SIMPLE) 401(k) plans are exempt from the federal requirement.",
+     "replacement": "However, plans established before December 29, 2022, businesses under three years old, small employers with 10 or fewer workers, church plans, governmental plans, and SIMPLE 401(k) plans are exempt from the federal requirement.",
+     "type": "unsupported",
+     "why": "SOURCE does not spell out SIMPLE as Savings Incentive Match Plan for Employees."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "- Governmental plans maintained by federal, state, or local government entities.",
+     "replacement": "- Governmental plans.",
+     "type": "unsupported",
+     "why": "SOURCE does not define governmental plans as maintained by federal, state, or local entities."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "- Church plans established for church employees.",
+     "replacement": "- Church plans.",
+     "type": "unsupported",
+     "why": "SOURCE does not define church plans as established for church employees."
+    }
+   ],
+   "deleted_final": 3,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1841
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 248.7,
+ "response_id": "IIv8avTTBt2oxdIPxI3w6Ac",
+ "generated_at": "2026-11-17T17:17:12+0000"
+}

@@ -1,0 +1,154 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-write",
+  "route": "/guides/401k-auto-enrollment-final-rules",
+  "readerQuestion": "What do the final 401(k) auto-enrollment rules mean for my paycheck, and can I opt out? [PAA 0/0 unread; ac 12/66 question completions, required/mandatory/can-change/opt-out family]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/approval-manifest.json",
+      "sha256": "3dd52934ab7a91fb51a94adc61570099e1da83b2a952dccea015ada9cd0f8725"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/chart-review.json",
+      "sha256": "7fdd250069bbed26a7eaab3f87b587ea3a63653440ddc2b87e3505d7635f4354"
+    },
+    "actionId": "A2"
+  },
+  "presentation": {
+    "medium": "text + finite table",
+    "placement": "Section 1 opening answer, then a year-by-year default-rate table",
+    "reason": "The default schedule is a finite 3% to 10% ladder, so a table shows it without interaction",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "Rate steps are fixed by rule; the only reader variable is salary and one worked example covers it"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static scannable layout answers faster without decorative motion"
+    }
+  },
+  "basis": "reported",
+  "decisionGap": "Workers know automatic enrollment exists but not the default numbers, the two dates (statute for plan years after Dec 31 2024, Treasury final regulations for plan years after Dec 31 2027), who is exempt, or that they can opt out or choose another rate.",
+  "finding": "Covered 401(k) and 403(b) plans must generally enroll eligible employees at 3% to 10% of pay in the first year and raise the rate by 1 percentage point each year to at least 10% and at most 15%, unless the participant elects out or another rate. Treasury says employees may opt out or choose a different contribution rate. Exemptions are SIMPLE 401(k) plans, plans established before Dec 29 2022, governmental and church plans, employers in existence under 3 years and small employers (those that have not normally employed more than 10 employees). The sources checked do not say which date governs a given plan.",
+  "conditions": "A worker's plan may be exempt, may already auto-enroll voluntarily with a different compliant default, or may start higher than 3% (up to 10%). The page does not say a current plan is exempt or has until 2028. Schedule arithmetic is pre-tax and salary-only, shows the minimum path, and is not a prediction of balances or an employer match.",
+  "whatWouldChange": "A plan notice showing a different default or an exemption; Treasury or IRS guidance on how the two dates apply to existing plans; a plan that starts above 3% or steps up faster (up to 15%).",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-17-xtrends-run/evidence/401k-auto-enrollment-final-rules/cases.json",
+    "sha256": "fe6881c09534b54d3d8689008326ad2befdafed03032f4c0164bbad153afae89"
+  },
+  "caseDecisions": [
+    {
+      "recordId": "owned-property-diy-repair-guide",
+      "decision": "rejected",
+      "reason": "Rejected: owned DIY repair property, unrelated."
+    },
+    {
+      "recordId": "owned-property-the-indoor-report",
+      "decision": "rejected",
+      "reason": "Rejected: owned indoor-air property, unrelated."
+    },
+    {
+      "recordId": "owned-property-the-hoa-guide",
+      "decision": "rejected",
+      "reason": "Rejected: owned HOA guide property, no outcome relevance to the reader question."
+    },
+    {
+      "recordId": "owned-property-new-parent-picks",
+      "decision": "rejected",
+      "reason": "Rejected: owned parenting-products property, unrelated."
+    },
+    {
+      "recordId": "client-bowlero-corporation",
+      "decision": "rejected",
+      "reason": "Rejected: unrelated client (bowling entertainment); no documented observation on this topic."
+    },
+    {
+      "recordId": "client-professional-bowlers-association-pba",
+      "decision": "rejected",
+      "reason": "Rejected: unrelated client; no documented observation on this topic."
+    },
+    {
+      "recordId": "client-multiple-law-firms",
+      "decision": "rejected",
+      "reason": "Rejected: law-firm clients; no documented observation on this topic, and legal services are an excluded testing scope."
+    },
+    {
+      "recordId": "owned-property-the-psychedelic-journal",
+      "decision": "rejected",
+      "reason": "Rejected: psychedelic topic is an excluded scope and unrelated."
+    }
+  ],
+  "sourceArtifacts": [
+    {
+      "path": "reports/x-trends/2026-11-17.md",
+      "sha256": "d9f882c05879337fbf220215fee5bf2473cf05a02fb2d54441ea21aa0b4423af"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/coverage-lookup.txt",
+      "sha256": "9457e49f6fcb2ae9e41f63f028eabc7d2ca573994189964e6881c4ab390b3ee8"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/keyword-volumes.json",
+      "sha256": "1d75689e8fd36fa3cab29db121bca43ea61f97bf10218ec029a65dbeb8db012d"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/serp.json",
+      "sha256": "6d66f798e507b663ecb79f2a8f923b236d7dfdf54c0483e60a9790570fbf8a61"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/treasury-sb0690.txt",
+      "sha256": "1b442cc258b0732698945e8983edac69ed11b508913fc3ba97452dd159474ad9"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/usc-26-414A.txt",
+      "sha256": "3f7930edb05aa931d07a2fc73ee2cca5bffb3ec2e9eb653c6b7f3819ff3c4f41"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/fr-td10061-unverified.txt",
+      "sha256": "21b78f7cfb0f301d4b8ab21633140a9f3b74823421217c966a15a555dd805943"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/autocomplete.401k-auto-enrollment.csv",
+      "sha256": "a13394bb139ab2a4eff138edaf30bf845392ace75f7320ffa502e53759a0b500"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/link-inspections/limits-2027.txt",
+      "sha256": "a6352c2d9ef1bbf9ebfcd3a17c8fb51bcc540c97c2c8fda9cb5aa94a51e5d144"
+    }
+  ],
+  "whyNoQuantitativeAnalysis": "The finding is a statutory and regulatory rule. The one finite schedule table and the $60,000 example are plain arithmetic restating the rule; the page labels them as the rule's schedule shown for illustration and does not call them internal analysis or modeling.",
+  "reasoning": "Treasury press release SB-0690 (Nov 17 2026) states the 3% default, +1 point per year to at least 10% (15% maximum), opt-out right, applicability to plan years beginning after Dec 31 2027, and what the final regulations clarify. 26 U.S.C. 414A(b)(3) gives the statutory 3% to 10% first-year range and the 1-point annual steps to at least 10% and at most 15%. 414A(c) gives the exceptions. Pub. L. 117-328 section 101(c) makes the statute apply to plan years beginning after Dec 31 2024. The two dates are both reported with attribution; the sources do not reconcile them for a given plan.",
+  "caseUses": [],
+  "sourceUrls": [
+    {
+      "url": "https://home.treasury.gov/news/press-releases/sb0690",
+      "checked": "2026-11-17",
+      "label": "U.S. Department of the Treasury press release, Nov 17 2026"
+    },
+    {
+      "url": "https://www.law.cornell.edu/uscode/text/26/414A",
+      "checked": "2026-11-17",
+      "label": "26 U.S. Code 414A (Legal Information Institute)"
+    }
+  ],
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [],
+    "scopeAndLimits": "External primary-source reporting and law text only. We ran no product test, no executed model and have no client record behind any statement on this page. Reader-facing wording names the actual source of each fact.",
+    "publicMethod": "Each rule is attributed inline to Treasury or the statute text; the arithmetic is shown in the table and example.",
+    "placement": "Opening section and takeaway attribute the rule to Treasury and 26 U.S.C. 414A; the schedule table is described as the rule's minimum path shown for illustration."
+  },
+  "closedFacts": [
+    "Treasury press release SB-0690 (U.S. Department of the Treasury and the Internal Revenue Service, Nov. 17 2026): Treasury and the IRS issued final regulations implementing a provision of the SECURE 2.0 Act on automatic enrollment for certain 401(k) and 403(b) plans. Treasury estimates the provision will increase retirement savings by an average of $4.2 billion annually over the 2023-2032 period.",
+    "Treasury: \"Covered retirement plans generally must automatically enroll eligible employees at a contribution rate of three percent. After an initial participation period, the default contribution rate must generally increase by at least one percentage point each year until it reaches at least ten percent, subject to a fifteen percent maximum. Employees may opt out or choose a different contribution rate.\"",
+    "Treasury: \"The final regulations generally apply to retirement plan years beginning after December 31, 2027, giving employers time to make necessary administrative changes.\"",
+    "Treasury says the final regulations: clarify statutory exceptions for qualifying small and new businesses, governmental plans, church plans and SIMPLE 401(k) plans; give employers flexibility in the timing and amount of automatic contribution increases within statutory limits; simplify plan communications by allowing certain required notices to be combined and reducing annual notice requirements for qualifying employees who are not participating, provided they receive annual reminders and any plan documents they are entitled to request; and explain how automatic enrollment requirements apply following plan mergers. Describe the exemptions at statute precision and say only that Treasury says the final rules clarify them. Do not describe regulation-level definitions.",
+    "26 U.S.C. 414A(a)-(b) (statute): a section 401(k) arrangement or a 403(b) salary-reduction annuity contract is not treated as such unless it meets the automatic enrollment requirements. In the first year of participation the uniform percentage of compensation contributed must be not less than 3 percent and not more than 10 percent, unless the participant specifically elects not to have contributions made or to have them made at a different percentage. On the first day of each plan year starting after each completed year of participation the percentage must increase by 1 percentage point, to at least 10 percent but not more than 15 percent, unless the participant elects out or another percentage. Contributions with no participant investment election must be invested in accordance with 29 CFR 2550.404c-5 (the default-investment rules).",
+    "26 U.S.C. 414A(c) exceptions: SIMPLE plans (section 401(k)(11)); any cash or deferred arrangement or 403(b) contract established before the date of enactment (Dec. 29 2022, Pub. L. 117-328); governmental plans and church plans; an employer in existence (with any predecessor) for less than 3 years; and a small employer, which is exempt until the date 1 year after the close of the first taxable year in which the employer normally employed more than 10 employees (the small-business test is more than 10 employees, so 10 or fewer is exempt).",
+    "Pub. L. 117-328, div. T, title I, section 101(c) (Dec. 29 2022): the statutory amendments apply to plan years beginning after Dec. 31 2024. So the statute date is plan years beginning after Dec. 31 2024 and Treasury's date for the final regulations is plan years beginning after Dec. 31 2027. The sources checked do not tell a worker which date governs a given plan. Never say or imply a current plan is exempt or has until 2028. State both dates with attribution.",
+    "ILLUSTRATIVE ARITHMETIC (the rule's minimum path, pre-tax, salary-only, not a prediction, no match or investment growth): start 3% in year 1, then +1 point per completed year of participation: 3, 4, 5, 6, 7, 8, 9, 10 percent, so 10% is reached after seven steps (year 8). A plan may start higher (up to 10%) or step faster, up to 15%. At a $60,000 salary 3% is $1,800 a year and 10% is $6,000 a year.",
+    "NOT VERIFIED, DO NOT STATE: any Federal Register or TD number for the final regulations (do not print \"TD 10061\"); a good-faith interim compliance period; how Roth versus traditional default rules apply; that any existing plan is exempt or has until 2028; employer match rules."
+  ],
+  "takeawayPlan": "For workers at a covered new 401(k) or 403(b) plan: expect enrollment at 3% or more (first-year range 3% to 10%), raised 1 point a year to at least 10% (max 15%), and you can opt out or choose another rate; check your plan notice for whether the plan is exempt or voluntarily auto-enrolls with another default. Both dates (statute after Dec 31 2024, Treasury final regulations after Dec 31 2027) are stated with attribution and the sources do not say which governs a plan. Attributed to Treasury and 26 U.S.C. 414A; schedule is the rule's minimum path shown for illustration."
+}

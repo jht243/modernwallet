@@ -1,0 +1,32 @@
+-OVERLOAD",
+      "status": "open",
+      "evidence": "FIX -> 'The county treasurer mails the notice by first class mail after November 10 and on or before November 24. It goes to each taxpayer at the address on the county assessment roll. You can ask in writing for electronic delivery.' FIX Takeaway sentence 2 -> 'Each taxing authority's final levy is generally capped at its proposed levy. Your final bill can still differ. Subdivision 3(e) exclusions such as special assessments and post-certification referenda move it, and so do separate valuation and classification decisions.' Split the McCarthy/Hilgart sentence into two."
+    },
+    {
+      "id": "R1-3-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Figures and quotes trace to the saved sources. Two attribution and citation errors (A3-DOR-ATTRIBUTION, A3-SUBD6B-CITE) and one unattributed causal sentence (A3-CAUSAL-CLAIM)."
+    },
+    {
+      "id": "R1-3-factualReview-consequentialClaims",
+      "status": "open",
+      "evidence": "Levy cap statement is right but the exceptions list omits subd. 6(a)(7)-(9) and commissioner-approval conditions, cites 6(b) for the state general tax (the rule is in 3(c)-(d)), and attributes 'limited statutory exceptions' to DOR (A3-DOR-ATTRIBUTION, A3-SUBD6B-CITE, A3-EXCEPTIONS-LIST). Homestead reclassification omits the unstated deadline (A3-HOMESTEAD-DEADLINE)."
+    },
+    {
+      "id": "R1-3-factualReview-limitationsAndJurisdiction",
+      "status": "open",
+      "evidence": "Minnesota-only scope is clear. Gaps: deadline for the subd. 3(g) homestead request is not stated or routed, hearing list omits fire protection and emergency medical services districts. The valuation-appeal path is correctly excluded."
+    },
+    {
+      "id": "R1-3-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "Title 56 chars, meta 156 chars, FAQ and Article JSON-LD, 2778 words against a 1200 floor. Failures: H2 'What Your Truth-in-Taxation Notice Is and What You Can Do' is a two-clause formula with 'Your' and the H1 keeps 'Your' (A3-H2-FORMULA), monotone-rhythm and sentences of 63, 57 and 50 words (A3-RHYTHM-OVERLOAD)."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-17-xtrends-run/handoff-write-round2.json",
+    "sha256": "1a01fed866a616c6f45a05b1436edfb72610b14268f5ff66c1c3efd6d55d8706"
+  }
+}
+

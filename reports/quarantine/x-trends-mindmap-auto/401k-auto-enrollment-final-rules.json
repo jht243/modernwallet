@@ -1,0 +1,19 @@
+{
+  "attempts": 1,
+  "createdAt": "2026-11-17T17:51:13Z",
+  "error": "",
+  "expiresAt": "2026-11-24T17:51:13Z",
+  "itemId": "401k-auto-enrollment-final-rules",
+  "maxRetries": 0,
+  "reason": "audit-limit tooling deadlock; round-2 FAIL non-liability",
+  "routes": [
+    "/guides/401k-auto-enrollment-final-rules"
+  ],
+  "savedBranch": null,
+  "savedCommit": "6bf9c6f75cdd912a3dfe16712d6b2fd66e05e550",
+  "site": "",
+  "skill": "x-trends-mindmap-auto",
+  "status": "quarantined",
+  "updatedAt": "2026-11-17T17:51:13Z",
+  "version": 1
+}

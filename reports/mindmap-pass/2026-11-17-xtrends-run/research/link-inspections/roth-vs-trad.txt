@@ -1,0 +1,2 @@
+Inspected src/data/comparisons.ts line 5144; route /compare/roth-401k-vs-traditional-401k/; checked 2026-11-17
+Section headings: ['Tax math: which version saves more?', 'The employer match goes in pre-tax by default', 'Roth 401(k) and required minimum distributions', 'When to use both at the same time']

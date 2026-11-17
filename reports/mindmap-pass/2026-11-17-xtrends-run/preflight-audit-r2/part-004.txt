@@ -1,0 +1,114 @@
+nonical https://www.themodernwallet.com/guides/chase-outage-fee-reversal/ correct, one inbound from how-much-emergency-fund. External links to NBC, Fortune, eCFR, CFPB and Zelle work. The outbound to how-much-emergency-fund uses a mismatched anchor (A1-ANCHOR-EMERGENCY)."
+    },
+    {
+      "id": "R1-1-checks-renderedLayout",
+      "status": "open",
+      "evidence": "Inspected the captured HTML. Fee table renders as a pipe table inside table-wrap, numbered list and bullet lists render. The tools-pills container is empty under a visible 'Tools for this journey' label (A1-EMPTY-TOOLS). No browser screenshot was taken; layout judged from HTML and template CSS."
+    },
+    {
+      "id": "R1-1-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Every figure traces to a saved source except the discretion claim and the CFPB intake-questionnaire sentence (A1-DISCRETION, A1-CFPB-QUESTIONNAIRE)."
+    },
+    {
+      "id": "R1-1-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full rendered page. Top answer, request script, fee table, Reg E section, FAQ and takeaway agree except that the 'discretion, not a legal right' framing is unsourced and the closing action links to a guide that does not answer 'cash outside one bank'."
+    },
+    {
+      "id": "R1-1-factualReview-consequentialClaims",
+      "status": "open",
+      "evidence": "Strongest plausible counterexample tested: a fee caused by an incorrect electronic transfer or Chase-side processing error may be recoverable as a Regulation E error or under the deposit agreement, which contradicts 'not an automatic legal right' stated without source. Reg E deadline claims themselves match the eCFR text. See A1-DISCRETION for the exact fix."
+    },
+    {
+      "id": "R1-1-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "Dates, fee amounts and outage timeline are current as of 2026-11-17 saved captures. Two details fail: Regulation E timing is stated as universal 10/45 days while 12 CFR 1005.11(c)(3) allows 20 business days and 90 days in cases such as new accounts; and the CFPB intake-questionnaire sentence has no source (findings A1-REGE-PERIODS, A1-CFPB-QUESTIONNAIRE)."
+    },
+    {
+      "id": "R1-1-factualReview-limitationsAndJurisdiction",
+      "status": "open",
+      "evidence": "US federal rules only, which the page implies but does not state. Missing the 20/90-day variants (A1-REGE-PERIODS). The page correctly states the sources do not list NSF or late-fee amounts and presents 2010 as precedent only."
+    },
+    {
+      "id": "R1-1-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "The ask-Chase then CFPB escalation path is sourced (CFPB complaint guide, Fortune 2010 precedent). The framing that reversal is at Chase's discretion and 'not an automatic legal right' is not in any saved source (A1-DISCRETION), and the closing link anchor promises 'cash outside one bank' that the destination guide does not say (A1-ANCHOR-EMERGENCY)."
+    },
+    {
+      "id": "R1-1-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "Title 50 chars, meta 154 chars, H1 matches intent, FAQ JSON-LD and Article schema present, 2495 words against a 1000 floor, headings Title Case. Failures: empty 'Tools for this journey' box (A1-EMPTY-TOOLS), 'the bank' coy abstraction x6, a 10-sentence all-long run (A1-RHYTHM-OVERLOAD). Chase links are removed by the site's owner-rule unlink_pitched build step, so the unlinked Chase mention is not a writer defect."
+    },
+    {
+      "id": "A2-SMALL-EMPLOYER",
+      "status": "open",
+      "evidence": "FIX introText: 'small employers with 10 or fewer workers' -> 'small employers that have not normally employed more than 10 employees (the exemption runs until one year after the close of the first taxable year in which they did)'. FIX FAQ 'Which plans are exempt': 'employers with 10 or fewer employees' -> 'small employers that have not normally employed more than 10 employees, until one year after the close of the first taxable year in which they did'."
+    },
+    {
+      "id": "A2-ACRONYMS",
+      "status": "open",
+      "evidence": "FIX intro: 'SECURE 2.0 Act provision' -> 'SECURE 2.0 Act (Setting Every Community Up for Retirement Enhancement) provision'; 'SIMPLE 401(k) plans' (first use) -> 'SIMPLE (Savings Incentive Match Plan for Employees) 401(k) plans'."
+    },
+    {
+      "id": "A2-META-3PCT",
+      "status": "open",
+      "evidence": "FIX metaDescription: 'start covered plans at 3%' -> 'start covered plans at a default of at least 3%' (keep 120-160 chars). H1/title may keep 'at 3%' only if the first-answer sentence keeps 'at least 3%', which it does."
+    },
+    {
+      "id": "A2-RESTATEMENT",
+      "status": "open",
+      "evidence": "FIX delete from How to Opt Out or Change Your Rate the two sentences beginning 'The U.S. Department of the Treasury noted that the final regulations simplify plan communications' and 'The rules also reduce annual notice requirements'; keep the single statement in What the Final Regulations Changed for Employers."
+    },
+    {
+      "id": "A2-RHYTHM-OVERLOAD",
+      "status": "open",
+      "evidence": "FIX Takeaway: 'If you work at a covered new 401(k) or 403(b) plan, expect enrollment at 3% or more (first-year range 3% to 10%), raised 1 point a year to at least 10% (max 15%), with the right to opt out or choose another rate.' -> 'Expect enrollment at 3% or more if you work at a covered new 401(k) or 403(b) plan. The first-year default can run from 3% to 10%. It rises 1 point a year to at least 10%, with a 15% maximum. You can opt out or choose another rate.' FIX dates sentence -> 'The statute applies to plan years beginning after December 31, 2024. Treasury says the final regulations generally apply to plan years beginning after December 31, 2027. The sources do not say which date governs a specific plan.' Insert short sentences into the two long runs."
+    },
+    {
+      "id": "A2-CLEAR-PROGRESSION",
+      "status": "open",
+      "evidence": "FIX -> 'The statute sets a minimum path for automatic increases.'"
+    },
+    {
+      "id": "R1-2-factualReview-consequentialClaims",
+      "status": "open",
+      "evidence": "Intro and FAQ state the small-employer exemption as '10 or fewer' without the 414A(c)(4)(B) one-year tail, which contradicts the chart-review guardrail 'more than 10 employees' that the exemptions section satisfies. Exact fix in A2-SMALL-EMPLOYER."
+    },
+    {
+      "id": "R1-2-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "Title 52 chars, meta 146 chars, FAQ and Article JSON-LD present, 2222 words against a 1200 floor, headings Title Case. Failures: undefined acronyms SECURE and SIMPLE, monotone-rhythm (two 10-sentence all-long runs), overloaded 45-word takeaway sentences, notice-simplification text repeated three times (A2-ACRONYMS, A2-RHYTHM-OVERLOAD, A2-RESTATEMENT)."
+    },
+    {
+      "id": "A3-DOR-ATTRIBUTION",
+      "status": "open",
+      "evidence": "FIX -> 'The Department of Revenue says final levies can be set lower, but not higher, than preliminary levies. Minn. Stat. 275.065 subd. 6(a) lists limited exceptions.' Same split in the Our Takeaway phrase 'generally capped at its proposed levy according to the Minnesota Department of Revenue' (keep 'generally')."
+    },
+    {
+      "id": "A3-SUBD6B-CITE",
+      "status": "open",
+      "evidence": "FIX -> 'Subdivision 6(b) says the cap does not apply to towns or to special taxing districts other than regional library and metropolitan districts. Under subdivisions 3(c) and 3(d), a town or the state general tax is final at its proposed amount, and a town can change its levy at a special town meeting under section 365.52.'"
+    },
+    {
+      "id": "A3-HOMESTEAD-DEADLINE",
+      "status": "open",
+      "evidence": "FIX body and FAQ: 'by the statutory deadline' / 'by the applicable deadline' -> 'by the applicable deadline. The statute does not give the date, so ask your county assessor what it is.'"
+    },
+    {
+      "id": "A3-H2-FORMULA",
+      "status": "open",
+      "evidence": "FIX H2 -> 'What a Truth-in-Taxation Notice Means for Your Tax Bill'. FIX H1 -> 'How to Read a Minnesota Truth-in-Taxation Notice for 2027' (title tag already avoids 'Your')."
+    },
+    {
+      "id": "A3-EXCEPTIONS-LIST",
+      "status": "open",
+      "evidence": "FIX after the last bullet add: 'Subdivision 6(a) also allows amounts for emergency debt certificates and state unallotment.' FIX bullets on disaster and tort levies: append 'if the commissioner of revenue approves'. FIX hearing lists (section and FAQ) add 'certain fire protection and emergency medical services special taxing districts'."
+    },
+    {
+      "id": "A3-CAUSAL-CLAIM",
+      "status": "open",
+      "evidence": "FIX -> 'Local-government groups point to budget pressure. As reported by CBS Minnesota, ...' and keep the McCarthy and Hilgart attributions."
+    },
+    {
+      "id": "A3-RHYTHM

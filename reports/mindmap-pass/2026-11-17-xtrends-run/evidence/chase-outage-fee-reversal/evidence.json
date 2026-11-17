@@ -1,0 +1,175 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-write",
+  "route": "/guides/chase-outage-fee-reversal",
+  "readerQuestion": "How do I get Chase to reverse late, overdraft or NSF fees caused by the Nov 16 outage? [PAA 0/0 unread; ac 0/47 on-intent question completions, outage-status completions only]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/approval-manifest.json",
+      "sha256": "69f51a534ebea452b8c4091c4fea26fde2df93d46f7a6422164de8785ab71f41"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/chart-review.json",
+      "sha256": "2f3fb172b766cf20a739b0e708866eb52ff5dd737462566ef41c98be1a8e30ba"
+    },
+    "actionId": "A1"
+  },
+  "presentation": {
+    "medium": "text",
+    "placement": "Section 1 opening answer, then a short request script block and a documentation checklist",
+    "reason": "The reader needs steps and wording, a finite list, not variable-input math",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "The fee amounts are fixed policy figures (Chase's $34 overdraft fee, max 3 per business day) so a table beats a calculator"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static scannable layout answers faster without decorative motion"
+    }
+  },
+  "basis": "reported",
+  "decisionGap": "Readers who saw late, overdraft or NSF fees post around the Nov 16 2026 Chase outage do not know whether Chase reverses them, who to ask, what to keep as proof, which Chase fee rules apply, or when a CFPB complaint is the next step. Existing coverage answers outage status, not the fee question.",
+  "finding": "The checked sources do not show a Chase policy or obligation to reverse outage-period fees, so reversal is a request to Chase. The method that fits what the sources support: list each fee, gather dated proof, ask Chase by phone or secure message citing the Nov 16 outage, log every contact, follow up in writing, and file a Consumer Financial Protection Bureau (CFPB) complaint if Chase declines or does not answer. If you believe an electronic transfer was unauthorized, incorrect or omitted, the Regulation E notice-of-error clock (60 days from the statement) is a separate route. The sources checked do not say whether outage-related fees or delays count as errors.",
+  "conditions": "Applies to a fee that was caused or worsened by the outage. A fee from your own overspending or a normal late payment is not reversed on outage grounds. The checked sources do not show a Chase policy that reverses fees for this outage or that Chase must reverse a fee, so reversal is a request to Chase. A Chase or Zelle announcement of automatic refunds or a blanket waiver would replace this method with Chase instructions.",
+  "whatWouldChange": "A Chase announcement of automatic refunds, a blanket fee waiver or a dedicated outage-fee process; a regulator statement that outage delays are errors under Regulation E; Chase changing its published overdraft rules.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-17-xtrends-run/evidence/chase-outage-fee-reversal/cases.json",
+    "sha256": "413f92c46200af1d0102cd6b16cf2114299d137e34125c18c53fda03db3f08c9"
+  },
+  "caseDecisions": [
+    {
+      "recordId": "owned-property-drones-defense",
+      "decision": "rejected",
+      "reason": "Rejected: owned drone/defense-stock research property, no relevance to bank fees, retirement-plan rules or property-tax notices."
+    },
+    {
+      "recordId": "owned-property-the-hoa-guide",
+      "decision": "rejected",
+      "reason": "Rejected: owned HOA guide property, no outcome relevance to the reader question."
+    },
+    {
+      "recordId": "client-bowlero-corporation",
+      "decision": "rejected",
+      "reason": "Rejected: unrelated client (bowling entertainment); no documented observation on this topic."
+    },
+    {
+      "recordId": "client-professional-bowlers-association-pba",
+      "decision": "rejected",
+      "reason": "Rejected: unrelated client; no documented observation on this topic."
+    },
+    {
+      "recordId": "client-horizen-labs",
+      "decision": "rejected",
+      "reason": "Rejected: unrelated crypto client; no documented observation on this topic."
+    },
+    {
+      "recordId": "client-multiple-hoa-and-condo-boards-across-the-usa",
+      "decision": "rejected",
+      "reason": "Rejected: HOA board clients; no documented observation on this topic."
+    },
+    {
+      "recordId": "client-multiple-law-firms",
+      "decision": "rejected",
+      "reason": "Rejected: law-firm clients; no documented observation on this topic, and legal services are an excluded testing scope."
+    },
+    {
+      "recordId": "owned-property-cuban-insights",
+      "decision": "rejected",
+      "reason": "Rejected: unrelated owned property."
+    }
+  ],
+  "sourceArtifacts": [
+    {
+      "path": "reports/x-trends/2026-11-17.md",
+      "sha256": "d9f882c05879337fbf220215fee5bf2473cf05a02fb2d54441ea21aa0b4423af"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/coverage-lookup.txt",
+      "sha256": "9457e49f6fcb2ae9e41f63f028eabc7d2ca573994189964e6881c4ab390b3ee8"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/keyword-volumes.json",
+      "sha256": "1d75689e8fd36fa3cab29db121bca43ea61f97bf10218ec029a65dbeb8db012d"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/serp.json",
+      "sha256": "6d66f798e507b663ecb79f2a8f923b236d7dfdf54c0483e60a9790570fbf8a61"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/nbc-chase-outage.txt",
+      "sha256": "40b6eb90fe37a2ad8f4d207ba1fd42451902f1d8e7bbdaf7d8a856d27a59e344"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/fortune-bank-outages.txt",
+      "sha256": "243acd17f330a3f189e026751adac421c9006263c8550e1e85aeece8bc9a75f5"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/chase-overdraft-services.txt",
+      "sha256": "8d11087778b054ce4baf34ed21c1b71bcef4323b3982f63ca98a5588f2c57733"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/ecfr-12-cfr-1005-11.txt",
+      "sha256": "026a1138f1c5140c969171bc612fc03124df0e10f8f219b218a88f08ee593ab5"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/cfpb-submit-complaint.txt",
+      "sha256": "74b7e1e364c35bbd9548ddda579952cba589c78a648d571a6138e071349dbfc8"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/research/autocomplete.chase-outage.csv",
+      "sha256": "77472c187916c63d5998e7bddf1b8424f1452fae152b878668793f8ea4dad108"
+    }
+  ],
+  "whyNoQuantitativeAnalysis": "The answer is a procedure and fixed published policy figures (Chase overdraft fee schedule, Regulation E deadlines, CFPB complaint limits). No variable-input model changes the decision, and no defensible estimate of how many fees Chase reversed exists.",
+  "reasoning": "NBC News and Fortune (Nov 16 2026) establish what Chase and Zelle said about the outage. Chase overdraft page establishes the fee rules a reader can check against their statement. Neither source says Chase will reverse fees for the outage, so the page frames reversal as a request, notes the 2010 refund-if-you-called precedent (Fortune) as precedent only, uses 12 CFR 1005.11 for the electronic-transfer error route without asserting it applies, and uses the CFPB complaint page for escalation limits (15 days typical response, up to 60, 50-page attachment limit, generally one complaint per problem).",
+  "caseUses": [],
+  "sourceUrls": [
+    {
+      "url": "https://www.nbcnews.com/business/consumer/outages-chase-banking-online-branches-rcna609673",
+      "checked": "2026-11-17",
+      "label": "NBC News, Nov 16 2026"
+    },
+    {
+      "url": "https://fortune.com/2026/11/16/chase-bank-wells-fargo-capital-one-bank-outages/",
+      "checked": "2026-11-17",
+      "label": "Fortune, Nov 16 2026"
+    },
+    {
+      "url": "https://www.chase.com/personal/checking/overdraft-services",
+      "checked": "2026-11-17",
+      "label": "Chase Overdraft Services page"
+    },
+    {
+      "url": "https://www.ecfr.gov/current/title-12/part-1005/section-1005.11",
+      "checked": "2026-11-17",
+      "label": "12 CFR 1005.11"
+    },
+    {
+      "url": "https://www.consumerfinance.gov/complaint/",
+      "checked": "2026-11-17",
+      "label": "CFPB submit a complaint page"
+    }
+  ],
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [],
+    "scopeAndLimits": "External primary-source reporting and law text only. We ran no product test, no executed model and have no client record behind any statement on this page. Reader-facing wording names the actual source of each fact.",
+    "publicMethod": "Each fact is attributed inline to its linked source.",
+    "placement": "Opening answer and the Our Takeaway section: name NBC News, Fortune, Chase, the eCFR text and the CFPB as sources; no internal-testing wording."
+  },
+  "closedFacts": [
+    "NBC News (Rob Wile and Kayla Steinberg, Nov. 16 2026, posted 2:32 PM EST, updated 6:54 PM EST): Chase said transactions were posting normally Monday evening after a nationwide outage; customers reported trouble accessing accounts and withdrawing funds. A Chase spokesperson said \"Transactions are now posting normally\" around 6:30 p.m. (time zone as NBC printed it; the article is stamped EST). Do not say service was fully restored.",
+    "NBC News: Chase said around 4 p.m. on X that JPMorganChase \"has experienced a temporary issue related to a software bug in on-premise hardware system\". The issues affected online and in-person branch transactions. Chase said the issue was not \"cyber-related\". Chase said customers still had access to their accounts and funds but some transactions were taking longer than normal. NBC reports Chase counts approximately 94 million customer relationships in the United States, with 5,000 branches and 15,000 ATMs.",
+    "NBC News: Zelle told NBC News, \"Zelle is not down. Zelle is operating as it should. An issue at the financial institutions may be delaying Zelle payments for some of their customers. Please contact them directly.\" Quote this statement directly and attribute it.",
+    "Fortune (Catherina Gioino, Nov. 16 2026, 3:35 PM ET): Chase customers spent much of the day unable to log in or move money, with the bank saying the outage spread from its website and app to some branches and to outside apps that connect to Chase accounts. Plaid said its network was working normally but it was seeing connection problems with Chase accounts, so linking or refreshing a Chase account in another app may have errored.",
+    "Fortune: A Chase spokesperson told Fortune, \"Due to a technical issue, some transactions are taking longer than usual to complete but customers still have access to their accounts and funds.\" Chase online banking was down for more than a day in 2010; Fortune reports the bank said then it would refund late fees to customers who missed payments during that outage, as long as they called to ask. This is precedent, not a promise for 2026.",
+    "Chase Overdraft Services page: under Standard Overdraft Practice Chase may cover a transaction for a fee at its discretion. The fee is $34 per transaction, with a maximum of 3 Overdraft Fees per business day, for a total of $102. For transactions of $5 or less there is no Overdraft Fee.",
+    "Chase Overdraft Services page, Chase Overdraft Assist: if at the end of the business day you are overdrawn by $50 or less, no overdraft fee. If you are overdrawn by more than $50 at the end of the business day and make a deposit or transfer so the account is overdrawn by $50 or less before 11 pm ET or 8 pm PT the next business day, there is no Overdraft Fee.",
+    "Chase Overdraft Services page: Chase Debit Card Coverage OFF means everyday debit card transactions are declined and no Overdraft Fee is charged; ON means Chase may pay at its discretion and charge $34. Overdraft Protection can link a Chase savings account as a backup. Chase Secure Banking is described as a checking account with no Overdraft Fees. The page checked does not list late-fee or NSF (non-sufficient funds) fee amounts. Do not state any amount for those.",
+    "12 CFR 1005.11 (Regulation E, eCFR): an \"error\" includes an unauthorized electronic fund transfer, an incorrect electronic fund transfer to or from the account, and the omission of an electronic fund transfer from a periodic statement. A financial institution must act on an oral or written notice of error received no later than 60 days after it sends the periodic statement on which the alleged error first appears. The notice must let the institution identify your name and account number and say why you believe an error exists with the type, date and amount where possible. The institution may require written confirmation within 10 business days of an oral notice. It must investigate and determine whether an error occurred within 10 business days, or take up to 45 days if it provisionally credits the amount within 10 business days (longer periods apply in listed cases). The sources checked do not say whether outage-related fees or delays count as errors. Never imply they do.",
+    "CFPB submit-a-complaint page: the CFPB sends complaints to companies for response; most companies respond within 15 days and in some cases give a final response within 60 days. The page asks whether you have tried reaching out to the company. Include only the most important dates, amounts and communications. Attach supporting documents such as account statements and communications, limit 50 pages. You generally cannot submit a second complaint about the same problem. The CFPB publishes information about a complaint, without directly identifying information, in its public Consumer Complaint Database. After the company responds you have 60 days to give feedback. CFPB phone on the page: (855) 411-2372.",
+    "NOT VERIFIED, DO NOT STATE: whether Chase has announced or declined any blanket fee waiver or automatic refund; the time service was fully restored; X post counts; any NSF or late-fee amount; whether the outage-related fees are Regulation E errors; any promise that Chase will reverse a fee."
+  ],
+  "takeawayPlan": "Answer to the reader question: ask Chase in the first contact to reverse each outage-period fee, citing the Nov 16 date, with dated proof and a contact log; escalate to a CFPB complaint if Chase declines or does not answer. Applies to fees caused or worsened by the outage; reversal is Chase discretion; a Regulation E notice of error is a separate route only if you believe an electronic transfer was unauthorized, incorrect or omitted. Changes if Chase announces automatic refunds or a waiver. Attributed to NBC News, Fortune, Chase, 12 CFR 1005.11 and the CFPB, not to our testing."
+}

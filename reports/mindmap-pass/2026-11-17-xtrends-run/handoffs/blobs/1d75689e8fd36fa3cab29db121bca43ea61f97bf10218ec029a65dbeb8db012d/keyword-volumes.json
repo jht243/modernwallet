@@ -1,0 +1,190 @@
+{
+ "rows": [
+  {
+   "keyword": "chase outage fee reversal",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "chase outage",
+   "volume": 500,
+   "volume_low": 500,
+   "volume_high": 5000,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 500-5000/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "chase overdraft fee refund",
+   "volume": 500,
+   "volume_low": 500,
+   "volume_high": 5000,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 500-5000/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "chase late fee refund",
+   "volume": 500,
+   "volume_low": 500,
+   "volume_high": 5000,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 500-5000/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "401k automatic enrollment",
+   "volume": 500,
+   "volume_low": 500,
+   "volume_high": 5000,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 500-5000/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "401k auto enrollment rules",
+   "volume": 150,
+   "volume_low": 150,
+   "volume_high": 1500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "secure 2.0 automatic enrollment",
+   "volume": 500,
+   "volume_low": 500,
+   "volume_high": 5000,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix + broad completion set (est. 500-5000/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "can i opt out of 401k auto enrollment",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "truth in taxation notice",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 5 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "minnesota truth in taxation",
+   "volume": 150,
+   "volume_low": 150,
+   "volume_high": 1500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 exact autocomplete match from its own prefix (est. 150-1500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "minnesota property tax increase 2027",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 25,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-25/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "proposed property tax notice",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 6 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": false
+   }
+  }
+ ],
+ "notes": [
+  "semrush unusable (no SEMRUSH_API_KEY)",
+  "volume: no provider usable \u2014 autocomplete estimate only",
+  "No tool volume for 12 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 8/12 rows corroborated live"
+ ]
+}

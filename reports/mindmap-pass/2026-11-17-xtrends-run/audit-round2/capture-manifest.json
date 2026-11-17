@@ -1,0 +1,26 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "mindmap-write",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/guides/chase-outage-fee-reversal",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/401k-auto-enrollment-final-rules",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/minnesota-truth-in-taxation-notice",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "xtrends-2026-11-17"
+}

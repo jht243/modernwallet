@@ -1,0 +1,2 @@
+Inspected src/data/spokes-mortgage.ts line 709; route /mortgage/home-affordability-calculator/; checked 2026-11-17
+Section headings: ['Enter your income and debts — the tool uses the 28/36 rule to find your price.']

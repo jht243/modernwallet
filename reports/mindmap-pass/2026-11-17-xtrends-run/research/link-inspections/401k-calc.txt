@@ -1,0 +1,2 @@
+Inspected src/data/spokes-retirement.ts line 92; route /retirement/401k-calculator/; checked 2026-11-17
+Section headings: ['See how contributions plus the employer match compound over your career.']

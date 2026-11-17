@@ -1,0 +1,14 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "mindmap-write",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/mortgage/home-affordability-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "xtrends-2026-11-17"
+}

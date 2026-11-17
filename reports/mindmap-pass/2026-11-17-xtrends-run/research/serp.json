@@ -1,0 +1,37 @@
+{
+ "rows": [
+  {
+   "keyword": "chase outage fee reversal",
+   "verdict": "unread",
+   "evidence": "SERP read failed: DataForSEO unavailable \u2014 no SERP read possible",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  },
+  {
+   "keyword": "chase overdraft fee refund outage",
+   "verdict": "unread",
+   "evidence": "SERP read failed: DataForSEO unavailable \u2014 no SERP read possible",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  },
+  {
+   "keyword": "401k automatic enrollment rules",
+   "verdict": "unread",
+   "evidence": "SERP read failed: DataForSEO unavailable \u2014 no SERP read possible",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  },
+  {
+   "keyword": "truth in taxation notice minnesota",
+   "verdict": "unread",
+   "evidence": "SERP read failed: DataForSEO unavailable \u2014 no SERP read possible",
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "unknown \u2014 SERP not read"
+  }
+ ],
+ "cost": "DataForSEO: 0 calls, $0.00000 of $2.00 budget"
+}

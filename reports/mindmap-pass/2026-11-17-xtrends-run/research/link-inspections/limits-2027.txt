@@ -1,0 +1,2 @@
+Inspected src/data/guides.ts line 41; route /guides/retirement-contribution-limits-2027/; checked 2026-11-17
+Section headings: ['2027 Contribution Limits at a Glance', '401(k), 403(b), 457 and TSP Deferral Limits for 2027', 'Roth Catch-Up Wage Threshold for 2027', 'IRA Limits and Income Phase-Outs for 2027', 'SIMPLE Plan Limits for 2027', 'What Maxing Out 2027 Takes Per Paycheck', 'Our Takeaway for 2027 Elections']

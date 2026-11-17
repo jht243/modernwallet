@@ -1,0 +1,2 @@
+Inspected src/data/guides.ts line 15421; route /guides/401k-contribution-limits-2026/; checked 2026-11-17
+Section headings: ['The 401(k) Contribution Limit for 2026', 'The Roth and Traditional Caps Share One Number', 'How Much to Split Between Roth and Traditional', 'Catch-Up Contributions for Age 50 and Up', 'The $72,000 Combined Employer and Employee Limit', 'What Happens If You Contribute Too Much', 'What Maxing Out a 401(k) Grows Into']

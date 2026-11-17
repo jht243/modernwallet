@@ -1,0 +1,140 @@
+ttps://www.themodernwallet.com",
+  "jobId": "xtrends-2026-11-17",
+  "producer": "mindmap-write",
+  "routes": [
+    "/guides/chase-outage-fee-reversal",
+    "/guides/401k-auto-enrollment-final-rules",
+    "/guides/minnesota-truth-in-taxation-notice",
+    "/guides/how-much-emergency-fund/",
+    "/guides/retirement-contribution-limits-2027/",
+    "/guides/401k-contribution-limits-2026/",
+    "/compare/roth-401k-vs-traditional-401k/",
+    "/guides/tax-deductions-for-homeowners/",
+    "/mortgage/home-affordability-calculator/"
+  ],
+  "nextAction": "Execute approved Mindmap write actions, lint, and capture local rendered preview.",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/3dd52934ab7a91fb51a94adc61570099e1da83b2a952dccea015ada9cd0f8725/approval-manifest.json",
+      "sha256": "3dd52934ab7a91fb51a94adc61570099e1da83b2a952dccea015ada9cd0f8725",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/aa802d5e871e15654ce96e0e10d886b20ececada94a6286b29ec7804b32d2300/2026-11-17-xtrends.md",
+      "sha256": "aa802d5e871e15654ce96e0e10d886b20ececada94a6286b29ec7804b32d2300",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/7a30eab2b0c0c326f1654e39b65cd0d030f80cf6bbf901938e66034144a5b86f/preview-snapshot.json",
+      "sha256": "7a30eab2b0c0c326f1654e39b65cd0d030f80cf6bbf901938e66034144a5b86f",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/audit/preview-snapshot.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/cb73a2e1870bd39b060cd6c5b774427ab78ead9c96c15244c6fba8382421c8e7/readiness.md",
+      "sha256": "cb73a2e1870bd39b060cd6c5b774427ab78ead9c96c15244c6fba8382421c8e7",
+      "checkedAt": "2026-11-17T17:01:27.097742+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/7fdd250069bbed26a7eaab3f87b587ea3a63653440ddc2b87e3505d7635f4354/chart-review.json",
+      "sha256": "7fdd250069bbed26a7eaab3f87b587ea3a63653440ddc2b87e3505d7635f4354",
+      "checkedAt": "2026-11-17T17:01:27.097742+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/d9f882c05879337fbf220215fee5bf2473cf05a02fb2d54441ea21aa0b4423af/2026-11-17.md",
+      "sha256": "d9f882c05879337fbf220215fee5bf2473cf05a02fb2d54441ea21aa0b4423af",
+      "checkedAt": "2026-11-17T17:01:27.097742+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/x-trends/2026-11-17.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/9457e49f6fcb2ae9e41f63f028eabc7d2ca573994189964e6881c4ab390b3ee8/coverage-lookup.txt",
+      "sha256": "9457e49f6fcb2ae9e41f63f028eabc7d2ca573994189964e6881c4ab390b3ee8",
+      "checkedAt": "2026-11-17T17:01:27.097742+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/1d75689e8fd36fa3cab29db121bca43ea61f97bf10218ec029a65dbeb8db012d/keyword-volumes.json",
+      "sha256": "1d75689e8fd36fa3cab29db121bca43ea61f97bf10218ec029a65dbeb8db012d",
+      "checkedAt": "2026-11-17T17:01:27.097742+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/keyword-volumes.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/6d66f798e507b663ecb79f2a8f923b236d7dfdf54c0483e60a9790570fbf8a61/serp.json",
+      "sha256": "6d66f798e507b663ecb79f2a8f923b236d7dfdf54c0483e60a9790570fbf8a61",
+      "checkedAt": "2026-11-17T17:01:27.097742+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/serp.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/a16600461669df917a114b41d1e6f6621957b369d2def6124c11c9e2420ccd3b/cbs-mn-levies.txt",
+      "sha256": "a16600461669df917a114b41d1e6f6621957b369d2def6124c11c9e2420ccd3b",
+      "checkedAt": "2026-11-17T17:01:27.097742+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/cbs-mn-levies.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/74b7e1e364c35bbd9548ddda579952cba589c78a648d571a6138e071349dbfc8/cfpb-submit-complaint.txt",
+      "sha256": "74b7e1e364c35bbd9548ddda579952cba589c78a648d571a6138e071349dbfc8",
+      "checkedAt": "2026-11-17T17:01:27.097742+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/cfpb-submit-complaint.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/8d11087778b054ce4baf34ed21c1b71bcef4323b3982f63ca98a5588f2c57733/chase-overdraft-services.txt",
+      "sha256": "8d11087778b054ce4baf34ed21c1b71bcef4323b3982f63ca98a5588f2c57733",
+      "checkedAt": "2026-11-17T17:01:27.097742+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/chase-overdraft-services.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/026a1138f1c5140c969171bc612fc03124df0e10f8f219b218a88f08ee593ab5/ecfr-12-cfr-1005-11.txt",
+      "sha256": "026a1138f1c5140c969171bc612fc03124df0e10f8f219b218a88f08ee593ab5",
+      "checkedAt": "2026-11-17T17:01:27.097742+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/ecfr-12-cfr-1005-11.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/243acd17f330a3f189e026751adac421c9006263c8550e1e85aeece8bc9a75f5/fortune-bank-outages.txt",
+      "sha256": "243acd17f330a3f189e026751adac421c9006263c8550e1e85aeece8bc9a75f5",
+      "checkedAt": "2026-11-17T17:01:27.097742+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/fortune-bank-outages.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/21b78f7cfb0f301d4b8ab21633140a9f3b74823421217c966a15a555dd805943/fr-td10061-unverified.txt",
+      "sha256": "21b78f7cfb0f301d4b8ab21633140a9f3b74823421217c966a15a555dd805943",
+      "checkedAt": "2026-11-17T17:01:27.097742+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/fr-td10061-unverified.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/e17a5a905e8e59fec31387a0b20ff76ec14256531604796898fe9bd614bb6208/mn-revenue-prelim-levies.txt",
+      "sha256": "e17a5a905e8e59fec31387a0b20ff76ec14256531604796898fe9bd614bb6208",
+      "checkedAt": "2026-11-17T17:01:27.097742+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/mn-revenue-prelim-levies.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/bce89d01190eab9631c144134318aedb8958f299de05fb1d56d0bc68439f6850/mn-revenue-truth-in-taxation.txt",
+      "sha256": "bce89d01190eab9631c144134318aedb8958f299de05fb

@@ -1,0 +1,32 @@
+[
+ {
+  "id": "R2-A2-META-LENGTH",
+  "old": "The final 401(k) automatic enrollment rules start covered plans at a default of at least 3% and raise it yearly to at le",
+  "new": "The final 401(k) auto-enrollment rules start covered plans at 3% or more and raise it yearly to at least 10%. You can opt out or pick another rate."
+ },
+ {
+  "id": "R2-A2-INTRO-STACK",
+  "old": "However, plans established before December 29, 2022, businesses under three years old, small employers that have not nor",
+  "new": "Some plans are exempt from the federal requirement. They include plans established before December 29, 2022, businesses under three years old, church plans, governmental plans and SIMPLE (Savings Ince"
+ },
+ {
+  "id": "R2-A2-INTRO-STACK",
+  "old": "Exempt plans include those established before December 29, 2022, plans of businesses in existence under 3 years, small e",
+  "new": "Exempt plans include those established before December 29, 2022, plans of businesses in existence under 3 years, church plans, governmental plans and SIMPLE 401(k) plans. Small employers that have not"
+ },
+ {
+  "id": "R2-A2-RHYTHM-RUNS",
+  "old": "The checked primary sources do not state which date governs a specific workplace plan, and workers should not assume an ",
+  "new": "The checked sources do not say which date governs a specific plan. Do not assume an existing plan is exempt or has until 2028. Read your plan notices."
+ },
+ {
+  "id": "R2-A2-RHYTHM-RUNS",
+  "old": "Two distinct federal effective dates apply to these automatic enrollment rules.",
+  "new": "Two dates apply."
+ },
+ {
+  "id": "R2-A2-RHYTHM-RUNS",
+  "old": "- Small employers that have not normally employed more than 10 employees, remaining exempt until one year after the clos",
+  "new": "- Small employers that have not normally employed more than 10 employees. They stay exempt until one year after the close of the first taxable year in which they did."
+ }
+]

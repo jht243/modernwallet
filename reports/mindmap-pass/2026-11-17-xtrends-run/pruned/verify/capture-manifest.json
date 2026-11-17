@@ -1,0 +1,38 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "mindmap-write",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/guides/chase-outage-fee-reversal",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/minnesota-truth-in-taxation-notice",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/how-much-emergency-fund/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/tax-deductions-for-homeowners/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/mortgage/home-affordability-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "xtrends-2026-11-17"
+}

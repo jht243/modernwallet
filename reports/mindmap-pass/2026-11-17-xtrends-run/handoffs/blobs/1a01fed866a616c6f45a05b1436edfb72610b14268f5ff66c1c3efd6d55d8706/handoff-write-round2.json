@@ -1,0 +1,525 @@
+{
+  "version": 1,
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "xtrends-2026-11-17",
+  "producer": "mindmap-write",
+  "routes": [
+    "/guides/chase-outage-fee-reversal",
+    "/guides/401k-auto-enrollment-final-rules",
+    "/guides/minnesota-truth-in-taxation-notice",
+    "/guides/how-much-emergency-fund/",
+    "/guides/retirement-contribution-limits-2027/",
+    "/guides/401k-contribution-limits-2026/",
+    "/compare/roth-401k-vs-traditional-401k/",
+    "/guides/tax-deductions-for-homeowners/",
+    "/mortgage/home-affordability-calculator/"
+  ],
+  "nextAction": "DO NOT EDIT PASSED OR EXHAUSTED ROUTES (/guides/how-much-emergency-fund/, /guides/retirement-contribution-limits-2027/, /guides/401k-contribution-limits-2026/, /compare/roth-401k-vs-traditional-401k/, /guides/tax-deductions-for-homeowners/); rework ONLY /guides/chase-outage-fee-reversal, /guides/401k-auto-enrollment-final-rules, /guides/minnesota-truth-in-taxation-notice. Execute approved Mindmap write actions, lint, and capture local rendered preview.",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/3dd52934ab7a91fb51a94adc61570099e1da83b2a952dccea015ada9cd0f8725/approval-manifest.json",
+      "sha256": "3dd52934ab7a91fb51a94adc61570099e1da83b2a952dccea015ada9cd0f8725",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/aa802d5e871e15654ce96e0e10d886b20ececada94a6286b29ec7804b32d2300/2026-11-17-xtrends.md",
+      "sha256": "aa802d5e871e15654ce96e0e10d886b20ececada94a6286b29ec7804b32d2300",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/e83790d39befa4a4b3f89fa84572fd6a2c7079624e7e72c8b92bc06958e3dc95/preview-snapshot.json",
+      "sha256": "e83790d39befa4a4b3f89fa84572fd6a2c7079624e7e72c8b92bc06958e3dc95",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/audit-round2/preview-snapshot.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/cb73a2e1870bd39b060cd6c5b774427ab78ead9c96c15244c6fba8382421c8e7/readiness.md",
+      "sha256": "cb73a2e1870bd39b060cd6c5b774427ab78ead9c96c15244c6fba8382421c8e7",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/7fdd250069bbed26a7eaab3f87b587ea3a63653440ddc2b87e3505d7635f4354/chart-review.json",
+      "sha256": "7fdd250069bbed26a7eaab3f87b587ea3a63653440ddc2b87e3505d7635f4354",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/d9f882c05879337fbf220215fee5bf2473cf05a02fb2d54441ea21aa0b4423af/2026-11-17.md",
+      "sha256": "d9f882c05879337fbf220215fee5bf2473cf05a02fb2d54441ea21aa0b4423af",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/x-trends/2026-11-17.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/9457e49f6fcb2ae9e41f63f028eabc7d2ca573994189964e6881c4ab390b3ee8/coverage-lookup.txt",
+      "sha256": "9457e49f6fcb2ae9e41f63f028eabc7d2ca573994189964e6881c4ab390b3ee8",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/1d75689e8fd36fa3cab29db121bca43ea61f97bf10218ec029a65dbeb8db012d/keyword-volumes.json",
+      "sha256": "1d75689e8fd36fa3cab29db121bca43ea61f97bf10218ec029a65dbeb8db012d",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/keyword-volumes.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/6d66f798e507b663ecb79f2a8f923b236d7dfdf54c0483e60a9790570fbf8a61/serp.json",
+      "sha256": "6d66f798e507b663ecb79f2a8f923b236d7dfdf54c0483e60a9790570fbf8a61",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/serp.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/a16600461669df917a114b41d1e6f6621957b369d2def6124c11c9e2420ccd3b/cbs-mn-levies.txt",
+      "sha256": "a16600461669df917a114b41d1e6f6621957b369d2def6124c11c9e2420ccd3b",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/cbs-mn-levies.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/74b7e1e364c35bbd9548ddda579952cba589c78a648d571a6138e071349dbfc8/cfpb-submit-complaint.txt",
+      "sha256": "74b7e1e364c35bbd9548ddda579952cba589c78a648d571a6138e071349dbfc8",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/cfpb-submit-complaint.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/8d11087778b054ce4baf34ed21c1b71bcef4323b3982f63ca98a5588f2c57733/chase-overdraft-services.txt",
+      "sha256": "8d11087778b054ce4baf34ed21c1b71bcef4323b3982f63ca98a5588f2c57733",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/chase-overdraft-services.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/026a1138f1c5140c969171bc612fc03124df0e10f8f219b218a88f08ee593ab5/ecfr-12-cfr-1005-11.txt",
+      "sha256": "026a1138f1c5140c969171bc612fc03124df0e10f8f219b218a88f08ee593ab5",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/ecfr-12-cfr-1005-11.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/243acd17f330a3f189e026751adac421c9006263c8550e1e85aeece8bc9a75f5/fortune-bank-outages.txt",
+      "sha256": "243acd17f330a3f189e026751adac421c9006263c8550e1e85aeece8bc9a75f5",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/fortune-bank-outages.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/21b78f7cfb0f301d4b8ab21633140a9f3b74823421217c966a15a555dd805943/fr-td10061-unverified.txt",
+      "sha256": "21b78f7cfb0f301d4b8ab21633140a9f3b74823421217c966a15a555dd805943",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/fr-td10061-unverified.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/e17a5a905e8e59fec31387a0b20ff76ec14256531604796898fe9bd614bb6208/mn-revenue-prelim-levies.txt",
+      "sha256": "e17a5a905e8e59fec31387a0b20ff76ec14256531604796898fe9bd614bb6208",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/mn-revenue-prelim-levies.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/bce89d01190eab9631c144134318aedb8958f299de05fb1d56d0bc68439f6850/mn-revenue-truth-in-taxation.txt",
+      "sha256": "bce89d01190eab9631c144134318aedb8958f299de05fb1d56d0bc68439f6850",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/mn-revenue-truth-in-taxation.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/3efff715177a3b7a7a7e21525d7d98790f9142788c1d6b6bfaa9e397418f2093/mn-statute-275-065.txt",
+      "sha256": "3efff715177a3b7a7a7e21525d7d98790f9142788c1d6b6bfaa9e397418f2093",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/mn-statute-275-065.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/40b6eb90fe37a2ad8f4d207ba1fd42451902f1d8e7bbdaf7d8a856d27a59e344/nbc-chase-outage.txt",
+      "sha256": "40b6eb90fe37a2ad8f4d207ba1fd42451902f1d8e7bbdaf7d8a856d27a59e344",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/nbc-chase-outage.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/1b442cc258b0732698945e8983edac69ed11b508913fc3ba97452dd159474ad9/treasury-sb0690.txt",
+      "sha256": "1b442cc258b0732698945e8983edac69ed11b508913fc3ba97452dd159474ad9",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/treasury-sb0690.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/3f7930edb05aa931d07a2fc73ee2cca5bffb3ec2e9eb653c6b7f3819ff3c4f41/usc-26-414A.txt",
+      "sha256": "3f7930edb05aa931d07a2fc73ee2cca5bffb3ec2e9eb653c6b7f3819ff3c4f41",
+      "checkedAt": "2026-11-17T17:21:59.413288+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/usc-26-414A.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/cb73a2e1870bd39b060cd6c5b774427ab78ead9c96c15244c6fba8382421c8e7/readiness.md",
+      "sha256": "cb73a2e1870bd39b060cd6c5b774427ab78ead9c96c15244c6fba8382421c8e7",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/7fdd250069bbed26a7eaab3f87b587ea3a63653440ddc2b87e3505d7635f4354/chart-review.json",
+      "sha256": "7fdd250069bbed26a7eaab3f87b587ea3a63653440ddc2b87e3505d7635f4354",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/d9f882c05879337fbf220215fee5bf2473cf05a02fb2d54441ea21aa0b4423af/2026-11-17.md",
+      "sha256": "d9f882c05879337fbf220215fee5bf2473cf05a02fb2d54441ea21aa0b4423af",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/x-trends/2026-11-17.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/9457e49f6fcb2ae9e41f63f028eabc7d2ca573994189964e6881c4ab390b3ee8/coverage-lookup.txt",
+      "sha256": "9457e49f6fcb2ae9e41f63f028eabc7d2ca573994189964e6881c4ab390b3ee8",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/1d75689e8fd36fa3cab29db121bca43ea61f97bf10218ec029a65dbeb8db012d/keyword-volumes.json",
+      "sha256": "1d75689e8fd36fa3cab29db121bca43ea61f97bf10218ec029a65dbeb8db012d",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/keyword-volumes.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/6d66f798e507b663ecb79f2a8f923b236d7dfdf54c0483e60a9790570fbf8a61/serp.json",
+      "sha256": "6d66f798e507b663ecb79f2a8f923b236d7dfdf54c0483e60a9790570fbf8a61",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/serp.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/a16600461669df917a114b41d1e6f6621957b369d2def6124c11c9e2420ccd3b/cbs-mn-levies.txt",
+      "sha256": "a16600461669df917a114b41d1e6f6621957b369d2def6124c11c9e2420ccd3b",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/cbs-mn-levies.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/74b7e1e364c35bbd9548ddda579952cba589c78a648d571a6138e071349dbfc8/cfpb-submit-complaint.txt",
+      "sha256": "74b7e1e364c35bbd9548ddda579952cba589c78a648d571a6138e071349dbfc8",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/cfpb-submit-complaint.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/8d11087778b054ce4baf34ed21c1b71bcef4323b3982f63ca98a5588f2c57733/chase-overdraft-services.txt",
+      "sha256": "8d11087778b054ce4baf34ed21c1b71bcef4323b3982f63ca98a5588f2c57733",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/chase-overdraft-services.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/026a1138f1c5140c969171bc612fc03124df0e10f8f219b218a88f08ee593ab5/ecfr-12-cfr-1005-11.txt",
+      "sha256": "026a1138f1c5140c969171bc612fc03124df0e10f8f219b218a88f08ee593ab5",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/ecfr-12-cfr-1005-11.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/243acd17f330a3f189e026751adac421c9006263c8550e1e85aeece8bc9a75f5/fortune-bank-outages.txt",
+      "sha256": "243acd17f330a3f189e026751adac421c9006263c8550e1e85aeece8bc9a75f5",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/fortune-bank-outages.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/21b78f7cfb0f301d4b8ab21633140a9f3b74823421217c966a15a555dd805943/fr-td10061-unverified.txt",
+      "sha256": "21b78f7cfb0f301d4b8ab21633140a9f3b74823421217c966a15a555dd805943",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/fr-td10061-unverified.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/e17a5a905e8e59fec31387a0b20ff76ec14256531604796898fe9bd614bb6208/mn-revenue-prelim-levies.txt",
+      "sha256": "e17a5a905e8e59fec31387a0b20ff76ec14256531604796898fe9bd614bb6208",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/mn-revenue-prelim-levies.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/bce89d01190eab9631c144134318aedb8958f299de05fb1d56d0bc68439f6850/mn-revenue-truth-in-taxation.txt",
+      "sha256": "bce89d01190eab9631c144134318aedb8958f299de05fb1d56d0bc68439f6850",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/mn-revenue-truth-in-taxation.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/3efff715177a3b7a7a7e21525d7d98790f9142788c1d6b6bfaa9e397418f2093/mn-statute-275-065.txt",
+      "sha256": "3efff715177a3b7a7a7e21525d7d98790f9142788c1d6b6bfaa9e397418f2093",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/mn-statute-275-065.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/40b6eb90fe37a2ad8f4d207ba1fd42451902f1d8e7bbdaf7d8a856d27a59e344/nbc-chase-outage.txt",
+      "sha256": "40b6eb90fe37a2ad8f4d207ba1fd42451902f1d8e7bbdaf7d8a856d27a59e344",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/nbc-chase-outage.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/1b442cc258b0732698945e8983edac69ed11b508913fc3ba97452dd159474ad9/treasury-sb0690.txt",
+      "sha256": "1b442cc258b0732698945e8983edac69ed11b508913fc3ba97452dd159474ad9",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/treasury-sb0690.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/3f7930edb05aa931d07a2fc73ee2cca5bffb3ec2e9eb653c6b7f3819ff3c4f41/usc-26-414A.txt",
+      "sha256": "3f7930edb05aa931d07a2fc73ee2cca5bffb3ec2e9eb653c6b7f3819ff3c4f41",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/usc-26-414A.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/e67963b7148d07dfa7c6f4e81c056199c5187f3b3eebbc5d6f2b1985f271ce88/review.json",
+      "sha256": "e67963b7148d07dfa7c6f4e81c056199c5187f3b3eebbc5d6f2b1985f271ce88",
+      "checkedAt": "2026-11-17T17:39:49.460465+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/audit/review.json"
+    }
+  ],
+  "findings": [
+    {
+      "id": "A1-DISCRETION",
+      "status": "open",
+      "evidence": "FIX chase-outage-fee-reversal introText p2: 'A bank fee reversal is a customer request decided at the discretion of Chase, not an automatic legal right.' -> 'The checked sources do not show a Chase policy that reverses fees for this outage, so treat each reversal as a request to Chase.' FIX faqs[0].answer: 'Chase decides fee reversals on a case-by-case basis at its own discretion.' -> 'The checked sources do not show a Chase policy that guarantees reversals.' FIX Our Takeaway: 'Reversal decisions remain at the discretion of Chase, while a Regulation E error notice serves as a separate legal avenue only if' -> 'The checked sources do not show that Chase must reverse a fee. A Regulation E error notice is a separate route that applies only if'. Also update evidence.json conditions ('Chase has discretion on fee reversal') to match."
+    },
+    {
+      "id": "A1-ANCHOR-EMERGENCY",
+      "status": "open",
+      "evidence": "FIX chase-outage-fee-reversal Our Takeaway last sentence: 'then read how much cash to keep outside one bank before the next outage' -> 'then read how much emergency fund you need to cover a gap while a bank is down'. If that wording still overreaches, use the plain anchor 'how much emergency fund you need'."
+    },
+    {
+      "id": "A1-CFPB-QUESTIONNAIRE",
+      "status": "open",
+      "evidence": "FIX When to Escalate to the CFPB: 'The CFPB intake questionnaire asks whether you reached out to Chase before filing.' -> 'The CFPB complaint guide suggests trying the company first.' and 'Before submitting a complaint, verify that you attempted to resolve the dispute with Chase first.' -> 'Before submitting a complaint, contact Chase first.'"
+    },
+    {
+      "id": "A1-EMPTY-TOOLS",
+      "status": "open",
+      "evidence": "FIX src/data/guides.ts chase-outage-fee-reversal: \"tools\": [] -> \"tools\": [{ \"label\": \"emergency fund calculator\", \"href\": \"/emergency-fund-calculator/\" }] (route is in the site nav). Check the GuideTool shape against a sibling entry."
+    },
+    {
+      "id": "A1-COY-BANK",
+      "status": "open",
+      "evidence": "FIX replace each 'the bank'/'The bank' that refers to Chase with 'Chase' (e.g. 'Chase acknowledged that some transactions were taking longer than normal'; 'Chase must decide within 10 business days whether an error occurred'; 'if Chase leaves the charges in place'). 'The financial institution' inside the Regulation E definition may stay as the regulation's term."
+    },
+    {
+      "id": "A1-RHYTHM-OVERLOAD",
+      "status": "open",
+      "evidence": "FIX Fortune sentence -> 'In 2010, Chase online banking was down for more than a day. Fortune reports that Chase then agreed to refund late fees to customers who missed payments, if they called to ask.' FIX 'Under 12 CFR 1005.11 , known as Regulation E, an error includes an unauthorized electronic fund transfer, an incorrect electronic fund transfer to or from your account, or the omission of an electronic fund transfer from your periodic statement.' -> 'Regulation E (12 CFR 1005.11) lists the errors it covers. Three are an unauthorized electronic fund transfer, an incorrect transfer to or from your account, and a transfer missing from your periodic statement.' FIX 'Consumers generally cannot file a second complaint regarding the exact same problem, so ensure your initial submission contains all supporting documentation.' -> 'You generally cannot file a second CFPB complaint about the same problem. Put every date, fee and document in the first one.' Vary lengths in the 10-sentence run with one or two short sentences."
+    },
+    {
+      "id": "A1-REGE-PERIODS",
+      "status": "open",
+      "evidence": "FIX append after the sentence: 'Longer periods of 20 business days and 90 days apply to some new accounts and to certain point-of-sale and foreign transfers (12 CFR 1005.11(c)(3)).' Same one-clause addition in the FAQ answer."
+    },
+    {
+      "id": "R1-1-checks-linksAndIndexability",
+      "status": "open",
+      "evidence": "Canonical https://www.themodernwallet.com/guides/chase-outage-fee-reversal/ correct, one inbound from how-much-emergency-fund. External links to NBC, Fortune, eCFR, CFPB and Zelle work. The outbound to how-much-emergency-fund uses a mismatched anchor (A1-ANCHOR-EMERGENCY)."
+    },
+    {
+      "id": "R1-1-checks-renderedLayout",
+      "status": "open",
+      "evidence": "Inspected the captured HTML. Fee table renders as a pipe table inside table-wrap, numbered list and bullet lists render. The tools-pills container is empty under a visible 'Tools for this journey' label (A1-EMPTY-TOOLS). No browser screenshot was taken; layout judged from HTML and template CSS."
+    },
+    {
+      "id": "R1-1-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Every figure traces to a saved source except the discretion claim and the CFPB intake-questionnaire sentence (A1-DISCRETION, A1-CFPB-QUESTIONNAIRE)."
+    },
+    {
+      "id": "R1-1-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full rendered page. Top answer, request script, fee table, Reg E section, FAQ and takeaway agree except that the 'discretion, not a legal right' framing is unsourced and the closing action links to a guide that does not answer 'cash outside one bank'."
+    },
+    {
+      "id": "R1-1-factualReview-consequentialClaims",
+      "status": "open",
+      "evidence": "Strongest plausible counterexample tested: a fee caused by an incorrect electronic transfer or Chase-side processing error may be recoverable as a Regulation E error or under the deposit agreement, which contradicts 'not an automatic legal right' stated without source. Reg E deadline claims themselves match the eCFR text. See A1-DISCRETION for the exact fix."
+    },
+    {
+      "id": "R1-1-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "Dates, fee amounts and outage timeline are current as of 2026-11-17 saved captures. Two details fail: Regulation E timing is stated as universal 10/45 days while 12 CFR 1005.11(c)(3) allows 20 business days and 90 days in cases such as new accounts; and the CFPB intake-questionnaire sentence has no source (findings A1-REGE-PERIODS, A1-CFPB-QUESTIONNAIRE)."
+    },
+    {
+      "id": "R1-1-factualReview-limitationsAndJurisdiction",
+      "status": "open",
+      "evidence": "US federal rules only, which the page implies but does not state. Missing the 20/90-day variants (A1-REGE-PERIODS). The page correctly states the sources do not list NSF or late-fee amounts and presents 2010 as precedent only."
+    },
+    {
+      "id": "R1-1-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "The ask-Chase then CFPB escalation path is sourced (CFPB complaint guide, Fortune 2010 precedent). The framing that reversal is at Chase's discretion and 'not an automatic legal right' is not in any saved source (A1-DISCRETION), and the closing link anchor promises 'cash outside one bank' that the destination guide does not say (A1-ANCHOR-EMERGENCY)."
+    },
+    {
+      "id": "R1-1-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "Title 50 chars, meta 154 chars, H1 matches intent, FAQ JSON-LD and Article schema present, 2495 words against a 1000 floor, headings Title Case. Failures: empty 'Tools for this journey' box (A1-EMPTY-TOOLS), 'the bank' coy abstraction x6, a 10-sentence all-long run (A1-RHYTHM-OVERLOAD). Chase links are removed by the site's owner-rule unlink_pitched build step, so the unlinked Chase mention is not a writer defect."
+    },
+    {
+      "id": "A2-SMALL-EMPLOYER",
+      "status": "open",
+      "evidence": "FIX introText: 'small employers with 10 or fewer workers' -> 'small employers that have not normally employed more than 10 employees (the exemption runs until one year after the close of the first taxable year in which they did)'. FIX FAQ 'Which plans are exempt': 'employers with 10 or fewer employees' -> 'small employers that have not normally employed more than 10 employees, until one year after the close of the first taxable year in which they did'."
+    },
+    {
+      "id": "A2-ACRONYMS",
+      "status": "open",
+      "evidence": "FIX intro: 'SECURE 2.0 Act provision' -> 'SECURE 2.0 Act (Setting Every Community Up for Retirement Enhancement) provision'; 'SIMPLE 401(k) plans' (first use) -> 'SIMPLE (Savings Incentive Match Plan for Employees) 401(k) plans'."
+    },
+    {
+      "id": "A2-META-3PCT",
+      "status": "open",
+      "evidence": "FIX metaDescription: 'start covered plans at 3%' -> 'start covered plans at a default of at least 3%' (keep 120-160 chars). H1/title may keep 'at 3%' only if the first-answer sentence keeps 'at least 3%', which it does."
+    },
+    {
+      "id": "A2-RESTATEMENT",
+      "status": "open",
+      "evidence": "FIX delete from How to Opt Out or Change Your Rate the two sentences beginning 'The U.S. Department of the Treasury noted that the final regulations simplify plan communications' and 'The rules also reduce annual notice requirements'; keep the single statement in What the Final Regulations Changed for Employers."
+    },
+    {
+      "id": "A2-RHYTHM-OVERLOAD",
+      "status": "open",
+      "evidence": "FIX Takeaway: 'If you work at a covered new 401(k) or 403(b) plan, expect enrollment at 3% or more (first-year range 3% to 10%), raised 1 point a year to at least 10% (max 15%), with the right to opt out or choose another rate.' -> 'Expect enrollment at 3% or more if you work at a covered new 401(k) or 403(b) plan. The first-year default can run from 3% to 10%. It rises 1 point a year to at least 10%, with a 15% maximum. You can opt out or choose another rate.' FIX dates sentence -> 'The statute applies to plan years beginning after December 31, 2024. Treasury says the final regulations generally apply to plan years beginning after December 31, 2027. The sources do not say which date governs a specific plan.' Insert short sentences into the two long runs."
+    },
+    {
+      "id": "A2-CLEAR-PROGRESSION",
+      "status": "open",
+      "evidence": "FIX -> 'The statute sets a minimum path for automatic increases.'"
+    },
+    {
+      "id": "R1-2-factualReview-consequentialClaims",
+      "status": "open",
+      "evidence": "Intro and FAQ state the small-employer exemption as '10 or fewer' without the 414A(c)(4)(B) one-year tail, which contradicts the chart-review guardrail 'more than 10 employees' that the exemptions section satisfies. Exact fix in A2-SMALL-EMPLOYER."
+    },
+    {
+      "id": "R1-2-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "Title 52 chars, meta 146 chars, FAQ and Article JSON-LD present, 2222 words against a 1200 floor, headings Title Case. Failures: undefined acronyms SECURE and SIMPLE, monotone-rhythm (two 10-sentence all-long runs), overloaded 45-word takeaway sentences, notice-simplification text repeated three times (A2-ACRONYMS, A2-RHYTHM-OVERLOAD, A2-RESTATEMENT)."
+    },
+    {
+      "id": "A3-DOR-ATTRIBUTION",
+      "status": "open",
+      "evidence": "FIX -> 'The Department of Revenue says final levies can be set lower, but not higher, than preliminary levies. Minn. Stat. 275.065 subd. 6(a) lists limited exceptions.' Same split in the Our Takeaway phrase 'generally capped at its proposed levy according to the Minnesota Department of Revenue' (keep 'generally')."
+    },
+    {
+      "id": "A3-SUBD6B-CITE",
+      "status": "open",
+      "evidence": "FIX -> 'Subdivision 6(b) says the cap does not apply to towns or to special taxing districts other than regional library and metropolitan districts. Under subdivisions 3(c) and 3(d), a town or the state general tax is final at its proposed amount, and a town can change its levy at a special town meeting under section 365.52.'"
+    },
+    {
+      "id": "A3-HOMESTEAD-DEADLINE",
+      "status": "open",
+      "evidence": "FIX body and FAQ: 'by the statutory deadline' / 'by the applicable deadline' -> 'by the applicable deadline. The statute does not give the date, so ask your county assessor what it is.'"
+    },
+    {
+      "id": "A3-H2-FORMULA",
+      "status": "open",
+      "evidence": "FIX H2 -> 'What a Truth-in-Taxation Notice Means for Your Tax Bill'. FIX H1 -> 'How to Read a Minnesota Truth-in-Taxation Notice for 2027' (title tag already avoids 'Your')."
+    },
+    {
+      "id": "A3-EXCEPTIONS-LIST",
+      "status": "open",
+      "evidence": "FIX after the last bullet add: 'Subdivision 6(a) also allows amounts for emergency debt certificates and state unallotment.' FIX bullets on disaster and tort levies: append 'if the commissioner of revenue approves'. FIX hearing lists (section and FAQ) add 'certain fire protection and emergency medical services special taxing districts'."
+    },
+    {
+      "id": "A3-CAUSAL-CLAIM",
+      "status": "open",
+      "evidence": "FIX -> 'Local-government groups point to budget pressure. As reported by CBS Minnesota, ...' and keep the McCarthy and Hilgart attributions."
+    },
+    {
+      "id": "A3-RHYTHM-OVERLOAD",
+      "status": "open",
+      "evidence": "FIX -> 'The county treasurer mails the notice by first class mail after November 10 and on or before November 24. It goes to each taxpayer at the address on the county assessment roll. You can ask in writing for electronic delivery.' FIX Takeaway sentence 2 -> 'Each taxing authority's final levy is generally capped at its proposed levy. Your final bill can still differ. Subdivision 3(e) exclusions such as special assessments and post-certification referenda move it, and so do separate valuation and classification decisions.' Split the McCarthy/Hilgart sentence into two."
+    },
+    {
+      "id": "R1-3-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Figures and quotes trace to the saved sources. Two attribution and citation errors (A3-DOR-ATTRIBUTION, A3-SUBD6B-CITE) and one unattributed causal sentence (A3-CAUSAL-CLAIM)."
+    },
+    {
+      "id": "R1-3-factualReview-consequentialClaims",
+      "status": "open",
+      "evidence": "Levy cap statement is right but the exceptions list omits subd. 6(a)(7)-(9) and commissioner-approval conditions, cites 6(b) for the state general tax (the rule is in 3(c)-(d)), and attributes 'limited statutory exceptions' to DOR (A3-DOR-ATTRIBUTION, A3-SUBD6B-CITE, A3-EXCEPTIONS-LIST). Homestead reclassification omits the unstated deadline (A3-HOMESTEAD-DEADLINE)."
+    },
+    {
+      "id": "R1-3-factualReview-limitationsAndJurisdiction",
+      "status": "open",
+      "evidence": "Minnesota-only scope is clear. Gaps: deadline for the subd. 3(g) homestead request is not stated or routed, hearing list omits fire protection and emergency medical services districts. The valuation-appeal path is correctly excluded."
+    },
+    {
+      "id": "R1-3-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "Title 56 chars, meta 156 chars, FAQ and Article JSON-LD, 2778 words against a 1200 floor. Failures: H2 'What Your Truth-in-Taxation Notice Is and What You Can Do' is a two-clause formula with 'Your' and the H1 keeps 'Your' (A3-H2-FORMULA), monotone-rhythm and sentences of 63, 57 and 50 words (A3-RHYTHM-OVERLOAD)."
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 1,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "previous": {
+    "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/c6406afceb9024cb32bd6cc742d914707d1cef69c274ff1a1f5611560a583fa8/handoff-write.json",
+    "sha256": "c6406afceb9024cb32bd6cc742d914707d1cef69c274ff1a1f5611560a583fa8",
+    "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/handoff-write.json"
+  },
+  "snapshot": {
+    "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/e83790d39befa4a4b3f89fa84572fd6a2c7079624e7e72c8b92bc06958e3dc95/preview-snapshot.json",
+    "sha256": "e83790d39befa4a4b3f89fa84572fd6a2c7079624e7e72c8b92bc06958e3dc95",
+    "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/audit-round2/preview-snapshot.json"
+  }
+}

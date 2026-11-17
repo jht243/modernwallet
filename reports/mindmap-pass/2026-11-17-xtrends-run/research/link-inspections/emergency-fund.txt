@@ -1,0 +1,2 @@
+Inspected src/data/guides.ts line 13225; route /guides/how-much-emergency-fund/; checked 2026-11-17
+Section headings: ['Size it on essential expenses, not income', 'A worked example: $3,000 a month', 'When to hold more than the minimum', 'When 3 months is enough', 'Where to keep your emergency fund', 'Build it in the right order', 'Two quick self-checks beyond the dollar target']

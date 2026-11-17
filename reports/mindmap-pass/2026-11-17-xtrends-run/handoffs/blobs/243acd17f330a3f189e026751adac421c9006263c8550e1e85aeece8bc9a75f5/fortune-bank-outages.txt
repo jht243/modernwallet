@@ -1,0 +1,122 @@
+URL: https://fortune.com/2026/11/16/chase-bank-wells-fargo-capital-one-bank-outages/
+Retrieved: 2026-11-17T16:51:05.985812Z (raw HTML-to-text, verbatim)
+
+Days after Microsoft and the FAA went dark, Chase and Wells Fargo customers can’t get to their money | Fortune
+Search
+Subscribe
+Home
+Latest
+Fortune 500
+Finance
+Tech
+Leadership
+Lifestyle
+Rankings
+Multimedia
+For Subscribers
+Trendingnow
+1
+Sam Bankman-Fried’s former employer Jane Street poised for $35 billion windfall from purchase of Anthropic shares in FTX bankruptcy
+2
+‘Absurd’: Delta CEO says it takes longer to fly from ATL to LGA today than in the 1950s
+3
+Current price of oil as of November 16, 2026
+1
+Sam Bankman-Fried’s former employer Jane Street poised for $35 billion windfall from purchase of Anthropic shares in FTX bankruptcy
+2
+‘Absurd’: Delta CEO says it takes longer to fly from ATL to LGA today than in the 1950s
+3
+Current price of oil as of November 16, 2026
+BankingBanks
+Days after Microsoft and the FAA went dark, Chase and Wells Fargo customers can’t get to their money
+By Catherina Gioino
+Catherina Gioino
+News Editor
+By Catherina Gioino
+Catherina Gioino
+News Editor
+November 16, 2026, 3:35 PM ET
+Chase is among several banks that have outages.Michael Nagle/Bloomberg via Getty Images
+Add Fortune on Google for similar content.
+Add us on Google
+Add us on Google
+If you had trouble logging into your bank’s website on Monday, you’re not alone. JPMorgan Chase customers spent much of the day unable to log in or move money, with the bank saying the outage spread from it’s website and app to some branches and to outside apps that connect to Chase accounts. Wells Fargo, Capital One, and Zelle also had problems with their online banking platforms as customers reported trouble.
+Recommended Video
+Reports started Monday morning and climbed quickly. Downdetector logged nearly 4,500 Chase reports shortly after 1:30 p.m., most of them about website logins. By 2:22 p.m., the count had passed 20,000.
+“Due to a technical issue, some transactions are taking longer than usual to complete but customers still have access to their accounts and funds,” a Chase spokesperson told Fortune. “We are working to resolve this as quickly as possible.”
+Customers described a wider disruption than that statement suggests. Comments on Downdetector mentioned problems with ATMs and in-person systems as well as online banking and Zelle. Some customers opening the Chase app got a message reading, “Some services aren’t available.”
+Ashley Lutz
+The problems also reached apps outside the bank. Plaid, which links bank accounts to payment, investing and budgeting apps, said its own network was working normally but that it was seeing connection problems with Chase accounts. Customers trying to link or refresh a Chase account through another app may have gotten errors as a result.
+Downdetector listed Chase, Wells Fargo, Capital One and Bank of America among the banks with spikes in outage reports, along with U.S. Bank, Truist and Zelle. By 2 p.m. Eastern, Bank of America saw about 2,000 with U.S. Bank and Wells Fargo seeing about 1,000 each. Wells Fargo did not confirm the outage.
+It’s also affecting local branches. On the subreddit r/TalesFromYourBank, one person wrote: “I’m at work and haven’t been able to take a single client.” Three others corroborated to their bank phone systems being down.
+Bank of America and U.S. Bank had not explained their customers’ problems as of Monday afternoon. Downdetector counts user complaints, not confirmed outages, and it was not clear whether the Chase and Wells Fargo failures shared a cause.
+The outages follow several other technology failures in recent days. Microsoft restored service on Saturday after a global outage took down Outlook and Teams, and said a technical problem, not a cyberattack or AI, was the cause. No bank has tied Monday’s problems to the Microsoft outage.
+Meanwhile, a Federal Aviation Administration comminications problem grounded flights across the country on Friday, with service not fully restored until Monday. Transportation Secretary Sean Duffy blamed an upgrade from copper wire to fiber-optic cables at one location that caused routers across the air traffic control system to be flooded with more than 1,000 connection attempts every four to five seconds. Because it disrupted some radar feeds, the FAA ordered the ground stop to ensure safety. It was lifted about four hours later.
+Chase has had large online outages before. In 2010, its online banking was down for more than a day, and CEO Jamie Dimon apologized publicly. The bank said then that it would refund late fees to customers who missed payments during the outage, as long as they called to ask.
+Generative AI was used for research assistance and/or transcription of this article. The reporter independently reported and verified the factual claims in this article, and a human editor reviewed it before publication.
+Fortune Daily breaks the traditional barrier between audience and newsroom. The show transforms Fortune’s trusted reporting into actionable, conversational, and entertaining insights for an emerging class of business leaders. Watch here.
+About the AuthorBy Catherina GioinoNews Editor
+Catherina covers markets, the economy, energy, tech, and AI.
+See full bio
+Add Fortune on Google for similar content.
+Add us on Google
+Latest in Banking
+Most Popular
+Rankings100 Best Companies
+Fortune 500
+Global 500
+Fortune 500 Europe
+Most Powerful Women
+World's Most Admired Companies
+See All Rankings
+Lists Calendar
+SectionsFinance
+Fortune Crypto
+Features
+Leadership
+Health
+Commentary
+Success
+Retail
+Mpw
+Tech
+Lifestyle
+CEO Initiative
+Asia
+Politics
+Conferences
+Europe
+Newsletters
+Personal Finance
+Environment
+Magazine
+Education
+Customer SupportFrequently Asked Questions
+Customer Service Portal
+Privacy Policy
+Terms Of Use
+Single Issues For Purchase
+International Print
+Commercial ServicesAdvertising
+Fortune Brand Studio
+Fortune Analytics
+Fortune Conferences
+Business Development
+Group Subscriptions
+About UsAbout Us
+Press Center
+Work At Fortune
+Terms And Conditions
+Site Map
+Rankings
+Sections
+Customer Support
+Commercial Services
+About Us
+Press Center
+Work At Fortune
+Terms And Conditions
+Site Map
+Recommended For You
+© 2026 Fortune Media IP Limited. All Rights Reserved. Use of this site constitutes acceptance of our Terms of Use and Privacy Policy | CA Notice at Collection and Privacy Notice | Do Not Sell/Share My Personal Information
+FORTUNE is a trademark of Fortune Media IP Limited, registered in the U.S. and other countries. FORTUNE may receive compensation for some links to products and services on this website. Offers may be subject to change without notice.

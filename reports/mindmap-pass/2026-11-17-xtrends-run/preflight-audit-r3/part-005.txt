@@ -1,0 +1,105 @@
+."
+    },
+    {
+      "id": "A3-EXCEPTIONS-LIST",
+      "status": "open",
+      "evidence": "FIX after the last bullet add: 'Subdivision 6(a) also allows amounts for emergency debt certificates and state unallotment.' FIX bullets on disaster and tort levies: append 'if the commissioner of revenue approves'. FIX hearing lists (section and FAQ) add 'certain fire protection and emergency medical services special taxing districts'."
+    },
+    {
+      "id": "A3-CAUSAL-CLAIM",
+      "status": "open",
+      "evidence": "FIX -> 'Local-government groups point to budget pressure. As reported by CBS Minnesota, ...' and keep the McCarthy and Hilgart attributions."
+    },
+    {
+      "id": "A3-RHYTHM-OVERLOAD",
+      "status": "open",
+      "evidence": "FIX -> 'The county treasurer mails the notice by first class mail after November 10 and on or before November 24. It goes to each taxpayer at the address on the county assessment roll. You can ask in writing for electronic delivery.' FIX Takeaway sentence 2 -> 'Each taxing authority's final levy is generally capped at its proposed levy. Your final bill can still differ. Subdivision 3(e) exclusions such as special assessments and post-certification referenda move it, and so do separate valuation and classification decisions.' Split the McCarthy/Hilgart sentence into two."
+    },
+    {
+      "id": "R1-3-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Figures and quotes trace to the saved sources. Two attribution and citation errors (A3-DOR-ATTRIBUTION, A3-SUBD6B-CITE) and one unattributed causal sentence (A3-CAUSAL-CLAIM)."
+    },
+    {
+      "id": "R1-3-factualReview-consequentialClaims",
+      "status": "open",
+      "evidence": "Levy cap statement is right but the exceptions list omits subd. 6(a)(7)-(9) and commissioner-approval conditions, cites 6(b) for the state general tax (the rule is in 3(c)-(d)), and attributes 'limited statutory exceptions' to DOR (A3-DOR-ATTRIBUTION, A3-SUBD6B-CITE, A3-EXCEPTIONS-LIST). Homestead reclassification omits the unstated deadline (A3-HOMESTEAD-DEADLINE)."
+    },
+    {
+      "id": "R1-3-factualReview-limitationsAndJurisdiction",
+      "status": "open",
+      "evidence": "Minnesota-only scope is clear. Gaps: deadline for the subd. 3(g) homestead request is not stated or routed, hearing list omits fire protection and emergency medical services districts. The valuation-appeal path is correctly excluded."
+    },
+    {
+      "id": "R1-3-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "Title 56 chars, meta 156 chars, FAQ and Article JSON-LD, 2778 words against a 1200 floor. Failures: H2 'What Your Truth-in-Taxation Notice Is and What You Can Do' is a two-clause formula with 'Your' and the H1 keeps 'Your' (A3-H2-FORMULA), monotone-rhythm and sentences of 63, 57 and 50 words (A3-RHYTHM-OVERLOAD)."
+    },
+    {
+      "id": "R2-A1-RESTATEMENT",
+      "status": "open",
+      "evidence": "FIX -> 'Before submitting a complaint, contact Chase first, as the CFPB complaint guide suggests.' FIX -> 'Chase stated that customers still had access to accounts and funds, but some transactions were taking longer than normal.'"
+    },
+    {
+      "id": "R2-A1-OVERLOAD",
+      "status": "open",
+      "evidence": "FIX Takeaway -> 'Ask Chase to reverse each fee tied to the November 16 outage. Document transaction times and reference numbers, and submit a CFPB complaint if Chase leaves the charges in place.' FIX intro sentence 2 -> 'Gather your transaction timestamps and account statements before calling. Record the representative's name and case details. Escalate to a CFPB complaint if Chase declines or does not resolve the issue.'"
+    },
+    {
+      "id": "R2-1-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "Title 50, meta 154, 2530 words (floor 1000), FAQ and Article JSON-LD, headings Title Case, tools box now populated with the emergency fund calculator, no 'the bank' stand-ins, rhythm runs cleared. Remaining non-blocking style defects: restated CFPB sentence pair and 33 to 39 word sentences (R2-A1-RESTATEMENT, R2-A1-OVERLOAD)."
+    },
+    {
+      "id": "R2-A2-META-LENGTH",
+      "status": "open",
+      "evidence": "FIX metaDescription -> 'The final 401(k) auto-enrollment rules start covered plans at 3% or more and raise it yearly to at least 10%. You can opt out or pick another rate.' (about 148 characters; recount before saving)"
+    },
+    {
+      "id": "R2-A2-INTRO-STACK",
+      "status": "open",
+      "evidence": "FIX -> 'Some plans are exempt from the federal requirement. They include plans established before December 29, 2022, businesses under three years old, church plans, governmental plans and SIMPLE (Savings Incentive Match Plan for Employees) 401(k) plans. Small employers that have not normally employed more than 10 employees are exempt until one year after the close of the first taxable year in which they did.' Apply the same split to the FAQ answer, whose comma list is now ambiguous ('...more than 10 employees, until one year after ... they did, church plans, ...'): put the small-employer item last."
+    },
+    {
+      "id": "R2-A2-RHYTHM-RUNS",
+      "status": "open",
+      "evidence": "FIX -> 'The checked sources do not say which date governs a specific plan. Do not assume an existing plan is exempt or has until 2028. Read your plan notices.' FIX 'Two distinct federal effective dates apply to these automatic enrollment rules.' -> 'Two dates apply.' Split the 43-word small-employer bullet lead-in 'The law also exempts distinct employer and plan categories: ...' into a short lead-in plus the bullets."
+    },
+    {
+      "id": "R2-2-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "Fixed: SECURE and SIMPLE defined, 'clear progression' replaced, notice-simplification repeat removed, takeaway split into short sentences. Still failing: meta description is 168 characters (over 160, R2-A2-META-LENGTH), a 61-word intro exemptions sentence (R2-A2-INTRO-STACK) and two 10-sentence all-long runs (R2-A2-RHYTHM-RUNS). Title 52, 2217 words (floor 1200)."
+    },
+    {
+      "id": "R2-A3-FRAGMENT",
+      "status": "open",
+      "evidence": "FIX -> 'Minn. Stat. 275.065 subd. 3(g) provides relief. If you give the county assessor satisfactory documentation by the applicable deadline, and the home qualified for homestead status in that assessment year, the assessor must reclassify the property as homestead for taxes payable in 2027. The statute does not give the deadline date, so ask your county assessor for it.' FAQ -> '... by the applicable deadline requires the assessor to reclassify qualifying property as homestead for the upcoming tax year. The statute gives no date, so ask your county assessor.'"
+    },
+    {
+      "id": "R2-A3-TAKEAWAY-GARBLE",
+      "status": "open",
+      "evidence": "FIX -> 'Each taxing authority's final levy is generally capped at its proposed levy. The Department of Revenue says final levies can be lower but not higher than preliminary levies.'"
+    },
+    {
+      "id": "R2-A3-OVERLOAD",
+      "status": "open",
+      "evidence": "FIX -> 'County treasurers mail these notices every November. They give owners time to review proposed spending before city councils, county boards and school boards vote on final levies.' FIX 'Your Minnesota Truth-in-Taxation notice is an estimate' -> 'A Minnesota Truth-in-Taxation notice is an estimate'. FIX 'Under the Minnesota Department of Revenue press release , preliminary levies statewide show' -> 'In its press release, the Minnesota Department of Revenue says preliminary levies statewide show'."
+    },
+    {
+      "id": "R2-3-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full round-2 render. Content agrees across sections, but the homestead paragraph's grammar breaks mid-rule (fragment ending 'by the applicable deadline.'), so a reader cannot parse the condition on first read."
+    },
+    {
+      "id": "R2-3-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "Fixed: H1 and H2 headline formula and 'Your' (A3-H2-FORMULA), attribution, citation, causal claim, exceptions. Title 56, meta 156, 2857 words, no all-long runs. Still failing: broken homestead sentence and garbled takeaway clause (R2-A3-FRAGMENT, R2-A3-TAKEAWAY-GARBLE) and 14 sentences of 33 words or more including an opening 'Your' (R2-A3-OVERLOAD)."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-17-xtrends-run/handoff-write-round3.json",
+    "sha256": "a076270ea7fc9a8844accdaa1c59534df02e57bf2b8c5eac301762451f410468"
+  }
+}
+

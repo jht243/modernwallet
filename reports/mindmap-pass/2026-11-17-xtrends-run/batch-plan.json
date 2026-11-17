@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "jobId": "xtrends-2026-11-17",
+  "subBatchingRecommended": true,
+  "batchCount": 2,
+  "totalNewPages": 3,
+  "totalRoutes": 9,
+  "disjointPartition": true,
+  "batches": [
+    {
+      "batchIndex": 1,
+      "label": "batch-1",
+      "actionIds": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "newPageRoutes": [
+        "/guides/chase-outage-fee-reversal",
+        "/guides/401k-auto-enrollment-final-rules",
+        "/guides/minnesota-truth-in-taxation-notice"
+      ],
+      "existingRoutes": [
+        "/guides/how-much-emergency-fund/",
+        "/guides/retirement-contribution-limits-2027/",
+        "/guides/401k-contribution-limits-2026/",
+        "/compare/roth-401k-vs-traditional-401k/",
+        "/guides/tax-deductions-for-homeowners/"
+      ],
+      "routes": [
+        "/guides/chase-outage-fee-reversal",
+        "/guides/401k-auto-enrollment-final-rules",
+        "/guides/minnesota-truth-in-taxation-notice",
+        "/guides/how-much-emergency-fund/",
+        "/guides/retirement-contribution-limits-2027/",
+        "/guides/401k-contribution-limits-2026/",
+        "/compare/roth-401k-vs-traditional-401k/",
+        "/guides/tax-deductions-for-homeowners/"
+      ],
+      "routeFlags": "--route /guides/chase-outage-fee-reversal --route /guides/401k-auto-enrollment-final-rules --route /guides/minnesota-truth-in-taxation-notice --route /guides/how-much-emergency-fund/ --route /guides/retirement-contribution-limits-2027/ --route /guides/401k-contribution-limits-2026/ --route /compare/roth-401k-vs-traditional-401k/ --route /guides/tax-deductions-for-homeowners/"
+    },
+    {
+      "batchIndex": 2,
+      "label": "batch-2",
+      "actionIds": [],
+      "newPageRoutes": [],
+      "existingRoutes": [
+        "/mortgage/home-affordability-calculator/"
+      ],
+      "routes": [
+        "/mortgage/home-affordability-calculator/"
+      ],
+      "routeFlags": "--route /mortgage/home-affordability-calculator/"
+    }
+  ]
+}

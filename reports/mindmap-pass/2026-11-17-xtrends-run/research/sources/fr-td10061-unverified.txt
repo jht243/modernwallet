@@ -1,0 +1,4 @@
+URL: https://www.federalregister.gov/api/v1/documents.json (term automatic enrollment 414A, published >= 2026-11-01)
+Retrieved: 2026-11-17T16:53:05Z
+Result: {"description":"Documents matching 'automatic enrollment 414A' and published on or after 11/01/2026","count":0}
+Also: WebSearch for "TD 10061" found no confirmation of that number; proposed rule is 90 FR 2025-00501 (REG-100669-24, RIN 1545-BR08, 2025-01-14). US News and Reuters links from the brief were not retrievable (HTTP 000 / X post). Decision: do NOT cite "TD 10061"; cite Treasury press release SB-0690 and IRC 414A.

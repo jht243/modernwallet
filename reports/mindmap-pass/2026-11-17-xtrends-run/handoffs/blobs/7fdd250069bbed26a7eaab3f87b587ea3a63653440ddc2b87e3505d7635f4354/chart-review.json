@@ -1,0 +1,162 @@
+{
+  "jobId": "xtrends-2026-11-17",
+  "reviewer": "chart-reviewer",
+  "round": 1,
+  "manifestSha256": "b3a34318ee536e67453e218236490439f44cb8dce36b1292f8d72b39074c0fbb",
+  "manifestFileSha256": "3dd52934ab7a91fb51a94adc61570099e1da83b2a952dccea015ada9cd0f8725",
+  "readinessSha256": "cb73a2e1870bd39b060cd6c5b774427ab78ead9c96c15244c6fba8382421c8e7",
+  "verdict": "PASS",
+  "evidence": "Independent Round-1 review by chart-reviewer (own bundle preflight-chart-review, 31 parts read, check=delivery-complete-sources-current; manifest file sha256 fca0b503...6f2b confirmed; manifestSha256 8f750ba4...7869; readiness sha cb73a2e1...c8e7). Sources re-read from disk, not re-fetched: treasury-sb0690 (3% default, +1 pt/yr to at least 10%, 15% max, opt out or pick another rate, regs generally apply to plan years beginning after 12/31/2027, exceptions for qualifying small/new businesses, governmental, church, SIMPLE: all match the brief answer); usc-26-414A (statute 3-10% first year, +1 to at least 10 not more than 15, exceptions (c)(1)-(4), statutory effective date plan years beginning after 12/31/2024, Pub. L. 117-328 sec 101(c)); nbc-chase-outage, fortune-bank-outages (94M relationships, 'software bug in on-premise hardware', not cyber-related, Downdetector counts, Plaid, Zelle quote, Fortune 2010 refund-if-you-call precedent); chase-overdraft-services ($34 fee, max 3/day = $102, $5-or-less no fee, <=$50 EOD no fee, 11 pm ET next-business-day deposit rule, no NSF text on page); ecfr-12-cfr-1005-11 (60 days, 10 business days, 45 days, provisional credit); cfpb-submit-complaint (contact company first, 50-page limit, generally one complaint per problem, 15/60-day response); mn-revenue-prelim-levies ($949M, 6.5%, by-type %, $74M lower last year, 63 referenda/26 passed, hearings late Nov to late Dec, final by Dec 28, February release); mn-statute-275-065 (subd 3 notice contents and exclusions, subd 6 levy cap and exceptions); cbs-mn-levies. Unverified-claim handling PASS: TD 10061 excluded (Federal Register query 0 docs, ledger file saved, not in any brief or outline); 3,322/1,457/197 X counts and US News/Reuters/X links excluded; no-blanket-waiver and fee-waiver status not asserted; effective-date gap is carried (statute 2025 vs regs after 2027) and good-faith interim compliance is not asserted; Minnesota valuation-appeal path excluded. Dispositions/dedup PASS: all three bullets accounted (A1-A3 new, no skipped bullet); coverage_lookup saved (839 repo pages, 854 sitemap routes, 0 homes); my own grep of src/data found no outage/fee-reversal/Truth-in-Taxation/auto-enrollment home; enrich-vs-new for A2 sound (limits-2027 headings are limits only). Inbound/outbound link source pages and sections exist per link-inspections (home-afford and 401k-calc sources are one-line spoke records, see F-LINK-PLACEMENT). Risk floor PASS: HIGH (consequential financial/tax/retirement), above the site STANDARD minimum, two audits, no liabilityBlock candidate (no dosing/physical hazard/accusation), no professionalReviewRequired flag; consistent with owner ceilings (finance alone never earns a third audit). Testing PASS: section G excludes financial/legal services, TESTED off, no we-tested/howWeTested/schema, no invented tests. Demand/SERP PASS as honest weakness: SEMRUSH keyless and DataForSEO unavailable, every row labelled estimate (Autocomplete), serp_verdict unread, fresh-trend rule invoked; not a drop signal. PAA evidence tag: the '[PAA 0/0 unread; ac n/m ...]' tag format is accepted by the structural gate (mindmap-gates seal-draft re-run on this manifest returned PASS and its output is byte-identical to draft-chart.md, so the tag, format/medium/requirement mapping and artifact hashes validate). The A1 tag is honest that its question came from the brief (ac 0/47 on-intent). caseDecisions: cases.json for all three slugs returns only irrelevant Layer3Labs owned-property records (DIY Repair Guide, Drones & Defense) and no private client context; WRITE must record caseSelection plus explicit rejection of every candidate with reason and caseUses [] in each evidence.json. VERDICT FAIL (non-liability, Round 1 of unattended 1-pass): the A3 planned takeaway tells readers to 'treat the figure as a ceiling', which Minn. Stat. 275.065 subd. 3(d)-(e) and the CBS Minnesota source contradict for a parcel's bill (notice excludes special assessments, post-certification voter-approved levies, referenda pending etc.; CBS: final bill could be more or less). That is a HIGH-risk takeaway contradicted by primary evidence, so preparation cannot be marked PASS as written. All other issues are carry-forward guardrails. No liabilityBlock, no duplicate-collision: per the unattended rule MAIN should run rebind-mechanical --carry-round1-guardrails (no BUILD Round 2, no CHART-REVIEW Round 2) so every finding below becomes a reviewerGuardrail for WRITE and Phase 4 AUDIT.",
+  "findings": [
+    {
+      "id": "F-A3-CEILING",
+      "severity": "substantive",
+      "actionId": "A3",
+      "finding": "Planned takeaway says 'treat the figure as a ceiling' and the brief frames the notice number as a cap. Minn. Stat. 275.065 subd. 3(d)-(e) says the notice shows proposed taxes only and excludes special assessments, voter-approved levies after certification (bond and school referenda), levy-limit increases, disaster and tort-judgment amounts and contamination tax; subd. 3(d) notes a pending referendum 'may be higher than shown'. CBS Minnesota (Hilgart/McCarthy): the final bill 'could be more or it could be less'. Only the TAXING AUTHORITY levy is capped (DOR), not a homeowner's final bill; valuation, classification and credits also move it.",
+      "fix": "Rewrite the A3 takeaway, answer sentence and REQ-3 acceptance as: the notice is a proposal; each authority's final levy is generally capped at its proposed levy (DOR) but your bill can still differ because of items the notice excludes and your own valuation/classification; compare current vs proposed by authority, attend the hearing of the body driving the change. Put the exclusions list (subd. 3(e)) and 'could be more or less' in the first answer, FAQ and takeaway. Never write 'ceiling' for the parcel figure.",
+      "liabilityBlock": false,
+      "duplicateCollision": false
+    },
+    {
+      "id": "F-A3-LEVY-EXCEPTIONS",
+      "severity": "substantive",
+      "actionId": "A3",
+      "finding": "'What the Hearing Cannot Change: final levy cannot exceed proposed; town and state general tax proposed equals final' omits statutory limits. Subd. 6(a)(1)-(9) lets city, county, school, metro and regional-library levies exceed the proposed levy for post-certification voter approvals, disaster/tort amounts approved under subd. 6a, levy-limit increases, emergency debt and unallotment; subd. 6(b) says the cap does not apply to towns and special districts other than regional library and metropolitan districts; subd. 3(d) says a town's final tax equals proposed unless it changes its levy at a special town meeting.",
+      "fix": "Attribute 'can be set lower, not higher' to the Minnesota DOR press release (2026-11-12), add 'with limited statutory exceptions' and name the main exceptions from subd. 6(a); state the town and state general tax rule with its special-town-meeting exception; keep Dec 28, 2026 as DOR's stated date.",
+      "liabilityBlock": false,
+      "duplicateCollision": false
+    },
+    {
+      "id": "F-A3-HEARING-TIME",
+      "severity": "minor",
+      "actionId": "A3",
+      "finding": "Readiness and exclusions treat hearing timing as wholly unverified. Subd. 3(c) is a verified primary source: the meeting must occur after November 24 and not before 6:00 p.m., the notice must list time/place and a contact website/phone; DOR says meetings run late November to late December and are required for cities over 500, counties, school districts, regional library authorities, metropolitan taxing districts.",
+      "fix": "Optional: WRITE may state 'after November 24, not before 6:00 p.m.' attributed to Minn. Stat. 275.065 subd. 3(c) and tell readers to use the date/time printed on their own notice. Keep specific start times for any given body, and the valuation-appeal path, excluded.",
+      "liabilityBlock": false,
+      "duplicateCollision": false
+    },
+    {
+      "id": "F-A2-DATES",
+      "severity": "substantive",
+      "actionId": "A2",
+      "finding": "Section 1 as briefed carries only the Treasury 'plan years beginning after December 31, 2027' date. The statute (Pub. L. 117-328 sec. 101(c) via 26 USC 414A note) says plan years beginning after December 31, 2024. The gap is not resolved by any saved source; good-faith interim compliance is not verified.",
+      "fix": "Section 1, FAQ and takeaway state both dates with attribution (Treasury SB-0690 for the final regulations; the statute for the enactment date), say the sources do not tell a worker which date governs a given plan, and never say or imply a current plan is exempt or has until 2028. Do not print 'TD 10061' or any Federal Register number.",
+      "liabilityBlock": false,
+      "duplicateCollision": false
+    },
+    {
+      "id": "F-A2-SCHEDULE",
+      "severity": "substantive",
+      "actionId": "A2",
+      "finding": "Planned table 'default rate by year: 3% to 10% in seven steps' reads as what plans will do. Statute allows a first-year default of 3% to 10% and increases of 1 point 'to at least 10 percent, but not more than 15 percent'; Treasury says final regulations give employers flexibility in timing and amount of increases within statutory limits and the first increase follows an initial participation period.",
+      "fix": "Label the table 'minimum path under the rule, our illustrative arithmetic': start 3, +1 per completed year of participation, 10 after seven steps, plan may start higher (up to 10) or step faster up to 15. Worked example ($60,000: $1,800 at 3%, $6,000 at 10%) must say pre-tax salary-only arithmetic, not a prediction.",
+      "liabilityBlock": false,
+      "duplicateCollision": false
+    },
+    {
+      "id": "F-A2-EXEMPTIONS",
+      "severity": "substantive",
+      "actionId": "A2",
+      "finding": "Exemptions are paraphrased loosely. 414A(c)(4)(B): small business exception ends 1 year after the close of the first taxable year in which the employer normally employed MORE than 10 employees (not simply '10 or fewer'); (c)(4)(A) employer in existence less than 3 years; (c)(2) pre-enactment plans (before Dec 29, 2022) but not an employer adopting a multiple-employer plan afterward (c)(2)(B); (c)(1) SIMPLE; (c)(3) governmental and church. Treasury says the final regulations 'clarify' these, and the detail of that clarification was not read.",
+      "fix": "State exemptions at statute precision, attribute detail changes to the regulations only as 'Treasury says the final rules clarify them', do not describe regulation-level definitions. Takeaway: check whether the plan is exempt or voluntarily auto-enrolls with another default.",
+      "liabilityBlock": false,
+      "duplicateCollision": false
+    },
+    {
+      "id": "F-A2-BASIS",
+      "severity": "minor",
+      "actionId": "A2",
+      "finding": "Brief labels the schedule/example 'our internal arithmetic' (calculated). _decision-evidence/_mindmap-execution reject trivial arithmetic as an originality claim, and a calculated basis needs an executed packet (code, inputs, output hashes, replay).",
+      "fix": "Choose one: basis 'reported' with the table described as the rule's schedule shown for illustration (no 'internal analysis' wording), or basis 'calculated' with an executed script and full execution record. Either way, the page's main answer rests on Treasury/IRC, not on our arithmetic.",
+      "liabilityBlock": false,
+      "duplicateCollision": false
+    },
+    {
+      "id": "F-A2-ANCHOR",
+      "severity": "minor",
+      "actionId": "A2",
+      "finding": "Inbound anchor from /compare/roth-401k-vs-traditional-401k 'what auto-enrollment defaults mean for Roth or traditional choice' promises content the A2 outline does not contain; the saved sources say nothing about Roth vs traditional default treatment.",
+      "fix": "Use an anchor that matches the destination reader question, for example 'how 401(k) automatic enrollment defaults work', or add sourced content; do not claim Roth/traditional default rules.",
+      "liabilityBlock": false,
+      "duplicateCollision": false
+    },
+    {
+      "id": "F-A1-REGE",
+      "severity": "substantive",
+      "actionId": "A1",
+      "finding": "Takeaway 'reversal is Chase's discretion unless the problem is an electronic fund transfer error under Reg E' and the Zelle section risk implying an outage-delayed Zelle payment or an outage fee is a Reg E error. 12 CFR 1005.11(a)(1) lists specific error types (unauthorized, incorrect, omitted, computational, wrong amount from terminal, undocumented, documentation request); no saved source says a delay or an overdraft fee caused by an outage qualifies, and source silence is not proof either way.",
+      "fix": "State Reg E only as: if you believe an electronic transfer was unauthorized, incorrect or omitted, notice of error within 60 days of the statement and the 10-business-day / 45-day investigation clock apply (cite 1005.11). Say plainly that sources checked do not say whether outage-related fees or delays count as errors; keep the fee-reversal ask as a request to Chase. Quote Zelle's statement directly ('An issue at the financial institutions may be delaying Zelle payments').",
+      "liabilityBlock": false,
+      "duplicateCollision": false
+    },
+    {
+      "id": "F-A1-NBC630",
+      "severity": "minor",
+      "actionId": "A1",
+      "finding": "Readiness item 2 says NBC states only 'posting normally Monday evening'. The saved NBC text actually quotes a Chase spokesperson 'around 6:30 p.m.': 'Transactions are now posting normally.' Excluding the brief's 'service came back around 6:30 pm ET' as a fact remains correct (NBC does not say service was fully restored, and says some transactions were slower), but the readiness note misdescribes the source.",
+      "fix": "Writer may say: a Chase spokesperson told NBC News around 6:30 p.m. that transactions were posting normally (time zone as printed by NBC, article stamped EST); do not say service was fully restored or give 'ET' as an independent fact. Correct the readiness wording in the run record when convenient; no re-research needed.",
+      "liabilityBlock": false,
+      "duplicateCollision": false
+    },
+    {
+      "id": "F-A1-LATEFEE",
+      "severity": "minor",
+      "actionId": "A1",
+      "finding": "Page promises to cover 'late, overdraft and NSF fees' but the only Chase source is the overdraft page, which has no NSF/returned-item text and no late-fee amounts; Fortune's 2010 refund-if-you-call precedent is the only late-fee source and is explicitly not a 2026 promise.",
+      "fix": "Quote only the sourced overdraft figures ($34, max 3/day, $102, $5 or less none, <=$50 EOD none, 11 pm ET rule); state that the checked sources do not list NSF or late-fee amounts; present the 2010 refund as precedent only; no guaranteed outcome language; no blanket-waiver claim either way.",
+      "liabilityBlock": false,
+      "duplicateCollision": false
+    },
+    {
+      "id": "F-TITLES-HEADINGS",
+      "severity": "mechanical",
+      "actionId": "A1,A2,A3",
+      "finding": "Planned SEO titles break content-standard cs-seo-and-elements/aal-outline rules: A1 is 48 chars (<50), A3 is 63 chars (>60); A2 and A3 are colon-spliced two-clause titles; A3 title/H2 'Read Your 2027 Proposed Tax' / 'What Your ... Notice Is and What You Can Do' presuppose ownership and splice two clauses.",
+      "fix": "Re-plan titles at 50-60 chars carrying the primary keyword without colon splices or 'Your' presupposition, e.g. A1 'How to Get Chase Outage Fees Reversed After the November 2026 Outage' needs trimming to 60; WRITE and AUDIT apply the final length check on rendered metadata. No change to routes.",
+      "liabilityBlock": false,
+      "duplicateCollision": false,
+      "status": "resolved"
+    },
+    {
+      "id": "F-LINK-PLACEMENT",
+      "severity": "minor",
+      "actionId": "A3",
+      "finding": "Inbound placement from /mortgage/home-affordability-calculator/ names the 'section' as the spoke record's one-line tool description, not a prose section; inspection shows no body headings, so the exact insertion point is undefined (the 401k-calc outbound target is fine).",
+      "fix": "WRITE must locate or create a legitimate prose location (existing spoke body/FAQ field in src/data/spokes-mortgage.ts) and record it; if none exists, substitute another relevant inbound source from the inspected set or meet the required 2 inbound count with /guides/tax-deductions-for-homeowners plus another inspected page. Link-only edits must not bump updatedDate/dateModified.",
+      "liabilityBlock": false,
+      "duplicateCollision": false
+    },
+    {
+      "id": "F-CASES",
+      "severity": "minor",
+      "actionId": "A1,A2,A3",
+      "finding": "cases-batch returned only irrelevant Layer3Labs owned-property records (DIY Repair Guide, Drones & Defense) for all three slugs; no client record applies and none may be used.",
+      "fix": "In each evidence.json: caseSelection references evidence/<slug>/cases.json, caseDecisions rejects every returned candidate with a specific reason (unrelated owned property, wrong owner, no outcome relevance), caseUses is [], and no client or first-party testing claim appears. Keep the exact approved reader_question string (with its PAA/ac tag) as packet.readerQuestion.",
+      "liabilityBlock": false,
+      "duplicateCollision": false
+    }
+  ],
+  "resolvedFindingIds": [
+    "F-TITLES-HEADINGS"
+  ],
+  "requestCoverage": [
+    {
+      "requirementId": "REQ-1",
+      "status": "PASS",
+      "evidence": "Plan satisfies REQ-1: section 1 is the method (list fees, proof, ask by phone/secure message, log, follow up in writing), script block and documentation checklist, CFPB route with 50-page and one-complaint-per-problem limits all sourced from saved CFPB text; outage facts limited to NBC/Fortune/Chase wording; reported basis, no tests. Conditions: guardrails F-A1-REGE, F-A1-NBC630, F-A1-LATEFEE apply in WRITE."
+    },
+    {
+      "requirementId": "REQ-2",
+      "status": "PASS",
+      "evidence": "Plan satisfies REQ-2: 3% default, +1 pt/yr to at least 10% max 15%, regs apply after 12/31/2027, exemptions, opt out/choose another rate all trace to Treasury SB-0690 and 26 USC 414A in saved sources; table is a finite schedule (no tool needed, reasoned). Conditions: guardrails F-A2-DATES, F-A2-SCHEDULE, F-A2-EXEMPTIONS must be applied or the page overstates certainty."
+    },
+    {
+      "requirementId": "REQ-3",
+      "status": "PASS",
+      "evidence": "Plan delivers the 6.5%/$949M figure, notice window, columns and Dec 28 date accurately, but the acceptance text and planned takeaway frame the notice figure as a ceiling and final levies as never higher; sources show the parcel bill can exceed the notice and the levy cap has statutory exceptions (F-A3-CEILING, F-A3-LEVY-EXCEPTIONS). REQ-3 passes only when those conditions are in the first answer, FAQ and takeaway.",
+      "priorStatus": "FAIL"
+    }
+  ],
+  "atReviewLimit": true,
+  "priorVerdictRetained": "FAIL"
+}

@@ -35,6 +35,190 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  // ── x-trends-mindmap-auto 2026-11-17: chase-outage-fee-reversal ──
+  {
+    "updated": "2026-11-17",
+    "slug": "chase-outage-fee-reversal",
+    "title": "How to Get Chase Outage Fees Reversed After Nov 16",
+    "metaDescription": "Ask Chase directly to reverse fees tied to the Nov 16 outage. Document each charge, use our script, and escalate to the CFPB if Chase does not resolve it.",
+    "h1": "How to Get Chase Outage Fees Reversed After the November 16 Disruption",
+    "cardBlurb": "Learn how to ask Chase to reverse overdraft or late fees caused by the November 16 outage, what to document, and when to escalate.",
+    "introText": "Ask [Chase](https://www.chase.com/) directly, by phone or in writing through your Chase account, to reverse each fee and cite the November 16, 2026 outage date. Gather your transaction timestamps and account statements before calling. Record the representative's name and case details. Escalate to a [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/complaint/) complaint if Chase declines or does not resolve the issue.\n\nThe checked sources do not show a Chase policy that reverses fees for this outage, so treat each reversal as a request to Chase. A fee from your own regular spending or an ordinary late payment has no link to the outage, so the outage gives you nothing to cite.",
+    "sections": [
+      {
+        "heading": "How to Ask Chase to Reverse Outage Fees",
+        "body": "Asking Chase directly to review and refund charges tied to downtime requires clear documentation and prompt communication. Follow these five steps to submit your request:\n\n1. Identify and list every fee that posted around the November 16 window, noting the exact date, transaction description, and dollar figure.\n2. Gather supporting proof, including screenshots of app error messages, connection failure notices from linked tools, and account statements showing attempted payment dates.\n3. Contact Chase by phone or in writing through your Chase account.\n4. Record the date and time of every conversation, the name or identification number of each representative you speak with, and any reference number assigned to your case.\n5. Follow up in writing through your Chase account if you spoke by phone, confirming the details discussed and providing attached copies of your documentation.\n\nSubmitting this request does not guarantee that Chase will reverse the charge. Each fee reversal remains subject to individual review by Chase."
+      },
+      {
+        "heading": "What Chase Said Happened on November 16",
+        "body": "According to reporting by [NBC News](https://www.nbcnews.com/business/consumer/outages-chase-banking-online-branches-rcna609673), Chase customers reported trouble logging into accounts and withdrawing funds on Monday, November 16, 2026. Around 4:00 p.m. on X, JPMorganChase said it experienced a temporary issue related to a software bug in an on-premise hardware system. Chase confirmed that the problem was not cyber-related. Chase stated that customers still had access to accounts and funds, but some transactions were taking longer than normal. The disruption affected online services as well as in-person branch transactions across an institution serving approximately 94 million customer relationships, 5,000 branches, and 15,000 automated teller machines (ATMs).\n\nA Chase spokesperson told NBC News around 6:30 p.m. that transactions were posting normally. The report did not state that service was fully restored. [Fortune](https://fortune.com/2026/11/16/chase-bank-wells-fargo-capital-one-bank-outages/) reported that the system problem spread across the Chase website and mobile application to certain branches and third-party financial applications. Plaid noted that its own network operated normally but observed connection problems communicating with Chase accounts, which caused errors when users attempted to link or refresh accounts. A Chase spokesperson told Fortune that technical problems slowed completion times for transactions.\n\nIn 2010, Chase online banking was down for more than a day. Fortune reports that Chase then agreed to refund late fees to customers who missed payments, if they called to ask. That past decision serves as historical precedent rather than a binding commitment for 2026."
+      },
+      {
+        "heading": "Which Fees to Look For",
+        "body": "Review your account statements carefully to identify any charges assessed while systems were delayed. The table below details the published terms under the [Chase Overdraft Services](https://www.chase.com/personal/checking/overdraft-services) terms:\n\n| Fee Type | Amount | Rule and Conditions |\n| --- | ---: | --- |\n| Standard overdraft fee | $34 | Charged per item covered at Chase discretion; maximum 3 fees per business day ($102 daily cap) |\n| Transactions of $5 or less | $0 | No fee charged if the transaction amount is $5 or less |\n| Overdrawn by $50 or less at day's end | $0 | No fee charged if the account is overdrawn by $50 or less at the end of the business day |\n| Chase Overdraft Assist | $0 | If overdrawn by more than $50, no fee applies if you deposit enough funds to bring the balance to $50 or less overdrawn by 11:00 p.m. ET (8:00 p.m. PT) the next business day |\n| Debit Card Coverage OFF | $0 | Everyday debit card transactions are declined when funds are insufficient, preventing overdraft fees |\n| Debit Card Coverage ON | $34 | Everyday debit card transactions may be approved at Chase discretion, incurring the standard fee |\n| Chase Secure Banking | $0 | Checking account that Chase describes as having no overdraft fees |\n\nThe checked sources do not publish specific dollar amounts for late fees or non-sufficient funds (NSF) charges. Do not assume a fixed dollar rate for those items. If delayed transaction posting caused a late fee, add that specific line item to your itemized review list."
+      },
+      {
+        "heading": "What to Document and a Request Script",
+        "body": "Before speaking to a representative, organize your evidence so you can state the facts clearly. Keep copies of the following items:\n\n- The dates and exact times you attempted to access your account, transfer funds, or make payments.\n- Account statement lines displaying the posted fees alongside the underlying transactions.\n- Screenshots of mobile application errors, website timeout pages, or third-party transfer alerts.\n- Records showing sufficient funds were present or intended for deposit before the disruption began.\n- A contact log listing the date, time, representative name or ID, and ticket reference number for every interaction.\n\nUse this request script as a guide when calling customer service or writing a message through your Chase account:\n\n\"I am contacting you to request a fee reversal for charges caused by the technical outage on November 16, 2026. As a direct result, my account was assessed a fee on [Date] in the amount of [Dollar Amount]. I attempted to complete this transaction during the downtime, and the delay was outside my control. Please review my account history, waive this charge, and confirm the adjustment in writing.\"\n\nState the facts without asserting that Chase is legally mandated to grant the waiver. Focus on showing that your account remained in good standing prior to the system failure."
+      },
+      {
+        "heading": "Delayed Zelle Payments and Electronic Transfer Errors",
+        "body": "Account holders who attempted person-to-person transfers during the disruption faced delays. In a statement reported by NBC News, [Zelle](https://www.zellepay.com/) stated: \"Zelle is not down. Zelle is operating as it should. An issue at the financial institutions may be delaying Zelle payments for some of their customers. Please contact them directly.\" Because the transfer delays stemmed from processing at the financial institution rather than the central payment network, resolution requires working directly through Chase.\n\nIf you believe an electronic fund transfer was handled incorrectly, federal rules provide a formal procedure. Regulation E ([12 CFR 1005.11](https://www.ecfr.gov/current/title-12/part-1005/section-1005.11)) lists the errors it covers. Three are an unauthorized electronic fund transfer, an incorrect transfer to or from your account, and a transfer missing from your periodic statement. The financial institution must investigate if you submit an oral or written notice of error no later than 60 days after the institution sends the periodic statement displaying the disputed item.\n\nYour error notice must provide your name and account number, along with the type, date, and dollar amount of the suspected error. Chase may require written confirmation within 10 business days of receiving an oral notice. Chase must decide within 10 business days whether an error occurred, or take up to 45 days if it grants a provisional credit for the disputed amount within the initial 10 business days. Longer periods of 20 business days and 90 days apply to some new accounts and to certain point-of-sale and foreign transfers (12 CFR 1005.11(c)(3)). The sources checked do not state whether outage-related processing delays or incidental bank fees qualify as errors under Regulation E. Treat your request for a fee refund as a direct appeal to Chase rather than a statutory error claim unless a specific transfer posted for the wrong amount."
+      },
+      {
+        "heading": "When to Escalate to the CFPB",
+        "body": "If Chase refuses to refund fees resulting from the system downtime or fails to provide an answer, you can submit a formal complaint to the CFPB. The CFPB routes submitted consumer complaints directly to financial companies for a response. According to published CFPB complaint procedures, most companies provide an initial response within 15 days, and in some cases give a final response within 60 days.\n\nBefore submitting a complaint, contact Chase first, as the CFPB complaint guide suggests. When compiling your complaint, include only the most important dates, fee figures, and communication logs. You may upload supporting attachments such as monthly statements, transaction receipts, and customer service correspondence, up to a maximum file limit of 50 pages.\n\nYou generally cannot file a second CFPB complaint about the same problem. Put every date, fee and document in the first one. The CFPB enters complaint details, excluding direct personal identifiers, into its public Consumer Complaint Database. Once Chase submits its official response through the system, you have 60 days to provide consumer feedback on the outcome. You can file online through the complaint portal or call the agency directly at (855) 411-2372."
+      },
+      {
+        "heading": "Our Takeaway",
+        "body": "Ask Chase to reverse each fee tied to the November 16 outage. Document transaction times and reference numbers, and submit a CFPB complaint if Chase leaves the charges in place. The checked sources do not show that Chase must reverse a fee. A Regulation E error notice is a separate route that applies only if an electronic fund transfer was unauthorized, incorrect, or omitted. These steps apply directly to charges triggered by system downtime, though any future announcement from Chase regarding automatic refunds or blanket waivers would supersede individual requests. To start, list each fee that posted after November 16 and ask Chase to reverse it, then read [how much emergency fund you need](/guides/how-much-emergency-fund/) to cover a gap while a bank is down."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/emergency-fund-calculator/",
+        "label": "emergency fund calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does Chase refund fees after an outage?",
+        "answer": "The checked sources do not show a Chase policy that guarantees reversals. Checked sources do not show an announced blanket waiver or automatic refund program for the November 16, 2026 disruption. In a 2010 outage that lasted more than a day, Chase refunded late fees to customers who called to ask."
+      },
+      {
+        "question": "What should I do if Chase says no?",
+        "answer": "Submit a complaint to the CFPB if direct customer service appeals fail. Provide your itemized fee amounts, transaction dates, and account records. Most companies respond to CFPB inquiries within 15 days, with up to 60 days in certain cases."
+      },
+      {
+        "question": "How long do I have to dispute a transaction error?",
+        "answer": "Submit your notice within 60 days of the periodic statement date if you are disputing an electronic transfer error under Regulation E (12 CFR 1005.11). Chase must decide within 10 business days, or within 45 days if it issues provisional credit. Longer periods of 20 business days and 90 days apply to some new accounts and to certain point-of-sale and foreign transfers. The checked sources do not state whether outage delays or incidental fees qualify as statutory errors."
+      },
+      {
+        "question": "What if a Zelle payment was delayed?",
+        "answer": "Contact Chase directly to check the processing status of the transaction. Zelle told NBC News it was operating as it should and that an issue at the financial institutions may be delaying Zelle payments for some of their customers."
+      },
+      {
+        "question": "Which Chase overdraft fees can I avoid in the future?",
+        "answer": "Avoid fees by keeping ending daily overdraft balances at $50 or less, or by depositing funds before 11:00 p.m. ET on the next business day under Chase Overdraft Assist. You can also turn Debit Card Coverage off so everyday card transactions decline with no fee, or switch to a Chase Secure Banking account."
+      }
+    ],
+    "sources": [
+      {
+        "label": "NBC News: Outages at Chase banking online and at branches",
+        "url": "https://www.nbcnews.com/business/consumer/outages-chase-banking-online-branches-rcna609673"
+      },
+      {
+        "label": "Fortune: Chase Bank, Wells Fargo, Capital One bank outages",
+        "url": "https://fortune.com/2026/11/16/chase-bank-wells-fargo-capital-one-bank-outages/"
+      },
+      {
+        "label": "Chase Overdraft Services",
+        "url": "https://www.chase.com/personal/checking/overdraft-services"
+      },
+      {
+        "label": "Chase",
+        "url": "https://www.chase.com/"
+      },
+      {
+        "label": "eCFR: 12 CFR 1005.11 Procedures for Resolving Errors",
+        "url": "https://www.ecfr.gov/current/title-12/part-1005/section-1005.11"
+      },
+      {
+        "label": "Consumer Financial Protection Bureau: Submit a Complaint",
+        "url": "https://www.consumerfinance.gov/complaint/"
+      },
+      {
+        "label": "Zelle",
+        "url": "https://www.zellepay.com/"
+      }
+    ]
+  },
+  // ── x-trends-mindmap-auto 2026-11-17: minnesota-truth-in-taxation-notice ──
+  {
+    "updated": "2026-11-17",
+    "slug": "minnesota-truth-in-taxation-notice",
+    "title": "Minnesota Truth-in-Taxation Notice for 2027 Property Tax",
+    "metaDescription": "A Minnesota Truth-in-Taxation notice is a proposal, not a bill. See what its columns mean, why levies rose and how to use local hearings before final votes.",
+    "h1": "How to Read a Minnesota Truth-in-Taxation Notice for 2027",
+    "cardBlurb": "Learn how to read your Minnesota Truth-in-Taxation notice, why proposed 2027 property taxes are up and what actions you can take before final levies are set.",
+    "introText": "A Minnesota Truth-in-Taxation notice is an estimate of your 2027 property taxes based on preliminary local government budgets, not a final bill you pay today. The [Minnesota Department of Revenue (DOR)](https://www.revenue.state.mn.us/press-release/2026-11-12/preliminary-property-tax-levies-2027) announced that preliminary property tax levies statewide could increase by a maximum of $949 million over 2026, which is a 6.5% increase. Each local authority's final levy is generally capped at its preliminary levy, but your final tax bill can still be higher or lower than the notice shows because of items excluded by law and changes to your property's valuation or classification.\n\nCounty treasurers mail these notices every November. They give owners time to review proposed spending before city councils, county boards and school boards vote on final levies. Under [Minnesota Statutes 275.065](https://www.revisor.mn.gov/statutes/cite/275.065), the notice breaks down what each local taxing authority proposes to collect, lists public meeting dates and provides contact details for public comment. Reviewing the notice line by line shows which local government is driving any tax increase and tells you where to direct your feedback before final levies are certified by December 28, 2026.",
+    "sections": [
+      {
+        "heading": "What a Truth-in-Taxation Notice Means for Your Tax Bill",
+        "body": "A Truth-in-Taxation notice is a parcel-specific estimate of your property taxes for the coming year based on preliminary levies adopted by your local taxing authorities. It is not a bill, and you do not make a payment from it. The county treasurer mails the notice by first class mail after November 10 and on or before November 24. It goes to each taxpayer at the address on the county assessment roll. You can ask in writing for electronic delivery. In its [press release](https://www.revenue.state.mn.us/press-release/2026-11-12/preliminary-property-tax-levies-2027), the Minnesota Department of Revenue says preliminary levies statewide show property taxes could increase by a maximum of $949 million over 2026, representing a 6.5% overall increase.\n\nThe Department of Revenue says final levies can be set lower, but not higher, than preliminary levies. Minn. Stat. 275.065 subd. 6(a) lists limited exceptions. However, your individual parcel's bill could be more or less than the figure shown on the notice. The estimate does not account for certain items excluded by statute, such as special assessments or voter-approved referenda passed after the proposed levies were certified. You can take concrete steps right now:\n\n1. Compare the current-year tax column against the proposed tax column for each local taxing authority.\n2. Identify which specific entity, such as your county, city or school district, is proposing the largest dollar or percentage change.\n3. Note the meeting dates, times and locations listed on the notice for the authorities responsible for the increase.\n4. Attend the public budget meetings between late November and late December to ask questions and comment on proposed spending.\n5. Submit written comments directly to the taxing authority using the mailing address, phone number or official website printed on your notice if you cannot attend in person.\n\nFinal levies must be set by local governments by December 28, 2026. The Department of Revenue then compiles the adopted levies and releases final property tax levy information in February."
+      },
+      {
+        "heading": "Why Proposed Taxes Are Rising in 2027",
+        "body": "According to the [Minnesota Department of Revenue](https://www.revenue.state.mn.us/press-release/2026-11-12/preliminary-property-tax-levies-2027), preliminary figures show property taxes statewide could increase by a maximum of $949 million over 2026, a 6.5% increase. Last year, the final statewide levy increase was $74 million lower than preliminary levies, resulting in a final annual increase of 6.4%.\n\nPreliminary levy changes vary significantly depending on the category of taxing authority:\n\n| Taxing authority type | 2026 final levy | 2027 preliminary levy | Proposed percent change |\n| --- | ---: | ---: | ---: |\n| Cities | $3.985 billion | $4.309 billion | 8.1% |\n| Counties | $4.520 billion | $4.887 billion | 8.1% |\n| Townships | $350 million | $367 million | 4.9% |\n| Schools | $4.378 billion | $4.599 billion | 5.0% |\n| Special taxing districts | $544 million | $564 million | 3.7% |\n\nLocal-government groups point to budget pressure. As reported by [CBS Minnesota](https://www.cbsnews.com/minnesota/news/minnesota-pay-property-taxes-bills-levies/), property taxes could rise by nearly $1 billion statewide, though how much an individual homeowner pays depends on local tax rates and property value. In county-level proposals, Hennepin County pitched an 8.1% levy increase, while Dakota County proposed an 18.5% increase. John McCarthy, chief financial officer of the League of Minnesota Cities, stated that cities are down to \"bread-and-butter basic services\". He said property taxes are \"really the only tool that cities have left.\" Matt Hilgart of the Minnesota Association of Counties cited changes to Medicaid and food assistance under federal law taking effect, which shift costs to counties. The Minnesota Legislature provided one-time property tax relief of $125 million earlier this year.\n\nThe Department of Revenue also notes that individual Truth-in-Taxation notices do not include the results of November 3, 2026, ballot referenda for operations or capital projects held across 63 school districts. Statewide, 26 of those 63 school referenda passed at least partially. The summarized preliminary data includes these referendum results, but Truth-in-Taxation notices do not include them."
+      },
+      {
+        "heading": "How to Read the Notice, Column by Column",
+        "body": "The layout of your Truth-in-Taxation notice is governed by [Minn. Stat. 275.065 subd. 3](https://www.revisor.mn.gov/statutes/cite/275.065). The document displays parcel data alongside an itemized comparison between current-year property taxes and proposed property taxes for each taxing jurisdiction serving your home.\n\n| Notice element | Statutory reference | What is displayed on your notice |\n| --- | --- | --- |\n| Market value | Subd. 3(d) | County assessor market value on November 1 for the current tax year and next year; stated as final values. |\n| Property classification | Subd. 3(d) | Classifies the parcel as homestead or nonhomestead residential property. |\n| County tax | Subd. 3(d) | Actual current-year tax paid to the county alongside the proposed county tax amount. |\n| City or town tax | Subd. 3(d) | Actual current-year tax paid to the municipality alongside the proposed municipal tax. |\n| State general tax | Subd. 3(d) | Displays the state general tax; proposed equals final. |\n| School district levies | Subd. 3(d) | Separates voter-approved school operating levies from other local school board levies. |\n| Tax credits | Subd. 3(d) | Displays the agricultural homestead credit or school building bond credit where applicable. |\n| Special taxing districts | Subd. 3(d) | Shows the sum of special taxing districts. |\n| Total proposed tax | Subd. 3(d) | Sum of all taxing authorities showing dollar difference and overall percentage change. |\n| Hearing information | Subd. 3(c) | Meeting dates, times and physical addresses where budgets and levies will be discussed. |\n| Authority contact details | Subd. 3(c) | Official website URLs, telephone contact numbers and mailing addresses for comments. |\n\nWhere tax increment financing or the metropolitan fiscal disparities areawide tax applies to a property, those items are stated separately on the form. If a school referendum was pending at the time the notice was drafted, the notice includes a specific note warning that the final school tax amount may be higher than shown if voters approved the measure.\n\nKeep the statutory calendar in mind as you review the notice:\n\n- November 10 to November 24: County treasurers print and deliver notices by first class mail.\n- November 25 to December 28: Required public budget meetings take place across qualifying local jurisdictions.\n- December 28, 2026: Deadline for local governments to set final 2027 property tax levies.\n- February 2027: The Department of Revenue compiles local certifications and releases final statewide levy data."
+      },
+      {
+        "heading": "How to Use the Hearing",
+        "body": "Public budget meetings give taxpayers a direct forum to review spending decisions before local elected officials take a final binding vote. Under [Minn. Stat. 275.065 subd. 3(c)](https://www.revisor.mn.gov/statutes/cite/275.065), mandatory public hearings must be held by counties, cities with a population over 500, school districts, regional library authorities, metropolitan taxing districts and certain fire protection and emergency medical services special taxing districts.\n\nAccording to the [Department of Revenue Truth-in-Taxation guidelines](https://www.revenue.state.mn.us/truth-taxation), these public meetings must take place between November 25 and December 28, 2026. The statute specifies that meetings must be scheduled after November 24 and must not begin before 6:00 p.m. To find the exact date, time and room location for your city council, county board or school district, check the meeting details printed directly on your parcel notice.\n\nAt these meetings, the taxing authority discusses its budget and levy, and members of the public must be allowed to speak. If you plan to attend, prepare concise remarks focused on specific budget line items or tax percentage changes shown on your notice. Bring your mailed document to verify the proposed dollar increase for that jurisdiction. If you are unable to attend the scheduled public hearing, use the website, phone number or mailing address printed on the form to submit written comments to elected board members before the final levy certification on December 28."
+      },
+      {
+        "heading": "What the Hearing Can and Cannot Change",
+        "body": "Attending a Truth-in-Taxation meeting allows you to advocate for lower spending before final budgets are locked in, but the meeting has distinct legal limits. Local elected officials can choose to adopt a final levy that is lower than the preliminary levy based on public input. Under [Minn. Stat. 275.065 subd. 6(a)](https://www.revisor.mn.gov/statutes/cite/275.065), the final levy certified by a city, county, school district, regional library district or metropolitan special taxing district cannot exceed its proposed levy, with limited statutory exceptions:\n\n- A school district levy where voters approved an operating or capital referendum after the preliminary levy was certified.\n- A city or county levy approved by voters in a referendum after preliminary certification.\n- A levy for principal and interest on voter-approved bonds.\n- State-approved funding needs for natural disaster repairs, if the commissioner of revenue approves.\n- Final tort judgments rendered against the municipality that became final after preliminary levies were set, if the commissioner of revenue approves.\n- Changes to statutory levy limits certified after the initial proposed levy deadline.\n\nSubdivision 6(a) also allows amounts for emergency debt certificates and state unallotment.\n\nSubdivision 6(b) says the cap does not apply to towns or to special taxing districts other than regional library and metropolitan districts. Under subdivisions 3(c) and 3(d), a town or the state general tax is final at its proposed amount, and a town can change its levy at a special town meeting under section 365.52.\n\nThe public hearing cannot change your property's assessed value or tax classification. Assessor records as of November 1 establish the market value listed on your notice. If you believe your property is incorrectly classified as nonhomestead when it is your primary residence, [Minn. Stat. 275.065 subd. 3(g)](https://www.revisor.mn.gov/statutes/cite/275.065) provides relief. If you give the county assessor satisfactory documentation by the applicable deadline, and the home qualified for homestead status in that assessment year, the assessor must reclassify the property as homestead for taxes payable in 2027. The statute does not give the deadline date, so ask your county assessor for it.\n\nAdditionally, under subdivision 3(e), the law mandates that your notice explicitly state that proposed and final taxes do not include special assessments, natural disaster cleanup costs, final tort judgments, contamination taxes or voter-approved referenda passed after certified proposals. Because these exclusions exist, never treat the total proposed figure as a ceiling on your final tax bill. Your ultimate property tax bill could be more or less than the notice indicates."
+      },
+      {
+        "heading": "Our Takeaway",
+        "body": "For Minnesota homeowners with a proposed-tax notice, remember that this document is a preliminary estimate rather than a bill. Each taxing authority's final levy is generally capped at its proposed levy. The Department of Revenue says final levies can be lower but not higher than preliminary levies. Your final bill can still differ. Subdivision 3(e) exclusions such as special assessments and post-certification referenda move it, and so do separate valuation and classification decisions. Compare the current and proposed numbers for each taxing district, identify which entity is driving the change and attend that authority's public hearing before final votes are cast. Use the [home affordability calculator](/mortgage/home-affordability-calculator/) to test how a tax change shifts your monthly payment, and read [homeowner tax deductions](/guides/tax-deductions-for-homeowners/) for what you can write off. Then attend your local budget hearing before December 28 to give your input on spending."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/mortgage/home-affordability-calculator/",
+        "label": "home affordability calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Is a Truth-in-Taxation notice a bill?",
+        "answer": "No, a Truth-in-Taxation notice is not a bill, and you do not pay the amount listed. It is a parcel-specific proposal showing what your property taxes would be if local taxing authorities adopt their preliminary budgets."
+      },
+      {
+        "question": "Can my property tax go up after the notice?",
+        "answer": "Yes, your final tax bill could be more or less than the proposed amount. While local authorities generally cannot raise their final levies above preliminary numbers, final tax bills can rise due to items excluded from the notice, including special assessments, later voter-approved referenda, disaster cleanup levies and final tort judgments."
+      },
+      {
+        "question": "When are final levies set?",
+        "answer": "According to the Minnesota Department of Revenue, local governments must set final 2027 property tax levies by December 28, 2026. The Minnesota Department of Revenue compiles those local certifications and publishes final property tax levy information in February 2027."
+      },
+      {
+        "question": "Which governments must hold a hearing?",
+        "answer": "Counties, school districts, regional library authorities, metropolitan taxing districts, certain fire protection and emergency medical services special taxing districts and cities with populations over 500 must hold a public hearing between November 25 and December 28, 2026."
+      },
+      {
+        "question": "What does the notice leave out?",
+        "answer": "Under Minnesota law, the notice excludes special assessments, voter-approved referenda passed after proposed taxes are certified, post-certification disaster cleanup costs, post-certification tort judgments and contamination taxes on remediated property."
+      },
+      {
+        "question": "What if my notice lists my home as nonhomestead?",
+        "answer": "If your primary residence is listed as nonhomestead, contact your county assessor immediately. Under Minnesota Statutes 275.065 subdivision 3(g), providing satisfactory documentation to the county assessor by the applicable deadline requires the assessor to reclassify qualifying property as homestead for the upcoming tax year. The statute gives no date, so ask your county assessor."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Minnesota Department of Revenue: Preliminary Property Tax Levies for 2027",
+        "url": "https://www.revenue.state.mn.us/press-release/2026-11-12/preliminary-property-tax-levies-2027"
+      },
+      {
+        "label": "Minnesota Statutes 275.065: Proposed Property Taxes; Notice",
+        "url": "https://www.revisor.mn.gov/statutes/cite/275.065"
+      },
+      {
+        "label": "Minnesota Department of Revenue: Truth in Taxation",
+        "url": "https://www.revenue.state.mn.us/truth-taxation"
+      },
+      {
+        "label": "CBS Minnesota: Proposed Minnesota Property Tax Levies",
+        "url": "https://www.cbsnews.com/minnesota/news/minnesota-pay-property-taxes-bills-levies/"
+      }
+    ]
+  },
   // ── x-trends-mindmap-auto 2026-11-16: retirement-contribution-limits-2027 ──
   {
     "updated": "2026-11-16",
@@ -8497,7 +8681,7 @@ export const GUIDES: Guide[] = [
       },
       {
         "heading": "Property Taxes and the State and Local Tax Cap",
-        "body": "Real estate property taxes assessed by state or local governments are deductible as an itemized expense on Schedule A within statutory limits.\n\nUnder [IRS Topic 503](https://www.irs.gov/taxtopics/tc503), state and local real property taxes are combined with other state and local taxes, including income or sales taxes, subject to an aggregate state and local tax deduction cap. The state and local tax deduction cap is set at $40,000 for 2025, or $20,000 for married individuals filing separately, and the cap cannot be reduced below $10,000. Under current law, this cap is scheduled to rise 1% annually, making the cap $40,400 for 2026, though filers should verify the current figure directly at [IRS Topic 503](https://www.irs.gov/taxtopics/tc503).\n\nCheck the amount on your county property tax statement, because only taxes actually paid count."
+        "body": "Real estate property taxes assessed by state or local governments are deductible as an itemized expense on Schedule A within statutory limits.\n\nUnder [IRS Topic 503](https://www.irs.gov/taxtopics/tc503), state and local real property taxes are combined with other state and local taxes, including income or sales taxes, subject to an aggregate state and local tax deduction cap. The state and local tax deduction cap is set at $40,000 for 2025, or $20,000 for married individuals filing separately, and the cap cannot be reduced below $10,000. Under current law, this cap is scheduled to rise 1% annually, making the cap $40,400 for 2026, though filers should verify the current figure directly at [IRS Topic 503](https://www.irs.gov/taxtopics/tc503).\n\nCheck the amount on your county property tax statement, because only taxes actually paid count. If you own in Minnesota, see [how to read a Minnesota proposed property tax notice](/guides/minnesota-truth-in-taxation-notice/) for what the November notice means for next year's bill."
       },
       {
         "heading": "Home Office Deductions for Eligible Homeowners",
@@ -13235,7 +13419,7 @@ export const GUIDES: Guide[] = [
       { heading: "A worked example: $3,000 a month", body: "Say your essential expenses come to $3,000 a month. Three months of coverage is $9,000. Six months is $18,000. That range, $9,000 to $18,000, is your target.\n\nPick a point in the range based on your risk. A stable two-income household might aim near $9,000. A single earner with variable pay leans toward $18,000.\n\nUse our [savings goal calculator](/investing/savings-goal-calculator/) to turn that target into a monthly savings plan you can actually follow." },
       { heading: "When to hold more than the minimum", body: "Hold closer to 6 months -- or more -- when your income is less certain or harder to replace. Several situations call for a bigger cushion.\n\n- **One income.** A single earner has no second paycheck as backup.\n- **Sole earner for a family.** More people depend on that one income.\n- **Variable or self-employed income.** Freelancers and commission earners face uneven months, so 6 to 12 months is safer.\n- **A shaky job or industry.** If layoffs are a real risk, a longer runway buys time.\n- **A long expected job search.** Senior or specialized roles can take many months to replace.\n\nThe less predictable your income, the more months you want saved." },
       { heading: "When 3 months is enough", body: "Three months of essential expenses can be enough when your income is stable and backed up. Two steady salaries in one household are the clearest case.\n\nIf one partner loses a job, the other paycheck still covers part of the bills. That shared safety net lowers how much cash you must hold.\n\nOther signs you can sit at the lower end: strong job security, an in-demand skill, and no dependents relying only on you. You can always build past 3 months later, but reaching that first milestone matters most." },
-      { heading: "Where to keep your emergency fund", body: "Keep your emergency fund in a high-yield savings account that is FDIC-insured and easy to reach. The money must be safe and available the day you need it.\n\nThe FDIC automatically insures deposits up to at least $250,000 per depositor, per insured bank. A savings account keeps your cash protected while it earns interest.\n\nSkip investments like stocks for this money. Their value can drop right when an emergency hits. Also skip a plain checking account, where idle cash earns almost nothing and is easy to spend by accident.\n\nOne caution: do not treat a credit card as your emergency fund. If you already carry a balance, see [how long it takes to pay off a credit card](/guides/how-long-to-pay-off-credit-card/) to understand the real cost." },
+      { heading: "Where to keep your emergency fund", body: "Keep your emergency fund in a high-yield savings account that is FDIC-insured and easy to reach. The money must be safe and available the day you need it.\n\nThe FDIC automatically insures deposits up to at least $250,000 per depositor, per insured bank. A savings account keeps your cash protected while it earns interest.\n\nSkip investments like stocks for this money. Their value can drop right when an emergency hits. Also skip a plain checking account, where idle cash earns almost nothing and is easy to spend by accident.\n\nOne caution: do not treat a credit card as your emergency fund. If you already carry a balance, see [how long it takes to pay off a credit card](/guides/how-long-to-pay-off-credit-card/) to understand the real cost.\n\nIf a bank outage causes late or overdraft fees, read [what to do about bank fees after an outage](/guides/chase-outage-fee-reversal/) for how to ask for a reversal." },
       { heading: "Build it in the right order", body: "Build your emergency fund in two stages so early progress feels reachable. First, save a small starter fund of $1,000 to $2,000. This covers most surprise bills, like a car repair or a medical copay.\n\nA starter fund also keeps a small emergency from turning into high-interest debt. Once it is in place, grow the fund toward your full 3-to-6-month target.\n\nWondering whether to finish the fund before investing or clearing debt? See our guide on [whether to pay off debt or invest](/guides/pay-off-debt-or-invest/) to sequence the rest of your plan." },
       { heading: "Two quick self-checks beyond the dollar target", body: "A 3-to-6-month fund is the target, but two quick questions show whether you are actually secure today, not just on paper.\n\nFirst: could you cover a $1,000 surprise bill without touching a credit card? If the honest answer is no, you are relying on credit as a backstop, not savings. That gap matters even if your fund technically meets the 3-month minimum, since a card balance carries interest your savings never will.\n\nSecond: how many weeks of essential bills could you cover the day your income stopped? Add up your checking and savings balances, then divide by your weekly essential spend from the first section above. If the number is under four weeks, treat building the starter fund as your most urgent money goal, ahead of extra debt payments or new investing." },
     ],

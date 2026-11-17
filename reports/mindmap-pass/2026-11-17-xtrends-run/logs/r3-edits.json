@@ -1,0 +1,82 @@
+[
+ {
+  "id": "R2-A1-RESTATEMENT",
+  "old": "Before submitting a complaint, contact Chase first. The CFPB complaint guide suggests trying the company first.",
+  "new": "Before submitting a complaint, contact Chase first, as the CFPB complaint guide suggests."
+ },
+ {
+  "id": "R2-A1-RESTATEMENT",
+  "old": "While Chase stated that customers still maintained access to accounts and funds, Chase acknowledged that some transactio",
+  "new": "Chase stated that customers still had access to accounts and funds, but some transactions were taking longer than normal."
+ },
+ {
+  "id": "R2-A1-OVERLOAD",
+  "old": "Ask Chase during your initial outreach to reverse each fee tied to the November 16 outage, documenting transaction times",
+  "new": "Ask Chase to reverse each fee tied to the November 16 outage. Document transaction times and reference numbers, and submit a CFPB complaint if Chase leaves the charges in place."
+ },
+ {
+  "id": "R2-A1-OVERLOAD",
+  "old": "Gather your transaction timestamps and account statements before calling, record the representative's name and case deta",
+  "new": "Gather your transaction timestamps and account statements before calling. Record the representative's name and case details. Escalate to a [Consumer Financial Protection Bureau (CFPB)](https://www.con"
+ },
+ {
+  "id": "R2-A2-META-LENGTH",
+  "old": "The final 401(k) automatic enrollment rules start covered plans at a default of at least 3% and raise it yearly to at le",
+  "new": "The final 401(k) auto-enrollment rules start covered plans at 3% or more and raise it yearly to at least 10%. You can opt out or pick another rate."
+ },
+ {
+  "id": "R2-A2-INTRO-STACK",
+  "old": "However, plans established before December 29, 2022, businesses under three years old, small employers that have not nor",
+  "new": "Some plans are exempt from the federal requirement. They include plans established before December 29, 2022, businesses under three years old, church plans, governmental plans and SIMPLE (Savings Ince"
+ },
+ {
+  "id": "R2-A2-INTRO-STACK",
+  "old": "Exempt plans include those established before December 29, 2022, plans of businesses in existence under 3 years, small e",
+  "new": "Exempt plans include those established before December 29, 2022, plans of businesses in existence under 3 years, church plans, governmental plans and SIMPLE 401(k) plans. Small employers that have not"
+ },
+ {
+  "id": "R2-A2-RHYTHM-RUNS",
+  "old": "The checked primary sources do not state which date governs a specific workplace plan, and workers should not assume an ",
+  "new": "The checked sources do not say which date governs a specific plan. Do not assume an existing plan is exempt or has until 2028. Read your plan notices."
+ },
+ {
+  "id": "R2-A2-RHYTHM-RUNS",
+  "old": "Two distinct federal effective dates apply to these automatic enrollment rules.",
+  "new": "Two dates apply."
+ },
+ {
+  "id": "R2-A2-RHYTHM-RUNS",
+  "old": "- Small employers that have not normally employed more than 10 employees, remaining exempt until one year after the clos",
+  "new": "- Small employers that have not normally employed more than 10 employees. They stay exempt until one year after the close of the first taxable year in which they did."
+ },
+ {
+  "id": "R2-A3-FRAGMENT",
+  "old": "provides relief: if you deliver satisfactory documentation to the county assessor by the applicable deadline. The statut",
+  "new": "provides relief. If you give the county assessor satisfactory documentation by the applicable deadline, and the home qualified for homestead status in that assessment year, the assessor must reclassif"
+ },
+ {
+  "id": "R2-A3-FRAGMENT",
+  "old": "by the applicable deadline (the statute gives no date, so ask your county assessor) requires the assessor to reclassify ",
+  "new": "by the applicable deadline requires the assessor to reclassify qualifying property as homestead for the upcoming tax year. The statute gives no date, so ask your county assessor."
+ },
+ {
+  "id": "R2-A3-TAKEAWAY-GARBLE",
+  "old": "Each taxing authority's final levy is generally capped at its proposed levy, which the Minnesota Department of Revenue d",
+  "new": "Each taxing authority's final levy is generally capped at its proposed levy. The Department of Revenue says final levies can be lower but not higher than preliminary levies."
+ },
+ {
+  "id": "R2-A3-OVERLOAD",
+  "old": "County treasurers mail these notices every November to give property owners time to review proposed spending before city",
+  "new": "County treasurers mail these notices every November. They give owners time to review proposed spending before city councils, county boards and school boards vote on final levies."
+ },
+ {
+  "id": "R2-A3-OVERLOAD",
+  "old": "Your Minnesota Truth-in-Taxation notice is an estimate",
+  "new": "A Minnesota Truth-in-Taxation notice is an estimate"
+ },
+ {
+  "id": "R2-A3-OVERLOAD",
+  "old": "Under the [Minnesota Department of Revenue press release](https://www.revenue.state.mn.us/press-release/2026-11-12/preli",
+  "new": "In its [press release](https://www.revenue.state.mn.us/press-release/2026-11-12/preliminary-property-tax-levies-2027), the Minnesota Department of Revenue says preliminary levies statewide show"
+ }
+]

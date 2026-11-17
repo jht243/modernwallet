@@ -1,0 +1,119 @@
+3ab5",
+      "checkedAt": "2026-11-17T17:54:48.828673+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/ecfr-12-cfr-1005-11.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/243acd17f330a3f189e026751adac421c9006263c8550e1e85aeece8bc9a75f5/fortune-bank-outages.txt",
+      "sha256": "243acd17f330a3f189e026751adac421c9006263c8550e1e85aeece8bc9a75f5",
+      "checkedAt": "2026-11-17T17:54:48.828673+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/fortune-bank-outages.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/21b78f7cfb0f301d4b8ab21633140a9f3b74823421217c966a15a555dd805943/fr-td10061-unverified.txt",
+      "sha256": "21b78f7cfb0f301d4b8ab21633140a9f3b74823421217c966a15a555dd805943",
+      "checkedAt": "2026-11-17T17:54:48.828673+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/fr-td10061-unverified.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/e17a5a905e8e59fec31387a0b20ff76ec14256531604796898fe9bd614bb6208/mn-revenue-prelim-levies.txt",
+      "sha256": "e17a5a905e8e59fec31387a0b20ff76ec14256531604796898fe9bd614bb6208",
+      "checkedAt": "2026-11-17T17:54:48.828673+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/mn-revenue-prelim-levies.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/bce89d01190eab9631c144134318aedb8958f299de05fb1d56d0bc68439f6850/mn-revenue-truth-in-taxation.txt",
+      "sha256": "bce89d01190eab9631c144134318aedb8958f299de05fb1d56d0bc68439f6850",
+      "checkedAt": "2026-11-17T17:54:48.828673+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/mn-revenue-truth-in-taxation.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/3efff715177a3b7a7a7e21525d7d98790f9142788c1d6b6bfaa9e397418f2093/mn-statute-275-065.txt",
+      "sha256": "3efff715177a3b7a7a7e21525d7d98790f9142788c1d6b6bfaa9e397418f2093",
+      "checkedAt": "2026-11-17T17:54:48.828673+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/mn-statute-275-065.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/40b6eb90fe37a2ad8f4d207ba1fd42451902f1d8e7bbdaf7d8a856d27a59e344/nbc-chase-outage.txt",
+      "sha256": "40b6eb90fe37a2ad8f4d207ba1fd42451902f1d8e7bbdaf7d8a856d27a59e344",
+      "checkedAt": "2026-11-17T17:54:48.828673+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/nbc-chase-outage.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/1b442cc258b0732698945e8983edac69ed11b508913fc3ba97452dd159474ad9/treasury-sb0690.txt",
+      "sha256": "1b442cc258b0732698945e8983edac69ed11b508913fc3ba97452dd159474ad9",
+      "checkedAt": "2026-11-17T17:54:48.828673+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/treasury-sb0690.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/3f7930edb05aa931d07a2fc73ee2cca5bffb3ec2e9eb653c6b7f3819ff3c4f41/usc-26-414A.txt",
+      "sha256": "3f7930edb05aa931d07a2fc73ee2cca5bffb3ec2e9eb653c6b7f3819ff3c4f41",
+      "checkedAt": "2026-11-17T17:54:48.828673+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/research/sources/usc-26-414A.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/1a15e16daada5dd17674eef798b4cf2a371643d02157221bbb48aa7c64deac40/review.json",
+      "sha256": "1a15e16daada5dd17674eef798b4cf2a371643d02157221bbb48aa7c64deac40",
+      "checkedAt": "2026-11-17T17:54:48.828673+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report",
+      "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/audit-round2/review.json"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 2,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "snapshot": {
+    "path": "reports/mindmap-pass/2026-11-17-xtrends-run/blobs/159348f59783dbce7a7551169abec05a33b66ce87dedd4d7e5a101a235a13067/preview-snapshot.json",
+    "sha256": "159348f59783dbce7a7551169abec05a33b66ce87dedd4d7e5a101a235a13067",
+    "originPath": "reports/mindmap-pass/2026-11-17-xtrends-run/audit-round3-401k/preview-snapshot.json"
+  },
+  "findings": [
+    {
+      "id": "A1-DISCRETION",
+      "status": "open",
+      "evidence": "FIX chase-outage-fee-reversal introText p2: 'A bank fee reversal is a customer request decided at the discretion of Chase, not an automatic legal right.' -> 'The checked sources do not show a Chase policy that reverses fees for this outage, so treat each reversal as a request to Chase.' FIX faqs[0].answer: 'Chase decides fee reversals on a case-by-case basis at its own discretion.' -> 'The checked sources do not show a Chase policy that guarantees reversals.' FIX Our Takeaway: 'Reversal decisions remain at the discretion of Chase, while a Regulation E error notice serves as a separate legal avenue only if' -> 'The checked sources do not show that Chase must reverse a fee. A Regulation E error notice is a separate route that applies only if'. Also update evidence.json conditions ('Chase has discretion on fee reversal') to match."
+    },
+    {
+      "id": "A1-ANCHOR-EMERGENCY",
+      "status": "open",
+      "evidence": "FIX chase-outage-fee-reversal Our Takeaway last sentence: 'then read how much cash to keep outside one bank before the next outage' -> 'then read how much emergency fund you need to cover a gap while a bank is down'. If that wording still overreaches, use the plain anchor 'how much emergency fund you need'."
+    },
+    {
+      "id": "A1-CFPB-QUESTIONNAIRE",
+      "status": "open",
+      "evidence": "FIX When to Escalate to the CFPB: 'The CFPB intake questionnaire asks whether you reached out to Chase before filing.' -> 'The CFPB complaint guide suggests trying the company first.' and 'Before submitting a complaint, verify that you attempted to resolve the dispute with Chase first.' -> 'Before submitting a complaint, contact Chase first.'"
+    },
+    {
+      "id": "A1-EMPTY-TOOLS",
+      "status": "open",
+      "evidence": "FIX src/data/guides.ts chase-outage-fee-reversal: \"tools\": [] -> \"tools\": [{ \"label\": \"emergency fund calculator\", \"href\": \"/emergency-fund-calculator/\" }] (route is in the site nav). Check the GuideTool shape against a sibling entry."
+    },
+    {
+      "id": "A1-COY-BANK",
+      "status": "open",
+      "evidence": "FIX replace each 'the bank'/'The bank' that refers to Chase with 'Chase' (e.g. 'Chase acknowledged that some transactions were taking longer than normal'; 'Chase must decide within 10 business days whether an error occurred'; 'if Chase leaves the charges in place'). 'The financial institution' inside the Regulation E definition may stay as the regulation's term."
+    },
+    {
+      "id": "A1-RHYTHM-OVERLOAD",
+      "status": "open",
+      "evidence": "FIX Fortune sentence -> 'In 2010, Chase online banking was down for more than a day. Fortune reports that Chase then agreed to refund late fees to customers who missed payments, if they called to ask.' FIX 'Under 12 CFR 1005.11 , known as Regulation E, an error includes an unauthorized electronic fund transfer, an incorrect electronic fund transfer to or from your account, or the omission of an electronic fund transfer from your periodic statement.' -> 'Regulation E (12 CFR 1005.11) lists the errors it covers. Three are an unauthorized electronic fund transfer, an 

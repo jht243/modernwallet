@@ -1,0 +1,53 @@
+coverage_lookup: 3 candidate(s) vs 839 repo pages / 854 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1220 past-chart lines
+
+### /guides/chase-outage-fee-reversal  — row - · create new content
+keyword: chase outage fee reversal; chase outage overdraft fee refund; chase outage late fee
+reader question (new page intent): How do I get Chase to reverse fees after the Nov 16 outage?
+lookup terms: chase outage fee reversal overdraft refund late   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-15-trend-lane-c.md [table] | Lens 3 (vs, off the lender cluster of top-10 queries). `mortgage broker vs lender` 1,300/mo KD 13 (DataForSEO); `mortgage broker vs bank` 390 KD 8; `is a mortgage broker worth it` 140; `mortgage broker vs direct lender
+- 2026-10-26-trend-lane-c.md [table] | 1 | source: coverage + top-10 (Lens 2, adjacent to "index investment funds", 74,000/mo KD 37 head). Cluster: what is an index fund 12,100/mo KD 37 (measured); how to invest in index funds 2,400 KD 37; how to invest in 
+- 2026-11-16-comparison.md [table] | lookup: /roundup/best-cash-back-credit-cards - many-card list, not this pairing. Lens 1 direct intent (brief candidate 8). "chase freedom flex vs unlimited" 720/mo KD 36 SEMRUSH; no head-to-head page; SERP winnable. | 
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/401k-auto-enrollment-final-rules  — row - · create new content
+keyword: 401k automatic enrollment rules 2027; secure 2.0 auto enrollment final regulations; 414A
+reader question (new page intent): What do the final 401(k) auto-enrollment rules mean for my paycheck and can I opt out?
+lookup terms: 401k auto enrollment final rule automatic 2027 secure v2.0 regulation 414a   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-12-xtrends.md [exclusions] - DOL X post and Morgan Lewis alert: not retrievable (post not fetched; law-firm page HTTP 403); not cited; the Federal Register final rule is the sole fact source.
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent plus fresh news (IRS IR-2026-136, Nov 12 2026). lookup: /guides/401k-contribution-limits-2026 and /guides/ira-contribution-limits-2026 serve a 2026-limits reader, not a 2027 one; /compare/tsp-vs-40
+- 2026-11-16-xtrends.md [table] | Inbound path: /guides/401k-contribution-limits-2026 has no pointer to the 2027 figures that IRS announced Nov 12 2026 (lookup: PARENT/sibling year page). | Add a one-sentence pointer with anchor to the 2027 guide in th
+- 2026-11-16-xtrends.md [table] | Inbound path: /compare/tsp-vs-401k discusses TSP limits but has no link to the new annual-limit reference. | Add an inbound link to the 2027 limits guide where TSP and 401(k) deferral limits are discussed (link-only) |
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent (ENRICH requested by brief). lookup: /budget/aca-subsidy-calculator exact route exists, title 'ACA Subsidy Calculator for 2027 Marketplace Premiums'; gap: 0 mentions of bronze, enhanced subsidies, 
+- 2026-11-16-xtrends.md [table] | Inbound path: /retirement/401k-calculator/ shows contribution rates but not the 2027 cap IRS announced Nov 12 2026. | Add an inbound link to the 2027 limits guide beside the calculator's contribution-limit discussion (
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/minnesota-truth-in-taxation-notice  — row - · create new content
+keyword: minnesota truth in taxation notice; proposed property tax notice minnesota
+reader question (new page intent): How do I read my Minnesota Truth-in-Taxation notice and what can I do before levies are final?
+lookup terms: minnesota truth taxation notice proposed property tax   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-27-podcast.md [exclusions] - rental property tax deductions (1,900/mo, KD 29): DROPPED (exists). /guides/rental-property-tax-deductions.
+- 2026-10-28-autocomplete.md [table] | 2 | Lens 1 (seed "capital gains tax calculator", 281 completions). `capital gains tax calculator stocks` 480/mo KD 18 CPC $7.02 and `stock capital gains tax calculator` 480/mo KD 18 (DataForSEO measured); completions "
+- 2026-10-28-autocomplete.md [table] | Stock capital gains tax calculator | capital gains tax calculator stocks; stock capital gains tax calculator; capital gains tax calculator for stock sale; on sale of stock | coverage gap at theme level (rental-property
+- 2026-10-29-xtrends.md [table] | Lens 1 direct intent + news-driven (Zillow and Thumbtack 2026 study, Fox Business 2026-10-22). 'hidden cost of owning a home' 210/mo KD 4, 'cost of owning a home calculator' 170/mo KD 25, 'home maintenance cost calcula
+- 2026-11-04-tool-usage.md [exclusions] - Walked, no monetization fit: florida-amendment-3-calculator (only self-published Florida property-tax books returned; verdict no-fit).
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+Commits naming the topic: none
+Same run overlap: none
+
