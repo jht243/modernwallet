@@ -72,6 +72,13 @@
         "freshbooks.com",
         "www.freshbooks.com"
       ]
+    },
+    {
+      "route": "/alternatives/wealthfront/",
+      "vendorHost": "wealthfront.com",
+      "officialHosts": [
+        "www.wealthfront.com"
+      ]
     }
   ]
 }

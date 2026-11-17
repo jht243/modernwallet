@@ -1,0 +1,174 @@
+{
+ "slug": "wealthfront",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'; gpt-6-sol: RuntimeError: openai paused for 2026-11: monthly free-credit cap reached ($152.59 >= $152.51)",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 3251,
+ "floor": 1500,
+ "input_tokens": 26796,
+ "output_tokens": 6241,
+ "thinking_tokens": 10509,
+ "cached_tokens": 24440,
+ "est_cost_usd": 0.0664,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3251,
+  "numbers_not_in_facts": [
+   "0.45",
+   "0.6",
+   "0.96",
+   "12.5",
+   "12000",
+   "125",
+   "20000",
+   "24000",
+   "3000",
+   "35",
+   "38.16",
+   "75",
+   "8000"
+  ],
+  "fact_budget": {
+   "fact_words": 665,
+   "floor": 1500,
+   "ratio": 0.44,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    14,
+    0
+   ],
+   "applied": [
+    {
+     "id": "rows[7].bestFit",
+     "quote": "Fits self-directed investors with over $10,000 in assets who build customized ETF portfolios",
+     "replacement": "Fits self-directed investors with over $10,000 in assets seeking a fee-free self-directed brokerage",
+     "type": "unsupported",
+     "why": "SOURCE does not mention customized ETF portfolios for M1"
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Who this is not for:\nInvestors seeking dedicated, comprehensive human wealth management or complex estate administration will find these automated services incomplete.",
+     "replacement": "Who this is not for: Investors who want an automated portfolio with no advisory fee may prefer zero-fee options.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention comprehensive human wealth management or estate administration"
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Wealthfront offers automated advice, direct indexing, a Bond Ladder, and self-serve home loans through its Borrow section, but does not provide in-person private wealth management.",
+     "replacement": "Wealthfront charges a 0.25% annual fee on automated portfolios, while services like Schwab Intelligent Portfolios charge no advisory fee.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention in-person private wealth management"
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Similarly, platforms like Schwab Intelligent Portfolios and Vanguard Digital Advisor focus on algorithmic ETF allocations.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Schwab or Vanguard focus on algorithmic ETF allocations"
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Anyone requiring individualized legal estate planning or customized active derivatives trading should consider specialized wealth management firms or self-directed trading accounts instead.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention estate planning or derivatives trading"
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Schwab notes that it earns revenue from other sources, including management fees on Schwab ETFs and interest spreads on cash allocations held within client portfolios.",
+     "replacement": "Schwab notes that it earns revenue from other sources, including Schwab ETFs management fees and cash allocation.",
+     "type": "unsupported",
+     "why": "SOURCE states cash allocation, not interest spreads on cash allocations"
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Vanguard Digital Advisor falls short of Wealthfront on specialized features, as it does not offer individual stock trading, direct indexing, or home loans.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Vanguard lacks stock trading, direct indexing, or home loans"
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "The market-focused portfolio keeps approximately 98% invested in ETFs with 2% cash and charges an annual advisory fee of 0.30%, which equates to $3 per $1,000 managed.",
+     "replacement": "The market-focused portfolio keeps approximately 98% invested with roughly 2% cash and charges an annual advisory fee of 0.30%, which equates to $3 per $1,000 managed.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Ally Invest Robo Portfolios invests in ETFs"
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Core features include round-up investing that automatically invests spare change from linked payment cards.",
+     "replacement": "Core features include round-up investing of spare change.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention linked payment cards"
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Acorns falls short of Wealthfront on tax features, lacking tax-loss harvesting and direct indexing.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Acorns lacks tax-loss harvesting or direct indexing"
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "M1 combines self-directed brokerage investing with automated rebalancing through customizable portfolio allocations.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention automated rebalancing or customizable portfolio allocations for M1"
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "M1 falls short of Wealthfront on automated portfolio management, as M1 requires clients to design or select portfolio allocations rather than receiving a personalized managed portfolio with automated tax-loss harvesting.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state M1 requires clients to design or select allocations"
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "M1 fits self-directed investors who manage their own ETF allocations and hold more than $10,000 to avoid platform fees.",
+     "replacement": "M1 fits self-directed investors who hold more than $10,000 to avoid platform fees.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention ETF allocations for M1"
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Investors who want taxable accounts, retirement IRAs, and 529 college savings accounts in one system without managing separate pie allocations find Wealthfront well matched.",
+     "replacement": "Investors who want taxable accounts, retirement IRAs, and 529 college savings accounts in one system find Wealthfront well matched.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention pie allocations"
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 3402
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 375.4,
+ "response_id": "eYP8aunbNePnwbUPqYnWoAI",
+ "generated_at": "2026-11-17T16:46:39+0000"
+}
