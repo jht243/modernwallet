@@ -371,9 +371,10 @@ def parse_chart(path: Path, all_rows: bool) -> list[dict]:
         kw = [k for k in kw if not k.startswith("/")]
         if not kw and members:
             kw = [m.strip() for m in members.split(";") if m.strip()][:3]
+        row_id = cell(cells, "id") or (cells[0] if cells and cells[0].isdigit() else str(len(cands) + 1))
         cands.append({"route": route, "keyword": "; ".join(kw[:3]) or last_segment(route).replace("-", " "),
                       "question": cell(cells, "reader_question", "reader question"), "bucket": bucket,
-                      "row": cells[0] if cells and cells[0].isdigit() else str(len(cands) + 1)})
+                      "row": row_id})
     return cands
 
 
