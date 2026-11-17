@@ -1,0 +1,7 @@
+{
+  "disabledForMonth": "2026-11",
+  "mtdSpendUsd": 153.1743,
+  "capUsd": 152.51,
+  "reason": "Monthly OpenAI free-credit budget cap ($152.51) reached; auto-resets next month.",
+  "updatedAt": "2026-11-17T16:50:07Z"
+}
