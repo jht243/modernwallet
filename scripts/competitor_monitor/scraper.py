@@ -458,8 +458,22 @@ def load_ledger() -> dict:
 
 
 def save_ledger(ledger: dict) -> None:
+    # Compact settled baseline/done entries (outline/tool_io/relevance_hits are only
+    # needed while status == 'pending' for crash-recovery re-emission). Keeps ledgers
+    # ~10-20x smaller on 20k+ URL competitor sitemaps and speeds up cloud git clones.
+    for comp in (ledger.get("competitors") or {}).values():
+        if not isinstance(comp, dict):
+            continue
+        pages = comp.get("pages")
+        if not isinstance(pages, dict):
+            continue
+        for rec in pages.values():
+            if isinstance(rec, dict) and rec.get("status") in ("baseline", "done"):
+                rec.pop("outline", None)
+                rec.pop("tool_io", None)
+                rec.pop("relevance_hits", None)
     LEDGER_FILE.parent.mkdir(parents=True, exist_ok=True)
-    LEDGER_FILE.write_text(json.dumps(ledger, indent=2, sort_keys=True) + "\n")
+    LEDGER_FILE.write_text(json.dumps(ledger, separators=(",", ":"), sort_keys=True) + "\n")
 
 
 def _comp_entry(ledger: dict, key: str) -> dict:

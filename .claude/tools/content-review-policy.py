@@ -393,8 +393,16 @@ def reserve_without_checkpoint(root, snapshot_path, route, job, reviewer, out, p
         number = cycle['rounds'][-1]['number'] if pending else len(cycle['rounds'])+1
         if number == 3 and ceiling == 3 and 'thirdReviewClaimCategories' in policy(root):
             current_text = claim_text(row['semantic'])
-            retained = [claim for claim in cycle.get('lastRiskAssessment', {}).get('consequentialClaims', [])
-                        if claim.get('quote') and claim['quote'] in current_text]
+            prior_claims = cycle.get('lastRiskAssessment', {}).get('consequentialClaims', [])
+            last_fp = cycle['rounds'][-1].get('fingerprint') if cycle['rounds'] else None
+            # When Round 2 recorded maximumRounds == 3 (roundsRemaining == 1) and WRITE edited
+            # the page in response (changing fingerprint, which often rewrites the flagged quote),
+            # retain Round 2's recorded medical/legal eligibility so Round 3 never deadlocks.
+            retained = [
+                claim for claim in prior_claims
+                if (claim.get('quote') and claim['quote'] in current_text)
+                or (not pending and last_fp and row['fingerprint'] != last_fp)
+            ]
             current = (spec.get('riskAssessment') or {}).get('consequentialClaims', [])
             ceiling = audit_limit(policy(root), selected, {'consequentialClaims': retained + current})
         if cycle['rounds'] and cycle['rounds'][-1]['status']=='pending':

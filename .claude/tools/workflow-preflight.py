@@ -304,9 +304,51 @@ def core_api():
     )
 
 
+def _auto_discover_reuse_dir(root, directory, phase, actor, context_id, context_epoch):
+    """Auto-bind --reuse on warm SendMessage continuations when the worker omits --reuse."""
+    if not (actor and context_id and context_epoch):
+        return None
+    root_res = root.resolve()
+    dir_res = directory.resolve()
+    search_parents = []
+    for p in (dir_res.parent, dir_res.parent.parent):
+        if p == root_res or root_res not in p.parents:
+            continue
+        if p not in search_parents:
+            search_parents.append(p)
+    candidates = []
+    for parent in search_parents:
+        if not parent.is_dir():
+            continue
+        for child in parent.iterdir():
+            if not child.is_dir() or child.resolve() == dir_res:
+                continue
+            mf = child / 'manifest.json'
+            if mf.is_file():
+                candidates.append(child)
+    candidates.sort(key=lambda c: (c / 'manifest.json').stat().st_mtime, reverse=True)
+    for cand in candidates:
+        try:
+            m = load(cand)
+            if (
+                m.get('phase') == phase
+                and m.get('actor') == actor
+                and m.get('contextId') == context_id
+                and m.get('contextEpoch') == context_epoch
+            ):
+                validate(root, cand, require_delivery=True)
+                return cand
+        except Exception:
+            continue
+    return None
+
+
 def prepare(root, phase, instructions, directory, cloud=False, reuse=None, actor="worker", run_id=None,
             context_id=None, context_epoch=None, handoff=None, reuse_application=None, context_packet=None, source=None,
             publication_preparation=None):
+    if reuse is None and not publication_preparation:
+        eff_ctx = context_id or os.environ.get('CLAUDE_CODE_SESSION_ID') or os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID')
+        reuse = _auto_discover_reuse_dir(root, directory, phase, actor, eff_ctx, context_epoch)
     # Capture/check the exit code directly: no shell pipeline can turn failure into success.
     command = ['bash', str(root / '.claude/tools/workflow-start.sh')]
     is_cloud = cloud or str(os.environ.get('CLAUDE_CODE_REMOTE', '')).strip().lower() in ('1', 'true', 'yes')
@@ -471,13 +513,25 @@ def main():
                         args.publication_preparation)
             total_parts = len(m['parts'])
             batch_plan = [f'{s}..{min(s + 2, total_parts)}' for s in range(1, total_parts + 1, 3)]
+            if total_parts <= 2 and len(m['reused']) > 0:
+                next_hint = (
+                    f"Warm reuse active ({len(m['reused'])} unchanged rule files retained, only {total_parts} task-packet part(s)): "
+                    + (
+                        f"deliver part 1..{total_parts} via python3 .claude/tools/workflow-delivery-serial.local.py --run-dir {args.run_dir} --part 1 --through {total_parts}, then complete challenge/record or check in 1 turn."
+                        if total_parts > 0
+                        else f"0 parts to deliver — run instruction-understanding.py challenge/record or workflow-preflight.py check --run-dir {args.run_dir} immediately!"
+                    )
+                )
+            else:
+                next_hint = 'Issue 6-8 SEPARATE 3-part range Bash tool calls in ONE turn: python3 .claude/tools/workflow-delivery-serial.local.py --run-dir ' + str(args.run_dir) + ' --part <S> --through <E> following batchPlan (up to 18-24 parts per turn, <=27KB per call, zero output truncation; never use a shell for-loop in one Bash call) until every part is read, then run check.'
             print(json.dumps({
                 'status': 'prepared-not-read',
                 'runDir': args.run_dir,
                 'parts': total_parts,
                 'reusedFiles': len(m['reused']),
+                'reuse': m.get('reuse'),
                 'batchPlan': batch_plan,
-                'next': 'Issue 6-8 SEPARATE 3-part range Bash tool calls in ONE turn: python3 .claude/tools/workflow-delivery-serial.local.py --run-dir ' + str(args.run_dir) + ' --part <S> --through <E> following batchPlan (up to 18-24 parts per turn, <=27KB per call, zero output truncation; never use a shell for-loop in one Bash call) until every part is read, then run check.',
+                'next': next_hint,
             }))
         elif args.command == 'next':
             emit(ROOT, directory, args.part)

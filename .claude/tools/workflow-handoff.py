@@ -901,11 +901,34 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
     }[phase]
     pkt_flag = f" --context-packet {res['contextPacket']}" if pack_out else ''
     role_flag = f' --instruction {role_agent}' if is_layer3_local else ''
+    run_parent = out_path.parent.resolve()
+    rel_parent = str(run_parent.relative_to(root.resolve()))
+    prior_preflight = None
+    for cand in sorted(run_parent.glob(f'preflight-{phase}*'), key=lambda p: p.stat().st_mtime if p.exists() else 0):
+        mfile = cand / 'manifest.json'
+        if mfile.is_file():
+            try:
+                mdoc = json.loads(mfile.read_text(encoding='utf-8'))
+                if mdoc.get('phase') == phase and mdoc.get('delivered') == list(range(1, len(mdoc.get('parts') or []) + 1)):
+                    prior_preflight = cand
+            except Exception:
+                pass
+    next_pf_name = f'preflight-{phase}'
+    if (run_parent / next_pf_name).exists():
+        idx = 2
+        while (run_parent / f'preflight-{phase}-r{idx}').exists():
+            idx += 1
+        next_pf_name = f'preflight-{phase}-r{idx}'
+    reuse_flag = ''
+    if prior_preflight is not None:
+        reuse_rel = str(prior_preflight.resolve().relative_to(root.resolve()))
+        reuse_flag = f' --reuse {reuse_rel}'
+        res['autoDetectedReuseDir'] = reuse_rel
     res['workerPrepareCommand'] = (
         f"python3 .claude/tools/workflow-preflight.py prepare --phase {phase} "
-        f"--handoff {res['handoff']}{pkt_flag} --run-id <RUN_ID> "
+        f"--handoff {res['handoff']}{pkt_flag}{reuse_flag} --run-id <RUN_ID> "
         f"--actor {actor or '<ACTOR>'} --context-id <CONTEXT_ID> --context-epoch <EPOCH> "
-        f"--run-dir {str(out_path.parent.resolve().relative_to(root.resolve()))}/preflight-{phase}"
+        f"--run-dir {rel_parent}/{next_pf_name}"
         f"{role_flag} {phase_instr}"
     )
     return res

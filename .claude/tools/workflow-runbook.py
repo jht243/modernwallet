@@ -119,7 +119,12 @@ def render_runbook(root: Path, directory: Path = None, phase: str = None) -> str
             '"keywordEvidence", "whyNewPage", "outline": [{"heading","purpose"}], "takeaway", "evidenceFiles": [{"path","sha256"}]}] '
             '(name real concrete candidate products/entities + verified brand-page figures upfront so Round 1 passes; add "modelLaunch": {"level": "small"|"mid"|"frontier", "modelSlug": "<slug>"} on AI model launches when docs/model-launch-page-family.md exists).',
             '2e. Mandatory Pre-Review Draft Seal in BUILD (catches 100% of hash, medium, format & requirement-mapping errors in <0.1s BEFORE handing off to CHART-REVIEW): '
-            'python3 .claude/tools/mindmap-gates.py seal-draft --manifest <RUN_DIR>/approval-manifest.json --out <RUN_DIR>/draft-chart.md',
+            'python3 .claude/tools/mindmap-gates.py seal-draft --manifest <RUN_DIR>/approval-manifest.json --out <RUN_DIR>/draft-chart.md'
+            + (
+                ' && python3 .claude/tools/workflow-dispatch.local.py freeze-preparation --input <RUN_DIR>/approval-manifest.json --out <RUN_DIR>/frozen-manifest-v1.json (ensure --out is a NEW non-existent path; never grep/sed workflow-dispatch.local.py)'
+                if is_local
+                else ''
+            ),
             '3. Batch case lookup (full preparation mode; skipped during manual pre-Phase-0 fast-scope): '
             f'python3 .claude/tools/mindmap-gates.py cases-batch --manifest <RUN_DIR>/approval-manifest.json --publisher {canonical_base.replace("https://", "")} --out-dir <RUN_DIR>/evidence',
             '4. Chart Reviewer ONLY (never self-approve in BUILD; read `<RUN_DIR>/research/sources/*.txt` from disk FIRST before WebFetch): scaffold `<RUN_DIR>/chart-review.json` via `init-skeleton --kind chart-review`, populate real `verdict`, `evidence`, `requestCoverage`, `findings`, `resolvedFindingIds`, then on PASS run: '

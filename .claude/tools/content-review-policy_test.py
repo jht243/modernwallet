@@ -161,6 +161,42 @@ class Tests(unittest.TestCase):
         self.assertEqual(p.audit_limit(config,'high',{'incidentalMentions':[dict(claim,category='medical')]}),2)
         self.assertEqual(p.audit_limit(config,'light',assessment),1)
 
+    def test_third_audit_admits_edited_rework_after_round2_substantiated_legal_claim_without_deadlock(self):
+        self.config.update(thirdReviewClaimCategories=['medical', 'legal'], releaseAtAuditLimit=True, canonicalHosts=['example.com'])
+        self.put(p.CONFIG, self.config)
+        self.set_level('high')
+        # Round 1 & Round 2 with a substantiated legal claim in Round 2
+        for n, body in ((1, 'Initial retirement tax penalty rule text v1.'), (2, 'Specific legal penalty statutory claim quote v2.')):
+            snap = self.snapshot(body)
+            snap['manifest']['canonicalBase'] = 'https://example.com'
+            snap['snapshotSha256'] = render.digest({k: v for k, v in snap.items() if k != 'snapshotSha256'})
+            self.snap = snap
+            target = self.put(f'reports/legal-r{n}.json', snap)
+            adm = p.reserve(self.root, target, '/guide', 'fixture-job', 'independent', self.root / f'reports/legal-adm-{n}.json')
+            rep = self.report(adm, 'FAIL')
+            txt = p.claim_text(snap['routes'][0]['semantic'])
+            rep['routes'][0]['riskAssessment'] = {
+                'textSha256': p.sha(txt.encode()),
+                'rationale': 'Substantive legal statutory retirement rule requiring full high-scrutiny verification.',
+                'consequentialClaims': [{
+                    'category': 'legal',
+                    'quote': body,
+                    'reason': 'Direct statutory legal claim whose wording requires targeted verification.',
+                }],
+                'incidentalMentions': [],
+            }
+            rec_out = p.record(self.root, self.put(f'reports/legal-rep-{n}.json', rep))
+            self.assertEqual(rec_out[0]['maximumRounds'], 3)
+        # Round 3: writer rewrites the flagged quote completely during Round-2 rework -> must admit Round 3, never deadlock!
+        snap3 = self.snapshot('Rewritten compliant summary citing IRS Notice 2026-14 without the prior quote.')
+        snap3['manifest']['canonicalBase'] = 'https://example.com'
+        snap3['snapshotSha256'] = render.digest({k: v for k, v in snap3.items() if k != 'snapshotSha256'})
+        self.snap = snap3
+        target3 = self.put('reports/legal-r3.json', snap3)
+        adm3 = p.reserve(self.root, target3, '/guide', 'fixture-job', 'independent', self.root / 'reports/legal-adm-3.json')
+        self.assertEqual(adm3['number'], 3)
+        self.assertEqual(adm3['maximumRounds'], 3)
+
     def test_exact_one_two_three_shared_limits(self):
         for level,maximum in p.LIMITS.items():
             with self.subTest(level=level):

@@ -78,6 +78,11 @@
       "sha256": "6442b73f77f10f02d8fa2fc5edd9377ccbec7ee631d9a1c72e0843462597c8fe",
       "commit": "2156e44ed5bdfc9f95d86496feefe70c94614411",
       "reason": "Preserve recorded admissions, counters and candidate snapshots across the November 17 multi-round/multi-batch admission-verified composition update."
+    },
+    {
+      "sha256": "90b830b5478d8e05537db25f2ad142621b9d24e4f5c0f22f9f46ce902da0d6bf",
+      "commit": "69c5fecd47ffc62b0dbf1d059ec4e46bccb04f24",
+      "reason": "Preserve recorded admissions, counters and candidate snapshots across the November 17 Round-3 legal/medical quote-edit deadlock fix."
     }
   ],
   "releaseAtAuditLimit": true,
