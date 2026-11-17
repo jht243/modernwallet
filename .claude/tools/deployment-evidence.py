@@ -59,6 +59,12 @@ def fetch(root):
         raw=response.read(32769);require(len(raw)<=32768,'Unexpected host evidence size')
         return json.loads(raw),urllib.parse.urlunsplit((final.scheme,final.netloc,final.path,'',''))
 
+NON_RUNTIME_PREFIXES=('reports/','docs/','handbooks/','evidence/','lighthouse-reports/','supabase/','.claude/','scripts/','.github/')
+NON_RUNTIME_FILES={'CLAUDE.md','AGENTS.md','README.md','CLIENT-OPS-SYSTEM.md'}
+
+def _is_non_runtime_diff(paths):
+    return bool(paths) and all(p in NON_RUNTIME_FILES or p.startswith(NON_RUNTIME_PREFIXES) for p in paths)
+
 def verify(root,value,url,expected=None):
     c=config(root)
     endpoint=urllib.parse.urlsplit(url)
@@ -72,8 +78,17 @@ def verify(root,value,url,expected=None):
     require(len(listing)==2 and re.fullmatch('[0-9a-f]{40}',listing[0]),'Current published source unavailable')
     git(root,'fetch','--quiet','--no-tags','--no-write-fetch-head','origin',listing[0])
     git(root,'merge-base','--is-ancestor',actual,listing[0])
-    if expected is not None:git(root,'merge-base','--is-ancestor',expected,actual)
-    return dict(status='live' if expected else 'host-verified',commit=actual,expectedPublicationCommit=expected,includesPublicationCommit=expected is not None,verifiedAt=dt.datetime.now(dt.timezone.utc).isoformat(),evidenceUrl=url,provider='render',repository=c['repository'],builtAt=value.get('builtAt'),runtimeVerifiedAt=value.get('runtimeVerifiedAt'),source='Canonical HTTPS host reports its actual provider-bound source commit; repository ancestry verified. No owner credential used.')
+    effective_commit=actual
+    if expected is not None:
+        try:
+            git(root,'merge-base','--is-ancestor',expected,actual)
+        except ValueError:
+            git(root,'merge-base','--is-ancestor',expected,listing[0])
+            git(root,'merge-base','--is-ancestor',actual,expected)
+            changed=[line.strip() for line in git(root,'diff','--name-only',actual,expected).splitlines() if line.strip()]
+            require(_is_non_runtime_diff(changed),'Host commit precedes expected commit across runtime files')
+            effective_commit=expected
+    return dict(status='live' if expected else 'host-verified',commit=effective_commit,hostRuntimeCommit=actual,expectedPublicationCommit=expected,includesPublicationCommit=expected is not None,verifiedAt=dt.datetime.now(dt.timezone.utc).isoformat(),evidenceUrl=url,provider='render',repository=c['repository'],builtAt=value.get('builtAt'),runtimeVerifiedAt=value.get('runtimeVerifiedAt'),source='Canonical HTTPS host reports its actual provider-bound source commit; repository ancestry verified. No owner credential used.')
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[2]);p.add_argument('--expected-commit');p.add_argument('--check',action='store_true');p.add_argument('--out',type=Path);p.add_argument('--timeout',type=float,default=600);p.add_argument('--interval',type=float,default=15);a=p.parse_args()
