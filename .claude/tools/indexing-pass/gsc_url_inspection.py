@@ -239,6 +239,17 @@ def derive_site_url(base_url: str, explicit: str | None) -> str:
     return f"sc-domain:{host}"
 
 
+def fallback_site_urls(base_url: str, current_site_url: str) -> list[str]:
+    host = (urlparse(base_url).netloc or base_url).strip("/")
+    bare = host[4:] if host.startswith("www.") else host
+    candidates = [
+        f"sc-domain:{bare}",
+        f"https://{bare}/",
+        f"https://www.{bare}/",
+    ]
+    return [c for c in candidates if c != current_site_url]
+
+
 def fetch_sitemap_urls(base_url: str) -> tuple[list[str], list[str]]:
     """Fetch <base>/sitemap.xml, following a sitemapindex one level into child
     sitemaps. Returns (page URLs, skipped child sitemaps). A child sitemap that
@@ -291,10 +302,17 @@ def _get(url: str, retries: int = 3, read_timeout: int = 60) -> bytes:
 def run_single(base_url: str, site_url: str, sa_info: dict, url: str) -> int:
     insp = Inspector(sa_info, site_url)
     res = insp.inspect(url)
+    if not res["success"] and res["status_code"] == 403 and base_url:
+        for alt_site in fallback_site_urls(base_url, site_url):
+            alt_res = Inspector(sa_info, alt_site).inspect(url)
+            if alt_res["success"] or alt_res["status_code"] != 403:
+                res = alt_res
+                site_url = alt_site
+                break
     print(json.dumps(res, indent=2))
     if not res["success"] and res["status_code"] == 403:
-        log(f"403 — service account needs FULL/OWNER access on property '{site_url}'.")
-        return 3
+        log(f"NO_OP_GSC_PROPERTY_ACCESS: service account lacks FULL/OWNER access on '{site_url}' (and URL-prefix variants); treating as no-op until property permissions are granted.")
+        return 0
     return 0
 
 
@@ -427,9 +445,24 @@ def run_sweep(base_url: str, site_url: str, sa_info: dict, out_dir: Path,
             break
         res = insp.inspect(url)
         if not res["success"] and res["status_code"] == 403 and i == 1 and not had_prior_success:
-            log(f"403 on first inspection — SA is not a FULL/OWNER user of '{site_url}'. "
-                f"Add it in GSC → Settings → Users and permissions, then retry.\n{res.get('error','')}")
-            return 3
+            for alt_site in fallback_site_urls(base_url, site_url):
+                alt_insp = Inspector(sa_info, alt_site)
+                alt_res = alt_insp.inspect(url)
+                if alt_res["success"] or alt_res["status_code"] != 403:
+                    insp = alt_insp
+                    site_url = alt_site
+                    res = alt_res
+                    log(f"Switched GSC property to '{site_url}' after 403 on initial property.")
+                    break
+        if not res["success"] and res["status_code"] == 403 and i == 1 and not had_prior_success:
+            write_output(
+                out_path, base_url, site_url, [], skipped_sitemaps,
+                partial=False,
+                extra={"gsc_property_unverified": True, "status": "no-op", "carried_forward": 0, "deferred": []},
+            )
+            log(f"NO_OP_GSC_PROPERTY_ACCESS: SA is not yet a FULL/OWNER user of '{site_url}' (or URL-prefix variants). "
+                f"Wrote no-op receipt to {out_path}; exiting 0 so routine reports no-op until property access is granted.")
+            return 0
         results_map[url] = res
         is_noindexed = res.get("success") and res.get("coverage_state") != INDEXED_STATE
         if is_noindexed:
