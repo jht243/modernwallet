@@ -346,7 +346,7 @@ def parse_chart(path: Path, all_rows: bool) -> list[dict]:
         if re.match(r"^\|\s*:?-{3,}", line):
             continue
         cells = [c.strip() for c in line.strip().strip("|").split("|")]
-        low = [re.sub(r"[^a-z_ ]", "", c.lower()).strip() for c in cells]
+        low = [re.sub(r"[^a-z_ ]", "", re.sub(r"\s*\([^)]*\)", "", c.lower())).strip() for c in cells]
         if ("target" in low) and ({"bucket", "lever"} & set(low)):
             cols = {name: i for i, name in enumerate(low)}
             continue
