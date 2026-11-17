@@ -201,6 +201,15 @@ class AuditBatchPendingResumeTests(unittest.TestCase):
             self.assertEqual(cached, [(snap_rel, file_sha)])
             self.assertIn('doc', shared)
 
+    def test_module_imports_uuid_and_preserves_policy_hashes(self):
+        mod = load_audit_batch()
+        self.assertTrue(hasattr(mod, 'uuid'))
+        root = Path(__file__).resolve().parents[2]
+        crp = mod._load('t_crp', root / '.claude/tools/content-review-policy.py')
+        wfl = mod._load('t_wfl', root / '.claude/tools/workflow-local.py')
+        self.assertEqual(len(crp.policy_hash(root)), 64)
+        self.assertEqual(len(wfl.policy_hash(root)), 64)
+
 
 if __name__ == '__main__':
     unittest.main()
