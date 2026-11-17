@@ -48,7 +48,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass, asdict, field
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
@@ -256,12 +256,17 @@ def content_hash(html: str) -> str:
 
 
 def extract_title(html: str) -> str:
-    m = re.search(r"(?is)<title[^>]*>(.*?)</title>", html)
+    clean = re.sub(r"(?is)<svg\b.*?</svg>", " ", _strip_blocks(html))
+    m = re.search(r"(?is)<title[^>]*>(.*?)</title>", clean)
     if m:
-        return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", m.group(1))).strip()[:200]
-    m = re.search(r"(?is)<h1[^>]*>(.*?)</h1>", html)
+        t = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", m.group(1))).strip()[:200]
+        if t and "{" not in t and "}" not in t:
+            return t
+    m = re.search(r"(?is)<h1[^>]*>(.*?)</h1>", clean)
     if m:
-        return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", m.group(1))).strip()[:200]
+        t = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", m.group(1))).strip()[:200]
+        if t and "{" not in t and "}" not in t:
+            return t
     return ""
 
 
@@ -330,6 +335,29 @@ def classify(url: str, title: str) -> str:
 
 
 # ── Sitemap discovery + parsing ───────────────────────────────────────────────
+_NON_ARTICLE_SITEMAP_RE = re.compile(
+    r"(?i)(?:^|/|[._-])(?:category|categories|post_tag|tag|tags|author|authors|topic|topics|"
+    r"attachment|product_cat|product_tag|user|users|archive|archives|classifieds?)[._-]?sitemap",
+)
+_NON_ARTICLE_URL_RE = re.compile(
+    r"(?i)(?:"
+    r"/(?:tag|tags|category|categories|author|authors|topic|topics|page|pages|classifieds|collections|shop|cart|checkout|account|login|register|wp-json|wp-content|wp-admin|feed|rss|embed)(?:/|$)"
+    r"|/edge/(?:all|men|mens|womens|women|heart-health|hone-news|uncategorized|biohacking|testing|author)(?:/|$)"
+    r"|/(?:es|fr|de|pt|pt-br|it|nl|pl|ru|ja|ko|zh|zh-cn|zh-tw|ar|tr|vi|id|th|hi|sv|da|fi|no|cs|hu|ro|el|he)(?:/|$)"
+    r")"
+)
+
+
+def _is_non_article_url(url: str) -> bool:
+    if not url:
+        return True
+    p = urllib.parse.urlsplit(url)
+    path = (p.path or "").rstrip("/")
+    if not path or path == "/":
+        return True
+    return bool(_NON_ARTICLE_URL_RE.search(path))
+
+
 def discover_sitemaps(domain: str, override: str | None) -> list[str]:
     if override:
         return [override]
@@ -372,7 +400,10 @@ def parse_sitemap(url: str, depth: int = 0) -> dict[str, str]:
         for sm in root.findall(f"{SM_NS}sitemap"):
             loc = sm.findtext(f"{SM_NS}loc") or sm.findtext("loc")
             if loc:
-                out.update(parse_sitemap(loc.strip(), depth + 1))
+                loc_clean = loc.strip()
+                if _NON_ARTICLE_SITEMAP_RE.search(loc_clean):
+                    continue
+                out.update(parse_sitemap(loc_clean, depth + 1))
                 time.sleep(0.2)  # gentle pace through nested sub-sitemaps (avoid ratelimit)
                 if len(out) > MAX_URLS_PER_COMPETITOR:
                     break
@@ -381,8 +412,11 @@ def parse_sitemap(url: str, depth: int = 0) -> dict[str, str]:
             loc = u.findtext(f"{SM_NS}loc") or u.findtext("loc")
             if not loc:
                 continue
+            canon = canonical_url(loc.strip())
+            if _is_non_article_url(canon):
+                continue
             lastmod = (u.findtext(f"{SM_NS}lastmod") or u.findtext("lastmod") or "").strip()
-            out[canonical_url(loc.strip())] = lastmod
+            out[canon] = lastmod
     return out
 
 
@@ -503,10 +537,27 @@ def detect(roster: list[dict], ledger: dict, today: str, only: str | None, obser
                 boiler_box["set"] = boilerplate_headings(comp["domain"])
             return fetch_page_meta(u, boiler_box["set"])
 
+        try:
+            cutoff_date = (date.fromisoformat(today[:10]) - timedelta(days=14)).isoformat()
+        except ValueError:
+            cutoff_date = ""
+
         # 1) Re-emit still-pending pages (crash-safety): a page detected before but
         #    not yet resolved stays a candidate until `record` marks it done.
+        #    Auto-retire non-article taxonomy/archive/locale URLs and stale pre-window
+        #    baseline-bump backlogs so they never starve fresh competitor publications.
         for u, rec in pages.items():
             if rec.get("status") == "pending":
+                if _is_non_article_url(u):
+                    rec["status"] = "done"
+                    rec["disposition"] = "skipped-low-value"
+                    rec["acted"] = False
+                    continue
+                lm_d = (rec.get("lastmod") or "")[:10]
+                fs_d = (rec.get("first_seen") or "")[:10]
+                if cutoff_date and ((lm_d and lm_d < cutoff_date) or (not lm_d and fs_d and fs_d < cutoff_date)):
+                    rec["status"] = "baseline"
+                    continue
                 candidates.append(Candidate(
                     competitor=key, competitor_name=name, url=u,
                     title=rec.get("title", ""), kind=rec.get("kind", classify(u, "")),
@@ -590,6 +641,9 @@ def detect(roster: list[dict], ledger: dict, today: str, only: str | None, obser
             stored_lm = rec.get("lastmod", "")
             if not (lm and lm != stored_lm):
                 continue  # no lastmod advance → treat as unchanged, no fetch
+            if cutoff_date and lm[:10] < cutoff_date:
+                rec["lastmod"] = lm
+                continue
             meta = _meta(u)
             if meta is None:
                 fetch_failures.append(u)
@@ -598,12 +652,19 @@ def detect(roster: list[dict], ledger: dict, today: str, only: str | None, obser
             if rec.get("content_hash") and h == rec["content_hash"]:
                 rec["lastmod"] = lm  # cosmetic lastmod bump, content identical
                 continue
+            if rec.get("status") == "baseline" and not rec.get("content_hash"):
+                # Initial quiet-seed baseline had no content_hash; record hash now so future
+                # genuine rewrites are detected without flooding the queue on a CMS lastmod bump.
+                rec["lastmod"] = lm
+                rec["content_hash"] = h
+                continue
             if _emit(u, lm, meta, "updated") == "on":
                 updated_count += 1
 
         entry["last_crawled"] = today
         print(f"  new: {new_count}  updated: {updated_count}  off-niche: {off_count}  pending-retry: {retry_count}")
 
+    candidates.sort(key=lambda c: ((c.lastmod or "")[:10], c.change == "new"), reverse=True)
     return candidates, ledger, fetch_failures, skipped_off_niche
 
 

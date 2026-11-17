@@ -715,6 +715,30 @@ class ReleaseGateTests(Tests):
         paths=p.sources(self.root,out)['paths']
         self.assertIn('reports/r2.json',paths);self.assertIn('reports/r3.json',paths);self.assertIn('reports/s2.json',paths)
 
+    def test_cross_batch_or_cross_round_distinct_admitted_actors_compose_cleanly(self):
+        s_b1=self.two_route_snapshot('b1');s_b1['manifest']['author']='writer-b1'
+        s_b1['snapshotSha256']=render.digest({k:v for k,v in s_b1.items() if k!='snapshotSha256'})
+        p_b1=self.put('reports/s-b1.json',s_b1)
+        adm_b1=p.reserve(self.root,p_b1,'/guide','fixture-job','auditor-b1',self.root/'reports/adm-b1.json')
+        rep_b1=self.report_for(s_b1,[self.row(s_b1['routes'][0],adm_b1,'PASS')])
+        rep_b1['reviewer']='auditor-b1'
+        r_b1=self.put('reports/r-b1.json',rep_b1)
+        p.record(self.root,r_b1)
+
+        s_b2=self.two_route_snapshot('b1');s_b2['manifest']['author']='writer-b2'
+        s_b2['snapshotSha256']=render.digest({k:v for k,v in s_b2.items() if k!='snapshotSha256'})
+        p_b2=self.put('reports/s-b2.json',s_b2)
+        adm_b2=p.reserve(self.root,p_b2,'/other','fixture-job','auditor-b2',self.root/'reports/adm-b2.json')
+        rep_b2=self.report_for(s_b2,[self.row(s_b2['routes'][1],adm_b2,'PASS')])
+        rep_b2['reviewer']='auditor-b2'
+        r_b2=self.put('reports/r-b2.json',rep_b2)
+        p.record(self.root,r_b2)
+
+        groups=[{'snapshot':p_b1,'review':r_b1,'routes':['/guide']},{'snapshot':p_b2,'review':r_b2,'routes':['/other']}]
+        out=self.root/'reports/composite-multi-batch.json'
+        p.compose(self.root,p_b2,groups,None,out)
+        self.assertTrue(p.check_rendered(self.root,s_b2,p.read(out)))
+
     def test_composition_fails_closed_on_forged_or_unreviewed_pages(self):
         three,path3,r3path,two,path2,r2path=self.recorded_pair()
         good=[{'snapshot':path3,'review':r3path,'routes':['/guide']},{'snapshot':path2,'review':r2path,'routes':['/other']}]

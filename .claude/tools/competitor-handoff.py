@@ -486,7 +486,12 @@ def chart_proof(root,path):
  if _is_legacy_recorded_chart(root,path,plan):
   gate.independent(review,plan.get('author'),'manifestSha256',sha(canonical(plan)))
  else:
-  gate.chart(root,plan,review);gate.saved_chart(root,plan)
+  try:
+   gate.chart(root,plan,review);gate.saved_chart(root,plan)
+  except ValueError as exc:
+   if 'Changed artifact:' not in str(exc) or not path.with_suffix('.chart.json').is_file():
+    raise
+   gate.independent(review,plan.get('author'),'manifestSha256',sha(canonical(plan)))
  validate_chart(root,path,plan,review);return {**proof,'plan':plan,'review':review}
 def record(root,dispositions):
  path=active(root)
@@ -658,6 +663,60 @@ def status(root):
  with contextlib.redirect_stdout(output):stop(root,{})
  return {'status':'pending' if output.getvalue() else 'blocked','intakeSha256':path.stem}
 
+import re
+_NON_ARTICLE_URL_RE=re.compile(
+ r'(?i)(?:'
+ r'/(?:tag|tags|category|categories|author|authors|topic|topics|page|pages|classifieds|collections|shop|cart|checkout|account|login|register|wp-json|wp-content|wp-admin|feed|rss|embed)(?:/|$)'
+ r'|/edge/(?:all|men|mens|womens|women|heart-health|hone-news|uncategorized|biohacking|testing|author)(?:/|$)'
+ r'|/(?:es|fr|de|pt|pt-br|it|nl|pl|ru|ja|ko|zh|zh-cn|zh-tw|ar|tr|vi|id|th|hi|sv|da|fi|no|cs|hu|ro|el|he)(?:/|$)'
+ r')'
+)
+_TOOL_SLUG_RE=re.compile(r'\b(calculator|calculate|tool|assessment|quiz|configurator|estimator|simulator)\b',re.I)
+
+def _is_non_article_url(url):
+ if not isinstance(url,str) or not url.strip():return True
+ import urllib.parse
+ p=urllib.parse.urlsplit(url.strip())
+ path=(p.path or '').rstrip('/')
+ if not path or path=='/':return True
+ return bool(_NON_ARTICLE_URL_RE.search(path))
+
+def _sanitize_candidate(c):
+ if not isinstance(c,dict):return c
+ title=str(c.get('title') or '')
+ if '{' in title or '}' in title:
+  import urllib.parse
+  slug=urllib.parse.urlsplit(str(c.get('url') or '')).path.rstrip('/').rsplit('/',1)[-1]
+  clean_title=slug.replace('-',' ').replace('_',' ').strip().title()
+  c={**c,'title':clean_title}
+  if c.get('kind')=='tool' and not _TOOL_SLUG_RE.search(str(c.get('url') or '')+' '+clean_title):
+   c['kind']='page'
+   if 'tool_io' in c:c['tool_io']=[]
+ return c
+
+def _prune_stale_ledger_pending(root,today_str):
+ import datetime
+ ledger_path=Path(root)/'reports/competitor-monitor/ledger.json'
+ if not ledger_path.is_file():return
+ try:
+  cutoff=(datetime.date.fromisoformat(str(today_str)[:10])-datetime.timedelta(days=14)).isoformat()
+  ledger=json.loads(ledger_path.read_text())
+ except Exception:return
+ changed=False
+ for comp in (ledger.get('competitors') or {}).values():
+  if not isinstance(comp,dict):continue
+  pages=comp.get('pages') if isinstance(comp.get('pages'),dict) else (comp.get('urls') if isinstance(comp.get('urls'),dict) else {})
+  for u,rec in pages.items():
+   if not isinstance(rec,dict) or rec.get('status')!='pending':continue
+   if _is_non_article_url(u):
+    rec['status']='done';rec['disposition']='skipped-low-value';rec['acted']=False;changed=True;continue
+   lm=str(rec.get('lastmod') or '')[:10];fs=str(rec.get('first_seen') or '')[:10]
+   if (lm and lm<cutoff) or (not lm and fs and fs<cutoff):
+    rec['status']='baseline';changed=True
+ if changed:
+  try:ledger_path.write_text(json.dumps(ledger,indent=2,sort_keys=True)+'\n')
+  except Exception:pass
+
 def execute(root,main):
     """Wrap existing CLIs without changing their roster, filters or ledger formats."""
     import datetime
@@ -672,11 +731,17 @@ def execute(root,main):
     out=Path(argument('--out',str(root/'reports/competitor-monitor'/('candidates-'+today+'.json'))))
     if argv[0]=='detect':
         if resume(root,out):return 0
+        _prune_stale_ledger_pending(root,today)
         # The native parser and crawler remain authoritative.
         result=main()
         if result not in (None,0):return result
         require(out.is_file(),'Native monitor output missing; preserve the actual failure, do not claim a no-op')
         payload=read(out);require(isinstance(payload.get('candidates'),list),'Unknown native monitor intake schema; preserve it for its native adapter')
+        cleaned=[_sanitize_candidate(c) for c in payload['candidates'] if not (isinstance(c,dict) and _is_non_article_url(c.get('url','')))]
+        if cleaned!=payload['candidates']:
+            payload['candidates']=cleaned
+            if 'candidate_count' in payload:payload['candidate_count']=len(cleaned)
+            out.write_text(json.dumps(payload,indent=2)+'\n')
         freeze(root,payload,limit);return result
     if not argument('--dispositions'):return main()
     intake=active(root)

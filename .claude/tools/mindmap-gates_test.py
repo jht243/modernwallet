@@ -1201,21 +1201,24 @@ class Gates(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'duplicate-collision'):
             g.rebind_mechanical(self.root, 'plan.json', 'review.json', carry_round1_guardrails=True)
 
-        # 2. Non-liability, non-duplicate Round-1 finding (including negated prose like "No duplicate-collision" / "no liabilityBlock") carries into reviewerGuardrails and passes chart validation
+        # 2. Non-liability, non-duplicate Round-1 finding (including "substantive", requestCoverage FAIL, and negated prose like "No duplicate-collision" / "no liabilityBlock") carries into reviewerGuardrails by default and passes chart validation
         r1_rev = self.review()
         r1_rev['verdict'] = 'FAIL'
         r1_rev['round'] = 1
+        r1_rev['requestCoverage'] = [{'requirementId': 'R1', 'status': 'FAIL', 'evidence': 'A1 scope needs to cover FAQ schema cells as well as the main table.'}]
         r1_rev['findings'] = [
-            {'id': 'F2', 'severity': 'high', 'status': 'open', 'fix': 'Clarify the 30-day roaming fair-use cap in Section 2'},
+            {'id': 'F2', 'severity': 'substantive', 'status': 'open', 'fix': 'Clarify the 30-day roaming fair-use cap in Section 2'},
             {'id': 'CR9-DUP', 'severity': 'medium', 'status': 'open', 'finding': 'No duplicate-collision ruling; proceeds as a new page and no liabilityBlock arises.'},
         ]
         (self.root / 'review.json').write_text(json.dumps(r1_rev))
-        res = g.rebind_mechanical(self.root, 'plan.json', 'review.json', carry_round1_guardrails=True)
+        res = g.rebind_mechanical(self.root, 'plan.json', 'review.json')
         self.assertEqual(res['status'], 'PASS')
-        self.assertEqual(res['carriedGuardrails'], 2)
+        self.assertEqual(res['carriedGuardrails'], 3)
         saved_plan = g.read(self.root / 'plan.json')
         saved_rev = g.read(self.root / 'review.json')
         self.assertIn('Clarify the 30-day roaming fair-use cap', saved_plan['reviewerGuardrails'][0])
+        self.assertEqual(saved_rev['requestCoverage'][0]['status'], 'PASS')
+        self.assertEqual(saved_rev['requestCoverage'][0]['priorStatus'], 'FAIL')
         g.chart(self.root, saved_plan, saved_rev)
         g.saved_chart(self.root, saved_plan)
 

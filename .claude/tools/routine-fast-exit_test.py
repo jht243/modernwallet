@@ -371,6 +371,71 @@ class RoutineFastExitTests(unittest.TestCase):
         self.assertTrue(out['collectorPosted'])
         self.assertIn('STOP_IMMEDIATELY', out['next'])
 
+    def test_ga4_cooldown_filters_low_view_noise_on_low_traffic_sites_and_defaults_ledger(self):
+        pages = self.root / 'reports/trend-pass/ga4_24h.json'
+        pages.parent.mkdir(parents=True, exist_ok=True)
+        # Total views = 11 (< 25), all routes have < 5 views -> must fastExit True!
+        pages.write_text(json.dumps({
+            'top_pages': [
+                {'page': '/', 'views': 4},
+                {'page': '/guides/a', 'views': 4},
+                {'page': '/guides/b', 'views': 3},
+            ],
+        }))
+        import io
+        from contextlib import redirect_stdout
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            # Omit --ledger to verify CLI default
+            rc = self.mod.main([
+                '--root', str(self.root),
+                'ga4-cooldown',
+                '--site', 'https://example.com',
+                '--pages-json', str(pages),
+            ])
+        self.assertEqual(rc, 0)
+        out = json.loads(buf.getvalue())
+        self.assertTrue(out['fastExit'])
+        self.assertEqual(out['skippedLowViews'], ['/guides/a', '/guides/b'])
+
+    def test_indexing_sweep_counts_links_in_lib_and_large_multi_entry_data_ts(self):
+        pub = self.root / 'public'
+        pub.mkdir(parents=True, exist_ok=True)
+        (pub / 'sitemap.xml').write_text(
+            '<urlset><url><loc>https://example.com/guides/multi-linked</loc></url>'
+            '<url><loc>https://example.com/guides/lib-linked</loc></url></urlset>'
+        )
+        data_dir = self.root / 'data'
+        data_dir.mkdir(parents=True, exist_ok=True)
+        # >25KB multi-entry data/*.ts file mentioning /guides/multi-linked in 2 distinct entries
+        padding = '// ' + ('x' * 28000) + '\n'
+        (data_dir / 'guides-new.ts').write_text(
+            padding
+            + 'export const g1 = { body: "See [Guide](/guides/multi-linked) for details." };\n'
+            + 'export const g2 = { body: "Also check [Guide](/guides/multi-linked) next." };\n'
+        )
+        lib_dir = self.root / 'lib'
+        lib_dir.mkdir(parents=True, exist_ok=True)
+        (lib_dir / 'nav.ts').write_text(
+            'export const nav1 = { path: "/guides/lib-linked" };\n'
+        )
+        src_dir = self.root / 'src/pages'
+        src_dir.mkdir(parents=True, exist_ok=True)
+        (src_dir / 'index.tsx').write_text('<a href="/guides/lib-linked">Lib</a>\n')
+
+        insp = self.root / 'reports/indexing-pass/2026-11-17.inspection.json'
+        insp.parent.mkdir(parents=True, exist_ok=True)
+        insp.write_text(json.dumps({
+            'inspected': {
+                'https://example.com/guides/multi-linked': {'coverage_state': 'Discovered - currently not indexed'},
+                'https://example.com/guides/lib-linked': {'coverage_state': 'Discovered - currently not indexed'},
+            },
+            'skipped_sitemaps': [],
+        }))
+        res = self.mod.check_indexing_sweep(self.root, inspection_json=insp, site='https://example.com')
+        self.assertTrue(res['fastExit'])
+        self.assertEqual(res['awaitingCrawlLinked'], 2)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -29,3 +29,5 @@ reports/podcast-pain-pass/run-*/transcripts/
 public/search-index.json
 public/search-aliases.json
 public/placement-verticals.json
+reports/search-gap/intakes/run-*-intake.json
+reports/search-gap/auto-close/

@@ -13,7 +13,7 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 # Phase 2 — EXECUTE + PUBLISH (via the site's OWN content engine)
 
 <!-- podcast-no-circuit-breaker-hold-v1 -->
-**No candidate-count circuit-breaker hold (2026-11-13 fleet rule):** Never hold, abort, or skip shipping because `validated_terms.json` or surviving chart rows exceed 10, 15, 20, or 30, and never write `HOLD-chart.md` for candidate volume. When more candidates survive than a single run's `BUILD_CAP` (10–15 pages), auto-approve and ship the top `BUILD_CAP` highest-volume uncovered pages in this run and queue the remaining rows in `reports/podcast-pain-pass/ledger.json` (`deferred_rows` / `validated_terms_overflow.json`) for the next run. This rule supersedes any older 10/20/30-term circuit-breaker wording in prompts or phase files.
+**No candidate-count circuit-breaker hold + 4-page per-run `BUILD_CAP` (2026-11-17 fleet rule):** Never hold, abort, or skip shipping because `validated_terms.json` or surviving chart rows exceed 4, 10, 15, 20, or 30, and never write `HOLD-chart.md` for candidate volume. When more new-page candidates survive than a single run's `BUILD_CAP = 4` new pages, auto-approve and ship the top `4` highest-volume uncovered pages in this run (1–2 Mindmap sub-batches) and queue every remaining surviving row (`#5+`) in `reports/podcast-pain-pass/ledger.json` (`deferred_rows` / `validated_terms_overflow.json`) so zero candidates are lost and the next run drains them first. This rule supersedes any older 10/15/20/30-term cap or circuit-breaker wording in prompts or phase files.
 <!-- /podcast-no-circuit-breaker-hold-v1 -->
 
 
@@ -24,11 +24,11 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 Input: the auto-approved chart from Phase 1. This routine does NOT carry its own page generator — it hands the chart to **this repo's existing content engine**, exactly as `trend-pass-auto` does. Do not invent a new page shape.
 
-## ‼️ BUILD THROUGHPUT + INCREMENTAL BACKLOG (BUILD_CAP = 15) — no approved page is ever stranded
+## ‼️ BUILD THROUGHPUT + INCREMENTAL BACKLOG (BUILD_CAP = 4) — no approved page is ever stranded
 Two mechanisms together (the checkpoint is what actually guarantees safety, so the cap can be generous):
 1. **Incremental backlog checkpoint (the real safety net):** at the START of Phase 2, write EVERY approved row (deferred-backlog rows first, then newly-mined by descending SEMRUSH volume) into `reports/podcast-pain-pass/ledger.json` under `deferred_rows`. Then build one at a time (parallelize the writer subagents, but register/record serially); **after each page is published + 200-verified, remove it from `deferred_rows`.** If the session ends for ANY reason (budget, error) part-way, `deferred_rows` already holds exactly the unbuilt remainder — Phase 1 drains it FIRST next run. Nothing is stranded, no matter how many pages a run approves.
-2. **Soft cap (BUILD_CAP = 15):** attempt up to **15 pages this run** — enough to ship a big week in one go. Approved rows beyond 15 just stay in `deferred_rows` for the next run. This is a throughput ceiling, not a content cap — tune it to how many pages a cloud session reliably completes (start at 15).
-There is NO survivor-count circuit-breaker hold: whenever total approved rows exceed BUILD_CAP, build and ship the top BUILD_CAP pages in this run and keep the rest in `deferred_rows` for the next run (never hold or stop the run).
+2. **Soft cap (BUILD_CAP = 4):** build up to **4 new pages this run** (1–2 Mindmap sub-batches) so every run completes cleanly with low context growth. Approved rows `#5+` stay in `deferred_rows` for the next run. This is a per-run throughput bound, never a content drop.
+There is NO survivor-count circuit-breaker hold: whenever total approved rows exceed `BUILD_CAP = 4`, build and ship the top `4` pages in this run and keep `#5+` in `deferred_rows` for the next run (never hold or stop the run).
 
 ## 1. Write the content — additive, via the repo's own approach
 For each KEPT row, discover this repo's add-a-page mechanism (Phase 0 site-facts: additive data file / markdown / content dir / bundled generator on this Flask + SQLite site) and use **`.claude/commands/seo-gsc-pass/phase-3-new-content.md` VERBATIM** as the writing prompt, then audit via **`.claude/commands/seo-gsc-pass/phase-4-audit.md`**. Constraints:

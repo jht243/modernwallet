@@ -62,4 +62,19 @@ class Tests(unittest.TestCase):
     with contextlib.redirect_stdout(out):
      m.bind({'tool_name':'Agent','permission_mode':'auto','tool_input':{'subagent_type':'mindmap-audit','description':'Supplemental route audit'}})
     self.assertEqual(out.getvalue(),'')
+ def test_auto_mode_bound_local_agent_allows_pause_without_updated_input(self):
+  import subprocess
+  with tempfile.TemporaryDirectory() as directory:
+   root=Path(directory);subprocess.run(['git','init','-q'],cwd=root,check=True)
+   with patch.dict(os.environ,{'CLAUDE_PROJECT_DIR':str(root)}):
+    out=io.StringIO()
+    with contextlib.redirect_stdout(out):
+     m.bind({'tool_name':'Agent','permission_mode':'auto','tool_input':{'subagent_type':'layer3-mindmap-build','description':'Layer3 BUILD stage','run_in_background':False}})
+    self.assertEqual(out.getvalue(),'')
+    stop_payload={'hook_event_name':'Stop','background_tasks':[{'task_id':'t1','task_type':'local_agent','subagent_type':'layer3-mindmap-build','description':'Layer3 BUILD stage'}]}
+    self.assertTrue(m.running(stop_payload))
+    with patch.dict(os.environ,{'CLAUDE_CODE_REMOTE_SESSION_ID':'other-session'}):
+     self.assertFalse(m.running(stop_payload))
+    unrelated={'hook_event_name':'Stop','background_tasks':[{'task_id':'t2','task_type':'local_agent','description':'Unbound stage'}]}
+    self.assertFalse(m.running(unrelated))
 if __name__=='__main__':unittest.main()

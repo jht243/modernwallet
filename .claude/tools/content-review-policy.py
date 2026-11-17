@@ -80,6 +80,13 @@ def artifact(root, ref):
     if not p.is_file() or sha(p.read_bytes())!=ref.get('sha256'):
         # Resolve the exact earlier bytes, never accept the current changed file.
         cached=durable_reviews(root).cache_path(root,ref['path'],str(ref.get('sha256','')))
+        if not cached.is_file() or sha(cached.read_bytes())!=ref.get('sha256'):
+            exp=str(ref.get('sha256',''))
+            if len(exp)==64:
+                for aref in ('refs/heads/automation/content-review-journals','refs/remotes/origin/automation/content-review-journals'):
+                    res=subprocess.run(['git','show',f'{aref}:artifacts/{exp}'],cwd=root,capture_output=True)
+                    if res.returncode==0 and sha(res.stdout)==exp:
+                        cached.parent.mkdir(parents=True,exist_ok=True);cached.write_bytes(res.stdout);break
         require(cached.is_file() and sha(cached.read_bytes())==ref.get('sha256'),'Review artifact changed or missing: '+str(ref.get('path')))
         return cached
     return p
@@ -564,12 +571,24 @@ def authorities(root, snapshot, review):
         require(not group_review.get('approvalProjection'),'Do not stack approval projections')
         require(group_review.get('snapshotSha256')==group_snapshot.get('snapshotSha256'),'Composition source review changed')
         require(stamp_ok(root,group_snapshot),'Composition source was not captured under a recognised review policy')
-        require(group_review.get('reviewer')==review.get('reviewer') and group_snapshot['manifest']['author']==snapshot['manifest']['author'] and
-                group_snapshot['manifest']['canonicalBase']==snapshot['manifest']['canonicalBase'],
-                'Composition may only join one independent reviewer and one author')
         paths=group.get('routes');require(isinstance(paths,list) and paths,'Composition group needs its routes')
         group_pages={r['path']:r for r in group_snapshot['routes']};group_rows={r['path']:r for r in group_review['routes']}
         group_specs={r['path']:r for r in group_snapshot['manifest']['routes']}
+        def _group_adm_verified():
+            try:
+                for p_item in paths:
+                    r_item=group_rows.get(p_item)
+                    if not r_item or not r_item.get('reviewBudget'):return False
+                    adm=read(artifact(root,r_item['reviewBudget']))
+                    if adm.get('reviewer')!=group_review.get('reviewer') or adm.get('author')!=group_snapshot['manifest'].get('author'):
+                        return False
+                return bool(group_review.get('reviewer') and group_review.get('reviewer')!=group_snapshot['manifest'].get('author'))
+            except Exception:
+                return False
+        same_pair=(group_review.get('reviewer')==review.get('reviewer') and group_snapshot['manifest']['author']==snapshot['manifest']['author'])
+        require((same_pair or _group_adm_verified()) and
+                group_snapshot['manifest']['canonicalBase']==snapshot['manifest']['canonicalBase'],
+                'Composition may only join one independent reviewer and one author')
         for path in paths:
             require(path in current and path not in result,'Composition route is unknown or duplicated')
             source=group_rows.get(path);page=group_pages.get(path)

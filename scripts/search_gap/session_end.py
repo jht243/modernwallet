@@ -152,6 +152,8 @@ def decide_stop(root, payload, now=None):
     now = now or time.time()
     if (payload or {}).get('agent_id') or (payload or {}).get('subagent_type'):
         return True, ''
+    if (payload or {}).get('hook_event_name') == 'Stop' and (payload or {}).get('stop_hook_active') is True:
+        return True, ''
     if child_worker_running(root, payload or {}):
         return True, ''
     sid, saved = active_lease(root, payload=payload, now=now)

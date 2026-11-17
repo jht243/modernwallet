@@ -581,7 +581,7 @@ def check_ga4_cooldown(
         if _is_utility_route(p):
             skipped_utility.append(p)
             continue
-        if any_views_present and total_views >= 25:
+        if any_views_present:
             rv = _row_views(r)
             if rv is not None and rv < min_views:
                 skipped_low_views.append(p)
@@ -1110,9 +1110,9 @@ def _collect_sitemap_urls_and_internal_link_counts(root: Path) -> tuple[set[str]
                 sitemap_routes.add(r)
 
     link_counts: dict[str, int] = {}
-    href_re = re.compile(r"""(?:href|to|route|url)\s*[:=]\s*["'](/[A-Za-z0-9._/-]+)["']""")
+    href_re = re.compile(r"""(?:href|to|route|url|path)\s*[:=]\s*["'](/[A-Za-z0-9._/-]+)["']""")
     md_link_re = re.compile(r'\]\((/[A-Za-z0-9._/-]+)\)')
-    for folder in ('src', 'app', 'components', 'content', 'data', 'pages'):
+    for folder in ('src', 'app', 'components', 'content', 'data', 'pages', 'lib'):
         base = root / folder
         if not base.is_dir():
             continue
@@ -1120,13 +1120,20 @@ def _collect_sitemap_urls_and_internal_link_counts(root: Path) -> tuple[set[str]
             if not p.is_file() or p.suffix not in ('.ts', '.tsx', '.js', '.jsx', '.astro', '.md', '.mdx', '.json'):
                 continue
             txt = p.read_text(encoding='utf-8', errors='ignore')
-            seen_in_file: set[str] = set()
-            for rx in (href_re, md_link_re):
-                for m in rx.finditer(txt):
-                    rt = m.group(1).split('#', 1)[0].split('?', 1)[0].rstrip('/') or '/'
-                    seen_in_file.add(rt)
-            for rt in seen_in_file:
-                link_counts[rt] = link_counts.get(rt, 0) + 1
+            is_multi_entry_data = p.parts and any(seg in ('data', 'lib') for seg in p.parts) and len(txt) > 25000
+            if is_multi_entry_data:
+                for rx in (href_re, md_link_re):
+                    for m in rx.finditer(txt):
+                        rt = m.group(1).split('#', 1)[0].split('?', 1)[0].rstrip('/') or '/'
+                        link_counts[rt] = link_counts.get(rt, 0) + 1
+            else:
+                seen_in_file: set[str] = set()
+                for rx in (href_re, md_link_re):
+                    for m in rx.finditer(txt):
+                        rt = m.group(1).split('#', 1)[0].split('?', 1)[0].rstrip('/') or '/'
+                        seen_in_file.add(rt)
+                for rt in seen_in_file:
+                    link_counts[rt] = link_counts.get(rt, 0) + 1
     return sitemap_routes, link_counts
 
 
@@ -1294,10 +1301,10 @@ def main(argv: list[str] | None = None) -> int:
     p_pub_fail.add_argument('--site', default='https://www.layer3labs.io')
 
     p_ga4 = sub.add_parser('ga4-cooldown')
-    p_ga4.add_argument('--skill', required=True)
+    p_ga4.add_argument('--skill', default='ga4-top-pages-pass-auto')
     p_ga4.add_argument('--site', required=True)
     p_ga4.add_argument('--pages-json', required=True, type=Path)
-    p_ga4.add_argument('--ledger', required=True, type=Path)
+    p_ga4.add_argument('--ledger', type=Path, default=Path('reports/trend-pass/ga4-page-audits.md'))
     p_ga4.add_argument('--cooldown-days', type=int, default=7)
     p_ga4.add_argument('--min-views', type=int, default=5)
     p_ga4.add_argument('--send-email', '--post-collector', dest='send_email', action='store_true')
@@ -1305,7 +1312,7 @@ def main(argv: list[str] | None = None) -> int:
     p_pq = sub.add_parser('page-quality-check')
     p_pq.add_argument('--site', required=True)
     p_pq.add_argument('--pages-json', required=True, type=Path)
-    p_pq.add_argument('--ledger', required=True, type=Path)
+    p_pq.add_argument('--ledger', type=Path, default=Path('reports/page-quality-pass/page-quality-audits.md'))
     p_pq.add_argument('--ga4-ledger', type=Path, default=Path('reports/trend-pass/ga4-page-audits.md'))
     p_pq.add_argument('--cooldown-days', type=int, default=7)
     p_pq.add_argument('--session-floor', type=int, default=50)

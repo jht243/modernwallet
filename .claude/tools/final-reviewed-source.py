@@ -18,6 +18,15 @@ def exact_file(root, ref):
         return path
     cached = root/'reports/content-review-evidence'/(ref['sha256']+path.suffix)
     if not cached.is_file() or hashlib.sha256(cached.read_bytes()).hexdigest() != ref['sha256']:
+        for archive_ref in (
+            'refs/heads/automation/content-review-journals',
+            'refs/remotes/origin/automation/content-review-journals',
+        ):
+            blob = _git_blob_or_none(root, archive_ref + ':artifacts/' + str(ref.get('sha256', '')))
+            if blob is not None and hashlib.sha256(blob).hexdigest() == ref.get('sha256'):
+                cached.parent.mkdir(parents=True, exist_ok=True)
+                cached.write_bytes(blob)
+                return cached
         raise ValueError('Restore the signed review evidence '+ref['path']+' before publishing')
     return cached
 
@@ -293,6 +302,10 @@ def prepare(root, base, dry_run=False):
             delta=git(root,'diff','--no-renames','--name-only','-z','origin/main','HEAD').decode().split('\0')
             archive.confirm_changed_journals(root,delta)
             if archive.search_job(root):archive.require_search_archive(root,delta)
+            big_ts=[d for d in delta if d.startswith('reports/content-review-evidence/') and d.endswith('.ts') and (root/d).is_file() and (root/d).stat().st_size>2_000_000]
+            if big_ts:
+                git(root,'rm','-f','-q','--',*big_ts)
+                git(root,'commit','--only','-qm','Omit archived >2MB .ts source blobs from main (retained on automation/content-review-journals)','--',*big_ts)
     return [entry[0] for entry in changes]
 
 

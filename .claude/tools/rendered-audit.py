@@ -590,7 +590,7 @@ def _parse_stripping_related_cards(html, route, base, canonical):
         base, canonical,
         route.get('volatileThirdPartyAds'),
         route.get('normalizeClassTokenWhitespace') is True,
-        route.get('volatileRenderRegions'),
+        route.get('volatileRenderRegions') or list(VOLATILE_RENDER_REGIONS.keys()),
     )
     p.feed(html)
     require(not p.ad_stack and not p.region_stack and not p.related_stack and p.closed_body and p.closed_html, 'Incomplete related-cards parse')
@@ -604,7 +604,7 @@ def _parse_stripping_related_cards(html, route, base, canonical):
         'schema': p.schemas,
         'structure': p.structure,
     }, base, canonical)
-    return semantic, p.stripped_related
+    return semantic, p.stripped_related + p.excluded_regions
 
 
 def _matches_ignoring_related_cards(approved, live, path):
@@ -1017,13 +1017,16 @@ def init_manifest(approval_manifest_path, author, out_path, root=None, explicit_
     require(bool(deduped), 'No route paths starting with "/" found in approval-manifest.json; pass --route /actual-route')
 
     cats = list(claim_categories) if claim_categories else ['ordinary']
+    eff_volatile_regions = list(volatile_regions) if volatile_regions else (
+        ['latest-briefings'] if 'banthebots.org' in resolved_base.lower() else []
+    )
     route_objs = []
     for rp in deduped:
         entry = {'path': rp, 'claimCategories': cats}
         if volatile_ads:
             entry['volatileThirdPartyAds'] = volatile_ads
-        if volatile_regions:
-            entry['volatileRenderRegions'] = list(dict.fromkeys(volatile_regions))
+        if eff_volatile_regions:
+            entry['volatileRenderRegions'] = list(dict.fromkeys(eff_volatile_regions))
         route_objs.append(entry)
 
     manifest = {

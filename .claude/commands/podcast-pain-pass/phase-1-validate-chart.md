@@ -13,7 +13,7 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 # Phase 1 — MINDMAP PASS (build-brief duplicate; podcast brief as input) + AUTO-APPROVE
 
 <!-- podcast-no-circuit-breaker-hold-v1 -->
-**No candidate-count circuit-breaker hold (2026-11-13 fleet rule):** Never hold, abort, or skip shipping because `validated_terms.json` or surviving chart rows exceed 10, 15, 20, or 30, and never write `HOLD-chart.md` for candidate volume. When more candidates survive than a single run's `BUILD_CAP` (10–15 pages), auto-approve and ship the top `BUILD_CAP` highest-volume uncovered pages in this run and queue the remaining rows in `reports/podcast-pain-pass/ledger.json` (`deferred_rows` / `validated_terms_overflow.json`) for the next run. This rule supersedes any older 10/20/30-term circuit-breaker wording in prompts or phase files.
+**No candidate-count circuit-breaker hold + 4-page per-run `BUILD_CAP` (2026-11-17 fleet rule):** Never hold, abort, or skip shipping because `validated_terms.json` or surviving chart rows exceed 4, 10, 15, 20, or 30, and never write `HOLD-chart.md` for candidate volume. When more new-page candidates survive than a single run's `BUILD_CAP = 4` new pages, auto-approve and ship the top `4` highest-volume uncovered pages in this run (1–2 Mindmap sub-batches) and queue every remaining surviving row (`#5+`) in `reports/podcast-pain-pass/ledger.json` (`deferred_rows` / `validated_terms_overflow.json`) so zero candidates are lost and the next run drains them first. This rule supersedes any older 10/15/20/30-term cap or circuit-breaker wording in prompts or phase files.
 <!-- /podcast-no-circuit-breaker-hold-v1 -->
 
 
@@ -76,4 +76,4 @@ Before finalizing this run's approved set, load `reports/podcast-pain-pass/ledge
 
 ## Deterministic AUTO-APPROVE (replaces the human manifest gate)
 - **0 surviving rows →** send `no-changes` email, STOP.
-- **1 or more surviving rows →** auto-approve ALL surviving rows (NEVER trigger a circuit-breaker hold or write `HOLD-chart.md` when >10, >20, or >30 terms/rows survive; this supersedes any older cap wording). Phase 2 builds up to `BUILD_CAP` (10–15) highest-volume rows in this run and queues the rest in `reports/podcast-pain-pass/ledger.json` → `deferred_rows` for the next run. Proceed to Phase 2 with `$RUN/chart.md`.
+- **1 or more surviving rows →** auto-approve ALL surviving rows (NEVER trigger a circuit-breaker hold or write `HOLD-chart.md` when >10, >20, or >30 terms/rows survive; this supersedes any older cap wording). Phase 2 builds up to `BUILD_CAP = 4` highest-volume new-page rows in this run and queues `#5+` in `reports/podcast-pain-pass/ledger.json` → `deferred_rows` for the next run. Proceed to Phase 2 with `$RUN/chart.md`.

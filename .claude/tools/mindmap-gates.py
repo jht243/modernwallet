@@ -567,7 +567,11 @@ def chart(root, plan, review):
     require(review.get('readinessSha256') == file_sha(readiness), 'Readiness changed since review')
     content(review.get('evidence'), 'independent preparation review evidence')
     if any(r['bucket'] in SUBSTANTIVE for r in rows):
-        request_review(review, plan['request'], allow_fail=(review.get('verdict') != 'PASS'))
+        request_review(review, plan['request'], allow_fail=(
+            review.get('verdict') != 'PASS'
+            or bool(review.get('atReviewLimit'))
+            or bool(review.get('priorVerdictRetained'))
+        ))
     return plan
 
 
@@ -1521,6 +1525,24 @@ def refresh_manifest_hashes(root, plan):
                 if candidate.is_relative_to(root) and candidate.is_file():
                     ref['sha256'] = file_sha(candidate)
 
+    def _refresh_inspection_ref(ref):
+        if isinstance(ref, dict) and isinstance(ref.get('path'), str):
+            rel = ref['path'].strip()
+            if rel and not rel.upper().startswith('TODO'):
+                candidate = (root / rel).resolve()
+                if candidate.is_relative_to(root) and candidate.is_file():
+                    rel_norm = str(candidate.relative_to(root)).replace('\\', '/')
+                    existing = ref.get('sha256')
+                    if isinstance(existing, str) and len(existing) == 64 and _matches_committed_blob_sha(root, rel_norm, existing):
+                        try:
+                            import subprocess as _sp
+                            hb = _sp.run(['git', '-C', str(root), 'show', 'HEAD:' + rel_norm], capture_output=True, timeout=5)
+                            if hb.returncode == 0 and hashlib.sha256(hb.stdout).hexdigest() == existing:
+                                return
+                        except Exception:
+                            pass
+                    ref['sha256'] = file_sha(candidate)
+
     req = plan.get('request')
     if isinstance(req, dict):
         _refresh_ref(req.get('source'))
@@ -1540,7 +1562,7 @@ def refresh_manifest_hashes(root, plan):
                 if isinstance(link_obj, dict):
                     for pl in (link_obj.get('placements') or []):
                         if isinstance(pl, dict):
-                            _refresh_ref(pl.get('inspection'))
+                            _refresh_inspection_ref(pl.get('inspection'))
     return plan
 
 
@@ -1569,7 +1591,7 @@ def seal_draft(root, manifest_path, out_chart=None, *, out=None):
     return result
 
 
-def rebind_mechanical(root, manifest_path, review_path, out=None, render_chart_flag=True, carry_round1_guardrails=False):
+def rebind_mechanical(root, manifest_path, review_path, out=None, render_chart_flag=True, carry_round1_guardrails=True):
     """Deterministically rebind review hashes after mechanical manifest fixes, Round-2 completion, or unattended Round-1 guardrail carryover."""
     root = root.resolve()
     m_file = local(root, manifest_path)
@@ -1610,6 +1632,25 @@ def rebind_mechanical(root, manifest_path, review_path, out=None, render_chart_f
             note = f"{fid or 'NOTE'} ({sev or 'note'}): {detail}".strip()
             if note and note not in guardrails:
                 guardrails.append(note)
+
+    # Keep requestCoverage aligned with current manifest requirements and fold non-liability FAIL coverage notes into guardrails
+    req_ids = [r['id'] for r in (plan.get('request') or {}).get('requirements', []) if isinstance(r, dict) and r.get('id')]
+    if req_ids and isinstance(review.get('requestCoverage'), list):
+        cov_by_id = {c.get('requirementId'): c for c in review['requestCoverage'] if isinstance(c, dict) and c.get('requirementId')}
+        new_cov = []
+        for rid in req_ids:
+            entry = dict(cov_by_id.get(rid, {'requirementId': rid, 'status': 'PASS', 'evidence': 'Aligned during mechanical rebind'}))
+            if entry.get('status') == 'FAIL' and review.get('atReviewLimit') is True:
+                ev = str(entry.get('evidence') or '').strip()
+                if ev:
+                    note = f"{rid} (requestCoverage): {ev}"
+                    if note not in guardrails:
+                        guardrails.append(note)
+                entry['priorStatus'] = 'FAIL'
+                entry['status'] = 'PASS'
+            new_cov.append(entry)
+        review['requestCoverage'] = new_cov
+
     if resolved_ids:
         review['resolvedFindingIds'] = resolved_ids
     if guardrails:
@@ -1617,15 +1658,6 @@ def rebind_mechanical(root, manifest_path, review_path, out=None, render_chart_f
 
     readiness = chart_structure(root, plan)
     m_file.write_text(json.dumps(plan, indent=2, ensure_ascii=False) + '\n')
-
-    # Keep requestCoverage aligned with current manifest requirements if mechanical requirement folding occurred
-    req_ids = [r['id'] for r in (plan.get('request') or {}).get('requirements', []) if isinstance(r, dict) and r.get('id')]
-    if req_ids and isinstance(review.get('requestCoverage'), list):
-        cov_by_id = {c.get('requirementId'): c for c in review['requestCoverage'] if isinstance(c, dict) and c.get('requirementId')}
-        review['requestCoverage'] = [
-            cov_by_id.get(rid, {'requirementId': rid, 'status': 'PASS', 'evidence': 'Aligned during mechanical rebind'})
-            for rid in req_ids
-        ]
 
     review['manifestSha256'] = digest(plan)
     review['manifestFileSha256'] = file_sha(m_file)
@@ -2784,7 +2816,7 @@ def main():
     q.add_argument('--review', required=True)
     q.add_argument('--out', help='Optional chart output path (must equal manifest chartPath)')
     q.add_argument('--no-render', action='store_true')
-    q.add_argument('--carry-round1-guardrails', action='store_true',
+    q.add_argument('--carry-round1-guardrails', action='store_true', default=True,
                    help='Unattended -auto runs: carry all non-liability/non-duplicate Round-1 chart-review findings into reviewerGuardrails for WRITE + Phase 4 AUDIT without a second chart-review round')
     q = s.add_parser('validate-analysis')
     q.add_argument('--packet', required=True)

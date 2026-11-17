@@ -1,22 +1,86 @@
 #!/usr/bin/env python3
 """Let a native parent pause for its own finite worker; never approve output."""
-import hashlib,json,os,sys,importlib.util
+import hashlib,json,os,subprocess,sys,time,importlib.util
 from pathlib import Path
 
+REGISTRY_TTL = 21600
+
+def _session_id(payload=None):
+ return os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID') or (payload or {}).get('session_id')
+
 def worker_tag(payload=None):
- sid=os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID') or (payload or {}).get('session_id')
+ sid=_session_id(payload)
  return '[workflow-parent:'+hashlib.sha256(sid.encode()).hexdigest()[:12]+']' if sid else None
+
+def _registry_file(root,sid):
+ if not sid:return None
+ try:
+  res=subprocess.run(['git','rev-parse','--git-path','native-worker-wait/'+hashlib.sha256(sid.encode()).hexdigest()+'.json'],cwd=root,capture_output=True,text=True)
+  if res.returncode!=0 or not res.stdout.strip():return None
+  p=Path(res.stdout.strip())
+  return p if p.is_absolute() else (root/p)
+ except Exception:
+  return None
+
+def _record_bound_worker(root,sid,description,subagent_type=''):
+ p=_registry_file(root,sid)
+ if p is None or not isinstance(description,str) or not description.strip():return
+ now=time.time()
+ try:
+  existing=json.loads(p.read_text()) if p.is_file() else []
+  if not isinstance(existing,list):existing=[]
+ except Exception:
+  existing=[]
+ entries=[e for e in existing if isinstance(e,dict) and now-float(e.get('boundAt',0))<=REGISTRY_TTL]
+ clean_desc=description.strip()
+ entries=[e for e in entries if e.get('description')!=clean_desc]
+ entries.append({'description':clean_desc,'subagentType':str(subagent_type or ''),'boundAt':now})
+ try:
+  p.parent.mkdir(parents=True,exist_ok=True)
+  p.write_text(json.dumps(entries[-50:]))
+ except Exception:
+  pass
+
+def _load_bound_descriptions(root,sid):
+ p=_registry_file(root,sid)
+ if p is None or not p.is_file():return set()
+ now=time.time()
+ try:
+  entries=json.loads(p.read_text())
+  if not isinstance(entries,list):return set()
+  return {str(e['description']) for e in entries if isinstance(e,dict) and isinstance(e.get('description'),str) and now-float(e.get('boundAt',0))<=REGISTRY_TTL}
+ except Exception:
+  return set()
+
+def _project_root(payload=None):
+ env_dir=os.environ.get('CLAUDE_PROJECT_DIR') or (payload or {}).get('cwd')
+ if env_dir:return Path(env_dir).resolve()
+ repo_candidate=Path(__file__).resolve().parents[2]
+ if (repo_candidate/'.git').exists():return repo_candidate
+ return Path(os.getcwd()).resolve()
 
 def running(payload):
  if payload.get('hook_event_name')!='Stop':return False
- tag=worker_tag(payload);tasks=payload.get('background_tasks')
- if not tag or not isinstance(tasks,list):return False
- return any(isinstance(t,dict) and t.get('type')=='subagent' and t.get('status')=='running'
-            and isinstance(t.get('description'),str) and tag in t['description'] for t in tasks)
+ sid=_session_id(payload);tag=worker_tag(payload);tasks=payload.get('background_tasks')
+ if not sid or not tag or not isinstance(tasks,list):return False
+ root=_project_root(payload)
+ bound=_load_bound_descriptions(root,sid)
+ for t in tasks:
+  if not isinstance(t,dict):continue
+  ttype=t.get('type') or t.get('task_type')
+  if ttype not in ('subagent','local_agent'):continue
+  status=t.get('status')
+  if status is not None and status not in ('running','in_progress'):continue
+  desc=t.get('description')
+  if not isinstance(desc,str) or not desc.strip():continue
+  if tag in desc:return True
+  clean=desc.strip()
+  if bound and any(clean==b or clean.startswith(b+' ') for b in bound):return True
+ return False
 
 def bind(payload):
  if payload.get('tool_name') not in ('Agent','Task'):return
- root=Path(os.environ.get('CLAUDE_PROJECT_DIR') or os.getcwd()).resolve()
+ root=_project_root(payload)
  # A recovered final search decision needs only mechanical completion.
  sid=os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID') or os.environ.get('CLAUDE_CODE_SESSION_ID') or payload.get('session_id')
  if sid:
@@ -59,10 +123,12 @@ def bind(payload):
    print(str(error),file=sys.stderr);raise SystemExit(2)
  value=payload.get('tool_input',{});tag=worker_tag(payload)
  if not tag or not isinstance(value,dict):return
+ description=value.get('description')
+ if isinstance(description,str) and description.strip():
+  _record_bound_worker(root,sid,description,value.get('subagent_type',''))
  pmode=str(payload.get('permission_mode') or '').lower()
  if pmode.startswith('auto') or pmode=='bypasspermissions':return
  if not inline and value.get('run_in_background') is False and 'permission_mode' in payload:return
- description=value.get('description')
  if not isinstance(description,str) or not description.strip():return
  # Competitor jobs join once in the foreground. Keep permission, model and worker identity.
  updated=dict(value,description=description if tag in description else description+' '+tag)
