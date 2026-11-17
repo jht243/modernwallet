@@ -77,10 +77,21 @@
           "at": "2026-11-17T17:00:24+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-17T17:04:43+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-17T16:56:22+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-17T17:04:43+00:00",
       "claimedOn": "2026-11-17",
       "attempts": 1,
       "lastNextAt": "2026-11-17T16:39:02+00:00",
@@ -155,7 +166,11 @@
           }
         ],
         "recordedAt": "2026-11-17T17:00:24+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/ynab/",
+      "commit": "85c5225",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-17"
     },
     {
       "vendor": "Acorns",
@@ -261,10 +276,21 @@
           "at": "2026-11-17T17:00:24+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-17T17:04:44+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-17T16:46:47+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-17T17:04:44+00:00",
       "claimedOn": "2026-11-17",
       "attempts": 1,
       "lastNextAt": "2026-11-17T16:39:02+00:00",
@@ -353,7 +379,11 @@
           }
         ],
         "recordedAt": "2026-11-17T17:00:24+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/wealthfront/",
+      "commit": "85c5225",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-17"
     },
     {
       "vendor": "Robinhood",
@@ -1123,10 +1153,21 @@
           "at": "2026-11-17T17:00:24+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-17T17:04:43+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-17T16:47:45+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-17T17:04:43+00:00",
       "claimedOn": "2026-11-17",
       "attempts": 1,
       "lastNextAt": "2026-11-17T16:39:02+00:00",
@@ -1208,7 +1249,11 @@
           }
         ],
         "recordedAt": "2026-11-17T17:00:24+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/monarch-money/",
+      "commit": "85c5225",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-17"
     },
     {
       "vendor": "QuickBooks",
