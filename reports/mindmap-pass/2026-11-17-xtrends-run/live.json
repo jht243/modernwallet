@@ -1,0 +1,26 @@
+{
+  "status": "all-live",
+  "attempts": 1,
+  "verifiedCount": 2,
+  "pendingCount": 0,
+  "results": [
+    {
+      "url": "https://www.themodernwallet.com/guides/chase-outage-fee-reversal",
+      "finalUrl": "https://www.themodernwallet.com/guides/chase-outage-fee-reversal",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/chase-outage-fee-reversal/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/guides/minnesota-truth-in-taxation-notice",
+      "finalUrl": "https://www.themodernwallet.com/guides/minnesota-truth-in-taxation-notice",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/minnesota-truth-in-taxation-notice/"
+    }
+  ]
+}
