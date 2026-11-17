@@ -97,6 +97,21 @@ def load_sa_info() -> dict:
                        "(GOOGLE_REPORTING_SA_JSON / GOOGLE_REPORTING_SA_FILE unset)")
 
 
+def _ensure_google_deps():
+    """Install google-auth + requests silently if missing (cloud runner)."""
+    try:
+        import requests  # noqa: F401
+        from google.auth.transport.requests import Request  # noqa: F401
+        from google.oauth2 import service_account  # noqa: F401
+        return
+    except BaseException:  # incl. pyo3 PanicException from a broken system cryptography
+        pass
+    import subprocess
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "--ignore-installed",
+                    "--break-system-packages", "google-auth", "requests", "cryptography", "cffi"],
+                   check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+
 def session_for(sa_info: dict, scope: str):
     _ensure_google_deps()
     try:
