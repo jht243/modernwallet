@@ -37,5 +37,15 @@ class Tests(unittest.TestCase):
     def test_wrong_host_identity_or_future_stamp_cannot_become_live(self):
         for update in [{'repository':'wrong/site'},{'branch':'review'},{'provider':'unknown'},{'commit':'short'},{'builtAt':(dt.datetime.now(dt.timezone.utc)+dt.timedelta(hours=2)).isoformat()}]:
             with self.subTest(update=update),self.assertRaises(ValueError):p.verify(self.root,{**self.value,**update},'https://fixture.invalid'+p.ENDPOINT,'2'*40)
+    def test_reports_only_descendant_commit_binds_to_expected_publication_commit(self):
+        def git(root,*args):
+            if args[0]=='ls-remote':return '3'*40+'\trefs/heads/main'
+            if args==('merge-base','--is-ancestor','2'*40,'1'*40):raise ValueError('not ancestor')
+            if args[:2]==('diff','--name-only'):return 'reports/competitor-monitor/ledger.json\nreports/mindmap-pass/run/write-report.md\n'
+            return ''
+        with patch.object(p,'git',side_effect=git):
+            proof=p.verify(self.root,self.value,'https://fixture.invalid'+p.ENDPOINT,'2'*40)
+        self.assertEqual(proof['commit'],'2'*40)
+        self.assertEqual(proof['hostRuntimeCommit'],'1'*40)
 
 if __name__=='__main__':unittest.main()
