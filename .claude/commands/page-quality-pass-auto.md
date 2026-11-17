@@ -86,7 +86,7 @@ This skill is repo-agnostic. The **routine message supplies this site's GA4 prop
 - **Branch cleanliness on early exit (MANDATORY):** If you committed any `reports/**` receipt/ledger on an early exit, you MUST run `.claude/scripts/deploy-run-to-main.sh push` before calling `send-routine-email.py` so `claude/*` is never left ahead of `main`. If you made zero commits, delete the untracked `reports/page-quality-pass/<YYYY-MM-DD>.pull.json` file before exiting so session-exit hooks do not commit a branch-only pull file.
 
 ## Caps
-**Per-run throughput bound: top `4` worst-engaging eligible pages per nightly run** (sorted by traffic × weak-signal count). Because this engine runs nightly, any `#5+` eligible page remains un-ledgered and is automatically diagnosed and fixed on the very next nightly run without overloading a single session.
+**None.** Every page that clears Phase 1 gets diagnosed; every prescription that clears Phase 4's audit ships. What bounds this pass is evidence (the flagging bar), cooldowns, and the audit — not numeric ceilings.
 
 ## Data-safety rules (NOT caps — these keep an unattended run from damaging live pages)
 - **Section-level rewrites only — NEVER regenerate a whole page.** A rewrite replaces the prose *inside* one diagnosed-weak section at a time. Page slug, route, section count, and heading order are preserved; new sections may be APPENDED for missing high-value sub-intents. Never delete a section.
