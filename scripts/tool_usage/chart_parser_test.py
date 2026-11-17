@@ -47,5 +47,15 @@ class ChartParserTests(unittest.TestCase):
         chart=ACTION.replace('| problem','| # | problem').replace('|---|','|---|---|',1).replace('| lookup:','| 1 | lookup:')
         _,rows=gate.chart_rows(chart+'\n'+CHECKS)
         self.assertEqual(rows[0]['#'],'1');self.assertEqual(rows[0]['bucket'],'create new content')
+    def test_mindmap_gates_rendered_human_headers_normalize_to_chart_cols(self):
+        rendered='''| Problem | Solution | Bucket | Target (file or route) | Format | Best medium | Resolved deliverable | SERP verdict | SERP evidence | Reader question | Answer | Answer placement | ID |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| lookup: no match | Create /example | create new content | /example | tool | interactive | tool | tool | serp | how | yes | hero | A1 |
+'''
+        cells,rows=gate.chart_rows(rendered)
+        for col in gate.CHART_COLS:
+            self.assertIn(col,cells)
+        self.assertEqual(rows[0]['target'],'/example')
+        self.assertEqual(rows[0]['id'],'A1')
 
 if __name__=='__main__':unittest.main()
