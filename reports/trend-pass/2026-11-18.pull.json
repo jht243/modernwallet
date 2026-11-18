@@ -1,0 +1,285 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window": {
+    "start": "2026-11-11",
+    "end": "2026-11-18",
+    "days": 7
+  },
+  "top_queries": [
+    {
+      "query": "site:themodernwallet.com",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "roth or regular 401k",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 92
+    },
+    {
+      "query": "solo 401k loan calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 37.5
+    },
+    {
+      "query": "401k contribution roth vs traditional",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 91
+    },
+    {
+      "query": "401k roth traditional",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 93
+    },
+    {
+      "query": "best financial way to buy a car",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "best way to buy a car financially",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "cheap wills",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 96
+    },
+    {
+      "query": "hard money calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "investment portfolio calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    }
+  ],
+  "coverage_queries": [
+    {
+      "query": "site:themodernwallet.com",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "roth or regular 401k",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 92
+    },
+    {
+      "query": "solo 401k loan calculator",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 37.5
+    },
+    {
+      "query": "401k contribution roth vs traditional",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 91
+    },
+    {
+      "query": "401k roth traditional",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 93
+    },
+    {
+      "query": "best financial way to buy a car",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "best way to buy a car financially",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "cheap wills",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 96
+    },
+    {
+      "query": "hard money calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "investment portfolio calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "roth and traditional 401k",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "roth vs regular 401k",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "roth vs standard 401k",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 86
+    },
+    {
+      "query": "tax deferred calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 82
+    },
+    {
+      "query": "tax deferred growth calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92
+    },
+    {
+      "query": "tax deferred vs taxable",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "query": "utma",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 94
+    }
+  ],
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/guides/529-leftover-money-options/",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 1
+    },
+    {
+      "page": "https://www.themodernwallet.com/",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 6.29
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 4.86
+    },
+    {
+      "page": "https://www.themodernwallet.com/about/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 2.45
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/roth-401k-vs-traditional-401k/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 81.8
+    },
+    {
+      "page": "https://www.themodernwallet.com/calculators/",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 17.78
+    },
+    {
+      "page": "https://www.themodernwallet.com/portfolio/",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 11.22
+    },
+    {
+      "page": "https://www.themodernwallet.com/retirement/",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 4.11
+    },
+    {
+      "page": "https://www.themodernwallet.com/budget/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 7.5
+    },
+    {
+      "page": "https://www.themodernwallet.com/methodology/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 3.88
+    }
+  ],
+  "top10_pages_total_clicks": 1,
+  "top10_queries_total_clicks": 0,
+  "baseline_window": {
+    "start": "2026-11-03",
+    "end": "2026-11-10",
+    "days": 7,
+    "comparison": "prior_window_equal_span"
+  },
+  "total_queries_in_window": 17,
+  "rising_queries": [],
+  "spillover_queries": [],
+  "modifier_patterns": []
+}
