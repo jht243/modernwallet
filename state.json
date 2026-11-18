@@ -71,6 +71,16 @@
       "route": "/paycheck-calculator/",
       "updatedAt": "2026-11-15T08:28:49Z"
     },
+    "1dd076dd34061ec7dbc6735a07a2048169d6c4e265da1194fbe10459d75f97fe": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "autocomplete-pass-2026-11-18",
+      "previousJobs": [],
+      "repairs": [],
+      "route": "/guides/how-to-buy-i-bonds/",
+      "updatedAt": "2026-11-18T09:51:20Z"
+    },
     "1eef756765dabd9b8a52d7d985ee506fbbf6184de1d2b6c527214f42baaf486b": {
       "generated": [
         "full"
