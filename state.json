@@ -133,6 +133,16 @@
       "repairs": [],
       "route": "/real-estate/bridge-loan-calculator/"
     },
+    "4009e58e83ea049be8861c6e51496156b8f4c210d97b47d7ad89ad536f686d2f": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "autocomplete-pass-2026-11-18",
+      "previousJobs": [],
+      "repairs": [],
+      "route": "/sinking-fund-calculator/",
+      "updatedAt": "2026-11-18T09:55:11Z"
+    },
     "4b6dffca4059a7cf208a7a4fb874179b7c41f406a538557d68e702a55bdcaa0b": {
       "generated": [
         "full"
