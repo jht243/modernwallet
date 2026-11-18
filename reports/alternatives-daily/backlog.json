@@ -2037,10 +2037,22 @@
           "status": "in_progress",
           "note": "audited; fixes applied",
           "fields": []
+        },
+        {
+          "at": "2026-11-18T16:59:06+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-18T16:57:07+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-18T16:59:06+00:00",
       "claimedOn": "2026-11-18",
       "attempts": 1,
       "lastNextAt": "2026-11-18T16:39:07+00:00",
@@ -2080,7 +2092,12 @@
           }
         ],
         "recordedAt": "2026-11-18T16:55:01+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/empower/",
+      "commit": "0e32a3a",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-18",
+      "bodyWords": 2576
     },
     {
       "vendor": "LegalZoom",
@@ -2275,10 +2292,22 @@
           "status": "in_progress",
           "note": "audited; fixes applied",
           "fields": []
+        },
+        {
+          "at": "2026-11-18T16:59:06+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-18T16:57:07+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-18T16:59:06+00:00",
       "claimedOn": "2026-11-18",
       "attempts": 1,
       "lastNextAt": "2026-11-18T16:39:07+00:00",
@@ -2332,7 +2361,12 @@
           }
         ],
         "recordedAt": "2026-11-18T16:55:02+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/bluevine/",
+      "commit": "0e32a3a",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-18",
+      "bodyWords": 3098
     },
     {
       "vendor": "Novo",
@@ -2414,10 +2448,22 @@
           "status": "in_progress",
           "note": "audited; fixes applied",
           "fields": []
+        },
+        {
+          "at": "2026-11-18T16:59:06+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-18T16:57:07+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-18T16:59:06+00:00",
       "claimedOn": "2026-11-18",
       "attempts": 1,
       "lastNextAt": "2026-11-18T16:39:07+00:00",
@@ -2471,7 +2517,12 @@
           }
         ],
         "recordedAt": "2026-11-18T16:55:02+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/mercury/",
+      "commit": "0e32a3a",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-18",
+      "bodyWords": 2757
     }
   ]
 }
