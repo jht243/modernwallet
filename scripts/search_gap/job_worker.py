@@ -965,7 +965,8 @@ def recorded_canonical_jobs(history, packet=None):
             except Exception:
                 continue
             if isinstance(doc, dict):
-                jid = doc.get('jobId') or (doc.get('manifest') or {}).get('jobId')
+                nested = doc.get('manifest')
+                jid = doc.get('jobId') or (nested.get('jobId') if isinstance(nested, dict) else None)
                 if isinstance(jid, str) and len(jid.strip()) >= 4:
                     jobs.add(jid.strip())
     if isinstance(packet, dict):
@@ -1102,7 +1103,19 @@ def reviewed_text(base, route, canonical_jobs, created_at):
     return ' '.join(raw.decode('utf-8', 'replace').split())
 
 
-WRITE_ACTION_BUCKETS = {None, '', 'create new content', 'expand / enrich existing', 'refresh / update', 'create', 'enrich', 'update'}
+WRITE_ACTION_BUCKETS = {
+    None,
+    '',
+    'create new content',
+    'update existing body text',
+    'update existing metadata',
+    'add internal links',
+    'expand / enrich existing',
+    'refresh / update',
+    'create',
+    'enrich',
+    'update',
+}
 DISCOVER_SKIP_SUBDIRS = ('reports/search-gap/auto-close/', 'reports/search-gap/owner-requests/',
                          'reports/search-gap/park-requests/', 'reports/search-gap/intakes/')
 

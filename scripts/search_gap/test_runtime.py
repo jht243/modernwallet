@@ -653,4 +653,63 @@ class SessionEndHookAndArchiveTests(unittest.TestCase):
         self.assertIsNotNone(mod)
         self.assertTrue(mod.is_quarantined(root, 'search-gap-content-auto', item_id='q1'))
 
+    def test_recorded_canonical_jobs_tolerates_string_manifest_field(self):
+        root = Path(self.tmp.name)
+        art_dir = root / 'reports/mindmap-pass/run-1'
+        art_dir.mkdir(parents=True, exist_ok=True)
+        str_art = art_dir / 'str-manifest.json'
+        str_art.write_text(json.dumps({'manifest': 'reports/mindmap-pass/run-1/approval-manifest.json'}))
+        dict_art = art_dir / 'dict-manifest.json'
+        dict_art.write_text(json.dumps({'manifest': {'jobId': 'sg-20261117-dict'}}))
+        history = [{'stage': 'build-complete', 'artifacts': [
+            {'path': str_art.relative_to(root).as_posix(), 'sha256': worker.digest(str_art)},
+            {'path': dict_art.relative_to(root).as_posix(), 'sha256': worker.digest(dict_art)},
+        ]}]
+        self.assertEqual(worker.recorded_canonical_jobs(history), {'sg-20261117-dict'})
+
+    def test_discover_passing_written_accepts_update_existing_body_text_bucket(self):
+        root = Path(self.tmp.name)
+        (root / 'reports/content-review-journals').mkdir(parents=True, exist_ok=True)
+        (root / '.claude/tools').mkdir(parents=True, exist_ok=True)
+        (root / '.claude/tools/content-review-policy.py').write_text('# stub\n')
+        mm_dir = root / 'reports/mindmap-pass/2026-11-17-search-gap-run'
+        mm_dir.mkdir(parents=True, exist_ok=True)
+        (mm_dir / 'approval-manifest.json').write_text(json.dumps({
+            'jobId': 'sg-20261117-gaps',
+            'actions': [{
+                'id': 'A1',
+                'bucket': 'update existing body text',
+                'target': '/symptoms/burnout',
+                'candidateIds': ['cand_1'],
+            }],
+        }))
+        txt_file = mm_dir / 'burnout.txt'
+        txt_bytes = b'WHO ICD-11 defines burnout as an occupational phenomenon from chronic workplace stress.'
+        txt_file.write_bytes(txt_bytes)
+        snap_file = mm_dir / 'snapshot.json'
+        snap_file.write_text(json.dumps({'routes': [{
+            'path': '/symptoms/burnout',
+            'textFile': txt_file.relative_to(root).as_posix(),
+            'textSha256': hashlib.sha256(txt_bytes).hexdigest(),
+        }]}))
+        adm_file = mm_dir / 'admission.json'
+        adm_file.write_text(json.dumps({'snapshot': {
+            'path': snap_file.relative_to(root).as_posix(),
+            'sha256': worker.digest(snap_file),
+        }}))
+        now_utc = worker.native.dt.datetime.now(worker.native.dt.timezone.utc)
+        cycle = {
+            'jobId': 'sg-20261117-gaps',
+            'status': 'complete',
+            'rounds': [{'status': 'complete', 'verdict': 'PASS', 'admission': {'path': adm_file.relative_to(root).as_posix()}}],
+        }
+        events = [{'kind': 'begin', 'recordedAt': (now_utc + worker.native.dt.timedelta(seconds=5)).isoformat()}]
+        packet = {'site': 'one.test', 'runId': 'run-123', 'candidates': [{'id': 'cand_1', 'eventIds': ['e1']}]}
+        with patch.object(worker, 'native_tool', return_value=SimpleNamespace()), \
+             patch.object(worker, '_open_route_journal', return_value=(cycle, events)):
+            found = worker.discover_passing_written(packet, 'https://one.test', 'Home boilerplate only', {'sg-20261117-gaps'}, now_utc)
+        self.assertIn('cand_1', found)
+        self.assertEqual(found['cand_1'][0]['path'], '/symptoms/burnout')
+        self.assertTrue(found['cand_1'][0]['requiredText'])
+
 if __name__=='__main__':unittest.main()
