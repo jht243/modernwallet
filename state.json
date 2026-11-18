@@ -225,6 +225,16 @@
       ],
       "route": "/guides/what-is-a-robo-advisor"
     },
+    "870b6ae0fca2711e5e3d5d86c675064b4a9b241412a18aab310684f854c9affd": {
+      "generated": [
+        "full"
+      ],
+      "jobId": "autocomplete-pass-2026-11-18",
+      "previousJobs": [],
+      "repairs": [],
+      "route": "/debt-avalanche-calculator/",
+      "updatedAt": "2026-11-18T09:57:27Z"
+    },
     "8ff1dab225a0bc5b82783d436287b95d92366124963719b6d3789e7bb0a14e4f": {
       "generated": [
         "full"
