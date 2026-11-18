@@ -354,3 +354,6 @@
 | /social-security-cola-calculator/ | 2026-11-17 | 22 | 0/0/0/0/0 | 1 |
 | /investing/high-yield-savings-calculator/ | 2026-11-17 | 15 | 0/0/0/0/0 | 0 |
 | / | 2026-11-17 | 12 | 0/0/0/0/0 | 0 |
+| /guides/gift-tax-limit-2026/ | 2026-11-18 | 9 | 0/0/0/0/0 | 0 |
+| /guides/social-security-survivor-benefits-and-working/ | 2026-11-18 | 11 | 0/0/0/0/0 | 3 |
+| /guides/irs-mileage-rate-history/ | 2026-11-18 | 9 | 0/0/0/0/0 | 0 |

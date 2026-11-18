@@ -1,0 +1,125 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-11-17",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 67,
+      "sessions": 77,
+      "active_users": 67,
+      "clicks": 67
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 28,
+      "sessions": 29,
+      "active_users": 26,
+      "clicks": 28
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 17,
+      "sessions": 14,
+      "active_users": 13,
+      "clicks": 17
+    },
+    {
+      "page": "/guides/tax-deductions-checklist/",
+      "views": 15,
+      "sessions": 13,
+      "active_users": 13,
+      "clicks": 15
+    },
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 12,
+      "sessions": 11,
+      "active_users": 11,
+      "clicks": 12
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 11,
+      "sessions": 13,
+      "active_users": 12,
+      "clicks": 11
+    },
+    {
+      "page": "/guides/social-security-survivor-benefits-and-working/",
+      "views": 11,
+      "sessions": 9,
+      "active_users": 8,
+      "clicks": 11
+    },
+    {
+      "page": "/",
+      "views": 9,
+      "sessions": 9,
+      "active_users": 9,
+      "clicks": 9
+    },
+    {
+      "page": "/guides/gift-tax-limit-2026/",
+      "views": 9,
+      "sessions": 10,
+      "active_users": 9,
+      "clicks": 9
+    },
+    {
+      "page": "/guides/irs-mileage-rate-history/",
+      "views": 9,
+      "sessions": 10,
+      "active_users": 7,
+      "clicks": 9
+    }
+  ],
+  "top10_pages_total_views": 188,
+  "top10_pages_total_clicks": 188,
+  "channel_split": {
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 75,
+      "Unassigned": 19,
+      "Direct": 1
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 29,
+      "Unassigned": 12
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 14,
+      "Unassigned": 7
+    },
+    "/guides/tax-deductions-checklist/": {
+      "Organic Search": 13,
+      "Unassigned": 5
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 12,
+      "Unassigned": 6
+    },
+    "/guides/gift-tax-limit-2026/": {
+      "Organic Search": 10,
+      "Unassigned": 2
+    },
+    "/guides/irs-mileage-rate-history/": {
+      "Organic Search": 10,
+      "Unassigned": 2
+    },
+    "/social-security-cola-calculator/": {
+      "Organic Search": 10,
+      "Unassigned": 4,
+      "Direct": 1
+    },
+    "/guides/social-security-survivor-benefits-and-working/": {
+      "Organic Search": 9,
+      "Unassigned": 3
+    },
+    "/": {
+      "Direct": 6,
+      "Referral": 2,
+      "Organic Search": 1,
+      "Unassigned": 1
+    }
+  }
+}
