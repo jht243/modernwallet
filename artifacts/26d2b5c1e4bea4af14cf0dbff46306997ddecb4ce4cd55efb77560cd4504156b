@@ -1,0 +1,75 @@
+// Backdoor Roth pro rata engine (mindmap Autocomplete pass 2026-11-18, action A2).
+//
+// Logic follows the saved IRS texts, tax year 2025 revision of the Instructions for Form 8606 and IRS Publication 590-B
+// (Worksheet 1-1). Federal only. No tax rates, state tax, IRMAA or penalties are modelled.
+//
+//   Form 8606 line 1  nondeductible contributions for the year
+//   Form 8606 line 2  basis carried from earlier years (line 14 of the last Form 8606)
+//   Form 8606 line 3  = line 1 + line 2 (total basis)
+//   Form 8606 line 6  value of ALL traditional, SEP and SIMPLE IRAs on December 31, plus outstanding rollovers.
+//                     The amount you converted is NOT part of line 6.
+//   Form 8606 line 8  net amount converted to Roth IRAs during the year
+//   share             = line 3 / (line 6 + line 8), a decimal rounded to three places, never more than 1.000
+//                     (Pub. 590-B Worksheet 1-1, "rounded to at least three places", "if 1.000 or more, enter 1.000")
+//   Form 8606 line 17 = line 8 x share (basis in the converted amount, tax free)
+//   Form 8606 line 18 = line 8 - line 17 (taxable conversion amount)
+//   Form 8606 line 14 = line 3 - line 17 (basis carried to next year)
+// The only distribution modelled is the conversion itself.
+
+export interface ProRataInput {
+  /** Form 8606 line 1: nondeductible contributions to traditional IRAs for the year. */
+  nondeductible: number;
+  /** Form 8606 line 2: basis from earlier years. */
+  priorBasis: number;
+  /** Form 8606 line 6: December 31 value of all traditional, SEP and SIMPLE IRAs (after the conversion) plus outstanding rollovers. */
+  yearEndValue: number;
+  /** Form 8606 line 8: amount converted to a Roth IRA this year. */
+  converted: number;
+}
+
+export interface ProRataResult {
+  line3: number; // total basis
+  line9: number; // year-end value plus converted amount (the share's denominator)
+  share: number; // line 3 / line 9, three decimals, capped at 1
+  nontaxable: number; // Form 8606 line 17
+  taxable: number; // Form 8606 line 18
+  remainingBasis: number; // Form 8606 line 14
+  taxableShare: number; // taxable / converted, 0 to 1
+}
+
+const clean = (x: number) => (Number.isFinite(x) && x > 0 ? x : 0);
+const toCents = (x: number) => Math.round(x * 100 + 1e-9) / 100;
+
+export function computeProRata(input: ProRataInput): ProRataResult {
+  const nd = clean(input.nondeductible);
+  const pb = clean(input.priorBasis);
+  const ye = clean(input.yearEndValue);
+  const cv = clean(input.converted);
+  const line3 = nd + pb;
+  const line9 = ye + cv;
+  let share = 0;
+  if (line9 > 0) {
+    share = Math.round((line3 / line9) * 1000 + 1e-9) / 1000;
+    if (share > 1) share = 1;
+  }
+  const nontaxable = toCents(cv * share);
+  const taxable = toCents(cv - nontaxable);
+  return {
+    line3,
+    line9,
+    share,
+    nontaxable,
+    taxable,
+    remainingBasis: toCents(line3 - nontaxable),
+    taxableShare: cv > 0 ? Math.round((taxable / cv) * 10000) / 10000 : 0,
+  };
+}
+
+/** The three finite cases shown as a static table under the tool (same engine, $7,500 converted). */
+export const STATIC_CASES: { label: string; input: ProRataInput }[] = [
+  { label: "No pre-tax IRA money on December 31", input: { nondeductible: 7500, priorBasis: 0, yearEndValue: 0, converted: 7500 } },
+  { label: "$92,500 of pre-tax IRA money on December 31", input: { nondeductible: 7500, priorBasis: 0, yearEndValue: 92500, converted: 7500 } },
+  { label: "$250,000 rollover IRA on December 31", input: { nondeductible: 7500, priorBasis: 0, yearEndValue: 250000, converted: 7500 } },
+];
+
+export const DEFAULT_INPUT: ProRataInput = { nondeductible: 7500, priorBasis: 0, yearEndValue: 92500, converted: 7500 };

@@ -1,0 +1,94 @@
+import { useMemo, useState } from "react";
+import { computeProRata, DEFAULT_INPUT, type ProRataInput } from "../lib/backdoor-roth-pro-rata";
+import { fmtUSD } from "../lib/format";
+import { Field, MoneyInput, Stat, S } from "./calc-ui";
+
+// Backdoor Roth pro rata calculator island (mindmap Autocomplete pass 2026-11-18, A2).
+// Logic and sources live in src/lib/backdoor-roth-pro-rata.ts (Form 8606 instructions, tax year 2025 revision, and Pub. 590-B Worksheet 1-1).
+
+interface Props {
+  initialData?: Partial<ProRataInput>;
+  heading?: string;
+  subheading?: string;
+}
+
+const pct1 = (x: number) => `${(x * 100).toFixed(1)}%`;
+
+export default function BackdoorRothProRataCalculator({ initialData, heading, subheading }: Props) {
+  const [v, setV] = useState<ProRataInput>({ ...DEFAULT_INPUT, ...initialData });
+  const r = useMemo(() => computeProRata(v), [v]);
+  const set = (p: Partial<ProRataInput>) => setV((s) => ({ ...s, ...p }));
+  const hasConversion = v.converted > 0;
+
+  return (
+    <div style={S.wrap}>
+      <h2 style={{ fontSize: "1.3rem", margin: "0 0 14px" }}>Your Taxable Conversion Amount</h2>
+      {(heading || subheading) && (
+        <div style={S.head}>
+          {heading && <div style={S.heading}>{heading}</div>}
+          {subheading && <div style={S.subheading}>{subheading}</div>}
+        </div>
+      )}
+      <div style={S.grid}>
+        <div style={S.inputs} className="mw-pin">
+          <Field label="Nondeductible contribution for the year (Form 8606 line 1)">
+            <MoneyInput value={v.nondeductible} onChange={(x) => set({ nondeductible: x })} />
+          </Field>
+          <Field label="Basis from earlier years (line 2, from line 14 of your last Form 8606)">
+            <MoneyInput value={v.priorBasis} onChange={(x) => set({ priorBasis: x })} />
+          </Field>
+          <Field label="Value of all traditional, SEP and SIMPLE IRAs on December 31, after the conversion (line 6)">
+            <MoneyInput value={v.yearEndValue} onChange={(x) => set({ yearEndValue: x })} />
+          </Field>
+          <Field label="Amount converted to a Roth IRA this year (line 8)">
+            <MoneyInput value={v.converted} onChange={(x) => set({ converted: x })} />
+          </Field>
+          <p style={S.hint}>
+            Line 6 counts every traditional, SEP and SIMPLE IRA you own, including old rollover IRAs and any basis still inside them. It does not count Roth IRAs or the amount you converted.
+          </p>
+        </div>
+
+        <div style={S.results} aria-live="polite">
+          {!hasConversion ? (
+            <div style={S.bigStat}>
+              <span style={S.bigLabel}>Enter the amount you converted</span>
+              <span style={S.bigSub}>With nothing converted there is no taxable conversion amount. Your basis of {fmtUSD(r.line3, { cents: true })} carries forward.</span>
+            </div>
+          ) : (
+            <>
+              <div style={S.bigStat}>
+                <span style={S.bigLabel}>Taxable part of your conversion (line 18)</span>
+                <span style={S.bigValue}>{fmtUSD(r.taxable, { cents: true })}</span>
+                <span style={S.bigSub}>{pct1(r.taxableShare)} of the {fmtUSD(v.converted)} you converted is taxable, federal only</span>
+              </div>
+              <div style={S.statRow}>
+                <Stat label="Tax-free part (line 17)" value={fmtUSD(r.nontaxable, { cents: true })} />
+                <Stat label="Basis left for next year (line 14)" value={fmtUSD(r.remainingBasis, { cents: true })} />
+              </div>
+              <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14, marginTop: 12 }}>
+                <caption style={{ textAlign: "left", fontWeight: 600, paddingBottom: 6 }}>Form 8606 line map (tax year 2025 form)</caption>
+                <thead>
+                  <tr>
+                    <th style={{ textAlign: "left" }}>Line</th>
+                    <th style={{ textAlign: "left" }}>What it holds</th>
+                    <th style={{ textAlign: "right" }}>Your figure</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>3</td><td>Total basis (line 1 plus line 2)</td><td style={{ textAlign: "right" }}>{fmtUSD(r.line3, { cents: true })}</td></tr>
+                  <tr><td>6 plus 8</td><td>Year-end IRA value plus the converted amount</td><td style={{ textAlign: "right" }}>{fmtUSD(r.line9, { cents: true })}</td></tr>
+                  <tr><td>Share</td><td>Total basis divided by that sum, three decimals, 1.000 at most</td><td style={{ textAlign: "right" }}>{r.share.toFixed(3)}</td></tr>
+                  <tr><td>17</td><td>Converted amount times the share</td><td style={{ textAlign: "right" }}>{fmtUSD(r.nontaxable, { cents: true })}</td></tr>
+                  <tr><td>18</td><td>Converted amount minus line 17</td><td style={{ textAlign: "right" }}>{fmtUSD(r.taxable, { cents: true })}</td></tr>
+                </tbody>
+              </table>
+            </>
+          )}
+          <div style={S.disclaimer}>
+            Estimate only. It follows the line logic in the <a href="https://www.irs.gov/instructions/i8606" target="_blank" rel="noopener noreferrer">Instructions for Form 8606</a> (tax year 2025 revision) and <a href="https://www.irs.gov/publications/p590b" target="_blank" rel="noopener noreferrer">IRS Publication 590-B</a>, and treats the conversion as your only IRA distribution. It does not apply tax rates, state tax, penalties or contributions made after year end for the year. General information, not tax advice.
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
