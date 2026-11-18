@@ -140,9 +140,6 @@ def humanize(text: str, verbose: bool = False) -> str:
         return text
     for base in (".env", os.path.expanduser("~/.claude/secrets.env")):
         _load_env(Path(base))
-    key = os.environ.get("OPENAI_API_KEY")
-    if not key:
-        return bail("OPENAI_API_KEY not set")
 
     paras = _paras(text)
     keep = {i: p for i, p in enumerate(paras) if PROTECTED.search(p)}
@@ -150,20 +147,34 @@ def humanize(text: str, verbose: bool = False) -> str:
     if not editable:
         return bail("nothing but protected paragraphs")
 
-    body = {"model": MODEL,
-            "messages": [{"role": "user", "content": f"{PROMPT}\n\n" + "\n\n".join(editable)}]}
-    # ensure_ascii + explicit utf-8: the cloud sandbox's default locale is ASCII, and an
-    # intro containing an em-dash or curly quote raised UnicodeEncodeError here, which the
-    # bail path swallowed as "unchanged" - i.e. those pages silently never got humanized.
-    req = urllib.request.Request(
-        "https://api.openai.com/v1/chat/completions",
-        data=json.dumps(body, ensure_ascii=True).encode("utf-8"), method="POST",
-        headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
-    try:
-        with urllib.request.urlopen(req, timeout=180) as r:
-            out = json.loads(r.read())["choices"][0]["message"]["content"].strip()
-    except Exception as e:  # noqa: BLE001 - this step must never break a run
-        return bail(f"api error: {type(e).__name__}: {str(e)[:120]}")
+    out = None
+    cg_path = Path(__file__).resolve().parent / "lib" / "content_gen.py"
+    if cg_path.is_file():
+        try:
+            import importlib.util as _ilu
+            os.environ.setdefault("CONTENT_CALLER", "humanize-intro")
+            _spec = _ilu.spec_from_file_location("content_gen", cg_path)
+            _cg = _ilu.module_from_spec(_spec); _spec.loader.exec_module(_cg)
+            out = _cg.complete("", f"{PROMPT}\n\n" + "\n\n".join(editable), max_tokens=8000, thinking="low", json_mode=False, writer_scope=False).strip()
+        except Exception as e:
+            if verbose:
+                print(f"humanize_intro: content_gen fallback notice ({type(e).__name__}: {str(e)[:100]})", file=sys.stderr)
+
+    if not out:
+        key = os.environ.get("OPENAI_API_KEY")
+        if not key:
+            return bail("OPENAI_API_KEY not set")
+        body = {"model": MODEL,
+                "messages": [{"role": "user", "content": f"{PROMPT}\n\n" + "\n\n".join(editable)}]}
+        req = urllib.request.Request(
+            "https://api.openai.com/v1/chat/completions",
+            data=json.dumps(body, ensure_ascii=True).encode("utf-8"), method="POST",
+            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=180) as r:
+                out = json.loads(r.read())["choices"][0]["message"]["content"].strip()
+        except Exception as e:  # noqa: BLE001 - this step must never break a run
+            return bail(f"api error: {type(e).__name__}: {str(e)[:120]}")
 
     new = [_house_style(p) for p in _paras(out)]
     # Some stores render introText as PLAIN TEXT, so markdown the model invented shows up

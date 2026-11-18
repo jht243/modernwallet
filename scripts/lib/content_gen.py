@@ -111,7 +111,7 @@ _load_repo_config()
 # OPUS-PRIMARY (2026-10-09): read AFTER the repo file loads — read before it, a CONTENT_MODEL line in
 # .claude/content-gen.env was silently ignored.
 MODEL = os.environ.get("CONTENT_MODEL", "gemini-3.8-flash")
-FALLBACK = os.environ.get("CONTENT_FALLBACK_MODEL", "gpt-6.1-sol")
+FALLBACK = os.environ.get("CONTENT_FALLBACK_MODEL", "gemini-3.8-flash")
 ANTHROPIC_EFFORT = os.environ.get("CONTENT_ANTHROPIC_EFFORT", "high").strip().lower()
 if ANTHROPIC_EFFORT not in ("low", "medium", "high", "xhigh", "max"):
     ANTHROPIC_EFFORT = "high"
