@@ -1,0 +1,48 @@
+{
+  "reviewer": "audit-subagent",
+  "verdict": "FAIL",
+  "findings": [
+    {
+      "id": "F1",
+      "quote": "Novo row: \"Reserves include a Taxes reserve earning 2.00% APY\"; Novo section: \"a dedicated Taxes reserve that earns 2.00% APY\" and \"Holding $25,000 inside Novo's Taxes reserve generates $500 in annual interest\"; How to Choose: \"Novo features a Taxes reserve yielding a variable 2.00% APY\"",
+      "problem": "Novo's business-checking page says Novo Savings pays 2% APY only once the balance is $50,000 or more (and Business Checking does not earn interest). The 2.00% on novo.co appears on a Savings allocation in an illustration, not on a Taxes reserve. The $25,000 example is wrong: below $50,000 it earns $0.",
+      "fix": "Describe Novo Savings as 2% APY at $50,000+ balances, drop the Taxes-reserve APY claim, and recompute the example (e.g. $50,000 earns $1,000; $25,000 earns $0); fix the table row, How to Choose paragraph and Novo section.",
+      "hard_blocker": true
+    },
+    {
+      "id": "F2",
+      "quote": "Intro first sentence: \"Mercury, Relay, Novo, Lili and Chase are the five business checking alternatives compared here, and OnDeck is the line-of-credit alternative; Novo, Mercury and Lili Core charge $0 per month, Relay Starter charges $0, and Chase Business Complete Banking charges $15 per month unless waived.\"",
+      "problem": "weak-opener: 44-word semicolon clause stack that needs a second read and does not read as the direct answer.",
+      "fix": "Open with a short answer (e.g. \"Mercury, Relay, Novo, Lili and Chase replace Bluevine checking, and OnDeck replaces its credit line.\") and move the fee list to the next sentence.",
+      "hard_blocker": true
+    },
+    {
+      "id": "F3",
+      "quote": "Sentence rhythm across the body (144 sentences: 12 short, 28 medium, 104 long)",
+      "problem": "monotone-rhythm: a run of 10 consecutive long sentences measured in body prose.",
+      "fix": "Vary sentence length in the How to Choose and OnDeck sections.",
+      "hard_blocker": true
+    },
+    {
+      "id": "F4",
+      "quote": "\"Who This Is Not For:\" followed by one bullet about Nevada, North Dakota, South Dakota and territories",
+      "problem": "Section is a single bullet about line-of-credit state exclusions, followed by blank lines; it does not say which readers the comparison does not fit.",
+      "fix": "Expand to a short list (sole proprietors for the line of credit, businesses needing branch cash deposits beyond Chase, personal finance readers) and remove stray blank lines.",
+      "hard_blocker": false
+    },
+    {
+      "id": "F5",
+      "quote": "\"Mercury, Relay and Novo do not provide native lines of credit on their primary pricing tables\"; Mercury section \"does not advertise ... partner term loans\"",
+      "problem": "Mercury's own site lists Working Capital Loans and Venture Debt in its navigation and its FAQ mentions line of credit and term loan products, so the 'does not advertise' wording is shaky.",
+      "fix": "Say 'the Mercury pricing page does not list a line of credit' or remove the claim.",
+      "hard_blocker": false
+    },
+    {
+      "id": "F6",
+      "quote": "Verdict: \"evaluate your monthly cash deposits, check your borrowing requirements, and calculate the net annual cost of each plan\"",
+      "problem": "Directive with no link to the pages that answer it (unlinked-directive style) and mild advice framing.",
+      "fix": "Replace with a next action pointing at the internal business line of credit requirements guide.",
+      "hard_blocker": false
+    }
+  ]
+}

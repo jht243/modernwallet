@@ -1,0 +1,411 @@
+{
+ "slug": "empower",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 3083,
+ "floor": 1500,
+ "input_tokens": 82948,
+ "output_tokens": 6095,
+ "thinking_tokens": 2231,
+ "cached_tokens": 81002,
+ "est_cost_usd": 0.0388,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3083,
+  "numbers_not_in_facts": [
+   "0.0025",
+   "0.0035",
+   "0.0065",
+   "125",
+   "179.88",
+   "20000",
+   "251.64",
+   "327",
+   "499.95",
+   "50000",
+   "83.88"
+  ],
+  "fact_budget": {
+   "fact_words": 587,
+   "floor": 1500,
+   "ratio": 0.39,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    23,
+    16,
+    9
+   ],
+   "applied": [
+    {
+     "id": "rows[1].pricing",
+     "quote": "Core $99.99/yr or $14.99/mo; Plus $199.99/yr. Subscription-based and ad-free. Promotional code offers 30% off Core annual for one year. 7-day money-back guarantee",
+     "replacement": "Core $99.99/yr or $14.99/mo; Plus $199.99/yr. Subscription-based and ad-free. Promotional code offers 30% off Core annual for one year. Money-back guarantee",
+     "type": "unsupported",
+     "why": "SOURCE specifies a money-back guarantee without stating a 7-day duration."
+    },
+    {
+     "id": "rows[1].bestFit",
+     "quote": "Fits households wanting dedicated budgeting, net worth tracking and multi-income planning without advertisements",
+     "replacement": "Fits users who want budgeting, net worth tracking and multi-income tracking without advertisements",
+     "type": "unsupported",
+     "why": "SOURCE forbids stating household sharing and does not list households."
+    },
+    {
+     "id": "rows[2].pricing",
+     "quote": "$14.99/mo or $109/yr ($9.08/mo equivalent). 34-day free trial with no payment card required. Direct bank import for select US, Canadian, UK and EU banks",
+     "replacement": "$14.99/mo or $109/yr ($9.08/mo equivalent). 34-day free trial. Direct bank import for select US, Canadian, UK and EU banks",
+     "type": "unsupported",
+     "why": "SOURCE does not state that the 34-day trial requires no payment card."
+    },
+    {
+     "id": "rows[2].bestFit",
+     "quote": "Fits planners who assign every dollar a job and prefer zero-based envelope budgeting",
+     "replacement": "Fits users who want a dedicated budgeting tool with bank import",
+     "type": "unsupported",
+     "why": "SOURCE does not mention assigning every dollar a job or zero-based envelope budgeting."
+    },
+    {
+     "id": "rows[3].pricing",
+     "quote": "$3.99/mo billed annually on a promotional offer, alongside a listed $6.99/mo regular price. Includes Spending Plan, 12-month projected cash flow and investment tracking",
+     "replacement": "$3.99/mo billed annually alongside a listed $6.99/mo price. Includes Spending Plan, 12-month projected cash flow and investment tracking",
+     "type": "unsupported",
+     "why": "SOURCE does not state that $3.99/mo is a promotional offer."
+    },
+    {
+     "id": "rows[5].bestFit",
+     "quote": "Fits investors who want automated index portfolio management and tax-loss harvesting at a flat percentage fee",
+     "replacement": "Fits investors who want automated portfolio management and tax-loss harvesting at a flat percentage fee",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Wealthfront offers index portfolio management."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "In contrast, Monarch Money charges $99.99 per year for Core or $199.99 for Plus, YNAB charges $109 per year, and Quicken Simplifi charges $3.99 per month billed annually on promotion ($47.88 per year) or a listed $6.99 per month ($83.88 per year).",
+     "replacement": "In contrast, Monarch Money charges $99.99 per year for Core or $199.99 for Plus, YNAB charges $109 per year, and Quicken Simplifi charges $3.99 per month billed annually ($47.88 per year) or a listed $6.99 per month ($83.88 per year).",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Quicken Simplifi's $3.99/mo rate is on promotion."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "The service includes a 7-day money-back guarantee.",
+     "replacement": "The service includes a money-back guarantee.",
+     "type": "unsupported",
+     "why": "SOURCE specifies a money-back guarantee without stating a 7-day duration."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Monarch Money states that its platform is subscription-based and ad-free, and that it does not sell customer financial data.",
+     "replacement": "Monarch Money states that its platform is subscription-based and ad-free.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Monarch Money does not sell customer financial data."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Monarch Money fits individuals and households that want dedicated budgeting, spending analysis, and net worth tracking without investment advisory cross-promotions or advertisements.",
+     "replacement": "Monarch Money fits users who want dedicated budgeting, spending analysis, and net worth tracking without advertisements.",
+     "type": "unsupported",
+     "why": "SOURCE forbids stating household sharing and does not list households."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Empower provides its net worth and retirement tracking dashboard at no subscription cost, whereas Monarch Money requires a paid subscription after its trial window.",
+     "replacement": "Empower provides its net worth and retirement tracking dashboard at no subscription cost, whereas Monarch Money requires a paid subscription.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Monarch Money offers a trial window."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "YNAB is a personal budgeting application built on the principle of giving every dollar a job.",
+     "replacement": "YNAB is a personal budgeting application.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that YNAB is built on giving every dollar a job."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "YNAB provides a 34-day free trial that does not require entering payment card details.",
+     "replacement": "YNAB provides a 34-day free trial.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that the trial requires no payment card details."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "YNAB fits people who want an active, forward-looking budgeting system where money is allocated into categories before it is spent.",
+     "replacement": "YNAB fits people who want a dedicated budgeting tool with bank import.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe YNAB as an active, forward-looking category allocation budgeting system."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Versus Empower, YNAB focuses entirely on proactive envelope-style cash allocation rather than investment analysis or asset management.",
+     "replacement": "Versus Empower, YNAB focuses on budgeting rather than investment analysis or asset management.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that YNAB uses proactive envelope-style cash allocation."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Empower tracks investment asset allocations, shows portfolio fee drag, and projects retirement readiness across all connected brokerage accounts at no charge.",
+     "replacement": "Empower tracks investment asset allocations and projects retirement readiness at no charge.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Empower shows portfolio fee drag."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "If a user only needs after-the-fact spending categorization and net worth tracking, Empower provides that functionality without the $109 annual subscription fee.",
+     "replacement": "If a user only needs budgeting and net worth tracking, Empower provides that functionality without the $109 annual subscription fee.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Empower's tools as after-the-fact spending categorization."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Quicken Simplifi is a web and mobile personal finance application that monitors spending, bills, and investments.",
+     "replacement": "Quicken Simplifi is a web and mobile personal finance application that monitors spending and investments.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Quicken Simplifi monitors bills."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Its pricing page shows a promotional offer of $3.99 per month billed annually for new members, alongside a regular list price of $6.99 per month.",
+     "replacement": "Its pricing page shows $3.99 per month billed annually alongside a listed $6.99 per month price.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that $3.99/mo is a promotional offer for new members."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "At its promotional rate of $3.99 per month billed annually, Quicken Simplifi costs $47.88 for the first year.",
+     "replacement": "At $3.99 per month billed annually, Quicken Simplifi costs $47.88 per year.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that $3.99/mo is a promotional rate."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Wealthfront also offers a commission-free self-directed brokerage account for individual stocks and Exchange-Traded Funds (ETFs), along with cash and borrowing services.",
+     "replacement": "Wealthfront also offers a brokerage account for stocks and Exchange-Traded Funds (ETFs), along with cash and borrowing services.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Wealthfront's brokerage account is commission-free."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Investors who hold workplace retirement plans administered by Empower can also view their employer plans alongside their personal accounts under a single login.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that users can view employer plans under one login."
+    },
+    {
+     "id": "verdict",
+     "quote": "If you only want budgeting and net worth tracking, Monarch Money ($99.99 per year), YNAB ($109 per year) and Quicken Simplifi ($3.99 per month billed annually on promotion) offer dedicated software tools without wealth management cross-promotions.",
+     "replacement": "If you only want budgeting and net worth tracking, Monarch Money ($99.99 per year), YNAB ($109 per year) and Quicken Simplifi ($3.99 per month billed annually) offer dedicated software tools without wealth management cross-promotions.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Quicken Simplifi's $3.99/mo rate is on promotion."
+    },
+    {
+     "id": "rows[3].bestFit",
+     "quote": "Fits individuals who want cash flow forecasting, net worth tracking and watchlists at a low entry price",
+     "replacement": "Fits individuals who want cash flow forecasting, net worth tracking and watchlists",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Simplifi's pricing as a low entry price."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Empower earns revenue from its wealth management services, where advisory fees are calculated based on assets managed.",
+     "replacement": "Empower states advisory fees for its wealth management services are calculated based on assets managed.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Empower earns revenue from wealth management services."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "When choosing tracking tools, decide whether you prefer a free platform supported by wealth management services or a paid subscription that operates without investment cross-promotions.",
+     "replacement": "When choosing tracking tools, decide whether you prefer a free dashboard or a paid subscription.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention investment cross-promotions or how the free platform is supported."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Wealthfront manages portfolios for a 0.25% annual fee with no high account minimum.",
+     "replacement": "Wealthfront manages portfolios for a 0.25% annual fee.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Wealthfront has no high account minimum."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": " Neither Monarch Money nor YNAB operates a banking or cash sweep program inside its budgeting software.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state banking or cash sweep availability for Monarch Money or YNAB."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "The Plus tier adds forward-looking forecasting tools, tracking for multiple income sources such as freelance work or small business revenue, and deeper investment tracking.",
+     "replacement": "The Plus tier adds forward-looking forecasting tools, tracking for multiple income sources, and deeper investment tracking.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention freelance work or small business revenue."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "At its regular list price of $6.99 per month billed annually, it costs $83.88 per year, which totals $251.64 over three years.",
+     "replacement": "At the listed $6.99 per month price, it costs $83.88 over 12 months, which totals $251.64 over three years.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe $6.99/mo as a regular list price billed annually."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Wealthfront fits investors who want automated, software-driven portfolio rebalancing and tax-loss harvesting without high minimum investment requirements.",
+     "replacement": "Wealthfront fits investors who want automated, software-driven portfolio rebalancing and tax-loss harvesting.",
+     "type": "unsupported",
+     "why": "SOURCE does not state minimum investment requirements for Wealthfront."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "On the other hand, Wealthfront publishes its 0.25% annual advisory fee plainly and does not require a $100,000 minimum to manage a diversified portfolio.",
+     "replacement": "On the other hand, Wealthfront publishes its 0.25% annual advisory fee plainly and does not require a $100,000 minimum to manage the Wealthfront Portfolio.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe the Wealthfront Portfolio as a diversified portfolio."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "The tools listed here are designed for personal household finances and individual investment accounts, not corporate cash management.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "SOURCE states Empower pages describe employers and plan sponsors."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "While Empower and Wealthfront provide stock and ETF trading, they are built around long-term wealth planning rather than active trading.",
+     "replacement": "Empower and Wealthfront provide stock and ETF trading.",
+     "type": "unsupported",
+     "why": "SOURCE does not state platforms are built around long-term wealth planning versus active trading."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "Empower offers tax filing via its dashboard, and its Private Client tier covers tax and legacy planning for $1,000,000+ balances, but digital tracking software cannot replace a qualified tax accountant or estate attorney for complex situations.",
+     "replacement": "Empower offers tax filing via its dashboard, and its Private Client tier covers tax and legacy planning for $1,000,000+ balances.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention qualified tax accountants or estate attorneys."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": " All of the platforms evaluated rely on electronic account linking to monitor transactions and aggregate balances.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state all evaluated platforms rely on electronic account linking."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Empower remains the stronger fit for individuals who want robust, free tracking tools without paying a monthly or annual software subscription.",
+     "replacement": "Empower remains the stronger fit for individuals who want free tracking tools without paying a monthly or annual software subscription.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Empower's tracking tools as robust."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Additionally, Empower Personal Cash offers an attractive cash option with no account fees, no minimum deposit requirements, direct deposit support, aggregate FDIC insurance up to $5 million, and a 3.50% standard APY (or 3.70% APY for eligible Private Client customers).",
+     "replacement": "Additionally, Empower Personal Cash offers a cash option with no account fees, no minimum deposit requirements, direct deposit support, aggregate FDIC insurance up to $5 million, and a 3.50% standard APY (or 3.70% APY for eligible Private Client customers).",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Empower Personal Cash as attractive."
+    },
+    {
+     "id": "verdict",
+     "quote": "If you only want budgeting and net worth tracking, Monarch Money ($99.99 per year), YNAB ($109 per year) and Quicken Simplifi ($3.99 per month billed annually) offer dedicated software tools without wealth management cross-promotions.",
+     "replacement": "If you only want budgeting and net worth tracking, Monarch Money ($99.99 per year), YNAB ($109 per year) and Quicken Simplifi ($3.99 per month billed annually) offer dedicated software tools.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention wealth management cross-promotions."
+    },
+    {
+     "id": "intro",
+     "quote": "At The Modern Wallet, we evaluate personal finance tools and show the fee arithmetic so you can see whether a free dashboard, a paid budgeting subscription or an automated investment advisory account fits your goals.",
+     "replacement": "We show the fee arithmetic so you can see whether a free dashboard, a paid budgeting subscription or an automated investment advisory account fits your goals.",
+     "type": "unsupported",
+     "why": "Site self-description forbids testing claims for financial services; licenses showing math."
+    },
+    {
+     "id": "rows[1].bestFit",
+     "quote": "Fits users who want budgeting, net worth tracking and multi-income tracking without advertisements",
+     "replacement": "Fits users who want forecasting, deeper investment tools and multi-income tracking without advertisements",
+     "type": "unsupported",
+     "why": "SOURCE does not list budgeting or net worth tracking for Monarch Money."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "If your goal is to track your net worth, categorize transactions, and plan retirement spending, budgeting applications such as Monarch Money, YNAB and Quicken Simplifi provide specialized software.",
+     "replacement": "If your goal is tracking spending, cash flow, or investments, applications such as Monarch Money, YNAB and Quicken Simplifi provide specialized software.",
+     "type": "unsupported",
+     "why": "SOURCE does not list retirement planning or transaction categorization for Monarch or YNAB."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Monarch Money is a personal finance and wealth tracking subscription application.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Monarch Money is a wealth tracking application."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Monarch Money fits users who want dedicated budgeting, spending analysis, and net worth tracking without advertisements.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not list budgeting, spending analysis, or net worth tracking for Monarch."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "It is not suitable for several categories of readers:\n\n- Readers seeking commercial banking or business treasury management.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention commercial banking or business treasury management."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "- Investors looking for self-directed day trading tools, margin speculation, or complex options trading platforms.",
+     "replacement": "For self-directed trading,",
+     "type": "unsupported",
+     "why": "SOURCE does not mention day trading, margin speculation, or complex options."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "- Individuals who require formal tax preparation or certified legal advice for trust administration and estate execution.",
+     "replacement": "For planning,",
+     "type": "unsupported",
+     "why": "SOURCE does not mention formal tax preparation or certified legal advice."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "For planning, Empower offers tax filing via its dashboard, and its Private Client tier covers tax and legacy planning for $1,000,000+ balances.\n- Anyone who does not want to connect bank or brokerage accounts digitally.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state tools require connecting accounts digitally."
+    }
+   ],
+   "deleted_final": 9,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 3448
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 640.3,
+ "response_id": "AdX9as_JB8Cs5NoPh_OvqAE",
+ "generated_at": "2026-11-18T16:51:11+0000"
+}

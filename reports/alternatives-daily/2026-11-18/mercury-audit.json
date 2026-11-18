@@ -1,0 +1,48 @@
+{
+  "reviewer": "audit-subagent",
+  "verdict": "FAIL",
+  "findings": [
+    {
+      "id": "F1",
+      "quote": "Bluevine row: \"Plus and Premier plans offer up to 3.3% APY (monthly subscription fees not published)\"; Bluevine section: \"monthly prices for Plus and Premier are not published\"; change-our-answer bullet \"Bluevine and Lili publishing standard monthly prices for their Plus, Premier...\"; Bluevine section verdict line \"undisclosed paid tiers\"",
+      "problem": "Bluevine publishes these on https://www.bluevine.com/business-checking: Standard $0 (1.3% APY up to $250K with activity goal), Plus $30/month (1.75% APY up to $250K, no requirements), Premier $95/month (3.3% APY on all balances). The page states the fees are unpublished and says Plus reaches 3.3%.",
+      "fix": "Replace with the published figures in the row, the Bluevine section, the How to Choose paragraph and the change-our-answer bullet; remove 'undisclosed paid tiers'; keep Lili as the only tier-price-unpublished vendor.",
+      "hard_blocker": true
+    },
+    {
+      "id": "F2",
+      "quote": "Lili section: \"a business holding $25,000 in savings on Lili at a 4.00% variable APY earns $1,000 per year\"; row: \"Savings up to 4.00% variable APY\"; bestFit \"high variable savings interest\"; How to Choose: \"Lili offers variable savings yields up to 4.00% APY\"",
+      "problem": "Lili's own disclosure (lili.co footer) says 2.25% APY applies to balances up to $500,000 and 4.00% only to balances from $500,000 to $1,000,000. The worked example is wrong: $25,000 earns about $562.50 at 2.25%, not $1,000.",
+      "fix": "State 2.25% up to $500,000 and 4.00% from $500,000 to $1,000,000 (effective January 13, 2026, variable), and recompute the example ($25,000 x 2.25% = $562.50); fix the row, bestFit, How to Choose and Lili section.",
+      "hard_blocker": true
+    },
+    {
+      "id": "F3",
+      "quote": "Sentence rhythm across the body (134 sentences: 10 short, 34 medium, 90 long)",
+      "problem": "monotone-rhythm: a run of 11 consecutive long sentences measured in body prose.",
+      "fix": "Vary sentence length in the alternative sections (Relay, Novo and Chase paragraphs).",
+      "hard_blocker": true
+    },
+    {
+      "id": "F4",
+      "quote": "Mercury Plus \"($35 per month billed monthly)\"",
+      "problem": "The $35 figure comes from Mercury's FAQ page (\"paid plan starting at $35/month\"), which is not listed in mercury sources JSON; the pricing page only shows annual pricing. Fact is confirmed on https://mercury.com/faq.",
+      "fix": "Add https://mercury.com/faq to mercury-sources.json (and prompts source list).",
+      "hard_blocker": false
+    },
+    {
+      "id": "F5",
+      "quote": "FAQ \"What is the best free alternative to Mercury?\"; verdict \"Choose the provider whose fee rules match your transaction volume\"",
+      "problem": "Ranking and advice framing ('best', 'Choose') on a listing page that must not recommend.",
+      "fix": "Retitle to \"Which Mercury alternatives have no monthly fee?\"; end verdict on a next-action sentence without 'choose'.",
+      "hard_blocker": false
+    },
+    {
+      "id": "F6",
+      "quote": "Wise example: \"four outgoing wires at the $1.13 starting rate cost $4.52\"",
+      "problem": "$1.13 is the 'from as low as' rate, not a flat fee; the total is a floor, stated as a total.",
+      "fix": "Say 'at least $4.52' or 'from $16.74 in total'.",
+      "hard_blocker": false
+    }
+  ]
+}

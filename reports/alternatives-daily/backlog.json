@@ -2012,10 +2012,75 @@
           "at": "2026-11-15T16:55:03+00:00",
           "status": "eligible",
           "note": "qualified: HTTP 200 verified & ranked by search demand"
+        },
+        {
+          "at": "2026-11-18T16:39:07+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-18"
+        },
+        {
+          "at": "2026-11-18T16:51:28+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-18T16:55:01+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-18T16:57:07+00:00",
+          "status": "in_progress",
+          "note": "audited; fixes applied",
+          "fields": []
         }
       ],
-      "status": "eligible",
-      "updatedAt": "2026-11-15T16:55:03+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-18T16:57:07+00:00",
+      "claimedOn": "2026-11-18",
+      "attempts": 1,
+      "lastNextAt": "2026-11-18T16:39:07+00:00",
+      "writer": "content_gen",
+      "slug": "empower",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Who This Is Not For: \"For self-directed trading, Empower and Wealthfront provide stock and ETF trading.\"",
+            "problem": "Required 'Who This Is Not For' section is a one-sentence stub that does not say who the page or Empower is not for (not-for gate).",
+            "fix": "Rewrite as a short list: readers wanting a human advisor under $100,000, readers wanting one-fee budgeting-only software, readers who need Empower's advisory percentage before deciding (it is only in Form ADV), readers needing a tax or legal opinion.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Sentence rhythm across the body (121 sentences: 6 short, 29 medium, 86 long)",
+            "problem": "monotone-rhythm: a run of 13 consecutive long (15+ word) sentences, measured from body prose (intro, choose section, alternatives, verdict, FAQ answers).",
+            "fix": "Vary real sentences in the 'How to Choose' and Fidelity Go/Betterment sections; shorten some fact statements, no padding.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Monarch Money section body opens \"It offers two subscription tiers...\"",
+            "problem": "Section opens with a pronoun and no named subject right under the heading; vague first sentence.",
+            "fix": "Open with \"Monarch Money is a personal finance app...\".",
+            "hard_blocker": false
+          },
+          {
+            "id": "F4",
+            "quote": "Verdict: \"...select the service that matches your operational needs.\"",
+            "problem": "Mild directive; the page lists products and should end on a concrete next action without telling the reader what to select.",
+            "fix": "Change to a next-action sentence such as comparing your balance with each minimum listed in the table above.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-18T16:55:01+00:00"
+      }
     },
     {
       "vendor": "LegalZoom",
@@ -2185,10 +2250,89 @@
           "at": "2026-11-15T16:55:03+00:00",
           "status": "eligible",
           "note": "qualified: HTTP 200 verified & ranked by search demand"
+        },
+        {
+          "at": "2026-11-18T16:39:07+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-18"
+        },
+        {
+          "at": "2026-11-18T16:48:55+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-18T16:55:02+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-18T16:57:07+00:00",
+          "status": "in_progress",
+          "note": "audited; fixes applied",
+          "fields": []
         }
       ],
-      "status": "eligible",
-      "updatedAt": "2026-11-15T16:55:03+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-18T16:57:07+00:00",
+      "claimedOn": "2026-11-18",
+      "attempts": 1,
+      "lastNextAt": "2026-11-18T16:39:07+00:00",
+      "writer": "content_gen",
+      "slug": "bluevine",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Novo row: \"Reserves include a Taxes reserve earning 2.00% APY\"; Novo section: \"a dedicated Taxes reserve that earns 2.00% APY\" and \"Holding $25,000 inside Novo's Taxes reserve generates $500 in annual interest\"; How to Choose: \"Novo features a Taxes reserve yielding a variable 2.00% APY\"",
+            "problem": "Novo's business-checking page says Novo Savings pays 2% APY only once the balance is $50,000 or more (and Business Checking does not earn interest). The 2.00% on novo.co appears on a Savings allocation in an illustration, not on a Taxes reserve. The $25,000 example is wrong: below $50,000 it earns $0.",
+            "fix": "Describe Novo Savings as 2% APY at $50,000+ balances, drop the Taxes-reserve APY claim, and recompute the example (e.g. $50,000 earns $1,000; $25,000 earns $0); fix the table row, How to Choose paragraph and Novo section.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Intro first sentence: \"Mercury, Relay, Novo, Lili and Chase are the five business checking alternatives compared here, and OnDeck is the line-of-credit alternative; Novo, Mercury and Lili Core charge $0 per month, Relay Starter charges $0, and Chase Business Complete Banking charges $15 per month unless waived.\"",
+            "problem": "weak-opener: 44-word semicolon clause stack that needs a second read and does not read as the direct answer.",
+            "fix": "Open with a short answer (e.g. \"Mercury, Relay, Novo, Lili and Chase replace Bluevine checking, and OnDeck replaces its credit line.\") and move the fee list to the next sentence.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Sentence rhythm across the body (144 sentences: 12 short, 28 medium, 104 long)",
+            "problem": "monotone-rhythm: a run of 10 consecutive long sentences measured in body prose.",
+            "fix": "Vary sentence length in the How to Choose and OnDeck sections.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "\"Who This Is Not For:\" followed by one bullet about Nevada, North Dakota, South Dakota and territories",
+            "problem": "Section is a single bullet about line-of-credit state exclusions, followed by blank lines; it does not say which readers the comparison does not fit.",
+            "fix": "Expand to a short list (sole proprietors for the line of credit, businesses needing branch cash deposits beyond Chase, personal finance readers) and remove stray blank lines.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F5",
+            "quote": "\"Mercury, Relay and Novo do not provide native lines of credit on their primary pricing tables\"; Mercury section \"does not advertise ... partner term loans\"",
+            "problem": "Mercury's own site lists Working Capital Loans and Venture Debt in its navigation and its FAQ mentions line of credit and term loan products, so the 'does not advertise' wording is shaky.",
+            "fix": "Say 'the Mercury pricing page does not list a line of credit' or remove the claim.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F6",
+            "quote": "Verdict: \"evaluate your monthly cash deposits, check your borrowing requirements, and calculate the net annual cost of each plan\"",
+            "problem": "Directive with no link to the pages that answer it (unlinked-directive style) and mild advice framing.",
+            "fix": "Replace with a next action pointing at the internal business line of credit requirements guide.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-18T16:55:02+00:00"
+      }
     },
     {
       "vendor": "Novo",
@@ -2245,10 +2389,89 @@
           "at": "2026-11-15T16:55:03+00:00",
           "status": "eligible",
           "note": "qualified: HTTP 200 verified & ranked by search demand"
+        },
+        {
+          "at": "2026-11-18T16:39:07+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-18"
+        },
+        {
+          "at": "2026-11-18T16:47:37+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-18T16:55:02+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-18T16:57:07+00:00",
+          "status": "in_progress",
+          "note": "audited; fixes applied",
+          "fields": []
         }
       ],
-      "status": "eligible",
-      "updatedAt": "2026-11-15T16:55:03+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-18T16:57:07+00:00",
+      "claimedOn": "2026-11-18",
+      "attempts": 1,
+      "lastNextAt": "2026-11-18T16:39:07+00:00",
+      "writer": "content_gen",
+      "slug": "mercury",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Bluevine row: \"Plus and Premier plans offer up to 3.3% APY (monthly subscription fees not published)\"; Bluevine section: \"monthly prices for Plus and Premier are not published\"; change-our-answer bullet \"Bluevine and Lili publishing standard monthly prices for their Plus, Premier...\"; Bluevine section verdict line \"undisclosed paid tiers\"",
+            "problem": "Bluevine publishes these on https://www.bluevine.com/business-checking: Standard $0 (1.3% APY up to $250K with activity goal), Plus $30/month (1.75% APY up to $250K, no requirements), Premier $95/month (3.3% APY on all balances). The page states the fees are unpublished and says Plus reaches 3.3%.",
+            "fix": "Replace with the published figures in the row, the Bluevine section, the How to Choose paragraph and the change-our-answer bullet; remove 'undisclosed paid tiers'; keep Lili as the only tier-price-unpublished vendor.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Lili section: \"a business holding $25,000 in savings on Lili at a 4.00% variable APY earns $1,000 per year\"; row: \"Savings up to 4.00% variable APY\"; bestFit \"high variable savings interest\"; How to Choose: \"Lili offers variable savings yields up to 4.00% APY\"",
+            "problem": "Lili's own disclosure (lili.co footer) says 2.25% APY applies to balances up to $500,000 and 4.00% only to balances from $500,000 to $1,000,000. The worked example is wrong: $25,000 earns about $562.50 at 2.25%, not $1,000.",
+            "fix": "State 2.25% up to $500,000 and 4.00% from $500,000 to $1,000,000 (effective January 13, 2026, variable), and recompute the example ($25,000 x 2.25% = $562.50); fix the row, bestFit, How to Choose and Lili section.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Sentence rhythm across the body (134 sentences: 10 short, 34 medium, 90 long)",
+            "problem": "monotone-rhythm: a run of 11 consecutive long sentences measured in body prose.",
+            "fix": "Vary sentence length in the alternative sections (Relay, Novo and Chase paragraphs).",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "Mercury Plus \"($35 per month billed monthly)\"",
+            "problem": "The $35 figure comes from Mercury's FAQ page (\"paid plan starting at $35/month\"), which is not listed in mercury sources JSON; the pricing page only shows annual pricing. Fact is confirmed on https://mercury.com/faq.",
+            "fix": "Add https://mercury.com/faq to mercury-sources.json (and prompts source list).",
+            "hard_blocker": false
+          },
+          {
+            "id": "F5",
+            "quote": "FAQ \"What is the best free alternative to Mercury?\"; verdict \"Choose the provider whose fee rules match your transaction volume\"",
+            "problem": "Ranking and advice framing ('best', 'Choose') on a listing page that must not recommend.",
+            "fix": "Retitle to \"Which Mercury alternatives have no monthly fee?\"; end verdict on a next-action sentence without 'choose'.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F6",
+            "quote": "Wise example: \"four outgoing wires at the $1.13 starting rate cost $4.52\"",
+            "problem": "$1.13 is the 'from as low as' rate, not a flat fee; the total is a floor, stated as a total.",
+            "fix": "Say 'at least $4.52' or 'from $16.74 in total'.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-18T16:55:02+00:00"
+      }
     }
   ]
 }

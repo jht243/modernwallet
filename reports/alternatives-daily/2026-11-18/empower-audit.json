@@ -1,0 +1,34 @@
+{
+  "reviewer": "audit-subagent",
+  "verdict": "FAIL",
+  "findings": [
+    {
+      "id": "F1",
+      "quote": "Who This Is Not For: \"For self-directed trading, Empower and Wealthfront provide stock and ETF trading.\"",
+      "problem": "Required 'Who This Is Not For' section is a one-sentence stub that does not say who the page or Empower is not for (not-for gate).",
+      "fix": "Rewrite as a short list: readers wanting a human advisor under $100,000, readers wanting one-fee budgeting-only software, readers who need Empower's advisory percentage before deciding (it is only in Form ADV), readers needing a tax or legal opinion.",
+      "hard_blocker": true
+    },
+    {
+      "id": "F2",
+      "quote": "Sentence rhythm across the body (121 sentences: 6 short, 29 medium, 86 long)",
+      "problem": "monotone-rhythm: a run of 13 consecutive long (15+ word) sentences, measured from body prose (intro, choose section, alternatives, verdict, FAQ answers).",
+      "fix": "Vary real sentences in the 'How to Choose' and Fidelity Go/Betterment sections; shorten some fact statements, no padding.",
+      "hard_blocker": true
+    },
+    {
+      "id": "F3",
+      "quote": "Monarch Money section body opens \"It offers two subscription tiers...\"",
+      "problem": "Section opens with a pronoun and no named subject right under the heading; vague first sentence.",
+      "fix": "Open with \"Monarch Money is a personal finance app...\".",
+      "hard_blocker": false
+    },
+    {
+      "id": "F4",
+      "quote": "Verdict: \"...select the service that matches your operational needs.\"",
+      "problem": "Mild directive; the page lists products and should end on a concrete next action without telling the reader what to select.",
+      "fix": "Change to a next-action sentence such as comparing your balance with each minimum listed in the table above.",
+      "hard_blocker": false
+    }
+  ]
+}

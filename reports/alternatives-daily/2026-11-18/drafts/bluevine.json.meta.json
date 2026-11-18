@@ -1,0 +1,273 @@
+{
+ "slug": "bluevine",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 3668,
+ "floor": 1500,
+ "input_tokens": 84805,
+ "output_tokens": 7084,
+ "thinking_tokens": 5654,
+ "cached_tokens": 81002,
+ "est_cost_usd": 0.0567,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3668,
+  "numbers_not_in_facts": [
+   "0.598",
+   "11250",
+   "15250",
+   "185000",
+   "18660",
+   "19800",
+   "200000",
+   "325",
+   "4000",
+   "400000",
+   "5000000",
+   "6000",
+   "600000"
+  ],
+  "fact_budget": {
+   "fact_words": 1521,
+   "floor": 1500,
+   "ratio": 1.01,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    16,
+    5,
+    7
+   ],
+   "applied": [
+    {
+     "id": "rows[1].bestFit",
+     "quote": "Fits tech companies and funded startups seeking $0-fee domestic and international wire transfers with up to $5M FDIC insurance",
+     "replacement": "Fits businesses seeking $0-fee domestic and international wire transfers with up to $5M FDIC insurance",
+     "type": "unsupported",
+     "why": "SOURCE does not state Mercury is for tech companies or funded startups."
+    },
+    {
+     "id": "rows[2].bestFit",
+     "quote": "Fits businesses needing up to 50 dedicated checking accounts with automated transfer rules and tiered savings yield",
+     "replacement": "Fits businesses needing up to 50 checking accounts per business and tiered savings yield",
+     "type": "unsupported",
+     "why": "SOURCE lists automatic transfer rules for Bluevine, not Relay."
+    },
+    {
+     "id": "rows[3].bestFit",
+     "quote": "Fits sole proprietors and small businesses wanting simple fee-free checking with automated tax reserves",
+     "replacement": "Fits businesses wanting fee-free checking with a Taxes reserve account",
+     "type": "unsupported",
+     "why": "SOURCE does not state sole proprietors, simple checking, or automated tax reserves."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Chase protects deposits directly up to the standard statutory $250,000 limit across its internal branch infrastructure.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Chase's FDIC coverage limit or internal branch infrastructure."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Businesses depositing physical currency frequently require branch networks like Chase, as fintech platforms rely primarily on remote check capture and electronic transfers.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not describe fintech deposit methods or what currency depositors require."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "OnDeck requires an operational business checking account, one year in business, and $100,000 in annual revenue, but permits multiple legal business structures.",
+     "replacement": "OnDeck requires an operational business checking account, one year in business, and $100,000 in annual revenue.",
+     "type": "unsupported",
+     "why": "SOURCE does not state OnDeck permits multiple legal business structures."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "- Solo entrepreneurs seeking unsecured personal micro-loans under $5,000 will not fit Bluevine or OnDeck, which enforce commercial revenue thresholds.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention unsecured personal micro-loans."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "- Businesses seeking customized venture debt or complex multi-currency corporate treasury services should look beyond basic checking accounts to specialized institutional providers.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state venture debt, complex multi-currency services, or institutional providers."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Mercury fits tech startups and digital companies that require high FDIC sweep coverage up to $5,000,000 and frequent wire transfers with zero transaction fees.",
+     "replacement": "Mercury fits businesses that require high FDIC sweep coverage up to $5,000,000 and frequent wire transfers with zero transaction fees.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Mercury is for tech startups or digital companies."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Novo provides business checking accounts for independent companies and sole proprietors, reporting over 250,000 customer accounts.",
+     "replacement": "Novo provides business checking accounts, reporting over 250,000 independent business customers.",
+     "type": "unsupported",
+     "why": "SOURCE states independent businesses, not sole proprietors."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Novo fits solo operators, freelancers and growing small businesses that want fee-free checking with automated tax reserves and straightforward cash back cards.",
+     "replacement": "Novo fits businesses that want fee-free checking with a Taxes reserve and cash back cards.",
+     "type": "unsupported",
+     "why": "SOURCE does not list solo operators, freelancers, or automated tax reserves."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Novo does not provide an integrated commercial line of credit comparable to Bluevine's $250,000 Celtic Bank facility, and its sub-account allocation tools do not match Bluevine's 50 sub-accounts with individual account numbers.",
+     "replacement": "Novo does not provide an integrated commercial line of credit comparable to Bluevine's $250,000 Celtic Bank facility, and its reserve accounts do not match Bluevine's 50 sub-accounts.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Bluevine sub-accounts have individual account numbers."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Lili fits established small businesses that maintain large surplus cash reserves seeking up to 4.00% APY alongside integrated accounting and tax preparation.",
+     "replacement": "Lili fits businesses seeking up to 4.00% APY on balances alongside integrated accounting and tax preparation.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Lili's audience as established businesses with surplus cash."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Lili also restricts international wire access exclusively to incorporated entities, excluding sole proprietorships.",
+     "replacement": "Lili also restricts international wire access exclusively to LLCs, corporations and partnerships.",
+     "type": "unsupported",
+     "why": "SOURCE allows partnerships for international wires; partnerships are not incorporated entities."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Online fintech providers like Bluevine rely on third-party ATM deposit networks that may apply cash deposit surcharges.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Bluevine relies on third-party ATM deposit networks."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Chase fits business owners handling routine physical cash deposits, retail merchants needing local branch support, and companies wanting institutional credit under one corporate banking relationship.",
+     "replacement": "Chase fits business owners handling routine physical cash deposits who need branch and ATM access.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention retail merchants, institutional credit, or corporate relationships."
+    },
+    {
+     "id": "intro",
+     "quote": "At The Modern Wallet, we examine published fee schedules, account minimums and interest rates so business owners can evaluate annual operating costs directly.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not license this first-person claim"
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "- Businesses requiring heavy cash handling and in-person teller service exceeding $20,000 monthly should avoid online fintech accounts and choose commercial branch institutions such as Chase.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state this cash limit rule or give avoidance advice"
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Versus Bluevine, Novo falls short on credit depth and sub-account limits.",
+     "replacement": "Versus Bluevine, Novo falls short on credit depth.",
+     "type": "unsupported",
+     "why": "SOURCE does not state a limit on Novo reserve accounts"
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Novo does not provide an integrated commercial line of credit comparable to Bluevine's $250,000 Celtic Bank facility, and its reserve accounts do not match Bluevine's 50 sub-accounts.",
+     "replacement": "Novo does not provide an integrated commercial line of credit comparable to Bluevine's $250,000 Celtic Bank facility.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Novo's reserve account limit"
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Chase also imposes strict transaction caps, charging fees when users exceed 20 teller transactions per cycle.",
+     "replacement": "Chase Business Complete Banking includes up to 20 paper and teller transactions per statement cycle.",
+     "type": "unsupported",
+     "why": "SOURCE does not state strict caps or fee rules for exceeding 20 transactions"
+    },
+    {
+     "id": "rows[6].bestFit",
+     "quote": "Fits established businesses seeking dedicated revolving credit up to $200,000 with fast same-day funding",
+     "replacement": "Fits businesses seeking dedicated revolving credit up to $200,000 with fast same-day funding",
+     "type": "unsupported",
+     "why": "SOURCE does not describe businesses as established."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "If your business operates without substantial monthly deposits, paying a mandatory maintenance fee diminishes cash reserves.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "SOURCE states Chase fee can be avoided, not that it is mandatory."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Mercury is a financial technology company, not a bank, providing online banking services and commercial tools for corporate entities.",
+     "replacement": "Mercury is a financial technology company, not a bank, providing banking services and essential tools.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Mercury provides commercial tools for corporate entities."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Chase operates as a national commercial banking institution with more than 14,000 ATMs and 5,000 branch locations across the United States.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Chase as a national commercial banking institution across the United States."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "OnDeck fits established companies that need fast secondary borrowing up to $200,000 without switching their current primary checking account.",
+     "replacement": "OnDeck fits companies that need fast secondary borrowing up to $200,000 without switching their current primary checking account.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe companies as established."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Bluevine remains the closer match for incorporated small businesses that want high-yield operational checking paired with fast revolving credit in a single dashboard.",
+     "replacement": "Bluevine remains the closer match for incorporated small businesses that want high-yield operational checking paired with fast revolving credit.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention a single dashboard."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Borrowers can choose weekly or monthly automatic repayment schedules, and account performance reports to Experian to help establish business credit history.",
+     "replacement": "Borrowers can choose weekly or monthly automatic repayment schedules, and account performance reports to Experian.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that reporting to Experian helps establish business credit history."
+    }
+   ],
+   "deleted_final": 7,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 3936
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 453.5,
+ "response_id": "JNX9ap6lMaWB1sgPnbaOmAE",
+ "generated_at": "2026-11-18T16:48:41+0000"
+}

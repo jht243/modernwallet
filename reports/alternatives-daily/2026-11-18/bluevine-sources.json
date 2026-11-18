@@ -1,0 +1,21 @@
+{
+  "slug": "bluevine",
+  "product": "Bluevine",
+  "checked": "2026-11-18",
+  "tool": "scripts/alternatives_daily/fetch_page.py",
+  "sources": [
+    {"vendor": "Bluevine", "url": "https://www.bluevine.com/", "note": "homepage: fintech not bank, Coastal Community Bank, products"},
+    {"vendor": "Bluevine", "url": "https://www.bluevine.com/business-checking", "note": "Standard/Plus/Premier fees and APY, FDIC $3M, fees"},
+    {"vendor": "Bluevine", "url": "https://www.bluevine.com/business-line-of-credit", "note": "line of credit up to $250K, eligibility, ineligible states"},
+    {"vendor": "Mercury", "url": "https://mercury.com/pricing", "note": "Mercury $0, Plus $29.90, Pro $299 (annual pricing)"},
+    {"vendor": "Relay", "url": "https://relayfi.com/pricing", "note": "Starter $0, Grow $30, Scale $90 (discounted from $120), APY"},
+    {"vendor": "Novo", "url": "https://www.novo.co/", "note": "no monthly fees or minimums, $5M FDIC, 2.00% APY reserves, credit card"},
+    {"vendor": "Lili", "url": "https://www.lili.co/", "note": "Core $0, savings APY, $3M FDIC, BusinessBuild fees"},
+    {"vendor": "Chase", "url": "https://www.chase.com/business/banking/checking", "note": "Business Complete $15, Performance $40, Platinum $95, waivable"},
+    {"vendor": "OnDeck", "url": "https://www.ondeck.com/", "note": "line of credit $6K-$200K, term loan $5K-$400K, average APR, requirements"}
+  ],
+  "unreadable": [
+    {"vendor": "Found", "url": "https://found.com/pricing", "reason": "anti_bot_gate; not used"},
+    {"vendor": "NorthOne", "url": "https://www.northone.com/", "reason": "fetch returned Relay content; not used"}
+  ]
+}

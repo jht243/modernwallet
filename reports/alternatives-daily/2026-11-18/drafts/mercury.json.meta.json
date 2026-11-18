@@ -1,0 +1,256 @@
+{
+ "slug": "mercury",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 3426,
+ "floor": 1500,
+ "input_tokens": 84250,
+ "output_tokens": 6181,
+ "thinking_tokens": 1586,
+ "cached_tokens": 81002,
+ "est_cost_usd": 0.0376,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3426,
+  "numbers_not_in_facts": [
+   "12.22",
+   "16.74",
+   "2130",
+   "3000000",
+   "350000",
+   "4.52",
+   "40000",
+   "500000",
+   "650",
+   "940"
+  ],
+  "fact_budget": {
+   "fact_words": 1375,
+   "floor": 1500,
+   "ratio": 0.92,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    12,
+    6,
+    8
+   ],
+   "applied": [
+    {
+     "id": "rows[0].bestFit",
+     "quote": "Fits venture-backed startups and growing firms that want fee-free domestic and USD international wires, high FDIC coverage, and integrated treasury management",
+     "replacement": "Fits growing businesses that want fee-free domestic and USD international wires, high FDIC coverage, and integrated treasury management",
+     "type": "unsupported",
+     "why": "SOURCE does not state venture-backed startups"
+    },
+    {
+     "id": "rows[2].bestFit",
+     "quote": "Fits sole proprietors and small businesses seeking fee-free business checking with automatic ATM fee refunds",
+     "replacement": "Fits small businesses seeking fee-free business checking with ATM fee refunds",
+     "type": "unsupported",
+     "why": "SOURCE does not state sole proprietors"
+    },
+    {
+     "id": "rows[4].bestFit",
+     "quote": "Fits freelancers and solo operators looking for high variable savings interest and integrated tax tools",
+     "replacement": "Fits businesses looking for high variable savings interest and integrated tax tools",
+     "type": "unsupported",
+     "why": "SOURCE does not state freelancers or solo operators"
+    },
+    {
+     "id": "rows[7].bestFit",
+     "quote": "Fits venture-backed and midsize teams needing corporate cards, global expense controls, and multi-entity workflows",
+     "replacement": "Fits teams needing corporate cards, global expense controls, and multi-entity workflows",
+     "type": "unsupported",
+     "why": "SOURCE does not state venture-backed or midsize teams"
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Novo fits solo operators, contractors, and e-commerce sellers seeking straightforward checking with ATM reimbursements.",
+     "replacement": "Novo fits small businesses seeking straightforward checking with ATM reimbursements.",
+     "type": "unsupported",
+     "why": "SOURCE does not state solo operators, contractors, or e-commerce sellers"
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Lili fits single-member limited liability companies and freelancers who want high savings interest and integrated tax tools.",
+     "replacement": "Lili fits businesses that want high savings interest and integrated tax tools.",
+     "type": "unsupported",
+     "why": "SOURCE does not state single-member LLCs or freelancers"
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Chase fits brick-and-mortar retail shops, restaurants, and service providers handling physical cash deposits and requiring local branch support.",
+     "replacement": "Chase fits businesses handling physical cash deposits and requiring local branch support.",
+     "type": "unsupported",
+     "why": "SOURCE does not state retail shops, restaurants, or service providers"
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "Brex fits midsize teams and venture-backed organizations that require multi-entity corporate card controls and deep ERP synchronization.",
+     "replacement": "Brex fits organizations that require multi-entity corporate card controls and deep ERP synchronization.",
+     "type": "unsupported",
+     "why": "SOURCE does not state midsize teams or venture-backed organizations"
+    },
+    {
+     "id": "alternatives[8].body",
+     "quote": "Review each provider's published fee schedule when opening an account to confirm current rates.",
+     "replacement": "",
+     "type": "unlinked-directive",
+     "why": "sends reader to outside source without a markdown link"
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Mercury remains the closer match for startups and digital businesses that require fee-free domestic and international wire movement in USD without monthly subscription costs.",
+     "replacement": "Mercury remains the closer match for businesses that require fee-free domestic and international wire movement in USD without monthly subscription costs.",
+     "type": "unsupported",
+     "why": "SOURCE does not state startups or digital businesses"
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "For companies holding over $250,000 in cash, Mercury Treasury provides yields up to 4.42% in government money market funds managed by Morgan Stanley and JPMorgan.",
+     "replacement": "For companies holding over $250,000 in cash, Mercury Treasury provides yields up to 4.42% invested in the JPMorgan U.S. Treasury Plus Money Market Fund.",
+     "type": "contradicted",
+     "why": "SOURCE states JPMorgan fund only, not Morgan Stanley"
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Chase Business Complete Banking charges a $15 monthly fee that can be waived when meeting balance or transaction requirements.",
+     "replacement": "Chase Business Complete Banking charges a $15 monthly fee, or $0 if you avoid the fee.",
+     "type": "unsupported",
+     "why": "SOURCE does not state fee waiver criteria for Chase Complete"
+    },
+    {
+     "id": "intro",
+     "quote": "At The Modern Wallet, we evaluate published fee schedules and account parameters to show how wire costs, monthly software subscriptions and interest yields affect your business cash flow.",
+     "replacement": "We show the math, name what moves it, and explain the tradeoff.",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not support evaluating published fee schedules claim."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Mercury includes unlimited virtual and physical cards with spend limits and duplicate subscription detection.",
+     "replacement": "Mercury includes virtual and physical cards with spend limits and duplicate subscription detection.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Mercury provides unlimited virtual and physical cards."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Versus Mercury, Novo does not offer an equivalent to Mercury Treasury for balances over $250,000, and does not provide free outgoing domestic wires.",
+     "replacement": "Versus Mercury, Novo does not offer an equivalent to Mercury Treasury for balances over $250,000.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Novo's outgoing domestic wire fees or availability."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "If outgoing transfers involve foreign currency conversion, Mercury charges a 1% exchange fee, whereas Wise quotes conversion fees directly inside the transaction flow.",
+     "replacement": "If outgoing transfers involve foreign currency conversion, Mercury charges a 1% exchange fee, whereas Wise shows fees upfront.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Wise quotes conversion fees inside transaction flow."
+    },
+    {
+     "id": "alternatives[7].body",
+     "quote": "- Businesses with complex commercial lending needs exceeding $500,000 that require direct underwriting by an investment bank.",
+     "replacement": "- Businesses with commercial lending needs exceeding $500,000.",
+     "type": "unsupported",
+     "why": "SOURCE does not state underwriting requirements or mention investment banks."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Mercury's standard checking and savings accounts do not pay interest.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state whether standard checking and savings pay interest."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "For a sole proprietor with a $50,000 reserve, Novo Savings earns 2% APY, producing $1,000 in annual interest with zero account fees.",
+     "replacement": "For a business with a $50,000 reserve, Novo Savings earns 2% APY, producing $1,000 in annual interest with zero account fees.",
+     "type": "unsupported",
+     "why": "SOURCE does not specify sole proprietors for Novo Savings."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Bluevine fits small business owners who want checking balances to earn interest while retaining fast access to credit lines.",
+     "replacement": "Bluevine fits small business owners who want checking balances to earn interest while retaining access to credit lines.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe credit line access as fast."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Chase is a national bank operating more than 5,000 physical branches and over 14,000 ATMs across the United States.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Chase as a national bank."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Wise Business provides local account details in multiple global currencies, allowing businesses to receive international payments like a domestic transfer.",
+     "replacement": "Wise Business provides local account details in multiple global currencies.",
+     "type": "inference",
+     "why": "SOURCE does not state that international payments are received like a domestic transfer."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Outgoing wire transfers start as low as $1.13, which Wise compares against typical $25 or higher fees charged by traditional banks.",
+     "replacement": "Outgoing wire transfers start as low as $1.13, which Wise compares against typical $25 or higher fees charged by U.S. banks.",
+     "type": "unsupported",
+     "why": "SOURCE says U.S. banks, not traditional banks."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Wise Business fits companies paying overseas contractors and handling revenue across multiple currencies.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention paying overseas contractors."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "Brex fits organizations that require multi-entity corporate card controls and deep ERP synchronization.",
+     "replacement": "Brex fits organizations that require multi-entity corporate card controls and customizable ERP integrations.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe ERP synchronization as deep."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "If your organization regularly sends USD international wires and maintains a substantial cash reserve, Mercury avoids the per-wire charges of traditional banks and the per-seat costs of corporate card platforms.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention traditional banks or their per-wire charges."
+    }
+   ],
+   "deleted_final": 8,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 3602
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 393.1,
+ "response_id": "EdX9auPSBqOQytMPu9HHuQg",
+ "generated_at": "2026-11-18T16:47:21+0000"
+}

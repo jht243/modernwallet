@@ -93,6 +93,28 @@
       "officialHosts": [
         "www.ynab.com"
       ]
+    },
+    {
+      "route": "/alternatives/mercury/",
+      "vendorHost": "mercury.com",
+      "officialHosts": [
+        "mercury.com"
+      ]
+    },
+    {
+      "route": "/alternatives/bluevine/",
+      "vendorHost": "bluevine.com",
+      "officialHosts": [
+        "www.bluevine.com"
+      ]
+    },
+    {
+      "route": "/alternatives/empower/",
+      "vendorHost": "empower.com",
+      "officialHosts": [
+        "www.empower.com",
+        "empower.com"
+      ]
     }
   ]
 }
