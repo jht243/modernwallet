@@ -304,43 +304,65 @@ def core_api():
     )
 
 
-def _auto_discover_reuse_dir(root, directory, phase, actor, context_id, context_epoch):
+def _auto_discover_reuse_dir(root, directory, phase, actor, context_id, context_epoch, run_id=None):
     """Auto-bind --reuse on warm SendMessage continuations when the worker omits --reuse."""
-    if not (actor and context_id and context_epoch):
-        return None
+    if not actor:
+        return None, None
     root_res = root.resolve()
     dir_res = directory.resolve()
     search_parents = []
     for p in (dir_res.parent, dir_res.parent.parent):
-        if p == root_res or root_res not in p.parents:
+        if p == root_res or root_res not in p.parents or p.name == 'reports':
             continue
         if p not in search_parents:
             search_parents.append(p)
     candidates = []
+    seen_cands = set()
     for parent in search_parents:
         if not parent.is_dir():
             continue
         for child in parent.iterdir():
-            if not child.is_dir() or child.resolve() == dir_res:
+            if not child.is_dir():
                 continue
-            mf = child / 'manifest.json'
-            if mf.is_file():
+            c_res = child.resolve()
+            if c_res != dir_res and c_res not in seen_cands and (child / 'manifest.json').is_file():
+                seen_cands.add(c_res)
                 candidates.append(child)
+            if parent == dir_res.parent.parent:
+                try:
+                    for sub in child.iterdir():
+                        if not sub.is_dir():
+                            continue
+                        s_res = sub.resolve()
+                        if s_res != dir_res and s_res not in seen_cands and (sub / 'manifest.json').is_file():
+                            seen_cands.add(s_res)
+                            candidates.append(sub)
+                except OSError:
+                    pass
     candidates.sort(key=lambda c: (c / 'manifest.json').stat().st_mtime, reverse=True)
+    fallback_cand = None
+    fallback_m = None
     for cand in candidates:
         try:
             m = load(cand)
+            if m.get('phase') != phase or m.get('actor') != actor:
+                continue
+            if run_id and m.get('runId') and m.get('runId') != run_id:
+                continue
+            validate(root, cand, require_delivery=True)
             if (
-                m.get('phase') == phase
-                and m.get('actor') == actor
+                context_id
+                and context_epoch
                 and m.get('contextId') == context_id
-                and m.get('contextEpoch') == context_epoch
+                and str(m.get('contextEpoch')) == str(context_epoch)
             ):
-                validate(root, cand, require_delivery=True)
-                return cand
+                return cand, m
+            if fallback_cand is None:
+                fallback_cand = cand
+                fallback_m = m
         except Exception:
             continue
-    return None
+    return fallback_cand, fallback_m
 
 
 def prepare(root, phase, instructions, directory, cloud=False, reuse=None, actor="worker", run_id=None,
@@ -348,7 +370,14 @@ def prepare(root, phase, instructions, directory, cloud=False, reuse=None, actor
             publication_preparation=None):
     if reuse is None and not publication_preparation:
         eff_ctx = context_id or os.environ.get('CLAUDE_CODE_SESSION_ID') or os.environ.get('CLAUDE_CODE_REMOTE_SESSION_ID')
-        reuse = _auto_discover_reuse_dir(root, directory, phase, actor, eff_ctx, context_epoch)
+        auto_cand, auto_m = _auto_discover_reuse_dir(root, directory, phase, actor, eff_ctx, context_epoch, run_id=run_id)
+        if auto_cand is not None:
+            reuse = auto_cand
+            if isinstance(auto_m, dict):
+                if auto_m.get('contextId'):
+                    context_id = auto_m['contextId']
+                if auto_m.get('contextEpoch'):
+                    context_epoch = str(auto_m['contextEpoch'])
     # Capture/check the exit code directly: no shell pipeline can turn failure into success.
     command = ['bash', str(root / '.claude/tools/workflow-start.sh')]
     is_cloud = cloud or str(os.environ.get('CLAUDE_CODE_REMOTE', '')).strip().lower() in ('1', 'true', 'yes')
@@ -506,8 +535,23 @@ def main():
     directory = inside(ROOT, args.run_dir)
     try:
         if args.command == 'prepare':
+            reuse_dir = inside(ROOT, args.reuse) if args.reuse else None
+            if reuse_dir is not None and os.environ.get('STRICT_CLI_REUSE_EPOCH') != '1':
+                try:
+                    pm = load(reuse_dir)
+                    if (
+                        pm.get('phase') == args.phase
+                        and pm.get('actor') == args.actor
+                        and (not args.run_id or not pm.get('runId') or pm.get('runId') == args.run_id)
+                    ):
+                        if pm.get('contextId'):
+                            args.context_id = pm['contextId']
+                        if pm.get('contextEpoch'):
+                            args.context_epoch = str(pm['contextEpoch'])
+                except Exception:
+                    pass
             m = prepare(ROOT, args.phase, args.instruction, directory, args.cloud,
-                        inside(ROOT, args.reuse) if args.reuse else None, args.actor, args.run_id,
+                        reuse_dir, args.actor, args.run_id,
                         args.context_id, args.context_epoch, args.handoff,
                         inside(ROOT, args.reuse_application) if args.reuse_application else None, args.context_packet, args.source,
                         args.publication_preparation)

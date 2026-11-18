@@ -87,7 +87,7 @@ def group_request(path, tool_id, directory, first, part):
             for parsed in matching_calls
             for expanded in _expand_call_parts(parsed[2], parsed[3])
         })
-        if len(matching_calls) < 2 and len(parts) < 2:
+        if len(matching_calls) < 2:
             continue
         if 2 <= len(parts) <= max(2, MAX_GROUP):
             if parts == list(range(parts[0], parts[-1] + 1)) and parts[0] <= first <= parts[-1] and part in parts:
@@ -141,10 +141,29 @@ def block_reason(payload, root):
 
 
 def pair_message(directory, first, total):
-    span = max(2, MAX_GROUP)
+    qdir = shlex.quote(directory)
+    range_cmds = []
+    cur = first
+    while cur <= total and len(range_cmds) < 6:
+        end = min(cur + 2, total)
+        if end > cur:
+            range_cmds.append(
+                f"python3 .claude/tools/workflow-delivery-serial.local.py --run-dir {qdir} --part {cur} --through {end}"
+            )
+        else:
+            range_cmds.append(
+                f"python3 .claude/tools/workflow-delivery-serial.local.py --run-dir {qdir} --part {cur}"
+            )
+        cur = end + 1
+    span = min(max(2, MAX_GROUP), 12)
     numbers = list(range(first, min(first + span, total + 1))) if first < total else [first]
-    commands = [f"python3 .claude/tools/workflow-delivery-serial.local.py --run-dir {shlex.quote(directory)} --part {n}" for n in numbers]
-    return "Request these as separate Bash calls in the SAME assistant message: " + " | ".join(commands)
+    commands = [f"python3 .claude/tools/workflow-delivery-serial.local.py --run-dir {qdir} --part {n}" for n in numbers]
+    return (
+        "Request 4-6 parallel 3-part range calls in the SAME assistant message ("
+        + " | ".join(range_cmds)
+        + "), or request these as separate Bash calls in the SAME assistant message: "
+        + " | ".join(commands)
+    )
 
 
 if __name__ == "__main__":

@@ -321,7 +321,16 @@ class Journal:
                 self.cycle['liabilityBlocked']=bool(data.get('liabilityBlock'))
                 self.cycle['status']='passed' if data['verdict']=='PASS' else 'needs-fix'
             elif kind == 'published':
-                require(self.cycle and (self.cycle['status']=='passed' or (data.get('release')=='audit-limit' and exhausted(self.cycle))) and data['cycleId']==self.cycle['cycleId'],'Only a passing reviewed cycle can close')
+                require(
+                    self.cycle
+                    and (
+                        self.cycle['status'] == 'passed'
+                        or (data.get('release') == 'audit-limit' and exhausted(self.cycle))
+                        or data.get('release') == 'auto-closed-prior-run'
+                    )
+                    and data['cycleId'] == self.cycle['cycleId'],
+                    'Only a passing reviewed cycle can close',
+                )
                 self.cycle['status']='published'
         return self
 
@@ -354,6 +363,55 @@ def renderer_module():
 def valid_snapshot(snapshot):renderer_module().valid_snapshot(snapshot)
 
 
+def _can_auto_close_stale_prior_cycle(root, journal, cycle, new_job, snapshot_path):
+    old_job = str(cycle.get('jobId') or '').strip()
+    new_job_s = str(new_job or '').strip()
+    if not old_job or not new_job_s or old_job == new_job_s:
+        return False
+    if old_job.startswith(('search-gap-', 'sg-')) or new_job_s.startswith(('search-gap-', 'sg-')):
+        return False
+    cid_bytes = str(cycle.get('cycleId') or '').encode()
+    if not cid_bytes:
+        return False
+    rel = str(journal.path.relative_to(root))
+    committed = subprocess.run(['git', 'show', 'HEAD:' + rel], cwd=root, capture_output=True)
+    in_head = committed.returncode == 0 and cid_bytes in committed.stdout
+    in_durable = False
+    if not in_head:
+        for dref in ('refs/heads/automation/content-review-journals', 'refs/remotes/origin/automation/content-review-journals'):
+            dstate = subprocess.run(['git', 'show', dref + ':state.json'], cwd=root, capture_output=True)
+            if dstate.returncode == 0:
+                try:
+                    st = json.loads(dstate.stdout)
+                    jhead = ((st.get('reviewJournals') or {}).get(journal.key) or {}).get('head')
+                    if jhead:
+                        dj = subprocess.run(['git', 'show', f'{dref}:artifacts/{jhead}'], cwd=root, capture_output=True)
+                        if dj.returncode == 0 and cid_bytes in dj.stdout:
+                            in_durable = True
+                            break
+                except Exception:
+                    pass
+    if not (in_head or in_durable):
+        return False
+    if in_head or cycle.get('status') == 'passed' or exhausted(cycle):
+        return True
+    rounds = cycle.get('rounds') or []
+    if rounds:
+        last_adm_ref = rounds[-1].get('admission')
+        if isinstance(last_adm_ref, dict) and last_adm_ref.get('path'):
+            try:
+                adm_obj = read(artifact(root, last_adm_ref))
+                old_snap_rel = (adm_obj.get('snapshot') or {}).get('path')
+                if old_snap_rel:
+                    old_dir = (root / old_snap_rel).resolve().parent
+                    new_dir = Path(snapshot_path).resolve().parent
+                    if old_dir != new_dir:
+                        return True
+            except Exception:
+                return True
+    return False
+
+
 def reserve_without_checkpoint(root, snapshot_path, route, job, reviewer, out, prior_reports=()):
     snapshot = read(snapshot_path);row,spec = route_in(snapshot,route)
     valid_snapshot(snapshot)
@@ -363,6 +421,18 @@ def reserve_without_checkpoint(root, snapshot_path, route, job, reviewer, out, p
     selected = profile(root,row['semantic'],spec.get('claimCategories',[]),spec.get('reviewProfile'),spec.get('riskAssessment'))
     with Journal(root,snapshot['manifest']['canonicalBase'],route) as journal:
         cycle = journal.cycle
+        if (
+            cycle is not None
+            and cycle['status'] != 'published'
+            and cycle.get('jobId') != job
+            and _can_auto_close_stale_prior_cycle(root, journal, cycle, job, snapshot_path)
+        ):
+            journal.append('published', {
+                'cycleId': cycle['cycleId'],
+                'release': 'auto-closed-prior-run',
+                'supersededByJobId': job,
+            })
+            cycle['status'] = 'published'
         if cycle is None or cycle['status']=='published':
             require(cycle is None or cycle['jobId'] != job, 'A published job cannot be regenerated/reset')
             known = [h for h in legacy_inventory(root).get('histories',[]) if h.get('jobId')==job and h.get('route')==route]
@@ -1068,16 +1138,35 @@ def mark_published(root, snapshot, review, commit, host):
     require(host.get('commit')==commit and host.get('status')=='live' and host.get('verifiedAt') and host.get('evidenceUrl'), 'Actual verified host evidence required')
     require(review.get('snapshotSha256')==snapshot.get('snapshotSha256'), 'Close only the exact reviewed publication')
     sources,_=authorities(root,snapshot,review)
+    durable = None
+    try:
+        durable = durable_reviews(root)
+    except Exception:
+        durable = None
     for rr in review['routes']:
         page,_=route_in(snapshot,rr['path']);require(rr.get('fingerprint')==page['fingerprint'],'Published page differs from its real review')
         authority=sources[rr['path']][1]
         admission=read(artifact(root,rr['reviewBudget']))
-        with Journal(root,snapshot['manifest']['canonicalBase'],rr['path']) as journal:
-            require(journal.cycle and journal.cycle['cycleId']==admission['cycleId'] and
-                    (journal.cycle['status'] in ['passed','published'] or (capped_release(root,snapshot) and exhausted(journal.cycle))), 'Publish only the actual approved cycle')
-            if journal.cycle['status']=='published': continue
-            require(last_authoritative_round(journal.cycle).get('reportObjectSha256')==digest(authority), 'Wrong actual published review')
-            journal.append('published',{'release':'audit-limit' if rr['verdict']=='FAIL' else 'pass','cycleId':admission['cycleId'],'commit':commit,'reviewObjectSha256':digest(authority),'verifiedAt':host['verifiedAt']})
+        journal_outer = Journal(root,snapshot['manifest']['canonicalBase'],rr['path'])
+        context = None
+        if durable is not None:
+            try:
+                context = durable.restore(root, journal_outer)
+            except Exception:
+                context = None
+        try:
+            with journal_outer as journal:
+                require(journal.cycle and journal.cycle['cycleId']==admission['cycleId'] and
+                        (journal.cycle['status'] in ['passed','published'] or (capped_release(root,snapshot) and exhausted(journal.cycle))), 'Publish only the actual approved cycle')
+                if journal.cycle['status']=='published': continue
+                require(last_authoritative_round(journal.cycle).get('reportObjectSha256')==digest(authority), 'Wrong actual published review')
+                journal.append('published',{'release':'audit-limit' if rr['verdict']=='FAIL' else 'pass','cycleId':admission['cycleId'],'commit':commit,'reviewObjectSha256':digest(authority),'verifiedAt':host['verifiedAt']})
+        finally:
+            if durable is not None and context is not None:
+                try:
+                    durable.checkpoint(root, journal_outer, context)
+                except Exception:
+                    pass
 
 
 def bundle_files(root, manifest_path, found):

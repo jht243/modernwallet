@@ -77,4 +77,23 @@ class Tests(unittest.TestCase):
      self.assertFalse(m.running(stop_payload))
     unrelated={'hook_event_name':'Stop','background_tasks':[{'task_id':'t2','task_type':'local_agent','description':'Unbound stage'}]}
     self.assertFalse(m.running(unrelated))
+ def test_duplicate_cold_mindmap_stage_spawn_blocked_once_preflight_exists(self):
+  import subprocess
+  with tempfile.TemporaryDirectory() as directory:
+   root=Path(directory);subprocess.run(['git','init','-q'],cwd=root,check=True)
+   with patch.dict(os.environ,{'CLAUDE_PROJECT_DIR':str(root)}):
+    # First WRITE spawn succeeds
+    m.bind({'tool_name':'Agent','permission_mode':'auto','tool_input':{'subagent_type':'mindmap-write','description':'Batch 1 WRITE','run_in_background':False}})
+    # Before preflight-write/manifest.json exists, a retry of the initial spawn is still allowed
+    m.bind({'tool_name':'Agent','permission_mode':'auto','tool_input':{'subagent_type':'mindmap-write','description':'Batch 1 WRITE retry','run_in_background':False}})
+    # Once Worker 1 creates preflight-write/manifest.json, a 2nd cold spawn without resume is hard-blocked!
+    pf=root/'reports/mindmap-pass/run-1/preflight-write/manifest.json'
+    pf.parent.mkdir(parents=True,exist_ok=True);pf.write_text('{"phase":"write"}')
+    err=io.StringIO()
+    with contextlib.redirect_stderr(err),self.assertRaises(SystemExit) as ctx:
+     m.bind({'tool_name':'Agent','permission_mode':'auto','tool_input':{'subagent_type':'mindmap-write','description':'Batch 2 cold WRITE','run_in_background':False}})
+    self.assertEqual(ctx.exception.code,2)
+    self.assertIn('SendMessage',err.getvalue())
+    # Resuming via Agent(resume=...) is allowed
+    m.bind({'tool_name':'Agent','permission_mode':'auto','tool_input':{'subagent_type':'mindmap-write','description':'Batch 2 warm WRITE','resume':'agent-123','run_in_background':False}})
 if __name__=='__main__':unittest.main()

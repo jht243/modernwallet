@@ -42,7 +42,7 @@
     {
       "sha256": "433bc827af6dd4d6b7219394aa8dcacce623ade86af052b9a739e049abdc65dc",
       "commit": "95a778093a35ea66a15fdaefc43b9864ad9f988d",
-      "reason": "Preserve independent reviews recorded before the owner changed this site’s default and minimum editorial review levels."
+      "reason": "Preserve independent reviews recorded before the owner changed this site\u2019s default and minimum editorial review levels."
     },
     {
       "sha256": "c9a60ad70ed51c9e2998e2ca855d489a288bef5f8b6832b0c89f7ff559882c8f",
@@ -83,6 +83,11 @@
       "sha256": "90b830b5478d8e05537db25f2ad142621b9d24e4f5c0f22f9f46ce902da0d6bf",
       "commit": "69c5fecd47ffc62b0dbf1d059ec4e46bccb04f24",
       "reason": "Preserve recorded admissions, counters and candidate snapshots across the November 17 Round-3 legal/medical quote-edit deadlock fix."
+    },
+    {
+      "sha256": "d8c9efc2fef5e3be9bf6ad17394d3541ca08894eb5803079cd7e2c02746e9f4a",
+      "commit": "32a6d2f21c665d28dd6e4c331ba3e5b2ec6c4198",
+      "reason": "Preserve recorded admissions, counters and candidate snapshots across the November 18 durable mark_published checkpoint and stale cross-run journal auto-close update."
     }
   ],
   "releaseAtAuditLimit": true,

@@ -52,6 +52,34 @@ def _load_bound_descriptions(root,sid):
  except Exception:
   return set()
 
+def _normalize_mindmap_stage(subagent_type):
+ role=str(subagent_type or '').strip().lower()
+ for stage in ('chart-review','build','write','audit'):
+  if role==f'mindmap-{stage}' or role==f'layer3-mindmap-{stage}' or role.endswith(f'-mindmap-{stage}'):
+   return stage
+ return None
+
+def _find_prior_stage_worker(root,sid,stage):
+ p=_registry_file(root,sid)
+ if p is None or not p.is_file():return None
+ now=time.time()
+ try:
+  entries=json.loads(p.read_text())
+  if not isinstance(entries,list):return None
+ except Exception:
+  return None
+ prior=None
+ for e in entries:
+  if not isinstance(e,dict) or now-float(e.get('boundAt',0))>REGISTRY_TTL:continue
+  if _normalize_mindmap_stage(e.get('subagentType'))==stage:
+   prior=e
+ if prior is None:return None
+ reports_dir=root/'reports'
+ if not reports_dir.is_dir():return None
+ if any(reports_dir.glob(f'**/preflight-{stage}*/manifest.json')):
+  return prior
+ return None
+
 def _project_root(payload=None):
  env_dir=os.environ.get('CLAUDE_PROJECT_DIR') or (payload or {}).get('cwd')
  if env_dir:return Path(env_dir).resolve()
@@ -123,6 +151,21 @@ def bind(payload):
    print(str(error),file=sys.stderr);raise SystemExit(2)
  value=payload.get('tool_input',{});tag=worker_tag(payload)
  if not tag or not isinstance(value,dict):return
+ if sid and not value.get('resume') and os.environ.get('ALLOW_COLD_MINDMAP_STAGE_RESPAWN')!='1':
+  stage=_normalize_mindmap_stage(value.get('subagent_type'))
+  if stage is not None:
+   prior=_find_prior_stage_worker(root,sid,stage)
+   if prior is not None:
+    stype=str(value.get('subagent_type') or f'mindmap-{stage}')
+    pdesc=str(prior.get('description') or stype)
+    print(
+     f'BLOCKED: A warm {stype} worker ("{pdesc}") already ran in this session and created preflight-{stage}. '
+     f'Never cold-spawn a second {stype} subagent via Agent for Round-2 rework or Batch 2+ — '
+     f'use SendMessage (to your existing warm {stype} agentId) or Agent(resume: <agentId>) with --reuse <prev_preflight_dir> '
+     f'so unchanged rules stay in context at zero reread cost!',
+     file=sys.stderr,
+    )
+    raise SystemExit(2)
  description=value.get('description')
  if isinstance(description,str) and description.strip():
   _record_bound_worker(root,sid,description,value.get('subagent_type',''))
