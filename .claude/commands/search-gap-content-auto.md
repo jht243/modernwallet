@@ -30,6 +30,7 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 > **Standalone `list-gaps` rule (no pipes / `|| true`):** Run `list-gaps` (`job_worker.py` or `search_gap_worker.mts`) as a direct standalone command — NEVER pipe it to `tail`/`head`/`cat` and NEVER append `|| true`, which PreToolUse blocks.
 > **Standalone `list-gaps` rule (no pipes / `|| true`):** Run `list-gaps` (`job_worker.py` or `search_gap_worker.mts`) as a direct standalone command — NEVER pipe it to `tail`/`head`/`cat` and NEVER append `|| true`, which PreToolUse blocks.
 > **Standalone `list-gaps` rule (no pipes / `|| true`):** Run `list-gaps` (`job_worker.py` or `search_gap_worker.mts`) as a direct standalone command — NEVER pipe it to `tail`/`head`/`cat` and NEVER append `|| true`, which PreToolUse blocks.
+> **Standalone `list-gaps` rule (no pipes / `|| true`):** Run `list-gaps` (`job_worker.py` or `search_gap_worker.mts`) as a direct standalone command — NEVER pipe it to `tail`/`head`/`cat` and NEVER append `|| true`, which PreToolUse blocks.
 <!-- /turn1-telemetry-opt-v1 -->
 
 
