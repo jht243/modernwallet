@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-17T16:09:34.159Z",
+  "generated": "2026-11-19T16:10:01.568Z",
   "rows": [
     {
       "vertical": "dataannotation-alternatives",
@@ -15,9 +15,19 @@
       "label": "AI investing apps",
       "roundupSlug": "best-ai-investing-apps",
       "route": "ENRICH",
-      "qualified": 17,
+      "qualified": 18,
       "listed": 16,
       "missing": [
+        {
+          "domain": "investingintheweb.com",
+          "name": "Best AI Investing Apps and Software in 2026",
+          "site_url": "https://investingintheweb.com",
+          "one_liner": "Sep 21, 2026 — In this article, we will compare the best AI investing apps and software available in 2026, considering their features, benefits, ...",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 4,
+          "primary_email": "success@investingintheweb.com"
+        },
         {
           "domain": "ainvest.com",
           "name": "AI Investing App: Trade Stocks With AI Analysis",
@@ -118,21 +128,10 @@
       "vertical": "budgeting-apps-for-couples",
       "label": "budgeting apps for couples",
       "roundupSlug": "best-budgeting-apps-for-couples",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 19,
-      "listed": 18,
-      "missing": [
-        {
-          "domain": "spendaq.com",
-          "name": "The best budget app for couples and households (no bank ...",
-          "site_url": "https://spendaq.com",
-          "one_liner": "Jul 27, 2026 — The best couples budget app is one you'll both actually keep using: fast to log, private, and able to separate joint spending from personal ... Read more",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 11,
-          "primary_email": "support@spendaq.com"
-        }
-      ]
+      "listed": 19,
+      "missing": []
     },
     {
       "vertical": "401k-providers-for-small-business",
@@ -297,7 +296,7 @@
       "label": "personal loan lenders",
       "roundupSlug": "personal-loan-rates-by-lender",
       "route": "ENRICH",
-      "qualified": 22,
+      "qualified": 23,
       "listed": 20,
       "missing": [
         {
@@ -319,6 +318,16 @@
           "has_pricing": false,
           "serp_rank": 9,
           "primary_email": null
+        },
+        {
+          "domain": "padit.app",
+          "name": "Padit",
+          "site_url": "https://padit.app",
+          "one_liner": "Show HN: Padit – Local-first personal finance app",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": null,
+          "primary_email": "hallo@padit.app"
         }
       ]
     },

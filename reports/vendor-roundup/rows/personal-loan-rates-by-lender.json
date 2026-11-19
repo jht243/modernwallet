@@ -1,14 +1,1 @@
-{
-  "slug": "personal-loan-rates-by-lender",
-  "rows": [],
-  "cut": [
-    {
-      "domain": "stoke.money",
-      "why": "category 4 \u2014 wrong category: redirects to sconemoney.com, a cash-flow forecasting app, not a lender"
-    },
-    {
-      "domain": "maali.app",
-      "why": "category 4 \u2014 wrong category: personal spending-tracker app ($99 one-time), not a lender; fits a budgeting-apps vertical"
-    }
-  ]
-}
+{"slug":"personal-loan-rates-by-lender","rows":[],"cut":[{"domain":"padit.app","why":"category 3 — German-language EUR budgeting app, outside US personal-loan scope (fits budgeting category only if US-available)"}]}
