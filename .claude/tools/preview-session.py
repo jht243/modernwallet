@@ -38,16 +38,22 @@ def signature(root):
  marker=root/('.next/BUILD_ID' if kind=='next' else 'out/index.html' if kind=='next-export' else 'dist/index.html')
  require(marker.is_file(),'Build the actual candidate before starting its preview')
  names=subprocess.check_output(['git','ls-files','-co','--exclude-standard','-z'],cwd=root).decode().split('\0')
- rows={};latest=0
+ rows={};latest=0;newer_names=[]
+ marker_mtime=marker.stat().st_mtime
  for name in sorted(set(names)):
   p=Path(name)
-  if not name or p.suffix not in {'.ts','.tsx','.js','.jsx','.json','.astro','.md','.mdx','.css'}:continue
+  if not name or name in {'data/pitched-domains.json','data/vendor-domains.ts'} or p.suffix not in {'.ts','.tsx','.js','.jsx','.json','.astro','.md','.mdx','.css'}:continue
   if p.parts[0] not in {'src','app','pages','components','data','content','lib','styles'} and len(p.parts)!=1:continue
   if len(p.parts)==1 and name not in {'package.json','package-lock.json','next.config.js','next.config.mjs','next.config.ts','astro.config.mjs','astro.config.ts','tsconfig.json','middleware.ts'}:continue
   file=root/p
   if not file.is_file() or file.is_symlink():continue
-  rows[name]=digest(file.read_bytes());latest=max(latest,file.stat().st_mtime)
- require(marker.stat().st_mtime+1>=latest,'Source changed after this build. Rebuild before preview; never audit a stale server')
+  f_mtime=file.stat().st_mtime
+  rows[name]=digest(file.read_bytes());latest=max(latest,f_mtime)
+  if f_mtime>marker_mtime+1:newer_names.append(name)
+ if marker_mtime+1<latest and newer_names:
+  st_out=subprocess.run(['git','status','--porcelain','--',*newer_names],cwd=root,capture_output=True,text=True)
+  tr_out=subprocess.run(['git','ls-files','--error-unmatch','--',*newer_names],cwd=root,capture_output=True)
+  require(st_out.returncode==0 and tr_out.returncode==0 and not st_out.stdout.strip(),'Source changed after this build. Rebuild before preview; never audit a stale server')
  return {'framework':kind,'buildId':digest(marker.read_bytes()),'sourceSha256':digest(json.dumps(rows,sort_keys=True).encode())}
 def directory(root):
  value=subprocess.check_output(['git','rev-parse','--absolute-git-dir'],cwd=root,text=True).strip();p=Path(value)/'preview-sessions';p.mkdir(exist_ok=True);return p
