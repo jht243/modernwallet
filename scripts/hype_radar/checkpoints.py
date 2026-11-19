@@ -3,16 +3,17 @@ import hashlib
 import importlib.util
 import json
 import os
+import subprocess
 from pathlib import Path
 import tempfile
 
 REF = "refs/heads/automation/hype-control"
 
 
-def backend(root):
-    if not (os.environ.get("HYPE_DURABLE_RUN") == "1" or os.environ.get("CLAUDE_CODE_REMOTE_SESSION_ID") or os.environ.get("CLAUDE_CODE_REMOTE", "").lower() in ("1","true","yes")):
+def backend(root, durable=False):
+    if not (durable or os.environ.get("CLAUDE_CODE_REMOTE_SESSION_ID") or os.environ.get("CLAUDE_CODE_REMOTE", "").lower() in ("1","true","yes")):
         return None
-    path = root / ".claude/tools/workflow-control-store.py"
+    path = root / "scripts/routine_control.py"
     spec = importlib.util.spec_from_file_location("hype_git_store", path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
@@ -32,6 +33,15 @@ def replace(path, raw):
     os.replace(f.name,path)
 
 
+def production_complete(value):
+    if not value:return False
+    if value.get('state')=='retired' and bool(str(value.get('retiredReason') or '').strip()):return True
+    if value.get('state')!='complete':return False
+    if value.get('kind')!='hype-retained-publication-v1':return True
+    proof=value.get('hostVerification',{})
+    return proof.get('status')=='live' and proof.get('purpose')=='host-deployment-evidence' and bool(value.get('completedLiveSnapshot'))
+
+
 def restore(root):
     connection = backend(root)
     if not connection:
@@ -46,25 +56,11 @@ def restore(root):
         if len(digest)!=64 or any(c not in "0123456789abcdef" for c in digest):
             raise ValueError("Invalid Hype checkpoint digest")
         known.update(row["names"])
-        packet = row.get("chartRecovery")
-        if packet:
-            import subprocess
-            base = Path(subprocess.check_output(["git","rev-parse","--absolute-git-dir"],cwd=root,text=True).strip())/"hype-resume"/digest
-            raw = module.git(root, "show", revision+":artifacts/"+packet["sha256"]).stdout
-            if hashlib.sha256(raw).hexdigest() != packet["sha256"]:
-                raise ValueError("Retained reviewed Hype chart changed")
-            rel = Path(packet["path"])
-            if rel.is_absolute() or ".." in rel.parts or rel.parts[:2] != ("reports","mindmap-pass"):
-                raise ValueError("Invalid reviewed Hype chart destination")
-            replace(base/rel,raw)
-            for name,key in [("approval-manifest.json","manifest"),("chart-review.json","review")]:
-                value=json.dumps(packet[key],sort_keys=True,separators=(",",":"),ensure_ascii=False).encode()
-                if hashlib.sha256(value).hexdigest()!=row["review"][key]:
-                    raise ValueError("Retained Hype chart judgment changed")
-                replace(base/name,value)
-            print("Original independently reviewed Hype chart and decision files:",base)
         path = root/"reports/hype-radar/intakes"/(digest+".json")
-        if row.get("review") and not row["review"].get("productionTargets") and not path.exists():
+        production=row.get('production')
+        if production:
+            replace(path.parent/'production'/path.name,(json.dumps(production,sort_keys=True)+'\n').encode())
+        if row.get("review") and (not production or production_complete(production)) and not path.exists():
             replace(path.parent/"reviewed"/path.name, (json.dumps(row["review"],sort_keys=True)+"\n").encode())
             continue
         if not path.exists():
@@ -88,15 +84,18 @@ def persist(root, path):
         raise ValueError("Preserve the exact Hype input")
     names = sorted({name.casefold() for row in json.loads(raw)["candidates"]
                     for name in [row["name"], *row.get("aliases",[])]})
+    branch=subprocess.run(['git','symbolic-ref','--short','HEAD'],cwd=root,capture_output=True,text=True)
+    production={'state':'pending'}
+    if branch.returncode==0:production['sourceRef']='refs/heads/'+branch.stdout.strip()
     _, old = store.read()
     if digest in data(old)["intakes"]:
         return
     def add(state):
-        data(state)["intakes"].setdefault(digest, {"names":names})
+        data(state)["intakes"].setdefault(digest, {"names":names,'production':production})
     store.mutate(add, [str(path.relative_to(root))])
 
 
-def reviewed(root, proof, plan, verdict):
+def reviewed(root, proof, production_required=True):
     connection = backend(root)
     if not connection:
         return
@@ -106,11 +105,26 @@ def reviewed(root, proof, plan, verdict):
         if row.get("review") and row["review"] != proof:
             raise ValueError("The original reviewed Hype handoff is already closed")
         row["review"] = proof
-        if proof.get("productionTargets"):
-            row["chartRecovery"] = {"path":plan["chartPath"], "sha256":hashlib.sha256(chart.read_bytes()).hexdigest(),
-                                    "manifest":plan,"review":verdict}
-    chart = root / plan["chartPath"]
-    store.mutate(close, [plan["chartPath"]] if proof.get("productionTargets") else [])
+        if not production_required:row['production']={'state':'complete','reason':'independently-reviewed-no-addition','chartReview':proof['review']}
+    store.mutate(close)
+
+
+def publication(root, digest, value, durable=False):
+    """Retain inputs/status, never grant an audit PASS or publication authority."""
+    connection=backend(root,durable)
+    if connection:
+        _,store=connection
+        def change(state):
+            row=data(state)['intakes'].get(digest)
+            if row is None or not row.get('review'):raise ValueError('Restore the original independently reviewed Hype handoff')
+            if value.get('jobId') and value['jobId']!=row['review']['job']:raise ValueError('Publication belongs to another canonical job')
+            previous=row.get('production',{})
+            if previous.get('state')=='complete' and previous!=value:
+                if value.get('state')!='complete' or any(value.get(k)!=v for k,v in previous.items()):raise ValueError('Do not reopen completed production')
+            row['production']=value
+        store.mutate(change)
+    target=root/'reports/hype-radar/intakes/production'/(digest+'.json')
+    replace(target,(json.dumps(value,sort_keys=True)+'\n').encode())
 
 
 def reserve_writer(root,key,local,admit):

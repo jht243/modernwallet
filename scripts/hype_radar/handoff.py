@@ -40,29 +40,32 @@ def marker(root, session):
     return Path(folder) / "hype-dispatch" / fingerprint(session.encode())
 
 
-def production():
-    spec=importlib.util.spec_from_file_location('native_hype_production',Path(__file__).with_name('production_recovery.py'))
-    value=importlib.util.module_from_spec(spec);spec.loader.exec_module(value);return value
-
-
 def announce(root, source):
     data = source.read_bytes()
-    receipt=source.parent/'reviewed'/source.name
-    if receipt.is_file():
-        proof=json.loads(receipt.read_bytes());remaining=production().outstanding(root,proof)
-        if remaining:
-            archive = production().restore_work(root,proof)
-            if archive: print('Recovered the original reviewed plan, candidate and available audit evidence in '+str(archive)+'. Use them directly; apply only the identified changes to current source.')
-            if active_session():save(marker(root,active_session()),str(source.relative_to(root)).encode())
-            print('Resume original Hype production job '+proof['job']+' from branch '+str(proof.get('workBranch') or 'its retained native evidence')+'. Remaining routes: '+json.dumps(remaining)+'. Reuse its chart and draft. Inspect original audit records and counters. If an informal independent FAIL exists without its native admission, retain that finding and its consumed round honestly. Never classify a missing admission as a PASS or reset the tier. Complete native AUDIT preparation and reservation BEFORE every new independent content review. Use exact reviewer-prescribed mechanical corrections where authorized; keep real testing/exclusion and build/live checks. Publish eligible exact candidates under the current native limit. No new harvest or chart.')
+    production=source.parent/'production'/source.name
+    if production.is_file():
+        state=json.loads(production.read_bytes())
+        if state.get('sourceCommit') and not checkpoint_module().production_complete(state):
+            print('RETAINED PUBLICATION: resume this exact canonical job before discovery. No BUILD, new writing or content audit; validate and reuse its real recorded judgments.')
+            if state.get('state')=='complete':print('VERIFICATION ONLY: content already published. Reuse completedSnapshot/completedReview and the existing genuine live-snapshot-v4.json from this job. Run publication.py complete with --live-snapshot to obtain actual credential-free host provenance. Do not cherry-pick, republish content, regenerate or re-audit.')
+            print(json.dumps(state,sort_keys=True))
+            print('MAIN performs mechanical PUBLISH with the existing checked-in helpers under normal platform permissions. Do not delegate production writes to an Agent or bypass an approval denial.')
+            session=active_session()
+            if session:save(marker(root,session),str(source.relative_to(root)).encode())
+            return
+        reviewed=source.parent/'reviewed'/source.name
+        if reviewed.is_file() and not checkpoint_module().production_complete(state):
+            print('RETAINED CHART: preparation already passed. Recover the same candidate and counters from its owned branch; do not restart BUILD/chart review or paid generation. Missing artifacts remain a real pending recovery, never permission to regenerate.')
+            print(json.dumps({'pull':source.stem,'review':json.loads(reviewed.read_bytes()),'production':state},sort_keys=True))
+            session=active_session()
+            if session:save(marker(root,session),str(source.relative_to(root)).encode())
             return
     print(f"Mindmap handoff required for ALL candidates: {source} sha256={fingerprint(data)}")
     print("Persist the frozen intake and ledger; dispatch BUILD with this SHA, the full candidate list and all original evidence. Complete the existing independent chart review and handoff.py finish before closing.")
     date = json.loads(data)["generated_at"][:10]
     chart = root / "reports/mindmap-pass" / f"{date}-hype-{source.stem[:12]}.md"
     print(f"Use chartPath {chart.relative_to(root)} for this intake and for both angle checks; preserve earlier charts.")
-    if any(c.get("angles") for c in json.loads(data)["candidates"]):
-        print("Angle lens: during Step 1 (chart building), read `scripts/hype_radar/ANGLE_LENS.md` and apply it to every candidate's angle tally below.")
+    print("Angle lens: during Step 1 (chart building), read `scripts/hype_radar/ANGLE_LENS.md` and apply it to every candidate's angle tally below.")
     session = active_session()
     if session:
         save(marker(root, session), str(source.relative_to(root)).encode())
@@ -103,7 +106,19 @@ def pending(root):
             return source
         proof = json.loads(receipt.read_text())
         validate_proof(source, proof)
-        if production().outstanding(root,proof):return source
+        production=directory/'production'/source.name
+        if production.is_file():
+            prod_state=json.loads(production.read_bytes())
+            if not checkpoint_module().production_complete(prod_state):
+                pub_path=Path(__file__).with_name('publication.py')
+                if pub_path.is_file():
+                    spec=importlib.util.spec_from_file_location('hype_publication_reconcile',pub_path)
+                    pub_mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(pub_mod)
+                    retired=pub_mod.reconcile_orphaned(root,source)
+                    if retired is not None:
+                        print(f"AUTO-RETIRED orphaned Hype job {retired.get('jobId') or source.stem[:12]}: {retired.get('retiredReason')} (sourceRef={retired.get('sourceRef')}, sourceCommit={str(retired.get('sourceCommit',''))[:12]})")
+                        continue
+                return source
     return None
 
 
@@ -121,6 +136,8 @@ def freeze(root, raw):
     if path.exists() and path.read_bytes() != raw:
         raise ValueError("Historical intake bytes changed")
     save(path, raw)
+    production=path.parent/'production'/path.name
+    if not production.exists() and not (path.parent/'reviewed'/path.name).exists():save(production,b'{"state":"pending"}\n')
     checkpoint_module().persist(root,path)
     announce(root, path)
     return path
@@ -134,19 +151,6 @@ def finish(root, source, manifest, review):
     gate = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(gate)
     plan, verdict = (json.loads(p.read_text()) for p in (manifest,review))
-    retained = source.parent / 'reviewed' / source.name
-    if retained.is_file():
-        proof = json.loads(retained.read_bytes())
-        validate_proof(source, proof)
-        stable = lambda obj: fingerprint(json.dumps(obj, sort_keys=True, separators=(',',':'), ensure_ascii=False).encode())
-        if (proof['manifest'] != stable(plan) or proof['review'] != stable(verdict)
-                or proof['job'] != verdict.get('jobId') or proof['reviewer'] != verdict.get('reviewer')):
-            raise ValueError('Use the unchanged original independently reviewed chart and verdict')
-        # Production is allowed to change the pre-write sources. The original
-        # chart was already validated against them and is bound by both hashes.
-        remaining = production().outstanding(root,proof)
-        print(json.dumps({'chart':'original-independent-review-retained','pendingPublication':remaining}))
-        return
     gate.chart(root, plan, verdict)
     gate.saved_chart(root, plan)
     acknowledge(root, source, plan, verdict)
@@ -165,16 +169,15 @@ def acknowledge(root, source, plan, verdict):
     digest = lambda value: fingerprint(json.dumps(value,sort_keys=True,separators=(",",":"),ensure_ascii=False).encode())
     receipt = {"pull":source.stem, "manifest":verdict["manifestSha256"], "review":digest(verdict),
                "job":verdict["jobId"], "reviewer":verdict["reviewer"], "candidates":names}
-    receipt['productionTargets']=production().publication_targets(plan)
-    receipt['workBranch']=production().work_reference(root)
     path = source.parent / "reviewed" / source.name
     encoded = (json.dumps(receipt,sort_keys=True)+"\n").encode()
     if path.exists():
         old=json.loads(path.read_text())
-        if old["pull"]!=source.stem or old["candidates"]!=names:
+        if old!=receipt:
             raise ValueError("Changed original Hype handoff")
-        return
-    checkpoint_module().reviewed(root,receipt,plan,verdict)
+    required=bool(plan.get('actions'))
+    checkpoint_module().reviewed(root,receipt,production_required=required)
+    if not required:save(source.parent/'production'/source.name,b'{"state":"complete","reason":"independently-reviewed-no-addition"}\n')
     save(path,encoded)
 
 
@@ -202,46 +205,10 @@ def active_pull(root, payload):
     source = root/path.read_text()
     receipt = source.parent / "reviewed" / source.name
     if receipt.is_file():
-        proof=json.loads(receipt.read_bytes())
-        validate_proof(source, proof)
-        return source if production().outstanding(root,proof) else None
+        validate_proof(source, json.loads(receipt.read_bytes()))
+        production=source.parent/'production'/source.name
+        if not production.is_file() or checkpoint_module().production_complete(json.loads(production.read_bytes())):return None
     return source
-
-
-
-def guard_paid_dispatch(root,payload):
-    session = active_session() or payload.get("session_id")
-    if not session:
-        return
-    active = marker(root,session)
-    if not active.is_file():
-        return
-    source = root/active.read_text()
-    receipt = source.parent/"reviewed"/source.name
-    if not receipt.is_file():
-        return
-    proof = json.loads(receipt.read_bytes())
-    validate_proof(source,proof)
-    task = payload.get("tool_input",{})
-    role = (str(task.get("subagent_type",""))+" "+str(task.get("description",""))).casefold()
-    chart = "chart" in role or re.search(r"\bbuild\b",role) and "preview" not in role
-    if chart and "render" not in role:
-        raise ValueError("The original Hype chart was independently reviewed. Use its preserved review, source and candidate. Resume production without repeating BUILD or chart review.")
-    if not any(label in role for label in ("auditor","audit","phase 4","phase-4","phase4")):
-        return
-    native = root/".claude/tools/workflow-handoff.py"
-    if not native.is_file(): return
-    spec = importlib.util.spec_from_file_location("hype_stage_handoff",native)
-    module = importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
-    for rel in set(re.findall(r"reports/[A-Za-z0-9._/-]+[.]json",str(task.get("prompt","")))):
-        path = (root/rel).resolve()
-        if not path.is_relative_to(root/"reports") or not path.is_file(): continue
-        try: handoff = json.loads(path.read_bytes())
-        except (UnicodeDecodeError,ValueError):continue
-        if not isinstance(handoff,dict) or handoff.get("jobId") != proof["job"] or not handoff.get("snapshot"):continue
-        module.focused(root,path,"audit")
-        return
-    raise ValueError("Before dispatching the independent content auditor, MAIN must seal the actual rendered AUDIT handoff for this Hype job and include its reports/...json path in the prompt. The auditor completes current preflight and reserves the real round before judging the page.")
 
 
 def report_guard(root, payload):
@@ -257,7 +224,14 @@ def report_guard(root, payload):
         lexer = shlex.shlex(command,posix=True,punctuation_chars=True)
         lexer.whitespace_split = True
         words = list(lexer)
-        bodies = [words[i+1] for i,w in enumerate(words[:-1]) if w in {"-d","--data","--data-binary","--json"}]
+        bodies = []
+        for i, w in enumerate(words):
+            if w in {"-d","--data","--data-binary","--data-raw","--json"} and i + 1 < len(words):
+                bodies.append(words[i+1])
+            elif any(w.startswith(prefix) for prefix in ("-d=","--data=","--data-binary=","--data-raw=","--json=")):
+                bodies.append(w.split("=",1)[1])
+            elif w.startswith("-d@") or w.startswith("-d{"):
+                bodies.append(w[2:])
         if len(bodies) == 1:
             body = bodies[0]
             if body.startswith("@"):
@@ -268,23 +242,27 @@ def report_guard(root, payload):
                 return
     except (ValueError,OSError,AttributeError):
         pass
-    print(f"Pending Hype candidates cannot be reported as a no-op or success. Dispatch BUILD with {source.relative_to(root)}. For a genuine terminal failure, post the existing native failure JSON with curl --data-binary @/absolute/path/report.json as a separate command. Keep the original work pending.",file=sys.stderr)
+    print(f"Pending Hype work cannot be reported as a no-op or success. Resume {source.relative_to(root)} and its retained stage; a chart receipt alone is not production completion. Preserve actual failures and do not repeat completed stages.",file=sys.stderr)
     raise SystemExit(2)
 
 
 def stop(root, payload):
     if payload.get('hook_event_name') == 'Stop' and payload.get('stop_hook_active') is True:
-        return  # The first reminder fired; report_guard still refuses false success.
+        return  # The first reminder already fired. Report guards still enforce completion.
     source = active_pull(root,payload)
     if source is None:
         return
+    production=source.parent/'production'/source.name
+    if production.is_file():
+        value=json.loads(production.read_bytes())
+        if value.get('state')=='blocked' or value.get('verificationBlockedReason'):return
     helper=root/'.claude/tools/native-worker-wait.py'
     if helper.is_file():
         spec=importlib.util.spec_from_file_location('native_hype_worker_wait',helper)
         worker_wait=importlib.util.module_from_spec(spec);spec.loader.exec_module(worker_wait)
         if worker_wait.running(payload):return
     # A completed worker is not the independently validated chart handoff.
-    print(json.dumps({"decision":"block","reason":f"Resume {source.relative_to(root)}. When chart proof exists, finish its outstanding production using the original work and counters. Otherwise dispatch BUILD with the frozen candidates. The dispatcher cannot drop the intake or finish as a no-op."}))
+    print(json.dumps({"decision":"block","reason":f"Resume {source.relative_to(root)} and its retained canonical stage. Reuse completed preparation/reviews; a chart receipt cannot close unfinished production. Respect an actual platform approval denial and report it honestly."}))
 
 
 if __name__ == "__main__":

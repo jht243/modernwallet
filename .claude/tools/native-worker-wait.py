@@ -87,19 +87,76 @@ def _project_root(payload=None):
  if (repo_candidate/'.git').exists():return repo_candidate
  return Path(os.getcwd()).resolve()
 
+ACTIVE_SUBAGENT_TTL = 1800
+_SUBAGENT_TYPES = ('subagent','local_agent','agent','in_process_teammate','remote_agent')
+_ACTIVE_STATUSES = ('running','in_progress','pending','queued','starting')
+
+
+def _active_subagents_file(root,sid):
+ if not sid:return None
+ try:
+  res=subprocess.run(['git','rev-parse','--git-path','native-worker-wait/active-'+hashlib.sha256(sid.encode()).hexdigest()+'.json'],cwd=root,capture_output=True,text=True)
+  if res.returncode!=0 or not res.stdout.strip():return None
+  p=Path(res.stdout.strip())
+  return p if p.is_absolute() else (root/p)
+ except Exception:
+  return None
+
+
+def record_subagent_event(payload,started):
+ sid=_session_id(payload)
+ if not sid:return
+ root=_project_root(payload)
+ p=_active_subagents_file(root,sid)
+ if p is None:return
+ aid=str(payload.get('agent_id') or payload.get('subagent_id') or payload.get('task_id') or '').strip()
+ if not aid:return
+ now=time.time()
+ try:
+  data=json.loads(p.read_text()) if p.is_file() else {}
+  if not isinstance(data,dict):data={}
+ except Exception:
+  data={}
+ data={k:v for k,v in data.items() if isinstance(v,dict) and now-float(v.get('startedAt',0))<=ACTIVE_SUBAGENT_TTL}
+ if started:
+  data[aid]={'startedAt':now,'agentType':str(payload.get('agent_type') or payload.get('subagent_type') or '')}
+ else:
+  data.pop(aid,None)
+ try:
+  p.parent.mkdir(parents=True,exist_ok=True)
+  p.write_text(json.dumps(data))
+ except Exception:
+  pass
+
+
+def _has_active_tracked_subagent(root,sid):
+ p=_active_subagents_file(root,sid)
+ if p is None or not p.is_file():return False
+ now=time.time()
+ try:
+  data=json.loads(p.read_text())
+  if not isinstance(data,dict):return False
+  return any(isinstance(v,dict) and now-float(v.get('startedAt',0))<=ACTIVE_SUBAGENT_TTL for v in data.values())
+ except Exception:
+  return False
+
+
 def running(payload):
  if payload.get('hook_event_name')!='Stop':return False
  sid=_session_id(payload);tag=worker_tag(payload);tasks=payload.get('background_tasks')
- if not sid or not tag or not isinstance(tasks,list):return False
+ if not sid or not tag:return False
  root=_project_root(payload)
+ if tasks is None:
+  return _has_active_tracked_subagent(root,sid)
+ if not isinstance(tasks,list):return False
  bound=_load_bound_descriptions(root,sid)
  for t in tasks:
   if not isinstance(t,dict):continue
-  ttype=t.get('type') or t.get('task_type')
-  if ttype not in ('subagent','local_agent'):continue
+  ttype=str(t.get('type') or t.get('task_type') or '').strip().lower()
+  if ttype not in _SUBAGENT_TYPES:continue
   status=t.get('status')
-  if status is not None and status not in ('running','in_progress'):continue
-  desc=t.get('description')
+  if status is not None and str(status).strip().lower() not in _ACTIVE_STATUSES:continue
+  desc=t.get('description') or t.get('name')
   if not isinstance(desc,str) or not desc.strip():continue
   if tag in desc:return True
   clean=desc.strip()
@@ -180,5 +237,14 @@ def bind(payload):
  print(json.dumps({'hookSpecificOutput':{'hookEventName':'PreToolUse','updatedInput':updated}}))
 
 if __name__=='__main__':
- if sys.argv[1:]!=['bind']:raise SystemExit('Use the native bind hook')
- bind(json.load(sys.stdin))
+ cmd=sys.argv[1:]
+ if cmd==['bind']:
+  bind(json.load(sys.stdin))
+ elif cmd==['subagent-start']:
+  try:record_subagent_event(json.load(sys.stdin),True)
+  except Exception:pass
+ elif cmd==['subagent-stop']:
+  try:record_subagent_event(json.load(sys.stdin),False)
+  except Exception:pass
+ else:
+  raise SystemExit('Use bind | subagent-start | subagent-stop')
