@@ -106,6 +106,9 @@ is_regenerable() {
   case "$1" in data/pages.generated.ts)
     [ -f .claude/scripts/merge-pages-generated.py ] && return 0 ;;
   esac
+  case "$1" in data/*-new.ts|data/comparisons-alternatives-*.ts)
+    [ -f .claude/scripts/merge-ts-entries.py ] && return 0 ;;
+  esac
   case "$1" in reports/*.jsonl|reports/*/*.jsonl)
     return 0 ;;
   esac
@@ -148,6 +151,10 @@ resolve_generated() {
           continue ;;
         data/pages.generated.ts)
           python3 .claude/scripts/merge-pages-generated.py --index "$f" || return 1
+          git add -- "$f" || return 1
+          continue ;;
+        data/*-new.ts|data/comparisons-alternatives-*.ts)
+          python3 .claude/scripts/merge-ts-entries.py --index "$f" || return 1
           git add -- "$f" || return 1
           continue ;;
         reports/*.jsonl|reports/*/*.jsonl)

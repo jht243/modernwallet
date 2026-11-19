@@ -138,7 +138,11 @@ FALLBACK_THINKING = os.environ.get("CONTENT_FALLBACK_THINKING", "").strip().lowe
 
 
 def _think_for(model: str) -> str:
-    if provider_for(model) != "anthropic" and FALLBACK_THINKING in ("low", "medium", "high"):
+    """Return the thinking level for `model`, treating FALLBACK_THINKING strictly as a ceiling (never upgrading `low` -> `medium`)."""
+    _lvls = ("low", "medium", "high")
+    if provider_for(model) != "anthropic" and FALLBACK_THINKING in _lvls:
+        if THINKING in _lvls:
+            return _lvls[min(_lvls.index(THINKING), _lvls.index(FALLBACK_THINKING))]
         return FALLBACK_THINKING
     return THINKING
 _t = os.environ.get("CONTENT_THINKING", "high").strip().lower()

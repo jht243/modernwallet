@@ -23,6 +23,8 @@ playbook's Phase 1c). Cost: one keyword_suggestions call per seed (~$0.02-0.06 e
 from __future__ import annotations
 
 import argparse
+import datetime as dt
+import hashlib
 import json
 import re
 import sys
@@ -32,6 +34,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts"))
 from lib import dataforseo as dfs  # noqa: E402
+from lib import semrush as sr  # noqa: E402
 
 COMMERCIAL = re.compile(r"\b(best|top|compan(y|ies)|software|services?|providers?|lenders?|insurance|"
                         r"insurers?|apps?|tools?|platforms?|firms?|vendors?|near me|programs?|plans?|"
@@ -76,6 +79,8 @@ def main() -> int:
     ap.add_argument("--seeds", default="", help="comma-separated seeds (overrides config expansionSeeds; layer3 passes these)")
     ap.add_argument("--min-volume", type=int, default=50)
     ap.add_argument("--limit", type=int, default=400)
+    ap.add_argument("--cache-days", type=int, default=14, help="Reuse cached monthly keyword suggestions per seed for N days (0 disables)")
+    ap.add_argument("--no-cache", action="store_true", help="Force live keyword_suggestions fetch ignoring disk cache")
     args = ap.parse_args()
 
     cfg = json.loads((ROOT / args.verticals_json).read_text())
@@ -106,15 +111,52 @@ def main() -> int:
     # 2. buyer-demand queries CONTAINING one of the site's seeds (keyword_suggestions — the tight
     #    expansion; keyword_ideas broad-matches and drifts off-topic, measured 2026-10-11 on HOA:
     #    "cloud accounting software", "home care services").
+    cache_path = ROOT / "reports" / "vendor-roundup" / ".category-candidates-cache.json"
+    cache_data: dict[str, dict] = {}
+    if not args.no_cache and args.cache_days > 0 and cache_path.is_file():
+        try:
+            loaded = json.loads(cache_path.read_text())
+            if isinstance(loaded, dict):
+                cache_data = loaded
+        except Exception:
+            cache_data = {}
+    now_utc = dt.datetime.now(dt.timezone.utc)
+    ttl_seconds = max(0, args.cache_days) * 86400
+    cache_dirty = False
+    cache_hits = 0
+
     demand: list[dict] = []
     seen: set[str] = set()
-    if seeds and dfs.available():
+    if seeds and (sr.available() or dfs.available() or cache_data):
         for seed in seeds:
-            try:
-                ideas = dfs.keyword_suggestions(seed, limit=args.limit, min_volume=args.min_volume)
-            except Exception as exc:
-                print(f"! keyword_suggestions({seed!r}) failed: {exc}", file=sys.stderr)
-                continue
+            ckey = hashlib.sha256(f"{seed.strip().lower()}|{args.limit}|{args.min_volume}".encode()).hexdigest()[:24]
+            ideas = None
+            if not args.no_cache and ttl_seconds > 0 and ckey in cache_data:
+                ent = cache_data.get(ckey) or {}
+                try:
+                    cached_at = dt.datetime.fromisoformat(str(ent.get("cachedAt", "")).replace("Z", "+00:00"))
+                    if (now_utc - cached_at).total_seconds() < ttl_seconds and isinstance(ent.get("ideas"), list):
+                        ideas = ent["ideas"]
+                        cache_hits += 1
+                except Exception:
+                    ideas = None
+            if ideas is None:
+                try:
+                    if not sr.available():
+                        raise RuntimeError("SEMRUSH unavailable")
+                    ideas = sr.keyword_suggestions(seed, limit=args.limit, min_volume=args.min_volume)
+                except Exception as exc:
+                    print(f"! SEMRUSH phrase_fullsearch({seed!r}) failed: {exc} -> DataForSEO", file=sys.stderr)
+                    try:
+                        if not dfs.available():
+                            raise RuntimeError("DataForSEO unavailable")
+                        ideas = dfs.keyword_suggestions(seed, limit=args.limit, min_volume=args.min_volume)
+                    except Exception as exc2:
+                        print(f"! keyword_suggestions({seed!r}) failed: {exc2}", file=sys.stderr)
+                        continue
+                if ttl_seconds > 0:
+                    cache_data[ckey] = {"seed": seed, "cachedAt": now_utc.isoformat().replace("+00:00", "Z"), "ideas": ideas}
+                    cache_dirty = True
             for i in ideas:
                 q = (i.get("keyword") or "").lower()
                 if (not q or q in seen or not COMMERCIAL.search(q) or INFORMATIONAL.search(q) or is_covered(q)
@@ -122,6 +164,11 @@ def main() -> int:
                     continue
                 seen.add(q)
                 demand.append({"query": q, "volume": i.get("volume") or 0, "cpc": i.get("cpc"), "seed": seed})
+        if cache_dirty:
+            cache_path.parent.mkdir(parents=True, exist_ok=True)
+            cache_path.write_text(json.dumps(cache_data, indent=2) + "\n")
+        if cache_hits:
+            print(f"category_candidates cache: {cache_hits}/{len(seeds)} seed(s) served from {args.cache_days}d disk cache", file=sys.stderr)
     elif not seeds:
         print("! no expansionSeeds in the config: demand source skipped", file=sys.stderr)
 
