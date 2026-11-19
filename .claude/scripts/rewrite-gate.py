@@ -33,7 +33,10 @@ from pathlib import Path
 URL = re.compile(r"https?://[^\s)\"'<>\]]+")
 NUM = re.compile(r"(?<![\w.])[$€£]?\d[\d,]*(?:\.\d+)?%?")
 CUR = re.compile(r"\b(?:COP|USD|EUR|GBP|MXN|BRL|CAD|AUD)\s?\$?\d[\d,.]*\s*(?:million|billion|thousand|k|m)?\b", re.I)
-DATE_KEYS = re.compile(r"^\s*(updated|updatedAt|lastmod|dateModified|modified)\s*:.*$", re.M)
+DATE_KEYS = re.compile(
+    r"""^\s*['"]?(updated|updatedAt|updatedDate|updated_at|lastUpdated|last_updated|lastmod|dateModified|modified)['"]?\s*:.*$""",
+    re.M,
+)
 
 
 def facts(text: str) -> Counter:
