@@ -1,0 +1,15 @@
+{
+  "product": "Wave",
+  "day": "2026-11-19",
+  "checked": "2026-11-19",
+  "sources": [
+    "https://www.waveapps.com/",
+    "https://www.waveapps.com/pricing",
+    "https://quickbooks.intuit.com/pricing/",
+    "https://www.freshbooks.com/pricing",
+    "https://www.xero.com/us/pricing/",
+    "https://www.zoho.com/us/books/pricing/",
+    "https://www.hellobonsai.com/pricing"
+  ],
+  "notes": "QuickBooks read via WebFetch after fetch_page.py returned 502. Sage Accounting pricing page returned anti_bot_gate and was skipped (not used). ZipBooks omitted because its pricing page shows no billing unit."
+}

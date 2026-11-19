@@ -1,0 +1,48 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "Acorns Alternatives 2026: Investing Fees Compared",
+   "problem": "SEO title is 49 characters; rule 5 requires 50 to 60.",
+   "fix": "Lengthen, e.g. \"Acorns Alternatives 2026: Investing Fees and Plans Compared\" (58).",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "Its Bronze plan ($4 per month) bundles automated investing, Acorns Later retirement accounts, paycheck splitting, educational courses, and a 1% match on new IRA contributions during the first year.",
+   "problem": "Acorns pricing page lists the 1% IRA match under Silver ($8/mo), not Bronze ($4/mo); Bronze lists investing, round-ups and Acorns Later only. Table row also credits one fixed price with banking and bundled retirement accounts. Invest My Tips (with 1% match) is a Gold exclusive but is presented without that plan.",
+   "fix": "Move the 1% match to Silver, name the plan for Invest My Tips (Gold), and trim the table bestFit to what the $4 plan includes.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "Whole body (141 sentences: 8 short, 40 medium, 93 long)",
+   "problem": "monotone-rhythm: sentences 37-46 are ten consecutive long sentences (choose section / Schwab paragraph).",
+   "fix": "Vary sentence lengths in that run without padding.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F4",
+   "quote": "automated ETF portfolios (Schwab row); Investments are not FDIC insured (Acorns row, before definition); Acorns Advisers, LLC",
+   "problem": "Acronym gate: ETF never defined; FDIC appears in the table before its definition in a later section; LLC undefined.",
+   "fix": "Define exchange-traded fund (ETF) and FDIC at first use (table or intro), or reword.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F5",
+   "quote": "small accounts pay a substantial proportion of their balance every year",
+   "problem": "Inflated word \"substantial\".",
+   "fix": "Use \"a large share\".",
+   "hard_blocker": true
+  },
+  {
+   "id": "F6",
+   "quote": "view [Betterment-style comparisons in the comparison hub](/compare/)",
+   "problem": "Link text promises a Betterment comparison but goes to the generic hub; third intro paragraph is a link dump. Also the Gold \"$144 annual cost can be offset by bundled benefits\" assumes eligibility and maxing a match.",
+   "fix": "Retitle the link to the hub accurately or drop it; qualify the offset sentence.",
+   "hard_blocker": false
+  }
+ ]
+}

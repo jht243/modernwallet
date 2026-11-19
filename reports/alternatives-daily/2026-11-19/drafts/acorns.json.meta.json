@@ -1,0 +1,226 @@
+{
+ "slug": "acorns",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 3205,
+ "floor": 1500,
+ "input_tokens": 26777,
+ "output_tokens": 5907,
+ "thinking_tokens": 3004,
+ "cached_tokens": 24440,
+ "est_cost_usd": 0.037,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3205,
+  "numbers_not_in_facts": [
+   "0.1",
+   "120.5",
+   "140",
+   "15000",
+   "156.5",
+   "19200",
+   "2.5",
+   "240",
+   "30000",
+   "40000",
+   "43",
+   "500",
+   "57600",
+   "75",
+   "9.6"
+  ],
+  "fact_budget": {
+   "fact_words": 672,
+   "floor": 1500,
+   "ratio": 0.45,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    14,
+    7,
+    0
+   ],
+   "applied": [
+    {
+     "id": "intro",
+     "quote": "At The Modern Wallet, we evaluate automated investing services by calculating the real annual cost across small and large account balances. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not support evaluating or testing financial services."
+    },
+    {
+     "id": "rows[2].bestFit",
+     "quote": "Fits investors who want goal-based automated portfolios, access to tax-loss harvesting, and recurring deposit options that waive flat monthly fees",
+     "replacement": "Fits investors who want automated portfolios, checking, multiple retirement account types, and recurring deposits that reduce monthly fees",
+     "type": "unsupported",
+     "why": "SOURCE does not list goal-based portfolios or tax-loss harvesting for Betterment."
+    },
+    {
+     "id": "rows[3].bestFit",
+     "quote": "Fits investors seeking a flat 0.25% advisory fee with automated tax-loss harvesting, rebalancing, and a high-yield cash account",
+     "replacement": "Fits investors seeking a flat 0.25% advisory fee with automated tax-loss harvesting, rebalancing, and a cash account",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Wealthfront's cash account as high-yield."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Betterment fits investors who can commit to $200 monthly deposits to unlock a 0.25% fee, access tax-loss harvesting, and manage multiple retirement account types.",
+     "replacement": "Betterment fits investors who can commit to $200 monthly deposits to unlock a 0.25% fee and manage multiple retirement account types.",
+     "type": "unsupported",
+     "why": "SOURCE does not list tax-loss harvesting for Betterment."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "The fee covers automated daily rebalancing and tax-loss harvesting.",
+     "replacement": "The fee covers automatic rebalancing and tax-loss harvesting.",
+     "type": "unsupported",
+     "why": "SOURCE does not state rebalancing is daily for Wealthfront."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Active stock traders who want zero commission options trading or direct margin access should not use automated robo-advisors.",
+     "replacement": "Investors who want advisor access at small balances cannot use Betterment Premium, which requires $100,000 in eligible household investments.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention options trading or margin access."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Wealthfront and Betterment focus on long-term automated ETF portfolios, not day-trading execution.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention day-trading execution."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "- Comprehensive wealth planning requiring dedicated Certified Financial Planner professionals across estate, trust, and complex corporate tax needs falls outside these platforms, except where Betterment Premium ($100,000 minimum) provides general advisor access.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention Certified Financial Planners, estate, trust, or corporate taxes."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "- Complete business entity banking and commercial treasury operations sit outside these consumer accounts.",
+     "replacement": "- Investors with under $5,000 who cannot meet opening balance minimums cannot use Schwab Intelligent Portfolios.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention business entity banking or commercial treasury operations."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "For business treasury solutions, review our [business bank accounts roundup](/roundup/best-business-bank-accounts/).",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not list business treasury solutions or this link."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "- High-net-worth investors seeking complex private equity or direct real estate holdings must look to private wealth managers rather than algorithmic retail accounts.",
+     "replacement": "- Investors who do not want a portion of their portfolio held in cash cannot use Schwab Intelligent Portfolios.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention private equity, real estate, or private wealth managers."
+    },
+    {
+     "id": "verdict",
+     "quote": "For account balances under $20,000, percentage-based alternatives like Wealthfront (0.25% AUM) or free tiers like Fidelity Go ($0 on balances under $25,000) cost significantly less per year.",
+     "replacement": "For smaller account balances, percentage-based alternatives like Wealthfront (0.25% AUM) or zero-fee tiers like Fidelity Go ($0 on balances under $25,000) can cost less per year.",
+     "type": "unsupported",
+     "why": "SOURCE does not support that Wealthfront costs less or significantly less under $20,000."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Fidelity Go is the cheapest robo-advisor for balances under $25,000 because it charges a $0 advisory fee.",
+     "replacement": "Fidelity Go charges a $0 advisory fee on balances under $25,000, while Schwab Intelligent Portfolios also charges a $0 advisory fee but requires $5,000 to open.",
+     "type": "unsupported",
+     "why": "SOURCE does not rank Fidelity Go as the cheapest robo-advisor."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Stash, Betterment, Wealthfront, Fidelity Go, and Schwab Intelligent Portfolios all offer individual retirement accounts, including traditional and Roth IRAs.",
+     "replacement": "Betterment provides traditional, Roth, and SEP IRAs along with Solo 401(k) accounts, while Stash provides retirement accounts with a 3% match.",
+     "type": "unsupported",
+     "why": "SOURCE does not list retirement accounts for Wealthfront, Fidelity Go, or Schwab."
+    },
+    {
+     "id": "rows[1].bestFit",
+     "quote": "Fits investors who want stock-back card rewards, DIY stock picks alongside managed portfolios, and a bundled life insurance policy",
+     "replacement": "Fits investors who want Stock-Back rewards, DIY stock picks alongside managed portfolios, and a bundled life insurance policy",
+     "type": "unsupported",
+     "why": "SOURCE lists Stock-Back rewards, not stock-back card rewards."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Stash fits investors who want to combine self-directed stock picks with automated portfolios, use Stock-Back debit card rewards, and access a bundled life insurance policy.",
+     "replacement": "Stash fits investors who want to combine self-directed stock picks with automated portfolios, use Stock-Back rewards, and access a bundled life insurance policy.",
+     "type": "unsupported",
+     "why": "SOURCE lists Stock-Back rewards, not debit card rewards."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Betterment falls short of Acorns on micro-investing tooling, as Betterment does not offer debit card transaction round-ups or partner brand shopping bonus investments.",
+     "replacement": "Betterment falls short of Acorns on micro-investing tooling, as Betterment does not offer spare-change round-ups or partner brand bonus investments.",
+     "type": "unsupported",
+     "why": "SOURCE specifies spare-change Round-Ups, not debit card transaction round-ups."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Wealthfront does not provide spare-change round-ups from linked credit cards, nor does it offer shopping rebates or tip matching.",
+     "replacement": "Wealthfront does not provide spare-change round-ups, nor does it offer bonus investments or tip matching.",
+     "type": "unsupported",
+     "why": "SOURCE specifies spare-change Round-Ups and bonus investments, not linked credit cards or shopping rebates."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Fidelity Go does not feature round-up deposit triggers, partner brand shopping bonuses, integrated family allowances, or will preparation services.",
+     "replacement": "Fidelity Go does not feature round-up deposit triggers, partner brand shopping bonuses, or will preparation services.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Acorns has integrated family allowances."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Acorns remains the better fit for investors who rely on behavioral nudges to save money.",
+     "replacement": "Acorns remains the better fit for investors who want automated spare-change investing.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention behavioral nudges."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "The Acorns round-up mechanism automatically tracks linked card transactions and invests the spare change into diversified portfolios without requiring manual transfers.",
+     "replacement": "Acorns provides Round-Ups to save and invest spare change into diversified portfolios.",
+     "type": "unsupported",
+     "why": "SOURCE does not state tracking linked card transactions or operating without manual transfers."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 3303
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 374.2,
+ "response_id": "9ib_arCIBsrr1sgPntWpiQg",
+ "generated_at": "2026-11-19T16:48:43+0000"
+}

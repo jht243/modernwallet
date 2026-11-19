@@ -1,0 +1,69 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "Cash advances from $250 initially up to $1,000 over time with direct deposit (table); \"Varo offers cash advances starting at $250\" (Varo section)",
+   "problem": "Varo's own page says \"get up to $250 right away\" and its disclosure says initial limits range $20 to $250, rising to $1,000 over time. The page states $250 as the starting floor.",
+   "fix": "Change to \"initial limits from $20 to $250, rising to $1,000 over time with qualifying direct deposit\" in the table row, the Varo section and the choose section (\"starting $250 cap\" is fine).",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "Whole page body (160 sentences: 11 short, 41 medium, 108 long)",
+   "problem": "monotone-rhythm: sentences 84-93 are ten consecutive long (15+ word) sentences, in the Varo/Cash App sections.",
+   "fix": "Vary real sentences in that run (state one fact in a short sentence); do not pad or split mechanically.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "Who This Is Not For: / What Would Change Our Answer: (inside the 'How to Choose a Dave Alternative' body)",
+   "problem": "Required sections exist only as colon-labelled paragraphs inside the choose section, not as their own headed sections, so they are absent from headings and the page's section structure (rule 5).",
+   "fix": "Move both into their own H2 sections (Who This Is Not For; What Would Change Our Answer on Dave Alternatives) via the data fields the template renders, as acorns and wave do.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F4",
+   "quote": "Member Federal Deposit Insurance Corporation (FDIC); 3.50% APY (table); no in-network ATM fees",
+   "problem": "Acronym gate: FDIC definition is garbled (\"Member FDIC\" expanded literally); APY and ATM are never defined on first use.",
+   "fix": "Write \"Federal Deposit Insurance Corporation (FDIC)\" without 'Member'; define annual percentage yield (APY) in the Albert table cell or before it, and automated teller machine (ATM) at first use.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F5",
+   "quote": "might also utilize bundled automated budgeting tools; a substantial divergence in subscription pricing; Dave provides a cohesive toolset",
+   "problem": "Banned inflated words (utilize, substantial, cohesive) in anti-AI list.",
+   "fix": "Replace with plain words (use; large gap; one app).",
+   "hard_blocker": true
+  },
+  {
+   "id": "F6",
+   "quote": "To compare cash advance options for an upcoming expense, review the qualification rules, calculate delivery fees for the target amount, and check the comparison hub...",
+   "problem": "Rule 5: primary keyword must appear in the final next-action sentence; it does not mention Dave alternatives.",
+   "fix": "Rewrite final sentence to include \"Dave alternative\" and one concrete action.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F7",
+   "quote": "At The Modern Wallet, we break down the math behind short-term borrowing fees and deposit rules so users can see how each option affects a household budget.",
+   "problem": "Tee-up is a bolted-on, unsupported first-person experience claim (nothing was tested or worked up beyond fee lists) and says \"users\" instead of you.",
+   "fix": "Delete it, or replace with a one-sentence factual tee-up that claims no work (e.g. what the table compares).",
+   "hard_blocker": true
+  },
+  {
+   "id": "F8",
+   "quote": "Marketing text on its homepage also references a $200 figure",
+   "problem": "Klover homepage is not in dave-sources.json and was not verified; only /faqs and /cash-advance (up to $750) confirm.",
+   "fix": "Delete the homepage sentence or add and verify the source.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F9",
+   "quote": "high-yield savings earning up to 3.75% APY on balances up to $5,000",
+   "problem": "Varo requires $800+ monthly direct deposits and a positive balance for 3.75% (APY accurate as of October 5, 2026); condition and date omitted, and $187.50 example presented unconditionally.",
+   "fix": "Add the qualification and the as-of date.",
+   "hard_blocker": false
+  }
+ ]
+}

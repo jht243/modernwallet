@@ -115,6 +115,28 @@
         "www.empower.com",
         "empower.com"
       ]
+    },
+    {
+      "route": "/alternatives/dave/",
+      "vendorHost": "dave.com",
+      "officialHosts": [
+        "dave.com"
+      ]
+    },
+    {
+      "route": "/alternatives/acorns/",
+      "vendorHost": "acorns.com",
+      "officialHosts": [
+        "www.acorns.com"
+      ]
+    },
+    {
+      "route": "/alternatives/wave/",
+      "vendorHost": "waveapps.com",
+      "officialHosts": [
+        "www.waveapps.com",
+        "waveapps.com"
+      ]
     }
   ]
 }

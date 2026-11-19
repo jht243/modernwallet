@@ -1,0 +1,497 @@
+{
+ "slug": "wave",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2610,
+ "floor": 1500,
+ "input_tokens": 27271,
+ "output_tokens": 5225,
+ "thinking_tokens": 3520,
+ "cached_tokens": 24440,
+ "est_cost_usd": 0.0367,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 2610,
+  "numbers_not_in_facts": [
+   "1452",
+   "266",
+   "518",
+   "552",
+   "600",
+   "780"
+  ],
+  "fact_budget": {
+   "fact_words": 1083,
+   "floor": 1500,
+   "ratio": 0.72,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    30,
+    26,
+    5
+   ],
+   "applied": [
+    {
+     "id": "rows[0].bestFit",
+     "quote": "Fits sole proprietors and microbusinesses seeking free double-entry bookkeeping, unlimited invoicing and pay-per-transaction card processing",
+     "replacement": "Fits sole proprietors and microbusinesses seeking free bookkeeping records, unlimited invoicing and pay-per-transaction card processing",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Wave bookkeeping as double-entry."
+    },
+    {
+     "id": "rows[1].bestFit",
+     "quote": "Fits growing businesses that require inventory tracking, purchase orders, budgeting and multi-user access with distinct permissions",
+     "replacement": "Fits growing businesses that require inventory tracking, budgeting and multi-user access with distinct permissions",
+     "type": "unsupported",
+     "why": "SOURCE does not list purchase orders for QuickBooks Online."
+    },
+    {
+     "id": "rows[2].bestFit",
+     "quote": "Fits service businesses and agencies billing clients on hourly or project milestones that require retainers and client time tracking",
+     "replacement": "Fits service businesses and agencies that require client retainers, proposals and expense tracking",
+     "type": "unsupported",
+     "why": "SOURCE does not list time tracking for FreshBooks."
+    },
+    {
+     "id": "rows[3].bestFit",
+     "quote": "Fits small businesses requiring structured bank reconciliation, cash flow forecasting and full double-entry accounting with unlimited users",
+     "replacement": "Fits small businesses requiring bank reconciliation and cash flow forecasting",
+     "type": "unsupported",
+     "why": "SOURCE does not state double-entry accounting or unlimited users for Xero."
+    },
+    {
+     "id": "rows[4].bestFit",
+     "quote": "Fits businesses seeking low subscription costs that combine project profitability, timesheets, inventory tracking and bank rules",
+     "replacement": "Fits businesses seeking low subscription costs that combine project profitability, timesheets, inventory tracking and bank feeds",
+     "type": "unsupported",
+     "why": "SOURCE lists bank feeds, not bank rules, for Zoho Books."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "FreshBooks charges 2.9% + $0.30 for credit card payments and 1% for Automated Clearing House (ACH) bank transfers.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state FreshBooks payment processing fee percentages."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Collecting ten $1,000 card payments a month on FreshBooks costs $293.00 in fees, while the same ten payments on Wave Pro cost $290.00.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not list FreshBooks processing fees or this calculation."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Wave produces full balance sheets, profit and loss statements and sales tax reports.",
+     "replacement": "Wave provides estimates, invoices, bills and bookkeeping records.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Wave produces balance sheets or sales tax reports."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Xero and Zoho Books also provide complete double-entry accounting ledgers with formal bank feeds and reconciliation rules.",
+     "replacement": "Xero provides bank reconciliation, while Zoho Books includes bank feeds.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Xero or Zoho Books provide double-entry ledgers."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Tools like Bonsai prioritize customer relationship management (CRM), contract signing, project scheduling and client proposals alongside invoicing, but do not provide a double-entry general ledger.",
+     "replacement": "Tools like Bonsai prioritize customer relationship management (CRM), contract signing, project scheduling and client proposals alongside invoicing.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention double-entry general ledgers for Bonsai."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "QuickBooks Online fits businesses that have outgrown simple bookkeeping and need advanced workflows like inventory management, purchase orders and multi-user access controls.",
+     "replacement": "QuickBooks Online fits businesses that have outgrown simple bookkeeping and need advanced workflows like inventory management and multi-user access controls.",
+     "type": "unsupported",
+     "why": "SOURCE does not list purchase orders for QuickBooks Online."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Wave does not offer inventory tracking or purchase orders on any tier.",
+     "replacement": "Wave does not offer inventory tracking on any tier.",
+     "type": "unsupported",
+     "why": "SOURCE does not list purchase orders for QuickBooks or Wave."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "FreshBooks also offers a custom-priced Select tier for businesses with high payment volume.",
+     "replacement": "FreshBooks also offers a custom-priced Select tier.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Select is for businesses with high payment volume."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "FreshBooks fits consultants, freelancers and agencies who bill clients based on tracked project hours or fixed milestones and who require integrated client proposals.",
+     "replacement": "FreshBooks fits businesses that require integrated client proposals and client retainers.",
+     "type": "unsupported",
+     "why": "SOURCE does not list tracked project hours or time tracking for FreshBooks."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Xero is a double-entry accounting platform supporting bank reconciliation, bill tracking and reporting.",
+     "replacement": "Xero is an accounting platform supporting bank reconciliation, bill tracking and reporting.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Xero as a double-entry platform."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Xero fits businesses that need double-entry accounting with bank reconciliation rules, cash flow forecasting and unlimited team member collaboration without per-seat charges.",
+     "replacement": "Xero fits businesses that need bank reconciliation and cash flow forecasting.",
+     "type": "unsupported",
+     "why": "SOURCE does not list double-entry accounting or unlimited team members for Xero."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Zoho Books falls short of Wave on interface simplicity.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not evaluate Zoho Books interface simplicity."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Setting up chart of accounts rules, custom roles, inventory items and API connections in Zoho Books demands significantly more configuration than creating a basic invoice inside Wave.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Zoho Books requires significantly more configuration."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Bonsai falls short of Wave on accounting structure.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Bonsai falls short on accounting structure."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Bonsai provides income and expense tracking but does not include a complete double-entry general ledger, balance sheets or sales tax liability ledgers.",
+     "replacement": "Bonsai includes income and expense tracking starting on Essentials, while Wave includes bookkeeping records on its Starter plan.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention double-entry ledgers, balance sheets, or sales tax ledgers."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "- Bonsai adjusting its per-user pricing model or introducing double-entry accounting ledgers to its Essentials tier.",
+     "replacement": "- Bonsai adjusting its per-user pricing model.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention double-entry accounting ledgers."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Wave remains the superior option for microbusinesses, sole proprietors and freelancers who want genuine double-entry bookkeeping and unlimited invoicing without a monthly subscription fee.",
+     "replacement": "Wave fits businesses and freelancers who want bookkeeping records and unlimited invoicing without a monthly subscription fee.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Wave as superior or as double-entry bookkeeping."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Owners can add Wave Advisors bookkeeping starting at $149 per month for monthly reconciliations, payroll starting from $25 or $40 per month, and live chat or email support operating Monday to Friday from 9 AM to 4:45 PM Eastern.",
+     "replacement": "Owners can add Wave Advisors bookkeeping starting at $149 per month for monthly financial statements, payroll starting from $25 or $40 per month, and live chat or email support operating Monday to Friday from 9 AM to 4:45 PM Eastern.",
+     "type": "unsupported",
+     "why": "SOURCE states monthly financial statements, not monthly reconciliations."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "For single-operator businesses with straightforward billing, Wave provides unmatched utility per dollar.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Wave provides unmatched utility per dollar."
+    },
+    {
+     "id": "verdict",
+     "quote": "Wave Starter delivers the strongest zero-cost invoicing and bookkeeping package available, while Wave Pro provides automated bank feeds and receipt capture for $19 per month.",
+     "replacement": "Wave Starter delivers $0 invoicing and bookkeeping records, while Wave Pro provides automated bank feeds and receipt capture for $19 per month.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Wave Starter as the strongest package available."
+    },
+    {
+     "id": "verdict",
+     "quote": "Choose QuickBooks Online if your operation requires inventory management, purchase orders and granular user roles.",
+     "replacement": "Choose QuickBooks Online if your operation requires inventory management and granular user roles.",
+     "type": "unsupported",
+     "why": "SOURCE does not list purchase orders for QuickBooks Online."
+    },
+    {
+     "id": "verdict",
+     "quote": "Select Xero if you need multi-user collaboration and detailed bank reconciliation rules.",
+     "replacement": "Select Xero if you need cash flow forecasting and bank reconciliation.",
+     "type": "unsupported",
+     "why": "SOURCE does not list multi-user collaboration or unlimited users for Xero."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Wave generates revenue through transaction processing fees on credit card and bank payments, monthly subscriptions for Wave Pro ($19 USD per month), receipt capture add-ons, payroll processing and Wave Advisors bookkeeping services.",
+     "replacement": "Wave generates revenue through transaction processing fees on credit card and American Express payments, monthly subscriptions for Wave Pro ($19 USD per month), receipt capture add-ons, payroll processing and Wave Advisors bookkeeping services.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention Wave transaction processing fees on bank payments."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Unlike Wave Starter, Zoho Books Free does not include automated bank feeds or multiple user accounts.",
+     "replacement": "Zoho Books Free is limited to 1 user and 1 accountant.",
+     "type": "contradicted",
+     "why": "Wave Starter also lacks automated bank feeds and added user roles."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Xero allows unlimited users across all plans without per-seat charges.",
+     "replacement": "User allowances vary: QuickBooks Online Advanced includes up to 25 users, Zoho Books Ultimate includes 15 users, and Bonsai charges per user.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Xero includes unlimited users."
+    },
+    {
+     "id": "rows[0].bestFit",
+     "quote": "Fits sole proprietors and microbusinesses seeking free bookkeeping records, unlimited invoicing and pay-per-transaction card processing",
+     "replacement": "Fits businesses seeking free bookkeeping records, unlimited invoicing and pay-per-transaction card processing",
+     "type": "unsupported",
+     "why": "SOURCE does not state sole proprietors or microbusinesses."
+    },
+    {
+     "id": "rows[1].bestFit",
+     "quote": "Fits growing businesses that require inventory tracking, budgeting and multi-user access with distinct permissions",
+     "replacement": "Fits businesses that require inventory tracking, budgeting and multi-user access with distinct permissions",
+     "type": "unsupported",
+     "why": "SOURCE does not state growing businesses."
+    },
+    {
+     "id": "rows[2].bestFit",
+     "quote": "Fits service businesses and agencies that require client retainers, proposals and expense tracking",
+     "replacement": "Fits businesses that require client retainers, proposals and expense tracking",
+     "type": "unsupported",
+     "why": "SOURCE does not mention service businesses or agencies."
+    },
+    {
+     "id": "rows[4].bestFit",
+     "quote": "Fits businesses seeking low subscription costs that combine project profitability, timesheets, inventory tracking and bank feeds",
+     "replacement": "Fits businesses that combine project profitability, timesheets, inventory tracking and bank feeds",
+     "type": "unsupported",
+     "why": "SOURCE does not state low subscription costs."
+    },
+    {
+     "id": "rows[5].bestFit",
+     "quote": "Fits freelancers and service providers who bundle client proposals, legal contracts, appointment scheduling and project billing",
+     "replacement": "Fits businesses that bundle client proposals, contracts, scheduling and project billing",
+     "type": "unsupported",
+     "why": "SOURCE does not state service providers, legal contracts, or appointment scheduling."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Tools like Bonsai prioritize customer relationship management (CRM), contract signing, project scheduling and client proposals alongside invoicing.",
+     "replacement": "Bonsai provides customer relationship management (CRM), contracts, scheduling, proposals and invoicing.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Bonsai prioritizes CRM, contract signing, or project scheduling."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "QuickBooks Online is Intuit's cloud accounting application designed for growing businesses.",
+     "replacement": "QuickBooks Online is an accounting application with tiered plans.",
+     "type": "unsupported",
+     "why": "SOURCE does not state QuickBooks Online is designed for growing businesses."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "QuickBooks Online fits businesses that have outgrown simple bookkeeping and need advanced workflows like inventory management and multi-user access controls.",
+     "replacement": "QuickBooks Online fits businesses that require inventory tracking and multi-user access controls.",
+     "type": "unsupported",
+     "why": "SOURCE does not state businesses outgrowing bookkeeping or needing advanced workflows."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "The cost difference between the two products is substantial.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state the cost difference is substantial."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "QuickBooks Online falls short of Wave on initial affordability.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not use affordability to describe Wave or QuickBooks."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "FreshBooks is an invoicing and client billing application tailored for service professionals.",
+     "replacement": "FreshBooks is an invoicing and client billing application with tiered client limits.",
+     "type": "unsupported",
+     "why": "SOURCE does not state FreshBooks is tailored for service professionals."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "FreshBooks falls short of Wave for businesses with large client rosters and lean budgets.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention large client rosters or lean budgets."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Zoho Books fits small businesses that require advanced features like inventory tracking, progress invoicing and 1099 filing at accessible price points.",
+     "replacement": "Zoho Books fits businesses that require inventory tracking, progress invoicing and 1099 filing.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Zoho Books price points as accessible."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Bonsai is a business management and invoicing platform built for agencies, consultants and freelancers.",
+     "replacement": "Bonsai is a business management and invoicing platform with per-user pricing.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Bonsai is built for agencies, consultants and freelancers."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Invoicing, online payments, legal contracts, proposals, appointment scheduling, client portals and expense tracking unlock at the Essentials tier.",
+     "replacement": "Invoicing, online payments, contracts, proposals, scheduling, client portals and expense tracking unlock at the Essentials tier.",
+     "type": "unsupported",
+     "why": "SOURCE states proposals, contracts and scheduling, not legal contracts or appointment scheduling."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Bonsai fits freelancers and service firms that want to manage the entire client lifecycle from proposals and signed contracts to appointment scheduling and final billing in a single tool.",
+     "replacement": "Bonsai fits businesses that require contracts, proposals, scheduling and invoicing in one subscription.",
+     "type": "unsupported",
+     "why": "SOURCE does not state client lifecycle, service firms, signed contracts, or appointment scheduling."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Wave offers invoicing and estimates but does not provide contract templates, digital signatures or calendar scheduling.",
+     "replacement": "Wave offers invoicing and estimates but does not provide contracts or scheduling.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention contract templates, digital signatures or calendar scheduling."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Businesses with specific complex operating models should look outside both Wave and standard invoicing applications:",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention complex operating models or standard invoicing applications."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "- Companies with full-time bookkeeping needs should evaluate dedicated human services rather than software alone.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention full-time bookkeeping needs or give software advice."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "- Large enterprises requiring complex enterprise resource planning, hundreds of user seats or deep custom database integrations should consider platforms covered in our wider business software guides.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention enterprise resource planning, database integrations, or seat counts."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "- Sellers who need physical retail point-of-sale hardware and unified in-person counter checkout should review retail-focused merchant processors.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention retail point-of-sale hardware or counter checkout."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "- Businesses evaluating desktop-based accounting tools should note that all providers reviewed on this page operate as cloud-hosted software subscriptions.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention desktop accounting tools."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Wave fits businesses and freelancers who want bookkeeping records and unlimited invoicing without a monthly subscription fee.",
+     "replacement": "Wave fits businesses that want bookkeeping records and unlimited invoicing without a monthly subscription fee.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention freelancers for Wave."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Users who accept card payments occasionally can simply absorb the 2.9% + $0.60 per-transaction fee without committing to fixed monthly overhead.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not describe occasional payment acceptance or absorbing fees."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "For businesses wanting automated bank feeds, Wave Pro at $19 per month billed monthly or $190 per year billed annually is more affordable than QuickBooks Online Simple Start at $38 per month or Xero Early at $27 per month.",
+     "replacement": "For businesses wanting automated bank feeds, Wave Pro at $19 per month billed monthly or $190 per year billed annually costs less than QuickBooks Online Simple Start at $38 per month or Xero Early at $27 per month.",
+     "type": "unsupported",
+     "why": "SOURCE does not use affordable; degree comparison unsupported."
+    },
+    {
+     "id": "verdict",
+     "quote": "Opt for Zoho Books if you want project profitability and inventory tracking at a lower cost, and pick Bonsai if you want proposals, contracts and scheduling bundled with billing.",
+     "replacement": "Opt for Zoho Books if you want project profitability and inventory tracking, and pick Bonsai if you want proposals, contracts and scheduling bundled with billing.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Zoho Books is at a lower cost."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Review these operational criteria before selecting a plan:\n\n- How many team members require simultaneous access, and do they need restricted viewer roles?\n- Does your workflow require tracking inventory levels, purchase orders or project profitability?\n- Will clients pay by credit card, Amex or bank transfer, and what is your average invoice dollar amount?\n- Do you require optical character recognition (OCR) receipt scanning included in your base plan, or are you willing to pay an add-on fee?\n- Is full double-entry accounting necessary, or do basic billing and expense tracking meet your filing needs?",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention double-entry accounting."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Wave does not offer inventory tracking on any tier.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Wave does not offer inventory tracking on any tier."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Wave includes estimates and invoices but lacks built-in proposal creation, client retainers and project profitability metrics.",
+     "replacement": "FreshBooks adds client retainers, proposals and project profitability tracking.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Wave lacks proposal creation, retainers, or profitability metrics."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Wave does not offer inventory management or 1099 filing on either Starter or Pro.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Wave lacks inventory management or 1099 filing."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Wave offers invoicing and estimates but does not provide contracts or scheduling.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Wave lacks contracts or scheduling."
+    }
+   ],
+   "deleted_final": 5,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 3152
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 380.6,
+ "response_id": "ECf_aoXxEJHhytMP-9DLUA",
+ "generated_at": "2026-11-19T16:49:16+0000"
+}

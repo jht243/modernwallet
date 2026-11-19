@@ -197,10 +197,83 @@
           "at": "2026-11-15T16:55:03+00:00",
           "status": "eligible",
           "note": "qualified: HTTP 200 verified & ranked by search demand"
+        },
+        {
+          "at": "2026-11-19T16:39:20+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-19"
+        },
+        {
+          "at": "2026-11-19T16:48:50+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-19T16:54:42+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "eligible",
-      "updatedAt": "2026-11-15T16:55:03+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-19T16:48:50+00:00",
+      "claimedOn": "2026-11-19",
+      "attempts": 1,
+      "lastNextAt": "2026-11-19T16:39:20+00:00",
+      "writer": "content_gen",
+      "slug": "acorns",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Acorns Alternatives 2026: Investing Fees Compared",
+            "problem": "SEO title is 49 characters; rule 5 requires 50 to 60.",
+            "fix": "Lengthen, e.g. \"Acorns Alternatives 2026: Investing Fees and Plans Compared\" (58).",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Its Bronze plan ($4 per month) bundles automated investing, Acorns Later retirement accounts, paycheck splitting, educational courses, and a 1% match on new IRA contributions during the first year.",
+            "problem": "Acorns pricing page lists the 1% IRA match under Silver ($8/mo), not Bronze ($4/mo); Bronze lists investing, round-ups and Acorns Later only. Table row also credits one fixed price with banking and bundled retirement accounts. Invest My Tips (with 1% match) is a Gold exclusive but is presented without that plan.",
+            "fix": "Move the 1% match to Silver, name the plan for Invest My Tips (Gold), and trim the table bestFit to what the $4 plan includes.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Whole body (141 sentences: 8 short, 40 medium, 93 long)",
+            "problem": "monotone-rhythm: sentences 37-46 are ten consecutive long sentences (choose section / Schwab paragraph).",
+            "fix": "Vary sentence lengths in that run without padding.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "automated ETF portfolios (Schwab row); Investments are not FDIC insured (Acorns row, before definition); Acorns Advisers, LLC",
+            "problem": "Acronym gate: ETF never defined; FDIC appears in the table before its definition in a later section; LLC undefined.",
+            "fix": "Define exchange-traded fund (ETF) and FDIC at first use (table or intro), or reword.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F5",
+            "quote": "small accounts pay a substantial proportion of their balance every year",
+            "problem": "Inflated word \"substantial\".",
+            "fix": "Use \"a large share\".",
+            "hard_blocker": true
+          },
+          {
+            "id": "F6",
+            "quote": "view [Betterment-style comparisons in the comparison hub](/compare/)",
+            "problem": "Link text promises a Betterment comparison but goes to the generic hub; third intro paragraph is a link dump. Also the Gold \"$144 annual cost can be offset by bundled benefits\" assumes eligibility and maxing a match.",
+            "fix": "Retitle the link to the hub accurately or drop it; qualify the offset sentence.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-19T16:54:42+00:00"
+      }
     },
     {
       "vendor": "Betterment",
@@ -1564,10 +1637,97 @@
           "at": "2026-11-15T16:55:03+00:00",
           "status": "eligible",
           "note": "qualified: HTTP 200 verified & ranked by search demand"
+        },
+        {
+          "at": "2026-11-19T16:39:20+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-19"
+        },
+        {
+          "at": "2026-11-19T16:49:34+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-19T16:54:42+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "eligible",
-      "updatedAt": "2026-11-15T16:55:03+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-19T16:49:34+00:00",
+      "claimedOn": "2026-11-19",
+      "attempts": 1,
+      "lastNextAt": "2026-11-19T16:39:20+00:00",
+      "writer": "content_gen",
+      "slug": "wave",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Who This Is Not For: Wave Advisors provides dedicated bookkeeping services starting from $149 to $199 per month...",
+            "problem": "The required section contains no exclusion (who the alternatives or Wave do not fit); it is just Wave Advisors pricing.",
+            "fix": "Rewrite with who Wave and each alternative do not fit, e.g. businesses needing inventory, multi-user permissions or per-client caps.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Whole body (110 sentences)",
+            "problem": "monotone-rhythm: sentences 25-29 have lengths [12,13,12,12,15], within 3 words of each other.",
+            "fix": "Vary those sentences.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Choose QuickBooks Online if your operation requires inventory management...; Select Xero if you need...; Opt for Zoho Books...; pick Bonsai if you want...",
+            "problem": "Imperative recommendations are advice framing; the adapter allows only \"fits people who...\".",
+            "fix": "Rewrite as \"QuickBooks Online fits businesses that...\"; same for the next-action sentence's \"compare...\" if it reads as advice.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "Free $0 for 1 user and 1 accountant. (Zoho row); Its Free plan costs $0 per month for 1 user and 1 accountant",
+            "problem": "Zoho's pricing FAQ limits the Free plan to revenue under $50K per financial year and 1,000 invoices and 1,000 expenses per year. The page contrasts it with Wave's unlimited invoicing without the cap.",
+            "fix": "State the $50K revenue and 1,000 invoices per year limits.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F5",
+            "quote": "Growing ... adding automated bill entry, a 60-day cash flow forecast and free ACH for domestic bill payments; Growing removes billing caps and includes free Automated Clearing House (ACH) domestic bill payments",
+            "problem": "Xero's Early plan also lists \"Make online bill payments (Domestic - Free ACH)\"; free ACH is not an upgrade at Growing. Xero's page says \"quotes and 20 invoices\", while the page says 20 invoices, quotes.",
+            "fix": "Remove ACH as a Growing differentiator; say Early allows quotes and 20 invoices per month and 5 bills.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F6",
+            "quote": "QuickBooks Online, FreshBooks, Xero, Zoho Books and Bonsai are five Wave alternatives, with entry prices running from $0 free plans to QuickBooks Simple Start at $38 per month. ... At The Modern Wallet, we show the arithmetic behind accounting software...",
+            "problem": "Opener is a 31-word sentence with a garbled price range (Simple Start is not the top entry price and $0 free plans is unclear); third sentence is an unsupported first-person tee-up and the intro is three sentences.",
+            "fix": "Shorten sentence 1 to a plain answer; delete or neutralise the tee-up.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F7",
+            "quote": "Invoicing, payments, contracts, proposals, scheduling, client portals and expense tracking unlock at the Essentials tier.",
+            "problem": "Banned word \"unlock\".",
+            "fix": "Use \"start at\" or \"are included from\".",
+            "hard_blocker": true
+          },
+          {
+            "id": "F8",
+            "quote": "Xero fits businesses that need bank reconciliation and cash flow forecasting. Wave charges $19 per month on Pro to access user permissions...",
+            "problem": "Alternatives sections repeat the table's bestFit line verbatim and contain a few unclear one-liners; Wave Pro Amex 3.4% + $0 and the $9.50 promo are omitted.",
+            "fix": "Replace repeats with fresh specifics; add Amex rate.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-19T16:54:42+00:00"
+      }
     },
     {
       "vendor": "TurboTax",
@@ -1846,10 +2006,104 @@
           "at": "2026-11-15T16:55:03+00:00",
           "status": "eligible",
           "note": "qualified: HTTP 200 verified & ranked by search demand"
+        },
+        {
+          "at": "2026-11-19T16:39:20+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-19"
+        },
+        {
+          "at": "2026-11-19T16:45:48+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-19T16:54:42+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "eligible",
-      "updatedAt": "2026-11-15T16:55:03+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-19T16:45:48+00:00",
+      "claimedOn": "2026-11-19",
+      "attempts": 1,
+      "lastNextAt": "2026-11-19T16:39:20+00:00",
+      "writer": "content_gen",
+      "slug": "dave",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Cash advances from $250 initially up to $1,000 over time with direct deposit (table); \"Varo offers cash advances starting at $250\" (Varo section)",
+            "problem": "Varo's own page says \"get up to $250 right away\" and its disclosure says initial limits range $20 to $250, rising to $1,000 over time. The page states $250 as the starting floor.",
+            "fix": "Change to \"initial limits from $20 to $250, rising to $1,000 over time with qualifying direct deposit\" in the table row, the Varo section and the choose section (\"starting $250 cap\" is fine).",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Whole page body (160 sentences: 11 short, 41 medium, 108 long)",
+            "problem": "monotone-rhythm: sentences 84-93 are ten consecutive long (15+ word) sentences, in the Varo/Cash App sections.",
+            "fix": "Vary real sentences in that run (state one fact in a short sentence); do not pad or split mechanically.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Who This Is Not For: / What Would Change Our Answer: (inside the 'How to Choose a Dave Alternative' body)",
+            "problem": "Required sections exist only as colon-labelled paragraphs inside the choose section, not as their own headed sections, so they are absent from headings and the page's section structure (rule 5).",
+            "fix": "Move both into their own H2 sections (Who This Is Not For; What Would Change Our Answer on Dave Alternatives) via the data fields the template renders, as acorns and wave do.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "Member Federal Deposit Insurance Corporation (FDIC); 3.50% APY (table); no in-network ATM fees",
+            "problem": "Acronym gate: FDIC definition is garbled (\"Member FDIC\" expanded literally); APY and ATM are never defined on first use.",
+            "fix": "Write \"Federal Deposit Insurance Corporation (FDIC)\" without 'Member'; define annual percentage yield (APY) in the Albert table cell or before it, and automated teller machine (ATM) at first use.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F5",
+            "quote": "might also utilize bundled automated budgeting tools; a substantial divergence in subscription pricing; Dave provides a cohesive toolset",
+            "problem": "Banned inflated words (utilize, substantial, cohesive) in anti-AI list.",
+            "fix": "Replace with plain words (use; large gap; one app).",
+            "hard_blocker": true
+          },
+          {
+            "id": "F6",
+            "quote": "To compare cash advance options for an upcoming expense, review the qualification rules, calculate delivery fees for the target amount, and check the comparison hub...",
+            "problem": "Rule 5: primary keyword must appear in the final next-action sentence; it does not mention Dave alternatives.",
+            "fix": "Rewrite final sentence to include \"Dave alternative\" and one concrete action.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F7",
+            "quote": "At The Modern Wallet, we break down the math behind short-term borrowing fees and deposit rules so users can see how each option affects a household budget.",
+            "problem": "Tee-up is a bolted-on, unsupported first-person experience claim (nothing was tested or worked up beyond fee lists) and says \"users\" instead of you.",
+            "fix": "Delete it, or replace with a one-sentence factual tee-up that claims no work (e.g. what the table compares).",
+            "hard_blocker": true
+          },
+          {
+            "id": "F8",
+            "quote": "Marketing text on its homepage also references a $200 figure",
+            "problem": "Klover homepage is not in dave-sources.json and was not verified; only /faqs and /cash-advance (up to $750) confirm.",
+            "fix": "Delete the homepage sentence or add and verify the source.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F9",
+            "quote": "high-yield savings earning up to 3.75% APY on balances up to $5,000",
+            "problem": "Varo requires $800+ monthly direct deposits and a positive balance for 3.75% (APY accurate as of October 5, 2026); condition and date omitted, and $187.50 example presented unconditionally.",
+            "fix": "Add the qualification and the as-of date.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-19T16:54:42+00:00"
+      }
     },
     {
       "vendor": "Albert",

@@ -1,0 +1,62 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "Who This Is Not For: Wave Advisors provides dedicated bookkeeping services starting from $149 to $199 per month...",
+   "problem": "The required section contains no exclusion (who the alternatives or Wave do not fit); it is just Wave Advisors pricing.",
+   "fix": "Rewrite with who Wave and each alternative do not fit, e.g. businesses needing inventory, multi-user permissions or per-client caps.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "Whole body (110 sentences)",
+   "problem": "monotone-rhythm: sentences 25-29 have lengths [12,13,12,12,15], within 3 words of each other.",
+   "fix": "Vary those sentences.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "Choose QuickBooks Online if your operation requires inventory management...; Select Xero if you need...; Opt for Zoho Books...; pick Bonsai if you want...",
+   "problem": "Imperative recommendations are advice framing; the adapter allows only \"fits people who...\".",
+   "fix": "Rewrite as \"QuickBooks Online fits businesses that...\"; same for the next-action sentence's \"compare...\" if it reads as advice.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F4",
+   "quote": "Free $0 for 1 user and 1 accountant. (Zoho row); Its Free plan costs $0 per month for 1 user and 1 accountant",
+   "problem": "Zoho's pricing FAQ limits the Free plan to revenue under $50K per financial year and 1,000 invoices and 1,000 expenses per year. The page contrasts it with Wave's unlimited invoicing without the cap.",
+   "fix": "State the $50K revenue and 1,000 invoices per year limits.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F5",
+   "quote": "Growing ... adding automated bill entry, a 60-day cash flow forecast and free ACH for domestic bill payments; Growing removes billing caps and includes free Automated Clearing House (ACH) domestic bill payments",
+   "problem": "Xero's Early plan also lists \"Make online bill payments (Domestic - Free ACH)\"; free ACH is not an upgrade at Growing. Xero's page says \"quotes and 20 invoices\", while the page says 20 invoices, quotes.",
+   "fix": "Remove ACH as a Growing differentiator; say Early allows quotes and 20 invoices per month and 5 bills.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F6",
+   "quote": "QuickBooks Online, FreshBooks, Xero, Zoho Books and Bonsai are five Wave alternatives, with entry prices running from $0 free plans to QuickBooks Simple Start at $38 per month. ... At The Modern Wallet, we show the arithmetic behind accounting software...",
+   "problem": "Opener is a 31-word sentence with a garbled price range (Simple Start is not the top entry price and $0 free plans is unclear); third sentence is an unsupported first-person tee-up and the intro is three sentences.",
+   "fix": "Shorten sentence 1 to a plain answer; delete or neutralise the tee-up.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F7",
+   "quote": "Invoicing, payments, contracts, proposals, scheduling, client portals and expense tracking unlock at the Essentials tier.",
+   "problem": "Banned word \"unlock\".",
+   "fix": "Use \"start at\" or \"are included from\".",
+   "hard_blocker": true
+  },
+  {
+   "id": "F8",
+   "quote": "Xero fits businesses that need bank reconciliation and cash flow forecasting. Wave charges $19 per month on Pro to access user permissions...",
+   "problem": "Alternatives sections repeat the table's bestFit line verbatim and contain a few unclear one-liners; Wave Pro Amex 3.4% + $0 and the $9.50 promo are omitted.",
+   "fix": "Replace repeats with fresh specifics; add Amex rate.",
+   "hard_blocker": false
+  }
+ ]
+}
