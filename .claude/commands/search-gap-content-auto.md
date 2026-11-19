@@ -28,9 +28,6 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 <!-- turn1-telemetry-opt-v1 -->
 > **⚡ ZERO-TURN COLLECTOR NO-OP RULE (2026-11-16):** Before reading the rest of this file, loading `_decision-evidence.md` / `_testing-labels.md`, or pinning a deploy base, run the STEP 1 intake pull FIRST (`--fast-noop` where supported, or `python3 .claude/tools/routine-fast-exit.py json-candidates --skill search-gap-content-auto --site <BASE_URL> --input <pull.json> --post-collector`). When `candidateCount == 0` / `"fastExit": true` (`"collectorPosted": true`), the collector `no-op` (`https://layer3labs-web.onrender.com/api/routine-run`) is **already posted** — **STOP immediately in this turn**. NEVER grep `.claude/scripts/send-routine-email.py`, NEVER write a scratchpad POST script, and NEVER call `/api/routine-run` again.
 > **Standalone `list-gaps` rule (no pipes / `|| true`):** Run `list-gaps` (`job_worker.py` or `search_gap_worker.mts`) as a direct standalone command — NEVER pipe it to `tail`/`head`/`cat` and NEVER append `|| true`, which PreToolUse blocks.
-> **Standalone `list-gaps` rule (no pipes / `|| true`):** Run `list-gaps` (`job_worker.py` or `search_gap_worker.mts`) as a direct standalone command — NEVER pipe it to `tail`/`head`/`cat` and NEVER append `|| true`, which PreToolUse blocks.
-> **Standalone `list-gaps` rule (no pipes / `|| true`):** Run `list-gaps` (`job_worker.py` or `search_gap_worker.mts`) as a direct standalone command — NEVER pipe it to `tail`/`head`/`cat` and NEVER append `|| true`, which PreToolUse blocks.
-> **Standalone `list-gaps` rule (no pipes / `|| true`):** Run `list-gaps` (`job_worker.py` or `search_gap_worker.mts`) as a direct standalone command — NEVER pipe it to `tail`/`head`/`cat` and NEVER append `|| true`, which PreToolUse blocks.
 <!-- /turn1-telemetry-opt-v1 -->
 
 
