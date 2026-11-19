@@ -145,31 +145,121 @@
   "sponsored": true,
   "company": "killswitch.rip"
  },
-  "SpaceX": "https://www.spacex.com/",
-  "ProcureAM": "https://procureetfs.com/",
-  "ARK Invest": "https://www.ark-invest.com/",
-  "Tema ETFs": "https://temaetfs.com/",
-  "Trimble": "https://www.trimble.com/",
-  "Garmin": "https://www.garmin.com/",
-  "EchoStar": "https://www.echostar.com/",
-  "Sirius XM": "https://www.siriusxm.com/",
-  "Rocket Lab": "https://www.rocketlabusa.com/",
-  "Viasat": "https://www.viasat.com/",
-  "AST SpaceMobile": "https://ast-science.com/",
-  "Globalstar": "https://www.globalstar.com/",
-  "MDA Space": "https://mda.space/",
-  "L3Harris": "https://www.l3harris.com/",
-  "Deere": "https://www.deere.com/",
-  "Kratos": "https://www.kratosdefense.com/",
-  "NVIDIA": "https://www.nvidia.com/",
-  "AeroVironment": "https://www.avinc.com/",
-  "AMD": "https://www.amd.com/",
-  "Filtronic": "https://www.filtronic.com/",
-  "Forum Energy Technologies": "https://f-e-t.com/",
-  "Oceaneering": "https://www.oceaneering.com/",
-  "Ducommun": "https://www.ducommun.com/",
-  "RTX": "https://www.rtx.com/",
-  "Lockheed Martin": "https://www.lockheedmartin.com/",
-  "Firefly Aerospace": "https://fireflyspace.com/",
-  "Census Bureau": "https://www.census.gov/"
+ "SpaceX": "https://www.spacex.com/",
+ "ProcureAM": "https://procureetfs.com/",
+ "ARK Invest": "https://www.ark-invest.com/",
+ "Tema ETFs": "https://temaetfs.com/",
+ "Trimble": "https://www.trimble.com/",
+ "Garmin": "https://www.garmin.com/",
+ "EchoStar": "https://www.echostar.com/",
+ "Sirius XM": "https://www.siriusxm.com/",
+ "Rocket Lab": "https://www.rocketlabusa.com/",
+ "Viasat": "https://www.viasat.com/",
+ "AST SpaceMobile": "https://ast-science.com/",
+ "Globalstar": "https://www.globalstar.com/",
+ "MDA Space": "https://mda.space/",
+ "L3Harris": "https://www.l3harris.com/",
+ "Deere": "https://www.deere.com/",
+ "Kratos": "https://www.kratosdefense.com/",
+ "NVIDIA": "https://www.nvidia.com/",
+ "AeroVironment": "https://www.avinc.com/",
+ "AMD": "https://www.amd.com/",
+ "Filtronic": "https://www.filtronic.com/",
+ "Forum Energy Technologies": "https://f-e-t.com/",
+ "Oceaneering": "https://www.oceaneering.com/",
+ "Ducommun": "https://www.ducommun.com/",
+ "RTX": "https://www.rtx.com/",
+ "Lockheed Martin": "https://www.lockheedmartin.com/",
+ "Firefly Aerospace": "https://fireflyspace.com/",
+ "Census Bureau": "https://www.census.gov/",
+ "Credit Repair Cloud": {
+  "url": "https://get.creditrepaircloud.com/8a3tpc5yf09y",
+  "sponsored": true,
+  "company": "creditrepaircloud.com"
+ },
+ "Gusto": {
+  "url": "https://get.gusto.com/qxwcko5q5anq",
+  "sponsored": true,
+  "company": "gusto.com"
+ },
+ "Rippling": {
+  "url": "https://try.rippling.com/ah82fk8cgqps",
+  "sponsored": true,
+  "company": "rippling.com"
+ },
+ "Dext": {
+  "url": "https://join.dext.com/zchpnu",
+  "sponsored": true,
+  "company": "dext.com"
+ },
+ "BILL.com": {
+  "url": "https://referral.bill.com/52eqo39lk16y",
+  "sponsored": true,
+  "company": "bill.com"
+ },
+ "Bill.com": {
+  "url": "https://referral.bill.com/52eqo39lk16y",
+  "sponsored": true,
+  "company": "bill.com"
+ },
+ "Tax1099": {
+  "url": "https://get.tax1099.com/pmfku9u71zo9",
+  "sponsored": true,
+  "company": "tax1099.com"
+ },
+ "eBillity": {
+  "url": "https://get.ebillity.com/kleonxdn2obk",
+  "sponsored": true,
+  "company": "ebillity.com"
+ },
+ "Checkr": {
+  "url": "https://get.checkr.com/6dibqadqpfb6",
+  "sponsored": true,
+  "company": "checkr.com"
+ },
+ "Foxit": {
+  "url": "https://partnerstack.foxit.com/hdvlgd9dc81s",
+  "sponsored": true,
+  "company": "foxit.com"
+ },
+ "Sign.Plus": {
+  "url": "https://ref.alohi.com/dkoy90x0k1lh",
+  "sponsored": true,
+  "company": "sign.plus"
+ },
+ "Alohi": {
+  "url": "https://ref.alohi.com/dkoy90x0k1lh",
+  "sponsored": true,
+  "company": "alohi.com"
+ },
+ "Buddy Punch": {
+  "url": "https://try.buddypunch.com/dek16ocwc19y",
+  "sponsored": true,
+  "company": "buddypunch.com"
+ },
+ "SaneBox": {
+  "url": "https://try.sanebox.com/bpqgs7qtazo5",
+  "sponsored": true,
+  "company": "sanebox.com"
+ },
+ "monday.com": {
+  "url": "https://try.monday.com/vj3cddjxxsh7",
+  "sponsored": true,
+  "company": "monday.com"
+ },
+ "ClickUp": {
+  "url": "https://try.web.clickup.com/wv39myjre5tz",
+  "sponsored": true,
+  "company": "clickup.com"
+ },
+ "Zapier": {
+  "url": "https://try.zapier.com/9vhatk7s3dxs",
+  "sponsored": true,
+  "company": "zapier.com"
+ },
+ "Salesforce": {
+  "url": "https://salesforce.partnerlinks.io/2h18eda3hm8d",
+  "sponsored": true,
+  "company": "salesforce.com"
+ }
 }
