@@ -712,4 +712,47 @@ class SessionEndHookAndArchiveTests(unittest.TestCase):
         self.assertEqual(found['cand_1'][0]['path'], '/symptoms/burnout')
         self.assertTrue(found['cand_1'][0]['requiredText'])
 
+    def test_stale_intake_from_different_run_archives_and_allows_fresh_intake_while_same_run_blocks(self):
+        root = Path(self.tmp.name)
+        subprocess.run(['git', 'init', '-q', str(root)], check=True)
+        intake_path = Path('reports/search-gap/intake-current.json')
+        intake_path.parent.mkdir(parents=True, exist_ok=True)
+        intake_path.write_text(json.dumps({
+            'ok': True, 'site': 'one.test', 'runId': 'old-completed-run',
+            'candidateCount': 1, 'candidates': [{'id': 'old1', 'term': 'stale query'}],
+        }))
+        owner = 'fresh-run-12345678'
+        class EmptyStore:
+            def pending(self, site): return []
+            def claim_job(self, site, owner_arg, packet_text):
+                parsed = json.loads(packet_text)
+                return {'status': 'empty', 'runId': parsed['runId']}
+            def owner_policy(self, site): return True
+            def owner_request_sha(self, site, run): return None
+        out = worker.intake('one.test', EmptyStore(), str(intake_path), owner)
+        self.assertEqual(out['candidateCount'], 0)
+        self.assertNotEqual(out['runId'], 'old-completed-run')
+        self.assertEqual(json.loads(intake_path.read_text())['runId'], out['runId'])
+        archived = root / '.git/search-gap-recovery/stale-intakes/old-completed-run.json'
+        self.assertTrue(archived.is_file())
+
+        # Same-run tampering must still fail loudly instead of silently overwriting.
+        tampered = json.loads(intake_path.read_text())
+        tampered['candidateCount'] = 999
+        intake_path.write_text(json.dumps(tampered))
+        class ResumedSameRunStore:
+            def pending(self, site): return []
+            def claim_job(self, site, owner_arg, packet_text):
+                return {
+                    'status': 'claimed',
+                    'runId': out['runId'],
+                    'packetText': json.dumps({'ok': True, 'site': 'one.test', 'runId': out['runId'], 'candidateCount': 0, 'candidates': []}),
+                    'packetSha256': hashlib.sha256(json.dumps({'ok': True, 'site': 'one.test', 'runId': out['runId'], 'candidateCount': 0, 'candidates': []}).encode()).hexdigest(),
+                    'checkpoints': [],
+                }
+            def owner_policy(self, site): return True
+            def owner_request_sha(self, site, run): return None
+        with self.assertRaisesRegex(ValueError, 'Local intake differs'):
+            worker.intake('one.test', ResumedSameRunStore(), str(intake_path), owner)
+
 if __name__=='__main__':unittest.main()

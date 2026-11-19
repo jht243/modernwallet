@@ -171,6 +171,36 @@ class Store(native.Store):
     def park_job(self,site,run,owner,receipt):
         return self.request('rpc/search_gap_job_park','POST',{'p_site':site,'p_run':run,'p_owner':owner,'p_receipt':receipt})
 
+def _archive_stale_intake(path, site, current_run_id):
+    """Move a stale intake packet from an earlier runId out of `path` so a fresh pull can proceed."""
+    if not path.is_file():
+        return
+    try:
+        existing = json.loads(path.read_text(encoding='utf-8'))
+    except Exception:
+        return
+    if not isinstance(existing, dict):
+        return
+    old_run = existing.get('runId')
+    if (not isinstance(old_run, str) or not re.fullmatch(r'[A-Za-z0-9_-]{1,80}', old_run)
+            or old_run == current_run_id or existing.get('site') not in (None, site)
+            or not isinstance(existing.get('candidates'), list)):
+        return
+    try:
+        res = subprocess.run(
+            ['git', 'rev-parse', '--git-path', f'search-gap-recovery/stale-intakes/{old_run}.json'],
+            capture_output=True, text=True,
+        )
+        if res.returncode == 0 and res.stdout.strip():
+            dest = Path(res.stdout.strip())
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            if not dest.exists():
+                dest.write_bytes(path.read_bytes())
+    except Exception:
+        pass
+    path.unlink(missing_ok=True)
+
+
 def intake(site,store,output,owner=None,refresh_attempt=0):
     rows=store.pending(site)
     class Rows:
@@ -192,6 +222,8 @@ def intake(site,store,output,owner=None,refresh_attempt=0):
         else:
             require(job['status']=='empty','Unexpected job status');packet=json.loads(raw)
         path=Path(output) if output else Path('reports/search-gap/intakes')/(packet['runId']+'.json')
+        if path.exists() and path.read_bytes() != raw.encode():
+            _archive_stale_intake(path, site, packet['runId'])
         require(not path.exists() or path.read_bytes()==raw.encode(),'Local intake differs from durable original; preserve it before recovery')
         path.parent.mkdir(parents=True,exist_ok=True);path.write_text(raw,encoding='utf-8')
         checkpoint_file=None

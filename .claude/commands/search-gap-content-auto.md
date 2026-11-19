@@ -70,11 +70,11 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 ## STEP 1 — Get the questions
 ```
-SEARCH_SITE=themodernwallet.com node scripts/search_gap_worker.mjs list-gaps --owner <this invocation actual fresh workflow runId> --out reports/search-gap/intake-current.json
+SEARCH_SITE=themodernwallet.com node scripts/search_gap_worker.mjs list-gaps --owner <this invocation actual fresh workflow runId> --fast-noop --out reports/search-gap/intake-current.json
 ```
 Returns `candidates: [{ term, kind, count, paths }]` — `kind:'search'` are zero-result nav searches (this site has no chat widget, so `kind:'chat'` will not appear). `paths` = the page they were on when they searched.
 
-`candidateCount: 0` after a successful durable intake → no content stages. Complete the normal collector report.
+`candidateCount: 0` and `resumed: false` after a successful durable intake → `--fast-noop` automatically submits the collector no-op report (`fastNoopReported: true`) and cleans up the empty intake file; **exit 0 immediately with zero further reads or tool calls** (if `fastNoopReported` is false/absent, submit the collector no-op once and exit 0). Whenever `candidateCount >= 1` or `resumed: true`, proceed to STEP 2 (never skip Mindmap duplicate checking in Python when candidates exist).
 
 Requires `SUPABASE_URL` + `SUPABASE_SERVICE_ROLE_KEY`; missing → nonzero operational failure, never empty.
 

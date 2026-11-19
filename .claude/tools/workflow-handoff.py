@@ -163,7 +163,18 @@ def handoff_check(root, path, actor=None, phase=None, visited=None):
     require(h.get('routes') and len(h['routes']) == len(set(h['routes'])), 'Missing or duplicate handoff routes')
     require(h.get('candidates'), 'Handoff must identify the current candidate or preparation artifacts')
     for ref in h['candidates']:
-        evidence_ref(root, ref)
+        candidate_path = evidence_ref(root, ref)
+        if candidate_path.suffix == '.json':
+            try:
+                candidate = read(candidate_path)
+            except (ValueError, UnicodeError):
+                candidate = None
+            if isinstance(candidate, dict) and candidate.get('scopeContinuation'):
+                continuation_spec = importlib.util.spec_from_file_location(
+                    'handoff_scope_continuation', root / '.claude/tools/mindmap-scope-continuation.py')
+                continuation = importlib.util.module_from_spec(continuation_spec)
+                continuation_spec.loader.exec_module(continuation)
+                continuation.validate(root, candidate)
     require(isinstance(h.get('sources'), list) and isinstance(h.get('findings'), list), 'Missing source/finding ledger')
     for source in h['sources']:
         evidence_ref(root, source)

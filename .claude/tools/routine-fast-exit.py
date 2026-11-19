@@ -217,6 +217,8 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
             rid = str(r.get('id') or r.get('orderId') or r.get('invoiceId') or r.get('brand') or '')
             if r.get('status') in ('completed', 'cancelled', 'quarantined_needs_fix'):
                 continue
+            if r.get('customerApprovalRequired') and (r.get('draftDelivery') or {}).get('status') == 'sent' and not r.get('customerApprovedAt'):
+                continue
             if r.get('liveAt') and (r.get('unpaidPublishFirst') or (r.get('ownerDelivery') or {}).get('sentAt') or r.get('emailSentAt')):
                 continue
             if rid:

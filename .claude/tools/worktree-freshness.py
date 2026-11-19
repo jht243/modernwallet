@@ -90,8 +90,10 @@ def receipt_file(root, kind, session):
     return directory / ('workflow-' + kind + '-receipt-' + (session or 'unscoped') + '.json')
 
 
-def receipt_matches(receipt, root, session):
-    if not session or receipt.get('runIdentity') != session or receipt.get('root') != str(root) or receipt.get('branch') != checkout_branch(root) or not receipt.get('head'):
+def receipt_matches(receipt, root, session, allow_branch_switch=False):
+    if not session or receipt.get('runIdentity') != session or receipt.get('root') != str(root) or not receipt.get('head'):
+        return False
+    if not allow_branch_switch and receipt.get('branch') != checkout_branch(root):
         return False
     result = subprocess.run(['git', '-C', str(root), 'merge-base', '--is-ancestor', receipt['head'], 'HEAD'], env=git_env(root), capture_output=True, timeout=60)
     return result.returncode == 0
@@ -242,7 +244,7 @@ def cloud_check(root, scopes=None, pinned_to_run=False):
         previous = json.loads(receipt_path.read_text())
     except (FileNotFoundError, ValueError):
         previous = {}
-    if pinned_to_run and receipt_matches(previous, root, session) and previous.get('revision') and _commit_present(root, previous.get('revision')):
+    if pinned_to_run and receipt_matches(previous, root, session, allow_branch_switch=True) and previous.get('revision') and _commit_present(root, previous.get('revision')):
         origin_raw = git(root, 'remote', 'get-url', 'origin').decode()
         pinned_ref = previous.get('ref') or (
             'refs/heads/' + previous['source'].removeprefix('origin/')
@@ -267,9 +269,9 @@ def cloud_check(root, scopes=None, pinned_to_run=False):
     git(root, 'fetch', '--quiet', '--no-tags', '--no-write-fetch-head', 'origin', revision)
     head = git(root, 'rev-parse', 'HEAD').decode().strip()
     identity = hashlib.sha256((git(root, 'remote', 'get-url', 'origin').decode() + ref).encode()).hexdigest()
-    if receipt_matches(previous, root, session) and previous.get('identity') == identity and previous.get('revision') == revision:
+    if receipt_matches(previous, root, session, allow_branch_switch=pinned_to_run) and previous.get('identity') == identity and previous.get('revision') == revision:
         return {'status': 'current', 'source': 'origin/' + ref.removeprefix('refs/heads/'), 'revision': revision, 'missing': []}
-    if receipt_matches(previous, root, session) and previous.get('identity') == identity and previous.get('revision') and git(root, 'merge-base', previous['revision'], revision).decode().strip() == previous['revision']:
+    if receipt_matches(previous, root, session, allow_branch_switch=pinned_to_run) and previous.get('identity') == identity and previous.get('revision') and git(root, 'merge-base', previous['revision'], revision).decode().strip() == previous['revision']:
         # A concurrent publication requires its delta, while preserving work
         # authored after this run's verified start.
         base = previous['revision']
@@ -461,7 +463,7 @@ def primary_check(root, pinned_to_run=False):
         receipt = json.loads(receipt_path.read_text())
     except (FileNotFoundError, ValueError):
         receipt = {}
-    if pinned_to_run and receipt_matches(receipt, root, session) and receipt.get('revision') and _commit_present(root, receipt.get('revision')):
+    if pinned_to_run and receipt_matches(receipt, root, session, allow_branch_switch=True) and receipt.get('revision') and _commit_present(root, receipt.get('revision')):
         pinned_ref = receipt.get('ref') or (
             'refs/heads/' + receipt['publishedSource'].removeprefix('origin/')
             if isinstance(receipt.get('publishedSource'), str) and receipt['publishedSource'].startswith('origin/')
