@@ -3,6 +3,7 @@ import type { FAQ, Source } from "./types";
 import { BUSINESS_GUIDES } from "./guides-business";
 import { SELF_EMPLOYED_GUIDES } from "./guides-self-employed";
 import { CLIENT_REVIEW_GUIDES } from "./guides-client-reviews";
+import { AMEX_GUIDES } from "./guides-amex";
 
 // Long-form GUIDE pages — top-of-funnel "journey" content that threads multiple calculators
 // together for a persona (home buyer, car buyer, pre-retiree). CONTENT via the keyword-gap
@@ -35,6 +36,7 @@ export interface Guide {
 }
 
 export const GUIDES: Guide[] = [
+  ...AMEX_GUIDES,
   // ── x-trends-mindmap-auto 2026-11-17: chase-outage-fee-reversal ──
   {
     "updated": "2026-11-17",

@@ -63,8 +63,16 @@
  "USAA": "https://www.usaa.com/",
  "Synchrony": "https://www.synchrony.com/",
  "Bilt": "https://www.bilt.com/",
- "American Express": "https://www.americanexpress.com/",
- "Amex": "https://www.americanexpress.com/",
+ "American Express": {
+  "url": "https://americanexpress.com/en-us/referral/platinum-card?ref=JONATTNwWt&XL=MIINS",
+  "sponsored": true,
+  "company": "americanexpress.com"
+ },
+ "Amex": {
+  "url": "https://americanexpress.com/en-us/referral/platinum-card?ref=JONATTNwWt&XL=MIINS",
+  "sponsored": true,
+  "company": "americanexpress.com"
+ },
  "Axos Bank": "https://www.axosbank.com/",
  "Axos": "https://www.axosbank.com/",
  "Ally Bank": "https://www.ally.com/",
@@ -261,5 +269,15 @@
   "url": "https://salesforce.partnerlinks.io/2h18eda3hm8d",
   "sponsored": true,
   "company": "salesforce.com"
+ },
+ "American Express Platinum Card": {
+  "url": "https://americanexpress.com/en-us/referral/platinum-card?ref=JONATTNwWt&XL=MIINS",
+  "sponsored": true,
+  "company": "americanexpress.com"
+ },
+ "Amex Platinum": {
+  "url": "https://americanexpress.com/en-us/referral/platinum-card?ref=JONATTNwWt&XL=MIINS",
+  "sponsored": true,
+  "company": "americanexpress.com"
  }
 }

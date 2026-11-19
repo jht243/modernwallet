@@ -4,6 +4,7 @@ import { BENEFIT_COMPARISONS } from "./benefits-comparisons";
 import type { FAQ, Source } from "./types";
 import { BUSINESS_STRUCTURE_COMPARISONS } from "./comparisons-business-structure";
 import { BUSINESS_COMPARISONS } from "./comparisons-business";
+import { AMEX_COMPARISONS } from "./comparisons-amex";
 
 export interface ComparisonEntry {
   /** ISO yyyy-mm-dd this page's content was last revised. Omit until the page is actually
@@ -35,6 +36,7 @@ export interface ComparisonEntry {
 
 export const COMPARISONS: ComparisonEntry[] = [
   ...BENEFIT_COMPARISONS,
+  ...AMEX_COMPARISONS,
   // ── mindmap-pass 2026-11-16-comparison: quickbooks-vs-freshbooks ──
   {
     "updated": "2026-11-16",

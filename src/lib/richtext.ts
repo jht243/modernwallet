@@ -12,13 +12,17 @@ function escapeHtml(s: string): string {
 
 const LINK_RE = /\[([^\]]+)\]\(([^)]+)\)/g;
 
-import { ROBINHOOD_URL, PARTNER_REL } from "../data/partners";
+import { ROBINHOOD_URL, AMEX_PLATINUM_URL, PARTNER_REL } from "../data/partners";
 
 const _rhAnchor = `<a href="${ROBINHOOD_URL}" target="_blank" rel="${PARTNER_REL}">Robinhood</a>`;
 
-/** Point Robinhood at our referral link everywhere it's mentioned in body prose:
- *  (1) rewrite any existing robinhood.com anchor to the referral URL + sponsored rel,
- *  (2) auto-link bare "Robinhood" mentions that aren't already inside an anchor. */
+const AMEX_MENTION_RE =
+  /\b(?:American Express(?:®)? Platinum Card(?:®)?|American Express(?:®)? Platinum|Amex Platinum|American Express(?:®)?|Amex)\b/g;
+
+/** Point Robinhood and American Express at our referral links everywhere mentioned in body prose:
+ *  (1) rewrite any existing robinhood.com / americanexpress.com anchor to the referral URL + sponsored rel
+ *      (unless preserved as an explicit editorial source citation),
+ *  (2) auto-link bare mentions that aren't already inside an anchor. */
 type LinkifyOptions = { preserveSourceUrls?: string[] };
 
 function markEditorialSource(openingTag: string): string {
@@ -37,12 +41,30 @@ function rewriteRobinhoodAnchors(html: string, preserveSourceUrls: string[] = []
   );
 }
 
-function robinhoodize(html: string, preserveSourceUrls: string[] = []): string {
-  html = rewriteRobinhoodAnchors(html, preserveSourceUrls);
+function rewriteAmexAnchors(html: string, preserveSourceUrls: string[] = []): string {
+  const sourceUrls = new Set(preserveSourceUrls);
+  return html.replace(
+    /<a href="(https?:\/\/(?:www\.)?americanexpress\.com[^"]*)"[^>]*>/gi,
+    (openingTag, url: string) => sourceUrls.has(url)
+      ? markEditorialSource(openingTag)
+      : `<a href="${AMEX_PLATINUM_URL}" target="_blank" rel="${PARTNER_REL}">`,
+  );
+}
+
+function partnerize(html: string, preserveSourceUrls: string[] = []): string {
+  html = rewriteAmexAnchors(rewriteRobinhoodAnchors(html, preserveSourceUrls), preserveSourceUrls);
   // Split on existing anchors so we never link text that's already a link.
   return html
     .split(/(<a\b[^>]*>.*?<\/a>)/gis)
-    .map((seg, i) => (i % 2 === 1 ? seg : seg.replace(/\bRobinhood\b/g, _rhAnchor)))
+    .map((seg, i) => {
+      if (i % 2 === 1) return seg;
+      return seg
+        .replace(/\bRobinhood\b/g, _rhAnchor)
+        .replace(
+          AMEX_MENTION_RE,
+          (match) => `<a href="${AMEX_PLATINUM_URL}" target="_blank" rel="${PARTNER_REL}">${match}</a>`,
+        );
+    })
     .join("");
 }
 
@@ -66,16 +88,16 @@ function renderLinks(input: string): string {
     .replace(LINK_RE, (_m, text: string, url: string) => anchor(url, text));
 }
 
-/** Body prose: inline links + Robinhood referral handling (anchor rewrite + bare-mention autolink). */
+/** Body prose: inline links + Robinhood & Amex referral handling (anchor rewrite + bare-mention autolink). */
 export function linkify(input: string, options: LinkifyOptions = {}): string {
-  return robinhoodize(renderLinks(input), options.preserveSourceUrls);
+  return partnerize(renderLinks(input), options.preserveSourceUrls);
 }
 
 /** Short data fields (pricing, pros/cons, table cells, card intros): inline links only. Explicit
- *  robinhood.com links still go to the referral URL, but bare "Robinhood" mentions are NOT
+ *  robinhood.com / americanexpress.com links still go to referral URLs, but bare mentions are NOT
  *  auto-linked here. */
 export function linkifyInline(input: string): string {
-  return rewriteRobinhoodAnchors(renderLinks(input));
+  return rewriteAmexAnchors(rewriteRobinhoodAnchors(renderLinks(input)));
 }
 
 /** Strip [text](url) down to text. For meta descriptions and JSON-LD answer text. */
