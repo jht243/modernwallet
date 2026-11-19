@@ -210,6 +210,79 @@ class AuditBatchPendingResumeTests(unittest.TestCase):
         self.assertEqual(len(crp.policy_hash(root)), 64)
         self.assertEqual(len(wfl.policy_hash(root)), 64)
 
+    def test_finish_audit_projects_passing_route_on_mixed_batch_before_audit_analysis(self):
+        mod = load_audit_batch()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            tools = root / '.claude/tools'
+            tools.mkdir(parents=True)
+            ar_dir = root / 'reports/run/audit/analysis-reviews'
+            ar_dir.mkdir(parents=True)
+            snap_file = root / 'reports/run/audit/preview-snapshot.json'
+            rev_file = root / 'reports/run/audit/review.json'
+            snap_file.write_text('{"routes":[{"path":"/ai-model-pricing"},{"path":"/guides/fail-r1"}]}\n')
+            rev_file.write_text('{"reviewer":"rev-1","routes":[{"path":"/ai-model-pricing","verdict":"PASS"},{"path":"/guides/fail-r1","verdict":"FAIL"}]}\n')
+            pkt_file = root / 'reports/run/evidence/ai-model-pricing/evidence.json'
+            pkt_file.parent.mkdir(parents=True)
+            pkt_file.write_text('{"route":"/ai-model-pricing","basis":"reported"}\n')
+            ar_file = ar_dir / 'ai-model-pricing.json'
+            ar_file.write_text(json.dumps({
+                'reviewer': 'rev-1',
+                'verdict': 'PASS',
+                'renderedSnapshot': {'path': 'reports/run/audit/preview-snapshot.json', 'sha256': '1' * 64},
+                'renderedReview': {'path': 'reports/run/audit/review.json', 'sha256': '2' * 64},
+            }) + '\n')
+
+            # Stub scripts: record succeeds, check exits 1 (mixed batch), mindmap-gates.py audit-analysis
+            # exits 1 on unprojected review.json and exits 0 once projected-review is bound!
+            (tools / 'content-review-policy.py').write_text(
+                'import json, hashlib, pathlib, sys\n'
+                'def canonical(o): return json.dumps(o, sort_keys=True).encode()\n'
+                'def reference(r, p): raw = pathlib.Path(p).read_bytes(); return {"path": str(pathlib.Path(p).resolve().relative_to(pathlib.Path(r).resolve())), "sha256": hashlib.sha256(raw).hexdigest()}\n'
+                'def project(r, s, rv, routes, sout, rvout):\n'
+                '    pathlib.Path(sout).write_text(json.dumps({"routes": [{"path": x} for x in routes]}) + "\\n")\n'
+                '    pathlib.Path(rvout).write_text(json.dumps({"routes": [{"path": x, "verdict": "PASS"} for x in routes]}) + "\\n")\n'
+                'if __name__ == "__main__":\n'
+                '    print(json.dumps({"status": "recorded"}))\n'
+            )
+            (tools / 'rendered-audit.py').write_text(
+                'import sys\n'
+                'sys.stderr.write("BLOCKED: mixed batch needs rework on /guides/fail-r1\\n")\n'
+                'sys.exit(1)\n'
+            )
+            (tools / 'mindmap-gates.py').write_text(
+                'import json, pathlib, sys\n'
+                'rev_arg = sys.argv[sys.argv.index("--review") + 1]\n'
+                'doc = json.loads(pathlib.Path(rev_arg).read_text())\n'
+                'if "projected-review" in doc["renderedReview"]["path"]:\n'
+                '    print(json.dumps({"status": "PASS"}))\n'
+                '    sys.exit(0)\n'
+                'sys.stderr.write("BLOCKED: Record the actual latest independent verdict eligible for publication\\n")\n'
+                'sys.exit(1)\n'
+            )
+
+            orig_fin = mod.finalize_review
+            mod.finalize_review = lambda *a, **kw: {
+                'status': 'ready-to-record',
+                'review': 'reports/run/audit/review.json',
+                'syncedProfiles': [],
+                'boundAnalysisReviews': [{
+                    'route': '/ai-model-pricing',
+                    'packet': 'reports/run/evidence/ai-model-pricing/evidence.json',
+                    'analysisReview': 'reports/run/audit/analysis-reviews/ai-model-pricing.json',
+                    'replayOutput': None,
+                }],
+            }
+            try:
+                out = mod.finish_audit(root, snap_file, rev_file)
+            finally:
+                mod.finalize_review = orig_fin
+
+            self.assertEqual(out['status'], 'audit-recorded')
+            self.assertEqual(out['analysisAudits'][0]['status'], 'PASS')
+            rebound = json.loads(ar_file.read_text())
+            self.assertIn('projected-review', rebound['renderedReview']['path'])
+
 
 if __name__ == '__main__':
     unittest.main()

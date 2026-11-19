@@ -559,6 +559,12 @@ def chart_structure(root, plan):
 
 def chart(root, plan, review):
     readiness = chart_structure(root, plan)
+    if plan.get('scopeContinuation'):
+        continuation_spec = importlib.util.spec_from_file_location(
+            'mindmap_scope_continuation', root / '.claude/tools/mindmap-scope-continuation.py')
+        continuation = importlib.util.module_from_spec(continuation_spec)
+        continuation_spec.loader.exec_module(continuation)
+        continuation.validate(root, plan, review)
     rows = plan['actions']
     require(isinstance(review, dict), 'Missing independent chart review')
     require(_chart_review_accepted(review), 'Independent review has not passed')
@@ -940,6 +946,45 @@ def analysis_render_pair(root, packet, review):
     return scoped, result
 
 
+def check_calculation_replay(original, rerun, normalization=None):
+    """Compare results strictly; explicitly admit only the tool-QA run clock.
+
+    Raw artifacts and their real timestamps remain unchanged and hash-bound.
+    This narrow schema cannot normalize inputs, measurements or other dates.
+    """
+    if normalization is None:
+        require(digest(original) == digest(rerun), 'Replayed results differ; resolve before approval')
+        return
+    require(isinstance(normalization, dict)
+            and normalization.get('kind') == 'tool-usage-qa-timestamp-v1'
+            and normalization.get('fields') == ['performedAt'],
+            'Only explicit tool-QA execution timestamp normalization is supported')
+    schema = {'performedAt', 'energy', 'credits', 'parser'}
+    require(isinstance(original, dict) and isinstance(rerun, dict)
+            and set(original) == schema and set(rerun) == schema,
+            'Timestamp normalization requires the exact tool-QA result schema')
+    require(normalization.get('writerOutputDigest') == digest(original)
+            and normalization.get('reviewerOutputDigest') == digest(rerun),
+            'Bind both complete raw executions before timestamp normalization')
+    times = []
+    for output in (original, rerun):
+        value = output.get('performedAt')
+        require(isinstance(value, str), 'Actual execution timestamp is required')
+        parsed = datetime.datetime.fromisoformat(value.replace('Z', '+00:00'))
+        require(parsed.tzinfo is not None, 'Actual execution timestamp needs timezone')
+        times.append(parsed)
+    require(times[1] > times[0], 'Keep the actual fresh reviewer execution timestamp')
+    stable_original = {k: v for k, v in original.items() if k != 'performedAt'}
+    stable_rerun = {k: v for k, v in rerun.items() if k != 'performedAt'}
+    require(digest(stable_original) == digest(stable_rerun),
+            'Replayed results differ beyond execution metadata; resolve before approval')
+    require(normalization.get('normalizedResultsSha256') == digest(stable_original),
+            'Bind the complete unchanged numerical/parser result objects')
+    require(isinstance(normalization.get('evidence'), str)
+            and len(normalization['evidence'].strip()) >= 40,
+            'Explain why the execution clock is metadata, not a measured result')
+
+
 def audit_analysis(root, packet, review, replay):
     analysis(root, packet)
     at_limit = False
@@ -1001,7 +1046,7 @@ def audit_analysis(root, packet, review, replay):
         require(not original_path.samefile(replay_path), 'Replay must be a distinct independently generated artifact')
         original = read(original_path)
         rerun = read(replay_path)
-        require(digest(original) == digest(rerun), 'Replayed results differ; resolve before approval')
+        check_calculation_replay(original, rerun, review.get('replayMetadataNormalization'))
         require(review.get('replaySha256') == digest(rerun), 'Review is not bound to replayed results')
     return True
 
@@ -1629,6 +1674,8 @@ def rebind_mechanical(root, manifest_path, review_path, out=None, render_chart_f
                     resolved_ids.append(fid)
         elif str(f.get('status', 'open')).lower() != 'resolved':
             detail = f.get('fix') or f.get('finding') or f.get('summary') or f.get('description') or f.get('evidence') or ''
+            detail = ' '.join(dict.fromkeys(str(value).strip() for value in
+                                           (f.get('issue'), detail, f.get('requiredChange')) if value))
             note = f"{fid or 'NOTE'} ({sev or 'note'}): {detail}".strip()
             if note and note not in guardrails:
                 guardrails.append(note)
@@ -1665,7 +1712,8 @@ def rebind_mechanical(root, manifest_path, review_path, out=None, render_chart_f
     require(_chart_review_accepted(review), 'Chart review still has unresolved Round-1 substantive blocking or liability findings')
     if review.get('verdict') != 'PASS':
         review['priorVerdictRetained'] = review.get('verdict')
-        review['verdict'] = 'PASS'
+        if (review.get('mechanicalScopeAcceptance') or {}).get('independentVerdict') != 'FAIL':
+            review['verdict'] = 'PASS'
     r_file.write_text(json.dumps(review, indent=2, ensure_ascii=False) + '\n')
 
     chart(root, plan, review)
@@ -1751,6 +1799,9 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
         'Write publication-ready, evidence-grounded content strictly honoring every approved plan field, '
         'primary-source fact, visible attribution rule, and anti-AI language rule below. '
         'Never invent benchmarks, prices, dates, citations, or unexecuted tests. '
+        'Hyperlink the VERY FIRST mention of every named product, platform, program, benchmark, or sibling model '
+        '(including when that first mention appears in the intro or a comparison table cell) using ONLY verified URLs '
+        'from `<slug>.allowed-urls.txt` or existing/planned internal routes — never leave first mentions as plain text when a verified URL exists, and never invent unverified external URLs. '
         'Never place raw Markdown `| col |` pipe-table rows inside JSON `paragraphs[]` strings; use structured `table` fields (`{"headers": [...], "rows": [[...]]}`) where supported.\n'
     ]
     if sample_txt:
@@ -1903,10 +1954,25 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
         if guardrails:
             prompt_lines.extend(['', '## Reviewer Guardrails (Must Respect)', *[f'- {g}' for g in guardrails]])
         if ev_data:
+            ev_basis = str(ev_data.get('basis') or 'reported').strip()
+            if ev_basis == 'reported':
+                basis_guidance = (
+                    'Basis is `"reported"` (no executed calculation/model/test in `evidence.json`): attribute all figures strictly to their published vendor/benchmark primary sources. '
+                    'NEVER write `"In our internal cost modeling"`, `"In our internal testing"`, `"we modeled"`, or `"we tested"` on a `"reported"` basis packet (only cite anonymized approved client `caseUses` or durable reader-survey facts when explicitly populated below).'
+                )
+            elif ev_basis in ('calculated', 'modeled'):
+                basis_guidance = (
+                    f'Basis is `"{ev_basis}"`: include honest visible internal calculation/modeling attribution matching `execution` output with explicit visible assumptions + counterexample '
+                    '(never claim hands-on product testing or `(Tested YYYY)` unless `basis` is `"measured"` with executed `runs:[{testedAt}]`).'
+                )
+            else:
+                basis_guidance = (
+                    f'Basis is `"{ev_basis}"`: include honest visible attribution strictly matching `evidence.json` (`runs:[{{testedAt}}]` required for `(Tested YYYY)`).'
+                )
             prompt_lines.extend([
                 '',
                 '## Verified Same-Run Analysis & First-Party Evidence Packet (`evidence.json`)',
-                'Include honest visible attribution matching `basis` (internal testing, internal modeling with visible assumptions + counterexample, anonymized approved client experience when selected, durable reader-survey facts when matched, and `(Tested YYYY)` ONLY when `runs:[{testedAt}]` is executed & eligible):',
+                basis_guidance,
                 '```json',
                 json.dumps(ev_data, indent=2, ensure_ascii=False),
                 '```',
@@ -1981,6 +2047,37 @@ def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_
     issues = []
     checked = 0
     fixed_tables = 0
+
+    # Build complete known_slugs once across ALL repository route sources (zero false positives on split data/*.ts files)
+    known_slugs = set()
+    has_repo_slug_sources = False
+    data_dir = root / 'data'
+    if data_dir.is_dir():
+        ts_files = sorted(data_dir.glob('*.ts'))
+        if ts_files:
+            has_repo_slug_sources = True
+            for ts_p in ts_files:
+                known_slugs.update(re.findall(r'slug\s*:\s*["\']([a-z0-9][a-z0-9-]*)["\']', ts_p.read_text(errors='ignore')))
+    for content_sub in ('src/content/guides', 'src/content/comparisons', 'src/pages/guides', 'src/pages/comparisons'):
+        c_dir = root / content_sub
+        if c_dir.is_dir():
+            for fp in c_dir.rglob('*'):
+                if fp.is_file() and fp.suffix in ('.md', '.mdx', '.astro', '.tsx', '.ts') and '[' not in fp.stem and fp.stem != 'index':
+                    has_repo_slug_sources = True
+                    known_slugs.add(fp.stem.lower())
+    search_idx = root / 'public/search-index.json'
+    if search_idx.is_file():
+        has_repo_slug_sources = True
+        s_txt = search_idx.read_text(errors='ignore')
+        known_slugs.update(re.findall(r'/(?:guides|comparisons)/([a-z0-9][a-z0-9-]*)(?:["\'/?#]|$)', s_txt))
+        known_slugs.update(re.findall(r'"slug"\s*:\s*"([a-z0-9][a-z0-9-]*)"', s_txt))
+    if has_repo_slug_sources:
+        for act in (plan.get('actions') or []):
+            if isinstance(act, dict) and act.get('target'):
+                known_slugs.add(_route_slug(act['target']))
+        for br in (plan.get('newPageBriefs') or []) + (plan.get('scopeBriefs') or []):
+            if isinstance(br, dict) and br.get('target'):
+                known_slugs.add(_route_slug(br['target']))
 
     for row in substantive_rows:
         target = str(row.get('target') or '').strip()
@@ -2078,6 +2175,12 @@ def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_
                             continue
                         if u_norm not in allowed and not any(u_norm.startswith(a) or a.startswith(u_norm) for a in allowed):
                             issues.append({'slug': slug, 'kind': 'unverified-external-url', 'detail': f'URL not in {allow_file.name}: {u}'})
+
+        # Pre-build internal link slug validation (catches broken /guides/... or /comparisons/... links before Phase 4)
+        if has_repo_slug_sources and known_slugs:
+            for sec, target_slug in sorted(set(re.findall(r'(?:href=["\']|\]\()/(guides|comparisons)/([a-z0-9][a-z0-9-]*)(?:["\'/?#)]|$)', raw_txt))):
+                if target_slug not in known_slugs:
+                    issues.append({'slug': slug, 'kind': 'broken-internal-link', 'detail': f'Internal link /{sec}/{target_slug} does not match any existing or planned slug'})
 
     return {
         'status': 'PASS' if not issues else 'FAIL',
@@ -2468,6 +2571,43 @@ def prune_failed_routes(
     surviving_substantive = [r for r in surviving_actions if r.get('bucket') in SUBSTANTIVE]
     require(surviving_substantive, 'All substantive actions failed; quarantine the full run instead of partial-batch pruning')
 
+    # Unattended chart review may reject a duplicate before any writing exists.
+    # Keep that real FAIL, and resolve only findings tied to the removed action.
+    # The ordinary guardrail rebind still validates every surviving obligation.
+    chart_duplicate_prune = rev.get('verdict') == 'FAIL' and any(
+        isinstance(f, dict) and str(f.get('status', 'open')).lower() != 'resolved'
+        and _finding_is_hard_block(f, check_duplicate=True)
+        for f in (rev.get('findings') or [])
+    )
+    if chart_duplicate_prune:
+        require(rev.get('reviewer') and rev['reviewer'] != plan.get('author')
+                and rev.get('manifestSha256') == digest(plan),
+                'Duplicate pruning needs the actual independent review of this exact manifest')
+        require(rev.get('liabilityBlock') is not True, 'A chart liability block cannot be cleared by duplicate pruning')
+        pruned_ids = {r.get('id') for r in pruned_actions}
+        resolved = []
+        for finding in rev.get('findings') or []:
+            if not isinstance(finding, dict) or str(finding.get('status', 'open')).lower() == 'resolved':
+                continue
+            if not _finding_is_hard_block(finding, check_duplicate=True):
+                continue
+            require(not _finding_is_hard_block(finding, check_duplicate=False),
+                    'A chart liability finding cannot be cleared by duplicate pruning')
+            target = str(finding.get('target') or '').rstrip('/') or '/'
+            require(target in failed_set or finding.get('actionId') in pruned_ids,
+                    'An unresolved duplicate remains outside the pruned routes')
+            resolved.append(finding)
+        # Retain the unmodified input before deriving a narrower mechanical scope.
+        original = m_file.parent / ('chart-prune-input-' + file_sha(r_file) + '.json')
+        if not original.exists():
+            original.write_bytes(r_file.read_bytes())
+        for finding in resolved:
+            finding['priorStatus'] = finding.get('status', 'open')
+            finding['status'] = 'resolved'
+            finding['resolutionKind'] = 'route-pruned'
+            finding['resolution'] = 'The independently rejected duplicate action was removed; no new editorial verdict was issued.'
+        rev['prunedReviewSource'] = {'path': str(original.relative_to(root)), 'sha256': file_sha(original)}
+
     surviving_ids = {r['id'] for r in surviving_actions}
     surviving_targets = {(str(r.get('target') or '').rstrip('/') or '/') for r in surviving_substantive if str(r.get('target') or '').startswith('/')}
     pruned_new_page_targets = {
@@ -2664,6 +2804,15 @@ def prune_failed_routes(
         rev['readinessSha256'] = prep_readiness['sha256']
     r_file.write_text(json.dumps(rev, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
 
+    if chart_duplicate_prune:
+        rebind_mechanical(root, m_rel, r_rel, render_chart_flag=False, carry_round1_guardrails=True)
+        plan, rev = read(m_file), read(r_file)
+        rev['verdict'] = 'FAIL'
+        rev['mechanicalScopeAcceptance'] = {
+            'independentVerdict': 'FAIL',
+            'scope': 'Removed duplicate only; remaining first-round findings carry into writing and independent content audit.',
+        }
+        r_file.write_text(json.dumps(rev, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     chart(root, plan, rev)
     chart_dest = (root / plan['chartPath']).resolve()
     require(chart_dest.is_relative_to(root), 'chartPath escapes repository')

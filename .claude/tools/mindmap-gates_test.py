@@ -16,6 +16,69 @@ spec.loader.exec_module(g)
 
 
 class Gates(unittest.TestCase):
+    def tool_qa_replay_fixture(self):
+        original = {'performedAt': '2026-11-18T18:34:04.733Z',
+                    'energy': {'kwh': 27, 'cost': 5.4},
+                    'credits': {'base': 20, 'pro': 25}, 'parser': {'accepted': 2}}
+        replay = {**copy.deepcopy(original), 'performedAt': '2026-11-18T21:13:23.906Z'}
+        return original, replay
+
+    def tool_qa_normalization(self, original, replay):
+        return {'kind': 'tool-usage-qa-timestamp-v1', 'fields': ['performedAt'],
+                'writerOutputDigest': g.digest(original), 'reviewerOutputDigest': g.digest(replay),
+                'normalizedResultsSha256': g.digest({k: v for k, v in original.items() if k != 'performedAt'}),
+                'evidence': 'Actual independent executions retain their raw wall clocks; every numerical and parser result is compared unchanged.'}
+
+    def test_replay_clock_difference_stays_strict_without_explicit_proof(self):
+        original, replay = self.tool_qa_replay_fixture()
+        with self.assertRaisesRegex(ValueError, 'Replayed results differ'):
+            g.check_calculation_replay(original, replay)
+
+    def test_replay_clock_only_normalization_keeps_both_real_outputs(self):
+        original, replay = self.tool_qa_replay_fixture()
+        before = copy.deepcopy((original, replay))
+        g.check_calculation_replay(original, replay, self.tool_qa_normalization(original, replay))
+        self.assertEqual((original, replay), before)
+        self.assertNotEqual(g.digest(original), g.digest(replay))
+
+    def test_replay_normalization_cannot_hide_changed_numbers_or_parser_results(self):
+        original, replay = self.tool_qa_replay_fixture()
+        for section in ['energy', 'credits', 'parser']:
+            with self.subTest(section=section):
+                changed = copy.deepcopy(replay)
+                changed[section]['unexpected'] = 999
+                with self.assertRaisesRegex(ValueError, 'beyond execution metadata'):
+                    g.check_calculation_replay(original, changed,
+                                               self.tool_qa_normalization(original, changed))
+
+    def test_replay_normalization_rejects_other_fields_and_other_schemas(self):
+        original, replay = self.tool_qa_replay_fixture()
+        proof = self.tool_qa_normalization(original, replay)
+        proof['fields'].append('energy')
+        with self.assertRaisesRegex(ValueError, 'Only explicit'):
+            g.check_calculation_replay(original, replay, proof)
+        original['asOf'] = replay['asOf'] = 'a decision-relevant date'
+        with self.assertRaisesRegex(ValueError, 'exact tool-QA result schema'):
+            g.check_calculation_replay(original, replay, self.tool_qa_normalization(original, replay))
+
+    def test_replay_normalization_binds_raw_and_normalized_hashes(self):
+        original, replay = self.tool_qa_replay_fixture()
+        for field in ['writerOutputDigest', 'reviewerOutputDigest', 'normalizedResultsSha256']:
+            with self.subTest(field=field):
+                proof = self.tool_qa_normalization(original, replay)
+                proof[field] = 'forged'
+                with self.assertRaises(ValueError):
+                    g.check_calculation_replay(original, replay, proof)
+
+    def test_replay_normalization_cannot_copy_or_invent_the_execution_clock(self):
+        original, replay = self.tool_qa_replay_fixture()
+        for value in [original['performedAt'], '2026-11-18T18:00:00Z', '2026-11-18T21:13:23']:
+            with self.subTest(value=value):
+                changed = {**replay, 'performedAt': value}
+                with self.assertRaises(ValueError):
+                    g.check_calculation_replay(original, changed,
+                                               self.tool_qa_normalization(original, changed))
+
     def native_service_fixture(self):
         import hashlib
         url = 'https://fixture.invalid/guides/fixture'
@@ -1118,6 +1181,65 @@ class Gates(unittest.TestCase):
         self.assertTrue(qm.is_quarantined(self.root, 'comparison-content-auto', item_id='bad-page', route='/guides/bad-page'))
         self.assertFalse(qm.is_quarantined(self.root, 'comparison-content-auto', item_id='fixture', route='/guides/fixture'))
 
+    def duplicate_chart_prune_fixture(self):
+        shutil.copyfile(Path(__file__).with_name('quarantine.py'), self.root / '.claude/tools/quarantine.py')
+        row = copy.deepcopy(self.row)
+        row.update(id='A2', target='/guides/duplicate')
+        brief = copy.deepcopy(self.brief)
+        brief.update(actionId='A2', target=row['target'],
+                     inboundLinks={'required': 1, 'placements': [self.link('/existing', row['target'])]},
+                     outboundLinks={'placements': [self.link(row['target'], '/existing')]})
+        self.plan['actions'].append(row)
+        self.plan['newPageBriefs'].append(brief)
+        self.plan['request']['requirements'][0]['actionIds'].append('A2')
+        self.bind_plan()
+        review = self.review()
+        review.update(verdict='FAIL', round=1, findings=[
+            {'id': 'DUP-A2', 'severity': 'duplicate-collision', 'status': 'open',
+             'actionId': 'A2', 'target': row['target'], 'evidence': 'Synthetic duplicate already has an existing answer.'},
+            {'id': 'FAQ-A1', 'severity': 'substantive', 'status': 'open',
+             'issue': 'The surviving outline lacks researched FAQs.',
+             'evidence': 'Synthetic outline inspection found no FAQ questions.',
+             'requiredChange': 'Use the saved reader questions to plan the surviving page FAQs.'},
+        ])
+        (self.root / 'review.json').write_text(json.dumps(review))
+        return review
+
+    def test_first_fail_chart_prunes_only_duplicate_and_preserves_fail_and_guardrails(self):
+        review = self.duplicate_chart_prune_fixture()
+        original = (self.root / 'review.json').read_bytes()
+        receipt = g.prune_failed_routes(self.root, 'plan.json', 'review.json', ['/guides/duplicate'],
+                                        'Synthetic duplicate removed before writing; surviving scope remains independently reviewed.')
+        plan, derived = g.read(self.root / 'plan.json'), g.read(self.root / 'review.json')
+        self.assertEqual(receipt['prunedActionIds'], ['A2'])
+        self.assertEqual(derived['verdict'], 'FAIL')
+        self.assertEqual(derived['round'], 1)
+        self.assertEqual(derived['findings'][0]['resolutionKind'], 'route-pruned')
+        self.assertEqual(derived['findings'][1]['status'], 'open')
+        self.assertIn(review['findings'][1]['requiredChange'], '\n'.join(plan['reviewerGuardrails']))
+        self.assertEqual((self.root / derived['prunedReviewSource']['path']).read_bytes(), original)
+        g.chart(self.root, plan, derived)
+        g.rebind_mechanical(self.root, 'plan.json', 'review.json')
+        self.assertEqual(g.read(self.root / 'review.json')['verdict'], 'FAIL')
+
+    def test_duplicate_chart_prune_rejects_other_duplicate_liability_and_stale_review_without_mutation(self):
+        review = self.duplicate_chart_prune_fixture()
+        for kind in ('surviving-duplicate', 'liability', 'stale'):
+            with self.subTest(kind=kind):
+                changed = copy.deepcopy(review)
+                if kind == 'surviving-duplicate':
+                    changed['findings'][0].update(actionId='A1', target='/guides/fixture')
+                elif kind == 'liability':
+                    changed['liabilityBlock'] = True
+                else:
+                    changed['manifestSha256'] = '0' * 64
+                (self.root / 'review.json').write_text(json.dumps(changed))
+                before = {name: (self.root / name).read_bytes() for name in ('plan.json', 'review.json')}
+                with self.assertRaises(ValueError):
+                    g.prune_failed_routes(self.root, 'plan.json', 'review.json', ['/guides/duplicate'],
+                                          'Synthetic rejected prune must retain all original input bytes and safety checks.')
+                self.assertEqual(before, {name: (self.root / name).read_bytes() for name in before})
+
     def test_prune_failed_routes_handles_empty_outbound_and_pruned_link_hub_and_src_data_json(self):
         """Reproduces drones_and_defense partial-batch edge case:
         - A1 (/guides/fixture) links outbound ONLY to pruned sibling A2 (/guides/bad-page) AND outbound to existing hub (/existing) whose link-edit row L1 is ALSO pruned.
@@ -1221,6 +1343,55 @@ class Gates(unittest.TestCase):
         self.assertEqual(saved_rev['requestCoverage'][0]['priorStatus'], 'FAIL')
         g.chart(self.root, saved_plan, saved_rev)
         g.saved_chart(self.root, saved_plan)
+
+    def test_precheck_drafts_scans_all_split_data_ts_files_without_false_positives_and_catches_broken_slugs(self):
+        self.bind_plan()
+        # Add split data/*.ts files (like guides-fable-5-2.ts and comparisons-alternatives-20261113.ts)
+        (self.root / 'data').mkdir(parents=True, exist_ok=True)
+        (self.root / 'data/guides-fable-5-2.ts').write_text('export const g = [{ slug: "claude-fable-5-2-explained" }];\n')
+        (self.root / 'data/comparisons-alternatives-20261113.ts').write_text('export const c = [{ slug: "cursor-alternatives" }];\n')
+        (self.root / 'public').mkdir(parents=True, exist_ok=True)
+        (self.root / 'public/search-index.json').write_text(json.dumps([{'url': '/guides/indexed-only-guide'}]))
+
+        drafts = self.root / 'drafts'
+        drafts.mkdir(parents=True, exist_ok=True)
+        filler = ' '.join(['substantive'] * 950)
+        good_draft = {
+            'sections': [{
+                'heading': 'Overview',
+                'paragraphs': [
+                    filler + ' See [Fable](/guides/claude-fable-5-2-explained), [Alts](/comparisons/cursor-alternatives), and [Indexed](/guides/indexed-only-guide).'
+                ],
+            }]
+        }
+        (drafts / 'fixture.json').write_text(json.dumps(good_draft))
+        (drafts / 'fixture.meta.json').write_text(json.dumps({'provider': 'anthropic', 'model': 'claude-opus-4-7'}))
+
+        res_ok = g.precheck_drafts(self.root, 'plan.json', 'drafts')
+        self.assertEqual(res_ok['status'], 'PASS', res_ok)
+
+        # Now add a genuinely broken internal link and confirm it IS caught
+        bad_draft = {
+            'sections': [{
+                'heading': 'Overview',
+                'paragraphs': [filler + ' See [Missing](/guides/nonexistent-phantom-slug).'],
+            }]
+        }
+        (drafts / 'fixture.json').write_text(json.dumps(bad_draft))
+        res_bad = g.precheck_drafts(self.root, 'plan.json', 'drafts')
+        self.assertEqual(res_bad['status'], 'FAIL')
+        self.assertTrue(any(i['kind'] == 'broken-internal-link' and 'nonexistent-phantom-slug' in i['detail'] for i in res_bad['issues']))
+
+        # Also verify prepare_write_packets emits basis-specific reported guidance + first-mention link contract
+        ev_dir = self.root / 'evidence/fixture'
+        ev_dir.mkdir(parents=True, exist_ok=True)
+        (ev_dir / 'evidence.json').write_text(json.dumps({'route': '/guides/fixture', 'basis': 'reported'}))
+        pkt_res = g.prepare_write_packets(self.root, 'plan.json', 'prompts', evidence_dir='evidence')
+        self.assertEqual(pkt_res['status'], 'PASS')
+        sys_txt = (self.root / 'prompts/system.md').read_text()
+        prompt_txt = (self.root / 'prompts/fixture.prompt.md').read_text()
+        self.assertIn('Hyperlink the VERY FIRST mention', sys_txt)
+        self.assertIn('NEVER write `"In our internal cost modeling"`', prompt_txt)
 
 
 if __name__ == '__main__':

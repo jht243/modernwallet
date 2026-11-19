@@ -846,13 +846,30 @@ def finish_audit(root, snapshot_path, review_path, out_path=None, job=None,
 
     analysis_results = []
     for item in fin.get('boundAnalysisReviews') or []:
-        ar_doc = json.loads((root / item['analysisReview']).read_text(encoding='utf-8'))
+        ar_file = root / item['analysisReview']
+        ar_doc = json.loads(ar_file.read_text(encoding='utf-8'))
         # Run audit-analysis for PASS routes (and final-round capped-release routes)
         cmd = [_sys.executable, '.claude/tools/mindmap-gates.py', 'audit-analysis',
                '--packet', item['packet'], '--review', item['analysisReview']]
         if item.get('replayOutput'):
             cmd.extend(['--replay-output', item['replayOutput']])
         ap = _sp.run(cmd, cwd=str(root), capture_output=True, text=True)
+        # In mixed batches where sibling routes need Round-2 rework (chk_proc.returncode != 0),
+        # project this passing route's standalone approved snapshot/review pair so audit-analysis
+        # verifies the route cleanly without false-blocking on unapproved sibling routes.
+        if ap.returncode != 0 and chk_proc.returncode != 0 and ar_doc.get('verdict') == 'PASS':
+            try:
+                crp_proj = _load('repo_crp_proj', root / '.claude/tools/content-review-policy.py')
+                if hasattr(crp_proj, 'project'):
+                    proj_snap = _unused_path(ar_file.with_name(f'{ar_file.stem}.projected-snapshot.json'), 'v')
+                    proj_rev = _unused_path(ar_file.with_name(f'{ar_file.stem}.projected-review.json'), 'v')
+                    crp_proj.project(root, root / snap_rel, root / rev_rel, [item['route']], proj_snap, proj_rev)
+                    ar_doc['renderedSnapshot'] = crp_proj.reference(root, proj_snap)
+                    ar_doc['renderedReview'] = crp_proj.reference(root, proj_rev)
+                    ar_file.write_bytes(crp_proj.canonical(ar_doc) + b'\n')
+                    ap = _sp.run(cmd, cwd=str(root), capture_output=True, text=True)
+            except Exception:
+                pass
         analysis_results.append({
             'route': item['route'],
             'analysisReview': item['analysisReview'],
