@@ -1190,7 +1190,7 @@ def cases(root, query, publisher, context_queries=None):
             'instruction': 'Select only relevant approved facts/quotes; save selection/rejection reasons in the existing evidence packet. Local exclusions and public-use scope still govern. No result is an automatic testing permission.'}
 
 
-def cases_batch(root, manifest_path, publisher, out_dir):
+def cases_batch(root, manifest_path, publisher, out_dir, routes=None):
     plan = read(local(root, manifest_path))
     actions = plan.get('actions')
     require(isinstance(actions, list), 'Manifest requires actions list')
@@ -1198,7 +1198,7 @@ def cases_batch(root, manifest_path, publisher, out_dir):
     require(target_dir.is_relative_to(root.resolve()), 'Output directory escapes active repository: ' + out_dir)
     results = []
     for row in actions:
-        if row.get('bucket') not in SUBSTANTIVE:
+        if row.get('bucket') not in SUBSTANTIVE or not _matches_route_filter(row.get('target', ''), routes):
             continue
         target = str(row.get('target', '')).strip()
         question = str(row.get('reader_question', '')).strip()
@@ -1223,7 +1223,7 @@ def cases_batch(root, manifest_path, publisher, out_dir):
 def init_skeleton(root, kind, out=None, out_dir=None, manifest_path=None, review_path=None,
                   author=None, job_id=None, chart_path=None, request_file=None, readiness_file=None,
                   mode='fast-scope', publisher=None, basis='reported', approved_by='human-operator',
-                  note='Approved at Phase 0 human gate'):
+                  note='Approved at Phase 0 human gate', routes=None):
     """Emit fail-closed, pre-hashed JSON skeletons so workers never scrape old reports/ or sed tools."""
     root = root.resolve()
     now_utc = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z')
@@ -1465,7 +1465,7 @@ def init_skeleton(root, kind, out=None, out_dir=None, manifest_path=None, review
         plan = read(m_file)
         m_ref = {'path': str(m_file.relative_to(root)), 'sha256': file_sha(m_file)}
         r_ref = {'path': str(r_file.relative_to(root)), 'sha256': file_sha(r_file)}
-        batch_cases = cases_batch(root, str(m_file.relative_to(root)), publisher, out_dir)
+        batch_cases = cases_batch(root, str(m_file.relative_to(root)), publisher, out_dir, routes=routes)
         case_by_action = {item['actionId']: item for item in batch_cases['items']}
         brief_by_action = {
             b.get('actionId'): b
@@ -1476,7 +1476,7 @@ def init_skeleton(root, kind, out=None, out_dir=None, manifest_path=None, review
         is_l3 = publisher.lower().removeprefix('www.') == 'layer3labs.io'
         created = []
         for row in plan.get('actions', []):
-            if not isinstance(row, dict) or row.get('bucket') not in SUBSTANTIVE:
+            if not isinstance(row, dict) or row.get('bucket') not in SUBSTANTIVE or not _matches_route_filter(row.get('target', ''), routes):
                 continue
             aid = row['id']
             c_info = case_by_action[aid]
@@ -1750,6 +1750,16 @@ def _norm_route_path(route):
     return r.rstrip('/') or '/'
 
 
+def _matches_route_filter(target, routes):
+    if not routes:
+        return True
+    t_norm = _norm_route_path(target)
+    t_slug = _route_slug(target)
+    norm_set = {_norm_route_path(r) for r in routes if r}
+    slug_set = {_route_slug(r) for r in routes if r}
+    return bool((t_norm and t_norm in norm_set) or (t_slug and t_slug in slug_set))
+
+
 def _discover_voice_sample(root, explicit_sample=None):
     if explicit_sample:
         p = local(root, explicit_sample)
@@ -1783,7 +1793,7 @@ def _collect_verified_urls_from_text(raw_text):
     return urls
 
 
-def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice_sample=None, review_path=None, overwrite=False):
+def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice_sample=None, review_path=None, overwrite=False, routes=None):
     """Build reusable system.md + per-slug .prompt.md + .allowed-urls.txt from approval-manifest.json in 1 command."""
     root = root.resolve()
     m_file = local(root, manifest_path)
@@ -1868,7 +1878,7 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
             pass
     packets = []
     for row in (plan.get('actions') or []):
-        if not isinstance(row, dict) or row.get('bucket') not in SUBSTANTIVE:
+        if not isinstance(row, dict) or row.get('bucket') not in SUBSTANTIVE or not _matches_route_filter(row.get('target', ''), routes):
             continue
         aid = row.get('id', '')
         target = str(row.get('target') or '').strip()
@@ -2021,7 +2031,7 @@ def _convert_pipe_lines_to_table(lines):
     return None
 
 
-def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_tables=False):
+def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_tables=False, routes=None):
     """1-command pre-splice mechanical lint across writer drafts (.meta.json, pipe-in-paragraphs, URLs, residue, depth)."""
     root = root.resolve()
     m_file = local(root, manifest_path)
@@ -2042,7 +2052,7 @@ def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_
 
     substantive_rows = [
         r for r in (plan.get('actions') or [])
-        if isinstance(r, dict) and r.get('bucket') == 'create new content'
+        if isinstance(r, dict) and r.get('bucket') == 'create new content' and _matches_route_filter(r.get('target', ''), routes)
     ]
     issues = []
     checked = 0
@@ -2244,7 +2254,7 @@ def _load_locked_and_rework_routes(root, plan, prior_review_path):
     return locked, rework_ok
 
 
-def check_write_scope(root, manifest_path, prior_review=None, fix=False):
+def check_write_scope(root, manifest_path, prior_review=None, fix=False, routes=None):
     """Verify git working tree modifies ONLY routes authorized in approval-manifest.json (and unlocked on rework)."""
     root = root.resolve()
     if not (root / '.git').exists():
@@ -2252,6 +2262,11 @@ def check_write_scope(root, manifest_path, prior_review=None, fix=False):
     plan = read(local(root, manifest_path))
     allowed_routes = set()
     allowed_slugs = set()
+    for r_arg in (routes or []):
+        rn = _norm_route_path(r_arg)
+        if rn:
+            allowed_routes.add(rn)
+            allowed_slugs.add(_route_slug(rn))
     for act in (plan.get('actions') or []):
         if not isinstance(act, dict) or act.get('bucket') == 'consolidation advisory':
             continue
@@ -2982,6 +2997,7 @@ def main():
     q.add_argument('--manifest', required=True)
     q.add_argument('--publisher', '--site-host', dest='publisher', required=True)
     q.add_argument('--out-dir', required=True)
+    q.add_argument('--route', dest='routes', action='append', help='Optional route filter (repeat as needed)')
     q = s.add_parser('init-skeleton')
     q.add_argument('--kind', choices=['scope-manifest', 'manifest', 'chart-review', 'phase0-approval', 'evidence-batch'], required=True)
     q.add_argument('--out')
@@ -2998,6 +3014,7 @@ def main():
     q.add_argument('--basis', choices=['calculated', 'modeled', 'measured', 'reported', 'client-record'], default='reported')
     q.add_argument('--approved-by', default='human-operator')
     q.add_argument('--note', default='Approved at Phase 0 human gate')
+    q.add_argument('--route', dest='routes', action='append', help='Optional route filter for evidence-batch (repeat as needed)')
     q = s.add_parser('prepare-write-packets')
     q.add_argument('--manifest', required=True)
     q.add_argument('--out-dir', required=True)
@@ -3005,15 +3022,18 @@ def main():
     q.add_argument('--voice-sample')
     q.add_argument('--review')
     q.add_argument('--overwrite', action='store_true')
+    q.add_argument('--route', dest='routes', action='append', help='Optional route filter (repeat as needed)')
     q = s.add_parser('precheck-drafts')
     q.add_argument('--manifest', required=True)
     q.add_argument('--drafts-dir', required=True)
     q.add_argument('--prompts-dir')
     q.add_argument('--fix-pipe-tables', action='store_true')
+    q.add_argument('--route', dest='routes', action='append', help='Optional route filter (repeat as needed)')
     q = s.add_parser('check-write-scope')
     q.add_argument('--manifest', required=True)
     q.add_argument('--prior-review')
     q.add_argument('--fix', action='store_true')
+    q.add_argument('--route', dest='routes', action='append', help='Optional route filter (repeat as needed)')
     q = s.add_parser('plan-batches')
     q.add_argument('--manifest', required=True)
     q.add_argument('--max-new-pages', type=int, default=3)
@@ -3038,20 +3058,20 @@ def main():
     if a.command == 'prepare-write-packets':
         print(json.dumps(prepare_write_packets(
             root, a.manifest, a.out_dir, evidence_dir=a.evidence_dir,
-            voice_sample=a.voice_sample, review_path=a.review, overwrite=a.overwrite,
+            voice_sample=a.voice_sample, review_path=a.review, overwrite=a.overwrite, routes=a.routes,
         ), indent=2))
         return
     if a.command == 'precheck-drafts':
         res = precheck_drafts(
             root, a.manifest, a.drafts_dir, prompts_dir=a.prompts_dir,
-            fix_pipe_tables=a.fix_pipe_tables,
+            fix_pipe_tables=a.fix_pipe_tables, routes=a.routes,
         )
         print(json.dumps(res, indent=2))
         if res['status'] != 'PASS':
             sys.exit(1)
         return
     if a.command == 'check-write-scope':
-        res = check_write_scope(root, a.manifest, prior_review=a.prior_review, fix=a.fix)
+        res = check_write_scope(root, a.manifest, prior_review=a.prior_review, fix=a.fix, routes=a.routes)
         print(json.dumps(res, indent=2))
         if res['status'] != 'PASS':
             sys.exit(1)
@@ -3086,7 +3106,7 @@ def main():
         print(json.dumps({'status': 'retrieved-not-approved', 'candidates': len(result['candidates'])}))
         return
     if a.command == 'cases-batch':
-        print(json.dumps(cases_batch(root, a.manifest, a.publisher, a.out_dir), indent=2))
+        print(json.dumps(cases_batch(root, a.manifest, a.publisher, a.out_dir, routes=a.routes), indent=2))
         return
     if a.command == 'seal-draft':
         print(json.dumps(seal_draft(root, a.manifest, a.out), indent=2))
@@ -3103,7 +3123,7 @@ def main():
             root, a.kind, out=a.out, out_dir=a.out_dir, manifest_path=a.manifest, review_path=a.review,
             author=a.author, job_id=a.job_id, chart_path=a.chart, request_file=a.request_file,
             readiness_file=a.readiness, mode=a.mode, publisher=a.publisher, basis=a.basis,
-            approved_by=a.approved_by, note=a.note,
+            approved_by=a.approved_by, note=a.note, routes=a.routes,
         ), indent=2))
         return
     if a.command == 'validate-analysis':

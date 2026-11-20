@@ -192,8 +192,13 @@ def handoff_check(root, path, actor=None, phase=None, visited=None):
         old = handoff_check(root, evidence_ref(root, h['previous']), visited=visited)
         require(h['jobId'] == old['jobId'] and _same_site_origin(root, h['canonicalBase'], old['canonicalBase']),
                 'Canonical job identity changed')
-        if _norm_route_set(h['routes']) != _norm_route_set(old['routes']):
-            preparation_scope_check(root, h, old, phase)
+        old_norm = _norm_route_set(old['routes'])
+        cur_norm = _norm_route_set(h['routes'])
+        if cur_norm != old_norm:
+            is_subbatch_narrowing = bool(cur_norm and cur_norm < old_norm and not h.get('preparationScopeChange'))
+            is_multibatch_publish = bool(phase == 'publish' and 'reviewPairs' in h and old_norm <= cur_norm and not h.get('preparationScopeChange'))
+            if not (is_subbatch_narrowing or is_multibatch_publish):
+                preparation_scope_check(root, h, old, phase)
         require(all(counters[k] >= old['reviewCounters'][k] for k in counters), 'Review counters cannot reset')
         require({f['id'] for f in old['findings']} <= set(ids), 'Prior findings cannot disappear')
     if phase == 'audit':
@@ -580,7 +585,15 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
     require(bool(resolved_job), 'Missing jobId in approval-manifest.json; pass --job-id explicitly')
     require(isinstance(producer, str) and producer.strip(), 'Provide a non-empty --producer identity')
 
-    if prev_obj:
+    if parsed_pairs and not explicit_routes:
+        pair_routes = []
+        for sp, _ in parsed_pairs:
+            for sr in read(sp).get('routes', []):
+                if isinstance(sr, dict) and str(sr.get('path') or '').startswith('/'):
+                    pair_routes.append(sr['path'])
+        routes = list(dict.fromkeys(pair_routes))
+        require(bool(routes), 'No routes found in --review-pair snapshots')
+    elif prev_obj and not explicit_routes:
         routes = list(prev_obj['routes'])
         if not is_layer3_local:
             snap_by_norm = {}
@@ -602,14 +615,6 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
                 else:
                     aligned.append(r)
             routes = list(dict.fromkeys(aligned))
-    elif parsed_pairs and not explicit_routes:
-        pair_routes = []
-        for sp, _ in parsed_pairs:
-            for sr in read(sp).get('routes', []):
-                if isinstance(sr, dict) and str(sr.get('path') or '').startswith('/'):
-                    pair_routes.append(sr['path'])
-        routes = list(dict.fromkeys(pair_routes))
-        require(bool(routes), 'No routes found in --review-pair snapshots')
     else:
         routes = _extract_routes(manifest_obj, snap_obj, explicit_routes, root=None if is_layer3_local else root)
     now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
