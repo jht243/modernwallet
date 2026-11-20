@@ -34,7 +34,7 @@ URL = re.compile(r"https?://[^\s)\"'<>\]]+")
 NUM = re.compile(r"(?<![\w.])[$€£]?\d[\d,]*(?:\.\d+)?%?")
 CUR = re.compile(r"\b(?:COP|USD|EUR|GBP|MXN|BRL|CAD|AUD)\s?\$?\d[\d,.]*\s*(?:million|billion|thousand|k|m)?\b", re.I)
 DATE_KEYS = re.compile(
-    r"""^\s*['"]?(updated|updatedAt|updatedDate|updated_at|lastUpdated|last_updated|lastmod|dateModified|modified)['"]?\s*:.*$""",
+    r"""^\s*['"]?(updated|updatedAt|updatedDate|updated_at|lastUpdated|last_updated|lastmod|dateModified|modified)['"]?\s*:.*$|['"]?(?:updated|updatedAt|updatedDate|updated_at|lastUpdated|last_updated|lastmod|dateModified|modified)['"]?\s*[:=]\s*['"]\d{4}-\d{2}-\d{2}(?:[T\s][0-9:.+-Z]+)?['"]""",
     re.M,
 )
 

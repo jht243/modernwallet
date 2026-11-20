@@ -334,12 +334,14 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
                 except Exception:
                     pass
 
-    has_work = bool(actionable_orders or actionable_fixes or (actionable_upsells and upsells_runnable) or hosted_runnable or standing_changed)
+    orders_runnable = not is_cloud_remote
+    fixes_runnable = not is_cloud_remote
+    has_work = bool((actionable_orders and orders_runnable) or (actionable_fixes and fixes_runnable) or (actionable_upsells and upsells_runnable) or hosted_runnable or standing_changed)
     if has_work:
         return {
             'fastExit': False,
-            'orders': actionable_orders,
-            'fixes': actionable_fixes,
+            'orders': actionable_orders if orders_runnable else [],
+            'fixes': actionable_fixes if fixes_runnable else [],
             'upsells': actionable_upsells if upsells_runnable else [],
             'hostedReady': hosted_runnable,
             'standingChanged': standing_changed,
@@ -349,13 +351,23 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
         state_file.write_text(json.dumps({'standingSha256': standing_sha, 'checkedAt': dt.datetime.now(dt.timezone.utc).isoformat()}) + '\n')
     except Exception:
         pass
+    order_note = (
+        f'{len(actionable_orders)} orders delegated to GitHub Actions publisher-failover'
+        if (is_cloud_remote and actionable_orders)
+        else '0 actionable orders'
+    )
+    fix_note = (
+        f'{len(actionable_fixes)} fixes delegated to GitHub Actions publisher-failover'
+        if (is_cloud_remote and actionable_fixes)
+        else '0 actionable fixes'
+    )
     upsell_note = (
         f'{len(actionable_upsells)} upsells delegated to GitHub Actions publisher-failover'
         if (is_cloud_remote and actionable_upsells)
         else f'{len(actionable_upsells)} upsells deferred/unrunnable'
     )
     summary = (
-        f'Quiet paid publisher hour: 0 actionable orders, 0 actionable fixes, '
+        f'Quiet paid publisher hour: {order_note}, {fix_note}, '
         f'{upsell_note}, standing unchanged.'
     )
     if send_email:
