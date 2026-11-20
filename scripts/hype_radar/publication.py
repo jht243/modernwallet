@@ -44,14 +44,22 @@ def retain(root,pull,ref,commit,snapshot,job,durable=False):
         require(revision and row.get('review',{}).get('job')==job,'Use the original chart-reviewed durable intake')
         original=module.git(root,'show',revision+':artifacts/'+digest).stdout
     require(original==raw,'Publication source contains another intake')
-    inside(root,snapshot)
-    captured=subprocess.check_output(['git','show',commit+':'+snapshot],cwd=root)
-    snap=json.loads(captured)
-    require(snap.get('routes') and snap['manifest'].get('workflowKind')=='mindmap-pass','Retain the actual complete Mindmap snapshot')
+    snap_list=[snapshot] if isinstance(snapshot,str) else list(snapshot)
+    require(snap_list,'Retain at least one Mindmap snapshot')
+    snaps=[];snap_meta=[]
+    for sp in snap_list:
+        inside(root,sp)
+        captured=subprocess.check_output(['git','show',commit+':'+sp],cwd=root)
+        s=json.loads(captured)
+        require(s.get('routes') and s['manifest'].get('workflowKind')=='mindmap-pass','Retain the actual complete Mindmap snapshot')
+        snaps.append(s);snap_meta.append({'path':sp,'sha256':sha(captured)})
+    canonical_base=snaps[0]['manifest']['canonicalBase']
+    require(all(s['manifest']['canonicalBase']==canonical_base for s in snaps),'All retained snapshots must share canonicalBase')
+    expected_routes={r['path']:r['fingerprint'] for s in snaps for r in s['routes']}
     plan={'kind':'hype-retained-publication-v1','state':'pending','pull':digest,'jobId':job,
-          'sourceRef':ref,'sourceCommit':commit,'snapshot':{'path':snapshot,'sha256':sha(captured)},
-          'expectedRoutes':{r['path']:r['fingerprint'] for r in snap['routes']},
-          'canonicalBase':snap['manifest']['canonicalBase'],
+          'sourceRef':ref,'sourceCommit':commit,'snapshot':snap_meta[0],'snapshots':snap_meta,
+          'expectedRoutes':expected_routes,
+          'canonicalBase':canonical_base,
           'authority':'Inputs only. Reuse actual recorded reviews, compose their exact authority and run all normal publication/live checks. No new audit verdict or permission grant.'}
     checkpoints.publication(root,digest,plan,durable)
     return plan
@@ -60,7 +68,11 @@ def complete(root,pull,snapshot_path,review_path,live_path=None):
     digest=pull.stem;require(sha(pull.read_bytes())==digest,'Frozen intake changed')
     plan_path=pull.parent/'production'/pull.name;plan=read(plan_path)
     require(plan.get('kind')=='hype-retained-publication-v1','Retain reviewed publication inputs before completion')
-    snapshot=read(snapshot_path);review=read(review_path)
+    snap_paths=[snapshot_path] if isinstance(snapshot_path,Path) else list(snapshot_path or [])
+    rev_paths=[review_path] if isinstance(review_path,Path) else list(review_path or [])
+    live_paths=([live_path] if isinstance(live_path,Path) else list(live_path or [])) if live_path is not None else []
+    require(snap_paths and len(snap_paths)==len(rev_paths),'Supply matching snapshot and review artifact paths')
+    snapshots=[read(p) for p in snap_paths];reviews=[read(p) for p in rev_paths]
     def load(name,file):
         spec=importlib.util.spec_from_file_location(name,root/file);module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);return module
     q_mod=load('hype_quarantine','.claude/tools/quarantine.py') if (root/'.claude/tools/quarantine.py').is_file() else None
@@ -68,35 +80,44 @@ def complete(root,pull,snapshot_path,review_path,live_path=None):
         p:fp for p,fp in plan['expectedRoutes'].items()
         if not (q_mod and q_mod.is_quarantined(root,'hype-radar-auto',item_id=plan.get('jobId'),route=p))
     }
-    require(snapshot['manifest']['canonicalBase']==plan['canonicalBase'] and
-            {r['path']:r['fingerprint'] for r in snapshot['routes']}==expected_active,'Do not omit or change the retained reviewed routes')
+    combined_routes={r['path']:r['fingerprint'] for s in snapshots for r in s['routes']}
+    require(all(s['manifest']['canonicalBase']==plan['canonicalBase'] for s in snapshots) and
+            (combined_routes==expected_active if len(snapshots)==1 else set(combined_routes.keys())==set(expected_active.keys())),'Do not omit or change the retained reviewed routes')
     renderer=load('hype_completed_render','.claude/tools/rendered-audit.py')
     policy=load('hype_completed_policy','.claude/tools/content-review-policy.py')
-    renderer.valid_snapshot(snapshot)
-    require(live_path is not None,'Supply the existing actual canonical live snapshot; do not recapture or re-audit unchanged output')
-    renderer.compare(snapshot,read(live_path),review)
-    provenance=load('hype_host_provenance','.claude/tools/deployment-evidence.local.py')
-    require(policy.check_rendered(root,snapshot,review,force=True),'Actual recorded review/release authority required')
+    for s in snapshots:
+        renderer.valid_snapshot(s)
+    require(live_paths and len(live_paths)==len(snap_paths),'Supply the existing actual canonical live snapshot; do not recapture or re-audit unchanged output')
+    for s,r,lp in zip(snapshots,reviews,live_paths):
+        renderer.compare(s,read(lp),r)
+    prov_file='.claude/tools/deployment-evidence.local.py' if (root/'.claude/tools/deployment-evidence.local.py').is_file() else '.claude/tools/deployment-evidence.py'
+    provenance=load('hype_host_provenance',prov_file)
+    for s,r in zip(snapshots,reviews):
+        require(policy.check_rendered(root,s,r,force=True),'Actual recorded review/release authority required')
     commits=set()
-    for row in review['routes']:
-        admission=policy.read(policy.artifact(root,row['reviewBudget']))
-        with policy.Journal(root,plan['canonicalBase'],row['path']) as journal:
-            cycle=next((c for c in journal.cycles if c['cycleId']==admission['cycleId']),None)
-            require(cycle and cycle['status']=='published','Run the existing exact-live record-deployment step before completion')
-            events=[e['data'] for e in journal.events if e['kind']=='published' and e['data']['cycleId']==cycle['cycleId']]
-            require(events and events[-1].get('verifiedAt'),'Missing actual published journal event')
-            commits.add(events[-1]['commit'])
+    for r in reviews:
+        for row in r['routes']:
+            admission=policy.read(policy.artifact(root,row['reviewBudget']))
+            with policy.Journal(root,plan['canonicalBase'],row['path']) as journal:
+                cycle=next((c for c in journal.cycles if c['cycleId']==admission['cycleId']),None)
+                require(cycle and cycle['status']=='published','Run the existing exact-live record-deployment step before completion')
+                events=[e['data'] for e in journal.events if e['kind']=='published' and e['data']['cycleId']==cycle['cycleId']]
+                require(events and events[-1].get('verifiedAt'),'Missing actual published journal event')
+                commits.add(events[-1]['commit'])
     for commit in commits:
         require(re.fullmatch('[0-9a-f]{40}',commit) is not None,'Missing actual verified publication commit')
     require(len(commits)==1,'Use the single original actual publication commit')
     proof=provenance.verify(root,provenance.fetch(),next(iter(commits)))
     proof['purpose']='host-deployment-evidence'
+    live_meta=[{'path':str(lp.relative_to(root)),'sha256':sha(lp.read_bytes())} for lp in live_paths]
+    snap_out=[{'path':str(sp.relative_to(root)),'sha256':sha(sp.read_bytes())} for sp in snap_paths]
+    rev_out=[{'path':str(rp.relative_to(root)),'sha256':sha(rp.read_bytes())} for rp in rev_paths]
     result={**plan,'hostVerification':proof,
-            'completedLiveSnapshot':{'path':str(live_path.relative_to(root)),'sha256':sha(live_path.read_bytes())},'state':'complete','publishedCommits':sorted(commits),
-            'completedSnapshot':{'path':str(snapshot_path.relative_to(root)),'sha256':sha(snapshot_path.read_bytes())},
-            'completedReview':{'path':str(review_path.relative_to(root)),'sha256':sha(review_path.read_bytes())}}
+            'completedLiveSnapshot':live_meta[0],'completedLiveSnapshots':live_meta,'state':'complete','publishedCommits':sorted(commits),
+            'completedSnapshot':snap_out[0],'completedSnapshots':snap_out,
+            'completedReview':rev_out[0],'completedReviews':rev_out}
     checkpoints.publication(root,digest,result)
-    return {'ok':True,'jobId':plan['jobId'],'publishedRoutes':len(snapshot['routes']),'state':'complete'}
+    return {'ok':True,'jobId':plan['jobId'],'publishedRoutes':len(combined_routes),'state':'complete'}
 
 def _route_present_in_repo(root, route_path):
     """Best-effort check whether a published route path/slug already exists in the current repo checkout."""
@@ -298,13 +319,13 @@ def reconcile_orphaned(root, pull, durable=False):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);s=p.add_subparsers(dest='command',required=True)
-    r=s.add_parser('retain');r.add_argument('--pull',required=True);r.add_argument('--source-ref',required=True);r.add_argument('--commit',required=True);r.add_argument('--snapshot',required=True);r.add_argument('--job-id',required=True);r.add_argument('--durable',action='store_true')
-    f=s.add_parser('complete');f.add_argument('--pull',required=True);f.add_argument('--snapshot',required=True);f.add_argument('--review',required=True);f.add_argument('--live-snapshot',required=True)
+    r=s.add_parser('retain');r.add_argument('--pull',required=True);r.add_argument('--source-ref',required=True);r.add_argument('--commit',required=True);r.add_argument('--snapshot',required=True,action='append');r.add_argument('--job-id',required=True);r.add_argument('--durable',action='store_true')
+    f=s.add_parser('complete');f.add_argument('--pull',required=True);f.add_argument('--snapshot',required=True,action='append');f.add_argument('--review',required=True,action='append');f.add_argument('--live-snapshot',required=True,action='append')
     b=s.add_parser('blocked');b.add_argument('--pull',required=True);b.add_argument('--reason',required=True,choices=['platform-approval','mechanical-dependency'])
     t=s.add_parser('retire');t.add_argument('--pull',required=True);t.add_argument('--reason',required=True);t.add_argument('--durable',action='store_true')
     a=p.parse_args();pull=inside(ROOT,a.pull)
     if a.command=='retain':result=retain(ROOT,pull,a.source_ref,a.commit,a.snapshot,a.job_id,a.durable)
-    elif a.command=='complete':result=complete(ROOT,pull,inside(ROOT,a.snapshot),inside(ROOT,a.review),inside(ROOT,a.live_snapshot))
+    elif a.command=='complete':result=complete(ROOT,pull,[inside(ROOT,x) for x in a.snapshot],[inside(ROOT,x) for x in a.review],[inside(ROOT,x) for x in a.live_snapshot])
     elif a.command=='retire':result=retire(ROOT,pull,a.reason,durable=a.durable)
     else:
         plan=read(pull.parent/'production'/pull.name)
