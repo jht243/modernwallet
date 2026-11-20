@@ -1,3 +1,7 @@
+<!-- mindmap-pass-repo-command-resolution-20261120 -->
+**Canonical Mindmap skill/command resolution — Jonathan, 2026-11-20 (latest):** The personal `~/.codex/skills/mindmap-pass` folder was archived to `~/.codex/skills-archive/mindmap-pass` when the repository-native `.claude/commands/mindmap-pass.md` (and `.claude/commands/mindmap-pass/*.md` + `.claude/tools/workflow-preflight.py`) became the canonical Mindmap implementation across the fleet. Whenever any prompt, global `AGENTS.md`, or routine (`x-trends-mindmap-auto`, `content-request-fulfillment-auto`, `news-radar-mindmap-auto`, `mindmap-inbox-auto`, `tool-usage-mindmap-auto`, `alternatives-daily-auto`, `search-gap-content-auto`, or manual `/mindmap-pass` / `$mindmap-pass`) references the `$mindmap-pass` skill or `/mindmap-pass`, **ALWAYS use the active repository's `.claude/commands/mindmap-pass.md` and `.claude/commands/mindmap-pass/*.md` (via `.claude/tools/workflow-preflight.py`) as the authoritative Mindmap skill/routine** — NEVER treat the absence of `~/.codex/skills/mindmap-pass/SKILL.md` or `~/.claude/skills/mindmap-pass/SKILL.md` as a missing-skill blocker.
+<!-- /mindmap-pass-repo-command-resolution-20261120 -->
+
 
 
 <!-- workflow-checkpoints-v1 -->
