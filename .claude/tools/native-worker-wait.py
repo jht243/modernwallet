@@ -76,7 +76,7 @@ def _find_prior_stage_worker(root,sid,stage):
  if prior is None:return None
  reports_dir=root/'reports'
  if not reports_dir.is_dir():return None
- if any(reports_dir.glob(f'**/preflight-{stage}*/manifest.json')):
+ if any(reports_dir.glob(f'**/preflight-{stage}*/manifest.json')) or (stage=='audit' and any(reports_dir.glob('routine-control/preflight/**/manifest.json'))):
   return prior
  return None
 
