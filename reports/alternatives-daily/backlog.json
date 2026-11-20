@@ -342,10 +342,22 @@
           "at": "2026-11-20T16:50:25+00:00",
           "status": "in_progress",
           "note": "audit PASS"
+        },
+        {
+          "at": "2026-11-20T16:54:05+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-20T16:45:01+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-20T16:54:05+00:00",
       "claimedOn": "2026-11-20",
       "attempts": 1,
       "lastNextAt": "2026-11-20T16:38:59+00:00",
@@ -371,7 +383,12 @@
           }
         ],
         "recordedAt": "2026-11-20T16:50:25+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/betterment/",
+      "commit": "91e451a",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-20",
+      "bodyWords": 2473
     },
     {
       "vendor": "Wealthfront",
@@ -2056,10 +2073,22 @@
           "at": "2026-11-20T16:50:25+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-20T16:54:05+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-20T16:46:36+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-20T16:54:05+00:00",
       "claimedOn": "2026-11-20",
       "attempts": 1,
       "lastNextAt": "2026-11-20T16:38:59+00:00",
@@ -2092,7 +2121,12 @@
           }
         ],
         "recordedAt": "2026-11-20T16:50:25+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/ally-bank/",
+      "commit": "91e451a",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-20",
+      "bodyWords": 2490
     },
     {
       "vendor": "Stash",
@@ -2138,10 +2172,22 @@
           "at": "2026-11-20T16:50:25+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-20T16:54:05+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-20T16:44:47+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-20T16:54:05+00:00",
       "claimedOn": "2026-11-20",
       "attempts": 1,
       "lastNextAt": "2026-11-20T16:38:59+00:00",
@@ -2181,7 +2227,12 @@
           }
         ],
         "recordedAt": "2026-11-20T16:50:25+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/stash/",
+      "commit": "91e451a",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-20",
+      "bodyWords": 2411
     },
     {
       "vendor": "Dave",
