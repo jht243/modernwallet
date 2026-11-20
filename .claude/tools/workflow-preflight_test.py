@@ -118,4 +118,25 @@ class PreflightTests(unittest.TestCase):
             self.assertIn(required, write_files)
             self.assertIn(required, audit_files)
 
+    def test_auto_discover_reuse_dir_does_not_cross_sibling_runs(self):
+        old_pf = self.root / 'reports/search-gap/run-old/preflight-audit'
+        old_pf.mkdir(parents=True)
+        (old_pf / 'manifest.json').write_text(json.dumps({
+            'phase': 'audit', 'actor': 'auditor-1', 'runId': 'run-old',
+            'contextId': 'ctx-1', 'contextEpoch': '1',
+            'parts': ['p1'], 'delivered': [1],
+        }))
+        with patch.object(m, 'load', side_effect=lambda d: json.loads((d / 'manifest.json').read_text())), \
+             patch.object(m, 'validate'):
+            cand, _ = m._auto_discover_reuse_dir(
+                self.root, self.root / 'reports/search-gap/run-new/preflight-audit',
+                'audit', 'auditor-1', run_id='run-new', context_id=None, context_epoch=None,
+            )
+            self.assertIsNone(cand)
+            same_run, _ = m._auto_discover_reuse_dir(
+                self.root, self.root / 'reports/search-gap/run-old/preflight-audit-r2',
+                'audit', 'auditor-1', run_id='run-old', context_id='ctx-1', context_epoch='1',
+            )
+            self.assertEqual(same_run, old_pf.resolve())
+
 if __name__ == '__main__': unittest.main()

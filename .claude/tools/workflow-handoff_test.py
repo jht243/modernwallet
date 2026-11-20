@@ -486,6 +486,39 @@ class Tests(unittest.TestCase):
         self.assertEqual(len(checked_pub['reviewPairs']), 2)
         self.assertEqual(set(checked_pub['routes']), {'/guides/pass-one', '/guides/fail-two'})
 
+    def test_auto_seal_does_not_leak_preflight_reuse_across_sibling_runs(self):
+        (self.root / '.claude/content-review-policy.json').write_text(json.dumps({
+            'version': 'risk-review-budget-2026-11-08.1',
+            'siteId': 'fixture',
+            'defaultProfile': 'standard',
+            'minimumProfile': 'standard',
+            'roundLimits': {'light': 1, 'standard': 2, 'high': 3},
+            'releaseAtAuditLimit': True,
+            'canonicalHosts': ['fixture.example'],
+        }))
+        old_pf = self.root / 'reports/search-gap/run-old/preflight-audit'
+        old_pf.mkdir(parents=True)
+        (old_pf / 'manifest.json').write_text(json.dumps({
+            'phase': 'audit', 'actor': 'sg-auditor', 'runId': 'old-run-id',
+            'contextId': 'old-ctx', 'contextEpoch': '1',
+            'parts': ['p1'], 'delivered': [1],
+        }))
+        run_new = self.root / 'reports/search-gap/run-new'
+        run_new.mkdir(parents=True)
+        (run_new / 'readiness.md').write_text('# Ready\n')
+        manifest = run_new / 'approval-manifest.json'
+        manifest.write_text(json.dumps({
+            'jobId': 'job-new-1',
+            'actions': [{'id': 'A1', 'bucket': 'create new content', 'target': '/guides/new-one', 'resolved_deliverable': 'text'}],
+        }))
+        res = h.auto_seal(
+            self.root, phase='audit', manifest_path=manifest, producer='sg-writer', actor='sg-auditor',
+            out_path=run_new / 'handoff-audit.json', readiness_path=run_new / 'readiness.md',
+        )
+        self.assertNotIn('autoDetectedReuseDir', res)
+        self.assertNotIn('--reuse', res['workerPrepareCommand'])
+        self.assertNotIn('old-run-id', res['workerPrepareCommand'])
+
 
 if __name__ == '__main__':
     unittest.main()

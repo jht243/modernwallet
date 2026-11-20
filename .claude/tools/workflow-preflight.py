@@ -310,9 +310,10 @@ def _auto_discover_reuse_dir(root, directory, phase, actor, context_id, context_
         return None, None
     root_res = root.resolve()
     dir_res = directory.resolve()
+    reports_root = (root_res / 'reports').resolve()
     search_parents = []
     for p in (dir_res.parent, dir_res.parent.parent):
-        if p == root_res or root_res not in p.parents or p.name == 'reports':
+        if p == root_res or root_res not in p.parents or p.name == 'reports' or p.parent == reports_root:
             continue
         if p not in search_parents:
             search_parents.append(p)

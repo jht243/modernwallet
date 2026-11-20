@@ -2,6 +2,7 @@
 """Durable search-only job controller around the unchanged native completion validator."""
 import argparse
 import base64
+import gzip
 import hashlib
 import importlib.util
 import json
@@ -505,7 +506,7 @@ def auto_evidence_paths(extra=(), store=None):
         if not p.resolve().is_relative_to(reports_root):
             continue
         size = p.stat().st_size
-        if size > 20_000_000:
+        if size > 90_000_000:
             continue
         try:
             raw = p.read_bytes()
@@ -555,7 +556,7 @@ def completion_checkpoint_paths(paths, max_size=2_000_000):
 
 def capture_artifacts(paths, store=None, site=None, run=None):
     use_storage = bool(site and run and has_evidence_storage(store))
-    max_file = 20_000_000 if use_storage else 2_000_000
+    max_file = 90_000_000 if use_storage else 2_000_000
     artifacts = []
     inline_b64 = 0
     for value in completion_checkpoint_paths(paths, max_size=max_file):
@@ -565,8 +566,13 @@ def capture_artifacts(paths, store=None, site=None, run=None):
         require(not contains_secret(raw), 'Credential value found in checkpoint artifact')
         sha = hashlib.sha256(raw).hexdigest()
         if use_storage and (len(raw) > 16_384 or inline_b64 + ((len(raw) + 2) // 3) * 4 > 250_000):
-            storage_key = store.upload_evidence(site, run, sha, raw)
-            artifacts.append({'path': str(path), 'sha256': sha, 'storageKey': storage_key, 'size': len(raw)})
+            payload = gzip.compress(raw, compresslevel=6) if len(raw) > 20_000_000 else raw
+            require(len(payload) <= 20_000_000, 'Compressed artifact exceeds 20 MB evidence bucket limit')
+            storage_key = store.upload_evidence(site, run, sha, payload)
+            entry = {'path': str(path), 'sha256': sha, 'storageKey': storage_key, 'size': len(raw)}
+            if len(raw) > 20_000_000:
+                entry['encoding'] = 'gzip'
+            artifacts.append(entry)
         else:
             encoded = base64.b64encode(raw).decode()
             inline_b64 += len(encoded)
@@ -580,7 +586,8 @@ def _decode_artifact_bytes(artifact, store=None):
         return base64.b64decode(artifact['base64'], validate=True)
     if 'storageKey' in artifact:
         active_store = store if store is not None and hasattr(store, 'download_evidence') else Store()
-        return active_store.download_evidence(artifact['storageKey'])
+        data = active_store.download_evidence(artifact['storageKey'])
+        return gzip.decompress(data) if artifact.get('encoding') == 'gzip' else data
     raise ValueError('Checkpoint artifact lacks payload bytes or storageKey: ' + str(artifact.get('path')))
 
 

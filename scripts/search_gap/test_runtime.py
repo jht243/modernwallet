@@ -417,6 +417,30 @@ class EvidencePersistenceTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'Saved artifact bytes changed'):
             worker.restore_artifacts([{'artifacts':saved}],store)
 
+    def test_large_source_over_20mb_compresses_and_restores_with_exact_sha256(self):
+        Path('reports/search-gap').mkdir(parents=True)
+        line = b'export const guideChunk = "search gap large shared data file payload verification line";\n'
+        big = line * (21_000_000 // len(line) + 1)
+        self.assertGreater(len(big), 20_000_000)
+        target = 'reports/search-gap/large-source-snapshot.ts'
+        Path(target).write_bytes(big)
+        blobs = {}
+        store = MagicMock()
+        store.supports_evidence_storage = True
+        def up(site, run_id, sha, raw):
+            self.assertLessEqual(len(raw), 20_000_000)
+            key = f'{site}/{run_id}/{sha}'; blobs[key] = raw; return key
+        store.upload_evidence.side_effect = up
+        store.download_evidence.side_effect = lambda key: blobs[key]
+        self.assertIn(target, worker.auto_evidence_paths(store=store))
+        saved = worker.capture_artifacts([target], store, 'layer3labs.io', 'run-big')
+        self.assertEqual(saved[0].get('encoding'), 'gzip')
+        self.assertEqual(saved[0].get('size'), len(big))
+        Path(target).unlink()
+        restored = worker.restore_artifacts([{'artifacts': saved}], store)
+        self.assertEqual(restored['restored'], 1)
+        self.assertEqual(Path(target).read_bytes(), big)
+
     def test_auto_sweep_captures_reports_and_excludes_intakes_and_secrets(self):
         Path('reports/search-gap').mkdir(parents=True)
         Path('reports/mindmap-pass').mkdir(parents=True)

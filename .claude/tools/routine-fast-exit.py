@@ -284,14 +284,21 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
             except Exception:
                 continue
 
-    is_cloud_remote = os.environ.get('CLAUDE_CODE_REMOTE', '').strip().lower() in ('1', 'true', 'yes')
+    is_cloud_remote = (
+        os.environ.get('CLAUDE_CODE_REMOTE', '').strip().lower() in ('1', 'true', 'yes')
+        or bool(os.environ.get('CODEX_SANDBOX'))
+        or (Path('/home/user').is_dir() and not os.environ.get('GMAIL_BRIDGE_SECRET'))
+    )
     hosted_runnable = [] if is_cloud_remote else hosted_ready
     upsells_runnable = bool(hosted_runnable)
     if actionable_upsells and not upsells_runnable and not is_cloud_remote:
         cg = root / 'scripts/lib/content_gen.py'
         if cg.is_file():
-            pf = subprocess.run([sys.executable, str(cg), 'preflight'], cwd=root, capture_output=True, text=True, timeout=20)
-            upsells_runnable = pf.returncode == 0
+            try:
+                pf = subprocess.run([sys.executable, str(cg), 'preflight'], cwd=root, capture_output=True, text=True, timeout=20)
+                upsells_runnable = pf.returncode == 0
+            except subprocess.TimeoutExpired:
+                upsells_runnable = False
 
     standing_hasher = hashlib.sha256()
     for cand in sorted(pp_dir.glob('*standing*.json')) + sorted(pp_dir.glob('*sponsorship*.json')):

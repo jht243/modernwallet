@@ -921,21 +921,38 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
     rel_parent = str(run_parent.relative_to(root.resolve()))
     prior_preflight = None
     prior_mdoc = None
+    reports_root = (root / 'reports').resolve()
     pf_search_dirs = [run_parent]
-    if run_parent.parent != root.resolve() and run_parent.parent.name != 'reports' and root.resolve() in run_parent.parent.parents:
+    if (
+        run_parent.parent != root.resolve()
+        and run_parent.parent.name != 'reports'
+        and run_parent.parent.parent != reports_root
+        and root.resolve() in run_parent.parent.parents
+    ):
         pf_search_dirs.append(run_parent.parent)
     pf_cands = []
     for sdir in pf_search_dirs:
         pf_cands.extend(sdir.glob(f'preflight-{phase}*'))
-        pf_cands.extend(sdir.glob(f'*/preflight-{phase}*'))
+        if sdir.parent != reports_root and sdir.name != 'reports':
+            pf_cands.extend(sdir.glob(f'*/preflight-{phase}*'))
     for cand in sorted(set(pf_cands), key=lambda p: p.stat().st_mtime if p.exists() else 0):
         mfile = cand / 'manifest.json'
         if mfile.is_file():
             try:
                 mdoc = json.loads(mfile.read_text(encoding='utf-8'))
-                if mdoc.get('phase') == phase and mdoc.get('delivered') == list(range(1, len(mdoc.get('parts') or []) + 1)):
-                    prior_preflight = cand
-                    prior_mdoc = mdoc
+                if mdoc.get('phase') != phase or mdoc.get('delivered') != list(range(1, len(mdoc.get('parts') or []) + 1)):
+                    continue
+                if actor and str(mdoc.get('actor') or '') != actor:
+                    continue
+                href = mdoc.get('handoff')
+                if resolved_job and isinstance(href, str) and href:
+                    hpath = (root / href).resolve()
+                    if hpath.is_file() and root.resolve() in hpath.parents:
+                        hdoc = json.loads(hpath.read_text(encoding='utf-8'))
+                        if str(hdoc.get('jobId') or '') and str(hdoc.get('jobId')) != resolved_job:
+                            continue
+                prior_preflight = cand
+                prior_mdoc = mdoc
             except Exception:
                 pass
     next_pf_name = f'preflight-{phase}'
