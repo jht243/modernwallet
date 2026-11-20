@@ -1,0 +1,88 @@
+{
+ "slug": "ally-bank",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 3492,
+ "floor": 1500,
+ "input_tokens": 38112,
+ "output_tokens": 31662,
+ "thinking_tokens": null,
+ "cached_tokens": 33463,
+ "est_cost_usd": 0.6585,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3492,
+  "numbers_not_in_facts": [
+   "0.3",
+   "1.5",
+   "101",
+   "144",
+   "200.5",
+   "220",
+   "25",
+   "290",
+   "300",
+   "421",
+   "7.65"
+  ],
+  "fact_budget": {
+   "fact_words": 1089,
+   "floor": 1500,
+   "ratio": 0.73,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    0
+   ],
+   "applied": [
+    {
+     "id": "rows[4].bestFit",
+     "quote": "Fits savers who meet the $1,500 or $5,000 deposit and balance test every month",
+     "replacement": "Fits savers who meet the $1,500 or $5,000 deposit and balance test",
+     "type": "inference",
+     "why": "Option 2 is not stated as a monthly test"
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Axos ONE fits savers who meet Option 1 or Option 2 every month.",
+     "replacement": "Axos ONE fits savers who meet Option 1 or Option 2.",
+     "type": "inference",
+     "why": "Option 2 is not stated as a monthly requirement"
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3496
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 294.9,
+ "response_id": "msg_011ChEWhin4kyUay1bvNC37U",
+ "generated_at": "2026-11-20T16:46:28+0000"
+}

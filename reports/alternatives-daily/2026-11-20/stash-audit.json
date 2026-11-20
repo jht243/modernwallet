@@ -1,0 +1,34 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "quote": "reader question: \"What should I use instead of Stash?\"",
+   "problem": "GATE Reader question: row record has no evidence tag ([PAA n/m ...], [verb-only - no PAA, no completions], etc.), so it fails as question-unevidenced. The sibling rows for Ally and Betterment carry a tag.",
+   "fix": "Add the evidence tag to the row record in prompts/stash.prompt.md (from real PAA/autocomplete data) and re-record.",
+   "hard_blocker": true,
+   "id": "F1"
+  },
+  {
+   "quote": "Gold also adds Early Invest for kids, ... a $10,000 life insurance policy for eligible customers and a no-cost Will valued at $299.",
+   "problem": "Acorns' page lists these under 'Exclusive Acorns Gold benefits' but its text says they are 'included in an Acorns Premium subscription'; the Betterment page says Premium. Ambiguous vendor source stated as Gold fact; the table cell and Acorns section repeat it.",
+   "fix": "Say Acorns lists a life insurance policy and Will among Gold benefits and in its Premium plan text, or drop them from the Gold claim; keep both pages consistent.",
+   "hard_blocker": false,
+   "id": "F2"
+  },
+  {
+   "quote": "Cash Account earns an APY; the rate is not listed in this table.",
+   "problem": "Wealthfront cell points away from a figure and reads as a deferral; Wealthfront's page states no number.",
+   "fix": "Write 'Wealthfront does not state a Cash Account APY on its pricing page'.",
+   "hard_blocker": false,
+   "id": "F3"
+  },
+  {
+   "quote": "reports/standards-ledger.jsonl (no 2026-11-20 load-script entry)",
+   "problem": "GATE Load receipt: ledger has no entry for this run (latest is 2026-11-18). Process item, not page content.",
+   "fix": "MAIN runs the standards load step before publish so a receipt exists for this run.",
+   "hard_blocker": false,
+   "id": "F4"
+  }
+ ]
+}

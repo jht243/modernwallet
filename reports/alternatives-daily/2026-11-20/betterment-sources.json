@@ -1,0 +1,18 @@
+{
+ "id": "alt-betterment-com-pricing",
+ "slug": "betterment",
+ "checked": "2026-11-20",
+ "sources": {
+  "Betterment": "https://www.betterment.com/pricing",
+  "Wealthfront": "https://www.wealthfront.com/pricing",
+  "Schwab Intelligent Portfolios": "https://www.schwab.com/intelligent-portfolios",
+  "Vanguard Digital Advisor": "https://investor.vanguard.com/advice/digital-advisor",
+  "Fidelity Go": "https://www.fidelity.com/managed-accounts/fidelity-go/overview",
+  "Acorns": "https://www.acorns.com/pricing/",
+  "Ally Invest Robo Portfolios": "https://www.ally.com/invest/managed-portfolios/",
+  "M1": "https://m1.com/pricing/"
+ },
+ "unreadable_swapped": {
+  "SoFi Automated Investing": "https://www.sofi.com/invest/automated-investing/ returned 404; not used"
+ }
+}

@@ -1,0 +1,160 @@
+{
+  "slug": "betterment",
+  "product": "Betterment",
+  "officialUrl": "https://www.betterment.com/pricing",
+  "title": "Betterment Alternatives Compared by Fees and Minimums",
+  "h1": "Betterment Alternatives Compared by Fees and Minimums",
+  "metaDescription": "Betterment alternatives compared: Wealthfront, Schwab, Vanguard, Fidelity Go, Acorns, Ally and M1 by advisory fee, account minimum and bundled accounts.",
+  "published": "2026-11-20",
+  "updated": "2026-11-20",
+  "intro": "Wealthfront, Schwab Intelligent Portfolios, Vanguard Digital Advisor, Fidelity Go, Acorns, Ally Invest Robo Portfolios and M1 are seven Betterment alternatives for automated investing. They differ on advisory fee (0.25% a year at Wealthfront, no advisory fee at Schwab, no fee under $25,000 at Fidelity Go), on account minimum ($5,000 at Schwab, $100 at Vanguard and Ally, $10 at Fidelity Go) and on what comes bundled, such as checking, cash accounts or spare-change investing. We read each provider's own pricing page on November 20, 2026 and worked out the yearly cost at the balances where the fee rules change.\n\n[Betterment](https://www.betterment.com/pricing) charges $5 per month for automated investing on balances from $0 to $24,000, with no minimum balance. The fee moves to 0.25% a year once recurring deposits total $200 or more a month, or once Betterment investing balances reach $24,000. Exchange-traded fund (ETF) costs inside each portfolio are charged on top of that fee and set by each fund.\n\nBetterment Premium charges 0.65% a year on the first $1 million, requires a $100,000 household minimum and adds access to an advisor. Betterment also offers checking, individual retirement accounts (IRAs), self-directed trading with no commissions and a Cash Reserve account at a variable 3.50% annual percentage yield (APY) as of September 21, 2026. Cash Reserve carries Federal Deposit Insurance Corporation (FDIC) insurance through Program Banks, while Betterment's investments are not FDIC insured and may lose value.\n\nFor wider shortlists, see the [best robo-advisors roundup](/roundup/best-robo-advisors/), the [Wealthfront alternatives](/alternatives/wealthfront/) and [Acorns alternatives](/alternatives/acorns/) pages, and the [best high-yield savings accounts roundup](/roundup/best-high-yield-savings-accounts/) for cash-only options. The [comparison hub](/compare/) collects more side-by-side money comparisons.",
+  "tableTitle": "Betterment Alternatives by Published Fee and Minimum",
+  "tableNote": "Fees and prices from each provider's own website, checked November 20, 2026. Fund expense ratios are charged on top of the fees shown and are set by each fund.",
+  "tableColumns": [
+    "Product",
+    "Fees and pricing",
+    "Best fit"
+  ],
+  "rows": [
+    {
+      "product": "Betterment",
+      "pricing": "Automated investing $5 per month on balances of $0 to $24,000, no minimum balance. Moves to 0.25% a year with recurring deposits of $200 or more a month, or at a $24,000 balance. Premium 0.65% a year on the first $1 million with a $100,000 household minimum. Portion from $1 million to $2 million 0.15%; portion over $2 million 0.10%. Outbound transfer $75 per investing account. Fund fees extra.",
+      "bestFit": "Fits investors who want automated investing, checking, a cash account and IRAs at one company, with no minimum balance",
+      "subject": true
+    },
+    {
+      "product": "Wealthfront",
+      "pricing": "Advisory fee 0.25% a year for The Wealthfront Portfolio. Wealthfront's own example shows a $15,000 balance at $3.18 per month. Brokerage Account has no advisory or management fees on stocks and ETFs and takes $1 to start. Fund fees extra.",
+      "bestFit": "Fits investors who want customizable allocations from hundreds of funds, Tax-Loss Harvesting and a net-worth tracking app at 0.25%"
+    },
+    {
+      "product": "Schwab Intelligent Portfolios",
+      "pricing": "No advisory fee and no commissions. $5,000 minimum to open. ETF operating expenses paid by the investor. Part of each portfolio held as an FDIC-insured deposit at Charles Schwab Bank. Tax-loss harvesting on taxable portfolios of $50,000 or more, no extra fee, enrollment required.",
+      "bestFit": "Fits investors with $5,000 or more who want no advisory fee and 24/7 live support"
+    },
+    {
+      "product": "Vanguard Digital Advisor",
+      "pricing": "$0 advisory fees for the first 90 days, with investment costs still applying. $100 to enroll. Vanguard approximates about $15 to $16 per year per $10,000 in an all-index portfolio. Option with active funds carries an advisory fee of no more than $20 per $10,000 a year.",
+      "bestFit": "Fits investors who want goal planning for retirement, a house or education, plus debt payoff and emergency fund tools"
+    },
+    {
+      "product": "Fidelity Go",
+      "pricing": "No minimum to open; investing starts once the balance reaches $10. $0 advisory fee under $25,000; 0.35% a year at $25,000 and above. No trading, transaction or rebalancing fees. Unlimited 1-on-1 coaching sessions at $25,000 or more.",
+      "bestFit": "Fits investors under $25,000 who want no advisory fee, and investors above $25,000 who want coaching sessions"
+    },
+    {
+      "product": "Acorns",
+      "pricing": "Bronze $4, Silver $8 and Gold $12 per month, no transaction fees. Silver lists a 3.59% APY on Emergency Savings (variable, as of September 22, 2026) and a 1% IRA match on new first-year contributions. Gold lists a 3% IRA match and a kids investment account with a 1% match. Premium plan price not stated in the pricing text read.",
+      "bestFit": "Fits investors who want Round-Ups spare-change investing, a retirement account and checking under one monthly subscription"
+    },
+    {
+      "product": "Ally Invest Robo Portfolios",
+      "pricing": "$100 minimum. Cash-enhanced portfolio: no advisory fee, 30% held as a cash buffer earning 3.20% a year, not FDIC insured. Market-focused portfolio: 0.30% a year ($3 per $1,000), about 98% invested and about 2% cash at 3.20%. ETF expense ratios separate. Securities Investor Protection Corporation (SIPC) coverage up to $500,000 including $250,000 cash.",
+      "bestFit": "Fits investors who want a $100 start and a choice between a $0 advisory fee with 30% in cash or 0.30% with about 98% invested"
+    },
+    {
+      "product": "M1",
+      "pricing": "No commission, trading or management fees on self-directed brokerage accounts. $3 per month platform fee, waived for clients with more than $10,000 at M1. High-Yield Cash Account 3.35% APY (variable, $100 minimum initial deposit). Margin loans at 5.90% with at least $2,000 in eligible securities.",
+      "bestFit": "Fits investors who want to pick their own holdings with automation and no management fee"
+    }
+  ],
+  "chooseSection": {
+    "heading": "How to Choose a Betterment Alternative",
+    "body": "A Betterment alternative is easiest to compare on two numbers: the invested balance and the monthly deposit. Betterment's fee depends on both, so one $10,000 account can cost $60 a year or $25 a year.\n\nAt $10,000 with no recurring deposits, Betterment charges $5 a month, which is $60 a year. With recurring deposits of $200 or more a month, the same $10,000 moves to 0.25%, which is $25 a year. At $24,000 both rules land on $60, because 0.25% of $24,000 is $60.\n\nNext, work out the yearly advisory or subscription cost at your own balance. At $30,000, the published fees come to these amounts:\n\n- Betterment Digital: 0.25%, or $75 a year.\n- Wealthfront: 0.25%, or $75 a year.\n- Schwab Intelligent Portfolios: $0 advisory fee.\n- Vanguard Digital Advisor: about $45 to $48 a year on Vanguard's all-index approximation.\n- Fidelity Go: 0.35%, or $105 a year.\n- Acorns: $48, $96 or $144 a year for Bronze, Silver or Gold.\n- Ally Invest Robo Portfolios: $0 on the cash-enhanced version, or 0.30%, which is $90 a year.\n- M1: $0, because the $3 monthly platform fee is waived above $10,000.\n\nFund expense ratios are charged on top of every figure in that list and are set by each fund. Betterment says its portfolio ETFs carry embedded fund fees and that it receives no part of them.\n\nLast, compare what comes bundled. Betterment and Acorns both offer checking, and Betterment, M1 and Acorns each publish an APY on a cash, savings or checking product. Acorns adds Round-Ups and IRA matches on its Silver and Gold plans.\n\nIf you already use Betterment, moving each investing account to another company costs a flat $75 per account. Withdrawals to a linked checking account carry no fee, so selling and withdrawing avoids that $75 charge on an account you plan to close."
+  },
+  "alternatives": [
+    {
+      "heading": "Betterment vs Wealthfront on Advisory Fees",
+      "body": "Wealthfront charges a 0.25% annual advisory fee for The Wealthfront Portfolio, the same percentage Betterment charges once an account qualifies for its 0.25% rate. Wealthfront's own example shows a $15,000 balance at $3.18 per month. On $30,000, 0.25% comes to $75 a year at either company.\n\nThe two fee schedules differ below $24,000. Wealthfront's published fee for The Wealthfront Portfolio is the 0.25% rate, which on $10,000 comes to $25 a year. Betterment charges $60 a year on that $10,000 unless recurring deposits reach $200 a month.\n\nWealthfront lists automatic trades, expert-built portfolios, fully customizable allocations with hundreds of funds, Tax-Loss Harvesting and automatic rebalancing. Its app tracks net worth and links outside accounts. The separate Brokerage Account charges no advisory or management fees on stocks and ETFs and takes $1 to start.\n\nWealthfront also offers a Cash Account, though the APY was not stated in the pricing text read for this comparison. Wealthfront fits investors who want to customize allocations from hundreds of funds at a flat 0.25%. More options built around Wealthfront sit on the [Wealthfront alternatives](/alternatives/wealthfront/) page."
+    },
+    {
+      "heading": "Schwab Intelligent Portfolios with No Advisory Fee",
+      "body": "Schwab Intelligent Portfolios charges no advisory fee and no commissions, and it takes $5,000 to open. Investors pay the operating expenses of the ETFs in the portfolio, including Schwab ETFs. Schwab says it earns revenue from sources other than an advisory fee.\n\nPart of each portfolio is held as an FDIC-insured deposit at Charles Schwab Bank. The size of that cash allocation is based on the investor's risk profile. Schwab says some cash alternatives outside the program pay a higher yield.\n\nOn $30,000, Betterment at 0.25% charges $75 a year and Schwab charges $0 in advisory fees. Tax-loss harvesting is available on taxable portfolios of $50,000 or more at no extra fee, with enrollment required. Schwab lists 24/7 live support from U.S.-based service professionals.\n\nSchwab Intelligent Portfolios fits investors with at least $5,000 who want no advisory fee. Below $5,000, Fidelity Go starts investing at $10 and Vanguard Digital Advisor enrolls at $100."
+    },
+    {
+      "heading": "Vanguard Digital Advisor Fees per $10,000",
+      "body": "Vanguard Digital Advisor charges $0 advisory fees for the first 90 days and requires $100 in assets to enroll. Investment costs still apply during those 90 days. Vanguard approximates the yearly cost of an all-index portfolio at about $15 to $16 per $10,000.\n\nOn $30,000, that approximation works out to about $45 to $48 a year, against $75 at Betterment's 0.25% rate. An option with active funds, which may include 3 exclusive Advice Select funds, carries a higher advisory fee of no more than $20 per $10,000 a year. On $30,000, that cap equals $60 a year.\n\nVanguard lists a personalized risk assessment and planning for multiple goals, such as retirement, a house or education. Its tools include a goal optimizer, a debt payoff calculator and a rainy day emergency fund tool. Vanguard also lists tax-loss harvesting and an option to keep certain holdings at enrollment.\n\nVanguard Digital Advisor fits investors who want goal-based planning tools with a $100 start."
+    },
+    {
+      "heading": "Fidelity Go Fees Above and Below $25,000",
+      "body": "Fidelity Go has no minimum to open an account and starts investing once the balance reaches $10. It charges $0 in advisory fees under $25,000 and 0.35% a year at $25,000 and above. Fidelity Go lists no trading, transaction or rebalancing fees.\n\nBelow $25,000, Fidelity Go charges less in advisory fees than Betterment's $5 monthly charge, which is $60 a year. Above $25,000 the order flips: 0.35% of $40,000 is $140 a year, against $100 at Betterment's 0.25% rate. At $100,000, Fidelity Go comes to $350 a year and Betterment Digital to $250.\n\nCrossing $25,000 adds unlimited 1-on-1 financial coaching sessions with advisors. Taxable accounts at that level also get tax-loss harvesting opportunities in Flex Funds that hold stocks. Clients with $500,000 or more at Fidelity may be eligible for a dedicated representative.\n\nFidelity Go fits investors under $25,000 who want no advisory fee, and investors above that line who want coaching sessions included in the 0.35% fee."
+    },
+    {
+      "heading": "Acorns Subscription Plans and Round-Ups",
+      "body": "Acorns charges a flat monthly subscription with no transaction fees: Bronze at $4, Silver at $8 and Gold at $12. Over a year, those plans cost $48, $96 and $144. Bronze includes an investment account with a diversified portfolio, Round-Ups spare-change investing, the Acorns Later retirement account, Acorns Earn bonus investments and learning courses.\n\nSilver adds Real-Time Round-Ups, paycheck split, bonus investments matched up to 25% and live Q&As. It also lists a 1% IRA match on new contributions in the first year and a 3.59% APY on Emergency Savings (variable, as of September 22, 2026). Gold adds an investment account for kids with a 1% match, bonus investments matched up to 50%, a 3% IRA match on new first-year contributions and family tools.\n\nA flat fee costs a different share of each balance. On $5,000, Bronze's $48 a year equals 0.96%, while Betterment's $60 a year equals 1.2%. On $30,000, Bronze's $48 is below Betterment's $75 at 0.25%.\n\nAcorns checking, called Mighty Oak, lists a 2.33% APY as of September 22, 2026, no overdraft fees and 55,000+ fee-free ATMs in the AllPoint network. Acorns is not a bank; nbkc bank or Lincoln Savings Bank provide the banking, both members FDIC. Acorns also lists a Premium plan with a $10,000 life insurance policy and a will for eligible customers, with no price in the text read.\n\nAcorns fits investors who want Round-Ups and an IRA match under one subscription. More picks are on the [Acorns alternatives](/alternatives/acorns/) page."
+    },
+    {
+      "heading": "Ally Invest Robo Portfolios and the 30% Cash Buffer",
+      "body": "Ally Invest Robo Portfolios open with $100 and come in two versions. The cash-enhanced portfolio charges no advisory fee and holds 30% as an interest-earning cash buffer at 3.20% a year, credited monthly. Ally says that cash buffer is not accessible like savings and is not FDIC insured.\n\nThe second version invests about 98% in the market for a 0.30% annual advisory fee, which is $3 per $1,000. About 2% stays in cash earning 3.20%. On $30,000, the fee is $90 a year, against $75 at Betterment's 0.25% rate.\n\nAlly charges the fee within the first 10 days of each month based on the daily portfolio balance. ETF expense ratios are separate from the advisory fee. Personal Advice requires a $100,000 minimum, and SIPC coverage runs up to $500,000, including $250,000 for cash.\n\nAlly Invest Robo Portfolios fits investors who want a $100 start and a choice between a $0 advisory fee with 30% in cash or 0.30% with about 98% invested."
+    },
+    {
+      "heading": "M1 Platform Fee and Self-Directed Automation",
+      "body": "M1 offers self-directed investing with automation and charges no commission, trading or management fees on self-directed brokerage accounts. A $3 monthly platform fee applies, which is $36 a year. M1 waives that fee for clients with more than $10,000 at M1.\n\nOn $30,000, M1's platform fee is waived, against $75 a year at Betterment's 0.25% rate. M1 accounts are self-directed, so the investor picks the holdings. Betterment's own self-directed accounts also trade stocks and ETFs with no commissions, and Betterment's management fee does not apply to them.\n\nM1 lists a High-Yield Cash Account at 3.35% APY (variable, $100 minimum initial deposit). Cash is swept to partner banks eligible for FDIC insurance up to an aggregate of $4.75 million. Margin loans run 5.90% on accounts with at least $2,000 in eligible securities.\n\nSIPC protection covers up to $500,000, and M1 reports more than $14 billion in client assets as of September 2026. M1 fits investors who want to choose their own stocks and ETFs with automation and no management fee."
+    },
+    {
+      "heading": "Who This Is Not For",
+      "body": "Betterment and each alternative leave some investors out, based on the published fees and minimums.\n\n- Betterment fits poorly for balances under $24,000 with no recurring deposits of $200 a month, because the $5 monthly charge equals 1.2% a year on $5,000. Fidelity Go charges $0 in advisory fees below $25,000.\n- Betterment Premium fits poorly for households under $100,000, its minimum. Betterment Digital at 0.25% has no such minimum.\n- Schwab Intelligent Portfolios fits poorly for anyone starting with less than $5,000. Vanguard Digital Advisor and Ally take $100, and Fidelity Go starts investing at $10.\n- Acorns fits poorly for very small balances, because Bronze costs $48 a year at any balance; on $1,000 that equals 4.8%. Fidelity Go charges no advisory fee at that size.\n- The Ally cash-enhanced portfolio fits poorly for investors who want the whole balance invested, because 30% stays in a cash buffer that is not FDIC insured. Ally's 0.30% option invests about 98%.\n- M1 fits poorly for investors who want the portfolio built for them, because its accounts are self-directed. The other six alternatives build the portfolio."
+    },
+    {
+      "heading": "What Would Change Our Answer on Betterment Alternatives",
+      "body": "Each yearly cost figure on this page comes from a published fee, and any of these changes would move those figures:\n\n- Betterment lowering or removing the $5 monthly charge below $24,000, or changing the $200 recurring-deposit trigger for the 0.25% rate.\n- Wealthfront changing its 0.25% advisory fee.\n- Schwab lowering its $5,000 minimum for Intelligent Portfolios.\n- Vanguard changing the 90-day $0 advisory fee period or its approximation of about $15 to $16 per $10,000.\n- Fidelity Go moving its $25,000 threshold or its 0.35% rate.\n- Acorns changing its $4, $8 and $12 plan prices or the Silver and Gold IRA matches.\n- Ally changing the 30% cash buffer, the 3.20% rate on it or the 0.30% fee.\n- M1 changing the $10,000 waiver on its $3 platform fee."
+    }
+  ],
+  "stillBetterFit": {
+    "heading": "When Betterment Is the Better Fit",
+    "body": "Betterment fits investors who want automated investing with no minimum balance and a cash account, checking and retirement accounts at one company. The $5 monthly price applies from $0. Recurring deposits of $200 or more a month move the account to 0.25% before the balance reaches $24,000.\n\nBetterment lists automated and self-directed investing, high-yield cash, traditional, Roth and Simplified Employee Pension (SEP) IRAs, crypto investing and checking. It also lists trusts, a Solo 401(k), 401(k) plans for businesses and custom portfolios. Checking has no overdraft fees and reimburses ATM fees and the Visa 1% foreign transaction fee, though checking does not earn APY.\n\nCash Reserve has no monthly management fee, a $10 minimum deposit for the base APY and an extra 0.75% for new clients with a qualifying deposit, for 4.25% through April 16, 2027. FDIC insurance runs through Program Banks up to $250,000 per depositor per bank, with a potential aggregate of $4 million, or $8 million for joint accounts. Checking is provided by nbkc bank, Member FDIC.\n\nAbove $1 million, Betterment's fee drops to 0.15% on the portion from $1 million to $2 million and 0.10% above $2 million, on both Digital and Premium. On $1.5 million in Digital, that is $2,500 on the first $1 million plus $750 on the next $500,000, or $3,250 a year. Premium costs 0.65% on the first $1 million, which is $1,300 a year on $200,000.\n\nBetterment provides a free transfer specialist team, and a complimentary Licensed Concierge team for those moving $20,000 or more."
+  },
+  "verdict": "Schwab Intelligent Portfolios charges no advisory fee from $5,000, and Fidelity Go charges none below $25,000. Wealthfront matches Betterment's 0.25% rate, and Vanguard Digital Advisor approximates about $15 to $16 a year per $10,000 in an all-index portfolio. Ally charges $0 or 0.30% depending on how much stays in cash.\n\nAcorns charges $4 to $12 a month for Round-Ups and IRA matches, and M1 waives its $3 platform fee above $10,000 for self-directed investors. Betterment fits investors who want no minimum, a cash account, checking and IRAs at one company, with the 0.25% rate reachable through $200 a month in recurring deposits.\n\nTo narrow these Betterment alternatives, write down your invested balance and your monthly deposit, then read the fee for that balance in each row of the table above.",
+  "faqs": [
+    {
+      "question": "How much does Betterment cost?",
+      "answer": "Betterment charges $5 per month for automated investing on balances of $0 to $24,000. The fee switches to 0.25% a year with recurring deposits of $200 or more a month, or at a $24,000 balance. Premium costs 0.65% a year on the first $1 million with a $100,000 household minimum. Fund fees are charged on top, and moving an investing account to another company costs $75."
+    },
+    {
+      "question": "Does Betterment have a minimum balance?",
+      "answer": "No. Betterment's $5 per month automated investing price has no minimum balance, and no fee is charged when there is no balance. Betterment Premium requires a $100,000 minimum eligible investment balance per household, and Cash Reserve needs a $10 minimum deposit for the base APY."
+    },
+    {
+      "question": "Is Betterment FDIC insured?",
+      "answer": "Betterment's investments are not FDIC insured and may lose value. Cash Reserve carries FDIC insurance through Program Banks up to $250,000 per depositor per bank, with a potential aggregate of $4 million, or $8 million for joint accounts. Betterment checking is provided by nbkc bank, Member FDIC, and insured up to $250,000 per depositor. Betterment Securities is a member of SIPC."
+    },
+    {
+      "question": "Is Betterment worth the fee?",
+      "answer": "At $30,000, Betterment costs $75 a year, the same as Wealthfront and more than Schwab Intelligent Portfolios at $0 in advisory fees. Below $24,000 without $200 a month in recurring deposits, Betterment costs $60 a year, while Fidelity Go charges $0 under $25,000. For that fee, Betterment bundles checking, Cash Reserve, IRAs and self-directed trading with no commissions."
+    },
+    {
+      "question": "What is the cheapest robo-advisor?",
+      "answer": "Among the eight services here, Schwab Intelligent Portfolios and the Ally cash-enhanced portfolio charge no advisory fee at any balance, and Fidelity Go charges none under $25,000. Schwab requires $5,000 to open, and Ally's cash-enhanced version holds 30% in a cash buffer. Fund expense ratios are charged on top and are set by each fund."
+    },
+    {
+      "question": "Does Schwab charge an advisory fee for Intelligent Portfolios?",
+      "answer": "No. Schwab Intelligent Portfolios charges no advisory fee and no commissions, with a $5,000 minimum to open. Investors pay the ETF operating expenses, part of each portfolio is held as cash at Charles Schwab Bank, and Schwab says it earns revenue from other sources."
+    }
+  ],
+  "related": [
+    {
+      "label": "Best robo-advisors",
+      "href": "/roundup/best-robo-advisors/"
+    },
+    {
+      "label": "Wealthfront alternatives",
+      "href": "/alternatives/wealthfront/"
+    },
+    {
+      "label": "Acorns alternatives",
+      "href": "/alternatives/acorns/"
+    },
+    {
+      "label": "Empower alternatives",
+      "href": "/alternatives/empower/"
+    },
+    {
+      "label": "Best high-yield savings accounts",
+      "href": "/roundup/best-high-yield-savings-accounts/"
+    },
+    {
+      "label": "Compare financial products",
+      "href": "/compare/"
+    }
+  ]
+}

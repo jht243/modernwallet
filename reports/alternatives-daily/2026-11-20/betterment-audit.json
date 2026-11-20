@@ -1,0 +1,20 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "PASS",
+ "findings": [
+  {
+   "quote": "Premium plan price not stated in the pricing text read.",
+   "problem": "Table cell and Wealthfront section ('the APY was not stated in the pricing text read') use process wording instead of a plain fact. Acorns text is also inconsistent on Gold vs Premium for the life insurance and Will (Betterment page attributes them to Premium; Stash page attributes them to Gold; Acorns page labels them 'Gold exclusive' and 'Premium subscription').",
+   "fix": "Use 'Acorns does not state a Premium price on its pricing page' and 'Wealthfront does not state a Cash Account APY on its pricing page'; align Acorns life insurance wording with the Stash page.",
+   "hard_blocker": false,
+   "id": "F1"
+  },
+  {
+   "quote": "reports/standards-ledger.jsonl (no 2026-11-20 load-script entry)",
+   "problem": "GATE Load receipt: ledger has no entry for this run (latest is 2026-11-18). Process item, not page content.",
+   "fix": "MAIN runs the standards load step before publish so a receipt exists for this run.",
+   "hard_blocker": false,
+   "id": "F2"
+  }
+ ]
+}

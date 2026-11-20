@@ -1,0 +1,27 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "quote": "its APY is variable and published on the Capital One page, effective 11/20/2026, but the number did not display on November 20, 2026",
+   "problem": "Verified with fetch_page.py and WebFetch: Capital One's 360 Performance Savings page renders 'NaN APY' (rate failed to load). The table cell and the choose-section bullet, alternative section, Still-Better and What-Would-Change sections carry no figure and leak process wording ('did not display'). This is a data cell that does not carry the fact (deferral gate), on the page's core savings-APY comparison.",
+   "fix": "Swap Capital One's savings leg for a readable competitor (for example Discover is unreadable, so another bank with a published APY), or keep Capital One as $0-fee checking only and state 'Savings APY not shown on Capital One page as of Nov 20, 2026' once, removing the 'did not display' phrasing and the 'Capital One displaying a numeric APY' change-trigger.",
+   "hard_blocker": true,
+   "id": "F1"
+  },
+  {
+   "quote": "Savers who deposit cash fit poorly with Ally, which accepts no cash by mail or at ATMs.",
+   "problem": "Ally's Spending page says cash can be added free at Walmart via the app (and at retail locations); only mail and ATM deposits are unsupported. Omission makes the claim misleading. Also 'across Savings and Money Market' for the 10-withdrawal limit is not stated that way on Ally's pages (limit is stated per account type).",
+   "fix": "Say Ally accepts no cash by mail or at ATMs but lists free cash adds at Walmart through its app; drop 'across Savings and Money Market' or say 'on Savings and on Money Market'.",
+   "hard_blocker": false,
+   "id": "F2"
+  },
+  {
+   "quote": "reports/standards-ledger.jsonl (no 2026-11-20 load-script entry)",
+   "problem": "GATE Load receipt: ledger has no entry for this run (latest is 2026-11-18). Process item, not page content.",
+   "fix": "MAIN runs the standards load step before publish so a receipt exists for this run.",
+   "hard_blocker": false,
+   "id": "F3"
+  }
+ ]
+}

@@ -137,6 +137,29 @@
         "www.waveapps.com",
         "waveapps.com"
       ]
+    },
+    {
+      "route": "/alternatives/stash/",
+      "vendorHost": "stash.com",
+      "officialHosts": [
+        "www.stash.com",
+        "stash.com"
+      ]
+    },
+    {
+      "route": "/alternatives/betterment/",
+      "vendorHost": "betterment.com",
+      "officialHosts": [
+        "www.betterment.com"
+      ]
+    },
+    {
+      "route": "/alternatives/ally-bank/",
+      "vendorHost": "ally.com",
+      "officialHosts": [
+        "www.ally.com",
+        "ally.com"
+      ]
     }
   ]
 }

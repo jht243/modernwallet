@@ -1,0 +1,26 @@
+{
+ "id": "alt-ally-com-bank",
+ "slug": "ally-bank",
+ "checked": "2026-11-20",
+ "sources": {
+  "Ally Bank": "https://www.ally.com/bank/",
+  "Ally Bank Savings": "https://www.ally.com/bank/online-savings-account/",
+  "Ally Bank Spending (interest checking)": "https://www.ally.com/bank/interest-checking-account/",
+  "Ally Bank Money Market": "https://www.ally.com/bank/money-market-account/",
+  "Ally Bank CDs": "https://www.ally.com/bank/cd-rates/",
+  "Capital One 360 Checking": "https://www.capitalone.com/bank/checking-accounts/online-checking-account/",
+  "Capital One 360 Performance Savings": "https://www.capitalone.com/bank/savings-accounts/online-savings-account/",
+  "Marcus by Goldman Sachs": "https://www.marcus.com/us/en/savings/high-yield-savings",
+  "SoFi Checking and Savings": "https://www.sofi.com/banking/",
+  "Axos Bank": "https://www.axosbank.com/Personal/Savings/High-Yield-Savings",
+  "Chase Total Checking": "https://www.chase.com/personal/checking/total-checking",
+  "Wells Fargo Everyday Checking": "https://www.wellsfargo.com/checking/everyday/"
+ },
+ "unreadable_swapped": {
+  "Chime": "https://www.chime.com/ returned 403; not used",
+  "Discover Bank": "discover.com savings page serves Capital One content; not used",
+  "American Express Savings": "APY not rendered in readable text; not used",
+  "Synchrony": "APY not rendered in readable text; not used",
+  "Bask Bank": "savings page 404 and homepage lists only bundle promos; not used"
+ }
+}
