@@ -1,17 +1,1 @@
-{
-  "slug": "best-invoicing-apps-for-freelancers",
-  "rows": [
-    {
-      "name": "Flowlancerr",
-      "domain": "flowlancerr.com",
-      "url": "https://www.flowlancerr.com/",
-      "values": [
-        "Free plan (5 invoices a month); paid $6, $14 or $39 monthly",
-        "Not published",
-        "Not published",
-        "Freelancers managing clients, proposals, time tracking and invoices in one workspace"
-      ]
-    }
-  ],
-  "cut": []
-}
+{ "slug": "best-invoicing-apps-for-freelancers", "rows": [], "cut": [ { "domain": "petapixel.com", "why": "category 1 — publisher/review article, no invoicing product of its own" } ] }
