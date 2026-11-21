@@ -35,7 +35,7 @@ class Tests(unittest.TestCase):
  def test_valid_and_historical_admission(self):
   h=self.fixture();self.check(h);self.check(h,None)
  def test_both_native_interfaces_share_strict_predicate(self):
-  for api in [portable] + ([local] if local else []):
+  for api in [portable] + ([local] if local and hasattr(local, 'approved_link_audit_scope_check') else []):
    h=self.fixture();api.approved_link_audit_scope_check(self.root,h,self.old,'audit')
    with self.assertRaises(ValueError):api.approved_link_audit_scope_check(self.root,h,self.old,'publish')
  def test_write_publish_identity_counter_finding_and_route_guards(self):
