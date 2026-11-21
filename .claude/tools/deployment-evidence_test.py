@@ -30,7 +30,8 @@ class Tests(unittest.TestCase):
             return ''
         with patch.object(p,'git',side_effect=git):
             proof=p.verify(self.root,self.value,'https://fixture.invalid'+p.ENDPOINT,'2'*40)
-        self.assertEqual(proof['commit'],'1'*40)
+        self.assertEqual(proof['commit'],'2'*40)
+        self.assertEqual(proof['hostRuntimeCommit'],'1'*40)
         self.assertIn(('merge-base','--is-ancestor','2'*40,'1'*40),calls)
         self.assertIn(('merge-base','--is-ancestor','1'*40,'3'*40),calls)
         with patch.object(p,'git',side_effect=ValueError('not an ancestor')),self.assertRaises(ValueError):p.verify(self.root,self.value,'https://fixture.invalid'+p.ENDPOINT,'2'*40)
