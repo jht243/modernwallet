@@ -52,7 +52,7 @@ def install_endpoint(app,root):
 
 def fetch(root):
     c=config(root);url='https://'+c['canonicalHosts'][0]+ENDPOINT+'?verify='+uuid.uuid4().hex
-    request=urllib.request.Request(url,headers={'Accept':'application/json','Cache-Control':'no-cache'})
+    request=urllib.request.Request(url,headers={'Accept':'application/json','Cache-Control':'no-cache','User-Agent':'Mozilla/5.0 (compatible; FleetDeploymentVerifier/1.0)'})
     with urllib.request.urlopen(request,timeout=20) as response:
         final=urllib.parse.urlsplit(response.url)
         require(final.scheme=='https' and final.hostname in c['canonicalHosts'] and final.path==ENDPOINT and final.port in (None,443),'Provenance redirected outside this canonical host')
@@ -82,6 +82,7 @@ def verify(root,value,url,expected=None):
     if expected is not None:
         try:
             git(root,'merge-base','--is-ancestor',expected,actual)
+            effective_commit=expected
         except ValueError:
             git(root,'merge-base','--is-ancestor',expected,listing[0])
             git(root,'merge-base','--is-ancestor',actual,expected)
