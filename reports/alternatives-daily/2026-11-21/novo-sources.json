@@ -1,0 +1,17 @@
+{
+  "product": "Novo",
+  "day": "2026-11-21",
+  "checked": "2026-11-21",
+  "sources": [
+    "https://www.novo.co/",
+    "https://www.novo.co/business-checking",
+    "https://mercury.com/pricing",
+    "https://relayfi.com/pricing",
+    "https://www.bluevine.com/business-checking/",
+    "https://lili.co/",
+    "https://wise.com/us/business",
+    "https://wise.com/us/pricing/business",
+    "https://www.chase.com/business/banking/checking"
+  ],
+  "notes": "Found (found.com) returned an anti-bot gate and was left out. northone.com/pricing served Relay's page, so NorthOne was left out. Lili paid-tier fee amounts are not published on lili.co home page."
+}

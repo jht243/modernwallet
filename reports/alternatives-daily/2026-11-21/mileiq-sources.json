@@ -1,0 +1,10 @@
+{"slug":"mileiq","product":"MileIQ","checked":"2026-11-21","sources":[
+{"vendor":"MileIQ","role":"subject","url":"https://www.mileiq.com/pricing","facts":"Free $0, 40 free drives every month, automatic tracking and auto-generated reports; Unlimited $11.66 per month billed annually or $13.99 per month, unlimited drives; Teams pricing on a separate business pricing page, not shown on this page"},
+{"vendor":"Everlance","url":"https://everlance.com/pricing","facts":"Basic $0 with 30 automatically detected trips per month; Starter $89.99 per year or $10.99 per month; Professional $119.99 per year or $19.99 per month; 7-day free trial"},
+{"vendor":"TripLog","url":"https://triplog.net/pricing","facts":"Basic free forever with unlimited automatic GPS tracking; Premium $59.99 paid annually ($4.99 per month); Time add-on $4 per month; TripLog Drive $79.99; TripLog Beacon $19.99"},
+{"vendor":"Driversnote","url":"https://www.driversnote.com/pricing","facts":"Free 0 USD, reporting up to 15 trips per month; Pro 11 USD per month; Teams 11 USD per license per month for 2-10 users; Teams+ custom; free iBeacon with yearly plan; prices exclude taxes"},
+{"vendor":"Expensify","url":"https://www.expensify.com/pricing","facts":"Free plan includes mileage tracking; Collect $5 per member per month; Control custom pricing, as low as $9 per active member per month"},
+{"vendor":"Hurdlr","url":"https://hurdlr.com/pricing","facts":"Hurdlr Premium (expenses, mileage, taxes) and Hurdlr Pro (invoicing, accounting, reports); no plan price shown on the pricing page"},
+{"vendor":"MileageWise","url":"https://www.mileagewise.com/pricing","facts":"Bronze $229 covers any 1 year; Silver $349 any 2 years; Gold $449 any 3 years; Gold Lifetime $559; sales tax included; built for past mileage recovery from Google Maps Timeline export"},
+{"vendor":"Stride","url":"https://www.stridehealth.com/","facts":"Free app for 1099 workers to track mileage and expenses and prepare for taxes"}
+]}

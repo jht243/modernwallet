@@ -1,0 +1,164 @@
+{
+ "slug": "novo",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 3805,
+ "floor": 1500,
+ "input_tokens": 38381,
+ "output_tokens": 16944,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.4924,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3805,
+  "numbers_not_in_facts": [
+   "10000",
+   "1300",
+   "1440",
+   "2130",
+   "2160",
+   "3.9",
+   "30000",
+   "420",
+   "963",
+   "990"
+  ],
+  "fact_budget": {
+   "fact_words": 1403,
+   "floor": 1500,
+   "ratio": 0.94,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    13,
+    0
+   ],
+   "applied": [
+    {
+     "id": "tableNote",
+     "quote": "Savings and interest rates are variable and can change.",
+     "replacement": "Relay, Lili and Wise list their rates as variable or subject to change.",
+     "type": "unsupported",
+     "why": "Only Relay, Lili and Wise rates are stated as variable or changeable"
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Novo includes payroll, bookkeeping tools and free invoices with automatic reminders in its one account at $0 per month.",
+     "replacement": "Novo includes payroll, bookkeeping tools and free invoices with automatic reminders in its one account.",
+     "type": "inference",
+     "why": "SOURCE does not say Novo payroll or bookkeeping cost $0"
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Novo fits businesses that want payroll and bookkeeping tools without an add-on fee after Dec 31, 2026.",
+     "replacement": "Novo fits businesses that want payroll and bookkeeping tools listed in one account.",
+     "type": "inference",
+     "why": "SOURCE does not state Novo payroll or bookkeeping pricing"
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Relay fits businesses that separate money into many checking accounts for taxes, payroll or projects.",
+     "replacement": "Relay fits businesses that separate money into many checking accounts.",
+     "type": "unsupported",
+     "why": "Uses for taxes, payroll or projects are not in SOURCE"
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Bluevine is a fintech that pays interest on business checking and offers loans through its own lending products.",
+     "replacement": "Bluevine is a fintech that pays interest on business checking and lists business lending products.",
+     "type": "contradicted",
+     "why": "Term Loan comes from lending partners, not Bluevine's own products"
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Bluevine fits businesses that want interest on checking and a lender inside the same account.",
+     "replacement": "Bluevine fits businesses that want interest on checking and access to lines of credit, term loans and SBA 7(a) loans.",
+     "type": "inference",
+     "why": "SOURCE lists lending products, not a lender inside the account"
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Chase lists access to more than 14,000 ATMs and 5,000 branches, which none of the fintech accounts on this list offer.",
+     "replacement": "Chase lists access to more than 14,000 ATMs and 5,000 branches.",
+     "type": "inference",
+     "why": "SOURCE does not state other providers' branch access"
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Novo has no monthly service fee and no minimum balance, so a business that cannot keep $2,000 at day's end pays $180 more per year at Chase.",
+     "replacement": "Novo has no monthly service fee and no minimum balance, while Chase Business Complete Banking costs $180 per year if the fee is not waived.",
+     "type": "inference",
+     "why": "Chase fee can be waived five ways, not only by balance"
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Chase Business Complete Banking fits businesses that handle cash in person and want a branch nearby.",
+     "replacement": "Chase Business Complete Banking fits businesses that handle cash in person and want branch access.",
+     "type": "unsupported",
+     "why": "Branch proximity is not in SOURCE"
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Novo fits businesses that bank fully online and want the $0 fee without tracking a daily balance.",
+     "replacement": "Novo fits businesses that want the $0 fee without a minimum balance.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Novo as fully online banking"
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "Chase lists more than 14,000 ATMs for that pattern.",
+     "replacement": "Chase lists more than 14,000 ATMs.",
+     "type": "inference",
+     "why": "SOURCE does not say Chase ATMs avoid fees for heavy users"
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "Novo, Mercury, Relay, Bluevine and Lili list sweep coverage from $3M to $5M.",
+     "replacement": "Novo, Mercury, Relay, Bluevine and Lili list FDIC coverage from $3M to $5M.",
+     "type": "unsupported",
+     "why": "Mercury and Bluevine coverage not described as sweep coverage"
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Chase Business Complete Banking is the alternative on this list with branches.",
+     "replacement": "Chase Business Complete Banking is the alternative on this list that lists branches.",
+     "type": "inference",
+     "why": "SOURCE does not state the other providers lack branches"
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 3832
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 214.5,
+ "response_id": "msg_011ChGQSFHEB4EUZjWmognBS",
+ "generated_at": "2026-11-21T16:44:08+0000"
+}

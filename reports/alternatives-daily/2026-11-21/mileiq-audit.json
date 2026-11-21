@@ -1,0 +1,55 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "Expensify ... 'Collect costs $5 per member per month for small businesses.' / 'It covers reimbursements, corporate card management, approvals, travel booking, and QuickBooks and Xero integrations.' / 'Control uses custom pricing, as low as $9 per active member per month.' / 'Expensify fits small businesses ...' / 'As an illustration, Collect costs $5 x 12 = $60 per member per year.' (+ next sentence)",
+   "problem": "GATE Sentence rhythm: body sentences 71 to 75 measure 14, 13, 15, 14, 13 words (and 72 to 76: 13, 15, 14, 13, 16), five consecutive sentences within 3 words of each other. Hard fail.",
+   "fix": "Vary real sentences in the Expensify section: merge the Collect and Control price sentences into one longer sentence and shorten or reorder one of the arithmetic sentences.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "Start with the number of business drives ... Next, compare annual and monthly billing. ... Then decide whether mileage is the whole job. ... Last, price out a team",
+   "problem": "How to Choose section is four parallel Start/Next/Then/Last paragraphs, the First/Second/Third formatting-slop pattern from _anti-ai-language.md.",
+   "fix": "Convert into a short bullet list of criteria with bold-free labels (as the Novo page does) or fold into two paragraphs without ordinal openers.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "'As an illustration' opens the cost paragraph in 7 of 7 alternative sections; each ends 'X falls short of MileIQ on ...'",
+   "problem": "Formulaic repeated frame across sections (template padding tell). Not a single-instance ban.",
+   "fix": "Vary the openings of at least half of them.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F4",
+   "quote": "TripLog ... 'multi-user pricing is quote-based with no public price' / 'Teams: quote-based; no public price.'",
+   "problem": "triplog.net/pricing (plain fetch) shows a 'Single user | Multi user' toggle and 'Book a demo' controls; the multi-user tab content was not captured, so 'quote-based' is not confirmed by the cached page text or by sources.json.",
+   "fix": "Re-read the multi-user tab in a browser render. If no price appears, reword to 'TripLog's pricing page shows no multi-user price'; if a price appears, state it.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F5",
+   "quote": "MileIQ is published by Bending Spoons US Inc., according to its app store listing.",
+   "problem": "Page text of mileiq.com shows 'Bending Spoons US Inc.' and the 2026 copyright to Bending Spoons Operations S.p.A.; 'app store listing' attribution is not from the vendor site.",
+   "fix": "Change attribution to 'according to the mileiq.com pricing page footer'.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F6",
+   "quote": "Official link",
+   "problem": "Built HTML has no external link to mileiq.com (unwrapped by unlink_pitched fail-closed offline). check_built passes; recheck live.",
+   "fix": "Confirm at live_links.py.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F7",
+   "quote": "Pricing facts (verified)",
+   "problem": "MileIQ Free $0/40 drives, Unlimited $11.66/mo annual and $13.99/mo; Everlance $0/$89.99/$119.99, $10.99/$19.99, 30 trips, 7-day trial; TripLog $59.99, $4.99 shown, $79.99, $19.99, $4; Driversnote 0/11/11 USD, 15 trips; Expensify $5, as low as $9; Hurdlr no price; MileageWise $229/$349/$449/$559; Stride free all match vendor pages. All arithmetic recomputed correct ($139.92, $167.88, $49.93, $41.89, $79.93, $174.50, $149.67, $1,320 and others). Title 55 chars, H1 correct, no testing claim, both CTAs present and apart, body 2,554 words.",
+   "fix": "No change needed.",
+   "hard_blocker": false
+  }
+ ]
+}

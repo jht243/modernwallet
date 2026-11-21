@@ -1,0 +1,108 @@
+{
+ "slug": "albert",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 3188,
+ "floor": 1500,
+ "input_tokens": 38299,
+ "output_tokens": 23191,
+ "thinking_tokens": null,
+ "cached_tokens": 33463,
+ "est_cost_usd": 0.4899,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3188,
+  "numbers_not_in_facts": [
+   "107.88",
+   "132",
+   "139.89",
+   "35.88",
+   "39.89",
+   "432",
+   "7.5",
+   "70.88",
+   "75",
+   "79.89"
+  ],
+  "fact_budget": {
+   "fact_words": 1122,
+   "floor": 1500,
+   "ratio": 0.75,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    5,
+    0
+   ],
+   "applied": [
+    {
+     "id": "rows[6].bestFit",
+     "quote": "Fits people who want a fee-free bank account with early pay access and small overdraft cover",
+     "replacement": "Fits people who want a fee-free bank account with early pay access and SpotMe overdraft cover",
+     "type": "unsupported",
+     "why": "SOURCE never calls SpotMe cover small"
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "YNAB fits people who want a set method for assigning every dollar before spending it.",
+     "replacement": "YNAB fits people who want a budgeting method that gives every dollar a job.",
+     "type": "unsupported",
+     "why": "SOURCE says only 'giving every dollar a job', not before spending"
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Copilot lists partner invites as \"coming this fall\", so shared access for a partner is not available on the page checked.",
+     "replacement": "Copilot lists partner invites as \"coming this fall\".",
+     "type": "inference",
+     "why": "SOURCE states only 'coming this fall', no availability claim"
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Chime fits people who want a fee-free account with early pay access and small overdraft cover.",
+     "replacement": "Chime fits people who want a fee-free account with early pay access and SpotMe overdraft cover.",
+     "type": "unsupported",
+     "why": "SOURCE never calls SpotMe cover small"
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "EarnIn's home page shows no budgeting app or bank account, so budgeting would come from a separate app such as Quicken Simplifi.",
+     "replacement": "EarnIn's home page shows no budgeting app or bank account.",
+     "type": "inference",
+     "why": "SOURCE states only the absence, not where budgeting comes from"
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3214
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 225.6,
+ "response_id": "msg_011ChGQXRgCTmFCeqnbLngoA",
+ "generated_at": "2026-11-21T16:45:29+0000"
+}

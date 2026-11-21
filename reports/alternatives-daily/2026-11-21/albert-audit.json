@@ -1,0 +1,48 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "Who this is not for:\n\n- People who only want a budget tracker. ... What would change our answer:\n\n- Albert publishing a per-plan feature list",
+   "problem": "Required sections 'Who This Is Not For' and 'What Would Change Our Answer' exist only as colon-led plain lines inside the stillBetterFit body, with no headings. The built HTML has no such headings (rule 5 and AUDITOR 'Required page elements'). The colon lead-ins also read as colon-drama labels. MileIQ and Novo pages render them as H2 sections.",
+   "fix": "Move both lists into their own H2 sections (alternatives array entries 'Who This Is Not For' and 'What Would Change Our Answer on Albert Alternatives') and keep the bullet text unchanged.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "When Albert Is the Better Fit",
+   "problem": "Adapter and rule 5 require the heading 'When <Product> Is Still the Better Fit'; the page drops 'Still'.",
+   "fix": "Rename the stillBetterFit heading to 'When Albert Is Still the Better Fit'.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "How to Choose an Albert Alternative (only section heading containing the keyword)",
+   "problem": "Rule 5 requires the primary keyword 'Albert alternatives' in 2 to 3 headings. Only the title/H1 and one H2 carry it; the seven per-alternative H2s and the other sections do not.",
+   "fix": "The new 'What Would Change Our Answer on Albert Alternatives' heading (F1) brings it to two H2s; optionally add 'Albert Alternatives' to the verdict heading or one per-alternative heading.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F4",
+   "quote": "Sentence 'To narrow these Albert alternatives, write down whether budgeting or early cash comes first and the yearly amount available for a subscription, then match both to the rows in the table above.' (32 words); 'Early Payday gives access to up to $750 ... Stride Bank, N.A.' (32 words)",
+   "problem": "Three sentences run 31 to 32 words with stacked clauses (overloaded-sentence tell). Facts are correct.",
+   "fix": "Split each at the first 'and' or comma into two sentences.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F5",
+   "quote": "Albert official link",
+   "problem": "Built dist HTML has no external link to albert.com (intro markdown link is unwrapped, apparently by unlink_pitched.mjs failing closed offline). Passes check_built, but the live page must still be checked.",
+   "fix": "Rebuild with network or accept; confirm at live_links.py that only albert.com hosts appear if present.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F6",
+   "quote": "Pricing facts (verified)",
+   "problem": "All prices, limits and plan names match albert.com, monarchmoney.com/pricing, ynab.com/pricing, simplifimoney.com, copilot.money, dave.com, chime.com, earnin.com as fetched 2026-11-21. Derived arithmetic ($239.88, $479.88, $47.88, $107.88, $132.00, $35.88, $7.50 and gaps) all recomputed correctly. Title 59 chars, H1 starts with 'Albert Alternatives', no testing wording, both CTAs rendered apart, body 2,512 words, 5 FAQs, 6 internal links.",
+   "fix": "No change needed.",
+   "hard_blocker": false
+  }
+ ]
+}

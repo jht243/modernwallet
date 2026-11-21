@@ -1,0 +1,18 @@
+{
+  "slug": "albert",
+  "product": "Albert",
+  "checked": "2026-11-21",
+  "sources": [
+    {"vendor": "Albert", "role": "subject", "url": "https://albert.com/", "facts": "Subscription plans $19.99/mo to $39.99/mo, 30-day trial before charge, auto-renews, cancel in app; Genius AI assistant; budgeting, banking, investing, identity protection up to $1M ID theft insurance; Instant Advance $25-$1,000 no late fees or interest, no subscription required; Instant Line of Credit $25-$1,000, draw fees, no subscription required; High Yield Savings needs eligible subscription tier, no minimum balance; not a bank (Stride Bank, N.A.); 10 million customers"},
+    {"vendor": "Albert", "role": "subject", "url": "https://albert.com/budgeting"},
+    {"vendor": "Monarch Money", "url": "https://www.monarchmoney.com/pricing", "facts": "Core $99.99/yr or $14.99/mo; Plus $199.99/yr; money-back guarantee; first week free"},
+    {"vendor": "YNAB", "url": "https://www.ynab.com/pricing", "facts": "$109/yr ($9.08/mo) or $14.99/mo; 34-day trial no card"},
+    {"vendor": "Quicken Simplifi", "url": "https://www.simplifimoney.com/", "facts": "$3.99/month billed annually, $6.99 shown; 14,000+ institutions; Spending Plan; Projected Cash Flow 12 months"},
+    {"vendor": "Copilot Money", "url": "https://copilot.money/", "facts": "One plan, $109 billed yearly ($9/mo shown, instead of $119); no tiers; 16,000+ institutions; iPhone, iPad, Mac, Web; partner invite coming this fall"},
+    {"vendor": "Dave", "url": "https://www.dave.com/", "facts": "ExtraCash $25-$500, overdraft fee greater of $5 or 5%, up to $5 monthly membership fee, optional 1.5% external debit transfer fee, no credit check, FDIC via Coastal Community Bank"},
+    {"vendor": "Chime", "url": "https://www.chime.com/", "facts": "Fee-free banking, savings up to 4.00% APY variable, Early Payday up to $750, 47K fee-free ATMs, SpotMe overdraft starts $20 up to $200 or more, not a bank"},
+    {"vendor": "EarnIn", "url": "https://earnin.com/", "facts": "Cash Out up to $200/day and $1,000/pay period, no mandatory fees or interest, tips optional, Early Pay $2.99, Live Pay up to $1,500/pay period"},
+    {"vendor": "Rocket Money", "url": "https://www.rocketmoney.com/", "facts": "Free plan and Premium; no price on site (checked, not used in table)", "used": false},
+    {"vendor": "PocketGuard", "url": "https://pocketguard.com/", "facts": "7-day free trial; no price on home page (not used)", "used": false}
+  ]
+}

@@ -160,6 +160,29 @@
         "www.ally.com",
         "ally.com"
       ]
+    },
+    {
+      "route": "/alternatives/novo/",
+      "vendorHost": "novo.co",
+      "officialHosts": [
+        "www.novo.co"
+      ]
+    },
+    {
+      "route": "/alternatives/mileiq/",
+      "vendorHost": "mileiq.com",
+      "officialHosts": [
+        "www.mileiq.com",
+        "mileiq.com"
+      ]
+    },
+    {
+      "route": "/alternatives/albert/",
+      "vendorHost": "albert.com",
+      "officialHosts": [
+        "www.albert.com",
+        "albert.com"
+      ]
     }
   ]
 }

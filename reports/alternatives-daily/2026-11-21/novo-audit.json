@@ -1,0 +1,55 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "Debit card cash back of 2% with a checking balance of $5,000 or more and 1% below $5,000. / Debit card cash back is 2% on eligible purchases with a checking balance of $5,000 or more and 1% below $5,000. / Novo fits businesses that want debit card cash back and invoicing on a $0 account",
+   "problem": "Factual misattribution. On novo.co the '2% cashback ... balance of $5,000 or more, and 1% ... under $5,000' footnote belongs to the Novo Business Credit Card section ('Earn up to 2% cash back ... with the Novo Business Credit Card'). Neither novo.co page describes debit-card cash back. Appears in the subject table row, the still-better-fit section and the Lili section (also the Lili contrast 'limits both to paid tiers' rests on it).",
+   "fix": "Say 'Novo Business Credit Card cash back of up to 2% (2% with a checking balance of $5,000 or more, 1% below)' in the row and still-better-fit body, and rewrite the Lili closing sentence so it compares Novo's credit card rewards instead of debit card cash back (or drop the cash-back contrast).",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "The yearly cost gap is plain arithmetic. / Plan fees change the math.",
+   "problem": "Meta-narration and aphoristic fragments that rate the point instead of giving a fact (anti-AI single-instance bans).",
+   "fix": "Delete both sentences; the following sentences already state the figures.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "Mercury Treasury fits poorly for businesses below a $250K Mercury balance, since that is the eligibility line.",
+   "problem": "Pseudo-cleft/folksy emphasis ('that is the eligibility line').",
+   "fix": "Write 'Mercury Treasury requires a $250K Mercury balance, so smaller businesses cannot use it.'",
+   "hard_blocker": true
+  },
+  {
+   "id": "F4",
+   "quote": "'A paid tier with a higher APY only beats a free tier when the extra interest on the actual balance is larger than the yearly plan fee, and each section below shows that arithmetic with the published numbers.' (38 words); 'Novo Savings, opened alongside checking, pays 2% annual percentage yield (APY) once the balance is $50,000 or more, and Novo reimburses ...' (36); 'For a Novo alternative, the concrete next step is ...' (38)",
+   "problem": "Overloaded sentences of 33 to 38 words with stacked clauses.",
+   "fix": "Split each into two sentences.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F5",
+   "quote": "Chase Business Complete Banking: waivable five ways including a $2,000 minimum daily ending balance",
+   "problem": "The figure is correct (Chase business-complete-banking page) but that URL is absent from novo-sources.json, which lists only /business/banking/checking. The first-listed page shows only '$15 or $0'.",
+   "fix": "Add https://www.chase.com/business/banking/checking/business-complete-banking to novo-sources.json.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F6",
+   "quote": "Official link",
+   "problem": "Built HTML has no external link to novo.co (unwrapped by unlink_pitched fail-closed offline). check_built passes; recheck live.",
+   "fix": "Confirm at live_links.py.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F7",
+   "quote": "Other facts (verified)",
+   "problem": "Novo $0/no minimum, 2% APY at $50,000, $7 ATM reimbursement, $5M FDIC; Mercury $0/$29.90/$299, Books/Payroll waived to Dec 31 2026, Treasury 4.42% at $250K; Relay $0/$30/$90 (was $120), 1.19/1.87/3.21% APY; Bluevine 1.3/1.75/3.3% with $30/$95, $3M FDIC, loans; Lili 2.25%/4.00% tiers, $3M; Wise 31 USD, $1.13, $6.11, 3.68%, 250 USD ATM allowance; Chase $15/$40/$95 all match vendor pages. Arithmetic ($358.80, $3,588, $2,130, $2,160, $990 vs $1,140, $963 vs $1,080, $61.10, $3,680, $180, $1,140) correct. Title 52 chars, H1 correct, both CTAs present and apart, no testing claim, body 3,014 words.",
+   "fix": "No change needed.",
+   "hard_blocker": false
+  }
+ ]
+}
