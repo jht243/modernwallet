@@ -167,3 +167,14 @@
 | /elder-care/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
 | /investing/compound-interest-calculator/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
 | /mortgage/amortization-schedule/ | 2026-11-14 | (no GSC query data) | none (no query) | n/a | n/a | none | n/a |
+| /compare/trump-account-vs-brokerage-account/ | 2026-11-21 | trump account vs brokerage account for kids | ABSENT | no | www.reddit.com,www.monotelo.com,www.acorns.com | none | n/a |
+| / | 2026-11-21 | site:themodernwallet.com | none (no AI Overview) | no | n/a | none | n/a |
+| /guides/ | 2026-11-21 | site:themodernwallet.com | none (no AI Overview) | no | n/a | none | n/a |
+| /about/ | 2026-11-21 | site:themodernwallet.com | none (unread) | no | n/a | none | n/a |
+| /methodology/ | 2026-11-21 | site:themodernwallet.com | none (no AI Overview) | no | n/a | none | n/a |
+| /calculators/ | 2026-11-21 | site:themodernwallet.com | none (no AI Overview) | no | n/a | none | n/a |
+| /budget/ | 2026-11-21 | site:themodernwallet.com | none (no AI Overview) | no | n/a | none | n/a |
+| /investing/ | 2026-11-21 | site:themodernwallet.com | none (no AI Overview) | no | n/a | none | n/a |
+| /compare/roth-401k-vs-traditional-401k/ | 2026-11-21 | regular vs roth 401k | ABSENT | no | www.reddit.com,www.benefits.ml.com,www.fidelity.com | none | n/a |
+| /guides/trump-account-worth-it/ | 2026-11-21 | are trump accounts a scam | ABSENT | no | none listed | none | n/a |
+| /auto-loan/ | 2026-11-21 | nerdwallet auto loan calculator | ABSENT | no | www.nerdwallet.com | none | n/a |

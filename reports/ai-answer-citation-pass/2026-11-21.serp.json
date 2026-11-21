@@ -1,0 +1,273 @@
+{
+ "pages": {
+  "/compare/trump-account-vs-brokerage-account/": {
+   "query": "trump account vs brokerage account for kids",
+   "paa": [
+    "Should I do a Trump investment account for my child?",
+    "Is a Trump account better than a custodial brokerage account?",
+    "Is it smart to open a brokerage account for your child?",
+    "What is the best type of investment account for a child?",
+    "Should I open a 529 or brokerage account for my child?",
+    "How to turn $100k into $1 million in 10 years?"
+   ],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.monotelo.com",
+    "www.acorns.com",
+    "www.empower.com",
+    "www.omahawm.com",
+    "www.youtube.com",
+    "www.nerdwallet.com",
+    "crr.bc.edu",
+    "www.fidelity.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.monotelo.com",
+    "www.empower.com",
+    "www.fidelity.com",
+    "www.acorns.com",
+    "www.omahawm.com",
+    "stewardshipinv.com",
+    "www.nerdwallet.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/": {
+   "query": "site:themodernwallet.com",
+   "paa": [],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/guides/": {
+   "query": "site:themodernwallet.com",
+   "paa": [],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/about/": {
+   "query": "site:themodernwallet.com",
+   "paa": [],
+   "related_searches": [],
+   "verdict": "unread",
+   "error": "SERP read failed: task 40101 Internal SE Server Error."
+  },
+  "/methodology/": {
+   "query": "site:themodernwallet.com",
+   "paa": [],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/calculators/": {
+   "query": "site:themodernwallet.com",
+   "paa": [],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/budget/": {
+   "query": "site:themodernwallet.com",
+   "paa": [],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/investing/": {
+   "query": "site:themodernwallet.com",
+   "paa": [],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com",
+    "www.themodernwallet.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/compare/roth-401k-vs-traditional-401k/": {
+   "query": "regular vs roth 401k",
+   "paa": [
+    "Is it better to do a Roth 401(k)?",
+    "How much will $20,000 in 401k be worth in 20 years?",
+    "Can I retire at 62 with $400,000 in 401k?",
+    "Is 20% into a 401k too much?",
+    "Does a 401k double every 5 years?",
+    "How much will $100,000 in 401k grow in 20 years?"
+   ],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.benefits.ml.com",
+    "www.fidelity.com",
+    "www.nerdwallet.com",
+    "www.youtube.com",
+    "www.sharebuilder401k.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.pacinicompany.com",
+    "www.myharvestwealth.com",
+    "www.billshark.com",
+    "www.harperandhodge.com",
+    "www.nyfp.net",
+    "www.taxandfinancial.us",
+    "www.cliffordfinancialplanning.com",
+    "www.ewadvisors.com",
+    "www.fundadvisorsofamerica.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "/guides/trump-account-worth-it/": {
+   "query": "are trump accounts a scam",
+   "paa": [
+    "Is the Trump Account real?",
+    "Is the Trump Account app legitimate?",
+    "Is there a catch for Trump accounts?",
+    "What does Dave Ramsey say about Trump's account?",
+    "Who owns the money in a Trump account?",
+    "Is Dave Ramsey still supporting Trump?"
+   ],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.theatlantic.com",
+    "www.centralbank.net",
+    "washingtonspectator.org",
+    "rbgcpa.com",
+    "trumpaccount.com",
+    "neal.house.gov"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present"
+  },
+  "/auto-loan/": {
+   "query": "nerdwallet auto loan calculator",
+   "paa": [],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "diyyourmoney.com",
+    "milled.com",
+    "paydownwise.com",
+    "www.instagram.com",
+    "car-loan.utils.com",
+    "joingerald.com",
+    "joingerald.com",
+    "joingerald.com",
+    "www.youtube.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  }
+ },
+ "cost": "DataForSEO: 11 calls, $0.06845 of $2.00 budget"
+}
