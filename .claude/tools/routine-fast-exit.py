@@ -284,10 +284,18 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
             except Exception:
                 continue
 
+    has_local_bridge = (
+        bool(os.environ.get('GMAIL_BRIDGE_SECRET', '').strip())
+        or bool(os.environ.get('LAYER3_BRIDGE_HELPER', '').strip() and Path(os.environ['LAYER3_BRIDGE_HELPER']).is_file())
+        or (Path.home() / '.layer3-ops/bridge_read.py').is_file()
+        or Path('/tmp/layer3-today-mail-audit-20261028/bridge_read.py').is_file()
+        or not (root / 'scripts/publisher_failover/local.py').is_file()
+    )
     is_cloud_remote = (
         os.environ.get('CLAUDE_CODE_REMOTE', '').strip().lower() in ('1', 'true', 'yes')
         or bool(os.environ.get('CODEX_SANDBOX'))
         or (Path('/home/user').is_dir() and not os.environ.get('GMAIL_BRIDGE_SECRET'))
+        or not has_local_bridge
     )
     hosted_runnable = [] if is_cloud_remote else hosted_ready
     upsells_runnable = bool(hosted_runnable)
@@ -351,6 +359,16 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
         state_file.write_text(json.dumps({'standingSha256': standing_sha, 'checkedAt': dt.datetime.now(dt.timezone.utc).isoformat()}) + '\n')
     except Exception:
         pass
+    if is_cloud_remote and (actionable_orders or actionable_fixes):
+        dispatcher = Path.home() / '.layer3-ops/native_cloud_dispatch.py'
+        if dispatcher.is_file():
+            try:
+                subprocess.run(
+                    [sys.executable, str(dispatcher), 'dispatch-publisher', '--sla-override'],
+                    cwd=root, capture_output=True, text=True, timeout=25,
+                )
+            except Exception:
+                pass
     order_note = (
         f'{len(actionable_orders)} orders delegated to GitHub Actions publisher-failover'
         if (is_cloud_remote and actionable_orders)

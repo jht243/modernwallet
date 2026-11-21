@@ -37,6 +37,18 @@ class ControlError(RuntimeError):
     pass
 
 
+def push_timeout():
+    """Bound only artifact uploads; reads/fetches retain their own limits."""
+    raw = os.environ.get('WORKFLOW_CONTROL_PUSH_TIMEOUT_SECONDS', '600')
+    try:
+        seconds = int(raw)
+    except (TypeError, ValueError):
+        raise ControlError('Control push timeout must be an integer from 30 to 900 seconds') from None
+    if not 30 <= seconds <= 900:
+        raise ControlError('Control push timeout must be an integer from 30 to 900 seconds')
+    return seconds
+
+
 def git(root, *args, data=None, env=None, check=True, timeout=90):
     r = subprocess.run(['git', *PROMISOR_FLAGS, '-C', str(root), *args], input=data, env=env,
                        stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=timeout)
@@ -89,6 +101,7 @@ class Store:
         return revision, state
 
     def mutate(self, fn, artifacts=(), source_parent=None):
+        upload_timeout = push_timeout()
         blobs = {}
         raw_items = {}
         large_digests = set()
@@ -165,7 +178,18 @@ class Store:
                 if not base or git(self.root, 'merge-base', '--is-ancestor', source_parent, base, check=False).returncode:
                     args.extend(['-p', source_parent])
             commit = git(self.root, *args, data=b'Checkpoint workflow controller\n', env=no_lazy_env).stdout.decode().strip()
-            push = git(self.root, 'push', '--quiet', 'origin', commit + ':' + self.ref, env=no_lazy_env, check=False, timeout=120)
+            try:
+                push = git(self.root, 'push', '--quiet', 'origin', commit + ':' + self.ref,
+                           env=no_lazy_env, check=False, timeout=upload_timeout)
+            except subprocess.TimeoutExpired:
+                # The server may have accepted the commit before the client timed out.
+                # Confirm that exact history before reapplying the mutation.
+                observed, _ = self.read()
+                if observed and (observed == commit or not git(
+                        self.root, 'merge-base', '--is-ancestor', commit, observed,
+                        env=no_lazy_env, check=False).returncode):
+                    return result
+                continue
             if not push.returncode:
                 return result
         raise ControlError('Control ref contention/unavailable; retry later without duplicating work')

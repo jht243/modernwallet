@@ -2067,7 +2067,7 @@ def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_
         if ts_files:
             has_repo_slug_sources = True
             for ts_p in ts_files:
-                known_slugs.update(re.findall(r'slug\s*:\s*["\']([a-z0-9][a-z0-9-]*)["\']', ts_p.read_text(errors='ignore')))
+                known_slugs.update(re.findall(r'(?<![\w$-])(?:slug|["\']slug["\'])\s*:\s*["\']([a-z0-9][a-z0-9-]*)["\']', ts_p.read_text(errors='ignore')))
     for content_sub in ('src/content/guides', 'src/content/comparisons', 'src/pages/guides', 'src/pages/comparisons'):
         c_dir = root / content_sub
         if c_dir.is_dir():

@@ -1350,6 +1350,7 @@ class Gates(unittest.TestCase):
         (self.root / 'data').mkdir(parents=True, exist_ok=True)
         (self.root / 'data/guides-fable-5-2.ts').write_text('export const g = [{ slug: "claude-fable-5-2-explained" }];\n')
         (self.root / 'data/comparisons-alternatives-20261113.ts').write_text('export const c = [{ slug: "cursor-alternatives" }];\n')
+        (self.root / 'data/guides-quoted.ts').write_text('export const q = [{ "slug": "hubspot-aeo-review" }, { \'slug\': \'quoted-single-guide\' }, { relatedSlug: "not-a-route" }];\n')
         (self.root / 'public').mkdir(parents=True, exist_ok=True)
         (self.root / 'public/search-index.json').write_text(json.dumps([{'url': '/guides/indexed-only-guide'}]))
 
@@ -1360,7 +1361,7 @@ class Gates(unittest.TestCase):
             'sections': [{
                 'heading': 'Overview',
                 'paragraphs': [
-                    filler + ' See [Fable](/guides/claude-fable-5-2-explained), [Alts](/comparisons/cursor-alternatives), and [Indexed](/guides/indexed-only-guide).'
+                    filler + ' See [Fable](/guides/claude-fable-5-2-explained), [Alts](/comparisons/cursor-alternatives), [HubSpot](/guides/hubspot-aeo-review), [Quoted](/guides/quoted-single-guide), and [Indexed](/guides/indexed-only-guide).'
                 ],
             }]
         }
@@ -1374,13 +1375,14 @@ class Gates(unittest.TestCase):
         bad_draft = {
             'sections': [{
                 'heading': 'Overview',
-                'paragraphs': [filler + ' See [Missing](/guides/nonexistent-phantom-slug).'],
+                'paragraphs': [filler + ' See [Missing](/guides/nonexistent-phantom-slug) and [Non-route](/guides/not-a-route).'],
             }]
         }
         (drafts / 'fixture.json').write_text(json.dumps(bad_draft))
         res_bad = g.precheck_drafts(self.root, 'plan.json', 'drafts')
         self.assertEqual(res_bad['status'], 'FAIL')
         self.assertTrue(any(i['kind'] == 'broken-internal-link' and 'nonexistent-phantom-slug' in i['detail'] for i in res_bad['issues']))
+        self.assertTrue(any(i['kind'] == 'broken-internal-link' and 'not-a-route' in i['detail'] for i in res_bad['issues']))
 
         # Also verify prepare_write_packets emits basis-specific reported guidance + first-mention link contract
         ev_dir = self.root / 'evidence/fixture'

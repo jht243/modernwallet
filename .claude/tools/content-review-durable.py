@@ -161,15 +161,22 @@ def restore(root,journal):
     else:cache(root,name,expected,raw);continue
    target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(raw)
  return {'module':module,'store':store,'expectedHead':head,'key':journal.key}
+def active_review_events(events):
+ # A recovered alias remains the original cycle. Retain its actual R1/repair
+ # dependencies as well as the mistaken intervening events, not just the last begin.
+ last_begin=max((i for i,e in enumerate(events) if e.get('kind')=='begin'),default=0)
+ for event in events[last_begin:]:
+  if event.get('kind')=='recover-continuation':
+   original=event['data']['originalCycleId']
+   last_begin=next(i for i,e in enumerate(events) if e.get('kind')=='begin' and e['data']['cycleId']==original)
+ return events[last_begin:]
 def invalidated(journal):
  if not journal or not journal.path.is_file():return set()
  events=[json.loads(line) for line in journal.path.read_bytes().splitlines() if line.strip()]
- last_begin=max((i for i,e in enumerate(events) if e.get('kind')=='begin'),default=0)
- return {(ref['path'],ref['sha256']) for e in events[last_begin:] if e['kind']=='repair-pending' for ref in e['data'].get('invalidatedReferences',[])}
+ return {(ref['path'],ref['sha256']) for e in active_review_events(events) if e['kind']=='repair-pending' for ref in e['data'].get('invalidatedReferences',[])}
 def collect(root,journal,extra=None,invalid=None):
  paths={};seen=set();events=[json.loads(line) for line in journal.path.read_bytes().splitlines() if line.strip()] if journal else []
- last_begin=max((i for i,e in enumerate(events) if e.get('kind')=='begin'),default=0)
- active_events=events[last_begin:]
+ active_events=active_review_events(events)
  invalid=set(invalid or ())|invalidated(journal)
  def file(name,expected=None):
   target=(root/name).resolve()

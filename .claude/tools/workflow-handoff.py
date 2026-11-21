@@ -81,6 +81,15 @@ def client_service_release_check(root, h, snapshot, renderer):
             'service handoff must use its actual captured canonical origin')
 
 
+def approved_link_audit_scope_check(root, h, old, phase):
+    spec = importlib.util.spec_from_file_location('approved_link_audit_scope', Path(__file__).with_name('approved-link-audit-scope.py'))
+    module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
+    renderer_spec = importlib.util.spec_from_file_location('dependency_renderer', Path(__file__).with_name('rendered-audit.py'))
+    renderer = importlib.util.module_from_spec(renderer_spec); renderer_spec.loader.exec_module(renderer)
+    from types import SimpleNamespace
+    module.check(root, h, old, phase, SimpleNamespace(require=require, read=read, evidence_ref=evidence_ref), renderer)
+
+
 def preparation_scope_check(root, h, old, phase):
     """Reconcile researched targets before approval without resetting a job."""
     require(phase not in ['write', 'publish'], 'Route changes cannot begin writing or publication')
@@ -197,7 +206,9 @@ def handoff_check(root, path, actor=None, phase=None, visited=None):
         if cur_norm != old_norm:
             is_subbatch_narrowing = bool(cur_norm and cur_norm < old_norm and not h.get('preparationScopeChange'))
             is_multibatch_publish = bool(phase == 'publish' and 'reviewPairs' in h and old_norm <= cur_norm and not h.get('preparationScopeChange'))
-            if not (is_subbatch_narrowing or is_multibatch_publish):
+            if h.get('approvedLinkDependencies'):
+                approved_link_audit_scope_check(root, h, old, phase)
+            elif not (is_subbatch_narrowing or is_multibatch_publish):
                 preparation_scope_check(root, h, old, phase)
         require(all(counters[k] >= old['reviewCounters'][k] for k in counters), 'Review counters cannot reset')
         require({f['id'] for f in old['findings']} <= set(ids), 'Prior findings cannot disappear')
