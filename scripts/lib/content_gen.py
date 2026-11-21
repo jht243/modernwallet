@@ -1211,7 +1211,6 @@ def complete(system: str, prompt: str, *, model: str = None, max_tokens: int = N
         JSON_MODE = bool(json_mode)
         SCOPE_ON = bool(writer_scope)
         if model: MODEL = model
-        elif not writer_scope and MODEL.startswith("claude-opus"): MODEL = CLAIMCHECK_MODEL or "claude-sonnet-5-5"
         if fallback is not None: FALLBACK = fallback
         if max_tokens: MAX_TOKENS = int(max_tokens)
         if json_mode:
