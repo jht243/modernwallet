@@ -318,48 +318,155 @@ def format_clustered_brief_markdown(domain: str, comps: list[str], clusters: lis
 
 
 def load_tracked(path: Path) -> set[str]:
-    """Every keyword in the tracked doc's markdown tables (primary + secondaries)."""
+    """Every keyword in the tracked doc's markdown tables (header-aware across fleet table formats)."""
     tracked: set[str] = set()
     if not path.exists():
         return tracked
+    kw_idx: list[int] = [1, 2]
     for line in path.read_text(encoding="utf-8").splitlines():
         if not line.strip().startswith("|"):
             continue
         cells = [c.strip().strip("`") for c in line.strip().strip("|").split("|")]
-        if len(cells) < 2 or set(cells[0]) <= {"-", ":"} or cells[0].lower().startswith("target url"):
+        if not cells or set("".join(cells)) <= {"-", " ", ":"}:
             continue
-        for cell in cells[1:3]:
-            for kw in cell.split(";"):
-                if kw.strip():
-                    tracked.add(norm(kw))
+        lowered = [c.lower() for c in cells]
+        if any(c in ("keyword", "primary keyword", "target keyword", "target url", "suggestion") for c in lowered):
+            found_kw = [
+                i for i, c in enumerate(lowered)
+                if c in ("keyword", "primary keyword", "target keyword", "suggestion") or "supporting" in c
+            ]
+            if found_kw:
+                kw_idx = found_kw
+            continue
+        for i in kw_idx:
+            if i < len(cells) and cells[i]:
+                for kw in cells[i].split(";"):
+                    kw_s = kw.strip()
+                    if kw_s and not re.fullmatch(r"[\d,._%+-]+", kw_s):
+                        tracked.add(norm(kw_s))
     return tracked
+
+
+def _read_cache_rows(f: Path, limit: int, allow_stale: bool = False) -> tuple[list[dict] | None, float]:
+    if not f.exists():
+        return None, 0.0
+    try:
+        blob = json.loads(f.read_text())
+        rows = blob.get("rows")
+        if not isinstance(rows, list):
+            return None, 0.0
+        age = (time.time() - float(blob.get("fetched_at") or 0)) / 86400
+        if allow_stale or (age < CACHE_DAYS and blob.get("limit", 0) >= limit):
+            return rows[:limit], age
+    except Exception:
+        pass
+    return None, 0.0
 
 
 def cached_ranked(domain: str, limit: int, database: str, use_cache: bool,
                   notes: list[str]) -> list[dict]:
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     f = CACHE_DIR / f"{domain.replace('/', '_')}.{database}.json"
-    if use_cache and f.exists():
-        try:
-            blob = json.loads(f.read_text())
-            age = (time.time() - blob["fetched_at"]) / 86400
-            if age < CACHE_DAYS and blob.get("limit", 0) >= limit:
-                notes.append(f"{domain}: cache ({age:.0f}d old, {len(blob['rows'])} rows)")
-                return blob["rows"][:limit]
-        except Exception:
-            pass
+    if use_cache:
+        cached_rows, age = _read_cache_rows(f, limit, allow_stale=False)
+        if cached_rows is not None:
+            notes.append(f"{domain}: cache ({age:.0f}d old, {len(cached_rows)} rows)")
+            return cached_rows
     src = "semrush"
     try:
+        if not sr.available():
+            raise sr.SemrushError("no SEMRUSH_API_KEY")
         rows = sr.ranked_keywords(domain, limit, database)
     except sr.SemrushError as e:
-        if not dfs.available():
+        if dfs.available():
+            try:
+                notes.append(f"{domain}: SEMRUSH failed ({str(e)[:60]}) -> DataForSEO")
+                rows, src = dfs.ranked_keywords(domain, limit, database), "dataforseo"
+            except (dfs.DFSError, dfs.BudgetExceeded) as e2:
+                stale_rows, age = _read_cache_rows(f, limit, allow_stale=True)
+                if stale_rows is not None:
+                    notes.append(f"{domain}: stale cache fallback ({age:.0f}d old, {len(stale_rows)} rows) after {str(e2)[:50]}")
+                    return stale_rows
+                raise
+        else:
+            stale_rows, age = _read_cache_rows(f, limit, allow_stale=True)
+            if stale_rows is not None:
+                notes.append(f"{domain}: stale cache fallback ({age:.0f}d old, {len(stale_rows)} rows) after SEMRUSH ({str(e)[:50]})")
+                return stale_rows
             raise dfs.DFSError(f"SEMRUSH failed ({e}) and DataForSEO is unavailable")
-        notes.append(f"{domain}: SEMRUSH failed ({str(e)[:60]}) -> DataForSEO")
-        rows, src = dfs.ranked_keywords(domain, limit, database), "dataforseo"
     f.write_text(json.dumps({"domain": domain, "limit": limit, "fetched_at": time.time(),
                              "source": src, "rows": rows}))
     notes.append(f"{domain}: fresh pull from {src} ({len(rows)} rows)")
     return rows
+
+
+def _load_fallback_gap_snapshot(
+    root: Path,
+    out_dir: Path,
+    ours: set[str],
+    tracked: set[str],
+    relevant: re.Pattern | None,
+    adjacent: re.Pattern | None,
+    exclude: re.Pattern | None,
+    notes: list[str],
+) -> dict[str, dict]:
+    """When both live SEMRUSH and DataForSEO are unavailable/out of credits and dfs-cache
+    has no domain files, fall back to any committed gap snapshot in reports/seo-research/
+    or reports/keyword-pass/ and diff against current ours + tracked keywords."""
+    candidates: list[Path] = [
+        out_dir / "semrush-keyword-gap.json",
+        out_dir / "keyword-gap.json",
+    ]
+    kp_dir = root / "reports" / "keyword-pass"
+    if kp_dir.is_dir():
+        candidates.extend(sorted(kp_dir.glob("*.gap.json"), reverse=True))
+    gap: dict[str, dict] = {}
+    for snap in candidates:
+        if not snap.is_file():
+            continue
+        try:
+            blob = json.loads(snap.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        raw_gaps = blob.get("gaps")
+        if not isinstance(raw_gaps, list) or not raw_gaps:
+            continue
+        for r in raw_gaps:
+            if not isinstance(r, dict) or not r.get("keyword"):
+                continue
+            n = norm(str(r["keyword"]))
+            if not n or n in ours or n in tracked:
+                continue
+            if exclude and exclude.search(n):
+                continue
+            is_core = bool(relevant.search(n)) if relevant else (r.get("tier") != "adjacent")
+            if relevant and not is_core and not (adjacent and adjacent.search(n)):
+                continue
+            comps_raw = r.get("competitors")
+            if isinstance(comps_raw, list):
+                comp_set = {str(c) for c in comps_raw if c}
+            elif r.get("competitor"):
+                comp_set = {str(r["competitor"])}
+            else:
+                comp_set = set()
+            rec = gap.setdefault(n, {
+                "keyword": str(r["keyword"]),
+                "volume": int(r.get("volume") or 0),
+                "kd": r.get("kd", 0) if r.get("kd") not in ("", None) else 0,
+                "cpc": r.get("cpc") or 0,
+                "tier": "core" if is_core else "adjacent",
+                "competitors": set(),
+                "best_pos": int(r.get("best_pos") or r.get("comp_position") or 999),
+            })
+            if is_core:
+                rec["tier"] = "core"
+            rec["competitors"].update(comp_set)
+            rec["volume"] = max(rec["volume"], int(r.get("volume") or 0))
+        if gap:
+            rel_path = snap.relative_to(root) if snap.is_relative_to(root) else snap
+            notes.append(f"fallback: loaded {len(gap)} untracked gap keywords from {rel_path} (live SEMRUSH/DataForSEO unavailable)")
+            break
+    return gap
 
 
 # ---------------------------------------------------------------------- main
@@ -387,19 +494,20 @@ def main(argv=None) -> int:
         print(json.dumps({"error": "no OUR_DOMAIN in scripts/semrush_keyword_gap.py or "
                           ".claude/project-facts.json; pass --domain <site host>"}))
         return 2
-    if not (sr.available() or dfs.available()):
-        print(json.dumps({"error": "SEMRUSH and DataForSEO both unavailable (no keys, or disabled)"}))
-        return 2
-
     comps = (a.competitor or cfg.get("COMPETITORS") or [])[:a.max_competitors]
     tracked_path = Path(a.tracked) if a.tracked else resolve_tracked(cfg.get("TARGET_KW_FILE"))
     relevant, adjacent, exclude = cfg.get("RELEVANT"), cfg.get("ADJACENT"), cfg.get("EXCLUDE")
     notes: list[str] = []
     use_cache = not a.no_cache
 
+    if not (sr.available() or dfs.available()):
+        notes.append("SEMRUSH and DataForSEO keys unavailable -> using cache / committed snapshot fallback")
+
     live_competitors = []
-    if a.refresh_competitors or not comps:
+    if (a.refresh_competitors or not comps) and (sr.available() or dfs.available()):
         try:
+            if not sr.available():
+                raise sr.SemrushError("no SEMRUSH_API_KEY")
             live_competitors = sr.competitors_domain(a.domain, 20, a.database)
         except sr.SemrushError as e:
             notes.append(f"SEMRUSH competitors failed ({str(e)[:60]}) -> DataForSEO")
@@ -416,8 +524,8 @@ def main(argv=None) -> int:
         ours = {norm(r["keyword"]) for r in
                 cached_ranked(a.domain, a.our_limit, a.database, use_cache, notes)}
     except (dfs.DFSError, dfs.BudgetExceeded) as e:
-        print(json.dumps({"error": f"our-domain pull failed: {e}", "cost": dfs.cost_summary()}))
-        return 2
+        ours = set()
+        notes.append(f"{a.domain}: live pull unavailable ({str(e)[:80]}) -> using tracked inventory + local route scan")
     tracked = load_tracked(tracked_path)
 
     gap: dict[str, dict] = {}
@@ -447,6 +555,9 @@ def main(argv=None) -> int:
             rec["competitors"].add(dom)
             rec["volume"] = max(rec["volume"], r["volume"])
             rec["best_pos"] = min(rec["best_pos"], r["position"] or 999)
+
+    if pulled == 0 and not gap:
+        gap = _load_fallback_gap_snapshot(ROOT, OUT_DIR, ours, tracked, relevant, adjacent, exclude, notes)
 
     results = []
     for rec in gap.values():

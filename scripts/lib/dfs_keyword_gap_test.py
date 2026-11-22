@@ -58,6 +58,41 @@ class DfsKeywordGapClusterTest(unittest.TestCase):
             self.assertIn("top ai tools for law firm", brief)
             self.assertIn("ai-tools-for-law-firms", brief)
 
+    def test_load_tracked_and_fallback_snapshot_when_live_providers_unavailable(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            out_dir = root / "reports" / "seo-research"
+            out_dir.mkdir(parents=True)
+            tracked_file = out_dir / "target-keywords.md"
+            tracked_file.write_text(
+                "| Keyword | Vol/mo | KD | Status | URL |\n"
+                "|---|---|---|---|---|\n"
+                "| oura vs whoop | 5400 | 36 | published | /wearables/oura-vs-whoop/ |\n"
+                "\n"
+                "| Target URL | Primary Keyword | Supporting Keywords |\n"
+                "|---|---|---|\n"
+                "| /sleep/deep-sleep | how much deep sleep | deep sleep calculator; deep sleep chart |\n",
+                encoding="utf-8",
+            )
+            tracked = kg.load_tracked(tracked_file)
+            self.assertIn("oura vs whoop", tracked)
+            self.assertNotIn("5400", tracked)
+            self.assertIn("how much deep sleep", tracked)
+            self.assertIn("deep sleep calculator", tracked)
+
+            (out_dir / "semrush-keyword-gap.json").write_text(
+                '{"gaps": ['
+                '{"keyword": "oura vs whoop", "volume": 5400, "kd": 36, "tier": "core", "competitors": ["a.com"]},'
+                '{"keyword": "collagen supplements", "volume": 150000, "kd": 55, "tier": "core", "competitors": ["b.com"]}'
+                ']}',
+                encoding="utf-8",
+            )
+            notes: list[str] = []
+            gap = kg._load_fallback_gap_snapshot(root, out_dir, set(), tracked, None, None, None, notes)
+            self.assertNotIn("oura vs whoop", gap)
+            self.assertIn("collagen supplements", gap)
+            self.assertTrue(any("fallback: loaded 1 untracked gap keywords" in n for n in notes))
+
 
 if __name__ == "__main__":
     unittest.main()
