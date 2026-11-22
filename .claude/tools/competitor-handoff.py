@@ -355,6 +355,19 @@ def pending(root):
      reference=row['chartRef'];proof=inside(root,reference['path']);require(sha(proof.read_bytes())==reference['sha256'],'Latest immutable chart proof changed')
      replace_pointer(p.with_suffix('.chart.json'),reference)
     if row.get('chart'):save(p.with_suffix('.chart.json'),canonical(row['chart']))
+    if p.with_suffix('.chart.json').is_file():
+     try:
+      cv=chart_value(root,p)
+      plan_obj=json.loads(cv['planText'])
+      rev_obj=json.loads(cv['reviewText'])
+      chart_rel=plan_obj.get('chartPath','')
+      if isinstance(chart_rel,str) and chart_rel.startswith('reports/'):
+       run_dir=inside(root,chart_rel).with_suffix('').with_name(Path(chart_rel).stem+'-run')
+       am_path=run_dir/'approval-manifest.json'
+       if not am_path.exists():save(am_path,canonical(plan_obj))
+       cr_path=run_dir/'chart-review.json'
+       if not cr_path.exists():save(cr_path,canonical(rev_obj))
+     except Exception:pass
  for path in sorted(state_dir(root).glob('*.json')):
   if len(path.stem)!=64 or any(x not in '0123456789abcdef' for x in path.stem):continue
   validate_source(path)
@@ -453,7 +466,13 @@ def supporting_artifacts(root,plan,proof_path):
             for child in value:visit(child,parent)
     visit(plan)
     chart=inside(root,plan['chartPath'])
-    if chart.is_file():found[str(chart.relative_to(root))]=sha(chart.read_bytes())
+    if chart.is_file():
+        found[str(chart.relative_to(root))]=sha(chart.read_bytes())
+        run_dir=chart.with_suffix('').with_name(chart.stem+'-run')
+        if run_dir.is_dir():
+            for extra in [run_dir/'approval-manifest.json',run_dir/'chart-review.json',*sorted(run_dir.glob('evidence/*/*.json'))]:
+                if extra.is_file():
+                    found[str(extra.relative_to(root))]=sha(extra.read_bytes())
     return found
 
 def after_chart(root,plan,review):

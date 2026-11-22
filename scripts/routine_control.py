@@ -171,6 +171,15 @@ class Store:
                                     auto_candidates.append(fp.resolve().relative_to(self.root.resolve()).as_posix())
                                 except ValueError:
                                     pass
+                mp_dir = self.root / 'reports/mindmap-pass'
+                if mp_dir.is_dir():
+                    for pat in ('*competitor*/approval-manifest.json', '*competitor*/chart-review.json', '*competitor*/readiness.md', '*competitor*/evidence/*/*.json'):
+                        for fp in sorted(mp_dir.glob(pat)):
+                            if fp.is_file():
+                                try:
+                                    auto_candidates.append(fp.resolve().relative_to(self.root.resolve()).as_posix())
+                                except ValueError:
+                                    pass
                 for rel in auto_candidates:
                     if rel in blobs:
                         continue
@@ -1006,7 +1015,10 @@ def hook(store, event):
                     if verdict not in {'PASS', 'FAIL', 'INVALID'}:
                         raise ControlError('Invalid candidate verdict')
                     terminal = c['state'] in TERMINAL
-                    c['reviews'].append({'agent': agent, 'verdict': verdict, 'digest': actual, 'receipt': task['receipt'], 'release_eligible': not terminal})
+                    if c['reviews'] and c['reviews'][-1].get('agent') == agent and c['reviews'][-1].get('digest') == actual and c['reviews'][-1].get('verdict') == verdict:
+                        c['reviews'][-1]['receipt'] = task['receipt']
+                    else:
+                        c['reviews'].append({'agent': agent, 'verdict': verdict, 'digest': actual, 'receipt': task['receipt'], 'release_eligible': not terminal})
                     if not terminal:
                         c['state'] = 'reviewed' if native_release_eligible(store,c) else ('held' if c['reworks'] >= 2 or native_review_count(c) >= native_review_ceiling(store,c) else ('needs-independent-review' if verdict == 'INVALID' else 'needs-correction'))
                 if task['valid']:

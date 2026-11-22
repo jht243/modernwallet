@@ -174,6 +174,24 @@ def source_manifest(root, snapshot, d, fresh):
     return base, files
 
 
+def registered_collection_correction(root,d,store,revision=None,state=None):
+    """Pass retained metadata to the EXISTING authenticated, lineage-scoped collector."""
+    if state is None:
+        revision,state=store.read()
+    corrections={json.dumps(entry['referenceCorrection'],sort_keys=True)
+                 for entry in state.get('reviewJournals',{}).values() if entry.get('referenceCorrection')}
+    d.require(len(corrections)<=1,'Multiple historical corrections need explicit supported handling')
+    if not corrections:return None
+    reference=json.loads(next(iter(corrections)))
+    # Clean archive workers need exact retained proof bytes, not a new trust registry.
+    connection=d.backend(root)
+    d.require(connection is not None,'An actual native Git checkpoint origin is required')
+    module,_=connection
+    d.restore_reference_correction(root,module,revision,reference)
+    # Authentication/authority and the sole historical edge are enforced inside d.collect.
+    return reference
+
+
 def save_checked_pair(root, snapshot_file, review_file, fresh=False):
     snapshot=json.loads(snapshot_file.read_bytes())
     job=search_job(root)
@@ -186,6 +204,7 @@ def save_checked_pair(root, snapshot_file, review_file, fresh=False):
     d=durable(root);conn=d.backend(root)
     if conn is None:return
     _,store=conn
+    correction_ref=registered_collection_correction(root,d,store)
     refs={}
     for path in (snapshot_file,review_file):
         name=path.resolve().relative_to(root).as_posix()
@@ -218,7 +237,7 @@ def save_checked_pair(root, snapshot_file, review_file, fresh=False):
             d.restore(root, journal)
         if not journal.path.is_file():
             raise ValueError('Missing original review journal for '+identity['route'])
-        history.update(d.collect(root,journal))
+        history.update(d.collect(root,journal,correction_ref=correction_ref))
         invalid.update(d.invalidated(journal))
     return persist(root,store,d,refs,base,files,job,job_id,True,history,invalid)
 
@@ -230,12 +249,13 @@ def key_for_refs(refs):
 def persist(root,store,d,refs,base,files,job,job_id,release,history=None,invalid=None):
     key=d.sha(json.dumps([refs,base,files,job_id],sort_keys=True).encode())
     revision,state=store.read()
+    correction_ref=registered_collection_correction(root,d,store,revision,state)
     indexes=state.get('verifiedReleasePairs',{})
     if key in indexes:
         index=indexes[key]
     else:
         more={v['path']:v['sha256'] for v in files.values() if v}
-        paths={**(history or {}),**d.collect(root,None,{**refs,**more},invalid=invalid)}
+        paths={**(history or {}),**d.collect(root,None,{**refs,**more},invalid=invalid,correction_ref=correction_ref)}
         index_bytes=json.dumps({'roots':refs,'paths':paths,'baseCommit':base,'sourceFiles':files,'jobId':job_id,'searchSite':job['site'] if job else None},sort_keys=True).encode()
         index=d.sha(index_bytes)
         index_file=d.cache(root,'release-index.json',index,index_bytes)
@@ -547,6 +567,7 @@ def archive_owner_close(root, intake, request, store=None, lease=None):
     if conn is None:
         return None
     _, git_store = conn
+    correction_ref = registered_collection_correction(root,d,git_store)
     base_commit, changed = changed_sources(root)
     if not changed:
         return None
@@ -622,7 +643,7 @@ def archive_owner_close(root, intake, request, store=None, lease=None):
                 snap_entry = next((sr for sr in (snapshot.get('routes') or []) if (sr.get('path', '').rstrip('/') or '/') == norm_route), None)
                 if snap_entry and snap_entry.get('textFile') and (root / snap_entry['textFile']).is_file():
                     rev_text = ' '.join((root / snap_entry['textFile']).read_text(encoding='utf-8', errors='replace').split())
-            history.update(d.collect(root, journal_inst))
+            history.update(d.collect(root, journal_inst,correction_ref=correction_ref))
             if hasattr(d, 'invalidated'):
                 invalid.update(d.invalidated(journal_inst))
             boundary = snapshot.get('correctionBoundary') or snapshot.get('reviewSourceArchive')

@@ -484,6 +484,7 @@ def publication_semantic(semantic):
     semantic = dict(semantic)
     if isinstance(semantic.get('text'), str):
         semantic['text'] = re.sub(r'(\bAdvisories checked\s+|[Cc]hecked against all three feeds on\s+)(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},\s+\d{4}', r'\1<FEED_CHECK_DATE>', semantic['text'])
+        semantic['text'] = re.sub(r'(\bReviewed\s+)(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\s+\d{1,2},\s+\d{4}(\s+Share\s+On\b)', r'\1<REVIEW_CHECK_DATE>\2', semantic['text'])
     # Next font loader hashes vary with build paths. Keep exact archived HTML,
     # signed fingerprints and all editorial/visibility attributes unchanged;
     # compare only these known generated identifiers on document roots.

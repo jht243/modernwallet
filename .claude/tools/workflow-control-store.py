@@ -7,6 +7,8 @@ import re
 import subprocess
 import tempfile
 REF = "refs/heads/automation/mindmap-control"
+# Historical review indexes grow independently of individual evidence artifacts.
+STATE_LIMIT_BYTES = 96_000_000
 SECRET = re.compile(rb'(?<![A-Za-z0-9_-])(?:sk-(?:proj-|ant-)?[A-Za-z0-9_-]{20,}|-----BEGIN [A-Z ]*PRIVATE KEY|ri_[A-Za-z0-9_-]{20,}|AQ\.[A-Za-z0-9_-]{20,})')
 
 # Public article URLs whose path slug begins a segment with "sk-<company>-" (e.g.
@@ -104,15 +106,20 @@ class Store:
         upload_timeout = push_timeout()
         blobs = {}
         raw_items = {}
+        unique_payloads = {}
         large_digests = set()
         for rel in artifacts:
             data = safe_path(self.root, rel).read_bytes()
             digest = sha(data)
+            # Every path was independently read and hashed above. Share only
+            # content whose current bytes have the same verified SHA-256.
+            data = unique_payloads.setdefault(digest, data)
             raw_items[rel] = (digest, data)
             if (rel.startswith('reports/') and '/correction-sources/blobs/' in rel
                     and Path(rel).name in {'guides-new.ts', 'comparisons-new.ts'}
                     and Path(rel).parent.name == digest):
                 large_digests.add(digest)
+        privacy_checked = set()
         for rel, (digest, data) in raw_items.items():
             large_source = (
                 digest in large_digests
@@ -121,16 +128,24 @@ class Store:
                     and Path(rel).stem == digest)
             )
             limit = 90_000_000 if large_source else 20_000_000
-            if len(data) > limit or has_sensitive_material(data):
+            # The path-dependent size exception still runs for every reference.
+            if len(data) > limit:
                 raise ControlError('Sensitive or oversized artifact refused')
+            if digest not in privacy_checked:
+                if has_sensitive_material(data):
+                    raise ControlError('Sensitive or oversized artifact refused')
+                privacy_checked.add(digest)
             blobs[rel] = (digest, data)
         for _ in range(5):
             base, state = self.read()
             result = fn(state)
             for rel, (digest, _) in blobs.items():
                 state['job'].setdefault('artifacts', {})[rel] = digest
-            state_bytes = (json.dumps(state, sort_keys=True, indent=2) + '\n').encode()
-            if len(state_bytes) > 20_000_000 or has_sensitive_material(state_bytes):
+            # Keep every record while avoiding whitespace exhausting the bounded store.
+            state_bytes = (json.dumps(state, sort_keys=True, separators=(',', ':')) + '\n').encode()
+            if len(state_bytes) > STATE_LIMIT_BYTES:
+                raise ControlError('Workflow state exceeds bounded storage capacity')
+            if has_sensitive_material(state_bytes):
                 raise ControlError('Sensitive workflow state refused')
             no_lazy_env = dict(
                 os.environ,
@@ -141,10 +156,12 @@ class Store:
                 GIT_COMMITTER_EMAIL='routines@layer3labs.io',
             )
             state_oid = git(self.root, 'hash-object', '-w', '--stdin', data=state_bytes, env=no_lazy_env).stdout.decode().strip()
-            new_art_oids = {
-                digest: git(self.root, 'hash-object', '-w', '--stdin', data=data, env=no_lazy_env).stdout.decode().strip()
-                for digest, data in blobs.values()
-            }
+            new_art_oids = {}
+            for digest, data in blobs.values():
+                if digest not in new_art_oids:
+                    new_art_oids[digest] = git(
+                        self.root, 'hash-object', '-w', '--stdin', data=data,
+                        env=no_lazy_env).stdout.decode().strip()
             root_entries = {}
             if base:
                 for line in git(self.root, 'ls-tree', base).stdout.decode().splitlines():
