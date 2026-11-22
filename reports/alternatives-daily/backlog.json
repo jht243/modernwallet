@@ -3410,10 +3410,22 @@
           "at": "2026-11-22T16:57:30+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-22T17:01:06+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-22T16:46:30+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-22T17:01:06+00:00",
       "claimedOn": "2026-11-22",
       "attempts": 1,
       "lastNextAt": "2026-11-22T16:40:26+00:00",
@@ -3460,7 +3472,12 @@
           }
         ],
         "recordedAt": "2026-11-22T16:57:30+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/paypal/",
+      "commit": "f98dd5c",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-22",
+      "bodyWords": 2153
     },
     {
       "vendor": "Fidelity",
@@ -3507,10 +3524,22 @@
           "at": "2026-11-22T16:57:30+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-22T17:01:06+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-22T16:47:13+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-22T17:01:06+00:00",
       "claimedOn": "2026-11-22",
       "attempts": 1,
       "lastNextAt": "2026-11-22T16:40:26+00:00",
@@ -3564,7 +3593,12 @@
           }
         ],
         "recordedAt": "2026-11-22T16:57:30+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/fidelity/",
+      "commit": "f98dd5c",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-22",
+      "bodyWords": 2484
     },
     {
       "vendor": "Gusto",
@@ -3611,10 +3645,22 @@
           "at": "2026-11-22T16:57:30+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-22T17:01:06+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-22T16:50:08+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-22T17:01:06+00:00",
       "claimedOn": "2026-11-22",
       "attempts": 1,
       "lastNextAt": "2026-11-22T16:40:26+00:00",
@@ -3675,7 +3721,12 @@
           }
         ],
         "recordedAt": "2026-11-22T16:57:30+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/gusto/",
+      "commit": "f98dd5c",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-22",
+      "bodyWords": 2764
     },
     {
       "vendor": "HoneyBook",
