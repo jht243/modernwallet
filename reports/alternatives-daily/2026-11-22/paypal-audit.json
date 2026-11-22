@@ -1,0 +1,41 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "Each PayPal alternative below carries its published fees, with the math on card sends, instant transfers and currency conversion.",
+   "problem": "Roadmap narration about the page itself (anti-AI meta-narration ban). Also the verdict's 'match those two answers to the table rows above' points at the page.",
+   "fix": "Delete the sentence; state a fact instead (for example the Venmo debit-card and Wise 0.23% facts already in the opener).",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "Venmo, Cash App, Zelle and Apple Cash are four United States (US) apps for sending money instead of PayPal, and Wise charges currency-based fees from 0.23% for international transfers.",
+   "problem": "Opening sentence is 29 words and chains two separate ideas with ', and' (weak-opener / clause stack); it lists names rather than answering 'what should I use instead of PayPal' in one easy read.",
+   "fix": "Split into a short answer sentence (Venmo, Cash App, Zelle, Apple Cash and Wise are the alternatives compared) and move the Wise fee into the next sentence.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "Paper check 1.50 USD.  /  a paper check costs 1.50 USD",
+   "problem": "PayPal's fee page qualifies the 1.50 USD check fee: 'Fee only applies to PayPal personal accounts without a linked PayPal Balance account'. The qualifier is dropped in the table row and the 'Still the Better Fit' section.",
+   "fix": "Add 'for personal accounts without a linked PayPal Balance account' to both mentions.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F4",
+   "quote": "(no teeup-exempt: or anchor-exempt: note recorded for this page)",
+   "problem": "GATE Tee-up and GATE Anchor require an exemption note when no tee-up / anchor is used. None exists in prompts, meta or data.",
+   "fix": "Record 'teeup-exempt: listing page, no first-person claims' and 'anchor-exempt: price listing from vendor sites, nothing proprietary' in the run notes (no page edit needed). Also the ledger has only via:hook receipts, no via:load-script entry.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F5",
+   "quote": "Who This Is Not For / What Would Change Our Answer",
+   "problem": "Both required elements render as plain <p> text, not headings, and the 'Not For' bullets open 'fits poorly' (fine) but the section sits inside the 'When PayPal Is Still the Better Fit' body. Elements are present; structure is weak.",
+   "fix": "Optional: no change needed for the gate; consider splitting into their own sections.",
+   "hard_blocker": false
+  }
+ ]
+}

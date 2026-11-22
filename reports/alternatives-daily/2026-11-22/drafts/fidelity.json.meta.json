@@ -1,0 +1,242 @@
+{
+ "slug": "fidelity",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 3195,
+ "floor": 1500,
+ "input_tokens": 37977,
+ "output_tokens": 26046,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.6728,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 1 claim(s) still unsupported after 2 pass(es) \u2014 auditor must cut or source: 'Ally falls short of Fidelity on published trading detail, since the Ally page sa'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3195,
+  "numbers_not_in_facts": [
+   "1000",
+   "12",
+   "3.5",
+   "4900",
+   "769.5",
+   "850",
+   "99.8"
+  ],
+  "fact_budget": {
+   "fact_words": 767,
+   "floor": 1500,
+   "ratio": 0.51,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    4,
+    19
+   ],
+   "applied": [
+    {
+     "id": "alternatives[1].body",
+     "quote": "The Merrill Edge fee list centers on account services.",
+     "replacement": "Merrill Edge also lists account service fees.",
+     "type": "inference",
+     "why": "SOURCE lists fees; does not characterize what the fee list centers on"
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "One futures contract opened and then closed counts as two sides, so it costs 2 x $1.50 = $3.00 plus fees.",
+     "replacement": "At $1.50 per contract per side, two sides cost 2 x $1.50 = $3.00 plus fees.",
+     "type": "unsupported",
+     "why": "SOURCE does not define what counts as a side"
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "E*TRADE runs limited-time promotions for new accounts.",
+     "replacement": "E*TRADE lists promotions on its page.",
+     "type": "unsupported",
+     "why": "SOURCE allows mentioning only that promotions change"
+    },
+    {
+     "id": "verdict",
+     "quote": "Fidelity holds the lead on $0 account fees, $0 domestic wires and $1.00 bonds with no online minimum listed.",
+     "replacement": "Fidelity lists $0 account fees, $0 domestic wires and $1.00 bonds with no online minimum listed.",
+     "type": "unsupported",
+     "why": "SOURCE gives no ranking; other brokers' account and wire fees not listed"
+    },
+    {
+     "id": "intro",
+     "quote": "The table below lists each broker's published fees, and the sections after it run the yearly math on contracts, bonds and margin balances.",
+     "replacement": "The table below lists each broker's published fees, and the sections after it run the math on contracts, bonds and margin balances.",
+     "type": "unsupported",
+     "why": "Not all examples are yearly; framing overstated."
+    },
+    {
+     "id": "rows[2].bestFit",
+     "quote": "Fits people who want a brokerage from Bank of America with $0 check writing and web bill payment",
+     "replacement": "Fits people who want $0 check writing and web bill payment",
+     "type": "unsupported",
+     "why": "SOURCE forbids stating Bank of America beyond the pricing page."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Fidelity and all seven alternatives list $0 commissions on online US stock trades, with Interactive Brokers limiting that price to IBKR Lite for US residents.",
+     "replacement": "Fidelity and the alternatives list $0 commissions on online US stock trades, with Interactive Brokers limiting that price to IBKR Lite for US residents and Ally to most US-listed securities.",
+     "type": "unsupported",
+     "why": "Ally lists no commission on most US-listed securities, not all."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Twenty secondary-market bonds cost $20.00 at Schwab and $20.00 at Fidelity, because both charge $1 a bond once the order clears Schwab's minimum.",
+     "replacement": "Twenty secondary-market bonds at $1.00 each cost $20.00 at Fidelity.",
+     "type": "inference",
+     "why": "SOURCE example gives $20 at Fidelity only; causal framing added."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Schwab falls short of Fidelity on small bond orders and on representative help.",
+     "replacement": "Schwab falls short of Fidelity on small bond orders.",
+     "type": "inference",
+     "why": "Representative-help comparison not supported; different services."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Schwab adds $25 to a broker-assisted trade, while Fidelity charges $19.95 for a representative-assisted Treasury auction order.",
+     "replacement": "",
+     "type": "inference",
+     "why": "Compares different services as like-for-like."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Merrill is part of Bank of America.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE says do not state beyond the pricing page."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Paying bills and writing checks from the account adds nothing to the yearly cost.",
+     "replacement": "",
+     "type": "inference",
+     "why": "Yearly-cost conclusion not stated in SOURCE."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Merrill Edge fits people who want a brokerage from Bank of America with $0 check writing and bill payment.",
+     "replacement": "Merrill Edge fits people who want $0 check writing and bill payment.",
+     "type": "unsupported",
+     "why": "Bank of America mention forbidden."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Other fees sit on Robinhood's fee schedule, which the homepage does not reproduce.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not say the homepage omits the schedule."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Fidelity lists bond, mutual fund, margin and wire prices on its commission page, while Robinhood's homepage points to a separate fee schedule.",
+     "replacement": "Fidelity lists bond, mutual fund, margin and wire prices, while Robinhood lists other fees on its fee schedule.",
+     "type": "unsupported",
+     "why": "Wire prices not attributed to commission page; 'separate' unsupported."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Webull falls short on leaving.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Evaluative framing."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Its $75 outgoing stock transfer is higher than the $49.95 Merrill Edge charges for a full account transfer, and the Fidelity pages checked do not list a transfer-out fee.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Comparing different transfer types."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "New-issue bonds and CDs cost $0, and secondary bonds cost $1.00 each with no online minimum listed, so a 5-bond order costs less than at Schwab or E*TRADE.",
+     "replacement": "New-issue bonds cost $0, and secondary bonds cost $1.00 each with no online minimum listed, so a 5-bond order costs less than at Schwab or E*TRADE.",
+     "type": "unsupported",
+     "why": "SOURCE lists $0 new issues only; CDs not specified."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Holding those funds past 60 days avoids that redemption fee.",
+     "replacement": "",
+     "type": "inference",
+     "why": "Advice-like consequence; edge at exactly 60 days unclear."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Fidelity fits poorly for people who want published futures or prediction market pricing, which the Fidelity pages checked do not list.",
+     "replacement": "Fidelity fits poorly for people who want published futures pricing, which the Fidelity pages checked do not list.",
+     "type": "unsupported",
+     "why": "Robinhood prediction market pricing isn't published either."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "E*TRADE and Webull list the lowest per-contract figures here, at 50 cents.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Webull lists $0 commission on other options; ranking claim unsupported."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Interactive Brokers lists the lowest margin rate here, with margin loans starting at 4.38%.",
+     "replacement": "Interactive Brokers lists margin loans starting at 4.38%.",
+     "type": "unsupported",
+     "why": "Other alternatives' margin rates not in SOURCE."
+    }
+   ],
+   "deleted_final": 18,
+   "unapplied": [
+    {
+     "quote": "Ally falls short of Fidelity on published trading detail, since the Ally page says most US-listed securities carry no commission and does not list the exceptions.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Ally omits exceptions.",
+     "replacement": "The Ally page says most US-listed securities carry no commission.",
+     "id": "alternatives[6].body",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "alternatives[6].body",
+     "quote": "Ally falls short of Fidelity on published trading detail, since the Ally page says most US-listed securities carry no commission and does not list the exceptions.",
+     "type": "unsupported",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3355
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 266.0,
+ "response_id": "msg_011ChJJQ8Fp3RoJyxcweXzgn",
+ "generated_at": "2026-11-22T16:47:01+0000"
+}

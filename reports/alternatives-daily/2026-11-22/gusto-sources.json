@@ -1,0 +1,14 @@
+{
+  "slug": "gusto",
+  "product": "Gusto",
+  "checked": "2026-11-22",
+  "sources": [
+    {"vendor": "Gusto", "role": "subject", "url": "https://www.gusto.com/product/pricing", "facts": "Simple $49/mo + $6/mo per person; Plus $80/mo + $12/mo per person; Premium $180/mo + $22/mo per person; no contracts, free setup, cancel any time; add-ons: global contractor payments, Next-Day pay $15/mo + $3/mo per person (included Plus and Premium), same-day pay $90 per payroll, instant pay $100 per payroll, Time & Attendance Plus try free then $6/mo per person, Business Compliance $85/mo per state annual contract, 401(k) pricing varies, HSA/FSA $200 annual service charge"},
+    {"vendor": "OnPay", "url": "https://onpay.com/pricing", "facts": "Payroll Essentials $49 base + $6/worker; HR $15 base + $2/worker; HR + Time Tracking $21 base + $4/worker; Time Tracking $15 base + $4/worker; W-2s, 1099s and year-end filings included; free data migration"},
+    {"vendor": "Patriot Software", "url": "https://www.patriotsoftware.com/payroll/pricing/", "facts": "Basic Payroll $17/mo + $4 per worker paid; Full Service Payroll $37/mo + $5 per worker paid; 30 days free plus 50% off for 3 months promotion; unlimited payrolls; free direct deposit"},
+    {"vendor": "Square Payroll", "url": "https://squareup.com/us/en/payroll/pricing", "facts": "Full-service payroll $35/mo + $6/mo per person paid; contractor-only $6/mo per person paid; unlimited pay runs; no commitment; paper W-2/1099 mailing $3 per form annual"},
+    {"vendor": "Justworks", "url": "https://www.justworks.com/pricing", "facts": "Payroll $8 per month per employee + $50/month base fee; PEO Basic $79 per month per employee; PEO Plus $124 per month per employee; EOR $599 per month per employee"},
+    {"vendor": "Paychex Flex", "url": "https://www.paychex.com/payroll-services", "facts": "No public price; Request Pricing / Get Your Free Quote; tiers for 1-19, 20-99, 100+ employees; WISE AI built in"},
+    {"vendor": "ADP RUN", "url": "https://www.adp.com/what-we-offer/products/run-powered-by-adp.aspx", "facts": "No public price; Get Pricing button; for businesses with 1-49 employees; direct deposit, Wisely debit card or paper check; promotion up to 6 months free payroll on switch before Nov 26 (terms apply)"}
+  ]
+}

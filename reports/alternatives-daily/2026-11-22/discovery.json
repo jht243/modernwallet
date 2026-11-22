@@ -1,0 +1,296 @@
+[
+ {
+  "vendor": "PayPal",
+  "product": "PayPal",
+  "officialUrl": "https://www.paypal.com/us/digital-wallet/paypal-consumer-fees",
+  "targetQuery": "paypal alternatives",
+  "demand": {
+   "volume": 590,
+   "kd": "0",
+   "source": "dataforseo"
+  },
+  "category": "payments",
+  "priority": 590,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Fidelity",
+  "product": "Fidelity",
+  "officialUrl": "https://www.fidelity.com",
+  "targetQuery": "fidelity alternatives",
+  "demand": {
+   "volume": 260,
+   "kd": "0",
+   "source": "dataforseo"
+  },
+  "category": "investing",
+  "priority": 260,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Gusto",
+  "product": "Gusto",
+  "officialUrl": "https://www.gusto.com/product/pricing",
+  "targetQuery": "gusto alternatives",
+  "demand": {
+   "volume": 260,
+   "kd": "0",
+   "source": "dataforseo"
+  },
+  "category": "small-business",
+  "priority": 260,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "HoneyBook",
+  "product": "HoneyBook",
+  "officialUrl": "https://www.honeybook.com/pricing",
+  "targetQuery": "honeybook alternatives",
+  "demand": {
+   "volume": 260,
+   "kd": "0",
+   "source": "dataforseo"
+  },
+  "category": "freelancer",
+  "priority": 260,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Ramp",
+  "product": "Ramp",
+  "officialUrl": "https://www.ramp.com/pricing",
+  "targetQuery": "ramp alternatives",
+  "demand": {
+   "volume": 260,
+   "kd": "0",
+   "source": "dataforseo"
+  },
+  "category": "business-cards",
+  "priority": 260,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Upstart",
+  "product": "Upstart",
+  "officialUrl": "https://www.upstart.com",
+  "targetQuery": "upstart alternatives",
+  "demand": {
+   "volume": 210,
+   "kd": "13",
+   "source": "dataforseo"
+  },
+  "category": "lending",
+  "priority": 210,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Revolut",
+  "product": "Revolut",
+  "officialUrl": "https://www.revolut.com/en-US/",
+  "targetQuery": "revolut alternatives",
+  "demand": {
+   "volume": 170,
+   "kd": "0",
+   "source": "dataforseo"
+  },
+  "category": "banking",
+  "priority": 170,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Greenlight",
+  "product": "Greenlight",
+  "officialUrl": "https://www.greenlight.com/pricing",
+  "targetQuery": "greenlight alternatives",
+  "demand": {
+   "volume": 140,
+   "kd": "0",
+   "source": "dataforseo"
+  },
+  "category": "family-banking",
+  "priority": 140,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Remitly",
+  "product": "Remitly",
+  "officialUrl": "https://www.remitly.com/us/en/pricing",
+  "targetQuery": "remitly alternatives",
+  "demand": {
+   "volume": 140,
+   "kd": "0",
+   "source": "dataforseo"
+  },
+  "category": "money-transfer",
+  "priority": 140,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Western Union",
+  "product": "Western Union",
+  "officialUrl": "https://www.westernunion.com",
+  "targetQuery": "western union alternatives",
+  "demand": {
+   "volume": 140,
+   "kd": "4",
+   "source": "dataforseo"
+  },
+  "category": "money-transfer",
+  "priority": 140,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Brex",
+  "product": "Brex",
+  "officialUrl": "https://www.brex.com/pricing",
+  "targetQuery": "brex alternatives",
+  "demand": {
+   "volume": 110,
+   "kd": "0",
+   "source": "dataforseo"
+  },
+  "category": "business-cards",
+  "priority": 110,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Charles Schwab",
+  "product": "Charles Schwab",
+  "officialUrl": "https://www.schwab.com",
+  "targetQuery": "charles schwab alternatives",
+  "demand": {
+   "volume": 110,
+   "kd": "5",
+   "source": "dataforseo"
+  },
+  "category": "investing",
+  "priority": 110,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Webull",
+  "product": "Webull",
+  "officialUrl": "https://www.webull.com/pricing",
+  "targetQuery": "webull alternatives",
+  "demand": {
+   "volume": 110,
+   "kd": "15",
+   "source": "dataforseo"
+  },
+  "category": "investing",
+  "priority": 110,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Copilot Money",
+  "product": "Copilot Money",
+  "officialUrl": "https://www.copilot.money",
+  "targetQuery": "copilot money alternatives",
+  "demand": {
+   "volume": 90,
+   "kd": "3",
+   "source": "dataforseo"
+  },
+  "category": "budgeting",
+  "priority": 90,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Vanguard",
+  "product": "Vanguard",
+  "officialUrl": "https://investor.vanguard.com",
+  "targetQuery": "vanguard alternatives",
+  "demand": {
+   "volume": 90,
+   "kd": "0",
+   "source": "dataforseo"
+  },
+  "category": "investing",
+  "priority": 90,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Xero",
+  "product": "Xero",
+  "officialUrl": "https://www.xero.com/us/pricing-plans/",
+  "targetQuery": "xero alternatives",
+  "demand": {
+   "volume": 90,
+   "kd": "3",
+   "source": "dataforseo"
+  },
+  "category": "accounting",
+  "priority": 90,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Simplifi",
+  "product": "Simplifi",
+  "officialUrl": "https://www.simplifimoney.com",
+  "targetQuery": "simplifi alternatives",
+  "demand": {
+   "volume": 50,
+   "kd": "0",
+   "source": "dataforseo"
+  },
+  "category": "budgeting",
+  "priority": 50,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Tiller",
+  "product": "Tiller",
+  "officialUrl": "https://www.tiller.com",
+  "targetQuery": "tiller alternatives",
+  "demand": {
+   "volume": 50,
+   "kd": "0",
+   "source": "dataforseo"
+  },
+  "category": "budgeting",
+  "priority": 50,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "Payoneer",
+  "product": "Payoneer",
+  "officialUrl": "https://www.payoneer.com",
+  "targetQuery": "payoneer alternatives",
+  "demand": {
+   "volume": 50,
+   "kd": "0",
+   "source": "dataforseo"
+  },
+  "category": "freelancer",
+  "priority": 50,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "LendingClub",
+  "product": "LendingClub",
+  "officialUrl": "https://www.lendingclub.com",
+  "targetQuery": "lendingclub alternatives",
+  "demand": {
+   "volume": 40,
+   "kd": "",
+   "source": "dataforseo"
+  },
+  "category": "lending",
+  "priority": 40,
+  "source": "discovery 2026-11-22"
+ },
+ {
+  "vendor": "M1 Finance",
+  "product": "M1 Finance",
+  "officialUrl": "https://www.m1.com",
+  "targetQuery": "m1 finance alternatives",
+  "demand": {
+   "volume": 40,
+   "kd": "0",
+   "source": "dataforseo"
+  },
+  "category": "investing",
+  "priority": 40,
+  "source": "discovery 2026-11-22"
+ }
+]

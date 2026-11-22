@@ -1,0 +1,55 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "The page showed a switch promotion of up to 6 months of free payroll ending November 26 (terms apply).  /  The ADP RUN page showed a switch promotion of up to 6 months of free payroll, ending November 26 and subject to terms.",
+   "problem": "Wrong date. ADP's linked offer terms (https://www.adp.com/terms/6-month-offer-terms-sbs) say the company must sign and start processing payroll by November 30, 2026. The RUN page itself shows no end date at all ('Get up to 6 months FREE payroll*'). The table row and ADP section both state November 26.",
+   "fix": "Replace with 'start processing payroll by November 30, 2026 (terms apply)' in both places, or drop the date.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "Ask the quote to show any base fee and any per-person fee as separate lines ... (sentence 41-43 and others)",
+   "problem": "monotone-rhythm: sentences 34-43 (OnPay and Patriot sections) all measure 15+ words (22,18,22,20,16,15,29,22,19,20), a 10-sentence single-band run; sentences 84-88 (Paychex section) measure [12, 11, 10, 9, 10], five within 3 words.",
+   "fix": "Vary real sentences in the OnPay/Patriot paragraphs (add a short fact sentence) and merge two of the Paychex sentences into one longer sentence.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "The worked examples on this page use a 10-person team ... every published price on this page ... the lowest payroll price on this page ... cannot be placed in the 10-person arithmetic on this page",
+   "problem": "Repeated page self-reference ('on this page') in intro, choose section, Patriot section, Paychex section and verdict; the intro paragraph 'The worked examples on this page use a 10-person team' is roadmap narration.",
+   "fix": "Replace with the subject: 'For a 10-person team, ...' and 'among these payroll providers'.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F4",
+   "quote": "46-word final sentence: 'For Gusto alternatives, the next step is to count the people paid each month, multiply that number by each per-person fee in the table, add the base fee, and request quotes ...'",
+   "problem": "Overloaded sentence (46 words, chained steps) in the closing next action; plus 35-word sentences in CHOOSE and Paychex sections.",
+   "fix": "Convert the steps to a short list or split into two sentences.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F5",
+   "quote": "Gusto cites a 4.6-star average on Capterra from 4,137 reviews and 4.6 on Software Advice.",
+   "problem": "Attribution is ambiguous on Gusto's pricing page: the '4.6 star average' labels sit under FastCompany 2025 and business.com 2025, while Capterra and Software Advice both show '4,137 reviews'. Unverifiable as written, and it is a vendor-marketing statistic, not a price or plan fact.",
+   "fix": "Delete the sentence.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F6",
+   "quote": "Patriot Software ... Full Service Payroll $37 per month plus $5 per worker paid",
+   "problem": "Patriot's pricing footnote also lists '$12/month for each additional state with Full Service Payroll' and nominal 1099 e-filing fees for Basic; omitted while the page compares multi-state payroll across vendors. Not wrong for the single-state math.",
+   "fix": "Add 'plus $12 a month per additional state' to the Patriot row.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F7",
+   "quote": "(no teeup-exempt: or anchor-exempt: note recorded for this page)",
+   "problem": "GATE Tee-up and GATE Anchor require an exemption note; none recorded. Ledger has only via:hook receipts.",
+   "fix": "Record both exempt notes in run notes (no page edit).",
+   "hard_blocker": false
+  }
+ ]
+}

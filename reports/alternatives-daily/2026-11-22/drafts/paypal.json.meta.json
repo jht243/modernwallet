@@ -1,0 +1,118 @@
+{
+ "slug": "paypal",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY",
+ "finish_reason": "STOP",
+ "words": 2835,
+ "floor": 1500,
+ "input_tokens": 37593,
+ "output_tokens": 22372,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.5978,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 2835,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 588,
+   "floor": 1500,
+   "ratio": 0.39,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    6,
+    2
+   ],
+   "applied": [
+    {
+     "id": "chooseSection.body",
+     "quote": "Three charges decide most of the cost gap between PayPal and its alternatives for personal sends.",
+     "replacement": "Three charges differ between PayPal and its alternatives for personal sends.",
+     "type": "inference",
+     "why": "SOURCE does not rank which charges drive most of the cost gap"
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "PayPal charges 2.90% plus a fixed fee on card-funded personal sends, with no fee only from a PayPal balance, the PayPal Debit Card or a bank account.",
+     "replacement": "PayPal charges 2.90% plus a fixed fee on card-funded personal sends, with no fee from a PayPal balance, the PayPal Debit Card, a bank account or an Amex Send account.",
+     "type": "contradicted",
+     "why": "SOURCE also lists Amex Send account as no fee"
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "On credit cards, the gap is small.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE makes no evaluative judgment of the gap size"
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Cash App fits people who want sending, a debit card, savings and investing in one account.",
+     "replacement": "Cash App fits people who want sending, a card, savings and investing in one account.",
+     "type": "unsupported",
+     "why": "SOURCE says Cash App Card, not that it is a debit card"
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "For those, Wise and PayPal's international personal sends are the two options among these alternatives.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "Venmo also sends to eligible non-US PayPal accounts at 5.00%"
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "PayPal publishes each of those numbers: free sends from a balance or bank, 2.90% plus a fixed fee on cards and 1.75% for an instant transfer.",
+     "replacement": "PayPal publishes its send and transfer numbers: free sends from a balance or bank, 2.90% plus a fixed fee on cards and 1.75% for an instant transfer.",
+     "type": "unsupported",
+     "why": "SOURCE lists no PayPal loading fee"
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Apple Cash fits iPhone users who send money inside Messages and want accounts for children under 18 through Apple Cash Family.",
+     "replacement": "Apple Cash fits iPhone users who send money inside Messages and want accounts for people under 18 through Apple Cash Family.",
+     "type": "inference",
+     "why": "SOURCE says under 18 accounts, not 'children'; acceptable but fine\u2014actually 'children' unsupported framing"
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "PayPal publishes every withdrawal cost on one fee page.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE doesn't say every withdrawal cost is on one page"
+    }
+   ],
+   "deleted_final": 2,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2868
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  }
+ },
+ "seconds": 224.0,
+ "response_id": "msg_011ChJJQD3o4kWk9eLUjtskQ",
+ "generated_at": "2026-11-22T16:46:21+0000"
+}

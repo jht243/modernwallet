@@ -183,6 +183,29 @@
         "www.albert.com",
         "albert.com"
       ]
+    },
+    {
+      "route": "/alternatives/paypal/",
+      "vendorHost": "paypal.com",
+      "officialHosts": [
+        "www.paypal.com",
+        "paypal.com"
+      ]
+    },
+    {
+      "route": "/alternatives/fidelity/",
+      "vendorHost": "fidelity.com",
+      "officialHosts": [
+        "www.fidelity.com"
+      ]
+    },
+    {
+      "route": "/alternatives/gusto/",
+      "vendorHost": "gusto.com",
+      "officialHosts": [
+        "www.gusto.com",
+        "gusto.com"
+      ]
     }
   ]
 }

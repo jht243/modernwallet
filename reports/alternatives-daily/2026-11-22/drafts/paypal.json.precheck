@@ -1,0 +1,130 @@
+{
+  "slug": "paypal",
+  "product": "PayPal",
+  "officialUrl": "https://www.paypal.com/us/digital-wallet/paypal-consumer-fees",
+  "title": "PayPal Alternatives 2026: Fees for Sending Money Compared",
+  "h1": "PayPal Alternatives 2026: Fees for Sending Money Compared",
+  "metaDescription": "PayPal alternatives compared: Venmo, Cash App, Zelle, Apple Cash and Wise, with published fees for sending, instant transfers and overseas payments.",
+  "published": "2026-11-22",
+  "updated": "2026-11-22",
+  "intro": "Venmo, Cash App, Zelle and Apple Cash are four United States (US) apps for sending money instead of [PayPal](https://www.paypal.com/us/digital-wallet/paypal-consumer-fees), and Wise charges currency-based fees from 0.23% for international transfers. The pick depends on whether the money moves between US bank accounts, between friends on one app, or across borders. Each PayPal alternative below carries its published fees, with the math on card sends, instant transfers and currency conversion.\n\nPayPal charges no fee to send a domestic personal payment from a PayPal balance, including the PayPal Debit Card, or from a bank account. Card-funded personal sends cost 2.90% plus a fixed fee. International personal sends add 5.00% on top of the domestic fee, with a minimum of 0.99 United States dollars (USD) and a maximum of 4.99 USD.\n\nMoving money out of PayPal is free by standard transfer to a linked bank account or debit card when no currency conversion is involved. Instant transfers cost 1.75%, with a 0.25 USD minimum and a 25.00 USD maximum. When a friend receives a different currency, PayPal applies a 4.00% currency conversion spread.\n\nFor related shortlists, see the [Venmo alternatives](/alternatives/venmo/) guide and the [Wise alternatives](/alternatives/wise/) comparison. Readers planning monthly spending can use the [how to make a budget guide](/guides/how-to-make-a-budget/), and the [comparison hub](/compare/) holds wider money app breakdowns.",
+  "tableTitle": "Published Fees for PayPal Alternatives",
+  "tableNote": "Fees and prices from each provider's own website, checked November 22, 2026. Cash App and Apple Cash do not publish fee amounts for every service on the pages checked.",
+  "tableColumns": [
+    "Product",
+    "Fees and pricing",
+    "Best fit"
+  ],
+  "rows": [
+    {
+      "product": "PayPal",
+      "pricing": "Domestic personal sends free from a PayPal balance (including the PayPal Debit Card) or a bank account. Cards 2.90% plus a fixed fee. American Express (Amex) Send account no fee. International personal sends add 5.00% (minimum 0.99 USD, maximum 4.99 USD). Receiving personal payments free without currency conversion. Standard transfer out free. Instant transfer 1.75% (minimum 0.25 USD, maximum 25.00 USD). Paper check 1.50 USD. Currency conversion spread 4.00% or 3.00%.",
+      "bestFit": "Fits people who send from a PayPal balance or bank account, and who pay for purchases or donate with no fee when no currency conversion applies",
+      "subject": true
+    },
+    {
+      "product": "Venmo",
+      "pricing": "Sends to a Venmo account or US PayPal account free from a Venmo balance, debit card or bank account. Credit card sends 3.00%. Sends to eligible non-US PayPal accounts 5.00% (minimum $0.99, maximum $4.99). Receiving personal payments free. Standard transfer to bank free. Instant transfer 1.75% (minimum $0.25, maximum $25). Check deposit in minutes 2.00% (minimum $6) for payroll or government checks and 5.00% (minimum $6) for other checks.",
+      "bestFit": "Fits people who fund personal sends with a debit card"
+    },
+    {
+      "product": "Cash App",
+      "pricing": "Cash App describes sending money as fast and free. Cash App Card has no hidden or monthly fees. Cash App Green lists up to 3.5% savings interest, free overdraft coverage up to $200 and free withdrawals from 40k in-network automated teller machines (ATMs). Instant deposit fee amounts are not listed on the pages checked.",
+      "bestFit": "Fits people who want sending, a card, savings interest, stock buying and bitcoin in one app"
+    },
+    {
+      "product": "Zelle",
+      "pricing": "Zelle says there are typically no fees for consumers to send or receive, and says to confirm with the bank or credit union. Works inside a bank or credit union app or online banking. US bank accounts only, with no international use.",
+      "bestFit": "Fits people sending between US bank accounts who want money available within minutes to an enrolled recipient"
+    },
+    {
+      "product": "Apple Cash",
+      "pricing": "No fee schedule listed on the Apple Cash page. Loads from a debit card and moves money to a bank account. Requires an Apple device. Users must be 18 and US residents, and a family organizer can set up under-18 accounts through Apple Cash Family.",
+      "bestFit": "Fits iPhone users sending money in Messages, Wallet or with Tap to Cash"
+    },
+    {
+      "product": "Wise",
+      "pricing": "No subscriptions or plans. Registering and holding money free. Sending fee varies by currency, from 0.23%, at the mid-market exchange rate with a small upfront fee. Discount once transfers exceed 25,000 USD in a month. Same-currency sends between Wise contacts free. Wise Multi-Currency Card 9 USD. ATM withdrawals free up to 250 USD a calendar month, then 1.95 USD plus 1.95%. Receiving USD wire or Swift payments 6.11 USD per payment.",
+      "bestFit": "Fits people sending money across borders at the mid-market exchange rate"
+    }
+  ],
+  "chooseSection": {
+    "heading": "How to Choose a PayPal Alternative",
+    "body": "Three charges decide most of the cost gap between PayPal and its alternatives for personal sends.\n\n- Card funding. PayPal charges 2.90% plus a fixed fee on card-funded personal sends, so $200 costs $5.80 before the fixed fee. Venmo charges no fee on debit card sends and 3.00% on credit cards, which is $6.00 on $200.\n- Instant transfers. PayPal and Venmo both charge 1.75%, with a $0.25 minimum and a $25 maximum, so moving $1,000 instantly costs $17.50 on either one. Standard transfers are free on both.\n- Currency conversion and borders. PayPal adds 5.00% to an international personal send, capped at 4.99 USD, so a $200 send overseas costs $4.99 in that fee on top of the domestic fee. A 4.00% spread applies when the friend receives a different currency, which is $4.00 on a $100 payment.\n\nTwo alternatives have eligibility limits that rule some people out. Zelle requires US bank accounts for both people and has no international use. Apple Cash requires an Apple device and US residency at 18 or older, with Apple Cash Family covering people under 18.\n\nPublished prices also differ. PayPal, Venmo and Wise list fee figures, while Cash App describes sending as free and lists no instant deposit fee amount on the pages checked. The Apple Cash page lists no fee schedule at all."
+  },
+  "alternatives": [
+    {
+      "heading": "Venmo vs PayPal Card and Instant Transfer Fees",
+      "body": "Venmo charges no fee to send money to a Venmo account or a US PayPal account from a Venmo balance, debit card or bank account. Credit card sends cost 3.00%. Sending to an eligible non-US PayPal account costs 5.00%, with a $0.99 minimum and a $4.99 maximum.\n\nReceiving personal payments on Venmo is free, though a fee applies when the sender marks the payment as goods and services. Business profiles pay 1.9% plus $0.10 to receive. Adding money through a linked bank is free.\n\nVenmo fits people who fund sends with a debit card. PayPal charges 2.90% plus a fixed fee on card-funded personal sends, with no fee only from a PayPal balance, the PayPal Debit Card or a bank account.\n\nOn credit cards, the gap is small. A $200 credit card send costs $6.00 on Venmo at 3.00%, and $5.80 plus a fixed fee on PayPal at 2.90%. Instant transfers match at 1.75% on both, with a $0.25 minimum and $25 maximum, so $1,000 costs $17.50 either way.\n\nStandard transfers from Venmo to a linked bank account are free and typically take 1 to 3 business days, or about 48 hours to an eligible debit card. Check deposits in minutes cost 2.00% (minimum $6) for payroll or government checks. Other checks cost 5.00% (minimum $6)."
+    },
+    {
+      "heading": "Cash App vs PayPal Banking Features",
+      "body": "Cash App describes sending money as fast and free, and its Cash App Card carries no hidden or monthly fees. Cash App Green adds up to 3.5% savings interest and free overdraft coverage up to $200. Green also lists free withdrawals from 40k in-network ATMs.\n\nBeyond sending, Cash App lists borrowing up to $500 with no credit check, paychecks up to 2 days early and paying over time with Afterpay. It also offers stock buying with no commission fees, bitcoin buying and selling, and free tax filing. Cash App says it has 59 million+ active accounts, and Federal Deposit Insurance Corporation (FDIC) insurance applies subject to terms.\n\nCash App fits people who want sending, a debit card, savings and investing in one account. Cash App does not list an instant deposit fee amount on the pages checked. People who need a published instant transfer price can compare PayPal and Venmo, which both list 1.75%, or $17.50 on $1,000.\n\nPayPal lists each withdrawal fee on its consumer fee page, from free standard transfers to a 1.50 USD paper check. PayPal also lists crypto buying and selling, while Cash App lists bitcoin buying and selling. Cash App fits people who value the $200 overdraft coverage and 3.5% savings interest that Green lists."
+    },
+    {
+      "heading": "Zelle vs PayPal for US Bank Transfers",
+      "body": "Zelle sends money through a bank or credit union's mobile app or online banking, using the recipient's email address or US mobile number. Money typically reaches an enrolled recipient within minutes. Zelle says there are typically no fees for consumers to send or receive, and its FAQ says to confirm this with the bank or credit union.\n\nBoth sender and recipient need US bank accounts, and Zelle has no international use. Payments cannot be reversed once the recipient is enrolled. A payment can be canceled only when the recipient has not enrolled.\n\nQualifying imposter scams may be eligible for reimbursement through the bank.\n\nZelle fits people sending between US bank accounts who want the money within minutes. Money received on PayPal moves to a bank by a free standard transfer or a 1.75% instant transfer. Moving $1,000 instantly to a bank from PayPal costs $17.50.\n\nZelle does not cover cross-border payments. For those, Wise and PayPal's international personal sends are the two options among these alternatives."
+    },
+    {
+      "heading": "Apple Cash Payments in Messages and Wallet",
+      "body": "Apple Cash sends and receives money in Messages, Wallet or with Tap to Cash, and the balance spends with Apple Pay in stores, online and in apps. Money loads from a debit card and moves out to a bank account. Green Dot Bank provides the services.\n\nApple Cash requires an Apple device and is built into iPhone. Users must be 18 and US residents. A family organizer can set up accounts for people under 18 through Apple Cash Family in Family Sharing.\n\nThe Apple Cash page lists no fee schedule, so loading, sending and bank transfer costs have no published figure to compare. PayPal publishes each of those numbers: free sends from a balance or bank, 2.90% plus a fixed fee on cards and 1.75% for an instant transfer.\n\nApple Cash fits iPhone users who send money inside Messages and want accounts for children under 18 through Apple Cash Family. People without an Apple device can compare Venmo, Cash App or Zelle instead."
+    },
+    {
+      "heading": "Wise as a PayPal Alternative for International Transfers",
+      "body": "Wise charges no subscription and has no plans, and registering and holding money are free. The sending fee varies by currency, starting at 0.23%, and Wise uses the mid-market exchange rate with a small upfront fee. Transfers above 25,000 USD in a month get a discount automatically.\n\nSame-currency sends between Wise contacts are free. The Wise Multi-Currency Card costs 9 USD, with free ATM withdrawals up to 250 USD a calendar month and 1.95 USD plus 1.95% after that. Receiving USD wire or Swift payments costs 6.11 USD per payment, while domestic non-wire payments in USD and eight other listed currencies are free.\n\nPayPal prices an international personal send at 5.00% on top of the domestic fee, capped at 4.99 USD, so a $200 send costs $4.99 in that fee. When the friend receives a different currency, PayPal also applies a 4.00% conversion spread, which is $4.00 on a $100 payment. The Wise fee starts at 0.23% and changes with the currency the recipient gets.\n\nWise fits people sending money across borders who want the mid-market exchange rate. Free same-currency sends on Wise happen between Wise contacts, so both people need Wise accounts for that free transfer."
+    }
+  ],
+  "stillBetterFit": {
+    "heading": "When PayPal Is the Better Fit",
+    "body": "PayPal fits people who pay for purchases and donate, since both are free when no currency conversion is involved. Domestic personal sends from a PayPal balance, the PayPal Debit Card, a bank account or an Amex Send account carry no fee. Receiving personal payments is also free without currency conversion.\n\nPayPal publishes every withdrawal cost on one fee page. Standard transfers to a linked bank account or debit card are free, instant transfers cost 1.75% up to a 25.00 USD maximum, and a paper check costs 1.50 USD. Instant transfers to a bank allow up to 25,000.00 USD per transaction, and card transfers allow 5,000.00 USD per transaction, per day and per week, with 15,000.00 USD per month.\n\nPayPal also lists crypto fees, from 2.20% on 1.00 to 74.99 USD down to 1.50% on 1,000.01 USD and above, with no fee to hold crypto. Venmo matches PayPal's 1.75% instant transfer rate. For people cashing out quickly, the two cost the same.\n\nWho This Is Not For\n\n- PayPal fits poorly for people who fund personal sends with a card, because cards cost 2.90% plus a fixed fee. Venmo charges nothing for debit card sends.\n- Zelle fits poorly for anyone sending abroad, since sender and recipient need US bank accounts. Wise and PayPal's international sends cover that case.\n- Zelle also fits poorly when a payment may need reversing, because payments cannot be reversed once the recipient is enrolled. PayPal and Venmo are the other domestic options with published send fees.\n- Apple Cash fits poorly for people without an Apple device, because Apple Cash requires one. Venmo lists free sends from a debit card or bank account.\n- Cash App fits poorly for people who need a published instant deposit fee before choosing, since the pages checked list none. PayPal and Venmo both list 1.75%.\n- Wise fits poorly for splitting costs with someone who has no Wise account, because its free same-currency sends are between Wise contacts. Venmo and Zelle handle domestic sends between friends.\n\nWhat Would Change Our Answer\n\n- PayPal lowering or removing the 2.90% card fee on personal sends.\n- Venmo or PayPal changing the 1.75% instant transfer rate or the $25 maximum.\n- Cash App publishing instant deposit fee amounts.\n- Zelle adding international transfers.\n- Apple publishing a fee schedule on the Apple Cash page.\n- Wise changing its 0.23% starting send fee or the 25,000 USD monthly discount threshold."
+  },
+  "verdict": "For domestic sends from a balance or bank account, PayPal and Venmo list no fee, Zelle says consumers typically pay no fees, and Cash App describes sending as free. Venmo fits people who fund sends with a debit card, Zelle fits transfers between US bank accounts, and Apple Cash fits iPhone users sending in Messages. Cash App fits people who want savings and investing in the same app.\n\nWise fits cross-border sends at the mid-market exchange rate. PayPal adds 5.00% up to 4.99 USD on international personal sends, plus a 4.00% spread when the recipient gets another currency.\n\nTo pick a PayPal alternative, write down how most sends get funded (balance, bank, debit card or credit card) and whether any cross a border, then match those two answers to the table rows above.",
+  "faqs": [
+    {
+      "question": "What is the cheapest alternative to PayPal?",
+      "answer": "No single alternative has the lowest cost for every send. PayPal and Venmo list no fee for a domestic send from a bank account, Zelle says consumers typically pay no fees, and Cash App describes sending as free. Costs differ on card funding: Venmo charges no fee for debit card sends and 3.00% for credit cards, while PayPal charges 2.90% plus a fixed fee on cards. For international sends, Wise lists fees from 0.23%, against PayPal's 5.00% capped at 4.99 USD."
+    },
+    {
+      "question": "Does PayPal charge to send money to friends and family?",
+      "answer": "No, not for domestic sends from a PayPal balance, the PayPal Debit Card or a bank account. Card-funded sends cost 2.90% plus a fixed fee. International personal sends add 5.00%, with a 0.99 USD minimum and a 4.99 USD maximum."
+    },
+    {
+      "question": "How much does PayPal charge for instant transfer?",
+      "answer": "PayPal charges 1.75% of the amount for an instant transfer to a bank or card, with a 0.25 USD minimum and a 25.00 USD maximum. Moving $1,000 instantly costs $17.50. Standard transfers to a linked bank account or debit card are free when no currency conversion is involved."
+    },
+    {
+      "question": "Is Zelle free?",
+      "answer": "Zelle says there are typically no fees for consumers to send or receive money, and its FAQ says to confirm with the bank or credit union. Both people need US bank accounts, and Zelle cannot send internationally."
+    },
+    {
+      "question": "Which PayPal alternative is best for international transfers?",
+      "answer": "Wise is the international transfer option among these alternatives, with sending fees from 0.23% that vary by currency and the mid-market exchange rate. Zelle works only between US bank accounts. PayPal charges 5.00% on international personal sends, capped at 4.99 USD, plus a 4.00% spread when the recipient gets a different currency."
+    },
+    {
+      "question": "Does Venmo charge for instant transfer?",
+      "answer": "Yes. Venmo charges 1.75% for an instant transfer, with a $0.25 minimum and a $25 maximum, the same figures PayPal lists. Standard transfers to a linked bank account are free and typically take 1 to 3 business days."
+    }
+  ],
+  "related": [
+    {
+      "label": "Venmo alternatives",
+      "href": "/alternatives/venmo/"
+    },
+    {
+      "label": "Wise alternatives",
+      "href": "/alternatives/wise/"
+    },
+    {
+      "label": "Albert alternatives",
+      "href": "/alternatives/albert/"
+    },
+    {
+      "label": "How to make a budget",
+      "href": "/guides/how-to-make-a-budget/"
+    },
+    {
+      "label": "Compare financial products",
+      "href": "/compare/"
+    }
+  ]
+}

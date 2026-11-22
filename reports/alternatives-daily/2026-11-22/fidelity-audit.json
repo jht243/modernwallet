@@ -1,0 +1,48 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "Fidelity does not publish a robo-advisor price on the pages that could be read.  /  Fidelity publishing a robo-advisor price would add a third published robo figure next to Schwab and Ally.  /  Fidelity does not publish a robo-advisor price on the pages that could be read, so Ally and Schwab are the two brokers here with published robo minimums and fees.",
+   "problem": "Contradicted by Fidelity's own site: https://www.fidelity.com/managed-accounts/fidelity-go/overview (readable today) says Fidelity Go has $0 advisory fees under $25,000 and 0.35% per year at $25,000 and above, no minimum to open and $10 minimum balance to invest. The sources file only tried the /go/overview URL (HTTP 502) and gave up. Three places state or imply Fidelity has no published robo price; the 'Not For' bullet comparing Schwab $5,000 and Ally $100 also omits the $10 Fidelity Go figure.",
+   "fix": "Add Fidelity Go ($0 advisory fee under $25,000, 0.35% a year above, $10 minimum balance) to the Fidelity row, robo paragraph, Ally section, Not-For bullet and What-Would-Change list, and delete the 'does not publish' claims.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "The table below lists each broker's published fees, and the sections after it run the math on contracts, bonds and margin balances.",
+   "problem": "Roadmap narration about the page itself (meta-narration ban); also 'Compare these five costs instead' style signposting is acceptable but this sentence is not.",
+   "fix": "Delete the sentence or replace it with a fact (for example the 4.38% vs 12.075% margin gap).",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "Fidelity lists $0 account fees and $0 commissions ... / Fidelity has no minimum ... / Account types include ... / Fidelity's margin rate builds on a base rate of 10.825% ...",
+   "problem": "monotone-rhythm: intro sentences 2-6 measure [22, 23, 22, 24, 22] words, five consecutive sentences within 3 words of each other.",
+   "fix": "Vary the real sentences (merge or shorten one into a short sentence, extend another) without padding.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F4",
+   "quote": "Fidelity charges $49.95 when no transaction fee (NTF) non-Fidelity funds are sold within 60 days of purchase.",
+   "problem": "Bullet in 'Who This Is Not For' does not name who it is not for (every other bullet starts 'Fidelity fits poorly for ...'); NTF acronym is defined only here but 'NTF' sits mid-list.",
+   "fix": "Rewrite as 'Fidelity fits poorly for people who trade no-transaction-fee funds on short holds, since non-Fidelity NTF funds charge $49.95 on redemption within 60 days.'",
+   "hard_blocker": false
+  },
+  {
+   "id": "F5",
+   "quote": "Neither Merrill Edge nor Fidelity lists a per-contract option fee, while Schwab and E*TRADE both list $0.65.",
+   "problem": "Accurate for the pages checked (commissions page says only 'Option contract fees apply'), but Fidelity links a full commission schedule PDF that was not read, so the framing that Fidelity does not publish the amount is a risk.",
+   "fix": "Keep the 'pages checked' hedge everywhere, or read the PDF and state the figure.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F6",
+   "quote": "(no teeup-exempt: or anchor-exempt: note recorded for this page)",
+   "problem": "GATE Tee-up and GATE Anchor require an exemption note; none recorded. Ledger has only via:hook receipts.",
+   "fix": "Record both exempt notes in run notes (no page edit).",
+   "hard_blocker": false
+  }
+ ]
+}

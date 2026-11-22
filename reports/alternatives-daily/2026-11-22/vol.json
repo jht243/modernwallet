@@ -1,0 +1,897 @@
+{
+ "rows": [
+  {
+   "keyword": "bench accounting alternatives",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": 0,
+   "cpc": 64.51,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "brex alternatives",
+   "volume": 110,
+   "volume_low": 110,
+   "volume_high": 110,
+   "kd": 0,
+   "cpc": 143.79,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "capital one 360 alternatives",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": "",
+   "cpc": 45.31,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "charles schwab alternatives",
+   "volume": 110,
+   "volume_low": 110,
+   "volume_high": 110,
+   "kd": 5,
+   "cpc": 50.62,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "copilot money alternatives",
+   "volume": 90,
+   "volume_low": 90,
+   "volume_high": 90,
+   "kd": 3,
+   "cpc": 7.95,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "fabric alternatives",
+   "volume": 40,
+   "volume_low": 40,
+   "volume_high": 40,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "fidelity alternatives",
+   "volume": 260,
+   "volume_low": 260,
+   "volume_high": 260,
+   "kd": 0,
+   "cpc": 10.21,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "found bank alternatives",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "",
+   "cpc": 99.78,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "gohenry alternatives",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": 13,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "goodbudget alternatives",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "greenlight alternatives",
+   "volume": 140,
+   "volume_low": 140,
+   "volume_high": 140,
+   "kd": 0,
+   "cpc": 10.02,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "gusto alternatives",
+   "volume": 260,
+   "volume_low": 260,
+   "volume_high": 260,
+   "kd": 0,
+   "cpc": 180.86,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "h&r block alternatives",
+   "volume": 30,
+   "volume_low": 30,
+   "volume_high": 30,
+   "kd": 21,
+   "cpc": 9.96,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "honeybook alternatives",
+   "volume": 260,
+   "volume_low": 260,
+   "volume_high": 260,
+   "kd": 0,
+   "cpc": 35.67,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "ibotta alternatives",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": 10,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "lemonade alternatives",
+   "volume": 40,
+   "volume_low": 40,
+   "volume_high": 40,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "lendingclub alternatives",
+   "volume": 40,
+   "volume_low": 40,
+   "volume_high": 40,
+   "kd": "",
+   "cpc": 13.9,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "m1 finance alternatives",
+   "volume": 40,
+   "volume_low": 40,
+   "volume_high": 40,
+   "kd": 0,
+   "cpc": 3.37,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "marcus alternatives",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "mint alternatives",
+   "volume": 720,
+   "volume_low": 720,
+   "volume_high": 720,
+   "kd": 5,
+   "cpc": 8.64,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "moneygram alternatives",
+   "volume": 40,
+   "volume_low": 40,
+   "volume_high": 40,
+   "kd": 12,
+   "cpc": 16.53,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "nerdwallet alternatives",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 50,
+   "kd": 0,
+   "cpc": 16.89,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "payoneer alternatives",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 50,
+   "kd": 0,
+   "cpc": 72.84,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "paypal alternatives",
+   "volume": 590,
+   "volume_low": 590,
+   "volume_high": 590,
+   "kd": 0,
+   "cpc": 21.1,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "personal capital alternatives",
+   "volume": 70,
+   "volume_low": 70,
+   "volume_high": 70,
+   "kd": 0,
+   "cpc": 5.3,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "prosper alternatives",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": 22,
+   "cpc": 20.92,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "ramp alternatives",
+   "volume": 260,
+   "volume_low": 260,
+   "volume_high": 260,
+   "kd": 0,
+   "cpc": 85.88,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "relay bank alternatives",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": "",
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 1,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "remitly alternatives",
+   "volume": 140,
+   "volume_low": 140,
+   "volume_high": 140,
+   "kd": 0,
+   "cpc": 12.99,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "revolut alternatives",
+   "volume": 170,
+   "volume_low": 170,
+   "volume_high": 170,
+   "kd": 0,
+   "cpc": 16.31,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "rocket lawyer alternatives",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 20,
+   "kd": 0,
+   "cpc": 17.52,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "simplifi alternatives",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 50,
+   "kd": 0,
+   "cpc": 11.12,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "sofi alternatives",
+   "volume": 320,
+   "volume_low": 320,
+   "volume_high": 320,
+   "kd": 6,
+   "cpc": 52.08,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "tally alternatives",
+   "volume": 40,
+   "volume_low": 40,
+   "volume_high": 40,
+   "kd": 0,
+   "cpc": 13.38,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "tiller alternatives",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 50,
+   "kd": 0,
+   "cpc": 24.07,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "turbotax alternatives",
+   "volume": 880,
+   "volume_low": 880,
+   "volume_high": 880,
+   "kd": 19,
+   "cpc": 8.97,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "upstart alternatives",
+   "volume": 210,
+   "volume_low": 210,
+   "volume_high": 210,
+   "kd": 13,
+   "cpc": 32.03,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "vanguard alternatives",
+   "volume": 90,
+   "volume_low": 90,
+   "volume_high": 90,
+   "kd": 0,
+   "cpc": 11.24,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "webull alternatives",
+   "volume": 110,
+   "volume_low": 110,
+   "volume_high": 110,
+   "kd": 15,
+   "cpc": 22.44,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "western union alternatives",
+   "volume": 140,
+   "volume_low": 140,
+   "volume_high": 140,
+   "kd": 4,
+   "cpc": 11.26,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "xero alternatives",
+   "volume": 90,
+   "volume_low": 90,
+   "volume_high": 90,
+   "kd": 3,
+   "cpc": 41.48,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "zelle alternatives",
+   "volume": 480,
+   "volume_low": 480,
+   "volume_high": 480,
+   "kd": 0,
+   "cpc": 4.07,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 9,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "zoho books alternatives",
+   "volume": 40,
+   "volume_low": 40,
+   "volume_high": 40,
+   "kd": 0,
+   "cpc": 31.07,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "everydollar alternatives",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "pocketguard alternatives",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 3 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "current bank alternatives",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "varo alternatives",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 7 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "axos bank alternatives",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 5 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "public.com alternatives",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 3 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "upgrade alternatives",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 7 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "taxact alternatives",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 1,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "freetaxusa alternatives",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 7 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "lili alternatives",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 4 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "trust & will alternatives",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 5 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 5,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "ethos life alternatives",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "nolo alternatives",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 4 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 4,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "step card alternatives",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 3 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "e*trade alternatives",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 6 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 6,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "tastytrade alternatives",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 3 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 3,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "semrush unusable (HTTP 403)",
+  "volume: using dataforseo (quality order semrush > dataforseo > ahrefs)",
+  "dataforseo returned volume for 43/59 phrases",
+  "kd: using dataforseo (quality order semrush > dataforseo > ahrefs)",
+  "No tool volume for 16 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 54/59 rows corroborated live"
+ ]
+}

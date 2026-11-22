@@ -3441,5 +3441,414 @@
         "href": "/compare/"
       }
     ]
+  },
+  {
+    "slug": "paypal",
+    "product": "PayPal",
+    "officialUrl": "https://www.paypal.com/us/digital-wallet/paypal-consumer-fees",
+    "title": "PayPal Alternatives 2026: Fees for Sending Money Compared",
+    "h1": "PayPal Alternatives 2026: Fees for Sending Money Compared",
+    "metaDescription": "PayPal alternatives compared: Venmo, Cash App, Zelle, Apple Cash and Wise, with published fees for sending, instant transfers and overseas payments.",
+    "published": "2026-11-22",
+    "updated": "2026-11-22",
+    "intro": "Venmo, Cash App, Zelle, Apple Cash and Wise are the alternatives to [PayPal](https://www.paypal.com/us/digital-wallet/paypal-consumer-fees) compared here. Four are United States (US) apps for sending money, while Wise charges currency-based fees from 0.23% for international transfers. The pick depends on whether the money moves between US bank accounts, between friends on one app, or across borders.\n\nPayPal charges no fee to send a domestic personal payment from a PayPal balance, including the PayPal Debit Card, or from a bank account. Card-funded personal sends cost 2.90% plus a fixed fee. International personal sends add 5.00% on top of the domestic fee, with a minimum of 0.99 United States dollars (USD) and a maximum of 4.99 USD.\n\nMoving money out of PayPal is free by standard transfer to a linked bank account or debit card when no currency conversion is involved. Instant transfers cost 1.75%, with a 0.25 USD minimum and a 25.00 USD maximum. When a friend receives a different currency, PayPal applies a 4.00% currency conversion spread.\n\nFor related shortlists, see the [Venmo alternatives](/alternatives/venmo/) guide and the [Wise alternatives](/alternatives/wise/) comparison. Readers planning monthly spending can use the [how to make a budget guide](/guides/how-to-make-a-budget/), and the [comparison hub](/compare/) holds wider money app breakdowns.",
+    "tableTitle": "Published Fees for PayPal Alternatives",
+    "tableNote": "Fees and prices from each provider's own website, checked November 22, 2026. Cash App and Apple Cash do not publish fee amounts for every service on the pages checked.",
+    "tableColumns": [
+      "Product",
+      "Fees and pricing",
+      "Best fit"
+    ],
+    "rows": [
+      {
+        "product": "PayPal",
+        "pricing": "Domestic personal sends free from a PayPal balance (including the PayPal Debit Card) or a bank account. Cards 2.90% plus a fixed fee. American Express (Amex) Send account no fee. International personal sends add 5.00% (minimum 0.99 USD, maximum 4.99 USD). Receiving personal payments free without currency conversion. Standard transfer out free. Instant transfer 1.75% (minimum 0.25 USD, maximum 25.00 USD). Paper check 1.50 USD (personal accounts without a linked PayPal Balance account only). Currency conversion spread 4.00% or 3.00%.",
+        "bestFit": "Fits people who send from a PayPal balance or bank account, and who pay for purchases or donate with no fee when no currency conversion applies",
+        "subject": true
+      },
+      {
+        "product": "Venmo",
+        "pricing": "Sends to a Venmo account or US PayPal account free from a Venmo balance, debit card or bank account. Credit card sends 3.00%. Sends to eligible non-US PayPal accounts 5.00% (minimum $0.99, maximum $4.99). Receiving personal payments free. Standard transfer to bank free. Instant transfer 1.75% (minimum $0.25, maximum $25). Check deposit in minutes 2.00% (minimum $6) for payroll or government checks and 5.00% (minimum $6) for other checks.",
+        "bestFit": "Fits people who fund personal sends with a debit card"
+      },
+      {
+        "product": "Cash App",
+        "pricing": "Cash App describes sending money as fast and free. Cash App Card has no hidden or monthly fees. Cash App Green lists up to 3.5% savings interest, free overdraft coverage up to $200 and free withdrawals from 40k in-network automated teller machines (ATMs). Instant deposit fee amounts are not listed on the pages checked.",
+        "bestFit": "Fits people who want sending, a card, savings interest, stock buying and bitcoin in one app"
+      },
+      {
+        "product": "Zelle",
+        "pricing": "Zelle says there are typically no fees for consumers to send or receive, and says to confirm with the bank or credit union. Works inside a bank or credit union app or online banking. US bank accounts only, with no international use.",
+        "bestFit": "Fits people sending between US bank accounts who want money available within minutes to an enrolled recipient"
+      },
+      {
+        "product": "Apple Cash",
+        "pricing": "No fee schedule listed on the Apple Cash page. Loads from a debit card and moves money to a bank account. Requires an Apple device. Users must be 18 and US residents, and a family organizer can set up under-18 accounts through Apple Cash Family.",
+        "bestFit": "Fits iPhone users sending money in Messages, Wallet or with Tap to Cash"
+      },
+      {
+        "product": "Wise",
+        "pricing": "No subscriptions or plans. Registering and holding money free. Sending fee varies by currency, from 0.23%, at the mid-market exchange rate with a small upfront fee. Discount once transfers exceed 25,000 USD in a month. Same-currency sends between Wise contacts free. Wise Multi-Currency Card 9 USD. ATM withdrawals free up to 250 USD a calendar month, then 1.95 USD plus 1.95%. Receiving USD wire or Swift payments 6.11 USD per payment.",
+        "bestFit": "Fits people sending money across borders at the mid-market exchange rate"
+      }
+    ],
+    "chooseSection": {
+      "heading": "How to Choose a PayPal Alternative",
+      "body": "Three charges differ between PayPal and its alternatives for personal sends.\n\n- Card funding. PayPal charges 2.90% plus a fixed fee on card-funded personal sends, so $200 costs $5.80 before the fixed fee. Venmo charges no fee on debit card sends and 3.00% on credit cards, which is $6.00 on $200.\n- Instant transfers. PayPal and Venmo both charge 1.75%, with a $0.25 minimum and a $25 maximum, so moving $1,000 instantly costs $17.50 on either one. Standard transfers are free on both.\n- Currency conversion and borders. PayPal adds 5.00% to an international personal send, capped at 4.99 USD, so a $200 send overseas costs $4.99 in that fee on top of the domestic fee. A 4.00% spread applies when the friend receives a different currency, which is $4.00 on a $100 payment.\n\nTwo alternatives have eligibility limits that rule some people out. Zelle requires US bank accounts for both people and has no international use. Apple Cash requires an Apple device and US residency at 18 or older, with Apple Cash Family covering people under 18.\n\nPublished prices also differ. PayPal, Venmo and Wise list fee figures, while Cash App describes sending as free and lists no instant deposit fee amount on the pages checked. The Apple Cash page lists no fee schedule at all."
+    },
+    "alternatives": [
+      {
+        "heading": "Venmo vs PayPal Card and Instant Transfer Fees",
+        "body": "Venmo charges no fee to send money to a Venmo account or a US PayPal account from a Venmo balance, debit card or bank account. Credit card sends cost 3.00%. Sending to an eligible non-US PayPal account costs 5.00%, with a $0.99 minimum and a $4.99 maximum.\n\nReceiving personal payments on Venmo is free, though a fee applies when the sender marks the payment as goods and services. Business profiles pay 1.9% plus $0.10 to receive. Adding money through a linked bank is free.\n\nVenmo fits people who fund sends with a debit card. PayPal charges 2.90% plus a fixed fee on card-funded personal sends, with no fee from a PayPal balance, the PayPal Debit Card, a bank account or an Amex Send account.\n\n A $200 credit card send costs $6.00 on Venmo at 3.00%, and $5.80 plus a fixed fee on PayPal at 2.90%. Instant transfers match at 1.75% on both, with a $0.25 minimum and $25 maximum, so $1,000 costs $17.50 either way.\n\nStandard transfers from Venmo to a linked bank account are free and typically take 1 to 3 business days, or about 48 hours to an eligible debit card. Check deposits in minutes cost 2.00% (minimum $6) for payroll or government checks. Other checks cost 5.00% (minimum $6)."
+      },
+      {
+        "heading": "Cash App vs PayPal Banking Features",
+        "body": "Cash App describes sending money as fast and free, and its Cash App Card carries no hidden or monthly fees. Cash App Green adds up to 3.5% savings interest and free overdraft coverage up to $200. Green also lists free withdrawals from 40k in-network ATMs.\n\nBeyond sending, Cash App lists borrowing up to $500 with no credit check, paychecks up to 2 days early and paying over time with Afterpay. It also offers stock buying with no commission fees, bitcoin buying and selling, and free tax filing. Cash App says it has 59 million+ active accounts, and Federal Deposit Insurance Corporation (FDIC) insurance applies subject to terms.\n\nCash App fits people who want sending, a card, savings and investing in one account. Cash App does not list an instant deposit fee amount on the pages checked. People who need a published instant transfer price can compare PayPal and Venmo, which both list 1.75%, or $17.50 on $1,000.\n\nPayPal lists each withdrawal fee on its consumer fee page, from free standard transfers to a 1.50 USD paper check. PayPal also lists crypto buying and selling, while Cash App lists bitcoin buying and selling. Cash App fits people who value the $200 overdraft coverage and 3.5% savings interest that Green lists."
+      },
+      {
+        "heading": "Zelle vs PayPal for US Bank Transfers",
+        "body": "Zelle sends money through a bank or credit union's mobile app or online banking, using the recipient's email address or US mobile number. Money typically reaches an enrolled recipient within minutes. Zelle says there are typically no fees for consumers to send or receive, and its FAQ says to confirm this with the bank or credit union.\n\nBoth sender and recipient need US bank accounts, and Zelle has no international use. Payments cannot be reversed once the recipient is enrolled. A payment can be canceled only when the recipient has not enrolled.\n\nQualifying imposter scams may be eligible for reimbursement through the bank.\n\nZelle fits people sending between US bank accounts who want the money within minutes. Money received on PayPal moves to a bank by a free standard transfer or a 1.75% instant transfer. Moving $1,000 instantly to a bank from PayPal costs $17.50.\n\nZelle does not cover cross-border payments."
+      },
+      {
+        "heading": "Apple Cash Payments in Messages and Wallet",
+        "body": "Apple Cash sends and receives money in Messages, Wallet or with Tap to Cash, and the balance spends with Apple Pay in stores, online and in apps. Money loads from a debit card and moves out to a bank account. Green Dot Bank provides the services.\n\nApple Cash requires an Apple device and is built into iPhone. Users must be 18 and US residents. A family organizer can set up accounts for people under 18 through Apple Cash Family in Family Sharing.\n\nThe Apple Cash page lists no fee schedule, so loading, sending and bank transfer costs have no published figure to compare. PayPal publishes its send and transfer numbers: free sends from a balance or bank, 2.90% plus a fixed fee on cards and 1.75% for an instant transfer.\n\nApple Cash fits iPhone users who send money inside Messages and want accounts for people under 18 through Apple Cash Family. People without an Apple device can compare Venmo, Cash App or Zelle instead."
+      },
+      {
+        "heading": "Wise as a PayPal Alternative for International Transfers",
+        "body": "Wise charges no subscription and has no plans, and registering and holding money are free. The sending fee varies by currency, starting at 0.23%, and Wise uses the mid-market exchange rate with a small upfront fee. Transfers above 25,000 USD in a month get a discount automatically.\n\nSame-currency sends between Wise contacts are free. The Wise Multi-Currency Card costs 9 USD, with free ATM withdrawals up to 250 USD a calendar month and 1.95 USD plus 1.95% after that. Receiving USD wire or Swift payments costs 6.11 USD per payment, while domestic non-wire payments in USD and eight other listed currencies are free.\n\nPayPal prices an international personal send at 5.00% on top of the domestic fee, capped at 4.99 USD, so a $200 send costs $4.99 in that fee. When the friend receives a different currency, PayPal also applies a 4.00% conversion spread, which is $4.00 on a $100 payment. The Wise fee starts at 0.23% and changes with the currency the recipient gets.\n\nWise fits people sending money across borders who want the mid-market exchange rate. Free same-currency sends on Wise happen between Wise contacts, so both people need Wise accounts for that free transfer."
+      }
+    ],
+    "stillBetterFit": {
+      "heading": "When PayPal Is Still the Better Fit",
+      "body": "PayPal fits people who pay for purchases and donate, since both are free when no currency conversion is involved. Domestic personal sends from a PayPal balance, the PayPal Debit Card, a bank account or an Amex Send account carry no fee. Receiving personal payments is also free without currency conversion.\n\n Standard transfers to a linked bank account or debit card are free, instant transfers cost 1.75% up to a 25.00 USD maximum, and a paper check costs 1.50 USD for personal accounts without a linked PayPal Balance account. Instant transfers to a bank allow up to 25,000.00 USD per transaction, and card transfers allow 5,000.00 USD per transaction, per day and per week, with 15,000.00 USD per month.\n\nPayPal also lists crypto fees, from 2.20% on 1.00 to 74.99 USD down to 1.50% on 1,000.01 USD and above, with no fee to hold crypto. Venmo matches PayPal's 1.75% instant transfer rate. For people cashing out quickly, the two cost the same.\n\nWho This Is Not For\n\n- PayPal fits poorly for people who fund personal sends with a card, because cards cost 2.90% plus a fixed fee. Venmo charges nothing for debit card sends.\n- Zelle fits poorly for anyone sending abroad, since sender and recipient need US bank accounts. Wise and PayPal's international sends cover that case.\n- Zelle also fits poorly when a payment may need reversing, because payments cannot be reversed once the recipient is enrolled. PayPal and Venmo are the other domestic options with published send fees.\n- Apple Cash fits poorly for people without an Apple device, because Apple Cash requires one. Venmo lists free sends from a debit card or bank account.\n- Cash App fits poorly for people who need a published instant deposit fee before choosing, since the pages checked list none. PayPal and Venmo both list 1.75%.\n- Wise fits poorly for splitting costs with someone who has no Wise account, because its free same-currency sends are between Wise contacts. Venmo and Zelle handle domestic sends between friends.\n\nWhat Would Change Our Answer\n\n- PayPal lowering or removing the 2.90% card fee on personal sends.\n- Venmo or PayPal changing the 1.75% instant transfer rate or the $25 maximum.\n- Cash App publishing instant deposit fee amounts.\n- Zelle adding international transfers.\n- Apple publishing a fee schedule on the Apple Cash page.\n- Wise changing its 0.23% starting send fee or the 25,000 USD monthly discount threshold."
+    },
+    "verdict": "For domestic sends from a balance or bank account, PayPal and Venmo list no fee, Zelle says consumers typically pay no fees, and Cash App describes sending as free. Venmo fits people who fund sends with a debit card, Zelle fits transfers between US bank accounts, and Apple Cash fits iPhone users sending in Messages. Cash App fits people who want savings and investing in the same app.\n\nWise fits cross-border sends at the mid-market exchange rate. PayPal adds 5.00% up to 4.99 USD on international personal sends, plus a 4.00% spread when the recipient gets another currency.\n\nTo pick a PayPal alternative, write down how most sends get funded (balance, bank, debit card or credit card) and whether any cross a border, then compare those two answers with each provider's published fees.",
+    "faqs": [
+      {
+        "question": "What is the cheapest alternative to PayPal?",
+        "answer": "No single alternative has the lowest cost for every send. PayPal and Venmo list no fee for a domestic send from a bank account, Zelle says consumers typically pay no fees, and Cash App describes sending as free. Costs differ on card funding: Venmo charges no fee for debit card sends and 3.00% for credit cards, while PayPal charges 2.90% plus a fixed fee on cards. For international sends, Wise lists fees from 0.23%, against PayPal's 5.00% capped at 4.99 USD."
+      },
+      {
+        "question": "Does PayPal charge to send money to friends and family?",
+        "answer": "No, not for domestic sends from a PayPal balance, the PayPal Debit Card or a bank account. Card-funded sends cost 2.90% plus a fixed fee. International personal sends add 5.00%, with a 0.99 USD minimum and a 4.99 USD maximum."
+      },
+      {
+        "question": "How much does PayPal charge for instant transfer?",
+        "answer": "PayPal charges 1.75% of the amount for an instant transfer to a bank or card, with a 0.25 USD minimum and a 25.00 USD maximum. Moving $1,000 instantly costs $17.50. Standard transfers to a linked bank account or debit card are free when no currency conversion is involved."
+      },
+      {
+        "question": "Is Zelle free?",
+        "answer": "Zelle says there are typically no fees for consumers to send or receive money, and its FAQ says to confirm with the bank or credit union. Both people need US bank accounts, and Zelle cannot send internationally."
+      },
+      {
+        "question": "Which PayPal alternative is best for international transfers?",
+        "answer": "Wise is the international transfer option among these alternatives, with sending fees from 0.23% that vary by currency and the mid-market exchange rate. Zelle works only between US bank accounts. PayPal charges 5.00% on international personal sends, capped at 4.99 USD, plus a 4.00% spread when the recipient gets a different currency."
+      }
+    ],
+    "related": [
+      {
+        "label": "Venmo alternatives",
+        "href": "/alternatives/venmo/"
+      },
+      {
+        "label": "Wise alternatives",
+        "href": "/alternatives/wise/"
+      },
+      {
+        "label": "Albert alternatives",
+        "href": "/alternatives/albert/"
+      },
+      {
+        "label": "How to make a budget",
+        "href": "/guides/how-to-make-a-budget/"
+      },
+      {
+        "label": "Compare financial products",
+        "href": "/compare/"
+      }
+    ]
+  },
+  {
+    "slug": "fidelity",
+    "product": "Fidelity",
+    "officialUrl": "https://www.fidelity.com/",
+    "title": "Fidelity Alternatives Compared by Fees and Margin Rates",
+    "h1": "Fidelity Alternatives Compared by Fees and Margin Rates",
+    "metaDescription": "Fidelity alternatives compared: Schwab, Merrill Edge, E*TRADE, Robinhood, Webull, Interactive Brokers and Ally Invest by option, bond and margin fees.",
+    "published": "2026-11-22",
+    "updated": "2026-11-22",
+    "intro": "Charles Schwab, Merrill Edge, E*TRADE, Robinhood, Webull, Interactive Brokers and Ally Invest are seven Fidelity alternatives for a brokerage account. Most of them also list $0 online commissions on United States (US) stocks and exchange-traded funds (ETFs), so the differences sit in option and bond fees, margin rates, minimums, transfer fees and robo-advisor pricing.\n\n[Fidelity](https://www.fidelity.com/) lists $0 account fees and $0 commissions on online US stock, ETF and option trades, with option contract fees applying on top. There is no minimum to open an account. Fractional shares of US stocks and ETFs start at $1. Account types include a brokerage account, a Roth individual retirement account (IRA), a health savings account (HSA) and a 529 account for education savings.\n\nFidelity's margin rate builds on a base rate of 10.825%, effective September 18, 2026, and a debit balance under $25,000 pays 12.075%. Secondary-market bonds cost $1.00 each online. Non-Fidelity mutual funds that carry a transaction fee cost $49.95 per purchase.\n\nFor a head-to-head view, see the [Robinhood and Fidelity comparison](/compare/robinhood-vs-fidelity/). The guide to [what brokers charge to trade](/guides/what-do-brokers-charge-to-trade/) explains each fee type, and the [Robinhood alternatives](/alternatives/robinhood/) page lists brokers compared against Robinhood. More breakdowns sit in the [comparison hub](/compare/).",
+    "tableTitle": "Fidelity Alternatives Compared by Published Fees",
+    "tableNote": "Fees and prices from each provider's own website, checked November 22, 2026. Limited-time promotions are omitted; the table shows standard online fees in US dollars.",
+    "tableColumns": [
+      "Product",
+      "Fees and pricing",
+      "Best fit"
+    ],
+    "rows": [
+      {
+        "product": "Fidelity",
+        "pricing": "$0 account fees. $0 online commissions on US stocks, ETFs and options; option contract fees apply (amount not listed on the pages checked). No minimum to open. New-issue bonds $0; secondary bonds $1.00 each ($250 maximum). Fidelity funds $0; non-Fidelity transaction-fee funds $49.95 per purchase. Margin 12.075% on debit balances of $0 to $24,999. Domestic bank wire $0.",
+        "bestFit": "Fits people who want $0 account fees, fractional shares from $1, $0 domestic wires and brokerage, Roth IRA, HSA and 529 accounts under one name",
+        "subject": true
+      },
+      {
+        "product": "Charles Schwab",
+        "pricing": "$0 online commissions on listed stocks and ETFs. Options $0.65 per contract. No account or trade minimums. Secondary bonds $1 each ($10 minimum, $250 maximum). Broker-assisted trades add $25. Schwab Intelligent Portfolios: no advisory fee, $5,000 minimum.",
+        "bestFit": "Fits people who want a published $0.65 option contract fee and a robo portfolio with no advisory fee"
+      },
+      {
+        "product": "Merrill Edge",
+        "pricing": "$0 online stock, ETF and option trades in Self-Directed accounts; options contract and other fees may apply. No minimum investment. Full account transfer $49.95; partial transfer $0. Wires $24.95. Bond coupon fee $5. Web bill payment, checkbook and unlimited check writing $0.",
+        "bestFit": "Fits people who want $0 check writing and web bill payment"
+      },
+      {
+        "product": "E*TRADE",
+        "pricing": "$0 commissions on stocks, options, mutual funds and ETFs. Options $0.65 per contract, or 50 cents with 30+ trades per quarter. Futures $1.50 per contract per side plus fees ($0.75 for E-nano Equity Index futures). Bonds $1 each ($10 minimum, $250 maximum). Crypto 0.50% of trade value.",
+        "bestFit": "Fits people who place 30 or more trades a quarter or want published futures pricing"
+      },
+      {
+        "product": "Robinhood",
+        "pricing": "24/5 commission-free stock trading. Start with $1. Robinhood Gold $5 per month. Gold members pay zero management fees on every dollar over $100K in Robinhood Strategies. Other fees sit on Robinhood's fee schedule.",
+        "bestFit": "Fits people who want futures and prediction markets alongside stocks, ETFs, crypto and options"
+      },
+      {
+        "product": "Webull",
+        "pricing": "$0 commissions on stocks, ETFs and options listed on US exchanges. $0.50 per contract on certain index options. Regulatory pass-through fees apply. No deposit minimums. Stock transfer in $0; outgoing stock transfer $75.",
+        "bestFit": "Fits people who want $0 option commissions and no deposit minimum"
+      },
+      {
+        "product": "Interactive Brokers",
+        "pricing": "IBKR Lite $0 on US stocks and ETFs (US residents only). IBKR Pro Tiered $0.0035 per share ($0.35 minimum per order, 1% of trade value maximum). IBKR Pro Fixed $0.005 per share ($1.00 minimum). No account minimums. Margin loans from 4.38%. Up to 3.38% on uninvested cash.",
+        "bestFit": "Fits people who carry a margin balance or want interest on uninvested cash"
+      },
+      {
+        "product": "Ally Invest",
+        "pricing": "Self-directed trading $0 to start, no commission fees on most US-listed securities. Robo Portfolios $100 minimum, with no advisory fee or 0.30% a year. Personal Advice from $100,000, blended annual advisory fee of at most 0.85%.",
+        "bestFit": "Fits people who want a robo portfolio from $100 with a no-advisory-fee choice"
+      }
+    ],
+    "chooseSection": {
+      "heading": "How to Choose a Fidelity Alternative",
+      "body": "Fidelity and the alternatives list $0 commissions on online US stock trades, with Interactive Brokers limiting that price to IBKR Lite for US residents and Ally to most US-listed securities. The stock commission does not separate them. Compare these five costs instead.\n\n- Option contracts. Schwab and E*TRADE list $0.65 per contract, and E*TRADE drops to 50 cents at 30 or more trades per quarter. Fidelity and Merrill Edge say contract fees apply without listing an amount on the pages checked.\n- Bonds. Fidelity charges $1.00 per secondary bond online. Schwab and E*TRADE charge $1 per bond with a $10 minimum, so a 5-bond order costs $5 at Fidelity and $10 at Schwab or E*TRADE.\n- Margin. Fidelity charges 12.075% on debit balances from $0 to $24,999. Interactive Brokers lists margin loans starting at 4.38%.\n- Minimums. Schwab, Merrill Edge, Webull and Interactive Brokers list no minimum. Ally self-directed trading starts at $0 and Robinhood at $1.\n- Moving money out. Merrill Edge charges $49.95 for a full account transfer and $24.95 per wire. Webull charges $75 for an outgoing stock transfer, and Fidelity lists $0 for a domestic bank wire.\n\nRobo pricing is the last check if a managed portfolio is part of the plan. Schwab Intelligent Portfolios charges no advisory fee with a $5,000 minimum. Ally Robo Portfolios need $100 and offer a no-advisory-fee option or 0.30% a year, while Fidelity Go, its robo-advisor, lists $0 advisory fees under $25,000 and 0.35% a year at $25,000 and above, with a $10 minimum balance to invest."
+    },
+    "alternatives": [
+      {
+        "heading": "Charles Schwab Option and Bond Fees",
+        "body": "Charles Schwab lists $0 online commissions on listed stocks and ETFs and charges $0.65 per option contract on top of a $0 base commission. Schwab has no account or trade minimums. Thousands of mutual funds in Schwab Mutual Fund OneSource carry $0 commission, and new-issue bonds and Treasuries cost $0 online.\n\nSecondary bonds, certificates of deposit (CDs) and corporate bonds cost $1 per bond online at Schwab, with a $10 minimum and a $250 maximum. Broker-assisted trades add a $25 service charge. A foreign stock bought on the US over-the-counter (OTC) market carries a $50 foreign transaction fee online.\n\nTen option contracts at $0.65 each cost $6.50 at Schwab. Twenty secondary-market bonds at $1.00 each cost $20.00 at Fidelity. The two split on a 5-bond order: $10 at Schwab against $5 at Fidelity.\n\nSchwab Intelligent Portfolios charges no advisory fee and no commissions, with a $5,000 minimum. ETF operating expenses and a cash allocation apply. Charles Schwab fits people who want a published per-contract option fee and a robo portfolio without an advisory fee.\n\nSchwab falls short of Fidelity on small bond orders."
+      },
+      {
+        "heading": "Merrill Edge Transfer and Wire Fees",
+        "body": "Merrill Edge lists $0 online stock, ETF and option trades in its Self-Directed general investing accounts, with no minimum investment. Merrill Edge says options contract and other fees may apply, but its pricing page does not give a per-contract figure. \n\nMerrill Edge also lists account service fees. A full account transfer costs $49.95, while a partial account transfer costs $0. Domestic and international wires cost $24.95 each, and the bond coupon fee is $5.\n\nWeb bill payment, a checkbook and unlimited check writing are $0 at Merrill Edge. \n\nCompare wires first. Fidelity lists $0 for a domestic bank wire, so four domestic wires a year cost $0 at Fidelity and 4 x $24.95 = $99.80 at Merrill Edge. Moving the whole account out of Merrill Edge costs $49.95, while a partial transfer costs $0.\n\nMerrill Edge fits people who want $0 check writing and bill payment. Merrill Edge falls short of Fidelity on wire fees. Neither Merrill Edge nor Fidelity lists a per-contract option fee, while Schwab and E*TRADE both list $0.65."
+      },
+      {
+        "heading": "E*TRADE Option and Futures Pricing",
+        "body": "E*TRADE lists $0 commission trades on stocks, options, mutual funds and ETFs. Option contracts cost $0.65 each, or 50 cents each with 30 or more trades per quarter. E*TRADE is from Morgan Stanley.\n\nE*TRADE also publishes futures and crypto prices, which the Fidelity pages checked do not list. Futures cost $1.50 per contract per side plus fees, and E-nano Equity Index futures cost $0.75. Crypto trades carry a commission of 0.50% of each trade's dollar value, and bonds cost $1.00 each with a $10 minimum and a $250 maximum.\n\nTen option contracts cost $6.50 at the standard rate and $5.00 at the 50-cent rate. At $1.50 per contract per side, two sides cost 2 x $1.50 = $3.00 plus fees. A $1,000 crypto purchase costs 0.50% x $1,000 = $5.00 in commission.\n\nE*TRADE lists promotions on its page. Those offers change, so the cost math here leaves them out. E*TRADE fits people who place 30 or more trades a quarter or want futures pricing on a published schedule.\n\nE*TRADE matches Schwab on bonds and falls short of Fidelity on small bond orders. Five bonds cost $10 at E*TRADE and $5 at Fidelity."
+      },
+      {
+        "heading": "Robinhood Gold Subscription Pricing",
+        "body": "Robinhood describes itself as 24/5 commission-free stock trading and investing, and an account can start with as little as $1. Robinhood offers stocks, ETFs, crypto, options, futures and prediction markets. \n\nRobinhood Gold is a subscription at $5 a month, which is 12 x $5 = $60 a year. Gold members pay zero management fees on every dollar over $100K in Robinhood Strategies, an expert-managed portfolio. Fidelity and the other six alternatives do not list a subscription on the pages checked.\n\nFidelity and Robinhood both list a $1 starting point. Robinhood uses it for opening an account, and Fidelity uses it for buying fractional shares of US stocks and ETFs.\n\nRobinhood fits people who want futures and prediction markets alongside stocks, ETFs, crypto and options. Robinhood falls short of Fidelity on published fee detail in the facts gathered here. Fidelity lists bond, mutual fund, margin and wire prices, while Robinhood lists other fees on its fee schedule.\n\nThe [Robinhood and Fidelity comparison](/compare/robinhood-vs-fidelity/) and the [Robinhood alternatives](/alternatives/robinhood/) page cover Robinhood's pricing in more detail."
+      },
+      {
+        "heading": "Webull Option Fees and Outgoing Transfers",
+        "body": "Webull lists $0 commissions for stocks, ETFs and options listed on US exchanges, with no deposit minimums. Certain index option trades carry a $0.50 per contract fee, and regulatory pass-through fees apply. Moving stock into Webull costs $0, and an outgoing stock transfer costs $75.\n\nTen contracts on one of those index options cost 10 x $0.50 = $5.00 at Webull. The same count of standard contracts costs $6.50 at Schwab, and Fidelity lists contract fees without an amount. For other options listed on US exchanges, Webull's pricing page names $0 commissions plus regulatory pass-through fees.\n\nWebull states how it earns money: stock loans, interest on free credit balances, margin interest and payment for order flow.\n\nWebull fits people who want $0 option commissions with no deposit minimum."
+      },
+      {
+        "heading": "Interactive Brokers Margin Rates and Per-Share Pricing",
+        "body": "Interactive Brokers lists margin loans starting at 4.38% and pays up to 3.38% on uninvested cash. Interactive Brokers lists no account minimums, ticket charges or platform fees on its commissions page.\n\nCommission pricing comes in two plans. IBKR Lite charges $0 on US stocks and ETFs, for US residents only. IBKR Pro Tiered charges $0.0035 per share at 300,000 shares a month or less, with a $0.35 minimum per order and a maximum of 1% of trade value.\n\nIBKR Pro Fixed charges $0.005 per share with a $1.00 minimum. A 1,000-share order costs 1,000 x $0.0035 = $3.50 on Pro Tiered and 1,000 x $0.005 = $5.00 on Pro Fixed. A 100-share order works out to $0.50 on Pro Fixed, so the $1.00 minimum applies.\n\nA $10,000 margin balance held for a year costs $1,207.50 at Fidelity's 12.075% tier and $438.00 at Interactive Brokers' 4.38% starting rate. That is a difference of $769.50 a year. The 4.38% figure is a starting rate, and other balances and currencies differ.\n\nInteractive Brokers fits people who carry a margin balance or want interest on uninvested cash. Interactive Brokers falls short of Fidelity on stock pricing outside IBKR Lite, because the Pro plans charge per share while Fidelity lists $0 online US stock commissions."
+      },
+      {
+        "heading": "Ally Invest Robo Portfolios and Personal Advice",
+        "body": "Ally Invest lists $0 to start for self-directed trading and no commission fees on most US-listed securities. Self-directed accounts cover stocks, bonds, ETFs and margin accounts.\n\nAlly Robo Portfolios need a $100 minimum. Ally offers two pricing choices: no advisory fee, or 0.30% a year in exchange for putting more of the portfolio in the market. On $10,000, the 0.30% choice costs 0.30% x $10,000 = $30 a year.\n\nAlly Personal Advice starts at $100,000 in assets under care, with a blended annual advisory fee of at most 0.85%. At $100,000, that ceiling works out to 0.85% x $100,000 = $850 a year.\n\nThe $100 Ally robo minimum is $4,900 lower than the $5,000 minimum for Schwab Intelligent Portfolios. Fidelity Go, its robo-advisor, lists $0 advisory fees under $25,000 and 0.35% a year at $25,000 and above, with a $10 minimum balance to invest. Ally and Schwab list higher minimums of $100 and $5,000. The [Wealthfront alternatives](/alternatives/wealthfront/) page compares more automated investing services.\n\nAlly Invest fits people who want a robo portfolio from $100 with a no-advisory-fee choice. Ally's page says most US-listed securities carry no commission, while Fidelity's page lists $0 for online US stock and ETF trades."
+      }
+    ],
+    "stillBetterFit": {
+      "heading": "When Fidelity Is Still the Better Fit",
+      "body": "Fidelity fits people who want $0 account fees, no minimum to open and fractional shares of US stocks and ETFs from $1. Fidelity funds trade at $0, and Treasuries cost $0 at auction and on the secondary market online. New-issue bonds cost $0, and secondary bonds cost $1.00 each with no online minimum listed, so a 5-bond order costs less than at Schwab or E*TRADE.\n\nFidelity also lists $0 for domestic bank wires, the Fidelity Account ATM fee and real-time quotes. Brokerage, Roth IRA, HSA and 529 accounts sit under one name, and the Fidelity HSA carries no account fees or minimums. To model Roth IRA contributions, the [Roth IRA calculator](/investing/roth-ira-calculator/) runs the numbers.\n\nFidelity's margin tiers drop as the balance grows: 11.575% from $25,000 to $49,999, 10.625% from $50,000 to $99,999, 10.575% from $100,000 to $249,999 and 10.325% from $250,000 to $499,999. Fidelity describes its margin rates as 'among the most competitive in the industry'. Interactive Brokers lists a 4.38% starting rate.\n\nWho This Is Not For\n\n- Fidelity fits poorly for people carrying a margin balance under $25,000, who pay 12.075%. Interactive Brokers lists margin loans starting at 4.38%.\n- Fidelity fits poorly for people who want a published per-contract option fee, since the Fidelity pages checked list none. Schwab and E*TRADE list $0.65, and E*TRADE lists 50 cents at 30 or more trades per quarter.\n- Fidelity fits poorly for frequent buyers of non-Fidelity transaction-fee mutual funds, at $49.95 per purchase and up to $100 on some funds. Schwab Mutual Fund OneSource lists $0 on thousands of funds, and E*TRADE lists $0 commission on mutual funds.\n- Fidelity fits poorly for people who trade no transaction fee (NTF) funds on short holds, since non-Fidelity NTF funds charge $49.95 when sold within 60 days of purchase.\n- Fidelity fits poorly for people who want published futures pricing, which the Fidelity pages checked do not list. E*TRADE publishes futures prices, and Robinhood offers both futures and prediction markets.\n- Schwab Intelligent Portfolios fits poorly for balances under $5,000. Ally Robo Portfolios start at $100.\n\nWhat Would Change Our Answer\n\n- Fidelity publishing an option contract fee would allow a direct comparison with the $6.50 Schwab and E*TRADE charge for 10 contracts.\n- Fidelity moving its 10.825% margin base rate, or Interactive Brokers raising its 4.38% starting rate, would change the $769.50 yearly gap on a $10,000 balance.\n- Fidelity changing the $0 advisory fee under $25,000 or the 0.35% rate on Fidelity Go.\n- E*TRADE changing its threshold of 30 trades per quarter for 50-cent contracts.\n- Robinhood changing the $5 monthly Gold price.\n- Merrill Edge or Webull changing their $49.95 and $75 transfer-out fees."
+    },
+    "verdict": "Fidelity alternatives match Fidelity on online US stock commissions and part ways on the fees around them. Interactive Brokers lists margin loans from 4.38%, against 12.075% at Fidelity on balances under $25,000. E*TRADE lists 50 cents per option contract at 30 or more trades a quarter, and Ally Invest opens a robo portfolio at $100.\n\nCharles Schwab pairs a $0.65 contract fee with a no-advisory-fee robo portfolio. Merrill Edge adds $0 check writing and bill payment, Webull lists $0 option commissions with no deposit minimum, and Robinhood sells Gold at $5 a month. Fidelity lists $0 account fees, $0 domestic wires and $1.00 bonds with no online minimum listed.\n\nFor Fidelity alternatives, the concrete next step is to write down your yearly option contracts, bond orders and average margin balance, then price each one against the matching row in the table above.",
+    "faqs": [
+      {
+        "question": "Does Fidelity charge account fees?",
+        "answer": "No. Fidelity's homepage lists $0 account fees and $0 commissions on online US stock and ETF trades. Fees apply elsewhere, such as option contract fees and $49.95 per purchase on non-Fidelity transaction-fee mutual funds."
+      },
+      {
+        "question": "Does Fidelity charge commissions on stocks?",
+        "answer": "No. Fidelity lists $0 commissions for online US stock, ETF and option trades, and fractional shares start at $1. Option contract fees apply on top, though buy-to-close orders of $0.65 or less are $0."
+      },
+      {
+        "question": "What is the cheapest broker for options contracts?",
+        "answer": "E*TRADE charges 50 cents with 30 or more trades per quarter, and Webull charges $0.50 on certain index options with $0 commissions on other US-listed options. Schwab and standard E*TRADE pricing list $0.65, while Fidelity and Merrill Edge say contract fees apply without listing an amount."
+      },
+      {
+        "question": "Which Fidelity alternative has the lowest margin rate?",
+        "answer": "Interactive Brokers lists margin loans starting at 4.38%. Fidelity charges 12.075% on debit balances from $0 to $24,999. A $10,000 balance held for a year costs $1,207.50 at Fidelity and $438.00 at the Interactive Brokers starting rate."
+      },
+      {
+        "question": "Which Fidelity alternative has no minimum to open an account?",
+        "answer": "Charles Schwab, Merrill Edge, Webull and Interactive Brokers list no minimum. Ally Invest self-directed trading lists $0 to start, and Robinhood starts at $1. Fidelity also lists no minimum to open an account."
+      }
+    ],
+    "related": [
+      {
+        "label": "Robinhood and Fidelity comparison",
+        "href": "/compare/robinhood-vs-fidelity/"
+      },
+      {
+        "label": "What brokers charge to trade",
+        "href": "/guides/what-do-brokers-charge-to-trade/"
+      },
+      {
+        "label": "Robinhood alternatives",
+        "href": "/alternatives/robinhood/"
+      },
+      {
+        "label": "Wealthfront alternatives",
+        "href": "/alternatives/wealthfront/"
+      },
+      {
+        "label": "Roth IRA calculator",
+        "href": "/investing/roth-ira-calculator/"
+      },
+      {
+        "label": "Comparison hub",
+        "href": "/compare/"
+      }
+    ]
+  },
+  {
+    "slug": "gusto",
+    "product": "Gusto",
+    "officialUrl": "https://www.gusto.com/product/pricing",
+    "title": "Gusto Alternatives Compared by Published Payroll Price",
+    "h1": "Gusto Alternatives Compared by Published Payroll Price",
+    "metaDescription": "Gusto alternatives compared: OnPay, Patriot Software, Square Payroll, Justworks, Paychex Flex and ADP RUN, with base fees and per-person prices.",
+    "published": "2026-11-22",
+    "updated": "2026-11-22",
+    "intro": "OnPay, Patriot Software and Square Payroll are three Gusto alternatives with published per-person payroll prices, and Justworks adds a professional employer organization (PEO) route. Paychex Flex and ADP RUN publish no price and quote on request. The right pick depends on whether a business wants a lower base fee, a point-of-sale tie-in, bundled human resources (HR) tools or a quote-based provider with phone support.\n\n[Gusto](https://www.gusto.com/product/pricing) prices payroll as a monthly base fee plus a fee for each person paid. Simple costs $49 a month plus $6 per person, Plus costs $80 plus $12, and Premium costs $180 plus $22. Gusto lists no contracts and free account setup, and says a business can switch or cancel anytime.\n\nEach worked example uses a 10-person team, so both the base fee and the per-person fee show up in each total. Tax, add-ons and promotions are left out of that arithmetic.\n\nRelated guides cover bookkeeping and accounting tools. For those, see the [best bookkeeping services for small businesses](/roundup/best-bookkeeping-services-for-small-businesses/) roundup, the [best accounting software for freelancers](/roundup/best-accounting-software-for-freelancers/) list, and the [QuickBooks alternatives](/alternatives/quickbooks/), [FreshBooks alternatives](/alternatives/freshbooks/) and [Wave alternatives](/alternatives/wave/) guides. The [comparison hub](/compare/) collects more software breakdowns.",
+    "tableTitle": "Gusto Alternatives: Published Payroll Prices Compared",
+    "tableNote": "Fees and prices from each provider's own website, checked November 22, 2026. Regular monthly list prices in US dollars; promotions, tax and optional add-ons are excluded unless named in the row.",
+    "tableColumns": [
+      "Product",
+      "Fees and pricing",
+      "Best fit"
+    ],
+    "rows": [
+      {
+        "product": "Gusto",
+        "pricing": "Simple $49 per month plus $6 per person. Plus $80 per month plus $12 per person. Premium $180 per month plus $22 per person. Next-Day pay add-on $15 per month plus $3 per person (included in Plus and Premium). Same-day pay $90 per payroll and instant pay $100 per payroll (both included in Premium). Global contractor payments $5 per payment to US-based bank accounts. Gusto Business Compliance $85 per month per state on an annual contract (included in Premium).",
+        "bestFit": "Fits businesses that want payroll, benefits and HR tools on one account, with multi-state payroll starting on the Plus plan",
+        "subject": true
+      },
+      {
+        "product": "OnPay",
+        "pricing": "Payroll Essentials $49 base plus $6 per worker per month. HR $15 base plus $2 per worker. Time Tracking alone $15 base plus $4 per worker. HR plus Time Tracking $21 base plus $4 per worker. Bundled HR $71 base plus $1 per worker and bundled HR plus Time Tracking $81 base plus $4 per worker, with both bundles including Payroll Essentials. W-2s, 1099s and year-end filings included on all plans.",
+        "bestFit": "Fits businesses that want Gusto Simple's published price with free data migration and HR or time tracking sold as modules"
+      },
+      {
+        "product": "Patriot Software",
+        "pricing": "Basic Payroll $17 per month plus $4 per worker paid, with tax filing left to the employer. Full Service Payroll $37 per month plus $5 per worker paid, with federal, state and local tax filings included, plus $12 a month for each additional state. Time & Attendance and HR Software add-ons each $6 per month plus $2 per employee. Only the base price is charged in months with no payroll run.",
+        "bestFit": "Fits businesses that want the cheapest published payroll plan and a choice between filing payroll taxes themselves or paying for Full Service"
+      },
+      {
+        "product": "Square Payroll",
+        "pricing": "Full-service payroll $35 per month plus $6 per person paid. Contractor-only payroll $6 per month per person paid. Optional mailed paper W-2s or 1099s $3 per employee or contractor per year. Unlimited pay runs and no long-term contract.",
+        "bestFit": "Fits businesses that use Square point of sale and want timecards and tips imported into payroll"
+      },
+      {
+        "product": "Justworks",
+        "pricing": "Payroll $50 per month base fee plus $8 per employee. PEO Basic $79 per employee per month, no base fee. PEO Plus $124 per employee per month, no base fee. Employer of record (EOR) for global hiring $599 per employee per month. Workers' comp access is required for the PEO plans.",
+        "bestFit": "Fits businesses that want a PEO to share employer responsibilities, or medical, dental and vision administration on PEO Plus"
+      },
+      {
+        "product": "Paychex Flex",
+        "pricing": "No public price. Paychex Flex offers Request Pricing and a free quote, with solutions grouped for 1 to 19, 20 to 99 and 100+ employees. Paychex Flex PEO is a separate service.",
+        "bestFit": "Fits businesses that want a quoted package covering payroll, time and attendance, benefits, insurance and HR, with phone, chat or email support"
+      },
+      {
+        "product": "ADP RUN",
+        "pricing": "No public price. ADP RUN shows Get Pricing and serves businesses with 1 to 49 employees. The page showed a switch promotion of up to 6 months of free payroll for companies that start processing payroll by November 30, 2026 (terms apply).",
+        "bestFit": "Fits businesses with 1 to 49 employees that want direct deposit, Wisely debit card or paper check pay options plus hiring tools"
+      }
+    ],
+    "chooseSection": {
+      "heading": "How to Choose a Gusto Alternative",
+      "body": "Picking a Gusto alternative starts with the number of people paid each month, because every published price here includes a per-person fee. For a 10-person team, Gusto Simple costs $49 + 10 x $6 = $109 a month, or $1,308 a year. The same team costs $80 + 10 x $12 = $200 a month ($2,400 a year) on Gusto Plus and $180 + 10 x $22 = $400 a month ($4,800 a year) on Gusto Premium.\n\nAsk five questions of each plan before comparing totals.\n\n- How many people are paid each month, and what do the base fee and the per-person fee add up to?\n- Does the plan file payroll taxes? Patriot Basic Payroll leaves tax filing to the employer, while Patriot Full Service, Square full-service payroll and Gusto Simple list tax filings.\n- Does payroll run in more than one state? Gusto Simple runs basic payroll in one state, multi-state payroll starts on Gusto Plus, and Justworks Payroll also lists multi-state payroll.\n- Are contractors paid? Gusto lists domestic contractor payments on all three plans, Patriot pays contractors in payroll, Square sells contractor-only payroll and Justworks lists contractor payments.\n- Is a PEO wanted? Justworks publishes PEO prices, and Paychex Flex PEO is sold separately from Paychex Flex.\n\nPaychex Flex and ADP RUN publish no prices, so the same arithmetic works for them only once a quote arrives. If a quote comes back as a base fee plus a per-person fee, multiply the per-person fee by headcount, add the base fee and set the total beside Gusto Simple's $109 for 10 people."
+    },
+    "alternatives": [
+      {
+        "heading": "OnPay Payroll Essentials at Gusto Simple's Price",
+        "body": "OnPay Payroll Essentials costs $49 a month plus $6 per worker, the same published price as Gusto Simple. For a 10-person team, both plans come to $109 a month. OnPay includes W-2s, 1099s and year-end filings on every plan and says it has no hidden fees.\n\nOnPay sells HR and time tracking as separate modules. HR costs $15 base plus $2 per worker, and Time Tracking alone costs $15 base plus $4 per worker. HR plus Time Tracking costs $21 base plus $4 per worker.\n\nOnPay also lists two bundles that include Payroll Essentials. Bundled HR costs $71 base plus $1 per worker, and bundled HR plus Time Tracking costs $81 base plus $4 per worker.\n\nOnPay advertises white-glove setup and free data migration, so moving payroll records into OnPay carries no published fee. Benefits come with free integration and admin, and a business pays only the plan premiums for health insurance, workers' comp and 401(k). The OnPay pricing page also promotes a partner program that pays accounting firms up to $10,000 when they switch clients.\n\nOnPay fits businesses that want Gusto Simple's price with HR or time tracking added as modules. Because the two payroll plans list the same price, the comparison turns on plan contents. Gusto Simple lists unlimited payrolls, basic paid time off (PTO) policies, holiday pay and domestic contractor payments, while OnPay lists year-end filings and free data migration on all plans."
+      },
+      {
+        "heading": "Patriot Software Basic and Full Service Payroll",
+        "body": "Patriot Software publishes the lowest payroll price of these providers, with Basic Payroll at $17 a month plus $4 per worker paid. For 10 workers, Basic Payroll costs $17 + 10 x $4 = $57 a month, or $684 a year. That is $109 - $57 = $52 a month less than Gusto Simple, which adds up to $624 a year.\n\nPatriot Basic Payroll leaves tax filing to the employer. Full Service Payroll costs $37 a month plus $5 per worker paid and adds federal, state and local tax filings and deposits, plus year-end payroll tax filings at no additional fee. For 10 workers, Full Service costs $37 + 10 x $5 = $87 a month ($1,044 a year), which is $22 a month and $264 a year below Gusto Simple.\n\nPatriot lists unlimited payrolls, free direct deposit, a free employee portal, auto payroll, contractor payments inside payroll and free health benefit integration. Time & Attendance and HR Software are add-ons at $6 a month plus $2 per employee each. In any month a business runs no payroll, Patriot charges only the base price.\n\nThe Patriot page showed a promotion of 30 days free plus 50% off for 3 months, which brings Basic to $8.50 plus $2 during those months. The worked figures above use the regular price. Patriot also sells accounting software at $20 and $30 a month.\n\nPatriot Software fits businesses that want the lowest published payroll fee and can decide who files payroll taxes. A business that files its own taxes can run Basic Payroll, and a business that wants filings handled can pick Full Service at $37 plus $5."
+      },
+      {
+        "heading": "Square Payroll for Square Point of Sale Users",
+        "body": "Square Payroll's full-service plan costs $35 a month plus $6 a month per person paid. For a 10-person team, that is $35 + 10 x $6 = $95 a month, or $1,140 a year. Square full-service payroll costs $14 a month less than Gusto Simple, which is $168 a year.\n\nSquare Payroll connects with Square point of sale, so timecards and tips import straight into payroll. Square Payroll also syncs with QuickBooks Online accounting. The full-service plan lists unlimited pay runs each month, automated tax filings and simple onboarding.\n\nContractor-only payroll costs $6 a month per person paid. A business paying 10 contractors and no employees pays 10 x $6 = $60 a month. Mailed paper W-2s or 1099s are optional at an annual fee of $3 per employee or contractor.\n\nSquare lists no commitment or long-term contract on payroll. Square also lists health insurance and a 401(k) option, with no prices for either stated here.\n\nSquare Payroll fits businesses that use Square point of sale and want timecards and tips imported into payroll. A business without Square point of sale still gets the $35 plus $6 price, which sits between Patriot Full Service and Gusto Simple for 10 people."
+      },
+      {
+        "heading": "Justworks Payroll and PEO Plans",
+        "body": "Justworks sells a payroll plan at $50 a month plus $8 per employee and two PEO plans priced per employee with no base fee. For 10 employees, Justworks Payroll costs $50 + 10 x $8 = $130 a month, or $1,560 a year. That is $21 a month above Gusto Simple and $70 a month below Gusto Plus, and both Justworks Payroll and Gusto Plus list multi-state payroll.\n\nThe Justworks payroll plan lists contractor payments, off-cycle payments, tips processing, W-2 and 1099 filings and state unemployment insurance administration. It also includes payroll and HR tools, access to time tracking and expert support.\n\nA professional employer organization shares employer responsibilities with the business. Justworks PEO Basic costs $79 per employee per month, or 10 x $79 = $790 a month for 10 people. PEO Basic lists payroll, HR essentials, support and compliance, a 401(k), 24/7 support and an applicant tracking system.\n\nJustworks PEO Plus costs $124 per employee per month, or 10 x $124 = $1,240 a month for 10 people. PEO Plus adds medical, dental and vision administration, health savings account (HSA) and flexible spending account (FSA) options, and mental health and fertility benefits. Workers' comp access is required for both PEO plans.\n\nFor global hiring, the Justworks EOR service costs $599 per employee per month. Justworks fits businesses that want a PEO with published per-employee prices. A 10-person team on PEO Basic pays $790 - $400 = $390 a month more than on Gusto Premium."
+      },
+      {
+        "heading": "Paychex Flex Quote-Based Payroll",
+        "body": "Paychex Flex publishes no price, and its payroll page offers Request Pricing and a free quote instead. Paychex groups its solutions for businesses with 1 to 19, 20 to 99 and 100+ employees. Paychex Flex covers payroll, time and attendance, benefits, insurance and HR services.\n\nPaychex says payroll can run in as little as 30 seconds. WISE is the artificial intelligence (AI) built into Paychex Flex. Paychex Pre-check lets employees review their paychecks in advance.\n\nSupport for Paychex Flex runs by phone, chat or email. Paychex describes Paychex Flex as primarily designed for United States (US)-based employees and contractors. Paychex Flex PEO is a separate service from Paychex Flex.\n\nWith no published price, Paychex Flex cannot be placed in the 10-person arithmetic until a quote arrives. Ask the quote to show any base fee and any per-person fee as separate lines, so the total can be set beside Gusto Simple at $109, Gusto Plus at $200 and Gusto Premium at $400.\n\nPaychex Flex fits businesses that want one quoted package spanning payroll, benefits, insurance and HR, with phone, chat or email support. A business that wants a price before any sales contact can use the published plans from Gusto, OnPay, Patriot Software, Square Payroll or Justworks."
+      },
+      {
+        "heading": "ADP RUN for Businesses with 1 to 49 Employees",
+        "body": "ADP RUN publishes no price, and its product page shows Get Pricing in place of a rate card. ADP RUN is built for businesses with 1 to 49 employees. Employees can be paid by direct deposit, a Wisely debit card or paper check.\n\nADP RUN also covers recruiting, hiring and onboarding employees. Employees get secure mobile access to their pay and forms.\n\nThe ADP RUN page showed a switch promotion of up to 6 months of free payroll, for companies that start processing payroll by November 30, 2026, subject to terms. Because the promotion ends and no regular price is listed, the published figures give no basis for comparing ADP RUN's cost after those months.\n\nA business with 50 or more employees falls outside the range ADP RUN states. Paychex Flex groups solutions for 20 to 99 and 100+ employees, and the published per-person plans from Gusto, OnPay, Patriot Software, Square Payroll and Justworks list no headcount range.\n\nADP RUN fits businesses with 1 to 49 employees that want a Wisely debit card as a pay option alongside direct deposit and paper checks. Gusto lists direct deposits or printable checks on all three of its plans, so the Wisely card is the pay method ADP RUN lists that Gusto's pricing page does not."
+      }
+    ],
+    "stillBetterFit": {
+      "heading": "When Gusto Is Still the Better Fit",
+      "body": "Gusto fits businesses that want payroll, benefits and HR tools on one account with no contract and free setup. All three Gusto plans list direct deposits or printable checks, payroll approvals, Payroll on AutoPilot, an employee app, an employer mobile app, multiple pay rates and schedules, domestic contractor payments, and expenses and reimbursements. Gusto Simple adds unlimited payrolls, tax filings and payments, basic PTO policies and holiday pay.\n\nGusto Plus fits a mixed workforce across states. Plus adds multi-state payroll, time tracking and scheduling, unlimited next day pay and contractor invoice management, plus workforce cost reports and unlimited custom earning types. For a 10-person team, Plus costs $200 a month, which is $70 more than Justworks Payroll for the same headcount.\n\nGusto Premium adds a named advisor, Premium Account Support, HR guidance and tools, and Gusto Business Compliance, which costs $85 a month per state as an add-on. Premium also includes unlimited same-day and instant pay, project-based rules and costing, unlimited custom admin roles, and 25 invoice payments and bank transfers. Same-day pay costs $90 per payroll and instant pay costs $100 per payroll on the lower plans.\n\nGusto's global contractor payments add-on reaches more than 120 countries with no monthly per-contractor fee, and payments to US-based bank accounts cost $5 each. On benefits, the health insurance broker integration costs $6 a month per eligible employee, and HSA, FSA and commuter accounts share one $200 annual service charge. For life and disability insurance, employees pay only the premiums, with no administration fees.\n\nS corporation owners who want to pay themselves through Gusto are pointed to a Gusto Solo plan, whose price is not stated here.\n\nWho this comparison is not for:\n\n- Businesses that want a price before talking to sales fit poorly with Paychex Flex and ADP RUN, which quote on request. Gusto, OnPay, Patriot Software, Square Payroll and Justworks publish their prices.\n- Businesses that do not want to file payroll taxes fit poorly with Patriot Basic Payroll. Patriot Full Service at $37 plus $5 per worker includes federal, state and local filings.\n- Businesses running payroll in more than one state fit poorly with Gusto Simple, which runs basic payroll in one state. Gusto Plus and Justworks Payroll both list multi-state payroll.\n- Businesses with 50 or more employees fall outside ADP RUN's stated range of 1 to 49. Paychex Flex groups solutions for 20 to 99 and 100+ employees.\n- Businesses that want a PEO to share employer responsibilities fit poorly with any payroll-only plan here. Justworks PEO Basic at $79 and PEO Plus at $124 per employee are the published PEO prices, and Paychex Flex PEO is quoted separately.\n\nWhat would change our answer:\n\n- Gusto moving Simple away from $49 plus $6 per person, which would end the price match with OnPay Payroll Essentials.\n- Gusto adding multi-state payroll to Simple.\n- Patriot Software adding tax filings to Basic Payroll at $17 plus $4 per worker.\n- Paychex Flex or ADP RUN publishing a price list, which would let both enter the 10-person arithmetic.\n- Square changing full-service payroll from $35 plus $6 per person, or contractor-only payroll from $6 per person.\n- Justworks adding a base fee to its PEO plans or moving PEO Basic and PEO Plus away from $79 and $124 per employee."
+    },
+    "verdict": "Patriot Software publishes the lowest payroll price of these providers, at $57 a month for 10 workers on Basic Payroll or $87 on Full Service with tax filings included. OnPay Payroll Essentials matches Gusto Simple at $109 a month for 10 people, and Square Payroll comes in at $95 with point-of-sale timecards and tips. Justworks fits businesses that want a PEO at $79 or $124 per employee, while Paychex Flex and ADP RUN fit businesses willing to request a quote.\n\nFor Gusto alternatives, start by counting the people paid each month. Multiply that number by each per-person fee in the table and add the base fee. Request quotes from Paychex Flex or ADP RUN only if no published plan covers the payroll needed.",
+    "faqs": [
+      {
+        "question": "How much does Gusto cost per employee?",
+        "answer": "Gusto charges a monthly base fee plus a per-person fee on every plan. Simple costs $49 a month plus $6 per person, Plus costs $80 plus $12 per person, and Premium costs $180 plus $22 per person. For 10 people, that comes to $109, $200 and $400 a month."
+      },
+      {
+        "question": "What is the cheapest alternative to Gusto?",
+        "answer": "Patriot Software Basic Payroll has the lowest published price of these providers, at $17 a month plus $4 per worker, before any promotion. Basic Payroll leaves tax filing to the employer. Patriot Full Service at $37 plus $5 per worker includes tax filings, and Square full-service payroll costs $35 plus $6 per person."
+      },
+      {
+        "question": "Does OnPay cost the same as Gusto?",
+        "answer": "Yes. OnPay Payroll Essentials costs $49 a month plus $6 per worker, which matches Gusto Simple's published price. For 10 people, both plans cost $109 a month. Gusto Plus and Premium cost more, at $80 plus $12 and $180 plus $22 per person."
+      },
+      {
+        "question": "Which payroll services do not publish pricing?",
+        "answer": "Paychex Flex and ADP RUN publish no prices. Paychex Flex offers Request Pricing and a free quote, and ADP RUN shows Get Pricing. Gusto, OnPay, Patriot Software, Square Payroll and Justworks all list monthly prices on their pricing pages."
+      },
+      {
+        "question": "Can these payroll services pay contractors?",
+        "answer": "Yes, several list contractor payments. Gusto includes domestic contractor payments on all plans and sells global contractor payments in more than 120 countries at $5 per payment to US-based bank accounts. Patriot pays contractors in payroll, Square sells contractor-only payroll at $6 per person, and Justworks lists contractor payments on its payroll plan."
+      }
+    ],
+    "related": [
+      {
+        "label": "Best bookkeeping services for small businesses",
+        "href": "/roundup/best-bookkeeping-services-for-small-businesses/"
+      },
+      {
+        "label": "Best accounting software for freelancers",
+        "href": "/roundup/best-accounting-software-for-freelancers/"
+      },
+      {
+        "label": "QuickBooks alternatives",
+        "href": "/alternatives/quickbooks/"
+      },
+      {
+        "label": "Wave alternatives",
+        "href": "/alternatives/wave/"
+      },
+      {
+        "label": "Compare financial products",
+        "href": "/compare/"
+      }
+    ]
   }
 ]

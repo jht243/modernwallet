@@ -3364,6 +3364,768 @@
       "indexnow": "submitted",
       "seoUpgraded": "2026-11-18",
       "bodyWords": 2757
+    },
+    {
+      "vendor": "PayPal",
+      "product": "PayPal",
+      "officialUrl": "https://www.paypal.com/us/digital-wallet/paypal-consumer-fees",
+      "targetQuery": "paypal alternatives",
+      "demand": {
+        "volume": 590,
+        "kd": "0",
+        "source": "dataforseo"
+      },
+      "category": "payments",
+      "priority": 590,
+      "source": "discovery 2026-11-22",
+      "id": "alt-paypal-com-us-digital-wallet-paypal-consumer-fees",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-22T16:40:25+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": []
+        },
+        {
+          "at": "2026-11-22T16:40:26+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-22"
+        },
+        {
+          "at": "2026-11-22T16:46:30+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-22T16:57:30+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
+        }
+      ],
+      "status": "in_progress",
+      "updatedAt": "2026-11-22T16:46:30+00:00",
+      "claimedOn": "2026-11-22",
+      "attempts": 1,
+      "lastNextAt": "2026-11-22T16:40:26+00:00",
+      "writer": "content_gen",
+      "slug": "paypal",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Each PayPal alternative below carries its published fees, with the math on card sends, instant transfers and currency conversion.",
+            "problem": "Roadmap narration about the page itself (anti-AI meta-narration ban). Also the verdict's 'match those two answers to the table rows above' points at the page.",
+            "fix": "Delete the sentence; state a fact instead (for example the Venmo debit-card and Wise 0.23% facts already in the opener).",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Venmo, Cash App, Zelle and Apple Cash are four United States (US) apps for sending money instead of PayPal, and Wise charges currency-based fees from 0.23% for international transfers.",
+            "problem": "Opening sentence is 29 words and chains two separate ideas with ', and' (weak-opener / clause stack); it lists names rather than answering 'what should I use instead of PayPal' in one easy read.",
+            "fix": "Split into a short answer sentence (Venmo, Cash App, Zelle, Apple Cash and Wise are the alternatives compared) and move the Wise fee into the next sentence.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Paper check 1.50 USD.  /  a paper check costs 1.50 USD",
+            "problem": "PayPal's fee page qualifies the 1.50 USD check fee: 'Fee only applies to PayPal personal accounts without a linked PayPal Balance account'. The qualifier is dropped in the table row and the 'Still the Better Fit' section.",
+            "fix": "Add 'for personal accounts without a linked PayPal Balance account' to both mentions.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F4",
+            "quote": "(no teeup-exempt: or anchor-exempt: note recorded for this page)",
+            "problem": "GATE Tee-up and GATE Anchor require an exemption note when no tee-up / anchor is used. None exists in prompts, meta or data.",
+            "fix": "Record 'teeup-exempt: listing page, no first-person claims' and 'anchor-exempt: price listing from vendor sites, nothing proprietary' in the run notes (no page edit needed). Also the ledger has only via:hook receipts, no via:load-script entry.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F5",
+            "quote": "Who This Is Not For / What Would Change Our Answer",
+            "problem": "Both required elements render as plain <p> text, not headings, and the 'Not For' bullets open 'fits poorly' (fine) but the section sits inside the 'When PayPal Is Still the Better Fit' body. Elements are present; structure is weak.",
+            "fix": "Optional: no change needed for the gate; consider splitting into their own sections.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-22T16:57:30+00:00"
+      }
+    },
+    {
+      "vendor": "Fidelity",
+      "product": "Fidelity",
+      "officialUrl": "https://www.fidelity.com",
+      "targetQuery": "fidelity alternatives",
+      "demand": {
+        "volume": 260,
+        "kd": "0",
+        "source": "dataforseo"
+      },
+      "category": "investing",
+      "priority": 260,
+      "source": "discovery 2026-11-22",
+      "id": "alt-fidelity-com",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-22T16:40:26+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": []
+        },
+        {
+          "at": "2026-11-22T16:40:26+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-22"
+        },
+        {
+          "at": "2026-11-22T16:47:13+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-22T16:57:30+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
+        }
+      ],
+      "status": "in_progress",
+      "updatedAt": "2026-11-22T16:47:13+00:00",
+      "claimedOn": "2026-11-22",
+      "attempts": 1,
+      "lastNextAt": "2026-11-22T16:40:26+00:00",
+      "writer": "content_gen",
+      "slug": "fidelity",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Fidelity does not publish a robo-advisor price on the pages that could be read.  /  Fidelity publishing a robo-advisor price would add a third published robo figure next to Schwab and Ally.  /  Fidelity does not publish a robo-advisor price on the pages that could be read, so Ally and Schwab are the two brokers here with published robo minimums and fees.",
+            "problem": "Contradicted by Fidelity's own site: https://www.fidelity.com/managed-accounts/fidelity-go/overview (readable today) says Fidelity Go has $0 advisory fees under $25,000 and 0.35% per year at $25,000 and above, no minimum to open and $10 minimum balance to invest. The sources file only tried the /go/overview URL (HTTP 502) and gave up. Three places state or imply Fidelity has no published robo price; the 'Not For' bullet comparing Schwab $5,000 and Ally $100 also omits the $10 Fidelity Go figure.",
+            "fix": "Add Fidelity Go ($0 advisory fee under $25,000, 0.35% a year above, $10 minimum balance) to the Fidelity row, robo paragraph, Ally section, Not-For bullet and What-Would-Change list, and delete the 'does not publish' claims.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "The table below lists each broker's published fees, and the sections after it run the math on contracts, bonds and margin balances.",
+            "problem": "Roadmap narration about the page itself (meta-narration ban); also 'Compare these five costs instead' style signposting is acceptable but this sentence is not.",
+            "fix": "Delete the sentence or replace it with a fact (for example the 4.38% vs 12.075% margin gap).",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Fidelity lists $0 account fees and $0 commissions ... / Fidelity has no minimum ... / Account types include ... / Fidelity's margin rate builds on a base rate of 10.825% ...",
+            "problem": "monotone-rhythm: intro sentences 2-6 measure [22, 23, 22, 24, 22] words, five consecutive sentences within 3 words of each other.",
+            "fix": "Vary the real sentences (merge or shorten one into a short sentence, extend another) without padding.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "Fidelity charges $49.95 when no transaction fee (NTF) non-Fidelity funds are sold within 60 days of purchase.",
+            "problem": "Bullet in 'Who This Is Not For' does not name who it is not for (every other bullet starts 'Fidelity fits poorly for ...'); NTF acronym is defined only here but 'NTF' sits mid-list.",
+            "fix": "Rewrite as 'Fidelity fits poorly for people who trade no-transaction-fee funds on short holds, since non-Fidelity NTF funds charge $49.95 on redemption within 60 days.'",
+            "hard_blocker": false
+          },
+          {
+            "id": "F5",
+            "quote": "Neither Merrill Edge nor Fidelity lists a per-contract option fee, while Schwab and E*TRADE both list $0.65.",
+            "problem": "Accurate for the pages checked (commissions page says only 'Option contract fees apply'), but Fidelity links a full commission schedule PDF that was not read, so the framing that Fidelity does not publish the amount is a risk.",
+            "fix": "Keep the 'pages checked' hedge everywhere, or read the PDF and state the figure.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F6",
+            "quote": "(no teeup-exempt: or anchor-exempt: note recorded for this page)",
+            "problem": "GATE Tee-up and GATE Anchor require an exemption note; none recorded. Ledger has only via:hook receipts.",
+            "fix": "Record both exempt notes in run notes (no page edit).",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-22T16:57:30+00:00"
+      }
+    },
+    {
+      "vendor": "Gusto",
+      "product": "Gusto",
+      "officialUrl": "https://www.gusto.com/product/pricing",
+      "targetQuery": "gusto alternatives",
+      "demand": {
+        "volume": 260,
+        "kd": "0",
+        "source": "dataforseo"
+      },
+      "category": "small-business",
+      "priority": 260,
+      "source": "discovery 2026-11-22",
+      "id": "alt-gusto-com-product-pricing",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-22T16:40:26+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": []
+        },
+        {
+          "at": "2026-11-22T16:40:26+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-22"
+        },
+        {
+          "at": "2026-11-22T16:50:08+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-22T16:57:30+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
+        }
+      ],
+      "status": "in_progress",
+      "updatedAt": "2026-11-22T16:50:08+00:00",
+      "claimedOn": "2026-11-22",
+      "attempts": 1,
+      "lastNextAt": "2026-11-22T16:40:26+00:00",
+      "writer": "content_gen",
+      "slug": "gusto",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "The page showed a switch promotion of up to 6 months of free payroll ending November 26 (terms apply).  /  The ADP RUN page showed a switch promotion of up to 6 months of free payroll, ending November 26 and subject to terms.",
+            "problem": "Wrong date. ADP's linked offer terms (https://www.adp.com/terms/6-month-offer-terms-sbs) say the company must sign and start processing payroll by November 30, 2026. The RUN page itself shows no end date at all ('Get up to 6 months FREE payroll*'). The table row and ADP section both state November 26.",
+            "fix": "Replace with 'start processing payroll by November 30, 2026 (terms apply)' in both places, or drop the date.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Ask the quote to show any base fee and any per-person fee as separate lines ... (sentence 41-43 and others)",
+            "problem": "monotone-rhythm: sentences 34-43 (OnPay and Patriot sections) all measure 15+ words (22,18,22,20,16,15,29,22,19,20), a 10-sentence single-band run; sentences 84-88 (Paychex section) measure [12, 11, 10, 9, 10], five within 3 words.",
+            "fix": "Vary real sentences in the OnPay/Patriot paragraphs (add a short fact sentence) and merge two of the Paychex sentences into one longer sentence.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "The worked examples on this page use a 10-person team ... every published price on this page ... the lowest payroll price on this page ... cannot be placed in the 10-person arithmetic on this page",
+            "problem": "Repeated page self-reference ('on this page') in intro, choose section, Patriot section, Paychex section and verdict; the intro paragraph 'The worked examples on this page use a 10-person team' is roadmap narration.",
+            "fix": "Replace with the subject: 'For a 10-person team, ...' and 'among these payroll providers'.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "46-word final sentence: 'For Gusto alternatives, the next step is to count the people paid each month, multiply that number by each per-person fee in the table, add the base fee, and request quotes ...'",
+            "problem": "Overloaded sentence (46 words, chained steps) in the closing next action; plus 35-word sentences in CHOOSE and Paychex sections.",
+            "fix": "Convert the steps to a short list or split into two sentences.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F5",
+            "quote": "Gusto cites a 4.6-star average on Capterra from 4,137 reviews and 4.6 on Software Advice.",
+            "problem": "Attribution is ambiguous on Gusto's pricing page: the '4.6 star average' labels sit under FastCompany 2025 and business.com 2025, while Capterra and Software Advice both show '4,137 reviews'. Unverifiable as written, and it is a vendor-marketing statistic, not a price or plan fact.",
+            "fix": "Delete the sentence.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F6",
+            "quote": "Patriot Software ... Full Service Payroll $37 per month plus $5 per worker paid",
+            "problem": "Patriot's pricing footnote also lists '$12/month for each additional state with Full Service Payroll' and nominal 1099 e-filing fees for Basic; omitted while the page compares multi-state payroll across vendors. Not wrong for the single-state math.",
+            "fix": "Add 'plus $12 a month per additional state' to the Patriot row.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F7",
+            "quote": "(no teeup-exempt: or anchor-exempt: note recorded for this page)",
+            "problem": "GATE Tee-up and GATE Anchor require an exemption note; none recorded. Ledger has only via:hook receipts.",
+            "fix": "Record both exempt notes in run notes (no page edit).",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-22T16:57:30+00:00"
+      }
+    },
+    {
+      "vendor": "HoneyBook",
+      "product": "HoneyBook",
+      "officialUrl": "https://www.honeybook.com/pricing",
+      "targetQuery": "honeybook alternatives",
+      "demand": {
+        "volume": 260,
+        "kd": "0",
+        "source": "dataforseo"
+      },
+      "category": "freelancer",
+      "priority": 260,
+      "source": "discovery 2026-11-22",
+      "id": "alt-honeybook-com-pricing",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "Ramp",
+      "product": "Ramp",
+      "officialUrl": "https://www.ramp.com/pricing",
+      "targetQuery": "ramp alternatives",
+      "demand": {
+        "volume": 260,
+        "kd": "0",
+        "source": "dataforseo"
+      },
+      "category": "business-cards",
+      "priority": 260,
+      "source": "discovery 2026-11-22",
+      "id": "alt-ramp-com-pricing",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "Upstart",
+      "product": "Upstart",
+      "officialUrl": "https://www.upstart.com",
+      "targetQuery": "upstart alternatives",
+      "demand": {
+        "volume": 210,
+        "kd": "13",
+        "source": "dataforseo"
+      },
+      "category": "lending",
+      "priority": 210,
+      "source": "discovery 2026-11-22",
+      "id": "alt-upstart-com",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "Revolut",
+      "product": "Revolut",
+      "officialUrl": "https://www.revolut.com/en-US/",
+      "targetQuery": "revolut alternatives",
+      "demand": {
+        "volume": 170,
+        "kd": "0",
+        "source": "dataforseo"
+      },
+      "category": "banking",
+      "priority": 170,
+      "source": "discovery 2026-11-22",
+      "id": "alt-revolut-com-en-us",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "Greenlight",
+      "product": "Greenlight",
+      "officialUrl": "https://www.greenlight.com/pricing",
+      "targetQuery": "greenlight alternatives",
+      "demand": {
+        "volume": 140,
+        "kd": "0",
+        "source": "dataforseo"
+      },
+      "category": "family-banking",
+      "priority": 140,
+      "source": "discovery 2026-11-22",
+      "id": "alt-greenlight-com-pricing",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "Remitly",
+      "product": "Remitly",
+      "officialUrl": "https://www.remitly.com/us/en/pricing",
+      "targetQuery": "remitly alternatives",
+      "demand": {
+        "volume": 140,
+        "kd": "0",
+        "source": "dataforseo"
+      },
+      "category": "money-transfer",
+      "priority": 140,
+      "source": "discovery 2026-11-22",
+      "id": "alt-remitly-com-us-en-pricing",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "Western Union",
+      "product": "Western Union",
+      "officialUrl": "https://www.westernunion.com",
+      "targetQuery": "western union alternatives",
+      "demand": {
+        "volume": 140,
+        "kd": "4",
+        "source": "dataforseo"
+      },
+      "category": "money-transfer",
+      "priority": 140,
+      "source": "discovery 2026-11-22",
+      "id": "alt-westernunion-com",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "Brex",
+      "product": "Brex",
+      "officialUrl": "https://www.brex.com/pricing",
+      "targetQuery": "brex alternatives",
+      "demand": {
+        "volume": 110,
+        "kd": "0",
+        "source": "dataforseo"
+      },
+      "category": "business-cards",
+      "priority": 110,
+      "source": "discovery 2026-11-22",
+      "id": "alt-brex-com-pricing",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "Charles Schwab",
+      "product": "Charles Schwab",
+      "officialUrl": "https://www.schwab.com",
+      "targetQuery": "charles schwab alternatives",
+      "demand": {
+        "volume": 110,
+        "kd": "5",
+        "source": "dataforseo"
+      },
+      "category": "investing",
+      "priority": 110,
+      "source": "discovery 2026-11-22",
+      "id": "alt-schwab-com",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "Webull",
+      "product": "Webull",
+      "officialUrl": "https://www.webull.com/pricing",
+      "targetQuery": "webull alternatives",
+      "demand": {
+        "volume": 110,
+        "kd": "15",
+        "source": "dataforseo"
+      },
+      "category": "investing",
+      "priority": 110,
+      "source": "discovery 2026-11-22",
+      "id": "alt-webull-com-pricing",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "Copilot Money",
+      "product": "Copilot Money",
+      "officialUrl": "https://www.copilot.money",
+      "targetQuery": "copilot money alternatives",
+      "demand": {
+        "volume": 90,
+        "kd": "3",
+        "source": "dataforseo"
+      },
+      "category": "budgeting",
+      "priority": 90,
+      "source": "discovery 2026-11-22",
+      "id": "alt-copilot-money",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "Vanguard",
+      "product": "Vanguard",
+      "officialUrl": "https://investor.vanguard.com",
+      "targetQuery": "vanguard alternatives",
+      "demand": {
+        "volume": 90,
+        "kd": "0",
+        "source": "dataforseo"
+      },
+      "category": "investing",
+      "priority": 90,
+      "source": "discovery 2026-11-22",
+      "id": "alt-investor-vanguard-com",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "Xero",
+      "product": "Xero",
+      "officialUrl": "https://www.xero.com/us/pricing-plans/",
+      "targetQuery": "xero alternatives",
+      "demand": {
+        "volume": 90,
+        "kd": "3",
+        "source": "dataforseo"
+      },
+      "category": "accounting",
+      "priority": 90,
+      "source": "discovery 2026-11-22",
+      "id": "alt-xero-com-us-pricing-plans",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "Simplifi",
+      "product": "Simplifi",
+      "officialUrl": "https://www.simplifimoney.com",
+      "targetQuery": "simplifi alternatives",
+      "demand": {
+        "volume": 50,
+        "kd": "0",
+        "source": "dataforseo"
+      },
+      "category": "budgeting",
+      "priority": 50,
+      "source": "discovery 2026-11-22",
+      "id": "alt-simplifimoney-com",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "Tiller",
+      "product": "Tiller",
+      "officialUrl": "https://www.tiller.com",
+      "targetQuery": "tiller alternatives",
+      "demand": {
+        "volume": 50,
+        "kd": "0",
+        "source": "dataforseo"
+      },
+      "category": "budgeting",
+      "priority": 50,
+      "source": "discovery 2026-11-22",
+      "id": "alt-tiller-com",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "Payoneer",
+      "product": "Payoneer",
+      "officialUrl": "https://www.payoneer.com",
+      "targetQuery": "payoneer alternatives",
+      "demand": {
+        "volume": 50,
+        "kd": "0",
+        "source": "dataforseo"
+      },
+      "category": "freelancer",
+      "priority": 50,
+      "source": "discovery 2026-11-22",
+      "id": "alt-payoneer-com",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "LendingClub",
+      "product": "LendingClub",
+      "officialUrl": "https://www.lendingclub.com",
+      "targetQuery": "lendingclub alternatives",
+      "demand": {
+        "volume": 40,
+        "kd": "",
+        "source": "dataforseo"
+      },
+      "category": "lending",
+      "priority": 40,
+      "source": "discovery 2026-11-22",
+      "id": "alt-lendingclub-com",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
+    },
+    {
+      "vendor": "M1 Finance",
+      "product": "M1 Finance",
+      "officialUrl": "https://www.m1.com",
+      "targetQuery": "m1 finance alternatives",
+      "demand": {
+        "volume": 40,
+        "kd": "0",
+        "source": "dataforseo"
+      },
+      "category": "investing",
+      "priority": 40,
+      "source": "discovery 2026-11-22",
+      "id": "alt-m1-com",
+      "createdAt": "2026-11-22T16:39:57+00:00",
+      "history": [
+        {
+          "at": "2026-11-22T16:39:57+00:00",
+          "status": "pending",
+          "note": "added: discovery 2026-11-22"
+        }
+      ],
+      "status": "pending",
+      "updatedAt": "2026-11-22T16:39:57+00:00"
     }
   ]
 }

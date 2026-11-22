@@ -1,0 +1,18 @@
+{
+  "slug": "fidelity",
+  "product": "Fidelity",
+  "checked": "2026-11-22",
+  "sources": [
+    {"vendor": "Fidelity", "role": "subject", "url": "https://www.fidelity.com", "facts": "$0 account fees, $0 commissions on online US stock and ETF trades, fractional shares from $1, Roth IRA, HSA, 529"},
+    {"vendor": "Fidelity", "role": "subject", "url": "https://www.fidelity.com/trading/commissions-margin-rates", "facts": "$0 online US stock/ETF/option trades, option contract fees apply, no minimums to open, secondary bonds $1.00 per bond ($250 max), NTF fund redemption $49.95 if held under 60 days, TF funds $49.95 per purchase, margin base rate 10.825% since Sept 18 2026, $0-24,999 debit 12.075% effective, domestic wire $0"},
+    {"vendor": "Charles Schwab", "url": "https://www.schwab.com/pricing", "facts": "$0 online stocks/ETFs, options $0 base + $0.65 per contract, no account or trade minimums, broker-assisted $25 service charge, bonds $1 per bond ($10 min, $250 max), Intelligent Portfolios no advisory fee $5,000 minimum"},
+    {"vendor": "Merrill Edge", "url": "https://www.merrilledge.com/pricing", "facts": "$0 online stock/ETF/option trades, no minimum investment, full account transfer $49.95, domestic and international wire $24.95, bond coupon fee $5"},
+    {"vendor": "Interactive Brokers", "url": "https://www.interactivebrokers.com/en/pricing/commissions-stocks.php", "facts": "IBKR Lite $0 commissions US stocks/ETFs (US residents), Pro Tiered from USD 0.0035/share min 0.35, Pro Fixed USD 0.005/share min 1.00, max 1% of trade value, margin loans from 4.38%, interest up to 3.38% on uninvested cash, no account minimums"},
+    {"vendor": "Webull", "url": "https://www.webull.com/pricing", "facts": "$0 commissions US-listed stocks, ETFs, options; $0.50 per contract certain index options; no deposit minimums; outgoing stock transfer $75; transfer in $0"},
+    {"vendor": "E*TRADE", "url": "https://us.etrade.com/", "facts": "$0 commission stocks, ETFs, options, mutual funds; options $0.65 per contract (50 cents with 30+ trades per quarter); futures $1.50; bonds $1.00 per bond min $10 max $250; crypto 0.50%"},
+    {"vendor": "Robinhood", "url": "https://robinhood.com/us/en/", "facts": "Commission-free stock trading, start with as little as $1, Gold subscription $5/month, Gold zero management fees over $100K on Robinhood Strategies"},
+    {"vendor": "Ally Invest", "url": "https://www.ally.com/invest/", "facts": "Self-directed $0 to start, no commission on most US-listed securities; Robo Portfolios $100 minimum, no advisory fee option or 0.30% a year; Personal Advice $100,000 assets, blended fee at most 0.85%"},
+    {"vendor": "Vanguard", "url": "https://investor.vanguard.com/", "facts": "page text returned unrendered template placeholders; not used", "used": false},
+    {"vendor": "Fidelity Go", "url": "https://www.fidelity.com/go/overview", "facts": "HTTP 502; not used", "used": false}
+  ]
+}
