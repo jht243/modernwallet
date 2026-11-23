@@ -1,0 +1,136 @@
+e; genuine required customer/professional holds and platform protections remain. Competitor publication recovery begins with `competitor-handoff.py publication-plan --out NEW_INTERNAL_DIRECTORY/plan.json`, which selects the actual last per-route journal records and projects existing decisions without adding reviews. A remaining original content round is distinct from an exhausted budget. Native clients retain their scoped release rules.
+<!-- /credential-free-deployment-proof-20261110 -->
+
+For new scheduled editorial runs, use this repository’s checked-in land-run.sh mark and land commands from the start. Continue to build and compare the exact approved content live. An explicit production denial remains pending at its original boundary; never try a different release path after a denial.
+
+[Source: reports/mindmap-pass/runs/2026-11-23-comparison/preflight-write/task.json]
+{
+  "version": 1,
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "2026-11-23-comparison",
+  "producer": "main-dispatcher",
+  "routes": [
+    "/compare/bonds-vs-bond-funds",
+    "/compare/tenants-in-common-vs-joint-tenancy",
+    "/compare/ssdi-vs-ssi",
+    "/compare/stocks-vs-bonds",
+    "/compare/i-bonds-vs-tips",
+    "/guides/what-is-an-index-fund",
+    "/guides/how-to-fund-a-trust",
+    "/compare/living-trust-vs-will"
+  ],
+  "nextAction": "Execute approved Mindmap write actions, lint, and capture local rendered preview.",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/c7bf642ea97778496fd409cebca56e566f8c3dc21639309d4e3d52ac6718f6d5/approval-manifest.json",
+      "sha256": "c7bf642ea97778496fd409cebca56e566f8c3dc21639309d4e3d52ac6718f6d5",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/fb8d1d7e10a8b7ba5b5fb43f674b2db966619c68072d86de4d3e25b517737732/2026-11-23-comparison.md",
+      "sha256": "fb8d1d7e10a8b7ba5b5fb43f674b2db966619c68072d86de4d3e25b517737732",
+      "originPath": "reports/mindmap-pass/2026-11-23-comparison.md"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/db5881d31f91d244ff6d7793d6afc8bcddc6ec18a85f58c4b0c956d8298c528f/readiness.md",
+      "sha256": "db5881d31f91d244ff6d7793d6afc8bcddc6ec18a85f58c4b0c956d8298c528f",
+      "checkedAt": "2026-11-23T08:15:01.236986+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/a017307d2ab3c1199b5a175aa3a9fb1c920e53fc010fea00396a0009c01cb818/chart-review.json",
+      "sha256": "a017307d2ab3c1199b5a175aa3a9fb1c920e53fc010fea00396a0009c01cb818",
+      "checkedAt": "2026-11-23T08:15:01.236986+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/93324e15e4df9c9c78137d371103cff8463eecba7702e674a4c8cca9221b8ac5/brief.md",
+      "sha256": "93324e15e4df9c9c78137d371103cff8463eecba7702e674a4c8cca9221b8ac5",
+      "checkedAt": "2026-11-23T08:15:01.236986+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/brief.md"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/be22c192a76f7f2114553495b537d81627904d206567bea7b4ec64118bd0a8dd/coverage-lookup.txt",
+      "sha256": "be22c192a76f7f2114553495b537d81627904d206567bea7b4ec64118bd0a8dd",
+      "checkedAt": "2026-11-23T08:15:01.236986+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/4f70395595f0341b4a880d938eca5e207e14ce2f5a695efa5a5eb0eb7e64780c/keyword-volumes.json",
+      "sha256": "4f70395595f0341b4a880d938eca5e207e14ce2f5a695efa5a5eb0eb7e64780c",
+      "checkedAt": "2026-11-23T08:15:01.236986+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/keyword-volumes.json"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/c61106da76e5a9a44cb5fcfa9f5a7d33e5f17be49159d2a5fb196ca3f8e3cf66/serp.json",
+      "sha256": "c61106da76e5a9a44cb5fcfa9f5a7d33e5f17be49159d2a5fb196ca3f8e3cf66",
+      "checkedAt": "2026-11-23T08:15:01.236986+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/serp.json"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/6ae183adb299df5fb3997cc3655d76db9cdb915668491376346adae263b9abee/kw-status.json",
+      "sha256": "6ae183adb299df5fb3997cc3655d76db9cdb915668491376346adae263b9abee",
+      "checkedAt": "2026-11-23T08:15:01.236986+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/kw-status.json"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/55d3594f41a289b535c8e6dda78e7533eed4527ad8f15b295b2ff64e87aacc91/ca-civ-683.txt",
+      "sha256": "55d3594f41a289b535c8e6dda78e7533eed4527ad8f15b295b2ff64e87aacc91",
+      "checkedAt": "2026-11-23T08:15:01.236986+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ca-civ-683.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/990468eb907431af5bad776518a3e5dced834ead239adce286907aa915abe72e/cfpb-fixed-variable.txt",
+      "sha256": "990468eb907431af5bad776518a3e5dced834ead239adce286907aa915abe72e",
+      "checkedAt": "2026-11-23T08:15:01.236986+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/cfpb-fixed-variable.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/e876dd34ee271f96f3b9a65de55e73740fd9d7227f40ce8ebb52fa875c2c2564/cfpb-payday.txt",
+      "sha256": "e876dd34ee271f96f3b9a65de55e73740fd9d7227f40ce8ebb52fa875c2c2564",
+      "checkedAt": "2026-11-23T08:15:01.236986+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/cfpb-payday.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/9b36f2d1ca9e459388139f3fbd264c3362ffd02ee3cc16d831d00e66b69edde8/cfpb-sl-rates.txt",
+      "sha256": "9b36f2d1ca9e459388139f3fbd264c3362ffd02ee3cc16d831d00e66b69edde8",
+      "checkedAt": "2026-11-23T08:15:01.236986+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/cfpb-sl-rates.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/651029130cac86d68abc228c1800365bc59e9b83c4bd0d6bc53372d6110e51ae/cfpb-student.txt",
+      "sha256": "651029130cac86d68abc228c1800365bc59e9b83c4bd0d6bc53372d6110e51ae",
+      "checkedAt": "2026-11-23T08:15:01.236986+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/cfpb-student.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/61a1fbc6be94c21e01d8dd5e439ae9fba3521a0ad41474f3620d1e8a43a0af88/ecfr-20-404-130.txt",
+      "sha256": "61a1fbc6be94c21e01d8dd5e439ae9fba3521a0ad41474f3620d1e8a43a0af88",
+      "checkedAt": "2026-11-23T08:15:01.236986+00:00",
+      "refre

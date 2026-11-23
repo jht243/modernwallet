@@ -1,0 +1,12 @@
+{
+  "generated": [
+    "full"
+  ],
+  "jobId": "2026-11-23-comparison",
+  "previousJobs": [],
+  "repairs": [
+    "119c3c3602c84651c0ac430e90fc4152dec6328fdf1d9b55aa37dea6c098020b"
+  ],
+  "route": "/compare/bonds-vs-bond-funds",
+  "updatedAt": "2026-11-23T09:06:30Z"
+}

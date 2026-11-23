@@ -1,0 +1,236 @@
+URL: https://www.finra.org/investors/investing/investment-products/bonds
+Retrieved (UTC): 2026-11-23T08:08:07Z
+HTTP: 200
+
+Bonds | FINRA.org
+ Skip to main content
+ EXPLORE THIS SECTION
+ FINRA Main Navigation
+ Investor Insights
+ Tools & Calculators
+ Investing
+ Investing Basics
+ Investment Accounts
+ Investment Products
+ Investment Strategies
+ Working With an Investment Professional
+ Protect Your Money
+ Check Registration
+ Avoid Fraud
+ Watch for Red Flags
+ Safeguard Your Identity
+ Financial Industry Investor Resources
+ For the Military
+ Need Help?
+ Investment Products
+ Bonds
+ Overview
+ Types
+ Buying and Selling
+ Risks
+ Key Terms
+ Learn More
+ ESSENTIALS
+Bonds and bond funds can help diversify your portfolio.
+Bond prices fluctuate, although they tend to be less volatile than stocks.
+Some bonds, particularly U.S. Treasury securities, come with relatively lower risks and can help preserve capital and potentially generate income.
+When interest rates rise, bond prices tend to fall, and vice versa.
+FINRA’s Fixed Income Data offers an easy way to find bond facts, including real-time data on corporate and agency bonds and important educational information.
+Debt securities, also known as fixed income securities, are financial instruments that have defined terms between a borrower (the issuer) and a lender (the investor). Bonds, issued by a corporation, government, federal agency or other organization to raise capital, are a common type of debt security in which the borrower agrees to pay interest in exchange for the capital raised.
+The vast majority of bonds have a maturity date that’s set when the bond is issued. On a bond’s maturity date, the borrower fulfills its debt obligation by paying bond holders the final interest payment and the bond’s face value, called par value.
+Generally, a bond that matures in one to three years is referred to as a short-term bond. Medium- or intermediate-term bonds are generally those that mature in four to 10 years, and long-term bonds are those with maturities greater than 10 years. Not all bonds reach maturity. Callable bonds, which allow the issuer to retire a bond before it matures, are common.
+A bond’s coupon—or annual interest—is generally paid out semiannually. The coupon is set at issuance and tied to a bond's face or par value. It’s quoted as a percentage of par. For instance, a bond with a par value of $1,000 and an annual interest rate of 4.5 percent has a coupon rate of 4.5 percent ($45). An investor in a bond with a $45 annual coupon that pays interest semiannually can expect to receive a $22.50 interest payment twice per year.
+Bottom Line
+Bonds and bond funds can be an important component of a diversified investment portfolio. They can be helpful for anyone concerned about capital preservation and income generation and can help partially offset the risks that come with equity investing. But like all investments, they also carry an element of risk.
+Performing due diligence can help you assess the many characteristics that are associated with these fixed-income securities and evaluate overall suitability with your investing needs.
+ Bonds are issued by many different entities, from the U.S. government, cities and corporations to international bodies. Some bonds, such as mortgage-backed securities (MBSs), can be issued by financial institutions. Thousands of bonds are issued each year and, even though bonds may share the same issuer, it’s a pretty good bet that each bond is unique. Most bonds are fixed income securities, meaning they provide fixed interest payments until the bond matures and the bond’s principal is returned to the investor.
+FINRA provides comprehensive, real-time access to fixed income security and trade information for many types of bonds listed below. Data is compiled from multiple sources and collected through TRACE (Trade Reporting and Compliance Engine), the facility for mandatory reporting of over-the-counter transactions in eligible fixed income securities.
+Here are some of the most common types of bonds.
+Corporate Bonds
+Companies issue corporate bonds to raise money for capital expenditures, operations and acquisitions. Corporates are issued by all types of businesses and are segmented into major industry groups.
+When you buy a corporate bond, you receive the equivalent of an IOU from the issuer. While you don’t receive any ownership rights in the company, you’re more likely than common stockholders to receive some of your investment back if the company declares bankruptcy. 
+You have a wide range of choices when it comes to corporate bonds, their structures, coupons, maturity, credit quality and more. Most corporate bonds are issued with maturities ranging from one to 30 years and trade in the over-the-counter (OTC) market. Corporate bonds can fall under a number of classifications, including secured corporates, unsecured corporates, guaranteed and insured bonds and convertibles. A bond’s classification depends on its relationship to a corporation's capital structure.
+Agency Securities
+Agency securities are bonds issued by U.S. federal government agencies (other than the U.S. Treasury) or by U.S. government-sponsored enterprises (GSEs). Most agency bonds pay a semiannual fixed coupon and are sold in a variety of increments, generally requiring a minimum initial investment of $10,000. 
+With the exception of bonds issued by Ginnie Mae, agency securities are not fully guaranteed by the U.S. government. The issuing agency will affect the strength of any guarantee provided on the agency bond. Evaluating an agency's credit rating before you invest should be standard procedure. Many credit rating agencies make this information available on their website.
+Municipal Bonds
+Municipal bonds, or muni bonds, are issued by states, cities, counties, towns villages, interstate authorities, intrastate authorities and U.S. territories, possessions and commonwealths to support their obligations and those of their agencies. They are generally backed by taxes or revenues received by the issuer.
+No two municipal bonds are created equal, which can make the muni bond illiquid. The Municipal Securities Rulemaking Board (MSRB) has educational information on muni bond investing, and its EMMA website has tools, data and disclosure documents to help compare and evaluate municipal securities.
+Asset-Backed Securities
+Asset-backed securities (ABSs) offer returns based on the repayment of debt owed by a pool of underlying assets. There’s quite a range of assets that might constitute a given ABS, from a pool of home equity or car loans, to credit card receivables, or even movie revenues. Just about any stream of revenue could become securitized as an ABS.
+Mortgage-backed securities (MBSs) are a type of ABS. These are bonds secured by home and other real estate loans. They’re created when a number of these loans, usually with similar characteristics, are pooled together by an entity that then issues securities. These securities represent claims on the principal and interest payments made by borrows on the loans in the pool.
+Most MBSs are issued by Ginnie Mae, a U.S. government agency, or Fannie Mae and Freddie Mac, both U.S. GSEs. Often these are traded as to-be-announced (TBA) contracts to buy or sell an MBS on a specific date. With such trades, the underlying mortgages are not known to the parties at the time the trades are made.
+MBSs exhibit a variety of structures. One of the more complex types is a collateralized mortgage obligation (CMO), which is an MBS composed of residential mortgages and that tends to be sensitive to interest rate changes and economic conditions. Investors who purchase a CMO receive payments (money from principal and interest) at a set schedule after the mortgage borrowers make the monthly payments on their mortgages.
+U.S. Treasury Securities
+U.S. Treasury securities ("Treasurys") are issued by the federal government and, because they’re backed by the "full faith and credit" of the U.S. government, are considered to be among the safest investments you can make. This means that, come what may (e.g., recession, inflation, war), the U.S. government is expected to repay its bondholders. They’re also among the most liquid—or actively traded—investments in the world.
+Treasury securities include:
+Treasury Bills (T-bills): non-interest-bearing (zero coupon) securities with maturities that range from only a few days to 52 weeks.
+Treasury Notes (T-notes): fixed principal securities issued with maturities of two, three, five, seven or 10 years.
+Treasury Bonds: long-term, fixed principal securities issued with a 30-year maturity. Outstanding fixed principal bonds have terms from 10 to 30 years.
+Treasury Inflation-Protected Securities (TIPS): fixed interest securities issued with maturities of five, 10 and 30 years. TIPS shelter you from inflation risk because their principal is adjusted semiannually for inflation based on changes in the Consumer Price Index-Urban Consumers. At maturity, if the adjusted principal is greater than the face or par value, you’ll receive the greater value.
+U.S. Savings Bonds
+Savings bonds are also issued by the federal government and backed by the "full faith and credit" guarantee. Unlike many other types of bonds, only the person(s) in whose name a savings bond is registered can receive payment for it.
+The two most common types of savings bonds are Series I and Series EE bonds. Both are accrual securities, meaning the interest you earn accrues monthly at a variable rate and is compounded semiannually. Interest income is paid out at redemption.
+Separate Trading of Registered Interest and Principal of Securities (STRIPS)
+The STRIPS program lets investors hold and trade the individual interest and principal components of eligible Treasury notes and bonds as separate securities. STRIPS can only be bought and sold through a financial institution or brokerage firm, and they’re held in what’s known as the commercial book-entry system.
+International and Emerging Markets Bonds
+You can purchase bonds issued by foreign governments and companies as another way to diversify your portfolio. Since information is often less reliable and more difficult to obtain for these bonds, you risk making decisions on incomplete or inaccurate information.
+Like U.S. Treasurys, many international and emerging market bonds pay interest semiannually, although European bonds traditionally pay interest annually. Unlike U.S. Treasurys, however, there can be increased risks for U.S. investors who buy international and emerging market bonds, and buying and selling these bonds generally involves higher costs and requires the help of your firm or investment professional.
+Bond Funds
+A bond fund is a mutual fund or exchange-traded fund that invests in bonds. These funds can contain all of one type of bond (municipal bonds, for instance) or a combination of bond types. Each bond fund is managed to achieve a stated investment objective.
+Like most investments, bond funds charge fees and expenses that are paid by investors. These costs can vary widely from fund to fund and across share classes.
+ Bonds can be bought when they’re issued (on the primary market) and held until maturity, or they can be traded through a broker-dealer (on the secondary market). A bond’s face or par value and interest remain fixed for the life of the bond. But if you buy or sell a bond after it’s been issued, its price is subject to market forces and often fluctuates above or below par. Because there is such a variety in bond rates and terms, some bonds trade more frequently (and liquidly) than others. Like stocks, most bonds can be purchased on margin.
+The way you buy and sell bonds on the primary market often depends on the type of bond you select.
+Treasury bonds can be bought in denominations of $100 through an account at a brokerage firm or commercial bank, or directly from the U.S. government through auctions.
+Savings bonds (EE and I bonds) can be purchased electronically for as little as $25 through Treasury Direct. You can also purchase paper I bonds, but only if you do so using your income tax refund.
+Corporate and municipal bonds can be purchased, like stock, through full-service, discount or online brokerage firms, as well as through investment and commercial banks.
+Once new-issue bonds have been priced and sold, they begin trading on the secondary market, where buying and selling is handled by a brokerage firm or investment professional. For Treasury bonds, if you bought directly from the U.S. government at auction and want to sell before maturity, you’ll need to transfer your Treasury bond to a brokerage firm or commercial bank and ask them to sell it for you.
+Bond funds can be bought and sold through an investment professional, your brokerage firm’s website or app, or the fund directly. Keep in mind that if you work with an investment professional, the choice of bond funds is limited to those the brokerage firm allows its professionals to sell.
+Selling Before the Maturity Date
+If you sell a bond before it matures, you may not receive the full principal amount of the bond and won’t receive any remaining interest payments. The price you receive will depend on where the bond is currently trading on the secondary market. This may be more or less than the amount of principal and the remaining interest the issuer would be required to pay you if you held the bond to maturity.
+The price of a bond can be above or below its par value for many reasons, including whether the credit rating for the issuer or the bond itself has changed, a change in supply and demand and a host of other factors, but is often driven by changing interest rates.
+If you sell a bond before it matures or buy a bond in the secondary market, you most likely will catch the bond between coupon payment dates. If you're selling, you're entitled to the price of the bond, plus accrued interest—the interest that adds up each day between coupon payments—up until and including the sale date. The buyer compensates you for this portion of the coupon interest, which is generally handled by adding the amount to the contract price of the bond.
+Use our Accrued Interest Calculator to figure out a bond's accrued interest.
+Bond Pricing
+Bond quotes are typically expressed as a percentage of their par value with the percentage converted to a point scale. A $1,000 bond trading at par is said to be trading at 100. A bond quoted at 105 is trading at a premium at 105 percent of par, or $1,050. A bond quoted at 95 is trading at a discount at 95 percent of par, or $950.
+Remember, bond prices and interest rates move in opposite directions. If you own a bond that pays a coupon of 8 percent but new issuances are only paying 5 percent (so interest rates fell), the secondary price of your 8 percent bond will rise because people will be willing to pay a premium for that higher coupon payment.
+Bonds and Interest Rates
+When it comes to how interest rates affect bond prices, there are three cardinal rules:
+When interest rates rise, bond prices generally fall.
+When interest rates fall, bond prices generally rise.
+Every bond carries interest rate risk.
+One of the key determinants of a bond’s coupon rate (the interest you receive) is the federal funds rate, which is the prevailing interest rate that banks with excess reserves at a Federal Reserve district bank charge other banks that need overnight loans. The Federal Reserve sets a target for the federal funds rate and maintains that target interest rate by buying and selling U.S. Treasury securities. Another rate that heavily influences a bond's coupon is the Fed’s Discount Rate, which is the rate at which member banks may borrow short-term funds from a Federal Reserve Bank. The Fed directly controls this rate.
+Say the Fed raises the discount rate by .5 percent. The next time the U.S. Treasury holds an auction for new Treasury bonds, it will quite likely price its securities to reflect the higher interest rate. Those new bonds pay more interest. What happens to the Treasury bonds you bought a couple of months ago at the lower interest rate? They're not as attractive. If you want to sell them, you'll need to discount their price to a level that equals the coupon of all the new bonds just issued at the higher rate.
+It works the other way, too. Say you bought a $1,000 bond with a 6 percent coupon a few years ago and decided to sell it three years later to pay for a trip to visit your ailing grandfather, except now, interest rates are at 4 percent. This bond is now quite attractive compared to other bonds out there, and you'd be able to sell it at a premium.
+Brokerage Firm Role and Compensation
+In the majority of bond transactions, a brokerage firm acts as principal, selling you a bond it already owns. When a brokerage firm sells you a bond in a principal capacity, it may increase or mark up the price you pay over the price the firm paid to acquire the bond.
+Similarly, if you sell a bond, the firm may offer you a price that includes a markdown from the price at which it believes it can sell the bond. The markup or markdown is the brokerage firm's compensation.
+If the firm acts as agent, meaning it acts on your behalf to buy or sell a bond, you may be charged a commission, which will appear on your trading confirmation.
+Bonds and Taxes
+The tax rules that apply to bonds are complicated. Whether or not you will need to pay taxes on a bond's interest income (coupons) or a bond fund's dividends often depends on the entity that issued the bond. You might want to check with your tax advisor about the tax consequences before you invest.
+For additional information on the tax treatment of investment income, see IRS Publication 550 and the IRS's Net Investment Income Tax FAQs.
+ Like other investments, when you invest in bonds and bond funds, you face the risk that you might lose money. Here are some common risk factors to be aware of with respect to bonds and bond funds.
+Interest Rate Risk (or Market Risk)
+This is the risk that changes in interest rates—in the U.S. or other world markets—may reduce, or increase, the market value of a bond you hold. Interest rate risk increases the longer you hold a bond.
+Opportunity Risk
+This is the risk that a better opportunity will come around that you may be unable to act upon. The longer the term of your bond, the greater the chance that a more attractive investment opportunity will become available, or that any number of other factors may occur that negatively impact your investment. This also is referred to as holding period risk.
+Duration Risk
+This risk is associated with the sensitivity of a bond’s price to a 1 percent change in interest rates. Duration, which is stated in years, signals how much the price of your bond investment is likely to fluctuate when there’s an up or down movement in interest rates. The higher the duration number, the more sensitive your bond investment will be to changes in interest rates.
+Call Risk
+This is the risk that a bond may be redeemed by an issuer when interest rates are falling (similar to when a homeowner seeks to refinance a mortgage). This is a risk for bonds that include a call provision or are “callable.” Investors can avoid call risk by purchasing non-callable bonds. Call risk also leads to reinvestment risk (see below).
+Refunding Risk
+Some bonds (often including those issued by industrial and utility companies) contain sinking fund provisions, which require a bond issuer to retire a certain number of bonds periodically. This can be accomplished in a variety of ways, including through purchases in the secondary market or forced purchases directly from bondholders at a predetermined price. That latter method is referred to as refunding risk. Refunding risk also leads to reinvestment risk (see below).
+Reinvestment Risk
+This is the risk that no available investments will be able to provide a similar return to a bond that has been called or mandatorily refunded.
+Credit Risk (or Default Risk)
+This is the risk that a bond issuer will fail to make interest payments or to pay back your principal when your bond matures. Other than U.S. Treasury securities, which are generally deemed to be free of default risk, most bonds face some degree of credit risk, which is often indicated by a bond’s credit rating. You can research and compare bond credit ratings through nationally recognized statistical rating organizations (NRSROs).
+Learn more about the differences between investment grade and high-yield bonds.
+Inflation Risk (or Purchasing Power Risk)
+This is the risk that the yield on a bond will not keep pace with purchasing power. For instance, if you buy a five-year bond in which you can realize a coupon rate of 5 percent but the rate of inflation is 8 percent, the purchasing power of your bond interest has declined. All bonds but those that adjust for inflation, such as TIPS, expose you to some degree of inflation risk.
+Liquidity Risk
+This is the risk that you won’t be easily able to find a buyer for a bond you need to sell. A sign of liquidity, or lack of it, is the general level of trading activity. A bond that’s traded frequently is considerably more liquid than one which only shows trading activity intermittently. You can check corporate bond trading activity—and thus liquidity—with FINRA's Fixed Income Data Center.
+Event Risk
+This is the risk that than an event, such as a merger, acquisition, leveraged buyout, major corporate restructuring or other event might result in changes in a company's financial health and prospects, which might trigger a change in a bond's rating. Event risk is extremely hard to anticipate and might have a dramatic and negative impact on bonds.
+Sovereign Risk
+A country's unique set of risks is known collectively as sovereign risk. A nation's unique political, cultural, environmental and economic characteristics are all facets of sovereign risk. Default risk is real in emerging markets, where the sovereign risk (such as political instability) could result in the country defaulting on its debt.
+Currency Risk
+This is the risk that a change in the exchange rate between the currency in which your bond is issued—euros, say—and the U.S. dollar can increase or decrease your investment return. The impact of currency risk can be dramatic. It can turn a gain in local currency into a loss in U.S. dollars, or it can change a loss in local currency into a gain in U.S. dollars.
+ Agency SecurityAn agency security is a debt security issued or guaranteed by an agency of the federal government or by a government-sponsored enterprise (GSE). These securities include bonds and other debt instruments. Agency securities are only backed by the "full faith and credit" of the U.S. government if they’re issued or guaranteed by an agency of the federal government, such as Ginnie Mae. Although GSEs such as Fannie Mae and Freddie Mac are government-sponsored, they’re not government agencies.
+Average MaturityAverage maturity is the average time that a mutual fund's bond holdings will take to be fully payable. Interest rate fluctuations have a greater impact on the price per share of funds holding bonds with longer average lives.
+Basis PointsA basis point (bps) is one one-hundredth of a percentage point (.01). One percent = 100 basis points. One half of 1 percent = 50 basis points. Bond traders and brokerage firms regularly use bps to state concise differences in bond yields. The Federal Reserve likes to use bps when referring to changes in the federal funds rate.
+BenchmarkA benchmark is a standard against which investment performance is measured. For example, the S&P 500 Index, which tracks 500 major U.S. companies, is the standard benchmark for large-company U.S. stocks and large-company mutual funds. The Barclays Capital Aggregate Bond Index is a common benchmark for bond funds.
+BondholderThe owner of a bond is known as a bondholder. This may be an individual or institution such as a corporation, bank, insurance company or mutual fund. A bondholder is typically entitled to regular interest payments as due and return of principal when the bond matures.
+Bond RatingA bond rating is a method of evaluating the quality and safety of a bond. This rating is based on an examination of the issuer's financial strength and the likelihood that it will be able to meet scheduled repayments. Nationally recognized statistical rating organizations (NRSROs) provide ratings on a scale usually using letters or numbers and might distinguish between “investment grade” and “non-investment grade” bonds. For example, Standard & Poor’s ratings range from AAA (best) to D (worst), and bonds receiving a rating of BB or below are not considered investment grade because of the relative potential for issuer default.
+CallIn relation to bonds, a call is the issuer's right to redeem outstanding bonds at a set price before the stated maturity.
+Call ProtectionCall protection is a feature of some callable bonds that protects the investor from calls for some initial period of time.
+Capital Gains TaxCapital gains tax is the tax assessed on profits realized from the sale of a capital asset, such as stock, bonds or real estate.
+Collateralized Mortgage Obligation (CMO)A CMO is a bond backed by multiple pools (also called tranches) of mortgage securities or loans.
+CommissionA commission is a fee paid to a brokerage firm or investment professional, as an agent of the customer, for executing a trade based on the number of bonds traded or the dollar amount of the trade.
+Corporate BondA corporate bond is a bond issued by a corporation to raise money for capital expenditures, operations and acquisitions.
+Convertible BondA convertible bond is a bond with the option to convert into shares of common stock of the same issuer at a pre-established price.
+CouponA coupon, also called the coupon rate, is the interest payment made on a bond, usually paid twice a year. A $1,000 bond paying $65 per year has a $65 coupon, or a coupon rate of 6.5 percent. Bonds that pay no interest are said to have a "zero coupon."
+Coupon YieldCoupon yield is the annual interest rate established when the bond is issued. The same as the coupon rate, it's the amount of income you collect on a bond, expressed as a percentage of your original investment.
+Current YieldCurrent yield is the yearly coupon payment divided by the bond's price, stated as a percent. A newly issued $1,000 bond paying $65 has a current yield of .065, or 6.5 percent. Current yield can fluctuate: If the price of the bond dropped to $950, the current yield would rise to 6.84 percent.
+DebentureA debenture is an unsecured bond backed solely by the general credit of the borrower.
+Debt SecurityA debt security is any security that represents loaned money that must be repaid to the lender.
+DiscountA bond discount is the amount by which a bond's market price is lower than its issuing price (par value). A $1,000 bond selling at $970 carries a $30 discount.
+DiversificationDiversification is an investment strategy for allocating your assets available for investment among different markets, sectors, industries and securities. The goal is to protect the value of your overall portfolio by avoiding overemphasis on a single security or asset class.
+Face ValueThe amount the issuer must pay to the bondholder at maturity is its face value, also known as par value.
+Full Faith and Credit of the U.S. GovernmentTreasurys, savings bonds and debt securities issued by federal agencies are backed by the "full faith and credit" of the U.S. government, which is a promise by the U.S. government to pay all interest when due and redeem bonds at maturity.
+Fixed-Rate BondA fixed-rate bond is a bond with an interest rate that remains constant or fixed during the life of the bond.
+Floating-Rate BondA floating-rate bond is a bond with an interest rate that fluctuates (floats), usually in tandem with a benchmark interest rate during the life of the bond.
+General Obligation Bond (GO)A GO bond is a municipal bond that is secured by a governmental issuer's "full faith and credit," usually based on taxing power.
+Government-Sponsored Enterprise (GSE)A GSE is an enterprise that's chartered by Congress to fulfill a public purpose but is privately owned and operated, such as the Federal National Mortgage Association (Fannie Mae) and the Federal Home Loan Mortgage Corporation (Freddie Mac). Unlike bonds guaranteed by a government agency such as the Government National Mortgage Association (Ginnie Mae), those issued by a GSE are not backed by the "full faith and credit" of the U.S. government.
+High-Yield BondA high-yield bond, also sometimes known as a “junk” bond or a non-investment grade bond, is a bond issued by an issuer that’s considered by a nationally recognized statistical rating organization to have a higher risk of default, as indicated by a low bond rating—typically below investment-grade (e.g., "Ba" or lower by Moody's Investors Services, or "BB" or below by Standard & Poor's Corporation). Because of this risk, a high-yield bond generally pays a higher return (yield) than a bond with an issuer that carries lower default risk.
+IndentureAn indenture is a legal document between a bond issuer and a trustee appointed on behalf of all bondholders that describes all of the features of the bond, the rights of bondholders, and the duties of the issuer and the trustee. Much of this information is also disclosed in the prospectus or offering statement.
+Investment-Grade BondAn investment-grade bond is a bond whose issuer's prompt payment of interest and principal (at maturity) is considered relatively safe by a nationally recognized statistical rating organization as indicated by a high bond rating (e.g., "Baa" or better by Moody's Investors Service or "BBB" or better by Standard & Poor's Corporation).
+Junk BondSee high-yield bond.
+LiquidityLiquidity is the ease with which an asset or security can be sold without affecting its market price. Liquid investments can be bought and sold with relative ease and without a significant change in price. Liquidity declines whenever it becomes more difficult to trade an investment due to an imbalance in the number of buyers and sellers or because of price volatility.
+MarkdownIf you sell a bond, your brokerage firm, when acting as a principal, may offer you a price that includes a "markdown" from the price that it believes it can sell the bond to another dealer or another buyer. The markdown is the firm's compensation in the transaction.
+MarkupWhen a brokerage firm sells you a bond in a principal capacity, it may increase or "mark up" the price you pay over the price the firm paid to acquire the bond. The markup is the firm's compensation in the transaction.
+Maturity DateA maturity date is the date when the principal amount of a bond, note or other debt instrument is typically repaid to the investor along with the final interest payment.
+Mortgage-Backed SecurityA mortgage-backed security is secured by home and other real estate loans.
+Municipal BondA municipal bond is a bond issued by a state, city, county or town to fund public capital projects like roads and schools, as well as operating budgets. These bonds are typically exempt from federal taxation and, for investors who reside in the state where the bond is issued, from state and local taxes, too.
+Non-Callable BondA non-callable bond, also called a “bullet,” is a bond that includes a feature stipulating that the bond cannot be redeemed (called) before its maturity date.
+Non-Investment-Grade BondSee high-yield bond.
+NoteA note is a short- to medium-term loan that represents a promise to pay a specific amount of money. A note might be secured by future revenues, such as taxes. Treasury notes are issued in maturities of two, three, five, seven, and 10 years.
+Par ValuePar value is an amount equal to the nominal or face value of a security. A bond selling at par, for instance, is worth the same dollar amount at which it was issued, or at which it will be redeemed at maturity—typically $1,000 per bond.
+Phantom IncomePhantom income is income that’s reportable to the IRS but that hasn’t yet been received, such as interest from a zero-coupon bond, which isn’t paid until the bond matures.
+Prepayment RiskPrepayment risk is the possibility that the issuer will call a bond and repay the principal investment to the bondholder prior to the bond's maturity date.
+PremiumIn relation to bonds, a premium is the amount by which a bond's market value exceeds its issuing price (par value). A $1,000 bond selling at $1,063 carries a $63 premium.
+Primary MarketThe market in which new issues of stock or bonds are priced and sold, with proceeds going to the entity issuing the security. From there, the security begins trading publicly in the secondary market.
+Principal
+For investments, principal is the original amount of money invested, separate from any associated interest, dividends or capital gains. For example, the price you paid for a bond with a $1,000 face value the time of purchase is your principal. Once purchased, the value of your bond holdings can fluctuate, meaning you can see an increase or decrease to your principal.
+A brokerage firm that executes trades for its own accounts at net prices (prices that include either a mark-up or mark-down) is acting as the principal.
+ProspectusA prospectus is a formal written offer to sell securities that sets forth the plan for a proposed business enterprise, or the facts concerning an existing business enterprise, that an investor needs to make an informed decision.
+Real Rate of ReturnThe real rate of return is the rate of return minus the rate of inflation. For example, if you are earning 6 percent interest on a bond in a period when inflation is running at 2 percent, your real rate of return is 4 percent.
+Revenue BondA revenue bond is a type of municipal security backed solely by fees or other revenue generated or collected by a facility, such as tolls from a bridge or road, or leasing fees. The creditworthiness of revenue bonds tends to rest on the bond's debt service coverage ratio—the relationship between revenue coming in and the cost of paying interest on the debt.
+RiskRisk is the possibility that an investment will lose, or not gain, value.
+Risk ToleranceRisk tolerance is the amount of investment risk you’re willing and able to accept.
+Savings BondA savings bond is a U.S. government bond issued in face denominations ranging from $25 to $10,000.
+Secondary MarketMarkets where securities are bought and sold subsequent to their original issuance are known as secondary markets.
+Security ProvisionsSecurity provisions outline the priority of claims, redemption provisions and collateral for the bonds in the event of a default. This includes the order in which the bondholder will be paid, the pledge of assets and revenues to support the bonds’ repayment, and other covenants. Unsecured bonds, or debentures, are not backed by specific collateral.
+Separate Trading of Registered Interest and Principal of Securities (STRIPS)STRIPS are Treasury Department-sanctioned bonds in which the principal and interest payments are stripped to become separate securities, each of which is then a zero-coupon security that matures separately.
+Treasury Inflation-Protected Securities (TIPS)TIPS are U.S. government securities designed to protect investors and the future value of their fixed income investments from the adverse effects of inflation. Using the Consumer Price Index (CPI) as a guide, the value of the bond's principal is adjusted upward to keep pace with inflation.
+TreasuryTreasurys are negotiable debt obligations that include notes, bonds and bills issued by the U.S. government at various schedules and maturities. Treasurys are backed by the "full faith and credit" of the U.S. government.
+Treasury BillA Treasury bill, also called a T-bill, is a non-interest bearing (zero-coupon) debt security issued by the U.S. government with a maturity of four, eight, 13, 17, 26 or 52 weeks.
+Treasury BondA Treasury bond is a long-term debt security issued by the U.S. government with a maturity of 20 or 30 years, paying a fixed interest rate semiannually.
+Treasury NoteA Treasury note is a medium-term debt security issued by the U.S. government with a maturity of two to 10 years.
+Total ReturnTotal return is all money earned on a bond or bond fund from annual interest and market gain or loss, if any, including the deduction of sales charges and/or commissions.
+YieldYield is the return earned on a bond, expressed as an annual percentage rate.
+Yield CurveA yield curve is a graph showing the relationship between yield (on the y- or vertical axis) and maturity (on the x- or horizontal axis) among bonds of different maturities and of the same credit quality.
+Yield to Call (YTC)YTC is the rate of return received by an investor who holds the bond to its call date and redeems the security at its call price. YTC assumes interest payments are reinvested at the yield-to-call date.
+Yield to Maturity (YTM)YTM is the overall interest rate earned by an investor who buys a bond at the market price and holds it until maturity. Mathematically, it's the discount rate at which the sum of all future cash flows (from coupons and principal repayment) equals the price of the bond.
+Yield to Worst (YTW)YTW is the lower yield of yield-to-call and yield-to-maturity. Investors of callable bonds should always do the comparison to determine a bond's most conservative potential return.
+Yield Reflecting Broker CompensationYield reflecting broker compensation is the yield adjusted for the amount of the markup or commission (when you purchase) or markdown or commission (when you sell) and other fees or charges that you’re charged by your brokerage firm for its services.
+Zero-Coupon BondA zero-coupon bond is a bond that doesn't pay a coupon. Zero-coupon bonds are purchased by the investor at a discount to the bond's face value (e.g., less than $1,000) and redeemed for the face value when the bond matures.
+ For additional information about bonds, please see the following resources:
+FINRA:Investor Insights: Bond Investing and Due Diligence
+Investor Insights: Brush Up on Bonds: Interest Rate Changes and Duration
+Investor Insights: Spread the Word: What You Need to Know About Bond Spreads
+Investor Insights: Bond Yield and Return
+Investor Insights: Baby Bonds: What to Know Before Investing
+Investor Insights: The One-Minute Guide to Zero Coupon Bonds
+Investor Insights: Insurance-Linked Securities
+Investor Insights: What to Know Before Saying Hi to High-Yield Bonds
+Investor Insights: Know the Facts About Direct Registered Shares
+Investor Insights: Taking a Look at Money Market Funds
+MSRB:Ways to Buy Municipal Bonds
+Tax and Liquidity Considerations for Buying Discount Bonds
+SEC:Investor Bulletin: What You Need to Know About the End of LIBOR
+Back to Top
+ TOOLS & CALCULATORS
+Smart Investing Courses
+Market Data and Investment Explorer
+Fixed Income Data
+BrokerCheck
+Fund Analyzer
+View All
+ Recent Investor Insights
+ Investing Basics
+ Getting Started as an Investor
+ Avoid Fraud
+ Protect Your Accounts From Phishing, Smishing and Vishing Scams
+ Protect Your Money
+ Following the Crowd: Investing and Social Media
+ View All

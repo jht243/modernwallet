@@ -1,0 +1,254 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-write",
+  "route": "/compare/ssdi-vs-ssi",
+  "readerQuestion": "What is the difference between SSDI and SSI? [PAA 0/0; ac 11/57 question completions: what is ssdi and ssi difference, which is better ssdi or ssi, is ssdi and ssi the same (difference/pick pattern)]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/approval-manifest.json",
+      "sha256": "742964215dddbcd4f15c21e1a45ee47aba86954b4c200f5a277badd9b1cfb2b7"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/chart-review.json",
+      "sha256": "49cd0e187872eaea82e7107ba5e17320b8eb87b69d4b54de03083f7ad38a65ff"
+    },
+    "actionId": "A3"
+  },
+  "presentation": {
+    "medium": "text + comparison table",
+    "placement": "Opening answer in section 1, comparison table directly after",
+    "reason": "The reader needs a side-by-side on finite, sourced dimensions; a table lets them compare without interaction",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "Sourced facts are finite and state/year specific; no defensible adjustable-input model, so a static table answers faster"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static scannable layout answers faster without decorative motion"
+    }
+  },
+  "basis": "reported",
+  "decisionGap": "The top 10 are disability-law firm pages with no regulation-sourced table. A reader deciding which program to apply for cannot see, in one place, who qualifies for each, which tests apply (work credits vs income and resources), the waiting period and the shared disability definition.",
+  "finding": "SSDI is for people who are disabled and insured for disability through enough work credits (20 CFR 404.315 and 404.130). SSI covers people aged 65 or older, blind or disabled who also meet income and resource limits (20 CFR 416.202), with resource limits listed in 20 CFR 416.1205. The SSDI eligibility rules in 404.315 and 404.130 contain no resource limit. Both programs use the same adult disability definition (404.1505 and 416.905). SSDI has a five-full-month waiting period in 404.315, unless an exception applies. A person can have both: SSI income rules (416.1121) list Social Security and disability benefits as unearned income, and SSA's COLA announcement covers people who receive both.",
+  "conditions": "Descriptions are limited to what the cited eCFR sections contain as retrieved 2026-11-23 UTC. SSA.gov returned HTTP 403 to the capture tool, so no SSA-published current amounts are used here; dollar amounts live on the linked existing pages (/guides/2027-ssdi-cola/ and /guides/ssi-increase-2027/). Readers must confirm current amounts and their own eligibility with the Social Security Administration (SSA). The resource table in 416.1205(c) ends with the January 1, 1989 row ($2,000 individual, $3,000 individual and spouse); SSI eligibility also depends on citizenship/residence and other rules in 416.202.",
+  "whatWouldChange": "A change to the cited regulations; SSA changing resource limits; a reader who has too few work credits for SSDI (SSI may still fit if income and resources are low); a reader whose countable income or resources exceed SSI limits (SSDI may be the only fit).",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/runs/2026-11-23-comparison/evidence/ssdi-vs-ssi/cases.json",
+    "sha256": "347cf08bd53c00837d321db59e682e30a650eabec436043fa6af1b1dd78365f9"
+  },
+  "caseDecisions": "Retrieved 8 (A2/A3) and 0 (A1) approved records via mindmap-gates cases with the exact approved reader_question. All retrieved records are other-business client/owned-property records (DIY repair, indoor air, bowling, blockchain, HOA boards, law-firm intake, Cuba briefings) with no honest topical overlap with this personal-finance/benefits/estate comparison; all rejected, none used. No client or experience claim is made on this page (anchor-exempt: source-only reported comparison, no honestly fitting proprietary record).",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/brief.md",
+      "sha256": "93324e15e4df9c9c78137d371103cff8463eecba7702e674a4c8cca9221b8ac5"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/coverage-lookup.txt",
+      "sha256": "be22c192a76f7f2114553495b537d81627904d206567bea7b4ec64118bd0a8dd"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/keyword-volumes.json",
+      "sha256": "4f70395595f0341b4a880d938eca5e207e14ce2f5a695efa5a5eb0eb7e64780c"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/serp.json",
+      "sha256": "c61106da76e5a9a44cb5fcfa9f5a7d33e5f17be49159d2a5fb196ca3f8e3cf66"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/kw-status.json",
+      "sha256": "6ae183adb299df5fb3997cc3655d76db9cdb915668491376346adae263b9abee"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ecfr-20-404-315.txt",
+      "sha256": "044d929b13ece3088d84e3d67d889f7db9701915518ef8c49c55641a0505a70d"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ecfr-20-404-130.txt",
+      "sha256": "61a1fbc6be94c21e01d8dd5e439ae9fba3521a0ad41474f3620d1e8a43a0af88"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ecfr-20-404-1505.txt",
+      "sha256": "96f5b40beba5a72f5028e65b0751d4adde36c9cee03340072f13fae810efed7e"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ecfr-20-416-202.txt",
+      "sha256": "c75822ee0e8e5f52db9569f80cdaa1160d82a7a5c65735dd2e3d0c52db65b2a1"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ecfr-20-416-905.txt",
+      "sha256": "9ff85c7604d9e2f1e900317d3c19a4aa396a3c916b0f60ffaca3efe5c60264a9"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ecfr-20-416-1100.txt",
+      "sha256": "0d675c978022fa8e0929a1ee60582408deb4c500ce2dfbfc537a03ad6c52a444"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ecfr-20-416-1205.txt",
+      "sha256": "b319ef98602e8b84b865347ce44d5cc52516d152cfd1b08a4ad74311eaa85f28"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ecfr-20-416-1121.txt",
+      "sha256": "a77a1a8283d1f19d5a061d303d6704b98ed761155bc2018aecae2541d76fb364"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ecfr-20-416-1201.txt",
+      "sha256": "23fe3773e8c3157930f0dc8905e5c1719ba9ddefe2048accfb8907568062eaaa"
+    }
+  ],
+  "whyNoQuantitativeAnalysis": "The decision is a rules-and-structure comparison on finite attributes. The primary texts answer it directly and there are no defensible sourced inputs for a model (state, year and personal-facts dependent). Arbitrary arithmetic would not add value, so the source-only reported branch applies.",
+  "reasoning": "20 CFR 404.315(a) lists the SSDI entitlement conditions: enough social security earnings to be insured for disability as described in 404.130, an application, a disability as defined in 404.1505 and five full consecutive months of disability unless no waiting period is required. None of these lists contains a resource test; 404.130 sets the quarters-of-coverage rules (for example 20 quarters of coverage in the 40-quarter period ending with the disability quarter, with age-based alternatives). 20 CFR 416.202 sets SSI eligibility: aged 65 or older, blind or disabled; US residency and citizenship or listed alien status; not more income than permitted; not more resources than permitted; no felony-flight or probation violations; an application. 416.1100 states SSI requires limited income and resources and that more income lowers the benefit. 416.1205 sets the resource limit. 404.1505 and 416.905 use the same words for the basic adult definition of disability. 416.1121(a) names social security benefits and disability benefits as unearned income for SSI. The existing site guides, which cite SSA's 2027 COLA announcement, say some people receive both SSI and Social Security. These support: SSDI is work-credit based with no resource limit in its eligibility sections; SSI is needs-based with income and resource tests and wider categories (65+, blind, disabled); both share the adult disability definition; both can be received by the same person subject to SSA's income rules.",
+  "counterexample": "'SSDI is for workers and SSI is for people without work history' is too simple: SSI is open to people aged 65 or older, blind or disabled who pass the income and resource tests, but SSA also treats a Social Security disability benefit as unearned income, so a person with SSDI may still be tested for SSI and the SSDI amount counts against the income test (416.1121(a)). Concurrent eligibility is possible but not automatic.",
+  "unknowns": [
+    "No SSA.gov page could be captured (HTTP 403): do not cite SSA pages for amounts or rules; amounts come only from linked existing site pages.",
+    "Whether any specific reader qualifies for both programs depends on their income and resources: say only that the rules allow both and that SSA decides.",
+    "Medical standard differences for children, and appeals, are not covered."
+  ],
+  "selectedMedium": "text + comparison table (resolved from approved presentation: interaction not-useful, animation not-useful)",
+  "method": "Reported: read 20 CFR 404.315, 404.130, 404.1505, 416.202, 416.905, 416.1100, 416.1121, 416.1201 and 416.1205 from eCFR (captured 2026-11-23 UTC) and the site's existing sourced SSDI/SSI guides, then map to comparison rows.",
+  "findings": [
+    {
+      "label": "reported",
+      "text": "SSDI entitlement requires disability insured status via work credits (20 CFR 404.315, 404.130) plus a five-full-month waiting period unless an exception applies."
+    },
+    {
+      "label": "reported",
+      "text": "SSI eligibility covers age 65+, blind or disabled people who meet income and resource limits (20 CFR 416.202); resource limits are in 416.1205."
+    },
+    {
+      "label": "reported",
+      "text": "Sections 404.315 and 404.130 contain no resource limit; the SSI resource test is in 416.202(d) and 416.1205."
+    },
+    {
+      "label": "reported",
+      "text": "Adult disability definition is worded the same in 404.1505 and 416.905."
+    },
+    {
+      "label": "reported",
+      "text": "SSI income rules treat social security and disability benefits as unearned income (416.1121(a)); existing site guides citing SSA note some people receive both."
+    },
+    {
+      "label": "unknown",
+      "text": "Current benefit amounts from SSA (not captured); a specific reader's eligibility."
+    }
+  ],
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [
+      "research/sources/ecfr-20-404-315.txt",
+      "research/sources/ecfr-20-404-130.txt",
+      "research/sources/ecfr-20-404-1505.txt",
+      "research/sources/ecfr-20-416-202.txt",
+      "research/sources/ecfr-20-416-905.txt",
+      "research/sources/ecfr-20-416-1100.txt",
+      "research/sources/ecfr-20-416-1205.txt",
+      "research/sources/ecfr-20-416-1121.txt"
+    ],
+    "scopeAndLimits": "Universal-negative phrased as what the cited sections contain; concurrent benefits stated from 416.1121(a) and existing site guides; no current amounts from SSA.",
+    "publicMethod": "Each table cell and paragraph names the 20 CFR section beside the finding with a deep eCFR link.",
+    "placement": "Opening answer, table cells, concurrent-benefits section and takeaway"
+  },
+  "takeaway": {
+    "conclusion": "Apply for SSDI if you are disabled and have enough work credits; apply for SSI if you are 65 or older, blind or disabled and your income and resources are low, with or without work history. You may be eligible for both, and SSA decides after counting income and resources.",
+    "appliesTo": "Adults deciding which disability-related program to apply for; general information, not a benefits determination.",
+    "basis": "reported (20 CFR sections via eCFR; existing site guides citing SSA)",
+    "changesIf": "Work credits fall short, income or resources exceed SSI limits (resource limits in 416.1205), regulations or SSA amounts change; confirm amounts with SSA."
+  },
+  "closedFacts": [
+    {
+      "id": "CFR404315",
+      "source": "20 CFR 404.315, eCFR",
+      "url": "https://www.ecfr.gov/current/title-20/section-404.315",
+      "text": "Who is entitled to disability benefits? You are entitled to disability benefits while disabled before attaining full retirement age as defined in 404.409 if (1) you have enough social security earnings to be insured for disability, as described in 404.130; (2) you apply; (3) you have a disability, as defined in 404.1505, or you are not disabled, but you had a disability that ended within the 12-month period before the month you applied; and (4) you have been disabled for 5 full consecutive months or no waiting period is required. The 5-month waiting period begins with a month in which you were both insured for disability and disabled and can begin no earlier than the 17th month before the month you apply. No waiting period is required if you were previously entitled to disability benefits within 5 years of the month you again became disabled, or you have been medically determined to have amyotrophic lateral sclerosis and your application for disability insurance benefits was approved on or after July 23, 2020."
+    },
+    {
+      "id": "CFR404130",
+      "source": "20 CFR 404.130, eCFR",
+      "url": "https://www.ecfr.gov/current/title-20/section-404.130",
+      "text": "How we determine disability insured status. We have four different rules; to have disability insured status you must meet one of these rules and be fully insured. Rule I: the 20/40 requirement, at least 20 quarters of coverage (QCs) in the 40-quarter period ending with the quarter. Rule II: you become disabled before age 31 and have QCs in at least one-half of the quarters beginning with the quarter after you became age 21 (with a minimum of 6 QCs in the 12-quarter period if the period is short). Rule III: you had a period of disability before age 31 and are disabled again at age 31 or later. Rule IV: you are statutorily blind and fully insured."
+    },
+    {
+      "id": "CFR4041505",
+      "source": "20 CFR 404.1505, eCFR",
+      "url": "https://www.ecfr.gov/current/title-20/section-404.1505",
+      "text": "Basic definition of disability. The law defines disability as the inability to do any substantial gainful activity by reason of any medically determinable physical or mental impairment which can be expected to result in death or which has lasted or can be expected to last for a continuous period of not less than 12 months. To meet this definition, you must have a severe impairment(s) that makes you unable to do your past relevant work or any other substantial gainful work that exists in the national economy. There are different rules for determining disability for individuals who are statutorily blind."
+    },
+    {
+      "id": "CFR416202",
+      "source": "20 CFR 416.202, eCFR",
+      "url": "https://www.ecfr.gov/current/title-20/section-416.202",
+      "text": "Who may get SSI benefits. You are eligible for SSI benefits if you meet all of the following requirements: (a) you are aged 65 or older, blind or disabled; (b) you are a resident of the United States and a citizen or national of the United States, an alien lawfully admitted for permanent residence, an alien permanently residing in the United States under color of law, or a child of armed forces personnel living overseas; (c) you do not have more income than is permitted; (d) you do not have more resources than are permitted; (f) you are not fleeing to avoid prosecution or custody, or violating a condition of probation or parole; (g) you file an application for SSI benefits."
+    },
+    {
+      "id": "CFR416905",
+      "source": "20 CFR 416.905, eCFR",
+      "url": "https://www.ecfr.gov/current/title-20/section-416.905",
+      "text": "Basic definition of disability for adults. The law defines disability as the inability to do any substantial gainful activity by reason of any medically determinable physical or mental impairment which can be expected to result in death or which has lasted or can be expected to last for a continuous period of not less than 12 months. To meet this definition, you must have a severe impairment(s) that makes you unable to do your past relevant work or any other substantial gainful work that exists in the national economy. There are different rules for determining disability for individuals who are statutorily blind."
+    },
+    {
+      "id": "CFR4161100",
+      "source": "20 CFR 416.1100, eCFR",
+      "url": "https://www.ecfr.gov/current/title-20/section-416.1100",
+      "text": "Income and SSI eligibility. You are eligible for SSI benefits if you are an aged, blind, or disabled person who meets the requirements described in subpart B and who has limited income and resources. The amount of income you have is a major factor in deciding whether you are eligible for SSI benefits and the amount of your benefit. We count income on a monthly basis. Generally, the more income you have the less your benefit will be. If you have too much income, you are not eligible for a benefit."
+    },
+    {
+      "id": "CFR4161205",
+      "source": "20 CFR 416.1205, eCFR",
+      "url": "https://www.ecfr.gov/current/title-20/section-416.1205",
+      "text": "Limitation on resources. Effective January 1, 1985 and later, the resources limits table in paragraph (c) lists the limit for an individual and for an individual and spouse by effective date, ending with the row effective January 1, 1989: $2,000 for an individual and $3,000 for an individual and spouse. An aged, blind, or disabled individual is eligible if his or her nonexcludable resources do not exceed the limit and all other eligibility requirements are met."
+    },
+    {
+      "id": "CFR4161121",
+      "source": "20 CFR 416.1121, eCFR",
+      "url": "https://www.ecfr.gov/current/title-20/section-416.1121",
+      "text": "Types of unearned income. Some types of unearned income are annuities, pensions, and other periodic payments. This unearned income is usually related to prior work or service. It includes, for example, private pensions, social security benefits, disability benefits, veterans benefits, worker's compensation, railroad retirement annuities and unemployment insurance benefits."
+    },
+    {
+      "id": "CFR4161201",
+      "source": "20 CFR 416.1201, eCFR",
+      "url": "https://www.ecfr.gov/current/title-20/section-416.1201",
+      "text": "Resources; general. For purposes of subpart L, resources means cash or other liquid assets or any real or personal property that an individual (or spouse, if any) owns and could convert to cash to be used for his or her support and maintenance."
+    },
+    {
+      "id": "SITE-1",
+      "source": "Existing site guide /guides/2027-ssdi-cola/ (cites SSA's October 14, 2026 COLA announcement)",
+      "url": "/guides/2027-ssdi-cola/",
+      "text": "If you receive Supplemental Security Income (SSI) as well as SSDI, the SSI portion rises sooner. Some people receive both benefits, and SSA says the COLA applies to 76 million Americans in total."
+    },
+    {
+      "id": "SITE-2",
+      "source": "Existing site guide /guides/ssi-increase-2027/ (cites SSA 2027 COLA fact sheet)",
+      "url": "/guides/ssi-increase-2027/",
+      "text": "If you get both Social Security and SSI, both payments change. The Social Security payment rises beginning in January 2027. The SSI payment rises with the December 31, 2026 payment."
+    },
+    {
+      "id": "INF-3",
+      "source": "Reviewer-approved universal-negative phrasing (CR1-A3-UNIVERSAL-NEGATIVE)",
+      "url": null,
+      "text": "Phrase as: 'The SSDI eligibility rules in 20 CFR 404.315 and 404.130 contain no resource limit.' Never write that SSDI 'has no resource test' as an unqualified fact about the program. Tell readers to confirm amounts and eligibility with the Social Security Administration (SSA). SSA.gov could not be captured; do not cite SSA pages for rules or amounts."
+    }
+  ],
+  "internalLinksAllowed": [
+    "/guides/2027-ssdi-cola/",
+    "/guides/ssi-increase-2027/",
+    "/guides/ssi-and-inheritance/"
+  ],
+  "faqPlan": [
+    "What is the main difference between SSDI and SSI?",
+    "Can you get SSDI and SSI at the same time?",
+    "Does SSDI have a resource limit?",
+    "Who qualifies for SSI?",
+    "How long is the SSDI waiting period?",
+    "Do SSDI and SSI use the same definition of disability?"
+  ],
+  "faqNote": "No PAA were returned (0/0); the FAQ comes from autocomplete question completions on 'ssdi vs ssi' (e.g. what is ssdi and ssi difference, which is better ssdi or ssi, is ssdi and ssi the same, can ssdi vs ssi be combined). Keep dollar amounts out except by link to the two existing pages.",
+  "caseUses": [],
+  "exclusions": [
+    "_experience.md section G excludes financial, legal and professional services from any 'we tested' claim: TESTED format disabled, no testing/howWeTested/tested schema or byline.",
+    "Basis is reported: never write 'In our internal testing/modeling/analysis', 'we tested' or 'we modeled'. Attribute each finding to the named primary source ('Investor.gov says...', 'Section 689.15 provides...').",
+    "Disclaimer (general information, not legal/tax/investment advice) goes at the bottom only. No named-reviewer or professional-review claim."
+  ],
+  "growth": {
+    "path": "reports/mindmap-pass/runs/2026-11-23-comparison/evidence/ssdi-vs-ssi/growth.json"
+  }
+}

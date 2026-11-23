@@ -1,0 +1,529 @@
+{
+ "rows": [
+  {
+   "keyword": "visa vs mastercard",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "creditcards.wellsfargo.com",
+    "www.investopedia.com",
+    "www.cnbc.com",
+    "www.experian.com",
+    "www.youtube.com",
+    "www.revolut.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "diff.wiki",
+    "joingerald.com",
+    "businessupturn.com",
+    "diff.wiki",
+    "fazilpay.com",
+    "www.bild.de",
+    "joingerald.com",
+    "www.instagram.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "people_also_ask": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "Which is most used, Visa or Mastercard?",
+    "Which card is powerful, Visa or Mastercard?",
+    "Who owns Visa and Mastercard?",
+    "How do Visa and Mastercard make money?",
+    "Who is better, Visa or Mastercard?",
+    "Why is everyone switching from Mastercard to Visa?"
+   ],
+   "related_searches": [
+    "Visa vs mastercard credit card",
+    "Visa vs mastercard cost"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.reddit.com, creditcards.wellsfargo.com, www.investopedia.com, www.cnbc.com",
+   "se_results_count": 79
+  },
+  {
+   "keyword": "ssdi vs ssi",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.hcplaw.com",
+    "www.rite4justice.com",
+    "www.niperlaw.com",
+    "ginsburglawgroup.com",
+    "blossomsca.com",
+    "retirable.com",
+    "jandils.com",
+    "www.brockandstout.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "images": 1,
+    "organic": 9
+   },
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "no entrenched incumbents or SERP features detected",
+   "se_results_count": 72
+  },
+  {
+   "keyword": "fidelity vs robinhood",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.investopedia.com",
+    "www.youtube.com",
+    "www.grifin.com",
+    "wise.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "financialwolves.com",
+    "investingbrokers.com",
+    "www.reddit.com",
+    "www.brokeragecomparison.com",
+    "www.youtube.com",
+    "marketrealist.com",
+    "www.topconsumerreviews.com",
+    "rockwellforbes.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 8,
+    "people_also_ask": 1,
+    "perspectives": 1
+   },
+   "paa": [
+    "What are the top 3 brokerage accounts?",
+    "Why stay away from Robinhood?",
+    "What is the 4% rule for Fidelity?",
+    "What is the downside to Fidelity?",
+    "Is Fidelity safer than Robinhood?",
+    "What does Dave Ramsey say about Fidelity?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.reddit.com, www.investopedia.com, www.youtube.com, www.grifin.com",
+   "se_results_count": 84
+  },
+  {
+   "keyword": "money market fund vs money market account",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.bankrate.com",
+    "www.fidelity.com",
+    "www.cnbc.com",
+    "www.consumerfinance.gov",
+    "www.raisin.com",
+    "www.youtube.com",
+    "www.quorumfcu.org"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.forbes.com",
+    "www.facebook.com",
+    "squeeze.com",
+    "sixtyandme.com",
+    "investlane.com",
+    "www.justanswer.com"
+   ],
+   "major_domains": [
+    "www.forbes.com"
+   ],
+   "forum_domains": [
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 8,
+    "people_also_ask": 1
+   },
+   "paa": [
+    "What is the difference between the money market and the financial market?",
+    "How much will $2500 make in a money market account?",
+    "What are the top 5 money market funds?",
+    "What is the disadvantage of a money market mutual fund?",
+    "What is the safest place to invest $100,000?",
+    "What happens to money market funds in a crash?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (www.forbes.com); AI Overview present, cites www.bankrate.com, www.fidelity.com, www.cnbc.com, www.consumerfinance.gov",
+   "se_results_count": 57
+  },
+  {
+   "keyword": "payday loan vs personal loan",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.lendingtree.com",
+    "www.onemainfinancial.com",
+    "www.bbva.com",
+    "www.upstart.com",
+    "www.infuzecu.org",
+    "www.consumerfinance.gov"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "fanfarefauxnez.com",
+    "articlebiz.com",
+    "www.onlinebangers.co.uk",
+    "flexmoney.com",
+    "clapacademy.co.uk",
+    "mibmcms.eabyas.in",
+    "netpayadvance.com",
+    "saltandsweetsaftab.com",
+    "sylph.mx"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "people_also_ask": 1
+   },
+   "paa": [
+    "Are personal loans better?",
+    "How much would a $1000 cash advance cost?",
+    "What is the difference between loan and finance?",
+    "What is a payday loan?",
+    "Why would anyone use a payday loan?",
+    "How much would a $600 payday loan cost?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.lendingtree.com, www.onemainfinancial.com, www.bbva.com, www.upstart.com",
+   "se_results_count": 70
+  },
+  {
+   "keyword": "tenants in common vs joint tenancy",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.rocketmortgage.com",
+    "www.nla.gov.jm",
+    "www.legalzoom.com",
+    "www.redfin.com",
+    "www.law.cornell.edu",
+    "www.firstintegritytitle.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.landregistry-online.org",
+    "www.fraxioned.com",
+    "generisonline.com",
+    "www.avvo.com",
+    "www.fraxioned.com",
+    "danilsonlaw.com",
+    "nickiandkaren.com",
+    "addressadvisors.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 8,
+    "people_also_ask": 1,
+    "video": 1
+   },
+   "paa": [
+    "What happens when one of the tenants in common dies?",
+    "Who pays taxes on joint tenancy?",
+    "What are the disadvantages of a joint tenancy?",
+    "What is better, tenancy in common or joint tenancy?",
+    "What is the downside of tenants in common?",
+    "Does joint tenancy go to heirs?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "AI Overview present, cites www.rocketmortgage.com, www.nla.gov.jm, www.legalzoom.com, www.redfin.com",
+   "se_results_count": 100
+  },
+  {
+   "keyword": "ynab vs copilot",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "getfinny.app",
+    "www.auritrack.com",
+    "www.youtube.com",
+    "www.budgetlabs.io"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "joingerald.com",
+    "joingerald.com",
+    "moneypatrol.com",
+    "www.reddit.com",
+    "unstar.app",
+    "www.aimadefor.com",
+    "moneypatrol.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 7,
+    "people_also_ask": 1,
+    "related_searches": 1,
+    "video": 1
+   },
+   "paa": [
+    "Is the Copilot budgeting app legit?",
+    "What are the drawbacks of YNAB?",
+    "What is the #1 budgeting app?",
+    "What app is better than YNAB?",
+    "Is YNAB actually good?",
+    "What is the best zero-based budgeting app?"
+   ],
+   "related_searches": [
+    "Ynab vs copilot reddit",
+    "Ynab vs copilot review",
+    "Ynab vs copilot cost"
+   ],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "AI Overview present, cites www.reddit.com, getfinny.app, www.auritrack.com, www.youtube.com",
+   "se_results_count": 78
+  },
+  {
+   "keyword": "medicare part a vs part b",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.medicare.gov",
+    "www.ssa.gov",
+    "www.medicareinteractive.org",
+    "www.healthline.com",
+    "www.youtube.com",
+    "www.humana.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.pv-wp.com",
+    "spiritualwest.com",
+    "www.youtube.com",
+    "southernmarylandchronicle.com",
+    "ravpartouche.com",
+    "lindsayuncharted.com",
+    "gethuman.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "people_also_ask": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "What does Medicare A and B cover?",
+    "What is Medicare Part D?",
+    "What is the medicare advantage?",
+    "What is one thing Medicare Part B typically does not cover?",
+    "Is it better to have Medicare A and B or Medicare Advantage?",
+    "Why would anyone decline Medicare Part B?"
+   ],
+   "related_searches": [
+    "Medicare part a vs part b taxes",
+    "Medicare part a vs part b cost"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.medicare.gov, www.ssa.gov, www.medicareinteractive.org, www.healthline.com",
+   "se_results_count": 75
+  },
+  {
+   "keyword": "bonds vs bond funds",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "advisors.vanguard.com",
+    "www.fidelity.com",
+    "www.schwab.com",
+    "www.communityfirstcu.org",
+    "www.ssga.com",
+    "vistacp.com",
+    "awealthofcommonsense.com",
+    "www.youtube.com",
+    "www.bogleheads.org"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "wealthpursuits.com",
+    "www.youtube.com",
+    "www.youtube.com",
+    "www.mutualfunds.com",
+    "www.justanswer.com",
+    "cc.com.mt",
+    "insightfulpeek.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.youtube.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 8,
+    "people_also_ask": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "What bond is paying 7.5% interest?",
+    "Is FD better than bonds?",
+    "What did Warren Buffett say about bonds?",
+    "What is the 60% 40% bonds equity rule?",
+    "Why don't investors like bonds?",
+    "What percentage of Americans have $300,000 in the stock market?"
+   ],
+   "related_searches": [
+    "Bonds vs bond funds reddit",
+    "Individual bonds vs bond funds",
+    "Bonds vs bond funds fidelity"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.youtube.com); AI Overview present, cites www.reddit.com, advisors.vanguard.com, www.fidelity.com, www.schwab.com",
+   "se_results_count": 95
+  },
+  {
+   "keyword": "fixed vs variable rate student loans",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "studentaid.gov",
+    "www.nerdwallet.com",
+    "www.citizensbank.com",
+    "kemba.studentchoice.org",
+    "www.bankrate.com",
+    "www.earnest.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.reddit.com",
+    "www.biglawinvestor.com",
+    "rtfcu.studentchoice.org",
+    "www.foxbusiness.com",
+    "lendedu.com",
+    "nonprod.collegefinance.com",
+    "www.mpowerfinancing.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.reddit.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 8,
+    "people_also_ask": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "What are the key differences between a fixed rate and a variable rate home loan?",
+    "Do student loans get wiped after 25 years?",
+    "How much is the monthly payment on a $70,000 student loan?",
+    "Is $20,000 a lot of student loan debt?",
+    "How many people have $100,000 in student loans?",
+    "How long will it take to pay off $30,000 in student loans?"
+   ],
+   "related_searches": [
+    "Fixed vs variable rate student loans reddit",
+    "Fixed vs variable rate student loans calculator",
+    "Fixed vs variable rate student loans 2022"
+   ],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.reddit.com, www.youtube.com) incl. #1; AI Overview present, cites studentaid.gov, www.nerdwallet.com, www.citizensbank.com, kemba.studentchoice.org",
+   "se_results_count": 93
+  },
+  {
+   "keyword": "t bills vs high yield savings",
+   "verdict": "winnable",
+   "forum_dominated": true,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "finance.yahoo.com",
+    "www.aurefinancial.com",
+    "www.cnbc.com",
+    "public.com",
+    "www.tiktok.com",
+    "summitward.com",
+    "www.facebook.com",
+    "www.youtube.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "trybeem.com",
+    "www.youtube.com",
+    "www.youtube.com",
+    "www.youtube.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.youtube.com",
+    "www.youtube.com",
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "discussions_and_forums": 1,
+    "organic": 7,
+    "people_also_ask": 1,
+    "perspectives": 1
+   },
+   "paa": [
+    "Are high-yield savings good?",
+    "Should I buy treasury bills or bonds?",
+    "How much will $10,000 make in a high-yield savings?",
+    "What are T-bills?",
+    "What is the downside of Treasury bills?",
+    "How much will I earn on a 3 month treasury bill?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "experience-led / operator-voice or interactive tool \u2014 a vendor explainer will not outrank first-person community answers",
+   "evidence": "forum/community results own the SERP (www.youtube.com); AI Overview present, cites www.reddit.com, finance.yahoo.com, www.aurefinancial.com, www.cnbc.com",
+   "se_results_count": 83
+  }
+ ],
+ "cost": "DataForSEO: 11 calls, $0.02350 of $2.00 budget"
+}

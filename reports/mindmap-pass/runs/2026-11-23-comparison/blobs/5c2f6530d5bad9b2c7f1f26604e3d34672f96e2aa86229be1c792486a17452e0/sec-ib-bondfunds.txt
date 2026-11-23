@@ -1,0 +1,10 @@
+URL: https://www.sec.gov/files/ib_bondfunds.pdf
+Retrieved (UTC): 2026-11-23T08:08:08Z
+HTTP: 403
+
+SEC.gov | Request Rate Threshold Exceeded
+U.S. Securities and Exchange Commission
+Automated access to our sites must comply with SEC.gov's Privacy and Security Policy.
+Please visit www.sec.gov/developer for more developer resources and Fair Access guidelines.
+Please visit www.sec.gov/privacy for more information on Privacy Policy.
+Reference ID: 0.d17c4217.1795421288.11e8add1

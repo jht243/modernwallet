@@ -1,0 +1,11 @@
+{
+ "dataforseo": "ok (balance $40.25663799999995)",
+ "semrush": "unavailable: HTTP 403",
+ "ahrefs": "off: excluded by KEYWORD_PROVIDERS",
+ "autocomplete": "ok",
+ "selected": {
+  "volume": "dataforseo",
+  "kd": "dataforseo",
+  "expand": "dataforseo"
+ }
+}

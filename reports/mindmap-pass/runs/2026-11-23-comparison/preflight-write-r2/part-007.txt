@@ -1,0 +1,98 @@
+7",
+      "status": "open",
+      "evidence": "FIX: 'Savers who cannot absorb a price drop should compare the sourced risks before entering the bond market.' -> 'Savers who need the money within days should keep it where its value does not move with interest rates, for example an FDIC-insured deposit account.' Give the first table header cell the label 'Feature'."
+    },
+    {
+      "id": "R1-1-checks-linksAndIndexability",
+      "status": "open",
+      "evidence": "Canonical https://www.themodernwallet.com/compare/bonds-vs-bond-funds/ present, 3 inbound link sources verified in the 9-route snapshot (stocks-vs-bonds, i-bonds-vs-tips, index fund guide), related-comparison cards resolve. GATE Links hard fail: first mentions of Investor.gov, SEC, U.S. Department of the Treasury, TreasuryDirect and FDIC are unlinked (A1-5)."
+    },
+    {
+      "id": "R1-1-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Traced each fact to saved text in research/sources (ig-bonds, ig-mutual-funds, finra-bonds): face value at maturity, call risk, markup/markdown, $100/$25/$10,000, NAV redemption, FDIC wording, duration all trace. Failures: 'no set maturity date' attributed to Investor.gov though not in its text (A1-1), unhedged rate claim (A1-3), NAV redemption stated for ETFs (A1-2)."
+    },
+    {
+      "id": "R1-1-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the whole page on disk (01f4db03e6e5b475e534.txt): opener answers the reader question in sentence 1, table, sections, not-for, what-would-change, takeaway and FAQ agree on the pick, but takeaway/what-would-change overstate ('strips away the principal protection', 'severe ... discounts', A1-4) and rhythm is monotone (A1-6)."
+    },
+    {
+      "id": "R1-1-factualReview-consequentialClaims",
+      "status": "open",
+      "evidence": "Tested the central investment claim against the strongest counterexample (bond ETF exits, Treasury-only funds, defined-maturity funds). Page generalizes NAV redemption to all bond funds (A1-2) and states rate-driven price falls unconditionally (A1-3). Hold-to-maturity claim is correctly conditioned on default and call."
+    },
+    {
+      "id": "R1-1-factualReview-limitationsAndJurisdiction",
+      "status": "open",
+      "evidence": "US federal investor-education content, no state variation needed. Limitation missing: FINRA's bond fund definition includes ETFs but redemption at NAV is stated for all funds (A1-2); defined-maturity funds are not mentioned (packet unknown 1 forbids stating them as fact, so a neutral 'check the prospectus' hedge exists in the takeaway action)."
+    },
+    {
+      "id": "R1-1-factualReview-primarySources",
+      "status": "open",
+      "evidence": "Investor.gov mutual-funds and bonds pages and FINRA bonds page are the right primaries and were read from disk; the glossary, bulletin and SEC PDF captures are empty or blocked. 'No set maturity date' is shown as Investor.gov's statement without source text (A1-1)."
+    },
+    {
+      "id": "R1-1-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Pick (known date and hold-to-maturity versus small diversified ongoing buying) is conditional and supported, with not-for and what-would-change present; but takeaway wording overstates principal protection and severity (A1-4) and the not-for paragraph gives no alternative (A1-7)."
+    },
+    {
+      "id": "R1-1-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "Title 53 chars and meta description 155 chars carry 'bonds vs bond funds'; headings Title Case; FAQ questions sentence case; reader question answered in sentence 1; who-not-for and what-would-change present; body about 3,050 words versus 1,500 floor. Fails: unlinked first mentions (A1-5), acronym before definition (SEC, FDIC), monotone rhythm and tells (A1-6)."
+    },
+    {
+      "id": "A2-1",
+      "status": "open",
+      "evidence": "FIX: 'the [Florida Senate](https://www.flsenate.gov/) publishes Section [689.15 of the 2024 Florida Statutes](https://www.flsenate.gov/Laws/Statutes/2024/689.15)'; link 'Legal Information Institute at Cornell Law School (LII)' to https://www.law.cornell.edu/."
+    },
+    {
+      "id": "A2-2",
+      "status": "open",
+      "evidence": "FIX section: replace the three sentences with 'Creditor claims, partition rights, mortgage terms and property taxes depend on state law, and this comparison does not cover them. Florida's Section 689.15 above shows how one state sets the default, so read your state's statute on co-ownership before you retitle.' FIX both table cells: 'Set by state law. Read your state's co-ownership statute.' (or delete the row and its heading). Remove 'on this page' everywhere."
+    },
+    {
+      "id": "A2-3",
+      "status": "open",
+      "evidence": "FIX: capture 26 U.S.C. 2033 from Cornell LII and write the cell as the statute states it (the value of property a decedent owned at death is included in the gross estate), or delete both Tenants in Common cells' text and the two rows rather than leave a meta-sentence ('the sources here cover')."
+    },
+    {
+      "id": "A2-4",
+      "status": "open",
+      "evidence": "FIX: '...Section 1014 sets the basis of property acquired from a decedent, as IRS Publication 551 explains.' Either drop the Topic no. 409 citation or say 'IRS Topic no. 409 refers readers to Publication 551 for the basis of inherited property.'"
+    },
+    {
+      "id": "A2-5",
+      "status": "open",
+      "evidence": "FIX opener: '...passes into their estate, transferring according to the instructions laid out in a last will and testament, a living trust, or the default distribution rules of state intestacy law.' -> '...passes through that owner's estate rather than to the co-owner.' FIX FAQ: 'their ownership interest extinguishes immediately and passes automatically to the surviving joint tenants by right of survivorship' -> 'the interest passes to the surviving joint tenants under the instrument'; 'is calculated under 26 U.S.C. 1014 and 2040' -> 'depends on 26 U.S.C. 1014 and the part of the property included in the gross estate under 2040'. FIX: 'Property owners can review how to fund a trust to see how placing real estate inside a revocable living trust provides probate avoidance while preserving granular inheritance instructions.' -> 'Our guide on how to fund a trust covers retitling real estate into a trust.'"
+    },
+    {
+      "id": "A2-6",
+      "status": "open",
+      "evidence": "FIX: delete the second copy in 'What Happens to Each Owner's Share at Death'. 'clean fifty-percent rule' -> 'one-half rule'; 'provides an authoritative example' -> 'gives an example'; 'provides an informative statutory model' -> 'is one state's example'; 'vastly different standards' -> 'different rules'; 'another critical statutory exception' -> 'a separate exception'; delete 'Neither option serves every ownership group.'; 'State law establishes the default presumption for all real estate conveyances' -> 'State law sets the default for how a deed with several owners is read'. Delete 'Furthermore,'."
+    },
+    {
+      "id": "A2-7",
+      "status": "open",
+      "evidence": "Check the 2025 edition of 689.15 and cite the current edition if it is unchanged; add 'Confirm the deed wording with an attorney licensed in your state before you retitle.' to the final body sentence."
+    },
+    {
+      "id": "R1-2-checks-linksAndIndexability",
+      "status": "open",
+      "evidence": "Canonical ends with trailing slash; inbound links verified from how-to-fund-a-trust, living-trust-vs-will and power-of-attorney-vs-will; related cards resolve. GATE Links hard fail: Florida Senate and Cornell LII organisation names are unlinked at first mention (A2-1)."
+    },
+    {
+      "id": "R1-2-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Verified against saved text: Pub 551 John and Jim example ($30,000 cost, $20,000/$10,000 contributions, $12,000 depreciation, $60,000 FMV, $40,000 includible, Jim basis $44,000, $54,000 and $60,000 variants) matches exactly; nine community property states list matches; 689.15 wording matches; 2040(a)/(b) and 1014(b)(1),(6),(9) match LII text. Fails: Topic 409 does not explain 2040 or 1014 (A2-4); unsourced will/trust/intestacy, 'extinguishes immediately' and probate-avoidance statements (A2-5)."
+    },
+    {
+      "id": "R1-2-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the whole page on disk (f618fc2bbae4dc41f2a8.txt). Opener, table, takeaway, FAQ and what-would-change agree that neither form is a tax winner and that spouse status, contribution and community property decide. Fails: the Selling, Borrowing and Creditors section and table row are non-answers (A2-2), the TIC estate-inclusion cells do not answer their rows (A2-3), restated conclusion and filler words (A2-6)."
+    },
+    {
+      "id": "R1-2-factualReview-consequentialClaims",
+      "status": "open",
+      "evidence": "Tested th

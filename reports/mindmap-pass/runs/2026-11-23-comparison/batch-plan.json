@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "jobId": "2026-11-23-comparison",
+  "subBatchingRecommended": true,
+  "batchCount": 2,
+  "totalNewPages": 3,
+  "totalRoutes": 12,
+  "disjointPartition": true,
+  "batches": [
+    {
+      "batchIndex": 1,
+      "label": "batch-1",
+      "actionIds": [
+        "A1",
+        "A2",
+        "A3"
+      ],
+      "newPageRoutes": [
+        "/compare/bonds-vs-bond-funds",
+        "/compare/tenants-in-common-vs-joint-tenancy",
+        "/compare/ssdi-vs-ssi"
+      ],
+      "existingRoutes": [
+        "/compare/stocks-vs-bonds",
+        "/compare/i-bonds-vs-tips",
+        "/guides/what-is-an-index-fund",
+        "/guides/how-to-fund-a-trust",
+        "/compare/living-trust-vs-will"
+      ],
+      "routes": [
+        "/compare/bonds-vs-bond-funds",
+        "/compare/tenants-in-common-vs-joint-tenancy",
+        "/compare/ssdi-vs-ssi",
+        "/compare/stocks-vs-bonds",
+        "/compare/i-bonds-vs-tips",
+        "/guides/what-is-an-index-fund",
+        "/guides/how-to-fund-a-trust",
+        "/compare/living-trust-vs-will"
+      ],
+      "routeFlags": "--route /compare/bonds-vs-bond-funds --route /compare/tenants-in-common-vs-joint-tenancy --route /compare/ssdi-vs-ssi --route /compare/stocks-vs-bonds --route /compare/i-bonds-vs-tips --route /guides/what-is-an-index-fund --route /guides/how-to-fund-a-trust --route /compare/living-trust-vs-will"
+    },
+    {
+      "batchIndex": 2,
+      "label": "batch-2",
+      "actionIds": [],
+      "newPageRoutes": [],
+      "existingRoutes": [
+        "/compare/power-of-attorney-vs-will",
+        "/guides/ssi-and-inheritance",
+        "/guides/2027-ssdi-cola",
+        "/guides/ssi-increase-2027"
+      ],
+      "routes": [
+        "/compare/power-of-attorney-vs-will",
+        "/guides/ssi-and-inheritance",
+        "/guides/2027-ssdi-cola",
+        "/guides/ssi-increase-2027"
+      ],
+      "routeFlags": "--route /compare/power-of-attorney-vs-will --route /guides/ssi-and-inheritance --route /guides/2027-ssdi-cola --route /guides/ssi-increase-2027"
+    }
+  ]
+}

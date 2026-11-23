@@ -1,0 +1,141 @@
+{
+  "slug": "bonds-vs-bond-funds",
+  "title": "Bonds vs Bond Funds for Your Savings and Income Goals",
+  "metaDescription": "Compare individual bonds vs bond funds using Investor.gov and FINRA guidance. Learn how maturity dates, rising interest rates, and fees affect each option.",
+  "targetKeyword": "bonds vs bond funds",
+  "optionA": "Individual Bonds",
+  "optionB": "Bond Funds",
+  "segment": "Investing",
+  "h1": "Bonds vs Bond Funds for Your Portfolio and Timeline",
+  "introText": "Individual bonds fit a known date, while a bond fund fits diversified, ongoing buying. If you buy an individual bond and hold it until its maturity date, the borrower fulfills its debt obligation by paying you the final interest payment and the face value of the bond, called par value, unless the issuer defaults or calls the bond early. Most bond funds have no set maturity date. Instead of waiting for a principal repayment date, a fund investor holds shares in a pooled portfolio and redeems them at the next calculated net asset value (NAV), minus any redemption fees.\n\nRising interest rates push bond prices down across the entire fixed-income market, which means both individual bonds and bond funds lose market value when prevailing rates increase. A bondholder who holds an individual security to maturity avoids secondary-market price losses, but faces credit risk, inflation risk, and call risk. When you buy an individual bond from a brokerage firm acting as a principal, the firm may add a markup to your purchase price or apply a markdown if you sell. Bond funds spread risk across a range of companies and industries, yet they charge fees and expenses that reduce your returns over time.",
+  "tableHeading": "Bonds vs Bond Funds at a Glance",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Maturity Date and Principal Repayment",
+        "a": "The vast majority of bonds have a set maturity date when the issuer repays par value and the final interest payment, as published by the [Financial Industry Regulatory Authority (FINRA)](https://www.finra.org/investors/investing/investment-products/bonds).",
+        "b": "Most bond funds have no set maturity date; shares are bought and sold at the current net asset value (NAV), according to [Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1)."
+      },
+      {
+        "dimension": "Impact of Rising Interest Rates",
+        "a": "Market prices drop when rates rise, but holding the bond to maturity returns the full face value unless the issuer defaults or calls the bond.",
+        "b": "Share prices fluctuate continuously as interest rates change; funds holding bonds with longer average lives see greater price sensitivity."
+      },
+      {
+        "dimension": "Credit and Issuer Default Risk",
+        "a": "Credit risk: the issuer may fail to timely make interest or principal payments and default on its bonds, according to Investor.gov.",
+        "b": "Mutual funds may invest in a range of companies and industries rather than one specific bond, which Investor.gov says helps lower your risk if one company fails. Funds are not FDIC-insured and can lose money."
+      },
+      {
+        "dimension": "Call Risk",
+        "a": "Callable bonds are common; borrowers may retire the debt early if interest rates decline.",
+        "b": "Investor.gov and FINRA describe call risk for individual bonds and do not break it out for funds. A fund's prospectus describes its own risks."
+      },
+      {
+        "dimension": "Minimum Investment Requirements",
+        "a": "U.S. Treasuries start at $100 denominations, savings bonds at $25, while agency securities generally require a $10,000 minimum.",
+        "b": "Many mutual funds set a relatively low dollar amount for initial investment and subsequent purchases."
+      },
+      {
+        "dimension": "Transaction and Ongoing Costs",
+        "a": "Brokerage firms acting as principal often include a markup on buys and a markdown on sales; agent trades carry explicit commissions.",
+        "b": "Investors pay ongoing management fees and operational expenses deducted directly from fund assets, which reduces net investment returns."
+      },
+      {
+        "dimension": "Income Payment Structure",
+        "a": "Coupons typically pay a fixed interest amount on a regular schedule, such as every six months, directly to the bondholder.",
+        "b": "Funds distribute net interest collected across all portfolio bonds as periodic dividend payments, which fluctuate with market conditions."
+      },
+      {
+        "dimension": "Liquidity and Selling Early",
+        "a": "Secondary-market sales depend on market liquidity and prevailing prices, which may be higher or lower than the original principal amount.",
+        "b": "Mutual fund shares can be redeemed back to the fund on any business day at the next calculated NAV, minus any redemption fee."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Bonds vs Bond Funds at a Glance",
+      "content": "A direct comparison between individual bonds and bond funds comes down to whether you need a guaranteed payout date or broad diversification. When you purchase an individual bond, you lend capital directly to an issuing entity such as a corporation, a municipality, or the federal government. That entity legally promises to return your initial principal on a specified calendar date while making fixed interest disbursements along the way. In contrast, investing in a bond fund pools your money from many investors into an SEC-registered investment company overseen by an investment adviser. The Securities and Exchange Commission (SEC) notes on Investor.gov that each fund share represents part ownership of the overall portfolio, with gains, losses, and management expenses shared proportionately.\n\nThis structural difference directly shapes how your capital behaves over time. An individual bond gives you total clarity over your cash flows if you intend to hold the instrument until its stated expiration date. Investor.gov says bonds typically pay interest on a regular schedule, such as every six months, and return the face value at maturity if the bond is held to maturity and the issuer does not default. A bond fund lowers risk by investing across a range of companies and industries rather than in one specific bond. However, most bond funds have no set maturity date. Your capital remains exposed to prevailing market interest rate shifts, and bond funds face the risk that you might lose money."
+    },
+    {
+      "heading": "How Individual Bonds Work",
+      "content": "An individual bond functions as a formal debt contract between a lender and a borrower. When an institution needs to finance capital projects, refinance older obligations, or cover operational deficits, it sells debt securities to investors. As reported by Investor.gov, the borrower specifies a par value, a coupon rate, and a maturity date at the time of issuance. Par value, also known as face value, represents the principal balance that the borrower must repay when the bond matures. The coupon rate dictates the annual interest you receive, which is typically divided into equal semiannual installments.\n\nFINRA explains that the vast majority of bonds have a maturity date set when the bond is issued. Short-term bonds mature in one to three years, intermediate-term issues mature in four to 10 years, and long-term bonds extend beyond a decade. If you retain the security through its entire lifespan, your financial outcome depends almost entirely on the borrower's solvency. The U.S. Department of the Treasury issues Treasury securities, which carry the full faith and credit of the U.S. government and come with relatively lower risks. Municipal bonds, issued by states, cities, and counties, are often backed by general tax revenues or specific infrastructure project receipts.\n\nIndividual bonds also carry structural features that can cut your investment timeline short. FINRA says callable bonds, which let the issuer retire a bond before it matures, are common. Investor.gov says an issuer might retire a bond early if interest rates decline. If an issuer calls your bond, the borrower retires the bond before it matures. In addition, if you need cash before the maturity date arrives, you must liquidate the bond on the secondary market. Bond prices on secondary markets fluctuate continuously based on market interest rates, credit rating revisions, and prevailing buyer liquidity."
+    },
+    {
+      "heading": "How Bond Funds Work",
+      "content": "A bond fund is an investment vehicle that pools money from many investors to invest in bonds or other debt securities. FINRA defines a bond fund as a mutual fund or exchange-traded fund (ETF) that invests in bonds, and Investor.gov describes a mutual fund as an SEC-registered open-end investment company. Instead of owning an underlying debt security directly, you own shares of the investment company. FINRA says each bond fund is managed to achieve a stated investment objective, and a fund may hold all of one type of bond, such as municipal bonds, or a combination of bond types. An index fund is one kind of fund that follows a market index, and the guide on [what an index fund is](/guides/what-is-an-index-fund/) explains how those work.\n\nBecause a bond fund continually buys and sells debt securities, the portfolio behaves very differently from a static bond. Consequently, most bond funds have no set maturity date. You cannot circle a date on the calendar to collect an original lump-sum face value. To withdraw your money, you can sell your shares back to the fund at the next calculated net asset value (NAV) on any business day, minus any redemption fees.\n\nIncome generated by a bond fund also fluctuates over time. Individual bonds pay fixed coupons, while a bond fund earns income across its portfolio holdings. Investor.gov notes that funds distribute this net earned income to shareholders as periodic dividend payments after deducting management fees and administrative costs. Dividends or interest payments may also change as market conditions change. Furthermore, Investor.gov emphasizes that mutual funds are never insured or guaranteed by the Federal Deposit Insurance Corporation (FDIC) or any other federal body. If the securities inside the portfolio decline in market value, the fund share price drops, and you can lose principal."
+    },
+    {
+      "heading": "What Happens When Interest Rates Rise",
+      "content": "When market interest rates increase, bond prices tend to fall, according to FINRA. Investor.gov says rising rates make newly issued bonds more appealing than older ones. When benchmark interest rates rise, newly issued bonds enter the market carrying higher coupon rates than debt issued in previous months or years. Investors looking to buy debt on the secondary market will not pay full par value for an older bond that pays an inferior interest rate. To find a willing buyer, the seller of the older bond must offer it at a discount.\n\nWhile rising interest rates depress market valuations for both individual debt and pooled funds, the practical consequence depends on whether you have a fixed maturity date. If you own an individual bond and prevailing market rates climb, the market value of your bond will fall. However, Investor.gov says that if bonds are held to maturity the investor will receive the face value, plus interest. If a bond is sold before maturity, Investor.gov says it may be worth more or less than the face value.\n\nBond fund investors have no maturity date to wait for. Because a bond fund has no terminal maturity date, a decline in portfolio bond prices immediately reduces the fund net asset value per share. FINRA points out that a metric known as duration, stated in years, measures how sensitive a bond or bond fund is to interest rate movements. The higher the duration number, the more the share price fluctuates when benchmark rates move. Funds holding bonds with longer average lives see a greater impact on price per share from interest rate fluctuations. When interest rates rise, bond prices tend to fall, and bond fund investors face the risk that they might lose money."
+    },
+    {
+      "heading": "Costs, Minimums and Diversification",
+      "content": "Purchasing individual bonds versus investing in bond funds involves different cost models, entry thresholds, and portfolio construction hurdles. When building a portfolio of individual bonds, achieving adequate diversification across different industries and issuers requires substantial capital. The U.S. government sells Treasury bonds in $100 denominations, electronic savings bonds start at $25 on TreasuryDirect, and corporate and municipal bonds can be bought through brokerage firms or banks. FINRA notes that most agency securities, for example, require a minimum initial investment of $10,000. \n\nIn the majority of secondary bond transactions, a brokerage firm acts as a principal rather than an agent. FINRA explains that when a firm acts as principal, it sells you a security from its own inventory and adds a markup to the price. When you sell that bond back, the broker may apply a markdown below prevailing market bids. This markup or markdown serves as the broker's primary compensation, but it is baked directly into the transaction price rather than itemized as an explicit commission fee. If a broker acts strictly as an agent, an explicit commission appears on your trade confirmation.\n\nBond funds solve the diversification and entry hurdle with pooled capital. Investor.gov states that many mutual funds set a relatively low dollar amount for initial investment and subsequent purchases. However, bond funds charge ongoing operational expenses that compound over time. As Investor.gov highlights, funds pass along their costs by deducting fees and expenses from NAV, so you pay them indirectly. This means you pay fund fees indirectly every day you hold the position. Investor.gov says a fund with high costs must perform better than a low-cost fund to generate the same returns for you."
+    },
+    {
+      "heading": "Who Should Choose Each Option",
+      "content": "Choosing between individual debt issues and pooled bond funds requires matching your personal timeline, cash requirements, and willingness to monitor credit health. Individual bonds represent the logical choice for investors with a defined financial liability due on an exact calendar date. If you need a specific amount on a specific date, holding an individual bond to maturity delivers that face value unless the issuer defaults or calls the bond. Held to maturity, an individual bond returns its face value plus interest unless the issuer defaults or calls the bond, but its price can fall if you sell earlier.\n\nBond funds fit investors making diversified, ongoing purchases in small increments. For ongoing, small-increment contributions, buying individual bonds may be impractical because agency bonds generally require $10,000 and broker-dealers may add markups. A bond fund allows investors to invest modest sums across a diversified portfolio of debt securities. Savers balancing fixed income against equities can review our guide on [stocks vs bonds](/compare/stocks-vs-bonds/) to see how debt allocations complement growth investments across an entire portfolio.\n\nWho this is not for: Neither individual bonds nor bond funds suit savers who need access to their capital within days and cannot afford any decline in nominal balance. Both products experience market price drops when interest rates rise, and neither mutual fund shares nor individual corporate bonds carry FDIC insurance protection. Savers who cannot absorb a price drop should compare the sourced risks before entering the bond market. Furthermore, this analysis is not for investors seeking a tailored investment plan. Savers should examine fund prospectuses and official municipal disclosures before allocating funds.\n\nWhat would change our answer: Our preference for individual bonds for target-date goals would flip if you might need to liquidate your position before the maturity date arrives, exposing you to severe secondary-market price discounts. Similarly, our preference for bond funds for small ongoing contributions would reverse if a fund charges high ongoing expense ratios that erode net yield compared with the markup a brokerage firm may add when it sells you a bond, or if an investor concentrates their holdings in an individual bond issued by a single financially troubled corporation."
+    }
+  ],
+  "verdictHeading": "Our Takeaway for Individual Bonds vs Bond Funds",
+  "verdict": "Based on published regulatory guidance from Investor.gov and FINRA, individual bonds fit when you have a specific capital requirement on a known future date and possess the ability to hold the instrument until it matures. Under that plan, Investor.gov says the investor receives the face value plus interest if the bond is held to maturity, unless the issuer defaults or calls the bond. In contrast, bond funds fit investors making small, recurring investments who require diversification across multiple issuers and who accept that share prices will fluctuate without a fixed maturity date. FINRA says that when you invest in bonds and bond funds, you face the risk that you might lose money. The decisive exception occurs when an investor faces unexpected liquidity needs prior to a bond maturity date, which strips away the principal protection of an individual bond and leaves both options fully exposed to interest rate risk. To take the next concrete step in evaluating bonds vs bond funds, check your targeted cash outlay date against your investment horizon and examine the prospectus or official statement of any debt asset before purchasing.",
+  "disclaimerText": "This comparison is provided for educational and informational purposes only and does not constitute financial, legal, tax, or investment advice.",
+  "faqs": [
+    {
+      "question": "What is the difference between a bond and a bond fund?",
+      "answer": "An individual bond is a direct debt security issued by a government or corporation with a set maturity date and specified interest rate, while a bond fund is an SEC-registered investment company that pools capital from many savers to invest in a diversified portfolio of debt securities."
+    },
+    {
+      "question": "Do bonds or bond funds lose value when interest rates rise?",
+      "answer": "Both individual bonds and bond funds lose market value when interest rates rise. However, an investor who holds an individual bond to maturity receives the original face value plus interest unless the issuer defaults or calls the bond, whereas a bond fund has no set maturity date and its share price continues to fluctuate."
+    },
+    {
+      "question": "Do bond funds charge fees?",
+      "answer": "Yes, bond funds charge operational and management fees that are paid indirectly by shareholders. The investment company deducts these expenses directly from the fund's total assets, which reduces the daily net asset value (NAV) and lowers overall investor returns over time."
+    },
+    {
+      "question": "Which is easier to buy in small amounts?",
+      "answer": "Bond funds are generally easier to purchase in small increments because many mutual funds set relatively low initial investment amounts, whereas agency bonds generally require a $10,000 minimum."
+    },
+    {
+      "question": "Do you get your money back at maturity with a bond fund?",
+      "answer": "No, most bond funds have no set maturity date, meaning there is no calendar date when an investor receives their original principal back. To exit a mutual fund, you can sell your shares back to the fund at the next calculated net asset value (NAV) on any business day, minus any redemption fees."
+    },
+    {
+      "question": "Can you lose money in individual bonds?",
+      "answer": "Yes, you can lose money in individual bonds if the borrowing entity defaults on its interest or principal obligations, or if you sell the bond on the secondary market before its maturity date when interest rates have increased or the issuer's credit rating has declined."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Investor.gov Bonds FAQs",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds"
+    },
+    {
+      "label": "Investor.gov Mutual Funds",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1"
+    },
+    {
+      "label": "FINRA Bonds",
+      "url": "https://www.finra.org/investors/investing/investment-products/bonds"
+    }
+  ],
+  "relatedComparisons": [
+    "stocks-vs-bonds",
+    "i-bonds-vs-tips",
+    "treasury-bills-vs-notes-vs-bonds",
+    "etf-vs-mutual-fund"
+  ],
+  "calculatorLinks": [],
+  "metaTitle": "",
+  "subtitle": "",
+  "optionAName": "",
+  "optionBName": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": [],
+  "relatedLinks": []
+}

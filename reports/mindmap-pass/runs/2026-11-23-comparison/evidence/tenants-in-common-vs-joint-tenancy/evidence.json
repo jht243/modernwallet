@@ -1,0 +1,248 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-write",
+  "route": "/compare/tenants-in-common-vs-joint-tenancy",
+  "readerQuestion": "What is the difference between tenants in common and joint tenancy? [PAA 4/4 on-topic: death of a tenant, taxes, disadvantages, which is better; ac 3/12 question completions: what is tenants in common vs joint tenancy, which is better tenants in common or joint tenancy (difference/pick pattern)]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/approval-manifest.json",
+      "sha256": "742964215dddbcd4f15c21e1a45ee47aba86954b4c200f5a277badd9b1cfb2b7"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/chart-review.json",
+      "sha256": "49cd0e187872eaea82e7107ba5e17320b8eb87b69d4b54de03083f7ad38a65ff"
+    },
+    "actionId": "A2"
+  },
+  "presentation": {
+    "medium": "text + comparison table",
+    "placement": "Opening answer in section 1, comparison table directly after",
+    "reason": "The reader needs a side-by-side on finite, sourced dimensions; a table lets them compare without interaction",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "Sourced facts are finite and state/year specific; no defensible adjustable-input model, so a static table answers faster"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static scannable layout answers faster without decorative motion"
+    }
+  },
+  "basis": "reported",
+  "decisionGap": "Page one is UK land-registry, vendor and law-firm pages. A US reader cannot find a neutral side-by-side that separates what the deed does (survivorship) from what federal tax law does at death, and that shows state law can change the default.",
+  "finding": "Joint tenancy with right of survivorship passes a deceased owner's interest to the surviving owner(s) by the deed, while a tenancy in common has no survivorship: the deceased owner's share goes through that owner's estate. State law sets the default: Florida (Fla. Stat. 689.15, 2024 edition) treats a conveyance to two or more as a tenancy in common unless the instrument expressly provides for survivorship, except for tenancy by the entirety. For federal tax at death, a married couple's qualified joint interest includes one-half in the decedent's gross estate whatever each spouse paid, while non-spouse joint tenants face a full-value inclusion minus what the survivor can show was originally theirs. Neither form is a tax winner: the outcome depends on whether the owners are spouses, who paid, and whether community property rules apply.",
+  "conditions": "Federal rules cited are 26 U.S.C. 2040, 26 U.S.C. 1014 and IRS Publication 551 (12/2025). Florida is one state's example of a state-law default (2024 edition including 2025C); other states differ and are not covered by captured sources (CA and NY statute sites returned 403). Tenancy-by-the-entirety is for spouses and 689.15 says entirety tenants become tenants in common on dissolution of marriage. Spouse vs non-spouse, who paid the purchase price, the survivorship language in the deed and community-property status all change the result.",
+  "whatWouldChange": "A state with a different survivorship default; spouses holding as tenants by the entirety; unmarried co-owners with unequal contributions; a community property state (1014(b)(6)); owners who add a trust or beneficiary-style transfer instead of co-titling; any change to the cited statutes.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/runs/2026-11-23-comparison/evidence/tenants-in-common-vs-joint-tenancy/cases.json",
+    "sha256": "ce2bf6e1018f8410789293722d2a55c5583e63c6e82592d386d80d07cf58564d"
+  },
+  "caseDecisions": "Retrieved 8 (A2/A3) and 0 (A1) approved records via mindmap-gates cases with the exact approved reader_question. All retrieved records are other-business client/owned-property records (DIY repair, indoor air, bowling, blockchain, HOA boards, law-firm intake, Cuba briefings) with no honest topical overlap with this personal-finance/benefits/estate comparison; all rejected, none used. No client or experience claim is made on this page (anchor-exempt: source-only reported comparison, no honestly fitting proprietary record).",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/brief.md",
+      "sha256": "93324e15e4df9c9c78137d371103cff8463eecba7702e674a4c8cca9221b8ac5"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/coverage-lookup.txt",
+      "sha256": "be22c192a76f7f2114553495b537d81627904d206567bea7b4ec64118bd0a8dd"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/keyword-volumes.json",
+      "sha256": "4f70395595f0341b4a880d938eca5e207e14ce2f5a695efa5a5eb0eb7e64780c"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/serp.json",
+      "sha256": "c61106da76e5a9a44cb5fcfa9f5a7d33e5f17be49159d2a5fb196ca3f8e3cf66"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/kw-status.json",
+      "sha256": "6ae183adb299df5fb3997cc3655d76db9cdb915668491376346adae263b9abee"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/lii-26-1014.txt",
+      "sha256": "14ca71d3caddb1b684b1beecfc8b2508de9a898ffa2e62adbdacad4bf1675b2e"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/lii-26-2040.txt",
+      "sha256": "1617e9902ff63bcb1829b7c50976b6451c967780241340740f6303a77c2d0f18"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/irs-p551.txt",
+      "sha256": "8d3cb9d9d515f43907873adbf5bad971478e8ee0c27dc29f3ed35654adbf8031"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/irs-tc409.txt",
+      "sha256": "d97888eed4326fc07a2342979cd7470715e9a5d1155ac43abb69b9b026327a09"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/fl-689-15.txt",
+      "sha256": "42fb32bc8b862c439afd8324378e3a528774aa21ec1d48dc4c59bdbb0f6cc1bb"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/lii-26-2033.txt",
+      "sha256": "df10b86167a569858847ef8805cfbdf81b2ba5353167eff92188d445db122626"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/fl-689-15-2025.txt",
+      "sha256": "fd87dd7b5d5d096cb0efe600ab7a9337d5348e538be7af4f92d8db85f8cf205b"
+    }
+  ],
+  "whyNoQuantitativeAnalysis": "The decision is a rules-and-structure comparison on finite attributes. The primary texts answer it directly and there are no defensible sourced inputs for a model (state, year and personal-facts dependent). Arbitrary arithmetic would not add value, so the source-only reported branch applies.",
+  "reasoning": "Fla. Stat. 689.15 reverses the common-law survivorship presumption: 'a devise, transfer or conveyance ... to two or more shall create a tenancy in common, unless the instrument creating the estate shall expressly provide for the right of survivorship; and in cases of estates by entirety, the tenants, upon dissolution of marriage, shall become tenants in common.' This one state example shows (a) survivorship comes from the instrument, (b) default rules are state law, and (c) spouses' tenancy by the entirety is separate. 26 U.S.C. 2040(a) includes the decedent's interest held as joint tenants with right of survivorship in the gross estate except what originally belonged to the survivor; 2040(b) includes one-half of a qualified joint interest (spouses as tenants by the entirety, or joint tenants with right of survivorship if the spouses are the only joint tenants). 26 U.S.C. 1014(a)(1) sets basis at fair market value at the date of death, 1014(b)(1) covers property acquired by bequest, devise or inheritance, 1014(b)(9) covers property required to be included in the gross estate by reason of death or form of ownership, and 1014(b)(6) covers a surviving spouse's half of community property. Pub. 551 gives the worked survivor-basis example and the community property state list. These support: survivorship is the main structural difference; tax basis differs by spouse status and contribution; there is no tax winner.",
+  "counterexample": "The common belief that joint tenancy always gives the survivor a better tax result fails: for spouses, only one-half is included and stepped up as a qualified joint interest, whereas a non-spouse survivor's basis depends on contribution (Pub. 551 example: Jim's basis is $44,000 where he contributed one-third, $54,000 had he contributed nothing). In a community property state the surviving spouse's half also gets a new basis under 1014(b)(6) if at least half of the community interest was includible. So neither form wins on tax across the board.",
+  "unknowns": [
+    "Share-size rules (equal vs unequal), partition rights, mortgage, creditor and property-tax treatment, and state defaults other than Florida are NOT in captured sources: the page must not state them as facts. Say they are state-specific and not covered here.",
+    "Estate tax thresholds are not in the captured sources: do not state any exemption amount or whether tax is owed."
+  ],
+  "selectedMedium": "text + comparison table (resolved from approved presentation: interaction not-useful, animation not-useful)",
+  "method": "Reported: read 26 U.S.C. 2040 and 1014 (Cornell LII), IRS Publication 551 (12/2025) and Fla. Stat. 689.15 (2024 edition including 2025C) captured 2026-11-23 UTC, quote the operative text, and map to comparison rows with the state-law caveat.",
+  "findings": [
+    {
+      "label": "reported",
+      "text": "Survivorship exists only if the instrument expressly provides it in Florida's default (Fla. Stat. 689.15, 2024 ed.)."
+    },
+    {
+      "label": "reported",
+      "text": "Spouses' qualified joint interest: one-half included in the decedent's gross estate regardless of contribution (26 U.S.C. 2040(b); Pub. 551)."
+    },
+    {
+      "label": "reported",
+      "text": "Non-spouse JTWROS: full value included except what the survivor originally owned (26 U.S.C. 2040(a)); Pub. 551 example shows survivor basis depends on contribution."
+    },
+    {
+      "label": "reported",
+      "text": "Property inherited or required to be included in the gross estate generally takes fair market value basis at death (26 U.S.C. 1014(a)(1), (b)(1), (b)(9)); community property surviving-spouse half exception 1014(b)(6)."
+    },
+    {
+      "label": "unknown",
+      "text": "Partition, creditors, mortgages, property tax and non-Florida defaults are state-specific and not sourced here."
+    }
+  ],
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [
+      "research/sources/fl-689-15.txt",
+      "research/sources/lii-26-2040.txt",
+      "research/sources/lii-26-1014.txt",
+      "research/sources/irs-p551.txt"
+    ],
+    "scopeAndLimits": "Federal tax statements limited to 26 U.S.C. 2040 and 1014 and Pub. 551; state-law statements limited to Florida's 2024 edition of 689.15 as one state's example.",
+    "publicMethod": "Each finding names the statute or IRS publication beside it with a deep link; Florida labelled as one state's example with edition date.",
+    "placement": "Opening answer, table cells, tax-basis section and takeaway"
+  },
+  "takeaway": {
+    "conclusion": "Joint tenancy with survivorship fits co-owners who want the property to pass automatically to the survivor; tenancy in common fits co-owners who want a share to pass through their own estate to chosen heirs. Neither is a tax winner: spouse status, who paid, and community property rules decide the basis result.",
+    "appliesTo": "Co-owners of US real estate (spouses, partners, relatives); general information, not legal advice.",
+    "basis": "reported (statutes, IRS Publication 551, Florida statute as one state's example)",
+    "changesIf": "Your state's survivorship default differs, you hold by the entirety as spouses, you live in a community property state, or contributions are unequal."
+  },
+  "closedFacts": [
+    {
+      "id": "FL-1",
+      "source": "Fla. Stat. 689.15 (2024 Florida Statutes, including 2025C), The Florida Senate",
+      "url": "https://www.flsenate.gov/Laws/Statutes/2024/689.15",
+      "text": "689.15 Estates by survivorship.The doctrine of the right of survivorship in cases of real estate and personal property held by joint tenants shall not prevail in this state; that is to say, except in cases of estates by entirety, a devise, transfer or conveyance heretofore or hereafter made to two or more shall create a tenancy in common, unless the instrument creating the estate shall expressly provide for the right of survivorship; and in cases of estates by entirety, the tenants, upon dissolution of marriage, shall become tenants in common."
+    },
+    {
+      "id": "USC2040-a",
+      "source": "26 U.S.C. 2040(a), Cornell LII",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2040",
+      "text": "The value of the gross estate shall include the value of all property to the extent of the interest therein held as joint tenants with right of survivorship by the decedent and any other person, or as tenants by the entirety by the decedent and spouse, or deposited, with any person carrying on the banking business, in their joint names and payable to either or the survivor, except such part thereof as may be shown to have originally belonged to such other person and never to have been received or acquired by the latter from the decedent for less than an adequate and full consideration in money or money's worth."
+    },
+    {
+      "id": "USC2040-b",
+      "source": "26 U.S.C. 2040(b), Cornell LII",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2040",
+      "text": "In the case of any qualified joint interest, the value included in the gross estate with respect to such interest by reason of this section is one-half of the value of such qualified joint interest. The term qualified joint interest means any interest in property held by the decedent and the decedent's spouse as (A) tenants by the entirety, or (B) joint tenants with right of survivorship, but only if the decedent and the spouse of the decedent are the only joint tenants."
+    },
+    {
+      "id": "USC1014-a",
+      "source": "26 U.S.C. 1014(a)(1), Cornell LII",
+      "url": "https://www.law.cornell.edu/uscode/text/26/1014",
+      "text": "Except as otherwise provided in this section, the basis of property in the hands of a person acquiring the property from a decedent or to whom the property passed from a decedent shall, if not sold, exchanged, or otherwise disposed of before the decedent's death by such person, be the fair market value of the property at the date of the decedent's death (with the alternate valuation and special use valuation elections in (a)(2) and (a)(3))."
+    },
+    {
+      "id": "USC1014-b1",
+      "source": "26 U.S.C. 1014(b)(1), Cornell LII",
+      "url": "https://www.law.cornell.edu/uscode/text/26/1014",
+      "text": "Property considered acquired from or passed from the decedent includes property acquired by bequest, devise, or inheritance, or by the decedent's estate from the decedent."
+    },
+    {
+      "id": "USC1014-b9",
+      "source": "26 U.S.C. 1014(b)(9), Cornell LII",
+      "url": "https://www.law.cornell.edu/uscode/text/26/1014",
+      "text": "In the case of decedents dying after December 31, 1953, property acquired from the decedent by reason of death, form of ownership, or other conditions, if by reason thereof the property is required to be included in determining the value of the decedent's gross estate under chapter 11 of subtitle B, is also considered acquired from the decedent (with a basis reduction for deductions allowed to the taxpayer if the property was acquired before the decedent's death)."
+    },
+    {
+      "id": "USC1014-b6",
+      "source": "26 U.S.C. 1014(b)(6), Cornell LII",
+      "url": "https://www.law.cornell.edu/uscode/text/26/1014",
+      "text": "In the case of decedents dying after December 31, 1947, property which represents the surviving spouse's one-half share of community property held by the decedent and the surviving spouse under the community property laws of any State, or possession of the United States or any foreign country, is considered acquired from the decedent if at least one-half of the whole of the community interest in such property was includible in determining the value of the decedent's gross estate."
+    },
+    {
+      "id": "P551-1",
+      "source": "IRS Publication 551 (12/2025), Property Held by Surviving Tenant",
+      "url": "https://www.irs.gov/publications/p551",
+      "text": "Example: John and Jim owned, as joint tenants with right of survivorship, business property purchased for $30,000. John furnished two-thirds of the purchase price and Jim furnished one-third. Depreciation deductions allowed before John's death were $12,000. Under local law, each had a half interest in the income from the property. At the date of John's death, the property had an FMV of $60,000, two-thirds of which is includible in John's estate. Jim's basis at the date of John's death is $44,000. If Jim hadn't contributed any part of the purchase price, Jim's basis at the date of John's death would be $54,000. If under local law Jim had no interest in the income from the property and contributed no part of the purchase price, Jim's basis at John's death would be $60,000, the FMV of the property."
+    },
+    {
+      "id": "P551-2",
+      "source": "IRS Publication 551 (12/2025), Qualified Joint Interest",
+      "url": "https://www.irs.gov/publications/p551",
+      "text": "Include one-half of the value of a qualified joint interest in the decedent's gross estate. It doesn't matter how much each spouse contributed to the purchase price. Also, it doesn't matter which spouse dies first. A qualified joint interest is any interest in property held by married individuals as either tenants by the entirety, or joint tenants with right of survivorship if the married couple are the only joint tenants. As the surviving spouse, your basis in property you owned with your spouse as a qualified joint interest is the cost of your half of the property with certain adjustments. Decrease the cost by any deductions allowed to you for depreciation and depletion. Increase the cost by your basis in the half you inherited."
+    },
+    {
+      "id": "P551-3",
+      "source": "IRS Publication 551 (12/2025), Community Property",
+      "url": "https://www.irs.gov/publications/p551",
+      "text": "In community property states (Arizona, California, Idaho, Louisiana, Nevada, New Mexico, Texas, Washington, and Wisconsin), married individuals are each usually considered to own half the community property. When either spouse dies, the total value of the community property, even the part belonging to the surviving spouse, generally becomes the basis of the entire property. For this rule to apply, at least half the value of the community property interest must be includible in the decedent's gross estate, whether or not the estate must file a return."
+    },
+    {
+      "id": "TC409",
+      "source": "IRS Topic no. 409, Capital gains and losses",
+      "url": "https://www.irs.gov/taxtopics/tc409",
+      "text": "Generally, an asset's basis is its cost to the owner, but if you received the asset as a gift or inheritance, refer to Publication 551, Basis of Assets for information about your basis."
+    },
+    {
+      "id": "INF-2",
+      "source": "Inference from FL-1 and USC1014-b1 (flag as inference)",
+      "url": null,
+      "text": "Tenancy in common has no survivorship: under Florida's default, a conveyance to two or more creates a tenancy in common unless the instrument expressly provides for survivorship, so a tenant in common's share does not pass to the co-owner by survivorship and instead passes through that owner's estate; property acquired by bequest, devise or inheritance is covered by 1014(b)(1). Do not state share sizes, partition, creditor, mortgage or property-tax rules."
+    },
+    {
+      "id": "USC2033",
+      "source": "26 U.S.C. 2033, Cornell LII",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2033",
+      "text": "The value of the gross estate shall include the value of all property to the extent of the interest therein of the decedent at the time of his death. (So a tenant in common's own share, owned at death, is included in the gross estate.)"
+    },
+    {
+      "id": "FL-2025",
+      "source": "Fla. Stat. 689.15 (2025 Florida Statutes), The Florida Senate",
+      "url": "https://www.flsenate.gov/Laws/Statutes/2025/689.15",
+      "text": "The 2025 edition of section 689.15 reads the same as the 2024 edition (FL-1): a conveyance to two or more creates a tenancy in common unless the instrument expressly provides for the right of survivorship, except in cases of estates by entirety. Cite 'the 2025 Florida Statutes' with the 2025 URL."
+    }
+  ],
+  "internalLinksAllowed": [
+    "/guides/how-to-fund-a-trust/",
+    "/compare/living-trust-vs-will/"
+  ],
+  "faqPlan": [
+    "What happens to a tenant in common when they die?",
+    "What happens to a joint tenant when they die?",
+    "Which is better for taxes, tenants in common or joint tenancy?",
+    "What are the disadvantages of joint tenancy?",
+    "Which is better, tenants in common or joint tenancy?"
+  ],
+  "faqNote": "PAA 4/4 on-topic (death of a tenant, taxes, disadvantages, which is better). Disadvantages answer must stay within sources: survivorship removes the ability to leave your share to chosen heirs through a will (inference from FL-1/USC2040), non-spouse inclusion rules and state defaults; do not add creditor, partition or mortgage claims.",
+  "stateLawNote": "Florida 2024 edition (including 2025C) is ONE state's example. Include the entirety note from 689.15. Keep a not-legal-advice disclaimer at the bottom only.",
+  "caseUses": [],
+  "exclusions": [
+    "_experience.md section G excludes financial, legal and professional services from any 'we tested' claim: TESTED format disabled, no testing/howWeTested/tested schema or byline.",
+    "Basis is reported: never write 'In our internal testing/modeling/analysis', 'we tested' or 'we modeled'. Attribute each finding to the named primary source ('Investor.gov says...', 'Section 689.15 provides...').",
+    "Disclaimer (general information, not legal/tax/investment advice) goes at the bottom only. No named-reviewer or professional-review claim."
+  ],
+  "growth": {
+    "path": "reports/mindmap-pass/runs/2026-11-23-comparison/evidence/tenants-in-common-vs-joint-tenancy/growth.json"
+  }
+}

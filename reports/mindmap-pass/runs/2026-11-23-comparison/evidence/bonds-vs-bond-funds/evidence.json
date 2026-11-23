@@ -1,0 +1,281 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-write",
+  "route": "/compare/bonds-vs-bond-funds",
+  "readerQuestion": "Should I buy individual bonds or a bond fund? [PAA 0/4 on-topic; 4/4 off-topic: yield, FD, Buffett, 60/40; ac 7/29 question completions: should i buy bonds or bond funds, which is better bonds or bond funds (pick pattern)]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/approval-manifest.json",
+      "sha256": "742964215dddbcd4f15c21e1a45ee47aba86954b4c200f5a277badd9b1cfb2b7"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/chart-review.json",
+      "sha256": "49cd0e187872eaea82e7107ba5e17320b8eb87b69d4b54de03083f7ad38a65ff"
+    },
+    "actionId": "A1"
+  },
+  "presentation": {
+    "medium": "text + comparison table",
+    "placement": "Opening answer in section 1, comparison table directly after",
+    "reason": "The reader needs a side-by-side on finite, sourced dimensions; a table lets them compare without interaction",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "Sourced facts are finite and state/year specific; no defensible adjustable-input model, so a static table answers faster"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static scannable layout answers faster without decorative motion"
+    }
+  },
+  "basis": "reported",
+  "decisionGap": "Top results are broker or forum pages. A reader cannot find a neutral side-by-side that says what each choice does at maturity, under rising rates, on cost and on diversification, tied to Investor.gov and FINRA text.",
+  "finding": "Individual bonds fit a known date: if held to maturity the holder gets face value plus interest unless the issuer defaults or calls the bond. Most bond funds have no set maturity date, so a fund holder has no such date to wait for, and both lose price when interest rates rise. A bond fund fits small, diversified, ongoing buying; individual bonds fit a fixed date and a hold-to-maturity plan.",
+  "conditions": "Individual bonds: return of face value at maturity requires holding to maturity and issuer paying (credit risk) and not calling the bond early (call risk); selling early can return more or less than face value; most bond purchases through a broker include a markup or markdown. Funds: price per share moves with the value of the holdings; fund fees and expenses vary widely; funds are not FDIC-insured and can lose money; check the fund's prospectus for its own terms.",
+  "whatWouldChange": "Needing the money before a bond matures (price risk applies to the bond too); a fund's fees being high versus the dealer markup on a small bond purchase; owning one weak issuer's bonds instead of a diversified pool; a fund with its own stated end date in its prospectus.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/runs/2026-11-23-comparison/evidence/bonds-vs-bond-funds/cases.json",
+    "sha256": "5f5996a5bce8baddf1e5dee76136ba2952f7f58b2010c9e1cd24be1ba5a473ed"
+  },
+  "caseDecisions": "Retrieved 8 (A2/A3) and 0 (A1) approved records via mindmap-gates cases with the exact approved reader_question. All retrieved records are other-business client/owned-property records (DIY repair, indoor air, bowling, blockchain, HOA boards, law-firm intake, Cuba briefings) with no honest topical overlap with this personal-finance/benefits/estate comparison; all rejected, none used. No client or experience claim is made on this page (anchor-exempt: source-only reported comparison, no honestly fitting proprietary record).",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/brief.md",
+      "sha256": "93324e15e4df9c9c78137d371103cff8463eecba7702e674a4c8cca9221b8ac5"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/coverage-lookup.txt",
+      "sha256": "be22c192a76f7f2114553495b537d81627904d206567bea7b4ec64118bd0a8dd"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/keyword-volumes.json",
+      "sha256": "4f70395595f0341b4a880d938eca5e207e14ce2f5a695efa5a5eb0eb7e64780c"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/serp.json",
+      "sha256": "c61106da76e5a9a44cb5fcfa9f5a7d33e5f17be49159d2a5fb196ca3f8e3cf66"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/kw-status.json",
+      "sha256": "6ae183adb299df5fb3997cc3655d76db9cdb915668491376346adae263b9abee"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ig-bonds.txt",
+      "sha256": "3f222fde33ab5a84bfe36bce3b5909b73741807a6ad6e9c438ff605edc333d9e"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ig-mutual-funds.txt",
+      "sha256": "7545b2b45ac4c9a9d9983d272a708fe683adf227a8f0235e4922b5c9610b9658"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/finra-bonds.txt",
+      "sha256": "4fb37fddb9d10dd833c628ef03edf911d3862bab7fa0d33cb4d3177a2360c83a"
+    }
+  ],
+  "whyNoQuantitativeAnalysis": "The decision is a rules-and-structure comparison on finite attributes. The primary texts answer it directly and there are no defensible sourced inputs for a model (state, year and personal-facts dependent). Arbitrary arithmetic would not add value, so the source-only reported branch applies.",
+  "reasoning": "Investor.gov states a bond is repaid at par at maturity, and 'If bonds are held to maturity the investor will receive the face value, plus interest. If sold before maturity, the bond may be worth more or less than the face value.' It also lists credit, interest rate, inflation, liquidity and call risk. FINRA says the vast majority of bonds have a maturity date set at issue, defines a bond fund as a mutual fund or ETF that invests in bonds, says funds charge fees that 'can vary widely', and says 'when you invest in bonds and bond funds, you face the risk that you might lose money'. Investor.gov says mutual fund shares are redeemed at the next calculated net asset value (NAV) and are not FDIC-insured. A fund holder's exit is therefore a sale at NAV, not repayment of par on a date: this is why 'most bond funds have no set maturity date' (reviewer-approved wording; FINRA's 'average maturity' definition describes the average time for a fund's holdings, not a date the fund repays you). FINRA's brokerage-compensation text supports markup and markdown on bond trades. Together these support the pick: individual bonds for a known date and hold-to-maturity plan; a bond fund for small, diversified, ongoing buying; both fall in price when rates rise.",
+  "counterexample": "A bond fund can beat individual bonds for a small saver: Treasury bonds and notes are sold from $100 denominations and savings bonds from $25 (FINRA), yet corporate and municipal bonds trade through broker-dealers that may add a markup, and agency securities generally need $10,000 minimum, so a small diversified portfolio of individual bonds may be impractical. Conversely, a fund holder cannot lock in return of par on a date, and a single-issuer bond holder carries concentrated credit risk. Call risk and dealer markup mean 'hold to maturity gets par back' is conditional.",
+  "unknowns": [
+    "Specific fund expense ratios, current yields, durations and defined-maturity fund terms are not in the captured sources and must not be stated.",
+    "The FINRA Bonds page was captured at its investment-products URL; the finra.org bond-funds URL returns the same Bonds page, so no extra FINRA facts exist.",
+    "Investor.gov bond-fund glossary and bulletin captures contain no usable text (empty glossary body, 404 bulletin); SEC bond-fund PDF returned 403. None of these may be cited."
+  ],
+  "selectedMedium": "text + comparison table (resolved from approved presentation: interaction not-useful, animation not-useful)",
+  "method": "Reported: read Investor.gov Bonds FAQs, Investor.gov Mutual Funds page and FINRA Bonds page (captured 2026-11-23 UTC), extract verbatim statements, and map each to a comparison row.",
+  "findings": [
+    {
+      "label": "reported",
+      "text": "Held to maturity, a bond returns face value plus interest; sold early it may be worth more or less (Investor.gov Bonds FAQs)."
+    },
+    {
+      "label": "reported",
+      "text": "A bond fund is a mutual fund or ETF that invests in bonds and charges fees and expenses that vary widely (FINRA)."
+    },
+    {
+      "label": "reported",
+      "text": "Rising rates push bond prices down for every bond, and bonds and bond funds can lose money (FINRA)."
+    },
+    {
+      "label": "reported",
+      "text": "Bond buys through a broker-dealer may carry a markup or markdown; fund purchases carry fees paid indirectly through NAV (FINRA; Investor.gov)."
+    },
+    {
+      "label": "unknown",
+      "text": "Whether a given fund has a defined end date, its fees or its duration: read its prospectus."
+    }
+  ],
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [
+      "research/sources/ig-bonds.txt",
+      "research/sources/ig-mutual-funds.txt",
+      "research/sources/finra-bonds.txt"
+    ],
+    "scopeAndLimits": "Statements are limited to what Investor.gov and FINRA text literally say; 'most bond funds have no set maturity date' is a reviewer-approved inference from NAV redemption plus FINRA's average-maturity definition, stated with the prospectus caveat.",
+    "publicMethod": "Each table cell and paragraph names Investor.gov or FINRA beside the finding with a deep link.",
+    "placement": "Opening answer, table cells, and takeaway"
+  },
+  "takeaway": {
+    "conclusion": "Choose individual bonds when you need a specific amount on a specific date and can hold to maturity; choose a bond fund for diversified, small-increment, ongoing buying and accept that most funds have no set maturity date.",
+    "appliesTo": "Savers deciding the vehicle after choosing to hold bonds; not personalized advice.",
+    "basis": "reported (Investor.gov, FINRA)",
+    "changesIf": "You may need the money before maturity, the issuer is a single weak credit, a callable bond is called early, or the fund's fees exceed the markup on your purchase."
+  },
+  "closedFacts": [
+    {
+      "id": "IGB-1",
+      "source": "Investor.gov Bonds FAQs",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds",
+      "text": "A bond is a debt security, like an IOU. When you buy a bond, you are lending to the issuer, which may be a government, municipality, or corporation. In return, the issuer promises to pay you a specified rate of interest during the life of the bond and to repay the principal, also known as face value or par value of the bond, when it 'matures,' or comes due after a set period of time."
+    },
+    {
+      "id": "IGB-2",
+      "source": "Investor.gov Bonds FAQs",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds",
+      "text": "If the bonds are held to maturity bondholders get back the entire principal, so bonds are a way to preserve capital while investing. Bonds typically pay interest on a regular schedule, such as every six months."
+    },
+    {
+      "id": "IGB-3",
+      "source": "Investor.gov Bonds FAQs",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds",
+      "text": "Interest rate risk: Interest rate changes can affect a bond's value. If bonds are held to maturity the investor will receive the face value, plus interest. If sold before maturity, the bond may be worth more or less than the face value. Rising interest rates will make newly issued bonds more appealing because the newer bonds will have a higher rate of interest than older ones. To sell an older bond with a lower interest rate, you might have to sell it at a discount."
+    },
+    {
+      "id": "IGB-4",
+      "source": "Investor.gov Bonds FAQs",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds",
+      "text": "Credit risk: The issuer may fail to timely make interest or principal payments and thus default on its bonds. Call risk: The possibility that a bond issuer retires a bond before its maturity date, something an issuer might do if interest rates decline, much like a homeowner might refinance a mortgage. Liquidity risk: the risk that investors won't find a market for the bond, potentially preventing them from buying or selling when they want. Inflation risk: inflation reduces purchasing power, a risk for investors receiving a fixed rate of interest."
+    },
+    {
+      "id": "IGB-5",
+      "source": "Investor.gov Bonds FAQs",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds",
+      "text": "U.S. Treasuries are issued by the U.S. Department of the Treasury and carry the full faith and credit of the U.S. government. Municipal bond interest generally is exempt from federal income tax and also may be exempt from state and local taxes for residents of the issuing state."
+    },
+    {
+      "id": "FIN-1",
+      "source": "FINRA Bonds",
+      "url": "https://www.finra.org/investors/investing/investment-products/bonds",
+      "text": "Bonds and bond funds can help diversify your portfolio. Bond prices fluctuate, although they tend to be less volatile than stocks. When interest rates rise, bond prices tend to fall, and vice versa."
+    },
+    {
+      "id": "FIN-2",
+      "source": "FINRA Bonds",
+      "url": "https://www.finra.org/investors/investing/investment-products/bonds",
+      "text": "The vast majority of bonds have a maturity date that's set when the bond is issued. On a bond's maturity date, the borrower fulfills its debt obligation by paying bond holders the final interest payment and the bond's face value, called par value. Not all bonds reach maturity. Callable bonds, which allow the issuer to retire a bond before it matures, are common."
+    },
+    {
+      "id": "FIN-3",
+      "source": "FINRA Bonds",
+      "url": "https://www.finra.org/investors/investing/investment-products/bonds",
+      "text": "A bond fund is a mutual fund or exchange-traded fund that invests in bonds. These funds can contain all of one type of bond (municipal bonds, for instance) or a combination of bond types. Each bond fund is managed to achieve a stated investment objective. Like most investments, bond funds charge fees and expenses that are paid by investors. These costs can vary widely from fund to fund and across share classes."
+    },
+    {
+      "id": "FIN-4",
+      "source": "FINRA Bonds",
+      "url": "https://www.finra.org/investors/investing/investment-products/bonds",
+      "text": "In the majority of bond transactions, a brokerage firm acts as principal, selling you a bond it already owns. When a brokerage firm sells you a bond in a principal capacity, it may increase or mark up the price you pay over the price the firm paid to acquire the bond. If you sell a bond, the firm may offer you a price that includes a markdown. The markup or markdown is the brokerage firm's compensation. If the firm acts as agent, you may be charged a commission, which will appear on your trading confirmation."
+    },
+    {
+      "id": "FIN-5",
+      "source": "FINRA Bonds",
+      "url": "https://www.finra.org/investors/investing/investment-products/bonds",
+      "text": "Treasury bonds can be bought in denominations of $100 through an account at a brokerage firm or commercial bank, or directly from the U.S. government through auctions. Savings bonds (EE and I bonds) can be purchased electronically for as little as $25 through TreasuryDirect. Corporate and municipal bonds can be purchased through full-service, discount or online brokerage firms and through investment and commercial banks. Most agency bonds are sold in a variety of increments, generally requiring a minimum initial investment of $10,000."
+    },
+    {
+      "id": "FIN-6",
+      "source": "FINRA Bonds",
+      "url": "https://www.finra.org/investors/investing/investment-products/bonds",
+      "text": "Bond funds can be bought and sold through an investment professional, your brokerage firm's website or app, or the fund directly. If you work with an investment professional, the choice of bond funds is limited to those the brokerage firm allows its professionals to sell."
+    },
+    {
+      "id": "FIN-7",
+      "source": "FINRA Bonds",
+      "url": "https://www.finra.org/investors/investing/investment-products/bonds",
+      "text": "Selling Before the Maturity Date: If you sell a bond before it matures, you may not receive the full principal amount of the bond and won't receive any remaining interest payments. The price you receive will depend on where the bond is currently trading on the secondary market, which may be more or less than the principal and remaining interest the issuer would be required to pay you if you held to maturity."
+    },
+    {
+      "id": "FIN-8",
+      "source": "FINRA Bonds",
+      "url": "https://www.finra.org/investors/investing/investment-products/bonds",
+      "text": "Risks: when you invest in bonds and bond funds, you face the risk that you might lose money. Interest Rate Risk: changes in interest rates may reduce, or increase, the market value of a bond you hold. Call Risk: the risk that a bond may be redeemed by an issuer when interest rates are falling; investors can avoid call risk by purchasing non-callable bonds. Credit Risk: most bonds other than U.S. Treasury securities face some degree of credit risk, often indicated by a credit rating. Duration Risk: duration, stated in years, signals how much the price of your bond investment is likely to fluctuate when interest rates move; the higher the duration number, the more sensitive the investment."
+    },
+    {
+      "id": "FIN-9",
+      "source": "FINRA Bonds (key terms)",
+      "url": "https://www.finra.org/investors/investing/investment-products/bonds",
+      "text": "Average maturity is the average time that a mutual fund's bond holdings will take to be fully payable. Interest rate fluctuations have a greater impact on the price per share of funds holding bonds with longer average lives."
+    },
+    {
+      "id": "FIN-10",
+      "source": "FINRA Bonds",
+      "url": "https://www.finra.org/investors/investing/investment-products/bonds",
+      "text": "The tax rules that apply to bonds are complicated. Whether or not you will need to pay taxes on a bond's interest income (coupons) or a bond fund's dividends often depends on the entity that issued the bond. You might want to check with your tax advisor about the tax consequences before you invest."
+    },
+    {
+      "id": "IGM-1",
+      "source": "Investor.gov Mutual Funds",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1",
+      "text": "A mutual fund is an SEC-registered open-end investment company that pools money from many investors. Each mutual fund share represents an investor's part ownership of the mutual fund's portfolio and the gains and losses the portfolio generates. Bond funds or income funds invest primarily in bonds or other types of debt securities. A bond fund may concentrate its investments in a particular type of bond or debt security or a mixture of types. The securities that bond funds hold will vary in terms of risk, return, duration, volatility and other features."
+    },
+    {
+      "id": "IGM-2",
+      "source": "Investor.gov Mutual Funds",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1",
+      "text": "Diversification: Mutual funds may invest in a range of companies and industries rather than investing in one specific stock or bond. This helps to lower your risk if one company fails. Low Minimum Investment: many mutual funds set a relatively low dollar amount for initial investment and subsequent purchases. Liquidity: mutual fund investors can readily sell their shares back to the fund at the next calculated net asset value (NAV) on any business day, minus any redemption fees."
+    },
+    {
+      "id": "IGM-3",
+      "source": "Investor.gov Mutual Funds",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1",
+      "text": "Dividend payments: a fund may earn income from its portfolio, for example interest on bonds. The fund then pays the shareholders nearly all the income, less expenses, as a dividend payment. Dividends or interest payments may also change as market conditions change."
+    },
+    {
+      "id": "IGM-4",
+      "source": "Investor.gov Mutual Funds",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1",
+      "text": "Mutual funds are not guaranteed or insured by the FDIC or any other government agency. They all carry some level of risk. You may lose some or all of the money you invest because the investments held by a fund can go down in value."
+    },
+    {
+      "id": "IGM-5",
+      "source": "Investor.gov Mutual Funds",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1",
+      "text": "Funds pass along their costs to investors by deducting fees and expenses from NAV, so you pay the fees and expenses indirectly. Even small differences in fees can mean large differences in returns over time. A fund with high costs must perform better than a low-cost fund to generate the same returns for you."
+    },
+    {
+      "id": "IGM-6",
+      "source": "Investor.gov Mutual Funds",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1",
+      "text": "Before investing in a mutual fund, you should carefully read the fund's available information, including its prospectus and most recent shareholder report, which are available on the SEC's website and the fund's website, free of charge."
+    },
+    {
+      "id": "INF-1",
+      "source": "Reviewer-approved inference (CR1-A1-COUNTEREXAMPLE)",
+      "url": null,
+      "text": "Most bond funds have no set maturity date. Basis: fund shares are redeemed at NAV (IGM-2), not repaid at par on a date, and FINRA defines only an 'average maturity' of a fund's holdings (FIN-9). Present as: 'Most bond funds have no set maturity date' and send the reader to the fund's prospectus (IGM-6) for that fund's own terms. Do not name any fund or give any fund statistic."
+    }
+  ],
+  "internalLinksAllowed": [
+    "/compare/stocks-vs-bonds/",
+    "/guides/what-is-an-index-fund/",
+    "/compare/i-bonds-vs-tips/"
+  ],
+  "faqPlan": [
+    "What is the difference between a bond and a bond fund?",
+    "Do bonds or bond funds lose value when interest rates rise?",
+    "Do bond funds charge fees?",
+    "Which is easier to buy in small amounts?",
+    "Do you get your money back at maturity with a bond fund?",
+    "Can you lose money in individual bonds?"
+  ],
+  "faqNote": "PAA were 0/4 on-topic (off-topic: yield, FD, Buffett, 60/40): FAQ uses only the sourced questions above; do not answer yield, fixed deposit, Buffett or 60/40 questions.",
+  "caseUses": [],
+  "exclusions": [
+    "_experience.md section G excludes financial, legal and professional services from any 'we tested' claim: TESTED format disabled, no testing/howWeTested/tested schema or byline.",
+    "Basis is reported: never write 'In our internal testing/modeling/analysis', 'we tested' or 'we modeled'. Attribute each finding to the named primary source ('Investor.gov says...', 'Section 689.15 provides...').",
+    "Disclaimer (general information, not legal/tax/investment advice) goes at the bottom only. No named-reviewer or professional-review claim."
+  ],
+  "growth": {
+    "path": "reports/mindmap-pass/runs/2026-11-23-comparison/evidence/bonds-vs-bond-funds/growth.json"
+  }
+}

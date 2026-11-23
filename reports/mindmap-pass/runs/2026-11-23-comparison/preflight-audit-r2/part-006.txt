@@ -1,0 +1,104 @@
+f1f26604e3d34672f96e2aa86229be1c792486a17452e0/sec-ib-bondfunds.txt",
+      "sha256": "5c2f6530d5bad9b2c7f1f26604e3d34672f96e2aa86229be1c792486a17452e0",
+      "checkedAt": "2026-11-23T09:18:25.376720+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/sec-ib-bondfunds.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/79976974d75bb903a49bf55627c60650350258b32efc9efe716952801b56a392/ssa-disability-benefits.txt",
+      "sha256": "79976974d75bb903a49bf55627c60650350258b32efc9efe716952801b56a392",
+      "checkedAt": "2026-11-23T09:18:25.376720+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ssa-disability-benefits.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/cb7f0ea8c7d768373563ca26b5bd73c330d910233a17aaad29a82250eb47e999/ssa-pub-10029.txt",
+      "sha256": "cb7f0ea8c7d768373563ca26b5bd73c330d910233a17aaad29a82250eb47e999",
+      "checkedAt": "2026-11-23T09:18:25.376720+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ssa-pub-10029.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/a9295583aeef54758bc5f27af846f05e94f4da589b0919099fa7153f6ab9c32d/ssa-ssi-amounts.txt",
+      "sha256": "a9295583aeef54758bc5f27af846f05e94f4da589b0919099fa7153f6ab9c32d",
+      "checkedAt": "2026-11-23T09:18:25.376720+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ssa-ssi-amounts.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/918596421cc00cf262edcdd741d478d76008da1f5acb8c37d39c86b5e448c4fb/ssa-ssi-overview.txt",
+      "sha256": "918596421cc00cf262edcdd741d478d76008da1f5acb8c37d39c86b5e448c4fb",
+      "checkedAt": "2026-11-23T09:18:25.376720+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ssa-ssi-overview.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/486af6187e2e97eafe49719b82b868ef1fec2c8cab733504632259819d495a20/studentaid-rates.txt",
+      "sha256": "486af6187e2e97eafe49719b82b868ef1fec2c8cab733504632259819d495a20",
+      "checkedAt": "2026-11-23T09:18:25.376720+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/studentaid-rates.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/61066d2b358f4a97686f36add5794a7a4d06032c1ec3e81737b2fde0758f20f3/visa-business.txt",
+      "sha256": "61066d2b358f4a97686f36add5794a7a4d06032c1ec3e81737b2fde0758f20f3",
+      "checkedAt": "2026-11-23T09:18:25.376720+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/visa-business.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/d46476adc0495438a33341ede4a078a6463178e13a9f45c84cc2a4e39fb87421/review.json",
+      "sha256": "d46476adc0495438a33341ede4a078a6463178e13a9f45c84cc2a4e39fb87421",
+      "checkedAt": "2026-11-23T09:18:25.376720+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/audit/review.json"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 1,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "snapshot": {
+    "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/a41c551bdc1854de508b49fb8a2001912268484b71a6b06b2efca0b660a6f084/preview-snapshot-r2.json",
+    "sha256": "a41c551bdc1854de508b49fb8a2001912268484b71a6b06b2efca0b660a6f084",
+    "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/audit/preview-snapshot-r2.json"
+  },
+  "findings": [
+    {
+      "id": "A1-1",
+      "status": "open",
+      "evidence": "FIX table cell Maturity Date, Bond Funds: 'Most bond funds have no set maturity date; shares are bought and sold at the current net asset value (NAV), according to [Investor.gov](...)' -> 'A bond fund holds a changing mix of bonds, so most bond funds have no single maturity date to wait for. Investor.gov says mutual fund shares are redeemed at the next calculated net asset value (NAV).' FIX How Bond Funds Work: 'Because a bond fund continually buys and sells debt securities, the portfolio behaves very differently from a static bond. Consequently, most bond funds have no set maturity date.' -> 'A bond fund holds a changing mix of bonds, so most bond funds have no single maturity date.' Alternatively capture a working primary source (SEC Investor Bulletin on bond funds) and cite it."
+    },
+    {
+      "id": "A1-2",
+      "status": "open",
+      "evidence": "FIX opener: 'a fund investor holds shares in a pooled portfolio and redeems them at the next calculated net asset value (NAV), minus any redemption fees' -> 'a bond mutual fund investor holds shares in a pooled portfolio and redeems them at the next calculated net asset value (NAV), minus any redemption fees, while bond ETF shares trade on an exchange'. Apply the same 'mutual fund' scope in the table row, How Bond Funds Work and the FAQ answer 'Do you get your money back at maturity with a bond fund?'. Keep the ETF sentence to what the site's index fund guide already says ('An ETF trades on an exchange during the day')."
+    },
+    {
+      "id": "A1-3",
+      "status": "open",
+      "evidence": "FIX opener p2: 'Rising interest rates push bond prices down across the entire fixed-income market, which means both individual bonds and bond funds lose market value when prevailing rates increase.' -> 'FINRA says bond prices tend to fall when interest rates rise, so both individual bonds and bond funds can lose market value when rates increase.' FIX: 'Bond funds spread risk across a range of companies and industries, yet they charge fees and expenses that reduce your returns over time.' -> 'Investor.gov says mutual funds may invest in a range of companies and industries rather than in one specific bond, yet they charge fees and expenses that reduce your returns over time.' Same hedge for the FAQ answer 'Both individual bonds and bond funds lose market value when interest rates rise.' (use 'tend to lose')."
+    },
+    {
+      "id": "A1-4",
+      "status": "open",
+      "evidence": "FIX takeaway: 'which strips away the principal protection of an individual bond and leaves both options fully exposed to interest rate risk' -> 'which means selling an individual bond at a price that may be below its face value, so both options are exposed to interest rate risk'. FIX 'exposing you to severe secondary-market price discounts' -> 'exposing you to selling at a price that may be below face value'. FIX 'your financial outcome depends almost entirely on the borrower's solvency' -> 'Investor.gov says you receive the face value plus interest unless the issuer defaults or calls the bond.'"
+    },
+    {
+      "id": "A1-5",
+      "status": "open",
+      "evidence": "FIX: link the first occurrence of each: [Securities and Exchange Commission (SEC)](https://www.sec.gov/) notes on [Investor.gov](https://www.investor.gov/); [U.S. Department of the Treasury](https://home.treasury.gov/); [TreasuryDirect](https://www.treasurydirect.gov/); [Federal Deposit Insurance Corporation (FDIC)](https://www.fdic.gov/). Define SEC and FDIC before first use (the table cell 'Funds are not FDIC-insured and can lose money' and 'SEC-registered investment company' come before the expansions)."
+    },
+    {
+      "id": "A1-6",
+      "status": "open",
+      "evidence": "FIX: split the 45-word sentence into 'If you hold an individual bond to its maturity date, the borrower pays you the final interest payment and the face value (par value). That holds unless the issuer defaults or calls the bond early.' Replace each semicolon with a period. Delete 'Furthermore,', 'Consequently,' and 'In addition,'. Break the long run

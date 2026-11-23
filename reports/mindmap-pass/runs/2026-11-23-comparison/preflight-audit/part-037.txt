@@ -1,0 +1,78 @@
+idence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ny-rpp-240.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/5c2f6530d5bad9b2c7f1f26604e3d34672f96e2aa86229be1c792486a17452e0/sec-ib-bondfunds.txt",
+      "sha256": "5c2f6530d5bad9b2c7f1f26604e3d34672f96e2aa86229be1c792486a17452e0",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/sec-ib-bondfunds.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/79976974d75bb903a49bf55627c60650350258b32efc9efe716952801b56a392/ssa-disability-benefits.txt",
+      "sha256": "79976974d75bb903a49bf55627c60650350258b32efc9efe716952801b56a392",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ssa-disability-benefits.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/cb7f0ea8c7d768373563ca26b5bd73c330d910233a17aaad29a82250eb47e999/ssa-pub-10029.txt",
+      "sha256": "cb7f0ea8c7d768373563ca26b5bd73c330d910233a17aaad29a82250eb47e999",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ssa-pub-10029.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/a9295583aeef54758bc5f27af846f05e94f4da589b0919099fa7153f6ab9c32d/ssa-ssi-amounts.txt",
+      "sha256": "a9295583aeef54758bc5f27af846f05e94f4da589b0919099fa7153f6ab9c32d",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ssa-ssi-amounts.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/918596421cc00cf262edcdd741d478d76008da1f5acb8c37d39c86b5e448c4fb/ssa-ssi-overview.txt",
+      "sha256": "918596421cc00cf262edcdd741d478d76008da1f5acb8c37d39c86b5e448c4fb",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ssa-ssi-overview.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/486af6187e2e97eafe49719b82b868ef1fec2c8cab733504632259819d495a20/studentaid-rates.txt",
+      "sha256": "486af6187e2e97eafe49719b82b868ef1fec2c8cab733504632259819d495a20",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/studentaid-rates.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/61066d2b358f4a97686f36add5794a7a4d06032c1ec3e81737b2fde0758f20f3/visa-business.txt",
+      "sha256": "61066d2b358f4a97686f36add5794a7a4d06032c1ec3e81737b2fde0758f20f3",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/visa-business.txt"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "snapshot": {
+    "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/0c7b0bf8a83184d3450831ba2de8c15e9ecd51c818efe85a53c7d10140c78542/preview-snapshot-all.json",
+    "sha256": "0c7b0bf8a83184d3450831ba2de8c15e9ecd51c818efe85a53c7d10140c78542",
+    "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/audit/preview-snapshot-all.json"
+  },
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/runs/2026-11-23-comparison/handoff-audit-1.json",
+    "sha256": "a682232570c5f4c5b5c7b85f179129ba3db50365337615616511a7905f88d8dc"
+  }
+}
+

@@ -1,0 +1,17 @@
+{
+  "originRoutine": "mindmap-pass",
+  "jobId": "2026-11-23-comparison",
+  "route": "/compare/ssdi-vs-ssi",
+  "queryFamily": "ssdi vs ssi; difference between ssdi and ssi; ssi vs ssdi",
+  "hypothesis": "A net-new, primary-sourced comparison table earns incremental Google clicks for this query family.",
+  "primaryMetric": "Google clicks (GSC, canonical URL, US)",
+  "baseline": {
+    "status": "unavailable",
+    "note": "New route; no before-period. Not zero."
+  },
+  "comparatorPlan": "Age-matched cohort of other net-new /compare/ routes at day 28 and day 56; unchanged older /compare/ pages",
+  "changeScope": "new page",
+  "sourceRefreshTrigger": "Any amendment to the cited 20 CFR sections or a new SSA annual resource/amount publication",
+  "outcomeStatus": "not-yet-published",
+  "deployment": "local-only until Phase 9"
+}

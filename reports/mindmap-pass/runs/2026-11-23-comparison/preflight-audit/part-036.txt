@@ -1,0 +1,131 @@
+T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ecfr-20-416-905.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/f2ae9e41fc8c5318ad0594509b885a5c1cb29cee8ab47e8edfab8ca88a6b13f0/finra-bond-funds.txt",
+      "sha256": "f2ae9e41fc8c5318ad0594509b885a5c1cb29cee8ab47e8edfab8ca88a6b13f0",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/finra-bond-funds.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/4fb37fddb9d10dd833c628ef03edf911d3862bab7fa0d33cb4d3177a2360c83a/finra-bonds.txt",
+      "sha256": "4fb37fddb9d10dd833c628ef03edf911d3862bab7fa0d33cb4d3177a2360c83a",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/finra-bonds.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/42fb32bc8b862c439afd8324378e3a528774aa21ec1d48dc4c59bdbb0f6cc1bb/fl-689-15.txt",
+      "sha256": "42fb32bc8b862c439afd8324378e3a528774aa21ec1d48dc4c59bdbb0f6cc1bb",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/fl-689-15.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/2b5c77aca0662fea8558a8ee96143fadd04c679075291a9a117fa697510f70dc/ig-bond-funds-bulletin.txt",
+      "sha256": "2b5c77aca0662fea8558a8ee96143fadd04c679075291a9a117fa697510f70dc",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ig-bond-funds-bulletin.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/19cd1d50e313d2e35ce7d467cbc01a2ccd997bf95276e402c2b82044f999bd07/ig-bond-funds-glossary.txt",
+      "sha256": "19cd1d50e313d2e35ce7d467cbc01a2ccd997bf95276e402c2b82044f999bd07",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ig-bond-funds-glossary.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/5f7fdc15b50e158524a1ca9ae81e52c374b6f91ee76c1aa4f3ae5e15665e5540/ig-bonds-0.txt",
+      "sha256": "5f7fdc15b50e158524a1ca9ae81e52c374b6f91ee76c1aa4f3ae5e15665e5540",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ig-bonds-0.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/3f222fde33ab5a84bfe36bce3b5909b73741807a6ad6e9c438ff605edc333d9e/ig-bonds.txt",
+      "sha256": "3f222fde33ab5a84bfe36bce3b5909b73741807a6ad6e9c438ff605edc333d9e",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ig-bonds.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/7545b2b45ac4c9a9d9983d272a708fe683adf227a8f0235e4922b5c9610b9658/ig-mutual-funds.txt",
+      "sha256": "7545b2b45ac4c9a9d9983d272a708fe683adf227a8f0235e4922b5c9610b9658",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ig-mutual-funds.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/8d3cb9d9d515f43907873adbf5bad971478e8ee0c27dc29f3ed35654adbf8031/irs-p551.txt",
+      "sha256": "8d3cb9d9d515f43907873adbf5bad971478e8ee0c27dc29f3ed35654adbf8031",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/irs-p551.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/d97888eed4326fc07a2342979cd7470715e9a5d1155ac43abb69b9b026327a09/irs-tc409.txt",
+      "sha256": "d97888eed4326fc07a2342979cd7470715e9a5d1155ac43abb69b9b026327a09",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/irs-tc409.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/e633ac362b2b514658f05483c5b42c38513aa03f582e276bd23463cc08343666/irs-tc701.txt",
+      "sha256": "e633ac362b2b514658f05483c5b42c38513aa03f582e276bd23463cc08343666",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/irs-tc701.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/14ca71d3caddb1b684b1beecfc8b2508de9a898ffa2e62adbdacad4bf1675b2e/lii-26-1014.txt",
+      "sha256": "14ca71d3caddb1b684b1beecfc8b2508de9a898ffa2e62adbdacad4bf1675b2e",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/lii-26-1014.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/1617e9902ff63bcb1829b7c50976b6451c967780241340740f6303a77c2d0f18/lii-26-2040.txt",
+      "sha256": "1617e9902ff63bcb1829b7c50976b6451c967780241340740f6303a77c2d0f18",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/lii-26-2040.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/519d4d85a04ec469266f8b1218930ddcced3ea7c2d990e0de9be380848a86285/mc-who.txt",
+      "sha256": "519d4d85a04ec469266f8b1218930ddcced3ea7c2d990e0de9be380848a86285",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/mc-who.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/768fde72cf1653bce9d79c9a3825f84033319a3d5e8352c6f9c604a88d307a15/ms-whats-medicare.txt",
+      "sha256": "768fde72cf1653bce9d79c9a3825f84033319a3d5e8352c6f9c604a88d307a15",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/runs/2026-11-23-comparison/research/sources/ms-whats-medicare.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/runs/2026-11-23-comparison/blobs/dd8cadb2f8c9220faa5d5c64ad523411afee5f462e4cc2bdc9abc5ebf826bda3/ny-rpp-240.txt",
+      "sha256": "dd8cadb2f8c9220faa5d5c64ad523411afee5f462e4cc2bdc9abc5ebf826bda3",
+      "checkedAt": "2026-11-23T08:49:02.448086+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation ev

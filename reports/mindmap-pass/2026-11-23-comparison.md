@@ -1,0 +1,438 @@
+---
+mindmap_pass_date: 2026-11-23
+source: "reports/mindmap-pass/runs/2026-11-23-comparison/brief.md"
+interpreted_brief: "Unattended comparison-miner brief of 11 X-vs-Y candidates for themodernwallet.com. After demand (DataForSEO; SEMRUSH 403), SERP, coverage and primary-source capture: create 3 net-new /compare/ pages (SSDI vs SSI, tenants in common vs joint tenancy, bonds vs bond funds); drop 2 exact duplicates and 3 weak-demand pairs; defer 3 whose primary sources cannot be captured verbatim."
+status: ready-for-approval
+---
+
+# Content approval plan
+
+## Action chart
+
+| Problem | Solution | Bucket | Target (file or route) | Format | Best medium | Resolved deliverable | SERP verdict | SERP evidence | Reader question | Answer | Answer placement | ID |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Lens 1 direct intent (brief candidate). 'bonds vs bond funds': 480/mo KD 6 (DataForSEO 2026-11-23, us). lookup: no same-intent page; Closest existing: /compare/stocks-vs-bonds (asset-class question), /compare/i-bonds-vs-tips (two specific bond types), /guides/what-is-an-index-fund. SERP: Page one: advisors.vanguard.com, schwab.com, bogleheads.org, fidelity.com, ssga.com, with YouTube and justanswer; AI Overview present citing brokers and Reddit. No regulator-sourced neutral comparison table. | Create /compare/bonds-vs-bond-funds targeting 'bonds vs bond funds' as a comparison table/database with objective, primary-sourced verdict | create new content | /compare/bonds-vs-bond-funds | comparison table/database - head-to-head comparison with finite rows, no sourced inputs for a calculator | text | text + comparison table | winnable (forum-owned top results, AI Overview cites Vanguard, Fidelity, Schwab, Reddit, Bogleheads) | Page one: advisors.vanguard.com, schwab.com, bogleheads.org, fidelity.com, ssga.com, with YouTube and justanswer; AI Overview present citing brokers and Reddit. No regulator-sourced neutral comparison table. | Should I buy individual bonds or a bond fund? [PAA 0/4 on-topic; 4/4 off-topic: yield, FD, Buffett, 60/40; ac 7/29 question completions: should i buy bonds or bond funds, which is better bonds or bond funds (pick pattern)] | Pick: individual bonds fit a known date and a hold-to-maturity plan because you get par back at maturity unless the issuer defaults; a bond fund fits small, diversified, ongoing buying because it has no maturity date and its price moves with rates. Shape: pick with boundary. | Section 1: Bonds vs Bond Funds at a Glance | A1 |
+| Lens 1 direct intent (brief candidate). 'tenants in common vs joint tenancy': 9,900/mo KD 5 (DataForSEO 2026-11-23, us); variant 'tenants in common vs joint tenants' 9,900 KD 7. lookup: no same-intent page; No existing page; coverage lookup found no home. SERP: Page one: landregistry-online.org, fraxioned.com, generisonline.com, avvo.com; AI Overview present. Results are mostly UK or vendor/law-firm; no US federal-tax plus statute-sourced comparison. | Create /compare/tenants-in-common-vs-joint-tenancy targeting 'tenants in common vs joint tenancy' as a comparison table/database with objective, primary-sourced verdict | create new content | /compare/tenants-in-common-vs-joint-tenancy | comparison table/database - head-to-head comparison with finite rows, no sourced inputs for a calculator | text | text + comparison table | winnable (no forum dominance, AI Overview present; law-firm and UK land-registry pages in top 10) | Page one: landregistry-online.org, fraxioned.com, generisonline.com, avvo.com; AI Overview present. Results are mostly UK or vendor/law-firm; no US federal-tax plus statute-sourced comparison. | What is the difference between tenants in common and joint tenancy? [PAA 4/4 on-topic: death of a tenant, taxes, disadvantages, which is better; ac 3/12 question completions: what is tenants in common vs joint tenancy, which is better tenants in common or joint tenancy (difference/pick pattern)] | Mechanism and pick: joint tenancy with right of survivorship passes a dead owner's share automatically to the surviving owners, while tenants in common each own a transferable share that goes to heirs; federal tax basis at death differs (IRC 2040 and 1014). State law varies and sets the default, so check your state. Shape: pick with boundary. | Section 1: What Happens to Each Owner's Share at Death | A2 |
+| Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-inheritance, 2027-ssdi-cola and ssi-increase-2027, each about a single program's amounts or inheritance, none the head-to-head eligibility comparison. SERP: Page one: hcplaw.com, rite4justice.com, niperlaw.com, ginsburglawgroup.com, blossomsca.com, all disability-law firms; no AI Overview; no PAA returned. No CFR-sourced comparison table. | Create /compare/ssdi-vs-ssi targeting 'ssdi vs ssi' as a comparison table/database with objective, primary-sourced verdict | create new content | /compare/ssdi-vs-ssi | comparison table/database - head-to-head comparison with finite rows, no sourced inputs for a calculator | text | text + comparison table | winnable (no AI Overview, top 10 law-firm pages) | Page one: hcplaw.com, rite4justice.com, niperlaw.com, ginsburglawgroup.com, blossomsca.com, all disability-law firms; no AI Overview; no PAA returned. No CFR-sourced comparison table. | What is the difference between SSDI and SSI? [PAA 0/0; ac 11/57 question completions: what is ssdi and ssi difference, which is better ssdi or ssi, is ssdi and ssi the same (difference/pick pattern)] | SSDI pays disabled workers who earned enough Social Security work credits and has no resource test; SSI is a needs-based program with income and resource limits (resources $2,000 individual, $3,000 couple per 20 CFR 416.1205) that also covers age 65+ and blind people; a person can qualify for both. Shape: pick with boundary. | Section 1: SSDI vs SSI at a Glance | A3 |
+
+## Original request and acceptance
+
+Grow organic clicks with objective, primary-sourced comparison pages for sourceable, demand-backed, uncovered pairs; do not pad or duplicate.
+
+- **id:** REQ-1
+**description:** Evaluate all 11 comparison candidates with demand, SERP, coverage and primary-source evidence and disposition each
+**acceptance:** Every candidate is created, dropped or deferred with measured volume/KD and a reason in the chart exclusions and readiness report
+**actionIds:** - A1
+- A2
+- A3
+- **id:** REQ-2
+**description:** Create objective comparison table pages only for sourceable, demand-backed uncovered pairs
+**acceptance:** Three /compare/ routes each with comparison table, primary-source attribution, who-this-is-not-for and what-would-change-our-answer
+**actionIds:** - A1
+- A2
+- A3
+
+### Presentation — A1
+
+**medium:** text + comparison table
+**placement:** Opening answer in section 1, comparison table directly after
+**reason:** The reader needs a side-by-side on finite, sourced dimensions; a table lets them compare without interaction
+**readerInputs:** 
+**interaction:** **decision:** not-useful
+**reason:** Sourced facts are finite and state/year specific; no defensible adjustable-input model, so a static table answers faster
+**animation:** **decision:** not-useful
+**reason:** Static scannable layout answers faster without decorative motion
+
+### Presentation — A2
+
+**medium:** text + comparison table
+**placement:** Opening answer in section 1, comparison table directly after
+**reason:** The reader needs a side-by-side on finite, sourced dimensions; a table lets them compare without interaction
+**readerInputs:** 
+**interaction:** **decision:** not-useful
+**reason:** Sourced facts are finite and state/year specific; no defensible adjustable-input model, so a static table answers faster
+**animation:** **decision:** not-useful
+**reason:** Static scannable layout answers faster without decorative motion
+
+### Presentation — A3
+
+**medium:** text + comparison table
+**placement:** Opening answer in section 1, comparison table directly after
+**reason:** The reader needs a side-by-side on finite, sourced dimensions; a table lets them compare without interaction
+**readerInputs:** 
+**interaction:** **decision:** not-useful
+**reason:** Sourced facts are finite and state/year specific; no defensible adjustable-input model, so a static table answers faster
+**animation:** **decision:** not-useful
+**reason:** Static scannable layout answers faster without decorative motion
+
+## Emerging search patterns (clusters)
+
+- SSDI vs SSI eligibility family: 'ssdi vs ssi' 18,100 KD 6; 'difference between ssdi and ssi' 4,400 KD 14 -> create /compare/ssdi-vs-ssi (A3)
+- Co-ownership of property: 'tenants in common vs joint tenancy' 9,900 KD 5; 'tenants in common vs joint tenants' 9,900 KD 7 -> create /compare/tenants-in-common-vs-joint-tenancy (A2)
+- Bond vehicle choice: 'bonds vs bond funds' 480 KD 6; 'bond funds vs individual bonds' 320 KD 4 -> create /compare/bonds-vs-bond-funds (A1)
+- Sideways formula check: brief has no transferable modifier wrapper beyond 'X vs Y'; Lens 2b not applicable. Lens 3: entities are financial concepts/products without a vendor pricing lens; vendor pairs (Visa/Mastercard, YNAB/Copilot) deferred or dropped below.
+
+## Exclusions
+
+- Candidate 1 visa vs mastercard (8,100/mo KD 11): DEFER. No page; Visa/Mastercard primaries not capturable (usa.visa.com 404, mastercard.us 403). Carry forward.
+- Candidate 3 fidelity vs robinhood (5,400/mo KD 0): DROP duplicate; /compare/robinhood-vs-fidelity covers the same pair.
+- Candidate 4 money market fund vs money market account (880/mo KD 14): DROP duplicate; /compare/money-market-account-vs-money-market-fund exists.
+- Candidate 5 payday loan vs personal loan (110/mo KD 0): DROP weak demand.
+- Candidate 7 ynab vs copilot (140/mo KD 0): DROP weak demand; /alternatives/ynab partly covers.
+- Candidate 8 medicare part a vs part b (1,000/mo KD 33): DEFER. medicare.gov not capturable verbatim; 2027 Part B premium unannounced.
+- Candidate 10 fixed vs variable rate student loans (390/mo KD 17): DEFER. studentaid.gov JS shell, no verbatim federal rate primary.
+- Candidate 11 t-bills vs hysa (140/mo KD 0): DROP weak demand; cd-vs-treasury-bill and hysa-vs-cd exist.
+- Kept as created: candidate 2 (A3), candidate 6 (A2), candidate 9 (A1). All 11 candidates dispositioned. Keyword data: volume=dataforseo, kd=dataforseo (SEMRUSH HTTP 403).
+
+## New-page briefs
+
+### A1 — /compare/bonds-vs-bond-funds
+
+**Identity**
+
+**title:** Bonds vs Bond Funds: Which Fits Your Money and Goal
+**pageType:** comparison
+**format:** comparison table/database - head-to-head comparison with finite rows, no sourced inputs for a calculator
+**medium:** text + comparison table
+
+**Reader and answer**
+
+**question:** Should I buy individual bonds or a bond fund? [PAA 0/4 on-topic; 4/4 off-topic: yield, FD, Buffett, 60/40; ac 7/29 question completions: should i buy bonds or bond funds, which is better bonds or bond funds (pick pattern)]
+**answer:** Pick: individual bonds fit a known date and a hold-to-maturity plan because you get par back at maturity unless the issuer defaults; a bond fund fits small, diversified, ongoing buying because it has no maturity date and its price moves with rates. Shape: pick with boundary.
+**placement:** Section 1: Bonds vs Bond Funds at a Glance
+
+**Keyword evidence**
+
+Primary 'bonds vs bond funds': 480/mo KD 6 (DataForSEO 2026-11-23, us). Provider: DataForSEO (SEMRUSH HTTP 403), source=dataforseo, kd_source=dataforseo (modeled KD, hint only), checked 2026-11-23, us. Autocomplete corroborated. Raw: research/keyword-volumes.json.
+
+**SERP and questions**
+
+winnable (forum-owned top results, AI Overview cites Vanguard, Fidelity, Schwab, Reddit, Bogleheads). Page one: advisors.vanguard.com, schwab.com, bogleheads.org, fidelity.com, ssga.com, with YouTube and justanswer; AI Overview present citing brokers and Reddit. No regulator-sourced neutral comparison table. Raw: research/serp.json.
+
+**Why a new page**
+
+Closest existing: /compare/stocks-vs-bonds (asset-class question), /compare/i-bonds-vs-tips (two specific bond types), /guides/what-is-an-index-fund. None answers bond-vs-fund structure. No commits name the topic. Same-run overlap with dropped candidate 4 is only a lexical 0.5.
+
+**Planned outline**
+
+- **heading:** Bonds vs Bond Funds at a Glance
+**purpose:** Direct pick and the break-even condition in the opener, plus the comparison table
+- **heading:** How Individual Bonds Work
+**purpose:** Par value, coupon, maturity, credit and call risk, sourced to investor.gov and FINRA
+- **heading:** How Bond Funds Work
+**purpose:** Pooled portfolio, no maturity date, NAV and fees, per SEC mutual fund guidance
+- **heading:** What Happens When Interest Rates Rise
+**purpose:** Price falls for both; bond holder can wait to maturity, fund holder has no such date
+- **heading:** Costs, Minimums and Diversification
+**purpose:** Fund expense ratio vs dealer markups, reported only as the sources state
+- **heading:** Who Should Choose Each Option
+**purpose:** Who this is not for; what would change our answer
+- **heading:** FAQs
+**purpose:** Only on-topic questions; off-topic PAA excluded
+
+**Contribution and evidence**
+
+Decision gap: readers cannot find a neutral side-by-side tied to primary sources. Basis: reported (regulator/statute text), source-only branch, no numeric model and no tested claim. Inspected: investor.gov bonds page, investor.gov mutual funds page, FINRA bonds page, investor.gov bond funds glossary (all retrieved 2026-11-23 UTC, saved in research/sources). Visible attribution names the primary source beside each finding. Readiness: readiness.md.
+
+**Tables, tools or visuals**
+
+Rows: maturity date, principal at maturity, interest-rate risk, credit risk, diversification, minimum investment, ongoing costs, income pattern. Columns individual bonds, bond funds; every cell sourced to investor.gov/FINRA. No calculator: finite cases, no sourced inputs for a defensible model.
+
+**Testing and review**
+
+_experience.md section G excludes financial, legal and professional services, so TESTED is disabled and ordinary presentation is used; no 'we tested' claim. Investment-product comparison: HIGH claim floor (financial). Educational general information; no personalized advice. Review profile HIGH by claim type; no liabilityBlock expected; no professionalReviewRequired.
+
+**Planned takeaway**
+
+Choose individual bonds when you need a specific amount on a specific date and can hold to maturity; choose a bond fund for diversified, flexible, small-increment exposure and accept no maturity date. Condition that changes it: holding a fund longer than its duration or buying bonds of a single weak issuer.
+
+**Inbound internal links**
+
+**required:** 3
+**placements:** - **source:** /compare/stocks-vs-bonds
+**target:** /compare/bonds-vs-bond-funds
+**section:** Verdict or bond section
+**anchor:** bond funds versus individual bonds
+**purpose:** Reader moving from asset class to vehicle choice
+**inspection:** **path:** src/data/comparisons.ts
+**sha256:** 5fbfddf76c7e6113bc68a502f95238e4533005b3c528ca1454730da13235ea0c
+- **source:** /compare/i-bonds-vs-tips
+**target:** /compare/bonds-vs-bond-funds
+**section:** Related comparisons
+**anchor:** bonds vs bond funds
+**purpose:** Adjacent bond product reader
+**inspection:** **path:** src/data/comparisons.ts
+**sha256:** 5fbfddf76c7e6113bc68a502f95238e4533005b3c528ca1454730da13235ea0c
+- **source:** /guides/what-is-an-index-fund
+**target:** /compare/bonds-vs-bond-funds
+**section:** Related reading
+**anchor:** how bond funds differ from individual bonds
+**purpose:** Fund-structure reader
+**inspection:** **path:** src/data/guides.ts
+**sha256:** 3638adebd451ee9633720fca87a1ca10118dbc942f64d4139677d001c173d76f
+
+**Outbound internal links**
+
+**placements:** - **source:** /compare/bonds-vs-bond-funds
+**target:** /compare/stocks-vs-bonds
+**section:** Who Should Choose Each Option
+**anchor:** stocks vs bonds
+**purpose:** Next decision after choosing bonds
+**inspection:** **path:** src/data/comparisons.ts
+**sha256:** 5fbfddf76c7e6113bc68a502f95238e4533005b3c528ca1454730da13235ea0c
+- **source:** /compare/bonds-vs-bond-funds
+**target:** /guides/what-is-an-index-fund
+**section:** How Bond Funds Work
+**anchor:** what an index fund is
+**purpose:** Fund mechanics background
+**inspection:** **path:** src/data/guides.ts
+**sha256:** 3638adebd451ee9633720fca87a1ca10118dbc942f64d4139677d001c173d76f
+
+**Technical and measurement scope**
+
+Add entry to src/data/comparisons.ts (route /compare/bonds-vs-bond-funds/ via src/pages/compare/[slug].astro), canonical self-referential, sitemap lastmod today, IndexNow after live 200. growth.json hypothesis: net-new page earns clicks for 'bonds vs bond funds' family; status not-yet-published, baseline unavailable (not zero), age-matched comparator at day 28/56.
+
+### A2 — /compare/tenants-in-common-vs-joint-tenancy
+
+**Identity**
+
+**title:** Tenants in Common vs Joint Tenancy: Death, Taxes, Control
+**pageType:** comparison
+**format:** comparison table/database - head-to-head comparison with finite rows, no sourced inputs for a calculator
+**medium:** text + comparison table
+
+**Reader and answer**
+
+**question:** What is the difference between tenants in common and joint tenancy? [PAA 4/4 on-topic: death of a tenant, taxes, disadvantages, which is better; ac 3/12 question completions: what is tenants in common vs joint tenancy, which is better tenants in common or joint tenancy (difference/pick pattern)]
+**answer:** Mechanism and pick: joint tenancy with right of survivorship passes a dead owner's share automatically to the surviving owners, while tenants in common each own a transferable share that goes to heirs; federal tax basis at death differs (IRC 2040 and 1014). State law varies and sets the default, so check your state. Shape: pick with boundary.
+**placement:** Section 1: What Happens to Each Owner's Share at Death
+
+**Keyword evidence**
+
+Primary 'tenants in common vs joint tenancy': 9,900/mo KD 5 (DataForSEO 2026-11-23, us); variant 'tenants in common vs joint tenants' 9,900 KD 7. Provider: DataForSEO (SEMRUSH HTTP 403), source=dataforseo, kd_source=dataforseo (modeled KD, hint only), checked 2026-11-23, us. Autocomplete corroborated. Raw: research/keyword-volumes.json.
+
+**SERP and questions**
+
+winnable (no forum dominance, AI Overview present; law-firm and UK land-registry pages in top 10). Page one: landregistry-online.org, fraxioned.com, generisonline.com, avvo.com; AI Overview present. Results are mostly UK or vendor/law-firm; no US federal-tax plus statute-sourced comparison. Raw: research/serp.json.
+
+**Why a new page**
+
+No existing page; coverage lookup found no home. Nearest: /guides/how-to-fund-a-trust (retitling), /compare/living-trust-vs-will (different intent). No commits name the topic.
+
+**Planned outline**
+
+- **heading:** What Happens to Each Owner's Share at Death
+**purpose:** Survivorship vs inheritable share in the opener, with state-law caveat
+- **heading:** How Tenancy in Common Works
+**purpose:** Separate, unequal, transferable shares; no survivorship
+- **heading:** How Joint Tenancy Works
+**purpose:** Equal shares, right of survivorship, state default (Florida 689.15 as example)
+- **heading:** Tax Basis When an Owner Dies
+**purpose:** IRC 2040 and 1014: spouse one-half vs non-spouse inclusion rules; Pub 551
+- **heading:** Selling, Borrowing and Creditors
+**purpose:** Only as sources support; otherwise flagged as state-specific
+- **heading:** Who Should Choose Each Option
+**purpose:** Who this is not for (unmarried partners with unequal contributions, blended families); what would change our answer
+- **heading:** FAQs
+**purpose:** The four on-topic PAA questions
+
+**Contribution and evidence**
+
+Decision gap: readers cannot find a neutral side-by-side tied to primary sources. Basis: reported (regulator/statute text), source-only branch, no numeric model and no tested claim. Inspected: 26 U.S.C. 1014 and 2040 (Cornell LII), IRS Pub 551, IRS Topic 409 and 701, Florida Statutes 689.15 (all retrieved 2026-11-23 UTC; CA/NY statute sites 403 so state coverage limited to a Florida example). Visible attribution names the primary source beside each finding. Readiness: readiness.md.
+
+**Tables, tools or visuals**
+
+Rows: ownership shares, what happens at death, can you will your share, effect on probate (source-limited), federal basis at death, default in absence of language (state-dependent). Columns tenants in common, joint tenancy. Static table; calculator not defensible without state inputs.
+
+**Testing and review**
+
+_experience.md section G excludes financial, legal and professional services, so TESTED is disabled and ordinary presentation is used; no 'we tested' claim. Legal/tax educational overview: HIGH claim floor. General information, not legal advice; state-law variance disclosed; no professional-review hold set (no individualized legal advice). Review profile HIGH by claim type; no liabilityBlock expected; no professionalReviewRequired.
+
+**Planned takeaway**
+
+Joint tenancy fits owners who want the property to pass automatically to the survivor; tenants in common fits owners who want their share to go to chosen heirs or hold unequal stakes. Not legal advice; the deed language and state law decide, and a lawyer should confirm before retitling. Would change if the state default or the owners' marital/estate plan differs.
+
+**Inbound internal links**
+
+**required:** 3
+**placements:** - **source:** /guides/how-to-fund-a-trust
+**target:** /compare/tenants-in-common-vs-joint-tenancy
+**section:** Retitling real estate
+**anchor:** tenants in common vs joint tenancy
+**purpose:** Reader retitling property
+**inspection:** **path:** src/data/guides.ts
+**sha256:** 3638adebd451ee9633720fca87a1ca10118dbc942f64d4139677d001c173d76f
+- **source:** /compare/living-trust-vs-will
+**target:** /compare/tenants-in-common-vs-joint-tenancy
+**section:** Related comparisons
+**anchor:** joint tenancy vs tenants in common
+**purpose:** Estate-planning reader
+**inspection:** **path:** src/data/comparisons.ts
+**sha256:** 5fbfddf76c7e6113bc68a502f95238e4533005b3c528ca1454730da13235ea0c
+- **source:** /compare/power-of-attorney-vs-will
+**target:** /compare/tenants-in-common-vs-joint-tenancy
+**section:** Related comparisons
+**anchor:** how co-owned property passes at death
+**purpose:** Estate-planning reader
+**inspection:** **path:** src/data/comparisons.ts
+**sha256:** 5fbfddf76c7e6113bc68a502f95238e4533005b3c528ca1454730da13235ea0c
+
+**Outbound internal links**
+
+**placements:** - **source:** /compare/tenants-in-common-vs-joint-tenancy
+**target:** /guides/how-to-fund-a-trust
+**section:** Who Should Choose Each Option
+**anchor:** how to fund a trust
+**purpose:** Alternative to co-titling
+**inspection:** **path:** src/data/guides.ts
+**sha256:** 3638adebd451ee9633720fca87a1ca10118dbc942f64d4139677d001c173d76f
+- **source:** /compare/tenants-in-common-vs-joint-tenancy
+**target:** /compare/living-trust-vs-will
+**section:** Who Should Choose Each Option
+**anchor:** living trust vs will
+**purpose:** Alternative to co-titling
+**inspection:** **path:** src/data/comparisons.ts
+**sha256:** 5fbfddf76c7e6113bc68a502f95238e4533005b3c528ca1454730da13235ea0c
+
+**Technical and measurement scope**
+
+Add entry to src/data/comparisons.ts (route /compare/tenants-in-common-vs-joint-tenancy/ via src/pages/compare/[slug].astro), canonical self-referential, sitemap lastmod today, IndexNow after live 200. growth.json hypothesis: net-new page earns clicks for 'tenants in common vs joint tenancy' family; status not-yet-published, baseline unavailable (not zero), age-matched comparator at day 28/56.
+
+### A3 — /compare/ssdi-vs-ssi
+
+**Identity**
+
+**title:** SSDI vs SSI: Eligibility, Work Credits and Limits
+**pageType:** comparison
+**format:** comparison table/database - head-to-head comparison with finite rows, no sourced inputs for a calculator
+**medium:** text + comparison table
+
+**Reader and answer**
+
+**question:** What is the difference between SSDI and SSI? [PAA 0/0; ac 11/57 question completions: what is ssdi and ssi difference, which is better ssdi or ssi, is ssdi and ssi the same (difference/pick pattern)]
+**answer:** SSDI pays disabled workers who earned enough Social Security work credits and has no resource test; SSI is a needs-based program with income and resource limits (resources $2,000 individual, $3,000 couple per 20 CFR 416.1205) that also covers age 65+ and blind people; a person can qualify for both. Shape: pick with boundary.
+**placement:** Section 1: SSDI vs SSI at a Glance
+
+**Keyword evidence**
+
+Primary 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. Provider: DataForSEO (SEMRUSH HTTP 403), source=dataforseo, kd_source=dataforseo (modeled KD, hint only), checked 2026-11-23, us. Autocomplete corroborated. Raw: research/keyword-volumes.json.
+
+**SERP and questions**
+
+winnable (no AI Overview, top 10 law-firm pages). Page one: hcplaw.com, rite4justice.com, niperlaw.com, ginsburglawgroup.com, blossomsca.com, all disability-law firms; no AI Overview; no PAA returned. No CFR-sourced comparison table. Raw: research/serp.json.
+
+**Why a new page**
+
+Coverage lookup found only ssi-and-inheritance, 2027-ssdi-cola and ssi-increase-2027, each about a single program's amounts or inheritance, none the head-to-head eligibility comparison. No commits name the topic; past 2026-10-14 chart did not create it.
+
+**Planned outline**
+
+- **heading:** SSDI vs SSI at a Glance
+**purpose:** Opening answer, comparison table and the can-receive-both note
+- **heading:** Who Qualifies for SSDI
+**purpose:** Insured status, work credits, 5-month waiting period per 404.315 and 404.130
+- **heading:** Who Qualifies for SSI
+**purpose:** Age 65+, blind or disabled; income and resource tests per 416.202, 416.1100, 416.1205
+- **heading:** How Disability Is Defined
+**purpose:** 404.1505 and 416.905 definitions; same medical standard for adults
+- **heading:** Can You Get SSDI and SSI Together
+**purpose:** Concurrent eligibility, stated only as the rules support
+- **heading:** Who Should Apply for Which Program
+**purpose:** Who this is not for; what would change our answer
+- **heading:** FAQs
+**purpose:** Eligibility-focused questions
+
+**Contribution and evidence**
+
+Decision gap: readers cannot find a neutral side-by-side tied to primary sources. Basis: reported (regulator/statute text), source-only branch, no numeric model and no tested claim. Inspected: eCFR 20 CFR 404.315, 404.130, 404.1505, 416.202, 416.905, 416.1100, 416.1205 (retrieved 2026-11-23 UTC from ecfr.gov). ssa.gov returned 403 so no current-year benefit amounts from SSA are used; existing site pages /guides/ssi-increase-2027 and /guides/2027-ssdi-cola may be linked for amounts.. Visible attribution names the primary source beside each finding. Readiness: readiness.md.
+
+**Tables, tools or visuals**
+
+Rows: funded by, who qualifies, work credits needed, income test, resource test, waiting period, age range, medical standard. Columns SSDI, SSI. Dollar amounts omitted unless linked to existing sourced site pages.
+
+**Testing and review**
+
+_experience.md section G excludes financial, legal and professional services, so TESTED is disabled and ordinary presentation is used; no 'we tested' claim. Federal benefits eligibility: HIGH claim floor. General information, not a benefits determination; no medical dosing or treatment claims. Review profile HIGH by claim type; no liabilityBlock expected; no professionalReviewRequired.
+
+**Planned takeaway**
+
+Apply for SSDI if you have enough recent work credits; apply for SSI if your income and resources are low regardless of work history; many applicants qualify for both. Condition that changes it: earnings above program limits or resources above $2,000 ($3,000 couple) remove SSI eligibility; amounts and rules change, so confirm with SSA.
+
+**Inbound internal links**
+
+**required:** 3
+**placements:** - **source:** /guides/ssi-and-inheritance
+**target:** /compare/ssdi-vs-ssi
+**section:** Related reading
+**anchor:** SSDI vs SSI
+**purpose:** SSI reader unsure which program applies
+**inspection:** **path:** src/data/guides.ts
+**sha256:** 3638adebd451ee9633720fca87a1ca10118dbc942f64d4139677d001c173d76f
+- **source:** /guides/2027-ssdi-cola
+**target:** /compare/ssdi-vs-ssi
+**section:** Related reading
+**anchor:** how SSDI differs from SSI
+**purpose:** SSDI reader
+**inspection:** **path:** src/data/guides.ts
+**sha256:** 3638adebd451ee9633720fca87a1ca10118dbc942f64d4139677d001c173d76f
+- **source:** /guides/ssi-increase-2027
+**target:** /compare/ssdi-vs-ssi
+**section:** Related reading
+**anchor:** SSI vs SSDI eligibility
+**purpose:** SSI reader
+**inspection:** **path:** src/data/guides.ts
+**sha256:** 3638adebd451ee9633720fca87a1ca10118dbc942f64d4139677d001c173d76f
+
+**Outbound internal links**
+
+**placements:** - **source:** /compare/ssdi-vs-ssi
+**target:** /guides/2027-ssdi-cola
+**section:** SSDI vs SSI at a Glance
+**anchor:** 2027 SSDI COLA
+**purpose:** Current SSDI amounts
+**inspection:** **path:** src/data/guides.ts
+**sha256:** 3638adebd451ee9633720fca87a1ca10118dbc942f64d4139677d001c173d76f
+- **source:** /compare/ssdi-vs-ssi
+**target:** /guides/ssi-increase-2027
+**section:** SSDI vs SSI at a Glance
+**anchor:** 2027 SSI amounts
+**purpose:** Current SSI amounts
+**inspection:** **path:** src/data/guides.ts
+**sha256:** 3638adebd451ee9633720fca87a1ca10118dbc942f64d4139677d001c173d76f
+
+**Technical and measurement scope**
+
+Add entry to src/data/comparisons.ts (route /compare/ssdi-vs-ssi/ via src/pages/compare/[slug].astro), canonical self-referential, sitemap lastmod today, IndexNow after live 200. growth.json hypothesis: net-new page earns clicks for 'ssdi vs ssi' family; status not-yet-published, baseline unavailable (not zero), age-matched comparator at day 28/56.
+
+## Execution plan
+
+1. Record advisory cannibalization check (no destructive merges).
+2. Apply any approved metadata updates (or N/A when none in chart).
+3. Generate net-new approved routes with verified evidence packets.
+4. Run independent Phase 4 rendered-page audit on all changed routes.
+5. Apply any approved existing-page body enrichments (or N/A when none).
+6. Add approved inbound and outbound internal links across inspected routes.
+7. Update sitemaps and prepare IndexNow URL list without pre-deploy ping.
+8. Compile Phase 8 execution and cluster summary.
+9. Commit, deploy to main, verify HTTP 200 live renders, and submit IndexNow.
+
+## Reviewer guardrails carried into writing
+
+- CR1-A3-QTAG (substantive): Run autocomplete.py --mode questions for 'ssdi vs ssi' and 'difference between ssdi and ssi', retag as '[PAA 0/0; ac n/m question completions: what is ssdi and ssi difference ...]' (difference/pick pattern), keep action.reader_question and brief readerAndAnswer.question identical, and rerun cases-batch retrieval with the exact new string. Same sweep for A1 and A2 so 'ac corroborated' means the question sweep.
+- CR1-OVERDEFER (substantive): Not a blocker for this run (unattended, no BUILD round 2). Keep the defers but reword the exclusions to say capturable statute/regulation primaries exist and the candidates carry forward with those URLs; 8 and 10 are next-run candidates with 1,000 and 390 per month demand.
+- CR1-A1-BONDFUND-SOURCES (substantive): WRITE must restrict fund-side claims to what ig-mutual-funds.txt (bond fund definition sentence, NAV, fees) and finra-bonds.txt (bonds and bond funds diversify, prices fluctuate) literally state, or capture the FINRA bond-funds page (HTTP 200 at finra.org/investors/learn-to-invest/types-investments/bonds/bond-funds) before drafting. State that interest-rate price falls apply to both.
+- CR1-A1-COUNTEREXAMPLE (substantive): Phrase 'most bond funds have no set maturity date', add call risk and secondary-market markup to the opener or table, and keep unsupported fund specifics out of the first answer. Also all PAA were off-topic (0/4), a keyword-intent flag: keep the FAQ to sourced on-topic questions only.
+- CR1-A2-BASIS-OVERSTATE (substantive): Condition the opener, table and takeaway: spouse versus non-spouse, contribution rule, community-property exception under 1014(b)(6) only if sourced. Do not present either form as the tax winner.
+- CR1-A2-STATE-LAW (substantive): Cite the Florida edition date, label Florida as one state's example, drop or flag as state-specific any creditor, partition, mortgage or property-tax claim without a captured source, include the tenancy-by-the-entirety note that 689.15 itself states, and keep the not-legal-advice disclaimer at the bottom only.
+- CR1-A3-UNIVERSAL-NEGATIVE (substantive): Phrase as 'the SSDI eligibility rules in 20 CFR 404.315 and 404.130 contain no resource limit' or capture a sourced statement; support concurrent benefits with a captured section (for example 20 CFR 416.2 or 416.1100 context) or hedge it. Note SSA.gov was inaccessible and tell readers to confirm amounts with SSA. Keep dollar amounts limited to the linked existing pages.
+- REQ-1 (requestCoverage): All 11 candidates are dispositioned with DataForSEO volume/KD in readiness.md and manifest exclusions; the 2 duplicate drops (3,4) and 3 weak-demand drops (5,7,11) verified legitimate. Defers 1, 8, 10 are not sound: capturable primaries exist (see CR1-OVERDEFER), so disposition is incomplete rather than wrong in direction.
+
+Publication scope: commit: True, push: True, liveVerification: True, indexNow: True
+
+## Preparation check
+
+| Check | Result | Evidence |
+|---|---|---|
+| Preparation check | ✅ Passed | [Full readiness report](reports/mindmap-pass/runs/2026-11-23-comparison/readiness.md) |
+
+Approve this plan to start the listed content work?

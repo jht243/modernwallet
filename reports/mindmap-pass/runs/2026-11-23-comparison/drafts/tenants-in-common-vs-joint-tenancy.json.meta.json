@@ -1,0 +1,384 @@
+{
+ "slug": "tenants-in-common-vs-joint-tenancy",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2673,
+ "floor": 1500,
+ "input_tokens": 47172,
+ "output_tokens": 5744,
+ "thinking_tokens": 2336,
+ "cached_tokens": 24612,
+ "est_cost_usd": 0.0491,
+ "guards": {
+  "repairs": [
+   "added relatedLinks: [] (undefined crashes next build)",
+   "removed 1 off-list link(s), kept the text"
+  ],
+  "flags": [
+   "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: \"Read your state's co-ownership statute.\"; \"Read your state's co-ownership statute.\"; \"Florida's Section 689.15 above shows how one state sets the default, so read you\"; 'Property owners can review [how to fund a trust](/guides/how-to-fund-a-trust/) t'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [
+   "https://www.irs.gov/taxtopics/tc701"
+  ],
+  "words": 3244,
+  "numbers_not_in_facts": [
+   "10000",
+   "20000",
+   "4000",
+   "40000",
+   "6000"
+  ],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    12,
+    2
+   ],
+   "applied": [
+    {
+     "id": "sections[0].content",
+     "quote": "State law establishes the default presumption for all real estate conveyances, so property owners must verify their jurisdiction's specific statutory language.",
+     "replacement": "State law establishes the default presumption for all real estate conveyances and determines whether survivorship applies.",
+     "type": "unlinked-directive",
+     "why": "Directs reader to verify statutory language without a markdown link."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Under this structure, each owner possesses the legal right to occupy and enjoy the entire physical property, even when financial ownership percentages are divided unequally between the parties.",
+     "replacement": "Under this structure, each owner holds a separate transferable interest without automatic survivorship rights.",
+     "type": "unsupported",
+     "why": "SOURCE does not state occupancy rights or share-size rules for tenancy in common."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "An owner can sell, gift, mortgage, or transfer their individual fraction during life, or devise it to selected heirs upon death.",
+     "replacement": "An owner can transfer their individual fraction during life, or devise it to selected heirs upon death.",
+     "type": "unsupported",
+     "why": "Mortgage treatment is explicitly unsourced and excluded by the unknowns."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "State laws govern how co-tenants manage operational expenses, property repairs, and disagreements over potential sales, meaning local legal consultation is essential when establishing or dissolving a tenancy in common.",
+     "replacement": "State laws govern rules outside federal tax and survivorship defaults, meaning these matters are state-specific.",
+     "type": "unsupported",
+     "why": "Operational expenses, property repairs, and sales disputes are not in SOURCE."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Under traditional real property principles, joint tenants must share equal ownership stakes, meaning two joint tenants each own fifty percent, while four joint tenants each own twenty-five percent.",
+     "replacement": "Joint tenants share an interest created under the governing instrument.",
+     "type": "unsupported",
+     "why": "Share-size rules are explicitly unsourced and excluded by the unknowns."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "The surviving owners typically record a certified copy of the death certificate along with an affidavit of survivorship in the local land records to establish clear title in their names.",
+     "replacement": "The surviving owners absorb the decedent's interest directly under the deed terms.",
+     "type": "unsupported",
+     "why": "Recording death certificates and affidavits of survivorship is not in SOURCE."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "To establish survivorship rights in Florida, the deed must contain unambiguous language such as 'as joint tenants with right of survivorship and not as tenants in common.'",
+     "replacement": "To establish survivorship rights in Florida, the instrument creating the estate must expressly provide for the right of survivorship.",
+     "type": "unsupported",
+     "why": "Section 689.15 requires express provision but does not prescribe this specific wording."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Tenancy by the entirety is a specialized survivorship form reserved exclusively for married couples in recognized states, offering unique protections against individual spouse creditor judgments.",
+     "replacement": "Tenancy by the entirety is a survivorship form reserved for married couples recognized under state law.",
+     "type": "unsupported",
+     "why": "Creditor protection claims are explicitly unsourced and excluded by the unknowns."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "When a married couple divorces, any entirety survivorship rights dissolve by operation of statute unless a settlement agreement or court decree orders otherwise.",
+     "replacement": "When a married couple divorces, tenants by the entirety become tenants in common by operation of Section 689.15.",
+     "type": "unsupported",
+     "why": "Section 689.15 specifies tenants become tenants in common upon dissolution without this exception."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "In many state jurisdictions, a tenant in common can encumber or transfer their individual percentage stake without obtaining the consent of their co-tenants, whereas joint tenants may find that unilateral conveyances sever the joint tenancy and convert it into a tenancy in common. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Creditor, encumbrance, and joint tenancy severance rules are unsourced."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "Joint tenancy with right of survivorship fits co-owners who share equal financial investments, possess identical ownership goals, and want the real estate to transfer immediately to the surviving owner without the expense or delay of probate administration.",
+     "replacement": "Joint tenancy with right of survivorship fits co-owners who share equal financial investments, possess identical ownership goals, and want the real estate to transfer immediately to the surviving owner without probate administration.",
+     "type": "unsupported",
+     "why": "Probate expense and delay claims are not in SOURCE."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "It is commonly selected by married couples purchasing a personal residence in common-law property states who intend for the surviving spouse to hold outright ownership.",
+     "replacement": "It fits married couples purchasing a residence who intend for the surviving spouse to hold outright ownership.",
+     "type": "unsupported",
+     "why": "What buyers commonly select is not stated in SOURCE."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "However, because statutory rules on mortgage financing, partition actions, and creditor attachment vary significantly between individual states and remain outside the captured statutory sources, co-owners must consult a licensed real estate attorney in their specific state to determine how local courts handle creditor disputes and forced sales.",
+     "replacement": "Statutory rules on mortgage financing, partition actions, and creditor attachment vary significantly between individual states and remain outside the captured statutory sources.",
+     "type": "unlinked-directive",
+     "why": "Sends reader to outside professional with no markdown link in the sentence."
+    },
+    {
+     "id": "verdict",
+     "quote": "Before executing a deed, consult a licensed real estate attorney in your state to review your title language and confirm whether tenants in common vs joint tenancy serves your family and financial goals.",
+     "replacement": "",
+     "type": "unlinked-directive",
+     "why": "Directs reader to an outside professional without a markdown link in the sentence."
+    }
+   ],
+   "deleted_final": 2,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3453
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-23T09:13:50+0000",
+    "findings_file": "reports/mindmap-pass/runs/2026-11-23-comparison/audit/tenants-in-common-vs-joint-tenancy.r2-findings.txt",
+    "applied": [
+     {
+      "id": "sections[0].content",
+      "quote": "As one clear state example, the Florida Senate publishes Section 689.15 of the 2024 Florida Statutes",
+      "replacement": "As one clear state example, the [Florida Senate](https://www.flsenate.gov/) publishes Section [689.15 of the 2024 Florida Statutes](https://www.flsenate.gov/Laws/Statutes/2024/689.15)",
+      "type": "A2-1 (FAIL): unlinked-company on first mention: Florida Senate",
+      "why": "Add markdown link to the Florida Senate homepage on first mention."
+     },
+     {
+      "id": "comparisonTable.rows[3].b",
+      "quote": "Legal Information Institute at Cornell Law School (LII)",
+      "replacement": "[Legal Information Institute at Cornell Law School (LII)](https://www.law.cornell.edu/)",
+      "type": "A2-1 (FAIL): unlinked-company on first mention: Legal Information Institute at Cornell Law School (LII)",
+      "why": "Add link to Cornell LII homepage."
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "However, the sources used on this page do not cover how those questions are answered.\n\nCreditor, partition, mortgage and property tax treatment are state-specific and are not covered by the sources used on this page.",
+      "replacement": "Creditor claims, partition rights, mortgage terms and property taxes depend on state law, and this comparison does not cover them. Florida's Section 689.15 above shows how one state sets the default, so read your state's statute on co-ownership before you retitle.",
+      "type": "A2-2 (substantive): Dead-end and page self-reference in Selling, Borrowing and Creditors",
+      "why": "Replace page self-reference with state-law explanation and next step."
+     },
+     {
+      "id": "comparisonTable.rows[7].a",
+      "quote": "State-specific. The sources used on this page do not cover it.",
+      "replacement": "Set by state law. Read your state's co-ownership statute.",
+      "type": "A2-2 (substantive): Table cell dead-end and page self-reference",
+      "why": "Replace self-referential text with state law directive."
+     },
+     {
+      "id": "comparisonTable.rows[7].b",
+      "quote": "State-specific. The sources used on this page do not cover it.",
+      "replacement": "Set by state law. Read your state's co-ownership statute.",
+      "type": "A2-2 (substantive): Table cell dead-end and page self-reference",
+      "why": "Replace self-referential text with state law directive."
+     },
+     {
+      "id": "comparisonTable.rows[3].a",
+      "quote": "The inclusion rules the sources here cover (26 U.S.C. 2040) address joint interests with survivorship.",
+      "replacement": "Under 26 U.S.C. 2033, the value of the property to the extent of the decedent's interest at death is included in the gross estate.",
+      "type": "A2-3 (substantive): Missing answer for TIC gross estate inclusion",
+      "why": "Use added closed fact 26 U.S.C. 2033 to state inclusion."
+     },
+     {
+      "id": "comparisonTable.rows[4].a",
+      "quote": "26 U.S.C. 1014(b)(1) treats property acquired by bequest, devise, or inheritance as acquired from the decedent.",
+      "replacement": "Under 26 U.S.C. 2033, the decedent's own share owned at death is included in the gross estate.",
+      "type": "A2-3 (substantive): Incomplete TIC inclusion row",
+      "why": "State gross estate inclusion under 26 U.S.C. 2033."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "decides how much of a joint interest the gross estate includes, and Section 1014 sets the basis of property acquired from a decedent, as IRS Publication 551 and IRS Topic no. 409 explain",
+      "replacement": "decides how much of a joint interest the gross estate includes, and Section 1014 sets the basis of property acquired from a decedent, as IRS Publication 551 explains",
+      "type": "A2-4 (minor): Misattribution to Topic 409",
+      "why": "IRS Topic 409 only refers readers to Pub 551 for inherited basis."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "passes into their estate, transferring according to the instructions laid out in a last will and testament, a living trust, or the default distribution rules of state intestacy law",
+      "replacement": "passes through that owner's estate rather than to the co-owner",
+      "type": "A2-5 (substantive): Unsourced legal statements on wills/trusts/intestacy",
+      "why": "Restate to supported text that share passes through estate."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "their ownership interest extinguishes immediately and passes automatically to the surviving joint tenants by right of survivorship",
+      "replacement": "the interest passes to the surviving joint tenants under the instrument",
+      "type": "A2-5 (substantive): Unsourced phrasing on extinguishment",
+      "why": "Restate within sourced deed instrument terms."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "is calculated under 26 U.S.C. 1014 and 2040",
+      "replacement": "depends on 26 U.S.C. 1014 and the part of the property included in the gross estate under 2040",
+      "type": "A2-5 (substantive): Stating 2040 calculates basis",
+      "why": "2040 determines inclusion, 1014 sets basis."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "Neither form is a tax winner.",
+      "replacement": "",
+      "type": "A2-6 (minor): Restatement of opening paragraph verbatim",
+      "why": "Delete duplicate sentence."
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "State law establishes the default presumption for all real estate conveyances and determines whether survivorship applies.",
+      "replacement": "State law sets the default for how a deed with several owners is read and determines whether survivorship applies.",
+      "type": "A2-6 (minor): Overly broad wording beyond Florida 689.15",
+      "why": "Tone down broad presumption claim to state deed default."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "provides an informative statutory model.",
+      "replacement": "is one state's example.",
+      "type": "A2-6 (minor): AI tell / inflated wording",
+      "why": "Replace inflated wording with plain attribution."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "Furthermore, Section 689.15 specifies",
+      "replacement": "Section 689.15 specifies",
+      "type": "A2-6 (minor): Banned filler word 'Furthermore'",
+      "why": "Remove 'Furthermore,'."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "vastly different standards.",
+      "replacement": "different rules.",
+      "type": "A2-6 (minor): Inflated wording",
+      "why": "Replace with simple phrasing."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "establishes a clean fifty-percent rule.",
+      "replacement": "establishes a one-half rule.",
+      "type": "A2-6 (minor): Inflated phrasing 'clean fifty-percent rule'",
+      "why": "Replace with standard phrasing."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "provides an authoritative example",
+      "replacement": "gives an example",
+      "type": "A2-6 (minor): AI tell 'authoritative example'",
+      "why": "Simplify phrasing."
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "another critical statutory exception",
+      "replacement": "a separate exception",
+      "type": "A2-6 (minor): Inflated phrasing",
+      "why": "Replace with neutral phrasing."
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "Neither option serves every ownership group.",
+      "replacement": "",
+      "type": "A2-6 (minor): Filler sentence",
+      "why": "Delete filler sentence."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "Furthermore, non-spouse joint owners",
+      "replacement": "Non-spouse joint owners",
+      "type": "A2-6 (minor): Banned filler word 'Furthermore'",
+      "why": "Remove 'Furthermore,'."
+     },
+     {
+      "id": "verdict",
+      "quote": "This framework changes if your state statute establishes a different survivorship presumption, if you reside in a community property jurisdiction, or if co-owners contribute unequal purchase capital.",
+      "replacement": "This framework changes if your state statute establishes a different survivorship presumption, if you reside in a community property jurisdiction, or if co-owners contribute unequal purchase capital. Confirm the deed wording with an attorney licensed in your state before choosing tenants in common vs joint tenancy to retitle.",
+      "type": "A2-7 (advisory): Missing next-action sentence carrying primary keyword",
+      "why": "Add attorney confirmation sentence before retitling with primary keyword."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[5].content",
+      "quote": "Property owners can review how to fund a trust to see how placing real estate inside a revocable living trust provides probate avoidance while preserving granular inheritance instructions.",
+      "finding": "A2-5 (substantive): Unsourced legal statements about probate avoidance",
+      "why": "Simplify outbound link anchor and avoid unsourced claims.",
+      "replacement": "Our guide on [how to fund a trust](/guides/how-to-fund-a-trust/) covers retitling real estate into a trust.",
+      "reason": "quote not found on the page"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      5
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "comparisonTable.rows[7].a",
+       "quote": "Read your state's co-ownership statute.",
+       "type": "unlinked-directive",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "comparisonTable.rows[7].b",
+       "quote": "Read your state's co-ownership statute.",
+       "type": "unlinked-directive",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[4].content",
+       "quote": "Florida's Section 689.15 above shows how one state sets the default, so read your state's statute on co-ownership before you retitle.",
+       "type": "unlinked-directive",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[5].content",
+       "quote": "Property owners can review [how to fund a trust](/guides/how-to-fund-a-trust/) to see how placing real estate inside a revocable living trust provides probate avoidance while preserving granular inheritance instructions.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[5].content",
+       "quote": "Reviewing our comparison on a [living trust vs will](/compare/living-trust-vs-will/) also helps co-owners evaluate whether a comprehensive trust structure protects their heirs better than relying on survivorship deeds.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2673,
+    "flags": [
+     "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: \"Read your state's co-ownership statute.\"; \"Read your state's co-ownership statute.\"; \"Florida's Section 689.15 above shows how one state sets the default, so read you\"; 'Property owners can review [how to fund a trust](/guides/how-to-fund-a-trust/) t'"
+    ]
+   }
+  ]
+ },
+ "seconds": 304.3,
+ "response_id": "R_kDa7GsGKqsytMPmY6O8QU",
+ "generated_at": "2026-11-23T08:33:59+0000"
+}

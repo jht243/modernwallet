@@ -1,0 +1,85 @@
+nd filler words (A2-6)."
+    },
+    {
+      "id": "R1-2-factualReview-consequentialClaims",
+      "status": "open",
+      "evidence": "Tested the central tax claim against the strongest counterexample (a tenant in common's own share is also in the gross estate, community property states, non-spouse contribution tracing). The page states the covered rules correctly but adds unsourced legal assertions on probate, will override and 'extinguishes immediately' (A2-5)."
+    },
+    {
+      "id": "R1-2-factualReview-primarySources",
+      "status": "open",
+      "evidence": "Primary sources are right (LII, IRS, Florida Senate) and read from disk. Failures: IRS Topic 409 cited for what it does not say (A2-4); 26 U.S.C. 2033 not captured so the TIC estate-inclusion cells are meta-text (A2-3)."
+    },
+    {
+      "id": "R1-2-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "Title 54 chars, meta description 157 chars, Title Case headings, sentence-case FAQs, reader question answered in sentence 1, floor cleared (about 2,770 words versus 1,500), rhythm passes (18 short, 20 medium, 71 long, no 10-run). Fails: unlinked first mentions (A2-1), repeated conclusion and filler words (A2-6)."
+    },
+    {
+      "id": "A3-1",
+      "status": "open",
+      "evidence": "FIX: 'If your resources exceed $2,000 and your work history does not meet the 20/40 rule under 20 CFR 404.130, neither program may provide monthly benefits.' -> 'SSDI has no resource limit, so check your work credits first, including the younger-worker and blindness rules in 20 CFR 404.130. If you do not meet any of those rules and your resources are above the SSI limit ($2,000 for an individual, $3,000 for an individual and spouse), SSA may find you eligible for neither program.' FIX: 'you should apply for SSI through' -> 'you can apply for SSI, and SSA will also check SSDI,' only if SSA's own page says so; otherwise 'you can ask SSA about both programs through'. 'beneath the $2,000 individual ceiling' -> 'beneath the limit in 20 CFR 416.1205 ($2,000 for an individual, $3,000 for an individual and spouse)'."
+    },
+    {
+      "id": "A3-2",
+      "status": "open",
+      "evidence": "FIX opener: split into 'SSDI pays monthly benefits to disabled workers who earned enough work credits. SSI pays monthly benefits to people who are 65 or older, blind or disabled and have limited income and resources.' (define the acronyms in the same sentence as now). Split the 64, 60 and 51-word sentences at their commas; replace the semicolons with periods; delete 'In addition,' and 'Finally,'. Insert real short sentences where the content has one (for example 'SSDI has no resource limit.'). Do not pad."
+    },
+    {
+      "id": "A3-3",
+      "status": "open",
+      "evidence": "FIX table cell: 'Workers can receive both benefits if their SSDI payment falls below federal income thresholds under 20 CFR 416.1121.' -> 'Some workers receive both. SSA counts the SSDI payment as unearned income for SSI under 20 CFR 416.1121, and SSA decides.' FIX FAQ: 'SSDI requires a qualifying work history with paid payroll taxes under 20 CFR 404.315, whereas SSI is a needs-based program requiring limited income and resources under 20 CFR 416.202 regardless of your work record' -> 'SSDI depends on having enough work credits to be insured for disability under 20 CFR 404.315 and 404.130. SSI depends on age or disability plus limited income and resources under 20 CFR 416.202.' FIX: '...through the Electronic Code of Federal Regulations (eCFR)' -> 'in Title 20 of the Code of Federal Regulations (CFR), published online as the [Electronic Code of Federal Regulations (eCFR)](...)'."
+    },
+    {
+      "id": "A3-4",
+      "status": "open",
+      "evidence": "FIX: 'The statute outlines' -> 'The regulation lists'; 'statutory monthly income ceilings' -> 'the monthly income limits in the regulations'; 'distinct statutory eligibility criteria' -> 'distinct eligibility rules'."
+    },
+    {
+      "id": "A3-5",
+      "status": "open",
+      "evidence": "FIX: 'In addition, this review does not cover medical standard differences for children.' -> 'Children are judged under different disability rules, so ask SSA about a child's claim.' Add after the not-for paragraph: 'If neither program fits, ask the Social Security Administration what other help you may qualify for.' Expand SSA, CFR and COLA at first use."
+    },
+    {
+      "id": "A3-6",
+      "status": "open",
+      "evidence": "No edit required for publication. Optionally relabel to 'Social Security Administration disability benefits page'."
+    },
+    {
+      "id": "R1-3-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Traced to saved eCFR text: 404.130 Rules I to IV and 20/40, 404.315 five-month wait, 17th-month limit and ALS on or after July 23, 2020, 404.1505 and 416.905 definitions, 416.202 requirements, 416.1100, 416.1121(a), 416.1205 $2,000 and $3,000 row effective January 1, 1989. Failures: 416.1121 cited for 'income thresholds' it does not contain, 'paid payroll taxes' cited to 404.315, eCFR described as the source of the rules, regulations called statute (A3-3, A3-4). Disclosure 8 checked: no 416.906 and no unsourced figure on the page."
+    },
+    {
+      "id": "R1-3-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the whole page on disk (b2132890334770b0c80b.txt). Table, sections, takeaway and FAQ agree on the SSDI-versus-SSI split and on confirming amounts with SSA. Fails: Who Should Apply contradicts the page's own $3,000 couple limit and Rules II to IV (A3-1) and rhythm is monotone with overloaded sentences (A3-2)."
+    },
+    {
+      "id": "R1-3-factualReview-consequentialClaims",
+      "status": "open",
+      "evidence": "Tested the central eligibility claim against the strongest counterexample (a worker disabled before age 31 with few credits qualifies under Rule II; married applicants have a $3,000 limit; SSA counts SSDI as unearned income so both can be paid). The concurrency answer is correctly conditional but the apply-for-which directive is not (A3-1)."
+    },
+    {
+      "id": "R1-3-factualReview-primarySources",
+      "status": "open",
+      "evidence": "Primary regulations are the right sources and read from disk, but three citations do not say what the page attributes to them (A3-3)."
+    },
+    {
+      "id": "R1-3-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Takeaway ('Apply for SSDI if ... or apply for SSI if ...') is supported, but Who Should Apply tells people with limited work history to 'apply for SSI' and says failing 20/40 plus $2,000 means neither program, ignoring Rules II to IV and the couple limit (A3-1)."
+    },
+    {
+      "id": "R1-3-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "Title 50 chars, meta 156 chars, Title Case headings, sentence-case FAQs, floor cleared (about 2,630 words versus 1,500), reader question answered in sentence 1. Fails: monotone rhythm and 38-word opener (A3-2), first-use acronyms and dead-end limits (A3-5)."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/runs/2026-11-23-comparison/handoff-audit-2.json",
+    "sha256": "0cfca2402ed44dbdf1a2c15adf32e578bc43425c4ce8eb5013663d7edb8651fa"
+  }
+}
+

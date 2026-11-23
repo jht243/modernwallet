@@ -1,0 +1,17 @@
+{
+  "originRoutine": "mindmap-pass",
+  "jobId": "2026-11-23-comparison",
+  "route": "/compare/tenants-in-common-vs-joint-tenancy",
+  "queryFamily": "tenants in common vs joint tenancy; tenants in common vs joint tenants; joint tenancy vs tenancy in common",
+  "hypothesis": "A net-new, primary-sourced comparison table earns incremental Google clicks for this query family.",
+  "primaryMetric": "Google clicks (GSC, canonical URL, US)",
+  "baseline": {
+    "status": "unavailable",
+    "note": "New route; no before-period. Not zero."
+  },
+  "comparatorPlan": "Age-matched cohort of other net-new /compare/ routes at day 28 and day 56; unchanged older /compare/ pages",
+  "changeScope": "new page",
+  "sourceRefreshTrigger": "Any amendment to Fla. Stat. 689.15, 26 U.S.C. 1014 or 2040, or a new edition of IRS Publication 551",
+  "outcomeStatus": "not-yet-published",
+  "deployment": "local-only until Phase 9"
+}

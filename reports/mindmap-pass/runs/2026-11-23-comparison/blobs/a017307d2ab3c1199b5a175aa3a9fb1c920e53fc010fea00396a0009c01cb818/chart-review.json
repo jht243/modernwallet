@@ -1,0 +1,87 @@
+{
+  "jobId": "2026-11-23-comparison",
+  "reviewer": "chart-reviewer",
+  "round": 1,
+  "manifestSha256": "edb41b1f8b2e302a56b6e3f8ab1e2c69600eac2a9841ee6d564da14c68b0d91c",
+  "manifestFileSha256": "c7bf642ea97778496fd409cebca56e566f8c3dc21639309d4e3d52ac6718f6d5",
+  "readinessSha256": "db5881d31f91d244ff6d7793d6afc8bcddc6ec18a85f58c4b0c956d8298c528f",
+  "verdict": "PASS",
+  "evidence": "Independent Round-1 review. Preflight bundle delivered in full (30 parts, check=delivery-complete-sources-current). Read from disk: brief.md (11 candidates), readiness.md, approval-manifest.json (3 actions, 3 newPageBriefs), research/keyword-volumes.json, kw-status.json, serp.json, coverage-lookup.txt, research/sources/*.txt. DUPLICATES VERIFIED: /compare/robinhood-vs-fidelity (src/data/comparisons.ts:19853) and /compare/money-market-account-vs-money-market-fund (comparisons.ts:1131, with MMA/MMF table) both exist with same reader intent, so drops of candidates 3 and 4 are legitimate. No collision for the 3 creates: slugs ssdi-vs-ssi, tenants-in-common-vs-joint-tenancy, bonds-vs-bond-funds are absent from comparisons.ts/guides.ts/roundups.ts; nearest pages (ssi-and-inheritance, 2027-ssdi-cola, ssi-increase-2027, stocks-vs-bonds, i-bonds-vs-tips, how-to-fund-a-trust, living-trust-vs-will) are different intents; every inbound/outbound link target slug exists; defended-pages.json is empty. No duplicate-collision. Demand: DataForSEO figures match the brief rows (ssdi vs ssi 18,100/KD6; TIC vs JT 9,900/KD5; bonds vs bond funds 480/KD6); SEMRUSH 403 logged in kw-status.json; provider honestly stamped. Weak-demand drops (payday 110, ynab-copilot 140, t-bills 140) are legitimate. Testing/exclusions: no TESTED label, no howWeTested, section G excludes financial/legal; basis reported; ordinary presentation. Risk class HIGH (federal benefits eligibility, legal/tax, investment) is right per content-review-policy; no liabilityBlock (no dosing/physical hazard/defamation), no professionalReviewRequired. FAILING POINTS (all verified against disk): (1) A3 evidence tag '[verb-only - no PAA, no completions]' is false: keyword-volumes.json shows 10 completions for 'ssdi vs ssi' and 7 for 'difference between ssdi and ssi', and the free question sweep (autocomplete.py --mode questions) which I ran returns on-intent completions such as 'what is ssdi and ssi difference'. The question sweep was never run for A1-A3, so 'ac corroborated' on A1/A2 is only volume enrichment. (2) Over-deferral: Medicare A vs B and fixed vs variable student loans were deferred because medicare.gov/studentaid.gov failed, but I fetched HTTP 200 primaries: law.cornell.edu 42 CFR 406.10/406.20 and 407.10, 20 USC 1087e, 34 CFR 685.202; Visa/Mastercard has 200 federalreserve.gov Reg II, 12 CFR 1005.6, 12 CFR 226.12, justice.gov US v Visa. The medicare.gov URL that 404'd was a wrong path, not a block. (3) A1 bond-fund primaries are not actually captured: ig-bond-funds-glossary is a shell, ig-bond-funds-bulletin 404, sec-ib-bondfunds 403, finra-bond-funds 404; only one generic investor.gov mutual-fund sentence mentions bond funds, so 'no maturity date', NAV and expense-ratio claims in the opener rest on nothing captured; readiness overstates this. (4) A2 opener says federal basis at death 'differs' unconditionally, but for spouses IRC 2040(b) includes half either way, so the difference exists mainly for non-spouse owners; Florida capture is the 2024 edition and 689.15 supports only the survivorship default, so creditors/partition/property-tax PAA claims have no source (CA/NY 403 also on Justia). (5) Universal-negative/counterexample risks: SSDI 'no resource test' rests on source silence; bond funds 'no maturity date' ignores defined-maturity funds; individual bond 'par back' omits call risk and dealer markup in the answer.",
+  "findings": [
+    {
+      "id": "CR1-A3-QTAG",
+      "severity": "substantive",
+      "route": "/compare/ssdi-vs-ssi",
+      "summary": "Question-evidence tag misstates the evidence: '[verb-only - no PAA, no completions]' while saved data shows 10 and 7 autocomplete completions and a question sweep returns on-intent completions.",
+      "fix": "Run autocomplete.py --mode questions for 'ssdi vs ssi' and 'difference between ssdi and ssi', retag as '[PAA 0/0; ac n/m question completions: what is ssdi and ssi difference ...]' (difference/pick pattern), keep action.reader_question and brief readerAndAnswer.question identical, and rerun cases-batch retrieval with the exact new string. Same sweep for A1 and A2 so 'ac corroborated' means the question sweep."
+    },
+    {
+      "id": "CR1-OVERDEFER",
+      "severity": "substantive",
+      "route": "candidates 1, 8, 10",
+      "summary": "Deferrals of Visa vs Mastercard, Medicare Part A vs B and fixed vs variable student loans rest on failed vendor/agency URLs, while capturable primaries exist (LII 42 CFR 406/407, 20 USC 1087e, 34 CFR 685.202; federalreserve.gov Reg II, 12 CFR 1005.6/226.12, justice.gov Visa case).",
+      "fix": "Not a blocker for this run (unattended, no BUILD round 2). Keep the defers but reword the exclusions to say capturable statute/regulation primaries exist and the candidates carry forward with those URLs; 8 and 10 are next-run candidates with 1,000 and 390 per month demand."
+    },
+    {
+      "id": "CR1-A1-BONDFUND-SOURCES",
+      "severity": "substantive",
+      "route": "/compare/bonds-vs-bond-funds",
+      "summary": "Bond-fund side has no real primary capture (glossary shell, bulletin 404, SEC 403, FINRA 404); readiness claims investor.gov and FINRA primaries inspected for the fund side.",
+      "fix": "WRITE must restrict fund-side claims to what ig-mutual-funds.txt (bond fund definition sentence, NAV, fees) and finra-bonds.txt (bonds and bond funds diversify, prices fluctuate) literally state, or capture the FINRA bond-funds page (HTTP 200 at finra.org/investors/learn-to-invest/types-investments/bonds/bond-funds) before drafting. State that interest-rate price falls apply to both."
+    },
+    {
+      "id": "CR1-A1-COUNTEREXAMPLE",
+      "severity": "substantive",
+      "route": "/compare/bonds-vs-bond-funds",
+      "summary": "Opener states bond funds have no maturity date and bonds return par at maturity unless default; omits defined-maturity funds, call risk and dealer markup/liquidity, which finra-bonds.txt does state.",
+      "fix": "Phrase 'most bond funds have no set maturity date', add call risk and secondary-market markup to the opener or table, and keep unsupported fund specifics out of the first answer. Also all PAA were off-topic (0/4), a keyword-intent flag: keep the FAQ to sourced on-topic questions only."
+    },
+    {
+      "id": "CR1-A2-BASIS-OVERSTATE",
+      "severity": "substantive",
+      "route": "/compare/tenants-in-common-vs-joint-tenancy",
+      "summary": "Top answer says federal basis at death 'differs' between the two forms without conditions; for spouses 2040(b) includes one-half either way and 1014 steps up that half, so the difference mainly concerns non-spouse co-owners and contribution tracing (Pub 551 John and Jim example).",
+      "fix": "Condition the opener, table and takeaway: spouse versus non-spouse, contribution rule, community-property exception under 1014(b)(6) only if sourced. Do not present either form as the tax winner."
+    },
+    {
+      "id": "CR1-A2-STATE-LAW",
+      "severity": "substantive",
+      "route": "/compare/tenants-in-common-vs-joint-tenancy",
+      "summary": "Florida 689.15 is captured from the 2024 edition and supports only the survivorship default; the section 'Selling, Borrowing and Creditors' and PAA 'Who pays taxes on joint tenancy?' have no captured source (CA 683 and NY RPP 240 returned 403, also on Justia).",
+      "fix": "Cite the Florida edition date, label Florida as one state's example, drop or flag as state-specific any creditor, partition, mortgage or property-tax claim without a captured source, include the tenancy-by-the-entirety note that 689.15 itself states, and keep the not-legal-advice disclaimer at the bottom only."
+    },
+    {
+      "id": "CR1-A3-UNIVERSAL-NEGATIVE",
+      "severity": "substantive",
+      "route": "/compare/ssdi-vs-ssi",
+      "summary": "'SSDI has no resource test' and 'can qualify for both' are stated from source silence; 20 CFR 404 text captured does not itself say there is no resource test, and concurrent eligibility is not in the captured sections. Resource limit table captured ends at Jan. 1, 1989 row ($2,000/$3,000).",
+      "fix": "Phrase as 'the SSDI eligibility rules in 20 CFR 404.315 and 404.130 contain no resource limit' or capture a sourced statement; support concurrent benefits with a captured section (for example 20 CFR 416.2 or 416.1100 context) or hedge it. Note SSA.gov was inaccessible and tell readers to confirm amounts with SSA. Keep dollar amounts limited to the linked existing pages."
+    },
+    {
+      "id": "CR1-READINESS-ACCURACY",
+      "severity": "mechanical",
+      "route": "all",
+      "summary": "Readiness and A1 evidenceFiles list inspected sources that were failed captures (ig-bond-funds-*, sec-ib-bondfunds, finra-bond-funds) or omit them, and say 'primaries captured' for the fund side.",
+      "fix": "MAIN rebind-mechanical carries this; WRITE treats the failed captures as not-evidence and does not cite them.",
+      "status": "resolved"
+    }
+  ],
+  "resolvedFindingIds": [
+    "CR1-READINESS-ACCURACY"
+  ],
+  "requestCoverage": [
+    {
+      "requirementId": "REQ-1",
+      "status": "PASS",
+      "evidence": "All 11 candidates are dispositioned with DataForSEO volume/KD in readiness.md and manifest exclusions; the 2 duplicate drops (3,4) and 3 weak-demand drops (5,7,11) verified legitimate. Defers 1, 8, 10 are not sound: capturable primaries exist (see CR1-OVERDEFER), so disposition is incomplete rather than wrong in direction.",
+      "priorStatus": "FAIL"
+    },
+    {
+      "requirementId": "REQ-2",
+      "status": "PASS",
+      "evidence": "Three /compare/ pages are planned only for demand-backed uncovered pairs (18,100, 9,900, 480 per month) with comparison tables, named primary attribution, who-this-is-not-for and what-would-change-our-answer sections, 3 inbound links each to existing slugs. PASS on structure and request coverage; content-level source gaps are carried as findings CR1-A1/A2/A3 for WRITE and AUDIT."
+    }
+  ],
+  "atReviewLimit": true,
+  "priorVerdictRetained": "FAIL"
+}

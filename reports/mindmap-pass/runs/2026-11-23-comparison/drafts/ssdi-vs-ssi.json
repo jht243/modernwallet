@@ -1,0 +1,168 @@
+{
+  "slug": "ssdi-vs-ssi",
+  "title": "SSDI vs SSI Differences in Work Credits and Limits",
+  "metaDescription": "Compare SSDI vs SSI eligibility rules, work credits, and income limits under federal regulations to understand which disability program fits your situation.",
+  "targetKeyword": "ssdi vs ssi",
+  "optionA": "SSDI",
+  "optionB": "SSI",
+  "segment": "Benefits",
+  "h1": "SSDI vs SSI Differences in Work Credits and Limits",
+  "introText": "Social Security Disability Insurance (SSDI) pays monthly benefits to disabled workers who earned enough work credits. Supplemental Security Income (SSI) pays monthly benefits to people who are 65 or older, blind or disabled and have limited income and resources.\n\nSSDI depends on work credits. SSI depends on being 65 or older, blind or disabled, plus income and resource limits. Confirm current amounts and your own eligibility with the [Social Security Administration (SSA)](https://www.ssa.gov/ssi/).",
+  "tableHeading": "SSDI vs SSI at a Glance",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Basic Program Purpose",
+        "a": "Provides disability benefits to workers who have enough social security earnings to be insured for disability under [20 CFR 404.315](https://www.ecfr.gov/current/title-20/section-404.315).",
+        "b": "Provides monthly financial assistance to aged, blind, or disabled individuals with limited income and resources under [20 CFR 416.202](https://www.ecfr.gov/current/title-20/section-416.202)."
+      },
+      {
+        "dimension": "Work History Requirement",
+        "a": "Requires disability insured status achieved through quarters of coverage as specified in [20 CFR 404.130](https://www.ecfr.gov/current/title-20/section-404.130).",
+        "b": "The SSI requirements listed in [20 CFR 416.202](https://www.ecfr.gov/current/title-20/section-416.202) do not include work credits."
+      },
+      {
+        "dimension": "Financial Resource Limits",
+        "a": "The SSDI eligibility rules in [20 CFR 404.315](https://www.ecfr.gov/current/title-20/section-404.315) and [20 CFR 404.130](https://www.ecfr.gov/current/title-20/section-404.130) contain no resource limit.",
+        "b": "Restricts countable nonexcludable resources to $2,000 for an individual and $3,000 for an individual and spouse under [20 CFR 416.1205](https://www.ecfr.gov/current/title-20/section-416.1205)."
+      },
+      {
+        "dimension": "Earned and Unearned Income Limits",
+        "a": "The SSDI entitlement rules in [20 CFR 404.315](https://www.ecfr.gov/current/title-20/section-404.315) and [20 CFR 404.130](https://www.ecfr.gov/current/title-20/section-404.130) contain no income test. Disability is defined by the inability to do substantial gainful activity ([20 CFR 404.1505](https://www.ecfr.gov/current/title-20/section-404.1505)).",
+        "b": "Counts earned and unearned income monthly under [20 CFR 416.1100](https://www.ecfr.gov/current/title-20/section-416.1100). Excess income reduces or eliminates monthly payments."
+      },
+      {
+        "dimension": "Medical Disability Standard",
+        "a": "Requires a medically determinable impairment preventing substantial gainful activity lasting at least 12 months or resulting in death under [20 CFR 404.1505](https://www.ecfr.gov/current/title-20/section-404.1505).",
+        "b": "Applies the identical adult disability definition requiring severe impairment lasting at least 12 months under [20 CFR 416.905](https://www.ecfr.gov/current/title-20/section-416.905)."
+      },
+      {
+        "dimension": "Mandatory Waiting Period",
+        "a": "Imposes a mandatory 5-month waiting period from disability onset under [20 CFR 404.315](https://www.ecfr.gov/current/title-20/section-404.315), with exceptions for prior disability within 5 years or ALS.",
+        "b": "[20 CFR 416.202](https://www.ecfr.gov/current/title-20/section-416.202) does not list a waiting period."
+      },
+      {
+        "dimension": "Age Requirements",
+        "a": "Covers workers prior to attaining full retirement age as defined in 20 CFR 404.409 under [20 CFR 404.315](https://www.ecfr.gov/current/title-20/section-404.315).",
+        "b": "Covers qualified individuals aged 65 or older, or individuals of any age who are blind or disabled under [20 CFR 416.202](https://www.ecfr.gov/current/title-20/section-416.202)."
+      },
+      {
+        "dimension": "Concurrent Benefit Potential",
+        "a": "Some workers receive both. SSA counts the SSDI payment as unearned income for SSI under [20 CFR 416.1121](https://www.ecfr.gov/current/title-20/section-416.1121), and SSA decides.",
+        "b": "Recipients can receive both benefits, but SSA counts SSDI as unearned income against monthly SSI payments under [20 CFR 416.1121](https://www.ecfr.gov/current/title-20/section-416.1121)."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "SSDI vs SSI at a Glance",
+      "content": "The fundamental difference between Social Security Disability Insurance (SSDI) and Supplemental Security Income (SSI) centers on how an individual qualifies for support. SSDI provides disability benefits to eligible insured workers. Entitlement depends on having enough social security earnings to be insured for disability. In contrast, SSI operates as a needs-based program under Title XVI of the Social Security Act for people who are aged, blind or disabled with limited income and resources.\n\nFederal regulations establish distinct eligibility boundaries for each program in Title 20 of the Code of Federal Regulations (CFR), published online as the [Electronic Code of Federal Regulations (eCFR)](https://www.ecfr.gov/current/title-20/section-404.315). The SSDI eligibility rules in [20 CFR 404.315](https://www.ecfr.gov/current/title-20/section-404.315) and [20 CFR 404.130](https://www.ecfr.gov/current/title-20/section-404.130) contain no resource limit. Conversely, SSI eligibility governed by [20 CFR 416.202](https://www.ecfr.gov/current/title-20/section-416.202) requires claimants to have limited income and resources. To examine updated payment baselines and adjustments for both systems, check our guides on the [2027 SSDI COLA](/guides/2027-ssdi-cola/) (cost-of-living adjustment) and [2027 SSI amounts](/guides/ssi-increase-2027/). Some people receive both SSDI and SSI, as our [2027 SSDI COLA](/guides/2027-ssdi-cola/) guide notes, citing the Social Security Administration (SSA). When an individual receives both benefits, the [Social Security Administration](https://www.ssa.gov/benefits/disability/) treats Social Security and disability benefits as unearned income under [20 CFR 416.1121](https://www.ecfr.gov/current/title-20/section-416.1121)."
+    },
+    {
+      "heading": "Who Qualifies for SSDI",
+      "content": "Entitlement to SSDI requires meeting the federal insurance requirements established under 20 CFR 404.315. First, an applicant must have accumulated enough social security earnings to be insured for disability, as described in 20 CFR 404.130. Second, the worker must submit an official application for benefits before reaching full retirement age. Third, the individual must have a qualifying disability defined under 20 CFR 404.1505, or have experienced a disability that ended within the 12-month period before the month of filing. Fourth, the applicant must satisfy a mandatory waiting period of five full consecutive calendar months.\n\nDisability insured status is governed by four specific rules detailed in 20 CFR 404.130. Under Rule I, commonly referred to as the 20/40 requirement, a worker must be fully insured and possess at least 20 quarters of coverage (QCs) earned within the 40-quarter period ending with the quarter in which disability began. \n\nFederal regulations provide alternative eligibility pathways for younger workers who experience disabling medical conditions before accumulating forty calendar quarters. Rule II of 20 CFR 404.130 covers an individual who becomes disabled before age 31. That person needs quarters of coverage in at least one-half of the calendar quarters beginning after age 21 and ending with the quarter of disability onset. If that calculation yields an odd number of quarters, the agency reduces the requirement by one quarter. For short periods under 12 quarters, the applicant must show at least six quarters of coverage within the 12-quarter period ending with the disability quarter. Rule III governs individuals who experienced an earlier disability period before age 31 and become disabled again at age 31 or older. Rule IV applies to individuals who are statutorily blind, requiring only that the applicant be fully insured.\n\nThe mandatory five-month waiting period under 20 CFR 404.315(a)(4) begins with the first full calendar month in which the worker was both insured for disability and medically disabled. By federal rule, this waiting period can begin no earlier than the 17th month before the month the worker files an application. The regulation lists two exceptions where no waiting period is required. One applies if the applicant was previously entitled to disability benefits or a period of disability within five years of the month they became disabled again. The other applies if the individual has been medically determined to have amyotrophic lateral sclerosis (ALS) with an application approved on or after July 23, 2020."
+    },
+    {
+      "heading": "Who Qualifies for SSI",
+      "content": "SSI operates under distinct eligibility rules set forth in 20 CFR 416.202. A claimant must meet all of the requirements in 20 CFR 416.202 to obtain monthly assistance under Title XVI. The individual must be aged 65 or older, blind, or disabled. The applicant must reside within the United States and hold status as a United States citizen, a national, a lawfully admitted permanent resident alien, an alien permanently residing under color of law, or a qualified overseas military dependent. The claimant cannot exceed the monthly income limits in the regulations, cannot hold resources beyond the regulatory limits, cannot be fleeing felony prosecution or confinement, cannot be violating probation or parole, and must formally submit an application for benefits.\n\nIncome rules codified in 20 CFR 416.1100 establish that countable income serves as the primary mechanism for determining monthly eligibility and benefit calculations. The agency counts income on a monthly basis, distinguishing between earned wages from active employment and unearned income derived from other programs. Federal rules state that the more countable income a claimant receives, the less their monthly SSI benefit will be. If an applicant has too much income under 20 CFR 416.1100, they are not eligible for a benefit.\n\nResource limits set in [20 CFR 416.1205](https://www.ecfr.gov/current/title-20/section-416.1205) limit the property and liquid savings a claimant may own. The regulation provides a historical schedule of resource limits in paragraph (c) ending with the row effective January 1, 1989. Under this standard, countable nonexcludable resources cannot exceed $2,000 for an individual and $3,000 for an individual and spouse. Under 20 CFR 416.1201, resources are defined as cash, liquid assets, or real and personal property that an individual owns and could convert to cash to pay for basic support and maintenance.\n\nClaimants whose countable resources exceed these regulatory limits are not eligible for benefits. Our guide on [SSI and inheritance](/guides/ssi-and-inheritance/) covers how an inheritance affects SSI."
+    },
+    {
+      "heading": "How Disability Is Defined",
+      "content": "both programs use the same definition of adult disability. 20 CFR 404.1505 for SSDI and 20 CFR 416.905 for SSI use the same words. The law defines adult disability as the inability to do any substantial gainful activity because of a medically determinable physical or mental impairment. The impairment must be expected to result in death or must have lasted, or be expected to last, at least 12 months.\n\nFederal examiners assess whether the claimant's documented conditions prevent them from performing their past relevant work under 20 CFR 404.1560(b) or 20 CFR 416.960(b). If an applicant cannot perform past duties, examiners evaluate residual functional capacity along with vocational factors, including age, formal education, and acquired job skills, to establish whether they can adapt to any other substantial gainful work that exists in the national economy.\n\nBoth regulations specify separate medical evaluation standards for statutory blindness under 20 CFR 404.1581 and 20 CFR 416.981. The adult disability definition uses identical language in both parts of the Code of Federal Regulations, and SSA decides each application."
+    },
+    {
+      "heading": "Can You Get SSDI and SSI Together",
+      "content": "Concurrent eligibility permits an individual to receive benefits from both SSDI and SSI at the same time, provided they satisfy the distinct requirements of each program. An applicant must possess sufficient quarters of coverage under 20 CFR 404.130 to qualify for SSDI, while simultaneously meeting the income limits of 20 CFR 416.1100 and the resource limits of 20 CFR 416.1205 to qualify for SSI.\n\nThe interaction between concurrent benefits is governed by federal unearned income rules established in 20 CFR 416.1121. Under paragraph (a), Social Security insurance benefits and disability payments are explicitly classified as unearned income for the purposes of SSI accounting. When an individual is awarded SSDI, SSA treats the SSDI payment as unearned income for SSI.\n\nOur [2027 SSI amounts](/guides/ssi-increase-2027/) guide, citing SSA, notes that the Social Security payment rises in January 2027 while the SSI payment rises with the December 31, 2026 payment. Receiving SSDI counts against the SSI income test, because 20 CFR 416.1100 says that if you have too much income you are not eligible for an SSI benefit."
+    },
+    {
+      "heading": "Who Should Apply for Which Program",
+      "content": "Determining which program to pursue depends on your individual employment history, current financial assets, and household earnings. If you may have enough work credits, SSDI is the program to look at first. Rule I in 20 CFR 404.130 asks for at least 20 quarters of coverage in the 40-quarter period ending with the quarter of disability. You can start through the [Social Security Administration disability benefits page](https://www.ssa.gov/benefits/disability/). The SSDI eligibility rules in 20 CFR 404.315 and 20 CFR 404.130 contain no resource limit. \n\nIf you have limited or discontinuous employment history, or if you have never worked in covered employment, you can ask SSA about both programs through the [Social Security Administration SSI page](https://www.ssa.gov/ssi/). The SSI requirements in 20 CFR 416.202 are age, blindness or disability, residency, income, resources and an application. Claimants must maintain nonexcludable assets beneath the limit in 20 CFR 416.1205 ($2,000 for an individual, $3,000 for an individual and spouse). \n\nThis guidance is not intended for individuals whose countable income or liquid assets exceed the SSI limits and who also lack sufficient quarters of coverage for SSDI. SSDI has no resource limit, so check your work credits first, including the younger-worker and blindness rules in 20 CFR 404.130. If you do not meet any of those rules and your resources are above the SSI limit ($2,000 for an individual, $3,000 for an individual and spouse), SSA may find you eligible for neither program. If neither program fits, ask the Social Security Administration what other help you may qualify for. Children are judged under different disability rules, so ask SSA about a child's claim. \n\nSeveral legal and factual changes would modify this analysis. A change to the resource limits in 20 CFR 416.1205 would change who qualifies for SSI. Gaining or losing quarters of coverage changes whether an individual must rely on needs-based assistance or insured worker benefits. Claimants must confirm their eligibility directly with the [Social Security Administration](https://www.ssa.gov/benefits/disability/)."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the main difference between SSDI and SSI?",
+      "answer": "SSDI depends on having enough work credits to be insured for disability under 20 CFR 404.315 and 404.130. SSI depends on age or disability plus limited income and resources under 20 CFR 416.202."
+    },
+    {
+      "question": "Can you get SSDI and SSI at the same time?",
+      "answer": "Some people do, but SSA counts Social Security and disability benefits as unearned income for SSI under 20 CFR 416.1121, so the SSDI amount counts against the SSI income test, and SSA decides."
+    },
+    {
+      "question": "Does SSDI have a resource limit?",
+      "answer": "The SSDI eligibility rules in 20 CFR 404.315 and 20 CFR 404.130 contain no resource limit. SSI does have one: 20 CFR 416.1205 lists $2,000 for an individual and $3,000 for an individual and spouse, so confirm current amounts with SSA."
+    },
+    {
+      "question": "Who qualifies for SSI?",
+      "answer": "Qualified recipients include individuals aged 65 or older, blind, or disabled who maintain nonexcludable resources below $2,000 for individuals or $3,000 for couples under 20 CFR 416.1205 and satisfy income rules under 20 CFR 416.1100."
+    },
+    {
+      "question": "How long is the SSDI waiting period?",
+      "answer": "SSDI requires a mandatory waiting period of five full consecutive calendar months under 20 CFR 404.315, unless you qualify for an exemption due to a prior disability within five years or a medical diagnosis of amyotrophic lateral sclerosis."
+    },
+    {
+      "question": "Do SSDI and SSI use the same definition of disability?",
+      "answer": "Yes, both programs use the identical adult disability definition under 20 CFR 404.1505 and 20 CFR 416.905, requiring a medically determinable impairment preventing substantial gainful activity for at least 12 months or expected to result in death."
+    }
+  ],
+  "verdictHeading": "Our Takeaway for SSDI vs SSI",
+  "verdict": "Apply for SSDI if you are disabled and have enough work credits under 20 CFR 404.130, or apply for SSI if you are 65 or older, blind or disabled and your income and resources are within the limits in 20 CFR 416.202. Some people qualify for both programs, and SSA decides after counting income and resources. 20 CFR 416.1205 lists SSI resource limits of $2,000 for an individual and $3,000 for an individual and spouse, so confirm current amounts with SSA. Compare your work credits and your income and resources against the SSDI vs SSI rules above, then confirm with the [Social Security Administration](https://www.ssa.gov/benefits/disability/).",
+  "disclaimerText": "This comparison provides general educational information regarding federal benefit programs and does not constitute formal legal, financial, or benefits advice. All individual eligibility determinations are made solely by the Social Security Administration.",
+  "sources": [
+    {
+      "label": "20 CFR 404.315 - Who is Entitled to Disability Benefits",
+      "url": "https://www.ecfr.gov/current/title-20/section-404.315"
+    },
+    {
+      "label": "20 CFR 404.130 - How We Determine Disability Insured Status",
+      "url": "https://www.ecfr.gov/current/title-20/section-404.130"
+    },
+    {
+      "label": "20 CFR 404.1505 - Basic Definition of Disability",
+      "url": "https://www.ecfr.gov/current/title-20/section-404.1505"
+    },
+    {
+      "label": "20 CFR 416.202 - Who May Get SSI Benefits",
+      "url": "https://www.ecfr.gov/current/title-20/section-416.202"
+    },
+    {
+      "label": "20 CFR 416.905 - Basic Definition of Disability for Adults",
+      "url": "https://www.ecfr.gov/current/title-20/section-416.905"
+    },
+    {
+      "label": "20 CFR 416.1100 - Income and SSI Eligibility",
+      "url": "https://www.ecfr.gov/current/title-20/section-416.1100"
+    },
+    {
+      "label": "20 CFR 416.1121 - Types of Unearned Income",
+      "url": "https://www.ecfr.gov/current/title-20/section-416.1121"
+    },
+    {
+      "label": "20 CFR 416.1205 - Limitation on Resources",
+      "url": "https://www.ecfr.gov/current/title-20/section-416.1205"
+    },
+    {
+      "label": "Social Security Administration Disability Benefits Portal",
+      "url": "https://www.ssa.gov/benefits/disability/"
+    },
+    {
+      "label": "Social Security Administration Supplemental Security Income Portal",
+      "url": "https://www.ssa.gov/ssi/"
+    }
+  ],
+  "relatedComparisons": [
+    "medicare-vs-medicaid",
+    "special-needs-trust-vs-able-account",
+    "social-security-at-62-vs-70"
+  ],
+  "calculatorLinks": [],
+  "metaTitle": "",
+  "subtitle": "",
+  "optionAName": "",
+  "optionBName": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": [],
+  "relatedLinks": []
+}

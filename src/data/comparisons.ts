@@ -4924,7 +4924,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "Stocks vs bonds in a rising-rate environment",
         content:
-          "Rising interest rates hurt bond prices — but they're a double-edged sword. Existing bonds lose value when rates rise, because newer bonds offer higher yields. A 10-year Treasury bond can lose 7–8% in price for every 1% rate increase.\n\nStocks are also hurt by rising rates, but usually less and with more resilience. Higher rates raise borrowing costs for companies but also signal a growing economy, which supports corporate earnings.\n\nOne practical non-obvious implication: in a rising-rate environment, short-duration bonds (1–3 year maturities) suffer far less than long-duration bonds. Many investors mistakenly hold long-duration bond funds when rate risk is high — switching to short-duration or Treasury I-Bonds can protect principal while still earning income.",
+          "Rising interest rates hurt bond prices — but they're a double-edged sword. Existing bonds lose value when rates rise, because newer bonds offer higher yields. A 10-year Treasury bond can lose 7–8% in price for every 1% rate increase.\n\nStocks are also hurt by rising rates, but usually less and with more resilience. Higher rates raise borrowing costs for companies but also signal a growing economy, which supports corporate earnings.\n\nOne practical non-obvious implication: in a rising-rate environment, short-duration bonds (1–3 year maturities) suffer far less than long-duration bonds. Many investors mistakenly hold long-duration bond funds when rate risk is high — switching to short-duration or Treasury I-Bonds can protect principal while still earning income.\n\nIf you decide to hold bonds, the next choice is [bond funds versus individual bonds](/compare/bonds-vs-bond-funds/).",
       },
     ],
     faqs: [
@@ -6121,7 +6121,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "American College of Trust and Estate Counsel (ACTEC)", url: "https://www.actec.org/" },
       { label: "Uniform Law Commission — Uniform Probate Code", url: "https://www.uniformlaws.org/" },
     ],
-    relatedComparisons: ["online-will-vs-lawyer", "revocable-vs-irrevocable-trust", "power-of-attorney-vs-guardianship"],
+    relatedComparisons: ["online-will-vs-lawyer", "revocable-vs-irrevocable-trust", "power-of-attorney-vs-guardianship", "tenants-in-common-vs-joint-tenancy"],
     calculatorLinks: [
       { label: "Estate planning calculator", href: "/estate-planning/" },
       { label: "Will cost calculator", href: "/estate-planning/will-cost-calculator/" },
@@ -9770,7 +9770,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "CFPB, Managing Someone Else's Money", url: "https://www.consumerfinance.gov/consumer-tools/managing-someone-elses-money/" },
       { label: "Cornell Law School Legal Information Institute, Holographic and Attested Wills", url: "https://www.law.cornell.edu/wex/holographic_will" },
     ],
-    relatedComparisons: ["power-of-attorney-vs-guardianship", "living-trust-vs-will", "online-will-vs-lawyer"],
+    relatedComparisons: ["power-of-attorney-vs-guardianship", "living-trust-vs-will", "online-will-vs-lawyer", "tenants-in-common-vs-joint-tenancy"],
     calculatorLinks: [
       { label: "Estate Planning Hub", href: "/estate-planning/" },
       { label: "Will Cost Calculator", href: "/estate-planning/will-cost-calculator/" },
@@ -12217,7 +12217,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       { label: "TreasuryDirect - Treasury Inflation-Protected Securities (TIPS)", url: "https://www.treasurydirect.gov/marketable-securities/tips/" },
       { label: "TreasuryDirect - Selling a Treasury marketable security", url: "https://www.treasurydirect.gov/marketable-securities/selling-marketable-securities/" },
     ],
-    relatedComparisons: ["stocks-vs-bonds", "hysa-vs-cd", "cd-vs-money-market"],
+    relatedComparisons: ["stocks-vs-bonds", "hysa-vs-cd", "cd-vs-money-market", "bonds-vs-bond-funds"],
     calculatorLinks: [
       { label: "Compound interest calculator", href: "/investing/compound-interest-calculator/" },
       { label: "High-yield savings calculator", href: "/investing/high-yield-savings-calculator/" },
@@ -20596,6 +20596,436 @@ export const COMPARISONS: ComparisonEntry[] = [
         "label": "Investing calculator",
         "href": "/investing/"
       }
+    ]
+  },
+  // -- mindmap-pass 2026-11-23-comparison: bonds-vs-bond-funds --
+  {
+    "updated": "2026-11-23",
+    "slug": "bonds-vs-bond-funds",
+    "title": "Bonds vs Bond Funds for Your Savings and Income Goals",
+    "metaDescription": "Compare individual bonds vs bond funds using Investor.gov and FINRA guidance. Learn how maturity dates, rising interest rates, and fees affect each option.",
+    "targetKeyword": "bonds vs bond funds",
+    "optionA": "Individual Bonds",
+    "optionB": "Bond Funds",
+    "segment": "Investing",
+    "h1": "Bonds vs Bond Funds for Your Portfolio and Timeline",
+    "introText": "Individual bonds fit a known date, while a bond fund fits diversified, ongoing buying. If you hold an individual bond to its maturity date, the borrower pays you the final interest payment and the face value (par value). That holds unless the issuer defaults or calls the bond early. Most bond funds have no set maturity date. Instead of waiting for a principal repayment date, a bond mutual fund investor holds shares in a pooled portfolio and redeems them at the next calculated net asset value (NAV), minus any redemption fees, while bond ETF shares trade on an exchange.\n\nFINRA says bond prices tend to fall when interest rates rise, so both individual bonds and bond funds can lose market value when rates increase. A bondholder who holds an individual security to maturity avoids secondary-market price losses, but faces credit risk, inflation risk, and call risk. When you buy an individual bond from a brokerage firm acting as a principal, the firm may add a markup to your purchase price or apply a markdown if you sell. [Investor.gov](https://www.investor.gov/) says mutual funds may invest in a range of companies and industries rather than in one specific bond, yet they charge fees and expenses that reduce your returns over time.",
+    "tableHeading": "Bonds vs Bond Funds at a Glance",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Maturity Date and Principal Repayment",
+          "a": "The vast majority of bonds have a set maturity date when the issuer repays par value and the final interest payment, as published by the [Financial Industry Regulatory Authority (FINRA)](https://www.finra.org/investors/investing/investment-products/bonds).",
+          "b": "A bond fund holds a changing mix of bonds, so most bond funds have no single maturity date to wait for. Investor.gov says mutual fund shares are redeemed at the next calculated net asset value (NAV)."
+        },
+        {
+          "dimension": "Impact of Rising Interest Rates",
+          "a": "Market prices drop when rates rise, but holding the bond to maturity returns the full face value unless the issuer defaults or calls the bond.",
+          "b": "A fund's share price moves with the value of the bonds it holds. Funds holding bonds with longer average lives see greater price sensitivity."
+        },
+        {
+          "dimension": "Credit and Issuer Default Risk",
+          "a": "Credit risk: the issuer may fail to timely make interest or principal payments and default on its bonds, according to Investor.gov.",
+          "b": "Mutual funds may invest in a range of companies and industries rather than one specific bond, which Investor.gov says helps lower your risk if one company fails. Funds are not insured by the [Federal Deposit Insurance Corporation (FDIC)](https://www.fdic.gov/) and can lose money."
+        },
+        {
+          "dimension": "Call Risk",
+          "a": "Callable bonds are common. Borrowers may retire the debt early if interest rates decline.",
+          "b": "Investor.gov and FINRA describe call risk for individual bonds and do not break it out for funds. A fund's prospectus describes its own risks."
+        },
+        {
+          "dimension": "Minimum Investment Requirements",
+          "a": "[U.S. Treasury](https://home.treasury.gov/) securities start at $100 denominations, savings bonds at $25, while agency securities generally require a $10,000 minimum.",
+          "b": "Many mutual funds set a relatively low dollar amount for initial investment and subsequent purchases."
+        },
+        {
+          "dimension": "Transaction and Ongoing Costs",
+          "a": "Brokerage firms acting as principal often include a markup on buys and a markdown on sales. Agent trades carry explicit commissions.",
+          "b": "Investors pay ongoing management fees and operational expenses deducted directly from fund assets, which reduces net investment returns."
+        },
+        {
+          "dimension": "Income Payment Structure",
+          "a": "Coupons typically pay a fixed interest amount on a regular schedule, such as every six months, directly to the bondholder.",
+          "b": "Funds distribute net interest collected across all portfolio bonds as periodic dividend payments, which fluctuate with market conditions."
+        },
+        {
+          "dimension": "Liquidity and Selling Early",
+          "a": "Secondary-market sales depend on market liquidity and prevailing prices, which may be higher or lower than the original principal amount.",
+          "b": "Mutual fund shares can be redeemed back to the fund on any business day at the next calculated NAV, minus any redemption fee."
+        }
+      ]
+    },
+    "sections": [
+      {
+        "heading": "Bonds vs Bond Funds at a Glance",
+        "content": "A direct comparison between individual bonds and bond funds comes down to whether you need a guaranteed payout date or broad diversification. When you purchase an individual bond, you lend capital directly to an issuing entity such as a corporation, a municipality, or the federal government. That entity legally promises to return your initial principal on a specified calendar date while making fixed interest disbursements along the way. In contrast, investing in a bond fund pools your money from many investors into an investment company registered with the [Securities and Exchange Commission (SEC)](https://www.sec.gov/) and overseen by an investment adviser. The SEC notes on Investor.gov that each fund share represents part ownership of the overall portfolio, with gains, losses, and management expenses shared proportionately.\n\nThis structural difference directly shapes how your capital behaves over time. An individual bond gives you total clarity over your cash flows if you intend to hold the instrument until its stated expiration date. Investor.gov says bonds typically pay interest on a regular schedule, such as every six months, and return the face value at maturity if the bond is held to maturity and the issuer does not default. A bond fund lowers risk by investing across a range of companies and industries rather than in one specific bond. However, most bond funds have no set maturity date. Your capital remains exposed to prevailing market interest rate shifts, and bond funds face the risk that you might lose money."
+      },
+      {
+        "heading": "How Individual Bonds Work",
+        "content": "An individual bond functions as a formal debt contract between a lender and a borrower. When an institution needs to finance capital projects, refinance older obligations, or cover operational deficits, it sells debt securities to investors. As reported by Investor.gov, the borrower specifies a par value, a coupon rate, and a maturity date at the time of issuance. Par value, also known as face value, represents the principal balance that the borrower must repay when the bond matures. The coupon rate dictates the annual interest you receive, which is typically divided into equal semiannual installments.\n\nFINRA explains that the vast majority of bonds have a maturity date set when the bond is issued. Short-term bonds mature in one to three years, intermediate-term issues mature in four to 10 years, and long-term bonds extend beyond a decade. If you retain the security through its entire lifespan, Investor.gov says you receive the face value plus interest unless the issuer defaults or calls the bond. The U.S. Department of the Treasury issues Treasury securities, which carry the full faith and credit of the U.S. government and come with relatively lower risks. Municipal bonds, issued by states, cities, and counties, are often backed by general tax revenues or specific infrastructure project receipts.\n\nIndividual bonds also carry structural features that can cut your investment timeline short. FINRA says callable bonds, which let the issuer retire a bond before it matures, are common. Investor.gov says an issuer might retire a bond early if interest rates decline. If an issuer calls your bond, the borrower retires the bond before it matures. If you need cash before the maturity date arrives, you must liquidate the bond on the secondary market. Bond prices on secondary markets fluctuate continuously based on market interest rates, credit rating revisions, and prevailing buyer liquidity."
+      },
+      {
+        "heading": "How Bond Funds Work",
+        "content": "A bond fund is an investment vehicle that pools money from many investors to invest in bonds or other debt securities. FINRA defines a bond fund as a mutual fund or exchange-traded fund (ETF) that invests in bonds, and Investor.gov describes a mutual fund as an SEC-registered open-end investment company. Instead of owning an underlying debt security directly, you own shares of the investment company. FINRA says each bond fund is managed to achieve a stated investment objective, and a fund may hold all of one type of bond, such as municipal bonds, or a combination of bond types. An index fund is one kind of fund that follows a market index, and the guide on [what an index fund is](/guides/what-is-an-index-fund/) explains how those work.\n\nA bond fund holds a changing mix of bonds, so most bond funds have no single maturity date. You cannot circle a date on the calendar to collect an original lump-sum face value. To withdraw your money, you can sell your shares back to the fund at the next calculated net asset value (NAV) on any business day, minus any redemption fees.\n\nIncome generated by a bond fund also fluctuates over time. Individual bonds pay fixed coupons, while a bond fund earns income across its portfolio holdings. Investor.gov notes that funds distribute this net earned income to shareholders as periodic dividend payments after deducting management fees and administrative costs. Dividends or interest payments may also change as market conditions change. Investor.gov emphasizes that mutual funds are never insured or guaranteed by the Federal Deposit Insurance Corporation (FDIC) or any other federal body. If the securities inside the portfolio decline in market value, the fund share price drops, and you can lose principal."
+      },
+      {
+        "heading": "What Happens When Interest Rates Rise",
+        "content": "When market interest rates increase, bond prices tend to fall, according to FINRA. Investor.gov says rising rates make newly issued bonds more appealing than older ones. When benchmark interest rates rise, newly issued bonds enter the market carrying higher coupon rates than debt issued in previous months or years. Investors looking to buy debt on the secondary market will not pay full par value for an older bond that pays an inferior interest rate. To find a willing buyer, the seller of the older bond must offer it at a discount.\n\nWhile rising interest rates depress market valuations for both individual debt and pooled funds, the practical consequence depends on whether you have a fixed maturity date. If you own an individual bond and prevailing market rates climb, the market value of your bond will fall. However, Investor.gov says that if bonds are held to maturity the investor will receive the face value, plus interest. If a bond is sold before maturity, Investor.gov says it may be worth more or less than the face value.\n\nBond fund investors have no maturity date to wait for. Because a bond fund has no terminal maturity date, a decline in portfolio bond prices immediately reduces the fund net asset value per share. FINRA points out that a metric known as duration, stated in years, measures how sensitive a bond or bond fund is to interest rate movements. The higher the duration number, the more the share price fluctuates when benchmark rates move. Funds holding bonds with longer average lives see a greater impact on price per share from interest rate fluctuations. When interest rates rise, bond prices tend to fall, and bond fund investors face the risk that they might lose money."
+      },
+      {
+        "heading": "Costs, Minimums and Diversification",
+        "content": "Purchasing individual bonds versus investing in bond funds involves different cost models, entry thresholds, and portfolio construction hurdles. When building a portfolio of individual bonds, achieving adequate diversification across different industries and issuers requires substantial capital. The U.S. government sells Treasury bonds in $100 denominations, electronic savings bonds start at $25 on [TreasuryDirect](https://www.treasurydirect.gov/), and corporate and municipal bonds can be bought through brokerage firms or banks. FINRA notes that most agency securities, for example, require a minimum initial investment of $10,000. \n\nIn the majority of secondary bond transactions, a brokerage firm acts as a principal rather than an agent. FINRA explains that when a firm acts as principal, it sells you a security from its own inventory and adds a markup to the price. When you sell that bond back, the broker may apply a markdown below prevailing market bids. This markup or markdown serves as the broker's primary compensation, but it is baked directly into the transaction price rather than itemized as an explicit commission fee. If a broker acts strictly as an agent, an explicit commission appears on your trade confirmation.\n\nBond funds solve the diversification and entry hurdle with pooled capital. Investor.gov states that many mutual funds set a relatively low dollar amount for initial investment and subsequent purchases. However, bond funds charge ongoing operational expenses that compound over time. As Investor.gov highlights, funds pass along their costs by deducting fees and expenses from NAV, so you pay them indirectly. This means you pay fund fees indirectly every day you hold the position. Investor.gov says a fund with high costs must perform better than a low-cost fund to generate the same returns for you."
+      },
+      {
+        "heading": "Who Should Choose Each Option",
+        "content": "Choosing between individual debt issues and pooled bond funds requires matching your personal timeline, cash requirements, and willingness to monitor credit health. Individual bonds fit investors with a defined financial liability due on an exact calendar date. If you need a specific amount on a specific date, holding an individual bond to maturity delivers that face value unless the issuer defaults or calls the bond. Held to maturity, an individual bond returns its face value plus interest unless the issuer defaults or calls the bond, but its price can fall if you sell earlier.\n\nBond funds fit investors making diversified, ongoing purchases in small increments. For ongoing, small-increment contributions, buying individual bonds may be impractical because agency bonds generally require $10,000 and broker-dealers may add markups. A bond fund allows investors to invest modest sums across a diversified portfolio of debt securities. Savers balancing fixed income against equities can review our guide on [stocks vs bonds](/compare/stocks-vs-bonds/) to see how debt allocations complement growth investments across an entire portfolio.\n\nWho this is not for: Neither individual bonds nor bond funds suit savers who need access to their capital within days and cannot afford any decline in nominal balance. Both products experience market price drops when interest rates rise, and neither mutual fund shares nor individual corporate bonds carry FDIC insurance protection. Savers who need the money within days should keep it where its value does not move with interest rates, for example an FDIC-insured deposit account. This analysis is not for investors seeking a tailored investment plan. Savers should examine fund prospectuses and official municipal disclosures before allocating funds.\n\nWhat would change our answer: Our preference for individual bonds for target-date goals would flip if you might need to liquidate your position before the maturity date arrives, exposing you to selling at a price that may be below face value. Similarly, our preference for bond funds for small ongoing contributions would reverse if a fund charges high ongoing expense ratios that erode net yield compared with the markup a brokerage firm may add when it sells you a bond, or if an investor concentrates their holdings in an individual bond issued by a single financially troubled corporation."
+      }
+    ],
+    "verdictHeading": "Our Takeaway for Individual Bonds vs Bond Funds",
+    "verdict": "Based on published regulatory guidance from Investor.gov and FINRA, individual bonds fit when you have a specific capital requirement on a known future date and possess the ability to hold the instrument until it matures. Under that plan, Investor.gov says the investor receives the face value plus interest if the bond is held to maturity, unless the issuer defaults or calls the bond. In contrast, bond funds fit investors making small, recurring investments who require diversification across multiple issuers and who accept that share prices will fluctuate without a fixed maturity date. FINRA says that when you invest in bonds and bond funds, you face the risk that you might lose money. The decisive exception occurs when an investor faces unexpected liquidity needs prior to a bond maturity date, which means selling an individual bond at a price that may be below its face value, so both options are exposed to interest rate risk. To take the next concrete step in evaluating bonds vs bond funds, check your targeted cash outlay date against your investment horizon and examine the prospectus or official statement of any debt asset before purchasing.",
+    "disclaimerText": "This comparison is provided for educational and informational purposes only and does not constitute financial, legal, tax, or investment advice.",
+    "faqs": [
+      {
+        "question": "What is the difference between a bond and a bond fund?",
+        "answer": "An individual bond is a direct debt security issued by a government or corporation with a set maturity date and specified interest rate, while a bond fund is an SEC-registered investment company that pools capital from many savers to invest in a diversified portfolio of debt securities."
+      },
+      {
+        "question": "Do bonds or bond funds lose value when interest rates rise?",
+        "answer": "Both individual bonds and bond funds tend to lose market value when interest rates rise. However, an investor who holds an individual bond to maturity receives the original face value plus interest unless the issuer defaults or calls the bond, whereas a bond fund has no set maturity date and its share price continues to fluctuate."
+      },
+      {
+        "question": "Do bond funds charge fees?",
+        "answer": "Yes, bond funds charge operational and management fees that are paid indirectly by shareholders. The investment company deducts these expenses directly from the fund's total assets, which reduces the daily net asset value (NAV) and lowers overall investor returns over time."
+      },
+      {
+        "question": "Which is easier to buy in small amounts?",
+        "answer": "Bond funds are generally easier to purchase in small increments because many mutual funds set relatively low initial investment amounts, whereas agency bonds generally require a $10,000 minimum."
+      },
+      {
+        "question": "Do you get your money back at maturity with a bond fund?",
+        "answer": "No, most bond funds have no set maturity date, meaning there is no calendar date when an investor receives their original principal back. To exit a mutual fund, you can sell your shares back to the fund at the next calculated net asset value (NAV) on any business day, minus any redemption fees."
+      },
+      {
+        "question": "Can you lose money in individual bonds?",
+        "answer": "Yes, you can lose money in individual bonds if the borrowing entity defaults on its interest or principal obligations, or if you sell the bond on the secondary market before its maturity date when interest rates have increased or the issuer's credit rating has declined."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Investor.gov Bonds FAQs",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-fixed-income-products/bonds"
+      },
+      {
+        "label": "Investor.gov Mutual Funds",
+        "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1"
+      },
+      {
+        "label": "FINRA Bonds",
+        "url": "https://www.finra.org/investors/investing/investment-products/bonds"
+      }
+    ],
+    "relatedComparisons": [
+      "stocks-vs-bonds",
+      "i-bonds-vs-tips",
+      "treasury-bills-vs-notes-vs-bonds",
+      "etf-vs-mutual-fund"
+    ]
+  },
+  // -- mindmap-pass 2026-11-23-comparison: tenants-in-common-vs-joint-tenancy --
+  {
+    "updated": "2026-11-23",
+    "slug": "tenants-in-common-vs-joint-tenancy",
+    "title": "Tenants in Common vs Joint Tenancy Death and Tax Rules",
+    "metaDescription": "Compare tenants in common vs joint tenancy property ownership. Learn how death, survivorship, Florida statute rules, and federal tax basis change your share.",
+    "targetKeyword": "tenants in common vs joint tenancy",
+    "optionA": "Tenants in Common",
+    "optionB": "Joint Tenancy",
+    "segment": "Estate Planning",
+    "h1": "Tenants in Common vs Joint Tenancy Property Rules",
+    "introText": "Joint tenancy automatically passes an owner's share of property to the surviving co-owners upon death, whereas tenants in common hold separate shares that pass to chosen heirs through an estate.\n\nState law establishes the legal default for how co-owners hold title, meaning local statutes dictate the outcome when a deed lacks clear survivorship wording. Federal tax rules under the Internal Revenue Code (IRC) also treat property differently at death depending on whether the co-owners are married spouses, how much each person paid toward the purchase price, and whether the asset sits in a community property state.\n\nNeither form is a tax winner. Spouse status, who paid, and community property rules change the result.",
+    "tableHeading": "What Happens to Each Owner's Share at Death",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Right of Survivorship",
+          "a": "No right of survivorship exists. When a tenant in common dies, that owner's property share passes through that owner's estate.",
+          "b": "Full right of survivorship applies. When a joint tenant dies, that owner's interest transfers directly to the surviving joint owners."
+        },
+        {
+          "dimension": "Default Classification Under State Law",
+          "a": "Under the [Florida Senate](https://www.flsenate.gov/Laws/Statutes/2025/689.15) 2025 Florida Statutes Section 689.15, a conveyance to two or more people creates a tenancy in common unless the deed expressly provides for survivorship.",
+          "b": "Joint tenancy with right of survivorship (JTWROS) requires specific express wording in the deed under Section 689.15 of the 2025 Florida Statutes."
+        },
+        {
+          "dimension": "Spouse Co-Ownership Rules",
+          "a": "Section 689.15 of the 2025 Florida Statutes treats tenancy by the entirety, which spouses hold, separately from a tenancy in common.",
+          "b": "26 U.S.C. 2040 names tenancy by the entirety as held by the decedent and the decedent's spouse. Under Florida Section 689.15, tenants by the entirety become tenants in common upon dissolution of marriage."
+        },
+        {
+          "dimension": "Federal Estate Gross Value Inclusion for Spouses",
+          "a": "Under 26 U.S.C. 2033, the value of the property to the extent of the decedent's interest at death is included in the gross estate.",
+          "b": "Under [26 U.S.C. 2040(b)](https://www.law.cornell.edu/uscode/text/26/2040) at the [Legal Information Institute at Cornell Law School (LII)](https://www.law.cornell.edu/), a qualified joint interest held solely by spouses includes exactly one-half of the property value in the gross estate."
+        },
+        {
+          "dimension": "Federal Estate Gross Value Inclusion for Non-Spouses",
+          "a": "Under 26 U.S.C. 2033, the decedent's own share owned at death is included in the gross estate.",
+          "b": "Under 26 U.S.C. 2040(a), the full property value enters the gross estate except any portion proven to have originally belonged to the surviving owner."
+        },
+        {
+          "dimension": "Federal Tax Basis Adjustment at Death",
+          "a": "Property passing by bequest, devise, or inheritance receives a stepped-up fair market value (FMV) basis under [26 U.S.C. 1014(a)(1)](https://www.law.cornell.edu/uscode/text/26/1014).",
+          "b": "Under 26 U.S.C. 1014(b)(9) and [IRS Publication 551](https://www.irs.gov/publications/p551) from the [Internal Revenue Service (IRS)](https://www.irs.gov/), the survivor's new basis depends on the percentage included in the gross estate and past depreciation."
+        },
+        {
+          "dimension": "Community Property State Exception",
+          "a": "Under 26 U.S.C. 1014(b)(6), community property states allow both halves of qualifying marital community property to receive a fair market value basis adjustment at the first death.",
+          "b": "In community property states such as California, Texas, and Washington, the total value of community property generally becomes the basis of the entire property if at least half is includible in the gross estate, per IRS Publication 551."
+        },
+        {
+          "dimension": "Creditor and Partition Protections",
+          "a": "Set by state law.",
+          "b": "Set by state law."
+        }
+      ]
+    },
+    "sections": [
+      {
+        "heading": "What Happens to Each Owner's Share at Death",
+        "content": "The fundamental legal distinction between tenancy in common and joint tenancy centers on survivorship. In a tenancy in common, each co-owner holds a distinct, separate legal stake in the real estate. When an owner dies, that individual share does not transfer to the remaining co-owners. Instead, the decedent's ownership interest passes through that owner's estate rather than to the co-owner.\n\nJoint tenancy with right of survivorship works differently. When an owner who holds real property as a joint tenant with right of survivorship dies, the interest passes to the surviving joint tenants.\n\nState law sets the default for how a deed with several owners is read and determines whether survivorship applies. As one clear state example, the [Florida Senate](https://www.flsenate.gov/) publishes Section [689.15 of the 2025 Florida Statutes](https://www.flsenate.gov/Laws/Statutes/2025/689.15), which explicitly abolishes the common-law doctrine of survivorship as a baseline presumption. Under Florida law, a conveyance made to two or more individuals automatically creates a tenancy in common unless the deed expressly states a right of survivorship.\n\nFederal tax law then applies its own rules to the property once an owner dies. Under IRC Section 1014, property inherited from a decedent receives an adjusted tax basis equal to its fair market value on the date of death. However, how that adjustment applies across the whole property depends heavily on whether the co-owners were married, how much financial consideration each owner provided, and whether the parcel is situated in a community property jurisdiction."
+      },
+      {
+        "heading": "How Tenancy in Common Works",
+        "content": "A tenancy in common allows two or more co-owners to hold undivided fractional interests in a single parcel of real estate. Under this structure, there is no automatic right of survivorship.\n\nBecause a tenancy in common does not include a right of survivorship, a deceased owner's share passes through that owner's estate rather than to the co-owner.\n\nState laws govern rules outside federal tax and survivorship defaults, meaning these matters are state-specific."
+      },
+      {
+        "heading": "How Joint Tenancy Works",
+        "content": "A joint tenancy with right of survivorship is the form of ownership that 26 U.S.C. 2040 describes for property held by the decedent and another person.\n\nThe defining feature of joint tenancy is the right of survivorship. When one joint tenant dies, the surviving joint tenants take the decedent's interest under the terms of the instrument.\n\nState statutes heavily regulate how joint tenancies are formed and maintained. Section 689.15 of the 2025 Florida Statutes is one state's example. The statute states that the common-law doctrine of survivorship does not prevail in Florida real estate unless the instrument creating the estate expressly provides for the right of survivorship. To establish survivorship rights in Florida, the instrument creating the estate must expressly provide for the right of survivorship.\n\nFlorida Section 689.15 also addresses marital estates, providing an explicit statutory exception for tenancy by the entirety. 26 U.S.C. 2040 names tenancy by the entirety as held by the decedent and the decedent's spouse. Section 689.15 specifies that in cases of estates by the entirety, the tenants automatically become tenants in common upon the legal dissolution of their marriage. When a married couple divorces, tenants by the entirety become tenants in common by operation of Section 689.15."
+      },
+      {
+        "heading": "Tax Basis When an Owner Dies",
+        "content": "Section 2040 of the Internal Revenue Code decides how much of a joint interest the gross estate includes, and Section 1014 sets the basis of property acquired from a decedent, as IRS Publication 551 explains. When an owner sells real property, the taxable capital gain is calculated as the net sales proceeds minus the property's adjusted tax basis. When property passes through death, the basis is frequently adjusted to the fair market value of the property at the date of death under Section 1014(a)(1), commonly known as a basis step-up.\n\nThe federal tax basis rules treat married co-owners and non-spouse co-owners under different rules. For married individuals holding property as a qualified joint interest, 26 U.S.C. 2040(b) establishes a one-half rule. A qualified joint interest includes property held by married spouses as tenants by the entirety or as joint tenants with right of survivorship, provided the spouses are the only co-owners. Under Section 2040(b)(1), exactly one-half of the property's fair market value is included in the deceased spouse's gross estate, regardless of how much money each spouse contributed toward the original purchase price.\n\nUnder IRS Publication 551, the surviving spouse calculates a new adjusted basis by combining their existing basis in their retained half with the fair market value of the inherited half.\n\nNon-spouse joint tenants face an entirely different mechanism known as the consideration-furnished rule under 26 U.S.C. 2040(a). When joint tenants are not married, the entire fair market value of the property enters the deceased owner's gross estate under Section 2040(a), except for whatever portion can be proven to have originally belonged to the surviving tenant. The surviving tenant must produce documentation showing their financial contribution toward the acquisition cost.\n\nIRS Publication 551 gives an example of this non-spouse rule featuring two joint owners, John and Jim. John and Jim purchased commercial property for $30,000 as joint tenants with right of survivorship. John furnished two-thirds of the purchase price ($20,000), while Jim furnished one-third ($10,000). Depreciation deductions allowed before John's death were $12,000, and under local law each had a half interest in the income from the property. When John died, the property had reached a fair market value of $60,000. Because John paid two-thirds of the acquisition cost, two-thirds of the property's value ($40,000) was includible in John's gross estate under Section 2040(a).\n\nJim's new basis at John's death became $44,000. This figure is calculated by taking Jim's original $10,000 cost basis, subtracting his $6,000 allowed depreciation deductions to reach an adjusted basis of $4,000, and adding the $40,000 value included in John's estate. Publication 551 says that if Jim had not contributed any part of the purchase price, his basis would be $54,000, figured by subtracting the $6,000 depreciation allocated to his half from the $60,000 fair market value. If local law gave Jim no income interest and he paid nothing, Jim's basis would step up to the full $60,000 fair market value.\n\nCommunity property states provide a separate exception under 26 U.S.C. 1014(b)(6). In the nine community property states identified in IRS Publication 551, Arizona, California, Idaho, Louisiana, Nevada, New Mexico, Texas, Washington, and Wisconsin, married spouses are each treated as owning half the community estate. When one spouse dies, 26 U.S.C. 1014(b)(6) provides that the surviving spouse's half share of community property also receives an adjusted fair market value basis, as long as at least half the total community interest was includible in the deceased spouse's gross estate."
+      },
+      {
+        "heading": "Selling, Borrowing and Creditors",
+        "content": "Property co-owners regularly face questions regarding operational control, mortgage borrowing, and exposure to creditor claims. Creditor claims, partition rights, mortgage terms and property taxes depend on state law, and this comparison does not cover them. Florida's Section 689.15 above shows how one state sets the default."
+      },
+      {
+        "heading": "Who Should Choose Each Option",
+        "content": "Choosing between tenancy in common and joint tenancy requires matching legal deed mechanics to family relationships, financial contributions, and long-term estate distribution goals. \n\nJoint tenancy with right of survivorship fits co-owners who share equal financial investments, possess identical ownership goals, and want the interest to pass to the surviving owner under the survivorship right. It fits married couples purchasing a residence who intend for the surviving spouse to hold outright ownership.\n\nTenancy in common fits business partners, unrelated co-investors, or family members who contribute unequal amounts of capital toward a property purchase. It allows each party to maintain a proportionate financial stake and ensures that each investor can direct their equity to chosen beneficiaries rather than forfeiting their investment to a surviving co-investor.\n\nThis guidance is not suitable for unmarried partners making unequal financial contributions toward a home purchase, blended families with children from prior relationships, or co-owners residing in states where statutory survivorship defaults differ. In blended families, survivorship moves a deceased owner's interest to the surviving owner under the instrument, so the survivorship wording matters. For joint tenants who are not spouses, 26 U.S.C. 2040(a) includes the full value in the decedent's gross estate except the part the survivor can show originally belonged to the survivor.\n\nCo-owners in these complex categories should evaluate customized estate planning alternatives rather than relying solely on deed titling. Our guide on [how to fund a trust](/guides/how-to-fund-a-trust/) explains how real estate is retitled into a trust. Reviewing our comparison on a [living trust vs will](/compare/living-trust-vs-will/) also helps co-owners evaluate whether a comprehensive trust structure protects their heirs better than relying on survivorship deeds.\n\nSeveral legal conditions would alter this structural recommendation. If your state's statutory default presumes survivorship rather than tenancy in common, deed drafting requirements shift. If a married couple lives in a community property state, 26 U.S.C. 1014(b)(6) and IRS Publication 551 describe a different basis rule for the surviving spouse's half."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What happens to a tenant in common when they die?",
+        "answer": "When a tenant in common dies, their ownership share passes through their estate rather than transferring to the surviving co-owners. The inherited interest generally receives a stepped-up fair market value basis under 26 U.S.C. 1014(a)(1)."
+      },
+      {
+        "question": "What happens to a joint tenant when they die?",
+        "answer": "When a joint tenant dies, the interest passes to the surviving joint tenants under the instrument. The surviving owners' adjusted tax basis depends on 26 U.S.C. 1014 and the part of the property included in the gross estate under 2040 based on marital status and past financial contributions."
+      },
+      {
+        "question": "Which is better for taxes, tenants in common or joint tenancy?",
+        "answer": "Neither title structure is an inherent tax winner, because the federal tax outcome depends on marriage status, acquisition funding, and community property rules. One-half of a qualified joint interest held by spouses is included in the decedent's gross estate under 26 U.S.C. 2040(b), non-spouse joint tenants are evaluated based on financial contributions under Section 2040(a), and community property couples follow the basis rule in 26 U.S.C. 1014(b)(6)."
+      },
+      {
+        "question": "What are the disadvantages of joint tenancy?",
+        "answer": "The primary disadvantage of joint tenancy is that the right of survivorship removes your ability to leave your property share to chosen heirs through a will. Non-spouse joint owners face strict financial contribution tracing under 26 U.S.C. 2040(a) to avoid having the entire asset included in a deceased owner's gross estate, and individual state statutes such as Florida Section 689.15 require precise deed language to create survivorship rights."
+      },
+      {
+        "question": "Which is better, tenants in common or joint tenancy?",
+        "answer": "Joint tenancy is better for co-owners who want their property share to pass to surviving owners under the survivorship right, whereas tenancy in common is better for co-owners who hold unequal stakes or want their share to pass to designated children or heirs. State statutory defaults and estate planning goals dictate which title form functions best for your situation."
+      }
+    ],
+    "verdictHeading": "Our Takeaway for Tenants in Common vs Joint Tenancy",
+    "verdict": "Joint tenancy with right of survivorship fits co-owners who want their real estate to pass automatically to surviving owners, while tenancy in common fits co-owners who want their ownership stake to pass through an estate plan to chosen beneficiaries. Based on reported statutory authorities including 26 U.S.C. 2040, 26 U.S.C. 1014, IRS Publication 551, and Section 689.15 of the 2025 Florida Statutes, neither structure offers a universal tax advantage. Federal tax basis adjustments depend heavily on whether co-owners are married spouses, how much each non-spouse owner paid toward the purchase price, and whether the real estate sits in a community property state. This framework changes if your state statute establishes a different survivorship presumption, if you reside in a community property jurisdiction, or if co-owners contribute unequal purchase capital. Confirm the deed wording with an attorney licensed in your state before choosing tenants in common vs joint tenancy to retitle.",
+    "disclaimerText": "This article provides general property and tax information for educational purposes and does not constitute formal legal, financial, or tax advice. Consult a qualified attorney licensed in your state to review specific deed titling and estate planning matters.",
+    "sources": [
+      {
+        "label": "Florida Senate Section 689.15 (2025 edition)",
+        "url": "https://www.flsenate.gov/Laws/Statutes/2025/689.15"
+      },
+      {
+        "label": "26 U.S.C. 2040 Cornell LII",
+        "url": "https://www.law.cornell.edu/uscode/text/26/2040"
+      },
+      {
+        "label": "26 U.S.C. 1014 Cornell LII",
+        "url": "https://www.law.cornell.edu/uscode/text/26/1014"
+      },
+      {
+        "label": "IRS Publication 551",
+        "url": "https://www.irs.gov/publications/p551"
+      },
+      {
+        "label": "26 U.S.C. 2033 Cornell LII",
+        "url": "https://www.law.cornell.edu/uscode/text/26/2033"
+      }
+    ],
+    "relatedComparisons": [
+      "living-trust-vs-will",
+      "probate-vs-trust",
+      "power-of-attorney-vs-will",
+      "living-trust-vs-lady-bird-deed"
+    ]
+  },
+  // -- mindmap-pass 2026-11-23-comparison: ssdi-vs-ssi --
+  {
+    "updated": "2026-11-23",
+    "slug": "ssdi-vs-ssi",
+    "title": "SSDI vs SSI Differences in Work Credits and Limits",
+    "metaDescription": "Compare SSDI vs SSI eligibility rules, work credits, and income limits under federal regulations to understand which disability program fits your situation.",
+    "targetKeyword": "ssdi vs ssi",
+    "optionA": "SSDI",
+    "optionB": "SSI",
+    "segment": "Benefits",
+    "h1": "SSDI vs SSI Differences in Work Credits and Limits",
+    "introText": "Social Security Disability Insurance (SSDI) pays monthly benefits to disabled workers who earned enough work credits. Supplemental Security Income (SSI) pays monthly benefits to people who are 65 or older, blind or disabled and have limited income and resources.\n\nSSDI depends on work credits. SSI depends on being 65 or older, blind or disabled, plus income and resource limits. Confirm current amounts and your own eligibility with the [Social Security Administration (SSA)](https://www.ssa.gov/ssi/).",
+    "tableHeading": "SSDI vs SSI at a Glance",
+    "comparisonTable": {
+      "rows": [
+        {
+          "dimension": "Basic Program Purpose",
+          "a": "Provides disability benefits to workers who have enough social security earnings to be insured for disability under [20 CFR 404.315](https://www.ecfr.gov/current/title-20/section-404.315).",
+          "b": "Provides monthly financial assistance to aged, blind, or disabled individuals with limited income and resources under [20 CFR 416.202](https://www.ecfr.gov/current/title-20/section-416.202)."
+        },
+        {
+          "dimension": "Work History Requirement",
+          "a": "Requires disability insured status achieved through quarters of coverage as specified in [20 CFR 404.130](https://www.ecfr.gov/current/title-20/section-404.130).",
+          "b": "The SSI requirements listed in [20 CFR 416.202](https://www.ecfr.gov/current/title-20/section-416.202) do not include work credits."
+        },
+        {
+          "dimension": "Financial Resource Limits",
+          "a": "The SSDI eligibility rules in [20 CFR 404.315](https://www.ecfr.gov/current/title-20/section-404.315) and [20 CFR 404.130](https://www.ecfr.gov/current/title-20/section-404.130) contain no resource limit.",
+          "b": "Restricts countable nonexcludable resources to $2,000 for an individual and $3,000 for an individual and spouse under [20 CFR 416.1205](https://www.ecfr.gov/current/title-20/section-416.1205)."
+        },
+        {
+          "dimension": "Earned and Unearned Income Limits",
+          "a": "The SSDI entitlement rules in [20 CFR 404.315](https://www.ecfr.gov/current/title-20/section-404.315) and [20 CFR 404.130](https://www.ecfr.gov/current/title-20/section-404.130) contain no income test. Disability is defined by the inability to do substantial gainful activity ([20 CFR 404.1505](https://www.ecfr.gov/current/title-20/section-404.1505)).",
+          "b": "Counts earned and unearned income monthly under [20 CFR 416.1100](https://www.ecfr.gov/current/title-20/section-416.1100). Excess income reduces or eliminates monthly payments."
+        },
+        {
+          "dimension": "Medical Disability Standard",
+          "a": "Requires a medically determinable impairment preventing substantial gainful activity lasting at least 12 months or resulting in death under [20 CFR 404.1505](https://www.ecfr.gov/current/title-20/section-404.1505).",
+          "b": "Applies the identical adult disability definition requiring severe impairment lasting at least 12 months under [20 CFR 416.905](https://www.ecfr.gov/current/title-20/section-416.905)."
+        },
+        {
+          "dimension": "Mandatory Waiting Period",
+          "a": "Imposes a mandatory 5-month waiting period from disability onset under [20 CFR 404.315](https://www.ecfr.gov/current/title-20/section-404.315), with exceptions for prior disability within 5 years or ALS.",
+          "b": "[20 CFR 416.202](https://www.ecfr.gov/current/title-20/section-416.202) does not list a waiting period."
+        },
+        {
+          "dimension": "Age Requirements",
+          "a": "Covers workers prior to attaining full retirement age as defined in 20 CFR 404.409 under [20 CFR 404.315](https://www.ecfr.gov/current/title-20/section-404.315).",
+          "b": "Covers qualified individuals aged 65 or older, or individuals of any age who are blind or disabled under [20 CFR 416.202](https://www.ecfr.gov/current/title-20/section-416.202)."
+        },
+        {
+          "dimension": "Concurrent Benefit Potential",
+          "a": "Some workers receive both. SSA counts the SSDI payment as unearned income for SSI under [20 CFR 416.1121](https://www.ecfr.gov/current/title-20/section-416.1121), and SSA decides.",
+          "b": "Recipients can receive both benefits, but SSA counts SSDI as unearned income against monthly SSI payments under [20 CFR 416.1121](https://www.ecfr.gov/current/title-20/section-416.1121)."
+        }
+      ]
+    },
+    "sections": [
+      {
+        "heading": "SSDI vs SSI at a Glance",
+        "content": "The fundamental difference between Social Security Disability Insurance (SSDI) and Supplemental Security Income (SSI) centers on how an individual qualifies for support. SSDI provides disability benefits to eligible insured workers. Entitlement depends on having enough social security earnings to be insured for disability. In contrast, SSI operates as a needs-based program under Title XVI of the Social Security Act for people who are aged, blind or disabled with limited income and resources.\n\nFederal regulations establish distinct eligibility boundaries for each program in Title 20 of the Code of Federal Regulations (CFR), published online as the [Electronic Code of Federal Regulations (eCFR)](https://www.ecfr.gov/current/title-20/section-404.315). The SSDI eligibility rules in [20 CFR 404.315](https://www.ecfr.gov/current/title-20/section-404.315) and [20 CFR 404.130](https://www.ecfr.gov/current/title-20/section-404.130) contain no resource limit. Conversely, SSI eligibility governed by [20 CFR 416.202](https://www.ecfr.gov/current/title-20/section-416.202) requires claimants to have limited income and resources. To examine updated payment baselines and adjustments for both systems, check our guides on the [2027 SSDI COLA](/guides/2027-ssdi-cola/) (cost-of-living adjustment) and [2027 SSI amounts](/guides/ssi-increase-2027/). Some people receive both SSDI and SSI, as our [2027 SSDI COLA](/guides/2027-ssdi-cola/) guide notes, citing the Social Security Administration (SSA). When an individual receives both benefits, the [Social Security Administration](https://www.ssa.gov/benefits/disability/) treats Social Security and disability benefits as unearned income under [20 CFR 416.1121](https://www.ecfr.gov/current/title-20/section-416.1121)."
+      },
+      {
+        "heading": "Who Qualifies for SSDI",
+        "content": "Entitlement to SSDI requires meeting the federal insurance requirements established under 20 CFR 404.315. First, an applicant must have accumulated enough social security earnings to be insured for disability, as described in 20 CFR 404.130. Second, the worker must submit an official application for benefits before reaching full retirement age. Third, the individual must have a qualifying disability defined under 20 CFR 404.1505, or have experienced a disability that ended within the 12-month period before the month of filing. Fourth, the applicant must satisfy a mandatory waiting period of five full consecutive calendar months.\n\nDisability insured status is governed by four specific rules detailed in 20 CFR 404.130. Under Rule I, commonly referred to as the 20/40 requirement, a worker must be fully insured and possess at least 20 quarters of coverage (QCs) earned within the 40-quarter period ending with the quarter in which disability began. \n\nFederal regulations provide alternative eligibility pathways for younger workers who experience disabling medical conditions before accumulating forty calendar quarters. Rule II of 20 CFR 404.130 covers an individual who becomes disabled before age 31. That person needs quarters of coverage in at least one-half of the calendar quarters beginning after age 21 and ending with the quarter of disability onset. If that calculation yields an odd number of quarters, the agency reduces the requirement by one quarter. For short periods under 12 quarters, the applicant must show at least six quarters of coverage within the 12-quarter period ending with the disability quarter. Rule III governs individuals who experienced an earlier disability period before age 31 and become disabled again at age 31 or older. Rule IV applies to individuals who are statutorily blind, requiring only that the applicant be fully insured.\n\nThe mandatory five-month waiting period under 20 CFR 404.315(a)(4) begins with the first full calendar month in which the worker was both insured for disability and medically disabled. By federal rule, this waiting period can begin no earlier than the 17th month before the month the worker files an application. The regulation lists two exceptions where no waiting period is required. One applies if the applicant was previously entitled to disability benefits or a period of disability within five years of the month they became disabled again. The other applies if the individual has been medically determined to have amyotrophic lateral sclerosis (ALS) with an application approved on or after July 23, 2020."
+      },
+      {
+        "heading": "Who Qualifies for SSI",
+        "content": "SSI operates under distinct eligibility rules set forth in 20 CFR 416.202. A claimant must meet all of the requirements in 20 CFR 416.202 to obtain monthly assistance under Title XVI. The individual must be aged 65 or older, blind, or disabled. The applicant must reside within the United States and hold status as a United States citizen, a national, a lawfully admitted permanent resident alien, an alien permanently residing under color of law, or a qualified overseas military dependent. The claimant cannot exceed the monthly income limits in the regulations, cannot hold resources beyond the regulatory limits, cannot be fleeing felony prosecution or confinement, cannot be violating probation or parole, and must formally submit an application for benefits.\n\nIncome rules codified in 20 CFR 416.1100 establish that countable income serves as the primary mechanism for determining monthly eligibility and benefit calculations. The agency counts income on a monthly basis, distinguishing between earned wages from active employment and unearned income derived from other programs. Federal rules state that the more countable income a claimant receives, the less their monthly SSI benefit will be. If an applicant has too much income under 20 CFR 416.1100, they are not eligible for a benefit.\n\nResource limits set in [20 CFR 416.1205](https://www.ecfr.gov/current/title-20/section-416.1205) limit the property and liquid savings a claimant may own. The regulation provides a historical schedule of resource limits in paragraph (c) ending with the row effective January 1, 1989. Under this standard, countable nonexcludable resources cannot exceed $2,000 for an individual and $3,000 for an individual and spouse. Under 20 CFR 416.1201, resources are defined as cash, liquid assets, or real and personal property that an individual owns and could convert to cash to pay for basic support and maintenance.\n\nClaimants whose countable resources exceed these regulatory limits are not eligible for benefits. Our guide on [SSI and inheritance](/guides/ssi-and-inheritance/) covers how an inheritance affects SSI."
+      },
+      {
+        "heading": "How Disability Is Defined",
+        "content": "both programs use the same definition of adult disability. 20 CFR 404.1505 for SSDI and 20 CFR 416.905 for SSI use the same words. The law defines adult disability as the inability to do any substantial gainful activity because of a medically determinable physical or mental impairment. The impairment must be expected to result in death or must have lasted, or be expected to last, at least 12 months.\n\nFederal examiners assess whether the claimant's documented conditions prevent them from performing their past relevant work under 20 CFR 404.1560(b) or 20 CFR 416.960(b). If an applicant cannot perform past duties, examiners evaluate residual functional capacity along with vocational factors, including age, formal education, and acquired job skills, to establish whether they can adapt to any other substantial gainful work that exists in the national economy.\n\nBoth regulations specify separate medical evaluation standards for statutory blindness under 20 CFR 404.1581 and 20 CFR 416.981. The adult disability definition uses identical language in both parts of the Code of Federal Regulations, and SSA decides each application."
+      },
+      {
+        "heading": "Can You Get SSDI and SSI Together",
+        "content": "Concurrent eligibility permits an individual to receive benefits from both SSDI and SSI at the same time, provided they satisfy the distinct requirements of each program. An applicant must possess sufficient quarters of coverage under 20 CFR 404.130 to qualify for SSDI, while simultaneously meeting the income limits of 20 CFR 416.1100 and the resource limits of 20 CFR 416.1205 to qualify for SSI.\n\nThe interaction between concurrent benefits is governed by federal unearned income rules established in 20 CFR 416.1121. Under paragraph (a), Social Security insurance benefits and disability payments are explicitly classified as unearned income for the purposes of SSI accounting. When an individual is awarded SSDI, SSA treats the SSDI payment as unearned income for SSI.\n\nOur [2027 SSI amounts](/guides/ssi-increase-2027/) guide, citing SSA, notes that the Social Security payment rises in January 2027 while the SSI payment rises with the December 31, 2026 payment. Receiving SSDI counts against the SSI income test, because 20 CFR 416.1100 says that if you have too much income you are not eligible for an SSI benefit."
+      },
+      {
+        "heading": "Who Should Apply for Which Program",
+        "content": "Determining which program to pursue depends on your individual employment history, current financial assets, and household earnings. If you may have enough work credits, SSDI is the program to look at first. Rule I in 20 CFR 404.130 asks for at least 20 quarters of coverage in the 40-quarter period ending with the quarter of disability. You can start through the [Social Security Administration disability benefits page](https://www.ssa.gov/benefits/disability/). The SSDI eligibility rules in 20 CFR 404.315 and 20 CFR 404.130 contain no resource limit. \n\nIf you have limited or discontinuous employment history, or if you have never worked in covered employment, you can ask SSA about both programs through the [Social Security Administration SSI page](https://www.ssa.gov/ssi/). The SSI requirements in 20 CFR 416.202 are age, blindness or disability, residency, income, resources and an application. Claimants must maintain nonexcludable assets beneath the limit in 20 CFR 416.1205 ($2,000 for an individual, $3,000 for an individual and spouse). \n\nThis guidance is not intended for individuals whose countable income or liquid assets exceed the SSI limits and who also lack sufficient quarters of coverage for SSDI. SSDI has no resource limit, so check your work credits first, including the younger-worker and blindness rules in 20 CFR 404.130. If you do not meet any of those rules and your resources are above the SSI limit ($2,000 for an individual, $3,000 for an individual and spouse), SSA may find you eligible for neither program. If neither program fits, ask the Social Security Administration what other help you may qualify for. Children are judged under different disability rules, so ask SSA about a child's claim. \n\nSeveral legal and factual changes would modify this analysis. A change to the resource limits in 20 CFR 416.1205 would change who qualifies for SSI. Gaining or losing quarters of coverage changes whether an individual must rely on needs-based assistance or insured worker benefits. Claimants must confirm their eligibility directly with the [Social Security Administration](https://www.ssa.gov/benefits/disability/)."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the main difference between SSDI and SSI?",
+        "answer": "SSDI depends on having enough work credits to be insured for disability under 20 CFR 404.315 and 404.130. SSI depends on age or disability plus limited income and resources under 20 CFR 416.202."
+      },
+      {
+        "question": "Can you get SSDI and SSI at the same time?",
+        "answer": "Some people do, but SSA counts Social Security and disability benefits as unearned income for SSI under 20 CFR 416.1121, so the SSDI amount counts against the SSI income test, and SSA decides."
+      },
+      {
+        "question": "Does SSDI have a resource limit?",
+        "answer": "The SSDI eligibility rules in 20 CFR 404.315 and 20 CFR 404.130 contain no resource limit. SSI does have one: 20 CFR 416.1205 lists $2,000 for an individual and $3,000 for an individual and spouse, so confirm current amounts with SSA."
+      },
+      {
+        "question": "Who qualifies for SSI?",
+        "answer": "Qualified recipients include individuals aged 65 or older, blind, or disabled who maintain nonexcludable resources below $2,000 for individuals or $3,000 for couples under 20 CFR 416.1205 and satisfy income rules under 20 CFR 416.1100."
+      },
+      {
+        "question": "How long is the SSDI waiting period?",
+        "answer": "SSDI requires a mandatory waiting period of five full consecutive calendar months under 20 CFR 404.315, unless you qualify for an exemption due to a prior disability within five years or a medical diagnosis of amyotrophic lateral sclerosis."
+      },
+      {
+        "question": "Do SSDI and SSI use the same definition of disability?",
+        "answer": "Yes, both programs use the identical adult disability definition under 20 CFR 404.1505 and 20 CFR 416.905, requiring a medically determinable impairment preventing substantial gainful activity for at least 12 months or expected to result in death."
+      }
+    ],
+    "verdictHeading": "Our Takeaway for SSDI vs SSI",
+    "verdict": "Apply for SSDI if you are disabled and have enough work credits under 20 CFR 404.130, or apply for SSI if you are 65 or older, blind or disabled and your income and resources are within the limits in 20 CFR 416.202. Some people qualify for both programs, and SSA decides after counting income and resources. 20 CFR 416.1205 lists SSI resource limits of $2,000 for an individual and $3,000 for an individual and spouse, so confirm current amounts with SSA. Compare your work credits and your income and resources against the SSDI vs SSI rules above, then confirm with the [Social Security Administration](https://www.ssa.gov/benefits/disability/).",
+    "disclaimerText": "This comparison provides general educational information regarding federal benefit programs and does not constitute formal legal, financial, or benefits advice. All individual eligibility determinations are made solely by the Social Security Administration.",
+    "sources": [
+      {
+        "label": "20 CFR 404.315 - Who is Entitled to Disability Benefits",
+        "url": "https://www.ecfr.gov/current/title-20/section-404.315"
+      },
+      {
+        "label": "20 CFR 404.130 - How We Determine Disability Insured Status",
+        "url": "https://www.ecfr.gov/current/title-20/section-404.130"
+      },
+      {
+        "label": "20 CFR 404.1505 - Basic Definition of Disability",
+        "url": "https://www.ecfr.gov/current/title-20/section-404.1505"
+      },
+      {
+        "label": "20 CFR 416.202 - Who May Get SSI Benefits",
+        "url": "https://www.ecfr.gov/current/title-20/section-416.202"
+      },
+      {
+        "label": "20 CFR 416.905 - Basic Definition of Disability for Adults",
+        "url": "https://www.ecfr.gov/current/title-20/section-416.905"
+      },
+      {
+        "label": "20 CFR 416.1100 - Income and SSI Eligibility",
+        "url": "https://www.ecfr.gov/current/title-20/section-416.1100"
+      },
+      {
+        "label": "20 CFR 416.1121 - Types of Unearned Income",
+        "url": "https://www.ecfr.gov/current/title-20/section-416.1121"
+      },
+      {
+        "label": "20 CFR 416.1205 - Limitation on Resources",
+        "url": "https://www.ecfr.gov/current/title-20/section-416.1205"
+      },
+      {
+        "label": "Social Security Administration Disability Benefits Portal",
+        "url": "https://www.ssa.gov/benefits/disability/"
+      },
+      {
+        "label": "Social Security Administration Supplemental Security Income Portal",
+        "url": "https://www.ssa.gov/ssi/"
+      }
+    ],
+    "relatedComparisons": [
+      "medicare-vs-medicaid",
+      "special-needs-trust-vs-able-account",
+      "social-security-at-62-vs-70"
     ]
   }
 ];

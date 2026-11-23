@@ -1,0 +1,339 @@
+coverage_lookup: 11 candidate(s) vs 875 repo pages / 891 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1244 past-chart lines
+
+### /guides/visa-vs-mastercard  — row - · create new content
+keyword: visa vs mastercard
+reader question (new page intent): Which is better, Visa or Mastercard?
+lookup terms: visa mastercard   format cues: vs
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms: none
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/ssdi-vs-ssi  — row - · create new content
+keyword: ssdi vs ssi
+reader question (new page intent): What is the difference between SSDI and SSI?
+lookup terms: ssdi ssi   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/ssi-and-inheritance  [in sitemap · src/data/guides.ts · topic match 0.5 on ssi]
+    title: Will an Inheritance Affect Your SSI Benefits in 2026?
+    desc:  Find out how SSI and inheritance rules interact in 2026: the resource limit, the 10-day reporting rule, special needs trusts, and ABLE accounts explained.
+- /guides/2027-ssdi-cola  [in sitemap · src/data/guides.ts · topic match 0.5 on ssdi]
+    title: Social Security COLA 2027 for Disability: SSDI Up 3.6%
+    desc:  The Social Security COLA 2027 for disability is a 3.6% cost-of-living adjustment. The average disabled-worker check rises from $1,642 to $1,701 in January.
+- /guides/ssi-increase-2027  [in sitemap · src/data/guides.ts · topic match 0.5 on ssi]
+    title: SSI Increase 2027 Sets the Federal Maximum at $1,029
+    desc:  The SSI increase 2027 raises the Supplemental Security Income maximum to $1,029 a month. Couples get $1,544, starting December 31, 2026.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-14.md [table] | Lens 2, cluster "2027 Social Security changes (beyond the COLA)". Phrases: `social security changes 2027` 3,600/mo; `social security changes for 2027` 210; `social security earnings limit 2027` 210 KD 28; `social secur
+- 2026-10-14.md [table] | COLA for SSDI | social security cola 2027 disability (3,600, KD 7); ssdi cola 2027 (320); ssdi increase 2027 (210); PAA: How much will my disability go up in 2027? | coverage gap at theme level | none | create new cont
+- 2026-10-14.md [table] | SSI 2027 increase | ssi increase 2027 (1,300); ssi cola 2027 (1,000); how much will ssi checks be in 2027 (390) | coverage gap; separate program and payment date | none | create new content | /guides/ssi-increase-2027/
+- 2026-10-14.md [exclusions] - **social security payment schedule 2027 (110/mo), ssi payment schedule 2027 (70):** HOLD. Low demand, and the SSA 2027 calendar was not read this run. Do not publish dates from memory.
+- 2026-10-14.md [exclusions] - **fers cola 2026, va cola 2026, ssi increase 2026, social security cola 2026:** DROP. They are previous-year terms, and the 2027 rows above take their place.
+- 2026-10-14.md [exclusions] - **Lens 3 (comparison / alternatives / pricing):** the brief's entities are federal benefit programs (Social Security, SSI, SSDI, FERS/CSRS, military retired pay, VA compensation), with no vendor, plan price or rival pr
+Commits naming the topic: none
+Same run overlap: none
+
+### /comparisons/fidelity-vs-robinhood  — row - · create new content
+keyword: fidelity vs robinhood
+reader question (new page intent): Fidelity or Robinhood?
+lookup terms: fidelity robinhood   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/robinhood-vs-fidelity  [in sitemap · src/data/comparisons.ts · topic match 1.0 on fidelity robinhood · same format: vs]
+    title: Robinhood vs Fidelity: Costs and Account Types Compared
+    desc:  Fidelity has more account types, mutual funds and 215 Investor Centers. Robinhood has a 3% IRA match with Gold, lower margin rates and overnight trading.
+- /compare/trump-account-trustees  [in sitemap · src/data/comparisons.ts · topic match 1.0 on fidelity robinhood · same format: vs]
+    title: Trump Account Trustees: Robinhood vs Fidelity, Vanguard
+    desc:  Compare Trump Account trustees: Robinhood holds initial accounts, while Fidelity, Vanguard, and Schwab await Treasury rules. Check current rollover status.
+- /alternatives/robinhood  [in sitemap · src/data/alternatives.json · topic match 0.5 on robinhood]
+    title: Robinhood Alternatives 2026: Fees and Plans Compared
+    desc:  Robinhood alternatives compared: Charles Schwab, Interactive Brokers, E*TRADE, Webull, tastytrade and Public, with published trading fees and rates.
+- /alternatives/fidelity  [in sitemap · src/data/alternatives.json · topic match 0.5 on fidelity]
+    title: Fidelity Alternatives Compared by Fees and Margin Rates
+    desc:  Fidelity alternatives compared: Schwab, Merrill Edge, E*TRADE, Robinhood, Webull, Interactive Brokers and Ally Invest by option, bond and margin fees.
+- /compare/robinhood-vs-webull  [in sitemap · src/data/comparisons.ts · topic match 0.5 on robinhood · same format: vs]
+    title: Robinhood vs Webull: Which Brokerage Wins in 2026?
+    desc:  Robinhood vs Webull compared on trading tools, paper trading, cash sweep rates, and beginner usability so you can pick the right brokerage.
+- /compare/vanguard-vs-fidelity  [in sitemap · src/data/comparisons.ts · topic match 0.5 on fidelity · same format: vs]
+    title: Vanguard vs Fidelity: Which Brokerage Wins in 2026?
+    desc:  Vanguard vs Fidelity compared: account minimums, index funds, robo-advisors, and fees, so you can see which brokerage fits your investing style.
+- /compare/fidelity-vs-schwab  [in sitemap · src/data/comparisons.ts · topic match 0.5 on fidelity · same format: vs]
+    title: Fidelity vs Schwab: Which Brokerage Really Wins in 2026?
+    desc:  Fidelity vs Schwab compared: zero-fee index funds, account minimums, robo-advisors, and banking tools, so you can pick the right brokerage.
+- /compare/etrade-vs-fidelity  [in sitemap · src/data/comparisons.ts · topic match 0.5 on fidelity · same format: vs]
+    title: E*TRADE vs Fidelity: Which Brokerage Actually Fits You?
+    desc:  E*TRADE vs Fidelity compared: options and futures fees, robo-advisor cost, research tools, and who owns each platform, so you can pick the right broker.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'capital gains harvesting', Ready For Retirement brokerage episode). 'tax loss harvesting' 12,100/mo KD 53 CPC $3.93 (SEMRUSH us 2026-11-04, measured); 'tax loss harvesting r
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'Maxxing HSA Benefits'). 'hsa triple tax advantage' 2,400/mo KD 37 CPC $1.11 (SEMRUSH us 2026-11-04, measured); supporting 'hsa contribution limits 2026' 33,100 KD 44, 'hsa t
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-robo-advisor). Head 'what is a robo advisor / robo advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /roundup/best-robo-adviso
+- 2026-11-16-comparison.md [table] | lookup: /compare/annuity-vs-cd and /compare/pension-vs-annuity - different pairings. Lens 1 direct intent (brief candidate 6). "annuity vs 401k" 1,600/mo KD 24 SEMRUSH; no page compares the two; SERP winnable. | Create
+- 2026-11-16-comparison.md [exclusions] - C3 acorns vs robinhood: DEFER - 480/mo KD 22; lower volume than selected set and Acorns/Robinhood primary captures not obtained this run (capacity). Existing robinhood comparisons overlap partially. Carry forward.
+- 2026-11-16-comparison.md [exclusions] - C4 webull vs fidelity: DEFER - 480/mo KD 20; robinhood-vs-fidelity and robinhood-vs-webull exist; primary captures not obtained this run (capacity). Carry forward.
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/money-market-fund-vs-money-market-account  — row - · create new content
+keyword: money market fund vs money market account
+reader question (new page intent): Difference between money market fund and account?
+lookup terms: money market fund account   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/money-market-account-vs-money-market-fund  [in sitemap · src/data/comparisons.ts · topic match 1.0 on money market fund account · same format: vs]
+    title: Money Market Account vs Money Market Fund Compared
+    desc:  Money market account vs money market fund: one is an insured bank deposit, the other a mutual fund with no deposit insurance. See how each one works.
+- /guides/money-market-account  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.75 on money market account · same format: vs]
+    title: Money Market Account: How MMAs Work vs HYSAs and CDs
+    desc:  What a money market account is, how it differs from a high-yield savings account and CDs, FDIC coverage rules, and when to use each for your cash.
+- /guides/is-a-money-market-account-worth-it  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.75 on money market account]
+    title: Is a Money Market Account Worth It? An Honest Look
+    desc:  Is a money market account worth it? An honest look at what you gain over a regular savings account, the real costs, and who should choose something else.
+- /roundup/best-money-market-accounts  [PARENT PAGE · in sitemap · src/data/roundups.ts · topic match 0.75 on money market account]
+    title: Best Money Market Accounts (Updated July 2026): Top Picks Compared
+    desc:  Compare the best money market accounts for July 2026 by APY, fees, and FDIC coverage. Top picks include Ally, Discover, and UFB Direct for higher yields.
+- /compare/hysa-vs-money-market  [in sitemap · src/data/comparisons.ts · topic match 0.75 on money market account · same format: vs]
+    title: HYSA vs Money Market Account: Which Pays You More?
+    desc:  High-yield savings account vs money market account: APY comparison, FDIC insurance, access, and which earns more for your cash in 2024.
+- /compare/cd-vs-money-market  [in sitemap · src/data/comparisons.ts · topic match 0.75 on money market account · same format: vs]
+    title: CD vs Money Market Account: Which Is Better?
+    desc:  CD vs money market account: a CD locks a fixed rate for a set term; a money market account keeps a variable rate and easy access. See which fits your goal.
+- /guides/money-market-account-debit-card  [in sitemap · src/data/guides.ts · topic match 0.75 on money market account]
+    title: Money Market Accounts With Debit Cards: How They Work
+    desc:  Do money market accounts come with debit cards? How MMA debit access works, which banks offer it, transaction limits, and when checking fits better.
+- /compare/vtsax-vs-vti  [in sitemap · src/data/comparisons.ts · topic match 0.5 on market fund · same format: vs]
+    title: VTSAX vs VTI: Which Vanguard Total Market Fund Fits You
+    desc:  VTSAX vs VTI compared on trading, minimums, expense ratios, and taxes. Both hold the same Vanguard total US stock market portfolio in a different wrapper.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-27-podcast.md [table] | 1 | Direct intent (podcast: Ready For Retirement, Catching Up to FI "4 Phases of Retirement"). Cluster: phases of retirement 480/mo KD 9 (DataForSEO measured); go-go slow-go no-go retirement ~20/mo (estimate band, NOT 
+- 2026-10-29-trend-lane-c.md [exclusions] - /guides/are-trump-accounts-a-scam (0-25/mo, GSC pos 14): DROP. /guides/trump-account-worth-it has the section and FAQ; /guides/trump-account-scams exists. PAA (real? lose money? who owns? downside? eligibility? close?)
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'Maxxing HSA Benefits'). 'hsa triple tax advantage' 2,400/mo KD 37 CPC $1.11 (SEMRUSH us 2026-11-04, measured); supporting 'hsa contribution limits 2026' 33,100 KD 44, 'hsa t
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet when and how to switch advisors). Head 'switch financial advisors': autocomplete estimate 75-750/mo, NOT measured. lookup: /guides/financial-advisor-conflicts-of-int
+- 2026-11-12-xtrends.md [table] | Lens 1 direct intent + news-driven (DOL promoted the final rule on X Nov 10 during open enrollment; Federal Register 2026-22306 published 2026-11-02). 'pbm fee disclosure' 500-5000/mo, 'dol pbm rule' 500-5000/mo, 'pbm 
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent plus release news (Google blog Nov 13 2026). lookup: no match in repo, sitemap or past charts; /roundup/best-budgeting-apps is an app ranking (different reader goal). Autocomplete question sweep ru
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/payday-loan-vs-personal-loan  — row - · create new content
+keyword: payday loan vs personal loan
+reader question (new page intent): Payday loan or personal loan?
+lookup terms: payday loan personal   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/payday-loan-calculator-explained  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on payday loan]
+    title: Payday Loan Calculator Math for the True APR and Fees
+    desc:  Calculate the true APR on a payday loan. See how a $15 fee becomes a 391% APR, how rollovers compound borrowing costs, and compare cheaper alternatives.
+- /personal-loan  [in sitemap · (sitemap only) · title fetched live · topic match 0.67 on loan personal]
+    title: U.S. Personal Loan Calculator: True Cost With Fees
+    desc:  Free personal loan calculator: see your monthly payment plus the real effective APR once the lender
+- /compare/heloc-vs-personal-loan  [in sitemap · src/data/comparisons.ts · topic match 0.67 on loan personal · same format: vs]
+    title: HELOC vs. Personal Loan: Which Is Cheaper in 2026?
+    desc:  HELOC vs personal loan compared: 2026 rates, fees, speed, and tax deductibility — see which financing option costs less for your home project.
+- /compare/personal-loan-vs-auto-loan  [in sitemap · src/data/comparisons.ts · topic match 0.67 on loan personal · same format: vs]
+    title: Personal Loan vs Auto Loan for Buying a Car
+    desc:  Personal loan vs auto loan compared with real payment math: why the auto loan's collateral usually wins, and when a personal loan is worth it instead.
+- /guides/how-to-read-a-personal-loan-review  [in sitemap · src/data/guides.ts · topic match 0.67 on loan personal]
+    title: How to Read a Personal Loan Lender Review
+    desc:  A personal loan review checklist: how to find the real APR with fees included, match qualification requirements to your profile, and vet borrower reviews.
+- /guides/secured-personal-loans-explained  [in sitemap · src/data/guides.ts · topic match 0.67 on loan personal]
+    title: Secured Personal Loan Costs and Collateral Rules
+    desc:  Learn how a secured personal loan works and what happens to your collateral if you cannot repay the balance.
+- /compare/home-equity-loan-vs-personal-loan  [in sitemap · src/data/comparisons.ts · topic match 0.67 on loan personal · same format: vs]
+    title: Home Equity Loan vs Personal Loan: How to Choose in 2026
+    desc:  Compare a home equity loan vs personal loan on interest rates, closing costs, collateral risk, and tax rules to pick the right borrowing route.
+- /guides/personal-loans-for-excellent-credit  [in sitemap · src/data/guides.ts · topic match 0.67 on loan personal]
+    title: Personal Loans for Excellent Credit: Rates & Requirements
+    desc:  See the personal loan rate range excellent credit (720+) typically qualifies for, what lenders check beyond your score, and the risks worth knowing.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-21-tool-usage.md [exclusions] - **Lens 3 (comparison / alternatives / pricing):** the brief's entities are calculators for federal programs and personal balance-sheet math (Social Security, Medicare, IRS rules, auto loans in general) — no vendor, pla
+- 2026-10-28-competitor.md [exclusions] - NerdWallet personal loans for non-U.S. citizens: skipped-low-value, vendor list needs verified lender terms and only 6 completions.
+- 2026-10-28-competitor.md [exclusions] - NerdWallet high-interest loans: skipped-duplicate, /guides/payday-loan-calculator-explained/ (already has the 391% APR, the alternatives sequence, a 36% installment comparison and rollover steps; reviewer RECLASSIFY ac
+- 2026-11-04-tool-usage.md [table] | 15 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage). 'pay off mortgage or invest calculator' 260/mo KD 17, 'pay off mortgage vs invest calculator' 260 KD 11, 'should i pay off my mor
+- 2026-11-09-competitor-9031ce2b2c89.md [exclusions] - Bankrate VA-loan homebuying story: skipped, covered by VA loan calculator and VA comparison pages; a personal story has no distinct query.
+- 2026-11-16-comparison.md [exclusions] - C11 debt consolidation vs balance transfer: DEFER - 210/mo KD 38, PARTIAL: section exists in src/data/guides.ts; balance-transfer-vs-personal-loan was dropped in cache 2026-10-19 for lack of sourced facts. Low volume a
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/tenants-in-common-vs-joint-tenancy  — row - · create new content
+keyword: tenants in common vs joint tenancy
+reader question (new page intent): Tenants in common or joint tenancy?
+lookup terms: tenant common joint tenancy   format cues: vs
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-25.md [table] | 7 | **Lens 1 (direct intent — brief item 2, house selling).** `home selling checklist` 400/KD 8 ($0.90 CPC), `checklist for selling a house` 250/KD 6, `checklist for selling home` 150/KD 11, `home selling checklist pdf
+Commits naming the topic: none
+Same run overlap: none
+
+### /comparisons/ynab-vs-copilot  — row - · create new content
+keyword: ynab vs copilot
+reader question (new page intent): YNAB or Copilot?
+lookup terms: ynab copilot   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /alternatives/ynab  [in sitemap · src/data/alternatives.json · topic match 0.5 on ynab]
+    title: YNAB Alternatives 2026: Plans, Prices and Features Compared
+    desc:  Compare YNAB alternatives including Monarch Money, Quicken Simplifi, Goodbudget, Tiller, PocketGuard, and Copilot Money with published prices and plans.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms: none
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/medicare-part-a-vs-part-b  — row - · create new content
+keyword: medicare part a vs part b
+reader question (new page intent): Difference between Medicare Part A and B?
+lookup terms: medicare part   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/medicare-part-d-2027-premiums  [in sitemap · src/data/guides.ts · topic match 1.0 on medicare part]
+    title: Medicare Part D 2027: KFF Projects Premiums Up 50%
+    desc:  KFF projects stand-alone Medicare Part D premiums averaging $51 a month in 2027, up from $34. See what to compare before open enrollment ends December 7.
+- /guides/medicare-savings-programs  [in sitemap · src/data/guides.ts · topic match 1.0 on medicare part]
+    title: Medicare Savings Program 2026: Who Gets Premiums Paid
+    desc:  A Medicare Savings Program can pay your $202.90 Part B premium. See the 2026 income limits for all four programs and how to apply through your state.
+- /compare/medicare-vs-medicare-advantage  [in sitemap · src/data/comparisons.ts · topic match 0.5 on medicare · same format: vs]
+    title: Medicare vs Medicare Advantage: How to Choose in 2026
+    desc:  Medicare vs Medicare Advantage compared on network rules, out-of-pocket caps, drug coverage, and Medigap switching rules so you can choose.
+- /compare/medicare-vs-medicaid  [in sitemap · src/data/comparisons.ts · topic match 0.5 on medicare · same format: vs]
+    title: Medicare vs Medicaid: Difference, Eligibility, and Costs
+    desc:  Medicare vs Medicaid explained: compare eligibility, covered benefits, dual enrollment, and long-term care to find the right coverage for you.
+- /retirement/medicare-irmaa-calculator  [in sitemap · src/data/spokes-fleet-tools.ts · topic match 0.5 on medicare]
+    title: 2026 Medicare IRMAA Calculator With Income Scenarios
+    desc:  Compare Medicare's 2026 income-related surcharges using 2024 income and filing status, with separate Part B and Part D results.
+- /compare/medicare-advantage-vs-medigap  [in sitemap · src/data/comparisons.ts · topic match 0.5 on medicare · same format: vs]
+    title: Medicare Advantage vs Medigap: Which Costs You Less?
+    desc:  Medicare Advantage vs Medigap compared: premiums, networks, drug coverage, and the enrollment window that decides whether you can switch later.
+- /guides/how-to-retire-at-67  [in sitemap · src/data/guides.ts · topic match 0.5 on medicare]
+    title: How to Retire at 67: Your Social Security & Medicare Plan
+    desc:  See the real dollar math for Social Security at 62 vs. 67 vs. 70, Medicare enrollment timing, RMD rules, and a full savings plan for retiring at 67.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 10 | elder-care (1 person, 3 uses, 16 views; low-use lane; data_days 27). Walkthrough: result prints '$$180,000'; the total shortfall uses start-year prices while the total cost inflates ($256,068 vs $270,891 on the sa
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet robo-advisors vs financial advisors) plus Lens 3 comparison format. Head 'robo advisor vs financial advisor': autocomplete estimate 75-750/mo, NOT measured. lookup: 
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet use Form ADV to check an advisor). Head 'how to read form adv': autocomplete estimate 10-100/mo; 'form adv' 50-500/mo, NOT measured; many 'form adv' completions are 
+- 2026-11-12-xtrends.md [table] | Lens 1 direct intent + news-driven (DOL promoted the final rule on X Nov 10 during open enrollment; Federal Register 2026-22306 published 2026-11-02). 'pbm fee disclosure' 500-5000/mo, 'dol pbm rule' 500-5000/mo, 'pbm 
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'paycheck tax calculator' 18,100 (KD 65), salary take home calculator 6,600 (KD 62), after tax income calculator 9,900 (KD 70), post tax income calculator 8,100 (KD 34); measured 
+- 2026-11-16-xtrends.md [exclusions] - C5 GTA 6 boxed edition no-code refund: REJECTED. Weak finance fit; only Kotaku (Nov 14) reporting buyer claims and calling parts hearsay; no verified retailer or Rockstar refund policy; step-by-step refund and chargeba
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/bonds-vs-bond-funds  — row - · create new content
+keyword: bonds vs bond funds
+reader question (new page intent): Bonds or bond funds?
+lookup terms: bond fund   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/stocks-vs-bonds  [in sitemap · src/data/comparisons.ts · topic match 0.5 on bond · same format: vs]
+    title: Stocks vs Bonds: Which Is Better Right Now?
+    desc:  Stocks vs bonds: compare returns, risk, and income, then use the classic age-based rule (110 minus your age) to find your own right mix.
+- /compare/i-bonds-vs-ee-bonds  [in sitemap · src/data/comparisons.ts · topic match 0.5 on bond · same format: vs]
+    title: I Bonds vs EE Bonds: Which Savings Bond Wins?
+    desc:  I bonds vs EE bonds compared: current Treasury rates, the 20-year doubling guarantee, purchase limits, penalties, and which fits your timeline.
+- /compare/i-bonds-vs-tips  [in sitemap · src/data/comparisons.ts · topic match 0.5 on bond · same format: vs]
+    title: I Bonds vs TIPS: Which Inflation Protection Wins?
+    desc:  I bonds vs TIPS: how each handles inflation, the deflation floor, purchase limits, liquidity, and the yearly tax TIPS owners often miss.
+- /guides/what-is-an-index-fund  [in sitemap · src/data/guides.ts · topic match 0.5 on fund]
+    title: What Is an Index Fund and How Does It Work?
+    desc:  What is an index fund? Learn how index funds work, what they cost, how they differ from ETFs and mutual funds, and how to start investing.
+- /guides/how-much-emergency-fund  [in sitemap · src/data/guides.ts · topic match 0.5 on fund]
+    title: How Much Emergency Fund Do I Need? (3-6 Months Rule)
+    desc:  How much emergency fund do you need? A common rule is 3 to 6 months of essential expenses -- not income. See a worked example and where to keep it.
+- /guides/what-target-date-fund-should-i-choose  [in sitemap · src/data/guides.ts · topic match 0.5 on fund]
+    title: What Target Date Fund Should I Choose? A Simple Method
+    desc:  What target date fund should I choose? Learn how the fund year, the to vs through glide path, index vs active, and share class change what you actually own.
+- /guides/what-is-a-sinking-fund  [in sitemap · src/data/guides.ts · topic match 0.5 on fund]
+    title: What Is a Sinking Fund? Definition and How to Use One
+    desc:  Learn what a sinking fund is, how to calculate monthly targets, where to keep the money, and how it differs from an emergency fund.
+- /guides/how-to-fund-a-trust  [in sitemap · src/data/guides.ts · topic match 0.5 on fund]
+    title: How to Fund a Trust: What to Retitle and Leave Out
+    desc:  Learn how to fund a trust correctly. Discover which assets to retitle, which use beneficiary designations, and how to keep assets out of probate.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-29-trend-lane-c.md [exclusions] - /guides/index-investment-funds ("index investment funds" 74,000/mo KD 37, measured): DROP. /roundup/best-index-funds, /guides/what-is-an-index-fund, /compare/index-fund-vs-etf, /investing/sp500-calculator serve it. SER
+- 2026-11-05-trend-lane-c.md [table] | 1 | Lens 2 / top-10 (living trust services, best trust services). 'what is a living trust' 14,800/mo KD 40, 'revocable living trust' 22,200 KD 47, 'what is a revocable living trust' 4,400 KD 35 (SEMRUSH us, measured 20
+- 2026-11-06-trend-lane-c.md [table] | 1 | Lens 2 adjacent demand off top-10 "living trust services": "what is a living trust" 14,800 KD40, "how does a living trust work" 1,000 KD34. lookup: /guides/what-is-a-family-trust (exact-slug sibling; covers revocab
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet fiduciary). Head 'what is a fiduciary / what is a fiduciary financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/what-is-
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-financial-plan). Head 'how to make a financial plan': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/financial-planning-calcu
+- 2026-11-16-comparison.md [exclusions] - C7 i bonds vs high yield savings: DROP - 20/mo measured demand: below realistic click threshold; i-bonds-vs-tips and i-bonds-vs-ee-bonds exist; the I-bond/HYSA tradeoff is partly covered in guides.
+Commits naming the topic: none
+Same run overlap: row - /guides/money-market-fund-vs-money-market-account (0.5)
+
+### /guides/fixed-vs-variable-rate-student-loans  — row - · create new content
+keyword: fixed vs variable rate student loans
+reader question (new page intent): Fixed or variable student loan?
+lookup terms: fixed variable rate student loan   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /roundup/best-student-loan-refinance  [in sitemap · src/data/roundups.ts · topic match 0.6 on rate student loan]
+    title: Best Student Loan Refinance Companies of 2026: Compare Rates
+    desc:  Compare the best student loan refinance companies of 2026 by rate, fees, and requirements, and see what refinancing costs you if you have federal loans.
+- /compare/fixed-vs-arm-mortgage  [in sitemap · src/data/comparisons.ts · topic match 0.6 on fixed rate loan · same format: vs]
+    title: Fixed vs ARM Mortgage: Which Rate Will Save You More?
+    desc:  Fixed vs ARM mortgage compared: rate stability, initial rates, long-term cost, and which loan type saves more for your situation.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-28-competitor.md [table] | Student loan deferment | student loan deferment; how does student loan deferment work; how long does student loan deferment last | rule change for loans disbursed from 2027-07-01 | none | create new content | /guides/s
+- 2026-10-29-xtrends.md [table] | Scout bullet marked [ENRICH /guides/fed-rate-hike-savings-investments/]. The guide (updated 2026-09-16) stops at the Sept 16 hike and says nothing about the Oct 28 hold with two dissents for a hike. 'fed rate decision'
+- 2026-11-04-tool-usage.md [table] | 14 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage /mortgage/payoff-calculator/). 'biweekly mortgage calculator' 1,900/mo KD 29, 'bi weekly mortgage calculator' 720, 'biweekly mortga
+- 2026-11-04-tool-usage.md [table] | 15 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage). 'pay off mortgage or invest calculator' 260/mo KD 17, 'pay off mortgage vs invest calculator' 260 KD 11, 'should i pay off my mor
+- 2026-11-09-trend-lane-c.md [exclusions] - auto-loan autocomplete questions ("how are auto loan payments calculated" etc.): covered by the /auto-loan/ hub howItWorks and /guides/how-long-should-a-car-loan-be; rate-lookup queries are not calculator intent.
+- 2026-11-23-trend-lane-c.md [table] | [coverage / top-10] Lane B: 'rule of 78 calculator' (0 clicks, 3 impr, pos 64.33) is UNCOVERED. Lens 1 direct intent; Lens 2 cluster 'Rule of 78 loan interest': rule of 78 1,000/mo; what is the rule of 78 210; rule of 
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/treasury-bills-vs-hysa  — row - · create new content
+keyword: t bills vs high yield savings
+reader question (new page intent): T-bills or HYSA?
+lookup terms: treasury bill hysa high yield saving   format cues: vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /investing/high-yield-savings-calculator  [PARENT PAGE · in sitemap · src/data/spokes-investing.ts · topic match 0.67 on hysa high yield saving]
+    title: High Yield Savings (HYSA) Calculator: APY Earnings
+    desc:  Use this high yield savings calculator to see how much your money earns over time at a given APY, with monthly deposits and compounding.
+- /compare/trump-account-vs-savings-account  [in sitemap · src/data/comparisons.ts · topic match 0.67 on hysa high yield saving · same format: vs]
+    title: Trump Account vs High-Yield Savings Account (HYSA)
+    desc:  Trump Account vs a high-yield savings account (HYSA) for kids: invested growth and a $1,000 seed vs FDIC-insured, liquid cash. See which fits your goals.
+- /compare/custodial-roth-ira-vs-hysa  [in sitemap · src/data/comparisons.ts · topic match 0.67 on hysa high yield saving · same format: vs]
+    title: Custodial Roth IRA vs High-Yield Savings Account
+    desc:  Compare a custodial Roth IRA and a high-yield savings account (HYSA) on taxes, withdrawal access, and rules to help you choose the right account.
+- /guides/hysa-vs-roth-ira-vs-brokerage-account  [in sitemap · src/data/guides.ts · topic match 0.67 on hysa high yield saving · same format: vs]
+    title: High Yield Savings Account vs Roth IRA vs Brokerage
+    desc:  Deciding between a high yield savings account vs Roth IRA vs taxable brokerage? Compare 2026 contribution limits, tax treatment, and liquidity rules.
+- /roundup/best-high-yield-savings-accounts  [in sitemap · src/data/roundups.ts · topic match 0.5 on high yield saving]
+    title: Best High-Yield Savings Accounts of 2026
+    desc:  Compare the best high-yield savings accounts of 2026 by APY range, fees, and sign-up bonuses — no fabricated rates, just what to verify.
+- /guides/international-high-yield-savings-accounts  [in sitemap · src/data/guides.ts · topic match 0.5 on high yield saving]
+    title: International High-Yield Savings Accounts: What to Know
+    desc:  Our high-yield savings guides cover FDIC-insured U.S. accounts. International savers: find your own country's official deposit protection scheme here.
+- /guides/high-yield-savings-account-for-kids-and-teens  [in sitemap · src/data/guides.ts · topic match 0.5 on high yield saving]
+    title: High-Yield Savings Accounts for Kids and Teens
+    desc:  How to open a high-yield savings account for kids, teens, and college students. Custodial rules, joint accounts, and age limits explained.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-21-tool-usage.md [table] | 10 | Lens C (monetize, interest-per-day). Result is a daily cost (debt) or daily earnings (savings); APR ≥ 10% signals debt. Verdict fit — YMYL → books. Pick types: debt payoff plan, automated saving system, index-inve
+- 2026-10-26-competitor.md [table] | 2 | SmartAsset "build wealth in high inflation". lookup: no match (/compare/i-bonds-vs-tips/ is narrower) [verb-only on SERP; ac 11/11 question] | Guide: match each dollar to a time horizon; our calculated $10,000 one-
+- 2026-11-04-tool-usage.md [table] | 1 | florida-amendment-3-calculator (67 people, 71 uses, 142 views; data_days 27). Walkthrough: the result says 'if Amendment 3 passes' though voters approved it Nov 3, 2026 (page FAQ says so); homes assessed $25,000-$7
+- 2026-11-04-tool-usage.md [table] | 12 | probate (2 people, 3 uses, 15 views; low-use lane; data_days 27). Walkthrough: intro says 'the calculator above' though it sits below; small-estate banner contradicts the big probate number; trust cost omits the $
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-financial-plan). Head 'how to make a financial plan': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/financial-planning-calcu
+- 2026-11-16-comparison.md [exclusions] - C7 i bonds vs high yield savings: DROP - 20/mo measured demand: below realistic click threshold; i-bonds-vs-tips and i-bonds-vs-ee-bonds exist; the I-bond/HYSA tradeoff is partly covered in guides.
+Commits naming the topic: none
+Same run overlap: none
+

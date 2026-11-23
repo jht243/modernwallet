@@ -1,0 +1,77 @@
+ text under this source/section context.]
+
+
+**Topic-selection priority:** Relevant organic-click growth is the default; do not infer a lead-generation goal from services, commercial intent, CPC, or audience segments. Commercial value only breaks close ties unless the user explicitly requests lead generation. Carry this priority into the mindmap brief when this routine delegates selection; do not add a separate scoring or filtering step to a candidate-only miner. This applies to scheduled runs as well as manual runs.
+
+
+> **‼️ AUTONOMOUS.** No human checkpoint. Never print "Approve?". Nothing new → email a Success Without Changes report, exit 0.
+> Run `.claude/scripts/deploy-run-to-main.sh mark` FIRST, before any commit.
+
+## STEP 1 — Harvest
+Read and follow, in order (free, local only — no paid keyword calls in this step):
+1. `.claude/commands/comparison-content-creator/phase-0-discover.md` — entities, categories, segments, slug conventions. A hard blocker → email a failure report, exit 0.
+2. `.claude/commands/comparison-content-creator/phase-1-candidates.md` — every lane: versus pairs, `X vs Y for <segment>`, successor-vs-predecessor, and roundups expanded into angle × audience variants per `.claude/commands/_roundup-blend.md`. Prune cache losers (`reports/comparison-content-creator/cache.json`) as that file says.
+3. `.claude/commands/comparison-content-creator/phase-1b-coverage-check.md` — tag every candidate NEW / PARTIAL / DUPLICATE against the site's existing pages.
+
+0 NEW + 0 PARTIAL → send the Success Without Changes email (below), exit 0.
+
+Keep the first N (`$ARGUMENTS`, default all); the rest re-surface next run.
+
+## STEP 2 — Send them all
+Every NEW and PARTIAL candidate goes into the brief as returned: format (`versus` / `alternatives` / `roundup`), option A / option B or category + angle, segment, primary keyword, proposed slug, and — for PARTIAL — the existing route that covers it in passing. No filtering, no scoring, no judging.
+
+## STEP 3 — Run /mindmap-pass with that brief
+Start the brief with these lines, verbatim, then the candidates:
+
+> Source: comparison candidate miner for <BASE_URL>. Each item is an X-vs-Y, alternatives, successor-vs-predecessor or objective roundup candidate mined from entities this site already covers, and already checked against the site's pages: NEW = no page covers it; PARTIAL = an existing page covers it in passing (enrich that page, never a duplicate). Comparison rows use the `comparison table/database` format; roundups are objective and the business is never a ranked option (`.claude/commands/_roundup-blend.md` §3).
+> Unattended run: save the chart to `reports/mindmap-pass/<YYYY-MM-DD>-comparison.md` (this exact name, so it never collides with another mindmap run today), treat the Phase 0 manifest as approved, and continue to Phase 9 without stopping.
+
+```
+/mindmap-pass <the brief>
+```
+Mindmap validates demand, builds, audits, publishes and emails the report — this routine does not score or write anything.
+
+## STEP 4 — Cache
+From the finished chart, add every candidate mindmap dropped (weak demand, duplicate, off-mission, failed audit) to `reports/comparison-content-creator/cache.json` (its `dropped` list, with the reason and today's date) so the next run skips it. Commit the cache and deploy with `.claude/scripts/deploy-run-to-main.sh push`.
+
+## Success Without Changes email
+```bash
+REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##; s#\.git$##')"
+.claude/scripts/send-routine-email.py --status no-changes --skill comparison-content-auto \
+  --site "<BASE_URL>" --repo "$REPO" --branch "$(git rev-parse --abbrev-ref HEAD)" \
+  --summary "All <M> candidates already covered or cached; nothing sent to mindmap." \
+  --commit-sha "" --commit-url ""
+```
+Best-effort: a failed email never fails the run.
+
+[Source: .claude/commands/_mindmap-chart-obligations.generated.md]
+# Mindmap Downstream Chart-Planning Obligations (Compiled Verbatim)
+
+These obligations are extracted verbatim from this repository's downstream writing, tool, audit, linking, sitemap, and publication contracts so BUILD and CHART-REVIEW enforce every planning constraint without loading execution-only procedures. Execution workers (WRITE, AUDIT, PUBLISH) still load their full phase and standard files.
+
+## [cs-tested-anchor-neutrality] (.claude/commands/_content-standard.md @ 944c2d85565a)
+
+**Applies to** operator-register pages whose `page type:` is a roundup ("best X", "X alternatives", any ranked list), a product or model review, or an "X vs Y" comparison. **Skip** pricing, how-to, explainer, definition, tool and news (reporter-register) pages. **Also skip** any page whose ranked or compared items fall outside what this site's `_experience.md` section G licenses as tested (for example medical treatments, clinics, drugs, legal or financial services). If the site's `_experience.md` has no section G, skip TESTED entirely. Only relevant executed runs, independently reviewed against the exact page, license first-person testing claims; calculations, modeling, client observations and external research use their own accurate labels.
+
+Plan an extra 3–5-row comparison table + "when to choose X" section (`COMPARISON` net-add) whenever a natural comparison axis exists; plan one honest proprietary `ANCHOR` from `_experience.md` / original analysis (max 2 named-client refs, or explicit `anchor-exempt:` justification — never force-fit); and never plan claims of vendor neutrality, "no paid placement", or self-undercutting disclaimers about what we have not tested or used (`NEUTRALITY`). Reuse this site's established author/publisher identity automatically without blocking on missing Person/reviewer profiles.
+
+## [cs-seo-and-elements] (.claude/commands/_content-standard.md @ 944c2d85565a)
+
+Every planned new page and substantive outline must budget for these required elements (in both `operator` and `reporter` registers unless noted):
+- **50–60 char SEO title** carrying the primary keyword; Title Case H1/H2/H3 headings; sentence-case FAQ questions; define every acronym on first use; link related hub/spoke/cluster pages; no `Conclusion` or `Summary` heading.
+- **Reader question & answer placement (INTENT):** decide `reader question: "<in the reader's words>"` with its PAA/autocomplete evidence tag (`[PAA n/m ...]` or `[verb-only ...]`), place the working answer in section 1 or 2 ahead of any scope/definition/history material, answer the top on-intent PAA in the opener, and place remaining on-topic PAA questions in the FAQ.
+- **Who this is not for** and **What would change our answer** on any page that recommends, ranks, or picks a winner; **concrete next action** as the final body sentence; **disclaimers at the bottom only** (required on YMYL sites per `_experience.md`, never in title/intro/section 1); and a subject-specific `inlineCta` where the repo's page record supports one.
+
+## [cs-medium-and-row-records] (.claude/commands/_content-standard.md @ 944c2d85565a)
+
+Choose the useful deliverable from the actual reader finding and verified capabilities, following `_decision-evidence.md` and `_mindmap-execution.md`. Prose, finite tables, SVG charts, genuine screenshots, images/illustrations, downloadable data and interactive tools are supported when this run can actually produce them. Generated illustrations never establish product testing. Videos remain outside the Mindmap evidence workflow.
+
+Record `medium: <picked> → <resolved>`, `register: operator|reporter`, and `page type: <type>` (from the DEPTH floor table: comparison 1,500 / review 1,500 / persona 1,400 / hub 1,200 / worth-it 1,200 / explainer 1,200 / cost-pricing 1,000 / editorial 600 body words; pick the higher floor when ambiguous, and merge topics too thin to clear their floor without filler). Assess inputs, logic, sources, implementation and feasibility before the approval chart. Prefer existing components and the smallest format that makes the answer useful. Keep the main answer readable without interaction.
+
+Build the approved asset and its framing page in Phase 3 and independently audit both in Phase 4. A spec, stub, placeholder or promise that a human will build it later is not completion. If a requested format cannot be produced with available authorized capabilities, narrow/exclude that asset before approval, or resolve to a useful complete supported format. Do not force a calculator or visual when it adds nothing. Preserve local scope, exclusions and publication permissions.
+
+## [cs-defend-lock] (.claude/commands/_content-standard.md @ 944c2d85565a)
+
+**Before editing, rewriting, or appending to ANY existing page, check `reports/ai-answer-citation-pass/defended-pages.json` (if it exists in this repo).** If the page's route is listed in `pages[].route`, the page is **AIO-defended**: Google's AI Overview currently cites it as the source for its query, and rewriting it risks losing that citation.
+
+- A defended route is **frozen** — do NOT rewrite, append t

@@ -1,0 +1,149 @@
+{
+  "slug": "tenants-in-common-vs-joint-tenancy",
+  "title": "Tenants in Common vs Joint Tenancy Death and Tax Rules",
+  "metaDescription": "Compare tenants in common vs joint tenancy property ownership. Learn how death, survivorship, Florida statute rules, and federal tax basis change your share.",
+  "targetKeyword": "tenants in common vs joint tenancy",
+  "optionA": "Tenants in Common",
+  "optionB": "Joint Tenancy",
+  "segment": "Estate Planning",
+  "h1": "Tenants in Common vs Joint Tenancy Property Rules",
+  "introText": "Joint tenancy automatically passes an owner's share of property to the surviving co-owners upon death, whereas tenants in common hold separate shares that pass to chosen heirs through an estate.\n\nState law establishes the legal default for how co-owners hold title, meaning local statutes dictate the outcome when a deed lacks clear survivorship wording. Federal tax rules under the Internal Revenue Code (IRC) also treat property differently at death depending on whether the co-owners are married spouses, how much each person paid toward the purchase price, and whether the asset sits in a community property state.\n\nNeither title arrangement produces an automatic federal tax victory. The best legal form depends entirely on family relationships, purchase financing, and estate planning goals.",
+  "tableHeading": "What Happens to Each Owner's Share at Death",
+  "comparisonTable": {
+    "rows": [
+      {
+        "dimension": "Right of Survivorship",
+        "a": "No right of survivorship exists. When a tenant in common dies, that owner's property share passes through an estate by will or intestacy law.",
+        "b": "Full right of survivorship applies. When a joint tenant dies, that owner's interest transfers directly to the surviving joint owners."
+      },
+      {
+        "dimension": "Default Classification Under State Law",
+        "a": "Under the [Florida Senate](https://www.flsenate.gov/Laws/Statutes/2024/689.15) 2024 Florida Statutes Section 689.15, a conveyance to two or more people creates a tenancy in common unless the deed expressly provides for survivorship.",
+        "b": "Joint tenancy with right of survivorship (JTWROS) requires specific express wording in the deed under Section 689.15 of the 2024 Florida Statutes."
+      },
+      {
+        "dimension": "Spouse Co-Ownership Rules",
+        "a": "Married couples can hold property as tenants in common, which leaves each spouse free to devise their fractional share separately.",
+        "b": "Spouses often hold joint tenancy or tenancy by the entirety. Under Florida Section 689.15, tenants by the entirety become tenants in common upon dissolution of marriage."
+      },
+      {
+        "dimension": "Federal Estate Gross Value Inclusion for Spouses",
+        "a": "The decedent's specific ownership share is evaluated under federal estate tax principles and passes to designated beneficiaries.",
+        "b": "Under [26 U.S.C. 2040(b)](https://www.law.cornell.edu/uscode/text/26/2040) at the Legal Information Institute at Cornell Law School (LII), a qualified joint interest held solely by spouses includes exactly one-half of the property value in the gross estate."
+      },
+      {
+        "dimension": "Federal Estate Gross Value Inclusion for Non-Spouses",
+        "a": "Only the decedent's fractional ownership interest passes into the probate estate or testamentary trust.",
+        "b": "Under 26 U.S.C. 2040(a), the full property value enters the gross estate except any portion proven to have originally belonged to the surviving owner."
+      },
+      {
+        "dimension": "Federal Tax Basis Adjustment at Death",
+        "a": "Property passing by bequest, devise, or inheritance receives a stepped-up fair market value (FMV) basis under [26 U.S.C. 1014(a)(1)](https://www.law.cornell.edu/uscode/text/26/1014).",
+        "b": "Under 26 U.S.C. 1014(b)(9) and [IRS Publication 551](https://www.irs.gov/publications/p551) from the Internal Revenue Service (IRS), the survivor's new basis depends on the percentage included in the gross estate and past depreciation."
+      },
+      {
+        "dimension": "Community Property State Exception",
+        "a": "Under 26 U.S.C. 1014(b)(6), community property states allow both halves of qualifying marital community property to receive a fair market value basis adjustment at the first death.",
+        "b": "Community property rules in states like California, Texas, and Washington adjust the basis for the entire property if at least half is includible in the gross estate, overriding standard common-law joint tenancy rules."
+      },
+      {
+        "dimension": "Creditor and Partition Protections",
+        "a": "Creditor collection, forced partition, and mortgage debt rules vary across state lines and are not covered by the uniform federal sources examined here.",
+        "b": "Creditor attachment procedures, joint liability on liens, and judicial partition rights depend on state statutory law and are not covered by the federal sources cited here."
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "What Happens to Each Owner's Share at Death",
+      "content": "The fundamental legal distinction between tenancy in common and joint tenancy centers on survivorship. In a tenancy in common, each co-owner holds a distinct, separate legal stake in the real estate. When an owner dies, that individual share does not transfer to the remaining co-owners. Instead, the decedent's ownership interest passes into their estate, transferring according to the instructions laid out in a last will and testament, a living trust, or the default distribution rules of state intestacy law.\n\nJoint tenancy with right of survivorship operates through an entirely different legal mechanism. When two or more people hold real property as joint tenants with right of survivorship, the interest of any owner who dies extinguishes immediately at the moment of death. The property interest passes automatically by operation of law to the surviving joint owners named on the deed. This statutory survivorship transfer bypasses the decedent's probate estate entirely, superseding any contrary instructions written into the deceased owner's will.\n\nState law establishes the default presumption for all real estate conveyances, so property owners must verify their jurisdiction's specific statutory language. As one clear state example, the Florida Senate publishes Section 689.15 of the 2024 Florida Statutes, which explicitly abolishes the common-law doctrine of survivorship as a baseline presumption. Under Florida law, a conveyance made to two or more individuals automatically creates a tenancy in common unless the deed expressly states a right of survivorship. If a deed simply lists two unmarried purchasers by name without adding survivorship wording, Florida courts treat the co-owners as tenants in common.\n\nFederal tax law then applies its own rules to the property once an owner dies. The Internal Revenue Service does not automatically give joint tenancy a superior tax standing over tenancy in common. Under IRC Section 1014, property inherited from a decedent receives an adjusted tax basis equal to its fair market value on the date of death. However, how that adjustment applies across the whole property depends heavily on whether the co-owners were married, how much financial consideration each owner provided, and whether the parcel is situated in a community property jurisdiction."
+    },
+    {
+      "heading": "How Tenancy in Common Works",
+      "content": "A tenancy in common allows two or more co-owners to hold undivided fractional interests in a single parcel of real estate. Under this structure, each owner possesses the legal right to occupy and enjoy the entire physical property, even when financial ownership percentages are divided unequally between the parties. For example, two business partners or siblings can purchase commercial real estate where one party holds a seventy percent ownership interest and the other party holds thirty percent.\n\nBecause tenancy in common does not include a right of survivorship, each owner retains independent testamentary freedom over their personal share. An owner can sell, gift, mortgage, or transfer their individual fraction during life, or devise it to selected heirs upon death. If an owner dies without executing a valid estate plan, their specific fractional ownership passes to statutory heirs under the probate laws of the state where the real property sits.\n\nThis ownership flexibility carries practical trade-offs during estate administration. When a tenant in common passes away, their undivided interest must pass through probate court to formally re-title the deed in the names of the beneficiaries, unless the owner placed the deed interest into a trust before death. Surviving co-owners do not acquire the deceased party's share unless they are explicitly named as the beneficiaries in the decedent's estate planning documents.\n\nTenancy in common also introduces complex multi-party management over time. If a co-owner dies and leaves their thirty percent share equally to three children, the surviving original seventy percent owner now shares title with three new co-tenants, each owning ten percent. State laws govern how co-tenants manage operational expenses, property repairs, and disagreements over potential sales, meaning local legal consultation is essential when establishing or dissolving a tenancy in common."
+    },
+    {
+      "heading": "How Joint Tenancy Works",
+      "content": "Joint tenancy creates a unified form of ownership where multiple co-owners hold identical, undivided shares created at the same time through the same legal instrument. Under traditional real property principles, joint tenants must share equal ownership stakes, meaning two joint tenants each own fifty percent, while four joint tenants each own twenty-five percent.\n\nThe defining feature of joint tenancy is the right of survivorship. When one joint tenant dies, the deceased owner's property rights terminate instantly. The surviving joint tenants absorb the remaining interest without needing a probate court decree to validate the transfer of title. The surviving owners typically record a certified copy of the death certificate along with an affidavit of survivorship in the local land records to establish clear title in their names.\n\nState statutes heavily regulate how joint tenancies are formed and maintained. Section 689.15 of the 2024 Florida Statutes provides an informative statutory model. The statute states that the common-law doctrine of survivorship does not prevail in Florida real estate unless the instrument creating the estate expressly provides for the right of survivorship. To establish survivorship rights in Florida, the deed must contain unambiguous language such as 'as joint tenants with right of survivorship and not as tenants in common.'\n\nFlorida Section 689.15 also addresses marital estates, providing an explicit statutory exception for tenancy by the entirety. Tenancy by the entirety is a specialized survivorship form reserved exclusively for married couples in recognized states, offering unique protections against individual spouse creditor judgments. Furthermore, Section 689.15 specifies that in cases of estates by the entirety, the tenants automatically become tenants in common upon the legal dissolution of their marriage. When a married couple divorces, any entirety survivorship rights dissolve by operation of statute unless a settlement agreement or court decree orders otherwise."
+    },
+    {
+      "heading": "Tax Basis When an Owner Dies",
+      "content": "Federal capital gains tax rules at death are governed by Internal Revenue Code Section 1014 and Section 2040, as detailed in IRS Publication 551 and IRS Topic no. 409. When an owner sells real property, the taxable capital gain is calculated as the net sales proceeds minus the property's adjusted tax basis. When property passes through death, the basis is frequently adjusted to the fair market value of the property at the date of death under Section 1014(a)(1), commonly known as a basis step-up.\n\nThe federal tax basis rules treat married co-owners and non-spouse co-owners under vastly different standards. For married individuals holding property as a qualified joint interest, 26 U.S.C. 2040(b) establishes a clean fifty-percent rule. A qualified joint interest includes property held by married spouses as tenants by the entirety or as joint tenants with right of survivorship, provided the spouses are the only co-owners. Under Section 2040(b)(1), exactly one-half of the property's fair market value is included in the deceased spouse's gross estate, regardless of how much money each spouse contributed toward the original purchase price.\n\nUnder IRS Publication 551, the surviving spouse calculates a new adjusted basis by combining their existing basis in their retained half with the fair market value of the inherited half. For example, consider a married couple who purchased a home for $200,000 as joint tenants with right of survivorship, giving each spouse an original basis of $100,000. If the property's fair market value reaches $600,000 on the date the first spouse dies, one-half ($300,000) is included in the deceased spouse's gross estate. The surviving spouse retains their original $100,000 basis in their own half and receives a stepped-up basis of $300,000 for the inherited half, resulting in a total new adjusted basis of $400,000.\n\nNon-spouse joint tenants face an entirely different mechanism known as the consideration-furnished rule under 26 U.S.C. 2040(a). When joint tenants are not married, the entire fair market value of the property enters the deceased owner's gross estate under Section 2040(a), except for whatever portion can be proven to have originally belonged to the surviving tenant. The surviving tenant must produce documentation showing their financial contribution toward the acquisition cost.\n\nIRS Publication 551 provides an authoritative example of this non-spouse rule featuring two joint owners, John and Jim. John and Jim purchased commercial property for $30,000 as joint tenants with right of survivorship. John furnished two-thirds of the purchase price ($20,000), while Jim furnished one-third ($10,000). Total depreciation deductions claimed before John's death equaled $12,000, split equally as $6,000 each because local law gave each owner a half interest in property income. When John died, the property had reached a fair market value of $60,000. Because John paid two-thirds of the acquisition cost, two-thirds of the property's value ($40,000) was includible in John's gross estate under Section 2040(a).\n\nJim's new basis at John's death became $44,000. This figure is calculated by taking Jim's original $10,000 cost basis, subtracting his $6,000 allowed depreciation deductions to reach an adjusted basis of $4,000, and adding the $40,000 value included in John's estate. IRS Publication 551 highlights how basis calculations shift depending on financial contributions: if Jim had paid none of the purchase price, Jim's new basis would have been $54,000 (a zero cost basis minus zero depreciation, plus the full $60,000 estate inclusion minus $6,000 depreciation allowed to Jim). If local law gave Jim no income interest and he paid nothing, Jim's basis would step up to the full $60,000 fair market value.\n\nCommunity property states provide another critical statutory exception under 26 U.S.C. 1014(b)(6). In the nine community property states identified in IRS Publication 551, Arizona, California, Idaho, Louisiana, Nevada, New Mexico, Texas, Washington, and Wisconsin, married spouses are each treated as owning half the community estate. When one spouse dies, 26 U.S.C. 1014(b)(6) provides that the surviving spouse's half share of community property also receives an adjusted fair market value basis, as long as at least half the total community interest was includible in the deceased spouse's gross estate. This rule gives community property a complete double step-up in basis across the entire property, an advantage unavailable to non-community joint tenancy deeds."
+    },
+    {
+      "heading": "Selling, Borrowing and Creditors",
+      "content": "Property co-owners regularly face questions regarding operational control, mortgage borrowing, and exposure to creditor claims. However, specific legal protections and debt liabilities are strictly governed by state statutes and common law rather than uniform federal rules.\n\nFederal statutes like 26 U.S.C. 1014 and 2040 regulate tax basis and estate gross valuations, but they do not define whether a creditor can attach a lien to an individual co-owner's interest. Similarly, the federal primary sources examined here do not govern whether a co-tenant can force a partition sale, how banks require co-owners to execute promissory notes, or how local county tax assessors calculate property tax reassessments.\n\nIn many state jurisdictions, a tenant in common can encumber or transfer their individual percentage stake without obtaining the consent of their co-tenants, whereas joint tenants may find that unilateral conveyances sever the joint tenancy and convert it into a tenancy in common. However, because statutory rules on mortgage financing, partition actions, and creditor attachment vary significantly between individual states and remain outside the captured statutory sources, co-owners must consult a licensed real estate attorney in their specific state to determine how local courts handle creditor disputes and forced sales."
+    },
+    {
+      "heading": "Who Should Choose Each Option",
+      "content": "Choosing between tenancy in common and joint tenancy requires matching legal deed mechanics to family relationships, financial contributions, and long-term estate distribution goals. Neither option serves every ownership group.\n\nJoint tenancy with right of survivorship fits co-owners who share equal financial investments, possess identical ownership goals, and want the real estate to transfer immediately to the surviving owner without the expense or delay of probate administration. It is commonly selected by married couples purchasing a personal residence in common-law property states who intend for the surviving spouse to hold outright ownership.\n\nTenancy in common fits business partners, unrelated co-investors, or family members who contribute unequal amounts of capital toward a property purchase. It allows each party to maintain a proportionate financial stake and ensures that each investor can direct their equity to chosen beneficiaries rather than forfeiting their investment to a surviving co-investor.\n\nThis guidance is not suitable for unmarried partners making unequal financial contributions toward a home purchase, blended families with children from prior relationships, or co-owners residing in states where statutory survivorship defaults differ. In blended families, placing real estate into a joint tenancy can completely disinherit a deceased spouse's biological children, because the entire asset passes to the surviving stepparent by survivorship. Unmarried partners who contribute unequally toward a purchase price risk triggering complicated consideration-tracing requirements under 26 U.S.C. 2040(a) if they hold title as joint tenants.\n\nCo-owners in these complex categories should evaluate customized estate planning alternatives rather than relying solely on deed titling. Property owners can review [how to fund a trust](/guides/how-to-fund-a-trust/) to see how placing real estate inside a revocable living trust provides probate avoidance while preserving granular inheritance instructions. Reviewing our comparison on a [living trust vs will](/compare/living-trust-vs-will/) also helps co-owners evaluate whether a comprehensive trust structure protects their heirs better than relying on survivorship deeds.\n\nSeveral legal conditions would alter this structural recommendation. If your state's statutory default presumes survivorship rather than tenancy in common, deed drafting requirements shift. If a married couple lives in a community property jurisdiction, titling the asset as community property or community property with right of survivorship under 26 U.S.C. 1014(b)(6) may provide a full double basis step-up that standard joint tenancy cannot match. If co-owners utilize a formal trust or business entity to hold real estate, standard deed survivorship rules are superseded entirely by the terms of the governing operating agreement."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What happens to a tenant in common when they die?",
+      "answer": "When a tenant in common dies, their ownership share passes through their estate rather than transferring to the surviving co-owners. The deceased owner's fractional interest transfers according to the terms of their will, a trust, or statutory state intestacy laws, and the inherited interest generally receives a stepped-up fair market value basis under 26 U.S.C. 1014(a)(1)."
+    },
+    {
+      "question": "What happens to a joint tenant when they die?",
+      "answer": "When a joint tenant dies, their ownership interest extinguishes immediately and passes automatically to the surviving joint tenants by right of survivorship. The transfer occurs by operation of deed law outside probate, and the surviving owners' adjusted tax basis is calculated under 26 U.S.C. 1014 and 2040 based on marital status and past financial contributions."
+    },
+    {
+      "question": "Which is better for taxes, tenants in common or joint tenancy?",
+      "answer": "Neither title structure is an inherent tax winner, because the federal tax outcome depends on marriage status, acquisition funding, and community property rules. Married couples holding a qualified joint interest receive a 50 percent basis step-up under 26 U.S.C. 2040(b), non-spouse joint tenants are evaluated based on financial contributions under Section 2040(a), and community property couples receive a complete property basis step-up under 26 U.S.C. 1014(b)(6)."
+    },
+    {
+      "question": "What are the disadvantages of joint tenancy?",
+      "answer": "The primary disadvantage of joint tenancy is that the right of survivorship removes your ability to leave your property share to chosen heirs through a will. Furthermore, non-spouse joint owners face strict financial contribution tracing under 26 U.S.C. 2040(a) to avoid having the entire asset included in a deceased owner's gross estate, and individual state statutes such as Florida Section 689.15 require precise deed language to create survivorship rights."
+    },
+    {
+      "question": "Which is better, tenants in common or joint tenancy?",
+      "answer": "Joint tenancy is better for co-owners who want their property share to pass immediately to surviving owners without probate, whereas tenancy in common is better for co-owners who hold unequal stakes or want their share to pass to designated children or heirs. State statutory defaults and estate planning goals dictate which title form functions best for your situation."
+    }
+  ],
+  "verdictHeading": "Our Takeaway for Tenants in Common vs Joint Tenancy",
+  "verdict": "Joint tenancy with right of survivorship fits co-owners who want their real estate to pass automatically to surviving owners outside probate court, while tenancy in common fits co-owners who want their ownership stake to pass through an estate plan to chosen beneficiaries. Based on reported statutory authorities including 26 U.S.C. 2040, 26 U.S.C. 1014, IRS Publication 551, and Section 689.15 of the 2024 Florida Statutes, neither structure offers a universal tax advantage. Federal tax basis adjustments depend heavily on whether co-owners are married spouses, how much each non-spouse owner paid toward the purchase price, and whether the real estate sits in a community property state. This framework changes if your state statute establishes a different survivorship presumption, if you reside in a community property jurisdiction, or if co-owners contribute unequal purchase capital. Before executing a deed, consult a licensed real estate attorney in your state to review your title language and confirm whether tenants in common vs joint tenancy serves your family and financial goals.",
+  "disclaimerText": "This article provides general property and tax information for educational purposes and does not constitute formal legal, financial, or tax advice; consult a qualified attorney licensed in your state to review specific deed titling and estate planning matters.",
+  "sources": [
+    {
+      "label": "Florida Senate Section 689.15",
+      "url": "https://www.flsenate.gov/Laws/Statutes/2024/689.15"
+    },
+    {
+      "label": "26 U.S.C. 2040 Cornell LII",
+      "url": "https://www.law.cornell.edu/uscode/text/26/2040"
+    },
+    {
+      "label": "26 U.S.C. 1014 Cornell LII",
+      "url": "https://www.law.cornell.edu/uscode/text/26/1014"
+    },
+    {
+      "label": "IRS Publication 551",
+      "url": "https://www.irs.gov/publications/p551"
+    },
+    {
+      "label": "IRS Topic no. 409",
+      "url": "https://www.irs.gov/taxtopics/tc409"
+    },
+    {
+      "label": "IRS Topic no. 701",
+      "url": ""
+    }
+  ],
+  "relatedComparisons": [
+    "living-trust-vs-will",
+    "probate-vs-trust",
+    "power-of-attorney-vs-will",
+    "living-trust-vs-lady-bird-deed"
+  ],
+  "calculatorLinks": [],
+  "metaTitle": "",
+  "subtitle": "",
+  "optionAName": "",
+  "optionBName": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": [],
+  "relatedLinks": []
+}

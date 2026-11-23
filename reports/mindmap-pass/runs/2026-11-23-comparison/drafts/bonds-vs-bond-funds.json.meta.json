@@ -1,0 +1,503 @@
+{
+ "slug": "bonds-vs-bond-funds",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2999,
+ "floor": 1500,
+ "input_tokens": 43566,
+ "output_tokens": 4703,
+ "thinking_tokens": 1811,
+ "cached_tokens": 24612,
+ "est_cost_usd": 0.0405,
+ "guards": {
+  "repairs": [
+   "added relatedLinks: [] (undefined crashes next build)"
+  ],
+  "flags": [
+   "claim check: 4 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'while bond ETF shares trade on an exchange.'; 'Share prices fluctuate continuously as interest rates change.'; 'Bond prices on secondary markets fluctuate continuously based on market interest'; 'Savers who need the money within days should keep it where its value does not mo'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3005,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    32,
+    4
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "Bond funds spread default risk across dozens or hundreds of holdings, yet they charge management fees that reduce your returns every year.",
+     "replacement": "Bond funds spread risk across a range of companies and industries, yet they charge fees and expenses that reduce your returns over time.",
+     "type": "unsupported",
+     "why": "SOURCE does not state dozens or hundreds of holdings."
+    },
+    {
+     "id": "comparisonTable.rows[3].a",
+     "quote": "Common in corporate and municipal issues; borrowers can retire the debt early if interest rates decline, forcing reinvestment at lower rates.",
+     "replacement": "Callable bonds are common; borrowers may retire the debt early if interest rates decline.",
+     "type": "unsupported",
+     "why": "SOURCE does not specify corporate and municipal issues or forcing reinvestment at lower rates."
+    },
+    {
+     "id": "comparisonTable.rows[3].b",
+     "quote": "Managed at the fund level by the investment adviser, but early calls on underlying holdings can lower portfolio income.",
+     "replacement": "Not covered by the sources here.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe call risk management or portfolio income impact in funds."
+    },
+    {
+     "id": "comparisonTable.rows[4].b",
+     "quote": "Mutual funds and exchange-traded funds (ETFs) frequently allow initial purchases for small dollar amounts or the price of one share.",
+     "replacement": "Many mutual funds set a relatively low dollar amount for initial investment and subsequent purchases.",
+     "type": "unsupported",
+     "why": "SOURCE does not state purchases for the price of one share."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "In contrast, investing in a bond fund pools your money with thousands of other savers into an SEC-registered investment company overseen by a professional manager.",
+     "replacement": "In contrast, investing in a bond fund pools your money from many investors into an SEC-registered investment company overseen by an investment adviser.",
+     "type": "unsupported",
+     "why": "SOURCE says many investors, not thousands of other savers."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "A bond fund eliminates single-issuer vulnerability by purchasing dozens or hundreds of different debt securities across varying maturities.",
+     "replacement": "A bond fund lowers risk by investing across a range of companies and industries rather than in one specific bond.",
+     "type": "unsupported",
+     "why": "SOURCE does not state dozens or hundreds or varying maturities."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "However, because a fund continually purchases new debt securities as old ones mature, it never reaches a terminal maturity date.",
+     "replacement": "However, most bond funds have no set maturity date.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that funds continually purchase new debt as old ones mature."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "Your capital remains permanently exposed to prevailing market interest rate shifts, and the share price will rise or fall every trading day.",
+     "replacement": "Your capital remains exposed to prevailing market interest rate shifts, and bond funds face the risk that you might lose money.",
+     "type": "unsupported",
+     "why": "SOURCE does not state share prices rise or fall every trading day."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "Par value, commonly set at $1,000 for corporate issues, represents the principal balance that the borrower must return to you when the bond matures.",
+     "replacement": "Par value, also known as face value, represents the principal balance that the borrower must repay when the bond matures.",
+     "type": "unsupported",
+     "why": "SOURCE does not state par value is commonly set at $1,000 for corporate issues."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "FINRA explains that the vast majority of bonds carry fixed maturity dates that can range from a few months to more than 30 years.",
+     "replacement": "FINRA explains that the vast majority of bonds have a maturity date set when the bond is issued.",
+     "type": "unsupported",
+     "why": "SOURCE does not state a range from a few months to over 30 years."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "The U.S. Department of the Treasury backs Treasury securities with the full faith and credit of the federal government, making them the safest domestic debt instruments.",
+     "replacement": "The U.S. Department of the Treasury issues Treasury securities, which carry the full faith and credit of the U.S. government and come with relatively lower risks.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Treasuries are the safest domestic debt instruments."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "If an issuer calls your bond, you receive the par value and any accrued interest, but you lose the higher coupon stream and must reinvest your proceeds in a lower-yield market.",
+     "replacement": "If an issuer calls your bond, the borrower retires the bond before it matures.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that investors must reinvest in a lower-yield market."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "A bond fund is an investment vehicle that pools financial assets from numerous retail and institutional investors to acquire a broad portfolio of debt instruments.",
+     "replacement": "A bond fund is an investment vehicle that pools money from many investors to invest in bonds or other debt securities.",
+     "type": "unsupported",
+     "why": "SOURCE says many investors, not retail and institutional investors."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "As underlying bonds in the portfolio reach maturity, the manager does not distribute the returning principal back to shareholders as a return of capital.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state how managers handle returning principal from maturing bonds."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Instead, the manager reinvests that principal into newly issued bonds reflecting current market yields.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state managers reinvest maturing principal into new bonds."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "To withdraw your money, you must sell your shares back to the fund company at the current net asset value or sell your ETF shares on an exchange to another investor.",
+     "replacement": "To withdraw your money, you can sell your shares back to the fund at the next calculated net asset value (NAV) on any business day, minus any redemption fees.",
+     "type": "unsupported",
+     "why": "SOURCE does not state selling ETF shares on an exchange."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "Individual bonds pay fixed, predictable coupons, but a bond fund collects interest from hundreds of separate holdings that may enter and leave the portfolio.",
+     "replacement": "Individual bonds pay fixed coupons, while a bond fund earns income across its portfolio holdings.",
+     "type": "unsupported",
+     "why": "SOURCE does not state hundreds of separate holdings enter and leave."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "If the fund manager purchases lower-yielding debt to replace higher-yielding mature bonds, the monthly dividend payout per share will decline.",
+     "replacement": "Dividends or interest payments may also change as market conditions change.",
+     "type": "unsupported",
+     "why": "SOURCE does not state managers purchase lower-yielding debt to replace mature bonds."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "If you own an individual bond with a 4 percent coupon and prevailing market rates climb to 6 percent, the market value of your bond will drop significantly.",
+     "replacement": "If you own an individual bond and prevailing market rates climb, the market value of your bond will fall.",
+     "type": "unsupported",
+     "why": "SOURCE does not list a 4 percent coupon or 6 percent rate."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Over extended periods, a bond fund can gradually replace matured securities with higher-yielding new debt, which eventually lifts dividend payments, but your share principal remains vulnerable throughout the rate-hiking cycle.",
+     "replacement": "When interest rates rise, bond prices tend to fall, and bond fund investors face the risk that they might lose money.",
+     "type": "unsupported",
+     "why": "SOURCE does not state funds replace matured debt or lift dividend payments."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "While the U.S. government sells Treasury bills, notes, and bonds in accessible $100 denominations, and electronic savings bonds start at $25 on TreasuryDirect, corporate and municipal bonds require much larger allocations.",
+     "replacement": "The U.S. government sells Treasury bonds in $100 denominations, electronic savings bonds start at $25 on TreasuryDirect, and corporate and municipal bonds can be bought through brokerage firms or banks.",
+     "type": "unsupported",
+     "why": "SOURCE does not state corporate and municipal bonds require much larger allocations."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Purchasing single bonds from multiple corporate entities to guard against individual bankruptcies can quickly demand tens or hundreds of thousands of dollars.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state capital amounts like tens or hundreds of thousands."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Transaction costs for individual bonds are also frequently opaque.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not characterize bond transaction costs as opaque."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "Investor.gov states that mutual funds and ETFs frequently set modest minimum investment thresholds, allowing everyday investors to achieve exposure to hundreds of corporate and government debt securities for small sums.",
+     "replacement": "Investor.gov states that many mutual funds set a relatively low dollar amount for initial investment and subsequent purchases.",
+     "type": "unsupported",
+     "why": "SOURCE does not state exposure to hundreds of securities or mention ETFs here."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "As Investor.gov highlights, investment companies deduct management fees, administrative expenses, and distribution costs directly from fund assets prior to calculating daily net asset values.",
+     "replacement": "As Investor.gov highlights, funds pass along their costs by deducting fees and expenses from NAV, so you pay them indirectly.",
+     "type": "unsupported",
+     "why": "SOURCE does not enumerate administrative expenses and distribution costs."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "If you need $50,000 to purchase a retirement property, settle a business note, or fund a tuition payment in exactly five years, purchasing a five-year Treasury note or a high-grade corporate bond secures that exact outcome.",
+     "replacement": "If you need a specific amount on a specific date, holding an individual bond to maturity delivers that face value unless the issuer defaults or calls the bond.",
+     "type": "unsupported",
+     "why": "SOURCE does not state dollar targets like $50,000 or specific purchase goals."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "If you invest $200 or $500 each month inside an individual retirement account, purchasing individual corporate bonds is cost-prohibitive due to round-lot pricing and dealer markups.",
+     "replacement": "For ongoing, small-increment contributions, buying individual bonds may be impractical because agency bonds generally require $10,000 and broker-dealers may add markups.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention $200, $500, IRAs, or round-lot pricing."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "A low-cost bond index fund allows you to put modest sums to work immediately across thousands of diversified holdings, with monthly dividend distributions automatically reinvested.",
+     "replacement": "A bond fund allows investors to invest modest sums across a diversified portfolio of debt securities.",
+     "type": "unsupported",
+     "why": "SOURCE does not state thousands of holdings or automatic monthly reinvestment."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "Savers with short-term liquidity needs should prioritize insured bank deposits or short-term cash equivalents instead of entering the bond market.",
+     "replacement": "Savers who cannot absorb a price drop should compare the sourced risks before entering the bond market.",
+     "type": "unsupported",
+     "why": "SOURCE does not advise savers to prioritize bank deposits or cash equivalents."
+    },
+    {
+     "id": "verdict",
+     "quote": "In contrast, bond funds represent the ideal vehicle for investors making small, recurring investments who require instant diversification across hundreds of issuers and who accept that share prices will fluctuate indefinitely without a fixed maturity backstop.",
+     "replacement": "In contrast, bond funds represent the ideal vehicle for investors making small, recurring investments who require diversification across multiple issuers and who accept that share prices will fluctuate indefinitely without a fixed maturity backstop.",
+     "type": "unsupported",
+     "why": "SOURCE does not state hundreds of issuers."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Bond funds are generally much easier to purchase in small increments because mutual funds and ETFs allow investors to start with modest dollar amounts or the price of a single share. Individual corporate and agency bonds often require much larger minimum commitments, such as $10,000 for agency debt.",
+     "replacement": "Bond funds are generally easier to purchase in small increments because many mutual funds set relatively low initial investment amounts, whereas agency bonds generally require a $10,000 minimum.",
+     "type": "unsupported",
+     "why": "SOURCE does not state single-share pricing or corporate bond minimum commitments."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "To exit a bond fund, you must redeem your shares at the current net asset value (NAV) or sell them on an exchange at market price.",
+     "replacement": "To exit a mutual fund, you can sell your shares back to the fund at the next calculated net asset value (NAV) on any business day, minus any redemption fees.",
+     "type": "unsupported",
+     "why": "SOURCE does not state selling shares on an exchange at market price."
+    },
+    {
+     "id": "sections[3].content",
+     "quote": "Funds holding long-term debt suffer much sharper price drops than funds holding short-term notes.",
+     "replacement": "Funds holding bonds with longer average lives see a greater impact on price per share from interest rate fluctuations.",
+     "type": "unsupported",
+     "why": "SOURCE does not compare long-term funds to short-term notes in these terms."
+    },
+    {
+     "id": "sections[5].content",
+     "quote": "Bond funds are far better suited for investors building a diversified core portfolio through incremental, recurring contributions.",
+     "replacement": "Bond funds fit investors making diversified, ongoing purchases in small increments.",
+     "type": "unsupported",
+     "why": "SOURCE does not use 'far better suited' or mention building a core portfolio."
+    },
+    {
+     "id": "verdict",
+     "quote": "Based on published regulatory guidance from Investor.gov and FINRA, individual bonds are the superior tool when you have a specific capital requirement on a known future date and possess the ability to hold the instrument until it matures.",
+     "replacement": "Based on published regulatory guidance from Investor.gov and FINRA, individual bonds fit when you have a specific capital requirement on a known future date and possess the ability to hold the instrument until it matures.",
+     "type": "unsupported",
+     "why": "SOURCE does not claim individual bonds are 'the superior tool'."
+    },
+    {
+     "id": "verdict",
+     "quote": "In contrast, bond funds represent the ideal vehicle for investors making small, recurring investments who require diversification across multiple issuers and who accept that share prices will fluctuate indefinitely without a fixed maturity backstop.",
+     "replacement": "In contrast, bond funds fit investors making small, recurring investments who require diversification across multiple issuers and who accept that share prices will fluctuate without a fixed maturity date.",
+     "type": "unsupported",
+     "why": "SOURCE does not call bond funds 'the ideal vehicle'."
+    }
+   ],
+   "deleted_final": 4,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3248
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 1169
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-23T09:08:16+0000",
+    "findings_file": "reports/mindmap-pass/runs/2026-11-23-comparison/audit/bonds-vs-bond-funds.r2-findings.txt",
+    "applied": [
+     {
+      "id": "comparisonTable.rows[0].b",
+      "quote": "Most bond funds have no set maturity date; shares are bought and sold at the current net asset value (NAV), according to [Investor.gov](https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1).",
+      "replacement": "A bond fund holds a changing mix of bonds, so most bond funds have no single maturity date to wait for. Investor.gov says mutual fund shares are redeemed at the next calculated net asset value (NAV).",
+      "type": "A1-1",
+      "why": "Unsupported attribution to Investor.gov and semicolon tell."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "Because a bond fund continually buys and sells debt securities, the portfolio behaves very differently from a static bond. Consequently, most bond funds have no set maturity date.",
+      "replacement": "A bond fund holds a changing mix of bonds, so most bond funds have no single maturity date.",
+      "type": "A1-1",
+      "why": "Unsupported assertion that continual trading causes no maturity date."
+     },
+     {
+      "id": "introText",
+      "quote": "a fund investor holds shares in a pooled portfolio and redeems them at the next calculated net asset value (NAV), minus any redemption fees",
+      "replacement": "a bond mutual fund investor holds shares in a pooled portfolio and redeems them at the next calculated net asset value (NAV), minus any redemption fees, while bond ETF shares trade on an exchange",
+      "type": "A1-2",
+      "why": "Overbroad fund redemption claim conflating mutual funds and ETFs."
+     },
+     {
+      "id": "introText",
+      "quote": "Rising interest rates push bond prices down across the entire fixed-income market, which means both individual bonds and bond funds lose market value when prevailing rates increase.",
+      "replacement": "FINRA says bond prices tend to fall when interest rates rise, so both individual bonds and bond funds can lose market value when rates increase.",
+      "type": "A1-3",
+      "why": "Overbroad assertion; FINRA states bond prices tend to fall."
+     },
+     {
+      "id": "introText",
+      "quote": "Bond funds spread risk across a range of companies and industries, yet they charge fees and expenses that reduce your returns over time.",
+      "replacement": "Investor.gov says mutual funds may invest in a range of companies and industries rather than in one specific bond, yet they charge fees and expenses that reduce your returns over time.",
+      "type": "A1-3",
+      "why": "Investor.gov states mutual funds may invest across companies, not all bond funds."
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "Both individual bonds and bond funds lose market value when interest rates rise.",
+      "replacement": "Both individual bonds and bond funds tend to lose market value when interest rates rise.",
+      "type": "A1-3",
+      "why": "Unhedged assertion; source says prices tend to fall."
+     },
+     {
+      "id": "verdict",
+      "quote": "which strips away the principal protection of an individual bond and leaves both options fully exposed to interest rate risk",
+      "replacement": "which means selling an individual bond at a price that may be below its face value, so both options are exposed to interest rate risk",
+      "type": "A1-4",
+      "why": "Overstates individual bond safety; bonds do not offer guaranteed principal protection."
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "exposing you to severe secondary-market price discounts",
+      "replacement": "exposing you to selling at a price that may be below face value",
+      "type": "A1-4",
+      "why": "The word severe is not in any source."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "your financial outcome depends almost entirely on the borrower's solvency.",
+      "replacement": "Investor.gov says you receive the face value plus interest unless the issuer defaults or calls the bond.",
+      "type": "A1-4",
+      "why": "Overstatement ignoring call and inflation risks."
+     },
+     {
+      "id": "introText",
+      "quote": "If you buy an individual bond and hold it until its maturity date, the borrower fulfills its debt obligation by paying you the final interest payment and the face value of the bond, called par value, unless the issuer defaults or calls the bond early.",
+      "replacement": "If you hold an individual bond to its maturity date, the borrower pays you the final interest payment and the face value (par value). That holds unless the issuer defaults or calls the bond early.",
+      "type": "A1-6",
+      "why": "Overloaded 45-word sentence violating one idea per sentence rule."
+     },
+     {
+      "id": "comparisonTable.rows[1].b",
+      "quote": "Share prices fluctuate continuously as interest rates change; funds holding bonds with longer average lives see greater price sensitivity.",
+      "replacement": "Share prices fluctuate continuously as interest rates change. Funds holding bonds with longer average lives see greater price sensitivity.",
+      "type": "A1-6",
+      "why": "Semicolon tell in table cell."
+     },
+     {
+      "id": "comparisonTable.rows[3].a",
+      "quote": "Callable bonds are common; borrowers may retire the debt early if interest rates decline.",
+      "replacement": "Callable bonds are common. Borrowers may retire the debt early if interest rates decline.",
+      "type": "A1-6",
+      "why": "Semicolon tell in table cell."
+     },
+     {
+      "id": "comparisonTable.rows[5].a",
+      "quote": "Brokerage firms acting as principal often include a markup on buys and a markdown on sales; agent trades carry explicit commissions.",
+      "replacement": "Brokerage firms acting as principal often include a markup on buys and a markdown on sales. Agent trades carry explicit commissions.",
+      "type": "A1-6",
+      "why": "Semicolon tell in table cell."
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "In addition, if you need cash before the maturity date arrives, you must liquidate the bond on the secondary market.",
+      "replacement": "If you need cash before the maturity date arrives, you must liquidate the bond on the secondary market.",
+      "type": "A1-6",
+      "why": "Banned transition word tell."
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "Furthermore, Investor.gov emphasizes that mutual funds are never insured or guaranteed by the Federal Deposit Insurance Corporation (FDIC) or any other federal body.",
+      "replacement": "Investor.gov emphasizes that mutual funds are never insured or guaranteed by the Federal Deposit Insurance Corporation (FDIC) or any other federal body.",
+      "type": "A1-6",
+      "why": "Banned transition word tell."
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "Individual bonds represent the logical choice for investors with a defined financial liability due on an exact calendar date.",
+      "replacement": "Individual bonds fit investors with a defined financial liability due on an exact calendar date.",
+      "type": "A1-6",
+      "why": "Banned phrase tell."
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "Furthermore, this analysis is not for investors seeking a tailored investment plan.",
+      "replacement": "This analysis is not for investors seeking a tailored investment plan.",
+      "type": "A1-6",
+      "why": "Banned transition word tell."
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "Savers who cannot absorb a price drop should compare the sourced risks before entering the bond market.",
+      "replacement": "Savers who need the money within days should keep it where its value does not move with interest rates, for example an FDIC-insured deposit account.",
+      "type": "A1-7",
+      "why": "Dead-end directive without actionable guidance."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[0].content",
+      "quote": "The Securities and Exchange Commission (SEC) notes on Investor.gov that each fund share represents part ownership",
+      "finding": "A1-5",
+      "why": "needs new substance",
+      "replacement": null,
+      "reason": "not fixable in place"
+     },
+     {
+      "id": "NEW",
+      "quote": "",
+      "finding": "A1-7",
+      "why": "needs new substance",
+      "replacement": null,
+      "reason": "no quote"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      4
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "introText",
+       "quote": "while bond ETF shares trade on an exchange.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "comparisonTable.rows[1].b",
+       "quote": "Share prices fluctuate continuously as interest rates change.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[1].content",
+       "quote": "Bond prices on secondary markets fluctuate continuously based on market interest rates, credit rating revisions, and prevailing buyer liquidity.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "sections[5].content",
+       "quote": "Savers who need the money within days should keep it where its value does not move with interest rates, for example an FDIC-insured deposit account.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2999,
+    "flags": [
+     "claim check: 4 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'while bond ETF shares trade on an exchange.'; 'Share prices fluctuate continuously as interest rates change.'; 'Bond prices on secondary markets fluctuate continuously based on market interest'; 'Savers who need the money within days should keep it where its value does not mo'"
+    ]
+   }
+  ]
+ },
+ "seconds": 235.7,
+ "response_id": "WfgDa-veKNDgytMPgcT-0Ak",
+ "generated_at": "2026-11-23T08:28:51+0000"
+}
