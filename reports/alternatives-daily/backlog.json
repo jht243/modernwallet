@@ -4073,10 +4073,100 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-23T16:39:05+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": [
+            "officialUrl",
+            "product",
+            "vendor"
+          ]
+        },
+        {
+          "at": "2026-11-23T16:39:05+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-23"
+        },
+        {
+          "at": "2026-11-23T16:44:54+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-23T16:53:36+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-23T16:44:54+00:00",
+      "claimedOn": "2026-11-23",
+      "attempts": 1,
+      "lastNextAt": "2026-11-23T16:39:05+00:00",
+      "writer": "content_gen",
+      "slug": "simplifi",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Their published prices run from a free tier on EveryDollar to $14.99 a month on Monarch Core or YNAB monthly",
+            "problem": "Wrong range. EveryDollar Premium is $17.99 per month, Monarch Plus is $199.99 per year and YNAB and Copilot Money are $109 per year, so $14.99 is not the top of the published prices.",
+            "fix": "State the range accurately: free on EveryDollar, up to $17.99 a month on EveryDollar Premium monthly billing, $199.99 a year on Monarch Plus.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "At The Modern Wallet, we lay out the published plan prices and feature limits so the dollar difference between subscriptions is visible before you sign up.",
+            "problem": "Meta-narration and page self-reference ('we lay out'), plus a presupposing 'before you sign up'. Opening sentence also reads as 'are the six budgeting apps covered' rather than answering what to use instead.",
+            "fix": "Delete the sentence and open with a direct answer naming the alternatives and what they cost.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Simplifi shows $3.99 per month alongside $6.99, labeled as billed annually, as a first-year offer ... Simplifi $3.99/month and $6.99 billed annually",
+            "problem": "Price presented as two parallel prices. simplifimoney.com shows $3.99/month and $6.99 'Billed annually' with the footnote that discounts are calculated on the annual price, the subscription is billed annually and the final price may differ from the monthly figure times 12. The $6.99 can be read as a $6.99 annual charge, which is not what the vendor shows.",
+            "fix": "State exactly what the vendor shows: first-year new-member offer of $3.99 per month, billed annually; $6.99 is shown beside it and is not labeled; renews at then-current rates. Do the same in the table, intro, FAQ, verdict and Still Better Fit text.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "The next step for anyone weighing Simplifi alternatives is to open each provider's pricing page, confirm the current price and trial terms, and compare them with the table above.",
+            "problem": "unlinked-directive: tells the reader to check pricing pages with no link (only the subject may be linked under the owner override).",
+            "fix": "Replace with a next action pointing to an internal page, for example the best budgeting apps roundup, and keep the 'Simplifi alternatives' keyword.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F5",
+            "quote": "Check these four items when comparing options: ... Consider platform availability and sharing limits before deciding. ... Start with the budgeting method. ... Next, examine the pricing structure",
+            "problem": "Directive framing on a listing page ('Check', 'Consider', 'before deciding') and 'Simplifi remains the better fit for individuals and households' reads as a recommendation.",
+            "fix": "Recast as neutral decision criteria and 'fits people who...' wording.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F6",
+            "quote": "Tiller works inside Google Sheets ... syncs account balances and daily transactions ... solo business income ... connect an external artificial intelligence tool",
+            "problem": "These Tiller features are not on tiller.com/pricing, the only Tiller URL in the sources file; the page checked shows only $99/year, 30-day trial, 30-day refund and Microsoft or Google sign-in.",
+            "fix": "Fetch tiller.com home or features page, add it to simp sources, or remove the unsupported features.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F7",
+            "quote": "(page-level)",
+            "problem": "The page body is well over 2,000 words but the template renders no table of contents (none of the alternatives pages has one).",
+            "fix": "Add a template-level table of contents for alternatives pages over 2,000 words, or record an owner exemption.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-23T16:53:36+00:00"
+      }
     },
     {
       "vendor": "Tiller",
@@ -4123,10 +4213,114 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-23T16:39:05+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": [
+            "officialUrl",
+            "product",
+            "vendor"
+          ]
+        },
+        {
+          "at": "2026-11-23T16:39:05+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-23"
+        },
+        {
+          "at": "2026-11-23T16:46:48+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-23T16:53:36+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-23T16:46:48+00:00",
+      "claimedOn": "2026-11-23",
+      "attempts": 1,
+      "lastNextAt": "2026-11-23T16:39:05+00:00",
+      "writer": "content_gen",
+      "slug": "payoneer",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "International wire fees listed in full fee schedule.",
+            "problem": "deferral-in-cell: the Relay table cell sends the reader elsewhere instead of stating a fact. Same deferral in the Relay section ('international wire fees sit in its full fee schedule').",
+            "fix": "Fetch Relay's fee schedule and state the fee, or write 'Not published on the pricing page' as the fact.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "balance-to-balance transfers between Payoneer accounts are free",
+            "problem": "Contradicts payoneer.com/pricing and the page's own table: sending from a balance to another Payoneer account is up to $4.00 (same country) or 1% + up to $4.00 (different country), moving between own balances is 0.50%. Only receiving from another customer's balance is free.",
+            "fix": "Replace with 'receiving from another Payoneer customer's balance is free'.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Wise Business, Airwallex, Mercury and Relay replace Payoneer for receiving and holding funds",
+            "problem": "Opener contradicts the page: Mercury 'does not provide international local receiving accounts in foreign currencies' and Relay 'lists no multi-currency receiving accounts'. The answer sentence overstates what Mercury and Relay replace.",
+            "fix": "Say Wise Business and Airwallex cover multi-currency receiving and holding, Mercury and Relay cover US dollar business banking, Deel and Remote cover contractor payments.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "Versus Payoneer, Wise Business does not provide working capital advances, built-in Value-Added Tax payments, checkout merchant processing, or integrated Employer of Record services.",
+            "problem": "wise.com/us/pricing/business footer lists 'Accept card payments' under Wise Business products, so the checkout claim is not supported by Wise's own site.",
+            "fix": "Delete 'checkout merchant processing' (or verify and cite Wise's card-acceptance terms).",
+            "hard_blocker": true
+          },
+          {
+            "id": "F5",
+            "quote": "Automated Clearing House (ACH) ... Society for Worldwide Interbank Financial Telecommunication (SWIFT) ... Annual Percentage Yield (APY) ... FDIC insurance",
+            "problem": "Acronyms used before definition (ACH, SWIFT, ATM, FX, APY, PEO and US appear in the table first) and FDIC is never expanded.",
+            "fix": "Expand each at first use, tables included, and expand Federal Deposit Insurance Corporation (FDIC) once.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F6",
+            "quote": "Several potential pricing changes would alter these recommendations: ... To choose the right Payoneer alternative, identify your top incoming payment methods, calculate your monthly foreign exchange volume ... Five checks to complete before choosing a provider ... may prefer Payoneer",
+            "problem": "Recommendation and directive framing. The page lists published fees and must not recommend or tell the reader what to do.",
+            "fix": "Replace 'recommendations' with 'comparison', turn the check list into neutral decision criteria, and rewrite 'may prefer Payoneer' as 'Payoneer publishes a direct Upwork payout partnership'.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F7",
+            "quote": "Payoneer charges an annual account fee of $29.95 if your account receives less than $6,000.00",
+            "problem": "Omits the pricing-page qualifier 'Not charged in the first year for paid annual plans'.",
+            "fix": "Add the qualifier to the Payoneer table row and FAQ.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F8",
+            "quote": "Remote Employer of Record starts at $599 per employee per month ... US PEO starting at $99 per month.",
+            "problem": "remote.com lists $599 'for annual contracts'; the table PEO cell drops 'per employee'.",
+            "fix": "Add 'for annual contracts' and write '$99 per employee per month'.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F9",
+            "quote": "(page-level)",
+            "problem": "The page body is well over 2,000 words but the template renders no table of contents (none of the alternatives pages has one).",
+            "fix": "Add a template-level table of contents for alternatives pages over 2,000 words, or record an owner exemption.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-23T16:53:36+00:00"
+      }
     },
     {
       "vendor": "LendingClub",
@@ -4155,7 +4349,7 @@
     },
     {
       "vendor": "M1 Finance",
-      "product": "M1 Finance",
+      "product": "M1",
       "officialUrl": "https://www.m1.com",
       "targetQuery": "m1 finance alternatives",
       "demand": {
@@ -4173,10 +4367,107 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-23T16:39:05+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": [
+            "officialUrl",
+            "product",
+            "vendor"
+          ]
+        },
+        {
+          "at": "2026-11-23T16:39:05+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-23"
+        },
+        {
+          "at": "2026-11-23T16:46:58+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-23T16:53:36+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-23T16:46:58+00:00",
+      "claimedOn": "2026-11-23",
+      "attempts": 1,
+      "lastNextAt": "2026-11-23T16:39:05+00:00",
+      "writer": "content_gen",
+      "slug": "m1",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Silver adds an Emergency Savings account paying 3.59% APY, while Bronze includes a 1% IRA match.",
+            "problem": "Plan fact is wrong. acorns.com/pricing lists the 1% IRA match on Acorns Silver; Bronze has Round-Ups and the Acorns Later retirement account with no match, and the 3% match is Gold.",
+            "fix": "Rewrite as: Silver adds an Emergency Savings account paying 3.59% APY and a 1% IRA match on new first-year contributions; Gold raises the match to 3%.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Wealthfront also does not list native margin borrowing on its self-directed accounts at a published rate comparable to M1's 5.90%.",
+            "problem": "Unsupported negative claim about a competitor. wealthfront.com/cash shows a Borrow section in its navigation and no source file records a check of Wealthfront borrowing rates.",
+            "fix": "Delete the sentence, or replace with a sourced fact from Wealthfront's own borrowing page.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Pies using stocks and exchange-traded funds (ETFs) ... M1 pays a 3.35% Annual Percentage Yield (APY) ... a 3% match on new Individual Retirement Account (IRA) contributions",
+            "problem": "Acronyms used before definition: ETF/ETFs, APY and IRA first appear in the comparison table, and API in the Public table row, before any expansion. Standard requires every acronym defined on first use, tables included.",
+            "fix": "Expand ETF, APY, IRA and API at first use in the intro or table note and use the short form afterward.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "Second, evaluate trading mechanics and scheduling constraints. ... Third, calculate the ongoing software and subscription costs ... Fourth, compare cash interest rates",
+            "problem": "Parallel steps written as First/Second/Third/Fourth paragraphs (no First), then the same ideas repeated as a five-item question list. Formatting slop and restatement under the anti-AI standard.",
+            "fix": "Convert the four paragraphs to one list of criteria (or keep prose without ordinals) and drop the duplicate five-question list.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F5",
+            "quote": "Check these five factors before selecting an alternative: ... Compare your portfolio balance against the $10,000 waiver threshold and calculate your margin borrowing needs before opening an account. ... If you require immediate execution at a specific limit price, an alternative with continuous market trading is required.",
+            "problem": "Directive, advice-framed second-person instructions on a page that must only list products and published fees.",
+            "fix": "Recast as neutral statements of what each product publishes (for example 'M1 waives its $3 fee above $10,000; Public lists a 5.15% base margin rate'). End on an internal-link next action such as the comparison hub.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F6",
+            "quote": "Compare your portfolio balance against the $10,000 waiver threshold and calculate your margin borrowing needs before opening an account.",
+            "problem": "Final next-action sentence does not carry the primary keyword 'M1 alternatives' (SEO standard).",
+            "fix": "Close with a keyword-bearing next action, for example a link to the comparison hub for M1 alternatives.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F7",
+            "quote": "whereas M1 High-Yield Cash Account requires no monthly fee for balances over $10,000",
+            "problem": "Conflates the $3 platform fee waiver (more than $10,000 on the platform) with the cash account; m1.com states the cash account needs a $100 initial deposit and says nothing about a monthly fee.",
+            "fix": "Say 'M1 waives its $3 platform fee above $10,000' and keep cash-account terms separate.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F8",
+            "quote": "(page-level)",
+            "problem": "The page body is well over 2,000 words but the template renders no table of contents (none of the alternatives pages has one).",
+            "fix": "Add a template-level table of contents for alternatives pages over 2,000 words, or record an owner exemption.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-23T16:53:36+00:00"
+      }
     }
   ]
 }

@@ -1,0 +1,62 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "Silver adds an Emergency Savings account paying 3.59% APY, while Bronze includes a 1% IRA match.",
+   "problem": "Plan fact is wrong. acorns.com/pricing lists the 1% IRA match on Acorns Silver; Bronze has Round-Ups and the Acorns Later retirement account with no match, and the 3% match is Gold.",
+   "fix": "Rewrite as: Silver adds an Emergency Savings account paying 3.59% APY and a 1% IRA match on new first-year contributions; Gold raises the match to 3%.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "Wealthfront also does not list native margin borrowing on its self-directed accounts at a published rate comparable to M1's 5.90%.",
+   "problem": "Unsupported negative claim about a competitor. wealthfront.com/cash shows a Borrow section in its navigation and no source file records a check of Wealthfront borrowing rates.",
+   "fix": "Delete the sentence, or replace with a sourced fact from Wealthfront's own borrowing page.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "Pies using stocks and exchange-traded funds (ETFs) ... M1 pays a 3.35% Annual Percentage Yield (APY) ... a 3% match on new Individual Retirement Account (IRA) contributions",
+   "problem": "Acronyms used before definition: ETF/ETFs, APY and IRA first appear in the comparison table, and API in the Public table row, before any expansion. Standard requires every acronym defined on first use, tables included.",
+   "fix": "Expand ETF, APY, IRA and API at first use in the intro or table note and use the short form afterward.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F4",
+   "quote": "Second, evaluate trading mechanics and scheduling constraints. ... Third, calculate the ongoing software and subscription costs ... Fourth, compare cash interest rates",
+   "problem": "Parallel steps written as First/Second/Third/Fourth paragraphs (no First), then the same ideas repeated as a five-item question list. Formatting slop and restatement under the anti-AI standard.",
+   "fix": "Convert the four paragraphs to one list of criteria (or keep prose without ordinals) and drop the duplicate five-question list.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F5",
+   "quote": "Check these five factors before selecting an alternative: ... Compare your portfolio balance against the $10,000 waiver threshold and calculate your margin borrowing needs before opening an account. ... If you require immediate execution at a specific limit price, an alternative with continuous market trading is required.",
+   "problem": "Directive, advice-framed second-person instructions on a page that must only list products and published fees.",
+   "fix": "Recast as neutral statements of what each product publishes (for example 'M1 waives its $3 fee above $10,000; Public lists a 5.15% base margin rate'). End on an internal-link next action such as the comparison hub.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F6",
+   "quote": "Compare your portfolio balance against the $10,000 waiver threshold and calculate your margin borrowing needs before opening an account.",
+   "problem": "Final next-action sentence does not carry the primary keyword 'M1 alternatives' (SEO standard).",
+   "fix": "Close with a keyword-bearing next action, for example a link to the comparison hub for M1 alternatives.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F7",
+   "quote": "whereas M1 High-Yield Cash Account requires no monthly fee for balances over $10,000",
+   "problem": "Conflates the $3 platform fee waiver (more than $10,000 on the platform) with the cash account; m1.com states the cash account needs a $100 initial deposit and says nothing about a monthly fee.",
+   "fix": "Say 'M1 waives its $3 platform fee above $10,000' and keep cash-account terms separate.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F8",
+   "quote": "(page-level)",
+   "problem": "The page body is well over 2,000 words but the template renders no table of contents (none of the alternatives pages has one).",
+   "fix": "Add a template-level table of contents for alternatives pages over 2,000 words, or record an owner exemption.",
+   "hard_blocker": false
+  }
+ ]
+}

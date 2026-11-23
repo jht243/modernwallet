@@ -1,0 +1,255 @@
+{
+ "slug": "payoneer",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 3806,
+ "floor": 1500,
+ "input_tokens": 174282,
+ "output_tokens": 6988,
+ "thinking_tokens": 4589,
+ "cached_tokens": 170267,
+ "est_cost_usd": 0.0592,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3806,
+  "numbers_not_in_facts": [
+   "1000000",
+   "1200",
+   "19500",
+   "250000",
+   "400",
+   "5000000",
+   "59.69",
+   "5940",
+   "840"
+  ],
+  "fact_budget": {
+   "fact_words": 1658,
+   "floor": 1500,
+   "ratio": 1.11,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    12,
+    14,
+    0
+   ],
+   "applied": [
+    {
+     "id": "intro",
+     "quote": "At The Modern Wallet, we compare published payment schedules and calculate transaction fees across international accounts, helping businesses find the exact cost of receiving money and paying international teams.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description does not license this first-person operational claim"
+    },
+    {
+     "id": "rows[1].bestFit",
+     "quote": "Fits freelancers and businesses that receive funds in major currencies and convert at mid-market exchange rates without monthly fees",
+     "replacement": "Fits freelancers and businesses that receive funds in major currencies and convert at mid-market exchange rates",
+     "type": "unsupported",
+     "why": "Wise source prohibits stating no monthly fee beyond headline"
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Wise Business, Airwallex Explore, Mercury and Relay Starter charge $0 in monthly or annual account maintenance fees regardless of transaction volume.",
+     "replacement": "Airwallex Explore, Mercury and Relay Starter charge $0 in monthly account maintenance fees regardless of transaction volume.",
+     "type": "unsupported",
+     "why": "Wise source prohibits stating no monthly fee beyond headline"
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Wise Business charges no ongoing monthly subscription fee, operating on a pay-as-you-go pricing schedule.",
+     "replacement": "Wise Business operates on a pay-as-you-go pricing schedule.",
+     "type": "unsupported",
+     "why": "Wise source prohibits stating no monthly fee beyond headline"
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Converting that $5,000 into another major currency on Wise Business at a 0.45% rate costs $22.50, compared to Payoneer's 1.2% to 4% conversion and withdrawal fee ($60 to $200).",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "0.45% rate is not in source; conversion starts from 0.23%"
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Mercury is a financial technology company that provides banking services through partner banks, including Choice Financial Group and Column N.A., Members Federal Deposit Insurance Corporation (FDIC).",
+     "replacement": "Mercury is a financial technology company that provides banking services through partner banks.",
+     "type": "unsupported",
+     "why": "Source does not name Choice Financial Group or Column N.A."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Mercury Plus costs $29.90 per month on annual billing ($35 billed monthly) and includes a 30-day trial, adding ACH debit invoicing at $1 per transaction, recurring billing and six months of free Xero accounting.",
+     "replacement": "Mercury Plus costs $29.90 per month on annual billing, adding ACH debit invoicing at $1 per transaction, recurring billing and six months of free Xero accounting.",
+     "type": "unsupported",
+     "why": "Source does not state $35 monthly billing or 30-day trial"
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Relay is a financial technology company providing business banking services through Thread Bank, Member FDIC, with deposit coverage up to $3,000,000 through sweep programs.",
+     "replacement": "Relay is a financial technology company, not an FDIC-insured bank.",
+     "type": "unsupported",
+     "why": "Source does not mention Thread Bank or $3M deposit coverage"
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Relay allows businesses to open multiple checking accounts to divide cash reserves, charging no minimum balance fees or overdraft penalties.",
+     "replacement": "Relay allows businesses to open multiple checking accounts to divide cash reserves.",
+     "type": "unsupported",
+     "why": "Relay source does not state no minimum balance fees or overdraft penalties"
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "For companies seeking worker classification protection, Deel Contractor of Record starts at $325 per contractor of record per month, assuming legal liability for misclassification.",
+     "replacement": "For companies seeking worker classification protection, Deel Contractor of Record starts at $325 per contractor of record per month.",
+     "type": "unsupported",
+     "why": "Source does not state Contractor of Record assumes legal liability"
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "If the business utilizes Contractor of Record for full misclassification indemnification, five contractors cost $1,625 per month ($325 multiplied by five), or $19,500 annually.",
+     "replacement": "If the business utilizes Contractor of Record, five contractors cost $1,625 per month ($325 multiplied by five), or $19,500 annually.",
+     "type": "unsupported",
+     "why": "Source does not state indemnification for Deel Contractor of Record"
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Wise Business charges no monthly maintenance fee after its one-time $31 setup fee.",
+     "replacement": "Wise Business operates on a pay-as-you-go model with a one-time $31 setup fee.",
+     "type": "unsupported",
+     "why": "Wise source prohibits stating no monthly fee beyond headline"
+    },
+    {
+     "id": "rows[5].bestFit",
+     "quote": "Fits businesses hiring international contractors who need localized contracts, tax compliance collection and payments in 120 or more currencies",
+     "replacement": "Fits businesses hiring international contractors who need centralized contractor management, document collection and payments in 120 or more currencies",
+     "type": "unsupported",
+     "why": "SOURCE does not state localized contracts for Deel."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Wise states that it uses the mid-market exchange rate without added markups, and provides volume discounts for accounts converting more than $25,000 per month.",
+     "replacement": "Wise states that it uses the mid-market exchange rate without added markups, and provides volume discounts for accounts converting more than $25,000.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that the $25,000 converting volume discount threshold is per month."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "If a business receives a $5,000 USD domestic bank transfer from a client, Payoneer charges 1% ($50) for ACH debit, or $0 if the client uses an integrated Payoneer receiving account.",
+     "replacement": "If a business receives a $5,000 USD domestic bank transfer from a client, Payoneer charges 1% ($50) for ACH debit, or $0 via a receiving account in your local currency.",
+     "type": "unsupported",
+     "why": "SOURCE states receiving in local currency is free, not integrated receiving account."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Versus Payoneer, Airwallex lacks integrated marketplace payout connections like the direct Upwork integration, and charges $15 to $25 per outgoing SWIFT transfer.",
+     "replacement": "Versus Payoneer, Airwallex charges $15 to $25 per outgoing SWIFT transfer.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Airwallex lacks marketplace payout connections or Payoneer has direct Upwork integration."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Versus Payoneer, Mercury requires a US entity, does not provide international local receiving accounts in foreign currencies, and does not operate as a cross-border consumer payment wallet.",
+     "replacement": "Versus Payoneer, Mercury does not provide international local receiving accounts in foreign currencies.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Mercury requires a US entity or Payoneer is a consumer wallet."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "The Contractor plan includes centralized contractor onboarding, automated invoicing, localized contract generation, worker classification compliance, tax form guidance and payment execution in 120 or more currencies.",
+     "replacement": "The Contractor plan includes centralized contractor management, automated invoicing, document collection, worker classification compliance, tax form guidance and payment execution in 120 or more currencies.",
+     "type": "unsupported",
+     "why": "SOURCE states document collection, not localized contract generation."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "The plan covers contractor onboarding in 190 or more countries, compliance screening, expense reimbursements, localized agreements, 1099-NEC form generation and disbursements in 70 or more currencies.",
+     "replacement": "The plan covers contractor onboarding in 190 or more countries, compliance screening, expenses, 1099-NEC form generation and disbursements in 70 or more currencies.",
+     "type": "unsupported",
+     "why": "SOURCE lists expenses and compliance screening, not localized agreements."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Remote Contractor Management Plus starts at $99 per contractor per month, providing legal misclassification defense and up to $100,000 in indemnity per contractor (capped at $1,000,000 per company).",
+     "replacement": "Remote Contractor Management Plus starts at $99 per contractor per month, providing up to $100,000 in indemnity per contractor (capped at $1,000,000 per company).",
+     "type": "unsupported",
+     "why": "SOURCE does not mention legal misclassification defense."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Remote Contractor of Record starts at $325 per contractor of record per month, taking on full legal employment classification.",
+     "replacement": "Remote Contractor of Record starts at $325 per contractor of record per month.",
+     "type": "unsupported",
+     "why": "SOURCE does not state taking on full legal employment classification."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Versus Payoneer, Remote does not function as a commercial merchant account or point-of-sale checkout gateway, and cannot be used to receive direct customer payments.",
+     "replacement": "Versus Payoneer, Remote does not function as a checkout gateway and cannot be used to receive direct customer payments.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention a point-of-sale checkout gateway."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "- Non-US businesses cannot open accounts with Mercury or Relay, because both platforms require legal business registration in the United States.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state registration restrictions or non-US bans for Mercury or Relay."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Payoneer supports stablecoin payments in USDT and USDC, Value-Added Tax payments directly to tax authorities in the United Kingdom and the European Union, payment requests and payment links, merchant checkout processing, and Working Capital Advances for qualifying businesses.",
+     "replacement": "Payoneer supports stablecoin payments in USDT and USDC, Value-Added Tax payments, payment requests and payment links, merchant checkout processing, and Working Capital Advances for qualifying businesses.",
+     "type": "unsupported",
+     "why": "SOURCE does not state VAT payments go directly to UK and EU tax authorities."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "When your workflow depends on platform payout integrations across multiple non-Western countries, Payoneer provides cross-border infrastructure that domestic fintech accounts do not match.",
+     "replacement": "When your workflow depends on platform payout integrations across multiple countries and currencies, Payoneer provides cross-border infrastructure that domestic accounts do not match.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention non-Western countries."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Airwallex Explore, Mercury and Relay Starter also charge $0 per month with no minimum balance requirements.",
+     "replacement": "Airwallex Explore, Mercury and Relay Starter also charge $0 per month, with Mercury having no minimum balance requirements.",
+     "type": "unsupported",
+     "why": "SOURCE states no minimum balances only for Mercury, not Airwallex or Relay."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 4007
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 4987
+  }
+ },
+ "seconds": 298.8,
+ "response_id": "tmwEa8aKMZKgxdIP582m8Q0",
+ "generated_at": "2026-11-23T16:46:24+0000"
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "simplifi",
+  "product": "Simplifi",
+  "checked": "2026-11-23",
+  "sources": [
+    {
+      "vendor": "Simplifi (Quicken)",
+      "role": "subject",
+      "url": "https://www.simplifimoney.com",
+      "facts": "$3.99/month and $6.99 labeled 'Billed annually'; first-year offer for new memberships ordered directly by December 8, 2026 12:00 AM PST; renews at then-current rate; Mobile and Web; 14,000+ financial institutions; Spending Plan; Projected Cash Flow up to 12 months; Watchlist; Savings Goals; Retirement Planner; Quicken AI; Health Score (9 areas); share with one other person; free one-on-one setup help; not designed outside US and Canada; Classic desktop is a separate line"
+    },
+    {
+      "vendor": "Monarch",
+      "url": "https://www.monarch.com/pricing",
+      "facts": "Core $99.99/year or $14.99/month; Plus $199.99/year; free first week; code WELCOME 30% off Core one year; money-back guarantee; cancel anytime"
+    },
+    {
+      "vendor": "YNAB",
+      "url": "https://www.ynab.com/pricing",
+      "facts": "Annual $109 ($9.08/month, $70 savings); monthly $14.99; 34-day free trial no card; share with groups up to six; college students free 365-day trial; debt tools with loan calculator"
+    },
+    {
+      "vendor": "Copilot Money",
+      "url": "https://copilot.money/pricing",
+      "facts": "One plan, no tiers; $9/month, $109 billed yearly instead of $119 (limited time); 16,000+ banks; iPhone, iPad, Mac and Web; partner invite coming this fall"
+    },
+    {
+      "vendor": "PocketGuard",
+      "url": "https://pocketguard.com/pricing",
+      "facts": "Plus: $74.99 yearly ($6.25/month), $12.99 monthly ($155.88/year), $149.99 lifetime; 7-day free trial, payment method required; US, CA and UK connectivity; unlimited bank accounts"
+    },
+    {
+      "vendor": "EveryDollar",
+      "url": "https://www.ramseysolutions.com/ramseyplus/everydollar",
+      "facts": "Free version; premium after 14-day trial $6.67/month billed annually at $79.99 or $17.99/month billed monthly; premium connects bank, free is manual entry"
+    },
+    {
+      "vendor": "Tiller",
+      "url": "https://tiller.com/pricing",
+      "facts": "30-day free trial then $99/year; extra 30 days refund window; Google Sheets/Microsoft sign-in; sales tax added where required"
+    },
+    {
+      "vendor": "Tiller",
+      "url": "https://tiller.com",
+      "facts": "Sync accounts to private spreadsheets you own with daily automation; tracks solo business income, expenses and profits; AI optional, point AI at spreadsheets instead of linking banks; optional daily email"
+    },
+    {
+      "vendor": "Tiller",
+      "url": "https://tiller.com/features",
+      "facts": "Automatic bank connections for Google Sheets and Microsoft Excel; Foundation Template; Hello, Money daily email; AutoCat; solo business support"
+    }
+  ]
+}

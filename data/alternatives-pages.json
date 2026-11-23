@@ -206,6 +206,30 @@
         "www.gusto.com",
         "gusto.com"
       ]
+    },
+    {
+      "route": "/alternatives/simplifi/",
+      "vendorHost": "simplifimoney.com",
+      "officialHosts": [
+        "www.simplifimoney.com",
+        "simplifimoney.com"
+      ]
+    },
+    {
+      "route": "/alternatives/payoneer/",
+      "vendorHost": "payoneer.com",
+      "officialHosts": [
+        "www.payoneer.com",
+        "payoneer.com"
+      ]
+    },
+    {
+      "route": "/alternatives/m1/",
+      "vendorHost": "m1.com",
+      "officialHosts": [
+        "www.m1.com",
+        "m1.com"
+      ]
     }
   ]
 }

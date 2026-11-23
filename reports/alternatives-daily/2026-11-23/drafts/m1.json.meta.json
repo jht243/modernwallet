@@ -1,0 +1,373 @@
+{
+ "slug": "m1",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 4010,
+ "floor": 1500,
+ "input_tokens": 173582,
+ "output_tokens": 7868,
+ "thinking_tokens": 852,
+ "cached_tokens": 170267,
+ "est_cost_usd": 0.048,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 4010,
+  "numbers_not_in_facts": [
+   "0.0025",
+   "0.0035",
+   "0.0335",
+   "0.0515",
+   "0.059",
+   "1000000",
+   "24000",
+   "37.5"
+  ],
+  "fact_budget": {
+   "fact_words": 887,
+   "floor": 1500,
+   "ratio": 0.59,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    22,
+    20,
+    1
+   ],
+   "applied": [
+    {
+     "id": "rows[2].bestFit",
+     "quote": "Fits investors wanting automated managed portfolios with tax-loss harvesting and a high-yield cash account with no monthly software fee",
+     "replacement": "Fits investors wanting automated managed portfolios and a high-yield cash account with no monthly software fee",
+     "type": "unsupported",
+     "why": "SOURCE does not mention tax-loss harvesting for Wealthfront."
+    },
+    {
+     "id": "rows[4].bestFit",
+     "quote": "Fits active traders seeking continuous 24/5 trading, options, futures, prediction markets and an IRA match through Robinhood Gold",
+     "replacement": "Fits active traders seeking commission-free options, futures, prediction markets and an IRA match through Robinhood Gold",
+     "type": "unsupported",
+     "why": "SOURCE does not state Robinhood offers continuous 24/5 trading."
+    },
+    {
+     "id": "rows[7].bestFit",
+     "quote": "Fits active self-directed stock and options traders who want technical charting tools without account opening minimums",
+     "replacement": "Fits active self-directed stock and options traders wanting commission-free trading without account opening minimums",
+     "type": "unsupported",
+     "why": "SOURCE does not mention technical charting tools for Webull."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "In contrast, Robinhood offers 24/5 commission-free stock trading, Webull provides continuous regular and extended-hours trading, and Fidelity offers comprehensive real-time execution across stocks, options and bonds.",
+     "replacement": "In contrast, Robinhood, Webull and Fidelity offer self-directed trading for stocks, ETFs and options with no commissions.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Robinhood offers 24/5 trading, Webull extended-hours, or Fidelity bonds."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Betterment also charges an outbound transfer fee of $75 per investing account.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Betterment charges a $75 outbound transfer fee."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Wealthfront fits investors who want automated portfolio management with tax-loss harvesting or a standalone commission-free brokerage account paired with high-yield cash.",
+     "replacement": "Wealthfront fits investors who want automated portfolio management or a standalone commission-free brokerage account paired with high-yield cash.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Wealthfront provides tax-loss harvesting."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "However, on a smaller $5,000 balance, Wealthfront's 0.25% fee on The Wealthfront Portfolio equals $12.50 per year, whereas M1 charges its $3 monthly platform fee, which totals $36.00 over twelve months.",
+     "replacement": "On a balance of $10,000 or less, M1 charges its $3 monthly platform fee, which totals $36.00 over twelve months.",
+     "type": "unsupported",
+     "why": "SOURCE explicitly forbids computing cost examples other than the allowed list."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Fidelity fits investors who want full brokerage services with zero account fees, comprehensive research, and a robo-advisor that is free for balances under $25,000.",
+     "replacement": "Fidelity fits investors who want full brokerage services with zero account fees and a robo-advisor that is free for balances under $25,000.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention comprehensive research for Fidelity."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Fidelity also lacks M1's automated Pie allocation model that rebalances fractional shares automatically when new funds are deposited, although Fidelity supports fractional share purchases starting at $1.",
+     "replacement": "Fidelity also lacks M1's automated Pie allocation model that rebalances fractional shares automatically when new funds are deposited.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Fidelity supports fractional share purchases starting at $1."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "If an investor borrows $5,000 on margin for one year, Fidelity's 12.075% rate incurs $603.75 in interest, whereas M1's 5.90% rate costs $295.00 in interest ($5,000 multiplied by 0.059), representing an annual difference of $308.75.",
+     "replacement": "If an investor borrows $5,000 on margin for one year, M1's 5.90% rate costs $295.00 in interest, whereas Fidelity lists a higher effective rate of 12.075% on balances up to $24,999.",
+     "type": "unsupported",
+     "why": "SOURCE explicitly forbids computing cost examples other than the allowed list."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "It offers continuous trading spanning regular and 24/5 market sessions.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Robinhood offers 24/5 market sessions."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Robinhood fits self-directed investors and active traders who want 24/5 market access, multi-asset trading, and a 3% IRA contribution match through Gold.",
+     "replacement": "Robinhood fits self-directed investors and active traders who want multi-asset trading and a 3% IRA contribution match through Gold.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Robinhood offers 24/5 market access."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Holding $5,000 in cash on Robinhood Gold at 3.6% yields $180.00, but subtracting the $60.00 Gold fee nets $120.00.",
+     "replacement": "Robinhood Gold offers a 3.6% APY on eligible brokerage cash alongside its $60.00 annual subscription cost.",
+     "type": "unsupported",
+     "why": "SOURCE explicitly forbids computing cost examples other than the allowed list."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "While Public offers direct indexing from $1,000, M1 allows users to assemble up to 100 stocks and ETFs into personal Pies with customized percentage allocations for any deposit size.",
+     "replacement": "While Public offers direct indexing from $1,000, M1 allows users to assemble stocks and ETFs into personal Pies with customized percentage allocations for any deposit size.",
+     "type": "unsupported",
+     "why": "SOURCE does not state M1 Pies allow up to 100 stocks and ETFs."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Public also does not offer joint or trust accounts on its primary fee schedule.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Public lacks joint or trust accounts."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "On uninvested cash, holding $5,000 at Public's 3.30% APY yields $165.00 per year, compared to $167.50 on M1 at 3.35% APY.",
+     "replacement": "On uninvested cash, M1 pays 3.35% APY (yielding $167.50 per year on $5,000), compared to Public's 3.30% base cash APY.",
+     "type": "unsupported",
+     "why": "SOURCE explicitly forbids computing cash yield examples other than M1."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Gold includes a 3% match on new IRA contributions in the first year (up to $225 on a maxed contribution), Early investment accounts for kids, and a $10,000 life insurance policy for eligible customers.",
+     "replacement": "Gold includes a 3% match on new IRA contributions in the first year (up to $225 on a max contribution) and a $10,000 life insurance policy for eligible customers.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention Early investment accounts for kids."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Acorns also does not offer margin borrowing, personal loans, or joint and trust brokerage accounts, and its monthly subscription fees apply regardless of balance size.",
+     "replacement": "Acorns also does not offer margin borrowing, and its monthly subscription fees apply regardless of balance size.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Acorns lacks personal loans or joint and trust accounts."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "Webull fits active traders and options investors who require real-time market execution, charting tools, and extended-hours trading with zero commissions.",
+     "replacement": "Webull fits active traders and options investors who require commission-free stock and options trading without deposit minimums.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention charting tools or extended-hours trading for Webull."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "However, Webull permits continuous trading throughout market hours and extended sessions, which M1 does not support due to its scheduled batch trade windows.",
+     "replacement": "However, Webull permits continuous trading throughout market hours, which M1 does not support due to its scheduled batch trade windows.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Webull offers extended-hours sessions."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Active day traders who need real-time limit orders, stop-loss triggers, or continuous order execution throughout the day, because M1 executes trades only once or twice daily in batch windows.",
+     "replacement": "Active day traders who need real-time limit orders, extended-hours trading, or continuous order execution throughout the day, because M1 executes trades only once or twice daily in batch windows.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention stop-loss triggers."
+    },
+    {
+     "id": "verdict",
+     "quote": "Fidelity provides full commission-free brokerage alongside Fidelity Go at $0 under $25,000, Public provides direct indexing and lower margin rates, Robinhood delivers 24/5 trading with an IRA match on Gold, Acorns automates spare-change roundups, and Webull offers active charting tools.",
+     "replacement": "Fidelity provides full commission-free brokerage alongside Fidelity Go at $0 under $25,000, Public provides direct indexing and lower margin rates, Robinhood delivers multi-asset trading with an IRA match on Gold, Acorns automates spare-change roundups, and Webull offers commission-free trading without minimums.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Robinhood offers 24/5 trading or Webull offers charting tools."
+    },
+    {
+     "id": "rows[0].bestFit",
+     "quote": "Fits long-term investors with balances over $10,000 who want automated Pie-based stock and ETF allocations with integrated margin borrowing",
+     "replacement": "Fits long-term investors with balances over $10,000 who want Pie-based stock and ETF allocations with integrated margin borrowing",
+     "type": "unsupported",
+     "why": "SOURCE does not state that M1 Pie allocations are automated."
+    },
+    {
+     "id": "rows[6].pricing",
+     "quote": "Bronze $4 per month, Silver $8 per month, Gold $12 per month; Round-Ups invest spare change into expert-built portfolios; Gold adds a 3% IRA match on new first-year contributions and $10,000 life insurance; Emergency Savings pays 3.59% APY on Silver and Gold.",
+     "replacement": "Bronze $4 per month, Silver $8 per month, Gold $12 per month; Round-Ups invest spare change into expert-built portfolios; Gold adds a 3% IRA match on new first-year contributions; Premium subscription includes $10,000 life insurance; Emergency Savings pays 3.59% APY on Silver and Gold.",
+     "type": "contradicted",
+     "why": "SOURCE attributes $10,000 life insurance to Premium subscription, not Gold."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "If you prefer to have an algorithm build and rebalance a portfolio for you, Betterment, Wealthfront and Fidelity Go function as automated robo-advisors.",
+     "replacement": "If you prefer to have a provider select the portfolio for you, Betterment, Wealthfront and Fidelity Go function as robo-advisors.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that algorithms build or rebalance portfolios."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Betterment fits hands-off investors who want automated portfolios selected and rebalanced by the provider, with percentage pricing accessible through $200 monthly recurring deposits.",
+     "replacement": "Betterment fits hands-off investors who want automated portfolios selected by the provider, with percentage pricing accessible through $200 monthly recurring deposits.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Betterment rebalances portfolios."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "M1 allows you to build custom Pies containing specific stocks and ETFs chosen from over 6,000 securities with automatic rebalancing to your set targets.",
+     "replacement": "M1 allows you to build custom Pies containing specific stocks and ETFs chosen from over 6,000 securities with fractional shares built to exact percentages.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that M1 provides automatic rebalancing."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Versus M1, Wealthfront does not provide M1's dynamic Pie-based rebalancing system for self-directed stock pickers.",
+     "replacement": "Versus M1, Wealthfront does not provide M1's Pie-based system for self-directed stock pickers.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that M1 has a dynamic rebalancing system."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "While Wealthfront offers a fee-free Brokerage Account for individual stocks and ETFs, it does not structure portfolios into custom percentage Pies that automatically direct new deposits into underweight holdings.",
+     "replacement": "While Wealthfront offers a fee-free Brokerage Account for individual stocks and ETFs, it does not structure portfolios into custom percentage Pies built with fractional shares.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that M1 directs deposits into underweight holdings."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Fidelity also lacks M1's automated Pie allocation model that rebalances fractional shares automatically when new funds are deposited.",
+     "replacement": "Fidelity also lacks M1's Pie allocation model that lets users build to exact percentages using fractional shares.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that M1 rebalances fractional shares when funds are deposited."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Versus M1, Robinhood does not offer an automated portfolio rebalancing system comparable to M1's custom Pies.",
+     "replacement": "Versus M1, Robinhood does not offer custom Pies built to exact percentages.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that M1 offers an automated portfolio rebalancing system."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Robinhood requires users to place individual trades for each position rather than allocating a single deposit across an entire target portfolio automatically.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state trade placement mechanics or automatic deposit allocation."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Versus M1, Public does not feature M1's native Pie design where fractional-share portfolios automatically rebalance when deposits are made.",
+     "replacement": "Versus M1, Public does not feature M1's native Pie design where fractional shares build to exact percentages.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that M1 fractional-share portfolios automatically rebalance."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Silver adds an Emergency Savings account paying 3.59% APY and a 1% match on new IRA contributions.",
+     "replacement": "Silver adds an Emergency Savings account paying 3.59% APY, while Bronze includes a 1% IRA match.",
+     "type": "contradicted",
+     "why": "SOURCE states Bronze includes a 1% IRA match, not Silver."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Gold includes a 3% match on new IRA contributions in the first year (up to $225 on a max contribution) and a $10,000 life insurance policy for eligible customers.",
+     "replacement": "Gold includes a 3% match on new IRA contributions in the first year (up to $225 on a max contribution), and the Premium subscription includes $10,000 life insurance.",
+     "type": "contradicted",
+     "why": "SOURCE attributes $10,000 life insurance to Premium subscription, not Gold."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "Versus M1, Webull does not provide an automated Pie portfolio system for scheduled long-term investing.",
+     "replacement": "Versus M1, Webull does not provide a Pie portfolio system for long-term investing.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that M1 has an automated Pie portfolio system."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "Webull is designed for active trading where each stock or options order is executed manually.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Webull is designed for manual active trading."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "M1 automates deposits into fractional shares according to your selected targets.",
+     "replacement": "M1 allows investors to build to exact percentages using fractional shares.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that M1 automates deposits into fractional shares."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "M1 remains the closer match for long-term investors who want to build a custom portfolio of individual stocks and ETFs and have new deposits automatically rebalance across fractional shares.",
+     "replacement": "M1 remains the closer match for long-term investors who want to build a custom portfolio of individual stocks and ETFs using fractional shares.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that deposits automatically rebalance across fractional shares."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "When you deposit cash, M1 automatically buys fractional shares in your underweight holdings to bring your portfolio back toward your target targets, all with zero commissions or management fees on self-directed accounts.",
+     "replacement": "Self-directed brokerage accounts carry no commission, trading or management fees.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that M1 buys fractional shares in underweight holdings."
+    },
+    {
+     "id": "verdict",
+     "quote": "M1 provides automated fractional-share Pie investing, a 5.90% margin rate and 3.35% cash APY, with its $3 monthly fee waived on balances over $10,000.",
+     "replacement": "M1 provides fractional-share Pie investing, a 5.90% margin rate and 3.35% cash APY, with its $3 monthly fee waived on balances over $10,000.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that M1 Pie investing is automated."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Betterment and Wealthfront build and rebalance automated portfolios for a 0.25% annual fee.",
+     "replacement": "Betterment and Wealthfront build automated portfolios for a 0.25% annual fee.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Betterment or Wealthfront rebalance portfolios."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "This rate sits well below standard rates at major brokerages, such as Fidelity's 12.075% effective rate on debit balances under $25,000.",
+     "replacement": "Fidelity lists a 12.075% effective rate on debit balances under $25,000.",
+     "type": "unsupported",
+     "why": "SOURCE does not state standard rates at major brokerages."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 4218
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 4249
+  }
+ },
+ "seconds": 355.5,
+ "response_id": "k2wEa4bWJanv5NoPhLaHqAU",
+ "generated_at": "2026-11-23T16:46:44+0000"
+}

@@ -1,0 +1,10 @@
+{"slug":"m1","product":"M1","checked":"2026-11-23","sources":[
+{"vendor":"M1 (subject)","url":"https://www.m1.com","note":"homepage; /pricing returned the same page; fee, APY, margin, advisor, SIPC facts"},
+{"vendor":"Betterment","url":"https://www.betterment.com/pricing"},
+{"vendor":"Wealthfront","urls":["https://www.wealthfront.com/pricing","https://www.wealthfront.com/cash"]},
+{"vendor":"Acorns","url":"https://www.acorns.com/pricing/"},
+{"vendor":"Fidelity","urls":["https://www.fidelity.com/trading/commissions-margin-rates","https://www.fidelity.com/managed-accounts/fidelity-go/overview"]},
+{"vendor":"Robinhood","urls":["https://robinhood.com/","https://robinhood.com/us/en/about/gold/"]},
+{"vendor":"Public","url":"https://public.com/"},
+{"vendor":"Webull","url":"https://www.webull.com/pricing"}
+]}

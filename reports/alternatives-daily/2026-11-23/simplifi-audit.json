@@ -1,0 +1,55 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "Their published prices run from a free tier on EveryDollar to $14.99 a month on Monarch Core or YNAB monthly",
+   "problem": "Wrong range. EveryDollar Premium is $17.99 per month, Monarch Plus is $199.99 per year and YNAB and Copilot Money are $109 per year, so $14.99 is not the top of the published prices.",
+   "fix": "State the range accurately: free on EveryDollar, up to $17.99 a month on EveryDollar Premium monthly billing, $199.99 a year on Monarch Plus.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "At The Modern Wallet, we lay out the published plan prices and feature limits so the dollar difference between subscriptions is visible before you sign up.",
+   "problem": "Meta-narration and page self-reference ('we lay out'), plus a presupposing 'before you sign up'. Opening sentence also reads as 'are the six budgeting apps covered' rather than answering what to use instead.",
+   "fix": "Delete the sentence and open with a direct answer naming the alternatives and what they cost.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "Simplifi shows $3.99 per month alongside $6.99, labeled as billed annually, as a first-year offer ... Simplifi $3.99/month and $6.99 billed annually",
+   "problem": "Price presented as two parallel prices. simplifimoney.com shows $3.99/month and $6.99 'Billed annually' with the footnote that discounts are calculated on the annual price, the subscription is billed annually and the final price may differ from the monthly figure times 12. The $6.99 can be read as a $6.99 annual charge, which is not what the vendor shows.",
+   "fix": "State exactly what the vendor shows: first-year new-member offer of $3.99 per month, billed annually; $6.99 is shown beside it and is not labeled; renews at then-current rates. Do the same in the table, intro, FAQ, verdict and Still Better Fit text.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F4",
+   "quote": "The next step for anyone weighing Simplifi alternatives is to open each provider's pricing page, confirm the current price and trial terms, and compare them with the table above.",
+   "problem": "unlinked-directive: tells the reader to check pricing pages with no link (only the subject may be linked under the owner override).",
+   "fix": "Replace with a next action pointing to an internal page, for example the best budgeting apps roundup, and keep the 'Simplifi alternatives' keyword.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F5",
+   "quote": "Check these four items when comparing options: ... Consider platform availability and sharing limits before deciding. ... Start with the budgeting method. ... Next, examine the pricing structure",
+   "problem": "Directive framing on a listing page ('Check', 'Consider', 'before deciding') and 'Simplifi remains the better fit for individuals and households' reads as a recommendation.",
+   "fix": "Recast as neutral decision criteria and 'fits people who...' wording.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F6",
+   "quote": "Tiller works inside Google Sheets ... syncs account balances and daily transactions ... solo business income ... connect an external artificial intelligence tool",
+   "problem": "These Tiller features are not on tiller.com/pricing, the only Tiller URL in the sources file; the page checked shows only $99/year, 30-day trial, 30-day refund and Microsoft or Google sign-in.",
+   "fix": "Fetch tiller.com home or features page, add it to simp sources, or remove the unsupported features.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F7",
+   "quote": "(page-level)",
+   "problem": "The page body is well over 2,000 words but the template renders no table of contents (none of the alternatives pages has one).",
+   "fix": "Add a template-level table of contents for alternatives pages over 2,000 words, or record an owner exemption.",
+   "hard_blocker": false
+  }
+ ]
+}
