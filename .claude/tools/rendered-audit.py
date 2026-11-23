@@ -11,6 +11,7 @@ from pathlib import Path
 import re
 import subprocess
 import sys
+import time
 import urllib.request
 from urllib.parse import urlsplit, quote
 
@@ -300,14 +301,15 @@ def validate_manifest(manifest):
             target=next(t for t in routes if t['path']==p)
             require(target.get('canonicalPath',p)==p,'Canonical target must be self-canonical; chains and cycles are invalid')
 
-def capture(manifest, base, out, dom_dir=None, comparison_only=False):
+def capture(manifest, base, out, dom_dir=None, comparison_only=False, cache_bust=False):
     validate_manifest(manifest)
     require(not Path(out).exists() and not Path(out).with_suffix('').exists(),'Capture output is immutable. Use a new versioned output path; never overwrite a reserved snapshot or its HTML.')
     if dom_dir:
         missing=[r['path'] for r in manifest['routes'] if not (Path(dom_dir)/r['path'].lstrip('/')/'index.html').is_file()]
         require(not missing,'--dom-dir is existing hydrated DOM input, not an output directory. Save every route first; omit it for complete server-rendered HTTP HTML. Missing routes: '+', '.join(missing))
     preview=None
-    if manifest.get('workflowKind')=='mindmap-pass' and urlsplit(base).hostname in ('127.0.0.1','localhost'):
+    is_local=urlsplit(base).hostname in ('127.0.0.1','localhost')
+    if manifest.get('workflowKind')=='mindmap-pass' and is_local:
         import importlib.util
         root=Path(__file__).resolve().parents[2];helper=root/'.claude/tools/preview-session.py'
         package=read(root/'package.json') if (root/'package.json').is_file() else {}
@@ -319,12 +321,21 @@ def capture(manifest, base, out, dom_dir=None, comparison_only=False):
             try:preview=preview_module.verify(root,base)
             except (ValueError,OSError) as error:raise ValueError('Start the actual current-build loopback preview with preview-session.py start --run-id ACTUAL_RUN_ID before capture: '+str(error))
     folder=Path(out).with_suffix(''); folder.mkdir(parents=True,exist_ok=True)
+    headers={'User-Agent':'RenderedPageAudit/1.0'}
+    if not is_local:
+        headers.update({'Cache-Control':'no-cache, max-age=0','Pragma':'no-cache'})
+    cb_token=str(int(time.time()*1000)) if (cache_bust and not is_local) else None
     def one(route):
         url=base.rstrip('/')+route['path']
-        req=urllib.request.Request(url,headers={'User-Agent':'RenderedPageAudit/1.0'})
+        req_url=(f"{url}{'&' if '?' in url else '?'}_ra_cb={cb_token}") if cb_token else url
+        req=urllib.request.Request(req_url,headers=headers)
         with urllib.request.urlopen(req,timeout=90) as response:
             status=response.status; html=response.read().decode('utf-8')
-            require(response.geturl().rstrip('/')==url.rstrip('/'),f'{url}: unexpected redirect to {response.geturl()}')
+            if cb_token:
+                got=urlsplit(response.geturl()); want=urlsplit(url)
+                require(got.scheme==want.scheme and got.netloc==want.netloc and got.path.rstrip('/')==want.path.rstrip('/'),f'{url}: unexpected redirect to {response.geturl()}')
+            else:
+                require(response.geturl().rstrip('/')==url.rstrip('/'),f'{url}: unexpected redirect to {response.geturl()}')
             require(not {'noindex','none'} & set(re.split(r'[,\s:]+',response.headers.get('X-Robots-Tag','').lower())),f'{url}: X-Robots-Tag noindex')
         if dom_dir: html=(Path(dom_dir)/route['path'].lstrip('/')/'index.html').read_text()
         result=parse(html,route,base,manifest['canonicalBase'],status)
@@ -637,6 +648,33 @@ def _matches_ignoring_related_cards(approved, live, path):
                 return ''
             new_b_sec = li_re.sub(_strip_added_li, mb.group(1)) + mb.group(2)
             b_html = b_html[:mb.start()] + new_b_sec + b_html[mb.end():]
+        read_next_re = re.compile(
+            r'(<section[^>]*>\s*<div[^>]*>\s*<h2[^>]*>\s*Read next\s*</h2>\s*<div class=["\']cards["\']>\s*)(.*?)(\s*</div>)',
+            re.S | re.I,
+        )
+        card_re = re.compile(r'<article class=["\']card["\'][^>]*>.*?</article>', re.S | re.I)
+        rna = read_next_re.search(a_html)
+        rnb = read_next_re.search(b_html)
+        if rna and rnb:
+            a_cards = card_re.findall(rna.group(2))
+            b_cards = card_re.findall(rnb.group(2))
+            if (
+                a_cards
+                and sorted(a_cards) == sorted(b_cards)
+                and not card_re.sub('', rna.group(2)).strip()
+                and not card_re.sub('', rnb.group(2)).strip()
+            ):
+                card_entries = []
+                valid_cards = True
+                for item in b_cards:
+                    links = re.findall(r'href=["\']([^"\']+)["\']', item, re.I)
+                    if not links or any(not (l.startswith('/') and not l.startswith('//') and '..' not in l) for l in links):
+                        valid_cards = False
+                        break
+                    card_entries.append({'text': clean(re.sub(r'<[^>]+>', ' ', item)), 'links': links})
+                if valid_cards:
+                    extra_b.extend(card_entries)
+                    b_html = b_html[:rnb.start(2)] + ''.join(a_cards) + b_html[rnb.end(2):]
         a_sem, a_rel = _parse_stripping_related_cards(a_html, m_route, approved['baseUrl'], approved['manifest']['canonicalBase'])
         b_sem, b_rel = _parse_stripping_related_cards(b_html, m_route, live['baseUrl'], live['manifest']['canonicalBase'])
         b_rel.extend(extra_b)
@@ -1096,6 +1134,21 @@ def capture_local(manifest_path, run_id, out, dom_dir=None, build=False, root=No
     return snap
 
 
+def _cdn_retry_delays():
+    raw = os.environ.get('RENDERED_AUDIT_CDN_RETRY_DELAYS', '15,30,45').strip()
+    if not raw:
+        return []
+    out = []
+    for part in raw.split(','):
+        try:
+            val = float(part.strip())
+            if val >= 0:
+                out.append(val)
+        except ValueError:
+            continue
+    return out[:5]
+
+
 def record_pairs(handoff_path, base_url, out_dir, commit, deployment_evidence_path, ledger_path, root=None):
     """Capture live, compare, and record deployment across single-pair OR multi-pair (reviewPairs) handoffs in 1 command."""
     root = Path(root or Path(__file__).resolve().parents[2]).resolve()
@@ -1106,6 +1159,12 @@ def record_pairs(handoff_path, base_url, out_dir, commit, deployment_evidence_pa
     raw_pairs = h.get('reviewPairs') or [{'snapshot': h['snapshot'], 'review': h['review']}]
     total = 0
     results = []
+    target_base = base_url or h['canonicalBase']
+    can_cdn_retry = (
+        host.get('status') == 'live'
+        and urlsplit(target_base).scheme == 'https'
+        and urlsplit(target_base).hostname not in ('127.0.0.1', 'localhost')
+    )
     for idx, pair in enumerate(raw_pairs, 1):
         s_ref = pair['snapshot']
         r_ref = pair['review']
@@ -1116,9 +1175,32 @@ def record_pairs(handoff_path, base_url, out_dir, commit, deployment_evidence_pa
         live_out = out_base / f'live-snapshot-pair-{idx}.json'
         if live_out.exists() or live_out.with_suffix('').exists():
             live_out = out_base / f'live-snapshot-pair-{idx}-{int(dt.datetime.now().timestamp())}.json'
-        live_snap = capture(approved['manifest'], base_url or h['canonicalBase'], str(live_out), approved.get('domDir'))
+        live_snap = capture(approved['manifest'], target_base, str(live_out), approved.get('domDir'))
         valid_snapshot(live_snap)
-        n = record(live_snap, approved, rev, commit, host, ledger_path)
+        try:
+            n = record(live_snap, approved, rev, commit, host, ledger_path)
+        except ValueError as err:
+            if not (can_cdn_retry and str(err).startswith('Rendered content differs:')):
+                raise
+            n = None
+            last_err = err
+            for attempt, delay in enumerate(_cdn_retry_delays(), 1):
+                print(f'rendered-audit: CDN edge cache lag suspected after verified deploy ({err}); retrying with cache-bust in {delay}s (attempt {attempt})...', file=sys.stderr)
+                if delay > 0:
+                    time.sleep(delay)
+                retry_out = out_base / f'live-snapshot-pair-{idx}-retry-{attempt}-{int(time.time()*1000)}.json'
+                live_snap = capture(approved['manifest'], target_base, str(retry_out), approved.get('domDir'), cache_bust=True)
+                valid_snapshot(live_snap)
+                try:
+                    n = record(live_snap, approved, rev, commit, host, ledger_path)
+                    live_out = retry_out
+                    break
+                except ValueError as retry_err:
+                    if not str(retry_err).startswith('Rendered content differs:'):
+                        raise
+                    last_err = retry_err
+            if n is None:
+                raise last_err
         total += n
         results.append({
             'pairIndex': idx,

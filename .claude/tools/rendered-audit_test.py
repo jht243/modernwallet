@@ -473,6 +473,43 @@ class RelatedCardsLiveCompareTests(_UnconfiguredRootTestCase):
    with self.assertRaisesRegex(ValueError, 'Rendered content differs'):
     a.compare(approved, live_tested_claim, review)
 
+ def test_read_next_card_order_normalization_passes_live_compare_with_identical_multiset(self):
+  import tempfile
+  card_a = '<article class="card"> <h3><a class="card__link" href="/gear/best-car-seat-for-newborn/">Best Car Seat for Newborn Buyers</a></h3> <p>Pick an infant seat that fits the vehicle cabin.</p> </article>'
+  card_b = '<article class="card"> <h3><a class="card__link" href="/gear/best-stroller/">The Best Stroller for Your Daily Routine</a></h3> <p>Match your walking paths and trunk space.</p> </article>'
+  card_c = '<article class="card"> <h3><a class="card__link" href="/gear/best-travel-stroller/">The Best Travel Stroller for Family Trips</a></h3> <p>A compact folding buggy simplifies flights.</p> </article>'
+  wrap = '<section class="section section--band"> <div class="wrap"> <h2 class="section__lead">Read next</h2> <div class="cards"> {cards} </div> <p class="section__tail"><a href="/gear/">All baby gear reviews</a></p> </div> </section>'
+  with tempfile.TemporaryDirectory() as td:
+   approved_html = HTML.replace('</main>', '</main>' + wrap.format(cards=card_a + card_c + card_b))
+   live_html = HTML.replace('</main>', '</main>' + wrap.format(cards=card_a + card_b + card_c))
+   approved = self._build_snap(td, 'rn_approved', approved_html)
+   live = self._build_snap(td, 'rn_live', live_html)
+   self.assertNotEqual(approved['routes'][0]['fingerprint'], live['routes'][0]['fingerprint'])
+   review = {
+    'reviewer': 'independent-auditor',
+    'snapshotSha256': approved['snapshotSha256'],
+    'routes': [{
+     'path': '/guide',
+     'fingerprint': approved['routes'][0]['fingerprint'],
+     'verdict': 'PASS',
+     'checks': {k: {'status': 'PASS', 'evidence': 'Verified full-page audit evidence.'} for k in a.CHECKS},
+    }],
+   }
+   a.compare(approved, live, review)
+
+   # Different card copy or external link inside Read next must fail
+   diff_card = card_b.replace('trunk space.', 'changed copy.')
+   live_diff = self._build_snap(td, 'rn_diff', HTML.replace('</main>', '</main>' + wrap.format(cards=card_a + diff_card + card_c)))
+   with self.assertRaisesRegex(ValueError, 'Rendered content differs'):
+    a.compare(approved, live_diff, review)
+
+   ext_card_a = card_a.replace('href="/gear/best-car-seat-for-newborn/"', 'href="https://partner.example/seat"')
+   approved_ext = self._build_snap(td, 'rn_app_ext', HTML.replace('</main>', '</main>' + wrap.format(cards=ext_card_a + card_c + card_b)))
+   live_ext = self._build_snap(td, 'rn_live_ext', HTML.replace('</main>', '</main>' + wrap.format(cards=ext_card_a + card_b + card_c)))
+   rev_ext = dict(review, snapshotSha256=approved_ext['snapshotSha256'], routes=[dict(review['routes'][0], fingerprint=approved_ext['routes'][0]['fingerprint'])])
+   with self.assertRaisesRegex(ValueError, 'Rendered content differs'):
+    a.compare(approved_ext, live_ext, rev_ext)
+
  def test_detect_rendered_canonical_base_prefers_actual_layout_origin_and_ignores_unrelated_urls(self):
   import json, tempfile
   from pathlib import Path
@@ -521,6 +558,44 @@ class RelatedCardsLiveCompareTests(_UnconfiguredRootTestCase):
     with self.assertRaisesRegex(ValueError, 'Capture output is immutable'):
      a.capture_local(str(m_path), 'run-imm-1', str(out_snap), build=True, root=root)
     mock_run.assert_not_called()
+
+ def test_record_pairs_retries_with_cache_bust_on_cdn_lag_and_fails_closed(self):
+  import json, os, tempfile
+  from pathlib import Path
+  from unittest.mock import patch
+  with tempfile.TemporaryDirectory() as td:
+   root = Path(td)
+   approved = {'manifest': {'canonicalBase': 'https://example.com', 'routes': [{'path': '/guide'}]}, 'routes': [{'path': '/guide'}]}
+   (root / 'approved.json').write_text(json.dumps(approved))
+   (root / 'review.json').write_text(json.dumps({'routes': [{'path': '/guide', 'verdict': 'PASS'}]}))
+   (root / 'handoff.json').write_text(json.dumps({'canonicalBase': 'https://example.com', 'snapshot': {'path': 'approved.json'}, 'review': {'path': 'review.json'}}))
+   (root / 'host.json').write_text(json.dumps({'status': 'live', 'commit': 'a'*40, 'evidenceUrl': 'https://example.com/.well-known/d.json', 'verifiedAt': '2026-11-23T09:00:00Z'}))
+   cap_calls = []
+   def fake_capture(manifest, base, out, dom_dir=None, comparison_only=False, cache_bust=False):
+    cap_calls.append(cache_bust)
+    return {'manifest': manifest, 'baseUrl': base, 'routes': [{'path': '/guide'}]}
+   rec_calls = [0]
+   def fake_record(live, app, rev, commit, host, ledger):
+    rec_calls[0] += 1
+    if rec_calls[0] == 1:
+     raise ValueError("Rendered content differs: ['/guide']")
+    return 1
+   with patch.dict(os.environ, {'RENDERED_AUDIT_CDN_RETRY_DELAYS': '0,0'}), \
+        patch.object(a, 'capture', side_effect=fake_capture), \
+        patch.object(a, 'valid_snapshot'), \
+        patch.object(a, 'record', side_effect=fake_record):
+    res = a.record_pairs(str(root / 'handoff.json'), 'https://example.com', str(root / 'live'), 'a'*40, str(root / 'host.json'), str(root / 'ledger.jsonl'), root=root)
+   self.assertEqual(res['status'], 'PASS')
+   self.assertEqual(cap_calls, [False, True])
+   # Still fails closed if mismatch persists after all retries
+   cap_calls.clear()
+   with patch.dict(os.environ, {'RENDERED_AUDIT_CDN_RETRY_DELAYS': '0,0'}), \
+        patch.object(a, 'capture', side_effect=fake_capture), \
+        patch.object(a, 'valid_snapshot'), \
+        patch.object(a, 'record', side_effect=ValueError("Rendered content differs: ['/guide']")):
+    with self.assertRaisesRegex(ValueError, 'Rendered content differs'):
+     a.record_pairs(str(root / 'handoff.json'), 'https://example.com', str(root / 'live2'), 'a'*40, str(root / 'host.json'), str(root / 'ledger.jsonl'), root=root)
+   self.assertEqual(cap_calls, [False, True, True])
 
 
 if __name__=='__main__': unittest.main()

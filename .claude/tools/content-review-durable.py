@@ -538,7 +538,7 @@ def checkpoint(root,journal,context):
   merged={**existing.get('artifacts',{}),**paths}
   entries[journal.key]={'identity':journal.identity,'head':head,'artifacts':merged}
   correction=reference_correction(root,journal,[json.loads(line) for line in journal.path.read_bytes().splitlines() if line.strip()],context.get('referenceCorrection'))
-  if correction:entries[journal.key]['referenceCorrection']=correction['reference']
+  if correction and (journal.identity or {}).get('route') in correction.get('document',{}).get('cycles',{}):entries[journal.key]['referenceCorrection']=correction['reference']
  context['store'].mutate(retain,list(paths))
  revision,remote=context['store'].read()
  saved=remote.get('reviewJournals',{}).get(journal.key,{})

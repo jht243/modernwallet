@@ -1909,13 +1909,16 @@ def claim_check(page, fmt: str, a, passes: int = None, delete_from: int = None) 
         delete_from = total - 1 if total > 1 else total
     rep = {"passes": 0, "found": [], "applied": [], "deleted_final": 0, "unapplied": [], "remaining": [],
            "thinking": CLAIMCHECK_THINKING, "final_thinking": CLAIMCHECK_FINAL_THINKING, "extra_pass": False}
+    # Put the unchanging SOURCE block in `system` so Gemini cachedContents and Anthropic
+    # ephemeral prompt caching reuse it across Pass 1 -> Pass 2/3 (and cmd_fix re-checks) at 90% off.
+    checker_sys = f"{CLAIMCHECK_SYSTEM}\n\nSOURCE\n======\n{src}\n"
     n = -1
     while n + 1 < total:
         n += 1
         final = n >= delete_from
-        prompt = f"SOURCE\n======\n{src}\n\nUNITS\n=====\n{_units_block(page, fmt)}\n"
+        prompt = f"UNITS\n=====\n{_units_block(page, fmt)}\n"
         # the first full read gets the deeper reasoning; a later delete-only sweep is the cheap one
-        found = _checker_call(CLAIMCHECK_SYSTEM, prompt,
+        found = _checker_call(checker_sys, prompt,
                               CLAIMCHECK_FINAL_THINKING if (final and n > 0) else CLAIMCHECK_THINKING)
         if found is None:
             rep["error"] = "checker unavailable"; break

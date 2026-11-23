@@ -123,13 +123,68 @@ def main() -> int:
     now_utc = dt.datetime.now(dt.timezone.utc)
     ttl_seconds = max(0, args.cache_days) * 86400
     cache_dirty = False
-    cache_hits = 0
+    disk_hits = 0
+    sb_hits = 0
+    sb_writes: list[dict] = []
+
+    def _sb_cache_get(keys: list[str]) -> dict[str, list]:
+        if not keys or args.no_cache or ttl_seconds <= 0 or not hasattr(dfs, "_sb_req"):
+            return {}
+        try:
+            import urllib.parse
+            since = (now_utc - dt.timedelta(seconds=ttl_seconds)).isoformat().replace("+00:00", "Z")
+            q_in = ",".join(keys)
+            rows = dfs._sb_req(
+                "GET",
+                f"category_candidates_cache?select=cache_key,ideas,fetched_at"
+                f"&cache_key=in.({urllib.parse.quote(q_in, safe=',')})"
+                f"&fetched_at=gte.{urllib.parse.quote(since)}",
+            )
+            found: dict[str, list] = {}
+            for r in (rows or []):
+                ck = r.get("cache_key")
+                id_list = r.get("ideas")
+                if isinstance(ck, str) and isinstance(id_list, list):
+                    found[ck] = id_list
+            return found
+        except Exception:
+            return {}
+
+    def _sb_cache_put(rows: list[dict]) -> None:
+        if not rows or not hasattr(dfs, "_sb_req"):
+            return
+        try:
+            dfs._sb_req(
+                "POST",
+                "category_candidates_cache?on_conflict=cache_key",
+                rows,
+                prefer="resolution=merge-duplicates,return=minimal",
+            )
+        except Exception:
+            pass
 
     demand: list[dict] = []
     seen: set[str] = set()
-    if seeds and (sr.available() or dfs.available() or cache_data):
-        for seed in seeds:
-            ckey = hashlib.sha256(f"{seed.strip().lower()}|{args.limit}|{args.min_volume}".encode()).hexdigest()[:24]
+    seed_keys = [
+        (seed, hashlib.sha256(f"{seed.strip().lower()}|{args.limit}|{args.min_volume}".encode()).hexdigest()[:24])
+        for seed in seeds
+    ]
+    missing_from_disk: list[str] = []
+    if not args.no_cache and ttl_seconds > 0:
+        for _, ckey in seed_keys:
+            ent = cache_data.get(ckey) or {}
+            valid_disk = False
+            try:
+                cached_at = dt.datetime.fromisoformat(str(ent.get("cachedAt", "")).replace("Z", "+00:00"))
+                valid_disk = (now_utc - cached_at).total_seconds() < ttl_seconds and isinstance(ent.get("ideas"), list)
+            except Exception:
+                valid_disk = False
+            if not valid_disk:
+                missing_from_disk.append(ckey)
+    sb_cached = _sb_cache_get(missing_from_disk)
+
+    if seeds and (sr.available() or dfs.available() or cache_data or sb_cached):
+        for seed, ckey in seed_keys:
             ideas = None
             if not args.no_cache and ttl_seconds > 0 and ckey in cache_data:
                 ent = cache_data.get(ckey) or {}
@@ -137,16 +192,25 @@ def main() -> int:
                     cached_at = dt.datetime.fromisoformat(str(ent.get("cachedAt", "")).replace("Z", "+00:00"))
                     if (now_utc - cached_at).total_seconds() < ttl_seconds and isinstance(ent.get("ideas"), list):
                         ideas = ent["ideas"]
-                        cache_hits += 1
+                        disk_hits += 1
                 except Exception:
                     ideas = None
+            if ideas is None and ckey in sb_cached:
+                ideas = sb_cached[ckey]
+                sb_hits += 1
+                if ttl_seconds > 0:
+                    cache_data[ckey] = {"seed": seed, "cachedAt": now_utc.isoformat().replace("+00:00", "Z"), "ideas": ideas}
+                    cache_dirty = True
             if ideas is None:
+                # SEMRUSH first (USER RULE 2026-11-02); DataForSEO only when SEMRUSH fails.
+                fetched_source = "semrush"
                 try:
                     if not sr.available():
                         raise RuntimeError("SEMRUSH unavailable")
                     ideas = sr.keyword_suggestions(seed, limit=args.limit, min_volume=args.min_volume)
                 except Exception as exc:
                     print(f"! SEMRUSH phrase_fullsearch({seed!r}) failed: {exc} -> DataForSEO", file=sys.stderr)
+                    fetched_source = "dataforseo"
                     try:
                         if not dfs.available():
                             raise RuntimeError("DataForSEO unavailable")
@@ -155,8 +219,18 @@ def main() -> int:
                         print(f"! keyword_suggestions({seed!r}) failed: {exc2}", file=sys.stderr)
                         continue
                 if ttl_seconds > 0:
-                    cache_data[ckey] = {"seed": seed, "cachedAt": now_utc.isoformat().replace("+00:00", "Z"), "ideas": ideas}
+                    ts_iso = now_utc.isoformat().replace("+00:00", "Z")
+                    cache_data[ckey] = {"seed": seed, "cachedAt": ts_iso, "ideas": ideas}
                     cache_dirty = True
+                    sb_writes.append({
+                        "cache_key": ckey,
+                        "seed": seed.strip().lower(),
+                        "min_volume": int(args.min_volume),
+                        "row_limit": int(args.limit),
+                        "source": fetched_source,
+                        "ideas": ideas,
+                        "fetched_at": ts_iso,
+                    })
             for i in ideas:
                 q = (i.get("keyword") or "").lower()
                 if (not q or q in seen or not COMMERCIAL.search(q) or INFORMATIONAL.search(q) or is_covered(q)
@@ -164,11 +238,18 @@ def main() -> int:
                     continue
                 seen.add(q)
                 demand.append({"query": q, "volume": i.get("volume") or 0, "cpc": i.get("cpc"), "seed": seed})
+        if sb_writes:
+            _sb_cache_put(sb_writes)
         if cache_dirty:
             cache_path.parent.mkdir(parents=True, exist_ok=True)
             cache_path.write_text(json.dumps(cache_data, indent=2) + "\n")
-        if cache_hits:
-            print(f"category_candidates cache: {cache_hits}/{len(seeds)} seed(s) served from {args.cache_days}d disk cache", file=sys.stderr)
+        total_hits = disk_hits + sb_hits
+        if total_hits:
+            print(
+                f"category_candidates cache: {total_hits}/{len(seeds)} seed(s) served from {args.cache_days}d cache "
+                f"(supabase={sb_hits}, disk={disk_hits})",
+                file=sys.stderr,
+            )
     elif not seeds:
         print("! no expansionSeeds in the config: demand source skipped", file=sys.stderr)
 
