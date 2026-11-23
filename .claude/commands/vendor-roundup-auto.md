@@ -173,7 +173,7 @@ Repeat (max 3 times) while the JSON's `remaining` > 0. A failure here is not a b
 
 ### Phase 1c — New categories (fleet owner rule 2026-10-11: never limited to the pages we have)
 ```bash
-python3 scripts/placement/category_candidates.py --min-volume 30     # DATAFORSEO_B64 inline
+python3 scripts/placement/category_candidates.py --min-volume 30     # SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY, DATAFORSEO_B64 inline (SUPABASE_* enables 14d shared cache)
 ```
 It lists (a) vendors earlier runs cut as "fits a different category" and (b) buyer searches that contain
 the site's `expansionSeeds` and that no existing category's keywords cover, grouped, by volume. A
