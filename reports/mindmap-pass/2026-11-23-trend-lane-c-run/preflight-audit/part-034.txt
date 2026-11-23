@@ -1,0 +1,33 @@
+2df0dc633004798f118693a5fe0e42359c2872fdef",
+      "checkedAt": "2026-11-23T07:36:47.057207+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/trend-pass/2026-11-23.research.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/fd03e89bb0c66fb54110ebabc10b8b1846679c23e3dbd0f778120aab5f3b6973/2026-11-23.pull.json",
+      "sha256": "fd03e89bb0c66fb54110ebabc10b8b1846679c23e3dbd0f778120aab5f3b6973",
+      "checkedAt": "2026-11-23T07:36:47.057207+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/trend-pass/2026-11-23.pull.json"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "snapshot": {
+    "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/14b053b1c9b476329d3e5ad76c449f3620eab733e04feee4ecb67a503ce9038c/preview-snapshot.json",
+    "sha256": "14b053b1c9b476329d3e5ad76c449f3620eab733e04feee4ecb67a503ce9038c",
+    "originPath": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/audit/preview-snapshot.json"
+  },
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/handoff-audit.json",
+    "sha256": "3496b8dc08f87640ad364c55afba55ff9cd6ac3f71e288e87e48e3876e83dae2"
+  }
+}
+

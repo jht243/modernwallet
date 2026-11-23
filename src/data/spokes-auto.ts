@@ -172,7 +172,7 @@ export const AUTO_SPOKES: SpokeEntry[] = [
       "Paying off a low-rate car loan while carrying high-rate credit card debt. Pay the highest-rate balance first, where average card APRs far exceed auto rates.",
       "Skipping the prepayment penalty check. The CFPB notes some contracts charge a fee for early payoff, which can erase your savings.",
       "Assuming extra cash always lowers the principal. Tell your lender to apply extra money to principal, not toward your next scheduled payment.",
-      "Ignoring a precomputed-interest loan. With these, interest is set upfront, so early payoff may save less than a simple-interest loan.",
+      "Ignoring a precomputed-interest loan. With these, interest is set upfront, so early payoff may save less than a simple-interest loan, and the [Rule of 78 calculator](/rule-of-78-calculator/) shows the refund difference.",
     ],
     workedExample:
       "Say you owe $18,000 at 6.5% APR with 36 months left. Your scheduled payment is $551.68 a month. Add $200 extra and your first month puts $654.18 toward principal and just $97.50 toward interest. Keep it up and you pay the loan off in 26 months, about 2 years and 2 months. Total interest drops to $1,332. That saves you $529 in interest and 10 months of payments.",

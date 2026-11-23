@@ -1,0 +1,68 @@
+{
+  "jobId": "trend-lane-c-2026-11-23",
+  "reviewer": "chart-reviewer",
+  "round": 1,
+  "manifestSha256": "d0e221d36200bb51ff023dd073603185a801d8ede34563a6007367c662fe464a",
+  "manifestFileSha256": "35a072a0897d6f357e6b98395e588efd8dbe27670f93748a3ed5e28e5126fbb2",
+  "readinessSha256": "55c34fa256920b86345c3c13e7011e7be5c9a844074edf5d1343f6633f8b93df",
+  "verdict": "PASS",
+  "evidence": "Independent review, round 1, from disk sources first. (1) Preflight bundle delivered 32/32 parts, check=delivery-complete-sources-current. (2) Manifest evidenceFiles/readiness/inspection hashes all re-computed with sha256sum and match the files. (3) Statute: I fetched 15 U.S.C. 1615 myself from the official GPO copy (govinfo link/uscode/15/1615 -> USCODE-2024-title15-chap41-subchapI-partA-sec1615.htm; saved chart-review-evidence/govinfo-15usc1615.txt). Subsection (b) reads: for any precomputed consumer credit transaction of a term exceeding 61 months consummated after September 30, 1993, the creditor shall compute the refund by a method at least as favorable to the consumer as the actuarial method; (a) requires prompt refund of unearned interest on full prepayment (under $1 de minimis); (c) 5-day payoff statement, one free per year; (d)(1) actuarial definition. This matches BUILD's LII capture word for word. uscode.house.gov returned HTTP 404 from this runner too, so the LII-vs-house.gov question is settled by govinfo (GPO), not LII; BUILD's note that govinfo 404ed was a URL-variant error (the govinfo/link/uscode path works). CFPB capture (last reviewed Jan 30, 2024) supports 'precomputed is uncommon on auto loans, front-loads, early payoff costs more'. (4) Strongest counterexample to the central conclusion: federal ban covers only terms over 61 months, so a precomputed loan of 61 months or less may federally use the Rule of 78 (state law not asserted, source silence not proof of legality); manifest answer, outline and takeaway already carry this and must not say unconditionally illegal. (5) Duplicate collision: grep of src/ data/ public/ scripts/ for 'rule of 78', 'rule-of-78', 'sum of the digits' returns nothing; git log -S 'rule of 78' touches only a ledger commit unrelated to the topic; coverage_lookup output (875 pages/890 routes) lists no home; neighbours /auto-loan/early-payoff-calculator/ and extra-payment spokes only mention precomputed interest in one bullet and compute simple-interest schedules; src/lib has no Rule-of-78 engine; slug rule-of-78-calculator free; no ledger row. No collision. (6) Dropped rows: I confirmed every cited covering route exists in src/data (roth-401k-vs-traditional-401k, buying-vs-leasing-a-car, new-car-vs-used-car, best-online-will-makers, online-will-vs-lawyer, best-living-trust-services, taxable-vs-tax-deferred) and that auto-loan, retirement, portfolio are LIVE_IDS/calculator ids; the operator string site: is correctly dropped. (7) Demand and intent: keyword-volumes.json/keyword-expand.json confirm rule of 78 1,000, what is the rule of 78 210, calculator 170, loan 140, formula 90, legal 10 measured (DataForSEO, SEMRUSH 403 recorded); 'vs simple interest' 75, 'example' 150, 'meaning' 150 are labeled estimates and not presented as measured; off-topic rejects (aircraft, sales, ATO) correct. SERP read shows winnable, AI Overview cites goldpoints/investopedia/youtube, 0/6 PAA on-topic (honest intent flag). The autocomplete question sweep (54 rows) is dominated by what-is, how-does-it-work, how-to-calculate and is-it-legal, which supports a method+definition+legality reader question; the tag's 'ac 10/10' is keyword corroboration rather than the question sweep and should be restated (finding CR-4). (8) Feasibility numbers re-derived from feasibility-rule78.py: $28.65 / $26.26 / $3.30 / $88.13 / $227.82 reproduce; note the $227.82 case is a 72-month term, i.e. inside the federal ban (finding CR-1). (9) Testing: _experience.md section G excludes financial services, so TESTED OFF with calculated + reported labels is correct; visible attribution plan ('In our internal modeling, we compared...') matches _decision-evidence. (10) Link plan: three inbound sources inspected (spokes-auto early-payoff, calculators.ts loan-payment, spokes-personal-loan extra-payment FAQ 'Do personal loans have prepayment penalties?' exists), outbound two; wiring targets exist (computeLoanPayment export, LIVE_IDS, CalculatorIsland.tsx). (11) Phase 4c guardrails: one create row (cap 25), no metadata/consolidation/redirect rows, additive, tool row routed to Phase 3c, YMYL: numbers from the engine, primary sources, no personalized advice, disclaimer at bottom. Verdict PASS with non-blocking substantive findings carried into writing as reviewer guardrails; no liabilityBlock, no duplicate-collision, no professionalReviewRequired.",
+  "findings": [
+    {
+      "id": "CR-1",
+      "severity": "substantive",
+      "status": "open",
+      "summary": "The takeaway ('on long high-rate loans it can exceed $200') and the $30,000 / 9% / 72-month feasibility case ($227.82) sit on a term exceeding 61 months, where 15 U.S.C. 1615(b) requires a refund at least as favorable as actuarial for precomputed consumer credit consummated after 9/30/1993. Presenting it as a typical lender outcome contradicts the page's own legality section.",
+      "fix": "In writing, label any term over 61 months as a formula illustration (a federally restricted term for precomputed consumer loans), prefer a 60-month example for the 'larger gap' case ($25,000 / 8% / 60 / 12 = $88.13, engine-computed), and make the calculator show a visible notice whenever term > 61 months. Keep the figures engine-computed, never hand-typed."
+    },
+    {
+      "id": "CR-2",
+      "severity": "substantive",
+      "status": "open",
+      "summary": "The legal claim must carry its full scope in the first answer, FAQ and takeaway: 15 U.S.C. 1615(b) applies to precomputed consumer credit transactions (not business loans) with a term exceeding 61 months consummated after September 30, 1993; it does not say the Rule of 78 is legal at 61 months or less (state law and contract can differ; source silence is not proof of legality). 1615(a) (prompt refund of unearned interest on full prepayment, under $1 exempt) applies regardless of term.",
+      "fix": "Writer closed fact list uses the exact subsection (b) wording above; never write 'illegal' or 'banned' without the over-61-month and precomputed-consumer conditions; do not assert any state-law position; tell readers to check the contract and request a payoff statement (1615(c): within 5 days, one free per year). Phase 4 tests this consequential claim against the 61-month counterexample."
+    },
+    {
+      "id": "CR-3",
+      "severity": "substantive",
+      "status": "open",
+      "summary": "Primary-source citation: BUILD saved only the LII mirror and recorded govinfo and house.gov as 404. The official GPO copy loads (verified by reviewer, saved to chart-review-evidence/govinfo-15usc1615.txt, text identical for (a)-(d)); uscode.house.gov 404s from the runner. The site rule is primary sources only.",
+      "fix": "Cite the govinfo URL https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap41-subchapI-partA-sec1615.htm as the statute source in sourcesCited and the packet, with LII at most as a secondary convenience link; record the reviewer capture as a source artifact in the evidence packet. Do not log this as HELD or unreachable."
+    },
+    {
+      "id": "CR-4",
+      "severity": "substantive",
+      "status": "open",
+      "summary": "Reader-question evidence tag says 'ac 10/10 corroborate', which is the keyword-level corroboration, not the question-prefix sweep. The saved sweep (54 question rows) is dominated by what-is-the-rule-of-78, how-does-it-work, how-to-calculate and is-it-legal; PAA is 0/6 on-topic, so the question is autocomplete-driven and the largest phrase variant ('what is the rule of 78', 210/mo) is definitional.",
+      "fix": "Restate the tag in the packet/Phase 3 prompt as [PAA 0/6 on-topic; ac question sweep: what-is/how-does-it-work/how-to-calculate/is-legal dominant] without changing the approved question string used for case retrieval (or rerun cases-batch if it changes). Open section 1 with a one-sentence definition of the Rule of 78 followed by the answer block so the 210/mo 'what is' intent is served, then the calculator; FAQ built from the sweep: what is it, formula, example, is it legal/still used, car loans, payoff statement, vs simple interest."
+    },
+    {
+      "id": "CR-5",
+      "severity": "substantive",
+      "status": "open",
+      "summary": "Intake accounting covers the 10 top queries only. The pull JSON coverage_queries has 15 rows; five (plan to buy a car, roth 401k vs standard 401k, roth and traditional 401k, tax deferred vs taxable, where can i get a free will) have no explicit disposition in readiness.md or exclusions.",
+      "fix": "Record in the run summary/ledger digest as DROPPED-covered: plan to buy a car -> compare/buying-vs-leasing-a-car and compare/new-car-vs-used-car; roth 401k vs standard 401k and roth and traditional 401k -> compare/roth-401k-vs-traditional-401k; tax deferred vs taxable -> /taxable-vs-tax-deferred/; where can i get a free will -> roundup/best-online-will-makers and compare/online-will-vs-lawyer (reviewer confirmed these routes exist in src/data). Not ledgered as blocking rows."
+    },
+    {
+      "id": "CR-6",
+      "severity": "substantive",
+      "status": "open",
+      "summary": "Calculator and copy limits: model assumes level-payment, whole-month, fixed-rate precomputed loan with no fees or rebate-on-default, and the refund at payment k is computed from remaining finance charge; real contracts add fees and payoff-date conventions. Planned title 'Rule of 78 Calculator: Payoff Refund vs Actuarial' is a colon-spliced two-clause form against the headline rule (50 chars, length ok).",
+      "fix": "State assumptions and the method note beside the result with visible 'In our internal modeling, we compared ...' attribution and no tested/tested-and-reviewed wording; engine unit tests must cover k=n (difference 0), k=0 or invalid input, APR=0, term 1, and a golden case ($15,000/7%/48/12 -> Rule 78 earned $971.99, actuarial $943.34, difference $28.65); Phase 4 replays the engine. Prefer a non-spliced SEO title of 50-60 chars such as 'Rule of 78 Calculator for Loan Payoff Refunds' (45) extended to 50-60, keeping the primary keyword first; disclaimer at the page bottom only; no 'honest/actually' wording."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "requestCoverage": [
+    {
+      "requirementId": "REQ-1",
+      "status": "PASS",
+      "evidence": "The plan builds the one uncovered query as an actual interactive calculator (four reader inputs: amount, APR, term, payoff payment number) on a new tested src/lib/rule-of-78.ts engine, routed through Phase 3c because it needs new engine code; static opening answer, worked example and month-by-month table keep the answer readable without interaction. Example selection is sound (engine-computed $15,000/7%/48/12 = $28.65). Statute claims are limited to 15 U.S.C. 1615 and I verified subsections (a)-(d) against the official GPO text; CR-1/CR-2/CR-3 carry the scope conditions into WRITE and AUDIT."
+    },
+    {
+      "requirementId": "REQ-2",
+      "status": "PASS",
+      "evidence": "The exclusions list accounts for all nine other top-10 queries with their existing routes, which I confirmed exist; the chart has one create row, zero metadata, consolidation or redirect rows, is additive, and uses 1 of 25 cap slots. Five additional coverage_queries from the pull JSON lack explicit dispositions; CR-5 records them as covered with routes."
+    }
+  ],
+  "atReviewLimit": true
+}

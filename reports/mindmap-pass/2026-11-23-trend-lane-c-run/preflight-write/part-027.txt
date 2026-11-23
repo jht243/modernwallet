@@ -1,0 +1,132 @@
+e; genuine required customer/professional holds and platform protections remain. Competitor publication recovery begins with `competitor-handoff.py publication-plan --out NEW_INTERNAL_DIRECTORY/plan.json`, which selects the actual last per-route journal records and projects existing decisions without adding reviews. A remaining original content round is distinct from an exhausted budget. Native clients retain their scoped release rules.
+<!-- /credential-free-deployment-proof-20261110 -->
+
+For new scheduled editorial runs, use this repository’s checked-in land-run.sh mark and land commands from the start. Continue to build and compare the exact approved content live. An explicit production denial remains pending at its original boundary; never try a different release path after a denial.
+
+[Source: reports/mindmap-pass/2026-11-23-trend-lane-c-run/preflight-write/task.json]
+{
+  "version": 1,
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "trend-lane-c-2026-11-23",
+  "producer": "mindmap-build",
+  "routes": [
+    "/rule-of-78-calculator/",
+    "/auto-loan/early-payoff-calculator/",
+    "/loan-payment-calculator/",
+    "/personal-loan/extra-payment-calculator/"
+  ],
+  "nextAction": "Execute approved Mindmap write actions, lint, and capture local rendered preview.",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/35a072a0897d6f357e6b98395e588efd8dbe27670f93748a3ed5e28e5126fbb2/approval-manifest.json",
+      "sha256": "35a072a0897d6f357e6b98395e588efd8dbe27670f93748a3ed5e28e5126fbb2",
+      "originPath": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/1b990a7142945fd53cbd5357887a097ab8694d41361e565930d9f2aeb0ea9f8e/2026-11-23-trend-lane-c.md",
+      "sha256": "1b990a7142945fd53cbd5357887a097ab8694d41361e565930d9f2aeb0ea9f8e",
+      "originPath": "reports/mindmap-pass/2026-11-23-trend-lane-c.md"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/55c34fa256920b86345c3c13e7011e7be5c9a844074edf5d1343f6633f8b93df/readiness.md",
+      "sha256": "55c34fa256920b86345c3c13e7011e7be5c9a844074edf5d1343f6633f8b93df",
+      "checkedAt": "2026-11-23T07:19:20.279462+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/823e871ac2b92dd0bac0e617b2ff7bbe02b409bd5551ed53d2002176b462cea6/chart-review.json",
+      "sha256": "823e871ac2b92dd0bac0e617b2ff7bbe02b409bd5551ed53d2002176b462cea6",
+      "checkedAt": "2026-11-23T07:19:20.279462+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/03868dd39f84629e8e28ed82f9eda634bc66f007fa4a93ffd1beb0b6286a9e7c/brief.txt",
+      "sha256": "03868dd39f84629e8e28ed82f9eda634bc66f007fa4a93ffd1beb0b6286a9e7c",
+      "checkedAt": "2026-11-23T07:19:20.279462+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/brief.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/7fbaf40577536a986cc5e59233ec85bd94e355e35a8af8f8175a80bcba613259/keyword-volumes.json",
+      "sha256": "7fbaf40577536a986cc5e59233ec85bd94e355e35a8af8f8175a80bcba613259",
+      "checkedAt": "2026-11-23T07:19:20.279462+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/keyword-volumes.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/a84d57a733b143dbfef89cc814b73a9903c707f1dc7beab9145cd94a696c0293/keyword-expand.json",
+      "sha256": "a84d57a733b143dbfef89cc814b73a9903c707f1dc7beab9145cd94a696c0293",
+      "checkedAt": "2026-11-23T07:19:20.279462+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/keyword-expand.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/39202316fb60af07903d9d6910773e09721e92b9928b9d39e45ef79068a17dd9/serp-rule-of-78-calculator.txt",
+      "sha256": "39202316fb60af07903d9d6910773e09721e92b9928b9d39e45ef79068a17dd9",
+      "checkedAt": "2026-11-23T07:19:20.279462+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/serp-rule-of-78-calculator.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/d8d76679674742cf31a865e38d940b89056986986bce4f56335760f78def6e28/autocomplete-rule-of-78.csv",
+      "sha256": "d8d76679674742cf31a865e38d940b89056986986bce4f56335760f78def6e28",
+      "checkedAt": "2026-11-23T07:19:20.279462+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/autocomplete-rule-of-78.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/c755493197d4fbc0b44fa9b1f966a1ef91db92ec3140fb67c512eb101ffd783a/coverage-lookup.txt",
+      "sha256": "c755493197d4fbc0b44fa9b1f966a1ef91db92ec3140fb67c512eb101ffd783a",
+      "checkedAt": "2026-11-23T07:19:20.279462+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/542f193d0ccb14b301c0841e63019eff6ea1007819632e695bdb53215334f8a3/15usc1615-lii.txt",
+      "sha256": "542f193d0ccb14b301c0841e63019eff6ea1007819632e695bdb53215334f8a3",
+      "checkedAt": "2026-11-23T07:19:20.279462+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/sources/15usc1615-lii.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/d1c1ab81feb09a8aaf979ee1ddc91dfbac1d0eb16cc307d5176050b48b86e9e2/cfpb-precomputed-vs-simple.txt",
+      "sha256": "d1c1ab81feb09a8aaf979ee1ddc91dfbac1d0eb16cc307d5176050b48b86e9e2",
+      "checkedAt": "2026-11-23T07:19:20.279462+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/sources/cfpb-precomputed-vs-simple.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/69ea5323455153cdbc3b202ade9e5964cbead104734fda95e34b0f4775cc3a81/feasibility-rule78.py",
+      "sha256": "69ea5323455153cdbc3b202ade9e5964cbead104734fda95e34b0f4775cc3a81",
+      "checkedAt": "2026-11-23T07:19:20.279462+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/feasibility-rule78.py"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/3c1f629b286d99580e82172bd197dd5728d4175f8f6d0a5fe8fe962f8a6d3e8a/feasibility-rule78.json",
+      "sha256": "3c1f629b286d99580e82172bd197dd5728d4175f8f6d0a5fe8fe962f8a6d3e8a",
+      "checkedAt": "2026-11-23T07:19:20.279462+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/feasibility-rule78.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/95f9ec4ed5dc9e5d271dd02df0dc633004798f118693a5fe0e42359c2872fdef/2026-11-23.research.md",
+      "sha256": "95f9ec4ed5dc9e5d271dd02df0dc633004798f118693a5fe0e42359c2872fdef",
+      "checkedAt": "2026-11-23T07:19:20.279462+00:00",
+      "refres

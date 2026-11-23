@@ -1,0 +1,12 @@
+{"cases":[
+ {"id":"golden","amount":15000,"aprPct":7,"termMonths":48,"payoffAfter":12},
+ {"id":"golden-month-24","amount":15000,"aprPct":7,"termMonths":48,"payoffAfter":24},
+ {"id":"golden-month-42","amount":15000,"aprPct":7,"termMonths":48,"payoffAfter":42},
+ {"id":"golden-maturity","amount":15000,"aprPct":7,"termMonths":48,"payoffAfter":48},
+ {"id":"larger-gap-60","amount":25000,"aprPct":8,"termMonths":60,"payoffAfter":12},
+ {"id":"short-low-rate","amount":5000,"aprPct":6,"termMonths":24,"payoffAfter":12},
+ {"id":"low-rate-48","amount":15000,"aprPct":3,"termMonths":48,"payoffAfter":12},
+ {"id":"zero-apr","amount":12000,"aprPct":0,"termMonths":24,"payoffAfter":6},
+ {"id":"over-61-illustration","amount":30000,"aprPct":9,"termMonths":72,"payoffAfter":24}
+],
+"note":"Scenario inputs are illustrative loans (not market quotes). Each case is run through the shipped engine src/lib/rule-of-78.ts (bundled with esbuild); no figure is typed by hand."}

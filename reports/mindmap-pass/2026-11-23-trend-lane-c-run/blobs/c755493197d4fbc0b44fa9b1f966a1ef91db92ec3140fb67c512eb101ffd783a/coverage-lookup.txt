@@ -1,0 +1,16 @@
+coverage_lookup: 1 candidate(s) vs 875 repo pages / 890 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1231 past-chart lines
+
+### /rule-of-78-calculator  — row - · create new content
+keyword: rule of 78 calculator; rule of 78; is the rule of 78 legal
+reader question (new page intent): How does the Rule of 78 split loan interest and what do I lose paying early?
+lookup terms: rule v78 legal   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-11-tool-usage.md [table] | 8 | Lens 2 (adjacent to retirement persona — the next decision after "what is my income"). Cluster "Social Security break-even": `social security break even calculator` 8,100/mo KD 11; `social security break even calcu
+- 2026-10-25.md [table] | 5 | **Lens 1 (direct intent — brief item 4, renting out as owner/landlord).** `tenant screening checklist` 250/KD 5 ($2.00 CPC), `first time landlord checklist` 200/KD 1, `landlord checklist` 150/KD 0, `rental property
+Commits naming the topic: none
+Same run overlap: none
+

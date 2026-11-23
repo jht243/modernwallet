@@ -1,0 +1,4 @@
+
+
+For new scheduled editorial runs, use this repository’s checked-in land-run.sh mark and land commands from the start. Continue to build and compare the exact approved content live. An explicit production denial remains pending at its original boundary; never try a different release path after a denial.
+

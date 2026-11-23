@@ -1,0 +1,57 @@
+[
+ {
+  "P": 15000,
+  "apr": 7,
+  "n": 48,
+  "k": 12,
+  "payment": 359.19,
+  "total_interest": 2241.3,
+  "rule78_earned": 971.99,
+  "actuarial_earned": 943.34,
+  "extra_interest_charged_by_rule78": 28.65
+ },
+ {
+  "P": 15000,
+  "apr": 7,
+  "n": 48,
+  "k": 24,
+  "payment": 359.19,
+  "total_interest": 2241.3,
+  "rule78_earned": 1669.54,
+  "actuarial_earned": 1643.27,
+  "extra_interest_charged_by_rule78": 26.26
+ },
+ {
+  "P": 15000,
+  "apr": 7,
+  "n": 48,
+  "k": 42,
+  "payment": 359.19,
+  "total_interest": 2241.3,
+  "rule78_earned": 2201.27,
+  "actuarial_earned": 2197.97,
+  "extra_interest_charged_by_rule78": 3.3
+ },
+ {
+  "P": 25000,
+  "apr": 8,
+  "n": 60,
+  "k": 12,
+  "payment": 506.91,
+  "total_interest": 5414.59,
+  "rule78_earned": 1935.05,
+  "actuarial_earned": 1846.92,
+  "extra_interest_charged_by_rule78": 88.13
+ },
+ {
+  "P": 30000,
+  "apr": 9,
+  "n": 72,
+  "k": 24,
+  "payment": 540.77,
+  "total_interest": 8935.16,
+  "rule78_earned": 4936.78,
+  "actuarial_earned": 4708.96,
+  "extra_interest_charged_by_rule78": 227.82
+ }
+]

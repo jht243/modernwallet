@@ -1,0 +1,271 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window": {
+    "start": "2026-11-16",
+    "end": "2026-11-23",
+    "days": 7
+  },
+  "top_queries": [
+    {
+      "query": "site:themodernwallet.com",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "rule of 78 calculator",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 64.33
+    },
+    {
+      "query": "20000 for 72 months",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "query": "401k roth traditional",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 93
+    },
+    {
+      "query": "am i on track to retire",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 96
+    },
+    {
+      "query": "best financial way to buy a car",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "best way to buy a car financially",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "cheap wills",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 96
+    },
+    {
+      "query": "investment portfolio calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "living trust services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    }
+  ],
+  "coverage_queries": [
+    {
+      "query": "site:themodernwallet.com",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "rule of 78 calculator",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 64.33
+    },
+    {
+      "query": "20000 for 72 months",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "query": "401k roth traditional",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 93
+    },
+    {
+      "query": "am i on track to retire",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 96
+    },
+    {
+      "query": "best financial way to buy a car",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 74
+    },
+    {
+      "query": "best way to buy a car financially",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 84
+    },
+    {
+      "query": "cheap wills",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 96
+    },
+    {
+      "query": "investment portfolio calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "living trust services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "plan to buy a car",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92
+    },
+    {
+      "query": "roth 401k vs standard 401k",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 94
+    },
+    {
+      "query": "roth and traditional 401k",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
+    },
+    {
+      "query": "tax deferred vs taxable",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 72
+    },
+    {
+      "query": "where can i get a free will",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    }
+  ],
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/",
+      "clicks": 1,
+      "impressions": 19,
+      "ctr": 0.0526,
+      "position": 1.26
+    },
+    {
+      "page": "https://www.themodernwallet.com/calculators/",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 19.67
+    },
+    {
+      "page": "https://www.themodernwallet.com/about/",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 2.31
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 7.17
+    },
+    {
+      "page": "https://www.themodernwallet.com/methodology/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 3.75
+    },
+    {
+      "page": "https://www.themodernwallet.com/portfolio/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 10.3
+    },
+    {
+      "page": "https://www.themodernwallet.com/retirement/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 14.3
+    },
+    {
+      "page": "https://www.themodernwallet.com/budget/",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 7.56
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/invoice-factoring-vs-merchant-cash-advance/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 6.62
+    },
+    {
+      "page": "https://www.themodernwallet.com/investing/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 6
+    }
+  ],
+  "top10_pages_total_clicks": 1,
+  "top10_queries_total_clicks": 0,
+  "baseline_window": {
+    "start": "2026-11-08",
+    "end": "2026-11-15",
+    "days": 7,
+    "comparison": "prior_window_equal_span"
+  },
+  "total_queries_in_window": 15,
+  "rising_queries": [],
+  "spillover_queries": [],
+  "modifier_patterns": []
+}

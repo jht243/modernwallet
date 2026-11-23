@@ -1,0 +1,32 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "mindmap-build",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/rule-of-78-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/auto-loan/early-payoff-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/loan-payment-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/personal-loan/extra-payment-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "trend-lane-c-2026-11-23"
+}

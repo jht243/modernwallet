@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "jobId": "trend-lane-c-2026-11-23",
+  "subBatchingRecommended": false,
+  "batchCount": 1,
+  "totalNewPages": 1,
+  "totalRoutes": 4,
+  "disjointPartition": true,
+  "batches": [
+    {
+      "batchIndex": 1,
+      "label": "batch-1",
+      "actionIds": [
+        "A1"
+      ],
+      "newPageRoutes": [
+        "/rule-of-78-calculator/"
+      ],
+      "existingRoutes": [
+        "/auto-loan/early-payoff-calculator/",
+        "/loan-payment-calculator/",
+        "/personal-loan/extra-payment-calculator/"
+      ],
+      "routes": [
+        "/rule-of-78-calculator/",
+        "/auto-loan/early-payoff-calculator/",
+        "/loan-payment-calculator/",
+        "/personal-loan/extra-payment-calculator/"
+      ],
+      "routeFlags": "--route /rule-of-78-calculator/ --route /auto-loan/early-payoff-calculator/ --route /loan-payment-calculator/ --route /personal-loan/extra-payment-calculator/"
+    }
+  ]
+}

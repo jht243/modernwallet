@@ -1,0 +1,26 @@
+hWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/trend-pass/2026-11-23.research.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/blobs/fd03e89bb0c66fb54110ebabc10b8b1846679c23e3dbd0f778120aab5f3b6973/2026-11-23.pull.json",
+      "sha256": "fd03e89bb0c66fb54110ebabc10b8b1846679c23e3dbd0f778120aab5f3b6973",
+      "checkedAt": "2026-11-23T07:19:20.279462+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/trend-pass/2026-11-23.pull.json"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/handoff-write.json",
+    "sha256": "5a7e1e2234d416d159303280a53c1ced08f1e3905ef35b04775575e0dfb25d05"
+  }
+}
+

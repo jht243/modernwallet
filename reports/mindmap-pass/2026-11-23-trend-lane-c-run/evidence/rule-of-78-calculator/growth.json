@@ -1,0 +1,22 @@
+{
+ "originRoutine": "trend-pass-auto Lane C",
+ "route": "/rule-of-78-calculator/",
+ "canonicalUrl": "https://www.themodernwallet.com/rule-of-78-calculator/",
+ "queryFamily": "rule of 78 calculator",
+ "hypothesis": "A dedicated calculator wins impressions for the rule-of-78 query family (rule of 78 1,000/mo; what is the rule of 78 210; rule of 78 calculator 170).",
+ "primaryMetric": "GSC clicks (28/56-day windows) + tracked tool uses",
+ "baseline": {
+  "status": "not-yet-published",
+  "priorSpecification": "new route; 3 GSC impressions at position 64.33 for the exact query, 7-day window to 2026-11-23, property themodernwallet.com",
+  "reason": "Route did not exist before this run."
+ },
+ "comparator": "age-matched new calculators from tool-usage and trend-lane-c runs 2026-11-04 and 2026-11-14",
+ "changeScope": "new route",
+ "sourceRefreshTrigger": "change to 15 U.S.C. 1615 or the CFPB precomputed-interest guidance",
+ "outcomeStatus": "pending",
+ "deployment": {
+  "status": "not-deployed"
+ },
+ "growthFile": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/evidence/rule-of-78-calculator/growth.json",
+ "evidenceFile": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/evidence/rule-of-78-calculator/evidence.json"
+}

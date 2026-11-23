@@ -1,0 +1,42 @@
+# Writer pre-audit findings (WRITE stage self-check against the closed fact list and reviewer guardrails CR-1..CR-6) - /rule-of-78-calculator/
+# Not an independent Phase 4 review. Prose fixes for `content_gen.py fix`.
+
+FINDING 1 [faqs[1].answer] inaccurate formula statement
+QUOTE: "The formula divides the digits of the remaining months by the sum of all digits in the loan term."
+DEFECT: Misdescribes the method. The fact list says month j of an n-month loan is credited (n - j + 1) divided by S of the finance charge, where S = n(n + 1) / 2. There are no digits of the remaining months; the numerator is the number of months counted from month j to the last month.
+REPLACEMENT: "The formula credits each month with a share of the finance charge equal to the number of months from that month to the end of the loan, divided by the sum of all the month numbers in the term."
+
+FINDING 2 [introText paragraph 1] consequential claim missing full statutory scope (CR-2)
+QUOTE: "Federal law under [15 U.S.C. 1615](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap41-subchapI-partA-sec1615.htm) requires a refund at least as favorable as the actuarial method on precomputed consumer credit transactions longer than 61 months."
+DEFECT: The first answer omits that subsection (b) covers transactions consummated after September 30, 1993, and it does not say the rule is not a blanket ban. The fact list requires the full scope in the first answer.
+REPLACEMENT: "Federal law under [15 U.S.C. 1615](https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap41-subchapI-partA-sec1615.htm) requires a refund at least as favorable as the actuarial method only for precomputed consumer credit transactions longer than 61 months that were made after September 30, 1993."
+
+FINDING 3 [sections "Our Takeaway", sentence 2] takeaway omits applicability and the federal scope
+QUOTE: "That cost difference ranges from a few dollars on small, short-term loans ($1.64 on a 24-month loan at 6%) to dozens of dollars on larger balances ($28.65 on our 48-month baseline and $88.13 on a 60-month loan at 8%), eventually tapering to $0.00 at the end of the term."
+DEFECT: The takeaway gives the cost range but not that it applies only to precomputed loans, and it carries none of the federal scope or the condition that would change the answer. The fact list requires the takeaway to say it applies only to precomputed loans, that a simple-interest or actuarial contract changes it, and that 15 U.S.C. 1615(b) requires an actuarial-or-better refund only for precomputed consumer loans over 61 months made after September 30, 1993.
+REPLACEMENT: "That cost difference ranges from a few dollars on small, short-term loans ($1.64 on a 24-month loan at 6%) to dozens of dollars on larger balances ($28.65 on our 48-month baseline and $88.13 on a 60-month loan at 8%), and it tapers to $0.00 at the end of the term. It applies only to precomputed loans, and a simple-interest or actuarial contract changes the answer. Federal law under 15 U.S.C. 1615(b) requires an actuarial-or-better refund only for precomputed consumer loans longer than 61 months made after September 30, 1993, so the contract and state law decide shorter ones."
+
+FINDING 4 [sections "Who This Is Not For", paragraph 2] unsupported claim
+QUOTE: "Federal protections under 15 U.S.C. 1615 apply specifically to consumer credit transactions, while commercial loans follow separate statutory rules."
+DEFECT: "Separate statutory rules" for commercial loans is not in the fact list. The fact list says subsection (b) is about consumer credit and that business loans follow rules this page does not cover.
+REPLACEMENT: "Subsection (b) of 15 U.S.C. 1615 covers precomputed consumer credit transactions, and business loans follow rules this page does not cover."
+
+FINDING 5 [sections "Who This Is Not For", paragraph 3] wrong boundary and state-law position
+QUOTE: "State statutes and specific contract clauses govern whether an early payoff calculation is permissible for terms under 61 months."
+DEFECT: The boundary is "61 months or less", not "under 61 months", and the sentence takes a state-law position the page must not take. The fact list says subsection (b) does not address terms of 61 months or less, so the contract and state law decide, and this page takes no position on state law.
+REPLACEMENT: "For a term of 61 months or less, subsection (b) does not address the method, so the contract and state law decide, and this page takes no position on state law."
+
+FINDING 6 [sections "Who This Is Not For", paragraph 3, last sentence] unlinked directive with no resolution
+QUOTE: "Those facing contractual disputes or seeking binding payoff figures should obtain an official statement from their lender."
+DEFECT: Tells the reader to get a statement without saying how or what it shows. The fact list gives the 1615(c) route: a written request gets a written statement within 5 days, one free a year, showing the payoff amount and any required refund.
+REPLACEMENT: "A written payoff statement from the lender shows the refund it will actually give, and 15 U.S.C. 1615(c) entitles you to one free statement each year."
+
+FINDING 7 [sections "What Would Change Our Answer", paragraph 1, last sentence] unsupported claim
+QUOTE: "In that case, early payoff yields the full interest savings of standard amortization."
+DEFECT: "Full interest savings of standard amortization" is not in the fact list and overstates what the sources say. The fact list says simple interest charges interest on the actual outstanding balance.
+REPLACEMENT: "In that case, interest is charged on the actual outstanding balance, so the Rule of 78 split does not apply."
+
+FINDING 8 [introText paragraph 2, last sentence] clarity
+QUOTE: "You can test your own figures in the calculator below or examine the monthly breakdown to inspect how the interest allocations diverge over time."
+DEFECT: Wordy and vague ("examine ... to inspect ... diverge over time"). The fact list says readers can check the finding by entering their own loan in the calculator or reading the month-by-month table.
+REPLACEMENT: "Enter your own loan in the calculator below, or read the month-by-month table further down, to check these figures."

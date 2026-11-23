@@ -78,6 +78,7 @@ import TrumpVs529Calculator from "./TrumpVs529Calculator";
 import MortgageRecastCalculator from "./MortgageRecastCalculator";
 import BiweeklyMortgageCalculator from "./BiweeklyMortgageCalculator";
 import PayoffVsInvestCalculator from "./PayoffVsInvestCalculator";
+import Rule78Calculator from "./Rule78Calculator";
 import DebtToIncomeCalculator from "./DebtToIncomeCalculator";
 import SocialSecurityTaxableCalculator from "./SocialSecurityTaxableCalculator";
 import CharitableDeductionCalculator from "./CharitableDeductionCalculator";
@@ -192,6 +193,8 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "mortgage-recast-calculator": MortgageRecastCalculator,
   "biweekly-mortgage-calculator": BiweeklyMortgageCalculator,
   "pay-off-mortgage-or-invest-calculator": PayoffVsInvestCalculator,
+  // trend-lane-c pass (2026-11-23): Rule of 78 interest allocation and early-payoff refund vs the actuarial method.
+  "rule-of-78-calculator": Rule78Calculator,
   "debt-to-income-ratio-calculator": DebtToIncomeCalculator,
   "social-security-taxable-benefits-calculator": SocialSecurityTaxableCalculator,
   "charitable-donation-tax-deduction-calculator": CharitableDeductionCalculator,

@@ -1,0 +1,356 @@
+{
+ "engine": "src/lib/rule-of-78.ts",
+ "cases": [
+  {
+   "id": "golden",
+   "inputs": {
+    "amount": 15000,
+    "aprPct": 7,
+    "termMonths": 48,
+    "payoffAfter": 12
+   },
+   "payment": 359.19,
+   "financeCharge": 2241.3,
+   "digitSum": 1176,
+   "remainingPayments": 36,
+   "rule78Earned": 971.99,
+   "rule78Refund": 1269.31,
+   "actuarialEarned": 943.34,
+   "actuarialRefund": 1297.96,
+   "difference": 28.65,
+   "payoffRule78": 11661.67,
+   "payoffActuarial": 11633.01,
+   "rule78SharePct": 43.37,
+   "actuarialSharePct": 42.09,
+   "termSharePct": 25,
+   "month1": {
+    "rule78": 91.48,
+    "actuarial": 87.5
+   },
+   "lastMonth": {
+    "rule78": 1.91,
+    "actuarial": 2.08
+   },
+   "overFederalLimit": false
+  },
+  {
+   "id": "golden-month-24",
+   "inputs": {
+    "amount": 15000,
+    "aprPct": 7,
+    "termMonths": 48,
+    "payoffAfter": 24
+   },
+   "payment": 359.19,
+   "financeCharge": 2241.3,
+   "digitSum": 1176,
+   "remainingPayments": 24,
+   "rule78Earned": 1669.54,
+   "rule78Refund": 571.76,
+   "actuarialEarned": 1643.27,
+   "actuarialRefund": 598.02,
+   "difference": 26.26,
+   "payoffRule78": 8048.89,
+   "payoffActuarial": 8022.63,
+   "rule78SharePct": 74.49,
+   "actuarialSharePct": 73.32,
+   "termSharePct": 50,
+   "month1": {
+    "rule78": 91.48,
+    "actuarial": 87.5
+   },
+   "lastMonth": {
+    "rule78": 1.91,
+    "actuarial": 2.08
+   },
+   "overFederalLimit": false
+  },
+  {
+   "id": "golden-month-42",
+   "inputs": {
+    "amount": 15000,
+    "aprPct": 7,
+    "termMonths": 48,
+    "payoffAfter": 42
+   },
+   "payment": 359.19,
+   "financeCharge": 2241.3,
+   "digitSum": 1176,
+   "remainingPayments": 6,
+   "rule78Earned": 2201.27,
+   "rule78Refund": 40.02,
+   "actuarialEarned": 2197.97,
+   "actuarialRefund": 43.33,
+   "difference": 3.3,
+   "payoffRule78": 2115.14,
+   "payoffActuarial": 2111.84,
+   "rule78SharePct": 98.21,
+   "actuarialSharePct": 98.07,
+   "termSharePct": 87.5,
+   "month1": {
+    "rule78": 91.48,
+    "actuarial": 87.5
+   },
+   "lastMonth": {
+    "rule78": 1.91,
+    "actuarial": 2.08
+   },
+   "overFederalLimit": false
+  },
+  {
+   "id": "golden-maturity",
+   "inputs": {
+    "amount": 15000,
+    "aprPct": 7,
+    "termMonths": 48,
+    "payoffAfter": 48
+   },
+   "payment": 359.19,
+   "financeCharge": 2241.3,
+   "digitSum": 1176,
+   "remainingPayments": 0,
+   "rule78Earned": 2241.3,
+   "rule78Refund": 0,
+   "actuarialEarned": 2241.3,
+   "actuarialRefund": 0,
+   "difference": 0,
+   "payoffRule78": 0,
+   "payoffActuarial": 0,
+   "rule78SharePct": 100,
+   "actuarialSharePct": 100,
+   "termSharePct": 100,
+   "month1": {
+    "rule78": 91.48,
+    "actuarial": 87.5
+   },
+   "lastMonth": {
+    "rule78": 1.91,
+    "actuarial": 2.08
+   },
+   "overFederalLimit": false
+  },
+  {
+   "id": "larger-gap-60",
+   "inputs": {
+    "amount": 25000,
+    "aprPct": 8,
+    "termMonths": 60,
+    "payoffAfter": 12
+   },
+   "payment": 506.91,
+   "financeCharge": 5414.59,
+   "digitSum": 1830,
+   "remainingPayments": 48,
+   "rule78Earned": 1935.05,
+   "rule78Refund": 3479.54,
+   "actuarialEarned": 1846.92,
+   "actuarialRefund": 3567.68,
+   "difference": 88.13,
+   "payoffRule78": 20852.13,
+   "payoffActuarial": 20764,
+   "rule78SharePct": 35.74,
+   "actuarialSharePct": 34.11,
+   "termSharePct": 20,
+   "month1": {
+    "rule78": 177.53,
+    "actuarial": 166.67
+   },
+   "lastMonth": {
+    "rule78": 2.96,
+    "actuarial": 3.36
+   },
+   "overFederalLimit": false
+  },
+  {
+   "id": "short-low-rate",
+   "inputs": {
+    "amount": 5000,
+    "aprPct": 6,
+    "termMonths": 24,
+    "payoffAfter": 12
+   },
+   "payment": 221.6,
+   "financeCharge": 318.47,
+   "digitSum": 300,
+   "remainingPayments": 12,
+   "rule78Earned": 235.67,
+   "rule78Refund": 82.8,
+   "actuarialEarned": 234.03,
+   "actuarialRefund": 84.45,
+   "difference": 1.64,
+   "payoffRule78": 2576.43,
+   "payoffActuarial": 2574.79,
+   "rule78SharePct": 74,
+   "actuarialSharePct": 73.48,
+   "termSharePct": 50,
+   "month1": {
+    "rule78": 25.48,
+    "actuarial": 25
+   },
+   "lastMonth": {
+    "rule78": 1.06,
+    "actuarial": 1.1
+   },
+   "overFederalLimit": false
+  },
+  {
+   "id": "low-rate-48",
+   "inputs": {
+    "amount": 15000,
+    "aprPct": 3,
+    "termMonths": 48,
+    "payoffAfter": 12
+   },
+   "payment": 332.01,
+   "financeCharge": 936.72,
+   "digitSum": 1176,
+   "remainingPayments": 36,
+   "rule78Earned": 406.23,
+   "rule78Refund": 530.49,
+   "actuarialEarned": 401,
+   "actuarialRefund": 535.72,
+   "difference": 5.23,
+   "payoffRule78": 11422.05,
+   "payoffActuarial": 11416.82,
+   "rule78SharePct": 43.37,
+   "actuarialSharePct": 42.81,
+   "termSharePct": 25,
+   "month1": {
+    "rule78": 38.23,
+    "actuarial": 37.5
+   },
+   "lastMonth": {
+    "rule78": 0.8,
+    "actuarial": 0.83
+   },
+   "overFederalLimit": false
+  },
+  {
+   "id": "zero-apr",
+   "inputs": {
+    "amount": 12000,
+    "aprPct": 0,
+    "termMonths": 24,
+    "payoffAfter": 6
+   },
+   "payment": 500,
+   "financeCharge": 0,
+   "digitSum": 300,
+   "remainingPayments": 18,
+   "rule78Earned": 0,
+   "rule78Refund": 0,
+   "actuarialEarned": 0,
+   "actuarialRefund": 0,
+   "difference": 0,
+   "payoffRule78": 9000,
+   "payoffActuarial": 9000,
+   "rule78SharePct": 0,
+   "actuarialSharePct": 0,
+   "termSharePct": 25,
+   "month1": {
+    "rule78": 0,
+    "actuarial": 0
+   },
+   "lastMonth": {
+    "rule78": 0,
+    "actuarial": 0
+   },
+   "overFederalLimit": false
+  },
+  {
+   "id": "over-61-illustration",
+   "inputs": {
+    "amount": 30000,
+    "aprPct": 9,
+    "termMonths": 72,
+    "payoffAfter": 24
+   },
+   "payment": 540.77,
+   "financeCharge": 8935.16,
+   "digitSum": 2628,
+   "remainingPayments": 48,
+   "rule78Earned": 4936.78,
+   "rule78Refund": 3998.38,
+   "actuarialEarned": 4708.96,
+   "actuarialRefund": 4226.21,
+   "difference": 227.82,
+   "payoffRule78": 21958.39,
+   "payoffActuarial": 21730.57,
+   "rule78SharePct": 55.25,
+   "actuarialSharePct": 52.7,
+   "termSharePct": 33.33,
+   "month1": {
+    "rule78": 244.8,
+    "actuarial": 225
+   },
+   "lastMonth": {
+    "rule78": 3.4,
+    "actuarial": 4.03
+   },
+   "overFederalLimit": true
+  }
+ ],
+ "goldenFirst12Months": [
+  {
+   "month": 1,
+   "rule78": 91.48,
+   "actuarial": 87.5
+  },
+  {
+   "month": 2,
+   "rule78": 89.58,
+   "actuarial": 85.92
+  },
+  {
+   "month": 3,
+   "rule78": 87.67,
+   "actuarial": 84.32
+  },
+  {
+   "month": 4,
+   "rule78": 85.76,
+   "actuarial": 82.72
+  },
+  {
+   "month": 5,
+   "rule78": 83.86,
+   "actuarial": 81.1
+  },
+  {
+   "month": 6,
+   "rule78": 81.95,
+   "actuarial": 79.48
+  },
+  {
+   "month": 7,
+   "rule78": 80.05,
+   "actuarial": 77.85
+  },
+  {
+   "month": 8,
+   "rule78": 78.14,
+   "actuarial": 76.21
+  },
+  {
+   "month": 9,
+   "rule78": 76.23,
+   "actuarial": 74.56
+  },
+  {
+   "month": 10,
+   "rule78": 74.33,
+   "actuarial": 72.9
+  },
+  {
+   "month": 11,
+   "rule78": 72.42,
+   "actuarial": 71.23
+  },
+  {
+   "month": 12,
+   "rule78": 70.52,
+   "actuarial": 69.55
+  }
+ ],
+ "federalTermLimitMonths": 61
+}

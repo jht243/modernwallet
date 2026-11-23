@@ -1,0 +1,42 @@
+{
+ "keyword": "rule of 78 calculator",
+ "verdict": "winnable",
+ "forum_dominated": false,
+ "ai_overview_present": true,
+ "ai_overview_cited_domains": [
+  "www.goldpointsystems.com",
+  "www.investopedia.com",
+  "www.youtube.com"
+ ],
+ "featured_snippet": null,
+ "top10_domains": [
+  "cleartali.com",
+  "cleartali.com",
+  "www.loanamortizationcalculator.app",
+  "www.letrasbonitas.net",
+  "solvefree.com",
+  "kovertiz.com",
+  "ondevice.tools",
+  "www.calcwarehouse.com"
+ ],
+ "major_domains": [],
+ "forum_domains": [],
+ "serp_feature_mix": {
+  "ai_overview": 1,
+  "images": 1,
+  "organic": 8,
+  "people_also_ask": 1
+ },
+ "paa": [
+  "How do I calculate loan interest?",
+  "How much is 26.99 APR on $3000?",
+  "What is the monthly payment on a $400,000 loan at 7%?",
+  "What is the future value of $100,000 in 20 years?",
+  "Can I live off the interest of $100,000?",
+  "What will 1 dollar be worth in 20 years?"
+ ],
+ "related_searches": [],
+ "recommended_shape": "standard article/guide is viable",
+ "evidence": "AI Overview present, cites www.goldpointsystems.com, www.investopedia.com, www.youtube.com",
+ "se_results_count": 50
+}

@@ -1,0 +1,164 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "mindmap-build",
+ "route": "/rule-of-78-calculator/",
+ "readerQuestion": "How does the Rule of 78 split my loan interest, and how much more does it cost me to pay the loan off early? [PAA 0/6 on-topic; 6/6 off-topic: generic loan math; ac 10/10 corroborate rule-of-78 question family]",
+ "approvedPlan": {
+  "manifest": {
+   "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/approval-manifest.json",
+   "sha256": "35a072a0897d6f357e6b98395e588efd8dbe27670f93748a3ed5e28e5126fbb2"
+  },
+  "review": {
+   "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/chart-review.json",
+   "sha256": "823e871ac2b92dd0bac0e617b2ff7bbe02b409bd5551ed53d2002176b462cea6"
+  },
+  "actionId": "A1"
+ },
+ "presentation": {
+  "medium": "interactive tool",
+  "placement": "Opening answer block, then the calculator directly beneath it in section 1",
+  "reason": "The dollar difference depends on amount, APR, term and payoff month, which a finite table cannot cover; the static answer and a worked example stay readable without interaction.",
+  "readerInputs": [
+   "Loan amount",
+   "APR",
+   "Term in months",
+   "Payment number at which the loan is paid off"
+  ],
+  "interaction": {
+   "decision": "build",
+   "reason": "Four inputs change the refund difference, so a reader can see their own loan; a static table shows only one example."
+  },
+  "animation": {
+   "decision": "not-useful",
+   "reason": "A static allocation chart/table shows the front-loading faster; no motion needed."
+  }
+ },
+ "basis": "calculated",
+ "decisionGap": "Searchers for 'rule of 78 calculator' find small calculator sites (cleartali, loanamortizationcalculator.app, solvefree, calcwarehouse) and an AI Overview citing goldpointsystems.com, investopedia.com and youtube.com. Sampled only the 2026-11-23 SERP top 10 for that query; no site-wide or competitor-wide uniqueness is claimed. The reader still cannot see, on their own loan, the dollar difference between the Rule of 78 refund and the actuarial refund, how the sum-of-the-digits split front-loads interest month by month, or that the federal rule on the method turns on a 61-month term line for precomputed consumer loans.",
+ "finding": "In our internal modeling we compared the Rule of 78 with the actuarial method on the same precomputed loans. For a $15,000 loan at 7% over 48 months ($359.19 a month, $2,241.30 total finance charge) paid off after 12 payments, the Rule of 78 credits the lender $971.99 of interest against $943.34 under the actuarial method, so the Rule of 78 refund is $1,269.31 against $1,297.96 and the lender keeps $28.65 more. The gap is $26.26 after payment 24, $3.30 after payment 42 and $0 at payment 48. It is $88.13 on $25,000 at 8% over 60 months after 12 payments and $1.64 on $5,000 at 6% over 24 months after 12 payments. At 0% APR there is no finance charge to allocate. 15 U.S.C. 1615(b) requires a refund at least as favorable to the consumer as the actuarial method for a precomputed consumer credit transaction with a term over 61 months consummated after September 30, 1993.",
+ "conditions": "Fixed-rate precomputed installment loan; level monthly payments; whole months; payoff right after a scheduled payment; no fees, no state law, no rebate-on-default rules; the gap is modeled, not a lender quote. The statute scope is limited to precomputed consumer credit transactions over 61 months consummated after 1993-09-30; terms of 61 months or less are not covered by subsection (b), and this page asserts nothing about state law or any contract. Terms over 61 months are shown only as a formula illustration.",
+ "whatWouldChange": "A simple-interest or actuarial contract (no Rule of 78 at all), a precomputed term over 61 months (federal actuarial-or-better refund), a state law or contract that sets a different refund, or a lender payoff statement showing a different refund figure.",
+ "caseSelection": {
+  "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/evidence/rule-of-78-calculator/cases.json",
+  "sha256": "140ff8f657fc43937888893577420cb90a5766723d1fc5870ec1d4cb4cf0c79d"
+ },
+ "caseDecisions": "Retrieved with the exact packet reader question (cases.json, 8 candidates: owned-property-drones-defense, owned-property-ban-the-bots, owned-property-medical-frontier, owned-property-diy-repair-guide, client-bowlero-corporation, client-professional-bowlers-association-pba, client-horizen-labs, client-multiple-hoa-and-condo-boards-across-the-usa). Matches were only on stop words (and, how, the, cost). None concerns consumer installment loans, and ModernWallet's _experience.md has no named-client specifics. Rejected all; no client or case claim on the page.",
+ "sourceArtifacts": [
+  {
+   "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/brief.txt",
+   "sha256": "03868dd39f84629e8e28ed82f9eda634bc66f007fa4a93ffd1beb0b6286a9e7c"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/keyword-volumes.json",
+   "sha256": "7fbaf40577536a986cc5e59233ec85bd94e355e35a8af8f8175a80bcba613259"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/keyword-expand.json",
+   "sha256": "a84d57a733b143dbfef89cc814b73a9903c707f1dc7beab9145cd94a696c0293"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/serp-rule-of-78-calculator.txt",
+   "sha256": "39202316fb60af07903d9d6910773e09721e92b9928b9d39e45ef79068a17dd9"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/autocomplete-rule-of-78.csv",
+   "sha256": "d8d76679674742cf31a865e38d940b89056986986bce4f56335760f78def6e28"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/coverage-lookup.txt",
+   "sha256": "c755493197d4fbc0b44fa9b1f966a1ef91db92ec3140fb67c512eb101ffd783a"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/sources/15usc1615-lii.txt",
+   "sha256": "542f193d0ccb14b301c0841e63019eff6ea1007819632e695bdb53215334f8a3"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/sources/cfpb-precomputed-vs-simple.txt",
+   "sha256": "d1c1ab81feb09a8aaf979ee1ddc91dfbac1d0eb16cc307d5176050b48b86e9e2"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/feasibility-rule78.py",
+   "sha256": "69ea5323455153cdbc3b202ade9e5964cbead104734fda95e34b0f4775cc3a81"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/feasibility-rule78.json",
+   "sha256": "3c1f629b286d99580e82172bd197dd5728d4175f8f6d0a5fe8fe962f8a6d3e8a"
+  },
+  {
+   "path": "reports/trend-pass/2026-11-23.research.md",
+   "sha256": "95f9ec4ed5dc9e5d271dd02df0dc633004798f118693a5fe0e42359c2872fdef"
+  },
+  {
+   "path": "reports/trend-pass/2026-11-23.pull.json",
+   "sha256": "fd03e89bb0c66fb54110ebabc10b8b1846679c23e3dbd0f778120aab5f3b6973"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/chart-review-evidence/govinfo-15usc1615.txt",
+   "sha256": "09fd125ef5a6ef4bea71e50face083f453d7797cfc84508982598997b6f35277"
+  }
+ ],
+ "presentationArtifacts": [
+  {
+   "path": "src/lib/rule-of-78.ts",
+   "sha256": "f1d5d4466551943ca508ef55b763212f38620b5b8601ff8d888e78ad1a06411a"
+  },
+  {
+   "path": "src/components/Rule78Calculator.tsx",
+   "sha256": "74305c310057f3431e6b2a56c2574656999c954f4396cc0eeadf955f4bd21926"
+  },
+  {
+   "path": "scripts/test-rule-of-78.mjs",
+   "sha256": "546adcca5af096be3d3433705aa02417f93becfc9bfc014a16f963925272e866"
+  }
+ ],
+ "method": "Deterministic run of the shipped engine src/lib/rule-of-78.ts (bundled with esbuild and executed by model.mjs) on illustrative loans. Level payment = P x r / (1 - (1 + r)^-n), r = APR / 12 (reused computeLoanPayment). Finance charge I = payment x n - P. Rule of 78: interest earned after k payments = I x k(2n - k + 1) / (n(n + 1)), i.e. month j is credited (n - j + 1) / (n(n + 1)/2) of I. Actuarial: interest in the first k payments of the standard amortization schedule. Refund = I minus interest earned; difference = Rule of 78 earned minus actuarial earned.",
+ "units": "USD; months; percent of finance charge",
+ "limitations": "No fees, taxes, insurance, state law, contract terms, default rebates or daily-interest payoff conventions. Loans are illustrative, not market quotes. The engine rejects non-integer terms or payment numbers, terms over 120 months and APR over 30%.",
+ "counterexample": "At payment 48 of 48 the difference is $0 because both methods have earned the whole finance charge. At 0% APR there is no interest to allocate. On a 24-month, 6% loan paid off after 12 payments the gap is only $1.64, so the method matters little there. For a precomputed consumer loan over 61 months, federal law requires an actuarial-or-better refund, so the Rule of 78 figure in the 72-month illustration ($227.82) would not apply to it.",
+ "execution": {
+  "command": [
+   "node",
+   "reports/mindmap-pass/2026-11-23-trend-lane-c-run/evidence/rule-of-78-calculator/model.mjs",
+   "reports/mindmap-pass/2026-11-23-trend-lane-c-run/evidence/rule-of-78-calculator/inputs.json",
+   "reports/mindmap-pass/2026-11-23-trend-lane-c-run/evidence/rule-of-78-calculator/output.json"
+  ],
+  "code": {
+   "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/evidence/rule-of-78-calculator/model.mjs",
+   "sha256": "fb4d7ec2ee42fed97431581379d4e03be702f4ae044bb4e93302fb2a9745d983"
+  },
+  "inputs": [
+   {
+    "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/evidence/rule-of-78-calculator/inputs.json",
+    "sha256": "b1ea336a1a9dc83f645166038cae1a2be382afbd706d2203d7b7c8f1c01d5068"
+   }
+  ],
+  "output": {
+   "path": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/evidence/rule-of-78-calculator/output.json",
+   "sha256": "82e298302e8d43375761ab60f6eaaa03b7285ecba492121e88410cd69239666f"
+  }
+ },
+ "caseUses": [],
+ "provenance": {
+  "basis": "calculated",
+  "supportingRecordIds": [
+   "output.json cases golden, golden-month-24, golden-month-42, golden-maturity, larger-gap-60, short-low-rate, low-rate-48, zero-apr, over-61-illustration"
+  ],
+  "scopeAndLimits": "illustrative fixed-rate precomputed loans, level payments, whole months, no fees, no state law or contract terms",
+  "publicMethod": "How the Rule of 78 Splits Your Interest section: the formula, the worked example and the month-by-month table; the calculator shows the same figures for any loan",
+  "placement": "introText worked example, first finding and howItWorks"
+ },
+ "medium": "interactive tool (calculator) with static worked example, interest-by-month table and refund bars; reader inputs change the answer",
+ "exclusions": "No TESTED label or tested schema (financial formula tool; _experience.md section G excludes financial services and no product test exists). No professional-review claim. No state-law position.",
+ "sourceUrls": [
+  {
+   "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap41-subchapI-partA-sec1615.htm",
+   "checked": "2026-11-23",
+   "artifact": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/chart-review-evidence/govinfo-15usc1615.txt"
+  },
+  {
+   "url": "https://www.consumerfinance.gov/ask-cfpb/whats-the-difference-between-a-simple-interest-rate-and-precomputed-interest-on-an-auto-loan-en-841/",
+   "checked": "2026-11-23",
+   "artifact": "reports/mindmap-pass/2026-11-23-trend-lane-c-run/research/sources/cfpb-precomputed-vs-simple.txt"
+  }
+ ]
+}
