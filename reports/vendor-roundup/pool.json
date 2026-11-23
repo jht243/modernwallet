@@ -1,22 +1,33 @@
 {
-  "generated": "2026-11-17T16:09:34.159Z",
+  "generated": "2026-11-23T16:10:16.563Z",
   "rows": [
     {
       "vertical": "dataannotation-alternatives",
       "label": "AI training work platforms",
       "roundupSlug": "dataannotation-alternatives",
-      "route": "ACCRUE",
-      "qualified": 10,
+      "route": "ENRICH",
+      "qualified": 11,
       "listed": 10,
-      "missing": []
+      "missing": [
+        {
+          "domain": "openai.com",
+          "name": "OpenAI",
+          "site_url": "https://openai.com",
+          "one_liner": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems.",
+          "site_kind": "vendor",
+          "has_pricing": false,
+          "serp_rank": 7,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "ai-investing-apps",
       "label": "AI investing apps",
       "roundupSlug": "best-ai-investing-apps",
       "route": "ENRICH",
-      "qualified": 17,
-      "listed": 16,
+      "qualified": 16,
+      "listed": 15,
       "missing": [
         {
           "domain": "ainvest.com",
@@ -118,21 +129,10 @@
       "vertical": "budgeting-apps-for-couples",
       "label": "budgeting apps for couples",
       "roundupSlug": "best-budgeting-apps-for-couples",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 19,
-      "listed": 18,
-      "missing": [
-        {
-          "domain": "spendaq.com",
-          "name": "The best budget app for couples and households (no bank ...",
-          "site_url": "https://spendaq.com",
-          "one_liner": "Jul 27, 2026 — The best couples budget app is one you'll both actually keep using: fast to log, private, and able to separate joint spending from personal ... Read more",
-          "site_kind": "vendor",
-          "has_pricing": true,
-          "serp_rank": 11,
-          "primary_email": "support@spendaq.com"
-        }
-      ]
+      "listed": 19,
+      "missing": []
     },
     {
       "vertical": "401k-providers-for-small-business",

@@ -1,1 +1,10 @@
-{"slug":"dataannotation-alternatives","rows":[],"cut":[{"domain":"swiftsalary.com","why":"category 1 — review/directory site, no work platform of its own"}]}
+{
+  "slug": "dataannotation-alternatives",
+  "rows": [],
+  "cut": [
+    {
+      "domain": "openai.com",
+      "why": "category 4 \u2014 AI lab, not a data-annotation work platform; no fit for this page"
+    }
+  ]
+}
