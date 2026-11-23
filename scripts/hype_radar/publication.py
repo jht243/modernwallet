@@ -107,7 +107,15 @@ def complete(root,pull,snapshot_path,review_path,live_path=None):
     for commit in commits:
         require(re.fullmatch('[0-9a-f]{40}',commit) is not None,'Missing actual verified publication commit')
     require(len(commits)==1,'Use the single original actual publication commit')
-    proof=provenance.verify(root,provenance.fetch(),next(iter(commits)))
+    target_commit=next(iter(commits))
+    try:
+        fetched=provenance.fetch(root)
+    except TypeError:
+        fetched=provenance.fetch()
+    if isinstance(fetched,tuple) and len(fetched)==2:
+        proof=provenance.verify(root,fetched[0],fetched[1],target_commit)
+    else:
+        proof=provenance.verify(root,fetched,target_commit)
     proof['purpose']='host-deployment-evidence'
     live_meta=[{'path':str(lp.relative_to(root)),'sha256':sha(lp.read_bytes())} for lp in live_paths]
     snap_out=[{'path':str(sp.relative_to(root)),'sha256':sha(sp.read_bytes())} for sp in snap_paths]
