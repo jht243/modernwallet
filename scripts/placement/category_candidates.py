@@ -150,18 +150,26 @@ def main() -> int:
         except Exception:
             return {}
 
+    sb_configured = hasattr(dfs, "_sb") and bool(dfs._sb()[0])
+    if seeds and not args.no_cache and ttl_seconds > 0 and not sb_configured:
+        print("! category_candidates: SUPABASE_URL/SUPABASE_SERVICE_ROLE_KEY not set — 14d Supabase cache disabled (pass SUPABASE_* inline)", file=sys.stderr)
+
     def _sb_cache_put(rows: list[dict]) -> None:
-        if not rows or not hasattr(dfs, "_sb_req"):
+        if not rows or not hasattr(dfs, "_sb_req") or not sb_configured:
             return
         try:
-            dfs._sb_req(
+            res = dfs._sb_req(
                 "POST",
                 "category_candidates_cache?on_conflict=cache_key",
                 rows,
                 prefer="resolution=merge-duplicates,return=minimal",
             )
-        except Exception:
-            pass
+            if res is None:
+                print(f"! category_candidates: Supabase cache write failed for {len(rows)} seed(s)", file=sys.stderr)
+            else:
+                print(f"category_candidates cache: saved {len(rows)} seed(s) to 14d Supabase cache", file=sys.stderr)
+        except Exception as exc:
+            print(f"! category_candidates: Supabase cache write error: {exc}", file=sys.stderr)
 
     demand: list[dict] = []
     seen: set[str] = set()
