@@ -1,0 +1,35 @@
+{
+  "status": "all-live",
+  "attempts": 1,
+  "verifiedCount": 3,
+  "pendingCount": 0,
+  "results": [
+    {
+      "url": "https://www.themodernwallet.com/compare/bonds-vs-bond-funds",
+      "finalUrl": "https://www.themodernwallet.com/compare/bonds-vs-bond-funds",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/compare/bonds-vs-bond-funds/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/compare/tenants-in-common-vs-joint-tenancy",
+      "finalUrl": "https://www.themodernwallet.com/compare/tenants-in-common-vs-joint-tenancy",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/compare/tenants-in-common-vs-joint-tenancy/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/compare/ssdi-vs-ssi",
+      "finalUrl": "https://www.themodernwallet.com/compare/ssdi-vs-ssi",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/compare/ssdi-vs-ssi/"
+    }
+  ]
+}
