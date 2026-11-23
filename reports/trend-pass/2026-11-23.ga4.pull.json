@@ -1,0 +1,119 @@
+{
+  "property_id": "543459487",
+  "data_date": "2026-11-22",
+  "source": "ga4",
+  "top_pages": [
+    {
+      "page": "/",
+      "views": 16,
+      "sessions": 13,
+      "active_users": 13,
+      "clicks": 16
+    },
+    {
+      "page": "/social-security-cola-calculator/",
+      "views": 16,
+      "sessions": 14,
+      "active_users": 13,
+      "clicks": 16
+    },
+    {
+      "page": "/guides/is-social-security-taxable/",
+      "views": 13,
+      "sessions": 13,
+      "active_users": 12,
+      "clicks": 13
+    },
+    {
+      "page": "/mileage-deduction/irs-mileage-rate-2026/",
+      "views": 11,
+      "sessions": 14,
+      "active_users": 11,
+      "clicks": 11
+    },
+    {
+      "page": "/guides/tax-deductions-checklist/",
+      "views": 10,
+      "sessions": 10,
+      "active_users": 10,
+      "clicks": 10
+    },
+    {
+      "page": "/guides/trump-gold-coin/",
+      "views": 10,
+      "sessions": 9,
+      "active_users": 8,
+      "clicks": 10
+    },
+    {
+      "page": "/guides/inherited-ira-taxes-explained/",
+      "views": 9,
+      "sessions": 12,
+      "active_users": 10,
+      "clicks": 9
+    },
+    {
+      "page": "/investing/high-yield-savings-calculator/",
+      "views": 9,
+      "sessions": 7,
+      "active_users": 7,
+      "clicks": 9
+    },
+    {
+      "page": "/guides/how-to-buy-treasury-bills/",
+      "views": 8,
+      "sessions": 6,
+      "active_users": 6,
+      "clicks": 8
+    },
+    {
+      "page": "/guides/how-to-open-a-trump-account/",
+      "views": 6,
+      "sessions": 5,
+      "active_users": 5,
+      "clicks": 6
+    }
+  ],
+  "top10_pages_total_views": 108,
+  "top10_pages_total_clicks": 108,
+  "channel_split": {
+    "/social-security-cola-calculator/": {
+      "Organic Search": 14,
+      "Unassigned": 1
+    },
+    "/guides/is-social-security-taxable/": {
+      "Organic Search": 13
+    },
+    "/guides/inherited-ira-taxes-explained/": {
+      "Organic Search": 12,
+      "Unassigned": 1
+    },
+    "/mileage-deduction/irs-mileage-rate-2026/": {
+      "Organic Search": 12,
+      "Direct": 2
+    },
+    "/": {
+      "Direct": 9,
+      "Organic Search": 2,
+      "Referral": 2
+    },
+    "/guides/tax-deductions-checklist/": {
+      "Organic Search": 9,
+      "Direct": 1,
+      "Unassigned": 1
+    },
+    "/guides/trump-gold-coin/": {
+      "Organic Search": 9
+    },
+    "/investing/high-yield-savings-calculator/": {
+      "Organic Search": 7
+    },
+    "/guides/how-to-buy-treasury-bills/": {
+      "Organic Search": 6,
+      "Unassigned": 2
+    },
+    "/guides/how-to-open-a-trump-account/": {
+      "Organic Search": 5
+    }
+  }
+}

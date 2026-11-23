@@ -357,3 +357,9 @@
 | /guides/gift-tax-limit-2026/ | 2026-11-18 | 9 | 0/0/0/0/0 | 0 |
 | /guides/social-security-survivor-benefits-and-working/ | 2026-11-18 | 11 | 0/0/0/0/0 | 3 |
 | /guides/irs-mileage-rate-history/ | 2026-11-18 | 9 | 0/0/0/0/0 | 0 |
+| /guides/is-social-security-taxable/ | 2026-11-23 | 13 | 0/0/0/0/0 | 0 |
+| /mileage-deduction/irs-mileage-rate-2026/ | 2026-11-23 | 11 | 0/0/0/0/0 | 0 |
+| /guides/trump-gold-coin/ | 2026-11-23 | 10 | 0/0/0/0/0 | 0 |
+| /guides/inherited-ira-taxes-explained/ | 2026-11-23 | 9 | 0/0/0/0/0 | 1 |
+| /guides/how-to-buy-treasury-bills/ | 2026-11-23 | 8 | 0/0/0/0/0 | 0 |
+| /guides/how-to-open-a-trump-account/ | 2026-11-23 | 6 | 0/0/0/0/0 | 0 |
