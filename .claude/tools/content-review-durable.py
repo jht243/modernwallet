@@ -138,7 +138,36 @@ def _maybe_retire_closed_search_gap_cycle(root,journal,module,store,revision,ent
  revision2,st2=store.read();entry2=st2.get('reviewJournals',{}).get(journal.key)
  return (revision2,entry2)
 
-def restore_reference_correction(root,module,revision,ref):
+def retained_correction_scope(root,journal,doc,report,proof,proof_raw):
+ """A retained edge belongs to an exact recorded candidate in this journal."""
+ canonical=lambda value:json.dumps(value,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()
+ identity=journal.identity;route=identity['route'];rel=str(journal.path.relative_to(root))
+ require(journal.key==sha(canonical(identity)) and proof['path']==rel,'Retained correction canonical journal changed')
+ require(journal.path.is_file() and journal.path.read_bytes().startswith(proof_raw),'Retained correction is not original journal history')
+ previous=None;cycle=None;reserved={};record=None
+ for line in proof_raw.splitlines():
+  if not line.strip():continue
+  event=json.loads(line);unsigned={k:v for k,v in event.items() if k!='eventSha256'}
+  require(event.get('identity')==identity and event.get('previous')==previous and sha(canonical(unsigned))==event.get('eventSha256'),'Retained correction canonical identity/history changed')
+  previous=event['eventSha256'];data=event.get('data',{})
+  if event['kind']=='begin':cycle=data;reserved={}
+  if event['kind']=='reserve':reserved[data['number']]=data['admission']
+  if event['kind']=='repair-pending':
+   require(reserved.get(data['number'])==data['previousAdmission'],'Retained correction admission repair changed')
+   reserved[data['number']]=data['admission']
+  if (event['kind']=='record' and cycle and cycle.get('jobId')==doc['jobId']
+      and cycle.get('cycleId')==doc['cycles'][route] and data.get('report',{}).get('sha256')==doc['report']['sha256']):
+   require(reserved.get(data['number'])==data.get('admission'),'Retained correction candidate was not reserved')
+   record=data
+ selected=[r for r in report.get('routes',[]) if r.get('path')==route]
+ require(report.get('jobId')==doc['jobId'] and len(selected)==1 and record
+         and record.get('reportObjectSha256')==sha(canonical(report))
+         and record.get('admission')==selected[0].get('reviewBudget')
+         and record.get('verdict')==selected[0].get('verdict'),
+         'Retained correction has no original job/cycle/candidate authority')
+
+
+def restore_reference_correction(root,module,revision,ref,journal=None):
  """Hydrate only exact already-archived correction proof, never the nonexistent bad hash."""
  def hydrate(item):
   name=item['path'];expected=item['sha256']
@@ -151,6 +180,11 @@ def restore_reference_correction(root,module,revision,ref):
   return saved.read_bytes()
  doc=json.loads(hydrate(ref))
  require(doc.get('kind')=='historical-transcription-edge-correction','Unsupported retained correction')
+ if journal is not None:
+  route=journal.identity['route'];proof=doc.get('recordedJournals',{}).get(route)
+  require(proof and route in doc.get('cycles',{}),'Retained correction does not own this canonical route')
+  require(proof.get('path')==str(journal.path.relative_to(root)),'Retained correction canonical journal changed')
+  retained_correction_scope(root,journal,doc,json.loads(hydrate(doc['report'])),proof,hydrate(proof))
  for key in ('report','currentIndex','earlierIndex','supersededParent','currentJudgment','correctAdmission'):hydrate(doc[key])
  for proof in doc['recordedJournals'].values():hydrate(proof)
  for item in json.loads(hydrate(doc['currentIndex']))['judgments']:hydrate({k:item[k] for k in ('path','sha256')})
@@ -161,6 +195,7 @@ def restore(root,journal):
  if connection is None:return None
  module,store=connection;revision,state=store.read();entry=state.get('reviewJournals',{}).get(journal.key)
  if entry:
+  require(entry.get('identity')==journal.identity,'Durable review canonical identity changed')
   retired=_maybe_retire_closed_search_gap_cycle(root,journal,module,store,revision,entry)
   if isinstance(retired,dict):return retired
   if isinstance(retired,tuple):revision,entry=retired
@@ -178,10 +213,11 @@ def restore(root,journal):
      if current.startswith(raw):continue
     else:cache(root,name,expected,raw);continue
    target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(raw)
- corrections={json.dumps(e['referenceCorrection'],sort_keys=True) for e in state.get('reviewJournals',{}).values() if e.get('referenceCorrection')}
- require(len(corrections)<=1,'Multiple historical corrections need explicit supported handling')
- if corrections:restore_reference_correction(root,module,revision,json.loads(next(iter(corrections))))
- return {'module':module,'store':store,'expectedHead':head,'key':journal.key,'referenceCorrection':json.loads(next(iter(corrections))) if corrections else None}
+ # A correction is retained metadata of this canonical journal, never a
+ # repository-wide default. Other journals and new keys keep their own evidence.
+ correction=entry.get('referenceCorrection') if entry else None
+ if correction:restore_reference_correction(root,module,revision,correction,journal=journal)
+ return {'module':module,'store':store,'expectedHead':head,'key':journal.key,'referenceCorrection':correction}
 def active_review_events(events):
  # A recovered alias remains the original cycle. Retain its actual R1/repair
  # dependencies as well as the mistaken intervening events, not just the last begin.
@@ -327,10 +363,24 @@ def symbolic_judgment_parent(root,judgment,judgment_sha,remote):
  canonical=lambda value:json.dumps(value,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()
  def exact(ref):
   require(isinstance(ref,dict) and set(ref)=={'path','sha256'},'Exact symbolic parent reference required')
-  saved=cache_path(root,ref['path'],ref['sha256']);target=(root/ref['path']).resolve()
+  name=ref['path'];expected=ref['sha256'];saved=cache_path(root,name,expected);target=(root/name).resolve()
   require(root.resolve() in target.parents and str(target.relative_to(root)).startswith('reports/'),'Symbolic parent must remain internal')
-  raw=target.read_bytes() if target.is_file() and sha(target.read_bytes())==ref['sha256'] else saved.read_bytes() if saved.is_file() else None
-  require(raw is not None and sha(raw)==ref['sha256'],'Missing exact native symbolic parent')
+  raw=target.read_bytes() if target.is_file() and sha(target.read_bytes())==expected else saved.read_bytes() if saved.is_file() else None
+  if raw is None:
+   if 'connection' not in remote and 'store_checked' not in remote:
+    remote['store_checked']=True
+    try:
+     conn=backend(root)
+     if conn is not None:
+      mod,st=conn;rev,st_doc=st.read();remote.update(connection=conn,revision=rev,state=st_doc)
+    except Exception:pass
+   if 'connection' in remote and remote.get('revision'):
+    try:
+     probe=remote['connection'][0].git(root,'show',remote['revision']+':artifacts/'+expected)
+     if probe.returncode==0 and sha(probe.stdout)==expected:
+      saved=cache(root,name,expected,probe.stdout);raw=probe.stdout
+    except Exception:pass
+  require(raw is not None and sha(raw)==expected,'Missing exact native symbolic parent')
   return json.loads(raw)
  row=judgment.get('routeReview');require(isinstance(row,dict),'Symbolic judgment lacks native route')
  admission=exact(row['reviewBudget']);identity=admission['identity'];key=sha(canonical(identity));name='reports/content-review-journals/'+key+'.jsonl';target=root/name
@@ -367,6 +417,20 @@ def symbolic_provenance(root,report,report_sha,remote=None):
   target=(root/name).resolve()
   require(root.resolve() in target.parents and str(target.relative_to(root)).startswith('reports/'),'Symbolic provenance must remain internal')
   raw=target.read_bytes() if target.is_file() and sha(target.read_bytes())==expected else saved.read_bytes() if saved.is_file() else None
+  if raw is None:
+   if 'connection' not in remote and 'store_checked' not in remote:
+    remote['store_checked']=True
+    try:
+     conn=backend(root)
+     if conn is not None:
+      mod,st=conn;rev,st_doc=st.read();remote.update(connection=conn,revision=rev,state=st_doc)
+    except Exception:pass
+   if 'connection' in remote and remote.get('revision'):
+    try:
+     probe=remote['connection'][0].git(root,'show',remote['revision']+':artifacts/'+expected)
+     if probe.returncode==0 and sha(probe.stdout)==expected:
+      saved=cache(root,name,expected,probe.stdout);raw=probe.stdout
+    except Exception:pass
   require(raw is not None and sha(raw)==expected,'Missing exact symbolic provenance dependency')
   return json.loads(raw)
  provenance=report.get('decisionProvenance')
@@ -470,9 +534,11 @@ def collect(root,journal,extra=None,invalid=None,correction_ref=None):
        mod,st=conn;rev,st_doc=st.read();symbolic_remote.update(connection=conn,revision=rev,state=st_doc)
      except Exception:pass
     if 'connection' in symbolic_remote and symbolic_remote.get('revision'):
-     probe=subprocess.run(['git','show',symbolic_remote['revision']+':artifacts/'+expected],cwd=root,capture_output=True)
-     if probe.returncode==0 and sha(probe.stdout)==expected:
-      saved=cache(root,name,expected,probe.stdout)
+     try:
+      probe=symbolic_remote['connection'][0].git(root,'show',symbolic_remote['revision']+':artifacts/'+expected)
+      if probe.returncode==0 and sha(probe.stdout)==expected:
+       saved=cache(root,name,expected,probe.stdout)
+     except Exception:pass
    require(saved.is_file(),'Missing actual review dependency before checkpoint: '+name)
    raw=saved.read_bytes();require(sha(raw)==expected,'Archived review dependency changed')
   if raw is None:
