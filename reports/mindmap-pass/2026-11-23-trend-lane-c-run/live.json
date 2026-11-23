@@ -1,0 +1,17 @@
+{
+  "status": "all-live",
+  "attempts": 1,
+  "verifiedCount": 1,
+  "pendingCount": 0,
+  "results": [
+    {
+      "url": "https://www.themodernwallet.com/rule-of-78-calculator/",
+      "finalUrl": "https://www.themodernwallet.com/rule-of-78-calculator/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/rule-of-78-calculator/"
+    }
+  ]
+}
