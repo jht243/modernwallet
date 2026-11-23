@@ -1,0 +1,26 @@
+{
+  "status": "all-live",
+  "attempts": 1,
+  "verifiedCount": 2,
+  "pendingCount": 0,
+  "results": [
+    {
+      "url": "https://www.themodernwallet.com/retirement/401k-calculator/",
+      "finalUrl": "https://www.themodernwallet.com/retirement/401k-calculator/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/retirement/401k-calculator/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/credit-card-interest-calculator/",
+      "finalUrl": "https://www.themodernwallet.com/credit-card-interest-calculator/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/credit-card-interest-calculator/"
+    }
+  ]
+}
