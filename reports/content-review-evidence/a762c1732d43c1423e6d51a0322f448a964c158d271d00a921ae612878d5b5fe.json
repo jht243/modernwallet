@@ -1,0 +1,3166 @@
+{
+  "capturedAt": "2026-11-23T15:31:19.767198+00:00",
+  "baseUrl": "http://127.0.0.1:35169",
+  "domDir": null,
+  "manifest": {
+    "workflowKind": "mindmap-pass",
+    "author": "mindmap-writer",
+    "canonicalBase": "https://www.themodernwallet.com",
+    "routes": [
+      {
+        "path": "/guides/tax-deductions-checklist/",
+        "claimCategories": [
+          "ordinary"
+        ]
+      }
+    ],
+    "jobId": "search-gap-2026-11-23-rent-deduction"
+  },
+  "routes": [
+    {
+      "path": "/guides/tax-deductions-checklist/",
+      "status": 200,
+      "fingerprint": "ed8d4ff745096c23e63797607782dca696fc7a460f46e995e236685d606f95c1",
+      "semantic": {
+        "text": "ModernWallet Free Financial Calculators Calculators All calculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate Elder Care Trump Account 529 College Savings Coast FIRE Business Loan Payoff Personal Loan Interest Per Day Taxable vs. Tax-Deferred Credit Card Payoff IUL Merchant Cash Advance Invoice Factoring Business Line of Credit PTO Cash-Out Zakat Life Insurance Needs Self-Employment Tax Operating Cash Flow Mileage Deduction Cash Conversion Cycle Freelance Rate HELOC S-Corp Tax Commercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Mileage Reimbursement Portfolio Rebalancing Hurricane Deductible Annuity Credit Card Interest Loan Payment HYSA vs CD Trump Account vs 529 Mortgage Recast Social Security COLA Biweekly Mortgage Roth vs Traditional 401(k) Pay Off Mortgage or Invest Florida Amendment 3 Student Loan Garnishment Tax Bracket Debt-to-Income Ratio Taxable Social Security Checklists Charitable Donation Deduction Salary Car Loan Interest Deduction Paycheck Rent vs Buy Rule of 78 Stock Capital Gains Tax Hidden Cost of Owning a Home × ModernWallet / Guides / Your 2026 Tax Deductions Checklist: What You Can Actually Claim Your 2026 Tax Deductions Checklist: What You Can Actually Claim By Jonathan Velez , Personal Finance Writer & Editor · Reviewed against primary sources · Updated November 23, 2026 A 2026 tax deductions checklist covers the common write-offs an individual taxpayer can claim this year. Most filers take the standard deduction, a fixed amount that doesn't require receipts. Itemizing only pays off when your qualifying expenses total more than the standard deduction. This guide explains both options, then lists the deductions worth checking for your 2026 return. None of this is personalized tax advice. Before filing, confirm your numbers with a tax professional or the relevant IRS publication. Tools for this journey Tax deductions for homeowners → 401(k) calculator → Retirement → Net worth → Standard Deduction vs. Itemized Deductions: The First Step in Your Tax Deductions Checklist The standard deduction is a fixed dollar amount every taxpayer can subtract from income, with no paperwork required. For 2026, it is $16,100 for single filers and those married filing separately, $24,150 for heads of household, and $32,200 for married couples filing jointly, per the IRS. Filers who are 65 or older, or blind, can add an extra amount on top of that base figure. Itemizing means adding up specific deductible expenses on Schedule A instead of taking the flat amount. You should itemize only when your total qualifying expenses exceed your standard deduction. If your itemized total falls short, the standard deduction saves you more, and the rest of this checklist has no effect on your return that year. Run rough numbers before you assume either way. Add up your likely mortgage interest, state and local taxes, and charitable gifts first. If that estimate sits near your standard deduction, work through the full checklist below before you decide. See how much tax you'll actually pay this year to understand how a deduction changes your bracket and your bill. Can You Deduct Rent on Your Taxes? Federal tax rules generally do not allow you to deduct the personal rent you pay for your home on your federal tax return. If you collect rent as a landlord rather than pay it as a tenant, review the guide to rental property tax deductions instead. Under the Internal Revenue Service (IRS) Schedule A instructions , the form used for itemized deductions contains no line item for housing rent paid by a tenant. Your situation Can you deduct rent? What decides it Renter, personal use only Generally no No Schedule A line exists for personal rent. Landlords deduct rental expenses, while tenants do not. Self-employed with a home office Yes, the business share Regular and exclusive business use, plus a principal place of business or qualifying client meeting space ( IRS Topic 509 and IRS Publication 587 ). W-2 employee working from home No Publication 587 Figure A indicates that working from home as an employee prevents a business-use-of-home deduction. Renter in a state with a renter credit Possibly a state credit, not a deduction Some states offer a renter credit. California is one example; check your own state's rules. If you rent the home you occupy and meet specific requirements for business use, you can deduct a portion of your rent under Publication 587. You calculate this deduction by multiplying your total rent payments by the percentage of your home used for business. IRS Topic 509 requires you to use that space regularly and exclusively as your principal place of business, as a place to meet patients, clients, or customers, or as a separate freestanding structure. A room used for personal living and business tasks fails this exclusive use standard. For example, an attorney who writes legal briefs in a den that is also used for personal activities cannot claim the deduction. Self-employed filers who claim actual expenses compute the deduction on Form 8829, Expenses for Business Use of Your Home, and report the resulting amount on Schedule C. Under the IRS simplified option, you multiply $5 by the square footage of the space used for business up to 300 square feet, which sets a maximum deduction of $1,500. When you use that simplified option, depreciation is treated as zero and you do not separately deduct rent payments. Learn more about these filing methods in the home office deduction guide and the overview of self-employed tax deductions . Publication 587 Figure A establishes that using part of your home as an employee disqualifies you from taking a business-use-of-home deduction. Rent paid for a work-from-home space does not qualify if you earn income as a Form W-2 wage and tax statement (W-2) employee. Some states offer renter tax credits instead of federal deductions. The California Franchise Tax Board renter's credit page outlines a nonrefundable credit for individuals who paid rent in California for at least half the year and meet statutory income limits. This credit provides $60 for single filers or a married person or registered domestic partner (RDP) filing separately, and $120 for a head of household, qualifying widow or widower, or married couple filing jointly. Because this California Franchise Tax Board (FTB) credit is nonrefundable, it can only reduce your state tax liability down to zero. Confirm current income limits and credit details on the California Franchise Tax Board renter's credit page before you file. In Minnesota, eligible renters claim their credit directly on their state income tax return, according to the Minnesota Department of Revenue renter's credit page . Most renters cannot deduct rent payments on a tax return, and that outcome shifts only if you operate a qualifying home office as a self-employed individual or live in a state offering a renter tax credit. Because this summary provides general information and does not constitute personalized tax advice, evaluate your work space using Publication 587 and the home office deduction guide , or consult the guide to tax deductions for homeowners if you purchase property. Housing Deductions: Mortgage Interest and the SALT Cap Mortgage interest and state and local taxes are the two itemized deductions most homeowners rely on. Both only count if you itemize on Schedule A instead of taking the standard deduction. Mortgage interest is deductible on loan balances up to $750,000 ($375,000 if married filing separately) for debt taken out after December 15, 2017, according to IRS guidance. Loans that closed on or before that date keep a higher $1,000,000 cap. Interest on a home equity loan only counts if you used the money to buy, build, or substantially improve the home that secures it. See our mortgage tax implications guide for how this deduction interacts with paying down your loan early. State and local taxes, known as the SALT deduction, cover property tax plus either state income tax or state sales tax, whichever you choose. The combined cap for 2026 is $40,400 ($20,200 if married filing separately). The cap phases down for taxpayers with modified adjusted gross income above $505,000 ($252,500 if married filing separately), though it never drops below $10,000. A common mistake catches taxpayers who have not revisited this deduction since before 2025: they assume the SALT cap is still $10,000 and skip claiming state and local taxes that would now clear the threshold. The cap roughly quadrupled starting with the 2025 tax year, so a household that could not benefit from itemizing SALT a few years ago may benefit now, especially in a high-tax state where property tax alone can approach the new limit. Charitable Contributions Gifts to a qualified 501(c)(3) organization are deductible if you itemize, and they follow their own rules: an income-based cap, a documentation threshold, and a floor for smaller gifts. Cash gifts, non-cash items valued at fair market value, and even mileage driven for volunteer work can all count. Save proof for every gift you plan to claim. The IRS requires written acknowledgment for any single cash gift of $250 or more, and Form 8283 for non-cash gifts over $500. Our church donations and tax deductions guide covers the exact AGI caps, the new floor on itemized giving, and how bunching two years of gifts into one donor-advised fund contribution can push your itemized total past the standard deduction. Medical Expenses Above the AGI Floor Medical and dental expenses are deductible only for the portion that exceeds 7.5% of your adjusted gross income, per the IRS instructions for Schedule A. That floor rules out this deduction for most filers in an ordinary year. The math works like this: with $80,000 in AGI, the first $6,000 of medical costs, 7.5% of $80,000, is not deductible. Only spending above that floor counts. A single major event, like surgery, a hospital stay, or a year of orthodontia, is usually what pushes a household over the line. Qualifying costs include payments to doctors, dentists, and other licensed providers, prescription drugs, and health insurance premiums you pay yourself. Cosmetic procedures and general health items like vitamins do not count unless a doctor prescribed them for a diagnosed condition. If you know a large medical expense is coming, timing it into one calendar year, rather than spreading it across two, can be what gets you over the 7.5% floor at all. Above-the-Line Deductions: Student Loans, HSAs, and Retirement Accounts Above-the-line deductions reduce your income before you choose between the standard deduction and itemizing, so you get them either way. That makes them worth checking even if you plan to take the standard deduction this year. Student loan interest is deductible up to $2,500 a year without itemizing. For 2026, the deduction phases out for single filers with modified adjusted gross income between $85,000 and $100,000, and for joint filers between $175,000 and $205,000, according to the IRS. Above the top of that range, the deduction disappears completely. A Health Savings Account contribution is deductible even without itemizing, and it is the only deduction that also produces tax-free growth and tax-free qualified withdrawals. You need a high-deductible health plan to qualify. For 2026, the IRS caps contributions at $4,400 for self-only coverage and $8,750 for family coverage. See our HSA vs. FSA comparison if you are choosing between the two account types during open enrollment. Traditional retirement contributions also lower your taxable income ahead of the standard-versus-itemized choice. A traditional 401(k) contribution is deductible up to $24,500 for 2026, or $32,500 with the catch-up contribution at age 50 or older. A traditional IRA contribution can also be deductible, though the deduction phases out if you or your spouse is covered by a workplace plan; see our 2026 IRA contribution limits guide for the exact income ranges. Educator Expenses and Self-Employment Deductions Eligible K-12 educators can deduct out-of-pocket classroom spending without itemizing. For 2026, the IRS allows up to $350 in qualifying purchases like books, supplies, and classroom equipment, and married educators who both teach can each claim their own $350. Starting in 2026, educators can also itemize classroom expenses above that amount on Schedule A instead, if their total itemized deductions clear the standard deduction. Self-employed taxpayers get a different set of above-the-line write-offs that W-2 employees do not. Half of your self-employment tax is deductible regardless of whether you itemize, since that half mirrors the employer-side payroll tax a traditional job would otherwise cover. Self-employed health insurance premiums, and contributions to a solo 401(k) or SEP-IRA, are also generally deductible. These rules get complicated fast, so a self-employed filer with real business income should confirm the details with a tax professional or IRS Publication 535 rather than rely on this checklist alone. If You Have Self-Employment Income Everything above is the individual filer's checklist — Schedule A and the above-the-line deductions everyone can reach. If you also have 1099 or business income, a separate and generally larger set of deductions runs on Schedule C before any of this applies, and the One Big Beautiful Bill Act changed the rules for solo filers in three ways worth knowing. The qualified business income deduction is now permanent. Section 199A was scheduled to expire after 2025; it no longer does, which removes the planning uncertainty that hung over every pass-through business. From 2026 there is also a minimum deduction of $400 for taxpayers with at least $1,000 of qualified business income from an active business they materially participate in, and the phase-in thresholds rose to roughly $201,775 for single filers and $403,500 for joint filers. Note that the $400 is a deduction rather than a refund — it is worth about $48 in the 12% bracket, not $400. The second change is quieter and affects what paperwork arrives: the Form 1099-NEC filing threshold rose from $600 to $2,000 for 2026, and the 1099-K threshold sits at over $20,000 across more than 200 transactions. Neither changes what you owe. Self-employment tax starts at $400 of net earnings, and the IRS requires business income to be reported whether or not an information return is issued. The third is that a business deduction is worth more to you than an itemized one. Schedule C expenses reduce the profit that both income tax and self-employment tax are calculated on, so a deducted dollar saves your marginal rate plus about 14.13% — roughly 26 cents in the 12% bracket. See our QBI deduction guide and the self-employed deductions list , and run the numbers in the self-employment tax calculator . How to Use This Tax Deductions Checklist Use this tax deductions checklist as a starting point, not a finished tax return. Walk through each item above, note whether it applies to you, then add up your itemizable total and compare it against your standard deduction. Most single filers, and many married couples, still come out ahead with the standard deduction, especially now that it rises with inflation every year. Homeowners with a large mortgage, filers in high-tax states affected by the new $40,400 SALT cap, and households with a major medical or charitable year are the ones most likely to benefit from itemizing instead. Keep documentation year-round rather than scrambling every April. Save mortgage interest statements, property tax bills, medical receipts, and charitable acknowledgment letters as they arrive. Recheck this checklist every year, since dollar limits and phase-out ranges adjust for inflation and can change again if Congress passes new tax legislation. When your situation gets complicated, such as self-employment income, a big life event, or a deduction close to a phase-out line, a CPA or enrolled agent earns their fee. This guide is general information, not personalized tax advice. Frequently asked questions What is on a typical tax deductions checklist for 2026? A typical tax deductions checklist for 2026 includes mortgage interest, state and local taxes up to the $40,400 SALT cap, charitable gifts, medical expenses above 7.5% of your AGI, student loan interest, HSA contributions, and retirement account contributions. Which ones apply depends on whether you itemize and on your income. Should I take the standard deduction or itemize in 2026? Take whichever produces the bigger deduction. For 2026, the standard deduction is $16,100 single, $24,150 head of household, and $32,200 married filing jointly. Itemize only if your mortgage interest, SALT (up to $40,400), medical expenses above the 7.5% floor, and charitable gifts add up to more than that. Can you deduct rent on your taxes? Generally no, you cannot deduct rent paid on a home you live in on federal taxes, because Schedule A (Form 1040) instructions list no line for it. Under IRS Publication 587 and Topic 509, self-employed filers who use part of the rented home regularly and exclusively for business can deduct the business-use share of the rent, as detailed in this home office deduction guide . Publication 587 Figure A denies this deduction when the space is used as an employee, though some states offer relief such as California's nonrefundable renter credit. What is the SALT cap for 2026? The SALT cap for 2026 is $40,400 for most filers, or $20,200 if married filing separately, covering combined state and local income or sales tax plus property tax. It phases down for taxpayers with modified adjusted gross income above $505,000, but never below $10,000. Can I deduct HSA contributions without itemizing? Yes. HSA contributions are an above-the-line deduction, so you get the write-off whether you itemize or take the standard deduction. For 2026, the IRS caps HSA contributions at $4,400 for self-only coverage and $8,750 for family coverage. How much in medical expenses do I need before I can deduct them? You can only deduct the portion of medical and dental expenses that exceeds 7.5% of your adjusted gross income. With $80,000 in AGI, the first $6,000 of medical costs is not deductible; only spending above that counts. Is student loan interest still deductible in 2026? Yes, up to $2,500 a year, without itemizing. For 2026, the deduction phases out for single filers between $85,000 and $100,000 of modified adjusted gross income, and for joint filers between $175,000 and $205,000. Sources We prioritize primary sources for rules, formulas, rates, limits, and definitions. See our calculator methodology and editorial policy . IRS — 2026 Tax Inflation Adjustments (Standard Deduction) IRS — Correction to State and Local Income Tax Deduction Amount in the 2026 Form 1040-ES IRS — Instructions for Schedule A (Form 1040) (2025) IRS Publication 969 — Health Savings Accounts and Other Tax-Favored Health Plans IRS Internal Revenue Bulletin 2025-45 (Rev. Proc. 2025-32 — student loan interest and educator expense figures) IRS — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500 IRS Publication 526 — Charitable Contributions IRS Publication 587 — Business Use of Your Home IRS Topic No. 509 — Business use of home California Franchise Tax Board — Nonrefundable renter's credit Minnesota Department of Revenue — Renter's credit ModernWallet Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results. 📣 Advertise With Us Calculators All calculators Auto Loan Mortgage Retirement Investing Portfolio Real Estate Net Worth Budget Tax Resolution Estate Planning Probate Elder Care Trump Account 529 College Savings Coast FIRE Business Loan Payoff Personal Loan Interest Per Day Taxable vs. Tax-Deferred Credit Card Payoff IUL Merchant Cash Advance Invoice Factoring Business Line of Credit PTO Cash-Out Zakat Life Insurance Needs Self-Employment Tax Operating Cash Flow Mileage Deduction Cash Conversion Cycle Freelance Rate HELOC S-Corp Tax Commercial Mortgage CD Calculator Emergency Fund Debt Consolidation Inflation Expense Ratio Social Security Break-Even Mileage Reimbursement Portfolio Rebalancing Hurricane Deductible Annuity Credit Card Interest Loan Payment HYSA vs CD Trump Account vs 529 Mortgage Recast Social Security COLA Biweekly Mortgage Roth vs Traditional 401(k) Pay Off Mortgage or Invest Florida Amendment 3 Student Loan Garnishment Tax Bracket Debt-to-Income Ratio Taxable Social Security Checklists Charitable Donation Deduction Salary Car Loan Interest Deduction Paycheck Rent vs Buy Rule of 78 Stock Capital Gains Tax Hidden Cost of Owning a Home Comparisons All comparisons 401(k) vs Roth IRA Roth vs Traditional 401(k) 529 vs Roth IRA ETF vs Mutual Fund HSA vs FSA VA Loan vs Conventional 15 vs 30-Year Mortgage Fixed vs ARM Mortgage HYSA vs Money Market Stocks vs Bonds Free Templates All templates Freelance Invoice Freelance Contract Statement of Work Retainer Agreement Mileage Log Expense Report S-Corp Tax Calculator QBI Deduction Explained LLC vs S Corp Guides & Best-of All best-of roundups First-Time Home Buyer How to Buy a Car Best 401(k) Providers Best Budgeting Apps Best Money Market Accounts Best Net Worth Trackers Best Retirement Accounts Best Mileage Tracker Apps Best Freelance Accounting Software Best Invoicing Apps © 2026 ModernWallet · For educational purposes — not financial advice. Guides · About · Contact · Editorial Policy · Methodology · Privacy Policy · Powered by Layer3Labs Some links on this site are referral or affiliate links, including our Robinhood and American Express referral links — we may earn a reward or commission at no cost to you. This never affects our rankings or editorial coverage.",
+        "h1": "Your 2026 Tax Deductions Checklist: What You Can Actually Claim",
+        "title": "2026 Tax Deductions Checklist: What You Can Claim",
+        "canonical": "https://www.themodernwallet.com/guides/tax-deductions-checklist/",
+        "meta": {
+          "viewport": "width=device-width, initial-scale=1.0",
+          "generator": "Astro v4.16.19",
+          "description": "A tax deductions checklist for 2026: compare the standard deduction to itemizing, then check mortgage interest, SALT, medical, and retirement write-offs.",
+          "og:type": "website",
+          "og:site_name": "ModernWallet",
+          "og:title": "2026 Tax Deductions Checklist: What You Can Claim",
+          "og:description": "A tax deductions checklist for 2026: compare the standard deduction to itemizing, then check mortgage interest, SALT, medical, and retirement write-offs.",
+          "og:url": "https://www.themodernwallet.com/guides/tax-deductions-checklist/",
+          "og:image": "https://www.themodernwallet.com/favicon-192.png",
+          "twitter:card": "summary_large_image",
+          "twitter:title": "2026 Tax Deductions Checklist: What You Can Claim",
+          "twitter:description": "A tax deductions checklist for 2026: compare the standard deduction to itemizing, then check mortgage interest, SALT, medical, and retirement write-offs.",
+          "twitter:image": "https://www.themodernwallet.com/favicon-192.png"
+        },
+        "links": [
+          "/",
+          "/calculators/",
+          "/auto-loan/",
+          "/mortgage/",
+          "/retirement/",
+          "/investing/",
+          "/portfolio/",
+          "/real-estate/",
+          "/net-worth/",
+          "/budget/",
+          "/tax-resolution/",
+          "/estate-planning/",
+          "/probate/",
+          "/elder-care/",
+          "/trump-account/",
+          "/529-savings-calculator/",
+          "/coast-fire/",
+          "/business-loan-payoff/",
+          "/personal-loan/",
+          "/interest-per-day/",
+          "/taxable-vs-tax-deferred/",
+          "/credit-card-payoff/",
+          "/iul-calculator/",
+          "/merchant-cash-advance/",
+          "/invoice-factoring/",
+          "/business-line-of-credit/",
+          "/pto-cashout/",
+          "/zakat/",
+          "/life-insurance-needs/",
+          "/self-employment-tax/",
+          "/operating-cash-flow/",
+          "/mileage-deduction/",
+          "/cash-conversion-cycle/",
+          "/freelance-rate/",
+          "/heloc-calculator/",
+          "/s-corp-tax/",
+          "/commercial-mortgage-calculator/",
+          "/cd-calculator/",
+          "/emergency-fund-calculator/",
+          "/debt-consolidation-calculator/",
+          "/inflation-calculator/",
+          "/expense-ratio-calculator/",
+          "/social-security-break-even-calculator/",
+          "/mileage-reimbursement-calculator/",
+          "/portfolio-rebalancing-calculator/",
+          "/hurricane-deductible-calculator/",
+          "/annuity-calculator/",
+          "/credit-card-interest-calculator/",
+          "/loan-payment-calculator/",
+          "/hysa-vs-cd-calculator/",
+          "/trump-account-vs-529-calculator/",
+          "/mortgage-recast-calculator/",
+          "/social-security-cola-calculator/",
+          "/biweekly-mortgage-calculator/",
+          "/roth-vs-traditional-401k-calculator/",
+          "/pay-off-mortgage-or-invest-calculator/",
+          "/florida-amendment-3-calculator/",
+          "/student-loan-wage-garnishment-calculator/",
+          "/tax-bracket-calculator/",
+          "/debt-to-income-ratio-calculator/",
+          "/social-security-taxable-benefits-calculator/",
+          "/checklists/",
+          "/charitable-donation-tax-deduction-calculator/",
+          "/salary-calculator/",
+          "/car-loan-interest-deduction-calculator/",
+          "/paycheck-calculator/",
+          "/rent-vs-buy-calculator/",
+          "/rule-of-78-calculator/",
+          "/stock-capital-gains-tax-calculator/",
+          "/hidden-cost-of-owning-a-home-calculator/",
+          "/",
+          "/guides/",
+          "/about/",
+          "/guides/tax-deductions-for-homeowners/",
+          "/retirement/401k-calculator/",
+          "/retirement/",
+          "/net-worth/",
+          "/guides/how-much-tax-will-i-pay/",
+          "/guides/rental-property-tax-deductions/",
+          "https://www.irs.gov/instructions/i1040sca",
+          "https://www.irs.gov/taxtopics/tc509",
+          "https://www.irs.gov/publications/p587",
+          "/guides/home-office-deduction/",
+          "/guides/self-employed-tax-deductions/",
+          "https://www.ftb.ca.gov/file/personal/credits/nonrefundable-renters-credit.html",
+          "https://www.ftb.ca.gov/file/personal/credits/nonrefundable-renters-credit.html",
+          "https://www.revenue.state.mn.us/renters-property-tax-refund",
+          "/guides/home-office-deduction/",
+          "/guides/tax-deductions-for-homeowners/",
+          "/guides/mortgage-early-payoff-tax-implications/",
+          "/guides/are-church-donations-tax-deductible/",
+          "/compare/hsa-vs-fsa/",
+          "/guides/ira-contribution-limits-2026/",
+          "/guides/qbi-deduction-explained/",
+          "/guides/self-employed-tax-deductions/",
+          "/self-employment-tax/",
+          "/guides/home-office-deduction/",
+          "/methodology/",
+          "/editorial-policy/",
+          "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+          "https://www.irs.gov/forms-pubs/correction-to-state-and-local-income-tax-deduction-amount-in-the-2026-form-1040-es",
+          "https://www.irs.gov/instructions/i1040sca",
+          "https://www.irs.gov/publications/p969",
+          "https://www.irs.gov/irb/2025-45_IRB",
+          "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500",
+          "https://www.irs.gov/publications/p526",
+          "https://www.irs.gov/publications/p587",
+          "https://www.irs.gov/taxtopics/tc509",
+          "https://www.ftb.ca.gov/file/personal/credits/nonrefundable-renters-credit.html",
+          "https://www.revenue.state.mn.us/renters-property-tax-refund",
+          "/",
+          "/sponsor",
+          "/calculators/",
+          "/auto-loan/",
+          "/mortgage/",
+          "/retirement/",
+          "/investing/",
+          "/portfolio/",
+          "/real-estate/",
+          "/net-worth/",
+          "/budget/",
+          "/tax-resolution/",
+          "/estate-planning/",
+          "/probate/",
+          "/elder-care/",
+          "/trump-account/",
+          "/529-savings-calculator/",
+          "/coast-fire/",
+          "/business-loan-payoff/",
+          "/personal-loan/",
+          "/interest-per-day/",
+          "/taxable-vs-tax-deferred/",
+          "/credit-card-payoff/",
+          "/iul-calculator/",
+          "/merchant-cash-advance/",
+          "/invoice-factoring/",
+          "/business-line-of-credit/",
+          "/pto-cashout/",
+          "/zakat/",
+          "/life-insurance-needs/",
+          "/self-employment-tax/",
+          "/operating-cash-flow/",
+          "/mileage-deduction/",
+          "/cash-conversion-cycle/",
+          "/freelance-rate/",
+          "/heloc-calculator/",
+          "/s-corp-tax/",
+          "/commercial-mortgage-calculator/",
+          "/cd-calculator/",
+          "/emergency-fund-calculator/",
+          "/debt-consolidation-calculator/",
+          "/inflation-calculator/",
+          "/expense-ratio-calculator/",
+          "/social-security-break-even-calculator/",
+          "/mileage-reimbursement-calculator/",
+          "/portfolio-rebalancing-calculator/",
+          "/hurricane-deductible-calculator/",
+          "/annuity-calculator/",
+          "/credit-card-interest-calculator/",
+          "/loan-payment-calculator/",
+          "/hysa-vs-cd-calculator/",
+          "/trump-account-vs-529-calculator/",
+          "/mortgage-recast-calculator/",
+          "/social-security-cola-calculator/",
+          "/biweekly-mortgage-calculator/",
+          "/roth-vs-traditional-401k-calculator/",
+          "/pay-off-mortgage-or-invest-calculator/",
+          "/florida-amendment-3-calculator/",
+          "/student-loan-wage-garnishment-calculator/",
+          "/tax-bracket-calculator/",
+          "/debt-to-income-ratio-calculator/",
+          "/social-security-taxable-benefits-calculator/",
+          "/checklists/",
+          "/charitable-donation-tax-deduction-calculator/",
+          "/salary-calculator/",
+          "/car-loan-interest-deduction-calculator/",
+          "/paycheck-calculator/",
+          "/rent-vs-buy-calculator/",
+          "/rule-of-78-calculator/",
+          "/stock-capital-gains-tax-calculator/",
+          "/hidden-cost-of-owning-a-home-calculator/",
+          "/compare/",
+          "/compare/401k-vs-roth-ira/",
+          "/compare/roth-401k-vs-traditional-401k/",
+          "/compare/529-vs-roth-ira/",
+          "/compare/etf-vs-mutual-fund/",
+          "/compare/hsa-vs-fsa/",
+          "/compare/va-loan-vs-conventional-loan/",
+          "/compare/15-year-vs-30-year-mortgage/",
+          "/compare/fixed-vs-arm-mortgage/",
+          "/compare/hysa-vs-money-market/",
+          "/compare/stocks-vs-bonds/",
+          "/templates/",
+          "/templates/freelance-invoice-template/",
+          "/templates/freelance-contract-template/",
+          "/templates/statement-of-work-template/",
+          "/templates/retainer-agreement-template/",
+          "/templates/mileage-log-template/",
+          "/templates/expense-report-template/",
+          "/s-corp-tax/",
+          "/guides/qbi-deduction-explained/",
+          "/compare/llc-vs-s-corp/",
+          "/roundup/",
+          "/guides/first-time-home-buyer-guide/",
+          "/guides/how-to-buy-a-car/",
+          "/roundup/best-401k-providers-for-small-business/",
+          "/roundup/best-budgeting-apps-for-couples/",
+          "/roundup/best-money-market-accounts/",
+          "/roundup/best-net-worth-tracker/",
+          "/roundup/best-retirement-accounts-for-self-employed/",
+          "/roundup/best-mileage-tracker-apps/",
+          "/roundup/best-accounting-software-for-freelancers/",
+          "/roundup/best-invoicing-apps-for-freelancers/",
+          "/guides/",
+          "/about/",
+          "/contact/",
+          "/editorial-policy/",
+          "/methodology/",
+          "/privacy-policy/",
+          "https://www.layer3labs.io"
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "@id": "https://www.themodernwallet.com/#organization",
+            "name": "ModernWallet",
+            "url": "https://www.themodernwallet.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.themodernwallet.com/favicon.svg"
+            },
+            "description": "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results.",
+            "parentOrganization": {
+              "@type": "Organization",
+              "name": "Layer3Labs",
+              "url": "https://www.layer3labs.io"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://www.themodernwallet.com/#website",
+            "url": "https://www.themodernwallet.com/",
+            "name": "ModernWallet",
+            "description": "Free, accurate financial calculators — auto loans, mortgages, retirement, investing, rentals, and net worth. No signup, instant results."
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "ModernWallet",
+                "item": "https://www.themodernwallet.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Guides",
+                "item": "https://www.themodernwallet.com/guides/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Your 2026 Tax Deductions Checklist: What You Can Actually Claim",
+                "item": "https://www.themodernwallet.com/guides/tax-deductions-checklist/"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is on a typical tax deductions checklist for 2026?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A typical tax deductions checklist for 2026 includes mortgage interest, state and local taxes up to the $40,400 SALT cap, charitable gifts, medical expenses above 7.5% of your AGI, student loan interest, HSA contributions, and retirement account contributions. Which ones apply depends on whether you itemize and on your income."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Should I take the standard deduction or itemize in 2026?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Take whichever produces the bigger deduction. For 2026, the standard deduction is $16,100 single, $24,150 head of household, and $32,200 married filing jointly. Itemize only if your mortgage interest, SALT (up to $40,400), medical expenses above the 7.5% floor, and charitable gifts add up to more than that."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can you deduct rent on your taxes?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Generally no, you cannot deduct rent paid on a home you live in on federal taxes, because Schedule A (Form 1040) instructions list no line for it. Under IRS Publication 587 and Topic 509, self-employed filers who use part of the rented home regularly and exclusively for business can deduct the business-use share of the rent, as detailed in this home office deduction guide. Publication 587 Figure A denies this deduction when the space is used as an employee, though some states offer relief such as California's nonrefundable renter credit."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the SALT cap for 2026?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The SALT cap for 2026 is $40,400 for most filers, or $20,200 if married filing separately, covering combined state and local income or sales tax plus property tax. It phases down for taxpayers with modified adjusted gross income above $505,000, but never below $10,000."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I deduct HSA contributions without itemizing?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. HSA contributions are an above-the-line deduction, so you get the write-off whether you itemize or take the standard deduction. For 2026, the IRS caps HSA contributions at $4,400 for self-only coverage and $8,750 for family coverage."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much in medical expenses do I need before I can deduct them?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can only deduct the portion of medical and dental expenses that exceeds 7.5% of your adjusted gross income. With $80,000 in AGI, the first $6,000 of medical costs is not deductible; only spending above that counts."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is student loan interest still deductible in 2026?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, up to $2,500 a year, without itemizing. For 2026, the deduction phases out for single filers between $85,000 and $100,000 of modified adjusted gross income, and for joint filers between $175,000 and $205,000."
+                }
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Jonathan Velez",
+            "url": "https://www.themodernwallet.com/about/",
+            "jobTitle": "Personal Finance Writer & Editor",
+            "description": "Jonathan Velez writes and edits ModernWallet's personal-finance content, focused on loans, interest, and debt payoff. Every calculator page is reviewed against primary sources like the CFPB and Federal Reserve.",
+            "knowsAbout": [
+              "Auto loans",
+              "Loan amortization",
+              "Interest and APR",
+              "Debt payoff strategies",
+              "Personal finance"
+            ],
+            "worksFor": {
+              "@type": "Organization",
+              "name": "ModernWallet",
+              "url": "https://www.themodernwallet.com"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Your 2026 Tax Deductions Checklist: What You Can Actually Claim",
+            "description": "A tax deductions checklist for 2026: compare the standard deduction to itemizing, then check mortgage interest, SALT, medical, and retirement write-offs.",
+            "url": "https://www.themodernwallet.com/guides/tax-deductions-checklist/",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://www.themodernwallet.com/favicon.svg"
+            },
+            "datePublished": "2026-11-23",
+            "dateModified": "2026-11-23",
+            "author": {
+              "@type": "Person",
+              "name": "Jonathan Velez",
+              "url": "https://www.themodernwallet.com/about/"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "ModernWallet",
+              "url": "https://www.themodernwallet.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.themodernwallet.com/favicon.svg"
+              }
+            },
+            "citation": [
+              {
+                "@type": "CreativeWork",
+                "name": "IRS — 2026 Tax Inflation Adjustments (Standard Deduction)",
+                "url": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS — Correction to State and Local Income Tax Deduction Amount in the 2026 Form 1040-ES",
+                "url": "https://www.irs.gov/forms-pubs/correction-to-state-and-local-income-tax-deduction-amount-in-the-2026-form-1040-es"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS — Instructions for Schedule A (Form 1040) (2025)",
+                "url": "https://www.irs.gov/instructions/i1040sca"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS Publication 969 — Health Savings Accounts and Other Tax-Favored Health Plans",
+                "url": "https://www.irs.gov/publications/p969"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS Internal Revenue Bulletin 2025-45 (Rev. Proc. 2025-32 — student loan interest and educator expense figures)",
+                "url": "https://www.irs.gov/irb/2025-45_IRB"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS — 401(k) limit increases to $24,500 for 2026, IRA limit increases to $7,500",
+                "url": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS Publication 526 — Charitable Contributions",
+                "url": "https://www.irs.gov/publications/p526"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS Publication 587 — Business Use of Your Home",
+                "url": "https://www.irs.gov/publications/p587"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "IRS Topic No. 509 — Business use of home",
+                "url": "https://www.irs.gov/taxtopics/tc509"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "California Franchise Tax Board — Nonrefundable renter's credit",
+                "url": "https://www.ftb.ca.gov/file/personal/credits/nonrefundable-renters-credit.html"
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Minnesota Department of Revenue — Renter's credit",
+                "url": "https://www.revenue.state.mn.us/renters-property-tax-refund"
+              }
+            ]
+          }
+        ],
+        "structure": [
+          [
+            "html",
+            {}
+          ],
+          [
+            "body",
+            {}
+          ],
+          [
+            "header",
+            {
+              "class": "site-header"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "hdr-inner"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "brand-group"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "brand",
+              "href": "/",
+              "aria-label": "ModernWallet home"
+            }
+          ],
+          [
+            "svg",
+            {
+              "viewbox": "0 0 32 32",
+              "width": "26",
+              "height": "26",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "rect",
+            {
+              "width": "32",
+              "height": "32",
+              "fill": "var(--primary)"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "8",
+              "y": "6",
+              "width": "16",
+              "height": "20",
+              "fill": "none",
+              "stroke": "#fff"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "11",
+              "y": "9.5",
+              "width": "10",
+              "height": "4",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "16",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "19.8",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "22",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-name"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-divider",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "brand-tagline"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "primary-nav",
+              "aria-label": "Primary"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "nav-dd"
+            }
+          ],
+          [
+            "button",
+            {
+              "type": "button",
+              "class": "nav-trigger"
+            }
+          ],
+          [
+            "svg",
+            {
+              "class": "chev",
+              "viewbox": "0 0 24 24",
+              "width": "16",
+              "height": "16",
+              "fill": "none",
+              "stroke": "currentColor",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "polyline",
+            {
+              "points": "6 9 12 15 18 9"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "nav-menu",
+              "role": "menu"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "menu-all",
+              "href": "/calculators/",
+              "role": "menuitem"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "menu-cols"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/auto-loan/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/investing/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/real-estate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/net-worth/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/budget/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/estate-planning/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/probate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/elder-care/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/529-savings-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/coast-fire/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-loan-payoff/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/personal-loan/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/interest-per-day/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/taxable-vs-tax-deferred/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-payoff/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/iul-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/merchant-cash-advance/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/invoice-factoring/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-line-of-credit/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pto-cashout/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/zakat/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/life-insurance-needs/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/operating-cash-flow/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-deduction/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cash-conversion-cycle/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/freelance-rate/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/heloc-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/commercial-mortgage-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cd-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/emergency-fund-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-consolidation-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/inflation-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/expense-ratio-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-break-even-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-reimbursement-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio-rebalancing-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hurricane-deductible-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/annuity-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-interest-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/loan-payment-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hysa-vs-cd-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account-vs-529-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage-recast-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-cola-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/biweekly-mortgage-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roth-vs-traditional-401k-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pay-off-mortgage-or-invest-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/florida-amendment-3-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/student-loan-wage-garnishment-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-to-income-ratio-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-taxable-benefits-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/checklists/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/charitable-donation-tax-deduction-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/salary-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/car-loan-interest-deduction-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/paycheck-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rent-vs-buy-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rule-of-78-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/stock-capital-gains-tax-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hidden-cost-of-owning-a-home-calculator/",
+              "role": "menuitem",
+              "class": ""
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns"
+            }
+          ],
+          [
+            "button",
+            {
+              "class": "ns__toggle",
+              "type": "button",
+              "aria-label": "Search"
+            }
+          ],
+          [
+            "svg",
+            {
+              "width": "18",
+              "height": "18",
+              "viewbox": "0 0 24 24",
+              "fill": "none",
+              "stroke": "currentColor",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "11",
+              "cy": "11",
+              "r": "7"
+            }
+          ],
+          [
+            "path",
+            {
+              "d": "m20 20-3.5-3.5"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__panel",
+              "hidden": ""
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__box"
+            }
+          ],
+          [
+            "input",
+            {
+              "class": "ns__input",
+              "type": "search",
+              "placeholder": "Search calculators, guides…",
+              "aria-label": "Search the site",
+              "role": "combobox"
+            }
+          ],
+          [
+            "button",
+            {
+              "class": "ns__close",
+              "type": "button",
+              "aria-label": "Close search"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ns__results",
+              "role": "listbox"
+            }
+          ],
+          [
+            "main",
+            {
+              "class": "page"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "crumb",
+              "aria-label": "Breadcrumb"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "crumb-current"
+            }
+          ],
+          [
+            "header",
+            {
+              "class": "hero"
+            }
+          ],
+          [
+            "h1",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "byline"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "by"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/about/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "sep",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "rev"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "p",
+            {
+              "class": "lede"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "tools",
+              "aria-label": "Tools for this journey"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "tools-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "tool-pills"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "tool-pill",
+              "href": "/guides/tax-deductions-for-homeowners/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "arrow",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "tool-pill",
+              "href": "/retirement/401k-calculator/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "arrow",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "tool-pill",
+              "href": "/retirement/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "arrow",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "tool-pill",
+              "href": "/net-worth/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "arrow",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/how-much-tax-will-i-pay/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/rental-property-tax-deductions/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/instructions/i1040sca",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "table-wrap"
+            }
+          ],
+          [
+            "table",
+            {
+              "class": "prose-table"
+            }
+          ],
+          [
+            "thead",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "tbody",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/taxtopics/tc509",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/publications/p587",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "tr",
+            {}
+          ],
+          [
+            "th",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "td",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/home-office-deduction/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/self-employed-tax-deductions/"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.ftb.ca.gov/file/personal/credits/nonrefundable-renters-credit.html",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.ftb.ca.gov/file/personal/credits/nonrefundable-renters-credit.html",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.revenue.state.mn.us/renters-property-tax-refund",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/home-office-deduction/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/tax-deductions-for-homeowners/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/mortgage-early-payoff-tax-implications/"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/are-church-donations-tax-deductible/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hsa-vs-fsa/"
+            }
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/ira-contribution-limits-2026/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/qbi-deduction-explained/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/self-employed-tax-deductions/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/"
+            }
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "faqs"
+            }
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/home-office-deduction/"
+            }
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "details",
+            {
+              "class": "faq"
+            }
+          ],
+          [
+            "summary",
+            {}
+          ],
+          [
+            "h3",
+            {}
+          ],
+          [
+            "p",
+            {}
+          ],
+          [
+            "section",
+            {
+              "class": "section sources"
+            }
+          ],
+          [
+            "h2",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "source-note"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/methodology/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/editorial-policy/"
+            }
+          ],
+          [
+            "ul",
+            {}
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/forms-pubs/correction-to-state-and-local-income-tax-deduction-amount-in-the-2026-form-1040-es",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/instructions/i1040sca",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/publications/p969",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/irb/2025-45_IRB",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/publications/p526",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/publications/p587",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.irs.gov/taxtopics/tc509",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.ftb.ca.gov/file/personal/credits/nonrefundable-renters-credit.html",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "li",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.revenue.state.mn.us/renters-property-tax-refund",
+              "target": "_blank",
+              "rel": "noopener"
+            }
+          ],
+          [
+            "footer",
+            {
+              "class": "site-footer"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-inner"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-left"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "brand",
+              "href": "/",
+              "aria-label": "ModernWallet home"
+            }
+          ],
+          [
+            "svg",
+            {
+              "viewbox": "0 0 32 32",
+              "width": "22",
+              "height": "22",
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "rect",
+            {
+              "width": "32",
+              "height": "32",
+              "fill": "var(--primary)"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "8",
+              "y": "6",
+              "width": "16",
+              "height": "20",
+              "fill": "none",
+              "stroke": "#fff"
+            }
+          ],
+          [
+            "rect",
+            {
+              "x": "11",
+              "y": "9.5",
+              "width": "10",
+              "height": "4",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "12.2",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "circle",
+            {
+              "cx": "16",
+              "cy": "18",
+              "r": "1.3",
+              "fill": "#fff"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "p",
+            {
+              "class": "tagline"
+            }
+          ],
+          [
+            "a",
+            {
+              "class": "sponsor-pill",
+              "href": "/sponsor",
+              "rel": "nofollow"
+            }
+          ],
+          [
+            "span",
+            {
+              "aria-hidden": "true"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-navs"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer calculators"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/calculators/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/auto-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/retirement/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/investing/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/real-estate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/net-worth/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/budget/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-resolution/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/estate-planning/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/probate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/elder-care/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/529-savings-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/coast-fire/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-loan-payoff/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/personal-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/interest-per-day/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/taxable-vs-tax-deferred/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-payoff/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/iul-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/merchant-cash-advance/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/invoice-factoring/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/business-line-of-credit/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pto-cashout/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/zakat/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/life-insurance-needs/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/self-employment-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/operating-cash-flow/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-deduction/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cash-conversion-cycle/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/freelance-rate/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/heloc-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/commercial-mortgage-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/cd-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/emergency-fund-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-consolidation-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/inflation-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/expense-ratio-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-break-even-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mileage-reimbursement-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/portfolio-rebalancing-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hurricane-deductible-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/annuity-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/credit-card-interest-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/loan-payment-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hysa-vs-cd-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/trump-account-vs-529-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/mortgage-recast-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-cola-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/biweekly-mortgage-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roth-vs-traditional-401k-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/pay-off-mortgage-or-invest-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/florida-amendment-3-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/student-loan-wage-garnishment-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/tax-bracket-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/debt-to-income-ratio-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/social-security-taxable-benefits-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/checklists/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/charitable-donation-tax-deduction-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/salary-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/car-loan-interest-deduction-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/paycheck-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rent-vs-buy-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/rule-of-78-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/stock-capital-gains-tax-calculator/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/hidden-cost-of-owning-a-home-calculator/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer comparisons"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/401k-vs-roth-ira/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/roth-401k-vs-traditional-401k/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/529-vs-roth-ira/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/etf-vs-mutual-fund/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hsa-vs-fsa/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/va-loan-vs-conventional-loan/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/15-year-vs-30-year-mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/fixed-vs-arm-mortgage/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/hysa-vs-money-market/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/stocks-vs-bonds/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer templates"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp links-grid--single"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/freelance-invoice-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/freelance-contract-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/statement-of-work-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/retainer-agreement-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/mileage-log-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/templates/expense-report-template/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/s-corp-tax/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/qbi-deduction-explained/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/compare/llc-vs-s-corp/"
+            }
+          ],
+          [
+            "nav",
+            {
+              "class": "ftr-links",
+              "aria-label": "Footer guides"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "grp-title"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "links-grid links-grid--cmp links-grid--single"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/first-time-home-buyer-guide/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/how-to-buy-a-car/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-401k-providers-for-small-business/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-budgeting-apps-for-couples/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-money-market-accounts/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-net-worth-tracker/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-retirement-accounts-for-self-employed/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-mileage-tracker-apps/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-accounting-software-for-freelancers/"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/roundup/best-invoicing-apps-for-freelancers/"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-legal"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "legal-left"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "div",
+            {
+              "class": "legal-right"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/guides/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/about/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/contact/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/editorial-policy/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/methodology/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "a",
+            {
+              "href": "/privacy-policy/"
+            }
+          ],
+          [
+            "span",
+            {
+              "class": "dot"
+            }
+          ],
+          [
+            "span",
+            {}
+          ],
+          [
+            "a",
+            {
+              "href": "https://www.layer3labs.io",
+              "target": "_blank",
+              "rel": "noopener noreferrer"
+            }
+          ],
+          [
+            "div",
+            {
+              "class": "ftr-disclosure"
+            }
+          ],
+          [
+            "p",
+            {}
+          ]
+        ]
+      },
+      "failures": [],
+      "htmlSha256": "82b0121e1c2759bbc71accd7eb67c1edc4c06068f5d79da4e550331f5f08f8f3",
+      "htmlFile": "reports/mindmap-pass/2026-11-23-search-gap/audit/preview-snapshot/6b668023989b61baeb4e.html",
+      "textFile": "reports/mindmap-pass/2026-11-23-search-gap/audit/preview-snapshot/6b668023989b61baeb4e.txt",
+      "textSha256": "8ba7753b88345d891dcd08b0dc995b05dc1b9cf32fdac398c7b2ff9c76f5aa89"
+    }
+  ],
+  "previewProvenance": {
+    "runId": "4905521c07414458a6dfda0d9fd914ad",
+    "baseUrl": "http://127.0.0.1:35169",
+    "framework": "astro",
+    "buildId": "b78fb268fcc82e86992c97b8c6667d30bdf0a6d7f452bb3ef07bb944acb10c4e",
+    "sourceSha256": "93b7cd006a00a617857270fe5b1d1391d60257dc1a9f289ad8e0f4324f202cf6",
+    "pid": 4633,
+    "processStart": "Mon Nov 23 15:31:18 2026"
+  },
+  "contentReviewPolicy": {
+    "version": "risk-review-budget-2026-11-08.1",
+    "sha256": "da0b1a6d68c13d16d6c91832ef8b8928ed0d3db7f2d0b19da39335255d2300b2"
+  },
+  "correctionBoundary": {
+    "path": "reports/mindmap-pass/2026-11-23-search-gap/audit/preview-snapshot/correction-boundary.json",
+    "sha256": "ef28a01f01c50900ca8fea8dab0cc356c8f8b4581e1fccbb01b179e443d9292f",
+    "version": "targeted-corrections-2026-11-08.1"
+  },
+  "snapshotSha256": "0f902a24a455d152443db0b105b04386b241ec3e541c7ea76ed94cd11631165f"
+}
