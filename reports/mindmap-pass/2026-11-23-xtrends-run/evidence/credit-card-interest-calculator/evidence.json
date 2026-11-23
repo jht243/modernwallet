@@ -1,0 +1,150 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "writer-xtrends",
+  "route": "/credit-card-interest-calculator/",
+  "readerQuestion": "What would a 10% credit card interest cap save me, and is it law? [verb-only - no PAA read; ac: 'credit card interest cap when does it start']",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/approval-manifest.json",
+      "sha256": "02c32814e11e646262f0ead0c37b0c69c7ae9173aa85f04a8c83cfa20c6610b8"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/chart-review.json",
+      "sha256": "3e0acbe97d69445d7dc37879c46749b029d291441e0fd8d496f75736e894c9fa"
+    },
+    "actionId": "A2"
+  },
+  "presentation": {
+    "medium": "text + comparison table",
+    "placement": "Added block directly after the intro and before the how-it-works section",
+    "reason": "Two rows (24% vs 10%) answer the figure question; the existing calculator lets readers enter their own APR",
+    "readerInputs": [
+      "APR (existing calculator input)",
+      "Balance (existing calculator input)"
+    ],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "The page's existing calculator already takes the reader's own balance/APR; the added static table covers the finite scenarios and a second tool would duplicate it"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "A three-row table is clearer without motion"
+    }
+  },
+  "basis": "calculated",
+  "decisionGap": "The credit card interest calculator page explains one billing cycle's interest but says nothing about the proposed 10% APR cap in the news. A reader asking whether a cap would save money, and whether it is law, gets no on-page answer.",
+  "finding": "S.381 and H.R.1944 are bills in the 119th Congress that would cap credit card APRs at 10% until January 2031. S.381 was introduced February 4, 2025 and referred to the Senate Banking Committee. Congressional Research Service IF12861 (updated 2026-03-10) lists them as proposals and names tradeoffs: reduced access to credit, risk-based pricing changes and added fees. On the page's $5,000 example, one 30-day cycle costs $98.63 at 24% and $41.10 at 10%, a $57.53 difference, if the card stayed available at that rate with no new fees. A flat-year simple-interest view is $1,200 versus $500.",
+  "conditions": "Not law. Status is as of the cited records (CRS 2026-03-10, govinfo as introduced); current committee status past those dates is not primary-verified. $57.53 is one 30-day cycle of simple interest on a flat $5,000 balance, 365-day basis, no payment in the cycle, no new fees, card stays available at 10%.",
+  "whatWouldChange": "Enactment (not proposed), a different effective date, issuers adding fees or cutting access, or a different balance or cycle length each change the saving. A new fee of $57.53 or more per cycle would erase the one-cycle saving on this example.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/credit-card-interest-calculator/cases.json",
+    "sha256": "a785672e5a0db44b6becbfaa4f7b662d289ec59a797f17a5e2a2cacd73587c6a"
+  },
+  "caseDecisions": "cases.json holds only Layer3Labs client and law-firm records, none about credit cards or this site. No client or conversation claim is used. No reader-survey records exist for this site.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/x-trends/2026-11-23.md",
+      "sha256": "bcde17e2bb1f25c632a646338396796729541cdde9032d79d239da7911d7f963"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/coverage-lookup.txt",
+      "sha256": "a210c69def93fcff21504ac54e808747ea9748f8d35e24d9bd21fe368ec55e62"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/calc.py",
+      "sha256": "4931614599dc7abf43967c49287952a6e33fa0f1f1cc65489e188eb8bd569403"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/calc-output.json",
+      "sha256": "40d2c4d3db0bf14ca34cd72138f9ba8577dbfb5e8438218cdc0fb0e85abe0131"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/crs-if12861-credit-card-rate-caps.txt",
+      "sha256": "4ba1b3cb9fe73afe549d711ec4e85de1566c302793f862a373f9b5be32d2ca49"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/dol-esg-duty-of-loyalty-UNVERIFIED.txt",
+      "sha256": "f4884e57506f41a98d5e35aeeab847a8b68206c1a57f900f2e602a9d2db3e3be"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/finra-tips-turbulent-market.txt",
+      "sha256": "292bbb21a1f06b00359a8c85bd67a0826f15660fd006c60fdc57f4ea9a9108d1"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/govinfo-s381-introduced.txt",
+      "sha256": "97b60d74d12fdaaa7ffe8932a3ecc8e7336b53c0b2d2017b7353e5ad6c307aab"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/playstation-store-cancellation-policy.txt",
+      "sha256": "12dfa8aa422469c2521f8a823e77d9510111c7ac63944e8b6830187563c727d3"
+    }
+  ],
+  "method": "Exact decimal arithmetic in model.py: interest = balance x APR / 365 x 30 for 24% and 10% on $5,000, difference of the two, flat-year simple interest = balance x APR. Output saved to output.json. Bill facts come from CRS IF12861 and govinfo S.381 as introduced.",
+  "units": "USD, percent, years",
+  "limitations": "Simple interest only, one cycle, no compounding within the cycle, no payments, no fees, no behavior change by issuers. Bill status is as of the cited records. H.R.1944 sponsor and current committee action are not primary-verified and are not stated.",
+  "counterexample": "If an issuer responds with a new fee of $57.53 or more per cycle, or closes or reduces the card so the reader must borrow elsewhere at a higher rate, the $57.53 saving disappears or reverses (CRS names fees and reduced access as possible responses).",
+  "execution": {
+    "command": [
+      "python3",
+      "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/credit-card-interest-calculator/model.py"
+    ],
+    "code": {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/credit-card-interest-calculator/model.py",
+      "sha256": "c9dd70ec069a8390adecf4a15cee8d4449784469942af81e853db80fb16c0991"
+    },
+    "inputs": [
+      {
+        "path": "reports/x-trends/2026-11-23.md",
+        "sha256": "bcde17e2bb1f25c632a646338396796729541cdde9032d79d239da7911d7f963"
+      }
+    ],
+    "output": {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/credit-card-interest-calculator/output.json",
+      "sha256": "c035ad58248c5f4ccad436aaf82813d713ba72805243117d8fcd3680644d8902"
+    }
+  },
+  "sources": [
+    {
+      "label": "Congressional Research Service IF12861 (version dated 2026-03-10)",
+      "url": "https://www.everycrsreport.com/reports/IF12861.html",
+      "checked": "2026-11-23"
+    },
+    {
+      "label": "S.381 as introduced, govinfo",
+      "url": "https://www.govinfo.gov/content/pkg/BILLS-119s381is/html/BILLS-119s381is.htm",
+      "checked": "2026-11-23"
+    }
+  ],
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [
+      "evidence/credit-card-interest-calculator/model.py",
+      "evidence/credit-card-interest-calculator/output.json"
+    ],
+    "scopeAndLimits": "Calculated on the page's own $5,000 / 30-day / 365-day example; bill facts and tradeoffs are reported from CRS and govinfo only.",
+    "publicMethod": "On-page two-row table with the assumptions stated beside it and the existing calculator for the reader's own inputs",
+    "placement": "Added section 2 '10% APR Cap Scenario', directly after the existing how-it-works section"
+  },
+  "takeaway": {
+    "conclusion": "A 10% cap is a proposal, not law. If it passed and your card stayed available at 10% with no new fees, the $5,000 example would save $57.53 per 30-day cycle; fees or reduced access could erase that.",
+    "appliesTo": "Consumer card borrowers carrying a balance",
+    "basis": "calculated table plus CRS and govinfo reported facts",
+    "conditionThatChangesIt": "Enactment details, issuer fee or access response, or a different balance"
+  },
+  "firstFindingAttribution": "In our internal modeling, we compared one 30-day cycle at 24% and 10% on the page's $5,000 example.",
+  "guardrails": [
+    "Hedge bill status: proposals introduced in the 119th Congress, referred to committee, as-of date, link CRS and govinfo.",
+    "Do not name H.R.1944 sponsors, do not mention any presidential remark, do not imply passage.",
+    "Conditions beside numbers; state fees/lost access counterexample.",
+    "No TESTED claims; calculated label only."
+  ],
+  "caseUses": [],
+  "growth": {
+    "originRoutine": "mindmap-pass x-trends 2026-11-23",
+    "queryFamily": "What would a 10% credit card interest cap save me, and is it law?",
+    "hypothesis": "A conditioned, sourced answer block on the existing calculator page earns incremental clicks for the news-driven query family",
+    "primaryMetric": "Google clicks",
+    "baseline": "unavailable (no GSC data read in this run)",
+    "status": "not-yet-published"
+  }
+}

@@ -1,0 +1,45 @@
+ it as H2 right after the intro."
+    },
+    {
+      "id": "A2-2",
+      "status": "open",
+      "evidence": "'CRS notes issuers could add auxiliary fees or limit credit, and the text of S.381 as introduced would bar fees used to evade the cap, so whether the $57.53 saving holds depends on final bill language and issuer response. CRS also notes cardholders who keep a card at the lower rate could benefit.'"
+    },
+    {
+      "id": "A2-3",
+      "status": "open",
+      "evidence": "Use https://crsreports.congress.gov/product/pdf/IF/IF12861 (403 to bots but valid for readers) or keep mirror and say 'via EveryCRSReport'."
+    },
+    {
+      "id": "A2-4",
+      "status": "open",
+      "evidence": "'No 10% credit card interest cap is law today; S.381 and H.R.1944 are proposals.'"
+    },
+    {
+      "id": "R1-2-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Bill and CRS facts verified, but the fee-workaround claim ignores S.381's own anti-evasion fee clause and CRS's lower-rate benefit for revolvers (see finding). The CRS link points to the everycrsreport.com mirror, not the first-party CRS/Congress.gov product."
+    },
+    {
+      "id": "R1-2-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Section order is intro, How it works, 10% APR Cap Scenario. Approved answer_placement: 'directly under the intro answer', before how-it-works; intent-answered-late. FAQ, table and takeaway otherwise agree ($57.53, $98.63, $41.10)."
+    },
+    {
+      "id": "R1-2-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "The fee-erosion conclusion ('quickly disappears', single fee of $57.53 wipes out the saving) omits S.381 section 107(f)(2), which as introduced bars fees from being used to evade the cap and limits non-finance-charge fees to the finance charges assessed, and omits CRS's note that revolvers still at the lower APR could benefit. One-sided against the strongest primary-source counterexample."
+    },
+    {
+      "id": "R1-2-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "The reader's question 'what would a 10% cap save me, and is it law' is answered in the third section, after the long How it works block, but the approved plan and chart guardrail F6 require the cap block directly under the intro (first two sections). Title, meta, FAQ schema (10 questions) otherwise fine."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-23-xtrends-run/handoff-write-r2.json",
+    "sha256": "8d7060d638cf105acbf6ee1b159ba92fbe134ea9424285c4ef4192a07a886d3b"
+  }
+}
+

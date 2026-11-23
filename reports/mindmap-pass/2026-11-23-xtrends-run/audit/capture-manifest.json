@@ -1,0 +1,20 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "writer-xtrends",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/retirement/401k-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/credit-card-interest-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "xtrends-2026-11-23"
+}

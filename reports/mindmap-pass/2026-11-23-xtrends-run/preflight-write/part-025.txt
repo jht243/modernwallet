@@ -1,0 +1,81 @@
+n` when supplying custom extra sources). The helper freezes exact underlying artifacts, carries forward `reviewCounters` and `findings`, projects Round-1 PASS/limit-exhausted routes into `locked-r1-{snapshot,review}.json` on `--phase write --rework` so Round 2 captures only rework-eligible FAIL routes (`--only-rework-from`), and validates scope/history. It never writes understanding, findings or a PASS. Supply the sealed path with the next stage's preflight `--handoff`. Preflight delivers a focused current task and checks the full underlying chain mechanically. The receiving worker inspects current artifacts and supporting sources. Old conversations and obsolete drafts remain retrievable without being loaded into every new worker.
+
+An AUDIT handoff retains a distinct producer and reviewer. PUBLISH additionally requires actual snapshot and review references, validated by the site's existing rendered-review and native release gates. Preserve qualifying paid-client/upsell exceptions and all their real evidence. Use workflow-handoff.py reconcile-findings only with an actual independent preparation PASS explicitly resolving those finding IDs. Never infer that a generic PASS resolves unrelated findings. No extra planned human gate is introduced.
+
+Canonical identity: the chart manifest and its actual independently authored preparation review must carry the same stable jobId as the canonical handoff. Retain that identity across retries; do not create a date-based replacement job or edit another reviewer’s findings/verdict to fill a missing field.
+
+Owner preparation/continuation correction 2026-11-09: Every preflight prepare needs the worker's actual context-id and context-epoch, including its first reading. Keep those identities across ordinary handoff or artifact revisions; change epoch after real context loss. On a missing-identity error, supply the correct actual flags and retain --reuse when access and understanding are still current. Prepare a new current-task bundle with --reuse OLD_READING and the NEW handoff, rather than rereading unchanged rules or using the old task as the current handoff. Same actor/context/epoch can retain unchanged source hashes across stages; new/changed applicable rules and the current task are delivered completely. Distinct authors/reviewers, native understanding/application receipts, full first readings and all existing review/release requirements remain.
+
+Before dispatching a writer, run the existing render-chart/validate-chart preparation checks. They check already-referenced current analysis packets, exact reader-question/case identities and the installed writer's canonical job scope together, without reserving paid generation. Keep the original jobId in both manifest and the actual independent review. Use the exact approved reader_question string, including internal evidence annotations, for packet.readerQuestion and deterministic case lookup; when it changes, regenerate that lookup and refresh its references in the same preparation correction. Keep these internal annotations out of public copy. Historical chart receipts retain their original structural validation scope.
+
+Join each native worker's terminal handback, including blocked/failure handbacks, before the next phase. Workers retain a current internal result on every exit through the existing handoff path. A dispatcher must not wait only for a successful content diff that will never appear after a blocked handback, or add fixed sleeps after completion. Use native completion or an artifact-aware blocking wait for the current terminal result; keep genuine deployment/readiness checks. No new human gate.
+
+<!-- credential-free-deployment-proof-20261110 -->
+Before paid content production, use the installed `deployment-evidence.py --check --timeout 0` to confirm the native public host-source proof is available. Its endpoint contains only the actual provider-bound commit/repository metadata; no keys are needed. During publication, run `python3 .claude/tools/deployment-evidence.py --expected-commit FULL_CONTENT_COMMIT --out NEW_INTERNAL_HOST_PROOF.json` as one foreground command with the existing long Bash timeout. This waits boundedly for the actual deployed source to include the intended commit and verifies repository ancestry. Use the proof’s actual `commit` in `rendered-audit.py record-deployment`, together with exact live comparison and genuine retained reviews. Do not replace it with a URL/200 assertion or fabricate host evidence; genuine required customer/professional holds and platform protections remain. Competitor publication recovery begins with `competitor-handoff.py publication-plan --out NEW_INTERNAL_DIRECTORY/plan.json`, which selects the actual last per-route journal records and projects existing decisions without adding reviews. A remaining original content round is distinct from an exhausted budget. Native clients retain their scoped release rules.
+<!-- /credential-free-deployment-proof-20261110 -->
+
+For new scheduled editorial runs, use this repository’s checked-in land-run.sh mark and land commands from the start. Continue to build and compare the exact approved content live. An explicit production denial remains pending at its original boundary; never try a different release path after a denial.
+
+[Source: reports/mindmap-pass/2026-11-23-xtrends-run/preflight-write/task.json]
+{
+  "version": 1,
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "xtrends-2026-11-23",
+  "producer": "main",
+  "routes": [
+    "/retirement/401k-calculator/",
+    "/credit-card-interest-calculator/"
+  ],
+  "nextAction": "Execute approved Mindmap write actions, lint, and capture local rendered preview.",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/02c32814e11e646262f0ead0c37b0c69c7ae9173aa85f04a8c83cfa20c6610b8/approval-manifest.json",
+      "sha256": "02c32814e11e646262f0ead0c37b0c69c7ae9173aa85f04a8c83cfa20c6610b8",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/42d86a6c97ca07bc185c82e5e6f2f06437f2a76cad2a52a26b754d85300b167d/2026-11-23-xtrends.md",
+      "sha256": "42d86a6c97ca07bc185c82e5e6f2f06437f2a76cad2a52a26b754d85300b167d",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends.md"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/763961bf2b410ed1fdae8387241220a72f29afc215a9a1cbf374269bc3e1d2bd/readiness.md",
+      "sha256": "763961bf2b410ed1fdae8387241220a72f29afc215a9a1cbf374269bc3e1d2bd",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/3e0acbe97d69445d7dc37879c46749b029d291441e0fd8d496f75736e894c9fa/chart-review.json",
+      "sha256": "3e0acbe97d69445d7dc37879c46749b029d291441e0fd8d496f75736e894c9fa",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/bcde17e2bb1f25c632a646338396796729541cdde9032d79d239da7911d7f963/2026-11-23.md",
+      "sha256": "bcde17e2bb1f25c632a646338396796729541cdde9032d79d239da7911d7f963",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/x-trends/2026-11-23.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/a210c69def93fcff21504ac54e808747ea9748f8d35e24d9bd21fe368ec55e62/coverage-lookup.txt",
+      "sha256": "a210c69def93fcff21504ac54e808747ea9748f8d35e24d9bd21fe368ec55e62",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/4931614599dc7abf43967c49287952a6e33fa0f1f1cc65489e188eb8bd569403/calc.py",
+      "sha256": "4931614599dc7abf43967c49287952a6e33fa0f1f1cc65489e188eb8bd569403",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/calc

@@ -1,0 +1,75 @@
+coverage_lookup: 4 candidate(s) vs 878 repo pages / 894 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1258 past-chart lines
+
+### /calculators/401k-market-drop-calculator  — row - · create new content
+keyword: 401k correction calculator; should i sell my 401k in a correction; 401k down 10%
+reader question (new page intent): How much does a 10-20% market drop reduce my 401(k) and should I sell?
+lookup terms: 401k market drop correction sell down v10   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-13-trend-lane-c.md [exclusions] - roth or regular 401k: DROP, exists (/compare/roth-401k-vs-traditional-401k, /roth-vs-traditional-401k-calculator, /compare/401k-vs-roth-ira); wording-only gap.
+- 2026-11-13-trend-lane-c.md [exclusions] - what is tax-deferred growth: DROP, 10/mo KD37, too thin; calculator FAQs answer it.
+- 2026-11-15-trend-lane-c.md [exclusions] - solo 401k loan calculator: DROP, exists; /retirement/401k-loan-calculator/ has a solo section and FAQ on the same engine; dedicated slug solo-401k-loan-calculator would near-duplicate a 20/mo intent.
+- 2026-11-15-trend-lane-c.md [exclusions] - 401k contribution roth vs traditional / roth or regular 401k: DROP, exist (/compare/roth-401k-vs-traditional-401k, /roth-vs-traditional-401k-calculator, /compare/401k-vs-roth-ira).
+- 2026-11-23-comparison.md [exclusions] - Candidate 4 money market fund vs money market account (880/mo KD 14): DROP duplicate; /compare/money-market-account-vs-money-market-fund exists.
+Commits naming the topic: none
+Same run overlap: none
+
+### /calculators/credit-card-interest-calculator  — row - · create new content
+keyword: 10% credit card interest cap; credit card interest rate cap 10%
+reader question (new page intent): What would a 10% credit card APR cap save me?
+lookup terms: credit card interest v10 cap rate   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /credit-card-interest-calculator  [EXACT SLUG · in sitemap · (sitemap only) · title fetched live · topic match 0.5 on credit card interest · same format: calculator]
+    title: Credit Card Interest Calculator: Monthly Interest Cost
+    desc:  Free credit card interest calculator. See one billing cycle
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-15-keyword-gap.md [exclusions] - Insurance (car, home, health, life, renters, travel, disability), credit cards, rates, Social Security, celebrity net worth, brand-navigational queries: adjacent-not-pursued or covered-partial per ledger; high KD, per-
+- 2026-11-16-comparison.md [table] | lookup: /roundup/best-cash-back-credit-cards - many-card list, not this pairing. Lens 1 direct intent (brief candidate 8). "chase freedom flex vs unlimited" 720/mo KD 36 SEMRUSH; no head-to-head page; SERP winnable. | 
+- 2026-11-16-xtrends.md [table] | Inbound path: /retirement/401k-calculator/ shows contribution rates but not the 2027 cap IRS announced Nov 12 2026. | Add an inbound link to the 2027 limits guide beside the calculator's contribution-limit discussion (
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-
+- 2026-11-23-comparison.md [exclusions] - Candidate 10 fixed vs variable rate student loans (390/mo KD 17): DEFER. studentaid.gov JS shell, no verbatim federal rate primary.
+- 2026-11-23-trend-lane-c.md [table] | [coverage / top-10] Lane B: 'rule of 78 calculator' (0 clicks, 3 impr, pos 64.33) is UNCOVERED. Lens 1 direct intent; Lens 2 cluster 'Rule of 78 loan interest': rule of 78 1,000/mo; what is the rule of 78 210; rule of 
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/gta-6-playstation-refund  — row - · create new content
+keyword: gta 6 refund playstation; can you refund a digital game ps5
+reader question (new page intent): Can I refund GTA 6 on PlayStation after downloading?
+lookup terms: gta v6 playstation refund digital game ps5   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-09-cybercab.md [table] | 7 | **Lens 2 — "your car as an income asset" is a missing category on the existing passive-income pillar.** "turo passive income" 70/kd0, "car sharing passive income" (est. 150), "passive income cars" (est. 50), "rent 
+- 2026-09-09.md [table] | 6 | **Lens 2 — AI financial advisors (adjacent audience: people wanting AI advice, not a bot).** "ai financial advisor" 1900/kd30 (CPC $23), "ai wealth management" 880/kd3 (consumer slice). **Gate RECLASSIFY:** a stand
+- 2026-10-10.md [table] | Lens 1 (direct intent) — the literal brief. "how to get out of bankruptcy" is 10/mo (estimate) with a mixed SERP (games, GM/Marvel/NYC histories); the real "get out" demand is people inside a Chapter 13 plan: `chapter 
+- 2026-11-16-xtrends.md [exclusions] - C5 GTA 6 boxed edition no-code refund: REJECTED. Weak finance fit; only Kotaku (Nov 14) reporting buyer claims and calling parts hearsay; no verified retailer or Rockstar refund policy; step-by-step refund and chargeba
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/dol-esg-401k-duty-of-loyalty-proposal  — row - · create new content
+keyword: 401k esg funds dol proposal; erisa duty of loyalty rule
+reader question (new page intent): Will my 401(k) lose its ESG funds under the DOL proposal?
+lookup terms: dol esg 401k duty loyalty proposal fund erisa rule   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet fiduciary). Head 'what is a fiduciary / what is a fiduciary financial advisor': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/what-is-
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-12-xtrends.md [table] | Lens 1 direct intent + news-driven (DOL promoted the final rule on X Nov 10 during open enrollment; Federal Register 2026-22306 published 2026-11-02). 'pbm fee disclosure' 500-5000/mo, 'dol pbm rule' 500-5000/mo, 'pbm 
+- 2026-11-12-xtrends.md [exclusions] - DOL X post and Morgan Lewis alert: not retrievable (post not fetched; law-firm page HTTP 403); not cited; the Federal Register final rule is the sole fact source.
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent plus fresh news (IRS IR-2026-136, Nov 12 2026). lookup: /guides/401k-contribution-limits-2026 and /guides/ira-contribution-limits-2026 serve a 2026-limits reader, not a 2027 one; /compare/tsp-vs-40
+- 2026-11-17-xtrends.md [table] | Lens 1 direct intent plus seasonal news (Minnesota DOR press release 2026-11-12; notices mailed Nov 11-24). lookup: no match (no property-tax-notice page anywhere on the site). Autocomplete bands (estimate, NOT measure
+Commits naming the topic: none
+Same run overlap: none
+

@@ -1,0 +1,61 @@
+{
+  "jobId": "xtrends-2026-11-23",
+  "reviewer": "chart-reviewer",
+  "round": 1,
+  "manifestSha256": "aafa4fe45370ba7c2f3d30ae74ed21a59577b5e832e4f8d509efe466fb2682a6",
+  "manifestFileSha256": "02c32814e11e646262f0ead0c37b0c69c7ae9173aa85f04a8c83cfa20c6610b8",
+  "readinessSha256": "763961bf2b410ed1fdae8387241220a72f29afc215a9a1cbf374269bc3e1d2bd",
+  "verdict": "PASS",
+  "evidence": "Independent review (own bundle preflight-chart-review, 30 parts, check delivery-complete-sources-current). Manifest file sha 02c32814... verified. Arithmetic re-derived: drop table 90,000/80,000/70,000 and recovery gains 11.11/25.00/42.86 percent (d/(1-d)); credit card one-cycle interest 5000*.24/365*30=98.63, at 10%=41.10 (exact 41.0959), difference 57.53 (exact 57.534); flat-year 1200 vs 500; all match calc-output.json. The page's existing preset (5000, 24 APR, 30 days, 365) and its published $98.63 match the proposed 24% row. Primary sources independently re-fetched (saved files are WebFetch summaries, not verbatim): FINRA tips page confirms avoid impulsive decisions, diversify across/within asset classes, goals tied to long-term plan, dollar-cost averaging, and confirms it does NOT mention selling locking in losses or rebalancing, so BUILD's refusal to attribute those to FINRA is correct (the brief's framing is unsupported and stays out). govinfo S.381 as introduced: Sanders for himself and Hawley, Feb 4 2025, TILA cap inclusive of finance charges, effective-date text Jan 1 2031. CRS IF12861 (updated 2026-03-10): S.381/H.R.1944 would cap APRs at 10% until January 2031, generally consumer not business credit, tradeoffs: access to credit, risk-based pricing, auxiliary fees. Web search found no evidence S.381 moved past Senate Banking; current status after March 2026 cannot be primary-confirmed (congress.gov 403), so the 'not law, introduced and referred to committee' claim must be hedged with an as-of date. Duplicate/coverage: coverage-lookup.txt reviewed; no same-intent page for 401k drop (nearest /retirement/401k-calculator/, /portfolio-rebalancing-calculator/ separate intent); credit card cap -> exact-slug existing calculator; both enrich-in-place, no new URL, correct per additive-only rule. Neither route is in reports/ai-answer-citation-pass/defended-pages.json (0 matches). Autocomplete counts reproduced by me (about 67 for '401k down', 31 for 'credit card interest cap'); no provider keys so volume/SERP unread and honestly labelled estimate. Dispositions: GTA 6 refund DROP justified (consumer-gaming, off-mission for personal finance, Sony policy facts alone would not support the chargeback/EU-UK angles, sibling item dropped in 2026-11-16 chart). DOL ERISA ESG DEFER justified (no primary text retrievable, Federal Register publication not before Nov 24, only a different March 31 2026 rule found); drop would be wrong because the topic is on-mission, so a re-queue after Nov 24 is correct. Trump Fox remark and Nov 20 market figures correctly excluded from closed facts. Exclusions/YMYL: retirement and credit are financial, so section G testing is excluded; plan uses calculated plus reported labels only and no TESTED claims; no personalised sell/hold advice. Finance topic with a consequential sell-or-hold question warrants HIGH-profile factual scrutiny in Phase 4 but finance alone never earns a third round. No professionalReviewRequired flag and no liabilityBlock identified.",
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "mechanical",
+      "summary": "Saved research/sources/*.txt for FINRA, CRS and govinfo are WebFetch summaries, not verbatim page text, contrary to the Full-Verbatim capture rule. I re-fetched all three and the quoted facts hold.",
+      "fix": "WRITE/AUDIT should lift only the facts listed in the closed list from my verified quotes; if verbatim quoting is wanted, re-fetch and save verbatim before quoting. Note govinfo cap phrase returned by the fetch tool read 'percentage points'; confirm exact bill wording before quoting, otherwise say '10% APR cap'."
+    },
+    {
+      "id": "F2",
+      "severity": "substantive",
+      "summary": "Current legislative status of S.381 and H.R.1944 is not primary-verified past CRS 2026-03-10 and govinfo as-introduced; H.R.1944 sponsor is secondary only; Trump remark is excluded.",
+      "fix": "Page must say these are proposals introduced in the 119th Congress and referred to committee per the cited records, give an as-of date, link CRS/govinfo, not name H.R.1944 sponsors or the Nov 21 remark, and not claim the cap is, or will become, law."
+    },
+    {
+      "id": "F3",
+      "severity": "substantive",
+      "summary": "Calculated results need conditions stated beside them: $57.53 is one 30-day cycle of simple interest on a flat $5,000, 365-day basis, assuming the card stays available at 10% with no new fees; the drop table uses a hypothetical $100,000 balance and symmetric arithmetic ignoring ongoing contributions and time to recover.",
+      "fix": "Writer must label the hypothetical inputs, attribute as 'In our internal modeling' (calculated, not tested), cite CRS for tradeoffs (access, fees), and add the counterexample: at an issuer response of fees or lost access the saving disappears; recovery time depends on returns, and contributions during a drop buy at lower prices."
+    },
+    {
+      "id": "F4",
+      "severity": "substantive",
+      "summary": "401(k) takeaway must not become personal sell/hold advice or attribute 'selling locks in losses' or rebalancing rules to FINRA (the page does not say that).",
+      "fix": "Takeaway: conditional on time horizon and goals, FINRA's process points (goals, diversification, avoid impulsive moves, dollar-cost averaging, verify registration), and a prompt to consult a registered professional; disclaimers at the bottom only; link to portfolio rebalancing calculator without attributing rebalancing guidance to FINRA."
+    },
+    {
+      "id": "F5",
+      "severity": "mechanical",
+      "summary": "Raw autocomplete output behind the demand claims (66 and 31 completions) was not saved in the run directory, and no provider volume or SERP/PAA was read (no keys), so reader_question tags are verb-only.",
+      "fix": "Non-blocking: I reproduced the counts via autocomplete.py; BUILD should keep labels as estimate, not measured, and the writer must not cite volumes. Save raw CSVs in future runs."
+    },
+    {
+      "id": "F6",
+      "severity": "mechanical",
+      "summary": "Rendered-page checks: inherited text on both calculator pages (e.g. the credit card page FAQ on no grace period, any 'tested' bylines) must stay consistent with the new sections; sitemap lastmod, dateModified and the 'updated' field bump are required.",
+      "fix": "Phase 4 audit should render both full pages, check the new section sits in the first two sections, FAQs agree with the cap section, and no inherited tested/reviewed claim lacks evidence."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "requestCoverage": [
+    {
+      "requirementId": "REQ-1",
+      "status": "PASS",
+      "evidence": "A1 adds a first-section drop/recovery table (10/20/30 percent, re-derived and correct) to the existing 401k calculator with FINRA-attributed process guidance verified against the live FINRA page; no personalised advice; takeaway planned as conditional; rebalancing and lock-in-loss claims correctly kept out of FINRA attribution."
+    },
+    {
+      "requirementId": "REQ-2",
+      "status": "PASS",
+      "evidence": "A2 adds a 24% vs 10% cap scenario to the exact-slug credit card interest calculator using the page's own $5,000 example (98.63 vs 41.10, saving 57.53 re-derived), with bill status and Jan 2031 sunset verified from CRS and govinfo, CRS tradeoffs cited, and a not-law framing that must carry the F2 as-of hedge."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+ "inputs": {
+  "hypothetical_balance": 100000,
+  "drops_pct": [
+   10,
+   20,
+   30
+  ],
+  "cc_balance": 5000,
+  "cc_apr_pct": [
+   24,
+   10
+  ],
+  "cycle_days": 30,
+  "year_days": 365
+ },
+ "drop_table": [
+  {
+   "drop_pct": 10,
+   "balance_after": "90000.00",
+   "gain_needed_to_recover_pct": "11.11"
+  },
+  {
+   "drop_pct": 20,
+   "balance_after": "80000.00",
+   "gain_needed_to_recover_pct": "25.00"
+  },
+  {
+   "drop_pct": 30,
+   "balance_after": "70000.00",
+   "gain_needed_to_recover_pct": "42.86"
+  }
+ ],
+ "cc_table": [
+  {
+   "apr_pct": 24,
+   "cycle_interest": "98.63",
+   "flat_year_simple_interest": "1200.00"
+  },
+  {
+   "apr_pct": 10,
+   "cycle_interest": "41.10",
+   "flat_year_simple_interest": "500.00"
+  }
+ ],
+ "cc_cycle_saving": "57.53",
+ "cc_year_saving_flat": "700.00"
+}

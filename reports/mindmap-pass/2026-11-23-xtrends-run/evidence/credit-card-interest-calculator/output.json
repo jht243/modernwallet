@@ -1,0 +1,25 @@
+{
+ "assumptions": {
+  "balance_usd": 5000,
+  "cycle_days": 30,
+  "day_count_basis": 365,
+  "interest": "simple, no payment in cycle, no compounding within cycle",
+  "fees_and_availability": "no new fees; card stays available at the stated APR"
+ },
+ "formula": "interest = balance * APR / 365 * 30",
+ "cc_table": [
+  {
+   "apr_pct": 24,
+   "cycle_interest_usd": "98.63",
+   "flat_year_simple_interest_usd": "1200.00"
+  },
+  {
+   "apr_pct": 10,
+   "cycle_interest_usd": "41.10",
+   "flat_year_simple_interest_usd": "500.00"
+  }
+ ],
+ "cycle_saving_usd": "57.53",
+ "flat_year_saving_usd": "700.00",
+ "breakeven_new_fee_per_cycle_usd": "57.53"
+}

@@ -1,0 +1,145 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "writer-xtrends",
+  "route": "/retirement/401k-calculator/",
+  "readerQuestion": "What does a 10% to 20% market drop do to my 401(k), and should I sell? [verb-only - no PAA read; ac: 'should i sell my 401k now' completion]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/approval-manifest.json",
+      "sha256": "02c32814e11e646262f0ead0c37b0c69c7ae9173aa85f04a8c83cfa20c6610b8"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/chart-review.json",
+      "sha256": "3e0acbe97d69445d7dc37879c46749b029d291441e0fd8d496f75736e894c9fa"
+    },
+    "actionId": "A1"
+  },
+  "presentation": {
+    "medium": "text + comparison table",
+    "placement": "Added block in the first two sections of the calculator page, before existing how-it-works prose",
+    "reason": "A finite set of drop sizes answers the question; the existing calculator lets the reader enter their own balance",
+    "readerInputs": [
+      "Starting balance (existing calculator)",
+      "Drop size (table rows 10/20/30%)"
+    ],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "The page's existing calculator already takes the reader's own balance/APR; the added static table covers the finite scenarios and a second tool would duplicate it"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "A three-row table is clearer without motion"
+    }
+  },
+  "basis": "calculated",
+  "decisionGap": "The existing 401k calculator page projects growth but never shows a reader what a 10% to 30% market drop does to a balance, how large a rebound is needed, or what a regulator's investor-education page says about acting during turbulence. The reader typing 'should i sell my 401k now' has no on-page answer.",
+  "finding": "On a hypothetical $100,000 balance a 10%, 20% and 30% drop leaves $90,000, $80,000 and $70,000 and needs gains of 11.11%, 25.00% and 42.86% to get back to $100,000. At a constant 7% yearly return with no contributions that takes about 1.6, 3.3 and 5.3 years. FINRA's turbulent-market tips tie decisions to goals and a long-term plan, diversification, avoiding impulsive moves and dollar-cost averaging. Whether to sell depends on the reader's time horizon and goals, which the page cannot judge.",
+  "conditions": "Hypothetical $100,000 balance. Symmetric percentage arithmetic. Years-to-recover assumes a constant 7% annual return (the calculator preset) and ignores contributions, fees, taxes and inflation. Real returns vary year to year. Not personalized advice.",
+  "whatWouldChange": "A short time horizon (retiring or withdrawing within a few years), a goal change, a concentrated holding, or ongoing contributions that buy at lower prices each change the sell-or-hold answer; the arithmetic itself does not change.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/401k-calculator/cases.json",
+    "sha256": "e3f73b4b4e946c8124d2022a3bfd77d6be980733ad1bae37636d9ee301907496"
+  },
+  "caseDecisions": "cases.json holds only Layer3Labs client and law-firm records. None concern retirement accounts or this site, so no client or conversation claim is used. No reader-survey records exist for this site.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/x-trends/2026-11-23.md",
+      "sha256": "bcde17e2bb1f25c632a646338396796729541cdde9032d79d239da7911d7f963"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/coverage-lookup.txt",
+      "sha256": "a210c69def93fcff21504ac54e808747ea9748f8d35e24d9bd21fe368ec55e62"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/calc.py",
+      "sha256": "4931614599dc7abf43967c49287952a6e33fa0f1f1cc65489e188eb8bd569403"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/calc-output.json",
+      "sha256": "40d2c4d3db0bf14ca34cd72138f9ba8577dbfb5e8438218cdc0fb0e85abe0131"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/crs-if12861-credit-card-rate-caps.txt",
+      "sha256": "4ba1b3cb9fe73afe549d711ec4e85de1566c302793f862a373f9b5be32d2ca49"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/dol-esg-duty-of-loyalty-UNVERIFIED.txt",
+      "sha256": "f4884e57506f41a98d5e35aeeab847a8b68206c1a57f900f2e602a9d2db3e3be"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/finra-tips-turbulent-market.txt",
+      "sha256": "292bbb21a1f06b00359a8c85bd67a0826f15660fd006c60fdc57f4ea9a9108d1"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/govinfo-s381-introduced.txt",
+      "sha256": "97b60d74d12fdaaa7ffe8932a3ecc8e7336b53c0b2d2017b7353e5ad6c307aab"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/playstation-store-cancellation-policy.txt",
+      "sha256": "12dfa8aa422469c2521f8a823e77d9510111c7ac63944e8b6830187563c727d3"
+    }
+  ],
+  "method": "Exact decimal arithmetic in model.py: balance_after = start x (1 - d); gain_needed = d / (1 - d); years = ln(1 / (1 - d)) / ln(1 + r) with r = 7%. Output saved to output.json.",
+  "units": "USD, percent, years",
+  "limitations": "Single hypothetical balance, constant return, no contributions, fees, taxes, inflation or sequence-of-returns effects. Says nothing about any individual's account or the right action for them.",
+  "counterexample": "A saver who must withdraw within one or two years cannot wait 3.3 years for a 20% drop to recover at 7%, so a 'wait it out' reading fails for them. A saver still contributing buys more shares at lower prices, which shortens recovery. Either case reverses a simple wait-or-sell rule.",
+  "execution": {
+    "command": [
+      "python3",
+      "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/401k-calculator/model.py"
+    ],
+    "code": {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/401k-calculator/model.py",
+      "sha256": "237463430e75dfd09c4138cd23b56a50ccd157a27cde0b884618052dae4b7403"
+    },
+    "inputs": [
+      {
+        "path": "reports/x-trends/2026-11-23.md",
+        "sha256": "bcde17e2bb1f25c632a646338396796729541cdde9032d79d239da7911d7f963"
+      }
+    ],
+    "output": {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/401k-calculator/output.json",
+      "sha256": "d143ccf17fc8be6e90067bc46ab6f4850bfabf04ac91203ffacbed5091361151"
+    }
+  },
+  "sources": [
+    {
+      "label": "FINRA, Investor Tips for Turbulent Markets",
+      "url": "https://www.finra.org/investors/insights/tips-turbulent-market",
+      "checked": "2026-11-23"
+    }
+  ],
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [
+      "evidence/401k-calculator/model.py",
+      "evidence/401k-calculator/output.json"
+    ],
+    "scopeAndLimits": "Calculated from a hypothetical $100,000 balance; FINRA guidance is reported evidence, attributed to FINRA only for goals, diversification, avoiding impulsive moves and dollar-cost averaging.",
+    "publicMethod": "On-page table with the stated hypothetical balance and formula note beside it",
+    "placement": "Added section 1 'What a Market Drop Does to Your 401(k) Balance', directly under the calculator"
+  },
+  "takeaway": {
+    "conclusion": "A 10% to 20% drop is recoverable arithmetically but needs an 11.11% to 25.00% gain; whether to sell turns on time horizon and goals. FINRA's process points favor a plan over a reaction.",
+    "appliesTo": "401(k) savers deciding during a drop; not personalized advice",
+    "basis": "calculated table plus FINRA reported guidance",
+    "conditionThatChangesIt": "A withdrawal need within a few years, or a portfolio concentrated in one holding"
+  },
+  "firstFindingAttribution": "In our internal modeling, we applied the drop to a hypothetical $100,000 balance (see table).",
+  "guardrails": [
+    "Attribute to FINRA only: clarify goals, diversify, avoid impulsive moves, dollar-cost averaging, check registration. Never attribute 'selling locks in losses' or rebalancing rules to FINRA.",
+    "No personalized sell/hold advice; conditional on time horizon.",
+    "Label hypothetical $100,000 and the 7% assumption beside the numbers; ignore contributions stated.",
+    "No TESTED claims; calculated label only."
+  ],
+  "caseUses": [],
+  "growth": {
+    "originRoutine": "mindmap-pass x-trends 2026-11-23",
+    "queryFamily": "What does a 10% to 20% market drop do to my 401(k), and should I sell?",
+    "hypothesis": "A conditioned, sourced answer block on the existing calculator page earns incremental clicks for the news-driven query family",
+    "primaryMetric": "Google clicks",
+    "baseline": "unavailable (no GSC data read in this run)",
+    "status": "not-yet-published"
+  }
+}

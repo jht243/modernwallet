@@ -1,0 +1,131 @@
+d platform protections remain. Competitor publication recovery begins with `competitor-handoff.py publication-plan --out NEW_INTERNAL_DIRECTORY/plan.json`, which selects the actual last per-route journal records and projects existing decisions without adding reviews. A remaining original content round is distinct from an exhausted budget. Native clients retain their scoped release rules.
+<!-- /credential-free-deployment-proof-20261110 -->
+
+For new scheduled editorial runs, use this repository’s checked-in land-run.sh mark and land commands from the start. Continue to build and compare the exact approved content live. An explicit production denial remains pending at its original boundary; never try a different release path after a denial.
+
+[Source: reports/mindmap-pass/2026-11-23-xtrends-run/preflight-audit/task.json]
+{
+  "version": 1,
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "xtrends-2026-11-23",
+  "producer": "main",
+  "routes": [
+    "/retirement/401k-calculator/",
+    "/credit-card-interest-calculator/"
+  ],
+  "nextAction": "Execute approved Mindmap write actions, lint, and capture local rendered preview.",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/02c32814e11e646262f0ead0c37b0c69c7ae9173aa85f04a8c83cfa20c6610b8/approval-manifest.json",
+      "sha256": "02c32814e11e646262f0ead0c37b0c69c7ae9173aa85f04a8c83cfa20c6610b8",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/42d86a6c97ca07bc185c82e5e6f2f06437f2a76cad2a52a26b754d85300b167d/2026-11-23-xtrends.md",
+      "sha256": "42d86a6c97ca07bc185c82e5e6f2f06437f2a76cad2a52a26b754d85300b167d",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends.md"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/763961bf2b410ed1fdae8387241220a72f29afc215a9a1cbf374269bc3e1d2bd/readiness.md",
+      "sha256": "763961bf2b410ed1fdae8387241220a72f29afc215a9a1cbf374269bc3e1d2bd",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/3e0acbe97d69445d7dc37879c46749b029d291441e0fd8d496f75736e894c9fa/chart-review.json",
+      "sha256": "3e0acbe97d69445d7dc37879c46749b029d291441e0fd8d496f75736e894c9fa",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/bcde17e2bb1f25c632a646338396796729541cdde9032d79d239da7911d7f963/2026-11-23.md",
+      "sha256": "bcde17e2bb1f25c632a646338396796729541cdde9032d79d239da7911d7f963",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/x-trends/2026-11-23.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/a210c69def93fcff21504ac54e808747ea9748f8d35e24d9bd21fe368ec55e62/coverage-lookup.txt",
+      "sha256": "a210c69def93fcff21504ac54e808747ea9748f8d35e24d9bd21fe368ec55e62",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/4931614599dc7abf43967c49287952a6e33fa0f1f1cc65489e188eb8bd569403/calc.py",
+      "sha256": "4931614599dc7abf43967c49287952a6e33fa0f1f1cc65489e188eb8bd569403",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/calc.py"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/40d2c4d3db0bf14ca34cd72138f9ba8577dbfb5e8438218cdc0fb0e85abe0131/calc-output.json",
+      "sha256": "40d2c4d3db0bf14ca34cd72138f9ba8577dbfb5e8438218cdc0fb0e85abe0131",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/calc-output.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/4ba1b3cb9fe73afe549d711ec4e85de1566c302793f862a373f9b5be32d2ca49/crs-if12861-credit-card-rate-caps.txt",
+      "sha256": "4ba1b3cb9fe73afe549d711ec4e85de1566c302793f862a373f9b5be32d2ca49",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/crs-if12861-credit-card-rate-caps.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/f4884e57506f41a98d5e35aeeab847a8b68206c1a57f900f2e602a9d2db3e3be/dol-esg-duty-of-loyalty-UNVERIFIED.txt",
+      "sha256": "f4884e57506f41a98d5e35aeeab847a8b68206c1a57f900f2e602a9d2db3e3be",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/dol-esg-duty-of-loyalty-UNVERIFIED.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/292bbb21a1f06b00359a8c85bd67a0826f15660fd006c60fdc57f4ea9a9108d1/finra-tips-turbulent-market.txt",
+      "sha256": "292bbb21a1f06b00359a8c85bd67a0826f15660fd006c60fdc57f4ea9a9108d1",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/finra-tips-turbulent-market.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/97b60d74d12fdaaa7ffe8932a3ecc8e7336b53c0b2d2017b7353e5ad6c307aab/govinfo-s381-introduced.txt",
+      "sha256": "97b60d74d12fdaaa7ffe8932a3ecc8e7336b53c0b2d2017b7353e5ad6c307aab",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/govinfo-s381-introduced.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/12dfa8aa422469c2521f8a823e77d9510111c7ac63944e8b6830187563c727d3/playstation-store-cancellation-policy.txt",
+      "sha256": "12dfa8aa422469c2521f8a823e77d9510111c7ac63944e8b6830187563c727d3",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/playstation-store-cancellation-policy.txt"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-23-xtrends-run/handoff-write.json",
+    "sha256": "4e82b088e9337740607f5805a33583fa48995d70e969430217b8b0a6a97e25fa"
+  }
+}
+

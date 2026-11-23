@@ -1,0 +1,32 @@
+{
+ "assumptions": {
+  "hypothetical_starting_balance_usd": 100000,
+  "return_after_drop_pct_per_year": 7,
+  "contributions_during_recovery": "ignored",
+  "fees_taxes_inflation": "ignored"
+ },
+ "formula": "balance_after = start*(1-d); gain_needed = d/(1-d); years = ln(1/(1-d))/ln(1+r)",
+ "drop_table": [
+  {
+   "drop_pct": 10,
+   "balance_after_usd": "90000.00",
+   "loss_usd": "10000.00",
+   "gain_needed_to_recover_pct": "11.11",
+   "years_to_recover_at_7pct_no_contributions": "1.6"
+  },
+  {
+   "drop_pct": 20,
+   "balance_after_usd": "80000.00",
+   "loss_usd": "20000.00",
+   "gain_needed_to_recover_pct": "25.00",
+   "years_to_recover_at_7pct_no_contributions": "3.3"
+  },
+  {
+   "drop_pct": 30,
+   "balance_after_usd": "70000.00",
+   "loss_usd": "30000.00",
+   "gain_needed_to_recover_pct": "42.86",
+   "years_to_recover_at_7pct_no_contributions": "5.3"
+  }
+ ]
+}

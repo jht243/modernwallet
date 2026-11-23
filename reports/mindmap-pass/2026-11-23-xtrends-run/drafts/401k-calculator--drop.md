@@ -1,0 +1,22 @@
+## What a Market Drop Does to Your 401(k) Balance
+
+A 10% to 20% drop leaves 80% to 90% of your 401(k) balance and requires an 11.11% to 25.00% gain to recover. In our internal modeling, we applied 10%, 20% and 30% drops to a hypothetical $100,000 balance and worked out the gain each one needs to recover. Because losses shrink your starting base, recovery follows the formula d / (1 - d) and demands a larger percentage gain.
+
+| Market Drop | Balance After | Gain Needed to Recover | Years to Recover at 7% |
+| :--- | :--- | :--- | :--- |
+| 10% | $90,000 | 11.11% | About 1.6 years |
+| 20% | $80,000 | 25.00% | About 3.3 years |
+| 30% | $70,000 | 42.86% | About 5.3 years |
+
+These recovery estimates assume a hypothetical $100,000 balance and the calculator's default 7% yearly return without new contributions, fees, taxes, or inflation, whereas real annual returns fluctuate.
+
+Turbulent market guidance from the [Financial Industry Regulatory Authority (FINRA)](https://www.finra.org/investors/insights/tips-turbulent-market) outlines four habits to navigate market swings you cannot control:
+
+- FINRA advises clarifying your financial goals and tying them to your long-term plan.
+- FINRA recommends diversifying across and within asset classes to prevent overexposure to any single investment, sector, or asset category.
+- FINRA suggests avoiding impulsive moves during volatile periods and focusing on your future.
+- FINRA notes that dollar-cost averaging by investing a fixed amount on a regular schedule can reduce emotional decision-making.
+
+Based on our internal modeling, a drop of this size is arithmetically recoverable if a long time horizon gives your portfolio room to rebound. If you must withdraw within two years, waiting 3.3 years is unrealistic, even though ongoing contributions buy shares at lower prices. This page offers general information and cannot judge your time horizon or goals.
+
+Readers needing withdrawals within a few years or holding a single asset should see [how to choose a financial advisor](/guides/how-to-choose-a-financial-advisor/) for professional advice, since shifting your time horizon or goals changes the right move. Enter your own balance in the calculator above, then see the [portfolio rebalancing calculator](/portfolio-rebalancing-calculator/) to check how your mix of investments looks.

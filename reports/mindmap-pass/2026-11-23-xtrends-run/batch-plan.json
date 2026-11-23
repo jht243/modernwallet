@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "jobId": "xtrends-2026-11-23",
+  "subBatchingRecommended": false,
+  "batchCount": 1,
+  "totalNewPages": 0,
+  "totalRoutes": 2,
+  "disjointPartition": true,
+  "batches": [
+    {
+      "batchIndex": 1,
+      "label": "batch-1",
+      "actionIds": [],
+      "newPageRoutes": [],
+      "existingRoutes": [
+        "/retirement/401k-calculator/",
+        "/credit-card-interest-calculator/"
+      ],
+      "routes": [
+        "/retirement/401k-calculator/",
+        "/credit-card-interest-calculator/"
+      ],
+      "routeFlags": "--route /retirement/401k-calculator/ --route /credit-card-interest-calculator/"
+    }
+  ]
+}

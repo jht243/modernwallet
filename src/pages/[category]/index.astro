@@ -151,12 +151,19 @@ const jsonLdArticle = articleSchema({
       </section>
     )}
 
+    {calc.sectionsFirst && (calc.sections ?? []).map((sec) => (
+      <section class="section">
+        <h2>{sec.heading}</h2>
+        <Fragment set:html={richBody(sec.body)} />
+      </section>
+    ))}
+
     <section class="section">
       <h2>{calc.howItWorksHeading ?? "How it works"}</h2>
       {calc.howItWorks.split("\n\n").map((para) => <p set:html={linkify(para)} />)}
     </section>
 
-    {(calc.sections ?? []).map((sec) => (
+    {!calc.sectionsFirst && (calc.sections ?? []).map((sec) => (
       <section class="section">
         <h2>{sec.heading}</h2>
         <Fragment set:html={richBody(sec.body)} />

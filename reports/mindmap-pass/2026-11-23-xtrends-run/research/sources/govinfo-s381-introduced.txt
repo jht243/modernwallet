@@ -1,0 +1,4 @@
+URL: https://www.govinfo.gov/content/pkg/BILLS-119s381is/html/BILLS-119s381is.htm
+Retrieved: 2026-11-23T16:51:56Z (WebFetch summary, not verbatim)
+S.381 "10 Percent Credit Card Interest Rate Cap Act": Mr. Sanders for himself and Mr. Hawley, Feb 4 2025, referred to Senate Banking. Adds TILA sec. 107(f) capping credit card APR at 10 percent inclusive of finance charges; bars non-finance-charge fees used to evade; overpayment recoverable within 2 years; state-law savings clause; subsection struck effective Jan 1, 2031 (sunset).
+UNVERIFIED: current committee status (congress.gov returned HTTP 403). H.R.1944 sponsor/text not primary-verified (secondary: AOC/Luna; introduced 2025-03-06 per BillTrack50).

@@ -32,6 +32,7 @@ export default defineConfig({
       if (pathname === CANCEL_PLANNER_PATH) return { ...item, lastmod: new Date(`${CANCEL_PLANNER_UPDATED}T00:00:00.000Z`) };
       if (ALTERNATIVES_LASTMOD.has(pathname)) return { ...item, lastmod: new Date(`${ALTERNATIVES_LASTMOD.get(pathname)}T00:00:00.000Z`) };
       if (pathname === ROBINHOOD_GOLD_PATH) return { ...item, lastmod: new Date(`${ROBINHOOD_GOLD_UPDATED}T00:00:00.000Z`) };
+      if (pathname === "/retirement/401k-calculator/" || pathname === "/credit-card-interest-calculator/") return { ...item, lastmod: new Date("2026-11-23T00:00:00.000Z") };
       return item;
     },
   })],

@@ -1,0 +1,316 @@
+{
+  "version": 1,
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "xtrends-2026-11-23",
+  "producer": "writer-xtrends",
+  "routes": [
+    "/retirement/401k-calculator/",
+    "/credit-card-interest-calculator/"
+  ],
+  "nextAction": "Execute approved Mindmap write actions, lint, and capture local rendered preview.",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/02c32814e11e646262f0ead0c37b0c69c7ae9173aa85f04a8c83cfa20c6610b8/approval-manifest.json",
+      "sha256": "02c32814e11e646262f0ead0c37b0c69c7ae9173aa85f04a8c83cfa20c6610b8",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/42d86a6c97ca07bc185c82e5e6f2f06437f2a76cad2a52a26b754d85300b167d/2026-11-23-xtrends.md",
+      "sha256": "42d86a6c97ca07bc185c82e5e6f2f06437f2a76cad2a52a26b754d85300b167d",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/d5d0b50d609bc0cc0e6df97d69f3b44bfabef33ad2186ada6b254155f44960ac/401k-calculator--drop.md",
+      "sha256": "d5d0b50d609bc0cc0e6df97d69f3b44bfabef33ad2186ada6b254155f44960ac",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/drafts/401k-calculator--drop.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/7bf1cd1ee6508802a27e3aa62735b3a3eab5f89576db79e6f2b72afb20a5ad94/credit-card-interest-calculator--cap.md",
+      "sha256": "7bf1cd1ee6508802a27e3aa62735b3a3eab5f89576db79e6f2b72afb20a5ad94",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/drafts/credit-card-interest-calculator--cap.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/8e29cb3a2249c6686bca5ce8fa1c3c7b699766aee68011dc7f2528b52d47802a/preview-snapshot-r2.json",
+      "sha256": "8e29cb3a2249c6686bca5ce8fa1c3c7b699766aee68011dc7f2528b52d47802a",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/audit/preview-snapshot-r2.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/763961bf2b410ed1fdae8387241220a72f29afc215a9a1cbf374269bc3e1d2bd/readiness.md",
+      "sha256": "763961bf2b410ed1fdae8387241220a72f29afc215a9a1cbf374269bc3e1d2bd",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/3e0acbe97d69445d7dc37879c46749b029d291441e0fd8d496f75736e894c9fa/chart-review.json",
+      "sha256": "3e0acbe97d69445d7dc37879c46749b029d291441e0fd8d496f75736e894c9fa",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/bcde17e2bb1f25c632a646338396796729541cdde9032d79d239da7911d7f963/2026-11-23.md",
+      "sha256": "bcde17e2bb1f25c632a646338396796729541cdde9032d79d239da7911d7f963",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/x-trends/2026-11-23.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/a210c69def93fcff21504ac54e808747ea9748f8d35e24d9bd21fe368ec55e62/coverage-lookup.txt",
+      "sha256": "a210c69def93fcff21504ac54e808747ea9748f8d35e24d9bd21fe368ec55e62",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/4931614599dc7abf43967c49287952a6e33fa0f1f1cc65489e188eb8bd569403/calc.py",
+      "sha256": "4931614599dc7abf43967c49287952a6e33fa0f1f1cc65489e188eb8bd569403",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/calc.py"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/40d2c4d3db0bf14ca34cd72138f9ba8577dbfb5e8438218cdc0fb0e85abe0131/calc-output.json",
+      "sha256": "40d2c4d3db0bf14ca34cd72138f9ba8577dbfb5e8438218cdc0fb0e85abe0131",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/calc-output.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/4ba1b3cb9fe73afe549d711ec4e85de1566c302793f862a373f9b5be32d2ca49/crs-if12861-credit-card-rate-caps.txt",
+      "sha256": "4ba1b3cb9fe73afe549d711ec4e85de1566c302793f862a373f9b5be32d2ca49",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/crs-if12861-credit-card-rate-caps.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/f4884e57506f41a98d5e35aeeab847a8b68206c1a57f900f2e602a9d2db3e3be/dol-esg-duty-of-loyalty-UNVERIFIED.txt",
+      "sha256": "f4884e57506f41a98d5e35aeeab847a8b68206c1a57f900f2e602a9d2db3e3be",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/dol-esg-duty-of-loyalty-UNVERIFIED.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/292bbb21a1f06b00359a8c85bd67a0826f15660fd006c60fdc57f4ea9a9108d1/finra-tips-turbulent-market.txt",
+      "sha256": "292bbb21a1f06b00359a8c85bd67a0826f15660fd006c60fdc57f4ea9a9108d1",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/finra-tips-turbulent-market.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/97b60d74d12fdaaa7ffe8932a3ecc8e7336b53c0b2d2017b7353e5ad6c307aab/govinfo-s381-introduced.txt",
+      "sha256": "97b60d74d12fdaaa7ffe8932a3ecc8e7336b53c0b2d2017b7353e5ad6c307aab",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/govinfo-s381-introduced.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/12dfa8aa422469c2521f8a823e77d9510111c7ac63944e8b6830187563c727d3/playstation-store-cancellation-policy.txt",
+      "sha256": "12dfa8aa422469c2521f8a823e77d9510111c7ac63944e8b6830187563c727d3",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/playstation-store-cancellation-policy.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/763961bf2b410ed1fdae8387241220a72f29afc215a9a1cbf374269bc3e1d2bd/readiness.md",
+      "sha256": "763961bf2b410ed1fdae8387241220a72f29afc215a9a1cbf374269bc3e1d2bd",
+      "checkedAt": "2026-11-23T17:13:48.829316+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/3e0acbe97d69445d7dc37879c46749b029d291441e0fd8d496f75736e894c9fa/chart-review.json",
+      "sha256": "3e0acbe97d69445d7dc37879c46749b029d291441e0fd8d496f75736e894c9fa",
+      "checkedAt": "2026-11-23T17:13:48.829316+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/bcde17e2bb1f25c632a646338396796729541cdde9032d79d239da7911d7f963/2026-11-23.md",
+      "sha256": "bcde17e2bb1f25c632a646338396796729541cdde9032d79d239da7911d7f963",
+      "checkedAt": "2026-11-23T17:13:48.829316+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/x-trends/2026-11-23.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/a210c69def93fcff21504ac54e808747ea9748f8d35e24d9bd21fe368ec55e62/coverage-lookup.txt",
+      "sha256": "a210c69def93fcff21504ac54e808747ea9748f8d35e24d9bd21fe368ec55e62",
+      "checkedAt": "2026-11-23T17:13:48.829316+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/4931614599dc7abf43967c49287952a6e33fa0f1f1cc65489e188eb8bd569403/calc.py",
+      "sha256": "4931614599dc7abf43967c49287952a6e33fa0f1f1cc65489e188eb8bd569403",
+      "checkedAt": "2026-11-23T17:13:48.829316+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/calc.py"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/40d2c4d3db0bf14ca34cd72138f9ba8577dbfb5e8438218cdc0fb0e85abe0131/calc-output.json",
+      "sha256": "40d2c4d3db0bf14ca34cd72138f9ba8577dbfb5e8438218cdc0fb0e85abe0131",
+      "checkedAt": "2026-11-23T17:13:48.829316+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/calc-output.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/4ba1b3cb9fe73afe549d711ec4e85de1566c302793f862a373f9b5be32d2ca49/crs-if12861-credit-card-rate-caps.txt",
+      "sha256": "4ba1b3cb9fe73afe549d711ec4e85de1566c302793f862a373f9b5be32d2ca49",
+      "checkedAt": "2026-11-23T17:13:48.829316+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/crs-if12861-credit-card-rate-caps.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/f4884e57506f41a98d5e35aeeab847a8b68206c1a57f900f2e602a9d2db3e3be/dol-esg-duty-of-loyalty-UNVERIFIED.txt",
+      "sha256": "f4884e57506f41a98d5e35aeeab847a8b68206c1a57f900f2e602a9d2db3e3be",
+      "checkedAt": "2026-11-23T17:13:48.829316+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/dol-esg-duty-of-loyalty-UNVERIFIED.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/292bbb21a1f06b00359a8c85bd67a0826f15660fd006c60fdc57f4ea9a9108d1/finra-tips-turbulent-market.txt",
+      "sha256": "292bbb21a1f06b00359a8c85bd67a0826f15660fd006c60fdc57f4ea9a9108d1",
+      "checkedAt": "2026-11-23T17:13:48.829316+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/finra-tips-turbulent-market.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/97b60d74d12fdaaa7ffe8932a3ecc8e7336b53c0b2d2017b7353e5ad6c307aab/govinfo-s381-introduced.txt",
+      "sha256": "97b60d74d12fdaaa7ffe8932a3ecc8e7336b53c0b2d2017b7353e5ad6c307aab",
+      "checkedAt": "2026-11-23T17:13:48.829316+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/govinfo-s381-introduced.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/12dfa8aa422469c2521f8a823e77d9510111c7ac63944e8b6830187563c727d3/playstation-store-cancellation-policy.txt",
+      "sha256": "12dfa8aa422469c2521f8a823e77d9510111c7ac63944e8b6830187563c727d3",
+      "checkedAt": "2026-11-23T17:13:48.829316+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/playstation-store-cancellation-policy.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/11fd3013b53c814395dea972e19acf668109ef40bdec7a814557a332c7224ed7/review.json",
+      "sha256": "11fd3013b53c814395dea972e19acf668109ef40bdec7a814557a332c7224ed7",
+      "checkedAt": "2026-11-23T17:13:48.829316+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/audit/review.json"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 1,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "snapshot": {
+    "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/8e29cb3a2249c6686bca5ce8fa1c3c7b699766aee68011dc7f2528b52d47802a/preview-snapshot-r2.json",
+    "sha256": "8e29cb3a2249c6686bca5ce8fa1c3c7b699766aee68011dc7f2528b52d47802a",
+    "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/audit/preview-snapshot-r2.json"
+  },
+  "findings": [
+    {
+      "id": "A1-1",
+      "status": "open",
+      "evidence": "Replace with: 'lists five steps for turbulent markets. Four bear on whether to sell:' and add a fifth bullet: 'FINRA advises working only with registered investment professionals, whom you can check with FINRA BrokerCheck, and being wary of guaranteed risk-free returns.' (link BrokerCheck to https://brokercheck.finra.org/)."
+    },
+    {
+      "id": "A1-2",
+      "status": "open",
+      "evidence": "'If you need the money within two years, a 20% drop (about 3.3 years to recover at 7%) or a 30% drop (about 5.3 years) may not recover in time. If you keep contributing, new deposits buy shares at lower prices, which can shorten recovery.'"
+    },
+    {
+      "id": "A1-3",
+      "status": "open",
+      "evidence": "'Whether to sell depends on your time horizon and goals. With many years until you need the money, the arithmetic above shows a drop is recoverable; if you need withdrawals within a few years or hold mostly one asset, see how to choose a financial advisor.'"
+    },
+    {
+      "id": "A1-4",
+      "status": "open",
+      "evidence": "Name the rows: 'drops of 10% to 30% are arithmetically recoverable at a constant 7% return if you have years to wait.'"
+    },
+    {
+      "id": "R1-1-checks-sourceSupport",
+      "status": "open",
+      "evidence": "FINRA 'four habits' contradicts the source's five steps; each of the four bullets otherwise matches FINRA wording (steps 1 to 3). Calculation sourced from replayed model."
+    },
+    {
+      "id": "R1-1-factualReview-primarySources",
+      "status": "open",
+      "evidence": "Re-fetched FINRA Investor Tips for Turbulent Markets: it lists FIVE steps (goals, diversify, focus on future/DCA, interest rates, protect your money/BrokerCheck). The page says FINRA 'outlines four habits' and lists four, misstating the source's count and omitting the registered-professional/BrokerCheck step the chart review F4 asked to carry."
+    },
+    {
+      "id": "R1-1-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Takeaway sentences are muddled: 'waiting 3.3 years is unrealistic, even though ongoing contributions buy shares at lower prices' and 'since shifting your time horizon or goals changes the right move' do not parse on first read, and 3.3 years is only the 20% row (the 10% row is 1.6 years, inside the two-year window)."
+    },
+    {
+      "id": "A2-1",
+      "status": "open",
+      "evidence": "In src/data/calculators.ts move the 10% APR Cap Scenario content so it renders before howItWorks (e.g. put it first in the sections order or render sections before howItWorks as the 401k entry does), keep it as H2 right after the intro."
+    },
+    {
+      "id": "A2-2",
+      "status": "open",
+      "evidence": "'CRS notes issuers could add auxiliary fees or limit credit, and the text of S.381 as introduced would bar fees used to evade the cap, so whether the $57.53 saving holds depends on final bill language and issuer response. CRS also notes cardholders who keep a card at the lower rate could benefit.'"
+    },
+    {
+      "id": "A2-3",
+      "status": "open",
+      "evidence": "Use https://crsreports.congress.gov/product/pdf/IF/IF12861 (403 to bots but valid for readers) or keep mirror and say 'via EveryCRSReport'."
+    },
+    {
+      "id": "A2-4",
+      "status": "open",
+      "evidence": "'No 10% credit card interest cap is law today; S.381 and H.R.1944 are proposals.'"
+    },
+    {
+      "id": "R1-2-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Bill and CRS facts verified, but the fee-workaround claim ignores S.381's own anti-evasion fee clause and CRS's lower-rate benefit for revolvers (see finding). The CRS link points to the everycrsreport.com mirror, not the first-party CRS/Congress.gov product."
+    },
+    {
+      "id": "R1-2-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Section order is intro, How it works, 10% APR Cap Scenario. Approved answer_placement: 'directly under the intro answer', before how-it-works; intent-answered-late. FAQ, table and takeaway otherwise agree ($57.53, $98.63, $41.10)."
+    },
+    {
+      "id": "R1-2-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "The fee-erosion conclusion ('quickly disappears', single fee of $57.53 wipes out the saving) omits S.381 section 107(f)(2), which as introduced bars fees from being used to evade the cap and limits non-finance-charge fees to the finance charges assessed, and omits CRS's note that revolvers still at the lower APR could benefit. One-sided against the strongest primary-source counterexample."
+    },
+    {
+      "id": "R1-2-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "The reader's question 'what would a 10% cap save me, and is it law' is answered in the third section, after the long How it works block, but the approved plan and chart guardrail F6 require the cap block directly under the intro (first two sections). Title, meta, FAQ schema (10 questions) otherwise fine."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-23-xtrends-run/handoff-write-r2.json",
+    "sha256": "8d7060d638cf105acbf6ee1b159ba92fbe134ea9424285c4ef4192a07a886d3b"
+  }
+}

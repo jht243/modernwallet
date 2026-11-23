@@ -1,0 +1,64 @@
+.py"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/40d2c4d3db0bf14ca34cd72138f9ba8577dbfb5e8438218cdc0fb0e85abe0131/calc-output.json",
+      "sha256": "40d2c4d3db0bf14ca34cd72138f9ba8577dbfb5e8438218cdc0fb0e85abe0131",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/calc-output.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/4ba1b3cb9fe73afe549d711ec4e85de1566c302793f862a373f9b5be32d2ca49/crs-if12861-credit-card-rate-caps.txt",
+      "sha256": "4ba1b3cb9fe73afe549d711ec4e85de1566c302793f862a373f9b5be32d2ca49",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/crs-if12861-credit-card-rate-caps.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/f4884e57506f41a98d5e35aeeab847a8b68206c1a57f900f2e602a9d2db3e3be/dol-esg-duty-of-loyalty-UNVERIFIED.txt",
+      "sha256": "f4884e57506f41a98d5e35aeeab847a8b68206c1a57f900f2e602a9d2db3e3be",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/dol-esg-duty-of-loyalty-UNVERIFIED.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/292bbb21a1f06b00359a8c85bd67a0826f15660fd006c60fdc57f4ea9a9108d1/finra-tips-turbulent-market.txt",
+      "sha256": "292bbb21a1f06b00359a8c85bd67a0826f15660fd006c60fdc57f4ea9a9108d1",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/finra-tips-turbulent-market.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/97b60d74d12fdaaa7ffe8932a3ecc8e7336b53c0b2d2017b7353e5ad6c307aab/govinfo-s381-introduced.txt",
+      "sha256": "97b60d74d12fdaaa7ffe8932a3ecc8e7336b53c0b2d2017b7353e5ad6c307aab",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/govinfo-s381-introduced.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/blobs/12dfa8aa422469c2521f8a823e77d9510111c7ac63944e8b6830187563c727d3/playstation-store-cancellation-policy.txt",
+      "sha256": "12dfa8aa422469c2521f8a823e77d9510111c7ac63944e8b6830187563c727d3",
+      "checkedAt": "2026-11-23T16:55:35.598894+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/playstation-store-cancellation-policy.txt"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-23-xtrends-run/handoff-write.json",
+    "sha256": "4e82b088e9337740607f5805a33583fa48995d70e969430217b8b0a6a97e25fa"
+  }
+}
+

@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "preparationMode": "full",
+  "jobId": "xtrends-2026-11-23",
+  "author": "mindmap-build",
+  "date": "2026-11-23",
+  "source": "reports/x-trends/2026-11-23.md",
+  "interpretedBrief": "Daily X-trend scout brief (4 bullets, untrusted). After primary-source verification and coverage lookup: enrich the existing 401(k) calculator with a market-drop section (calculated drop/recovery arithmetic plus FINRA process guidance), enrich the existing credit card interest calculator with a 10% APR cap scenario (calculated, bills as proposals per CRS/govinfo), drop the GTA 6 PlayStation refund item as off-topic for a personal finance site, and defer the DOL ERISA ESG proposal until a primary Federal Register text exists. No new pages.",
+  "chartPath": "reports/mindmap-pass/2026-11-23-xtrends.md",
+  "request": {
+    "source": {
+      "path": "reports/x-trends/2026-11-23.md",
+      "sha256": "bcde17e2bb1f25c632a646338396796729541cdde9032d79d239da7911d7f963"
+    },
+    "goal": "Capture rising finance-news search demand (401(k) drops, 10% credit card APR cap) by improving existing calculator pages with verified, non-personalized, calculated analysis; avoid thin new pages, off-topic gaming content and unverified regulatory claims. Bullets 3 (GTA 6 refund) and 4 (DOL ERISA proposal) were evaluated and dispositioned in exclusions (dropped/deferred), so they carry no mapped requirement.",
+    "requirements": [
+      {
+        "id": "REQ-1",
+        "description": "401(k) correction bullet: answer what a 10-20% drop does to a balance and what FINRA guidance says about acting in turbulent markets",
+        "acceptance": "Existing /retirement/401k-calculator/ carries a section in its first two sections with a drop/recovery table (calculated) and FINRA-attributed guidance, no personalized advice",
+        "actionIds": [
+          "A1"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "description": "10% credit card APR cap bullet: enrich the existing credit card interest calculator with a cap scenario",
+        "acceptance": "Existing /credit-card-interest-calculator/ carries a cap-scenario section with 24% vs 10% cycle interest (calculated), bill status and sunset per CRS/govinfo, and CRS-cited tradeoffs",
+        "actionIds": [
+          "A2"
+        ]
+      }
+    ]
+  },
+  "actions": [
+    {
+      "id": "A1",
+      "problem": "Lens 1 direct intent + news-driven (brief bullet 1; X posts about 401(k) drops rose after the Nov 20 market close, per brief, unverified). Autocomplete (estimate, NOT measured, no provider keys): 'should i sell my 401k now', 'should i sell my 401k stocks now', '401k down 10' 66 completions. lookup: no exact page; nearest /retirement/401k-calculator/ (growth projection, no drawdown section) and /portfolio-rebalancing-calculator/ (separate rebalancing intent). Commits naming topic: none.",
+      "solution": "Add a market-drop section to /retirement/401k-calculator/ (existing spoke 401k-calculator in src/data/spokes-retirement.ts): drop/recovery table at 10/20/30% plus FINRA-sourced process guidance; link to portfolio rebalancing calculator.",
+      "bucket": "update existing body text",
+      "target": "/retirement/401k-calculator/",
+      "format": "article section with comparison table - finite scenarios",
+      "best_medium": "text + comparison table",
+      "resolved_deliverable": "text + comparison table",
+      "serp_verdict": "unread",
+      "serp_evidence": "SERP not read: DataForSEO credentials unavailable in this run; demand is autocomplete estimate only.",
+      "reader_question": "What does a 10% to 20% market drop do to my 401(k), and should I sell? [verb-only - no PAA read; ac: 'should i sell my 401k now' completion]",
+      "answer": "A 10-20% drop leaves 90-80% of the balance and needs an 11.11-25.00% gain to recover; FINRA's turbulent-market guidance stresses goals, diversification and avoiding impulsive moves, and the sell-or-hold choice depends on time horizon, which the page cannot judge (shape: verdict with condition).",
+      "answer_placement": "section 1: the added 'What a Market Drop Does to Your 401(k) Balance' block placed ahead of existing explanatory sections",
+      "presentation": {
+        "medium": "text + comparison table",
+        "placement": "Added block in the first two sections of the calculator page, before existing how-it-works prose",
+        "reason": "A finite set of drop sizes answers the question; the existing calculator lets the reader enter their own balance",
+        "readerInputs": [
+          "Starting balance (existing calculator)",
+          "Drop size (table rows 10/20/30%)"
+        ],
+        "interaction": {
+          "decision": "not-useful",
+          "reason": "The page's existing calculator already takes the reader's own balance/APR; the added static table covers the finite scenarios and a second tool would duplicate it"
+        },
+        "animation": {
+          "decision": "not-useful",
+          "reason": "A three-row table is clearer without motion"
+        }
+      }
+    },
+    {
+      "id": "A2",
+      "problem": "Lens 1 direct intent + news-driven (brief bullet 2). Autocomplete (estimate, NOT measured): 'credit card interest cap trump', 'credit card interest cap when does it start' (31 completions). lookup: EXACT SLUG /credit-card-interest-calculator/ (same tool intent, no cap scenario). Commits naming topic: none.",
+      "solution": "Add a '10% APR cap scenario' section to /credit-card-interest-calculator/ (calculators.ts entry credit-card-interest-calculator): 24% vs 10% one-cycle interest on the page's $5,000 example, bill status and Jan 2031 sunset, CRS-cited tradeoffs, and a note that the cap is not law.",
+      "bucket": "update existing body text",
+      "target": "/credit-card-interest-calculator/",
+      "format": "article section with comparison table - finite scenarios",
+      "best_medium": "text + comparison table",
+      "resolved_deliverable": "text + comparison table",
+      "serp_verdict": "unread",
+      "serp_evidence": "SERP not read: DataForSEO credentials unavailable; demand is autocomplete estimate only.",
+      "reader_question": "What would a 10% credit card interest cap save me, and is it law? [verb-only - no PAA read; ac: 'credit card interest cap when does it start']",
+      "answer": "Not law: S.381 and H.R.1944 are proposals that would cap APRs at 10% until January 2031; on the page's $5,000 example, one 30-day cycle drops from $98.63 at 24% to $41.10 at 10%, a $57.53 difference, if the card stayed available at that rate (shape: figure with condition).",
+      "answer_placement": "section 1: the added '10% APR Cap Scenario' block placed directly under the intro answer",
+      "presentation": {
+        "medium": "text + comparison table",
+        "placement": "Added block directly after the intro and before the how-it-works section",
+        "reason": "Two rows (24% vs 10%) answer the figure question; the existing calculator lets readers enter their own APR",
+        "readerInputs": [
+          "APR (existing calculator input)",
+          "Balance (existing calculator input)"
+        ],
+        "interaction": {
+          "decision": "not-useful",
+          "reason": "The page's existing calculator already takes the reader's own balance/APR; the added static table covers the finite scenarios and a second tool would duplicate it"
+        },
+        "animation": {
+          "decision": "not-useful",
+          "reason": "A three-row table is clearer without motion"
+        }
+      }
+    }
+  ],
+  "emergingClusters": [
+    "No emerging clusters detected this run. (Brief-derived news clusters 'credit card interest cap' and '401k drop' are covered by A2 and A1; SEMRUSH/DataForSEO expansion and SERP reads unavailable without keys.)"
+  ],
+  "exclusions": [
+    "GTA 6 PlayStation refund: DROP. Sony policy verified (14-day cancel only before download/stream starts; faulty content exempt) but gaming-consumer topic is off-mission for a personal finance site, no existing games content, prior 2026-11-16 chart dropped the sibling GTA 6 item, and chargeback/EU-UK angles would need unverified legal sources.",
+    "DOL EBSA duty-of-loyalty / ESG proposal: DEFER. No primary source retrievable (dol.gov 403; Federal Register publication not before Nov 24; X and law/news links unverified). A March 31 2026 EBSA proposal (91 FR 16088) is a different rule. Re-queue once the Federal Register text exists; the PBM guide covers a different ERISA rule.",
+    "Trump Fox remark (Nov 21) and the Nov 20 market-level figures: excluded from closed facts; only X/secondary sources, not primary-verified.",
+    "New-page candidates /calculators/401k-market-drop-calculator and /guides/gta-6-playstation-refund: not created; prefer enrichment per instruction."
+  ],
+  "preparation": {
+    "status": "PASS",
+    "readiness": {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/readiness.md",
+      "sha256": "763961bf2b410ed1fdae8387241220a72f29afc215a9a1cbf374269bc3e1d2bd"
+    }
+  },
+  "evidenceFiles": [
+    {
+      "path": "reports/x-trends/2026-11-23.md",
+      "sha256": "bcde17e2bb1f25c632a646338396796729541cdde9032d79d239da7911d7f963"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/coverage-lookup.txt",
+      "sha256": "a210c69def93fcff21504ac54e808747ea9748f8d35e24d9bd21fe368ec55e62"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/calc.py",
+      "sha256": "4931614599dc7abf43967c49287952a6e33fa0f1f1cc65489e188eb8bd569403"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/evidence/calc-output.json",
+      "sha256": "40d2c4d3db0bf14ca34cd72138f9ba8577dbfb5e8438218cdc0fb0e85abe0131"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/crs-if12861-credit-card-rate-caps.txt",
+      "sha256": "4ba1b3cb9fe73afe549d711ec4e85de1566c302793f862a373f9b5be32d2ca49"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/dol-esg-duty-of-loyalty-UNVERIFIED.txt",
+      "sha256": "f4884e57506f41a98d5e35aeeab847a8b68206c1a57f900f2e602a9d2db3e3be"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/finra-tips-turbulent-market.txt",
+      "sha256": "292bbb21a1f06b00359a8c85bd67a0826f15660fd006c60fdc57f4ea9a9108d1"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/govinfo-s381-introduced.txt",
+      "sha256": "97b60d74d12fdaaa7ffe8932a3ecc8e7336b53c0b2d2017b7353e5ad6c307aab"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-23-xtrends-run/research/sources/playstation-store-cancellation-policy.txt",
+      "sha256": "12dfa8aa422469c2521f8a823e77d9510111c7ac63944e8b6830187563c727d3"
+    }
+  ],
+  "executionPlan": [
+    {
+      "phase": 1,
+      "action": "Record advisory cannibalization check (no destructive merges)."
+    },
+    {
+      "phase": 2,
+      "action": "Apply any approved metadata updates (or N/A when none in chart)."
+    },
+    {
+      "phase": 3,
+      "action": "Generate net-new approved routes with verified evidence packets."
+    },
+    {
+      "phase": 4,
+      "action": "Run independent Phase 4 rendered-page audit on all changed routes."
+    },
+    {
+      "phase": 5,
+      "action": "Apply any approved existing-page body enrichments (or N/A when none)."
+    },
+    {
+      "phase": 6,
+      "action": "Add approved inbound and outbound internal links across inspected routes."
+    },
+    {
+      "phase": 7,
+      "action": "Update sitemaps and prepare IndexNow URL list without pre-deploy ping."
+    },
+    {
+      "phase": 8,
+      "action": "Compile Phase 8 execution and cluster summary."
+    },
+    {
+      "phase": 9,
+      "action": "Commit, deploy to main, verify HTTP 200 live renders, and submit IndexNow."
+    }
+  ],
+  "publicationScope": {
+    "commit": true,
+    "push": true,
+    "liveVerification": true,
+    "indexNow": true
+  },
+  "newPageBriefs": []
+}

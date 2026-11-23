@@ -1,0 +1,75 @@
+{
+ "slug": "401k-calculator--faq",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 132,
+ "floor": 80,
+ "input_tokens": 25802,
+ "output_tokens": 243,
+ "thinking_tokens": 3464,
+ "cached_tokens": 24612,
+ "est_cost_usd": 0.0166,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "auditor: section repeats existing page heading(s) ['## Frequently Asked Questions'] \u2014 merge, do not duplicate"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 132,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 83,
+   "floor": 80,
+   "ratio": 1.04,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    0
+   ],
+   "applied": [
+    {
+     "id": "L4",
+     "quote": "FINRA also notes that dollar-cost averaging can reduce emotional decision-making during market downturns.",
+     "replacement": "FINRA also notes that dollar-cost averaging can reduce emotional decision-making.",
+     "type": "unsupported",
+     "why": "SOURCE does not state dollar-cost averaging reduces emotional decision-making during market downturns."
+    },
+    {
+     "id": "L7",
+     "quote": "Because real market returns vary over time, actual recovery timelines will differ.",
+     "replacement": "Real returns vary.",
+     "type": "inference",
+     "why": "SOURCE states real returns vary without asserting a causal effect on recovery timelines."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 144
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 2398
+  }
+ },
+ "seconds": 84.8,
+ "response_id": "d3EEa4evE7mQytMP8ozl8Ak",
+ "generated_at": "2026-11-23T17:03:07+0000"
+}

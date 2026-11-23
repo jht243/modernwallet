@@ -80,6 +80,8 @@ export interface CalculatorDef {
   howItWorksHeading?: string;
   /** Optional extra body sections (paragraphs, pipe tables, lists) rendered after howItWorks and before the FAQs. */
   sections?: Array<{ heading: string; body: string }>;
+  /** Render `sections` before howItWorks (new answer block directly after the calculator). */
+  sectionsFirst?: boolean;
   faqs: FAQ[];
   /** Authoritative primary sources cited on the page (E-E-A-T). */
   sources?: Source[];

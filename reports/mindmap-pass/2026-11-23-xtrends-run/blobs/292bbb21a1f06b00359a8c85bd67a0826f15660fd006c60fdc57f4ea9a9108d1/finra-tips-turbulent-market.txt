@@ -1,0 +1,5 @@
+URL: https://www.finra.org/investors/insights/tips-turbulent-market
+Retrieved: 2026-11-23T16:51:56Z (WebFetch; tool returned a SUMMARY, not verbatim page text - fetch tool limitation, recorded honestly)
+Title: Investor Tips for Turbulent Markets
+Five tips: (1) Clarify your financial goals (prioritized goals with cost, time frame, steps; tied to long-term plan). (2) Diversify your assets (avoid too much in one investment/asset class/sector; spread across stocks, bonds, cash and within each). (3) Focus on your future: avoid impulsive moves in volatile markets; dollar-cost averaging can reduce emotional decision-making. (4) Understand changing interest rates (bond prices generally fall when rates rise; duration). (5) Protect your money (scammers pitch risk-free returns in volatile periods; check registration with FINRA BrokerCheck). Closing: you cannot control market swings; focus on asset allocation and diversification.
+NOTE: page does NOT (per this extract) say "selling locks in losses" or give rebalancing rules; do not attribute those phrases to FINRA.
