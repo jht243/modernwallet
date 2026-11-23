@@ -4102,10 +4102,22 @@
           "at": "2026-11-23T16:53:36+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-23T16:58:39+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-23T16:44:54+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-23T16:58:39+00:00",
       "claimedOn": "2026-11-23",
       "attempts": 1,
       "lastNextAt": "2026-11-23T16:39:05+00:00",
@@ -4166,7 +4178,12 @@
           }
         ],
         "recordedAt": "2026-11-23T16:53:36+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/simplifi/",
+      "commit": "5576f75b",
+      "indexnow": "200",
+      "seoUpgraded": "2026-11-23",
+      "bodyWords": 2990
     },
     {
       "vendor": "Tiller",
@@ -4242,10 +4259,22 @@
           "at": "2026-11-23T16:53:36+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-23T16:58:39+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-23T16:46:48+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-23T16:58:39+00:00",
       "claimedOn": "2026-11-23",
       "attempts": 1,
       "lastNextAt": "2026-11-23T16:39:05+00:00",
@@ -4320,7 +4349,12 @@
           }
         ],
         "recordedAt": "2026-11-23T16:53:36+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/payoneer/",
+      "commit": "5576f75b",
+      "indexnow": "200",
+      "seoUpgraded": "2026-11-23",
+      "bodyWords": 2800
     },
     {
       "vendor": "LendingClub",
@@ -4396,10 +4430,22 @@
           "at": "2026-11-23T16:53:36+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-23T16:58:39+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-23T16:46:58+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-23T16:58:39+00:00",
       "claimedOn": "2026-11-23",
       "attempts": 1,
       "lastNextAt": "2026-11-23T16:39:05+00:00",
@@ -4467,7 +4513,12 @@
           }
         ],
         "recordedAt": "2026-11-23T16:53:36+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/m1/",
+      "commit": "5576f75b",
+      "indexnow": "200",
+      "seoUpgraded": "2026-11-23",
+      "bodyWords": 3160
     }
   ]
 }
