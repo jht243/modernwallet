@@ -141,6 +141,9 @@ def call(s, method: str, url: str, body: dict | None = None) -> dict:
             time.sleep(backoffs[attempt])
             continue
         if r.status_code in (401, 403):
+            if r.status_code == 403 and any(k in r.text.lower() for k in ("quota", "ratelimit", "rate limit")) and attempt < len(backoffs):
+                time.sleep(max(backoffs[attempt], 15 * (attempt + 1)))
+                continue
             raise HardFail(11, f"{r.status_code} from {url}: {r.text[:300]}")
         if r.status_code in (429, 500, 502, 503, 504) and attempt < len(backoffs):
             retry_after = r.headers.get("Retry-After") if hasattr(r, "headers") else None
@@ -193,7 +196,7 @@ def merge_gsc_rows(*parts: list[dict]) -> list[dict]:
              "position": (p / i) if i else 0.0} for k, c, i, p in merged.values()]
 
 
-GSC_PARALLEL = 8          # Search Analytics pages fetched concurrently per wave
+GSC_PARALLEL = 2          # Search Analytics extra pages fetched concurrently when >25k rows
 
 
 def _gsc_rows_window(s, site: str, start: date, end: date, dims: list[str],
@@ -210,7 +213,10 @@ def _gsc_rows_window(s, site: str, start: date, end: date, dims: list[str],
                 {"dimension": "country", "operator": "equals", "expression": country}]}]
         return call(s, "POST", url, body).get("rows", [])
 
-    rows, start_row = [], 0
+    first = page(0)
+    if len(first) < GSC_PAGE:
+        return first
+    rows, start_row = list(first), GSC_PAGE
     with ThreadPoolExecutor(GSC_PARALLEL) as ex:
         while True:
             offsets = [start_row + i * GSC_PAGE for i in range(GSC_PARALLEL)
@@ -309,9 +315,9 @@ def peak_positions(gsc, site, start: date, dims, country=None) -> dict:
     impression-weighted position that had real volume (>= MIN_BASE_IMPR).
     Position doesn't inflate when a news spike lifts demand, so the best
     position is a fair "what this page can rank" bar — unlike peak traffic."""
-    from concurrent.futures import ThreadPoolExecutor   # 13 weekly pulls in parallel (was ~2 min serial)
+    from concurrent.futures import ThreadPoolExecutor   # 13 weekly pulls with bounded concurrency to respect GSC short-term load quota
     starts = [start + timedelta(days=7 * w) for w in range(HISTORY_WEEKS)]
-    with ThreadPoolExecutor(max_workers=6) as ex:
+    with ThreadPoolExecutor(max_workers=2) as ex:
         pulled = list(ex.map(lambda a: index(gsc_rows(gsc, site, a, a + timedelta(days=6), dims, country)),
                              starts))
     weeks = list(zip(starts, pulled))
