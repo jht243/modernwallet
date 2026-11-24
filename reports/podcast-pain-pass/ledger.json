@@ -822,22 +822,22 @@
           "slug": "house-hacking",
           "kw": "house hacking",
           "vol": 4400,
-          "note": "2026-11-04 recovery: deferred; only the 2019 HUD Handbook 4000.1 PDF retrievable (not the current online handbook). Next: fetch current HUD online handbook + CFPB owner-occupancy pages. || 2026-11-10 recovery: probed; hud.gov handbook landing pages (hud.gov/hud-partners/single-family-handbook-4000-1) and consumerfinance.gov now return 200 but no current owner-occupancy/unit-limit section was extracted or reviewed; not built. Next: extract the current 4000.1 owner-occupancy + 2-4 unit sections, then run full chart review. || 2026-11-17 recovery (run 55d442fa8ce54614ae65a959530c18e8): coverage rechecked (only a passing mention in comparisons.ts, no page); hud.gov 4000.1 PDF still the Oct-2019 issue, landing page has no owner-occupancy text; not built. Next: current online 4000.1 section or FHA program page with owner-occupancy/2-4 unit rules."
+          "note": "2026-11-04 recovery: deferred; only the 2019 HUD Handbook 4000.1 PDF retrievable (not the current online handbook). Next: fetch current HUD online handbook + CFPB owner-occupancy pages. || 2026-11-10 recovery: probed; hud.gov handbook landing pages (hud.gov/hud-partners/single-family-handbook-4000-1) and consumerfinance.gov now return 200 but no current owner-occupancy/unit-limit section was extracted or reviewed; not built. Next: extract the current 4000.1 owner-occupancy + 2-4 unit sections, then run full chart review. || 2026-11-17 recovery (run 55d442fa8ce54614ae65a959530c18e8): coverage rechecked (only a passing mention in comparisons.ts, no page); hud.gov 4000.1 PDF still the Oct-2019 issue, landing page has no owner-occupancy text; not built. Next: current online 4000.1 section or FHA program page with owner-occupancy/2-4 unit rules. || 2026-11-24 recovery (run 5f16c53a1c9e4cd5b14cbb540166c5d2): hud.gov 4000.1 landing/handbook pages return 200 but contain no owner-occupancy or 2-4 unit text; consumerfinance.gov FHA page redirects; not built."
         },
         {
           "slug": "retirement-budget",
           "kw": "retirement budget",
           "vol": 1300,
-          "note": "2026-11-04 recovery: deferred; BLS Access Denied, ssa.gov 403. Next: obtain BLS Consumer Expenditure tables or another primary source. || 2026-11-10 recovery: bls.gov still 403 and ssa.gov 403; not built. || 2026-11-17 recovery (run 55d442fa8ce54614ae65a959530c18e8): bls.gov and ssa.gov still 403; not built."
+          "note": "2026-11-04 recovery: deferred; BLS Access Denied, ssa.gov 403. Next: obtain BLS Consumer Expenditure tables or another primary source. || 2026-11-10 recovery: bls.gov still 403 and ssa.gov 403; not built. || 2026-11-17 recovery (run 55d442fa8ce54614ae65a959530c18e8): bls.gov and ssa.gov still 403; not built. || 2026-11-24 recovery (run 5f16c53a1c9e4cd5b14cbb540166c5d2): bls.gov and ssa.gov still 403; not built."
         },
         {
           "slug": "how-to-appeal-property-taxes",
           "kw": "how to appeal property taxes",
           "vol": 590,
-          "note": "2026-11-04 recovery: deferred; procedures set per county/state, no single primary source. Next: choose official assessor sources or scope per state. || 2026-11-10 recovery: no single primary source (census.gov property-tax page 404); not built. || 2026-11-17 recovery (run 55d442fa8ce54614ae65a959530c18e8): no single primary source, state/county-specific; not built."
+          "note": "2026-11-04 recovery: deferred; procedures set per county/state, no single primary source. Next: choose official assessor sources or scope per state. || 2026-11-10 recovery: no single primary source (census.gov property-tax page 404); not built. || 2026-11-17 recovery (run 55d442fa8ce54614ae65a959530c18e8): no single primary source, state/county-specific; not built. || 2026-11-24 recovery (run 5f16c53a1c9e4cd5b14cbb540166c5d2): still state/county-specific with no single primary source; not built."
         }
       ]
     }
   ],
-  "last_run": "2026-11-04"
+  "last_run": "2026-11-24"
 }
