@@ -1,0 +1,87 @@
+{
+ "rows": [
+  {
+   "keyword": "is wealthability worth it",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "wealthability",
+   "volume": 210,
+   "volume_low": 210,
+   "volume_high": 210,
+   "kd": 32,
+   "cpc": 46.48,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "wealthability cost",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": 0,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "wealthability review",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "wealthability pricing",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 0,
+    "corroborates": false
+   }
+  }
+ ],
+ "notes": [
+  "semrush unusable (HTTP 403)",
+  "volume: using dataforseo (quality order semrush > dataforseo)",
+  "dataforseo returned volume for 3/5 phrases",
+  "kd: using dataforseo (quality order semrush > dataforseo)",
+  "No tool volume for 2 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 2/5 rows corroborated live"
+ ]
+}

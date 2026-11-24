@@ -1,0 +1,14 @@
+coverage_lookup: 1 candidate(s) vs 881 repo pages / 897 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1266 past-chart lines
+
+### /reviews/wealthability-review  — row - · create new content
+keyword: wealthability cost
+reader question (new page intent): How much does Wealthability cost and is it worth it?
+lookup terms: wealthability   format cues: pricing review
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms: none
+Commits naming the topic: none
+Same run overlap: none
+

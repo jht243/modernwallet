@@ -1,0 +1,23 @@
+{
+  "jobId": "trend-lane-c-2026-11-24",
+  "reviewer": "chart-reviewer",
+  "round": 2,
+  "manifestSha256": "3364842366021f413635b6da1996d1b19bc24fc6ef41ac9c830fcdc885b3bffd",
+  "manifestFileSha256": "2f1b519f85d07066c65ad9ef8c7d5ba1ff3c7f9a60b6b90c70a27144d5b2093f",
+  "readinessSha256": "e5b667ccfdb870a76569e9d7680c24df77a217b7f5c5cbb3b93c872cf84a8286",
+  "verdict": "PASS",
+  "evidence": "Round 2 re-verification. F1: readiness.md, manifest exclusions/goal and chart no longer claim 'no price published'; they cite Live $197/mo or $1,497/yr, Tax-Free Formula $497, Bootcamp base price not shown, matching my independent live fetches. F2: wealthability-live/-tax-free-formula/-tap.txt saved and listed in evidenceFiles with hashes, honestly labelled WebFetch summaries. F3: SERP unread and autocomplete estimates unmeasured are now disclosed, and the drop rests on demand only (10/mo, 1 impr pos 100). Round-1 coverage verification of the 8 covered queries stands (registries and live 200s). No fabrication; tested labels excluded for paid finance education; no content changes proposed.",
+  "findings": [],
+  "resolvedFindingIds": [
+    "F1",
+    "F2",
+    "F3"
+  ],
+  "requestCoverage": [
+    {
+      "requirement": "Decide whether uncovered query warrants a page; drop honestly if demand weak",
+      "status": "met",
+      "note": "Dropped on weak demand with honest groundability note."
+    }
+  ]
+}

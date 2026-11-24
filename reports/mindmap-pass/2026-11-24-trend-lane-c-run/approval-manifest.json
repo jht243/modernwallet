@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "preparationMode": "full",
+  "jobId": "trend-lane-c-2026-11-24",
+  "author": "mindmap-build",
+  "date": "2026-11-24",
+  "source": "reports/mindmap-pass/2026-11-24-trend-lane-c-run/brief.txt",
+  "interpretedBrief": "Top-10 GSC queries plus research pack for 7 days to 2026-11-24. Only uncovered finding is 'wealthability cost'; all others already covered or ledgered. Decide on demand and groundability whether a Wealthability pricing page is warranted.",
+  "chartPath": "reports/mindmap-pass/2026-11-24-trend-lane-c.md",
+  "request": {
+    "source": {
+      "path": "reports/mindmap-pass/2026-11-24-trend-lane-c-run/brief.txt",
+      "sha256": "0da1d957c3dd49e897fb2dd1ef634ec62cb552cc7aab6a90b9b77f5654f627ec"
+    },
+    "goal": "Decide whether the one uncovered query warrants a page; drop honestly if demand is weak.",
+    "requirements": []
+  },
+  "actions": [],
+  "emergingClusters": [
+    "No emerging clusters detected this run."
+  ],
+  "exclusions": [
+    "wealthability cost / review / pricing: DROPPED on weak demand only - 1 GSC impression at position 100, DataForSEO 'wealthability cost' ~10/mo, SERP unread, 'review'/'pricing' autocomplete estimates unmeasured. Primary prices are groundable (Live $197/mo or $1,497/yr; Tax-Free Formula $497; Bootcamp base price not shown), so a multi-product price page becomes viable if demand grows. Paid finance-education service excluded from tested labels.",
+    "All other top-10 queries: already covered (see research pack and ledger).",
+    "site:themodernwallet.com: noise operator."
+  ],
+  "preparation": {
+    "status": "PASS",
+    "readiness": {
+      "path": "reports/mindmap-pass/2026-11-24-trend-lane-c-run/readiness.md",
+      "sha256": "e5b667ccfdb870a76569e9d7680c24df77a217b7f5c5cbb3b93c872cf84a8286"
+    }
+  },
+  "evidenceFiles": [
+    {
+      "path": "reports/mindmap-pass/2026-11-24-trend-lane-c-run/research/coverage-lookup.txt",
+      "sha256": "d93a9fe8bc5b4040f9571367051bbd844ef73b039bfc395b89463a2c6254c514"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-24-trend-lane-c-run/research/keyword-volumes.json",
+      "sha256": "9c7f4574ad6216e1cbd4ee68a7be3cc47b96341f2833c26dfb0aa3db23aadf24"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-24-trend-lane-c-run/research/autocomplete.wealthability.csv",
+      "sha256": "707c95bfb11e503ad79ed69f5b92f6fbabb6e683cc6c63fbd012da8b73bf2c58"
+    },
+    {
+      "path": "reports/trend-pass/2026-11-24.research.md",
+      "sha256": "171722187f4c45f5a947b9f6ecb6896866bc999c5b237c3bfd31915d5e9a533d"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-24-trend-lane-c-run/research/sources/wealthability-com.txt",
+      "sha256": "94890f979d1bd0b0cb067b21ce6368a0ef21146ffe4f960275daf4148cd12cbb"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-24-trend-lane-c-run/research/sources/wealthability-live.txt",
+      "sha256": "81af88f99095e68c4627fac069af644e393f34ff4a0473fe794a267eb28905a9"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-24-trend-lane-c-run/research/sources/wealthability-tax-free-formula.txt",
+      "sha256": "ba885366dbe284ebf9245eabadc2ca8bdbdb1226e3e6a0b090173bb893154081"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-24-trend-lane-c-run/research/sources/wealthability-tap.txt",
+      "sha256": "6dd1a33e5dac1ce62f5759ed5321f9cfb5ea3100e5d9b88e5dfba9f9ce539824"
+    }
+  ],
+  "executionPlan": [
+    {
+      "phase": 1,
+      "action": "Record advisory cannibalization check (no destructive merges)."
+    },
+    {
+      "phase": 2,
+      "action": "Apply any approved metadata updates (or N/A when none in chart)."
+    },
+    {
+      "phase": 3,
+      "action": "Generate net-new approved routes with verified evidence packets."
+    },
+    {
+      "phase": 4,
+      "action": "Run independent Phase 4 rendered-page audit on all changed routes."
+    },
+    {
+      "phase": 5,
+      "action": "Apply any approved existing-page body enrichments (or N/A when none)."
+    },
+    {
+      "phase": 6,
+      "action": "Add approved inbound and outbound internal links across inspected routes."
+    },
+    {
+      "phase": 7,
+      "action": "Update sitemaps and prepare IndexNow URL list without pre-deploy ping."
+    },
+    {
+      "phase": 8,
+      "action": "Compile Phase 8 execution and cluster summary."
+    },
+    {
+      "phase": 9,
+      "action": "Commit, deploy to main, verify HTTP 200 live renders, and submit IndexNow."
+    }
+  ],
+  "publicationScope": {
+    "commit": false,
+    "push": false,
+    "liveVerification": false,
+    "indexNow": false
+  },
+  "newPageBriefs": []
+}
