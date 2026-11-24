@@ -95,7 +95,11 @@
  "QuickBooks": "https://quickbooks.intuit.com/",
  "TurboTax": "https://turbotax.intuit.com/",
  "Intuit": "https://www.intuit.com/",
- "FreshBooks": "https://www.freshbooks.com/",
+ "FreshBooks": {
+  "url": "https://partner.freshbooks.com/py7h0tl7ihyn",
+  "sponsored": true,
+  "company": "freshbooks.com"
+ },
  "Zoho": "https://www.zoho.com/",
  "H&amp;R Block": "https://www.hrblock.com/",
  "TaxAct": "https://www.taxact.com/",
@@ -127,7 +131,11 @@
  "Grubhub": "https://www.grubhub.com/",
  "Shipt": "https://www.shipt.com/",
  "Lyft": "https://www.lyft.com/",
- "Upwork": "https://www.upwork.com/",
+ "Upwork": {
+  "url": "https://partners.upwork.com/vj2u90xqn4fn",
+  "sponsored": true,
+  "company": "upwork.com"
+ },
  "Fiverr": "https://www.fiverr.com/",
  "Etsy": "https://www.etsy.com/",
  "Airbnb": "https://www.airbnb.com/",
@@ -279,5 +287,505 @@
   "url": "https://americanexpress.com/en-us/referral/platinum-card?ref=JONATTNwWt&XL=MIINS",
   "sponsored": true,
   "company": "americanexpress.com"
+ },
+ "Voye Global": {
+  "url": "https://affiliate.voyedatapool.com/gltqh7l4dlfk",
+  "sponsored": true,
+  "company": "voyedatapool.com"
+ },
+ "Guesty": {
+  "url": "https://join.guesty.com/eibasht32366",
+  "sponsored": true,
+  "company": "guesty.com"
+ },
+ "Houzz Pro": {
+  "url": "https://affiliates.houzz.com/b6jiph3mbvk9",
+  "sponsored": true,
+  "company": "houzz.com"
+ },
+ "Houzz": {
+  "url": "https://affiliates.houzz.com/b6jiph3mbvk9",
+  "sponsored": true,
+  "company": "houzz.com"
+ },
+ "Envoy": {
+  "url": "https://envoy.partnerlinks.io/egvlch0dx1mm",
+  "sponsored": true,
+  "company": "envoy.com"
+ },
+ "Healthie": {
+  "url": "https://refer.gethealthie.com/g5zvpwgq9rcz",
+  "sponsored": true,
+  "company": "gethealthie.com"
+ },
+ "Carepatron": {
+  "url": "https://get.carepatron.com/5eonpcv46u2h",
+  "sponsored": true,
+  "company": "carepatron.com"
+ },
+ "Outgrow": {
+  "url": "https://share.outgrow.biz/159ewjx1vm4m",
+  "sponsored": true,
+  "company": "outgrow.co"
+ },
+ "LearnWorlds": {
+  "url": "https://get.learnworlds.com/o0k1rf0d7m2c",
+  "sponsored": true,
+  "company": "learnworlds.com"
+ },
+ "Circle.so": {
+  "url": "https://try.circle.so/r47lvskk66qq",
+  "sponsored": true,
+  "company": "circle.so"
+ },
+ "xTiles": {
+  "url": "https://ps.xtiles.app/jgo313wr22lz",
+  "sponsored": true,
+  "company": "xtiles.app"
+ },
+ "Prezi": {
+  "url": "https://try.prezi.com/zyvyopb3dkzh-8z9qk5",
+  "sponsored": true,
+  "company": "prezi.com"
+ },
+ "Gamma.app": {
+  "url": "https://try.gamma.app/7uwgsygyaff5",
+  "sponsored": true,
+  "company": "gamma.app"
+ },
+ "Beautiful.ai": {
+  "url": "https://beautifulai.partnerlinks.io/66cdrzzyxo0a",
+  "sponsored": true,
+  "company": "beautiful.ai"
+ },
+ "Fax.Plus": {
+  "url": "https://ref.alohi.com/dkoy90x0k1lh",
+  "sponsored": true,
+  "company": "fax.plus"
+ },
+ "Bright Data": {
+  "url": "https://get.brightdata.com/beyua0qk4m94",
+  "sponsored": true,
+  "company": "brightdata.com"
+ },
+ "Brand24": {
+  "url": "https://try.brand24.com/j57b79yq2fw8",
+  "sponsored": true,
+  "company": "brand24.com"
+ },
+ "Intercom": {
+  "url": "https://intercommmm.partnerlinks.io/1ukt8faap597",
+  "sponsored": true,
+  "company": "intercom.com"
+ },
+ "Monday.com": {
+  "url": "https://try.monday.com/vj3cddjxxsh7",
+  "sponsored": true,
+  "company": "monday.com"
+ },
+ "Softr": {
+  "url": "https://get.softr.io/zptn0hj3135v",
+  "sponsored": true,
+  "company": "softr.io"
+ },
+ "Nutshell": {
+  "url": "https://try.nutshell.com/emuk4xf767tp-39z813",
+  "sponsored": true,
+  "company": "nutshell.com"
+ },
+ "Close CRM": {
+  "url": "https://refer.close.com/1np12yjs2ecn",
+  "sponsored": true,
+  "company": "close.com"
+ },
+ "folk CRM": {
+  "url": "https://try.folk.app/ml0nxsedtgqo",
+  "sponsored": true,
+  "company": "folk.app"
+ },
+ "SoftSync AI": {
+  "url": "https://affiliate.softsync.ai/iz23m4l52v46",
+  "sponsored": true,
+  "company": "softsync.ai"
+ },
+ "Apollo.io": {
+  "url": "https://get.apollo.io/70i10a6w0z8h",
+  "sponsored": true,
+  "company": "apollo.io"
+ },
+ "Instantly.ai": {
+  "url": "https://refer.instantly.ai/028h8ccmdi8h",
+  "sponsored": true,
+  "company": "instantly.ai"
+ },
+ "Reply.io": {
+  "url": "https://get.reply.io/2fged4qwt1de",
+  "sponsored": true,
+  "company": "reply.io"
+ },
+ "Seamless.AI": {
+  "url": "https://get.seamless.ai/sl4ov9316kt6",
+  "sponsored": true,
+  "company": "seamless.ai"
+ },
+ "Lusha": {
+  "url": "https://partnerstack.lusha.com/txypyi1ur6h8",
+  "sponsored": true,
+  "company": "lusha.com"
+ },
+ "ZoomInfo": {
+  "url": "https://try.zoominfo.com/f9cnkvlafmvx",
+  "sponsored": true,
+  "company": "zoominfo.com"
+ },
+ "AiSDR": {
+  "url": "https://partner.aisdr.com/z1n1n432is7n",
+  "sponsored": true,
+  "company": "aisdr.com"
+ },
+ "KrispCall": {
+  "url": "https://try.krispcall.com/dv51azqoq9j7",
+  "sponsored": true,
+  "company": "krispcall.com"
+ },
+ "CallHippo": {
+  "url": "https://join.callhippo.com/h3js4b1fc3t2",
+  "sponsored": true,
+  "company": "callhippo.com"
+ },
+ "Unitel Voice": {
+  "url": "https://unitelvoice.partnerlinks.io/lnrwd29e233d",
+  "sponsored": true,
+  "company": "unitelvoice.com"
+ },
+ "RingCentral": {
+  "url": "https://join.ringcentral.com/gk292cowdk6g",
+  "sponsored": true,
+  "company": "ringcentral.com"
+ },
+ "CallRail": {
+  "url": "https://partners.callrail.com/fyoqwiud0o2u",
+  "sponsored": true,
+  "company": "callrail.com"
+ },
+ "Brevo": {
+  "url": "https://get.brevo.com/s2rfzcwa7e8x",
+  "sponsored": true,
+  "company": "brevo.com"
+ },
+ "GetResponse": {
+  "url": "https://try.getresponsetoday.com/vl0aomciyz6u",
+  "sponsored": true,
+  "company": "getresponse.com"
+ },
+ "ConvertKit": {
+  "url": "https://partners.kit.com/r9mj41ru1j70",
+  "sponsored": true,
+  "company": "kit.com"
+ },
+ "Unbounce": {
+  "url": "https://unbounce.partnerlinks.io/iheuu07vpr4w",
+  "sponsored": true,
+  "company": "unbounce.com"
+ },
+ "Leadpages": {
+  "url": "https://try.leadpages.com/gnguuh9l8h4p",
+  "sponsored": true,
+  "company": "leadpages.com"
+ },
+ "Tidio": {
+  "url": "https://affiliate.tidio.com/hnetudund6qq",
+  "sponsored": true,
+  "company": "tidio.com"
+ },
+ "Gorgias": {
+  "url": "https://partner.gorgias.com/3r1m0gla55pm",
+  "sponsored": true,
+  "company": "gorgias.com"
+ },
+ "Surfer SEO": {
+  "url": "https://get.surferseo.com/nx0m3qwqb7in",
+  "sponsored": true,
+  "company": "surferseo.com"
+ },
+ "AdCreative.ai": {
+  "url": "https://free-trial.adcreative.ai/fe9tpqpxg6ef",
+  "sponsored": true,
+  "company": "adcreative.ai"
+ },
+ "Vista Social": {
+  "url": "https://join.vistasocial.com/jhfhx20qonl3",
+  "sponsored": true,
+  "company": "vistasocial.com"
+ },
+ "Rank Prompt": {
+  "url": "https://join.rankprompt.com/gk110vif72kl",
+  "sponsored": true,
+  "company": "rankprompt.com"
+ },
+ "Trainual": {
+  "url": "https://start.trainual.com/qztycbgmihdu",
+  "sponsored": true,
+  "company": "trainual.com"
+ },
+ "MRPeasy": {
+  "url": "https://try.mrpeasy.com/cr8h4truikt8",
+  "sponsored": true,
+  "company": "mrpeasy.com"
+ },
+ "Katana Cloud Inventory": {
+  "url": "https://psref.katanamrp.com/gwhv24rg8f5v",
+  "sponsored": true,
+  "company": "katanamrp.com"
+ },
+ "Katana MRP": {
+  "url": "https://psref.katanamrp.com/gwhv24rg8f5v",
+  "sponsored": true,
+  "company": "katanamrp.com"
+ },
+ "ElevenLabs": {
+  "url": "https://try.elevenlabs.io/adtg4pnwm2zt",
+  "sponsored": true,
+  "company": "elevenlabs.io"
+ },
+ "Murf AI": {
+  "url": "https://get.murf.ai/zfg3o22b6z7z",
+  "sponsored": true,
+  "company": "murf.ai"
+ },
+ "Descript": {
+  "url": "https://get.descript.com/9t2d2kwnionu",
+  "sponsored": true,
+  "company": "descript.com"
+ },
+ "Riverside.fm": {
+  "url": "https://affiliate.riverside.com/mma1g9loql7b",
+  "sponsored": true,
+  "company": "riverside.com"
+ },
+ "MeetGeek": {
+  "url": "https://get.meetgeek.ai/afr2y8our6vl",
+  "sponsored": true,
+  "company": "meetgeek.ai"
+ },
+ "MindStudio": {
+  "url": "https://get.mindstudio.ai/efn6ksyd5ulu",
+  "sponsored": true,
+  "company": "mindstudio.ai"
+ },
+ "Pinecone": {
+  "url": "https://try.pinecone.io/s0k1j3kcmc6q",
+  "sponsored": true,
+  "company": "pinecone.io"
+ },
+ "RunPod": {
+  "url": "https://get.runpod.io/f0940sbr1bsy",
+  "sponsored": true,
+  "company": "runpod.io"
+ },
+ "Netlify": {
+  "url": "https://join.netlify.com/rbtp9vx73xu1",
+  "sponsored": true,
+  "company": "netlify.com"
+ },
+ "Turbotic": {
+  "url": "https://try.turbotic.com/wdxu54nj3j47",
+  "sponsored": true,
+  "company": "turbotic.com"
+ },
+ "Plansom": {
+  "url": "https://get.plansom.com/fr6tc6ofgu5p",
+  "sponsored": true,
+  "company": "plansom.com"
+ },
+ "ngram.com": {
+  "url": "https://partner.ngram.com/4sxtl1niwcr3",
+  "sponsored": true,
+  "company": "ngram.com"
+ },
+ "Dry Ground AI": {
+  "url": "https://partners.dryground.ai/qxoq9ft61e4j",
+  "sponsored": true,
+  "company": "dryground.ai"
+ },
+ "Glide Apps": {
+  "url": "https://join.glideapps.com/ok9akth6mkj6",
+  "sponsored": true,
+  "company": "glideapps.com"
+ },
+ "lemlist": {
+  "url": "https://get.lemlist.com/bc9vacjqkvqy",
+  "sponsored": true,
+  "company": "lemlist.com"
+ },
+ "Lemlist": {
+  "url": "https://get.lemlist.com/bc9vacjqkvqy",
+  "sponsored": true,
+  "company": "lemlist.com"
+ },
+ "CrowdStrike": {
+  "url": "https://get.crowdstrike.com/8siqzmlmq0ea",
+  "sponsored": true,
+  "company": "crowdstrike.com"
+ },
+ "Castmagic": {
+  "url": "https://get.castmagic.io/xeuq16me7gx6",
+  "sponsored": true,
+  "company": "castmagic.io"
+ },
+ "SmartSuite": {
+  "url": "https://partners.smartsuite.com/evtu70jhtcx7",
+  "sponsored": true,
+  "company": "smartsuite.com"
+ },
+ "airSlate": {
+  "url": "https://partnerstack.signnow.com/ebb2djru5h29",
+  "sponsored": true,
+  "company": "airslate.com"
+ },
+ "SignNow": {
+  "url": "https://partnerstack.signnow.com/ebb2djru5h29",
+  "sponsored": true,
+  "company": "signnow.com"
+ },
+ "Signable": {
+  "url": "https://try.signable.co.uk/24w3uzpv8zkh",
+  "sponsored": true,
+  "company": "signable.co.uk"
+ },
+ "Capsule CRM": {
+  "url": "https://get.capsulenow.io/wbr90kr62anr",
+  "sponsored": true,
+  "company": "capsulecrm.com"
+ },
+ "Planday": {
+  "url": "https://partnerships.planday.com/uk8yxwm9c1p9",
+  "sponsored": true,
+  "company": "planday.com"
+ },
+ "Unleashed Software": {
+  "url": "https://try.unleashedsoftware.com/ecn5jleholm4",
+  "sponsored": true,
+  "company": "unleashedsoftware.com"
+ },
+ "800.com": {
+  "url": "https://try.800.com/j43pxuuwki43",
+  "sponsored": true,
+  "company": "800.com"
+ },
+ "Gushwork": {
+  "url": "https://try.gushwork.ai/tdd1k2s1kl21",
+  "sponsored": true,
+  "company": "gushwork.ai"
+ },
+ "ThorData": {
+  "url": "https://affiliate.thordata.com/y8asshnj976s",
+  "sponsored": true,
+  "company": "thordata.com"
+ },
+ "Inworld AI": {
+  "url": "https://get.platform.inworld.ai/v4n9l0sla24x",
+  "sponsored": true,
+  "company": "inworld.ai"
+ },
+ "Devs.ai": {
+  "url": "https://join.devs.ai/n9la45tfpj4k",
+  "sponsored": true,
+  "company": "devs.ai"
+ },
+ "Teachable": {
+  "url": "https://partnerstack.teachable.com/mspmo4u5shho",
+  "sponsored": true,
+  "company": "teachable.com"
+ },
+ "Proton Mail": {
+  "url": "https://now.getproton.me/ebyaybi9c3r1",
+  "sponsored": true,
+  "company": "proton.me"
+ },
+ "Proton VPN": {
+  "url": "https://now.getproton.me/ebyaybi9c3r1",
+  "sponsored": true,
+  "company": "proton.me"
+ },
+ "Proton Pass": {
+  "url": "https://now.getproton.me/ebyaybi9c3r1",
+  "sponsored": true,
+  "company": "proton.me"
+ },
+ "Proton Drive": {
+  "url": "https://now.getproton.me/ebyaybi9c3r1",
+  "sponsored": true,
+  "company": "proton.me"
+ },
+ "Tresorit": {
+  "url": "https://partnerstack.tresorit.com/h44syhrz8b61",
+  "sponsored": true,
+  "company": "tresorit.com"
+ },
+ "IDrive": {
+  "url": "https://partners.idrive.com/7wfmwx3qznn0",
+  "sponsored": true,
+  "company": "idrive.com"
+ },
+ "Taxfyle": {
+  "url": "https://partners.taxfyle.com/ofkptcjnjb1k",
+  "sponsored": true,
+  "company": "taxfyle.com"
+ },
+ "TaxCycle": {
+  "url": "https://invitation.taxcycle.com/xr22fevqoig2",
+  "sponsored": true,
+  "company": "taxcycle.com"
+ },
+ "Melio": {
+  "url": "https://referrals.melio.com/fz0t51aorr0z",
+  "sponsored": true,
+  "company": "melio.com"
+ },
+ "Forwardly": {
+  "url": "https://get.forwardly.com/86wock8mj8nt",
+  "sponsored": true,
+  "company": "forwardly.com"
+ },
+ "PayRewards": {
+  "url": "https://affiliate.payrewards.com/bn1qaekymbs6",
+  "sponsored": true,
+  "company": "payrewards.com"
+ },
+ "Synder": {
+  "url": "https://partnerstack.synder.com/6e1cg9561yp7",
+  "sponsored": true,
+  "company": "synder.com"
+ },
+ "Every.io": {
+  "url": "https://try.every.io/pah91yomt0re",
+  "sponsored": true,
+  "company": "every.io"
+ },
+ "Navan": {
+  "url": "https://get.navan.com/dd8cdrrobsx7",
+  "sponsored": true,
+  "company": "navan.com"
+ },
+ "Ownr": {
+  "url": "https://partners.ownr.co/myj2q8ijhrhx",
+  "sponsored": true,
+  "company": "ownr.co"
+ },
+ "Bokun": {
+  "url": "https://join.bokun.io/kob0rk1v43de",
+  "sponsored": true,
+  "company": "bokun.io"
+ },
+ "Bolt for Business": {
+  "url": "https://get.business.bolt.eu/j4js7gnmy9rf",
+  "sponsored": true,
+  "company": "bolt.eu"
+ },
+ "Momence": {
+  "url": "https://partners.momence.com/q6zf9gbl4pcl",
+  "sponsored": true,
+  "company": "momence.com"
  }
 }
