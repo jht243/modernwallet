@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { AUTHOR, OPERATOR, SITE } from "../data/site";
+import { EDITORIAL_DESK, EDITORIAL_REVIEWER, OPERATOR, SITE } from "../data/site";
 import { personSchema } from "../lib/jsonld";
 
 const canonicalUrl = new URL("/about/", Astro.site).toString();
@@ -15,8 +15,8 @@ const jsonLdBreadcrumb = {
 };
 ---
 <BaseLayout
-  title={`About ${SITE.name} — Our Editorial Approach`}
-  description={`Who writes ${SITE.name} and how we keep our free financial calculators and guides accurate, sourced, and up to date.`}
+  title={`About ${SITE.name} — Editorial Leadership & Review Standards`}
+  description={`Who runs ${SITE.name}, how our Research Desk builds financial calculators, and how Publisher & Editorial Reviewer ${EDITORIAL_REVIEWER.displayName} oversees accuracy.`}
 >
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdPerson)} />
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
@@ -35,7 +35,7 @@ const jsonLdBreadcrumb = {
     <section class="section">
       <h2>Who operates {SITE.name}</h2>
       <p>
-        {SITE.name} is operated by <a href={OPERATOR.url} target="_blank" rel="noopener">{OPERATOR.name}</a>.
+        {SITE.name} is published by <a href={OPERATOR.url} target="_blank" rel="noopener">{OPERATOR.name}</a>.
         The site focuses on free financial calculators and educational finance content for readers
         who want to understand the math behind loans, savings, investing, retirement, budgeting,
         and net worth decisions.
@@ -43,24 +43,42 @@ const jsonLdBreadcrumb = {
     </section>
 
     <section class="section">
-      <h2>Our editorial approach</h2>
-      <p>Money decisions deserve accurate tools. Every calculator on {SITE.name} runs the same standard financial formulas that lenders and planners use, and every page is written to explain how the result is reached. We cite primary sources — like the Consumer Financial Protection Bureau, the Federal Reserve, and the IRS — rather than second-hand summaries.</p>
+      <h2>How we separate writing from editorial review</h2>
+      <p>
+        <strong>Author — {EDITORIAL_DESK.name}:</strong> {EDITORIAL_DESK.description}
+      </p>
+      <p>
+        <strong>Editorial Oversight — {EDITORIAL_REVIEWER.displayName}:</strong> Editorial standards,
+        formula transparency, and source verification are overseen independently by our publisher and
+        editorial reviewer so no page relies on unverified secondary blogs.
+      </p>
       <p>Our calculators are educational tools, not personalized financial advice. For decisions specific to your situation, consult a licensed professional.</p>
       <p class="policy-links">
-        Read our <a href="/editorial-policy/">editorial policy</a> and
+        Read our <a href="/editorial-policy/">how we review &amp; editorial policy</a> and
         <a href="/methodology/">calculator methodology</a>.
       </p>
     </section>
 
     <section class="section author">
-      <h2>Who writes {SITE.name}</h2>
+      <h2>Publisher &amp; Editorial Reviewer</h2>
       <div class="author-card">
-        <div class="avatar" aria-hidden="true">{AUTHOR.name.split(" ").map((p) => p[0]).join("")}</div>
+        <img
+          src={EDITORIAL_REVIEWER.imagePath}
+          alt={EDITORIAL_REVIEWER.displayName}
+          width="72"
+          height="72"
+          class="avatar-img"
+        />
         <div>
-          <p class="aname">{AUTHOR.name}</p>
-          <p class="arole">{AUTHOR.role}</p>
-          <p class="abio">{AUTHOR.bio}</p>
-          <p class="aknows"><strong>Focus areas:</strong> {AUTHOR.knowsAbout.join(", ")}.</p>
+          <p class="aname"><a href={EDITORIAL_REVIEWER.path}>{EDITORIAL_REVIEWER.displayName}</a></p>
+          <p class="arole">{EDITORIAL_REVIEWER.role} · {EDITORIAL_REVIEWER.credentialSummary}</p>
+          <p class="abio">{EDITORIAL_REVIEWER.bio}</p>
+          <p class="aknows"><strong>Focus areas:</strong> {EDITORIAL_REVIEWER.knowsAbout.join(", ")}.</p>
+          <p class="alinks">
+            <a href={EDITORIAL_REVIEWER.path}>Full reviewer profile</a> ·{" "}
+            <a href="https://www.jonathanteplitsky.com/" target="_blank" rel="noopener">jonathanteplitsky.com &nearr;</a> ·{" "}
+            <a href="https://www.linkedin.com/in/jonathanteplitsky/" target="_blank" rel="noopener">LinkedIn &nearr;</a>
+          </p>
         </div>
       </div>
     </section>
@@ -78,10 +96,17 @@ const jsonLdBreadcrumb = {
     .section h2 { font-size: 1.45rem; margin: 0 0 12px; }
     .section p { color: #333; line-height: 1.7; max-width: 720px; }
     .author-card { display: flex; gap: 18px; align-items: flex-start; }
-    .avatar { flex-shrink: 0; width: 56px; height: 56px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; }
-    .aname { font-weight: 700; font-size: 1.1rem; margin: 0; }
-    .arole { color: var(--primary-dark); font-weight: 600; margin: 2px 0 8px; }
-    .abio, .aknows { margin: 8px 0 0; }
-    @media (max-width: 600px) { .hero h1 { font-size: 1.85rem; } }
+    .avatar-img { flex-shrink: 0; width: 72px; height: 72px; border-radius: 50%; object-fit: cover; border: 2px solid #d9e6e0; }
+    .aname { font-weight: 700; font-size: 1.15rem; margin: 0; }
+    .aname a { color: inherit; text-decoration: none; }
+    .aname a:hover { text-decoration: underline; }
+    .arole { color: var(--primary-dark); font-weight: 600; margin: 2px 0 8px; font-size: 0.94rem; }
+    .abio, .aknows, .alinks { margin: 8px 0 0; }
+    .alinks a { color: var(--primary-dark); font-weight: 600; text-decoration: none; }
+    .alinks a:hover { text-decoration: underline; }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.85rem; }
+      .author-card { flex-direction: column; }
+    }
   </style>
 </BaseLayout>

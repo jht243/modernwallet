@@ -1,11 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { SITE } from "../data/site";
+import { EDITORIAL_DESK, EDITORIAL_REVIEWER, SITE } from "../data/site";
 
 const canonicalUrl = new URL("/editorial-policy/", Astro.site).toString();
-const title = `${SITE.name} Editorial Policy — Sourcing & Review Process`;
+const title = `${SITE.name} Editorial Policy — How We Research & Review`;
 const description =
-  `${SITE.name} explains financial topics with calculator-first, source-backed content. See how we research, review, update, and disclose limits.`;
+  `See how ${SITE.name}'s Research Desk builds primary-sourced financial guides and how Publisher & Editorial Reviewer ${EDITORIAL_REVIEWER.displayName} oversees accuracy and updates.`;
 
 const jsonLdBreadcrumb = {
   "@context": "https://schema.org",
@@ -26,51 +26,71 @@ const jsonLdBreadcrumb = {
     </nav>
 
     <header class="hero">
-      <h1>Editorial Policy</h1>
+      <h1>How We Review &amp; Editorial Policy</h1>
       <p class="lede">
         {SITE.name} publishes educational financial calculators, guides, comparisons, and roundups
-        built to explain the math behind money decisions.
+        built to explain the math behind money decisions—with a clear separation between our research
+        desk and editorial oversight.
       </p>
     </header>
 
     <section class="section">
-      <h2>How we research</h2>
+      <h2>Our 4-step review trail</h2>
+      <ol class="steps">
+        <li>
+          <strong>1. Primary-source research ({EDITORIAL_DESK.name}):</strong> Every calculator and
+          guide starts from primary regulatory, government, or institutional records—including the
+          CFPB, IRS, Federal Reserve, SEC, FDIC, Department of Labor, Bureau of Labor Statistics,
+          state agencies, and official lender disclosures.
+        </li>
+        <li>
+          <strong>2. Formula &amp; scenario verification:</strong> Calculator math is checked against
+          standard amortization, compounding, and tax formulas, and pages show their exact inputs and
+          assumptions so readers can verify every number.
+        </li>
+        <li>
+          <strong>3. Editorial oversight (<a href={EDITORIAL_REVIEWER.path}>{EDITORIAL_REVIEWER.displayName}</a>):</strong>{" "}
+          Editorial standards, disclosures, and review methodology are overseen by{" "}
+          <a href={EDITORIAL_REVIEWER.path}>{EDITORIAL_REVIEWER.displayName}</a> (Harvard Business
+          School MBA). Pages separate research authorship from editorial review rather than attributing
+          automated or desk-compiled pages to unverified pen names.
+        </li>
+        <li>
+          <strong>4. Dated updates &amp; corrections:</strong> Every page displays its visible
+          last-updated date. When IRS thresholds, federal rates, state rules, or product terms change,
+          the page is updated and its review date moves forward only when substantive facts change.
+        </li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>Reviewer notes &amp; human commentary</h2>
       <p>
-        We prefer primary sources whenever a page depends on rules, formulas, limits, fees, rates,
-        or regulatory guidance. Common sources include the CFPB, IRS, Federal Reserve, SEC, FDIC,
-        Department of Labor, Bureau of Labor Statistics, state agencies, lender disclosures, and
-        official program documents.
+        When a page displays a highlighted <strong>Publisher&apos;s Take</strong> box attributed to{" "}
+        <a href={EDITORIAL_REVIEWER.path}>{EDITORIAL_REVIEWER.displayName}</a>, that note reflects a
+        direct human-written or human-approved commentary with its own review date. Pages without a
+        direct human commentary omit that box rather than fabricating personal quotes.
       </p>
     </section>
 
     <section class="section">
-      <h2>How we write and review</h2>
-      <p>
-        Pages are written to answer the reader's question directly, show assumptions clearly, and
-        separate general education from personalized advice. Calculator pages explain the formula
-        or method used, and article pages cite visible sources when claims depend on outside facts.
-      </p>
+      <h2>Scope, disclosures &amp; corrections</h2>
       <p>
         For legal, tax, estate, and similar high-stakes topics, pages include an explicit disclaimer
-        and source list. Content is not a substitute for advice from a licensed financial, legal, or
-        tax professional.
+        and source list. Content is general financial education—not individualized advice from a
+        licensed financial advisor, CPA, or attorney.
+      </p>
+      <p>
+        Spot an outdated rate, broken citation, or calculation edge case? Report it through our{" "}
+        <a href="/contact/">Contact page</a> and we will audit and update the page.
       </p>
     </section>
 
     <section class="section">
-      <h2>Updates and corrections</h2>
+      <h2>Editorial independence</h2>
       <p>
-        We update pages when formulas, government limits, deadlines, source documents, or product
-        facts materially change. If we find an error that could affect a reader's decision, we
-        correct the page and update the visible date when the change is substantive.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Independence</h2>
-      <p>
-        Editorial recommendations should be based on usefulness, clarity, cost, fit, and source-backed
-        facts. Any advertising or affiliate relationship must not change the formulas, source
+        Editorial recommendations are based on usefulness, clarity, total cost, fit, and source-backed
+        facts. Any advertising or affiliate relationship never alters calculator math, source
         standards, or educational conclusions on a page.
       </p>
     </section>
@@ -86,8 +106,11 @@ const jsonLdBreadcrumb = {
     .lede { font-size: 1.12rem; color: #444; line-height: 1.6; margin: 0; }
     .section { padding: 17px 0 12px; border-top: 1px solid #EEF2F0; }
     .section h2 { font-size: 1.45rem; margin: 0 0 12px; }
-    .section p { color: #333; line-height: 1.75; max-width: 720px; margin: 0 0 14px; }
-    .section p:last-child { margin-bottom: 0; }
+    .section p, .steps li { color: #333; line-height: 1.75; max-width: 720px; margin: 0 0 14px; }
+    .steps { padding-left: 20px; margin: 0; }
+    .section a { color: var(--primary-dark); font-weight: 600; text-decoration: none; }
+    .section a:hover { text-decoration: underline; }
+    .section p:last-child, .steps li:last-child { margin-bottom: 0; }
     @media (max-width: 600px) { .hero h1 { font-size: 1.85rem; } }
   </style>
 </BaseLayout>

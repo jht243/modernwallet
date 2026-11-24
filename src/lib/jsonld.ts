@@ -1,23 +1,44 @@
-// JSON-LD builders for authorship + article schema (YMYL E-E-A-T). Plain functions, no Astro deps.
-import { SITE, AUTHOR } from "../data/site";
+// JSON-LD builders for authorship + editorial review schema (YMYL E-E-A-T). Plain functions, no Astro deps.
+import { SITE, OPERATOR, EDITORIAL_DESK, EDITORIAL_REVIEWER } from "../data/site";
 import type { Source, Reviewer } from "../data/types";
 
 export function personSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: AUTHOR.name,
-    url: AUTHOR.url,
-    jobTitle: AUTHOR.role,
-    description: AUTHOR.bio,
-    knowsAbout: AUTHOR.knowsAbout,
-    worksFor: { "@type": "Organization", name: SITE.name, url: SITE.url },
+    "@id": EDITORIAL_REVIEWER.id,
+    name: EDITORIAL_REVIEWER.name,
+    honorificSuffix: EDITORIAL_REVIEWER.credentials,
+    url: EDITORIAL_REVIEWER.url,
+    image: EDITORIAL_REVIEWER.image,
+    jobTitle: EDITORIAL_REVIEWER.role,
+    description: EDITORIAL_REVIEWER.bio,
+    sameAs: [...EDITORIAL_REVIEWER.sameAs],
+    alumniOf: EDITORIAL_REVIEWER.alumniOf.map((school) => ({
+      "@type": "CollegeOrUniversity",
+      name: school.name,
+      sameAs: school.sameAs,
+    })),
+    knowsAbout: [...EDITORIAL_REVIEWER.knowsAbout],
+    worksFor: {
+      "@type": "Organization",
+      name: OPERATOR.name,
+      url: OPERATOR.url,
+    },
   };
 }
 
-/** Standalone Person schema for a legal/tax page reviewer (e.g. attorney). Emitted alongside the
- *  primary personSchema() on pages that pass a reviewer; keeps each entity properly typed for
- *  Google's Person guidelines. */
+export function profilePageSchema(canonicalUrl: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    url: canonicalUrl,
+    name: `${EDITORIAL_REVIEWER.displayName} — ${EDITORIAL_REVIEWER.role} | ${SITE.name}`,
+    mainEntity: personSchema(),
+  };
+}
+
+/** Standalone Person schema for an optional specialist legal/tax page reviewer (e.g., attorney or CPA). */
 export function reviewerPersonSchema(reviewer: Reviewer) {
   const url = reviewer.url && reviewer.url.length > 0 ? reviewer.url : undefined;
   return {
@@ -30,12 +51,8 @@ export function reviewerPersonSchema(reviewer: Reviewer) {
   };
 }
 
-/** Article schema with named author + publisher + citations. `url` is the canonical page URL.
- *  A page reviewer (when passed) is surfaced via the visible byline and its own standalone Person
- *  node (see `reviewerPersonSchema`) — NOT via a `reviewedBy` property here: `reviewedBy` is a
- *  schema.org property of `WebPage`, not of `Article`/`CreativeWork`, so emitting it on an Article
- *  fails schema.org validation. The `reviewedBy?` param is accepted for call-site compatibility but
- *  intentionally not written into the Article node. */
+/** Article schema cleanly separating the Research Desk (Organization author) from the verified
+ *  human Editorial Reviewer (Person editor) + primary-source citations. */
 export function articleSchema(opts: {
   headline: string;
   description: string;
@@ -54,7 +71,19 @@ export function articleSchema(opts: {
     image: { "@type": "ImageObject", url: `${SITE.url}/favicon.svg` },
     datePublished: opts.datePublished,
     dateModified: opts.dateModified ?? opts.datePublished,
-    author: { "@type": "Person", name: AUTHOR.name, url: AUTHOR.url },
+    author: {
+      "@type": "Organization",
+      name: EDITORIAL_DESK.name,
+      url: EDITORIAL_DESK.url,
+    },
+    editor: {
+      "@type": "Person",
+      "@id": EDITORIAL_REVIEWER.id,
+      name: EDITORIAL_REVIEWER.name,
+      honorificSuffix: EDITORIAL_REVIEWER.credentials,
+      url: EDITORIAL_REVIEWER.url,
+      sameAs: [...EDITORIAL_REVIEWER.sameAs],
+    },
     publisher: {
       "@type": "Organization",
       name: SITE.name,

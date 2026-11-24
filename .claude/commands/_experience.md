@@ -7,6 +7,11 @@
 
 The Modern Wallet (themodernwallet.com) is a personal-finance site built around free calculators and plain-language money guides, with 400-plus pages spanning auto loans, mortgages, retirement, investing, rentals, and net worth. Our reader is making one concrete decision and wants an accurate number, fast, with no signup. We show the math, name what moves it, and explain the tradeoff.
 
+**Editorial Identity & Review Split (REQUIRED):**
+- **Author:** ModernWallet Research Desk (never invent pen names or fictional staff writers).
+- **Publisher & Editorial Reviewer:** Jonathan Teplitsky, MBA (Harvard Business School MBA, Founder & CEO of Layer3Labs; verified profile at `/about/jonathan-teplitsky/`, `https://www.jonathanteplitsky.com/`, and `https://www.linkedin.com/in/jonathanteplitsky/`).
+- **Zero-Fabrication Reviewer Note Rule:** Never invent personal quotes, opinions, or anecdotes attributed to Jonathan Teplitsky in body copy or reviewer-note boxes. Only notes explicitly written or approved by Jonathan Teplitsky belong in `src/data/reviewer-notes.ts`.
+
 **General framings this section licenses** (editorial "we", no client roster required):
 
 - "In the guides we publish here..."

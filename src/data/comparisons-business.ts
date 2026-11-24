@@ -1,6 +1,6 @@
 // Business Financing pillar — head-to-head comparison pages.
 // Route: /compare/<slug>/   (src/pages/compare/[slug].astro)
-// YMYL: template renders byline (Jonathan Velez) + verified primary sources.
+// YMYL: template renders Research Desk author + Jonathan Teplitsky, MBA editorial reviewer byline + verified primary sources.
 import type { ComparisonEntry } from "./comparisons";
 
 export const BUSINESS_COMPARISONS: ComparisonEntry[] = [
