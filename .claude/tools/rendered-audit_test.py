@@ -286,6 +286,45 @@ class Ads(_UnconfiguredRootTestCase):
         patch.object(sys,'argv',['rendered-audit.py','check','--snapshot',str(snap_path),'--review',str(rev_path),'--recapture']):
     a.main()
     self.assertEqual(cap_local.call_count,1)
+ def test_check_recapture_versions_output_when_prior_recapture_exists(self):
+  import json, sys, tempfile
+  from pathlib import Path
+  from unittest.mock import MagicMock, patch
+  with tempfile.TemporaryDirectory() as td:
+   tdp=Path(td);snap_path=tdp/'snap.json';rev_path=tdp/'rev.json'
+   route_res=self.parse()
+   route_res['htmlFile']='';route_res['textFile']=''
+   manifest={'canonicalBase':'https://example.com','author':'writer-1','routes':[self.route]}
+   snap={'capturedAt':'2026-11-12T00:00:00Z','baseUrl':'http://127.0.0.1:48435','domDir':None,'manifest':manifest,'routes':[route_res]}
+   snap['snapshotSha256']=a.digest(snap)
+   checks={k:{'status':'PASS','evidence':'Verified synthetic fixture check passes cleanly.'} for k in a.CHECKS}
+   rev={'reviewer':'auditor-1','snapshotSha256':snap['snapshotSha256'],'routes':[{'path':'/guide','fingerprint':route_res['fingerprint'],'verdict':'PASS','checks':checks}]}
+   a.save(str(snap_path),snap);a.save(str(rev_path),rev)
+   prior_json=snap_path.with_suffix('.recapture.json');prior_json.write_text('{"immutable":true}')
+   prior_dir=snap_path.with_suffix('.recapture');prior_dir.mkdir()
+   (snap_path.with_suffix('.recapture-v2.json')).write_text('{"immutable":true}')
+   fresh=dict(snap,baseUrl='http://127.0.0.1:51234')
+   fresh.pop('snapshotSha256',None);fresh['snapshotSha256']=a.digest(fresh)
+   from types import SimpleNamespace
+   calls=[]
+   def _save_checked_pair(root, snapshot_file, review_file, fresh=False, recapture_path=None):
+    calls.append(recapture_path)
+   archive_mod=SimpleNamespace(save_checked_pair=_save_checked_pair)
+   captured_outs=[]
+   def fake_capture(man, base, out, dom_dir=None):
+    captured_outs.append(out)
+    return fresh
+   with patch.object(a,'capture',side_effect=fake_capture), \
+        patch('importlib.util.spec_from_file_location') as spec_fn, \
+        patch('importlib.util.module_from_spec',return_value=archive_mod), \
+        patch.object(Path,'is_file',autospec=True,side_effect=lambda p: True if p.name=='review-archive.py' else p.exists()), \
+        patch.object(sys,'argv',['rendered-audit.py','check','--snapshot',str(snap_path),'--review',str(rev_path),'--recapture']):
+    spec_fn.return_value=MagicMock(loader=MagicMock())
+    a.main()
+   expected_v3=str(snap_path.with_suffix('.recapture-v3.json'))
+   self.assertEqual(captured_outs,[expected_v3])
+   self.assertEqual(json.loads(prior_json.read_text()),{'immutable':True})
+   self.assertEqual(calls,[Path(expected_v3)])
  def test_valid_snapshot_resolves_repo_root_and_durable_evidence_cache(self):
   import hashlib, os, tempfile
   from pathlib import Path

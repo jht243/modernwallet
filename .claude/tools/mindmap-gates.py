@@ -2187,17 +2187,18 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                 ]
                 career_lines = [f'  - {c}' for c in (voice_prof.get('verifiedCareerHistory') or [])]
                 rule_lines = [f'  - {r}' for r in (voice_prof.get('voiceRules') or [])]
+                default_label = voice_prof.get('defaultLabel', "Publisher's Take")
                 prompt_lines.extend([
                     '',
                     f"## Generate Fresh Page-Specific Reviewer Note (Required — {voice_prof.get('reviewer', 'Jonathan Teplitsky')} Voice & Career Profile)",
-                    f"- **Label:** `{voice_prof.get('defaultLabel', \"Publisher's Take\")}` · **Site Angle:** {voice_prof.get('siteCredentialAngle', '')}",
+                    f"- **Label:** `{default_label}` · **Site Angle:** {voice_prof.get('siteCredentialAngle', '')}",
                     '- **Verified Career History (use ONLY these real credentials/experiences; never invent fake deals, clients, or anecdotes):**',
                     *career_lines,
                     '- **Voice & Style Rules (enforced by automated voice lint):**',
                     *rule_lines,
                     '- **Prior Approved Quotes (STYLE EXAMPLES ONLY — NEVER copy verbatim; write a brand-new 2-sentence quote tailored specifically to THIS new page\'s numbers, rules, and tradeoffs):**',
                     *samples,
-                    f'- **Publish Registration (Required):** Include `"reviewerNote": {{"label": "{voice_prof.get("defaultLabel", "Publisher\'s Take")}", "note": "<fresh 2-sentence quote>"}}` in the draft AND register it live via `python3 .claude/tools/mindmap-tracks.py register-reviewer-note --route "{target}" --note "<fresh 2-sentence quote>"`.',
+                    f'- **Publish Registration (Required):** Include `"reviewerNote": {{"label": "{default_label}", "note": "<fresh 2-sentence quote>"}}` in the draft AND register it live via `python3 .claude/tools/mindmap-tracks.py register-reviewer-note --route "{target}" --note "<fresh 2-sentence quote>"`.',
                 ])
             matched_exp = tracks_mod.match_experience_records(
                 root,

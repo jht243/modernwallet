@@ -84,4 +84,12 @@ with tempfile.TemporaryDirectory() as parent:
   lease.write_text(json.dumps({'site':'fixture.test','run':'repaired-search','owner':'replacement-owner'}))
   idx2=m.save_checked_pair(fresh,snap2,rev2)
   assert idx2 and len(idx2)==64
+  recap_v2=rdir/'snap2.recapture-v2.json'
+  snap2_doc=json.loads(snap2.read_bytes())
+  recap_v2_snap={'manifest':{'canonicalBase':'https://fixture.test','workflowKind':'mindmap-pass','jobId':'repaired-job'},'baseUrl':'http://localhost:4455','reviewSourceArchive':snap2_doc['reviewSourceArchive'],'routes':snap2_doc['routes']}
+  recap_v2.write_text(json.dumps(recap_v2_snap))
+  snap2_no_arch={'manifest':{'canonicalBase':'https://fixture.test','workflowKind':'mindmap-pass','jobId':'repaired-job'},'baseUrl':'http://localhost:4455','routes':snap2_doc['routes']}
+  snap2_plain=rdir/'snap2-plain.json';snap2_plain.write_text(json.dumps(snap2_no_arch))
+  idx3=m.save_checked_pair(fresh,snap2_plain,rev2,fresh=True,recapture_path=recap_v2)
+  assert idx3 and len(idx3)==64
   os.chdir(original)

@@ -824,6 +824,12 @@ _CANONICAL_PROBE_FILES = (
     'src/layouts/index.tsx',
     'src/layouts/Layout.astro',
     'src/layouts/BaseLayout.astro',
+    'app/layout.tsx',
+    'src/app/layout.tsx',
+    'pages/_app.tsx',
+    'src/pages/_app.tsx',
+    'templates/_base.html.j2',
+    'templates/base.html',
     'src/components/Layout.tsx',
     'src/components/SEO.astro',
     'src/components/BaseHead.astro',
@@ -1239,8 +1245,15 @@ def main(argv=None):
         print(json.dumps(pack,indent=2,ensure_ascii=False))
     elif a.command=='check':
         s=read(a.snapshot); review=read(a.review); review_check(s,review)
+        recap_out=None
         if a.recapture:
-            recap_out=str(Path(a.snapshot).with_suffix('.recapture.json'))
+            snap_base=Path(a.snapshot)
+            cand=snap_base.with_suffix('.recapture.json')
+            n=2
+            while cand.exists() or cand.with_suffix('').exists():
+                cand=snap_base.with_suffix(f'.recapture-v{n}.json')
+                n+=1
+            recap_out=str(cand)
             target_base=a.base_url or s['baseUrl']
             try:
                 fresh=capture(s['manifest'],target_base,recap_out,s.get('domDir'))
@@ -1257,9 +1270,12 @@ def main(argv=None):
             compare(s,fresh,review,require_live=False)
         archive_path=Path(__file__).with_name('review-archive.py')
         if archive_path.is_file():
-            import importlib.util
+            import importlib.util, inspect
             spec=importlib.util.spec_from_file_location('release_proof',archive_path);archive=importlib.util.module_from_spec(spec);spec.loader.exec_module(archive)
-            archive.save_checked_pair(Path(__file__).resolve().parents[2],Path(a.snapshot),Path(a.review),fresh=a.recapture)
+            kwargs={'fresh':a.recapture}
+            if recap_out and 'recapture_path' in inspect.signature(archive.save_checked_pair).parameters:
+                kwargs['recapture_path']=Path(recap_out)
+            archive.save_checked_pair(Path(__file__).resolve().parents[2],Path(a.snapshot),Path(a.review),**kwargs)
         print('Rendered review evidence verified')
     elif a.command=='compare': compare(read(a.approved),read(a.live),read(a.review)); print('Live render matches approved render')
     elif a.command=='record-pairs':

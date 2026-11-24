@@ -192,7 +192,7 @@ def registered_collection_correction(root,d,store,revision=None,state=None):
     return reference
 
 
-def save_checked_pair(root, snapshot_file, review_file, fresh=False):
+def save_checked_pair(root, snapshot_file, review_file, fresh=False, recapture_path=None):
     snapshot=json.loads(snapshot_file.read_bytes())
     job=search_job(root)
     if not job and snapshot.get('manifest',{}).get('workflowKind')!='mindmap-pass':return
@@ -212,7 +212,7 @@ def save_checked_pair(root, snapshot_file, review_file, fresh=False):
         refs[name]=d.sha(path.read_bytes())
     source_snapshot=snapshot
     if fresh and not (snapshot.get('correctionBoundary') or snapshot.get('reviewSourceArchive')):
-        recapture=snapshot_file.with_suffix('.recapture.json')
+        recapture=Path(recapture_path) if recapture_path is not None else snapshot_file.with_suffix('.recapture.json')
         source_snapshot=json.loads(recapture.read_bytes())
         refs[str(recapture.resolve().relative_to(root))]=d.sha(recapture.read_bytes())
     base,files=source_manifest(root,source_snapshot,d,fresh)
