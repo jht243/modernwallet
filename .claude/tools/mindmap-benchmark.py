@@ -603,15 +603,15 @@ def run_practical_tasks(
     plan_ref = _ref(root, plan_path)
     all_artifacts.append(plan_ref)
 
-    usable = len(covered_items) >= 2
-    all_ranked_covered = len(covered_items) == len(items) and len(items) >= 2
+    usable = len(covered_items) >= 1
+    all_ranked_covered = len(covered_items) == len(items) and len(items) >= 1
     comp_entry = (
         {
             'kind': 'practical',
             'status': 'used',
             'basis': 'measured',
-            'reason': 'Executed identical predefined task across accessible options with objective deterministic scoring.',
-            'scope': f'Measured {len(covered_items)} of {len(items)} planned options ({repetitions} repetition(s) each).',
+            'reason': 'Executed identical predefined task across accessible option(s) with objective deterministic scoring.',
+            'scope': f'Measured {len(covered_items)} of {len(items)} planned option(s) ({repetitions} repetition(s) each).',
             'plan': plan_ref,
             'coveredItems': covered_items,
             'excludedItems': excluded_items,
@@ -621,13 +621,14 @@ def run_practical_tasks(
         else {
             'kind': 'practical',
             'status': 'unavailable',
-            'reason': 'Fewer than two compared options had live unauthenticated/authorized execution targets in this run; falling back to verified public pricing/token scenario modeling.',
+            'reason': 'No compared option had a live authorized execution target in this run; stepping down cleanly to public pricing/spec analysis.',
             'artifacts': [plan_ref],
         }
     )
 
     return {
         'usable': usable,
+        'hasInternalTest': usable,
         'allRankedItemsCovered': all_ranked_covered,
         'coveredItems': covered_items,
         'excludedItems': excluded_items,
@@ -1024,29 +1025,33 @@ def run_benchmark_for_candidate(
         })
 
     # Optional Lane 1: Hands-On Practical Benchmark (`Option 3` / `basis: "measured"`)
+    # Owner rule (2026-11-23): Show "Tested 2026" on eligible routes whenever >= 1 real internal test is executed!
     practical_result = None
     packet_basis = 'calculated' if mode == 'api-tokens' else 'modeled'
+    if len(covered_public_names) < 2:
+        packet_basis = 'reported'
     packet_runs = None
-    if candidate.get('practicalTask') and len(all_item_names) >= 2:
+    if candidate.get('practicalTask') and len(all_item_names) >= 1:
         practical_result = run_practical_tasks(
             root=root,
             ev_dir=ev_dir,
             reader_question=reader_question,
-            decision_text=f'Verify hands-on task execution across {", ".join(all_item_names)} under identical inputs.',
+            decision_text=f'Verify hands-on task execution across accessible option(s) among {", ".join(all_item_names)}.',
             items=all_item_names,
             practical_spec=candidate['practicalTask'],
         )
         source_artifacts.extend(practical_result['artifacts'])
-        comparisons_list.append(practical_result['comparisonEntry'])
-        # Upgrade page-level basis to `measured` ONLY when route is tested-eligible AND all ranked items were genuinely executed!
-        if elig['eligible'] and practical_result['allRankedItemsCovered']:
+        if len(all_item_names) >= 2:
+            comparisons_list.append(practical_result['comparisonEntry'])
+        # Upgrade page-level basis to `measured` whenever route is tested-eligible AND >= 1 real internal test succeeded!
+        if elig['eligible'] and practical_result['hasInternalTest']:
             packet_basis = 'measured'
             packet_runs = practical_result['topLevelRuns']
 
     # Synthesize clear finding + counterexample from actual computed scenario outputs if not explicitly supplied
     sc_list = model_output.get('scenarios') or []
     auto_finding = str(candidate.get('finding') or candidate.get('workingAnswer') or '').strip()
-    if not auto_finding and sc_list:
+    if not auto_finding and sc_list and sc_list[0].get('quotes'):
         first_sc = sc_list[0]
         last_sc = sc_list[-1]
         auto_finding = (
@@ -1056,7 +1061,7 @@ def run_benchmark_for_candidate(
         )
 
     auto_counter = str(candidate.get('counterexample') or '').strip()
-    if not auto_counter and sc_list:
+    if not auto_counter and sc_list and sc_list[-1].get('quotes'):
         first_sc = sc_list[0]
         last_sc = sc_list[-1]
         if first_sc['lowestCostVendor'] != last_sc['lowestCostVendor']:
@@ -1120,13 +1125,16 @@ def run_benchmark_for_candidate(
     }
     if packet_basis == 'measured' and packet_runs:
         pkt['runs'] = packet_runs
-    else:
+    elif packet_basis in ('calculated', 'modeled'):
         pkt['execution'] = {
             'command': ['python3', str(model_py.relative_to(root))],
             'code': _ref(root, model_py),
             'inputs': [model_input_ref],
             'output': output_ref,
         }
+    else:
+        pkt['whyNoQuantitativeAnalysis'] = 'Fewer than two options publish comparable self-serve numerical pricing/rates; stepping down cleanly to Rung 4 primary-source reporting without forced calculations.'
+        pkt['reasoning'] = 'Compared documented primary-source capabilities, terms, and explicit pricing availability directly without fabricating unpriced numbers.'
 
     ev_path = ev_dir / 'evidence.json'
     ev_path.write_text(json.dumps(pkt, indent=2, ensure_ascii=False) + '\n')
@@ -1135,8 +1143,12 @@ def run_benchmark_for_candidate(
     # When `packet_basis == 'measured'` and `elig['eligible']`, also write a ready-to-review registration template for Phase 4 -> `scripts/tested/register.mts`!
     reg_template_rel = None
     if packet_basis == 'measured' and elig['eligible'] and packet_runs:
+        tested_item_names = practical_result['coveredItems'] if practical_result else all_item_names
+        cov_mode = 'all-ranked-items' if set(tested_item_names) == set(all_item_names) else 'at-least-one-item'
         reg_template = {
             'route': route,
+            'coverageMode': cov_mode,
+            'testedItems': tested_item_names,
             'note': 'Template for independent Phase 4 reviewer approval via `npx tsx scripts/tested/register.mts` once final normalized page JSON is verified.',
             'recordSkeleton': {
                 'basis': 'tested',

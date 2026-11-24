@@ -115,44 +115,44 @@ TRACK_CONTRACTS = {
         '`ctaButton` (`string` label, NOT an object), `inlineCta` (`{text, buttonLabel, buttonHref}`), '
         '`relatedLinks` (`[{title, description, href, category}]`), `publishedDate`, `updatedDate`, '
         '`attributionMode` (`"author"`), `faqSchemaPlainText` (`true` boolean), `sourceNote` (`string`), `pricingNote` (`string`), '
-        'plus optional `howWeTested` (`string[]` of 3 bullets ONLY when `basis == "measured"` and tested-eligible).\n'
-        '- **Title & H1 Rule:** Both start with `<Product> Alternatives` (50–60 char `metaTitle`). Use `(Tested YYYY)` ONLY when '
-        '`evidence.json` has `basis == "measured"` with executed `runs` AND the route passes tested-page eligibility.\n'
+        'plus optional `howWeTested` (`string[]` of 3 bullets when `basis == "measured"` with >=1 executed internal test on a tested-eligible route).\n'
+        '- **Title & H1 Rule:** Both start with `<Product> Alternatives` (50–60 char `metaTitle`). Use `(Tested YYYY)` when '
+        '`evidence.json` has `basis == "measured"` with >=1 executed `runs` AND the route passes tested-page eligibility (naming the exact tested item(s) honestly in `howWeTested` and prose).\n'
         '- **Outbound Link Guard (Alternatives Registry Rule):** When registered as a subject-only alternatives page, the ONLY '
         'external link allowed anywhere on the rendered page is the subject product\'s official HTTPS URL; name competing vendors '
         'in plain text (no external competitor links) and include 3+ contextual internal `/` links to existing routes on this site. '
         'The two vendor CTAs ("Update your listing" and "Want to be added to this alternatives page?") render automatically from the template.\n'
-        '- **Mandatory Layer3 Best-Practice Proof (Every Alternatives Page):**\n'
+        '- **4-Rung Proof Waterfall (Use Highest Real Rung Available — Never Force Testing or Fake Math):**\n'
         '  1. **Comparison Table:** Subject product + 5–8 real alternatives with exact published billing units, entry prices, hard plan caps, and best fit (never "see vendor site"; write `"Quote-based; no public price"` when unpublished).\n'
-        '  2. **Internal Cost / Switching Scenario Table + Counterexample:** Include a structured multi-line Markdown pipe table as its own string element inside `sections[0].content` comparing total monthly/annual spend across 3 concrete workload/seat scenarios from `evidence.json`, followed by the explicit **break-even / counterexample** showing the exact usage or seat threshold where staying on `<Product>` beats switching (or vice versa).\n'
-        '  3. **First-Party Operator Context / Internal Testing:** Weave in any matched Layer3 experience records provided in the prompt accurately within their stated `limits` (and include `howWeTested` + per-pick `whyPicked`/`whoFor`/`downside` ONLY when `basis == "measured"`).\n'
-        '  4. **Decision Architecture & Opinionated Verdict (`verdict[]`):** Include one substantive H2 per alternative, `"How to Choose a <Product> Alternative"`, `"When <Product> Is Still the Better Fit"`, `"Who This Is Not For"`, `"What Would Change Our Answer"`, and a decisive buyer-segmented `verdict[]` (give clear, workload-specific switching advice — never generic neutral filler).\n'
-        '  5. **Transparent Provenance:** Set `sourceNote` naming every vendor documentation source + date and clarifying whether scenario totals are internal arithmetic modeling over published rates or measured test runs; set `pricingNote`.\n'
+        '  2. **Scenario Math OR Primary-Source Matrix:** When `basis` is `"modeled"` or `"calculated"`, include the 3-scenario workload/seat cost table from `evidence.json` + explicit **break-even / counterexample**. When `basis` is `"reported"` (no public prices/numbers to model), step down cleanly to a cited primary-source feature/terms matrix + counterexample without inventing calculations.\n'
+        '  3. **Hands-On Testing (`>=1` Internal Test) & Operator Context:** When `basis == "measured"` (>=1 real internal test run), show `(Tested YYYY)` + `howWeTested` naming the exact tested tool(s) honestly without claiming untested tools were tested. Weave in matched first-party catalog/survey records ONLY when provided in the prompt within their stated `limits` (skip cleanly when empty).\n'
+        '  4. **Decision Architecture & Opinionated Verdict (`verdict[]`):** Include one substantive H2 per alternative, `"How to Choose a <Product> Alternative"`, `"When <Product> Is Still the Better Fit"`, `"Who This Is Not For"`, `"What Would Change Our Answer"`, and a decisive buyer-segmented `verdict[]`.\n'
+        '  5. **Transparent Provenance:** Set `sourceNote` naming every primary source + date and clarifying the exact proof rung used (`measured` hands-on test, internal scenario modeling, or cited primary reporting); set `pricingNote`.\n'
     ),
     'comparison': (
         '## Active Mindmap Format Track: `comparison` (`<Option A> vs <Option B>`)\n'
         '- **Output Schema (`ComparisonPage` TypeScript shape, `1,500+` visible words):** `sections` uses `{id, heading, content: string[], bullets?: string[], table?: {caption?: string, headers: string[], rows: string[][]}}`, `ctaButton` is a `string`, `tableColumnLabels` is a 3-string tuple, `relatedLinks` items include `{title, description, href, category}`, `attributionMode` is `"author"`, `faqSchemaPlainText` is `true`, plus `sourceNote` and `pricingNote`.\n'
-        '- **Mandatory Layer3 Best-Practice Proof:**\n'
-        '  1. Answer `"Which should I pick between <A> and <B>?"` in sentence 1 with concrete price/limit thresholds.\n'
-        '  2. Include a structured side-by-side `comparisonTable` plus a **3-scenario workload/seat cost & cap table** (`sections[].table` or Markdown pipe table in `sections[].content`) grounded in `evidence.json`, with an explicit **counterexample** showing when the runner-up wins.\n'
-        '  3. Integrate matched Layer3 first-party experience/testing honestly within `evidence.json` basis (`measured` -> `howWeTested` + per-option `whyPicked`/`whoFor`/`downside`; `modeled`/`calculated` -> transparent scenario modeling + `sourceNote`).\n'
-        '  4. Close with a decisive buyer-segmented `verdict[]` and `"What Would Change Our Answer"`.\n'
+        '- **4-Rung Proof Waterfall (Never Force Testing or Fake Math):**\n'
+        '  1. Answer `"Which should I pick between <A> and <B>?"` in sentence 1 with concrete decision thresholds.\n'
+        '  2. Include a structured side-by-side `comparisonTable`. When `basis` is `"modeled"` or `"calculated"`, include the **3-scenario cost/cap/token table** (`sections[].table` or Markdown pipe table) from `evidence.json` + explicit **counterexample**; when `basis` is `"reported"` (e.g. non-numerical, clinical/legal/policy, or quote-only vendors), present a cited primary-source matrix + counterexample with zero forced math.\n'
+        '  3. When `basis == "measured"` (>=1 real internal test on a tested-eligible route), include `(Tested YYYY)` + `howWeTested` naming the exact tested option(s) honestly; never claim testing on regulated/excluded topics or when `basis != "measured"`. Include matched catalog/survey context ONLY when provided.\n'
+        '  4. Close with a decisive `verdict[]`, `"What Would Change Our Answer"`, and explicit `sourceNote`.\n'
     ),
     'roundup': (
         '## Active Mindmap Format Track: `roundup` (`Best <Category>` / Gear / Vertical Roundup)\n'
         '- **Output Schema:** Repository roundup `GearRoundup`, `GearDeepDive`, `VerticalPage`, `GuidePage`, or `ComparisonPage` JSON (`1,800+` visible words). Every layout natively renders `sections[].table` (`{caption?: string, headers: string[], rows: string[][]}` or `scenarioTable`), `takeaway` (`{heading?: string, paragraphs: string[], conditions?: string, whatWouldChange?: string}` or `string[]`) / `verdict`, `sourceNote`, and `pricingNote`.\n'
-        '- **Mandatory Layer3 Best-Practice Proof:**\n'
-        '  1. Lead with the top pick by buyer archetype and an honest evaluation matrix.\n'
-        '  2. When `basis == "measured"` and tested-eligible, include 3 specific `howWeTested` method bullets and per-pick `whyPicked` / `whoFor` / `downside`. Otherwise include a deterministic cost/spec scenario comparison (`sections[].table` or `scenarioTable`) + counterexample grounded in `evidence.json`.\n'
+        '- **4-Rung Proof Waterfall (Never Force Testing or Fake Math):**\n'
+        '  1. Lead with the top pick by reader/buyer archetype and an honest evaluation matrix.\n'
+        '  2. When `basis == "measured"` (>=1 real internal test on a tested-eligible route), include 3 `howWeTested` bullets naming the exact tested item(s) honestly and per-pick `whyPicked` / `whoFor` / `downside`. When `basis` is `"modeled"`/`"calculated"`, include the cost/spec scenario table + counterexample from `evidence.json`. When `basis == "reported"`, step down cleanly to cited primary documentation without forced math or testing.\n'
         '  3. Populate `takeaway` (with `conditions` + `whatWouldChange`), never defer table cells ("see site"), and set explicit `sourceNote` and `pricingNote`.\n'
     ),
     'guide': (
-        '## Active Mindmap Format Track: `guide` (Evergreen Guide / Pricing / Calculator / How-To)\n'
-        '- **Output Schema:** `GuidePage` JSON object (`1,800+` visible words; shared across `/guides/`, `/open-weights/`, `/robotics/`, `/roi/`, and `/governance/`). All layouts natively render `sections[].table` (`{caption?: string, headers: string[], rows: string[][]}`), `takeaway` (`{heading?: string, paragraphs: string[], conditions?: string, whatWouldChange?: string}` or `string[]`), `sourceNote`, and `pricingNote`.\n'
-        '- **Mandatory Layer3 Best-Practice Proof:**\n'
-        '  1. Answer the exact reader question in the opening sentence with concrete numbers/thresholds.\n'
-        '  2. Include a worked calculation or multi-scenario `sections[].table` grounded in `evidence.json` with explicit assumptions + a concrete **counterexample** (never claim `(Tested YYYY)` on pricing/how-to/explainer/ROI/governance guides).\n'
-        '  3. Populate `takeaway` (`conditions` + `whatWouldChange`), `sourceNote`, `pricingNote`, and 3+ contextual internal links.\n'
+        '## Active Mindmap Format Track: `guide` (Evergreen Guide / Pricing / Calculator / How-To / Policy)\n'
+        '- **Output Schema:** `GuidePage` JSON object (`1,800+` visible words; shared across `/guides/`, `/open-weights/`, `/robotics/`, `/roi/`, `/governance/`, and fleet article collections). Layouts natively render `sections[].table` (`{caption?: string, headers: string[], rows: string[][]}`), `takeaway` (`{heading?: string, paragraphs: string[], conditions?: string, whatWouldChange?: string}` or `string[]`), `sourceNote`, and `pricingNote`.\n'
+        '- **4-Rung Proof Waterfall (Never Force Testing or Fake Math):**\n'
+        '  1. Answer the exact reader question in the opening sentence.\n'
+        '  2. When `basis` is `"modeled"` or `"calculated"`, include the worked calculation or multi-scenario `sections[].table` from `evidence.json` with explicit assumptions + **counterexample**. When `basis == "reported"` (e.g. legal/clinical/policy reporting or non-numerical topics with no internal data), use a structured primary-source reference table (`sections[].table`) citing statutes, trials, or official docs directly — zero forced math and never `(Tested YYYY)` on guides/pricing/regulated topics.\n'
+        '  3. Populate `takeaway` (`conditions` + `whatWouldChange`), `sourceNote`, and 3+ contextual internal links.\n'
     ),
     'launch': (
         '## Active Mindmap Format Track: `launch` (Fast-Turn Model / Product Launch & News)\n'
@@ -1073,7 +1073,7 @@ def intake_scout_spec(root: Path, spec_path: Path, run_dir: Path, author: str = 
         b_spec.loader.exec_module(bench_mod)
 
     for aid, slug, target, rq, pres_obj, src_ref, c in per_cand_models:
-        if bench_mod is not None and (c.get('models') or c.get('practicalTask') or any(isinstance(v, dict) and (v.get('pricingUrl') or v.get('fetchLive')) for v in (c.get('vendors') or []))):
+        if bench_mod is not None and (c.get('models') or c.get('practicalTask') or c.get('useBenchmark') or any(isinstance(v, dict) and (v.get('pricingUrl') or v.get('fetchLive') or v.get('modeled') is False) for v in (c.get('vendors') or []))):
             b_res = bench_mod.run_benchmark_for_candidate(
                 root=root,
                 run_dir=run_dir,

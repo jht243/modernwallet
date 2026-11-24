@@ -701,10 +701,11 @@ def layer3_comparisons(root, packet):
                 and all(isinstance(item, str) and item.strip() for item in items)
                 and len(set(items)) == len(items), 'Comparison needs distinct planned items')
         covered = comparison.get('coveredItems')
-        require(isinstance(covered, list) and len(covered) >= 2
+        min_covered = 1 if kind == 'practical' else 2
+        require(isinstance(covered, list) and len(covered) >= min_covered
                 and all(isinstance(item, str) for item in covered)
                 and len(set(covered)) == len(covered) and set(covered) <= set(items),
-                'Comparison needs at least two supported items')
+                f'Comparison needs at least {min_covered} supported item(s)')
         excluded = comparison.get('excludedItems', {})
         require(isinstance(excluded, dict) and set(excluded) == set(items) - set(covered),
                 'Explain every unobserved/excluded comparison item')
