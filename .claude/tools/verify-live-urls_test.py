@@ -50,6 +50,36 @@ class VerifyLiveUrlsTests(unittest.TestCase):
         self.assertEqual(res['pendingCount'], 1)
         self.assertEqual(res['attempts'], 3)
 
+    def test_extends_wait_when_render_deploy_is_actively_building(self):
+        clock = [0.0]
+        def fake_sleep(dt):
+            clock[0] += dt
+
+        def fake_probe(url, request_timeout=15):
+            if clock[0] < 220:
+                return {'url': url, 'ok': False, 'status': 404, 'error': 'HTTP 404'}
+            return {'url': url, 'ok': True, 'status': 200, 'hasH1': True, 'completeHtml': True}
+
+        def fake_render_status(service_id):
+            return {
+                'serviceId': service_id,
+                'deployId': 'dep-test123',
+                'status': 'build_in_progress' if clock[0] < 220 else 'live',
+            }
+
+        with patch.object(v, 'probe_once', side_effect=fake_probe):
+            res = v.verify_urls(
+                ['https://www.layer3labs.io/guides/new-page'],
+                timeout=180,
+                interval=30,
+                sleep_fn=fake_sleep,
+                clock_fn=lambda: clock[0],
+                render_status_fn=fake_render_status,
+            )
+        self.assertEqual(res['status'], 'all-live')
+        self.assertGreaterEqual(clock[0], 220)
+        self.assertEqual(res['renderDeploy']['serviceId'], 'srv-d5618t6mcj7s73fkk7b0')
+
     def test_resolves_approval_manifest_using_content_review_policy_host(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
