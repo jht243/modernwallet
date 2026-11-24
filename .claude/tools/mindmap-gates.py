@@ -1793,6 +1793,76 @@ def _collect_verified_urls_from_text(raw_text):
     return urls
 
 
+
+def _prewrite_check_review_slots_and_archive(root, manifest_file, plan, target_routes):
+    """Fail-closed BEFORE spending writer API credits if a target route's review slot is locked or archive cannot hydrate."""
+    import os
+    import subprocess
+    if os.environ.get('MINDMAP_SKIP_PREWRITE_CHECK') == '1' or not target_routes:
+        return
+    canonical_base = str(plan.get('canonicalBase') or '').strip()
+    job_id = str(plan.get('jobId') or '').strip()
+    if not canonical_base.startswith('https://'):
+        return
+    policy_file = root / '.claude/tools/content-review-policy.py'
+    durable_file = root / '.claude/tools/content-review-durable.py'
+    if not (policy_file.is_file() and durable_file.is_file() and (root / '.claude/content-review-policy.json').is_file()):
+        return
+    # Check whether durable store ref or any local review journal exists; skip in empty scratch repos
+    has_durable_ref = subprocess.run(
+        ['git', 'show-ref', '--quiet', 'refs/heads/automation/content-review-journals'],
+        cwd=root, capture_output=True
+    ).returncode == 0 or subprocess.run(
+        ['git', 'show-ref', '--quiet', 'refs/remotes/origin/automation/content-review-journals'],
+        cwd=root, capture_output=True
+    ).returncode == 0
+    import importlib.util
+    spec_p = importlib.util.spec_from_file_location('_prewrite_review_policy', policy_file)
+    pol = importlib.util.module_from_spec(spec_p)
+    spec_p.loader.exec_module(pol)
+    spec_d = importlib.util.spec_from_file_location('_prewrite_review_durable', durable_file)
+    dur = importlib.util.module_from_spec(spec_d)
+    spec_d.loader.exec_module(dur)
+
+    blocked = []
+    for route in sorted(set(r for r in target_routes if r)):
+        journal = pol.Journal(root, canonical_base, route)
+        if not has_durable_ref and not journal.path.is_file():
+            continue
+        if has_durable_ref:
+            try:
+                dur.restore(root, journal)
+            except Exception as exc:
+                blocked.append(f"{route} (archived review dependency failed to hydrate: {exc})")
+                continue
+        if not journal.path.is_file():
+            continue
+        try:
+            with journal as loaded:
+                cycle = loaded.cycle
+                if (
+                    cycle is not None
+                    and cycle.get('status') != 'published'
+                    and job_id
+                    and cycle.get('jobId')
+                    and cycle.get('jobId') != job_id
+                    and job_id not in pol.cycle_jobs(root, cycle)
+                    and not pol._can_auto_close_stale_prior_cycle(root, loaded, cycle, job_id, manifest_file)
+                ):
+                    blocked.append(
+                        f"{route} (canonical review slot locked by unclosed job {cycle.get('jobId')} / cycle {cycle.get('cycleId')})"
+                    )
+        except Exception as exc:
+            blocked.append(f"{route} (review journal corrupt/unreadable: {exc})")
+
+    require(
+        not blocked,
+        'Pre-write blocker detected BEFORE content_gen.py ran (zero writer credits spent): '
+        + '; '.join(blocked)
+        + '. Quarantine blocked route(s) via `mindmap-gates.py prune-failed-routes --failed-route <ROUTE>` or resolve the prior review cycle first.'
+    )
+
+
 def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice_sample=None, review_path=None, overwrite=False, routes=None):
     """Build reusable system.md + per-slug .prompt.md + .allowed-urls.txt from approval-manifest.json in 1 command."""
     root = root.resolve()
@@ -1876,6 +1946,12 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                             guardrails.append(g_line)
         except Exception:
             pass
+    _cand_routes = [
+        str(r.get('target') or '').strip()
+        for r in (plan.get('actions') or [])
+        if isinstance(r, dict) and r.get('bucket') in SUBSTANTIVE and _matches_route_filter(r.get('target', ''), routes)
+    ]
+    _prewrite_check_review_slots_and_archive(root, m_file, plan, _cand_routes)
     packets = []
     for row in (plan.get('actions') or []):
         if not isinstance(row, dict) or row.get('bucket') not in SUBSTANTIVE or not _matches_route_filter(row.get('target', ''), routes):
