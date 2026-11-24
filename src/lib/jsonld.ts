@@ -19,6 +19,16 @@ export function personSchema() {
       name: school.name,
       sameAs: school.sameAs,
     })),
+    hasCredential: {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "license",
+      name: `${EDITORIAL_REVIEWER.license.title} (#${EDITORIAL_REVIEWER.license.number})`,
+      recognizedBy: {
+        "@type": "GovernmentOrganization",
+        name: EDITORIAL_REVIEWER.license.issuer,
+        url: EDITORIAL_REVIEWER.license.verifyUrl,
+      },
+    },
     knowsAbout: [...EDITORIAL_REVIEWER.knowsAbout],
     worksFor: {
       "@type": "Organization",
