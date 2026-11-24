@@ -355,8 +355,10 @@ class RoutineFastExitTests(unittest.TestCase):
         pull.write_text(json.dumps({'candidates': []}))
         import io
         from contextlib import redirect_stdout
+        from unittest.mock import patch
+
         buf = io.StringIO()
-        with redirect_stdout(buf):
+        with patch.object(self.mod, '_send_noop', return_value=True), redirect_stdout(buf):
             rc = self.mod.main([
                 '--root', str(self.root),
                 'json-candidates',
@@ -370,6 +372,24 @@ class RoutineFastExitTests(unittest.TestCase):
         self.assertTrue(out['fastExit'])
         self.assertTrue(out['collectorPosted'])
         self.assertIn('STOP_IMMEDIATELY', out['next'])
+
+        # When collector secret was absent (_send_noop returns False), collectorPosted MUST be False!
+        pull.write_text(json.dumps({'candidates': []}))
+        buf2 = io.StringIO()
+        with patch.object(self.mod, '_send_noop', return_value=False), redirect_stdout(buf2):
+            rc2 = self.mod.main([
+                '--root', str(self.root),
+                'json-candidates',
+                '--skill', 'search-gap-content-auto',
+                '--site', 'https://example.com',
+                '--input', str(pull),
+                '--post-collector',
+            ])
+        self.assertEqual(rc2, 0)
+        out2 = json.loads(buf2.getvalue())
+        self.assertTrue(out2['fastExit'])
+        self.assertFalse(out2['collectorPosted'])
+        self.assertIn('FAST_EXIT_READY', out2['next'])
 
     def test_ga4_cooldown_filters_low_view_noise_on_low_traffic_sites_and_defaults_ledger(self):
         pages = self.root / 'reports/trend-pass/ga4_24h.json'
@@ -435,6 +455,43 @@ class RoutineFastExitTests(unittest.TestCase):
         res = self.mod.check_indexing_sweep(self.root, inspection_json=insp, site='https://example.com')
         self.assertTrue(res['fastExit'])
         self.assertEqual(res['awaitingCrawlLinked'], 2)
+
+
+
+    def test_page12_noop_fast_exits_and_cleans_untracked_when_empty(self):
+        import subprocess
+        with tempfile.TemporaryDirectory() as tmp:
+            repo = Path(tmp)
+            subprocess.run(['git', 'init', '-q'], cwd=repo, check=True)
+            rep_dir = repo / 'reports/page-1-2-no-clicks'
+            rep_dir.mkdir(parents=True, exist_ok=True)
+            det = rep_dir / '2026-11-23.json'
+            det_md = rep_dir / '2026-11-23.md'
+            meas = rep_dir / '2026-11-23.measure.json'
+            det.write_text(json.dumps({'status': 'OK', 'base_url': 'https://www.themodernwallet.com', 'generated_at': '2026-11-23T17:00:00Z', 'pages': []}))
+            det_md.write_text('# Empty\n')
+            meas.write_text(json.dumps({'status': 'OK', 'results': [{'page': '/x', 'verdict': 'LAGGING', 'final': False}]}))
+            res = load_fast_exit().check_page12_noop(repo, detect_json=det, measure_json=meas, send_email=False)
+            self.assertTrue(res['fastExit'])
+            self.assertFalse(det.exists())
+            self.assertFalse(det_md.exists())
+            self.assertFalse(meas.exists())
+
+    def test_page12_noop_continues_when_worse_final_revert_or_pages_exist(self):
+        import subprocess
+        with tempfile.TemporaryDirectory() as tmp:
+            repo = Path(tmp)
+            subprocess.run(['git', 'init', '-q'], cwd=repo, check=True)
+            rep_dir = repo / 'reports/page-1-2-no-clicks'
+            rep_dir.mkdir(parents=True, exist_ok=True)
+            det = rep_dir / '2026-11-23.json'
+            meas = rep_dir / '2026-11-23.measure.json'
+            det.write_text(json.dumps({'status': 'OK', 'pages': []}))
+            meas.write_text(json.dumps({'status': 'OK', 'results': [{'page': '/bad', 'verdict': 'WORSE', 'final': True}]}))
+            res = load_fast_exit().check_page12_noop(repo, detect_json=det, measure_json=meas, send_email=False)
+            self.assertFalse(res['fastExit'])
+            self.assertEqual(res['worseRevertCount'], 1)
+            self.assertTrue(det.exists())
 
 
 if __name__ == '__main__':

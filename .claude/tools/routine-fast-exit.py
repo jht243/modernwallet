@@ -67,7 +67,7 @@ def _send_noop(
     status: str = 'no-op',
     details_file: Path | None = None,
     headline: str | None = None,
-) -> int:
+) -> bool:
     repo = _repo_slug(root)
     branch = _branch_name(root)
     sender = root / '.claude/scripts/send-routine-email.py'
@@ -89,8 +89,9 @@ def _send_noop(
         if repo:
             cmd.extend(['--repo', repo, '--branch', branch, '--commit-sha', '', '--commit-url', ''])
         res = subprocess.run(cmd, cwd=root, capture_output=True, text=True)
-        return res.returncode
-    # Fallback direct collector POST when send-routine-email.py is absent
+        if res.returncode == 0:
+            return True
+    # Fallback direct collector POST when send-routine-email.py is absent or lacked RESEND_API_KEY
     import urllib.request
     secrets: dict[str, str] = {}
     for sp in (root / '.claude/routines.config', root / '.claude/secrets.env', Path.home() / '.claude/secrets.env'):
@@ -103,7 +104,7 @@ def _send_noop(
     url = (os.environ.get('ROUTINE_INGEST_URL') or secrets.get('ROUTINE_INGEST_URL') or 'https://layer3labs-web.onrender.com/api/routine-run').strip()
     tok = (os.environ.get('ROUTINE_INGEST_SECRET') or os.environ.get('NURTURE_CRON_SECRET') or secrets.get('ROUTINE_INGEST_SECRET') or secrets.get('NURTURE_CRON_SECRET') or '').strip()
     if not url or not tok:
-        return 0
+        return False
     body = json.dumps({
         'skill': skill,
         'project': (repo.split('/')[-1] if repo else site),
@@ -115,10 +116,10 @@ def _send_noop(
     }).encode('utf-8')
     req = urllib.request.Request(url, data=body, method='POST', headers={'Content-Type': 'application/json', 'Authorization': f'Bearer {tok}'})
     try:
-        with urllib.request.urlopen(req, timeout=15):
-            return 0
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            return 200 <= getattr(resp, 'status', 200) < 300
     except Exception:
-        return 0
+        return False
 
 
 def _cleanup_untracked_report_file(root: Path, path: Path) -> None:
@@ -186,15 +187,17 @@ def check_json_candidates(
         }
 
     summary = f'Verified 0 actionable {skill} candidates ({len(quarantined_ids)} quarantined skipped); nothing to send to Mindmap.'
+    posted = False
     if send_email:
         _cleanup_untracked_report_file(root, input_path)
-        _send_noop(root, skill, site, summary)
+        posted = bool(_send_noop(root, skill, site, summary))
     return {
         'fastExit': True,
         'reason': 'zero_actionable_candidates',
         'actionableCount': 0,
         'quarantinedSkipped': quarantined_ids,
         'summary': summary,
+        'collectorPosted': posted,
     }
 
 
@@ -388,9 +391,10 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
         f'Quiet paid publisher hour: {order_note}, {fix_note}, '
         f'{upsell_note}, standing unchanged.'
     )
+    posted = False
     if send_email:
-        _send_noop(root, 'paid-placement-publish', site, summary)
-    return {'fastExit': True, 'summary': summary}
+        posted = bool(_send_noop(root, 'paid-placement-publish', site, summary))
+    return {'fastExit': True, 'summary': summary, 'collectorPosted': posted}
 
 
 def record_publisher_failure(
@@ -645,15 +649,17 @@ def check_ga4_cooldown(
         f'{len(skipped_low_views)} sub-floor noise excluded) are within their {cooldown_days}-day '
         f'audit/quarantine cooldown with 0 active DEFERRED items; nothing to do.'
     )
+    posted = False
     if send_email:
         _cleanup_untracked_report_file(root, pages_json)
-        _send_noop(root, skill, site, summary, status='no-changes')
+        posted = bool(_send_noop(root, skill, site, summary, status='no-changes'))
     return {
         'fastExit': True,
         'summary': summary,
         'eligibleCount': 0,
         'skippedUtility': skipped_utility,
         'skippedLowViews': skipped_low_views,
+        'collectorPosted': posted,
     }
 
 
@@ -848,15 +854,17 @@ def check_page_quality_pull(
         f'0 content pages cleared the 50-session weak-engagement bar and cooldowns '
         f'({len(skipped_reasons)} below floor, healthy, QUICK_ANSWER_OK, or on cooldown); nothing to rewrite.'
     )
+    posted = False
     if send_email:
         _cleanup_untracked_report_file(root, pages_json)
-        _send_noop(root, 'page-quality-pass-auto', site, summary, status='no-changes', details_file=digest_path)
+        posted = bool(_send_noop(root, 'page-quality-pass-auto', site, summary, status='no-changes', details_file=digest_path))
     return {
         'fastExit': True,
         'eligibleCount': 0,
         'skippedCount': len(skipped_reasons),
         'digestFile': str(digest_path),
         'summary': summary,
+        'collectorPosted': posted,
     }
 
 
@@ -977,13 +985,14 @@ def check_trend_research_pack(
         f'Trend: NO ({verdict_trend}). Query check: NO (all top-20 covered). '
         'Wide view: NO (0 rising/spillover or sideways-formula gaps). Mindmap: NO — nothing built.'
     )
+    posted = False
     if send_email:
         _cleanup_untracked_report_file(root, research_md)
         if pull_json:
             _cleanup_untracked_report_file(root, pull_json)
         for extra in (root / 'reports/trend-pass').glob(f'{today_iso}*'):
             _cleanup_untracked_report_file(root, extra)
-        _send_noop(
+        posted = bool(_send_noop(
             root,
             'trend-pass-auto',
             site,
@@ -991,13 +1000,14 @@ def check_trend_research_pack(
             status='no-changes',
             details_file=digest_path,
             headline='Trend (no) / Query (no) / Mindmap (no)',
-        )
+        ))
     return {
         'fastExit': True,
         'totalOpportunities': 0,
         'counts': counts,
         'digestFile': str(digest_path),
         'summary': summary,
+        'collectorPosted': posted,
     }
 
 
@@ -1125,17 +1135,19 @@ def check_comparison_prefilter(
         }
 
     summary = f'All {len(items)} mined comparison candidates were already live, cached, or quarantined; nothing sent to mindmap.'
+    posted = False
     if send_email:
         _cleanup_untracked_report_file(root, candidates_json)
         if out_path:
             _cleanup_untracked_report_file(root, out_path)
-        _send_noop(root, 'comparison-content-auto', site, summary, status='no-changes')
+        posted = bool(_send_noop(root, 'comparison-content-auto', site, summary, status='no-changes'))
     return {
         'fastExit': True,
         'survivingCount': 0,
         'inputCount': len(items),
         'dropped': dropped,
         'summary': summary,
+        'collectorPosted': posted,
     }
 
 
@@ -1296,9 +1308,10 @@ def check_indexing_sweep(
         f'{awaiting_crawl_linked + already_fixed_recent} already linked/fixed awaiting Google crawl, '
         f'{working_as_intended} working as intended, 0 actionable defects.'
     )
+    posted = False
     if send_email:
         _cleanup_untracked_report_file(root, inspection_json)
-        _send_noop(root, 'indexing-pass-auto', site, summary, status='no-changes', details_file=details_path)
+        posted = bool(_send_noop(root, 'indexing-pass-auto', site, summary, status='no-changes', details_file=details_path))
     return {
         'fastExit': True,
         'inspectedCount': len(inspected),
@@ -1307,6 +1320,7 @@ def check_indexing_sweep(
         'alreadyFixedRecent': already_fixed_recent,
         'detailsFile': str(details_path),
         'summary': summary,
+        'collectorPosted': posted,
     }
 
 
@@ -1364,8 +1378,9 @@ def check_page12_noop(
         if cand is not None:
             _cleanup_untracked_report_file(root, cand)
 
+    posted = False
     if send_email:
-        _send_noop(root, skill=skill, site=resolved_site, summary=summary)
+        posted = bool(_send_noop(root, skill=skill, site=resolved_site, summary=summary))
 
     return {
         'fastExit': True,
@@ -1373,6 +1388,7 @@ def check_page12_noop(
         'worseRevertCount': 0,
         'site': resolved_site,
         'summary': summary,
+        'collectorPosted': posted,
     }
 
 
@@ -1456,6 +1472,23 @@ def main(argv: list[str] | None = None) -> int:
             return None
         return p if p.is_absolute() else (root / p)
 
+    def _emit(res: dict, *, send_email: bool, page12: bool = False) -> int:
+        if res.get('fastExit') and send_email:
+            posted = bool(res.get('collectorPosted'))
+            res['collectorPosted'] = posted
+            if posted:
+                res['next'] = (
+                    'STOP_IMMEDIATELY — collector no-op already recorded via send-routine-email.py; do NOT commit empty reports, push to main, or call /api/routine-run again.'
+                    if page12
+                    else 'STOP_IMMEDIATELY — collector no-op already recorded via send-routine-email.py; do NOT grep send-routine-email.py, write scratchpad scripts, or call /api/routine-run again.'
+                )
+            else:
+                res['next'] = (
+                    'FAST_EXIT_READY — scratch reports cleaned, but collector secret was not in env; run send-routine-email.py --status no-op ONCE with the trigger inline RESEND_API_KEY / ROUTINE_INGEST_SECRET env vars, then STOP IMMEDIATELY (0 commits, 0 pushes).'
+                )
+        print(json.dumps(res, ensure_ascii=False))
+        return 0
+
     if args.cmd == 'json-candidates':
         res = check_json_candidates(
             root,
@@ -1467,19 +1500,11 @@ def main(argv: list[str] | None = None) -> int:
             open_intake_dir=_abs(args.open_intake_dir),
             send_email=args.send_email,
         )
-        if res.get('fastExit') and getattr(args, 'send_email', False):
-            res['collectorPosted'] = True
-            res['next'] = 'STOP_IMMEDIATELY — collector no-op already recorded via send-routine-email.py; do NOT grep send-routine-email.py, write scratchpad scripts, or call /api/routine-run again.'
-        print(json.dumps(res, ensure_ascii=False))
-        return 0
+        return _emit(res, send_email=args.send_email)
 
     if args.cmd == 'paid-publisher':
         res = check_paid_publisher(root, site=args.site, send_email=args.send_email)
-        if res.get('fastExit') and getattr(args, 'send_email', False):
-            res['collectorPosted'] = True
-            res['next'] = 'STOP_IMMEDIATELY — collector no-op already recorded via send-routine-email.py; do NOT grep send-routine-email.py, write scratchpad scripts, or call /api/routine-run again.'
-        print(json.dumps(res, ensure_ascii=False))
-        return 0
+        return _emit(res, send_email=args.send_email)
 
     if args.cmd == 'record-publisher-failure':
         res = record_publisher_failure(
@@ -1494,11 +1519,7 @@ def main(argv: list[str] | None = None) -> int:
             send_email=args.send_email,
             site=args.site,
         )
-        if res.get('fastExit') and getattr(args, 'send_email', False):
-            res['collectorPosted'] = True
-            res['next'] = 'STOP_IMMEDIATELY — collector no-op already recorded via send-routine-email.py; do NOT grep send-routine-email.py, write scratchpad scripts, or call /api/routine-run again.'
-        print(json.dumps(res, ensure_ascii=False))
-        return 0
+        return _emit(res, send_email=args.send_email)
 
     if args.cmd == 'page12-noop':
         res = check_page12_noop(
@@ -1509,11 +1530,7 @@ def main(argv: list[str] | None = None) -> int:
             skill=args.skill,
             send_email=args.send_email,
         )
-        if res.get('fastExit') and getattr(args, 'send_email', False):
-            res['collectorPosted'] = True
-            res['next'] = 'STOP_IMMEDIATELY — collector no-op already recorded via send-routine-email.py; do NOT commit empty reports, push to main, or call /api/routine-run again.'
-        print(json.dumps(res, ensure_ascii=False))
-        return 0
+        return _emit(res, send_email=args.send_email, page12=True)
 
     if args.cmd == 'ga4-cooldown':
         res = check_ga4_cooldown(
@@ -1526,11 +1543,7 @@ def main(argv: list[str] | None = None) -> int:
             min_views=args.min_views,
             send_email=args.send_email,
         )
-        if res.get('fastExit') and getattr(args, 'send_email', False):
-            res['collectorPosted'] = True
-            res['next'] = 'STOP_IMMEDIATELY — collector no-op already recorded via send-routine-email.py; do NOT grep send-routine-email.py, write scratchpad scripts, or call /api/routine-run again.'
-        print(json.dumps(res, ensure_ascii=False))
-        return 0
+        return _emit(res, send_email=args.send_email)
 
     if args.cmd == 'page-quality-check':
         res = check_page_quality_pull(
@@ -1543,11 +1556,7 @@ def main(argv: list[str] | None = None) -> int:
             session_floor=args.session_floor,
             send_email=args.send_email,
         )
-        if res.get('fastExit') and getattr(args, 'send_email', False):
-            res['collectorPosted'] = True
-            res['next'] = 'STOP_IMMEDIATELY — collector no-op already recorded via send-routine-email.py; do NOT grep send-routine-email.py, write scratchpad scripts, or call /api/routine-run again.'
-        print(json.dumps(res, ensure_ascii=False))
-        return 0
+        return _emit(res, send_email=args.send_email)
 
     if args.cmd == 'trend-research-pack':
         res = check_trend_research_pack(
@@ -1557,11 +1566,7 @@ def main(argv: list[str] | None = None) -> int:
             pull_json=_abs(args.pull_json),
             send_email=args.send_email,
         )
-        if res.get('fastExit') and getattr(args, 'send_email', False):
-            res['collectorPosted'] = True
-            res['next'] = 'STOP_IMMEDIATELY — collector no-op already recorded via send-routine-email.py; do NOT grep send-routine-email.py, write scratchpad scripts, or call /api/routine-run again.'
-        print(json.dumps(res, ensure_ascii=False))
-        return 0
+        return _emit(res, send_email=args.send_email)
 
     if args.cmd == 'comparison-prefilter':
         res = check_comparison_prefilter(
@@ -1572,11 +1577,7 @@ def main(argv: list[str] | None = None) -> int:
             out_path=_abs(args.out),
             send_email=args.send_email,
         )
-        if res.get('fastExit') and getattr(args, 'send_email', False):
-            res['collectorPosted'] = True
-            res['next'] = 'STOP_IMMEDIATELY — collector no-op already recorded via send-routine-email.py; do NOT grep send-routine-email.py, write scratchpad scripts, or call /api/routine-run again.'
-        print(json.dumps(res, ensure_ascii=False))
-        return 0
+        return _emit(res, send_email=args.send_email)
 
     if args.cmd == 'indexing-sweep':
         res = check_indexing_sweep(
@@ -1585,11 +1586,7 @@ def main(argv: list[str] | None = None) -> int:
             site=args.site,
             send_email=args.send_email,
         )
-        if res.get('fastExit') and getattr(args, 'send_email', False):
-            res['collectorPosted'] = True
-            res['next'] = 'STOP_IMMEDIATELY — collector no-op already recorded via send-routine-email.py; do NOT grep send-routine-email.py, write scratchpad scripts, or call /api/routine-run again.'
-        print(json.dumps(res, ensure_ascii=False))
-        return 0
+        return _emit(res, send_email=args.send_email)
 
     return 1
 
