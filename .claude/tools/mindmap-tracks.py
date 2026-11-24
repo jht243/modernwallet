@@ -278,6 +278,64 @@ def tested_eligibility(
     }
 
 
+def match_approved_reviewer_insight(
+    root: Path,
+    route: str,
+    title: str = '',
+    h1: str = '',
+    description: str = '',
+) -> dict | None:
+    """Match a pre-approved human Reviewer Insight from `.claude/approved-insights.json` ($0 LLM tokens).
+
+    ZERO-FABRICATION RULE: Only returns verbatim insights explicitly approved by the named
+    reviewer in `.claude/approved-insights.json`. Never invents or modifies quote text.
+    """
+    bank_path = root / '.claude/approved-insights.json'
+    if not bank_path.is_file():
+        return None
+    try:
+        bank = json.loads(bank_path.read_text())
+    except Exception:
+        return None
+    clean_route = '/' + (route or '').strip().strip('/')
+    norm_slash = clean_route if clean_route.endswith('/') else f'{clean_route}/'
+    reviewer = str(bank.get('reviewer') or 'Jonathan Teplitsky').strip()
+    default_label = str(bank.get('defaultLabel') or "Publisher's Take").strip()
+    hay = ' '.join([clean_route, norm_slash, title or '', h1 or '', description or '']).lower()
+    insights = bank.get('insights') or []
+    # 1. Exact route match first
+    for item in insights:
+        if not isinstance(item, dict) or not str(item.get('note') or '').strip():
+            continue
+        exact_routes = [str(r).strip().lower() for r in (item.get('exactRoutes') or []) if str(r).strip()]
+        if clean_route.lower() in exact_routes or norm_slash.lower() in exact_routes:
+            return {
+                'id': str(item.get('id') or 'exact'),
+                'reviewer': str(item.get('reviewer') or reviewer),
+                'label': str(item.get('label') or default_label),
+                'reviewedDate': str(item.get('reviewedDate') or bank.get('reviewedDate') or ''),
+                'note': str(item['note']).strip(),
+                'matchType': 'exact-route',
+            }
+    # 2. Strict multi-token phrase group match on route + title + h1
+    for item in insights:
+        if not isinstance(item, dict) or not str(item.get('note') or '').strip():
+            continue
+        groups = item.get('matchGroups') or []
+        for group in groups:
+            toks = [str(t).strip().lower() for t in (group or []) if str(t).strip()]
+            if toks and all(t in hay for t in toks):
+                return {
+                    'id': str(item.get('id') or 'topic'),
+                    'reviewer': str(item.get('reviewer') or reviewer),
+                    'label': str(item.get('label') or default_label),
+                    'reviewedDate': str(item.get('reviewedDate') or bank.get('reviewedDate') or ''),
+                    'note': str(item['note']).strip(),
+                    'matchType': 'approved-topic-bank',
+                }
+    return None
+
+
 def resolve_page_type_and_evidence_pool(
     root: Path,
     route: str,
@@ -381,6 +439,9 @@ def resolve_page_type_and_evidence_pool(
         })
 
     legitimate_zero_data_domain = page_category in ('regulated-medical-or-psychedelic', 'regulated-legal-or-financial')
+    approved_insight = match_approved_reviewer_insight(
+        root, clean_route, title=title, h1=h1, description=description,
+    )
     return {
         'route': clean_route,
         'pageCategory': page_category,
@@ -391,6 +452,7 @@ def resolve_page_type_and_evidence_pool(
         'poolCount': len(pool),
         'pool': pool,
         'excludedPoolOptions': excluded_from_pool,
+        'approvedReviewerInsight': approved_insight,
     }
 
 
@@ -851,7 +913,7 @@ def compile_track_system(
         f'# Writer System Contract — Mindmap Track `{track}` (Cache-Aligned v2)\n'
         'Write publication-ready, primary-source-grounded content strictly honoring the active format track, '
         'approved brief, `evidence.json` packet, visible attribution rules, and anti-AI writing rules below. '
-        'Never invent benchmarks, prices, dates, citations, or unexecuted product tests. '
+        'Never invent benchmarks, prices, dates, citations, unexecuted product tests, or personal quotes attributed to Jonathan Teplitsky or any named reviewer (only verbatim pre-approved insights from `.claude/approved-insights.json` render in Reviewer Note boxes). '
         'CLOSED-SOURCE FACT DISCIPLINE (CRITICAL FOR ZERO REWORK): Every concrete product claim, feature, '
         'integration name, channel capability, billing option, cap, and arithmetic figure you state MUST appear '
         'explicitly in the per-page prompt / `SOURCE` facts (`<slug>.prompt.md`). Do NOT add unstated training-memory '

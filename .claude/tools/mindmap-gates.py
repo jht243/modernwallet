@@ -2179,6 +2179,21 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                 'All options below are on equal footing with NO rigid priority. Choose whichever option — or combination of multiple options — makes this specific page strongest. Only omit internal proof if there is a genuine, specific reason (such as a medical/legal domain exclusion or zero applicable records/numbers), and state that reason explicitly.',
                 *pool_bullets,
             ])
+            approved_insight = pool_info.get('approvedReviewerInsight')
+            if isinstance(approved_insight, dict) and approved_insight.get('note'):
+                prompt_lines.extend([
+                    '',
+                    f"## Pre-Approved Editorial Reviewer Insight Matched (`{approved_insight.get('id')}` — Verbatim, Zero Fabrication)",
+                    f"- **Reviewer:** {approved_insight.get('reviewer')} · **Label:** {approved_insight.get('label')} · **Approved:** {approved_insight.get('reviewedDate')}",
+                    f"- **Exact Approved Text:** \"{approved_insight.get('note')}\"",
+                    '- **Rule:** The site layout automatically displays this exact pre-approved Reviewer Note box on matching routes. Keep the article consistent with this takeaway, and NEVER alter, paraphrase, or invent additional personal quotes attributed to the reviewer in article body prose.',
+                ])
+            else:
+                prompt_lines.extend([
+                    '',
+                    '## Editorial Reviewer Note Policy (Zero Fabrication)',
+                    '- No pre-approved personal Reviewer Insight matches this route. Auto-publish normally with the Editorial/Research Desk `Our Takeaway` and standard reviewer verification bar; NEVER invent a personal quote attributed to Jonathan Teplitsky or any named reviewer.',
+                ])
             matched_exp = tracks_mod.match_experience_records(
                 root,
                 ' '.join([str(ident.get('title') or ''), str(ra.get('question') or row.get('reader_question') or ''), str(row.get('problem') or '')]),
