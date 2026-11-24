@@ -1310,6 +1310,72 @@ def check_indexing_sweep(
     }
 
 
+
+def check_page12_noop(
+    root: Path,
+    *,
+    detect_json: Path,
+    measure_json: Path | None = None,
+    site: str = '',
+    skill: str = 'page-1-2-no-clicks-pass-auto',
+    send_email: bool = False,
+) -> dict:
+    """Turn-1 fast-exit for Page 1-2 No Clicks when 0 pages are picked and 0 final WORSE reverts exist."""
+    if not detect_json or not detect_json.is_file():
+        return {'fastExit': False, 'reason': 'detect_json_missing'}
+    try:
+        doc = json.loads(detect_json.read_text(errors='ignore') or '{}')
+    except Exception as exc:
+        return {'fastExit': False, 'reason': f'detect_json_invalid:{exc}'}
+    if doc.get('status') not in (None, 'OK', 'ok'):
+        return {'fastExit': False, 'reason': f"detect_status:{doc.get('status')}"}
+
+    pages = doc.get('pages') or []
+    worse_reverts = []
+    if measure_json and measure_json.is_file():
+        try:
+            mdoc = json.loads(measure_json.read_text(errors='ignore') or '{}')
+            for r in (mdoc.get('results') or []):
+                if isinstance(r, dict) and str(r.get('verdict') or '').upper() == 'WORSE' and r.get('final') is True:
+                    worse_reverts.append(r.get('page') or r.get('path') or 'row')
+        except Exception as exc:
+            return {'fastExit': False, 'reason': f'measure_json_invalid:{exc}'}
+
+    if pages or worse_reverts:
+        return {
+            'fastExit': False,
+            'pickedCount': len(pages),
+            'worseRevertCount': len(worse_reverts),
+        }
+
+    resolved_site = (site or doc.get('base_url') or doc.get('site') or '').strip()
+    stats = doc.get('stats') if isinstance(doc.get('stats'), dict) else {}
+    day_str = str(doc.get('generated_at') or '')[:10] or detect_json.stem
+    stats_note = f" (stats={json.dumps(stats, separators=(',', ':'))[:120]})" if stats else ''
+    summary = f"Page 1-2 No Clicks {day_str}: 0 eligible pages picked, 0 WORSE reverts{stats_note}; fast-exited cleanly."
+
+    # Clean up untracked empty detect/measure scratch reports so git status stays clean (0 empty commits/deploys)
+    for cand in (
+        detect_json,
+        detect_json.with_suffix('.md'),
+        measure_json,
+        measure_json.with_suffix('.md') if measure_json else None,
+    ):
+        if cand is not None:
+            _cleanup_untracked_report_file(root, cand)
+
+    if send_email:
+        _send_noop(root, skill=skill, site=resolved_site, summary=summary)
+
+    return {
+        'fastExit': True,
+        'pickedCount': 0,
+        'worseRevertCount': 0,
+        'site': resolved_site,
+        'summary': summary,
+    }
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description='Routine-scoped deterministic zero-work fast-exit helper')
     ap.add_argument('--root', default='.')
@@ -1370,6 +1436,13 @@ def main(argv: list[str] | None = None) -> int:
     p_cmp.add_argument('--site', required=True)
     p_cmp.add_argument('--send-email', '--post-collector', dest='send_email', action='store_true')
 
+    p_p12 = sub.add_parser('page12-noop')
+    p_p12.add_argument('--detect', type=Path, required=True)
+    p_p12.add_argument('--measure', type=Path, default=None)
+    p_p12.add_argument('--site', default='')
+    p_p12.add_argument('--skill', default='page-1-2-no-clicks-pass-auto')
+    p_p12.add_argument('--send-email', '--post-collector', dest='send_email', action='store_true')
+
     p_idx = sub.add_parser('indexing-sweep')
     p_idx.add_argument('--inspection-json', required=True, type=Path)
     p_idx.add_argument('--site', required=True)
@@ -1424,6 +1497,21 @@ def main(argv: list[str] | None = None) -> int:
         if res.get('fastExit') and getattr(args, 'send_email', False):
             res['collectorPosted'] = True
             res['next'] = 'STOP_IMMEDIATELY — collector no-op already recorded via send-routine-email.py; do NOT grep send-routine-email.py, write scratchpad scripts, or call /api/routine-run again.'
+        print(json.dumps(res, ensure_ascii=False))
+        return 0
+
+    if args.cmd == 'page12-noop':
+        res = check_page12_noop(
+            root,
+            detect_json=_abs(args.detect),
+            measure_json=_abs(args.measure),
+            site=args.site,
+            skill=args.skill,
+            send_email=args.send_email,
+        )
+        if res.get('fastExit') and getattr(args, 'send_email', False):
+            res['collectorPosted'] = True
+            res['next'] = 'STOP_IMMEDIATELY — collector no-op already recorded via send-routine-email.py; do NOT commit empty reports, push to main, or call /api/routine-run again.'
         print(json.dumps(res, ensure_ascii=False))
         return 0
 
