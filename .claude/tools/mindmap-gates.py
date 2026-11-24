@@ -1793,7 +1793,6 @@ def _collect_verified_urls_from_text(raw_text):
     return urls
 
 
-
 def _prewrite_check_review_slots_and_archive(root, manifest_file, plan, target_routes):
     """Fail-closed BEFORE spending writer API credits if a target route's review slot is locked or archive cannot hydrate."""
     import os
@@ -1863,8 +1862,18 @@ def _prewrite_check_review_slots_and_archive(root, manifest_file, plan, target_r
     )
 
 
-def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice_sample=None, review_path=None, overwrite=False, routes=None):
-    """Build reusable system.md + per-slug .prompt.md + .allowed-urls.txt from approval-manifest.json in 1 command."""
+def _load_tracks_module():
+    t_path = Path(__file__).with_name('mindmap-tracks.py')
+    if not t_path.is_file():
+        return None
+    spec = importlib.util.spec_from_file_location('mindmap_tracks_engine', t_path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice_sample=None, review_path=None, overwrite=False, routes=None, track=None):
+    """Build reusable track-sliced system.md + per-slug .prompt.md + .allowed-urls.txt from approval-manifest.json in 1 command."""
     root = root.resolve()
     m_file = local(root, manifest_path)
     plan = read(m_file)
@@ -1872,42 +1881,92 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
     require(target_dir.is_relative_to(root), 'Write packet directory escapes repository: ' + str(out_dir))
     target_dir.mkdir(parents=True, exist_ok=True)
     ev_base = (root / evidence_dir).resolve() if evidence_dir else (m_file.parent / 'evidence').resolve()
+    tracks_mod = _load_tracks_module()
 
-    sample_rel, sample_txt = _discover_voice_sample(root, voice_sample)
-    sys_parts = [
-        '# Writer System Contract (Auto-Compiled by mindmap-gates.py prepare-write-packets)\n'
-        'Write publication-ready, evidence-grounded content strictly honoring every approved plan field, '
-        'primary-source fact, visible attribution rule, and anti-AI language rule below. '
-        'Never invent benchmarks, prices, dates, citations, or unexecuted tests. '
-        'Hyperlink the VERY FIRST mention of every named product, platform, program, benchmark, or sibling model '
-        '(including when that first mention appears in the intro or a comparison table cell) using ONLY verified URLs '
-        'from `<slug>.allowed-urls.txt` or existing/planned internal routes — never leave first mentions as plain text when a verified URL exists, and never invent unverified external URLs. '
-        'Never place raw Markdown `| col |` pipe-table rows inside JSON `paragraphs[]` strings; use structured `table` fields (`{"headers": [...], "rows": [[...]]}`) where supported.\n'
+    brief_by_id = {}
+    for b in (plan.get('newPageBriefs') or []) + (plan.get('scopeBriefs') or []):
+        if isinstance(b, dict) and b.get('actionId'):
+            brief_by_id.setdefault(b['actionId'], b)
+
+    # Determine active track(s) and whether any route in this batch uses measured (Tested YYYY) eligibility
+    active_rows = [
+        r for r in (plan.get('actions') or [])
+        if isinstance(r, dict) and r.get('bucket') in SUBSTANTIVE and _matches_route_filter(r.get('target', ''), routes)
     ]
-    if sample_txt:
-        sys_parts.append(f'## Published Repository Voice & Structure Sample (`{sample_rel}` excerpt)\n\n```\n{sample_txt}\n```\n')
-    anti_ai_path = root / '.claude/commands/_anti-ai-language.md'
-    if anti_ai_path.is_file():
-        anti_txt = anti_ai_path.read_text(errors='ignore')
-        writer_anti = anti_txt.split('\n## AUDITOR', 1)[0] if '\n## AUDITOR' in anti_txt else anti_txt
-        sys_parts.append('## Anti-AI Writing Rules (Writer Contract)\n\n' + writer_anti.strip() + '\n')
-    for contract_rel in (
-        '.claude/commands/_decision-evidence.md',
-        '.claude/commands/_decision-evidence.local.md',
-        '.claude/commands/_testing-labels.md',
-        '.claude/commands/_testing-labels.local.md',
-        '.claude/commands/_experience.md',
-        '.claude/commands/_experience.local.md',
-        '.claude/commands/_layer3-evidence-sources.md',
-        '.claude/commands/_content-standard.local.md',
-        '.claude/commands/_content-standard.md',
-    ):
-        cp = root / contract_rel
-        if cp.is_file():
-            sys_parts.append(f'## `{contract_rel}`\n\n' + cp.read_text(errors='ignore').strip() + '\n')
-    system_file = target_dir / 'system.md'
-    if overwrite or not system_file.exists():
-        system_file.write_text('\n\n'.join(sys_parts))
+    row_tracks = {}
+    any_tested_needed = False
+    if tracks_mod is not None:
+        for r in active_rows:
+            aid = r.get('id', '')
+            br = brief_by_id.get(aid, {})
+            tr = track if track in tracks_mod.TRACKS else tracks_mod.classify_action(r, br, plan)
+            row_tracks[aid] = tr
+            slug_r = _route_slug(str(r.get('target') or ''))
+            ev_f = ev_base / slug_r / 'evidence.json'
+            ev_b = ''
+            if ev_f.is_file():
+                try:
+                    ev_b = str(read(ev_f).get('basis') or '')
+                except Exception:
+                    ev_b = ''
+            elig = tracks_mod.tested_eligibility(root, str(r.get('target') or ''), title=str((br.get('identity') or {}).get('title') or ''))
+            if ev_b == 'measured' and elig.get('eligible'):
+                any_tested_needed = True
+
+    distinct_tracks = list(dict.fromkeys(row_tracks.values()))
+    primary_track = track if (tracks_mod and track in tracks_mod.TRACKS) else (distinct_tracks[0] if distinct_tracks else 'guide')
+
+    system_by_track = {}
+    sample_rel = None
+    if tracks_mod is not None:
+        for tr_name in (distinct_tracks or [primary_track]):
+            sys_txt, sys_stats = tracks_mod.compile_track_system(
+                root, tr_name, include_tested=any_tested_needed, voice_sample=voice_sample,
+            )
+            sample_rel = sample_rel or sys_stats.get('voiceSample')
+            tr_sys_file = target_dir / f'system.{tr_name}.md'
+            if overwrite or not tr_sys_file.exists():
+                tr_sys_file.write_text(sys_txt)
+            system_by_track[tr_name] = tr_sys_file
+        system_file = target_dir / 'system.md'
+        if overwrite or not system_file.exists():
+            system_file.write_text(system_by_track[primary_track].read_text())
+    else:
+        sample_rel, sample_txt = _discover_voice_sample(root, voice_sample)
+        sys_parts = [
+            '# Writer System Contract (Auto-Compiled by mindmap-gates.py prepare-write-packets)\n'
+            'Write publication-ready, evidence-grounded content strictly honoring every approved plan field, '
+            'primary-source fact, visible attribution rule, and anti-AI language rule below. '
+            'Never invent benchmarks, prices, dates, citations, or unexecuted tests. '
+            'Hyperlink the VERY FIRST mention of every named product, platform, program, benchmark, or sibling model '
+            '(including when that first mention appears in the intro or a comparison table cell) using ONLY verified URLs '
+            'from `<slug>.allowed-urls.txt` or existing/planned internal routes — never leave first mentions as plain text when a verified URL exists, and never invent unverified external URLs. '
+            'Never place raw Markdown `| col |` pipe-table rows inside JSON `paragraphs[]` strings; use structured `table` fields (`{"headers": [...], "rows": [[...]]}`) where supported.\n'
+        ]
+        if sample_txt:
+            sys_parts.append(f'## Published Repository Voice & Structure Sample (`{sample_rel}` excerpt)\n\n```\n{sample_txt}\n```\n')
+        anti_ai_path = root / '.claude/commands/_anti-ai-language.md'
+        if anti_ai_path.is_file():
+            anti_txt = anti_ai_path.read_text(errors='ignore')
+            writer_anti = anti_txt.split('\n## AUDITOR', 1)[0] if '\n## AUDITOR' in anti_txt else anti_txt
+            sys_parts.append('## Anti-AI Writing Rules (Writer Contract)\n\n' + writer_anti.strip() + '\n')
+        for contract_rel in (
+            '.claude/commands/_decision-evidence.md',
+            '.claude/commands/_decision-evidence.local.md',
+            '.claude/commands/_testing-labels.md',
+            '.claude/commands/_testing-labels.local.md',
+            '.claude/commands/_experience.md',
+            '.claude/commands/_experience.local.md',
+            '.claude/commands/_layer3-evidence-sources.md',
+            '.claude/commands/_content-standard.local.md',
+            '.claude/commands/_content-standard.md',
+        ):
+            cp = root / contract_rel
+            if cp.is_file():
+                sys_parts.append(f'## `{contract_rel}`\n\n' + cp.read_text(errors='ignore').strip() + '\n')
+        system_file = target_dir / 'system.md'
+        if overwrite or not system_file.exists():
+            system_file.write_text('\n\n'.join(sys_parts))
 
     global_urls = set()
     source_excerpts = {}
@@ -1920,11 +1979,11 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                 source_excerpts[ref['path']] = txt[:3500]
     sources_folder = m_file.parent / 'research/sources'
     if sources_folder.is_dir():
-        for sp in sorted(sources_folder.glob('*.txt')):
+        for sp in sorted(list(sources_folder.glob('*.txt')) + list(sources_folder.glob('*.json'))):
             rel_sp = str(sp.relative_to(root))
             txt = sp.read_text(errors='ignore')
             global_urls.update(_collect_verified_urls_from_text(txt))
-            source_excerpts.setdefault(rel_sp, txt[:3500])
+            source_excerpts.setdefault(rel_sp, txt[:8000])
 
     brief_by_id = {}
     for b in (plan.get('newPageBriefs') or []) + (plan.get('scopeBriefs') or []):
@@ -1983,6 +2042,7 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
 
         ev_file = ev_base / slug / 'evidence.json'
         ev_data = None
+        model_output_data = None
         if ev_file.is_file():
             try:
                 ev_data = read(ev_file)
@@ -1991,8 +2051,37 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                         sp = (root / sref['path']).resolve()
                         if sp.is_relative_to(root) and sp.is_file():
                             row_urls.update(_collect_verified_urls_from_text(sp.read_text(errors='ignore')))
+                out_ref = ((ev_data.get('execution') or {}).get('output') or {}).get('path')
+                if isinstance(out_ref, str):
+                    op = (root / out_ref).resolve()
+                    if op.is_relative_to(root) and op.is_file():
+                        model_output_data = read(op)
             except Exception:
                 ev_data = None
+
+        row_track = row_tracks.get(aid, primary_track)
+        # On subject-only alternatives routes, mechanically restrict allowed external URLs to subjectOfficialHosts + canonical internal hosts!
+        subj_hosts = [str(h).lower().removeprefix('www.') for h in (brief.get('subjectOfficialHosts') or []) if h]
+        if not subj_hosts and brief.get('subjectOfficialUrl'):
+            m_h = re.match(r'^https?://([^/]+)', str(brief['subjectOfficialUrl']))
+            if m_h:
+                subj_hosts.append(m_h.group(1).lower().removeprefix('www.'))
+        if row_track == 'alternatives' and subj_hosts:
+            canon_h = ''
+            cb_raw = str(plan.get('canonicalBase') or '').strip()
+            if cb_raw.startswith('https://'):
+                m_c = re.match(r'^https?://([^/]+)', cb_raw)
+                if m_c:
+                    canon_h = m_c.group(1).lower().removeprefix('www.')
+            filtered_urls = set()
+            for u in row_urls:
+                m_u = re.match(r'^https?://([^/]+)', u)
+                dom = m_u.group(1).lower().removeprefix('www.') if m_u else ''
+                if any(dom == sh or dom.endswith('.' + sh) or (canon_h and dom == canon_h) or dom == 'layer3labs.io' for sh in subj_hosts):
+                    filtered_urls.add(u)
+            if brief.get('subjectOfficialUrl'):
+                filtered_urls.add(str(brief['subjectOfficialUrl']).strip())
+            row_urls = filtered_urls
 
         urls_file = target_dir / f'{slug}.allowed-urls.txt'
         if overwrite or not urls_file.exists():
@@ -2000,7 +2089,7 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
 
         fmt_low = str(ident.get('format') or row.get('format') or '').lower()
         page_type_low = str(ident.get('pageType') or '').lower()
-        depth_floor = 1500 if ('comparison' in fmt_low or 'comparison' in page_type_low or '/compare/' in target) else 1800
+        depth_floor = 1500 if (row_track in ('alternatives', 'comparison') or 'comparison' in fmt_low or 'comparison' in page_type_low or '/compare/' in target) else 1800
         outline_lines = []
         for idx, item in enumerate(brief.get('outline') or [], 1):
             if isinstance(item, dict):
@@ -2018,6 +2107,7 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
         prompt_lines = [
             f'# Approved Page Assignment: `{target}` (`{slug}`)',
             f'- **Action ID:** `{aid}` ({row.get("bucket")})',
+            f'- **Active Mindmap Track:** `{row_track}`',
             f'- **Title:** {ident.get("title") or row.get("solution") or slug}',
             f'- **Page Type / Format / Medium:** {ident.get("pageType") or "guide"} | {ident.get("format") or row.get("format")} | {ident.get("medium") or (row.get("presentation") or {}).get("medium")}',
             f'- **Minimum Visible Depth Floor:** {depth_floor}+ words (substantive, zero filler; never leave raw Markdown `| col |` pipe-table rows inside JSON string `paragraphs[]` arrays — use structured `table` fields where supported)',
@@ -2033,6 +2123,20 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
             f'- **Why New Page / Angle:** {brief.get("whyNewPage") or row.get("solution")}',
             f'- **Intent-Based Our Takeaway:** {json.dumps(brief.get("takeaway") or "", ensure_ascii=False)}',
         ]
+        if tracks_mod is not None:
+            matched_exp = tracks_mod.match_experience_records(
+                root,
+                ' '.join([str(ident.get('title') or ''), str(ra.get('question') or row.get('reader_question') or ''), str(row.get('problem') or '')]),
+                limit=3,
+            )
+            if matched_exp:
+                prompt_lines.extend([
+                    '',
+                    '## Matched First-Party Layer3 Experience Records (Use Only Within Stated `limits`)',
+                    '```json',
+                    json.dumps(matched_exp, indent=2, ensure_ascii=False),
+                    '```',
+                ])
         if outline_lines:
             prompt_lines.extend(['', '## Approved Section Outline', *outline_lines])
         if outbound_items:
@@ -2063,6 +2167,14 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                 json.dumps(ev_data, indent=2, ensure_ascii=False),
                 '```',
             ])
+        if model_output_data is not None:
+            prompt_lines.extend([
+                '',
+                '## Executed Scenario Model Output (`output.json` — Cite Exact Figures)',
+                '```json',
+                json.dumps(model_output_data, indent=2, ensure_ascii=False),
+                '```',
+            ])
         if row_sources:
             prompt_lines.append('\n## Captured Primary-Source Evidence Excerpts (Disk Cache)')
             for s_path, s_txt in row_sources:
@@ -2071,10 +2183,13 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
         prompt_file = target_dir / f'{slug}.prompt.md'
         if overwrite or not prompt_file.exists():
             prompt_file.write_text('\n'.join(prompt_lines) + '\n')
+        row_sys_file = system_by_track.get(row_track, system_file)
         packets.append({
             'actionId': aid,
             'slug': slug,
             'target': target,
+            'track': row_track,
+            'system': str(row_sys_file.relative_to(root)),
             'prompt': str(prompt_file.relative_to(root)),
             'allowedUrls': str(urls_file.relative_to(root)),
             'allowedUrlCount': len(row_urls),
@@ -2083,7 +2198,9 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
 
     return {
         'status': 'PASS',
+        'track': primary_track,
         'system': str(system_file.relative_to(root)),
+        'systemByTrack': {k: str(v.relative_to(root)) for k, v in system_by_track.items()},
         'voiceSample': sample_rel,
         'count': len(packets),
         'packets': packets,
@@ -2107,14 +2224,23 @@ def _convert_pipe_lines_to_table(lines):
     return None
 
 
-def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_tables=False, routes=None):
-    """1-command pre-splice mechanical lint across writer drafts (.meta.json, pipe-in-paragraphs, URLs, residue, depth)."""
+def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_tables=False, routes=None, track=None, enforce_track_proof=None, evidence_dir=None):
+    """1-command pre-splice mechanical lint across writer drafts (.meta.json, pipe-in-paragraphs, URLs, residue, depth, track proof)."""
     root = root.resolve()
     m_file = local(root, manifest_path)
     plan = read(m_file)
     d_dir = (root / drafts_dir).resolve()
     require(d_dir.is_relative_to(root) and d_dir.is_dir(), 'Drafts directory missing or outside repository: ' + str(drafts_dir))
     p_dir = (root / prompts_dir).resolve() if prompts_dir else None
+    ev_base = (root / evidence_dir).resolve() if evidence_dir else (m_file.parent / 'evidence').resolve()
+    tracks_mod = _load_tracks_module()
+    if enforce_track_proof is None:
+        enforce_track_proof = bool(track or plan.get('mindmapTrack'))
+    brief_by_id = {
+        b.get('actionId'): b
+        for b in (plan.get('newPageBriefs') or []) + (plan.get('scopeBriefs') or [])
+        if isinstance(b, dict) and b.get('actionId')
+    }
 
     canonical_hosts = set()
     crp_cfg = root / '.claude/content-review-policy.json'
@@ -2267,6 +2393,27 @@ def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_
             for sec, target_slug in sorted(set(re.findall(r'(?:href=["\']|\]\()/(guides|comparisons)/([a-z0-9][a-z0-9-]*)(?:["\'/?#)]|$)', raw_txt))):
                 if target_slug not in known_slugs:
                     issues.append({'slug': slug, 'kind': 'broken-internal-link', 'detail': f'Internal link /{sec}/{target_slug} does not match any existing or planned slug'})
+
+        # Hard proof-completeness & link-policy precheck on unified Mindmap tracks (blocks silent generic filler before audit/publish)
+        if enforce_track_proof and tracks_mod is not None and draft_file.suffix == '.json' and isinstance(data, dict):
+            br = brief_by_id.get(row.get('id', ''), {})
+            row_tr = track if track in tracks_mod.TRACKS else tracks_mod.classify_action(row, br, plan)
+            ev_obj = None
+            ev_f = ev_base / slug / 'evidence.json'
+            if ev_f.is_file():
+                try:
+                    ev_obj = read(ev_f)
+                except Exception:
+                    ev_obj = None
+            subj_hosts = [str(h) for h in (br.get('subjectOfficialHosts') or []) if h]
+            for tr_issue in tracks_mod.validate_track_draft(
+                data,
+                track=row_tr,
+                evidence_obj=ev_obj,
+                is_registered_alternatives=(row_tr == 'alternatives' and bool(subj_hosts)),
+                subject_official_hosts=subj_hosts,
+            ):
+                issues.append({'slug': slug, **tr_issue})
 
     return {
         'status': 'PASS' if not issues else 'FAIL',
@@ -3099,12 +3246,16 @@ def main():
     q.add_argument('--review')
     q.add_argument('--overwrite', action='store_true')
     q.add_argument('--route', dest='routes', action='append', help='Optional route filter (repeat as needed)')
+    q.add_argument('--track', choices=['alternatives', 'comparison', 'roundup', 'guide', 'launch'], help='Optional explicit Mindmap format track override')
     q = s.add_parser('precheck-drafts')
     q.add_argument('--manifest', required=True)
     q.add_argument('--drafts-dir', required=True)
     q.add_argument('--prompts-dir')
+    q.add_argument('--evidence-dir')
     q.add_argument('--fix-pipe-tables', action='store_true')
     q.add_argument('--route', dest='routes', action='append', help='Optional route filter (repeat as needed)')
+    q.add_argument('--track', choices=['alternatives', 'comparison', 'roundup', 'guide', 'launch'])
+    q.add_argument('--enforce-track-proof', action='store_true', default=None)
     q = s.add_parser('check-write-scope')
     q.add_argument('--manifest', required=True)
     q.add_argument('--prior-review')
@@ -3135,12 +3286,14 @@ def main():
         print(json.dumps(prepare_write_packets(
             root, a.manifest, a.out_dir, evidence_dir=a.evidence_dir,
             voice_sample=a.voice_sample, review_path=a.review, overwrite=a.overwrite, routes=a.routes,
+            track=a.track,
         ), indent=2))
         return
     if a.command == 'precheck-drafts':
         res = precheck_drafts(
             root, a.manifest, a.drafts_dir, prompts_dir=a.prompts_dir,
             fix_pipe_tables=a.fix_pipe_tables, routes=a.routes,
+            track=a.track, enforce_track_proof=a.enforce_track_proof, evidence_dir=a.evidence_dir,
         )
         print(json.dumps(res, indent=2))
         if res['status'] != 'PASS':
