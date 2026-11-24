@@ -217,6 +217,45 @@ class MindmapTracksTests(unittest.TestCase):
         self.assertTrue(any(r['relationship'] == 'Client projects' for r in exp))
         self.assertFalse(any(r['id'] in ('fleet-psychedelic', 'fleet-space') for r in exp))
 
+    def test_page_type_evidence_pool_and_empty_proof_audit_log(self):
+        # 1. Commercial software alternatives page gets full unranked pool including hands_on_test + client + survey + modeling + tool
+        pool_alt = tracks.resolve_page_type_and_evidence_pool(
+            REPO, '/comparisons/landbot-alternatives', 'alternatives', title='Landbot Alternatives 2026'
+        )
+        self.assertEqual(pool_alt['pageCategory'], 'alternatives-evaluation')
+        self.assertTrue(pool_alt['poolPresented'])
+        pool_ids = {p['id'] for p in pool_alt['pool']}
+        self.assertIn('hands_on_test', pool_ids)
+        self.assertIn('client_and_operator_experience', pool_ids)
+        self.assertIn('internal_scenario_and_spec_modeling', pool_ids)
+
+        # 2. Regulated medical/psychedelic page excludes hands_on_test and marks legitimateZeroInternalDomain=True
+        pool_med = tracks.resolve_page_type_and_evidence_pool(
+            REPO, '/guides/psilocybin-clinical-trial-status', 'guide', title='Psilocybin Clinical Trial Status'
+        )
+        self.assertEqual(pool_med['pageCategory'], 'regulated-medical-or-psychedelic')
+        self.assertTrue(pool_med['legitimateZeroInternalDomain'])
+        self.assertNotIn('hands_on_test', {p['id'] for p in pool_med['pool']})
+
+        # 3. Empty-proof audit log records YES/NO poolPresented, exact whyNotUsed, and published status without blocking
+        with tempfile.TemporaryDirectory() as tmp:
+            fake_root = Path(tmp)
+            (fake_root / '.claude').mkdir()
+            rec = tracks.log_internal_proof_outcome(
+                fake_root,
+                route='/comparisons/quote-only-a-vs-b',
+                draft_obj={'h1': 'QuoteA vs QuoteB', 'whyNoInternalData': 'Both vendors use custom enterprise quotes only and 0 client cases matched.'},
+                pool_receipt=pool_alt,
+                routine='comparison-miner-auto',
+                job_id='test-empty-log-1',
+                published_status='published',
+            )
+            self.assertFalse(rec['usedInternalProof'])
+            self.assertTrue(rec['poolPresented'])
+            self.assertIn('custom enterprise quotes', rec['whyNotUsed'])
+            self.assertEqual(rec['publishedStatus'], 'published')
+            self.assertTrue((fake_root / 'reports/internal-proof-log.jsonl').is_file())
+
 
 if __name__ == '__main__':
     unittest.main()

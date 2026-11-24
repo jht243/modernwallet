@@ -2158,7 +2158,27 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
             f'- **Why New Page / Angle:** {brief.get("whyNewPage") or row.get("solution")}',
             f'- **Intent-Based Our Takeaway:** {json.dumps(brief.get("takeaway") or "", ensure_ascii=False)}',
         ]
-        if tracks_mod is not None:
+        if tracks_mod is not None and hasattr(tracks_mod, 'resolve_page_type_and_evidence_pool'):
+            pool_info = tracks_mod.resolve_page_type_and_evidence_pool(
+                root,
+                target,
+                row_track,
+                title=str(ident.get('title') or row.get('solution') or slug),
+                h1=str(ident.get('title') or row.get('solution') or slug),
+                description=str(row.get('problem') or ''),
+            )
+            pool_receipt_file = target_dir / f'{slug}.pool-receipt.json'
+            pool_receipt_file.write_text(json.dumps(pool_info, indent=2, ensure_ascii=False) + '\n')
+            pool_bullets = [
+                f"- **`{opt['id']}` ({opt['label']}):** {opt['whenUseful']}"
+                for opt in (pool_info.get('pool') or [])
+            ] or ['- **`cited_primary_sources` only:** Regulated medical/psychedelic/legal domain where personal testing and commercial modeling are excluded.']
+            prompt_lines.extend([
+                '',
+                f"## Eligible Internal & Testing Evidence Pool for Page Type `{pool_info['pageCategory']}` (Unranked — Choose Best Option or Combine Multiple)",
+                'All options below are on equal footing with NO rigid priority. Choose whichever option — or combination of multiple options — makes this specific page strongest. Only omit internal proof if there is a genuine, specific reason (such as a medical/legal domain exclusion or zero applicable records/numbers), and state that reason explicitly.',
+                *pool_bullets,
+            ])
             matched_exp = tracks_mod.match_experience_records(
                 root,
                 ' '.join([str(ident.get('title') or ''), str(ra.get('question') or row.get('reader_question') or ''), str(row.get('problem') or '')]),
@@ -2435,17 +2455,35 @@ def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_
                 if target_slug not in known_slugs:
                     issues.append({'slug': slug, 'kind': 'broken-internal-link', 'detail': f'Internal link /{sec}/{target_slug} does not match any existing or planned slug'})
 
-        # Hard proof-completeness & link-policy precheck on unified Mindmap tracks (blocks silent generic filler before audit/publish)
+        # Proof-completeness, link-policy precheck & durable internal-proof audit log (never blocks Phase 9 auto-publish)
+        ev_obj = None
+        ev_f = ev_base / slug / 'evidence.json'
+        if ev_f.is_file():
+            try:
+                ev_obj = read(ev_f)
+            except Exception:
+                ev_obj = None
+        pool_rec = None
+        if p_dir is not None and (p_dir / f'{slug}.pool-receipt.json').is_file():
+            try:
+                pool_rec = read(p_dir / f'{slug}.pool-receipt.json')
+            except Exception:
+                pool_rec = None
+        if tracks_mod is not None and hasattr(tracks_mod, 'log_internal_proof_outcome'):
+            tracks_mod.log_internal_proof_outcome(
+                root,
+                route=target,
+                draft_obj=data if isinstance(data, dict) else None,
+                raw_text=raw_txt,
+                evidence_obj=ev_obj,
+                pool_receipt=pool_rec,
+                routine=str(plan.get('source') or plan.get('mindmapTrack') or 'mindmap-pass'),
+                job_id=str(plan.get('jobId') or ''),
+                published_status='draft-checked',
+            )
         if enforce_track_proof and tracks_mod is not None and draft_file.suffix == '.json' and isinstance(data, dict):
             br = brief_by_id.get(row.get('id', ''), {})
             row_tr = track if track in tracks_mod.TRACKS else tracks_mod.classify_action(row, br, plan)
-            ev_obj = None
-            ev_f = ev_base / slug / 'evidence.json'
-            if ev_f.is_file():
-                try:
-                    ev_obj = read(ev_f)
-                except Exception:
-                    ev_obj = None
             subj_hosts = [str(h) for h in (br.get('subjectOfficialHosts') or []) if h]
             for tr_issue in tracks_mod.validate_track_draft(
                 data,

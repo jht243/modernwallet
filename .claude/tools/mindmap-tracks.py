@@ -122,36 +122,36 @@ TRACK_CONTRACTS = {
         'external link allowed anywhere on the rendered page is the subject product\'s official HTTPS URL; name competing vendors '
         'in plain text (no external competitor links) and include 3+ contextual internal `/` links to existing routes on this site. '
         'The two vendor CTAs ("Update your listing" and "Want to be added to this alternatives page?") render automatically from the template.\n'
-        '- **4-Rung Proof Waterfall (Use Highest Real Rung Available — Never Force Testing or Fake Math):**\n'
-        '  1. **Comparison Table:** Subject product + 5–8 real alternatives with exact published billing units, entry prices, hard plan caps, and best fit (never "see vendor site"; write `"Quote-based; no public price"` when unpublished).\n'
-        '  2. **Scenario Math OR Primary-Source Matrix:** When `basis` is `"modeled"` or `"calculated"`, include the 3-scenario workload/seat cost table from `evidence.json` + explicit **break-even / counterexample**. When `basis` is `"reported"` (no public prices/numbers to model), step down cleanly to a cited primary-source feature/terms matrix + counterexample without inventing calculations.\n'
-        '  3. **Hands-On Testing (`>=1` Internal Test) & Operator Context:** When `basis == "measured"` (>=1 real internal test run), show `(Tested YYYY)` + `howWeTested` naming the exact tested tool(s) honestly without claiming untested tools were tested. Weave in matched first-party catalog/survey records ONLY when provided in the prompt within their stated `limits` (skip cleanly when empty).\n'
+        '- **Page-Type Evidence Pool (Unranked — Choose Best Option or Combine Multiple):**\n'
+        '  1. **Comparison Matrix:** Subject product + 5–8 real alternatives with exact published billing units, entry prices, hard plan caps, and best fit (never "see vendor site"; write `"Quote-based; no public price"` when unpublished).\n'
+        '  2. **Select From the Full Internal Evidence Pool in `<slug>.prompt.md`:** Inspect ALL eligible options presented in the pool (`hands_on_test`, `client_and_operator_experience`, `proprietary_reader_survey`, `internal_scenario_and_spec_modeling`, `interactive_tool_or_calculator`) with NO rigid priority — choose whichever option, or combination of multiple options, makes this alternatives page strongest. Show `(Tested YYYY)` + `howWeTested` whenever `basis == "measured"` (>=1 real internal test run), naming the exact tested item(s) honestly.\n'
+        '  3. **Zero-Internal-Data Rule:** Publishing without internal/testing/client/modeling data is permitted ONLY when a genuine reason applies (e.g. regulated domain or every pool option genuinely came up empty), which must be recorded honestly in `whyNoInternalData` / `sourceNote` without faking tests or math.\n'
         '  4. **Decision Architecture & Opinionated Verdict (`verdict[]`):** Include one substantive H2 per alternative, `"How to Choose a <Product> Alternative"`, `"When <Product> Is Still the Better Fit"`, `"Who This Is Not For"`, `"What Would Change Our Answer"`, and a decisive buyer-segmented `verdict[]`.\n'
-        '  5. **Transparent Provenance:** Set `sourceNote` naming every primary source + date and clarifying the exact proof rung used (`measured` hands-on test, internal scenario modeling, or cited primary reporting); set `pricingNote`.\n'
+        '  5. **Transparent Provenance:** Set `sourceNote` naming every primary source + date and clarifying the exact internal/testing/modeling evidence used from the pool; set `pricingNote`.\n'
     ),
     'comparison': (
         '## Active Mindmap Format Track: `comparison` (`<Option A> vs <Option B>`)\n'
         '- **Output Schema (`ComparisonPage` TypeScript shape, `1,500+` visible words):** `sections` uses `{id, heading, content: string[], bullets?: string[], table?: {caption?: string, headers: string[], rows: string[][]}}`, `ctaButton` is a `string`, `tableColumnLabels` is a 3-string tuple, `relatedLinks` items include `{title, description, href, category}`, `attributionMode` is `"author"`, `faqSchemaPlainText` is `true`, plus `sourceNote` and `pricingNote`.\n'
-        '- **4-Rung Proof Waterfall (Never Force Testing or Fake Math):**\n'
+        '- **Page-Type Evidence Pool (Unranked — Choose Best Option or Combine Multiple):**\n'
         '  1. Answer `"Which should I pick between <A> and <B>?"` in sentence 1 with concrete decision thresholds.\n'
-        '  2. Include a structured side-by-side `comparisonTable`. When `basis` is `"modeled"` or `"calculated"`, include the **3-scenario cost/cap/token table** (`sections[].table` or Markdown pipe table) from `evidence.json` + explicit **counterexample**; when `basis` is `"reported"` (e.g. non-numerical, clinical/legal/policy, or quote-only vendors), present a cited primary-source matrix + counterexample with zero forced math.\n'
-        '  3. When `basis == "measured"` (>=1 real internal test on a tested-eligible route), include `(Tested YYYY)` + `howWeTested` naming the exact tested option(s) honestly; never claim testing on regulated/excluded topics or when `basis != "measured"`. Include matched catalog/survey context ONLY when provided.\n'
+        '  2. Include a structured side-by-side `comparisonTable`, then choose the strongest option — OR combination of options — from the full unranked **Evidence Pool** presented in `<slug>.prompt.md` (`hands_on_test`, `client_and_operator_experience`, `proprietary_reader_survey`, `internal_scenario_and_spec_modeling`, `interactive_tool_or_calculator`), plus a concrete **counterexample**.\n'
+        '  3. Show `(Tested YYYY)` + `howWeTested` whenever `basis == "measured"` (>=1 real internal test on an eligible route), naming tested option(s) honestly; never claim testing on regulated/excluded topics. Only omit internal proof when a valid documented reason applies (`whyNoInternalData`).\n'
         '  4. Close with a decisive `verdict[]`, `"What Would Change Our Answer"`, and explicit `sourceNote`.\n'
     ),
     'roundup': (
-        '## Active Mindmap Format Track: `roundup` (`Best <Category>` / Gear / Vertical Roundup)\n'
+        '## Active Mindmap Format Track: `roundup` (`Best <Category>` / Gear / Consumer Goods / Book Roundup)\n'
         '- **Output Schema:** Repository roundup `GearRoundup`, `GearDeepDive`, `VerticalPage`, `GuidePage`, or `ComparisonPage` JSON (`1,800+` visible words). Every layout natively renders `sections[].table` (`{caption?: string, headers: string[], rows: string[][]}` or `scenarioTable`), `takeaway` (`{heading?: string, paragraphs: string[], conditions?: string, whatWouldChange?: string}` or `string[]`) / `verdict`, `sourceNote`, and `pricingNote`.\n'
-        '- **4-Rung Proof Waterfall (Never Force Testing or Fake Math):**\n'
+        '- **Page-Type Evidence Pool (Unranked — Choose Best Option or Combine Multiple):**\n'
         '  1. Lead with the top pick by reader/buyer archetype and an honest evaluation matrix.\n'
-        '  2. When `basis == "measured"` (>=1 real internal test on a tested-eligible route), include 3 `howWeTested` bullets naming the exact tested item(s) honestly and per-pick `whyPicked` / `whoFor` / `downside`. When `basis` is `"modeled"`/`"calculated"`, include the cost/spec scenario table + counterexample from `evidence.json`. When `basis == "reported"`, step down cleanly to cited primary documentation without forced math or testing.\n'
+        '  2. Review the full unranked **Evidence Pool** in `<slug>.prompt.md` (`hands_on_test` across software, physical supplies/filters/gear, or firsthand *Read & Reviewed* books; `client_and_operator_experience`; `proprietary_reader_survey`; `internal_scenario_and_spec_modeling`; `interactive_tool_or_calculator`) and pick whichever option or multi-source combination best fits this roundup.\n'
         '  3. Populate `takeaway` (with `conditions` + `whatWouldChange`), never defer table cells ("see site"), and set explicit `sourceNote` and `pricingNote`.\n'
     ),
     'guide': (
         '## Active Mindmap Format Track: `guide` (Evergreen Guide / Pricing / Calculator / How-To / Policy)\n'
         '- **Output Schema:** `GuidePage` JSON object (`1,800+` visible words; shared across `/guides/`, `/open-weights/`, `/robotics/`, `/roi/`, `/governance/`, and fleet article collections). Layouts natively render `sections[].table` (`{caption?: string, headers: string[], rows: string[][]}`), `takeaway` (`{heading?: string, paragraphs: string[], conditions?: string, whatWouldChange?: string}` or `string[]`), `sourceNote`, and `pricingNote`.\n'
-        '- **4-Rung Proof Waterfall (Never Force Testing or Fake Math):**\n'
+        '- **Page-Type Evidence Pool (Unranked — Choose Best Option or Combine Multiple):**\n'
         '  1. Answer the exact reader question in the opening sentence.\n'
-        '  2. When `basis` is `"modeled"` or `"calculated"`, include the worked calculation or multi-scenario `sections[].table` from `evidence.json` with explicit assumptions + **counterexample**. When `basis == "reported"` (e.g. legal/clinical/policy reporting or non-numerical topics with no internal data), use a structured primary-source reference table (`sections[].table`) citing statutes, trials, or official docs directly — zero forced math and never `(Tested YYYY)` on guides/pricing/regulated topics.\n'
+        '  2. Review the full unranked **Evidence Pool** presented for this specific guide type in `<slug>.prompt.md` (client/operator workflows, completed reader surveys, internal cost/scenario/token modeling, interactive calculators) and apply whichever option or combination fits best. Only publish without internal data when a valid documented reason applies (e.g. medical/psychedelic/legal reporting or zero applicable pool data, noted in `whyNoInternalData`).\n'
         '  3. Populate `takeaway` (`conditions` + `whatWouldChange`), `sourceNote`, and 3+ contextual internal links.\n'
     ),
     'launch': (
@@ -276,6 +276,259 @@ def tested_eligibility(
         'exclusionReason': exclusion,
         'hasRegisteredEvidence': registered_record is not None,
     }
+
+
+def resolve_page_type_and_evidence_pool(
+    root: Path,
+    route: str,
+    track: str,
+    title: str = '',
+    h1: str = '',
+    description: str = '',
+    subtitle: str = '',
+) -> dict:
+    """Step 1: Identify what kind of page is being produced. Step 2: Assemble the full unranked Evidence Pool for that page type."""
+    clean_route = '/' + (route or '').strip().strip('/')
+    slug = clean_route.rstrip('/').split('/')[-1] if clean_route != '/' else ''
+    elig = tested_eligibility(root, clean_route, title=title, h1=h1 or title, description=description, subtitle=subtitle)
+
+    # Check site-level YMYL / regulated domain context
+    exp_txt = ''
+    exp_path = root / '.claude/commands/_experience.md'
+    if exp_path.is_file():
+        exp_txt = exp_path.read_text(errors='ignore').lower()
+    all_words = _words(' '.join([slug, title, h1, description, subtitle]))
+    all_joined = f" {' '.join(all_words)} "
+    is_med_psych = bool(
+        _hits(all_words, all_joined, _EXCLUDED_TOPICS['health'])
+        or any(k in exp_txt for k in ('psychedelic law', 'ayahuasca', 'medical frontier', 'opt health', 'clinical pipeline'))
+    )
+    is_legal_fin = bool(
+        _hits(all_words, all_joined, _EXCLUDED_TOPICS['legal'])
+        or _hits(all_words, all_joined, _EXCLUDED_TOPICS['money'])
+        or clean_route.startswith('/contracts/')
+        or clean_route.startswith('/governance/')
+        or any(k in exp_txt for k in ('ymyl legal', 'sanctions research', 'venezuela & sanctions'))
+    )
+
+    if is_med_psych:
+        page_category = 'regulated-medical-or-psychedelic'
+    elif is_legal_fin:
+        page_category = 'regulated-legal-or-financial'
+    elif track == 'alternatives' or slug.endswith('-alternatives'):
+        page_category = 'alternatives-evaluation'
+    elif track == 'comparison' or '-vs-' in slug:
+        page_category = 'head-to-head-comparison'
+    elif clean_route.startswith('/gear/reviews/') or slug.endswith('-review'):
+        page_category = 'single-item-review'
+    elif track == 'roundup' or _GUIDE_TYPE_RE.search(slug) or clean_route.startswith('/gear/'):
+        page_category = 'product-or-book-roundup'
+    elif clean_route.startswith('/roi/') or any(k in slug for k in ('pricing', 'cost', 'worth-it', 'free-trial')):
+        page_category = 'pricing-or-roi-analysis'
+    elif track == 'launch':
+        page_category = 'model-or-product-launch'
+    else:
+        page_category = 'how-to-or-workflow-guide'
+
+    has_catalog = any((root / r).is_file() for r in ('.claude/commands/_layer3-experience-catalog.json', '.claude/commands/_experience-catalog.json', '.claude/commands/_approved-cases.json'))
+    has_surveys = any((root / r).exists() for r in ('scripts/reader-surveys/research.mts', 'data/reader-surveys.ts'))
+    has_price_ledger = any((root / r).is_file() for r in ('data/pricing.ts', 'data/gear-prices.json'))
+
+    pool = []
+    excluded_from_pool = []
+
+    # Unranked pool options — presented together so the AI chooses the best fit or combines multiple!
+    if elig['eligible'] and page_category in ('alternatives-evaluation', 'head-to-head-comparison', 'single-item-review', 'product-or-book-roundup', 'model-or-product-launch'):
+        pool.append({
+            'id': 'hands_on_test',
+            'label': 'Internal Hands-On Test / Physical Evaluation / Read & Reviewed',
+            'whenUseful': 'Use whenever >=1 compared product, app, AI model, physical supply/filter/tool, or book was tested/inspected/read firsthand (`basis="measured"`, unlocks `"Tested 2026"`).',
+        })
+    else:
+        excluded_from_pool.append({
+            'id': 'hands_on_test',
+            'reason': elig['exclusionReason'] or f'Not applicable to page category {page_category}' if not elig['eligible'] else f'Page category {page_category} uses non-tested presentation',
+        })
+
+    if has_catalog and page_category != 'regulated-medical-or-psychedelic':
+        pool.append({
+            'id': 'client_and_operator_experience',
+            'label': 'Client / Operator / Fleet Implementation Experience',
+            'whenUseful': 'Use when an anonymized client project, owned site/app build, or documented operator workflow directly informs this page decision (within stated `limits`).',
+        })
+
+    if has_surveys:
+        pool.append({
+            'id': 'proprietary_reader_survey',
+            'label': 'Completed Internal Reader Survey / Poll Data',
+            'whenUseful': 'Use when an approved completed reader survey campaign provides real respondent aggregates relevant to this route.',
+        })
+
+    if page_category != 'regulated-medical-or-psychedelic':
+        pool.append({
+            'id': 'internal_scenario_and_spec_modeling',
+            'label': 'Internal Cost, Plan-Cap, Token, or Spec Scenario Modeling',
+            'whenUseful': (
+                'Use when vendors/products publish prices, caps, API token rates'
+                + (' (including verified `data/pricing.ts` / `data/gear-prices.json`)' if has_price_ledger else '')
+                + ', or comparable numeric specs where multi-scenario break-even math clarifies the choice.'
+            ),
+        })
+        pool.append({
+            'id': 'interactive_tool_or_calculator',
+            'label': 'Interactive Calculator / Decision Widget',
+            'whenUseful': 'Use when reader-adjustable seats, usage volume, or parameters materially flip the recommendation.',
+        })
+
+    legitimate_zero_data_domain = page_category in ('regulated-medical-or-psychedelic', 'regulated-legal-or-financial')
+    return {
+        'route': clean_route,
+        'pageCategory': page_category,
+        'track': track,
+        'testedEligible': elig['eligible'],
+        'legitimateZeroInternalDomain': legitimate_zero_data_domain,
+        'poolPresented': True,
+        'poolCount': len(pool),
+        'pool': pool,
+        'excludedPoolOptions': excluded_from_pool,
+    }
+
+
+def log_internal_proof_outcome(
+    root: Path,
+    route: str,
+    draft_obj: dict | None = None,
+    raw_text: str = '',
+    evidence_obj: dict | None = None,
+    pool_receipt: dict | None = None,
+    routine: str = '',
+    job_id: str = '',
+    published_status: str = 'published',
+) -> dict:
+    """Append an auditable internal-data usage record to `reports/internal-proof-log.jsonl` (+ `~/.claude/logs/internal-proof-log.jsonl`).
+
+    Never blocks auto-publish. Specifically tracks every page that publishes with zero internal/testing/client/modeling data,
+    whether the full Evidence Pool was presented (`YES`/`NO`), and why the AI/routine did not use any pool option.
+    """
+    root = root.resolve()
+    clean_route = '/' + (route or '').strip().strip('/')
+    draft_obj = draft_obj if isinstance(draft_obj, dict) else {}
+    evidence_obj = evidence_obj if isinstance(evidence_obj, dict) else {}
+    dump = (json.dumps(draft_obj, ensure_ascii=False) if draft_obj else '') + '\n' + (raw_text or '')
+    low = dump.lower()
+
+    if not pool_receipt:
+        tr_guess = classify_action({'target': clean_route}, {'identity': {'title': str(draft_obj.get('metaTitle') or draft_obj.get('h1') or '')}})
+        pool_info = resolve_page_type_and_evidence_pool(
+            root,
+            clean_route,
+            tr_guess,
+            title=str(draft_obj.get('metaTitle') or ''),
+            h1=str(draft_obj.get('h1') or ''),
+        )
+        pool_presented = False
+    else:
+        pool_info = pool_receipt
+        pool_presented = bool(pool_receipt.get('poolPresented', True))
+
+    used_types = []
+    ev_basis = str(evidence_obj.get('basis') or '').strip()
+    if ev_basis == 'measured' or draft_obj.get('howWeTested') or re.search(r'\(tested\s+20\d\d\)|\bin our (?:internal )?testing\b|\bwe tested\b|\bread and reviewed\b', low):
+        used_types.append('hands_on_test')
+    if (evidence_obj.get('caseUses') and len(evidence_obj['caseUses']) > 0) or re.search(r'\bat layer3labs,\s+we\b|\bin our client\b|\bin our conversations with\b|\bacross our .*?(?:client|fleet|production)\b', low):
+        used_types.append('client_and_operator_experience')
+    if re.search(r'\breader survey\b|\breader poll\b|\bour survey of\b', low):
+        used_types.append('proprietary_reader_survey')
+    if ev_basis in ('modeled', 'calculated') or draft_obj.get('scenarioTable') or any(isinstance(s, dict) and s.get('table') for s in (draft_obj.get('sections') or [])) or re.search(r'\bin our internal (?:cost |scenario )?(?:modeling|analysis)\b|\bwe modeled\b|\bbreak-even\b', low):
+        used_types.append('internal_cost_or_spec_modeling')
+    if ((evidence_obj.get('presentation') or {}).get('interaction') or {}).get('decision') in ('build', 'reuse'):
+        used_types.append('interactive_tool_or_calculator')
+
+    used_internal = len(used_types) > 0
+    page_cat = str(pool_info.get('pageCategory') or 'unknown')
+    legit_exempt = bool(pool_info.get('legitimateZeroInternalDomain')) or page_cat in ('regulated-medical-or-psychedelic', 'regulated-legal-or-financial')
+
+    why_not = None
+    if not used_internal:
+        explicit_why = (
+            draft_obj.get('whyNoInternalData')
+            or evidence_obj.get('whyNoQuantitativeAnalysis')
+            or evidence_obj.get('whyNoAddition')
+            or evidence_obj.get('caseDecisions')
+        )
+        if legit_exempt:
+            why_not = str(explicit_why or f'Valid domain exemption ({page_cat}): medical/psychedelic/legal/financial page where personal testing or commercial modeling is prohibited/inapplicable.')
+        elif explicit_why:
+            why_not = str(explicit_why)
+        elif not pool_presented:
+            why_not = 'Pool was NOT presented (legacy/standalone path bypassed prepare-write-packets).'
+        else:
+            why_not = 'Pool was presented, but neither hands-on test runs, matching client/survey records, nor public comparable pricing were populated for this topic.'
+
+    site_name = root.name
+    crp = root / '.claude/content-review-policy.json'
+    if crp.is_file():
+        try:
+            hosts = json.loads(crp.read_text()).get('canonicalHosts') or []
+            if hosts:
+                site_name = hosts[0]
+        except Exception:
+            pass
+
+    now_ts = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z')
+    pool_ids = [p['id'] if isinstance(p, dict) else str(p) for p in (pool_info.get('pool') or pool_info.get('poolOptionsOffered') or [])]
+    yn_pool = 'YES' if pool_presented else 'NO'
+    summary_line = (
+        f"Page {site_name}{clean_route} ({page_cat}) showed internal proof: {', '.join(used_types)} | Pool presented: {yn_pool} | Status: {published_status}"
+        if used_internal
+        else f"Page {site_name}{clean_route} ({page_cat}) didn't show any internal data/testing/client data | Pool presented: {yn_pool} ({', '.join(pool_ids) or 'none'}) | Why not used: {why_not} | Status: {published_status}"
+    )
+
+    entry = {
+        'timestamp': now_ts,
+        'site': site_name,
+        'repo': root.name,
+        'routine': routine or str(job_id).split('-202')[0] or 'mindmap-pass',
+        'jobId': job_id or '',
+        'route': clean_route,
+        'pageCategory': page_cat,
+        'track': str(pool_info.get('track') or ''),
+        'usedInternalProof': used_internal,
+        'proofTypesUsed': used_types,
+        'poolPresented': pool_presented,
+        'poolOptionsOffered': pool_ids,
+        'legitimateExemption': legit_exempt,
+        'whyNotUsed': why_not,
+        'publishedStatus': published_status,
+        'summaryLine': summary_line,
+    }
+
+    is_ephemeral_test = (
+        root.name.startswith('tmp')
+        or '/tmp/' in str(root)
+        or '/var/folders/' in str(root)
+        or str(job_id).startswith('test-')
+        or str(routine).startswith('reports/tmp')
+        or routine == 'Synthetic test fixture'
+    )
+    line_str = json.dumps(entry, ensure_ascii=False) + '\n'
+    if not is_ephemeral_test or root.name.startswith('tmp'):
+        try:
+            repo_log = root / 'reports/internal-proof-log.jsonl'
+            repo_log.parent.mkdir(parents=True, exist_ok=True)
+            with repo_log.open('a', encoding='utf-8') as fh:
+                fh.write(line_str)
+        except Exception:
+            pass
+    if not is_ephemeral_test:
+        try:
+            global_log = Path.home() / '.claude/logs/internal-proof-log.jsonl'
+            global_log.parent.mkdir(parents=True, exist_ok=True)
+            with global_log.open('a', encoding='utf-8') as fh:
+                fh.write(line_str)
+        except Exception:
+            pass
+    return entry
 
 
 def classify_action(action: dict, brief: dict | None = None, plan: dict | None = None) -> str:
@@ -1390,6 +1643,13 @@ def splice_alternatives_draft(
             sm_raw = sm_raw.replace('</urlset>', tag)
             sm_path.write_text(sm_raw)
 
+    log_internal_proof_outcome(
+        root,
+        route=route,
+        draft_obj=draft,
+        routine='alternatives-daily-auto',
+        published_status='published',
+    )
     return {'status': 'SPLICED', 'slug': slug, 'route': route, 'vendorHost': apex, 'officialHosts': hosts}
 
 
