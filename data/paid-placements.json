@@ -43,5 +43,22 @@
         "best-restaurant-hr-support-services-in-massachusetts"
       ]
     }
+  ],
+  "pageDofollowExceptions": [
+    {
+      "pagePath": "/roundup/best-high-yield-savings-accounts",
+      "href": "https://www.chime.com",
+      "note": "2026-11-24 AirOps agency pack cs_live_a0t5hEjUHiz0O9a56wMNtmJ2SmZ4RfQVCWusSj1z2seVwjSAyOKQSUZ6FQ-5 (Chime); contracted dofollow placement on this page only."
+    },
+    {
+      "pagePath": "/roundup/best-secured-credit-cards",
+      "href": "https://www.chime.com",
+      "note": "2026-11-24 AirOps agency pack cs_live_a0t5hEjUHiz0O9a56wMNtmJ2SmZ4RfQVCWusSj1z2seVwjSAyOKQSUZ6FQ-6 (Chime); contracted dofollow placement on this page only."
+    },
+    {
+      "pagePath": "/roundup/best-cash-back-credit-cards",
+      "href": "https://www.chime.com",
+      "note": "2026-11-24 AirOps agency pack cs_live_a0t5hEjUHiz0O9a56wMNtmJ2SmZ4RfQVCWusSj1z2seVwjSAyOKQSUZ6FQ-7 (Chime); contracted dofollow placement on this page only."
+    }
   ]
 }

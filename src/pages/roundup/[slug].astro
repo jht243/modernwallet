@@ -213,7 +213,7 @@ const relatedEntries = entry.relatedComparisons
     </section>
 
     {entry.sections.map((s) => (
-      <section class="section">
+      <section class="section" id={s.id}>
         <h2>{s.heading}</h2>
         <Fragment set:html={richBody(s.content)} />
       </section>

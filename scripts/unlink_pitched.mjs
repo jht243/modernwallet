@@ -22,7 +22,13 @@ const API = 'https://growth-sites-api.onrender.com/api/placement-pitched';
 
 const norm = (d) => String(d || '').toLowerCase().replace(/^www\./, '');
 const site = JSON.parse(readFileSync('data/placement-verticals.json', 'utf8')).site;
-const paid = new Set((JSON.parse(readFileSync('data/paid-placements.json', 'utf8')).placements || []).map((p) => norm(p.domain)));
+const paidData = JSON.parse(readFileSync('data/paid-placements.json', 'utf8'));
+const paid = new Set((paidData.placements || []).map((p) => norm(p.domain)));
+const normPath = (p) => '/' + String(p || '').replace(/\\/g, '/').replace(/^\/+/, '').replace(/\/index\.html$/i, '').replace(/\.html$/i, '').replace(/\/+$/, '').toLowerCase();
+const normHref = (u) => String(u || '').trim().replace(/^(https?:\/\/[^/?#]+)\/+$/i, '$1').toLowerCase();
+const pageDofollowExceptions = new Set(
+  (paidData.pageDofollowExceptions || []).map((e) => `${normPath(e.pagePath)}|${normHref(e.href)}`)
+);
 
 function walk(d) {
   const out = [];
@@ -64,9 +70,11 @@ let pages = 0, links = 0;
 const left = [];
 for (const f of files) {
   const html = readFileSync(f, 'utf8');
+  const pagePath = normPath(relative(OUT, f));
   const next = html.replace(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi, (tag, attrs, inner) => {
     const href = /\shref="(https?:\/\/[^"]+)"/i.exec(attrs)?.[1];
     if (!href || !pitchedHost(href)) return tag;
+    if (pageDofollowExceptions.has(`${pagePath}|${normHref(href)}`)) return tag;
     // Official references are editorial citations, not commercial links. Keep explicitly marked
     // source anchors available for readers and the audit while still unlinking promotional links.
     if (/\sdata-editorial-source="true"/i.test(attrs)) return tag;

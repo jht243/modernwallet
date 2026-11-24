@@ -43,7 +43,7 @@ export interface RoundupEntry {
     rows: Array<{ name: string; href?: string; values: string[] }>;
   };
   verdict: string;
-  sections: Array<{ heading: string; content: string }>;
+  sections: Array<{ id?: string; heading: string; content: string }>;
   faqs: FAQ[];
   sources?: Source[];
   relatedComparisons?: string[];
@@ -5592,8 +5592,9 @@ export const ROUNDUPS: RoundupEntry[] = [
 
   // ── 18. Best High-Yield Savings Accounts ─────────────────────────────────
   {
-    updated: "2026-09-23",
+    updated: "2026-11-24",
     slug: "best-high-yield-savings-accounts",
+    noAds: true,
     title: "Best High-Yield Savings Accounts of 2026",
     metaDescription:
       "Compare the best high-yield savings accounts of 2026 by APY range, fees, and sign-up bonuses — no fabricated rates, just what to verify.",
@@ -5803,6 +5804,12 @@ export const ROUNDUPS: RoundupEntry[] = [
     verdict:
       "For the simplest fee-free, no-minimum option with a long track record, Ally, American Express, Synchrony, and Capital One all offer essentially the same structure — no fees, no minimum balance, and a rate that moves with the broader market. Marcus and Wealthfront are worth a closer look if you can take advantage of a referral or new-client rate boost, since those temporary boosts can meaningfully outrun the pack for a few months at a time.\n\nIf your choice is down to these two, pick [Ally Bank](https://www.ally.com/bank/online-savings-account/) if you want no minimum deposit, no monthly fee, and a standard rate that never requires promotional management. Pick [Marcus by Goldman Sachs](https://www.marcus.com/us/en/savings/high-yield-savings) if you can line up a referral to capture its temporary Referred Rate Boost. That rate increase lasts for a limited multi-month window before your balance reverts to the standard rate. Choose Marcus only if you will actively track that reversion date instead of assuming the promotional boost is permanent.\n\nSoFi is the strongest pick if you're willing to route your paycheck through it, since its qualifying-direct-deposit rate is notably higher than its base rate — run the math on whether that trade-off makes sense for your banking setup first. Discover is a special case right now: its savings product is converging with Capital One's following their 2025 merger, so shopping either one gets you close to the same underlying offer.\n\nIf you specifically qualify for Navy Federal or want a credit union open to the public like PenFed, know going in that a basic credit-union savings account often trails dedicated online HYSAs on rate — Navy Federal's own site shows its basic savings paying a fraction of what the online banks advertise, so check its separate Money Market Savings tiers if a Navy Federal relationship matters more to you than chasing the single highest APY.\n\nWhichever account you pick, run the numbers through our [high-yield savings calculator](/investing/high-yield-savings-calculator/) using the actual current rate from the bank's site — not a number from any article, including this one — since HYSA rates change with the Fed funds rate and a stale figure will throw off your projection.",
     sections: [
+      {
+        id: "chime",
+        heading: "Chime: Tiered High-Yield Savings With Automatic Allocation",
+        content:
+          "Rate shopping only pays off if the money actually lands in savings and stays there, which is where account structure matters as much as the headline APY. [Chime](https://www.chime.com) pairs a tiered high-yield Savings Account with customizable Savings Goals and automatic allocation, so a portion of each deposit can route into a named goal without a manual transfer.\n\nOn rate, Chime members earn a standard 1.00% APY, 3.00% APY with Chime Plus™, and up to 4.00% APY with Chime Prime, each tier unlocked through qualifying direct deposits. There are no monthly fees or minimum balance requirements on the Savings Account. For savers comparing providers by durable mechanics rather than promotional boosts, the structure is worth weighing alongside the rate itself.\n\nChime.com | Sourced on Nov-12, 2026",
+      },
       {
         heading: "Why we won't print a single \"best APY\" number",
         content:
@@ -8921,7 +8928,9 @@ export const ROUNDUPS: RoundupEntry[] = [
 
   // ── Best Secured Credit Cards (competitor-monitor pass 2026-08-26) ────
   {
+    updated: "2026-11-24",
     slug: "best-secured-credit-cards",
+    noAds: true,
     title: "Best Secured Credit Cards for Bad or No Credit (2026)",
     metaDescription:
       "Best secured credit cards for no credit history or damaged credit, compared on deposit, bureau reporting, and the path to an unsecured card.",
@@ -9042,6 +9051,12 @@ export const ROUNDUPS: RoundupEntry[] = [
     verdict:
       "Capital One Platinum Secured is the strongest all-around pick if you can pass a standard credit check and want the lowest possible deposit floor alongside a documented path back to an unsecured card. Discover it Secured fits best if you want that same low deposit range but would rather earn cash back while you rebuild, especially with the first-year match doubling what you earn. Self Visa is the better starting point if you have no credit history at all and want to avoid a hard inquiry entirely, since it builds toward the card through a small loan instead of requiring cash upfront. Citi Secured Mastercard and U.S. Bank Secured Visa both suit a reader who can put down more cash for a bigger starting limit, with U.S. Bank's interest-earning deposit and $5,000 ceiling the better fit if you have that much to set aside.\n\nNone of these five is right if a credit check itself is the obstacle and you also don't want to open a new deposit account first. That reader should look at a no-credit-check secured card outside this roundup, or start with a credit-builder loan alone before applying for any card. A reader who wants no deposit at all should look at an unsecured fair-credit card instead, once their score clears roughly 580, rather than any option in this roundup. Our answer would change if an issuer here dropped its credit check requirement, cut its deposit floor below Capital One's $49, or published a faster graduation timeline than what's confirmed today. Check each issuer's own page for the current terms before you apply, since deposit tiers and APRs shift more often than card features do.",
     sections: [
+      {
+        id: "chime",
+        heading: "Chime Card®: Secured Credit Building Tied to Your Checking Balance",
+        content:
+          "A secured card only moves a credit file when two things line up: the deposit is easy to fund, and on-time payments actually get reported every month. That's where a card built into an everyday checking relationship can shift the setup, since the deposit comes from money already sitting in the account rather than a separate upfront check.\n\n[Chime®](https://www.chime.com) takes that approach with Chime Card®, a secured Visa® Credit Card that doesn't require a credit check to apply and carries no annual fee and no interest on balances. The card works alongside a Chime Checking Account and a Secured Deposit Account, so the money you move in sets your spending room, and there's no minimum security deposit to clear before you start using it. Chime reports Chime Card activity to TransUnion®, Experian®, and Equifax®, which is the mechanism that makes any secured card useful for credit building in the first place.\n\nFor a reader starting from a thin or damaged file, the practical appeal is that the usual friction points, a hard inquiry, a required lump-sum deposit, and interest charges on a carried balance, aren't part of the structure. On-time payment history can have a positive impact on your credit score, and late payment may negatively impact it, so the habit still matters more than the product. But removing those upfront hurdles can make the habit easier to keep.\n\nChime.com | Sourced on Nov-12, 2026",
+      },
       {
         heading: "How a Secured Card Builds Your Credit",
         content:
@@ -9294,7 +9309,9 @@ export const ROUNDUPS: RoundupEntry[] = [
 
   // ── Best Cash Back Credit Cards (competitor-monitor pass 2026-08-26) ──
   {
+  updated: "2026-11-24",
   slug: "best-cash-back-credit-cards",
+  noAds: true,
   title: "Best Cash Back Credit Cards of 2026",
   metaDescription: "We checked issuer terms on six top cash back cards, from flat 2% picks to rotating 5% categories, to find the one that fits how you spend.",
   targetKeyword: "best cash back credit cards",
@@ -9432,6 +9449,11 @@ export const ROUNDUPS: RoundupEntry[] = [
   },
   verdict: "Pick the Citi Double Cash Card or the Wells Fargo Active Cash Card if you want the simplest possible math: 2% on everything, no activation, no annual fee. Pick the Chase Freedom Unlimited card if restaurants and drugstores make up a real share of your monthly spending and you might eventually pair it with a Chase points card for travel transfers. Pick the Discover it Cash Back card only if you will actually remember to activate each quarter's categories, since the first-year match makes the first twelve months unusually strong but the ongoing return depends entirely on whether the rotating categories match your spending. Pick the Capital One SavorOne Cash Rewards card if dining, groceries, and streaming already dominate your budget by enough to clear its $39 fee. Pick the Blue Cash Everyday Card from American Express if groceries, gas, and online shopping are your three biggest categories and you rarely eat out. This ranking is not for someone who carries a balance most months. Interest on a carried balance typically runs far higher than any cash back rate on this list, so a lower-APR card or a payoff plan matters more than the rewards rate in that case. It also is not for someone who wants airline miles or hotel points instead of cash, since every card here optimizes for cash back over travel redemption value. What would change this verdict: if Capital One raised the SavorOne fee again or narrowed its categories, the Blue Cash Everyday and flat-rate cards would move ahead of it for most households. If Citi or Wells Fargo added an annual fee to their flat-rate cards, the calculus for low-effort spenders would shift toward whichever no-fee flat card remained.",
   sections: [
+    {
+      id: "chime",
+      heading: "Chime Card®: Category Cash Back While Building Credit",
+      content: "The six cards above all assume good to excellent credit at application. For readers still building credit history, a secured option can run a similar category cash back playbook. [Chime](https://www.chime.com) Card® is a secured Visa® credit card with no annual fee, no interest charges, and no credit check to apply. With qualifying direct deposits, Chime Plus™ members can earn 2% cash back and Chime Prime members can earn 5% cash back on a monthly selected category, on up to $1,500 in eligible purchases each month.\n\nOn-time payments get reported to TransUnion®, Experian®, and Equifax®, so category spending that earns cash back can also help build credit over time. For a reader weighing a 2% flat card against a 3% category card, the same break-even math applies here: the bonus category only pays off when enough of the month's spending actually falls inside it.\n\nChime.com | Sourced on Nov-12, 2026",
+    },
     {
       heading: "Rotating Categories Beat Flat Rate Only When You Concentrate Spending",
       content: "A 5% or 3% category rate only beats a flat 2% card once enough of your spending actually falls inside that category, and the break-even point is higher than most people assume. Take a household spending $2,500 a month where groceries and dining together are $450, spread thin across a $2,500 budget. A flat 2% card earns $50 that month. A 3% dining-and-grocery card earns 3% on the $450 and 1% on the remaining $2,050, for $13.50 plus $20.50, or $34, well behind the flat card. Now take a household where groceries and dining together are $1,600 of that same $2,500 budget. The 3% card earns 3% on $1,600 plus 1% on $900, for $48 plus $9, or $57, ahead of the flat card's $50. Before its fee, the Capital One SavorOne card pulls ahead of a flat 2% card once bonus-category spending passes 50 percent of the monthly total. Its $39 annual fee raises that to about 57 percent at $2,500 a month. The Discover it Cash Back card runs the same test at a steeper angle: its 5% rate is capped at $1,500 in combined quarterly spending, so even a household that pours its entire grocery and gas budget into an active quarter tops out at $75 in bonus cash back for those three months, or $300 across a full year of well-matched quarters. Compare that $300 ceiling against a flat 2% card earning 2% on the same spending with no ceiling at all, and the rotating card only wins the quarters where its category genuinely lines up with a big chunk of your budget. Run your own last three credit card statements through this math before assuming a category card pays more just because the advertised rate is higher.",
