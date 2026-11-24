@@ -153,6 +153,7 @@ OUT=reports/page-1-2-no-clicks/$D; [ -f $OUT.json ] && OUT=$OUT-$(date -u +%H%M)
 python3 scripts/page12/detect.py --out $OUT || HARD_FAIL
 python3 scripts/rank_drop/verify_provenance.py $OUT.json || HARD_FAIL
 python3 scripts/page12/measure.py --out reports/page-1-2-no-clicks/$D.measure || HARD_FAIL
+python3 .claude/tools/routine-fast-exit.py page12-noop --detect $OUT.json --measure reports/page-1-2-no-clicks/$D.measure.json --send-email
 ```
 Read `$OUT.md` and `$D.measure.md`. Use `$OUT` (not `$D`) for every detect-report path below. A Google ranking update in progress does NOT stop this routine
 (titles, facts and an answer block don't chase moving rankings); detect.py records it and measure.py
@@ -165,7 +166,7 @@ same windows; `LAGGING` = under 28 days, watch only — never revert it), run
 and mark that ledger row `status: reverted` (edit only that row's status field in
 `reports/page-1-2-no-clicks/ledger.jsonl`). Reverts deploy with the run.
 
-**No pages picked** (`pages` empty) → commit the reports, send the email (Email section), exit. Success, not failure.
+**Turn-1 Zero-Work Fast Exit (`fastExit: true`):** When `page12-noop` prints `"fastExit": true` (`0` pages picked AND `0` final `WORSE` reverts), it has ALREADY removed the untracked empty scratch reports and posted the collector `no-op` summary (`"collectorPosted": true`) — **STOP IMMEDIATELY in Turn 1** (do NOT commit empty reports, do NOT run `deploy-run-to-main.sh push`, and do NOT read Phases 1–6 or Email). If `pages` is empty AFTER applying a `WORSE` revert above, push the revert commit and send the email.
 
 ## Phase 1 — Packets, SERP read, diagnosis (code, ~2 min)
 
