@@ -294,7 +294,7 @@ class Journal:
         self.cycle = None
         for event in self.events:
             data = event['data'];kind = event['kind']
-            require(kind in ['begin','reserve','repair-pending','record','published'],'Unknown journal event')
+            require(kind in ['begin','reserve','repair-pending','record','published','recover-continuation'],'Unknown journal event')
             if kind == 'begin':
                 require(self.cycle is None or self.cycle['status']=='published', 'An unfinished page cannot start a new budget')
                 self.cycle = {**data,'rounds':[],'status':'open'};self.cycles.append(self.cycle)
@@ -320,6 +320,15 @@ class Journal:
                 item.update(data,status='complete');self.cycle['profile']=data['profile']
                 self.cycle['liabilityBlocked']=bool(data.get('liabilityBlock'))
                 self.cycle['status']='passed' if data['verdict']=='PASS' else 'needs-fix'
+            elif kind == 'recover-continuation':
+                original, replacement = validate_continuation_recovery(
+                    self.root, self.events[:self.events.index(event)], self.cycles, self.cycle, data)
+                self.cycle['status']='superseded-continuation-incident'
+                original['status']='needs-fix'
+                original['rounds'].append({'number':replacement['number'], 'admission':data['admission'],
+                    'fingerprint':replacement['fingerprint'], 'reviewer':replacement['reviewer'],
+                    'status':'pending', 'continuationRecovery':event['eventSha256']})
+                self.cycle=original
             elif kind == 'published':
                 require(
                     self.cycle
@@ -363,11 +372,43 @@ def renderer_module():
 def valid_snapshot(snapshot):renderer_module().valid_snapshot(snapshot)
 
 
+def cycle_jobs(root, cycle):
+    """Only exact aliases already bound by native admissions belong to a cycle."""
+    jobs={cycle['jobId']}
+    for item in cycle.get('rounds',[]):
+        ref=item.get('admission') or {}
+        if ref.get('path'):
+            value=read(artifact(root,ref))
+            alias=value.get('continuationJobId')
+            if isinstance(alias,str) and alias:jobs.add(alias)
+    return jobs
+
+
 def _can_auto_close_stale_prior_cycle(root, journal, cycle, new_job, snapshot_path):
     old_job = str(cycle.get('jobId') or '').strip()
     new_job_s = str(new_job or '').strip()
-    if not old_job or not new_job_s or old_job == new_job_s:
+    if not old_job or not new_job_s:
         return False
+    same_job = new_job_s in cycle_jobs(root, cycle)
+    if same_job:
+        # Deterministic pool jobs (e.g. vertical-pool-<sha>) reuse the same jobId on retry in a new run directory.
+        # Only auto-close when 0 review verdicts were ever recorded (aborted mid-reservation in a different run dir).
+        rounds = cycle.get('rounds') or []
+        if cycle.get('status') != 'open' or any(r.get('status') != 'pending' for r in rounds):
+            return False
+        if not rounds:
+            return False
+        last_adm_ref = rounds[-1].get('admission')
+        if not (isinstance(last_adm_ref, dict) and last_adm_ref.get('path')):
+            return False
+        try:
+            adm_obj = read(artifact(root, last_adm_ref))
+            old_snap_rel = (adm_obj.get('snapshot') or {}).get('path')
+            if not old_snap_rel:
+                return False
+            return (root / old_snap_rel).resolve().parent != Path(snapshot_path).resolve().parent
+        except Exception:
+            return True
     if old_job.startswith(('search-gap-', 'sg-')) or new_job_s.startswith(('search-gap-', 'sg-')):
         return False
     cid_bytes = str(cycle.get('cycleId') or '').encode()
@@ -415,16 +456,25 @@ def _can_auto_close_stale_prior_cycle(root, journal, cycle, new_job, snapshot_pa
 def reserve_without_checkpoint(root, snapshot_path, route, job, reviewer, out, prior_reports=()):
     snapshot = read(snapshot_path);row,spec = route_in(snapshot,route)
     valid_snapshot(snapshot)
-    require(snapshot.get('contentReviewPolicy')=={'version':VERSION,'sha256':policy_hash(root)},
-            'Capture the current Mindmap candidate under the active review policy before reserving its audit')
     require(reviewer and reviewer != snapshot['manifest']['author'] and job, 'Use actual independent identities and canonical job')
     selected = profile(root,row['semantic'],spec.get('claimCategories',[]),spec.get('reviewProfile'),spec.get('riskAssessment'))
     with Journal(root,snapshot['manifest']['canonicalBase'],route) as journal:
         cycle = journal.cycle
+        stamp=snapshot.get('contentReviewPolicy',{})
+        continuation_stamp=False
+        if cycle and cycle['status']!='published' and job in cycle_jobs(root,cycle) and cycle.get('rounds'):
+            prior_ref=cycle['rounds'][-1].get('admission') or {}
+            if prior_ref.get('path'):
+                prior=read(artifact(root,prior_ref))
+                continuation_stamp=(snapshot['manifest'].get('jobId') in cycle_jobs(root,cycle)
+                                    and stamp.get('sha256') in accepted_policy_hashes(root)
+                                    and stamp.get('sha256')==prior.get('policySha256'))
+        require(stamp.get('version')==VERSION and
+                (stamp.get('sha256')==policy_hash(root) or continuation_stamp),
+                'Capture the current Mindmap candidate under the active review policy before reserving its audit')
         if (
             cycle is not None
             and cycle['status'] != 'published'
-            and cycle.get('jobId') != job
             and _can_auto_close_stale_prior_cycle(root, journal, cycle, job, snapshot_path)
         ):
             journal.append('published', {
@@ -434,7 +484,17 @@ def reserve_without_checkpoint(root, snapshot_path, route, job, reviewer, out, p
             })
             cycle['status'] = 'published'
         if cycle is None or cycle['status']=='published':
-            require(cycle is None or cycle['jobId'] != job, 'A published job cannot be regenerated/reset')
+            require(
+                cycle is None
+                or job not in cycle_jobs(root,cycle)
+                or (
+                    journal.events
+                    and journal.events[-1].get('kind') == 'published'
+                    and (journal.events[-1].get('data') or {}).get('release') == 'auto-closed-prior-run'
+                    and all(r.get('status') == 'pending' for r in (cycle.get('rounds') or []))
+                ),
+                'A published job cannot be regenerated/reset',
+            )
             known = [h for h in legacy_inventory(root).get('histories',[]) if h.get('jobId')==job and h.get('route')==route]
             require(len(prior_reports) >= max([h.get('rounds',0) for h in known]+[0]), 'Import the actual prior content reviews; migration cannot reset counters')
             imported=[]
@@ -456,7 +516,7 @@ def reserve_without_checkpoint(root, snapshot_path, route, job, reviewer, out, p
                 cycle['maximumRounds'] = audit_limit(policy(root), selected, cycle['lastRiskAssessment'])
                 cycle['rounds'].append({'status':'complete','number':number})
         else:
-            require(cycle['jobId']==job, 'Resume the existing canonical page job; renaming it does not reset the review budget')
+            require(job in cycle_jobs(root,cycle), 'Resume the existing canonical page job; renaming it does not reset the review budget')
             require(not prior_reports, 'Prior review history is already imported')
         ceiling = cycle.get('maximumRounds', audit_limit(policy(root), cycle['profile']))
         pending = bool(cycle['rounds'] and cycle['rounds'][-1]['status']=='pending')
@@ -484,10 +544,11 @@ def reserve_without_checkpoint(root, snapshot_path, route, job, reviewer, out, p
         require(number <= ceiling, 'Review budget exhausted for this page; do NOT edit or re-audit it — publish the exact latest reviewed snapshot directly (unless blocked by a recorded direct legal/physical liabilityBlock)')
         require(not any(x.get('reportObjectSha256') for x in cycle['rounds'] if x.get('verdict')=='PASS' and x.get('fingerprint')==row['fingerprint']),
                 'This exact page already passed; do not audit it again')
-        admission = {'version':VERSION,'identity':journal.identity,'cycleId':cycle['cycleId'],'jobId':job,
-                     'number':number,'provisionalProfile':cycle['profile'],'maximumRounds':ceiling,
+        admission = {'version':VERSION,'identity':journal.identity,'cycleId':cycle['cycleId'],'jobId':cycle['jobId'],
+                     'number':number,'provisionalProfile':max([selected,cycle['profile']],key=LEVELS.index),'maximumRounds':ceiling,
                      'snapshot':reference(root,snapshot_path),'fingerprint':row['fingerprint'],
                      'author':snapshot['manifest']['author'],'reviewer':reviewer,'policySha256':policy_hash(root)}
+        if job!=cycle['jobId']:admission['continuationJobId']=job
         if number == 3 and ceiling == 3 and 'thirdReviewClaimCategories' in policy(root):
             admission['thirdAuditEligibility'] = [claim for claim in retained + current
                                                  if claim.get('category') in policy(root)['thirdReviewClaimCategories']]
@@ -691,6 +752,7 @@ def historical_policy_hash(root, commit):
     local=json.loads(config)
     names=[LOCAL_POLICY,local.get('policy'),local.get('legacyReviews'),'.claude/tools/workflow-local.py','.claude/tools/workflow-preflight.py',
            '.claude/tools/workflow-context.py','.claude/tools/workflow-dispatch.local.py','.claude/commands/_workflow-dispatch.local.md',
+           '.claude/tools/approved-link-audit-scope.py',
            'scripts/paid_placements/approved_draft_release.py','scripts/publisher_failover/client_review.py']
     names=[n for n in names if n and blob(n) is not None]
     with tempfile.TemporaryDirectory() as folder:
@@ -1060,6 +1122,110 @@ def repair_pending(root,snapshot_path,route,job,reviewer,out,failure):
     return {**value,'admissionArtifact':reference(root,out),'scope':'Pending capture repair only; the real independent verdict is still required.'}
 
 
+def validate_continuation_recovery(root, events, cycles, accidental, data):
+    """Validate the exact unused-slot incident on both append and journal replay."""
+    require(accidental and accidental['cycleId']==data.get('accidentalCycleId'),
+            'Recover only the current accidental continuation cycle')
+    original=next((c for c in cycles if c['cycleId']==data.get('originalCycleId')),None)
+    require(original and original is not accidental and original['status']=='published',
+            'Retain the original auto-closed canonical cycle')
+    tail=events[-3:]
+    require(len(tail)==3 and [e['kind'] for e in tail]==['published','begin','reserve'] and
+            [e['eventSha256'] for e in tail]==data.get('incidentEvents'),
+            'Recovery requires the exact unreviewed auto-close/begin/reserve tail')
+    closed,begin,reserved=[e['data'] for e in tail]
+    alias=data.get('continuationJobId')
+    require(closed=={'cycleId':original['cycleId'],'release':'auto-closed-prior-run','supersededByJobId':alias} and
+            begin.get('cycleId')==accidental['cycleId'] and begin.get('jobId')==alias and
+            alias!=original['jobId'] and alias in cycle_jobs(root,original),
+            'Only an exact previously recorded continuation alias can recover this family')
+    require(len(original['rounds'])==1 and original['rounds'][0]['status']=='complete' and
+            original['rounds'][0].get('verdict')=='FAIL' and not exhausted(original),
+            'Keep the genuine original first FAIL and remaining budget')
+    first=original['rounds'][0]
+    require(data.get('originalAdmission')==first['admission'] and data.get('originalReport')==first['report'],
+            'Bind the exact original admission and recorded R1 report')
+    require(accidental['status']=='open' and len(accidental['rounds'])==1 and
+            accidental['rounds'][0]['status']=='pending' and not accidental['rounds'][0].get('repaired') and
+            reserved.get('admission')==data.get('previousAdmission'),
+            'Recover only the unused accidental pending slot, never a recorded judgment')
+    old=read(artifact(root,data['previousAdmission']))
+    new=read(artifact(root,data['admission']))
+    snapshot=read(artifact(root,old['snapshot']));valid_snapshot(snapshot)
+    page,spec=route_in(snapshot,old['identity']['route'])
+    require(snapshot['manifest'].get('jobId')==alias and
+            snapshot.get('contentReviewPolicy',{}).get('sha256') in accepted_policy_hashes(root),
+            'Retain the exact recognised continuation capture')
+    require(old['cycleId']==accidental['cycleId'] and old['jobId']==alias and old['number']==1 and
+            old['fingerprint']==page['fingerprint'] and old['author']==snapshot['manifest']['author'],
+            'Accidental admission source or identity changed')
+    ceiling=original.get('maximumRounds',audit_limit(policy(root),original['profile']))
+    selected=profile(root,page['semantic'],spec.get('claimCategories',[]),spec.get('reviewProfile'),spec.get('riskAssessment'))
+    selected=max([selected,original['profile']],key=LEVELS.index)
+    require(new['identity']==old['identity'] and new['jobId']==original['jobId'] and
+            new.get('continuationJobId')==alias and new['cycleId']==original['cycleId'] and
+            new['number']==2 and new['number']<=ceiling and new['maximumRounds']==ceiling and
+            new['provisionalProfile']==selected and new['snapshot']==old['snapshot'] and
+            new['fingerprint']==old['fingerprint'] and new['author']==old['author'] and
+            new['reviewer']==old['reviewer'] and new.get('continuationRecoveryOf')==data['previousAdmission'] and
+            new.get('policySha256') in accepted_policy_hashes(root),
+            'Recovery must retain the exact owner/capture, original cycle and true second slot')
+    failure=read(artifact(root,data['failureEvidence']))
+    require(failure.get('contentReviewStarted') is False and failure.get('currentUIObserved') is False and
+            failure.get('verdictRecorded') is False and failure.get('admission')==data['previousAdmission'] and
+            failure.get('snapshot')==old['snapshot'] and
+            (failure.get('originalReview') or {}).get('sha256')==first['report']['sha256'],
+            'Retain the independent no-review incident and its exact original evidence')
+    require(artifact(root,data['originalJournal']).read_bytes()==b''.join(canonical(e)+b'\n' for e in events),
+            'Preserve every exact pre-recovery journal event')
+    return original,new
+
+
+def recover_continuation(root,snapshot_path,route,job,reviewer,out,failure,preflight=None):
+    """Append a mechanical rebind of an unused false-new-cycle slot; no new audit."""
+    audit_preflight_check(root,preflight,job,reviewer,route)
+    snapshot=read(snapshot_path);valid_snapshot(snapshot);page,spec=route_in(snapshot,route)
+    durable=durable_reviews(root);journal=Journal(root,snapshot['manifest']['canonicalBase'],route)
+    context=durable.restore(root,journal)
+    try:
+        with journal as actual:
+            # Retry a failed durable checkpoint without appending another recovery.
+            if actual.events and actual.events[-1]['kind']=='recover-continuation':
+                event=actual.events[-1]['data'];value=read(artifact(root,event['admission']))
+                require(value.get('continuationJobId')==job and value['reviewer']==reviewer and
+                        value['snapshot']==reference(root,snapshot_path) and
+                        sha(failure.read_bytes())==event['failureEvidence']['sha256'],
+                        'Resume only this exact already-appended continuation recovery')
+                return {**value,'admissionArtifact':event['admission'],'scope':'Existing unused R2 recovery; checkpoint retry only.'}
+            bad=actual.cycle
+            require(bad and len(actual.cycles)>=2,'Missing original continuation incident')
+            old_ref=bad['rounds'][-1]['admission'] if bad.get('rounds') else None
+            old=read(artifact(root,old_ref))
+            require(job==bad['jobId'] and reviewer==old['reviewer'] and
+                    old['snapshot']==reference(root,snapshot_path),'Keep the actual pending owner and unchanged captured source')
+            original=actual.cycles[-2];first=original['rounds'][0]
+            selected=profile(root,page['semantic'],spec.get('claimCategories',[]),spec.get('reviewProfile'),spec.get('riskAssessment'))
+            value={**old,'cycleId':original['cycleId'],'jobId':original['jobId'],'continuationJobId':job,
+                   'number':2,'maximumRounds':original.get('maximumRounds',audit_limit(policy(root),original['profile'])),
+                   'provisionalProfile':max([selected,original['profile']],key=LEVELS.index),
+                   'policySha256':policy_hash(root),'continuationRecoveryOf':old_ref}
+            save_exact(out,value)
+            require(failure.is_file() and str(failure.relative_to(root)).startswith('reports/'),
+                    'Retain the actual internal independent incident evidence')
+            original_journal=freeze(root,actual.path,actual.path.parent)
+            durable.cache(root,str(actual.path.relative_to(root)),sha(actual.path.read_bytes()),actual.path.read_bytes())
+            data={'originalCycleId':original['cycleId'],'accidentalCycleId':bad['cycleId'],
+                  'continuationJobId':job,'incidentEvents':[e['eventSha256'] for e in actual.events[-3:]],
+                  'previousAdmission':old_ref,'admission':reference(root,out),
+                  'originalAdmission':first['admission'],'originalReport':first['report'],
+                  'originalJournal':original_journal,'failureEvidence':freeze(root,failure,actual.path.parent)}
+            validate_continuation_recovery(root,actual.events,actual.cycles,bad,data)
+            actual.append('recover-continuation',data)
+            return {**value,'admissionArtifact':reference(root,out),'scope':'Rebound the existing unused pending slot as original R2; independent judgment still required.'}
+    finally:
+        durable.checkpoint(root,journal,context)
+
+
 def record(root, report_path):
     durable=durable_reviews(root);report=read(report_path);contexts=[];seen=set()
     for row in report.get('routes',[]):
@@ -1186,9 +1352,16 @@ def sources(root, report_path):
     report=read(report_path);found={str(report_path.resolve().relative_to(root))}
     def add(ref):
         path=artifact(root,ref);found.add(str(path.relative_to(root)));return path
-    def snapshot_files(ref):
+    def snapshot_files(ref, historical_route=None):
         snapshot=read(add(ref))
-        for page in snapshot.get('routes',[]):
+        pages=snapshot.get('routes',[])
+        if historical_route is not None:
+            # A route journal retains admissions from older mixed-page batches.
+            # Keep the exact original snapshot, but export that journal's own
+            # rendered dependencies, not unrelated pages from the old batch.
+            pages=[page for page in pages if page.get('path')==historical_route]
+            require(len(pages)==1,'Historical snapshot must contain the exact journal route: '+historical_route)
+        for page in pages:
             for key,hash_key in [('htmlFile','htmlSha256'),('textFile','textSha256')]:
                 if not page.get(key):continue
                 captured=Path(page[key]);captured=captured if captured.is_absolute() else root/captured
@@ -1210,6 +1383,7 @@ def sources(root, report_path):
         admission=read(add(row['reviewBudget']));snapshot_files(admission['snapshot'])
         with Journal(root,admission['identity']['canonicalBase'],row['path']) as journal:
             found.add(str(journal.path.relative_to(root)))
+            active_events={id(event) for event in durable_reviews(root).active_review_events(journal.events)}
             for event in journal.events:
                 data=event['data']
                 if event['kind']=='reserve':
@@ -1218,11 +1392,19 @@ def sources(root, report_path):
                     else:
                         old_admission=read(add(ref))
                         invalid=[v for e in journal.events if e['kind']=='repair-pending' for v in e['data']['invalidatedReferences']]
-                        if old_admission['snapshot'] not in invalid:snapshot_files(old_admission['snapshot'])
+                        if old_admission['snapshot'] not in invalid:
+                            if id(event) in active_events:snapshot_files(old_admission['snapshot'],row['path'])
+                            else:add(old_admission['snapshot'])
                 if event['kind']=='repair-pending':
-                    repaired=read(add(data['admission']));snapshot_files(repaired['snapshot']);add(data['failureEvidence'])
+                    repaired=read(add(data['admission']))
+                    if id(event) in active_events:snapshot_files(repaired['snapshot'],row['path'])
+                    else:add(repaired['snapshot'])
+                    add(data['failureEvidence'])
+                if event['kind']=='recover-continuation':
+                    for name in ['admission','previousAdmission','originalAdmission','originalReport','originalJournal','failureEvidence']:
+                        add(data[name])
                 if event['kind']=='record':add(data['report'])
-    return {'paths':sorted(found),'scope':'Internal evidence only; retain the updated journal again after live closure.'}
+    return {'paths':sorted(found),'scope':'Internal evidence only; retain all journal events, admissions, reports and exact snapshot metadata. Full rendered dependencies cover the current publication and each route\'s active review cycle, matching the durable checkpoint contract; closed-cycle HTML availability is not asserted. Retain the updated journal again after live closure.'}
 
 
 def main():
@@ -1242,6 +1424,9 @@ def main():
     for name in ['snapshot','spec','out-review']:p.add_argument('--'+name,required=True)
     p=sub.add_parser('repair-pending')
     for name in ['snapshot','route','job-id','reviewer','out','failure']:p.add_argument('--'+name,required=True)
+    p=sub.add_parser('recover-continuation')
+    for name in ['snapshot','route','job-id','reviewer','out','failure']:p.add_argument('--'+name,required=True)
+    p.add_argument('--preflight')
     args=parser.parse_args();root=Path(args.root).resolve();policy(root)
     if args.command=='classify':
         snapshot=read(inside(root,args.snapshot));page,spec=route_in(snapshot,args.route);text=claim_text(page['semantic'])
@@ -1251,6 +1436,7 @@ def main():
     elif args.command=='reserve':
         print(json.dumps(reserve(root,inside(root,args.snapshot),args.route,args.job_id,args.reviewer,inside(root,args.out),[inside(root,p) for p in args.prior_review],inside(root,args.preflight) if args.preflight else None),indent=2))
     elif args.command=='repair-pending':print(json.dumps(repair_pending(root,inside(root,args.snapshot),args.route,args.job_id,args.reviewer,inside(root,args.out),inside(root,args.failure)),indent=2))
+    elif args.command=='recover-continuation':print(json.dumps(recover_continuation(root,inside(root,args.snapshot),args.route,args.job_id,args.reviewer,inside(root,args.out),inside(root,args.failure),inside(root,args.preflight) if args.preflight else None),indent=2))
     elif args.command=='record':print(json.dumps(record(root,inside(root,args.review)),indent=2))
     elif args.command=='sources':print(json.dumps(sources(root,inside(root,args.review)),indent=2))
     elif args.command=='compose':
