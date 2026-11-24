@@ -4018,10 +4018,22 @@
           "at": "2026-11-24T16:53:09+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-24T16:59:50+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-24T16:50:12+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-24T16:59:50+00:00",
       "claimedOn": "2026-11-24",
       "attempts": 1,
       "lastNextAt": "2026-11-24T16:50:12+00:00",
@@ -4080,7 +4092,12 @@
           }
         ],
         "recordedAt": "2026-11-24T16:53:09+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/copilot-money/",
+      "commit": "65a5d5e",
+      "indexnow": "200",
+      "seoUpgraded": "2026-11-24",
+      "bodyWords": 1962
     },
     {
       "vendor": "Vanguard",
@@ -4147,10 +4164,22 @@
           "at": "2026-11-24T16:53:14+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-24T16:59:50+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-24T16:50:12+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-24T16:59:50+00:00",
       "claimedOn": "2026-11-24",
       "attempts": 1,
       "lastNextAt": "2026-11-24T16:50:12+00:00",
@@ -4195,7 +4224,12 @@
           }
         ],
         "recordedAt": "2026-11-24T16:53:14+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/xero/",
+      "commit": "65a5d5e",
+      "indexnow": "200",
+      "seoUpgraded": "2026-11-24",
+      "bodyWords": 2686
     },
     {
       "vendor": "Simplifi",
@@ -4369,10 +4403,22 @@
           "at": "2026-11-24T16:53:14+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-24T16:59:50+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "bodyWords",
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-24T16:50:12+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-24T16:59:50+00:00",
       "claimedOn": "2026-11-24",
       "attempts": 1,
       "lastNextAt": "2026-11-24T16:50:12+00:00",
@@ -4431,7 +4477,12 @@
           }
         ],
         "recordedAt": "2026-11-24T16:53:14+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/tiller/",
+      "commit": "65a5d5e",
+      "indexnow": "200",
+      "seoUpgraded": "2026-11-24",
+      "bodyWords": 2097
     },
     {
       "vendor": "Payoneer",
