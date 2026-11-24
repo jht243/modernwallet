@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "allowTestedLabels": false,
+  "experience": {
+    "path": ".claude/commands/_experience.md",
+    "sha256": "1969dcd5ba2694de5d01cd7ae39d5053c6173f3b94d78322a10f39e524be833f"
+  }
+}

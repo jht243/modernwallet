@@ -529,6 +529,25 @@ def run_practical_tasks(
                     with urllib.request.urlopen(req, timeout=float(tcfg.get('timeoutSeconds') or 12.0)) as resp:
                         raw_out_text = resp.read(300_000).decode('utf-8', errors='replace')
                         exit_ok = 200 <= getattr(resp, 'status', 200) < 300
+                elif kind in ('hands-on-log', 'physical-test', 'read-and-reviewed', 'book-review'):
+                    # Physical consumer goods (shaving supplies, air filters, appliances, gear, games)
+                    # and books/media (read & reviewed firsthand): require real non-empty observations or log file!
+                    obs = tcfg.get('observations')
+                    if tcfg.get('logPath'):
+                        lp = (root / str(tcfg['logPath'])).resolve()
+                        if not lp.is_relative_to(root) or not lp.is_file():
+                            raise ValueError(f"Missing hands-on log file: {tcfg['logPath']}")
+                        obs = lp.read_text(encoding='utf-8')
+                    obs_str = json.dumps(obs, indent=2, ensure_ascii=False) if isinstance(obs, (dict, list)) else str(obs or '').strip()
+                    if len(obs_str) < 20:
+                        raise ValueError('Hands-on physical test / book review requires >=20 chars of real recorded observations.')
+                    if tcfg.get('testedAt'):
+                        dt.date.fromisoformat(str(tcfg['testedAt']))
+                        performed_at = f"{tcfg['testedAt']}T12:00:00Z"
+                    env_str = str(tcfg.get('environment') or ('Firsthand reading & edition review' if 'read' in kind or 'book' in kind else 'Hands-on physical product evaluation'))
+                    version_str = str(tcfg.get('version') or tcfg.get('edition') or tcfg.get('sku') or 'retail-unit')
+                    raw_out_text = obs_str
+                    exit_ok = True
                 else:
                     excluded_items[item] = f'Unsupported practical target kind {kind!r}.'
                     item_ok = False

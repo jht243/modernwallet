@@ -39,7 +39,7 @@ _PAGE_TYPE_SLUG_WORDS = {
     'pricing', 'price', 'prices', 'priced', 'cost', 'costs', 'free', 'worth', 'cheap',
     'cheapest', 'discount', 'discounts', 'deal', 'deals', 'plan', 'plans', 'billing',
     'how', 'explained', 'explainer', 'what', 'why', 'guide', 'tutorial', 'tips',
-    'setup', 'news', 'calculator', 'generator', 'checker', 'tool', 'template',
+    'setup', 'news', 'calculator', 'generator', 'checker', 'template',
     'templates', 'hub', 'about', 'glossary', 'meaning', 'definition',
 }
 _PAGE_TYPE_SLUG_RE = re.compile(r'-pricing$|-costs?$|^is-.+-free$|^is-.+-worth-it$|^how-|^what-|^why-|^which-')
@@ -85,8 +85,8 @@ _EXCLUDED_TOPICS = {
         'consultant', 'consultants', 'consulting', 'consultancy', 'agency', 'agencies',
         'firm', 'firms', 'freelancer', 'freelancers', 'freelance', 'contractor',
         'contractors', 'outsourcing', 'outsource', 'outsourced', 'staffing', 'hire',
-        'hiring', 'human', 'humans', 'people', 'books', 'courses', 'programs',
-        'podcasts', 'retreat', 'retreats', 'grant', 'grants', 'benefit', 'benefits',
+        'hiring', 'human', 'humans', 'people',
+        'retreat', 'retreats', 'grant', 'grants', 'benefit', 'benefits',
         'lab', 'company', 'companies', 'employee', 'employees',
     ],
 }
