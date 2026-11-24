@@ -34,7 +34,7 @@ SEO comparison ("X vs Y") content is a top driver of Google traffic AND LLM/answ
 
 ## Hard blockers (the only reasons to STOP and ask the human)
 - **No content system discovered** in Phase 0 (can't find where/how content is stored) → STOP, report what you looked for.
-- **No SEO data source connected** (no Ahrefs MCP, no GSC MCP, no SEMrush export) → STOP: scoring would be guesswork. Tell the user to connect a data source or pass `--heuristic` to score on internal signals only (then proceed without external calls).
+- **No SEO data source connected** (no SEMrush/DataForSEO keyword ladder, no direct GSC API, no SEMrush export) → STOP: scoring would be guesswork. Tell the user to connect a data source or pass `--heuristic` to score on internal signals only (then proceed without external calls).
 - **Working tree not safe to publish onto** (uncommitted unrelated changes that a commit/push would sweep up) → STOP, ask the user to stash/commit first.
 
 Everything else degrades gracefully and keeps going.
@@ -62,7 +62,7 @@ Phase 6 — Summary + Candidate Chart → ‼️ HARD HUMAN GATE → on approval
 ```
 
 ## Non-negotiable global rules
-1. **Dedup BEFORE keyword research — to cap API spend.** Phases 1 and 1b are FREE local operations (file parsing + string/embedding similarity, zero external calls) and run FIRST. **No Ahrefs / SEMrush / Brand-Radar call is ever made for a pair that is cached, already published, or already covered.** Only `NEW` survivors of Phase 1b reach Phase 2.
+1. **Dedup BEFORE keyword research — to cap API spend.** Phases 1 and 1b are FREE local operations (file parsing + string/embedding similarity, zero external calls) and run FIRST. **No SEMrush / DataForSEO / Brand-Radar call is ever made for a pair that is cached, already published, or already covered.** Only `NEW` survivors of Phase 1b reach Phase 2.
 2. **Never duplicate or cannibalize existing content.** Phase 1b checks each suggestion against ALL content (comparisons, guides, verticals, landing pages, body text) three ways — exact/reverse-slug, entity-pair-covered-inside-a-page, and semantic keyword overlap. `DUPLICATE` is dropped; `PARTIAL` is **enriched in place by Phase 3b** (targeted spot-edits to the existing page), never turned into a new page.
 2b. **PARTIAL means ENRICH, and enrichment actually runs.** A PARTIAL is not a to-do for later — Phase 3b executes it the same run. It adds the missing head-to-head treatment (sub-section + comparison table + verdict, optional FAQ) to the existing page via **targeted `Edit` operations only**, reusing the keyword-gap-pass body-enrichment discipline verbatim: *keep the same page, update it where needed, never recreate the page via script.* Everything not called out stays byte-for-byte unchanged.
 3. **NET-NEW vs ENRICH are separate lanes.** Phase 3 creates brand-new routes — it must NEVER overwrite, regenerate, or replace an existing page. Editing existing pages is **Phase 3b's** job and is done only as in-place spot-edits (never a regeneration/script rebuild). If a pair selected as NEW turns out to map to an existing route, STOP that one in Phase 3 and route it to Phase 3b as an enrichment item instead.
@@ -97,9 +97,9 @@ Every run MUST produce this single chart covering **ALL candidates** from Phase 
 ```
 - **#** — rank by Verdict tier then Phase 2 composite score (highest first), reflecting realistic additional organic-click opportunity rather than raw volume alone.
 - **Comparison** — "X vs Y" (+ " for [segment]" if long-tail).
-- **Vol / KD / CPC** — live SEMrush (or Ahrefs/GSC) numbers; `no data` if the source returned none; `—` if not queried because it was blocked pre-scoring.
+- **Vol / KD / CPC** — live SEMrush (or DataForSEO / direct GSC) numbers; `no data` if the source returned none; `—` if not queried because it was blocked pre-scoring.
 - **Coverage** — `🟢 new` · `🟡 partial (existing-slug)` · `🔴 duplicate (existing-slug)`. Always name the conflicting slug for partial/duplicate.
-- **Verdict** — one of: `Build — Tier 1` (strongest realistic organic-click opportunity) · `Build — Tier 2` (next-best supported traffic opportunity) · `Tier 3` (lower-priority opportunity) · `Enrich — partial` (spot-edited in Phase 3b this run) · `Drop — duplicate` · `Validate (Ahrefs/GSC)` for no-data long-tails.
+- **Verdict** — one of: `Build — Tier 1` (strongest realistic organic-click opportunity) · `Build — Tier 2` (next-best supported traffic opportunity) · `Tier 3` (lower-priority opportunity) · `Enrich — partial` (spot-edited in Phase 3b this run) · `Drop — duplicate` · `Validate (SEMrush/DFS/GSC)` for no-data long-tails.
 - Footer legend line: `🟢 new (build) · 🟡 partial (enrich in-place, Phase 3b) · 🔴 duplicate (dropped) · default run builds Tier 1–2 and enriches every partial.`
 - Keep it terse — a chart, not prose. Do not pad with paragraphs.
 

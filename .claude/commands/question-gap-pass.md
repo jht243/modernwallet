@@ -34,7 +34,7 @@ Your highest-traffic pages already rank — but a visitor who lands on one immed
 
 ## Hard blockers (the only reasons to STOP and ask the human)
 - **No content system discovered** in Phase 0 (can't find where/how the top pages' source files live, so in-place edits are impossible) → STOP, report what you looked for.
-- **No GSC data source available** (no service account for the direct GSC API and no `gsc-pages` Ahrefs fallback) → STOP: "most visited pages" is the whole input. Tell the user to provide GSC service-account access, or pass `--pages "<url>,<url>,..."` to analyze an explicit list instead (then proceed without the GSC call).
+- **No GSC data source available** (no service account for the direct GSC API — NEVER fall back to Ahrefs per OWNER RULE 2026-11-24) → STOP: "most visited pages" is the whole input. Tell the user to provide GSC service-account access, or pass `--pages "<url>,<url>,..."` to analyze an explicit list instead (then proceed without the GSC call).
 - **Working tree not safe to publish onto** (uncommitted unrelated changes a commit/push would sweep up) → STOP, ask the user to stash/commit first.
 
 Everything else degrades gracefully and keeps going.

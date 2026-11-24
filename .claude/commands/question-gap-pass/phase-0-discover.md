@@ -38,7 +38,7 @@ This skill **edits existing top pages in place**, so the single most important d
 
 5. **GSC data source** — confirm a working route to "most visited pages". **Primary = direct Google Search Console API (no Ahrefs):**
    - **Direct GSC helper** `.claude/tools/gsc-search-analytics/gsc_search_analytics.py --top-pages N` → real, complete clicks + impressions per page. Confirm a service account is available: `GOOGLE_REPORTING_SA_JSON` (inline, cloud), `GOOGLE_REPORTING_SA_FILE`, or `~/.claude/secrets/gsc-service-account.json` (local). The SA must have read access to the `sc-domain:<host>` property.
-   - **Ahrefs MCP `gsc-pages`** — fallback only, if no SA credentials are available.
+   - **Never fall back to Ahrefs MCP `gsc-pages`** (OWNER RULE 2026-11-24: Ahrefs is approved ONLY for technical site audits and weekly Winner/Loser). If direct GSC credentials are missing, route through free Google data / report missing GSC creds.
    - If neither is available → hard blocker (unless the user passed `--pages`).
 
 6. **Business / brand name** — from `<title>` suffix, logo alt, footer, `package.json`, schema.org `Organization`, or the About page. **This is the `{BUSINESS_NAME}` token Phase 4 substitutes into the verbatim writing prompt.** If undiscoverable, fall back to the domain.

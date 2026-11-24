@@ -14,14 +14,13 @@ missing, expired, or out of credits.** Demote one rung and keep going.
 **USER RULE 2026-11-02: SEMRUSH is the primary keyword tool wherever it can
 answer; DataForSEO is primary only for what SEMRUSH does not have (live SERPs
 with titles/snippets, People Also Ask text, AI Overview citations, long-tail
-phrases SEMRUSH does not track).** Ahrefs units are reserved for site audits,
-so Ahrefs is last. The best **usable** provider wins each field for the whole run:
+phrases SEMRUSH does not track).** **OWNER RULE (2026-11-24): Ahrefs is approved ONLY for technical site audits (`ahrefs-site-audit-auto`) and the weekly Winner/Loser pass (`ahrefs_winner_loser_pass`). Never use Ahrefs for keyword volume, KD, expansion, or SERPs.** The best **usable** provider wins each field for the whole run:
 
 | Field | Order | Why this order |
 |---|---|---|
-| **volume** | `semrush` → `dataforseo` → `ahrefs` | SEMRUSH `phrase_these` (10 units/keyword, prepaid). DataForSEO `keyword_overview` only when SEMRUSH has no key, no units, or errors. |
-| **kd** | `semrush` → `dataforseo` → `ahrefs` | SEMRUSH KDI (`phrase_kdi`, 50 units/keyword). DataForSEO Labs KD is modeled; fallback only. |
-| **expand** | `semrush` → `dataforseo` → `ahrefs` | SEMRUSH `phrase_related` + `phrase_questions` (dedicated questions report). |
+| **volume** | `semrush` → `dataforseo` → free Google data | SEMRUSH `phrase_these` (10 units/keyword, prepaid). DataForSEO `keyword_overview` only when SEMRUSH has no key, no units, or errors. |
+| **kd** | `semrush` → `dataforseo` → free Google data | SEMRUSH KDI (`phrase_kdi`, 50 units/keyword). DataForSEO Labs KD is modeled; fallback only. |
+| **expand** | `semrush` → `dataforseo` → free Google data | SEMRUSH `phrase_related` + `phrase_questions` (dedicated questions report). |
 | **ranked keywords / competitors / movers** | `semrush` → `dataforseo` | `scripts/lib/semrush.py` (`domain_organic`, `domain_organic_organic`, `display_positions`) behind `dfs_keyword_gap.py` and `dfs_winner_loser.py`. |
 | **vendor roster for head keywords** | `semrush` → `dataforseo` | SEMRUSH `phrase_organic` top 10 (no titles); a keyword SEMRUSH does not track falls back to the live SERP. |
 | **SERP** | `dataforseo` only | No other vendor sells live SERP with PAA text and AI Overview citations at any price. Not a ladder — see `scripts/lib/serp.py`. |
@@ -29,7 +28,7 @@ so Ahrefs is last. The best **usable** provider wins each field for the whole ru
 
 **One provider per field, for the whole run.** Every row's volume comes from one
 vendor and every row's KD comes from one vendor, so rows stay comparable to each
-other. Different fields may come from different vendors — a row can carry Ahrefs
+other. Different fields may come from different vendors — a row can carry SEMRUSH
 KD next to DataForSEO volume, and both `source` (volume) and `kd_source` are
 stamped on it. What is forbidden is two vendors' volumes inside one chart.
 
@@ -45,7 +44,7 @@ autocomplete BAND labelled `source: estimate`. Disable only with
 A provider is skipped automatically on `ERROR 132 :: API UNITS BALANCE IS ZERO`,
 `API units limit reached`, HTTP 401/402/403, or a missing key — the exact
 condition that killed the podcast-pain runs on 2026-08-18, and the condition
-Ahrefs and SEMRUSH are BOTH in as of 2026-08-23.
+SEMRUSH is primary and DataForSEO is fallback; Ahrefs is NEVER called by `keyword_data.py` (USER RULE 2026-11-24).
 
 ### The rule generalizes beyond keywords
 
@@ -87,13 +86,13 @@ the labelled autocomplete estimate, not to Ahrefs.
 ## How to call it — always through the shared helper
 
 `scripts/lib/keyword_data.py` implements the whole ladder (stdlib only, no pip).
-**Do not hand-roll a SEMRUSH or Ahrefs call in a phase.** **Never hardcode a key
+**Do not hand-roll a SEMRUSH, DataForSEO, or Ahrefs call in a phase (and never call Ahrefs for keyword data).** **Never hardcode a key
 into a committed file.** Keys resolve exactly like every other key in the fleet
 (same pattern as `.claude/scripts/bing_webmaster.py`): environment variable
 first, then `.claude/routines.config`, then `~/.claude/secrets.env`. Cloud
-routines pass `SEMRUSH_API_KEY` / `AHREFS_API_KEY` inline from the trigger
-config — a routine whose trigger has no `AHREFS_API_KEY` yet simply runs one
-rung lower, on public-source estimates, instead of failing.
+routines pass `SEMRUSH_API_KEY` / `DATAFORSEO_B64` inline from the trigger
+config — Ahrefs is reserved strictly for `ahrefs-site-audit-auto` and `ahrefs_winner_loser_pass`.
+
 
 From Python:
 
@@ -141,7 +140,7 @@ The point of rung 3 is to keep shipping, **not** to launder a guess into a fact.
    end would fail nearly every row in an all-estimate run and quietly recreate
    the blocked-routine failure.
 5. **Say which provider won each field.** Every routine email/digest includes a
-   line like `Keyword data: volume=dataforseo, kd=dataforseo (Ahrefs units
+   line like `Keyword data: volume=dataforseo, kd=dataforseo (SEMRUSH units
    exhausted, SEMRUSH 403)`. `keyword_data.notes()` returns exactly that log. A
    run that silently degrades is a bug.
 6. **Do not over-read DataForSEO KD.** It is modeled, not calibrated against a

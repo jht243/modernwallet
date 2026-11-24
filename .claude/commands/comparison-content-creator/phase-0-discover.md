@@ -44,11 +44,11 @@ Auto-discover every project fact by inspecting the repo. **Hardcode nothing**; p
   - **Reusable scripts:** check for project generator/audit/publish helpers (e.g. `scripts/model_radar/{generate,audit,publish}.py` with `existing_slugs`, `insert_comparisons`, `add_inbound_link`, `add_sitemap`, `tsc_check`, `git_commit_push`, `indexnow`). If present, Phases 3/5 reuse them.
   - Typecheck/build sanity command (e.g. `npx tsc --noEmit`, `npm run build`).
 - **Connected SEO data sources** — detect which are available and record exactly what's present so later phases use what exists and skip the rest:
-  - **Ahrefs MCP** (keywords-explorer-overview, serp-overview, keywords-explorer-related-terms, gsc-* if routed through it).
+  - **NEVER call Ahrefs MCP or `$AHREFS_API_KEY` here** (OWNER RULE 2026-11-24: Ahrefs is approved ONLY for technical site audits and weekly Winner/Loser). Use SEMrush first → DataForSEO fallback → free Google data (direct GSC API + Autocomplete).
   - **GSC MCP** (gsc-keywords, gsc-pages).
   - **SEMrush export** — look for a keyword-gap CSV at `reports/comparison-content-creator/semrush-gap.csv` (or ask the user for a path). SEMrush is a manual export, not an MCP.
   - **Brand Radar** (brand-radar-* tools) for the LLM-citation angle.
-  - **Keyword demand ladder (ALWAYS available -- treat as a connected source):** `scripts/lib/keyword_data.py` resolves the best usable provider per field from environment keys (`DATAFORSEO_B64` / `SEMRUSH_API_KEY` / `AHREFS_API_KEY`) and always adds live Google Autocomplete. Record `keyword_data.provider_status()` here. See `.claude/commands/_keyword-demand-ladder.md`.
+  - **Keyword demand ladder (ALWAYS available -- treat as a connected source):** `scripts/lib/keyword_data.py` resolves the best usable provider per field from environment keys (`SEMRUSH_API_KEY` first → `DATAFORSEO_B64` fallback; never Ahrefs) and always adds live Google Autocomplete. Record `keyword_data.provider_status()` here. See `.claude/commands/_keyword-demand-ladder.md`.
 
 ## Hard-blocker checks (STOP only on these)
 - **No comparison/content system found** → STOP; report what you searched (data dirs, content dirs, sitemaps) and ask where comparison content should live.

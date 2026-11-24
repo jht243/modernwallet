@@ -31,7 +31,7 @@ Use the GSC source Phase 0 confirmed. **Primary = the direct Google Search Conso
   It derives the `sc-domain:<host>` property, ranks pages by clicks then impressions, and returns JSON `{ "top_pages": [ {page, clicks, impressions, ctr, position}, ... ] }`. Parse `top_pages`.
   - **Credentials:** the helper reads `GOOGLE_REPORTING_SA_JSON` (inline JSON), `GOOGLE_REPORTING_SA_FILE`, or `~/.claude/secrets/gsc-service-account.json`. In a cloud routine the service account is passed **inline** — prefix the command with `GOOGLE_REPORTING_SA_JSON="$(echo '<base64>' | base64 -d)"`. Install deps once if needed: `python3 -m pip install --quiet google-auth requests && (python3 -c "import google.oauth2.service_account" 2>/dev/null || python3 -m pip install --quiet --ignore-installed cryptography cffi)`.
   - Exit 2 = no creds; exit 3 = the SA lacks permission on the property → STOP, report it (don't fabricate pages).
-- **Ahrefs MCP `gsc-pages` (fallback only)** — use *only* if the direct GSC helper has no credentials available (e.g. a local run with no SA). Same idea: pages sorted by clicks, top N.
+- **Never fall back to Ahrefs MCP `gsc-pages`** (OWNER RULE 2026-11-24: Ahrefs is approved ONLY for technical site audits and weekly Winner/Loser). If direct GSC credentials are missing, route through free Google data / report missing GSC creds.
 - If `--pages "<url>,<url>,..."` was passed, skip the call and use that list verbatim (clicks/impressions = `n/a`).
 
 If GSC returns nothing for the property, do not fabricate pages — STOP per the hard blocker and report that the GSC source returned no rows.

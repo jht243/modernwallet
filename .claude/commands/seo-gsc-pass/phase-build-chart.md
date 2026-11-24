@@ -23,21 +23,20 @@ This phase produces the file Phase 0 then loads. Once this file is saved, contro
 
 ## API keys
 Read from environment variables — never embed in this file or the saved chart:
-- `$AHREFS_API_KEY` — Ahrefs API
+- `$DATAFORSEO_B64` — DataForSEO fallback (never Ahrefs; OWNER RULE 2026-11-24)
 - `$SEMRUSH_API_KEY` — Semrush API
 
 If either env var is unset, that API is unavailable for this run. Note that in the saved chart's exclusions paragraph, but continue (most rows can be diagnosed from images alone).
 
-If you need either API, prefix the call so the key never appears in the shell history or logs (e.g. `AHREFS_KEY="$AHREFS_API_KEY" curl -H "Authorization: Bearer $AHREFS_KEY" ...`).
+Use `scripts/lib/keyword_data.py` (SEMRUSH first → DataForSEO fallback → free Google Autocomplete; NEVER Ahrefs) and direct Google Search Console API. Never embed API keys in logs or commands.
 
 ## Prompt to follow (verbatim, with API-key placeholders swapped to env-var references)
 
 ---
 
-Help me find SEO updates based on recent GSC data (see 5 images attached — these are the only data inputs; we may have access to Ahrefs, GSC tools, or live ranking data).
+Help me find SEO updates based on recent GSC data (see 5 images attached — these are the only data inputs; we have access to direct GSC tools, SEMrush, DataForSEO, and live free Google data — never Ahrefs).
 
-AHREFS api = `$AHREFS_API_KEY` (read from environment; do not embed)
-Keyword data = `scripts/lib/keyword_data.py` — the ladder picks the best usable provider per field (volume: ahrefs > dataforseo > semrush; kd: ahrefs > semrush > dataforseo), then public-source estimate (keys from the environment; never embed). Never block on a dry key; see `.claude/commands/_keyword-demand-ladder.md`.
+Keyword data = `scripts/lib/keyword_data.py` — the ladder picks the best usable provider per field (volume: semrush > dataforseo > free Google autocomplete; never ahrefs), then public-source estimate (keys from the environment; never embed). Never block on a dry key; see `.claude/commands/_keyword-demand-ladder.md`.
 
 Use those APIs sparingly and only when needed, to save on credits.
 

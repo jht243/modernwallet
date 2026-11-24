@@ -56,6 +56,14 @@ class ExpansionTests(unittest.TestCase):
     def test_default_order_is_semrush_first(self):
         with patch.dict(k.os.environ, {'KEYWORD_PROVIDERS': ''}), patch.dict(k._FIELD_PROVIDER, {}, clear=True), patch.object(k, '_provider_usable', return_value=True):
             self.assertEqual({f: k.field_provider(f) for f in ('volume', 'kd', 'expand')}, {'volume': 'semrush', 'kd': 'semrush', 'expand': 'semrush'})
+    def test_default_order_never_falls_back_to_ahrefs(self):
+        with patch.dict(k.os.environ, {'KEYWORD_PROVIDERS': ''}), patch.dict(k._FIELD_PROVIDER, {}, clear=True), patch.object(k, '_provider_usable', return_value=False) as probe:
+            self.assertIsNone(k.field_provider('volume'))
+            self.assertEqual([c.args[0] for c in probe.call_args_list], ['semrush', 'dataforseo'])
+    def test_ahrefs_pin_is_stripped_and_never_probed(self):
+        with patch.dict(k.os.environ, {'KEYWORD_PROVIDERS': 'semrush,dataforseo,ahrefs'}), patch.dict(k._FIELD_PROVIDER, {}, clear=True), patch.object(k, '_provider_usable', return_value=False) as probe:
+            self.assertIsNone(k.field_provider('volume'))
+            self.assertEqual([c.args[0] for c in probe.call_args_list], ['semrush', 'dataforseo'])
     def test_empty_sources(self): self.assertEqual(self.expand([], []), [])
 
 class CostTests(unittest.TestCase):

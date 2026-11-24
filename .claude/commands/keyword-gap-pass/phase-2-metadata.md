@@ -68,7 +68,7 @@ Pull live GSC performance for the page before deciding. Two compatible sources �
 ```
 Returns JSON including a `verdict` object with `rewrite_recommended: true|false` and reason. Auth uses `~/.claude/secrets/gsc-service-account.json` (same SA as the URL Inspection tool) — no per-project setup beyond the SA having GSC property access.
 
-**Alternative (Ahrefs MCP):** if the project has the Ahrefs MCP connected and is registered as an Ahrefs project, call `gsc-page-history` and `gsc-keyword-history` for the same data. Either source is acceptable as long as the verdict logic below is applied.
+**No Ahrefs fallback (OWNER RULE 2026-11-24):** Use the direct Google Search Console API (`.claude/tools/gsc-search-analytics/gsc_search_analytics.py`) only — never call Ahrefs MCP `gsc-*` here.
 
 Apply the verdict:
 - **`performing`** (CTR ≥ 5% AND impressions trending up over 30 days) → **DEFER**. Current title is working; don't risk it. Record `deferred — performing well (CTR X%, trend up)`.

@@ -510,9 +510,9 @@ def _estimate_expand(seed: str, limit: int, gl: str = "us") -> list[dict]:
 # units are reserved for site audits, so Ahrefs is last and only reached when
 # both others fail. This supersedes the quality ranking above.
 FIELD_ORDER = {
-    "volume": ("semrush", "dataforseo", "ahrefs"),
-    "kd":     ("semrush", "dataforseo", "ahrefs"),
-    "expand": ("semrush", "dataforseo", "ahrefs"),
+    "volume": ("semrush", "dataforseo"),
+    "kd":     ("semrush", "dataforseo"),
+    "expand": ("semrush", "dataforseo"),
 }
 
 _FIELD_PROVIDER: dict[str, str | None] = {}
@@ -534,7 +534,7 @@ def _order(field: str) -> tuple[str, ...]:
     names = [n.strip().lower() for n in pinned.split(",")]
     if names == ["dataforseo"] and os.environ.get("SEMRUSH_ENABLED", "").strip() != "0":
         names = ["semrush", "dataforseo"]
-    return tuple(n for n in dict.fromkeys(names) if n in ("dataforseo", "semrush", "ahrefs"))
+    return tuple(n for n in dict.fromkeys(names) if n in ("dataforseo", "semrush"))
 
 
 def _provider_usable(name: str, database: str) -> bool:
@@ -773,15 +773,7 @@ def provider_status(database: str = "us") -> dict:
             st["semrush"] = "ok"
         except RuntimeError as e:
             st["semrush"] = f"unavailable: {e}"
-    if "ahrefs" not in _order("volume"):
-        st["ahrefs"] = "off: excluded by KEYWORD_PROVIDERS"
-    else:
-        try:
-            _ahrefs_get("overview", {"country": database, "keywords": "seo",
-                                     "select": "keyword,volume"})
-            st["ahrefs"] = "ok"
-        except RuntimeError as e:
-            st["ahrefs"] = f"unavailable: {e}"
+    st["ahrefs"] = "off: reserved for technical site audits and weekly winner/loser only"
     st["autocomplete"] = "ok" if _suggest("seo") else "unavailable: no response"
     st["selected"] = {f: field_provider(f, database) for f in FIELD_ORDER}
     return st

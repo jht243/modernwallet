@@ -18,21 +18,19 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 
 
 <!-- KG-DFS:BEGIN — canonical copy lives in layer3 .claude/commands/_keyword-gap-data-source.md; synced fleet-wide -->
-> **‼️ DATA SOURCE FOR THIS PASS (2026-11-02) — SEMRUSH first, DataForSEO fallback. NEVER Ahrefs.**
-> Ahrefs units are reserved for technical site audits (`ahrefs-site-audit-auto`). On 2026-09-20
-> this pass burned ~143k of the 200k monthly Ahrefs units in 50 minutes by pulling competitor
-> keywords through the Ahrefs MCP. USER RULE 2026-11-02: SEMRUSH is primary wherever it can answer.
-> So, for every step of the keyword-gap pass:
+> **‼️ DATA SOURCE FOR THIS PASS (2026-11-24) — SEMRUSH first, DataForSEO fallback, then free Google data. NEVER Ahrefs.**
+> OWNER POLICY (2026-11-24): Ahrefs is approved ONLY for technical site audit routines (`ahrefs-site-audit-auto`)
+> and the weekly Winner/Loser pass (`ahrefs_winner_loser_pass`). Everything else follows SEMRUSH first,
+> DataForSEO fallback, and free Google data (Google Search Console API / Google Autocomplete) when needed — NEVER Ahrefs.
 >
 > - **Do NOT call any Ahrefs tool** — no `site-explorer-*`, `keywords-explorer-*`, `serp-overview`,
->   `batch-analysis` or any other `mcp__*ahrefs*` / Ahrefs API endpoint — not as a primary source and
->   not as a fallback. This overrides any sentence below that says "Ahrefs MCP fallback".
+>   `batch-analysis`, `gsc-*`, or any other `mcp__*ahrefs*` / Ahrefs API endpoint — not as a primary source and
+>   not as a fallback. This overrides any legacy line below that mentions Ahrefs.
 > - **Competitor gap (Lens 1):** run `python3 scripts/lib/dfs_keyword_gap.py --refresh-competitors` from
->   the repo root with the routine's `SEMRUSH_API_KEY` and `DATAFORSEO_B64` in the environment (the
->   prompt's key lines cover this script too). Each domain's ranked keywords come from SEMRUSH
->   `domain_organic`, competitors from `domain_organic_organic`; a SEMRUSH failure falls back to
->   DataForSEO per domain and says so in `notes`. It reads `OUR_DOMAIN` / `COMPETITORS` / `RELEVANT` /
->   `ADJACENT` / `EXCLUDE` / `TARGET_KW_FILE` from `scripts/semrush_keyword_gap.py` and writes
+>   the repo root with `SEMRUSH_API_KEY` and `DATAFORSEO_B64` in the environment. Each domain's ranked
+>   keywords come from SEMRUSH `domain_organic`, competitors from `domain_organic_organic`; a SEMRUSH
+>   failure falls back to DataForSEO per domain and says so in `notes`. It reads `OUR_DOMAIN` / `COMPETITORS` /
+>   `RELEVANT` / `ADJACENT` / `EXCLUDE` / `TARGET_KW_FILE` from `scripts/semrush_keyword_gap.py` and writes
 >   `reports/seo-research/keyword-gap.json` (`gaps[]`: keyword, volume, kd, cpc, tier, competitors,
 >   num_competitors, score). Use that file wherever the text below says to run the SEMRUSH gap script.
 > - **Competitor refresh (Step A):** use the `live_competitors` list in that JSON plus a web
@@ -41,12 +39,11 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 >   (any source). Commit that directory with the run so next week's run reuses it. Never pass
 >   `--no-cache` in an autonomous run.
 > - **Volumes / KD for Lens-2 ideas:** `scripts/lib/keyword_data.py` (SEMRUSH first, DataForSEO
->   fallback); if a row comes back `source: ahrefs`, unset `AHREFS_API_KEY` for this run
->   (`env -u AHREFS_API_KEY python3 …`).
+>   fallback, free Google Autocomplete — never Ahrefs).
 > - **PAA / SERP checks:** `scripts/lib/serp.py` (DataForSEO live SERP — SEMRUSH has none), never
 >   Ahrefs `serp-overview`.
-> - **If SEMRUSH and DataForSEO are both unavailable:** continue on Lens 2 (autocomplete + web) with
->   `source: estimate` rows labelled as such. That is the fallback — not Ahrefs.
+> - **If SEMRUSH and DataForSEO are both unavailable:** continue on free Google data (direct GSC API +
+>   Google Autocomplete + live web) with `source: estimate` rows labelled as such. That is the fallback — never Ahrefs.
 <!-- KG-DFS:END -->
 
 This is Step 1 of `/keyword-gap-pass`. It replaces seo-gsc-pass's "build chart from GSC screenshots" step. Instead of reading screenshots, it explores live opportunity two ways — a **competitor keyword gap via SEMRUSH** (with a competitor set refreshed every run, never hardcoded) **and wider whitespace/live-market exploration** (new verticals, niche long-tail, news-driven demand) — diffs both against the keywords already tracked in the project's target-keyword document, and produces the same machine-readable chart the rest of the phases consume.
@@ -118,7 +115,7 @@ This is the part the user actually cares about: opportunities **no current compe
   - The `--inventory` flag is **per-project**: pass the path discovered in Step A (e.g. `target-keyword-inventory.md` at THIS project's repo root). The tool dedupes against everything already tracked there — primary keywords, supporting-keywords cells, and prior log entries — and appends only genuinely new suggestions under a `## Autocomplete Discovery Log` section. NEVER point it at another project's inventory.
   - `--mode all` runs the question-prefix sweep (10 prefixes — what/how/why/is/does/can/should/when/where/which) AND the alphabet sweep (seed + a-z), then dedups. Output is `seed,suggestion,via` CSV.
   - **Read the CSV** AND **scan the newly-appended rows in the Discovery Log** — treat every row as a Lens-2 candidate to consider. These are phrases real Google searchers are typing right now. Phrases that look genuinely customer-relevant get classified into a bucket in Step C even when SEMRUSH shows zero volume; note `"demand inferred from live Autocomplete — no tool volume"` in the chart's `problem` cell.
-  - **People Also Ask:** Autocomplete covers the bulk; for PAA-specific gaps, run `python3 scripts/lib/serp.py read --keyword "<query>"` (DataForSEO — never Ahrefs) on the top 3-5 candidates' parent queries to extract their PAA boxes — record any PAA phrase not already captured by Autocomplete, and add them manually to the same Discovery Log section in the inventory (one row per PAA phrase, with `via: paa:<source-query>`).
+  - **People Also Ask:** Autocomplete covers the bulk; for PAA-specific gaps, use `scripts/lib/serp.py` (DataForSEO live SERP — NEVER Ahrefs `serp-overview`, OWNER RULE 2026-11-24).
   - These candidates compete with higher-volume opportunities **on equal footing** — they are options to weigh at the manifest gate, NOT auto-prioritized; when a stronger higher-volume or more-relevant keyword exists for the same slot, prefer it.
 
 For Lens 2, judge relevance **editorially** — "is this something this site could credibly and usefully own?" — not by a fixed regex. The script's `RELEVANT` pattern is a coarse *core-tier tag* for Lens 1 only; do not let it cap exploration. **Adjacency is the goal here, not a risk to filter out** — a topic next to our core that we could plausibly rank for is exactly what both lenses should be surfacing. Capture each Lens-2 idea with its rationale and any volume/difficulty you can pull from `keyword_overview`.

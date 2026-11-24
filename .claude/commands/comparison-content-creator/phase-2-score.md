@@ -22,14 +22,13 @@ Startup returns a fresh `runId` after verification; pass it via `--run-id` to th
 ## Pull live data per surviving candidate
 Use only the data sources Phase 0 found connected. For each `NEW` candidate's `primaryKeyword`:
 
-- **Ahrefs MCP** (if present):
-  - `keywords-explorer-overview` → search **volume**, **keyword difficulty (KD)**, CPC. (Remember Ahrefs monetary values are USD cents — divide by 100.) Honor the MCP rule: if a response includes `render_with`, call the named render tool before using the data.
-  - `keywords-explorer-related-terms` → catch a higher-volume phrasing of the same pair; if one clearly wins, adopt it as the `primaryKeyword` (keep the slug aligned).
-  - `serp-overview` → who currently ranks page 1. Judge **winnability**: are incumbents weak (forums, thin listicles, low-DR) or entrenched (the vendors themselves, high-DR review sites)?
+- **Keyword demand ladder (PRIMARY — SEMrush first, DataForSEO fallback, then free Google Autocomplete; NEVER Ahrefs):**
+  - `scripts/lib/keyword_data.py` (`volumes()` / `expand()`) → search **volume**, **keyword difficulty (KD)**, CPC, and higher-volume related phrasings. Reads `SEMRUSH_API_KEY` first, falls back to `DATAFORSEO_B64`, and enriches with free Google Autocomplete. **NEVER call any Ahrefs MCP tool (`keywords-explorer-*`, `serp-overview`, `gsc-*`) or `$AHREFS_API_KEY` here** (OWNER RULE 2026-11-24).
+  - `scripts/lib/serp.py` (DataForSEO live SERP) → who currently ranks page 1. Judge **winnability**: are incumbents weak (forums, thin listicles, thin pages) or entrenched (the vendors themselves, authoritative review sites)?
 - **GSC MCP** (if present): `gsc-keywords` / `gsc-pages` → are we already getting **impressions** for this pair or a near variant? Latent impressions we don't yet serve = strong, cheap opportunity.
 - **SEMrush export** (if a keyword-gap CSV was found): use it for competitor-gap corroboration — pairs competitors rank for and we don't.
 - **Brand Radar** (if present): the LLM-citation angle — does comparison content already surface in AI answers for this pair? High AI-citation potential is a tie-breaker up.
-- **Keyword demand ladder (REQUIRED backup before any heuristic scoring):** if the Ahrefs MCP is absent, dry, or erroring for a candidate, get volume/KD/CPC from `scripts/lib/keyword_data.py` instead (`volumes()` -- reads `DATAFORSEO_B64`/`SEMRUSH_API_KEY`/`AHREFS_API_KEY` from the environment and resolves the best usable provider per field; see `.claude/commands/_keyword-demand-ladder.md`). Only when the ladder itself returns `source: estimate` may a candidate be scored heuristically -- measured data from ANY rung always beats internal signals.
+- **Free Google data fallback (before any heuristic scoring):** direct Google Search Console API (`.claude/tools/gsc-search-analytics/gsc_search_analytics.py`) + live Google Autocomplete (already included in `keyword_data.py`). Only when both SEMrush and DataForSEO are unavailable and the ladder returns `source: estimate` may a candidate be scored heuristically — measured data from SEMrush/DataForSEO/GSC always beats internal signals.
 
 Batch calls sensibly; cap total candidates scored to a reasonable ceiling (e.g. 30) — rank by a cheap heuristic first and only pull live data for the most promising, to bound API spend further.
 
