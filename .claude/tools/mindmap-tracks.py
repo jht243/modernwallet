@@ -110,7 +110,7 @@ TRACK_CONTRACTS = {
         '- **Output Schema (`ComparisonPage` TypeScript shape):** `slug`, `metaTitle`, `metaDescription`, `h1`, `subtitle`, '
         '`optionAName` (`<Product>`), `optionBName` (`"Alternatives"`), `introText` (`string[]`), `tableTitle` (`string`), '
         '`tableColumnLabels` (exact 3-string array `["Product", "Pricing & Plan Caps", "Best Fit"]`), '
-        '`comparisonTable` (`[{dimension, optionA, optionB}]`), `sections` (`[{id: string, heading: string, content: string[], bullets?: string[]}]` — note: each paragraph or multi-line Markdown pipe table is one string inside `content: string[]`!), '
+        '`comparisonTable` (`[{dimension, optionA, optionB}]`), `sections` (`[{id: string, heading: string, content: string[], bullets?: string[], table?: {caption?: string, headers: string[], rows: string[][]}}]` — each paragraph or multi-line Markdown pipe table is one string inside `content: string[]`, or pass structured `table`), '
         '`verdict` (`string[]`), `faqItems` (`[{question, answer}]`), `ctaTitle` (`string`), `ctaText` (`string`), '
         '`ctaButton` (`string` label, NOT an object), `inlineCta` (`{text, buttonLabel, buttonHref}`), '
         '`relatedLinks` (`[{title, description, href, category}]`), `publishedDate`, `updatedDate`, '
@@ -131,36 +131,36 @@ TRACK_CONTRACTS = {
     ),
     'comparison': (
         '## Active Mindmap Format Track: `comparison` (`<Option A> vs <Option B>`)\n'
-        '- **Output Schema (`ComparisonPage` TypeScript shape, `1,500+` visible words):** `sections` uses `{id, heading, content: string[], bullets?: string[]}`, `ctaButton` is a `string`, `tableColumnLabels` is a 3-string tuple, `relatedLinks` items include `{title, description, href, category}`, `attributionMode` is `"author"`, `faqSchemaPlainText` is `true`.\n'
+        '- **Output Schema (`ComparisonPage` TypeScript shape, `1,500+` visible words):** `sections` uses `{id, heading, content: string[], bullets?: string[], table?: {caption?: string, headers: string[], rows: string[][]}}`, `ctaButton` is a `string`, `tableColumnLabels` is a 3-string tuple, `relatedLinks` items include `{title, description, href, category}`, `attributionMode` is `"author"`, `faqSchemaPlainText` is `true`, plus `sourceNote` and `pricingNote`.\n'
         '- **Mandatory Layer3 Best-Practice Proof:**\n'
         '  1. Answer `"Which should I pick between <A> and <B>?"` in sentence 1 with concrete price/limit thresholds.\n'
-        '  2. Include a structured side-by-side `comparisonTable` plus a **3-scenario workload/seat cost & cap table** inside `sections[].content` grounded in `evidence.json`, with an explicit **counterexample** showing when the runner-up wins.\n'
+        '  2. Include a structured side-by-side `comparisonTable` plus a **3-scenario workload/seat cost & cap table** (`sections[].table` or Markdown pipe table in `sections[].content`) grounded in `evidence.json`, with an explicit **counterexample** showing when the runner-up wins.\n'
         '  3. Integrate matched Layer3 first-party experience/testing honestly within `evidence.json` basis (`measured` -> `howWeTested` + per-option `whyPicked`/`whoFor`/`downside`; `modeled`/`calculated` -> transparent scenario modeling + `sourceNote`).\n'
         '  4. Close with a decisive buyer-segmented `verdict[]` and `"What Would Change Our Answer"`.\n'
     ),
     'roundup': (
         '## Active Mindmap Format Track: `roundup` (`Best <Category>` / Gear / Vertical Roundup)\n'
-        '- **Output Schema:** Repository roundup `GuidePage` or `ComparisonPage` JSON (`1,800+` visible words).\n'
+        '- **Output Schema:** Repository roundup `GearRoundup`, `GearDeepDive`, `VerticalPage`, `GuidePage`, or `ComparisonPage` JSON (`1,800+` visible words). Every layout natively renders `sections[].table` (`{caption?: string, headers: string[], rows: string[][]}` or `scenarioTable`), `takeaway` (`{heading?: string, paragraphs: string[], conditions?: string, whatWouldChange?: string}` or `string[]`) / `verdict`, `sourceNote`, and `pricingNote`.\n'
         '- **Mandatory Layer3 Best-Practice Proof:**\n'
         '  1. Lead with the top pick by buyer archetype and an honest evaluation matrix.\n'
-        '  2. When `basis == "measured"` and tested-eligible, include 3 specific `howWeTested` method bullets and per-pick `whyPicked` / `whoFor` / `downside`. Otherwise include a deterministic cost/spec scenario comparison + counterexample grounded in `evidence.json`.\n'
-        '  3. Never defer table cells ("see site") and include an explicit `sourceNote`.\n'
+        '  2. When `basis == "measured"` and tested-eligible, include 3 specific `howWeTested` method bullets and per-pick `whyPicked` / `whoFor` / `downside`. Otherwise include a deterministic cost/spec scenario comparison (`sections[].table` or `scenarioTable`) + counterexample grounded in `evidence.json`.\n'
+        '  3. Populate `takeaway` (with `conditions` + `whatWouldChange`), never defer table cells ("see site"), and set explicit `sourceNote` and `pricingNote`.\n'
     ),
     'guide': (
         '## Active Mindmap Format Track: `guide` (Evergreen Guide / Pricing / Calculator / How-To)\n'
-        '- **Output Schema:** `GuidePage` JSON object (`1,800+` visible words).\n'
+        '- **Output Schema:** `GuidePage` JSON object (`1,800+` visible words; shared across `/guides/`, `/open-weights/`, `/robotics/`, `/roi/`, and `/governance/`). All layouts natively render `sections[].table` (`{caption?: string, headers: string[], rows: string[][]}`), `takeaway` (`{heading?: string, paragraphs: string[], conditions?: string, whatWouldChange?: string}` or `string[]`), `sourceNote`, and `pricingNote`.\n'
         '- **Mandatory Layer3 Best-Practice Proof:**\n'
         '  1. Answer the exact reader question in the opening sentence with concrete numbers/thresholds.\n'
-        '  2. Include a worked calculation or multi-scenario table grounded in `evidence.json` with explicit assumptions + a concrete **counterexample** (never claim `(Tested YYYY)` on pricing/how-to/explainer guides).\n'
-        '  3. Include an intent-answering **Our Takeaway** (`conditions` + `whatWouldChange`) and 3+ contextual internal links.\n'
+        '  2. Include a worked calculation or multi-scenario `sections[].table` grounded in `evidence.json` with explicit assumptions + a concrete **counterexample** (never claim `(Tested YYYY)` on pricing/how-to/explainer/ROI/governance guides).\n'
+        '  3. Populate `takeaway` (`conditions` + `whatWouldChange`), `sourceNote`, `pricingNote`, and 3+ contextual internal links.\n'
     ),
     'launch': (
         '## Active Mindmap Format Track: `launch` (Fast-Turn Model / Product Launch & News)\n'
-        '- **Output Schema:** `GuidePage` or `ComparisonPage` JSON (`1,500+` visible words for comparisons, `1,800+` for guides).\n'
+        '- **Output Schema:** `GuidePage` or `ComparisonPage` JSON (`1,500+` visible words for comparisons, `1,800+` for guides), including `sections[].table`, `takeaway` / `verdict`, `sourceNote`, and `pricingNote`.\n'
         '- **Mandatory Layer3 Best-Practice Proof:**\n'
         '  1. Ground every spec, context window, benchmark, deprecation date, and token/tier rate strictly in captured primary announcement docs (`research/sources/*.txt`).\n'
-        '  2. Compare same-workload cost/latency/limits against the predecessor or closest rival with explicit arithmetic and a counterexample where the older/cheaper tier still wins. Never invent hands-on testing claims on breaking launches unless `basis == "measured"`.\n'
-        '  3. Close with an actionable **Our Takeaway** stating who should migrate now vs. wait.\n'
+        '  2. Compare same-workload cost/latency/limits against the predecessor or closest rival in `sections[].table` with explicit arithmetic and a counterexample where the older/cheaper tier still wins. Never invent hands-on testing claims on breaking launches unless `basis == "measured"`.\n'
+        '  3. Populate `takeaway` / `verdict` stating who should migrate now vs. wait, plus `sourceNote` and `pricingNote`.\n'
     ),
 }
 
@@ -212,11 +212,13 @@ def tested_eligibility(
         section = 'gear'
     elif clean_route.startswith('/comparisons/') or clean_route.startswith('/compare/'):
         section = 'comparison'
+    elif clean_route.startswith('/ai-for/'):
+        section = 'vertical'
     else:
         section = 'guide'
 
     exclusion = None
-    if section == 'guide' and not _GUIDE_TYPE_RE.search(slug):
+    if section in ('guide', 'vertical') and not _GUIDE_TYPE_RE.search(slug):
         exclusion = 'type: guide is not a best-of/alternatives roundup or single-item review'
     if not exclusion:
         slug_words = _words(slug)
@@ -698,7 +700,7 @@ def validate_track_draft(
 
     # 2. Enforce modeling table + counterexample/break-even on modeled/calculated packets
     if basis in ('modeled', 'calculated'):
-        has_md_table = False
+        has_md_table = bool(draft_obj.get('scenarioTable'))
         for sec in (draft_obj.get('sections') or []):
             if isinstance(sec, dict):
                 if sec.get('table'):
@@ -1063,7 +1065,37 @@ def intake_scout_spec(root: Path, spec_path: Path, run_dir: Path, author: str = 
     r_ref = {'path': str(review_path.relative_to(root)), 'sha256': _sha256_file(review_path)}
     evidence_packets = []
 
+    bench_path = root / '.claude/tools/mindmap-benchmark.py'
+    bench_mod = None
+    if bench_path.is_file():
+        b_spec = importlib.util.spec_from_file_location('mm_bench_intake', bench_path)
+        bench_mod = importlib.util.module_from_spec(b_spec)
+        b_spec.loader.exec_module(bench_mod)
+
     for aid, slug, target, rq, pres_obj, src_ref, c in per_cand_models:
+        if bench_mod is not None and (c.get('models') or c.get('practicalTask') or any(isinstance(v, dict) and (v.get('pricingUrl') or v.get('fetchLive')) for v in (c.get('vendors') or []))):
+            b_res = bench_mod.run_benchmark_for_candidate(
+                root=root,
+                run_dir=run_dir,
+                manifest_ref=m_ref,
+                review_ref=r_ref,
+                action_id=aid,
+                route=target,
+                track=track,
+                reader_question=rq,
+                candidate=c,
+                author=author,
+            )
+            evidence_packets.append({
+                'actionId': aid,
+                'slug': slug,
+                'route': target,
+                'basis': b_res['basis'],
+                'testedBadgeAuthorized': b_res['testedBadgeAuthorized'],
+                'evidence': b_res['evidence'],
+                'modelOutput': b_res['modelOutput'],
+            })
+            continue
         c_dir = ev_root / slug
         c_dir.mkdir(parents=True, exist_ok=True)
         # Retrieve canonical cases.json via mindmap-gates.cases()

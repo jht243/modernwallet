@@ -54,6 +54,16 @@ class MindmapTracksTests(unittest.TestCase):
         el_fin = tracks.tested_eligibility(REPO, '/comparisons/quickbooks-alternatives', title='QuickBooks Alternatives')
         self.assertFalse(el_fin['eligible'])
         self.assertIn('money', el_fin['exclusionReason'])
+        # Industry verticals: general industry playbooks stay excluded; software roundups under /ai-for/ & /robotics/ qualify
+        el_vert_play = tracks.tested_eligibility(REPO, '/ai-for/logistics', title='AI for Logistics & Supply Chain')
+        self.assertFalse(el_vert_play['eligible'])
+        el_vert_roundup = tracks.tested_eligibility(REPO, '/ai-for/best-ai-logistics-software', title='Best AI Logistics Software')
+        self.assertTrue(el_vert_roundup['eligible'], el_vert_roundup)
+        self.assertEqual(el_vert_roundup['section'], 'vertical')
+        el_robo_roundup = tracks.tested_eligibility(REPO, '/robotics/best-warehouse-robots', title='Best Warehouse Robots')
+        self.assertTrue(el_robo_roundup['eligible'], el_robo_roundup)
+        el_roi = tracks.tested_eligibility(REPO, '/roi/ai-automation-roi-framework', title='AI Automation ROI Framework')
+        self.assertFalse(el_roi['eligible'])
 
     def test_track_sliced_system_cuts_over_45_percent_and_isolates_tracks(self):
         bench = tracks.benchmark_tracks(REPO)

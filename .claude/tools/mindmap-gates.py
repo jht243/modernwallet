@@ -1872,6 +1872,16 @@ def _load_tracks_module():
     return mod
 
 
+def _load_benchmark_module():
+    b_path = Path(__file__).with_name('mindmap-benchmark.py')
+    if not b_path.is_file():
+        return None
+    spec = importlib.util.spec_from_file_location('mindmap_benchmark_engine', b_path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
 def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice_sample=None, review_path=None, overwrite=False, routes=None, track=None):
     """Build reusable track-sliced system.md + per-slug .prompt.md + .allowed-urls.txt from approval-manifest.json in 1 command."""
     root = root.resolve()
@@ -1893,6 +1903,30 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
         r for r in (plan.get('actions') or [])
         if isinstance(r, dict) and r.get('bucket') in SUBSTANTIVE and _matches_route_filter(r.get('target', ''), routes)
     ]
+    # Auto-run Live Product & Pricing Benchmark Step for Comparison, Roundup, and Alternatives rows missing evidence.json
+    bench_mod = _load_benchmark_module()
+    default_rev_file = local(root, review_path) if review_path else (m_file.parent / 'chart-review.json')
+    if (
+        bench_mod is not None
+        and tracks_mod is not None
+        and ev_base == (m_file.parent / 'evidence').resolve()
+        and default_rev_file.is_file()
+        and plan.get('preparationMode', 'full') == 'full'
+    ):
+        needs_auto_bench = False
+        for r in active_rows:
+            br = brief_by_id.get(r.get('id', ''), {})
+            tr = track if track in tracks_mod.TRACKS else tracks_mod.classify_action(r, br, plan)
+            slug_r = _route_slug(str(r.get('target') or ''))
+            if tr in ('alternatives', 'comparison', 'roundup') and not (ev_base / slug_r / 'evidence.json').is_file():
+                needs_auto_bench = True
+                break
+        if needs_auto_bench:
+            try:
+                bench_mod.run_benchmark_for_manifest(root, m_file)
+            except Exception:
+                pass
+
     row_tracks = {}
     any_tested_needed = False
     if tracks_mod is not None:
@@ -2168,9 +2202,15 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                 '```',
             ])
         if model_output_data is not None:
+            sc_tbl_note = (
+                'Populate `sections[0].table` (or `scenarioTable` on Vertical/Template pages) directly from `scenarioTable` below so every figure matches the verified benchmark.'
+                if isinstance(model_output_data, dict) and model_output_data.get('scenarioTable')
+                else 'Cite exact figures from `output.json` below.'
+            )
             prompt_lines.extend([
                 '',
                 '## Executed Scenario Model Output (`output.json` — Cite Exact Figures)',
+                sc_tbl_note,
                 '```json',
                 json.dumps(model_output_data, indent=2, ensure_ascii=False),
                 '```',
