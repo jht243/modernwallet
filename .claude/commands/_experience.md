@@ -10,7 +10,7 @@ The Modern Wallet (themodernwallet.com) is a personal-finance site built around 
 **Editorial Identity & Review Split (REQUIRED):**
 - **Author:** ModernWallet Research Desk (never invent pen names or fictional staff writers).
 - **Publisher & Editorial Reviewer:** Jonathan Teplitsky, MBA (Harvard Business School MBA, Founder & CEO of Layer3Labs; verified profile at `/about/jonathan-teplitsky/`, `https://www.jonathanteplitsky.com/`, and `https://www.linkedin.com/in/jonathanteplitsky/`).
-- **Zero-Fabrication Reviewer Note Rule:** Never invent personal quotes, opinions, or anecdotes attributed to Jonathan Teplitsky in body copy or reviewer-note boxes. Only notes explicitly written or approved by Jonathan Teplitsky belong in `src/data/reviewer-notes.ts`.
+- **Page-Specific Reviewer Note Rule (Mindmap Pass):** For every new page, generate a fresh, unique 2-sentence `Publisher's Take` grounded strictly in `.claude/reviewer-voice-profile.json` (Jonathan Teplitsky's verified LinkedIn career dossier + prior voice examples) and the page's verified primary sources — never copy a sample quote verbatim, never use em-dashes or AI buzzwords, never invent unverified personal stories, and register it into `src/data/reviewer-notes.ts` via `python3 .claude/tools/mindmap-tracks.py register-reviewer-note`.
 
 **General framings this section licenses** (editorial "we", no client roster required):
 

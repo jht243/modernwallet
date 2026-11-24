@@ -4,15 +4,10 @@ export interface ReviewerNoteEntry {
   label?: string;
 }
 
-export interface ApprovedTopicInsight extends ReviewerNoteEntry {
-  id: string;
-  matchGroups: string[][];
-}
-
 /**
- * Verified human-approved Publisher / Editorial Reviewer notes by canonical route path.
- * ZERO-FABRICATION RULE: Only notes explicitly written or approved by Jonathan Teplitsky
- * may appear here. Never populate with AI-invented personal quotes.
+ * Page-specific Publisher / Editorial Reviewer notes by canonical route path.
+ * Each entry is generated specifically for its own route grounded in Jonathan Teplitsky's
+ * verified career dossier and voice profile (.claude/reviewer-voice-profile.json).
  */
 export const REVIEWER_NOTES: Record<string, ReviewerNoteEntry> = {
   "/roundup/best-retirement-accounts-for-self-employed/": {
@@ -27,31 +22,7 @@ export const REVIEWER_NOTES: Record<string, ReviewerNoteEntry> = {
   },
 };
 
-export const APPROVED_TOPIC_INSIGHTS: ApprovedTopicInsight[] = [
-  {
-    id: "self-employed-retirement",
-    ...REVIEWER_NOTES["/roundup/best-retirement-accounts-for-self-employed/"],
-    matchGroups: [["solo-401k"], ["sep-ira"], ["self-employed", "retirement"]],
-  },
-  {
-    id: "529-plan-flexibility",
-    ...REVIEWER_NOTES["/guides/529-leftover-money-options/"],
-    matchGroups: [["529-"], ["college-savings-529"]],
-  },
-];
-
 export function getReviewerNote(pathname: string): ReviewerNoteEntry | undefined {
   const normalized = pathname.endsWith("/") ? pathname : `${pathname}/`;
-  const exact = REVIEWER_NOTES[normalized] ?? REVIEWER_NOTES[pathname.replace(/\/$/, "")];
-  if (exact) return exact;
-  const low = normalized.toLowerCase();
-  if (low === "/" || low.startsWith("/about/") || low.startsWith("/editorial-policy/") || low.startsWith("/methodology/") || low.startsWith("/contact/")) {
-    return undefined;
-  }
-  for (const item of APPROVED_TOPIC_INSIGHTS) {
-    if (item.matchGroups.some((group) => group.every((tok) => low.includes(tok)))) {
-      return { note: item.note, reviewedDate: item.reviewedDate, label: item.label };
-    }
-  }
-  return undefined;
+  return REVIEWER_NOTES[normalized] ?? REVIEWER_NOTES[pathname.replace(/\/$/, "")];
 }

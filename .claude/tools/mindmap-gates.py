@@ -2179,20 +2179,25 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                 'All options below are on equal footing with NO rigid priority. Choose whichever option — or combination of multiple options — makes this specific page strongest. Only omit internal proof if there is a genuine, specific reason (such as a medical/legal domain exclusion or zero applicable records/numbers), and state that reason explicitly.',
                 *pool_bullets,
             ])
-            approved_insight = pool_info.get('approvedReviewerInsight')
-            if isinstance(approved_insight, dict) and approved_insight.get('note'):
+            voice_prof = pool_info.get('reviewerVoiceProfile')
+            if isinstance(voice_prof, dict) and voice_prof.get('verifiedCareerHistory'):
+                samples = [
+                    f'  - "{q.get("note") if isinstance(q, dict) else q}"'
+                    for q in (voice_prof.get('sampleQuotes') or [])[:4]
+                ]
+                career_lines = [f'  - {c}' for c in (voice_prof.get('verifiedCareerHistory') or [])]
+                rule_lines = [f'  - {r}' for r in (voice_prof.get('voiceRules') or [])]
                 prompt_lines.extend([
                     '',
-                    f"## Pre-Approved Editorial Reviewer Insight Matched (`{approved_insight.get('id')}` — Verbatim, Zero Fabrication)",
-                    f"- **Reviewer:** {approved_insight.get('reviewer')} · **Label:** {approved_insight.get('label')} · **Approved:** {approved_insight.get('reviewedDate')}",
-                    f"- **Exact Approved Text:** \"{approved_insight.get('note')}\"",
-                    '- **Rule:** The site layout automatically displays this exact pre-approved Reviewer Note box on matching routes. Keep the article consistent with this takeaway, and NEVER alter, paraphrase, or invent additional personal quotes attributed to the reviewer in article body prose.',
-                ])
-            else:
-                prompt_lines.extend([
-                    '',
-                    '## Editorial Reviewer Note Policy (Zero Fabrication)',
-                    '- No pre-approved personal Reviewer Insight matches this route. Auto-publish normally with the Editorial/Research Desk `Our Takeaway` and standard reviewer verification bar; NEVER invent a personal quote attributed to Jonathan Teplitsky or any named reviewer.',
+                    f"## Generate Fresh Page-Specific Reviewer Note (Required — {voice_prof.get('reviewer', 'Jonathan Teplitsky')} Voice & Career Profile)",
+                    f"- **Label:** `{voice_prof.get('defaultLabel', \"Publisher's Take\")}` · **Site Angle:** {voice_prof.get('siteCredentialAngle', '')}",
+                    '- **Verified Career History (use ONLY these real credentials/experiences; never invent fake deals, clients, or anecdotes):**',
+                    *career_lines,
+                    '- **Voice & Style Rules (enforced by automated voice lint):**',
+                    *rule_lines,
+                    '- **Prior Approved Quotes (STYLE EXAMPLES ONLY — NEVER copy verbatim; write a brand-new 2-sentence quote tailored specifically to THIS new page\'s numbers, rules, and tradeoffs):**',
+                    *samples,
+                    f'- **Publish Registration (Required):** Include `"reviewerNote": {{"label": "{voice_prof.get("defaultLabel", "Publisher\'s Take")}", "note": "<fresh 2-sentence quote>"}}` in the draft AND register it live via `python3 .claude/tools/mindmap-tracks.py register-reviewer-note --route "{target}" --note "<fresh 2-sentence quote>"`.',
                 ])
             matched_exp = tracks_mod.match_experience_records(
                 root,

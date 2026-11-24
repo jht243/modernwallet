@@ -278,62 +278,169 @@ def tested_eligibility(
     }
 
 
-def match_approved_reviewer_insight(
-    root: Path,
-    route: str,
-    title: str = '',
-    h1: str = '',
-    description: str = '',
-) -> dict | None:
-    """Match a pre-approved human Reviewer Insight from `.claude/approved-insights.json` ($0 LLM tokens).
+_REVIEWER_NOTE_BANNED_WORDS = (
+    'streamline', 'leverage', 'robust', 'seamless', 'delve', 'landscape',
+    'pivotal', 'crucial', 'foster', 'showcase', 'testament', 'underscore',
+    'vibrant', 'meticulous', 'enhance', 'bolster', 'garner', 'unlock',
+    'empower', 'elevate', 'transformative', 'cutting-edge', 'supercharge',
+    'effortless', 'revolutionize', 'holistic', 'synergy', 'harness',
+    'utilize', 'comprehensive', 'nuanced', 'realm', 'tapestry',
+    'game-changer', 'game changer', 'dive in', 'unpack',
+)
 
-    ZERO-FABRICATION RULE: Only returns verbatim insights explicitly approved by the named
-    reviewer in `.claude/approved-insights.json`. Never invents or modifies quote text.
-    """
-    bank_path = root / '.claude/approved-insights.json'
-    if not bank_path.is_file():
+
+def load_reviewer_voice_profile(root: Path) -> dict | None:
+    """Load `.claude/reviewer-voice-profile.json` containing Jonathan Teplitsky's verified career
+    dossier, voice rules, and prior approved sample quotes (for dynamic new-page quote generation)."""
+    prof_path = root / '.claude/reviewer-voice-profile.json'
+    if not prof_path.is_file():
         return None
     try:
-        bank = json.loads(bank_path.read_text())
+        data = json.loads(prof_path.read_text())
+        return data if isinstance(data, dict) else None
     except Exception:
         return None
+
+
+def lint_reviewer_note(note_text: str, profile: dict | None = None) -> list[str]:
+    """Lint a newly generated page-specific Reviewer Note against Jonathan's real voice standards."""
+    issues = []
+    t = (note_text or '').strip()
+    if not t:
+        return ['Reviewer note is empty']
+    if '\u2014' in t or '\u2013' in t or re.search(r'\S\s-\s\S', t):
+        issues.append('Contains em-dash, en-dash, or spaced hyphen — split into two sentences or use a comma')
+    if re.search(r'\bnot (?:just |only |merely )?[\w][\w\s]{0,45},?\s*but\b', t, re.I):
+        issues.append('Contains AI "not X, but Y" construction')
+    low = t.lower()
+    for w in _REVIEWER_NOTE_BANNED_WORDS:
+        if re.search(rf'\b{re.escape(w)}\b', low):
+            issues.append(f'Contains banned AI buzzword: "{w}"')
+    word_count = len(t.split())
+    if word_count < 16 or word_count > 95:
+        issues.append(f'Word count {word_count} outside crisp 2-sentence range (16-95 words)')
+    if profile:
+        norm_t = re.sub(r'\s+', ' ', low).strip()
+        for sample in (profile.get('sampleQuotes') or []):
+            s_txt = sample.get('note') if isinstance(sample, dict) else str(sample)
+            if s_txt and re.sub(r'\s+', ' ', s_txt.lower()).strip() == norm_t:
+                issues.append('Verbatim copy of a sample quote — generate a fresh quote tailored specifically to this new page')
+                break
+    return issues
+
+
+def register_reviewer_note(
+    root: Path,
+    route: str,
+    note_text: str,
+    label: str | None = None,
+    reviewed_date: str | None = None,
+) -> dict:
+    """Lint and atomically register a freshly generated page-specific Reviewer Note into the site's
+    reviewer-notes store (`src/data/reviewer-notes.ts`, `src/utils/reviewerNotes.ts`, `lib/reviewer-notes.ts`,
+    or `src/reviewer_notes.py`)."""
+    root = root.resolve()
+    profile = load_reviewer_voice_profile(root)
+    lint_issues = lint_reviewer_note(note_text, profile=profile)
+    if lint_issues:
+        raise ValueError(f'Reviewer note failed Jonathan voice lint: {lint_issues}')
+
+    store_rel = (profile or {}).get('reviewerNotesStorePath') or ''
+    candidates = [store_rel] if store_rel else [
+        'src/data/reviewer-notes.ts',
+        'src/utils/reviewerNotes.ts',
+        'lib/reviewer-notes.ts',
+        'src/reviewer_notes.py',
+    ]
+    store_path = None
+    for rel in candidates:
+        if rel and (root / rel).is_file():
+            store_path = root / rel
+            break
+    if store_path is None:
+        raise FileNotFoundError(f'No reviewer-notes store file found in {root}')
+
+    eff_label = (label or (profile or {}).get('defaultLabel') or "Publisher's Take").strip()
+    eff_date = (reviewed_date or datetime.datetime.now(datetime.timezone.utc).strftime('%B %d, %Y').replace(' 0', ' ')).strip()
     clean_route = '/' + (route or '').strip().strip('/')
-    norm_slash = clean_route if clean_route.endswith('/') else f'{clean_route}/'
-    reviewer = str(bank.get('reviewer') or 'Jonathan Teplitsky').strip()
-    default_label = str(bank.get('defaultLabel') or "Publisher's Take").strip()
-    hay = ' '.join([clean_route, norm_slash, title or '', h1 or '', description or '']).lower()
-    insights = bank.get('insights') or []
-    # 1. Exact route match first
-    for item in insights:
-        if not isinstance(item, dict) or not str(item.get('note') or '').strip():
-            continue
-        exact_routes = [str(r).strip().lower() for r in (item.get('exactRoutes') or []) if str(r).strip()]
-        if clean_route.lower() in exact_routes or norm_slash.lower() in exact_routes:
-            return {
-                'id': str(item.get('id') or 'exact'),
-                'reviewer': str(item.get('reviewer') or reviewer),
-                'label': str(item.get('label') or default_label),
-                'reviewedDate': str(item.get('reviewedDate') or bank.get('reviewedDate') or ''),
-                'note': str(item['note']).strip(),
-                'matchType': 'exact-route',
-            }
-    # 2. Strict multi-token phrase group match on route + title + h1
-    for item in insights:
-        if not isinstance(item, dict) or not str(item.get('note') or '').strip():
-            continue
-        groups = item.get('matchGroups') or []
-        for group in groups:
-            toks = [str(t).strip().lower() for t in (group or []) if str(t).strip()]
-            if toks and all(t in hay for t in toks):
-                return {
-                    'id': str(item.get('id') or 'topic'),
-                    'reviewer': str(item.get('reviewer') or reviewer),
-                    'label': str(item.get('label') or default_label),
-                    'reviewedDate': str(item.get('reviewedDate') or bank.get('reviewedDate') or ''),
-                    'note': str(item['note']).strip(),
-                    'matchType': 'approved-topic-bank',
-                }
-    return None
+    if store_path.suffix == '.py' or store_path.name == 'reviewer-notes.ts':
+        # Match trailing-slash convention for Astro/Flask stores
+        if not clean_route.endswith('/') and (root / 'astro.config.mjs').is_file() or store_path.suffix == '.py':
+            clean_route = clean_route + '/'
+        elif not clean_route.endswith('/') and (root / 'astro.config.ts').is_file():
+            clean_route = clean_route + '/'
+
+    raw = store_path.read_text()
+    if store_path.suffix == '.py':
+        # Update or insert into REVIEWER_NOTES: dict[str, dict[str, str]] = { ... }
+        entry_py = (
+            f'    {json.dumps(clean_route)}: {{\n'
+            f'        "label": {json.dumps(eff_label, ensure_ascii=False)},\n'
+            f'        "reviewed_date": {json.dumps(eff_date, ensure_ascii=False)},\n'
+            f'        "note": {json.dumps(note_text.strip(), ensure_ascii=False)},\n'
+            f'    }},'
+        )
+        empty_py = re.compile(r'(REVIEWER_NOTES\s*(?::[^=]+)?=\s*)\{\s*\}')
+        em = empty_py.search(raw)
+        if em:
+            updated = raw[:em.start()] + em.group(1) + '{\n' + entry_py + '\n}' + raw[em.end():]
+        else:
+            block_re = re.compile(r'(REVIEWER_NOTES\s*(?::[^=]+)?=\s*\{)(.*?)(\n\})', re.S)
+            m = block_re.search(raw)
+            if not m:
+                raise ValueError(f'Could not locate REVIEWER_NOTES dict in {store_path}')
+            body = m.group(2)
+            key_pat = re.compile(rf'    {re.escape(json.dumps(clean_route))}\s*:\s*\{{.*?\}},?\n?', re.S)
+            if key_pat.search(body):
+                new_body = key_pat.sub(entry_py + '\n', body, count=1)
+            else:
+                new_body = body.rstrip() + '\n' + entry_py + '\n'
+            updated = raw[:m.start()] + m.group(1) + new_body + m.group(3) + raw[m.end():]
+        store_path.write_text(updated)
+    else:
+        # TypeScript REVIEWER_NOTES: Record<string, ReviewerNoteEntry> = { ... }
+        block_re = re.compile(r'(export const REVIEWER_NOTES\s*:\s*Record<[^>]+>\s*=\s*\{)(.*?)(\n\})', re.S)
+        m = block_re.search(raw)
+        if not m:
+            # Handle single-line empty `{}`
+            empty_re = re.compile(r'(export const REVIEWER_NOTES\s*:\s*Record<[^>]+>\s*=\s*)\{\s*\}')
+            em = empty_re.search(raw)
+            if not em:
+                raise ValueError(f'Could not locate REVIEWER_NOTES map in {store_path}')
+            entry_ts = (
+                f'  {json.dumps(clean_route)}: {{\n'
+                f'    label: {json.dumps(eff_label, ensure_ascii=False)},\n'
+                f'    reviewedDate: {json.dumps(eff_date, ensure_ascii=False)},\n'
+                f'    note: {json.dumps(note_text.strip(), ensure_ascii=False)},\n'
+                f'  }},'
+            )
+            updated = raw[:em.start()] + em.group(1) + '{\n' + entry_ts + '\n}' + raw[em.end():]
+            store_path.write_text(updated)
+        else:
+            entry_ts = (
+                f'  {json.dumps(clean_route)}: {{\n'
+                f'    label: {json.dumps(eff_label, ensure_ascii=False)},\n'
+                f'    reviewedDate: {json.dumps(eff_date, ensure_ascii=False)},\n'
+                f'    note: {json.dumps(note_text.strip(), ensure_ascii=False)},\n'
+                f'  }},'
+            )
+            body = m.group(2)
+            key_pat = re.compile(rf"  (?:{re.escape(json.dumps(clean_route))}|'{re.escape(clean_route)}')\s*:\s*\{{.*?\}},?\n?", re.S)
+            if key_pat.search(body):
+                new_body = key_pat.sub(entry_ts + '\n', body, count=1)
+            else:
+                new_body = body.rstrip() + '\n' + entry_ts + '\n'
+            updated = raw[:m.start()] + m.group(1) + new_body + m.group(3) + raw[m.end():]
+            store_path.write_text(updated)
+
+    return {
+        'status': 'REGISTERED',
+        'route': clean_route,
+        'store': str(store_path.relative_to(root)),
+        'label': eff_label,
+        'reviewedDate': eff_date,
+        'note': note_text.strip(),
+    }
 
 
 def resolve_page_type_and_evidence_pool(
@@ -439,9 +546,7 @@ def resolve_page_type_and_evidence_pool(
         })
 
     legitimate_zero_data_domain = page_category in ('regulated-medical-or-psychedelic', 'regulated-legal-or-financial')
-    approved_insight = match_approved_reviewer_insight(
-        root, clean_route, title=title, h1=h1, description=description,
-    )
+    voice_profile = load_reviewer_voice_profile(root)
     return {
         'route': clean_route,
         'pageCategory': page_category,
@@ -452,7 +557,7 @@ def resolve_page_type_and_evidence_pool(
         'poolCount': len(pool),
         'pool': pool,
         'excludedPoolOptions': excluded_from_pool,
-        'approvedReviewerInsight': approved_insight,
+        'reviewerVoiceProfile': voice_profile,
     }
 
 
@@ -913,7 +1018,8 @@ def compile_track_system(
         f'# Writer System Contract — Mindmap Track `{track}` (Cache-Aligned v2)\n'
         'Write publication-ready, primary-source-grounded content strictly honoring the active format track, '
         'approved brief, `evidence.json` packet, visible attribution rules, and anti-AI writing rules below. '
-        'Never invent benchmarks, prices, dates, citations, unexecuted product tests, or personal quotes attributed to Jonathan Teplitsky or any named reviewer (only verbatim pre-approved insights from `.claude/approved-insights.json` render in Reviewer Note boxes). '
+        'Never invent benchmarks, prices, dates, citations, or unexecuted product tests. '
+        'When the per-page prompt includes a `Reviewer Voice & Career Profile` for Jonathan Teplitsky, generate a fresh, unique, page-specific 2-sentence `reviewerNote` (`{"label", "reviewedDate", "note"}`) grounded strictly in Jonathan\'s verified career dossier and THIS page\'s verified `SOURCE` facts (zero em-dashes, zero AI buzzwords, never copying a sample quote verbatim), and register it via `mindmap-tracks.py register-reviewer-note` on publish. '
         'CLOSED-SOURCE FACT DISCIPLINE (CRITICAL FOR ZERO REWORK): Every concrete product claim, feature, '
         'integration name, channel capability, billing option, cap, and arithmetic figure you state MUST appear '
         'explicitly in the per-page prompt / `SOURCE` facts (`<slug>.prompt.md`). Do NOT add unstated training-memory '
@@ -1817,6 +1923,12 @@ def main() -> int:
     p_sp.add_argument('--official-host', action='append', default=[])
     p_sp.add_argument('--dry-run', action='store_true')
 
+    p_rn = sub.add_parser('register-reviewer-note', help='Lint and register a fresh page-specific Reviewer Note into the site store')
+    p_rn.add_argument('--route', required=True)
+    p_rn.add_argument('--note', required=True)
+    p_rn.add_argument('--label')
+    p_rn.add_argument('--reviewed-date')
+
     sub.add_parser('benchmark', help='Compare monolithic vs track-sliced prompt and phase sizes')
 
     args = parser.parse_args()
@@ -1875,6 +1987,17 @@ def main() -> int:
             official_url=args.official_url,
             official_hosts=args.official_host,
             dry_run=args.dry_run,
+        )
+        print(json.dumps(res, indent=2))
+        return 0
+
+    if args.cmd == 'register-reviewer-note':
+        res = register_reviewer_note(
+            root,
+            route=args.route,
+            note_text=args.note,
+            label=args.label,
+            reviewed_date=args.reviewed_date,
         )
         print(json.dumps(res, indent=2))
         return 0
