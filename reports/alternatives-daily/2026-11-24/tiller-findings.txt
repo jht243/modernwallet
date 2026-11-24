@@ -1,0 +1,29 @@
+F1: quote: Copilot Money charges $109 billed yearly under a limited-time offer, or $9 per month, which totals $108 across 12 payments of $9.
+problem: copilot.money/pricing shows one figure, '$9 per month' with '$109 billed yearly, instead of $119' (the yearly view of a Yearly/Monthly toggle). It publishes no separate monthly-billed plan, so '$9 per month billing' and the $108 12-payment total are not vendor facts. Also in the Copilot table row ('$9 per month, or $109 billed yearly').
+fix: State only '$9 per month equivalent, $109 billed yearly (limited-time, instead of $119); no monthly-billing price published'. Remove the $108 calculation.
+
+F2: quote: Who This Is Not For: This comparison focuses on consumer personal budgeting and money management software.
+problem: Required 'Who This Is Not For' element is a one-sentence stub that names no reader group (_content-standard AUDITOR required elements).
+fix: Write 3-4 factual bullets (e.g. readers needing business bookkeeping, readers who want no subscription and no manual entry) without 'you should' advice.
+
+F3: quote: Tiller is built strictly for Google Sheets and Microsoft Excel ... Versus Tiller, Simplifi does not support Microsoft Excel or Google Sheets automation
+problem: tiller.com/pricing says only 'Sign up with your Microsoft or Google account'; it does not name Sheets/Excel. 'Strictly' and the negative claims about Simplifi/Copilot ('does not provide spreadsheet data feeds') are not in any vendor source.
+fix: Drop 'strictly' and the unsourced negative claims, or add a sourced Tiller features page to sources.json and restate as 'Simplifi lists no spreadsheet sync on its homepage'.
+
+F4: quote: Monarch, YNAB, Simplifi, Copilot Money and EveryDollar are the five budgeting apps covered for managing personal finances.
+problem: First paragraph never contains the primary keyword 'Tiller alternatives' or the word Tiller; first sentence does not answer 'what should I use instead of Tiller?'.
+fix: Open with 'Tiller alternatives with published prices include Monarch, YNAB, ...'.
+
+F5: quote: Tiller syncs accounts into private spreadsheets you own in Google Sheets or Microsoft Excel. Monarch also provides a 7-day free trial
+problem: Stray detached lines at the start of each alternative's second paragraph (leading space, non sequitur such as 'Monarch also provides a 7-day free trial'); reads as unfinished and Simplifi/Copilot/EveryDollar 'Versus Tiller' lines are single-clause.
+fix: Rewrite as complete 'Versus Tiller' sentences; remove leading spaces.
+
+F6: quote: Simplifi displays $3.99 per month and $6.99 labeled billed annually
+problem: Homepage shows $3.99/month promo with $6.99/month 'Billed annually' as the list price; the page says only 'labeled billed annually' and the Simplifi cost example gives no figure. Acceptable but unclear.
+fix: Say '$3.99 per month first-year offer (orders by Dec 8, 2026) against $6.99 per month billed annually; renews at then-current rates'.
+
+F7: quote: Copilot Money and Simplifi list no specific trial length on their pricing pages.
+problem: Verified true for Copilot (WebFetch); Simplifi homepage not checked for trial. Minor.
+fix: Keep only the Copilot half or confirm Simplifi.
+
+Also: replace 'Who This Is Not For' with a headed alternatives[] entry of 3-4 neutral factual sentences. Delete every Copilot $108 / 12 x $9 calculation; Copilot is $109 billed yearly shown as $9 per month equivalent, no monthly-billing price. Open the intro with 'Tiller alternatives with published prices include ...'.

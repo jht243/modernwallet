@@ -1,0 +1,442 @@
+{
+ "slug": "tiller",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2679,
+ "floor": 1500,
+ "input_tokens": 172329,
+ "output_tokens": 5298,
+ "thinking_tokens": 1263,
+ "cached_tokens": 170267,
+ "est_cost_usd": 0.0389,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: '$9 per month equivalent, $109 billed yearly (limited-time, instead of $119); no '; 'Copilot Money charges $109 billed yearly under a limited-time offer (shown as a '; 'Copilot Money displays $9 per month as the equivalent rate for its $109 annual b'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 2675,
+  "numbers_not_in_facts": [
+   "100.99",
+   "116.88",
+   "80.88"
+  ],
+  "fact_budget": {
+   "fact_words": 459,
+   "floor": 1500,
+   "ratio": 0.31,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    23,
+    10,
+    3
+   ],
+   "applied": [
+    {
+     "id": "rows[2].bestFit",
+     "quote": "Fits budgeters who want to assign every dollar a job and share an account with up to six people",
+     "replacement": "Fits budgeters who want to ask what each dollar is for and share an account with up to six people",
+     "type": "unsupported",
+     "why": "SOURCE states the YNAB Method asks what each dollar is for."
+    },
+    {
+     "id": "rows[4].pricing",
+     "quote": "$9 per month, or $109 billed yearly (labeled as a limited-time offer instead of $119). One plan with no tiers, no add-ons, and no artificial intelligence (AI) credits. Monthly billing price not displayed on the pricing page.",
+     "replacement": "$9 per month, or $109 billed yearly (labeled as a limited-time offer instead of $119). One plan with no tiers, no add-ons, and no artificial intelligence (AI) credits.",
+     "type": "contradicted",
+     "why": "SOURCE lists monthly billing at $9 per month on the pricing page."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Monarch includes partner sharing and lists a Plus plan for multi-source income.",
+     "replacement": "Monarch lists a Plus plan for multi-source income.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Monarch includes partner sharing."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Tiller relies on sharing permissions configured directly inside your Google Drive or Microsoft account.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Tiller sharing rules or Google Drive."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Versus Tiller, Monarch falls short for users who demand direct formula access and custom spreadsheet modeling.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Monarch falls short or mention formulas."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Monarch stores financial records inside its proprietary cloud database.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Monarch stores data in a proprietary cloud database."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "YNAB, short for You Need A Budget, organizes household spending around a structured budgeting method where users assign every dollar a job.",
+     "replacement": "YNAB, short for You Need A Budget, organizes household spending around a method that asks what each dollar is for.",
+     "type": "unsupported",
+     "why": "SOURCE states the YNAB Method asks what each dollar is for."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "YNAB fits budgeters who want a proactive envelope-style allocation system and who want to share a subscription across up to six family members or partners.",
+     "replacement": "YNAB fits budgeters who want to ask what each dollar is for and share a subscription across up to six people.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention envelope-style allocation systems."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Versus Tiller, YNAB enforces a rigid envelope workflow and lacks spreadsheet extensibility.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state YNAB enforces a rigid envelope workflow."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Tiller leaves the budgeting philosophy entirely to the user, providing raw transaction feeds that can power automated charts, custom pivot tables, or multi-year financial ledgers.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention pivot tables, charts, or ledgers for Tiller."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Tiller allows you to share spreadsheets with anyone through standard Google Drive or Microsoft OneDrive permissions.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Google Drive or Microsoft OneDrive sharing."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Versus Tiller, Copilot Money does not provide spreadsheet data feeds, supports no Windows or Android desktop clients, and has not yet launched its shared household access.",
+     "replacement": "Versus Tiller, Copilot Money does not provide spreadsheet data feeds and has not yet launched its shared household access.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Copilot lacks Windows or Android clients."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Tiller functions inside any desktop browser that runs Google Sheets or Microsoft Excel, making it accessible across Windows, Mac, and Linux computers.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention desktop browsers or Windows, Mac, and Linux support."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "It does not suit several categories of users:\n\n- Business operators who require double-entry bookkeeping, payroll processing, accounts receivable aging, and sales tax filing.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention double-entry bookkeeping, payroll, or accounts receivable."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Tiller and the consumer apps listed here do not provide formal commercial accounting systems.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state apps lack commercial accounting systems."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "- Individuals who refuse to link banking credentials to third-party aggregation systems and prefer pen-and-paper cash envelopes.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention third-party aggregation or cash envelopes."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "- People who want a registered financial professional to manage their investment portfolio directly.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention financial professionals or managing portfolios."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "None of these applications provide discretionary wealth management or automated trade execution.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention wealth management or trade execution."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Unlike closed applications that store transactions inside proprietary databases, Tiller automatically delivers daily bank transactions and balances into spreadsheets you control.",
+     "replacement": "Tiller automatically delivers account balances and transactions into private spreadsheets you own.",
+     "type": "unsupported",
+     "why": "SOURCE does not state daily delivery or proprietary databases."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "This allows you to build custom pivot tables, create multi-year net worth models, and calculate specialized formulas without software constraints.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention pivot tables, net worth models, or formulas."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Tiller also avoids recurring month-to-month subscription traps by offering a clear, predictable fee of $99 per year, equivalent to $8.25 per month.",
+     "replacement": "Tiller offers an annual subscription of $99 per year, equivalent to $8.25 per month.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe monthly subscriptions as traps."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Monarch, YNAB, Simplifi, Copilot Money and EveryDollar are five leading alternatives.",
+     "replacement": "Monarch, YNAB, Simplifi, Copilot Money and EveryDollar are the five budgeting alternatives covered.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe the alternatives as leading."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "Simplifi allows sharing with one other person, while Monarch includes partner collaboration and lists a Plus plan for multi-source income.",
+     "replacement": "Simplifi allows sharing with one other person, while Monarch lists a Plus plan for multi-source income.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Monarch includes partner collaboration."
+    },
+    {
+     "id": "intro",
+     "quote": "Monarch, YNAB, Simplifi, Copilot Money and EveryDollar are the five main Tiller alternatives for managing personal finances.",
+     "replacement": "Monarch, YNAB, Simplifi, Copilot Money and EveryDollar are the five budgeting apps covered for managing personal finances.",
+     "type": "unsupported",
+     "why": "SOURCE states these are the five budgeting apps covered, not five main alternatives."
+    },
+    {
+     "id": "rows[3].bestFit",
+     "quote": "Fits planners seeking rolling spending plans, 12-month forward cash flow projections, and setup help from specialists",
+     "replacement": "Fits planners seeking rolling spending plans, 12-month forward cash flow projections, and free one-on-one setup help",
+     "type": "unsupported",
+     "why": "SOURCE states free one-on-one setup help, not setup help from specialists."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "College students can obtain a free 365-day trial with verification.",
+     "replacement": "College students can obtain a free 365-day trial.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that verification is required for college students."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Simplifi fits individuals and couples who want rolling cash flow forecasts up to 12 months in advance, setup assistance from live specialists, and automated spending categories on mobile and web.",
+     "replacement": "Simplifi fits individuals and couples who want rolling cash flow forecasts up to 12 months in advance, free one-on-one setup help, and a spending plan on mobile and web.",
+     "type": "unsupported",
+     "why": "SOURCE specifies free one-on-one setup help and Spending Plan, not specialists or automated categories."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Copilot Money fits Apple ecosystem and web users who want automated transaction categorization, machine intelligence support, and a single plan with all features included.",
+     "replacement": "Copilot Money fits Apple ecosystem and web users who want a money assistant, human support, and a single plan with all features included.",
+     "type": "unsupported",
+     "why": "SOURCE specifies a money assistant and human support, not machine intelligence or categorization."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Versus Tiller, EveryDollar Free requires you to log every transaction by hand, whereas Tiller automatically downloads cleared transactions directly into your spreadsheet.",
+     "replacement": "Versus Tiller, EveryDollar Free requires manual transaction entry, whereas Tiller automatically syncs accounts into your spreadsheets.",
+     "type": "unsupported",
+     "why": "SOURCE states Tiller syncs accounts into spreadsheets, not cleared transactions specifically."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "EveryDollar Premium introduces automated bank feeds, but restricts customization to pre-set budgeting views rather than freeform spreadsheet tabs and mathematical formulas.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention pre-set views, freeform tabs, or mathematical formulas."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "EveryDollar Free supports manual entry, but the remaining paid tools rely on automated bank connections.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Monarch or YNAB rely on automated bank connections."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "You sign up simply with an existing Google or Microsoft account, keeping authentication straightforward.",
+     "replacement": "You sign up with a Google or Microsoft account.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that authentication is straightforward."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "No. YNAB offers a 34-day free trial that requires no credit card when signing up directly on its website, ensuring you are not billed unless you choose to subscribe.",
+     "replacement": "No. YNAB offers a 34-day free trial that requires no credit card when signing up directly on its website.",
+     "type": "inference",
+     "why": "SOURCE does not state the consequence that users are not billed unless subscribing."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Tiller stores your transactions inside Google Sheets or Microsoft Excel workbooks that you control completely.",
+     "replacement": "Tiller syncs accounts into private spreadsheets you own in Google Sheets or Microsoft Excel.",
+     "type": "unsupported",
+     "why": "SOURCE does not state users control workbooks completely."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Simplifi also restricts geographical use to the United States and Canada, and limits account sharing to one partner.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE states not designed to function outside US and Canada, share with one other person."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Tiller remains the closer match for users who want complete ownership over their financial data inside Google Sheets or Microsoft Excel.",
+     "replacement": "Tiller remains the closer match for users who want private spreadsheets they own in Google Sheets or Microsoft Excel.",
+     "type": "unsupported",
+     "why": "SOURCE states private spreadsheets you own, not complete ownership over financial data."
+    }
+   ],
+   "deleted_final": 3,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 3016
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 3390
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-24T16:54:34+0000",
+    "findings_file": "reports/alternatives-daily/2026-11-24/tiller-findings.txt",
+    "applied": [
+     {
+      "id": "intro",
+      "quote": "Monarch, YNAB, Simplifi, Copilot Money and EveryDollar are the five budgeting apps covered for managing personal finances.",
+      "replacement": "Tiller alternatives with published prices include Monarch, YNAB, Simplifi, Copilot Money and EveryDollar as budgeting apps for managing personal finances.",
+      "type": "F4: Intro missing primary keyword and direct answer",
+      "why": "Answers what to use instead of Tiller using primary keyword in the opening sentence."
+     },
+     {
+      "id": "rows[4].pricing",
+      "quote": "$9 per month, or $109 billed yearly (labeled as a limited-time offer instead of $119).",
+      "replacement": "$9 per month equivalent, $109 billed yearly (limited-time, instead of $119); no monthly-billing price published.",
+      "type": "F1: Copilot monthly billing and calculation not vendor facts",
+      "why": "Vendor shows $109 billed yearly with $9 per month equivalent; no separate monthly billing is published."
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Tiller is built strictly for Google Sheets and Microsoft Excel",
+      "replacement": "Tiller syncs accounts into Google Sheets and Microsoft Excel",
+      "type": "F3: 'Strictly' is unsourced",
+      "why": "Source does not state 'strictly'; rephrase neutrally to match source."
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Copilot Money charges $109 billed yearly under a limited-time offer, or $9 per month, which totals $108 across 12 payments of $9.",
+      "replacement": "Copilot Money charges $109 billed yearly under a limited-time offer (shown as a $9 per month equivalent, instead of $119), with no separate monthly-billing price published.",
+      "type": "F1: Copilot $108 calculation and monthly billing unsupported",
+      "why": "Vendor publishes no standalone monthly billing plan; delete the $108 calculation."
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Simplifi displays $3.99 per month and $6.99 labeled billed annually",
+      "replacement": "Simplifi displays a $3.99 per month first-year offer (orders by Dec 8, 2026) against $6.99 per month billed annually",
+      "type": "F6: Unclear pricing display for Simplifi",
+      "why": "Clarifies promotional first-year offer against the list annual rate per vendor page."
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Copilot Money and Simplifi list no specific trial length on their pricing pages.",
+      "replacement": "Copilot Money lists no specific trial length on its pricing page.",
+      "type": "F7: Simplifi trial claim unverified",
+      "why": "Removes Simplifi from unverified trial length claim, keeping verified Copilot statement."
+     },
+     {
+      "id": "alternatives[0].body",
+      "quote": "Tiller syncs accounts into private spreadsheets you own in Google Sheets or Microsoft Excel. Monarch also provides a 7-day free trial, which is shorter than Tiller's 30-day trial and 30-day refund window.",
+      "replacement": "Versus Tiller's spreadsheet environment, Monarch operates as a standalone app, and its 7-day free trial is shorter than Tiller's 30-day trial and 30-day refund window.",
+      "type": "F5: Stray detached lines and non sequitur",
+      "why": "Rewrites into a clean, complete comparative sentence."
+     },
+     {
+      "id": "alternatives[2].body",
+      "quote": "Versus Tiller, Simplifi does not support Microsoft Excel or Google Sheets automation, confining your financial data to its proprietary application.",
+      "replacement": "Versus Tiller, Simplifi lists no spreadsheet sync on its homepage, operating instead as a cloud app for web and mobile.",
+      "type": "F3: Unsourced negative claims about Simplifi",
+      "why": "Replaces unsourced negative claim with factual homepage observation supported by source."
+     },
+     {
+      "id": "alternatives[3].body",
+      "quote": "Versus Tiller, Copilot Money does not provide spreadsheet data feeds and has not yet launched its shared household access.",
+      "replacement": "Versus Tiller, Copilot Money operates as an Apple and web application rather than a spreadsheet, while its shared Households feature remains marked as coming soon.",
+      "type": "F3: Unsourced negative claim about spreadsheet data feeds",
+      "why": "Replaces negative claim with factual description of supported platforms from source."
+     },
+     {
+      "id": "alternatives[3].body",
+      "quote": "On monthly billing at $9 per month, 12 payments of Copilot Money total $108, which is $1 less than its $109 promotional annual price and $9 more than Tiller.",
+      "replacement": "Copilot Money displays $9 per month as the equivalent rate for its $109 annual billing, with no separate monthly-billing price published.",
+      "type": "F1: Copilot $108 calculation unsupported",
+      "why": "Deletes calculation based on non-existent standalone monthly billing plan."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "alternatives[5].body",
+      "quote": "This comparison focuses on consumer personal budgeting and money management software.",
+      "finding": "F2: One-sentence stub names no reader group",
+      "why": "Expands with factual reader groups derived strictly from sourced facts without advice.",
+      "replacement": "This comparison does not fit readers seeking dedicated business accounting tools, as Monarch Plus is the only covered plan mentioning small business income tracking. It does not fit individuals who want automated bank feeds at zero cost, since EveryDollar Free requires manual transaction entry while all automated options require paid subscriptions. It also does not fit users outside the United States and Canada looking at Simplifi, which is not designed to function outside those regions. Finally, it does not fit users who decline to use a Google or Microsoft account, which Tiller requires for signup.",
+      "reason": "replacement adds ['United', 'States'] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      3
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "rows[4].pricing",
+       "quote": "$9 per month equivalent, $109 billed yearly (limited-time, instead of $119); no monthly-billing price published.",
+       "type": "contradicted",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "chooseSection.body",
+       "quote": "Copilot Money charges $109 billed yearly under a limited-time offer (shown as a $9 per month equivalent, instead of $119), with no separate monthly-billing price published.",
+       "type": "contradicted",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "alternatives[3].body",
+       "quote": "Copilot Money displays $9 per month as the equivalent rate for its $109 annual billing, with no separate monthly-billing price published.",
+       "type": "contradicted",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2679,
+    "flags": [
+     "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: '$9 per month equivalent, $109 billed yearly (limited-time, instead of $119); no '; 'Copilot Money charges $109 billed yearly under a limited-time offer (shown as a '; 'Copilot Money displays $9 per month as the equivalent rate for its $109 annual b'"
+    ]
+   }
+  ]
+ },
+ "seconds": 290.6,
+ "response_id": "0b4Fa_H5JYqj5NoP3ZfvsAY",
+ "generated_at": "2026-11-24T16:48:49+0000"
+}

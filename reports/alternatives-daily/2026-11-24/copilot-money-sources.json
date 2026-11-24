@@ -1,0 +1,36 @@
+{
+ "slug": "copilot-money",
+ "checked": "2026-11-24",
+ "sources": [
+  {
+   "vendor": "Copilot Money (subject)",
+   "url": "https://copilot.money/pricing",
+   "facts": "- One plan, no tiers, no add-ons, no AI credits: $9 per month, or $109 billed yearly \"instead of $119\" (marked limited time offer). 16,000+ banks, money assistant, support from real humans included. Platforms: iPhone, iPad, Mac and Web. Households (sharing with a partner or family) is marked \"Coming soon\". Says it never sells financial data. "
+  },
+  {
+   "vendor": "Monarch",
+   "url": "https://monarch.com/pricing",
+   "facts": "- Two plans: Core at $99.99 per year or $14.99 per month; Plus at $199.99 per year. Plus adds forecasting tools, tracking for multiple income sources like a small business, and deeper investment features. First week free. Banner: 30% off Core for one year with code WELCOME (terms apply; may expire). Cancel anytime, money-back guarantee. Web signup recommended over app stores. No ads; says it never sells financial data. "
+  },
+  {
+   "vendor": "YNAB (You Need A Budget)",
+   "url": "https://ynab.com/pricing",
+   "facts": "- Annual plan $109 paid annually ($9.08 per month, \"$70 Savings\"). Monthly plan $14.99 per month. Prices in US dollars plus tax where applicable. 34-day free trial, no credit card needed when signing up directly (app stores may require one). College students get a free 365-day trial. A subscription can be shared with a group of up to six. Debt tools with an integrated loan calculator. The YNAB Method asks what each dollar is for. "
+  },
+  {
+   "vendor": "Simplifi (Quicken)",
+   "url": "https://simplifimoney.com",
+   "facts": "- Cloud app for web and mobile, made by Quicken. Page shows \"$3.99/month\" and \"$6.99\" labeled \"Billed annually\"; footnote: discounts are calculated on the annual price, the final price may differ from the monthly discounted price multiplied by 12, offers are first-year only for new memberships ordered directly by December 8, 2026, renews automatically at then-current rates. Spending Plan (bills and savings first, remainder to spend), Projected Cash Flow up to 12 months ahead, net worth tracking, Watchlist, Savings Goals, Retirement Planner, Quicken AI, over 14,000 financial institutions, share with one other person, free one-on-one setup help. Not designed to function outside the U.S. and Ca"
+  },
+  {
+   "vendor": "Tiller",
+   "url": "https://tiller.com/pricing",
+   "facts": "- Syncs accounts into private spreadsheets you own (Google Sheets / Microsoft). 30-day free trial, then $99 per year (\"never any ads or hidden fees\"); card not charged until the end of the trial; then another 30 days with a full refund (up to 60 days risk-free). Sign up with a Microsoft or Google account. Sales tax added where required. "
+  },
+  {
+   "vendor": "EveryDollar (Ramsey Solutions)",
+   "url": "https://ramseysolutions.com/ramseyplus/everydollar",
+   "facts": "- Free version: monthly budget, unlimited categories, manual transaction entry, sinking funds, split transactions, bill due dates. Premium after a 14-day free trial: $6.67 per month billed annually at $79.99, or $17.99 per month billed monthly; adds automatic bank connection, custom reports, CSV export, coach Q&A, net worth projection. Method: giving every dollar a job. "
+  }
+ ]
+}

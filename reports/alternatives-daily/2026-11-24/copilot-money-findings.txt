@@ -1,0 +1,29 @@
+F1: quote: Copilot Money charges $9 per month, or $109 billed yearly as a limited-time offer down from $119.
+problem: copilot.money/pricing publishes '$9 per month' with '$109 billed yearly, instead of $119' on one yearly view and no separate monthly-billed price (WebFetch confirmed). The page presents $9 as a monthly-billing plan and builds comparisons on it: 'twelve monthly payments of $9 ($108 total)', 'Copilot Money charges a lower monthly fee ($9 versus $14.99)', EveryDollar '$107.88 more than 12 months of Copilot Money at $9', YNAB '$70.88' monthly difference, FAQ 'costs $9 per month'. Also the $119 is 'instead of' wording, not a labelled regular price ('regular $119 price', '$119 versus $109' scenarios).
+fix: Restate as '$109 billed yearly (limited-time, listed instead of $119); the page shows $9 per month as the yearly-billing equivalent and publishes no monthly-billing price'. Delete every $108/12x$9/'lower monthly fee' calculation in the table, chooseSection, Monarch, YNAB, EveryDollar sections, verdict, FAQs and 'Would Change Our Answer'.
+
+F2: quote: Who This Is Not For: This comparison focuses on consumer personal budgeting and spending applications.
+problem: Section opens with a stub sentence plus blank paragraphs; the only substantive sentence also claims Copilot, Monarch, YNAB and Tiller 'all require paid subscriptions to maintain automatic bank connections', which is unsourced (trial and refund terms differ; no source states bank-sync gating).
+fix: Replace with sourced bullets; remove blank paragraphs and unsourced absolute claim.
+
+F3: quote: Where Tiller falls short: Tiller does not include a money assistant
+problem: Negative feature claims not in any vendor source (also 'EveryDollar ... which Copilot Money does not offer', Simplifi/Monarch 'without requiring an upgraded tier').
+fix: Limit to what the vendor's page lists ('Tiller's pricing page lists no money assistant') or remove.
+
+F4: quote: or changes its standard $6.99 renewal rate
+problem: Simplifi homepage shows $6.99/month Billed annually (struck-through list price); it says renewal is at 'then-current rates', not that $6.99 is the renewal rate.
+fix: Say 'renews at then-current rates'.
+
+F5: quote: Copilot Money does not list a standard free trial duration on its main pricing table.
+problem: Verified accurate. Stray single-space paragraphs and empty ' \n\n ' blocks in chooseSection, alternatives and Who This Is Not For.
+fix: Remove empty paragraphs.
+
+F6: quote: Tiller syncs accounts into private spreadsheets you own (Google Sheets / Microsoft).
+problem: tiller.com/pricing does not state Sheets/Excel; only Microsoft or Google account sign-in.
+fix: Source it or soften.
+
+F7: quote: Offers fits solo users on Apple devices... If you do not need immediate multi-user sharing
+problem: 'Invite your partner: coming this fall' on the vendor page; page says only 'coming soon' for Households (accurate enough).
+fix: Optional: 'coming this fall'.
+
+Also: the FAQs must number 3-5 (merge or drop one). Replace 'Who This Is Not For' with a headed alternatives[] entry of 3-4 neutral factual sentences (no 'should', no unsourced absolutes). Delete every $108 / 12 x $9 / 'lower monthly fee' / $107.88 / $71.88-vs-monthly-Copilot comparison; use only $109 billed yearly (listed instead of $119, limited-time).

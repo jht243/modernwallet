@@ -230,6 +230,30 @@
         "www.m1.com",
         "m1.com"
       ]
+    },
+    {
+      "route": "/alternatives/tiller/",
+      "vendorHost": "tiller.com",
+      "officialHosts": [
+        "www.tiller.com",
+        "tiller.com"
+      ]
+    },
+    {
+      "route": "/alternatives/copilot-money/",
+      "vendorHost": "copilot.money",
+      "officialHosts": [
+        "www.copilot.money",
+        "copilot.money"
+      ]
+    },
+    {
+      "route": "/alternatives/xero/",
+      "vendorHost": "xero.com",
+      "officialHosts": [
+        "www.xero.com",
+        "xero.com"
+      ]
     }
   ]
 }

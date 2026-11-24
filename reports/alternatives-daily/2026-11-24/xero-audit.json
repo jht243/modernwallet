@@ -1,0 +1,41 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "Those businesses should consider Wave Starter for $0 or Zoho Books Standard.",
+   "problem": "Site adapter forbids recommending or advising ('fits people who...', never 'you should'). 'Should consider' is a direct recommendation inside Who This Is Not For. Also 'Companies that need up to 25 user seats' section is directive.",
+   "fix": "Reword neutrally: 'Wave Starter ($0) and Zoho Books Standard publish higher or no invoice caps.'",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "Who This Is Not For: ... What Would Change Our Answer: ...",
+   "problem": "Both required sections are embedded as plain-text labels at the end of the stillBetterFit body instead of headed sections, so they are not H2/H3 headings (heading rule; ToC, schema and heading-keyword checks cannot see them).",
+   "fix": "Move them into alternatives[] entries with Title Case headings, as the other two pages do.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F3",
+   "quote": "Zoho Books Standard on annual billing saves $144 a year while providing 3 user seats instead of Xero Early's single-tier limits.",
+   "problem": "Vague/unsupported: Xero publishes no user cap and 'no per-user license fees'; Zoho Standard 3-user cap and Xero Early limits are not comparable as written.",
+   "fix": "Say 'Zoho Standard includes 3 users; Xero lists no per-user fees'.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F4",
+   "quote": "Xero includes bank reconciliation on all plans.",
+   "problem": "Supported (Reconcile bank transactions appears on all three). Verified: prices, 90% promo (ends Nov 30, code), $5 auto-reconcile, 5.1M customers, 'change to less expensive plan 1 month after upgrading'. QuickBooks (WebFetch, fetch_page 502), FreshBooks, Zoho, Wave and FreeAgent figures and all cost arithmetic replay correctly.",
+   "fix": "None.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F5",
+   "quote": "Wave offers ... Wave Pro saves $134 a year compared to Xero Early",
+   "problem": "Compares a $0-card-fee product subscription to Xero without noting Wave's card fees or Xero's 20-invoice cap; fine as arithmetic but one-sided.",
+   "fix": "Add 'before card-processing fees'.",
+   "hard_blocker": false
+  }
+ ]
+}

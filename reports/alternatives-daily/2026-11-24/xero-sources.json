@@ -1,0 +1,36 @@
+{
+ "slug": "xero",
+ "checked": "2026-11-24",
+ "sources": [
+  {
+   "vendor": "Xero (subject)",
+   "url": "https://xero.com/us/pricing-plans",
+   "facts": "- Three plans, USD per month: Early $27 (send quotes and 20 invoices, 5 bills, bank reconciliation); Growing $59 (unlimited invoices and quotes, bill entry); Established $97 (multiple currencies, project time and cost tracking, expense claims). Promo: 90% off the first 6 months with code, offer ends November 30 (Early $2.70, Growing $5.90, Established $9.70 for the first 6 months, then regular price auto-renews monthly). Optional add-ons: auto-reconcile $5.00 per month; Xero Payroll powered by Gusto $36 a month plus $6 per employee/contractor. Prices exclude taxes. Xero says it serves 5.1 million customers, offers free expert setup help and no per-user license fees. Changing to a cheaper pla"
+  },
+  {
+   "vendor": "QuickBooks Online",
+   "url": "https://quickbooks.intuit.com/pricing",
+   "facts": "- List prices per month: Free $0 (1 user); Simple Start $38 (1 user); Essentials $85 (3 users); Plus $140 (5 users); Advanced $340 (25 users). Promo: 70% off for 3 months (Simple Start $11.40, Essentials $25.50, Plus $42, Advanced $102), promotion stated to end 11/29. "
+  },
+  {
+   "vendor": "FreshBooks",
+   "url": "https://freshbooks.com/pricing",
+   "facts": "- Lite $23/month (5 clients), Plus $43/month (50 clients), Premium $70/month (unlimited clients), Select custom (\"Let's Talk\"). Promo: 90% off for 4 months (Lite $2.30, Plus $4.30, Premium $7.00 per month). Additional team members $11/month per user; payroll add-on $40/month plus $6/month per employee/contractor shown. Invoicing and expense tracking focus. "
+  },
+  {
+   "vendor": "Zoho Books",
+   "url": "https://zoho.com/us/books/pricing",
+   "facts": "- Priced per organization per month: Free $0 (1 user plus 1 accountant, up to 1,000 invoices a year; free plan available while revenue stays under $50K); Standard $20 monthly or $15 billed annually; Professional $50 or $40; Premium $70 or $60; Elite $150 or $120; Ultimate $275 or $240. Users included: Standard 3, Professional 5, Premium 10, Elite 10, Ultimate 15. Annual invoice caps: Standard 5,000, Professional 10,000, Premium 25,000, Elite and Ultimate 100,000. 14-day free trial. "
+  },
+  {
+   "vendor": "Wave",
+   "url": "https://waveapps.com/pricing",
+   "facts": "- Starter $0 (unlimited estimates, invoices, bills and bookkeeping records; online card payments 2.9% + $0.60, Amex 3.4% + $0.60 per transaction). Pro $19 per month billed monthly or $190 per year billed annually (about $15.83 per month); Pro is priced per business; Pro card payments 2.9% + $0 for the first 10 transactions a month then 2.9% + $0.60. Starter receipts add-on $11/month or $96/year; Pro includes unlimited receipts. Payroll is an add-on priced from $25/month to from $40/month (the page does not say which applies to which plan). "
+  },
+  {
+   "vendor": "FreeAgent",
+   "url": "https://freeagent.com/us/pricing",
+   "facts": "- US sole proprietor offer: $27 per month regular, or $270 per year; promo 50% off for the first six months on monthly billing ($13.50 per month) or 50% off the first year on annual billing ($135, $11.25 per month). Smart Capture Unlimited add-on $6/month. Sales tax reporting and multi-currency invoicing included. 30-day free trial. The page does not list user, invoice or transaction limits. "
+  }
+ ]
+}

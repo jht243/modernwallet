@@ -3998,10 +3998,89 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-24T16:50:12+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": [
+            "officialUrl",
+            "product",
+            "vendor"
+          ]
+        },
+        {
+          "at": "2026-11-24T16:50:12+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-24"
+        },
+        {
+          "at": "2026-11-24T16:53:09+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-24T16:50:12+00:00",
+      "claimedOn": "2026-11-24",
+      "attempts": 1,
+      "lastNextAt": "2026-11-24T16:50:12+00:00",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Copilot Money charges $9 per month, or $109 billed yearly as a limited-time offer down from $119.",
+            "problem": "copilot.money/pricing publishes '$9 per month' with '$109 billed yearly, instead of $119' on one yearly view and no separate monthly-billed price (WebFetch confirmed). The page presents $9 as a monthly-billing plan and builds comparisons on it: 'twelve monthly payments of $9 ($108 total)', 'Copilot Money charges a lower monthly fee ($9 versus $14.99)', EveryDollar '$107.88 more than 12 months of Copilot Money at $9', YNAB '$70.88' monthly difference, FAQ 'costs $9 per month'. Also the $119 is 'instead of' wording, not a labelled regular price ('regular $119 price', '$119 versus $109' scenarios).",
+            "fix": "Restate as '$109 billed yearly (limited-time, listed instead of $119); the page shows $9 per month as the yearly-billing equivalent and publishes no monthly-billing price'. Delete every $108/12x$9/'lower monthly fee' calculation in the table, chooseSection, Monarch, YNAB, EveryDollar sections, verdict, FAQs and 'Would Change Our Answer'.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Who This Is Not For: This comparison focuses on consumer personal budgeting and spending applications.",
+            "problem": "Section opens with a stub sentence plus blank paragraphs; the only substantive sentence also claims Copilot, Monarch, YNAB and Tiller 'all require paid subscriptions to maintain automatic bank connections', which is unsourced (trial and refund terms differ; no source states bank-sync gating).",
+            "fix": "Replace with sourced bullets; remove blank paragraphs and unsourced absolute claim.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Where Tiller falls short: Tiller does not include a money assistant",
+            "problem": "Negative feature claims not in any vendor source (also 'EveryDollar ... which Copilot Money does not offer', Simplifi/Monarch 'without requiring an upgraded tier').",
+            "fix": "Limit to what the vendor's page lists ('Tiller's pricing page lists no money assistant') or remove.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F4",
+            "quote": "or changes its standard $6.99 renewal rate",
+            "problem": "Simplifi homepage shows $6.99/month Billed annually (struck-through list price); it says renewal is at 'then-current rates', not that $6.99 is the renewal rate.",
+            "fix": "Say 'renews at then-current rates'.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F5",
+            "quote": "Copilot Money does not list a standard free trial duration on its main pricing table.",
+            "problem": "Verified accurate. Stray single-space paragraphs and empty ' \\n\\n ' blocks in chooseSection, alternatives and Who This Is Not For.",
+            "fix": "Remove empty paragraphs.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F6",
+            "quote": "Tiller syncs accounts into private spreadsheets you own (Google Sheets / Microsoft).",
+            "problem": "tiller.com/pricing does not state Sheets/Excel; only Microsoft or Google account sign-in.",
+            "fix": "Source it or soften.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F7",
+            "quote": "Offers fits solo users on Apple devices... If you do not need immediate multi-user sharing",
+            "problem": "'Invite your partner: coming this fall' on the vendor page; page says only 'coming soon' for Households (accurate enough).",
+            "fix": "Optional: 'coming this fall'.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-24T16:53:09+00:00"
+      }
     },
     {
       "vendor": "Vanguard",
@@ -4048,10 +4127,75 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-24T16:50:12+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": [
+            "officialUrl",
+            "product",
+            "vendor"
+          ]
+        },
+        {
+          "at": "2026-11-24T16:50:12+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-24"
+        },
+        {
+          "at": "2026-11-24T16:53:14+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-24T16:50:12+00:00",
+      "claimedOn": "2026-11-24",
+      "attempts": 1,
+      "lastNextAt": "2026-11-24T16:50:12+00:00",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Those businesses should consider Wave Starter for $0 or Zoho Books Standard.",
+            "problem": "Site adapter forbids recommending or advising ('fits people who...', never 'you should'). 'Should consider' is a direct recommendation inside Who This Is Not For. Also 'Companies that need up to 25 user seats' section is directive.",
+            "fix": "Reword neutrally: 'Wave Starter ($0) and Zoho Books Standard publish higher or no invoice caps.'",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Who This Is Not For: ... What Would Change Our Answer: ...",
+            "problem": "Both required sections are embedded as plain-text labels at the end of the stillBetterFit body instead of headed sections, so they are not H2/H3 headings (heading rule; ToC, schema and heading-keyword checks cannot see them).",
+            "fix": "Move them into alternatives[] entries with Title Case headings, as the other two pages do.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F3",
+            "quote": "Zoho Books Standard on annual billing saves $144 a year while providing 3 user seats instead of Xero Early's single-tier limits.",
+            "problem": "Vague/unsupported: Xero publishes no user cap and 'no per-user license fees'; Zoho Standard 3-user cap and Xero Early limits are not comparable as written.",
+            "fix": "Say 'Zoho Standard includes 3 users; Xero lists no per-user fees'.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F4",
+            "quote": "Xero includes bank reconciliation on all plans.",
+            "problem": "Supported (Reconcile bank transactions appears on all three). Verified: prices, 90% promo (ends Nov 30, code), $5 auto-reconcile, 5.1M customers, 'change to less expensive plan 1 month after upgrading'. QuickBooks (WebFetch, fetch_page 502), FreshBooks, Zoho, Wave and FreeAgent figures and all cost arithmetic replay correctly.",
+            "fix": "None.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F5",
+            "quote": "Wave offers ... Wave Pro saves $134 a year compared to Xero Early",
+            "problem": "Compares a $0-card-fee product subscription to Xero without noting Wave's card fees or Xero's 20-invoice cap; fine as arithmetic but one-sided.",
+            "fix": "Add 'before card-processing fees'.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-24T16:53:14+00:00"
+      }
     },
     {
       "vendor": "Simplifi",
@@ -4205,10 +4349,89 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-24T16:50:12+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": [
+            "officialUrl",
+            "product",
+            "vendor"
+          ]
+        },
+        {
+          "at": "2026-11-24T16:50:12+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-24"
+        },
+        {
+          "at": "2026-11-24T16:53:14+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-24T16:50:12+00:00",
+      "claimedOn": "2026-11-24",
+      "attempts": 1,
+      "lastNextAt": "2026-11-24T16:50:12+00:00",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Copilot Money charges $109 billed yearly under a limited-time offer, or $9 per month, which totals $108 across 12 payments of $9.",
+            "problem": "copilot.money/pricing shows one figure, '$9 per month' with '$109 billed yearly, instead of $119' (the yearly view of a Yearly/Monthly toggle). It publishes no separate monthly-billed plan, so '$9 per month billing' and the $108 12-payment total are not vendor facts. Also in the Copilot table row ('$9 per month, or $109 billed yearly').",
+            "fix": "State only '$9 per month equivalent, $109 billed yearly (limited-time, instead of $119); no monthly-billing price published'. Remove the $108 calculation.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Who This Is Not For: This comparison focuses on consumer personal budgeting and money management software.",
+            "problem": "Required 'Who This Is Not For' element is a one-sentence stub that names no reader group (_content-standard AUDITOR required elements).",
+            "fix": "Write 3-4 factual bullets (e.g. readers needing business bookkeeping, readers who want no subscription and no manual entry) without 'you should' advice.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Tiller is built strictly for Google Sheets and Microsoft Excel ... Versus Tiller, Simplifi does not support Microsoft Excel or Google Sheets automation",
+            "problem": "tiller.com/pricing says only 'Sign up with your Microsoft or Google account'; it does not name Sheets/Excel. 'Strictly' and the negative claims about Simplifi/Copilot ('does not provide spreadsheet data feeds') are not in any vendor source.",
+            "fix": "Drop 'strictly' and the unsourced negative claims, or add a sourced Tiller features page to sources.json and restate as 'Simplifi lists no spreadsheet sync on its homepage'.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F4",
+            "quote": "Monarch, YNAB, Simplifi, Copilot Money and EveryDollar are the five budgeting apps covered for managing personal finances.",
+            "problem": "First paragraph never contains the primary keyword 'Tiller alternatives' or the word Tiller; first sentence does not answer 'what should I use instead of Tiller?'.",
+            "fix": "Open with 'Tiller alternatives with published prices include Monarch, YNAB, ...'.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F5",
+            "quote": "Tiller syncs accounts into private spreadsheets you own in Google Sheets or Microsoft Excel. Monarch also provides a 7-day free trial",
+            "problem": "Stray detached lines at the start of each alternative's second paragraph (leading space, non sequitur such as 'Monarch also provides a 7-day free trial'); reads as unfinished and Simplifi/Copilot/EveryDollar 'Versus Tiller' lines are single-clause.",
+            "fix": "Rewrite as complete 'Versus Tiller' sentences; remove leading spaces.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F6",
+            "quote": "Simplifi displays $3.99 per month and $6.99 labeled billed annually",
+            "problem": "Homepage shows $3.99/month promo with $6.99/month 'Billed annually' as the list price; the page says only 'labeled billed annually' and the Simplifi cost example gives no figure. Acceptable but unclear.",
+            "fix": "Say '$3.99 per month first-year offer (orders by Dec 8, 2026) against $6.99 per month billed annually; renews at then-current rates'.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F7",
+            "quote": "Copilot Money and Simplifi list no specific trial length on their pricing pages.",
+            "problem": "Verified true for Copilot (WebFetch); Simplifi homepage not checked for trial. Minor.",
+            "fix": "Keep only the Copilot half or confirm Simplifi.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-24T16:53:14+00:00"
+      }
     },
     {
       "vendor": "Payoneer",
