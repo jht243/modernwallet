@@ -3566,6 +3566,19 @@
       "No minimum score needed; pull type Not published"
      ],
      "added": "2026-10-27"
+    },
+    {
+     "name": "UNITY Visa Secured Credit Card (OneUnited Bank)",
+     "domain": "oneunited.com",
+     "url": "https://www.oneunited.com/unity-visa/",
+     "values": [
+      "$300 to $10,000 refundable deposit; limit equals deposit",
+      "Yes; reports monthly to Experian, Equifax and TransUnion",
+      "Not published",
+      "Not published; standard annual fee applies",
+      "No credit check to apply"
+     ],
+     "added": "2026-11-24"
     }
    ]
   },
@@ -4438,6 +4451,18 @@
       "No term contract or minimum volume; facilities up to $10 million; 0.05% per diem"
      ],
      "added": "2026-11-13"
+    },
+    {
+     "name": "Factoring Fast",
+     "domain": "factoringfast.com",
+     "url": "https://factoringfast.com/",
+     "values": [
+      "Trucking, staffing, oil and gas, medical, construction",
+      "Not published",
+      "Same-day payment after invoice submission",
+      "Discount on invoices; rates and minimums not published; quote required"
+     ],
+     "added": "2026-11-24"
     }
    ]
   },

@@ -1,1 +1,28 @@
-{"slug":"best-invoice-factoring-companies","rows":[{"name":"New Century Financial","domain":"newcenturyfinancial.com","url":"https://newcenturyfinancial.com/","values":["Telecom, manufacturing, staffing, oil and gas, transportation; start-ups financed","Not published; lists \"No-Risk Factoring\" without defining it","24-hour approval; funding time after approval not published","No term contract or minimum volume; facilities up to $10 million; 0.05% per diem"]}],"cut":[]}
+{
+  "slug": "best-invoice-factoring-companies",
+  "rows": [
+    {
+      "name": "New Century Financial",
+      "domain": "newcenturyfinancial.com",
+      "url": "https://newcenturyfinancial.com/",
+      "values": [
+        "Telecom, manufacturing, staffing, oil and gas, transportation; start-ups financed",
+        "Not published; lists \"No-Risk Factoring\" without defining it",
+        "24-hour approval; funding time after approval not published",
+        "No term contract or minimum volume; facilities up to $10 million; 0.05% per diem"
+      ]
+    },
+    {
+      "name": "Factoring Fast",
+      "domain": "factoringfast.com",
+      "url": "https://factoringfast.com/",
+      "values": [
+        "Trucking, staffing, oil and gas, medical, construction",
+        "Not published",
+        "Same-day payment after invoice submission",
+        "Discount on invoices; rates and minimums not published; quote required"
+      ]
+    }
+  ],
+  "cut": []
+}
