@@ -215,7 +215,18 @@ def restore(root,journal):
    target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(raw)
  # A correction is retained metadata of this canonical journal, never a
  # repository-wide default. Other journals and new keys keep their own evidence.
+ # Auto-detach any stray foreign retained referenceCorrection whose cycles do not own this route.
  correction=entry.get('referenceCorrection') if entry else None
+ if correction:
+  try:
+   raw_corr=cache_path(root,correction['path'],correction['sha256'])
+   corr_bytes=raw_corr.read_bytes() if raw_corr.is_file() else module.git(root,'show',revision+':artifacts/'+correction['sha256']).stdout
+   corr_doc=json.loads(corr_bytes)
+   own_route=(journal.identity or {}).get('route')
+   if own_route not in (corr_doc.get('cycles') or {}) or own_route not in (corr_doc.get('recordedJournals') or {}):
+    correction=None
+  except Exception:
+   pass
  if correction:restore_reference_correction(root,module,revision,correction,journal=journal)
  return {'module':module,'store':store,'expectedHead':head,'key':journal.key,'referenceCorrection':correction}
 def active_review_events(events):
