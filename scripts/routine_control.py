@@ -727,7 +727,7 @@ def snapshot(root):
 
 def worker_task(job, agent):
     matches = [v for v in job.get('tools', {}).values() if agent and v.get('agent') == agent]
-    return max(matches, key=lambda v: (v['status'] == 'pending', v.get('created', 0)), default=None)
+    return max(matches, key=lambda v: (v['status'] == 'pending', bool(v.get('authored_receipt')), v.get('created', 0)), default=None)
 
 
 def agent_review_tasks(job, agent, review=None):
@@ -970,6 +970,12 @@ def hook(store, event):
             pending = [v for v in j['tools'].values() if v['status'] == 'pending' and v.get('agent') == event['agent_id']]
             if not pending:
                 pending = [v for v in j['tools'].values() if v['status'] == 'pending' and not v.get('agent')]
+            if len(pending) > 1:
+                newest = max(pending, key=lambda v: (v.get('created', 0), id(v)))
+                for stale in pending:
+                    if stale is not newest:
+                        stale.update(status='interrupted', error='Superseded by newer worker dispatch before SubagentStart')
+                pending = [newest]
             if len(pending) != 1:
                 raise ControlError('Ambiguous worker identity; parallel review dispatch is not admitted')
             pending[0]['agent'] = event['agent_id']
@@ -1055,6 +1061,9 @@ def hook(store, event):
             task['status'] = 'complete'
             if 'before' in task:
                 task['before_sha256'] = sha(json.dumps(task.pop('before'), sort_keys=True).encode())
+            for other in j.get('tools', {}).values():
+                if other is not task and other.get('agent') == agent and other.get('status') == 'pending' and not other.get('authored_receipt'):
+                    other.update(status='interrupted', error='Superseded by completed task on the same agent')
             j['next'] = 'Read completed worker receipts. Continue the earliest unfinished gate; isolate held candidates.'
         artifacts = [review['receipt']] if review and (store.root / review['receipt']).is_file() else []
         store.mutate(stopped, artifacts)
@@ -1068,7 +1077,8 @@ def hook(store, event):
                 rel_written = written_path.relative_to(store.root.resolve()).as_posix()
                 def authored(s):
                     j = store.owned(s, sid)
-                    task = worker_task(j, agent)
+                    matching = [t for t in agent_review_tasks(j, agent) if t.get('status') == 'pending' and (rel_written == t.get('receipt') or rel_written in t.get('native_receipts', []))]
+                    task = max(matching, key=lambda v: v.get('created', 0), default=None) or worker_task(j, agent)
                     task['receipt'] = rel_written
                     task['authored_receipt'] = sha(safe_path(store.root, rel_written).read_bytes())
                 store.mutate(authored)
