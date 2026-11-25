@@ -1,0 +1,53 @@
+{
+  "status": "all-live",
+  "attempts": 12,
+  "verifiedCount": 5,
+  "pendingCount": 0,
+  "results": [
+    {
+      "url": "https://www.themodernwallet.com/guides/how-to-buy-anthropic-stock/",
+      "finalUrl": "https://www.themodernwallet.com/guides/how-to-buy-anthropic-stock/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/how-to-buy-anthropic-stock/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/guides/what-is-an-ipo/",
+      "finalUrl": "https://www.themodernwallet.com/guides/what-is-an-ipo/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/what-is-an-ipo/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/guides/medicaid-work-requirements-2027-hold-harmless/",
+      "finalUrl": "https://www.themodernwallet.com/guides/medicaid-work-requirements-2027-hold-harmless/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/medicaid-work-requirements-2027-hold-harmless/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/guides/conforming-loan-limit-2027/",
+      "finalUrl": "https://www.themodernwallet.com/guides/conforming-loan-limit-2027/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/conforming-loan-limit-2027/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/guides/hud-mixed-status-housing-rule/",
+      "finalUrl": "https://www.themodernwallet.com/guides/hud-mixed-status-housing-rule/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/hud-mixed-status-housing-rule/"
+    }
+  ]
+}
