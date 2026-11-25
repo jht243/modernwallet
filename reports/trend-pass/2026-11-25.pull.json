@@ -1,0 +1,222 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window": {
+    "start": "2026-11-18",
+    "end": "2026-11-25",
+    "days": 7
+  },
+  "top_queries": [
+    {
+      "query": "site:themodernwallet.com",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "rule of 78 calculator",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 64.33
+    },
+    {
+      "query": "20000 for 72 months",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "query": "am i on track to retire",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 96
+    },
+    {
+      "query": "living trust services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "plan to buy a car",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92
+    },
+    {
+      "query": "roth 401k vs standard 401k",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 94
+    },
+    {
+      "query": "wealthability cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 100
+    },
+    {
+      "query": "where can i get a free will",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    }
+  ],
+  "coverage_queries": [
+    {
+      "query": "site:themodernwallet.com",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "rule of 78 calculator",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 64.33
+    },
+    {
+      "query": "20000 for 72 months",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "query": "am i on track to retire",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 96
+    },
+    {
+      "query": "living trust services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "plan to buy a car",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92
+    },
+    {
+      "query": "roth 401k vs standard 401k",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 94
+    },
+    {
+      "query": "wealthability cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 100
+    },
+    {
+      "query": "where can i get a free will",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 75
+    }
+  ],
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/",
+      "clicks": 1,
+      "impressions": 19,
+      "ctr": 0.0526,
+      "position": 1.26
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-estate-planning-software/",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 1
+    },
+    {
+      "page": "https://www.themodernwallet.com/calculators/",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 21.23
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 14.92
+    },
+    {
+      "page": "https://www.themodernwallet.com/about/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 2.36
+    },
+    {
+      "page": "https://www.themodernwallet.com/methodology/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 3.73
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/invoice-factoring-vs-merchant-cash-advance/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 6.9
+    },
+    {
+      "page": "https://www.themodernwallet.com/compliance/colorado-cottage-foods-act-expansion/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 3.9
+    },
+    {
+      "page": "https://www.themodernwallet.com/retirement/",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 15.33
+    },
+    {
+      "page": "https://www.themodernwallet.com/compliance/colorado-medical-record-request-fee-cap/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 4.12
+    }
+  ],
+  "top10_pages_total_clicks": 2,
+  "top10_queries_total_clicks": 0,
+  "baseline_window": {
+    "start": "2026-11-10",
+    "end": "2026-11-17",
+    "days": 7,
+    "comparison": "prior_window_equal_span"
+  },
+  "total_queries_in_window": 9,
+  "rising_queries": [],
+  "spillover_queries": [],
+  "modifier_patterns": []
+}
