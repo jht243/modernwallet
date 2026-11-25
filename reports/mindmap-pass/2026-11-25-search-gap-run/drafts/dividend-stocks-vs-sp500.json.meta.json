@@ -1,0 +1,452 @@
+{
+ "slug": "dividend-stocks-vs-sp500",
+ "schema": "comparison",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2918,
+ "floor": 1500,
+ "input_tokens": 46893,
+ "output_tokens": 5356,
+ "thinking_tokens": 188,
+ "cached_tokens": 17888,
+ "est_cost_usd": 0.0439,
+ "guards": {
+  "repairs": [
+   "added relatedLinks: [] (undefined crashes next build)"
+  ],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3066,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    10,
+    0
+   ],
+   "applied": [
+    {
+     "id": "comparisonTable.rows[1].b",
+     "quote": "Quarterly dividend income collected from member firms and passed through by the fund trust.",
+     "replacement": "Dividend income collected from member firms and passed through by the fund trust.",
+     "type": "unsupported",
+     "why": "SOURCE does not state fund dividends are quarterly."
+    },
+    {
+     "id": "comparisonTable.rows[2].a",
+     "quote": "Varies by individual company, capital structure, and current market equity price.",
+     "replacement": "Varies by individual company and current share price.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention capital structure."
+    },
+    {
+     "id": "comparisonTable.rows[4].a",
+     "quote": "Requires continuous monitoring of company balance sheets, earnings, and payout declarations.",
+     "replacement": "Requires selecting individual companies and monitoring for payout cuts.",
+     "type": "unsupported",
+     "why": "SOURCE does not state monitoring balance sheets or earnings."
+    },
+    {
+     "id": "comparisonTable.rows[5].a",
+     "quote": "Zero fund expense ratio, though brokerage transaction terms or bid-ask spreads apply.",
+     "replacement": "Zero fund expense ratio, though brokerage commissions may apply.",
+     "type": "unsupported",
+     "why": "SOURCE does not state bid-ask spreads apply."
+    },
+    {
+     "id": "sections[0].content",
+     "quote": "Many businesses held inside the S&P 500 benchmark distribute recurring cash to shareholders, while other businesses in the same index reinvest all profits back into capital projects.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "Rule forbids citing or implying how many S&P 500 companies pay dividends."
+    },
+    {
+     "id": "sections[1].content",
+     "quote": "When you purchase individual dividend equities, you must research corporate earnings releases, balance sheet debt levels, payout ratios, and board declarations yourself.",
+     "replacement": "When you purchase individual dividend equities, you take on single-company concentration and must monitor dividend cuts yourself.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention earnings releases, debt levels, or payout ratios."
+    },
+    {
+     "id": "sections[2].content",
+     "quote": "While established corporations often pay cash distributions on a regular quarterly schedule, corporate boards retain complete legal discretion over whether to declare a dividend, reduce it, or eliminate it entirely.",
+     "replacement": "While payers usually distribute cash on a fixed schedule, companies can issue payments at any time or reduce or eliminate them.",
+     "type": "unsupported",
+     "why": "SOURCE states payers usually pay on a fixed schedule, not quarterly."
+    },
+    {
+     "id": "sections[4].content",
+     "quote": "However, this approach requires ongoing research to monitor corporate debt, free cash flow coverage, and board payout declarations.",
+     "replacement": "However, this approach requires ongoing research and tolerance for concentration and payout cuts.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention corporate debt or free cash flow coverage."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Market returns depend on the specific economic time horizon, sector concentrations, prevailing interest rate environments, and whether corporate dividends are reinvested.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention interest rate environments or sector concentrations."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "An investor can generate living income from an S&P 500 index fund by collecting its periodic dividend distributions, selling fractional shares to realize capital gains, or combining both methods.",
+     "replacement": "An investor can generate income from an S&P 500 index fund by collecting its dividend distributions or selling shares.",
+     "type": "unsupported",
+     "why": "SOURCE does not state selling fractional shares to realize capital gains."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3152
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 25234
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-25T15:49:37+0000",
+    "findings_file": "reports/mindmap-pass/2026-11-25-search-gap-run/audit/dividend-stocks-vs-sp500.findings.txt",
+    "applied": [
+     {
+      "id": "sections[5].content",
+      "quote": "Conversely, if an investor holds dividend stocks in a standard taxable brokerage account and experiences an increase in earned income, the ongoing dividend distributions could trigger unwanted annual tax liability under IRS Topic 404 rules.",
+      "replacement": "If your taxable income rises, the tax rate on qualified dividends can rise too, because the 0%, 15% and 20% rates depend on taxable income (see the IRS Topic 409 thresholds above).",
+      "type": "A1-F1 unsupported tax advice",
+      "why": "Topic 404 does not cover income-dependent placement"
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "In that scenario, moving capital toward a tax-advantaged account or broad index vehicles could prove more efficient.",
+      "replacement": "An index fund pays dividends as well, so it does not avoid that tax.",
+      "type": "A1-F1 index fund tax advice contradiction",
+      "why": "Index funds also pay taxable dividends"
+     },
+     {
+      "id": "sections[3].content",
+      "quote": ", provided the investor satisfies specific holding period criteria",
+      "replacement": "",
+      "type": "A1-F2 holding period criteria",
+      "why": "Topic 404 contains no holding-period rules"
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": " depending on the character of the underlying income and holding period requirements",
+      "replacement": "",
+      "type": "A1-F2 holding period criteria",
+      "why": "Topic 404 contains no holding-period rules"
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "In contrast, an index fund automates rebalancing.",
+      "replacement": "In contrast, an index fund owns every company in the index, so you do not pick or monitor individual payers.",
+      "type": "A1-F3 index fund mechanics overclaim",
+      "why": "Investor.gov does not state this"
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "The index fund automates asset rebalancing and corporate actions.",
+      "replacement": "The fund tracks the index, so you do not need to read individual financial statements.",
+      "type": "A1-F3 index fund mechanics overclaim",
+      "why": "Not supported by primary sources"
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "Because the fund reinvests in its own growth and trades at a low operating fee, it removes the time commitment needed to track individual financial statements.",
+      "replacement": "SPY's gross expense ratio was 0.0945% per the State Street Global Advisors SPY page.",
+      "type": "A1-F3 index fund mechanics overclaim",
+      "why": "Reinvests in growth is meaningless for fund"
+     },
+     {
+      "id": "sections[4].content",
+      "quote": "An unexpected dividend reduction or operational failure at one holding has a negligible effect on the overall fund balance.",
+      "replacement": "A dividend cut at one holding changes the fund's income only in proportion to that company's weight in the index.",
+      "type": "A1-F3 risk overclaim",
+      "why": "Contradicted by top holdings concentration"
+     },
+     {
+      "id": "comparisonTable.rows[3].b",
+      "quote": "Broad large-cap diversification across 504 corporate holdings as of Nov 25 2026 on SPY.",
+      "replacement": "504 holdings as of Nov 24 2026, but the ten largest made up about 36.9% of fund weight.",
+      "type": "A1-F3 table concentration context",
+      "why": "Reflects top-ten weighting in source"
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "Total return is the true financial measure of portfolio progress because it combines asset price changes with distributed cash income.",
+      "replacement": "Total return is a standard measure because it combines price change and dividends.",
+      "type": "A1-F3 total return overclaim",
+      "why": "Unsupported absolute claim"
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "total return remains the only defensible yardstick.",
+      "replacement": "total return is the clearest yardstick for comparing the two.",
+      "type": "A1-F3 total return overclaim",
+      "why": "Unsupported absolute claim"
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "held 504 equity holdings as of Nov 25 2026.",
+      "replacement": "held 504 equity holdings as of Nov 24 2026.",
+      "type": "A1-F4 wrong as-of date",
+      "why": "Source lists date as Nov 24 2026"
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "The fund charges a gross expense ratio of 0.0945% as of Nov 25 2026, which is deducted directly from fund net assets.",
+      "replacement": "The fund charges a gross expense ratio of 0.0945% gross per the State Street Global Advisors SPY page (retrieved Nov 25 2026), which is deducted directly from fund net assets.",
+      "type": "A1-F4 expense ratio date attribution",
+      "why": "Expense ratio is prospectus figure retrieved Nov 25"
+     },
+     {
+      "id": "comparisonTable.rows[5].b",
+      "quote": "Fund expense ratio deducted from assets, such as 0.0945% gross on SPY.",
+      "replacement": "0.0945% gross per the State Street Global Advisors SPY page (retrieved Nov 25 2026).",
+      "type": "A1-F4 expense ratio table attribution",
+      "why": "Aligns with source retrieval attribution"
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "While payers usually distribute cash on a fixed schedule, companies can issue payments at any time or reduce or eliminate them.",
+      "replacement": "Public companies that pay dividends usually do so on a fixed schedule, although they can issue them at any time, and unscheduled payments are called special or extra dividends.",
+      "type": "A1-F5 dividend glossary mismatch",
+      "why": "Source does not say reduce or eliminate"
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "Investor.gov notes that boards can also authorize unscheduled payments known as special or extra dividends.",
+      "replacement": "A company can also cut or stop its dividend, so a payout is never guaranteed.",
+      "type": "A1-F5 glossary boards mention",
+      "why": "Source does not mention boards"
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "No corporate dividend payment is guaranteed.",
+      "replacement": "",
+      "type": "A1-F5 duplicate sentence",
+      "why": "Consolidated into previous sentence"
+     },
+     {
+      "id": "sections[2].content",
+      "quote": "This procedural framework proves that corporate dividends are dated contractual entitlements granted to specific shareholders of record, rather than permanent ongoing return guarantees.",
+      "replacement": "The ex-dividend date therefore decides who receives a declared dividend.",
+      "type": "A1-F5 legal characterization",
+      "why": "Unsupported legal framing"
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "Taxpayers receive Form 1099-DIV from brokerage institutions reporting all distributions.",
+      "replacement": "You receive a Form 1099-DIV from each payer for distributions of $10 or more.",
+      "type": "A1-F6 Form 1099-DIV threshold",
+      "why": "Topic 404 specifies $10 threshold"
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "In addition, an index fund may distribute capital gains realized from internal portfolio rebalancing or shareholder redemptions.",
+      "replacement": "In addition, an index fund may pay capital gain distributions.",
+      "type": "A1-F6 capital gain distribution causes",
+      "why": "Specific distribution causes not in source"
+     },
+     {
+      "id": "sections[3].content",
+      "quote": "Investors must provide their correct Social Security number to brokerage platforms to avoid statutory backup withholding on distributions.",
+      "replacement": "Give your brokerage your correct Social Security number to avoid penalties and backup withholding (IRS Topic 404).",
+      "type": "A1-F6 backup withholding phrasing",
+      "why": "Direct phrasing with Topic 404 attribution"
+     },
+     {
+      "id": "sections[6].content",
+      "quote": "To make a fully informed portfolio decision, check the latest fund distribution yield, gross expense ratio, and underlying holdings on the official issuer website for any S&P 500 fund you consider, review your current taxable income against the IRS Topic 409 brackets, and determine whether holding single dividend stocks vs s&p 500 index funds best serves your household balance sheet.",
+      "replacement": "Before you choose, read the [State Street Global Advisors SPY page](https://www.ssga.com/us/en/intermediary/etfs/state-street-spdr-sp-500-etf-trust-spy) for the current yield, expense ratio and holdings, and compare your taxable income with the [IRS Topic 409](https://www.irs.gov/taxtopics/tc409) thresholds.",
+      "type": "A1-F7 unlinked directive and coy naming",
+      "why": "Links SPY page and IRS Topic 409"
+     },
+     {
+      "id": "comparisonTable.rows[6].a",
+      "quote": "per IRS Topic 404",
+      "replacement": "under federal tax rules",
+      "type": "A1-F7 unlinked first mention of IRS",
+      "why": "Reserve linked first mention for body"
+     },
+     {
+      "id": "comparisonTable.rows[6].b",
+      "quote": "per IRS Topic 404",
+      "replacement": "under federal tax rules",
+      "type": "A1-F7 unlinked first mention of IRS",
+      "why": "Reserve linked first mention for body"
+     },
+     {
+      "id": "tableHeading",
+      "quote": "Structural Comparison: Dividend Equities vs. S&P 500 Index Funds",
+      "replacement": "Dividend Stocks vs. S&P 500 Index Fund Comparison Table",
+      "type": "A1-F8 headline tell",
+      "why": "Colon formula and synonym Equities"
+     },
+     {
+      "id": "sections[0].heading",
+      "quote": "The Short Answer: They Are Not Opposites",
+      "replacement": "Dividend Stocks and S&P 500 Index Funds Are Not Opposites",
+      "type": "A1-F8 headline tell",
+      "why": "Short answer label and colon formula"
+     },
+     {
+      "id": "verdictHeading",
+      "quote": "The Verdict: How to Choose Between Dividend Stocks and Index Funds",
+      "replacement": "How to Choose Between Dividend Stocks and an Index Fund",
+      "type": "A1-F8 headline tell",
+      "why": "Banned X: How to Choose formula"
+     },
+     {
+      "id": "introText",
+      "quote": "A dividend stock is a single company chosen for its cash distribution, whereas an S&P 500 index fund is an investment pool that owns hundreds of large American businesses together and distributes dividends of its own.",
+      "replacement": "A dividend stock is one company you own for its cash payout. An S&P 500 index fund owns hundreds of large U.S. companies at once and passes along their dividends.",
+      "type": "A1-F9 opening sentence",
+      "why": "Weak clause stack opener"
+     },
+     {
+      "id": "introText",
+      "quote": "The search term dividend stocks vs s&p 500 often treats these assets as mutual opposites, but they are not opposing categories.",
+      "replacement": "The Standard & Poor's 500 (S&P 500) is a list of 500 large U.S. companies, and an S&P 500 index fund owns all of them.",
+      "type": "A1-F9 narrates search term",
+      "why": "Narrates search term and unsourced searcher claim"
+     },
+     {
+      "id": "introText",
+      "quote": "In the guides we publish here at ModernWallet, we evaluate portfolio tools by isolating the specific investor goal each asset serves.",
+      "replacement": "The fund collects the dividends those companies pay and passes them to its owners.",
+      "type": "A1-F9 bolted-on tee-up",
+      "why": "Misplaced tee-up and unperformed method claim"
+     },
+     {
+      "id": "introText",
+      "quote": "S&P 500 index funds pass dividend distributions directly through to shareholders.",
+      "replacement": "Dividend stocks and S&P 500 index funds are therefore not opposing categories.",
+      "type": "A1-F9 intro flow",
+      "why": "Restructure intro flow per approved fix"
+     },
+     {
+      "id": "introText",
+      "quote": "Choosing between these options means deciding between selecting individual companies for a specific cash flow requirement or buying the broad market through an index fund to capture total return across many sectors.",
+      "replacement": "The real choice is between picking a few companies for their cash payouts and owning the whole index for total return.",
+      "type": "A1-F9 intro conclusion",
+      "why": "Deliver clear contrast per approved fix"
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "Because the index fund passes dividend income through, the comparison is not about getting dividends versus getting zero dividends.",
+      "replacement": "Both choices pay dividends.",
+      "type": "A1-F11 comma-less antithesis",
+      "why": "Remove comma-less antithesis tell"
+     },
+     {
+      "id": "sections[0].content",
+      "quote": "The comparison is about choosing a focused income basket versus owning the complete market index.",
+      "replacement": "The difference is a hand-picked income list versus the whole index.",
+      "type": "A1-F11 comma-less antithesis",
+      "why": "State contrast plainly"
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "When you purchase individual dividend equities, you take on single-company concentration and must monitor dividend cuts yourself.",
+      "replacement": "When you purchase individual dividend stocks, you take on single-company concentration and must monitor dividend cuts yourself.",
+      "type": "A1-F11 synonym cycling",
+      "why": "Use dividend stocks consistently"
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "Neither dividend equities nor broad index funds can protect capital against short-term market declines or broader economic recessions.",
+      "replacement": "Neither dividend stocks nor S&P 500 index funds can protect capital against short-term market declines or broader economic recessions.",
+      "type": "A1-F11 synonym cycling",
+      "why": "Use approved asset terms consistently"
+     },
+     {
+      "id": "sections[1].content",
+      "quote": "Evaluating wrappers also leads many investors to review [index fund vs ETF](/compare/index-fund-vs-etf/) mechanics to understand trading friction and pricing.",
+      "replacement": "For how the fund wrapper affects trading, see [index fund vs ETF](/compare/index-fund-vs-etf/).",
+      "type": "A1-F11 weasel padding",
+      "why": "Direct link sentence without weasel text"
+     },
+     {
+      "id": "sections[6].content",
+      "quote": "Our takeaway is strictly conditional on your primary investment goal.",
+      "replacement": "Your goal decides the answer.",
+      "type": "A1-F11 template voice",
+      "why": "Plain direct phrasing"
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "Outperformance between dividend-paying equities and the S&P 500 Index is not established by the regulatory and issuer sources reviewed for this guide.",
+      "replacement": "No primary source reviewed shows that dividend stocks beat the S&P 500 or the reverse, and the result depends on the period and the stocks chosen.",
+      "type": "A1-F11 page self-reference",
+      "why": "Remove guide self-reference"
+     },
+     {
+      "id": "faqs[2].answer",
+      "quote": "Investors should evaluate any equity holding based on total return, which combines price appreciation and distributed cash, rather than relying on historical return generalizations.",
+      "replacement": "Compare total return, which combines price change and dividends, over the period you care about.",
+      "type": "A1-F11 total return comparison",
+      "why": "Direct advice without generalizations"
+     },
+     {
+      "id": "verdict",
+      "quote": "The choice between dividend stocks and an S&P 500 index fund depends on whether you require immediate portfolio cash distributions or broad market growth. S&P 500 index funds pass corporate dividends through to investors while spreading risk across hundreds of businesses. A dedicated dividend stock strategy increases cash yield at the cost of higher individual business concentration. Judge both strategies by total return rather than yield alone.",
+      "replacement": "Match the choice to your income need, and compare total return rather than yield.",
+      "type": "A1-F12 duplicate conclusion",
+      "why": "Cut verdict to single next-step sentence"
+     },
+     {
+      "id": "sections[5].content",
+      "quote": "This comparison is not intended for short-term stock traders looking for immediate momentum swings or daily trading setups.",
+      "replacement": "This comparison is not intended for short-term stock traders looking for immediate momentum swings or daily trading setups. Short-term traders need trading-specific guidance, not a long-term income comparison.",
+      "type": "A1-F12 who this is not for alternative",
+      "why": "Direct short-term traders to suitable path"
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "sections[1].content",
+      "quote": "",
+      "finding": "A1-F10 sentence length runs",
+      "why": "needs new substance",
+      "replacement": null,
+      "reason": "no quote"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 2918,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 182.3,
+ "response_id": "ef4Ga4zQEuWgo_UPk9WWoAU",
+ "generated_at": "2026-11-25T15:30:54+0000"
+}
