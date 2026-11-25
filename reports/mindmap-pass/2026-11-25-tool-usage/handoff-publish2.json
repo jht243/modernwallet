@@ -1,0 +1,886 @@
+{
+  "version": 1,
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "2026-11-25-tool-usage",
+  "producer": "main",
+  "routes": [
+    "/social-security-cola-calculator/",
+    "/guides/2027-social-security-cola/",
+    "/guides/2027-ssdi-cola/",
+    "/guides/ssi-increase-2027/",
+    "/guides/social-security-changes-2027/",
+    "/sep-ira-solo-401k-contribution-calculator/",
+    "/social-security-withholding-calculator/",
+    "/capital-loss-carryover-calculator/",
+    "/retirement/couples-retirement-calculator/",
+    "/mileage-deduction/irs-mileage-rate-2026/",
+    "/self-employment-tax/",
+    "/social-security-taxable-benefits-calculator/",
+    "/stock-capital-gains-tax-calculator/",
+    "/mileage-deduction/",
+    "/compare/sep-ira-vs-solo-401k",
+    "/guides/tax-loss-harvesting/"
+  ],
+  "nextAction": "Publish exact independently reviewed Mindmap output to main and verify live.",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/4a7e08e80f932790dfa8bb1787140b1e5646e3e23c5e283f698ab495648c0589/approval-manifest.json",
+      "sha256": "4a7e08e80f932790dfa8bb1787140b1e5646e3e23c5e283f698ab495648c0589",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/eab8e628b8bc0a2ae68703ef2d3d0a5188d1507f35c03d3d2c4215547adeaba2/2026-11-25-tool-usage.md",
+      "sha256": "eab8e628b8bc0a2ae68703ef2d3d0a5188d1507f35c03d3d2c4215547adeaba2",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/9cb351fb2c586e61d4a1748ac96463993d8cb3a044e42ddb766070318a8559c5/preview-snapshot-r2.json",
+      "sha256": "9cb351fb2c586e61d4a1748ac96463993d8cb3a044e42ddb766070318a8559c5",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/preview-snapshot-r2.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/e2c47debf2f1ebcac535815cf3f3a59c1f471f2771c934e5b03989c02283fc1a/preview-snapshot-b2r2.json",
+      "sha256": "e2c47debf2f1ebcac535815cf3f3a59c1f471f2771c934e5b03989c02283fc1a",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/preview-snapshot-b2r2.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/4ac3acc957ca774715a7d1d108997f5ed89fa46d4027fe372c722cdca00cd94c/approved-snapshot-irs.json",
+      "sha256": "4ac3acc957ca774715a7d1d108997f5ed89fa46d4027fe372c722cdca00cd94c",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/approved-snapshot-irs.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/c20c424186045d6260d71054939fb86fe0ff6d72f2682886f27c777f764a3800/approved-snapshot-linkonly.json",
+      "sha256": "c20c424186045d6260d71054939fb86fe0ff6d72f2682886f27c777f764a3800",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/approved-snapshot-linkonly.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/61c6eb0a7163fe4cbbb9aad7f8ce7e0c7b9e120aaa65dbe97d6075e561b6f6f7/readiness.md",
+      "sha256": "61c6eb0a7163fe4cbbb9aad7f8ce7e0c7b9e120aaa65dbe97d6075e561b6f6f7",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/c7ab383e60370ee6227720d260018028cbbaf9d9cd0217dddd9857c67e0bf979/chart-review.json",
+      "sha256": "c7ab383e60370ee6227720d260018028cbbaf9d9cd0217dddd9857c67e0bf979",
+      "checkedAt": "2026-11-25T19:28:37.263454+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/d197e7ff8a423d0ced3dee927ea2f1a3e8f5ec795d8ab315b46a6eb5b55e7415/2026-11-25-tool-usage-brief.md",
+      "sha256": "d197e7ff8a423d0ced3dee927ea2f1a3e8f5ec795d8ab315b46a6eb5b55e7415",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage-brief.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/934f1ae5414528dc4f3f40692ecd8efd21010002d2d331f5620c138019f45fdc/coverage-lookup.txt",
+      "sha256": "934f1ae5414528dc4f3f40692ecd8efd21010002d2d331f5620c138019f45fdc",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/58eff2c6c795921e29bf025ba692abc6d48fe2b32e332c9515fd457c95bd79e7/serp.json",
+      "sha256": "58eff2c6c795921e29bf025ba692abc6d48fe2b32e332c9515fd457c95bd79e7",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/serp.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/b85c3f2d320280ba4e55cc8451ae1c119990d0345f0a83d0647d10586d52eeea/keyword-volumes.json",
+      "sha256": "b85c3f2d320280ba4e55cc8451ae1c119990d0345f0a83d0647d10586d52eeea",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/keyword-volumes.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/f1d04f4cd12b0e3e260cea0acb91a0f33c4ebd6ec53e59f53a1410971b304877/keyword-volumes2.json",
+      "sha256": "f1d04f4cd12b0e3e260cea0acb91a0f33c4ebd6ec53e59f53a1410971b304877",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/keyword-volumes2.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/d6859cb8bf4a307655a8205dd556d25cd4006f5d5fec51c4fd8d663e6b579d06/kw-status.json",
+      "sha256": "d6859cb8bf4a307655a8205dd556d25cd4006f5d5fec51c4fd8d663e6b579d06",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/kw-status.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/c9e4ad545237983a6d458a98cdab1f06a0967375e7e9847b6e16b8a0a6183677/ac-capital-loss-carryover.csv",
+      "sha256": "c9e4ad545237983a6d458a98cdab1f06a0967375e7e9847b6e16b8a0a6183677",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/ac-capital-loss-carryover.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/78aac4508e4a05ff5f7e4841393fd1d04ed9810c5a18909351a033c9fdd2d9c8/ac-sep-ira-contribution.csv",
+      "sha256": "78aac4508e4a05ff5f7e4841393fd1d04ed9810c5a18909351a033c9fdd2d9c8",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/ac-sep-ira-contribution.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/5b1480e925ed8c37f23d21138487dd8baeaabb9603f869320867d5107da022d0/ac-w-4v-social-security.csv",
+      "sha256": "5b1480e925ed8c37f23d21138487dd8baeaabb9603f869320867d5107da022d0",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/ac-w-4v-social-security.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/6ee49d1a00b6650910c58bd4737dc5eae15f38f8e48fab10c8ec62d8caca01a1/amazon-picks-retirement.txt",
+      "sha256": "6ee49d1a00b6650910c58bd4737dc5eae15f38f8e48fab10c8ec62d8caca01a1",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/amazon-picks-retirement.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/76302d3e54e979b5581893fea05e3c183dd34f22356ee1d3157e748fc763e75b/calc-examples.json",
+      "sha256": "76302d3e54e979b5581893fea05e3c183dd34f22356ee1d3157e748fc763e75b",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/calc-examples.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/16367dafe9ff6db1ae6931c0abdf83e9c448fc8fa80762c809a303c2a2403908/cms-2027-partb.txt",
+      "sha256": "16367dafe9ff6db1ae6931c0abdf83e9c448fc8fa80762c809a303c2a2403908",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/cms-2027-partb.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/aff3f79dcbbc25aaa7d5942219a0c53947aad3642406e305ca179296f4ff44f8/irs-form-w4v.txt",
+      "sha256": "aff3f79dcbbc25aaa7d5942219a0c53947aad3642406e305ca179296f4ff44f8",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-form-w4v.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/57dd51ab5e63272cf5cc8b8b602de0505ac815d29cab6dc26725d91d0ad3baef/irs-ir-2026-136.txt",
+      "sha256": "57dd51ab5e63272cf5cc8b8b602de0505ac815d29cab6dc26725d91d0ad3baef",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-ir-2026-136.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/383a2c6fcda17b0586cd11c7970f1e332368c10e83c38cbe5a7d0d0fd01fb67d/irs-ir-2027-limits.txt",
+      "sha256": "383a2c6fcda17b0586cd11c7970f1e332368c10e83c38cbe5a7d0d0fd01fb67d",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-ir-2027-limits.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/f8525ec6cdc671efe9f43c40ae527667c40e8b998173872140468ac70c5c2259/irs-notice-2026-66.txt",
+      "sha256": "f8525ec6cdc671efe9f43c40ae527667c40e8b998173872140468ac70c5c2259",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-notice-2026-66.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/f93f754fba1a6ec069fe467e589e8a9438462ec966891c9ea8345845caefbf70/irs-pub550.txt",
+      "sha256": "f93f754fba1a6ec069fe467e589e8a9438462ec966891c9ea8345845caefbf70",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-pub550.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/db1f1fbe4645f567aa19f6fab7144a28c9881114773d1425636b57ae48b76f2a/irs-pub560.txt",
+      "sha256": "db1f1fbe4645f567aa19f6fab7144a28c9881114773d1425636b57ae48b76f2a",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-pub560.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/06dc2dd8c45947ff7e7bb95f5e28d7fab0f4022fa7ed03781706b1241377bbdd/irs-topic409.txt",
+      "sha256": "06dc2dd8c45947ff7e7bb95f5e28d7fab0f4022fa7ed03781706b1241377bbdd",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-topic409.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/c6a06f8f4972a55bc2ec9b37b4232d85ae1098dfa2852efa3304c9e9cf37c644/irs-w4v.txt",
+      "sha256": "c6a06f8f4972a55bc2ec9b37b4232d85ae1098dfa2852efa3304c9e9cf37c644",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-w4v.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/aa366377e859c7006990caab5cc781a60f892fc05529c5efc697271f3237cf2e/investing.md",
+      "sha256": "aa366377e859c7006990caab5cc781a60f892fc05529c5efc697271f3237cf2e",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/investing.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/3aad81e2c236bdb4ed85befbde29fcd968712ad9f697b3cb7497bfb73294d50e/mileage-deduction.md",
+      "sha256": "3aad81e2c236bdb4ed85befbde29fcd968712ad9f697b3cb7497bfb73294d50e",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/mileage-deduction.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/c11e402c7718c5180338e477f0013d12a0944e2bf0a3f746a8f0bcd3d691d99f/portfolio.md",
+      "sha256": "c11e402c7718c5180338e477f0013d12a0944e2bf0a3f746a8f0bcd3d691d99f",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/portfolio.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/2d6308f9ca949d26e447de014d978dca3326d2185d46f200407e51de20612e86/retirement.md",
+      "sha256": "2d6308f9ca949d26e447de014d978dca3326d2185d46f200407e51de20612e86",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/retirement.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/2915d2d0b1a051bce638f0140ce0c59a25544d9ec5ba3a203401308132dbcb16/social-security-cola-calculator.md",
+      "sha256": "2915d2d0b1a051bce638f0140ce0c59a25544d9ec5ba3a203401308132dbcb16",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/social-security-cola-calculator.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/0d92dc4871a0c86eb7511868198a6c7651627fca1dc7bcb92d26b64220e9caa5/chart-review.json",
+      "sha256": "0d92dc4871a0c86eb7511868198a6c7651627fca1dc7bcb92d26b64220e9caa5",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/fa34274d8707e15c70c5c83921a82e8a5aec249227ec0350336f6aa66289c546/review.json",
+      "sha256": "fa34274d8707e15c70c5c83921a82e8a5aec249227ec0350336f6aa66289c546",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/61c6eb0a7163fe4cbbb9aad7f8ce7e0c7b9e120aaa65dbe97d6075e561b6f6f7/readiness.md",
+      "sha256": "61c6eb0a7163fe4cbbb9aad7f8ce7e0c7b9e120aaa65dbe97d6075e561b6f6f7",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/0d92dc4871a0c86eb7511868198a6c7651627fca1dc7bcb92d26b64220e9caa5/chart-review.json",
+      "sha256": "0d92dc4871a0c86eb7511868198a6c7651627fca1dc7bcb92d26b64220e9caa5",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/d197e7ff8a423d0ced3dee927ea2f1a3e8f5ec795d8ab315b46a6eb5b55e7415/2026-11-25-tool-usage-brief.md",
+      "sha256": "d197e7ff8a423d0ced3dee927ea2f1a3e8f5ec795d8ab315b46a6eb5b55e7415",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage-brief.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/934f1ae5414528dc4f3f40692ecd8efd21010002d2d331f5620c138019f45fdc/coverage-lookup.txt",
+      "sha256": "934f1ae5414528dc4f3f40692ecd8efd21010002d2d331f5620c138019f45fdc",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/58eff2c6c795921e29bf025ba692abc6d48fe2b32e332c9515fd457c95bd79e7/serp.json",
+      "sha256": "58eff2c6c795921e29bf025ba692abc6d48fe2b32e332c9515fd457c95bd79e7",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/serp.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/b85c3f2d320280ba4e55cc8451ae1c119990d0345f0a83d0647d10586d52eeea/keyword-volumes.json",
+      "sha256": "b85c3f2d320280ba4e55cc8451ae1c119990d0345f0a83d0647d10586d52eeea",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/keyword-volumes.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/f1d04f4cd12b0e3e260cea0acb91a0f33c4ebd6ec53e59f53a1410971b304877/keyword-volumes2.json",
+      "sha256": "f1d04f4cd12b0e3e260cea0acb91a0f33c4ebd6ec53e59f53a1410971b304877",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/keyword-volumes2.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/d6859cb8bf4a307655a8205dd556d25cd4006f5d5fec51c4fd8d663e6b579d06/kw-status.json",
+      "sha256": "d6859cb8bf4a307655a8205dd556d25cd4006f5d5fec51c4fd8d663e6b579d06",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/kw-status.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/c9e4ad545237983a6d458a98cdab1f06a0967375e7e9847b6e16b8a0a6183677/ac-capital-loss-carryover.csv",
+      "sha256": "c9e4ad545237983a6d458a98cdab1f06a0967375e7e9847b6e16b8a0a6183677",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/ac-capital-loss-carryover.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/78aac4508e4a05ff5f7e4841393fd1d04ed9810c5a18909351a033c9fdd2d9c8/ac-sep-ira-contribution.csv",
+      "sha256": "78aac4508e4a05ff5f7e4841393fd1d04ed9810c5a18909351a033c9fdd2d9c8",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/ac-sep-ira-contribution.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/5b1480e925ed8c37f23d21138487dd8baeaabb9603f869320867d5107da022d0/ac-w-4v-social-security.csv",
+      "sha256": "5b1480e925ed8c37f23d21138487dd8baeaabb9603f869320867d5107da022d0",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/ac-w-4v-social-security.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/6ee49d1a00b6650910c58bd4737dc5eae15f38f8e48fab10c8ec62d8caca01a1/amazon-picks-retirement.txt",
+      "sha256": "6ee49d1a00b6650910c58bd4737dc5eae15f38f8e48fab10c8ec62d8caca01a1",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/amazon-picks-retirement.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/76302d3e54e979b5581893fea05e3c183dd34f22356ee1d3157e748fc763e75b/calc-examples.json",
+      "sha256": "76302d3e54e979b5581893fea05e3c183dd34f22356ee1d3157e748fc763e75b",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/calc-examples.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/16367dafe9ff6db1ae6931c0abdf83e9c448fc8fa80762c809a303c2a2403908/cms-2027-partb.txt",
+      "sha256": "16367dafe9ff6db1ae6931c0abdf83e9c448fc8fa80762c809a303c2a2403908",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/cms-2027-partb.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/aff3f79dcbbc25aaa7d5942219a0c53947aad3642406e305ca179296f4ff44f8/irs-form-w4v.txt",
+      "sha256": "aff3f79dcbbc25aaa7d5942219a0c53947aad3642406e305ca179296f4ff44f8",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-form-w4v.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/57dd51ab5e63272cf5cc8b8b602de0505ac815d29cab6dc26725d91d0ad3baef/irs-ir-2026-136.txt",
+      "sha256": "57dd51ab5e63272cf5cc8b8b602de0505ac815d29cab6dc26725d91d0ad3baef",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-ir-2026-136.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/383a2c6fcda17b0586cd11c7970f1e332368c10e83c38cbe5a7d0d0fd01fb67d/irs-ir-2027-limits.txt",
+      "sha256": "383a2c6fcda17b0586cd11c7970f1e332368c10e83c38cbe5a7d0d0fd01fb67d",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-ir-2027-limits.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/f8525ec6cdc671efe9f43c40ae527667c40e8b998173872140468ac70c5c2259/irs-notice-2026-66.txt",
+      "sha256": "f8525ec6cdc671efe9f43c40ae527667c40e8b998173872140468ac70c5c2259",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-notice-2026-66.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/f93f754fba1a6ec069fe467e589e8a9438462ec966891c9ea8345845caefbf70/irs-pub550.txt",
+      "sha256": "f93f754fba1a6ec069fe467e589e8a9438462ec966891c9ea8345845caefbf70",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-pub550.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/db1f1fbe4645f567aa19f6fab7144a28c9881114773d1425636b57ae48b76f2a/irs-pub560.txt",
+      "sha256": "db1f1fbe4645f567aa19f6fab7144a28c9881114773d1425636b57ae48b76f2a",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-pub560.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/06dc2dd8c45947ff7e7bb95f5e28d7fab0f4022fa7ed03781706b1241377bbdd/irs-topic409.txt",
+      "sha256": "06dc2dd8c45947ff7e7bb95f5e28d7fab0f4022fa7ed03781706b1241377bbdd",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-topic409.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/c6a06f8f4972a55bc2ec9b37b4232d85ae1098dfa2852efa3304c9e9cf37c644/irs-w4v.txt",
+      "sha256": "c6a06f8f4972a55bc2ec9b37b4232d85ae1098dfa2852efa3304c9e9cf37c644",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-w4v.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/aa366377e859c7006990caab5cc781a60f892fc05529c5efc697271f3237cf2e/investing.md",
+      "sha256": "aa366377e859c7006990caab5cc781a60f892fc05529c5efc697271f3237cf2e",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/investing.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/3aad81e2c236bdb4ed85befbde29fcd968712ad9f697b3cb7497bfb73294d50e/mileage-deduction.md",
+      "sha256": "3aad81e2c236bdb4ed85befbde29fcd968712ad9f697b3cb7497bfb73294d50e",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/mileage-deduction.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/c11e402c7718c5180338e477f0013d12a0944e2bf0a3f746a8f0bcd3d691d99f/portfolio.md",
+      "sha256": "c11e402c7718c5180338e477f0013d12a0944e2bf0a3f746a8f0bcd3d691d99f",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/portfolio.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/2d6308f9ca949d26e447de014d978dca3326d2185d46f200407e51de20612e86/retirement.md",
+      "sha256": "2d6308f9ca949d26e447de014d978dca3326d2185d46f200407e51de20612e86",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/retirement.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/2915d2d0b1a051bce638f0140ce0c59a25544d9ec5ba3a203401308132dbcb16/social-security-cola-calculator.md",
+      "sha256": "2915d2d0b1a051bce638f0140ce0c59a25544d9ec5ba3a203401308132dbcb16",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/social-security-cola-calculator.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/0f6c21df13c61efcde441a2ae59674f5ed3d182d87add52e41be4656dba2f218/review-r2.json",
+      "sha256": "0f6c21df13c61efcde441a2ae59674f5ed3d182d87add52e41be4656dba2f218",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report (reviewPair)",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/review-r2.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/9d1de15bb4efd9bc266b83015696bd0de87afab2467ea199d982696cc4b744f3/review-b2r2.json",
+      "sha256": "9d1de15bb4efd9bc266b83015696bd0de87afab2467ea199d982696cc4b744f3",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report (reviewPair)",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/review-b2r2.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/d02fe2cd0bcfb06d617efcfb2a78ebae266727eba33c5935eb98be915e15076a/approved-review-irs.json",
+      "sha256": "d02fe2cd0bcfb06d617efcfb2a78ebae266727eba33c5935eb98be915e15076a",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report (reviewPair)",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/approved-review-irs.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/d75c3e59069af95b15a6381d0fd72db9872f2cb8b0580965d91b4c1157f5a951/approved-review-linkonly.json",
+      "sha256": "d75c3e59069af95b15a6381d0fd72db9872f2cb8b0580965d91b4c1157f5a951",
+      "checkedAt": "2026-11-25T20:37:14.973132+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report (reviewPair)",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/approved-review-linkonly.json"
+    }
+  ],
+  "findings": [
+    {
+      "id": "SEP-1",
+      "status": "open",
+      "evidence": "State the end-of-year rule as the general rule and add the Pub 560 first-plan-year exception for sole proprietors with no employees (deferrals paid before the filing deadline, without extensions)."
+    },
+    {
+      "id": "SEP-2",
+      "status": "open",
+      "evidence": "Answer directly: yes you can have both, but the employee deferral limit and the overall 415(c) limit are shared, and employer contributions to both plans count against one 20% / $75,000 ceiling. Cite Pub 560 sections."
+    },
+    {
+      "id": "SEP-3",
+      "status": "open",
+      "evidence": "Use $192,300 for 2027 with an SSA source link and add a boundary test above it, or keep the labeled note but cite why the SSA figure is not used."
+    },
+    {
+      "id": "SEP-4",
+      "status": "open",
+      "evidence": "Say 'in one plan, or split across both within one 20% / $75,000 limit'."
+    },
+    {
+      "id": "SEP-5",
+      "status": "open",
+      "evidence": "Write 'SEP IRA contribution calculator'."
+    },
+    {
+      "id": "R1-1-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Replayed scripts/test-tool-usage-1125.mjs (135 checks pass) and recomputed $100,000 profit by hand: SE tax $14,129.55, net earnings $92,935, SEP $18,587, solo $44,087 matching page and hydrated tool. 2027 IRS limits ($25,500, $75,000, $375,000, $8,500, $11,750) match saved Notice 2026-66 and IR-2027."
+    },
+    {
+      "id": "R1-1-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full rendered text; internal contradictions listed in findings (see ids). Replayed scripts/test-tool-usage-1125.mjs (135 checks pass) and recomputed $100,000 profit by hand: SE tax $14,129.55, net earnings $92,935, SEP $18,587, solo $44,087 matching page and hydrated tool. 2027 IRS limits ($25,500, $75,000, $375,000, $8,500, $11,750) match saved Notice 2026-66 and IR-2027."
+    },
+    {
+      "id": "R1-1-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "Replayed scripts/test-tool-usage-1125.mjs (135 checks pass) and recomputed $100,000 profit by hand: SE tax $14,129.55, net earnings $92,935, SEP $18,587, solo $44,087 matching page and hydrated tool. 2027 IRS limits ($25,500, $75,000, $375,000, $8,500, $11,750) match saved Notice 2026-66 and IR-2027. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-1-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "Replayed scripts/test-tool-usage-1125.mjs (135 checks pass) and recomputed $100,000 profit by hand: SE tax $14,129.55, net earnings $92,935, SEP $18,587, solo $44,087 matching page and hydrated tool. 2027 IRS limits ($25,500, $75,000, $375,000, $8,500, $11,750) match saved Notice 2026-66 and IR-2027. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-1-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Replayed scripts/test-tool-usage-1125.mjs (135 checks pass) and recomputed $100,000 profit by hand: SE tax $14,129.55, net earnings $92,935, SEP $18,587, solo $44,087 matching page and hydrated tool. 2027 IRS limits ($25,500, $75,000, $375,000, $8,500, $11,750) match saved Notice 2026-66 and IR-2027. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "W4V-1",
+      "status": "open",
+      "evidence": "Lengthen to 50 to 60 characters, for example 'Social Security Withholding Calculator: Best W-4V Rate'."
+    },
+    {
+      "id": "W4V-2",
+      "status": "open",
+      "evidence": "Either model the senior deduction with its MAGI phase-out or state beside each worked example that the senior deduction would lower the tax and may allow the next lower rate; recompute the MFJ example both ways."
+    },
+    {
+      "id": "W4V-3",
+      "status": "open",
+      "evidence": "Save the Rev. Proc. 2025-32 capture to research/sources."
+    },
+    {
+      "id": "R1-2-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Replayed engine tests and recomputed the single example by hand (provisional income $44,400, taxable benefits $13,340, deduction $18,150, tax $2,775) and the MFJ example ($4,902) from the 2026 brackets; W-4V rates 7/10/12/22 and line 7 stop instruction match saved Form W-4V."
+    },
+    {
+      "id": "R1-2-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full rendered text; internal contradictions listed in findings (see ids). Replayed engine tests and recomputed the single example by hand (provisional income $44,400, taxable benefits $13,340, deduction $18,150, tax $2,775) and the MFJ example ($4,902) from the 2026 brackets; W-4V rates 7/10/12/22 and line 7 stop instruction match saved Form W-4V."
+    },
+    {
+      "id": "R1-2-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "Replayed engine tests and recomputed the single example by hand (provisional income $44,400, taxable benefits $13,340, deduction $18,150, tax $2,775) and the MFJ example ($4,902) from the 2026 brackets; W-4V rates 7/10/12/22 and line 7 stop instruction match saved Form W-4V. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-2-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "Replayed engine tests and recomputed the single example by hand (provisional income $44,400, taxable benefits $13,340, deduction $18,150, tax $2,775) and the MFJ example ($4,902) from the 2026 brackets; W-4V rates 7/10/12/22 and line 7 stop instruction match saved Form W-4V. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-2-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Replayed engine tests and recomputed the single example by hand (provisional income $44,400, taxable benefits $13,340, deduction $18,150, tax $2,775) and the MFJ example ($4,902) from the 2026 brackets; W-4V rates 7/10/12/22 and line 7 stop instruction match saved Form W-4V. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-2-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "SEO title length 43 chars is under the 50 to 60 requirement; meta description length ok. No em-dashes in prose (only template chrome)."
+    },
+    {
+      "id": "CL-1",
+      "status": "open",
+      "evidence": "Lengthen to 50 to 60 characters, for example 'Capital Loss Carryover Calculator: Years to Use a Loss'."
+    },
+    {
+      "id": "R1-3-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "SEO title length 33 chars is under the 50 to 60 requirement; meta description length ok. No em-dashes in prose (only template chrome)."
+    },
+    {
+      "id": "COLA-1",
+      "status": "open",
+      "evidence": "Replace with a date-neutral instruction (for example: 'If you missed the paperless cut-off, the notice is mailed in December') or remove the deadline."
+    },
+    {
+      "id": "COLA-2",
+      "status": "open",
+      "evidence": "Rewrite: 'Our guide to whether Social Security is taxable covers when benefits are taxed.'"
+    },
+    {
+      "id": "R1-4-checks-sourceSupport",
+      "status": "open",
+      "evidence": "CR-1 verified: $1,850 x 1.036 = $1,916.60 gross, $1,707 net after $209.40 (engine test passes); $2,000 gives $2,072.00 and $65.50 net after the $6.50 premium rise; CMS $209.40/$6.50/$292 matches saved cms-2027-partb.txt."
+    },
+    {
+      "id": "R1-4-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full rendered text; internal contradictions listed in findings (see ids). CR-1 verified: $1,850 x 1.036 = $1,916.60 gross, $1,707 net after $209.40 (engine test passes); $2,000 gives $2,072.00 and $65.50 net after the $6.50 premium rise; CMS $209.40/$6.50/$292 matches saved cms-2027-partb.txt."
+    },
+    {
+      "id": "R1-4-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "CR-1 verified: $1,850 x 1.036 = $1,916.60 gross, $1,707 net after $209.40 (engine test passes); $2,000 gives $2,072.00 and $65.50 net after the $6.50 premium rise; CMS $209.40/$6.50/$292 matches saved cms-2027-partb.txt. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-4-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "CR-1 verified: $1,850 x 1.036 = $1,916.60 gross, $1,707 net after $209.40 (engine test passes); $2,000 gives $2,072.00 and $65.50 net after the $6.50 premium rise; CMS $209.40/$6.50/$292 matches saved cms-2027-partb.txt. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-4-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "CR-1 verified: $1,850 x 1.036 = $1,916.60 gross, $1,707 net after $209.40 (engine test passes); $2,000 gives $2,072.00 and $65.50 net after the $6.50 premium rise; CMS $209.40/$6.50/$292 matches saved cms-2027-partb.txt. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "G1-1",
+      "status": "open",
+      "evidence": "Replace $6.60 with the final $6.50 increase."
+    },
+    {
+      "id": "G1-2",
+      "status": "open",
+      "evidence": "Use $6.50 and $65.50; delete 'until CMS sets the final premium'."
+    },
+    {
+      "id": "G1-3",
+      "status": "open",
+      "evidence": "Use $112,000 / $224,000 and about 9% with the CMS 2027 fact sheet table; update the FAQ."
+    },
+    {
+      "id": "G1-4",
+      "status": "open",
+      "evidence": "Replace with a date-neutral instruction (for example: 'If you missed the paperless cut-off, the notice is mailed in December') or remove the deadline."
+    },
+    {
+      "id": "G1-5",
+      "status": "open",
+      "evidence": "Point to the Social Security COLA calculator."
+    },
+    {
+      "id": "R1-5-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Part B corrections ($209.40, +$6.50, $202.90, net $65.50) match saved CMS fact sheet, but stale $6.60 projection text, $65.40 example and 2026 IRMAA thresholds remain contradicting it."
+    },
+    {
+      "id": "R1-5-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full rendered text; internal contradictions listed in findings (see ids). Part B corrections ($209.40, +$6.50, $202.90, net $65.50) match saved CMS fact sheet, but stale $6.60 projection text, $65.40 example and 2026 IRMAA thresholds remain contradicting it."
+    },
+    {
+      "id": "R1-5-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "Part B corrections ($209.40, +$6.50, $202.90, net $65.50) match saved CMS fact sheet, but stale $6.60 projection text, $65.40 example and 2026 IRMAA thresholds remain contradicting it. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-5-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "Part B corrections ($209.40, +$6.50, $202.90, net $65.50) match saved CMS fact sheet, but stale $6.60 projection text, $65.40 example and 2026 IRMAA thresholds remain contradicting it. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-5-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Part B corrections ($209.40, +$6.50, $202.90, net $65.50) match saved CMS fact sheet, but stale $6.60 projection text, $65.40 example and 2026 IRMAA thresholds remain contradicting it. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "SSDI-1",
+      "status": "open",
+      "evidence": "Replace with a date-neutral instruction (for example: 'If you missed the paperless cut-off, the notice is mailed in December') or remove the deadline."
+    },
+    {
+      "id": "R1-6-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Part B correction ($209.40, +$6.50; $59 gross minus $6.50 = $52.50) matches CMS; SSA figures (3.6%, $1,642 to $1,701, SGA $1,770) are inherited and internally consistent across the four pages but no SSA capture is saved."
+    },
+    {
+      "id": "R1-6-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full rendered text; internal contradictions listed in findings (see ids). Part B correction ($209.40, +$6.50; $59 gross minus $6.50 = $52.50) matches CMS; SSA figures (3.6%, $1,642 to $1,701, SGA $1,770) are inherited and internally consistent across the four pages but no SSA capture is saved."
+    },
+    {
+      "id": "R1-6-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "Part B correction ($209.40, +$6.50; $59 gross minus $6.50 = $52.50) matches CMS; SSA figures (3.6%, $1,642 to $1,701, SGA $1,770) are inherited and internally consistent across the four pages but no SSA capture is saved. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-6-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "Part B correction ($209.40, +$6.50; $59 gross minus $6.50 = $52.50) matches CMS; SSA figures (3.6%, $1,642 to $1,701, SGA $1,770) are inherited and internally consistent across the four pages but no SSA capture is saved. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-6-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Part B correction ($209.40, +$6.50; $59 gross minus $6.50 = $52.50) matches CMS; SSA figures (3.6%, $1,642 to $1,701, SGA $1,770) are inherited and internally consistent across the four pages but no SSA capture is saved. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "SSI-1",
+      "status": "open",
+      "evidence": "Replace with a date-neutral instruction (for example: 'If you missed the paperless cut-off, the notice is mailed in December') or remove the deadline."
+    },
+    {
+      "id": "SSI-2",
+      "status": "open",
+      "evidence": "Remove the ** markers or use the list/bold syntax the renderer supports."
+    },
+    {
+      "id": "R1-7-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Part B correction ($209.40, +$6.50, deductible $292) matches CMS; SSI $1,029/$1,544 and arithmetic ($35 x 12 = $420, $53 x 12 = $636) are consistent; no SSA capture is saved and live SSA returned HTTP 403 to me."
+    },
+    {
+      "id": "R1-7-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full rendered text; internal contradictions listed in findings (see ids). Part B correction ($209.40, +$6.50, deductible $292) matches CMS; SSI $1,029/$1,544 and arithmetic ($35 x 12 = $420, $53 x 12 = $636) are consistent; no SSA capture is saved and live SSA returned HTTP 403 to me."
+    },
+    {
+      "id": "R1-7-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "Part B correction ($209.40, +$6.50, deductible $292) matches CMS; SSI $1,029/$1,544 and arithmetic ($35 x 12 = $420, $53 x 12 = $636) are consistent; no SSA capture is saved and live SSA returned HTTP 403 to me. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-7-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "Part B correction ($209.40, +$6.50, deductible $292) matches CMS; SSI $1,029/$1,544 and arithmetic ($35 x 12 = $420, $53 x 12 = $636) are consistent; no SSA capture is saved and live SSA returned HTTP 403 to me. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-7-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Part B correction ($209.40, +$6.50, deductible $292) matches CMS; SSI $1,029/$1,544 and arithmetic ($35 x 12 = $420, $53 x 12 = $636) are consistent; no SSA capture is saved and live SSA returned HTTP 403 to me. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "CH-1",
+      "status": "open",
+      "evidence": "Replace with a date-neutral instruction (for example: 'If you missed the paperless cut-off, the notice is mailed in December') or remove the deadline."
+    },
+    {
+      "id": "R1-8-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Part B correction matches CMS; table values consistent with the SSDI/SSI guides ($192,300 wage base; 6.2% x 192,300 = $11,922.60; difference $483.60 checks); no SSA capture saved and SSA returned 403."
+    },
+    {
+      "id": "R1-8-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full rendered text; internal contradictions listed in findings (see ids). Part B correction matches CMS; table values consistent with the SSDI/SSI guides ($192,300 wage base; 6.2% x 192,300 = $11,922.60; difference $483.60 checks); no SSA capture saved and SSA returned 403."
+    },
+    {
+      "id": "R1-8-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "Part B correction matches CMS; table values consistent with the SSDI/SSI guides ($192,300 wage base; 6.2% x 192,300 = $11,922.60; difference $483.60 checks); no SSA capture saved and SSA returned 403. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-8-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "Part B correction matches CMS; table values consistent with the SSDI/SSI guides ($192,300 wage base; 6.2% x 192,300 = $11,922.60; difference $483.60 checks); no SSA capture saved and SSA returned 403. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-8-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Part B correction matches CMS; table values consistent with the SSDI/SSI guides ($192,300 wage base; 6.2% x 192,300 = $11,922.60; difference $483.60 checks); no SSA capture saved and SSA returned 403. Reviewed against saved primary sources and engine replay."
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 1,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "previous": {
+    "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/d205619400f67400e26544da82154c0a8fec44155c924983f55149bcb7237e52/handoff-audit-r2-b1.json",
+    "sha256": "d205619400f67400e26544da82154c0a8fec44155c924983f55149bcb7237e52",
+    "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/handoff-audit-r2-b1.json"
+  },
+  "reviewPairs": [
+    {
+      "snapshot": {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/9cb351fb2c586e61d4a1748ac96463993d8cb3a044e42ddb766070318a8559c5/preview-snapshot-r2.json",
+        "sha256": "9cb351fb2c586e61d4a1748ac96463993d8cb3a044e42ddb766070318a8559c5",
+        "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/preview-snapshot-r2.json"
+      },
+      "review": {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/0f6c21df13c61efcde441a2ae59674f5ed3d182d87add52e41be4656dba2f218/review-r2.json",
+        "sha256": "0f6c21df13c61efcde441a2ae59674f5ed3d182d87add52e41be4656dba2f218",
+        "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/review-r2.json"
+      }
+    },
+    {
+      "snapshot": {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/e2c47debf2f1ebcac535815cf3f3a59c1f471f2771c934e5b03989c02283fc1a/preview-snapshot-b2r2.json",
+        "sha256": "e2c47debf2f1ebcac535815cf3f3a59c1f471f2771c934e5b03989c02283fc1a",
+        "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/preview-snapshot-b2r2.json"
+      },
+      "review": {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/9d1de15bb4efd9bc266b83015696bd0de87afab2467ea199d982696cc4b744f3/review-b2r2.json",
+        "sha256": "9d1de15bb4efd9bc266b83015696bd0de87afab2467ea199d982696cc4b744f3",
+        "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/review-b2r2.json"
+      }
+    },
+    {
+      "snapshot": {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/4ac3acc957ca774715a7d1d108997f5ed89fa46d4027fe372c722cdca00cd94c/approved-snapshot-irs.json",
+        "sha256": "4ac3acc957ca774715a7d1d108997f5ed89fa46d4027fe372c722cdca00cd94c",
+        "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/approved-snapshot-irs.json"
+      },
+      "review": {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/d02fe2cd0bcfb06d617efcfb2a78ebae266727eba33c5935eb98be915e15076a/approved-review-irs.json",
+        "sha256": "d02fe2cd0bcfb06d617efcfb2a78ebae266727eba33c5935eb98be915e15076a",
+        "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/approved-review-irs.json"
+      }
+    },
+    {
+      "snapshot": {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/c20c424186045d6260d71054939fb86fe0ff6d72f2682886f27c777f764a3800/approved-snapshot-linkonly.json",
+        "sha256": "c20c424186045d6260d71054939fb86fe0ff6d72f2682886f27c777f764a3800",
+        "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/approved-snapshot-linkonly.json"
+      },
+      "review": {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/d75c3e59069af95b15a6381d0fd72db9872f2cb8b0580965d91b4c1157f5a951/approved-review-linkonly.json",
+        "sha256": "d75c3e59069af95b15a6381d0fd72db9872f2cb8b0580965d91b4c1157f5a951",
+        "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/approved-review-linkonly.json"
+      }
+    }
+  ]
+}

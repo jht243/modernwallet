@@ -1,0 +1,56 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "write-b1",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/retirement/couples-retirement-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/mileage-deduction/irs-mileage-rate-2026/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/self-employment-tax/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/social-security-taxable-benefits-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/stock-capital-gains-tax-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/mileage-deduction/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/compare/sep-ira-vs-solo-401k",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/tax-loss-harvesting/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "2026-11-25-tool-usage"
+}

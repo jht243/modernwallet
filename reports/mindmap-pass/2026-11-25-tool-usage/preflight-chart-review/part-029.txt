@@ -1,0 +1,48 @@
+person, same walkthrough, one more question: **now that they have their answer, what do they buy to act on it?** The hardware calculator is the model case — the visitor learns they need 24 GB of VRAM; the next thing they do is shop for a 24 GB card or a Mac with enough unified memory. Putting the right product, for THEIR number, under the answer is a service, not an ad.
+
+**Site config first** — `.claude/tool-usage.site.json`:
+- `amazon_tag` — this site's own Amazon tracking ID. Missing → every fitting tool is `Verdict: blocked` (no row, no code). Use only the tag the owner set there — it may be shared across fleet sites (owner rule 2026-10-12: untagged sites share `soulcircle01-20`, and the owner lists each site on the Associates account); never pick or copy a tag yourself.
+- `affiliate_placement` — `in-tool` (default), `footer-only` or `off`. Anything but `in-tool` → `Verdict: no-fit (site rule: <value>)`.
+- The site's existing monetization wins where it fits better: its own product/store (rank 1 on the monetization ladder) or an existing affiliate engine/helper (layer3: `src/utils/affiliate.ts` `amazonProductLink()` + referral constants, `data/affiliate/catalog.ts`). Reuse the site's helper; hand-write a URL only when the site has none.
+
+**The fit test** (natural fit is the gate — a forced pick is as bad as a missed one):
+- `fit` — the purchase follows directly from the visitor's RESULT, and someone with that result would plausibly buy it to finish the job. Hardware calculator → GPU/workstation for the computed VRAM tier. Shaving cost calculator → the razor/blades the math favoured. Classroom noise meter → a printed voice-level chart or a classroom timer. Trip packing tool → the gear on their list.
+- **Legal, medical, tax and money tools (YMYL) → books (owner rule 2026-10-12).** Their visitor's next step is understanding their situation, so the picks are books on THEIR result's topic: a TSP withdrawal result → a federal-retirement planning book; a VA claim estimate → a VA-claims guide; a psychedelic-law lookup → a book on that law or the research behind it; a metabolic tool → a book by a physician or researcher on that marker. Book rules: current edition (or the standard text), a credentialed author or established publisher (Nolo, academic/medical presses, recognised practitioners), mainstream and evidence-based — no fringe, miracle-cure or get-rich titles. Heading = "Further reading on <their topic>"; one line on what the book helps them do. Never present a book as a substitute for a lawyer, doctor or adviser, and never place it inside a diagnosis, dosage, legal-outcome or buy/sell answer — under the result, after any "talk to a professional" line the tool already shows. No physical products, supplements, devices or treatments on these tools.
+- `no-fit` — the honest answer is "nothing", or a product or book would read as bolted on. Say why in one line.
+- `blocked` — it fits but the site has no `amazon_tag` (or the user must decide something). List the picks you would ship so the owner can unblock it.
+
+**Pick the products (fit only):**
+1. **Variety, ranked (owner rule 2026-10-13).** List EVERY kind of item this person could buy to act on the result — not one product type. Hardware calculator example: complete computers (Mac Studio / Mac mini with enough unified memory, prebuilt AI workstations, mini PCs), the GPU itself, then what the build also needs (RAM, power supply, NVMe drive), then books/courses on running local models. Rank the list by priority: (1) how directly it completes the visitor's job for THIS result, (2) how likely this persona buys it (a dev lead buys a whole machine before parts), (3) order value. Aim for **3+ product types** in the ranked list for every `fit` tool.
+   Then map the tool's OUTPUT tiers to the ranked list (e.g. ≤16 GB → Mac mini 24–32 GB, 16 GB card, 32 GB RAM kit · ≤24 GB → Mac Studio 64 GB, RTX 4090 prebuilt, 24 GB card · ≤48 GB → Mac Studio 128 GB, 48 GB workstation card · above → "rent, don't buy"). Every tier gets its picks **in priority order, highest first**, or an explicit "nothing to buy here" (rent / use what you own). Books work on any tool where a book genuinely helps more than a product (search with `--index Books`). Include the honest non-purchase option when one exists (cloud GPU, a free alternative) — via the site's referral constant if it has one.
+2. Find real listings: `python3 scripts/tool_usage/amazon_pick.py "<exact product phrase>" ["<phrase 2>" …] --index Electronics` (`--index Books` for books — search by exact title + author) (Creators API; returns real ASINs + titles with the site's tag). Pin the ASIN whose title names the exact brand + model you mean — no resellers, renewed units, clones or bundles. Nothing confident → keep the search link it returns. **Never type an ASIN the script didn't return.**
+3. Write `## Monetization` in the persona file: `Verdict: fit|no-fit|blocked`, then the reasoning in the persona's terms, then (fit/blocked) the **ranked product-type list** (numbered, highest priority first) and the tier → pick table with ASINs and the one-line "why this, for this result".
+
+**Each `fit` becomes one chart row:** bucket `update existing body text`, **format `tool monetize`**, target = the component file + route, problem = the persona + the result that triggers the purchase, solution = the tier → product table with ASINs, the link helper, and where it renders. The `chart` gate fails if a `fit` tool has no `tool monetize` row.
+
+**How picks appear in the tool** (the auditor fails a row that breaks one; the Tool-fix guardrails below apply too):
+- Inside the result panel, BELOW the answer, only after the visitor computes; picks change when the result changes. Never above the answer, never a popup, never delaying or hiding the result.
+- Wrapped in `<div data-tool-picks="<tool slug>">` (the `live` gate looks for it). Heading in plain words tied to the result ("Hardware that fits 24 GB"). Up to 5 picks per tier, shown in priority order (highest first), mixing product types where they fit (a complete computer, the part, the accessory); each = product name + one line on why it fits THIS number + a "Check price on Amazon" button.
+- No price, rating, stars, stock or "deal" claims stored in code (Amazon's 24-hour rule) — the button sends them to the live price.
+- Links: the site's helper with its tag, `target="_blank"`, `rel="sponsored nofollow noopener noreferrer"`. One disclosure line directly under the picks: "As an Amazon Associate we earn from qualifying purchases."
+- Monetization stays in the tool: no affiliate links added to the page's prose in this run (that is /monetization-pass's job).
+
+
+For each `persona` tool only: list the 2–3 jobs this same person does right before or right after this one (noise meter → a voice-level chart to print, a "quiet work" timer that ties to the meter; TSP withdrawal calculator → TSP vs IRA rollover comparison). Each becomes a `create new content` row, format `interactive tool` / `calculator` / `quiz/assessment`, with the seed tool + persona card as the `problem` evidence and what the tool DOES (inputs → outputs) in `solution`.
+
+Client-side, deterministic tools only (no tool that costs us an API call per use). Do not dedup or validate here — mindmap's coverage lookup and demand ladder do that.
+
+## STEP 5 — Run /mindmap-pass in full, unattended
+Write the STEP 3 + STEP 4 rows, the persona cards and the usage numbers into one brief and run **`/mindmap-pass` in full** — every phase, in order, the same way the X-trends routine does. **Read each phase file; do not paraphrase.**
+
+> Unattended run: save the chart to `reports/mindmap-pass/<YYYY-MM-DD>-tool-usage.md` (this exact name, so it never collides with another mindmap run today), treat the Phase 0 manifest as approved, and continue to Phase 9 without stopping.
+
+**Every phase, in order, each phase file read before you act on it** — build-brief, 0, 1, 2, 3 (+3c), 4, 5, 6, 7, 7b, 8, 9. A phase with nothing to do still runs and says "nothing to do" in the Phase 8 summary. Files the gates check:
+- after build-brief + Phase 0: save Phase 0's manifest table to `reports/tool-usage-pass/<DATE>/phase0-manifest.md`, then `tool_usage_gate.py chart`
+- Phase 4: paste the independent auditor's full report to `reports/tool-usage-pass/<DATE>/audit.md`, ending with a line `VERDICT: PASS` (or `VERDICT: FAIL` — then fix and re-audit; the gate refuses a FAIL)
+- Phase 8: save the summary to `reports/tool-usage-pass/<DATE>/phase8-summary.md`
+- before Phase 9's deploy: `tool_usage_gate.py build`, then `tool_usage_gate.py final` (STEP 7's ledger lines must already be written)
+- after Phase 9's deploy: `tool_usage_gate.py live`
+
+Demand rule: a `tool fix` row is backed by real usage — volume never vetoes it. A new-tool row needs mindmap's normal demand read, but "a real user of the seed tool needs this next" is a valid signal when keyword tools return nothing; label it so.
+
+### Tool rows: mindmap builds them 

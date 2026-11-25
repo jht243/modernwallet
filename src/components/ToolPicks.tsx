@@ -27,6 +27,8 @@ export const BOOKS = {
   getWhatsYours: { asin: "1501144766", title: "Get What's Yours (revised) by Laurence Kotlikoff, Philip Moeller and Paul Solman" },
   moneyLast: { asin: "1982115831", title: "How to Make Your Money Last by Jane Bryant Quinn" },
   pfauGuidebook: { asin: "1945640154", title: "Retirement Planning Guidebook by Wade Pfau" },
+  // Tool-usage pass 2026-11-25: the listing returned first by amazon_pick.py for the exact title and author (couples retirement calculator).
+  pfauGuidebookCurrent: { asin: "1945640197", title: "Retirement Planning Guidebook by Wade Pfau (The Retirement Researcher Guide Series)" },
   workingForYourself: { asin: "141333217X", title: "Working for Yourself: Law & Taxes for Independent Contractors by Stephen Fishman (Nolo)" },
   deductIt: { asin: "1413333052", title: "Deduct It! Lower Your Small Business Taxes by Stephen Fishman (Nolo)" },
   taxSavvy: { asin: "1413332315", title: "Tax Savvy for Small Business: A Complete Tax Strategy Guide (Nolo)" },

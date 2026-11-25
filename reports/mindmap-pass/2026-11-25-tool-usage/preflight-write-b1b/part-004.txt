@@ -1,0 +1,73 @@
+preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-pub560.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/06dc2dd8c45947ff7e7bb95f5e28d7fab0f4022fa7ed03781706b1241377bbdd/irs-topic409.txt",
+      "sha256": "06dc2dd8c45947ff7e7bb95f5e28d7fab0f4022fa7ed03781706b1241377bbdd",
+      "checkedAt": "2026-11-25T19:41:52.421628+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-topic409.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/c6a06f8f4972a55bc2ec9b37b4232d85ae1098dfa2852efa3304c9e9cf37c644/irs-w4v.txt",
+      "sha256": "c6a06f8f4972a55bc2ec9b37b4232d85ae1098dfa2852efa3304c9e9cf37c644",
+      "checkedAt": "2026-11-25T19:41:52.421628+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-w4v.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/aa366377e859c7006990caab5cc781a60f892fc05529c5efc697271f3237cf2e/investing.md",
+      "sha256": "aa366377e859c7006990caab5cc781a60f892fc05529c5efc697271f3237cf2e",
+      "checkedAt": "2026-11-25T19:41:52.421628+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/investing.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/3aad81e2c236bdb4ed85befbde29fcd968712ad9f697b3cb7497bfb73294d50e/mileage-deduction.md",
+      "sha256": "3aad81e2c236bdb4ed85befbde29fcd968712ad9f697b3cb7497bfb73294d50e",
+      "checkedAt": "2026-11-25T19:41:52.421628+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/mileage-deduction.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/c11e402c7718c5180338e477f0013d12a0944e2bf0a3f746a8f0bcd3d691d99f/portfolio.md",
+      "sha256": "c11e402c7718c5180338e477f0013d12a0944e2bf0a3f746a8f0bcd3d691d99f",
+      "checkedAt": "2026-11-25T19:41:52.421628+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/portfolio.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/2d6308f9ca949d26e447de014d978dca3326d2185d46f200407e51de20612e86/retirement.md",
+      "sha256": "2d6308f9ca949d26e447de014d978dca3326d2185d46f200407e51de20612e86",
+      "checkedAt": "2026-11-25T19:41:52.421628+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/retirement.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/2915d2d0b1a051bce638f0140ce0c59a25544d9ec5ba3a203401308132dbcb16/social-security-cola-calculator.md",
+      "sha256": "2915d2d0b1a051bce638f0140ce0c59a25544d9ec5ba3a203401308132dbcb16",
+      "checkedAt": "2026-11-25T19:41:52.421628+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/social-security-cola-calculator.md"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-25-tool-usage/handoff-write-1b.json",
+    "sha256": "e19994a7026cce71beb9d85a8f7ea8dbb5707155a71a48568136981f3b9ef7d1"
+  }
+}
+

@@ -17,8 +17,9 @@ export const COLA_2027_PCT = 3.6;
 /** 2026 standard Medicare Part B premium (CMS, 2026 Medicare Parts A & B premiums fact sheet). Used only to
  *  rebuild a benefit from a deposit: benefit ≈ deposit + premium (within $1, because SSA rounds the payment down). */
 export const PART_B_2026_STANDARD = 202.9;
-/** Projected 2027 standard Part B premium (2026 Medicare Trustees Report). CMS sets the final figure in the fall. */
-export const PART_B_2027_PROJECTED = 209.5;
+/** Final 2027 standard Part B premium: $209.40, up $6.50 from $202.90 (CMS fact sheet "2027 Medicare Parts A & B Premiums and
+ *  Deductibles", November 17, 2026). Higher-income enrollees pay income-related adjustment amounts on top; they enter their own figure. */
+export const PART_B_2027_STANDARD = 209.4;
 
 /** Chart rows: benefit levels from $500 to $4,000 in $250 steps. */
 export const CHART_MIN = 500;

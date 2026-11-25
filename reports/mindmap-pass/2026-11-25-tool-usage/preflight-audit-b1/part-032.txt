@@ -1,0 +1,115 @@
+first readings and all existing review/release requirements remain.
+
+Before dispatching a writer, run the existing render-chart/validate-chart preparation checks. They check already-referenced current analysis packets, exact reader-question/case identities and the installed writer's canonical job scope together, without reserving paid generation. Keep the original jobId in both manifest and the actual independent review. Use the exact approved reader_question string, including internal evidence annotations, for packet.readerQuestion and deterministic case lookup; when it changes, regenerate that lookup and refresh its references in the same preparation correction. Keep these internal annotations out of public copy. Historical chart receipts retain their original structural validation scope.
+
+Join each native worker's terminal handback, including blocked/failure handbacks, before the next phase. Workers retain a current internal result on every exit through the existing handoff path. A dispatcher must not wait only for a successful content diff that will never appear after a blocked handback, or add fixed sleeps after completion. Use native completion or an artifact-aware blocking wait for the current terminal result; keep genuine deployment/readiness checks. No new human gate.
+
+<!-- credential-free-deployment-proof-20261110 -->
+Before paid content production, use the installed `deployment-evidence.py --check --timeout 0` to confirm the native public host-source proof is available. Its endpoint contains only the actual provider-bound commit/repository metadata; no keys are needed. During publication, run `python3 .claude/tools/deployment-evidence.py --expected-commit FULL_CONTENT_COMMIT --out NEW_INTERNAL_HOST_PROOF.json` as one foreground command with the existing long Bash timeout. This waits boundedly for the actual deployed source to include the intended commit and verifies repository ancestry. Use the proof’s actual `commit` in `rendered-audit.py record-deployment`, together with exact live comparison and genuine retained reviews. Do not replace it with a URL/200 assertion or fabricate host evidence; genuine required customer/professional holds and platform protections remain. Competitor publication recovery begins with `competitor-handoff.py publication-plan --out NEW_INTERNAL_DIRECTORY/plan.json`, which selects the actual last per-route journal records and projects existing decisions without adding reviews. A remaining original content round is distinct from an exhausted budget. Native clients retain their scoped release rules.
+<!-- /credential-free-deployment-proof-20261110 -->
+
+For new scheduled editorial runs, use this repository’s checked-in land-run.sh mark and land commands from the start. Continue to build and compare the exact approved content live. An explicit production denial remains pending at its original boundary; never try a different release path after a denial.
+
+[Source: reports/mindmap-pass/2026-11-25-tool-usage/preflight-audit-b1/task.json]
+{
+  "version": 1,
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "2026-11-25-tool-usage",
+  "producer": "write-b1",
+  "routes": [
+    "/social-security-cola-calculator/",
+    "/guides/2027-social-security-cola/",
+    "/guides/2027-ssdi-cola/",
+    "/guides/ssi-increase-2027/",
+    "/guides/social-security-changes-2027/",
+    "/retirement/couples-retirement-calculator/",
+    "/mileage-deduction/irs-mileage-rate-2026/",
+    "/sep-ira-solo-401k-contribution-calculator/",
+    "/social-security-withholding-calculator/",
+    "/capital-loss-carryover-calculator/",
+    "/self-employment-tax/",
+    "/social-security-taxable-benefits-calculator/",
+    "/stock-capital-gains-tax-calculator/",
+    "/mileage-deduction/",
+    "/compare/sep-ira-vs-solo-401k",
+    "/guides/tax-loss-harvesting/"
+  ],
+  "nextAction": "Independently audit captured rendered Mindmap routes against primary sources and editorial standards.",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/4a7e08e80f932790dfa8bb1787140b1e5646e3e23c5e283f698ab495648c0589/approval-manifest.json",
+      "sha256": "4a7e08e80f932790dfa8bb1787140b1e5646e3e23c5e283f698ab495648c0589",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/eab8e628b8bc0a2ae68703ef2d3d0a5188d1507f35c03d3d2c4215547adeaba2/2026-11-25-tool-usage.md",
+      "sha256": "eab8e628b8bc0a2ae68703ef2d3d0a5188d1507f35c03d3d2c4215547adeaba2",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/b4e39ff296166fbe09bd114305adf6f21c0eef81a37e049573fc826a76113e72/preview-snapshot.json",
+      "sha256": "b4e39ff296166fbe09bd114305adf6f21c0eef81a37e049573fc826a76113e72",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/preview-snapshot.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/61c6eb0a7163fe4cbbb9aad7f8ce7e0c7b9e120aaa65dbe97d6075e561b6f6f7/readiness.md",
+      "sha256": "61c6eb0a7163fe4cbbb9aad7f8ce7e0c7b9e120aaa65dbe97d6075e561b6f6f7",
+      "checkedAt": "2026-11-25T19:41:52.421628+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/c7ab383e60370ee6227720d260018028cbbaf9d9cd0217dddd9857c67e0bf979/chart-review.json",
+      "sha256": "c7ab383e60370ee6227720d260018028cbbaf9d9cd0217dddd9857c67e0bf979",
+      "checkedAt": "2026-11-25T19:28:37.263454+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/d197e7ff8a423d0ced3dee927ea2f1a3e8f5ec795d8ab315b46a6eb5b55e7415/2026-11-25-tool-usage-brief.md",
+      "sha256": "d197e7ff8a423d0ced3dee927ea2f1a3e8f5ec795d8ab315b46a6eb5b55e7415",
+      "checkedAt": "2026-11-25T19:41:52.421628+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage-brief.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/934f1ae5414528dc4f3f40692ecd8efd21010002d2d331f5620c138019f45fdc/coverage-lookup.txt",
+      "sha256": "934f1ae5414528dc4f3f40692ecd8efd21010002d2d331f5620c138019f45fdc",
+      "checkedAt": "2026-11-25T19:41:52.421628+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/58eff2c6c795921e29bf025ba692abc6d48fe2b32e332c9515fd457c95bd79e7/serp.json",
+      "sha256": "58eff2c6c795921e29bf025ba692abc6d48fe2b32e332c9515fd457c95bd79e7",
+      "checkedAt": "2026-11-25T19:41:52.421628+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/serp.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/b85c3f2d320280ba4e55cc8451ae1c119990d0345f0a83d0647d10586d52eeea/keyword-volumes.json",
+      "sha256": "b85c3f2d320280ba4e55cc8451ae1c119990d0345f0a83d0647d10586d52eeea",
+      "checkedAt": "2026-11-25T19:41:52.421628+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/keyword-volumes.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/f1d04f4cd12b0e3e260cea0acb91a0f33c4ebd6ec53e59f53a1410971b304877/keyword-volumes2.json",
+      "sha256": "f1d04f4cd12b0e3e260cea0acb91a0f33c4ebd6ec53e59f53a1410971b304877",
+      "checkedAt": "2026-11-25T19:41:52.421628+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/keyword-volumes2.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/d6859cb8bf4a307655a8205dd556d25cd4006f5d5fec51c4fd8d663e6b579d06/kw-status.json",
+      "sha256": "d6859cb8bf4a307655a8205dd556d25cd4006f5d5fec51c4fd8d663e6b579d06",
+      "checkedAt": "2026-11-25T

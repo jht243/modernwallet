@@ -1,0 +1,172 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "write-b1",
+  "route": "/social-security-withholding-calculator/",
+  "readerQuestion": "How much federal tax should I withhold from my Social Security benefit (Form W-4V)? [PAA 1/6 on-topic: 'How is Social Security withholding calculated?'; ac 14 how/can/does questions on submitting W-4V; 5/6 PAA off-topic]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/approval-manifest.json",
+      "sha256": "4a7e08e80f932790dfa8bb1787140b1e5646e3e23c5e283f698ab495648c0589"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/chart-review.json",
+      "sha256": "0d92dc4871a0c86eb7511868198a6c7651627fca1dc7bcb92d26b64220e9caa5"
+    },
+    "actionId": "C2"
+  },
+  "presentation": {
+    "medium": "interactive tool",
+    "placement": "section 1: calculator results panel plus the four-rate comparison",
+    "reason": "The best W-4V rate depends on the reader's benefit and other income; the four-rate comparison needs their numbers.",
+    "readerInputs": [
+      "Monthly benefit",
+      "Filing status",
+      "Other taxable income",
+      "Existing withholding"
+    ],
+    "interaction": {
+      "decision": "build",
+      "reason": "The answer depends on the reader's own numbers; a static table cannot show their result."
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Live-updating numbers are enough; decorative motion adds nothing."
+    }
+  },
+  "basis": "calculated",
+  "decisionGap": "The taxable-benefits calculator stops at the taxable amount, and SSA and IRS pages list the four W-4V rates without helping a reader see which one covers their own estimated tax. No page compares the four rates against an estimate.",
+  "finding": "A single filer 65 or older with a $2,400 monthly benefit and $30,000 of other income has $13,340 of taxable benefits and about $2,775 of estimated 2026-rules federal tax; 7% of each payment withholds $2,016 (short), 10% withholds $2,880 (about $105 over), so 10% is the lowest allowed rate that does not fall short. Form W-4V allows only 7%, 10%, 12% or 22% of each payment.",
+  "conditions": "Tax year basis is 2026: 2026 brackets and standard deduction (Rev. Proc. 2025-32) are applied and 2027 brackets are not; the senior deduction, credits, state tax and itemized deductions are left out so the estimate can run high; the reader may enter tax already paid and the months the rate would apply.",
+  "whatWouldChange": "If other income is higher so that estimated tax exceeds 22% of the yearly benefit, no W-4V rate covers it and estimated payments or withholding on other income are needed; if the benefit is fully tax-free or tax is already covered, no request is needed; a rate change by law or 2027 bracket publication would change the figures.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-25-tool-usage/evidence/social-security-withholding-calculator/cases.json",
+    "sha256": "b2e6cc18e63f2c7901a9ff12b863d637ba6ed9d00762e009e7d43944ac366b05"
+  },
+  "caseDecisions": "Retrieved cases.json candidates (owned properties, a bowling company, law firms, game studios) were all outside U.S. personal tax and retirement guidance, so none is used and no client observation appears on the page; attribution is limited to our internal calculation.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage-brief.md",
+      "sha256": "d197e7ff8a423d0ced3dee927ea2f1a3e8f5ec795d8ab315b46a6eb5b55e7415"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/coverage-lookup.txt",
+      "sha256": "934f1ae5414528dc4f3f40692ecd8efd21010002d2d331f5620c138019f45fdc"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/serp.json",
+      "sha256": "58eff2c6c795921e29bf025ba692abc6d48fe2b32e332c9515fd457c95bd79e7"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/keyword-volumes.json",
+      "sha256": "b85c3f2d320280ba4e55cc8451ae1c119990d0345f0a83d0647d10586d52eeea"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/keyword-volumes2.json",
+      "sha256": "f1d04f4cd12b0e3e260cea0acb91a0f33c4ebd6ec53e59f53a1410971b304877"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/kw-status.json",
+      "sha256": "d6859cb8bf4a307655a8205dd556d25cd4006f5d5fec51c4fd8d663e6b579d06"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/ac-w-4v-social-security.csv",
+      "sha256": "5b1480e925ed8c37f23d21138487dd8baeaabb9603f869320867d5107da022d0"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/calc-examples.json",
+      "sha256": "76302d3e54e979b5581893fea05e3c183dd34f22356ee1d3157e748fc763e75b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-form-w4v.txt",
+      "sha256": "aff3f79dcbbc25aaa7d5942219a0c53947aad3642406e305ca179296f4ff44f8"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-senior-deduction.txt",
+      "sha256": "1dda6d2244aa32aa968d26f08be7b7ae728df18827cb306ca3b07afee2dd0cd1"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-rp-2025-32.txt",
+      "sha256": "297091b348685bbd1b7770eb376513502321f767f738a01be024c34d0b259146"
+    }
+  ],
+  "presentationArtifacts": [
+    {
+      "path": "src/lib/social-security-withholding.ts",
+      "sha256": "5b76acb0d710e369f1004c95855f489f0252a650da5b49980e2173e0bfd8fcdc"
+    },
+    {
+      "path": "src/components/SocialSecurityWithholdingCalculator.tsx",
+      "sha256": "fa2d86fb88c7a817f7fb6eb90b5ab85c576394678d8c633a23b7b612d5e6cc43"
+    }
+  ],
+  "method": "Taxable benefits by Pub 915 Worksheet 1 (existing engine); federal tax = ordinary-income brackets on other income plus taxable benefits, less the 2026 standard deduction and the age-65 additional amount; each W-4V rate x monthly benefit x months compared with tax still to cover; lowest rate whose withholding is at least the tax is recommended. Executed through scripts/test-tool-usage-1125.mjs.",
+  "units": "USD per year unless stated; rates as decimals",
+  "limitations": "2026 tax rules only; no state tax, credits, senior deduction, itemized deductions, capital-gain rates or additional Medicare tax; filing status limited to single, head of household, married filing jointly and married filing separately living together. The $6,000-per-person senior deduction (2025 to 2028; MAGI phase-out above $75,000, $150,000 joint) is left out and disclosed beside the worked examples; with it the default example tax is about $2,055 (10% still closest) and the joint example about $3,462 (10% covers it).",
+  "counterexample": "At a $3,000 monthly benefit and $200,000 of other income the estimated tax is $44,440 and even 22% withholds only $7,920, so no W-4V rate covers the tax; at a $1,500 monthly benefit with no other income the benefits are not taxable and no withholding is needed.",
+  "execution": {
+    "command": [
+      "node",
+      "scripts/test-tool-usage-1125.mjs",
+      "reports/mindmap-pass/2026-11-25-tool-usage/evidence/social-security-withholding-calculator/output.json",
+      "w4v"
+    ],
+    "code": {
+      "path": "scripts/test-tool-usage-1125.mjs",
+      "sha256": "971cf6d2f3ce597ff45b27a5fde4c10e89246eecd2e48a2cf02ed3fd71e71fdb"
+    },
+    "inputs": [
+      {
+        "path": "src/lib/social-security-withholding.ts",
+        "sha256": "5b76acb0d710e369f1004c95855f489f0252a650da5b49980e2173e0bfd8fcdc"
+      },
+      {
+        "path": "src/lib/social-security-taxable.ts",
+        "sha256": "83784cd4ffc41e9d0d730ef646c8527e51c745641a98fb262264fa15add649c5"
+      },
+      {
+        "path": "src/lib/tax-bracket.ts",
+        "sha256": "ee67769761fe38cde726dc35aaefac675c47c3df137ee40a8123dd0f19d8431e"
+      },
+      {
+        "path": "src/lib/stock-capital-gains.ts",
+        "sha256": "778deb5b349499e742c62a0510a4d2783be84b82dea545e29819dfb376bc1718"
+      },
+      {
+        "path": "src/components/SocialSecurityWithholdingCalculator.tsx",
+        "sha256": "fa2d86fb88c7a817f7fb6eb90b5ab85c576394678d8c633a23b7b612d5e6cc43"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-form-w4v.txt",
+        "sha256": "aff3f79dcbbc25aaa7d5942219a0c53947aad3642406e305ca179296f4ff44f8"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-w4v.txt",
+        "sha256": "c6a06f8f4972a55bc2ec9b37b4232d85ae1098dfa2852efa3304c9e9cf37c644"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-senior-deduction.txt",
+        "sha256": "1dda6d2244aa32aa968d26f08be7b7ae728df18827cb306ca3b07afee2dd0cd1"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-rp-2025-32.txt",
+        "sha256": "297091b348685bbd1b7770eb376513502321f767f738a01be024c34d0b259146"
+      }
+    ],
+    "output": {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/evidence/social-security-withholding-calculator/output.json",
+      "sha256": "b0f83491938f03cbcfaaea7a794ee711b29b725caceec6730101060ee2d598dc"
+    }
+  },
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [
+      "scripts/test-tool-usage-1125.mjs",
+      "output.json"
+    ],
+    "scopeAndLimits": "Internal calculation reusing the site's Pub 915 and 2026 bracket engines; the four rates and their limits come from IRS Form W-4V; arithmetic only, not tax advice.",
+    "publicMethod": "On-page \"How Form W-4V Withholding Works\" section, the four-rate table in the calculator and the tax-year note beside the result.",
+    "placement": "beside the worked example in the intro and in Which W-4V Rate Fits Your Income"
+  },
+  "takeaway": "Pick the lowest W-4V rate whose yearly total covers your estimated tax; if even 22% falls short, add estimated payments, and if your benefits are not taxable, skip the form. Confirm unusual income with a tax professional.",
+  "growth": "reports/mindmap-pass/2026-11-25-tool-usage/evidence/social-security-withholding-calculator/growth.json"
+}

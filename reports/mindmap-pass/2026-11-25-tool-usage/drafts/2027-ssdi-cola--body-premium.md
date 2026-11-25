@@ -1,0 +1,3 @@
+Information on other Medicare changes for 2027 will be posted at [Medicare.gov](https://www.medicare.gov/).
+
+The net size of the SSDI raise is the COLA raise minus that increase. Here, $59 is the gross raise on the $1,642 average benefit and the Part B increase of $6.50 comes out of it for standard-premium enrollees, leaving about $52.50. The COLA notice and the my Social Security Message Center show the exact premium and deductions.

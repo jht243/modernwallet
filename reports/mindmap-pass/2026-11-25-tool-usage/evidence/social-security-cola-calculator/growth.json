@@ -1,0 +1,12 @@
+{
+  "originRoutine": "tool-usage-mindmap-auto",
+  "route": "/social-security-cola-calculator/",
+  "queryFamily": "What will my January 2027 Social Security check be after the Part B premium?",
+  "hypothesis": "Correcting the stale premium restores the answer the persona was blocked on.",
+  "primaryMetric": "incremental Google clicks",
+  "baselineReference": "unavailable: no GSC access in this environment (not zero)",
+  "comparatorPlan": "age-matched tool pages; day-28 and day-56 windows declared before reading outcomes",
+  "changeScope": "existing tool fix",
+  "sourceRefreshTrigger": "IRS or SSA limit announcements; CMS premium changes",
+  "outcomeStatus": "local-only; Google impact unmeasured; GSC unavailable (not zero)"
+}

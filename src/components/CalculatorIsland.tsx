@@ -82,6 +82,9 @@ import DebtPayoffCalculator from "./DebtPayoffCalculator";
 import Rule78Calculator from "./Rule78Calculator";
 import DebtToIncomeCalculator from "./DebtToIncomeCalculator";
 import SocialSecurityTaxableCalculator from "./SocialSecurityTaxableCalculator";
+import SepSolo401kCalculator from "./SepSolo401kCalculator";
+import SocialSecurityWithholdingCalculator from "./SocialSecurityWithholdingCalculator";
+import CapitalLossCarryoverCalculator from "./CapitalLossCarryoverCalculator";
 import CharitableDeductionCalculator from "./CharitableDeductionCalculator";
 import CarLoanInterestDeductionCalculator from "./CarLoanInterestDeductionCalculator";
 import HiddenHomeCostCalculator from "./HiddenHomeCostCalculator";
@@ -200,6 +203,11 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "rule-of-78-calculator": Rule78Calculator,
   "debt-to-income-ratio-calculator": DebtToIncomeCalculator,
   "social-security-taxable-benefits-calculator": SocialSecurityTaxableCalculator,
+  // tool-usage pass (2026-11-25): the next tool each persona reached for — SEP IRA vs solo 401(k) maximums (seed: self-employment tax),
+  // Form W-4V withholding rate (seed: Social Security taxable benefits / COLA), capital loss carryover schedule (seed: stock capital gains).
+  "sep-ira-solo-401k-contribution-calculator": SepSolo401kCalculator,
+  "social-security-withholding-calculator": SocialSecurityWithholdingCalculator,
+  "capital-loss-carryover-calculator": CapitalLossCarryoverCalculator,
   "charitable-donation-tax-deduction-calculator": CharitableDeductionCalculator,
   // X-trends pass (2026-10-27): car loan interest deduction (Schedule 1-A Part IV), tax years 2025 to 2028.
   "car-loan-interest-deduction-calculator": CarLoanInterestDeductionCalculator,

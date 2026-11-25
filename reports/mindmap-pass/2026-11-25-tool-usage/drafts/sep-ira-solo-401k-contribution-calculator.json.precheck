@@ -1,0 +1,41 @@
+{
+  "metaTitle": "SEP IRA Contribution Calculator: Solo 401(k) Limits",
+  "metaDescription": "Compare your maximum SEP IRA and solo 401(k) contributions. Enter your net profit to see deferrals, employer shares, and limits for 2026 and 2027.",
+  "introText": "You can put roughly 20% of net earnings into a SEP IRA. A solo 401(k) allows that same 20% employer share plus an employee deferral of up to $25,500 for 2027. Both plans cap contributions at the $75,000 annual limit for 2027.\n\nIn our internal calculation, we ran the SEP IRA and solo 401(k) formulas for $100,000 of profit to see how the two accounts compare. Net earnings come to $92,935 after subtracting $14,130 in self-employment tax. For an owner under 50, the SEP IRA maximum is $18,587. The solo 401(k) maximum is $44,087, which is $25,500 more than the SEP IRA.",
+  "howItWorks": "The SEP IRA contribution calculator figures net earnings before finding your contribution cap. Net earnings equal your Schedule C profit minus half of your self-employment tax. For self-employment tax, 92.35% of profit serves as the earnings base. That base faces 12.4% for Social Security and 2.9% for Medicare. There is no self-employment tax under $400 of net earnings. You can calculate your tax using our [self-employment tax calculator](/self-employment-tax/).\n\nUnder [IRS Publication 560](https://www.irs.gov/publications/p560), self-employed business owners use a reduced contribution rate. A regular business can contribute up to 25% of compensation for an employee. Because an owner's contribution lowers net earnings, a 25% plan rate becomes an effective 20% rate on net earnings. A SEP IRA allows only this employer contribution. Earnings above the annual compensation limit are ignored.\n\nOfficial limits change each tax year under [IRS Notice 2026-66](https://www.irs.gov/pub/irs-drop/n-26-66.pdf). For 2027, the elective deferral limit is $25,500. That limit was $24,500 for 2026. The section 415(c) annual limit is $75,000 for 2027. The previous annual limit was $72,000 for 2026. The annual compensation limit is $375,000 for 2027. It was $360,000 for 2026. Catch-up contributions sit outside the annual limit. The catch-up for age 50 or older is $8,500 for 2027. That catch-up was $8,000 for 2026. Between ages 60 and 63, the catch-up contribution is $11,750. The corresponding limit was $11,250 for 2026.\n\nA solo 401(k) allows the employer share plus an employee elective deferral. On $100,000 of profit, net earnings are $92,935. The SEP IRA maximum is $18,587. The solo 401(k) adds the $25,500 deferral, bringing the total to $44,087. At $20,000 of profit, self-employment tax is $2,826. Net earnings reach $18,587, which limits the SEP IRA to $3,717. The solo 401(k) allows the full $18,587 of net earnings because the deferral is limited by earnings. For a detailed breakdown of rules and filing choices, explore our [SEP-IRA vs Solo 401(k) comparison](/compare/sep-ira-vs-solo-401k/).\n\nPlan setup deadlines differ between the two retirement accounts. A SEP IRA can be established as late as the due date of your return, including extensions. A sole proprietor with no employees can adopt a section 401(k) plan after the tax year ends, if adopted by the filing deadline without extensions. Employee deferrals for a solo 401(k) must be elected by the end of the tax year. The calculator assumes a sole proprietor or single-member LLC with Schedule C profit and no employees. It also assumes you share your deferral limit across any other 401(k) or 403(b) plans. For tax year 2027, calculations use the 2026 Social Security wage base of $184,500. This wage base assumption only affects profit above roughly $199,800.\n\nFor most sole proprietors, a solo 401(k) provides much higher contribution room because the employee deferral adds to the 20% employer share. At $500,000 of profit, both accounts reach the $75,000 limit, making the SEP IRA simpler to administer. This guidance applies to self-employed individuals with no outside staff. It is not for business owners with eligible employees or workers who already max out a workplace 401(k) plan. Hiring staff, changing your deferrals at another job, or adjustments to annual IRS limits would change the optimal choice. Enter your Schedule C profit into the sep ira contribution calculator above to compare both maximums before opening an account.",
+  "faqs": [
+    {
+      "question": "How much am I allowed to contribute to my SEP IRA?",
+      "answer": "You can contribute up to 20% of your net self-employment earnings. For 2027, total contributions cannot exceed $75,000. For 2026, the maximum cap is $72,000. On $100,000 of profit, an owner under 50 can contribute $18,587."
+    },
+    {
+      "question": "How is SEP IRA contribution calculated for the self-employed?",
+      "answer": "The contribution starts by subtracting half of your self-employment tax from Schedule C profit to find net earnings. You then multiply those net earnings by an effective rate of 20%. Any earnings above the annual compensation limit are excluded."
+    },
+    {
+      "question": "What is the solo 401(k) contribution limit for 2027?",
+      "answer": "The overall limit is $75,000 for 2027 under section 415(c). This total includes an employee elective deferral of up to $25,500 plus the employer share. Savers age 50 or older can add an $8,500 catch-up outside the annual limit. For ages 60 to 63, the catch-up contribution is $11,750."
+    },
+    {
+      "question": "What is the SEP IRA contribution deadline?",
+      "answer": "You can set up and fund a SEP IRA as late as the due date of your income tax return, including extensions. Contributions made by that deadline are deductible for that tax year. This extended deadline gives you time to calculate net earnings after the calendar year closes."
+    },
+    {
+      "question": "How do SEP IRA contributions affect taxes?",
+      "answer": "Contributions are deducted from your gross income for the tax year the contribution is made for. You must make the contribution by the tax return due date, including extensions, to take the deduction. The deduction lowers your income tax liability, but it does not reduce your self-employment tax."
+    },
+    {
+      "question": "Can I have a SEP IRA and a solo 401(k) at the same time?",
+      "answer": "Official guidance in IRS Publication 560 does not address maintaining both plans at the same time. You should confirm your eligibility with a qualified tax professional or your plan provider before attempting to contribute to both. Plan rules and annual limits may restrict concurrent contributions."
+    },
+    {
+      "question": "Does a SEP IRA or solo 401(k) allow more at low income?",
+      "answer": "A solo 401(k) allows significantly more at low income levels because you can contribute employee deferrals up to your net earnings. On $20,000 of profit, net earnings are $18,587 after self-employment tax. A solo 401(k) permits the full $18,587 contribution. A SEP IRA is limited to 20% of net earnings, which is $3,717."
+    },
+    {
+      "question": "Can I contribute if I also have a 401(k) at my day job?",
+      "answer": "Yes, but the employee elective deferral limit is shared across all 401(k) and 403(b) plans you participate in. If you contribute $25,500 at your day job for 2027, your solo 401(k) employee deferral is $0. You can still make the full employer contribution of up to 20% of net self-employment earnings in either plan."
+    }
+  ],
+  "slug": "sep-ira-solo-401k-contribution-calculator"
+}

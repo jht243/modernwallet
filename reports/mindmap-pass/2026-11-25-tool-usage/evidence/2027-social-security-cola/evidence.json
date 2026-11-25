@@ -1,0 +1,158 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "write-b1",
+  "route": "/guides/2027-social-security-cola/",
+  "readerQuestion": "How much will Medicare Part B cost in 2027? [PAA none returned; DataForSEO '2027 medicare part b premium' 5,400/mo KD 0; AI Overview cites cms.gov, unitedmedicareadvisors.com]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/approval-manifest.json",
+      "sha256": "4a7e08e80f932790dfa8bb1787140b1e5646e3e23c5e283f698ab495648c0589"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/chart-review.json",
+      "sha256": "0d92dc4871a0c86eb7511868198a6c7651627fca1dc7bcb92d26b64220e9caa5"
+    },
+    "actionId": "F3"
+  },
+  "presentation": {
+    "medium": "text",
+    "placement": "FAQ and COLA-net sections of the four guides, existing slots",
+    "reason": "A code change inside an existing tool; the persona's blocked step is fixed in place and the static answer stays readable.",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "A corrected sentence is answered in prose; the page's own calculator already handles the interaction."
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "A corrected number and a link need no motion."
+    }
+  },
+  "basis": "reported",
+  "decisionGap": "The guide still tells readers the 2027 Part B premium has not been announced (or cites the $209.50 Trustees projection), although CMS announced the final figure on November 17, 2026.",
+  "finding": "CMS set the 2027 standard Medicare Part B premium at $209.40, up $6.50 from $202.90 in 2026, with a $292 annual deductible (up $9 from $283). On a $2,000 benefit the 3.6% COLA adds $72, so the net monthly gain after the premium increase is $65.50.",
+  "conditions": "Standard premium only; higher-income enrollees pay income-related adjustment amounts (total $293.10 at the first tier); the hold-harmless rule and individual deductions can change a reader's net deposit; the COLA notice is exact.",
+  "whatWouldChange": "A reader's own notice showing a different premium, an income-related surcharge, or CMS correcting its figures.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-25-tool-usage/evidence/2027-social-security-cola/cases.json",
+    "sha256": "ebe1e083093024aef9ececbdabe1f8b33d6303efddeec5535fed31ad0d72108e"
+  },
+  "caseDecisions": "Retrieved cases were outside U.S. Medicare and Social Security guidance, so none is used; the correction cites CMS only.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage-brief.md",
+      "sha256": "d197e7ff8a423d0ced3dee927ea2f1a3e8f5ec795d8ab315b46a6eb5b55e7415"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/coverage-lookup.txt",
+      "sha256": "934f1ae5414528dc4f3f40692ecd8efd21010002d2d331f5620c138019f45fdc"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/serp.json",
+      "sha256": "58eff2c6c795921e29bf025ba692abc6d48fe2b32e332c9515fd457c95bd79e7"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/keyword-volumes.json",
+      "sha256": "b85c3f2d320280ba4e55cc8451ae1c119990d0345f0a83d0647d10586d52eeea"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/keyword-volumes2.json",
+      "sha256": "f1d04f4cd12b0e3e260cea0acb91a0f33c4ebd6ec53e59f53a1410971b304877"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/kw-status.json",
+      "sha256": "d6859cb8bf4a307655a8205dd556d25cd4006f5d5fec51c4fd8d663e6b579d06"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/ac-capital-loss-carryover.csv",
+      "sha256": "c9e4ad545237983a6d458a98cdab1f06a0967375e7e9847b6e16b8a0a6183677"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/ac-sep-ira-contribution.csv",
+      "sha256": "78aac4508e4a05ff5f7e4841393fd1d04ed9810c5a18909351a033c9fdd2d9c8"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/ac-w-4v-social-security.csv",
+      "sha256": "5b1480e925ed8c37f23d21138487dd8baeaabb9603f869320867d5107da022d0"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/amazon-picks-retirement.txt",
+      "sha256": "6ee49d1a00b6650910c58bd4737dc5eae15f38f8e48fab10c8ec62d8caca01a1"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/calc-examples.json",
+      "sha256": "76302d3e54e979b5581893fea05e3c183dd34f22356ee1d3157e748fc763e75b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/cms-2027-partb.txt",
+      "sha256": "16367dafe9ff6db1ae6931c0abdf83e9c448fc8fa80762c809a303c2a2403908"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-form-w4v.txt",
+      "sha256": "aff3f79dcbbc25aaa7d5942219a0c53947aad3642406e305ca179296f4ff44f8"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-ir-2026-136.txt",
+      "sha256": "57dd51ab5e63272cf5cc8b8b602de0505ac815d29cab6dc26725d91d0ad3baef"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-ir-2027-limits.txt",
+      "sha256": "383a2c6fcda17b0586cd11c7970f1e332368c10e83c38cbe5a7d0d0fd01fb67d"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-notice-2026-66.txt",
+      "sha256": "f8525ec6cdc671efe9f43c40ae527667c40e8b998173872140468ac70c5c2259"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-pub550.txt",
+      "sha256": "f93f754fba1a6ec069fe467e589e8a9438462ec966891c9ea8345845caefbf70"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-pub560.txt",
+      "sha256": "db1f1fbe4645f567aa19f6fab7144a28c9881114773d1425636b57ae48b76f2a"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-topic409.txt",
+      "sha256": "06dc2dd8c45947ff7e7bb95f5e28d7fab0f4022fa7ed03781706b1241377bbdd"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-w4v.txt",
+      "sha256": "c6a06f8f4972a55bc2ec9b37b4232d85ae1098dfa2852efa3304c9e9cf37c644"
+    },
+    {
+      "path": "reports/tool-usage-pass/2026-11-25/personas/investing.md",
+      "sha256": "aa366377e859c7006990caab5cc781a60f892fc05529c5efc697271f3237cf2e"
+    },
+    {
+      "path": "reports/tool-usage-pass/2026-11-25/personas/mileage-deduction.md",
+      "sha256": "3aad81e2c236bdb4ed85befbde29fcd968712ad9f697b3cb7497bfb73294d50e"
+    },
+    {
+      "path": "reports/tool-usage-pass/2026-11-25/personas/portfolio.md",
+      "sha256": "c11e402c7718c5180338e477f0013d12a0944e2bf0a3f746a8f0bcd3d691d99f"
+    },
+    {
+      "path": "reports/tool-usage-pass/2026-11-25/personas/retirement.md",
+      "sha256": "2d6308f9ca949d26e447de014d978dca3326d2185d46f200407e51de20612e86"
+    },
+    {
+      "path": "reports/tool-usage-pass/2026-11-25/personas/social-security-cola-calculator.md",
+      "sha256": "2915d2d0b1a051bce638f0140ce0c59a25544d9ec5ba3a203401308132dbcb16"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/cms-2027-partb.txt",
+      "sha256": "16367dafe9ff6db1ae6931c0abdf83e9c448fc8fa80762c809a303c2a2403908"
+    }
+  ],
+  "whyNoQuantitativeAnalysis": "This is a factual correction of a stale sentence with one subtraction (209.40 - 202.90 = 6.50; 72 - 6.50 = 65.50), checked in the engine output for the COLA calculator, not a new analysis.",
+  "reasoning": "CMS fact sheet of November 17, 2026 states the 2027 standard premium ($209.40), the increase ($6.50 from $202.90) and the deductible ($292). The guide examples that used the $209.50 projection are recomputed from those figures; the Trustees-report solvency sentences and the 2026-only $202.90 sentences are unchanged.",
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [
+      "cms-2027-partb.txt"
+    ],
+    "scopeAndLimits": "Reported CMS figures; one arithmetic step shown. No testing or internal-analysis claim is made.",
+    "publicMethod": "The page cites the CMS fact sheet at first use.",
+    "placement": "COLA-net section and FAQ"
+  }
+}

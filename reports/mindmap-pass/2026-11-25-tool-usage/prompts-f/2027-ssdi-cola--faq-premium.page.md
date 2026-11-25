@@ -1,0 +1,1 @@
+The 2027 Part B premium has not been announced, so the net size of your raise is not final. Your COLA notice lists any deductions next to your new benefit amount, and Medicare enrollees can see their 2027 premium in the my Social Security Message Center starting in late November.

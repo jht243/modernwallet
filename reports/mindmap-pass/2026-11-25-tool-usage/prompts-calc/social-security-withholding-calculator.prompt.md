@@ -1,0 +1,48 @@
+# ROW PROMPT (data only) — social-security-withholding-calculator
+
+route: /social-security-withholding-calculator/   page type: calculator hub entry (JSON keys per the output contract)
+medium: interactive tool → interactive tool   register: operator   page type: explainer / spoke (calculator page; introText ~140 words, howItWorks ~500 words, 8 FAQs)
+primary keyword: social security withholding calculator (also: social security tax withholding calculator, w-4v, withhold tax from social security)
+intent: a retiree or disability beneficiary, often just after checking the taxable-benefits or COLA calculator, wants to know which Form W-4V rate to request, if any.
+reader question: "How much federal tax should I withhold from my Social Security benefit (Form W-4V)?" [PAA 1/6 on-topic: 'How is Social Security withholding calculated?'; ac 14 how/can/does questions on submitting W-4V; 5/6 PAA off-topic]
+answer: Estimate your tax on the benefit, then pick the W-4V rate (7, 10, 12 or 22% of each payment) whose yearly total is closest to it without falling short; no other percentage or amount is allowed (IRS Form W-4V).
+answer placement: section 1 — introText paragraph one gives the rule; paragraph two is the worked example. Do not open with a definition of Social Security.
+provenance (calculated): at the first finding say naturally what we did: "In our internal calculation, we ran ... to see which W-4V rate covers ...", then what we found. Never "we tested".
+
+## The calculator (describe only what it does)
+Inputs: filing status (single; head of household; married filing jointly; married filing separately and lived with spouse); monthly Social Security benefit before the Medicare premium comes out (both spouses combined on a joint return); other taxable income for the year; number of filers age 65 or older on the return; federal tax already withheld or paid on other income (optional); months the W-4V rate would apply this year (1 to 12).
+Outputs: the closest W-4V choice as the big result (or "No withholding needed"); the taxable part of the benefits and its share; the estimated federal tax; a four-row table of the allowed rates (7%, 10%, 12%, 22%) with the yearly amount withheld and whether it is over or short against the tax to cover; links to Form W-4V and SSA's online withholding request; a note stating the tax year basis; a "Copy result" button.
+Method the page may state: taxable benefits follow IRS Publication 915 Worksheet 1 (provisional income = other income plus half the benefits; 50% and 85% tiers); estimated tax = 2026 ordinary-income brackets on other income plus taxable benefits after the 2026 standard deduction (plus the additional amount for age 65 or older); each W-4V rate times the monthly benefit times the months is compared with the tax still to cover; the lowest allowed rate that does not fall short is the closest choice.
+Assumptions the page must state: TAX YEAR BASIS IS 2026. The tool applies the 2026 brackets and standard deduction (IRS Revenue Procedure 2025-32) and does not apply 2027 brackets, so a request for 2027 payments is a planning estimate. The estimate leaves out state tax, credits, the senior deduction for 2025 to 2028, and itemized deductions, so it can run high. If the benefits are not taxable or the tax is already covered, no request is needed.
+
+## CLOSED FACT LIST — every number the page may state. Anything not on this list, you do not know. Never invent a tax rate, a bracket, a state rule, a statistic or a URL. Do not state any 2027 bracket or deduction.
+- IRS Form W-4V (Rev. January 2026): for Social Security benefits you may choose to have 7%, 10%, 12% or 22% withheld from each payment, "but no other percentage or amount"; the request is voluntary; give the completed form to the payer (Social Security), "Do not send it to the IRS"; the form must be signed; the choice stays in effect until you change or stop it or the payments stop; to change the rate complete a new W-4V; to stop withholding complete a new W-4V and check the box for line 7; ask the payer exactly when withholding will begin; if you receive Social Security you can request changes at https://www.ssa.gov/manage-benefits/request-withhold-taxes, or call the Social Security Administration at 1-800-772-1213, or submit Form W-4V to the Social Security Administration; if you have other income not subject to withholding, consider making estimated tax payments (Form 1040-ES).
+- IRS Publication 915 base amounts: $25,000 single, $32,000 married filing jointly, $0 married filing separately living with spouse; upper amounts $34,000, $44,000, $0; up to 50% then up to 85% of benefits taxable.
+- 2026 standard deduction: $16,100 single and married filing separately, $32,200 married filing jointly, $24,150 head of household (IRS Revenue Procedure 2025-32). 2026 additional standard deduction for age 65 or older: $2,050 for an unmarried filer, $1,650 per spouse on a joint return. 2026 single brackets: 10% to $12,400, 12% to $50,400.
+- Worked examples (computed by the calculator, tax year 2026 rules):
+  - Single, age 65 or older, $2,400 monthly benefit ($28,800 a year), $30,000 of other income, nothing already paid: provisional income $44,400; taxable benefits $13,340 (46.3% of the benefits); deduction $18,150; estimated federal tax $2,775 (exactly $2,774.80). 7% withholds $2,016 and is short by $759; 10% withholds $2,880 and is over by $105; 12% withholds $3,456 and is over by $681; 22% withholds $6,336 and is over by $3,561. The closest rate that does not fall short is 10%.
+  - Married filing jointly, both 65 or older, $3,800 monthly benefit, $50,000 of other income: taxable benefits $30,480 (66.8%); estimated tax $4,902 (exactly $4,901.60); 10% withholds $4,560 (short by $342); 12% withholds $5,472 (over by $570). The closest rate is 12%.
+  - Single, age 65 or older, $1,500 monthly benefit, no other income: none of the benefits are taxable, estimated tax $0, so no withholding request is needed.
+  - Single, age 65 or older, $3,000 monthly benefit, $200,000 of other income: estimated tax $44,440; even 22% withholds only $7,920, short by $36,520, so no W-4V rate covers it and estimated payments or withholding on the other income are needed.
+No other figures.
+
+## CLOSED URL LIST — only external hrefs allowed
+https://www.irs.gov/pub/irs-pdf/fw4v.pdf (IRS Form W-4V); https://www.irs.gov/forms-pubs/about-form-w-4-v (About Form W-4V); https://www.ssa.gov/manage-benefits/request-withhold-taxes (SSA online withholding request); https://www.irs.gov/publications/p915 (IRS Publication 915); https://www.irs.gov/pub/irs-drop/rp-25-32.pdf (IRS Revenue Procedure 2025-32). Nothing else.
+
+## Internal routes it may link (real routes only)
+/social-security-taxable-benefits-calculator/ (how much of your Social Security is taxable), /social-security-cola-calculator/ (2027 Social Security COLA calculator), /guides/is-social-security-taxable/ (is Social Security taxable), /guides/senior-deduction-social-security/ (senior deduction), /tax-bracket-calculator/ (tax bracket calculator), /guides/states-that-tax-social-security/ (states that tax Social Security), /calculators/ (all calculators). No other internal route.
+
+## Coverage
+introText: as above. howItWorks: (1) how Form W-4V withholding works (only 7, 10, 12 or 22 percent of each payment; where to send it; how to stop or change); link /social-security-taxable-benefits-calculator/ with anchor "how much of your Social Security is taxable"; (2) what the calculator computes and the tax year basis (2026) with the senior deduction and state tax left out; (3) which rate fits: the four worked examples as a short sentence set (under- and over-withholding, the case where no rate covers, the case where none is needed), linking /social-security-cola-calculator/ with anchor "2027 Social Security COLA calculator" for the new benefit amount; (4) the alternative: estimated payments; (5) last paragraph is the takeaway.
+Takeaway (planned): pick the lowest W-4V rate whose yearly total covers your estimated tax; if even 22% falls short, add estimated payments or withholding on other income; if your benefits are not taxable or other withholding covers the tax, skip the form. Who it is not for: someone who wants a state-tax figure or a final return; someone with unusual income. What would change it: higher other income, 2027 brackets, the senior deduction, changing months. Closing sentence: a next action, such as entering your own monthly benefit and other income above, then giving Form W-4V to Social Security.
+
+## FAQ questions (verbatim, in this order)
+1. How is Social Security withholding calculated?
+2. How do I submit Form W-4V to Social Security?
+3. Can I complete Form W-4V online for Social Security?
+4. Can I choose another percentage than 7%, 10%, 12% or 22%?
+5. How do I stop withholding from my Social Security benefits?
+6. Does withholding count as tax paid, or do I still owe at filing?
+7. Is my Social Security taxed if I have no other income?
+8. Do I need estimated tax payments instead of Form W-4V?
+For question 1 explain the calculator's steps. For question 2 say give the completed form to Social Security, not the IRS, and name the SSA online request page and phone number from the fact list. For question 3 say the Form W-4V instructions point to the SSA online request page; do not claim more. For question 6 say withholding counts toward the year's tax and the return settles any difference; use no figure. For question 7 say the benefit is not taxable at low provisional income and use the $1,500 example. For question 8 use the Form W-4V statement about other income not subject to withholding.

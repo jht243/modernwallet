@@ -1,0 +1,154 @@
+{
+  "tag": "soulcircle01-20",
+  "api": true,
+  "queries": {
+    "The Bogleheads' Guide to Retirement Planning": [
+      {
+        "asin": "0470919019",
+        "title": "The Bogleheads' Guide to Retirement Planning",
+        "brand": "Wiley",
+        "link": "https://www.amazon.com/dp/0470919019?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "1119847672",
+        "title": "The Bogleheads' Guide to Investing",
+        "brand": "Wiley",
+        "link": "https://www.amazon.com/dp/1119847672?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "1945640197",
+        "title": "Retirement Planning Guidebook: Navigating the Important Decisions for Retirement Success (The Retirement Researcher Guide Series)",
+        "brand": "Retirement Researcher Media",
+        "link": "https://www.amazon.com/dp/1945640197?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "B00MB4BJVW",
+        "title": "The Bogleheads' Guide to Retirement Planning by Larimore, Taylor, Lindauer, Mel, Ferri, Richard A., Dogu, La [Wiley, 2011] (Paperback) [Paperback]",
+        "brand": "Wiley,2011",
+        "link": "https://www.amazon.com/dp/B00MB4BJVW?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "B0DQJMVM59",
+        "title": "The Simple Path to Wealth: Your Road Map to Financial Independence and a Rich, Free Life",
+        "brand": "831 Stories",
+        "link": "https://www.amazon.com/dp/B0DQJMVM59?tag=soulcircle01-20&linkCode=ll1"
+      }
+    ],
+    "Retirement Planning Guidebook Wade Pfau": [
+      {
+        "asin": "1945640197",
+        "title": "Retirement Planning Guidebook: Navigating the Important Decisions for Retirement Success (The Retirement Researcher Guide Series)",
+        "brand": "Retirement Researcher Media",
+        "link": "https://www.amazon.com/dp/1945640197?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "1945640154",
+        "title": "Retirement Planning Guidebook: Navigating the Important Decisions for Retirement Success (The Retirement Researcher Guide)",
+        "brand": "Retirement Researcher Media",
+        "link": "https://www.amazon.com/dp/1945640154?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "B09FFQCDXY",
+        "title": "Retirement Planning Guidebook: Navigating the Important Decisions for Retirement Success",
+        "brand": "Retirement Researcher Media",
+        "link": "https://www.amazon.com/dp/B09FFQCDXY?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "B07X2TW623",
+        "title": "Safety-First Retirement Planning: An Integrated Approach for a Worry-Free Retirement (The Retirement Researcher Guide Series)",
+        "brand": "Retirement Researcher Media",
+        "link": "https://www.amazon.com/dp/B07X2TW623?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "0470919019",
+        "title": "The Bogleheads' Guide to Retirement Planning",
+        "brand": "Wiley",
+        "link": "https://www.amazon.com/dp/0470919019?tag=soulcircle01-20&linkCode=ll1"
+      }
+    ],
+    "How to Make Your Money Last Jane Bryant Quinn": [
+      {
+        "asin": "1982115831",
+        "title": "How to Make Your Money Last - Completely Updated for Planning Today: The Indispensable Retirement Guide",
+        "brand": "Simon & Schuster",
+        "link": "https://www.amazon.com/dp/1982115831?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "B07X3VN963",
+        "title": "How to Make Your Money Last: The Indispensable Retirement Guide Jane Bryant Quinn - Paperback",
+        "brand": "OpenStore",
+        "link": "https://www.amazon.com/dp/B07X3VN963?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "0743269969",
+        "title": "Making the Most of Your Money Now: The Classic Bestseller Completely Revised for the New Economy",
+        "brand": "Simon & Schuster",
+        "link": "https://www.amazon.com/dp/0743269969?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "0684811766",
+        "title": "Making The Most of Your Money",
+        "brand": "Simon & Schuster",
+        "link": "https://www.amazon.com/dp/0684811766?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "140199539X",
+        "title": "The Ultimate Retirement Guide for 50+: Winning Strategies to Make Your Money Last a Lifetime (Revised & Updated for 2025)",
+        "brand": "Hay House",
+        "link": "https://www.amazon.com/dp/140199539X?tag=soulcircle01-20&linkCode=ll1"
+      }
+    ],
+    "Couples and Money Victoria Collins": [
+      {
+        "asin": "0553057464",
+        "title": "Couples and Money: Why Money Interferes With Love and What to Do About It",
+        "brand": "Bantam",
+        "link": "https://www.amazon.com/dp/0553057464?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "B019TMLL48",
+        "title": "Couples and Money: A Couples' Guide Updated for the New Millennium by Victoria F Collins (1997-12-01)",
+        "brand": "Partners Publishing Group; 2nd edition (1997-12-01)",
+        "link": "https://www.amazon.com/dp/B019TMLL48?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "B013JA9AZI",
+        "title": "Mr. Darcy to the Rescue: A Pride and Prejudice Variation",
+        "brand": "Victoria Kincaid",
+        "link": "https://www.amazon.com/dp/B013JA9AZI?tag=soulcircle01-20&linkCode=ll1"
+      }
+    ],
+    "The Four Pillars of Investing William Bernstein": [
+      {
+        "asin": "1264715919",
+        "title": "The Four Pillars of Investing, Second Edition: Lessons for Building a Winning Portfolio",
+        "brand": "McGraw-Hill Education",
+        "link": "https://www.amazon.com/dp/1264715919?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "0071385290",
+        "title": "The Four Pillars of Investing: Lessons for Building a Winning Portfolio",
+        "brand": "McGraw-Hill Education",
+        "link": "https://www.amazon.com/dp/0071385290?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "626315411X",
+        "title": "The Four Pillars of Investing, Second Edition: Lessons for Building a Winning Portfolio (Chinese Edition)",
+        "brand": "Lian Pu Wen Hua",
+        "link": "https://www.amazon.com/dp/626315411X?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "B0DMTSQKKV",
+        "title": "The Four Pillars of Investing: Generating You Cash Flow In A Risky Market (Profit Pathways Book 3)",
+        "brand": "I'm Good Family",
+        "link": "https://www.amazon.com/dp/B0DMTSQKKV?tag=soulcircle01-20&linkCode=ll1"
+      },
+      {
+        "asin": "B0C5ZBZ6RY",
+        "title": "The Four Pillars: How to Build an Accounting Firm that Gives You More Money, Time and Freedom",
+        "brand": "Audible",
+        "link": "https://www.amazon.com/dp/B0C5ZBZ6RY?tag=soulcircle01-20&linkCode=ll1"
+      }
+    ]
+  }
+}

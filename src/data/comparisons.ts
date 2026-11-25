@@ -8890,7 +8890,7 @@ export const COMPARISONS: ComparisonEntry[] = [
       {
         heading: "How to choose between a SEP-IRA and a Solo 401(k)",
         content:
-          "To choose in the SEP-IRA vs Solo 401(k) decision, start with two questions: do you have employees, and how much do you want to save? Your answers point to one plan.\n\nIf you have non-spouse full-time employees, the Solo 401(k) is off the table, so use a SEP-IRA. If you are owner-only and want to maximize savings, add Roth money, or borrow, choose the Solo 401(k).\n\nIf you are owner-only but want zero paperwork and earn enough to hit the 25% cap anyway, the SEP-IRA is a clean fit. Check your overall picture with our [net worth tracker](/net-worth/).",
+          "To choose in the SEP-IRA vs Solo 401(k) decision, start with two questions: do you have employees, and how much do you want to save? Your answers point to one plan, and you can [calculate your own SEP and solo 401(k) maximums](/sep-ira-solo-401k-contribution-calculator/) from your profit.\n\nIf you have non-spouse full-time employees, the Solo 401(k) is off the table, so use a SEP-IRA. If you are owner-only and want to maximize savings, add Roth money, or borrow, choose the Solo 401(k).\n\nIf you are owner-only but want zero paperwork and earn enough to hit the 25% cap anyway, the SEP-IRA is a clean fit. Check your overall picture with our [net worth tracker](/net-worth/).",
       },
     ],
     faqs: [

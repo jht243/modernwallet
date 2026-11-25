@@ -120,6 +120,8 @@ export interface SelfEmploymentTaxInput {
   w2Wages?: number;
   /** Other taxable household income (spouse's wages, interest) added for the income-tax estimate. */
   otherIncome?: number;
+  /** Social Security wage base to apply. Default is the 2026 base. The SEP/solo 401(k) tool passes the 2027 base for tax year 2027. */
+  socialSecurityWageBase?: number;
   /** Include a federal income-tax estimate alongside SE tax. Default true. */
   includeIncomeTax?: boolean;
   /** Apply the §199A QBI deduction in the income-tax estimate. Default true. */
@@ -212,7 +214,8 @@ export function calculateSelfEmploymentTax(input: SelfEmploymentTaxInput): SelfE
   const seEarnings = belowSeFloor ? 0 : netEarnings;
 
   // W-2 wages consume the Social Security wage base first (Schedule SE Part I).
-  const remainingWageBase = Math.max(0, SS_WAGE_BASE_2026 - w2Wages);
+  const wageBase = input.socialSecurityWageBase ?? SS_WAGE_BASE_2026;
+  const remainingWageBase = Math.max(0, wageBase - w2Wages);
   const socialSecurityTaxable = Math.min(seEarnings, remainingWageBase);
   const socialSecurityTax = socialSecurityTaxable * SS_RATE;
 
@@ -278,7 +281,7 @@ export function calculateSelfEmploymentTax(input: SelfEmploymentTaxInput): SelfE
     totalSelfEmploymentTax: round2(totalSelfEmploymentTax),
     halfSeTaxDeduction: round2(halfSeTaxDeduction),
     effectiveSeRateOnProfit: netProfit > 0 ? totalSelfEmploymentTax / netProfit : 0,
-    wageBaseFullyUsedByW2: w2Wages >= SS_WAGE_BASE_2026,
+    wageBaseFullyUsedByW2: w2Wages >= wageBase,
     belowSeFloor,
     qbiDeduction: qbiDeduction === null ? null : round2(qbiDeduction),
     taxableIncome: taxableIncome === null ? null : round2(taxableIncome),

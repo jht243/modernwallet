@@ -1,0 +1,100 @@
+ the notice is mailed in December') or remove the deadline."
+    },
+    {
+      "id": "R1-6-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Part B correction ($209.40, +$6.50; $59 gross minus $6.50 = $52.50) matches CMS; SSA figures (3.6%, $1,642 to $1,701, SGA $1,770) are inherited and internally consistent across the four pages but no SSA capture is saved."
+    },
+    {
+      "id": "R1-6-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full rendered text; internal contradictions listed in findings (see ids). Part B correction ($209.40, +$6.50; $59 gross minus $6.50 = $52.50) matches CMS; SSA figures (3.6%, $1,642 to $1,701, SGA $1,770) are inherited and internally consistent across the four pages but no SSA capture is saved."
+    },
+    {
+      "id": "R1-6-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "Part B correction ($209.40, +$6.50; $59 gross minus $6.50 = $52.50) matches CMS; SSA figures (3.6%, $1,642 to $1,701, SGA $1,770) are inherited and internally consistent across the four pages but no SSA capture is saved. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-6-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "Part B correction ($209.40, +$6.50; $59 gross minus $6.50 = $52.50) matches CMS; SSA figures (3.6%, $1,642 to $1,701, SGA $1,770) are inherited and internally consistent across the four pages but no SSA capture is saved. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-6-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Part B correction ($209.40, +$6.50; $59 gross minus $6.50 = $52.50) matches CMS; SSA figures (3.6%, $1,642 to $1,701, SGA $1,770) are inherited and internally consistent across the four pages but no SSA capture is saved. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "SSI-1",
+      "status": "open",
+      "evidence": "Replace with a date-neutral instruction (for example: 'If you missed the paperless cut-off, the notice is mailed in December') or remove the deadline."
+    },
+    {
+      "id": "SSI-2",
+      "status": "open",
+      "evidence": "Remove the ** markers or use the list/bold syntax the renderer supports."
+    },
+    {
+      "id": "R1-7-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Part B correction ($209.40, +$6.50, deductible $292) matches CMS; SSI $1,029/$1,544 and arithmetic ($35 x 12 = $420, $53 x 12 = $636) are consistent; no SSA capture is saved and live SSA returned HTTP 403 to me."
+    },
+    {
+      "id": "R1-7-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full rendered text; internal contradictions listed in findings (see ids). Part B correction ($209.40, +$6.50, deductible $292) matches CMS; SSI $1,029/$1,544 and arithmetic ($35 x 12 = $420, $53 x 12 = $636) are consistent; no SSA capture is saved and live SSA returned HTTP 403 to me."
+    },
+    {
+      "id": "R1-7-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "Part B correction ($209.40, +$6.50, deductible $292) matches CMS; SSI $1,029/$1,544 and arithmetic ($35 x 12 = $420, $53 x 12 = $636) are consistent; no SSA capture is saved and live SSA returned HTTP 403 to me. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-7-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "Part B correction ($209.40, +$6.50, deductible $292) matches CMS; SSI $1,029/$1,544 and arithmetic ($35 x 12 = $420, $53 x 12 = $636) are consistent; no SSA capture is saved and live SSA returned HTTP 403 to me. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-7-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Part B correction ($209.40, +$6.50, deductible $292) matches CMS; SSI $1,029/$1,544 and arithmetic ($35 x 12 = $420, $53 x 12 = $636) are consistent; no SSA capture is saved and live SSA returned HTTP 403 to me. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "CH-1",
+      "status": "open",
+      "evidence": "Replace with a date-neutral instruction (for example: 'If you missed the paperless cut-off, the notice is mailed in December') or remove the deadline."
+    },
+    {
+      "id": "R1-8-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Part B correction matches CMS; table values consistent with the SSDI/SSI guides ($192,300 wage base; 6.2% x 192,300 = $11,922.60; difference $483.60 checks); no SSA capture saved and SSA returned 403."
+    },
+    {
+      "id": "R1-8-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full rendered text; internal contradictions listed in findings (see ids). Part B correction matches CMS; table values consistent with the SSDI/SSI guides ($192,300 wage base; 6.2% x 192,300 = $11,922.60; difference $483.60 checks); no SSA capture saved and SSA returned 403."
+    },
+    {
+      "id": "R1-8-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "Part B correction matches CMS; table values consistent with the SSDI/SSI guides ($192,300 wage base; 6.2% x 192,300 = $11,922.60; difference $483.60 checks); no SSA capture saved and SSA returned 403. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-8-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "Part B correction matches CMS; table values consistent with the SSDI/SSI guides ($192,300 wage base; 6.2% x 192,300 = $11,922.60; difference $483.60 checks); no SSA capture saved and SSA returned 403. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-8-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Part B correction matches CMS; table values consistent with the SSDI/SSI guides ($192,300 wage base; 6.2% x 192,300 = $11,922.60; difference $483.60 checks); no SSA capture saved and SSA returned 403. Reviewed against saved primary sources and engine replay."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-25-tool-usage/handoff-audit-r2-b1.json",
+    "sha256": "d205619400f67400e26544da82154c0a8fec44155c924983f55149bcb7237e52"
+  }
+}
+

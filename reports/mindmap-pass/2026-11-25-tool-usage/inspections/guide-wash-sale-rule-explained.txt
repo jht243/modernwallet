@@ -1,0 +1,9 @@
+# guides.ts slug wash-sale-rule-explained line 23494
+    "updated": "2026-09-30",
+    "slug": "wash-sale-rule-explained",
+    "title": "Wash Sale Rule Window Is 30 Days Before and After a Sale",
+    "metaDescription": "The wash sale rule covers 30 days before and after a loss sale. The disallowed loss is added to your new shares' basis. Bots and AI agents can trigger it.",
+    "h1": "The Wash Sale Rule Explained",
+    "cardBlurb": "How the IRS wash sale rule works across accounts and automated trades, how basis adjustments defer disallowed losses, and when the window applies.",
+    "introText": "The wash sale rule disallows a tax deduction on an investment loss if you acquire the same or substantially identical security within 30 days before or 30 days after the sale date. That creates a window spanning 61 calendar days in total, so it is neither strictly a 30-day nor a 60
+    "sections": [

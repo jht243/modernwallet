@@ -1,0 +1,12 @@
+{
+  "originRoutine": "tool-usage-mindmap-auto",
+  "route": "/capital-loss-carryover-calculator/",
+  "queryFamily": "How much of my stock losses can I deduct this year and carry forward?",
+  "hypothesis": "A calculator that turns the reader's own numbers into the answer earns incremental Google clicks for its query family versus age-matched comparator tools.",
+  "primaryMetric": "incremental Google clicks",
+  "baselineReference": "not-yet-published",
+  "comparatorPlan": "age-matched tool pages; day-28 and day-56 windows declared before reading outcomes",
+  "changeScope": "new route",
+  "sourceRefreshTrigger": "IRS or SSA limit announcements; CMS premium changes",
+  "outcomeStatus": "local-only; Google impact unmeasured; GSC unavailable (not zero)"
+}

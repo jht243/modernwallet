@@ -36,6 +36,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/hidden-cost-of-owning-a-home-calculator/", label: "What does owning cost beyond the mortgage?" },
   ],
   "stock-capital-gains-tax-calculator": [
+    { href: "/capital-loss-carryover-calculator/", label: "Have a loss? See what carries forward" },
     { href: "/tax-bracket-calculator/", label: "Find your 2026 tax bracket" },
     { href: "/compare/ordinary-income-vs-capital-gains-tax/", label: "Ordinary income vs capital gains tax" },
     { href: "/real-estate/capital-gains-calculator/", label: "Selling a rental property? Add depreciation recapture" },
@@ -66,7 +67,30 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/credit-card-payoff/", label: "Plan your credit card payoff" },
     { href: "/net-worth/liquid-net-worth-calculator/", label: "What's your liquid net worth?" },
   ],
+  // Tool-usage pass (2026-11-25): next-step links for the three new calculators.
+  "sep-ira-solo-401k-contribution-calculator": [
+    { href: "/self-employment-tax/", label: "How much self-employment tax do you owe?" },
+    { href: "/compare/sep-ira-vs-solo-401k/", label: "SEP-IRA vs Solo 401(k): which plan fits?" },
+    { href: "/roundup/best-retirement-accounts-for-self-employed/", label: "Best retirement accounts for the self-employed" },
+    { href: "/guides/401k-contribution-limits-2026/", label: "401(k) contribution limits" },
+    { href: "/retirement/", label: "Project retirement savings" },
+  ],
+  "social-security-withholding-calculator": [
+    { href: "/social-security-taxable-benefits-calculator/", label: "How much of your Social Security is taxable?" },
+    { href: "/social-security-cola-calculator/", label: "What will your 2027 Social Security check be?" },
+    { href: "/guides/senior-deduction-social-security/", label: "The $6,000 senior deduction" },
+    { href: "/tax-bracket-calculator/", label: "Find your 2026 tax bracket" },
+    { href: "/guides/states-that-tax-social-security/", label: "States that tax Social Security" },
+  ],
+  "capital-loss-carryover-calculator": [
+    { href: "/stock-capital-gains-tax-calculator/", label: "What tax do you owe on a stock sale?" },
+    { href: "/guides/tax-loss-harvesting/", label: "How tax loss harvesting works" },
+    { href: "/guides/wash-sale-rule-explained/", label: "The wash sale rule explained" },
+    { href: "/tax-bracket-calculator/", label: "Find your 2026 tax bracket" },
+    { href: "/investing/", label: "Model an investment return" },
+  ],
   "social-security-taxable-benefits-calculator": [
+    { href: "/social-security-withholding-calculator/", label: "Withhold tax from your benefit (Form W-4V)" },
     { href: "/guides/is-social-security-taxable/", label: "Is Social Security taxable? The rules explained" },
     { href: "/social-security-cola-calculator/", label: "What will your 2027 Social Security check be?" },
     { href: "/guides/senior-deduction-social-security/", label: "The $6,000 senior deduction" },
@@ -76,6 +100,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
   // Self-employed / 1099 silo (2026-09-05). The three tools are a loop: what you owe, the deduction
   // that changes what you owe, and the rate that has to cover both.
   "self-employment-tax": [
+    { href: "/sep-ira-solo-401k-contribution-calculator/", label: "How much can you shelter in a SEP or solo 401(k)?" },
     { href: "/mileage-deduction/", label: "Price your business miles" },
     { href: "/freelance-rate/", label: "What should you charge?" },
     { href: "/compare/1099-vs-w2/", label: "1099 vs W-2: which is better?" },
@@ -83,6 +108,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/s-corp-tax/", label: "Would an S-corp election save you money?" },
   ],
   "mileage-deduction": [
+    { href: "/sep-ira-solo-401k-contribution-calculator/", label: "Self-employed? See your retirement contribution limit" },
     { href: "/mileage-reimbursement-calculator/", label: "Reimbursed by your employer? What you're owed" },
     { href: "/self-employment-tax/", label: "What you owe after the deduction" },
     { href: "/self-employment-tax/doordash-taxes/", label: "DoorDash taxes explained" },
@@ -215,6 +241,7 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/guides/2027-ssdi-cola/", label: "How much SSDI goes up in 2027" },
     { href: "/guides/ssi-increase-2027/", label: "2027 SSI payment amounts" },
     { href: "/social-security-break-even-calculator/", label: "When does waiting to claim Social Security pay off?" },
+    { href: "/social-security-withholding-calculator/", label: "Ask SSA to withhold tax from your raise" },
   ],
   "social-security-break-even-calculator": [
     { href: "/guides/2027-social-security-cola/", label: "2027 Social Security COLA: the official 3.6% raise" },

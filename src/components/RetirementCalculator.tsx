@@ -103,6 +103,19 @@ function Projection({ data }: { data?: Record<string, unknown> }) {
             ? `On track — at a 4% withdrawal rate, your savings last through age ${v.lifeExpectancy ?? 95}.`
             : `Heads up — at a 4% withdrawal rate, your savings run low before age ${v.lifeExpectancy ?? 95}. Consider saving more or retiring later.`}
         </div>
+        {!showSocialSecurity && Boolean(data?.showBookPicks) && (
+          // Tool-usage pass 2026-11-25 (row M1): the default path renders exactly one books-only block, after the answer.
+          // "On track" and "Behind" show the same three books in the same order; the heading changes with the result.
+          <ToolPicks
+            tool="retirement"
+            heading={r.lastsThroughLifeExpectancy ? "Further reading on planning your retirement income" : "Further reading on making savings last"}
+            picks={[
+              book("pfauGuidebookCurrent", "Plans household retirement decisions, including the order of withdrawals."),
+              book("moneyLast", "Ways to turn savings into income that lasts, including when to claim Social Security."),
+              book("bogleheads", "Low-cost investing basics behind the return you assume above."),
+            ]}
+          />
+        )}
         {showSocialSecurity && (
           <ToolPicks
             tool="retirement"

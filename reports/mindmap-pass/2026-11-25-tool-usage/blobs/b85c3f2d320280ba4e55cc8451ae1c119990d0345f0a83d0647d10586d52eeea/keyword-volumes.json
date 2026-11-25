@@ -1,0 +1,162 @@
+{
+ "rows": [
+  {
+   "keyword": "2027 medicare part b premium",
+   "volume": 5400,
+   "volume_low": 5400,
+   "volume_high": 5400,
+   "kd": 0,
+   "cpc": 7.89,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "capital loss carryover calculator",
+   "volume": 30,
+   "volume_low": 30,
+   "volume_high": 30,
+   "kd": 2,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "self employed retirement calculator",
+   "volume": 10,
+   "volume_low": 10,
+   "volume_high": 10,
+   "kd": 45,
+   "cpc": 4.04,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "sep ira calculator",
+   "volume": 720,
+   "volume_low": 720,
+   "volume_high": 720,
+   "kd": 0,
+   "cpc": 5.86,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "sep ira contribution calculator",
+   "volume": 480,
+   "volume_low": 480,
+   "volume_high": 480,
+   "kd": 3,
+   "cpc": 4.85,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "social security tax withholding calculator",
+   "volume": 720,
+   "volume_low": 720,
+   "volume_high": 720,
+   "kd": 31,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "social security withholding calculator",
+   "volume": 720,
+   "volume_low": 720,
+   "volume_high": 720,
+   "kd": 28,
+   "cpc": "",
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "solo 401k contribution calculator",
+   "volume": 720,
+   "volume_low": 720,
+   "volume_high": 720,
+   "kd": 3,
+   "cpc": 3.42,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "w-4v social security withholding",
+   "volume": 50,
+   "volume_low": 50,
+   "volume_high": 500,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 8 live autocomplete completions (est. 50-500/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 8,
+    "corroborates": false
+   }
+  },
+  {
+   "keyword": "capital loss carryforward calculator",
+   "volume": 20,
+   "volume_low": 20,
+   "volume_high": 200,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 7 live autocomplete completions (est. 20-200/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 7,
+    "corroborates": false
+   }
+  }
+ ],
+ "notes": [
+  "semrush unusable (HTTP 403)",
+  "volume: using dataforseo (quality order semrush > dataforseo)",
+  "dataforseo returned volume for 8/10 phrases",
+  "kd: using dataforseo (quality order semrush > dataforseo)",
+  "No tool volume for 2 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 8/10 rows corroborated live"
+ ]
+}

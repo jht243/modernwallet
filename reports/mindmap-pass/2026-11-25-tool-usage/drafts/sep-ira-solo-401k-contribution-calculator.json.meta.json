@@ -1,0 +1,103 @@
+{
+ "slug": "sep-ira-solo-401k-contribution-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: RuntimeError: every anthropic key in the pool failed: CONTENT_ANTHROPIC_KEY: HTTP 400: {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. ",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1071,
+ "floor": 600,
+ "input_tokens": 24308,
+ "output_tokens": 2170,
+ "thinking_tokens": 10544,
+ "cached_tokens": 20936,
+ "est_cost_usd": 0.0518,
+ "guards": {
+  "repairs": [
+   "slug None -> 'sep-ira-solo-401k-contribution-calculator'"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1071,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 464,
+   "floor": 600,
+   "ratio": 0.77,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 1,
+   "found": [
+    6
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "Net earnings come to $92,935 after subtracting $14,130 in self-employment tax.",
+     "replacement": "Net earnings come to $92,935 after subtracting half of the $14,130 in self-employment tax.",
+     "type": "contradicted",
+     "why": "Net earnings subtract half of self-employment tax, not the full $14,130."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "A regular business can contribute up to 25% of compensation for an employee.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention employer contribution rules for regular businesses with employees."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Because an owner's contribution lowers net earnings, a 25% plan rate becomes an effective 20% rate on net earnings.",
+     "replacement": "A 25% plan rate becomes 20% of net earnings.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that an owner's contribution lowers net earnings."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "This extended deadline gives you time to calculate net earnings after the calendar year closes.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state why the deadline is extended or what it allows."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "The deduction lowers your income tax liability, but it does not reduce your self-employment tax.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state how the deduction affects income tax liability or self-employment tax."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Plan rules and annual limits may restrict concurrent contributions.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that plan rules or annual limits restrict concurrent contributions."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "error": "checker unavailable",
+   "words_before": 1130
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 4314
+  }
+ },
+ "seconds": 187.6,
+ "response_id": "MzoHa5PmJs-pxdIP0erpiQQ",
+ "generated_at": "2026-11-25T19:45:49+0000"
+}

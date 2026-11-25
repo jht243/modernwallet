@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "jobId": "2026-11-25-tool-usage",
+  "subBatchingRecommended": true,
+  "batchCount": 2,
+  "totalNewPages": 3,
+  "totalRoutes": 16,
+  "disjointPartition": true,
+  "batches": [
+    {
+      "batchIndex": 1,
+      "label": "batch-1",
+      "actionIds": [
+        "C1",
+        "C2",
+        "C3"
+      ],
+      "newPageRoutes": [
+        "/sep-ira-solo-401k-contribution-calculator/",
+        "/social-security-withholding-calculator/",
+        "/capital-loss-carryover-calculator/"
+      ],
+      "existingRoutes": [
+        "/social-security-cola-calculator/",
+        "/guides/2027-social-security-cola/",
+        "/guides/2027-ssdi-cola/",
+        "/guides/ssi-increase-2027/",
+        "/guides/social-security-changes-2027/"
+      ],
+      "routes": [
+        "/sep-ira-solo-401k-contribution-calculator/",
+        "/social-security-withholding-calculator/",
+        "/capital-loss-carryover-calculator/",
+        "/social-security-cola-calculator/",
+        "/guides/2027-social-security-cola/",
+        "/guides/2027-ssdi-cola/",
+        "/guides/ssi-increase-2027/",
+        "/guides/social-security-changes-2027/"
+      ],
+      "routeFlags": "--route /sep-ira-solo-401k-contribution-calculator/ --route /social-security-withholding-calculator/ --route /capital-loss-carryover-calculator/ --route /social-security-cola-calculator/ --route /guides/2027-social-security-cola/ --route /guides/2027-ssdi-cola/ --route /guides/ssi-increase-2027/ --route /guides/social-security-changes-2027/"
+    },
+    {
+      "batchIndex": 2,
+      "label": "batch-2",
+      "actionIds": [],
+      "newPageRoutes": [],
+      "existingRoutes": [
+        "/retirement/couples-retirement-calculator/",
+        "/mileage-deduction/irs-mileage-rate-2026/",
+        "/self-employment-tax/",
+        "/social-security-taxable-benefits-calculator/",
+        "/stock-capital-gains-tax-calculator/",
+        "/mileage-deduction/",
+        "/compare/sep-ira-vs-solo-401k",
+        "/guides/tax-loss-harvesting/"
+      ],
+      "routes": [
+        "/retirement/couples-retirement-calculator/",
+        "/mileage-deduction/irs-mileage-rate-2026/",
+        "/self-employment-tax/",
+        "/social-security-taxable-benefits-calculator/",
+        "/stock-capital-gains-tax-calculator/",
+        "/mileage-deduction/",
+        "/compare/sep-ira-vs-solo-401k",
+        "/guides/tax-loss-harvesting/"
+      ],
+      "routeFlags": "--route /retirement/couples-retirement-calculator/ --route /mileage-deduction/irs-mileage-rate-2026/ --route /self-employment-tax/ --route /social-security-taxable-benefits-calculator/ --route /stock-capital-gains-tax-calculator/ --route /mileage-deduction/ --route /compare/sep-ira-vs-solo-401k --route /guides/tax-loss-harvesting/"
+    }
+  ]
+}

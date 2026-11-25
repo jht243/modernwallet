@@ -1,0 +1,3 @@
+# SECTION PROMPT (data only) — 2027-social-security-cola--body-premium
+register: operator (existing page register; do not change voice). Output plain markdown for ONE field, no heading, no JSON.
+Task: Rewrite this section body. Keep every sentence, list and link unchanged EXCEPT where it says the 2027 premium is projected, not final, or "not set yet": use the CMS final premium ($209.40, up $6.50 from $202.90, announced November 17, 2026; link the CMS fact sheet at first mention), the list becomes "Part B increase from $202.90 to $209.40: minus $6.50 a month" and "Net monthly gain: $65.50", the hold-harmless sentence uses the $6.50 increase, and delete the sentence saying the premium is not set yet. Do not mention $209.50 or $6.60.

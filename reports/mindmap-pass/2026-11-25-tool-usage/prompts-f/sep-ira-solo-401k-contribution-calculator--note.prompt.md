@@ -1,0 +1,3 @@
+# SECTION PROMPT (data only) — sep-ira-solo-401k-contribution-calculator--publishers-take
+Task: write exactly TWO sentences (plain prose, no heading, no em-dashes, no personal anecdotes, no new numbers) as a "Publisher's Take" for the sep-ira-solo-401k-contribution-calculator page: A solo 401(k) usually allows more than a SEP IRA at the same self-employment profit because the employee deferral sits on top of the same employer share; employees and deferrals at another job change that; confirm the plan setup deadline before year-end.
+register: operator voice of the site publisher, direct and practical.

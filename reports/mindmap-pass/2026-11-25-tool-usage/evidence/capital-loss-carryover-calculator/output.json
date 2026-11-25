@@ -1,0 +1,538 @@
+{
+  "group": "cl",
+  "checks": 134,
+  "results": {
+    "cl50k": {
+      "limit": 3000,
+      "netThisYear": -50000,
+      "netSt": -30000,
+      "netLt": -20000,
+      "isNetLoss": true,
+      "deductionThisYear": 3000,
+      "carryTotal": 47000,
+      "carrySt": 27000,
+      "carryLt": 20000,
+      "schedule": [
+        {
+          "year": 1,
+          "net": -50000,
+          "deduction": 3000,
+          "carrySt": 27000,
+          "carryLt": 20000,
+          "carryTotal": 47000
+        },
+        {
+          "year": 2,
+          "net": -47000,
+          "deduction": 3000,
+          "carrySt": 24000,
+          "carryLt": 20000,
+          "carryTotal": 44000
+        },
+        {
+          "year": 3,
+          "net": -44000,
+          "deduction": 3000,
+          "carrySt": 21000,
+          "carryLt": 20000,
+          "carryTotal": 41000
+        },
+        {
+          "year": 4,
+          "net": -41000,
+          "deduction": 3000,
+          "carrySt": 18000,
+          "carryLt": 20000,
+          "carryTotal": 38000
+        },
+        {
+          "year": 5,
+          "net": -38000,
+          "deduction": 3000,
+          "carrySt": 15000,
+          "carryLt": 20000,
+          "carryTotal": 35000
+        },
+        {
+          "year": 6,
+          "net": -35000,
+          "deduction": 3000,
+          "carrySt": 12000,
+          "carryLt": 20000,
+          "carryTotal": 32000
+        },
+        {
+          "year": 7,
+          "net": -32000,
+          "deduction": 3000,
+          "carrySt": 9000,
+          "carryLt": 20000,
+          "carryTotal": 29000
+        },
+        {
+          "year": 8,
+          "net": -29000,
+          "deduction": 3000,
+          "carrySt": 6000,
+          "carryLt": 20000,
+          "carryTotal": 26000
+        },
+        {
+          "year": 9,
+          "net": -26000,
+          "deduction": 3000,
+          "carrySt": 3000,
+          "carryLt": 20000,
+          "carryTotal": 23000
+        },
+        {
+          "year": 10,
+          "net": -23000,
+          "deduction": 3000,
+          "carrySt": 0,
+          "carryLt": 20000,
+          "carryTotal": 20000
+        },
+        {
+          "year": 11,
+          "net": -20000,
+          "deduction": 3000,
+          "carrySt": 0,
+          "carryLt": 17000,
+          "carryTotal": 17000
+        },
+        {
+          "year": 12,
+          "net": -17000,
+          "deduction": 3000,
+          "carrySt": 0,
+          "carryLt": 14000,
+          "carryTotal": 14000
+        },
+        {
+          "year": 13,
+          "net": -14000,
+          "deduction": 3000,
+          "carrySt": 0,
+          "carryLt": 11000,
+          "carryTotal": 11000
+        },
+        {
+          "year": 14,
+          "net": -11000,
+          "deduction": 3000,
+          "carrySt": 0,
+          "carryLt": 8000,
+          "carryTotal": 8000
+        },
+        {
+          "year": 15,
+          "net": -8000,
+          "deduction": 3000,
+          "carrySt": 0,
+          "carryLt": 5000,
+          "carryTotal": 5000
+        },
+        {
+          "year": 16,
+          "net": -5000,
+          "deduction": 3000,
+          "carrySt": 0,
+          "carryLt": 2000,
+          "carryTotal": 2000
+        },
+        {
+          "year": 17,
+          "net": -2000,
+          "deduction": 2000,
+          "carrySt": 0,
+          "carryLt": 0,
+          "carryTotal": 0
+        }
+      ],
+      "yearsOfDeductions": 17,
+      "lastYearDeduction": 2000,
+      "unusedAfterMax": 0,
+      "totalDeducted": 50000
+    },
+    "cl50kMfs": {
+      "limit": 1500,
+      "netThisYear": -50000,
+      "netSt": -30000,
+      "netLt": -20000,
+      "isNetLoss": true,
+      "deductionThisYear": 1500,
+      "carryTotal": 48500,
+      "carrySt": 28500,
+      "carryLt": 20000,
+      "schedule": [
+        {
+          "year": 1,
+          "net": -50000,
+          "deduction": 1500,
+          "carrySt": 28500,
+          "carryLt": 20000,
+          "carryTotal": 48500
+        },
+        {
+          "year": 2,
+          "net": -48500,
+          "deduction": 1500,
+          "carrySt": 27000,
+          "carryLt": 20000,
+          "carryTotal": 47000
+        },
+        {
+          "year": 3,
+          "net": -47000,
+          "deduction": 1500,
+          "carrySt": 25500,
+          "carryLt": 20000,
+          "carryTotal": 45500
+        },
+        {
+          "year": 4,
+          "net": -45500,
+          "deduction": 1500,
+          "carrySt": 24000,
+          "carryLt": 20000,
+          "carryTotal": 44000
+        },
+        {
+          "year": 5,
+          "net": -44000,
+          "deduction": 1500,
+          "carrySt": 22500,
+          "carryLt": 20000,
+          "carryTotal": 42500
+        },
+        {
+          "year": 6,
+          "net": -42500,
+          "deduction": 1500,
+          "carrySt": 21000,
+          "carryLt": 20000,
+          "carryTotal": 41000
+        },
+        {
+          "year": 7,
+          "net": -41000,
+          "deduction": 1500,
+          "carrySt": 19500,
+          "carryLt": 20000,
+          "carryTotal": 39500
+        },
+        {
+          "year": 8,
+          "net": -39500,
+          "deduction": 1500,
+          "carrySt": 18000,
+          "carryLt": 20000,
+          "carryTotal": 38000
+        },
+        {
+          "year": 9,
+          "net": -38000,
+          "deduction": 1500,
+          "carrySt": 16500,
+          "carryLt": 20000,
+          "carryTotal": 36500
+        },
+        {
+          "year": 10,
+          "net": -36500,
+          "deduction": 1500,
+          "carrySt": 15000,
+          "carryLt": 20000,
+          "carryTotal": 35000
+        },
+        {
+          "year": 11,
+          "net": -35000,
+          "deduction": 1500,
+          "carrySt": 13500,
+          "carryLt": 20000,
+          "carryTotal": 33500
+        },
+        {
+          "year": 12,
+          "net": -33500,
+          "deduction": 1500,
+          "carrySt": 12000,
+          "carryLt": 20000,
+          "carryTotal": 32000
+        },
+        {
+          "year": 13,
+          "net": -32000,
+          "deduction": 1500,
+          "carrySt": 10500,
+          "carryLt": 20000,
+          "carryTotal": 30500
+        },
+        {
+          "year": 14,
+          "net": -30500,
+          "deduction": 1500,
+          "carrySt": 9000,
+          "carryLt": 20000,
+          "carryTotal": 29000
+        },
+        {
+          "year": 15,
+          "net": -29000,
+          "deduction": 1500,
+          "carrySt": 7500,
+          "carryLt": 20000,
+          "carryTotal": 27500
+        },
+        {
+          "year": 16,
+          "net": -27500,
+          "deduction": 1500,
+          "carrySt": 6000,
+          "carryLt": 20000,
+          "carryTotal": 26000
+        },
+        {
+          "year": 17,
+          "net": -26000,
+          "deduction": 1500,
+          "carrySt": 4500,
+          "carryLt": 20000,
+          "carryTotal": 24500
+        },
+        {
+          "year": 18,
+          "net": -24500,
+          "deduction": 1500,
+          "carrySt": 3000,
+          "carryLt": 20000,
+          "carryTotal": 23000
+        },
+        {
+          "year": 19,
+          "net": -23000,
+          "deduction": 1500,
+          "carrySt": 1500,
+          "carryLt": 20000,
+          "carryTotal": 21500
+        },
+        {
+          "year": 20,
+          "net": -21500,
+          "deduction": 1500,
+          "carrySt": 0,
+          "carryLt": 20000,
+          "carryTotal": 20000
+        },
+        {
+          "year": 21,
+          "net": -20000,
+          "deduction": 1500,
+          "carrySt": 0,
+          "carryLt": 18500,
+          "carryTotal": 18500
+        },
+        {
+          "year": 22,
+          "net": -18500,
+          "deduction": 1500,
+          "carrySt": 0,
+          "carryLt": 17000,
+          "carryTotal": 17000
+        },
+        {
+          "year": 23,
+          "net": -17000,
+          "deduction": 1500,
+          "carrySt": 0,
+          "carryLt": 15500,
+          "carryTotal": 15500
+        },
+        {
+          "year": 24,
+          "net": -15500,
+          "deduction": 1500,
+          "carrySt": 0,
+          "carryLt": 14000,
+          "carryTotal": 14000
+        },
+        {
+          "year": 25,
+          "net": -14000,
+          "deduction": 1500,
+          "carrySt": 0,
+          "carryLt": 12500,
+          "carryTotal": 12500
+        },
+        {
+          "year": 26,
+          "net": -12500,
+          "deduction": 1500,
+          "carrySt": 0,
+          "carryLt": 11000,
+          "carryTotal": 11000
+        },
+        {
+          "year": 27,
+          "net": -11000,
+          "deduction": 1500,
+          "carrySt": 0,
+          "carryLt": 9500,
+          "carryTotal": 9500
+        },
+        {
+          "year": 28,
+          "net": -9500,
+          "deduction": 1500,
+          "carrySt": 0,
+          "carryLt": 8000,
+          "carryTotal": 8000
+        },
+        {
+          "year": 29,
+          "net": -8000,
+          "deduction": 1500,
+          "carrySt": 0,
+          "carryLt": 6500,
+          "carryTotal": 6500
+        },
+        {
+          "year": 30,
+          "net": -6500,
+          "deduction": 1500,
+          "carrySt": 0,
+          "carryLt": 5000,
+          "carryTotal": 5000
+        },
+        {
+          "year": 31,
+          "net": -5000,
+          "deduction": 1500,
+          "carrySt": 0,
+          "carryLt": 3500,
+          "carryTotal": 3500
+        },
+        {
+          "year": 32,
+          "net": -3500,
+          "deduction": 1500,
+          "carrySt": 0,
+          "carryLt": 2000,
+          "carryTotal": 2000
+        },
+        {
+          "year": 33,
+          "net": -2000,
+          "deduction": 1500,
+          "carrySt": 0,
+          "carryLt": 500,
+          "carryTotal": 500
+        },
+        {
+          "year": 34,
+          "net": -500,
+          "deduction": 500,
+          "carrySt": 0,
+          "carryLt": 0,
+          "carryTotal": 0
+        }
+      ],
+      "yearsOfDeductions": 34,
+      "lastYearDeduction": 500,
+      "unusedAfterMax": 0,
+      "totalDeducted": 50000
+    },
+    "clMixed": {
+      "limit": 3000,
+      "netThisYear": -6000,
+      "netSt": -10000,
+      "netLt": 4000,
+      "isNetLoss": true,
+      "deductionThisYear": 3000,
+      "carryTotal": 3000,
+      "carrySt": 3000,
+      "carryLt": 0,
+      "schedule": [
+        {
+          "year": 1,
+          "net": -6000,
+          "deduction": 3000,
+          "carrySt": 3000,
+          "carryLt": 0,
+          "carryTotal": 3000
+        },
+        {
+          "year": 2,
+          "net": -3000,
+          "deduction": 3000,
+          "carrySt": 0,
+          "carryLt": 0,
+          "carryTotal": 0
+        }
+      ],
+      "yearsOfDeductions": 2,
+      "lastYearDeduction": 3000,
+      "unusedAfterMax": 0,
+      "totalDeducted": 6000
+    },
+    "cl50kFutureGain": {
+      "limit": 3000,
+      "netThisYear": -50000,
+      "netSt": -30000,
+      "netLt": -20000,
+      "isNetLoss": true,
+      "deductionThisYear": 3000,
+      "carryTotal": 47000,
+      "carrySt": 27000,
+      "carryLt": 20000,
+      "schedule": [
+        {
+          "year": 1,
+          "net": -50000,
+          "deduction": 3000,
+          "carrySt": 27000,
+          "carryLt": 20000,
+          "carryTotal": 47000
+        },
+        {
+          "year": 2,
+          "net": -37000,
+          "deduction": 3000,
+          "carrySt": 24000,
+          "carryLt": 10000,
+          "carryTotal": 34000
+        },
+        {
+          "year": 3,
+          "net": -24000,
+          "deduction": 3000,
+          "carrySt": 21000,
+          "carryLt": 0,
+          "carryTotal": 21000
+        },
+        {
+          "year": 4,
+          "net": -11000,
+          "deduction": 3000,
+          "carrySt": 8000,
+          "carryLt": 0,
+          "carryTotal": 8000
+        },
+        {
+          "year": 5,
+          "net": 2000,
+          "deduction": 0,
+          "carrySt": 0,
+          "carryLt": 0,
+          "carryTotal": 0
+        }
+      ],
+      "yearsOfDeductions": 4,
+      "lastYearDeduction": 3000,
+      "unusedAfterMax": 0,
+      "totalDeducted": 12000
+    }
+  }
+}

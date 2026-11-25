@@ -1,0 +1,237 @@
+{
+ "rows": [
+  {
+   "keyword": "sep ira contribution calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.fidelity.com",
+    "www.sofi.com",
+    "jupid.com",
+    "www.irs.gov"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "ezretirementcalculator.com",
+    "www.fonerbooks.com",
+    "www.pensiondeductions.com",
+    "ttlc.intuit.com",
+    "unclekam.com",
+    "www.youtube.com",
+    "gigtaxtools.com",
+    "voxluci.com",
+    "www.justanswer.com"
+   ],
+   "major_domains": [
+    "ttlc.intuit.com"
+   ],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "people_also_ask": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "How much am I allowed to contribute to my SEP IRA?",
+    "How much should I save for retirement?",
+    "How can I calculate my retirement date?",
+    "How much will $1000 grow in a Roth IRA?",
+    "How long will $750,000 last in retirement at 62?",
+    "Is $200 a month enough for Roth IRA?"
+   ],
+   "related_searches": [
+    "Best retirement calculator free",
+    "Best Monte Carlo retirement calculator",
+    "Best retirement calculator for married couples",
+    "Merrill retirement calculator",
+    "Schwab retirement calculator",
+    "Fidelity Monte Carlo simulation calculator",
+    "Personal retirement calculator",
+    "Monte carlo retirement calculator excel"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (ttlc.intuit.com); AI Overview present, cites www.fidelity.com, www.sofi.com, jupid.com, www.irs.gov",
+   "se_results_count": 92
+  },
+  {
+   "keyword": "social security tax withholding calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.irs.gov",
+    "www.ssa.gov",
+    "www.staffmarket.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "tools.en.softonic.com",
+    "voxluci.com",
+    "tool.teamzlab.com",
+    "www.irs.com",
+    "www.justanswer.com",
+    "sagesystax.com",
+    "www.calcxml.com",
+    "ttlc.intuit.com",
+    "www.fidelity.com"
+   ],
+   "major_domains": [
+    "ttlc.intuit.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "people_also_ask": 1
+   },
+   "paa": [
+    "How is Social Security withholding calculated?",
+    "Where can I find my Social Security number?",
+    "How do I calculate my FICA tax burden in 2026?",
+    "What are the tax brackets for 2026?",
+    "What is the new $6000 tax break for seniors?",
+    "Does everyone get a $3,000 tax refund?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (ttlc.intuit.com); AI Overview present, cites www.irs.gov, www.ssa.gov, www.staffmarket.com",
+   "se_results_count": 89
+  },
+  {
+   "keyword": "capital loss carryover calculator",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.xltemplates.org",
+    "finfriend.work",
+    "beacontry.com",
+    "simms-accounting.com",
+    "glidepathmoney.com",
+    "www.youtube.com",
+    "ttlc.intuit.com",
+    "www.worthshield.com",
+    "app.getsupers.com"
+   ],
+   "major_domains": [
+    "ttlc.intuit.com"
+   ],
+   "forum_domains": [
+    "www.youtube.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "people_also_ask": 1
+   },
+   "paa": [
+    "How do I find out if I have capital loss carryover?",
+    "What are the rules for carry forward of losses?",
+    "Is capital gains tax 15% or 20%?",
+    "How do I calculate capital gains tax on shares sold?",
+    "What is the 6 year rule for capital gains tax?",
+    "How much capital gains tax on $250,000?"
+   ],
+   "related_searches": [],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (ttlc.intuit.com); AI Overview present",
+   "se_results_count": 74
+  },
+  {
+   "keyword": "2027 medicare part b premium",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.cms.gov",
+    "unitedmedicareadvisors.com",
+    "finance.yahoo.com",
+    "www.youtube.com",
+    "banderwealth.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "heroinvesting.com",
+    "heroinvesting.com",
+    "www.facebook.com",
+    "www.bearsavings.com",
+    "staycurrentnews.com",
+    "www.facebook.com",
+    "thcnn.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [
+    "www.facebook.com",
+    "www.facebook.com"
+   ],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "images": 1,
+    "organic": 7,
+    "video": 1
+   },
+   "paa": [],
+   "related_searches": [],
+   "recommended_shape": "text page with a how-to / step structure \u2014 video results present",
+   "evidence": "AI Overview present, cites www.cms.gov, unitedmedicareadvisors.com, finance.yahoo.com, www.youtube.com",
+   "se_results_count": 87
+  },
+  {
+   "keyword": "mileage rate 2026",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.irs.gov"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.irs.gov",
+    "www.cdflaborlaw.com",
+    "reedcorp.tax",
+    "www.irs.gov",
+    "ramp.com",
+    "www.congress.gov",
+    "www.driversnote.com",
+    "bradyware.com",
+    "uvafinance.virginia.edu"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 9,
+    "people_also_ask": 1,
+    "related_searches": 1
+   },
+   "paa": [
+    "How to calculate mileage in 2026?",
+    "Is .70 per mile good for reimbursement?",
+    "Can I deduct both mileage and gas?",
+    "What is the IRS mileage rate for 2026 pdf?",
+    "What are the IRS mileage rates for 2026?",
+    "What does the IRS need for proof of mileage?"
+   ],
+   "related_searches": [
+    "IRS mileage rate 2027",
+    "IRS mileage rate 2026",
+    "Mileage rate 2026 calculator",
+    "Medical mileage rate 2026",
+    "IRS mileage rate 2026 vs 2025",
+    "IRS mileage rate 2026 increase",
+    "IRS mileage rate 2026 release date",
+    "IRS mileage rate 2026 what does it cover"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "AI Overview present, cites www.irs.gov",
+   "se_results_count": 84900
+  }
+ ],
+ "cost": "DataForSEO: 5 calls, $0.01060 of $2.00 budget"
+}

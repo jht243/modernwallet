@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { computeCola, colaChart, COLA_2027_PCT, PART_B_2026_STANDARD, PART_B_2027_PROJECTED, type ColaInput } from "../lib/social-security-cola";
+import { computeCola, colaChart, COLA_2027_PCT, PART_B_2026_STANDARD, PART_B_2027_STANDARD, type ColaInput } from "../lib/social-security-cola";
 import ToolPicks, { book } from "./ToolPicks";
 import { fmtUSD } from "../lib/format";
 import { Field, MoneyInput, Stat, S } from "./calc-ui";
@@ -13,6 +13,8 @@ interface Props {
   heading?: string;
   subheading?: string;
 }
+
+const CMS_PART_B = "https://www.cms.gov/newsroom/fact-sheets/2027-medicare-parts-b-premiums-deductibles";
 
 const DEFAULTS: ColaInput = { currentBenefit: 2000, partBPremium: 0 };
 
@@ -55,9 +57,8 @@ export default function SocialSecurityColaCalculator({ initialData, heading, sub
             </>
           )}
           <Field label="Medicare Part B premium deducted in 2027 (optional)"><MoneyInput value={input.partBPremium} onChange={(v) => set({ partBPremium: v })} /></Field>
-          <p style={S.hint}>The 2027 Part B premium has not been announced. Leave at 0 to see the gross raise, or enter the premium from your notice once it posts in late November.</p>
-          <button type="button" style={C.btn} onClick={() => set({ partBPremium: PART_B_2027_PROJECTED })}>Use the projected {fmtUSD(PART_B_2027_PROJECTED, { cents: true })}</button>
-          <p style={S.hint}>2026 Medicare Trustees Report projection. CMS sets the final 2027 premium in the fall.</p>
+          <p style={S.hint}>The standard 2027 Part B premium is {fmtUSD(PART_B_2027_STANDARD, { cents: true })}, up $6.50 from {fmtUSD(PART_B_2026_STANDARD, { cents: true })} in 2026 (<a href={CMS_PART_B} target="_blank" rel="noopener noreferrer">CMS, November 17, 2026</a>). Higher-income enrollees pay an income-related surcharge on top, so enter the amount on your notice if it differs. Leave the field at 0 to see the gross raise.</p>
+          <button type="button" style={C.btn} onClick={() => set({ partBPremium: PART_B_2027_STANDARD })}>Use the final 2027 standard premium, {fmtUSD(PART_B_2027_STANDARD, { cents: true })}</button>
         </div>
 
         <div style={S.results} className="mw-out">

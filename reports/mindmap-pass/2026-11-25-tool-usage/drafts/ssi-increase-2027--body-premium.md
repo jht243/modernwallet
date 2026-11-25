@@ -1,0 +1,1 @@
+The standard monthly Part B premium is $209.40 for 2027. That is an increase of $6.50 from the previous rate of $202.90. The annual deductible is $292. For Medicare enrollees, the 2027 premium amount appears in the my Social Security Message Center starting in late November.

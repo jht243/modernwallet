@@ -1,0 +1,143 @@
+e/blobs/f8525ec6cdc671efe9f43c40ae527667c40e8b998173872140468ac70c5c2259/irs-notice-2026-66.txt",
+      "sha256": "f8525ec6cdc671efe9f43c40ae527667c40e8b998173872140468ac70c5c2259",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-notice-2026-66.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/f93f754fba1a6ec069fe467e589e8a9438462ec966891c9ea8345845caefbf70/irs-pub550.txt",
+      "sha256": "f93f754fba1a6ec069fe467e589e8a9438462ec966891c9ea8345845caefbf70",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-pub550.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/db1f1fbe4645f567aa19f6fab7144a28c9881114773d1425636b57ae48b76f2a/irs-pub560.txt",
+      "sha256": "db1f1fbe4645f567aa19f6fab7144a28c9881114773d1425636b57ae48b76f2a",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-pub560.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/06dc2dd8c45947ff7e7bb95f5e28d7fab0f4022fa7ed03781706b1241377bbdd/irs-topic409.txt",
+      "sha256": "06dc2dd8c45947ff7e7bb95f5e28d7fab0f4022fa7ed03781706b1241377bbdd",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-topic409.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/c6a06f8f4972a55bc2ec9b37b4232d85ae1098dfa2852efa3304c9e9cf37c644/irs-w4v.txt",
+      "sha256": "c6a06f8f4972a55bc2ec9b37b4232d85ae1098dfa2852efa3304c9e9cf37c644",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-w4v.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/aa366377e859c7006990caab5cc781a60f892fc05529c5efc697271f3237cf2e/investing.md",
+      "sha256": "aa366377e859c7006990caab5cc781a60f892fc05529c5efc697271f3237cf2e",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/investing.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/3aad81e2c236bdb4ed85befbde29fcd968712ad9f697b3cb7497bfb73294d50e/mileage-deduction.md",
+      "sha256": "3aad81e2c236bdb4ed85befbde29fcd968712ad9f697b3cb7497bfb73294d50e",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/mileage-deduction.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/c11e402c7718c5180338e477f0013d12a0944e2bf0a3f746a8f0bcd3d691d99f/portfolio.md",
+      "sha256": "c11e402c7718c5180338e477f0013d12a0944e2bf0a3f746a8f0bcd3d691d99f",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/portfolio.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/2d6308f9ca949d26e447de014d978dca3326d2185d46f200407e51de20612e86/retirement.md",
+      "sha256": "2d6308f9ca949d26e447de014d978dca3326d2185d46f200407e51de20612e86",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/retirement.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/2915d2d0b1a051bce638f0140ce0c59a25544d9ec5ba3a203401308132dbcb16/social-security-cola-calculator.md",
+      "sha256": "2915d2d0b1a051bce638f0140ce0c59a25544d9ec5ba3a203401308132dbcb16",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/tool-usage-pass/2026-11-25/personas/social-security-cola-calculator.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/fa34274d8707e15c70c5c83921a82e8a5aec249227ec0350336f6aa66289c546/review.json",
+      "sha256": "fa34274d8707e15c70c5c83921a82e8a5aec249227ec0350336f6aa66289c546",
+      "checkedAt": "2026-11-25T20:29:55.182719+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report",
+      "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/review.json"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 1,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "snapshot": {
+    "path": "reports/mindmap-pass/2026-11-25-tool-usage/blobs/9cb351fb2c586e61d4a1748ac96463993d8cb3a044e42ddb766070318a8559c5/preview-snapshot-r2.json",
+    "sha256": "9cb351fb2c586e61d4a1748ac96463993d8cb3a044e42ddb766070318a8559c5",
+    "originPath": "reports/mindmap-pass/2026-11-25-tool-usage/audit/preview-snapshot-r2.json"
+  },
+  "findings": [
+    {
+      "id": "SEP-1",
+      "status": "open",
+      "evidence": "State the end-of-year rule as the general rule and add the Pub 560 first-plan-year exception for sole proprietors with no employees (deferrals paid before the filing deadline, without extensions)."
+    },
+    {
+      "id": "SEP-2",
+      "status": "open",
+      "evidence": "Answer directly: yes you can have both, but the employee deferral limit and the overall 415(c) limit are shared, and employer contributions to both plans count against one 20% / $75,000 ceiling. Cite Pub 560 sections."
+    },
+    {
+      "id": "SEP-3",
+      "status": "open",
+      "evidence": "Use $192,300 for 2027 with an SSA source link and add a boundary test above it, or keep the labeled note but cite why the SSA figure is not used."
+    },
+    {
+      "id": "SEP-4",
+      "status": "open",
+      "evidence": "Say 'in one plan, or split across both within one 20% / $75,000 limit'."
+    },
+    {
+      "id": "SEP-5",
+      "status": "open",
+      "evidence": "Write 'SEP IRA contribution calculator'."
+    },
+    {
+      "id": "R1-1-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Replayed scripts/test-tool-usage-1125.mjs (135 checks pass) and recomputed $100,000 profit by hand: SE tax $14,129.55, net earnings $92,935, SEP $18,587, solo $44,087 matching page and hydrated tool. 2027 IRS limits ($25,500, $75,000, $375,000, $8,500, $11,750) match saved Notice 2026-66 and IR-2027."
+    },
+    {
+      "id": "R1-1-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full rendered text; internal contradictions listed in findings (see ids). Replayed scripts/test-tool-usage-1125.mjs (135 checks pass) and recomputed $100,000 profit by hand: SE tax $14,129.55, net earnings $92,935, SEP $18,587, solo $44,087 matching page and hydrated tool. 2027 IRS limits ($25,500, $75,000, $375,000, $8,500, $11,750) match saved Notice 2026-66 and IR-2027."
+    },
+    {
+      "id": "R1-1-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "Replayed scripts/test-tool-usage-1125.mjs (135 checks pass) and recomputed $100,000 profit by hand: SE tax $14,129.55, net earnings $92,935, SEP $18,587, solo $44,087 matching page and hydrated tool. 2027 IRS limits ($25,500, $75,000, $375,000, $8,500, $11,750) match saved Notice 2026-66 and IR-2027. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-1-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "Replayed scripts/test-tool-usage-1125.mjs (135 checks pass) and recomputed $100,000 profit by hand: SE tax $14,129.55, net earnings $92,935, SEP $18,587, solo $44,087 matching page and hydrated too

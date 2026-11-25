@@ -1,0 +1,107 @@
+coverage_lookup: 4 candidate(s) vs 893 repo pages / 911 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1306 past-chart lines
+
+### /sep-ira-solo-401k-contribution-calculator/  — row - · create new content
+keyword: sep ira contribution calculator; solo 401k contribution limit calculator
+reader question (new page intent): How much can I put into a SEP IRA or solo 401(k) as a self-employed person?
+lookup terms: sep ira solo 401k contribution   format cues: calculator limits
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/sep-ira-vs-solo-401k  [PARENT PAGE · in sitemap · src/data/comparisons.ts · topic match 0.8 on sep ira solo 401k]
+    title: SEP-IRA vs Solo 401(k): 2025 Guide for the Self-Employed
+    desc:  SEP-IRA vs Solo 401(k): the Solo 401(k) lets you save more at low income and offers Roth and loans. See 2025 IRS limits, rules, and how to choose.
+- /compare/solo-401k-vs-simple-ira  [in sitemap · src/data/comparisons.ts · topic match 0.6 on ira solo 401k]
+    title: Solo 401(k) vs SIMPLE IRA: The 2025 Guide for Owners
+    desc:  Solo 401(k) vs SIMPLE IRA compared: 2025 contribution limits, employee eligibility, admin work, and loans, so you know which plan fits your business.
+- /guides/ira-contribution-limits-2026  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.4 on ira contribution · same format: limits]
+    title: IRA Contribution Limits for 2026: The Complete Guide
+    desc:  The 2026 IRA contribution limit is $7,500 ($8,600 if you're 50+). See Roth income limits, deduction rules, and what happens if you contribute too much.
+- /guides/401k-contribution-limits-2026  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.4 on 401k contribution · same format: limits]
+    title: 401(k) Contribution Limits for 2026: The Complete Guide
+    desc:  The 2026 401(k) contribution limit is $24,500 ($32,500 if you're 50+, $35,750 if you're 60-63). See the Roth/Traditional combined cap and catch-up rules.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-15-trend-lane-c.md [exclusions] - 401k contribution roth vs traditional / roth or regular 401k: DROP, exist (/compare/roth-401k-vs-traditional-401k, /roth-vs-traditional-401k-calculator, /compare/401k-vs-roth-ira).
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent plus fresh news (IRS IR-2026-136, Nov 12 2026). lookup: /guides/401k-contribution-limits-2026 and /guides/ira-contribution-limits-2026 serve a 2026-limits reader, not a 2027 one; /compare/tsp-vs-40
+- 2026-11-16-xtrends.md [table] | Inbound path: /guides/401k-contribution-limits-2026 has no pointer to the 2027 figures that IRS announced Nov 12 2026 (lookup: PARENT/sibling year page). | Add a one-sentence pointer with anchor to the 2027 guide in th
+- 2026-11-16-xtrends.md [table] | Inbound path: /guides/ira-contribution-limits-2026 has no pointer to 2027 figures (IRA limit unchanged, phase-outs rose). | Add a one-sentence pointer with anchor to the 2027 guide in the 2026 IRA guide's limits sectio
+- 2026-11-16-xtrends.md [table] | Inbound path: /retirement/401k-calculator/ shows contribution rates but not the 2027 cap IRS announced Nov 12 2026. | Add an inbound link to the 2027 limits guide beside the calculator's contribution-limit discussion (
+- 2026-11-25-autocomplete.md [table] | lens 2: '401k calculator if i stop contributing / adjusted for inflation / no match / how long will it last / increasing contributions' 21 completions. Source: estimate (autocomplete) NOT measured. lookup: /retirement/
+Commits naming the topic: none
+Same run overlap: none
+
+### /social-security-withholding-calculator/  — row - · create new content
+keyword: social security tax withholding w-4v; how much tax to withhold from social security
+reader question (new page intent): How much federal tax should I withhold from my Social Security benefit (Form W-4V)?
+lookup terms: social security withholding tax 4v withhold   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/states-that-tax-social-security  [in sitemap · src/data/guides.ts · topic match 0.5 on social security tax]
+    title: States That Tax Social Security Benefits in 2026
+    desc:  Eight states tax some Social Security in 2026. See exemptions, income thresholds, and rules for Colorado, Connecticut, Minnesota, Montana, and others.
+- /guides/senior-deduction-social-security  [in sitemap · src/data/guides.ts · topic match 0.5 on social security tax]
+    title: Social Security Tax Deduction for Seniors (2026)
+    desc:  Learn how the new Social Security tax deduction for seniors works, who qualifies for up to $6,000, and how benefits are taxed in 2026.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 5 | social-security-taxable-benefits-calculator (46 people; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Eviden
+- 2026-11-04-tool-usage.md [exclusions] - Next in line (specs, cap of 3 builds, 2 built): depreciation-recapture-calculator, 1031-exchange-calculator (prior specs); Social Security withholding (W-4V) estimator; capital loss carryover calculator; Florida homest
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'paycheck tax calculator' 18,100 (KD 65), salary take home calculator 6,600 (KD 62), after tax income calculator 9,900 (KD 70), post tax income calculator 8,100 (KD 34); measured 
+- 2026-11-15-keyword-gap.md [exclusions] - Insurance (car, home, health, life, renters, travel, disability), credit cards, rates, Social Security, celebrity net worth, brand-navigational queries: adjacent-not-pursued or covered-partial per ledger; high KD, per-
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-
+- 2026-11-25-autocomplete.md [exclusions] - Social Security cluster (280 deferred completions: benefit formula/AIME/PIA, earnings test, spousal and divorced benefits, claiming age): DEFERRED - ssa.gov returned HTTP 403 Access Denied to curl and WebFetch on every
+Commits naming the topic: none
+Same run overlap: none
+
+### /capital-loss-carryover-calculator/  — row - · create new content
+keyword: capital loss carryover calculator; schedule d carryover
+reader question (new page intent): How much of my stock losses can I deduct this year and carry forward?
+lookup terms: capital loss carryover schedule   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-07-10.md [table] | [direct-intent] Net-worth-tracker + tax-planning angle — grounding query "best net worth tracker with tax plannin..." (17 citations, 28.33% share — the site's 2nd-highest-citation commercial query). No SEMRUSH row for 
+- 2026-10-12-xtrends.md [table] | Scout bullet "Hurricane deductible calculator". `hurricane deductible` 170/mo KD 6 (measured), `hurricane deductible florida` 50/mo KD 0; the calculator phrase itself has no measured volume. No page or tool covers it. 
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'capital gains harvesting', Ready For Retirement brokerage episode). 'tax loss harvesting' 12,100/mo KD 53 CPC $3.93 (SEMRUSH us 2026-11-04, measured); 'tax loss harvesting r
+- 2026-11-04-tool-usage.md [table] | 8 | stock-capital-gains-tax-calculator (19 people, 20 uses, 36 views (all 19 in the last 7 days); data_days 27). Walkthrough: '0% room left' is the room before the sale (MFJ $80,000 TI + $30,000 gain shows $18,900 thou
+- 2026-11-04-tool-usage.md [table] | 9 | stock-capital-gains-tax-calculator (19 people; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Evidence: repor
+- 2026-11-04-tool-usage.md [exclusions] - Next in line (specs, cap of 3 builds, 2 built): depreciation-recapture-calculator, 1031-exchange-calculator (prior specs); Social Security withholding (W-4V) estimator; capital loss carryover calculator; Florida homest
+Commits naming the topic: none
+Same run overlap: none
+
+### /social-security-cola-calculator/  — row - · create new content
+keyword: 2027 medicare part b premium social security cola
+reader question (new page intent): What will my January 2027 Social Security check be after the Part B premium?
+lookup terms: social security cola 2027 medicare part premium   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /social-security-cola-calculator  [EXACT SLUG · in sitemap · (sitemap only) · title fetched live · topic match 0.43 on social security cola · same format: calculator]
+    title: Social Security COLA Calculator: Your 2027 Benefit at 3.6%
+    desc:  Free Social Security COLA calculator. Enter your monthly benefit to see your 2027 amount after the 3.6% raise, plus a chart of common benefit amounts.
+- /guides/medicare-part-d-2027-premiums  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.57 on 2027 medicare part premium]
+    title: Medicare Part D 2027: KFF Projects Premiums Up 50%
+    desc:  KFF projects stand-alone Medicare Part D premiums averaging $51 a month in 2027, up from $34. See what to compare before open enrollment ends December 7.
+- /guides/2027-social-security-cola  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.57 on social security cola 2027]
+    title: 2027 Social Security COLA (Cost-of-Living Adjustment) Guide
+    desc:  The 2027 Social Security COLA (cost-of-living adjustment) is 3.6%, announced October 14, 2026. See what it adds to your check and how Part B affects it.
+- /guides/2027-ssdi-cola  [in sitemap · src/data/guides.ts · topic match 0.57 on social security cola 2027]
+    title: Social Security COLA 2027 for Disability: SSDI Up 3.6%
+    desc:  The Social Security COLA 2027 for disability is a 3.6% cost-of-living adjustment. The average disabled-worker check rises from $1,642 to $1,701 in January.
+- /guides/social-security-changes-2027  [in sitemap · src/data/guides.ts · topic match 0.57 on social security cola 2027]
+    title: Social Security Changes 2027 Listed Next to 2026 Figures
+    desc:  Social Security changes 2027: a 3.6% COLA, a $192,300 wage base and a $25,560 earnings limit. See every 2026 vs 2027 figure in one table.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-15-keyword-gap.md [exclusions] - Insurance (car, home, health, life, renters, travel, disability), credit cards, rates, Social Security, celebrity net worth, brand-navigational queries: adjacent-not-pursued or covered-partial per ledger; high KD, per-
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent (ENRICH requested by brief). lookup: /budget/aca-subsidy-calculator exact route exists, title 'ACA Subsidy Calculator for 2027 Marketplace Premiums'; gap: 0 mentions of bronze, enhanced subsidies, 
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-
+- 2026-11-23-comparison.md [exclusions] - Candidate 8 medicare part a vs part b (1,000/mo KD 33): DEFER. medicare.gov not capturable verbatim; 2027 Part B premium unannounced.
+- 2026-11-25-autocomplete.md [exclusions] - Social Security cluster (280 deferred completions: benefit formula/AIME/PIA, earnings test, spousal and divorced benefits, claiming age): DEFERRED - ssa.gov returned HTTP 403 Access Denied to curl and WebFetch on every
+- 2026-11-25-xtrends.md [table] | lookup: no match. Site has only /compare/aca-vs-medicaid/ and /compare/medicare-vs-medicaid/ (different intent). Demand inferred - fresh news trend, no tool volume. | Create /guides/medicaid-work-requirements-2027-hold
+Commits naming the topic: none
+Same run overlap: none
+

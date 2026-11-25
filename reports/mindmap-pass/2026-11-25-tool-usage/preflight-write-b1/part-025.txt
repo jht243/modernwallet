@@ -1,0 +1,45 @@
+er this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-2-metadata.md, paragraph 31. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-2-metadata.md, paragraph 32. Use its exact text under this source/section context.]
+
+## Anti-AI language — applies to every sentence you ADD here (MANDATORY — added 2026-08-17)
+
+Body-text updates are additive prose, held to the **same** anti-AI-language bar as net-new pages. New substantive body content must pass the independent Phase 4 decision-evidence gate before delivery; pure mechanical/link edits keep their existing checks. Load `.claude/commands/_anti-ai-language.md` and apply its **WRITER** section to every sentence you add. If the file is missing, STOP and report it.
+
+## Updated-page date-bump rule (MANDATORY — workflow-wide, added 2026-07-12; link-only exemption aligned 2026-11-18)
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-2-metadata.md, paragraph 34. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-2-metadata.md, paragraph 35. Use its exact text under this source/section context.]
+
+**Auditors / reviewer gates (adversarial review):** for EVERY substantively edited existing page (Phase 2 metadata / Phase 5 body or tool enrichment), verify the rendered "Last updated" date (and JSON-LD `dateModified`) now equals the run date — a stale date on a substantively updated page is a **HARD FAIL** (one-field fix; never rewrite the page). For **Phase 6 link-only routes** (inbound internal link additions with no Phase 2/5 substantive action), verify the page **preserves** its existing `updatedDate` / `dateModified` — NEVER fail `datesAndSchema` on a Phase 6 link-only route for keeping its prior `updatedDate`, and treat date churn on an unchanged or link-only page as a fail.
+
+## Content standard — sequencing
+> **‼️ HARD SEQUENCING RULE — do not skip.** Do NOT treat this phase as complete, and do NOT show, serve, publish, or hand off anything you write here, until the Phase 4 audit has run on THIS exact output and PASSED. Any rewrite (including fixing an audit finding) voids a prior pass and requires re-auditing. See the PHASE 4 IS NOT OPTIONAL rule at the top of `.claude/commands/_content-standard.md`.
+
+If `.claude/commands/_content-standard.local.md` exists in this repo, its sections override the same-named sections of the standard; see PRECEDENCE at the top of the standard. Neutrality and paid-placement claims are governed by the standard's neutrality rules (Phase 4 hard-fails them).
+
+<!-- mindmap-execution-v1 -->
+Apply `_mindmap-execution.md` to substantive additions on existing pages: current approved manifest, relevant executed/source-based evidence, case/survey retrieval and writer flags. The same independent Phase 4 usefulness/replay/rendered checks apply. Pure metadata/link corrections retain their existing scope.
+<!-- /mindmap-execution-v1 -->
+
+**Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.
+
+[Source: .claude/commands/_workflow-efficiency.md]
+> **‼️ THIN DISPATCHER INVARIANT (ZERO DOUBLE-LOADING — 2026-11-23):** `MAIN` is strictly a stage coordinator and mechanical `PUBLISH` runner. **`MAIN` MUST NEVER run `workflow-preflight.py prepare --phase build|chart-review|write|audit` or `workflow-delivery-serial.local.py` inside `MAIN`'s own context** — doing so loads 18–21 rule parts (~150K tokens) into `MAIN` and then reloads them a second time inside the spawned stage workers! Each spawned stage worker (`BUILD`, `CHART-REVIEW`, `WRITE`, `AUDIT`) runs its own `workflow-preflight.py prepare` inside its own isolated context (and reuses unchanged hashes via `--reuse` on follow-up batches/rounds). `MAIN` only runs `workflow-preflight.py prepare --phase publish` when `MAIN` executes mechanical `PUBLISH` inline.
+
+<!-- fleet-resume-release-20261109 -->
+Owner-authorized fleet update, 2026-11-09. Apply the installed shared tools through this site's native workflow. Resume the same canonical job, source intake, chart approval, candidate and actual review history after retries. Pass the current task and open findings, retain retrievable history, and reuse unchanged rules only with actual continued access and understanding. Join each real worker's terminal result once. Use eligible correction scope for changed sections; an unchanged reviewed render needs publication checks, without another writing or editorial pass.
+
+Use this site's existing factual risk floor and 1/2/3 independent review ceiling. After its final allowed audit, automatically publish the exact latest reviewed candidate (`disposition: "publish-at-audit-limit"`), retaining FAIL findings honestly — NEVER edit or rebuild an exhausted route after its final audit (which invalidates the final audited snapshot while `reserve` refuses another round), and NEVER block, hold, drop, or ask the user how held pages should go out. The ONLY content block at audit exhaustion is a narrow direct legal/physical-harm `liabilityBlock` (`medical-dosing-or-treatment-harm` such as wrong medication dosing/contraindications, `acute-physical-safety-hazard`, or `unlawful-or-defamatory-liability` including fabricated clinical/lab testing or clinician sign-off), plus explicit `professionalReviewRequired: true` or explicit client holds; general medical pricing, clinic locations, addresses/hours, scheduling, educational condition overviews, attribution phrasing, `scopeAndExclusions`, and SEO/style findings never block at audit exhaustion. Preserve full SEO and mechanical build/render/live/link checks. Publication or reporting recovery retains the original reviews and counters.
+
+For competitor monitors, run the native detect/resume entry first. The installed competitor-handoff helper restores saved work before fresh discovery. For completed recovered reviews, use verify-preview against the current local preview; identical previews are removed, changed output retains evidence for targeted review. Use the native ledger adapter's batch --dispositions path to record every selected URL/version; preserve newer observations separately. Applicable sitemap-based monitors reuse the matching same-day harvest for their baseline. Ledger-only baselines already reuse collected data. Use the existing automatic publication/reporting paths and preserve schedules. No additional content, approval gate or paid test is introduced.
+<!-- /fleet-resume-release-20261109 -->
+
+# Mindmap efficiency, owner rollout 2026-11-10
+
+Apply these optimizations inside the existing workflow and native publication path. Keep each site's instructions, authorizations, exclusions, professional-review requirements and release exceptions.
+
+Read complete role-scoped applicable rules on the first visit. Do not pre-read `_workflow-efficiency.md`, `_workflow-checkpoints.md`, or role/phase files before `workflow-preflight.py prepare`, and never run standalone `workflow-start.sh` or `--help` inside a stage worker beforehand — `MAIN` passes each worker its ready-to-run Turn-1 `workflow-preflight.py prepare` command (`workerPrepareCommand` from `workflow-handoff.py auto-seal` on `WRITE`/`AUDIT`, keeping `--run-dir` inside `reports/...`, never `/tmp/...`, and adding `WORKFLOW_SOURCE_ROOT="$PWD"` + `--source "$PWD"` in local worktrees), and `prepare` compiles and delivers the bundle automatically on Turn 1. For Mindmap `build` and independent `chart-review`, `workflow-preflight.py` loads complete preparation contracts plus the active repository's verbatim compiled `chart-obligation` contract (`_mindmap-chart-obligations.generated.md`) extracted fail-closed from downstream execution files, omitting execution-only prose/deployment manuals until `write`/`audit`/`publish`. `write` and `audit` still load full content, anti-AI, evidence and testing standards; immediately after `write` preflight `check` succeeds, run `WORKFLOW_RUN_ID=<runId> bash .claude/tools/load-standards.sh "<routine>" "write" --run-id <runId> --ledger-only` so `reports/standards-ledger.jsonl` is recorded at stage start without re-dumping 140 KB of standards text. `publish` omits prose-writing manuals once a sealed reviewed handoff is supplied. Preflight compiles only byte-identical paragraphs once, preserves every original source hash and verifies complete delivery. Use `workflow-delivery-serial.local.py --run-dir <DIR> --part <START> --through <END>` with **4 parallel `Bash` tool calls per turn** delivering 3 consecutive parts per call (`--part 1 --through 3`, `--part 4 --through 6`, `--part 7 --through 9`, `--part 10 --through 12` = 12 parts/turn, each `<=27KB` with zero o

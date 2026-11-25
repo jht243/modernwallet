@@ -1,0 +1,9 @@
+# OUTPUT CONTRACT
+Return ONE JSON object with exactly these keys, and nothing else:
+- "metaTitle": string, 60 characters or fewer, contains the primary keyword.
+- "metaDescription": string, 160 characters or fewer.
+- "introText": string. Two paragraphs separated by "\n\n". Paragraph one opens with a short, complete sentence that directly answers the row's reader question. Paragraph two is a worked example using ONLY figures from the fact list. Where the row's provenance says we calculated the example, say so naturally beside it ("In our internal calculation, we modeled ...", then what we found), never "we tested".
+- "howItWorks": string. Four to six paragraphs separated by "\n\n". Explains how the calculator works, using ONLY figures from the fact list. Markdown links allowed only to the internal routes and external URLs listed in the prompt; link each named agency or form at its first mention. The last paragraph is the takeaway: the answer, who it applies to, who it is not for, what would change it, and a closing sentence that is the next action. It never repeats the opening paragraph word for word.
+- "faqs": array of 8 objects {"question": string, "answer": string}. Each answer is two to four short sentences and leads with the direct answer. Use the questions given in the prompt, verbatim, in order.
+Headings are not used. The brand is "ModernWallet"; if the brand is named, write "At ModernWallet, we ...". Never claim a personal experience outside _experience.md, and never claim testing, a client conversation or a professional review. Do not name a legal, tax or medical disclaimer in the text; the template adds it at the bottom.
+No sentence may hold more than three figures (a figure = any $ amount, %, year or month count, or ratio): split long worked-example sentences, stating the terms in one sentence and the results in the next.

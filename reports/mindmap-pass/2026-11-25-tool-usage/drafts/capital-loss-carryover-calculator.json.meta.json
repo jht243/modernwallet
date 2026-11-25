@@ -1,0 +1,103 @@
+{
+ "slug": "capital-loss-carryover-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1108,
+ "floor": 600,
+ "input_tokens": 23630,
+ "output_tokens": 1949,
+ "thinking_tokens": 7452,
+ "cached_tokens": 20936,
+ "est_cost_usd": 0.0388,
+ "guards": {
+  "repairs": [
+   "slug None -> 'capital-loss-carryover-calculator'"
+  ],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 1108,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 467,
+   "floor": 600,
+   "ratio": 0.78,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    6,
+    0
+   ],
+   "applied": [
+    {
+     "id": "howItWorks",
+     "quote": "Understanding these carryover mechanics is essential to [how tax loss harvesting works](/guides/tax-loss-harvesting/) when planning investment sales.",
+     "replacement": "This connects to [how tax loss harvesting works](/guides/tax-loss-harvesting/).",
+     "type": "unsupported",
+     "why": "SOURCE does not mention planning investment sales or call carryovers essential."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "You can use your carryover to offset an unlimited amount of capital gains, plus up to $3,000 of other income per year.",
+     "replacement": "You can use your carryover to offset capital gains, plus up to $3,000 of other income per year.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that carryovers offset an unlimited amount of gains."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "Short-term carryovers reduce short-term gains before long-term gains.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE specifies long-term carryover ordering but not short-term carryover gain ordering."
+    },
+    {
+     "id": "faqs[6].answer",
+     "quote": "An estate or surviving beneficiary cannot carry over or deduct the unused loss.",
+     "replacement": "The estate cannot carry it over.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention surviving beneficiaries."
+    },
+    {
+     "id": "faqs[7].answer",
+     "quote": "Disallowed losses cannot offset gains or carry forward on Schedule D until the replacement shares are disposed of in a qualifying sale.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not describe replacement share dispositions under wash sale rules."
+    },
+    {
+     "id": "faqs[7].answer",
+     "quote": "Once a loss is properly recognized, any unused portion enters your carryover schedule.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state rules for recognizing previously disallowed wash sale losses."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1170
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 4066
+  }
+ },
+ "seconds": 145.1,
+ "response_id": "HDsHa860MpCE1sgPnrzzsQs",
+ "generated_at": "2026-11-25T19:49:01+0000"
+}

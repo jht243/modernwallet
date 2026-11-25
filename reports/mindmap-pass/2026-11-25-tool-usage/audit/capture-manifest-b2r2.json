@@ -1,0 +1,14 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "write-b1",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/retirement/couples-retirement-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "2026-11-25-tool-usage"
+}

@@ -1,0 +1,41 @@
+{
+  "metaTitle": "Capital Loss Carryover Calculator",
+  "metaDescription": "Calculate your capital loss carryover and yearly deduction. See how much offsets income, what carries forward, and how many years it will last.",
+  "introText": "You can deduct up to $3,000 of net capital losses against other income each year, or $1,500 if you are married filing separately. Capital losses first offset capital gains dollar for dollar, and any remaining net loss carries forward to future tax years with no expiration. The capital loss carryover calculator figures your deduction for this year, splits the remaining balance into short-term and long-term amounts, and displays your complete schedule.\n\nIn our internal calculation, we ran the IRS carryover worksheet rules year by year for a single filer with a $30,000 short-term loss and a $20,000 long-term loss. With no capital gains, this $50,000 net loss provides a $3,000 deduction against other income this year. The remaining $47,000 carries forward, split into $27,000 of short-term loss and $20,000 of long-term loss. The deductions run $3,000 a year for 16 tax years in total. A final deduction of $2,000 in the 17th tax year finishes the entire $50,000 loss.",
+  "howItWorks": "The calculator begins by netting your capital transactions according to [IRS Topic no. 409](https://www.irs.gov/taxtopics/tc409). You enter short-term gains and losses alongside long-term gains and losses as positive dollar amounts. The tool also incorporates short-term and long-term carryovers from earlier tax years. Short-term losses first reduce short-term gains, while long-term losses first reduce long-term gains. If a net loss remains in one category, it reduces any net gain in the other category.\n\nWhen your total capital losses exceed total capital gains, the allowable deduction against other income is the lesser of your total net loss or $3,000. For married individuals filing separately, the annual statutory limit is $1,500. Any remaining net loss carries forward to the next year as if you incurred it then, continuing indefinitely until completely used up. Understanding these carryover mechanics is essential to [how tax loss harvesting works](/guides/tax-loss-harvesting/) when planning investment sales.\n\nCarried-over losses preserve their original character as either short-term or long-term. Under [IRS Publication 550](https://www.irs.gov/publications/p550), you must use short-term capital losses first to absorb the deduction against ordinary income. Consider a single filer with a $30,000 short-term loss and a $20,000 long-term loss. The short-term carryover absorbs $3,000 each year and is gone in year 10. The $20,000 long-term carryover then shrinks through year 16. A final $2,000 deduction in the 17th tax year exhausts the total $50,000 loss.\n\nFiling status changes how loss carryovers apply. If you file married filing separately, your maximum annual deduction is $1,500. On that same $50,000 loss, a separate filer deducts $1,500 each year across 34 tax years. The final deduction in that schedule is $500, and the first-year carryover is $48,500. A joint return carryover belongs only to the spouse who had the loss if the couple later files separately. Spouses who previously filed separately combine their separate carryovers when filing jointly. The calculation follows Worksheet 4-1 (Capital Loss Carryover Worksheet), which figures carryovers after accounting for the current year allowable deduction.\n\nFuture capital gains accelerate how fast carryovers are absorbed. Assume you have a $50,000 loss and realize a $10,000 net long-term gain in each later year. The loss provides $3,000 annual deductions for 4 tax years, totaling $12,000 deducted. In the 5th tax year, the carryover is used up, leaving a $2,000 net gain. With $100,000 of net long-term gain in each later year, the carryover is absorbed in year 2 with no further deduction. The tool assumes your taxable income is high enough to absorb the deduction every year. It does not model the alternative minimum tax or state tax rules.\n\nA net capital loss never disappears: it offsets capital gains dollar for dollar, reduces up to $3,000 of other income each year, and carries forward indefinitely until fully absorbed. This schedule applies to individual investors with allowable net losses, but it is not for someone whose loss was disallowed under the [wash sale rule](/guides/wash-sale-rule-explained/) or who needs state tax results. What would change this outcome is realizing future gains, having taxable income too low to absorb the deduction, or incurring wash sales. Enter your current year gains, losses, and prior carryover amounts into the capital loss carryover calculator above to see your full schedule.",
+  "faqs": [
+    {
+      "question": "How do I find out if I have a capital loss carryover?",
+      "answer": "Look at your prior year tax return on Schedule D or the Capital Loss Carryover Worksheet in [IRS Publication 550](https://www.irs.gov/publications/p550). Worksheet 4-1 calculates your exact unused short-term and long-term loss carryovers. If you filed a joint return previously but now file separately, you may only claim the loss you personally incurred."
+    },
+    {
+      "question": "What are the rules for carry forward of losses?",
+      "answer": "Capital losses first offset capital gains dollar for dollar. If your losses exceed gains, you can deduct up to $3,000 of net loss against other income, or $1,500 if married filing separately. Any unused net loss carries forward to future tax years until completely used up, retaining its short-term or long-term character."
+    },
+    {
+      "question": "How is capital loss carryover calculated?",
+      "answer": "You figure your carryover using Worksheet 4-1 after reducing your net loss by the allowable current-year deduction. Short-term losses offset short-term gains, and long-term losses offset long-term gains, before net balances cross over. The remaining unused loss carries to the next tax year as if incurred in that year."
+    },
+    {
+      "question": "How much capital loss carryover can I use each year?",
+      "answer": "You can use your carryover to offset an unlimited amount of capital gains, plus up to $3,000 of other income per year. If you are married filing separately, the limit against other income is $1,500 per year. Any loss beyond those limits carries forward to the following year."
+    },
+    {
+      "question": "Which capital loss carryover is used first?",
+      "answer": "You must use short-term capital loss carryovers first against ordinary income, even if you incurred them after a long-term loss. When offsetting capital gains, a long-term carryover reduces that year's long-term gains before its short-term gains. Short-term carryovers reduce short-term gains before long-term gains."
+    },
+    {
+      "question": "Does a capital loss carryover expire?",
+      "answer": "No, a capital loss carryover never expires under federal tax law. An unused net capital loss carries over to the next tax year and continues indefinitely until completely absorbed. For example, a $50,000 net loss with no gains takes 17 tax years to deduct fully for a single filer."
+    },
+    {
+      "question": "What happens to a capital loss carryover at death?",
+      "answer": "A capital loss carryover ends with the deceased taxpayer. A decedent's capital loss can be deducted only on their final individual return. An estate or surviving beneficiary cannot carry over or deduct the unused loss."
+    },
+    {
+      "question": "How does a wash sale affect my capital loss carryover?",
+      "answer": "A loss disallowed under the [wash sale rule](/guides/wash-sale-rule-explained/) cannot be deducted and is not part of the loss this calculator counts. Disallowed losses cannot offset gains or carry forward on Schedule D until the replacement shares are disposed of in a qualifying sale. Once a loss is properly recognized, any unused portion enters your carryover schedule."
+    }
+  ],
+  "slug": "capital-loss-carryover-calculator"
+}

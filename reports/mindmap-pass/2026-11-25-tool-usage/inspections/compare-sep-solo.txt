@@ -1,0 +1,7 @@
+# comparisons.ts slug sep-ira-vs-solo-401k line 8845
+  {
+    slug: "sep-ira-vs-solo-401k",
+    title: "SEP-IRA vs Solo 401(k): 2025 Guide for the Self-Employed",
+    metaDescription:
+      "SEP-IRA vs Solo 401(k): the Solo 401(k) lets you save more at low income and offers Roth and loans. See 2025 IRS limits, rules, and how to choose.",
+    targetKeyword: "sep ira vs solo 401k",

@@ -1,0 +1,32 @@
+{
+  "group": "cola",
+  "checks": 134,
+  "results": {
+    "cola": {
+      "input": {
+        "currentBenefit": 1850,
+        "partBPremium": 209.4
+      },
+      "result": {
+        "colaPct": 3.6,
+        "newBenefit": 1916.6,
+        "monthlyIncrease": 66.6,
+        "yearlyIncrease": 799.2,
+        "netPayment": 1707,
+        "hasPartB": true
+      }
+    },
+    "cola2000": {
+      "result": {
+        "colaPct": 3.6,
+        "newBenefit": 2072,
+        "monthlyIncrease": 72,
+        "yearlyIncrease": 864,
+        "netPayment": 2072,
+        "hasPartB": false
+      },
+      "premiumIncrease": 6.5,
+      "netGain": 65.5
+    }
+  }
+}

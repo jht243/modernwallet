@@ -1,0 +1,3 @@
+# SECTION PROMPT (data only) — ssi-increase-2027--body-premium
+register: operator (existing page register; do not change voice). Output plain markdown for ONE field, no heading, no JSON.
+Task: Rewrite this section body keeping every paragraph and link unchanged EXCEPT the one that says the 2027 Medicare Part B premium has not been announced: replace that paragraph with the CMS final figures (standard premium $209.40 for 2027, up $6.50 from $202.90, announced November 17, 2026; $292 deductible; link the CMS fact sheet at first mention; keep the Medicare.gov link and the my Social Security Message Center sentence). SSI payments are not deducted for Part B in this paragraph; state only the CMS figures.

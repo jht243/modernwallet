@@ -1,0 +1,71 @@
+(Phase 3c), this routine caps them at 3
+mindmap's Phase 3 builds `interactive tool` / `calculator` / `quiz/assessment` rows for real via `phase-3c-tool-build.md`, and Phase 4 audits them with its tool checklist. **This routine's only addition: build at most 3 new tools per run** (by demand, then by seed-tool people). Give any extra tool rows a spec (`reports/mindmap-pass/specs/<slug>-spec.md`) and list them under "Next in line"; next week's run builds those first (the ledger's `spec` lines, STEP 2).
+
+### `tool fix` rows — Phase 5 applies them, Phase 4's tool checklist audits them
+Phase 5 routes `format: tool fix` rows to a code change in the named component (not the prose writer), then bumps the page's "last updated" date in the same change, per the Phase 4 editor rule. The same independent auditor checks every tool-fix diff against Phase 4's tool checklist plus: the diff only touches what the row says, and every STEP 3 guardrail holds. Fail → fix in place (2 tries), then drop that row.
+
+### `tool monetize` rows — same path as `tool fix`
+Phase 5 applies them as code in the named component; the Phase 4 auditor additionally checks: the picks follow from each result tier (not generic), every ASIN re-resolves to the named product (`amazon_pick.py` on the same phrase), the tag is this site's `amazon_tag`, rel + disclosure + `data-tool-picks` present, no stored price/rating, the result itself is unchanged. Fail → fix in place (2 tries), then drop the row and log it under Dropped.
+
+Phases 6 (internal linking — every new tool gets a link FROM its seed tool's page, "next step" style, plus its hub), 7 (sitemap + IndexNow), 7b, 8 and 9 (commit → deploy → 200-verify → IndexNow) run unchanged.
+
+## STEP 6 — Verify before you trust it
+- The site's full build passes (Node 20).
+- Every new and changed tool URL answers 200 live.
+- Tracking still works on every new and changed tool: `PW_CORE=/tmp/pw/node_modules/playwright-core node scripts/tool_usage/verify_beacons.cjs "$BASE_URL" <path> [...]` → PASS (1 view + 1 use). No browser → `curl -s` the live page and confirm `data-tool="<slug>"` is in the HTML.
+- Re-do the persona's job once on each fixed tool: the friction you fixed is gone.
+- Monetized tools: compute at least two different result tiers in the browser — the picks change with the result, each link opens `amazon.com` with this site's tag, the disclosure shows, and the phone layout holds.
+- Any page that can't reach 200 after 2 fixes → revert it; never leave a 404 live.
+
+## STEP 7 — Ledger
+Append one line per tool to `reports/tool-usage-pass/ledger.jsonl` and commit it with the run:
+`{"date","tool","lane","people","people_7d","views","use_rate","persona","findings":[...],"shipped":[...],"monetize":"shipped"|"no-fit"|"blocked"|"dropped","picks":["<ASIN or search phrase>",...],"pick_types":["computer","gpu","ram",...],"status":"worked"}`
+(`monetize` lane tools: same line with `"status":"monetized"`.) STEP 2's catch-up reads the `monetize` field.
+and one `{"date","tool":"<new slug>","seed":"<tool>","status":"built"|"spec"|"dropped","reason"}` line per new-tool row.
+
+## STEP 8 — Email the owner — EVERY run (USER RULE 2026-10-11)
+Every run sends exactly one email through `.claude/scripts/send-routine-email.py`, the same script and layout as the other routines. Pick the status:
+- `--status success` — something shipped. The hook blocks this until `tool_usage_gate.py live` has passed; use its `live.md` as the `## Live verification` section.
+- `--status no-op` — the run worked but nothing changed (no tool crossed the bar, or every row was dropped). Still list the data and why nothing shipped.
+- `--status failure` — a step or gate failed and could not be fixed. Name the step, the error, and what is left on the `claude/*` branch.
+
+Write `/tmp/tool-usage-<YYYY-MM-DD>.md` first and pass it with `--details-file`. Written for a person reading their inbox. Sections, in order (skip a section only when it is empty, and say so in `## What changed`):
+
+0. **`## Duplicate check`** — the Phase 0 manifest row (or "no new-page rows").
+1. **`## What changed`** — 2–4 plain sentences: how many tools fixed, how many new tools, anything notable (a site-wide bug, a corrected figure). On a no-op/failure run, say why.
+2. **`## Data`** — `<TOOL_SITE>, <data_days> days tracked. Worked: <tool> (<people> people), …`; note when `data_days` < 30 that the numbers are early.
+3. **`## Fixes shipped`** — per tool: the persona in one line, then each fix as `- [<tool name>](<live url>) — <what changed> (why: "<persona quote>")`.
+4. **`## New tools`** — `- [<name>](<live url>) — <what it does>. Next step after [<seed tool>](<url>).`
+5. **`## Monetization`** — per tool: verdict + one line. Shipped → `- [<tool>](<live url>) — <tier → product, …>`. Blocked → what it needs (e.g. "create an Amazon tracking ID for <site>, add the site to the Associates account, set `amazon_tag` in `.claude/tool-usage.site.json`") + the picks that would ship. No-fit → why.
+6. **`## Next in line`** — tool rows specced, not built this week.
+7. **`## Dropped`** — every row mindmap or the auditor dropped, with the one-line reason.
+8. **`## Live verification`** — the gate's `live.md` (HTTP status + tracking for every new and changed URL).
+
+```bash
+REPO="$(git remote get-url origin | sed -E 's#(git@github.com:|https://[^/]*/)##; s#\.git$##')"
+.claude/scripts/send-routine-email.py --status <success|no-op|failure> --skill tool-usage-mindmap-auto \
+  --site "$TOOL_SITE" --repo "$REPO" --branch main --commit-sha "$(git rev-parse HEAD)" \
+  --summary "<N> tool fixes, <M> new tools, <K> tools monetized from real tool usage." \
+  --details-file /tmp/tool-usage-<YYYY-MM-DD>.md
+```
+A run that ends without sending this email is a failed run.
+
+## Rolling this routine out to another fleet site (no shortcuts there either)
+Copy ALL of these into the target repo, then pilot one run before scheduling more:
+1. `.claude/commands/tool-usage-mindmap-auto.md`, `scripts/tool_usage/{site_tool_usage.py,tool_usage_gate.py,verify_beacons.cjs,amazon_pick.py}`, `.claude/tools/tool-usage-gates.sh` (chmod +x), and `.claude/tool-usage.site.json` = `{"site": "<tracked domain>", "base_url": "https://…", "build_cmd": "<the site's real build>", "amazon_tag": "<this site's tracking ID, or omit>", "affiliate_placement": "in-tool"}` (the `build` gate runs `build_cmd`; no `amazon_tag` → monetization runs as `blocked` and the email says what to set up).
+   Real ASINs need `AMZ_CLIENT_ID` / `AMZ_CLIENT_SECRET` (layer3labs' Creators API client) exported in the routine prompt; without them `amazon_pick.py` falls back to tagged search links.
+2. In `.claude/settings.json`: add `$CLAUDE_PROJECT_DIR/.claude/tools/tool-usage-gates.sh` as a PreToolUse hook with matcher `Edit|Write|MultiEdit|NotebookEdit|Bash`, and `"modelSettings": {"claude-opus-5-5": {"effortLevel": "medium"}}`.
+3. The repo's mindmap-pass must have Phase 3c (MINDMAP-BUILDS-TOOLS). `scripts/mindmap/coverage_lookup.py` must exist.
+4. Routine: `model: claude-sonnet-5-5` on the trigger (RemoteTrigger update `{"model": "claude-sonnet-5-5"}`), branch `claude/tool-usage-<site>` (the hook keys on the `claude/tool-usage` prefix), prompt cloned from Chalkbox's (`trig_01VG4Bqr2GvqHCiihMCwLCq6`) with that site's keys.
+5. After the first run: `get_run_log` → confirm `init: model=claude-opus-5-5` and that all six gates passed in order.
+
+[Source: .claude/commands/_mindmap-chart-obligations.generated.md]
+# Mindmap Downstream Chart-Planning Obligations (Compiled Verbatim)
+
+These obligations are extracted verbatim from this repository's downstream writing, tool, audit, linking, sitemap, and publication contracts so BUILD and CHART-REVIEW enforce every planning constraint without loading execution-only procedures. Execution workers (WRITE, AUDIT, PUBLISH) still load their full phase and standard files.
+
+## [cs-tested-anchor-neutrality] (.claude/commands/_content-standard.md @ 944c2d85565a)
+
+**Applies to** operator-register pages whose `page type:` is a roundup ("best X", "X alternatives", any ranked list), a product or model review, or an "X vs Y" comparison. **Skip** pricing, how-to, explainer, definition, tool and news (reporter-register) pages. **Also skip** any page whose ranked or compared items fall outside what this site's `_experience.md` section G licenses as tested (for example medical treatments, clinics, drugs, legal or financial services). If the site's `_experience.md` has no section G, skip TESTED entirely. Only relevant executed runs, independently reviewed against the exact page, license first-person testing claims; calculations, modeling, client observations and external research use their own accurate labels.
+
+Plan an extra 3–5-row comparison table + "when to choose X" section (`COMPARISON` net-add) whenever a natural comparison axis exists; plan one honest proprietary `ANCHOR` from `_experience.md` / original analysis (max 2 named-client refs, or explicit `anchor-exempt:` justification — never

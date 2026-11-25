@@ -1,0 +1,216 @@
+{
+  "group": "w4v",
+  "checks": 134,
+  "results": {
+    "w4vDefault": {
+      "input": {
+        "status": "single",
+        "monthlyBenefit": 2400,
+        "months": 12,
+        "otherIncome": 24000,
+        "filers65": 1,
+        "alreadyPaid": 0
+      },
+      "result": {
+        "taxYear": 2026,
+        "annualBenefits": 28800,
+        "taxableBenefits": 8240,
+        "pctTaxable": 28.6,
+        "provisionalIncome": 38400,
+        "deduction": 18150,
+        "taxableIncome": 14090,
+        "estimatedTax": 1442.8,
+        "taxToCover": 1442.8,
+        "rows": [
+          {
+            "rate": 0.07,
+            "withheld": 2016,
+            "surplus": 573.2,
+            "coversTax": true
+          },
+          {
+            "rate": 0.1,
+            "withheld": 2880,
+            "surplus": 1437.2,
+            "coversTax": true
+          },
+          {
+            "rate": 0.12,
+            "withheld": 3456,
+            "surplus": 2013.2,
+            "coversTax": true
+          },
+          {
+            "rate": 0.22,
+            "withheld": 6336,
+            "surplus": 4893.2,
+            "coversTax": true
+          }
+        ],
+        "advice": "rate",
+        "best": 0.07,
+        "neededShare": 0.050097222222222224
+      }
+    },
+    "w4vTaxFree": {
+      "taxYear": 2026,
+      "annualBenefits": 18000,
+      "taxableBenefits": 0,
+      "pctTaxable": 0,
+      "provisionalIncome": 9000,
+      "deduction": 18150,
+      "taxableIncome": 0,
+      "estimatedTax": 0,
+      "taxToCover": 0,
+      "rows": [
+        {
+          "rate": 0.07,
+          "withheld": 1260,
+          "surplus": 1260,
+          "coversTax": true
+        },
+        {
+          "rate": 0.1,
+          "withheld": 1800,
+          "surplus": 1800,
+          "coversTax": true
+        },
+        {
+          "rate": 0.12,
+          "withheld": 2160,
+          "surplus": 2160,
+          "coversTax": true
+        },
+        {
+          "rate": 0.22,
+          "withheld": 3960,
+          "surplus": 3960,
+          "coversTax": true
+        }
+      ],
+      "advice": "none",
+      "best": null,
+      "neededShare": 0
+    },
+    "w4vHighIncome": {
+      "taxYear": 2026,
+      "annualBenefits": 36000,
+      "taxableBenefits": 30600,
+      "pctTaxable": 85,
+      "provisionalIncome": 218000,
+      "deduction": 18150,
+      "taxableIncome": 212450,
+      "estimatedTax": 44440,
+      "taxToCover": 44440,
+      "rows": [
+        {
+          "rate": 0.07,
+          "withheld": 2520,
+          "surplus": -41920,
+          "coversTax": false
+        },
+        {
+          "rate": 0.1,
+          "withheld": 3600,
+          "surplus": -40840,
+          "coversTax": false
+        },
+        {
+          "rate": 0.12,
+          "withheld": 4320,
+          "surplus": -40120,
+          "coversTax": false
+        },
+        {
+          "rate": 0.22,
+          "withheld": 7920,
+          "surplus": -36520,
+          "coversTax": false
+        }
+      ],
+      "advice": "short",
+      "best": 0.22,
+      "neededShare": 1.2344444444444445
+    },
+    "w4vThreeMonths": {
+      "taxYear": 2026,
+      "annualBenefits": 28800,
+      "taxableBenefits": 8240,
+      "pctTaxable": 28.6,
+      "provisionalIncome": 38400,
+      "deduction": 18150,
+      "taxableIncome": 14090,
+      "estimatedTax": 1442.8,
+      "taxToCover": 1442.8,
+      "rows": [
+        {
+          "rate": 0.07,
+          "withheld": 504,
+          "surplus": -938.8,
+          "coversTax": false
+        },
+        {
+          "rate": 0.1,
+          "withheld": 720,
+          "surplus": -722.8,
+          "coversTax": false
+        },
+        {
+          "rate": 0.12,
+          "withheld": 864,
+          "surplus": -578.8,
+          "coversTax": false
+        },
+        {
+          "rate": 0.22,
+          "withheld": 1584,
+          "surplus": 141.2,
+          "coversTax": true
+        }
+      ],
+      "advice": "rate",
+      "best": 0.22,
+      "neededShare": 0.2003888888888889
+    },
+    "w4vMfj": {
+      "taxYear": 2026,
+      "annualBenefits": 45600,
+      "taxableBenefits": 13480,
+      "pctTaxable": 29.6,
+      "provisionalIncome": 52800,
+      "deduction": 35500,
+      "taxableIncome": 7980,
+      "estimatedTax": 798,
+      "taxToCover": 798,
+      "rows": [
+        {
+          "rate": 0.07,
+          "withheld": 3192,
+          "surplus": 2394,
+          "coversTax": true
+        },
+        {
+          "rate": 0.1,
+          "withheld": 4560,
+          "surplus": 3762,
+          "coversTax": true
+        },
+        {
+          "rate": 0.12,
+          "withheld": 5472,
+          "surplus": 4674,
+          "coversTax": true
+        },
+        {
+          "rate": 0.22,
+          "withheld": 10032,
+          "surplus": 9234,
+          "coversTax": true
+        }
+      ],
+      "advice": "rate",
+      "best": 0.07,
+      "neededShare": 0.0175
+    }
+  }
+}

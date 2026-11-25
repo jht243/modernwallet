@@ -1,0 +1,3 @@
+# SECTION PROMPT (data only) — 2027-social-security-cola--body-raise
+register: operator (existing page register; do not change voice). Output plain markdown for ONE field, no heading, no JSON.
+Task: Rewrite this section body. Keep every sentence and link unchanged EXCEPT the paragraph beginning "Medicare has not announced its 2027 premiums": replace those sentences with the CMS final premium ($209.40 announced November 17, 2026, up $6.50 from $202.90), and recompute the $2,000 example as $72.00 minus $6.50, or $65.50 a month before other deductions. Link the CMS fact sheet at first mention. Do not mention the Trustees Report projection of $209.50 or $6.60.

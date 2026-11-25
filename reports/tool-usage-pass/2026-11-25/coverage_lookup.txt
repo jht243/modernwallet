@@ -1,0 +1,92 @@
+coverage_lookup: 3 candidate(s) vs 893 repo pages / 911 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1328 past-chart lines
+
+### /sep-ira-solo-401k-contribution-calculator  — row C1 · create new content
+keyword: sep ira solo 401k contribution calculator
+reader question (new page intent): How much can I put into a SEP IRA or solo 401(k) as a self-employed person? [PAA 1/6 on-topic: 'How much am I allowed to contribute to my SEP IRA?'; ac 4/14 how-is-calculated/limit questions; PAA 5/6 off-topic retirement-saving generics]
+lookup terms: sep ira solo 401k contribution   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/sep-ira-vs-solo-401k  [PARENT PAGE · in sitemap · src/data/comparisons.ts · topic match 0.8 on sep ira solo 401k]
+    title: SEP-IRA vs Solo 401(k): 2025 Guide for the Self-Employed
+    desc:  SEP-IRA vs Solo 401(k): the Solo 401(k) lets you save more at low income and offers Roth and loans. See 2025 IRS limits, rules, and how to choose.
+- /compare/solo-401k-vs-simple-ira  [in sitemap · src/data/comparisons.ts · topic match 0.6 on ira solo 401k]
+    title: Solo 401(k) vs SIMPLE IRA: The 2025 Guide for Owners
+    desc:  Solo 401(k) vs SIMPLE IRA compared: 2025 contribution limits, employee eligibility, admin work, and loans, so you know which plan fits your business.
+- /guides/ira-contribution-limits-2026  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.4 on ira contribution]
+    title: IRA Contribution Limits for 2026: The Complete Guide
+    desc:  The 2026 IRA contribution limit is $7,500 ($8,600 if you're 50+). See Roth income limits, deduction rules, and what happens if you contribute too much.
+- /guides/401k-contribution-limits-2026  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.4 on 401k contribution]
+    title: 401(k) Contribution Limits for 2026: The Complete Guide
+    desc:  The 2026 401(k) contribution limit is $24,500 ($32,500 if you're 50+, $35,750 if you're 60-63). See the Roth/Traditional combined cap and catch-up rules.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-16-xtrends.md [table] | Inbound path: /guides/401k-contribution-limits-2026 has no pointer to the 2027 figures that IRS announced Nov 12 2026 (lookup: PARENT/sibling year page). | Add a one-sentence pointer with anchor to the 2027 guide in th
+- 2026-11-16-xtrends.md [table] | Inbound path: /guides/ira-contribution-limits-2026 has no pointer to 2027 figures (IRA limit unchanged, phase-outs rose). | Add a one-sentence pointer with anchor to the 2027 guide in the 2026 IRA guide's limits sectio
+- 2026-11-16-xtrends.md [table] | Inbound path: /retirement/401k-calculator/ shows contribution rates but not the 2027 cap IRS announced Nov 12 2026. | Add an inbound link to the 2027 limits guide beside the calculator's contribution-limit discussion (
+- 2026-11-25-autocomplete.md [table] | lens 2: '401k calculator if i stop contributing / adjusted for inflation / no match / how long will it last / increasing contributions' 21 completions. Source: estimate (autocomplete) NOT measured. lookup: /retirement/
+- 2026-11-25-tool-usage.md [table] | lookup: /compare/sep-ira-vs-solo-401k - reader intent: choose between two plans, not compute own maximum; /guides/401k-contribution-limits-2026 and /guides/ira-contribution-limits-2026 - generic limits for employees. N
+- 2026-11-25-tool-usage.md [table] | Inbound links to the SEP/solo 401(k) calculator are missing (new route). | Add 'How much can you shelter in a SEP or solo 401(k)?' to the self-employment-tax and mileage-deduction cross-link lists and to the SEP-IRA vs
+Commits naming the topic: none
+Same run overlap: none
+
+### /social-security-withholding-calculator  — row C2 · create new content
+keyword: social security withholding calculator
+reader question (new page intent): How much federal tax should I withhold from my Social Security benefit (Form W-4V)? [PAA 1/6 on-topic: 'How is Social Security withholding calculated?'; ac 14 how/can/does questions on submitting W-4V; 5/6 PAA off-topic]
+lookup terms: social security withholding   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /retirement/social-security-retirement-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 0.67 on social security · same format: calculator]
+    title: Social Security Retirement Calculator
+    desc:  Our Social Security retirement calculator shows how claiming age affects your benefit and how to add SSA income to your total retirement projection.
+- /social-security-cola-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.67 on social security · same format: calculator]
+    title: Social Security COLA Calculator: Your 2027 Benefit at 3.6%
+    desc:  Free Social Security COLA calculator. Enter your monthly benefit to see your 2027 amount after the 3.6% raise, plus a chart of common benefit amounts.
+- /compare/social-security-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.67 on social security]
+    title: Social Security vs 401(k): Planning Retirement Income
+    desc:  Social Security vs 401(k) compared: how each is funded, when income starts, how taxes work, and how to use both in a retirement plan.
+- /guides/is-social-security-taxable  [in sitemap · src/data/guides.ts · topic match 0.67 on social security]
+    title: Is Social Security Taxable? 2026 Thresholds Explained
+    desc:  Social Security becomes taxable once combined income tops $25,000 (single) or $32,000 (married). See the IRS formula, thresholds, and how to lower it.
+- /social-security-break-even-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.67 on social security · same format: calculator]
+    title: Social Security Break Even Calculator: 62 vs 67 vs 70
+    desc:  Free Social Security break even calculator. Enter your full retirement age benefit and see the age when claiming later pays more in total.
+- /social-security-taxable-benefits-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.67 on social security · same format: calculator]
+    title: Social Security Taxable Benefits Calculator 2026
+    desc:  Social Security taxable benefits calculator. Enter your benefits and other income to see provisional income, the taxable part and the 50% or 85% tier.
+- /guides/social-security-changes-2027  [in sitemap · src/data/guides.ts · topic match 0.67 on social security]
+    title: Social Security Changes 2027 Listed Next to 2026 Figures
+    desc:  Social Security changes 2027: a 3.6% COLA, a $192,300 wage base and a $25,560 earnings limit. See every 2026 vs 2027 figure in one table.
+- /guides/2027-social-security-cola  [in sitemap · src/data/guides.ts · topic match 0.67 on social security]
+    title: 2027 Social Security COLA (Cost-of-Living Adjustment) Guide
+    desc:  The 2027 Social Security COLA (cost-of-living adjustment) is 3.6%, announced October 14, 2026. See what it adds to your check and how Part B affects it.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-25-tool-usage.md [table] | Stale sentences on four live guides (this row: slug 2027-social-security-cola, ~L4926 'Medicare has not announced', ~L4942 and FAQ ~L4990 'Trustees Report projects $209.50'; sibling rows F5-F7 cover the other three slu
+- 2026-11-25-tool-usage.md [table] | Stale 2027 Part B sentence on a live guide (verified by grep 2026-11-25): slug social-security-changes-2027: ~L4632 'The 2027 Medicare Part B premium has not been announced'. Contradicts the CMS Nov 17 2026 announcemen
+- 2026-11-25-tool-usage.md [table] | lookup: no same-intent page; nearest /social-security-taxable-benefits-calculator/ (how much of benefits is taxable, existing tool, no W-4V step; its 2026-11-04 persona flagged 'no withholding next step') and /guides/s
+- 2026-11-25-tool-usage.md [table] | Inbound links to the W-4V withholding calculator are missing (new route). | Add 'Withhold tax from your benefit (W-4V)' to the cross-link lists of social-security-taxable-benefits-calculator and social-security-cola-ca
+- 2026-11-25-tool-usage.md [exclusions] - Monetization for social-security-cola-calculator, mileage-deduction, investing and portfolio: already shipped books, no change (persona verdicts).
+- 2026-11-25-tool-usage.md [exclusions] - 2027 Social Security wage base: not retrieved from a primary source in this environment; no 2027 SE-tax base is asserted in any brief.
+Commits naming the topic: none
+Same run overlap: none
+
+### /capital-loss-carryover-calculator  — row C3 · create new content
+keyword: capital loss carryover calculator
+reader question (new page intent): How much of my stock losses can I deduct this year and carry forward? [PAA 2/6 on-topic: 'How do I find out if I have capital loss carryover?', 'What are the rules for carry forward of losses?'; ac 14 how/what questions; 4/6 PAA tax-rate off-topic]
+lookup terms: capital loss carryover   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'capital gains harvesting', Ready For Retirement brokerage episode). 'tax loss harvesting' 12,100/mo KD 53 CPC $3.93 (SEMRUSH us 2026-11-04, measured); 'tax loss harvesting r
+- 2026-11-04-tool-usage.md [table] | 8 | stock-capital-gains-tax-calculator (19 people, 20 uses, 36 views (all 19 in the last 7 days); data_days 27). Walkthrough: '0% room left' is the room before the sale (MFJ $80,000 TI + $30,000 gain shows $18,900 thou
+- 2026-11-04-tool-usage.md [table] | 9 | stock-capital-gains-tax-calculator (19 people; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Evidence: repor
+- 2026-11-04-tool-usage.md [exclusions] - Next in line (specs, cap of 3 builds, 2 built): depreciation-recapture-calculator, 1031-exchange-calculator (prior specs); Social Security withholding (W-4V) estimator; capital loss carryover calculator; Florida homest
+- 2026-11-25-tool-usage.md [table] | lookup: no existing page for the intent (coverage_lookup: no possible home); closest /guides/tax-loss-harvesting (how harvesting works, not a multi-year carryforward schedule) and /stock-capital-gains-tax-calculator/ (
+- 2026-11-25-tool-usage.md [table] | Inbound links to the capital loss carryover calculator are missing (new route). | Add 'Have a loss? See what carries forward' to the stock-capital-gains-tax-calculator cross-link list and to the tax-loss-harvesting gui
+Commits naming the topic: none
+Same run overlap: none
+

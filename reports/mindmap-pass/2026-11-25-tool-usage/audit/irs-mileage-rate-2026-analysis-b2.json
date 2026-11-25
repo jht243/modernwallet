@@ -1,0 +1,48 @@
+{
+ "caseUseReview": {
+  "status": "PASS",
+  "evidence": "No client or survey records claimed; no-case rationale holds, additive link and sizing change only."
+ },
+ "conditionsAndCounterexample": {
+  "status": "PASS",
+  "evidence": "Evidence packet now reported/source-only with whyNoQuantitativeAnalysis and reasoning, no TODOs. F4 verified in round 1 and unchanged: one jump link to #estimate-deduction, id carries data-tool=mileage-deduction, title/meta/H1 untouched in the diff, button minHeight 40 and 44px label row around a 28px checkbox; rates 72.5/76 cents unchanged; worked example arithmetic recomputed ($8,910, $8,700, $13,400, 26.13%)."
+ },
+ "localExclusions": {
+  "status": "PASS",
+  "evidence": "Evidence packet now reported/source-only with whyNoQuantitativeAnalysis and reasoning, no TODOs. F4 verified in round 1 and unchanged: one jump link to #estimate-deduction, id carries data-tool=mileage-deduction, title/meta/H1 untouched in the diff, button minHeight 40 and 44px label row around a 28px checkbox; rates 72.5/76 cents unchanged; worked example arithmetic recomputed ($8,910, $8,700, $13,400, 26.13%)."
+ },
+ "packetSha256": "acfddf8f8d4ff1964602139c6e369a01bf301f6d381763bff35dbf36a96e6b21",
+ "presentationReview": {
+  "status": "PASS",
+  "evidence": "Evidence packet now reported/source-only with whyNoQuantitativeAnalysis and reasoning, no TODOs. F4 verified in round 1 and unchanged: one jump link to #estimate-deduction, id carries data-tool=mileage-deduction, title/meta/H1 untouched in the diff, button minHeight 40 and 44px label row around a 28px checkbox; rates 72.5/76 cents unchanged; worked example arithmetic recomputed ($8,910, $8,700, $13,400, 26.13%)."
+ },
+ "renderedConsistency": {
+  "status": "PASS",
+  "evidence": "Evidence packet now reported/source-only with whyNoQuantitativeAnalysis and reasoning, no TODOs. F4 verified in round 1 and unchanged: one jump link to #estimate-deduction, id carries data-tool=mileage-deduction, title/meta/H1 untouched in the diff, button minHeight 40 and 44px label row around a 28px checkbox; rates 72.5/76 cents unchanged; worked example arithmetic recomputed ($8,910, $8,700, $13,400, 26.13%)."
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-25-tool-usage/audit/approved-review-irs.json",
+  "sha256": "d02fe2cd0bcfb06d617efcfb2a78ebae266727eba33c5935eb98be915e15076a"
+ },
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-25-tool-usage/audit/approved-snapshot-irs.json",
+  "sha256": "4ac3acc957ca774715a7d1d108997f5ed89fa46d4027fe372c722cdca00cd94c"
+ },
+ "requestCoverage": [
+  {
+   "evidence": "Evidence packet now reported/source-only with whyNoQuantitativeAnalysis and reasoning, no TODOs. F4 verified in round 1 and unchanged: one jump link to #estimate-deduction, id carries data-tool=mileage-deduction, title/meta/H1 untouched in the diff, button minHeight 40 and 44px label row around a 28px checkbox; rates 72.5/76 cents unchanged; worked example arithmetic recomputed ($8,910, $8,700, $13,400, 26.13%).",
+   "requirementId": "REQ-3",
+   "status": "PASS"
+  }
+ ],
+ "reviewer": "audit-b1",
+ "sourceAndAssumptions": {
+  "status": "PASS",
+  "evidence": "Evidence packet now reported/source-only with whyNoQuantitativeAnalysis and reasoning, no TODOs. F4 verified in round 1 and unchanged: one jump link to #estimate-deduction, id carries data-tool=mileage-deduction, title/meta/H1 untouched in the diff, button minHeight 40 and 44px label row around a 28px checkbox; rates 72.5/76 cents unchanged; worked example arithmetic recomputed ($8,910, $8,700, $13,400, 26.13%)."
+ },
+ "usefulness": {
+  "status": "PASS",
+  "evidence": "Evidence packet now reported/source-only with whyNoQuantitativeAnalysis and reasoning, no TODOs. F4 verified in round 1 and unchanged: one jump link to #estimate-deduction, id carries data-tool=mileage-deduction, title/meta/H1 untouched in the diff, button minHeight 40 and 44px label row around a 28px checkbox; rates 72.5/76 cents unchanged; worked example arithmetic recomputed ($8,910, $8,700, $13,400, 26.13%)."
+ },
+ "verdict": "PASS"
+}

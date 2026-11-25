@@ -1,0 +1,176 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "write-b1",
+  "route": "/sep-ira-solo-401k-contribution-calculator/",
+  "readerQuestion": "How much can I put into a SEP IRA or solo 401(k) as a self-employed person? [PAA 1/6 on-topic: 'How much am I allowed to contribute to my SEP IRA?'; ac 4/14 how-is-calculated/limit questions; PAA 5/6 off-topic retirement-saving generics]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/approval-manifest.json",
+      "sha256": "4a7e08e80f932790dfa8bb1787140b1e5646e3e23c5e283f698ab495648c0589"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/chart-review.json",
+      "sha256": "0d92dc4871a0c86eb7511868198a6c7651627fca1dc7bcb92d26b64220e9caa5"
+    },
+    "actionId": "C1"
+  },
+  "presentation": {
+    "medium": "interactive tool",
+    "placement": "section 1: calculator results panel and intro worked example",
+    "reason": "Her maximum depends on her own profit and age, and the two plans diverge at low income; a table cannot show that.",
+    "readerInputs": [
+      "Net self-employment profit",
+      "Tax year 2026/2027",
+      "Age 50+ or 60-63",
+      "Other 401(k) deferrals this year"
+    ],
+    "interaction": {
+      "decision": "build",
+      "reason": "The answer depends on the reader's own numbers; a static table cannot show their result."
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Live-updating numbers are enough; decorative motion adds nothing."
+    }
+  },
+  "basis": "calculated",
+  "decisionGap": "Existing pages explain the plans (the SEP IRA vs solo 401(k) comparison) or give employee limits (401(k) and IRA limit guides), but none turns a self-employed reader's own profit into a maximum for each plan side by side with the 2027 limits.",
+  "finding": "At $100,000 of Schedule C profit and tax year 2027, the SEP IRA maximum is $18,587 and the solo 401(k) maximum is $44,087 ($25,500 employee deferral plus $18,587 employer share), $52,587 with the $8,500 catch-up at 50 or older. The 20% employer share is the same in both plans, so the solo 401(k) allows more by the employee deferral until both reach the $75,000 limit (2027) at about $375,000 of net earnings.",
+  "conditions": "Sole proprietor or single-member LLC with no employees; Schedule C profit only; employee deferral limit shared with any other plan; self-employment tax uses the Social Security wage base for the chosen year ($184,500 for 2026; $192,300 for 2027 per the SSA notice in Federal Register 2026-21796, saved as research/sources/ssa-fr-2026-21796.txt); plan documents can set lower limits.",
+  "whatWouldChange": "A SEP must cover eligible employees, so a business with employees loses the cost advantage; other-plan deferrals that use up the $25,500 limit remove the solo 401(k) advantage; Congress or the IRS changing the limits or the reduced-rate method.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-25-tool-usage/evidence/sep-ira-solo-401k-contribution-calculator/cases.json",
+    "sha256": "46d1b052bf120a2fcf8fd3711fad2a45bdc10a865d9ad3decc73dbf61ecaa917"
+  },
+  "caseDecisions": "Retrieved cases.json candidates (owned properties, a bowling company, law firms, game studios) were all outside U.S. personal tax and retirement guidance, so none is used and no client observation appears on the page; attribution is limited to our internal calculation.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage-brief.md",
+      "sha256": "d197e7ff8a423d0ced3dee927ea2f1a3e8f5ec795d8ab315b46a6eb5b55e7415"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/coverage-lookup.txt",
+      "sha256": "934f1ae5414528dc4f3f40692ecd8efd21010002d2d331f5620c138019f45fdc"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/serp.json",
+      "sha256": "58eff2c6c795921e29bf025ba692abc6d48fe2b32e332c9515fd457c95bd79e7"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/keyword-volumes.json",
+      "sha256": "b85c3f2d320280ba4e55cc8451ae1c119990d0345f0a83d0647d10586d52eeea"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/keyword-volumes2.json",
+      "sha256": "f1d04f4cd12b0e3e260cea0acb91a0f33c4ebd6ec53e59f53a1410971b304877"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/kw-status.json",
+      "sha256": "d6859cb8bf4a307655a8205dd556d25cd4006f5d5fec51c4fd8d663e6b579d06"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/ac-sep-ira-contribution.csv",
+      "sha256": "78aac4508e4a05ff5f7e4841393fd1d04ed9810c5a18909351a033c9fdd2d9c8"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/calc-examples.json",
+      "sha256": "76302d3e54e979b5581893fea05e3c183dd34f22356ee1d3157e748fc763e75b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-ir-2026-136.txt",
+      "sha256": "57dd51ab5e63272cf5cc8b8b602de0505ac815d29cab6dc26725d91d0ad3baef"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-ir-2027-limits.txt",
+      "sha256": "383a2c6fcda17b0586cd11c7970f1e332368c10e83c38cbe5a7d0d0fd01fb67d"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-notice-2026-66.txt",
+      "sha256": "f8525ec6cdc671efe9f43c40ae527667c40e8b998173872140468ac70c5c2259"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-pub560.txt",
+      "sha256": "db1f1fbe4645f567aa19f6fab7144a28c9881114773d1425636b57ae48b76f2a"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/ssa-fr-2026-21796.txt",
+      "sha256": "8bead57222fc56d74a6b9f9cadf16c4791b213a211c5313663070d1d55c39641"
+    }
+  ],
+  "presentationArtifacts": [
+    {
+      "path": "src/lib/sep-solo-401k.ts",
+      "sha256": "b11417c1fa1ad4b6aa864c285e8cee2711b61d4d644484879684fd4b9b43e090"
+    },
+    {
+      "path": "src/components/SepSolo401kCalculator.tsx",
+      "sha256": "2586500134f6e0c523bc237128f3fa605abeeb8482c0952d44d7a0e3550d41f8"
+    }
+  ],
+  "method": "Pub 560 reduced-rate method: net earnings = Schedule C profit minus half of Social Security and Medicare self-employment tax (reusing src/lib/self-employment-tax.ts); employer share = 20% of net earnings up to the annual compensation limit, capped at the 415(c) limit; solo employee deferral = $25,500 (2027) or $24,500 (2026) minus other-plan deferrals, limited to earned income left after the employer share; catch-up outside the 415(c) limit. Executed through scripts/test-tool-usage-1125.mjs, which bundles the engine and asserts the fixtures.",
+  "units": "USD per tax year; rates as decimals",
+  "limitations": "Estimate for sole proprietors with no employees; no Roth catch-up wage test; no spouse participation; Additional Medicare Tax excluded from the half-SE-tax deduction as the IRS rule requires; plan documents may be stricter.",
+  "counterexample": "At $20,000 of profit the SEP IRA maximum is $3,717 but the solo 401(k) maximum is $18,587, the whole of net earnings, so the solo 401(k) advantage is largest in relative terms at low profit; with $25,500 of deferrals already made at a day-job 401(k) the solo 401(k) advantage is $0 and the SEP IRA is the simpler choice; at $500,000 of profit both plans stop at $75,000 and the SEP IRA is simpler.",
+  "execution": {
+    "command": [
+      "node",
+      "scripts/test-tool-usage-1125.mjs",
+      "reports/mindmap-pass/2026-11-25-tool-usage/evidence/sep-ira-solo-401k-contribution-calculator/output.json",
+      "sep"
+    ],
+    "code": {
+      "path": "scripts/test-tool-usage-1125.mjs",
+      "sha256": "971cf6d2f3ce597ff45b27a5fde4c10e89246eecd2e48a2cf02ed3fd71e71fdb"
+    },
+    "inputs": [
+      {
+        "path": "src/lib/sep-solo-401k.ts",
+        "sha256": "b11417c1fa1ad4b6aa864c285e8cee2711b61d4d644484879684fd4b9b43e090"
+      },
+      {
+        "path": "src/lib/self-employment-tax.ts",
+        "sha256": "2e8fdd0bcaef5bd1d62324cf88856a1f504212610c825272c6569e89024b603d"
+      },
+      {
+        "path": "src/components/SepSolo401kCalculator.tsx",
+        "sha256": "2586500134f6e0c523bc237128f3fa605abeeb8482c0952d44d7a0e3550d41f8"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-pub560.txt",
+        "sha256": "db1f1fbe4645f567aa19f6fab7144a28c9881114773d1425636b57ae48b76f2a"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-notice-2026-66.txt",
+        "sha256": "f8525ec6cdc671efe9f43c40ae527667c40e8b998173872140468ac70c5c2259"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-ir-2027-limits.txt",
+        "sha256": "383a2c6fcda17b0586cd11c7970f1e332368c10e83c38cbe5a7d0d0fd01fb67d"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/irs-ir-2026-136.txt",
+        "sha256": "57dd51ab5e63272cf5cc8b8b602de0505ac815d29cab6dc26725d91d0ad3baef"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-25-tool-usage/research/sources/ssa-fr-2026-21796.txt",
+        "sha256": "8bead57222fc56d74a6b9f9cadf16c4791b213a211c5313663070d1d55c39641"
+      }
+    ],
+    "output": {
+      "path": "reports/mindmap-pass/2026-11-25-tool-usage/evidence/sep-ira-solo-401k-contribution-calculator/output.json",
+      "sha256": "710e9fbd213895ed342669e7db702d06cc211b7a1494be7c3c3c15b6ca7f4186"
+    }
+  },
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [
+      "scripts/test-tool-usage-1125.mjs",
+      "output.json"
+    ],
+    "scopeAndLimits": "Internal calculation from IRS Publication 560 and the IRS 2026 and 2027 limit announcements; arithmetic of the formula, not a product test; not tax advice.",
+    "publicMethod": "On-page \"How the Maximum Is Figured\" section and the calculator itself, which shows the inputs, the 20% employer share and the limits table.",
+    "placement": "beside the worked $100,000 example in the intro and in How the Maximum Is Figured"
+  },
+  "takeaway": "For most sole proprietors a solo 401(k) allows far more than a SEP IRA at the same profit because the employee deferral sits on top of the same 20% employer share; at high profit both reach the annual limit and a SEP IRA is simpler. The answer changes with employees (a SEP must cover them) and with deferrals made at another job.",
+  "growth": "reports/mindmap-pass/2026-11-25-tool-usage/evidence/sep-ira-solo-401k-contribution-calculator/growth.json"
+}

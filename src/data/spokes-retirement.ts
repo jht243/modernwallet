@@ -335,6 +335,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
   {
     calculator: "retirement",
     slug: "couples-retirement-calculator",
+    updated: "2026-11-25",
     title: "Couples Retirement Calculator: Retirement Projection",
     metaDescription:
       "See your combined retirement savings projection as a couple, plus how spousal and survivor Social Security benefits can raise your household income.",
@@ -449,7 +450,7 @@ export const RETIREMENT_SPOKES: SpokeEntry[] = [
     ],
     toolHeading: "Project your combined retirement nest egg",
     toolSubheading: "Enter both partners' total savings and contributions to see your household balance at retirement.",
-    preset: { mode: "projection", currentAge: 38, retirementAge: 65, currentSavings: 180000, monthlyContribution: 3000, annualReturnPct: 7 },
+    preset: { mode: "projection", showBookPicks: true, currentAge: 38, retirementAge: 65, currentSavings: 180000, monthlyContribution: 3000, annualReturnPct: 7 },
     relatedSlugs: ["retirement-savings-calculator", "social-security-retirement-calculator", "401k-calculator"],
   },
 

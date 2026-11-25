@@ -1,0 +1,52 @@
+[
+ {
+  "tool": "investing",
+  "path": "/investing/high-yield-savings-calculator/",
+  "people": 512,
+  "uses": 602,
+  "views": 973,
+  "use_rate": 0.619,
+  "people_7d": 127,
+  "lane": "persona"
+ },
+ {
+  "tool": "social-security-cola-calculator",
+  "path": "/social-security-cola-calculator/",
+  "people": 241,
+  "uses": 271,
+  "views": 595,
+  "use_rate": 0.455,
+  "people_7d": 57,
+  "lane": "persona"
+ },
+ {
+  "tool": "retirement",
+  "path": "/retirement/couples-retirement-calculator/",
+  "people": 188,
+  "uses": 228,
+  "views": 495,
+  "use_rate": 0.461,
+  "people_7d": 45,
+  "lane": "persona"
+ },
+ {
+  "tool": "mileage-deduction",
+  "path": "/mileage-deduction/irs-mileage-rate-2026/",
+  "people": 77,
+  "uses": 77,
+  "views": 1762,
+  "use_rate": 0.044,
+  "people_7d": 14,
+  "lane": "persona"
+ },
+ {
+  "tool": "portfolio",
+  "path": "/portfolio/60-40-portfolio-calculator/",
+  "people": 60,
+  "uses": 74,
+  "views": 265,
+  "use_rate": 0.279,
+  "people_7d": 9,
+  "lane": "persona"
+ }
+]

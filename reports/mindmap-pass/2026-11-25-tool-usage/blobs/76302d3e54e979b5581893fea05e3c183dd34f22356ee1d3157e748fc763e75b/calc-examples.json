@@ -1,0 +1,25 @@
+{
+ "sep_example": {
+  "net_profit": 100000,
+  "se_tax": 14129.55,
+  "half_se": 7064.77,
+  "net_earnings": 92935.23,
+  "sep_max": 18587.05,
+  "solo_401k_max_2027": 44087.04,
+  "solo_with_age50_catchup": 52587.04
+ },
+ "cola_example": {
+  "benefit": 1850,
+  "part_b_2026": 202.9,
+  "part_b_2027": 209.4,
+  "cola": 0.036,
+  "gross": 1917.0
+ },
+ "capital_loss_example": {
+  "net_loss": 50000,
+  "deduct": 3000,
+  "carry_st": 27000,
+  "carry_lt": 20000,
+  "years_to_use_with_no_gains": 15.7
+ }
+}

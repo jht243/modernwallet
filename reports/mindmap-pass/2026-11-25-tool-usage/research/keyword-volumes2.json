@@ -1,0 +1,132 @@
+{
+ "rows": [
+  {
+   "keyword": "capital loss carryforward",
+   "volume": 2400,
+   "volume_low": 2400,
+   "volume_high": 2400,
+   "kd": 10,
+   "cpc": 8.24,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "capital loss carryover",
+   "volume": 2400,
+   "volume_low": 2400,
+   "volume_high": 2400,
+   "kd": 9,
+   "cpc": 8.24,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "sep ira contribution limit",
+   "volume": 1600,
+   "volume_low": 1600,
+   "volume_high": 1600,
+   "kd": 40,
+   "cpc": 3.05,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "sep ira vs solo 401k",
+   "volume": 1600,
+   "volume_low": 1600,
+   "volume_high": 1600,
+   "kd": 2,
+   "cpc": 10.07,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "solo 401k contribution limit",
+   "volume": 4400,
+   "volume_low": 4400,
+   "volume_high": 4400,
+   "kd": 14,
+   "cpc": 4.6,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "w-4v",
+   "volume": 1600,
+   "volume_low": 1600,
+   "volume_high": 1600,
+   "kd": 17,
+   "cpc": 0.48,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "withhold tax from social security",
+   "volume": 2400,
+   "volume_low": 2400,
+   "volume_high": 2400,
+   "kd": 22,
+   "cpc": 0.59,
+   "source": "dataforseo",
+   "confidence": "high",
+   "kd_source": "dataforseo",
+   "autocomplete": {
+    "completions": 10,
+    "corroborates": true
+   }
+  },
+  {
+   "keyword": "capital loss limit 3000",
+   "volume": 0,
+   "volume_low": 0,
+   "volume_high": 50,
+   "kd": "",
+   "cpc": "",
+   "source": "estimate",
+   "confidence": "low",
+   "evidence": "Google Autocomplete \u2014 little or no live autocomplete signal (est. 0-50/mo, NOT measured)",
+   "autocomplete": {
+    "completions": 2,
+    "corroborates": true
+   }
+  }
+ ],
+ "notes": [
+  "semrush unusable (HTTP 403)",
+  "volume: using dataforseo (quality order semrush > dataforseo)",
+  "dataforseo returned volume for 7/8 phrases",
+  "kd: using dataforseo (quality order semrush > dataforseo)",
+  "No tool volume for 1 phrases \u2014 autocomplete band (source=estimate, NOT measured)",
+  "Autocomplete: 8/8 rows corroborated live"
+ ]
+}

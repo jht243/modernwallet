@@ -1,0 +1,102 @@
+URL: https://www.irs.gov/pub/irs-pdf/fw4v.pdf
+Retrieved: 2026-11-25T19:19:11.642675Z
+
+Form  W-4V
+(Rev. January 2026)
+                                               Voluntary Withholding Request
+                             (For unemployment compensation and certain Federal Government and other payments.)            OMB No. 1545-0074
+Department of the Treasury
+Internal Revenue Service
+                                  Give Form W-4V to the payer of your payments. Do not send it to the IRS.
+  1     First name and middle initial                           Last name                                         2 Social security number
+
+  3     Home address (number and street)                        City or town                              State               ZIP code
+
+  4     Claim or identification number (if any) you use with your payer
+
+
+  5          I want federal income tax withheld from my unemployment compensation at a rate of 10% of each payment.
+
+  6     I want federal income tax withheld from (a) my social security benefits, (b) my social security equivalent Tier 1 railroad retirement
+        benefits, (c) my Commodity Credit Corporation loans, (d) certain crop disaster payments under the Agricultural Act of 1949 or
+        under Title II of the Disaster Assistance Act of 1988, or (e) dividends and other distributions from Alaska Native Corporations to
+        its shareholders, at the rate of (check one):     7%               10%            12%              22%
+
+  7          I want you to stop withholding federal income tax from my payment(s).
+
+Sign
+Here        Your signature (This form is not valid unless you sign it.)                                       Date
+
+General Instructions                                                      Note: If you receive social security benefits, you can request
+                                                                          changes to your withholding at https://www.ssa.gov/manage-
+Section references are to the Internal Revenue Code unless                benefits/request-withhold-taxes, or contact the Social Security
+otherwise noted.                                                          Administration (SSA) at 1-800-772-1213, or you can complete Form
+Future developments. For the latest information about any future          W-4V and submit it to the SSA.
+developments related to Form W-4V, such as legislation enacted            Line 3. If your address is outside the United States or the U.S.
+after it was published, go to www.irs.gov/FormW4V.                        territories, enter on line 3 the city, province or state, and name of
+Purpose of form. Complete Form W-4V if you want the payer to              the country. Follow the country’s practice for entering the postal
+withhold federal income tax from any of the government payments           code. Don’t abbreviate the country name.
+shown below.                                                              Line 4. Enter the claim or identification number you use with your
+   • Unemployment compensation (including Railroad                        payer. For withholding from social security benefits, the claim
+Unemployment Insurance Act (RUIA) payments).                              number is the social security number under which a claim is filed or
+                                                                          benefits are paid (for example, 123-45-6789A or 123-45-6789B6).
+   • Social security benefits.                                            The letter or letter/number combination suffix that follows the claim
+   • Social security equivalent Tier 1 railroad retirement benefits.      number identifies the type of benefit (for example, a wage earner, a
+   • Commodity Credit Corporation loans.                                  spouse, or a widow(er)). The claim number may or may not be your
+                                                                          own social security number. If you are unsure about what number to
+   • Certain crop disaster payments under the Agricultural Act of         use, contact the Social Security Administration at 1-800-772-1213
+1949 or under Title II of the Disaster Assistance Act of 1988.            (toll-free). For other government payments, consult your payer for
+   • Dividends and other distributions from Alaska Native                 the correct claim or identification number format.
+Corporations to its shareholders.                                         Line 5. If you want federal income tax withheld from your
+   Consult your payer if you’re uncertain whether your payment is         unemployment compensation, check the box on line 5. The payer
+eligible for voluntary withholding.                                       will withhold 10% from each payment.
+   You aren’t required to have federal income tax withheld from           Line 6. If you receive any of the payments listed on line 6, check the
+these payments. Your request is voluntary.                                box to indicate the percentage (7%, 10%, 12%, or 22%) you want
+Note: Payers may develop their own form for you to request federal        withheld from each payment.
+income tax withholding. If a payer gives you its own form instead of      Line 7. See How Do I Stop Withholding? below.
+Form W-4V, use that form.                                                 Sign this form. Form W-4V is not considered valid unless you sign
+Why Should I Request Withholding?                                         it.
+You may find that having federal income tax withheld from the listed      When Will My Withholding Start?
+payments is more convenient than making quarterly estimated tax           Ask your payer exactly when income tax withholding will begin. The
+payments. However, if you have other income that isn’t subject to         federal income tax withholding you choose on this form will remain
+withholding, consider making estimated tax payments. For more             in effect until you change or stop it or the payments stop.
+details, see Form 1040-ES, Estimated Tax for Individuals.
+                                                                          How Do I Change Withholding?
+How Much Can I Have Withheld?
+                                                                          If you are getting a payment other than unemployment
+For unemployment compensation, the payer is permitted to withhold         compensation and want to change your withholding rate, complete
+10% from each payment. No other percentage or amount is allowed.          a new Form W-4V. Give the new form to the payer.
+  For any other government payment listed above, you may choose
+to have the payer withhold federal income tax of 7%, 10%, 12%, or         How Do I Stop Withholding?
+22% from each payment, but no other percentage or amount.                 If you want to stop withholding, complete a new Form W-4V. After
+                                                                          completing lines 1 through 4, check the box on line 7, and sign and
+What Do I Need To Do?                                                     date the form; then give the new form to the payer.
+Complete lines 1 through 4; check one box on line 5, 6, or 7; sign
+Form W-4V; and give it to the payer, not to the IRS.
+For Privacy Act and Paperwork Reduction Act Notice, see page 2.                Cat. No. 22891V            Form W-4V (Rev. 1-2026) Created 9/18/25
+Form W-4V (Rev. 1-2026)                                                                                                                 Page 2
+
+
+Privacy Act and Paperwork Reduction Act                                      You aren’t required to provide the information requested on a
+                                                                          form that is subject to the Paperwork Reduction Act unless the form
+Notice                                                                    displays a valid OMB control number. Books or records relating to a
+We ask for the information on Form W-4V to carry out the Internal         form or its instructions must be retained as long as their contents
+Revenue laws of the United States. You are required to provide this       may become material in the administration of any Internal Revenue
+information only if you want to have federal income tax withheld          law. Generally, tax returns and return information are confidential,
+from certain payments for which withholding is not required by law.       as required by Code section 6103.
+If you choose to request voluntary withholding of federal income            The average time and expenses required to complete and file this
+tax, you’re required by Internal Revenue Code sections 3402(p) and        form will vary depending on individual circumstances. For estimated
+6109 and their regulations to provide the information requested on        averages, see the instructions for your income tax return.
+this form. If you don’t provide a completed form that is signed, the
+payer can’t withhold federal income tax from your payment.                  If you have suggestions for making this form simpler, we would
+Providing false or fraudulent information may subject you to              be happy to hear from you. See the instructions for your income tax
+penalties.                                                                return.
+   Routine uses of this information include giving it to the
+Department of Justice for civil and criminal litigation, and to cities,
+states, the District of Columbia, and U.S. commonwealths and
+territories for use in administering their tax laws. We may also
+disclose this information to other countries under a tax treaty, to
+federal and state agencies to enforce federal nontax criminal laws,
+or to federal law enforcement and intelligence agencies to combat
+terrorism.
+

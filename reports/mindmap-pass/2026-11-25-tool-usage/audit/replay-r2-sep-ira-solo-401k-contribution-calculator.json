@@ -1,0 +1,306 @@
+{
+  "group": "sep",
+  "checks": 134,
+  "results": {
+    "sep100k2027": {
+      "year": 2027,
+      "limits": {
+        "annualAdditionsLimit": 75000,
+        "deferralLimit": 25500,
+        "catchUp50": 8500,
+        "catchUp60to63": 11750,
+        "compensationLimit": 375000
+      },
+      "seTax": 14129.55,
+      "halfSeTax": 7064.78,
+      "netEarnings": 92935.22,
+      "countedEarnings": 92935.22,
+      "employerBeforeCap": 18587.04,
+      "employer": 18587.04,
+      "sepMax": 18587.04,
+      "employeeDeferral": 25500,
+      "catchUp": 0,
+      "soloMax": 44087.04,
+      "soloMaxWithCatchUp": 44087.04,
+      "soloAdvantage": 25500,
+      "flags": {
+        "employerCapped": false,
+        "compensationCapped": false,
+        "deferralReducedByOtherPlans": false,
+        "deferralLimitedByEarnings": false,
+        "belowSeFloor": false,
+        "noEarnings": false
+      }
+    },
+    "sep100k2027age50": {
+      "year": 2027,
+      "limits": {
+        "annualAdditionsLimit": 75000,
+        "deferralLimit": 25500,
+        "catchUp50": 8500,
+        "catchUp60to63": 11750,
+        "compensationLimit": 375000
+      },
+      "seTax": 14129.55,
+      "halfSeTax": 7064.78,
+      "netEarnings": 92935.22,
+      "countedEarnings": 92935.22,
+      "employerBeforeCap": 18587.04,
+      "employer": 18587.04,
+      "sepMax": 18587.04,
+      "employeeDeferral": 25500,
+      "catchUp": 8500,
+      "soloMax": 44087.04,
+      "soloMaxWithCatchUp": 52587.04,
+      "soloAdvantage": 34000,
+      "flags": {
+        "employerCapped": false,
+        "compensationCapped": false,
+        "deferralReducedByOtherPlans": false,
+        "deferralLimitedByEarnings": false,
+        "belowSeFloor": false,
+        "noEarnings": false
+      }
+    },
+    "sep100k2027age60": {
+      "year": 2027,
+      "limits": {
+        "annualAdditionsLimit": 75000,
+        "deferralLimit": 25500,
+        "catchUp50": 8500,
+        "catchUp60to63": 11750,
+        "compensationLimit": 375000
+      },
+      "seTax": 14129.55,
+      "halfSeTax": 7064.78,
+      "netEarnings": 92935.22,
+      "countedEarnings": 92935.22,
+      "employerBeforeCap": 18587.04,
+      "employer": 18587.04,
+      "sepMax": 18587.04,
+      "employeeDeferral": 25500,
+      "catchUp": 11750,
+      "soloMax": 44087.04,
+      "soloMaxWithCatchUp": 55837.04,
+      "soloAdvantage": 37250,
+      "flags": {
+        "employerCapped": false,
+        "compensationCapped": false,
+        "deferralReducedByOtherPlans": false,
+        "deferralLimitedByEarnings": false,
+        "belowSeFloor": false,
+        "noEarnings": false
+      }
+    },
+    "sep100k2026": {
+      "year": 2026,
+      "limits": {
+        "annualAdditionsLimit": 72000,
+        "deferralLimit": 24500,
+        "catchUp50": 8000,
+        "catchUp60to63": 11250,
+        "compensationLimit": 360000
+      },
+      "seTax": 14129.55,
+      "halfSeTax": 7064.78,
+      "netEarnings": 92935.22,
+      "countedEarnings": 92935.22,
+      "employerBeforeCap": 18587.04,
+      "employer": 18587.04,
+      "sepMax": 18587.04,
+      "employeeDeferral": 24500,
+      "catchUp": 0,
+      "soloMax": 43087.04,
+      "soloMaxWithCatchUp": 43087.04,
+      "soloAdvantage": 24500,
+      "flags": {
+        "employerCapped": false,
+        "compensationCapped": false,
+        "deferralReducedByOtherPlans": false,
+        "deferralLimitedByEarnings": false,
+        "belowSeFloor": false,
+        "noEarnings": false
+      }
+    },
+    "sep500k2027": {
+      "year": 2027,
+      "limits": {
+        "annualAdditionsLimit": 75000,
+        "deferralLimit": 25500,
+        "catchUp50": 8500,
+        "catchUp60to63": 11750,
+        "compensationLimit": 375000
+      },
+      "seTax": 37235.95,
+      "halfSeTax": 18617.97,
+      "netEarnings": 481382.03,
+      "countedEarnings": 375000,
+      "employerBeforeCap": 75000,
+      "employer": 75000,
+      "sepMax": 75000,
+      "employeeDeferral": 25500,
+      "catchUp": 0,
+      "soloMax": 75000,
+      "soloMaxWithCatchUp": 75000,
+      "soloAdvantage": 0,
+      "flags": {
+        "employerCapped": true,
+        "compensationCapped": true,
+        "deferralReducedByOtherPlans": false,
+        "deferralLimitedByEarnings": false,
+        "belowSeFloor": false,
+        "noEarnings": false
+      }
+    },
+    "sep500k2026": {
+      "year": 2026,
+      "limits": {
+        "annualAdditionsLimit": 72000,
+        "deferralLimit": 24500,
+        "catchUp50": 8000,
+        "catchUp60to63": 11250,
+        "compensationLimit": 360000
+      },
+      "seTax": 36268.75,
+      "halfSeTax": 18134.38,
+      "netEarnings": 481865.62,
+      "countedEarnings": 360000,
+      "employerBeforeCap": 72000,
+      "employer": 72000,
+      "sepMax": 72000,
+      "employeeDeferral": 24500,
+      "catchUp": 0,
+      "soloMax": 72000,
+      "soloMaxWithCatchUp": 72000,
+      "soloAdvantage": 0,
+      "flags": {
+        "employerCapped": true,
+        "compensationCapped": true,
+        "deferralReducedByOtherPlans": false,
+        "deferralLimitedByEarnings": false,
+        "belowSeFloor": false,
+        "noEarnings": false
+      }
+    },
+    "sep250k2027": {
+      "year": 2027,
+      "limits": {
+        "annualAdditionsLimit": 75000,
+        "deferralLimit": 25500,
+        "catchUp50": 8500,
+        "catchUp60to63": 11750,
+        "compensationLimit": 375000
+      },
+      "seTax": 30540.58,
+      "halfSeTax": 15270.29,
+      "netEarnings": 234729.71,
+      "countedEarnings": 234729.71,
+      "employerBeforeCap": 46945.94,
+      "employer": 46945.94,
+      "sepMax": 46945.94,
+      "employeeDeferral": 25500,
+      "catchUp": 0,
+      "soloMax": 72445.94,
+      "soloMaxWithCatchUp": 72445.94,
+      "soloAdvantage": 25500,
+      "flags": {
+        "employerCapped": false,
+        "compensationCapped": false,
+        "deferralReducedByOtherPlans": false,
+        "deferralLimitedByEarnings": false,
+        "belowSeFloor": false,
+        "noEarnings": false
+      }
+    },
+    "sep250k2026": {
+      "year": 2026,
+      "limits": {
+        "annualAdditionsLimit": 72000,
+        "deferralLimit": 24500,
+        "catchUp50": 8000,
+        "catchUp60to63": 11250,
+        "compensationLimit": 360000
+      },
+      "seTax": 29573.38,
+      "halfSeTax": 14786.69,
+      "netEarnings": 235213.31,
+      "countedEarnings": 235213.31,
+      "employerBeforeCap": 47042.66,
+      "employer": 47042.66,
+      "sepMax": 47042.66,
+      "employeeDeferral": 24500,
+      "catchUp": 0,
+      "soloMax": 71542.66,
+      "soloMaxWithCatchUp": 71542.66,
+      "soloAdvantage": 24500,
+      "flags": {
+        "employerCapped": false,
+        "compensationCapped": false,
+        "deferralReducedByOtherPlans": false,
+        "deferralLimitedByEarnings": false,
+        "belowSeFloor": false,
+        "noEarnings": false
+      }
+    },
+    "sep100kOtherFull": {
+      "year": 2027,
+      "limits": {
+        "annualAdditionsLimit": 75000,
+        "deferralLimit": 25500,
+        "catchUp50": 8500,
+        "catchUp60to63": 11750,
+        "compensationLimit": 375000
+      },
+      "seTax": 14129.55,
+      "halfSeTax": 7064.78,
+      "netEarnings": 92935.22,
+      "countedEarnings": 92935.22,
+      "employerBeforeCap": 18587.04,
+      "employer": 18587.04,
+      "sepMax": 18587.04,
+      "employeeDeferral": 0,
+      "catchUp": 0,
+      "soloMax": 18587.04,
+      "soloMaxWithCatchUp": 18587.04,
+      "soloAdvantage": 0,
+      "flags": {
+        "employerCapped": false,
+        "compensationCapped": false,
+        "deferralReducedByOtherPlans": true,
+        "deferralLimitedByEarnings": false,
+        "belowSeFloor": false,
+        "noEarnings": false
+      }
+    },
+    "sep20k2027": {
+      "year": 2027,
+      "limits": {
+        "annualAdditionsLimit": 75000,
+        "deferralLimit": 25500,
+        "catchUp50": 8500,
+        "catchUp60to63": 11750,
+        "compensationLimit": 375000
+      },
+      "seTax": 2825.91,
+      "halfSeTax": 1412.96,
+      "netEarnings": 18587.04,
+      "countedEarnings": 18587.04,
+      "employerBeforeCap": 3717.41,
+      "employer": 3717.41,
+      "sepMax": 3717.41,
+      "employeeDeferral": 14869.63,
+      "catchUp": 0,
+      "soloMax": 18587.04,
+      "soloMaxWithCatchUp": 18587.04,
+      "soloAdvantage": 14869.63,
+      "flags": {
+        "employerCapped": false,
+        "compensationCapped": false,
+        "deferralReducedByOtherPlans": false,
+        "deferralLimitedByEarnings": true,
+        "belowSeFloor": false,
+        "noEarnings": false
+      }
+    }
+  }
+}

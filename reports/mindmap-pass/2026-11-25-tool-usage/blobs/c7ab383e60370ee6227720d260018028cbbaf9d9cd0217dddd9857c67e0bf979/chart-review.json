@@ -1,0 +1,103 @@
+{
+  "jobId": "2026-11-25-tool-usage",
+  "reviewer": "chart-review",
+  "round": 1,
+  "manifestSha256": "1e62943f34ab81910927dd5ea3631e2ba2230427b8cd5f511e174b5f587114cf",
+  "manifestFileSha256": "33ae4a84c3df27e1f4ddaa717203115760ee88ba7f11a65acac5df8ed9c0ec9a",
+  "readinessSha256": "61c6eb0a7163fe4cbbb9aad7f8ce7e0c7b9e120aaa65dbe97d6075e561b6f6f7",
+  "verdict": "PASS",
+  "evidence": "Independent review (preflight-chart-review, 34 parts, check=delivery-complete-sources-current; run 375ba13e3d77479eae414dbeb4f1657f). Read saved disk sources first, no live refetch needed. VERIFIED: (1) CMS fact sheet research/sources/cms-2027-partb.txt line 45: standard Part B $209.40 for 2027, +$6.50 from $202.90, deductible $292 (+$9 from $283); retrieved 2026-11-25. (2) Stale-sentence rows re-grepped in src: guides.ts L4444+L4496 (2027-ssdi-cola, F5), L4554 (ssi-increase-2027, F6), L4632 (social-security-changes-2027, F7), L4926+L4942+L4990 (2027-social-security-cola, F3); calculators.ts L2651+L2675 (F2); SocialSecurityColaCalculator.tsx L58-60 and social-security-cola.ts PART_B_2027_PROJECTED=209.5 (F1). A repo-wide grep (excluding reports) finds the stale/209.50 wording ONLY in those three files, so F1-F3,F5-F7 are complete; no missed stale page. Net-gain recomputation 72.00-6.50=65.50 (not 65.40) is correct. (3) IRS limits: Notice 2026-66 / IR-2027 limits saved sources confirm $25,500 deferral, $8,500 catch-up, $11,750 age 60-63, $75,000 415(c) cap (from $72,000), $375,000 comp limit (from $360,000); Pub 560 20%-of-net-earnings method; SE-tax example 100,000*.9235*.153=14,129.55, SEP 18,587.05, solo 44,087.04 reproduces. Form W-4V saved text confirms 7/10/12/22% and 'no other percentage or amount'. Topic 409 confirms $3,000/$1,500 MFS limit and indefinite carryforward. (4) ASINs: 1945640197 (Pfau), 1982115831 (Quinn), 1119847672 (Bogleheads Guide to Investing) all appear in research/amazon-picks-retirement.txt (amazon_pick.py output, tag soulcircle01-20); 0553057464 correctly rejected as 1990 edition; books-only for YMYL retirement tool is consistent with STEP 3b. RetirementCalculator.tsx imports ToolPicks (L8) and renders it at L107 in the file but persona says no block renders live, so M1 needs Phase 3 to confirm the cause before re-adding, not duplicate the block (see CR-6). (5) Duplicate/dedup: coverage-lookup shows no same-intent page for C1/C2/C3. W-4V is only mentioned in one sentence of SocialSecurityTaxableCalculator.tsx (L106) and one guides.ts paragraph (L9385), neither is a rate-comparison tool; no redirect, no commit, no same-run overlap; no duplicate-collision. Demand: DataForSEO measured volumes recorded (SEMRUSH 403, honestly noted); C3 head 'capital loss carryover calculator' 30/mo is thin but informational heads total 4,800/mo and persona next-job supports it, accepted with label. SERP/PAA saved for 5 heads. Max-3-new-tools cap respected; no tool/page removed. (6) Testing/YMYL: financial tax content excluded from section G; briefs use 'internal calculation' attribution, never 'we tested'; HIGH profile declared; no liabilityBlock or professionalReviewRequired issue identified; no Hype intake so check_chart.py not applicable. FAIL is non-liability and non-duplicate: it records one verifiably wrong worked example in an approved row (F1) plus several accuracy/consistency guardrails that WRITE and AUDIT must carry; per unattended policy MAIN should rebind-mechanical with --carry-round1-guardrails, not run a Round 2.",
+  "findings": [
+    {
+      "id": "CR-1",
+      "severity": "substantive",
+      "category": "correctness",
+      "rowId": "F1",
+      "summary": "F1 worked example is arithmetically wrong. It says $1,850 x 1.036 = $1,917 gross and net $1,707.60.",
+      "evidence": "src/lib/social-security-cola.ts floorDime(1850*1.036=1916.60)=$1,916.60 gross; netPayment=floorDollar(1916.60-209.40)=floor(1707.20)=$1,707. calc-examples.json 'gross: 1917.0' repeats the error. The persona walkthrough also shows $1,916.60.",
+      "fix": "Correct the F1 solution cell and calc-examples closed fact to $1,916.60 gross and $1,707 net (SSA rounds to the dime then down to whole dollars after Part B); do not copy $1,917 or $1,707.60 into any page, test or FAQ."
+    },
+    {
+      "id": "CR-2",
+      "severity": "substantive",
+      "category": "correctness",
+      "rowId": "C3",
+      "summary": "'about 16 years' to use a $50,000 net loss is inconsistent with the saved calc (15.7).",
+      "evidence": "Year 1 deducts $3,000, leaving $47,000; 47,000/3,000=15.67 more years, so deductions run across 17 tax years (the last is $2,000) including the loss year. calc-examples.json years_to_use_with_no_gains=15.7 excludes year 1.",
+      "fix": "State the schedule exactly in the packet and page (e.g. $3,000 this year and 16 more tax years, final $2,000) and make takeaway, FAQ, table and calculator agree; Phase 4 replay must match."
+    },
+    {
+      "id": "CR-3",
+      "severity": "substantive",
+      "category": "source-currency",
+      "rowId": "C2",
+      "summary": "Tax year for the W-4V estimate is unresolved.",
+      "evidence": "Brief says 2026 standard deduction and brackets 'already on site', but benefits being withheld are paid in 2027 and guides.ts L24571 says 2027 brackets were estimates as of Oct 2, 2026. No IRS 2027 bracket/standard-deduction source is saved in research/sources.",
+      "fix": "Label the tax year on the page and in results; use 2026 figures labeled as 2026, or cite a retrievable IRS 2027 inflation-adjustment source before using 2027 values. Do not present estimated 2027 brackets as official."
+    },
+    {
+      "id": "CR-4",
+      "severity": "substantive",
+      "category": "source-currency",
+      "rowId": "C1",
+      "summary": "The 2027 tax-year toggle needs a defensible SE-tax Social Security wage base.",
+      "evidence": "self-employment-tax.ts only has SS_WAGE_BASE_2026=184,500. Brief excludes any 2027 base, yet net-earnings for profit above ~$184,500 depends on it. The site's own guides.ts L4448 states $192,300 for 2027 but no SSA primary source is saved (ssa.gov returned 403).",
+      "fix": "Either retrieve and save the SSA 2027 taxable-maximum source and cite it, or compute SE tax for the 2027 option using the labeled 2026 base with a visible 'estimate, 2027 base not used' note (or restrict). Add a boundary case above the wage base to the packet."
+    },
+    {
+      "id": "CR-5",
+      "severity": "mechanical",
+      "category": "manifest-consistency",
+      "rowId": "F4",
+      "summary": "F4 serp_verdict 'unread' contradicts its own problem cell and saved SERP read.",
+      "evidence": "research/serp.json includes 'mileage rate 2026': winnable, 6 PAA; F4 problem says 'SERP read ... winnable'. reader_question also says 'ac not run' although Step 4.6 requires the autocomplete question sweep.",
+      "fix": "Set F4 serp_verdict to 'winnable (AI Overview cites irs.gov)' with serp_evidence from serp.json, and run or explicitly label the missing autocomplete sweep [PAA 3/6 on-topic; ac not run]. Rate figures 72.5c/76c are already on-site; cite the IRS page on first use, no change to the rate.",
+      "status": "resolved"
+    },
+    {
+      "id": "CR-6",
+      "severity": "substantive",
+      "category": "implementation",
+      "rowId": "M1",
+      "summary": "RetirementCalculator.tsx already renders ToolPicks, but only inside a showSocialSecurity condition, so the M1 'restore' is really a render-condition fix.",
+      "evidence": "src/components/RetirementCalculator.tsx L8 imports ToolPicks and L106-108 renders it only when showSocialSecurity is true, with Social Security-themed headings/picks. The persona saw no block live because that flag was off (no Social Security input). The planned Pfau/Quinn/Bogleheads picks are not wired for the default path.",
+      "fix": "Add the planned three-book block for the default (non-Social-Security) result path without creating a second data-tool-picks block when showSocialSecurity is true; verify exactly one block renders in both states and that live ASINs match amazon-picks-retirement.txt."
+    },
+    {
+      "id": "CR-7",
+      "severity": "nit",
+      "category": "scope-and-exclusions",
+      "rowId": "C2",
+      "summary": "C2 'How Form W-4V Works' repeats a W-4V paragraph that already exists in guides.ts L9385 and a sentence in SocialSecurityTaxableCalculator.tsx.",
+      "evidence": "Existing coverage explains the 7/10/12/22% options; the new unique value is the rate comparison against an estimated tax.",
+      "fix": "Keep the explainer short, lead with the comparison table, link the existing guide instead of restating it; keep the 'confirm with a tax professional' line at the bottom, not in section 1."
+    }
+  ],
+  "resolvedFindingIds": [
+    "CR-5"
+  ],
+  "requestCoverage": [
+    {
+      "requirementId": "REQ-1",
+      "status": "PASS",
+      "evidence": "Verified CMS $209.40/+$6.50/$292 in saved fact sheet and every stale row (F1,F2,F3,F5,F6,F7) by grep; repo-wide scan shows no other stale file. Acceptance is observable. Carry CR-1 so the F1 worked example is corrected before it reaches the writer."
+    },
+    {
+      "requirementId": "REQ-2",
+      "status": "PASS",
+      "evidence": "ASINs 1945640197/1982115831/1119847672 exist in amazon_pick.py output; books-only YMYL rule honored; stale-edition 0553057464 rejected. Carry CR-6 (diagnose why the existing ToolPicks does not render)."
+    },
+    {
+      "requirementId": "REQ-3",
+      "status": "PASS",
+      "evidence": "Additive jump link and >=40px tap targets are bounded, preserve URL/title/H1/data-tool root; persona evidence supports it. Carry CR-5 (serp_verdict consistency)."
+    },
+    {
+      "requirementId": "REQ-4",
+      "status": "PASS",
+      "evidence": "Three calculators (cap respected), no duplicate-collision, primary IRS sources saved and figures reproduce; inbound link plans L1-L3 each have 2 placements. Carry CR-2, CR-3, CR-4, CR-7 as Phase 3/4 guardrails; none blocks planning."
+    }
+  ],
+  "atReviewLimit": true,
+  "priorVerdictRetained": "FAIL"
+}

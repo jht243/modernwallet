@@ -1,0 +1,151 @@
+l. 2027 IRS limits ($25,500, $75,000, $375,000, $8,500, $11,750) match saved Notice 2026-66 and IR-2027. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-1-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Replayed scripts/test-tool-usage-1125.mjs (135 checks pass) and recomputed $100,000 profit by hand: SE tax $14,129.55, net earnings $92,935, SEP $18,587, solo $44,087 matching page and hydrated tool. 2027 IRS limits ($25,500, $75,000, $375,000, $8,500, $11,750) match saved Notice 2026-66 and IR-2027. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "W4V-1",
+      "status": "open",
+      "evidence": "Lengthen to 50 to 60 characters, for example 'Social Security Withholding Calculator: Best W-4V Rate'."
+    },
+    {
+      "id": "W4V-2",
+      "status": "open",
+      "evidence": "Either model the senior deduction with its MAGI phase-out or state beside each worked example that the senior deduction would lower the tax and may allow the next lower rate; recompute the MFJ example both ways."
+    },
+    {
+      "id": "W4V-3",
+      "status": "open",
+      "evidence": "Save the Rev. Proc. 2025-32 capture to research/sources."
+    },
+    {
+      "id": "R1-2-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Replayed engine tests and recomputed the single example by hand (provisional income $44,400, taxable benefits $13,340, deduction $18,150, tax $2,775) and the MFJ example ($4,902) from the 2026 brackets; W-4V rates 7/10/12/22 and line 7 stop instruction match saved Form W-4V."
+    },
+    {
+      "id": "R1-2-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full rendered text; internal contradictions listed in findings (see ids). Replayed engine tests and recomputed the single example by hand (provisional income $44,400, taxable benefits $13,340, deduction $18,150, tax $2,775) and the MFJ example ($4,902) from the 2026 brackets; W-4V rates 7/10/12/22 and line 7 stop instruction match saved Form W-4V."
+    },
+    {
+      "id": "R1-2-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "Replayed engine tests and recomputed the single example by hand (provisional income $44,400, taxable benefits $13,340, deduction $18,150, tax $2,775) and the MFJ example ($4,902) from the 2026 brackets; W-4V rates 7/10/12/22 and line 7 stop instruction match saved Form W-4V. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-2-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "Replayed engine tests and recomputed the single example by hand (provisional income $44,400, taxable benefits $13,340, deduction $18,150, tax $2,775) and the MFJ example ($4,902) from the 2026 brackets; W-4V rates 7/10/12/22 and line 7 stop instruction match saved Form W-4V. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-2-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Replayed engine tests and recomputed the single example by hand (provisional income $44,400, taxable benefits $13,340, deduction $18,150, tax $2,775) and the MFJ example ($4,902) from the 2026 brackets; W-4V rates 7/10/12/22 and line 7 stop instruction match saved Form W-4V. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-2-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "SEO title length 43 chars is under the 50 to 60 requirement; meta description length ok. No em-dashes in prose (only template chrome)."
+    },
+    {
+      "id": "CL-1",
+      "status": "open",
+      "evidence": "Lengthen to 50 to 60 characters, for example 'Capital Loss Carryover Calculator: Years to Use a Loss'."
+    },
+    {
+      "id": "R1-3-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "SEO title length 33 chars is under the 50 to 60 requirement; meta description length ok. No em-dashes in prose (only template chrome)."
+    },
+    {
+      "id": "COLA-1",
+      "status": "open",
+      "evidence": "Replace with a date-neutral instruction (for example: 'If you missed the paperless cut-off, the notice is mailed in December') or remove the deadline."
+    },
+    {
+      "id": "COLA-2",
+      "status": "open",
+      "evidence": "Rewrite: 'Our guide to whether Social Security is taxable covers when benefits are taxed.'"
+    },
+    {
+      "id": "R1-4-checks-sourceSupport",
+      "status": "open",
+      "evidence": "CR-1 verified: $1,850 x 1.036 = $1,916.60 gross, $1,707 net after $209.40 (engine test passes); $2,000 gives $2,072.00 and $65.50 net after the $6.50 premium rise; CMS $209.40/$6.50/$292 matches saved cms-2027-partb.txt."
+    },
+    {
+      "id": "R1-4-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full rendered text; internal contradictions listed in findings (see ids). CR-1 verified: $1,850 x 1.036 = $1,916.60 gross, $1,707 net after $209.40 (engine test passes); $2,000 gives $2,072.00 and $65.50 net after the $6.50 premium rise; CMS $209.40/$6.50/$292 matches saved cms-2027-partb.txt."
+    },
+    {
+      "id": "R1-4-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "CR-1 verified: $1,850 x 1.036 = $1,916.60 gross, $1,707 net after $209.40 (engine test passes); $2,000 gives $2,072.00 and $65.50 net after the $6.50 premium rise; CMS $209.40/$6.50/$292 matches saved cms-2027-partb.txt. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-4-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "CR-1 verified: $1,850 x 1.036 = $1,916.60 gross, $1,707 net after $209.40 (engine test passes); $2,000 gives $2,072.00 and $65.50 net after the $6.50 premium rise; CMS $209.40/$6.50/$292 matches saved cms-2027-partb.txt. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-4-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "CR-1 verified: $1,850 x 1.036 = $1,916.60 gross, $1,707 net after $209.40 (engine test passes); $2,000 gives $2,072.00 and $65.50 net after the $6.50 premium rise; CMS $209.40/$6.50/$292 matches saved cms-2027-partb.txt. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "G1-1",
+      "status": "open",
+      "evidence": "Replace $6.60 with the final $6.50 increase."
+    },
+    {
+      "id": "G1-2",
+      "status": "open",
+      "evidence": "Use $6.50 and $65.50; delete 'until CMS sets the final premium'."
+    },
+    {
+      "id": "G1-3",
+      "status": "open",
+      "evidence": "Use $112,000 / $224,000 and about 9% with the CMS 2027 fact sheet table; update the FAQ."
+    },
+    {
+      "id": "G1-4",
+      "status": "open",
+      "evidence": "Replace with a date-neutral instruction (for example: 'If you missed the paperless cut-off, the notice is mailed in December') or remove the deadline."
+    },
+    {
+      "id": "G1-5",
+      "status": "open",
+      "evidence": "Point to the Social Security COLA calculator."
+    },
+    {
+      "id": "R1-5-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Part B corrections ($209.40, +$6.50, $202.90, net $65.50) match saved CMS fact sheet, but stale $6.60 projection text, $65.40 example and 2026 IRMAA thresholds remain contradicting it."
+    },
+    {
+      "id": "R1-5-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Read the full rendered text; internal contradictions listed in findings (see ids). Part B corrections ($209.40, +$6.50, $202.90, net $65.50) match saved CMS fact sheet, but stale $6.60 projection text, $65.40 example and 2026 IRMAA thresholds remain contradicting it."
+    },
+    {
+      "id": "R1-5-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "Part B corrections ($209.40, +$6.50, $202.90, net $65.50) match saved CMS fact sheet, but stale $6.60 projection text, $65.40 example and 2026 IRMAA thresholds remain contradicting it. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-5-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "Part B corrections ($209.40, +$6.50, $202.90, net $65.50) match saved CMS fact sheet, but stale $6.60 projection text, $65.40 example and 2026 IRMAA thresholds remain contradicting it. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "R1-5-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Part B corrections ($209.40, +$6.50, $202.90, net $65.50) match saved CMS fact sheet, but stale $6.60 projection text, $65.40 example and 2026 IRMAA thresholds remain contradicting it. Reviewed against saved primary sources and engine replay."
+    },
+    {
+      "id": "SSDI-1",
+      "status": "open",
+      "evidence": "Replace with a date-neutral instruction (for example: 'If you missed the paperless cut-off,
