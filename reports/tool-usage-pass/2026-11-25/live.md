@@ -1,0 +1,17 @@
+## Live verification
+- https://www.themodernwallet.com/capital-loss-carryover-calculator/ — 200
+- https://www.themodernwallet.com/guides/2027-social-security-cola/ — 200 — NO data-tool root
+- https://www.themodernwallet.com/guides/2027-ssdi-cola/ — 200 — NO data-tool root
+- https://www.themodernwallet.com/guides/social-security-changes-2027/ — 200 — NO data-tool root
+- https://www.themodernwallet.com/guides/ssi-increase-2027/ — 200 — NO data-tool root
+- https://www.themodernwallet.com/investing/high-yield-savings-calculator/ — 200
+- https://www.themodernwallet.com/mileage-deduction/irs-mileage-rate-2026/ — 200
+- https://www.themodernwallet.com/portfolio/60-40-portfolio-calculator/ — 200
+- https://www.themodernwallet.com/retirement/couples-retirement-calculator/ — 200
+- https://www.themodernwallet.com/self-employment-tax/ — 200
+- https://www.themodernwallet.com/sep-ira-solo-401k-contribution-calculator/ — 200
+- https://www.themodernwallet.com/social-security-cola-calculator/ — 200
+- https://www.themodernwallet.com/social-security-taxable-benefits-calculator/ — 200
+- https://www.themodernwallet.com/social-security-withholding-calculator/ — 200
+- https://www.themodernwallet.com/stock-capital-gains-tax-calculator/ — 200
+- https://www.themodernwallet.com/retirement/couples-retirement-calculator/ — affiliate picks: MISSING data-tool-picks="couples-retirement-calculator", tag soulcircle01-20, 4 pinned ASINs ['0553057464', '1119847672', '1945640197', '1982115831']

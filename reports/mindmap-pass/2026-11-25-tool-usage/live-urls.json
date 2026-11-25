@@ -1,0 +1,125 @@
+{
+  "status": "all-live",
+  "attempts": 1,
+  "verifiedCount": 13,
+  "pendingCount": 0,
+  "results": [
+    {
+      "url": "https://www.themodernwallet.com/social-security-cola-calculator/",
+      "finalUrl": "https://www.themodernwallet.com/social-security-cola-calculator/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/social-security-cola-calculator/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/guides/2027-social-security-cola/",
+      "finalUrl": "https://www.themodernwallet.com/guides/2027-social-security-cola/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/2027-social-security-cola/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/guides/2027-ssdi-cola/",
+      "finalUrl": "https://www.themodernwallet.com/guides/2027-ssdi-cola/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/2027-ssdi-cola/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/guides/ssi-increase-2027/",
+      "finalUrl": "https://www.themodernwallet.com/guides/ssi-increase-2027/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/ssi-increase-2027/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/guides/social-security-changes-2027/",
+      "finalUrl": "https://www.themodernwallet.com/guides/social-security-changes-2027/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/social-security-changes-2027/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/retirement/couples-retirement-calculator/",
+      "finalUrl": "https://www.themodernwallet.com/retirement/couples-retirement-calculator/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/retirement/couples-retirement-calculator/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/mileage-deduction/irs-mileage-rate-2026/",
+      "finalUrl": "https://www.themodernwallet.com/mileage-deduction/irs-mileage-rate-2026/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/mileage-deduction/irs-mileage-rate-2026/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/sep-ira-solo-401k-contribution-calculator/",
+      "finalUrl": "https://www.themodernwallet.com/sep-ira-solo-401k-contribution-calculator/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/sep-ira-solo-401k-contribution-calculator/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/social-security-withholding-calculator/",
+      "finalUrl": "https://www.themodernwallet.com/social-security-withholding-calculator/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/social-security-withholding-calculator/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/capital-loss-carryover-calculator/",
+      "finalUrl": "https://www.themodernwallet.com/capital-loss-carryover-calculator/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/capital-loss-carryover-calculator/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/self-employment-tax/",
+      "finalUrl": "https://www.themodernwallet.com/self-employment-tax/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/self-employment-tax/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/social-security-taxable-benefits-calculator/",
+      "finalUrl": "https://www.themodernwallet.com/social-security-taxable-benefits-calculator/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/social-security-taxable-benefits-calculator/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/stock-capital-gains-tax-calculator/",
+      "finalUrl": "https://www.themodernwallet.com/stock-capital-gains-tax-calculator/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/stock-capital-gains-tax-calculator/"
+    }
+  ]
+}
