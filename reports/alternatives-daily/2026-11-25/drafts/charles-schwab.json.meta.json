@@ -1,0 +1,241 @@
+{
+ "slug": "charles-schwab",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2608,
+ "floor": 1500,
+ "input_tokens": 172064,
+ "output_tokens": 5111,
+ "thinking_tokens": 3743,
+ "cached_tokens": 170267,
+ "est_cost_usd": 0.0473,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Schwab also charges a $25 service fee for broker-assisted phone trades and colle'; 'On a 10-contract options trade placed by phone, Charles Schwab charges $0 base p'; 'Interactive Brokers states that it requires no account minimums and charges no h'; 'Webull also charges $0.50 per contract on certain index options, while Charles S'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 2705,
+  "numbers_not_in_facts": [
+   "0.0075",
+   "0.10325",
+   "120",
+   "130",
+   "15",
+   "195",
+   "2.5",
+   "200",
+   "205.1",
+   "24.95",
+   "245",
+   "300",
+   "300000",
+   "30975",
+   "31.5",
+   "39.9",
+   "6.55"
+  ],
+  "fact_budget": {
+   "fact_words": 288,
+   "floor": 1500,
+   "ratio": 0.19,
+   "thin": true
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    2
+   ],
+   "applied": [
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Charles Schwab charges no monthly platform fees and no base commission on online equity trades.",
+     "replacement": "Charles Schwab charges no base commission on online equity trades and requires no account or trade minimums.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Charles Schwab charges no monthly platform fees."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Broad-based index options cost $1 per contract to open with no leg cap and $0 to close.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state index options have no leg cap."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "For investors trading small options orders of one to five contracts at a time, Schwab's $0.65 per-contract cost is lower than tastytrade's $1.00 opening fee whenever positions are held to expiration or assigned.",
+     "replacement": "For investors opening small options orders of one to five contracts at a time, Schwab's $0.65 per-contract fee is lower than tastytrade's $1 opening fee.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention holding to expiration or being assigned."
+    }
+   ],
+   "deleted_final": 2,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2728
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 3237
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-25T17:01:46+0000",
+    "findings_file": "reports/alternatives-daily/2026-11-25/charles-schwab-findings.txt",
+    "applied": [
+     {
+      "id": "stillBetterFit.body",
+      "quote": "For investors opening small options orders of one to five contracts at a time, Schwab's $0.65 per-contract fee is lower than tastytrade's $1 opening fee.",
+      "replacement": "",
+      "type": "F1",
+      "why": "Contradicted by round-trip math; delete incorrect comparison"
+     },
+     {
+      "id": "alternatives[1].body",
+      "quote": "However, if that trading volume qualifies for the lower $0.15 rate on IBKR Pro Tiered, the options fee drops to $30 (200 multiplied by $0.15), saving $100 compared to Charles Schwab.",
+      "replacement": "On IBKR Pro Tiered, trading 10,000 or fewer contracts per month incurs $0.25, $0.50 or $0.65 per contract depending on premium (with a $1.00 minimum per order), as the $0.15 rate requires 100,001 or more contracts per month.",
+      "type": "F2",
+      "why": "The $0.15 rate requires 100,001 monthly contracts; state threshold and drop unattainable savings"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Start your comparison with the asset classes you trade most often.",
+      "replacement": "Compare brokerages across these key fee areas: - Asset classes and options contracts:",
+      "type": "F3",
+      "why": "Drop ordinal and convert into bulleted list item"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Next, evaluate broker-assisted trading fees if you ever place phone orders through a representative.",
+      "replacement": "- Broker-assisted trading fees:",
+      "type": "F3",
+      "why": "Drop ordinal and convert into bulleted list item"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Third, review margin interest rates if you borrow against your securities.",
+      "replacement": "- Margin interest rates:",
+      "type": "F3",
+      "why": "Drop ordinal and convert into bulleted list item"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Fourth, check specialized transaction fees such as cryptocurrency spreads and account transfer fees.",
+      "replacement": "- Specialized transaction fees:",
+      "type": "F3",
+      "why": "Drop ordinal and convert into bulleted list item"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Check these four criteria when comparing firms:\n\n- How many equity options contracts do you enter and exit each month?\n- Do you require phone support to execute broker-assisted trades?\n- What size margin balance do you carry, and what published rate applies to that tier?\n- Do you trade cryptocurrency, broad-based index options or mutual funds?",
+      "replacement": "",
+      "type": "F3",
+      "why": "Remove redundant bullet list repeated after paragraphs"
+     },
+     {
+      "id": "intro",
+      "quote": "At The Modern Wallet, we build financial tools and compare published fee schedules so you can evaluate the annual dollar cost of your trading activity.",
+      "replacement": "",
+      "type": "F4",
+      "why": "Remove generic boilerplate tee-up sentence"
+     },
+     {
+      "id": "alternatives[2].body",
+      "quote": "Placing 100 equity options trades over a year costs $0 in broker contract fees on Webull.",
+      "replacement": "Placing 100 equity options contracts over a year costs $0 in broker contract fees on Webull.",
+      "type": "F5",
+      "why": "Avoid mixing trades and contracts"
+     },
+     {
+      "id": "alternatives[2].body",
+      "quote": "If you eventually transfer that account to an outside broker, Webull's $75 outgoing transfer fee offsets that options savings ($75 transfer fee minus $65 options fee equals a net cost of $10).",
+      "replacement": "To break even against Webull's $75 outgoing transfer fee, an investor would need to trade about 116 contracts opened at Charles Schwab ($75 divided by $0.65), or 58 round trips at $1.30 each, before Schwab's per-contract fees exceed Webull's one-time transfer fee.",
+      "type": "F5",
+      "why": "State accurate break-even contract volume against one-time transfer fee"
+     },
+     {
+      "id": "rows[2].pricing",
+      "quote": "IBKR Lite:",
+      "replacement": "Interactive Brokers (IBKR) Lite:",
+      "type": "F6",
+      "why": "Define IBKR acronym on first use"
+     },
+     {
+      "id": "rows[2].pricing",
+      "quote": "No account minimums or hidden fees.",
+      "replacement": "No added spreads, ticket charges, platform fees, or account minimums; minimum per order $1.00 fixed (stocks and options), $0.35 tiered stocks.",
+      "type": "F6",
+      "why": "Use vendor wording and add per-order minimums"
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      5
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "intro",
+       "quote": "Schwab also charges a $25 service fee for broker-assisted phone trades and collects 0.75% of trade value (minimum $0.01) on cryptocurrency buys and sells.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "chooseSection.body",
+       "quote": "On a 10-contract options trade placed by phone, Charles Schwab charges $0 base plus 10 times $0.65 ($6.50) plus $25, totaling $31.50.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "alternatives[1].body",
+       "quote": "Interactive Brokers states that it requires no account minimums and charges no hidden fees.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "alternatives[2].body",
+       "quote": "Webull also charges $0.50 per contract on certain index options, while Charles Schwab charges $0.65 on options contracts across the board.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "stillBetterFit.body",
+       "quote": "Frequent phone traders: Charles Schwab adds a $25 service fee per broker-assisted trade, whereas Firstrade charges $19.95 for stocks and ETFs.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2608,
+    "flags": [
+     "claim check: 5 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Schwab also charges a $25 service fee for broker-assisted phone trades and colle'; 'On a 10-contract options trade placed by phone, Charles Schwab charges $0 base p'; 'Interactive Brokers states that it requires no account minimums and charges no h'; 'Webull also charges $0.50 per contract on certain index options, while Charles S'"
+    ]
+   }
+  ]
+ },
+ "seconds": 123.5,
+ "response_id": "6g8Ha5THCvLlwbUP9-Po-Ag",
+ "generated_at": "2026-11-25T16:44:19+0000"
+}

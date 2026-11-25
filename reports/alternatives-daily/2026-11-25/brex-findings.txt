@@ -1,0 +1,33 @@
+F1 (hard_blocker=True): QUOTE: Base plan $0 per month; Plus $29.90 per month; Pro $299 per month.
+PROBLEM: Mercury's own page (mercury.com/pricing) shows $29.90 and $299 only under its default 'Annual Pricing (15% off)' toggle. The page's own data (pricePerMonth 35 / 350, annualPricePerMonth 29.9 / 299) and its meta description give $35/mo for Plus and $350/mo for Pro on monthly billing. The Brex page states $29.90 and $299 'per month' with no billing qualifier in the intro ('$299 per month on Mercury Pro'), the Mercury row, the Mercury section and its worked example ($358.80 and $3,588 per year).
+FIX: Write 'Plus $29.90 per month billed annually ($35 per month month-to-month); Pro $299 per month billed annually ($350 per month month-to-month)' in the intro, table row and Mercury section, and label the $358.80 and $3,588 worked totals as annual-billing figures (month-to-month would be $420 and $4,200).
+
+F2 (hard_blocker=True): QUOTE: Versus Brex, Relay does not offer an international multi-entity expense platform or custom ERP integrations like NetSuite, focusing instead on domestic business banking and sub-account management.
+PROBLEM: Not in the sources file and not on relayfi.com/pricing, which lists local and SWIFT international wires, a 'Multi-Entity' calculator profile, and says nothing about NetSuite or ERP. 'Focusing on domestic business banking' is contradicted by the international wire lines.
+FIX: Replace with only what the page shows: 'Relay's pricing page lists QuickBooks and Xero accounting integrations and does not list NetSuite, HRIS integrations or per-user expense-policy tiers like Brex Premium.'
+
+F3 (hard_blocker=True): QUOTE: First, assess the billing unit. ... Second, evaluate banking and cash management structures. ... Third, examine multi-entity and accounting system requirements.
+PROBLEM: Formatting slop: three parallel checks announced as a set and written as First/Second/Third paragraphs (anti-AI-language formatting gate).
+FIX: Turn the three checks into a short list (billing unit, banking and cash management, multi-entity and accounting requirements) with one or two sentences each, no ordinals.
+
+F4 (hard_blocker=True): QUOTE: At The Modern Wallet, we lay out published fee structures so teams can compare corporate cards and expense controls across a full year.
+PROBLEM: Tee-up is sentence 3 of the first paragraph, not the sentence after the answer; it is generic (passes the portability test for any page) and narrates the page's own purpose, which the standard treats as meta-narration/bolted-on.
+FIX: Delete it and note teeup-exempt, or replace it with a concrete one-sentence tee-up as sentence 2 drawn from _experience.md (e.g., the site's free calculators and money guides).
+
+F5 (hard_blocker=True): QUOTE: BILL specializes in AP disbursements with mailed checks priced at $1.99.
+PROBLEM: 'AP' is never defined. ERP, HRIS, API, FDIC, ACH, APY, AI, CSV, SAML and SSO first appear in table rows (before the choose section defines them).
+FIX: Spell out 'accounts payable (AP)' at first use and expand the other acronyms at first use in the table cells or intro, not only in later sections.
+
+F6 (hard_blocker=False): QUOTE: Scale $120 per month shown with $90 displayed beside it
+PROBLEM: relayfi.com/pricing labels the $90 'Limited-time discount' on the $120 Scale price; the page leaves the relationship unexplained and then builds a $1,080 annual figure on a limited-time price.
+FIX: Write 'Scale $120 per month, shown at a limited-time $90 per month' in the row and section; give the $1,440 per year list-price figure first and mark $1,080 as discounted.
+
+F7 (hard_blocker=False): QUOTE: Mercury and Relay provide business deposit accounts.
+PROBLEM: Incomplete: Ramp's page also lists an FDIC-insured checking account (2% on cash) and Brex sells a business account (Checking via Column N.A.). The FAQ implies only two options.
+FIX: Say 'Mercury and Relay are bank-style business accounts built around checking; Ramp also lists an FDIC-insured checking account paying 2% on cash.'
+
+F8 (hard_blocker=False): QUOTE: Brex displays variable annualized estimated treasury return figures ranging from 3.63% to 3.98%.
+PROBLEM: brex.com/pricing footnote says the posted rate is based on customers eligible for the highest-tier rate and that Treasury funds are not FDIC-insured. The range is accurate but missing the highest-tier qualifier.
+FIX: Add 'for the highest balance tier' to the first mention.
+
+Also: keep rows[0] subject first; keep the single external link; keep the title 50-60 chars; keep every H2 and the Who This Is Not For and What Would Change Our Answer sections as separate headings (stillBetterFit body: blank line, heading line, blank line, '- ' list lines).

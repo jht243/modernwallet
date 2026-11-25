@@ -1,0 +1,325 @@
+{
+ "slug": "webull",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2910,
+ "floor": 1500,
+ "input_tokens": 172038,
+ "output_tokens": 5337,
+ "thinking_tokens": 3682,
+ "cached_tokens": 170267,
+ "est_cost_usd": 0.0479,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 4 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'At tastytrade, broad-based index options cost $1 per contract to open and $0 to '; 'Webull remains the closer match for retail investors who want zero-commission tr'; 'While Webull applies pass-through regulatory fees such as the SEC fee of $0.0000'; 'An investor trading 20 index contracts pays $10 at Webull ($0.50 multiplied by 2'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 2889,
+  "numbers_not_in_facts": [
+   "0.0075",
+   "0.10325",
+   "1000",
+   "300000",
+   "30975",
+   "69.95",
+   "7.5"
+  ],
+  "fact_budget": {
+   "fact_words": 288,
+   "floor": 1500,
+   "ratio": 0.19,
+   "thin": true
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    9,
+    1
+   ],
+   "applied": [
+    {
+     "id": "intro",
+     "quote": "At The Modern Wallet, we build investing tools and evaluate published brokerage rate schedules so investors can measure contract fees, transfer charges and margin borrowing rates over a full calendar year.",
+     "replacement": "At The Modern Wallet, we show the math, name what moves it, and explain the tradeoff across published brokerage fee schedules.",
+     "type": "unsupported",
+     "why": "Site self-description does not state building tools to measure fees over a calendar year."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Webull operates as an online trading platform with digital execution.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Webull operates with digital execution."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Charles Schwab fits investors who want established brokerage infrastructure with $0 stock commissions and published options pricing of $0.65 per contract.",
+     "replacement": "Charles Schwab fits investors who want $0 stock commissions and published options pricing of $0.65 per contract.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Charles Schwab as having established brokerage infrastructure."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Fidelity lists no account minimums to open a retail brokerage account.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Fidelity has no account minimums."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Fidelity publishes an established margin interest schedule built on a base rate of 10.825%, which took effect on September 18, 2026.",
+     "replacement": "Fidelity publishes a margin interest schedule built on a base rate of 10.825%, which took effect on September 18, 2026.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe Fidelity's margin interest schedule as established."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Interactive Brokers fits active traders and international investors who want the flexibility of selecting either $0 Lite trading or Pro tiered execution pricing.",
+     "replacement": "Interactive Brokers fits active traders who want the flexibility of selecting either $0 Lite trading or Pro tiered execution pricing.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Interactive Brokers fits international investors."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "tastytrade focuses on options and futures trading with a capped commission model.",
+     "replacement": "tastytrade provides options trading with a capped commission model.",
+     "type": "unsupported",
+     "why": "SOURCE does not state tastytrade offers futures trading."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Webull lists no deposit minimums, making it accessible for accounts of any balance size.",
+     "replacement": "Webull lists no deposit minimums.",
+     "type": "unsupported",
+     "why": "SOURCE does not state making it accessible for accounts of any balance size."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "For an investor trading 200 standard options contracts over a year, Webull charges $0 in broker commissions, saving $130 compared to Charles Schwab (200 multiplied by $0.65).",
+     "replacement": "For an investor trading 100 standard options contracts, Webull charges $0 in broker commissions, compared to $65 at Charles Schwab (100 multiplied by $0.65).",
+     "type": "unsupported",
+     "why": "SOURCE restricts worked examples to 100 contracts and does not state 200."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Who This Is Not For\n\nWebull and its alternatives do not fit every trading requirement:\n\n- Webull fits poorly for investors who trade mutual funds, as Webull's pricing overview highlights stocks, ETFs and options rather than a fee-free mutual fund marketplace.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Webull's mutual fund offerings or lack of mutual fund marketplace."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2984
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 3196
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-25T17:01:26+0000",
+    "findings_file": "reports/alternatives-daily/2026-11-25/webull-findings.txt",
+    "applied": [
+     {
+      "id": "stillBetterFit.body",
+      "quote": "Firstrade offers commission-free mutual fund trading across load, no-load and NTF funds.\n- Webull fits poorly for investors who frequently transfer shares",
+      "replacement": "Who This Is Not For\n\n- Webull fits poorly for investors who frequently transfer shares",
+      "type": "F1",
+      "why": "Missing Who This Is Not For heading and collapsed bullet list"
+     },
+     {
+      "id": "title",
+      "quote": "Webull Alternatives 2026: Trading Fees Compared",
+      "replacement": "Webull Alternatives 2026: Trading Fees and Plans Compared",
+      "type": "F2",
+      "why": "Title is under 50 characters"
+     },
+     {
+      "id": "intro",
+      "quote": "options contract charges range from $0 at Firstrade to $0.65 per contract at Charles Schwab, with contract fees also applying at Fidelity",
+      "replacement": "options contract charges run from $0 at Firstrade to $1 per contract to open at tastytrade (capped at $10 per leg)",
+      "type": "F3",
+      "why": "False range and sentence chains too many ideas"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "If you plan to transfer existing assets, verify whether the receiving broker covers transfer charges or if you will absorb the $75 fee.",
+      "replacement": "Webull lists $75 per outgoing stock transfer; whether the receiving broker reimburses it is that broker's own policy.",
+      "type": "F4",
+      "why": "Unlinked directive to check outside source"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "First, calculate your options contract volume.",
+      "replacement": "Calculate options contract volume.",
+      "type": "F5",
+      "why": "Formatting slop using ordinal paragraph opener"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Second, evaluate index options pricing.",
+      "replacement": "Evaluate index options pricing.",
+      "type": "F5",
+      "why": "Formatting slop using ordinal paragraph opener"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Third, review order assistance and non-digital channels.",
+      "replacement": "Review order assistance and non-digital channels.",
+      "type": "F5",
+      "why": "Formatting slop using ordinal paragraph opener"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Fourth, compare margin borrowing costs if you trade on leverage.",
+      "replacement": "Compare margin borrowing costs if you trade on leverage.",
+      "type": "F5",
+      "why": "Formatting slop using ordinal paragraph opener"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Fifth, consider account mobility fees.",
+      "replacement": "Consider account mobility fees.",
+      "type": "F5",
+      "why": "Formatting slop using ordinal paragraph opener"
+     },
+     {
+      "id": "alternatives[3].body",
+      "quote": "For investors who utilize telephone assistance, Firstrade charges $19.95 for broker-assisted stock and ETF orders.",
+      "replacement": "For investors who place orders by phone, Firstrade charges $19.95 for broker-assisted stock and ETF orders.",
+      "type": "F6",
+      "why": "Banned verb utilize"
+     },
+     {
+      "id": "intro",
+      "quote": "At The Modern Wallet, we show the math, name what moves it, and explain the tradeoff across published brokerage fee schedules.",
+      "replacement": "",
+      "type": "F7",
+      "why": "Meta-narration and generic tee-up"
+     },
+     {
+      "id": "intro",
+      "quote": "using IBKR Lite at Interactive Brokers",
+      "replacement": "using IBKR Lite at Interactive Brokers (IBKR)",
+      "type": "F8",
+      "why": "IBKR acronym not defined on first use"
+     },
+     {
+      "id": "rows[4].pricing",
+      "quote": "mutual funds free to trade (load, no-load and NTF funds).",
+      "replacement": "mutual funds free to trade (load, no-load and no-transaction-fee [NTF] funds).",
+      "type": "F8",
+      "why": "NTF acronym not defined on first use"
+     },
+     {
+      "id": "alternatives[2].body",
+      "quote": "On Interactive Brokers using IBKR Pro fixed pricing, 10 options contracts cost $6.50 (10 multiplied by $0.65).",
+      "replacement": "On Interactive Brokers using IBKR Pro fixed pricing, 10 options contracts cost $6.50 (10 multiplied by $0.65, meeting the $1.00 per-order minimum).",
+      "type": "F9",
+      "why": "Must mention the order minimum"
+     },
+     {
+      "id": "alternatives[2].body",
+      "quote": "On IBKR Pro tiered pricing at the lowest $0.15 rate, those 10 contracts cost $1.50 (10 multiplied by $0.15).",
+      "replacement": "On IBKR Pro tiered pricing, contracts cost $0.25, $0.50 or $0.65 depending on premium at 10,000 contracts or fewer a month (with a $1.00 order minimum), while the $0.15 rate applies only at 100,001 or more contracts monthly.",
+      "type": "F9",
+      "why": "$0.15 rate only applies at high volume tiers"
+     },
+     {
+      "id": "alternatives[2].body",
+      "quote": "Interactive Brokers publishes no account minimums and no hidden fees on its pricing overview.",
+      "replacement": "Interactive Brokers publishes no added spreads, ticket charges, platform fees, or account minimums on its pricing overview, with order minimums of $1.00 on fixed stocks and options and $0.35 on tiered stocks.",
+      "type": "F10",
+      "why": "Paraphrase of vendor wording and missing order minimums"
+     },
+     {
+      "id": "rows[3].pricing",
+      "quote": "No account minimums or hidden fees per page.",
+      "replacement": "No added spreads, ticket charges, platform fees, or account minimums per page ($1.00 minimum per order on fixed stocks and options, $0.35 on tiered stocks).",
+      "type": "F10",
+      "why": "Paraphrase of vendor wording and missing order minimums"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Webull publishes pass-through regulatory fees and transaction terms, but margin borrowers should examine baseline interest schedules.",
+      "replacement": "Webull's fee schedule has a Margin tab that this page does not reproduce.",
+      "type": "F11",
+      "why": "Unsupported margin comparison without Webull margin rates"
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "rows[5].pricing",
+      "quote": "Cryptocurrency 1% per purchase to open and close (0.75% for BTC and ETH).",
+      "finding": "F8",
+      "why": "BTC and ETH acronyms not defined on first use",
+      "replacement": "Cryptocurrency 1% per purchase to open and close (0.75% for Bitcoin [BTC] and Ethereum [ETH]).",
+      "reason": "replacement adds ['Bitcoin', 'Ethereum'] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      4
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "chooseSection.body",
+       "quote": "At tastytrade, broad-based index options cost $1 per contract to open and $0 to close without the $10 leg cap, meaning 20 index contracts cost $20 to open.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "stillBetterFit.body",
+       "quote": "Webull remains the closer match for retail investors who want zero-commission trading across US stocks, ETFs and standard equity options without paying per-contract options charges or monthly subscription fees.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "stillBetterFit.body",
+       "quote": "While Webull applies pass-through regulatory fees such as the SEC fee of $0.0000206 times trade volume, it avoids recurring platform fees.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "stillBetterFit.body",
+       "quote": "An investor trading 20 index contracts pays $10 at Webull ($0.50 multiplied by 20), whereas tastytrade charges $1 per contract to open without a cap, totaling $20.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 2910,
+    "flags": [
+     "claim check: 4 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'At tastytrade, broad-based index options cost $1 per contract to open and $0 to '; 'Webull remains the closer match for retail investors who want zero-commission tr'; 'While Webull applies pass-through regulatory fees such as the SEC fee of $0.0000'; 'An investor trading 20 index contracts pays $10 at Webull ($0.50 multiplied by 2'"
+    ]
+   }
+  ]
+ },
+ "seconds": 511.0,
+ "response_id": "GREHa7LlBZ-_xdIP46-14AQ",
+ "generated_at": "2026-11-25T16:50:47+0000"
+}

@@ -1,0 +1,130 @@
+{
+  "slug": "webull",
+  "product": "Webull",
+  "officialUrl": "https://www.webull.com/pricing",
+  "title": "Webull Alternatives 2026: Trading Fees Compared",
+  "h1": "Webull Alternatives 2026: Brokerage Fees Compared",
+  "metaDescription": "Compare Webull alternatives for stock and options trading: Charles Schwab, Fidelity, Interactive Brokers, Firstrade and tastytrade with published fees.",
+  "published": "2026-11-25",
+  "updated": "2026-11-25",
+  "intro": "Charles Schwab, Fidelity, Interactive Brokers, Firstrade and tastytrade are five Webull alternatives for stock and options trading. Published prices are $0 for online stock and exchange-traded fund (ETF) trades across all five brokerages, using IBKR Lite at Interactive Brokers, while options contract charges range from $0 at Firstrade to $0.65 per contract at Charles Schwab, with contract fees also applying at Fidelity. [Webull](https://www.webull.com/pricing) lists $0 commissions on United States (US) listed stocks, ETFs and standard options, along with a $0.50 per contract fee on certain index options.\n\nAt The Modern Wallet, we show the math, name what moves it, and explain the tradeoff across published brokerage fee schedules. Webull lists no deposit minimums and passes through regulatory fees, including a Securities and Exchange Commission (SEC) fee of $0.0000206 times trade volume, while charging $75 for an outgoing stock transfer.\n\nTo view broader investing resources on this site, explore our [best investment apps for beginners roundup](/roundup/best-investment-apps-for-beginners/) and our [best brokers for treasury bonds roundup](/roundup/best-brokers-for-treasury-bonds/). For detailed fee structures, read our guide on [what do brokers charge to trade](/guides/what-do-brokers-charge-to-trade/), review our [Robinhood alternatives](/alternatives/robinhood/) guide, or check our [Fidelity alternatives](/alternatives/fidelity/) page and the [comparison hub](/compare/).",
+  "tableTitle": "Webull Alternatives: Published Fees and Pricing Compared",
+  "tableNote": "Prices from each provider's own website, checked November 25, 2026. Prices are in US dollars.",
+  "tableColumns": [
+    "Product",
+    "Fees and pricing",
+    "Best fit"
+  ],
+  "rows": [
+    {
+      "product": "Webull",
+      "pricing": "$0 commissions for US-listed stocks, ETFs and options; no deposit minimums. $0.50 per contract fee on certain index options. Regulatory pass-through fees apply (such as the SEC fee of $0.0000206 times trade volume). $75 per outgoing stock transfer.",
+      "bestFit": "Fits investors who want $0 commissions on standard equity options and US stocks without account minimums",
+      "subject": true
+    },
+    {
+      "product": "Charles Schwab",
+      "pricing": "$0 online equity trade commissions; $0 online base commission plus $0.65 per options contract; no account or trade minimums. Broker-assisted trades add a $25 service charge. Crypto 0.75% of trade value per buy or sell (minimum $0.01).",
+      "bestFit": "Fits investors who want $0 stock commissions paired with published $0.65 options contract pricing and no account minimums"
+    },
+    {
+      "product": "Fidelity",
+      "pricing": "$0 commissions for online US stock, ETF and option trades; option contract fees apply. Margin base rate 10.825% effective since September 18, 2026, with lower rates by balance tier (for example 10.325% on $250,000 to $499,999).",
+      "bestFit": "Fits investors seeking $0 stock and ETF trading who want published margin rate tiers starting from a 10.825% base rate"
+    },
+    {
+      "product": "Interactive Brokers",
+      "pricing": "IBKR Lite: $0 commissions on US stocks and ETFs for US residents. IBKR Pro stocks and ETFs: tiered $0.0005 to $0.0035 per share or fixed $0.005 per share. IBKR Pro options: tiered $0.15 to $0.65 per contract or fixed $0.65 per contract. No account minimums or hidden fees per page.",
+      "bestFit": "Fits active traders who want a choice between $0 commission Lite trading and Pro volume-tiered pricing"
+    },
+    {
+      "product": "Firstrade",
+      "pricing": "$0 commission for stocks, ETFs and options; $0 options contract fee; mutual funds free to trade (load, no-load and NTF funds). Broker-assisted orders: $19.95 for stocks and ETFs; options $19.95 plus $0.50 per contract.",
+      "bestFit": "Fits traders who want $0 options contract fees alongside commission-free mutual fund and stock trading"
+    },
+    {
+      "product": "tastytrade",
+      "pricing": "Stocks and ETFs $0 to open and close; fractional shares $0. Stock and ETF options $1 per contract to open (capped at $10 per leg), $0 to close. Broad-based index options $1 per contract to open, $0 to close. Cryptocurrency 1% per purchase to open and close (0.75% for BTC and ETH). No subscriptions.",
+      "bestFit": "Fits options traders placing large single-leg orders that hit the $10 opening commission cap"
+    }
+  ],
+  "chooseSection": {
+    "heading": "How to Choose a Webull Alternative",
+    "body": "Choosing an alternative to Webull begins with checking the exact fees tied to the assets you trade most often. While Webull and all five alternatives list $0 online commissions for US stocks and ETFs, their fees diverge sharply when you trade equity options, index options, mutual funds or cryptocurrency.\n\nFirst, calculate your options contract volume. Webull charges $0 broker commissions on standard equity options trades, but charges a $0.50 per contract fee on certain index options. Firstrade charges $0 in broker commissions and $0 in options contract fees on equity options. In contrast, Charles Schwab charges $0.65 per contract, while Interactive Brokers charges between $0.15 and $0.65 per contract on IBKR Pro tiered schedules or a fixed $0.65 per contract. tastytrade charges $1 per contract to open an equity option, but caps that commission at $10 per leg and charges $0 to close the position. Trading 100 contracts on a single leg costs $0 at Webull, $0 at Firstrade, $65 at Charles Schwab ($0.65 multiplied by 100), and $10 at tastytrade due to its $10 per-leg cap.\n\nSecond, evaluate index options pricing. Webull charges $0.50 per contract on certain index options. An investor trading 20 of these index contracts at Webull incurs a $10 contract charge ($0.50 multiplied by 20). At tastytrade, broad-based index options cost $1 per contract to open and $0 to close without the $10 leg cap, meaning 20 index contracts cost $20 to open.\n\nThird, review order assistance and non-digital channels. If you require telephone or representative support to place orders, other brokers publish distinct service fees. Charles Schwab adds a $25 service charge for broker-assisted trades. Firstrade charges $19.95 for broker-assisted stock and ETF trades, and $19.95 plus $0.50 per contract for broker-assisted options orders.\n\nFourth, compare margin borrowing costs if you trade on leverage. Webull publishes pass-through regulatory fees and transaction terms, but margin borrowers should examine baseline interest schedules. Fidelity publishes a base margin rate of 10.825% effective since September 18, 2026, which steps down to 10.325% on balances between $250,000 and $499,999. Interactive Brokers offers tiered and fixed schedules on its Pro tier.\n\nFifth, consider account mobility fees. Webull lists a $75 fee per outgoing stock transfer when moving shares to another brokerage. If you plan to transfer existing assets, verify whether the receiving broker covers transfer charges or if you will absorb the $75 fee.\n\nReview this short checklist before selecting a broker:\n\n- How many standard equity options contracts do you open and close each month?\n- Do you trade broad-based index options that carry separate per-contract fees?\n- Do you require broker-assisted phone orders, and what is the fee per trade?\n- Does the broker charge an outgoing account transfer fee if you move assets later?\n- Are mutual funds part of your portfolio, and does the broker charge transaction fees for them?"
+  },
+  "alternatives": [
+    {
+      "heading": "Charles Schwab Pricing, Plans and Fit",
+      "body": "Charles Schwab charges $0 for online equity trade commissions on listed stocks and ETFs. For options trades, Charles Schwab charges a $0 base commission plus $0.65 per options contract. Charles Schwab enforces no account minimums and no trade minimums to open an account or place an order.\n\nFor orders placed with staff support, Charles Schwab adds a $25 service charge for broker-assisted trades. For cryptocurrency transactions, Charles Schwab charges 0.75% of trade value per buy or sell, with a minimum fee of $0.01 per order.\n\nA worked options cost example shows how Charles Schwab compares with Webull. An investor trading 100 standard equity options contracts pays $65 at Charles Schwab (100 multiplied by $0.65), while Webull charges $0 in commissions for standard equity options. On an order of 10 options contracts, Charles Schwab charges $6.50 (10 multiplied by $0.65), compared to $0 at Webull. For crypto transactions, buying $1,000 in cryptocurrency at Charles Schwab costs $7.50 in trade value fees ($1,000 multiplied by 0.0075).\n\nCharles Schwab fits investors who want $0 stock commissions and published options pricing of $0.65 per contract. Against Webull, Charles Schwab falls short for high-volume equity options traders who prefer Webull's $0 per-contract commission structure, and Charles Schwab applies a $25 fee whenever an investor requires broker phone assistance."
+    },
+    {
+      "heading": "Fidelity Pricing, Plans and Fit",
+      "body": "Fidelity offers $0 commissions for online US stock, ETF and option trades, though option contract fees apply to option orders. \n\nFidelity publishes a margin interest schedule built on a base rate of 10.825%, which took effect on September 18, 2026. Fidelity reduces this margin borrowing rate as balance tiers increase. For example, accounts carrying a debit balance from $250,000 to $499,999 receive a 10.325% margin interest rate.\n\nOn equity trades, both Fidelity and Webull charge $0 in commissions for online US stocks and ETFs. For options, Webull lists $0 commissions on standard equity options alongside its $0.50 index options fee, while Fidelity states that option contract fees apply to options orders. On a margin loan balance of $300,000, Fidelity charges 10.325% annually, which amounts to $30,975 in yearly borrowing interest ($300,000 multiplied by 0.10325).\n\nFidelity fits investors seeking $0 commissions on US stocks and ETFs who want transparent margin borrowing schedules with balance tiers starting from a 10.825% base rate. Against Webull, Fidelity falls short on published per-contract options clarity on its primary rate overview, where it notes that option contract fees apply rather than displaying a single zero-dollar options rate."
+    },
+    {
+      "heading": "Interactive Brokers Pricing, Plans and Fit",
+      "body": "Interactive Brokers provides two distinct service tiers: IBKR Lite and IBKR Pro. IBKR Lite offers $0 commissions on US exchange-listed stocks and ETFs for US residents. IBKR Pro uses tiered or fixed commission schedules. For stocks and ETFs, IBKR Pro tiered pricing runs from $0.0005 to $0.0035 per share, while fixed pricing costs $0.005 per share. For options, IBKR Pro tiered pricing ranges from $0.15 to $0.65 per contract, while fixed options pricing costs $0.65 per contract. Interactive Brokers publishes no account minimums and no hidden fees on its pricing overview.\n\nConsider an options trade of 10 contracts. On Webull, trading 10 standard equity options contracts costs $0 in broker commissions. On Interactive Brokers using IBKR Pro fixed pricing, 10 options contracts cost $6.50 (10 multiplied by $0.65). On IBKR Pro tiered pricing at the lowest $0.15 rate, those 10 contracts cost $1.50 (10 multiplied by $0.15). For stock trades, buying 1,000 shares of a US stock costs $0 on Webull and $0 on IBKR Lite, while costing $5 on IBKR Pro fixed ($0.005 multiplied by 1,000).\n\nInteractive Brokers fits active traders who want the flexibility of selecting either $0 Lite trading or Pro tiered execution pricing. Against Webull, Interactive Brokers falls short for retail traders who want simple $0 options execution, as IBKR Pro charges up to $0.65 per contract and fixed stock trading costs $0.005 per share."
+    },
+    {
+      "heading": "Firstrade Pricing, Plans and Fit",
+      "body": "Firstrade provides commission-free trading across multiple retail investment categories. Firstrade charges $0 commission for stocks, ETFs and options, with a $0 options contract fee. In addition, mutual funds are free to trade at Firstrade, including load, no-load and no-transaction-fee (NTF) mutual funds.\n\nFor investors who utilize telephone assistance, Firstrade charges $19.95 for broker-assisted stock and ETF orders. Broker-assisted options trades cost $19.95 plus $0.50 per contract.\n\nWorked cost examples show parity on self-directed orders and clear charges on phone orders. Placing an online order for 100 equity options contracts costs $0 at Firstrade ($0 commission and $0 contract fee) and $0 at Webull. If an investor calls a broker to place that same 100-contract options order at Firstrade, the cost is $19.95 plus $50 (100 multiplied by $0.50), totaling $69.95. Placing a broker-assisted stock order at Firstrade costs $19.95, compared to $0 for an online trade.\n\nFirstrade fits cost-conscious options traders and fund investors who want $0 options contract charges alongside commission-free mutual fund trades. Against Webull, Firstrade falls short when investors require live broker phone support without paying the $19.95 trade service fee."
+    },
+    {
+      "heading": "tastytrade Pricing, Plans and Fit",
+      "body": "tastytrade provides options trading with a capped commission model. Stocks and ETFs cost $0 to open and $0 to close, with fractional share trading costing $0. For stock and ETF options, tastytrade charges $1 per contract to open, capped at $10 per leg, and $0 to close. Broad-based index options cost $1 per contract to open and $0 to close, with no leg cap. tastytrade charges no recurring platform subscriptions.\n\nFor cryptocurrency trading, tastytrade charges a 1% fee per purchase to open and close, which drops to 0.75% each way for Bitcoin (BTC) and Ethereum (ETH).\n\nThe capped fee model creates distinct arithmetic on larger single-leg options orders. Opening 50 contracts of an equity option on a single leg costs $10 at tastytrade because of the $10 per-leg cap (50 contracts at $1 would be $50, capped at $10), and closing costs $0. Webull charges $0 in commissions for standard equity options. However, opening 5 contracts at tastytrade costs $5 ($1 multiplied by 5). For broad-based index options, opening 20 contracts at tastytrade costs $20 (20 multiplied by $1), whereas Webull charges $0.50 per contract on certain index options, which equals $10 (20 multiplied by $0.50).\n\ntastytrade fits options traders who enter large-volume single-leg positions that benefit from the $10 opening commission cap and $0 closing fee. Against Webull, tastytrade falls short for smaller options orders under 10 contracts, where its $1 opening contract fee exceeds Webull's $0 commission on standard equity options."
+    }
+  ],
+  "stillBetterFit": {
+    "heading": "When Webull Is Still the Better Fit",
+    "body": "Webull remains the closer match for retail investors who want zero-commission trading across US stocks, ETFs and standard equity options without paying per-contract options charges or monthly subscription fees. Webull lists no deposit minimums.\n\nWebull charges $0 on standard equity options contracts, whereas Charles Schwab charges $0.65 per contract, Interactive Brokers Pro charges up to $0.65 per contract, and tastytrade charges $1 per contract to open. For an investor trading 100 standard options contracts, Webull charges $0 in broker commissions, compared to $65 at Charles Schwab (100 multiplied by $0.65). While Webull applies pass-through regulatory fees such as the SEC fee of $0.0000206 times trade volume, it avoids recurring platform fees.\n\nAdditionally, Webull charges $0.50 per contract on certain index options. An investor trading 20 index contracts pays $10 at Webull ($0.50 multiplied by 20), whereas tastytrade charges $1 per contract to open without a cap, totaling $20.\n\n Firstrade offers commission-free mutual fund trading across load, no-load and NTF funds.\n- Webull fits poorly for investors who frequently transfer shares to outside brokerages, because Webull charges $75 per outgoing stock transfer.\n- Charles Schwab fits poorly for active options traders who want to avoid per-contract fees, because Schwab charges $0.65 per contract.\n- tastytrade fits poorly for traders opening small options positions of 1 to 5 contracts who want zero fees, because tastytrade charges $1 per contract to open.\n- Interactive Brokers Pro fits poorly for investors who want guaranteed zero-commission stock trades, because Pro charges $0.005 per share on fixed pricing.\n\nWhat Would Change Our Answer on Webull Alternatives\n\nPublished fee schedules determine the cost comparisons on this page. Several potential pricing changes would shift the competitive balance:\n\n- Webull introducing a per-contract fee on standard equity options would eliminate its cost advantage over Charles Schwab and Interactive Brokers.\n- Webull increasing or eliminating its $0.50 per contract fee on index options would alter comparisons against tastytrade's $1 index rate.\n- Webull adjusting its $75 outgoing stock transfer charge would change account portability math.\n- Charles Schwab lowering or eliminating its $0.65 options contract fee would make it directly competitive with Webull's zero-commission options structure.\n- Fidelity publishing a standardized per-contract options rate would allow direct dollar-for-dollar comparisons on equity options orders.\n- Firstrade adding per-contract options fees or trading fees on mutual funds would narrow its pricing distinction."
+  },
+  "verdict": "Webull, Firstrade, Charles Schwab, Fidelity, and Interactive Brokers Lite all publish $0 online commissions for US stocks and ETFs, but options and assistance fees separate them. Firstrade and Webull offer $0 options commissions on standard contracts, whereas Charles Schwab charges $0.65 per contract, Interactive Brokers Pro charges up to $0.65, and tastytrade charges $1 to open with a $10 per-leg cap. To pick a Webull alternative, count your monthly options contracts and determine whether you trade index options or mutual funds, then compare your volume against the published rates in the table above.",
+  "faqs": [
+    {
+      "question": "What should I use instead of Webull for stock and options trading?",
+      "answer": "Charles Schwab, Fidelity, Interactive Brokers, Firstrade and tastytrade are the primary alternatives. All five provide $0 online commissions on US stocks and ETFs (via IBKR Lite at Interactive Brokers), while options pricing ranges from $0 at Firstrade to $0.65 per contract at Charles Schwab and up to $0.65 on IBKR Pro."
+    },
+    {
+      "question": "Does Webull charge options contract fees?",
+      "answer": "Webull charges $0 commissions on standard equity options. However, Webull charges a $0.50 per contract fee on certain index options, and regulatory pass-through fees apply, such as the SEC fee of $0.0000206 times trade volume."
+    },
+    {
+      "question": "Which Webull alternative has no options contract fees?",
+      "answer": "Firstrade charges $0 commission and a $0 contract fee on options trades. In comparison, Charles Schwab charges $0.65 per contract and tastytrade charges $1 per contract to open (capped at $10 per leg)."
+    },
+    {
+      "question": "How much does Webull charge to transfer stocks out?",
+      "answer": "Webull charges $75 per outgoing stock transfer when moving securities to another brokerage firm."
+    },
+    {
+      "question": "Does Charles Schwab have account minimums?",
+      "answer": "No. Charles Schwab lists no account minimums and no trade minimums for its online retail brokerage accounts."
+    }
+  ],
+  "related": [
+    {
+      "label": "Best investment apps for beginners",
+      "href": "/roundup/best-investment-apps-for-beginners/"
+    },
+    {
+      "label": "Best brokers for treasury bonds",
+      "href": "/roundup/best-brokers-for-treasury-bonds/"
+    },
+    {
+      "label": "What do brokers charge to trade",
+      "href": "/guides/what-do-brokers-charge-to-trade/"
+    },
+    {
+      "label": "Robinhood alternatives",
+      "href": "/alternatives/robinhood/"
+    },
+    {
+      "label": "Fidelity alternatives",
+      "href": "/alternatives/fidelity/"
+    },
+    {
+      "label": "Compare financial products",
+      "href": "/compare/"
+    }
+  ]
+}

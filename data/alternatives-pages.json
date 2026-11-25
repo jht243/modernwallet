@@ -254,6 +254,30 @@
         "www.xero.com",
         "xero.com"
       ]
+    },
+    {
+      "route": "/alternatives/brex/",
+      "vendorHost": "brex.com",
+      "officialHosts": [
+        "www.brex.com",
+        "brex.com"
+      ]
+    },
+    {
+      "route": "/alternatives/webull/",
+      "vendorHost": "webull.com",
+      "officialHosts": [
+        "www.webull.com",
+        "webull.com"
+      ]
+    },
+    {
+      "route": "/alternatives/charles-schwab/",
+      "vendorHost": "schwab.com",
+      "officialHosts": [
+        "www.schwab.com",
+        "schwab.com"
+      ]
     }
   ]
 }

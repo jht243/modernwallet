@@ -1,0 +1,36 @@
+{
+ "slug": "brex",
+ "checked": "2026-11-25",
+ "sources": [
+  {
+   "vendor": "Brex (subject)",
+   "url": "https://brex.com/pricing",
+   "facts": "- Essentials: $0 per user per month; global card acceptance, 1 local card program, up to two entities, accounting integrations, local currency wires, travel booking, bill pay, reimbursements, API access.\n- Premium: $12 per user per month; adds multiple customizable expense policies, dynamic expense review chains, multi-entity (US and international), ERP and HRIS integrations, live budgets.\n- Enterprise: custom pricing. Smart Card: custom pricing.\n- The page says plans start at $0 per user per month and more advanced features are $12 per user per month. Brex LLC is a wholly owned subsidiary of Capital One, N.A. Treasury return figures shown (3.63% to 3.98%) are variable annualized estimates."
+  },
+  {
+   "vendor": "Ramp",
+   "url": "https://ramp.com/pricing",
+   "facts": "- Free plan: $0 per user per month; includes travel and expense, accounts payable (pay bills by ACH, card, check, wire), corporate card with unlimited cards, budgets and reporting, QuickBooks Online and Xero integrations. The page lists earning 2% on cash in an FDIC-insured checking account and 4.66% in a Ramp Investment Account (footnoted, variable).\n- Plus plan: $15 per user per month plus a platform fee based on team size; \"Save 20% with annual billing\". Adds NetSuite and Sage Intacct integrations, multi-entity support, AI expense reviews; procurement is an add-on.\n- Enterprise: custom pricing, annual billing."
+  },
+  {
+   "vendor": "Mercury",
+   "url": "https://mercury.com/pricing",
+   "facts": "- Mercury (base): $0 per month; no monthly fees, overdraft penalties or minimum balances; up to $5M in FDIC insurance through partner banks and sweep networks; free ACH, wires, real-time payments and checks in USD; company cards and expense management included. Treasury access is unlocked with a $250K Mercury balance.\n- Plus: $29.90 per month; invoice with ACH debit at $1 per transaction, recurring invoices, unlimited 1099 filings, priority support; 30-day free trial.\n- Pro: $299 per month; ACH debit invoicing at $0 per transaction; relationship manager.\n- Add-ons: Mercury Books $35 per month and Mercury Payroll $100 per month plus $50 per person paid per month, both waived until Dec 31, 2026. Currency exchange fee listed at 1%."
+  },
+  {
+   "vendor": "Expensify",
+   "url": "https://expensify.com/pricing",
+   "facts": "- Submit: free for all members (SmartScan receipts, mileage tracking, expense reports).\n- Collect: $5 per member per month; reimbursements, corporate card management, expense and travel approvals, travel booking, QuickBooks and Xero integrations.\n- Control: custom pricing, as low as $9 per member per month; multiple approval flows, ERP integration (NetSuite, Sage Intacct), SAML/SSO, budgeting. 30-day free trial."
+  },
+  {
+   "vendor": "BILL",
+   "url": "https://bill.com/pricing",
+   "facts": "- Essentials $49 per user per month; Team $65 per user per month; Corporate $89 per user per month; Enterprise listed separately. Essentials syncs with accounting software by CSV import/export; higher tiers integrate automatically.\n- Payment fees shown include $0.59 and $1.99 (BILL mails the check) per payment; the page text does not label every fee, so do not say which payment type each belongs to beyond the $1.99 mailed check. Credit lines from $1,000 to $5M are advertised.\n- BILL Spend & Expense: the page says there are no per-user subscription fees for it."
+  },
+  {
+   "vendor": "Relay",
+   "url": "https://relayfi.com/pricing",
+   "facts": "- Starter $0 per month: 50 credit and debit cards, 20 checking accounts, 1.19% APY on savings (footnoted), 1% cash back on credit cards (footnoted), invoicing, accounting integrations, unlimited users.\n- Grow $30 per month: 1.87% APY on savings, 1.25% cash back, multi-step approval rules, recurring invoices, bookkeeping automations.\n- Scale: $120 per month shown with $90 displayed beside it (the page does not say which is the discount; write both as shown); 3.21% APY on savings, 1.5% cash back, 50 checking accounts per business, no fee for same-day ACH.\n- All plans: no minimum balance, no hidden or overdraft fees."
+  }
+ ]
+}

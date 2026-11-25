@@ -3923,15 +3923,108 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-25T16:41:15+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": [
+            "officialUrl",
+            "product",
+            "vendor"
+          ]
+        },
+        {
+          "at": "2026-11-25T16:41:15+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-25"
+        },
+        {
+          "at": "2026-11-25T16:58:41+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-25T16:41:15+00:00",
+      "claimedOn": "2026-11-25",
+      "attempts": 1,
+      "lastNextAt": "2026-11-25T16:41:15+00:00",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Base plan $0 per month; Plus $29.90 per month; Pro $299 per month.",
+            "problem": "Mercury's own page (mercury.com/pricing) shows $29.90 and $299 only under its default 'Annual Pricing (15% off)' toggle. The page's own data (pricePerMonth 35 / 350, annualPricePerMonth 29.9 / 299) and its meta description give $35/mo for Plus and $350/mo for Pro on monthly billing. The Brex page states $29.90 and $299 'per month' with no billing qualifier in the intro ('$299 per month on Mercury Pro'), the Mercury row, the Mercury section and its worked example ($358.80 and $3,588 per year).",
+            "fix": "Write 'Plus $29.90 per month billed annually ($35 per month month-to-month); Pro $299 per month billed annually ($350 per month month-to-month)' in the intro, table row and Mercury section, and label the $358.80 and $3,588 worked totals as annual-billing figures (month-to-month would be $420 and $4,200).",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Versus Brex, Relay does not offer an international multi-entity expense platform or custom ERP integrations like NetSuite, focusing instead on domestic business banking and sub-account management.",
+            "problem": "Not in the sources file and not on relayfi.com/pricing, which lists local and SWIFT international wires, a 'Multi-Entity' calculator profile, and says nothing about NetSuite or ERP. 'Focusing on domestic business banking' is contradicted by the international wire lines.",
+            "fix": "Replace with only what the page shows: 'Relay's pricing page lists QuickBooks and Xero accounting integrations and does not list NetSuite, HRIS integrations or per-user expense-policy tiers like Brex Premium.'",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "First, assess the billing unit. ... Second, evaluate banking and cash management structures. ... Third, examine multi-entity and accounting system requirements.",
+            "problem": "Formatting slop: three parallel checks announced as a set and written as First/Second/Third paragraphs (anti-AI-language formatting gate).",
+            "fix": "Turn the three checks into a short list (billing unit, banking and cash management, multi-entity and accounting requirements) with one or two sentences each, no ordinals.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "At The Modern Wallet, we lay out published fee structures so teams can compare corporate cards and expense controls across a full year.",
+            "problem": "Tee-up is sentence 3 of the first paragraph, not the sentence after the answer; it is generic (passes the portability test for any page) and narrates the page's own purpose, which the standard treats as meta-narration/bolted-on.",
+            "fix": "Delete it and note teeup-exempt, or replace it with a concrete one-sentence tee-up as sentence 2 drawn from _experience.md (e.g., the site's free calculators and money guides).",
+            "hard_blocker": true
+          },
+          {
+            "id": "F5",
+            "quote": "BILL specializes in AP disbursements with mailed checks priced at $1.99.",
+            "problem": "'AP' is never defined. ERP, HRIS, API, FDIC, ACH, APY, AI, CSV, SAML and SSO first appear in table rows (before the choose section defines them).",
+            "fix": "Spell out 'accounts payable (AP)' at first use and expand the other acronyms at first use in the table cells or intro, not only in later sections.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F6",
+            "quote": "Scale $120 per month shown with $90 displayed beside it",
+            "problem": "relayfi.com/pricing labels the $90 'Limited-time discount' on the $120 Scale price; the page leaves the relationship unexplained and then builds a $1,080 annual figure on a limited-time price.",
+            "fix": "Write 'Scale $120 per month, shown at a limited-time $90 per month' in the row and section; give the $1,440 per year list-price figure first and mark $1,080 as discounted.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F7",
+            "quote": "Mercury and Relay provide business deposit accounts.",
+            "problem": "Incomplete: Ramp's page also lists an FDIC-insured checking account (2% on cash) and Brex sells a business account (Checking via Column N.A.). The FAQ implies only two options.",
+            "fix": "Say 'Mercury and Relay are bank-style business accounts built around checking; Ramp also lists an FDIC-insured checking account paying 2% on cash.'",
+            "hard_blocker": false
+          },
+          {
+            "id": "F8",
+            "quote": "Brex displays variable annualized estimated treasury return figures ranging from 3.63% to 3.98%.",
+            "problem": "brex.com/pricing footnote says the posted rate is based on customers eligible for the highest-tier rate and that Treasury funds are not FDIC-insured. The range is accurate but missing the highest-tier qualifier.",
+            "fix": "Add 'for the highest balance tier' to the first mention.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F9",
+            "quote": "Published software prices across these options run from $0 entry plans ... to $299 per month on Mercury Pro and $89 per user per month on BILL Corporate.",
+            "problem": "Page rule 'Unified Mindmap alternatives track' calls for a 3-scenario switching cost table plus an explicit break-even counterexample backed by mindmap/evidence/<slug>/evidence.json. No mindmap/ run directory or evidence.json exists for this day, and the page has only one 10-user (or single-volume) worked example per alternative.",
+            "fix": "Either add a compact 3-scenario table (for example 5, 25 and 100 users) with a break-even line, or record that this site adapter's store has no field for it and the track proof is waived for this run.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-25T16:58:41+00:00"
+      }
     },
     {
       "vendor": "Charles Schwab",
       "product": "Charles Schwab",
-      "officialUrl": "https://www.schwab.com",
+      "officialUrl": "https://www.schwab.com/pricing",
       "targetQuery": "charles schwab alternatives",
       "demand": {
         "volume": 110,
@@ -3948,10 +4041,89 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-25T16:41:15+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": [
+            "officialUrl",
+            "product",
+            "vendor"
+          ]
+        },
+        {
+          "at": "2026-11-25T16:41:15+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-25"
+        },
+        {
+          "at": "2026-11-25T16:58:42+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-25T16:41:15+00:00",
+      "claimedOn": "2026-11-25",
+      "attempts": 1,
+      "lastNextAt": "2026-11-25T16:41:15+00:00",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "For investors opening small options orders of one to five contracts at a time, Schwab's $0.65 per-contract fee is lower than tastytrade's $1 opening fee.",
+            "problem": "Contradicted by the page's own math: Schwab charges $0.65 to close as well (round trip $1.30 per contract, stated in the tastytrade section and the FAQ), while tastytrade closes at $0, so 1 to 5 contracts cost $1 to $5 round trip at tastytrade versus $1.30 to $6.50 at Schwab. Only the opening fee is lower; the 'still the better fit' argument is wrong for small round-trip orders.",
+            "fix": "Delete this sentence or restate it as an opening-fee-only comparison and add that tastytrade is cheaper round trip. Base the section on facts that hold: no account minimums, one flat $0.65 with no cap, 0.75% crypto vs tastytrade 1%.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "However, if that trading volume qualifies for the lower $0.15 rate on IBKR Pro Tiered, the options fee drops to $30 (200 multiplied by $0.15), saving $100 compared to Charles Schwab.",
+            "problem": "interactivebrokers.com shows the $0.15 tier only at 100,001 or more contracts per month; at 10,000 or fewer it is $0.25, $0.50 or $0.65 by premium. A 200-contract month cannot qualify, so the $30 and $100 savings figures are unattainable as framed.",
+            "fix": "Replace with a volume-appropriate example ($0.25 to $0.65 by premium, $1.00 minimum per order) or state the 100,001-contract threshold and drop the $100 savings.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Start your comparison with the asset classes you trade most often. ... Next, evaluate broker-assisted trading fees ... Third, review margin interest rates ... Fourth, check specialized transaction fees",
+            "problem": "Formatting slop: four parallel checks written as Start/Next/Third/Fourth paragraphs, then repeated again as a four-bullet list.",
+            "fix": "Keep the bullet list and shorten the four paragraphs into list items with the fee facts; drop the ordinals.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "At The Modern Wallet, we build financial tools and compare published fee schedules so you can evaluate the annual dollar cost of your trading activity.",
+            "problem": "Tee-up is sentence 3, not the sentence after the answer, and is generic boilerplate that could sit on any comparison page.",
+            "fix": "Delete (teeup-exempt) or rewrite as one concrete sentence 2.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F5",
+            "quote": "If you eventually transfer that account to an outside broker, Webull's $75 outgoing transfer fee offsets that options savings ($75 transfer fee minus $65 options fee equals a net cost of $10).",
+            "problem": "Mixes opening-only options cost with a round-trip view used elsewhere; Schwab charges $0.65 on close too, so 100 round-trip contracts cost $130 and the transfer fee would be outweighed. The framing 'Placing 100 equity options trades' also mixes trades and contracts.",
+            "fix": "State the break-even: $75 / $0.65 is about 116 contracts opened (58 round trips) before Schwab's per-contract fees exceed Webull's one-time $75 transfer fee.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F6",
+            "quote": "No account minimums or hidden fees.",
+            "problem": "Table row for Interactive Brokers: vendor wording is 'no added spreads, ticket charges, platform fees, or account minimums'; per-order minimums ($1.00 fixed stock and options, $0.35 tiered stock) are omitted. 'IBKR' is also used in the row before being defined in the choose section.",
+            "fix": "Use the vendor's wording, add the minimum per order and define IBKR at first use.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F7",
+            "quote": "Charles Schwab and all five alternatives provide $0 online commissions for US exchange-listed stocks and ETFs",
+            "problem": "Page rule 'Unified Mindmap alternatives track' calls for a 3-scenario switching cost table plus an explicit break-even counterexample backed by mindmap/evidence/<slug>/evidence.json. No mindmap/ run directory or evidence.json exists for this day, and the page has only one 10-user (or single-volume) worked example per alternative.",
+            "fix": "Add a 3-scenario table and break-even line (the 1 to 5 contract round-trip case is the natural counterexample), or record the waiver.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-25T16:58:42+00:00"
+      }
     },
     {
       "vendor": "Webull",
@@ -3973,10 +4145,124 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-25T16:41:15+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": [
+            "officialUrl",
+            "product",
+            "vendor"
+          ]
+        },
+        {
+          "at": "2026-11-25T16:41:15+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-25"
+        },
+        {
+          "at": "2026-11-25T16:58:41+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-25T16:41:15+00:00",
+      "claimedOn": "2026-11-25",
+      "attempts": 1,
+      "lastNextAt": "2026-11-25T16:41:15+00:00",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": " Firstrade offers commission-free mutual fund trading across load, no-load and NTF funds.\n- Webull fits poorly for investors who frequently transfer shares",
+            "problem": "Rendered page (dist/alternatives/webull/index.html) is broken: the 'Who This Is Not For' heading is missing and the bullet list collapsed into one paragraph of literal '- ' text. A required page element is absent on a page that picks a winner.",
+            "fix": "Rewrite the stillBetterFit body so it has a blank line, a 'Who This Is Not For' line, a blank line, and four '- ' list lines; move the Firstrade mutual fund sentence into the Firstrade section or drop it.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Webull Alternatives 2026: Trading Fees Compared",
+            "problem": "Title is 47 characters; the page rule requires 50 to 60.",
+            "fix": "Use 'Webull Alternatives 2026: Trading Fees and Plans Compared' (57 characters) or 'Webull Alternatives 2026: Fees and Features Compared' (52); keep H1 starting 'Webull Alternatives'.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "options contract charges range from $0 at Firstrade to $0.65 per contract at Charles Schwab, with contract fees also applying at Fidelity",
+            "problem": "False range: tastytrade charges $1 per contract to open (tastytrade.com/pricing) and Interactive Brokers Pro fixed is $0.65 with a $1.00 minimum per order. The whole sentence is also over 50 words and chains five ideas.",
+            "fix": "Split into two sentences and state 'options contract charges run from $0 at Firstrade to $1 per contract to open at tastytrade (capped at $10 per leg)'.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "If you plan to transfer existing assets, verify whether the receiving broker covers transfer charges or if you will absorb the $75 fee.",
+            "problem": "Unlinked directive to check a source with no link to the answering page.",
+            "fix": "State the fact instead: 'Webull lists $75 per outgoing stock transfer; whether the receiving broker reimburses it is that broker's own policy.'",
+            "hard_blocker": true
+          },
+          {
+            "id": "F5",
+            "quote": "First, calculate your options contract volume. ... Second, evaluate index options pricing. ... Third, review order assistance and non-digital channels. ... Fourth, compare margin borrowing costs ... Fifth, consider account mobility fees.",
+            "problem": "Formatting slop: five parallel checks written as First to Fifth paragraphs.",
+            "fix": "Convert to a five-item list with one to two sentences each, no ordinals.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F6",
+            "quote": "For investors who utilize telephone assistance, Firstrade charges $19.95 for broker-assisted stock and ETF orders.",
+            "problem": "'utilize' is on the banned inflated-verb list (single-instance fail).",
+            "fix": "'For investors who place orders by phone, Firstrade charges $19.95 ...'",
+            "hard_blocker": true
+          },
+          {
+            "id": "F7",
+            "quote": "At The Modern Wallet, we show the math, name what moves it, and explain the tradeoff across published brokerage fee schedules.",
+            "problem": "Meta-narration of the page's own method, a tricolon, and a generic tee-up placed as sentence 1 of paragraph 2 instead of the sentence right after the answer in paragraph 1.",
+            "fix": "Delete (teeup-exempt) or replace with one concrete sentence directly after the opener.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F8",
+            "quote": "using IBKR Lite at Interactive Brokers",
+            "problem": "'IBKR' is never defined anywhere on the page; table-row acronyms (NTF, BTC, ETH) also appear before they are defined.",
+            "fix": "Write 'Interactive Brokers (IBKR)' at first use in the intro and spell out the row acronyms at first use.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F9",
+            "quote": "On Interactive Brokers using IBKR Pro fixed pricing, 10 options contracts cost $6.50 (10 multiplied by $0.65). On IBKR Pro tiered pricing at the lowest $0.15 rate, those 10 contracts cost $1.50 (10 multiplied by $0.15).",
+            "problem": "interactivebrokers.com options commissions: the $0.15 per contract tier applies only at 100,001 or more contracts per month; at 10,000 contracts or fewer a contract costs $0.25, $0.50 or $0.65 depending on premium, with a $1.00 minimum per order. A 10-contract order cannot be priced at $0.15.",
+            "fix": "Use the tiered rate that actually applies ($0.25 to $0.65 by premium at low volume), mention the $1.00 minimum, and say $0.15 applies only above 100,000 contracts a month.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F10",
+            "quote": "Interactive Brokers publishes no account minimums and no hidden fees on its pricing overview.",
+            "problem": "The page text says 'no added spreads, ticket charges, platform fees, or account minimums'; 'no hidden fees' is the writer's paraphrase, and the per-order minimums ($1.00 fixed stocks, $0.35 tiered stocks, $1.00 options) are omitted. Same wording sits in the table row.",
+            "fix": "Use the vendor's own wording and add the minimum per order.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F11",
+            "quote": "Webull publishes pass-through regulatory fees and transaction terms, but margin borrowers should examine baseline interest schedules.",
+            "problem": "Raises margin cost as a decision criterion, gives only Fidelity's rate, and never says what Webull charges for margin (dead end; Webull's fee page has a Margin tab that was not read).",
+            "fix": "Add Webull's published margin rate from its Margin tab or remove the criterion.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F12",
+            "quote": "Charles Schwab, Fidelity, Interactive Brokers, Firstrade and tastytrade are five Webull alternatives for stock and options trading.",
+            "problem": "Page rule 'Unified Mindmap alternatives track' calls for a 3-scenario switching cost table plus an explicit break-even counterexample backed by mindmap/evidence/<slug>/evidence.json. No mindmap/ run directory or evidence.json exists for this day, and the page has only one 10-user (or single-volume) worked example per alternative.",
+            "fix": "Add a 3-scenario table (for example 10, 100 and 1,000 contracts a month) and the break-even line, or record the waiver.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-25T16:58:41+00:00"
+      }
     },
     {
       "vendor": "Copilot Money",
@@ -4650,10 +4936,16 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-25T16:41:15+00:00",
+          "status": "held",
+          "note": "official site now Happen Bank (rebrand from LendingClub); product identity ambiguous",
+          "fields": []
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "held",
+      "updatedAt": "2026-11-25T16:41:15+00:00"
     },
     {
       "vendor": "M1 Finance",

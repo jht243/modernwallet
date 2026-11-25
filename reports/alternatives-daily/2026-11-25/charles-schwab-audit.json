@@ -1,0 +1,55 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "For investors opening small options orders of one to five contracts at a time, Schwab's $0.65 per-contract fee is lower than tastytrade's $1 opening fee.",
+   "problem": "Contradicted by the page's own math: Schwab charges $0.65 to close as well (round trip $1.30 per contract, stated in the tastytrade section and the FAQ), while tastytrade closes at $0, so 1 to 5 contracts cost $1 to $5 round trip at tastytrade versus $1.30 to $6.50 at Schwab. Only the opening fee is lower; the 'still the better fit' argument is wrong for small round-trip orders.",
+   "fix": "Delete this sentence or restate it as an opening-fee-only comparison and add that tastytrade is cheaper round trip. Base the section on facts that hold: no account minimums, one flat $0.65 with no cap, 0.75% crypto vs tastytrade 1%.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "However, if that trading volume qualifies for the lower $0.15 rate on IBKR Pro Tiered, the options fee drops to $30 (200 multiplied by $0.15), saving $100 compared to Charles Schwab.",
+   "problem": "interactivebrokers.com shows the $0.15 tier only at 100,001 or more contracts per month; at 10,000 or fewer it is $0.25, $0.50 or $0.65 by premium. A 200-contract month cannot qualify, so the $30 and $100 savings figures are unattainable as framed.",
+   "fix": "Replace with a volume-appropriate example ($0.25 to $0.65 by premium, $1.00 minimum per order) or state the 100,001-contract threshold and drop the $100 savings.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "Start your comparison with the asset classes you trade most often. ... Next, evaluate broker-assisted trading fees ... Third, review margin interest rates ... Fourth, check specialized transaction fees",
+   "problem": "Formatting slop: four parallel checks written as Start/Next/Third/Fourth paragraphs, then repeated again as a four-bullet list.",
+   "fix": "Keep the bullet list and shorten the four paragraphs into list items with the fee facts; drop the ordinals.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F4",
+   "quote": "At The Modern Wallet, we build financial tools and compare published fee schedules so you can evaluate the annual dollar cost of your trading activity.",
+   "problem": "Tee-up is sentence 3, not the sentence after the answer, and is generic boilerplate that could sit on any comparison page.",
+   "fix": "Delete (teeup-exempt) or rewrite as one concrete sentence 2.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F5",
+   "quote": "If you eventually transfer that account to an outside broker, Webull's $75 outgoing transfer fee offsets that options savings ($75 transfer fee minus $65 options fee equals a net cost of $10).",
+   "problem": "Mixes opening-only options cost with a round-trip view used elsewhere; Schwab charges $0.65 on close too, so 100 round-trip contracts cost $130 and the transfer fee would be outweighed. The framing 'Placing 100 equity options trades' also mixes trades and contracts.",
+   "fix": "State the break-even: $75 / $0.65 is about 116 contracts opened (58 round trips) before Schwab's per-contract fees exceed Webull's one-time $75 transfer fee.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F6",
+   "quote": "No account minimums or hidden fees.",
+   "problem": "Table row for Interactive Brokers: vendor wording is 'no added spreads, ticket charges, platform fees, or account minimums'; per-order minimums ($1.00 fixed stock and options, $0.35 tiered stock) are omitted. 'IBKR' is also used in the row before being defined in the choose section.",
+   "fix": "Use the vendor's wording, add the minimum per order and define IBKR at first use.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F7",
+   "quote": "Charles Schwab and all five alternatives provide $0 online commissions for US exchange-listed stocks and ETFs",
+   "problem": "Page rule 'Unified Mindmap alternatives track' calls for a 3-scenario switching cost table plus an explicit break-even counterexample backed by mindmap/evidence/<slug>/evidence.json. No mindmap/ run directory or evidence.json exists for this day, and the page has only one 10-user (or single-volume) worked example per alternative.",
+   "fix": "Add a 3-scenario table and break-even line (the 1 to 5 contract round-trip case is the natural counterexample), or record the waiver.",
+   "hard_blocker": false
+  }
+ ]
+}

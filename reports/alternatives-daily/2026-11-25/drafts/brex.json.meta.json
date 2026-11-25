@@ -1,0 +1,316 @@
+{
+ "slug": "brex",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 3556,
+ "floor": 1500,
+ "input_tokens": 172566,
+ "output_tokens": 6263,
+ "thinking_tokens": 413,
+ "cached_tokens": 170267,
+ "est_cost_usd": 0.0395,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'domestic wires and USD international wire transfers.'; \"Relay's pricing page lists QuickBooks and Xero accounting integrations and does \"; 'Organizations needing complex multi-country approval rules find those capabiliti'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3675,
+  "numbers_not_in_facts": [
+   "250000",
+   "5000000",
+   "840"
+  ],
+  "fact_budget": {
+   "fact_words": 609,
+   "floor": 1500,
+   "ratio": 0.41,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    7,
+    1
+   ],
+   "applied": [
+    {
+     "id": "chooseSection.body",
+     "quote": "Brex is a financial technology company rather than a bank, with its wholly owned parent entity listed as Capital One, N.A.",
+     "replacement": "Brex LLC is listed as a wholly owned subsidiary of Capital One, N.A.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Brex is a financial technology company rather than a bank."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "It is not an FDIC-insured bank; banking services operate through partner banks and sweep networks, providing up to $5M in FDIC insurance protection.",
+     "replacement": "Mercury provides up to $5M in FDIC insurance through partner banks and sweep networks.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Mercury is not an FDIC-insured bank."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Mercury Plus costs $29.90 per month on annual billing, with a 30-day free trial.",
+     "replacement": "Mercury Plus costs $29.90 per month, with a 30-day free trial.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Mercury Plus is on annual billing."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "BILL specializes in financial operations automation, covering accounts payable, accounts receivable and corporate spend management.",
+     "replacement": "BILL specializes in financial operations automation, covering accounts payable and corporate spend management.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention accounts receivable for BILL."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Relay is not a bank; deposit accounts are provided through Thread Bank, Member FDIC, offering up to $3M in FDIC sweep coverage.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention Thread Bank or $3M FDIC coverage for Relay."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Relay notes that additional transaction fees apply.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state additional transaction fees apply for Relay."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "- Businesses with under 50 employees looking strictly for accounts payable check printing and mailing; BILL specializes in AP disbursements with mailed checks priced at $1.99.",
+     "replacement": "- Businesses looking strictly for accounts payable check printing and mailing; BILL specializes in AP disbursements with mailed checks priced at $1.99.",
+     "type": "unsupported",
+     "why": "SOURCE does not state under 50 employees."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Versus Brex, Expensify centers on expense reporting rather than an integrated commercial bank account or corporate credit facility, requiring separate external banking rails.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Brex has a commercial bank account or external banking rail rules."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3753
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 3696
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-25T16:59:37+0000",
+    "findings_file": "reports/alternatives-daily/2026-11-25/brex-findings.txt",
+    "applied": [
+     {
+      "id": "intro",
+      "quote": "$299 per month on Mercury Pro",
+      "replacement": "Plus at $29.90 per month billed annually ($35 per month month-to-month) and Pro at $299 per month billed annually ($350 per month month-to-month)",
+      "type": "F1: Mercury pricing billing qualifier missing",
+      "why": "Mercury Pro is $299/mo billed annually ($350/mo month-to-month)."
+     },
+     {
+      "id": "intro",
+      "quote": "At The Modern Wallet, we lay out published fee structures so teams can compare corporate cards and expense controls across a full year.",
+      "replacement": "Our money guides lay out published pricing and the exact math so teams can compare software costs before committing.",
+      "type": "F4: Generic meta-narration tee-up",
+      "why": "Fails portability test; replace with concrete tee-up drawn from experience guidelines."
+     },
+     {
+      "id": "intro",
+      "quote": "Brex displays variable annualized estimated treasury return figures ranging from 3.63% to 3.98%.",
+      "replacement": "Brex displays variable annualized estimated treasury return figures ranging from 3.63% to 3.98% for customers eligible for the highest balance tier.",
+      "type": "F8: Missing highest-tier qualifier",
+      "why": "Treasury return range is footnoted for the highest balance tier."
+     },
+     {
+      "id": "rows[0].pricing",
+      "quote": "reimbursements and API access. Premium adds multiple customizable expense policies, dynamic review chains, US and international multi-entity management, ERP and HRIS integrations and live budgets.",
+      "replacement": "reimbursements and application programming interface (API) access. Premium adds multiple customizable expense policies, dynamic review chains, US and international multi-entity management, enterprise resource planning (ERP) and human resources information system (HRIS) integrations and live budgets.",
+      "type": "F5: Undefined acronyms on first use",
+      "why": "API, ERP, and HRIS appear without expansion on first use."
+     },
+     {
+      "id": "rows[0].pricing",
+      "quote": "Treasury return figures shown (3.63% to 3.98%) are variable annualized estimates.",
+      "replacement": "Treasury return figures shown (3.63% to 3.98%) are variable annualized estimates for customers eligible for the highest balance tier.",
+      "type": "F8: Missing highest balance tier qualifier",
+      "why": "Fact list notes range is for highest balance tier."
+     },
+     {
+      "id": "rows[1].pricing",
+      "quote": "accounts payable by ACH, card, check and wire, unlimited corporate cards, budgets, reporting and QuickBooks Online and Xero integrations. Plus adds NetSuite and Sage Intacct integrations, multi-entity support and AI expense reviews, with procurement available as an add-on. Lists earning 2% on cash in an FDIC-insured checking account and 4.66% in a Ramp Investment Account (footnoted, variable).",
+      "replacement": "accounts payable (AP) by automated clearing house (ACH), card, check and wire, unlimited corporate cards, budgets, reporting and QuickBooks Online and Xero integrations. Plus adds NetSuite and Sage Intacct integrations, multi-entity support and artificial intelligence (AI) expense reviews, with procurement available as an add-on. Lists earning 2% on cash in a Federal Deposit Insurance Corporation (FDIC)-insured checking account and 4.66% in a Ramp Investment Account (footnoted, variable).",
+      "type": "F5: Undefined acronyms on first use",
+      "why": "ACH, AI, FDIC appear without definition at first use."
+     },
+     {
+      "id": "rows[2].pricing",
+      "quote": "Base plan $0 per month; Plus $29.90 per month; Pro $299 per month.",
+      "replacement": "Base plan $0 per month; Plus $29.90 per month billed annually ($35 per month month-to-month); Pro $299 per month billed annually ($350 per month month-to-month).",
+      "type": "F1: Missing billing cadence qualification",
+      "why": "$29.90 and $299 are annual billing rates; monthly rates are $35 and $350."
+     },
+     {
+      "id": "rows[4].pricing",
+      "quote": "Essentials syncs with accounting software by CSV import and export; higher tiers integrate automatically.",
+      "replacement": "Essentials syncs with accounting software by comma-separated values (CSV) import and export; higher tiers integrate automatically.",
+      "type": "F5: Undefined acronym on first use",
+      "why": "CSV appears without definition."
+     },
+     {
+      "id": "rows[5].pricing",
+      "quote": "Scale $120 per month shown with $90 displayed beside it",
+      "replacement": "Scale $120 per month, shown at a limited-time $90 per month",
+      "type": "F6: Clarify limited-time discount",
+      "why": "Relay page marks $90 as limited-time discount on the $120 list price."
+     },
+     {
+      "id": "rows[5].pricing",
+      "quote": "1.19% APY on savings footnoted",
+      "replacement": "1.19% annual percentage yield (APY) on savings footnoted",
+      "type": "F5: Undefined acronym on first use",
+      "why": "APY appears without definition."
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "First, assess the billing unit. Brex charges on a per-user, per-month schedule on Premium ($12 per user per month). For a team with 10 employees, Brex Premium costs $12 multiplied by 10 users multiplied by 12 months, which equals $1,440 per year. Brex Essentials costs $0. In comparison, Ramp offers a Free plan at $0 per user per month and a Plus tier at $15 per user per month plus an unpublished platform fee based on team size, with an advertised 20% savings on annual billing. Expensify Collect charges $5 per member per month, which equals $600 per year for 10 users ($5 multiplied by 10 multiplied by 12). BILL charges $49 per user per month on Essentials ($5,880 per year for 10 users), $65 per user per month on Team ($7,800 per year), and $89 per user per month on Corporate ($10,680 per year), while stating no per-user subscription fees for BILL Spend & Expense. Mercury and Relay charge flat monthly platform rates regardless of user headcount, with Mercury base at $0 per month and Relay Starter at $0 per month with unlimited user seats.\n\nSecond, evaluate banking and cash management structures. Brex LLC is listed as a wholly owned subsidiary of Capital One, N.A. Brex displays estimated annualized treasury returns between 3.63% and 3.98%. If your team requires a business checking account directly attached to card issuance, Mercury provides up to $5M in Federal Deposit Insurance Corporation (FDIC) coverage through partner banks and sweep networks, free Automated Clearing House (ACH) transfers, free domestic and United States Dollar (USD) international wires, and treasury access starting at a $250,000 balance. Ramp lists earning 2% on cash held in an FDIC-insured checking account and 4.66% in a Ramp Investment Account under variable footnoted terms. Relay offers checking accounts with tiered savings yields: 1.19% Annual Percentage Yield (APY) on Starter, 1.87% APY on Grow ($30 per month), and 3.21% APY on Scale ($120 per month shown alongside $90).\n\nThird, examine multi-entity and accounting system requirements. Brex Essentials supports up to two business entities, while Brex Premium expands to multi-entity management across domestic and international operations. Ramp Free provides standard accounting sync with QuickBooks Online and Xero, while NetSuite and Sage Intacct integrations require Ramp Plus alongside multi-entity support. Expensify supports QuickBooks and Xero on Collect ($5 per member per month) and reserves NetSuite and Sage Intacct for Control. BILL Essentials syncs through comma-separated values (CSV) file imports and exports, requiring Team or Corporate for automatic accounting sync.",
+      "replacement": "Consider three structural checkpoints: - Billing unit: Brex charges per user on Premium ($12 per user per month, or $1,440 per year for 10 users; Essentials is $0). Ramp offers Free at $0 and Plus at $15 per user per month plus a team-size platform fee, Expensify Collect charges $5 per member per month ($600 per year for 10 users), and BILL charges $49 to $89 per user per month on core plans ($5,880 to $10,680 per year for 10 users) with $0 on BILL Spend & Expense, while Mercury and Relay charge flat platform fees regardless of headcount. - Banking and cash management: Mercury offers checking with sweep insurance up to $5M, free ACH and wires, and treasury at $250,000; Ramp offers a checking account earning 2% and 4.66% on investments; Relay provides checking with savings yields from 1.19% to 3.21% APY; Brex Checking is provided via Column N.A. with treasury returns between 3.63% and 3.98% for eligible tiers. - Multi-entity and accounting requirements: Brex Essentials supports two entities and Premium covers international multi-entity. Ramp Free and Expensify Collect sync with QuickBooks and Xero, requiring upgraded tiers for NetSuite and Sage Intacct, while BILL Essentials uses CSV export/import.",
+      "type": "F3: First/Second/Third parallel paragraph slop",
+      "why": "Eliminate ordinals and format checks cleanly as criteria."
+     },
+     {
+      "id": "alternatives[1].body",
+      "quote": "Mercury Plus costs $29.90 per month, with a 30-day free trial.",
+      "replacement": "Mercury Plus costs $29.90 per month on annual billing ($35 per month month-to-month), with a 30-day free trial.",
+      "type": "F1: Missing billing cadence qualification",
+      "why": "$29.90 is billed annually; month-to-month is $35."
+     },
+     {
+      "id": "alternatives[1].body",
+      "quote": "Mercury Pro costs $299 per month, which reduces ACH debit invoice fees to $0 and assigns a dedicated relationship manager.",
+      "replacement": "Mercury Pro costs $299 per month on annual billing ($350 per month month-to-month), which reduces ACH debit invoice fees to $0 and assigns a dedicated relationship manager.",
+      "type": "F1: Missing billing cadence qualification",
+      "why": "$299 is billed annually; month-to-month is $350."
+     },
+     {
+      "id": "alternatives[1].body",
+      "quote": "charging $29.90 or $299 per month for advanced invoicing tiers",
+      "replacement": "charging $29.90 or $299 per month on annual billing for advanced invoicing tiers",
+      "type": "F1: Missing annual qualification on Mercury tiers",
+      "why": "Prices reflect annual billing rate."
+     },
+     {
+      "id": "alternatives[4].body",
+      "quote": "Relay Scale displays a regular rate of $120 per month shown alongside a $90 per month figure, providing 50 checking accounts, 3.21% APY on savings, 1.5% cash back, and fee-free same-day ACH transfers.",
+      "replacement": "Relay Scale lists at $120 per month, shown at a limited-time discount of $90 per month, providing 50 checking accounts, 3.21% APY on savings, 1.5% cash back, and fee-free same-day ACH transfers.",
+      "type": "F6: Clarify list price and limited-time discount",
+      "why": "$90 is a limited-time discount on the $120 list price."
+     },
+     {
+      "id": "alternatives[4].body",
+      "quote": "Relay Scale at the displayed $90 figure costs $1,080 per year ($90 multiplied by 12), or $1,440 per year at the $120 figure ($120 multiplied by 12).",
+      "replacement": "Relay Scale costs $1,440 per year at its $120 list price ($120 multiplied by 12), or $1,080 per year at the limited-time $90 rate ($90 multiplied by 12).",
+      "type": "F6: Present list price first before discount",
+      "why": "Audit requires list price first ($1,440) and $1,080 marked as discounted."
+     },
+     {
+      "id": "alternatives[4].body",
+      "quote": "Versus Brex, Relay does not offer an international multi-entity expense platform or custom ERP integrations like NetSuite, focusing instead on domestic business banking and sub-account management.",
+      "replacement": "Relay's pricing page lists QuickBooks and Xero accounting integrations and does not list NetSuite, HRIS integrations or per-user expense-policy tiers like Brex Premium.",
+      "type": "F2: Unsupported claim on Relay domestic focus and ERP",
+      "why": "Relay offers international wires; stick to what pricing page states."
+     },
+     {
+      "id": "stillBetterFit.body",
+      "quote": "BILL specializes in AP disbursements with mailed checks priced at $1.99.",
+      "replacement": "BILL specializes in accounts payable (AP) disbursements with mailed checks priced at $1.99.",
+      "type": "F5: Undefined acronym AP",
+      "why": "AP is not defined in this section or earlier."
+     },
+     {
+      "id": "faqs[3].answer",
+      "quote": "Mercury and Relay provide business deposit accounts.",
+      "replacement": "Mercury and Relay are bank-style business accounts built around checking; Ramp also lists an FDIC-insured checking account paying 2% on cash.",
+      "type": "F7: Incomplete banking account comparison",
+      "why": "Ramp also lists checking with 2% interest."
+     }
+    ],
+    "not_fixable_in_place": [
+     {
+      "id": "rows[3].pricing",
+      "quote": "Control adds multiple approval flows, ERP sync (NetSuite, Sage Intacct), SAML SSO and budgets.",
+      "finding": "F5: Undefined acronyms on first use",
+      "why": "SAML and SSO appear without expansion.",
+      "replacement": "Control adds multiple approval flows, ERP sync (NetSuite, Sage Intacct), Security Assertion Markup Language (SAML) single sign-on (SSO) and budgets.",
+      "reason": "replacement adds ['Security', 'Assertion', 'Markup'] not in SOURCE"
+     },
+     {
+      "id": "alternatives[1].body",
+      "quote": "Mercury Plus costs $29.90 multiplied by 12, which equals $358.80 per year. Mercury Pro costs $299 multiplied by 12, which equals $3,588 per year.",
+      "finding": "F1: Annual figures need annual billing label",
+      "why": "Clarify annual billing totals versus month-to-month.",
+      "replacement": "On annual billing, Mercury Plus costs $29.90 multiplied by 12, which equals $358.80 per year ($420 if billed month-to-month). On annual billing, Mercury Pro costs $299 multiplied by 12, which equals $3,588 per year ($4,200 if billed month-to-month).",
+      "reason": "replacement adds ['420', '4,200'] not in SOURCE"
+     }
+    ],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      3
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "alternatives[1].body",
+       "quote": "domestic wires and USD international wire transfers.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "alternatives[4].body",
+       "quote": "Relay's pricing page lists QuickBooks and Xero accounting integrations and does not list NetSuite, HRIS integrations or per-user expense-policy tiers like Brex Premium.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "stillBetterFit.body",
+       "quote": "Organizations needing complex multi-country approval rules find those capabilities directly inside Brex Premium without stitching separate card and expense systems together.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 3556,
+    "flags": [
+     "claim check: 3 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'domestic wires and USD international wire transfers.'; \"Relay's pricing page lists QuickBooks and Xero accounting integrations and does \"; 'Organizations needing complex multi-country approval rules find those capabiliti'"
+    ]
+   }
+  ]
+ },
+ "seconds": 168.1,
+ "response_id": "6g8Ha_7cNYujo_UP7Z-diQE",
+ "generated_at": "2026-11-25T16:45:04+0000"
+}

@@ -1,0 +1,36 @@
+{
+ "slug": "charles-schwab",
+ "checked": "2026-11-25",
+ "sources": [
+  {
+   "vendor": "Charles Schwab (subject)",
+   "url": "https://schwab.com/pricing",
+   "facts": "- $0 online equity trade commissions; $0 online base commission plus $0.65 per options contract; no account or trade minimums.\n- Broker-assisted trades add a $25 service charge. Crypto: 0.75% of trade value per buy or sell (minimum $0.01)."
+  },
+  {
+   "vendor": "Fidelity",
+   "url": "https://fidelity.com/trading/commissions-margin-rates",
+   "facts": "- $0 commissions for online US stock, ETF and option trades; option contract fees apply. Margin base rate 10.825% effective since September 18, 2026, lower by balance tier (for example $250,000 to $499,999 shows 10.325%)."
+  },
+  {
+   "vendor": "Interactive Brokers",
+   "url": "https://interactivebrokers.com",
+   "facts": "- IBKR Lite: $0 commissions on US stocks and ETFs for US residents. IBKR Pro stocks and ETFs: tiered $0.0005 to $0.0035 per share or fixed $0.005 per share. IBKR Pro options: tiered $0.15 to $0.65 per contract or fixed $0.65 per contract. No account minimums or hidden fees per the page."
+  },
+  {
+   "vendor": "Webull",
+   "url": "https://webull.com/pricing",
+   "facts": "- $0 commissions for US-listed stocks, ETFs and options; no deposit minimums. $0.50 per contract fee on certain index options. Pass-through regulatory fees apply (for example the SEC fee of $0.0000206 times trade volume). $75 per outgoing stock transfer."
+  },
+  {
+   "vendor": "Firstrade",
+   "url": "https://firstrade.com/content/en-us/pricing",
+   "facts": "- $0 commission for stocks, ETFs and options; $0 options contract fee; mutual funds free to trade (load, no-load and NTF funds). Broker-assisted orders: $19.95 for stocks and ETFs; options $19.95 plus $0.50 per contract."
+  },
+  {
+   "vendor": "tastytrade",
+   "url": "https://tastytrade.com/pricing",
+   "facts": "- Stocks and ETFs $0 to open and close; fractional shares $0. Stock and ETF options $1 per contract to open (capped at $10 per leg), $0 to close. Broad-based index options $1 per contract to open, $0 to close. Cryptocurrency 1% per purchase to open and close (0.75% for BTC and ETH). Page says no subscriptions."
+  }
+ ]
+}
