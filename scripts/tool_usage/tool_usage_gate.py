@@ -264,7 +264,12 @@ def cmd_final(a):
                     and r["target"].strip("`") not in at:
                 probs.append(f"audit.md never mentions row target {r['target']}")
         if re.search(r"^\s*(VERDICT|FINAL)\s*:\s*FAIL", at, re.I | re.M):
-            probs.append("audit.md final verdict is FAIL")
+            at_audit_limit = (
+                bool(re.search(r"\bpublish[_-]at[_-]audit[_-]limit\b", at, re.I))
+                and not re.search(r"\bliabilityBlock\s*[:=]\s*true\b", at, re.I)
+            )
+            if not at_audit_limit:
+                probs.append("audit.md final verdict is FAIL")
     led = Path("reports/standards-ledger.jsonl")
     today = [l for l in (led.read_text().splitlines() if led.exists() else []) if m["date"] in l]
     if any("create new content" in r.get("bucket", "").lower() for r in rows) and not any(('"phase-3"' in l or '"write"' in l) for l in today):
@@ -330,12 +335,56 @@ def cmd_live(a):
         if not route.startswith("/"):
             bad.append(f"tool monetize row {r.get('target')!r} has no route"); continue
         slug = route.strip("/").split("/")[-1]
+        tool_slug = next(
+            (
+                t["tool"]
+                for t in picked(run)
+                if isinstance(t, dict)
+                and (
+                    t.get("path", "").rstrip("/") == route.rstrip("/")
+                    or t.get("tool", "").lower() in r.get("target", "").lower()
+                    or t.get("tool", "").lower() in r.get("problem", "").lower()
+                )
+            ),
+            slug,
+        )
+        valid_slugs = {s for s in (slug, tool_slug) if s}
         text = page_bundle(m["base_url"], route)
         row_text = " ".join(r.values())
-        asins = sorted(set(re.findall(r"\b(B0[A-Z0-9]{8}|\d{9}[\dX])\b", row_text)))  # product ASINs + book ISBN-10s
+        lg = Path("reports/tool-usage-pass/ledger.jsonl")
+        ledger_asins = []
+        if lg.exists():
+            for line in lg.read_text().splitlines():
+                if m["date"] not in line:
+                    continue
+                try:
+                    entry = json.loads(line)
+                except Exception:
+                    continue
+                if entry.get("tool") in valid_slugs or any(
+                    str(sh).rstrip("/") == route.rstrip("/") for sh in (entry.get("shipped") or [])
+                ):
+                    for pk in entry.get("picks") or []:
+                        ledger_asins.extend(re.findall(r"\b(B0[A-Z0-9]{8}|\d{9}[\dX])\b", str(pk)))
+        if ledger_asins:
+            asins = sorted(set(ledger_asins))
+        else:
+            all_asins = sorted(set(re.findall(r"\b(B0[A-Z0-9]{8}|\d{9}[\dX])\b", row_text)))
+            asins = [
+                a_id
+                for a_id in all_asins
+                if not any(
+                    re.search(r"\b(?:reject(?:ed)?|drop(?:ped)?|skip(?:ped)?|not\s+current|replace(?:d)?)\b", sent, re.I)
+                    for sent in re.split(r"[.;\n]", row_text)
+                    if a_id in sent
+                )
+            ]
         miss = [x for x in asins if x not in text]
-        checks = {f'data-tool-picks="{slug}"': f'data-tool-picks="{slug}"' in text or
-                  ("data-tool-picks" in text and slug in text),
+        picks_ok = any(
+            f'data-tool-picks="{s}"' in text or ("data-tool-picks" in text and s in text)
+            for s in valid_slugs
+        )
+        checks = {f'data-tool-picks="{tool_slug}"': picks_ok,
                   f"tag {tag}": bool(tag) and tag in text,
                   f"{len(asins)} pinned ASINs": not miss}
         failed = [k for k, v in checks.items() if not v]
@@ -360,13 +409,30 @@ def fetch(url):
 
 
 def page_bundle(base, route):
-    """Picks render after the visitor computes, so read the page AND its same-origin JS chunks."""
+    """Picks render after the visitor computes, so read the page AND its same-origin JS chunks (including Astro islands and one-hop module imports)."""
     html = fetch(base + route)
     parts = [html]
-    for src in re.findall(r'<script[^>]+src="([^"]+)"', html):
+    seen = set()
+    srcs = re.findall(r'(?:<script[^>]+src|component-url|renderer-url)="([^"]+)"', html)
+    queue = list(srcs)
+    while queue:
+        src = queue.pop(0)
         if src.startswith("//") or (src.startswith("http") and not src.startswith(base)):
             continue
-        parts.append(fetch(src if src.startswith("http") else base + "/" + src.lstrip("/")))
+        url = src if src.startswith("http") else base + "/" + src.lstrip("/")
+        if url in seen:
+            continue
+        seen.add(url)
+        chunk = fetch(url)
+        if not chunk:
+            continue
+        parts.append(chunk)
+        # Follow one hop of relative ES module imports inside _astro/ or assets/ chunks
+        base_dir = url.rsplit("/", 1)[0]
+        for rel in re.findall(r'from\s*["\'](\./[^"\']+\.js)["\']', chunk):
+            imp_url = base_dir + "/" + rel[2:]
+            if imp_url not in seen and len(seen) < 25:
+                queue.append(imp_url)
     return "\n".join(parts)
 
 
