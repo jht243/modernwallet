@@ -1,0 +1,5 @@
+URL: https://ag.ny.gov/press-release/2026/attorney-general-james-sues-stop-trump-administration-pushing-thousands-us
+RETRIEVED_UTC: 2026-11-25T16:52:07Z
+NOTE: WebFetch model extraction (page text not reproducible verbatim by the tool); figures below are what the fetch returned.
+
+NY AG release (suit dated 2026-11-23): led by NY AG James, 21 other AGs + PA governor (AZ, CA, CO, CT, DE, HI, IL, ME, MD, MA, MI, MN, NJ, NM, OR, RI, VA, VT, WA, WI, DC listed); D. Mass.; claims HUD exceeds authority (1997 law allows prorating) and violates APA; seeks declaration, vacatur, injunction for plaintiff states. HUD estimates cited: ~20,000 mixed-status families, 78,100 people lose assistance, ~55,000 fully eligible mostly children. Count "22-state" per bullet: 21 listed states+DC=22 AG offices plus PA governor; WRITE must recount from the release. Also a separate C.D. Cal. suit by LA nonprofits (secondary report). No injunction status verified.

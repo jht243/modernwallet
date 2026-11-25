@@ -1,0 +1,234 @@
+{
+ "slug": "conforming-loan-limit-2027",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2262,
+ "floor": 1300,
+ "input_tokens": 30200,
+ "output_tokens": 4956,
+ "thinking_tokens": 2153,
+ "cached_tokens": 17690,
+ "est_cost_usd": 0.0374,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['The 2027 Conforming Loan Limit', 'Purchase Price Before a Loan Becomes Jumbo', 'Understanding Down Payment Math and Equity Impact', 'Find Your County Limit', 'Does Waiting until January Help?'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced",
+   "claim check: 1 claim(s) still unsupported after 2 pass(es) \u2014 auditor must cut or source: 'Because secondary market backing from government-sponsored enterprises is unavai'"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 2262,
+  "numbers_not_in_facts": [
+   "10000",
+   "1000000",
+   "150000",
+   "850000",
+   "865400"
+  ],
+  "fact_budget": {
+   "fact_words": 620,
+   "floor": 1300,
+   "ratio": 0.48,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    19,
+    2
+   ],
+   "applied": [
+    {
+     "id": "sections[2].body",
+     "quote": "Even if a loan balance falls within official federal conforming limits, a lender might require different reserve minimums or credit qualifications based on the borrower's debt-to-income profile. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention reserve minimums, credit qualifications, or debt-to-income profiles."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "These documents list every county and county equivalent by state along with one-unit, two-unit, three-unit, and four-unit property caps.",
+     "replacement": "These documents list every county and county equivalent by state.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention two-unit, three-unit, or four-unit property caps."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "In high-cost metropolitan markets such as the greater New York, San Francisco, Los Angeles, and Washington D.C. areas, county limits frequently sit at the maximum ceiling of $1,283,100.",
+     "replacement": "In high-cost areas, county limits reach the maximum ceiling of $1,283,100.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention New York, San Francisco, Los Angeles, or Washington D.C."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Some lenders permit borrowers to lock loans using the new conforming limits during late November or December, holding the loans on internal warehouse lines until January delivery. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE forbids asserting delivery rules, warehouse lines, or November/December locking."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Other lenders strictly enforce the prior year's limits on all notes executed before the first business day of the new calendar year. ",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "SOURCE forbids asserting closing date rules or December versus January enforcement."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Depending on investor appetite, credit market liquidity, and deposit acquisition strategies, jumbo interest rates may be comparable to, higher than, or occasionally lower than conforming rates. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention investor appetite, market liquidity, or rate comparisons."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Lenders frequently evaluate post-closing liquid asset reserves, requiring borrowers to hold several months of total mortgage payments in verified savings or retirement accounts after closing. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE lists no jumbo qualification rules, reserve mandates, or post-closing accounts."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "Maximum debt-to-income limits and minimum credit score requirements may also be stricter. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE lists no jumbo debt-to-income limits or credit score requirements."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "While single-family houses and one-unit condominium dwellings account for the majority of residential purchases, conforming loan limits also cover residential properties containing two, three, or four dwelling units. ",
+     "replacement": "The conforming loan limits modeled here apply to one-unit properties.",
+     "type": "unsupported",
+     "why": "SOURCE does not state conforming loan limits cover two, three, or four units."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Statutory formulas set separate, progressively higher borrowing limits for multi-unit properties to account for the larger purchase prices typical of multi-family real estate. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention statutory formulas or higher limits for multi-unit properties."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Homebuyers purchasing a duplex, triplex, or fourplex should verify the applicable multi-unit limit for their specific property type.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention duplexes, triplexes, or fourplexes."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "For multi-unit properties in baseline counties, the conforming limits scale upward from the one-unit figure of $855,400 based on standard federal multiples. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention multi-unit limits scaling from standard federal multiples."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "High-cost counties apply corresponding adjustments up to their respective statutory multi-unit ceilings. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention adjustments up to statutory multi-unit ceilings."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "In Alaska, Hawaii, Guam, and the U.S. Virgin Islands, multi-unit limits expand even further under special regional statutory multipliers.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention multi-unit regional statutory multipliers."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Evaluating multi-unit purchases requires reviewing both the property's unit count and local county limits simultaneously. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not discuss evaluating multi-unit property purchases."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "A duplex transaction that appears to exceed the one-unit baseline of $855,400 might easily qualify as a conforming mortgage under two-unit statutory thresholds. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention duplexes or two-unit statutory thresholds."
+    },
+    {
+     "id": "sections[6].body",
+     "quote": "Check the full FHFA county limit schedules to inspect the exact dollar figures established for multi-family residential structures in your local market.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state FHFA schedules establish multi-family residential limits."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": "Because lenders set their own independent pricing for non-conforming portfolio loans based on market liquidity, investor demand, and credit conditions, jumbo rates can be comparable to, higher than, or lower than conforming rates.",
+     "replacement": "Lenders set their own terms for loans above the limit, so you should ask each lender directly for its jumbo requirements.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention market liquidity, investor demand, or rate comparisons."
+    },
+    {
+     "id": "introText",
+     "quote": "At The Modern Wallet, we examine annual lending cap changes and evaluate mortgage thresholds so homebuyers can make informed borrowing choices.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not support evaluating annual lending cap changes."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [
+    {
+     "quote": "Because secondary market backing from government-sponsored enterprises is unavailable, private mortgage investors and lenders absorb the portfolio risk directly or package the loans into private-label residential mortgage-backed securities. ",
+     "type": "unsupported",
+     "why": "SOURCE does not mention private investors, portfolio risk, or private-label securities.",
+     "replacement": "",
+     "id": "sections[5].body",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    },
+    {
+     "quote": "Because secondary market backing from government-sponsored enterprises is unavailable, private mortgage investors and lenders absorb the portfolio risk directly or package the loans into private-label residential mortgage-backed securities.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention private mortgage investors, absorbing portfolio risk, or private-label securities.",
+     "replacement": "",
+     "id": "sections[5].body",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "sections[5].body",
+     "quote": "Because secondary market backing from government-sponsored enterprises is unavailable, private mortgage investors and lenders absorb the portfolio risk directly or package the loans into private-label residential mortgage-backed securities.",
+     "type": "unsupported",
+     "reason": "title/heading/metadata: never deleted, needs a reworded replacement"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2632
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 11069
+  }
+ },
+ "seconds": 275.7,
+ "response_id": "hRUHa6P3I_Gg5NoP6oyugQo",
+ "generated_at": "2026-11-25T17:10:49+0000"
+}

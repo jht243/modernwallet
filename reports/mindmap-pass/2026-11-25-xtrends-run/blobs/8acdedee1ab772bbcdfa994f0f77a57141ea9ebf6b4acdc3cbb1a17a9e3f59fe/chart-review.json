@@ -1,0 +1,127 @@
+{
+  "jobId": "xtrends-2026-11-25",
+  "reviewer": "mindmap-chart-reviewer",
+  "round": 1,
+  "manifestSha256": "4c82a554b8adc0a6df75a4b71a82f2b968ef00167aa34daaf3963e8ae2f6721c",
+  "manifestFileSha256": "6c14985eb561e414f7f73570656803a94abbd5fbb57e23f4fa3d9e3a43d6d61a",
+  "readinessSha256": "90630d81d34456bf4e161c4029fefee476b841be78a162e54288dfed5add260f",
+  "verdict": "PASS",
+  "evidence": "Independent review (own preflight bundle preflight-chart-review, 33 parts delivered, check delivery-complete-sources-current). Read all 9 saved sources, coverage-lookup, link-inspections, readiness, manifest actions/briefs and scout brief from disk; spot-checked live via WebFetch: FHFA release (baseline $855,400 +$22,650, 2.72%, ceiling $1,283,100, AK/HI/Guam/USVI $1,283,100/$1,924,650, all but 24 counties; limits apply to loans the Enterprises 'can acquire in 2027', no delivery-date rule) CONFIRMED; NY AG release ('coalition of 21 other attorneys general and the governor of Pennsylvania', D. Mass.) CONFIRMED but shows the manifest's '22-state suit' is wrong (NY + 20 states + DC = 22 AG offices, plus PA governor = 21 states + DC). SEC 424B4 index: main prospectus is anthropicpbc-424b4.htm (14 MB, not 94 MB), exceeds WebFetch 10 MB limit and SEC returned 403 to direct fetch, so lockup terms remain unread. Dispositions: A1 enrich existing /guides/how-to-buy-anthropic-stock/ (exact slug, src/data/guides.ts:2041, introText/cardBlurb/sections/FAQs say cannot buy today, confirmed stale) CORRECT, not a thin duplicate; A2 one-sentence fix at guides.ts:12857 ('nothing trades yet') CONFIRMED; A3, A4, A5 new pages: coverage lookup shows no same-intent page (CONFIRMED against repo grep: no conforming/work-requirement/HUD-mixed-status page). Bullet 3 Medicare DROP correct: CMS page lists no drug names/prices, cycle selected 15 not 13, $9.2B unsupported; re-queue honest. Maryland/New Hampshire exclusion correct (no primary source). Review profile HIGH correct for investment, Medicaid coverage, mortgage and housing-legal claims; no professionalReviewRequired and no direct physical-harm/dosing claim identified; no TESTED presentation (section G excludes financial/medical/legal); evidence labels reported/calculated; A4 table arithmetic reproduced (881,856 / 900,421 / 950,444 / 1,006,353 / 1,069,250). A5 date arithmetic (Dec 14 + 90 days = Mar 14, 2027) and A3 $580 = 7.25 x 80 reproduced. Keyword/SERP: none run, fresh-trend rule, labelled honestly, reader_question tags verb-only. Lens 3 N/A, no modelLaunch. All 5 candidates accounted for. FAIL because (a) the committed A5 answer/question text asserts an unsupported '22-state suit'; (b) REQ-1 acceptance requires lockup terms from the 424B4 which cannot be read with available tools; (c) all primary sources are WebFetch model extractions, not verbatim page text, and the Medicaid SMDL body (notification deadline, hold-harmless conditions) is unread; (d) link inspections only show slug lines, not the named target sections; (e) inherited stale text exists on other routes. None is a legal/physical-harm blocker or a duplicate; per the unattended rule these carry as reviewer guardrails into WRITE and AUDIT without a BUILD round 2.",
+  "findings": [
+    {
+      "id": "CR1-A5-STATE-COUNT",
+      "severity": "substantive",
+      "status": "open",
+      "category": "source-accuracy",
+      "target": "A5 answer + reader question + brief takeaway",
+      "finding": "Manifest A5 answer says 'a 22-state suit is pending' (from the scout bullet). NY AG release says NY led 21 other AGs plus the governor of Pennsylvania; the 21 others are 20 states plus DC, so the plaintiffs are 21 states plus DC plus PA's governor (22 AG offices).",
+      "fix": "WRITE must not print '22-state'. Use 'New York and 20 other states plus DC, joined by Pennsylvania's governor' (or 'a coalition of 22 attorneys general'), recounted from the NY AG release and the complaint/Federal Register text. Frame the suit as pending: no injunction or vacatur verified, so the rule is not blocked unless a court order exists at publication; recheck docket status before writing."
+    },
+    {
+      "id": "CR1-A1-LOCKUP",
+      "severity": "substantive",
+      "status": "open",
+      "category": "source-gap",
+      "target": "A1, REQ-1 acceptance",
+      "finding": "Lockup terms from the 424B4 were not read. The 424B4 main document (anthropicpbc-424b4.htm, 14 MB) exceeds WebFetch's 10 MB cap and SEC returns 403 to a contact-less client; the existing page's 180/365-day figures come from the S-1.",
+      "fix": "WRITE: if the 424B4 lockup section cannot be read in this run, attribute the 180-day and 365-day lockups explicitly to the S-1 ('the S-1 described...; the final prospectus controls, read its lock-up section') and do not state exact expiry dates or a calendar of unlock dates. Do not claim REQ-1's '424B4 lockup terms' as satisfied; record the limit in the A1 evidence packet. If a reader tool for the 424B4 is available, read the 'Shares Eligible for Future Sale' section and cite the page."
+    },
+    {
+      "id": "CR1-A1-CLOSE-PRICE",
+      "severity": "substantive",
+      "status": "open",
+      "category": "source-accuracy",
+      "target": "A1, A2",
+      "finding": "Only CNBC (fetched, extraction) says ANT fell 6.5% Tuesday and closed below $83; no dollar close, no 7.3% premarket figure (x.com 402). Nov 19 close $97.17 is secondary web search only.",
+      "fix": "Write 'closed below the $83 IPO price on Nov 24, according to CNBC'. Do not print a dollar close, a percent drop figure beyond CNBC's 6.5%, or the Nov 19 $97.17 close. Open-price buyers at $111.50 are down more than 25% at any price at or below $83 (calculated: 83/111.50 - 1 = -25.6%); label as arithmetic, not a measured close. Give analyst targets only as CNBC-attributed. Because the price moves daily, date-stamp every price statement and avoid present-tense 'is trading at'. Do not give a sell/hold/buy instruction; conditional framing by holder type and horizon, with a not-personalized-advice limit."
+    },
+    {
+      "id": "CR1-A3-SMDL",
+      "severity": "substantive",
+      "status": "open",
+      "category": "source-gap",
+      "target": "A3",
+      "finding": "SMDL smd26006 PDF body was never read (tool could not extract it). The Dec 11 election-notice deadline comes only from KFF (secondary); the 43 states + DC scope, the 30-day notice window and exemption list come from an extracted CMS fact sheet, and the Oct 2026 court ruling (OHA) partly struck IFR provisions.",
+      "fix": "WRITE/AUDIT: read the SMDL text before stating conditions, or state only what the medicaid.gov page and OHA release support (states electing may suspend denials and disenrollments; period ends 2027-06-30; members still must verify). Do not state the Dec 11 deadline unless the SMDL confirms it; do not call any state besides Oregon opted in; describe the 30-day notice as the CMS interim rule's procedure subject to state implementation and the court ruling; give 'check your state Medicaid agency' as the route for state status. Keep section 1 conditional (opted-in vs not, exempt vs not). Do not say coverage is safe, say it cannot be denied or terminated for non-compliance in an electing state through June 30, 2027."
+    },
+    {
+      "id": "CR1-A4-DELIVERY",
+      "severity": "substantive",
+      "status": "open",
+      "category": "source-accuracy",
+      "target": "A4",
+      "finding": "The scout says the limit applies to loans 'delivered to Fannie Mae on/after Jan 1, 2027'; FHFA only says limits apply to mortgages the Enterprises 'can acquire in 2027'. No delivery-date rule is verified.",
+      "fix": "Page must not assert a delivery-date rule or that closing in December vs January decides which limit applies. State FHFA's wording (limits for mortgages the Enterprises can acquire in 2027), say a lender decides which year's limit a given loan falls under, and answer 'does waiting until January help' conditionally: only for a loan between $832,750 and $855,400 (or the equivalent county band) and only if the lender confirms. Table is calculated: label 'In our internal calculation' with formula limit / (1 - down payment share), floor of the county-limit case, and note it ignores financed fees such as FHA-type premiums and that a lender may set its own jumbo thresholds. No invented jumbo rate premium."
+    },
+    {
+      "id": "CR1-INHERITED-TEXT",
+      "severity": "substantive",
+      "status": "open",
+      "category": "rendered-consistency",
+      "target": "/compare/aca-vs-medicaid/, src/data/roundups.ts:1901, src/data/spokes-mortgage.ts:422, src/data/comparisons.ts:8378-8431",
+      "finding": "/compare/aca-vs-medicaid/ section 'Rules to Check for 2027 Coverage' (benefits-comparisons.ts:192) says a work requirement applies 'in some states' (adults in states that provide Medicaid based on income alone) and says nothing of the hold-harmless option; the new A3 page will add an inbound link there. Separately, other routes state older conforming limits ('currently $806,500', 2025 figures; spokes-mortgage.ts:422 mentions jumbo limits) that A4 will contradict. Per the 2026-11-04 aca-snap chart these inherited Medicaid statements were previously a reason not to link.",
+      "fix": "Link-only edit on /compare/aca-vs-medicaid/ is acceptable only if the rendered page, after the link, does not contradict A3 (reader would read 'may need to meet' next to an A3 saying hold-harmless states may pause); AUDIT must read the rendered section and either add one reconciling clause (preserving unrelated content) or drop that inbound link and use another. For stale conforming-limit statements: roundups.ts:1901 'currently $806,500' is a dated claim contradicted by A4; correct it with a one-sentence targeted edit citing the 2027 limit, or add a link to A4, and AUDIT must check the rendered routes touched. The 2025-labelled comparison rows are dated and may stay."
+    },
+    {
+      "id": "CR1-LINK-INSPECTION",
+      "severity": "substantive",
+      "status": "open",
+      "category": "link-plan",
+      "target": "all inbound/outbound placements",
+      "finding": "research/link-inspections.txt lists slug line numbers only; it does not show that the named sections exist on the source pages (e.g. 'Medicaid eligibility note' on /budget/aca-subsidy-calculator/, 'conforming and jumbo loans' on types-of-mortgage-loans, 'renting side' on /compare/renting-vs-buying/). Route existence was confirmed from src/data (guides.ts, benefits-spokes.ts, comparisons.ts, calculators.ts).",
+      "fix": "Before Phase 6, open each source record and pick the real section for each anchor; where the named section does not exist, place the link in the closest relevant section (not the homepage nav) and record it. Keep link-only edits free of updatedDate bumps. Target is 2 inbound for A3/A5 and 3 for A4; fewer strong placements are acceptable over forced ones."
+    },
+    {
+      "id": "CR1-SOURCE-FORM",
+      "severity": "substantive",
+      "status": "open",
+      "category": "evidence-form",
+      "target": "research/sources/*.txt",
+      "finding": "Every saved source file is a WebFetch model extraction (stated in each file) of 0.7-1.2 KB, not verbatim page text as the runbook requires. The core figures I re-fetched match (FHFA, NY AG), but HUD final-rule text, CMS IFR fact sheet and OHA release were not re-verified verbatim.",
+      "fix": "WRITE must open the Federal Register text for 2026-23003 (effective date, 90-day evidence window, covered programs, proration language) and use direct quotations only from text actually read. AUDIT re-reads the primary pages instead of these extractions for every consequential figure. Source limits must be recorded in each evidence.json."
+    },
+    {
+      "id": "CR1-ATTRIBUTION-TAKEAWAY",
+      "severity": "minor",
+      "status": "open",
+      "category": "testing-and-attribution",
+      "target": "A1, A3, A5 (reported); A4 (calculated)",
+      "finding": "Testing/attribution decisions are correct: ordinary presentation, no 'we tested', no testing schema; A4 may use 'In our internal calculation, we ...' only for the down-payment table. Inherited 'Tested and reviewed by' labels were not checked on the five rendered routes.",
+      "fix": "AUDIT confirms the five rendered pages (and the two link-only/sentence-only touched routes) carry no 'tested' badge, byline or schema; A1/A3/A5 name the external source (CNBC, CMS, medicaid.gov, OHA, HUD, NY AG) for each fact and give the intent-based takeaways already in the briefs, including their reversal conditions. HIGH profile: AUDIT records riskAssessment with exact consequential-claim quotes."
+    },
+    {
+      "id": "CR1-META-NOTE",
+      "severity": "advisory",
+      "status": "open",
+      "category": "metadata",
+      "target": "A1 metadata",
+      "finding": "Existing metaTitle/metaDescription ('IPO Status and Rules', 'what the filed Form S-1 shows') still read as pre-listing. Metadata is out of A1's scope and not wrong, but is a missed search promise for the post-listing query.",
+      "fix": "Do not silently change; record a proposed result-specific title/description in the A1 evidence packet for the metadata lane. cardBlurb and introText are in scope and must be corrected."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "requestCoverage": [
+    {
+      "requirementId": "REQ-1",
+      "status": "PASS",
+      "evidence": "A1 targets the existing guide (exact slug, stale content confirmed at guides.ts:2041-2106) with a section-1 placement, table, conditional takeaway, and A2 fixes the 12857 contradiction. Limit: acceptance wording requires 424B4 lockup terms that tools cannot read; CR1-A1-LOCKUP narrows this to S-1-attributed terms with the limit disclosed. Close price attributed to CNBC only (CR1-A1-CLOSE-PRICE)."
+    },
+    {
+      "requirementId": "REQ-2",
+      "status": "PASS",
+      "evidence": "A3 is a new page with the answer in section 1, covering CMS IFR, SMDL smd26006 (medicaid.gov metadata), Oregon OHA as the only named state, plus a state-check table and the check-your-own-state step; Maryland/New Hampshire excluded. Gaps carried as CR1-A3-SMDL and CR1-INHERITED-TEXT."
+    },
+    {
+      "requirementId": "REQ-4",
+      "status": "PASS",
+      "evidence": "A4 states $855,400 / $1,283,100 / $1,924,650 (re-verified live on FHFA), calculated purchase-price table reproduced, county lookup via FHFA files, and a conditional answer on waiting with no delivery-date assertion (CR1-A4-DELIVERY)."
+    },
+    {
+      "requirementId": "REQ-5",
+      "status": "PASS",
+      "evidence": "A5 covers publication 2026-11-12, effective 2026-12-14, 90-day window (Mar 14, 2027 reproduced), proration while pending, suit in D. Mass. as pending not a block, housing authority and legal aid. The \"22-state\" claim must be corrected (CR1-A5-STATE-COUNT)."
+    }
+  ],
+  "atReviewLimit": true,
+  "priorVerdictRetained": "FAIL"
+}

@@ -1,0 +1,6 @@
+URL: https://www.hud.gov/hud-partners/verification-of-eligible-status
+RETRIEVED_UTC: 2026-11-25T16:52:07Z
+NOTE: WebFetch model extraction (page text not reproducible verbatim by the tool); figures below are what the fetch returned.
+
+HUD page: final rule published Federal Register 2026-11-12 (2026-23003, https://www.federalregister.gov/documents/2026/11/12/2026-23003/housing-and-community-development-act-of-1980-verification-of-eligible-status), effective 2026-12-14.
+- Every family member must verify eligible status for household to keep rental assistance. Mixed-status families: 90 days after effective date (~2027-03-14) to provide evidence; non-mixed: by next annual/interim recertification. Prorated assistance only while verification of all members pending. "Do not contend" option ends. Applies to Section 214 programs: Public Housing, HCV, Project-based Section 8; not 202/811 PRAC, 811 PRA, SPRAC, 202/162 PAC.

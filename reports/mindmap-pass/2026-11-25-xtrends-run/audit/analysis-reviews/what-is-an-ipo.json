@@ -1,0 +1,48 @@
+{
+  "caseUseReview": {
+    "evidence": "No case record used; none forced.",
+    "status": "PASS"
+  },
+  "conditionsAndCounterexample": {
+    "evidence": "Past fact with no conditional recommendation; the packet states nothing would change it.",
+    "status": "PASS"
+  },
+  "localExclusions": {
+    "evidence": "No testing or attribution claim; financial exclusion from TESTED respected.",
+    "status": "PASS"
+  },
+  "packetSha256": "20238fdb915b771dae100baad884130895c1e6c7227cdb21bd2a7c0f4b084259",
+  "presentationReview": {
+    "evidence": "A sentence with a link is the right presentation for a single fact correction.",
+    "status": "PASS"
+  },
+  "renderedConsistency": {
+    "evidence": "Rendered paragraph matches the packet and the Anthropic guide; no other stale Anthropic statement remains on the page.",
+    "status": "PASS"
+  },
+  "renderedReview": {
+    "path": "reports/mindmap-pass/2026-11-25-xtrends-run/audit/approved-review.json",
+    "sha256": "f5ca022385385e468411a5ead91a75c5f784ddf3745e8d8cf4f6cd71ec5e3a9b"
+  },
+  "renderedSnapshot": {
+    "path": "reports/mindmap-pass/2026-11-25-xtrends-run/audit/approved-snapshot.json",
+    "sha256": "b105ebd37b812618d4a093696e0f743d289bf0d5b654e7f16f627167b3c27bad"
+  },
+  "requestCoverage": [
+    {
+      "evidence": "REQ-1 A2 portion delivered: the false listing statement is replaced with the Nov 19, 2026 Nasdaq listing and a link.",
+      "requirementId": "REQ-1",
+      "status": "PASS"
+    }
+  ],
+  "reviewer": "mindmap-audit",
+  "sourceAndAssumptions": {
+    "evidence": "Basis reported; sentence supported by the CNBC page and the saved EDGAR 424B4 index.",
+    "status": "PASS"
+  },
+  "usefulness": {
+    "evidence": "One-sentence correction removes the false 'nothing trades yet' statement and routes readers to the Anthropic guide; no-addition branch otherwise.",
+    "status": "PASS"
+  },
+  "verdict": "PASS"
+}

@@ -1,0 +1,5 @@
+URL: https://www.cms.gov/initiatives/medicare-prescription-drug-affordability/overview/medicare-drug-price-negotiation-program/selected-drugs-negotiated-prices
+RETRIEVED_UTC: 2026-11-25T16:52:07Z
+NOTE: WebFetch model extraction (page text not reproducible verbatim by the tool); figures below are what the fetch returned.
+
+CMS page (file modified 2026-11-23): IPAY2028 (third cycle) negotiations took place 2026, prices effective 2028; page lists NO drug names or prices or savings in text; MFP explanations due 2027-03-01. Third cycle selected 15 drugs (Jan 2026 CMS release incl. first Part B). Bullet claims "13 drugs", "$9.2B (45%)" NOT supported by anything fetched. DROP.

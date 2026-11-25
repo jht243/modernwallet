@@ -1,0 +1,125 @@
+  "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/90630d81d34456bf4e161c4029fefee476b841be78a162e54288dfed5add260f/readiness.md",
+      "sha256": "90630d81d34456bf4e161c4029fefee476b841be78a162e54288dfed5add260f",
+      "checkedAt": "2026-11-25T16:58:13.006624+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/8acdedee1ab772bbcdfa994f0f77a57141ea9ebf6b4acdc3cbb1a17a9e3f59fe/chart-review.json",
+      "sha256": "8acdedee1ab772bbcdfa994f0f77a57141ea9ebf6b4acdc3cbb1a17a9e3f59fe",
+      "checkedAt": "2026-11-25T16:58:13.006624+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/3d4b8fc88a4a099cc9d035695505b4a8726d0ff16b737e24bcdafee3aea577b7/2026-11-25.md",
+      "sha256": "3d4b8fc88a4a099cc9d035695505b4a8726d0ff16b737e24bcdafee3aea577b7",
+      "checkedAt": "2026-11-25T16:58:13.006624+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/x-trends/2026-11-25.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/4eb2f2b166b5ac49eca0861e02f0ad059bc46cfc0106727c76f562c81403a162/coverage-lookup.txt",
+      "sha256": "4eb2f2b166b5ac49eca0861e02f0ad059bc46cfc0106727c76f562c81403a162",
+      "checkedAt": "2026-11-25T16:58:13.006624+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/81ed1a140bd72760c38d3a231d10f9ca3194e804cf6e248c6e98396e3d30d165/fhfa-2027-cll.txt",
+      "sha256": "81ed1a140bd72760c38d3a231d10f9ca3194e804cf6e248c6e98396e3d30d165",
+      "checkedAt": "2026-11-25T16:58:13.006624+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/fhfa-2027-cll.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/d7751825940ffd0f376a9c563317381dcc20c38fabe27ad8e80b77f723820a85/cnbc-anthropic-below-ipo.txt",
+      "sha256": "d7751825940ffd0f376a9c563317381dcc20c38fabe27ad8e80b77f723820a85",
+      "checkedAt": "2026-11-25T16:58:13.006624+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/cnbc-anthropic-below-ipo.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/9fc116aa01ccaac28086492b664f3158036b98ce7bb6975a06af0fe366dec6ca/sec-anthropic-424b4.txt",
+      "sha256": "9fc116aa01ccaac28086492b664f3158036b98ce7bb6975a06af0fe366dec6ca",
+      "checkedAt": "2026-11-25T16:58:13.006624+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/sec-anthropic-424b4.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/7d5f460c606cf71f4d4b66c3728047d098ed22735806f618628327cbd24f14e5/cms-medicaid-ce-ifr.txt",
+      "sha256": "7d5f460c606cf71f4d4b66c3728047d098ed22735806f618628327cbd24f14e5",
+      "checkedAt": "2026-11-25T16:58:13.006624+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/cms-medicaid-ce-ifr.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/2b13315fd5abbf682ac8e3d5a434b07cd355517a04177941f5071723b48aa132/medicaid-gov-ce-hold-harmless.txt",
+      "sha256": "2b13315fd5abbf682ac8e3d5a434b07cd355517a04177941f5071723b48aa132",
+      "checkedAt": "2026-11-25T16:58:13.006624+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/medicaid-gov-ce-hold-harmless.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/376b1faeb29a5f31e7b0ff6985335a2926b1ff0b7819e3489fae9008d1171941/oregon-oha-hold-harmless.txt",
+      "sha256": "376b1faeb29a5f31e7b0ff6985335a2926b1ff0b7819e3489fae9008d1171941",
+      "checkedAt": "2026-11-25T16:58:13.006624+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/oregon-oha-hold-harmless.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/0ce53843d402c1ba27d963098c8fd0d86130e60d25ffc104c17d6a9f7ca283b9/hud-mixed-status-rule.txt",
+      "sha256": "0ce53843d402c1ba27d963098c8fd0d86130e60d25ffc104c17d6a9f7ca283b9",
+      "checkedAt": "2026-11-25T16:58:13.006624+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/hud-mixed-status-rule.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/0e1c84e7af5ea0f9440f86b0bfc6f2c4700978a9ff732a8eae81620afced3083/ny-ag-hud-lawsuit.txt",
+      "sha256": "0e1c84e7af5ea0f9440f86b0bfc6f2c4700978a9ff732a8eae81620afced3083",
+      "checkedAt": "2026-11-25T16:58:13.006624+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/ny-ag-hud-lawsuit.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/bf6e913e3d9baf03ce58fd0752b726d8d68d05fad6cc9736a49010ab4d681118/cms-selected-drugs.txt",
+      "sha256": "bf6e913e3d9baf03ce58fd0752b726d8d68d05fad6cc9736a49010ab4d681118",
+      "checkedAt": "2026-11-25T16:58:13.006624+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/cms-selected-drugs.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/6620c0c56c890c1995a25effc497afe962a19318e3ae8dc63e44dbc22b591997/link-inspections.txt",
+      "sha256": "6620c0c56c890c1995a25effc497afe962a19318e3ae8dc63e44dbc22b591997",
+      "checkedAt": "2026-11-25T16:58:13.006624+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/research/link-inspections.txt"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-25-xtrends-run/handoff-write.json",
+    "sha256": "9181cea2da4d4fa0d7a73cd0adf2a78018525caebe3898971cf548a99010891c"
+  }
+}
+

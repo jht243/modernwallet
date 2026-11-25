@@ -1898,7 +1898,7 @@ export const ROUNDUPS: RoundupEntry[] = [
         name: "U.S. Bank Mortgage",
         bestFor: "Jumbo loan borrowers and existing U.S. Bank customers",
         description:
-          "U.S. Bank is a top-ten retail bank that consistently performs well for jumbo loans (loans above the conforming limit, currently $806,500 in most counties). Its AMP (American Mortgage Professional) program offers rate discounts to existing U.S. Bank checking and savings customers.\n\nU.S. Bank offers conventional, FHA, VA, USDA, and jumbo loans, plus construction and renovation financing.",
+          "U.S. Bank is a top-ten retail bank that consistently performs well for jumbo loans (loans above the conforming limit, $855,400 in most counties for 2027). Its AMP (American Mortgage Professional) program offers rate discounts to existing U.S. Bank checking and savings customers.\n\nU.S. Bank offers conventional, FHA, VA, USDA, and jumbo loans, plus construction and renovation financing.",
         strengths: [
           "Strong jumbo loan program with competitive rates",
           "Rate discounts for existing U.S. Bank customers",

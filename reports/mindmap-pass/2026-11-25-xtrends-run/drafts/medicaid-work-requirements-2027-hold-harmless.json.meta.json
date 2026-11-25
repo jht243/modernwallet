@@ -1,0 +1,219 @@
+{
+ "slug": "medicaid-work-requirements-2027-hold-harmless",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1748,
+ "floor": 1300,
+ "input_tokens": 31647,
+ "output_tokens": 3520,
+ "thinking_tokens": 2202,
+ "cached_tokens": 17690,
+ "est_cost_usd": 0.0333,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['Will You Lose Medicaid on January 1?', 'Who the Rule Covers and Who Is Exempt', 'What a Hold-Harmless State Can and Cannot Do', 'State Check Table and Implementation Scenarios', 'What to Do Now'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 1748,
+  "numbers_not_in_facts": [
+   "65"
+  ],
+  "fact_budget": {
+   "fact_words": 2481,
+   "floor": 1300,
+   "ratio": 1.91,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    12,
+    9
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At The Modern Wallet, we track healthcare policy rollouts to help beneficiaries navigate complex public benefits rules before critical deadlines arrive. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description does not support tracking healthcare policy rollouts to help beneficiaries."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Approved activities include unsubsidized or subsidized employment, community service, participation in an approved work program, and accredited half-time education or vocational training.",
+     "replacement": "Approved activities include work, community service, a work program, or half-time education, or a combination.",
+     "type": "unsupported",
+     "why": "SOURCE lists work, community service, work programs, and half-time education without extra categories."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "* You are pregnant or in a 12-month postpartum period.",
+     "replacement": "* You are pregnant or postpartum.",
+     "type": "unsupported",
+     "why": "SOURCE states pregnant and postpartum people without specifying a 12-month duration."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "* You are a former foster youth who was in foster care upon reaching the state age of adulthood.",
+     "replacement": "* You are a former foster youth.",
+     "type": "unsupported",
+     "why": "SOURCE lists former foster youth without age-of-adulthood qualifications."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "* You are an American Indian or Alaska Native individual enrolled under tribal lineage provisions.",
+     "replacement": "* You are an American Indian or Alaska Native individual.",
+     "type": "unsupported",
+     "why": "SOURCE lists American Indian and Alaska Native people without tribal lineage provisions."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "* You are an honorably discharged or service-connected totally disabled military veteran.",
+     "replacement": "* You are a totally disabled veteran.",
+     "type": "unsupported",
+     "why": "SOURCE lists totally disabled veterans without discharge or service-connected criteria."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "* You are deemed medically frail or have acute physical, mental, or behavioral health conditions.",
+     "replacement": "* You are deemed medically frail.",
+     "type": "unsupported",
+     "why": "SOURCE lists medically frail people without specifying acute health conditions."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "* You are actively participating in an inpatient or outpatient substance use disorder (SUD) treatment program.",
+     "replacement": "* You are in substance use disorder treatment.",
+     "type": "unsupported",
+     "why": "SOURCE specifies substance use disorder treatment without inpatient or outpatient distinctions."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "If an enrollee turns 65, moves out of state, or reports household income exceeding statutory Medicaid expansion thresholds, the state must disenroll them according to regular redetermination timelines.",
+     "replacement": "If an enrollee turns 65 or reports household income exceeding statutory Medicaid expansion thresholds, the state must disenroll them according to regular redetermination timelines.",
+     "type": "unsupported",
+     "why": "SOURCE specifies age or household income, not moving out of state."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "Missed notices represent the leading administrative cause of benefits termination during policy transitions, so maintaining up-to-date contact records is crucial.",
+     "replacement": "Maintaining up-to-date contact records is crucial.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that missed notices are the leading cause of termination."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "For example, logging 50 hours of part-time employment and 30 hours of accredited half-time education or community service satisfies the community engagement mandate.",
+     "replacement": "For example, logging 50 hours of part-time employment and 30 hours of half-time education or community service satisfies the community engagement mandate.",
+     "type": "unsupported",
+     "why": "SOURCE lists half-time education without specifying accredited."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "States must continue enforcing all other statutory eligibility rules, meaning excessive household income, moving out of state, or reaching age 65 will still result in regular disenrollment.",
+     "replacement": "States must continue enforcing all other statutory eligibility rules, meaning excessive household income or reaching age 65 will still result in regular disenrollment.",
+     "type": "unsupported",
+     "why": "SOURCE specifies age or household income, not moving out of state."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "The policy gives state technology teams time to update determination algorithms, fix notice generation errors, and establish automated data links with wage repositories without leaving families uninsured.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention wage repositories or leaving families uninsured."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "First, log into your state Medicaid portal or contact your local agency caseworker to verify that your mailing address, phone number, and household contact details are current.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention logging into portals, phone numbers, or caseworkers."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "If you participate in vocational classes, community service, or educational programs, secure signed attendance verification forms from your program coordinator.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention signed attendance verification forms or program coordinators."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "If your employment hours vary seasonally, maintain a rolling weekly log of completed activities so that you can respond promptly when the state initiates redetermination.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention seasonal hours or rolling weekly logs."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "For medical exemptions, obtain a concise medical verification note or disability certification signed by a licensed healthcare provider confirming your condition.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention signed provider notes or disability certifications."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "If you already comply with SNAP or TANF employment rules, request an electronic verification letter from your county human services caseworker confirming that your public assistance records show compliant standing.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention electronic verification letters or county human services caseworkers."
+    },
+    {
+     "id": "faqs[2].answer",
+     "quote": "Based on the 2026 federal minimum wage of $7.25 per hour, earning at least $580 per month fulfills the standard.",
+     "replacement": "In 2026, earning at least $580 per month fulfills the standard.",
+     "type": "unsupported",
+     "why": "SOURCE does not state the $7.25 per hour figure, only $580 per month."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": "To check your status in other states, contact your local county public assistance department or check the policy announcements on your official state Medicaid agency portal.",
+     "replacement": "To check your status in other states, check with your state Medicaid agency.",
+     "type": "unsupported",
+     "why": "SOURCE permits directing readers only to their state Medicaid agency."
+    },
+    {
+     "id": "disclaimerText",
+     "quote": "Contact your state Medicaid agency or a qualified legal assistance professional for advice regarding your specific case.",
+     "replacement": "",
+     "type": "unlinked-directive",
+     "why": "Unlinked directive sending reader to outside source with no markdown link."
+    }
+   ],
+   "deleted_final": 9,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2031
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 13806
+  }
+ },
+ "seconds": 171.1,
+ "response_id": "2BQHa_r3OemIytMPgt3m4A4",
+ "generated_at": "2026-11-25T17:06:11+0000"
+}

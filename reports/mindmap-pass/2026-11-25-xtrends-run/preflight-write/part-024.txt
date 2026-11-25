@@ -1,0 +1,71 @@
+ audits the addition with the fact list beside it, exactly as before.
+> **Exempt (write in-context, `_anti-ai-language.md` still applies):** titles, descriptions, a
+> single clarifying sentence, an internal-link sentence, a number/date correction, alt text,
+> schema fields. Every instruction below that says "write", "draft", "add a section/answer" means
+> "generate it through the section command"; the prose rules below are the writer's system
+> prompt, not a licence to write the prose yourself.
+
+**Where an `update existing body text` row carries `reader_question` / `answer` / `answer_placement` (cols 10–12), the added section IS that answer and goes in the named slot** — section 1 or 2, ahead of the page's existing scope/definition material, preserving unrelated content and bumping the rendered "Last updated" date + `dateModified`. Any addition longer than one sentence uses `content_gen.py section` with closed facts + `.meta.json`. Where the inline affiliate engine (`src/utils/affiliateInject.ts` + `data/affiliate/catalog.ts`) exists, plan natural-fit-only monetization (never force an off-intent block, double-monetize, or fabricate referral URLs).
+
+**Where the row carries `reader_question` / `answer` / `answer_placement` (cols 10–12), the added section IS that answer and goes in the named slot** — section 1 or 2, ahead of the page's existing scope/definition material, exactly as a new page would. Copy all three into the `section` command's row prompt. An enrichment that appends the answer to the bottom of a page whose opener still answers the wrong question has not done the job. Where the row has no question (a pure gap-fill), place the section where it reads best, as before.
+
+Act on every **body** row in the chart. Do NOT touch titles, meta descriptions, or H1s (that was Phase 2). Internal linking is handled separately in Phase 6 — do not add links here beyond what a body section naturally contains. `git add` your work but do NOT commit.
+
+## Content standard
+
+> **HOW TO LOAD (MANDATORY — this is the only sanctioned way).** Run:
+> `bash .claude/tools/load-standards.sh "<routine-name>" "<this-phase>"`
+> and treat its ENTIRE output as the standard. The script prints `_content-standard.md`, `_anti-ai-language.md`, and `_experience.md` in full and appends the load receipt to `reports/standards-ledger.jsonl` in the same action — reading and proving-you-read are one step, so never open the files another way. `git add reports/standards-ledger.jsonl` with the run. If the script or any file is missing, STOP and report it.
+
+**Load `.claude/commands/_content-standard.md` and apply it IN FULL.** It is the single source of truth for the medium gate, SEO and required page elements, depth floors, quality and sourcing, readability, voice and register, comparison, linking, the proprietary anchor, and neutrality. Start with its `## PREFLIGHT` section. There is no cherry-picking and no substituting your own standard.
+
+**Also load `.claude/commands/_experience.md`** — it defines who "we" are on this site and is the ONLY source a first-person experience claim may draw on. If it is missing or its `## DOMAIN` is empty, STOP.
+
+**Also load `.claude/commands/_anti-ai-language.md`** and apply its WRITER section; it outranks the content standard on any conflict.
+
+Anything inline below this block is superseded by the canonical files above.
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-5-body.md, paragraph 12. Use its exact text under this source/section context.]
+
+---
+
+Update the body text now, but I don't want you to totally recreate the page using scripts. I'd like you to keep the same page, but update it with your suggestions you identified prior. DO NOT recreate the page via script, only make updates where needed.
+
+---
+
+Make the edits in place (targeted Edit operations on the existing file), preserving everything not called out by the chart. Then `git add`, and do not commit.
+
+---
+## ▶ WHEN THIS PHASE IS DONE — AUTO-CONTINUE. DO NOT ASK THE USER.
+The moment this phase's reviewer gate PASSES, immediately begin the next phase in the SAME turn. Do NOT stop. Do NOT print "Want me to proceed?", "Should I continue?", "Next: Phase X", or any question or hand-off that waits for a human reply.
+
+The `/mindmap-pass` run has EXACTLY ONE human stop (the Phase 0 manifest approval), and this phase is NOT it:
+- Stop 1: the Phase 0 manifest approval (before any edits).
+- (Phase 8 is an informational summary that auto-continues to the Phase 9 push — NOT a stop.)
+
+Everything between those two — including this phase — runs automatically. The reviewer gates are adversarial SUBAGENTS, not human checkpoints; a passing gate means YOU proceed on your own. Keep going through Phase 8 and the Phase 9 push without stopping.
+
+## Anti-AI language — applies to every sentence you ADD here (MANDATORY — added 2026-08-17)
+
+Body-text updates are additive prose, held to the **same** anti-AI-language bar as net-new pages. New substantive body content must pass the independent Phase 4 decision-evidence gate before delivery; pure mechanical/link edits keep their existing checks. Load `.claude/commands/_anti-ai-language.md` and apply its **WRITER** section to every sentence you add. If the file is missing, STOP and report it.
+
+## Updated-page date-bump rule (MANDATORY — workflow-wide, added 2026-07-12; link-only exemption aligned 2026-11-18)
+
+**Editors (any step that substantively updates what an EXISTING page renders — Phase 2 metadata/title, Phase 5 body or enrich sections, FAQs, embedded tools, thin-content rework):** every substantively updated existing page MUST have its "last updated" date bumped to the run date **in the SAME change** — the content edit and the date bump ship together, never separately. Discover how THIS project surfaces the date (record it as a Phase 0 project fact) and bump the field the template ACTUALLY renders:
+- **DB-backed pages** (e.g. ban_the_bots: `landing_pages.last_generated_at` renders both the visible "Last updated" byline and JSON-LD `dateModified`; `blog_posts.updated_at` for posts): any script/SQL that substantively edits content columns MUST also set the date column to now (e.g. `page.last_generated_at = datetime.utcnow()`). Never ship a substantive enrichment/edit script that touches content but not the date column.
+- **File-backed pages**: bump the frontmatter/date field the template renders (`updatedDate`, `last_updated`, `updated`, `dateModified`, …) and re-render if the project pre-renders static HTML.
+
+Also refresh every surface derived from that date: JSON-LD `dateModified`, and the sitemap `<lastmod>` when the generator does not derive it from the same field. **New pages created this run are exempt** (their date fields already default to now). **Phase 6 link-only touches (adding inbound internal links or fixing broken links without a Phase 2/5 substantive edit) AND purely non-rendering technical fixes (robots.txt, redirects, canonical tags, sitemap-only hygiene) are EXEMPT** — preserve each link-only page's existing `updatedDate`, JSON-LD `dateModified`, and sitemap `<lastmod>` (matching Phase 7 `<lastmod>` rules; never bump dates for link-only edits).
+
+**Auditors / reviewer gates (adversarial review):** for EVERY substantively edited existing page (Phase 2 metadata / Phase 5 body or tool enrichment), verify the rendered "Last updated" date (and JSON-LD `dateModified`) now equals the run date — a stale date on a substantively updated page is a **HARD FAIL** (one-field fix; never rewrite the page). For **Phase 6 link-only routes** (inbound internal link additions with no Phase 2/5 substantive action), verify the page **preserves** its existing `updatedDate` / `dateModified` — NEVER fail `datesAndSchema` on a Phase 6 link-only route for keeping its prior `updatedDate`, and treat date churn on an unchanged or link-only page as a fail.
+
+## Content standard — sequencing
+> **‼️ HARD SEQUENCING RULE — do not skip.** Do NOT treat this phase as complete, and do NOT show, serve, publish, or hand off anything you write here, until the Phase 4 audit has run on THIS exact output and PASSED. Any rewrite (including fixing an audit finding) voids a prior pass and requires re-auditing. See the PHASE 4 IS NOT OPTIONAL rule at the top of `.claude/commands/_content-standard.md`.
+
+If `.claude/commands/_content-standard.local.md` exists in this repo, its sections override the same-named sections of the standard; see PRECEDENCE at the top of the standard. Neutrality and paid-placement claims are governed by the standard's neutrality rules (Phase 4 hard-fails them).
+
+<!-- mindmap-execution-v1 -->
+Apply `_mindmap-execution.md` to substantive additions on existing pages: current approved manifest, relevant executed/source-based evidence, case/survey retrieval and writer flags. The same independent Phase 4 usefulness/replay/rendered checks apply. Pure metadata/link corrections retain their existing scope.
+<!-- /mindmap-execution-v1 -->
+
+**Unified

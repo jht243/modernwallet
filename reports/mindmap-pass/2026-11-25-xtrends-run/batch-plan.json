@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "jobId": "xtrends-2026-11-25",
+  "subBatchingRecommended": true,
+  "batchCount": 2,
+  "totalNewPages": 3,
+  "totalRoutes": 12,
+  "disjointPartition": true,
+  "batches": [
+    {
+      "batchIndex": 1,
+      "label": "batch-1",
+      "actionIds": [
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "newPageRoutes": [
+        "/guides/medicaid-work-requirements-2027-hold-harmless/",
+        "/guides/conforming-loan-limit-2027/",
+        "/guides/hud-mixed-status-housing-rule/"
+      ],
+      "existingRoutes": [
+        "/guides/how-to-buy-anthropic-stock/",
+        "/guides/what-is-an-ipo/",
+        "/compare/aca-vs-medicaid/",
+        "/budget/aca-subsidy-calculator/",
+        "/mortgage/home-affordability-calculator/"
+      ],
+      "routes": [
+        "/guides/medicaid-work-requirements-2027-hold-harmless/",
+        "/guides/conforming-loan-limit-2027/",
+        "/guides/hud-mixed-status-housing-rule/",
+        "/guides/how-to-buy-anthropic-stock/",
+        "/guides/what-is-an-ipo/",
+        "/compare/aca-vs-medicaid/",
+        "/budget/aca-subsidy-calculator/",
+        "/mortgage/home-affordability-calculator/"
+      ],
+      "routeFlags": "--route /guides/medicaid-work-requirements-2027-hold-harmless/ --route /guides/conforming-loan-limit-2027/ --route /guides/hud-mixed-status-housing-rule/ --route /guides/how-to-buy-anthropic-stock/ --route /guides/what-is-an-ipo/ --route /compare/aca-vs-medicaid/ --route /budget/aca-subsidy-calculator/ --route /mortgage/home-affordability-calculator/"
+    },
+    {
+      "batchIndex": 2,
+      "label": "batch-2",
+      "actionIds": [],
+      "newPageRoutes": [],
+      "existingRoutes": [
+        "/mortgage/down-payment-calculator/",
+        "/guides/types-of-mortgage-loans/",
+        "/guides/how-much-should-i-spend-on-rent/",
+        "/compare/renting-vs-buying/"
+      ],
+      "routes": [
+        "/mortgage/down-payment-calculator/",
+        "/guides/types-of-mortgage-loans/",
+        "/guides/how-much-should-i-spend-on-rent/",
+        "/compare/renting-vs-buying/"
+      ],
+      "routeFlags": "--route /mortgage/down-payment-calculator/ --route /guides/types-of-mortgage-loans/ --route /guides/how-much-should-i-spend-on-rent/ --route /compare/renting-vs-buying/"
+    }
+  ]
+}

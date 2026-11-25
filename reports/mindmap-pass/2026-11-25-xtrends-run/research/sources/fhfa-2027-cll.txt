@@ -1,0 +1,13 @@
+URL: https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027
+RETRIEVED_UTC: 2026-11-25T16:52:07Z
+NOTE: WebFetch model extraction (page text not reproducible verbatim by the tool); figures below are what the fetch returned.
+
+FHFA Announces Conforming Loan Limit for 2027 (released 11/24/2026)
+- Baseline one-unit limit 2027: $855,400, up $22,650 from 2026 (=> 2026 baseline $832,750).
+- Basis: average US home prices rose 2.72% Q3 2025 to Q3 2026; baseline rises same percent.
+- High-cost ceiling one-unit: $1,283,100 (150% of baseline).
+- Alaska, Hawaii, Guam, USVI: baseline $1,283,100; ceiling $1,924,650.
+- Limits higher in all but 24 counties/county equivalents.
+- Links: full county list, map, methodology addendum, FAQ, LoanLimitQuestions@fhfa.gov.
+FHFA data page (https://www.fhfa.gov/data/conforming-loan-limit): lists tie to the calendar year a loan is acquired; page does not state a "delivery" rule; 2027 amounts are in county list files.
+NOT VERIFIED: any Fannie/Freddie delivery-date rule for 2027 (search found only 2026 precedent). Page must not assert one.

@@ -1,0 +1,12 @@
+823a11)
+
+Plan every new Phase-3 route for the correct discovered sitemap with today's `<lastmod>`, refresh `<lastmod>` ONLY for substantively changed pages (Phase 2/3/5 — never link-only Phase 6 touches), and prepare `<date>.indexnow.txt` for added + substantively updated canonical URLs while deferring actual IndexNow submission to Phase 9 after live verification.
+
+## [p8-growth-and-cluster-accounting] (.claude/commands/mindmap-pass/phase-8-summary.md @ 9e05ed1526fb)
+
+For each substantive contribution, plan `growth.json` registration in `reports/content-evidence.jsonl` with a stable run/route ID, hypothesis, and honest baseline/comparator status (unavailable GSC is recorded as `unavailable`, never zero, and publishing is never claimed as uplift; respect terminal `no-addition` exemptions), plus complete accounting of emerging search clusters and PAA/completion vs `verb-only` question-evidence tags.
+
+## [p9-publication-and-live-scope] (.claude/commands/mindmap-pass/phase-9-commit-deliver.md @ 4d9b96c7fa3b)
+
+**Testing & live publication preparation:** Disclose explicit planned commit, default-branch land/push (or explicit local-only scope), host-provenance verification (`deployment-evidence.local.py` on Layer3 or `deployment-evidence.py` on fleet), exact `rendered-audit.py` live comparison across all affected and shared-template routes, `_testing-labels.md` adapter validation (blocking mismatched or unsupported leftover testing claims), and post-live canonical HTTP-200 IndexNow submission.
+

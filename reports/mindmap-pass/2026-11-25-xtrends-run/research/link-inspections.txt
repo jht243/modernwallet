@@ -1,0 +1,26 @@
+# Link inspections (routes read in src/data on 2026-11-25)
+
+## route slug: aca-vs-medicaid in src/data/benefits-comparisons.ts
+133:    "slug": "aca-vs-medicaid",
+
+## route slug: how-much-should-i-spend-on-rent in src/data/guides.ts
+17844:    slug: "how-much-should-i-spend-on-rent",
+
+## route slug: types-of-mortgage-loans in src/data/guides.ts
+5097:    "slug": "types-of-mortgage-loans",
+
+## route slug: what-is-an-ipo in src/data/guides.ts
+12843:    slug: "what-is-an-ipo",
+
+## route slug: how-to-buy-spacex-stock in src/data/guides.ts
+4048:    "slug": "how-to-buy-spacex-stock",
+
+## existing hrefs (calculators)
+2889:      "The debt to income ratio calculator uses DTI = total monthly debt payments ÷ gross monthly income × 100. Y
+3050:    "howItWorks": "The calculator tracks two paths, buying and renting, month by month. Buying costs the down payme
+3197:    "howItWorks": "Buyers use three checklists, in this order. Start with the [Home Buying Checklist](/checklists/h
+3262:      "howItWorks": "The calculator adds three yearly costs and one monthly cost: maintenance and repairs, property
+
+## other: /budget/aca-subsidy-calculator/ (enriched 2026-11-16 per ledger); /compare/renting-vs-buying/ exists in guides cross-links
+5461:    relatedComparisons: ["15-year-vs-20-year-vs-30-year-mortgage", "fixed-vs-arm-mortgage", "re
+5643:    relatedComparisons: ["15-year-vs-30-year-mortgage", "renting-vs-buying"],

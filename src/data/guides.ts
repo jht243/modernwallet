@@ -2035,19 +2035,23 @@ export const GUIDES: Guide[] = [
     "ctaButton": "",
     "faqItems": []
   },
-  // ── x-trends-mindmap-auto 2026-10-27: how-to-buy-anthropic-stock ──
+  // ── x-trends-mindmap-auto 2026-11-25: how-to-buy-anthropic-stock (enriched) ──
   {
-      "updated": "2026-10-27",
+      "updated": "2026-11-25",
       "slug": "how-to-buy-anthropic-stock",
       "title": "How to Buy Anthropic Stock: IPO Status and Rules",
       "metaDescription": "Learn how to buy Anthropic stock, what the filed Form S-1 shows, how initial public offering allocations work, and what risks pre-IPO offerings carry.",
       "h1": "How to Buy Anthropic Stock",
-      "cardBlurb": "Anthropic filed Form S-1 with the SEC to list on Nasdaq under ticker ANT, but shares cannot be bought on any public stock exchange today.",
-      "introText": "You cannot buy Anthropic stock today. No Anthropic shares trade on any public stock exchange.\n\nAnthropic, PBC filed its Form S-1 registration statement with the Securities and Exchange Commission (SEC) on October 26, 2026. The company proposed to list its Class A common stock on the Nasdaq Global Select Market under the ticker symbol ANT. The initial filing left both the estimated share price range and the number of shares blank. Until an amended registration statement appears and the stock lists on Nasdaq, everyday investors cannot buy shares through standard market orders.",
+      "cardBlurb": "Anthropic (ANT) began trading on Nasdaq on Nov 19, 2026, and closed below its $83 IPO price on Nov 24, per CNBC. See how to buy it and what to weigh before you do.",
+      "introText": "Anthropic stock can now be bought on the Nasdaq under ticker ANT after the company's initial public offering priced at $83 per share and began trading on November 19, 2026. After opening at $111.50 on November 19, 2026, the stock closed down 6.5% on Tuesday, November 24, 2026, which sent shares below the $83 IPO price, according to [CNBC](https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html).\n\nTo buy shares, place a market or limit order for ANT through any standard brokerage account. The retail IPO allocation is closed.",
       "sections": [
           {
-              "heading": "Can You Buy Anthropic Stock Today?",
-              "body": "No shares of Anthropic trade on any public stock exchange today. Anthropic filed a Form S-1 registration statement with the Securities and Exchange Commission (SEC) on October 26, 2026, but the filing does not make shares immediately available for purchase. The initial public offering (IPO) process requires multiple regulatory steps before any member of the public can trade shares.\n\nInvestors can understand the path to public trading by tracking four distinct stages:\n\n1. Current status: Anthropic Class A common stock has no public market. You cannot log into a brokerage account and buy shares today because no exchange lists the company.\n\n2. Pricing stage: Anthropic and its underwriters must file an amended Form S-1 that fills in the estimated initial public offering price range and the planned number of shares. \n\n3. Listing day: Once the registration statement becomes effective, the underwriters price the offering and the stock opens for public trading. At that point, investors can place a standard market order or limit order to buy ANT shares through any brokerage account.\n\n4. Transactions to ignore: Investors should avoid private pre-IPO offers. These unregistered deals carry significant risk, including losing the entire investment.\n\nUntil listing day arrives, retail market orders cannot execute."
+              "heading": "After the IPO: Below $83, Hold, Sell or Buy?",
+              "body": "Anthropic shares closed below the $83 IPO price on Nov 24, 2026, according to [CNBC](https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html), and whether you should hold, sell, or buy depends on your entry price, portfolio allocation, and timeline. In our internal calculation, an investor who bought at the $111.50 open on Nov 19, 2026, is down 25.6 percent at an $83 price level, while an investor allocated shares at the $83 IPO price is flat at $83 and below water beneath it.\n\n| Holder or reader | Where you stand (as of Nov 24, 2026) | What decides your next step |\n|---|---|---|\n| Bought at the $83 IPO price | Shares closed down 6.5% on Tuesday, Nov 24, 2026, sending the stock below the $83 IPO price according to CNBC. | Review portfolio exposure using our [concentrated stock position risk guide](/guides/concentrated-stock-position-risk/) and assess personal risk limits. |\n| Bought at the $111.50 open on Nov 19 | In our internal calculation, buying at $111.50 results in a loss exceeding 25.6 percent at or below $83 as of Nov 24, 2026. | Decide on your own horizon and position size, not on the opening-day price. |\n| Considering buying now | Retail IPO allocation has closed, but investors can submit market or limit orders for ANT through standard brokerage accounts. | Check your broader equity allocation using our [guide on how to start investing](/guides/how-to-start-investing/) before committing cash. |\n| Long-term holder (years) vs short-term trader | Depends on your own horizon, not on the Nov 24 close | Your liquidity needs and your ability to hold through large price swings. |\n\nAccording to CNBC, Anthropic raised $81.3 billion in the largest offering of all time, with an oversubscribed order book where about half of institutional investors received no shares. CNBC also reported several analyst price targets following the Nasdaq listing. Canaccord Genuity issued a buy rating with a $135 price target, Wedbush assigned an outperform rating with a $120 price target, and Oppenheimer established a $150 price target. These third-party targets represent analyst projections rather than verified price performance.\n\nFuture market supply also depends on legal lock-up provisions. The initial Form S-1 described a 180-day lock-up for company insiders and certain stockholders, along with a 365-day lock-up for specified holders, and underwriting representatives may release lock-up securities in whole or part. The final prospectus controls all terms. Investors should read the \"Shares Eligible for Future Sale\" section in the official [Form 424B4 filing index](https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/0001628280-26-074944-index.htm) filed on Nov 19, 2026. Blocks of restricted stock can enter the market after a lock-up ends or is released, as the [SEC lock-up guide](https://www.sec.gov/fast-answers/answerslockuphtm.html) explains.\n\nWho this is not for: Anthropic stock is not suitable for risk-averse savers who require capital preservation. What would change this: An early share release by underwriters could alter market supply. Check your total portfolio weighting across tech holdings and read the [Form 424B4 prospectus index](https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/0001628280-26-074944-index.htm) before placing any trade in ANT."
+          },
+          {
+              "heading": "How to Buy Anthropic Stock Now",
+              "body": "Yes, you can buy Anthropic stock through any brokerage account that offers Nasdaq stocks. Retail initial public offering (IPO) allocation is over. Anthropic, PBC listed on the Nasdaq on November 19, 2026, and filed its [Form 424B4 final prospectus](https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/0001628280-26-074944-index.htm) on November 19, 2026.\n\nTo purchase shares on the public market, follow these four steps:\n\n1. Confirm the ticker ANT on the Nasdaq.\n2. Select an order type: a market order executes immediately at current market prices, while a limit order executes only at or below a maximum purchase price you choose.\n3. Size the position relative to your entire portfolio, keeping [concentrated stock position risk](/guides/concentrated-stock-position-risk/) in mind before allocating capital.\n4. Skip private pre-IPO offers, and consult the guidance in the pre-IPO section.\n\nMarket prices move throughout every trading session. According to [CNBC](https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html), Anthropic opened at $111.50 on November 19, 2026, and closed down 6.5% on November 24, 2026, sending the stock below the $83 IPO price. In our internal calculation, an investor who purchased shares at the $111.50 opening price faces an unrealized decline of 25.6% at the $83 level. Check live quotes directly inside your trading platform before submitting an order."
           },
           {
               "heading": "What the S-1 Says",
@@ -2062,16 +2066,16 @@ export const GUIDES: Guide[] = [
               "body": "Unsolicited opportunities to purchase private shares before an initial public offering carry real risk. According to the [Investor.gov pre-IPO alert](https://www.investor.gov/additional-resources/news-alerts/alerts-bulletins/investor-alert-pre-ipo-investment-scams-updated) issued on June 7, 2024, pre-IPO investing carries substantial risk, including the potential loss of your entire investment principal. Private pre-IPO offerings are not registered with the Securities and Exchange Commission (SEC), and offerings marketed broadly to the general public may be illegal.\n\nThe Investor.gov alert names these risks of pre-IPO investing:\n\n- No public listing: The company may delay its plans indefinitely or cancel its public offering altogether.\n- No resale market: A secondary trading market may never develop, leaving buyers unable to resell or transfer their holdings.\n\nThe alert highlights multiple warning signs associated with private stock solicitations. Red flags include unregistered individuals or firms offering private equity deals, aggressive sales tactics such as unsolicited cold calls, marketing pushes on social media channels, and high-pressure claims centered around popular emerging technologies. Before transferring money to any entity promising access to private shares, verify the registration status of the seller using the free registration check on Investor.gov."
           },
           {
-              "heading": "Lock-Up and What Happens After Listing",
-              "body": "The Form S-1 registration statement establishes a 180-day lock-up and market standoff period for company insiders and certain stockholders, along with an extended 365-day lock-up period for specified holders. The filing notes that the underwriting representatives retain discretionary authority to release lock-up securities in whole or in part prior to expiration.\n\nThe [SEC lock-up guide](https://www.sec.gov/fast-answers/answerslockuphtm.html) notes that lock-up agreements restrict company insiders from selling their shares for a designated window of time following a public listing. Once these contractual restrictions expire or underwriters grant releases, substantial blocks of previously restricted shares can enter public circulation and reach the market."
+              "heading": "Lock-Ups and What Happens After Listing",
+              "body": "In its Form S-1 registration statement, Anthropic described a 180-day lock-up for company insiders and certain stockholders, along with a 365-day lock-up for specified holders. Underwriting representatives may release lock-up securities in whole or in part before those periods end.\n\nThe final prospectus controls the actual terms. Read the \"Shares Eligible for Future Sale\" section in the official [Form 424B4 filing index](https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/0001628280-26-074944-index.htm) to verify the governing restrictions.\n\nThe [CNBC](https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html) article from November 24, 2026, which reported that shares closed below the $83 initial public offering (IPO) price, does not mention lock-ups. According to the [Securities and Exchange Commission (SEC) lock-up guide](https://www.sec.gov/fast-answers/answerslockuphtm.html), a lock-up agreement temporarily prevents company insiders and early investors from selling their equity. When lock-up restrictions expire or underwriters authorize an early release, blocks of previously restricted shares can reach the market and increase the circulating supply."
           },
           {
-              "heading": "What to Do While You Wait",
-              "body": "Investors preparing for a future public listing can take practical steps to educate themselves and manage financial risk. First-time equity buyers can review core fundamentals in our guide on [how to start investing](/guides/how-to-start-investing/).\n\n- Read the primary regulatory filing: Review the complete text and operational risk factors in the [Anthropic Form S-1](https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm) on the SEC EDGAR system.\n- Monitor future amendments: Watch the SEC filing feed for an amended Form S-1 that populates the anticipated share price range and the exact number of Class A shares offered.\n- Restrict single-stock risk: Maintain disciplined asset allocation limits to avoid overexposing your savings to a single company, as detailed in our guide on [concentrated stock position risk](/guides/concentrated-stock-position-risk/).\n- Examine historical precedents: Read our overview of [how to buy SpaceX stock](/guides/how-to-buy-spacex-stock/), which covers the purchase steps now that SpaceX trades on Nasdaq as SPCX, since June 12, 2026."
+              "heading": "What to Do Before You Buy",
+              "body": "* Read the primary filings: review the Anthropic [Form 424B4 filing index](https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/0001628280-26-074944-index.htm) and the Form S-1 disclosures.\n* Date-check any market quote: prices fluctuate across every session, and as of Nov 24, 2026, CNBC reported shares closed below the $83 IPO price after opening at $111.50 on Nov 19, 2026.\n* Cap single-stock exposure: evaluate total portfolio allocations to manage downside volatility, following the sizing guidelines in our walkthrough on [concentrated stock position risk](/guides/concentrated-stock-position-risk/).\n* Master basic order mechanics: first-time buyers submitting market or limit orders for ticker ANT can review our primer on [how to start investing](/guides/how-to-start-investing/) before entering trades.\n* Examine recent market precedents: compare post-offering price movement with [how to buy SpaceX stock](/guides/how-to-buy-spacex-stock/), where SpaceX has traded on the Nasdaq as SPCX since June 12, 2026."
           },
           {
               "heading": "Our Takeaway",
-              "body": "You cannot buy Anthropic stock today because no shares trade on any public stock exchange. The realistic avenues for acquiring shares later are an initial public offering allocation through a broker that offers IPO access or placing an order for ANT on Nasdaq after public trading commences. The Form S-1 filing notes that underwriters may allocate shares to their online brokerage account holders, but it promises U.S. retail investors nothing.\n\nInvestors should reject private pre-IPO solicitations, which the Securities and Exchange Commission (SEC) warns carry the risk of losing the entire investment and of scams. Wait for the updated Form S-1 filing to disclose the proposed share count and price range before making portfolio decisions, and keep single-stock allocations sized defensively. This assessment is based on our review of the Form S-1 and official regulatory releases, not a product test. Our takeaway will update if an amended registration statement introduces a formal retail allocation or alters the proposed listing structure."
+              "body": "Based on our review of [SEC filings](https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/0001628280-26-074944-index.htm) and [CNBC reporting](https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html), not a product test, whether Anthropic fits your portfolio depends on your entry price and time horizon rather than daily price swings. As of Nov 24, 2026, shares closed down 6.5% to finish below the $83 IPO price, according to CNBC. In our internal calculation, an investor who bought at the $111.50 opening price on Nov 19, 2026, is down 25.6% at $83, while original IPO-price buyers are flat at $83 and underwater beneath it. Long-term investors evaluating entry points through a brokerage account face a different risk profile than short-term holders managing unrealized losses.\n\nOur perspective would change if Anthropic establishes a different sustained closing level, or if underwriters release restricted shares early under the terms outlined in the final [Form 424B4](https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/0001628280-26-074944-index.htm) prospectus. High-volatility individual stocks do not fit risk-averse savers or those already exposed to [concentrated stock position risk](/guides/concentrated-stock-position-risk/). At The Modern Wallet, we provide general information, not personalized investment advice. Check your overall portfolio diversification in our [how to start investing](/guides/how-to-start-investing/) guide before placing a market or limit order."
           }
       ],
       "tools": [
@@ -2083,19 +2087,19 @@ export const GUIDES: Guide[] = [
       "faqs": [
           {
               "question": "Can I buy Anthropic stock right now?",
-              "answer": "No. Anthropic shares do not trade on any public stock exchange. The company filed Form S-1 with the SEC on October 26, 2026, but the offering is not yet effective."
+              "answer": "Yes, you can buy shares of Anthropic through any brokerage account by placing a market or limit order. Anthropic completed its initial public offering (IPO) on November 19, 2026, so investors can buy public shares directly on the exchange rather than waiting for private access."
           },
           {
               "question": "What is the Anthropic IPO ticker?",
-              "answer": "Anthropic proposed the ticker symbol ANT to list its Class A common stock on the Nasdaq Global Select Market."
+              "answer": "Anthropic trades on the Nasdaq under the ticker symbol ANT. Anthropic, PBC filed its [Form 424B4](https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/0001628280-26-074944-index.htm) final prospectus with the Securities and Exchange Commission (SEC) on November 19, 2026."
           },
           {
-              "question": "When will Anthropic go public?",
-              "answer": "The Form S-1 registration statement gives no listing date, share count, or price range. An initial public offering requires a subsequent amended filing, so no date can be stated."
+              "question": "When did Anthropic go public?",
+              "answer": "Anthropic went public on Thursday, November 19, 2026, when shares began trading on the Nasdaq. The company filed its Form 424B4 prospectus with the SEC on that same day."
           },
           {
-              "question": "How much will Anthropic shares cost?",
-              "answer": "The initial Form S-1 registration statement leaves the price range blank. No official offering price exists today."
+              "question": "How much did Anthropic shares cost at the IPO?",
+              "answer": "Anthropic priced its IPO at $83 per share, raising $81.3 billion according to [CNBC](https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html). The stock opened for public trading at $111.50 per share on November 19, 2026, and closed down 6.5% on November 24, 2026, below the $83 IPO price according to CNBC."
           },
           {
               "question": "Is it safe to buy pre-IPO Anthropic shares?",
@@ -2103,10 +2107,22 @@ export const GUIDES: Guide[] = [
           },
           {
               "question": "Can a retail investor get shares at the IPO price?",
-              "answer": "Underwriters distribute most shares to institutional and high-net-worth accounts first. The Form S-1 states underwriters may allocate shares to online brokerage customers, but retail allocation is not guaranteed."
+              "answer": "Retail investors can no longer get shares at the $83 IPO price because the initial allocation is completely closed. While Anthropic's Form S-1 described underwriters allocating shares to online brokerage customers, the offering was heavily oversubscribed and [CNBC](https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html) reported that about half of the institutions that placed orders received no shares. Any investor wanting shares today must purchase them on the open market at prevailing exchange prices."
+          },
+          {
+              "question": "Is Anthropic stock a buy after falling below the IPO price?",
+              "answer": "Deciding whether to buy depends on your personal risk tolerance, time horizon, and portfolio limits rather than any uniform recommendation. In our internal calculation, an investor who bought at the $111.50 open price on November 19, 2026, was down 25.6% at the $83 level, whereas CNBC reported analyst price targets including $120 from Wedbush, $135 from Canaccord Genuity, and $150 from Oppenheimer. Anyone evaluating a purchase should review [concentrated stock position risk](/guides/concentrated-stock-position-risk/) and general portfolio rules on [how to start investing](/guides/how-to-start-investing/), keeping in mind this analysis is general information and not personalized investment advice."
           }
       ],
       "sources": [
+          {
+              "label": "CNBC: Anthropic stock falls below $83 IPO price, but analysts are still largely positive",
+              "url": "https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html"
+          },
+          {
+              "label": "SEC EDGAR: Anthropic, PBC Form 424B4 final prospectus (filing index)",
+              "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/0001628280-26-074944-index.htm"
+          },
           {
               "label": "SEC EDGAR: Anthropic, PBC Form S-1 Registration Statement",
               "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
@@ -5111,7 +5127,7 @@ export const GUIDES: Guide[] = [
       },
       {
         "heading": "Conforming, Jumbo and Other Conventional Loans",
-        "body": "A [conventional loan](https://www.consumerfinance.gov/owning-a-home/conventional-loans/) is any mortgage that is not part of a specific government program. Conventional loans typically cost less than FHA loans but can be more difficult to get. They split into two main categories, conforming and non-conforming.\n\nConforming loans are the most common loan type. The government sets their maximum loan amounts, and Fannie Mae or Freddie Mac, which back conforming loans, set the other rules. By law, Fannie Mae and Freddie Mac can only buy single-family mortgages below a ceiling called the conforming loan limit.\n\nLook up your county's figure on the [Federal Housing Finance Agency (FHFA) conforming loan limit page](https://www.fhfa.gov/data/conforming-loan-limit) before you set a price range. The 2026 limits were set using the formula in the Housing and Economic Recovery Act of 2008, and they are higher in some high-cost areas. In certain counties, a conforming jumbo loan covers amounts above the standard limit, with a maximum that varies by county.\n\nJumbo loans above the conforming jumbo limit in your county are non-conforming. Rules vary by lender, but borrowers usually need good credit and a high down payment. Non-conforming loans are less standardized, so eligibility, pricing and features can vary widely, and the CFPB calls shopping around particularly important for them.\n\nA third group, other non-conforming loans, covers loans of any size that fit no other category. Some are aimed at borrowers with poor credit and tend to carry high rates. They may also include minimal income documentation, interest-only payments or a balance that is allowed to increase.\n\nMany of the loans that got people in trouble during the financial crisis fell in this group. If you are offered one, consult several lenders and ask whether you could qualify for a conforming or FHA loan instead. If a lender pitches a portfolio loan, our [portfolio loan explainer](/guides/portfolio-loan-mortgage-explained/) walks through how it works.\n\nOn a conventional loan, a down payment under 20 percent typically means paying for mortgage insurance. Our [FHA vs conventional loan comparison](/compare/fha-vs-conventional-loan/) is the next read for buyers with a smaller down payment."
+        "body": "A [conventional loan](https://www.consumerfinance.gov/owning-a-home/conventional-loans/) is any mortgage that is not part of a specific government program. Conventional loans typically cost less than FHA loans but can be more difficult to get. They split into two main categories, conforming and non-conforming.\n\nConforming loans are the most common loan type. The government sets their maximum loan amounts, and Fannie Mae or Freddie Mac, which back conforming loans, set the other rules. By law, Fannie Mae and Freddie Mac can only buy single-family mortgages below a ceiling called the conforming loan limit.\n\nLook up your county's figure on the [Federal Housing Finance Agency (FHFA) conforming loan limit page](https://www.fhfa.gov/data/conforming-loan-limit) before you set a price range. For the 2027 figures and what each down payment buys, see our guide to the [2027 conforming loan limit](/guides/conforming-loan-limit-2027/). The 2026 limits were set using the formula in the Housing and Economic Recovery Act of 2008, and they are higher in some high-cost areas. In certain counties, a conforming jumbo loan covers amounts above the standard limit, with a maximum that varies by county.\n\nJumbo loans above the conforming jumbo limit in your county are non-conforming. Rules vary by lender, but borrowers usually need good credit and a high down payment. Non-conforming loans are less standardized, so eligibility, pricing and features can vary widely, and the CFPB calls shopping around particularly important for them.\n\nA third group, other non-conforming loans, covers loans of any size that fit no other category. Some are aimed at borrowers with poor credit and tend to carry high rates. They may also include minimal income documentation, interest-only payments or a balance that is allowed to increase.\n\nMany of the loans that got people in trouble during the financial crisis fell in this group. If you are offered one, consult several lenders and ask whether you could qualify for a conforming or FHA loan instead. If a lender pitches a portfolio loan, our [portfolio loan explainer](/guides/portfolio-loan-mortgage-explained/) walks through how it works.\n\nOn a conventional loan, a down payment under 20 percent typically means paying for mortgage insurance. Our [FHA vs conventional loan comparison](/compare/fha-vs-conventional-loan/) is the next read for buyers with a smaller down payment."
       },
       {
         "heading": "Government-Backed Loans from FHA, VA and USDA",
@@ -12841,7 +12857,7 @@ export const GUIDES: Guide[] = [
 
   {
     slug: "what-is-an-ipo",
-    updated: "2026-10-27",
+    updated: "2026-11-25",
     title: "What Is an IPO? How Going Public Actually Works",
     metaDescription:
       "What is an IPO? Learn how a company goes public, why it isn't always a win, and the lockup, allocation, and hype risks retail IPO investors face.",
@@ -12854,7 +12870,7 @@ export const GUIDES: Guide[] = [
       { heading: "How a company goes public: the IPO process", body: "A company goes public by hiring investment banks, called underwriters, to manage the offering, then filing a detailed registration statement with the SEC — searchable on the SEC's [EDGAR system](https://www.sec.gov/edgar/search-and-access) — that discloses its financials, risks, and business model. The SEC reviews the filing and can require changes before the offering proceeds.\n\nOnce the filing clears review, the company and its underwriters go on a roadshow, pitching the stock to large institutional investors to gauge demand. That demand helps set the IPO price the night before trading begins. On the first trading day, the stock starts trading on the exchange, and its price can move sharply away from the IPO price within hours." },
       { heading: "The real benefits of going public", body: "Going public gives a company a large, one-time cash infusion it can use to pay down debt, fund growth, or acquire other companies. A public listing also creates a liquid stock that lets employees and early investors finally sell shares they've held for years, and it gives the company a public currency — its own stock — to use for future acquisitions.\n\nA public listing can also raise a company's profile with customers and partners, since a stock ticker carries a kind of credibility a private company doesn't have. For many founders and early employees, an IPO is the main way years of equity compensation finally turns into cash." },
       { heading: "Why an IPO can actually be a bad idea for the company", body: "Going public isn't automatically the right move, and plenty of successful companies choose to stay private for exactly that reason. The ongoing costs are real: compliance, quarterly reporting, investor relations staff, and far more exposure to shareholder lawsuits than a private company ever faces.\n\nPublic markets also pressure management toward short-term results, since missing a single quarterly earnings estimate can hit the stock hard, even when the long-term strategy is sound. A company that needs years to execute a plan may find that pressure genuinely destructive, which is why some late-stage private companies raise plenty of cash from private investors and delay going public for as long as they can." },
-      { heading: "How IPOs actually work for retail investors", body: "Retail investors — individuals buying through an ordinary brokerage account — almost never get shares at the IPO price on day one. The [SEC's investor bulletin on IPOs](https://www.sec.gov/files/ipo-investorbulletin.pdf) notes that underwriters distribute most IPO shares to their institutional and high-net-worth clients first, so most retail investors can only buy once the stock starts trading on the open market, often at a price already well above the IPO price.\n\nA second risk shows up months later: the lockup period. Company insiders and early investors typically sign a [lockup agreement](https://www.sec.gov/fast-answers/answerslockuphtm.html), most commonly 180 days, that bars them from selling shares right after the IPO. When that lockup expires, a wave of insider selling can hit the stock all at once — the expiration date is disclosed in the prospectus, so retail investors can see it coming and plan around it instead of being surprised.\n\nThe first-day 'pop' also isn't guaranteed to hold. A stock that jumps 40% on day one can just as easily give that gain back, or fall below its IPO price entirely, in the weeks and months that follow, once the initial demand from underpricing and hype fades. Once a company lists, you buy it like any other stock; SpaceX, which began trading on Nasdaq as SPCX on June 12, 2026, is a recent example, and our guide on [how to buy SpaceX stock now that it's public](/guides/how-to-buy-spacex-stock/) walks through the order.\n\nAnthropic has filed to go public but nothing trades yet; our guide on [how to buy Anthropic stock](/guides/how-to-buy-anthropic-stock/) explains where that stands." },
+      { heading: "How IPOs actually work for retail investors", body: "Retail investors — individuals buying through an ordinary brokerage account — almost never get shares at the IPO price on day one. The [SEC's investor bulletin on IPOs](https://www.sec.gov/files/ipo-investorbulletin.pdf) notes that underwriters distribute most IPO shares to their institutional and high-net-worth clients first, so most retail investors can only buy once the stock starts trading on the open market, often at a price already well above the IPO price.\n\nA second risk shows up months later: the lockup period. Company insiders and early investors typically sign a [lockup agreement](https://www.sec.gov/fast-answers/answerslockuphtm.html), most commonly 180 days, that bars them from selling shares right after the IPO. When that lockup expires, a wave of insider selling can hit the stock all at once — the expiration date is disclosed in the prospectus, so retail investors can see it coming and plan around it instead of being surprised.\n\nThe first-day 'pop' also isn't guaranteed to hold. A stock that jumps 40% on day one can just as easily give that gain back, or fall below its IPO price entirely, in the weeks and months that follow, once the initial demand from underpricing and hype fades. Once a company lists, you buy it like any other stock; SpaceX, which began trading on Nasdaq as SPCX on June 12, 2026, is a recent example, and our guide on [how to buy SpaceX stock now that it's public](/guides/how-to-buy-spacex-stock/) walks through the order.\n\nAnthropic priced its IPO at $83 and began trading on Nasdaq as ANT on November 19, 2026; our guide on [how to buy Anthropic stock](/guides/how-to-buy-anthropic-stock/) covers the post-IPO price and lock-up details." },
       { heading: "Tips for investing in IPOs without chasing the hype", body: "Read the prospectus before you buy, not the headlines about the deal. The SEC recommends studying the actual offering document, since it discloses the company's finances, risks, and how shares are being allocated, in far more detail than any news story will.\n\nWatch for recency and hype bias: a stock dominating your social feed the week of its IPO is exactly the stock priced for maximum optimism, which leaves the least room for good news to push it higher. Waiting for the lockup expiration to pass, and for a full quarter or two of public reporting, gives you real financial data to evaluate instead of a roadshow pitch.\n\nSize any single IPO position small relative to your overall portfolio. A single new stock, with no trading history and a wave of insider selling still ahead of it, carries far more risk than an established company — our [portfolio calculator](/portfolio/) can help you see how one volatile position affects your overall risk before you buy." },
     ],
     tools: [
@@ -17851,7 +17867,7 @@ export const GUIDES: Guide[] = [
     introText:
       "Keep rent at or below 28% of your gross income, and lower once you factor in other debt. The mistake we see readers make most often is applying the 30% rule without checking it against debt payments or take-home pay.\n\nThat 28% figure comes from the same debt-adjusted 28/36 math lenders use to size a mortgage, but here it's applied to a rent payment instead of a loan. In an expensive metro, that number is not always realistic. The usual fix is a roommate, a smaller unit, or a longer commute, not a bigger rent budget.",
     sections: [
-      { heading: "Where the 30% Rule Came From", body: "The 30% rule started as a federal housing benchmark. It was never built as personal budgeting advice. The U.S. Department of Housing and Urban Development ([HUD](https://www.hud.gov/program_offices/comm_planning/affordablehousing/)) uses 30% of gross income as the line for what it calls \"cost burdened\" housing. A household above that line qualifies as burdened, and HUD labels anything above 50% severely burdened.\n\nThat threshold was built to flag households in housing distress for federal assistance programs, not to tell an individual renter what a comfortable budget looks like. Over the decades landlords, budgeting apps, and finance writers borrowed the number anyway. The original purpose, spotting severe cost burden for public assistance, got lost along the way." },
+      { heading: "Where the 30% Rule Came From", body: "The 30% rule started as a federal housing benchmark. It was never built as personal budgeting advice. The U.S. Department of Housing and Urban Development ([HUD](https://www.hud.gov/program_offices/comm_planning/affordablehousing/)) uses 30% of gross income as the line for what it calls \"cost burdened\" housing. A household above that line qualifies as burdened, and HUD labels anything above 50% severely burdened.\n\nThat threshold was built to flag households in housing distress for federal assistance programs, not to tell an individual renter what a comfortable budget looks like. Over the decades landlords, budgeting apps, and finance writers borrowed the number anyway. The original purpose, spotting severe cost burden for public assistance, got lost along the way.\n\nIf you live in federally assisted housing, HUD's rules for verifying household members' eligible status change on December 14, 2026. Our guide to the [HUD mixed-status housing rule](/guides/hud-mixed-status-housing-rule/) explains who is affected." },
       { heading: "Why 30% Breaks Down in Expensive Cities", body: "The 30% rule stops working in any metro where the typical rent already costs more than 30% of the typical income. The [U.S. Census Bureau](https://www.census.gov/topics/housing/housing-patterns.html) tracks median gross rent as a share of household income every year.\n\nIn cities like San Francisco, New York, Boston, and Miami, that ratio already runs well past 30% for a full-time worker earning the local median wage. The housing stock and the local wages simply do not line up.\n\nA renter in one of those cities faces a real choice. Spending above 30% is one option, and it does not mean the renter budgeted wrong. Taking on a roommate, moving farther out for a longer commute, or renting a smaller unit are the others, and each carries a real cost in money or time.\n\nSomeone who insists on hitting 30% in a tight market pays for it another way. The same income buys a much smaller unit, or a much longer commute, than it would in a cheaper city.\n\nThat is the actual tradeoff a tight rental market forces on every income level. It is not a sign the renter did the math wrong." },
       { heading: "Gross Income or Take-Home Pay", body: "Use your gross income, the amount before taxes, as the base for the 28% number, because that is what HUD's own standard and most lenders already use. Gross income also sits right on your pay stub, before your specific tax withholding and benefit deductions shrink it down. Using the same base as everyone else lets you compare your number to theirs.\n\nGross income can flatter your situation, though, if you put a lot into a 401(k) or pay high health insurance premiums. Two people earning the same $70,000 salary can take home very different amounts once one maxes out retirement contributions. The safer move is a two-step check: run the 28/36 math on gross income first, then confirm the resulting rent still leaves room in your real take-home pay.\n\nIf your paycheck already runs thin after taxes and deductions, treat take-home pay as the real ceiling. A rent can fit neatly under 28% of gross income and still be unsafe. If it eats half your real paycheck, the math on paper does not matter.\n\nConfirm the number against a full month of expenses with our [budget calculators](/budget/), not just the rent line by itself." },
       { heading: "How to Calculate Your Own Safe Rent Number", body: "Calculate your safe rent number with a 28/36 split on gross income: rent alone at or under 28%, and rent plus every other debt payment at or under 36%. The Consumer Financial Protection Bureau ([CFPB](https://www.consumerfinance.gov/ask-cfpb/what-is-a-debt-to-income-ratio-en-1791/)) calls this same math a debt-to-income ratio, the core test mortgage lenders use to size a home loan. The same math works just as well sized to a rent payment instead of a mortgage.\n\nStart with your gross monthly income before taxes, then multiply it by 0.28 to get your front-end limit, the most rent alone should ever take. Next, add up your other required monthly debt payments.\n\nThat includes a car loan, student loans, credit cards, and anything else with a minimum due. Multiply your gross monthly income by 0.36, subtract those other debts from that number, and you have your back-end limit, the true ceiling once existing debt is counted.\n\nYour actual rent ceiling is whichever of the two numbers is lower, the flat 28% figure or the debt-adjusted back-end figure. Someone with no other debt can often afford close to 30% of gross income in rent and still stay under the back-end limit. Someone carrying a car payment and student loans needs a smaller rent number to keep total obligations under 36%, even on the exact same income." },
@@ -25037,6 +25053,401 @@ export const GUIDES: Guide[] = [
     "disclaimerText": "This guide provides general educational information about property tax rates and should not be construed as personalized financial, tax, or mortgage lending advice.",
     "published": "2026-11-25",
     "updated": "2026-11-25"
+  },
+  // ── x-trends-mindmap-auto 2026-11-25: medicaid-work-requirements-2027-hold-harmless ──
+  {
+      "updated": "2026-11-25",
+      "published": "2026-11-25",
+      "slug": "medicaid-work-requirements-2027-hold-harmless",
+      "title": "Medicaid Work Requirements 2027: Will You Lose Coverage?",
+      "metaDescription": "Federal Medicaid work requirements start in 2027, but states using CMS's hold-harmless period cannot cut coverage before July 1, 2027. Learn what to report.",
+      "h1": "Medicaid Work Requirements 2027: Will You Lose Coverage?",
+      "cardBlurb": "Federal Medicaid work rules begin January 1, 2027. Find out whether your state opted into CMS's hold-harmless delay and how to protect your coverage.",
+      "introText": "You will not automatically lose Medicaid coverage on January 1, 2027, if your state adopts the federal hold-harmless option once CMS approves it, or if you qualify for a statutory exemption. Under federal guidance from the Centers for Medicare & Medicaid Services (CMS), states adopting the transition relief may pause denials and terminations for community engagement noncompliance through June 30, 2027. Beneficiaries must still complete scheduled renewals and report qualifying hours or exemption circumstances to keep their files in good standing.",
+      "sections": [
+          {
+              "heading": "Will You Lose Medicaid on January 1?",
+              "body": "You will not automatically lose Medicaid on January 1, 2027, for missing the community engagement benchmark, but your immediate protection depends directly on whether your state chooses to pause disenrollments. Under section 71119 of Public Law 119-21, often called the Working Families Tax Cut legislation, the federal baseline requires states to implement community engagement rules no later than January 1, 2027. However, the Centers for Medicare & Medicaid Services ([CMS](https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms)) released State Medicaid Director Letter SMD# 26-006 on November 13, 2026, granting states an optional hold-harmless transition window.\n\nIn a state that formally elects this hold-harmless period and has CMS approval, the Medicaid agency can suspend all eligibility denials and disenrollments based on community engagement noncompliance through June 30, 2027. This suspension applies to initial applications submitted and redetermination renewals initiated through that mid-year date. Even in participating states, administrators must still collect information and assess whether members meet the engagement rules. Enrollees must continue submitting paperwork, but coverage cannot be terminated strictly for failing the work requirement during this window.\n\nIn states that do not adopt the hold-harmless policy, the federal requirement applies from January 1, 2027 unless the state has another CMS-approved mitigation, so ask your state Medicaid agency. If an individual in an enforcement state fails to demonstrate required hours or an exemption, the state agency cannot terminate benefits without warning. Federal regulations under the CMS Interim Final Rule (IFR) require the agency to send a formal noncompliance notice. Beneficiaries then receive a window of 30 calendar days to submit proof of qualifying activities or claim an exemption before disenrollment takes effect, as the CMS interim rule describes it. States implement the notice, and the Oct 29, 2026 court ruling partly vacated parts of that rule."
+          },
+          {
+              "heading": "Who the Rule Covers and Who Is Exempt",
+              "body": "The federal community engagement mandate applies strictly to non-pregnant adults ages 19 through 64 who are enrolled in the Medicaid expansion adult group or certain section 1115 minimum essential coverage demonstrations across 43 states and the District of Columbia. United States territories are not subject to the mandate, and individuals entitled to or enrolled in Medicare are excluded from these requirements. To satisfy the standard, covered adults must log at least 80 hours per month of qualifying activities or earn wages equal to at least 80 times the federal minimum wage, which equals $580 per month in 2026.\n\nQualifying activities can be combined to reach the 80-hour monthly threshold. Approved activities include work, community service, a work program, or half-time education, or a combination. When checking compliance, state agencies review past records: applicants must demonstrate compliance for at least one month prior to application, while existing enrollees are checked across one or more months between redetermination cycles as determined by individual state rules.\n\nFederal policy provides explicit statutory exemptions that protect vulnerable groups from disenrollment. According to official CMS documentation, you are exempt from the 80-hour monthly rule if you meet any of the following criteria:\n\n* You are pregnant or postpartum.\n* You are a parent or primary caretaker responsible for a child age 13 or younger, or you care for an individual with a recognized disability.\n* You are a former foster youth.\n* You are an American Indian or Alaska Native individual.\n* You are a totally disabled veteran.\n* You are deemed medically frail.\n* You are in substance use disorder treatment.\n* You are currently complying with existing work requirements under the Temporary Assistance for Needy Families (TANF) program or the Supplemental Nutrition Assistance Program (SNAP).\n* You are currently incarcerated in a correctional facility.\n\nIf you qualify for any exemption, you must notify your state agency to ensure your administrative record is coded appropriately."
+          },
+          {
+              "heading": "What a Hold-Harmless State Can and Cannot Do",
+              "body": "State Medicaid Director Letter SMD# 26-006 establishes clear boundaries regarding state authority during the transition. A state that elects the hold-harmless option receives federal protection against CMS enforcement actions once CMS approves the period in its mitigation plan if it chooses to halt adverse eligibility decisions. Under this mechanism, the state Medicaid program can suspend both application denials and mid-year disenrollments for individuals who do not show compliance with community engagement standards. States have the flexibility to implement this relief for the entire period through June 30, 2027, or choose a shorter calendar duration that suits their technical rollout schedules.\n\nElecting the hold-harmless policy does not allow a state to pause normal Medicaid verification standards. States are expressly required to build reporting mechanisms, gather activity documentation, and evaluate whether applicants qualify for exemptions. States intending to use the hold-harmless option starting January 1, 2027, were asked by CMS to submit notifications by December 11, 2026, through their formal community engagement mitigation plans.\n\nThe hold-harmless period applies only to community engagement standards under section 1902(xx)(1) of the Social Security Act and 42 CFR 435.559. A state may not suspend denials or disenrollments for other eligibility factors, such as age or household income.\n\nAs verified on November 23, 2026, by the [Oregon Health Authority](https://www.oregon.gov/oha/ERD/Pages/OHA-to-delay-enforcement-of-new-federal-Medicaid-work-rules-to-keep-people-in-Oregon-insured-11.23.2026.aspx) (OHA), Oregon announced on Nov 23, 2026 that it will opt into the hold-harmless period, and it is the one state this page verified from a primary source. Other states may also opt in, so check your own state Medicaid agency. OHA said no Oregon Health Plan member will face coverage denials or disenrollment for community engagement noncompliance through June 30, 2027. Oregon state officials noted that more than 600,000 members received informational notices in September 2026, and Governor Tina Kotek's office said an initial analysis projected that up to a third of affected Oregonians would be likely to lose coverage even if they qualify. Implementation also occurs alongside ongoing legal developments: on October 29, 2026, the federal district court in Massachusetts v. Oz partially vacated specific CMS regulatory limits regarding medical condition exemptions, which CMS formally acknowledged in footnote three of SMD# 26-006."
+          },
+          {
+              "heading": "State Check Table",
+              "body": "The table below shows what each situation means after January 1, 2027, according to CMS and the Oregon Health Authority.\n\n| Situation | What the state may do | What you do | Source |\n| --- | --- | --- | --- |\n| Your state adopted the hold harmless period (with CMS approval of its mitigation plan) and you cannot show 80 hours, $580 a month or an exemption | May suspend denials and disenrollments for failing to show compliance, for applications received and renewals initiated through June 30, 2027 (or a shorter state period) | Keep reporting and verifying; ask your state Medicaid agency how long its period lasts | CMS SMD# 26-006 |\n| Your state did not adopt it and you cannot show them | Sends a noncompliance notice, then you have 30 calendar days to show compliance or an exemption, as the CMS interim rule describes it; states implement the notice | Answer any notice within 30 calendar days with proof of hours, income or an exemption | CMS fact sheet |\n| You meet an exemption | Must assess whether you qualify for an exclusion or exception | Report the exemption and keep records | CMS fact sheet |\n| You are applying for Medicaid | Checks the requirement at application, looking back at least one month; an electing state may suspend denials for applications received through June 30, 2027 | Gather proof before you apply | CMS fact sheet; SMD# 26-006 |\n| You live in Oregon | Oregon announced on Nov 23, 2026 that it will opt in: no loss or denial of coverage for failing the rules through June 30, 2027 | Still verify requirements or exemptions; you get more time at your next renewal | Oregon Health Authority |\n\nAsk your state Medicaid agency which row applies to you."
+          },
+          {
+              "heading": "What to Do Now",
+              "body": "Take these steps whether or not your state has adopted the hold harmless period.\n\n1. Ask your state Medicaid agency whether your state has adopted the hold harmless period and when it ends.\n2. Decide how you will document compliance before your next renewal. If you work, collect pay stubs, earnings statements or tax records showing at least $580 in gross monthly income or 80 logged hours.\n3. If you meet an exemption, gather your records now.\n4. Watch your mail for notices. In a state that has not delayed enforcement, a noncompliance notice gives you 30 calendar days to respond.\n5. If your income rises above Medicaid limits or you lose coverage, compare Marketplace plans. Our [ACA vs Medicaid comparison](/compare/aca-vs-medicaid/) explains the differences, and our free [ACA subsidy calculator](/budget/aca-subsidy-calculator/) estimates premium tax credits and your out-of-pocket cost."
+          },
+          {
+              "heading": "Our Takeaway on the 2027 Work Requirement",
+              "body": "For most Medicaid expansion adults ages 19 through 64, the January 1, 2027 deadline poses the most immediate risk if your state has not adopted CMS hold-harmless relief and you cannot demonstrate 80 monthly activity hours, $580 in gross earnings, or an approved exemption category. In a state with an approved hold harmless period, such as Oregon, which announced it will opt in, the Medicaid agency cannot deny applications or disenroll enrollees for noncompliance before July 1, 2027, but your legal duty to report hours and complete redetermination forms remains active. This landscape would shift if CMS alters national transition guidelines, if additional states withdraw or submit mitigation plans, or if federal litigation in Massachusetts v. Oz expands court-ordered injunctions against enforcement."
+          }
+      ],
+      "tools": [
+          {
+              "href": "/compare/aca-vs-medicaid/",
+              "label": "ACA vs Medicaid Comparison"
+          },
+          {
+              "href": "/budget/aca-subsidy-calculator/",
+              "label": "ACA Subsidy Calculator"
+          }
+      ],
+      "faqs": [
+          {
+              "question": "Does missing the work requirement cause immediate cancellation on January 1?",
+              "answer": "No. In states that adopt the CMS hold-harmless transition with CMS approval, disenrollment for community engagement noncompliance is paused through June 30, 2027. In non-participating states, federal rules require the agency to send a written noncompliance notice providing 30 calendar days to submit documentation or claim an exemption before terminating coverage."
+          },
+          {
+              "question": "Can I combine part-time employment with school or volunteering?",
+              "answer": "Yes. Federal guidelines let you combine qualifying activities, such as work, community service, a work program or half-time education, to reach the 80-hour monthly minimum."
+          },
+          {
+              "question": "What earnings level satisfies the Medicaid community engagement requirement without tracking hours?",
+              "answer": "Earning gross monthly wages equal to at least 80 times the federal minimum wage satisfies the requirement without logging separate hours. In 2026, earning at least $580 per month fulfills the standard."
+          },
+          {
+              "question": "Does the hold-harmless delay protect me if my income exceeds Medicaid limits?",
+              "answer": "No. The hold harmless period in CMS State Medicaid Director Letter SMD# 26-006 applies only to community engagement. States may not suspend denials or disenrollments for other eligibility factors, such as age or household income."
+          },
+          {
+              "question": "How do I confirm whether my state opted into the hold-harmless extension?",
+              "answer": "Check with your state Medicaid agency. Oregon announced on Nov 23, 2026 that it will opt into the hold harmless period through June 30, 2027, and it is the one state this page verified from a primary source. Other states may also opt in."
+          }
+      ],
+      "sources": [
+          {
+              "label": "CMS Fact Sheet on Medicaid Community Engagement Interim Final Rule",
+              "url": "https://www.cms.gov/newsroom/fact-sheets/medicaid-community-engagement-requirement-certain-individuals-interim-final-rule-comment-period-cms"
+          },
+          {
+              "label": "CMS State Medicaid Director Letter SMD# 26-006",
+              "url": "https://www.medicaid.gov/Federal-Policy-Guidance/Downloads/smd26006.pdf"
+          },
+          {
+              "label": "Medicaid.gov Community Engagement Overview",
+              "url": "https://www.medicaid.gov/resources-for-states/working-families-tax-cut-legislation/community-engagement"
+          },
+          {
+              "label": "Oregon Health Authority Hold Harmless Announcement",
+              "url": "https://www.oregon.gov/oha/ERD/Pages/OHA-to-delay-enforcement-of-new-federal-Medicaid-work-rules-to-keep-people-in-Oregon-insured-11.23.2026.aspx"
+          }
+      ],
+      "disclaimerText": "This is general educational information on federal and state Medicaid policy, not legal, financial or healthcare advice. Medicaid eligibility determinations and procedural rules vary by state jurisdiction."
+  },
+  // ── x-trends-mindmap-auto 2026-11-25: conforming-loan-limit-2027 ──
+  {
+      "updated": "2026-11-25",
+      "published": "2026-11-25",
+      "slug": "conforming-loan-limit-2027",
+      "title": "2027 Conforming Loan Limit: $855,400 and the Jumbo Line",
+      "metaDescription": "See the 2027 conforming loan limit of $855,400, high-cost caps up to $1,283,100, maximum home prices by down payment, and when jumbo loan rules apply.",
+      "h1": "2027 Conforming Loan Limit: $855,400 and the Jumbo Line",
+      "cardBlurb": "The baseline 2027 conforming loan limit is $855,400 for a one-unit home. Review maximum purchase prices across down payment levels before crossing into jumbo territory.",
+      "introText": "You can borrow up to $855,400 for a one-unit property in most counties in 2027 before your mortgage crosses into a jumbo loan. The [Federal Housing Finance Agency (FHFA)](https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027) raised the baseline conforming loan limit (CLL) by $22,650 from the 2026 level of $832,750, tracking a 2.72 percent rise in third-quarter average national home prices. In designated high-cost housing markets, the ceiling reaches $1,283,100, while special statutory provisions set higher baseline and ceiling levels in Alaska, Hawaii, Guam, and the U.S. Virgin Islands. Because the conforming limit caps the total amount borrowed rather than the property purchase price, your down payment determines exactly how expensive a home you can buy before leaving the conforming mortgage market.",
+      "reviewerNote": {
+          "label": "Publisher's Take",
+          "reviewedDate": "2026-11-25",
+          "note": "Borrowers near the borrowing boundary should calculate their loan balance rather than relying on listing prices, because each additional dollar of cash equity lowers the debt dollar for dollar. The $22,650 baseline expansion provides meaningful flexibility for purchases in early 2027, provided your lender confirms that your mortgage qualifies under the new annual acquisition schedule."
+      },
+      "sections": [
+          {
+              "heading": "The 2027 Conforming Loan Limit",
+              "body": "The 2027 baseline conforming loan limit for one-unit properties is $855,400 across the majority of United States counties. This represents an increase of $22,650 over the 2026 baseline limit of $832,750. Under federal statutory formulas, the baseline limit adjusts annually based on changes in the national average home price between the third quarter of the previous year and the third quarter of the current year. Between the third quarter of 2025 and the third quarter of 2026, average home prices increased by 2.72 percent, and FHFA applied that identical 2.72 percent rate of increase to the baseline loan threshold.\n\nIn high-cost areas where local median home values exceed the national baseline, federal law establishes a local ceiling calculated at 150 percent of the baseline conforming limit. For one-unit properties in these high-cost counties, the 2027 ceiling is $1,283,100. Specific statutory exceptions apply to Alaska, Hawaii, Guam, and the U.S. Virgin Islands. In those four designated regions, the local baseline limit is set at $1,283,100 and the maximum high-cost ceiling reaches $1,924,650 for a single-family one-unit residence.\n\nConforming loan limits define the maximum dollar size of a mortgage that government-sponsored enterprises Fannie Mae and Freddie Mac can acquire. These limits apply specifically to the total principal balance of the mortgage note, not to the contract purchase price of the real estate. When a buyer submits a down payment, the loan amount represents only the remaining unpaid balance. A homebuyer purchasing a property priced above $855,400 can still obtain a conforming loan as long as their cash down payment reduces the total borrowed principal to $855,400 or less."
+          },
+          {
+              "heading": "Purchase Price Before a Loan Becomes Jumbo",
+              "body": "In our internal calculation, we modeled the relationship between down payment percentages and maximum purchase prices to show how much home you can buy before crossing into jumbo financing. Using the mathematical formula of purchase price equal to loan limit divided by one minus the down payment share, we calculated the maximum transaction value supported by conforming loans at baseline and high-cost limits. The table below outlines these thresholds for one-unit properties across standard down payment levels of 3 percent, 5 percent, 10 percent, 15 percent, and 20 percent.\n\nBaseline counties, loan at the $855,400 limit:\n\n| Down payment | Down payment in dollars | Highest purchase price a conforming loan can finance |\n| --- | ---: | ---: |\n| 3% | $26,456 | $881,856 |\n| 5% | $45,021 | $900,421 |\n| 10% | $95,044 | $950,444 |\n| 15% | $150,953 | $1,006,353 |\n| 20% | $213,850 | $1,069,250 |\n\nHigh-cost counties, loan at the $1,283,100 ceiling:\n\n| Down payment | Down payment in dollars | Highest purchase price a conforming loan can finance |\n| --- | ---: | ---: |\n| 3% | $39,684 | $1,322,784 |\n| 5% | $67,532 | $1,350,632 |\n| 10% | $142,567 | $1,425,667 |\n| 15% | $226,429 | $1,509,529 |\n| 20% | $320,775 | $1,603,875 |\n\nThe formula is purchase price = loan limit / (1 - down payment share). To test specific down payment figures and equity amounts for your budget, use our [down payment calculator](/mortgage/down-payment-calculator/).",
+              "table": {
+                  "caption": "Maximum Home Purchase Prices under 2027 Conforming Limits",
+                  "headers": [
+                      "Loan Limit Tier",
+                      "One-Unit Loan Limit",
+                      "Down Payment %",
+                      "Down Payment Cash Required",
+                      "Maximum Supported Purchase Price"
+                  ],
+                  "rows": [
+                      [
+                          "Baseline County",
+                          "$855,400",
+                          "3%",
+                          "$26,456",
+                          "$881,856"
+                      ],
+                      [
+                          "Baseline County",
+                          "$855,400",
+                          "5%",
+                          "$45,021",
+                          "$900,421"
+                      ],
+                      [
+                          "Baseline County",
+                          "$855,400",
+                          "10%",
+                          "$95,044",
+                          "$950,444"
+                      ],
+                      [
+                          "Baseline County",
+                          "$855,400",
+                          "15%",
+                          "$150,953",
+                          "$1,006,353"
+                      ],
+                      [
+                          "Baseline County",
+                          "$855,400",
+                          "20%",
+                          "$213,850",
+                          "$1,069,250"
+                      ],
+                      [
+                          "High-Cost Ceiling",
+                          "$1,283,100",
+                          "3%",
+                          "$39,684",
+                          "$1,322,784"
+                      ],
+                      [
+                          "High-Cost Ceiling",
+                          "$1,283,100",
+                          "5%",
+                          "$67,532",
+                          "$1,350,632"
+                      ],
+                      [
+                          "High-Cost Ceiling",
+                          "$1,283,100",
+                          "10%",
+                          "$142,567",
+                          "$1,425,667"
+                      ],
+                      [
+                          "High-Cost Ceiling",
+                          "$1,283,100",
+                          "15%",
+                          "$226,429",
+                          "$1,509,529"
+                      ],
+                      [
+                          "High-Cost Ceiling",
+                          "$1,283,100",
+                          "20%",
+                          "$320,775",
+                          "$1,603,875"
+                      ]
+                  ]
+              }
+          },
+          {
+              "heading": "Understanding Down Payment Math and Equity Impact",
+              "body": "Every extra dollar added to a down payment lowers the amount you borrow by one dollar. If your loan lands slightly above the limit, a larger down payment can bring it back under.\n\nThe table assumes closing costs and prepaid items are paid in cash rather than added to the loan. If fees or financed insurance premiums are added to the loan principal, the purchase price a conforming loan supports is lower. A lender may also set its own thresholds."
+          },
+          {
+              "heading": "Find Your County Limit",
+              "body": "While $855,400 is the nationwide baseline, FHFA says 2027 limits are higher than 2026 limits in all but 24 counties or county equivalents. Most counties use the $855,400 baseline, and counties with higher home values have limits between $855,400 and $1,283,100. Homebuyers must check the specific limit assigned to the county where the subject property is located rather than relying on national figures alone.\n\nTo identify your local lending threshold, consult the official county datasets provided on the [FHFA conforming loan limit page](https://www.fhfa.gov/data/conforming-loan-limit). The agency publishes comprehensive downloadable county lists, interactive mapping resources, a technical methodology addendum, and detailed administrative guidelines. These documents list every county and county equivalent by state.\n\nIn the highest-cost counties, limits reach the $1,283,100 ceiling. The baseline figures in our table are a floor for any county with a higher limit. For any county with an elevated limit, the maximum purchase price supported by a conforming loan will be higher than the baseline figures at every down payment level."
+          },
+          {
+              "heading": "Does Waiting until January Help?",
+              "body": "Waiting until January 2027 to finalize a mortgage transaction only benefits borrowers borrowing within a specific dollar window. Because the baseline limit increases from $832,750 in 2026 to $855,400 in 2027, the potential advantage applies exclusively to loan amounts between $832,750 and $855,400 in baseline counties. If your anticipated loan balance is below $832,750, the loan already meets conforming standards under 2026 rules. If your loan balance exceeds $855,400, the mortgage remains non-conforming regardless of the annual calendar change unless your county features a higher localized limit.\n\nEven for loans falling inside that $22,650 band, waiting until January does not guarantee conforming treatment without direct lender confirmation. FHFA states in its official documentation that conforming loan limits apply to mortgages acquired by Fannie Mae and Freddie Mac in the 2027 calendar year. The agency's public data pages tie the limits to the calendar year in which the loan is acquired and do not state a specific loan delivery rule or origination date rule.\n\nMortgage lenders establish their own pipeline policies regarding when they begin applying upcoming loan limits to newly originated applications. You must ask your lender directly which annual limit applies to your specific closing date."
+          },
+          {
+              "heading": "What Changes If You Go Jumbo",
+              "body": "A loan above the conforming limit in your county is a jumbo loan. Fannie Mae and Freddie Mac cannot acquire it under the 2027 limit, so each lender sets its own underwriting rules and terms for it.\n\nAsk each lender for its jumbo requirements and rates before you commit. To compare jumbo financing with conventional, government-insured and other options, read our breakdown of [types of mortgage loans](/guides/types-of-mortgage-loans/)."
+          },
+          {
+              "heading": "Our Takeaway",
+              "body": "If your total borrowed mortgage balance is $855,400 or less, your loan qualifies as conforming across all United States counties in 2027. Most counties use the $855,400 baseline, and high-cost counties run up to $1,283,100, so check your county lookup on the FHFA page. If your proposed loan balance exceeds your county's designated limit, you will need to either secure a non-conforming jumbo mortgage or increase your down payment cash to bring the loan amount below the limit.\n\nWaiting until January to close your transaction is only meaningful if your intended loan balance sits inside the specific $22,650 window between $832,750 and $855,400 in a baseline county, or the corresponding increment in a high-cost area. Because FHFA rules govern the calendar year the loan is acquired and individual lenders establish their own application schedules, you must verify your lender's intake rules before shifting transaction dates. For any purchase near the boundary, remember that each additional dollar contributed toward your down payment reduces the required loan principal dollar for dollar, providing an actionable way to maintain conforming financing."
+          }
+      ],
+      "tools": [
+          {
+              "href": "/mortgage/down-payment-calculator/",
+              "label": "Down Payment Calculator"
+          },
+          {
+              "href": "/mortgage/home-affordability-calculator/",
+              "label": "Home Affordability Calculator"
+          },
+          {
+              "href": "/guides/types-of-mortgage-loans/",
+              "label": "Types of Mortgage Loans"
+          }
+      ],
+      "faqs": [
+          {
+              "question": "What is the 2027 conforming loan limit for a one-unit home?",
+              "answer": "The 2027 baseline conforming loan limit for a one-unit property is $855,400 in most counties across the United States. In designated high-cost housing markets, the ceiling reaches $1,283,100. In Alaska, Hawaii, Guam, and the U.S. Virgin Islands, the baseline is $1,283,100 and the maximum ceiling is $1,924,650."
+          },
+          {
+              "question": "Does the conforming loan limit cap the purchase price or the loan amount?",
+              "answer": "The conforming loan limit caps the loan amount, not the purchase price. A home priced above $855,400 can still carry a conforming loan if your down payment brings the loan to $855,400 or less in a baseline county."
+          },
+          {
+              "question": "How did FHFA calculate the $855,400 limit for 2027?",
+              "answer": "The Federal Housing Finance Agency calculated the 2027 limit by applying the percentage increase in national average home prices between the third quarter of 2025 and the third quarter of 2026. National home prices rose by 2.72 percent during that period, increasing the baseline limit by $22,650 over the 2026 figure of $832,750."
+          },
+          {
+              "question": "Is my county limit higher than $855,400?",
+              "answer": "Possibly. Most counties use $855,400, and high-cost counties go up to $1,283,100, so check your county on the FHFA page."
+          },
+          {
+              "question": "Will closing in December versus January change whether my loan is jumbo?",
+              "answer": "Closing in January matters only if your loan sits between $832,750 and $855,400 in a baseline county, and only if your lender confirms which year's limit applies to your loan. FHFA states the limits for mortgages Fannie Mae and Freddie Mac can acquire in 2027, and it states no delivery-date rule."
+          },
+          {
+              "question": "Who sets jumbo mortgage rates and terms?",
+              "answer": "Each lender sets its own rates and terms for loans above the limit, so ask each lender for its jumbo requirements."
+          }
+      ],
+      "sources": [
+          {
+              "label": "FHFA Announces Conforming Loan Limit Values for 2027",
+              "url": "https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027"
+          },
+          {
+              "label": "FHFA Conforming Loan Limits Data and County Schedules",
+              "url": "https://www.fhfa.gov/data/conforming-loan-limit"
+          }
+      ]
+  },
+  // ── x-trends-mindmap-auto 2026-11-25: hud-mixed-status-housing-rule ──
+  {
+      "updated": "2026-11-25",
+      "published": "2026-11-25",
+      "slug": "hud-mixed-status-housing-rule",
+      "title": "HUD Mixed-Status Housing Rule: What Changes December 14",
+      "metaDescription": "Learn what HUD's mixed-status housing rule changes on December 14, 2026, which programs are covered, the 90-day verification window, and legal challenges.",
+      "h1": "HUD Mixed-Status Housing Rule: What Changes December 14",
+      "cardBlurb": "See which programs fall under HUD's verification rule, how the 90-day evidence deadline works for mixed-status families, and what pending lawsuits mean.",
+      "introText": "Families receiving federal rental assistance face new documentation rules starting December 14, 2026, when HUD begins requiring proof of eligible status for every household member regardless of age. Mixed-status families have 90 days, and other tenants submit at their next reexamination. Prorated rent help continues only temporarily while documentation is pending. A federal lawsuit led by New York and 20 other states plus the District of Columbia, joined by Pennsylvania's governor, is currently challenging the rule in the U.S. District Court for the District of Massachusetts. We found no court order in the multistate case, so the rule remains scheduled to take effect as written. Other suits, including a tenant class action and a local-government suit, are also pending.",
+      "reviewerNote": {
+          "label": "Publisher's Take",
+          "reviewedDate": "2026-11-25",
+          "note": "HUD's shift from permanent proration to a temporary 90-day verification window directly threatens household stability across public housing and voucher programs. Families must request written documentation from housing authorities immediately while monitoring whether the multi-state federal lawsuit yields an injunction before mid-December."
+      },
+      "sections": [
+          {
+              "heading": "What Changes on December 14",
+              "body": "The U.S. Department of Housing and Urban Development (HUD) published its final rule in the Federal Register on November 12, 2026, under document number [FR 2026-23003](https://www.federalregister.gov/documents/2026/11/12/2026-23003/housing-and-community-development-act-of-1980-verification-of-eligible-status), titled Housing and Community Development Act of 1980: Verification of Eligible Status (91 FR 72978). This regulation carries an official effective date of December 14, 2026. The most consequential change in the regulation revises HUD's Section 214 rules by requiring verification of U.S. citizenship or eligible immigration status for every individual applicant and recipient of assistance under covered programs, regardless of how old the family member is.\n\nUnder regulations that existed prior to this final rule, mixed-status families were permitted to live together in subsidized housing while receiving prorated assistance. In those arrangements, a household received a partial rent subsidy calculated strictly for the members who had verified citizenship or eligible immigration status, while members without eligible status received no direct subsidy. Under those prior standards, an individual family member could elect not to contend eligible status. Choosing that option meant the individual did not have to submit immigration documents, and the family simply accepted a smaller, prorated subsidy that reflected only the eligible members.\n\nThe final rule published on November 12 completely eliminates that option. Going forward, every person living in an assisted unit must have their status affirmatively verified. Prorated assistance is no longer an ongoing arrangement that a family can maintain indefinitely. Instead, the final rule redefines prorated assistance as a temporary status that only applies while the verification of all household members is actively pending, where permitted by statute. If any member of the household cannot or does not establish eligible status, the family can no longer rely on long-term proration to maintain subsidized tenancy under covered housing programs."
+          },
+          {
+              "heading": "Who Is Affected and Which Programs Are Covered",
+              "body": "The reach of the regulation is defined by the underlying statutory authorities governing federal housing subsidies. According to [HUD's official guidance](https://www.hud.gov/hud-partners/verification-of-eligible-status) and the Federal Register preamble, the final rule applies specifically to Section 214 covered programs. The covered programs include Section 236 of the National Housing Act, specifically for tenants paying below-market rent. They also include programs authorized under the United States Housing Act of 1937: Public Housing, the Housing Choice Voucher (HCV) program, Project-based Section 8 rental assistance, and low-income units supported by Housing Development Grants.\n\nIn contrast, HUD explicitly identifies several multifamily programs that are not covered by this Section 214 final rule. The excluded categories are Section 202 and Section 811 Project Rental Assistance Contracts (202/811 PRAC), Section 811 Project Rental Assistance (811 PRA), Senior Preservation Rental Assistance Contracts (SPRAC), and Section 202/162 Project Assistance Contracts (202/162 PAC). Households residing in units subsidized strictly under these excluded programs are not subject to the new verification mandate or the removal of the election not to contend eligible status.\n\nAccording to HUD estimates cited in the [New York Attorney General's Nov 23, 2026 release](https://ag.ny.gov/press-release/2026/attorney-general-james-sues-stop-trump-administration-pushing-thousands-us), approximately 20,000 mixed-status families nationwide could lose their rental assistance under the new mandate. Those households encompass roughly 78,100 individual residents. Notably, the same estimates indicate that about 55,000 of the individuals who stand to lose assistance are fully eligible residents themselves, mostly children."
+          },
+          {
+              "heading": "Timeline Table",
+              "body": "The table below lists the dates that matter, in order.\n\n| Date or trigger | What happens | Source |\n| --- | --- | --- |\n| Nov 12, 2026 | HUD publishes the final rule (91 FR 72978) | Federal Register |\n| Nov 23, 2026 | New York and 20 other states plus the District of Columbia, joined by Pennsylvania's governor, file suit in the District of Massachusetts | New York Attorney General |\n| Dec 14, 2026 | Rule takes effect | Federal Register |\n| Within 30 days after Dec 14 | Housing authority or owner must send the Section 214 notice to tenants who have not submitted evidence | Federal Register |\n| Within 90 days of Dec 14 (about Mar 14, 2027) | Mixed-status families must submit evidence | Federal Register |\n| Next annual or interim reexamination | All other tenants must submit evidence | Federal Register |\n| On certification | Written extension of up to 60 days in total | Federal Register |\n\nThis second table shows which programs the rule covers.\n\n| Program | Covered by the rule | Source |\n| --- | --- | --- |\n| Public Housing | Yes | Federal Register; HUD |\n| Housing Choice Vouchers | Yes | HUD |\n| Project-based Section 8 | Yes | HUD |\n| Section 236 (tenants paying below-market rent only) | Yes | Federal Register |\n| Housing Development Grant programs (low-income units only) | Yes | Federal Register |\n| 202/811 PRAC, 811 PRA, SPRAC, 202/162 PAC | No | HUD |"
+          },
+          {
+              "heading": "Timeline and Deadlines for Mixed-Status Families",
+              "body": "The regulation creates two separate compliance tracks depending on whether a household is currently classified as a mixed-status family. The shortest timeline applies directly to mixed-status families who are already receiving assistance but have members who have not submitted verification evidence. For tenants in mixed families who have not submitted proof of citizenship or eligible immigration status as of December 14, 2026, the final rule requires that all required documentation be submitted within 90 days of December 14, 2026. That 90-day window sets the initial deadline at approximately March 14, 2027.\n\nFor all other existing tenants in covered programs who have not previously submitted verification evidence, the timeline is longer. Those non-mixed households must submit proof at their next regular annual or interim reexamination of income and household composition scheduled after December 14, 2026. For applicants seeking admission to covered programs, verification documents must be submitted no later than the date when the housing provider examines other eligibility criteria.\n\nHousing providers and responsible entities have specific legal obligations during this rollout. Housing authorities and private property owners must deliver an official Section 214 notification to every tenant who has not yet submitted evidence no later than 30 days after the December 14 effective date. However, HUD specifically declined to tie the running of the 90-day compliance window to the date an individual tenant receives that letter. The 90-day clock runs strictly from the effective date of December 14, 2026.\n\nA tenant who cannot produce the necessary documents before the deadline may qualify for an extension. Under Section 5.508(g) of the rule, a housing authority or owner must grant an extension if the family submits the required declaration and consent forms certifying eligible status, certifies that the underlying documents are temporarily unavailable or more time is needed, and shows that prompt, diligent efforts will be made to obtain the evidence. Any extension granted under this provision must be issued in writing, cannot exceed 60 days in total, and cannot run concurrently with other submission timelines.",
+              "table": {
+                  "caption": "HUD Mixed-Status Verification Rule Implementation Deadlines",
+                  "headers": [
+                      "Milestone or Event",
+                      "Governing Date or Window",
+                      "Affected Population or Obligation"
+                  ],
+                  "rows": [
+                      [
+                          "Publication in Federal Register",
+                          "November 12, 2026",
+                          "Published as FR 2026-23003 (91 FR 72978)"
+                      ],
+                      [
+                          "Official Effective Date",
+                          "December 14, 2026",
+                          "Verification mandate takes effect across covered HUD programs"
+                      ],
+                      [
+                          "Provider Notice Obligation",
+                          "Within 30 days of Dec 14, 2026",
+                          "Housing authorities must send Section 214 notice to unverified tenants"
+                      ],
+                      [
+                          "Mixed-Status Evidence Window",
+                          "Within 90 days of Dec 14, 2026",
+                          "Tenants in mixed families must submit proof (approx. March 14, 2027)"
+                      ],
+                      [
+                          "Extension Cap",
+                          "Up to 60 additional days",
+                          "Granted in writing if tenant certifies status and diligent efforts"
+                      ],
+                      [
+                          "Standard Tenant Deadline",
+                          "Next scheduled reexamination",
+                          "Non-mixed households submit evidence at next annual or interim review"
+                      ]
+                  ]
+              }
+          },
+          {
+              "heading": "The Multistate Lawsuit Challenging the Rule",
+              "body": "On November 23, 2026, a major legal challenge was filed in the U.S. District Court for the District of Massachusetts seeking to invalidate HUD's final rule. The lawsuit is led by New York Attorney General Letitia James and represents a coalition of 22 attorneys general. The plaintiffs include New York and 20 other states plus the District of Columbia, joined by Pennsylvania's governor. The specific plaintiff states identified in the action are Arizona, California, Colorado, Connecticut, Delaware, Hawaii, Illinois, Maine, Maryland, Massachusetts, Michigan, Minnesota, New Jersey, New Mexico, Oregon, Rhode Island, Virginia, Vermont, Washington, Wisconsin, and the District of Columbia, alongside New York.\n\nThe complaint asserts that HUD exceeded its statutory authority under the Housing and Community Development Act of 1980. The states argue that Congress explicitly codified the ability of mixed-status families to receive prorated housing assistance through legislation enacted in 1997, and that HUD lacks the administrative authority to overwrite that statutory compromise by regulation. Furthermore, the coalition argues that HUD violates the Administrative Procedure Act.\n\nThe lawsuit asks the federal court to issue a declaration, vacatur, and an injunction for plaintiff states. However, tenants and advocates must recognize that as of November 25, 2026, no court order, temporary restraining order, preliminary injunction, or vacatur has been granted in the multistate case. The filing of a lawsuit does not pause a federal regulation. Unless and until a federal judge signs an order blocking the rule, housing providers remain legally bound to implement the December 14, 2026 requirements."
+          },
+          {
+              "heading": "What Tenants and Assisted Families Should Do Now",
+              "body": "Do not leave your home or give up your voucher because of rumors. The rule sets notice periods and extensions, and a pending lawsuit does not stop it on its own.\n\n1. Contact your housing authority or property owner to confirm which program funds your unit and which family members have already submitted documents.\n2. Gather identity and status documents for every household member.\n3. Ask about an extension. A housing provider must grant one of up to 60 days in total if you certify that eligible status exists and that the evidence is temporarily unavailable, and you show diligent efforts to get it.\n4. Contact local legal aid or a tenant advocacy group about your household's records and the lawsuit.\n5. If a subsidy change could affect your budget, plan with our guide on [how much to spend on rent](/guides/how-much-should-i-spend-on-rent/)."
+          },
+          {
+              "heading": "Our Takeaway on HUD Verification Requirements",
+              "body": "If your household resides in Public Housing, uses a Housing Choice Voucher, or lives in Project-based Section 8 housing, you should start gathering documents now, because the rule takes effect December 14, 2026. Assemble proof of citizenship or eligible immigration status for every person listed on your lease. Mixed-status families should not wait for their annual renewal date, because the regulation sets a 90-day submission deadline measured from December 14, 2026, which falls on approximately March 14, 2027. Most other households have a year or more, since they submit at their next annual or interim reexamination.\n\nThis recommendation is based on the published regulatory text in Federal Register document 2026-23003 and the current procedural status of the federal docket. Our guidance would change if the U.S. District Court for the District of Massachusetts or another federal court enters an order staying the effective date or granting a preliminary injunction, or if HUD formally issues an administrative stay or revised implementation timeline. Until an official court order or housing authority notice confirms a delay, tenants should assume the verification deadlines remain fully operative."
+          }
+      ],
+      "tools": [
+          {
+              "href": "/guides/how-much-should-i-spend-on-rent/",
+              "label": "Rent Budget Planning Guide"
+          }
+      ],
+      "faqs": [
+          {
+              "question": "What happens if a family cannot provide documents before the 90-day deadline?",
+              "answer": "If a mixed-status family cannot provide documentation within the 90-day window following December 14, 2026, the household can request a formal extension. Under Section 5.508(g) of the final rule, housing providers must grant an extension of up to 60 days if the family submits forms certifying that unverified members hold eligible status and explains in writing that documents are temporarily unavailable despite diligent efforts. If a family fails to submit documentation after the deadline and any granted extension, consequences follow under paragraph (h) of the rule."
+          },
+          {
+              "question": "Does the multistate lawsuit stop the rule from taking effect on December 14?",
+              "answer": "No. The filing of a federal complaint does not pause or block a federal regulation. A coalition of 22 attorneys general, led by New York and joined by Pennsylvania's governor, filed suit in the U.S. District Court for the District of Massachusetts on November 23, 2026, seeking an injunction and vacatur. However, as of November 25, 2026, no court order or injunction has been issued. The rule remains scheduled to take effect on December 14, 2026, unless a judge issues a stay before that date."
+          },
+          {
+              "question": "Can mixed-status families still elect not to contend eligible status?",
+              "answer": "No. Under prior HUD regulations, family members could elect not to contend eligible immigration status, which allowed the household to receive prorated assistance without submitting immigration papers for those individuals. The final rule published on November 12, 2026, officially eliminates the election not to contend eligible status. Every member of an assisted household under covered programs must now have their eligible status verified."
+          },
+          {
+              "question": "Are Section 202 and Section 811 housing programs affected by the rule?",
+              "answer": "HUD's page lists the 202/811 PRAC, 811 PRA, SPRAC and 202/162 PAC programs as not covered. Public Housing, Housing Choice Vouchers and Project-based Section 8 are covered. Ask your housing authority or owner which program funds your unit."
+          },
+          {
+              "question": "How will tenants be notified about the new verification requirements?",
+              "answer": "The final rule requires responsible entities, such as local public housing authorities or private property owners participating in covered programs, to issue an official Section 214 notice to each tenant who has not yet submitted proof of citizenship or eligible status. This notice must be sent no later than 30 days after the December 14, 2026 effective date. However, the 90-day compliance period for mixed-status families runs from December 14, 2026, rather than the date the notice is received."
+          }
+      ],
+      "sources": [
+          {
+              "label": "Federal Register: Housing and Community Development Act of 1980: Verification of Eligible Status (FR 2026-23003)",
+              "url": "https://www.federalregister.gov/documents/2026/11/12/2026-23003/housing-and-community-development-act-of-1980-verification-of-eligible-status"
+          },
+          {
+              "label": "HUD: Verification of Eligible Status Guidance",
+              "url": "https://www.hud.gov/hud-partners/verification-of-eligible-status"
+          },
+          {
+              "label": "New York Attorney General: Multi-State Lawsuit Challenging HUD Mixed-Status Rule",
+              "url": "https://ag.ny.gov/press-release/2026/attorney-general-james-sues-stop-trump-administration-pushing-thousands-us"
+          }
+      ],
+      "disclaimerText": "This is general information on published federal rules and court filings. It is not legal advice, immigration counseling or tenant representation. Households facing housing compliance or immigration questions should consult a qualified legal aid attorney or accredited representative."
   },
 ];
 

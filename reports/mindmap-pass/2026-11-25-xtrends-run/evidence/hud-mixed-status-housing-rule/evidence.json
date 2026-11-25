@@ -1,0 +1,77 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "mindmap-write",
+ "route": "/guides/hud-mixed-status-housing-rule/",
+ "readerQuestion": "Which families lose prorated rent help under HUD's mixed-status rule, and what should tenants do? [verb-only - no PAA, no completions]",
+ "approvedPlan": {
+  "manifest": {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/approval-manifest.json",
+   "sha256": "6c14985eb561e414f7f73570656803a94abbd5fbb57e23f4fa3d9e3a43d6d61a"
+  },
+  "review": {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/chart-review.json",
+   "sha256": "8acdedee1ab772bbcdfa994f0f77a57141ea9ebf6b4acdc3cbb1a17a9e3f59fe"
+  },
+  "actionId": "A5"
+ },
+ "presentation": {
+  "medium": "text + comparison table",
+  "placement": "section 1: 'What Changes on December 14'",
+  "reason": "Dated rule changes and who-is-affected cases are finite; a timeline table plus short sections suffice.",
+  "readerInputs": [],
+  "interaction": {
+   "decision": "not-useful",
+   "reason": "A fixed finite set of cases; a static table answers faster than inputs"
+  },
+  "animation": {
+   "decision": "not-useful",
+   "reason": "Static scannable layout answers faster; no sequence to animate"
+  }
+ },
+ "basis": "reported",
+ "decisionGap": "Tenants cannot tell from news summaries what changes on Dec 14, who has to document status and by when, or whether the lawsuit stops the rule.",
+ "finding": "HUD's final rule (FR 2026-23003, 91 FR 72978, published Nov 12 2026) is effective Dec 14 2026. It requires verification of citizenship or eligible immigration status for all applicants and recipients of covered programs regardless of age, and makes prorated assistance a temporary condition pending verification. Tenants in mixed families who have not submitted evidence by Dec 14 must do so within 90 days of Dec 14 2026; other tenants at their next annual or interim reexamination. Responsible entities must give the Section 214 notice within 30 days after the effective date. Extensions of up to 60 days are available on certification. The NY AG suit (Nov 23 2026, D. Mass.) is pending; no injunction verified.",
+ "conditions": "Covered programs per FR: Section 236 (tenants paying below market rent), Public Housing, Section 8 rental assistance programs and Housing Development Grant low-income units; HUD's page lists 202/811 PRAC, 811 PRA, SPRAC and 202/162 PAC as not covered. Not legal advice. Dec 14 is when HUD begins requiring verification, not a submission date for everyone: mixed-status families have 90 days (about Mar 14, 2027), other tenants submit at their next reexamination, and most households have a year or more (Federal Register). Docket: no order found in the multistate case; a web search showed other pending suits (a tenant class action and a local-government suit), which are mentioned without detail.",
+ "whatWouldChange": "A court order blocking the rule, HUD revising it, or a housing authority's own notice with different dates.",
+ "caseSelection": {
+  "path": "reports/mindmap-pass/2026-11-25-xtrends-run/evidence/hud-mixed-status-housing-rule/cases.json",
+  "sha256": "f74bf9c480c86ba137438c264fbd51b73339c06f7c77f89fcf2e24f66a4079fd"
+ },
+ "caseDecisions": "Retrieved cases.json for this question: no approved client record on this site matches (site _experience.md lists no named-client specifics). No client claim used; none forced.",
+ "sourceArtifacts": [
+  {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/hud-mixed-status-rule.txt",
+   "sha256": "0ce53843d402c1ba27d963098c8fd0d86130e60d25ffc104c17d6a9f7ca283b9"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/ny-ag-hud-lawsuit.txt",
+   "sha256": "0e1c84e7af5ea0f9440f86b0bfc6f2c4700978a9ff732a8eae81620afced3083"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/research/coverage-lookup.txt",
+   "sha256": "4eb2f2b166b5ac49eca0861e02f0ad059bc46cfc0106727c76f562c81403a162"
+  },
+  {
+   "path": "reports/x-trends/2026-11-25.md",
+   "sha256": "3d4b8fc88a4a099cc9d035695505b4a8726d0ff16b737e24bcdafee3aea577b7"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/fr-2026-23003-excerpt.txt",
+   "sha256": "d456450a72e9d31a01fbdce474e36ab5685de87ff66e3e91a946d49b02731354"
+  }
+ ],
+ "whyNoQuantitativeAnalysis": "Regulatory dates and rules; no calculation changes the answer. The only date arithmetic is Dec 14 2026 plus 90 days = Mar 14 2027.",
+ "reasoning": "Federal Register text read in this run (fr-2026-23003-excerpt.txt) gives the effective date, covered programs, 90-day and reexamination timing, 30-day notice and 60-day extension; HUD verification page and NY AG release give program exclusions and the suit. State count: NY AG release lists 21 other AGs besides NY plus DC and PA's governor, so the page uses the NY AG wording rather than a state count.",
+ "provenance": {
+  "basis": "reported",
+  "supportingRecordIds": [
+   "fr-2026-23003-excerpt.txt",
+   "hud-mixed-status-rule.txt",
+   "ny-ag-hud-lawsuit.txt"
+  ],
+  "scopeAndLimits": "HUD and Federal Register text; NY AG release for the suit",
+  "publicMethod": "On-page attribution with links",
+  "placement": "section 1 and timeline table"
+ },
+ "sourceLimits": "NY AG release read through a BUILD fetch extraction; AUDIT re-reads and recounts. Docket status rechecked only through the NY AG release in this run; no order verified. Audit R1: opening and takeaway reworded; docket sentence scoped to the multistate case."
+}

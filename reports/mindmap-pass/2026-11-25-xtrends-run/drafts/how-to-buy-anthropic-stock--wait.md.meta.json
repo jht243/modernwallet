@@ -1,0 +1,51 @@
+{
+ "slug": "how-to-buy-anthropic-stock--wait",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 150,
+ "floor": 0,
+ "input_tokens": 19522,
+ "output_tokens": 330,
+ "thinking_tokens": 2142,
+ "cached_tokens": 17690,
+ "est_cost_usd": 0.012,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 150,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 1,
+   "found": [
+    0
+   ],
+   "applied": [],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 150
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 3167
+  }
+ },
+ "seconds": 46.4,
+ "response_id": "iRcHa4rGONKgo_UPrv7SwQk",
+ "generated_at": "2026-11-25T17:15:36+0000"
+}

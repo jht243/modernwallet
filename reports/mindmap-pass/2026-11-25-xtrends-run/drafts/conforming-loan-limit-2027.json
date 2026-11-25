@@ -1,0 +1,188 @@
+{
+  "updated": "2026-11-25",
+  "published": "2026-11-25",
+  "slug": "conforming-loan-limit-2027",
+  "title": "2027 Conforming Loan Limit: $855,400 and the Jumbo Line",
+  "metaDescription": "See the 2027 conforming loan limit of $855,400, high-cost caps up to $1,283,100, maximum home prices by down payment, and when jumbo loan rules apply.",
+  "h1": "2027 Conforming Loan Limit: $855,400 and the Jumbo Line",
+  "cardBlurb": "The baseline 2027 conforming loan limit is $855,400 for a one-unit home. Review maximum purchase prices across down payment levels before crossing into jumbo territory.",
+  "introText": "You can borrow up to $855,400 for a one-unit property in most counties in 2027 before your mortgage crosses into a jumbo loan. The [Federal Housing Finance Agency (FHFA)](https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027) raised the baseline conforming loan limit (CLL) by $22,650 from the 2026 level of $832,750, tracking a 2.72 percent rise in third-quarter average national home prices. In designated high-cost housing markets, the ceiling reaches $1,283,100, while special statutory provisions set higher baseline and ceiling levels in Alaska, Hawaii, Guam, and the U.S. Virgin Islands. Because the conforming limit caps the total amount borrowed rather than the property purchase price, your down payment determines exactly how expensive a home you can buy before leaving the conforming mortgage market.",
+  "reviewerNote": {
+    "label": "Publisher's Take",
+    "reviewedDate": "2026-11-25",
+    "note": "Borrowers near the borrowing boundary should calculate their loan balance rather than relying on listing prices, because each additional dollar of cash equity lowers the debt dollar for dollar. The $22,650 baseline expansion provides meaningful flexibility for purchases in early 2027, provided your lender confirms that your mortgage qualifies under the new annual acquisition schedule."
+  },
+  "sections": [
+    {
+      "heading": "The 2027 Conforming Loan Limit",
+      "body": "The 2027 baseline conforming loan limit for one-unit properties is $855,400 across the majority of United States counties. This represents an increase of $22,650 over the 2026 baseline limit of $832,750. Under federal statutory formulas, the baseline limit adjusts annually based on changes in the national average home price between the third quarter of the previous year and the third quarter of the current year. Between the third quarter of 2025 and the third quarter of 2026, average home prices increased by 2.72 percent, and FHFA applied that identical 2.72 percent rate of increase to the baseline loan threshold.\n\nIn high-cost areas where local median home values exceed the national baseline, federal law establishes a local ceiling calculated at 150 percent of the baseline conforming limit. For one-unit properties in these high-cost counties, the 2027 ceiling is $1,283,100. Specific statutory exceptions apply to Alaska, Hawaii, Guam, and the U.S. Virgin Islands. In those four designated regions, the local baseline limit is set at $1,283,100 and the maximum high-cost ceiling reaches $1,924,650 for a single-family one-unit residence.\n\nConforming loan limits define the maximum dollar size of a mortgage that government-sponsored enterprises Fannie Mae and Freddie Mac can acquire. These limits apply specifically to the total principal balance of the mortgage note, not to the contract purchase price of the real estate. When a buyer submits a down payment, the loan amount represents only the remaining unpaid balance. A homebuyer purchasing a property priced above $855,400 can still obtain a conforming loan as long as their cash down payment reduces the total borrowed principal to $855,400 or less."
+    },
+    {
+      "heading": "Purchase Price Before a Loan Becomes Jumbo",
+      "body": "In our internal calculation, we modeled the relationship between down payment percentages and maximum purchase prices to show how much home you can buy before crossing into jumbo financing. Using the mathematical formula of purchase price equal to loan limit divided by one minus the down payment share, we calculated the maximum transaction value supported by conforming loans at baseline and high-cost limits. The table below outlines these thresholds for one-unit properties across standard down payment levels of 3 percent, 5 percent, 10 percent, 15 percent, and 20 percent.\n\nAt the 2027 baseline limit of $855,400, a buyer putting down 3 percent ($26,456) can purchase a home priced up to $881,856 while remaining within conforming guidelines. With a 5 percent down payment ($45,021), the maximum purchase price climbs to $900,421. A 10 percent down payment ($95,044) allows a purchase price of $950,444, while a 15 percent down payment ($150,953) supports a home priced at $1,006,353. Buyers who provide a full 20 percent down payment ($213,850) can finance a purchase price of up to $1,069,250 without exceeding the $855,400 conforming borrowing boundary. To test specific down payment figures and equity amounts for your budget, use our [down payment calculator](/mortgage/down-payment-calculator/).\n\nIn designated high-cost counties where the loan limit ceiling reaches $1,283,100, the supported purchase prices expand substantially. A 3 percent down payment of $39,684 supports a maximum price of $1,322,784, while 5 percent down ($67,532) supports up to $1,350,632. Increasing the down payment to 10 percent ($142,567) raises the maximum conforming purchase price to $1,425,667. At 15 percent down ($226,429), the supported price reaches $1,509,529. Homebuyers putting 20 percent down ($320,775) in high-cost areas can purchase a home priced up to $1,603,875 while maintaining a conforming mortgage.",
+      "table": {
+        "caption": "Maximum Home Purchase Prices under 2027 Conforming Limits",
+        "headers": [
+          "Loan Limit Tier",
+          "One-Unit Loan Limit",
+          "Down Payment %",
+          "Down Payment Cash Required",
+          "Maximum Supported Purchase Price"
+        ],
+        "rows": [
+          [
+            "Baseline County",
+            "$855,400",
+            "3%",
+            "$26,456",
+            "$881,856"
+          ],
+          [
+            "Baseline County",
+            "$855,400",
+            "5%",
+            "$45,021",
+            "$900,421"
+          ],
+          [
+            "Baseline County",
+            "$855,400",
+            "10%",
+            "$95,044",
+            "$950,444"
+          ],
+          [
+            "Baseline County",
+            "$855,400",
+            "15%",
+            "$150,953",
+            "$1,006,353"
+          ],
+          [
+            "Baseline County",
+            "$855,400",
+            "20%",
+            "$213,850",
+            "$1,069,250"
+          ],
+          [
+            "High-Cost Ceiling",
+            "$1,283,100",
+            "3%",
+            "$39,684",
+            "$1,322,784"
+          ],
+          [
+            "High-Cost Ceiling",
+            "$1,283,100",
+            "5%",
+            "$67,532",
+            "$1,350,632"
+          ],
+          [
+            "High-Cost Ceiling",
+            "$1,283,100",
+            "10%",
+            "$142,567",
+            "$1,425,667"
+          ],
+          [
+            "High-Cost Ceiling",
+            "$1,283,100",
+            "15%",
+            "$226,429",
+            "$1,509,529"
+          ],
+          [
+            "High-Cost Ceiling",
+            "$1,283,100",
+            "20%",
+            "$320,775",
+            "$1,603,875"
+          ]
+        ]
+      }
+    },
+    {
+      "heading": "Understanding Down Payment Math and Equity Impact",
+      "body": "Every extra dollar added to a down payment reduces the total borrowed principal dollar for dollar. Homebuyers who find their prospective mortgage amount resting slightly above the conforming limit can avoid entering the jumbo market by adjusting their upfront cash investment. For example, if a home purchase requires a loan balance of $865,400 in a baseline county, the financing sits $10,000 above the conforming threshold. Supplying an additional $10,000 in cash equity brings the loan balance down to exactly $855,400, preserving conforming status.\n\nOur internal scenario modeling highlights key assumptions and limitations in these calculations. The numbers in the table reflect exact mathematical quotients based on the statutory limits and stated down payment ratios for single-family, one-unit residences. The calculation assumes that closing costs, settlement charges, prepaid property taxes, and homeowners insurance premiums are paid entirely out of pocket with separate funds rather than rolled into the mortgage note. If fees or financed insurance premiums are added directly to the loan principal, the supported base purchase price decreases accordingly.\n\nIn addition, individual lenders retain discretion over underwriting standards and can enforce lower internal portfolio caps. Reviewing your final loan application balance against the published limit helps verify that your loan falls squarely within conforming criteria."
+    },
+    {
+      "heading": "Find Your County Limit",
+      "body": "While $855,400 is the nationwide baseline, the conforming loan limit is higher than baseline in all but 24 counties or county equivalents across the United States. In the remaining counties where local median home values exceed baseline calculations, the limit scales upward between $855,400 and the high-cost ceiling of $1,283,100. Homebuyers must check the specific limit assigned to the county where the subject property is located rather than relying on national figures alone.\n\nTo identify your local lending threshold, consult the official county datasets provided on the [FHFA conforming loan limit page](https://www.fhfa.gov/data/conforming-loan-limit). The agency publishes comprehensive downloadable county lists, interactive mapping resources, a technical methodology addendum, and detailed administrative guidelines. These documents list every county and county equivalent by state.\n\nIn high-cost areas, county limits reach the maximum ceiling of $1,283,100. Many suburban or intermediate housing markets feature custom limits established between the baseline and the ceiling. The baseline figures modeled in our table serve as a legal floor. For any county with an elevated limit, the maximum purchase price supported by a conforming loan will be higher than the baseline figures at every down payment level."
+    },
+    {
+      "heading": "Does Waiting until January Help?",
+      "body": "Waiting until January 2027 to finalize a mortgage transaction only benefits borrowers borrowing within a specific dollar window. Because the baseline limit increases from $832,750 in 2026 to $855,400 in 2027, the potential advantage applies exclusively to loan amounts between $832,750 and $855,400 in baseline counties. If your anticipated loan balance is below $832,750, the loan already meets conforming standards under 2026 rules. If your loan balance exceeds $855,400, the mortgage remains non-conforming regardless of the annual calendar change unless your county features a higher localized limit.\n\nEven for loans falling inside that $22,650 band, waiting until January does not guarantee conforming treatment without direct lender confirmation. FHFA states in its official documentation that conforming loan limits apply to mortgages acquired by Fannie Mae and Freddie Mac in the 2027 calendar year. The agency's public data pages tie the limits to the calendar year in which the loan is acquired and do not state a specific loan delivery rule or origination date rule.\n\nMortgage lenders establish their own pipeline policies regarding when they begin applying upcoming loan limits to newly originated applications. You must ask your lender directly which annual limit applies to your specific closing date."
+    },
+    {
+      "heading": "What Changes If You Go Jumbo",
+      "body": "When a mortgage loan amount exceeds the local conforming limit, the financing becomes a jumbo loan. Jumbo loans are non-conforming mortgages that cannot be purchased, packaged, or guaranteed by Fannie Mae or Freddie Mac. Because secondary market backing from government-sponsored enterprises is unavailable, private mortgage investors and lenders absorb the portfolio risk directly or package the loans into private-label residential mortgage-backed securities.\n\nLenders set their own custom underwriting rules, reserve mandates, and qualification standards for jumbo financing. While some market commentators suggest that jumbo loans always carry substantial interest rate premiums, actual pricing varies by lender and economic conditions. No fixed statutory rate markup exists.\n\nBorrowers seeking jumbo financing typically encounter different underwriting conditions compared to conforming programs. To compare how jumbo financing fits alongside conventional, government-insured, and portfolio options, explore our detailed breakdown of [types of mortgage loans](/guides/types-of-mortgage-loans/)."
+    },
+    {
+      "heading": "Multi-Unit Property Considerations",
+      "body": "The conforming loan limits modeled here apply to one-unit properties."
+    },
+    {
+      "heading": "Our Takeaway",
+      "body": "If your total borrowed mortgage balance is $855,400 or less, your loan qualifies as conforming across all United States counties in 2027. In the vast majority of counties where median property values are elevated, the conforming threshold scales higher, reaching a maximum high-cost ceiling of $1,283,100. If your proposed loan balance exceeds your county's designated limit, you will need to either secure a non-conforming jumbo mortgage or increase your down payment cash to bring the loan amount below the limit.\n\nWaiting until January to close your transaction is only meaningful if your intended loan balance sits inside the specific $22,650 window between $832,750 and $855,400 in a baseline county, or the corresponding increment in a high-cost area. Because FHFA rules govern the calendar year the loan is acquired and individual lenders establish their own application schedules, you must verify your lender's intake rules before shifting transaction dates. For any purchase near the boundary, remember that each additional dollar contributed toward your down payment reduces the required loan principal dollar for dollar, providing an actionable way to maintain conforming financing."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/mortgage/down-payment-calculator/",
+      "label": "Down Payment Calculator"
+    },
+    {
+      "href": "/mortgage/home-affordability-calculator/",
+      "label": "Home Affordability Calculator"
+    },
+    {
+      "href": "/guides/types-of-mortgage-loans/",
+      "label": "Types of Mortgage Loans Guide"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the 2027 conforming loan limit for a one-unit home?",
+      "answer": "The 2027 baseline conforming loan limit for a one-unit property is $855,400 in most counties across the United States. In designated high-cost housing markets, the ceiling reaches $1,283,100. In Alaska, Hawaii, Guam, and the U.S. Virgin Islands, the baseline is $1,283,100 and the maximum ceiling is $1,924,650."
+    },
+    {
+      "question": "Does the conforming loan limit cap the purchase price or the loan amount?",
+      "answer": "The conforming loan limit caps the total mortgage loan amount borrowed, not the home's purchase price. For example, if you purchase a property for $1,000,000 in a baseline county and make a 15 percent down payment of $150,000, your loan amount is $850,000, which sits within the $855,400 baseline conforming limit."
+    },
+    {
+      "question": "How did FHFA calculate the $855,400 limit for 2027?",
+      "answer": "The Federal Housing Finance Agency calculated the 2027 limit by applying the percentage increase in national average home prices between the third quarter of 2025 and the third quarter of 2026. National home prices rose by 2.72 percent during that period, increasing the baseline limit by $22,650 over the 2026 figure of $832,750."
+    },
+    {
+      "question": "How many counties have loan limits above the $855,400 baseline?",
+      "answer": "According to FHFA, the conforming loan limit is higher than the baseline amount in all but 24 counties or county equivalents across the country. In those higher-cost jurisdictions, median home values justify limits between $855,400 and the high-cost ceiling of $1,283,100."
+    },
+    {
+      "question": "Will closing in December versus January change whether my loan is jumbo?",
+      "answer": "Closing in January only matters if your mortgage amount sits between $832,750 and $855,400 in a baseline county, or within an equivalent transitional window in a higher-limit area. FHFA rules specify limits for loans acquired by Fannie Mae and Freddie Mac in 2027, and lenders determine internally which calendar year limit applies to specific closing dates."
+    },
+    {
+      "question": "Are jumbo mortgage interest rates always higher than conforming rates?",
+      "answer": "Jumbo interest rates are not automatically higher than conforming rates. Lenders set their own terms for loans above the limit, so you should ask each lender directly for its jumbo requirements."
+    }
+  ],
+  "sources": [
+    {
+      "title": "FHFA Announces Conforming Loan Limit Values for 2027",
+      "url": "https://www.fhfa.gov/news/news-release/fhfa-announces-conforming-loan-limit-for-2027"
+    },
+    {
+      "title": "FHFA Conforming Loan Limits Data and County Schedules",
+      "url": "https://www.fhfa.gov/data/conforming-loan-limit"
+    }
+  ],
+  "disclaimerText": "This guide provides general information about federal conforming loan limits for educational purposes and does not constitute financial, lending, or legal advice. Mortgage qualification requirements, underwriting guidelines, and loan limits vary by lender, property location, and transaction structure. Consult a qualified mortgage professional to evaluate your individual financing scenario.",
+  "metaTitle": "",
+  "subtitle": "",
+  "ctaTitle": "",
+  "ctaText": "",
+  "ctaButton": "",
+  "faqItems": []
+}

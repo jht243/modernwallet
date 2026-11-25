@@ -1,0 +1,119 @@
+{
+ "slug": "hud-mixed-status-housing-rule",
+ "schema": "guide",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 2490,
+ "floor": 1300,
+ "input_tokens": 32081,
+ "output_tokens": 4388,
+ "thinking_tokens": 1841,
+ "cached_tokens": 17690,
+ "est_cost_usd": 0.0355,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "missing 'metaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'subtitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaTitle' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaText' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'ctaButton' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "missing 'faqItems' \u2014 inserted empty placeholder; auditor must fill or send back",
+   "emptied by the claim check (nothing in the fact list could carry it): ['What Changes on December 14', 'Who Is Affected and Which Programs Are Covered', 'Timeline and Deadlines for Mixed-Status Families', 'The Multistate Lawsuit Challenging the Rule', 'What Tenants and Assisted Families Should Do Now'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 2490,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 2619,
+   "floor": 1300,
+   "ratio": 2.01,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    7,
+    0
+   ],
+   "applied": [
+    {
+     "id": "sections[1].body",
+     "quote": "Notably, the HUD data cited in the complaint indicates that about 55,000 of the individuals who stand to lose assistance are fully eligible residents themselves, the vast majority of whom are children who are U.S. citizens living with noncitizen parents or family members.",
+     "replacement": "Notably, the HUD data cited in the complaint indicates that about 55,000 of the individuals who stand to lose assistance are fully eligible residents themselves, mostly children.",
+     "type": "unsupported",
+     "why": "SOURCE states mostly children, not citizen children living with noncitizens."
+    },
+    {
+     "id": "sections[2].table.rows[4][0]",
+     "quote": "Discretionary Extension Cap",
+     "replacement": "Extension Cap",
+     "type": "contradicted",
+     "why": "SOURCE states housing authority must grant extension upon certification, not discretionary."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Furthermore, the coalition argues that HUD violated the Administrative Procedure Act (APA) by issuing an arbitrary and capricious rule that failed to adequately consider the severe harm to tens of thousands of citizen children who could face eviction and homelessness.",
+     "replacement": "Furthermore, the coalition argues that HUD violates the Administrative Procedure Act.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention eviction, homelessness, or arbitrary and capricious findings."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "The lawsuit asks the federal court to issue a declaratory judgment that the rule is unlawful, vacate the regulation nationwide, and grant preliminary and permanent injunctive relief preventing HUD from enforcing the policy within the plaintiff jurisdictions.",
+     "replacement": "The lawsuit asks the federal court to issue a declaration, vacatur, and an injunction for plaintiff states.",
+     "type": "unsupported",
+     "why": "SOURCE specifies relief sought as declaration, vacatur, and injunction for plaintiff states."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "If you have previously submitted citizenship documentation, such as a U.S. passport or birth certificate, the rule states that continuous residents only need to satisfy the verification requirement once.",
+     "replacement": "If you have previously submitted citizenship documentation, the rule states that continuous residents only need to satisfy the verification requirement once.",
+     "type": "unsupported",
+     "why": "SOURCE does not list specific identity documents like passports or birth certificates."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "This includes birth certificates, Social Security cards, naturalization certificates, permanent resident cards, or other eligible immigration records.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not specify which identity or status documents to gather."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "If a family fails to submit documentation after the deadline and any granted extension, the consequences follow under paragraph (h) of the rule, which terminates assistance.",
+     "replacement": "If a family fails to submit documentation after the deadline and any granted extension, consequences follow under paragraph (h) of the rule.",
+     "type": "contradicted",
+     "why": "SOURCE forbids describing penalties under paragraph (h) beyond facts 2 and 5."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2585
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 13683
+  }
+ },
+ "seconds": 121.8,
+ "response_id": "mxYHa_m7JPfdytMPoc_qWQ",
+ "generated_at": "2026-11-25T17:12:53+0000"
+}

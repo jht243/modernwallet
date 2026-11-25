@@ -1,0 +1,6 @@
+URL: https://www.medicaid.gov/resources-for-states/working-families-tax-cut-legislation/community-engagement
+RETRIEVED_UTC: 2026-11-25T16:52:07Z
+NOTE: WebFetch model extraction (page text not reproducible verbatim by the tool); figures below are what the fetch returned.
+
+medicaid.gov community engagement page: Sec. 71119 of P.L. 119-21; start 2027-01-01 unless state sooner. SMDL smd26006 "Optional Hold Harmless Period for Community Engagement Implementation" posted 2026-11-13; metadata: states electing may suspend denials of eligibility and disenrollments for non-compliance; period ends 2027-06-30. (PDF body unreadable by tool; WRITE/AUDIT must read /root/.claude/projects/.../webfetch-1795625481342-i4gzeq.pdf or the PDF for notification deadline and conditions.)
+KFF (secondary, 2026-11-14): CMS announced 2026-11-13; states still must verify; election notice due to CMS 2026-12-11 (per KFF, unverified in SMDL); court struck IFR provision requiring proof that condition limits ability to work.

@@ -1,0 +1,3 @@
+Anthropic stock can now be bought on the Nasdaq under ticker ANT after the company's initial public offering priced at $83 per share on November 19, 2026. After opening at $111.50 on November 19, 2026, the stock closed down 6.5% on Tuesday, November 24, 2026, which sent shares below the $83 IPO price, according to [CNBC](https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html).
+
+To buy shares, place a market or limit order for ANT through any standard brokerage account. The retail IPO allocation is closed.

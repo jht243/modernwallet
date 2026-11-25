@@ -1,0 +1,97 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "mindmap-write",
+ "route": "/guides/conforming-loan-limit-2027/",
+ "readerQuestion": "How much can I borrow in 2027 before it's a jumbo loan? [verb-only - no PAA, no completions]",
+ "approvedPlan": {
+  "manifest": {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/approval-manifest.json",
+   "sha256": "6c14985eb561e414f7f73570656803a94abbd5fbb57e23f4fa3d9e3a43d6d61a"
+  },
+  "review": {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/chart-review.json",
+   "sha256": "8acdedee1ab772bbcdfa994f0f77a57141ea9ebf6b4acdc3cbb1a17a9e3f59fe"
+  },
+  "actionId": "A4"
+ },
+ "presentation": {
+  "medium": "text + comparison table",
+  "placement": "section 1: 'The 2027 Conforming Loan Limit'",
+  "reason": "Finite down-payment cases show the jumbo line; a table of purchase prices by down payment answers it without inputs, and the existing down-payment calculator covers custom inputs.",
+  "readerInputs": [],
+  "interaction": {
+   "decision": "not-useful",
+   "reason": "A fixed finite set of cases; a static table answers faster than inputs"
+  },
+  "animation": {
+   "decision": "not-useful",
+   "reason": "Static scannable layout answers faster; no sequence to animate"
+  }
+ },
+ "basis": "calculated",
+ "decisionGap": "Readers cannot see what home price the 2027 limit actually supports at their down payment, or whether waiting for January helps.",
+ "finding": "FHFA (2026-11-24): 2027 baseline one-unit limit $855,400 (up $22,650 from $832,750), ceiling $1,283,100 in high-cost areas, $1,283,100 baseline and $1,924,650 ceiling in Alaska, Hawaii, Guam and the USVI; higher in all but 24 counties. In our internal calculation (limit / (1 - down payment share)) a loan at the $855,400 limit finances a price up to $881,856 / $900,421 / $950,444 / $1,006,353 / $1,069,250 at 3/5/10/15/20 percent down.",
+ "conditions": "Baseline-county table is a floor for counties above baseline; one-unit properties only; ignores financed fees such as FHA-type premiums, closing costs and lender-set jumbo thresholds; FHFA says the limits apply to mortgages Fannie Mae and Freddie Mac can acquire in 2027; the lender decides which year's limit a loan falls under. CORRECTION (audit R1): FHFA says 2027 limits are higher than 2026 limits in all but 24 counties or county equivalents; it does NOT state how many counties exceed the $855,400 baseline. The earlier reading of that sentence as \"limit above baseline in all but 24 counties\" was wrong and is removed. Page says most counties use $855,400 and high-cost counties run up to $1,283,100.",
+ "whatWouldChange": "A county limit above $855,400, a lender that sets its own threshold, or a documented Enterprise delivery-date rule (none verified).",
+ "caseSelection": {
+  "path": "reports/mindmap-pass/2026-11-25-xtrends-run/evidence/conforming-loan-limit-2027/cases.json",
+  "sha256": "20eef12f8364360b1a0e154971c68b4eaee164dd1c5e9bb697133e02ee7fc878"
+ },
+ "caseDecisions": "Retrieved cases.json for this question: no approved client record on this site matches (site _experience.md lists no named-client specifics). No client claim used; none forced.",
+ "sourceArtifacts": [
+  {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/fhfa-2027-cll.txt",
+   "sha256": "81ed1a140bd72760c38d3a231d10f9ca3194e804cf6e248c6e98396e3d30d165"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/research/coverage-lookup.txt",
+   "sha256": "4eb2f2b166b5ac49eca0861e02f0ad059bc46cfc0106727c76f562c81403a162"
+  },
+  {
+   "path": "reports/x-trends/2026-11-25.md",
+   "sha256": "3d4b8fc88a4a099cc9d035695505b4a8726d0ff16b737e24bcdafee3aea577b7"
+  }
+ ],
+ "whyNoQuantitativeAnalysis": "Not applicable: this packet is basis calculated; the table is computed by calc.py (see execution.output). The FHFA limits themselves are reported facts.",
+ "reasoning": "FHFA release is the source of every limit. The table is calculated from them.",
+ "method": "price = limit / (1 - down payment share), run by calc.py on the FHFA limits",
+ "units": "US dollars (purchase price) and share of price",
+ "limitations": "Ignores financed fees, closing costs, mortgage insurance premiums that are financed, multi-unit limits, county limits other than the two modeled cases, and lender overlays.",
+ "counterexample": "In a county whose limit is above $855,400, the same formula with that limit gives a higher price; a financed FHA-type premium lowers the price a conforming loan supports.",
+ "execution": {
+  "command": [
+   "python3",
+   "reports/mindmap-pass/2026-11-25-xtrends-run/evidence/conforming-loan-limit-2027/calc.py",
+   "reports/mindmap-pass/2026-11-25-xtrends-run/evidence/conforming-loan-limit-2027/inputs.json"
+  ],
+  "code": {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/evidence/conforming-loan-limit-2027/calc.py",
+   "sha256": "b48489c0760b67157d4cb8fc7d34bbf2e533d6129446bc75e0f8293c8c43fe3d"
+  },
+  "inputs": [
+   {
+    "path": "reports/mindmap-pass/2026-11-25-xtrends-run/evidence/conforming-loan-limit-2027/inputs.json",
+    "sha256": "8bc17f6898b83342a4e4ef8dc42bd935bd512d5139019a7e78c0a440a95ca8d0"
+   },
+   {
+    "path": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/fhfa-2027-cll.txt",
+    "sha256": "81ed1a140bd72760c38d3a231d10f9ca3194e804cf6e248c6e98396e3d30d165"
+   }
+  ],
+  "output": {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/evidence/conforming-loan-limit-2027/output.json",
+   "sha256": "957715cd06b7ab8e9bad52b1730d459473f9aaab0e70c8a289d6f3cbe5b5f0e0"
+  }
+ },
+ "provenance": {
+  "basis": "calculated",
+  "supportingRecordIds": [
+   "fhfa-2027-cll.txt",
+   "output.json"
+  ],
+  "scopeAndLimits": "baseline and high-cost ceiling cases; ignores financed fees",
+  "publicMethod": "Formula and inputs stated beside the table",
+  "placement": "Purchase Price Before a Loan Becomes Jumbo"
+ },
+ "sourceLimits": "FHFA release read by fetch with verbatim quotes in this run; no delivery-date rule verified; AUDIT re-reads the FHFA page. Audit R1: county-count misreading corrected."
+}

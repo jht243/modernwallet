@@ -1,0 +1,53 @@
+ss.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/0ce53843d402c1ba27d963098c8fd0d86130e60d25ffc104c17d6a9f7ca283b9/hud-mixed-status-rule.txt",
+      "sha256": "0ce53843d402c1ba27d963098c8fd0d86130e60d25ffc104c17d6a9f7ca283b9",
+      "checkedAt": "2026-11-25T17:22:59.503068+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/hud-mixed-status-rule.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/0e1c84e7af5ea0f9440f86b0bfc6f2c4700978a9ff732a8eae81620afced3083/ny-ag-hud-lawsuit.txt",
+      "sha256": "0e1c84e7af5ea0f9440f86b0bfc6f2c4700978a9ff732a8eae81620afced3083",
+      "checkedAt": "2026-11-25T17:22:59.503068+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/ny-ag-hud-lawsuit.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/bf6e913e3d9baf03ce58fd0752b726d8d68d05fad6cc9736a49010ab4d681118/cms-selected-drugs.txt",
+      "sha256": "bf6e913e3d9baf03ce58fd0752b726d8d68d05fad6cc9736a49010ab4d681118",
+      "checkedAt": "2026-11-25T17:22:59.503068+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/cms-selected-drugs.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/6620c0c56c890c1995a25effc497afe962a19318e3ae8dc63e44dbc22b591997/link-inspections.txt",
+      "sha256": "6620c0c56c890c1995a25effc497afe962a19318e3ae8dc63e44dbc22b591997",
+      "checkedAt": "2026-11-25T17:22:59.503068+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/research/link-inspections.txt"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "snapshot": {
+    "path": "reports/mindmap-pass/2026-11-25-xtrends-run/blobs/0ea98b101f64dd504f5398e52880680c39d19702ffcf4c926cad37fd55fa1fd5/preview-snapshot.json",
+    "sha256": "0ea98b101f64dd504f5398e52880680c39d19702ffcf4c926cad37fd55fa1fd5",
+    "originPath": "reports/mindmap-pass/2026-11-25-xtrends-run/audit/preview-snapshot.json"
+  },
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-25-xtrends-run/handoff-audit.json",
+    "sha256": "77c67ad8ba7b6ccf6779e01875120c5e5c60381a5b6cec9fb0a4885cd00a00a5"
+  }
+}
+

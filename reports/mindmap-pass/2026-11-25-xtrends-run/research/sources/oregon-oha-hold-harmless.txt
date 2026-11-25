@@ -1,0 +1,6 @@
+URL: https://www.oregon.gov/oha/ERD/Pages/OHA-to-delay-enforcement-of-new-federal-Medicaid-work-rules-to-keep-people-in-Oregon-insured-11.23.2026.aspx
+RETRIEVED_UTC: 2026-11-25T16:52:07Z
+NOTE: WebFetch model extraction (page text not reproducible verbatim by the tool); figures below are what the fetch returned.
+
+Oregon Health Authority, 2026-11-23: Oregon opts into CMS hold harmless; no loss/denial of coverage for failing the rules through 2027-06-30; members still must verify requirements/exemptions; more time at next renewal. >600,000 OHP members notified in Sept; Gov. office projected up to a third could lose coverage even if qualified. Oct 2026 federal court partial ruling for 25 states (CMS exceeded authority limiting medical exemptions; barred penalizing states for system delays six months).
+Maryland and New Hampshire opt-ins from the bullet: NOT verified from a primary source. Do not name them.

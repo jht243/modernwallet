@@ -1,0 +1,12 @@
+URL: https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html
+RETRIEVED_UTC: 2026-11-25T16:52:07Z
+NOTE: WebFetch model extraction (page text not reproducible verbatim by the tool); figures below are what the fetch returned.
+
+CNBC, Tue Nov 24 2026: "Anthropic stock falls below $83 IPO price, but analysts are still largely positive"
+- IPO price $83; opened $111.50 on Nasdaq Thu Nov 19; fell 6.5% Tue and closed below IPO price (exact close not given on page).
+- Raised $81.3B; oversubscribed; about half of institutional investors that ordered received no shares.
+- Analysts: Canaccord Buy $135; Wedbush Outperform $120; Oppenheimer Outperform $150.
+- Lockup not mentioned on the page.
+Secondary (web search, not primary): Nov 19 close $97.17 (+17% vs $83), intraday high ~$115.10. Nov 24 close NOT confirmed anywhere.
+Bullet claim "fell as much as 7.3% premarket": unverified (x.com post returned HTTP 402).
+Arithmetic: 83/111.50-1 = -25.6%, so "open buyers down about 25%" holds only at an $83 price; use "below $83 means open buyers are down more than 25%" or avoid.

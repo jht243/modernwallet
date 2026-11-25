@@ -1,0 +1,97 @@
+et <RUN>/evidence/<slug>/evidence.json
+```
+Check draft one before draft two. The generator applies the remediation ladder to the returned
+draft rather than rejecting it: it **repairs in place** (fence, slug, a missing build-critical
+key, an off-list link stripped with the sentence kept, house style) and logs each repair in
+`meta.guards.repairs`; it **flags** for the auditor (`meta.guards.flags`) a missing content
+field, a stripped citation, a page under the depth floor, and untraceable numbers; it
+**regenerates only** a truncated page (after one retry at double the cap) or unparseable
+output (raw saved). Read `meta.guards` before moving on — never send a whole page back for a
+one-line fix. **`git add` every `.meta.json`** — it is the provenance record.
+
+## Step 3 — verify → template → lint → Phase 4
+
+1. **Topic-residue grep** across each draft for sibling topics that could have leaked from the
+   voice sample or other rows. Read the draft; reject on any claim outside the fact list.
+2. **Template** into THIS repo's store exactly as the pre-migration routine did (the page
+   template, schema builders, dates, related links, and the inline CTA pointing at the
+   consultation route **Phase 0 discovered — never invent a URL**). Every required page field
+   must be present; a missing required field is a lint failure, not a render fallback.
+3. **Mechanical lint (Rung 0)** with whatever this repo ships — `scripts/content_lint.mts`
+   (Next/TS) or the portable `scripts/content_lint.py` — on every new slug, fix until clean.
+   If the repo has no lint, apply the standard's PREFLIGHT list by hand.
+4. **Phase 4 audit is the gate** — hand the auditor the closed fact list(s) AND the allowed URL
+   list with the drafts, so a real sourced fact is not flagged as fabrication. Verify any
+   "unsupported claim" finding against the source before acting on it. Fixes follow
+   `_remediation-ladder.md`, **per page**: Rung-0 mechanical edits in place. Claim and tell
+   findings (unsupported / inferred / contradicted claims, restatements, AI tells) go to
+   **Rung 1 FIX-IN-PLACE first**, never straight to a regeneration — save that page's findings
+   to `reports/mindmap-pass/<TODAY>/audit/<slug>.findings.txt` and run
+   `python3 scripts/lib/content_gen.py fix --draft <draft> --findings <findings.txt> --facts <row prompt> --floor <floor> --allowed-urls <allowed-urls.txt> --mindmap-manifest <RUN>/approval-manifest.json --mindmap-review <RUN>/chart-review.json --analysis-packet <RUN>/evidence/<slug>/evidence.json`,
+   then re-template and re-audit that page in full on the same bar. **A re-audit that still
+   finds claims or tells is another fix round (max 3 per page), not a failed attempt** — it
+   never counts toward the 2-regeneration cap and never drops a page by itself (2026-10-08:
+   both pages were dropped as "failed twice" after a single fix round). A **regeneration**
+   (Rung 2) is only for what `fix` lists as NOT FIXABLE IN PLACE, a page under its floor, an
+   auditor note that the floor can only be met by restating facts, or a page still failing
+   after 3 fix rounds: first EXPAND the closed fact list with sourced facts (always when
+   `meta.guards.fact_budget.thin`), then regenerate with a `# CORRECTIONS FROM THE PHASE 4
+   AUDIT` block appended to the row prompt, and run the fix loop again on the new draft —
+   never hand-write generated prose. Once all allowed audits are exhausted (`roundsRemaining: 0`), NEVER edit or regenerate that route again — automatically publish the exact final audited snapshot unless blocked by a narrow direct legal/physical-harm `liabilityBlock` (e.g. incorrect medical dosing; general medical pricing, locations, attribution wording, and SEO/style findings never block).
+
+`git add` your work; do NOT commit (Phase 9 commits).
+
+## Project specifics for this routine
+
+Match the page template + schema builders Phase 0 discovered so new pages carry the same
+scaffolding as existing pages. Tool rows → built per `phase-3c-tool-build.md`; other asset rows → complete real assets under `_mindmap-execution.md`.
+**The INTRO HUMANIZE step is SKIPPED for every page this phase generated** — they are exempt
+per the content standard's INTRO HUMANIZE section (the generator carries its guards).
+
+## ▶ WHEN THIS PHASE IS DONE — AUTO-CONTINUE. DO NOT ASK THE USER.
+The moment this phase's reviewer gate PASSES, immediately begin the next phase in the SAME
+turn. Do NOT stop or print any question that waits for a human. The `/mindmap-pass` run has
+EXACTLY ONE human stop (the Phase 0 manifest approval); this phase is not it. Phase 8 is an
+informational summary that auto-continues to the Phase 9 push.
+
+**Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.
+
+<!-- mindmap-execution-v1 -->
+Before writing, follow `_mindmap-execution.md`: retrieve approved cases and applicable survey records, execute relevant supported analysis and save current evidence. Use a justified source-based branch when numerical work adds nothing or cannot be defended. Pass the manifest/review/packet flags to every Mindmap writer call.
+<!-- /mindmap-execution-v1 -->
+
+[Source: .claude/commands/mindmap-pass/phase-5-body.md]
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 6. Use its exact text under this source/section context.]
+
+# Phase 5 — Body text updates
+
+<!-- chart-obligation: p5-enrichment-placement-and-monetization -->
+**Where an `update existing body text` row carries `reader_question` / `answer` / `answer_placement` (cols 10–12), the added section IS that answer and goes in the named slot** — section 1 or 2, ahead of the page's existing scope/definition material, preserving unrelated content and bumping the rendered "Last updated" date + `dateModified`. Any addition longer than one sentence uses `content_gen.py section` with closed facts + `.meta.json`. Where the inline affiliate engine (`src/utils/affiliateInject.ts` + `data/affiliate/catalog.ts`) exists, plan natural-fit-only monetization (never force an off-intent block, double-monetize, or fabricate referral URLs).
+<!-- /chart-obligation -->
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 16. Use its exact text under this source/section context.]
+
+
+**Where an `update existing body text` row carries `reader_question` / `answer` / `answer_placement` (cols 10–12), the added section IS that answer and goes in the named slot** — section 1 or 2, ahead of the page's existing scope/definition material, preserving unrelated content and bumping the rendered "Last updated" date + `dateModified`. Any addition longer than one sentence uses `content_gen.py section` with closed facts + `.meta.json`. Where the inline affiliate engine (`src/utils/affiliateInject.ts` + `data/affiliate/catalog.ts`) exists, plan natural-fit-only monetization (never force an off-intent block, double-monetize, or fabricate referral URLs).
+
+<!-- intent-takeaway-v1 -->
+**Intent-based takeaway:** Read `_decision-evidence.md` in the active project's `.claude/commands/`, especially “Close with a takeaway that answers the page's intent.” Pass the planned conclusion, applicable reader/task, actual evidence basis and decision-changing condition into the existing writer brief. Reuse a sufficient verdict; preserve the no-addition branch and local exclusions. For global commands, resolve/install the sibling shared contract in the active project while preserving local rules.
+<!-- /intent-takeaway-v1 -->
+
+<!-- decision-evidence-v1 -->
+## Decision evidence before drafting
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-3-new-content.md, paragraph 7. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/mindmap-pass/phase-3-new-content.md, paragraph 8. Use its exact text under this source/section context.]
+
+> **‼️ GOVERNING RULE — ENRICHMENT PROSE IS GENERATED BY THE API WRITER (2026-09-06).** This phase
+> adds to or rewrites parts of EXISTING pages. **Any reader-facing addition longer than ONE
+> sentence — an FAQ answer, a new section, body paragraphs, an answer block, an expansion, a
+> rewritten section or intro — is generated with `scripts/lib/content_gen.py section` per the
+> "Enrichment" chapter of `.claude/commands/_content-generation.md`, never written in-context.**
+> You still choose WHAT to add and WHERE, assemble the closed fact list + closed URL list, hand
+> the writer the page's CURRENT text, run the generator, then splice the verified draft in with a
+> targeted `Edit` (TS/JSON stores: one paragraph → one `content[]` string / the FAQ `answer`
+> field, no re-wording). Commit the `<slug>--<section-id>.md.meta.json` beside the draft. The
+> reviewer gate below

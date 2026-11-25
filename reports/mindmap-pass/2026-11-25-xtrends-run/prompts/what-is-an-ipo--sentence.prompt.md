@@ -1,0 +1,10 @@
+# Section task (data only)
+Page: /guides/what-is-an-ipo/. Write ONE sentence only, no heading: it replaces 'Anthropic has filed to go public but nothing trades yet'. It says Anthropic priced its IPO at $83 and began trading on Nasdaq as ANT on Nov 19, 2026 (Form 424B4 filed that day), with a markdown link on 'how to buy Anthropic stock' to /guides/how-to-buy-anthropic-stock/. No em-dashes. Use only the CLOSED FACT LIST.
+
+# CLOSED FACT LIST (AUTHORITATIVE; supersedes anything above, including the scout brief, KFF/secondary notes and the x-trends bullets)
+Anything not on this list, you do not know. Never invent a price, limit, date, count, name, quote or URL. If a needed fact is not here, leave it out or say it is not published and link the primary source.
+Style reminders: register operator; no em-dashes; no "tested" or "we tested" claims, no testing badge; no first-person experience beyond what the packet's provenance licenses; keep the "At The Modern Wallet, we" first company claim rule; an intent-based "Our Takeaway" section near the end; FAQ questions in sentence case; a final concrete next-action sentence; disclaimer content goes in the last section only if needed ("general information, not legal/financial/medical advice").
+LEAK WARNINGS (facts that appear in the scout brief above but are NOT verified and must NOT appear): "22-state" lawsuit wording; Maryland or New Hampshire as Medicaid hold-harmless states; "7.3% premarket"; "Nov 19 close $97.17"; any Nov 24 dollar close; any Fannie Mae or Freddie Mac "delivery date" rule for the 2027 limit; "$9.2B", "13 drugs"; and any sell/hold/buy instruction.
+
+## FACTS (A2)
+Anthropic priced its IPO at $83 and its shares began trading on the Nasdaq as ANT on Nov 19, 2026 (Form 424B4 filed 2026-11-19, https://www.sec.gov/Archives/edgar/data/2130357/000162828026074944/0001628280-26-074944-index.htm ; CNBC https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html ). Link /guides/how-to-buy-anthropic-stock/ for the post-IPO price and lock-up details. One sentence only.

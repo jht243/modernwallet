@@ -1,0 +1,82 @@
+{
+ "gateSchemaVersion": 1,
+ "author": "mindmap-write",
+ "route": "/guides/medicaid-work-requirements-2027-hold-harmless/",
+ "readerQuestion": "Will I lose Medicaid on Jan 1 for missing the new work requirement? [verb-only - no PAA, no completions]",
+ "approvedPlan": {
+  "manifest": {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/approval-manifest.json",
+   "sha256": "6c14985eb561e414f7f73570656803a94abbd5fbb57e23f4fa3d9e3a43d6d61a"
+  },
+  "review": {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/chart-review.json",
+   "sha256": "8acdedee1ab772bbcdfa994f0f77a57141ea9ebf6b4acdc3cbb1a17a9e3f59fe"
+  },
+  "actionId": "A3"
+ },
+ "presentation": {
+  "medium": "text + comparison table",
+  "placement": "section 1: 'Will You Lose Medicaid on January 1?'",
+  "reason": "Reader needs a conditional answer by situation (state opted in or not, exempt or not); a finite table covers it.",
+  "readerInputs": [],
+  "interaction": {
+   "decision": "not-useful",
+   "reason": "A fixed finite set of cases; a static table answers faster than inputs"
+  },
+  "animation": {
+   "decision": "not-useful",
+   "reason": "Static scannable layout answers faster; no sequence to animate"
+  }
+ },
+ "basis": "reported",
+ "decisionGap": "Readers cannot tell whether Jan 1, 2027 means losing Medicaid for missing the work requirement.",
+ "finding": "The federal community engagement requirement starts no later than Jan 1, 2027. CMS (SMD# 26-006, Nov 13 2026) offers states an optional hold harmless period through June 30 2027: states that elect it may suspend eligibility denials and disenrollments for failing to show compliance, for applications received and renewals initiated through that date. States intending to use it from Jan 1 are asked to notify CMS by Dec 11 2026. Oregon (OHA, Nov 23 2026) is the one state verified as opting in. In a state that does not, a person found noncompliant gets notice and 30 calendar days to show compliance or an exemption (CMS IFR fact sheet).",
+ "conditions": "Applies to potentially applicable adults 19-64 in the expansion group in 43 states plus DC; not other eligibility factors such as age or income; state election and CMS mitigation-plan approval govern; the hold harmless applies to applications received and renewals initiated through June 30 2027 (or a shorter state period). A court partly vacated parts of the IFR on Oct 29 2026 (Massachusetts v. Oz), which the SMDL itself notes. CMS must approve the hold harmless period in a state mitigation plan (SMD# 26-006); Oregon announced on Nov 23, 2026 that it will opt in, and OHA does not report CMS approval. The 30-day notice is the CMS interim rule procedure, subject to state implementation and the Oct 29, 2026 Massachusetts v. Oz ruling. The \"up to a third\" projection is Governor Kotek's office citing an initial analysis, as OHA reports it. Other mitigations and shortened state periods exist, so no universal \"only if\" or \"begins immediately\" claim is made.",
+ "whatWouldChange": "CMS or a court changing the delay, a state withdrawing or shortening its period, or a state outside Oregon electing the option.",
+ "caseSelection": {
+  "path": "reports/mindmap-pass/2026-11-25-xtrends-run/evidence/medicaid-work-requirements-2027-hold-harmless/cases.json",
+  "sha256": "aed2f35afea270a28b70eb6b68ed821b767d5ab3b37f2906b46e8bcb92ca5edf"
+ },
+ "caseDecisions": "Retrieved cases.json for this question: no approved client record on this site matches (site _experience.md lists no named-client specifics). No client claim used; none forced.",
+ "sourceArtifacts": [
+  {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/cms-medicaid-ce-ifr.txt",
+   "sha256": "7d5f460c606cf71f4d4b66c3728047d098ed22735806f618628327cbd24f14e5"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/medicaid-gov-ce-hold-harmless.txt",
+   "sha256": "2b13315fd5abbf682ac8e3d5a434b07cd355517a04177941f5071723b48aa132"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/oregon-oha-hold-harmless.txt",
+   "sha256": "376b1faeb29a5f31e7b0ff6985335a2926b1ff0b7819e3489fae9008d1171941"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/research/coverage-lookup.txt",
+   "sha256": "4eb2f2b166b5ac49eca0861e02f0ad059bc46cfc0106727c76f562c81403a162"
+  },
+  {
+   "path": "reports/x-trends/2026-11-25.md",
+   "sha256": "3d4b8fc88a4a099cc9d035695505b4a8726d0ff16b737e24bcdafee3aea577b7"
+  },
+  {
+   "path": "reports/mindmap-pass/2026-11-25-xtrends-run/research/sources/smd26006-full.txt",
+   "sha256": "3a96befec24ca0b83c488acc4652932773771b2f3404b1f72b4b2d9f3669771c"
+  }
+ ],
+ "whyNoQuantitativeAnalysis": "Policy rules and dates; no input changes a federal answer and the state agency decides.",
+ "reasoning": "SMDL text read in full (smd26006-full.txt) states the option, end date, scope (only community engagement denials/disenrollments), the Dec 11 notification request and that after the period the state must deny or terminate with 42 CFR 435.558 procedures. CMS fact sheet gives the 80-hour/$580 standard, exemptions and 30-day notice. OHA release gives Oregon's election. Maryland and New Hampshire not verified from primary source: excluded.",
+ "provenance": {
+  "basis": "reported",
+  "supportingRecordIds": [
+   "smd26006-full.txt",
+   "cms-medicaid-ce-ifr.txt",
+   "oregon-oha-hold-harmless.txt",
+   "medicaid-gov-ce-hold-harmless.txt"
+  ],
+  "scopeAndLimits": "named primary sources; KFF secondary not used for claims",
+  "publicMethod": "On-page attribution to CMS, medicaid.gov and OHA with links",
+  "placement": "section 1 and state check table"
+ },
+ "sourceLimits": "CMS IFR fact sheet and OHA release were read through fetch extractions in BUILD; AUDIT must re-read. SMDL read in full from the PDF in this run. Audit R1: page wording revised for CMS approval, Oregon \"will opt into\", enforcement start, takeaway and notice caveats."
+}

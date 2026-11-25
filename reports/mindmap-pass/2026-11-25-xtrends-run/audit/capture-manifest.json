@@ -1,0 +1,80 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "mindmap-write",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/guides/how-to-buy-anthropic-stock/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/what-is-an-ipo/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/medicaid-work-requirements-2027-hold-harmless/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/conforming-loan-limit-2027/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/hud-mixed-status-housing-rule/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/compare/aca-vs-medicaid/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/budget/aca-subsidy-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/mortgage/home-affordability-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/mortgage/down-payment-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/types-of-mortgage-loans/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/how-much-should-i-spend-on-rent/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/compare/renting-vs-buying/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "xtrends-2026-11-25"
+}

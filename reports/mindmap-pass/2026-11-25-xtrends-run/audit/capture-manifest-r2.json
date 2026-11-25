@@ -1,0 +1,32 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "mindmap-write",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/guides/how-to-buy-anthropic-stock/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/medicaid-work-requirements-2027-hold-harmless/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/conforming-loan-limit-2027/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/hud-mixed-status-housing-rule/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "xtrends-2026-11-25"
+}

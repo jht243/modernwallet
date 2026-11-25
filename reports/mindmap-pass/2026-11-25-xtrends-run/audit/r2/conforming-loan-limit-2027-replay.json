@@ -1,0 +1,87 @@
+{
+ "formula": "limit / (1 - downPaymentShare)",
+ "rows": [
+  {
+   "limitCase": "baseline",
+   "limit": 855400,
+   "downPaymentShare": 0.03,
+   "maxPurchasePrice": 881856,
+   "downPaymentDollars": 26456
+  },
+  {
+   "limitCase": "baseline",
+   "limit": 855400,
+   "downPaymentShare": 0.05,
+   "maxPurchasePrice": 900421,
+   "downPaymentDollars": 45021
+  },
+  {
+   "limitCase": "baseline",
+   "limit": 855400,
+   "downPaymentShare": 0.1,
+   "maxPurchasePrice": 950444,
+   "downPaymentDollars": 95044
+  },
+  {
+   "limitCase": "baseline",
+   "limit": 855400,
+   "downPaymentShare": 0.15,
+   "maxPurchasePrice": 1006353,
+   "downPaymentDollars": 150953
+  },
+  {
+   "limitCase": "baseline",
+   "limit": 855400,
+   "downPaymentShare": 0.2,
+   "maxPurchasePrice": 1069250,
+   "downPaymentDollars": 213850
+  },
+  {
+   "limitCase": "highCostCeiling",
+   "limit": 1283100,
+   "downPaymentShare": 0.03,
+   "maxPurchasePrice": 1322784,
+   "downPaymentDollars": 39684
+  },
+  {
+   "limitCase": "highCostCeiling",
+   "limit": 1283100,
+   "downPaymentShare": 0.05,
+   "maxPurchasePrice": 1350632,
+   "downPaymentDollars": 67532
+  },
+  {
+   "limitCase": "highCostCeiling",
+   "limit": 1283100,
+   "downPaymentShare": 0.1,
+   "maxPurchasePrice": 1425667,
+   "downPaymentDollars": 142567
+  },
+  {
+   "limitCase": "highCostCeiling",
+   "limit": 1283100,
+   "downPaymentShare": 0.15,
+   "maxPurchasePrice": 1509529,
+   "downPaymentDollars": 226429
+  },
+  {
+   "limitCase": "highCostCeiling",
+   "limit": 1283100,
+   "downPaymentShare": 0.2,
+   "maxPurchasePrice": 1603875,
+   "downPaymentDollars": 320775
+  }
+ ],
+ "waitingBand": {
+  "loanBetween": [
+   832750,
+   855400
+  ],
+  "note": "Only a loan in this band (baseline-county case) is conforming under the 2027 limit but not the 2026 limit."
+ },
+ "checks": {
+  "2027_minus_2026": 22650,
+  "matchesFhfaIncrease": true,
+  "ceilingIs150PercentOfBaseline": true
+ }
+}
