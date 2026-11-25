@@ -404,6 +404,103 @@ def cmd_claim(state, args):
     return {'claimed': ids}
 
 
+def _ensure_published_proof_receipt(row, live_url):
+    """Ensure a `published` receipt row exists in `reports/internal-proof-log.jsonl` for `live_url`
+    so same-day follow-up audit/polish edits never lose the initial draft's internal-proof receipt."""
+    parsed = urlsplit(live_url or '')
+    route_path = '/' + (parsed.path or '').strip('/')
+    slug = route_path.strip('/').split('/')[-1]
+    if not slug:
+        return None
+    site_host = (parsed.hostname or '').lower().removeprefix('www.')
+    repo_root = Path.cwd()
+    log_path = repo_root / 'reports/internal-proof-log.jsonl'
+    today_prefix = dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d')
+
+    prior_match = None
+    if log_path.is_file():
+        for raw_ln in log_path.read_text(encoding='utf-8', errors='ignore').splitlines():
+            if not raw_ln.strip():
+                continue
+            try:
+                rec = json.loads(raw_ln)
+            except Exception:
+                continue
+            r_route = '/' + str(rec.get('route') or '').strip('/')
+            r_slug = r_route.strip('/').split('/')[-1]
+            if r_route == route_path or r_slug == slug:
+                if str(rec.get('publishedStatus') or '') == 'published' and str(rec.get('timestamp') or '').startswith(today_prefix):
+                    return rec
+                if rec.get('usedInternalProof') or prior_match is None:
+                    prior_match = rec
+
+    raw_txt = ''
+    for rel in (
+        f'src/content/guides/{slug}.md',
+        f'src/content/guides/{slug}.mdx',
+        f'src/content/alternatives/{slug}.md',
+        f'content/guides/{slug}.md',
+        f'content/alternatives/{slug}.md',
+        f'reports/alternatives-daily/{row.get("claimedOn") or today()}/drafts/{slug}.md',
+        f'reports/alternatives-daily/{row.get("claimedOn") or today()}/drafts/{slug}.json',
+    ):
+        cand = repo_root / rel
+        if cand.is_file():
+            raw_txt = cand.read_text(encoding='utf-8', errors='ignore')
+            break
+
+    tracks_path = repo_root / '.claude/tools/mindmap-tracks.py'
+    if tracks_path.is_file() and raw_txt and prior_match is None:
+        try:
+            import importlib.util
+            spec = importlib.util.spec_from_file_location('alt_backlog_tracks', tracks_path)
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            if hasattr(mod, 'log_internal_proof_outcome'):
+                return mod.log_internal_proof_outcome(
+                    repo_root,
+                    route=route_path,
+                    raw_text=raw_txt,
+                    routine='alternatives-daily',
+                    job_id=f"alternatives-daily-{row.get('claimedOn') or today()}",
+                    published_status='published',
+                )
+        except Exception:
+            pass
+
+    signal_re = re.compile(
+        r'\(tested\s+20\d\d\)|howwetested|worked cost example|in our (?:internal )?(?:testing|cost|scenario|modeling|analysis)|'
+        r'we tested|we modeled|in our conversations with|at layer3labs,\s+we|reader survey|scenariotable|break-even',
+        re.I,
+    )
+    has_proof = bool((prior_match and prior_match.get('usedInternalProof')) or (raw_txt and signal_re.search(raw_txt)))
+    proof_types = (
+        list((prior_match or {}).get('proofTypesUsed') or ['internal_cost_or_spec_modeling'])
+        if has_proof
+        else []
+    )
+    entry = {
+        'timestamp': dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z'),
+        'site': site_host or repo_root.name,
+        'repo': repo_root.name,
+        'routine': 'alternatives-daily',
+        'jobId': str((prior_match or {}).get('jobId') or f"alternatives-daily-{row.get('claimedOn') or today()}"),
+        'route': route_path,
+        'pageCategory': str((prior_match or {}).get('pageCategory') or 'alternatives-roundup'),
+        'track': 'alternatives',
+        'usedInternalProof': has_proof,
+        'proofTypesUsed': proof_types,
+        'poolPresented': bool((prior_match or {}).get('poolPresented', True)),
+        'legitimateExemption': bool((prior_match or {}).get('legitimateExemption', False)),
+        'whyNotUsed': None if has_proof else str((prior_match or {}).get('whyNotUsed') or 'No internal proof detected in published file.'),
+        'publishedStatus': 'published',
+    }
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    with log_path.open('a', encoding='utf-8') as fh:
+        fh.write(json.dumps(entry, ensure_ascii=False) + '\n')
+    return entry
+
+
 def cmd_set(state, args):
     row = find(state, args.id)
     if args.status not in STATUSES:
@@ -436,6 +533,8 @@ def cmd_set(state, args):
         fields['ticketPath'] = t_path
     row.update(fields)
     log(row, args.status, args.note, fields=sorted(fields))
+    if args.status == 'published':
+        _ensure_published_proof_receipt(row, row.get('liveUrl') or '')
     return {'id': args.id, 'status': args.status, **({'ticketPath': row['ticketPath']} if row.get('ticketPath') else {})}
 
 

@@ -73,6 +73,54 @@ class BacklogPrecheckTests(unittest.TestCase):
         self.assertEqual(by_id["alt-botgate"], "excluded")
         self.assertEqual(by_id["alt-good"], "eligible")
 
+    def test_published_set_backfills_internal_proof_receipt(self):
+        import json
+        import os
+        import tempfile
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            (root / "src/content/guides").mkdir(parents=True)
+            (root / "src/content/guides/clickpay-alternatives.md").write_text(
+                "---\ntitle: ClickPay Alternatives\n---\n## Worked Cost Example\nBreak-even: 1,644 transfers.\n",
+                encoding="utf-8",
+            )
+            state = {
+                "version": 1,
+                "timezone": "America/Bogota",
+                "dailyCap": 3,
+                "rows": [{
+                    "id": "alt-clickpay",
+                    "vendor": "ClickPay",
+                    "product": "ClickPay",
+                    "officialUrl": "https://www.clickpay.com/",
+                    "targetQuery": "clickpay alternatives",
+                    "status": "in_progress",
+                    "claimedOn": "2026-11-25",
+                    "audit": {"verdict": "PASS", "findings": [], "reviewer": "auditor"},
+                }],
+            }
+            old_cwd = os.getcwd()
+            try:
+                os.chdir(root)
+                args = types.SimpleNamespace(
+                    id="alt-clickpay",
+                    status="published",
+                    note="live verified",
+                    field=[
+                        'liveUrl="https://www.thehoaguide.com/hoa-software-management/clickpay-alternatives/"',
+                        'commit="3ed8a07"',
+                    ],
+                )
+                bl.cmd_set(state, args)
+                log_file = root / "reports/internal-proof-log.jsonl"
+                self.assertTrue(log_file.is_file())
+                rec = json.loads(log_file.read_text(encoding="utf-8").strip())
+                self.assertEqual(rec["route"], "/hoa-software-management/clickpay-alternatives")
+                self.assertTrue(rec["usedInternalProof"])
+                self.assertEqual(rec["publishedStatus"], "published")
+            finally:
+                os.chdir(old_cwd)
+
 
 if __name__ == "__main__":
     unittest.main()
