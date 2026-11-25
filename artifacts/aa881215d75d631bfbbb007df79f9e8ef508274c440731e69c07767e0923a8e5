@@ -1,0 +1,92 @@
+---
+// Clean Author vs. Expert Reviewer verification strip (YMYL E-E-A-T). Sits directly under the H1.
+// Separates the Research Desk (Author) from the verified human Editorial Reviewer (Jonathan Teplitsky, MBA),
+// links to the auditable Editorial Policy ("How we review"), and renders a real Reviewer Note callout
+// ONLY when a genuine human-written note exists for the current route.
+import { EDITORIAL_DESK, EDITORIAL_REVIEWER, LAST_UPDATED } from "../data/site";
+import { getReviewerNote } from "../data/reviewer-notes";
+import type { Reviewer } from "../data/types";
+
+interface Props { reviewer?: Reviewer; updated?: string; tested?: boolean; }
+const { reviewer, updated: updatedProp, tested } = Astro.props as Props;
+
+const updated = new Date((updatedProp ?? LAST_UPDATED) + "T00:00:00Z").toLocaleDateString("en-US", {
+  year: "numeric", month: "long", day: "numeric", timeZone: "UTC",
+});
+
+const reviewerNote = getReviewerNote(Astro.url.pathname);
+---
+<div class="byline-wrap">
+  <div class="byline">
+    <span class="by">
+      {tested ? "Evaluated by" : "By"} <a href={EDITORIAL_DESK.path}>{EDITORIAL_DESK.name}</a>
+    </span>
+    <span class="sep" aria-hidden="true">·</span>
+    <span class="rev">
+      Reviewed by <a href={EDITORIAL_REVIEWER.path}>{EDITORIAL_REVIEWER.displayName}</a>
+    </span>
+    <span class="sep" aria-hidden="true">·</span>
+    <span class="rev">Updated {updated}</span>
+    <span class="sep" aria-hidden="true">·</span>
+    <a class="policy-link" href="/editorial-policy/">How we review</a>
+  </div>
+  {reviewer && (
+    <div class="byline reviewer">
+      <span class="rev">
+        Specialist review: {reviewer.url
+          ? <a href={reviewer.url}>{reviewer.name}</a>
+          : <strong>{reviewer.name}</strong>
+        }, {reviewer.credentials}
+      </span>
+    </div>
+  )}
+  {reviewerNote && (
+    <aside class="reviewer-note" aria-label="Editorial reviewer note">
+      <img
+        src={EDITORIAL_REVIEWER.imagePath}
+        alt={EDITORIAL_REVIEWER.displayName}
+        width="44"
+        height="44"
+        loading="lazy"
+        class="rn-avatar"
+      />
+      <div class="rn-body">
+        <p class="rn-head">
+          <strong>{reviewerNote.label ?? "Publisher's Take"}</strong>
+          {" — "}
+          <a href={EDITORIAL_REVIEWER.path}>{EDITORIAL_REVIEWER.displayName}</a>
+          <span class="rn-date"> · {reviewerNote.reviewedDate}</span>
+        </p>
+        <p class="rn-text">{reviewerNote.note}</p>
+      </div>
+    </aside>
+  )}
+</div>
+
+<style>
+  .byline-wrap { margin: 2px 0 18px; }
+  .byline {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px;
+    font-size: 0.85rem; color: #5f6f6a;
+  }
+  .byline.reviewer { margin-top: 4px; }
+  .byline a { color: var(--primary-dark); text-decoration: none; font-weight: 600; }
+  .byline a:hover { text-decoration: underline; }
+  .policy-link { font-weight: 500 !important; }
+  .sep { color: #b5c0bc; }
+  .reviewer-note {
+    display: flex; gap: 12px; align-items: flex-start;
+    margin-top: 12px; padding: 12px 14px;
+    background: #f5f9f7; border: 1px solid #d9e6e0; border-left: 3px solid var(--primary-dark);
+    border-radius: 8px;
+  }
+  .rn-avatar {
+    width: 44px; height: 44px; border-radius: 50%; object-fit: cover; flex-shrink: 0;
+  }
+  .rn-body { min-width: 0; }
+  .rn-head { margin: 0 0 4px; font-size: 0.84rem; color: #31423c; }
+  .rn-head a { color: var(--primary-dark); text-decoration: none; font-weight: 600; }
+  .rn-head a:hover { text-decoration: underline; }
+  .rn-date { color: #6a7a75; font-weight: 400; }
+  .rn-text { margin: 0; font-size: 0.9rem; line-height: 1.55; color: #24312d; }
+</style>
