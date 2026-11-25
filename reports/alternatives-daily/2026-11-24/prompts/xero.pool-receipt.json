@@ -1,0 +1,23 @@
+{
+  "route": "/alternatives/xero/",
+  "pageCategory": "alternatives-evaluation",
+  "track": "alternatives",
+  "testedEligible": false,
+  "legitimateZeroInternalDomain": false,
+  "poolPresented": true,
+  "poolCount": 3,
+  "pool": [
+    {
+      "id": "client_and_operator_experience",
+      "label": "Client / Operator / Fleet Implementation Experience"
+    },
+    {
+      "id": "internal_scenario_and_spec_modeling",
+      "label": "Internal Cost, Plan-Cap, Token, or Spec Scenario Modeling"
+    },
+    {
+      "id": "interactive_tool_or_calculator",
+      "label": "Interactive Calculator / Decision Widget"
+    }
+  ]
+}
