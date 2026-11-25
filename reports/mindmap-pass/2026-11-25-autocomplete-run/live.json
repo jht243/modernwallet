@@ -1,0 +1,44 @@
+{
+  "status": "all-live",
+  "attempts": 11,
+  "verifiedCount": 4,
+  "pendingCount": 0,
+  "results": [
+    {
+      "url": "https://www.themodernwallet.com/debt-payoff-calculator/",
+      "finalUrl": "https://www.themodernwallet.com/debt-payoff-calculator/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/debt-payoff-calculator/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/guides/compound-interest-formula-excel-google-sheets/",
+      "finalUrl": "https://www.themodernwallet.com/guides/compound-interest-formula-excel-google-sheets/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/compound-interest-formula-excel-google-sheets/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/guides/property-tax-by-state-mortgage-payment/",
+      "finalUrl": "https://www.themodernwallet.com/guides/property-tax-by-state-mortgage-payment/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/property-tax-by-state-mortgage-payment/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/retirement/401k-calculator/",
+      "finalUrl": "https://www.themodernwallet.com/retirement/401k-calculator/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/retirement/401k-calculator/"
+    }
+  ]
+}
