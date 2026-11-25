@@ -1237,7 +1237,8 @@ def run_benchmark_for_manifest(
         ev_file = run_dir / 'evidence' / slug / 'evidence.json'
         br = brief_by_id.get(row.get('id', ''), {})
         tr = tracks.classify_action(row, br, plan)
-        if tr not in ('alternatives', 'comparison', 'roundup') and target not in specs_by_route:
+        is_pricing_guide = any(k in slug for k in ('-pricing', '-cost', '-worth-it', '-free-trial', '-limits')) or target.startswith('/roi/')
+        if tr not in ('alternatives', 'comparison', 'roundup') and not is_pricing_guide and target not in specs_by_route:
             continue
         if ev_file.is_file() and target not in specs_by_route:
             results.append({'route': target, 'track': tr, 'status': 'EXISTING', 'evidence': str(ev_file.relative_to(root))})
@@ -1265,10 +1266,18 @@ def run_benchmark_for_manifest(
                 cand['benchmarkMode'] = 'api-tokens'
 
         if not cand.get('models') and not cand.get('vendors'):
-            # Derive option names from `<a>-vs-<b>` slug if possible and match plan ledger
+            # Derive option names from `<a>-vs-<b>` slug or single-product `<subject>-pricing` slug!
             if '-vs-' in slug:
                 parts = [p.replace('-', ' ').title() for p in slug.split('-vs-', 1)]
                 cand['vendors'] = [{'name': parts[0]}, {'name': parts[1]}]
+            elif is_pricing_guide:
+                subj_base = re.sub(r'^is-|-(?:pricing(?:-guide|-plans)?|cost|worth-it|free-trial|limits)$', '', slug)
+                subj_title = subj_base.replace('-', ' ').title()
+                if subj_title:
+                    cand['vendors'] = [{'name': subj_title, 'url': cand.get('officialUrl') or ''}]
+                else:
+                    results.append({'route': target, 'track': tr, 'status': 'SKIPPED_NO_VENDOR_SPEC'})
+                    continue
             else:
                 results.append({'route': target, 'track': tr, 'status': 'SKIPPED_NO_VENDOR_SPEC'})
                 continue

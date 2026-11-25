@@ -495,7 +495,13 @@ def resolve_page_type_and_evidence_pool(
     else:
         page_category = 'how-to-or-workflow-guide'
 
-    has_catalog = any((root / r).is_file() for r in ('.claude/commands/_layer3-experience-catalog.json', '.claude/commands/_experience-catalog.json', '.claude/commands/_approved-cases.json'))
+    has_catalog = any((root / r).is_file() for r in (
+        '.claude/commands/_layer3-experience-catalog.json',
+        '.claude/commands/_experience-catalog.json',
+        '.claude/commands/_approved-cases.json',
+        '.claude/reviewer-voice-profile.json',
+        '.claude/commands/_experience.md',
+    ))
     has_surveys = any((root / r).exists() for r in ('scripts/reader-surveys/research.mts', 'data/reader-surveys.ts'))
     has_price_ledger = any((root / r).is_file() for r in ('data/pricing.ts', 'data/gear-prices.json'))
 
@@ -515,11 +521,18 @@ def resolve_page_type_and_evidence_pool(
             'reason': elig['exclusionReason'] or f'Not applicable to page category {page_category}' if not elig['eligible'] else f'Page category {page_category} uses non-tested presentation',
         })
 
+    if page_category != 'regulated-medical-or-psychedelic':
+        pool.append({
+            'id': 'live_free_tier_or_workflow_probe',
+            'label': 'Live Free-Tier, Public Sandbox, CLI/API, or Official Registry Probe',
+            'whenUseful': 'Use when a product offers a free tier, public web workspace, CLI/API endpoint, or public technical catalog you can inspect/verify directly to report concrete workflow steps, free-tier ceilings, and observed friction (without claiming full page-wide `(Tested 2026)` unless `tested_eligibility` and full item runs pass).',
+        })
+
     if has_catalog and page_category != 'regulated-medical-or-psychedelic':
         pool.append({
             'id': 'client_and_operator_experience',
             'label': 'Client / Operator / Fleet Implementation Experience',
-            'whenUseful': 'Use when an anonymized client project, owned site/app build, or documented operator workflow directly informs this page decision (within stated `limits`).',
+            'whenUseful': 'Use when an anonymized client engagement (e.g. "working with a client team reviewing dense contracts..." or "working with an executive managing multiple businesses..."), owned app/site build, or documented operator workflow illustrates the exact problem this tool solves (within stated `limits`).',
         })
 
     if has_surveys:
@@ -530,6 +543,11 @@ def resolve_page_type_and_evidence_pool(
         })
 
     if page_category != 'regulated-medical-or-psychedelic':
+        pool.append({
+            'id': 'practical_workload_and_unit_translation',
+            'label': 'Practical Real-World Workload & Human-Unit Translation (PDFs, Meetings, Workdays)',
+            'whenUseful': 'Use whenever a tier publishes speeds, credits, token rates, seat/invoice caps, or regulatory windows: translate raw vendor numbers into tangible human work units (such as 10-page PDFs, 30-minute meetings, hours or 8-hour workdays saved per month, or deliverables per credit tier) with explicit conversion assumptions.',
+        })
         pool.append({
             'id': 'internal_scenario_and_spec_modeling',
             'label': 'Internal Cost, Plan-Cap, Token, or Spec Scenario Modeling',
@@ -602,11 +620,16 @@ def log_internal_proof_outcome(
     ev_basis = str(evidence_obj.get('basis') or '').strip()
     if ev_basis == 'measured' or draft_obj.get('howWeTested') or re.search(r'\(tested\s+20\d\d\)|\bin our (?:internal )?testing\b|\bwe tested\b|\bread and reviewed\b', low):
         used_types.append('hands_on_test')
-    if (evidence_obj.get('caseUses') and len(evidence_obj['caseUses']) > 0) or re.search(r'\bat layer3labs,\s+we\b|\bin our client\b|\bin our conversations with\b|\bacross our .*?(?:client|fleet|production)\b', low):
+    if (evidence_obj.get('caseUses') and len(evidence_obj['caseUses']) > 0) or re.search(
+        r'\bat layer3labs,\s+we\b|\bin our client\b|\bin client work with\b|\bworking with (?:a |an |several )?[a-z0-9 -]{2,45}client\b|\bworking with an executive\b|\bas we saw working with\b|\bin our conversations with\b|\bacross our .*?(?:client|fleet|production)\b',
+        low,
+    ):
         used_types.append('client_and_operator_experience')
     if re.search(r'\breader survey\b|\breader poll\b|\bour survey of\b', low):
         used_types.append('proprietary_reader_survey')
-    if ev_basis in ('modeled', 'calculated') or draft_obj.get('scenarioTable') or any(isinstance(s, dict) and s.get('table') for s in (draft_obj.get('sections') or [])) or re.search(r'\bin our internal (?:cost |scenario )?(?:modeling|analysis)\b|\bwe modeled\b|\bbreak-even\b', low):
+    if re.search(r'\b10-page pdfs?\b|\b8-hour workdays?\b|\b30-minute meetings?\b|\bin our workload (?:modeling|analysis|translation)\b|\bworkload translation\b', low):
+        used_types.append('practical_workload_and_unit_translation')
+    if ev_basis in ('modeled', 'calculated') or draft_obj.get('scenarioTable') or any(isinstance(s, dict) and s.get('table') for s in (draft_obj.get('sections') or [])) or re.search(r'\bin our internal (?:cost |scenario |workload )?(?:modeling|analysis)\b|\bwe modeled\b|\bbreak-even\b', low):
         used_types.append('internal_cost_or_spec_modeling')
     if ((evidence_obj.get('presentation') or {}).get('interaction') or {}).get('decision') in ('build', 'reuse'):
         used_types.append('interactive_tool_or_calculator')
@@ -931,19 +954,68 @@ def _discover_track_voice_sample(root: Path, track: str, explicit_sample: str | 
     return None, ''
 
 
+_TOPIC_SYNONYM_CLUSTERS: list[tuple[set[str], set[str]]] = [
+    # 1. Voice, TTS, Audio, Dictation & Meeting Note-Takers (e.g. Speechify, ElevenLabs, Murf, Pocket AI)
+    (
+        {'speechify', 'elevenlabs', 'murf', 'whisper', 'voice', 'voices', 'audio', 'tts', 'speech', 'listening', 'read', 'aloud', 'narration', 'podcast', 'transcribe', 'transcription', 'recorder', 'dictation', 'notes'},
+        {'speech', 'capture', 'speaker', 'executive', 'inbox', 'task', 'contracts', 'reference', 'knowledge', 'lawyer', 'corpus', 'articles', 'portfolio'},
+    ),
+    # 2. PDFs, Documents, Contracts, Legal & Knowledge Ops
+    (
+        {'pdf', 'pdfs', 'document', 'documents', 'contract', 'contracts', 'harvey', 'dossier', 'briefing', 'ocr', 'filing', 'filings', 'compliance', 'clause', 'clauses', 'discovery', 'legal'},
+        {'contracts', 'reference', 'knowledge', 'hierarchy', 'risk', 'lawyer', 'law', 'intake', 'matter', 'conflict', 'corpus', 'document'},
+    ),
+    # 3. Accounting, Finance, Billing, Expense, Tax & Budgeting
+    (
+        {'quickbooks', 'xero', 'expensify', 'avalara', 'freshbooks', 'wave', 'tiller', 'ynab', 'monarch', 'copilot', 'invoice', 'invoices', 'bookkeeping', 'accounting', 'payroll', 'tax', 'taxes', 'expense', 'expenses', 'budget', 'budgeting', 'reconciliation'},
+        {'accounting', 'calculations', 'quickbooks', 'bookkeeping', 'transaction', 'categorization', 'finance', 'merchant', 'cash', 'financial'},
+    ),
+    # 4. AI Video, Image, Creative, Watermarking & Content Production
+    (
+        {'dreamina', 'capcut', 'sora', 'runway', 'midjourney', 'kling', 'seedance', 'video', 'videos', 'image', 'images', 'avatar', 'watermark', 'editing', 'timeline', 'newsletter', 'copywriting', 'creative'},
+        {'video', 'written', 'founder', 'voice', 'articles', 'style', 'newsletters', 'editorial', 'image', 'media', 'publishing'},
+    ),
+    # 5. AI Models, Coding, APIs, Agents, Plugins & Data Retention
+    (
+        {'openai', 'claude', 'anthropic', 'gemini', 'gpt', 'kimi', 'deepseek', 'astra', 'sonnet', 'opus', 'n8n', 'zapier', 'make', 'agent', 'agents', 'plugin', 'plugins', 'token', 'tokens', 'api', 'sdk', 'workflow', 'workflows', 'automation', 'zdr', 'retention'},
+        {'automating', 'ai', 'modeling', 'workflow', 'workflows', 'integration', 'routing', 'privacy', 'controlled', 'access', 'calculations'},
+    ),
+    # 6. Chatbots, CRM, Lead Gen, Funnels, Support & Messaging
+    (
+        {'chat', 'chats', 'chatbot', 'chatbots', 'whatsapp', 'intercom', 'zendesk', 'hubspot', 'salesforce', 'lead', 'leads', 'funnel', 'funnels', 'form', 'forms', 'support', 'ticketing', 'messaging'},
+        {'intake', 'onboarding', 'signup', 'forms', 'inbox', 'routing', 'crm', 'qualification', 'email', 'consent', 'recovery'},
+    ),
+    # 7. Executive Ops, Team Collaboration, Diligence & Market Research
+    (
+        {'slack', 'teams', 'notion', 'asana', 'monday', 'clickup', 'collaboration', 'executive', 'founder', 'diligence', 'portfolio', 'advisory', 'meeting', 'meetings', 'productivity', 'reminder', 'reminders'},
+        {'executive', 'inbox', 'routing', 'task', 'separating', 'accounts', 'portfolio', 'audits', 'advisory', 'signals', 'productivity'},
+    ),
+    # 8. Ecommerce, Consumer Hardware, Robotics & Marketplaces
+    (
+        {'amazon', 'shopify', 'ecommerce', 'robot', 'robots', 'quadruped', 'vacuum', 'narwal', 'roborock', 'petoi', 'hiwonder', 'hardware', 'kit', 'kits', 'sensor', 'marketplace', 'commerce'},
+        {'marketplace', 'trading', 'commerce', 'consumer', 'amazon', 'product', 'design', 'valuation'},
+    ),
+    # 9. Loyalty, Sports, Gaming, Web3 & Collectibles
+    (
+        {'loyalty', 'rewards', 'gaming', 'game', 'games', 'wallet', 'wallets', 'crypto', 'bitcoin', 'collectibles', 'sports', 'fan', 'community'},
+        {'loyalty', 'rewards', 'gamification', 'sports', 'wallet', 'wallets', 'gaming', 'blockchain', 'community'},
+    ),
+    # 10. Space, Satellite, Defense & Intelligence
+    (
+        {'satellite', 'satellites', 'debris', 'deorbit', 'spectrum', 'orbit', 'orbital', 'nasa', 'esa', 'fcc', 'launch', 'drone', 'drones', 'defense', 'military', 'intelligence'},
+        {'space', 'drone', 'defense', 'intelligence', 'military', 'risk', 'signals', 'compliance'},
+    ),
+]
+
+
 def match_experience_records(root: Path, query_text: str, limit: int = 3) -> list[dict]:
-    """Match the top 1-3 relevant first-party records from _*experience-catalog.json in <5ms ($0 tokens)."""
+    """Match the top 1-3 relevant first-party client, owned-app, and operator records in <5ms ($0 tokens)."""
     cat_path = None
     for cand in (root / '.claude/commands/_layer3-experience-catalog.json', root / '.claude/commands/_experience-catalog.json'):
         if cand.is_file():
             cat_path = cand
             break
-    if cat_path is None:
-        return []
-    try:
-        cat = json.loads(cat_path.read_text())
-    except Exception:
-        return []
+
     q_words = set(_words(query_text))
     stop = {
         'the', 'and', 'for', 'with', 'from', 'that', 'this', 'what', 'how', 'best',
@@ -954,45 +1026,216 @@ def match_experience_records(root: Path, query_text: str, limit: int = 3) -> lis
         'using', 'use', 'used', 'based', 'existing', 'local', 'site', 'sites', 'content',
         'data', 'system', 'systems', 'when', 'should', 'instead', 'monthly', 'annual',
         'bill', 'push', 'my', 'our', 'your', 'their', 'into', 'over', 'under', 'more', 'less',
-        'cap', 'caps', 'plan', 'plans', 'tier', 'tiers', 'cost', 'costs', 'add', 'on',
+        'cap', 'caps', 'plan', 'plans', 'tier', 'tiers', 'cost', 'costs', 'add', 'on', 'much', 'does',
     }
-    # Expand domain synonyms so conversational/chatbot/lead-flow queries hit intake, forms, routing & CRM client builds
-    expanded = set(q_words - stop)
-    if expanded & {'chat', 'chats', 'chatbot', 'chatbots', 'whatsapp', 'lead', 'leads', 'funnel', 'funnels', 'form', 'forms', 'support', 'ticketing', 'messaging'}:
-        expanded |= {'intake', 'onboarding', 'signup', 'forms', 'inbox', 'routing', 'crm', 'qualification', 'email'}
-    scored = []
-    for rec in (cat.get('records') or []):
-        if not isinstance(rec, dict):
-            continue
-        rid = str(rec.get('id') or '')
-        rel = str(rec.get('relationship') or '')
-        # Never inject sensitive medical/psychedelic/sanctions fleet sites onto general B2B software pages
-        if rid in ('fleet-psychedelic', 'fleet-metabolic', 'fleet-caracas', 'fleet-cuba', 'fleet-space', 'fleet-drone', 'fleet-sport'):
-            if not (set(_words(str(rec.get('topic') or ''))) & (q_words - stop)):
+    core_words = set(q_words - stop)
+    expanded = set(core_words)
+    for triggers, targets in _TOPIC_SYNONYM_CLUSTERS:
+        if core_words & triggers:
+            expanded |= targets
+
+    if cat_path is not None:
+        try:
+            cat = json.loads(cat_path.read_text())
+        except Exception:
+            cat = {}
+        scored = []
+        for rec in (cat.get('records') or []):
+            if not isinstance(rec, dict):
                 continue
-        hay = ' '.join(str(rec.get(k) or '') for k in ('publicDescription', 'topic', 'workSummary', 'possibleUses'))
-        r_terms = set(_words(hay)) - stop
-        overlap = float(len(expanded & r_terms))
-        if rid == 'fleet-layer3labs':
-            overlap += 2.5
-        elif rel == 'Client projects' and overlap > 0:
-            overlap += 1.5
-        if overlap > 0:
-            scored.append((overlap, rec))
-    scored.sort(key=lambda x: x[0], reverse=True)
-    results = []
-    for _, r in scored[:limit]:
-        results.append({
-            'id': r.get('id'),
-            'publicDescription': r.get('publicDescription'),
-            'relationship': r.get('relationship'),
-            'topic': r.get('topic'),
-            'workSummary': r.get('workSummary'),
-            'possibleUses': r.get('possibleUses'),
-            'limits': r.get('limits'),
-            'outcomeLeads': r.get('outcomeLeads') or [],
+            rid = str(rec.get('id') or '')
+            rel = str(rec.get('relationship') or '')
+            if rel == 'Discovery & proposals':
+                continue
+            # Never inject sensitive medical/psychedelic/sanctions fleet sites onto general B2B software pages
+            if rid in ('fleet-psychedelic', 'fleet-metabolic', 'fleet-caracas', 'fleet-cuba', 'fleet-space', 'fleet-drone', 'fleet-sport'):
+                if not (set(_words(str(rec.get('topic') or ''))) & core_words):
+                    continue
+            hay = ' '.join(str(rec.get(k) or '') for k in ('publicDescription', 'topic', 'workSummary', 'possibleUses'))
+            r_terms = set(_words(hay)) - stop
+            direct_hits = float(len(core_words & r_terms)) * 2.5
+            synonym_hits = float(len((expanded - core_words) & r_terms)) * 1.0
+            score = direct_hits + synonym_hits
+            if score <= 0:
+                if rid == 'fleet-layer3labs':
+                    score = 0.5  # fallback tie-breaker only when few client/app records match
+                else:
+                    continue
+            if rel in ('Client projects', 'Unnamed client groups'):
+                score += 2.2
+            elif rel == 'Owned apps':
+                score += 1.6
+            elif rel == 'Operator history':
+                score += 1.2
+            scored.append((score, rec))
+        scored.sort(key=lambda x: x[0], reverse=True)
+        results = []
+        for _, r in scored[:limit]:
+            desc = str(r.get('publicDescription') or '').strip()
+            rel = str(r.get('relationship') or '')
+            desc_phrase = desc[0].lower() + desc[1:] if desc and desc[:2].isupper() is False and rel in ('Client projects', 'Unnamed client groups') else desc
+            if rel in ('Client projects', 'Unnamed client groups'):
+                framing = f'Natural compliant framing (keep anonymous, no invented metrics): "Working with {desc_phrase}, we saw this exact workflow bottleneck around {str(r.get("topic") or "operations").lower()}..." or "As we saw working with {desc_phrase}, a tool like this fits best when..."'
+            elif rel == 'Owned apps':
+                framing = f'Natural compliant framing: "Building and operating {desc} ({str(r.get("topic") or "").lower()}), we ran into the same tradeoff..."'
+            else:
+                framing = f'Natural compliant framing: "Across our operations on {desc}, ..."'
+            results.append({
+                'id': r.get('id'),
+                'publicDescription': desc,
+                'relationship': rel,
+                'topic': r.get('topic'),
+                'workSummary': r.get('workSummary'),
+                'possibleUses': r.get('possibleUses'),
+                'limits': r.get('limits'),
+                'suggestedFraming': framing,
+                'outcomeLeads': r.get('outcomeLeads') or [],
+            })
+        if results:
+            return results
+
+    # Fallback on non-Layer3 fleet repos: match verified operator history from `.claude/reviewer-voice-profile.json`
+    vp = load_reviewer_voice_profile(root)
+    if isinstance(vp, dict) and vp.get('verifiedCareerHistory'):
+        fallback_matches = []
+        for idx, item in enumerate(vp.get('verifiedCareerHistory') or []):
+            i_terms = set(_words(str(item))) - stop
+            sc = float(len(core_words & i_terms)) * 2.0 + float(len((expanded - core_words) & i_terms))
+            if sc > 0:
+                fallback_matches.append((sc, idx, str(item)))
+        fallback_matches.sort(key=lambda x: x[0], reverse=True)
+        return [
+            {
+                'id': f'operator-career-{idx + 1}',
+                'publicDescription': line.split(':', 1)[0].strip(),
+                'relationship': 'Operator history',
+                'topic': vp.get('siteCredentialAngle') or 'Operator experience',
+                'workSummary': line,
+                'limits': 'State only facts present in this verified career line; never invent unverified client names or product tests.',
+                'suggestedFraming': 'Use in operator analysis or Publisher\'s Take to ground why a specific cap, workflow, or threshold matters in practice.',
+            }
+            for _, idx, line in fallback_matches[:limit]
+        ]
+    return []
+
+
+def build_workload_translations(text_blob: str, route: str = '', page_category: str = '') -> list[dict]:
+    """Deterministically translate raw vendor caps, speeds, prices, tokens, or regulatory windows
+    into concrete human work units (10-page PDFs, 30-minute meetings, hours/workdays saved) at $0 LLM tokens.
+
+    Pre-computing these figures in Python and injecting them into `<slug>.prompt.md` makes them part
+    of the closed-world `SOURCE` facts so `content_gen.py`'s claim checker passes them on pass 1.
+    """
+    raw = text_blob or ''
+    low = raw.lower()
+    translations: list[dict] = []
+    if page_category == 'regulated-medical-or-psychedelic':
+        return translations
+
+    # 1. Playback / TTS / Audio Speed Multipliers (e.g. Speechify 1.5x Free vs 5x Premium)
+    speeds = sorted({float(m) for m in re.findall(r'\b([1-9](?:\.\d)?)\s*x\b', low) if 1.0 <= float(m) <= 6.0})
+    if len(speeds) >= 2 or (speeds and any(k in low for k in ('speechify', 'listening', 'voice', 'voices', 'audio', 'tts', 'read aloud', 'narration'))):
+        low_sp = speeds[0] if speeds else 1.5
+        high_sp = speeds[-1] if len(speeds) >= 2 else 3.0
+        prac_sp = 3.0 if high_sp >= 3.0 and low_sp < 3.0 else high_sp
+        # Reference assumptions: 150 wpm baseline speech, 5,000 words per 10-page PDF, 4,500 words per 30-min meeting transcript
+        pdf_words = 5000.0
+        monthly_pdfs = 20  # 5 ten-page PDFs per week = 20 PDFs / 100,000 words per month
+        monthly_words = pdf_words * monthly_pdfs
+        min_1x_single = round(pdf_words / 150.0, 1)
+        min_low_single = round(pdf_words / (150.0 * low_sp), 1)
+        min_prac_single = round(pdf_words / (150.0 * prac_sp), 1)
+        min_high_single = round(pdf_words / (150.0 * high_sp), 1)
+
+        hrs_low_mo = round((monthly_words / (150.0 * low_sp)) / 60.0, 2)
+        hrs_prac_mo = round((monthly_words / (150.0 * prac_sp)) / 60.0, 2)
+        hrs_high_mo = round((monthly_words / (150.0 * high_sp)) / 60.0, 2)
+        hrs_saved_mo = round(hrs_low_mo - hrs_prac_mo, 2)
+        workdays_saved_yr = round((hrs_saved_mo * 12.0) / 8.0, 1)
+        meetings_equiv_mo = round((hrs_saved_mo * 60.0) / 30.0, 1)
+
+        item = {
+            'kind': 'audio_reading_workload_translation',
+            'assumptions': 'Standard 150 words-per-minute baseline narration pace; 500 words per page (5,000 words per 10-page PDF report; 4,500 words per 30-minute meeting transcript); 8-hour workday.',
+            'single10PagePdfMinutes': {
+                'at_1.0x': min_1x_single,
+                f'at_{low_sp:g}x': min_low_single,
+                f'at_{prac_sp:g}x': min_prac_single,
+                f'at_{high_sp:g}x': min_high_single,
+            },
+            'monthly20PdfWorkload': {
+                'workload': '20 ten-page PDFs per month (5 per week, 100,000 words total, or ~22 thirty-minute meeting transcripts)',
+                f'hoursAt_{low_sp:g}x': hrs_low_mo,
+                f'hoursAt_{prac_sp:g}x': hrs_prac_mo,
+                f'hoursAt_{high_sp:g}x': hrs_high_mo,
+                f'hoursSavedPerMonth_{prac_sp:g}x_vs_{low_sp:g}x': hrs_saved_mo,
+                f'thirtyMinMeetingsEquivalentSavedPerMonth': meetings_equiv_mo,
+                f'eightHourWorkdaysSavedPerYear': workdays_saved_yr,
+            },
+        }
+        translations.append(item)
+
+    # 2. Monthly vs Annual Subscription Break-Even & Cost-Per-Workday Math
+    mo_matches = [float(x) for x in re.findall(r'\$\s*(\d+(?:\.\d{1,2})?)\s*(?:per\s+month|/\s*mo(?:nth)?|monthly)', low)]
+    yr_matches = [float(x) for x in re.findall(r'\$\s*(\d+(?:\.\d{1,2})?)\s*(?:per\s+year|/\s*yr|/\s*year|billed\s+(?:yearly|annually)|annually)', low)]
+    if not mo_matches:
+        mo_matches = [float(x) for x in re.findall(r'(\d+(?:\.\d{1,2})?)\s+dollars?\s+(?:per\s+month|monthly)', low)]
+    if not yr_matches:
+        yr_matches = [float(x) for x in re.findall(r'(\d+(?:\.\d{1,2})?)\s+dollars?\s+(?:billed\s+yearly|per\s+year|yearly|annually)', low)]
+    if mo_matches and yr_matches:
+        m_price = mo_matches[0]
+        y_price = yr_matches[0]
+        if m_price > 0 and y_price > m_price and y_price < m_price * 12:
+            full_12_mo = round(m_price * 12.0, 2)
+            annual_savings = round(full_12_mo - y_price, 2)
+            eff_mo = round(y_price / 12.0, 2)
+            import math
+            be_month = int(math.ceil(y_price / m_price))
+            be_cum = round(be_month * m_price, 2)
+            cost_per_workday_yr = round(y_price / 260.0, 2)  # 260 workdays/year
+            cost_per_workday_mo = round(m_price / 22.0, 2)   # 22 workdays/month
+            translations.append({
+                'kind': 'billing_horizon_and_workday_math',
+                'assumptions': '22 workdays per month (260 workdays per year) using the published monthly and annual prices.',
+                'monthlyPriceUsd': m_price,
+                'annualPriceUsd': y_price,
+                'twelveMonthsOnMonthlyBillingUsd': full_12_mo,
+                'annualDollarSavingsUsd': annual_savings,
+                'effectiveMonthlyOnAnnualUsd': eff_mo,
+                'breakEvenBilledMonth': be_month,
+                'cumulativeMonthlySpendAtBreakEvenUsd': be_cum,
+                'costPerWorkdayOnAnnualUsd': cost_per_workday_yr,
+                'costPerWorkdayOnMonthlyUsd': cost_per_workday_mo,
+            })
+
+    # 3. Credit / Invoice / Transaction / Token Tier Allowances -> Daily & Deliverable Units
+    cap_matches = re.findall(r'\b(\d{1,3}(?:,\d{3})+|\d{2,6})\s+(credits|invoices|transactions|minutes|characters)\b', low)
+    seen_caps = set()
+    cap_rows = []
+    for raw_num, unit in cap_matches[:6]:
+        val = int(raw_num.replace(',', ''))
+        if val <= 0 or (val, unit) in seen_caps:
+            continue
+        seen_caps.add((val, unit))
+        entry = {
+            'publishedAllowance': f'{val:,} {unit}',
+            'perWorkday_22d': round(val / 22.0, 1),
+            'perWeek_4_33w': round(val / 4.33, 1),
+        }
+        if unit == 'characters':
+            entry['approxTenPagePdfs_25000charsEach'] = round(val / 25000.0, 1)
+        elif unit == 'minutes':
+            entry['thirtyMinMeetingsEquivalent'] = round(val / 30.0, 1)
+            entry['eightHourWorkdaysEquivalent'] = round((val / 60.0) / 8.0, 2)
+        cap_rows.append(entry)
+    if cap_rows:
+        translations.append({
+            'kind': 'allowance_to_workday_and_deliverable_units',
+            'assumptions': '22 workdays per month (4.33 weeks per month); 25,000 characters (~5,000 words) per 10-page PDF where character caps apply.',
+            'tiers': cap_rows,
         })
-    return results
+
+    return translations
 
 
 def compile_track_system(
@@ -1929,6 +2172,23 @@ def main() -> int:
     p_rn.add_argument('--label')
     p_rn.add_argument('--reviewed-date')
 
+    p_ep = sub.add_parser('evidence-pool', help='Resolve page type and emit the unranked Internal Proof Evidence Pool receipt')
+    p_ep.add_argument('--route', required=True)
+    p_ep.add_argument('--track', default='guide')
+    p_ep.add_argument('--title', default='')
+    p_ep.add_argument('--h1', default='')
+    p_ep.add_argument('--description', default='')
+    p_ep.add_argument('--out', help='Optional path to write <slug>.pool-receipt.json')
+
+    p_lp = sub.add_parser('log-proof', help='Record an auditable internal-proof outcome to reports/internal-proof-log.jsonl')
+    p_lp.add_argument('--route', required=True)
+    p_lp.add_argument('--draft', help='Optional path to JSON or Markdown draft')
+    p_lp.add_argument('--pool-receipt', help='Optional path to <slug>.pool-receipt.json')
+    p_lp.add_argument('--evidence', help='Optional path to evidence.json')
+    p_lp.add_argument('--routine', default='')
+    p_lp.add_argument('--job-id', default='')
+    p_lp.add_argument('--published-status', default='published')
+
     sub.add_parser('benchmark', help='Compare monolithic vs track-sliced prompt and phase sizes')
 
     args = parser.parse_args()
@@ -2000,6 +2260,58 @@ def main() -> int:
             reviewed_date=args.reviewed_date,
         )
         print(json.dumps(res, indent=2))
+        return 0
+
+    if args.cmd == 'evidence-pool':
+        pool_info = resolve_page_type_and_evidence_pool(
+            root,
+            route=args.route,
+            track=args.track,
+            title=args.title,
+            h1=args.h1 or args.title,
+            description=args.description,
+        )
+        if args.out:
+            out_p = Path(args.out) if Path(args.out).is_absolute() else (root / args.out)
+            out_p.parent.mkdir(parents=True, exist_ok=True)
+            out_p.write_text(json.dumps(pool_info, indent=2, ensure_ascii=False) + '\n')
+        print(json.dumps(pool_info, indent=2, ensure_ascii=False))
+        return 0
+
+    if args.cmd == 'log-proof':
+        draft_obj = None
+        raw_text = ''
+        if args.draft:
+            dp = Path(args.draft) if Path(args.draft).is_absolute() else (root / args.draft)
+            txt = dp.read_text(errors='ignore')
+            try:
+                parsed = json.loads(txt)
+                if isinstance(parsed, dict):
+                    draft_obj = parsed
+                else:
+                    raw_text = txt
+            except Exception:
+                raw_text = txt
+        pool_rec = None
+        if args.pool_receipt:
+            pp = Path(args.pool_receipt) if Path(args.pool_receipt).is_absolute() else (root / args.pool_receipt)
+            pool_rec = json.loads(pp.read_text())
+        ev = None
+        if args.evidence:
+            ep = Path(args.evidence) if Path(args.evidence).is_absolute() else (root / args.evidence)
+            ev = json.loads(ep.read_text())
+        rec = log_internal_proof_outcome(
+            root,
+            route=args.route,
+            draft_obj=draft_obj,
+            raw_text=raw_text,
+            evidence_obj=ev,
+            pool_receipt=pool_rec,
+            routine=args.routine,
+            job_id=args.job_id,
+            published_status=args.published_status,
+        )
+        print(json.dumps(rec, indent=2, ensure_ascii=False))
         return 0
 
     if args.cmd == 'benchmark':

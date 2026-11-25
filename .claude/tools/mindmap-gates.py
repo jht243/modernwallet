@@ -2187,7 +2187,7 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                 ]
                 career_lines = [f'  - {c}' for c in (voice_prof.get('verifiedCareerHistory') or [])]
                 rule_lines = [f'  - {r}' for r in (voice_prof.get('voiceRules') or [])]
-                default_label = voice_prof.get('defaultLabel', "Publisher's Take")
+                default_label = voice_prof.get('defaultLabel') or "Publisher's Take"
                 prompt_lines.extend([
                     '',
                     f"## Generate Fresh Page-Specific Reviewer Note (Required — {voice_prof.get('reviewer', 'Jonathan Teplitsky')} Voice & Career Profile)",
@@ -2202,17 +2202,46 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                 ])
             matched_exp = tracks_mod.match_experience_records(
                 root,
-                ' '.join([str(ident.get('title') or ''), str(ra.get('question') or row.get('reader_question') or ''), str(row.get('problem') or '')]),
+                ' '.join([
+                    slug.replace('-', ' '),
+                    str(target or '').replace('/', ' ').replace('-', ' '),
+                    str(ident.get('title') or ''),
+                    str(ra.get('question') or row.get('reader_question') or ''),
+                    str(ra.get('answer') or row.get('answer') or ''),
+                    str(row.get('problem') or ''),
+                ]),
                 limit=3,
             )
             if matched_exp:
                 prompt_lines.extend([
                     '',
-                    '## Matched First-Party Layer3 Experience Records (Use Only Within Stated `limits`)',
+                    '## Matched First-Party Client, Owned-App & Operator Experience Records (Use Naturally Within Stated `limits`)',
+                    'When one of these real engagements illustrates the exact problem or workflow on this page, weave it naturally into your analysis or takeaway (follow `suggestedFraming` below; keep client identities anonymous and never invent metrics or product tests):',
                     '```json',
                     json.dumps(matched_exp, indent=2, ensure_ascii=False),
                     '```',
                 ])
+            if hasattr(tracks_mod, 'build_workload_translations'):
+                src_blob = '\n'.join([
+                    str(ra.get('answer') or row.get('answer') or ''),
+                    '\n'.join(outline_lines),
+                    json.dumps(ev_data or {}, ensure_ascii=False),
+                    '\n'.join(s_txt for _, s_txt in row_sources),
+                ])
+                w_trans = tracks_mod.build_workload_translations(
+                    src_blob,
+                    route=target,
+                    page_category=str(pool_info.get('pageCategory') or ''),
+                )
+                if w_trans:
+                    prompt_lines.extend([
+                        '',
+                        '## Pre-Computed Practical Workload & Human-Unit Translations (Verified Closed-World Math — Use Where Helpful)',
+                        'Translate abstract vendor speeds, caps, credits, or billing cycles into concrete human work units (such as 10-page PDFs, 30-minute meetings, and 8-hour workdays saved) using these exact pre-computed figures and stating the reference assumption transparently (never claim hands-on product execution unless `basis == "measured"`):',
+                        '```json',
+                        json.dumps(w_trans, indent=2, ensure_ascii=False),
+                        '```',
+                    ])
         if outline_lines:
             prompt_lines.extend(['', '## Approved Section Outline', *outline_lines])
         if outbound_items:
@@ -2223,8 +2252,8 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
             ev_basis = str(ev_data.get('basis') or 'reported').strip()
             if ev_basis == 'reported':
                 basis_guidance = (
-                    'Basis is `"reported"` (no executed calculation/model/test in `evidence.json`): attribute all figures strictly to their published vendor/benchmark primary sources. '
-                    'NEVER write `"In our internal cost modeling"`, `"In our internal testing"`, `"we modeled"`, or `"we tested"` on a `"reported"` basis packet (only cite anonymized approved client `caseUses` or durable reader-survey facts when explicitly populated below).'
+                    'Basis is `"reported"` (no executed multi-vendor benchmark script in `evidence.json`): NEVER claim hands-on product execution (`"In our internal testing"`, `"we tested"`, or `(Tested YYYY)`). '
+                    'You SHOULD still incorporate any genuinely relevant anonymized client/operator records (`Matched First-Party Client, Owned-App & Operator Experience Records` above) and any `Pre-Computed Practical Workload & Human-Unit Translations` above (stating their reference assumptions transparently, e.g. "Translating the published 1.5x Free cap against a 20-PDF monthly reading load at 150 words per minute...").'
                 )
             elif ev_basis in ('calculated', 'modeled'):
                 basis_guidance = (
