@@ -3943,10 +3943,23 @@
           "at": "2026-11-25T16:58:41+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-25T17:06:10+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded",
+            "slug",
+            "writer"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-25T16:41:15+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-25T17:06:10+00:00",
       "claimedOn": "2026-11-25",
       "attempts": 1,
       "lastNextAt": "2026-11-25T16:41:15+00:00",
@@ -4019,7 +4032,13 @@
           }
         ],
         "recordedAt": "2026-11-25T16:58:41+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/brex/",
+      "commit": "3fb7af6",
+      "indexnow": "ok 200",
+      "seoUpgraded": "2026-11-25",
+      "writer": "content_gen",
+      "slug": "brex"
     },
     {
       "vendor": "Charles Schwab",
@@ -4061,10 +4080,23 @@
           "at": "2026-11-25T16:58:42+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-25T17:06:11+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded",
+            "slug",
+            "writer"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-25T16:41:15+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-25T17:06:11+00:00",
       "claimedOn": "2026-11-25",
       "attempts": 1,
       "lastNextAt": "2026-11-25T16:41:15+00:00",
@@ -4123,7 +4155,13 @@
           }
         ],
         "recordedAt": "2026-11-25T16:58:42+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/charles-schwab/",
+      "commit": "3fb7af6",
+      "indexnow": "ok 200",
+      "seoUpgraded": "2026-11-25",
+      "writer": "content_gen",
+      "slug": "charles-schwab"
     },
     {
       "vendor": "Webull",
@@ -4165,10 +4203,23 @@
           "at": "2026-11-25T16:58:41+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-25T17:06:11+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded",
+            "slug",
+            "writer"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-25T16:41:15+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-25T17:06:11+00:00",
       "claimedOn": "2026-11-25",
       "attempts": 1,
       "lastNextAt": "2026-11-25T16:41:15+00:00",
@@ -4262,7 +4313,13 @@
           }
         ],
         "recordedAt": "2026-11-25T16:58:41+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/webull/",
+      "commit": "3fb7af6",
+      "indexnow": "ok 200",
+      "seoUpgraded": "2026-11-25",
+      "writer": "content_gen",
+      "slug": "webull"
     },
     {
       "vendor": "Copilot Money",
