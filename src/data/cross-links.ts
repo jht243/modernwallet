@@ -279,6 +279,14 @@ export const CROSS_LINKS: Record<string, CrossLink[]> = {
     { href: "/investing/", label: "Model an investment return" },
     { href: "/retirement/", label: "Project retirement savings" },
   ],
+  // Autocomplete pass (2026-11-25).
+  "debt-payoff-calculator": [
+    { href: "/debt-consolidation-calculator/", label: "Would one consolidation loan cost less?" },
+    { href: "/credit-card-payoff/", label: "Pay off one card: time and interest" },
+    { href: "/compare/debt-snowball-vs-avalanche/", label: "Debt snowball vs avalanche" },
+    { href: "/guides/pay-off-debt-or-invest/", label: "Pay off debt or invest?" },
+    { href: "/emergency-fund-calculator/", label: "Build a cushion so debt doesn't return" },
+  ],
   "debt-consolidation-calculator": [
     { href: "/loan-payment-calculator/", label: "Check a consolidation loan's monthly payment" },
     { href: "/credit-card-payoff/", label: "Pay off one card: time and interest" },

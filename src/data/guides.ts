@@ -13668,6 +13668,7 @@ export const GUIDES: Guide[] = [
     tools: [
       { href: "/retirement/", label: "Retirement calculator" },
       { href: "/retirement/retirement-savings-calculator/", label: "Retirement savings" },
+      { href: "/guides/compound-interest-formula-excel-google-sheets/", label: "Compound interest spreadsheet formulas" },
     ],
     faqs: [
       { question: "What formula calculates compound growth in a spreadsheet?", answer: "Use =StartingBalance*(1+Rate) for one year of growth, then carry the result forward as next year's starting balance. Google Sheets and Excel also both support the built-in FV function, =FV(rate, nper, pmt, pv), to calculate a future value directly from your inputs." },
@@ -24868,6 +24869,174 @@ export const GUIDES: Guide[] = [
         "url": "https://www.crfb.org/papers/analysis-2026-social-security-trustees-report"
       }
     ]
+  },
+  // ── mindmap-pass autocomplete 2026-11-25: compound-interest-formula-excel-google-sheets (prose via content_gen.py) ──
+  {
+    "slug": "compound-interest-formula-excel-google-sheets",
+    "title": "Compound Interest Formula in Excel and Google Sheets",
+    "metaDescription": "Calculate compound interest in Excel and Google Sheets. Copy verified FV and mathematical power formulas for lump sums and recurring monthly deposits.",
+    "h1": "Compound Interest Formula in Excel and Google Sheets",
+    "cardBlurb": "Learn exact formulas to calculate compound interest in Excel and Google Sheets for lump sums and monthly deposits.",
+    "introText": "To calculate compound interest in Excel or Google Sheets, use =P*(1+r/n)^(n*t) for a lump sum balance or =FV(rate/n, n*years, -deposit, -principal) when adding regular contributions. Both formulas return the future balance for a fixed interest rate.\n\nThe =FV shortcut is accurate only when regular deposits match the compounding frequency, such as monthly additions with monthly compounding.\n\nIf you prefer an instant calculation without manually entering spreadsheet syntax, run your figures through our [compound interest calculator](/investing/compound-interest-calculator/) to compare outcomes instantly.",
+    "sections": [
+      {
+        "heading": "How to Calculate Compound Interest in Excel and Google Sheets",
+        "body": "To calculate compound interest in a spreadsheet, enter =P*(1+r/n)^(n*t) for an initial lump sum or =FV(rate/n, n*years, -deposit, -principal) for recurring contributions. In these formulas, P represents initial principal, r is the annual interest rate, n is compounding periods per year, and t is total investment years.\n\nIn our internal modeling, we ran both formulas on a $10,000 initial balance at a 5% nominal rate over 10 years, confirming that monthly compounding produces a future value (FV) of $16,470.09. We verified our mathematical power outputs against a month-by-month calculation loop and checked the built-in function against the documented test case published by [Microsoft Support](https://support.microsoft.com/en-us/excel/functions/fv-function), which confirms =FV(0.06/12,10,-200,-500,1) equals $2,581.40.\n\nSpreadsheets require cash outflows to be entered as negative numbers. If you omit the negative signs before regular contributions or initial principal, the formula produces a negative future balance. When regular deposits occur on a different timeline than compounding, such as monthly deposits alongside daily compounding, you must compute an effective periodic rate rather than using a simple rate division."
+      },
+      {
+        "heading": "The Compound Interest Formula Step by Step",
+        "body": "The standard compound interest formula evaluates exponential asset growth using the equation A = P*(1 + r/n)^(n*t).\n\nEach component represents a concrete variable in your savings plan:\n\n- A is the final future balance after all interest accrues.\n- P is the starting principal balance.\n- r is the nominal annual interest rate expressed as a decimal.\n- n is the number of times interest compounds per calendar year.\n- t is the overall duration of the investment in years.\n\nConsider a starting balance of $10,000 invested at 5% nominal annual interest for 10 years with monthly compounding. In cell format, write =10000*(1+0.05/12)^(12*10). The term 0.05/12 divides the annual percentage rate (APR) into a monthly rate of approximately 0.004167, while 12*10 calculates the 120 total compounding periods. Evaluating this expression yields $16,470.09.\n\nChanging the compounding frequency alters the exponent and periodic divisor. Using the same $10,000 balance at 5% over 10 years, annual compounding (n=1) entered as =10000*(1+0.05/1)^(1*10) produces $16,288.95. Quarterly compounding (n=4) entered as =10000*(1+0.05/4)^(4*10) yields $16,436.19. Daily compounding (n=365) entered as =10000*(1+0.05/365)^(365*10) grows to $16,486.65. You can also evaluate a lump sum using the built-in future value syntax =FV(0.05/12,12*10,0,-10000), which returns the identical $16,470.09."
+      },
+      {
+        "heading": "Adding Monthly Contributions With FV",
+        "body": "When you add recurring savings to an existing investment, use the future value function documented on the [Microsoft Support](https://support.microsoft.com/en-us/excel/functions/fv-function) and [Google Docs Editors Help](https://support.google.com/docs/answer/3093224?hl=en) pages. Both platforms implement the syntax FV(rate, nper, pmt, [pv], [type]).\n\nThe arguments represent specific cash flow parameters:\n\n- rate is the interest rate applied per single period.\n- nper is the total count of compounding payment periods.\n- pmt is the cash deposit added each period.\n- pv is the present value or initial principal balance.\n- type indicates payment timing, where 0 represents the end of the period and 1 represents the beginning.\n\nFor a $10,000 starting balance with $200 deposited at the end of each month at 5% annual interest for 10 years, enter =FV(0.05/12,12*10,-200,-10000). This returns $47,526.55. Over 10 years, your cumulative cash contributions total $34,000, consisting of the $10,000 principal plus $24,000 in monthly additions. Total compound interest earned equals $13,526.55. If you initiate deposits at the beginning of each period instead, enter =FV(0.05/12,12*10,-200,-10000,1), which yields $47,655.95.\n\nIf you begin with zero initial principal and contribute only regular monthly deposits, omit the principal entry: =FV(0.05/12,12*10,-200) yields $31,056.46. When deposits and compounding occur strictly once per year, enter =FV(5%,10,-2400,-10000), returning $46,475.89.\n\nOne condition applies: the basic =FV(rate/n, n*years, -deposit, -principal) shortcut assumes the contribution schedule matches the compounding frequency. If you contribute $200 monthly while the financial institution compounds interest daily, standard rate division slightly understates growth. To resolve this mismatch, calculate the effective monthly rate using (1+0.05/365)^(365/12)-1, which equals about 0.0041750727. Entering =FV(0.0041750727,12*10,-200,-10000) produces about $47,559.87. That creates a difference of about $33 over 10 years compared to the simple monthly division output of $47,526.55."
+      },
+      {
+        "heading": "Daily, Monthly and Yearly Compounding Compared",
+        "body": "Increasing the frequency of compounding periods accelerates overall account growth by adding accrued interest to the principal base earlier. To see how deposit institutions handle these daily mechanics, read our review of [how savings account interest is calculated](/guides/how-is-savings-account-interest-calculated/).\n\nThe table below models a $10,000 principal deposit earning a 5% nominal annual interest rate over a 10-year term across different compounding frequencies:\n\n| Compounding Frequency | Periodic Divisor (n) | Formula Syntax | Future Value (10 Years) | Effective Annual Percentage Yield (APY) |\n| :--- | :--- | :--- | :--- | :--- |\n| Annually | 1 | =10000*(1+0.05/1)^(1*10) | $16,288.95 | 5.0000% |\n| Quarterly | 4 | =10000*(1+0.05/4)^(4*10) | $16,436.19 | 5.0945% |\n| Monthly | 12 | =10000*(1+0.05/12)^(12*10) | $16,470.09 | 5.1162% |\n| Daily | 365 | =10000*(1+0.05/365)^(365*10) | $16,486.65 | 5.1267% |\n\nDaily compounding produces $197.70 more in accumulated interest than annual compounding on a $10,000 balance over 10 years. For continuous compounding benchmarks, theoretical growth reaches $16,487.21 under identical terms. Annual percentage yield (APY) measures this true annualized return. A 5% nominal annual rate yields an effective 5.1162% under monthly compounding and 5.1267% under daily compounding."
+      },
+      {
+        "heading": "Common Spreadsheet Mistakes",
+        "body": "Formulas fail when users mismatch timing inputs or violate spreadsheet sign rules. Avoid these three common calculation errors:\n\n1. Entering annual interest rates against monthly periods. Passing an unadjusted annual rate such as 5% or 0.05 alongside 120 monthly periods in =FV(0.05, 120, -200, -10000) causes the software to apply a 5% return each individual month. This mistake inflates the projected balance to $4,880,767.80 instead of the true $47,526.55 balance. Always divide the annual rate by your annual periods.\n2. Omitting negative signs on outgoing deposits and principal. Microsoft Support documents the sign convention for these functions. Money deposited represents cash leaving your hand, which must be entered as a negative number. Writing =FV(0.05/12, 120, 200, 10000) yields -$47,526.55. Insert negative signs before payment and present value arguments to display positive savings balances.\n3. Ignoring compounding and contribution schedule mismatches. The standard FV formula assumes periodic contributions occur on the identical schedule as interest compounding. If you deposit funds monthly but earn interest compounded daily, using naive monthly division understates growth. Converting your nominal daily rate into an effective monthly rate eliminates this variance."
+      },
+      {
+        "heading": "Our Takeaway",
+        "body": "To model investment compounding accurately, use =FV(rate/n, n*years, -deposit, -principal) whenever your deposit frequency matches your compounding schedule, or =P*(1+r/n)^(n*t) for fixed lump-sum balances. \n\nThis spreadsheet modeling approach is not suitable for individuals seeking instant figures without formula entry, nor does it accommodate variable-rate products. Readers requiring fast comparisons across custom scenarios can model their numbers using our [compound interest calculator](/investing/compound-interest-calculator/).\n\nOur recommendation would change if deposit accounts adjust to floating rates, if tax withholding or custodial platform fees are subtracted from annual growth, or if a spreadsheet platform changes how its FV function takes arguments. For your next step, copy our verified formulas into your personal workbook to audit your current wealth accumulation schedule."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/investing/compound-interest-calculator/",
+        "label": "Compound interest calculator"
+      },
+      {
+        "href": "/guides/retirement-calculator-spreadsheet-template/",
+        "label": "Retirement spreadsheet template guide"
+      },
+      {
+        "href": "/guides/how-is-savings-account-interest-calculated/",
+        "label": "How savings account interest is calculated"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How to calculate compound interest in Excel?",
+        "answer": "Calculate compound interest in Excel using =P*(1+r/n)^(n*t) for a lump sum or =FV(rate/n, n*years, -pmt, -pv) for recurring payments. For example, a $10,000 lump sum at 5% interest for 10 years compounded monthly is entered as =10000*(1+0.05/12)^(12*10), which outputs $16,470.09. Enter outgoing investments as negative numbers to ensure the function outputs a positive balance."
+      },
+      {
+        "question": "Is compound interest calculated monthly or yearly?",
+        "answer": "Compound interest can compound on any schedule specified by the financial institution, commonly daily, monthly, or yearly. On a $10,000 balance at 5% over 10 years, annual compounding produces $16,288.95 while monthly compounding produces $16,470.09."
+      },
+      {
+        "question": "Does the same compound interest formula work in Google Sheets?",
+        "answer": "Yes, Google Sheets uses the same syntax and argument order as Excel for calculating compound interest. Both applications accept the standard mathematical power equation =P*(1+r/n)^(n*t) as well as the built-in financial function =FV(rate, nper, pmt, [pv], [type])."
+      },
+      {
+        "question": "How do you calculate quarterly or half-yearly compounding?",
+        "answer": "Calculate quarterly compounding by setting the periodic divisor n to 4, and half-yearly compounding by setting n to 2. For a $10,000 investment at 5% for 10 years compounded quarterly, the formula =10000*(1+0.05/4)^(4*10) produces $16,436.19. To model semi-annual compounding under the same parameters, replace the divisor and multiplier with 2 in the formula =P*(1+r/2)^(2*t)."
+      },
+      {
+        "question": "How do you include monthly deposits in the compound interest formula?",
+        "answer": "Include monthly deposits by using the future value function =FV(rate/12, 12*years, -monthly_deposit, -initial_principal). For a $10,000 starting balance with $200 added at the end of each month at 5% interest over 10 years, enter =FV(0.05/12, 12*10, -200, -10000). This returns $47,526.55, reflecting $34,000 in total out-of-pocket deposits and $13,526.55 in earned compound interest."
+      },
+      {
+        "question": "What interest rate should you enter in spreadsheet formulas?",
+        "answer": "Enter the periodic interest rate, which is the nominal annual rate divided by the number of compounding periods per year. If your annual rate is 5% and interest compounds monthly, enter 0.05/12 or 5%/12 as the rate argument. Entering the full annual rate of 0.05 alongside 120 monthly periods erroneously calculates 5% growth per month, severely overstating results."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Microsoft Support FV Function",
+        "url": "https://support.microsoft.com/en-us/excel/functions/fv-function"
+      },
+      {
+        "label": "Google Docs Editors Help: FV",
+        "url": "https://support.google.com/docs/answer/3093224?hl=en"
+      }
+    ],
+    "disclaimerText": "This guide provides general educational information about spreadsheet formulas and financial calculations, not personalized investment or financial advice.",
+    "published": "2026-11-25",
+    "updated": "2026-11-25"
+  },
+  // ── mindmap-pass autocomplete 2026-11-25: property-tax-by-state-mortgage-payment (prose via content_gen.py) ──
+  {
+    "slug": "property-tax-by-state-mortgage-payment",
+    "title": "Property Tax by State: What It Adds to Your Mortgage Payment",
+    "metaDescription": "See what property taxes add to a monthly mortgage payment by state, from $97 in Hawaii to $627 in New Jersey on a $400,000 home.",
+    "h1": "Property Tax by State: What It Adds to Your Mortgage Payment",
+    "cardBlurb": "Compare monthly property tax costs across all 50 states on a $400,000 home and see how escrow charges alter your housing budget.",
+    "introText": "Property tax adds roughly (effective rate x home price) / 12 to your monthly principal and interest payment, ranging from about $97 a month in Hawaii to about $627 a month in New Jersey and Illinois on a $400,000 home. \n\nEvaluating the tax baseline in your target region helps protect against unexpected escrow shortages after closing. The breakdown below details the monthly property tax impact across all 50 states using standardized baseline pricing.",
+    "sections": [
+      {
+        "heading": "Property Tax Added to a $400,000 Mortgage by State",
+        "body": "Property tax adds about (effective rate x home price) / 12 a month to a borrower's housing expense, which translates to about $97 in Hawaii up to about $627 in New Jersey and Illinois on a $400,000 home.\n\nThe District of Columbia carries an effective property tax rate of 0.60%, which adds $200 a month on a $400,000 residence and sits outside the 50-state ranking. Across the entire country, the median state effective rate results in a monthly property tax charge of about $263.\n\n| Rank | State | Effective Rate | Monthly Tax on $400,000 |\n| --- | --- | --- | --- |\n| 1 | New Jersey | 1.88% | $627 |\n| 2 | Illinois | 1.88% | $627 |\n| 3 | Connecticut | 1.54% | $513 |\n| 4 | Vermont | 1.51% | $503 |\n| 5 | New Hampshire | 1.50% | $500 |\n| 6 | Nebraska | 1.44% | $480 |\n| 7 | Texas | 1.40% | $467 |\n| 8 | Ohio | 1.36% | $453 |\n| 9 | Iowa | 1.33% | $443 |\n| 10 | Wisconsin | 1.32% | $440 |\n| 11 | New York | 1.30% | $433 |\n| 12 | Pennsylvania | 1.26% | $420 |\n| 13 | Kansas | 1.21% | $403 |\n| 14 | Michigan | 1.19% | $397 |\n| 15 | Rhode Island | 1.12% | $373 |\n| 16 | Massachusetts | 1.00% | $333 |\n| 17 | Minnesota | 1.00% | $333 |\n| 18 | South Dakota | 1.00% | $333 |\n| 19 | Maine | 0.98% | $327 |\n| 20 | Alaska | 0.94% | $313 |\n| 21 | Maryland | 0.92% | $307 |\n| 22 | North Dakota | 0.92% | $307 |\n| 23 | Missouri | 0.89% | $297 |\n| 24 | Oregon | 0.81% | $270 |\n| 25 | Georgia | 0.79% | $263 |\n| 26 | Oklahoma | 0.79% | $263 |\n| 27 | Florida | 0.78% | $260 |\n| 28 | Virginia | 0.78% | $260 |\n| 29 | Indiana | 0.76% | $253 |\n| 30 | Washington | 0.75% | $250 |\n| 31 | Kentucky | 0.74% | $247 |\n| 32 | California | 0.70% | $233 |\n| 33 | North Carolina | 0.66% | $220 |\n| 34 | New Mexico | 0.63% | $210 |\n| 35 | Montana | 0.61% | $203 |\n| 36 | Mississippi | 0.58% | $193 |\n| 37 | Arkansas | 0.56% | $187 |\n| 38 | Louisiana | 0.55% | $183 |\n| 39 | Delaware | 0.54% | $180 |\n| 40 | Wyoming | 0.53% | $177 |\n| 41 | Tennessee | 0.52% | $173 |\n| 42 | West Virginia | 0.51% | $170 |\n| 43 | Nevada | 0.50% | $167 |\n| 44 | Colorado | 0.50% | $167 |\n| 45 | Idaho | 0.50% | $167 |\n| 46 | South Carolina | 0.49% | $163 |\n| 47 | Arizona | 0.48% | $160 |\n| 48 | Utah | 0.48% | $160 |\n| 49 | Alabama | 0.37% | $123 |\n| 50 | Hawaii | 0.29% | $97 |\n\nState figures are averages, so your county rate sets the final amount."
+      },
+      {
+        "heading": "How the Estimate Works",
+        "body": "To calculate the monthly tax portion of a mortgage payment, multiply your home purchase price by the state effective rate and divide the total by 12.\n\nIn our internal modeling, we converted each state's effective rate to a monthly dollar figure on a $400,000 home using baseline data from the [Tax Foundation](https://taxfoundation.org/data/all/state/property-taxes-by-state-county/). The underlying data comes from the 2024 American Community Survey (ACS) of the U.S. Census Bureau. An effective property tax rate represents the percentage of total owner-occupied market value paid in taxes.\n\nState averages often conceal dramatic county-level variations. In New Jersey, for example, county-level effective rates span from 0.93% in Cape May County to 2.47% in Camden County. That means an identical $400,000 purchase incurs about $310 a month in property taxes in Cape May County, but about $823 a month in Camden County. A buyer relying solely on the New Jersey state average of $627 a month faces a substantial discrepancy when closing on a home in either jurisdiction."
+      },
+      {
+        "heading": "Highest and Lowest Property Tax States",
+        "body": "The five states with the highest monthly property taxes on a $400,000 home are New Jersey ($627), Illinois ($627), Connecticut ($513), Vermont ($503), and New Hampshire ($500).\n\nA higher monthly tax leaves less of your budget for the loan payment. You can test how a higher or lower tax changes what you can afford with our [mortgage affordability calculator](/mortgage/affordability-calculator/).\n\nConversely, the five lowest property tax states for owner-occupied housing are Hawaii ($97 at 0.29%), Alabama ($123 at 0.37%), Utah ($160 at 0.48%), Arizona ($160 at 0.48%), and South Carolina ($163 at 0.49%)."
+      },
+      {
+        "heading": "What Else Goes Into Escrow",
+        "body": "Property tax is only one piece of a mortgage payment.\n\nOur state comparison table models property taxes alone, meaning homeowners insurance premiums and private mortgage insurance remain excluded from these specific figures. Homeowners association (HOA) dues are also not included. To calculate your comprehensive monthly housing obligation including all loan and insurance components, utilize our [PITI mortgage calculator](/mortgage/piti-calculator/), where PITI stands for principal, interest, taxes, and insurance.\n\nIf you know your county's effective rate, use it in the same formula instead of the state figure. Our guide to [mortgage mistakes before applying](/guides/mortgage-mistakes-before-applying/) covers other costs buyers overlook."
+      },
+      {
+        "heading": "Our Takeaway",
+        "body": "Property tax can add from about $97 to about $627 a month on a $400,000 home depending on state, and your county rate decides the real number.\n\nThis benchmark modeling applies to owner-occupied residential properties assessed at the exact $400,000 baseline price. This analysis is not applicable to residential tenants, who pay shelter expenses via lease agreements rather than direct tax bills, nor does it capture multi-million-dollar purchases without linear adjustment. If your home purchase differs from $400,000, scale the monthly dollar figures proportionally by multiplying the state rate against your target valuation before dividing by 12.\n\nOur conclusions would change if local taxing jurisdictions revise their assessment ratios, if state legislatures expand homestead exemption limits, or if the Tax Foundation publishes updated effective rates. Multiply your own price by your county's effective rate and divide by 12 before you make an offer."
+      }
+    ],
+    "tools": [
+      {
+        "href": "/mortgage/piti-calculator/",
+        "label": "PITI Mortgage Calculator"
+      },
+      {
+        "href": "/mortgage/affordability-calculator/",
+        "label": "Mortgage Affordability Calculator"
+      },
+      {
+        "href": "/hidden-cost-of-owning-a-home-calculator/",
+        "label": "Hidden Cost of Owning a Home Calculator"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Does a mortgage calculator include property tax and insurance?",
+        "answer": "Some mortgage calculators cover only principal and interest, while others add property tax and insurance. To compute your complete monthly housing expense including tax and insurance escrows, enter your loan and property details into our [PITI mortgage calculator](/mortgage/piti-calculator/)."
+      },
+      {
+        "question": "How much is property tax on a $400,000 house in the highest and lowest states?",
+        "answer": "On a $400,000 home, property taxes add about $627 a month in New Jersey and Illinois at the top of the state rankings, compared to about $97 a month in Hawaii at the bottom. The median state level sits at roughly $263 a month."
+      },
+      {
+        "question": "What is an effective property tax rate?",
+        "answer": "An effective property tax rate measures the annual property tax paid as a percentage of the total market value of owner-occupied housing. It lets you compare states on one scale."
+      },
+      {
+        "question": "Why do property taxes differ inside the same state?",
+        "answer": "Rates differ by county inside a state. For instance, New Jersey county rates span from 0.93% in Cape May County to 2.47% in Camden County, creating very different monthly payments on identical home prices."
+      },
+      {
+        "question": "Is homeowners insurance included in the monthly property tax figures?",
+        "answer": "Homeowners insurance is not included in the monthly property tax figures on this page."
+      },
+      {
+        "question": "How do I calculate monthly property taxes for my specific home price?",
+        "answer": "To calculate monthly property taxes for your specific home price, multiply your target purchase price by your local effective tax rate percentage and divide the resulting figure by 12."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Tax Foundation: Property Taxes by State and County",
+        "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/"
+      }
+    ],
+    "disclaimerText": "This guide provides general educational information about property tax rates and should not be construed as personalized financial, tax, or mortgage lending advice.",
+    "published": "2026-11-25",
+    "updated": "2026-11-25"
   },
 ];
 

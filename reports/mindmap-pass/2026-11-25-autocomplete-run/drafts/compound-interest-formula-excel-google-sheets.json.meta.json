@@ -1,0 +1,139 @@
+{
+ "slug": "compound-interest-formula-excel-google-sheets",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1736,
+ "floor": 1200,
+ "input_tokens": 35763,
+ "output_tokens": 3964,
+ "thinking_tokens": null,
+ "cached_tokens": 17812,
+ "est_cost_usd": 0.0297,
+ "guards": {
+  "repairs": [
+   "slug None -> 'compound-interest-formula-excel-google-sheets'",
+   "removed 1 off-list link(s), kept the text"
+  ],
+  "flags": [
+   "auditor: verify the sentences that cited ['https://support.google.com/docs/answer/3093178'] are still supported",
+   "thin fact list: \u2248333 fact words for a 1200-word floor (ratio 0.28); expand it with sourced facts before any regeneration",
+   "emptied by the claim check (nothing in the fact list could carry it): ['How to Calculate Compound Interest in Excel and Google Sheets', 'The Compound Interest Formula Step by Step', 'Adding Monthly Contributions With FV', 'Daily, Monthly and Yearly Compounding Compared', 'Common Spreadsheet Mistakes'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced",
+   "claim check: 2 claim(s) still unsupported after 2 pass(es) \u2014 auditor must cut or source: '| Annually | 1 | `=10000*(1+0.05/1)^(1*10)` | $16,288.95 | 5.0000% |'; '| Quarterly | 4 | `=10000*(1+0.05/4)^(4*10)` | $16,436.19 | 5.0945% |'"
+  ],
+  "disallowed_urls_removed": [
+   "https://support.google.com/docs/answer/3093178"
+  ],
+  "words": 1736,
+  "numbers_not_in_facts": [
+   "0.004167",
+   "197.7",
+   "24000",
+   "5.0945"
+  ],
+  "fact_budget": {
+   "fact_words": 333,
+   "floor": 1200,
+   "ratio": 0.28,
+   "thin": true
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    5,
+    2
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At The Modern Wallet, we build spreadsheet workflows to help savers model long-term growth clearly. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description does not state the site builds spreadsheet workflows."
+    },
+    {
+     "id": "sections[4].body",
+     "quote": "If you deposit funds monthly but earn interest compounded daily, using naive monthly division ignores intraday balance gains.",
+     "replacement": "If you deposit funds monthly but earn interest compounded daily, using naive monthly division understates growth.",
+     "type": "unsupported",
+     "why": "SOURCE describes daily compounding, not intraday compounding."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "These verified spreadsheet formulas deliver mathematically reliable projections for personal wealth planning.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not describe the formulas as mathematically reliable."
+    },
+    {
+     "id": "sections[5].body",
+     "quote": "This spreadsheet modeling approach is not suitable for individuals seeking instant figures without formula entry, nor does it accommodate variable-rate products such as adjustable high-yield savings or dividend-paying equities with fluctuating distributions.",
+     "replacement": "This spreadsheet modeling approach is not suitable for individuals seeking instant figures without formula entry, nor does it accommodate variable-rate products.",
+     "type": "unsupported",
+     "why": "SOURCE specifies variable-rate accounts generally without dividend-paying equities or fluctuating distributions."
+    },
+    {
+     "id": "faqs[1].answer",
+     "quote": "Most consumer bank deposits compound interest daily and credit it monthly, whereas standard investment benchmarks often model annual or monthly periods. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what most bank deposits or benchmarks typically do."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [
+    {
+     "quote": "| Annually | 1 | `=10000*(1+0.05/1)^(1*10)` | $16,288.95 | 5.0000% |",
+     "type": "unsupported",
+     "why": "SOURCE does not list an APY for annual compounding.",
+     "replacement": "| Annually | 1 | `=10000*(1+0.05/1)^(1*10)` | $16,288.95 | Not published |",
+     "id": "sections[3].body",
+     "reason": "replacement would change the table's columns"
+    },
+    {
+     "quote": "| Quarterly | 4 | `=10000*(1+0.05/4)^(4*10)` | $16,436.19 | 5.0945% |",
+     "type": "unsupported",
+     "why": "SOURCE does not list an APY for quarterly compounding.",
+     "replacement": "| Quarterly | 4 | `=10000*(1+0.05/4)^(4*10)` | $16,436.19 | Not published |",
+     "id": "sections[3].body",
+     "reason": "replacement would change the table's columns"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "sections[3].body",
+     "quote": "| Annually | 1 | `=10000*(1+0.05/1)^(1*10)` | $16,288.95 | 5.0000% |",
+     "type": "unsupported",
+     "reason": "replacement would change the table's columns"
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "| Quarterly | 4 | `=10000*(1+0.05/4)^(4*10)` | $16,436.19 | 5.0945% |",
+     "type": "unsupported",
+     "reason": "replacement would change the table's columns"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1797
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 15422
+  }
+ },
+ "seconds": 109.7,
+ "response_id": "qJwGa7PBNJHhytMPiJ68sQ8",
+ "generated_at": "2026-11-25T08:32:22+0000"
+}

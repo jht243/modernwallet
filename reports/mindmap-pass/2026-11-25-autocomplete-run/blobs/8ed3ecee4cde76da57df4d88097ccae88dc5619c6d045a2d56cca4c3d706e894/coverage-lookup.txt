@@ -1,0 +1,1385 @@
+coverage_lookup: 53 candidate(s) vs 884 repo pages / 901 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1271 past-chart lines
+
+### /guides/mortgage-calculator-with-taxes-and-insurance  — row - · create new content
+keyword: mortgage calculator with taxes and insurance; mortgage calculator piti
+reader question (new page intent): do mortgage calculators include escrow, property tax
+lookup terms: mortgage taxe insurance piti   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /mortgage/piti-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on mortgage piti · same format: calculator]
+    title: PITI Mortgage Calculator: All-In Monthly Payment
+    desc:  Calculate your full PITI mortgage payment — principal, interest, property taxes, homeowner's insurance, and PMI — to see what you truly owe each month.
+- /back-taxes-impact-calculator  [NOT IN SITEMAP (unreleased, or live but missing from the sitemap) · src/data/spokes-tax-resolution.ts · topic match 0.5 on mortgage taxe · same format: calculator]
+    title: Back Taxes Impact Calculator: Mortgage, Passport, Credit
+    desc:  Free back taxes impact calculator. See how IRS debt affects mortgage approval, passport, credit report, and CSED expiration in plain English.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-14-tool-usage.md [table] | 15 | Lens 2 (next tool after mortgage — the payoff persona with a lump sum asks recast vs extra payments). `mortgage recast calculator` 18,100/mo KD 8 (dataforseo measured, Autocomplete corroborated). lookup: no recast
+- 2026-10-25.md [table] | 2 | **Lens 1 (direct intent — brief item 1, house buying).** `home buying checklist` **1,600/KD 5** (primary), `home buying process checklist` 1,000/KD 7, `what to look for when buying a house` 1,700/KD 0 (secondary on
+- 2026-10-25.md [table] | 5 | **Lens 1 (direct intent — brief item 4, renting out as owner/landlord).** `tenant screening checklist` 250/KD 5 ($2.00 CPC), `first time landlord checklist` 200/KD 1, `landlord checklist` 150/KD 0, `rental property
+- 2026-10-29-xtrends.md [table] | Lens 1 direct intent + news-driven (Zillow and Thumbtack 2026 study, Fox Business 2026-10-22). 'hidden cost of owning a home' 210/mo KD 4, 'cost of owning a home calculator' 170/mo KD 25, 'home maintenance cost calcula
+- 2026-11-04-tool-usage.md [table] | 6 | self-employment-tax (40 people, 42 uses, 117 views; data_days 27). Walkthrough: $420 profit shows $59 SE tax though net earnings $387.87 < $400 owe none (Schedule SE line 4c); QBI phase-in warning tests gross incom
+- 2026-11-16-comparison.md [table] | lookup: /compare/annuity-vs-cd and /compare/pension-vs-annuity - different pairings. Lens 1 direct intent (brief candidate 6). "annuity vs 401k" 1,600/mo KD 24 SEMRUSH; no page compares the two; SERP winnable. | Create
+Commits naming the topic: none
+Same run overlap: row - /guides/mortgage-calculator-by-state (0.75)
+
+### /guides/how-much-mortgage-can-i-afford-on-my-salary  — row - · create new content
+keyword: how much mortgage can i afford based on income; mortgage calculator based on salary
+reader question (new page intent): How much mortgage can I afford on my income
+lookup terms: mortgage afford salary based income   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-financial-plan). Head 'how to make a financial plan': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/financial-planning-calcu
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'salary calculator' 339,600 combined vol (primary 246,000), KD 29, 2 competitors (calculator.net, smartasset.com; measured, SEMRUSH/DataForSEO intake 2026-11-15) plus annual salar
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'paycheck tax calculator' 18,100 (KD 65), salary take home calculator 6,600 (KD 62), after tax income calculator 9,900 (KD 70), post tax income calculator 8,100 (KD 34); measured 
+- 2026-11-15-keyword-gap.md [exclusions] - tax calculator / income tax calculator / federal income tax calculator / income tax estimator / tax estimator / tax percentage calculator: COVERED, no-addition (A3). /tax-bracket-calculator/ and /guides/how-much-tax-wi
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent (ENRICH requested by brief). lookup: /budget/aca-subsidy-calculator exact route exists, title 'ACA Subsidy Calculator for 2027 Marketplace Premiums'; gap: 0 mentions of bronze, enhanced subsidies, 
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/pay-off-mortgage-early-or-invest  — row - · create new content
+keyword: should i overpay my mortgage or invest; pay off mortgage vs invest calculator
+reader question (new page intent): Should I pay extra on my mortgage or invest
+lookup terms: pay off mortgage early invest overpay   format cues: calculator vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/pay-off-mortgage-early-or-invest  [EXACT SLUG · in sitemap · src/data/guides.ts · topic match 0.83 on pay off mortgage early invest]
+    title: Pay Off Mortgage Early or Invest at a 3% or 7.5% Rate
+    desc:  Pay off mortgage early or invest? At a 3% rate, investing $500 a month came out ahead in the example. At 7.5%, prepaying won at both 5% and 7% returns.
+- /compare/pay-off-mortgage-vs-invest  [PARENT PAGE · in sitemap · src/data/comparisons.ts · topic match 0.67 on pay off mortgage invest · same format: vs]
+    title: Pay Off Mortgage or Invest: How to Choose Your Path
+    desc:  Deciding whether to pay off mortgage or invest? We compare guaranteed returns, tax rules under IRS Pub 936, liquidity, and what to fund first.
+- /pay-off-mortgage-or-invest-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.67 on pay off mortgage invest · same format: calculator]
+    title: Pay Off Mortgage or Invest Calculator: Break-Even Return
+    desc:  Pay off mortgage or invest calculator. Enter your loan, extra cash, return and tax rate to see which path ends ahead after tax and your break-even return.
+- /auto-loan/early-payoff-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.5 on pay off early · same format: calculator]
+    title: Pay Off Car Loan Early Calculator: Interest & Time Saved
+    desc:  Use our auto loan early payoff calculator to see how extra payments cut your interest, shorten your payoff date, and save you money. Free instant results.
+- /guides/pay-off-debt-or-invest  [in sitemap · src/data/guides.ts · topic match 0.5 on pay off invest]
+    title: Pay Off Debt or Invest? A Simple Decision Framework
+    desc:  Deciding to pay off debt or invest? Compare your debt's interest rate to your expected return. Grab the 401(k) match, then kill high-rate debt first.
+- /guides/mortgage-early-payoff-tax-implications  [in sitemap · src/data/guides.ts · topic match 0.5 on off mortgage early]
+    title: Tax Implications of Paying Off Your Mortgage Early
+    desc:  The real tax implications of paying off your mortgage early: the deduction you lose, retirement withdrawal taxes, and the payoff-vs-invest math worked out.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-15-keyword-gap.md [exclusions] - tax calculator / income tax calculator / federal income tax calculator / income tax estimator / tax estimator / tax percentage calculator: COVERED, no-addition (A3). /tax-bracket-calculator/ and /guides/how-much-tax-wi
+- 2026-11-16-comparison.md [table] | lookup: /roundup/best-cash-back-credit-cards - many-card list, not this pairing. Lens 1 direct intent (brief candidate 8). "chase freedom flex vs unlimited" 720/mo KD 36 SEMRUSH; no head-to-head page; SERP winnable. | 
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent (ENRICH requested by brief). lookup: /budget/aca-subsidy-calculator exact route exists, title 'ACA Subsidy Calculator for 2027 Marketplace Premiums'; gap: 0 mentions of bronze, enhanced subsidies, 
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent plus release news (Google blog Nov 13 2026). lookup: no match in repo, sitemap or past charts; /roundup/best-budgeting-apps is an app ranking (different reader goal). Autocomplete question sweep ru
+- 2026-11-23-trend-lane-c.md [table] | [coverage / top-10] Lane B: 'rule of 78 calculator' (0 clicks, 3 impr, pos 64.33) is UNCOVERED. Lens 1 direct intent; Lens 2 cluster 'Rule of 78 loan interest': rule of 78 1,000/mo; what is the rule of 78 210; rule of 
+Commits naming the topic: none
+Same run overlap: row - /guides/debt-payoff-vs-investing (0.5)
+
+### /guides/mortgage-calculator-extra-payments  — row - · create new content
+keyword: mortgage calculator extra payments; mortgage payoff with extra payments
+reader question (new page intent): How much does an extra payment save
+lookup terms: mortgage extra payment payoff   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /auto-loan/extra-payment-calculator  [PARENT PAGE · in sitemap · src/data/spokes-auto.ts · topic match 0.5 on extra payment · same format: calculator]
+    title: Auto Loan Extra Payment Calculator: Biweekly vs Extra
+    desc:  Use this auto loan extra payment calculator to compare biweekly vs. extra monthly payments and see how much interest and time you save on your car loan.
+- /mortgage/extra-payment-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on extra payment · same format: calculator]
+    title: Mortgage Extra Payment Calculator: See Your Savings
+    desc:  Use this mortgage extra payment calculator to see how extra monthly payments cut years off your loan and save thousands in interest. Free 2026 tool.
+- /personal-loan/extra-payment-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on extra payment · same format: calculator]
+    title: Personal Loan Extra Payment Calculator: See Your Savings
+    desc:  Free personal loan extra payment calculator: see how much interest you save and how many months you cut by adding extra to your monthly payment.
+- /guides/commercial-mortgage-calculator-explained  [in sitemap · src/data/guides.ts · topic match 0.5 on mortgage payment · same format: calculator]
+    title: Commercial Mortgage Calculator: Payment & Balloon
+    desc:  Estimate a commercial mortgage payment, the DSCR lenders require, and the balloon balance due at the end of a typical 10-year loan term.
+- /mortgage/piti-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on mortgage payment · same format: calculator]
+    title: PITI Mortgage Calculator: All-In Monthly Payment
+    desc:  Calculate your full PITI mortgage payment — principal, interest, property taxes, homeowner's insurance, and PMI — to see what you truly owe each month.
+- /guides/40-year-mortgage-explained  [in sitemap · src/data/guides.ts · topic match 0.5 on mortgage payment]
+    title: 40-Year Mortgage Explained: Payment, Cost, and Who Qualifies
+    desc:  A 40-year mortgage lowers your payment but adds over $200,000 in interest on a typical loan. See the real numbers and who actually qualifies.
+- /compare/15-year-vs-30-year-mortgage  [in sitemap · src/data/comparisons.ts · topic match 0.5 on mortgage payment]
+    title: 15-Year vs 30-Year Mortgage: Which Loan Saves More?
+    desc:  15-year vs 30-year mortgage compared: monthly payments, total interest, rates, and which loan saves you more money over time.
+- /guides/mortgage-early-payoff-tax-implications  [in sitemap · src/data/guides.ts · topic match 0.5 on mortgage payoff]
+    title: Tax Implications of Paying Off Your Mortgage Early
+    desc:  The real tax implications of paying off your mortgage early: the deduction you lose, retirement withdrawal taxes, and the payoff-vs-invest math worked out.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 15 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage). 'pay off mortgage or invest calculator' 260/mo KD 17, 'pay off mortgage vs invest calculator' 260 KD 11, 'should i pay off my mor
+- 2026-11-04-tool-usage.md [table] | 16 | New route C1 needs inbound links from inspected pages that already discuss biweekly payments. | Link 'biweekly mortgage calculator' from the /mortgage/extra-payment-calculator/ FAQ 'Is a biweekly plan better than 
+- 2026-11-04-tool-usage.md [table] | 17 | New route C2 needs inbound links from the existing payoff-or-invest guide and comparison. | Add one link sentence to /guides/pay-off-mortgage-early-or-invest/ ('What the Examples Leave Out') and to /compare/pay-of
+- 2026-11-04-tool-usage.md [table] | Mortgage prepayment schedules | biweekly mortgage calculator; bi weekly mortgage calculator; biweekly mortgage payment calculator | coverage gap (no biweekly tool) | none | create new content | /biweekly-mortgage-calcu
+- 2026-11-04-tool-usage.md [exclusions] - Inherited dead citation: CFPB biweekly Ask page on /mortgage/extra-payment-calculator/ now redirects to the CFPB mortgages hub; logged, not edited (outside reviewed scope).
+- 2026-11-23-trend-lane-c.md [table] | [coverage / top-10] Lane B: 'rule of 78 calculator' (0 clicks, 3 impr, pos 64.33) is UNCOVERED. Lens 1 direct intent; Lens 2 cluster 'Rule of 78 loan interest': rule of 78 1,000/mo; what is the rule of 78 210; rule of 
+Commits naming the topic: none
+Same run overlap: row - /guides/how-are-mortgage-payments-calculated (0.5); row - /guides/biweekly-payment-payoff-calculator (0.5)
+
+### /guides/mortgage-calculator-with-pmi  — row - · create new content
+keyword: mortgage calculator with pmi; mortgage calculator fha; mortgage calculator va
+reader question (new page intent): How does PMI change my payment
+lookup terms: mortgage pmi fha va   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/fha-loan-vs-va-loan  [in sitemap · src/data/comparisons.ts · topic match 0.75 on mortgage fha va]
+    title: FHA Loan vs. VA Loan: Which Costs Less in 2026?
+    desc:  FHA loan vs VA loan compared: down payment, funding fee vs MIP, interest rates, and eligibility — see which government-backed mortgage saves more.
+- /compare/va-loan-vs-conventional-loan  [in sitemap · src/data/comparisons.ts · topic match 0.5 on mortgage va]
+    title: VA Loan vs Conventional Loan: Which Saves More?
+    desc:  VA loan vs conventional loan compared: down payment, funding fee vs PMI, interest rates, eligibility, and which mortgage saves veterans the most money.
+- /compare/fha-vs-conventional-loan  [in sitemap · src/data/comparisons.ts · topic match 0.5 on mortgage fha]
+    title: FHA vs Conventional Loan: 2025 Key Differences
+    desc:  FHA vs conventional loan compared for 2025: down payment, credit score, mortgage insurance, and loan limits. See which mortgage fits your budget.
+- /compare/usda-loan-vs-fha-loan  [in sitemap · src/data/comparisons.ts · topic match 0.5 on mortgage fha]
+    title: USDA Loan vs FHA Loan: Which Wins for You in 2026?
+    desc:  USDA loan vs FHA loan compared: down payment, income limits, mortgage insurance, and eligibility, so you can pick the right zero-to-low-down loan.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-11-trend-lane-c.md [table] | Lens 2 (adjacent to "best home loan", 880/mo KD 34, PAA "What is the best type of home mortgage loan?"). `types of mortgage loans` 8,100/mo KD 15 (measured), `best type of mortgage loan` 260, `best type of home loan` 2
+- 2026-10-14-autocomplete.md [table] | Lens 1/2, seed "loan payment calculator": `loan payment calculator` 110,000/mo KD 46 CPC $2.79; completions "amortization", "additional payments", "biweekly". lookup: only product-specific loan calculators (auto, FHA, 
+- 2026-10-14-tool-usage.md [table] | 2 | Lens 1 (tool usage, mortgage). Persona quote: "I don't have a home price, I have a balance and 26 years left." The payoff tool only takes home price + down payment + a 10/15/20/30-yr term, and adds a PMI estimate w
+- 2026-10-19-competitor.md [table] | 5 | Lens 1 direct (NerdWallet no-money-down). Autocomplete: buy a house with no money down and bad credit; best way to buy a house with no money down; what credit score is needed. lookup: no match for the guide (/compa
+- 2026-10-25.md [table] | 2 | **Lens 1 (direct intent — brief item 1, house buying).** `home buying checklist` **1,600/KD 5** (primary), `home buying process checklist` 1,000/KD 7, `what to look for when buying a house` 1,700/KD 0 (secondary on
+- 2026-10-28-autocomplete.md [exclusions] - `mortgage payment calculator with pmi` (2,400, KD 66), down payment and home affordability variants (`home affordability calculator by income` est.; `how much is 10 percent down payment` 10): DROP, /mortgage/ calculato
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/does-a-mortgage-calculator-affect-credit-score  — row - · create new content
+keyword: do mortgage calculators affect credit score
+reader question (new page intent): Do mortgage calculators affect credit
+lookup terms: mortgage affect credit score calculator   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-27-podcast.md [table] | Closing a credit card | does closing a credit card hurt your credit score (1,900); does closing a credit card affect your credit score (ac); does closing multiple credit cards hurt your score (ac) | coverage gap at the
+- 2026-10-28-autocomplete.md [table] | 1 | Lens 1 (seed "rent vs buy calculator", 158 completions). `rent vs buy calculator` 14,800/mo KD 49 CPC $1.06 and `rent or buy calculator` 14,800/mo KD 49 (DataForSEO measured, US, 2026-10-28); `rent vs buy calculato
+- 2026-10-28-autocomplete.md [exclusions] - `mortgage payment calculator with pmi` (2,400, KD 66), down payment and home affordability variants (`home affordability calculator by income` est.; `how much is 10 percent down payment` 10): DROP, /mortgage/ calculato
+- 2026-10-29-xtrends.md [table] | Lens 1 direct intent + news-driven (Zillow and Thumbtack 2026 study, Fox Business 2026-10-22). 'hidden cost of owning a home' 210/mo KD 4, 'cost of owning a home calculator' 170/mo KD 25, 'home maintenance cost calcula
+- 2026-11-04-aca-snap.md [table] | Direct/adjacent demand: aca subsidy calculator, 1,900/month, KD54 (SEMrushUS2026-11-04). lookup: no match. Dedicated reader-intent gap; no prior exact-slug commits at local/pinned published revisions. | Create /budget/
+- 2026-11-23-xtrends.md [table] | Lens 1 direct intent + news-driven (brief bullet 2). Autocomplete (estimate, NOT measured): 'credit card interest cap trump', 'credit card interest cap when does it start' (31 completions). lookup: EXACT SLUG /credit-c
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/when-to-refinance-mortgage-calculator  — row - · create new content
+keyword: when to refinance mortgage calculator; should i refinance mortgage calculator
+reader question (new page intent): When does refinancing pay off
+lookup terms: refinance mortgage   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/assumable-mortgage-vs-refinance  [in sitemap · src/data/comparisons.ts · topic match 1.0 on refinance mortgage]
+    title: Assumable Mortgage vs Refinance: Which Saves More?
+    desc:  Assumable mortgage vs refinance: FHA, VA, and USDA eligibility, the equity-gap cash requirement, closing costs, and which wins when rates are high.
+- /guides/mortgage-refinance-closing-costs  [in sitemap · src/data/guides.ts · topic match 1.0 on refinance mortgage]
+    title: Mortgage Refinance Closing Costs: What You'll Actually Pay
+    desc:  How much does refinancing a mortgage cost? See the real refinance closing cost breakdown, no-closing-cost tradeoffs, and a worked break-even example.
+- /guides/mortgage-refinance-lessons-learned  [in sitemap · src/data/guides.ts · topic match 1.0 on refinance mortgage]
+    title: Mortgage Refinancing Lessons: When It's Actually Worth It
+    desc:  Real mortgage refinancing lessons: when rates are low enough, why resetting your loan term can cost more, and what \"no-closing-cost\" really means.
+- /auto-loan/refinance-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.5 on refinance · same format: calculator]
+    title: Auto Loan Refinance Calculator: New Payment & Savings
+    desc:  See your new monthly payment and total interest savings before you refinance your car loan. Free auto loan refinance calculator, updated for 2026.
+- /mortgage/refinance-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on refinance · same format: calculator]
+    title: Mortgage Refinance Calculator: Break-Even Analysis
+    desc:  Calculate your refinance break-even point: compare your current rate to a new rate, see monthly savings, and find out how long before closing costs pay off.
+- /mortgage  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on mortgage]
+    title: Free Mortgage Calculator: Instant Home Loan Estimate
+    desc:  Use our free, simple mortgage calculator to instantly estimate your monthly principal and interest, see full amortization, and learn how a home loan works.
+- /guides/commercial-mortgage-calculator-explained  [in sitemap · src/data/guides.ts · topic match 0.5 on mortgage · same format: calculator]
+    title: Commercial Mortgage Calculator: Payment & Balloon
+    desc:  Estimate a commercial mortgage payment, the DSCR lenders require, and the balloon balance due at the end of a typical 10-year loan term.
+- /mortgage/piti-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on mortgage · same format: calculator]
+    title: PITI Mortgage Calculator: All-In Monthly Payment
+    desc:  Calculate your full PITI mortgage payment — principal, interest, property taxes, homeowner's insurance, and PMI — to see what you truly owe each month.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 17 | New route C2 needs inbound links from the existing payoff-or-invest guide and comparison. | Add one link sentence to /guides/pay-off-mortgage-early-or-invest/ ('What the Examples Leave Out') and to /compare/pay-of
+- 2026-11-04-tool-usage.md [table] | Mortgage prepayment schedules | biweekly mortgage calculator; bi weekly mortgage calculator; biweekly mortgage payment calculator | coverage gap (no biweekly tool) | none | create new content | /biweekly-mortgage-calcu
+- 2026-11-04-tool-usage.md [table] | Pay off mortgage or invest | pay off mortgage or invest calculator; pay off mortgage vs invest calculator; should i pay off my mortgage or invest | intent mismatch (article + comparison, no calculator) | none | create 
+- 2026-11-04-tool-usage.md [exclusions] - Inherited dead citation: CFPB biweekly Ask page on /mortgage/extra-payment-calculator/ now redirects to the CFPB mortgages hub; logged, not edited (outside reviewed scope).
+- 2026-11-15-keyword-gap.md [exclusions] - Dispositions for all 444 clusters / 522 keywords are in reports/mindmap-pass/2026-11-15-keyword-gap-run/cluster-dispositions.json (hash in evidenceFiles). Counts: ADJ-NOT-PURSUED 168, BUILD-A1 8, BUILD-A2 8, COVERED 62
+- 2026-11-15-keyword-gap.md [exclusions] - tax calculator / income tax calculator / federal income tax calculator / income tax estimator / tax estimator / tax percentage calculator: COVERED, no-addition (A3). /tax-bracket-calculator/ and /guides/how-much-tax-wi
+Commits naming the topic: none
+Same run overlap: row - /guides/mortgage-calculator-with-taxes-and-insurance (0.5); row - /guides/how-much-mortgage-can-i-afford-on-my-salary (0.5); row - /guides/pay-off-mortgage-early-or-invest (0.5); row - /guides/mortgage-calculator-extra-payments (0.5); row - /guides/mortgage-calculator-with-pmi (0.5); row - /guides/does-a-mortgage-calculator-affect-credit-score (0.5); row - /guides/what-percentage-of-income-should-go-to-mortgage (0.5); row - /guides/mortgage-calculator-by-state (0.5); row - /guides/how-are-mortgage-payments-calculated (0.5); row - /guides/dscr-mortgage-calculator (0.5); row - /guides/mortgage-calculator-for-land (0.5)
+
+### /guides/what-percentage-of-income-should-go-to-mortgage  — row - · create new content
+keyword: what percentage should you spend on mortgage
+reader question (new page intent): What share of income on mortgage
+lookup terms: percentage income go mortgage spend   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/how-much-should-i-spend-on-rent  [in sitemap · src/data/guides.ts · topic match 0.6 on percentage income spend]
+    title: What Percentage of Income Should You Spend on Rent?
+    desc:  Rent should stay at or under 28% of gross income, less with debt. See the formula and two worked income examples.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-28-autocomplete.md [table] | 1 | Lens 1 (seed "rent vs buy calculator", 158 completions). `rent vs buy calculator` 14,800/mo KD 49 CPC $1.06 and `rent or buy calculator` 14,800/mo KD 49 (DataForSEO measured, US, 2026-10-28); `rent vs buy calculato
+- 2026-10-28-autocomplete.md [exclusions] - `mortgage payment calculator with pmi` (2,400, KD 66), down payment and home affordability variants (`home affordability calculator by income` est.; `how much is 10 percent down payment` 10): DROP, /mortgage/ calculato
+- 2026-10-29-xtrends.md [table] | Scout bullet marked [ENRICH /guides/fed-rate-hike-savings-investments/]. The guide (updated 2026-09-16) stops at the Sept 16 hike and says nothing about the Oct 28 hold with two dissents for a hike. 'fed rate decision'
+- 2026-11-04-aca-snap.md [table] | Direct/adjacent demand: aca subsidy calculator, 1,900/month, KD54 (SEMrushUS2026-11-04). lookup: no match. Dedicated reader-intent gap; no prior exact-slug commits at local/pinned published revisions. | Create /budget/
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent (tax calculator 1,911,300 combined, income tax calculator 110,000, federal income tax calculator 14,800, income tax estimator 49,500, tax estimator 18,100, tax percentage calculator 8,100;
+- 2026-11-15-keyword-gap.md [exclusions] - tax calculator / income tax calculator / federal income tax calculator / income tax estimator / tax estimator / tax percentage calculator: COVERED, no-addition (A3). /tax-bracket-calculator/ and /guides/how-much-tax-wi
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/mortgage-calculator-by-state  — row - · create new content
+keyword: mortgage calculator texas; mortgage calculator california; mortgage calculator florida with taxes and insurance
+reader question (new page intent): State property tax mortgage payment
+lookup terms: mortgage by state texa california florida taxe insurance   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-financial-plan). Head 'how to make a financial plan': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/financial-planning-calcu
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'paycheck tax calculator' 18,100 (KD 65), salary take home calculator 6,600 (KD 62), after tax income calculator 9,900 (KD 70), post tax income calculator 8,100 (KD 34); measured 
+- 2026-11-15-keyword-gap.md [exclusions] - new york income tax calculator / nyc tax calculator / state tax calculators: adjacent-not-pursued this run, deferred. Only NY URLs were attempted (two tax.ny.gov guessed URLs returned 404, saved); other states not rese
+- 2026-11-16-comparison.md [table] | lookup: /compare/annuity-vs-cd and /compare/pension-vs-annuity - different pairings. Lens 1 direct intent (brief candidate 6). "annuity vs 401k" 1,600/mo KD 24 SEMRUSH; no page compares the two; SERP winnable. | Create
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent (ENRICH requested by brief). lookup: /budget/aca-subsidy-calculator exact route exists, title 'ACA Subsidy Calculator for 2027 Marketplace Premiums'; gap: 0 mentions of bronze, enhanced subsidies, 
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'tenants in common vs joint tenancy': 9,900/mo KD 5 (DataForSEO 2026-11-23, us); variant 'tenants in common vs joint tenants' 9,900 KD 7. lookup: no same-intent page; No existing
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/how-are-mortgage-payments-calculated  — row - · create new content
+keyword: how are mortgage payments calculated; mortgage calculator formula
+reader question (new page intent): How is a mortgage payment calculated
+lookup terms: mortgage payment calculated formula   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/commercial-mortgage-calculator-explained  [in sitemap · src/data/guides.ts · topic match 0.5 on mortgage payment · same format: calculator]
+    title: Commercial Mortgage Calculator: Payment & Balloon
+    desc:  Estimate a commercial mortgage payment, the DSCR lenders require, and the balloon balance due at the end of a typical 10-year loan term.
+- /mortgage/piti-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on mortgage payment · same format: calculator]
+    title: PITI Mortgage Calculator: All-In Monthly Payment
+    desc:  Calculate your full PITI mortgage payment — principal, interest, property taxes, homeowner's insurance, and PMI — to see what you truly owe each month.
+- /guides/40-year-mortgage-explained  [in sitemap · src/data/guides.ts · topic match 0.5 on mortgage payment]
+    title: 40-Year Mortgage Explained: Payment, Cost, and Who Qualifies
+    desc:  A 40-year mortgage lowers your payment but adds over $200,000 in interest on a typical loan. See the real numbers and who actually qualifies.
+- /compare/15-year-vs-30-year-mortgage  [in sitemap · src/data/comparisons.ts · topic match 0.5 on mortgage payment]
+    title: 15-Year vs 30-Year Mortgage: Which Loan Saves More?
+    desc:  15-year vs 30-year mortgage compared: monthly payments, total interest, rates, and which loan saves you more money over time.
+- /guides/how-to-calculate-your-monthly-student-loan-payment  [in sitemap · src/data/guides.ts · topic match 0.5 on payment formula · same format: calculator]
+    title: Student Loan Payment Calculator Formula With Worked Examples
+    desc:  Calculate your monthly student loan payment with our formula breakdown, worked examples, term comparison tables, and standard repayment rules.
+- /compare/15-year-vs-20-year-vs-30-year-mortgage  [in sitemap · src/data/comparisons.ts · topic match 0.5 on mortgage payment]
+    title: 15-Year vs 20-Year vs 30-Year Mortgage: Which Wins?
+    desc:  15-year vs 20-year vs 30-year mortgage compared: monthly payments, total interest, rates, and which term saves you the most money.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 16 | New route C1 needs inbound links from inspected pages that already discuss biweekly payments. | Link 'biweekly mortgage calculator' from the /mortgage/extra-payment-calculator/ FAQ 'Is a biweekly plan better than 
+- 2026-11-04-tool-usage.md [table] | Mortgage prepayment schedules | biweekly mortgage calculator; bi weekly mortgage calculator; biweekly mortgage payment calculator | coverage gap (no biweekly tool) | none | create new content | /biweekly-mortgage-calcu
+- 2026-11-04-tool-usage.md [exclusions] - Inherited dead citation: CFPB biweekly Ask page on /mortgage/extra-payment-calculator/ now redirects to the CFPB mortgages hub; logged, not edited (outside reviewed scope).
+- 2026-11-09-trend-lane-c.md [exclusions] - auto-loan autocomplete questions ("how are auto loan payments calculated" etc.): covered by the /auto-loan/ hub howItWorks and /guides/how-long-should-a-car-loan-be; rate-lookup queries are not calculator intent.
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent (ENRICH requested by brief). lookup: /budget/aca-subsidy-calculator exact route exists, title 'ACA Subsidy Calculator for 2027 Marketplace Premiums'; gap: 0 mentions of bronze, enhanced subsidies, 
+- 2026-11-23-trend-lane-c.md [table] | [coverage / top-10] Lane B: 'rule of 78 calculator' (0 clicks, 3 impr, pos 64.33) is UNCOVERED. Lens 1 direct intent; Lens 2 cluster 'Rule of 78 loan interest': rule of 78 1,000/mo; what is the rule of 78 210; rule of 
+Commits naming the topic: none
+Same run overlap: row - /guides/mortgage-calculator-extra-payments (0.5)
+
+### /guides/dscr-mortgage-calculator  — row - · create new content
+keyword: mortgage calculator dscr
+reader question (new page intent): DSCR loan calculation
+lookup terms: dscr mortgage   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/commercial-mortgage-calculator-explained  [in sitemap · src/data/guides.ts · topic match 1.0 on dscr mortgage · same format: calculator]
+    title: Commercial Mortgage Calculator: Payment & Balloon
+    desc:  Estimate a commercial mortgage payment, the DSCR lenders require, and the balloon balance due at the end of a typical 10-year loan term.
+- /mortgage  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on mortgage]
+    title: Free Mortgage Calculator: Instant Home Loan Estimate
+    desc:  Use our free, simple mortgage calculator to instantly estimate your monthly principal and interest, see full amortization, and learn how a home loan works.
+- /mortgage/piti-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on mortgage · same format: calculator]
+    title: PITI Mortgage Calculator: All-In Monthly Payment
+    desc:  Calculate your full PITI mortgage payment — principal, interest, property taxes, homeowner's insurance, and PMI — to see what you truly owe each month.
+- /mortgage/affordability-calculator  [in sitemap · src/data/spokes-mortgage.ts · topic match 0.5 on mortgage · same format: calculator]
+    title: Mortgage Affordability Calculator: How Much House?
+    desc:  Find out how much house you can afford based on your income, debts, and down payment. Uses the 28/36 DTI rules lenders actually apply.
+- /biweekly-mortgage-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on mortgage · same format: calculator]
+    title: Biweekly Mortgage Calculator: Payoff Time & Interest Saved
+    desc:  Biweekly mortgage calculator. Enter your balance, rate and months left to see how much sooner biweekly payments end the loan and the interest saved.
+- /commercial-mortgage-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on mortgage · same format: calculator]
+    title: Commercial Mortgage Calculator: Payment & Balloon
+    desc:  Commercial mortgage calculator. Estimate your monthly debt service, balloon payment, debt service coverage ratio (DSCR), and debt yield.
+- /mortgage-recast-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on mortgage · same format: calculator]
+    title: Mortgage Recast Calculator: New Payment & Interest Saved
+    desc:  Mortgage recast calculator. Enter your balance, rate and lump sum to see the new payment, interest saved, and how a recast compares to prepaying.
+- /guides/who-overpays-on-mortgages  [in sitemap · src/data/guides.ts · topic match 0.5 on mortgage]
+    title: Who Overpays on Mortgages and What It Costs Over Time
+    desc:  Learn who overpays on mortgages, what a quarter-point difference costs on a 30-year loan, and how to compare official Loan Estimates before signing.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 17 | New route C2 needs inbound links from the existing payoff-or-invest guide and comparison. | Add one link sentence to /guides/pay-off-mortgage-early-or-invest/ ('What the Examples Leave Out') and to /compare/pay-of
+- 2026-11-04-tool-usage.md [table] | Mortgage prepayment schedules | biweekly mortgage calculator; bi weekly mortgage calculator; biweekly mortgage payment calculator | coverage gap (no biweekly tool) | none | create new content | /biweekly-mortgage-calcu
+- 2026-11-04-tool-usage.md [table] | Pay off mortgage or invest | pay off mortgage or invest calculator; pay off mortgage vs invest calculator; should i pay off my mortgage or invest | intent mismatch (article + comparison, no calculator) | none | create 
+- 2026-11-04-tool-usage.md [exclusions] - Inherited dead citation: CFPB biweekly Ask page on /mortgage/extra-payment-calculator/ now redirects to the CFPB mortgages hub; logged, not edited (outside reviewed scope).
+- 2026-11-15-keyword-gap.md [exclusions] - Dispositions for all 444 clusters / 522 keywords are in reports/mindmap-pass/2026-11-15-keyword-gap-run/cluster-dispositions.json (hash in evidenceFiles). Counts: ADJ-NOT-PURSUED 168, BUILD-A1 8, BUILD-A2 8, COVERED 62
+- 2026-11-15-keyword-gap.md [exclusions] - tax calculator / income tax calculator / federal income tax calculator / income tax estimator / tax estimator / tax percentage calculator: COVERED, no-addition (A3). /tax-bracket-calculator/ and /guides/how-much-tax-wi
+Commits naming the topic: none
+Same run overlap: row - /guides/mortgage-calculator-with-taxes-and-insurance (0.5); row - /guides/how-much-mortgage-can-i-afford-on-my-salary (0.5); row - /guides/pay-off-mortgage-early-or-invest (0.5); row - /guides/mortgage-calculator-extra-payments (0.5); row - /guides/mortgage-calculator-with-pmi (0.5); row - /guides/does-a-mortgage-calculator-affect-credit-score (0.5); row - /guides/when-to-refinance-mortgage-calculator (0.5); row - /guides/what-percentage-of-income-should-go-to-mortgage (0.5); row - /guides/mortgage-calculator-by-state (0.5); row - /guides/how-are-mortgage-payments-calculated (0.5); row - /guides/mortgage-calculator-for-land (0.5)
+
+### /guides/mortgage-calculator-for-land  — row - · create new content
+keyword: mortgage calculator for land; mortgage calculator for mobile home
+reader question (new page intent): Land loan payment
+lookup terms: mortgage land mobile home   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/fixed-vs-arm-mortgage  [in sitemap · src/data/comparisons.ts · topic match 0.5 on mortgage home]
+    title: Fixed vs ARM Mortgage: Which Rate Will Save You More?
+    desc:  Fixed vs ARM mortgage compared: rate stability, initial rates, long-term cost, and which loan type saves more for your situation.
+- /guides/mortgage-mistakes-before-applying  [in sitemap · src/data/guides.ts · topic match 0.5 on mortgage home]
+    title: Mortgage Mistakes to Avoid Before Applying for a Loan
+    desc:  Learn key mortgage mistakes to avoid before applying, from credit card changes and job switches to undocumented deposits that can derail loan approval.
+- /guides/questions-to-ask-a-mortgage-lender  [in sitemap · src/data/guides.ts · topic match 0.5 on mortgage home]
+    title: Questions to Ask a Mortgage Lender Before You Apply
+    desc:  Learn the essential questions to ask a mortgage lender. Compare loan programs, fees, rate locks, and closing costs using standard Loan Estimates.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-27-trend-lane-c.md [exclusions] - best lenders for home loans / most trusted living trust company for real estate owners / coast fire amount / index investment funds: /roundup/best-mortgage-lenders, /roundup/best-living-trust-services, /guides/coast-fi
+- 2026-10-28-autocomplete.md [table] | 1 | Lens 1 (seed "rent vs buy calculator", 158 completions). `rent vs buy calculator` 14,800/mo KD 49 CPC $1.06 and `rent or buy calculator` 14,800/mo KD 49 (DataForSEO measured, US, 2026-10-28); `rent vs buy calculato
+- 2026-10-28-autocomplete.md [exclusions] - `mortgage payment calculator with pmi` (2,400, KD 66), down payment and home affordability variants (`home affordability calculator by income` est.; `how much is 10 percent down payment` 10): DROP, /mortgage/ calculato
+- 2026-10-29-xtrends.md [table] | Lens 1 direct intent + news-driven (Zillow and Thumbtack 2026 study, Fox Business 2026-10-22). 'hidden cost of owning a home' 210/mo KD 4, 'cost of owning a home calculator' 170/mo KD 25, 'home maintenance cost calcula
+- 2026-10-29-xtrends.md [table] | Scout bullet marked [ENRICH /guides/fed-rate-hike-savings-investments/]. The guide (updated 2026-09-16) stops at the Sept 16 hike and says nothing about the Oct 28 hold with two dissents for a hike. 'fed rate decision'
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'tenants in common vs joint tenancy': 9,900/mo KD 5 (DataForSEO 2026-11-23, us); variant 'tenants in common vs joint tenants' 9,900 KD 7. lookup: no same-intent page; No existing
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/compound-interest-formula-excel-google-sheets  — row - · create new content
+keyword: compound interest calculator excel; compound interest calculator google sheets; compound interest formula
+reader question (new page intent): How to calculate compound interest in Excel
+lookup terms: compound interest formula excel google sheet   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-22-trend-lane-c.md [exclusions] - **time value of money calculator 12,100/mo KD 11, financial calculator online 6,600/mo KD 54, financial calculators online free 880/mo, ba ii plus financial calculator online 90/mo (DataForSEO, measured; SERP winnable,
+- 2026-10-23-trend-lane-c.md [table] | 1 | source: coverage + top-10 (Lens 2 adjacent to the top-20 query "investment calculator with increasing contributions", pos 17, 1 impr). Cluster: investment calculator with increasing contributions 320/mo KD 21 (meas
+- 2026-10-23-trend-lane-c.md [table] | Increasing-contribution investment projection | investment calculator with increasing contributions; compound interest calculator with increasing contributions; investment growth calculator increasing contributions | i
+- 2026-11-04-tool-usage.md [table] | 14 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage /mortgage/payoff-calculator/). 'biweekly mortgage calculator' 1,900/mo KD 29, 'bi weekly mortgage calculator' 720, 'biweekly mortga
+- 2026-11-04-tool-usage.md [table] | 15 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage). 'pay off mortgage or invest calculator' 260/mo KD 17, 'pay off mortgage vs invest calculator' 260 KD 11, 'should i pay off my mor
+- 2026-11-23-trend-lane-c.md [table] | [coverage / top-10] Lane B: 'rule of 78 calculator' (0 clicks, 3 impr, pos 64.33) is UNCOVERED. Lens 1 direct intent; Lens 2 cluster 'Rule of 78 loan interest': rule of 78 1,000/mo; what is the rule of 78 210; rule of 
+Commits naming the topic: none
+Same run overlap: row - /guides/debt-payoff-spreadsheet-template (0.5)
+
+### /guides/compound-interest-calculator-with-monthly-contributions  — row - · create new content
+keyword: compound interest calculator with monthly contributions; with withdrawals; with inflation
+reader question (new page intent): Compound interest with monthly deposits
+lookup terms: compound interest monthly contribution withdrawal inflation   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-26-competitor.md [table] | 3 | Inbound links | Added cross-links from credit-card-payoff, credit-card-interest-calculator, inflation-calculator | add internal links | src/data/cross-links.ts | n/a | n/a | n/a | n/a |
+- 2026-10-27-trend-lane-c.md [table] | 1 | source: coverage (Lens 2, adjacent to top-20 query "how long will my money last calculator nerdwallet"). Cluster: how long will my money last 14,800/mo KD 0 (head, owned by /investing/withdrawal-calculator and /ret
+- 2026-11-04-aca-snap.md [table] | Direct/adjacent demand: aca subsidy calculator, 1,900/month, KD54 (SEMrushUS2026-11-04). lookup: no match. Dedicated reader-intent gap; no prior exact-slug commits at local/pinned published revisions. | Create /budget/
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: How to Money 'Maxxing HSA Benefits'). 'hsa triple tax advantage' 2,400/mo KD 37 CPC $1.11 (SEMRUSH us 2026-11-04, measured); supporting 'hsa contribution limits 2026' 33,100 KD 44, 'hsa t
+- 2026-11-04-tool-usage.md [table] | 14 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage /mortgage/payoff-calculator/). 'biweekly mortgage calculator' 1,900/mo KD 29, 'bi weekly mortgage calculator' 720, 'biweekly mortga
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+Commits naming the topic: none
+Same run overlap: row - /guides/daily-vs-monthly-compounding (0.5)
+
+### /guides/daily-vs-monthly-compounding  — row - · create new content
+keyword: daily compound interest calculator; is compound interest calculated monthly or yearly
+reader question (new page intent): Daily vs monthly compounding
+lookup terms: daily monthly compounding compound interest calculated yearly   format cues: calculator vs
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-26-competitor.md [table] | 1 | Bankrate "credit card companies want you in debt". lookup: no match [verb-only on SERP; ac 11/11 question] | Guide: who pays the issuer (interest, interchange, fees), our calculated $5,300 balance model | create ne
+- 2026-10-28-competitor.md [table] | 2 | Lens 1, NerdWallet "How to Get a Student Loan Deferment" and "Unemployment Deferment" (both updated 2026-10-27). lookup: no match (guides cover refinancing, forgiveness, repayment plans, not deferment). Cluster: st
+- 2026-10-29-xtrends.md [table] | Lens 1 direct intent + news-driven (Zillow and Thumbtack 2026 study, Fox Business 2026-10-22). 'hidden cost of owning a home' 210/mo KD 4, 'cost of owning a home calculator' 170/mo KD 25, 'home maintenance cost calcula
+- 2026-11-04-aca-snap.md [table] | Direct/adjacent demand: aca subsidy calculator, 1,900/month, KD54 (SEMrushUS2026-11-04). lookup: no match. Dedicated reader-intent gap; no prior exact-slug commits at local/pinned published revisions. | Create /budget/
+- 2026-11-04-tool-usage.md [table] | 14 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage /mortgage/payoff-calculator/). 'biweekly mortgage calculator' 1,900/mo KD 29, 'bi weekly mortgage calculator' 720, 'biweekly mortga
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'salary calculator' 339,600 combined vol (primary 246,000), KD 29, 2 competitors (calculator.net, smartasset.com; measured, SEMRUSH/DataForSEO intake 2026-11-15) plus annual salar
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/sp-500-compound-interest-calculator  — row - · create new content
+keyword: compound interest calculator s&p 500; voo; vti; qqq
+reader question (new page intent): S&P 500 growth projection
+lookup terms: sp v500 compound interest voo vti qqq   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-14-tool-usage.md [table] | 4 | Lens 1 (tool usage, investing — 72 people, top tool). Persona: renter moving $25,000 to a 4.1% APY HYSA, $500/mo, 5 yrs. Result "$8,911 interest earned" — quote: "my bank sends a 1099-INT and I pay tax on that, rig
+- 2026-10-22-trend-lane-c.md [exclusions] - **time value of money calculator 12,100/mo KD 11, financial calculator online 6,600/mo KD 54, financial calculators online free 880/mo, ba ii plus financial calculator online 90/mo (DataForSEO, measured; SERP winnable,
+- 2026-10-23-trend-lane-c.md [table] | 1 | source: coverage + top-10 (Lens 2 adjacent to the top-20 query "investment calculator with increasing contributions", pos 17, 1 impr). Cluster: investment calculator with increasing contributions 320/mo KD 21 (meas
+- 2026-10-23-trend-lane-c.md [table] | Increasing-contribution investment projection | investment calculator with increasing contributions; compound interest calculator with increasing contributions; investment growth calculator increasing contributions | i
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/reverse-compound-interest-calculator  — row - · create new content
+keyword: compound interest calculator backwards; goal; reverse
+reader question (new page intent): How much to invest monthly to hit a goal
+lookup terms: reverse compound interest backward goal   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /investing/compound-interest-calculator  [PARENT PAGE · in sitemap · src/data/spokes-investing.ts · topic match 0.4 on compound interest · same format: calculator]
+    title: Compound Interest Calculator: Grow Your Money
+    desc:  Use this compound interest calculator to see how your money grows over time and how compounding frequency affects your returns. Free and simple.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-23-trend-lane-c.md [table] | 1 | source: coverage + top-10 (Lens 2 adjacent to the top-20 query "investment calculator with increasing contributions", pos 17, 1 impr). Cluster: investment calculator with increasing contributions 320/mo KD 21 (meas
+- 2026-10-23-trend-lane-c.md [table] | Increasing-contribution investment projection | investment calculator with increasing contributions; compound interest calculator with increasing contributions; investment growth calculator increasing contributions | i
+- 2026-10-27-podcast.md [table] | 3 | Direct intent (podcast: Rental Income Podcast Ep 510 "Does It Make Sense To Buy Rentals With 15 Year Mortgages?"). Cluster: 15 year mortgage for rental property ~250/mo (DataForSEO ESTIMATE band 250-2,500, NOT meas
+- 2026-10-27-xtrends.md [table] | 1 | Lens 1 (direct intent, scout bullet "Car loan interest deduction calculator"). `car loan interest deduction` 12,100/mo, KD 6, CPC $0.03 (DataForSEO measured, US, 2026-10-27); `auto loan interest deduction` 4,400/mo
+- 2026-11-04-tool-usage.md [table] | 14 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage /mortgage/payoff-calculator/). 'biweekly mortgage calculator' 1,900/mo KD 29, 'bi weekly mortgage calculator' 720, 'biweekly mortga
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-financial-plan). Head 'how to make a financial plan': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/financial-planning-calcu
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/compound-interest-vs-simple-interest  — row - · create new content
+keyword: compound interest calculator vs simple
+reader question (new page intent): Compound vs simple
+lookup terms: compound interest simple   format cues: calculator vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /investing/compound-interest-calculator  [PARENT PAGE · in sitemap · src/data/spokes-investing.ts · topic match 0.67 on compound interest · same format: calculator]
+    title: Compound Interest Calculator: Grow Your Money
+    desc:  Use this compound interest calculator to see how your money grows over time and how compounding frequency affects your returns. Free and simple.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-22-trend-lane-c.md [exclusions] - **time value of money calculator 12,100/mo KD 11, financial calculator online 6,600/mo KD 54, financial calculators online free 880/mo, ba ii plus financial calculator online 90/mo (DataForSEO, measured; SERP winnable,
+- 2026-10-23-trend-lane-c.md [table] | 1 | source: coverage + top-10 (Lens 2 adjacent to the top-20 query "investment calculator with increasing contributions", pos 17, 1 impr). Cluster: investment calculator with increasing contributions 320/mo KD 21 (meas
+- 2026-10-23-trend-lane-c.md [table] | Increasing-contribution investment projection | investment calculator with increasing contributions; compound interest calculator with increasing contributions; investment growth calculator increasing contributions | i
+- 2026-11-23-trend-lane-c.md [table] | [coverage / top-10] Lane B: 'rule of 78 calculator' (0 clicks, 3 impr, pos 64.33) is UNCOVERED. Lens 1 direct intent; Lens 2 cluster 'Rule of 78 loan interest': rule of 78 1,000/mo; what is the rule of 78 210; rule of 
+Commits naming the topic: none
+Same run overlap: row - /guides/compound-interest-formula-excel-google-sheets (0.67); row - /guides/compound-interest-calculator-with-monthly-contributions (0.67); row - /guides/daily-vs-monthly-compounding (0.67); row - /guides/sp-500-compound-interest-calculator (0.67); row - /guides/reverse-compound-interest-calculator (0.67); row - /guides/compound-interest-on-loans (0.67); row - /guides/dividend-reinvestment-calculator (0.67)
+
+### /guides/compound-interest-on-loans  — row - · create new content
+keyword: compound interest calculator loan; car loan; credit card; debt
+reader question (new page intent): Compound interest on debt
+lookup terms: compound interest loan car credit card debt   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-15-keyword-gap.md [exclusions] - car loan calculator (450,000): NOT a new page; /auto-loan/ (Auto Loan Calculator, targetKeyword 'auto loan calculator', FAQ 'Is this the same as a car loan payment calculator?') plus 7 spokes already serve the intent. 
+- 2026-11-15-keyword-gap.md [exclusions] - Insurance (car, home, health, life, renters, travel, disability), credit cards, rates, Social Security, celebrity net worth, brand-navigational queries: adjacent-not-pursued or covered-partial per ledger; high KD, per-
+- 2026-11-16-comparison.md [table] | lookup: /roundup/best-cash-back-credit-cards - many-card list, not this pairing. Lens 1 direct intent (brief candidate 8). "chase freedom flex vs unlimited" 720/mo KD 36 SEMRUSH; no head-to-head page; SERP winnable. | 
+- 2026-11-16-comparison.md [exclusions] - C11 debt consolidation vs balance transfer: DEFER - 210/mo KD 38, PARTIAL: section exists in src/data/guides.ts; balance-transfer-vs-personal-loan was dropped in cache 2026-10-19 for lack of sourced facts. Low volume a
+- 2026-11-23-trend-lane-c.md [table] | [coverage / top-10] Lane B: 'rule of 78 calculator' (0 clicks, 3 impr, pos 64.33) is UNCOVERED. Lens 1 direct intent; Lens 2 cluster 'Rule of 78 loan interest': rule of 78 1,000/mo; what is the rule of 78 210; rule of 
+- 2026-11-23-xtrends.md [table] | Lens 1 direct intent + news-driven (brief bullet 2). Autocomplete (estimate, NOT measured): 'credit card interest cap trump', 'credit card interest cap when does it start' (31 completions). lookup: EXACT SLUG /credit-c
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/dividend-reinvestment-calculator  — row - · create new content
+keyword: compound interest calculator dividend reinvestment; drip
+reader question (new page intent): DRIP growth
+lookup terms: dividend reinvestment compound interest drip   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /investing/dividend-calculator  [in sitemap · src/data/spokes-investing.ts · topic match 0.6 on dividend reinvestment drip · same format: calculator]
+    title: Dividend Reinvestment Calculator (DRIP)
+    desc:  Model DRIP compounding: see how reinvesting dividends accelerates portfolio growth versus taking cash. Project total return over time.
+- /investing/compound-interest-calculator  [PARENT PAGE · in sitemap · src/data/spokes-investing.ts · topic match 0.4 on compound interest · same format: calculator]
+    title: Compound Interest Calculator: Grow Your Money
+    desc:  Use this compound interest calculator to see how your money grows over time and how compounding frequency affects your returns. Free and simple.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-22-trend-lane-c.md [exclusions] - **time value of money calculator 12,100/mo KD 11, financial calculator online 6,600/mo KD 54, financial calculators online free 880/mo, ba ii plus financial calculator online 90/mo (DataForSEO, measured; SERP winnable,
+- 2026-10-23-trend-lane-c.md [table] | 1 | source: coverage + top-10 (Lens 2 adjacent to the top-20 query "investment calculator with increasing contributions", pos 17, 1 impr). Cluster: investment calculator with increasing contributions 320/mo KD 21 (meas
+- 2026-10-23-trend-lane-c.md [table] | Increasing-contribution investment projection | investment calculator with increasing contributions; compound interest calculator with increasing contributions; investment growth calculator increasing contributions | i
+- 2026-10-28-autocomplete.md [exclusions] - `dividend growth calculator` / `dividend calculator with drip` (720 each): DROP, covered by /investing/dividend-calculator/ (DRIP calculator).
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/401k-calculator-with-employer-match  — row - · create new content
+keyword: 401k calculator with employer match; company match; maximize match
+reader question (new page intent): How much does match add
+lookup terms: 401k employer match company maximize   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/iul-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.6 on 401k employer match]
+    title: IUL vs 401k Comes Down to the Employer Match
+    desc:  IUL vs 401k compared on employer match, 2026 IRS limits, cost of insurance, fees, and taxes, plus when an indexed universal life policy earns its price.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-21-trend-lane-c.md [exclusions] - roth vs traditional 401k take home pay / early withdrawal / employer match / for 30 year old / after tax (all estimate bands, NOT measured, 10 to 750/mo): DROP — /compare/roth-401k-vs-traditional-401k/ and /roth-vs-tra
+- 2026-10-25.md [table] | 1 | **Lens 2 (adjacent — the single largest demand cluster around "buying a house").** `home inspection checklist` **8,800/mo, KD 15** (ahrefs), `home buying inspection checklist` 150/KD 22, `buying a home inspection c
+- 2026-10-28-competitor.md [table] | 1 | Lens 1, NerdWallet "Average Retirement Savings by Age" (updated 2026-10-28). lookup: no match (/retirement/retirement-savings-calculator is a projection tool, /guides/average-hsa-balance-by-age is HSA). Cluster: av
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-12-xtrends.md [table] | Lens 1 direct intent + news-driven (DOL promoted the final rule on X Nov 10 during open enrollment; Federal Register 2026-22306 published 2026-11-02). 'pbm fee disclosure' 500-5000/mo, 'dol pbm rule' 500-5000/mo, 'pbm 
+- 2026-11-16-comparison.md [table] | lookup: /compare/annuity-vs-cd and /compare/pension-vs-annuity - different pairings. Lens 1 direct intent (brief candidate 6). "annuity vs 401k" 1,600/mo KD 24 SEMRUSH; no page compares the two; SERP winnable. | Create
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/401k-paycheck-impact-calculator  — row - · create new content
+keyword: 401k calculator paycheck impact; take home pay; per paycheck
+reader question (new page intent): How does 401k contribution change take home
+lookup terms: 401k paycheck impact take home pay per   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent (tax calculator 1,911,300 combined, income tax calculator 110,000, federal income tax calculator 14,800, income tax estimator 49,500, tax estimator 18,100, tax percentage calculator 8,100;
+- 2026-11-15-keyword-gap.md [exclusions] - Insurance (car, home, health, life, renters, travel, disability), credit cards, rates, Social Security, celebrity net worth, brand-navigational queries: adjacent-not-pursued or covered-partial per ledger; high KD, per-
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent plus fresh news (IRS IR-2026-136, Nov 12 2026). lookup: /guides/401k-contribution-limits-2026 and /guides/ira-contribution-limits-2026 serve a 2026-limits reader, not a 2027 one; /compare/tsp-vs-40
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-
+- 2026-11-23-xtrends.md [table] | Lens 1 direct intent + news-driven (brief bullet 1; X posts about 401(k) drops rose after the Nov 20 market close, per brief, unverified). Autocomplete (estimate, NOT measured, no provider keys): 'should i sell my 401k
+- 2026-11-23-xtrends.md [exclusions] - New-page candidates /calculators/401k-market-drop-calculator and /guides/gta-6-playstation-refund: not created; prefer enrichment per instruction.
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/how-long-will-my-401k-last  — row - · create new content
+keyword: 401k calculator how long will it last; 401k drawdown; withdrawal
+reader question (new page intent): How long will 401k last
+lookup terms: long will 401k last drawdown withdrawal   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /investing/withdrawal-calculator  [in sitemap · src/data/spokes-investing.ts · topic match 0.67 on long will last withdrawal · same format: calculator]
+    title: Withdrawal Calculator: How Long Will Your Money Last?
+    desc:  See how long your withdrawals last (also called a drawdown calculator) based on your balance, withdrawal amount, and expected return. Includes the 4% rule.
+- /guides/how-long-will-my-pension-last  [in sitemap · src/data/guides.ts · topic match 0.5 on long will last]
+    title: How Long Will My Pension Last? Timelines by Balance
+    desc:  How long will my pension last? See exact depletion timelines across balances, monthly withdrawals, and return rates, plus tax and lump sum rules.
+- /retirement/retirement-income-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 0.5 on long will last · same format: calculator]
+    title: Retirement Income Calculator: How Long Savings Last
+    desc:  Our retirement income calculator shows how long your savings will last in retirement, models withdrawal rates, and flags sequence-of-returns risk.
+- /guides/how-long-will-150k-last-in-retirement  [in sitemap · src/data/guides.ts · topic match 0.5 on long will last]
+    title: How Long Will $150,000 Last in Retirement? Exact Scenarios
+    desc:  How long will $150,000 last in retirement? See exact years across cash and invested scenarios, Social Security pairings, and withdrawal strategies.
+- /guides/how-long-will-1-million-last-in-retirement  [in sitemap · src/data/guides.ts · topic match 0.5 on long will last]
+    title: How Long Will $1 Million Last in Retirement? Exact Years
+    desc:  How long will $1 million last in retirement? See exact years by monthly spending and real return, the 30-year spending ceiling and when it never runs out.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 2 | inflation-calculator (21 people, 23 uses, 51 views; data_days 27). Walkthrough: a minus sign is silently dropped (-1% becomes +1%); no guidance on which rate to enter; no year-by-year figures or way to keep them. E
+- 2026-11-04-tool-usage.md [table] | 8 | stock-capital-gains-tax-calculator (19 people, 20 uses, 36 views (all 19 in the last 7 days); data_days 27). Walkthrough: '0% room left' is the room before the sale (MFJ $80,000 TI + $30,000 gain shows $18,900 thou
+- 2026-11-04-tool-usage.md [table] | 10 | elder-care (1 person, 3 uses, 16 views; low-use lane; data_days 27). Walkthrough: result prints '$$180,000'; the total shortfall uses start-year prices while the total cost inflates ($256,068 vs $270,891 on the sa
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent plus fresh news (IRS IR-2026-136, Nov 12 2026). lookup: /guides/401k-contribution-limits-2026 and /guides/ira-contribution-limits-2026 serve a 2026-limits reader, not a 2027 one; /compare/tsp-vs-40
+- 2026-11-23-xtrends.md [table] | Lens 1 direct intent + news-driven (brief bullet 1; X posts about 401(k) drops rose after the Nov 20 market close, per brief, unverified). Autocomplete (estimate, NOT measured, no provider keys): 'should i sell my 401k
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/401k-calculator-if-i-stop-contributing  — row - · create new content
+keyword: 401k calculator if i stop contributing
+reader question (new page intent): Stop contributing
+lookup terms: 401k if stop contributing   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-10.md [table] | Lens 1 (direct intent) — the literal brief. "how to get out of bankruptcy" is 10/mo (estimate) with a mixed SERP (games, GM/Marvel/NYC histories); the real "get out" demand is people inside a Chapter 13 plan: `chapter 
+- 2026-10-10.md [table] | Lens 3 (alternatives). `bankruptcy alternatives` (720, KD 36, CPC $34.95), `debt management plan vs bankruptcy` (50, KD 0), `alternatives to bankruptcy` / `how to get out of debt without bankruptcy` / `how to get out o
+- 2026-10-12-trend-lane-c.md [table] | Lens 2 (adjacent to top-10 query "529 vs brokerage account", 210/mo KD 1; PAA "What is the downside of a 529 plan?"). Cluster: `is a 529 plan worth it` 880/mo KD 7; `529 plan pros and cons` 1,000 KD 12; `disadvantages 
+- 2026-10-14.md [table] | Lens 2, cluster "COLA for disability (SSDI)". Phrases: `social security cola 2027 disability` 3,600/mo KD 7; `ssdi cola 2027` 320; `ssdi increase 2027` 210 KD 8. Autocomplete: "how much will ssdi increase in 2027", "ho
+- 2026-10-27-podcast.md [table] | 2 | Direct intent (podcast: Ready For Retirement "What Should You Do With Your 401k When You Retire?"). Cluster: what to do with your 401k when you retire 260/mo KD 7 (DataForSEO measured); ac: what can you do with you
+- 2026-10-27-podcast.md [exclusions] - how to know if you are ready to retire (30), 401k rollover to ira at retirement (10), how much to spend in retirement (30), how to pay off 60000 in debt (20), spouse handles all the money (est. 0): below the 70/mo floo
+Commits naming the topic: none
+Same run overlap: row - /guides/401k-contribution-limits-over-50-catch-up (0.5)
+
+### /guides/401k-rule-of-55  — row - · create new content
+keyword: 401k rule of 55
+reader question (new page intent): What is the rule of 55
+lookup terms: 401k rule v55   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/rule-of-55-vs-72t  [in sitemap · src/data/comparisons.ts · topic match 0.67 on rule v55]
+    title: Rule of 55 vs 72(t): Early Retirement Withdrawals
+    desc:  Rule of 55 vs 72(t) compared: eligibility, eligible accounts, payment flexibility, tax treatment, and how to avoid the 10% early withdrawal penalty.
+- /guides/401k-loan-rules  [in sitemap · src/data/guides.ts · topic match 0.67 on 401k rule]
+    title: 401(k) Loan Rules: Limits, Repayment Terms, and Default
+    desc:  Learn 401(k) loan rules, borrowing limits up to $50,000, 5-year repayment terms, and tax consequences if a plan loan is treated as a distribution.
+- /guides/401k-beneficiary-rules  [in sitemap · src/data/guides.ts · topic match 0.67 on 401k rule]
+    title: What Happens to a 401(k) When You Die: Beneficiary Rules
+    desc:  401(k) beneficiary rules: the SECURE Act 10-year rule for non-spouse heirs, the spousal rollover option, and how taxes work on an inherited 401(k).
+- /compare/401k-vs-ira-beneficiary-rules  [in sitemap · src/data/comparisons.ts · topic match 0.67 on 401k rule]
+    title: 401(k) vs IRA Beneficiary Rules: Key Differences
+    desc:  401(k) vs IRA beneficiary rules compared: spousal consent, the SECURE Act's 10-year rule, rollover flexibility, and creditor protection for heirs.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-16-competitor.md [table] | 401(k) loan rules | 401k loan; borrow from 401k | create new content | /guides/401k-loan-rules/ |
+- 2026-10-16-trend-lane-c.md [table] | Lens 3 (vs) off a Lane B coverage finding: top-20 query `401k vs 529` (1 impression, pos 70). `401k vs 529` 70/mo KD 0 and `529 vs 401k` 70/mo (DataForSEO, measured); `401k or 529` 10; `401k vs 529 for college` ~75 (es
+- 2026-10-27-podcast.md [table] | 2 | Direct intent (podcast: Ready For Retirement "What Should You Do With Your 401k When You Retire?"). Cluster: what to do with your 401k when you retire 260/mo KD 7 (DataForSEO measured); ac: what can you do with you
+- 2026-10-28-competitor.md [table] | 1 | Lens 1, NerdWallet "Average Retirement Savings by Age" (updated 2026-10-28). lookup: no match (/retirement/retirement-savings-calculator is a projection tool, /guides/average-hsa-balance-by-age is HSA). Cluster: av
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent plus fresh news (IRS IR-2026-136, Nov 12 2026). lookup: /guides/401k-contribution-limits-2026 and /guides/ira-contribution-limits-2026 serve a 2026-limits reader, not a 2027 one; /compare/tsp-vs-40
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/401k-loan-calculator  — row - · create new content
+keyword: 401k loan calculator
+reader question (new page intent): 401k loan payment
+lookup terms: 401k loan   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /retirement/401k-loan-calculator  [EXACT SLUG · in sitemap · src/data/spokes-retirement.ts · topic match 1.0 on 401k loan · same format: calculator]
+    title: 401(k) Loan Calculator for Your Maximum Loan and Payment
+    desc:  Use this 401(k) loan calculator to find your largest new loan and payment. Enter your vested balance, existing loans, past loan peak, rate and repayment term.
+- /compare/401k-loan-vs-heloc  [in sitemap · src/data/comparisons.ts · topic match 1.0 on 401k loan]
+    title: 401(k) Loan vs HELOC: Which Borrowing Path Fits Best?
+    desc:  Compare a 401k loan vs HELOC on interest rates, tax rules, qualification hurdles, and default risks to find the right borrowing path for your goals.
+- /guides/401k-loan-rules  [in sitemap · src/data/guides.ts · topic match 1.0 on 401k loan]
+    title: 401(k) Loan Rules: Limits, Repayment Terms, and Default
+    desc:  Learn 401(k) loan rules, borrowing limits up to $50,000, 5-year repayment terms, and tax consequences if a plan loan is treated as a distribution.
+- /retirement/401k-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 0.5 on 401k · same format: calculator]
+    title: 401k Calculator: How Much You'll Have at Retirement
+    desc:  See how much your 401(k) could be worth at retirement. Enter your balance, contributions, employer match, and expected return for a free projection.
+- /guides/payday-loan-calculator-explained  [in sitemap · src/data/guides.ts · topic match 0.5 on loan · same format: calculator]
+    title: Payday Loan Calculator Math for the True APR and Fees
+    desc:  Calculate the true APR on a payday loan. See how a $15 fee becomes a 391% APR, how rollovers compound borrowing costs, and compare cheaper alternatives.
+- /auto-loan/payoff-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.5 on loan · same format: calculator]
+    title: Auto Loan Payoff Calculator: See Your Payoff Date Fast
+    desc:  Use our free auto loan payoff calculator to find your payoff date and full payment schedule, and see how much extra payments save in interest instantly.
+- /auto-loan/interest-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.5 on loan · same format: calculator]
+    title: Auto Loan Interest Calculator: Total Interest in 2026
+    desc:  Use our auto loan interest calculator to see total interest paid by rate, term, and down payment. See how a longer loan quietly costs you more.
+- /auto-loan/refinance-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.5 on loan · same format: calculator]
+    title: Auto Loan Refinance Calculator: New Payment & Savings
+    desc:  See your new monthly payment and total interest savings before you refinance your car loan. Free auto loan refinance calculator, updated for 2026.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-23-comparison.md [exclusions] - Candidate 10 fixed vs variable rate student loans (390/mo KD 17): DEFER. studentaid.gov JS shell, no verbatim federal rate primary.
+- 2026-11-23-trend-lane-c.md [table] | [coverage / top-10] Lane B: 'rule of 78 calculator' (0 clicks, 3 impr, pos 64.33) is UNCOVERED. Lens 1 direct intent; Lens 2 cluster 'Rule of 78 loan interest': rule of 78 1,000/mo; what is the rule of 78 210; rule of 
+- 2026-11-23-trend-lane-c.md [exclusions] - 20000 for 72 months: already covered by /auto-loan/ calculators (pos 2).
+- 2026-11-23-trend-lane-c.md [exclusions] - 401k roth traditional: covered by compare/roth-401k-vs-traditional-401k.
+- 2026-11-23-xtrends.md [table] | Lens 1 direct intent + news-driven (brief bullet 1; X posts about 401(k) drops rose after the Nov 20 market close, per brief, unverified). Autocomplete (estimate, NOT measured, no provider keys): 'should i sell my 401k
+- 2026-11-23-xtrends.md [exclusions] - New-page candidates /calculators/401k-market-drop-calculator and /guides/gta-6-playstation-refund: not created; prefer enrichment per instruction.
+Commits naming the topic: none
+Same run overlap: row - /guides/compound-interest-on-loans (0.5); row - /guides/401k-calculator-with-employer-match (0.5); row - /guides/401k-paycheck-impact-calculator (0.5); row - /guides/how-long-will-my-401k-last (0.5); row - /guides/401k-calculator-if-i-stop-contributing (0.5); row - /guides/401k-rule-of-55 (0.5); row - /guides/401k-vesting-schedule-calculator (0.5); row - /guides/401k-contribution-limits-over-50-catch-up (0.5); row - /guides/401k-tax-savings-calculator (0.5); row - /guides/solo-401k-calculator (0.5); row - /guides/401k-calculator-inflation-adjusted (0.5); row - /guides/401k-rmd-calculator (0.5); row - /guides/best-401k-calculator (0.5); row - /guides/401k-calculator-by-age (0.5); row - /guides/loan-payoff-lump-sum-calculator (0.5); row - /guides/biweekly-payment-payoff-calculator (0.5)
+
+### /guides/401k-vesting-schedule-calculator  — row - · create new content
+keyword: 401k vesting calculator
+reader question (new page intent): Vesting
+lookup terms: 401k vesting schedule   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms: none
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/401k-contribution-limits-over-50-catch-up  — row - · create new content
+keyword: how much can i put in my 401k if i am over 50; catch up
+reader question (new page intent): Over 50 limits
+lookup terms: 401k contribution over v50 catch up put if am   format cues: limits
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-15-trend-lane-c.md [exclusions] - 401k contribution roth vs traditional / roth or regular 401k: DROP, exist (/compare/roth-401k-vs-traditional-401k, /roth-vs-traditional-401k-calculator, /compare/401k-vs-roth-ira).
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent plus fresh news (IRS IR-2026-136, Nov 12 2026). lookup: /guides/401k-contribution-limits-2026 and /guides/ira-contribution-limits-2026 serve a 2026-limits reader, not a 2027 one; /compare/tsp-vs-40
+- 2026-11-16-xtrends.md [table] | Inbound path: /guides/401k-contribution-limits-2026 has no pointer to the 2027 figures that IRS announced Nov 12 2026 (lookup: PARENT/sibling year page). | Add a one-sentence pointer with anchor to the 2027 guide in th
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent (ENRICH requested by brief). lookup: /budget/aca-subsidy-calculator exact route exists, title 'ACA Subsidy Calculator for 2027 Marketplace Premiums'; gap: 0 mentions of bronze, enhanced subsidies, 
+- 2026-11-16-xtrends.md [table] | Inbound path: /retirement/401k-calculator/ shows contribution rates but not the 2027 cap IRS announced Nov 12 2026. | Add an inbound link to the 2027 limits guide beside the calculator's contribution-limit discussion (
+- 2026-11-17-xtrends.md [table] | Lens 1 direct intent plus news-driven (Chase outage Nov 16 2026; NBC News and Fortune). lookup: no match. Autocomplete bands (estimate, NOT measured): chase late fee refund 500-5000/mo, chase overdraft fee refund 500-5
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/401k-tax-savings-calculator  — row - · create new content
+keyword: 401k calculator tax savings; taxes
+reader question (new page intent): tax savings from 401k
+lookup terms: 401k tax saving taxe   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/401k-loan-rules  [in sitemap · src/data/guides.ts · topic match 0.5 on 401k tax]
+    title: 401(k) Loan Rules: Limits, Repayment Terms, and Default
+    desc:  Learn 401(k) loan rules, borrowing limits up to $50,000, 5-year repayment terms, and tax consequences if a plan loan is treated as a distribution.
+- /guides/401k-beneficiary-rules  [in sitemap · src/data/guides.ts · topic match 0.5 on 401k taxe]
+    title: What Happens to a 401(k) When You Die: Beneficiary Rules
+    desc:  401(k) beneficiary rules: the SECURE Act 10-year rule for non-spouse heirs, the spousal rollover option, and how taxes work on an inherited 401(k).
+- /guides/custodial-account-taxes-kiddie-tax  [in sitemap · src/data/guides.ts · topic match 0.5 on tax taxe]
+    title: Custodial Account Taxes: How the Kiddie Tax Works
+    desc:  How custodial account taxes work and how the kiddie tax hits a child's unearned income in 2025 — brackets, filing rules, and planning tips.
+- /guides/senior-deduction-social-security  [in sitemap · src/data/guides.ts · topic match 0.5 on tax taxe]
+    title: Social Security Tax Deduction for Seniors (2026)
+    desc:  Learn how the new Social Security tax deduction for seniors works, who qualifies for up to $6,000, and how benefits are taxed in 2026.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-10-trend-lane-c.md [exclusions] - standalone utma page: DROP, exists (guides/utma-custodial-account-explained, compare/utma-vs-ugma, 529-vs-utma, custodial-roth-ira-vs-utma, trump-account-vs-custodial-account, how-to-open-a-custodial-brokerage-account-
+- 2026-11-13-trend-lane-c.md [exclusions] - utma standalone page and UTMA tax cluster: DROP, exist (utma explained guide, utma-vs-ugma, 529-vs-utma, custodial-account-taxes-kiddie-tax).
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'paycheck tax calculator' 18,100 (KD 65), salary take home calculator 6,600 (KD 62), after tax income calculator 9,900 (KD 70), post tax income calculator 8,100 (KD 34); measured 
+- 2026-11-15-trend-lane-c.md [exclusions] - utma standalone page and UTMA tax cluster: DROP, exist (utma explained guide, utma-vs-ugma, 529-vs-utma, custodial-account-taxes-kiddie-tax).
+- 2026-11-16-comparison.md [table] | lookup: /compare/annuity-vs-cd and /compare/pension-vs-annuity - different pairings. Lens 1 direct intent (brief candidate 6). "annuity vs 401k" 1,600/mo KD 24 SEMRUSH; no page compares the two; SERP winnable. | Create
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'tenants in common vs joint tenancy': 9,900/mo KD 5 (DataForSEO 2026-11-23, us); variant 'tenants in common vs joint tenants' 9,900 KD 7. lookup: no same-intent page; No existing
+Commits naming the topic: none
+Same run overlap: row - /guides/social-security-take-home-after-taxes (0.5)
+
+### /guides/solo-401k-calculator  — row - · create new content
+keyword: 401k calculator solo; self employed
+reader question (new page intent): Solo 401k limit
+lookup terms: solo 401k self employed   format cues: calculator limits
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/sep-ira-vs-solo-401k  [in sitemap · src/data/comparisons.ts · topic match 1.0 on solo 401k self employed]
+    title: SEP-IRA vs Solo 401(k): 2025 Guide for the Self-Employed
+    desc:  SEP-IRA vs Solo 401(k): the Solo 401(k) lets you save more at low income and offers Roth and loans. See 2025 IRS limits, rules, and how to choose.
+- /compare/solo-401k-vs-simple-ira  [in sitemap · src/data/comparisons.ts · topic match 0.5 on solo 401k]
+    title: Solo 401(k) vs SIMPLE IRA: The 2025 Guide for Owners
+    desc:  Solo 401(k) vs SIMPLE IRA compared: 2025 contribution limits, employee eligibility, admin work, and loans, so you know which plan fits your business.
+- /guides/self-employed-tax-deductions  [in sitemap · src/data/guides-self-employed.ts · topic match 0.5 on self employed]
+    title: Self-Employed Tax Deductions: The Schedule C List
+    desc:  A practical list of self-employed tax deductions by Schedule C category, the ordinary-and-necessary test, and an honest answer to 'write off everything'.
+- /roundup/best-retirement-accounts-for-self-employed  [in sitemap · src/data/roundups.ts · topic match 0.5 on self employed]
+    title: Best Retirement Accounts for Self-Employed (2026)
+    desc:  Compare the best retirement accounts for self-employed in 2026: Solo 401(k), SEP IRA, SIMPLE IRA, and Roth IRA. Find the right account for your tax situation.
+- /roundup/best-mileage-tracker-apps  [in sitemap · src/data/roundups-self-employed.ts · topic match 0.5 on self employed]
+    title: Best Mileage Tracker Apps for 2026
+    desc:  Compare the best mileage tracker apps for 2026 on free-tier limits, automatic tracking, and price — plus the break-even math on whether paying is worth it.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-09-05.md [exclusions] - **A "Solo 401(k) vs SEP IRA" subsection on `/roundup/best-retirement-accounts-for-self-employed/`** — DROPPED: already shipped (`src/data/roundups.ts:2094`), including the ~$130k net-income crossover verdict and a seco
+- 2026-10-11-tool-usage.md [table] | 6 | Lens 1 (tool usage, mileage-deduction — 4 people / 67 views). Persona: self-employed delivery driver on a phone, 17,600 business miles. Walkthrough completed the job cleanly (deduction $13,054, "standard mileage wi
+- 2026-10-11-tool-usage.md [table] | 9 | Lens 2 (adjacent to mileage persona — the employee side of the same mileage). Cluster "mileage reimbursement": `mileage reimbursement calculator` 6,600/mo KD 9; `irs mileage reimbursement calculator` 1,300 KD 8; `c
+- 2026-10-14-tool-usage.md [table] | 5 | Lens 1 (tool usage, mileage-deduction — 22 people, 324 views). Secondary persona (W-2 employee who drives for work): result says "Self-employment tax saved $1,178" — quote: "I'm not self-employed. Can I even deduct
+- 2026-10-19-competitor.md [table] | 1 | Lens 1 direct (NerdWallet SDIRA page). Autocomplete: what is a self directed ira; what can self directed ira invest in; how are self directed iras taxed; what companies offer self directed ira. No tool volume. look
+- 2026-11-15-trend-lane-c.md [exclusions] - solo 401k loan calculator: DROP, exists; /retirement/401k-loan-calculator/ has a solo section and FAQ on the same engine; dedicated slug solo-401k-loan-calculator would near-duplicate a 20/mo intent.
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/401k-calculator-inflation-adjusted  — row - · create new content
+keyword: 401k calculator adjusted for inflation; do 401k calculators account for inflation
+reader question (new page intent): Inflation
+lookup terms: 401k inflation adjusted calculator account   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-26-trend-lane-c.md [exclusions] - will online / regular vs roth 401k / best lenders / living trust / financial calculators online / nerdwallet calculators: ledger 2026-10-22 and 10-23, trends.md rows 4, 6, 8. DROPPED (exists).
+- 2026-10-28-trend-lane-c.md [exclusions] - /retirement/roth-vs-traditional-401k-calculator (1,300/mo KD 0): DROP. /roth-vs-traditional-401k-calculator already exists (calculators.ts) with the same keyword.
+- 2026-10-28-trend-lane-c.md [exclusions] - will online / roth 401k variants / calculators / lenders / living trust / coast fire / index funds: exist (ledger 2026-10-22 to 10-27).
+- 2026-10-29-trend-lane-c.md [exclusions] - free-online-will / are-online-wills-legal: DROP, 2026-10-28 disposition holds. will online, roth 401k variants, trump account vs brokerage, lenders, living trust: exist (ledger 2026-10-22 to 10-28).
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent plus fresh news (IRS IR-2026-136, Nov 12 2026). lookup: /guides/401k-contribution-limits-2026 and /guides/ira-contribution-limits-2026 serve a 2026-limits reader, not a 2027 one; /compare/tsp-vs-40
+- 2026-11-23-xtrends.md [exclusions] - New-page candidates /calculators/401k-market-drop-calculator and /guides/gta-6-playstation-refund: not created; prefer enrichment per instruction.
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/401k-rmd-calculator  — row - · create new content
+keyword: what is rmd for 401k calculator
+reader question (new page intent): RMD
+lookup terms: 401k rmd   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /retirement/401k-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 0.5 on 401k · same format: calculator]
+    title: 401k Calculator: How Much You'll Have at Retirement
+    desc:  See how much your 401(k) could be worth at retirement. Enter your balance, contributions, employer match, and expected return for a free projection.
+- /retirement/rmd-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 0.5 on rmd · same format: calculator]
+    title: RMD Calculator: Required Minimum Distribution 2026
+    desc:  Free RMD calculator finds your required minimum distribution. See how much you must withdraw from your IRA or 401(k) at age 73 and avoid the penalty.
+- /retirement/401k-loan-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 0.5 on 401k · same format: calculator]
+    title: 401(k) Loan Calculator for Your Maximum Loan and Payment
+    desc:  Use this 401(k) loan calculator to find your largest new loan and payment. Enter your vested balance, existing loans, past loan peak, rate and repayment term.
+- /compare/annuity-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k]
+    title: Annuity vs 401(k): They Solve Different Retirement Problems
+    desc:  Annuity vs 401k compares an employer retirement plan with an insurance contract, including the 2026 deferral limit, possible match, income and withdrawal costs.
+- /compare/401k-vs-529  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k]
+    title: 401k vs 529: How to Choose in 2026
+    desc:  401(k) vs 529 on 2026 contribution limits, tax treatment, penalties for non-qualified use, and the 529 to Roth IRA rollover rules.
+- /compare/pension-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k]
+    title: Pension vs 401(k): Key Differences (2025)
+    desc:  Pension vs 401(k): a pension pays guaranteed lifetime income and the employer takes the risk; a 401(k) is your portable, market-based balance instead.
+- /compare/403b-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k]
+    title: 403(b) vs 401(k): What's the Real Difference in 2026?
+    desc:  403(b) vs 401(k) compared: who can offer each, 2026 contribution limits, the 403(b)'s 15-year catch-up, fees, and which is riskier for your money.
+- /compare/tsp-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on 401k]
+    title: TSP vs 401(k): Which Retirement Plan Wins in 2026?
+    desc:  TSP vs 401(k) compared: agency/employer match, fund menu, fees, and the unique G Fund — see which is better for federal employees and military.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-16-xtrends.md [table] | Inbound path: /guides/401k-contribution-limits-2026 has no pointer to the 2027 figures that IRS announced Nov 12 2026 (lookup: PARENT/sibling year page). | Add a one-sentence pointer with anchor to the 2027 guide in th
+- 2026-11-16-xtrends.md [table] | Inbound path: /compare/tsp-vs-401k discusses TSP limits but has no link to the new annual-limit reference. | Add an inbound link to the 2027 limits guide where TSP and 401(k) deferral limits are discussed (link-only) |
+- 2026-11-16-xtrends.md [table] | Inbound path: /retirement/401k-calculator/ shows contribution rates but not the 2027 cap IRS announced Nov 12 2026. | Add an inbound link to the 2027 limits guide beside the calculator's contribution-limit discussion (
+- 2026-11-23-trend-lane-c.md [exclusions] - 401k roth traditional: covered by compare/roth-401k-vs-traditional-401k.
+- 2026-11-23-xtrends.md [table] | Lens 1 direct intent + news-driven (brief bullet 1; X posts about 401(k) drops rose after the Nov 20 market close, per brief, unverified). Autocomplete (estimate, NOT measured, no provider keys): 'should i sell my 401k
+- 2026-11-23-xtrends.md [exclusions] - New-page candidates /calculators/401k-market-drop-calculator and /guides/gta-6-playstation-refund: not created; prefer enrichment per instruction.
+Commits naming the topic: none
+Same run overlap: row - /guides/401k-calculator-with-employer-match (0.5); row - /guides/401k-paycheck-impact-calculator (0.5); row - /guides/how-long-will-my-401k-last (0.5); row - /guides/401k-calculator-if-i-stop-contributing (0.5); row - /guides/401k-rule-of-55 (0.5); row - /guides/401k-loan-calculator (0.5); row - /guides/401k-vesting-schedule-calculator (0.5); row - /guides/401k-contribution-limits-over-50-catch-up (0.5); row - /guides/401k-tax-savings-calculator (0.5); row - /guides/solo-401k-calculator (0.5); row - /guides/401k-calculator-inflation-adjusted (0.5); row - /guides/best-401k-calculator (0.5); row - /guides/401k-calculator-by-age (0.5)
+
+### /guides/best-401k-calculator  — row - · create new content
+keyword: which 401k calculator is best; most accurate; is 401k calculator accurate
+reader question (new page intent): Which is best
+lookup terms: 401k most accurate   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms: none
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/401k-calculator-by-age  — row - · create new content
+keyword: 401k calculator by age; how much should i have in 401k
+reader question (new page intent): benchmarks
+lookup terms: 401k by age have   format cues: benchmarks calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/college-savings-by-age  [in sitemap · src/data/guides.ts · topic match 0.75 on by age have]
+    title: How Much You Should Save for College by Your Child's Age
+    desc:  See how much to have in a college savings account by age 5, 10, 15, and 18, for both in-state public and private targets, plus what to do if you're behind.
+- /retirement/401k-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 0.5 on 401k have · same format: calculator]
+    title: 401k Calculator: How Much You'll Have at Retirement
+    desc:  See how much your 401(k) could be worth at retirement. Enter your balance, contributions, employer match, and expected return for a free projection.
+- /net-worth/net-worth-by-age-calculator  [in sitemap · src/data/spokes-net-worth.ts · topic match 0.5 on by age · same format: calculator]
+    title: Net Worth by Age Calculator: Compare to U.S. Median
+    desc:  Free net worth by age calculator. Compare your assets minus debts to the 2022 Federal Reserve median net worth for your age bracket.
+- /guides/how-much-do-i-need-to-retire-by-age  [in sitemap · src/data/guides.ts · topic match 0.5 on by age]
+    title: How Much Do I Need to Retire? By Age and Income
+    desc:  How much you need to retire depends on spending, not age alone. See what changes at 50, 55, 60, 62, and 65, plus Fidelity's income-based savings multiples.
+- /guides/asset-allocation-by-age  [in sitemap · src/data/guides.ts · topic match 0.5 on by age]
+    title: Asset Allocation by Age: A Decade-by-Decade Guide
+    desc:  Asset allocation by age: how a typical stock/bond/cash split shifts from your 20s through retirement, with the \"110 minus age\" rule and real caveats.
+- /guides/how-to-check-your-401k-balance  [in sitemap · src/data/guides.ts · topic match 0.5 on 401k by]
+    title: How to Check Your 401k Balance: Step-by-Step Guide
+    desc:  Learn how to check your 401k balance for current and old accounts, search federal registries for lost funds, and verify your workplace savings.
+- /guides/coast-fire-number-by-age  [in sitemap · src/data/guides.ts · topic match 0.5 on by age · same format: benchmarks]
+    title: Coast FIRE Number by Age: Target Benchmarks
+    desc:  See your coast FIRE number by age across spending targets from $40,000 to $100,000, learn how expected returns change the total, and test your own numbers.
+- /guides/average-hsa-balance-by-age  [in sitemap · src/data/guides.ts · topic match 0.5 on by age · same format: benchmarks]
+    title: Average HSA Balance by Age: 2026 Benchmarks and Data
+    desc:  See average HSA balances by age from real industry data, and how the invest-and-wait strategy changes the math.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-13-trend-lane-c.md [exclusions] - 401(k) balance by age enrichment: HELD, by-age figures not groundable from a consistent primary source; not DROPPED.
+- 2026-11-15-trend-lane-c.md [exclusions] - 401(k) balance by age enrichment: HELD, by-age figures not groundable from a consistent primary source; not DROPPED.
+- 2026-11-16-comparison.md [table] | lookup: /compare/annuity-vs-cd and /compare/pension-vs-annuity - different pairings. Lens 1 direct intent (brief candidate 6). "annuity vs 401k" 1,600/mo KD 24 SEMRUSH; no page compares the two; SERP winnable. | Create
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent plus fresh news (IRS IR-2026-136, Nov 12 2026). lookup: /guides/401k-contribution-limits-2026 and /guides/ira-contribution-limits-2026 serve a 2026-limits reader, not a 2027 one; /compare/tsp-vs-40
+- 2026-11-23-trend-lane-c.md [exclusions] - 401k roth traditional: covered by compare/roth-401k-vs-traditional-401k.
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/debt-avalanche-vs-snowball-calculator  — row - · create new content
+keyword: debt payoff calculator avalanche vs snowball; debt payoff calculator snowball
+reader question (new page intent): Avalanche vs snowball
+lookup terms: debt avalanche snowball payoff   format cues: calculator vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/debt-snowball-vs-avalanche  [PARENT PAGE · in sitemap · src/data/comparisons.ts · topic match 0.75 on debt avalanche snowball · same format: vs]
+    title: Debt Snowball vs Avalanche: Which Pays Off Faster?
+    desc:  Debt snowball vs avalanche compared: the snowball clears your smallest balance first, the avalanche targets your highest APR to pay less interest.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-10.md [table] | Lens 3 (versus). `debt settlement vs bankruptcy` (480, KD 5, CPC $23.14); 5 live Autocomplete completions on the head (question-mode sweep 0); PAA adjacent "What's the difference between debt consolidation and debt set
+- 2026-10-14-tool-usage.md [table] | 7 | Lens C (monetize, mortgage). Persona has a payoff date + interest-saved number; next job = decide prepaying vs investing (or, for a new purchase, the buying process). Verdict fit — YMYL → books. Pick types: debt-pa
+- 2026-10-16-competitor.md [exclusions] - Small business lender reviews — vendor review hub, no sourced facts (skipped-low-value). Credit card debt payoff — /guides/how-to-pay-off-debt and /guides/how-long-to-pay-off-credit-card (skipped-duplicate). Grad schoo
+- 2026-10-21-tool-usage.md [table] | 10 | Lens C (monetize, interest-per-day). Result is a daily cost (debt) or daily earnings (savings); APR ≥ 10% signals debt. Verdict fit — YMYL → books. Pick types: debt payoff plan, automated saving system, index-inve
+- 2026-10-21-tool-usage.md [table] | 11 | Lens C (monetize, net-worth). Result is a liquid figure + an SCF age benchmark. Verdict fit — YMYL → books. Pick types: household wealth research, debt payoff plan, index-investing guide. | `ToolPicks` (tool "net-
+- 2026-10-21-tool-usage.md [table] | 13 | Lens C (monetize, auto-loan). Result = a real payment and the interest an extra payment saves. Verdict fit — YMYL → books. Pick types: debt payoff plan, PF system with a car-buying chapter, spending-values book. |
+Commits naming the topic: none
+Same run overlap: row - /guides/debt-payoff-vs-investing (0.5); row - /guides/debt-payoff-spreadsheet-template (0.5); row - /guides/debt-payoff-planner-apps (0.5); row - /guides/biweekly-payment-payoff-calculator (0.5)
+
+### /guides/debt-payoff-vs-investing  — row - · create new content
+keyword: pay off debt vs invest calculator; debt payoff vs investing calculator
+reader question (new page intent): Pay debt or invest
+lookup terms: debt payoff investing pay off invest   format cues: calculator vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/pay-off-debt-or-invest  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.67 on debt pay off invest]
+    title: Pay Off Debt or Invest? A Simple Decision Framework
+    desc:  Deciding to pay off debt or invest? Compare your debt's interest rate to your expected return. Grab the 401(k) match, then kill high-rate debt first.
+- /guides/how-to-pay-off-debt  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.5 on debt pay off]
+    title: How to Pay Off Debt the Fastest Way for Your Situation
+    desc:  Learn how to pay off debt step by step, compare snowball vs. avalanche strategies, avoid minimum payment traps, and explore consolidation or relief.
+- /compare/pay-off-mortgage-vs-invest  [in sitemap · src/data/comparisons.ts · topic match 0.5 on pay off invest · same format: vs]
+    title: Pay Off Mortgage or Invest: How to Choose Your Path
+    desc:  Deciding whether to pay off mortgage or invest? We compare guaranteed returns, tax rules under IRS Pub 936, liquidity, and what to fund first.
+- /auto-loan/early-payoff-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.5 on payoff pay off · same format: calculator]
+    title: Pay Off Car Loan Early Calculator: Interest & Time Saved
+    desc:  Use our auto loan early payoff calculator to see how extra payments cut your interest, shorten your payoff date, and save you money. Free instant results.
+- /pay-off-mortgage-or-invest-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on pay off invest · same format: calculator]
+    title: Pay Off Mortgage or Invest Calculator: Break-Even Return
+    desc:  Pay off mortgage or invest calculator. Enter your loan, extra cash, return and tax rate to see which path ends ahead after tax and your break-even return.
+- /compare/debt-snowball-vs-avalanche  [in sitemap · src/data/comparisons.ts · topic match 0.5 on debt pay off · same format: vs]
+    title: Debt Snowball vs Avalanche: Which Pays Off Faster?
+    desc:  Debt snowball vs avalanche compared: the snowball clears your smallest balance first, the avalanche targets your highest APR to pay less interest.
+- /guides/pay-off-mortgage-early-or-invest  [in sitemap · src/data/guides.ts · topic match 0.5 on pay off invest]
+    title: Pay Off Mortgage Early or Invest at a 3% or 7.5% Rate
+    desc:  Pay off mortgage early or invest? At a 3% rate, investing $500 a month came out ahead in the example. At 7.5%, prepaying won at both 5% and 7% returns.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet robo-advisors vs financial advisors) plus Lens 3 comparison format. Head 'robo advisor vs financial advisor': autocomplete estimate 75-750/mo, NOT measured. lookup: 
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet investment management and AUM, two candidates, one reader decision). Heads 'what is investment management' 500-5000/mo and 'what is aum in finance' 250-2500/mo, esti
+- 2026-11-16-comparison.md [table] | lookup: /roundup/best-cash-back-credit-cards - many-card list, not this pairing. Lens 1 direct intent (brief candidate 8). "chase freedom flex vs unlimited" 720/mo KD 36 SEMRUSH; no head-to-head page; SERP winnable. | 
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent (ENRICH requested by brief). lookup: /budget/aca-subsidy-calculator exact route exists, title 'ACA Subsidy Calculator for 2027 Marketplace Premiums'; gap: 0 mentions of bronze, enhanced subsidies, 
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent plus release news (Google blog Nov 13 2026). lookup: no match in repo, sitemap or past charts; /roundup/best-budgeting-apps is an app ranking (different reader goal). Autocomplete question sweep ru
+- 2026-11-23-trend-lane-c.md [table] | [coverage / top-10] Lane B: 'rule of 78 calculator' (0 clicks, 3 impr, pos 64.33) is UNCOVERED. Lens 1 direct intent; Lens 2 cluster 'Rule of 78 loan interest': rule of 78 1,000/mo; what is the rule of 78 210; rule of 
+Commits naming the topic: none
+Same run overlap: row - /guides/pay-off-mortgage-early-or-invest (0.5); row - /guides/how-long-to-pay-off-debt (0.5); row - /guides/which-debt-to-pay-off-first (0.5)
+
+### /guides/debt-payoff-spreadsheet-template  — row - · create new content
+keyword: debt payoff calculator excel; google sheets; spreadsheet template
+reader question (new page intent): Debt payoff spreadsheet
+lookup terms: debt payoff spreadsheet excel google sheet   format cues: calculator template
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/retirement-calculator-spreadsheet-template  [in sitemap · src/data/guides.ts · topic match 0.5 on spreadsheet google sheet · same format: calculator template]
+    title: Retirement Calculator Spreadsheet Template (Google Sheets)
+    desc:  Build a retirement calculator spreadsheet template in Google Sheets or Excel. Copy the compound growth and safe withdrawal rate formulas step by step.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-16-competitor.md [exclusions] - Small business lender reviews — vendor review hub, no sourced facts (skipped-low-value). Credit card debt payoff — /guides/how-to-pay-off-debt and /guides/how-long-to-pay-off-credit-card (skipped-duplicate). Grad schoo
+- 2026-10-21-tool-usage.md [table] | 10 | Lens C (monetize, interest-per-day). Result is a daily cost (debt) or daily earnings (savings); APR ≥ 10% signals debt. Verdict fit — YMYL → books. Pick types: debt payoff plan, automated saving system, index-inve
+- 2026-10-21-tool-usage.md [table] | 11 | Lens C (monetize, net-worth). Result is a liquid figure + an SCF age benchmark. Verdict fit — YMYL → books. Pick types: household wealth research, debt payoff plan, index-investing guide. | `ToolPicks` (tool "net-
+- 2026-10-21-tool-usage.md [table] | 13 | Lens C (monetize, auto-loan). Result = a real payment and the interest an extra payment saves. Verdict fit — YMYL → books. Pick types: debt payoff plan, PF system with a car-buying chapter, spending-values book. |
+- 2026-11-04-tool-usage.md [table] | 14 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage /mortgage/payoff-calculator/). 'biweekly mortgage calculator' 1,900/mo KD 29, 'bi weekly mortgage calculator' 720, 'biweekly mortga
+- 2026-11-04-tool-usage.md [table] | 15 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage). 'pay off mortgage or invest calculator' 260/mo KD 17, 'pay off mortgage vs invest calculator' 260 KD 11, 'should i pay off my mor
+Commits naming the topic: none
+Same run overlap: row - /guides/compound-interest-formula-excel-google-sheets (0.5)
+
+### /guides/debt-payoff-planner-apps  — row - · create new content
+keyword: debt payoff planner vs undebt it vs ynab; debt payoff planner app; is debt payoff planner worth it
+reader question (new page intent): Best debt payoff apps
+lookup terms: debt payoff planner app undebt ynab   format cues: review vs
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-21-tool-usage.md [table] | 10 | Lens C (monetize, interest-per-day). Result is a daily cost (debt) or daily earnings (savings); APR ≥ 10% signals debt. Verdict fit — YMYL → books. Pick types: debt payoff plan, automated saving system, index-inve
+- 2026-10-21-tool-usage.md [table] | 11 | Lens C (monetize, net-worth). Result is a liquid figure + an SCF age benchmark. Verdict fit — YMYL → books. Pick types: household wealth research, debt payoff plan, index-investing guide. | `ToolPicks` (tool "net-
+- 2026-10-21-tool-usage.md [table] | 13 | Lens C (monetize, auto-loan). Result = a real payment and the interest an extra payment saves. Verdict fit — YMYL → books. Pick types: debt payoff plan, PF system with a car-buying chapter, spending-values book. |
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-financial-plan). Head 'how to make a financial plan': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/financial-planning-calcu
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet robo-advisors vs financial advisors) plus Lens 3 comparison format. Head 'robo advisor vs financial advisor': autocomplete estimate 75-750/mo, NOT measured. lookup: 
+- 2026-11-23-trend-lane-c.md [table] | [coverage / top-10] Lane B: 'rule of 78 calculator' (0 clicks, 3 impr, pos 64.33) is UNCOVERED. Lens 1 direct intent; Lens 2 cluster 'Rule of 78 loan interest': rule of 78 1,000/mo; what is the rule of 78 210; rule of 
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/how-long-to-pay-off-debt  — row - · create new content
+keyword: how long to pay off debt calculator; pay off debt in a year calculator
+reader question (new page intent): How long to pay off debt
+lookup terms: long pay off debt year   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/how-to-pay-off-debt  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.6 on pay off debt]
+    title: How to Pay Off Debt the Fastest Way for Your Situation
+    desc:  Learn how to pay off debt step by step, compare snowball vs. avalanche strategies, avoid minimum payment traps, and explore consolidation or relief.
+- /guides/pay-off-debt-or-invest  [in sitemap · src/data/guides.ts · topic match 0.6 on pay off debt]
+    title: Pay Off Debt or Invest? A Simple Decision Framework
+    desc:  Deciding to pay off debt or invest? Compare your debt's interest rate to your expected return. Grab the 401(k) match, then kill high-rate debt first.
+- /compare/debt-snowball-vs-avalanche  [in sitemap · src/data/comparisons.ts · topic match 0.6 on pay off debt]
+    title: Debt Snowball vs Avalanche: Which Pays Off Faster?
+    desc:  Debt snowball vs avalanche compared: the snowball clears your smallest balance first, the avalanche targets your highest APR to pay less interest.
+- /guides/how-long-to-pay-off-credit-card  [in sitemap · src/data/guides.ts · topic match 0.6 on long pay off]
+    title: How Long to Pay Off Credit Card: The Real Math
+    desc:  How long to pay off a credit card depends on your balance, APR, and payment. See the payoff math, why minimum payments trap you, and how to pay faster.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-12-xtrends.md [table] | Lens 1 direct intent + news-driven (DOL promoted the final rule on X Nov 10 during open enrollment; Federal Register 2026-22306 published 2026-11-02). 'pbm fee disclosure' 500-5000/mo, 'dol pbm rule' 500-5000/mo, 'pbm 
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'salary calculator' 339,600 combined vol (primary 246,000), KD 29, 2 competitors (calculator.net, smartasset.com; measured, SEMRUSH/DataForSEO intake 2026-11-15) plus annual salar
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'paycheck tax calculator' 18,100 (KD 65), salary take home calculator 6,600 (KD 62), after tax income calculator 9,900 (KD 70), post tax income calculator 8,100 (KD 34); measured 
+- 2026-11-16-comparison.md [table] | lookup: /roundup/best-cash-back-credit-cards - many-card list, not this pairing. Lens 1 direct intent (brief candidate 8). "chase freedom flex vs unlimited" 720/mo KD 36 SEMRUSH; no head-to-head page; SERP winnable. | 
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent (ENRICH requested by brief). lookup: /budget/aca-subsidy-calculator exact route exists, title 'ACA Subsidy Calculator for 2027 Marketplace Premiums'; gap: 0 mentions of bronze, enhanced subsidies, 
+- 2026-11-23-trend-lane-c.md [table] | [coverage / top-10] Lane B: 'rule of 78 calculator' (0 clicks, 3 impr, pos 64.33) is UNCOVERED. Lens 1 direct intent; Lens 2 cluster 'Rule of 78 loan interest': rule of 78 1,000/mo; what is the rule of 78 210; rule of 
+Commits naming the topic: none
+Same run overlap: row - /guides/debt-payoff-vs-investing (0.6); row - /guides/which-debt-to-pay-off-first (0.6)
+
+### /guides/which-debt-to-pay-off-first  — row - · create new content
+keyword: which debt to pay off first calculator
+reader question (new page intent): Which debt first
+lookup terms: debt pay off first   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/how-to-pay-off-debt  [PARENT PAGE · in sitemap · src/data/guides.ts · topic match 0.75 on debt pay off]
+    title: How to Pay Off Debt the Fastest Way for Your Situation
+    desc:  Learn how to pay off debt step by step, compare snowball vs. avalanche strategies, avoid minimum payment traps, and explore consolidation or relief.
+- /guides/pay-off-debt-or-invest  [in sitemap · src/data/guides.ts · topic match 0.75 on debt pay off]
+    title: Pay Off Debt or Invest? A Simple Decision Framework
+    desc:  Deciding to pay off debt or invest? Compare your debt's interest rate to your expected return. Grab the 401(k) match, then kill high-rate debt first.
+- /compare/debt-snowball-vs-avalanche  [in sitemap · src/data/comparisons.ts · topic match 0.75 on debt pay off]
+    title: Debt Snowball vs Avalanche: Which Pays Off Faster?
+    desc:  Debt snowball vs avalanche compared: the snowball clears your smallest balance first, the avalanche targets your highest APR to pay less interest.
+- /auto-loan/early-payoff-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.5 on pay off · same format: calculator]
+    title: Pay Off Car Loan Early Calculator: Interest & Time Saved
+    desc:  Use our auto loan early payoff calculator to see how extra payments cut your interest, shorten your payoff date, and save you money. Free instant results.
+- /pay-off-mortgage-or-invest-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on pay off · same format: calculator]
+    title: Pay Off Mortgage or Invest Calculator: Break-Even Return
+    desc:  Pay off mortgage or invest calculator. Enter your loan, extra cash, return and tax rate to see which path ends ahead after tax and your break-even return.
+- /compare/pay-off-mortgage-vs-invest  [in sitemap · src/data/comparisons.ts · topic match 0.5 on pay off]
+    title: Pay Off Mortgage or Invest: How to Choose Your Path
+    desc:  Deciding whether to pay off mortgage or invest? We compare guaranteed returns, tax rules under IRS Pub 936, liquidity, and what to fund first.
+- /guides/how-to-deal-with-medical-debt  [in sitemap · src/data/guides.ts · topic match 0.5 on debt pay]
+    title: How to Deal with Medical Debt You Cannot Afford to Pay
+    desc:  Learn how to deal with medical debt. Review billing errors, request hospital charity care, negotiate balances, and understand your credit reporting protections.
+- /guides/how-long-to-pay-off-credit-card  [in sitemap · src/data/guides.ts · topic match 0.5 on pay off]
+    title: How Long to Pay Off Credit Card: The Real Math
+    desc:  How long to pay off a credit card depends on your balance, APR, and payment. See the payoff math, why minimum payments trap you, and how to pay faster.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-12-xtrends.md [table] | Lens 1 direct intent + news-driven (DOL promoted the final rule on X Nov 10 during open enrollment; Federal Register 2026-22306 published 2026-11-02). 'pbm fee disclosure' 500-5000/mo, 'dol pbm rule' 500-5000/mo, 'pbm 
+- 2026-11-16-comparison.md [table] | lookup: /roundup/best-cash-back-credit-cards - many-card list, not this pairing. Lens 1 direct intent (brief candidate 8). "chase freedom flex vs unlimited" 720/mo KD 36 SEMRUSH; no head-to-head page; SERP winnable. | 
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent (ENRICH requested by brief). lookup: /budget/aca-subsidy-calculator exact route exists, title 'ACA Subsidy Calculator for 2027 Marketplace Premiums'; gap: 0 mentions of bronze, enhanced subsidies, 
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent plus release news (Google blog Nov 13 2026). lookup: no match in repo, sitemap or past charts; /roundup/best-budgeting-apps is an app ranking (different reader goal). Autocomplete question sweep ru
+- 2026-11-23-trend-lane-c.md [table] | [coverage / top-10] Lane B: 'rule of 78 calculator' (0 clicks, 3 impr, pos 64.33) is UNCOVERED. Lens 1 direct intent; Lens 2 cluster 'Rule of 78 loan interest': rule of 78 1,000/mo; what is the rule of 78 210; rule of 
+Commits naming the topic: none
+Same run overlap: row - /guides/pay-off-mortgage-early-or-invest (0.5); row - /guides/debt-payoff-vs-investing (0.75); row - /guides/how-long-to-pay-off-debt (0.75)
+
+### /guides/loan-payoff-lump-sum-calculator  — row - · create new content
+keyword: loan payoff calculator lump sum; early loan payoff calculator
+reader question (new page intent): Lump sum payoff effect
+lookup terms: loan payoff lump sum early   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /auto-loan/early-payoff-calculator  [PARENT PAGE · in sitemap · src/data/spokes-auto.ts · topic match 0.6 on loan payoff early · same format: calculator]
+    title: Pay Off Car Loan Early Calculator: Interest & Time Saved
+    desc:  Use our auto loan early payoff calculator to see how extra payments cut your interest, shorten your payoff date, and save you money. Free instant results.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-21-tool-usage.md [table] | 16 | Lens 2 → RECLASSIFIED by the duplicate-suppression gate (was create /per-diem-interest-calculator/). The interest-per-day card holder paying off on a date asks the payoff amount. `per diem interest calculator` **4
+- 2026-10-21-tool-usage.md [table] | Per diem interest / payoff amount | per diem interest calculator (480); payoff amount calculator (210); loan payoff calculator per diem (est.); How is per diem interest calculated on a mortgage? (PAA) | intent mismatch
+- 2026-11-04-tool-usage.md [table] | 14 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage /mortgage/payoff-calculator/). 'biweekly mortgage calculator' 1,900/mo KD 29, 'bi weekly mortgage calculator' 720, 'biweekly mortga
+- 2026-11-04-tool-usage.md [table] | 15 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage). 'pay off mortgage or invest calculator' 260/mo KD 17, 'pay off mortgage vs invest calculator' 260 KD 11, 'should i pay off my mor
+- 2026-11-04-tool-usage.md [table] | 17 | New route C2 needs inbound links from the existing payoff-or-invest guide and comparison. | Add one link sentence to /guides/pay-off-mortgage-early-or-invest/ ('What the Examples Leave Out') and to /compare/pay-of
+- 2026-11-23-trend-lane-c.md [table] | [coverage / top-10] Lane B: 'rule of 78 calculator' (0 clicks, 3 impr, pos 64.33) is UNCOVERED. Lens 1 direct intent; Lens 2 cluster 'Rule of 78 loan interest': rule of 78 1,000/mo; what is the rule of 78 210; rule of 
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/biweekly-payment-payoff-calculator  — row - · create new content
+keyword: debt payoff calculator biweekly; loan payoff calculator biweekly
+reader question (new page intent): Biweekly
+lookup terms: biweekly payment payoff debt loan   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /auto-loan/extra-payment-calculator  [in sitemap · src/data/spokes-auto.ts · topic match 0.6 on biweekly payment loan · same format: calculator]
+    title: Auto Loan Extra Payment Calculator: Biweekly vs Extra
+    desc:  Use this auto loan extra payment calculator to compare biweekly vs. extra monthly payments and see how much interest and time you save on your car loan.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | Mortgage prepayment schedules | biweekly mortgage calculator; bi weekly mortgage calculator; biweekly mortgage payment calculator | coverage gap (no biweekly tool) | none | create new content | /biweekly-mortgage-calcu
+- 2026-11-04-tool-usage.md [exclusions] - Inherited dead citation: CFPB biweekly Ask page on /mortgage/extra-payment-calculator/ now redirects to the CFPB mortgages hub; logged, not edited (outside reviewed scope).
+- 2026-11-09-trend-lane-c.md [exclusions] - auto-loan autocomplete questions ("how are auto loan payments calculated" etc.): covered by the /auto-loan/ hub howItWorks and /guides/how-long-should-a-car-loan-be; rate-lookup queries are not calculator intent.
+- 2026-11-15-keyword-gap.md [exclusions] - car loan calculator (450,000): NOT a new page; /auto-loan/ (Auto Loan Calculator, targetKeyword 'auto loan calculator', FAQ 'Is this the same as a car loan payment calculator?') plus 7 spokes already serve the intent. 
+- 2026-11-16-comparison.md [exclusions] - C11 debt consolidation vs balance transfer: DEFER - 210/mo KD 38, PARTIAL: section exists in src/data/guides.ts; balance-transfer-vs-personal-loan was dropped in cache 2026-10-19 for lack of sourced facts. Low volume a
+- 2026-11-23-trend-lane-c.md [table] | [coverage / top-10] Lane B: 'rule of 78 calculator' (0 clicks, 3 impr, pos 64.33) is UNCOVERED. Lens 1 direct intent; Lens 2 cluster 'Rule of 78 loan interest': rule of 78 1,000/mo; what is the rule of 78 210; rule of 
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/how-social-security-benefits-are-calculated  — row - · create new content
+keyword: how are social security benefits calculated; aime pia 35 years; highest 35 years
+reader question (new page intent): How is SS calculated
+lookup terms: social security benefit calculated aime pia v35 year highest   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 10 | elder-care (1 person, 3 uses, 16 views; low-use lane; data_days 27). Walkthrough: result prints '$$180,000'; the total shortfall uses start-year prices while the total cost inflates ($256,068 vs $270,891 on the sa
+- 2026-11-04-tool-usage.md [exclusions] - Next in line (specs, cap of 3 builds, 2 built): depreciation-recapture-calculator, 1031-exchange-calculator (prior specs); Social Security withholding (W-4V) estimator; capital loss carryover calculator; Florida homest
+- 2026-11-12-xtrends.md [table] | Lens 1 direct intent + news-driven (DOL promoted the final rule on X Nov 10 during open enrollment; Federal Register 2026-22306 published 2026-11-02). 'pbm fee disclosure' 500-5000/mo, 'dol pbm rule' 500-5000/mo, 'pbm 
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'paycheck tax calculator' 18,100 (KD 65), salary take home calculator 6,600 (KD 62), after tax income calculator 9,900 (KD 70), post tax income calculator 8,100 (KD 34); measured 
+- 2026-11-15-keyword-gap.md [exclusions] - Insurance (car, home, health, life, renters, travel, disability), credit cards, rates, Social Security, celebrity net worth, brand-navigational queries: adjacent-not-pursued or covered-partial per ledger; high KD, per-
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/when-to-take-social-security-62-67-70  — row - · create new content
+keyword: should i take social security at 62 calculator; when to take; 62 vs 70
+reader question (new page intent): When to claim
+lookup terms: take social security v62.67.70 at v62 v70   format cues: calculator vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /compare/social-security-at-62-vs-70  [PARENT PAGE · in sitemap · src/data/comparisons.ts · topic match 0.71 on social security at v62 v70 · same format: vs]
+    title: Social Security at 62 vs 70: How Claiming Age Shapes Checks
+    desc:  Comparing Social Security at 62 vs 70 shows how monthly checks, delayed retirement credits, and your lifespan determine the right claiming age.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 5 | social-security-taxable-benefits-calculator (46 people; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Eviden
+- 2026-11-04-tool-usage.md [exclusions] - Next in line (specs, cap of 3 builds, 2 built): depreciation-recapture-calculator, 1031-exchange-calculator (prior specs); Social Security withholding (W-4V) estimator; capital loss carryover calculator; Florida homest
+- 2026-11-06-trend-lane-c.md [table] | 1 | Lens 2 adjacent demand off top-10 "living trust services": "what is a living trust" 14,800 KD40, "how does a living trust work" 1,000 KD34. lookup: /guides/what-is-a-family-trust (exact-slug sibling; covers revocab
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'paycheck tax calculator' 18,100 (KD 65), salary take home calculator 6,600 (KD 62), after tax income calculator 9,900 (KD 70), post tax income calculator 8,100 (KD 34); measured 
+- 2026-11-15-keyword-gap.md [exclusions] - Insurance (car, home, health, life, renters, travel, disability), credit cards, rates, Social Security, celebrity net worth, brand-navigational queries: adjacent-not-pursued or covered-partial per ledger; high KD, per-
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/social-security-spousal-benefits-calculator  — row - · create new content
+keyword: social security calculator spousal benefits; for couples; when should spouse take
+reader question (new page intent): Spousal
+lookup terms: social security spousal benefit couple spouse take   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 4 | social-security-taxable-benefits-calculator (46 people, 51 uses, 109 views; data_days 27). Walkthrough: married-filing-separately-living-together prints 'above $0'; no hint on what counts as other income (Roth with
+- 2026-11-04-tool-usage.md [table] | 5 | social-security-taxable-benefits-calculator (46 people; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Eviden
+- 2026-11-04-tool-usage.md [exclusions] - Next in line (specs, cap of 3 builds, 2 built): depreciation-recapture-calculator, 1031-exchange-calculator (prior specs); Social Security withholding (W-4V) estimator; capital loss carryover calculator; Florida homest
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'paycheck tax calculator' 18,100 (KD 65), salary take home calculator 6,600 (KD 62), after tax income calculator 9,900 (KD 70), post tax income calculator 8,100 (KD 34); measured 
+- 2026-11-15-keyword-gap.md [exclusions] - Insurance (car, home, health, life, renters, travel, disability), credit cards, rates, Social Security, celebrity net worth, brand-navigational queries: adjacent-not-pursued or covered-partial per ledger; high KD, per-
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-
+Commits naming the topic: none
+Same run overlap: row - /guides/social-security-divorced-spouse-benefits (0.57)
+
+### /guides/social-security-while-working-earnings-test  — row - · create new content
+keyword: social security calculator while working; if i keep working; retire early
+reader question (new page intent): Earnings test
+lookup terms: social security while working earning test if keep retire early   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-09-competitor-9031ce2b2c89.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet what-is-a-financial-plan). Head 'how to make a financial plan': autocomplete estimate only, NOT measured (no provider keys). lookup: /guides/financial-planning-calcu
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'paycheck tax calculator' 18,100 (KD 65), salary take home calculator 6,600 (KD 62), after tax income calculator 9,900 (KD 70), post tax income calculator 8,100 (KD 34); measured 
+- 2026-11-15-keyword-gap.md [exclusions] - Insurance (car, home, health, life, renters, travel, disability), credit cards, rates, Social Security, celebrity net worth, brand-navigational queries: adjacent-not-pursued or covered-partial per ledger; high KD, per-
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent plus release news (Google blog Nov 13 2026). lookup: no match in repo, sitemap or past charts; /roundup/best-budgeting-apps is an app ranking (different reader goal). Autocomplete question sweep ru
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/social-security-with-fewer-than-35-years  — row - · create new content
+keyword: social security calculator less than 35 years; zero years
+reader question (new page intent): Fewer than 35 years
+lookup terms: social security fewer v35 year less zero   format cues: calculator
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 5 | social-security-taxable-benefits-calculator (46 people; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Eviden
+- 2026-11-04-tool-usage.md [exclusions] - Next in line (specs, cap of 3 builds, 2 built): depreciation-recapture-calculator, 1031-exchange-calculator (prior specs); Social Security withholding (W-4V) estimator; capital loss carryover calculator; Florida homest
+- 2026-11-10-search-gap.md [table] | Lens 1 direct intent (visitor searches on /, 2026-11-09 19:20 UTC: 'differences between simple ira and' then 'differences between simple ira and 401k', same session). Autocomplete (9/9 question completions, not measure
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'paycheck tax calculator' 18,100 (KD 65), salary take home calculator 6,600 (KD 62), after tax income calculator 9,900 (KD 70), post tax income calculator 8,100 (KD 34); measured 
+- 2026-11-15-keyword-gap.md [exclusions] - Insurance (car, home, health, life, renters, travel, disability), credit cards, rates, Social Security, celebrity net worth, brand-navigational queries: adjacent-not-pursued or covered-partial per ledger; high KD, per-
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-
+Commits naming the topic: none
+Same run overlap: row - /guides/how-social-security-benefits-are-calculated (0.57)
+
+### /guides/social-security-cola-calculator  — row - · create new content
+keyword: social security cola calculator
+reader question (new page intent): COLA
+lookup terms: social security cola   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /social-security-cola-calculator  [EXACT SLUG · in sitemap · (sitemap only) · title fetched live · topic match 1.0 on social security cola · same format: calculator]
+    title: Social Security COLA Calculator: Your 2027 Benefit at 3.6%
+    desc:  Free Social Security COLA calculator. Enter your monthly benefit to see your 2027 amount after the 3.6% raise, plus a chart of common benefit amounts.
+- /guides/2027-social-security-cola  [in sitemap · src/data/guides.ts · topic match 1.0 on social security cola]
+    title: 2027 Social Security COLA (Cost-of-Living Adjustment) Guide
+    desc:  The 2027 Social Security COLA (cost-of-living adjustment) is 3.6%, announced October 14, 2026. See what it adds to your check and how Part B affects it.
+- /guides/2027-ssdi-cola  [in sitemap · src/data/guides.ts · topic match 1.0 on social security cola]
+    title: Social Security COLA 2027 for Disability: SSDI Up 3.6%
+    desc:  The Social Security COLA 2027 for disability is a 3.6% cost-of-living adjustment. The average disabled-worker check rises from $1,642 to $1,701 in January.
+- /guides/social-security-changes-2027  [in sitemap · src/data/guides.ts · topic match 1.0 on social security cola]
+    title: Social Security Changes 2027 Listed Next to 2026 Figures
+    desc:  Social Security changes 2027: a 3.6% COLA, a $192,300 wage base and a $25,560 earnings limit. See every 2026 vs 2027 figure in one table.
+- /retirement/social-security-retirement-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 0.67 on social security · same format: calculator]
+    title: Social Security Retirement Calculator
+    desc:  Our Social Security retirement calculator shows how claiming age affects your benefit and how to add SSA income to your total retirement projection.
+- /compare/social-security-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.67 on social security]
+    title: Social Security vs 401(k): Planning Retirement Income
+    desc:  Social Security vs 401(k) compared: how each is funded, when income starts, how taxes work, and how to use both in a retirement plan.
+- /guides/is-social-security-taxable  [in sitemap · src/data/guides.ts · topic match 0.67 on social security]
+    title: Is Social Security Taxable? 2026 Thresholds Explained
+    desc:  Social Security becomes taxable once combined income tops $25,000 (single) or $32,000 (married). See the IRS formula, thresholds, and how to lower it.
+- /social-security-break-even-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.67 on social security · same format: calculator]
+    title: Social Security Break Even Calculator: 62 vs 67 vs 70
+    desc:  Free Social Security break even calculator. Enter your full retirement age benefit and see the age when claiming later pays more in total.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 4 | social-security-taxable-benefits-calculator (46 people, 51 uses, 109 views; data_days 27). Walkthrough: married-filing-separately-living-together prints 'above $0'; no hint on what counts as other income (Roth with
+- 2026-11-04-tool-usage.md [table] | 5 | social-security-taxable-benefits-calculator (46 people; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Eviden
+- 2026-11-04-tool-usage.md [exclusions] - Next in line (specs, cap of 3 builds, 2 built): depreciation-recapture-calculator, 1031-exchange-calculator (prior specs); Social Security withholding (W-4V) estimator; capital loss carryover calculator; Florida homest
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'paycheck tax calculator' 18,100 (KD 65), salary take home calculator 6,600 (KD 62), after tax income calculator 9,900 (KD 70), post tax income calculator 8,100 (KD 34); measured 
+- 2026-11-15-keyword-gap.md [exclusions] - Insurance (car, home, health, life, renters, travel, disability), credit cards, rates, Social Security, celebrity net worth, brand-navigational queries: adjacent-not-pursued or covered-partial per ledger; high KD, per-
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-
+Commits naming the topic: none
+Same run overlap: row - /guides/how-social-security-benefits-are-calculated (0.67); row - /guides/when-to-take-social-security-62-67-70 (0.67); row - /guides/social-security-spousal-benefits-calculator (0.67); row - /guides/social-security-while-working-earnings-test (0.67); row - /guides/social-security-with-fewer-than-35-years (0.67); row - /guides/social-security-divorced-spouse-benefits (0.67); row - /guides/social-security-disability-calculator (0.67); row - /guides/is-social-security-estimator-accurate (0.67); row - /guides/social-security-take-home-after-taxes (0.67); row - /guides/social-security-break-even-age (0.67)
+
+### /guides/social-security-divorced-spouse-benefits  — row - · create new content
+keyword: social security calculator divorced spouse; ex spouse
+reader question (new page intent): Ex spouse
+lookup terms: social security divorced spouse benefit ex   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /retirement/social-security-retirement-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 0.5 on social security benefit · same format: calculator]
+    title: Social Security Retirement Calculator
+    desc:  Our Social Security retirement calculator shows how claiming age affects your benefit and how to add SSA income to your total retirement projection.
+- /social-security-taxable-benefits-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on social security benefit · same format: calculator]
+    title: Social Security Taxable Benefits Calculator 2026
+    desc:  Social Security taxable benefits calculator. Enter your benefits and other income to see provisional income, the taxable part and the 50% or 85% tier.
+- /guides/senior-deduction-social-security  [in sitemap · src/data/guides.ts · topic match 0.5 on social security benefit]
+    title: Social Security Tax Deduction for Seniors (2026)
+    desc:  Learn how the new Social Security tax deduction for seniors works, who qualifies for up to $6,000, and how benefits are taxed in 2026.
+- /guides/states-that-tax-social-security  [in sitemap · src/data/guides.ts · topic match 0.5 on social security benefit]
+    title: States That Tax Social Security Benefits in 2026
+    desc:  Eight states tax some Social Security in 2026. See exemptions, income thresholds, and rules for Colorado, Connecticut, Minnesota, Montana, and others.
+- /guides/social-security-survivor-benefits-and-working  [in sitemap · src/data/guides.ts · topic match 0.5 on social security benefit]
+    title: Social Security Survivor Benefits and the Earnings Limit
+    desc:  Yes, working while you collect Social Security survivor benefits before full retirement age can reduce your check. Here's the 2026 limit and how it's repaid.
+- /compare/social-security-at-62-vs-70  [in sitemap · src/data/comparisons.ts · topic match 0.5 on social security benefit]
+    title: Social Security at 62 vs 70: How Claiming Age Shapes Checks
+    desc:  Comparing Social Security at 62 vs 70 shows how monthly checks, delayed retirement credits, and your lifespan determine the right claiming age.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 4 | social-security-taxable-benefits-calculator (46 people, 51 uses, 109 views; data_days 27). Walkthrough: married-filing-separately-living-together prints 'above $0'; no hint on what counts as other income (Roth with
+- 2026-11-04-tool-usage.md [table] | 5 | social-security-taxable-benefits-calculator (46 people; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Eviden
+- 2026-11-04-tool-usage.md [exclusions] - Next in line (specs, cap of 3 builds, 2 built): depreciation-recapture-calculator, 1031-exchange-calculator (prior specs); Social Security withholding (W-4V) estimator; capital loss carryover calculator; Florida homest
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'paycheck tax calculator' 18,100 (KD 65), salary take home calculator 6,600 (KD 62), after tax income calculator 9,900 (KD 70), post tax income calculator 8,100 (KD 34); measured 
+- 2026-11-15-keyword-gap.md [exclusions] - Insurance (car, home, health, life, renters, travel, disability), credit cards, rates, Social Security, celebrity net worth, brand-navigational queries: adjacent-not-pursued or covered-partial per ledger; high KD, per-
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-
+Commits naming the topic: none
+Same run overlap: row - /guides/how-social-security-benefits-are-calculated (0.5); row - /guides/social-security-spousal-benefits-calculator (0.67)
+
+### /guides/social-security-disability-calculator  — row - · create new content
+keyword: social security disability calculator
+reader question (new page intent): SSDI amount
+lookup terms: social security disability   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/2027-ssdi-cola  [in sitemap · src/data/guides.ts · topic match 1.0 on social security disability]
+    title: Social Security COLA 2027 for Disability: SSDI Up 3.6%
+    desc:  The Social Security COLA 2027 for disability is a 3.6% cost-of-living adjustment. The average disabled-worker check rises from $1,642 to $1,701 in January.
+- /retirement/social-security-retirement-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 0.67 on social security · same format: calculator]
+    title: Social Security Retirement Calculator
+    desc:  Our Social Security retirement calculator shows how claiming age affects your benefit and how to add SSA income to your total retirement projection.
+- /social-security-cola-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.67 on social security · same format: calculator]
+    title: Social Security COLA Calculator: Your 2027 Benefit at 3.6%
+    desc:  Free Social Security COLA calculator. Enter your monthly benefit to see your 2027 amount after the 3.6% raise, plus a chart of common benefit amounts.
+- /compare/social-security-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.67 on social security]
+    title: Social Security vs 401(k): Planning Retirement Income
+    desc:  Social Security vs 401(k) compared: how each is funded, when income starts, how taxes work, and how to use both in a retirement plan.
+- /guides/is-social-security-taxable  [in sitemap · src/data/guides.ts · topic match 0.67 on social security]
+    title: Is Social Security Taxable? 2026 Thresholds Explained
+    desc:  Social Security becomes taxable once combined income tops $25,000 (single) or $32,000 (married). See the IRS formula, thresholds, and how to lower it.
+- /social-security-break-even-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.67 on social security · same format: calculator]
+    title: Social Security Break Even Calculator: 62 vs 67 vs 70
+    desc:  Free Social Security break even calculator. Enter your full retirement age benefit and see the age when claiming later pays more in total.
+- /social-security-taxable-benefits-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.67 on social security · same format: calculator]
+    title: Social Security Taxable Benefits Calculator 2026
+    desc:  Social Security taxable benefits calculator. Enter your benefits and other income to see provisional income, the taxable part and the 50% or 85% tier.
+- /guides/social-security-changes-2027  [in sitemap · src/data/guides.ts · topic match 0.67 on social security]
+    title: Social Security Changes 2027 Listed Next to 2026 Figures
+    desc:  Social Security changes 2027: a 3.6% COLA, a $192,300 wage base and a $25,560 earnings limit. See every 2026 vs 2027 figure in one table.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 4 | social-security-taxable-benefits-calculator (46 people, 51 uses, 109 views; data_days 27). Walkthrough: married-filing-separately-living-together prints 'above $0'; no hint on what counts as other income (Roth with
+- 2026-11-04-tool-usage.md [table] | 5 | social-security-taxable-benefits-calculator (46 people; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Eviden
+- 2026-11-04-tool-usage.md [exclusions] - Next in line (specs, cap of 3 builds, 2 built): depreciation-recapture-calculator, 1031-exchange-calculator (prior specs); Social Security withholding (W-4V) estimator; capital loss carryover calculator; Florida homest
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'paycheck tax calculator' 18,100 (KD 65), salary take home calculator 6,600 (KD 62), after tax income calculator 9,900 (KD 70), post tax income calculator 8,100 (KD 34); measured 
+- 2026-11-15-keyword-gap.md [exclusions] - Insurance (car, home, health, life, renters, travel, disability), credit cards, rates, Social Security, celebrity net worth, brand-navigational queries: adjacent-not-pursued or covered-partial per ledger; high KD, per-
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-
+Commits naming the topic: none
+Same run overlap: row - /guides/how-social-security-benefits-are-calculated (0.67); row - /guides/when-to-take-social-security-62-67-70 (0.67); row - /guides/social-security-spousal-benefits-calculator (0.67); row - /guides/social-security-while-working-earnings-test (0.67); row - /guides/social-security-with-fewer-than-35-years (0.67); row - /guides/social-security-cola-calculator (0.67); row - /guides/social-security-divorced-spouse-benefits (0.67); row - /guides/is-social-security-estimator-accurate (0.67); row - /guides/social-security-take-home-after-taxes (0.67); row - /guides/social-security-break-even-age (0.67)
+
+### /guides/is-social-security-estimator-accurate  — row - · create new content
+keyword: is the social security estimator accurate; is social security calculator accurate
+reader question (new page intent): Accuracy
+lookup terms: social security estimator accurate   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /retirement/social-security-retirement-calculator  [in sitemap · src/data/spokes-retirement.ts · topic match 0.5 on social security · same format: calculator]
+    title: Social Security Retirement Calculator
+    desc:  Our Social Security retirement calculator shows how claiming age affects your benefit and how to add SSA income to your total retirement projection.
+- /social-security-cola-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on social security · same format: calculator]
+    title: Social Security COLA Calculator: Your 2027 Benefit at 3.6%
+    desc:  Free Social Security COLA calculator. Enter your monthly benefit to see your 2027 amount after the 3.6% raise, plus a chart of common benefit amounts.
+- /compare/social-security-vs-401k  [in sitemap · src/data/comparisons.ts · topic match 0.5 on social security]
+    title: Social Security vs 401(k): Planning Retirement Income
+    desc:  Social Security vs 401(k) compared: how each is funded, when income starts, how taxes work, and how to use both in a retirement plan.
+- /guides/is-social-security-taxable  [in sitemap · src/data/guides.ts · topic match 0.5 on social security]
+    title: Is Social Security Taxable? 2026 Thresholds Explained
+    desc:  Social Security becomes taxable once combined income tops $25,000 (single) or $32,000 (married). See the IRS formula, thresholds, and how to lower it.
+- /social-security-break-even-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on social security · same format: calculator]
+    title: Social Security Break Even Calculator: 62 vs 67 vs 70
+    desc:  Free Social Security break even calculator. Enter your full retirement age benefit and see the age when claiming later pays more in total.
+- /social-security-taxable-benefits-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on social security · same format: calculator]
+    title: Social Security Taxable Benefits Calculator 2026
+    desc:  Social Security taxable benefits calculator. Enter your benefits and other income to see provisional income, the taxable part and the 50% or 85% tier.
+- /guides/social-security-changes-2027  [in sitemap · src/data/guides.ts · topic match 0.5 on social security]
+    title: Social Security Changes 2027 Listed Next to 2026 Figures
+    desc:  Social Security changes 2027: a 3.6% COLA, a $192,300 wage base and a $25,560 earnings limit. See every 2026 vs 2027 figure in one table.
+- /guides/2027-social-security-cola  [in sitemap · src/data/guides.ts · topic match 0.5 on social security]
+    title: 2027 Social Security COLA (Cost-of-Living Adjustment) Guide
+    desc:  The 2027 Social Security COLA (cost-of-living adjustment) is 3.6%, announced October 14, 2026. See what it adds to your check and how Part B affects it.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-04-tool-usage.md [table] | 4 | social-security-taxable-benefits-calculator (46 people, 51 uses, 109 views; data_days 27). Walkthrough: married-filing-separately-living-together prints 'above $0'; no hint on what counts as other income (Roth with
+- 2026-11-04-tool-usage.md [table] | 5 | social-security-taxable-benefits-calculator (46 people; data_days 27). Verdict fit (books only, YMYL). The visitor's next step after the result is reading on this topic; no data-tool-picks block ships today. Eviden
+- 2026-11-04-tool-usage.md [exclusions] - Next in line (specs, cap of 3 builds, 2 built): depreciation-recapture-calculator, 1031-exchange-calculator (prior specs); Social Security withholding (W-4V) estimator; capital loss carryover calculator; Florida homest
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'paycheck tax calculator' 18,100 (KD 65), salary take home calculator 6,600 (KD 62), after tax income calculator 9,900 (KD 70), post tax income calculator 8,100 (KD 34); measured 
+- 2026-11-15-keyword-gap.md [exclusions] - Insurance (car, home, health, life, renters, travel, disability), credit cards, rates, Social Security, celebrity net worth, brand-navigational queries: adjacent-not-pursued or covered-partial per ledger; high KD, per-
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-
+Commits naming the topic: none
+Same run overlap: row - /guides/how-social-security-benefits-are-calculated (0.5); row - /guides/when-to-take-social-security-62-67-70 (0.5); row - /guides/social-security-spousal-benefits-calculator (0.5); row - /guides/social-security-while-working-earnings-test (0.5); row - /guides/social-security-with-fewer-than-35-years (0.5); row - /guides/social-security-cola-calculator (0.5); row - /guides/social-security-divorced-spouse-benefits (0.5); row - /guides/social-security-disability-calculator (0.5); row - /guides/social-security-take-home-after-taxes (0.5); row - /guides/social-security-break-even-age (0.5)
+
+### /guides/social-security-take-home-after-taxes  — row - · create new content
+keyword: social security calculator after taxes; social security tax calculator
+reader question (new page intent): net
+lookup terms: social security take home after taxe tax   format cues: calculator
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/senior-deduction-social-security  [in sitemap · src/data/guides.ts · topic match 0.57 on social security taxe tax]
+    title: Social Security Tax Deduction for Seniors (2026)
+    desc:  Learn how the new Social Security tax deduction for seniors works, who qualifies for up to $6,000, and how benefits are taxed in 2026.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent (tax calculator 1,911,300 combined, income tax calculator 110,000, federal income tax calculator 14,800, income tax estimator 49,500, tax estimator 18,100, tax percentage calculator 8,100;
+- 2026-11-15-keyword-gap.md [exclusions] - new york income tax calculator / nyc tax calculator / state tax calculators: adjacent-not-pursued this run, deferred. Only NY URLs were attempted (two tax.ny.gov guessed URLs returned 404, saved); other states not rese
+- 2026-11-15-keyword-gap.md [exclusions] - Insurance (car, home, health, life, renters, travel, disability), credit cards, rates, Social Security, celebrity net worth, brand-navigational queries: adjacent-not-pursued or covered-partial per ledger; high KD, per-
+- 2026-11-15-trend-lane-c.md [exclusions] - utma standalone page and UTMA tax cluster: DROP, exist (utma explained guide, utma-vs-ugma, 529-vs-utma, custodial-account-taxes-kiddie-tax).
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'tenants in common vs joint tenancy': 9,900/mo KD 5 (DataForSEO 2026-11-23, us); variant 'tenants in common vs joint tenants' 9,900 KD 7. lookup: no same-intent page; No existing
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/social-security-break-even-age  — row - · create new content
+keyword: social security break even calculator 65 vs 67; break even point
+reader question (new page intent): Break-even
+lookup terms: social security break even age v65 v67 point   format cues: calculator vs
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /social-security-break-even-calculator  [in sitemap · (sitemap only) · title fetched live · topic match 0.5 on social security break even · same format: calculator]
+    title: Social Security Break Even Calculator: 62 vs 67 vs 70
+    desc:  Free Social Security break even calculator. Enter your full retirement age benefit and see the age when claiming later pays more in total.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-10-competitor-18b9b55e45cc.md [table] | Lens 1 direct intent (competitor monitor: NerdWallet robo-advisors vs financial advisors) plus Lens 3 comparison format. Head 'robo advisor vs financial advisor': autocomplete estimate 75-750/mo, NOT measured. lookup: 
+- 2026-11-15-keyword-gap.md [table] | Adjacent-demand direct intent. Cluster 'paycheck tax calculator' 18,100 (KD 65), salary take home calculator 6,600 (KD 62), after tax income calculator 9,900 (KD 70), post tax income calculator 8,100 (KD 34); measured 
+- 2026-11-15-keyword-gap.md [exclusions] - Insurance (car, home, health, life, renters, travel, disability), credit cards, rates, Social Security, celebrity net worth, brand-navigational queries: adjacent-not-pursued or covered-partial per ledger; high KD, per-
+- 2026-11-16-comparison.md [table] | lookup: /alternatives/quickbooks - reader wants a list of alternatives, not this pairing. Lens 1 direct intent (brief candidate 2). "quickbooks vs freshbooks" 2,400/mo KD 28 SEMRUSH; no dedicated page on the site; SERP
+- 2026-11-16-comparison.md [table] | lookup: /roundup/best-cash-back-credit-cards - many-card list, not this pairing. Lens 1 direct intent (brief candidate 8). "chase freedom flex vs unlimited" 720/mo KD 36 SEMRUSH; no head-to-head page; SERP winnable. | 
+- 2026-11-23-comparison.md [table] | Lens 1 direct intent (brief candidate). 'ssdi vs ssi': 18,100/mo KD 6 (DataForSEO 2026-11-23, us); variant 'difference between ssdi and ssi' 4,400 KD 14. lookup: no same-intent page; Coverage lookup found only ssi-and-
+Commits naming the topic: none
+Same run overlap: none
+

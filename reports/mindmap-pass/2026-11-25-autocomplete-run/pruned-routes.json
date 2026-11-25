@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "prunedRoutes": [
+    "/retirement/401k-paycheck-calculator"
+  ],
+  "prunedActionIds": [
+    "A2"
+  ],
+  "survivingActionIds": [
+    "A1",
+    "A3",
+    "A4",
+    "A5"
+  ],
+  "survivingSubstantiveRoutes": [
+    "/debt-payoff-calculator",
+    "/guides/compound-interest-formula-excel-google-sheets",
+    "/guides/property-tax-by-state-mortgage-payment",
+    "/retirement/401k-calculator"
+  ],
+  "revertedFiles": [],
+  "updatedEvidencePackets": [],
+  "quarantineTickets": [
+    {
+      "route": "/retirement/401k-paycheck-calculator",
+      "itemId": "401k-paycheck-calculator",
+      "ticketPath": null
+    }
+  ],
+  "projectedAuditPair": null,
+  "manifest": "reports/mindmap-pass/2026-11-25-autocomplete-run/approval-manifest.json",
+  "review": "reports/mindmap-pass/2026-11-25-autocomplete-run/chart-review.json",
+  "chart": "reports/mindmap-pass/2026-11-25-autocomplete.md"
+}

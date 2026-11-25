@@ -1,0 +1,26 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "mindmap-write",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/guides/compound-interest-formula-excel-google-sheets/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/property-tax-by-state-mortgage-payment/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/mortgage/piti-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "autocomplete-2026-11-25"
+}

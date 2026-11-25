@@ -1,0 +1,115 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-write",
+  "route": "/debt-payoff-calculator/",
+  "readerQuestion": "How long will it take to pay off all my debts and which one should I pay first? [verb-only - no PAA, no completions: SERP/PAA unavailable; ac 181/294 debt completions are payoff-method or schedule questions]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/approval-manifest.json",
+      "sha256": "699acb869e892c7940c22cd1e6c866e11f523a0ff7dfafa57ac8ce982a23616c"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/chart-review.json",
+      "sha256": "da4cb07f1b9686db6ebf29a2bb354c08a046bf27a546308e7174f04f490177b2"
+    },
+    "actionId": "A1"
+  },
+  "presentation": {
+    "medium": "interactive tool",
+    "placement": "Calculator above the fold, strategy comparison and worked example below",
+    "reason": "Reader inputs (balances, APRs, extra payment) change which strategy wins and the payoff date",
+    "readerInputs": [
+      "Debt balances",
+      "APRs",
+      "Minimum payments",
+      "Extra monthly payment",
+      "Lump sum"
+    ],
+    "interaction": {
+      "decision": "build",
+      "reason": "Order and interest depend on the reader's own balances and rates; a static table cannot show them"
+    },
+    "animation": {
+      "decision": "use",
+      "reason": "Month-by-month balance bars show how payoff order changes when the extra payment rolls over"
+    }
+  },
+  "basis": "calculated",
+  "decisionGap": "Existing pages explain avalanche vs snowball (/compare/debt-snowball-vs-avalanche/) or pay off one card (/credit-card-payoff/) or compare consolidating (/debt-consolidation-calculator/), but none lets a reader enter several debts and see payoff date, total interest and payoff order for avalanche, snowball and minimums-only side by side.",
+  "finding": "For the worked example (store card $2,500 at 19.99% with $75 minimum, credit card $6,000 at 27.99% with $160 minimum, personal loan $11,000 at 11% with $280 minimum, plus $200 extra a month), avalanche clears all three debts in 34 months with $4,783.63 interest, snowball takes 35 months with $5,120.19 interest ($336.56 more), and paying only minimums takes 91 months with $12,291.39 interest. Avalanche pays the 27.99% card first, snowball pays the $2,500 card first (month 10) and the first win comes 12 months sooner. When APRs are equal the two cost the same interest.",
+  "conditions": "Fixed APRs; interest added monthly at APR/12; no new charges or fees; the full monthly budget (sum of minimums plus extra) is paid every month with freed minimums rolling to the next debt; no prepayment penalty; minimums-only means no rollover and no extra. Applies to unsecured and installment debts that can be prepaid.",
+  "whatWouldChange": "Equal APRs (the order stops mattering), a smallest balance that also has the highest APR (same plan), a 0% promotional rate or a prepayment penalty on one debt, or a minimum payment below monthly interest on a debt.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/debt-payoff-calculator/cases.json",
+    "sha256": "89bc6c3cac986ea099a3a7b3723d58d545cd7f37e9eaa81f483bd50173df5504"
+  },
+  "caseDecisions": "cases.json returned only generic Layer3Labs records matched on stopwords ('for', 'what'); none concern consumer debt payoff, so no client or fleet case is used. caseUses is empty.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/brief.txt",
+      "sha256": "4a53fd90d16a609b6a883d858b050b9c3e7881e402fa713135bb1a14f8ca1516"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/candidate-dispositions.csv",
+      "sha256": "7704ceb7a425204bcde9ada3d4c255e6311f6144c7ede801349aabef43955c38"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/coverage-lookup.txt",
+      "sha256": "8ed3ecee4cde76da57df4d88097ccae88dc5619c6d045a2d56cca4c3d706e894"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/relevant-routes.txt",
+      "sha256": "92c8e8e7a22f5885a54cbdf50c5d9db3a1dfc245d5298fef1b4d50d5abcfd1e5"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sitemap-0.xml",
+      "sha256": "0144b1168c599e5851736398f48c5ee805a928b4cd7a181b1725d3782fc27e15"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/cfpb-how-reduce-your-debt.txt",
+      "sha256": "153c0241fb10c1a224546d37871bd8ee1c2741e1d230d32b0e117322566944e9"
+    }
+  ],
+  "presentationArtifacts": [
+    {
+      "path": "src/lib/debt-payoff.ts",
+      "sha256": "40fc683218a19214ad27aec23ce82f0c486ba578277b8ae5c19e38b8ecdce5d4"
+    },
+    {
+      "path": "src/components/DebtPayoffCalculator.tsx",
+      "sha256": "cf8803e242f408e9fb72889cce331e4e084d0fcfef14a9b08c2d89e5ec730b02"
+    }
+  ],
+  "method": "Deterministic month-by-month simulation. Each month: add interest (balance x APR / 12) to each open debt, pay each open debt its minimum (capped at its balance), then send the rest of the monthly budget (sum of original minimums + extra, plus any lump sum in month 1) to the target debt, spilling down the order. Avalanche order: highest APR first, ties smaller balance. Snowball order: smallest starting balance first, ties higher APR. Minimums-only: each debt gets only its minimum, no rollover. Independent Python implementation in model.py is replayed against the TypeScript engine src/lib/debt-payoff.ts in scripts/test-debt-payoff.mjs.",
+  "units": "USD, months",
+  "limitations": "Ignores new charges, fees, variable or promotional rates, daily compounding and lender rounding; assumes the reader pays the full budget every month.",
+  "counterexample": "Two debts at the same 18% APR ($3,000 and $7,000, $150 extra): avalanche and snowball both finish in 30 months with $2,464.56 interest, so snowball costs nothing extra. When the smallest debt also has the highest rate ($1,500 at 26% and $9,000 at 9%) both methods choose the same order.",
+  "execution": {
+    "command": [
+      "python3",
+      "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/debt-payoff-calculator/model.py"
+    ],
+    "code": {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/debt-payoff-calculator/model.py",
+      "sha256": "9de5268aa058ac40c2fa89e5002e315eb006c3ac7f9854c946562db9b3278a2b"
+    },
+    "inputs": [
+      {
+        "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/brief.txt",
+        "sha256": "4a53fd90d16a609b6a883d858b050b9c3e7881e402fa713135bb1a14f8ca1516"
+      }
+    ],
+    "output": {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/debt-payoff-calculator/output.json",
+      "sha256": "bbbdf4a6bae38ae03a2a753e1c9e047264aff956e952797f4b7ea460fce3749f"
+    }
+  },
+  "caseUses": [],
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [],
+    "scopeAndLimits": "Ignores new charges, fees, variable or promotional rates, daily compounding and lender rounding; assumes the reader pays the full budget every month.",
+    "publicMethod": "On-page: How the Calculator Works section states the monthly loop and the worked example lists each input; the tool itself lets readers rerun it.",
+    "placement": "Calculator and three-strategy result table in section 1; worked example below the tool."
+  }
+}

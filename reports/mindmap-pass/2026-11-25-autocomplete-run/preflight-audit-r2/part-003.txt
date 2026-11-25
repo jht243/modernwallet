@@ -1,0 +1,112 @@
+b1d69fd2f2260f0397aa06289223f",
+    "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/preview-snapshot-r2.json"
+  },
+  "findings": [
+    {
+      "id": "A1-N1",
+      "status": "open",
+      "evidence": "Equal-rate and smallest-is-highest examples omit their minimum payments ($90/$180 and $50/$200), so readers cannot reproduce $2,464.56 and $1,611.43 without the evidence file. Add the minimums in a later pass."
+    },
+    {
+      "id": "A3-F1",
+      "status": "open",
+      "evidence": "Banned or inflated words. Fix in place: Publisher note \"prevents significant projection errors\" -> \"prevents projection errors\"; \"A critical mathematical condition applies:\" -> \"One condition applies:\"; \"updates its foundational financial argument conventions\" -> \"changes how its FV function takes arguments\"."
+    },
+    {
+      "id": "A3-F2",
+      "status": "open",
+      "evidence": "Overclaimed exactness. Fix: \"produces an exact future value (FV) of $16,470.09\" -> \"produces a future value (FV) of $16,470.09\"; \"yields exactly $16,470.09\" -> \"yields $16,470.09\"; FAQ \"produces exactly $16,436.19\" -> \"produces $16,436.19\"."
+    },
+    {
+      "id": "A3-F3",
+      "status": "open",
+      "evidence": "=FV(0.00417507,12*10,-200,-10000) returns $47,559.86 not $47,559.87 and the gap vs $47,526.55 is $33.31. Fix: use the unrounded effective rate wording \"about $47,559.87\" and \"about $33\" or print the rate to 10 digits (0.0041750727)."
+    },
+    {
+      "id": "R1-2-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Coherent answer and takeaway, same-frequency condition stated in opener and takeaway as required by CR7, but wording overclaims exactness and uses banned filler words."
+    },
+    {
+      "id": "R1-2-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "All table values and FV outputs reproduce (16,470.09; 16,288.95; 16,436.19; 16,486.65; 47,526.55; 47,655.95; 31,056.46; 46,475.89; 4,880,767.80) except the effective-rate example off by one cent."
+    },
+    {
+      "id": "R1-2-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "Banned filler words in reader-facing text: significant (Publisher note), critical, foundational."
+    },
+    {
+      "id": "R1-2-factualReview-truthfulEvidence",
+      "status": "open",
+      "evidence": "Page says the formula produces an exact future value and yields exactly $16,470.09 while the figures are rounded to cents; the internal-modeling attribution itself is accurate."
+    },
+    {
+      "id": "A4-F1",
+      "status": "open",
+      "evidence": "Fix in place: \"utilize our PITI mortgage calculator\" -> \"use our PITI mortgage calculator\"; \"conceal dramatic county-level variations\" -> \"hide large county-level differences\"; \"faces a substantial discrepancy\" -> \"can be off by $300 a month\"; also \"comprehensive monthly housing obligation\" -> \"full monthly housing cost\"."
+    },
+    {
+      "id": "A4-N1",
+      "status": "open",
+      "evidence": "The page says rates apply to total owner-occupied market value while /mortgage/piti-calculator/ says assessed value for the same Tax Foundation rates; align in the PITI fix. Median state $263 per month also sits beside the PITI worked example of $366.67 at 1.1%."
+    },
+    {
+      "id": "R1-3-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Opener, table, FAQ and takeaway agree, but body copy contains banned wording."
+    },
+    {
+      "id": "R1-3-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "\"utilize\" is a banned word; \"dramatic\" and \"substantial\" are inflated; fix in place."
+    },
+    {
+      "id": "A5-N1",
+      "status": "open",
+      "evidence": "\"cuts your ending balance substantially\" is a filler adverb next to a precise number; \"the loss equals the skipped deposits without compounding losses\" is awkward. Optional wording cleanup, not a blocker."
+    },
+    {
+      "id": "PITI-F1",
+      "status": "open",
+      "evidence": "Fix in place in howItWorks and the Does PITI vary by state FAQ: replace \"The national average is roughly 1.1% of assessed home value per year, according to the Tax Foundation, but ranges from under 0.3% in Hawaii to about 1.9% in New Jersey and Illinois\" with \"State effective rates in the Tax Foundation 2026 table run from 0.29% in Hawaii to 1.88% in New Jersey and Illinois, with a typical state near 0.8%.\" Also change \"assessed\" to \"market value\" and reconcile the 1.1% worked example (state it as an assumption or use about 0.8%) and the FAQ sentence \"well outside the 1.1% national average\"."
+    },
+    {
+      "id": "PITI-F2",
+      "status": "open",
+      "evidence": "Add published: \"2026-11-24\" beside the new updated: \"2026-11-25\" in src/data/spokes-mortgage.ts so datePublished stays at the live value."
+    },
+    {
+      "id": "R1-9-checks-datesAndSchema",
+      "status": "open",
+      "evidence": "Live page shows datePublished and dateModified 2026-11-24; the candidate shows datePublished 2026-11-25 because adding updated without a published field makes the template fall back to updated. Publication date moved forward."
+    },
+    {
+      "id": "R1-9-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Tax Foundation saved page (13,432 lines) has no national average effective rate; the 1.1% figure and the $366.67 worked example rest on it. Hawaii 0.29% and NJ/IL 1.88% match the state table; the Tax Foundation rates are on owner-occupied market value, not assessed value as the page says."
+    },
+    {
+      "id": "R1-9-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "New property tax by state guide gives a median of about $263 a month on $400,000 (0.79%), while this page says the national average is 1.1% and prices the example at $366.67."
+    },
+    {
+      "id": "R1-9-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "Corrected NJ/IL wording passes, but the 1.1% national-average claim attributed to the Tax Foundation is not in the saved source."
+    },
+    {
+      "id": "R1-9-factualReview-truthfulEvidence",
+      "status": "open",
+      "evidence": "Source attribution to Tax Foundation for the 1.1% average is unsupported by the saved source."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/handoff-audit-r2.json",
+    "sha256": "6dda37b723bd76c0aef117e9d2b3add10cef1a4c4b161dd4452cce6fd56e3b51"
+  }
+}
+

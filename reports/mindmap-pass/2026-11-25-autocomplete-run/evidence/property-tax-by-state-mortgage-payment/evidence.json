@@ -1,0 +1,101 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-write",
+  "route": "/guides/property-tax-by-state-mortgage-payment/",
+  "readerQuestion": "How much do property taxes add to my monthly mortgage payment in my state? [verb-only - no PAA, no completions: SERP/PAA unavailable; ac 90/334 mortgage completions name a state or taxes and insurance]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/approval-manifest.json",
+      "sha256": "699acb869e892c7940c22cd1e6c866e11f523a0ff7dfafa57ac8ce982a23616c"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/chart-review.json",
+      "sha256": "da4cb07f1b9686db6ebf29a2bb354c08a046bf27a546308e7174f04f490177b2"
+    },
+    "actionId": "A4"
+  },
+  "presentation": {
+    "medium": "text",
+    "placement": "Sortable 50-state table in section 1",
+    "reason": "A finite 50-row comparison answers the question; the reader's own price is handled by the linked PITI calculator",
+    "readerInputs": [
+      "State"
+    ],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "A finite 50-row table covers the state variable; the PITI calculator is linked for a reader price"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static layout answers faster; no sequence to animate"
+    }
+  },
+  "basis": "calculated",
+  "decisionGap": "/mortgage/piti-calculator/ takes a property tax input but gives no state rate, and its FAQ gives only two states; readers searching 'mortgage calculator <state> with taxes' need the monthly property-tax amount for their state on a stated home price.",
+  "finding": "On a $400,000 home, effective property tax rates from the Tax Foundation (2024 American Community Survey) add about $97 a month in Hawaii (0.29%) and $627 a month in New Jersey and Illinois (1.88% each) to principal and interest. The median state adds about $263 a month. District of Columbia (0.60%) adds $200. County rates differ from the state average: in the same source New Jersey counties run from 0.93% (Cape May, about $310 a month on $400,000) to 2.47% (Camden, about $823 a month).",
+  "conditions": "Owner-occupied homes; state effective rate x $400,000 / 12; real taxes depend on assessed value, exemptions and county or city rates; insurance, PMI and HOA dues are not included.",
+  "whatWouldChange": "A county rate far from the state average, a homestead or senior exemption, an assessed value different from the price, or a Tax Foundation update to the effective rates.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/property-tax-by-state-mortgage-payment/cases.json",
+    "sha256": "74be8e49993dd3887937ee765f404788ff2041aaa6f4f0340b92918ceec7f8c1"
+  },
+  "caseDecisions": "cases.json returned only generic Layer3Labs records matched on stopwords; none concern property tax or mortgages, so no client or fleet case is used. caseUses is empty.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/brief.txt",
+      "sha256": "4a53fd90d16a609b6a883d858b050b9c3e7881e402fa713135bb1a14f8ca1516"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/candidate-dispositions.csv",
+      "sha256": "7704ceb7a425204bcde9ada3d4c255e6311f6144c7ede801349aabef43955c38"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/coverage-lookup.txt",
+      "sha256": "8ed3ecee4cde76da57df4d88097ccae88dc5619c6d045a2d56cca4c3d706e894"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/relevant-routes.txt",
+      "sha256": "92c8e8e7a22f5885a54cbdf50c5d9db3a1dfc245d5298fef1b4d50d5abcfd1e5"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sitemap-0.xml",
+      "sha256": "0144b1168c599e5851736398f48c5ee805a928b4cd7a181b1725d3782fc27e15"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/tax-foundation-property-taxes-by-state.txt",
+      "sha256": "23d8aadd7f78efb9dc15baf039d0781485c7f6a839abef09c5246fb4483a8fd4"
+    }
+  ],
+  "method": "Parse Table 2 of the saved Tax Foundation page (effective rate on owner-occupied housing value, 2024), compute rate x 400,000 / 12 per state, rank by rate, list DC separately, and compute the county-range counterexample from Table 1 of the same page. Saved formula and outputs in model.py and output.json.",
+  "units": "USD per month, percent of home value",
+  "limitations": "State averages hide county variation; ACS values are survey estimates; excludes homeowners insurance (no primary dataset retrieved), mortgage insurance and HOA dues.",
+  "counterexample": "Camden County, New Jersey has a 2.47% effective rate in the same source, so the same $400,000 home owes about $823 a month, above the state-average $627.",
+  "execution": {
+    "command": [
+      "python3",
+      "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/property-tax-by-state-mortgage-payment/model.py"
+    ],
+    "code": {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/property-tax-by-state-mortgage-payment/model.py",
+      "sha256": "08ffd75494871d524ea548f54a066f23d9651dfd09fe88214454bfbce5f50854"
+    },
+    "inputs": [
+      {
+        "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/tax-foundation-property-taxes-by-state.txt",
+        "sha256": "23d8aadd7f78efb9dc15baf039d0781485c7f6a839abef09c5246fb4483a8fd4"
+      }
+    ],
+    "output": {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/property-tax-by-state-mortgage-payment/output.json",
+      "sha256": "e02c0277ec4ccf1aa83ed2b78de1225f6bd522e0378ca7e09f79b5e0e1e9bb0b"
+    }
+  },
+  "caseUses": [],
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [],
+    "scopeAndLimits": "State averages hide county variation; ACS values are survey estimates; excludes homeowners insurance (no primary dataset retrieved), mortgage insurance and HOA dues.",
+    "publicMethod": "On-page: How the Estimate Works section gives the formula, the source and the county caveat.",
+    "placement": "50-state table in section 1."
+  }
+}

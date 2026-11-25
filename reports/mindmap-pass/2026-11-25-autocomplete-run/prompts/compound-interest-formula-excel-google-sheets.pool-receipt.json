@@ -1,0 +1,43 @@
+{
+  "route": "/guides/compound-interest-formula-excel-google-sheets",
+  "pageCategory": "regulated-legal-or-financial",
+  "track": "guide",
+  "testedEligible": false,
+  "legitimateZeroInternalDomain": true,
+  "poolPresented": true,
+  "poolCount": 5,
+  "pool": [
+    {
+      "id": "live_free_tier_or_workflow_probe",
+      "label": "Live Free-Tier, Public Sandbox, CLI/API, or Official Registry Probe",
+      "whenUseful": "Use when a product offers a free tier, public web workspace, CLI/API endpoint, or public technical catalog you can inspect/verify directly to report concrete workflow steps, free-tier ceilings, and observed friction (without claiming full page-wide `(Tested 2026)` unless `tested_eligibility` and full item runs pass)."
+    },
+    {
+      "id": "client_and_operator_experience",
+      "label": "Client / Operator / Fleet Implementation Experience",
+      "whenUseful": "Use when an anonymized client engagement (e.g. \"working with a client team reviewing dense contracts...\" or \"working with an executive managing multiple businesses...\"), owned app/site build, or documented operator workflow illustrates the exact problem this tool solves (within stated `limits`)."
+    },
+    {
+      "id": "practical_workload_and_unit_translation",
+      "label": "Practical Real-World Workload & Human-Unit Translation (PDFs, Meetings, Workdays)",
+      "whenUseful": "Use whenever a tier publishes speeds, credits, token rates, seat/invoice caps, or regulatory windows: translate raw vendor numbers into tangible human work units (such as 10-page PDFs, 30-minute meetings, hours or 8-hour workdays saved per month, or deliverables per credit tier) with explicit conversion assumptions."
+    },
+    {
+      "id": "internal_scenario_and_spec_modeling",
+      "label": "Internal Cost, Plan-Cap, Token, or Spec Scenario Modeling",
+      "whenUseful": "Use when vendors/products publish prices, caps, API token rates, or comparable numeric specs where multi-scenario break-even math clarifies the choice."
+    },
+    {
+      "id": "interactive_tool_or_calculator",
+      "label": "Interactive Calculator / Decision Widget",
+      "whenUseful": "Use when reader-adjustable seats, usage volume, or parameters materially flip the recommendation."
+    }
+  ],
+  "excludedPoolOptions": [
+    {
+      "id": "hands_on_test",
+      "reason": "type: guide is not a best-of/alternatives roundup or single-item review"
+    }
+  ],
+  "reviewerVoiceProfile": null
+}

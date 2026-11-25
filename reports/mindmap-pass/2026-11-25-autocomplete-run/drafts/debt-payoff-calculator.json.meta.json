@@ -1,0 +1,116 @@
+{
+ "slug": "debt-payoff-calculator",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1597,
+ "floor": 1200,
+ "input_tokens": 36325,
+ "output_tokens": 2788,
+ "thinking_tokens": null,
+ "cached_tokens": 17812,
+ "est_cost_usd": 0.0257,
+ "guards": {
+  "repairs": [
+   "slug None -> 'debt-payoff-calculator'"
+  ],
+  "flags": [
+   "emptied by the claim check (nothing in the fact list could carry it): ['How the Calculator Works', 'Worked Example: Three Debts and $200 Extra'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1597,
+  "numbers_not_in_facts": [
+   "1460.6",
+   "715"
+  ],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    8,
+    0
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At The Modern Wallet, we built this tool so you can see your exact payoff timeline across three strategies before spending an extra dollar.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not license first-person tool creation or unverified claims."
+    },
+    {
+     "id": "introText",
+     "quote": "The avalanche strategy targets the balance carrying the highest annual percentage rate (APR), while the snowball method targets the smallest balance first to build early momentum.",
+     "replacement": "The avalanche strategy targets the balance carrying the highest annual percentage rate (APR), while the snowball method targets the smallest balance first to give faster early wins.",
+     "type": "unsupported",
+     "why": "SOURCE states snowball gives faster early wins, not early momentum."
+    },
+    {
+     "id": "howItWorks",
+     "quote": "Snowball delivers a fully cleared account 12 months earlier, which provides psychological relief at the expense of $336.56 in additional interest.",
+     "replacement": "Snowball delivers a fully cleared account 12 months earlier, giving a faster early win at the expense of $336.56 in additional interest.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that snowball provides psychological relief."
+    },
+    {
+     "id": "sections[0].body",
+     "quote": "You can also explore our detailed breakdown on [debt snowball vs avalanche](/compare/debt-snowball-vs-avalanche/) to see how psychological and mathematical factors influence long-term debt elimination.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state this guide covers psychological factors."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Personal loan (mo. 49), Credit card (mo. 50), Store card (mo. 91)",
+     "replacement": "Personal loan (mo. 49), Store card (mo. 50), Credit card (mo. 91)",
+     "type": "contradicted",
+     "why": "Store card pays off at month 50 and credit card at month 91."
+    },
+    {
+     "id": "sections[1].body",
+     "quote": "Review our guide on [how to pay off debt](/guides/how-to-pay-off-debt/) to build a practical monthly budget before accelerating your payments.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state this guide builds a monthly budget."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Choose your smallest balance first if you need an early milestone to stay motivated, which is the snowball method.",
+     "replacement": "Choose your smallest balance first if you want faster early wins, which is the snowball method.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention needing milestones to stay motivated."
+    },
+    {
+     "id": "faqs[7].answer",
+     "quote": "Paying off high-interest credit cards at 20% or higher delivers an immediate, risk-free return that beats historical market averages.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state returns beat historical market averages."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1683
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16272
+  }
+ },
+ "seconds": 129.1,
+ "response_id": "JpwGa7LcHNDeytMPxt_8iAQ",
+ "generated_at": "2026-11-25T08:30:30+0000"
+}

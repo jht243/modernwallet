@@ -1,0 +1,31 @@
+{
+  "originRoutine": "mindmap-pass (autocomplete-2026-11-25)",
+  "route": "/debt-payoff-calculator/",
+  "queryFamily": "debt payoff calculator cluster (181 mapped Autocomplete completions plus 65 spreadsheet/planner variants)",
+  "hypothesis": "A new multi-debt calculator that leads with an interactive three-strategy result earns clicks on payoff-method and payoff-date queries that /credit-card-payoff/ and the snowball-vs-avalanche explainer do not answer.",
+  "primaryMetric": "incremental Google clicks (supporting: impressions, position, CTR by query family)",
+  "baselineReference": {
+    "status": "not-yet-published",
+    "window": null,
+    "property": "https://www.themodernwallet.com/",
+    "canonicalUrl": "https://www.themodernwallet.com/debt-payoff-calculator/"
+  },
+  "comparatorPlan": "age-matched new pages in the same hub for new routes; unchanged sibling spokes for the existing-page enrichment",
+  "changeScope": "new-page",
+  "sourceRefreshTrigger": "CFPB guidance change or a change to the engine in src/lib/debt-payoff.ts",
+  "reviewWindows": {
+    "day28": "first 28 complete live days",
+    "day56": "second 28 complete live days"
+  },
+  "outcomeStatus": "local-only",
+  "deployment": {
+    "status": "not-deployed",
+    "commit": null,
+    "deployedDate": null
+  },
+  "productionCostRecords": [
+    "reports/content-gen-usage.jsonl"
+  ],
+  "evidencePacket": "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/debt-payoff-calculator/evidence.json",
+  "note": "Demand estimate is Autocomplete only; no SERP/PAA or volume data in this run. No uplift is claimed."
+}

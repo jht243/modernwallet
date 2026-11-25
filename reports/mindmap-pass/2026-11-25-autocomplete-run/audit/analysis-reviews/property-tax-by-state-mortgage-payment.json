@@ -1,0 +1,54 @@
+{
+ "caseUseReview": {
+  "evidence": "No client case used or claimed.",
+  "status": "PASS"
+ },
+ "conditionsAndCounterexample": {
+  "evidence": "Camden County 2.47% vs Cape May 0.93% inside one state is the printed counterexample to relying on a state average; excludes insurance, PMI and HOA.",
+  "status": "PASS"
+ },
+ "localExclusions": {
+  "evidence": "Finance information with bottom disclaimer; no medical, tested labels or professional-review claims.",
+  "status": "PASS"
+ },
+ "packetSha256": "4fa941fff7e4dc99f9a0a63324ea86da98a77a3f635ebe39775931eb15345f6c",
+ "presentationReview": {
+  "evidence": "Finite 50-row table is the right format for a lookup; readable without interaction; wrapped for narrow screens.",
+  "status": "PASS"
+ },
+ "renderedConsistency": {
+  "status": "PASS",
+  "evidence": "Packet numbers and rendered table agree (50 of 50 rows). Wording finding A4-F1 is a style finding, not an analysis inconsistency."
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/review-r2.json",
+  "sha256": "58ea21fb812bf8fa20689e4e4102ae2f5145afca3768c4839399beb6117dbba9"
+ },
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/preview-snapshot-r2.json",
+  "sha256": "cfc3f97d75218248724b015172bbc58c0c7b1d69fd2f2260f0397aa06289223f"
+ },
+ "replaySha256": "f84da975f4f4109a23c8fb852e6011c96d5a11594fd939467658ce0c5b6f483c",
+ "requestCoverage": [
+  {
+   "evidence": "The rendered page delivers the requested state property tax effect on a mortgage payment and links to the PITI and affordability tools.",
+   "requirementId": "REQ-1",
+   "status": "PASS"
+  },
+  {
+   "evidence": "The rendered page delivers the requested state property tax effect on a mortgage payment and links to the PITI and affordability tools.",
+   "requirementId": "REQ-2",
+   "status": "PASS"
+  }
+ ],
+ "reviewer": "mindmap-audit",
+ "sourceAndAssumptions": {
+  "evidence": "Saved Tax Foundation table (2024 ACS) is the only rate source; the $400,000 price is an explicit assumption and the page tells readers to scale it.",
+  "status": "PASS"
+ },
+ "usefulness": {
+  "evidence": "A 50-state monthly property tax table on a $400,000 home with the formula, county variation and an escrow scope note answers the autocomplete question that no existing page covered.",
+  "status": "PASS"
+ },
+ "verdict": "PASS"
+}

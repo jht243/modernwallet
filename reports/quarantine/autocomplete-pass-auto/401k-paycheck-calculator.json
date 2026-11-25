@@ -1,0 +1,19 @@
+{
+  "attempts": 1,
+  "createdAt": "2026-11-25T08:20:36Z",
+  "error": "",
+  "expiresAt": "2026-12-02T08:20:36Z",
+  "itemId": "401k-paycheck-calculator",
+  "maxRetries": 0,
+  "reason": "duplicate-collision with live /paycheck-calculator/ (CR1)",
+  "routes": [
+    "/retirement/401k-paycheck-calculator"
+  ],
+  "savedBranch": null,
+  "savedCommit": "d7e3bbafaea3a4f71344f72513d94e5db3e8d266",
+  "site": "",
+  "skill": "autocomplete-pass-auto",
+  "status": "quarantined",
+  "updatedAt": "2026-11-25T08:20:36Z",
+  "version": 1
+}

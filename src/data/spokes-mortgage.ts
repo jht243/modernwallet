@@ -285,6 +285,8 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
   {
     calculator: "mortgage",
     slug: "piti-calculator",
+    published: "2026-11-24",
+    updated: "2026-11-25",
     title: "PITI Mortgage Calculator: All-In Monthly Payment",
     metaDescription:
       "Calculate your full PITI mortgage payment — principal, interest, property taxes, homeowner's insurance, and PMI — to see what you truly owe each month.",
@@ -295,7 +297,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
     introText:
       "PITI stands for Principal, Interest, Taxes, and Insurance, the four components of your true all-in monthly mortgage payment. The calculator above shows your principal and interest (P&I). Add your estimated property taxes and homeowner's insurance below to calculate your full PITI.\n\nWhy does this matter? When applying the 28% front-end debt-to-income (DTI) rule, lenders use your PITI, not just P&I. That means your PITI must remain below 28% of your gross monthly income to qualify for most conventional loans.",
     howItWorks:
-      "PITI is calculated by adding four line items: principal and interest from your amortization schedule, monthly property taxes (annual tax ÷ 12), monthly homeowner's insurance (annual premium ÷ 12), and PMI if your down payment is less than 20%. The calculator above handles the P&I portion; the remaining components depend on your location and loan structure.\n\nProperty taxes vary widely by state and county. The national average is roughly 1.1% of assessed home value per year, according to the Tax Foundation, but ranges from under 0.3% in Hawaii to over 2.1% in New Jersey. Private mortgage insurance (PMI) typically runs 0.5–1.5% of the loan amount annually for borrowers with less than 20% down, according to the CFPB. PMI is split into 12 monthly installments. Once your equity reaches 20%, you can request PMI cancellation under the Homeowners Protection Act; at 22% equity it is automatically terminated.",
+      "PITI is calculated by adding four line items: principal and interest from your amortization schedule, monthly property taxes (annual tax ÷ 12), monthly homeowner's insurance (annual premium ÷ 12), and PMI if your down payment is less than 20%. The calculator above handles the P&I portion; the remaining components depend on your location and loan structure.\n\nProperty taxes vary widely by state and county. State effective rates in the Tax Foundation 2026 table run from 0.29% in Hawaii to 1.88% in New Jersey and Illinois, with a typical state near 0.8%, measured against home market value. See [property tax by state](/guides/property-tax-by-state-mortgage-payment/) for the monthly figure in each state on a $400,000 home. Private mortgage insurance (PMI) typically runs 0.5–1.5% of the loan amount annually for borrowers with less than 20% down, according to the CFPB. PMI is split into 12 monthly installments. Once your equity reaches 20%, you can request PMI cancellation under the Homeowners Protection Act; at 22% equity it is automatically terminated.",
     commonMistakes: [
       "Budgeting only for principal and interest. Taxes and insurance together often add $300–$600 or more per month on a median-priced home, which can push PITI above the lender's 28% front-end limit.",
       "Forgetting PMI when putting less than 20% down. On a $350,000 loan at 1% annual PMI, that adds $292 per month — a cost that disappears once you reach 20% equity.",
@@ -304,7 +306,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
       "Not asking about escrow. Most lenders escrow taxes and insurance, collecting them monthly as part of your payment. If yours does not, you must budget to pay those bills yourself at year-end.",
     ],
     workedExample:
-      "Say you buy a $400,000 home with 20% down ($80,000), leaving a $320,000 loan at 6.75% for 30 years. P&I works out to $2,075.68 per month. Property taxes at the national average of 1.1% on $400,000 add $366.67 per month. Homeowner's insurance at a typical $1,500 per year adds $125 per month. Because you put 20% down, there is no PMI. Total PITI: $2,567.35 per month. To qualify conventionally under the 28% front-end rule, you would need at least $9,169 per month in gross income ($2,567.35 ÷ 0.28).",
+      "Say you buy a $400,000 home with 20% down ($80,000), leaving a $320,000 loan at 6.75% for 30 years. P&I works out to $2,075.68 per month. Property taxes at an assumed 1.1% of home value on $400,000 add $366.67 per month. Homeowner's insurance at a typical $1,500 per year adds $125 per month. Because you put 20% down, there is no PMI. Total PITI: $2,567.35 per month. To qualify conventionally under the 28% front-end rule, you would need at least $9,169 per month in gross income ($2,567.35 ÷ 0.28).",
     faqs: [
       {
         question: "What does PITI stand for in a mortgage?",
@@ -324,7 +326,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
       {
         question: "How do I estimate property taxes for my PITI?",
         answer:
-          "Divide the annual property tax bill by 12. If you do not have the actual tax bill, use the county's current millage rate applied to the assessed value. The national average is about 1.1% of assessed value per year, per the Tax Foundation, but local rates vary significantly.",
+          "Divide the annual property tax bill by 12. If you do not have the actual tax bill, use the county's current millage rate applied to the assessed value. State effective rates in the Tax Foundation 2026 table run from 0.29% in Hawaii to 1.88% in New Jersey and Illinois, with a typical state near 0.8%, and local rates vary significantly.",
       },
       {
         question: "Is homeowner's insurance required for a mortgage?",
@@ -344,7 +346,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
       {
         question: "Does PITI vary by state?",
         answer:
-          "Yes. The T and the I in PITI move with your state and county. The P&I portion does not. Property taxes alone range from under 0.3% of assessed value in Hawaii to over 2.1% in New Jersey, well outside the 1.1% national average, per the Tax Foundation. Insurance adds another layer of variation. The [National Association of Insurance Commissioners (NAIC)](https://content.naic.org/article/naic-releases-first-its-kind-national-analysis-homeowners-insurance-market-trends) found inflation-adjusted premiums rising 18.3% to 43.3% across U.S. regions between 2018 and 2024 in its own market analysis. Pull your county's actual tax bill and a real insurance quote before you trust any PITI estimate for your target home.",
+          "Yes. The T and the I in PITI move with your state and county. The P&I portion does not. Per the Tax Foundation, state effective property tax rates run from 0.29% of home value in Hawaii to 1.88% in New Jersey and Illinois, with a typical state near 0.8%. Insurance adds another layer of variation. The [National Association of Insurance Commissioners (NAIC)](https://content.naic.org/article/naic-releases-first-its-kind-national-analysis-homeowners-insurance-market-trends) found inflation-adjusted premiums rising 18.3% to 43.3% across U.S. regions between 2018 and 2024 in its own market analysis. Pull your county's actual tax bill and a real insurance quote before you trust any PITI estimate for your target home.",
       },
     ],
     sources: [
@@ -373,7 +375,7 @@ export const MORTGAGE_SPOKES: SpokeEntry[] = [
     introText:
       "Two lender rules determine the maximum home price you can afford: your PITI must be no more than 28% of your gross monthly income (front-end DTI), and your combined monthly debts must be no more than 36% of your gross monthly income (back-end DTI). To see where your own debts put you, use the [debt-to-income ratio calculator](/debt-to-income-ratio-calculator/).\n\nThe calculator above shows the principal-and-interest payment for any home price. Use the 28% front-end limit to work backward and find a purchase price that fits your income.\n\nHere's the less obvious part: keeping your DTI under 36% does more than help you get approved. Lenders often tier interest rates by DTI, so a lower DTI can earn you a better rate, not just a lender's yes.",
     howItWorks:
-      "Lenders measure affordability with two debt-to-income ratios, according to the CFPB and Fannie Mae guidelines. The front-end DTI compares your monthly PITI payment to your gross monthly income; conventional lenders typically cap this at 28%. The back-end DTI adds all monthly debt payments (car loans, student loans, minimum credit card payments, and the new PITI) and divides by gross income; conventional lenders typically cap this at 36%, though Fannie Mae automated underwriting can approve up to 45-50% for strong borrowers. FHA loans allow higher DTIs — often up to 43% and in some cases 50% — making them more accessible for buyers with existing debt.\n\nTo find your maximum home price, start with 28% of your gross monthly income as your PITI budget, subtract estimated taxes and insurance, and the remainder is your maximum P&I. Enter that P&I into the calculator to find the corresponding loan amount, then add your down payment to get your maximum purchase price.",
+      "Lenders measure affordability with two debt-to-income ratios, according to the CFPB and Fannie Mae guidelines. The front-end DTI compares your monthly PITI payment to your gross monthly income; conventional lenders typically cap this at 28%. The back-end DTI adds all monthly debt payments (car loans, student loans, minimum credit card payments, and the new PITI) and divides by gross income; conventional lenders typically cap this at 36%, though Fannie Mae automated underwriting can approve up to 45-50% for strong borrowers. FHA loans allow higher DTIs — often up to 43% and in some cases 50% — making them more accessible for buyers with existing debt.\n\nTo find your maximum home price, start with 28% of your gross monthly income as your PITI budget, subtract estimated taxes and insurance, and the remainder is your maximum P&I. Enter that P&I into the calculator to find the corresponding loan amount, then add your down payment to get your maximum purchase price. Property tax is part of that PITI budget, so see [how state property taxes change affordability](/guides/property-tax-by-state-mortgage-payment/) before you set a price.",
     commonMistakes: [
       "Confusing gross income with take-home pay. DTI is always calculated on gross (pre-tax) monthly income, not the amount deposited in your bank account.",
       "Omitting minimum payments on all debts. Student loans, car payments, and even zero-balance credit cards with minimum payment requirements all count in your back-end DTI.",

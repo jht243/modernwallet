@@ -1,0 +1,5 @@
+Q: What happens to my 401(k) if I stop contributing?
+A: Your accumulated balance keeps compounding at your assumed return, but new deposits end immediately. On the calculator example, stopping at age 45 yields $1,147,049 at age 65 instead of the full $1,540,606 projection. That single decision still secures 74.5% of your final balance because your first 15 years of contributions have decades to grow.
+
+Q: Does the 401k calculator adjust for inflation?
+A: Yes, the retirement tools show your projected balance in today's dollars using an inflation field that defaults to 3%. On our base example, the $1,540,606 nominal total equals about $547,506 in today's dollars at 3%, about $770,345 at 2%, and about $390,413 at 4%. You can explore separate price shifts across different timeframes using our [inflation calculator](/inflation-calculator/).

@@ -1,0 +1,41 @@
+3f4cc74ceb23eabd22b8c7",
+      "checkedAt": "2026-11-25T08:42:23.402446+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/microsoft-fv-function.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/23d8aadd7f78efb9dc15baf039d0781485c7f6a839abef09c5246fb4483a8fd4/tax-foundation-property-taxes-by-state.txt",
+      "sha256": "23d8aadd7f78efb9dc15baf039d0781485c7f6a839abef09c5246fb4483a8fd4",
+      "checkedAt": "2026-11-25T08:42:23.402446+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/tax-foundation-property-taxes-by-state.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/153c0241fb10c1a224546d37871bd8ee1c2741e1d230d32b0e117322566944e9/cfpb-how-reduce-your-debt.txt",
+      "sha256": "153c0241fb10c1a224546d37871bd8ee1c2741e1d230d32b0e117322566944e9",
+      "checkedAt": "2026-11-25T08:42:23.402446+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/cfpb-how-reduce-your-debt.txt"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "snapshot": {
+    "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/b4e79c68e2ecbd32bc8b79a45320097e0a3f95f82c8b71b392a2973d6586bfcd/preview-snapshot-v2.json",
+    "sha256": "b4e79c68e2ecbd32bc8b79a45320097e0a3f95f82c8b71b392a2973d6586bfcd",
+    "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/preview-snapshot-v2.json"
+  },
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/handoff-audit.json",
+    "sha256": "4a214c15ddfd55b76e3c0bb7cc70716260815e2830aaaa5a060080b9d98de3e1"
+  }
+}
+

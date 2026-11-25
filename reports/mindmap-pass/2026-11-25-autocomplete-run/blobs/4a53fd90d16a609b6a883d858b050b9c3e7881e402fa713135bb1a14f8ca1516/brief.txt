@@ -1,0 +1,3 @@
+Source: Google Autocomplete mining for https://themodernwallet.com (seeds: mortgage calculator, compound interest calculator, 401k calculator, debt payoff calculator, social security calculator). Completions are real live searches; keyword tools lag them, so zero measured volume does not veto a completion alone.
+Unattended run: save the chart to reports/mindmap-pass/2026-11-25-autocomplete.md (exact name), treat Phase 0 manifest as approved, continue without stopping.
+Input completions (all rows, unfiltered, every candidate ID kept) are in reports/keyword-pass/2026-11-25.autocomplete.{mortgage-calculator,compound-interest-calculator,401k-calculator,debt-payoff-calculator,social-security-calculator}.csv (1,570 rows total).

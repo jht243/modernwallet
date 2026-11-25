@@ -1,0 +1,413 @@
+{
+  "version": 1,
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "autocomplete-2026-11-25",
+  "producer": "main",
+  "routes": [
+    "/debt-payoff-calculator/",
+    "/retirement/401k-calculator/",
+    "/credit-card-payoff/",
+    "/compare/debt-snowball-vs-avalanche/",
+    "/investing/compound-interest-calculator/",
+    "/guides/retirement-calculator-spreadsheet-template/",
+    "/mortgage/affordability-calculator/",
+    "/guides/compound-interest-formula-excel-google-sheets/",
+    "/guides/property-tax-by-state-mortgage-payment/",
+    "/mortgage/piti-calculator/"
+  ],
+  "nextAction": "Publish exact independently reviewed Mindmap output to main and verify live.",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/699acb869e892c7940c22cd1e6c866e11f523a0ff7dfafa57ac8ce982a23616c/approval-manifest.json",
+      "sha256": "699acb869e892c7940c22cd1e6c866e11f523a0ff7dfafa57ac8ce982a23616c",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/808c83b78c3be0e9b404b8e252aabb4dc45381a4165829d90d0a41850496710e/2026-11-25-autocomplete.md",
+      "sha256": "808c83b78c3be0e9b404b8e252aabb4dc45381a4165829d90d0a41850496710e",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/7c08b9b484d27bda05f6bd1534764184648e7ae0ec7ca3f864a21ca22ea1486b/approved-snapshot.json",
+      "sha256": "7c08b9b484d27bda05f6bd1534764184648e7ae0ec7ca3f864a21ca22ea1486b",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/approved-snapshot.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/cfc3f97d75218248724b015172bbc58c0c7b1d69fd2f2260f0397aa06289223f/preview-snapshot-r2.json",
+      "sha256": "cfc3f97d75218248724b015172bbc58c0c7b1d69fd2f2260f0397aa06289223f",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/preview-snapshot-r2.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/a3fc41f2e0d67751c06b3b5ea400979941a29e4acdd008cfd92bd1dfdb9f53ef/readiness.md",
+      "sha256": "a3fc41f2e0d67751c06b3b5ea400979941a29e4acdd008cfd92bd1dfdb9f53ef",
+      "checkedAt": "2026-11-25T08:52:34.770611+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/da4cb07f1b9686db6ebf29a2bb354c08a046bf27a546308e7174f04f490177b2/chart-review.json",
+      "sha256": "da4cb07f1b9686db6ebf29a2bb354c08a046bf27a546308e7174f04f490177b2",
+      "checkedAt": "2026-11-25T08:52:34.770611+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/4a53fd90d16a609b6a883d858b050b9c3e7881e402fa713135bb1a14f8ca1516/brief.txt",
+      "sha256": "4a53fd90d16a609b6a883d858b050b9c3e7881e402fa713135bb1a14f8ca1516",
+      "checkedAt": "2026-11-25T08:52:34.770611+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/brief.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/7704ceb7a425204bcde9ada3d4c255e6311f6144c7ede801349aabef43955c38/candidate-dispositions.csv",
+      "sha256": "7704ceb7a425204bcde9ada3d4c255e6311f6144c7ede801349aabef43955c38",
+      "checkedAt": "2026-11-25T08:52:34.770611+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/candidate-dispositions.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/8ed3ecee4cde76da57df4d88097ccae88dc5619c6d045a2d56cca4c3d706e894/coverage-lookup.txt",
+      "sha256": "8ed3ecee4cde76da57df4d88097ccae88dc5619c6d045a2d56cca4c3d706e894",
+      "checkedAt": "2026-11-25T08:52:34.770611+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/92c8e8e7a22f5885a54cbdf50c5d9db3a1dfc245d5298fef1b4d50d5abcfd1e5/relevant-routes.txt",
+      "sha256": "92c8e8e7a22f5885a54cbdf50c5d9db3a1dfc245d5298fef1b4d50d5abcfd1e5",
+      "checkedAt": "2026-11-25T08:52:34.770611+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/relevant-routes.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/0144b1168c599e5851736398f48c5ee805a928b4cd7a181b1725d3782fc27e15/sitemap-0.xml",
+      "sha256": "0144b1168c599e5851736398f48c5ee805a928b4cd7a181b1725d3782fc27e15",
+      "checkedAt": "2026-11-25T08:52:34.770611+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sitemap-0.xml"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/758c9a0f820a93dcd86e80b650b91fa97768590e9d2e5b67ccc3268903164f4f/irs-401k-limits-2026-newsroom.txt",
+      "sha256": "758c9a0f820a93dcd86e80b650b91fa97768590e9d2e5b67ccc3268903164f4f",
+      "checkedAt": "2026-11-25T08:52:34.770611+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/irs-401k-limits-2026-newsroom.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/15fcc2be4994481db00d69e7ed0992689a9f504b2e797a01282792e50f5dd794/irs-401k-contribution-limits-topic.txt",
+      "sha256": "15fcc2be4994481db00d69e7ed0992689a9f504b2e797a01282792e50f5dd794",
+      "checkedAt": "2026-11-25T08:52:34.770611+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/irs-401k-contribution-limits-topic.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/4f8162e4a661cf480eebf6a06aac06f2954ccc3d7d1d8ddc57ce59cda3aac303/irs-2026-tax-inflation-adjustments.txt",
+      "sha256": "4f8162e4a661cf480eebf6a06aac06f2954ccc3d7d1d8ddc57ce59cda3aac303",
+      "checkedAt": "2026-11-25T08:52:34.770611+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/irs-2026-tax-inflation-adjustments.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/5b1857bf7a9a4b896f5ae36ea4e32d4f3eed415c3e3f4cc74ceb23eabd22b8c7/microsoft-fv-function.txt",
+      "sha256": "5b1857bf7a9a4b896f5ae36ea4e32d4f3eed415c3e3f4cc74ceb23eabd22b8c7",
+      "checkedAt": "2026-11-25T08:52:34.770611+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/microsoft-fv-function.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/23d8aadd7f78efb9dc15baf039d0781485c7f6a839abef09c5246fb4483a8fd4/tax-foundation-property-taxes-by-state.txt",
+      "sha256": "23d8aadd7f78efb9dc15baf039d0781485c7f6a839abef09c5246fb4483a8fd4",
+      "checkedAt": "2026-11-25T08:52:34.770611+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/tax-foundation-property-taxes-by-state.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/153c0241fb10c1a224546d37871bd8ee1c2741e1d230d32b0e117322566944e9/cfpb-how-reduce-your-debt.txt",
+      "sha256": "153c0241fb10c1a224546d37871bd8ee1c2741e1d230d32b0e117322566944e9",
+      "checkedAt": "2026-11-25T08:52:34.770611+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/cfpb-how-reduce-your-debt.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/db96eef32c68ec1f409cca0419d628ab411a000f7bbee9abf0bf7535f2423aa9/review.json",
+      "sha256": "db96eef32c68ec1f409cca0419d628ab411a000f7bbee9abf0bf7535f2423aa9",
+      "checkedAt": "2026-11-25T08:52:34.770611+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/a3fc41f2e0d67751c06b3b5ea400979941a29e4acdd008cfd92bd1dfdb9f53ef/readiness.md",
+      "sha256": "a3fc41f2e0d67751c06b3b5ea400979941a29e4acdd008cfd92bd1dfdb9f53ef",
+      "checkedAt": "2026-11-25T08:54:33.699187+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/da4cb07f1b9686db6ebf29a2bb354c08a046bf27a546308e7174f04f490177b2/chart-review.json",
+      "sha256": "da4cb07f1b9686db6ebf29a2bb354c08a046bf27a546308e7174f04f490177b2",
+      "checkedAt": "2026-11-25T08:54:33.699187+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/4a53fd90d16a609b6a883d858b050b9c3e7881e402fa713135bb1a14f8ca1516/brief.txt",
+      "sha256": "4a53fd90d16a609b6a883d858b050b9c3e7881e402fa713135bb1a14f8ca1516",
+      "checkedAt": "2026-11-25T08:54:33.699187+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/brief.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/7704ceb7a425204bcde9ada3d4c255e6311f6144c7ede801349aabef43955c38/candidate-dispositions.csv",
+      "sha256": "7704ceb7a425204bcde9ada3d4c255e6311f6144c7ede801349aabef43955c38",
+      "checkedAt": "2026-11-25T08:54:33.699187+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/candidate-dispositions.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/8ed3ecee4cde76da57df4d88097ccae88dc5619c6d045a2d56cca4c3d706e894/coverage-lookup.txt",
+      "sha256": "8ed3ecee4cde76da57df4d88097ccae88dc5619c6d045a2d56cca4c3d706e894",
+      "checkedAt": "2026-11-25T08:54:33.699187+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/92c8e8e7a22f5885a54cbdf50c5d9db3a1dfc245d5298fef1b4d50d5abcfd1e5/relevant-routes.txt",
+      "sha256": "92c8e8e7a22f5885a54cbdf50c5d9db3a1dfc245d5298fef1b4d50d5abcfd1e5",
+      "checkedAt": "2026-11-25T08:54:33.699187+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/relevant-routes.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/0144b1168c599e5851736398f48c5ee805a928b4cd7a181b1725d3782fc27e15/sitemap-0.xml",
+      "sha256": "0144b1168c599e5851736398f48c5ee805a928b4cd7a181b1725d3782fc27e15",
+      "checkedAt": "2026-11-25T08:54:33.699187+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sitemap-0.xml"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/758c9a0f820a93dcd86e80b650b91fa97768590e9d2e5b67ccc3268903164f4f/irs-401k-limits-2026-newsroom.txt",
+      "sha256": "758c9a0f820a93dcd86e80b650b91fa97768590e9d2e5b67ccc3268903164f4f",
+      "checkedAt": "2026-11-25T08:54:33.699187+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/irs-401k-limits-2026-newsroom.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/15fcc2be4994481db00d69e7ed0992689a9f504b2e797a01282792e50f5dd794/irs-401k-contribution-limits-topic.txt",
+      "sha256": "15fcc2be4994481db00d69e7ed0992689a9f504b2e797a01282792e50f5dd794",
+      "checkedAt": "2026-11-25T08:54:33.699187+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/irs-401k-contribution-limits-topic.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/4f8162e4a661cf480eebf6a06aac06f2954ccc3d7d1d8ddc57ce59cda3aac303/irs-2026-tax-inflation-adjustments.txt",
+      "sha256": "4f8162e4a661cf480eebf6a06aac06f2954ccc3d7d1d8ddc57ce59cda3aac303",
+      "checkedAt": "2026-11-25T08:54:33.699187+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/irs-2026-tax-inflation-adjustments.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/5b1857bf7a9a4b896f5ae36ea4e32d4f3eed415c3e3f4cc74ceb23eabd22b8c7/microsoft-fv-function.txt",
+      "sha256": "5b1857bf7a9a4b896f5ae36ea4e32d4f3eed415c3e3f4cc74ceb23eabd22b8c7",
+      "checkedAt": "2026-11-25T08:54:33.699187+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/microsoft-fv-function.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/23d8aadd7f78efb9dc15baf039d0781485c7f6a839abef09c5246fb4483a8fd4/tax-foundation-property-taxes-by-state.txt",
+      "sha256": "23d8aadd7f78efb9dc15baf039d0781485c7f6a839abef09c5246fb4483a8fd4",
+      "checkedAt": "2026-11-25T08:54:33.699187+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/tax-foundation-property-taxes-by-state.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/153c0241fb10c1a224546d37871bd8ee1c2741e1d230d32b0e117322566944e9/cfpb-how-reduce-your-debt.txt",
+      "sha256": "153c0241fb10c1a224546d37871bd8ee1c2741e1d230d32b0e117322566944e9",
+      "checkedAt": "2026-11-25T08:54:33.699187+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/cfpb-how-reduce-your-debt.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/b3891a470249becec5e930f3bb44a9ef43b93d284441652887ea83fbc5c5d988/approved-review.json",
+      "sha256": "b3891a470249becec5e930f3bb44a9ef43b93d284441652887ea83fbc5c5d988",
+      "checkedAt": "2026-11-25T08:54:33.699187+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report (reviewPair)",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/approved-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/58ea21fb812bf8fa20689e4e4102ae2f5145afca3768c4839399beb6117dbba9/review-r2.json",
+      "sha256": "58ea21fb812bf8fa20689e4e4102ae2f5145afca3768c4839399beb6117dbba9",
+      "checkedAt": "2026-11-25T08:54:33.699187+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report (reviewPair)",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/review-r2.json"
+    }
+  ],
+  "findings": [
+    {
+      "id": "A1-N1",
+      "status": "open",
+      "evidence": "Equal-rate and smallest-is-highest examples omit their minimum payments ($90/$180 and $50/$200), so readers cannot reproduce $2,464.56 and $1,611.43 without the evidence file. Add the minimums in a later pass."
+    },
+    {
+      "id": "A3-F1",
+      "status": "open",
+      "evidence": "Banned or inflated words. Fix in place: Publisher note \"prevents significant projection errors\" -> \"prevents projection errors\"; \"A critical mathematical condition applies:\" -> \"One condition applies:\"; \"updates its foundational financial argument conventions\" -> \"changes how its FV function takes arguments\"."
+    },
+    {
+      "id": "A3-F2",
+      "status": "open",
+      "evidence": "Overclaimed exactness. Fix: \"produces an exact future value (FV) of $16,470.09\" -> \"produces a future value (FV) of $16,470.09\"; \"yields exactly $16,470.09\" -> \"yields $16,470.09\"; FAQ \"produces exactly $16,436.19\" -> \"produces $16,436.19\"."
+    },
+    {
+      "id": "A3-F3",
+      "status": "open",
+      "evidence": "=FV(0.00417507,12*10,-200,-10000) returns $47,559.86 not $47,559.87 and the gap vs $47,526.55 is $33.31. Fix: use the unrounded effective rate wording \"about $47,559.87\" and \"about $33\" or print the rate to 10 digits (0.0041750727)."
+    },
+    {
+      "id": "R1-2-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Coherent answer and takeaway, same-frequency condition stated in opener and takeaway as required by CR7, but wording overclaims exactness and uses banned filler words."
+    },
+    {
+      "id": "R1-2-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "All table values and FV outputs reproduce (16,470.09; 16,288.95; 16,436.19; 16,486.65; 47,526.55; 47,655.95; 31,056.46; 46,475.89; 4,880,767.80) except the effective-rate example off by one cent."
+    },
+    {
+      "id": "R1-2-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "Banned filler words in reader-facing text: significant (Publisher note), critical, foundational."
+    },
+    {
+      "id": "R1-2-factualReview-truthfulEvidence",
+      "status": "open",
+      "evidence": "Page says the formula produces an exact future value and yields exactly $16,470.09 while the figures are rounded to cents; the internal-modeling attribution itself is accurate."
+    },
+    {
+      "id": "A4-F1",
+      "status": "open",
+      "evidence": "Fix in place: \"utilize our PITI mortgage calculator\" -> \"use our PITI mortgage calculator\"; \"conceal dramatic county-level variations\" -> \"hide large county-level differences\"; \"faces a substantial discrepancy\" -> \"can be off by $300 a month\"; also \"comprehensive monthly housing obligation\" -> \"full monthly housing cost\"."
+    },
+    {
+      "id": "A4-N1",
+      "status": "open",
+      "evidence": "The page says rates apply to total owner-occupied market value while /mortgage/piti-calculator/ says assessed value for the same Tax Foundation rates; align in the PITI fix. Median state $263 per month also sits beside the PITI worked example of $366.67 at 1.1%."
+    },
+    {
+      "id": "R1-3-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Opener, table, FAQ and takeaway agree, but body copy contains banned wording."
+    },
+    {
+      "id": "R1-3-factualReview-seoQuality",
+      "status": "open",
+      "evidence": "\"utilize\" is a banned word; \"dramatic\" and \"substantial\" are inflated; fix in place."
+    },
+    {
+      "id": "A5-N1",
+      "status": "open",
+      "evidence": "\"cuts your ending balance substantially\" is a filler adverb next to a precise number; \"the loss equals the skipped deposits without compounding losses\" is awkward. Optional wording cleanup, not a blocker."
+    },
+    {
+      "id": "PITI-F1",
+      "status": "open",
+      "evidence": "Fix in place in howItWorks and the Does PITI vary by state FAQ: replace \"The national average is roughly 1.1% of assessed home value per year, according to the Tax Foundation, but ranges from under 0.3% in Hawaii to about 1.9% in New Jersey and Illinois\" with \"State effective rates in the Tax Foundation 2026 table run from 0.29% in Hawaii to 1.88% in New Jersey and Illinois, with a typical state near 0.8%.\" Also change \"assessed\" to \"market value\" and reconcile the 1.1% worked example (state it as an assumption or use about 0.8%) and the FAQ sentence \"well outside the 1.1% national average\"."
+    },
+    {
+      "id": "PITI-F2",
+      "status": "open",
+      "evidence": "Add published: \"2026-11-24\" beside the new updated: \"2026-11-25\" in src/data/spokes-mortgage.ts so datePublished stays at the live value."
+    },
+    {
+      "id": "R1-9-checks-datesAndSchema",
+      "status": "open",
+      "evidence": "Live page shows datePublished and dateModified 2026-11-24; the candidate shows datePublished 2026-11-25 because adding updated without a published field makes the template fall back to updated. Publication date moved forward."
+    },
+    {
+      "id": "R1-9-checks-sourceSupport",
+      "status": "open",
+      "evidence": "Tax Foundation saved page (13,432 lines) has no national average effective rate; the 1.1% figure and the $366.67 worked example rest on it. Hawaii 0.29% and NJ/IL 1.88% match the state table; the Tax Foundation rates are on owner-occupied market value, not assessed value as the page says."
+    },
+    {
+      "id": "R1-9-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "New property tax by state guide gives a median of about $263 a month on $400,000 (0.79%), while this page says the national average is 1.1% and prices the example at $366.67."
+    },
+    {
+      "id": "R1-9-factualReview-centralFacts",
+      "status": "open",
+      "evidence": "Corrected NJ/IL wording passes, but the 1.1% national-average claim attributed to the Tax Foundation is not in the saved source."
+    },
+    {
+      "id": "R1-9-factualReview-truthfulEvidence",
+      "status": "open",
+      "evidence": "Source attribution to Tax Foundation for the 1.1% average is unsupported by the saved source."
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 1,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "previous": {
+    "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/6dda37b723bd76c0aef117e9d2b3add10cef1a4c4b161dd4452cce6fd56e3b51/handoff-audit-r2.json",
+    "sha256": "6dda37b723bd76c0aef117e9d2b3add10cef1a4c4b161dd4452cce6fd56e3b51",
+    "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/handoff-audit-r2.json"
+  },
+  "reviewPairs": [
+    {
+      "snapshot": {
+        "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/7c08b9b484d27bda05f6bd1534764184648e7ae0ec7ca3f864a21ca22ea1486b/approved-snapshot.json",
+        "sha256": "7c08b9b484d27bda05f6bd1534764184648e7ae0ec7ca3f864a21ca22ea1486b",
+        "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/approved-snapshot.json"
+      },
+      "review": {
+        "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/b3891a470249becec5e930f3bb44a9ef43b93d284441652887ea83fbc5c5d988/approved-review.json",
+        "sha256": "b3891a470249becec5e930f3bb44a9ef43b93d284441652887ea83fbc5c5d988",
+        "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/approved-review.json"
+      }
+    },
+    {
+      "snapshot": {
+        "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/cfc3f97d75218248724b015172bbc58c0c7b1d69fd2f2260f0397aa06289223f/preview-snapshot-r2.json",
+        "sha256": "cfc3f97d75218248724b015172bbc58c0c7b1d69fd2f2260f0397aa06289223f",
+        "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/preview-snapshot-r2.json"
+      },
+      "review": {
+        "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/58ea21fb812bf8fa20689e4e4102ae2f5145afca3768c4839399beb6117dbba9/review-r2.json",
+        "sha256": "58ea21fb812bf8fa20689e4e4102ae2f5145afca3768c4839399beb6117dbba9",
+        "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/review-r2.json"
+      }
+    }
+  ]
+}

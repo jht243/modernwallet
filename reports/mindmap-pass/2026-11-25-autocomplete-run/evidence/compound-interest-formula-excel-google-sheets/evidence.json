@@ -1,0 +1,107 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-write",
+  "route": "/guides/compound-interest-formula-excel-google-sheets/",
+  "readerQuestion": "How do I calculate compound interest in Excel or Google Sheets? [verb-only - no PAA, no completions: SERP/PAA unavailable; ac 28/313 completions are excel/sheets/formula how-tos]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/approval-manifest.json",
+      "sha256": "699acb869e892c7940c22cd1e6c866e11f523a0ff7dfafa57ac8ce982a23616c"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/chart-review.json",
+      "sha256": "da4cb07f1b9686db6ebf29a2bb354c08a046bf27a546308e7174f04f490177b2"
+    },
+    "actionId": "A3"
+  },
+  "presentation": {
+    "medium": "text",
+    "placement": "Formulas and worked example in section 1",
+    "reason": "Readers want paste-ready formulas and checkable outputs, not another widget",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "Static formulas and a result table answer it; the existing calculator is linked for reader-specific inputs"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static layout answers faster; no sequence to animate"
+    }
+  },
+  "basis": "calculated",
+  "decisionGap": "/investing/compound-interest-calculator/ is a web tool and /guides/how-is-savings-account-interest-calculated/ covers savings APY, but no page gives paste-ready Excel or Google Sheets formulas with verified outputs and the condition that makes the FV shortcut correct.",
+  "finding": "For $10,000 at 5% for 10 years, =10000*(1+0.05/12)^(12*10) returns $16,470.09 (monthly), $16,436.19 (quarterly), $16,288.95 (yearly) and $16,486.65 (daily, n=365). With $200 deposited each month and the same monthly compounding, =FV(0.05/12,12*10,-200,-10000) returns $47,526.55 (end-of-month deposits) and $47,655.95 with type=1 (start-of-month); the $34,000 paid in earns $13,526.55. The FV shortcut is correct only when the compounding period and the deposit period are the same: with monthly deposits but daily compounding, convert to an effective monthly rate, (1+0.05/365)^(365/12)-1, which gives $47,559.87. Passing the annual rate 5% with 120 monthly periods returns $4,880,767.80, and entering deposits as positive numbers returns a negative balance.",
+  "conditions": "Fixed rate; same compounding and deposit period for the plain FV formula (use n=12 for monthly deposits); deposits at period end unless type=1; taxes and fees ignored; Excel and Google Sheets use the same argument order FV(rate, nper, pmt, [pv], [type]).",
+  "whatWouldChange": "A variable rate, deposits and compounding on different schedules (needs an effective rate per deposit period), taxes or fees, or a spreadsheet function that changes its argument order or sign convention.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/compound-interest-formula-excel-google-sheets/cases.json",
+    "sha256": "cb5ce61c164338b25343fb9343d57bac28c5a930f021da51cbe2c4807df00855"
+  },
+  "caseDecisions": "cases.json returned only generic Layer3Labs records matched on stopwords; none concern spreadsheet formulas or consumer finance, so no client or fleet case is used. caseUses is empty.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/brief.txt",
+      "sha256": "4a53fd90d16a609b6a883d858b050b9c3e7881e402fa713135bb1a14f8ca1516"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/candidate-dispositions.csv",
+      "sha256": "7704ceb7a425204bcde9ada3d4c255e6311f6144c7ede801349aabef43955c38"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/coverage-lookup.txt",
+      "sha256": "8ed3ecee4cde76da57df4d88097ccae88dc5619c6d045a2d56cca4c3d706e894"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/relevant-routes.txt",
+      "sha256": "92c8e8e7a22f5885a54cbdf50c5d9db3a1dfc245d5298fef1b4d50d5abcfd1e5"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sitemap-0.xml",
+      "sha256": "0144b1168c599e5851736398f48c5ee805a928b4cd7a181b1725d3782fc27e15"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/microsoft-fv-function.txt",
+      "sha256": "5b1857bf7a9a4b896f5ae36ea4e32d4f3eed415c3e3f4cc74ceb23eabd22b8c7"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/google-sheets-fv-function.txt",
+      "sha256": "cbe87adece8bba7070be3ce8082fad12c4e2f61a1edc67af8a3866bf93ffa729"
+    }
+  ],
+  "method": "Python re-implementation of FV(rate,nper,pmt,pv,type) = -(pv*(1+r)^n + pmt*(1+r*type)*((1+r)^n-1)/r) checked against Microsoft's documented example =FV(0.06/12,10,-200,-500,1)=2,581.40 and against a month-by-month loop for the $200 deposit case. Syntax and units note cited to Microsoft Support (FV function) and the Google Docs Editors Help (FV), both saved verbatim in research/sources.",
+  "units": "USD",
+  "limitations": "Fixed nominal rate with no taxes, fees or inflation; shows monthly, quarterly, yearly and daily compounding only; the Google Sheets help page states the consistent-units rule but not the sign convention, which comes from the Microsoft page.",
+  "counterexample": "Monthly deposits with daily compounding break the plain FV(rate/12, ...) shortcut: the correct figure is $47,559.87 against $47,526.55, a $33.32 difference over 10 years. Using the annual rate with monthly periods overstates the result by about 100 times ($4,880,767.80).",
+  "execution": {
+    "command": [
+      "python3",
+      "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/compound-interest-formula-excel-google-sheets/model.py"
+    ],
+    "code": {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/compound-interest-formula-excel-google-sheets/model.py",
+      "sha256": "ea358c45ee906ecf78eb923176ed5c656e38a981a15179bca9444a0ac2dd3607"
+    },
+    "inputs": [
+      {
+        "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/microsoft-fv-function.txt",
+        "sha256": "5b1857bf7a9a4b896f5ae36ea4e32d4f3eed415c3e3f4cc74ceb23eabd22b8c7"
+      },
+      {
+        "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/google-sheets-fv-function.txt",
+        "sha256": "cbe87adece8bba7070be3ce8082fad12c4e2f61a1edc67af8a3866bf93ffa729"
+      }
+    ],
+    "output": {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/compound-interest-formula-excel-google-sheets/output.json",
+      "sha256": "595ecd5682c53ee2b1793cfac10341e84e81a11561e8ca9f82dd906144221d3a"
+    }
+  },
+  "caseUses": [],
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [],
+    "scopeAndLimits": "Fixed nominal rate with no taxes, fees or inflation; shows monthly, quarterly, yearly and daily compounding only; the Google Sheets help page states the consistent-units rule but not the sign convention, which comes from the Microsoft page.",
+    "publicMethod": "On-page: each formula is shown with its inputs and result so readers can paste it into a sheet and compare.",
+    "placement": "Formula block and worked table in section 1, with the same-frequency condition in the opening answer and takeaway."
+  }
+}

@@ -1,0 +1,427 @@
+{
+ "priceUsd": 400000,
+ "formula": "monthly = effective_rate_pct/100 * 400000 / 12",
+ "states": [
+  {
+   "state": "New Jersey",
+   "rate2024": 1.88,
+   "rate2023": 1.98,
+   "rank": 1,
+   "monthlyOn400k": 626.67,
+   "monthlyOn400kRounded": 627
+  },
+  {
+   "state": "Illinois",
+   "rate2024": 1.88,
+   "rate2023": 1.91,
+   "rank": 2,
+   "monthlyOn400k": 626.67,
+   "monthlyOn400kRounded": 627
+  },
+  {
+   "state": "Connecticut",
+   "rate2024": 1.54,
+   "rate2023": 1.62,
+   "rank": 3,
+   "monthlyOn400k": 513.33,
+   "monthlyOn400kRounded": 513
+  },
+  {
+   "state": "Vermont",
+   "rate2024": 1.51,
+   "rate2023": 1.58,
+   "rank": 4,
+   "monthlyOn400k": 503.33,
+   "monthlyOn400kRounded": 503
+  },
+  {
+   "state": "New Hampshire",
+   "rate2024": 1.5,
+   "rate2023": 1.62,
+   "rank": 5,
+   "monthlyOn400k": 500.0,
+   "monthlyOn400kRounded": 500
+  },
+  {
+   "state": "Nebraska",
+   "rate2024": 1.44,
+   "rate2023": 1.48,
+   "rank": 6,
+   "monthlyOn400k": 480.0,
+   "monthlyOn400kRounded": 480
+  },
+  {
+   "state": "Texas",
+   "rate2024": 1.4,
+   "rate2023": 1.47,
+   "rank": 7,
+   "monthlyOn400k": 466.67,
+   "monthlyOn400kRounded": 467
+  },
+  {
+   "state": "Ohio",
+   "rate2024": 1.36,
+   "rate2023": 1.41,
+   "rank": 8,
+   "monthlyOn400k": 453.33,
+   "monthlyOn400kRounded": 453
+  },
+  {
+   "state": "Iowa",
+   "rate2024": 1.33,
+   "rate2023": 1.36,
+   "rank": 9,
+   "monthlyOn400k": 443.33,
+   "monthlyOn400kRounded": 443
+  },
+  {
+   "state": "Wisconsin",
+   "rate2024": 1.32,
+   "rate2023": 1.39,
+   "rank": 10,
+   "monthlyOn400k": 440.0,
+   "monthlyOn400kRounded": 440
+  },
+  {
+   "state": "New York",
+   "rate2024": 1.3,
+   "rate2023": 1.31,
+   "rank": 11,
+   "monthlyOn400k": 433.33,
+   "monthlyOn400kRounded": 433
+  },
+  {
+   "state": "Pennsylvania",
+   "rate2024": 1.26,
+   "rate2023": 1.31,
+   "rank": 12,
+   "monthlyOn400k": 420.0,
+   "monthlyOn400kRounded": 420
+  },
+  {
+   "state": "Kansas",
+   "rate2024": 1.21,
+   "rate2023": 1.22,
+   "rank": 13,
+   "monthlyOn400k": 403.33,
+   "monthlyOn400kRounded": 403
+  },
+  {
+   "state": "Michigan",
+   "rate2024": 1.19,
+   "rate2023": 1.23,
+   "rank": 14,
+   "monthlyOn400k": 396.67,
+   "monthlyOn400kRounded": 397
+  },
+  {
+   "state": "Rhode Island",
+   "rate2024": 1.12,
+   "rate2023": 1.19,
+   "rank": 15,
+   "monthlyOn400k": 373.33,
+   "monthlyOn400kRounded": 373
+  },
+  {
+   "state": "Massachusetts",
+   "rate2024": 1.0,
+   "rate2023": 1.03,
+   "rank": 16,
+   "monthlyOn400k": 333.33,
+   "monthlyOn400kRounded": 333
+  },
+  {
+   "state": "Minnesota",
+   "rate2024": 1.0,
+   "rate2023": 1.01,
+   "rank": 17,
+   "monthlyOn400k": 333.33,
+   "monthlyOn400kRounded": 333
+  },
+  {
+   "state": "South Dakota",
+   "rate2024": 1.0,
+   "rate2023": 1.03,
+   "rank": 18,
+   "monthlyOn400k": 333.33,
+   "monthlyOn400kRounded": 333
+  },
+  {
+   "state": "Maine",
+   "rate2024": 0.98,
+   "rate2023": 1.04,
+   "rank": 19,
+   "monthlyOn400k": 326.67,
+   "monthlyOn400kRounded": 327
+  },
+  {
+   "state": "Alaska",
+   "rate2024": 0.94,
+   "rate2023": 0.95,
+   "rank": 20,
+   "monthlyOn400k": 313.33,
+   "monthlyOn400kRounded": 313
+  },
+  {
+   "state": "Maryland",
+   "rate2024": 0.92,
+   "rate2023": 0.95,
+   "rank": 21,
+   "monthlyOn400k": 306.67,
+   "monthlyOn400kRounded": 307
+  },
+  {
+   "state": "North Dakota",
+   "rate2024": 0.92,
+   "rate2023": 0.92,
+   "rank": 22,
+   "monthlyOn400k": 306.67,
+   "monthlyOn400kRounded": 307
+  },
+  {
+   "state": "Missouri",
+   "rate2024": 0.89,
+   "rate2023": 0.91,
+   "rank": 23,
+   "monthlyOn400k": 296.67,
+   "monthlyOn400kRounded": 297
+  },
+  {
+   "state": "Oregon",
+   "rate2024": 0.81,
+   "rate2023": 0.83,
+   "rank": 24,
+   "monthlyOn400k": 270.0,
+   "monthlyOn400kRounded": 270
+  },
+  {
+   "state": "Georgia",
+   "rate2024": 0.79,
+   "rate2023": 0.82,
+   "rank": 25,
+   "monthlyOn400k": 263.33,
+   "monthlyOn400kRounded": 263
+  },
+  {
+   "state": "Oklahoma",
+   "rate2024": 0.79,
+   "rate2023": 0.8,
+   "rank": 26,
+   "monthlyOn400k": 263.33,
+   "monthlyOn400kRounded": 263
+  },
+  {
+   "state": "Florida",
+   "rate2024": 0.78,
+   "rate2023": 0.8,
+   "rank": 27,
+   "monthlyOn400k": 260.0,
+   "monthlyOn400kRounded": 260
+  },
+  {
+   "state": "Virginia",
+   "rate2024": 0.78,
+   "rate2023": 0.79,
+   "rank": 28,
+   "monthlyOn400k": 260.0,
+   "monthlyOn400kRounded": 260
+  },
+  {
+   "state": "Indiana",
+   "rate2024": 0.76,
+   "rate2023": 0.77,
+   "rank": 29,
+   "monthlyOn400k": 253.33,
+   "monthlyOn400kRounded": 253
+  },
+  {
+   "state": "Washington",
+   "rate2024": 0.75,
+   "rate2023": 0.77,
+   "rank": 30,
+   "monthlyOn400k": 250.0,
+   "monthlyOn400kRounded": 250
+  },
+  {
+   "state": "Kentucky",
+   "rate2024": 0.74,
+   "rate2023": 0.76,
+   "rank": 31,
+   "monthlyOn400k": 246.67,
+   "monthlyOn400kRounded": 247
+  },
+  {
+   "state": "California",
+   "rate2024": 0.7,
+   "rate2023": 0.7,
+   "rank": 32,
+   "monthlyOn400k": 233.33,
+   "monthlyOn400kRounded": 233
+  },
+  {
+   "state": "North Carolina",
+   "rate2024": 0.66,
+   "rate2023": 0.69,
+   "rank": 33,
+   "monthlyOn400k": 220.0,
+   "monthlyOn400kRounded": 220
+  },
+  {
+   "state": "New Mexico",
+   "rate2024": 0.63,
+   "rate2023": 0.62,
+   "rank": 34,
+   "monthlyOn400k": 210.0,
+   "monthlyOn400kRounded": 210
+  },
+  {
+   "state": "Montana",
+   "rate2024": 0.61,
+   "rate2023": 0.64,
+   "rank": 35,
+   "monthlyOn400k": 203.33,
+   "monthlyOn400kRounded": 203
+  },
+  {
+   "state": "Mississippi",
+   "rate2024": 0.58,
+   "rate2023": 0.6,
+   "rank": 36,
+   "monthlyOn400k": 193.33,
+   "monthlyOn400kRounded": 193
+  },
+  {
+   "state": "Arkansas",
+   "rate2024": 0.56,
+   "rate2023": 0.57,
+   "rank": 37,
+   "monthlyOn400k": 186.67,
+   "monthlyOn400kRounded": 187
+  },
+  {
+   "state": "Louisiana",
+   "rate2024": 0.55,
+   "rate2023": 0.54,
+   "rank": 38,
+   "monthlyOn400k": 183.33,
+   "monthlyOn400kRounded": 183
+  },
+  {
+   "state": "Delaware",
+   "rate2024": 0.54,
+   "rate2023": 0.55,
+   "rank": 39,
+   "monthlyOn400k": 180.0,
+   "monthlyOn400kRounded": 180
+  },
+  {
+   "state": "Wyoming",
+   "rate2024": 0.53,
+   "rate2023": 0.52,
+   "rank": 40,
+   "monthlyOn400k": 176.67,
+   "monthlyOn400kRounded": 177
+  },
+  {
+   "state": "Tennessee",
+   "rate2024": 0.52,
+   "rate2023": 0.56,
+   "rank": 41,
+   "monthlyOn400k": 173.33,
+   "monthlyOn400kRounded": 173
+  },
+  {
+   "state": "West Virginia",
+   "rate2024": 0.51,
+   "rate2023": 0.51,
+   "rank": 42,
+   "monthlyOn400k": 170.0,
+   "monthlyOn400kRounded": 170
+  },
+  {
+   "state": "Nevada",
+   "rate2024": 0.5,
+   "rate2023": 0.51,
+   "rank": 43,
+   "monthlyOn400k": 166.67,
+   "monthlyOn400kRounded": 167
+  },
+  {
+   "state": "Colorado",
+   "rate2024": 0.5,
+   "rate2023": 0.5,
+   "rank": 44,
+   "monthlyOn400k": 166.67,
+   "monthlyOn400kRounded": 167
+  },
+  {
+   "state": "Idaho",
+   "rate2024": 0.5,
+   "rate2023": 0.53,
+   "rank": 45,
+   "monthlyOn400k": 166.67,
+   "monthlyOn400kRounded": 167
+  },
+  {
+   "state": "South Carolina",
+   "rate2024": 0.49,
+   "rate2023": 0.51,
+   "rank": 46,
+   "monthlyOn400k": 163.33,
+   "monthlyOn400kRounded": 163
+  },
+  {
+   "state": "Arizona",
+   "rate2024": 0.48,
+   "rate2023": 0.51,
+   "rank": 47,
+   "monthlyOn400k": 160.0,
+   "monthlyOn400kRounded": 160
+  },
+  {
+   "state": "Utah",
+   "rate2024": 0.48,
+   "rate2023": 0.5,
+   "rank": 48,
+   "monthlyOn400k": 160.0,
+   "monthlyOn400kRounded": 160
+  },
+  {
+   "state": "Alabama",
+   "rate2024": 0.37,
+   "rate2023": 0.37,
+   "rank": 49,
+   "monthlyOn400k": 123.33,
+   "monthlyOn400kRounded": 123
+  },
+  {
+   "state": "Hawaii",
+   "rate2024": 0.29,
+   "rate2023": 0.3,
+   "rank": 50,
+   "monthlyOn400k": 96.67,
+   "monthlyOn400kRounded": 97
+  }
+ ],
+ "districtOfColumbia": [
+  {
+   "state": "District of Columbia",
+   "rate2024": 0.6,
+   "rate2023": 0.6,
+   "rank": 9,
+   "monthlyOn400k": 200.0,
+   "monthlyOn400kRounded": 200
+  }
+ ],
+ "max": 626.67,
+ "min": 96.67,
+ "median_state_monthly": [
+  263.33,
+  263.33
+ ],
+ "counterexample": {
+  "note": "NJ county rates in the same source run 0.93% (Cape May) to 2.47% (Camden), so a Camden County home at $400,000 owes about $823/month, above the state-average $627",
+  "camdenMonthly": 823.33,
+  "capeMayMonthly": 310.0
+ }
+}

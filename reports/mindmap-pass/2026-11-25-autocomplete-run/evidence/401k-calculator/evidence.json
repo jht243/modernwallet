@@ -1,0 +1,119 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-write",
+  "route": "/retirement/401k-calculator/",
+  "readerQuestion": "What happens to my 401(k) projection if I stop contributing or adjust for inflation? [verb-only - no PAA, no completions: SERP/PAA unavailable; ac 21/304 completions ask these variants]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/approval-manifest.json",
+      "sha256": "699acb869e892c7940c22cd1e6c866e11f523a0ff7dfafa57ac8ce982a23616c"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/chart-review.json",
+      "sha256": "da4cb07f1b9686db6ebf29a2bb354c08a046bf27a546308e7174f04f490177b2"
+    },
+    "actionId": "A5"
+  },
+  "presentation": {
+    "medium": "text",
+    "placement": "After the opening explanation, as a new section",
+    "reason": "A finite scenario table answers it; the existing calculator already accepts the inputs",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "A finite scenario table answers it; the existing calculator above already accepts the inputs"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static layout answers faster; no sequence to animate"
+    }
+  },
+  "basis": "calculated",
+  "decisionGap": "The /retirement/401k-calculator/ page projects a balance and covers market drops, but it does not show what happens to the projection when contributions stop, when the balance is read in today's dollars, or when no employer match is added.",
+  "finding": "Using the calculator's own example (age 30, $20,000 saved, $800 a month, 7% return, retire at 65) the projection is $1,540,606, or about $547,506 in today's dollars at the calculator's default 3% inflation. If contributions stop at 45 the balance at 65 is $1,147,049 (74.5% of the base), and stopping at 50 gives $1,299,367 (84.3%). With no contributions from day one the $20,000 grows to $213,532. If $300 of the $800 were employer match and no match is paid, the monthly deposit falls to $500 and the balance to $1,042,953 (67.7% of the base).",
+  "conditions": "Fixed 7% return compounded annually, deposits of 12 x the monthly amount added at the end of each year (the calculator's engine), 3% inflation for today's dollars, $300 of the $800 assumed to be employer match in the no-match case.",
+  "whatWouldChange": "A lower or negative return sequence, a different inflation rate (2% gives about $770,000 and 4% about $390,000 in today's dollars), or an employer match that does not equal the assumed $300.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/401k-calculator/cases.json",
+    "sha256": "8f0cbaf00579ac4a7f086fb70028e24fc1e0217baf9d23515ad675738fba12c7"
+  },
+  "caseDecisions": "cases.json returned only generic Layer3Labs records matched on stopwords; none concern retirement accounts, so no client or fleet case is used. caseUses is empty.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/brief.txt",
+      "sha256": "4a53fd90d16a609b6a883d858b050b9c3e7881e402fa713135bb1a14f8ca1516"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/candidate-dispositions.csv",
+      "sha256": "7704ceb7a425204bcde9ada3d4c255e6311f6144c7ede801349aabef43955c38"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/coverage-lookup.txt",
+      "sha256": "8ed3ecee4cde76da57df4d88097ccae88dc5619c6d045a2d56cca4c3d706e894"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/relevant-routes.txt",
+      "sha256": "92c8e8e7a22f5885a54cbdf50c5d9db3a1dfc245d5298fef1b4d50d5abcfd1e5"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sitemap-0.xml",
+      "sha256": "0144b1168c599e5851736398f48c5ee805a928b4cd7a181b1725d3782fc27e15"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/irs-401k-limits-2026-newsroom.txt",
+      "sha256": "758c9a0f820a93dcd86e80b650b91fa97768590e9d2e5b67ccc3268903164f4f"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/irs-401k-contribution-limits-topic.txt",
+      "sha256": "15fcc2be4994481db00d69e7ed0992689a9f504b2e797a01282792e50f5dd794"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/irs-2026-tax-inflation-adjustments.txt",
+      "sha256": "4f8162e4a661cf480eebf6a06aac06f2954ccc3d7d1d8ddc57ce59cda3aac303"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/microsoft-fv-function.txt",
+      "sha256": "5b1857bf7a9a4b896f5ae36ea4e32d4f3eed415c3e3f4cc74ceb23eabd22b8c7"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/tax-foundation-property-taxes-by-state.txt",
+      "sha256": "23d8aadd7f78efb9dc15baf039d0781485c7f6a839abef09c5246fb4483a8fd4"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/cfpb-how-reduce-your-debt.txt",
+      "sha256": "153c0241fb10c1a224546d37871bd8ee1c2741e1d230d32b0e117322566944e9"
+    }
+  ],
+  "method": "Python replica of projectRetirement() accumulation in src/lib/retirement.ts: FV(savings)=S(1+r)^n and FV(contributions)=annual x ((1+r)^k-1)/r x (1+r)^(n-k) for k contribution years, then divide by (1+inflation)^n for today's dollars. The base case reproduces the page's $1,540,606.",
+  "units": "USD",
+  "limitations": "Constant return with no sequence risk, fees, taxes, contribution limits or employer-match caps; no drawdown phase.",
+  "counterexample": "At a 0% return, stopping at 45 leaves $164,000 against $356,000 for contributing to 65, so stopping loses exactly the skipped deposits; the 7% case loses 25.5% because early deposits compound longest.",
+  "execution": {
+    "command": [
+      "python3",
+      "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/401k-calculator/model.py"
+    ],
+    "code": {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/401k-calculator/model.py",
+      "sha256": "005ec7a2f9cf4fe9da183b6f54563eea3e9fdaa2e529fe5bf88d95c7009559c9"
+    },
+    "inputs": [
+      {
+        "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/irs-401k-limits-2026-newsroom.txt",
+        "sha256": "758c9a0f820a93dcd86e80b650b91fa97768590e9d2e5b67ccc3268903164f4f"
+      }
+    ],
+    "output": {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/401k-calculator/output.json",
+      "sha256": "4eb6d09e35b77711f99b6d618ad785753311fc29087227b1c1c1acf225688075"
+    }
+  },
+  "caseUses": [],
+  "provenance": {
+    "basis": "calculated",
+    "supportingRecordIds": [],
+    "scopeAndLimits": "Constant return with no sequence risk, fees, taxes, contribution limits or employer-match caps; no drawdown phase.",
+    "publicMethod": "On-page: a scenario table lists the inputs and balances for each stop age.",
+    "placement": "New section after the opening explanation (section 2): What Happens If You Stop Contributing."
+  }
+}

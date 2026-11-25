@@ -1154,7 +1154,7 @@ export const CALCULATORS: CalculatorDef[] = [
     introText:
       "A credit card payoff calculator shows how long it will take to clear a balance and how much interest you'll pay, based on your APR and monthly payment. Enter your balance and APR in the calculator above, along with either a monthly payment or a target payoff date.\n\nFor example, a $6,000 balance at 24% APR, paid at $250 a month, is paid off in 34 months and costs $2,255.61 in interest. The calculator also automatically shows the minimum-payment-only path. With the same balance and rate, making minimum payments alone takes 252 months (about 21 years) and costs $10,886.92 in interest. That's over $8,600 more than the $250-a-month plan for the same starting balance.",
     howItWorks:
-      "Interest on a credit card accrues on the remaining balance each month, then whatever you pay above that interest reduces the principal. The calculator repeats that month by month: it takes your balance and APR, applies one month of interest, subtracts your payment, and moves to the next month until the balance hits zero. That is the same mechanic behind every amortization schedule, just without a fixed loan term forcing the math.\n\nThe minimum-payment comparison uses the formula behind most major issuers' minimum-payment box: the greater of $25 or 1% of the balance plus that month's interest. Because that minimum is recalculated every month against a shrinking balance, the required minimum payment also shrinks over time, which is exactly why minimum-only payoff stretches out for years. The [Truth in Lending Act's Regulation Z](https://www.consumerfinance.gov/rules-policy/regulations/1026/7/) requires every statement to disclose an estimated payoff time at minimum payments for this reason, but the disclosure is usually a single line buried near the payment coupon. Running your own numbers above puts the full month-by-month comparison in front of you instead.\n\nIf you enter a target payoff date instead of a payment amount, the calculator solves the problem in reverse: it finds the fixed monthly payment that clears the balance by that date, using the same standard amortization formula lenders use for a fixed-term loan.\n\nPutting extra money toward the balance compounds because every dollar of principal you clear early stops accruing interest for every remaining month. On the $6,000-at-24%-APR example above, raising the payment from $250 to $300 a month, $50 more, cuts the payoff from 34 months to 26 months and drops total interest from $2,255.61 to $1,739.24, a savings of over $500 for an 8-month-shorter payoff. A biweekly schedule works the same way through a different mechanism: paying $125 every two weeks instead of $250 once a month adds up to 26 payments a year instead of 12 monthly payments, the equivalent of one extra full payment annually. On the same balance, that pattern pays it off in 30 months and costs $2,005.98 in interest. Enter whichever fixed payment you'd actually make (biweekly total, or your regular payment plus a lump sum) as the monthly payment above to see your own numbers.",
+      "Interest on a credit card accrues on the remaining balance each month, then whatever you pay above that interest reduces the principal. The calculator repeats that month by month: it takes your balance and APR, applies one month of interest, subtracts your payment, and moves to the next month until the balance hits zero. That is the same mechanic behind every amortization schedule, just without a fixed loan term forcing the math.\n\nThe minimum-payment comparison uses the formula behind most major issuers' minimum-payment box: the greater of $25 or 1% of the balance plus that month's interest. Because that minimum is recalculated every month against a shrinking balance, the required minimum payment also shrinks over time, which is exactly why minimum-only payoff stretches out for years. The [Truth in Lending Act's Regulation Z](https://www.consumerfinance.gov/rules-policy/regulations/1026/7/) requires every statement to disclose an estimated payoff time at minimum payments for this reason, but the disclosure is usually a single line buried near the payment coupon. Running your own numbers above puts the full month-by-month comparison in front of you instead.\n\nIf you enter a target payoff date instead of a payment amount, the calculator solves the problem in reverse: it finds the fixed monthly payment that clears the balance by that date, using the same standard amortization formula lenders use for a fixed-term loan.\n\nPutting extra money toward the balance compounds because every dollar of principal you clear early stops accruing interest for every remaining month. On the $6,000-at-24%-APR example above, raising the payment from $250 to $300 a month, $50 more, cuts the payoff from 34 months to 26 months and drops total interest from $2,255.61 to $1,739.24, a savings of over $500 for an 8-month-shorter payoff. A biweekly schedule works the same way through a different mechanism: paying $125 every two weeks instead of $250 once a month adds up to 26 payments a year instead of 12 monthly payments, the equivalent of one extra full payment annually. On the same balance, that pattern pays it off in 30 months and costs $2,005.98 in interest. Enter whichever fixed payment you'd actually make (biweekly total, or your regular payment plus a lump sum) as the monthly payment above to see your own numbers. If you owe more than one balance, use the [debt payoff calculator for several balances](/debt-payoff-calculator/) to compare avalanche, snowball and minimum-only plans.",
     faqs: [
       {
         question: "How much interest will I pay on my credit card?",
@@ -3559,6 +3559,96 @@ export const CALCULATORS: CalculatorDef[] = [
       "aprPct": 7,
       "termMonths": 48,
       "payoffAfter": 12
+    }
+  },
+  // Debt payoff calculator, autocomplete pass (2026-11-25). Prose generated via scripts/lib/content_gen.py (meta beside the draft in reports/mindmap-pass/2026-11-25-autocomplete-run/drafts/).
+  {
+    "id": "debt-payoff-calculator",
+    "islandId": "debt-payoff-calculator",
+    "label": "Debt Payoff",
+    "navOrder": 67,
+    "metaTitle": "Debt Payoff Calculator: Compare Snowball vs Avalanche",
+    "metaDescription": "Free debt payoff calculator comparing debt snowball and avalanche strategies. Enter balances, APRs, and extra payments to see dates, interest, and payoff order.",
+    "targetKeyword": "debt payoff calculator",
+    "h1": "Debt Payoff Calculator",
+    "introText": "You can clear all three sample debts totaling $19,500 in 34 months and pay $4,783.63 in total interest using the avalanche method, compared to 91 months and $12,291.39 in interest when paying only minimums. \n\nTo decide which debt to pay first, make minimum payments across every balance, send your extra monthly budget to your target debt, and roll each freed minimum payment into the next balance once an account hits zero. The avalanche strategy targets the balance carrying the highest annual percentage rate (APR), while the snowball method targets the smallest balance first to give faster early wins.\n\nThis calculator starts preloaded with a store card, a credit card, and a personal loan so you can immediately see the three-plan comparison. Replace the rows with your own balances, interest rates, minimum payments, and extra monthly budget to compare your payoff dates.",
+    "howItWorks": "In our internal modeling, we compared avalanche, snowball, and minimum-payment schedules across $19,500 in consumer debt with a $200 extra monthly payment to measure the gap in total interest and completion time. The avalanche strategy clears all three balances in 34 months with $4,783.63 in total interest. The snowball strategy clears the debts in 35 months with $5,120.19 in interest, costing $336.56 more. Paying only minimums stretches the repayment period to 91 months and accumulates $12,291.39 in interest, which is $7,507.76 more interest and 57 additional months compared to avalanche.\n\nThe [Consumer Financial Protection Bureau (CFPB)](https://www.consumerfinance.gov/about-us/blog/how-reduce-your-debt) describes the highest interest rate method as focusing extra payments on your costliest balances to reduce total borrowing costs over the long run. In contrast, the CFPB defines the snowball method as paying off your smallest balance first so you eliminate individual obligations sooner. In our preloaded example, the snowball method eliminates the $2,500 store card in month 10, whereas the avalanche method eliminates its first balance (the $6,000 credit card at 27.99% APR) in month 22. Snowball clears its first debt 12 months sooner than avalanche clears its first, which is a faster early win, and it costs $336.56 in additional interest.\n\nThe financial difference between avalanche and snowball depends entirely on your rate spread. When all your debts share the same interest rate, the choice disappears. In our modeling of two debts at an identical 18% APR ($3,000 and $7,000 with a $150 extra payment), both avalanche and snowball finish in exactly 30 months and cost identical interest of $2,464.56. When your smallest balance also happens to carry your highest APR, the two methods follow the exact same payoff order. Modeling a $1,500 balance at 26% APR alongside a $9,000 loan at 9% APR with $100 extra per month produces an identical 35-month timeline, $1,611.43 in total interest, and a month-12 payoff for the first account across both strategies.",
+    "howItWorksHeading": "Snowball vs Avalanche on Your Numbers",
+    "sections": [
+      {
+        "heading": "How the Calculator Works",
+        "body": "The calculator runs a deterministic month-by-month mathematical simulation to project your payoff dates across all open accounts. Each month, the engine adds interest to every active account by multiplying the current balance by its APR divided by 12. Next, it subtracts the required minimum payment from each account, capping that payment at the remaining balance. Finally, the tool sums your original minimum payments, your extra monthly payment, and any month-one lump sum into a unified monthly budget, directing every unallocated dollar to your target debt before spilling excess funds down the order.\n\nRolling payments forward is the core mechanism that speeds up both strategies. When you fully pay off an account, that account's required minimum payment does not disappear from your budget. Instead, the engine automatically rolls that freed payment into the extra payment pool for the next debt in line. If a lender sets a minimum payment that falls below the account's monthly accrued interest, the calculator warns you that the balance is not shrinking on that minimum alone. For an individual account payoff or detailed amortization steps, use our [credit card payoff calculator](/credit-card-payoff/) to evaluate single-card minimums.\n\nThe model assumes fixed interest rates, on-time payments, no new charges or penalties, and consistent monthly funding throughout the payoff timeline. If you are deciding between paying accounts individually or replacing them with a single personal loan, our [debt consolidation calculator](/debt-consolidation-calculator/) evaluates taking out one new loan rather than ordering payments across existing accounts."
+      },
+      {
+        "heading": "Worked Example: Three Debts and $200 Extra",
+        "body": "To see the math in action, examine the baseline scenario preloaded into the calculator. This profile includes three common consumer obligations totaling $19,500 in principal and $515 in base minimum payments. Adding $200 per month raises the total monthly debt budget to $715.\n\n| Debt Name | Starting Balance | APR | Minimum Monthly Payment |\n| :--- | :--- | :--- | :--- |\n| Store card | $2,500 | 19.99% | $75 |\n| Credit card | $6,000 | 27.99% | $160 |\n| Personal loan | $11,000 | 11.00% | $280 |\n\nHere is how the three strategies perform when handling these balances:\n\n| Payoff Strategy | Debt-Free Timeline | Total Interest Paid | Total Amount Paid | Account Payoff Order |\n| :--- | :--- | :--- | :--- | :--- |\n| Avalanche | 34 months | $4,783.63 | $24,283.63 | Credit card (mo. 22), Store card (mo. 26), Personal loan (mo. 34) |\n| Snowball | 35 months | $5,120.19 | $24,620.19 | Store card (mo. 10), Credit card (mo. 27), Personal loan (mo. 35) |\n| Minimums Only | 91 months | $12,291.39 | $31,791.39 | Personal loan (mo. 49), Store card (mo. 50), Credit card (mo. 91) |\n\nAvalanche minimizes total interest charges whenever interest rates differ across accounts, while snowball costs slightly more in exchange for faster early eliminations. With equal interest rates or when your smallest balance also carries your highest rate, the choice between the two methods produces identical costs. This payoff ordering applies to unsecured debts and installment loans that you can prepay without penalty. Our recommendation would change if an account carries a prepayment penalty, if you have access to a 0% promotional rate, or if you hold only a single account.\n\nThis multi-debt calculator is not intended for someone carrying only one balance, who should use the credit card payoff calculator instead. It is also not suitable for debts with active 0% promotional periods that should not be prioritized ahead of high-interest accounts."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Which debt should I pay off first?",
+        "answer": "Pay off the debt with the highest APR first if you want to pay the least total interest, which is the avalanche method. Choose your smallest balance first if you want faster early wins, which is the snowball method. Regardless of strategy, always make minimum payments on all other accounts."
+      },
+      {
+        "question": "How long will it take to pay off all my debts?",
+        "answer": "Payoff time depends on your total balances, interest rates, and extra payments. In our baseline $19,500 example, paying only minimums takes 91 months. Adding $200 extra per month cuts that timeline to 34 months under avalanche and 35 months under snowball, saving nearly five years of payments."
+      },
+      {
+        "question": "Does adding a lump sum payment speed up debt payoff?",
+        "answer": "Applying a lump sum immediately reduces principal, lowering monthly interest accrual across all remaining months. In our model, adding a $2,000 month-one lump sum to the sample debts reduces avalanche repayment from 34 to 30 months and drops total interest from $4,783.63 to $3,323.03, saving $1,460.60 in interest."
+      },
+      {
+        "question": "Can I use this calculator for biweekly payments?",
+        "answer": "The calculator runs on monthly cycles, but you can approximate biweekly payments by adjusting your extra monthly input. Because 26 biweekly half-payments equal 13 full payments per year, divide your total monthly debt payment by 12 and enter that figure as your extra monthly payment to simulate the extra annual payment."
+      },
+      {
+        "question": "Can I include a car loan, student loan, or HELOC?",
+        "answer": "Yes, you can include any debt that has a fixed balance, an APR, and a monthly minimum payment. Keep in mind that car loans and home equity lines of credit are secured by collateral, and some installment loans carry prepayment penalties that alter the financial advantage of accelerating payoff."
+      },
+      {
+        "question": "Why might my lender's payoff date differ from this calculator?",
+        "answer": "Some lenders add interest daily, while this calculator adds it monthly using APR divided by 12. Differences also occur if your APR is variable, if the lender charges account maintenance fees, or if your actual payment dates vary from month to month."
+      },
+      {
+        "question": "Can I track debt payoff in Excel or Google Sheets?",
+        "answer": "You can replicate this logic in a spreadsheet by creating a row for each month and tracking interest, minimums, extra payments, and rolling balances across columns. This calculator runs those monthly allocation loops automatically, showing instant comparison totals without requiring manual formula maintenance or schedule rebuilding."
+      },
+      {
+        "question": "Should I pay off debt or invest extra cash?",
+        "answer": "Compare your guaranteed debt interest rate against your expected after-tax investment return. Read our guide on whether to [pay off debt or invest](/guides/pay-off-debt-or-invest/) to evaluate your options."
+      }
+    ],
+    "sources": [
+      {
+        "label": "Consumer Financial Protection Bureau: How to reduce your debt",
+        "url": "https://www.consumerfinance.gov/about-us/blog/how-reduce-your-debt"
+      }
+    ],
+    "published": "2026-11-25",
+    "updated": "2026-11-25",
+    "defaultPreset": {
+      "debts": [
+        {
+          "name": "Store card",
+          "balance": 2500,
+          "aprPct": 19.99,
+          "minPayment": 75
+        },
+        {
+          "name": "Credit card",
+          "balance": 6000,
+          "aprPct": 27.99,
+          "minPayment": 160
+        },
+        {
+          "name": "Personal loan",
+          "balance": 11000,
+          "aprPct": 11,
+          "minPayment": 280
+        }
+      ],
+      "extraMonthly": 200,
+      "lumpSum": 0
     }
   },
 ];

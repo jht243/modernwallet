@@ -1,0 +1,122 @@
+{
+  "jobId": "autocomplete-2026-11-25",
+  "reviewer": "chart-reviewer",
+  "round": 1,
+  "manifestSha256": "56e063aca15c3a3895476406bc8012ba20337182cd0b72f9dbcce4effa231d4a",
+  "manifestFileSha256": "699acb869e892c7940c22cd1e6c866e11f523a0ff7dfafa57ac8ce982a23616c",
+  "readinessSha256": "a3fc41f2e0d67751c06b3b5ea400979941a29e4acdd008cfd92bd1dfdb9f53ef",
+  "verdict": "FAIL",
+  "evidence": [
+    "Reviewer-owned bundle reports/mindmap-pass/2026-11-25-autocomplete-run/preflight-chart-review (actor chart-reviewer, context chart-review-ctx-2b54-r1 epoch 1, run 2b5434147b1b47e3ae3ff2c06513e30f): all 31 parts read in full across 8+3 Bash calls; workflow-preflight check returned delivery-complete-sources-current. Distinct from BUILD actor mindmap-build.",
+    "Manifest integrity: canonicalJsonSha256 recomputed with mindmap-gates.py hash = bded1fb87f5a085eec5c818b93b3feb78cff127d2e1890e9c1324f2efbda2328 (matches); all 55 {path,sha256} references in the manifest (evidenceFiles, link inspections, readiness, request source) exist and match on disk.",
+    "Raw intake accounting: reports/keyword-pass/2026-11-25.autocomplete.*.csv = 1,570 rows (334+313+304+294+325); candidate-dispositions.csv has 1,570 unique seed:row IDs (covered 659, D-SS 280, A1 181, A1-faq 65, A4 90, A3 28, A5 21, A2 13, X-non-US 145, X-noise 88). All kept, none silently dropped. Weakness: 636 of 659 'covered' rows share 3 blanket seed-level reason strings, not a per-completion route (see CR5).",
+    "Keyword provenance verified honest: no SEMRUSH_API_KEY/DATAFORSEO env present (env check = 0), all rows labelled estimate (autocomplete) NOT measured, SERP/PAA marked unread; no invented volumes.",
+    "Primary sources read from disk (not refetched): IRS 2026 newsroom ($24,500 limit, $8,000 catch-up confirmed), IRS 2026 adjustments ($16,100/$32,200 standard deduction, 22% bracket over $50,400 single confirmed), Microsoft FV syntax FV(rate,nper,pmt,[pv],[type]) confirmed, CFPB highest-rate and snowball methods confirmed, Tax Foundation state table read in full.",
+    "A4 numerical check against Tax Foundation state table (research/sources/tax-foundation-property-taxes-by-state.txt line ~6507): New Jersey and Illinois are both 1.88% (rank 1), Hawaii 0.29% (rank 50). On $400,000 this is $627/month (NJ/IL) and $97/month (HI). The brief's 'over $700 in New Jersey' (answer and takeaway) is not supported (would need >=2.1%).",
+    "Social Security deferral independently tested: curl with browser UA returned 403 for ssa.gov /oact/cola/, /bendpoints.html, /rtea.html, planner and an SSA PDF (confirms the 403 claim). But the SSA's own Federal Register notice 'Cost-of-Living Increase and Other Determinations for 2027' (FR doc 2026-21796, published 2026-10-26) is retrievable via federalregister.gov API (abstract returned) and govinfo.gov PDF https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21796.pdf (HTTP 200, 237,918 bytes; pdftotext shows 'Earnings Test Exempt Amounts' and 'bend points' sections). So 'central claims cannot be primary-sourced' is overstated; deferral is conservative and not harmful (CR4).",
+    "Duplicate check beyond BUILD's lookup: coverage-lookup.txt row for /guides/401k-paycheck-impact-calculator returned 'none found' (a failed lookup proves nothing), but the live sitemap and src/data/calculators.ts line ~3389 show /paycheck-calculator/ (published 2026-11-15) already takes pre-tax retirement contributions, uses the 2026 IRS standard deduction and brackets, outputs take-home per paycheck for four schedules, and has an FAQ 'How does a 401(k) contribution change my take-home pay?' giving the same answer A2 proposes (pre-tax lowers take-home by less than the contribution; $100,000 single filer example). A2's whyNewPage and readiness row never mention it (CR1).",
+    "Other collision spot checks: A1 closest unlisted route /debt-consolidation-calculator/ (calculators.ts 1485) simulates multiple debts month by month but compares consolidation vs keeping debts, not snowball vs avalanche order, so A1 stands (CR3 asks for differentiation). A3: no existing page carries Excel/Sheets formulas (spokes-investing.ts grep), siblings /guides/mortgage-amortization-schedule-excel-template/ and /guides/retirement-calculator-spreadsheet-template/ cover different calculations. A4: /mortgage/piti-calculator/ has an FAQ 'Does PITI vary by state?' with Hawaii under 0.3% and NJ over 2.1%, no 50-state table, so A4 stands but the inherited NJ figure contradicts the new Tax Foundation 1.88% (CR2). A5: /retirement/401k-calculator/ (spokes-retirement.ts 94-135) has no stop-contributing, inflation-adjusted or no-match section.",
+    "Link placements spot-checked: every source and target route in all 8 inbound and 8 outbound placements exists in the live sitemap (including /mortgage/affordability-calculator/ and /guides/how-is-savings-account-interest-calculated/); src/data anchors exist (spokes-mortgage piti-calculator at 287, spokes-investing compound-interest-calculator at 11, spokes-retirement 401k-calculator at 94, cross-links roth-vs-traditional-401k-calculator at 234, comparisons debt-snowball-vs-avalanche at 10920 with section 'Which method should you choose?' (brief says 'Which should you choose', cosmetic)). /guides/retirement-calculator-spreadsheet-template/ exists at guides.ts 13652.",
+    "Testing/attribution: all five briefs correctly select no TESTED label (section G excludes financial services), basis calculated/modeled with 'In our internal modeling, we ...' attribution, no invented tests or professional-review claims; HIGH profile for tax figures; takeaways carry conditions that reverse the answer. A3 testingAndReview contains copy-pasted 'HIGH factual profile for tax figures' text that does not fit a compound interest formula page (cosmetic).",
+    "No liabilityBlock applies: no dosing, safety, defamation or fabricated-testing content; the A4 error is a non-actionable-harm figure error caught before writing.",
+    "Verdict FAIL for Round 1 because of one duplicate-collision (A2) and one source-contradicted figure in A4's answer/takeaway. A1, A3 and A5 are clean enough to proceed; A4 is fixable via guardrail (correct to $627 NJ/IL or recompute from the table at WRITE). Unattended policy: MAIN should prune-failed-routes A2 (or reclassify) and run rebind-mechanical --carry-round1-guardrails for the rest; no Round-2 BUILD/CHART-REVIEW loop required."
+  ],
+  "findings": [
+    {
+      "id": "CR1",
+      "severity": "substantive",
+      "category": "duplicate-collision",
+      "actionId": "A2",
+      "route": "/retirement/401k-paycheck-calculator/",
+      "summary": "A2 duplicates the existing live /paycheck-calculator/ (published 2026-11-15), which already takes pre-tax retirement contributions, applies 2026 IRS brackets and standard deduction, outputs per-paycheck take-home and has an FAQ answering 'How does a 401(k) contribution change my take-home pay?' with the same mechanism A2 proposes. A2's whyNewPage claims 'None shows per-paycheck take-home' and the readiness row claims 401k-calculator has no paycheck view without naming /paycheck-calculator/; the coverage_lookup row returned 'none found', and a failed lookup does not prove absence.",
+      "fix": "MAIN: run prune-failed-routes for /retirement/401k-paycheck-calculator/ (A1, A3, A4, A5 remain clean/guardrailed). Do not create the page. Optional low-cost alternative inside existing scope, only as a reviewed manifest change: reclassify A2 as a body addition on /retirement/401k-calculator/ or /paycheck-calculator/ that surfaces the 401(k) paycheck angle (match, YTD $24,500 limit check) plus an internal link, but only if the independent reviewer confirms a genuinely different reader answer. Reassign the 13 A2 candidate IDs to 'covered by /paycheck-calculator/'.",
+      "priorStatus": "open",
+      "status": "resolved",
+      "resolutionKind": "route-pruned",
+      "resolution": "The independently rejected duplicate action was removed; no new editorial verdict was issued."
+    },
+    {
+      "id": "CR2",
+      "severity": "substantive",
+      "category": "factual-accuracy",
+      "actionId": "A4",
+      "route": "/guides/property-tax-by-state-mortgage-payment/",
+      "summary": "The A4 answer and takeaway state property tax adds 'over $700' a month in New Jersey on a $400,000 home. The saved Tax Foundation source gives NJ and Illinois 1.88% (2024 ACS), i.e. $627/month; Hawaii is 0.29%, i.e. $97/month. The existing /mortgage/piti-calculator/ FAQ also says NJ 'over 2.1%', which now contradicts the new page.",
+      "fix": "WRITE must compute every state cell as effective rate x $400,000 / 12 from the saved table (NJ and IL $627, HI $97, DC listed separately), state the range as about $97 to $627, and drop 'over $700'. Cite 2024 ACS 5-year basis and that county rates vary (NJ counties run 0.93% to 2.47% in the same source). Record a guardrail for AUDIT to recheck the inherited PITI FAQ NJ 'over 2.1%' wording (rendered-page-audit inherited contradiction); fix it in Phase 6/5 as a targeted edit or note it."
+    },
+    {
+      "id": "CR3",
+      "severity": "substantive",
+      "category": "scopeAndExclusions",
+      "actionId": "A1",
+      "route": "/debt-payoff-calculator/",
+      "summary": "A1 whyNewPage omits the existing /debt-consolidation-calculator/, which already simulates several debts month by month. Intent differs (consolidation loan vs keep, not payoff order), so no collision, but the brief should say so and link it. /compare/debt-snowball-vs-avalanche/ also already has a worked two-method example, so A1 must lead with the interactive three-strategy result, not another explainer.",
+      "fix": "In WRITE add an outbound link to /debt-consolidation-calculator/ near the 'How the Calculator Works' or FAQ section and one sentence distinguishing the two tools; keep the avalanche vs snowball vs minimums result in section 1. Reader question evidence tag should read 'ac-only' since completions exist (see CR6)."
+    },
+    {
+      "id": "CR4",
+      "severity": "substantive",
+      "category": "requestCoverage",
+      "actionId": "D-SS",
+      "route": "Social Security cluster (280 completions)",
+      "summary": "Deferral reason 'ssa.gov 403, cannot be primary-sourced' is true for ssa.gov (reproduced on five SSA URLs) but overstated: SSA's Federal Register COLA/other-determinations notice (FR 2026-21796, 2026-10-26) is available via govinfo.gov PDF and federalregister.gov API and contains bend points and earnings-test exempt amounts. Deferral is conservative and harmless, not a liabilityBlock.",
+      "fix": "No change required for this run. Record in the exclusions that the primary source route exists (FR 2026-21796) so a later run can draft SS benefit-formula/earnings-test pages; update the D-SS reason text on next pass. Do not draft SS pages now without a saved verbatim source."
+    },
+    {
+      "id": "CR5",
+      "severity": "minor",
+      "category": "accounting",
+      "actionId": "REQ-1",
+      "summary": "Disposition granularity: 636 of 659 'covered' rows use one of three blanket seed-level reason strings. Some completions are not clearly served by the named routes (for example '401k vesting calculator', '401k hardship calculator', '401k calculator solo', where coverage-lookup showed no home or only a comparison). Also A4 absorbs city completions (austin, chicago, houston, nyc, long island, philadelphia) and 'mortgage calculator piti' that a state table does not answer, and A5 absorbs 'how long will it last', 'drawdown', 'lump sum', 'catch up', 'profit sharing' and 'increasing contributions' which the A5 section scope (stop contributing, inflation-adjusted, no match) does not cover (existing /investing/withdrawal-calculator/ and /retirement/retirement-income-calculator/ cover drawdown).",
+      "fix": "Carry as a reviewer guardrail: BUILD/MAIN may leave CSV as is for this unattended run, but the final summary must not claim these specific completions are answered; list them as 'covered by blanket seed route, unverified per completion' or 'out of A4/A5 scope'. For A5 add 'with increasing contributions' or 'catch-up' only if natural; do not add a drawdown section."
+    },
+    {
+      "id": "CR6",
+      "severity": "mechanical",
+      "category": "structural-labels",
+      "summary": "Reader-question evidence tags read '[verb-only - no PAA, no completions: ...; ac 181/294 ...]' although completions exist; per build-brief Step 4.6 the verb-only tag means no PAA and no completions returned. A3 testingAndReview carries copy-pasted 'HIGH factual profile for tax figures'. A4 whyNewPage says PITI has 'no state data' while its FAQ has a Hawaii/NJ range. A1 inbound placement section 'Which should you choose' is 'Which method should you choose?' in source.",
+      "fix": "Cosmetic only; MAIN rebind-mechanical --carry-round1-guardrails folds these in. Writers should treat the question source as PAA-unavailable plus Autocomplete-backed, and cite the existing PITI FAQ in A4.",
+      "status": "resolved"
+    },
+    {
+      "id": "CR7",
+      "severity": "substantive",
+      "category": "rendered-page-audit-prep",
+      "actionId": "A3",
+      "route": "/guides/compound-interest-formula-excel-google-sheets/",
+      "summary": "A3 defers 'Google Sheets FV uses the same arguments (verify in WRITE with a second saved source)'. Per _rendered-page-audit.md preparation must finish research that supports the proposed answer. The Google Docs Editors help page for FV is reachable (curl returned 'FV(rate, number_of_periods, payment_amount, [present_value], [end_or_beginning])'). Also the headline answer =FV(rate/n, n*years, -monthly deposit, -principal) is valid only when the deposit frequency equals the compounding frequency n.",
+      "fix": "WRITE must save the Google Sheets FV page verbatim to research/sources/ before drafting and cite it first-use; state the monthly-deposit/n condition in the opening answer and takeaway (use n=12 for monthly deposits, or separate rate per deposit period). Execute and save the Python verification of every formula output shown."
+    }
+  ],
+  "resolvedFindingIds": [
+    "CR6"
+  ],
+  "requestCoverage": [
+    {
+      "requirementId": "REQ-1",
+      "status": "PASS",
+      "evidence": "1,570 input rows reconciled to 1,570 unique seed:row IDs in candidate-dispositions.csv, each with a disposition and reason; mapped IDs point to A1-A5; covered IDs name existing routes that exist in the live sitemap (16 cited routes all present). Granularity weakness recorded as CR5 (guardrail, not a failure of the requirement)."
+    },
+    {
+      "requirementId": "REQ-2",
+      "status": "PASS",
+      "evidence": "A1, A3, A4 pass the same-intent check (closest routes named, none answers the question). A2 fails: /paycheck-calculator/ already answers the 401(k) take-home question with the same method (CR1). Requirement is met once A2 is pruned.",
+      "priorStatus": "FAIL"
+    },
+    {
+      "requirementId": "REQ-3",
+      "status": "PASS",
+      "evidence": "A5 is additive-only on /retirement/401k-calculator/ at section 2 (stop contributing, inflation-adjusted, no match) using the calculator's own formula; verified the existing page lacks these sections and the plan leaves existing content untouched. Scope caveat in CR5."
+    }
+  ],
+  "prunedReviewSource": {
+    "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/chart-prune-input-36ab134db2c88708fa22b29237e20b309c8d9e7cb5f4304a4da7ccc5b1270085.json",
+    "sha256": "36ab134db2c88708fa22b29237e20b309c8d9e7cb5f4304a4da7ccc5b1270085"
+  },
+  "atReviewLimit": true,
+  "priorVerdictRetained": "FAIL",
+  "mechanicalScopeAcceptance": {
+    "independentVerdict": "FAIL",
+    "scope": "Removed duplicate only; remaining first-round findings carry into writing and independent content audit."
+  }
+}

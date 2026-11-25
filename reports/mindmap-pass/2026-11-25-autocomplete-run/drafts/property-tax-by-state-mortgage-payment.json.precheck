@@ -1,0 +1,82 @@
+{
+  "title": "Property Tax by State: Impact on Mortgage Payment",
+  "metaDescription": "See what property taxes add to a monthly mortgage payment by state, from $97 in Hawaii to $627 in New Jersey on a $400,000 home.",
+  "h1": "Property Tax by State: What It Adds to Your Mortgage Payment",
+  "cardBlurb": "Compare monthly property tax costs across all 50 states on a $400,000 home and see how escrow charges alter your housing budget.",
+  "introText": "Property tax adds roughly (effective rate x home price) / 12 to your monthly principal and interest payment, ranging from about $97 a month in Hawaii to about $627 a month in New Jersey and Illinois on a $400,000 home. At The Modern Wallet, we evaluate how escrow obligations reshape purchasing power across different markets.\n\nWhen you finance residential real estate, mortgage servicers collect local property taxes alongside your loan repayment every billing cycle. Because millage rates and assessment practices stem from municipal and county authorities rather than federal standards, identical home values carry radically disparate monthly tax obligations across state lines.\n\nEvaluating the tax baseline in your target region helps protect against unexpected escrow shortages after closing. The breakdown below details the monthly property tax impact across all 50 states using standardized baseline pricing.",
+  "sections": [
+    {
+      "heading": "Property Tax Added to a $400,000 Mortgage by State",
+      "body": "Property tax adds about (effective rate x home price) / 12 a month to a borrower's housing expense, which translates to about $97 in Hawaii up to about $627 in New Jersey and Illinois on a $400,000 home.\n\nThe District of Columbia carries an effective property tax rate of 0.60%, which adds $200 a month on a $400,000 residence and sits outside the 50-state ranking. Across the entire country, the median state effective rate results in a monthly property tax charge of about $263.\n\n{{STATE_TABLE}}\n\nBecause state rankings reflect aggregate medians, local county millage rates determine the final escrow line item on your closing disclosure."
+    },
+    {
+      "heading": "How the Estimate Works",
+      "body": "To calculate the monthly tax portion of a mortgage payment, multiply your home purchase price by the state effective rate and divide the total by 12.\n\nIn our internal modeling, we converted each state's effective rate to a monthly dollar figure on a $400,000 home using baseline data from the [Tax Foundation](https://taxfoundation.org/data/all/state/property-taxes-by-state-county/). The underlying dataset derives from the 2024 American Community Survey (ACS) 5-year estimates published by the United States Census Bureau. An effective property tax rate represents the percentage of total owner-occupied market value paid in taxes, reflecting both statutory millage rates and local assessment ratios.\n\nState averages often conceal dramatic county-level variations. In New Jersey, for example, county-level effective rates span from 0.93% in Cape May County to 2.47% in Camden County. That means an identical $400,000 purchase incurs about $310 a month in property taxes in Cape May County, but about $823 a month in Camden County. A buyer relying solely on the New Jersey state average of $627 a month faces a substantial discrepancy when closing on a home in either jurisdiction."
+    },
+    {
+      "heading": "Highest and Lowest Property Tax States",
+      "body": "The five states with the highest monthly property taxes on a $400,000 home are New Jersey ($627), Illinois ($627), Connecticut ($513), Vermont ($503), and New Hampshire ($500).\n\nHigh-rate states frequently rely on local real estate assessments to finance primary public services rather than leveraging broad-based gross income or retail sales taxes. Texas also ranks among the highest brackets with a 1.40% effective rate, generating a $467 monthly tax charge on a $400,000 home, while Ohio generates $453 at a 1.36% rate. A homebuyer shifting between state markets must account for this payment difference, as higher fixed escrow obligations reduce allowable loan sizes under debt-to-income caps. You can test how varying monthly charges impact your purchasing capacity using our [mortgage affordability calculator](/mortgage/affordability-calculator/).\n\nConversely, the five lowest property tax states for owner-occupied housing are Hawaii ($97 at 0.29%), Alabama ($123 at 0.37%), Utah ($160 at 0.48%), Arizona ($160 at 0.48%), and South Carolina ($163 at 0.49%). Other low-tax options include Idaho, Colorado, and Nevada, which each carry a 0.50% effective rate adding $167 a month. Lower effective rates offer borrowers substantial relief on their ongoing recurring monthly commitments, allowing a larger percentage of housing expenditure to amortize loan principal."
+    },
+    {
+      "heading": "What Else Goes Into Escrow",
+      "body": "A complete mortgage escrow payment incorporates real estate taxes alongside homeowners insurance, private mortgage insurance (PMI), and applicable special assessments.\n\nOur state comparison table models property taxes alone, meaning homeowners insurance premiums and private mortgage insurance remain excluded from these specific figures. Homeowners insurance costs fluctuate based on structural replacement values, regional climate exposures, and building materials, while private mortgage insurance applies specifically to conventional loans originated with down payments under 20%. Homeowners association (HOA) dues also sit outside standard escrow accounts and require direct disbursement to management entities. To calculate your comprehensive monthly housing obligation including all loan and insurance components, utilize our [PITI mortgage calculator](/mortgage/piti-calculator/), where PITI stands for principal, interest, taxes, and insurance.\n\nWhen preparing for loan underwriting, locate the specific parcel millage rate through your local county assessor or municipal tax collector. Applying the precise county rate to your contract price prevents unexpected cash-to-close shortfalls and helps you avoid common [mortgage mistakes before applying](/guides/mortgage-mistakes-before-applying/)."
+    },
+    {
+      "heading": "Our Takeaway",
+      "body": "Property tax can add from about $97 to about $627 a month on a $400,000 home depending on state, but you must consult your specific county rate for the final accurate number.\n\nThis benchmark modeling applies to owner-occupied residential properties assessed at the exact $400,000 baseline price. This analysis is not applicable to residential tenants, who pay shelter expenses via lease agreements rather than direct tax bills, nor does it capture multi-million-dollar purchases without linear adjustment. If your home purchase differs from $400,000, scale the monthly dollar figures proportionally by multiplying the state rate against your target valuation before dividing by 12.\n\nOur conclusions would change if local taxing jurisdictions revise their assessment ratios, if state legislatures expand homestead exemption limits, or if future American Community Survey data published by the Tax Foundation modifies verified effective rates. Determine your local county tax rate before submitting an offer so your debt ratios remain protected during underwriting."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/mortgage/piti-calculator/",
+      "label": "PITI Mortgage Calculator"
+    },
+    {
+      "href": "/mortgage/affordability-calculator/",
+      "label": "Mortgage Affordability Calculator"
+    },
+    {
+      "href": "/hidden-cost-of-owning-a-home-calculator/",
+      "label": "Hidden Cost of Owning a Home Calculator"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does a mortgage calculator include property tax and insurance?",
+      "answer": "Standard mortgage calculators calculate only principal and interest repayment, whereas comprehensive tools incorporate property tax and insurance reserves. To compute your complete monthly housing expense including tax and insurance escrows, enter your loan and property details into our [PITI mortgage calculator](/mortgage/piti-calculator/)."
+    },
+    {
+      "question": "How much is property tax on a $400,000 house in the highest and lowest states?",
+      "answer": "On a $400,000 home, property taxes add about $627 a month in New Jersey and Illinois at the top of the state rankings, compared to about $97 a month in Hawaii at the bottom. The median state level sits at roughly $263 a month."
+    },
+    {
+      "question": "What is an effective property tax rate?",
+      "answer": "An effective property tax rate measures the annual property tax paid as a percentage of the total market value of owner-occupied housing. It accounts for statutory millage rates, local assessment assessment percentages, and broad residential tax policies across a state."
+    },
+    {
+      "question": "Why do property taxes differ inside the same state?",
+      "answer": "Property taxes differ within a state because local counties, school districts, and municipalities levy independent millage rates based on distinct operational budgets. For instance, New Jersey county rates span from 0.93% in Cape May County to 2.47% in Camden County, creating very different monthly payments on identical home prices."
+    },
+    {
+      "question": "Is homeowners insurance included in the monthly property tax figures?",
+      "answer": "Homeowners insurance is not included in the monthly property tax figures on this page. Property tax estimates represent municipal and county ad valorem levies, whereas hazard insurance coverage is priced independently based on regional risk factors and structure replacement costs."
+    },
+    {
+      "question": "How do I calculate monthly property taxes for my specific home price?",
+      "answer": "To calculate monthly property taxes for your specific home price, multiply your target purchase price by your local effective tax rate percentage and divide the resulting figure by 12. For example, a $300,000 property in a 1.00% tax jurisdiction yields an estimated $250 monthly escrow payment."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Tax Foundation: Property Taxes by State and County",
+      "url": "https://taxfoundation.org/data/all/state/property-taxes-by-state-county/"
+    }
+  ],
+  "disclaimerText": "This guide provides general educational information about property tax rates and should not be construed as personalized financial, tax, or mortgage lending advice.",
+  "reviewerNote": {
+    "label": "Publisher's Take",
+    "reviewedDate": "November 25, 2026",
+    "note": "State-level effective tax rates offer a helpful baseline, but regional millage variances and assessment formulas ultimately dictate your closing escrow requirements. When sizing residential debt, always verify your specific county tax rate to avoid sudden shifts in debt-to-income underwriting."
+  },
+  "slug": "property-tax-by-state-mortgage-payment"
+}

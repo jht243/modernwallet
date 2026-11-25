@@ -1,0 +1,31 @@
+{
+  "originRoutine": "mindmap-pass (autocomplete-2026-11-25)",
+  "route": "/guides/compound-interest-formula-excel-google-sheets/",
+  "queryFamily": "compound interest calculator excel / google sheets / formula (28 mapped completions)",
+  "hypothesis": "Paste-ready, verified FV and power formulas with the same-frequency condition earn clicks on spreadsheet-formula queries the web calculator page does not target.",
+  "primaryMetric": "incremental Google clicks (supporting: impressions, position, CTR by query family)",
+  "baselineReference": {
+    "status": "not-yet-published",
+    "window": null,
+    "property": "https://www.themodernwallet.com/",
+    "canonicalUrl": "https://www.themodernwallet.com/guides/compound-interest-formula-excel-google-sheets/"
+  },
+  "comparatorPlan": "age-matched new pages in the same hub for new routes; unchanged sibling spokes for the existing-page enrichment",
+  "changeScope": "new-page",
+  "sourceRefreshTrigger": "Tax Foundation, IRS, CFPB, Microsoft or Google help page changes",
+  "reviewWindows": {
+    "day28": "first 28 complete live days",
+    "day56": "second 28 complete live days"
+  },
+  "outcomeStatus": "local-only",
+  "deployment": {
+    "status": "not-deployed",
+    "commit": null,
+    "deployedDate": null
+  },
+  "productionCostRecords": [
+    "reports/content-gen-usage.jsonl"
+  ],
+  "evidencePacket": "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/compound-interest-formula-excel-google-sheets/evidence.json",
+  "note": "Demand estimate is Autocomplete only; no SERP/PAA or volume data in this run. No uplift is claimed."
+}

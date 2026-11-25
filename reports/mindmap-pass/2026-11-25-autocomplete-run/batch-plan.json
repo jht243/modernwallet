@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "jobId": "autocomplete-2026-11-25",
+  "subBatchingRecommended": true,
+  "batchCount": 2,
+  "totalNewPages": 3,
+  "totalRoutes": 10,
+  "disjointPartition": true,
+  "batches": [
+    {
+      "batchIndex": 1,
+      "label": "batch-1",
+      "actionIds": [
+        "A1",
+        "A3",
+        "A4"
+      ],
+      "newPageRoutes": [
+        "/debt-payoff-calculator/",
+        "/guides/compound-interest-formula-excel-google-sheets/",
+        "/guides/property-tax-by-state-mortgage-payment/"
+      ],
+      "existingRoutes": [
+        "/retirement/401k-calculator/",
+        "/credit-card-payoff/",
+        "/compare/debt-snowball-vs-avalanche/",
+        "/investing/compound-interest-calculator/",
+        "/guides/retirement-calculator-spreadsheet-template/"
+      ],
+      "routes": [
+        "/debt-payoff-calculator/",
+        "/guides/compound-interest-formula-excel-google-sheets/",
+        "/guides/property-tax-by-state-mortgage-payment/",
+        "/retirement/401k-calculator/",
+        "/credit-card-payoff/",
+        "/compare/debt-snowball-vs-avalanche/",
+        "/investing/compound-interest-calculator/",
+        "/guides/retirement-calculator-spreadsheet-template/"
+      ],
+      "routeFlags": "--route /debt-payoff-calculator/ --route /guides/compound-interest-formula-excel-google-sheets/ --route /guides/property-tax-by-state-mortgage-payment/ --route /retirement/401k-calculator/ --route /credit-card-payoff/ --route /compare/debt-snowball-vs-avalanche/ --route /investing/compound-interest-calculator/ --route /guides/retirement-calculator-spreadsheet-template/"
+    },
+    {
+      "batchIndex": 2,
+      "label": "batch-2",
+      "actionIds": [],
+      "newPageRoutes": [],
+      "existingRoutes": [
+        "/mortgage/piti-calculator/",
+        "/mortgage/affordability-calculator/"
+      ],
+      "routes": [
+        "/mortgage/piti-calculator/",
+        "/mortgage/affordability-calculator/"
+      ],
+      "routeFlags": "--route /mortgage/piti-calculator/ --route /mortgage/affordability-calculator/"
+    }
+  ]
+}

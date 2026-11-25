@@ -78,6 +78,7 @@ import TrumpVs529Calculator from "./TrumpVs529Calculator";
 import MortgageRecastCalculator from "./MortgageRecastCalculator";
 import BiweeklyMortgageCalculator from "./BiweeklyMortgageCalculator";
 import PayoffVsInvestCalculator from "./PayoffVsInvestCalculator";
+import DebtPayoffCalculator from "./DebtPayoffCalculator";
 import Rule78Calculator from "./Rule78Calculator";
 import DebtToIncomeCalculator from "./DebtToIncomeCalculator";
 import SocialSecurityTaxableCalculator from "./SocialSecurityTaxableCalculator";
@@ -167,6 +168,8 @@ const ISLANDS: Record<string, React.ComponentType<any>> = {
   "cd-calculator": CdCalculator,
   "emergency-fund-calculator": EmergencyFundCalculator,
   "debt-consolidation-calculator": DebtConsolidationCalculator,
+  // Autocomplete pass (2026-11-25): several debts, avalanche vs snowball vs minimums-only payoff date, interest and order.
+  "debt-payoff-calculator": DebtPayoffCalculator,
   // keyword-gap-pass (2026-10-11): purchasing power / future cost, and fund fee drag.
   "inflation-calculator": InflationCalculator,
   "expense-ratio-calculator": ExpenseRatioCalculator,

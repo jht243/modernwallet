@@ -1,0 +1,90 @@
+{
+  "title": "Compound Interest Formula in Excel and Google Sheets",
+  "metaDescription": "Calculate compound interest in Excel and Google Sheets. Copy verified FV and mathematical power formulas for lump sums and recurring monthly deposits.",
+  "h1": "Compound Interest Formula in Excel and Google Sheets",
+  "cardBlurb": "Learn exact formulas to calculate compound interest in Excel and Google Sheets for lump sums and monthly deposits.",
+  "introText": "To calculate compound interest in Excel or Google Sheets, use `=P*(1+r/n)^(n*t)` for a lump sum balance or `=FV(rate/n, n*years, -deposit, -principal)` when adding regular contributions. Both formulas return exact future account balances across any standard compounding schedule.\n\nThe `=FV` shortcut is accurate only when regular deposits match the compounding frequency, such as monthly additions with monthly compounding.\n\nIf you prefer an instant calculation without manually entering spreadsheet syntax, run your figures through our [compound interest calculator](/investing/compound-interest-calculator/) to compare outcomes instantly.",
+  "sections": [
+    {
+      "heading": "How to Calculate Compound Interest in Excel and Google Sheets",
+      "body": "To calculate compound interest in a spreadsheet, enter `=P*(1+r/n)^(n*t)` for an initial lump sum or `=FV(rate/n, n*years, -deposit, -principal)` for recurring contributions. In these formulas, `P` represents initial principal, `r` is the annual interest rate, `n` is compounding periods per year, and `t` is total investment years.\n\nIn our internal modeling, we ran both formulas on a $10,000 initial balance at a 5% nominal rate over 10 years, confirming that monthly compounding produces an exact future value (FV) of $16,470.09. We verified our mathematical power outputs against a month-by-month calculation loop and checked the built-in function against the documented test case published by [Microsoft Support](https://support.microsoft.com/en-us/excel/functions/fv-function), which confirms `=FV(0.06/12,10,-200,-500,1)` equals $2,581.40.\n\nSpreadsheets require cash outflows to be entered as negative numbers. If you omit the negative signs before regular contributions or initial principal, the formula produces a negative future balance. When regular deposits occur on a different timeline than compounding, such as monthly deposits alongside daily compounding, you must compute an effective periodic rate rather than using a simple rate division."
+    },
+    {
+      "heading": "The Compound Interest Formula Step by Step",
+      "body": "The standard compound interest formula evaluates exponential asset growth using the equation `A = P*(1 + r/n)^(n*t)`.\n\nEach component represents a concrete variable in your savings plan:\n- `A` is the final future balance after all interest accrues.\n- `P` is the starting principal balance.\n- `r` is the nominal annual interest rate expressed as a decimal.\n- `n` is the number of times interest compounds per calendar year.\n- `t` is the overall duration of the investment in years.\n\nConsider a starting balance of $10,000 invested at 5% nominal annual interest for 10 years with monthly compounding. In cell format, write `=10000*(1+0.05/12)^(12*10)`. The term `0.05/12` divides the annual percentage rate (APR) into a monthly rate of approximately 0.004167, while `12*10` calculates the 120 total compounding periods. Evaluating this expression yields exactly $16,470.09.\n\nChanging the compounding frequency alters the exponent and periodic divisor. Using the same $10,000 balance at 5% over 10 years, annual compounding (`n=1`) entered as `=10000*(1+0.05/1)^(1*10)` produces $16,288.95. Quarterly compounding (`n=4`) entered as `=10000*(1+0.05/4)^(4*10)` yields $16,436.19. Daily compounding (`n=365`) entered as `=10000*(1+0.05/365)^(365*10)` grows to $16,486.65. You can also evaluate a lump sum using the built-in future value syntax `=FV(0.05/12,12*10,0,-10000)`, which returns the identical $16,470.09."
+    },
+    {
+      "heading": "Adding Monthly Contributions With FV",
+      "body": "When you add recurring savings to an existing investment, use the future value function supported identically in [Microsoft Support](https://support.microsoft.com/en-us/excel/functions/fv-function) and Google Docs Editors Help. Both platforms implement the syntax `FV(rate, nper, pmt, [pv], [type])`.\n\nThe arguments represent specific cash flow parameters:\n- `rate` is the interest rate applied per single period.\n- `nper` is the total count of compounding payment periods.\n- `pmt` is the cash deposit added each period.\n- `pv` is the present value or initial principal balance.\n- `type` indicates payment timing, where 0 represents the end of the period and 1 represents the beginning.\n\nFor a $10,000 starting balance with $200 deposited at the end of each month at 5% annual interest for 10 years, enter `=FV(0.05/12,12*10,-200,-10000)`. This returns $47,526.55. Over 10 years, your cumulative cash contributions total $34,000, consisting of the $10,000 principal plus $24,000 in monthly additions. Total compound interest earned equals $13,526.55. If you initiate deposits at the beginning of each period instead, enter `=FV(0.05/12,12*10,-200,-10000,1)`, which yields $47,655.95.\n\nIf you begin with zero initial principal and contribute only regular monthly deposits, omit the principal entry: `=FV(0.05/12,12*10,-200)` yields $31,056.46. When deposits and compounding occur strictly once per year, enter `=FV(5%,10,-2400,-10000)`, returning $46,475.89.\n\nA critical mathematical condition applies: the basic `=FV(rate/n, n*years, -deposit, -principal)` shortcut assumes the contribution schedule matches the compounding frequency. If you contribute $200 monthly while the financial institution compounds interest daily, standard rate division slightly understates growth. To resolve this mismatch, calculate the effective monthly rate using `(1+0.05/365)^(365/12)-1`, which equals 0.00417507. Entering `=FV(0.00417507,12*10,-200,-10000)` produces $47,559.87. That creates a $33.32 difference over 10 years compared to the simple monthly division output of $47,526.55."
+    },
+    {
+      "heading": "Daily, Monthly and Yearly Compounding Compared",
+      "body": "Increasing the frequency of compounding periods accelerates overall account growth by adding accrued interest to the principal base earlier. To see how deposit institutions handle these daily mechanics, read our review of [how savings account interest is calculated](/guides/how-is-savings-account-interest-calculated/).\n\nThe table below models a $10,000 principal deposit earning a 5% nominal annual interest rate over a 10-year term across different compounding frequencies:\n\n| Compounding Frequency | Periodic Divisor (n) | Formula Syntax | Future Value (10 Years) | Effective Annual Percentage Yield (APY) |\n| :--- | :--- | :--- | :--- | :--- |\n| Annually | 1 | `=10000*(1+0.05/1)^(1*10)` | $16,288.95 | 5.0000% |\n| Quarterly | 4 | `=10000*(1+0.05/4)^(4*10)` | $16,436.19 | 5.0945% |\n| Monthly | 12 | `=10000*(1+0.05/12)^(12*10)` | $16,470.09 | 5.1162% |\n| Daily | 365 | `=10000*(1+0.05/365)^(365*10)` | $16,486.65 | 5.1267% |\n\nDaily compounding produces $197.70 more in accumulated interest than annual compounding on a $10,000 balance over 10 years. For continuous compounding benchmarks, theoretical growth reaches $16,487.21 under identical terms. Annual percentage yield (APY) measures this true annualized return. A 5% nominal annual rate yields an effective 5.1162% under monthly compounding and 5.1267% under daily compounding."
+    },
+    {
+      "heading": "Common Spreadsheet Mistakes",
+      "body": "Formulas fail when users mismatch timing inputs or violate spreadsheet sign rules. Avoid these three common calculation errors:\n\n1. **Entering annual interest rates against monthly periods.** Passing an unadjusted annual rate such as 5% or 0.05 alongside 120 monthly periods in `=FV(0.05, 120, -200, -10000)` causes the software to apply a 5% return each individual month. This mistake inflates the projected balance to $4,880,767.80 instead of the true $47,526.55 balance. Always divide the annual rate by your annual periods.\n\n2. **Omitting negative signs on outgoing deposits and principal.** Financial functions follow strict cash flow conventions documented by Microsoft and Google. Money deposited represents cash leaving your hand, which must be entered as a negative number. Writing `=FV(0.05/12, 120, 200, 10000)` yields -$47,526.55. Insert negative signs before payment and present value arguments to display positive savings balances.\n\n3. **Ignoring compounding and contribution schedule mismatches.** The standard `FV` formula assumes periodic contributions occur on the identical schedule as interest compounding. If you deposit funds monthly but earn interest compounded daily, using naive monthly division understates growth. Converting your nominal daily rate into an effective monthly rate eliminates this variance."
+    },
+    {
+      "heading": "Our Takeaway",
+      "body": "To model investment compounding accurately, use `=FV(rate/n, n*years, -deposit, -principal)` whenever your deposit frequency matches your compounding schedule, or `=P*(1+r/n)^(n*t)` for fixed lump-sum balances. \n\nThis spreadsheet modeling approach is not suitable for individuals seeking instant figures without formula entry, nor does it accommodate variable-rate products. Readers requiring fast comparisons across custom scenarios can model their numbers using our [compound interest calculator](/investing/compound-interest-calculator/).\n\nOur recommendation would change if deposit accounts adjust to floating rates, if tax withholding or custodial platform fees are subtracted from annual growth, or if a spreadsheet platform updates its foundational financial argument conventions. For your next step, copy our verified formulas into your personal workbook to audit your current wealth accumulation schedule."
+    }
+  ],
+  "tools": [
+    {
+      "href": "/investing/compound-interest-calculator/",
+      "label": "Compound interest calculator"
+    },
+    {
+      "href": "/guides/retirement-calculator-spreadsheet-template/",
+      "label": "Retirement spreadsheet template guide"
+    },
+    {
+      "href": "/guides/how-is-savings-account-interest-calculated/",
+      "label": "How savings account interest is calculated"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How to calculate compound interest in Excel?",
+      "answer": "Calculate compound interest in Excel using `=P*(1+r/n)^(n*t)` for a lump sum or `=FV(rate/n, n*years, -pmt, -pv)` for recurring payments. For example, a $10,000 lump sum at 5% interest for 10 years compounded monthly is entered as `=10000*(1+0.05/12)^(12*10)`, which outputs $16,470.09. Enter outgoing investments as negative numbers to ensure the function outputs a positive balance."
+    },
+    {
+      "question": "Is compound interest calculated monthly or yearly?",
+      "answer": "Compound interest can compound on any schedule specified by the financial institution, commonly daily, monthly, or yearly. On a $10,000 balance at 5% over 10 years, annual compounding produces $16,288.95 while monthly compounding produces $16,470.09."
+    },
+    {
+      "question": "Does the same compound interest formula work in Google Sheets?",
+      "answer": "Yes, Google Sheets uses the exact same syntax and argument order as Excel for calculating compound interest. Both applications accept the standard mathematical power equation `=P*(1+r/n)^(n*t)` as well as the built-in financial function `=FV(rate, nper, pmt, [pv], [type])`. Cell arguments and sign conventions operate identically across both platforms."
+    },
+    {
+      "question": "How do you calculate quarterly or half-yearly compounding?",
+      "answer": "Calculate quarterly compounding by setting the periodic divisor `n` to 4, and half-yearly compounding by setting `n` to 2. For a $10,000 investment at 5% for 10 years compounded quarterly, the formula `=10000*(1+0.05/4)^(4*10)` produces exactly $16,436.19. To model semi-annual compounding under the same parameters, replace the divisor and multiplier with 2 in the formula `=P*(1+r/2)^(2*t)`."
+    },
+    {
+      "question": "How do you include monthly deposits in the compound interest formula?",
+      "answer": "Include monthly deposits by using the future value function `=FV(rate/12, 12*years, -monthly_deposit, -initial_principal)`. For a $10,000 starting balance with $200 added at the end of each month at 5% interest over 10 years, enter `=FV(0.05/12, 12*10, -200, -10000)`. This returns $47,526.55, reflecting $34,000 in total out-of-pocket deposits and $13,526.55 in earned compound interest."
+    },
+    {
+      "question": "What interest rate should you enter in spreadsheet formulas?",
+      "answer": "Enter the periodic interest rate, which is the nominal annual rate divided by the number of compounding periods per year. If your annual rate is 5% and interest compounds monthly, enter `0.05/12` or `5%/12` as the rate argument. Entering the full annual rate of 0.05 alongside 120 monthly periods erroneously calculates 5% growth per month, severely overstating results."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Microsoft Support FV Function",
+      "url": "https://support.microsoft.com/en-us/excel/functions/fv-function"
+    },
+    {
+      "label": "Google Docs Editors Help FV",
+      "url": ""
+    }
+  ],
+  "disclaimerText": "This guide provides general educational information about spreadsheet formulas and financial calculations, not personalized investment or financial advice.",
+  "reviewerNote": {
+    "label": "Publisher's Take",
+    "reviewedDate": "November 25, 2026",
+    "note": "Spreadsheet models only deliver dependable projections when input periods strictly match cash flow timing. Confirming your periodic rates against documented formula baselines prevents significant projection errors in multi-year wealth plans."
+  },
+  "slug": "compound-interest-formula-excel-google-sheets"
+}

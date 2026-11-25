@@ -1,0 +1,54 @@
+{
+ "caseUseReview": {
+  "evidence": "No client case used and none claimed.",
+  "status": "PASS"
+ },
+ "conditionsAndCounterexample": {
+  "evidence": "0% return case ($164,000 vs $356,000) and the no-match case are printed; constant 7% return, no taxes and no retirees are stated limits.",
+  "status": "PASS"
+ },
+ "localExclusions": {
+  "evidence": "Informational retirement projection; no tested label; disclaimer at bottom.",
+  "status": "PASS"
+ },
+ "packetSha256": "3641ce786d4ef2af54a5695a420ab0f305711e57738664fd983257cce1b501df",
+ "presentationReview": {
+  "evidence": "Finite table in prose fits because the existing calculator is the interactive element; the answer is readable statically.",
+  "status": "PASS"
+ },
+ "renderedConsistency": {
+  "evidence": "Independent replay matched $1,540,606, $1,147,049, $1,027,619, $213,532, $1,042,953 and the inflation variants; page defaults match the calculator preset.",
+  "status": "PASS"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/approved-review.json",
+  "sha256": "b3891a470249becec5e930f3bb44a9ef43b93d284441652887ea83fbc5c5d988"
+ },
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/approved-snapshot.json",
+  "sha256": "7c08b9b484d27bda05f6bd1534764184648e7ae0ec7ca3f864a21ca22ea1486b"
+ },
+ "requestCoverage": [
+  {
+   "evidence": "The rendered page adds the requested stop-contributing and inflation-adjusted answers to the 401k calculator without a drawdown section (CR5).",
+   "requirementId": "REQ-1",
+   "status": "PASS"
+  },
+  {
+   "evidence": "The rendered page adds the requested stop-contributing and inflation-adjusted answers to the 401k calculator without a drawdown section (CR5).",
+   "requirementId": "REQ-3",
+   "status": "PASS"
+  }
+ ],
+ "reviewer": "mindmap-audit",
+ "sourceAndAssumptions": {
+  "evidence": "Model is the site retirement engine (annual compounding, year-end deposits); inputs are stated; IRS limits come from the saved IRS pages.",
+  "status": "PASS"
+ },
+ "usefulness": {
+  "evidence": "The stop-contributing section answers the question with a stop-age table, today-dollar column, a no-match case and a 0% return counterexample, and sits directly after the calculator.",
+  "status": "PASS"
+ },
+ "verdict": "PASS",
+ "replaySha256": "9ee99483906959505eddb5224a2aeaac181ee346368f8752ca7854b022ce7db8"
+}

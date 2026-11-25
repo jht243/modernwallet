@@ -1,0 +1,225 @@
+CANONICAL URL: https://support.google.com/docs/answer/3093224?hl=en
+RETRIEVED UTC: 2026-11-25T08:21:30Z
+
+FV - Google Docs Editors Help       Skip to main content 
+
+Google Docs Editors Help
+
+Sign in
+
+Google Help
+
+Help Center
+Community
+Google Docs Editors
+
+Privacy Policy
+Terms of Service
+Submit feedback
+
+   Send feedback on...
+
+This help content & information
+
+General Help Center experience
+
+CloseNext
+
+Help Center
+Community
+Gemini in Docs Editors
+
+Google Docs Editors
+
+                                   FV
+The FV function calculates the future value of an annuity investment based on constant-amount periodic payments and a constant interest rate.
+
+Sample Usage
+
+FV(2,12,100,400)
+
+FV(A2,B2,C2,D2,1)
+
+Syntax
+
+FV(rate, number_of_periods, payment_amount, [present_value], [end_or_beginning])
+
+    rate - The interest rate.
+
+    number_of_periods - The number of payments to be made.
+
+    payment_amount - The amount per period to be paid.
+
+    present_value - [ OPTIONAL - 0 by default ] - The current value of the annuity.
+
+    end_or_beginning - [ OPTIONAL - 0 by default ] - Whether payments are due at the end (0) or beginning (1) of each period.
+
+Notes
+
+  Ensure that consistent units are used for rate, number_of_periods, and payment_amount. For example, a car loan for 36 months may be paid monthly, in which case the annual percentage rate should be divided by 12 and the number of payments is 36. On the other hand, a different type of loan of the same length might be paid quarterly, in which case the annual percentage rate should be divided by 4 and the number of payments would be 12.
+
+See Also
+
+PV: Calculates the present value of an annuity investment based on constant-amount periodic payments and a constant interest rate.
+
+PPMT: The PPMT function calculates the payment on the principal of an investment based on constant-amount periodic payments and a constant interest rate.
+
+PMT: The PMT function calculates the periodic payment for an annuity investment based on constant-amount periodic payments and a constant interest rate.
+
+NPER: The NPER function calculates the number of payment periods for an investment based on constant-amount periodic payments and a constant interest rate.
+
+IPMT: The IPMT function calculates the payment on interest for an investment based on constant-amount periodic payments and a constant interest rate.
+
+FVSCHEDULE: The FVSCHEDULE function calculates the future value of some principal based on a specified series of potentially varying interest rates.
+
+Examples
+
+                Need more help?
+ Try these next steps:
+
+    Post to the help community    Get answers from community members  
+
+ true
+     Financial
+1 of 51
+Google Sheets function list
+2 of 51
+ACCRINT
+3 of 51
+ACCRINTM
+4 of 51
+AMORLINC function
+5 of 51
+COUPDAYBS
+6 of 51
+COUPDAYS
+7 of 51
+COUPDAYSNC
+8 of 51
+COUPNCD
+9 of 51
+COUPNUM
+10 of 51
+COUPPCD
+11 of 51
+CUMIPMT
+12 of 51
+CUMPRINC
+13 of 51
+DB
+14 of 51
+DDB
+15 of 51
+DISC
+16 of 51
+DOLLARDE
+17 of 51
+DOLLARFR
+18 of 51
+DURATION
+19 of 51
+EFFECT
+20 of 51
+FV
+21 of 51
+FVSCHEDULE
+22 of 51
+INTRATE
+23 of 51
+IPMT
+24 of 51
+IRR
+25 of 51
+ISPMT function
+26 of 51
+MDURATION
+27 of 51
+MIRR
+28 of 51
+NOMINAL
+29 of 51
+NPER
+30 of 51
+NPV function
+31 of 51
+PDURATION function
+32 of 51
+PMT
+33 of 51
+PPMT
+34 of 51
+PRICE
+35 of 51
+PRICEDISC
+36 of 51
+PRICEMAT
+37 of 51
+PV
+38 of 51
+RATE
+39 of 51
+RECEIVED
+40 of 51
+RRI function
+41 of 51
+SLN
+42 of 51
+SYD
+43 of 51
+TBILLEQ
+44 of 51
+TBILLPRICE
+45 of 51
+TBILLYIELD
+46 of 51
+VDB function
+47 of 51
+XIRR
+48 of 51
+XNPV
+49 of 51
+YIELD
+50 of 51
+YIELDDISC
+51 of 51
+YIELDMAT function
+
+  Visit the Learning Center  Using Google products, like Google Docs, at work or school? Try powerful tips, tutorials, and templates. Learn to work on Office files without installing Office, create dynamic project plans and team calendars, auto-organize your inbox, and more.
+
+             ©2026 Google     Privacy Policy  
+   Terms of Service  
+
+      Language   català‎dansk‎Deutsch‎English (United Kingdom)‎español‎español (Latinoamérica)‎français‎Indonesia‎italiano‎magyar‎Melayu‎Nederlands‎norsk‎polski‎português‎português (Brasil)‎română‎suomi‎svenska‎Tiếng Việt‎Türkçe‎čeština‎Ελληνικά‎русский‎українська‎‏עברית‏العربيةमराठी‎हिन्दी‎தமிழ்‎తెలుగు‎ไทย‎中文（简体）‎中文（繁體）‎日本語‎한국어‎ English‎            Enable Dark Mode
+
+        Send feedback on...
+ This help content & information General Help Center experience 
+
+  Search
+Clear search
+Close search
+Google apps
+Main menu
+
+                1467281110255358779
+                                                            true
+
+                        Search Help Center
+   false
+    true
+
+    true
+
+    true
+
+                                                 true
+   true
+   35
+                                                                                                               false
+
+    false
+
+                                                                                                                                                           false
+   false
+
+  false
+  

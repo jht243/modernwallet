@@ -1,0 +1,52 @@
+{
+ "lumpSum": {
+  "P": 10000,
+  "r": 0.05,
+  "years": 10,
+  "byFrequency": {
+   "yearly": 16288.95,
+   "quarterly": 16436.19,
+   "monthly": 16470.09,
+   "daily": 16486.65
+  },
+  "fvEquivalentMonthly": 16470.09,
+  "continuousForComparison": 16487.21
+ },
+ "deposits": {
+  "P": 10000,
+  "r": 0.05,
+  "years": 10,
+  "monthlyDeposit": 200,
+  "fvMonthlyEnd": 47526.55,
+  "fvMonthlyBegin": 47655.95,
+  "depositsOnly": 31056.46,
+  "totalContributed": 34000,
+  "interestEarned": 13526.55,
+  "monthByMonthEnd": 47526.55
+ },
+ "mistakes": {
+  "annualRateWithMonthlyPeriods": 4880767.8,
+  "correct": 47526.55,
+  "signError": -47526.55,
+  "ratePerPeriodMissing": "rate must be annual rate divided by n when nper counts the same n periods per year"
+ },
+ "microsoftExample": {
+  "formula": "=FV(0.06/12,10,-200,-500,1)",
+  "result": 2581.4,
+  "documented": 2581.4
+ },
+ "yearlyDeposits": {
+  "formula": "=FV(5%,10,-2400,-10000)",
+  "result": 46475.89
+ },
+ "mixedFrequency": {
+  "effectiveMonthlyRate": 0.00417507,
+  "fvUsingEffectiveMonthlyRate": 47559.87,
+  "fvNaiveMonthlyRate": 47526.55,
+  "note": "when deposit and compounding frequencies differ, convert to an effective rate per deposit period: (1+r/n)^(n/m)-1"
+ },
+ "apy": {
+  "monthly": 0.051162,
+  "daily": 0.051267
+ }
+}

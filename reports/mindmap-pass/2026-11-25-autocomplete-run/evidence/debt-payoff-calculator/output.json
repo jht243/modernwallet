@@ -1,0 +1,223 @@
+{
+ "example": {
+  "debts": [
+   {
+    "name": "Store card",
+    "balance": 2500,
+    "apr": 19.99,
+    "min": 75
+   },
+   {
+    "name": "Credit card",
+    "balance": 6000,
+    "apr": 27.99,
+    "min": 160
+   },
+   {
+    "name": "Personal loan",
+    "balance": 11000,
+    "apr": 11.0,
+    "min": 280
+   }
+  ],
+  "extraMonthly": 200,
+  "lumpSum": 0,
+  "totalBalance": 19500,
+  "totalMinimums": 515,
+  "avalanche": {
+   "months": 34,
+   "interest": 4783.63,
+   "paid": 24283.63,
+   "order": [
+    1,
+    0,
+    2
+   ],
+   "payoffMonth": [
+    26,
+    22,
+    34
+   ]
+  },
+  "snowball": {
+   "months": 35,
+   "interest": 5120.19,
+   "paid": 24620.19,
+   "order": [
+    0,
+    1,
+    2
+   ],
+   "payoffMonth": [
+    10,
+    27,
+    35
+   ]
+  },
+  "minimums": {
+   "months": 91,
+   "interest": 12291.39,
+   "paid": 31791.39,
+   "order": [
+    2,
+    0,
+    1
+   ],
+   "payoffMonth": [
+    50,
+    91,
+    49
+   ]
+  },
+  "gap": {
+   "snowballExtraInterest": 336.56,
+   "monthsDifference": 1,
+   "avalancheSavesVsMinimums": 7507.76,
+   "monthsSavedVsMinimums": 57
+  }
+ },
+ "lumpSumVariant": {
+  "lumpSum": 2000,
+  "avalanche": {
+   "months": 30,
+   "interest": 3323.03,
+   "paid": 22823.03,
+   "order": [
+    1,
+    0,
+    2
+   ],
+   "payoffMonth": [
+    19,
+    14,
+    30
+   ]
+  },
+  "snowball": {
+   "months": 30,
+   "interest": 3634.37,
+   "paid": 23134.37,
+   "order": [
+    0,
+    1,
+    2
+   ],
+   "payoffMonth": [
+    2,
+    19,
+    30
+   ]
+  }
+ },
+ "counterexampleEqualRates": {
+  "debts": [
+   {
+    "balance": 3000,
+    "apr": 18,
+    "min": 90
+   },
+   {
+    "balance": 7000,
+    "apr": 18,
+    "min": 180
+   }
+  ],
+  "extraMonthly": 150,
+  "avalanche": {
+   "months": 30,
+   "interest": 2464.56,
+   "paid": 12464.56,
+   "order": [
+    0,
+    1
+   ],
+   "payoffMonth": [
+    14,
+    30
+   ]
+  },
+  "snowball": {
+   "months": 30,
+   "interest": 2464.56,
+   "paid": 12464.56,
+   "order": [
+    0,
+    1
+   ],
+   "payoffMonth": [
+    14,
+    30
+   ]
+  }
+ },
+ "counterexampleSmallestIsHighest": {
+  "debts": [
+   {
+    "balance": 1500,
+    "apr": 26,
+    "min": 50
+   },
+   {
+    "balance": 9000,
+    "apr": 9,
+    "min": 200
+   }
+  ],
+  "extraMonthly": 100,
+  "avalanche": {
+   "months": 35,
+   "interest": 1611.43,
+   "paid": 12111.43,
+   "order": [
+    0,
+    1
+   ],
+   "payoffMonth": [
+    12,
+    35
+   ]
+  },
+  "snowball": {
+   "months": 35,
+   "interest": 1611.43,
+   "paid": 12111.43,
+   "order": [
+    0,
+    1
+   ],
+   "payoffMonth": [
+    12,
+    35
+   ]
+  }
+ },
+ "minimumBelowInterest": {
+  "debts": [
+   {
+    "balance": 5000,
+    "apr": 30,
+    "min": 100
+   }
+  ],
+  "minimums": {
+   "months": null,
+   "interest": null,
+   "paid": null,
+   "order": [],
+   "payoffMonth": [
+    null
+   ]
+  },
+  "avalancheWith150Extra": {
+   "months": 29,
+   "interest": 2017.96,
+   "paid": 7017.96,
+   "order": [
+    0
+   ],
+   "payoffMonth": [
+    29
+   ]
+  }
+ }
+}

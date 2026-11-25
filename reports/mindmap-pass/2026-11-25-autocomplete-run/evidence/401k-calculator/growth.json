@@ -1,0 +1,31 @@
+{
+  "originRoutine": "mindmap-pass (autocomplete-2026-11-25)",
+  "route": "/retirement/401k-calculator/",
+  "queryFamily": "401k calculator if i stop contributing / inflation adjusted / no match (21 mapped completions)",
+  "hypothesis": "A scenario section answering stop-contributing, inflation-adjusted and no-match variants earns incremental clicks for those long-tail queries on the existing page.",
+  "primaryMetric": "incremental Google clicks (supporting: impressions, position, CTR by query family)",
+  "baselineReference": {
+    "status": "baseline-unavailable (no GSC data in this run)",
+    "window": null,
+    "property": "https://www.themodernwallet.com/",
+    "canonicalUrl": "https://www.themodernwallet.com/retirement/401k-calculator/"
+  },
+  "comparatorPlan": "age-matched new pages in the same hub for new routes; unchanged sibling spokes for the existing-page enrichment",
+  "changeScope": "existing-page-enrichment",
+  "sourceRefreshTrigger": "Tax Foundation, IRS, CFPB, Microsoft or Google help page changes",
+  "reviewWindows": {
+    "day28": "first 28 complete live days",
+    "day56": "second 28 complete live days"
+  },
+  "outcomeStatus": "local-only",
+  "deployment": {
+    "status": "not-deployed",
+    "commit": null,
+    "deployedDate": null
+  },
+  "productionCostRecords": [
+    "reports/content-gen-usage.jsonl"
+  ],
+  "evidencePacket": "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/401k-calculator/evidence.json",
+  "note": "Demand estimate is Autocomplete only; no SERP/PAA or volume data in this run. No uplift is claimed."
+}

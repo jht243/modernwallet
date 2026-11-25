@@ -1,0 +1,83 @@
+026-11-25T08:20:41.236825+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/92c8e8e7a22f5885a54cbdf50c5d9db3a1dfc245d5298fef1b4d50d5abcfd1e5/relevant-routes.txt",
+      "sha256": "92c8e8e7a22f5885a54cbdf50c5d9db3a1dfc245d5298fef1b4d50d5abcfd1e5",
+      "checkedAt": "2026-11-25T08:20:41.236825+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/relevant-routes.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/0144b1168c599e5851736398f48c5ee805a928b4cd7a181b1725d3782fc27e15/sitemap-0.xml",
+      "sha256": "0144b1168c599e5851736398f48c5ee805a928b4cd7a181b1725d3782fc27e15",
+      "checkedAt": "2026-11-25T08:20:41.236825+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sitemap-0.xml"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/758c9a0f820a93dcd86e80b650b91fa97768590e9d2e5b67ccc3268903164f4f/irs-401k-limits-2026-newsroom.txt",
+      "sha256": "758c9a0f820a93dcd86e80b650b91fa97768590e9d2e5b67ccc3268903164f4f",
+      "checkedAt": "2026-11-25T08:20:41.236825+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/irs-401k-limits-2026-newsroom.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/15fcc2be4994481db00d69e7ed0992689a9f504b2e797a01282792e50f5dd794/irs-401k-contribution-limits-topic.txt",
+      "sha256": "15fcc2be4994481db00d69e7ed0992689a9f504b2e797a01282792e50f5dd794",
+      "checkedAt": "2026-11-25T08:20:41.236825+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/irs-401k-contribution-limits-topic.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/4f8162e4a661cf480eebf6a06aac06f2954ccc3d7d1d8ddc57ce59cda3aac303/irs-2026-tax-inflation-adjustments.txt",
+      "sha256": "4f8162e4a661cf480eebf6a06aac06f2954ccc3d7d1d8ddc57ce59cda3aac303",
+      "checkedAt": "2026-11-25T08:20:41.236825+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/irs-2026-tax-inflation-adjustments.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/5b1857bf7a9a4b896f5ae36ea4e32d4f3eed415c3e3f4cc74ceb23eabd22b8c7/microsoft-fv-function.txt",
+      "sha256": "5b1857bf7a9a4b896f5ae36ea4e32d4f3eed415c3e3f4cc74ceb23eabd22b8c7",
+      "checkedAt": "2026-11-25T08:20:41.236825+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/microsoft-fv-function.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/23d8aadd7f78efb9dc15baf039d0781485c7f6a839abef09c5246fb4483a8fd4/tax-foundation-property-taxes-by-state.txt",
+      "sha256": "23d8aadd7f78efb9dc15baf039d0781485c7f6a839abef09c5246fb4483a8fd4",
+      "checkedAt": "2026-11-25T08:20:41.236825+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/tax-foundation-property-taxes-by-state.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/blobs/153c0241fb10c1a224546d37871bd8ee1c2741e1d230d32b0e117322566944e9/cfpb-how-reduce-your-debt.txt",
+      "sha256": "153c0241fb10c1a224546d37871bd8ee1c2741e1d230d32b0e117322566944e9",
+      "checkedAt": "2026-11-25T08:20:41.236825+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-25-autocomplete-run/research/sources/cfpb-how-reduce-your-debt.txt"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/handoff-write.json",
+    "sha256": "ac95abf38ff1128da84ea6042c52c98a2cc07e936dd50d5fd309a95b5dea6f55"
+  }
+}
+

@@ -1,0 +1,54 @@
+{
+ "caseUseReview": {
+  "evidence": "No client case used and none claimed.",
+  "status": "PASS"
+ },
+ "conditionsAndCounterexample": {
+  "evidence": "Daily compounding with monthly deposits (effective monthly rate) is the stated counterexample to the simple FV(rate/n) shortcut; the wrong-rate mistake case shows $4,880,767.80.",
+  "status": "PASS"
+ },
+ "localExclusions": {
+  "evidence": "Spreadsheet math only; no tested label and no medical content.",
+  "status": "PASS"
+ },
+ "packetSha256": "735751ffd5a9bc64cdca4f6ad4b4798452653bc71b7e12c99bf6974b5e701d50",
+ "presentationReview": {
+  "evidence": "Finite table plus formulas is the right format; no interaction needed and the answer is readable without it.",
+  "status": "PASS"
+ },
+ "renderedConsistency": {
+  "evidence": "r2 render replayed: effective-rate example now printed as about $47,559.87 and about $33, which I recomputed as $47,559.87 and $33.32; exactness wording removed.",
+  "status": "PASS"
+ },
+ "renderedReview": {
+  "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/review-r2.json",
+  "sha256": "58ea21fb812bf8fa20689e4e4102ae2f5145afca3768c4839399beb6117dbba9"
+ },
+ "renderedSnapshot": {
+  "path": "reports/mindmap-pass/2026-11-25-autocomplete-run/audit/preview-snapshot-r2.json",
+  "sha256": "cfc3f97d75218248724b015172bbc58c0c7b1d69fd2f2260f0397aa06289223f"
+ },
+ "replaySha256": "cf8b5b6eaaba4a6e977ac2db056d0684d59b60600e1aaa5a03d6f9438a340b8b",
+ "requestCoverage": [
+  {
+   "evidence": "The page delivers the requested Excel and Google Sheets compound interest formulas, including monthly deposits and the frequency condition.",
+   "requirementId": "REQ-1",
+   "status": "PASS"
+  },
+  {
+   "evidence": "The page delivers the requested Excel and Google Sheets compound interest formulas, including monthly deposits and the frequency condition.",
+   "requirementId": "REQ-2",
+   "status": "PASS"
+  }
+ ],
+ "reviewer": "mindmap-audit",
+ "sourceAndAssumptions": {
+  "evidence": "Microsoft FV page and Google FV help page saved verbatim; sign rule attributed to Microsoft only as the writer noted; inputs ($10,000, 5%, 10 years, $200 monthly) are stated.",
+  "status": "PASS"
+ },
+ "usefulness": {
+  "evidence": "Gives copyable Excel and Sheets formulas with checked outputs, the same-frequency condition for FV, a sign-convention warning and a frequency comparison table; no other page on the site carries formulas.",
+  "status": "PASS"
+ },
+ "verdict": "PASS"
+}

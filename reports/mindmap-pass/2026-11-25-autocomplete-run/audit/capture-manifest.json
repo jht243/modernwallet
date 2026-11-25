@@ -1,0 +1,68 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "mindmap-write",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/debt-payoff-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/compound-interest-formula-excel-google-sheets/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/property-tax-by-state-mortgage-payment/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/retirement/401k-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/credit-card-payoff/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/compare/debt-snowball-vs-avalanche/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/investing/compound-interest-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/retirement-calculator-spreadsheet-template/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/mortgage/piti-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/mortgage/affordability-calculator/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "autocomplete-2026-11-25"
+}

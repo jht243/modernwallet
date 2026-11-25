@@ -1,0 +1,31 @@
+{
+  "originRoutine": "mindmap-pass (autocomplete-2026-11-25)",
+  "route": "/guides/property-tax-by-state-mortgage-payment/",
+  "queryFamily": "mortgage calculator <state> / with taxes and insurance (90 mapped completions)",
+  "hypothesis": "A 50-state monthly property-tax table on a stated price earns clicks on state-name mortgage queries that /mortgage/piti-calculator/ does not answer with state data.",
+  "primaryMetric": "incremental Google clicks (supporting: impressions, position, CTR by query family)",
+  "baselineReference": {
+    "status": "not-yet-published",
+    "window": null,
+    "property": "https://www.themodernwallet.com/",
+    "canonicalUrl": "https://www.themodernwallet.com/guides/property-tax-by-state-mortgage-payment/"
+  },
+  "comparatorPlan": "age-matched new pages in the same hub for new routes; unchanged sibling spokes for the existing-page enrichment",
+  "changeScope": "new-page",
+  "sourceRefreshTrigger": "Tax Foundation, IRS, CFPB, Microsoft or Google help page changes",
+  "reviewWindows": {
+    "day28": "first 28 complete live days",
+    "day56": "second 28 complete live days"
+  },
+  "outcomeStatus": "local-only",
+  "deployment": {
+    "status": "not-deployed",
+    "commit": null,
+    "deployedDate": null
+  },
+  "productionCostRecords": [
+    "reports/content-gen-usage.jsonl"
+  ],
+  "evidencePacket": "reports/mindmap-pass/2026-11-25-autocomplete-run/evidence/property-tax-by-state-mortgage-payment/evidence.json",
+  "note": "Demand estimate is Autocomplete only; no SERP/PAA or volume data in this run. No uplift is claimed."
+}

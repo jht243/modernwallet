@@ -1,0 +1,104 @@
+{
+ "assumptions": {
+  "startAge": 30,
+  "retireAge": 65,
+  "start": 20000,
+  "monthly": 800,
+  "returnPct": 7,
+  "inflationPct": 3,
+  "engine": "annual compounding, annual deposits of 12 x monthly at year end (src/lib/retirement.ts)"
+ },
+ "base": {
+  "nominal": 1540606,
+  "todays": 547506,
+  "contributions": 336000
+ },
+ "stopContributing": [
+  {
+   "stopAge": 35,
+   "yearsContributing": 5,
+   "nominal": 633782,
+   "todays": 225236,
+   "pctOfBase": 41.1,
+   "totalContributed": 48000
+  },
+  {
+   "stopAge": 40,
+   "yearsContributing": 10,
+   "nominal": 933415,
+   "todays": 331720,
+   "pctOfBase": 60.6,
+   "totalContributed": 96000
+  },
+  {
+   "stopAge": 45,
+   "yearsContributing": 15,
+   "nominal": 1147049,
+   "todays": 407642,
+   "pctOfBase": 74.5,
+   "totalContributed": 144000
+  },
+  {
+   "stopAge": 50,
+   "yearsContributing": 20,
+   "nominal": 1299367,
+   "todays": 461773,
+   "pctOfBase": 84.3,
+   "totalContributed": 192000
+  },
+  {
+   "stopAge": 55,
+   "yearsContributing": 25,
+   "nominal": 1407968,
+   "todays": 500368,
+   "pctOfBase": 91.4,
+   "totalContributed": 240000
+  },
+  {
+   "stopAge": 60,
+   "yearsContributing": 30,
+   "nominal": 1485399,
+   "todays": 527886,
+   "pctOfBase": 96.4,
+   "totalContributed": 288000
+  },
+  {
+   "stopAge": 65,
+   "yearsContributing": 35,
+   "nominal": 1540606,
+   "todays": 547506,
+   "pctOfBase": 100.0,
+   "totalContributed": 336000
+  }
+ ],
+ "neverContribute": {
+  "nominal": 213532,
+  "todays": 75886
+ },
+ "marginalYear": {
+  "dropLastYear": 9600,
+  "dropFirstYearEquivalent": "see stopContributing table"
+ },
+ "noMatch": {
+  "assumedEmployeeMonthly": 500,
+  "assumedMatchMonthly": 300,
+  "nominal": 1042953,
+  "todays": 370648,
+  "gapVsBase": 497653,
+  "pctOfBase": 67.7
+ },
+ "inflationSensitivity": {
+  "2": 770345,
+  "3": 547506,
+  "4": 390413
+ },
+ "yearsOfContributionsToReach1M": {
+  "years": 12,
+  "stopAge": 42,
+  "balance": 1027619
+ },
+ "counterexample": {
+  "returnPct": 0,
+  "note": "at 0% return, stopping at 45 leaves S + 12*M*15 = 164000 versus base 356000"
+ }
+}

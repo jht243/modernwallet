@@ -10959,7 +10959,7 @@ export const COMPARISONS: ComparisonEntry[] = [
     {
       heading: "Which method should you choose?",
       content:
-        "The better method depends on how you stay motivated, because both use the identical mechanics. Pick the avalanche if numbers keep you going -- it pays the least interest and is never slower to debt-free. Pick the snowball if you need a fast, visible win to stay on track.\n\nBe honest about your track record. A plan you abandon saves nothing, so early wins have real value if they keep you paying.\n\nEither way, the size of your extra payment matters more than the order. Freeing up an extra $100 a month often beats optimizing the sequence. The [50/30/20 budget calculator](/budget/50-30-20-budget-calculator/) can help you carve out more to throw at debt.",
+        "The better method depends on how you stay motivated, because both use the identical mechanics. Pick the avalanche if numbers keep you going -- it pays the least interest and is never slower to debt-free. Pick the snowball if you need a fast, visible win to stay on track.\n\nBe honest about your track record. A plan you abandon saves nothing, so early wins have real value if they keep you paying.\n\nEither way, the size of your extra payment matters more than the order. Freeing up an extra $100 a month often beats optimizing the sequence. The [50/30/20 budget calculator](/budget/50-30-20-budget-calculator/) can help you carve out more to throw at debt.\n\nYou can [run snowball and avalanche on your own debts](/debt-payoff-calculator/) and compare payoff dates, total interest and payoff order.",
     },
     {
       heading: "Should you pay off debt or invest first?",

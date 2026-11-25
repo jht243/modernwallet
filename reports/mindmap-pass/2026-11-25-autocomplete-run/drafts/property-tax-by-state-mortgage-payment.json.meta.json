@@ -1,0 +1,130 @@
+{
+ "slug": "property-tax-by-state-mortgage-payment",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 1287,
+ "floor": 1200,
+ "input_tokens": 38698,
+ "output_tokens": 2493,
+ "thinking_tokens": null,
+ "cached_tokens": 17812,
+ "est_cost_usd": 0.0263,
+ "guards": {
+  "repairs": [
+   "slug None -> 'property-tax-by-state-mortgage-payment'"
+  ],
+  "flags": [
+   "thin fact list: \u2248253 fact words for a 1200-word floor (ratio 0.21); expand it with sourced facts before any regeneration",
+   "emptied by the claim check (nothing in the fact list could carry it): ['Property Tax Added to a $400,000 Mortgage by State', 'How the Estimate Works', 'Highest and Lowest Property Tax States', 'What Else Goes Into Escrow', 'Our Takeaway'] \u2014 source facts for it and regenerate, or drop the section; never refill it unsourced",
+   "claim check: 1 claim(s) still unsupported after 2 pass(es) \u2014 auditor must cut or source: 'and do not list more than five states in prose'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 1287,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 253,
+   "floor": 1200,
+   "ratio": 0.21,
+   "thin": true
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    5,
+    3
+   ],
+   "applied": [
+    {
+     "id": "introText",
+     "quote": "At The Modern Wallet, we evaluate how escrow obligations reshape purchasing power across different markets.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Site self-description does not license this first-person evaluation claim."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Homeowners insurance costs fluctuate based on structural replacement values, regional climate exposures, and building materials, while private mortgage insurance applies specifically to conventional loans originated with down payments under 20%. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state insurance cost factors or conventional loan PMI rules."
+    },
+    {
+     "id": "sections[3].body",
+     "quote": "Homeowners association (HOA) dues also sit outside standard escrow accounts and require direct disbursement to management entities.",
+     "replacement": "Homeowners association (HOA) dues are also not included.",
+     "type": "unsupported",
+     "why": "SOURCE does not state direct disbursement of HOA dues to management entities."
+    },
+    {
+     "id": "faqs[4].answer",
+     "quote": " Property tax estimates represent municipal and county ad valorem levies, whereas hazard insurance coverage is priced independently based on regional risk factors and structure replacement costs.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state hazard insurance pricing factors or replacement costs."
+    },
+    {
+     "id": "faqs[5].answer",
+     "quote": " For example, a $300,000 property in a 1.00% tax jurisdiction yields an estimated $250 monthly escrow payment.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not list $300,000 or $250."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Texas also ranks among the highest brackets with a 1.40% effective rate, generating a $467 monthly tax charge on a $400,000 home, while Ohio generates $453 at a 1.36% rate.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "Source explicitly instructs: do not list more than five states in prose."
+    },
+    {
+     "id": "sections[2].body",
+     "quote": "Other low-tax options include Idaho, Colorado, and Nevada, which each carry a 0.50% effective rate adding $167 a month.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "Source explicitly instructs: do not list more than five states in prose."
+    }
+   ],
+   "deleted_final": 2,
+   "unapplied": [
+    {
+     "quote": "and do not list more than five states in prose",
+     "type": "contradicted",
+     "why": "Source explicitly instructs: do not list more than five states in prose.",
+     "replacement": "",
+     "id": "sections[2].body",
+     "reason": "quote not found on the page"
+    }
+   ],
+   "remaining": [
+    {
+     "id": "sections[2].body",
+     "quote": "and do not list more than five states in prose",
+     "type": "contradicted",
+     "reason": "quote not found on the page"
+    }
+   ],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 1433
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 16882
+  }
+ },
+ "seconds": 88.0,
+ "response_id": "GJ0Ga5yrH7WE1sgP6ouXiAo",
+ "generated_at": "2026-11-25T08:33:52+0000"
+}
