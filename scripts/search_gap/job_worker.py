@@ -647,10 +647,9 @@ def retained_local_completion(packet, intake_hash):
             chart = artifact_path(candidate['chart'])
             receipt = read(artifact_path(candidate['chartReview']))
             decisions = candidate['decisions']
-            signed = hashlib.sha256(json.dumps(decisions, sort_keys=True).encode()).hexdigest()
             if (receipt.get('verdict') != 'PASS' or not receipt.get('author') or not receipt.get('reviewer')
                     or receipt['author'] == receipt['reviewer'] or receipt.get('chartSha256') != digest(chart)
-                    or receipt.get('decisionsSha256') != signed or receipt.get('intakeSha256') != intake_hash
+                    or not native.decisions_match_review(receipt, decisions) or receipt.get('intakeSha256') != intake_hash
                     or sorted(d['id'] for d in decisions) != sorted(c['id'] for c in packet['candidates'])):
                 continue
         except (KeyError, FileNotFoundError, ValueError, TypeError):

@@ -779,4 +779,35 @@ class SessionEndHookAndArchiveTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Local intake differs'):
             worker.intake('one.test', ResumedSameRunStore(), str(intake_path), owner)
 
+    def test_retained_local_completion_accepts_pending_decisions_transition(self):
+        root = Path(self.tmp.name)
+        subprocess.run(['git', 'init', '-q', str(root)], check=True)
+        subprocess.run(['git', 'config', 'user.email', 'test@example.com'], cwd=root, check=True)
+        subprocess.run(['git', 'config', 'user.name', 'Test'], cwd=root, check=True)
+        comp_dir = root / 'reports/search-gap/run-pending'
+        comp_dir.mkdir(parents=True)
+        chart = comp_dir / 'chart.md'
+        chart.write_text('# Chart\n')
+        pending = [{'id': 'c1', 'status': 'pending', 'paths': ['/guides/x'], 'reason': 'Draft prepared and awaiting live verification.'}]
+        published = [{'id': 'c1', 'status': 'published', 'paths': ['/guides/x'], 'reason': 'Draft prepared and awaiting live verification.'}]
+        receipt = comp_dir / 'chart-review.json'
+        intake_hash = 'intake-sha-123'
+        receipt.write_text(json.dumps({
+            'author': 'writer-1', 'reviewer': 'reviewer-1', 'verdict': 'PASS',
+            'chartSha256': worker.digest(chart), 'intakeSha256': intake_hash,
+            'decisionsSha256': hashlib.sha256(json.dumps(pending, sort_keys=True).encode()).hexdigest(),
+            'pendingDecisions': pending,
+        }))
+        completion = comp_dir / 'completion.json'
+        completion.write_text(json.dumps({
+            'site': 'one.test', 'runId': 'run-pending', 'intakeSha256': intake_hash,
+            'chart': 'reports/search-gap/run-pending/chart.md',
+            'chartReview': 'reports/search-gap/run-pending/chart-review.json',
+            'decisions': published,
+        }))
+        subprocess.run(['git', 'add', '.'], cwd=root, check=True)
+        subprocess.run(['git', 'commit', '-q', '-m', 'add completion'], cwd=root, check=True)
+        packet = {'site': 'one.test', 'runId': 'run-pending', 'candidates': [{'id': 'c1'}]}
+        self.assertEqual(worker.retained_local_completion(packet, intake_hash), ('reports/search-gap/run-pending/completion.json', []))
+
 if __name__=='__main__':unittest.main()

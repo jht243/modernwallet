@@ -491,6 +491,20 @@ def review_check(s, review):
             if compatibility.apply(root, s, review, module, review_policy): return
         module.rendered_review(root, s, review)
 
+def _normalize_schema_iso_dates(value):
+    if isinstance(value, dict):
+        out = {}
+        for k, v in value.items():
+            if k in ('datePublished', 'dateModified') and isinstance(v, str):
+                out[k] = re.sub(r'^(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})\.\d+(Z|[+-]\d{2}:\d{2})?$', lambda m: m.group(1) + (m.group(2) or ''), v)
+            else:
+                out[k] = _normalize_schema_iso_dates(v)
+        return out
+    if isinstance(value, list):
+        return [_normalize_schema_iso_dates(x) for x in value]
+    return value
+
+
 def publication_semantic(semantic):
     semantic = dict(semantic)
     if isinstance(semantic.get('text'), str):
@@ -507,6 +521,7 @@ def publication_semantic(semantic):
             attributes['class']=' '.join(re.sub(r'^(__variable_|__className_)[0-9a-f]{6}$',r'\1BUILD',token) for token in attributes['class'].split())
         structure.append([tag,attributes])
     if 'structure' in semantic:result['structure']=structure
+    if 'schema' in result:result['schema']=_normalize_schema_iso_dates(result['schema'])
     return result
 
 

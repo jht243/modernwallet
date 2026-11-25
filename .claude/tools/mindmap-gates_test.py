@@ -1393,7 +1393,45 @@ class Gates(unittest.TestCase):
         sys_txt = (self.root / 'prompts/system.md').read_text()
         prompt_txt = (self.root / 'prompts/fixture.prompt.md').read_text()
         self.assertIn('Hyperlink the VERY FIRST mention', sys_txt)
-        self.assertIn('NEVER write `"In our internal cost modeling"`', prompt_txt)
+        self.assertIn('Basis is `"reported"`', prompt_txt)
+        self.assertIn('NEVER claim hands-on product execution', prompt_txt)
+
+
+
+    def test_prewrite_check_blocks_locked_review_slot_before_writer_spend(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            repo = Path(tmp)
+            subprocess.run(['git', 'init', '-q'], cwd=repo, check=True)
+            tools = repo / '.claude/tools'
+            tools.mkdir(parents=True, exist_ok=True)
+            (repo / '.claude/content-review-policy.json').write_bytes((Path(__file__).resolve().parents[1] / 'content-review-policy.json').read_bytes())
+            for fn in ('content-review-policy.py', 'content-review-durable.py'):
+                src_f = Path(__file__).with_name(fn)
+                if src_f.is_file():
+                    (tools / fn).write_bytes(src_f.read_bytes())
+            import importlib.util
+            sp = importlib.util.spec_from_file_location('_t_pol', tools / 'content-review-policy.py')
+            pol = importlib.util.module_from_spec(sp)
+            sp.loader.exec_module(pol)
+            base = 'https://www.layer3labs.io'
+            j = pol.Journal(repo, base, '/guides/locked-route/')
+            j.path.parent.mkdir(parents=True, exist_ok=True)
+            j.path.write_text(json.dumps({
+                'kind': 'reserved',
+                'cycleId': 'cyc-sg-1',
+                'jobId': 'search-gap-stuck-job',
+                'round': 1,
+                'ceiling': 2,
+                'profile': 'standard',
+                'admission': {'path': 'missing.json', 'sha256': 'b' * 64},
+            }) + '\n')
+            m_file = repo / 'reports/run/approval-manifest.json'
+            m_file.parent.mkdir(parents=True, exist_ok=True)
+            plan = {'canonicalBase': base, 'jobId': 'search-gap-new-job'}
+            with self.assertRaises(ValueError) as ctx:
+                g._prewrite_check_review_slots_and_archive(repo, m_file, plan, ['/guides/locked-route/'])
+            self.assertIn('Pre-write blocker detected BEFORE content_gen.py ran', str(ctx.exception))
+            self.assertIn('/guides/locked-route/', str(ctx.exception))
 
 
 if __name__ == '__main__':

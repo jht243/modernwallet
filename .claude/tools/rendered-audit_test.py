@@ -636,5 +636,30 @@ class RelatedCardsLiveCompareTests(_UnconfiguredRootTestCase):
      a.record_pairs(str(root / 'handoff.json'), 'https://example.com', str(root / 'live2'), 'a'*40, str(root / 'host.json'), str(root / 'ledger.jsonl'), root=root)
    self.assertEqual(cap_calls, [False, True, True])
 
+ def test_publication_semantic_normalizes_schema_subsecond_iso_dates(self):
+  base = {
+   'status': 200, 'canonical': 'https://example.com/guide', 'title': 'Guide', 'h1': 'Guide', 'text': 'Body text',
+   'schema': [{
+    '@type': 'Article',
+    'datePublished': '2026-11-25T18:05:12.482Z',
+    'dateModified': '2026-11-25T18:05:12.901Z',
+    '@graph': [{'@type': 'WebPage', 'dateModified': '2026-11-25T18:05:12.123+00:00'}],
+   }],
+  }
+  live = {
+   **base,
+   'schema': [{
+    '@type': 'Article',
+    'datePublished': '2026-11-25T18:05:12.111Z',
+    'dateModified': '2026-11-25T18:05:13.901Z',
+    '@graph': [{'@type': 'WebPage', 'dateModified': '2026-11-25T18:05:12+00:00'}],
+   }],
+  }
+  norm_base = a.publication_semantic(base)
+  norm_live = a.publication_semantic(live)
+  self.assertEqual(norm_base['schema'][0]['datePublished'], norm_live['schema'][0]['datePublished'])
+  self.assertEqual(norm_base['schema'][0]['@graph'][0]['dateModified'], norm_live['schema'][0]['@graph'][0]['dateModified'])
+  self.assertNotEqual(norm_base['schema'][0]['dateModified'], norm_live['schema'][0]['dateModified'])
+
 
 if __name__=='__main__': unittest.main()

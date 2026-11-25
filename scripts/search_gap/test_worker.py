@@ -63,4 +63,18 @@ class Reliability(unittest.TestCase):
         with patch.object(worker.subprocess,'run') as native:
             worker.validate_completion(p,c)
             self.assertEqual([x.args[0][2] for x in native.call_args_list],['check','compare','capture','compare'])
+    def test_pending_decisions_transition_allowed_and_arbitrary_change_blocked(self):
+        p,c=self.fixture()
+        pending=[{'id':'a','status':'pending','paths':['/new'],'reason':'Draft planned for publication and pending live verification.'}]
+        published=[{'id':'a','status':'published','paths':['/new'],'reason':'Draft planned for publication and pending live verification.'}]
+        r=worker.read(c['chartReview'])
+        r['decisionsSha256']=hashlib.sha256(json.dumps(pending,sort_keys=True).encode()).hexdigest()
+        r['pendingDecisions']=pending
+        Path(c['chartReview']).write_text(json.dumps(r))
+        c['decisions']=published
+        self.assertEqual(len(worker.validate_decisions(p,c)),1)
+        c['decisions']=[{'id':'a','status':'published','paths':['/other'],'reason':published[0]['reason']}]
+        self.assertRaises(ValueError,worker.validate_decisions,p,c)
+        c['decisions']=[{'id':'a','status':'dropped','paths':['/new'],'reason':published[0]['reason']}]
+        self.assertRaises(ValueError,worker.validate_decisions,p,c)
 if __name__=='__main__':unittest.main()

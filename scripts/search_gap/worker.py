@@ -207,6 +207,23 @@ def validate_render_groups(site, changed, rendered, check_render):
     require(changed <= covered, 'Render does not cover published routes')
 
 
+def decisions_match_review(review, decisions):
+    """Return True when decisions match the signed receipt directly or via approved pending-to-published transitions."""
+    exact_sha = hashlib.sha256(json.dumps(decisions, sort_keys=True).encode()).hexdigest()
+    if review.get('decisionsSha256') == exact_sha:
+        return True
+    pending_decisions = review.get('pendingDecisions')
+    return (
+        isinstance(pending_decisions, list)
+        and review.get('decisionsSha256') == hashlib.sha256(json.dumps(pending_decisions, sort_keys=True).encode()).hexdigest()
+        and {d.get('id') for d in pending_decisions} == {d.get('id') for d in decisions}
+        and all(
+            pd == cd or (pd.get('id') == cd.get('id') and pd.get('status') == 'pending' and cd.get('status') == 'published' and pd.get('paths') == cd.get('paths'))
+            for pd, cd in zip(sorted(pending_decisions, key=lambda x: x['id']), sorted(decisions, key=lambda x: x['id']))
+        )
+    )
+
+
 def validate_decisions(packet, completion):
     """Decision accounting and independent chart review, without render evidence."""
     require(completion['site'] == packet['site'] and completion['runId'] == packet['runId'], 'Wrong site/run')
@@ -220,8 +237,8 @@ def validate_decisions(packet, completion):
     decisions = completion['decisions']
     require(len(decisions) == len(candidates) and {d['id'] for d in decisions} == set(candidates),
             'Every candidate needs exactly one decision, including pending work')
-    require(review.get('decisionsSha256') == hashlib.sha256(json.dumps(decisions, sort_keys=True).encode()).hexdigest(),
-            'Dispositions differ from independent chart review')
+    if not decisions_match_review(review, decisions):
+        require(False, 'Dispositions differ from independent chart review — sign final completion.decisions in chartReview.decisionsSha256')
     for decision in decisions:
         require(decision['status'] in ('published', 'no-addition', 'dropped', 'pending'), 'Invalid decision')
         require(len(decision.get('reason', '').strip()) >= 20, 'Concrete reason required')

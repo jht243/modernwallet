@@ -145,7 +145,7 @@ class MindmapTracksTests(unittest.TestCase):
             self.assertIn('https://testbot.example/pricing', allowed_txt)
             prompt_txt = (run_dir / 'prompts/testbot-alternatives.prompt.md').read_text()
             self.assertIn('Executed Scenario Model Output', prompt_txt)
-            self.assertIn('Matched First-Party Layer3 Experience Records', prompt_txt)
+            self.assertIn('Matched First-Party Client, Owned-App & Operator Experience Records', prompt_txt)
 
             # Verify generic proof-free draft FAILS precheck_drafts when mindmapTrack is active!
             drafts_dir = run_dir / 'drafts'
