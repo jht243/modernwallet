@@ -1942,7 +1942,8 @@ def normalize_comparison_draft(draft: dict) -> dict:
                 if not b:
                     continue
                 if re.match(r'^#{2,4}\s+', b) and '\n' not in b:
-                    b = f"**{re.sub(r'^#{2,4}\\s+', '', b).strip()}**"
+                    _b_heading = re.sub(r'^#{2,4}\s+', '', b).strip()
+                    b = f"**{_b_heading}**"
                 blocks.append(b)
             content_arr = blocks
         elif isinstance(raw_c, list):
