@@ -102,7 +102,7 @@ that is reported, not a failure.
 
 ## Phase 0 — Detect + measure FIRST (Google only; zero contract/preflight reads if `OBSERVE` or 0 drops)
 
-> **Fast-Exit Order:** Run Phase 0 **before** reading `_decision-evidence.md`, `_testing-labels.md`, `load-standards.sh`, or `workflow-preflight.py`. If `detect.json` is `OBSERVE` or has `0` dropped pages after cooldown and `measure.py` has `0` `WORSE` reverts, commit + deploy the detect/measure report, send the `email_report.py` digest, and exit 0 with zero Phase 1–4 standards loaded.
+> **Fast-Exit Order:** Run Phase 0 **before** reading `_decision-evidence.md`, `_testing-labels.md`, `load-standards.sh`, or `workflow-preflight.py`. If `detect.json` is `OBSERVE` or has `0` dropped pages after cooldown and `measure.py` has `0` `WORSE` reverts, commit + deploy the detect/measure report (along with `reports/rank-drop/gsc-week-cache/` so next week reuses completed finalized GSC weeks), send the `email_report.py` digest, and exit 0 with zero Phase 1–4 standards loaded.
 
 ```bash
 python3 -c "import google.oauth2.service_account" 2>/dev/null || { python3 -m pip install -q google-auth requests; python3 -c "import google.oauth2.service_account" 2>/dev/null || python3 -m pip install -q --ignore-installed cryptography cffi; }   # cloud sandboxes

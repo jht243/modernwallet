@@ -35,11 +35,13 @@ Usage:
 """
 
 import argparse
+import gzip
 import hashlib
 import json
 import os
 import re
 import sys
+import threading
 import time
 import urllib.parse
 from collections import defaultdict
@@ -56,6 +58,10 @@ SOURCES = ["searchconsole.googleapis.com", "analyticsdata.googleapis.com",
 
 GSC_PAGE = 25000          # max rows per Search Analytics request
 MAX_STALENESS_DAYS = 5    # newest final GSC day must be at most this old
+GSC_PACE_S = float(os.environ.get("RANK_DROP_GSC_PACE_S", "0.45"))
+_GSC_PACE_LOCK = threading.Lock()
+_GSC_LAST_CALL_TS = 0.0
+_WEEK_CACHE_STATS = {"hits": 0, "misses": 0}
 
 # thresholds
 BASE_MAX_POS = 20.0       # only pairs that were on page 1-2
@@ -130,9 +136,22 @@ def session_for(sa_info: dict, scope: str):
     return s
 
 
+def _pace_gsc(url: str) -> None:
+    global _GSC_LAST_CALL_TS
+    if "searchconsole.googleapis.com" not in url or GSC_PACE_S <= 0:
+        return
+    with _GSC_PACE_LOCK:
+        now = time.monotonic()
+        wait = (_GSC_LAST_CALL_TS + GSC_PACE_S) - now
+        if wait > 0:
+            time.sleep(wait)
+        _GSC_LAST_CALL_TS = time.monotonic()
+
+
 def call(s, method: str, url: str, body: dict | None = None) -> dict:
-    backoffs = (5, 10, 20, 35, 60)
+    backoffs = (15, 30, 60, 90, 135)
     for attempt in range(len(backoffs) + 1):
+        _pace_gsc(url)
         try:
             r = s.request(method, url, json=body, timeout=60)
         except Exception as e:  # noqa: BLE001
@@ -141,8 +160,8 @@ def call(s, method: str, url: str, body: dict | None = None) -> dict:
             time.sleep(backoffs[attempt])
             continue
         if r.status_code in (401, 403):
-            if r.status_code == 403 and any(k in r.text.lower() for k in ("quota", "ratelimit", "rate limit")) and attempt < len(backoffs):
-                time.sleep(max(backoffs[attempt], 15 * (attempt + 1)))
+            if r.status_code == 403 and any(k in r.text.lower() for k in ("quota", "ratelimit", "rate limit", "load quota")) and attempt < len(backoffs):
+                time.sleep(backoffs[attempt])
                 continue
             raise HardFail(11, f"{r.status_code} from {url}: {r.text[:300]}")
         if r.status_code in (429, 500, 502, 503, 504) and attempt < len(backoffs):
@@ -150,7 +169,7 @@ def call(s, method: str, url: str, body: dict | None = None) -> dict:
             delay = backoffs[attempt]
             if retry_after:
                 try:
-                    delay = max(delay, min(int(float(retry_after)), 90))
+                    delay = max(delay, min(int(float(retry_after)), 150))
                 except ValueError:
                     pass
             time.sleep(delay)
@@ -196,7 +215,7 @@ def merge_gsc_rows(*parts: list[dict]) -> list[dict]:
              "position": (p / i) if i else 0.0} for k, c, i, p in merged.values()]
 
 
-GSC_PARALLEL = 2          # Search Analytics extra pages fetched concurrently when >25k rows
+GSC_PARALLEL = 1          # Sequential pagination to respect GSC short-term Search Analytics load quota
 
 
 def _gsc_rows_window(s, site: str, start: date, end: date, dims: list[str],
@@ -309,17 +328,84 @@ def index(rows):
     return {tuple(r["keys"]): r for r in rows}
 
 
-def peak_positions(gsc, site, start: date, dims, country=None) -> dict:
-    """Best sustained position per page×query: pull the history as weekly
-    buckets, slide a 2-week window across them, keep the window with the LOWEST
+def _week_cache_dir(site: str) -> Path:
+    root = Path(__file__).resolve().parents[2]
+    slug = re.sub(r"[^a-z0-9._-]+", "_", site.lower()).strip("_")
+    return root / "reports" / "rank-drop" / "gsc-week-cache" / slug
+
+
+def _gsc_cached_week(gsc, site: str, w_start: date, w_end: date, freshest_final: date,
+                     dims: list[str], country: str | None = None,
+                     use_cache: bool = True) -> list[dict]:
+    """Immutable cache for completed finalized Google Search Console weeks (w_end <= freshest_final).
+    Stores ONLY first-party searchconsole.googleapis.com dataState='final' rows with sha256 verification."""
+    cache_ok = use_cache and os.environ.get("RANK_DROP_GSC_CACHE", "1").strip() != "0" and w_end <= freshest_final
+    cpath = None
+    if cache_ok:
+        dkey = "-".join(dims)
+        ckey = country or "all"
+        cpath = _week_cache_dir(site) / f"{dkey}_{ckey}_{w_start.isoformat()}_{w_end.isoformat()}.json.gz"
+        if cpath.exists():
+            try:
+                payload = json.loads(gzip.decompress(cpath.read_bytes()).decode("utf-8"))
+                compact = payload.get("compact_rows")
+                digest = hashlib.sha256(json.dumps(compact, separators=(",", ":")).encode()).hexdigest()
+                if (payload.get("site") == site
+                        and payload.get("start") == w_start.isoformat()
+                        and payload.get("end") == w_end.isoformat()
+                        and payload.get("dims") == dims
+                        and payload.get("country") == country
+                        and payload.get("source") == "searchconsole.googleapis.com"
+                        and payload.get("data_state") == "final"
+                        and digest == payload.get("sha256")):
+                    _WEEK_CACHE_STATS["hits"] += 1
+                    return [{"keys": r[0], "clicks": r[1], "impressions": r[2],
+                             "ctr": (r[1] / r[2]) if r[2] else 0.0, "position": r[3]}
+                            for r in compact]
+            except Exception:  # noqa: BLE001
+                pass
+
+    rows = gsc_rows(gsc, site, w_start, w_end, dims, country)
+    if cache_ok and cpath is not None:
+        _WEEK_CACHE_STATS["misses"] += 1
+        compact = [[r["keys"], r.get("clicks", 0), r.get("impressions", 0), round(r.get("position", 0.0), 4)]
+                   for r in rows]
+        digest = hashlib.sha256(json.dumps(compact, separators=(",", ":")).encode()).hexdigest()
+        payload = {
+            "site": site,
+            "start": w_start.isoformat(),
+            "end": w_end.isoformat(),
+            "dims": dims,
+            "country": country,
+            "source": "searchconsole.googleapis.com",
+            "data_state": "final",
+            "sha256": digest,
+            "compact_rows": compact,
+        }
+        cpath.parent.mkdir(parents=True, exist_ok=True)
+        tmp = cpath.with_suffix(".json.gz.tmp")
+        tmp.write_bytes(gzip.compress(json.dumps(payload, separators=(",", ":")).encode("utf-8"), compresslevel=6))
+        tmp.replace(cpath)
+    return rows
+
+
+def aligned_week_starts(base_end: date) -> list[date]:
+    """13 canonical Monday..Sunday completed weeks ending <= base_end so weekly runs reuse 12/13 cached weeks."""
+    last_sunday = base_end - timedelta(days=(base_end.weekday() + 1) % 7)
+    last_monday = last_sunday - timedelta(days=6)
+    return [last_monday - timedelta(days=7 * (HISTORY_WEEKS - 1 - w)) for w in range(HISTORY_WEEKS)]
+
+
+def peak_positions(gsc, site, base_end: date, freshest_final: date, dims,
+                   country=None, use_cache: bool = True) -> dict:
+    """Best sustained position per page×query: pull the history as canonical Monday..Sunday
+    weekly buckets, slide a 2-week window across them, keep the window with the LOWEST
     impression-weighted position that had real volume (>= MIN_BASE_IMPR).
     Position doesn't inflate when a news spike lifts demand, so the best
     position is a fair "what this page can rank" bar — unlike peak traffic."""
-    from concurrent.futures import ThreadPoolExecutor   # 13 weekly pulls with bounded concurrency to respect GSC short-term load quota
-    starts = [start + timedelta(days=7 * w) for w in range(HISTORY_WEEKS)]
-    with ThreadPoolExecutor(max_workers=2) as ex:
-        pulled = list(ex.map(lambda a: index(gsc_rows(gsc, site, a, a + timedelta(days=6), dims, country)),
-                             starts))
+    starts = aligned_week_starts(base_end)
+    pulled = [index(_gsc_cached_week(gsc, site, a, a + timedelta(days=6), freshest_final, dims, country, use_cache))
+              for a in starts]
     weeks = list(zip(starts, pulled))
     best = {}
     for i in range(HISTORY_WEEKS - 1):
@@ -337,21 +423,24 @@ def peak_positions(gsc, site, start: date, dims, country=None) -> dict:
     return best
 
 
-def detect(gsc, site, base_url, ga4, prop, end: date, min_page_clicks_d: float = MIN_PAGE_CLICKS_D):
+def detect(gsc, site, base_url, ga4, prop, end: date, min_page_clicks_d: float = MIN_PAGE_CLICKS_D,
+           use_cache: bool = True):
     cur_start = end - timedelta(days=13)                 # current: last 14 final days
     half = cur_start + timedelta(days=6)
-    base_end = cur_start - timedelta(days=1)
-    base_start = base_end - timedelta(days=7 * HISTORY_WEEKS - 1)   # history: ~90 days before
+    raw_base_end = cur_start - timedelta(days=1)
+    starts = aligned_week_starts(raw_base_end)
+    base_start = starts[0]
+    base_end = starts[-1] + timedelta(days=6)            # exact 13 completed Mon..Sun weeks (~91 days)
     W = {"history": [base_start.isoformat(), base_end.isoformat()],
          "current": [cur_start.isoformat(), end.isoformat()],
          "baseline_rule": "each page×query's BEST (lowest) 14-day position inside the history window"}
 
     dims = ["page", "query"]
-    B = peak_positions(gsc, site, base_start, dims)
+    B = peak_positions(gsc, site, raw_base_end, end, dims, use_cache=use_cache)
     C = index(gsc_rows(gsc, site, cur_start, end, dims))
     C1 = index(gsc_rows(gsc, site, cur_start, half, dims))
     C2 = index(gsc_rows(gsc, site, half + timedelta(days=1), end, dims))
-    BU = peak_positions(gsc, site, base_start, dims, "usa")
+    BU = peak_positions(gsc, site, raw_base_end, end, dims, "usa", use_cache=use_cache)
     CU = index(gsc_rows(gsc, site, cur_start, end, dims, "usa"))
     if not B and not C:
         raise HardFail(14, f"GSC returned an empty page×query set (baseline {len(B)}, current {len(C)})")
@@ -466,7 +555,10 @@ def detect(gsc, site, base_url, ga4, prop, end: date, min_page_clicks_d: float =
 
     demand = sorted([p for p in pairs if p["class"] == "DEMAND"], key=lambda x: -x["base_impr_d"])[:20]
     unstable = sorted([p for p in pairs if p["class"] == "UNSTABLE"], key=lambda x: -x["lost_clicks_d"])[:20]
-    stats = {"pairs_baseline": len(B), "pairs_current": len(C), **counts}
+    stats = {"pairs_baseline": len(B), "pairs_current": len(C),
+             "gsc_week_cache_hits": _WEEK_CACHE_STATS["hits"],
+             "gsc_week_cache_misses": _WEEK_CACHE_STATS["misses"],
+             **counts}
     return W, out_pages, demand, unstable, stats
 
 
@@ -538,6 +630,8 @@ def main(argv=None) -> int:
                     help="owner override: FIX mode even while a Google ranking update is rolling out")
     ap.add_argument("--min-page-clicks-d", type=float, default=MIN_PAGE_CLICKS_D,
                     help="traffic floor: avg Google clicks/day over the history window")
+    ap.add_argument("--no-cache", action="store_true",
+                    help="bypass immutable completed-week GSC cache")
     a = ap.parse_args(argv)
     try:                                   # site.json supplies the defaults (fleet rollout)
         from siteconf import site as _site
@@ -565,7 +659,7 @@ def main(argv=None) -> int:
         end = gsc_freshest_final_day(gsc, site)
         ongoing, recent = google_updates(gsc)
         W, pages, demand, unstable, stats = detect(gsc, site, a.base_url, ga4, a.ga4_property, end,
-                                                    a.min_page_clicks_d)
+                                                    a.min_page_clicks_d, use_cache=not a.no_cache)
     except HardFail as e:
         fail_report(out, site, e.code, str(e))
         print(f"HARD FAIL ({e.code}): {e}", file=sys.stderr)

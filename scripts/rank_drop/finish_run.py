@@ -144,7 +144,10 @@ def main(argv=None) -> int:
            "out_of_scope": oos}
     (P / "finish.json").write_text(json.dumps(out, indent=1))
     if not a.no_commit:
-        subprocess.run(["git", "add", str(P.relative_to(ROOT)), f"{reports_dir()}/ledger.jsonl"], cwd=ROOT)
+        stage_paths = [str(P.relative_to(ROOT)), f"{reports_dir()}/ledger.jsonl"]
+        if (ROOT / reports_dir() / "gsc-week-cache").exists():
+            stage_paths.append(f"{reports_dir()}/gsc-week-cache")
+        subprocess.run(["git", "add", *stage_paths], cwd=ROOT)
         subprocess.run(["git", "commit", "-q", "-m",
                         f"{engine()} {a.date}: packets, audit rounds, ledger rows ({len(rows)} pages)"], cwd=ROOT)
     ok = sum(v == "ok" for v in live.values())
