@@ -18,6 +18,7 @@ Usage:
 
 import argparse
 import base64
+import hashlib
 import json
 import os
 import signal
@@ -27,6 +28,36 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Optional
 import xml.etree.ElementTree as ET
+
+_STAGGERED_SITES: set[str] = set()
+_QUOTA_TOKENS = ("quota", "ratelimit", "rate limit", "load quota", "resource_exhausted", "userratelimitexceeded")
+
+
+def _is_quota_403(status_code: int, body_text: str) -> bool:
+    return status_code == 403 and any(tok in (body_text or "").lower() for tok in _QUOTA_TOKENS)
+
+
+def _maybe_cron_stagger(site_url: str) -> int:
+    key = (site_url or "").strip().lower()
+    if not key or key in _STAGGERED_SITES:
+        return 0
+    jitter_env = (os.environ.get("GSC_CRON_JITTER") or "").strip().lower()
+    _STAGGERED_SITES.add(key)
+    if jitter_env in ("0", "false", "no", "off"):
+        return 0
+    is_cloud = (
+        jitter_env in ("1", "true", "yes", "on")
+        or (os.environ.get("CLAUDE_CODE_REMOTE") or "").strip().lower() in ("1", "true")
+        or (os.environ.get("CLAUDE_CLOUD_ROUTINE") or "").strip().lower() in ("1", "true")
+    )
+    if not is_cloud:
+        return 0
+    max_s = int(os.environ.get("GSC_CRON_JITTER_MAX_S", "150"))
+    delay = (int(hashlib.sha256(key.encode("utf-8")).hexdigest()[:8], 16) % max_s) if max_s > 0 else 0
+    if delay > 0:
+        print(f"  [gsc-stagger] cloud cron offset {delay}s for {site_url}", file=sys.stderr, flush=True)
+        time.sleep(delay)
+    return delay
 
 # ── Credentials ────────────────────────────────────────────────────────────────
 def _validate_sa_dict(info: object) -> tuple[bool, str]:
@@ -207,18 +238,32 @@ def fetch_sitemap_urls(base_url: str) -> tuple[list[str], list[str]]:
 
 
 # ── URL Inspection API ─────────────────────────────────────────────────────────
-def inspect_url(session, site_url: str, inspection_url: str, retries: int = 3) -> dict:
+def inspect_url(session, site_url: str, inspection_url: str, retries: int = 4) -> dict:
     """Call the URL Inspection API for one URL. Returns the API response dict."""
-    import requests as req_lib
+    _maybe_cron_stagger(site_url)
     api = "https://searchconsole.googleapis.com/v1/urlInspection/index:inspect"
     payload = {"inspectionUrl": inspection_url, "siteUrl": site_url}
+    quota_backoffs = (15, 30, 60, 90)
     for attempt in range(retries):
         try:
             r = session.post(api, json=payload, timeout=30)
             if r.status_code == 403:
+                body_text = getattr(r, "text", "") or ""
+                if _is_quota_403(403, body_text):
+                    if attempt < retries - 1:
+                        wait = quota_backoffs[min(attempt, len(quota_backoffs) - 1)]
+                        print(f"  [gsc-quota] 403 quota/rate-limit for {inspection_url}; sleeping {wait}s ...", file=sys.stderr)
+                        time.sleep(wait)
+                        continue
+                    return {"error": f"403 quota exhausted: {body_text[:240]}", "inspection_url": inspection_url}
                 print(f"\nERROR 403: Service account lacks Full/Owner access to GSC property '{site_url}'.", file=sys.stderr)
                 print("Fix: GSC → Settings → Users and permissions → Add the SA as Full user.", file=sys.stderr)
                 sys.exit(3)
+            if r.status_code == 429 and attempt < retries - 1:
+                wait = quota_backoffs[min(attempt, len(quota_backoffs) - 1)]
+                print(f"  [gsc-quota] 429 rate-limit for {inspection_url}; sleeping {wait}s ...", file=sys.stderr)
+                time.sleep(wait)
+                continue
             r.raise_for_status()
             return r.json()
         except Exception as e:

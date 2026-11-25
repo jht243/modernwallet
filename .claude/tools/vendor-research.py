@@ -348,14 +348,65 @@ def queue(root,path,candidate=None):
             'scope':'Compact allocation only. Keep the entire original intake. Retrieve one candidate proof when needed; do not load all archived company research again.'}
 
 
+def precheck(root,intake_path,out_path=None):
+    """$0 plain-Python reachability pre-check across intake candidate domains before spawning AI agents."""
+    import html as _html, shutil as _shutil, socket as _socket, ssl as _ssl, urllib.error as _ue, urllib.request as _ur
+    ua='Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+    bot_re=re.compile(r"making sure you['\u2019]?re not a bot|anubis could not load|please wait while your request is being verified|verify you are human|attention required!\s*\|\s*cloudflare|just a moment\.\.\.\s*enable javascript",re.I)
+    def probe(dom):
+        for target in [f'https://{dom}/pricing',f'https://{dom}/']:
+            code,body,hdrs=0,'',{}
+            try:
+                req=_ur.Request(target,headers={'User-Agent':ua,'Accept':'text/html,*/*;q=0.8'})
+                with _ur.urlopen(req,timeout=12,context=_ssl.create_default_context()) as resp:
+                    code=resp.status;hdrs={k.lower():v for k,v in resp.headers.items()};body=resp.read(262144).decode('utf-8','replace')
+            except _ue.HTTPError as e:
+                code=e.code;hdrs={k.lower():v for k,v in (e.headers.items() if e.headers else [])}
+                try:body=e.read(65536).decode('utf-8','replace') if e.fp else ''
+                except Exception:body=''
+            except _ue.URLError as e:
+                if isinstance(getattr(e,'reason',None),_socket.gaierror):return {'domain':dom,'status':'defunct','httpStatus':0,'checkedUrl':target}
+            except Exception:pass
+            if code!=200 and _shutil.which('curl'):
+                m='__VR_CODE__:'
+                p=subprocess.run(['curl','-sSL','--compressed','--max-time','12','-A',ua,'-w',f'\n{m}%{{http_code}}',target],capture_output=True,text=True,errors='replace',timeout=16,check=False)
+                if p.returncode==6:return {'domain':dom,'status':'defunct','httpStatus':0,'checkedUrl':target}
+                if m in (p.stdout or ''):
+                    rb,tl=p.stdout.rsplit(m,1)
+                    try:
+                        cc=int(tl.strip().splitlines()[0])
+                        if cc:code,body=cc,rb[:262144]
+                    except (ValueError,IndexError):pass
+            vis=re.sub(r'\s+',' ',_html.unescape(re.sub(r'(?s)<[^>]+>',' ',re.sub(r'(?is)<(script|style|noscript|svg)[^>]*>.*?</\1>',' ',body)))).strip()
+            if hdrs.get('cf-mitigated','').lower()=='challenge' or (len(vis)<4000 and bot_re.search(vis)):
+                return {'domain':dom,'status':'anti_bot_gate','httpStatus':code,'checkedUrl':target}
+            if code==200 and len(vis)>=120:
+                return {'domain':dom,'status':'readable','httpStatus':200,'checkedUrl':target,'chars':len(vis)}
+        return {'domain':dom,'status':'blocked_or_unreachable','httpStatus':code,'checkedUrl':f'https://{dom}/'}
+    intake=read(intake_path);cands=intake.get('candidates',[])
+    doms=sorted({domain(c['vendor']['domain']) for c in cands if c.get('vendor',{}).get('domain')})
+    by_dom={}
+    if doms:
+        with ThreadPoolExecutor(max_workers=min(8,len(doms))) as pool:
+            for d,res in zip(doms,pool.map(probe,doms)):by_dom[d]=res
+    rows=[{'id':c['id'],'domain':domain(c['vendor']['domain']),**by_dom[domain(c['vendor']['domain'])]} for c in cands if c.get('vendor',{}).get('domain')]
+    counts={k:sum(r['status']==k for r in rows) for k in ['readable','blocked_or_unreachable','anti_bot_gate','defunct']}
+    out={'version':VERSION,'jobId':intake.get('jobId'),'checkedAt':now().isoformat(),'counts':counts,
+         'allUnreadableFastExit':bool(rows) and counts['readable']==0,'candidates':rows}
+    if out_path:save(out_path,out);out['artifact']=ref(root,out_path)
+    return out
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--root',default=str(Path(__file__).resolve().parents[2]));sub=parser.add_subparsers(dest='command',required=True)
     q=sub.add_parser('plan');q.add_argument('--intake',required=True);q.add_argument('--run-id',required=True);q.add_argument('--run-dir',required=True);q.add_argument('--snapshot',action='append',default=[])
+    q=sub.add_parser('precheck');q.add_argument('--intake',required=True);q.add_argument('--out')
     for name in ['check','sources']:
         q=sub.add_parser(name);q.add_argument('--plan',required=True)
     q=sub.add_parser('queue');q.add_argument('--plan',required=True);q.add_argument('--candidate')
     args=parser.parse_args();root=Path(args.root).resolve()
     if args.command=='plan':result=plan(root,inside(root,args.intake),inside(root,args.run_dir),args.run_id,[inside(root,p) for p in args.snapshot])
+    elif args.command=='precheck':result=precheck(root,inside(root,args.intake),inside(root,args.out) if args.out else None)
     elif args.command=='check':
         value=validate(root,inside(root,args.plan));result={'jobId':value['jobId'],'counts':value['counts'],'scope':value['scope']}
     elif args.command=='queue':result=queue(root,inside(root,args.plan),args.candidate)

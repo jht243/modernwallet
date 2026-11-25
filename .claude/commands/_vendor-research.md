@@ -32,3 +32,7 @@ Use `python3 .claude/tools/vendor-research.py plan --intake ORIGINAL_INTAKE.json
 Use `check --plan PLAN.json` for exact evidence/accounting verification and `sources --plan PLAN.json` for additional internal dependencies. Retain actual full captures/identity evidence alongside existing canonical receipts, outside visitor-facing files. No copied Layer3 local module/configuration, new per-vendor page mandate, new opportunity queue, model/effort change, outreach or publication permission is introduced.
 
 When this helper is used, attach its `vendorResearchPlan` reference and the existing canonical `jobId` to the normal chart manifest. The existing chart validator verifies that allocation; it adds no separate approval or review stage. Existing charts without this new optional evidence retain their original validation path.
+
+## Zero-cost vendor reachability precheck (before waking AI writers)
+
+Before spawning research or writer subagents on a vendor batch, run `python3 .claude/tools/vendor-research.py precheck --intake ORIGINAL_INTAKE.json --out NEW_INTERNAL_DIRECTORY/vendor-precheck.json`. It probes candidate vendor domains in parallel plain Python ($0 AI cost) and flags `anti_bot_gate`, `defunct`, and `blocked_or_unreachable` hosts upfront (never solve or bypass CAPTCHAs or anti-bot challenges). If `allUnreadableFastExit` is `true`, exit cleanly at $0 writer spend rather than waking AI agents on unreadable vendor sites.

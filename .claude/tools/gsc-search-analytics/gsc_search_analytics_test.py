@@ -64,6 +64,68 @@ class GscCredentialValidationTest(unittest.TestCase):
                             gsc.resolve_sa_info(None, repo_root=root)
             self.assertEqual(ctx.exception.code, 4)
 
+    def test_quota_403_retries_instead_of_permission_exit_3(self):
+        class FakeResp:
+            def __init__(self, status_code, text="", payload=None):
+                self.status_code = status_code
+                self.text = text
+                self.headers = {}
+                self._payload = payload or {}
+
+            def raise_for_status(self):
+                if self.status_code >= 400:
+                    raise RuntimeError(f"http {self.status_code}")
+
+            def json(self):
+                return self._payload
+
+        class FakeSession:
+            def __init__(self, responses):
+                self.responses = list(responses)
+                self.calls = 0
+
+            def post(self, url, json=None, timeout=60):
+                resp = self.responses[self.calls]
+                self.calls += 1
+                return resp
+
+        sess = FakeSession([
+            FakeResp(403, '{"error":{"message":"Quota exceeded for quota metric \'Load quota\'","reason":"quotaExceeded"}}'),
+            FakeResp(200, payload={"rows": [{"keys": ["ai"], "clicks": 5, "impressions": 50, "ctr": 0.1, "position": 3.2}]}),
+        ])
+        with mock.patch.dict(os.environ, {"GSC_PACE_S": "0", "GSC_CRON_JITTER": "0"}, clear=False):
+            with mock.patch.object(gsc.time, "sleep") as sleep_mock:
+                out = gsc.query_search_analytics(sess, "sc-domain:layer3labs.io", {"startDate": "2026-11-01", "endDate": "2026-11-07"})
+        self.assertEqual(sess.calls, 2)
+        self.assertEqual(len(out["rows"]), 1)
+        self.assertEqual(sleep_mock.call_count, 1)
+
+        # Genuine permission 403 still exits 3 immediately without retrying
+        perm_sess = FakeSession([
+            FakeResp(403, '{"error":{"message":"User does not have sufficient permission for site","reason":"forbidden"}}'),
+        ])
+        with mock.patch.dict(os.environ, {"GSC_PACE_S": "0", "GSC_CRON_JITTER": "0"}, clear=False):
+            with self.assertRaises(SystemExit) as ctx:
+                gsc.query_search_analytics(perm_sess, "sc-domain:layer3labs.io", {})
+        self.assertEqual(ctx.exception.code, 3)
+        self.assertEqual(perm_sess.calls, 1)
+
+    def test_cloud_cron_stagger_deterministic_and_local_zero(self):
+        gsc._STAGGERED_SITES.clear()
+        with mock.patch.dict(os.environ, {"CLAUDE_CODE_REMOTE": "", "GSC_CRON_JITTER": ""}, clear=False):
+            with mock.patch.object(gsc.time, "sleep") as sleep_mock:
+                d0 = gsc._maybe_cron_stagger("sc-domain:layer3labs.io")
+        self.assertEqual(d0, 0)
+        sleep_mock.assert_not_called()
+
+        gsc._STAGGERED_SITES.clear()
+        with mock.patch.dict(os.environ, {"CLAUDE_CODE_REMOTE": "true", "GSC_CRON_JITTER_MAX_S": "120"}, clear=False):
+            with mock.patch.object(gsc.time, "sleep") as sleep_mock:
+                d1 = gsc._maybe_cron_stagger("sc-domain:layer3labs.io")
+                d2 = gsc._maybe_cron_stagger("sc-domain:layer3labs.io")
+        self.assertTrue(0 <= d1 < 120)
+        self.assertEqual(d2, 0)  # runs at most once per site per process
+
 
 if __name__ == "__main__":
     unittest.main()

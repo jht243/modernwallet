@@ -55,13 +55,81 @@ Exit codes:
 
 import argparse
 import base64
+import hashlib
 import json
 import os
 import sys
+import threading
+import time
 import urllib.parse
 from datetime import date, timedelta
 from pathlib import Path
 from typing import Optional
+
+_GSC_PACE_LOCK = threading.Lock()
+_GSC_LAST_CALL_TS = 0.0
+_STAGGERED_SITES: set[str] = set()
+_QUOTA_TOKENS = (
+    "quota",
+    "ratelimit",
+    "rate limit",
+    "load quota",
+    "resource_exhausted",
+    "userratelimitexceeded",
+)
+
+
+def _is_quota_403(status_code: int, body_text: str) -> bool:
+    if status_code != 403:
+        return False
+    low = (body_text or "").lower()
+    return any(tok in low for tok in _QUOTA_TOKENS)
+
+
+def compute_cron_stagger_seconds(site_url: str, max_s: int = 150) -> int:
+    """Deterministic per-site stagger (0..max_s-1s) so simultaneous 3:00/3:30 AM fleet cron runs spread out."""
+    if max_s <= 0 or not site_url:
+        return 0
+    digest = hashlib.sha256(site_url.strip().lower().encode("utf-8")).hexdigest()
+    return int(digest[:8], 16) % max_s
+
+
+def _maybe_cron_stagger(site_url: str) -> int:
+    """Sleep once per site/process ONLY in unattended cloud/cron runs (zero delay in interactive CLI or tests)."""
+    key = (site_url or "").strip().lower()
+    if not key or key in _STAGGERED_SITES:
+        return 0
+    jitter_env = (os.environ.get("GSC_CRON_JITTER") or "").strip().lower()
+    if jitter_env in ("0", "false", "no", "off"):
+        _STAGGERED_SITES.add(key)
+        return 0
+    is_cloud = (
+        jitter_env in ("1", "true", "yes", "on")
+        or (os.environ.get("CLAUDE_CODE_REMOTE") or "").strip().lower() in ("1", "true")
+        or (os.environ.get("CLAUDE_CLOUD_ROUTINE") or "").strip().lower() in ("1", "true")
+    )
+    _STAGGERED_SITES.add(key)
+    if not is_cloud:
+        return 0
+    max_s = int(os.environ.get("GSC_CRON_JITTER_MAX_S", "150"))
+    delay = compute_cron_stagger_seconds(key, max_s=max_s)
+    if delay > 0:
+        print(f"[gsc-stagger] cloud cron offset {delay}s for {site_url}", file=sys.stderr, flush=True)
+        time.sleep(delay)
+    return delay
+
+
+def _pace_gsc_call() -> None:
+    global _GSC_LAST_CALL_TS
+    pace_s = float(os.environ.get("GSC_PACE_S", "0.4"))
+    if pace_s <= 0:
+        return
+    with _GSC_PACE_LOCK:
+        now = time.monotonic()
+        wait = (_GSC_LAST_CALL_TS + pace_s) - now
+        if wait > 0:
+            time.sleep(wait)
+        _GSC_LAST_CALL_TS = time.monotonic()
 
 
 def _parse_env_files_for_sa(repo_root: Optional[Path] = None) -> list[tuple[str, str]]:
@@ -276,29 +344,55 @@ def derive_site_url(base_url: str, override: Optional[str] = None) -> str:
     return f"sc-domain:{host}"
 
 
-def query_search_analytics(session, site_url: str, body: dict, retries: int = 4) -> dict:
-    """Hit the SearchAnalytics:query endpoint and return parsed JSON."""
+def query_search_analytics(session, site_url: str, body: dict, retries: int = 6) -> dict:
+    """Hit the SearchAnalytics:query endpoint with per-site cloud cron stagger, polite pacing, and quota backoff."""
     import random
-    import time
     import requests as req_lib
 
+    _maybe_cron_stagger(site_url)
     timeout_s = int(os.environ.get("GSC_HTTP_TIMEOUT", "60"))
     quoted_site = urllib.parse.quote(site_url, safe="")
     endpoint = (
         f"https://searchconsole.googleapis.com/webmasters/v3/sites/"
         f"{quoted_site}/searchAnalytics/query"
     )
+    quota_backoffs = (15, 30, 60, 90, 135)
     last_err = None
     for attempt in range(retries):
+        _pace_gsc_call()
         try:
             r = session.post(endpoint, json=body, timeout=timeout_s)
             if r.status_code == 403:
+                body_text = getattr(r, "text", "") or ""
+                if _is_quota_403(403, body_text):
+                    if attempt < retries - 1:
+                        wait = quota_backoffs[min(attempt, len(quota_backoffs) - 1)] + random.uniform(0.5, 2.5)
+                        print(
+                            f"[gsc-quota] 403 quota/rate-limit on {site_url} (attempt {attempt + 1}/{retries}); "
+                            f"sleeping {wait:.1f}s before retry",
+                            file=sys.stderr,
+                            flush=True,
+                        )
+                        time.sleep(wait)
+                        continue
+                    print(
+                        f"ERROR 403 QUOTA: GSC Search Analytics load/rate quota exhausted on {site_url} after {retries} attempts: {body_text[:240]}",
+                        file=sys.stderr,
+                    )
+                    sys.exit(11)
                 print(f"ERROR 403: service account lacks permission on {site_url}. "
                       f"Add it as Full/Owner in GSC → Settings → Users and permissions.",
                       file=sys.stderr)
                 sys.exit(3)
             if r.status_code in (408, 429, 500, 502, 503, 504) and attempt < retries - 1:
-                time.sleep(min(2 ** (attempt + 1), 24) + random.uniform(0.5, 2.5))
+                base_wait = quota_backoffs[min(attempt, len(quota_backoffs) - 1)] if r.status_code == 429 else min(2 ** (attempt + 1), 24)
+                retry_after = (getattr(r, "headers", None) or {}).get("Retry-After")
+                if retry_after:
+                    try:
+                        base_wait = max(base_wait, min(int(float(retry_after)), 150))
+                    except ValueError:
+                        pass
+                time.sleep(base_wait + random.uniform(0.5, 2.5))
                 continue
             r.raise_for_status()
             return r.json()

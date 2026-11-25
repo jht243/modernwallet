@@ -53,6 +53,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import hashlib
 import json
 import os
 import signal
@@ -62,6 +63,36 @@ import xml.etree.ElementTree as ET
 from datetime import date, datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
+
+_STAGGERED_SITES: set[str] = set()
+_QUOTA_TOKENS = ("quota", "ratelimit", "rate limit", "load quota", "resource_exhausted", "userratelimitexceeded")
+
+
+def _is_quota_403(status_code: int, body_text: str) -> bool:
+    return status_code == 403 and any(tok in (body_text or "").lower() for tok in _QUOTA_TOKENS)
+
+
+def _maybe_cron_stagger(site_url: str) -> int:
+    key = (site_url or "").strip().lower()
+    if not key or key in _STAGGERED_SITES:
+        return 0
+    jitter_env = (os.environ.get("GSC_CRON_JITTER") or "").strip().lower()
+    _STAGGERED_SITES.add(key)
+    if jitter_env in ("0", "false", "no", "off"):
+        return 0
+    is_cloud = (
+        jitter_env in ("1", "true", "yes", "on")
+        or (os.environ.get("CLAUDE_CODE_REMOTE") or "").strip().lower() in ("1", "true")
+        or (os.environ.get("CLAUDE_CLOUD_ROUTINE") or "").strip().lower() in ("1", "true")
+    )
+    if not is_cloud:
+        return 0
+    max_s = int(os.environ.get("GSC_CRON_JITTER_MAX_S", "150"))
+    delay = (int(hashlib.sha256(key.encode("utf-8")).hexdigest()[:8], 16) % max_s) if max_s > 0 else 0
+    if delay > 0:
+        print(f"  [gsc-stagger] cloud cron offset {delay}s for {site_url}", file=sys.stderr, flush=True)
+        time.sleep(delay)
+    return delay
 
 SCOPE = "https://www.googleapis.com/auth/webmasters.readonly"
 INSPECT_ENDPOINT = "https://searchconsole.googleapis.com/v1/urlInspection/index:inspect"
@@ -179,16 +210,18 @@ class Inspector:
             self._creds.refresh(self._auth_req)
         return self._creds.token
 
-    def inspect(self, url: str, retries: int = 2) -> dict:
-        """Inspect one URL. Retries transient failures (timeouts, 429, 5xx) with
-        backoff so a single slow/flaky page can't stall or kill the whole run;
+    def inspect(self, url: str, retries: int = 3) -> dict:
+        """Inspect one URL. Retries transient failures (timeouts, 429, 403 quota, 5xx) with
+        backoff so a single slow/flaky page or shared-SA burst can't stall or kill the whole run;
         after `retries` it records the error and the caller moves on."""
         import requests
+        _maybe_cron_stagger(self.site_url)
         try:
             token = self._token()
         except Exception as exc:  # noqa: BLE001
             return {"url": url, "success": False, "status_code": None, "error": f"token refresh failed: {exc}"[:500]}
         last: dict | None = None
+        quota_backoffs = (15, 30, 60)
         for attempt in range(retries + 1):
             try:
                 resp = requests.post(
@@ -203,11 +236,20 @@ class Inspector:
                     time.sleep(2 ** attempt)
                     continue
                 return last
+            body_text = resp.text or ""
+            if _is_quota_403(resp.status_code, body_text):
+                if attempt < retries:
+                    wait = quota_backoffs[min(attempt, len(quota_backoffs) - 1)]
+                    log(f"  [gsc-quota] 403 quota/rate-limit on {url}; sleeping {wait}s before retry")
+                    time.sleep(wait)
+                    continue
+                return {"url": url, "success": False, "status_code": 429, "quota_exhausted": True, "error": body_text[:500]}
             if resp.status_code in (429, 500, 502, 503, 504) and attempt < retries:
-                time.sleep(2 ** attempt)
+                wait = quota_backoffs[min(attempt, len(quota_backoffs) - 1)] if resp.status_code == 429 else (2 ** attempt)
+                time.sleep(wait)
                 continue
             if resp.status_code != 200:
-                return {"url": url, "success": False, "status_code": resp.status_code, "error": (resp.text or "")[:500]}
+                return {"url": url, "success": False, "status_code": resp.status_code, "error": body_text[:500]}
             idx = (resp.json().get("inspectionResult", {}) or {}).get("indexStatusResult", {}) or {}
             break
         else:  # pragma: no cover — exhausted retries on transient status

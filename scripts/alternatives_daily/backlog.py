@@ -17,10 +17,19 @@ Commands:
   add    --file new.json [--status eligible|pending]   discovery / intake
 """
 import argparse
+from concurrent.futures import ThreadPoolExecutor
 import datetime as dt
+import html
 import json
+import os
 import re
+import shutil
+import socket
+import ssl
+import subprocess
 import sys
+import urllib.error
+import urllib.request
 from pathlib import Path
 from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
@@ -31,6 +40,110 @@ TERMINAL = {'published', 'excluded', 'duplicate'}
 DAILY_CAP = 3
 DISCOVERY_MAX = 60
 MAX_RESUME_ATTEMPTS = 2  # 1 initial claim + max 1 resume; stuck vendors auto-quarantine so siblings flow
+
+_PRECHECK_UA = ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 '
+                '(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36')
+_BOT_GATE_RE = re.compile(
+    r"making sure you['\u2019]?re not a bot|anubis could not load|please wait while your request is being verified|"
+    r"verify you are human|attention required!\s*\|\s*cloudflare|just a moment\.\.\.\s*enable javascript",
+    re.I,
+)
+
+
+def _visible_chars(markup: str) -> str:
+    markup = re.sub(r'(?is)<(script|style|noscript|svg)[^>]*>.*?</\1>', ' ', markup)
+    markup = re.sub(r'(?s)<[^>]+>', ' ', markup)
+    return re.sub(r'\s+', ' ', html.unescape(markup)).strip()
+
+
+def probe_vendor_url(url: str, timeout: int = 12) -> dict:
+    """$0 pure-Python vendor reachability precheck (never bypasses CAPTCHAs/anti-bot gates)."""
+    if not url or not url.startswith(('http://', 'https://')):
+        return {'ok': False, 'disposition': 'held', 'reason': 'missing_url'}
+    sp = urlsplit(url)
+    origin = f'{sp.scheme}://{sp.netloc}'
+    candidates = [url]
+    if sp.path and sp.path not in ('/', ''):
+        for alt in (f'{origin}/pricing', f'{origin}/'):
+            if alt not in candidates:
+                candidates.append(alt)
+
+    last_code = 0
+    saw_codes = []
+    dns_dead = False
+    bot_gated = False
+    js_shell = False
+
+    for target in candidates:
+        code, body, hdrs = 0, '', {}
+        req = urllib.request.Request(
+            target,
+            headers={
+                'User-Agent': _PRECHECK_UA,
+                'Accept': 'text/html,application/xhtml+xml,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.9',
+            },
+        )
+        try:
+            ctx = ssl.create_default_context()
+            with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
+                code = resp.status
+                hdrs = {k.lower(): v for k, v in resp.headers.items()}
+                body = resp.read(262144).decode('utf-8', 'replace')
+        except urllib.error.HTTPError as e:
+            code = e.code
+            hdrs = {k.lower(): v for k, v in (e.headers.items() if e.headers else [])}
+            try:
+                body = e.read(65536).decode('utf-8', 'replace') if e.fp else ''
+            except Exception:
+                body = ''
+        except urllib.error.URLError as e:
+            if isinstance(getattr(e, 'reason', None), socket.gaierror):
+                dns_dead = True
+        except Exception:
+            pass
+
+        # Fallback to curl if urllib hit TLS/HTTP2 quirk (unless DNS NXDOMAIN)
+        if code not in (200,) and not dns_dead and shutil.which('curl'):
+            marker = '__PRECHECK_CODE__:'
+            proc = subprocess.run(
+                ['curl', '-sSL', '--compressed', '--max-time', str(timeout), '-A', _PRECHECK_UA,
+                 '-w', f'\n{marker}%{{http_code}}', target],
+                capture_output=True, text=True, errors='replace', timeout=timeout + 4, check=False,
+            )
+            if proc.returncode == 6:
+                dns_dead = True
+            elif marker in (proc.stdout or ''):
+                raw_b, tail = proc.stdout.rsplit(marker, 1)
+                try:
+                    c_code = int(tail.strip().splitlines()[0])
+                    if c_code:
+                        code, body = c_code, raw_b[:262144]
+                except (ValueError, IndexError):
+                    pass
+
+        if code:
+            last_code = code
+            saw_codes.append(code)
+        vis = _visible_chars(body)
+        if hdrs.get('cf-mitigated', '').lower() == 'challenge' or (len(vis) < 4000 and _BOT_GATE_RE.search(vis)):
+            bot_gated = True
+            continue
+        if code == 200 and len(vis) >= 120:
+            return {'ok': True, 'status': 200, 'checkedUrl': target, 'chars': len(vis), 'reason': 'readable'}
+        if code == 200 and len(vis) < 120:
+            js_shell = True
+
+    if dns_dead and not saw_codes:
+        return {'ok': False, 'disposition': 'excluded', 'status': 0, 'reason': 'dns_nxdomain'}
+    if bot_gated:
+        return {'ok': False, 'disposition': 'excluded', 'status': last_code, 'reason': 'anti_bot_gate'}
+    if saw_codes and all(c in (404, 410) for c in saw_codes):
+        return {'ok': False, 'disposition': 'excluded', 'status': last_code, 'reason': f'http_{last_code}_all_fallbacks'}
+    if js_shell:
+        return {'ok': False, 'disposition': 'held', 'status': 200, 'reason': 'unrendered_js_shell'}
+    primary_code = saw_codes[0] if saw_codes else 0
+    return {'ok': False, 'disposition': 'held', 'status': primary_code, 'reason': f'http_{primary_code or "timeout"}'}
 
 
 def now():
@@ -187,30 +300,86 @@ def cmd_next(state, args):
             state['_dirty'] = True
     resume = [r for r in state['rows'] if r['status'] == 'in_progress']
     room = max(0, min(args.max, DAILY_CAP) - len(claimed_today(state)))
-    fresh = sorted((r for r in state['rows'] if r['status'] == 'eligible'),
-                   key=lambda r: (r.get('priority', 999), r['id']))[:room]
+    prechecked_out = []
+    eligible_sorted = sorted((r for r in state['rows'] if r['status'] == 'eligible'),
+                             key=lambda r: (r.get('priority', 999), r['id']))
+    if getattr(args, 'precheck', False) and room > 0 and eligible_sorted:
+        fresh = []
+        idx = 0
+        while len(fresh) < room and idx < len(eligible_sorted):
+            batch = eligible_sorted[idx:idx + max(room * 2, 6)]
+            idx += len(batch)
+            with ThreadPoolExecutor(max_workers=min(6, len(batch))) as pool:
+                verdicts = list(pool.map(lambda row: probe_vendor_url(row.get('officialUrl') or ''), batch))
+            for r, v in zip(batch, verdicts):
+                if v['ok']:
+                    r['precheck'] = {'checkedAt': now(), 'checkedUrl': v['checkedUrl'], 'chars': v['chars']}
+                    state['_dirty'] = True
+                    if len(fresh) < room:
+                        fresh.append(r)
+                else:
+                    disp = v['disposition']
+                    reason = f"zero-cost precheck: official site unreadable ({v['reason']})"
+                    log(r, disp, reason)
+                    prechecked_out.append({'id': r['id'], 'status': disp, 'reason': v['reason']})
+                    state['_dirty'] = True
+    else:
+        fresh = eligible_sorted[:room]
+
     pending_candidates = []
     if len(fresh) < room:
         pending_rows = sorted(
             (r for r in state['rows'] if r['status'] == 'pending'),
             key=lambda r: (r.get('priority', 999), r['id']),
-        )[:15]
-        pending_candidates = [
-            {
-                'id': r['id'],
-                'vendor': r.get('vendor'),
-                'product': r.get('product'),
-                'officialUrl': r.get('officialUrl'),
-                'priority': r.get('priority', 999),
-            }
-            for r in pending_rows
-        ]
+        )[:20]
+        if getattr(args, 'precheck', False) and pending_rows:
+            has_url = [r for r in pending_rows if r.get('officialUrl')]
+            url_verdicts = {}
+            if has_url:
+                with ThreadPoolExecutor(max_workers=min(6, len(has_url))) as pool:
+                    for r, v in zip(has_url, pool.map(lambda row: probe_vendor_url(row.get('officialUrl') or ''), has_url)):
+                        url_verdicts[r['id']] = v
+            kept_pending = []
+            for r in pending_rows:
+                v = url_verdicts.get(r['id'])
+                if v and not v['ok']:
+                    disp = v['disposition']
+                    log(r, disp, f"zero-cost precheck: official site unreadable ({v['reason']})")
+                    prechecked_out.append({'id': r['id'], 'status': disp, 'reason': v['reason']})
+                    state['_dirty'] = True
+                    continue
+                kept_pending.append((r, v))
+                if len(kept_pending) >= 15:
+                    break
+            pending_candidates = [
+                {
+                    'id': r['id'],
+                    'vendor': r.get('vendor'),
+                    'product': r.get('product'),
+                    'officialUrl': r.get('officialUrl'),
+                    'priority': r.get('priority', 999),
+                    **({'precheckReadable': True, 'checkedUrl': v['checkedUrl']} if v and v['ok'] else {}),
+                }
+                for r, v in kept_pending
+            ]
+        else:
+            pending_candidates = [
+                {
+                    'id': r['id'],
+                    'vendor': r.get('vendor'),
+                    'product': r.get('product'),
+                    'officialUrl': r.get('officialUrl'),
+                    'priority': r.get('priority', 999),
+                }
+                for r in pending_rows[:15]
+            ]
     discovery_allowed = (not resume and not fresh and room > 0 and
                          not any(r['status'] in ('eligible', 'pending') for r in state['rows']))
     upgrades = upgrade_queue(state)[:3]
     zero_work = not resume and not fresh and not pending_candidates and not discovery_allowed and not upgrades and not auto_quarantined
     return {'day': today(), 'resume': resume, 'new': fresh,
             'pendingCandidates': pending_candidates,
+            'precheckedSidelined': prechecked_out,
             'slotsLeftToday': room,
             'autoQuarantined': auto_quarantined,
             'discoveryAllowed': discovery_allowed,
@@ -325,12 +494,37 @@ def cmd_add(state, args):
     return {'added': added, 'skipped': skipped}
 
 
+def cmd_precheck(state, args):
+    """Standalone $0 reachability precheck across eligible/pending rows with officialUrl."""
+    targets = [r for r in sorted(state['rows'], key=lambda r: (r.get('priority', 999), r['id']))
+               if r['status'] in ('eligible', 'pending') and r.get('officialUrl')][:args.max_scan]
+    if not targets:
+        return {'checked': 0, 'readable': 0, 'sidelined': []}
+    with ThreadPoolExecutor(max_workers=min(8, len(targets))) as pool:
+        verdicts = list(pool.map(lambda row: probe_vendor_url(row.get('officialUrl') or ''), targets))
+    readable = 0
+    sidelined = []
+    for r, v in zip(targets, verdicts):
+        if v['ok']:
+            readable += 1
+            r['precheck'] = {'checkedAt': now(), 'checkedUrl': v['checkedUrl'], 'chars': v['chars']}
+            state['_dirty'] = True
+        else:
+            disp = v['disposition']
+            log(r, disp, f"zero-cost precheck: official site unreadable ({v['reason']})")
+            sidelined.append({'id': r['id'], 'status': disp, 'reason': v['reason']})
+            state['_dirty'] = True
+    return {'checked': len(targets), 'readable': readable, 'sidelined': sidelined}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--file-path', default=str(DEFAULT), help='backlog JSON (default %(default)s)')
     sub = parser.add_subparsers(dest='cmd', required=True)
     sub.add_parser('status')
     p = sub.add_parser('next'); p.add_argument('--max', type=int, default=DAILY_CAP)
+    p.add_argument('--precheck', action='store_true', help='$0 HTTP reachability pre-screen before waking AI writers')
+    p = sub.add_parser('precheck'); p.add_argument('--max-scan', type=int, default=30)
     p = sub.add_parser('claim'); p.add_argument('--ids', required=True)
     p = sub.add_parser('set'); p.add_argument('--id', required=True); p.add_argument('--status', required=True)
     p.add_argument('--note', required=True); p.add_argument('--field', action='append')
@@ -341,7 +535,7 @@ def main():
     args = parser.parse_args()
     path = Path(args.file_path)
     state = load(path)
-    handler = {'status': cmd_status, 'next': cmd_next, 'claim': cmd_claim, 'set': cmd_set,
+    handler = {'status': cmd_status, 'next': cmd_next, 'precheck': cmd_precheck, 'claim': cmd_claim, 'set': cmd_set,
                'audit': cmd_audit, 'add': cmd_add}[args.cmd]
     out = handler(state, args)
     dirty = state.pop('_dirty', False)

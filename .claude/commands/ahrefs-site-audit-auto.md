@@ -63,11 +63,7 @@ once, at the start of STEP 2, then never re-resolve mid-run:
 two sources, `site_audit.py` does the translation itself, so STEP 4's fix table,
 severity ordering, gates, commit and email are **identical** on either rung.
 
-**What the fallback cannot see.** DataForSEO's OnPage payload has no verdict for
-`canonical_to_redirect`, `canonical_to_4xx`, `redirect_loop`, `hreflang_*`,
-`lang_missing`, `noindex_in_sitemap`. The report lists these under
-`unavailable_on_this_source`. **Never report them as clean** -- a check that did
-not run is not a pass. Say so in the email's source line.
+**All 6 former DataForSEO blind spots are now verified locally at $0.** `site_audit.py` automatically runs a built-in pure-stdlib HTTP + HTML verifier for `canonical_to_redirect`, `canonical_to_4xx`, `redirect_loop`, `hreflang_mismatch`, `lang_missing`, and `noindex_in_sitemap` (`unavailable_on_this_source: []`). And if DataForSEO is also unavailable or out of balance, `site_audit.py` automatically falls back to `local-audit` ($0.00), checking core title/meta/H1/canonical rules plus all 6 blind spots directly against the live site and sitemap so the run never flies blind.
 
 **Pages that failed to audit are not clean either.** `pages_failed` carries a
 reason per URL; surface the count in the email rather than quietly auditing fewer
