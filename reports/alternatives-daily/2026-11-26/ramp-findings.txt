@@ -1,0 +1,43 @@
+F1 (hard_blocker=True): QUOTE: BILL publishes subscription prices on its pricing page rather than offering a perpetual $0 spend management software tier.
+PROBLEM: BILL's pricing page FAQ: 'the BILL Spend & Expense plan is $0 per user per month and includes corporate cards, budgets, expense tracking, and access to credit lines from $1,000-$5M.' The claim, the heading 'BILL falls short on all-in-one corporate card bundling', and the intro list of $0 entry prices (which omits it) are contradicted.
+FIX: Rewrite the BILL section, table cell and intro to include BILL Spend & Expense at $0 per user per month; drop the 'falls short on corporate card bundling' claim.
+
+F2 (hard_blocker=True): QUOTE: 1099 filings cost $1.99 each
+PROBLEM: BILL lists 1099 E-filing to IRS at $2.99 per 1099, $1.99 via Accountant Console, $1.49 direct state filing, $1.99 mail delivery to vendors. A flat $1.99 per 1099 filing is wrong in the table cell, BILL section, 'What Would Change' bullet and the BILL FAQ.
+FIX: State the four published 1099 fees accurately, or '$2.99 per 1099 IRS e-file'.
+
+F3 (hard_blocker=True): QUOTE: which Brex's pricing page does not match with a published cash rate
+PROBLEM: Brex's pricing page footnote posts a Brex Treasury 'total treasury return' between 3.64% and 3.99%. Also 'Brex and Expensify do not publish checking account interest yields on their main pricing pages' omits that Brex posts a Treasury rate.
+FIX: Remove the claim or state Brex's posted Treasury return range and that it is an annualized estimate, not a checking APY.
+
+F4 (hard_blocker=True): QUOTE: Relay Starter provides a 1.19% annual percentage yield (APY) on savings
+PROBLEM: Acronym used undefined earlier: the comparison table (which precedes this) uses 'APY', 'ERP', 'HRIS' (Brex row) and 'USD' (Mercury row) before they are defined in the body sections. Page rule 5 requires every acronym defined on first use.
+FIX: Spell out APY, ERP, HRIS and USD in the table cells at first use (or define in the intro).
+
+F5 (hard_blocker=True): QUOTE: Run through these five concrete checks before switching:
+PROBLEM: Presupposes the reader already uses Ramp (reader-assumption ban).
+FIX: Use 'Before choosing a Ramp alternative, run through these five checks:'.
+
+F6 (hard_blocker=True): QUOTE: Published entry prices are $0 at Ramp Free, Brex Essentials, Mercury, Relay Starter and Expensify Submit, while paid plans run from $5 per member per month on Expensify Collect
+PROBLEM: 47-word first-paragraph sentence (also 38 to 41 word sentences in How to Choose, Brex and Mercury sections) fails the overloaded-sentence ban.
+FIX: Split into two sentences and shorten the others.
+
+F7 (hard_blocker=False): QUOTE: Because BILL publishes subscription prices on its pricing page rather than on the summary fact sheet checked here, monthly subscription totals for BILL plans are omitted.
+PROBLEM: Leaks the internal writing process ('fact sheet checked here'), meta-narration. BILL says plans are priced per user per month.
+FIX: Replace with a plain factual sentence: BILL prices AP and AR per user per month, with figures on its pricing page.
+
+F8 (hard_blocker=False): QUOTE: Ramp remains the stronger choice for businesses
+PROBLEM: Evaluative superlative framing; prompt says no 'best' claims. Other pages use 'closer fit'.
+FIX: Change to 'Ramp remains the closer fit'.
+
+F9 (hard_blocker=False): QUOTE: Teams seeking free travel booking with no software subscription fee should note that Brex Essentials includes free travel booking at $0 per user per month.
+PROBLEM: Implies Ramp Free lacks travel booking; Ramp Free lists 'Book flights, hotels, and car rentals'. The first not-for bullet (enterprise accounting connections without per-seat fees) is also muddled.
+FIX: Rewrite both bullets with accurate distinctions (for example Brex Essentials global card acceptance and local currency wires vs Ramp).
+
+F10 (hard_blocker=False): QUOTE: Mercury falls short on procurement and standalone spend management depth.
+PROBLEM: Unsupported evaluative claim; Mercury's site lists a Spend Management product and Ramp procurement is an add-on to Plus.
+FIX: Replace with a factual feature comparison from the fact list.
+
+F11 (hard_blocker=False): QUOTE: Ramp also lists a 4.61% variable yield in a Ramp Investment Account, which sits above Relay Scale's 3.21% savings APY.
+PROBLEM: Compares a footnoted variable investment-account yield with a savings APY, different products; invites a rate-chasing read.
+FIX: State both rates without ranking, or note the product difference.

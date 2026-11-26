@@ -278,6 +278,27 @@
         "www.schwab.com",
         "schwab.com"
       ]
+    },
+    {
+      "route": "/alternatives/vanguard/",
+      "vendorHost": "vanguard.com",
+      "officialHosts": [
+        "investor.vanguard.com"
+      ]
+    },
+    {
+      "route": "/alternatives/ramp/",
+      "vendorHost": "ramp.com",
+      "officialHosts": [
+        "www.ramp.com"
+      ]
+    },
+    {
+      "route": "/alternatives/honeybook/",
+      "vendorHost": "honeybook.com",
+      "officialHosts": [
+        "www.honeybook.com"
+      ]
     }
   ]
 }

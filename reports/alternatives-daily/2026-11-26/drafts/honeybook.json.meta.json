@@ -1,0 +1,360 @@
+{
+ "slug": "honeybook",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 3655,
+ "floor": 1500,
+ "input_tokens": 172424,
+ "output_tokens": 6544,
+ "thinking_tokens": 6485,
+ "cached_tokens": 170267,
+ "est_cost_usd": 0.0632,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'It includes unlimited clients and projects, invoices and payments, proposals and'; 'HoneyBook notes that Premium subscribers transacting more than $500,000 annually'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 3701,
+  "numbers_not_in_facts": [
+   "13",
+   "132",
+   "1392",
+   "144",
+   "1548",
+   "168",
+   "252",
+   "288",
+   "300",
+   "483",
+   "708",
+   "825",
+   "84",
+   "840",
+   "912",
+   "923"
+  ],
+  "fact_budget": {
+   "fact_words": 509,
+   "floor": 1500,
+   "ratio": 0.34,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    15,
+    9,
+    0
+   ],
+   "applied": [
+    {
+     "id": "rows[5].pricing",
+     "quote": "Lite $23 per month (5 clients); Plus $43 per month (50 clients); Premium $70 per month (unlimited clients); Select is quote-based. Team members $11 per month per user. Advanced Payments $20 per month. Black Friday offer: 90% off for 4 months (promotion).",
+     "replacement": "Lite $23 per month (5 clients); Plus $43 per month (50 clients); Premium $70 per month (adds project profitability); Select is quote-based. Team members $11 per month per user. Advanced Payments $20 per month. Black Friday offer: 90% off for 4 months (promotion).",
+     "type": "unsupported",
+     "why": "SOURCE does not state client limits for FreshBooks Premium."
+    },
+    {
+     "id": "rows[5].bestFit",
+     "quote": "Fits service professionals who need formal accounting reports and tax records with pricing set by client volume",
+     "replacement": "Fits service professionals who need project profitability tracking with pricing set by client volume",
+     "type": "unsupported",
+     "why": "SOURCE does not list formal accounting reports or tax records for FreshBooks."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "In contrast, FreshBooks ties plan tiers to active client counts: Lite allows invoicing up to 5 clients, Plus up to 50 clients and Premium supports unlimited clients.",
+     "replacement": "In contrast, FreshBooks ties plan tiers to active client counts: Lite allows invoicing up to 5 clients and Plus up to 50 clients.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that FreshBooks Premium supports unlimited clients."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Versus HoneyBook, 17hats separates bank feeds and online scheduling into paid monthly add-ons, whereas HoneyBook Essentials ($49 per month billed annually) bundles an online meeting scheduler and bank integration tools into the base fee.",
+     "replacement": "Versus HoneyBook, 17hats separates bank feeds and online scheduling into paid monthly add-ons, whereas HoneyBook Essentials ($49 per month billed annually) bundles an online meeting scheduler into the base fee.",
+     "type": "unsupported",
+     "why": "SOURCE does not state HoneyBook Essentials includes bank integration tools."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "HoneyBook Starter also provides unlimited document creation, while 17hats caps document output on lower tiers at 20 or 35 documents per month.",
+     "replacement": "HoneyBook Starter also provides unlimited proposals, contracts and invoices, while 17hats caps document output on lower tiers at 20 or 35 documents per month.",
+     "type": "unsupported",
+     "why": "SOURCE lists proposals, contracts and invoices, not unlimited document creation, for HoneyBook Starter."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Basic provides client management, task tracking, and time tracking.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not list client management, task tracking, or time tracking for Bonsai Basic."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Bonsai fits independent freelancers and boutique agencies that want contract generation, time tracking, and project task management tied to individual user seats.",
+     "replacement": "Bonsai fits independent freelancers and boutique agencies that want contracts, proposals and scheduling tied to individual user seats.",
+     "type": "unsupported",
+     "why": "SOURCE does not list time tracking or task management for Bonsai."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Upgrading to Pro and Teams expands workflow automations and collaboration capabilities.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Pro or Teams expands automations or collaboration capabilities."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "FreshBooks publishes monthly list prices: Lite at $23.00 per month for up to 5 billable clients; Plus at $43.00 per month for up to 50 clients; and Premium at $70.00 per month for unlimited billable clients.",
+     "replacement": "FreshBooks publishes monthly list prices: Lite at $23.00 per month for up to 5 billable clients; Plus at $43.00 per month for up to 50 clients; and Premium at $70.00 per month.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that FreshBooks Premium allows unlimited billable clients."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Lite covers basic invoicing and expense tracking; Plus adds proposals, client retainers, and accountant access; and Premium adds project profitability tracking.",
+     "replacement": "FreshBooks Lite invoices up to 5 clients, Plus invoices up to 50 clients, and Premium adds project profitability tracking.",
+     "type": "unsupported",
+     "why": "SOURCE does not list expense tracking, proposals, retainers, or accountant access for FreshBooks tiers."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "FreshBooks fits service providers and independent contractors who need double-entry accounting reports, formal expense ledgers, and tax preparation tools.",
+     "replacement": "FreshBooks fits service providers and independent contractors who need invoicing and project profitability tracking structured by client count.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that FreshBooks provides double-entry accounting reports, formal expense ledgers, or tax preparation tools."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "HoneyBook Starter ($29 per month billed annually) includes unlimited clients and projects, along with contract signing and client portal tools that FreshBooks does not emphasize on its entry plan.",
+     "replacement": "HoneyBook Starter ($29 per month billed annually) includes unlimited clients and projects, along with proposals, contracts and a client portal.",
+     "type": "unsupported",
+     "why": "SOURCE does not state what FreshBooks emphasizes on its entry plan."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "FreshBooks provides double-entry accounting ledgers and project profitability, whereas HoneyBook integrates with QuickBooks Online rather than providing an accounting ledger.",
+     "replacement": "FreshBooks provides project profitability tracking, whereas HoneyBook integrates with QuickBooks Online.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that FreshBooks provides double-entry accounting ledgers."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Dubsado fits unlimited client projects with annual pricing, Moxie fits budget-conscious solo freelancers from $10 per month billed annually, Bonsai fits users who want per-seat pricing, 17hats offers multi-year payment terms, and FreshBooks combines invoicing with formal accounting reports.",
+     "replacement": "Dubsado fits unlimited client projects with annual pricing, Moxie fits budget-conscious solo freelancers from $10 per month billed annually, Bonsai fits users who want per-seat pricing, 17hats offers multi-year payment terms, and FreshBooks structures pricing by billable client tiers.",
+     "type": "unsupported",
+     "why": "SOURCE does not state FreshBooks includes formal accounting reports."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "In contrast, FreshBooks caps Lite at 5 clients and Plus at 50 clients, reserving unlimited clients for Premium at $70 per month.",
+     "replacement": "In contrast, FreshBooks caps Lite at 5 clients and Plus at 50 clients, while Premium ($70 per month) adds project profitability.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that FreshBooks Premium includes unlimited clients."
+    },
+    {
+     "id": "rows[0].bestFit",
+     "quote": "Fits creative service providers who want unlimited clients, contracts, proposals and online billing in one subscription",
+     "replacement": "Fits freelancers who want unlimited clients, contracts, proposals and online billing in one subscription",
+     "type": "unsupported",
+     "why": "SOURCE does not state creative service providers."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Dubsado provides client management software centered on workflows, project tracking and client communication.",
+     "replacement": "Dubsado provides client management software covering projects and clients.",
+     "type": "unsupported",
+     "why": "SOURCE does not state workflows or client communication for Dubsado."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "17hats offers business management software combining client tracking, contracts and invoicing into one platform.",
+     "replacement": "17hats offers business management software with document limits and scheduling add-ons.",
+     "type": "unsupported",
+     "why": "SOURCE does not state client tracking, contracts or invoicing for 17hats."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Moxie is a freelance management platform that bundles client communication, project tracking, proposals and financial management.",
+     "replacement": "Moxie is a freelance management platform that bundles client management, project management, proposals and invoicing.",
+     "type": "unsupported",
+     "why": "SOURCE states client management and invoicing rather than communication and financial management."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "HoneyBook, Dubsado, 17hats, Bonsai and Moxie are built for digital service billing rather than physical goods distribution.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state what tools are built for regarding physical goods."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "While FreshBooks offers a payroll add-on for $40 per month plus $6 per user, client management tools do not replace full enterprise workforce management systems.",
+     "replacement": "FreshBooks offers a payroll add-on for $40 per month plus $6 per user.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention enterprise workforce management systems."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "None of the six providers in this comparison publishes a permanently free plan, though Bonsai offers a free start option and each provider provides a trial period.",
+     "replacement": "None of the six providers in this comparison publishes a permanently free plan, though Bonsai offers a free start option.",
+     "type": "contradicted",
+     "why": "SOURCE states FreshBooks has a 30-day money-back guarantee, not a trial period."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "HoneyBook integrates with QuickBooks Online rather than functioning as a general ledger; businesses needing integrated accounting should examine FreshBooks or dedicated accounting applications.",
+     "replacement": "HoneyBook Essentials includes an integration with QuickBooks Online.",
+     "type": "unsupported",
+     "why": "SOURCE does not state general ledger features for HoneyBook or FreshBooks."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "HoneyBook remains the closer match for creative freelancers, event professionals and service providers who want unlimited client projects, proposals, contracts and digital payments managed in one platform without tracking client caps.",
+     "replacement": "HoneyBook remains the closer match for freelancers who want unlimited client projects, proposals, contracts and digital payments managed in one platform without tracking client caps.",
+     "type": "unsupported",
+     "why": "SOURCE does not state creative freelancers or event professionals."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 3826
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 4335
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-26T17:02:15+0000",
+    "findings_file": "reports/alternatives-daily/2026-11-26/honeybook-findings.txt",
+    "applied": [
+     {
+      "id": "intro",
+      "quote": "Published monthly prices run from $10 on Moxie Starter when billed annually to $60 per month on 17hats",
+      "replacement": "Published monthly prices run from $9 per user on Bonsai Basic billed annually (no invoicing) to $109 on HoneyBook Premium billed annually",
+      "type": "F1",
+      "why": "Corrects false range and entry price claims"
+     },
+     {
+      "id": "verdict",
+      "quote": "Moxie delivers the lowest entry price at $10 per month billed annually ($120 per year)",
+      "replacement": "Moxie Starter costs $10 per month billed annually ($120 per year)",
+      "type": "F1",
+      "why": "Removes false lowest price claim"
+     },
+     {
+      "id": "faqs[1].answer",
+      "quote": "Moxie Starter has the lowest published price at $10 per month billed annually ($120 per year) or $12 per month billed monthly.",
+      "replacement": "Bonsai Basic starts at $9 per user per month billed annually without invoicing, while Moxie Starter costs $10 per month billed annually ($120 per year) or $12 per month billed monthly.",
+      "type": "F1",
+      "why": "Clarifies Bonsai Basic entry rate without invoicing"
+     },
+     {
+      "id": "alternatives[3].body",
+      "quote": "HoneyBook provides proprietary HoneyBook Artificial Intelligence (AI) tools on Starter, which Moxie does not list on its pricing table.",
+      "replacement": "HoneyBook lists HoneyBook AI on Starter, while Moxie lists a Moxie AI assistant on Starter.",
+      "type": "F2",
+      "why": "Both platforms list an AI assistant"
+     },
+     {
+      "id": "intro",
+      "quote": "At The Modern Wallet, we build finance calculators and compare published business software prices so self-employed professionals can see what subscriptions, add-ons and payment processing cost over a full year.",
+      "replacement": "",
+      "type": "F3",
+      "why": "Removes intro self-promotion and meta-narration"
+     },
+     {
+      "id": "alternatives[6].body",
+      "quote": "When providers update regular rates or modify promotional terms, recalculate your annual expenses using the updated subscription and transaction fees.",
+      "replacement": "Recalculate annual expenses whenever vendor rates change.",
+      "type": "F4",
+      "why": "Varies sentence length to fix rhythm"
+     },
+     {
+      "id": "alternatives[3].body",
+      "quote": "Moxie publishes three subscription tiers: Starter at $10 per month billed annually ($120 charged annually) or $12 per month billed monthly; Pro at $20 per month billed annually ($240 charged annually) or $25 per month billed monthly; and Teams at $32 per month billed annually ($385 charged annually) or $40 per month billed monthly.",
+      "replacement": "Moxie publishes three subscription tiers. Starter costs $10 per month billed annually ($120 charged annually) or $12 per month billed monthly. Pro costs $20 per month billed annually ($240 charged annually) or $25 per month billed monthly. Teams costs $32 per month billed annually ($385 charged annually) or $40 per month billed monthly.",
+      "type": "F5",
+      "why": "Splits 54-word run-on into separate sentences"
+     },
+     {
+      "id": "alternatives[6].body",
+      "quote": "Dubsado introducing standard month-to-month billing options alongside its $335 and $525 annual plans, or changing its three-free-user allowance.",
+      "replacement": "Dubsado altering its annual pricing or changing its three-free-user allowance.",
+      "type": "F6",
+      "why": "Removes contradicted month-to-month billing claim"
+     },
+     {
+      "id": "alternatives[0].body",
+      "quote": "Dubsado Starter costs $13 less per year for a solo operator.",
+      "replacement": "Dubsado Starter costs $13 less per year for a solo operator, though Dubsado Starter includes 1 active lead form and lacks scheduling, workflows and Zapier.",
+      "type": "F6",
+      "why": "Adds feature caveat to comparison"
+     },
+     {
+      "id": "alternatives[1].body",
+      "quote": "17hats fits solo operators who prefer to lock in long-term savings through two-year software subscriptions and who do not require multiple user logins.",
+      "replacement": "17hats fits solo operators who prefer to lock in long-term savings through two-year software subscriptions.",
+      "type": "F7",
+      "why": "Drops unsupported user login restriction"
+     },
+     {
+      "id": "stillBetterFit.body",
+      "quote": "includes unlimited clients and projects, invoices and online payments, proposals and digital contracts, calendar synchronization, a dedicated client portal",
+      "replacement": "includes unlimited clients and projects, invoices and payments, proposals and contracts, calendar, client portal",
+      "type": "F8",
+      "why": "Adheres strictly to vendor listed wording"
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      2
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "stillBetterFit.body",
+       "quote": "It includes unlimited clients and projects, invoices and payments, proposals and contracts, calendar, client portal, basic reporting, up to two live lead forms, and proprietary HoneyBook AI tools.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      },
+      {
+       "id": "stillBetterFit.body",
+       "quote": "HoneyBook notes that Premium subscribers transacting more than $500,000 annually may be eligible for custom discounted card rates.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 3655,
+    "flags": [
+     "claim check: 2 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'It includes unlimited clients and projects, invoices and payments, proposals and'; 'HoneyBook notes that Premium subscribers transacting more than $500,000 annually'"
+    ]
+   }
+  ]
+ },
+ "seconds": 427.0,
+ "response_id": "yGEIa_-pCMK5xdIPuJCwsQU",
+ "generated_at": "2026-11-26T16:50:56+0000"
+}

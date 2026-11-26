@@ -1,0 +1,522 @@
+{
+ "slug": "ramp",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 3532,
+ "floor": 1500,
+ "input_tokens": 172406,
+ "output_tokens": 6217,
+ "thinking_tokens": 1320,
+ "cached_tokens": 170267,
+ "est_cost_usd": 0.0426,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Versus Ramp, Relay falls short on corporate spend management workflows.'"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 3489,
+  "numbers_not_in_facts": [
+   "120",
+   "150"
+  ],
+  "fact_budget": {
+   "fact_words": 518,
+   "floor": 1500,
+   "ratio": 0.35,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    16,
+    23,
+    3
+   ],
+   "applied": [
+    {
+     "id": "rows[0].bestFit",
+     "quote": "Fits businesses that want unlimited corporate cards, free domestic wires, bill pay and accounting integrations without a monthly software fee",
+     "replacement": "Fits businesses that want unlimited corporate cards, free wires, bill pay and accounting integrations without a monthly software fee",
+     "type": "unsupported",
+     "why": "SOURCE lists free wires, not domestic wires specifically."
+    },
+    {
+     "id": "rows[3].bestFit",
+     "quote": "Fits businesses that want checking accounts with unlimited user seats, savings interest and debit or credit cash back",
+     "replacement": "Fits businesses that want checking accounts with unlimited user seats, savings interest and credit card cash back",
+     "type": "unsupported",
+     "why": "SOURCE states cash back on credit cards, not debit cards."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Ramp bundles physical and virtual corporate cards, invoice processing, travel booking, expense tracking and accounts payable bill payment.",
+     "replacement": "Ramp bundles corporate cards with unlimited cards, invoice creation, travel and expense management, and accounts payable bill payment.",
+     "type": "unsupported",
+     "why": "SOURCE does not state physical/virtual cards or travel booking for Ramp."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Mercury includes free Automated Clearing House transfers, domestic and international wire transfers in United States dollars (USD), and check mailing on its $0 base plan.",
+     "replacement": "Mercury includes free Automated Clearing House transfers, wire transfers in United States dollars (USD), and check mailing on its $0 base plan.",
+     "type": "unsupported",
+     "why": "SOURCE specifies free wires in USD, not domestic and international wires."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Versus Ramp, Brex falls short on accounting software access for entry-level enterprise integrations.",
+     "replacement": "",
+     "type": "contradicted",
+     "why": "SOURCE shows Brex includes ERP integrations in Premium ($12), lower than Ramp Plus."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Ramp provides travel booking, accounts payable bill pay by ACH, card, check and wire, unlimited cards, and invoice creation on its $0 Free tier.",
+     "replacement": "Ramp provides travel and expense management, accounts payable bill pay by ACH, card, check and wire, unlimited cards, and invoice creation on its $0 Free tier.",
+     "type": "unsupported",
+     "why": "SOURCE states travel and expense for Ramp, not travel booking."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Relay focuses on business checking, multiple deposit accounts, and payment execution, while charging separate transaction fees where noted on its pricing page.",
+     "replacement": "Relay focuses on business checking and savings accounts, while stating it saves up to 50% over competitors on wire and same-day ACH.",
+     "type": "unsupported",
+     "why": "SOURCE does not state multiple deposit accounts or separate transaction fees."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Expensify Collect costs $5 per member per month and adds automated expense approvals, corporate card reconciliation, and accounting sync.",
+     "replacement": "Expensify Collect costs $5 per member per month.",
+     "type": "unsupported",
+     "why": "SOURCE does not list approvals, reconciliation, or accounting sync for Collect."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Expensify Control uses custom pricing, listed on its pricing page as low as $9 per member per month for advanced policy enforcement and multi-level approvals.",
+     "replacement": "Expensify Control uses custom pricing, listed on its pricing page as low as $9 per member per month.",
+     "type": "unsupported",
+     "why": "SOURCE does not state policy enforcement or multi-level approvals."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Expensify charges $5 per member per month on Collect for automated expense management and card reconciliation.",
+     "replacement": "Expensify charges $5 per member per month on Collect.",
+     "type": "unsupported",
+     "why": "SOURCE does not state automated expense management or card reconciliation for Collect."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "BILL specializes in financial operations software covering accounts payable, accounts receivable and business credit lines.",
+     "replacement": "BILL specializes in financial operations software covering accounts payable and business credit lines.",
+     "type": "unsupported",
+     "why": "SOURCE does not state accounts receivable for BILL."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Ramp includes free checks, wires and same-day ACH inside its Bill Pay feature on its $0 Free tier.",
+     "replacement": "Ramp includes free wires and same-day ACH inside its Bill Pay feature on its $0 Free tier.",
+     "type": "unsupported",
+     "why": "SOURCE states free wires and same-day ACH, not free checks."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "- Sole proprietors and informal freelancers fit poorly with Ramp and Brex, because both platforms require registered corporate or limited liability business structures to issue corporate charge cards.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state business entity requirements or mention sole proprietors."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "- Companies that handle routine physical cash deposits cannot use Ramp, Brex or Mercury, as none of these fintech platforms operate physical bank branch teller networks.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not mention physical cash deposits or branch networks."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Teams seeking free travel booking with no software subscription fee should note that Brex Essentials includes free travel booking at $0 per user per month, while Expensify Collect charges $5 per member per month.",
+     "replacement": "Teams seeking free travel booking with no software subscription fee should note that Brex Essentials includes free travel booking at $0 per user per month.",
+     "type": "unsupported",
+     "why": "SOURCE does not state that Expensify offers travel booking."
+    },
+    {
+     "id": "verdict",
+     "quote": "Relay pairs multiple checking accounts with savings yields up to 3.21% APY, Expensify starts at $5 per member per month on Collect for receipt tracking, and BILL provides accounts payable automation with credit lines up to $5M.",
+     "replacement": "Relay pairs checking and savings accounts with yields up to 3.21% APY, Expensify starts at $5 per member per month on Collect for receipt tracking, and BILL provides accounts payable automation with credit lines up to $5M.",
+     "type": "unsupported",
+     "why": "SOURCE does not state multiple checking accounts for Relay."
+    },
+    {
+     "id": "intro",
+     "quote": "At The Modern Wallet, we lay out published fee schedules so business owners can calculate their operational costs before selecting financial software.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SITE SELF-DESCRIPTION does not support this first-person claim."
+    },
+    {
+     "id": "rows[2].bestFit",
+     "quote": "Fits businesses seeking online commercial checking with fee-free USD wire transfers and included employee spend cards",
+     "replacement": "Fits businesses seeking company cards, expense management and fee-free USD wire transfers without monthly account fees",
+     "type": "unsupported",
+     "why": "SOURCE does not state Mercury offers online commercial checking."
+    },
+    {
+     "id": "rows[3].bestFit",
+     "quote": "Fits businesses that want checking accounts with unlimited user seats, savings interest and credit card cash back",
+     "replacement": "Fits businesses that want unlimited user seats, savings interest and credit card cash back",
+     "type": "unsupported",
+     "why": "SOURCE does not state Relay offers checking accounts."
+    },
+    {
+     "id": "rows[4].bestFit",
+     "quote": "Fits teams that prioritize employee receipt scanning, mileage tracking and expense approval workflows",
+     "replacement": "Fits teams that prioritize receipt SmartScan, mileage tracking and expense reports",
+     "type": "unsupported",
+     "why": "SOURCE does not state Expensify offers expense approval workflows."
+    },
+    {
+     "id": "rows[5].bestFit",
+     "quote": "Fits businesses focused on automated accounts payable workflows, check mailing and credit lines up to $5M",
+     "replacement": "Fits businesses focused on check mailing, payment processing, 1099 filings and credit lines up to $5M",
+     "type": "unsupported",
+     "why": "SOURCE does not state BILL offers automated accounts payable workflows."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Choosing a Ramp alternative starts with deciding whether your business needs a corporate card, a complete commercial checking account, or dedicated accounts payable software.",
+     "replacement": "Choosing a Ramp alternative starts with deciding whether your business needs corporate cards, payment processing, savings yields, or spend management software.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe alternatives as commercial checking accounts or accounts payable software."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "BILL lists transaction fees of $0.59 and $1.99 per payment, with the $1.99 fee applying when BILL prints and mails a paper check.",
+     "replacement": "BILL lists transaction fees of $0.59 and $1.99 per payment, with the $1.99 fee applying when BILL mails the check.",
+     "type": "unsupported",
+     "why": "SOURCE says where BILL mails the check, not prints and mails a paper check."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Mercury is a financial technology company offering business banking, company cards and spend management tools.",
+     "replacement": "Mercury provides company cards, expense management tools, and payment services.",
+     "type": "unsupported",
+     "why": "SOURCE does not call Mercury a financial technology company or business banking."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Mercury fits businesses that want commercial checking, employee cards and free USD wire transfers under a flat monthly plan rather than per-seat software pricing.",
+     "replacement": "Mercury fits businesses that want company cards, expense management and free USD wire transfers under a flat monthly plan rather than per-seat software pricing.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Mercury offers commercial checking."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Mercury integrates company spend cards directly into its bank accounts, but requires Mercury Plus ($29.90 per month billed annually or $35 monthly) or Mercury Pro ($299 per month billed annually or $350 monthly) to unlock advanced invoicing tools.",
+     "replacement": "Mercury includes company cards and expense management on its base tier, but requires Mercury Plus ($29.90 per month billed annually or $35 monthly) or Mercury Pro ($299 per month billed annually or $350 monthly) for invoicing with ACH debit.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Mercury integrates cards into bank accounts or unlocks advanced invoicing."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Relay provides business checking and savings accounts with integrated payment tools.",
+     "replacement": "Relay provides savings accounts and credit cards with integrated payment tools.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Relay offers business checking accounts."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Relay fits small business owners who want checking accounts with unlimited user seats, savings interest and credit card cash back.",
+     "replacement": "Relay fits small business owners who want unlimited user seats, savings interest and credit card cash back.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Relay offers checking accounts."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "Relay focuses on business checking and savings accounts, while stating it saves up to 50% over competitors on wire and same-day ACH.",
+     "replacement": "Relay focuses on savings accounts and credit cards, while stating it saves up to 50% over competitors on wire and same-day ACH.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Relay offers business checking accounts."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "BILL specializes in financial operations software covering accounts payable and business credit lines.",
+     "replacement": "BILL provides payment processing, 1099 filings and business credit lines.",
+     "type": "unsupported",
+     "why": "SOURCE does not describe BILL as financial operations software covering accounts payable."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "BILL advertises payment processing fees of $0.59 and $1.99 per payment, with the $1.99 fee applying when BILL prints and mails a check.",
+     "replacement": "BILL advertises payment processing fees of $0.59 and $1.99 per payment, with the $1.99 fee applying when BILL mails the check.",
+     "type": "unsupported",
+     "why": "SOURCE states $1.99 where BILL mails the check, not prints and mails."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "BILL fits companies that prioritize automated bill approvals, check printing and mailing, 1099 tax filings, and access to commercial lines of credit up to $5M.",
+     "replacement": "BILL fits companies that prioritize payment processing, check mailing, 1099 filings, and access to commercial lines of credit up to $5M.",
+     "type": "unsupported",
+     "why": "SOURCE does not state automated bill approvals or check printing."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "On transaction fees alone, a business issuing 50 check payments through BILL pays $99.50 in mailing fees (50 x $1.99) and $19.90 for 10 annual 1099 filings (10 x $1.99).",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE forbids worked cost examples not in the allowed figures list."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "the cost of running full back-office operations on Mercury will rise by at least $1,620 per year.",
+     "replacement": "add-on subscription fees will apply.",
+     "type": "unsupported",
+     "why": "SOURCE does not state running full back-office operations or calculate this cost."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "For growing mid-market companies, Ramp Plus costs $15 per user per month plus a platform fee based on team size (with 20% savings on annual billing).",
+     "replacement": "Ramp Plus costs $15 per user per month plus a platform fee based on team size (with 20% savings on annual billing).",
+     "type": "unsupported",
+     "why": "SOURCE does not state Ramp Plus is for growing mid-market companies."
+    },
+    {
+     "id": "verdict",
+     "quote": "and Mercury offers $0 commercial checking with free USD wire transfers.",
+     "replacement": "and Mercury offers a $0 base plan with free USD wire transfers.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Mercury offers commercial checking."
+    },
+    {
+     "id": "verdict",
+     "quote": "Relay pairs checking and savings accounts with yields up to 3.21% APY, Expensify starts at $5 per member per month on Collect for receipt tracking, and BILL provides accounts payable automation with credit lines up to $5M.",
+     "replacement": "Relay pairs savings yields up to 3.21% APY with credit card cash back, Expensify starts at $5 per member per month on Collect for receipt tracking, and BILL provides payment processing with credit lines up to $5M.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Relay checking accounts or BILL accounts payable automation."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Mercury provides business checking with free USD wires for $0 per month.",
+     "replacement": "Mercury provides a base plan with free USD wires for $0 per month.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Mercury provides business checking."
+    },
+    {
+     "id": "faqs[0].answer",
+     "quote": "Relay offers checking accounts with up to 3.21% APY on savings, Expensify covers receipt management from $5 per member per month on Collect, and BILL automates bill pay.",
+     "replacement": "Relay offers up to 3.21% APY on savings, Expensify covers receipt management from $5 per member per month on Collect, and BILL provides payment processing.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Relay offers checking accounts or BILL automates bill pay."
+    },
+    {
+     "id": "metaDescription",
+     "quote": "and limits.",
+     "replacement": "and credit lines.",
+     "type": "unsupported",
+     "why": "SOURCE does not list card limits."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "On Expensify Control at the listed starting rate of $9 per member per month, 10 employees cost $90 per month or $1,080 per year ($9 x 10 x 12).",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE only authorizes worked examples for Ramp, Brex, Expensify Collect, and Mercury."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Businesses that want cards, bill pay and cash yield in one account can start on Ramp Free without entering into an annual contract.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE mentions annual billing only for Ramp Plus/Enterprise; no claim about Ramp Free contract terms."
+    }
+   ],
+   "deleted_final": 3,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 3743
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 4345
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-26T17:01:20+0000",
+    "findings_file": "reports/alternatives-daily/2026-11-26/ramp-findings.txt",
+    "applied": [
+     {
+      "id": "alternatives[4].body",
+      "quote": "BILL publishes subscription prices on its pricing page rather than offering a perpetual $0 spend management software tier.",
+      "replacement": "BILL also offers a Spend & Expense plan at $0 per user per month that includes corporate cards, budgets and expense tracking.",
+      "type": "F1",
+      "why": "Contradicted by BILL Spend & Expense plan at $0 per user per month."
+     },
+     {
+      "id": "alternatives[4].body",
+      "quote": "Versus Ramp, BILL falls short on all-in-one corporate card bundling.",
+      "replacement": "Versus Ramp, BILL packages accounts payable and spend management across separate plans.",
+      "type": "F1",
+      "why": "Contradicted by BILL Spend & Expense plan offering cards and expense tracking."
+     },
+     {
+      "id": "rows[5].pricing",
+      "quote": "Essentials, Team, Corporate and Enterprise tiers (Enterprise custom). BILL publishes plan prices on its pricing page.",
+      "replacement": "Spend & Expense plan $0 per user per month. Essentials, Team, Corporate and Enterprise tiers (Enterprise custom, prices on site).",
+      "type": "F1",
+      "why": "Omitted BILL Spend & Expense tier at $0 per user per month."
+     },
+     {
+      "id": "rows[5].pricing",
+      "quote": "1099 filings cost $1.99 each",
+      "replacement": "1099 filings start at $2.99 per 1099 for IRS e-filing",
+      "type": "F2",
+      "why": "BILL publishes four specific 1099 fee tiers starting at $2.99 for IRS e-file."
+     },
+     {
+      "id": "alternatives[4].body",
+      "quote": "It also lists $1.99 per 1099 filing and commercial credit lines ranging from $1,000 to $5M.",
+      "replacement": "It also lists 1099 filings at $2.99 per 1099 for IRS e-filing ($1.99 via Accountant Console, $1.49 state filing, $1.99 mail delivery) and credit lines from $1,000 to $5M.",
+      "type": "F2",
+      "why": "Published 1099 fees vary by filing method rather than a flat $1.99."
+     },
+     {
+      "id": "alternatives[4].body",
+      "quote": "and $1.99 per 1099 filing.",
+      "replacement": "and $2.99 per 1099 IRS e-filing.",
+      "type": "F2",
+      "why": "IRS e-filing is $2.99 per 1099 on BILL's pricing page."
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "alongside $1.99 per 1099 filing.",
+      "replacement": "alongside $2.99 per 1099 IRS e-filing.",
+      "type": "F2",
+      "why": "BILL charges $2.99 per 1099 for IRS e-filing."
+     },
+     {
+      "id": "alternatives[0].body",
+      "quote": "which Brex's pricing page does not match with a published cash rate",
+      "replacement": "while Brex footnotes an estimated total treasury return between 3.64% and 3.99% (an annualized variable estimate, not a checking APY)",
+      "type": "F3",
+      "why": "Brex footnotes an estimated total treasury return between 3.64% and 3.99%."
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Brex and Expensify do not publish checking account interest yields on their main pricing pages.",
+      "replacement": "Brex footnotes an estimated 3.64% to 3.99% treasury return rather than checking APY, while Expensify lists no cash yields.",
+      "type": "F3",
+      "why": "Brex publishes an annualized Treasury return estimate in footnotes."
+     },
+     {
+      "id": "rows[2].pricing",
+      "quote": "free USD ACH",
+      "replacement": "free United States dollar (USD) ACH",
+      "type": "F4",
+      "why": "Acronym USD must be defined on first use."
+     },
+     {
+      "id": "rows[3].pricing",
+      "quote": "1.19% APY on savings",
+      "replacement": "1.19% annual percentage yield (APY) on savings",
+      "type": "F4",
+      "why": "Acronym APY must be defined on first use."
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Relay Starter provides a 1.19% annual percentage yield (APY) on savings",
+      "replacement": "Relay Starter provides a 1.19% APY on savings",
+      "type": "F4",
+      "why": "Acronym defined earlier in comparison table."
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Run through these five concrete checks before switching:",
+      "replacement": "Before choosing a Ramp alternative, run through these five checks:",
+      "type": "F5",
+      "why": "Violates reader-assumption ban by presuming reader already uses Ramp."
+     },
+     {
+      "id": "intro",
+      "quote": "Published entry prices are $0 at Ramp Free, Brex Essentials, Mercury, Relay Starter and Expensify Submit, while paid plans run from $5 per member per month on Expensify Collect to $12 per user per month on Brex Premium and $15 per user per month on Ramp Plus.",
+      "replacement": "Published entry prices are $0 at Ramp Free, Brex Essentials, Mercury, Relay Starter, Expensify Submit and BILL Spend & Expense. Paid plans run from $5 per member per month on Expensify Collect to $12 on Brex Premium and $15 on Ramp Plus.",
+      "type": "F6",
+      "why": "Sentence exceeded word limit ban; split into two shorter sentences."
+     },
+     {
+      "id": "alternatives[4].body",
+      "quote": "Because BILL publishes subscription prices on its pricing page rather than on the summary fact sheet checked here, monthly subscription totals for BILL plans are omitted.",
+      "replacement": "BILL prices its accounts payable and accounts receivable plans per user per month, with figures published on its pricing page.",
+      "type": "F7",
+      "why": "Meta-narration leaking internal writing process."
+     },
+     {
+      "id": "stillBetterFit.body",
+      "quote": "Ramp remains the stronger choice for businesses",
+      "replacement": "Ramp remains the closer fit for businesses",
+      "type": "F8",
+      "why": "Superlative evaluative language banned."
+     },
+     {
+      "id": "alternatives[5].body",
+      "quote": "Teams seeking free travel booking with no software subscription fee should note that Brex Essentials includes free travel booking at $0 per user per month.",
+      "replacement": "Teams requiring global card acceptance and local currency wires at $0 per user per month fit Brex Essentials rather than Ramp Free.",
+      "type": "F9",
+      "why": "Ramp Free also includes travel booking; contrast with global cards and wire fees instead."
+     },
+     {
+      "id": "alternatives[1].body",
+      "quote": "Mercury falls short on procurement and standalone spend management depth.",
+      "replacement": "Ramp offers procurement as an add-on to Plus, while Mercury includes company cards and expense management on its base tier.",
+      "type": "F10",
+      "why": "Unsupported evaluative claim; Mercury provides spend management and Ramp procurement is an add-on."
+     },
+     {
+      "id": "alternatives[2].body",
+      "quote": "Ramp also lists a 4.61% variable yield in a Ramp Investment Account, which sits above Relay Scale's 3.21% savings APY.",
+      "replacement": "Ramp lists a footnoted 4.61% variable yield in an investment account, while Relay Scale lists a 3.21% APY on savings.",
+      "type": "F11",
+      "why": "Compares different products inviting an improper rate comparison."
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      1
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": [
+      {
+       "id": "alternatives[2].body",
+       "quote": "Versus Ramp, Relay falls short on corporate spend management workflows.",
+       "type": "unsupported",
+       "reason": "re-check doubt on a fixed unit (not applied; auditor decides)"
+      }
+     ]
+    },
+    "words": 3532,
+    "flags": [
+     "claim check: 1 claim(s) still unsupported after 1 pass(es) \u2014 auditor must cut or source: 'Versus Ramp, Relay falls short on corporate spend management workflows.'"
+    ]
+   }
+  ]
+ },
+ "seconds": 337.8,
+ "response_id": "yGEIa9q7BeanxdIPufDwuAU",
+ "generated_at": "2026-11-26T16:49:27+0000"
+}

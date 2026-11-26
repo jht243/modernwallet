@@ -1,0 +1,39 @@
+F2 (hard_blocker=True): QUOTE: Certain Vanguard funds require minimum initial investments of $1,000 or $5,000
+PROBLEM: Vanguard's own fee page lists 'Minimum investment: $1,000 / $5,000' only for CDs, Treasuries, agency/corporate bonds and municipal bonds, not for mutual funds. The closed fact list misattributed it and the page repeats it as a fund fact.
+FIX: Delete the sentence, or state it correctly as bond/CD minimums only if wanted.
+
+F3 (hard_blocker=True): QUOTE: does not state the per-contract dollar amount on its primary overview
+PROBLEM: Merrill Edge's pricing page publishes $0 + $0.65 per contract for options (broker-assisted $29.95 + $0.65 per contract), so the claim is false. Same for 'Merrill Edge does not itemize non-proprietary mutual fund transaction costs on its main pricing summary': the page lists NTF funds $0 online plus a $39.95 short-term redemption fee under 90 days, and TF funds $19.95 online / $29.95 broker-assisted. The Merrill table row and the options comparisons in How to Choose, Who This Is Not For and the verdict also omit Merrill's $0.65.
+FIX: State Merrill options at $0.65 per contract, correct the mutual-fund sentence with the published fees, and add Merrill to the $0.65 options comparisons.
+
+F4 (hard_blocker=True): QUOTE: Betterment requires no minimum account balance
+PROBLEM: Betterment's pricing page says Premium requires a minimum of $100,000 in eligible investments per household. The page's Premium worked example 'Betterment Premium at 0.65% costs $195 per year ($30,000 multiplied by 0.0065)', the table cell 'no minimum balance', and the FAQ 'Betterment also has no minimum balance requirement' present a Premium cost on a balance that is ineligible.
+FIX: Say Digital has no minimum and Premium requires $100,000; replace the $30,000 Premium example with an eligible balance (for example $100,000 x 0.0065 = $650) or drop it; fix the FAQ.
+
+F5 (hard_blocker=True): QUOTE: Vanguard charges advisory fees for managed accounts rather than offering digital advisory services under self-directed pricing.
+PROBLEM: Unsupported and contradicted by Vanguard's own homepage ('Work with an advisor or a robo-advisor'). Also used for the 'Automated robo-investing seekers' not-for bullet.
+FIX: Remove the 'rather than offering digital advisory services' clause; say only that Vanguard lists advisory services with separate fees not quoted here.
+
+F6 (hard_blocker=True): QUOTE: Fidelity lists non-Fidelity NTF mutual funds at $0 online
+PROBLEM: Fidelity's page shows NTF non-Fidelity funds '$0 on purchase. $49.95 on redemption if held less than 60 days' and TF funds $49.95 per purchase. The page omits this while presenting Vanguard's $50 early redemption fee and $20 TF fee as Vanguard-specific costs (Schwab also lists a $49.95 short-term fee). The table cell 'non-Fidelity no-transaction-fee mutual funds $0' is incomplete in the same way.
+FIX: Add Fidelity's $49.95 short-term redemption fee and $49.95 TF purchase fee (and note Schwab's $49.95), or stop framing Vanguard's fees as a differentiator.
+
+F7 (hard_blocker=True): QUOTE: Will you transfer securities out to another institution, where Webull charges $75 and Merrill Edge charges $49.95 for a full transfer?
+PROBLEM: Vanguard's fee page lists a $100 account closure / full transfer-out fee (waived at QA of $5M+, Wealth Management or Vanguard advisory accounts) and a $10 wire fee. The page lists competitors' outbound fees but omits Vanguard's, so the transfer-fee comparison, the Webull worked example and the 'third consideration' paragraph skew toward Vanguard.
+FIX: Add Vanguard's $100 full transfer-out fee and $10 wire fee to the account-level paragraph, the checklist bullet and the Webull/Merrill worked examples.
+
+F8 (hard_blocker=False): QUOTE: Do you require phone support with a live broker, which adds a $25 fee at Vanguard and Charles Schwab?
+PROBLEM: E*TRADE also lists a $25 broker service charge and Merrill Edge $29.95 per trade on options; implying only Vanguard and Schwab charge it misleads.
+FIX: Name E*TRADE's $25 and Merrill's $29.95, or say 'at Vanguard, Charles Schwab and E*TRADE'.
+
+F9 (hard_blocker=False): QUOTE: At Vanguard, a self-directed investor managing a $30,000 ETF portfolio online with e-delivery pays $0 in account and commission fees.
+PROBLEM: Vanguard's page says all stock and ETF sales carry a securities transaction fee and every ETF has management fees and expenses; the sentence reads as zero cost.
+FIX: Add 'excluding ETF expense ratios and the securities transaction fee on sales'.
+
+F10 (hard_blocker=True): QUOTE: Compare Vanguard alternatives for 2026: Fidelity, Charles Schwab, Merrill Edge, E*TRADE, Betterment and Webull with published fees, commissions and account rules.
+PROBLEM: metaDescription is 162 characters (limit 160); check_built.py fails on it (known pre-existing issue).
+FIX: Trim by at least 2 characters, for example drop 'account rules' to 'rules'.
+
+F11 (hard_blocker=False): QUOTE: Trading 100 equity options contracts costs $100 at Vanguard ($1 multiplied by 100), $65 at Charles Schwab
+PROBLEM: Overloaded sentences over 30 words (39, 40 and 45 words in How to Choose; also the 'Vanguard charges a $25 annual account service fee...' sentence) fail the run-on ban.
+FIX: Split each into two or three sentences.

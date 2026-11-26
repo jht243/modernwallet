@@ -1,0 +1,62 @@
+{
+ "reviewer": "audit-subagent",
+ "verdict": "FAIL",
+ "findings": [
+  {
+   "id": "F1",
+   "quote": "Published monthly prices run from $10 on Moxie Starter when billed annually to $60 per month on 17hats",
+   "problem": "False range and false 'lowest' claims. Bonsai Basic is $9 per user per month billed annually (lower than Moxie $10) and FreshBooks Premium is $70 per month (higher than 17hats $60); HoneyBook Premium is $109/$129. Repeated in the verdict ('Moxie delivers the lowest entry price') and FAQ ('Moxie Starter has the lowest published price at $10').",
+   "fix": "Reword to a true statement, for example 'from $9 per user on Bonsai Basic billed annually (no invoicing) to $109 on HoneyBook Premium', and fix the verdict and FAQ the same way.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F2",
+   "quote": "HoneyBook provides proprietary HoneyBook Artificial Intelligence (AI) tools on Starter, which Moxie does not list on its pricing table.",
+   "problem": "Moxie's pricing page lists 'Moxie AI assistant' on Starter. The claim is false.",
+   "fix": "Delete the comparison or state that both list an AI assistant on their entry plans.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F3",
+   "quote": "At The Modern Wallet, we build finance calculators and compare published business software prices so self-employed professionals can see what subscriptions, add-ons and payment processing cost over a full year.",
+   "problem": "Self-promotion and page self-reference inside the intro (page rule 6: no self-promotion; meta-narration ban). Not needed to answer the reader question.",
+   "fix": "Delete the sentence.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F4",
+   "quote": "When providers update regular rates or modify promotional terms, recalculate your annual expenses using the updated subscription and transaction fees.",
+   "problem": "Monotone rhythm: sentences 136 to 153 (end of What Would Change, the full still-better-fit body and the verdict) are 18 consecutive long (15+ word) sentences, lengths [20,25,20,33,24,26,33,20,26,15,26,19,18,19,40,26,29,37]. Fails the 10-in-one-band gate.",
+   "fix": "Vary real sentences in the still-better-fit and verdict text with some short and medium sentences.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F5",
+   "quote": "Moxie publishes three subscription tiers: Starter at $10 per month billed annually ($120 charged annually) or $12 per month billed monthly; Pro at $20 per month",
+   "problem": "54-word run-on (also 40 to 42-word sentences in the intro, 17hats, Bonsai and verdict). Overloaded-sentence ban.",
+   "fix": "Split into one sentence per tier or move to a short list.",
+   "hard_blocker": true
+  },
+  {
+   "id": "F6",
+   "quote": "Dubsado introducing standard month-to-month billing options alongside its $335 and $525 annual plans",
+   "problem": "Contradicts the page's own statement that annual billing saves 'two months worth' versus monthly payments, and Dubsado's pricing page says 'Choose annual and get 2 months worth of savings', implying monthly exists. Also Dubsado Starter has 1 active lead form and lacks scheduling, workflows and Zapier, so 'Dubsado Starter costs $13 less' and the $483 Premier-vs-Premium team comparison are not like-for-like.",
+   "fix": "Remove the month-to-month bullet; add a one-line feature caveat to the Dubsado comparisons.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F7",
+   "quote": "17hats fits solo operators who prefer to lock in long-term savings through two-year software subscriptions and who do not require multiple user logins.",
+   "problem": "17hats's page offers additional users as a purchasable option; the 'single all-inclusive plan' text also conflicts with 'document limits by tier'. The fit claim is unsupported.",
+   "fix": "Drop the user-login clause and clarify the document-limit wording.",
+   "hard_blocker": false
+  },
+  {
+   "id": "F8",
+   "quote": "includes unlimited clients and projects, invoices and online payments, proposals and digital contracts, calendar synchronization, a dedicated client portal",
+   "problem": "Minor embellishment: HoneyBook lists 'Calendar' and 'Client portal' only.",
+   "fix": "Use the listed wording.",
+   "hard_blocker": false
+  }
+ ]
+}

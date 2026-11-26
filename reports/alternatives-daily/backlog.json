@@ -3748,10 +3748,107 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-26T16:42:17+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": [
+            "officialUrl",
+            "product",
+            "vendor"
+          ]
+        },
+        {
+          "at": "2026-11-26T16:42:17+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-26"
+        },
+        {
+          "at": "2026-11-26T17:02:20+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-26T17:04:00+00:00",
+          "status": "in_progress",
+          "note": "drafted+fixed",
+          "fields": [
+            "slug",
+            "writer"
+          ]
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-26T17:04:00+00:00",
+      "claimedOn": "2026-11-26",
+      "attempts": 1,
+      "lastNextAt": "2026-11-26T16:42:17+00:00",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Published monthly prices run from $10 on Moxie Starter when billed annually to $60 per month on 17hats",
+            "problem": "False range and false 'lowest' claims. Bonsai Basic is $9 per user per month billed annually (lower than Moxie $10) and FreshBooks Premium is $70 per month (higher than 17hats $60); HoneyBook Premium is $109/$129. Repeated in the verdict ('Moxie delivers the lowest entry price') and FAQ ('Moxie Starter has the lowest published price at $10').",
+            "fix": "Reword to a true statement, for example 'from $9 per user on Bonsai Basic billed annually (no invoicing) to $109 on HoneyBook Premium', and fix the verdict and FAQ the same way.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "HoneyBook provides proprietary HoneyBook Artificial Intelligence (AI) tools on Starter, which Moxie does not list on its pricing table.",
+            "problem": "Moxie's pricing page lists 'Moxie AI assistant' on Starter. The claim is false.",
+            "fix": "Delete the comparison or state that both list an AI assistant on their entry plans.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "At The Modern Wallet, we build finance calculators and compare published business software prices so self-employed professionals can see what subscriptions, add-ons and payment processing cost over a full year.",
+            "problem": "Self-promotion and page self-reference inside the intro (page rule 6: no self-promotion; meta-narration ban). Not needed to answer the reader question.",
+            "fix": "Delete the sentence.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "When providers update regular rates or modify promotional terms, recalculate your annual expenses using the updated subscription and transaction fees.",
+            "problem": "Monotone rhythm: sentences 136 to 153 (end of What Would Change, the full still-better-fit body and the verdict) are 18 consecutive long (15+ word) sentences, lengths [20,25,20,33,24,26,33,20,26,15,26,19,18,19,40,26,29,37]. Fails the 10-in-one-band gate.",
+            "fix": "Vary real sentences in the still-better-fit and verdict text with some short and medium sentences.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F5",
+            "quote": "Moxie publishes three subscription tiers: Starter at $10 per month billed annually ($120 charged annually) or $12 per month billed monthly; Pro at $20 per month",
+            "problem": "54-word run-on (also 40 to 42-word sentences in the intro, 17hats, Bonsai and verdict). Overloaded-sentence ban.",
+            "fix": "Split into one sentence per tier or move to a short list.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F6",
+            "quote": "Dubsado introducing standard month-to-month billing options alongside its $335 and $525 annual plans",
+            "problem": "Contradicts the page's own statement that annual billing saves 'two months worth' versus monthly payments, and Dubsado's pricing page says 'Choose annual and get 2 months worth of savings', implying monthly exists. Also Dubsado Starter has 1 active lead form and lacks scheduling, workflows and Zapier, so 'Dubsado Starter costs $13 less' and the $483 Premier-vs-Premium team comparison are not like-for-like.",
+            "fix": "Remove the month-to-month bullet; add a one-line feature caveat to the Dubsado comparisons.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F7",
+            "quote": "17hats fits solo operators who prefer to lock in long-term savings through two-year software subscriptions and who do not require multiple user logins.",
+            "problem": "17hats's page offers additional users as a purchasable option; the 'single all-inclusive plan' text also conflicts with 'document limits by tier'. The fit claim is unsupported.",
+            "fix": "Drop the user-login clause and clarify the document-limit wording.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F8",
+            "quote": "includes unlimited clients and projects, invoices and online payments, proposals and digital contracts, calendar synchronization, a dedicated client portal",
+            "problem": "Minor embellishment: HoneyBook lists 'Calendar' and 'Client portal' only.",
+            "fix": "Use the listed wording.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-26T17:02:20+00:00"
+      },
+      "writer": "content_gen",
+      "slug": "honeybook"
     },
     {
       "vendor": "Ramp",
@@ -3773,10 +3870,128 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-26T16:42:17+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": [
+            "officialUrl",
+            "product",
+            "vendor"
+          ]
+        },
+        {
+          "at": "2026-11-26T16:42:17+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-26"
+        },
+        {
+          "at": "2026-11-26T17:02:20+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-26T17:04:00+00:00",
+          "status": "in_progress",
+          "note": "drafted+fixed",
+          "fields": [
+            "slug",
+            "writer"
+          ]
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-26T17:04:00+00:00",
+      "claimedOn": "2026-11-26",
+      "attempts": 1,
+      "lastNextAt": "2026-11-26T16:42:17+00:00",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "BILL publishes subscription prices on its pricing page rather than offering a perpetual $0 spend management software tier.",
+            "problem": "BILL's pricing page FAQ: 'the BILL Spend & Expense plan is $0 per user per month and includes corporate cards, budgets, expense tracking, and access to credit lines from $1,000-$5M.' The claim, the heading 'BILL falls short on all-in-one corporate card bundling', and the intro list of $0 entry prices (which omits it) are contradicted.",
+            "fix": "Rewrite the BILL section, table cell and intro to include BILL Spend & Expense at $0 per user per month; drop the 'falls short on corporate card bundling' claim.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "1099 filings cost $1.99 each",
+            "problem": "BILL lists 1099 E-filing to IRS at $2.99 per 1099, $1.99 via Accountant Console, $1.49 direct state filing, $1.99 mail delivery to vendors. A flat $1.99 per 1099 filing is wrong in the table cell, BILL section, 'What Would Change' bullet and the BILL FAQ.",
+            "fix": "State the four published 1099 fees accurately, or '$2.99 per 1099 IRS e-file'.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "which Brex's pricing page does not match with a published cash rate",
+            "problem": "Brex's pricing page footnote posts a Brex Treasury 'total treasury return' between 3.64% and 3.99%. Also 'Brex and Expensify do not publish checking account interest yields on their main pricing pages' omits that Brex posts a Treasury rate.",
+            "fix": "Remove the claim or state Brex's posted Treasury return range and that it is an annualized estimate, not a checking APY.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "Relay Starter provides a 1.19% annual percentage yield (APY) on savings",
+            "problem": "Acronym used undefined earlier: the comparison table (which precedes this) uses 'APY', 'ERP', 'HRIS' (Brex row) and 'USD' (Mercury row) before they are defined in the body sections. Page rule 5 requires every acronym defined on first use.",
+            "fix": "Spell out APY, ERP, HRIS and USD in the table cells at first use (or define in the intro).",
+            "hard_blocker": true
+          },
+          {
+            "id": "F5",
+            "quote": "Run through these five concrete checks before switching:",
+            "problem": "Presupposes the reader already uses Ramp (reader-assumption ban).",
+            "fix": "Use 'Before choosing a Ramp alternative, run through these five checks:'.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F6",
+            "quote": "Published entry prices are $0 at Ramp Free, Brex Essentials, Mercury, Relay Starter and Expensify Submit, while paid plans run from $5 per member per month on Expensify Collect",
+            "problem": "47-word first-paragraph sentence (also 38 to 41 word sentences in How to Choose, Brex and Mercury sections) fails the overloaded-sentence ban.",
+            "fix": "Split into two sentences and shorten the others.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F7",
+            "quote": "Because BILL publishes subscription prices on its pricing page rather than on the summary fact sheet checked here, monthly subscription totals for BILL plans are omitted.",
+            "problem": "Leaks the internal writing process ('fact sheet checked here'), meta-narration. BILL says plans are priced per user per month.",
+            "fix": "Replace with a plain factual sentence: BILL prices AP and AR per user per month, with figures on its pricing page.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F8",
+            "quote": "Ramp remains the stronger choice for businesses",
+            "problem": "Evaluative superlative framing; prompt says no 'best' claims. Other pages use 'closer fit'.",
+            "fix": "Change to 'Ramp remains the closer fit'.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F9",
+            "quote": "Teams seeking free travel booking with no software subscription fee should note that Brex Essentials includes free travel booking at $0 per user per month.",
+            "problem": "Implies Ramp Free lacks travel booking; Ramp Free lists 'Book flights, hotels, and car rentals'. The first not-for bullet (enterprise accounting connections without per-seat fees) is also muddled.",
+            "fix": "Rewrite both bullets with accurate distinctions (for example Brex Essentials global card acceptance and local currency wires vs Ramp).",
+            "hard_blocker": false
+          },
+          {
+            "id": "F10",
+            "quote": "Mercury falls short on procurement and standalone spend management depth.",
+            "problem": "Unsupported evaluative claim; Mercury's site lists a Spend Management product and Ramp procurement is an add-on to Plus.",
+            "fix": "Replace with a factual feature comparison from the fact list.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F11",
+            "quote": "Ramp also lists a 4.61% variable yield in a Ramp Investment Account, which sits above Relay Scale's 3.21% savings APY.",
+            "problem": "Compares a footnoted variable investment-account yield with a savings APY, different products; invites a rate-chasing read.",
+            "fix": "State both rates without ranking, or note the product difference.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-26T17:02:20+00:00"
+      },
+      "writer": "content_gen",
+      "slug": "ramp"
     },
     {
       "vendor": "Upstart",
@@ -3823,10 +4038,15 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-26T16:39:10+00:00",
+          "status": "excluded",
+          "note": "zero-cost precheck: official site unreadable (anti_bot_gate)"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "excluded",
+      "updatedAt": "2026-11-26T16:39:10+00:00"
     },
     {
       "vendor": "Greenlight",
@@ -3848,10 +4068,34 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-26T16:39:28+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": [
+            "officialUrl",
+            "product",
+            "vendor"
+          ]
+        },
+        {
+          "at": "2026-11-26T16:39:28+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-26"
+        },
+        {
+          "at": "2026-11-26T16:41:39+00:00",
+          "status": "held",
+          "note": "only 4 readable comparable alternatives with public pricing (Chase/Fidelity/Capital One kids pages unreadable); revisit",
+          "fields": []
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "held",
+      "updatedAt": "2026-11-26T16:41:39+00:00",
+      "claimedOn": "2026-11-26",
+      "attempts": 1,
+      "lastNextAt": "2026-11-26T16:39:28+00:00"
     },
     {
       "vendor": "Remitly",
@@ -3873,10 +4117,34 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-26T16:39:28+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": [
+            "officialUrl",
+            "product",
+            "vendor"
+          ]
+        },
+        {
+          "at": "2026-11-26T16:39:28+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-26"
+        },
+        {
+          "at": "2026-11-26T16:42:17+00:00",
+          "status": "held",
+          "note": "fees only via route calculators; no public fee table to verify; revisit",
+          "fields": []
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "held",
+      "updatedAt": "2026-11-26T16:42:17+00:00",
+      "claimedOn": "2026-11-26",
+      "attempts": 1,
+      "lastNextAt": "2026-11-26T16:39:28+00:00"
     },
     {
       "vendor": "Western Union",
@@ -4462,10 +4730,128 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-26T16:39:28+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": [
+            "officialUrl",
+            "product",
+            "vendor"
+          ]
+        },
+        {
+          "at": "2026-11-26T16:39:28+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-26"
+        },
+        {
+          "at": "2026-11-26T17:02:20+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-26T17:04:00+00:00",
+          "status": "in_progress",
+          "note": "drafted+fixed",
+          "fields": [
+            "slug",
+            "writer"
+          ]
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-26T17:04:00+00:00",
+      "claimedOn": "2026-11-26",
+      "attempts": 1,
+      "lastNextAt": "2026-11-26T16:39:28+00:00",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "[Vanguard](https://investor.vanguard.com) operates under a fee schedule effective July 10, 2026.",
+            "problem": "Source intro carries the link and the registry lists investor.vanguard.com, but the built dist/alternatives/vanguard/index.html contains NO external link at all (intro renders as plain 'Vanguard operates'). Page rule 2 / prompt link rule require exactly one external link, to the subject's official site. The dist is stale or mis-built.",
+            "fix": "Rebuild the site and confirm the rendered intro has one <a> to https://investor.vanguard.com and no other external links; re-run check_built.py against the rebuilt dist.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Certain Vanguard funds require minimum initial investments of $1,000 or $5,000",
+            "problem": "Vanguard's own fee page lists 'Minimum investment: $1,000 / $5,000' only for CDs, Treasuries, agency/corporate bonds and municipal bonds, not for mutual funds. The closed fact list misattributed it and the page repeats it as a fund fact.",
+            "fix": "Delete the sentence, or state it correctly as bond/CD minimums only if wanted.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "does not state the per-contract dollar amount on its primary overview",
+            "problem": "Merrill Edge's pricing page publishes $0 + $0.65 per contract for options (broker-assisted $29.95 + $0.65 per contract), so the claim is false. Same for 'Merrill Edge does not itemize non-proprietary mutual fund transaction costs on its main pricing summary': the page lists NTF funds $0 online plus a $39.95 short-term redemption fee under 90 days, and TF funds $19.95 online / $29.95 broker-assisted. The Merrill table row and the options comparisons in How to Choose, Who This Is Not For and the verdict also omit Merrill's $0.65.",
+            "fix": "State Merrill options at $0.65 per contract, correct the mutual-fund sentence with the published fees, and add Merrill to the $0.65 options comparisons.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "Betterment requires no minimum account balance",
+            "problem": "Betterment's pricing page says Premium requires a minimum of $100,000 in eligible investments per household. The page's Premium worked example 'Betterment Premium at 0.65% costs $195 per year ($30,000 multiplied by 0.0065)', the table cell 'no minimum balance', and the FAQ 'Betterment also has no minimum balance requirement' present a Premium cost on a balance that is ineligible.",
+            "fix": "Say Digital has no minimum and Premium requires $100,000; replace the $30,000 Premium example with an eligible balance (for example $100,000 x 0.0065 = $650) or drop it; fix the FAQ.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F5",
+            "quote": "Vanguard charges advisory fees for managed accounts rather than offering digital advisory services under self-directed pricing.",
+            "problem": "Unsupported and contradicted by Vanguard's own homepage ('Work with an advisor or a robo-advisor'). Also used for the 'Automated robo-investing seekers' not-for bullet.",
+            "fix": "Remove the 'rather than offering digital advisory services' clause; say only that Vanguard lists advisory services with separate fees not quoted here.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F6",
+            "quote": "Fidelity lists non-Fidelity NTF mutual funds at $0 online",
+            "problem": "Fidelity's page shows NTF non-Fidelity funds '$0 on purchase. $49.95 on redemption if held less than 60 days' and TF funds $49.95 per purchase. The page omits this while presenting Vanguard's $50 early redemption fee and $20 TF fee as Vanguard-specific costs (Schwab also lists a $49.95 short-term fee). The table cell 'non-Fidelity no-transaction-fee mutual funds $0' is incomplete in the same way.",
+            "fix": "Add Fidelity's $49.95 short-term redemption fee and $49.95 TF purchase fee (and note Schwab's $49.95), or stop framing Vanguard's fees as a differentiator.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F7",
+            "quote": "Will you transfer securities out to another institution, where Webull charges $75 and Merrill Edge charges $49.95 for a full transfer?",
+            "problem": "Vanguard's fee page lists a $100 account closure / full transfer-out fee (waived at QA of $5M+, Wealth Management or Vanguard advisory accounts) and a $10 wire fee. The page lists competitors' outbound fees but omits Vanguard's, so the transfer-fee comparison, the Webull worked example and the 'third consideration' paragraph skew toward Vanguard.",
+            "fix": "Add Vanguard's $100 full transfer-out fee and $10 wire fee to the account-level paragraph, the checklist bullet and the Webull/Merrill worked examples.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F8",
+            "quote": "Do you require phone support with a live broker, which adds a $25 fee at Vanguard and Charles Schwab?",
+            "problem": "E*TRADE also lists a $25 broker service charge and Merrill Edge $29.95 per trade on options; implying only Vanguard and Schwab charge it misleads.",
+            "fix": "Name E*TRADE's $25 and Merrill's $29.95, or say 'at Vanguard, Charles Schwab and E*TRADE'.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F9",
+            "quote": "At Vanguard, a self-directed investor managing a $30,000 ETF portfolio online with e-delivery pays $0 in account and commission fees.",
+            "problem": "Vanguard's page says all stock and ETF sales carry a securities transaction fee and every ETF has management fees and expenses; the sentence reads as zero cost.",
+            "fix": "Add 'excluding ETF expense ratios and the securities transaction fee on sales'.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F10",
+            "quote": "Compare Vanguard alternatives for 2026: Fidelity, Charles Schwab, Merrill Edge, E*TRADE, Betterment and Webull with published fees, commissions and account rules.",
+            "problem": "metaDescription is 162 characters (limit 160); check_built.py fails on it (known pre-existing issue).",
+            "fix": "Trim by at least 2 characters, for example drop 'account rules' to 'rules'.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F11",
+            "quote": "Trading 100 equity options contracts costs $100 at Vanguard ($1 multiplied by 100), $65 at Charles Schwab",
+            "problem": "Overloaded sentences over 30 words (39, 40 and 45 words in How to Choose; also the 'Vanguard charges a $25 annual account service fee...' sentence) fail the run-on ban.",
+            "fix": "Split each into two or three sentences.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-26T17:02:20+00:00"
+      },
+      "writer": "content_gen",
+      "slug": "vanguard"
     },
     {
       "vendor": "Xero",

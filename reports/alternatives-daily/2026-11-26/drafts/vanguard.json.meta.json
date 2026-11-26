@@ -1,0 +1,390 @@
+{
+ "slug": "vanguard",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 3587,
+ "floor": 1500,
+ "input_tokens": 172784,
+ "output_tokens": 6447,
+ "thinking_tokens": 4830,
+ "cached_tokens": 170267,
+ "est_cost_usd": 0.0569,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 3463,
+  "numbers_not_in_facts": [
+   "0.0025",
+   "0.0065",
+   "0.35",
+   "130",
+   "35",
+   "49.9",
+   "70"
+  ],
+  "fact_budget": {
+   "fact_words": 698,
+   "floor": 1500,
+   "ratio": 0.47,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 3,
+   "found": [
+    13,
+    4,
+    1
+   ],
+   "applied": [
+    {
+     "id": "chooseSection.body",
+     "quote": "Fidelity, Charles Schwab, and Webull list no account opening minimums and charge no annual account maintenance fees.",
+     "replacement": "Fidelity, Charles Schwab, and Webull list no account opening minimums.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Fidelity, Charles Schwab, or Webull charge no annual account maintenance fees."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Fidelity lists no annual account service fee, whereas Vanguard assesses a $25 annual fee on accounts with QA under $1 million unless the account owner selects electronic document delivery or qualifies for an operational waiver.",
+     "replacement": "Vanguard assesses a $25 annual fee on accounts with QA under $1 million unless the account owner selects electronic document delivery or qualifies for an operational waiver.",
+     "type": "unsupported",
+     "why": "SOURCE does not state whether Fidelity charges an annual account service fee."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "At Vanguard, online secondary bond trades carry published terms by asset class, while Charles Schwab and E*TRADE charge $1.00 per bond with a $10 minimum.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not list bond pricing for Vanguard or Charles Schwab."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "For bond investors, Vanguard charges $1.00 per bond on secondary-market transactions without E*TRADE's $10 minimum order requirement, making single-bond purchases less expensive at Vanguard.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state bond pricing for Vanguard."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "At Vanguard, five bonds at the $1.00 rate cost $5.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state a $1.00 bond rate for Vanguard."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Betterment fits investors who want automated portfolio rebalancing and tax-smart management at a percentage rate, or who make recurring monthly deposits of $200 or more.",
+     "replacement": "Betterment fits investors who want automated portfolio rebalancing at a percentage rate, or who make recurring monthly deposits of $200 or more.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Betterment offers tax-smart management."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Vanguard offers individual mutual fund purchases with $0 commissions on Vanguard funds, while Betterment constructs portfolios using exchange-traded funds.",
+     "replacement": "Vanguard offers individual mutual fund purchases with $0 commissions on Vanguard funds.",
+     "type": "unsupported",
+     "why": "SOURCE does not state what securities Betterment uses to construct automated portfolios."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Webull charges $75 per outgoing stock transfer, while incoming stock transfers carry no fee.",
+     "replacement": "Webull charges $75 per outgoing stock transfer.",
+     "type": "unsupported",
+     "why": "SOURCE does not state incoming stock transfers carry no fee at Webull."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Webull does not charge an annual account service fee.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state whether Webull charges an annual account service fee."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Webull does not offer traditional mutual fund trading, whereas Vanguard provides an extensive platform for Vanguard and non-Vanguard mutual funds.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state Webull lacks mutual funds or describe Vanguard as extensive."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Vanguard charges no transfer-out fee on its standard schedule, but applies a $25 annual service fee if the investor opts out of electronic delivery.",
+     "replacement": "Vanguard applies a $25 annual service fee if the investor opts out of electronic delivery.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Vanguard charges no transfer-out fee."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Investors who trade third-party funds frequently pay less at brokerages with broader no-transaction-fee lists.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state other brokerages have broader no-transaction-fee lists."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Charles Schwab also adds a $25 service charge, while web-first brokerages encourage online execution.",
+     "replacement": "Charles Schwab also adds a $25 service charge.",
+     "type": "unsupported",
+     "why": "SOURCE does not state web-first brokerages encourage online execution."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Betterment Premium charges 0.65% annually and requires access to an advisor.",
+     "replacement": "Betterment Premium charges 0.65% annually and includes access to an advisor.",
+     "type": "contradicted",
+     "why": "SOURCE states Betterment Premium includes access to an advisor, not that it requires it."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Fidelity fits investors who want $0 account minimums, zero-commission stock trading, and clear secondary bond pricing at $1.00 per bond without per-trade minimums.",
+     "replacement": "Fidelity fits investors who want $0 account minimums, zero-commission stock trading, and clear secondary bond pricing at $1.00 per bond.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Fidelity has no per-trade bond minimums."
+    },
+    {
+     "id": "alternatives[0].body",
+     "quote": "Investors trading small quantities of bonds pay less than at brokerages that impose minimum ticket fees.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state small bond trades cost less or mention ticket minimums."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Vanguard's self-directed accounts do not provide automated index rebalancing for free.",
+     "replacement": "Vanguard charges advisory fees for managed accounts rather than offering digital advisory services under self-directed pricing.",
+     "type": "unsupported",
+     "why": "SOURCE does not mention automated index rebalancing for Vanguard accounts."
+    },
+    {
+     "id": "intro",
+     "quote": "At The Modern Wallet, we compare published brokerage fees so you can see what options contracts, wire fees, mutual fund charges and transfer fees add up to over a full year.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "First-person claim about what we compare is not licensed by SITE SELF-DESCRIPTION."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": true,
+   "words_before": 3657
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 4767
+  },
+  "fixes": [
+   {
+    "round": 1,
+    "at": "2026-11-26T17:01:21+0000",
+    "findings_file": "reports/alternatives-daily/2026-11-26/vanguard-findings.txt",
+    "applied": [
+     {
+      "id": "metaDescription",
+      "quote": "Compare Vanguard alternatives for 2026: Fidelity, Charles Schwab, Merrill Edge, E*TRADE, Betterment and Webull with published fees, commissions and account rules.",
+      "replacement": "Compare Vanguard alternatives for 2026: Fidelity, Charles Schwab, Merrill Edge, E*TRADE, Betterment and Webull with published fees, commissions and rules.",
+      "type": "F10",
+      "why": "Exceeds 160 characters"
+     },
+     {
+      "id": "stillBetterFit.body",
+      "quote": "Certain Vanguard funds require minimum initial investments of $1,000 or $5,000, while a small number of specialized funds apply purchase or redemption fees of 0.25% to 1.00% paid directly into fund assets.",
+      "replacement": "A small number of specialized Vanguard funds apply purchase or redemption fees of 0.25% to 1.00% paid directly into fund assets.",
+      "type": "F2",
+      "why": "Vanguard minimums apply to bonds/CDs, not mutual funds"
+     },
+     {
+      "id": "rows[3].pricing",
+      "quote": "options contract and other fees may apply",
+      "replacement": "options $0 plus $0.65 per contract ($29.95 plus $0.65 broker-assisted); NTF funds $0 ($39.95 fee under 90 days); TF funds $19.95 online",
+      "type": "F3",
+      "why": "Merrill Edge publishes $0.65 options and mutual fund fees"
+     },
+     {
+      "id": "alternatives[2].body",
+      "quote": "The Merrill Edge pricing page notes that options contract and other fees may apply, but does not state the per-contract dollar amount on its primary overview.",
+      "replacement": "Options trades carry a $0 base commission plus $0.65 per contract, while broker-assisted options trades add $29.95 plus $0.65 per contract.",
+      "type": "F3",
+      "why": "Merrill publishes $0.65 options contract fee"
+     },
+     {
+      "id": "alternatives[2].body",
+      "quote": "Vanguard charges $20 online for non-Vanguard transaction-fee (TF) mutual funds, whereas Merrill Edge does not itemize non-proprietary mutual fund transaction costs on its main pricing summary.",
+      "replacement": "Vanguard charges $20 online for non-Vanguard transaction-fee (TF) mutual funds, whereas Merrill Edge charges $19.95 online for TF funds and $0 for NTF funds with a $39.95 short-term redemption fee under 90 days.",
+      "type": "F3",
+      "why": "Merrill publishes NTF and TF fund fees"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Charles Schwab and E*TRADE charge $0.65 per options contract",
+      "replacement": "Charles Schwab, Merrill Edge, and E*TRADE charge $0.65 per options contract",
+      "type": "F3",
+      "why": "Merrill Edge also charges $0.65 per contract"
+     },
+     {
+      "id": "stillBetterFit.body",
+      "quote": "Charles Schwab and E*TRADE charge $0.65, E*TRADE charges $0.50 at 30 or more trades per quarter, and Webull charges $0 in broker commissions on standard equity options.",
+      "replacement": "Charles Schwab, Merrill Edge, and E*TRADE charge $0.65, E*TRADE charges $0.50 at 30 or more trades per quarter, and Webull charges $0 in broker commissions on standard equity options.",
+      "type": "F3",
+      "why": "Add Merrill to $0.65 options comparison"
+     },
+     {
+      "id": "verdict",
+      "quote": "Charles Schwab and E*TRADE lower options fees to $0.65 (or $0.50 at E*TRADE with 30+ trades per quarter).",
+      "replacement": "Charles Schwab, Merrill Edge, and E*TRADE lower options fees to $0.65 (or $0.50 at E*TRADE with 30+ trades per quarter).",
+      "type": "F3",
+      "why": "Add Merrill to verdict options comparison"
+     },
+     {
+      "id": "rows[5].pricing",
+      "quote": "no minimum balance",
+      "replacement": "no minimum balance for Digital; Premium requires $100,000",
+      "type": "F4",
+      "why": "Betterment Premium requires $100,000 minimum"
+     },
+     {
+      "id": "alternatives[4].body",
+      "quote": "Betterment requires no minimum account balance, waives wrap fees on self-directed stock and ETF trading, and offers a Cash Reserve account with no account fees or balance minimums at a variable annual percentage yield (APY).",
+      "replacement": "Betterment Digital requires no minimum balance, while Premium requires $100,000 in eligible household investments; Betterment waives wrap fees on self-directed stock and ETF trading, and offers a Cash Reserve account with no account fees or balance minimums at a variable annual percentage yield (APY).",
+      "type": "F4",
+      "why": "Digital has no minimum but Premium requires $100,000"
+     },
+     {
+      "id": "alternatives[4].body",
+      "quote": "while Betterment Premium at 0.65% costs $195 per year ($30,000 multiplied by 0.0065).",
+      "replacement": "while Betterment Premium requires a $100,000 minimum balance and costs $650 per year ($100,000 multiplied by 0.0065).",
+      "type": "F4",
+      "why": "Balance ineligible for Premium plan"
+     },
+     {
+      "id": "faqs[4].answer",
+      "quote": "Betterment also has no minimum balance requirement, though it charges a $5 monthly fee on balances under $24,000 that lack recurring monthly deposits of $200 or more.",
+      "replacement": "Betterment Digital has no minimum balance requirement, though Premium requires $100,000 in eligible household investments; Digital charges a $5 monthly fee on balances under $24,000 lacking recurring deposits.",
+      "type": "F4",
+      "why": "Clarify Premium requires $100,000"
+     },
+     {
+      "id": "stillBetterFit.body",
+      "quote": "Vanguard charges advisory fees for managed accounts rather than offering digital advisory services under self-directed pricing.",
+      "replacement": "Vanguard lists advisory services with separate fees that are not quoted here.",
+      "type": "F5",
+      "why": "Vanguard offers robo-advisory services"
+     },
+     {
+      "id": "rows[1].pricing",
+      "quote": "non-Fidelity no-transaction-fee mutual funds $0",
+      "replacement": "non-Fidelity NTF mutual funds $0 ($49.95 fee if redeemed within 60 days; TF funds $49.95 per purchase)",
+      "type": "F6",
+      "why": "Fidelity charges redemption and TF purchase fees"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Fidelity lists non-Fidelity NTF mutual funds at $0 online, and E*TRADE lists $0 online commissions on mutual funds.",
+      "replacement": "Fidelity lists non-Fidelity NTF funds at $0 online ($49.95 if redeemed within 60 days; TF funds $49.95 per purchase), Charles Schwab lists a $49.95 short-term redemption fee, and E*TRADE lists $0 online commissions on mutual funds.",
+      "type": "F6",
+      "why": "Include Fidelity and Schwab redemption fees"
+     },
+     {
+      "id": "alternatives[0].body",
+      "quote": "Fidelity also lists non-Fidelity no-transaction-fee (NTF) mutual funds at $0 online.",
+      "replacement": "Fidelity also lists non-Fidelity no-transaction-fee (NTF) mutual funds at $0 online, with a $49.95 fee on redemptions held less than 60 days, while transaction-fee funds cost $49.95 per purchase.",
+      "type": "F6",
+      "why": "Include Fidelity redemption fee and TF fee"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "When moving assets out of a brokerage, Merrill Edge charges $49.95 for a full account transfer and $0 for a partial account transfer.",
+      "replacement": "When moving assets out of a brokerage, Vanguard charges a $100 full transfer-out fee and a $10 wire fee. Merrill Edge charges $49.95 for a full account transfer and $0 for a partial account transfer.",
+      "type": "F7",
+      "why": "Include Vanguard outbound transfer and wire fees"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Will you transfer securities out to another institution, where Webull charges $75 and Merrill Edge charges $49.95 for a full transfer?",
+      "replacement": "Will you transfer securities out to another institution, where Vanguard charges $100 for a full transfer, Webull charges $75, and Merrill Edge charges $49.95?",
+      "type": "F7",
+      "why": "Include Vanguard $100 full transfer fee"
+     },
+     {
+      "id": "alternatives[2].body",
+      "quote": "A full account transfer out of Merrill Edge costs $49.95, while a wire transfer costs $24.95. Vanguard charges a $25 annual account service fee for accounts with QA under $1 million, which is waived through e-delivery enrollment.",
+      "replacement": "A full account transfer out of Merrill Edge costs $49.95, while a wire transfer costs $24.95. By comparison, Vanguard charges a $100 full transfer-out fee and a $10 wire fee, alongside a $25 annual account service fee for accounts with QA under $1 million (waived through e-delivery enrollment).",
+      "type": "F7",
+      "why": "Contrast Vanguard transfer and wire fees"
+     },
+     {
+      "id": "alternatives[5].body",
+      "quote": "If that trader transfers the entire stock account out of Webull, Webull assesses a $75 outgoing transfer fee. Vanguard applies a $25 annual service fee if the investor opts out of electronic delivery.",
+      "replacement": "If that trader transfers the entire stock account out of Webull, Webull assesses a $75 outgoing transfer fee. Vanguard charges a $100 fee for a full account transfer out, alongside a $25 annual service fee if the investor opts out of electronic delivery.",
+      "type": "F7",
+      "why": "Add Vanguard $100 transfer fee comparison"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Do you require phone support with a live broker, which adds a $25 fee at Vanguard and Charles Schwab?",
+      "replacement": "Do you require phone support with a live broker, which adds a $25 fee at Vanguard, Charles Schwab, and E*TRADE, or $29.95 at Merrill Edge?",
+      "type": "F8",
+      "why": "E*TRADE and Merrill also charge phone fees"
+     },
+     {
+      "id": "alternatives[4].body",
+      "quote": "At Vanguard, a self-directed investor managing a $30,000 ETF portfolio online with e-delivery pays $0 in account and commission fees.",
+      "replacement": "At Vanguard, a self-directed investor managing a $30,000 ETF portfolio online with e-delivery pays $0 in account and commission fees, excluding ETF expense ratios and the securities transaction fee on sales.",
+      "type": "F9",
+      "why": "ETF sales incur regulatory fees and expenses"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Trading 100 equity options contracts costs $100 at Vanguard ($1 multiplied by 100), $65 at Charles Schwab ($0.65 multiplied by 100), $65 at E*TRADE standard pricing, $50 at E*TRADE quarterly active pricing, and $0 in broker commissions at Webull.",
+      "replacement": "Trading 100 equity options contracts costs $100 at Vanguard ($1 multiplied by 100). That same volume costs $65 at Charles Schwab, Merrill Edge, and E*TRADE standard pricing ($0.65 multiplied by 100). At E*TRADE quarterly active pricing it costs $50, while Webull charges $0 in broker commissions.",
+      "type": "F11",
+      "why": "Sentence over 30 words; split"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Vanguard charges a $25 annual account service fee for accounts with QA under $1 million, but waives it for clients who elect electronic delivery of statements and notifications, for Vanguard Cash Plus accounts, or for organization and trust accounts registered under an employer identification number.",
+      "replacement": "Vanguard charges a $25 annual account service fee for accounts with QA under $1 million. It waives the fee for clients electing electronic delivery, holding Cash Plus accounts, or registering under an employer identification number.",
+      "type": "F11",
+      "why": "Sentence over 30 words; split"
+     },
+     {
+      "id": "chooseSection.body",
+      "quote": "Betterment operates on an advisory structure, charging $5 per month on digital investing balances between $0 and $24,000 without recurring deposits, or 0.25% annually once an account maintains $200 or more in monthly recurring deposits or reaches a $24,000 balance.",
+      "replacement": "Betterment operates on an advisory structure. It charges $5 per month on digital investing balances under $24,000 without recurring deposits. The fee shifts to 0.25% annually with $200 or more in monthly deposits or a balance between $24,000 and $1,000,000.",
+      "type": "F11",
+      "why": "Sentence over 30 words; split"
+     }
+    ],
+    "not_fixable_in_place": [],
+    "claim_check": {
+     "passes": 1,
+     "found": [
+      0
+     ],
+     "applied": [],
+     "unapplied": [],
+     "remaining": []
+    },
+    "words": 3587,
+    "flags": []
+   }
+  ]
+ },
+ "seconds": 315.6,
+ "response_id": "yGEIa4S9CdOio_UP1uKu0Qw",
+ "generated_at": "2026-11-26T16:49:05+0000"
+}
