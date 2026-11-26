@@ -1,0 +1,125 @@
+,
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/federal-register-td10056-blocked.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/bbe19370f7b296a73430c720d85af03da0407eea1810f30d555b4ddaa74e66b3/naic-compendium-compulsory-auto.txt",
+      "sha256": "bbe19370f7b296a73430c720d85af03da0407eea1810f30d555b4ddaa74e66b3",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/naic-compendium-compulsory-auto.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/d644a69dbf557fedfc790badea4d74b7266feccbfba92e46f92b8689fa109995/pymnts-allstate-outage.txt",
+      "sha256": "d644a69dbf557fedfc790badea4d74b7266feccbfba92e46f92b8689fa109995",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/pymnts-allstate-outage.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/a8d521cf5152655a6c535991ce8121c6c496e99806406f2330ca995aab84e938/spacex-primary-unavailable.txt",
+      "sha256": "a8d521cf5152655a6c535991ce8121c6c496e99806406f2330ca995aab84e938",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/spacex-primary-unavailable.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/a2433612c807f9d443a95370683d4aff48d1a4c9d4f39df8a8e3fb25ee8516d5/techcrunch-allstate-outage.txt",
+      "sha256": "a2433612c807f9d443a95370683d4aff48d1a4c9d4f39df8a8e3fb25ee8516d5",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/techcrunch-allstate-outage.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/4257bf787c52aaa857c27049c57b28d546da752586e95bde0fabb80df7a69270/trumpaccounts-gov.txt",
+      "sha256": "4257bf787c52aaa857c27049c57b28d546da752586e95bde0fabb80df7a69270",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/trumpaccounts-gov.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/ab635e58a7775af11ad7719f3ccf0ea2b8f2177fdc3f200b2ade22c963203935/websearch-allstate-check.txt",
+      "sha256": "ab635e58a7775af11ad7719f3ccf0ea2b8f2177fdc3f200b2ade22c963203935",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/websearch-allstate-check.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/c54839a1759a290725b3d2ab57215599506a6ed4bf3e1021655569c2f19a135b/review.json",
+      "sha256": "c54839a1759a290725b3d2ab57215599506a6ed4bf3e1021655569c2f19a135b",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/audit/review.json"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 1,
+    "reworks": 0
+  },
+  "siteId": "jht243/modernwallet",
+  "snapshot": {
+    "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/77fce55815c68d72fe9180e689a67334f50f405251883118a4ae1f15e65c4be0/preview-snapshot.json",
+    "sha256": "77fce55815c68d72fe9180e689a67334f50f405251883118a4ae1f15e65c4be0",
+    "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/audit/preview-snapshot.json"
+  },
+  "findings": [
+    {
+      "id": "SX-1",
+      "status": "open",
+      "evidence": "Replace with: \"Earlier reporting and summaries of the Treasury temporary regulations (T.D. 10056) describe stock gifts as routed through eligible charities as general contributions, but we have not read the regulation text and SpaceX has not said which route it will use.\" Reword the Takeaway trigger to \"or Treasury or SpaceX publish rules that differ from the CNBC-reported sale limit.\" Keep the Federal Register source line only as \"not independently reviewed\"."
+    },
+    {
+      "id": "SX-2",
+      "status": "open",
+      "evidence": "Rewrite sentence 1 as \"In July 2026, The Next Web reported that SpaceX President Gwynne Shotwell and her husband pledged one SpaceX share each to about 2 million children; CNBC says recipients are expected to receive those shares in December, and SpaceX's November 25 release does not tie that gift to Trump Accounts.\" In the \"How Trump Accounts Became Part\" section replace \"Trump Accounts already held an account for nearly every American child under 18.\" with \"Treasury auto-enrolled eligible children under 18 by October 1, 2026, so Trump Accounts are an existing channel.\""
+    },
+    {
+      "id": "SX-3",
+      "status": "open",
+      "evidence": "Change to \"you should claim your child's Trump Account to unlock family or employer contributions and, if your child was born from 2025 through 2028, the $1,000 seed\". Change the last sentence to \"claim the account (and the $1,000 seed if your child is eligible)\"."
+    },
+    {
+      "id": "SX-4",
+      "status": "open",
+      "evidence": "Replace with: \"If you want your child to hold SpaceX stock now, a custodial brokerage account is the route, but one stock can swing widely (the 52-week range above is $104.83 to $225.64), so keep it a small slice next to a broad fund.\" Link the existing concentrated-stock-position guide used on the sister page."
+    },
+    {
+      "id": "SX-5",
+      "status": "open",
+      "evidence": "Use \"none of the sources we reviewed (the SpaceX release, CNBC and trumpaccounts.gov as of November 26, 2026) state...\" in the H2-1 body, the FAQ answer and the scam section; same for \"The SpaceX release also mentions no transfer restrictions\"."
+    },
+    {
+      "id": "SX-6",
+      "status": "open",
+      "evidence": "Add \"Historical figure, not today's value\" in the same sentence, or cut the $10.5 billion total; attribute the master-trust line to \"Treasury regulation summaries\" instead of SB-0642, and drop the employer sub-cap and lock-date detail or source them to trumpaccounts.gov."
+    },
+    {
+      "id": "SX-7",
+      "status": "open",
+      "evidence": "Title: \"SpaceX Share and Trump Accounts: What Is Confirmed\" (47 chars; extend to 50+ with \"So Far\"). FAQ first sentence: \"Not yet confirmed for every child: SpaceX says one share goes to every currently active Trump Account, and active is undefined.\""
+    },
+    {
+      "id": "R1-1-checks-scopeAndExclusions",
+      "status": "open",
+      "evidence": "Manifest exclusions say claims depending on T.D. 10056 or X posts are attributed to CNBC or omitted. The T.D. 10056 paragraph, the Takeaway trigger \"publishes regulatory text under Treasury Decision 10056\", and the Shotwell-to-Trump-Accounts framing break that scope. December handling and \"active\" are correct."
+    },
+    {
+      "id": "R1-1-checks-sourceSupport",
+      "status": "open",
+      "evidence": "SpaceX and CNBC claims trace to ir.spacex.com release and CNBC summaries on disk. Unsupported: T.D. 10056 paragraph (blocked fetch, packet says not retrieved, manifest exclusion requires CNBC attribution or omission) and the Shotwell/Trump Accounts link. See SX-1, SX-2."
+    },
+    {
+      "id": "R1-1-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Opening answer, H2-1, FAQ 2 and the Takeaway agree that no source requires claiming for the SpaceX share. The page contradicts itself on Shotwell: the IR release (saved reviewer note) does not tie her gift to Trump Accounts, yet \"The Gwynne Shotwell Precedent\" says a pledge \"directed to Trump Accounts\". See SX-2, SX-3."
+    },
+    {
+      "id": "R1-1-factualReview-consequentialClaims",
+      "status": "open",
+      "evidence": "Tested the central claim against its strongest counterexample: if SpaceX delivers via the 501(c)(3) general-contribution route, the claim question is moot; the page concedes this (\"whe

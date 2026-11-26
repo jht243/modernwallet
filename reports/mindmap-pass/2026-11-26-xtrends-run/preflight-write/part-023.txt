@@ -1,0 +1,58 @@
+se the specific variant.
+
+### Recording the decision
+
+For every metadata row, the run summary lists exactly one disposition: `approved (reason)`, `deferred — cooldown (N days)`, `deferred — churn (N rewrites in 90d)`, or `deferred — performing (CTR X%, trend up)`. This makes the policy auditable across runs.
+
+`git add`. Do not commit.
+
+## Reviewer gate (Explore subagent)
+- ☐ only head/meta diffs — zero body lines changed
+- ☐ each change matches its chart row
+- ☐ titles/descriptions within the discovered length limits
+- ☐ no new title duplicates a prior historical title for that file
+
+Reject with specifics; retry rule 4 (2 attempts then STOP) applies.
+
+---
+## ▶ WHEN THIS PHASE IS DONE — AUTO-CONTINUE. DO NOT ASK THE USER.
+The moment this phase's reviewer gate PASSES, immediately begin the next phase in the SAME turn. Do NOT stop. Do NOT print "Want me to proceed?", "Should I continue?", "Next: Phase X", or any question or hand-off that waits for a human reply.
+
+The `/mindmap-pass` run has EXACTLY ONE human stop (the Phase 0 manifest approval), and this phase is NOT it:
+- Stop 1: the Phase 0 manifest approval (before any edits).
+- (Phase 8 is an informational summary that auto-continues to the Phase 9 push — NOT a stop.)
+
+Everything between those two — including this phase — runs automatically. The reviewer gates are adversarial SUBAGENTS, not human checkpoints; a passing gate means YOU proceed on your own. Keep going through Phase 8 and the Phase 9 push without stopping.
+
+## Updated-page date-bump rule (MANDATORY — workflow-wide, added 2026-07-12; link-only exemption aligned 2026-11-18)
+
+**Editors (any step that substantively updates what an EXISTING page renders — Phase 2 metadata/title, Phase 5 body or enrich sections, FAQs, embedded tools, thin-content rework):** every substantively updated existing page MUST have its "last updated" date bumped to the run date **in the SAME change** — the content edit and the date bump ship together, never separately. Discover how THIS project surfaces the date (record it as a Phase 0 project fact) and bump the field the template ACTUALLY renders:
+- **DB-backed pages** (e.g. ban_the_bots: `landing_pages.last_generated_at` renders both the visible "Last updated" byline and JSON-LD `dateModified`; `blog_posts.updated_at` for posts): any script/SQL that substantively edits content columns MUST also set the date column to now (e.g. `page.last_generated_at = datetime.utcnow()`). Never ship a substantive enrichment/edit script that touches content but not the date column.
+- **File-backed pages**: bump the frontmatter/date field the template renders (`updatedDate`, `last_updated`, `updated`, `dateModified`, …) and re-render if the project pre-renders static HTML.
+
+Also refresh every surface derived from that date: JSON-LD `dateModified`, and the sitemap `<lastmod>` when the generator does not derive it from the same field. **New pages created this run are exempt** (their date fields already default to now). **Phase 6 link-only touches (adding inbound internal links or fixing broken links without a Phase 2/5 substantive edit) AND purely non-rendering technical fixes (robots.txt, redirects, canonical tags, sitemap-only hygiene) are EXEMPT** — preserve each link-only page's existing `updatedDate`, JSON-LD `dateModified`, and sitemap `<lastmod>` (matching Phase 7 `<lastmod>` rules; never bump dates for link-only edits).
+
+**Auditors / reviewer gates (adversarial review):** for EVERY substantively edited existing page (Phase 2 metadata / Phase 5 body or tool enrichment), verify the rendered "Last updated" date (and JSON-LD `dateModified`) now equals the run date — a stale date on a substantively updated page is a **HARD FAIL** (one-field fix; never rewrite the page). For **Phase 6 link-only routes** (inbound internal link additions with no Phase 2/5 substantive action), verify the page **preserves** its existing `updatedDate` / `dateModified` — NEVER fail `datesAndSchema` on a Phase 6 link-only route for keeping its prior `updatedDate`, and treat date churn on an unchanged or link-only page as a fail.
+
+[Source: .claude/commands/mindmap-pass/phase-3-new-content.md]
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 6. Use its exact text under this source/section context.]
+
+# Phase 3 — New content creation (API-generated — see `_content-generation.md`)
+
+<!-- workflow-checkpoints-v1 -->
+**Complete instructions and rule application:** Before substantive content planning, writing, audit or publication, follow `.claude/commands/_workflow-checkpoints.md`. Use `.claude/tools/workflow-preflight.py` to deliver the current phase and required contracts in complete bounded chunks, then pass its completeness/freshness check. The existing chart reviewer and independent Phase 4 reviewer must audit application with artifact evidence, including source provenance, local exclusions, visible attribution, intent-based takeaways and consistent tested labels. Follow the sibling `_rendered-page-audit.md`: finish central source research before the preparation PASS; audit the complete rendered pages after all template/affiliate/link changes, block inherited contradictions affecting the answer, and verify exact reviewed output live with `rendered-audit.py` before closing deployment and measurement records. Install that contract and helper with the checkpoint dependencies. A read-only reviewer may write internal evidence receipts without editing content. Delivery receipts are not proof of understanding or an audit PASS. Keep existing phases and the sole Phase 0 human gate. Global routines resolve/install the sibling shared checkpoint contract and helper into the active project while preserving local rules.
+<!-- /workflow-checkpoints-v1 -->
+
+
+<!-- intent-takeaway-v1 -->
+**Intent-based takeaway:** Read `_decision-evidence.md` in the active project's `.claude/commands/`, especially “Close with a takeaway that answers the page's intent.” Pass the planned conclusion, applicable reader/task, actual evidence basis and decision-changing condition into the existing writer brief. Reuse a sufficient verdict; preserve the no-addition branch and local exclusions. For global commands, resolve/install the sibling shared contract in the active project while preserving local rules.
+<!-- /intent-takeaway-v1 -->
+
+<!-- decision-evidence-v1 -->
+## Decision evidence before drafting
+
+**Layer3Labs local source addition:** Read and apply `.claude/commands/_layer3-evidence-sources.md` before producing the data/analysis and assembling prompts. The existing `mindmap-gates.py cases` lookup now searches the expanded anonymized client/fleet/app catalog for this publisher. It is one optional evidence source: combine as many relevant sources as needed, including internal modeling, genuine internal survey data, primary sources and actual tasks. Do not restrict the page to the inventory, treat a match as sufficient research, force a case or require every source type. Record selected sources and their separate evidence bases in the existing packet; preserve no-addition and the independent Phase 4 review. Client identities and searchable testimonial text remain private.
+
+**Automated Live Product & Pricing Benchmark Step (Comparison, Roundup & Alternatives tracks):** Before `prepare-write-packets` on any commercial Comparison, Roundup, or Alternatives row, run `python3 .claude/tools/mindmap-benchmark.py run --manifest <RUN>/approval-manifest.json [--spec-file <RUN>/benchmark-specs.json]` (also invoked automatically by `mindmap-gates.py prepare-write-packets` when `evidence.json` is absent). This zero-LLM-token helper concurrently snapshots live vendor pricing/cap URLs, resolves verified API token & plan rates from `data/pricing.ts` / `data/gear-prices.json`, matches `_layer3-experience-catalog.json`, executes hands-on `practical` tasks (`basis: "measured"`) ONLY when all ranked options have live runnable targets on a tested-eligible route, and uses deterministic 3-scenario cost/break-even modeling (`basis: "modeled"` / `"calculated"`) everywhere else — reserving `"Tested 2026"` strictly for genuinely executed tests.
+
+**Layer3Labs options 2 and 3 — execute useful comparisons:** Apply that local policy's “Option 2” public-information comparison and “Option 3” practical-task comparison steps. Automatically choose either/both when they improve the approved answer: collect and verify accessible public facts, normalize comparable conditions and run our calculation; or predefine a task/expected result, execute accessible options with identical inputs and save actual outputs/scoring. APIs are optional. Save plans and records in the current page evidence directory, attach their optional `comparisons` entries to the existing packet, then run `python3 .claude/tools/mindmap-gates.py validate-analysis --packet <RUN>/evidence/<slug>/evidence.json` before the writer. Continue with another useful source when collection/access/scoring is unreliable. Missi

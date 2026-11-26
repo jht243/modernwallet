@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "query": "Will I lose coverage or pay a late fee if I can't pay my Allstate premium or file a claim during the outage? [PAA 3/6 on-topic status/login questions, 1/6 off-topic lawsuit; ac 0/39 coverage-question completions; verb-only for the coverage angle]",
+  "searchQuery": "Will I lose coverage or pay a late fee if I can't pay my Allstate premium or file a claim during the outage?",
+  "contextQueries": [],
+  "publisher": "www.themodernwallet.com",
+  "bankSha256": "844e3387ef4c23f3bd1907dd3f62af8592ee2341f93d4842edd1c49687c262b4",
+  "experienceSha256": "f434b01c0528011425795dd52369f64413f6794de89191130c700c632f9ca90a",
+  "localExperience": "Read .claude/commands/_experience.md as internal permission context; its named client examples are private and superseded by the local anonymity rule.",
+  "experienceCatalog": {
+    "path": ".claude/commands/_experience-catalog.json",
+    "sha256": "c30a58024d315337815abe52a4065e486d1c0b95869c03ecd91cd934ad743ac6",
+    "recordsSearched": 95
+  },
+  "candidates": [
+    {
+      "record": {
+        "id": "example-057",
+        "publicDescription": "A gaming platform with a recorded history of 60,000 daily players",
+        "relationship": "Client projects",
+        "topic": "Gaming operations",
+        "workSummary": "Existing records describe a gaming platform supporting 60,000 daily players and seven custom games. This is a historical figure, not a current operating claim.",
+        "possibleUses": "Game-platform operation, player onboarding, rewards and engagement.",
+        "evidenceStatus": "Existing approved engagement or testimonial",
+        "limits": "Approved description and exact quotes only. Do not add new measurements, dates, performance results or a current operating scale.",
+        "outcomeLeads": [],
+        "privateTestimonialRecords": 0,
+        "verification": "Discovery material. Inspect the supporting record or establish the finding during this run before claiming an outcome. A possible use is not a fact."
+      },
+      "topicMatches": [
+        "claim"
+      ],
+      "matchSources": {
+        "question": [
+          "claim"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    },
+    {
+      "record": {
+        "id": "fleet-crypto",
+        "publicDescription": "PipeFlare",
+        "relationship": "Fleet sites",
+        "topic": "Crypto tools & publishing",
+        "workSummary": "Crypto conversions, fee calculations, wallet research and troubleshooting guides.",
+        "possibleUses": "Live-data tools, fee modeling and task-based guides. Gaming history is linked separately.",
+        "evidenceStatus": "Public portfolio + local project",
+        "limits": "This supports experience building and operating the site, not a claim that we personally tested every product or performed the professional service it describes.",
+        "outcomeLeads": [],
+        "privateTestimonialRecords": 0,
+        "verification": "Discovery material. Inspect the supporting record or establish the finding during this run before claiming an outcome. A possible use is not a fact."
+      },
+      "topicMatches": [
+        "fee"
+      ],
+      "matchSources": {
+        "question": [
+          "fee"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    },
+    {
+      "record": {
+        "id": "fleet-military",
+        "publicDescription": "Rank and Pay",
+        "relationship": "Fleet sites",
+        "topic": "Military benefits",
+        "workSummary": "Military pay, housing allowances, disability and retirement information and tools.",
+        "possibleUses": "Calculations based on official tables; keeping benefits information current.",
+        "evidenceStatus": "Public portfolio + local project",
+        "limits": "This supports experience building and operating the site, not a claim that we personally tested every product or performed the professional service it describes.",
+        "outcomeLeads": [],
+        "privateTestimonialRecords": 0,
+        "verification": "Discovery material. Inspect the supporting record or establish the finding during this run before claiming an outcome. A possible use is not a fact."
+      },
+      "topicMatches": [
+        "pay"
+      ],
+      "matchSources": {
+        "question": [
+          "pay"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    },
+    {
+      "record": {
+        "id": "group-medical-practices",
+        "publicDescription": "Over 7 small medical practices (independent doctor's offices, with over 10 years of experience working with doctors)",
+        "relationship": "Unnamed client groups",
+        "topic": "Medical practice operations, office optimization, patient intake, billing & healthcare policy impact",
+        "workSummary": "Owner-supplied experience (2026-11-25): over 10 years working with doctors and over 7 small medical practices on internal office optimizations, front-desk and patient-intake workflows, eligibility and documentation bottlenecks, scheduling, billing coordination, and small-practice operations.",
+        "possibleUses": "Operational, financial, and administrative commentary on how Medicaid/Medicare rules, work requirements, insurance verification, prior authorization, coverage churn, patient intake, and healthcare-finance policy changes affect small doctor's offices, staff workload, cash flow, and patients, plus practical preparation steps for both practices and patients.",
+        "evidenceStatus": "Approved anonymous group (owner-supplied 2026-11-25)",
+        "limits": "Keep all medical practices and doctors strictly anonymous (never invent clinic names, patient outcomes, or unstated dollar or percentage figures). Restrict commentary to operational, administrative, financial, and workflow impacts; never give clinical or medical advice or claim to have tested medical treatments, clinics, or drugs.",
+        "outcomeLeads": [],
+        "privateTestimonialRecords": 0,
+        "verification": "Owner-supplied experience (2026-11-25). State only the approved scale (over 7 small medical practices; over 10 years working with doctors) and grounded operational observations; never invent practice names, client measurements, or clinical claims."
+      },
+      "topicMatches": [
+        "coverage"
+      ],
+      "matchSources": {
+        "question": [
+          "coverage"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    }
+  ],
+  "privateClientContext": [],
+  "instruction": "This catalog is one optional source, not the sole source or a source-count target. Combine as many relevant sources as needed: experience, internal modeling/calculations, actual survey records, primary documents, external research and executed tasks. Verify each claim, retain its own evidence basis and record actual sources in sourceArtifacts. No relevant case means use other supported sources, not force a case or stop. Never publish client identities or searchable testimonial text; preserve local exclusions and the terminal no-addition branch."
+}

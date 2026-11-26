@@ -1,0 +1,95 @@
+{
+ "rows": [
+  {
+   "keyword": "allstate outage",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": false,
+   "ai_overview_cited_domains": [],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.newsweek.com",
+    "downdetector.com",
+    "www.cleveland.com",
+    "finance.yahoo.com",
+    "roadside.allstate.com",
+    "www.allstate.com"
+   ],
+   "major_domains": [],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "organic": 9,
+    "people_also_ask": 1,
+    "related_searches": 1,
+    "top_stories": 1
+   },
+   "paa": [
+    "Is the Allstate system down right now?",
+    "Why is Allstate down?",
+    "What is going on with Allstate insurance?",
+    "Why is the Allstate app not working?",
+    "Why can't I log into my Allstate account?",
+    "Why is Allstate being sued?"
+   ],
+   "related_searches": [
+    "Allstate outage news",
+    "Allstate tech outage",
+    "Allstate down detector",
+    "Allstate stock",
+    "Why is Allstate system down"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "no entrenched incumbents or SERP features detected",
+   "se_results_count": 115
+  },
+  {
+   "keyword": "spacex trump account",
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.forbes.com",
+    "www.chosun.com",
+    "investamerica.org",
+    "www.cnbc.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.forbes.com",
+    "finance.yahoo.com",
+    "ir.spacex.com",
+    "www.reuters.com",
+    "investamerica.org",
+    "www.cnbc.com"
+   ],
+   "major_domains": [
+    "www.forbes.com"
+   ],
+   "forum_domains": [],
+   "serp_feature_mix": {
+    "ai_overview": 1,
+    "organic": 8,
+    "people_also_ask": 1,
+    "related_searches": 1,
+    "short_videos": 1
+   },
+   "paa": [
+    "Did SpaceX donate to Trump accounts?",
+    "Is Elon Musk giving every kid a share of SpaceX?",
+    "Is Elon Musk a nice person in real life?",
+    "Who is the biggest shareholder of SpaceX?",
+    "Does Google still own 7.5% of SpaceX?",
+    "How many wifes does Elon Musk have?"
+   ],
+   "related_searches": [
+    "SpaceX stock",
+    "SpaceX stock price",
+    "SpaceX stock for kids"
+   ],
+   "recommended_shape": "standard article/guide is viable",
+   "evidence": "1/10 major platforms (www.forbes.com); AI Overview present, cites www.forbes.com, www.chosun.com, investamerica.org, www.cnbc.com",
+   "se_results_count": 94200000
+  }
+ ],
+ "cost": "DataForSEO: 2 calls, $0.00430 of $2.00 budget"
+}

@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "jobId": "xtrends-modernwallet-2026-11-26",
+  "subBatchingRecommended": false,
+  "batchCount": 1,
+  "totalNewPages": 1,
+  "totalRoutes": 4,
+  "disjointPartition": true,
+  "batches": [
+    {
+      "batchIndex": 1,
+      "label": "batch-1",
+      "actionIds": [
+        "A3"
+      ],
+      "newPageRoutes": [
+        "/guides/allstate-outage-coverage-payments-claims/"
+      ],
+      "existingRoutes": [
+        "/guides/elon-musk-spacex-share-for-kids/",
+        "/compare/new-car-vs-used-car/",
+        "/compare/auto-loan-vs-lease/"
+      ],
+      "routes": [
+        "/guides/allstate-outage-coverage-payments-claims/",
+        "/guides/elon-musk-spacex-share-for-kids/",
+        "/compare/new-car-vs-used-car/",
+        "/compare/auto-loan-vs-lease/"
+      ],
+      "routeFlags": "--route /guides/allstate-outage-coverage-payments-claims/ --route /guides/elon-musk-spacex-share-for-kids/ --route /compare/new-car-vs-used-car/ --route /compare/auto-loan-vs-lease/"
+    }
+  ]
+}

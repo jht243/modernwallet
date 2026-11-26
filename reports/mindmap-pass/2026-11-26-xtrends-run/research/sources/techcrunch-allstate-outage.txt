@@ -1,0 +1,5 @@
+URL: https://techcrunch.com/2026/11/25/allstate-suffers-multi-day-tech-outage-ahead-of-thanksgiving/
+Retrieved: 2026-11-26T16:50:54Z via WebFetch (summary only). Published Nov 25 2026 7:08 AM PST.
+- Multiday outage since Monday morning; customers nationwide have trouble accessing accounts, policy information, claims and bill payments via website/app; local agents fielding calls.
+- Allstate has not disclosed cause or resolution timeline. Company statement: some access restricted for 48 hours, still handling claims; customers whose payments are affected will not lose coverage or be charged late fees.
+- Unconfirmed report of up to 10% layoffs mentioned (unverified; do not repeat).

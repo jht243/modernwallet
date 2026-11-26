@@ -1,0 +1,140 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "writer-sonnet-1",
+  "route": "/guides/allstate-outage-coverage-payments-claims/",
+  "readerQuestion": "Will I lose coverage or pay a late fee if I can't pay my Allstate premium or file a claim during the outage? [PAA 3/6 on-topic status/login questions, 1/6 off-topic lawsuit; ac 0/39 coverage-question completions; verb-only for the coverage angle]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/approval-manifest.json",
+      "sha256": "0341ce1dd89c175acea87777d8e6dd91ef4ac2e0c9f433e347210066d0307090"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/chart-review.json",
+      "sha256": "ef071b456d6a57869775950297a62a7b47c3200c130868b34b148fc0121a7999"
+    },
+    "actionId": "A3"
+  },
+  "presentation": {
+    "medium": "text",
+    "placement": "Opening answer, then a situation table and a checklist",
+    "reason": "Readers in a live problem need a direct answer and a short list of steps by situation",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "The steps do not change with numeric inputs; a calculator would invent precision, so a finite situation table answers it"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static scannable layout answers faster"
+    }
+  },
+  "basis": "reported",
+  "decisionGap": "SERP page one is outage status news and Downdetector; none answers whether a policyholder loses coverage or pays late fees when they cannot pay or file, what to document, or how to get proof of coverage on a newly bought car.",
+  "finding": "Allstate told PYMNTS and TechCrunch (Nov 25, 2026) that customers whose payments are affected by the disruption will not lose coverage or be charged late fees, and that claims are still being handled; this is a reported company statement, not policy text, so policyholders should document attempts and get written confirmation. State rules (California DOI 2021 guide: 10-day written notice after the due date; NAIC chart entries dated Oct 2026: Missouri at least 10 days, New Jersey 15 days) show cancellation for nonpayment needs advance written notice, and they vary by state.",
+  "conditions": "Holds while the Allstate statement stands; duration of the no-lapse/no-late-fee treatment is not stated by the sources. State notice rules and the individual policy terms control. Does not address Allstate's cause, end time, or any premium or insurer comparison.",
+  "whatWouldChange": "Allstate retracts or narrows the statement or publishes terms with an end date; a cancellation or nonpayment notice arrives; the reader's state rules or policy say otherwise; the reader cannot obtain written proof of coverage (then bind a new policy first).",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-26-xtrends-run/evidence/allstate-outage-coverage-payments-claims/cases.json",
+    "sha256": "21e9ba5d6643e73c7f2e6fb278a9469134f196a5b023ff6d53216a9f51d45989"
+  },
+  "caseDecisions": "None selected. Retrieved cases.json candidates (gaming platform, other operator records) do not overlap with a Trump Account or auto-insurance reader decision; none selected, no client mention forced.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/request-brief.txt",
+      "sha256": "68b6d030cfc6a6bdcc88d9b46e4a09e36d3887fd8a49ebe47e383307018ddff0"
+    },
+    {
+      "path": "reports/x-trends/2026-11-26.md",
+      "sha256": "73e8804774667ebfe83d9a99da896aa19db42a56617cd110fa5bd5024e4a5b10"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/coverage-lookup.txt",
+      "sha256": "61ee00b08ce7f351379b9fba8ca24bc19edf6b53458c0a0392064c8786a7d6cc"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/keyword-volumes.json",
+      "sha256": "763f33aba89fb57310d061168bee298ab13cd0f595a0d811170896731d958c6b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/serp.json",
+      "sha256": "733e1efc9ed6ace8f0e697470a7fc607beed476d7d3e05a33cd9aa8547c807ce"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/ac-allstate.csv",
+      "sha256": "0b5758b7496adccfdbd9e3bc6213ac120c963662b6929a431eed47c49c1ca490"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/ac-spacex.csv",
+      "sha256": "f84e1fe7ddf570108b9b3c850ef5ea11dfee45a11c34873c58e2d08f9a1db55e"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/ca-doi-auto-guide.txt",
+      "sha256": "078827914d69bbb461bbbc59c65dae165991e454bf0191677d50559f60921d5b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/cnbc-spacex-trump-account.txt",
+      "sha256": "30e9d8f1d3fd9d1e94a610b4118b04fd70725534a184c4840a38b5385b9fa820"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/federal-register-td10056-blocked.txt",
+      "sha256": "42f8c4207a2c0ae6fd7b444dfccf1f8f2ff091239b720651f2c978441d157155"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/naic-compendium-compulsory-auto.txt",
+      "sha256": "bbe19370f7b296a73430c720d85af03da0407eea1810f30d555b4ddaa74e66b3"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/pymnts-allstate-outage.txt",
+      "sha256": "d644a69dbf557fedfc790badea4d74b7266feccbfba92e46f92b8689fa109995"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/spacex-primary-unavailable.txt",
+      "sha256": "a8d521cf5152655a6c535991ce8121c6c496e99806406f2330ca995aab84e938"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/techcrunch-allstate-outage.txt",
+      "sha256": "a2433612c807f9d443a95370683d4aff48d1a4c9d4f39df8a8e3fb25ee8516d5"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/trumpaccounts-gov.txt",
+      "sha256": "4257bf787c52aaa857c27049c57b28d546da752586e95bde0fabb80df7a69270"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/websearch-allstate-check.txt",
+      "sha256": "ab635e58a7775af11ad7719f3ccf0ea2b8f2177fdc3f200b2ade22c963203935"
+    }
+  ],
+  "whyNoQuantitativeAnalysis": "The reader decision depends on a reported company statement and state notice rules, not on a number that can be modeled; any premium or rate figure would need unsourced inputs and is excluded.",
+  "reasoning": "PYMNTS and TechCrunch both report the Allstate statement (no lost coverage, no late fees for disruption-affected payments, claims still handled) -> a company statement is not a policy amendment -> California DOI and NAIC chart show nonpayment cancellation requires written notice, varying by state -> so document attempts, ask the agent for written confirmation of coverage and payment status, get written proof of insurance for lender or dealer on a newly bought car, and switch only after a new policy is active.",
+  "sourceUrls": [
+    {
+      "url": "https://www.pymnts.com/technology/2026/allstate-outage-locks-customers-agents-out-claims-payments/",
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "url": "https://techcrunch.com/2026/11/25/allstate-suffers-multi-day-tech-outage-ahead-of-thanksgiving/",
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "url": "https://www.insurance.ca.gov/01-consumers/105-type/95-guides/01-auto/upload/Auto-05122021.pdf",
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "url": "https://content.naic.org/",
+      "checkedAt": "2026-11-26"
+    }
+  ],
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [],
+    "scopeAndLimits": "External reported sources only; no internal testing, modeling or client records; Allstate statement attributed to PYMNTS and TechCrunch",
+    "publicMethod": "Source-to-conclusion reasoning from the cited reports and state guidance",
+    "placement": "Opening section and Our Takeaway"
+  },
+  "takeaway": {
+    "conclusion": "Document every payment and claim attempt, ask the local agent for written confirmation, treat the reported no-lapse statement as helpful but not proof",
+    "appliesTo": "Current Allstate policyholders including those who just bought a car",
+    "basis": "reported",
+    "changesIf": "Allstate retracts or publishes terms; a cancellation notice arrives; state rules or policy say otherwise"
+  }
+}

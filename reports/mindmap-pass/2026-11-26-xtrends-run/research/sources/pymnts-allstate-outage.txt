@@ -1,0 +1,6 @@
+URL: https://www.pymnts.com/technology/2026/allstate-outage-locks-customers-agents-out-claims-payments/
+Retrieved: 2026-11-26T16:50:54Z via WebFetch (summary only). Published Nov 25 2026.
+- Allstate phone system, email, payment services, website and mobile app have had outages since Mon Nov 23 2026 (per reports published Nov 25).
+- Allstate told PYMNTS some access has been restricted but it continues to respond to and settle claims; customers who cannot make a payment because of the disruption will not lose coverage or be charged late fees.
+- Roadside Assistance site down Wednesday; Downdetector reports peaked at 281 about 9 a.m. Wed, 80 by noon.
+- Oklahoma House Insurance Committee leaders Chris Sneed and Stacy Jo Adams urged Allstate to ensure policyholders are not penalized or left without coverage.

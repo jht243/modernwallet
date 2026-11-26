@@ -1,0 +1,17 @@
+{
+  "route": "/guides/elon-musk-spacex-share-for-kids",
+  "pageCategory": "regulated-medical-or-psychedelic",
+  "track": "guide",
+  "testedEligible": false,
+  "legitimateZeroInternalDomain": true,
+  "poolPresented": true,
+  "poolCount": 0,
+  "pool": [],
+  "excludedPoolOptions": [
+    {
+      "id": "hands_on_test",
+      "reason": "type: guide is not a best-of/alternatives roundup or single-item review"
+    }
+  ],
+  "reviewerVoiceProfile": null
+}

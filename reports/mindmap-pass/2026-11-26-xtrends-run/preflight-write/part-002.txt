@@ -1,0 +1,45 @@
+ prominently near the finding.
+
+Match the cue strictly to the evidence:
+- **Actual product test (`basis="measured"`):** “In our internal testing, we [task + conditions] and found [result].” Requires real executed run records on an eligible route; testing our own calculator code is not product testing.
+- **Live free-tier / public spec probe:** Describe the exact public workspace, CLI/API, or feed check performed and the concrete ceiling, export lock-in, or friction observed—without claiming full `(Tested YYYY)` unless `tested_eligibility` and full runs pass.
+- **Calculated / modeled analysis:** “In our internal cost analysis, we modeled [scenarios] using [sourced inputs] and found [result + flip threshold].” Identify vendor prices as sourced inputs and keep hypothetical workload assumptions beside the table.
+- **Client / operator / tool telemetry:** Use approved anonymized client/founder observations (`_approved-cases.json` / experience catalog) within stated limits, or verified first-party calculator usage stats (`N >= 25` unique users only)—never inventing percentages or naming private clients.
+- **External evidence only:** Name the actual publisher/vendor source; never relabel external specs as “our tests.”
+
+Record `provenance` (`basis`, `supportingRecordIds`, `scopeAndLimits`, `publicMethod`, `placement`) in `evidence.json`, keep private records private, and copy the approved basis into the writer's closed facts. Preserve source-only exemptions (medical, psychedelic, legal, sanctions, biographies) and the `no-addition` branch.
+
+### Close with a takeaway that answers the page's intent
+
+For new pages and substantive enrichments, make the evidence lead to a useful recommendation or conclusion. Reuse an existing verdict/summary when it already does this; do not append a second conclusion. The no-addition branch still applies to an already-sufficient page, and metadata/link-only work does not trigger a new section.
+
+Within Phase 3, give the writer a planned takeaway tied to the brief's existing reader question and the packet's findings: the conclusion, who/what it applies to, the supporting record IDs and evidence basis, and the condition that would change it. Use the existing brief/packet; no separate workflow or invented experiment is needed.
+
+| Page intent | What the takeaway must resolve |
+|---|---|
+| Is it worth it? | Worth it for whom and under which conditions; when the benefit disappears or the cheaper/no-purchase option is enough. |
+| Purchase, review or comparison | Which option fits which reader/task, the decisive supported reason, and when to choose the alternative or buy nothing. Never assume the newest, most expensive or sponsored option wins. |
+| How-to or troubleshooting | The best supported next step, the result the evidence supports expecting, and when to stop or use a different approach. |
+| Informational or research | The main answer and its practical meaning, with the material uncertainty. Do not turn a definition or research summary into a purchase recommendation. |
+
+Keep the concise direct answer in the brief's approved answer placement, normally near the top. Put the fuller takeaway after the relevant evidence, usually at the end of the substantive analysis before FAQs/related links. Use the existing verdict field/section or a natural heading such as **Our Takeaway**; respect local schema and heading rules. Short pages may use one answer/verdict that serves both purposes. Do not repeat the opening paragraph verbatim or add a section just for its heading.
+
+The takeaway should connect **answer → actual evidence basis → important exception or next step** in a short paragraph. Where we did original work, naturally name it again at the decision: “Based on our internal cost modeling…” or “In our internal testing of [actual task]…” with the supported conclusion. Attribute mixed evidence to the specific finding it supports; a test of one capability cannot substantiate a broader modeled performance claim. Never use the combined phrase “our testing and scenarios” unless both exist, are relevant, and their limits are clear. An accurate evidence cue here may complement the first-finding attribution; it is not a phrase quota or a Google ranking signal.
+
+If only external evidence exists, name that evidence instead of implying an internal test. If evidence cannot settle the central question, say what remains unknown and give the supported conditional conclusion or next verification step; do not force a yes/no verdict. Preserve all local medical, psychedelic, legal, financial and other testing exclusions. A research summary is not our clinical testing, and a model cannot establish treatment safety or efficacy. Apply the site's existing professional-review requirements.
+
+The closing takeaway, top answer, table, calculator outputs and FAQs must agree on the recommendation and its conditions. Do not extend a calculator's conclusions beyond what its inputs/formula establish. Preserve useful tools; no new calculator is required. Adding or changing this takeaway changes the reviewed content, so an existing tested approval must be refreshed under `_testing-labels.md` before its labels can return.
+
+Update nearby verdicts and FAQs that the new evidence actually contradicts through targeted edits. Preserve unrelated content and intent. For existing pages, retain metadata unless the authorized metadata lane approves a separate experiment; record a proposed result-specific search promise without silently applying it. For new pages, titles/descriptions may reflect the finding honestly, including essential conditions; never turn conditional savings into a guaranteed claim.
+
+**Tested-format precedence:** read `_testing-labels.md` for the unified local-permission, exclusion, evidence and automatic-rendering contract. page-type switches identify eligibility, not evidence. Neither a calculator nor a persona simulation licenses `we tested`, `howWeTested`, measured scores or tested schema/bylines. Actual relevant run records are required for those claims. Where the site's automatic format would assert testing without those records, use its existing exclusion mechanism and log why. Do not fabricate experience to satisfy another template instruction.
+
+## 4. Independent audit of the contribution
+
+Phase 4 reviews the packet and the exact page/tool, including new content embedded in an existing route. Check the original request and its mapped acceptance requirements as well as the approved row; a narrower brief cannot silently redefine success. In addition to existing gates, fail when:
+- A central finding is untraceable, irreproducible, contradicts its inputs, or presents assumed behavior as measured behavior.
+- A claimed test, model or client observation lacks its supporting record, exaggerates the scope, or uses the wrong evidence label. Reject unsupported first-person experience even if a template asks for it.
+- Original work is presented without enough visible attribution or method context for the reader to tell what we did. Check that the wording identifies our specific action, the supported finding and a nearby way to inspect the method or inputs. A bare “Our cost model uses published prices” is insufficient by itself. Ask for a short accurate clarification at the finding; do not fail an already-clear attribution for lacking an exact phrase, and do not force one on source-only/no-addition work.
+- An attractive headline/conclusion omits a condition that reverses the decision, or nearby verdicts contradict the new finding.
+- The takeaway (or existing equivalent verdict) fails to answer the approved reader question, adds an unsupported recommendation, mismatches the evidence basis, or omits a material condition/alternative that reverses the decision. Check it against the packet and the top answer, table, calculator and FAQs. Reject “our testing and scenarios” when only modeling or external research exists. Accept a clear supported conditional/inconclusive answer, an already-sufficient verdict or the no-addition branch; do not demand an exact heading, canned phrase, repeated conclusion or commercial recommendation on an informational page.
+- The alleged contribution is only reworded vendor facts, generic company taglines ("At Layer3Labs, we build AI systems..."), or thin prose buried at the bottom: on Round 1 for non-exempt commercial/comparison/roundup/pricing/how-to pages, check **Information Gain & Top-Half Placement** (Paragraph-1 numeric hook + a 150–250 word original analysis/scenario table + counterexample in Section 1–3 + non-summary Publisher's Take where supported) and send back for **at most 1 targeted rework pass**. **ZERO-BLOCKED-PAGES HARD RULE:** Information Gain, proof depth, placement, calculator pairing, and Publisher's Take findings are Round-1 edit triggers ONLY—after that 1 rework pass (or when `roundsRemaining == 0`), **100% continue and publish regardless of outcome**, logging any remaining thinness passively to `internal-

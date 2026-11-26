@@ -1,0 +1,66 @@
+cific `workflow-preflight.py` chunk delivery and freshness check. Existing independent chart/Phase 4 audits must record rule-by-rule artifact evidence for local exclusions, provenance, visible attribution, intent takeaways, testing labels and applicable growth/visual checks. Follow `_rendered-page-audit.md`: finish central research before preparation Passed; independently audit the complete rendered decision path after template/affiliate/link changes; verify the exact reviewed render live using `rendered-audit.py` and close deployment/measurement records. A read-only reviewer may write internal receipts. A loader receipt or worker assertion is not a review PASS. Preserve the sole Phase 0 human gate.
+<!-- /workflow-checkpoint-cron-v1 -->
+
+Make sure all article pages meet metadata length requirements (title/description), follow FAQ JSON, schema.org, and have good internal linking.
+
+**FAIL — orphaned first-person "we".** The FIRST first-person *company claim* on a page (what the business does, builds, runs, helps with, audits, charges for, or refuses to do) must name the business: `At {BUSINESS_NAME}, we…`. A bare "We build and run AI systems inside other people's businesses" in an intro leaves the reader with no antecedent. Set fail with note `orphan-we: [the sentence]`. The fix is a three-word prefix, never a rewrite. **Do not fire** when: the brand already appears earlier on the page or in the same breath just after; the "we" is authorial ("we cover", "we compared", "we ranked these on"); it is a later "we" on a page that already named the brand once; or it sits in `metaTitle`/`metaDescription`.
+
+**FAIL — heading not in Title Case.** Every H1 and section heading (H2/H3) must use Title Case: the first letter of each major word is capitalized. If any heading has a major word starting lowercase — e.g. `"Who Spark fits, and who should look elsewhere"`, `"Spark pros and cons"` — set fail with note `heading-case: [the heading]`. The fix is a one-field capitalization (capitalize the major words; keep minor words a/an/the/and/or/nor/but/for/to/of/in/on/at/by/with/from/vs/via/per lowercase unless first or last; preserve acronyms and brand casing like AI, API, SEO, GPT-5, iOS exactly — never lowercase them). FAQ `question` fields are exempt (they are questions, keep sentence casing).
+
+
+---
+
+---
+
+## ‼️ SELF-SERVING DISCLAIMER GATE — blocks the phase (MANDATORY — added 2026-08-21)
+
+**Never write a sentence asserting our own neutrality, independence, or lack of a financial interest.** This is a hard fail, not a style note. Strip every instance before the page ships.
+
+Banned constructions (non-exhaustive — judge by intent, not exact wording):
+- "Layer3 Labs does not resell / resells none of / does not refer / does not partner with…"
+- "We take no referral fee / no commission / no kickback from…"
+- "This ranking is independent." / "A note on objectivity:" / "Layer3 Labs is vendor-neutral."
+- "No paid placement" / "No sponsored placement" / "We don't take payment to be listed" / "Our rankings are editorial, not paid" — the site sells paid placements, so any claim it doesn't is false.
+- "We run our own repositories on this stack, so this is written from the position of someone who has to live with the choice."
+- Any variant that asks the reader to trust our motives rather than showing our reasoning.
+
+**Why this is a hard fail, on two independent grounds:**
+
+1. **It is frequently FALSE.** This repo auto-inserts `rel="sponsored"` affiliate links via the `ENTITY_LINKS` registry in `src/utils/sectionContent.tsx`. Any entity there with `sponsored: true` (Cursor, ElevenLabs, Murf, Apollo.io, Instantly.ai, Dext, Nutshell, Pinecone, Netlify, RunPod, Carepatron, Prezi, ZoomInfo — re-read the registry, it grows) earns us a referral fee **on that very page**. A page that autolinks Cursor and also says "we take no referral fee from Cursor" is publishing a false statement about a material financial relationship. On 2026-08-21 two such sentences shipped and had to be removed.
+2. **It does not work even when true.** Objectivity is demonstrated by the analysis: naming who should NOT pick our preferred option, stating what would change the verdict, and citing what each vendor actually publishes. Asserting neutrality adds nothing a skeptical reader will credit, and reads as protesting too much.
+
+**Auditor procedure — run this on every page in the phase:**
+```bash
+grep -inE "does not resell|do not resell|resells? none|takes? no (referral|commission|kickback)|no commission on|does not (refer|partner)|vendor.neutral|this (ranking|comparison|page) is independent|note on objectivity|we are not (paid|sponsored)|no financial (interest|stake)|no sponsored placement|not paid placements|(do not|don.t) (charge|take payment) to be (listed|included|ranked)" <the new/edited entries>
+```
+Any hit → **FAIL the page** and require removal. Delete the claim outright; do not soften it. Where the sentence also carried real methodology ("we weighed what each vendor publishes about X"), keep only the methodology half and drop the financial/neutrality assertion.
+
+**What to do instead:** nothing. Say what the page found and why. If a genuine affiliate relationship exists, that is handled by the site's affiliate-disclosure mechanism, **not** by prose in the body — and never by a sentence claiming the relationship does not exist.
+
+**Scope note:** this gate covers the pages THIS pass creates or edits. If the auditor notices the pattern on pre-existing pages, record it as an advisory finding for the human, do not mass-edit other pages inside this run.
+
+---
+
+**Remediation:** Use `_remediation-ladder.md` for mechanical and targeted correction methods, and `_content-review-policy.md` for the single total 1/2/3 independent-audit budget and release decision. These are not additional rework allowances. Keep actual PASS/FAIL judgments and reuse unchanged pages. At an activated Mindmap audit limit publish the exact final candidate with factual and cosmetic FAIL findings retained; do not stop, isolate it for editorial failure, regenerate, or buy another audit. Preserve existing non-editorial safeguards and the separate native client/upsell contracts.
+<!-- CRON_PROMPT_END -->
+
+---
+## ▶ WHEN THIS PHASE IS DONE — AUTO-CONTINUE. DO NOT ASK THE USER.
+The moment this phase's reviewer gate PASSES, immediately begin the next phase in the SAME turn. Do NOT stop. Do NOT print "Want me to proceed?", "Should I continue?", "Next: Phase X", or any question or hand-off that waits for a human reply.
+
+The `/mindmap-pass` run has EXACTLY ONE human stop (the Phase 0 manifest approval), and this phase is NOT it:
+- Stop 1: the Phase 0 manifest approval (before any edits).
+- (Phase 8 is an informational summary that auto-continues to the Phase 9 push — NOT a stop.)
+
+Everything between those two — including this phase — runs automatically. The reviewer gates are adversarial SUBAGENTS, not human checkpoints; a passing gate means YOU proceed on your own. Keep going through Phase 8 and the Phase 9 push without stopping.
+
+
+## Updated-page date-bump rule (MANDATORY — workflow-wide, added 2026-07-12; link-only exemption aligned 2026-11-18)
+
+**Editors (any step that substantively updates what an EXISTING page renders — Phase 2 metadata/title, Phase 5 body or enrich sections, FAQs, embedded tools, thin-content rework):** every substantively updated existing page MUST have its "last updated" date bumped to the run date **in the SAME change** — the content edit and the date bump ship together, never separately. Discover how THIS project surfaces the date (record it as a Phase 0 project fact) and bump the field the template ACTUALLY renders:
+- **DB-backed pages** (e.g. ban_the_bots: `landing_pages.last_generated_at` renders both the visible "Last updated" byline and JSON-LD `dateModified`; `blog_posts.updated_at` for posts): any script/SQL that substantively edits content columns MUST also set the date column to now (e.g. `page.last_generated_at = datetime.utcnow()`). Never ship a substantive enrichment/edit script that touches content but not the date column.
+- **File-backed pages**: bump the frontmatter/date field the template renders (`updatedDate`, `last_updated`, `updated`, `dateModified`, …) and re-render if the project pre-renders static HTML.
+
+Also refresh every surface derived from that date: JSON-LD `dateModified`, and the sitemap `<lastmod>` when the generator does not derive it from the same field. **New pages created this run are exempt** (their date fields already default to now). **Phase 6 link-only touches (adding inbound internal links or fixing broken links without a Phase 2/5 substantive edit) AND purely non-rendering technical fixes (robots.txt, redirects, canonical tags, sitemap-only hygiene) are EXEMPT** — preserve each link-only page's existing `updatedDate`, JSON-LD `dateModified`, and sitemap `<lastmod>` (matching Phase 7 `<lastmod>` rules; never bump dates for link-only edits).
+
+**Auditors / reviewer gates (a

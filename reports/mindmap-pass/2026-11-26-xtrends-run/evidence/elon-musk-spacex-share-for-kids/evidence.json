@@ -1,0 +1,136 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "writer-sonnet-1",
+  "route": "/guides/elon-musk-spacex-share-for-kids/",
+  "readerQuestion": "How do I claim the SpaceX share for my child's Trump Account? [PAA 2/6 on-topic (Did SpaceX donate; Is Musk giving every kid a share), 4/6 off-topic personal; ac 0 usable question completions]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/approval-manifest.json",
+      "sha256": "0341ce1dd89c175acea87777d8e6dd91ef4ac2e0c9f433e347210066d0307090"
+    },
+    "review": {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/chart-review.json",
+      "sha256": "ef071b456d6a57869775950297a62a7b47c3200c130868b34b148fc0121a7999"
+    },
+    "actionId": "A1"
+  },
+  "presentation": {
+    "medium": "text",
+    "placement": "New section 1 after the opening answer, with a timeline table",
+    "reason": "The reader needs ordered steps and a split of confirmed versus unconfirmed facts; a finite table does this without inputs",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "No reader input changes the answer; the claim steps and dates are the same for every family, so a static numbered list and table answer it"
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Nothing changes with inputs; static list is faster to scan"
+    }
+  },
+  "basis": "reported",
+  "decisionGap": "The existing page says nothing can be claimed and that nobody knows if Trump Accounts are involved. Since Nov 25 SpaceX says it will give one share to every active Trump Account, but no source defines active, gives a transfer date or says claiming is required; readers cannot tell whether claiming matters for the share and what restrictions apply.",
+  "finding": "SpaceX's Nov 25, 2026 investor-relations release says it will give one newly issued Class A share to every currently active Trump Account and Musk will match; it does not define active, give a timing, a claim requirement or sale restrictions. CNBC reports Musk's share transfers when his lockup expires in June 2027, Shotwell's earlier gift recipients are expected to receive shares in December, and Treasury rules generally bar selling until the earlier of five years or the end of the year the child turns 17. No source says claiming makes an account active or required for the SpaceX share. Claiming (official app, trumpaccounts.gov) is required for the $1,000 seed and family or employer contributions.",
+  "conditions": "CNBC summaries and SpaceX release as of Nov 26, 2026; T.D. 10056 text not retrieved, restriction attributed to CNBC citing Treasury rules; SpaceX transfer date unconfirmed.",
+  "whatWouldChange": "SpaceX or Treasury defines active, publishes a transfer date or states a claim requirement; T.D. 10056 text shows different sale limits.",
+  "caseSelection": {
+    "path": "reports/mindmap-pass/2026-11-26-xtrends-run/evidence/elon-musk-spacex-share-for-kids/cases.json",
+    "sha256": "a6725b7c7ec6b4de52c9e61f4c095c6ce429b7006d370179bfbc27410d728688"
+  },
+  "caseDecisions": "None selected. Retrieved cases.json candidates (gaming platform, other operator records) do not overlap with a Trump Account or auto-insurance reader decision; none selected, no client mention forced.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/request-brief.txt",
+      "sha256": "68b6d030cfc6a6bdcc88d9b46e4a09e36d3887fd8a49ebe47e383307018ddff0"
+    },
+    {
+      "path": "reports/x-trends/2026-11-26.md",
+      "sha256": "73e8804774667ebfe83d9a99da896aa19db42a56617cd110fa5bd5024e4a5b10"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/coverage-lookup.txt",
+      "sha256": "61ee00b08ce7f351379b9fba8ca24bc19edf6b53458c0a0392064c8786a7d6cc"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/keyword-volumes.json",
+      "sha256": "763f33aba89fb57310d061168bee298ab13cd0f595a0d811170896731d958c6b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/serp.json",
+      "sha256": "733e1efc9ed6ace8f0e697470a7fc607beed476d7d3e05a33cd9aa8547c807ce"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/ac-allstate.csv",
+      "sha256": "0b5758b7496adccfdbd9e3bc6213ac120c963662b6929a431eed47c49c1ca490"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/ac-spacex.csv",
+      "sha256": "f84e1fe7ddf570108b9b3c850ef5ea11dfee45a11c34873c58e2d08f9a1db55e"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/ca-doi-auto-guide.txt",
+      "sha256": "078827914d69bbb461bbbc59c65dae165991e454bf0191677d50559f60921d5b"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/cnbc-spacex-trump-account.txt",
+      "sha256": "30e9d8f1d3fd9d1e94a610b4118b04fd70725534a184c4840a38b5385b9fa820"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/federal-register-td10056-blocked.txt",
+      "sha256": "42f8c4207a2c0ae6fd7b444dfccf1f8f2ff091239b720651f2c978441d157155"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/naic-compendium-compulsory-auto.txt",
+      "sha256": "bbe19370f7b296a73430c720d85af03da0407eea1810f30d555b4ddaa74e66b3"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/pymnts-allstate-outage.txt",
+      "sha256": "d644a69dbf557fedfc790badea4d74b7266feccbfba92e46f92b8689fa109995"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/spacex-primary-unavailable.txt",
+      "sha256": "a8d521cf5152655a6c535991ce8121c6c496e99806406f2330ca995aab84e938"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/techcrunch-allstate-outage.txt",
+      "sha256": "a2433612c807f9d443a95370683d4aff48d1a4c9d4f39df8a8e3fb25ee8516d5"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/trumpaccounts-gov.txt",
+      "sha256": "4257bf787c52aaa857c27049c57b28d546da752586e95bde0fabb80df7a69270"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/websearch-allstate-check.txt",
+      "sha256": "ab635e58a7775af11ad7719f3ccf0ea2b8f2177fdc3f200b2ade22c963203935"
+    }
+  ],
+  "whyNoQuantitativeAnalysis": "The reader question is about what sources confirm and a claim process; no defensible numerical model applies and none is needed.",
+  "reasoning": "SpaceX release plus CNBC establish the commitment and reported timing items -> neither defines active or says claiming is required -> trumpaccounts.gov documents claim steps for other benefits -> so the page says claiming is not shown to be required for the share, explains the claim steps for other benefits, and lists confirmed versus unconfirmed items.",
+  "sourceUrls": [
+    {
+      "url": "https://ir.spacex.com/updates/releases-details/2026/SpaceX-to-Invest-in-the-Next-Generation-of-Americans-2026-r_LYQ5cH94/default.aspx",
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
+      "checkedAt": "2026-11-26"
+    },
+    {
+      "url": "https://trumpaccounts.gov",
+      "checkedAt": "2026-11-26"
+    }
+  ],
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [],
+    "scopeAndLimits": "External reported and primary sources only; no testing or modeling",
+    "publicMethod": "Source-to-conclusion reasoning from the cited sources",
+    "placement": "Section 1 and Our Takeaway"
+  },
+  "takeaway": {
+    "conclusion": "Claim the Trump Account for the seed and contributions, do not expect claiming to be what earns the SpaceX share, and do not count on a date or sale",
+    "appliesTo": "Parents and guardians of children with a Trump Account",
+    "basis": "reported",
+    "changesIf": "SpaceX or Treasury defines active or a claim requirement"
+  }
+}

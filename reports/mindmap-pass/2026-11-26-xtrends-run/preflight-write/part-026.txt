@@ -1,0 +1,53 @@
+nBName`. Fit: the reader must plausibly use the model through an AI IDE/tool (dev / coding / general-model audience).
+> - **Non-model page that prominently uses a tool with a referral program** → no map entry; just write the tool's plain name and render auto-links it to its referral URL when it is in `ENTITY_LINKS` / `src/utils/affiliate.ts`. Never hand-write the URL; if the tool has no wired referral, link its official site plainly.
+> - **`/{model}-for-{industry}` vertical page** → AUTO-covered at build; do NOTHING (already monetized).
+> - **Genuine non-fit** — a pure conversion / nav / pricing page, a conceptual / definitional / news / opinion / policy-or-compliance piece with no real "run it or use it" need, or an image / video / robotics model with no product or tool to recommend → log "no monetization fit" and move on. When a page IS genuinely about running/using a model or tool and you are only unsure of the classification (hardware vs how-to-use), lean to adding the how-to-use section; but if you are unsure whether an affiliate section belongs on the page AT ALL, that is a no-fit — do not force it.
+>
+> `git add src/utils/affiliateInject.ts` explicitly. Before hand-off confirm the model is genuinely open-weights, the `profileKey` matches the size the page states, and (post-build) the live section carries `rel="sponsored nofollow"` + the bottom disclosure — any miss → remove the entry before push. The routine's existing build gate + 200-verify catch a broken injection.
+> **Engine reference (layer3labs only):** catalog + profiles `data/affiliate/catalog.ts`; referral codes/constants `src/utils/affiliate.ts`; section builder `src/utils/affiliateSection.ts`; injection map + guardrails `src/utils/affiliateInject.ts`; detector `pageHasAffiliateLinks` in `src/utils/affiliate.ts`; auto-link registry `ENTITY_LINKS` in `src/utils/sectionContent.tsx`. Full design: memory `inline-affiliate-section-engine`.
+
+<!-- reader-survey-evidence-v1 -->
+## Required internal survey evidence check — before assembling closed facts
+
+For Layer3Labs, read the durable internal reader-survey log on **every Phase 3 run**, including existing-page enrichments. Do not rely solely on a checked-in registry: recently completed surveys may not have been exported yet.
+
+Use inherited environment variables on cloud/hosted runs. For local runs only, add `--env-file=.env` and/or `--env-file=.env.local` before `--import` when those files exist; never require missing local files.
+
+```bash
+node --import tsx scripts/reader-surveys/research.mts catalog --out <RUN>/evidence/<slug>/survey-catalog.json
+node --import tsx scripts/reader-surveys/research.mts facts --route /guides/ACTUAL-TARGET-SLUG
+```
+
+Use the actual target route in the second command, including non-guide routes such as `/ai-model-pricing`. Save the output of `facts` in the same page evidence directory. Read both catalog fields: `campaigns` discovers configured and historical surveys, their questions/source routes, collection progress and version mismatches; `completedSurveys` contains only intact final snapshots eligible for independent review. A collecting or not-recorded campaign is discovery context, never a finding, and its progress count must not enter the writer's facts. A closed campaign without an intact result requires investigation, not a substitute result.
+
+Consider all discovered survey topics against the approved reader question, cohort and dates; do not search only the current page's poll or limit reuse to `candidateRoutes`. Those routes are suggestions. Record survey IDs considered, selected/rejected findings, relevance rationale and exact snapshot/approval artifacts in the existing evidence packet. No intact completed results means there are no final findings to reuse yet, not zero demand or no surveys on the site. Continue with other supported sources without waiting for responses. A connection failure is unavailable evidence: resolve/retry it and report it honestly; never claim the log was checked successfully.
+
+For a relevant completed survey not already approved for this route, export its private evidence using `research.mts export --campaign <id> --include-responses --out <private-path>`, then have the independent reviewer inspect response quality, counts/denominator, exact question/options, timing, limitations and target-page relevance. Older-version evidence remains in the catalog; use its exact wording and snapshot, never reinterpret it as the current campaign. If the old campaign is no longer in active definitions, use the catalog result and privately retrieve its full stored state by ID for the reviewer rather than dropping it silently.
+
+Only reviewed, route-approved snapshots may enter the writer's CLOSED FACT LIST. Use the existing `research.mts approve --review <independent-artifact>` step and `facts --route <target>` to supply verified source IDs, field dates, counts, scope and limitations. Any relevant page may reuse a finding after its own relevance review; initial candidate routes are suggestions, not an allowlist. New findings still follow Phase 3 generation and independent Phase 4 review. Surveys are voluntary self-reports, never product tests, representative samples or proof of causation. Preserve professional/topic exclusions and sufficient existing verdicts. Keep private answers/paths and production labels out of reader-facing copy.
+
+Treat these reader results as one original-data source alongside anonymous client/fleet experience, internal modeling, actual executed tasks and external primary research. Use as many relevant sources as needed; a survey is neither compulsory nor sufficient by itself. Keep survey findings visibly attributed to our opt-in reader poll with the actual question, sample, field dates and material limitations near the finding. Do not invent respondents, merge campaign versions, infer an unasked demographic/model/hardware attribute, or claim that a reported recovery proves a fix caused it. Carry the finding's `reader-self-report` basis into the writer's facts and provenance; it does not enable a TESTED label.
+<!-- /reader-survey-evidence-v1 -->
+
+**Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.
+
+<!-- mindmap-execution-v1 -->
+Before writing, follow `_mindmap-execution.md`: retrieve approved cases and applicable survey records, execute relevant supported analysis and save current evidence. Use a justified source-based branch when numerical work adds nothing or cannot be defended. Pass the manifest/review/packet flags to every Mindmap writer call.
+<!-- /mindmap-execution-v1 -->
+
+[Source: .claude/commands/mindmap-pass/phase-5-body.md]
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 6. Use its exact text under this source/section context.]
+
+# Phase 5 — Body text updates
+
+<!-- chart-obligation: p5-enrichment-placement-and-monetization -->
+**Where an `update existing body text` row carries `reader_question` / `answer` / `answer_placement` (cols 10–12), the added section IS that answer and goes in the named slot** — section 1 or 2, ahead of the page's existing scope/definition material, preserving unrelated content and bumping the rendered "Last updated" date + `dateModified`. Any addition longer than one sentence uses `content_gen.py section` with closed facts + `.meta.json`. Where the inline affiliate engine (`src/utils/affiliateInject.ts` + `data/affiliate/catalog.ts`) exists, plan natural-fit-only monetization (never force an off-intent block, double-monetize, or fabricate referral URLs).
+<!-- /chart-obligation -->
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 16. Use its exact text under this source/section context.]
+
+
+**Where an `update existing body text` row carries `reader_question` / `answer` / `answer_placement` (cols 10–12), the added section IS that answer and goes in the named slot** — section 1 or 2, ahead of the page's existing scope/definition material, preserving unrelated content and bumping the rendered "Last updated" date + `dateModified`. Any addition longer than one sentence uses `content_gen.py section` with closed facts + `.meta.json`. Where the inline affiliate engine (`src/utils/affiliateInject.ts` + `data/affiliate/catalog.ts`) exists, plan natural-fit-only monetization (never force an off-intent block, double-monetize, or fabricate referral URLs).
+
+<!-- intent-takeaway-v1 -->
+**Intent-based takeaway:** Read `_decision-evidence.md` in the active project's `.claude/commands/`, especially “Close with a takeaway that answers the page's intent.” Pass the planned conclusion, applicable reader/task, actual evidence basis and decision-changing condition into the existing writer brief. Reuse a sufficient

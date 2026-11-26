@@ -1,0 +1,480 @@
+{
+  "version": 1,
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "xtrends-modernwallet-2026-11-26",
+  "producer": "writer-sonnet-1",
+  "routes": [
+    "/guides/elon-musk-spacex-share-for-kids/",
+    "/guides/allstate-outage-coverage-payments-claims/",
+    "/compare/new-car-vs-used-car/",
+    "/compare/auto-loan-vs-lease/"
+  ],
+  "nextAction": "Independently audit captured rendered Mindmap routes against primary sources and editorial standards.",
+  "candidates": [
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/0341ce1dd89c175acea87777d8e6dd91ef4ac2e0c9f433e347210066d0307090/approval-manifest.json",
+      "sha256": "0341ce1dd89c175acea87777d8e6dd91ef4ac2e0c9f433e347210066d0307090",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/approval-manifest.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/e295f06b7b3e8a97c3c92dddf223d0784609f034bea05d7be5ef2a3c8c5f9e29/2026-11-26-xtrends.md",
+      "sha256": "e295f06b7b3e8a97c3c92dddf223d0784609f034bea05d7be5ef2a3c8c5f9e29",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/2730ff7b009ac9032282dcc6ba44ef8c03e4a55d3afbf80bc7e37a6d05f4d206/preview-snapshot.json",
+      "sha256": "2730ff7b009ac9032282dcc6ba44ef8c03e4a55d3afbf80bc7e37a6d05f4d206",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/audit-round2/preview-snapshot.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/2e19e704dcf78efaaf5e519a1eed840190f5789fa17910f17cc1469daa32cc04/readiness.md",
+      "sha256": "2e19e704dcf78efaaf5e519a1eed840190f5789fa17910f17cc1469daa32cc04",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/ef071b456d6a57869775950297a62a7b47c3200c130868b34b148fc0121a7999/chart-review.json",
+      "sha256": "ef071b456d6a57869775950297a62a7b47c3200c130868b34b148fc0121a7999",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/68b6d030cfc6a6bdcc88d9b46e4a09e36d3887fd8a49ebe47e383307018ddff0/request-brief.txt",
+      "sha256": "68b6d030cfc6a6bdcc88d9b46e4a09e36d3887fd8a49ebe47e383307018ddff0",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/request-brief.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/73e8804774667ebfe83d9a99da896aa19db42a56617cd110fa5bd5024e4a5b10/2026-11-26.md",
+      "sha256": "73e8804774667ebfe83d9a99da896aa19db42a56617cd110fa5bd5024e4a5b10",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/2026-11-26.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/61ee00b08ce7f351379b9fba8ca24bc19edf6b53458c0a0392064c8786a7d6cc/coverage-lookup.txt",
+      "sha256": "61ee00b08ce7f351379b9fba8ca24bc19edf6b53458c0a0392064c8786a7d6cc",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/763f33aba89fb57310d061168bee298ab13cd0f595a0d811170896731d958c6b/keyword-volumes.json",
+      "sha256": "763f33aba89fb57310d061168bee298ab13cd0f595a0d811170896731d958c6b",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/keyword-volumes.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/733e1efc9ed6ace8f0e697470a7fc607beed476d7d3e05a33cd9aa8547c807ce/serp.json",
+      "sha256": "733e1efc9ed6ace8f0e697470a7fc607beed476d7d3e05a33cd9aa8547c807ce",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/serp.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/0b5758b7496adccfdbd9e3bc6213ac120c963662b6929a431eed47c49c1ca490/ac-allstate.csv",
+      "sha256": "0b5758b7496adccfdbd9e3bc6213ac120c963662b6929a431eed47c49c1ca490",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/ac-allstate.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/f84e1fe7ddf570108b9b3c850ef5ea11dfee45a11c34873c58e2d08f9a1db55e/ac-spacex.csv",
+      "sha256": "f84e1fe7ddf570108b9b3c850ef5ea11dfee45a11c34873c58e2d08f9a1db55e",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/ac-spacex.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/078827914d69bbb461bbbc59c65dae165991e454bf0191677d50559f60921d5b/ca-doi-auto-guide.txt",
+      "sha256": "078827914d69bbb461bbbc59c65dae165991e454bf0191677d50559f60921d5b",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/ca-doi-auto-guide.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/30e9d8f1d3fd9d1e94a610b4118b04fd70725534a184c4840a38b5385b9fa820/cnbc-spacex-trump-account.txt",
+      "sha256": "30e9d8f1d3fd9d1e94a610b4118b04fd70725534a184c4840a38b5385b9fa820",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/cnbc-spacex-trump-account.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/42f8c4207a2c0ae6fd7b444dfccf1f8f2ff091239b720651f2c978441d157155/federal-register-td10056-blocked.txt",
+      "sha256": "42f8c4207a2c0ae6fd7b444dfccf1f8f2ff091239b720651f2c978441d157155",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/federal-register-td10056-blocked.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/bbe19370f7b296a73430c720d85af03da0407eea1810f30d555b4ddaa74e66b3/naic-compendium-compulsory-auto.txt",
+      "sha256": "bbe19370f7b296a73430c720d85af03da0407eea1810f30d555b4ddaa74e66b3",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/naic-compendium-compulsory-auto.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/d644a69dbf557fedfc790badea4d74b7266feccbfba92e46f92b8689fa109995/pymnts-allstate-outage.txt",
+      "sha256": "d644a69dbf557fedfc790badea4d74b7266feccbfba92e46f92b8689fa109995",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/pymnts-allstate-outage.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/a8d521cf5152655a6c535991ce8121c6c496e99806406f2330ca995aab84e938/spacex-primary-unavailable.txt",
+      "sha256": "a8d521cf5152655a6c535991ce8121c6c496e99806406f2330ca995aab84e938",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/spacex-primary-unavailable.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/a2433612c807f9d443a95370683d4aff48d1a4c9d4f39df8a8e3fb25ee8516d5/techcrunch-allstate-outage.txt",
+      "sha256": "a2433612c807f9d443a95370683d4aff48d1a4c9d4f39df8a8e3fb25ee8516d5",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/techcrunch-allstate-outage.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/4257bf787c52aaa857c27049c57b28d546da752586e95bde0fabb80df7a69270/trumpaccounts-gov.txt",
+      "sha256": "4257bf787c52aaa857c27049c57b28d546da752586e95bde0fabb80df7a69270",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/trumpaccounts-gov.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/ab635e58a7775af11ad7719f3ccf0ea2b8f2177fdc3f200b2ade22c963203935/websearch-allstate-check.txt",
+      "sha256": "ab635e58a7775af11ad7719f3ccf0ea2b8f2177fdc3f200b2ade22c963203935",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/websearch-allstate-check.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/c54839a1759a290725b3d2ab57215599506a6ed4bf3e1021655569c2f19a135b/review.json",
+      "sha256": "c54839a1759a290725b3d2ab57215599506a6ed4bf3e1021655569c2f19a135b",
+      "checkedAt": "2026-11-26T17:26:04.486772+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/audit/review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/2e19e704dcf78efaaf5e519a1eed840190f5789fa17910f17cc1469daa32cc04/readiness.md",
+      "sha256": "2e19e704dcf78efaaf5e519a1eed840190f5789fa17910f17cc1469daa32cc04",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/readiness.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/ef071b456d6a57869775950297a62a7b47c3200c130868b34b148fc0121a7999/chart-review.json",
+      "sha256": "ef071b456d6a57869775950297a62a7b47c3200c130868b34b148fc0121a7999",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/chart-review.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/68b6d030cfc6a6bdcc88d9b46e4a09e36d3887fd8a49ebe47e383307018ddff0/request-brief.txt",
+      "sha256": "68b6d030cfc6a6bdcc88d9b46e4a09e36d3887fd8a49ebe47e383307018ddff0",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/request-brief.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/73e8804774667ebfe83d9a99da896aa19db42a56617cd110fa5bd5024e4a5b10/2026-11-26.md",
+      "sha256": "73e8804774667ebfe83d9a99da896aa19db42a56617cd110fa5bd5024e4a5b10",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/2026-11-26.md"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/61ee00b08ce7f351379b9fba8ca24bc19edf6b53458c0a0392064c8786a7d6cc/coverage-lookup.txt",
+      "sha256": "61ee00b08ce7f351379b9fba8ca24bc19edf6b53458c0a0392064c8786a7d6cc",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/763f33aba89fb57310d061168bee298ab13cd0f595a0d811170896731d958c6b/keyword-volumes.json",
+      "sha256": "763f33aba89fb57310d061168bee298ab13cd0f595a0d811170896731d958c6b",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/keyword-volumes.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/733e1efc9ed6ace8f0e697470a7fc607beed476d7d3e05a33cd9aa8547c807ce/serp.json",
+      "sha256": "733e1efc9ed6ace8f0e697470a7fc607beed476d7d3e05a33cd9aa8547c807ce",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/serp.json"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/0b5758b7496adccfdbd9e3bc6213ac120c963662b6929a431eed47c49c1ca490/ac-allstate.csv",
+      "sha256": "0b5758b7496adccfdbd9e3bc6213ac120c963662b6929a431eed47c49c1ca490",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/ac-allstate.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/f84e1fe7ddf570108b9b3c850ef5ea11dfee45a11c34873c58e2d08f9a1db55e/ac-spacex.csv",
+      "sha256": "f84e1fe7ddf570108b9b3c850ef5ea11dfee45a11c34873c58e2d08f9a1db55e",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/ac-spacex.csv"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/078827914d69bbb461bbbc59c65dae165991e454bf0191677d50559f60921d5b/ca-doi-auto-guide.txt",
+      "sha256": "078827914d69bbb461bbbc59c65dae165991e454bf0191677d50559f60921d5b",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/ca-doi-auto-guide.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/30e9d8f1d3fd9d1e94a610b4118b04fd70725534a184c4840a38b5385b9fa820/cnbc-spacex-trump-account.txt",
+      "sha256": "30e9d8f1d3fd9d1e94a610b4118b04fd70725534a184c4840a38b5385b9fa820",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/cnbc-spacex-trump-account.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/42f8c4207a2c0ae6fd7b444dfccf1f8f2ff091239b720651f2c978441d157155/federal-register-td10056-blocked.txt",
+      "sha256": "42f8c4207a2c0ae6fd7b444dfccf1f8f2ff091239b720651f2c978441d157155",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/federal-register-td10056-blocked.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/bbe19370f7b296a73430c720d85af03da0407eea1810f30d555b4ddaa74e66b3/naic-compendium-compulsory-auto.txt",
+      "sha256": "bbe19370f7b296a73430c720d85af03da0407eea1810f30d555b4ddaa74e66b3",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/naic-compendium-compulsory-auto.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/d644a69dbf557fedfc790badea4d74b7266feccbfba92e46f92b8689fa109995/pymnts-allstate-outage.txt",
+      "sha256": "d644a69dbf557fedfc790badea4d74b7266feccbfba92e46f92b8689fa109995",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/pymnts-allstate-outage.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/a8d521cf5152655a6c535991ce8121c6c496e99806406f2330ca995aab84e938/spacex-primary-unavailable.txt",
+      "sha256": "a8d521cf5152655a6c535991ce8121c6c496e99806406f2330ca995aab84e938",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/spacex-primary-unavailable.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/a2433612c807f9d443a95370683d4aff48d1a4c9d4f39df8a8e3fb25ee8516d5/techcrunch-allstate-outage.txt",
+      "sha256": "a2433612c807f9d443a95370683d4aff48d1a4c9d4f39df8a8e3fb25ee8516d5",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/techcrunch-allstate-outage.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/4257bf787c52aaa857c27049c57b28d546da752586e95bde0fabb80df7a69270/trumpaccounts-gov.txt",
+      "sha256": "4257bf787c52aaa857c27049c57b28d546da752586e95bde0fabb80df7a69270",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/trumpaccounts-gov.txt"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/ab635e58a7775af11ad7719f3ccf0ea2b8f2177fdc3f200b2ade22c963203935/websearch-allstate-check.txt",
+      "sha256": "ab635e58a7775af11ad7719f3ccf0ea2b8f2177fdc3f200b2ade22c963203935",
+      "checkedAt": "2026-11-26T17:29:20.108814+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/research/sources/websearch-allstate-check.txt"
+    }
+  ],
+  "findings": [
+    {
+      "id": "SX-1",
+      "status": "open",
+      "evidence": "Replace with: \"Earlier reporting and summaries of the Treasury temporary regulations (T.D. 10056) describe stock gifts as routed through eligible charities as general contributions, but we have not read the regulation text and SpaceX has not said which route it will use.\" Reword the Takeaway trigger to \"or Treasury or SpaceX publish rules that differ from the CNBC-reported sale limit.\" Keep the Federal Register source line only as \"not independently reviewed\"."
+    },
+    {
+      "id": "SX-2",
+      "status": "open",
+      "evidence": "Rewrite sentence 1 as \"In July 2026, The Next Web reported that SpaceX President Gwynne Shotwell and her husband pledged one SpaceX share each to about 2 million children; CNBC says recipients are expected to receive those shares in December, and SpaceX's November 25 release does not tie that gift to Trump Accounts.\" In the \"How Trump Accounts Became Part\" section replace \"Trump Accounts already held an account for nearly every American child under 18.\" with \"Treasury auto-enrolled eligible children under 18 by October 1, 2026, so Trump Accounts are an existing channel.\""
+    },
+    {
+      "id": "SX-3",
+      "status": "open",
+      "evidence": "Change to \"you should claim your child's Trump Account to unlock family or employer contributions and, if your child was born from 2025 through 2028, the $1,000 seed\". Change the last sentence to \"claim the account (and the $1,000 seed if your child is eligible)\"."
+    },
+    {
+      "id": "SX-4",
+      "status": "open",
+      "evidence": "Replace with: \"If you want your child to hold SpaceX stock now, a custodial brokerage account is the route, but one stock can swing widely (the 52-week range above is $104.83 to $225.64), so keep it a small slice next to a broad fund.\" Link the existing concentrated-stock-position guide used on the sister page."
+    },
+    {
+      "id": "SX-5",
+      "status": "open",
+      "evidence": "Use \"none of the sources we reviewed (the SpaceX release, CNBC and trumpaccounts.gov as of November 26, 2026) state...\" in the H2-1 body, the FAQ answer and the scam section; same for \"The SpaceX release also mentions no transfer restrictions\"."
+    },
+    {
+      "id": "SX-6",
+      "status": "open",
+      "evidence": "Add \"Historical figure, not today's value\" in the same sentence, or cut the $10.5 billion total; attribute the master-trust line to \"Treasury regulation summaries\" instead of SB-0642, and drop the employer sub-cap and lock-date detail or source them to trumpaccounts.gov."
+    },
+    {
+      "id": "SX-7",
+      "status": "open",
+      "evidence": "Title: \"SpaceX Share and Trump Accounts: What Is Confirmed\" (47 chars; extend to 50+ with \"So Far\"). FAQ first sentence: \"Not yet confirmed for every child: SpaceX says one share goes to every currently active Trump Account, and active is undefined.\""
+    },
+    {
+      "id": "R1-1-checks-scopeAndExclusions",
+      "status": "open",
+      "evidence": "Manifest exclusions say claims depending on T.D. 10056 or X posts are attributed to CNBC or omitted. The T.D. 10056 paragraph, the Takeaway trigger \"publishes regulatory text under Treasury Decision 10056\", and the Shotwell-to-Trump-Accounts framing break that scope. December handling and \"active\" are correct."
+    },
+    {
+      "id": "R1-1-checks-sourceSupport",
+      "status": "open",
+      "evidence": "SpaceX and CNBC claims trace to ir.spacex.com release and CNBC summaries on disk. Unsupported: T.D. 10056 paragraph (blocked fetch, packet says not retrieved, manifest exclusion requires CNBC attribution or omission) and the Shotwell/Trump Accounts link. See SX-1, SX-2."
+    },
+    {
+      "id": "R1-1-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Opening answer, H2-1, FAQ 2 and the Takeaway agree that no source requires claiming for the SpaceX share. The page contradicts itself on Shotwell: the IR release (saved reviewer note) does not tie her gift to Trump Accounts, yet \"The Gwynne Shotwell Precedent\" says a pledge \"directed to Trump Accounts\". See SX-2, SX-3."
+    },
+    {
+      "id": "R1-1-factualReview-consequentialClaims",
+      "status": "open",
+      "evidence": "Tested the central claim against its strongest counterexample: if SpaceX delivers via the 501(c)(3) general-contribution route, the claim question is moot; the page concedes this (\"whether it will use this mechanism\") yet also asserts that route as binding law. The Takeaway claims and brokerage directive lack their material conditions (SX-3, SX-4)."
+    },
+    {
+      "id": "R1-1-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "The valuation section anchors on the October 16 close of $146.03 on a November 26 page, while CNBC (Nov 26) notes share-price pressure; the $10.5 billion total is a stale Oct-19 figure shown as \"What One SpaceX Share Is Worth\". Labeled historical, so advisory (SX-6). Contribution caps and lock-date details ($5,000, employer $2,500, January 1 of the year the child turns 18) are not in this run's saved sources."
+    },
+    {
+      "id": "R1-1-factualReview-primarySources",
+      "status": "open",
+      "evidence": "ir.spacex.com release now primary (F1 met) but the saved evidence is a WebFetch summary, not verbatim text, so absence claims (\"mentions no transfer restrictions\") rest on a summary; T.D. 10056 never read and CNBC/Treasury only summarized. Absence claims should read \"in the sources we reviewed\" (SX-5)."
+    },
+    {
+      "id": "R1-1-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Takeaway tells every reader to claim for the $1,000 seed without the eligibility condition (born 2025 to 2028, US citizen) and to open a custodial brokerage account with no single-stock concentration caveat even though the page shows a $104.83 to $225.64 52-week range. See SX-3, SX-4."
+    },
+    {
+      "id": "AL-1",
+      "status": "open",
+      "evidence": "Intro S1: \"Allstate told PYMNTS and TechCrunch on November 25, 2026 that customers whose payments are blocked by the outage will not lose coverage or be charged late fees.\" H2-1 S1: \"Allstate said, as reported by PYMNTS and TechCrunch on November 25, 2026, that customers whose payments are affected by the outage will not lose coverage or be charged late fees; that is a company statement, not a policy change.\" Meta description already conditional; keep."
+    },
+    {
+      "id": "AL-2",
+      "status": "open",
+      "evidence": "Replace with \"While Allstate told TechCrunch and PYMNTS that affected customers will not lose coverage or be charged late fees, a media-reported statement does not alter your written policy contract.\" Change FAQ \"Allstate announced through statements\" to \"Allstate told PYMNTS and TechCrunch\"."
+    },
+    {
+      "id": "AL-3",
+      "status": "open",
+      "evidence": "Replace with \"TechCrunch reported that local agency offices were fielding calls, so a local agent is a practical first call if the portal fails.\" In the table, change the Cannot pay premium row to \"Call a local agent to report the failure and ask how to pay or confirm your payment status\"."
+    },
+    {
+      "id": "AL-4",
+      "status": "open",
+      "evidence": "FAQ answer: \"California requires you to carry proof of insurance; the California Department of Insurance guide says it lists the insured vehicles, the insured person, the policy number and the dates coverage starts and ends. Lenders commonly ask for proof too, so ask your agent for it in writing; check your state motor vehicle agency for its rule.\" Body: replace \"illegal under state laws\" with \"In California, driving without proof of insurance can bring a ticket, and driving uninsured can bring license suspension or vehicle impoundment (California Department of Insurance guide).\" Cut the unsourced notification-window sentence or say \"check your policy for its newly-acquired-vehicle terms\"."
+    },
+    {
+      "id": "AL-5",
+      "status": "open",
+      "evidence": "Use \"written proof of insurance (an ID card or a binder if you are starting a new policy)\" and drop \"company broker\". Replace \"request physical or emailed confirmation of your updated binder\" with \"ask your agent to email proof of coverage for the new vehicle\"."
+    },
+    {
+      "id": "AL-6",
+      "status": "open",
+      "evidence": "Add a last body element after Sources: \"This guide is general information about reported company statements and state notice rules, not insurance, legal or financial advice. Confirm your coverage with Allstate or your state insurance department.\""
+    },
+    {
+      "id": "AL-7",
+      "status": "open",
+      "evidence": "Say \"Allstate stated that it continues...\"; change \"ensures you can dispute\" to \"helps you dispute\"; change \"even within the same neighborhood\" to \"even in the same area\"; add a teeup-exempt note (news-driven guide) in the run record."
+    },
+    {
+      "id": "R1-2-checks-scopeAndExclusions",
+      "status": "open",
+      "evidence": "F8 requires disclaimer at the bottom only; the page ends with Sources and relies on the site footer \"For educational purposes, not financial advice\", which does not cover insurance or legal guidance. Exclusions otherwise honored: no layoff claim, no premiums, no insurer comparison, no lawsuit. See AL-6."
+    },
+    {
+      "id": "R1-2-checks-sourceSupport",
+      "status": "open",
+      "evidence": "PYMNTS and TechCrunch summaries on disk support the company statement, outage scope since Nov 23, Roadside Assistance down Wed, no cause or timeline. CA 10-day notice, three cancellation reasons, MO 10 days and NJ 15 days all match saved CA DOI/NAIC text. Unsupported: \"most reliable\" local-agent claim, proof-of-insurance FAQ generalization, \"binder\" instructions. See AL-3, AL-4, AL-5."
+    },
+    {
+      "id": "R1-2-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Section 1, the opening paragraph and the table lead with an unconditional \"You will not lose coverage\", while later text says the statement is not a contract amendment and the Takeaway says statements \"confirm\" outcomes. The conditional framing and the headline answer disagree. See AL-1, AL-2."
+    },
+    {
+      "id": "R1-2-factualReview-consequentialClaims",
+      "status": "open",
+      "evidence": "Counterexample test: a customer whose statement-covered payment is later treated as late by automated billing, or whose state notice clock runs, is not protected by a press statement; the page says so deep in the text but leads with the opposite. See AL-1, AL-2."
+    },
+    {
+      "id": "R1-2-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Recommended actions (document attempts, get written confirmation, bind new policy before canceling) are sound, but \"local agents most reliable\", \"ask a company broker for binder documents\", and the \"attempt an offline phone payment\" step are not supported while PYMNTS reports phone systems down. See AL-3, AL-5."
+    },
+    {
+      "id": "NC-1",
+      "status": "open",
+      "evidence": "Optional: \"our guide to proof of insurance on a newly bought car during an Allstate outage\". Not required to publish."
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 1,
+    "reworks": 1
+  },
+  "siteId": "jht243/modernwallet",
+  "previous": {
+    "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/95a1cccc4948c366dca4b48b131b279ef09bfca5e0802cd56734e6792460b505/handoff-write-r2.json",
+    "sha256": "95a1cccc4948c366dca4b48b131b279ef09bfca5e0802cd56734e6792460b505",
+    "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/handoff-write-r2.json"
+  },
+  "snapshot": {
+    "path": "reports/mindmap-pass/2026-11-26-xtrends-run/blobs/2730ff7b009ac9032282dcc6ba44ef8c03e4a55d3afbf80bc7e37a6d05f4d206/preview-snapshot.json",
+    "sha256": "2730ff7b009ac9032282dcc6ba44ef8c03e4a55d3afbf80bc7e37a6d05f4d206",
+    "originPath": "reports/mindmap-pass/2026-11-26-xtrends-run/audit-round2/preview-snapshot.json"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "jobId": "xtrends-modernwallet-2026-11-26",
+  "reviewer": "mindmap-chart-reviewer",
+  "round": 1,
+  "manifestSha256": "f5056ecc614082a43ac05d2452fe16888ba91c782df2c038532822d40d4df6b4",
+  "manifestFileSha256": "0341ce1dd89c175acea87777d8e6dd91ef4ac2e0c9f433e347210066d0307090",
+  "readinessSha256": "2e19e704dcf78efaaf5e519a1eed840190f5789fa17910f17cc1469daa32cc04",
+  "verdict": "PASS",
+  "evidence": "Independent review round 1. Frozen intake reports/x-trends/2026-11-26.md sha 73e88047... matches manifest; 2 bullets -> A1/A2 (ENRICH existing route, exact slug confirmed in src/data/guides.ts and coverage-lookup.txt) and A3 (new route; coverage-lookup found no home; site has no insurance-company page; closest precedent chase-outage-fee-reversal guide shows outage-news-with-money-action guides fit the site). No candidate dropped. Duplicate check PASS (no collision; no AIO-defended route listed in defended-pages.json). Primary/reported sources read from disk: CNBC, PYMNTS, TechCrunch, trumpaccounts.gov, CA DOI (10-day written notice after due date: confirmed line 'must provide you with 10-day written notice after the payment due date'), NAIC chart (MO nonpayment at least 10 days, NJ 15 days: confirmed). Independent live check found a SpaceX primary release on ir.spacex.com (saved research/reviewer-spacex-ir-release.txt) that confirms 'every currently active Trump Account', Musk match, and that 'active', timing, claim requirement and sale limits are NOT stated; BUILD wrongly recorded ir.spacex.com as having no announcement. Risk profile: A3 HIGH confirmed (consequential insurance coverage/payment/claims actions, max 2 audits), A1 treat as HIGH; liabilityBlock not triggered; no professionalReviewRequired. Unsupported 'December transfer' claim: correctly excluded; CNBC ties December only to Shotwell's gift; intake wording must not be used. Five-year trustee line on the existing page (guides.ts L3987/L4085/L4183) is 'up to five years' while CNBC citing Treasury says generally cannot sell until the EARLIER of five years or end of the year the beneficiary turns 17; the manifest does not reconcile this and T.D. 10056 was never read. Testing labels: honest (none). Verdict FAIL for fixable preparation gaps F1-F8 (none duplicate-collision or liabilityBlock); WRITE and Phase 4 must apply them as guardrails.",
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "major",
+      "finding": "Primary SpaceX source missed: BUILD recorded ir.spacex.com as having no announcement, but a release 'SpaceX to Invest in the Next Generation of Americans' exists and ranks in the SERP top 10.",
+      "fix": "Cite the ir.spacex.com release (saved at research/reviewer-spacex-ir-release.txt) as the primary source for the commitment and Musk match; keep CNBC for June 2027 lockup, sale rule, December Shotwell timing. State that the release gives no definition of active, no date, no claim requirement.",
+      "status": "open"
+    },
+    {
+      "id": "F2",
+      "severity": "major",
+      "finding": "A1 section heading 'How to Claim Your Child's Trump Account for the SpaceX Share' and reader question imply claiming earns the share. No source says so (CNBC and SpaceX are silent; the existing page and readiness takeaway say claiming does not reserve it). Also title promise in A2 must not repeat this.",
+      "fix": "Use a neutral heading such as 'Do You Need to Claim a Trump Account to Get the SpaceX Share?' answering: no source says claiming is required or makes an account active; claim for other benefits ($1,000 seed, family/employer contributions) via the official app steps. Keep A2 metadata to the same promise.",
+      "status": "open"
+    },
+    {
+      "id": "F3",
+      "severity": "major",
+      "finding": "Inherited contradictions beyond opener/FAQs are not enumerated: 'Claiming ... does nothing for the SpaceX share' (3 places), 'nothing to claim'/'no official application' sections, scam section ('every message instructing you to claim a share right now is fraudulent'), FAQ 'Do I need to sign up', FAQ 'Will the SpaceX share go into my Trump Account? Nobody knows', 'Treasury has published nothing about Musk's share', 'As of October 19' framing, Shotwell 'delivery timing not stated' (CNBC: December expected), sources list.",
+      "fix": "WRITE must rewrite or date-qualify every one of these passages, keep the scam warning accurate (unofficial claim offers remain scams, official route is the Treasury app/email), and Phase 4 must audit the complete rendered page for residual stale statements.",
+      "status": "open"
+    },
+    {
+      "id": "F4",
+      "severity": "major",
+      "finding": "Five-year trustee line not reconciled. Existing page says the trustee may hold donated shares 'up to five years' (guides.ts L3987 this page, L4085 and L4183 in other guides). CNBC citing Treasury: families generally cannot sell until the earlier of five years or the end of the calendar year the beneficiary turns 17. T.D. 10056 text was never read (fetch blocked).",
+      "fix": "On the A1 page state the restriction with the CNBC wording and attribution (earlier of five years or end of the year the child turns 17); change 'up to five years' trustee wording on this page to match or say it is per T.D. 10056 as summarized by CNBC. Do not claim T.D. 10056 was verified. Record the two other guides (L4085, L4183) as inherited out-of-scope wording for a follow-up; do not edit them without chart approval.",
+      "status": "open"
+    },
+    {
+      "id": "F5",
+      "severity": "mechanical",
+      "finding": "NAIC source labeled 'Summer 2024' in manifest/readiness/outline, but the saved chart rows are dated (10/26) and the saved text carries no Summer 2024 label. CA DOI guide is a 2021-dated PDF (filename Auto-05122021).",
+      "fix": "Attribute as 'NAIC Compendium of State Laws, compulsory motor vehicle insurance chart (state entries dated Oct 2026)' and 'California Department of Insurance auto insurance guide (2021 edition)'; note rules may have changed and readers should check their state DOI.",
+      "status": "resolved"
+    },
+    {
+      "id": "F6",
+      "severity": "mechanical",
+      "finding": "TechCrunch reports the Allstate statement as access restricted 'for 48 hours' while the outage continued past that; the brief's 'will not lose coverage' is attributed but time scope is unclear.",
+      "fix": "State the no-lapse/no-late-fee statement as reported on Nov 25, say the reports do not say how long it applies, and tell readers to ask for written confirmation. Date-stamp the page and add a status caveat. Do not repeat the unconfirmed layoff report.",
+      "status": "resolved"
+    },
+    {
+      "id": "F7",
+      "severity": "minor",
+      "finding": "Inbound links from evergreen comparison pages (/compare/new-car-vs-used-car/, /compare/auto-loan-vs-lease/) to a time-sensitive outage page are weakly relevant for the second source and risk stale links.",
+      "fix": "Keep at most the new-car-vs-used-car placement with an anchor that does not name Allstate or imply an ongoing outage; treat the auto-loan-vs-lease link as optional and drop it if it reads forced. Relevance wins over the ~3-link target. Both source sections and calculator targets verified to exist.",
+      "status": "open"
+    },
+    {
+      "id": "F8",
+      "severity": "minor",
+      "finding": "Site fit: Allstate page is outside the site's current topic set (no insurance-company pages). Fit holds only as a car-ownership/money-decision guide (late fees, lapse, proof of coverage for a lender after a car purchase), like chase-outage-fee-reversal.",
+      "fix": "WRITE keeps the page as a money-action guide, not a status/news page; no insurer comparisons, premium figures, or rate claims; no first-person testing; disclaimer at the bottom only; takeaway as planned. Phase 0 exposure: indexed as a new route with low measured demand (20-30/mo) justified only by the fresh-trend rule.",
+      "status": "open"
+    }
+  ],
+  "resolvedFindingIds": [
+    "F5",
+    "F6"
+  ],
+  "requestCoverage": [
+    {
+      "requirementId": "REQ-1",
+      "status": "PASS",
+      "evidence": "Direction sound and sources support: claim steps (trumpaccounts.gov), 'active' undefined (CNBC + SpaceX IR release), December not supported, sale rule per CNBC. Gaps: A1 heading/reader question presuppose that claiming gets the share (no source says so; page's own takeaway says claiming does not reserve it), inherited contradictions across the page not enumerated (F2, F3), five-year/trustee reconciliation missing (F4), SpaceX primary release missed (F1).",
+      "priorStatus": "FAIL"
+    },
+    {
+      "requirementId": "REQ-2",
+      "status": "PASS",
+      "evidence": "A3 answer is a properly attributed company statement with a counterexample, state-variable notice rules verified against CA DOI and NAIC rows, no testing claim, HIGH profile, no layoff claim. Conditions carried as guardrails F5-F8 (edition labels, 48-hour nuance, evergreen link anchors, site-fit framing)."
+    }
+  ],
+  "atReviewLimit": true,
+  "priorVerdictRetained": "FAIL"
+}

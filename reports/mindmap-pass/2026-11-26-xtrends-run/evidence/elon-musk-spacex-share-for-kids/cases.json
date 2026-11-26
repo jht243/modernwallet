@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "query": "How do I claim the SpaceX share for my child's Trump Account? [PAA 2/6 on-topic (Did SpaceX donate; Is Musk giving every kid a share), 4/6 off-topic personal; ac 0 usable question completions]",
+  "searchQuery": "How do I claim the SpaceX share for my child's Trump Account?",
+  "contextQueries": [],
+  "publisher": "www.themodernwallet.com",
+  "bankSha256": "844e3387ef4c23f3bd1907dd3f62af8592ee2341f93d4842edd1c49687c262b4",
+  "experienceSha256": "f434b01c0528011425795dd52369f64413f6794de89191130c700c632f9ca90a",
+  "localExperience": "Read .claude/commands/_experience.md as internal permission context; its named client examples are private and superseded by the local anonymity rule.",
+  "experienceCatalog": {
+    "path": ".claude/commands/_experience-catalog.json",
+    "sha256": "c30a58024d315337815abe52a4065e486d1c0b95869c03ecd91cd934ad743ac6",
+    "recordsSearched": 95
+  },
+  "candidates": [
+    {
+      "record": {
+        "id": "example-057",
+        "publicDescription": "A gaming platform with a recorded history of 60,000 daily players",
+        "relationship": "Client projects",
+        "topic": "Gaming operations",
+        "workSummary": "Existing records describe a gaming platform supporting 60,000 daily players and seven custom games. This is a historical figure, not a current operating claim.",
+        "possibleUses": "Game-platform operation, player onboarding, rewards and engagement.",
+        "evidenceStatus": "Existing approved engagement or testimonial",
+        "limits": "Approved description and exact quotes only. Do not add new measurements, dates, performance results or a current operating scale.",
+        "outcomeLeads": [],
+        "privateTestimonialRecords": 0,
+        "verification": "Discovery material. Inspect the supporting record or establish the finding during this run before claiming an outcome. A possible use is not a fact."
+      },
+      "topicMatches": [
+        "claim"
+      ],
+      "matchSources": {
+        "question": [
+          "claim"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    },
+    {
+      "record": {
+        "id": "product-slimbooks",
+        "publicDescription": "SlimBooks",
+        "relationship": "Owned apps",
+        "topic": "Bookkeeping",
+        "workSummary": "A local bookkeeping application using bank/card integrations and AI categorization for profit-and-loss and Schedule C summaries.",
+        "possibleUses": "Account selection, transaction categorization and separating business from personal records.",
+        "evidenceStatus": "Local product project",
+        "limits": "Project files establish implementation experience; do not infer customers, adoption or performance. Private personal records and underlying case files remain excluded.",
+        "outcomeLeads": [],
+        "privateTestimonialRecords": 0,
+        "verification": "Discovery material. Inspect the supporting record or establish the finding during this run before claiming an outcome. A possible use is not a fact."
+      },
+      "topicMatches": [
+        "account"
+      ],
+      "matchSources": {
+        "question": [
+          "account"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    }
+  ],
+  "privateClientContext": [],
+  "instruction": "This catalog is one optional source, not the sole source or a source-count target. Combine as many relevant sources as needed: experience, internal modeling/calculations, actual survey records, primary documents, external research and executed tasks. Verify each claim, retain its own evidence basis and record actual sources in sourceArtifacts. No relevant case means use other supported sources, not force a case or stop. Never publish client identities or searchable testimonial text; preserve local exclusions and the terminal no-addition branch."
+}

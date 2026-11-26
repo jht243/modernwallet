@@ -1,0 +1,32 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "writer-sonnet-1",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/guides/elon-musk-spacex-share-for-kids/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/allstate-outage-coverage-payments-claims/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/compare/new-car-vs-used-car/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/compare/auto-loan-vs-lease/",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "xtrends-modernwallet-2026-11-26"
+}

@@ -1,0 +1,437 @@
+URL: https://content.naic.org/sites/default/files/model-law-chart-pa-30-compulsory-motor-vehicle-insurance.pdf
+Retrieved: 2026-11-26T16:52:55Z (PDF, pdftotext full; NAIC Compendium of State Laws, Summer 2024 per title)
+                                                                        State Insurance Charts
+
+                                                   COMPULSORY MOTOR VEHICLE INSURANCE
+
+The date following each state indicates the last time information for the state was reviewed/changed.
+                                        COMPULSORY                                     MINIMUM
+STATE             CITATION                                   FAULT SYSTEM                                      POLICY TERMINATION NOTIFICATION
+                                        OR OPTIONAL                                   COVERAGE
+AL         §§ 32-7-6(c); 32-7A-4;       Compulsory          Tort                     25/50/25           Certified insurance shall not be cancelled or terminated until
+(10/26)    32-7-24                                                                                      at least 10 days after a notice of cancellation or termination
+                                                                                                        shall be filed in the office of the director.
+AK         §§ 28.20.450; 28.22.011;     Compulsory          Tort                     50/100/25          Certified insurance shall not be cancelled or terminated until
+(10/26)    28.22.101                                                                                    at least 10 days after a notice of cancellation or termination
+                                                                                                        shall be filed in the office of the director.
+AZ         §§ 28-4009; 28-4135;         Compulsory          Tort                     25/50/15           Insurer shall notify department of all cancellations,
+(10/26)    28-4148                                                                                      nonrenewals or new issues within 7 days from the time of
+                                                                                                        processing the cancellation, nonrenewal or new issue.
+AR         §§ 27-22-104; 27-22-107      Compulsory          Tort                     25/50/25           Before the seventh day of each month, insurer shall provide a
+(10/26)                                                                                                 record of each policy that was in effect as of the previous
+                                                                                                        month. The department may assess a penalty against each
+                                                                                                        insurance company of up to $250 for each day the company
+                                                                                                        fails to comply.
+CA         Vehicle Code §§ 16020;       Compulsory          Tort                     30/60/15           A certificate or certificates shall certify, if the liability policy
+(10/26)    16430; 16433; 16451                                                                          therein cited has been cancelled, that the department shall be
+                                                                                                        notified in writing within 10 days after the cancellation of
+                                                                                                        insurance becomes final. This provision shall not extend
+                                                                                                        coverage beyond the date stated in the notice of cancellation.
+CO         §§ 10-4-615 to 10-4-620      Compulsory          Tort                     25/50/15           Insurers with policies in place for the preceding 6 months
+(10/26)                                                                                                 shall provide policy information every week for the
+                                                                                                        immediately preceding week. Insurers shall provide policy
+                                                                                                        information on all existing policies at least once every 6
+                                                                                                        months to the department of revenue.
+CT         §§ 14-112; 38a-335;          Compulsory          Tort                     25/50/25           Each month insurer shall notify the commissioner of motor
+(10/26)    38a-336;38a-343a;                                                         25/50 UM, UIM      vehicles of all policies cancelled during the preceding month
+           38a-371                                                                                      on a date specified by the commissioner.
+
+
+
+
+© 2026 National Association of Insurance Commissioners                                                                                                              PA-30-1
+                                                                      State Insurance Charts
+
+                                                  COMPULSORY MOTOR VEHICLE INSURANCE
+
+                                        COMPULSORY                                   MINIMUM
+STATE             CITATION                               FAULT SYSTEM                                       POLICY TERMINATION NOTIFICATION
+                                        OR OPTIONAL                                 COVERAGE
+DE         21 Del.C. §§ 2118; 2902;     Compulsory       No fault with a tort      25/50/10          Insurer may cancel policy for reasons set forth in tit. 21
+(10/26)    2906; 18 Del.C. §§ 3903 to                    add-on                    Liability,        § 2906 by giving 30 days’ notice to the secretary of
+           3909; 3920; Auto Bulletin                                               15/30 PIP,        transportation.
+           No. 25 (Revised)(#2)                                                    10 Property
+           (August 15, 2018)                                                       Damage,
+                                                                                   25/50/10 UM
+                                                                                   UIM
+DC         §§ 31-2403; 31-2404;         Compulsory       No fault optional;        25/50/10          Insurer shall furnish to the department notice of motor vehicle
+(10/26)    31-2406                                       insured must notify       25/50/5 UM        insurance cancellations within 30 days after the effective date
+                                                         insurer of election to                      of cancellation.
+                                                         receive PIP benefits      50/100/20
+                                                         with minimum limit        (eff. 1/1/2027)
+                                                         of $50,000.
+FL         §§ 324.021 to 324.022;       Compulsory       No fault                  PD 10 Optional    Insurer shall report the renewal, cancellation or nonrenewal of
+(10/26)    627.727 to 627.7275;                                                    BI 20/10 or       a policy to the first-named insured within 45 days from the
+           627.728; 627.733; 627.736                                               30 CSL            effective date of the renewal, cancellation or nonrenewal. No
+                                                                                   10 PIP            provision regarding reporting to the department.
+                                                                                   10 UM (may be
+                                                                                   rejected in
+                                                                                   writing by
+                                                                                   insured)
+GA         §§ 33-7-11; 33-34-4;         Compulsory       Tort                      25/50/25          Insurers must notify the Department of Public Safety when
+(10/26)    GA ADC 120-2-28-.10                                                                       cancelling minimum insurance coverage.
+
+
+
+
+© 2026 National Association of Insurance Commissioners                                                                                                       PA-30-2
+                                                                     State Insurance Charts
+
+                                                  COMPULSORY MOTOR VEHICLE INSURANCE
+
+                                       COMPULSORY                                   MINIMUM
+STATE             CITATION                               FAULT SYSTEM                                POLICY TERMINATION NOTIFICATION
+                                       OR OPTIONAL                                 COVERAGE
+HI         §§ 431:10C-103.5;           Compulsory        No fault except tort     40/80/20,   The insurer shall mail a written notice of prospective
+(10/26)    431:10C-104;                                  liability is not         10 PIP      cancellation or nonrenewal to the insured not fewer than 30
+           431:10C-301;                                  abolished as to the                  days prior to the effective date of the cancellation or
+           431:10C-306;                                  following: when                      nonrenewal. No provision regarding reporting to the
+           431:10C-112                                   death or serious                     department.
+                                                         injury occurs to the
+                                                         person in such a
+                                                         motor vehicle
+                                                         accident, or that PIP
+                                                         benefits incurred by
+                                                         such person equal or
+                                                         exceed $5,000.
+ID         §§ 49-117; 49-1229;         Compulsory        Tort                     25/50/15    Insurance shall not be cancelled or terminated until at least 10
+(10/26)    49-1213                                                                            days after a notice of cancellation or termination of the
+                                                                                              insurance shall be filed with the department.
+IL         215 ILCS 5/143a;            Compulsory        Tort                     25/50/20    Insurance carrier shall notify the secretary of state of any
+(10/26)    625 ILCS 5/7-203;                                                                  cancellation at least 15 days prior to cancellation of such
+           625 ILCS 5/7-601;                                                                  policy by submitting an electronic notice.
+           625 ILCS 5/7-318
+IN         §§ 9-25-4-1; 9-25-4-5;      Compulsory        Tort                     25/50/25    An insurance carrier must give 10 days written notice to the
+(10/26)    9-25-5-9                                                                           bureau before cancellation of a policy. The policy continues
+                                                                                              in full force and effect until the cancellation date specified in
+                                                                                              the notice or until the policy’s expiration.
+IA         §§ 321.1; 321.20B;          Compulsory        Tort                     20/40/15    Insurance shall not be cancelled or terminated until at least 10
+(10/26)    321A.1; 321A.21;                                                                   days after a notice of cancellation or termination of the
+           321A.22; 516A.1; 516A.2                                                            insurance so certified shall be filed in the office of the
+                                                                                              department.
+
+
+
+
+© 2026 National Association of Insurance Commissioners                                                                                                  PA-30-3
+                                                                       State Insurance Charts
+
+                                                  COMPULSORY MOTOR VEHICLE INSURANCE
+
+                                       COMPULSORY                                     MINIMUM
+STATE             CITATION                               FAULT SYSTEM                                          POLICY TERMINATION NOTIFICATION
+                                       OR OPTIONAL                                   COVERAGE
+KS         §§ 40-284; 40-2,121;        Compulsory        No fault except tort       25/50/25            No policy, or any renewal thereof, shall be terminated until at
+(10/26)    40-3104; 40-3107;                             remedies available         PIP (various        least 30 days after mailing a notice of termination, by certified
+           40-3117; 40-3118                              for certain injuries       expenses)           or registered mail, to the named insured at the latest address
+                                                         requiring medical          25/50 UM            filed with the insurer by or on behalf of the insured.
+                                                         treatment valued at
+                                                         $2,000 or more.
+KY         §§ 304.39-060;              Compulsory        No fault optional;         25/50/25 or         Within one calendar week following the end of its accounting
+(10/26)    304.39-085; 304.39-110                        insured may refuse         60 CSL              month, insurer shall send to department of vehicle regulation
+                                                         to consent to                                  a list of policies terminated by cancellation or nonrenewal.
+                                                         limitation of tort
+                                                         rights and liabilities.
+LA         §§ 32:861; 32:863.2;        Compulsory        Tort                       15/30/25            Security provider shall notify the secretary within 15 business
+(10/26)    32:900                                                                                       days of the issuance or termination of any policy.
+ME         29-A M.R.S.A. §§ 1601;      Compulsory        Tort                       50/100/25, and      A policy certified as proof of financial responsibility may not
+(10/26)    1605; 1606;                                                              2 medical costs.    be cancelled until at least 10 days after notice of cancellation
+           24-A M.R.S.A. § 2902                                                     .5 towing/storage   has been filed in the office of the secretary of state.
+MD         Transp. §§ 17-103 to 106    Compulsory        Tort except as to          30/60/15            Each insurer or other provider of required security
+(10/26)    Ins. §§ 19-505 to 509                         application of PIP         2.5 PIP             immediately shall notify the administration electronically of
+                                                         benefits.                  30/60/15 UM,        those terminations or other lapses that are final.
+                                                                                    UIM
+MA         M.G.L.A. 90 §§ 1A; 34a to   Compulsory        No fault                   25/50/30            Company shall give registrar of motor vehicles written notice
+(10/26)    34r                                                                      8 PIP               of intent not to issue, extend or renew policy on or before 45
+           M.G.LA. 175 §§ 113F;                                                     25/50 UM            days prior to termination date.
+           113L
+
+
+
+
+© 2026 National Association of Insurance Commissioners                                                                                                          PA-30-4
+                                                                    State Insurance Charts
+
+                                                  COMPULSORY MOTOR VEHICLE INSURANCE
+
+                                       COMPULSORY                                  MINIMUM
+STATE             CITATION                               FAULT SYSTEM                                      POLICY TERMINATION NOTIFICATION
+                                       OR OPTIONAL                                COVERAGE
+MI         M.C.L.A. 257.520;           Compulsory        No fault                250/500/10         Cancellation requires a written notice of cancellation mailed
+(10/26)    500.3009; 500.3101;                                                   default.           by certified mail, return receipt requested, to the insured at the
+           500.3105; 500.3107;                                                                      last address known to the insurer. The notice shall be mailed
+           500.3121; 500.3224                                                    Insured may        at least 20 days prior to the effective date of cancellation.
+                                                                                 elect reduced
+                                                                                 limits of
+                                                                                 50/100/10 by
+                                                                                 completing a
+                                                                                 form issued by
+                                                                                 the director and
+                                                                                 provided as
+                                                                                 required by
+                                                                                 section 3107e
+                                                                                 that meets the
+                                                                                 requirements of
+                                                                                 500.3009(7).
+                                                                                 PIP; Property
+                                                                                 Protection
+                                                                                 Insurance policy
+                                                                                 cannot exceed
+                                                                                 $1M.
+
+
+
+
+© 2026 National Association of Insurance Commissioners                                                                                                       PA-30-5
+                                                                    State Insurance Charts
+
+                                                  COMPULSORY MOTOR VEHICLE INSURANCE
+
+                                       COMPULSORY                                  MINIMUM
+STATE             CITATION                               FAULT SYSTEM                               POLICY TERMINATION NOTIFICATION
+                                       OR OPTIONAL                                COVERAGE
+MN         M.S.A. §§ 65B.17; 65B.44;   Compulsory        No fault                30/60/10    Requirement of 60 days advance notice of an insurer’s
+(10/26)    65B.48 to 65B.49                                                      40 PIP      intention to non-renew.
+                                                                                 25/50 UM
+MS         §§ 63-15-4; 63-15-43;       Compulsory        Tort                    25/50/25    The insurance shall not be cancelled or terminated until at
+(10/26)    63-15-45                                                                          least 10 days after a notice of cancellation or termination shall
+                                                                                             be placed in the mail or transmitted by electronic means to the
+                                                                                             department.
+MO         §§ 303.020; 303.025;        Compulsory        Tort                    25/50/25    On or before 30 days prior to the proposed effective date of
+(10/26)    303.030; 303.190;                                                     25/50 UM    the cancellation or nonrenewal, insurer must send written
+           379.118; 379.203                                                                  notice of its intended action to the named insured at his last
+                                                                                             known address. Where cancellation is for nonpayment of
+                                                                                             premium at least 10 days’ notice of cancellation shall be
+                                                                                             given.
+
+
+
+
+© 2026 National Association of Insurance Commissioners                                                                                               PA-30-6
+                                                                State Insurance Charts
+
+                                                  COMPULSORY MOTOR VEHICLE INSURANCE
+
+                                       COMPULSORY                              MINIMUM
+STATE             CITATION                               FAULT SYSTEM                               POLICY TERMINATION NOTIFICATION
+                                       OR OPTIONAL                            COVERAGE
+MT         §§ 61-6-103; 61-6-301;      Compulsory        Tort                25/50/20        General 45-day notice of non-renewal. The notice must
+(10/26)    61-6-135; 33-23-212;                                                              contain or be accompanied by a statement that upon written
+           33-23-214                                                                         request made not later than one month following the
+                                                                                             termination date of the policy of the named insured mailed or
+                                                                                             delivered to the insurer, the insurer will notify the insured in
+                                                                                             writing, within 15 days of the insured’s request, of the reason
+                                                                                             or reasons for the nonrenewal. See § 33-23-214(1).
+                                                                                             Cancellation generally requires 45 days’ notice; cancellation
+                                                                                             for nonpayment of premium requires at least 10 days’ notice.
+                                                                                             See § 33-23-212.
+                                                                                             For certified policies filed as proof of financial responsibility,
+                                                                                             coverage may not be canceled or terminated until at least 10
+                                                                                             days after notice is filed in the office of the department.
+                                                                                             See § 61-6-135.
+                                                                                             Regarding non-payment of premium, the insurance carrier
+                                                                                             shall not cancel or terminate a policy until at least 10 days
+                                                                                             after a notice of cancellation or termination of the insurance
+                                                                                             so certified shall be filed in the office of the department.
+NE         §§ 44-6408; 60-534;         Compulsory        Tort                25/50/25        A policy shall not be cancelled or terminated until at least 10
+(10/26)    60-544                                                            25/50 UM, UIM   days after a notice of cancellation or termination of the
+                                                                                             insurance so certified is mailed to the insured. If the insurance
+                                                                                             is not reinstated by the insured within 10 days, the insurance
+                                                                                             carrier shall provide notice to the department by filing a
+                                                                                             notice of the cancellation or termination in the office of the
+                                                                                             department.
+NV         §§ 485.185; 485.308         Compulsory        Tort                25/50/20        An insurance carrier must notify the department at least 10
+(10/26)                                                                                      days before the cancellation or termination of the policy.
+
+
+
+
+© 2026 National Association of Insurance Commissioners                                                                                                 PA-30-7
+                                                                        State Insurance Charts
+
+                                                   COMPULSORY MOTOR VEHICLE INSURANCE
+
+                                        COMPULSORY                                     MINIMUM
+STATE             CITATION                                  FAULT SYSTEM                                       POLICY TERMINATION NOTIFICATION
+                                        OR OPTIONAL                                   COVERAGE
+NH         §§ 264:15; 264:16; 264:20    Optional, but       Tort                     25/50/25           No provision
+(10/26)                                 director may                                 25/50 UM
+                                        require proof of                             1 medical costs
+                                        coverage upon
+                                        conviction for
+                                        certain offenses.
+                                        See § 264:2
+NJ         §§ 17:28-1.1; 17:29C-8;      Compulsory          No fault optional        Basic policy:      No notice of cancellation of a policy shall be effective unless
+(10/26)    39:6A-1 to 39:6A-4;                                                       5 PD, 15 PIP       mailed or delivered by the insurer to the named insured at
+           39:6A-14; 39:6A-8;                                                        10 BI optional,    least 20 days prior to the effective date of cancellation;
+           39:6A-8.1                                                                                    provided, however, that where cancellation is for nonpayment
+                                                                                     Standard policy:   of premium at least 15 days' notice of cancellation
+                                                                                     35/70/25           accompanied by the reason therefor shall be given.
+                                                                                     25 PIP, UM
+                                                                                     Optional UM
+                                                                                     limits available
+                                                                                     up to
+                                                                                     250/500/100
+                                                                                     (See § 17:28-
+                                                                                     1.1(b)).
+NM         §§ 66-5-205 to 66-5-205.1;   Compulsory          Tort                     25/50/10           Insurance carriers must report cancelled, terminated and
+(10/26)    66-5-208                                                                                     newly issued motor vehicle insurance policies each month to
+                                                                                                        the department.
+
+
+
+
+© 2026 National Association of Insurance Commissioners                                                                                                         PA-30-8
+                                                                    State Insurance Charts
+
+                                                  COMPULSORY MOTOR VEHICLE INSURANCE
+
+                                        COMPULSORY                                  MINIMUM
+STATE             CITATION                               FAULT SYSTEM                                       POLICY TERMINATION NOTIFICATION
+                                        OR OPTIONAL                                COVERAGE
+NY         Veh. & Traf. §§ 311; 312;    Compulsory       No fault                25/50/10            The insurer shall file notice of cancellation or other
+(10/26)    313; 345                                                              (50/100             termination with the commissioner no later than 30 days
+           Ins. Laws §§ 3420; 3425;                                              wrongful death)     following the effective date of the cancellation or termination.
+           5102; 5103                                                            50 PIP              A policy shall be terminated by cancellation by the insurer 20
+                                                                                 25/50 UM            days after mailing to the named insured, except where the
+                                                                                 (50/100             cancellation is for non-payment of premium in which case 15
+                                                                                 wrongful death)     days’ notice of cancellation by the insurer is sufficient.
+NC         §§ 20-279.1; 20-279.21;      Compulsory       Tort                    50/100/50           Insurer shall notify the division of termination within 20
+(10/26)    20-309 to 20-309.2; 20-314                                            50/100/25 UM,       business days if no replacement policy issued by same
+                                                                                 UIM                 insurer.
+                                                                                 UM and UIM
+                                                                                 motorist bodily
+                                                                                 injury coverage
+                                                                                 cannot exceed
+                                                                                 $1M per person
+                                                                                 and per accident.
+ND         §§ 26.1-40-15.2 to           Compulsory       No fault                25/50/25            Insurance carrier shall notify director of motor vehicles within
+(10/26)    26.1-40-15.3; 26.1-41-02;                                             25/50 UM, UIM       10 days of cancellation or termination of policy.
+           39-08-20; 39-16.1-01;
+           39-16.1-12; 39-16.1-11
+OH         §§ 4509.45; 4509.51;         Compulsory       Tort                    25/50/25            An insurance carrier shall not cancel or terminate a policy
+(10/26)    4509.57; 4509.46                                                                          until at least 10 days after a notice of cancellation or
+                                                                                                     termination is filed in the office of the registrar of motor
+                                                                                                     vehicles. If an expiration date is stated in the certificate
+                                                                                                     provided for in § 4509.46, no notice of expiration is required.
+
+
+
+
+© 2026 National Association of Insurance Commissioners                                                                                                       PA-30-9
+                                                                     State Insurance Charts
+
+                                                  COMPULSORY MOTOR VEHICLE INSURANCE
+
+                                       COMPULSORY                                   MINIMUM
+STATE             CITATION                               FAULT SYSTEM                                       POLICY TERMINATION NOTIFICATION
+                                       OR OPTIONAL                                 COVERAGE
+OK         47 Okl.St.Ann. §§ 7-324;    Compulsory        Tort                     25/50/25           No provision
+(10/26)    7-601
+OR         §§ 742.500; 742.502;        Compulsory        Tort                     25/50/20           Every insurer shall report to the department of transportation
+(10/26)    742.520; 742.524;                                                      15 PIP             within 30 days of the day that a person or the insurer cancels
+           742.564; 742.580;                                                      25/50 UM, UIM      or fails to renew such a policy and within 15 days of the day
+           806.010; 806.070; 806.080                                                                 that an insurer issues such a policy. Notice of cancellation
+                                                                                                     must be mailed to the named insured at least 30 days prior to
+                                                                                                     the effective date of cancellation and accompanied by a
+                                                                                                     statement of the reason or reasons for cancellation.
+                                                                                                     Cancellation for nonpayment of premium requires at least 10
+                                                                                                     days' notice of cancellation accompanied by the reason.
+PA         75 Pa.C.S.A. §§ 1702;       Compulsory        No-fault; insured        15/30/5            If insurer knows or has reason to believe that contract is for
+(10/26)    1705; 1711; 1786;                             may choose between       5 Medical          the purpose of providing proof of financial responsibility,
+           67 Pa. Code § 221.3                           limited tort and full    benefit            insurer shall notify the department not later than 10 days
+                                                         tort coverage.                              following the effective date of the cancellation. This
+                                                                                                     procedure is not required, however, if the insurance policy has
+                                                                                                     been in effect for more than 6 months from the date when the
+                                                                                                     policy was issued.
+PR         26 L.P.R.A. §§ 407; 8052    Compulsory        Tort                     4.5 per accident   No provision
+(10/26)    to 8053                                                                (never less than
+                                                                                  3.5)
+RI         §§ 27-7-2.1;                Compulsory        Tort                     25/50/25 or        A notice of cancellation or termination of the insurance so
+(10/26)    31-32-24; 31-32-25;                                                    75 CSL             certified shall be filed, by the insurance carrier, in the division
+           31-47-2; 31-47-3.1                                                     25/50 UM, UIM      of motor vehicles.
+                                                                                  (May be waived
+                                                                                  if minimum
+                                                                                  compulsory
+                                                                                  coverage
+                                                                                  selected.)
+
+
+
+
+© 2026 National Association of Insurance Commissioners                                                                                                        PA-30-10
+                                                                    State Insurance Charts
+
+                                                  COMPULSORY MOTOR VEHICLE INSURANCE
+
+                                        COMPULSORY                                 MINIMUM
+STATE             CITATION                               FAULT SYSTEM                                   POLICY TERMINATION NOTIFICATION
+                                        OR OPTIONAL                               COVERAGE
+SC         §§ 38-77-140; 38-77-150;     Compulsory       Tort                    25/50/25        The department of motor vehicles shall obtain information
+(10/26)    56-10-10; 56-10-20;                                                   25/50/25 UM     from insurers regarding cancellations of automobile insurance
+           56-10-40; 56-10-615                                                                   policies.
+SD         §§ 32-35-70; 32-35-80;       Compulsory       Tort                    25/50/25        A written notice indicating the date of cancellation or
+(10/26)    32-35-113; 58-11-9 to                                                 25/50 UM, UIM   termination of the insurance so certified shall be filed with the
+           58-11-9.4                                                                             department of public safety within 15 days of the date the
+                                                                                                 policy has been cancelled or terminated.
+TN         §§ 55-12-102; 55-12-123;     Compulsory       Tort                    25/50/25 or     When an insurance carrier has certified a motor vehicle
+(10/26)    55-12-139                                                             65 CSL          liability policy under § 55-12-120, insurance so certified shall
+                                                                                                 not be cancelled or terminated until at least 10 days after
+                                                                                                 notice of cancellation or termination of the insurance so
+                                                                                                 certified shall be filed with the commissioner.
+TX         Trans. §§ 601.051;           Compulsory       Tort                    30/60/25        An insurer may not be terminated before the sixth day after
+(10/26)    601.072; 601.083;                                                                     the date a notice of the termination is received by the
+           601.084; 601.085                                                                      department.
+UT         §§ 31A-22-302;               Compulsory       No fault                30/65/25 or     Before the seventh and twenty-first day of each calendar
+(10/26)    31A-22-304; 31A-22-305;                                               90 CSL, UM,     month, insurer shall provide to the department of public
+           31A-22-306; 31A-22-307;                                               UIM,            safety’s designated agent a record of each motor vehicle
+           31A-22-305.3;                                                         3 PIP           insurance policy in effect as of the previous submission.
+           31A-22-315; 41-12A-301
+VT         23 V.S.A. §§ 800; 810; 941   Compulsory       Tort                    25/50/10        Commissioner shall direct insurer to provide such
+(10/26)                                                                          50/100/10 UM,   information, reports and data as to reasonably identify the
+                                                                                 UIM             number and characteristics of uninsured motorists in the state.
+VI         20 V.I.C. §§ 701; 703; 705   Compulsory       Tort                    10/20/10        Cancellation by the insurer requires written notice of such
+(10/26)                                                                                          cancellation actually delivered or mailed by certified mail to
+                                                                                                 the insured not less than 15 days prior to the effective date of
+                                                                                                 cancellation.
+
+
+
+
+© 2026 National Association of Insurance Commissioners                                                                                                  PA-30-11
+                                                                                          State Insurance Charts
+
+                                                                COMPULSORY MOTOR VEHICLE INSURANCE
+
+                                                  COMPULSORY                                             MINIMUM
+ STATE                 CITATION                                             FAULT SYSTEM                                               POLICY TERMINATION NOTIFICATION
+                                                  OR OPTIONAL                                           COVERAGE
+VA            §§ 38.2-2206; 46.2-411;             Compulsory               Tort                        50/100/25              Insurer shall provide the department electronic updates within
+(10/26)       46.2-435; 46.2-472;                                                                      50/100/25 UM,          30 days of a policy change to liability for a vehicle registered
+              46.2-706.1                                                                               UIM                    in Virginia. Insurers that receive a request for
+                                                                                                                              acknowledgement of liability insurance from the
+                                                                                                                              commissioner shall respond electronically within 15 days.
+WA            §§ 46.29.090; 46.30.020;            Compulsory               Tort                        25/50/10               An insurance carrier shall not be cancelled or terminated until
+(10/26)       46.29.500                                                                                                       at least 10 days after a notice of cancellation or termination of
+                                                                                                                              the insurance shall be filed in the department.
+WV            §§ 17D-2A-3; 17D-2A-5;              Compulsory               Tort                        25/50/25               After the policy has been in effect for 60 days, no insurer may
+(10/26)       17D-4-2; 33-6A-1; 33-6-31                                                                25/50/25 UM,           issue or cause a notice of cancellation during the term of the
+                                                                                                       UIM                    policy except for one or more of the reasons specified in § 33-
+                                                                                                                              6A-1.
+WI            §§ 344.01; 344.29; 344.33           Compulsory               Tort                        25/50/10               When proof required, insurer must file in the office of the
+(10/26)       to 344.34; 632.32                                                                        25/50 UM               secretary notice of cancellation or termination of policy
+                                                                                                       50/100 UIM             certified as proof of financial responsibility at least 10 days
+                                                                                                                              before effective date.
+WY            §§ 31-4-103; 31-9-405;              Compulsory               Tort                        25/50/20               Insurance shall not be cancelled or terminated until at least 10
+(10/26)       31-9-406                                                                                                        days after a notice of cancellation, or termination of the
+                                                                                                                              insurance certified is filed with the division.
+
+This chart does not constitute a formal legal opinion by the NAIC staff on the provisions of state law and should not be relied upon as such. Every effort has been made to provide correct and accurate
+summaries to assist the reader in targeting useful information. For further details, the statutes and regulations cited should be consulted. The NAIC attempts to provide current information; however,
+readers should consult state law for additional adoptions.
+
+
+
+
+© 2026 National Association of Insurance Commissioners                                                                                                                                       PA-30-12
+

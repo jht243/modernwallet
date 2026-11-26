@@ -1,0 +1,67 @@
+{
+ "slug": "elon-musk-spacex-share-for-kids--trump-link",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 346,
+ "floor": 0,
+ "input_tokens": 19091,
+ "output_tokens": 637,
+ "thinking_tokens": 3442,
+ "cached_tokens": 16154,
+ "est_cost_usd": 0.0187,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 346,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    2,
+    0
+   ],
+   "applied": [
+    {
+     "id": "L5",
+     "quote": "The federal system also offered an established roster of American minors.",
+     "replacement": "Trump Accounts already held an account for nearly every American child under 18.",
+     "type": "unsupported",
+     "why": "Source does not state the system offered an established roster of minors."
+    },
+    {
+     "id": "L11",
+     "quote": "Recipients face statutory transfer limits on any shares they receive. ",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "Source attributes sale restrictions to Treasury rules rather than statutory transfer limits."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 354
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 6970
+  }
+ },
+ "seconds": 73.9,
+ "response_id": "52cIa9ueEpzgytMPu_absA0",
+ "generated_at": "2026-11-26T17:11:12+0000"
+}

@@ -1,0 +1,62 @@
+{
+ "slug": "elon-musk-spacex-share-for-kids--scam",
+ "schema": "none",
+ "kind": "section",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 167,
+ "floor": 0,
+ "input_tokens": 19046,
+ "output_tokens": 339,
+ "thinking_tokens": 2118,
+ "cached_tokens": 16154,
+ "est_cost_usd": 0.0126,
+ "guards": {
+  "repairs": [],
+  "flags": [
+   "auditor: section repeats existing page heading(s) ['## Watch for Free SpaceX Share Scams'] \u2014 merge, do not duplicate"
+  ],
+  "disallowed_urls_removed": [],
+  "words": 167,
+  "numbers_not_in_facts": [],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    1,
+    0
+   ],
+   "applied": [
+    {
+     "id": "L5",
+     "quote": "Legitimate administrative notices arrive only from no-reply@TrumpAccounts.Treasury.gov.",
+     "replacement": "Official Trump Account email comes only from no-reply@TrumpAccounts.Treasury.gov.",
+     "type": "unsupported",
+     "why": "SOURCE specifies official Trump Account email comes from this address, not all administrative notices."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 166
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 6969
+  }
+ },
+ "seconds": 48.9,
+ "response_id": "nmgIa7-mCPixuMYP87PpwAc",
+ "generated_at": "2026-11-26T17:13:50+0000"
+}

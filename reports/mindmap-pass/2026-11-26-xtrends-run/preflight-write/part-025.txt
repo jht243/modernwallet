@@ -1,0 +1,78 @@
+external URL prefix per line (the mechanical guard).
+
+## Step 2 — generate in parallel across the sub-batch (never run `content_gen.py fix` before Phase 4 audit)
+
+```bash
+python3 scripts/lib/content_gen.py write \
+  --system reports/mindmap-pass/<TODAY>/prompts/system.md \
+  --prompt reports/mindmap-pass/<TODAY>/prompts/<slug>.prompt.md \
+  --out    reports/mindmap-pass/<TODAY>/drafts/<slug>.json \
+  --slug   <slug> --floor <floor> --schema guide|comparison \
+  --allowed-urls reports/mindmap-pass/<TODAY>/prompts/allowed-urls.txt \
+  --facts  reports/mindmap-pass/<TODAY>/prompts/<slug>.prompt.md \
+  --mindmap-manifest <RUN>/approval-manifest.json --mindmap-review <RUN>/chart-review.json \
+  --analysis-packet <RUN>/evidence/<slug>/evidence.json
+```
+Issue the `content_gen.py write` calls for the active sub-batch's pages as **parallel foreground `Bash` tool calls in a single turn** (`timeout: 600000`). The generator applies the remediation ladder to the returned
+draft rather than rejecting it: it **repairs in place** (fence, slug, a missing `relatedLinks`,
+an off-list link stripped with the sentence kept, house style) and logs each repair in
+`meta.guards.repairs`; it **flags** for the Phase 4 auditor (`meta.guards.flags`) a missing content
+field, a stripped citation, a page under the depth floor, and untraceable numbers; it
+**regenerates only** a truncated page (after one retry at double the cap) or unparseable
+output (raw saved). **`meta.guards.flags` are advisory notes for the Phase 4 auditor — NEVER run `content_gen.py fix` during Phase 3 (`WRITE`) before Phase 4 `AUDIT` has run!**
+**`git add` every `<slug>.json.meta.json`** — it is the provenance record (model actually
+used, fallback fired or not, tokens incl. thinking, est. cost).
+
+## Step 3 — verify → template → lint → Phase 4
+
+1. **Topic-residue grep** across each draft for sibling topics that could have leaked from
+   the voice sample or other rows. Read the draft; reject on any claim outside the fact list.
+2. **Template**: `relatedLinks` (3 real siblings, `{title, description, href, category}`),
+   `publishedDate`/`updatedDate`, `inlineCta.buttonHref` = `"/ai-workflow-audit"` (never
+   another URL). Insert as an `_entries.push({...});` block immediately before
+   `export const newGuides` / `export const newComparisons` — the repo's append pattern.
+3. **Mechanical lint (Rung 0)** on every templated slug, fix until 0:
+   `npx tsx scripts/content_lint.mts --slug <slug> [...]`
+4. **Phase 4 audit is the gate** — hand the auditor the closed fact list AND the allowed URL
+   list with the drafts, so a real sourced fact is not flagged as fabrication. Verify any
+   "unsupported claim" finding against the source before acting on it. Fixes follow
+   `_remediation-ladder.md`, **per page**: Rung-0 mechanical edits in place. Claim and tell
+   findings (unsupported / inferred / contradicted claims, restatements, AI tells) go to
+   **Rung 1 FIX-IN-PLACE first**, never straight to a regeneration — save that page's findings
+   to `reports/mindmap-pass/<TODAY>/audit/<slug>.findings.txt` and run
+   `python3 scripts/lib/content_gen.py fix --draft <draft> --findings <findings.txt> --facts <row prompt> --floor <floor> --allowed-urls <allowed-urls.txt> --mindmap-manifest <RUN>/approval-manifest.json --mindmap-review <RUN>/chart-review.json --analysis-packet <RUN>/evidence/<slug>/evidence.json`,
+   then re-template and re-audit that page in full on the same bar. **A re-audit that still
+   finds claims or tells is another fix round (max 3 per page), not a failed attempt** — it
+   never counts toward the 2-regeneration cap and never drops a page by itself (2026-10-08:
+   both pages were dropped as "failed twice" after a single fix round). A **regeneration**
+   (Rung 2) is only for what `fix` lists as NOT FIXABLE IN PLACE, a page under its floor, an
+   auditor note that the floor can only be met by restating facts, or a page still failing
+   after 3 fix rounds: first EXPAND the closed fact list with sourced facts (always when
+   `meta.guards.fact_budget.thin`), then regenerate with a `# CORRECTIONS FROM THE PHASE 4
+   AUDIT` block appended to the row prompt, and run the fix loop again on the new draft —
+   never hand-write generated prose. Once all allowed audits are exhausted (`roundsRemaining: 0`), NEVER edit or regenerate that route again — automatically publish the exact final audited snapshot unless blocked by a narrow direct legal/physical-harm `liabilityBlock` (e.g. incorrect medical dosing; general medical pricing, locations, attribution wording, and SEO/style findings never block).
+
+`git add` your work; do NOT commit (Phase 9 commits).
+
+## Project specifics for this routine
+
+Match the discovered page template + schema builders so new pages carry the same JsonLd/SEO
+scaffolding. Tool rows → built per `phase-3c-tool-build.md`; other asset rows → complete real assets under `_mindmap-execution.md`. **Phase 7b (intro
+humanize) is SKIPPED for every page this phase generated** — they are exempt per the content
+standard's INTRO HUMANIZE section.
+
+## ▶ WHEN THIS PHASE IS DONE — AUTO-CONTINUE. DO NOT ASK THE USER.
+The moment this phase's reviewer gate PASSES, immediately begin the next phase in the SAME
+turn. Do NOT stop or print any question that waits for a human. The `/mindmap-pass` run has
+EXACTLY ONE human stop (the Phase 0 manifest approval); this phase is not it. Phase 8 is an
+informational summary that auto-continues to the Phase 9 push.
+
+## Monetization check (layer3labs only)
+
+> <!-- monetization-check-v3 -->
+> **‼️ MONETIZATION CHECK — run on every page you create or materially expand here (no-op unless the affiliate engine is installed).** Skip this entire check unless BOTH `src/utils/affiliateInject.ts` and `data/affiliate/catalog.ts` exist in this repo — they exist only where the inline-affiliate engine is installed (layer3labs); absent → do nothing, never create them. Where it IS installed, a fit page that ships un-monetized is a defect — but a section forced onto a page it does not naturally fit is an EQUAL defect. The affiliate section, its `sponsored nofollow` rels, the FTC disclosure, and the "Last updated" bump are ALL automatic — your ONLY action is adding ONE line to the `AFFILIATE_INJECTIONS` map in `src/utils/affiliateInject.ts` (a normal repo file; editing it is allowed — it is APPEND-only and never rewrites body prose). Dedup: skip if the slug is already in the map or the page already carries an affiliate / `sponsored` link — never double-monetize.
+> **Natural fit is the gate — never force it.** Add a section ONLY where it genuinely serves THIS article's reader and topic. If a "what you need to run / use this" block would read as bolted-on, off-topic, or salesy for the page's real intent, SKIP it and log no-fit — a relevant omission beats a forced link every time; reader trust and editorial fit outrank a marginal referral.
+> **Where the affiliate links come from — you NEVER type or invent one.** Every destination is centralized in code: the catalog `data/affiliate/catalog.ts` holds the products/tiers per profile, and the real referral codes live in `src/utils/affiliate.ts` — `amazonSearchLink()` appends the Amazon tag (`AMAZON_AFFILIATE_TAG`), plus first-party `CURSOR_ / RUNPOD_ / APOLLO_ / PINECONE_ / MURF_ / NUTSHELL_ / ELEVENLABS_ / …_REFERRAL_URL` constants. Common tools (Cursor, Apollo, Pinecone, Murf, Nutshell, …) are ALSO auto-linked from their plain name by `ENTITY_LINKS` in `src/utils/sectionContent.tsx`. So for hardware/how-to-use you only point a slug at a `profileKey`/`kind` and the catalog supplies the links; for a referral tool you just write its plain name. If a genuinely-fit product/tool is NOT wired: if `src/utils/affiliate.ts` already exports a constant for it, add a catalog entry using that constant; otherwise link its official site as PLAIN text and flag it as an affiliate-program candidate in your summary — NEVER fabricate a referral code (the catalog is the only source).
+> Classify the page (only after it clears the natural-fit gate above):
+> - **Open-weights model with a stated size** (weights downloadable; parameter / MoE count given on the page) → hardware entry `'<slug>': { modelName: '<Model>', profileKey: '<key>' }`. Pick `profileKey` from the size the PAGE states (never guess): `small-local` (≤~14B), `mid-large` (~15–150B), `frontier-moe` (>~150B / large MoE), or `general-spectrum` for a multi-model "best open-weights to run" page (skip general-spectrum if the page already has a "what runs where" section). Closed models (GPT, Claude, Gemini, Grok) are NEVER hardware-eligible; a model page with no stated size → skip.
+> - **Closed / hosted model, model-vs-model comparison, or coding roundup** → how-to-use entry. Guide: `'<slug>': { kind: 'how-to-use', subject: '<model or "these models">', models: [{ name, vendor }] }`. Comparison (keyed by the comparison slug): `'<slug>': { kind: 'how-to-use' }` — the two models auto-derive from `optionAName` / `optio

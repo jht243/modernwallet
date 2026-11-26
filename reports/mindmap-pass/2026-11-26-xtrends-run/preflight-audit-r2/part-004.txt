@@ -1,0 +1,89 @@
+},
+    {
+      "id": "R1-1-factualReview-currentDetails",
+      "status": "open",
+      "evidence": "The valuation section anchors on the October 16 close of $146.03 on a November 26 page, while CNBC (Nov 26) notes share-price pressure; the $10.5 billion total is a stale Oct-19 figure shown as \"What One SpaceX Share Is Worth\". Labeled historical, so advisory (SX-6). Contribution caps and lock-date details ($5,000, employer $2,500, January 1 of the year the child turns 18) are not in this run's saved sources."
+    },
+    {
+      "id": "R1-1-factualReview-primarySources",
+      "status": "open",
+      "evidence": "ir.spacex.com release now primary (F1 met) but the saved evidence is a WebFetch summary, not verbatim text, so absence claims (\"mentions no transfer restrictions\") rest on a summary; T.D. 10056 never read and CNBC/Treasury only summarized. Absence claims should read \"in the sources we reviewed\" (SX-5)."
+    },
+    {
+      "id": "R1-1-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Takeaway tells every reader to claim for the $1,000 seed without the eligibility condition (born 2025 to 2028, US citizen) and to open a custodial brokerage account with no single-stock concentration caveat even though the page shows a $104.83 to $225.64 52-week range. See SX-3, SX-4."
+    },
+    {
+      "id": "AL-1",
+      "status": "open",
+      "evidence": "Intro S1: \"Allstate told PYMNTS and TechCrunch on November 25, 2026 that customers whose payments are blocked by the outage will not lose coverage or be charged late fees.\" H2-1 S1: \"Allstate said, as reported by PYMNTS and TechCrunch on November 25, 2026, that customers whose payments are affected by the outage will not lose coverage or be charged late fees; that is a company statement, not a policy change.\" Meta description already conditional; keep."
+    },
+    {
+      "id": "AL-2",
+      "status": "open",
+      "evidence": "Replace with \"While Allstate told TechCrunch and PYMNTS that affected customers will not lose coverage or be charged late fees, a media-reported statement does not alter your written policy contract.\" Change FAQ \"Allstate announced through statements\" to \"Allstate told PYMNTS and TechCrunch\"."
+    },
+    {
+      "id": "AL-3",
+      "status": "open",
+      "evidence": "Replace with \"TechCrunch reported that local agency offices were fielding calls, so a local agent is a practical first call if the portal fails.\" In the table, change the Cannot pay premium row to \"Call a local agent to report the failure and ask how to pay or confirm your payment status\"."
+    },
+    {
+      "id": "AL-4",
+      "status": "open",
+      "evidence": "FAQ answer: \"California requires you to carry proof of insurance; the California Department of Insurance guide says it lists the insured vehicles, the insured person, the policy number and the dates coverage starts and ends. Lenders commonly ask for proof too, so ask your agent for it in writing; check your state motor vehicle agency for its rule.\" Body: replace \"illegal under state laws\" with \"In California, driving without proof of insurance can bring a ticket, and driving uninsured can bring license suspension or vehicle impoundment (California Department of Insurance guide).\" Cut the unsourced notification-window sentence or say \"check your policy for its newly-acquired-vehicle terms\"."
+    },
+    {
+      "id": "AL-5",
+      "status": "open",
+      "evidence": "Use \"written proof of insurance (an ID card or a binder if you are starting a new policy)\" and drop \"company broker\". Replace \"request physical or emailed confirmation of your updated binder\" with \"ask your agent to email proof of coverage for the new vehicle\"."
+    },
+    {
+      "id": "AL-6",
+      "status": "open",
+      "evidence": "Add a last body element after Sources: \"This guide is general information about reported company statements and state notice rules, not insurance, legal or financial advice. Confirm your coverage with Allstate or your state insurance department.\""
+    },
+    {
+      "id": "AL-7",
+      "status": "open",
+      "evidence": "Say \"Allstate stated that it continues...\"; change \"ensures you can dispute\" to \"helps you dispute\"; change \"even within the same neighborhood\" to \"even in the same area\"; add a teeup-exempt note (news-driven guide) in the run record."
+    },
+    {
+      "id": "R1-2-checks-scopeAndExclusions",
+      "status": "open",
+      "evidence": "F8 requires disclaimer at the bottom only; the page ends with Sources and relies on the site footer \"For educational purposes, not financial advice\", which does not cover insurance or legal guidance. Exclusions otherwise honored: no layoff claim, no premiums, no insurer comparison, no lawsuit. See AL-6."
+    },
+    {
+      "id": "R1-2-checks-sourceSupport",
+      "status": "open",
+      "evidence": "PYMNTS and TechCrunch summaries on disk support the company statement, outage scope since Nov 23, Roadside Assistance down Wed, no cause or timeline. CA 10-day notice, three cancellation reasons, MO 10 days and NJ 15 days all match saved CA DOI/NAIC text. Unsupported: \"most reliable\" local-agent claim, proof-of-insurance FAQ generalization, \"binder\" instructions. See AL-3, AL-4, AL-5."
+    },
+    {
+      "id": "R1-2-checks-wholePageCoherence",
+      "status": "open",
+      "evidence": "Section 1, the opening paragraph and the table lead with an unconditional \"You will not lose coverage\", while later text says the statement is not a contract amendment and the Takeaway says statements \"confirm\" outcomes. The conditional framing and the headline answer disagree. See AL-1, AL-2."
+    },
+    {
+      "id": "R1-2-factualReview-consequentialClaims",
+      "status": "open",
+      "evidence": "Counterexample test: a customer whose statement-covered payment is later treated as late by automated billing, or whose state notice clock runs, is not protected by a press statement; the page says so deep in the text but leads with the opposite. See AL-1, AL-2."
+    },
+    {
+      "id": "R1-2-factualReview-recommendationSupport",
+      "status": "open",
+      "evidence": "Recommended actions (document attempts, get written confirmation, bind new policy before canceling) are sound, but \"local agents most reliable\", \"ask a company broker for binder documents\", and the \"attempt an offline phone payment\" step are not supported while PYMNTS reports phone systems down. See AL-3, AL-5."
+    },
+    {
+      "id": "NC-1",
+      "status": "open",
+      "evidence": "Optional: \"our guide to proof of insurance on a newly bought car during an Allstate outage\". Not required to publish."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/mindmap-pass/2026-11-26-xtrends-run/handoff-audit-r2.json",
+    "sha256": "93ae91e7b2a564b98b5fd2e54d83586d8fdd55c74746ec473f1ac5da36fb7159"
+  }
+}
+

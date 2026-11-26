@@ -1,0 +1,7 @@
+URL: https://trumpaccounts.gov
+Retrieved: 2026-11-26T16:50:54Z via WebFetch (summary only; no verbatim text available). Page has no SpaceX notice.
+Eligibility: US children under 18 with valid SSN; parent/guardian opens and manages.
+Claim steps: 1 download official Trump Accounts app (App Store/Google Play); 2 verify identity; 3 confirm relationship to child; 4 review child info; 5 accept account terms; 6 optionally claim one-time $1,000 Treasury contribution if eligible.
+Auto-enrollment: Treasury auto-enrolled eligible children without an account as of Oct 1 2026. Parent/guardian must still claim to control it, manage investments, allow contributions; claiming required for $1,000.
+Contributions: family/friends/eligible employers up to $5,000 per child per year; debit card or ACH can take several days.
+Call center 866-USA-4547.

@@ -1,0 +1,170 @@
+---
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import { OPERATOR, SITE } from "../data/site";
+
+export interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  noindex?: boolean;
+  /** explicit robots meta (e.g. "noindex, follow"); overrides `noindex` */
+  robots?: string;
+  /** true drops the Mediavine ad script (paid sponsor pages). */
+  noAds?: boolean;
+  /** Route-specific disclosure when the sitewide wording is unsuitable for the page. */
+  affiliateDisclosureText?: string;
+  /** true renders the footer's external links (e.g. "Powered by Layer3Labs") as plain text.
+   *  Used by /alternatives/ pages, whose only external link may be the subject's official site. */
+  noExternalFooterLinks?: boolean;
+}
+const { title, description, canonical, noindex, robots, noAds, affiliateDisclosureText, noExternalFooterLinks } = Astro.props;
+const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
+const toolSharingImages: Record<string, string> = {
+  "/retirement/inherited-ira-withdrawal-calculator/": "/images/tools/inherited-ira-withdrawal-calculator.png",
+  "/retirement/medicare-irmaa-calculator/": "/images/tools/medicare-irmaa-calculator.png",
+  "/mileage-deduction/mileage-log-checker/": "/images/tools/mileage-log-checker.png",
+};
+const toolSharingImage = toolSharingImages[Astro.url.pathname];
+const sharingImage = new URL(toolSharingImage ?? "/favicon-192.png", Astro.site).toString();
+
+// Sitewide Organization JSON-LD (brand entity for SEO).
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": new URL("/", Astro.site).toString() + "#organization",
+  name: SITE.name,
+  url: new URL("/", Astro.site).toString(),
+  logo: { "@type": "ImageObject", url: new URL("/favicon-192.png", Astro.site).toString(), width: 192, height: 192 },
+  description: SITE.description,
+  parentOrganization: {
+    "@type": "Organization",
+    name: OPERATOR.name,
+    url: OPERATOR.url,
+  },
+};
+
+// WebSite JSON-LD — the entity Google uses for the search-result site name.
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": new URL("/", Astro.site).toString() + "#website",
+  url: new URL("/", Astro.site).toString(),
+  name: SITE.name,
+  description: SITE.description,
+};
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GLEBF3S7CQ" is:inline></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GLEBF3S7CQ');
+    </script>
+    <!-- Fleet tool-usage tracker → our DB (canonical: layer3 scripts/tool_usage/tool-use-snippet.js) -->
+    <script is:inline>
+      (function () {
+        var API = 'https://growth-sites-api.onrender.com/api/tool-use';
+        var vid = '';
+        try {
+          vid = localStorage.getItem('_tu_vid') || '';
+          if (!vid) { vid = Math.random().toString(36).slice(2, 12) + Date.now().toString(36); localStorage.setItem('_tu_vid', vid); }
+        } catch (e) { /* storage blocked — send without an id */ }
+        function send(event, root, trigger) {
+          var body = JSON.stringify({ event: event, tool: root.getAttribute('data-tool'), path: location.pathname, vid: vid, trigger: trigger || '' });
+          try {
+            if (navigator.sendBeacon && navigator.sendBeacon(API, new Blob([body], { type: 'text/plain' }))) return;
+          } catch (e) { /* fall through */ }
+          try { fetch(API, { method: 'POST', body: body, keepalive: true, mode: 'no-cors' }); } catch (e) { /* give up quietly */ }
+        }
+        var viewed = false;
+        function checkView() {
+          if (viewed) return;
+          var root = document.querySelector('[data-tool]');
+          if (root) { viewed = true; send('view', root); }
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', checkView); else checkView();
+        window.addEventListener('load', function () { checkView(); setTimeout(checkView, 2500); });
+
+        var used = false;
+        var CONTROLS = 'button,[role="button"],input,select,textarea,label,summary';
+        function onEvent(e) {
+          if (used) return;
+          var el = e.target;
+          if (!el || !el.closest) return;
+          var root = el.closest('[data-tool]');
+          if (!root) return;
+          if (e.type === 'click' && !root.hasAttribute('data-tool-any-click') && !el.closest(CONTROLS)) return;
+          used = true;
+          if (!viewed) { viewed = true; send('view', root); }
+          send('use', root, e.type);
+        }
+        ['click', 'input', 'change', 'submit'].forEach(function (t) {
+          document.addEventListener(t, onEvent, true);
+        });
+      })();
+    </script>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {robots ? <meta name="robots" content={robots} /> : noindex && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={sharingImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={sharingImage} />
+    {toolSharingImage && <>
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content={`${SITE.name}: ${title}`} />
+      <meta name="twitter:image:alt" content={`${SITE.name}: ${title}`} />
+    </>}
+    <script type="application/ld+json" set:html={JSON.stringify(orgJsonLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(websiteJsonLd)} />
+    <style is:global>
+      :root {
+        --primary: #0E7C66;
+        --primary-dark: #0a5f4e;
+        --accent: #E0A43B;
+        --bg: #FAFCFB;
+        --text: #1A1A1A;
+        --muted: #5b6b66;
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: var(--bg); color: var(--text); }
+      body { max-width: 100%; overflow-x: hidden; }
+      img, video { max-width: 100%; height: auto; }
+      a { color: var(--primary-dark); }
+      h1, h2, h3 { letter-spacing: -0.01em; }
+      /* Mobile-only: keep form controls at 16px so iOS Safari never zoom-jumps on focus. Desktop unaffected. */
+      @media (max-width: 768px) {
+        input, select, textarea { font-size: 16px; }
+      }
+    </style>
+    <!-- Mediavine -->
+    {!noAds && <script type="text/javascript" async="async" data-noptimize="1" data-cfasync="false" src="//scripts.scriptwrapper.com/tags/5442bdab-1c3c-400e-a0f9-0120568ee0fd.js" is:inline></script>}
+  </head>
+  <body>
+    <SiteHeader />
+    <slot />
+    <SiteFooter disclosureText={affiliateDisclosureText} noExternalLinks={noExternalFooterLinks} />
+  </body>
+</html>

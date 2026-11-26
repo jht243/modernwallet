@@ -1,0 +1,41 @@
+coverage_lookup: 2 candidate(s) vs 893 repo pages / 914 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1328 past-chart lines
+
+### /guides/allstate-outage-coverage-lapse  — row - · create new content
+keyword: allstate outage; allstate outage payment; allstate outage coverage lapse
+reader question (new page intent): Can't pay Allstate premium or file a claim during the outage?
+lookup terms: allstate outage coverage lapse payment   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-14.md [table] | SSI 2027 increase | ssi increase 2027 (1,300); ssi cola 2027 (1,000); how much will ssi checks be in 2027 (390) | coverage gap; separate program and payment date | none | create new content | /guides/ssi-increase-2027/
+- 2026-10-21-autocomplete.md [exclusions] - HELOC cluster (heloc calculator 40,500 KD 2; interest only payment 1,300; how much can I get 880): DROP, already served by the HELOC calculator (`heloc-calculator` island), /guides/heloc-calculator-explained and seven 
+- 2026-11-04-podcast.md [table] | Lens 1 direct intent (podcast: Rental Income Podcast, Catching Up to FI). 'brrrr method' 6,600/mo KD 41 CPC $0.97 (SEMRUSH us 2026-11-04, measured); 'brrrr strategy' 1,900; 'what is the brrrr method' 720; 'brrrr loans'
+- 2026-11-04-tool-usage.md [table] | Mortgage prepayment schedules | biweekly mortgage calculator; bi weekly mortgage calculator; biweekly mortgage payment calculator | coverage gap (no biweekly tool) | none | create new content | /biweekly-mortgage-calcu
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent (ENRICH requested by brief). lookup: /budget/aca-subsidy-calculator exact route exists, title 'ACA Subsidy Calculator for 2027 Marketplace Premiums'; gap: 0 mentions of bronze, enhanced subsidies, 
+- 2026-11-23-trend-lane-c.md [table] | [coverage / top-10] Lane B: 'rule of 78 calculator' (0 clicks, 3 impr, pos 64.33) is UNCOVERED. Lens 1 direct intent; Lens 2 cluster 'Rule of 78 loan interest': rule of 78 1,000/mo; what is the rule of 78 210; rule of 
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/elon-musk-spacex-share-for-kids  — row - · create new content
+keyword: spacex trump account share claim
+reader question (new page intent): How do I claim the SpaceX share for my child's Trump Account?
+lookup terms: elon musk spacex share kid trump account claim   format cues: -
+
+Possible existing homes (strongest first) — read title + description, state each page's reader intent, compare with the question above:
+- /guides/elon-musk-spacex-share-for-kids  [EXACT SLUG · in sitemap · src/data/guides.ts · topic match 0.62 on elon musk spacex share kid]
+    title: Elon Musk's SpaceX Share for Kids Can't Be Claimed Yet
+    desc:  Elon Musk pledged a SpaceX share to every kid in America, but there is nothing to claim yet. His post never mentions Trump Accounts. See scam warning signs.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-29-trend-lane-c.md [exclusions] - /guides/are-trump-accounts-a-scam (0-25/mo, GSC pos 14): DROP. /guides/trump-account-worth-it has the section and FAQ; /guides/trump-account-scams exists. PAA (real? lose money? who owns? downside? eligibility? close?)
+- 2026-10-29-trend-lane-c.md [exclusions] - free-online-will / are-online-wills-legal: DROP, 2026-10-28 disposition holds. will online, roth 401k variants, trump account vs brokerage, lenders, living trust: exist (ledger 2026-10-22 to 10-28).
+- 2026-11-10-trend-lane-c.md [exclusions] - standalone utma page: DROP, exists (guides/utma-custodial-account-explained, compare/utma-vs-ugma, 529-vs-utma, custodial-roth-ira-vs-utma, trump-account-vs-custodial-account, how-to-open-a-custodial-brokerage-account-
+- 2026-11-12-trend-lane-c.md [exclusions] - utma standalone page: DROP, exists (guides/utma-custodial-account-explained, compare/utma-vs-ugma, compare/529-vs-utma, guides/custodial-roth-ira-for-kids and others).
+- 2026-11-12-trend-lane-c.md [exclusions] - Lens 3 vs/alternatives/pricing: no uncovered comparison; nerdwallet is branded on a locked SERP and UTMA comparisons (ugma, 529, roth, trump account) already exist.
+- 2026-11-25-search-gap.md [exclusions] - Claims not supportable from saved primary sources and excluded from the brief: share of S&P 500 companies that pay dividends, Dividend Aristocrat rules, any historical dividend-stock vs S&P 500 return comparison (S&P D
+Commits naming the topic: none
+Same run overlap: none
+
