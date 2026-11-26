@@ -25,7 +25,23 @@ These license a real editorial observation about work on this site. They never l
 
 ## SPECIFICS
 
-_(No named-client claims. This is a content property; the editorial "we" above is the voice.)_
+### A — Approved Publisher & Full Anonymized Client Experience (Layer3Labs / Jonathan Teplitsky)
+
+The Modern Wallet is published by Jonathan Teplitsky (Founder & CEO of Layer3Labs). Writers, mindmap passes, and `Publisher's Take` notes are licensed to draw wide and deep on our full anonymized client and operator catalog (`.claude/commands/_experience-catalog.json` and `.claude/commands/_approved-cases.json`) whenever a personal-finance, healthcare-policy, investing, tax, insurance, or small-business guide genuinely overlaps. Always keep individual clients and practices strictly anonymous (never publish client names, personal names, or domains), never invent hard survey percentages or unstated financial/clinical metrics, and never give individualized medical, legal, or investment advice:
+
+- **Small medical practices & doctor's offices (over 7 small medical practices; over 10 years working with doctors — owner-supplied 2026-11-25):** Direct operational optimization work inside independent physician offices covering front-desk patient intake, Medicaid/Medicare and commercial insurance eligibility verification, exemption/prior-authorization paperwork bottlenecks, scheduling and no-show friction, billing coordination, and small-practice cash flow.
+  - **When to use:** Medicaid/Medicare work requirements and redeterminations, health-insurance rules, medical billing and collections, ACA/COBRA/HSA/FSA costs, and how federal or state healthcare policy changes affect both small medical practices and patients.
+  - **Approved framing examples:**
+    - "Based on our work optimizing operations across over 7 small medical practices..."
+    - "Across more than 10 years working with independent doctors on office workflows..."
+  - **Guardrails:** Stick strictly to operational, administrative, financial, cash-flow, and preparation impacts. Never make clinical recommendations or claim to have tested medical treatments, clinics, or drugs.
+
+- **Over 50 small business founders & operators across industries (owner-supplied 2026-11-25):** Wide-and-deep operational, automation, and advisory experience spanning independent doctors, law firms, finance/lending and accounting businesses, hospitality operators, construction and HOA boards, wellness/retail businesses, multi-business executives, and tech/gaming founders.
+  - **When to use:** Investing comparisons (e.g., Dividend Stocks vs. S&P 500), retirement and tax planning, cash-flow vs. total-return tradeoffs, business banking/credit, bookkeeping/payroll tools, and any decision where **business type** (time-poor high-bracket professionals like doctors and lawyers vs. seasonal/lumpy-cash-flow owners vs. multi-business executives) or **career/age stage** (accumulation-phase founders vs. exit-minded or near-retiree owners) materially shifts what fits best.
+  - **Approved framing examples:**
+    - "Based on our work with over 50 small business founders across industries..."
+    - "Across the doctors, lawyers, and small business owners we work with..."
+  - **Guardrails:** Frame cross-industry and career-stage patterns as grounded qualitative operator observations paired with transparent educational math. Never fabricate survey percentages, client identities, or personalized financial advice.
 
 ---
 

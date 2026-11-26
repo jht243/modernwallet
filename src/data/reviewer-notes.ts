@@ -50,6 +50,16 @@ export const REVIEWER_NOTES: Record<string, ReviewerNoteEntry> = {
     reviewedDate: "November 25, 2026",
     note: "A big realized loss stays on your books until it is used, and with no gains the yearly cap against other income can stretch that over many years. Check last year's carryover worksheet before you enter figures, and treat a low-income year as a chance to realize gains.",
   },
+  "/guides/medicaid-work-requirements-2027-hold-harmless/": {
+    label: "Publisher's Take",
+    reviewedDate: "November 25, 2026",
+    note: "Based on our work optimizing operations across over 7 small medical practices, Medicaid eligibility changes almost always show up as front-desk surprises and billing delays long before patients expect a coverage gap. Treat the first half of 2027 as a preparation window by confirming state hold-harmless rules early, gathering exemption or 80-hour records ahead of renewal, and running coverage checks days before any clinic visit.",
+  },
+  "/compare/dividend-stocks-vs-sp500/": {
+    label: "Publisher's Take",
+    reviewedDate: "November 25, 2026",
+    note: "Based on our work with over 50 small business founders, doctors, and law firm owners, the real divide between dividend stocks and an S&P 500 index fund comes down to tax bracket and owner bandwidth rather than headline yield. Busy owners in peak earning years usually get more value from low-maintenance index compounding, while owners preparing for an exit or needing quarterly cash flow tend to look harder at dividend payers once they can manage single-company risk.",
+  },
 
 };
 

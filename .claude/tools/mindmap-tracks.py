@@ -528,11 +528,16 @@ def resolve_page_type_and_evidence_pool(
             'whenUseful': 'Use when a product offers a free tier, public web workspace, CLI/API endpoint, or public technical catalog you can inspect/verify directly to report concrete workflow steps, free-tier ceilings, and observed friction (without claiming full page-wide `(Tested 2026)` unless `tested_eligibility` and full item runs pass).',
         })
 
-    if has_catalog and page_category != 'regulated-medical-or-psychedelic':
+    is_clinical_site = any(k in exp_txt for k in ('psychedelic law', 'ayahuasca', 'medical frontier', 'opt health', 'clinical pipeline'))
+    is_clinical_topic = bool(_hits(all_words, all_joined, [
+        'psychedelic', 'psychedelics', 'psilocybin', 'ketamine', 'mdma', 'lsd', 'ayahuasca',
+        'drug', 'drugs', 'supplement', 'supplements', 'glp', 'diagnosis', 'diagnostic', 'symptom', 'symptoms',
+    ]))
+    if has_catalog and (page_category != 'regulated-medical-or-psychedelic' or (not is_clinical_site and not is_clinical_topic)):
         pool.append({
             'id': 'client_and_operator_experience',
             'label': 'Client / Operator / Fleet Implementation Experience',
-            'whenUseful': 'Use when an anonymized client engagement (e.g. "working with a client team reviewing dense contracts..." or "working with an executive managing multiple businesses..."), owned app/site build, or documented operator workflow illustrates the exact problem this tool solves (within stated `limits`).',
+            'whenUseful': 'Think wide and deep across our full anonymized client and founder catalog (over 50 small business founders across medical practices, law firms, finance, hospitality, construction, HOA, retail, and tech; plus over 7 small medical practices / 10+ years working with doctors). Surface real operational, cash-flow, bandwidth, or career/age-stage tradeoffs across business types (always anonymous, never inventing survey percentages or clinical/investment advice, and staying within stated `limits`).',
         })
 
     if has_surveys:
@@ -621,7 +626,7 @@ def log_internal_proof_outcome(
     if ev_basis == 'measured' or draft_obj.get('howWeTested') or re.search(r'\(tested\s+20\d\d\)|\bin our (?:internal )?testing\b|\bwe tested\b|\bread and reviewed\b', low):
         used_types.append('hands_on_test')
     if (evidence_obj.get('caseUses') and len(evidence_obj['caseUses']) > 0) or re.search(
-        r'\bat layer3labs,\s+we\b|\bin our client\b|\bin client work with\b|\bworking with (?:a |an |several )?[a-z0-9 -]{2,45}client\b|\bworking with an executive\b|\bas we saw working with\b|\bin our conversations with\b|\bacross our .*?(?:client|fleet|production)\b',
+        r'\bat layer3labs,\s+we\b|\bin our client\b|\bin client work with\b|\bworking with (?:a |an |several |over \d+ )?[a-z0-9 -]{2,45}(?:client|founder|founders|small business|medical practice|medical practices|doctor|doctors|practice|practices|law firm|law firms)\b|\bworking with an executive\b|\bas we saw working with\b|\bin our conversations with\b|\bbased on our (?:publisher team\'?s |team\'?s )?(?:work|experience) (?:with|working with)\b|\bacross (?:more than |over )?\d+ years working with\b|\bover \d+ (?:small )?(?:medical practices|small business founders|doctors|law firms)\b|\bacross our .*?(?:client|fleet|production|medical practice|founder)\b',
         low,
     ):
         used_types.append('client_and_operator_experience')
@@ -1005,6 +1010,16 @@ _TOPIC_SYNONYM_CLUSTERS: list[tuple[set[str], set[str]]] = [
         {'satellite', 'satellites', 'debris', 'deorbit', 'spectrum', 'orbit', 'orbital', 'nasa', 'esa', 'fcc', 'launch', 'drone', 'drones', 'defense', 'military', 'intelligence'},
         {'space', 'drone', 'defense', 'intelligence', 'military', 'risk', 'signals', 'compliance'},
     ),
+    # 11. Healthcare Policy, Medicaid/Medicare, Medical Billing & Small Medical Practices
+    (
+        {'medicaid', 'medicare', 'aca', 'cobra', 'hsa', 'fsa', 'healthcare', 'health', 'medical', 'doctor', 'doctors', 'physician', 'clinic', 'clinics', 'practice', 'practices', 'patient', 'patients', 'copay', 'deductible', 'premium', 'premiums', 'eligibility', 'redetermination', 'enrollment', 'uninsured', 'disenrollment', 'harmless', 'coverage', 'prior', 'authorization', 'billing', 'claims'},
+        {'medical', 'practices', 'doctors', 'office', 'intake', 'eligibility', 'billing', 'workflow', 'operations', 'healthcare', 'patient', 'medicaid', 'medicare', 'policy'},
+    ),
+    # 12. Investing, Dividends, Index Funds, Retirement, Wealth & Small Business Founder Finance
+    (
+        {'dividend', 'dividends', 'sp500', 'index', 'etf', 'etfs', 'stock', 'stocks', 'portfolio', 'yield', 'investing', 'invest', 'retirement', '401k', 'ira', 'roth', 'sep', 'solo', 'brokerage', 'capital', 'gains', 'founder', 'founders', 'owners', 'wealth', 'passive', 'compounding', 'savings', 'mortgage', 'loan', 'loans'},
+        {'founders', 'small', 'business', 'doctors', 'lawyers', 'investing', 'finance', 'cash', 'flow', 'tax', 'retirement', 'bandwidth', 'career', 'stage', 'financial'},
+    ),
 ]
 
 
@@ -1093,6 +1108,42 @@ def match_experience_records(root: Path, query_text: str, limit: int = 3) -> lis
             })
         if results:
             return results
+
+    # Fallback on fleet repos without an experience catalog: check `_approved-cases.json`
+    ac_path = root / '.claude/commands/_approved-cases.json'
+    if ac_path.is_file():
+        try:
+            ac_data = json.loads(ac_path.read_text())
+        except Exception:
+            ac_data = {}
+        canon_host = (urlsplit(_detect_canonical_base(root)).hostname or '').lower().removeprefix('www.')
+        ac_scored = []
+        for rec in (ac_data.get('records') or []):
+            if not isinstance(rec, dict):
+                continue
+            pubs = [str(p).lower().removeprefix('www.') for p in (rec.get('firstPartyPublishers') or [])]
+            if canon_host and pubs and canon_host not in pubs:
+                continue
+            hay = ' '.join([str(rec.get('entity') or '')] + [str(f) for f in (rec.get('approvedFacts') or [])])
+            r_terms = set(_words(hay)) - stop
+            sc = float(len(core_words & r_terms)) * 2.5 + float(len((expanded - core_words) & r_terms))
+            if sc > 0:
+                ac_scored.append((sc, rec))
+        ac_scored.sort(key=lambda x: x[0], reverse=True)
+        if ac_scored:
+            return [
+                {
+                    'id': r.get('id'),
+                    'publicDescription': r.get('entity'),
+                    'relationship': 'Unnamed client groups',
+                    'topic': 'Approved client & operator experience',
+                    'workSummary': ' '.join(str(f) for f in (r.get('approvedFacts') or [])),
+                    'limits': r.get('publicUse'),
+                    'suggestedFraming': f'Natural compliant framing (keep anonymous, no invented metrics): "Based on our work with {str(r.get("entity") or "").lower()}..."',
+                    'outcomeLeads': [],
+                }
+                for _, r in ac_scored[:limit]
+            ]
 
     # Fallback on non-Layer3 fleet repos: match verified operator history from `.claude/reviewer-voice-profile.json`
     vp = load_reviewer_voice_profile(root)

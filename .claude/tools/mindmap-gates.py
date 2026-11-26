@@ -1073,11 +1073,12 @@ def case_terms(text):
     return {aliases.get(w, w) for w in re.findall(r'[a-z0-9]{3,}', text.lower()) if w not in stop}
 
 
-def layer3_cases(root, query, publisher, bank, experience, context_queries=None):
-    """Layer3-only discovery material; not automatic claim or testing approval."""
-    catalog_path = local(root, '.claude/commands/_layer3-experience-catalog.json')
+def layer3_cases(root, query, publisher, bank, experience, context_queries=None, catalog_rel='.claude/commands/_layer3-experience-catalog.json'):
+    """Anonymized client & fleet experience catalog discovery; not automatic claim or testing approval."""
+    catalog_path = local(root, catalog_rel)
     catalog = read(catalog_path)
-    require(catalog.get('schemaVersion') == VERSION and catalog.get('publisher') == 'layer3labs.io',
+    pub_norm = publisher.lower().removeprefix('www.')
+    require(catalog.get('schemaVersion') == VERSION and catalog.get('publisher') in ('layer3labs.io', pub_norm),
             'Invalid Layer3 experience catalog')
     records = catalog.get('records')
     require(isinstance(records, list), 'Layer3 experience catalog requires records')
@@ -1132,23 +1133,25 @@ def layer3_cases(root, query, publisher, bank, experience, context_queries=None)
                                'attribution': 'Use the anonymous public description for clients. '
                                'Verify the specific claim and its basis before adding it to writer facts; '
                                'a discovered project is not an observed outcome or product test.'})
-    return {'schemaVersion': VERSION, 'query': query, 'searchQuery': search_query,
-            'contextQueries': context_queries, 'publisher': publisher,
-            'bankSha256': file_sha(bank), 'experienceSha256': file_sha(experience),
-            'localExperience': 'Read .claude/commands/_experience.md as internal permission context; '
-                               'its named client examples are private and superseded by the local anonymity rule.',
-            'experienceCatalog': {'path': str(catalog_path.relative_to(root.resolve())),
-                                  'sha256': file_sha(catalog_path), 'recordsSearched': len(records)},
-            'sourcePolicy': artifact_ref(root, '.claude/commands/_layer3-evidence-sources.md'),
-            'candidates': sorted(candidates, key=lambda r: (-len(r['topicMatches']), r['record']['id'])),
-            'privateClientContext': [],
-            'instruction': 'This catalog is one optional source, not the sole source or a source-count target. '
-                           'Combine as many relevant sources as needed: experience, internal modeling/calculations, '
-                           'actual survey records, primary documents, external research and executed tasks. '
-                           'Verify each claim, retain its own evidence basis and record actual sources in sourceArtifacts. '
-                           'No relevant case means use other supported sources, not force a case or stop. '
-                           'Never publish client identities or searchable testimonial text; preserve local exclusions '
-                           'and the terminal no-addition branch.'}
+    out = {'schemaVersion': VERSION, 'query': query, 'searchQuery': search_query,
+           'contextQueries': context_queries, 'publisher': publisher,
+           'bankSha256': file_sha(bank), 'experienceSha256': file_sha(experience),
+           'localExperience': 'Read .claude/commands/_experience.md as internal permission context; '
+                              'its named client examples are private and superseded by the local anonymity rule.',
+           'experienceCatalog': {'path': str(catalog_path.relative_to(root.resolve())),
+                                 'sha256': file_sha(catalog_path), 'recordsSearched': len(records)},
+           'candidates': sorted(candidates, key=lambda r: (-len(r['topicMatches']), r['record']['id'])),
+           'privateClientContext': [],
+           'instruction': 'This catalog is one optional source, not the sole source or a source-count target. '
+                          'Combine as many relevant sources as needed: experience, internal modeling/calculations, '
+                          'actual survey records, primary documents, external research and executed tasks. '
+                          'Verify each claim, retain its own evidence basis and record actual sources in sourceArtifacts. '
+                          'No relevant case means use other supported sources, not force a case or stop. '
+                          'Never publish client identities or searchable testimonial text; preserve local exclusions '
+                          'and the terminal no-addition branch.'}
+    if (root / '.claude/commands/_layer3-evidence-sources.md').is_file():
+        out['sourcePolicy'] = artifact_ref(root, '.claude/commands/_layer3-evidence-sources.md')
+    return out
 
 
 def artifact_ref(root, relative):
@@ -1159,11 +1162,13 @@ def artifact_ref(root, relative):
 def cases(root, query, publisher, context_queries=None):
     bank = root / '.claude/commands/_approved-cases.json'
     experience = local(root, '.claude/commands/_experience.md')
-    # Other publishers keep their existing behavior. No global/fleet rollout is implied.
     if (publisher.lower().removeprefix('www.') == 'layer3labs.io' and
             any((root / '.claude/commands' / name).exists() for name in
                 ['_layer3-experience-catalog.json', '_layer3-evidence-sources.md'])):
         return layer3_cases(root.resolve(), query, publisher, bank, experience, context_queries)
+    if (root / '.claude/commands/_experience-catalog.json').is_file():
+        return layer3_cases(root.resolve(), query, publisher, bank, experience, context_queries,
+                            catalog_rel='.claude/commands/_experience-catalog.json')
     require(not context_queries, 'Context query expansion is currently Layer3-only')
     words = set(re.findall(r'[a-z0-9]{3,}', clean_reader_question(query).lower()))
     candidates = []
