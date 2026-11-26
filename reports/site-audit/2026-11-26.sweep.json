@@ -1,0 +1,94 @@
+{
+ "source": "ahrefs",
+ "project_id": 10020166,
+ "checks": [
+  {
+   "check": "Broken internal links (4xx)",
+   "rows": 0
+  },
+  {
+   "check": "Internal links to 5xx",
+   "rows": 0
+  },
+  {
+   "check": "Internal links to redirects (3xx)",
+   "rows": 0
+  },
+  {
+   "check": "Broken external links (4xx)",
+   "rows": 0
+  },
+  {
+   "check": "External links to 5xx",
+   "rows": 0
+  },
+  {
+   "check": "Orphan pages in sitemap",
+   "rows": 100
+  },
+  {
+   "check": "Redirect chains",
+   "rows": 1
+  },
+  {
+   "check": "Redirect loops",
+   "rows": 0
+  },
+  {
+   "check": "Linked 3xx pages",
+   "rows": 0
+  },
+  {
+   "check": "Open Graph incomplete",
+   "rows": 0
+  },
+  {
+   "check": "X/Twitter card incomplete",
+   "rows": 0
+  },
+  {
+   "check": "og:url differs from canonical",
+   "rows": 0
+  },
+  {
+   "check": "Invalid hreflang code",
+   "rows": 0
+  },
+  {
+   "check": "Any hreflang issue",
+   "rows": 0
+  },
+  {
+   "check": "Invalid HTML lang",
+   "rows": 0
+  },
+  {
+   "check": "Poor LCP (field data)",
+   "rows": 0
+  },
+  {
+   "check": "Slow TTFB (>1.5 s)",
+   "rows": 0
+  },
+  {
+   "check": "HTML over 2 MB",
+   "rows": 0
+  },
+  {
+   "check": "Non-200 URL in sitemap",
+   "rows": 0
+  },
+  {
+   "check": "Noindex URL in sitemap",
+   "rows": 0
+  },
+  {
+   "check": "Non-canonical URL in sitemap",
+   "rows": 0
+  }
+ ],
+ "notes": {
+  "Orphan pages in sitemap": "false positive: each page is linked from ~1180 built pages (dist grep)",
+  "Redirect chains": "http://themodernwallet.com/ -> 301 host-level apex redirect, no repo rule"
+ }
+}

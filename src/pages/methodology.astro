@@ -1,11 +1,20 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { SITE } from "../data/site";
+import { SITE, LAST_UPDATED } from "../data/site";
+import { articleSchema } from "../lib/jsonld";
 
 const canonicalUrl = new URL("/methodology/", Astro.site).toString();
 const title = `${SITE.name} Calculator Methodology`;
 const description =
   `How ${SITE.name} builds financial calculators: formulas, assumptions, primary sources, estimates, and update practices.`;
+
+const jsonLdArticle = articleSchema({
+  headline: "Calculator Methodology",
+  description,
+  url: canonicalUrl,
+  datePublished: "2026-11-23",
+  dateModified: LAST_UPDATED,
+});
 
 const jsonLdBreadcrumb = {
   "@context": "https://schema.org",
@@ -18,6 +27,7 @@ const jsonLdBreadcrumb = {
 ---
 <BaseLayout title={title} description={description} canonical={canonicalUrl}>
   <script type="application/ld+json" set:html={JSON.stringify(jsonLdBreadcrumb)} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLdArticle)} />
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "WebPage",
