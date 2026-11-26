@@ -793,7 +793,8 @@ def inspect_pack(s, selected_routes=()):
                 for child in node:
                     walk_schema(child)
         walk_schema(sem.get('schema') if 'schema' in sem else sem.get('schemas', []))
-        article_words = len((sem.get('articleText') or sem.get('text') or '').split())
+        article_text = (sem.get('articleText') or sem.get('text') or '').strip()
+        article_words = len(article_text.split())
         claimed_testing = bool(re.search(r'\btested\s+(?:and|&)\s+reviewed\s+by\b|\btested\s+guidance\b', sem.get('text', ''), re.I))
         entry = {
             'path': r['path'],
@@ -809,7 +810,9 @@ def inspect_pack(s, selected_routes=()):
             'schemaDates': schema_dates,
             'visibleDates': sem.get('dates', []),
             'articleWordCount': article_words,
+            'articleTextPreview': article_text[:12000],
             'internalLinkCount': len(internal),
+            'sampleInternalLinks': internal[:25],
             'externalLinkCount': len(external),
             'sampleExternalLinks': external[:25],
             'testingAttributionClaimed': claimed_testing,

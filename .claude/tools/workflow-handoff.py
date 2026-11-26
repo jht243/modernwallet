@@ -946,14 +946,14 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
         pf_cands.extend(sdir.glob(f'preflight-{phase}*'))
         if sdir.parent != reports_root and sdir.name != 'reports':
             pf_cands.extend(sdir.glob(f'*/preflight-{phase}*'))
+    fallback_pf = None
+    fallback_mdoc = None
     for cand in sorted(set(pf_cands), key=lambda p: p.stat().st_mtime if p.exists() else 0):
         mfile = cand / 'manifest.json'
         if mfile.is_file():
             try:
                 mdoc = json.loads(mfile.read_text(encoding='utf-8'))
                 if mdoc.get('phase') != phase or mdoc.get('delivered') != list(range(1, len(mdoc.get('parts') or []) + 1)):
-                    continue
-                if actor and str(mdoc.get('actor') or '') != actor:
                     continue
                 href = mdoc.get('handoff')
                 if resolved_job and isinstance(href, str) and href:
@@ -962,10 +962,17 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
                         hdoc = json.loads(hpath.read_text(encoding='utf-8'))
                         if str(hdoc.get('jobId') or '') and str(hdoc.get('jobId')) != resolved_job:
                             continue
+                if actor and str(mdoc.get('actor') or '') != actor:
+                    fallback_pf = cand
+                    fallback_mdoc = mdoc
+                    continue
                 prior_preflight = cand
                 prior_mdoc = mdoc
             except Exception:
                 pass
+    if prior_preflight is None and fallback_pf is not None:
+        prior_preflight = fallback_pf
+        prior_mdoc = fallback_mdoc
     next_pf_name = f'preflight-{phase}'
     if (run_parent / next_pf_name).exists():
         idx = 2
@@ -986,13 +993,20 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
             eff_actor = str(prior_mdoc.get('actor') or eff_actor)
             eff_ctx_id = str(prior_mdoc.get('contextId') or eff_ctx_id)
             eff_epoch = str(prior_mdoc.get('contextEpoch') or eff_epoch)
-    res['workerPrepareCommand'] = (
-        f"python3 .claude/tools/workflow-preflight.py prepare --phase {phase} "
-        f"--handoff {res['handoff']}{pkt_flag}{reuse_flag} --run-id {eff_run_id} "
-        f"--actor {eff_actor} --context-id {eff_ctx_id} --context-epoch {eff_epoch} "
-        f"--run-dir {rel_parent}/{next_pf_name}"
-        f"{role_flag} {phase_instr}"
-    )
+    if phase == 'publish' and not is_layer3_local:
+        res['workerPrepareCommand'] = (
+            'MAIN executes mechanical PUBLISH inline directly '
+            '(deploy-run-to-main.sh push -> verify-live-urls.py -> deployment-evidence.py -> rendered-audit.py record-pairs); '
+            'do NOT run workflow-preflight.py prepare --phase publish in MAIN.'
+        )
+    else:
+        res['workerPrepareCommand'] = (
+            f"python3 .claude/tools/workflow-preflight.py prepare --phase {phase} "
+            f"--handoff {res['handoff']}{pkt_flag}{reuse_flag} --run-id {eff_run_id} "
+            f"--actor {eff_actor} --context-id {eff_ctx_id} --context-epoch {eff_epoch} "
+            f"--run-dir {rel_parent}/{next_pf_name}"
+            f"{role_flag} {phase_instr}"
+        )
     return res
 
 

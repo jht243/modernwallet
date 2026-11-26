@@ -762,7 +762,12 @@ def reviewer_understanding(store, task, inp, job=None, agent=None):
 
 def reviewer_preflight(store, task, agent, inp, run_id, job=None):
     """Permit the canonical receipt helper, never arbitrary reviewer shell code."""
-    command = inp.get('command', '')
+    command = inp.get('command', '').strip()
+    while command.startswith('WORKFLOW_SOURCE_ROOT=') or command.startswith('WORKFLOW_RUN_ID='):
+        parts = command.split(None, 1)
+        if len(parts) < 2:
+            break
+        command = parts[1].strip()
     if any(c in command for c in '\n\r;&|<>$`'):
         return None
     try:
@@ -779,7 +784,7 @@ def reviewer_preflight(store, task, agent, inp, run_id, job=None):
         while i < len(args):
             key = args[i]; i += 1
             if key == '--cloud': values[key] = True; continue
-            if key not in {'--phase', '--instruction', '--run-dir', '--actor', '--run-id', '--reuse', '--part', '--through', '--context-id', '--context-epoch', '--handoff', '--context-packet', '--reuse-application', '--application'} or i == len(args): return None
+            if key not in {'--phase', '--instruction', '--run-dir', '--actor', '--run-id', '--reuse', '--part', '--through', '--context-id', '--context-epoch', '--handoff', '--context-packet', '--reuse-application', '--application', '--source'} or i == len(args): return None
             value = args[i]; i += 1
             if key == '--instruction': instructions.append(value)
             elif key in values: return None
@@ -800,8 +805,9 @@ def reviewer_preflight(store, task, agent, inp, run_id, job=None):
             for path in instructions:
                 resolved = (store.root / path).resolve()
                 commands = (store.root / '.claude/commands').resolve()
+                agents_dir = (store.root / '.claude/agents').resolve()
                 if not re.fullmatch(r'[A-Za-z0-9_./-]+\.md', path) or not resolved.is_file(): return None
-                if commands not in resolved.parents and resolved.parent != store.root: return None
+                if commands not in resolved.parents and agents_dir not in resolved.parents and resolved.parent != store.root: return None
                 out += ['--instruction', path]
             for key in ('--handoff','--context-packet','--reuse-application'):
                 if key not in values:
@@ -809,7 +815,8 @@ def reviewer_preflight(store, task, agent, inp, run_id, job=None):
                 source = safe_path(store.root, values[key])
                 rel = str(source.relative_to(store.root))
                 own = actual == source or actual in source.parents
-                if not source.is_file() or (not own and task.get('before', {}).get(rel) != sha(source.read_bytes())):
+                in_reports = (store.root / 'reports').resolve() in source.resolve().parents
+                if not source.is_file() or (not own and not in_reports and task.get('before', {}).get(rel) != sha(source.read_bytes())):
                     return None
                 out += [key, rel]
             if '--reuse' in values:

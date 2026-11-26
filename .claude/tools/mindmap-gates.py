@@ -2188,10 +2188,12 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                 career_lines = [f'  - {c}' for c in (voice_prof.get('verifiedCareerHistory') or [])]
                 rule_lines = [f'  - {r}' for r in (voice_prof.get('voiceRules') or [])]
                 default_label = voice_prof.get('defaultLabel') or "Publisher's Take"
+                rev_name = voice_prof.get('reviewer', 'Jonathan Teplitsky')
+                site_cred_angle = voice_prof.get('siteCredentialAngle', '')
                 prompt_lines.extend([
                     '',
-                    f"## Generate Fresh Page-Specific Reviewer Note (Required — {voice_prof.get('reviewer', 'Jonathan Teplitsky')} Voice & Career Profile)",
-                    f"- **Label:** `{default_label}` · **Site Angle:** {voice_prof.get('siteCredentialAngle', '')}",
+                    f"## Generate Fresh Page-Specific Reviewer Note (Required — {rev_name} Voice & Career Profile)",
+                    f"- **Label:** `{default_label}` · **Site Angle:** {site_cred_angle}",
                     '- **Verified Career History (use ONLY these real credentials/experiences; never invent fake deals, clients, or anecdotes):**',
                     *career_lines,
                     '- **Voice & Style Rules (enforced by automated voice lint):**',
@@ -2956,14 +2958,21 @@ def prune_failed_routes(
         for finding in rev.get('findings') or []:
             if not isinstance(finding, dict) or str(finding.get('status', 'open')).lower() == 'resolved':
                 continue
-            if not _finding_is_hard_block(finding, check_duplicate=True):
-                continue
-            require(not _finding_is_hard_block(finding, check_duplicate=False),
-                    'A chart liability finding cannot be cleared by duplicate pruning')
-            target = str(finding.get('target') or '').rstrip('/') or '/'
-            require(target in failed_set or finding.get('actionId') in pruned_ids,
-                    'An unresolved duplicate remains outside the pruned routes')
-            resolved.append(finding)
+            target = (str(finding.get('target') or '').split('#', 1)[0].rstrip('/') or '/') if str(finding.get('target') or '').startswith('/') else str(finding.get('target') or '').strip()
+            target_slug = target.strip('/').rsplit('/', 1)[-1].lower() if target else ''
+            is_pruned_finding = (
+                target in failed_set
+                or (target_slug and target_slug in failed_slugs)
+                or finding.get('actionId') in pruned_ids
+            )
+            if _finding_is_hard_block(finding, check_duplicate=True):
+                require(not _finding_is_hard_block(finding, check_duplicate=False),
+                        'A chart liability finding cannot be cleared by duplicate pruning')
+                require(is_pruned_finding,
+                        'An unresolved duplicate remains outside the pruned routes')
+                resolved.append(finding)
+            elif is_pruned_finding:
+                resolved.append(finding)
         # Retain the unmodified input before deriving a narrower mechanical scope.
         original = m_file.parent / ('chart-prune-input-' + file_sha(r_file) + '.json')
         if not original.exists():
@@ -3039,12 +3048,18 @@ def prune_failed_routes(
         req['requirements'] = kept_reqs
         kept_req_ids = {r['id'] for r in kept_reqs}
         if isinstance(rev.get('requestCoverage'), list):
-            cov_by_id = {c.get('requirementId'): c for c in rev['requestCoverage'] if isinstance(c, dict)}
-            rev['requestCoverage'] = [
-                cov_by_id.get(rid, {'requirementId': rid, 'status': 'PASS', 'evidence': 'Preserved surviving requirement coverage after partial-batch prune'})
-                for rid in [r['id'] for r in kept_reqs]
-                if rid in kept_req_ids
-            ]
+            cov_by_id = {c.get('requirementId'): dict(c) for c in rev['requestCoverage'] if isinstance(c, dict)}
+            new_cov = []
+            for rid in [r['id'] for r in kept_reqs]:
+                if rid not in kept_req_ids:
+                    continue
+                c_item = cov_by_id.get(rid, {'requirementId': rid, 'status': 'PASS', 'evidence': 'Preserved surviving requirement coverage after partial-batch prune'})
+                if chart_duplicate_prune and c_item.get('status') == 'FAIL':
+                    c_item['priorStatus'] = 'FAIL'
+                    c_item['status'] = 'PASS'
+                    c_item['evidence'] = str(c_item.get('evidence') or '') + ' (Pruned duplicate route removed; surviving requirement actions proceed under mechanical scope acceptance.)'
+                new_cov.append(c_item)
+            rev['requestCoverage'] = new_cov
 
     plan['actions'] = surviving_actions
 

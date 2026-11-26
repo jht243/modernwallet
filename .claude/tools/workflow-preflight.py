@@ -329,41 +329,48 @@ def _auto_discover_reuse_dir(root, directory, phase, actor, context_id, context_
             if c_res != dir_res and c_res not in seen_cands and (child / 'manifest.json').is_file():
                 seen_cands.add(c_res)
                 candidates.append(child)
-            if parent == dir_res.parent.parent:
-                try:
-                    for sub in child.iterdir():
-                        if not sub.is_dir():
-                            continue
-                        s_res = sub.resolve()
-                        if s_res != dir_res and s_res not in seen_cands and (sub / 'manifest.json').is_file():
-                            seen_cands.add(s_res)
-                            candidates.append(sub)
-                except OSError:
-                    pass
+            try:
+                for sub in child.iterdir():
+                    if not sub.is_dir():
+                        continue
+                    s_res = sub.resolve()
+                    if s_res != dir_res and s_res not in seen_cands and (sub / 'manifest.json').is_file():
+                        seen_cands.add(s_res)
+                        candidates.append(sub)
+            except OSError:
+                pass
     candidates.sort(key=lambda c: (c / 'manifest.json').stat().st_mtime, reverse=True)
     fallback_cand = None
     fallback_m = None
+    phase_fallback_cand = None
+    phase_fallback_m = None
     for cand in candidates:
         try:
             m = load(cand)
-            if m.get('phase') != phase or m.get('actor') != actor:
+            if m.get('phase') != phase:
                 continue
             if run_id and m.get('runId') and m.get('runId') != run_id:
                 continue
             validate(root, cand, require_delivery=True)
-            if (
-                context_id
-                and context_epoch
-                and m.get('contextId') == context_id
-                and str(m.get('contextEpoch')) == str(context_epoch)
-            ):
-                return cand, m
-            if fallback_cand is None:
-                fallback_cand = cand
-                fallback_m = m
+            if m.get('actor') == actor:
+                if (
+                    context_id
+                    and context_epoch
+                    and m.get('contextId') == context_id
+                    and str(m.get('contextEpoch')) == str(context_epoch)
+                ):
+                    return cand, m
+                if fallback_cand is None:
+                    fallback_cand = cand
+                    fallback_m = m
+            elif run_id and m.get('runId') == run_id and phase_fallback_cand is None:
+                phase_fallback_cand = cand
+                phase_fallback_m = m
         except Exception:
             continue
-    return fallback_cand, fallback_m
+    if fallback_cand is not None:
+        return fallback_cand, fallback_m
+    return phase_fallback_cand, phase_fallback_m
 
 
 def prepare(root, phase, instructions, directory, cloud=False, reuse=None, actor="worker", run_id=None,
@@ -375,6 +382,8 @@ def prepare(root, phase, instructions, directory, cloud=False, reuse=None, actor
         if auto_cand is not None:
             reuse = auto_cand
             if isinstance(auto_m, dict):
+                if auto_m.get('actor') and os.environ.get('STRICT_CLI_REUSE_EPOCH') != '1':
+                    actor = auto_m['actor']
                 if auto_m.get('contextId'):
                     context_id = auto_m['contextId']
                 if auto_m.get('contextEpoch'):
@@ -542,9 +551,11 @@ def main():
                     pm = load(reuse_dir)
                     if (
                         pm.get('phase') == args.phase
-                        and pm.get('actor') == args.actor
+                        and (pm.get('actor') == args.actor or (args.run_id and pm.get('runId') == args.run_id))
                         and (not args.run_id or not pm.get('runId') or pm.get('runId') == args.run_id)
                     ):
+                        if pm.get('actor'):
+                            args.actor = pm['actor']
                         if pm.get('contextId'):
                             args.context_id = pm['contextId']
                         if pm.get('contextEpoch'):
@@ -557,7 +568,7 @@ def main():
                         inside(ROOT, args.reuse_application) if args.reuse_application else None, args.context_packet, args.source,
                         args.publication_preparation)
             total_parts = len(m['parts'])
-            batch_plan = [f'{s}..{min(s + 2, total_parts)}' for s in range(1, total_parts + 1, 3)]
+            batch_plan = [f'{s}..{min(s + 5, total_parts)}' for s in range(1, total_parts + 1, 6)]
             if total_parts <= 2 and len(m['reused']) > 0:
                 next_hint = (
                     f"Warm reuse active ({len(m['reused'])} unchanged rule files retained, only {total_parts} task-packet part(s)): "
@@ -568,7 +579,7 @@ def main():
                     )
                 )
             else:
-                next_hint = 'Issue 6-8 SEPARATE 3-part range Bash tool calls in ONE turn: python3 .claude/tools/workflow-delivery-serial.local.py --run-dir ' + str(args.run_dir) + ' --part <S> --through <E> following batchPlan (up to 18-24 parts per turn, <=27KB per call, zero output truncation; never use a shell for-loop in one Bash call) until every part is read, then run check.'
+                next_hint = 'Issue 4-6 SEPARATE 6-part range Bash tool calls in ONE turn: python3 .claude/tools/workflow-delivery-serial.local.py --run-dir ' + str(args.run_dir) + ' --part <S> --through <E> following batchPlan (up to 24-36 parts per turn, <=54KB per call, zero output truncation; never use a shell for-loop in one Bash call) until every part is read, then run check.'
             print(json.dumps({
                 'status': 'prepared-not-read',
                 'runDir': args.run_dir,
