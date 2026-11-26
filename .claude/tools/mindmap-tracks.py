@@ -141,11 +141,11 @@ TRACK_CONTRACTS = {
     ),
     'guide': (
         '## Active Mindmap Format Track: `guide` (Evergreen Guide / Pricing / Calculator / How-To / Policy)\n'
-        '- **Output Schema:** `GuidePage` JSON object (`1,800+` visible words) with `sections[].table`, `takeaway` (`{heading?, paragraphs, conditions?, whatWouldChange?}`), `sourceNote`, and `pricingNote`.\n'
+        '- **Output Schema:** `GuidePage` JSON (`1,800+` visible words): `slug`, `metaTitle`, `metaDescription`, `h1`, `subtitle`, `introText` (`string[]`), `inlineCta` (`{text, buttonLabel, buttonHref}`), `sections` (`[{id, heading, content: string[], bullets?: string[], orderedList?: boolean, table?: {caption?: string, headers: string[], rows: string[][]}}]`), `takeaway` (`{heading?, paragraphs: string[], conditions?: string, whatWouldChange?: string}`), `faqItems` (`[{question, answer}]` — exact key `faqItems`, never `faq`), `ctaTitle` (`string`), `ctaText` (`string`), `ctaButton` (`string`), `relatedLinks` (`[{title, description, href, category}]`), `sourceNote`, `pricingNote`, `publishedDate`, `updatedDate`.\n'
         '- **Top-Half Placement & 15%–20% Original Proof Block:**\n'
-        '  1. **Paragraph-1 Number Hook (`introText[0]`):** Answer the exact reader question in sentence 1 and state the sharpest verified calculation, live-probe ceiling, or primary threshold number in Paragraph 1.\n'
-        '  2. **Section 1–3 Original Analysis (Non-Exempt Routes):** Include a **150–250 word original analysis/modeling/probe block + structured `sections[].table` + counterexample** in Section 1, 2, or 3 from the Evidence Pool (linking any matched site calculator prominently; generic `"At Layer3Labs, we..."` intros never count). On regulated medical/legal/policy routes, stay strictly source-only (`whyNoInternalData`).\n'
-        '  3. Populate `takeaway` (`conditions` + `whatWouldChange`), `sourceNote`, and 3+ contextual internal links.\n'
+        '  1. **Paragraph-1 Number Hook (`introText[0]`):** Answer the exact reader question AND include a concrete verified number (`$`, `%`, cap, or benchmark figure from `SOURCE`) inside `introText[0]` itself (not saved for Paragraph 2).\n'
+        '  2. **Section 1–3 Original Analysis (Non-Exempt Routes):** Place a **150–250 word original analysis/modeling/probe block + structured `sections[].table` + counterexample** in Section 1, 2, or 3 from the Evidence Pool, linking any matched site calculator prominently. Build table columns ONLY from facts/numbers explicitly present in `SOURCE` so zero cells become `"Not published"`. On regulated medical/legal/policy routes, stay strictly source-only (`whyNoInternalData`).\n'
+        '  3. Populate `takeaway` (`conditions` + `whatWouldChange` as strings), `faqItems`, `ctaTitle`/`ctaText`/`ctaButton`, `sourceNote`, and 3+ contextual internal links.\n'
     ),
     'launch': (
         '## Active Mindmap Format Track: `launch` (Fast-Turn Model / Product Launch & News)\n'
