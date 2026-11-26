@@ -102,6 +102,7 @@ _WRITER_OMIT_STANDARD_H2_PREFIXES = (
     '## AUDITOR',
     '## PREFLIGHT',
     '## INTRO HUMANIZE',
+    '## EXAMPLES',
 )
 
 TRACK_CONTRACTS = {
@@ -110,57 +111,49 @@ TRACK_CONTRACTS = {
         '- **Output Schema (`ComparisonPage` TypeScript shape):** `slug`, `metaTitle`, `metaDescription`, `h1`, `subtitle`, '
         '`optionAName` (`<Product>`), `optionBName` (`"Alternatives"`), `introText` (`string[]`), `tableTitle` (`string`), '
         '`tableColumnLabels` (exact 3-string array `["Product", "Pricing & Plan Caps", "Best Fit"]`), '
-        '`comparisonTable` (`[{dimension, optionA, optionB}]`), `sections` (`[{id: string, heading: string, content: string[], bullets?: string[], table?: {caption?: string, headers: string[], rows: string[][]}}]` — each paragraph or multi-line Markdown pipe table is one string inside `content: string[]`, or pass structured `table`), '
+        '`comparisonTable` (`[{dimension, optionA, optionB}]`), `sections` (`[{id: string, heading: string, content: string[], bullets?: string[], table?: {caption?: string, headers: string[], rows: string[][]}}]`), '
         '`verdict` (`string[]`), `faqItems` (`[{question, answer}]`), `ctaTitle` (`string`), `ctaText` (`string`), '
-        '`ctaButton` (`string` label, NOT an object), `inlineCta` (`{text, buttonLabel, buttonHref}`), '
+        '`ctaButton` (`string` label), `inlineCta` (`{text, buttonLabel, buttonHref}`), '
         '`relatedLinks` (`[{title, description, href, category}]`), `publishedDate`, `updatedDate`, '
         '`attributionMode` (`"author"`), `faqSchemaPlainText` (`true` boolean), `sourceNote` (`string`), `pricingNote` (`string`), '
-        'plus optional `howWeTested` (`string[]` of 3 bullets when `basis == "measured"` with >=1 executed internal test on a tested-eligible route).\n'
-        '- **Title & H1 Rule:** Both start with `<Product> Alternatives` (50–60 char `metaTitle`). Use `(Tested YYYY)` when '
-        '`evidence.json` has `basis == "measured"` with >=1 executed `runs` AND the route passes tested-page eligibility (naming the exact tested item(s) honestly in `howWeTested` and prose).\n'
-        '- **Outbound Link Guard (Alternatives Registry Rule):** When registered as a subject-only alternatives page, the ONLY '
-        'external link allowed anywhere on the rendered page is the subject product\'s official HTTPS URL; name competing vendors '
-        'in plain text (no external competitor links) and include 3+ contextual internal `/` links to existing routes on this site. '
-        'The two vendor CTAs ("Update your listing" and "Want to be added to this alternatives page?") render automatically from the template.\n'
-        '- **Page-Type Evidence Pool (Unranked — Choose Best Option or Combine Multiple):**\n'
-        '  1. **Comparison Matrix:** Subject product + 5–8 real alternatives with exact published billing units, entry prices, hard plan caps, and best fit (never "see vendor site"; write `"Quote-based; no public price"` when unpublished).\n'
-        '  2. **Select From the Full Internal Evidence Pool in `<slug>.prompt.md`:** Inspect ALL eligible options presented in the pool (`hands_on_test`, `client_and_operator_experience`, `proprietary_reader_survey`, `internal_scenario_and_spec_modeling`, `interactive_tool_or_calculator`) with NO rigid priority — choose whichever option, or combination of multiple options, makes this alternatives page strongest. Show `(Tested YYYY)` + `howWeTested` whenever `basis == "measured"` (>=1 real internal test run), naming the exact tested item(s) honestly.\n'
-        '  3. **Zero-Internal-Data Rule:** Publishing without internal/testing/client/modeling data is permitted ONLY when a genuine reason applies (e.g. regulated domain or every pool option genuinely came up empty), which must be recorded honestly in `whyNoInternalData` / `sourceNote` without faking tests or math.\n'
-        '  4. **Decision Architecture & Opinionated Verdict (`verdict[]`):** Include one substantive H2 per alternative, `"How to Choose a <Product> Alternative"`, `"When <Product> Is Still the Better Fit"`, `"Who This Is Not For"`, `"What Would Change Our Answer"`, and a decisive buyer-segmented `verdict[]`.\n'
-        '  5. **Transparent Provenance:** Set `sourceNote` naming every primary source + date and clarifying the exact internal/testing/modeling evidence used from the pool; set `pricingNote`.\n'
+        'plus optional `howWeTested` (`string[]` of 3 bullets when `basis == "measured"` on an eligible route).\n'
+        '- **Title & Outbound Link Guard:** Start `metaTitle` (50–60 chars) and `h1` with `<Product> Alternatives`; use `(Tested YYYY)` ONLY when `basis == "measured"` on an eligible route. On registered subject-only alternatives routes, link externally ONLY to the subject product\'s official HTTPS URL (name competitors in plain text + 3+ internal `/` links).\n'
+        '- **Top-Half Placement & 15%–20% Original Proof Block:**\n'
+        '  1. **Paragraph-1 Number Hook (`introText[0]`):** Lead with the direct switching answer AND the sharpest verified number from our scenario calculation, live check, or cap comparison.\n'
+        '  2. **Comparison Matrix + Top-Half Scenario Block (`sections[0..2]`):** Pair a 5–8 vendor `comparisonTable` (exact billing units, entry prices, hard caps; write `"Quote-based; no public price"` if unpublished) with a **150–250 word original analysis block + structured `table` + counterexample** in Section 1, 2, or 3 using the strongest option(s) from the Evidence Pool (never generic `"At Layer3Labs, we..."` filler). Link any matched site calculator prominently.\n'
+        '  3. **Decision Architecture:** Cover each alternative, `"How to Choose a <Product> Alternative"`, `"When <Product> Is Still the Better Fit"`, `"Who This Is Not For"`, `"What Would Change Our Answer"`, decisive `verdict[]`, `sourceNote`, and `pricingNote` (only omit internal proof with an explicit `whyNoInternalData`).\n'
     ),
     'comparison': (
         '## Active Mindmap Format Track: `comparison` (`<Option A> vs <Option B>`)\n'
         '- **Output Schema (`ComparisonPage` TypeScript shape, `1,500+` visible words):** `sections` uses `{id, heading, content: string[], bullets?: string[], table?: {caption?: string, headers: string[], rows: string[][]}}`, `ctaButton` is a `string`, `tableColumnLabels` is a 3-string tuple, `relatedLinks` items include `{title, description, href, category}`, `attributionMode` is `"author"`, `faqSchemaPlainText` is `true`, plus `sourceNote` and `pricingNote`.\n'
-        '- **Page-Type Evidence Pool (Unranked — Choose Best Option or Combine Multiple):**\n'
-        '  1. Answer `"Which should I pick between <A> and <B>?"` in sentence 1 with concrete decision thresholds.\n'
-        '  2. Include a structured side-by-side `comparisonTable`, then choose the strongest option — OR combination of options — from the full unranked **Evidence Pool** presented in `<slug>.prompt.md` (`hands_on_test`, `client_and_operator_experience`, `proprietary_reader_survey`, `internal_scenario_and_spec_modeling`, `interactive_tool_or_calculator`), plus a concrete **counterexample**.\n'
-        '  3. Show `(Tested YYYY)` + `howWeTested` whenever `basis == "measured"` (>=1 real internal test on an eligible route), naming tested option(s) honestly; never claim testing on regulated/excluded topics. Only omit internal proof when a valid documented reason applies (`whyNoInternalData`).\n'
-        '  4. Close with a decisive `verdict[]`, `"What Would Change Our Answer"`, and explicit `sourceNote`.\n'
+        '- **Top-Half Placement & 15%–20% Original Proof Block:**\n'
+        '  1. **Paragraph-1 Number Hook (`introText[0]`):** Answer `"Which should I pick between <A> and <B>?"` in sentence 1 and surface the sharpest calculated, live-checked, or threshold number right in Paragraph 1.\n'
+        '  2. **Matrix + Section 1–3 Original Analysis:** Pair `comparisonTable` with a **150–250 word original analysis/modeling/probe block + structured `table` + explicit counterexample** in Section 1, 2, or 3 from the Evidence Pool (link any matched site calculator prominently; never rely on generic company taglines).\n'
+        '  3. Show `(Tested YYYY)` + `howWeTested` ONLY when `basis == "measured"` on an eligible route; close with decisive `verdict[]`, `"What Would Change Our Answer"`, `sourceNote`, and `pricingNote`.\n'
     ),
     'roundup': (
         '## Active Mindmap Format Track: `roundup` (`Best <Category>` / Gear / Consumer Goods / Book Roundup)\n'
-        '- **Output Schema:** Repository roundup `GearRoundup`, `GearDeepDive`, `VerticalPage`, `GuidePage`, or `ComparisonPage` JSON (`1,800+` visible words). Every layout natively renders `sections[].table` (`{caption?: string, headers: string[], rows: string[][]}` or `scenarioTable`), `takeaway` (`{heading?: string, paragraphs: string[], conditions?: string, whatWouldChange?: string}` or `string[]`) / `verdict`, `sourceNote`, and `pricingNote`.\n'
-        '- **Page-Type Evidence Pool (Unranked — Choose Best Option or Combine Multiple):**\n'
-        '  1. Lead with the top pick by reader/buyer archetype and an honest evaluation matrix.\n'
-        '  2. Review the full unranked **Evidence Pool** in `<slug>.prompt.md` (`hands_on_test` across software, physical supplies/filters/gear, or firsthand *Read & Reviewed* books; `client_and_operator_experience`; `proprietary_reader_survey`; `internal_scenario_and_spec_modeling`; `interactive_tool_or_calculator`) and pick whichever option or multi-source combination best fits this roundup.\n'
-        '  3. Populate `takeaway` (with `conditions` + `whatWouldChange`), never defer table cells ("see site"), and set explicit `sourceNote` and `pricingNote`.\n'
+        '- **Output Schema:** Repository roundup `GearRoundup`, `GearDeepDive`, `VerticalPage`, `GuidePage`, or `ComparisonPage` JSON (`1,800+` visible words) with `sections[].table` / `scenarioTable`, `takeaway` / `verdict`, `sourceNote`, and `pricingNote`.\n'
+        '- **Top-Half Placement & 15%–20% Original Proof Block:**\n'
+        '  1. **Paragraph-1 Number Hook:** Open Paragraph 1 with the top pick by buyer archetype AND the sharpest sizing, cost, or workload number.\n'
+        '  2. **Top-Half Proof (`sections[0..2]`):** Place a **150–250 word original evaluation/sizing/TCO block + structured `table` + counterexample** in the top half from the Evidence Pool (`hands_on_test`, `live_free_tier_or_workflow_probe`, `client_and_operator_experience`, `internal_scenario_and_spec_modeling`, or matched `interactive_tool_or_calculator`).\n'
+        '  3. Populate `takeaway` (`conditions` + `whatWouldChange`), never write `"see site"`, and set `sourceNote` and `pricingNote`.\n'
     ),
     'guide': (
         '## Active Mindmap Format Track: `guide` (Evergreen Guide / Pricing / Calculator / How-To / Policy)\n'
-        '- **Output Schema:** `GuidePage` JSON object (`1,800+` visible words; shared across `/guides/`, `/open-weights/`, `/robotics/`, `/roi/`, `/governance/`, and fleet article collections). Layouts natively render `sections[].table` (`{caption?: string, headers: string[], rows: string[][]}`), `takeaway` (`{heading?: string, paragraphs: string[], conditions?: string, whatWouldChange?: string}` or `string[]`), `sourceNote`, and `pricingNote`.\n'
-        '- **Page-Type Evidence Pool (Unranked — Choose Best Option or Combine Multiple):**\n'
-        '  1. Answer the exact reader question in the opening sentence.\n'
-        '  2. Review the full unranked **Evidence Pool** presented for this specific guide type in `<slug>.prompt.md` (client/operator workflows, completed reader surveys, internal cost/scenario/token modeling, interactive calculators) and apply whichever option or combination fits best. Only publish without internal data when a valid documented reason applies (e.g. medical/psychedelic/legal reporting or zero applicable pool data, noted in `whyNoInternalData`).\n'
+        '- **Output Schema:** `GuidePage` JSON object (`1,800+` visible words) with `sections[].table`, `takeaway` (`{heading?, paragraphs, conditions?, whatWouldChange?}`), `sourceNote`, and `pricingNote`.\n'
+        '- **Top-Half Placement & 15%–20% Original Proof Block:**\n'
+        '  1. **Paragraph-1 Number Hook (`introText[0]`):** Answer the exact reader question in sentence 1 and state the sharpest verified calculation, live-probe ceiling, or primary threshold number in Paragraph 1.\n'
+        '  2. **Section 1–3 Original Analysis (Non-Exempt Routes):** Include a **150–250 word original analysis/modeling/probe block + structured `sections[].table` + counterexample** in Section 1, 2, or 3 from the Evidence Pool (linking any matched site calculator prominently; generic `"At Layer3Labs, we..."` intros never count). On regulated medical/legal/policy routes, stay strictly source-only (`whyNoInternalData`).\n'
         '  3. Populate `takeaway` (`conditions` + `whatWouldChange`), `sourceNote`, and 3+ contextual internal links.\n'
     ),
     'launch': (
         '## Active Mindmap Format Track: `launch` (Fast-Turn Model / Product Launch & News)\n'
-        '- **Output Schema:** `GuidePage` or `ComparisonPage` JSON (`1,500+` visible words for comparisons, `1,800+` for guides), including `sections[].table`, `takeaway` / `verdict`, `sourceNote`, and `pricingNote`.\n'
-        '- **Mandatory Layer3 Best-Practice Proof:**\n'
-        '  1. Ground every spec, context window, benchmark, deprecation date, and token/tier rate strictly in captured primary announcement docs (`research/sources/*.txt`).\n'
-        '  2. Compare same-workload cost/latency/limits against the predecessor or closest rival in `sections[].table` with explicit arithmetic and a counterexample where the older/cheaper tier still wins. Never invent hands-on testing claims on breaking launches unless `basis == "measured"`.\n'
-        '  3. Populate `takeaway` / `verdict` stating who should migrate now vs. wait, plus `sourceNote` and `pricingNote`.\n'
+        '- **Output Schema:** `GuidePage` or `ComparisonPage` JSON (`1,500+` words for comparisons, `1,800+` for guides), including `sections[].table`, `takeaway` / `verdict`, `sourceNote`, and `pricingNote`.\n'
+        '- **Top-Half Launch Proof:**\n'
+        '  1. Lead Paragraph 1 with the headline capability/price delta from captured primary announcement docs (`research/sources/*.txt`).\n'
+        '  2. In Section 1–3, compare same-workload cost/latency/limits against the predecessor or closest rival in `sections[].table` (150–250w analysis + counterexample where the older/cheaper tier still wins; never claim hands-on testing unless `basis == "measured"`).\n'
+        '  3. Populate `takeaway` / `verdict` (migrate now vs. wait), `sourceNote`, and `pricingNote`.\n'
     ),
 }
 
@@ -319,6 +312,13 @@ def lint_reviewer_note(note_text: str, profile: dict | None = None) -> list[str]
     word_count = len(t.split())
     if word_count < 16 or word_count > 95:
         issues.append(f'Word count {word_count} outside crisp 2-sentence range (16-95 words)')
+    if not re.search(
+        r'\b(bottleneck|trap|catch|break|breaks|broken|skip|avoid|walk away|instead|unless|stop|wait|overkill|'
+        r'lock-in|locked|rework|retries|retry|cap|caps|limit|limits|margin|margins|renewal|renewals|overage|'
+        r'overages|surprise|surprises|hurt|hurts|waste|wastes|payback|break-even|stay on|switch|only if|when|don\'t|do not|never|rarely|mistake|fail|fails|risk)\b',
+        low,
+    ):
+        issues.append('Reviewer note merely summarizes specs/pricing without naming a concrete operational friction point, post-month-1 trap, or who should walk away')
     if profile:
         norm_t = re.sub(r'\s+', ' ', low).strip()
         for sample in (profile.get('sampleQuotes') or []):
@@ -623,25 +623,39 @@ def log_internal_proof_outcome(
 
     used_types = []
     ev_basis = str(evidence_obj.get('basis') or '').strip()
+    has_generic_tagline_only = bool(
+        re.search(r'\bat layer3labs,\s+we\b|\bin our review of primary\b|\bwe read the documentation\b', low)
+    )
     if ev_basis == 'measured' or draft_obj.get('howWeTested') or re.search(r'\(tested\s+20\d\d\)|\bin our (?:internal )?testing\b|\bwe tested\b|\bread and reviewed\b', low):
         used_types.append('hands_on_test')
+    if re.search(r'\blive free-tier\b|\bfree-tier check\b|\bin a live (?:sandbox|workspace|free-tier|cli|api) check\b|\bpublic sandbox check\b', low):
+        used_types.append('live_free_tier_or_workflow_probe')
     if (evidence_obj.get('caseUses') and len(evidence_obj['caseUses']) > 0) or re.search(
-        r'\bat layer3labs,\s+we\b|\bin our client\b|\bin client work with\b|\bworking with (?:a |an |several |over \d+ )?[a-z0-9 -]{2,45}(?:client|founder|founders|small business|medical practice|medical practices|doctor|doctors|practice|practices|law firm|law firms)\b|\bworking with an executive\b|\bas we saw working with\b|\bin our conversations with\b|\bbased on our (?:publisher team\'?s |team\'?s )?(?:work|experience) (?:with|working with)\b|\bacross (?:more than |over )?\d+ years working with\b|\bover \d+ (?:small )?(?:medical practices|small business founders|doctors|law firms)\b|\bacross our .*?(?:client|fleet|production|medical practice|founder)\b',
+        r'\bin our client\b|\bin client work with\b|\bworking with (?:a |an |several |over \d+ )?[a-z0-9 -]{2,45}(?:client|founder|founders|small business|medical practice|medical practices|doctor|doctors|practice|practices|law firm|law firms)\b|\bworking with an executive\b|\bas we saw working with\b|\bin our conversations with\b|\bbased on our (?:publisher team\'?s |team\'?s )?(?:work|experience) (?:with|working with)\b|\bacross (?:more than |over )?\d+ years working with\b|\bover \d+ (?:small )?(?:medical practices|small business founders|doctors|law firms)\b|\bacross our (?:~?\d+-site )?.*?(?:client|fleet|portfolio|production|medical practice|founder)\b',
         low,
     ):
         used_types.append('client_and_operator_experience')
-    if re.search(r'\breader survey\b|\breader poll\b|\bour survey of\b', low):
-        used_types.append('proprietary_reader_survey')
+    if re.search(r'\breader survey\b|\breader poll\b|\bour survey of\b|\bacross \d+ real runs of our\b|\bverified tool telemetry\b', low):
+        small_n = re.search(r'\b(?:n\s*=\s*|survey of\s+|poll of\s+|across\s+)(\d+)\b', low)
+        if not small_n or int(small_n.group(1)) >= 25:
+            used_types.append('proprietary_reader_survey')
     if re.search(r'\b10-page pdfs?\b|\b8-hour workdays?\b|\b30-minute meetings?\b|\bin our workload (?:modeling|analysis|translation)\b|\bworkload translation\b', low):
         used_types.append('practical_workload_and_unit_translation')
-    if ev_basis in ('modeled', 'calculated') or draft_obj.get('scenarioTable') or any(isinstance(s, dict) and s.get('table') for s in (draft_obj.get('sections') or [])) or re.search(r'\bin our internal (?:cost |scenario |workload )?(?:modeling|analysis)\b|\bwe modeled\b|\bbreak-even\b', low):
+    if ev_basis in ('modeled', 'calculated') or draft_obj.get('scenarioTable') or any(isinstance(s, dict) and s.get('table') for s in (draft_obj.get('sections') or [])) or re.search(r'\bin our internal (?:cost |scenario |workload |3-year |margin )?(?:modeling|analysis)\b|\bwe modeled\b|\bbreak-even\b', low):
         used_types.append('internal_cost_or_spec_modeling')
-    if ((evidence_obj.get('presentation') or {}).get('interaction') or {}).get('decision') in ('build', 'reuse'):
+    if ((evidence_obj.get('presentation') or {}).get('interaction') or {}).get('decision') in ('build', 'reuse') or re.search(r'/(?:tools|roi)/[a-z0-9-]+', low):
         used_types.append('interactive_tool_or_calculator')
 
     used_internal = len(used_types) > 0
     page_cat = str(pool_info.get('pageCategory') or 'unknown')
     legit_exempt = bool(pool_info.get('legitimateZeroInternalDomain')) or page_cat in ('regulated-medical-or-psychedelic', 'regulated-legal-or-financial')
+    quality_eval = assess_draft_proof_quality(
+        draft_obj=draft_obj,
+        raw_text=raw_text,
+        used_types=used_types,
+        legit_exempt=legit_exempt,
+        has_generic_tagline_only=(has_generic_tagline_only and not used_internal),
+    )
 
     why_not = None
     if not used_internal:
@@ -694,6 +708,10 @@ def log_internal_proof_outcome(
         'poolOptionsOffered': pool_ids,
         'legitimateExemption': legit_exempt,
         'whyNotUsed': why_not,
+        'qualityTier': quality_eval['qualityTier'],
+        'qualityFlags': quality_eval['qualityFlags'],
+        'para1NumericHook': quality_eval['para1NumericHook'],
+        'topHalfProof': quality_eval['topHalfProof'],
         'publishedStatus': published_status,
         'summaryLine': summary_line,
     }
@@ -724,6 +742,236 @@ def log_internal_proof_outcome(
         except Exception:
             pass
     return entry
+
+
+def assess_draft_proof_quality(
+    draft_obj: dict | None = None,
+    raw_text: str = '',
+    used_types: list[str] | None = None,
+    legit_exempt: bool = False,
+    has_generic_tagline_only: bool = False,
+    matched_calculators: list[dict] | None = None,
+) -> dict:
+    """Non-blocking quality & placement scorer (Round-1 edit guidance + monitor telemetry; NEVER blocks publish)."""
+    if legit_exempt:
+        return {
+            'qualityTier': 'exempt',
+            'qualityFlags': [],
+            'para1NumericHook': True,
+            'topHalfProof': True,
+            'round1ReworkSuggestions': [],
+        }
+    draft_obj = draft_obj if isinstance(draft_obj, dict) else {}
+    used_types = list(used_types or [])
+    flags: list[str] = []
+    suggestions: list[str] = []
+
+    if has_generic_tagline_only:
+        flags.append('tagline-only-no-substantive-proof')
+        suggestions.append('Replace generic company intro tagline with a concrete 150-250 word scenario calculation, live sandbox check, or verified operator benchmark.')
+    if not used_types:
+        flags.append('missing-internal-proof')
+        suggestions.append('Add at least one substantive Evidence Pool proof block (scenario table + counterexample, live free-tier probe, or matched operator/client workflow).')
+
+    # Check Paragraph 1 numeric hook
+    intro = draft_obj.get('introText') or draft_obj.get('intro') or []
+    p1 = ''
+    if isinstance(intro, list) and intro:
+        p1 = str(intro[0] or '')
+    elif isinstance(intro, str):
+        p1 = intro.split('\n\n', 1)[0]
+    elif raw_text:
+        p1 = raw_text[:600]
+    para1_num = bool(
+        re.search(
+            r'(?:\$\s*\d|\b\d+(?:\.\d+)?\s*(?:%|tok/s|(?:gb|tb|mb|ms|x|hours?|hrs?|days?|months?|years?|pdfs?|seats?|doors?|units?|credits?|chats?|pages?|models?|users?|sites?)\b))',
+            p1,
+            re.I,
+        )
+    )
+    if p1 and not para1_num:
+        flags.append('missing-para1-numeric-hook')
+        suggestions.append('Surface the sharpest verified number (cost delta, break-even threshold, memory cap, or workload figure) right in Paragraph 1.')
+
+    # Check top-half placement (Section 1-3) and 150+ word proof depth
+    secs = draft_obj.get('sections') or draft_obj.get('buyingGuide') or []
+    top_half_count = max(1, min(3, len(secs))) if isinstance(secs, list) and secs else 0
+    top_half_proof = bool(draft_obj.get('scenarioTable') or draft_obj.get('howWeTested'))
+    proof_sec_words = 0
+    if isinstance(secs, list):
+        for idx, s in enumerate(secs):
+            if not isinstance(s, dict):
+                continue
+            body_raw = s.get('content') if s.get('content') is not None else s.get('paragraphs')
+            body_txt = '\n'.join(str(x) for x in body_raw) if isinstance(body_raw, list) else str(body_raw or '')
+            has_tbl = bool(s.get('table') or ('|' in body_txt and re.search(r'\|\s*:?-{2,}:?\s*\|', body_txt)))
+            has_sig = bool(re.search(r'in our internal|we modeled|we tested|live free-tier|break-even|counterexample|working with|based on our work|10-page pdf|3-year|usable vram|order-margin', body_txt, re.I))
+            if has_tbl or has_sig:
+                w_cnt = len(_words(body_txt))
+                proof_sec_words = max(proof_sec_words, w_cnt)
+                if idx < top_half_count or idx < 3:
+                    top_half_proof = True
+    if secs and not top_half_proof:
+        flags.append('proof-buried-below-top-half')
+        suggestions.append('Move or add the structured scenario/modeling table and original analysis into Section 1, 2, or 3 (top half of the page).')
+    if secs and used_types and proof_sec_words > 0 and proof_sec_words < 120:
+        flags.append('thin-proof-section-under-150w')
+        suggestions.append('Expand the original analysis/scenario section to 150-250 words with explicit assumptions and a counterexample showing when the verdict flips.')
+
+    if matched_calculators:
+        full_low = (json.dumps(draft_obj, ensure_ascii=False) + ' ' + (raw_text or '')).lower()
+        if not any(str(mc.get('route') or '').lower() in full_low for mc in matched_calculators if mc.get('route')):
+            flags.append('missed-matching-site-calculator')
+            top_calc = matched_calculators[0]
+            suggestions.append(f"Include a prominent link/callout to this site's matching interactive calculator `{top_calc.get('route')}` ({top_calc.get('title')}).")
+
+    rn_obj = draft_obj.get('reviewerNote')
+    rn_text = (
+        str(rn_obj.get('note') or '').strip()
+        if isinstance(rn_obj, dict)
+        else (rn_obj.strip() if isinstance(rn_obj, str) else '')
+    )
+    if rn_text and not re.search(
+        r'\b(bottleneck|trap|catch|break|breaks|broken|skip|avoid|walk away|instead|unless|stop|wait|overkill|'
+        r'lock-in|locked|rework|retries|retry|cap|caps|limit|limits|margin|margins|renewal|renewals|overage|'
+        r'overages|surprise|surprises|hurt|hurts|waste|wastes|payback|break-even|stay on|switch|only if|when|don\'t|do not|never|rarely|mistake|fail|fails|risk)\b',
+        rn_text.lower(),
+    ):
+        flags.append('generic-publishers-take-restates-pricing')
+        suggestions.append("Rewrite reviewerNote (Publisher's Take) to name a concrete post-month-1 operational friction point and who should walk away, rather than restating vendor pricing.")
+
+    if not used_types:
+        tier = 'empty'
+    elif flags:
+        tier = 'thin'
+    else:
+        tier = 'strong'
+    return {
+        'qualityTier': tier,
+        'qualityFlags': flags,
+        'para1NumericHook': para1_num,
+        'topHalfProof': top_half_proof,
+        'round1ReworkSuggestions': suggestions,
+    }
+
+
+def match_operator_benchmarks(root: Path, query_text: str, page_category: str = '', limit: int = 2) -> list[dict]:
+    """Select at most 1-2 verified operator/niche reference benchmarks (~100 tokens total, $0 LLM tokens)."""
+    if page_category in ('regulated-medical-or-psychedelic', 'regulated-legal-or-financial', 'public-figure-biography'):
+        return []
+    bank_candidates = [
+        root / '.claude/data/fleet-operator-benchmarks.json',
+        Path.home() / '.claude/data/fleet-operator-benchmarks.json',
+    ]
+    bank_path = next((p for p in bank_candidates if p.is_file()), None)
+    if bank_path is None:
+        return []
+    try:
+        bank = json.loads(bank_path.read_text(errors='ignore'))
+    except Exception:
+        return []
+    canon_host = (urlsplit(_detect_canonical_base(root)).hostname or '').lower().removeprefix('www.')
+    is_layer3 = canon_host == 'layer3labs.io' or root.name == 'layer3labs'
+    q_words = set(_words(query_text))
+    scored = []
+    for item in (bank.get('benchmarks') or []):
+        if not isinstance(item, dict):
+            continue
+        scope = str(item.get('scope') or 'fleet')
+        if scope == 'layer3labs' and not is_layer3:
+            continue
+        kws = {str(k).lower() for k in (item.get('keywords') or [])}
+        hits = len(q_words & kws)
+        if hits >= 2 or (hits == 1 and len(q_words) <= 6):
+            scored.append((hits, item))
+    scored.sort(key=lambda x: x[0], reverse=True)
+    return [
+        {
+            'id': it.get('id'),
+            'benchmark': it.get('fact'),
+            'counterexampleCondition': it.get('whenItFlips'),
+        }
+        for _, it in scored[:limit]
+    ]
+
+
+def match_site_calculators_and_usage(root: Path, query_text: str, target_route: str = '', limit: int = 2) -> list[dict]:
+    """Auto-discover matching interactive tools/calculators on the active site + verified N>=25 usage telemetry ($0 tokens)."""
+    root = root.resolve()
+    clean_target = '/' + (target_route or '').strip().strip('/')
+    q_words = set(_words(query_text)) - {
+        'the', 'and', 'for', 'with', 'best', 'how', 'what', 'vs', 'alternatives', 'guide', 'review',
+        '2025', '2026', '2027', 'tool', 'tools', 'calculator', 'ai', 'free', 'online',
+    }
+    if not q_words:
+        return []
+
+    found_tools: list[dict] = []
+    seen_routes: set[str] = set()
+    for rel_dir, url_prefix in (
+        ('src/pages/tools', '/tools'),
+        ('src/pages/roi', '/roi'),
+        ('src/pages/calculators', '/calculators'),
+    ):
+        d = root / rel_dir
+        if not d.is_dir():
+            continue
+        for fp in sorted(d.glob('*')):
+            if not fp.is_file() or fp.suffix not in ('.tsx', '.astro', '.ts', '.mdx', '.md') or fp.stem in ('index', '[slug]', '[...slug]'):
+                continue
+            rt = f'{url_prefix}/{fp.stem}'
+            if rt.rstrip('/') == clean_target.rstrip('/') or rt in seen_routes:
+                continue
+            seen_routes.add(rt)
+            head_txt = fp.read_text(errors='ignore')[:2500]
+            title_m = re.search(r'(?:title|h1)\s*[=:]\s*["\']([^"\']{8,110})["\']', head_txt)
+            t_label = title_m.group(1).split('|')[0].strip() if title_m else fp.stem.replace('-', ' ').title()
+            slug_terms = set(_words(fp.stem + ' ' + t_label)) - {'ai', 'tool', 'tools', 'calculator', 'checker', 'generator', 'the', 'for', 'and'}
+            overlap = len(q_words & slug_terms)
+            if overlap >= 1:
+                # Boost multi-word matches strongly
+                sc = overlap * 3.0 + (1.5 if any(k in fp.stem for k in ('calculator', 'checker', 'comparer', 'picker')) else 0.5)
+                found_tools.append({'score': sc, 'route': rt, 'slug': fp.stem, 'title': t_label})
+
+    if not found_tools:
+        return []
+    found_tools.sort(key=lambda x: x['score'], reverse=True)
+    top = found_tools[:limit]
+
+    # Attach verified real-user tool usage telemetry ONLY when sample floor (people >= 25) is met
+    usage_by_slug: dict[str, dict] = {}
+    cache_candidates = [
+        root / 'reports/tool-usage-latest.json',
+        root / 'reports/mindmap-pass/tool-usage-cache.json',
+    ]
+    for cp in cache_candidates:
+        if cp.is_file():
+            try:
+                u_doc = json.loads(cp.read_text(errors='ignore'))
+                for t_row in (u_doc.get('tools') or []):
+                    if isinstance(t_row, dict) and int(t_row.get('people') or 0) >= 25:
+                        usage_by_slug[str(t_row.get('tool') or '')] = t_row
+                        usage_by_slug[str(t_row.get('path') or '').strip('/').split('/')[-1]] = t_row
+            except Exception:
+                pass
+
+    results = []
+    for item in top:
+        entry = {
+            'route': item['route'],
+            'title': item['title'],
+            'placementInstruction': f"Link and call out `{item['route']}` ({item['title']}) prominently near your top-half scenario table so readers can test their own numbers.",
+        }
+        u_hit = usage_by_slug.get(item['slug'])
+        if u_hit:
+            entry['verifiedUserTelemetry'] = {
+                'uniqueUsers30d': u_hit.get('people'),
+                'totalRuns30d': u_hit.get('uses'),
+                'choiceBuckets': u_hit.get('choiceBuckets') or {},
+                'note': 'Real first-party tool telemetry (N >= 25 floor met); cite transparently as reader calculator runs, never as a scientific poll.',
+            }
+        results.append(entry)
+    return results
 
 
 def classify_action(action: dict, brief: dict | None = None, plan: dict | None = None) -> str:
@@ -1284,6 +1532,69 @@ def build_workload_translations(text_blob: str, route: str = '', page_category: 
             'kind': 'allowance_to_workday_and_deliverable_units',
             'assumptions': '22 workdays per month (4.33 weeks per month); 25,000 characters (~5,000 words) per 10-page PDF where character caps apply.',
             'tiers': cap_rows,
+        })
+
+    # 4. 3-Year Promo vs Renewal TCO Math (Website Builders, Hosting, SaaS Intro Rates)
+    if any(k in low for k in ('renewal', 'renews', 'introductory', 'promo', 'first year', 'year 1', 'wordpress', 'hostinger', 'wix', 'framer', 'squarespace')):
+        dollar_rates = sorted({float(x) for x in re.findall(r'\$\s*(\d+(?:\.\d{1,2})?)\s*(?:/\s*mo|per\s+month|monthly)', low) if 1.0 <= float(x) <= 300.0})
+        if len(dollar_rates) >= 2:
+            intro_mo, renew_mo = dollar_rates[0], dollar_rates[-1]
+            if renew_mo > intro_mo * 1.15:
+                yr1 = round(intro_mo * 12.0, 2)
+                yr2_3 = round(renew_mo * 24.0, 2)
+                tco_36m = round(yr1 + yr2_3, 2)
+                flat_comp_36m = round(intro_mo * 36.0, 2)
+                translations.append({
+                    'kind': 'three_year_promo_vs_renewal_tco',
+                    'assumptions': '12-month introductory rate followed by 24 months at published standard renewal rate (36-month TCO horizon).',
+                    'introMonthlyUsd': intro_mo,
+                    'renewalMonthlyUsd': renew_mo,
+                    'year1TotalUsd': yr1,
+                    'years2And3RenewalTotalUsd': yr2_3,
+                    'thirtySixMonthTotalTcoUsd': tco_36m,
+                    'renewalStepUpDollarDeltaOver36MonthsUsd': round(tco_36m - flat_comp_36m, 2),
+                })
+
+    # 5. Merchant / Checkout / Agent Take-Rate Order-Margin Math ($45, $120, $250 AOV)
+    pct_fees = sorted({float(x) for x in re.findall(r'\b(\d{1,2}(?:\.\d{1,2})?)\s*%\s*(?:fee|commission|take|transaction|checkout|per\s+order|plus|\+)', low) if 0.5 <= float(x) <= 20.0})
+    if pct_fees and any(k in low for k in ('merchant', 'checkout', 'shopify', 'stripe', 'paypal', 'shopping', 'order', 'aov', 'margin', 'commission')):
+        fee_pct = pct_fees[-1]
+        fixed_cents = 0.30 if '0.30' in low or '30¢' in low or 'stripe' in low or 'paypal' in low else 0.0
+        aov_rows = []
+        for aov in (45.0, 120.0, 250.0):
+            fee_usd = round(aov * (fee_pct / 100.0) + fixed_cents, 2)
+            gm_25 = round(aov * 0.25, 2)
+            gm_55 = round(aov * 0.55, 2)
+            aov_rows.append({
+                'orderValueUsd': aov,
+                'feeUsd': fee_usd,
+                'netMarginAfterFeeAt25PctGrossUsd': round(gm_25 - fee_usd, 2),
+                'shareOf25PctGrossMarginConsumedPct': round(100.0 * fee_usd / gm_25, 1),
+                'netMarginAfterFeeAt55PctGrossUsd': round(gm_55 - fee_usd, 2),
+            })
+        translations.append({
+            'kind': 'merchant_order_margin_scenarios',
+            'assumptions': f'Published {fee_pct}% transaction/channel fee + ${fixed_cents:.2f} fixed per-order fee modeled across $45, $120, and $250 AOV at 25% vs. 55% gross product margin.',
+            'scenarios': aov_rows,
+        })
+
+    # 6. Local LLM Usable VRAM / Unified Memory & Quantized Model Fit Math
+    mem_gbs = sorted({int(x) for x in re.findall(r'\b(16|24|32|48|64|96|128|192|256)\s*gb\b', low)})
+    if mem_gbs and any(k in low for k in ('vram', 'unified memory', 'ollama', 'local llm', 'local models', 'quantized', 'q4', '70b', '32b', 'rtx', 'mac studio', 'mac mini')):
+        mem_rows = []
+        for gb in mem_gbs[:5]:
+            usable_unified = round(gb * 0.72, 1)
+            mem_rows.append({
+                'hardwareMemoryGb': gb,
+                'usableUnifiedMemoryAfterOsCeilingGb_72pct': usable_unified,
+                'fits8B_Q4_6GbWith8kContext': gb >= 12,
+                'fits32B_Q4_22GbWith16kContext': usable_unified >= 23.0 or gb >= 24,
+                'fits70B_Q4_44GbWith16kContext': usable_unified >= 46.0,
+            })
+        translations.append({
+            'kind': 'local_llm_usable_memory_headroom',
+            'assumptions': 'Q4_K_M quantization (~0.60 GB per billion parameters) plus 2-4 GB 8K-16K KV-cache overhead; ~72% default macOS unified-memory wired ceiling before swap degradation.',
+            'tiers': mem_rows,
         })
 
     return translations
@@ -2105,6 +2416,24 @@ def splice_alternatives_draft(
             tag = f'  <url><loc>{loc}</loc><lastmod>{day}</lastmod></url>\n</urlset>'
             sm_raw = sm_raw.replace('</urlset>', tag)
             sm_path.write_text(sm_raw)
+
+    rn_obj = draft.get('reviewerNote')
+    rn_text = (
+        str(rn_obj.get('note') or '').strip()
+        if isinstance(rn_obj, dict)
+        else (rn_obj.strip() if isinstance(rn_obj, str) else '')
+    )
+    if rn_text:
+        try:
+            register_reviewer_note(
+                root,
+                route=route,
+                note_text=rn_text,
+                label=(str(rn_obj.get('label') or '').strip() or None) if isinstance(rn_obj, dict) else None,
+                reviewed_date=(str(rn_obj.get('reviewedDate') or rn_obj.get('reviewed_date') or '').strip() or None) if isinstance(rn_obj, dict) else None,
+            )
+        except Exception:
+            pass
 
     log_internal_proof_outcome(
         root,

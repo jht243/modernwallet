@@ -470,7 +470,7 @@ def _ensure_published_proof_receipt(row, live_url):
 
     signal_re = re.compile(
         r'\(tested\s+20\d\d\)|howwetested|worked cost example|in our (?:internal )?(?:testing|cost|scenario|modeling|analysis)|'
-        r'we tested|we modeled|in our conversations with|at layer3labs,\s+we|reader survey|scenariotable|break-even',
+        r'we tested|we modeled|in our conversations with|reader survey|scenariotable|break-even',
         re.I,
     )
     has_proof = bool((prior_match and prior_match.get('usedInternalProof')) or (raw_txt and signal_re.search(raw_txt)))

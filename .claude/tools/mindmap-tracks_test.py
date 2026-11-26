@@ -2,9 +2,12 @@
 """Unit tests for unified Mindmap format-track router, token slicing, and proof gates."""
 import importlib.util
 import json
+import os
 from pathlib import Path
 import tempfile
 import unittest
+
+os.environ.setdefault('MINDMAP_SKIP_PREWRITE_CHECK', '1')
 
 REPO = Path(__file__).resolve().parents[2]
 
@@ -255,6 +258,94 @@ class MindmapTracksTests(unittest.TestCase):
             self.assertIn('custom enterprise quotes', rec['whyNotUsed'])
             self.assertEqual(rec['publishedStatus'], 'published')
             self.assertTrue((fake_root / 'reports/internal-proof-log.jsonl').is_file())
+
+    def test_phase1_tagline_closed_calculators_benchmarks_and_zero_block(self):
+        # 1. Generic company tagline alone does NOT count as internal proof (loophole closed)
+        with tempfile.TemporaryDirectory() as tmp:
+            fake_root = Path(tmp)
+            (fake_root / '.claude').mkdir()
+            rec_tag = tracks.log_internal_proof_outcome(
+                fake_root,
+                route='/guides/shopify-agentic-plan',
+                draft_obj={
+                    'h1': 'Shopify Agentic Plan',
+                    'introText': ['Shopify offers an agentic commerce plan for merchants.'],
+                    'sections': [{'id': 's1', 'heading': 'Overview', 'content': ['At Layer3Labs, we build and run AI systems inside businesses.']}],
+                },
+                job_id='test-tagline-1',
+            )
+            self.assertFalse(rec_tag['usedInternalProof'])
+            self.assertEqual(rec_tag['qualityTier'], 'empty')
+            self.assertIn('tagline-only-no-substantive-proof', rec_tag['qualityFlags'])
+
+        # 2. Commit 95fc95f818 SMB founder & small medical practice experience patterns remain active
+        with tempfile.TemporaryDirectory() as tmp:
+            fake_root = Path(tmp)
+            (fake_root / '.claude').mkdir()
+            rec_smb = tracks.log_internal_proof_outcome(
+                fake_root,
+                route='/guides/medicaid-eligibility-workflows',
+                draft_obj={
+                    'h1': 'Medicaid Eligibility Workflows',
+                    'introText': ['Practices cut front-desk verification delays by 40% with batch checks.'],
+                    'sections': [{'id': 's1', 'heading': 'Operations', 'content': ['Working with over 7 small medical practices on patient intake and eligibility verification, manual phone checks bottlenecked Monday mornings. ' * 8]}],
+                },
+                job_id='test-smb-1',
+            )
+            self.assertTrue(rec_smb['usedInternalProof'])
+            self.assertIn('client_and_operator_experience', rec_smb['proofTypesUsed'])
+            self.assertEqual(rec_smb['qualityTier'], 'strong')
+
+        # 3. Portfolio operator benchmarks + site calculator matching + zero leak to regulated medical
+        wp_benches = tracks.match_operator_benchmarks(REPO, 'how to get off wordpress website builders hosting', 'how-to-or-workflow-guide')
+        self.assertTrue(any(b['id'] == 'ops-static-vs-wordpress-stack' for b in wp_benches))
+        self.assertEqual(tracks.match_operator_benchmarks(REPO, 'psilocybin dosing', 'regulated-medical-or-psychedelic'), [])
+
+        wp_calcs = tracks.match_site_calculators_and_usage(REPO, 'how to get off wordpress hosting cost', '/guides/how-to-get-off-wordpress')
+        self.assertTrue(any(c['route'] == '/tools/wordpress-cost-calculator' for c in wp_calcs))
+        llm_calcs = tracks.match_site_calculators_and_usage(REPO, 'best pc for local llm hardware vram', '/gear/best-pc-for-local-llm')
+        self.assertTrue(any('local' in c['route'] or 'llm' in c['route'] for c in llm_calcs))
+
+        # 4. Expanded 0-token scenario translations (3-year renewal, merchant AOV margin, local LLM VRAM)
+        tr_wp = tracks.build_workload_translations('Hostinger promo starts at $2.99/mo for the first year and renews at $11.99/mo monthly.')
+        self.assertTrue(any(x['kind'] == 'three_year_promo_vs_renewal_tco' for x in tr_wp))
+        tr_ec = tracks.build_workload_translations('PayPal checkout charges a 3.49% fee plus $0.30 per merchant order.')
+        self.assertTrue(any(x['kind'] == 'merchant_order_margin_scenarios' for x in tr_ec))
+        tr_hw = tracks.build_workload_translations('Comparing 24GB VRAM vs 64GB unified memory for local LLM 70B Q4 models.')
+        self.assertTrue(any(x['kind'] == 'local_llm_usable_memory_headroom' for x in tr_hw))
+
+        # 5. Reviewer note lint rejects bland vendor summaries and accepts sharp operator trade-offs
+        bland_issues = tracks.lint_reviewer_note('Framer AI offers three monthly pricing plans starting at fifteen dollars per month for basic personal sites and thirty dollars for pro teams.')
+        self.assertTrue(any('summarizes specs/pricing' in i for i in bland_issues))
+        sharp_issues = tracks.lint_reviewer_note("Cheap intro builder tiers look fine in month one, but Year-2 renewal jumps and CMS export lock-in hurt growing sites. Skip proprietary builders unless your team refuses Git workflows.")
+        self.assertEqual(sharp_issues, [])
+
+        # 6. Survey N >= 25 threshold and generic Publisher's Take flag in assess_draft_proof_quality
+        with tempfile.TemporaryDirectory() as tmp:
+            fake_root = Path(tmp)
+            (fake_root / '.claude').mkdir()
+            rec_small_n = tracks.log_internal_proof_outcome(
+                fake_root,
+                route='/guides/small-survey-test',
+                draft_obj={
+                    'h1': 'Small Survey Test',
+                    'introText': ['Teams pay $49/month for basic seats.'],
+                    'sections': [{'id': 's1', 'heading': 'Results', 'content': ['In our reader survey of 12 teams, most preferred annual billing.']}],
+                },
+                job_id='test-small-n',
+            )
+            self.assertNotIn('proprietary_reader_survey', rec_small_n['proofTypesUsed'])
+
+            q_generic_take = tracks.assess_draft_proof_quality(
+                draft_obj={
+                    'introText': ['Switching saves $140/month at 5 seats.'],
+                    'sections': [{'id': 's1', 'heading': 'Cost Model', 'content': ['In our internal scenario modeling across 3 tiers, break-even happens at 4 seats. ' * 9], 'table': {'headers': ['A', 'B'], 'rows': [['1', '2']]}}],
+                    'reviewerNote': {'label': "Publisher's Take", 'note': 'Vendor A offers three plans starting at $29 per month for basic users.'},
+                },
+                used_types=['internal_cost_or_spec_modeling'],
+            )
+            self.assertIn('generic-publishers-take-restates-pricing', q_generic_take['qualityFlags'])
+            self.assertEqual(q_generic_take['qualityTier'], 'thin')
 
 
 if __name__ == '__main__':

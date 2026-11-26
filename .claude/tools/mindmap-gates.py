@@ -2073,12 +2073,32 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                     if ref['path'] not in seen_src_paths:
                         seen_src_paths.add(ref['path'])
                         row_sources.append((ref['path'], txt[:3500]))
+        row_kw_tokens = {
+            w for w in re.split(
+                r'[^a-z0-9]+',
+                ' '.join([
+                    slug.replace('-', ' '),
+                    str(ident.get('title') or ''),
+                    str(ra.get('question') or row.get('reader_question') or ''),
+                ]).lower(),
+            )
+            if len(w) >= 3 and w not in {'the', 'and', 'for', 'with', 'how', 'what', 'best', 'guide', 'vs', 'alternatives', '2025', '2026', '2027', 'ai'}
+        }
+        ranked_fallbacks = []
         for s_path, s_txt in source_excerpts.items():
-            if len(row_sources) >= 8:
+            if s_path in seen_src_paths:
+                continue
+            p_tokens = {w for w in re.split(r'[^a-z0-9]+', Path(s_path).stem.lower() + ' ' + s_txt[:600].lower()) if len(w) >= 3}
+            overlap = len(row_kw_tokens & p_tokens)
+            if overlap > 0 or not row_sources:
+                ranked_fallbacks.append((overlap, s_path, s_txt))
+        ranked_fallbacks.sort(key=lambda x: x[0], reverse=True)
+        max_total_sources = 4 if row_sources else 5
+        for _, s_path, s_txt in ranked_fallbacks:
+            if len(row_sources) >= max_total_sources:
                 break
-            if s_path not in seen_src_paths:
-                seen_src_paths.add(s_path)
-                row_sources.append((s_path, s_txt))
+            seen_src_paths.add(s_path)
+            row_sources.append((s_path, s_txt[:4500]))
 
         ev_file = ev_base / slug / 'evidence.json'
         ev_data = None
@@ -2185,38 +2205,72 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                 *pool_bullets,
             ])
             voice_prof = pool_info.get('reviewerVoiceProfile')
+            row_query_blob = ' '.join([
+                slug.replace('-', ' '),
+                str(target or '').replace('/', ' ').replace('-', ' '),
+                str(ident.get('title') or ''),
+                str(ra.get('question') or row.get('reader_question') or ''),
+                str(ra.get('answer') or row.get('answer') or ''),
+                str(row.get('problem') or ''),
+            ])
             if isinstance(voice_prof, dict) and voice_prof.get('verifiedCareerHistory'):
                 samples = [
                     f'  - "{q.get("note") if isinstance(q, dict) else q}"'
-                    for q in (voice_prof.get('sampleQuotes') or [])[:4]
+                    for q in (voice_prof.get('sampleQuotes') or [])[:2]
                 ]
-                career_lines = [f'  - {c}' for c in (voice_prof.get('verifiedCareerHistory') or [])]
-                rule_lines = [f'  - {r}' for r in (voice_prof.get('voiceRules') or [])]
+                all_careers = [str(c) for c in (voice_prof.get('verifiedCareerHistory') or [])]
+                q_toks = set(re.findall(r'[a-z0-9]{3,}', row_query_blob.lower()))
+                scored_c = sorted(
+                    enumerate(all_careers),
+                    key=lambda ic: (
+                        1 if ic[0] in (0, 2) else 0,
+                        len(q_toks & set(re.findall(r'[a-z0-9]{3,}', ic[1].lower()))),
+                        -ic[0],
+                    ),
+                    reverse=True,
+                )
+                career_lines = [f'  - {c}' for _, c in sorted(scored_c[:4], key=lambda x: x[0])]
+                rule_lines = [f'  - {r}' for r in (voice_prof.get('voiceRules') or [])[:4]]
                 default_label = voice_prof.get('defaultLabel') or "Publisher's Take"
                 rev_name = voice_prof.get('reviewer', 'Jonathan Teplitsky')
                 site_cred_angle = voice_prof.get('siteCredentialAngle', '')
                 prompt_lines.extend([
                     '',
-                    f"## Generate Fresh Page-Specific Reviewer Note (Required — {rev_name} Voice & Career Profile)",
-                    f"- **Label:** `{default_label}` · **Site Angle:** {site_cred_angle}",
-                    '- **Verified Career History (use ONLY these real credentials/experiences; never invent fake deals, clients, or anecdotes):**',
+                    f"## Generate Fresh Page-Specific Reviewer Note (Required — {rev_name})",
+                    f"- **Label:** `{default_label}` · **Angle:** {site_cred_angle}",
+                    '- **Verified Career Lines (use ONLY these facts; never invent anecdotes or restate vendor sticker prices—name a post-month-1 friction point and who should walk away):**',
                     *career_lines,
-                    '- **Voice & Style Rules (enforced by automated voice lint):**',
+                    '- **Voice Rules (enforced by automated lint):**',
                     *rule_lines,
-                    '- **Prior Approved Quotes (STYLE EXAMPLES ONLY — NEVER copy verbatim; write a brand-new 2-sentence quote tailored specifically to THIS new page\'s numbers, rules, and tradeoffs):**',
+                    '- **Style Reference Only (NEVER copy verbatim):**',
                     *samples,
-                    f'- **Publish Registration (Required):** Include `"reviewerNote": {{"label": "{default_label}", "note": "<fresh 2-sentence quote>"}}` in the draft AND register it live via `python3 .claude/tools/mindmap-tracks.py register-reviewer-note --route "{target}" --note "<fresh 2-sentence quote>"`.',
+                    f'- **Publish Registration:** Include `"reviewerNote": {{"label": "{default_label}", "note": "<fresh 2-sentence quote>"}}` AND run `python3 .claude/tools/mindmap-tracks.py register-reviewer-note --route "{target}" --note "<fresh 2-sentence quote>"`.',
                 ])
+            if hasattr(tracks_mod, 'match_operator_benchmarks'):
+                op_benches = tracks_mod.match_operator_benchmarks(
+                    root, row_query_blob, page_category=str(pool_info.get('pageCategory') or ''), limit=2,
+                )
+                if op_benches:
+                    prompt_lines.extend([
+                        '',
+                        '## Matched Portfolio & Niche Operator Benchmarks (Verified Reference Context — Use in Section 1–3 Analysis)',
+                        '```json',
+                        json.dumps(op_benches, indent=2, ensure_ascii=False),
+                        '```',
+                    ])
+            if hasattr(tracks_mod, 'match_site_calculators_and_usage'):
+                matched_calcs = tracks_mod.match_site_calculators_and_usage(root, row_query_blob, target_route=target, limit=2)
+                if matched_calcs:
+                    prompt_lines.extend([
+                        '',
+                        '## Matched Live Site Calculators & Verified User Telemetry (Link Prominently in Top Half)',
+                        '```json',
+                        json.dumps(matched_calcs, indent=2, ensure_ascii=False),
+                        '```',
+                    ])
             matched_exp = tracks_mod.match_experience_records(
                 root,
-                ' '.join([
-                    slug.replace('-', ' '),
-                    str(target or '').replace('/', ' ').replace('-', ' '),
-                    str(ident.get('title') or ''),
-                    str(ra.get('question') or row.get('reader_question') or ''),
-                    str(ra.get('answer') or row.get('answer') or ''),
-                    str(row.get('problem') or ''),
-                ]),
+                row_query_blob,
                 limit=3,
             )
             if matched_exp:
@@ -2375,6 +2429,7 @@ def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_
         if isinstance(r, dict) and r.get('bucket') == 'create new content' and _matches_route_filter(r.get('target', ''), routes)
     ]
     issues = []
+    advisories = []
     checked = 0
     fixed_tables = 0
 
@@ -2438,6 +2493,7 @@ def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_
                 issues.append({'slug': slug, 'kind': 'corrupt-meta-json', 'detail': str(exc)})
 
         raw_txt = draft_file.read_text(errors='ignore')
+        data = None
         if draft_file.suffix == '.json':
             try:
                 data = json.loads(raw_txt)
@@ -2526,8 +2582,25 @@ def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_
                 pool_rec = read(p_dir / f'{slug}.pool-receipt.json')
             except Exception:
                 pool_rec = None
+        rn_obj = data.get('reviewerNote') if isinstance(data, dict) else None
+        rn_text = (
+            str(rn_obj.get('note') or '').strip()
+            if isinstance(rn_obj, dict)
+            else (rn_obj.strip() if isinstance(rn_obj, str) else '')
+        )
+        if rn_text and tracks_mod is not None and hasattr(tracks_mod, 'register_reviewer_note'):
+            try:
+                tracks_mod.register_reviewer_note(
+                    root,
+                    route=target,
+                    note_text=rn_text,
+                    label=(str(rn_obj.get('label') or '').strip() or None) if isinstance(rn_obj, dict) else None,
+                    reviewed_date=(str(rn_obj.get('reviewedDate') or rn_obj.get('reviewed_date') or '').strip() or None) if isinstance(rn_obj, dict) else None,
+                )
+            except Exception:
+                pass
         if tracks_mod is not None and hasattr(tracks_mod, 'log_internal_proof_outcome'):
-            tracks_mod.log_internal_proof_outcome(
+            proof_rec = tracks_mod.log_internal_proof_outcome(
                 root,
                 route=target,
                 draft_obj=data if isinstance(data, dict) else None,
@@ -2538,6 +2611,17 @@ def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_
                 job_id=str(plan.get('jobId') or ''),
                 published_status='draft-checked',
             )
+            if hasattr(tracks_mod, 'assess_draft_proof_quality'):
+                m_calcs = tracks_mod.match_site_calculators_and_usage(root, slug.replace('-', ' ') + ' ' + str(row.get('solution') or ''), target_route=target, limit=2) if hasattr(tracks_mod, 'match_site_calculators_and_usage') else []
+                q_adv = tracks_mod.assess_draft_proof_quality(
+                    draft_obj=data if isinstance(data, dict) else None,
+                    raw_text=raw_txt,
+                    used_types=proof_rec.get('proofTypesUsed') or [],
+                    legit_exempt=bool(proof_rec.get('legitimateExemption')),
+                    matched_calculators=m_calcs,
+                )
+                if q_adv.get('qualityFlags'):
+                    advisories.append({'slug': slug, 'route': target, **q_adv})
         if enforce_track_proof and tracks_mod is not None and draft_file.suffix == '.json' and isinstance(data, dict):
             br = brief_by_id.get(row.get('id', ''), {})
             row_tr = track if track in tracks_mod.TRACKS else tracks_mod.classify_action(row, br, plan)
@@ -2556,6 +2640,8 @@ def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_
         'checked': checked,
         'fixedPipeTables': fixed_tables,
         'issues': issues,
+        'informationGainAdvisory': advisories,
+        'zeroBlockPolicy': 'informationGainAdvisory triggers at most 1 Round-1 edit pass and NEVER blocks publication.',
     }
 
 

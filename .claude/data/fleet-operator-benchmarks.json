@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-25",
+  "usageRule": "Reference benchmarks from our own multi-site publishing/engineering operations and standard domain formulas. Inject at most 2 matched items (~100-140 tokens) per route. Never claim hands-on third-party product testing unless basis=='measured'. Never use on clinical dosing, legal advice, sanctions, or biography routes.",
+  "benchmarks": [
+    {
+      "id": "ops-static-vs-wordpress-stack",
+      "scope": "layer3labs",
+      "keywords": ["wordpress", "website", "builder", "builders", "wix", "framer", "squarespace", "webflow", "hostinger", "cms", "hosting", "migration", "plugin", "plugins", "static", "astro", "nextjs"],
+      "fact": "Operating roughly 30 production content and interactive-tool sites on Git-backed static/SSR deployments (Astro and Next.js) keeps recurring infrastructure near $0-$20/month per site with zero plugin-patch downtime, whereas typical small-business WordPress stacks accumulate $35-$150+/month across managed hosting, premium forms/SEO/security plugins, and recurring maintenance.",
+      "whenItFlips": "Non-technical teams editing daily visual landing pages without Git workflows still move faster on managed builders despite higher 36-month renewal TCO."
+    },
+    {
+      "id": "ops-multi-model-pipeline-economics",
+      "scope": "layer3labs",
+      "keywords": ["token", "tokens", "api", "pricing", "cost", "llm", "model", "models", "openai", "claude", "anthropic", "gemini", "deepseek", "qwen", "mistral", "routing", "batch", "prompt", "caching"],
+      "fact": "Across multi-model content, extraction, and verification pipelines on our ~30-site portfolio, effective cost per completed deliverable is governed by pass-1 accuracy rather than raw input token price: a budget model requiring 2-3 retry/fix passes plus long system context often costs more in total tokens and latency than a higher-rate model finishing cleanly on pass 1.",
+      "whenItFlips": "High-volume deterministic classification, routing, or short-context extraction with <5% retry rates favors flash/mini or open-weight endpoints."
+    },
+    {
+      "id": "ops-search-and-ai-visibility",
+      "scope": "layer3labs",
+      "keywords": ["seo", "search", "geo", "visibility", "citation", "citations", "perplexity", "chatgpt", "crawler", "llms", "sitemap", "indexnow", "indexing", "ctr", "organic", "schema", "ranking"],
+      "fact": "Across our ~30-site publishing portfolio (including Layer3Labs scaling from 655 to 115,644 organic search sessions between June and September 2026), pages earning early Google clicks and AI answer citations consistently pair a concrete numeric answer in Paragraph 1, structured comparison/scenario tables in the top half, clean FAQ/Article JSON-LD, and IndexNow submission.",
+      "whenItFlips": "Technical crawl hygiene (llms.txt, schema, IndexNow) cannot rescue commodity summaries that repeat vendor pricing pages without original math or testing."
+    },
+    {
+      "id": "ops-ecommerce-checkout-and-marketplace",
+      "scope": "layer3labs",
+      "keywords": ["shopping", "ecommerce", "checkout", "merchant", "merchants", "shopify", "stripe", "paypal", "amazon", "catalog", "feed", "cart", "aov", "margin", "commission", "agentic", "retail"],
+      "fact": "Drawing on managing a $200M+ consumer electronics business on Amazon (3M+ customer funnel analysis) and operating B2C marketplaces across 1.5M+ users, off-site and agent-mediated checkouts trade first-party customer email capture, bundle attach rate, and repeat LTV for top-of-funnel discovery—making take-rates painless on >55% gross-margin goods but punitive on <25% margin SKUs.",
+      "whenItFlips": "High-margin catalog brands with strong repeat replenishment can treat external agent/marketplace checkouts as profitable new-customer acquisition."
+    },
+    {
+      "id": "ops-local-llm-hardware-headroom",
+      "scope": "layer3labs",
+      "keywords": ["local", "vram", "gpu", "rtx", "5090", "4090", "3090", "mac", "studio", "mini", "unified", "memory", "ollama", "lmstudio", "quantization", "70b", "32b", "pc", "workstation", "hardware"],
+      "fact": "In practical local LLM sizing, usable model + KV-cache headroom on Apple Silicon unified memory is roughly 70%-75% of total RAM before macOS memory pressure degrades tok/s, while a single 24GB-32GB discrete GPU delivers 3x-5x faster prompt processing and token generation when the quantized weights + 8K-16K context fit completely inside VRAM.",
+      "whenItFlips": "Below ~15-20 hours/week of active inference, cloud API pay-as-you-go ($5-$30/month) takes 3+ years to break even against a $2,000-$4,000 local rig."
+    },
+    {
+      "id": "fleet-hoa-per-door-governance",
+      "scope": "fleet",
+      "keywords": ["hoa", "condo", "board", "dues", "reserve", "assessment", "property", "management", "units", "doors", "community", "accounting", "violation"],
+      "fact": "Working with HOA and condo boards across the U.S., software minimum monthly platform fees ($100-$300/month floors) punish self-managed associations under 40-50 doors ($3-$7/door/month), whereas 150+ door communities care far more about automated ACH collection, architectural tracking, and clean treasurer handoffs than per-door sticker price.",
+      "whenItFlips": "Under 25-unit associations with <20 monthly transactions often spend less staying on bank ACH + spreadsheet reserves than adopting enterprise HOA suites."
+    },
+    {
+      "id": "fleet-diy-vs-contractor-dispatch",
+      "scope": "fleet",
+      "keywords": ["repair", "diy", "plumber", "electrician", "hvac", "appliance", "parts", "tool", "labor", "callout", "service", "replace", "fix"],
+      "fact": "Standard residential trade callout minimums ($125-$225 trip/diagnostic fee before parts or hourly labor) mean sub-$60 bolt-on part swaps with zero gas, refrigerant, or main-panel exposure pay back specialty DIY tools on job one, while misdiagnosed control-board swaps quickly exceed pro service cost.",
+      "whenItFlips": "Any repair involving sealed refrigerants, gas valves, service-panel lugs, or warranty-voiding OEM diagnostics favors licensed dispatch."
+    },
+    {
+      "id": "fleet-consumable-tco-curve",
+      "scope": "fleet",
+      "keywords": ["razor", "blade", "blades", "shave", "shaving", "cartridge", "hepa", "filter", "filters", "purifier", "humidifier", "cigar", "humidor", "boveda", "ruck", "pack"],
+      "fact": "On physical gear with recurring consumables (HEPA/carbon filters, blades, humidity packs), 3-year total ownership cost is dominated 2x-4x more by proprietary replacement intervals and per-refill pricing than Day-1 hardware sticker price.",
+      "whenItFlips": "Occasional or travel-only use stretches replacement cycles enough that lower upfront hardware cost wins over 36 months."
+    }
+  ]
+}
