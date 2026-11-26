@@ -198,8 +198,9 @@ FLEET_CALCULATORS: dict[str, list[tuple[str, tuple[str, ...], int]]] = {
         ('/board-toolkit/', ('clickpay-alternatives', 'avigilon-alta-alternatives', 'hoa-software', 'payhoa', 'buildium'), 1),
     ],
     'jht243/theindoorreport': [
-        ('/tools/purifier-cost-calculator', ('levoit', 'air-purifier', 'hepa', 'cadr', 'filter-replacement'), 1),
-        ('/tools/humidity-calculator', ('midea', 'dehumidifier', 'humidity', 'pint', 'moisture'), 1),
+        ('/air/air-purifier-lifetime-cost', ('levoit', 'air-purifier', 'airfanta', 'dreo', 'hepa', 'cadr', 'filter-replacement'), 1),
+        ('/air/air-purifier-size-for-room', ('levoit', 'air-purifier', 'airfanta', 'dreo', 'cadr'), 1),
+        ('/humidity/dehumidifier-size', ('midea', 'dehumidifier', 'humidity', 'pint', 'moisture'), 1),
     ],
     'jht243/chalkbox': [
         ('/tools/', ('education-com-alternatives', 'hapara-alternatives', 'memrise-alternatives', 'worksheet', 'classroom'), 1),

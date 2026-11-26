@@ -2660,6 +2660,10 @@ _SAFE_SHARED_WRITE_PATTERNS = (
     'public/sitemap',
     'public/robots.txt',
     'src/pages/sitemap',
+    'src/utils/reviewerNotes.ts',
+    'src/data/reviewer-notes.ts',
+    'lib/reviewer-notes.ts',
+    'src/reviewer_notes.py',
     'scripts/',
     'package-lock.json',
 )

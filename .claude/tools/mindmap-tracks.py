@@ -399,14 +399,10 @@ def register_reviewer_note(
         store_path.write_text(updated)
     else:
         # TypeScript REVIEWER_NOTES: Record<string, ReviewerNoteEntry> = { ... }
-        block_re = re.compile(r'(export const REVIEWER_NOTES\s*:\s*Record<[^>]+>\s*=\s*\{)(.*?)(\n\})', re.S)
-        m = block_re.search(raw)
-        if not m:
-            # Handle single-line empty `{}`
-            empty_re = re.compile(r'(export const REVIEWER_NOTES\s*:\s*Record<[^>]+>\s*=\s*)\{\s*\}')
-            em = empty_re.search(raw)
-            if not em:
-                raise ValueError(f'Could not locate REVIEWER_NOTES map in {store_path}')
+        # Check single-line empty `{}` FIRST so re.S block_re never spans across `{};` into a later function's `\n}`
+        empty_re = re.compile(r'(export const REVIEWER_NOTES\s*:\s*Record<[^>]+>\s*=\s*)\{\s*\}')
+        em = empty_re.search(raw)
+        if em:
             entry_ts = (
                 f'  {json.dumps(clean_route)}: {{\n'
                 f'    label: {json.dumps(eff_label, ensure_ascii=False)},\n'
@@ -417,6 +413,10 @@ def register_reviewer_note(
             updated = raw[:em.start()] + em.group(1) + '{\n' + entry_ts + '\n}' + raw[em.end():]
             store_path.write_text(updated)
         else:
+            block_re = re.compile(r'(export const REVIEWER_NOTES\s*:\s*Record<[^>]+>\s*=\s*\{)(.*?)(\n\})', re.S)
+            m = block_re.search(raw)
+            if not m:
+                raise ValueError(f'Could not locate REVIEWER_NOTES map in {store_path}')
             entry_ts = (
                 f'  {json.dumps(clean_route)}: {{\n'
                 f'    label: {json.dumps(eff_label, ensure_ascii=False)},\n'
