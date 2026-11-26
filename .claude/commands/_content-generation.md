@@ -44,7 +44,7 @@ calling the generator — the same mechanism the DataForSEO / humanize keys use.
 ```bash
 python3 scripts/lib/content_gen.py preflight
 ```
-Use this check only for an actual writing step, after its existing chart and evidence requirements are satisfied. Empty intakes, busy workers, and jobs resuming at audit or publication skip the paid writer probe. Check providers in configured order and stop at the first working model. If none work, preserve the job and report the writer failure. An explicit `preflight --all-models` diagnostic checks standby providers too.
+Use this check only for an actual writing step, after its existing chart and evidence requirements are satisfied. Empty intakes, busy workers, and jobs resuming at audit or publication skip the paid writer probe. Check providers in configured waterfall order (`Claude -> Gemini / ChatGPT`) and stop at the first working model. **Anthropic credit exhaustion, billing/spend limits, or rate limits are NEVER a blocker:** `content_gen.py` skips dry Anthropic keys with zero retries and waterfalls seamlessly to Gemini or ChatGPT (OpenAI), exiting `0` (`WATERFALL ACTIVE`) whenever any provider responds. Never stop, defer, hold, skip pages, or report a run failed due to Anthropic credits when Gemini or ChatGPT succeeds. Only if every provider in the chain fails (`exit 2`), preserve the job and report the writer failure. An explicit `preflight --all-models` diagnostic checks standby providers too.
 
 ## Testing-format decision
 

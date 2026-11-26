@@ -111,20 +111,40 @@ _load_repo_config()
 # OPUS-PRIMARY (2026-10-09): read AFTER the repo file loads — read before it, a CONTENT_MODEL line in
 # .claude/content-gen.env was silently ignored.
 MODEL = os.environ.get("CONTENT_MODEL", "gemini-3.8-flash")
-FALLBACK = os.environ.get("CONTENT_FALLBACK_MODEL", "gemini-3.8-flash")
+FALLBACK = os.environ.get("CONTENT_FALLBACK_MODEL", "gemini-3.8-flash,gpt-6-sol")
 ANTHROPIC_EFFORT = os.environ.get("CONTENT_ANTHROPIC_EFFORT", "high").strip().lower()
 if ANTHROPIC_EFFORT not in ("low", "medium", "high", "xhigh", "max"):
     ANTHROPIC_EFFORT = "high"
 
 
+# ANTHROPIC_WATERFALL_V2 — Anthropic credit/quota/rate-limit errors are NEVER a blocker.
+# Whenever Anthropic (claude-*) is in the chain, guarantee both Gemini and OpenAI/ChatGPT
+# standbys exist in the waterfall (preserving the site's configured order first) unless
+# explicitly disabled via CONTENT_WATERFALL_STRICT=1 or CONTENT_FALLBACK_MODEL=none.
+_WATERFALL_STANDBY = ("gemini-3.8-flash", "gpt-6-sol")
+
+
 def _fallbacks() -> list:
-    """FALLBACK as an ordered list (a comma list is a chain), primary and repeats removed."""
+    """FALLBACK as an ordered list (a comma list is a chain), primary and repeats removed.
+    Auto-appends missing Gemini/OpenAI standbys when Anthropic is in the chain."""
+    raw = (FALLBACK or "").strip()
+    if raw.lower() in ("none", "off", "0"):
+        return []
     out = []
-    for m in (FALLBACK or "").split(","):
+    for m in raw.split(","):
         m = m.strip()
         if m and m != MODEL and m not in out:
             out.append(m)
+    if os.environ.get("CONTENT_WATERFALL_STRICT", "").strip() != "1":
+        active = [MODEL] + out
+        if any(provider_for(m) == "anthropic" for m in active):
+            seen_providers = {provider_for(m) for m in active}
+            for standby in _WATERFALL_STANDBY:
+                if provider_for(standby) not in seen_providers:
+                    out.append(standby)
+                    seen_providers.add(provider_for(standby))
     return out
+
 
 
 def _chain() -> list:
@@ -723,8 +743,8 @@ def _is_key_temporarily_dry(provider: str, name: str, key: str) -> bool:
         return False
 
 
-def _mark_key_temporarily_dry(provider: str, name: str, key: str, reason: str = "") -> None:
-    ttl = _dry_key_ttl()
+def _mark_key_temporarily_dry(provider: str, name: str, key: str, reason: str = "", ttl_override: int | None = None) -> None:
+    ttl = _dry_key_ttl() if ttl_override is None else max(0, int(ttl_override))
     if ttl <= 0 or not key:
         return
     if "unittest" in sys.modules and not os.environ.get("CONTENT_DEAD_KEY_CACHE_FILE"):
@@ -868,11 +888,13 @@ def _post_stream_anthropic(key: str, payload: dict, timeout: int = 900) -> dict:
         except urllib.error.HTTPError as e:
             detail = e.read().decode("utf-8", "replace")[:600]
             last = f"HTTP {e.code}: {detail}"
+            if _anth_key_dead(last):
+                raise RuntimeError(last)
             if e.code not in (429, 500, 502, 503, 504, 529) and 400 <= e.code < 500:
                 raise RuntimeError(last)
         except RuntimeError as e:
             last = str(e)
-            if "overloaded" not in last and "api_error" not in last and "connection cut" not in last:
+            if _anth_key_dead(last) or ("overloaded" not in last and "api_error" not in last and "connection cut" not in last):
                 raise
         except Exception as e:  # noqa: BLE001
             last = f"{type(e).__name__}: {e}"
@@ -884,9 +906,15 @@ def _post_stream_anthropic(key: str, payload: dict, timeout: int = 900) -> dict:
 
 
 def _anth_key_dead(err: str) -> bool:
-    e = err.lower()
-    return ("credit balance" in e or "billing" in e or "HTTP 401" in err or "HTTP 403" in err
-            or "authentication_error" in e or "permission_error" in e)
+    e = (err or "").lower()
+    return any(tok in e for tok in (
+        "credit balance", "out of credit", "insufficient_credit", "insufficient credit",
+        "insufficient_quota", "billing", "spend limit", "usage limit", "monthly limit",
+        "organization has been disabled", "account has been disabled", "account_disabled",
+        "authentication_error", "permission_error", "invalid x-api-key", "invalid_api_key",
+        "revoked", "payment required", "http 401", "http 402", "http 403",
+    ))
+
 
 
 def _bare_json(text: str) -> str:
@@ -949,11 +977,13 @@ def call_anthropic(model: str, system: str, prompt: str, max_tokens: int, thinki
             if _anth_key_dead(str(e)):
                 _ANTH_DRY.add(name)
                 _mark_key_temporarily_dry("anthropic", name, key, str(e))
-                log(f"anthropic key {name} unusable ({str(e)[:120]}) — trying the next key in the pool")
+                log(f"anthropic key {name} blocked/exhausted ({str(e)[:120]}) — waterfalling to next key/provider")
                 errors.append(f"{name}: {str(e)[:160]}")
                 continue
             if "HTTP 429" in str(e) or "HTTP 529" in str(e) or "overloaded" in str(e):
-                log(f"anthropic key {name} rate-limited/overloaded after retries — trying the next key")
+                _ANTH_DRY.add(name)
+                _mark_key_temporarily_dry("anthropic", name, key, str(e), ttl_override=300)
+                log(f"anthropic key {name} rate-limited/overloaded after retries — short-TTL skipping (300s) and waterfalling")
                 errors.append(f"{name}: {str(e)[:160]}")
                 continue
             raise
@@ -1230,12 +1260,18 @@ def complete(system: str, prompt: str, *, model: str = None, max_tokens: int = N
                 log(f"complete(): json_mode output not parseable from {r['model']} — regenerating once")
                 r2 = generate(system or "", prompt); t2 = strip_fences(r2["text"])
                 if _ok(t2): return t2
-                if _fallbacks():
-                    fb = _fallbacks()[0]
-                    log(f"complete(): still not JSON — trying fallback {fb}")
+                tried_providers = {r.get("provider"), r2.get("provider")}
+                remaining = [m for m in _chain() if m not in (r.get("model"), r2.get("model")) and provider_for(m) not in tried_providers]
+                if not remaining:
+                    remaining = [m for m in _fallbacks() if m != r2.get("model")]
+                for fb in remaining:
+                    log(f"complete(): still not JSON — trying waterfall fallback {fb}")
                     m0 = MODEL; MODEL = fb
                     try:
                         r3 = generate(system or "", prompt); t3 = strip_fences(r3["text"])
+                    except Exception as e:  # noqa: BLE001
+                        log(f"complete(): waterfall fallback {fb} failed ({type(e).__name__}: {str(e)[:120]})")
+                        continue
                     finally:
                         MODEL = m0
                     if _ok(t3): return t3
@@ -2006,22 +2042,21 @@ def cmd_preflight(a) -> int:
     CMD = "preflight"
     chain = _chain()
     print(f"[content_gen] primary   : {MODEL} ({provider_for(MODEL)})")
-    print(f"[content_gen] fallback  : {' -> '.join(_fallbacks()) or 'none'}")
-    if provider_for(MODEL) == "anthropic":
-        print(f"[content_gen] claude effort: {ANTHROPIC_EFFORT} (adaptive thinking)")
+    print(f"[content_gen] fallback  : {', '.join(_fallbacks()) or 'none'}")
+    print(f"[content_gen] waterfall : {' -> '.join(chain)}")
     print(f"[content_gen] thinking  : {THINKING}   max_tokens: {MAX_TOKENS}")
-    # "Never block a routine on a dry key": the run may proceed if the PRIMARY answers, or —
-    # failing that — the FALLBACK does (write() then falls back, loudly). A cloud sandbox that
-    # has only the OpenAI key (Gemini key not yet injected) keeps producing pages via the
-    # fallback, and every page's meta + the run email say so. Only a chain with NO usable
-    # model stops the phase.
+    # "Never block a routine on a dry key": the run proceeds seamlessly if the PRIMARY or ANY
+    # waterfall standby (Gemini / OpenAI ChatGPT) answers. Anthropic credit exhaustion is NEVER
+    # a blocker — only a chain where EVERY provider fails exits non-zero.
     usable = []
-    for m in chain:
+    for idx, m in enumerate(chain):
         p = provider_for(m)
+        has_next = idx + 1 < len(chain)
         try:
             name, key = resolve_key(p)
         except KeyError as e:
-            print(f"[content_gen] {m:22} KEY MISSING — {e}"); continue
+            tag = "SKIP (waterfall -> next)" if has_next else "KEY MISSING"
+            print(f"[content_gen] {m:22} {tag} — {e}"); continue
         try:
             # tiny ping, no thinking, so a thinking model can't eat the cap
             r = CALLERS[p](m, "Reply with exactly: OK", "ping", 256, "0" if p == "gemini" else "low")
@@ -2033,13 +2068,15 @@ def cmd_preflight(a) -> int:
             if not getattr(a, "all_models", False):
                 break
         except Exception as e:  # noqa: BLE001
-            print(f"[content_gen] {m:22} FAIL — {str(e)[:160]}")
+            tag = "SKIP (waterfall -> next)" if has_next else "FAIL"
+            print(f"[content_gen] {m:22} {tag} — {str(e)[:160]}")
     if not usable:
         die(2, "preflight failed: no usable model in the chain")
     if usable[0] != MODEL:
-        print(f"[content_gen] WARNING: primary {MODEL} unusable — this run will write via the "
-              f"FALLBACK ({usable[0]}). Every page will be marked fallback_used in its meta.")
-    print("[content_gen] preflight OK")
+        print(f"[content_gen] WATERFALL ACTIVE: primary {MODEL} unavailable — writing seamlessly via "
+              f"{usable[0]} (NON-BLOCKING: proceed normally with all pages; do NOT abort, defer, or "
+              f"report primary credit exhaustion as a blocker). Every page records fallback_used in meta.")
+    print(f"[content_gen] preflight OK (active={usable[0]})")
     return 0
 
 
