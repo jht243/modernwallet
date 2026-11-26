@@ -123,18 +123,33 @@ REGULATED_SITES = {
     'jht243/weaponization_fund',
 }
 
-# Template-wired Reviewer Note stores by repo
+# Template-wired Reviewer Note stores by repo (all 29 owned fleet sites)
 REVIEWER_NOTE_STORES: dict[str, str] = {
     'jht243/americanpivot': 'src/data/reviewer-notes.ts',
     'jht243/banthebots': 'src/reviewer_notes.py',
+    'jht243/chalkbox': 'src/data/reviewer-notes.ts',
     'jht243/cuban_insights': 'src/reviewer_notes.py',
+    'jht243/diy-repair-guide': 'src/data/reviewer-notes.ts',
     'jht243/drones_and_defense': 'src/data/reviewer-notes.ts',
+    'jht243/humidor-atlas': 'src/utils/reviewerNotes.ts',
+    'jht243/jet-and-beyond': 'src/data/reviewer-notes.ts',
     'jht243/layer3labs': 'src/utils/reviewerNotes.ts',
+    'jht243/longevitybenchmark': 'src/data/reviewer-notes.ts',
+    'jht243/medicalfrontier': 'src/data/reviewer-notes.ts',
+    'jht243/metabolic_journal': 'src/reviewer_notes.py',
     'jht243/modernwallet': 'src/data/reviewer-notes.ts',
+    'jht243/newparentpicks': 'src/data/reviewer-notes.ts',
     'jht243/orbitalintel': 'src/data/reviewer-notes.ts',
+    'jht243/partygamekit': 'src/data/reviewer-notes.ts',
     'jht243/pipeflare-site': 'lib/reviewer-notes.ts',
+    'jht243/prayer-site': 'lib/reviewer-notes.ts',
+    'jht243/psych_report': 'src/reviewer_notes.py',
+    'jht243/readnext': 'src/data/reviewer-notes.ts',
+    'jht243/shavingschool': 'src/data/reviewer-notes.ts',
     'jht243/the_bot_scout': 'src/data/reviewer-notes.ts',
     'jht243/thehoaguide': 'src/data/reviewer-notes.ts',
+    'jht243/theindoorreport': 'src/data/reviewer-notes.ts',
+    'jht243/trecklist-web': 'src/data/reviewer-notes.ts',
     'jht243/undertheload': 'src/data/reviewer-notes.ts',
     'jht243/ven_biz_network': 'src/reviewer_notes.py',
     'jht243/vet_tools': 'src/reviewer_notes.py',
@@ -147,10 +162,11 @@ FLEET_CALCULATORS: dict[str, list[tuple[str, tuple[str, ...], int]]] = {
         ('/tools/local-ai-hardware-calculator', ('dgx-spark', 'mac-studio', 'ryzen-ai-max', 'ryzen-ai-halo', 'geekom-a9', 'evo-x5', 'rtx-spark', 'local-ai', 'local-llm', 'vram', 'unified-memory'), 1),
         ('/tools/what-llm-can-i-run', ('dgx-spark', 'mac-studio', 'ryzen-ai-max', 'ryzen-ai-halo', 'geekom-a9', 'evo-x5', 'rtx-spark', 'local-ai', 'local-llm'), 1),
         ('/tools/gpu-rent-vs-buy-calculator', ('dgx-spark', 'mac-studio', 'ryzen-ai-max', 'gpu-rent', 'local-ai'), 1),
-        ('/tools/wordpress-cost-calculator', ('wordpress', 'get-off-wordpress', 'wix-ai-website-builder', 'hostinger-ai-website-builder'), 1),
+        ('/tools/wordpress-cost-calculator', ('wordpress', 'get-off-wordpress', 'hostinger-ai-website-builder'), 1),
         ('/roi/ai-receptionist-roi-calculator', ('appointment-scheduling', 'ai-receptionist', 'missed-call', 'telephone-booking'), 1),
-        ('/tools/ai-workflow-roi-calculator', ('lead-qualification', 'workflow-automation', 'agentic-commerce', 'chatgpt-shopping'), 1),
-        ('/tools/ai-model-cost-calculator', ('token-pricing', 'api-pricing', 'model-pricing', 'deepseek-pricing', 'claude-pricing', 'gemini-pricing'), 1),
+        ('/tools/support-savings-calculator', ('agentic-commerce', 'chatgpt-shopping', 'acp-vs-ucp'), 1),
+        ('/tools/ai-vendor-evaluation-checklist', ('chatgpt-shopping', 'get-off-wordpress'), 1),
+        ('/tools/ai-model-cost-calculator', ('token-pricing', 'api-pricing', 'model-pricing', 'deepseek-pricing', 'claude-pricing', 'gemini-pricing', 'wix-ai-website-builder', 'framer-ai', 'agentic-commerce'), 1),
         ('/tools/voice-agent-cost-calculator', ('voice-agent', 'speechify-pricing', 'tts', 'voice-generator'), 1),
     ],
     'jht243/modernwallet': [
@@ -374,7 +390,10 @@ def _has_substantive_internal_proof(text: str) -> tuple[bool, list[str], bool]:
         proof_types.append('hands_on_or_live_sandbox_test')
     if SUBSTANTIVE_OPERATOR_RE.search(cleaned):
         proof_types.append('client_and_operator_experience')
-    if SUBSTANTIVE_MATH_RE.search(cleaned):
+    if SUBSTANTIVE_MATH_RE.search(cleaned) or (
+        re.search(r'["\']?(?:scenarioTable|table)["\']?\s*:\s*\{', cleaned)
+        and re.search(r'(?:\$\s*\d|\b\d+(?:\.\d+)?\s*(?:%|credits?|months?|years?|gb\b))', cleaned, re.I)
+    ):
         proof_types.append('internal_cost_or_spec_modeling')
     for sm in SURVEY_N_RE.finditer(cleaned):
         n_val = int(sm.group(1) or sm.group(2) or 0)
@@ -1075,11 +1094,19 @@ def _scan_repo_window(item: tuple[str, str], since_iso: str) -> list[dict]:
     carryover_cutoff_dt = cutoff_dt - dt.timedelta(hours=24)
 
     def _upsert_event(rec: dict, rkeys: list[str], page_text: str = '', ref: str = branch) -> None:
-        scored = evaluate_page_quality(dict(rec), full_repo, page_text=page_text, ref=ref)
+        scored = evaluate_page_quality(dict(rec), full_repo, page_text=page_text, ref=branch)
+        new_rank = (
+            int((scored.get('qualitySignals') or {}).get('qualityScorePct') or 0),
+            1 if scored.get('usedInternalProof') else 0,
+        )
         existing_idx = next((emitted_by_route_key[rk] for rk in rkeys if rk in emitted_by_route_key), None)
         if existing_idx is not None:
             prev = events[existing_idx]
-            if scored.get('usedInternalProof') or not prev.get('usedInternalProof'):
+            prev_rank = (
+                int((prev.get('qualitySignals') or {}).get('qualityScorePct') or 0),
+                1 if prev.get('usedInternalProof') else 0,
+            )
+            if new_rank >= prev_rank:
                 events[existing_idx] = scored
         else:
             idx = len(events)
@@ -1088,7 +1115,11 @@ def _scan_repo_window(item: tuple[str, str], since_iso: str) -> list[dict]:
                 emitted_by_route_key[rk] = idx
         for rk in rkeys:
             prev_c = carryover_by_key.get(rk)
-            if prev_c is None or scored.get('usedInternalProof') or not prev_c.get('usedInternalProof'):
+            prev_c_rank = (
+                int(((prev_c or {}).get('qualitySignals') or {}).get('qualityScorePct') or 0),
+                1 if (prev_c or {}).get('usedInternalProof') else 0,
+            )
+            if prev_c is None or new_rank >= prev_c_rank:
                 carryover_by_key[rk] = scored
 
     # 0. Read committed `reports/internal-proof-log.jsonl` directly
