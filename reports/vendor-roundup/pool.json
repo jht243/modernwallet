@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24T16:09:57.659Z",
+  "generated": "2026-11-26T16:09:00.924Z",
   "rows": [
     {
       "vertical": "dataannotation-alternatives",
@@ -16,8 +16,18 @@
       "roundupSlug": "best-ai-investing-apps",
       "route": "ENRICH",
       "qualified": 16,
-      "listed": 15,
+      "listed": 14,
       "missing": [
+        {
+          "domain": "promptsninja.com",
+          "name": "7 Best AI Investing Apps",
+          "site_url": "https://promptsninja.com",
+          "one_liner": "Dec 5, 2023 — Investors can choose between two payment plans on Trade Ideas, the Standard plan and the Premium plan, which costs $118 and $228 per month ... Read more",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": 10,
+          "primary_email": "am@promptsninja.com"
+        },
         {
           "domain": "ainvest.com",
           "name": "AI Investing App: Trade Stocks With AI Analysis",
@@ -89,8 +99,8 @@
       "label": "money market accounts",
       "roundupSlug": "best-money-market-accounts",
       "route": "ENRICH",
-      "qualified": 16,
-      "listed": 14,
+      "qualified": 15,
+      "listed": 13,
       "missing": [
         {
           "domain": "53.com",
@@ -237,10 +247,21 @@
       "vertical": "credit-cards-for-fair-credit",
       "label": "credit cards for fair credit",
       "roundupSlug": "best-credit-cards-for-fair-credit",
-      "route": "ACCRUE",
-      "qualified": 5,
+      "route": "ENRICH",
+      "qualified": 6,
       "listed": 5,
-      "missing": []
+      "missing": [
+        {
+          "domain": "usefattura.com.br",
+          "name": "Fattura",
+          "site_url": "https://www.usefattura.com.br/en",
+          "one_liner": "Show HN: Fattura – Parse credit card PDF statements and split family bills",
+          "site_kind": "unknown",
+          "has_pricing": false,
+          "serp_rank": null,
+          "primary_email": null
+        }
+      ]
     },
     {
       "vertical": "custodial-roth-ira-providers",
@@ -315,8 +336,8 @@
       "label": "student loan refinance companies",
       "roundupSlug": "best-student-loan-refinance",
       "route": "ACCRUE",
-      "qualified": 9,
-      "listed": 9,
+      "qualified": 8,
+      "listed": 8,
       "missing": []
     },
     {
@@ -325,7 +346,7 @@
       "roundupSlug": "best-secured-credit-cards",
       "route": "ENRICH",
       "qualified": 8,
-      "listed": 6,
+      "listed": 7,
       "missing": [
         {
           "domain": "bankatfirst.com",
@@ -336,16 +357,6 @@
           "has_pricing": false,
           "serp_rank": 10,
           "primary_email": "client.service@bankatfirst.com"
-        },
-        {
-          "domain": "oneunited.com",
-          "name": "UNITY® Visa Secured Credit Card",
-          "site_url": "https://oneunited.com",
-          "one_liner": "A secured card is designed to repair damaged credit or start from scratch.Since approval relies on a deposit rather than a high credit score, it provides ... Read more",
-          "site_kind": "vendor",
-          "has_pricing": false,
-          "serp_rank": 11,
-          "primary_email": null
         }
       ]
     },
@@ -398,21 +409,10 @@
       "vertical": "invoice-factoring-companies",
       "label": "invoice factoring companies",
       "roundupSlug": "best-invoice-factoring-companies",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 33,
-      "listed": 32,
-      "missing": [
-        {
-          "domain": "factoringfast.com",
-          "name": "Invoice Factoring Company, can get your business ...",
-          "site_url": "https://factoringfast.com",
-          "one_liner": "Our invoice factoring service allows you to get paid when you generate your invoices, despite when your customer actually pays the invoice. This service ... Read more",
-          "site_kind": "vendor",
-          "has_pricing": false,
-          "serp_rank": 17,
-          "primary_email": "admin@factoringfast.com"
-        }
-      ]
+      "listed": 33,
+      "missing": []
     },
     {
       "vertical": "business-line-of-credit-rates-by-lender",

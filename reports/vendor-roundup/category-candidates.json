@@ -8,16 +8,24 @@
       "bench.co"
     ],
     "unlabelled": [
+      "farther.com",
+      "stoke.money",
       "zenbusiness.com"
+    ],
+    "attorney/estate-planning-services": [
+      "daviswillsandtrusts.com"
     ],
     "invoicing-apps-for-freelancers": [
       "invoicingpro.org"
     ],
+    "life insurance": [
+      "ethos.com"
+    ],
     "home-equity/reverse-mortgage alternatives": [
       "truehold.com"
     ],
-    "personal loan lender": [
-      "creditninja.com"
+    "budgeting-apps": [
+      "maali.app"
     ],
     "credit repair": [
       "asapcreditrepairusa.com"
@@ -25,579 +33,564 @@
   },
   "demand_candidates": [
     {
-      "head": "credit card for best buy",
-      "volume": 4768000,
+      "head": "best credit cards",
+      "volume": 971300,
       "queries": [
-        "credit card for best buy",
-        "best buy card credit card",
-        "best buy credit card",
-        "best best buy credit card",
-        "best buy best buy credit card",
-        "best buy credit card best buy",
-        "best credit card for best buy",
-        "online best buy credit card",
-        "best buy credit card l"
-      ]
-    },
-    {
-      "head": "credit for best buy card",
-      "volume": 2200000,
-      "queries": [
-        "credit for best buy card",
-        "credit for best buy credit card",
-        "credit best buy card",
-        "best buy credit card credit"
-      ]
-    },
-    {
-      "head": "sign in best buy credit card",
-      "volume": 1104000,
-      "queries": [
-        "sign in best buy credit card",
-        "best buy sign in credit card",
-        "best buy credit card sign"
-      ]
-    },
-    {
-      "head": "best rewards credit card",
-      "volume": 841500,
-      "queries": [
-        "best rewards credit card",
-        "best credit card rewards card",
-        "reward credit card best",
-        "credit card for best rewards",
-        "credit card reward best",
-        "best credit card for reward",
-        "best reward credit card",
-        "best credit card rewards cards",
-        "best credit card reward cards",
-        "rewards credit card best",
-        "best credit card for rewards",
-        "best rewards for credit card",
-        "credit card rewards best",
-        "credit card best rewards",
-        "best credit card rewards",
-        "best credit card reward card",
-        "best credit card reward"
-      ]
-    },
-    {
-      "head": "best buy credit card log in",
-      "volume": 776500,
-      "queries": [
-        "best buy credit card log in",
-        "best buy credit card: log in",
-        "best buys credit card log in"
-      ]
-    },
-    {
-      "head": "credit card best card",
-      "volume": 716100,
-      "queries": [
-        "credit card best card",
-        "best card credit card",
-        "credit card best",
-        "best best credit card",
+        "best credit cards",
+        "best credit cards 2026",
+        "best credit cards 2025",
         "best credit card",
-        "credit card the best",
-        "best of credit card",
+        "credit card best credit card",
         "best credit card 2026",
-        "best credit card 2025"
+        "best credit card 2025",
+        "best credit card for me",
+        "the best credit cards",
+        "credit card best",
+        "credit cards best",
+        "the best credit card"
       ]
     },
     {
-      "head": "credit card at best buy",
-      "volume": 550000,
+      "head": "best buy credit card",
+      "volume": 554800,
       "queries": [
-        "credit card at best buy"
+        "best buy credit card",
+        "best buy credit card card",
+        "best buy credit cards"
       ]
     },
     {
-      "head": "best buy credit card company",
-      "volume": 550000,
+      "head": "best small business accounting software",
+      "volume": 120270,
       "queries": [
-        "best buy credit card company"
-      ]
-    },
-    {
-      "head": "account best buy credit card",
-      "volume": 550000,
-      "queries": [
-        "account best buy credit card"
-      ]
-    },
-    {
-      "head": "payment for best buy credit card",
-      "volume": 417000,
-      "queries": [
-        "payment for best buy credit card",
-        "payment best buy credit card",
-        "best buy credit card payment",
-        "best buy best buy credit card payment",
-        "credit card best buy payment",
-        "credit card payment best buy"
-      ]
-    },
-    {
-      "head": "best cash credit card rewards",
-      "volume": 396000,
-      "queries": [
-        "best cash credit card rewards",
-        "best cash reward credit card",
-        "best credit card for cash reward",
-        "best credit card for cash rewards",
-        "best credit card cash rewards",
-        "best cash rewards credit card",
-        "credit card best cash rewards",
-        "best credit card cash reward"
-      ]
-    },
-    {
-      "head": "best credit card with best rewards",
-      "volume": 297000,
-      "queries": [
-        "best credit card with best rewards",
-        "best credit card with rewards",
-        "best credit card with reward",
-        "credit card with the best rewards",
-        "credit card with best reward",
-        "credit card with best rewards"
-      ]
-    },
-    {
-      "head": "credit card best points",
-      "volume": 297000,
-      "queries": [
-        "credit card best points",
-        "credit card points best",
-        "best credit card points",
-        "best credit card for points",
-        "best point credit card",
-        "best points credit card"
-      ]
-    },
-    {
-      "head": "pay for best buy credit card",
-      "volume": 296000,
-      "queries": [
-        "pay for best buy credit card",
-        "pay best buy credit card",
-        "best buy credit card pay",
-        "best buy pay credit card"
-      ]
-    },
-    {
-      "head": "best buy my credit card",
-      "volume": 271500,
-      "queries": [
-        "best buy my credit card",
-        "my best buy credit card",
-        "my credit card best buy"
-      ]
-    },
-    {
-      "head": "best card credit",
-      "volume": 271500,
-      "queries": [
-        "best card credit",
-        "best credit card for credit",
-        "credit card for best credit"
-      ]
-    },
-    {
-      "head": "best credit card for traveling",
-      "volume": 220000,
-      "queries": [
-        "best credit card for traveling",
-        "best credit card traveling"
-      ]
-    },
-    {
-      "head": "best buy credit card bill pay",
-      "volume": 208500,
-      "queries": [
-        "best buy credit card bill pay",
-        "pay best buy credit card bill",
-        "best buy credit card pay bill"
-      ]
-    },
-    {
-      "head": "best credit card good credit",
-      "volume": 181000,
-      "queries": [
-        "best credit card good credit",
-        "best credit card for good credit"
-      ]
-    },
-    {
-      "head": "best airlines credit card",
-      "volume": 155400,
-      "queries": [
-        "best airlines credit card",
-        "best credit card for airlines",
-        "best credit card airline",
-        "best credit card airlines",
-        "airline credit card best",
-        "best airline credit card",
-        "best credit card for airline"
-      ]
-    },
-    {
-      "head": "best credit card flight",
-      "volume": 111000,
-      "queries": [
-        "best credit card flight",
-        "best credit card for flights",
-        "best flight credit card",
-        "best credit card flights",
-        "best flights credit card"
-      ]
-    },
-    {
-      "head": "best credit card for traveller",
-      "volume": 110000,
-      "queries": [
-        "best credit card for traveller"
-      ]
-    },
-    {
-      "head": "best credit card for travelling",
-      "volume": 110000,
-      "queries": [
-        "best credit card for travelling"
-      ]
-    },
-    {
-      "head": "best beginners credit card",
-      "volume": 108600,
-      "queries": [
-        "best beginners credit card",
-        "best credit card for a beginner",
-        "best credit card for beginner",
-        "best credit card for beginners",
-        "best credit card beginner",
-        "best beginner credit card"
-      ]
-    },
-    {
-      "head": "best credit card money back",
-      "volume": 99000,
-      "queries": [
-        "best credit card money back",
-        "best credit card for money back"
-      ]
-    },
-    {
-      "head": "best credit transfer card",
-      "volume": 99000,
-      "queries": [
-        "best credit transfer card",
-        "best credit transfer credit card"
-      ]
-    },
-    {
-      "head": "best credit card with points",
-      "volume": 99000,
-      "queries": [
-        "best credit card with points",
-        "credit card with best points"
-      ]
-    },
-    {
-      "head": "best credit card with benefits",
-      "volume": 99000,
-      "queries": [
-        "best credit card with benefits",
-        "credit card with benefits best"
-      ]
-    },
-    {
-      "head": "best credit card transfer",
-      "volume": 99000,
-      "queries": [
-        "best credit card transfer",
-        "best credit card transfers"
-      ]
-    },
-    {
-      "head": "best credit rewards card",
-      "volume": 99000,
-      "queries": [
-        "best credit rewards card",
-        "best credit reward card"
-      ]
-    },
-    {
-      "head": "best credit card with cash rewards",
-      "volume": 99000,
-      "queries": [
-        "best credit card with cash rewards",
-        "credit card with best cash rewards"
-      ]
-    },
-    {
-      "head": "best credit card for airline miles",
-      "volume": 96800,
-      "queries": [
-        "best credit card for airline miles",
-        "best credit card airline miles",
-        "best airline credit card miles",
-        "best airlines miles credit card",
-        "best credit card for airlines miles",
-        "airline miles credit card best",
-        "best airline credit card for miles",
-        "best airline mile credit card"
-      ]
-    },
-    {
-      "head": "best credit card with good credit",
-      "volume": 90500,
-      "queries": [
-        "best credit card with good credit"
-      ]
-    },
-    {
-      "head": "citibank best buy credit card",
-      "volume": 81300,
-      "queries": [
-        "citibank best buy credit card",
-        "best buy citibank credit card",
-        "citibank credit card best buy"
-      ]
-    },
-    {
-      "head": "best software for accounting for small business",
-      "volume": 81000,
-      "queries": [
-        "best software for accounting for small business",
-        "best business accounting software for small business",
-        "best software for small business accounting",
         "best small business accounting software",
-        "best accounting small business software",
-        "best accounting software small business",
-        "small business best accounting software",
-        "best accounting software for a small business",
-        "best small business software accounting",
-        "best software for accounting small business",
         "best accounting software for small business",
-        "small business accounting software best",
-        "best small business software for accounting",
-        "best small business accounting app",
-        "best small business accounting apps"
+        "best accounting software small business",
+        "best online accounting software for small business",
+        "best business accounting software for small business",
+        "best software for accounting for small business",
+        "best software for small business accounting"
       ]
     },
     {
-      "head": "pay on best buy credit card",
-      "volume": 74000,
+      "head": "best budget smartphones",
+      "volume": 117840,
       "queries": [
-        "pay on best buy credit card"
+        "best budget smartphones",
+        "best budget smartphones 2025",
+        "best budget smartphones 2026",
+        "best budget smartphone",
+        "best budget smartphone 2025",
+        "best budget smartphone 2026"
       ]
     },
     {
-      "head": "pay best buy credit card payment",
-      "volume": 74000,
+      "head": "best free budget templates",
+      "volume": 110000,
       "queries": [
-        "pay best buy credit card payment"
+        "best free budget templates"
       ]
     },
     {
-      "head": "best buy credit card pa",
-      "volume": 74000,
+      "head": "best budget laptops 2025",
+      "volume": 81600,
       "queries": [
-        "best buy credit card pa"
+        "best budget laptops 2025",
+        "best budget laptop",
+        "budget best laptop",
+        "best budget laptops",
+        "best budget laptops 2026",
+        "best budget laptop 2025",
+        "best budget laptop 2026",
+        "budget laptops best"
       ]
     },
     {
-      "head": "credit card best miles",
-      "volume": 72600,
+      "head": "best budget office chairs",
+      "volume": 76900,
       "queries": [
-        "credit card best miles",
-        "best credit card miles",
-        "credit card for miles best",
-        "best credit card for miles",
-        "credit card best for miles",
-        "miles credit card best"
+        "best budget office chairs",
+        "best budget office chair"
       ]
     },
     {
-      "head": "best credit card starter",
-      "volume": 72400,
+      "head": "best budget mirrorless cameras",
+      "volume": 74880,
       "queries": [
-        "best credit card starter",
-        "best starter credit card",
-        "best credit card for starters",
-        "best credit card for starter"
+        "best budget mirrorless cameras",
+        "best budget mirrorless camera"
       ]
     },
     {
-      "head": "citi credit card best buy",
-      "volume": 67600,
+      "head": "best budget phones",
+      "volume": 63540,
       "queries": [
-        "citi credit card best buy",
+        "best budget phones",
+        "best budget phones 2025",
+        "best budget phones 2026",
+        "best phones budget"
+      ]
+    },
+    {
+      "head": "best budget earbuds",
+      "volume": 61810,
+      "queries": [
+        "best budget earbuds",
+        "best budget earbuds 2025",
+        "best budget earbuds 2026"
+      ]
+    },
+    {
+      "head": "best budget action cameras",
+      "volume": 61220,
+      "queries": [
+        "best budget action cameras",
+        "best budget action camera"
+      ]
+    },
+    {
+      "head": "best credit cards for rewards",
+      "volume": 57500,
+      "queries": [
+        "best credit cards for rewards",
+        "best rewards credit card",
+        "best credit card rewards",
+        "best credit card for rewards",
+        "best reward credit cards",
+        "best rewards credit cards",
+        "best credit card rewards card",
+        "best credit cards rewards",
+        "best rewards credit card 2026",
+        "best reward credit card"
+      ]
+    },
+    {
+      "head": "best small business ideas",
+      "volume": 50090,
+      "queries": [
+        "best small business ideas",
+        "best business ideas for small business"
+      ]
+    },
+    {
+      "head": "best budget airlines",
+      "volume": 49500,
+      "queries": [
+        "best budget airlines"
+      ]
+    },
+    {
+      "head": "best home gym equipment on a budget",
+      "volume": 49500,
+      "queries": [
+        "best home gym equipment on a budget"
+      ]
+    },
+    {
+      "head": "best buy credit card citi card",
+      "volume": 45200,
+      "queries": [
+        "best buy credit card citi card",
         "citi best buy credit card"
       ]
     },
     {
-      "head": "pay best buy credit card with credit card",
-      "volume": 60500,
+      "head": "best budget drones",
+      "volume": 41380,
       "queries": [
-        "pay best buy credit card with credit card"
+        "best budget drones",
+        "best budget drone"
       ]
     },
     {
-      "head": "pay your best buy credit card",
-      "volume": 60500,
+      "head": "best budget mechanical keyboards",
+      "volume": 41380,
       "queries": [
-        "pay your best buy credit card"
+        "best budget mechanical keyboards",
+        "best budget mechanical keyboard"
       ]
     },
     {
-      "head": "paying best buy credit card",
-      "volume": 60500,
-      "queries": [
-        "paying best buy credit card"
-      ]
-    },
-    {
-      "head": "small business best bank",
-      "volume": 55200,
-      "queries": [
-        "small business best bank",
-        "best small business banks",
-        "best business banks for small business",
-        "best bank for a small business",
-        "best bank small business",
-        "best banks small business",
-        "best bank for small business",
-        "best banks for small business",
-        "best business bank for small business",
-        "best small business bank"
-      ]
-    },
-    {
-      "head": "best rewarding credit card",
-      "volume": 49500,
-      "queries": [
-        "best rewarding credit card"
-      ]
-    },
-    {
-      "head": "best moneyback credit card",
-      "volume": 49500,
-      "queries": [
-        "best moneyback credit card"
-      ]
-    },
-    {
-      "head": "best money back rewards credit card",
-      "volume": 49500,
-      "queries": [
-        "best money back rewards credit card"
-      ]
-    },
-    {
-      "head": "best points on credit card",
-      "volume": 49500,
-      "queries": [
-        "best points on credit card"
-      ]
-    },
-    {
-      "head": "best credit card award",
-      "volume": 49500,
-      "queries": [
-        "best credit card award"
-      ]
-    },
-    {
-      "head": "best rewards credit card with no annual fee",
-      "volume": 48400,
-      "queries": [
-        "best rewards credit card with no annual fee",
-        "credit card with the best rewards no annual fee",
-        "best credit card with rewards and no annual fee",
-        "best reward credit card with no annual fee"
-      ]
-    },
-    {
-      "head": "credit card best rewards no annual fee",
-      "volume": 48400,
-      "queries": [
-        "credit card best rewards no annual fee",
-        "best no annual fee rewards credit card",
-        "best rewards credit card no annual fee",
-        "best credit card no annual fee rewards"
-      ]
-    },
-    {
-      "head": "best mileage credit card",
-      "volume": 48400,
-      "queries": [
-        "best mileage credit card",
-        "mileage credit card best",
-        "best credit card mileage",
-        "best credit card for mileage"
-      ]
-    },
-    {
-      "head": "best credit card for flying",
-      "volume": 44400,
-      "queries": [
-        "best credit card for flying",
-        "best flying credit card"
-      ]
-    },
-    {
-      "head": "best credit card for airfare",
-      "volume": 44400,
-      "queries": [
-        "best credit card for airfare",
-        "best airfare credit card"
-      ]
-    },
-    {
-      "head": "best credit card 0 apr",
-      "volume": 44400,
-      "queries": [
-        "best credit card 0 apr",
-        "best 0 apr credit card",
-        "best credit card for 0 apr"
-      ]
-    },
-    {
-      "head": "best credit card no interest",
-      "volume": 44400,
-      "queries": [
-        "best credit card no interest",
-        "best no interest credit card",
-        "best credit card for no interest"
-      ]
-    },
-    {
-      "head": "citigroup best buy credit card",
+      "head": "best budget 4k tvs",
       "volume": 40500,
       "queries": [
-        "citigroup best buy credit card"
+        "best budget 4k tvs"
       ]
     },
     {
-      "head": "credit card with best airline miles",
-      "volume": 36300,
+      "head": "best budget monitors for work from home",
+      "volume": 40500,
       "queries": [
-        "credit card with best airline miles",
-        "best credit card with airline miles",
-        "credit card with the best airline miles"
+        "best budget monitors for work from home"
       ]
     },
     {
-      "head": "best 0$ annual fee credit card",
-      "volume": 36300,
+      "head": "best budget tripods",
+      "volume": 40500,
       "queries": [
-        "best 0$ annual fee credit card",
-        "best 0 annual fee credit card",
-        "best credit card 0 annual fee"
+        "best budget tripods"
+      ]
+    },
+    {
+      "head": "nerdwallet best credit cards",
+      "volume": 40500,
+      "queries": [
+        "nerdwallet best credit cards"
+      ]
+    },
+    {
+      "head": "best budget gaming chairs",
+      "volume": 35000,
+      "queries": [
+        "best budget gaming chairs",
+        "best budget gaming chair"
+      ]
+    },
+    {
+      "head": "best buy credit card payment",
+      "volume": 33100,
+      "queries": [
+        "best buy credit card payment"
+      ]
+    },
+    {
+      "head": "best budget projectors",
+      "volume": 32400,
+      "queries": [
+        "best budget projectors",
+        "best budget projector",
+        "projector best budget"
+      ]
+    },
+    {
+      "head": "best tool for small business lead generation and nurturing",
+      "volume": 28700,
+      "queries": [
+        "best tool for small business lead generation and nurturing",
+        "best tools for small business lead generation and nurturing"
+      ]
+    },
+    {
+      "head": "my best buy credit card",
+      "volume": 27100,
+      "queries": [
+        "my best buy credit card"
+      ]
+    },
+    {
+      "head": "pay best buy credit card",
+      "volume": 25900,
+      "queries": [
+        "pay best buy credit card",
+        "best buy pay credit card",
+        "best buy credit card pay"
+      ]
+    },
+    {
+      "head": "best budget 3d printers",
+      "volume": 23380,
+      "queries": [
+        "best budget 3d printers",
+        "best budget 3d printer",
+        "best 3d printer budget"
+      ]
+    },
+    {
+      "head": "best credit cards to build credit",
+      "volume": 23200,
+      "queries": [
+        "best credit cards to build credit",
+        "best credit card to build credit",
+        "best credits cards to build credit",
+        "best card to build credit",
+        "best cards to build credit"
+      ]
+    },
+    {
+      "head": "best airline credit card",
+      "volume": 22100,
+      "queries": [
+        "best airline credit card",
+        "best airline credit cards",
+        "best airlines credit card"
+      ]
+    },
+    {
+      "head": "best small business insurance",
+      "volume": 19300,
+      "queries": [
+        "best small business insurance",
+        "best insurance for small business",
+        "best business insurance for small business"
+      ]
+    },
+    {
+      "head": "best credit card flight",
+      "volume": 19300,
+      "queries": [
+        "best credit card flight",
+        "best credit card for flights",
+        "best flight credit card",
+        "best credit cards for flights",
+        "best flight credit cards"
+      ]
+    },
+    {
+      "head": "best credit cards for beginners",
+      "volume": 19300,
+      "queries": [
+        "best credit cards for beginners",
+        "best beginner credit card",
+        "best beginner credit cards",
+        "best credit card for beginners"
+      ]
+    },
+    {
+      "head": "best budget monitors",
+      "volume": 18980,
+      "queries": [
+        "best budget monitors",
+        "best budget monitor"
+      ]
+    },
+    {
+      "head": "best credit card offers",
+      "volume": 16600,
+      "queries": [
+        "best credit card offers",
+        "best credit card offer",
+        "best credit cards offers"
+      ]
+    },
+    {
+      "head": "best website builders for small business",
+      "volume": 16300,
+      "queries": [
+        "best website builders for small business",
+        "best website builder for small business",
+        "best small business website builder"
+      ]
+    },
+    {
+      "head": "best buy credit card customer service",
+      "volume": 16000,
+      "queries": [
+        "best buy credit card customer service",
+        "best buy customer credit card service",
+        "best buy customer service credit card"
+      ]
+    },
+    {
+      "head": "citibank best buy credit card",
+      "volume": 15700,
+      "queries": [
+        "citibank best buy credit card",
+        "best buy citibank credit card"
+      ]
+    },
+    {
+      "head": "credit cards with best rewards",
+      "volume": 15700,
+      "queries": [
+        "credit cards with best rewards",
+        "best credit card with best rewards",
+        "best credit cards with rewards",
+        "credit card with best rewards",
+        "credit cards with the best rewards"
+      ]
+    },
+    {
+      "head": "best budget gaming laptop",
+      "volume": 15220,
+      "queries": [
+        "best budget gaming laptop",
+        "best budget gaming laptops",
+        "best budget gaming laptops 2025",
+        "best budget laptop for gaming",
+        "best budget gaming laptop 2026",
+        "best budget gaming laptop 2025",
+        "best budget gaming laptops 2026"
+      ]
+    },
+    {
+      "head": "best credit card for gas",
+      "volume": 15100,
+      "queries": [
+        "best credit card for gas",
+        "best gas credit card",
+        "best credit cards for gas",
+        "best gas credit cards"
+      ]
+    },
+    {
+      "head": "best budget earphones",
+      "volume": 14800,
+      "queries": [
+        "best budget earphones"
+      ]
+    },
+    {
+      "head": "best 0 apr credit cards",
+      "volume": 14100,
+      "queries": [
+        "best 0 apr credit cards",
+        "0 apr best credit cards",
+        "best apr credit cards"
+      ]
+    },
+    {
+      "head": "best credit card for airline miles",
+      "volume": 13900,
+      "queries": [
+        "best credit card for airline miles",
+        "best airline miles credit card",
+        "best credit cards for airline miles"
+      ]
+    },
+    {
+      "head": "best budget monitors for gaming",
+      "volume": 13520,
+      "queries": [
+        "best budget monitors for gaming",
+        "best budget gaming monitor",
+        "best budget gaming monitors"
+      ]
+    },
+    {
+      "head": "best starter credit card",
+      "volume": 13500,
+      "queries": [
+        "best starter credit card",
+        "best starter credit cards"
+      ]
+    },
+    {
+      "head": "best tax software",
+      "volume": 13170,
+      "queries": [
+        "best tax software",
+        "best tax software 2026",
+        "best software tax",
+        "best tax software 2025",
+        "best online tax software",
+        "best tax software online",
+        "the best tax software",
+        "best 2025 tax software",
+        "best tax software for 2025",
+        "2026 best tax software",
+        "best tax online software"
+      ]
+    },
+    {
+      "head": "best credit cards for building credit",
+      "volume": 12000,
+      "queries": [
+        "best credit cards for building credit",
+        "best credit card for building credit",
+        "best credit building credit cards",
+        "best credit cards for credit building"
+      ]
+    },
+    {
+      "head": "best bank for small business",
+      "volume": 11620,
+      "queries": [
+        "best bank for small business",
+        "best banks for small business",
+        "best small business bank",
+        "best small business banks",
+        "best bank for a small business",
+        "best business banks for small business",
+        "best online bank for small business"
+      ]
+    },
+    {
+      "head": "best credit cards for bad credit",
+      "volume": 11400,
+      "queries": [
+        "best credit cards for bad credit",
+        "best cards for bad credit",
+        "best credit card for bad credit"
+      ]
+    },
+    {
+      "head": "best hotel credit card",
+      "volume": 11400,
+      "queries": [
+        "best hotel credit card",
+        "best hotel credit cards",
+        "best credit card for hotels"
+      ]
+    },
+    {
+      "head": "best credit cards for points",
+      "volume": 11100,
+      "queries": [
+        "best credit cards for points",
+        "best points credit card",
+        "best points credit cards",
+        "best credit card for points"
+      ]
+    },
+    {
+      "head": "best credit card for groceries",
+      "volume": 10700,
+      "queries": [
+        "best credit card for groceries",
+        "best grocery credit card",
+        "best credit cards for groceries"
+      ]
+    },
+    {
+      "head": "best visa credit card",
+      "volume": 10600,
+      "queries": [
+        "best visa credit card",
+        "best visa credit cards",
+        "best credit cards visa"
+      ]
+    },
+    {
+      "head": "best first credit card",
+      "volume": 10500,
+      "queries": [
+        "best first credit card",
+        "best first credit cards"
+      ]
+    },
+    {
+      "head": "best cash rewards credit card",
+      "volume": 10200,
+      "queries": [
+        "best cash rewards credit card",
+        "best credit card for cash rewards",
+        "best credit cards cash rewards"
+      ]
+    },
+    {
+      "head": "best credit card miles program",
+      "volume": 10000,
+      "queries": [
+        "best credit card miles program",
+        "best miles program credit card"
+      ]
+    },
+    {
+      "head": "best budget travel tips",
+      "volume": 9900,
+      "queries": [
+        "best budget travel tips"
+      ]
+    },
+    {
+      "head": "best no annual fee credit cards",
+      "volume": 9700,
+      "queries": [
+        "best no annual fee credit cards",
+        "best credit cards no annual fee",
+        "best credit card no annual fee"
       ]
     }
   ],
-  "cost": "DataForSEO: 8 calls, $0.35256 of $2.00 budget"
+  "cost": "DataForSEO: 0 calls, $0.00000 of $2.00 budget"
 }
