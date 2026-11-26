@@ -1,0 +1,26 @@
+{
+  "status": "all-live",
+  "attempts": 1,
+  "verifiedCount": 2,
+  "pendingCount": 0,
+  "results": [
+    {
+      "url": "https://www.themodernwallet.com/guides/elon-musk-spacex-share-for-kids/",
+      "finalUrl": "https://www.themodernwallet.com/guides/elon-musk-spacex-share-for-kids/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/elon-musk-spacex-share-for-kids/"
+    },
+    {
+      "url": "https://www.themodernwallet.com/guides/allstate-outage-coverage-payments-claims/",
+      "finalUrl": "https://www.themodernwallet.com/guides/allstate-outage-coverage-payments-claims/",
+      "ok": true,
+      "status": 200,
+      "hasH1": true,
+      "completeHtml": true,
+      "canonical": "https://www.themodernwallet.com/guides/allstate-outage-coverage-payments-claims/"
+    }
+  ]
+}
