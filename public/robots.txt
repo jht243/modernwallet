@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /_geo_raw/
 Allow: /
 
 Sitemap: https://www.themodernwallet.com/sitemap-index.xml
