@@ -1815,13 +1815,14 @@ def _find_inspected_internal_links(root: Path, count: int = 2) -> list[dict]:
         if len(out) >= count:
             return out
     # Generic fallback for non-Layer3 fleet repositories
-    for pattern in ('src/content/**/*.mdx', 'src/content/**/*.md', 'content/**/*.mdx', 'content/**/*.md', 'data/*.ts', 'src/data/*.ts'):
+    for pattern in ('src/content/**/*.mdx', 'src/content/**/*.md', 'content/**/*.mdx', 'content/**/*.md', 'data/*.ts', 'src/data/*.ts', 'data/alternatives/*.json', 'data/*.json', 'src/data/*.json'):
         for p in sorted(root.glob(pattern)):
             if p.is_file() and not p.name.startswith('_') and 'test' not in p.name.lower():
                 rel = str(p.relative_to(root))
                 slug = p.stem
+                route = f'/compare/{slug}' if 'data/alternatives/' in rel else f'/{slug}'
                 out.append({
-                    'route': f'/{slug}',
+                    'route': route,
                     'path': rel,
                     'sha256': _sha256_file(p),
                     'section': 'Overview',
@@ -2150,27 +2151,39 @@ def intake_scout_spec(root: Path, spec_path: Path, run_dir: Path, author: str = 
             '    for v in DATA.get("vendors", []):\n'
             '        if not v.get("modeled", True):\n'
             '            continue\n'
-            '        base = float(v.get("baseMonthlyUsd", 0.0))\n'
-            '        per_seat = float(v.get("perSeatMonthlyUsd", 0.0))\n'
-            '        inc_vol = float(v.get("includedVolume", 10**9))\n'
-            '        over_unit = float(v.get("overageUnitSize", 1000.0)) or 1000.0\n'
-            '        over_rate = float(v.get("overageUsdPerUnit", 0.0))\n'
-            '        addon = float(v.get("requiredAddonMonthlyUsd", 0.0)) if sc.get("requiresAddon") else 0.0\n'
+            '        one_time = float(v.get("oneTimeUsd", 0.0) or 0.0)\n'
+            '        base = float(v.get("baseMonthlyUsd", 0.0) or 0.0)\n'
+            '        per_seat = float(v.get("perSeatMonthlyUsd", 0.0) or 0.0)\n'
+            '        inc_vol = float(v.get("includedVolume", 10**9) or 10**9)\n'
+            '        over_unit = float(v.get("overageUnitSize", 1000.0) or 1000.0)\n'
+            '        over_rate = float(v.get("overageUsdPerUnit", 0.0) or 0.0)\n'
+            '        addon = float(v.get("requiredAddonMonthlyUsd", 0.0) or 0.0) if sc.get("requiresAddon") else 0.0\n'
             '        extra_units = max(0.0, volume - inc_vol) / over_unit\n'
-            '        total = round(base + per_seat * seats + extra_units * over_rate + addon, 2)\n'
-            '        quotes[v["name"]] = {\n'
-            '            "monthlyUsd": total,\n'
-            '            "annualUsd": round(total * 12, 2),\n'
+            '        monthly_rec = round(base + per_seat * seats + extra_units * over_rate + addon, 2)\n'
+            '        upfront_total = round(one_time * seats, 2)\n'
+            '        first_year = round(upfront_total + monthly_rec * 12, 2)\n'
+            '        eff_monthly = round(first_year / 12.0, 2) if one_time > 0 and monthly_rec == 0 else monthly_rec\n'
+            '        q_entry = {\n'
+            '            "monthlyUsd": eff_monthly,\n'
+            '            "annualUsd": first_year,\n'
             '            "unitOverageUsd": round(over_rate / over_unit, 4) if over_rate else 0.0,\n'
             '            "plan": v.get("planName", "Published tier"),\n'
             '        }\n'
-            '    subj_m = quotes.get(subject_name, {}).get("monthlyUsd")\n'
+            '        if one_time > 0:\n'
+            '            q_entry["oneTimeUnitUsd"] = one_time\n'
+            '            q_entry["upfrontTotalUsd"] = upfront_total\n'
+            '            q_entry["recurringMonthlyUsd"] = monthly_rec\n'
+            '        quotes[v["name"]] = q_entry\n'
+            '    subj_q = quotes.get(subject_name, {})\n'
+            '    subj_m = subj_q.get("monthlyUsd")\n'
+            '    subj_a = subj_q.get("annualUsd")\n'
             '    if subj_m is not None:\n'
             '        for q in quotes.values():\n'
             '            diff_m = round(subj_m - q["monthlyUsd"], 2)\n'
+            '            diff_a = round(subj_a - q["annualUsd"], 2) if subj_a is not None else round(diff_m * 12, 2)\n'
             '            q["savingsVsSubjectMonthlyUsd"] = diff_m\n'
-            '            q["savingsVsSubjectAnnualUsd"] = round(diff_m * 12, 2)\n'
-            '    ranked = sorted(quotes.items(), key=lambda kv: kv[1]["monthlyUsd"])\n'
+            '            q["savingsVsSubjectAnnualUsd"] = diff_a\n'
+            '    ranked = sorted(quotes.items(), key=lambda kv: kv[1]["annualUsd"])\n'
             '    scenarios_out.append({\n'
             '        "scenario": sc.get("name"),\n'
             '        "seats": seats,\n'
@@ -2178,6 +2191,7 @@ def intake_scout_spec(root: Path, spec_path: Path, run_dir: Path, author: str = 
             '        "requiresAddon": bool(sc.get("requiresAddon")),\n'
             '        "lowestCostVendor": ranked[0][0] if ranked else None,\n'
             '        "lowestMonthlyUsd": ranked[0][1]["monthlyUsd"] if ranked else None,\n'
+            '        "lowestAnnualUsd": ranked[0][1]["annualUsd"] if ranked else None,\n'
             '        "quotes": quotes,\n'
             '    })\n'
             'result = {"subject": subject_name, "scenarioCount": len(scenarios_out), "scenarios": scenarios_out}\n'
@@ -2210,7 +2224,15 @@ def intake_scout_spec(root: Path, spec_path: Path, run_dir: Path, author: str = 
                     'url': str(v.get('sourceUrl') or c.get('officialUrl') or f"https://{re.sub(r'[^a-z0-9]+', '', v['name'].lower())}.com/pricing"),
                     'checkedAt': f'{today}T00:00:00Z',
                     'snapshot': src_ref,
-                    'extractedFacts': f"{v['name']} ({v.get('planName', 'Published tier')}): base=${v.get('baseMonthlyUsd', 0)}/mo, perSeat=${v.get('perSeatMonthlyUsd', 0)}/mo, includedVolume={v.get('includedVolume', 'unlimited')}.",
+                    'extractedFacts': (
+                        f"{v['name']} ({v.get('planName', 'Published tier')}): "
+                        + (f"oneTime=${v.get('oneTimeUsd')}, " if v.get('oneTimeUsd') else "")
+                        + f"base=${v.get('baseMonthlyUsd', 0)}/mo, perSeat=${v.get('perSeatMonthlyUsd', 0)}/mo, includedVolume={v.get('includedVolume', 'unlimited')}."
+                        + (f" Best fit: {v.get('bestFit')}." if v.get('bestFit') else "")
+                        + (f" Features/Notes: {v.get('notes') or v.get('features')}." if (v.get('notes') or v.get('features')) else "")
+                        + (f" Free tier: {v.get('freeTier')}." if v.get('freeTier') else "")
+                        + (f" Limits: {v.get('limits')}." if v.get('limits') else "")
+                    ),
                 }
                 for v in (c.get('vendors') or []) if isinstance(v, dict) and v.get('name')
             ]

@@ -79,7 +79,7 @@ const jsonLdArticle = articleSchema({
 
     <header class="hero">
       <h1>{entry.h1}</h1>
-      <Byline updated={updated} />
+      <Byline updated={updated} reviewerNote={(entry as any).reviewerNote} />
       <Fragment set:html={altBlocks(entry.intro, hosts).replace(/<p>/g, '<p class="lede">')} />
     </header>
 

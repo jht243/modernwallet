@@ -4,17 +4,17 @@
 // links to the auditable Editorial Policy ("How we review"), and renders a real Reviewer Note callout
 // ONLY when a genuine human-written note exists for the current route.
 import { EDITORIAL_DESK, EDITORIAL_REVIEWER, LAST_UPDATED } from "../data/site";
-import { getReviewerNote } from "../data/reviewer-notes";
+import { getReviewerNote, type ReviewerNoteEntry } from "../data/reviewer-notes";
 import type { Reviewer } from "../data/types";
 
-interface Props { reviewer?: Reviewer; updated?: string; tested?: boolean; }
-const { reviewer, updated: updatedProp, tested } = Astro.props as Props;
+interface Props { reviewer?: Reviewer; updated?: string; tested?: boolean; reviewerNote?: ReviewerNoteEntry; }
+const { reviewer, updated: updatedProp, tested, reviewerNote: reviewerNoteProp } = Astro.props as Props;
 
 const updated = new Date((updatedProp ?? LAST_UPDATED) + "T00:00:00Z").toLocaleDateString("en-US", {
   year: "numeric", month: "long", day: "numeric", timeZone: "UTC",
 });
 
-const reviewerNote = getReviewerNote(Astro.url.pathname);
+const reviewerNote = getReviewerNote(Astro.url.pathname) ?? reviewerNoteProp;
 ---
 <div class="byline-wrap">
   <div class="byline">

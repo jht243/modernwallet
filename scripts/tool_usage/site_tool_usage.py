@@ -1,23 +1,9 @@
 #!/usr/bin/env python3
-"""Per-site tool usage for the /tool-usage-mindmap-auto routine (stdlib only, portable).
+"""Per-site tool usage for the /tool-usage-mindmap-auto & Mindmap Pass routines (stdlib only, portable).
 
 Reads OUR tracking table (Supabase tool_usage_events, CubanInsights project) for ONE
-site and prints a ranked JSON list of its tools. Same data as the fleet dashboard
-(www.layer3labs.io/admin/tool-usage), scoped to one site.
-
-  python3 scripts/tool_usage/site_tool_usage.py --site chalkbox.org [--days 30]
-
-Needs SUPABASE_URL + SUPABASE_SERVICE_ROLE_KEY (env, or ~/.claude/secrets.env locally).
-Missing creds -> prints {"error": "..."} and exits 0 so the routine can exit quietly.
-
-Output:
-  {"site", "window_days", "data_days",          # data_days = days since this site's first event
-   "tools": [{"tool", "path", "people", "uses", "views", "use_rate",
-              "people_7d", "lane"}]}            # lane: "persona" | "low-use" | "thin"
-Lanes (thresholds are deliberately low while the data is young):
-  persona  — people >= 3: real usage, run the persona pass on it
-  low-use  — views >= 10 and use_rate < 0.25: people land and leave, check why
-  thin     — everything else: listed, not worked
+site and prints a ranked JSON list of its tools (including privacy-safe choiceBuckets and
+mindmapEligible when people >= 25).
 """
 import argparse
 import json
@@ -61,14 +47,21 @@ def fetch(url, key, params, offset):
         return json.loads(r.read() or b"[]")
 
 
-def rows_for(url, key, site, since=None, select="tool,path,event,visitor,created_at"):
+def rows_for(url, key, site, since=None, select="tool,path,event,visitor,trigger,created_at"):
     params = {"select": select, "site": f"eq.{site}", "or": "(is_bot.is.null,is_bot.is.false)",
               "order": "created_at.asc"}
     if since:
         params["created_at"] = f"gte.{since.isoformat()}"
     out, off = [], 0
     while True:
-        batch = fetch(url, key, params, off)
+        try:
+            batch = fetch(url, key, params, off)
+        except Exception:
+            if "trigger" in params.get("select", ""):
+                params["select"] = "tool,path,event,visitor,created_at"
+                batch = fetch(url, key, params, off)
+            else:
+                raise
         out += batch
         if len(batch) < PAGE:
             return out
@@ -96,10 +89,17 @@ def main():
         data_days = max(1, (now - t0).days + 1)
 
     week_ago = now - timedelta(days=7)
-    agg = defaultdict(lambda: {"uses": 0, "views": 0, "people": set(), "people_7d": set(), "paths": defaultdict(int)})
+    agg = defaultdict(lambda: {"uses": 0, "views": 0, "people": set(), "people_7d": set(), "paths": defaultdict(int), "buckets": defaultdict(lambda: defaultdict(int))})
     for r in rows:
         t = agg[r["tool"]]
         t["paths"][r["path"]] += 1
+        trig = str(r.get("trigger") or "")
+        if trig.startswith("b:"):
+            for kv in trig[2:].split(";"):
+                if "=" in kv:
+                    bk, bv = kv.split("=", 1)
+                    if bk and bv:
+                        t["buckets"][bk][bv] += 1
         if r["event"] == "view":
             t["views"] += 1
         elif r["event"] == "use":
@@ -119,9 +119,19 @@ def main():
             lane = "low-use"
         else:
             lane = "thin"
-        tools.append({"tool": name, "path": max(t["paths"], key=t["paths"].get), "people": people,
-                      "uses": t["uses"], "views": t["views"], "use_rate": rate,
-                      "people_7d": len(t["people_7d"]), "lane": lane})
+        top_buckets = {}
+        for bk, dist in t["buckets"].items():
+            tot_b = sum(dist.values())
+            if tot_b >= 10:
+                top_val, top_cnt = max(dist.items(), key=lambda x: x[1])
+                top_buckets[bk] = {"topChoice": top_val, "share": round(top_cnt / tot_b, 2), "samples": tot_b}
+        entry = {"tool": name, "path": max(t["paths"], key=t["paths"].get), "people": people,
+                 "uses": t["uses"], "views": t["views"], "use_rate": rate,
+                 "people_7d": len(t["people_7d"]), "lane": lane,
+                 "mindmapEligible": people >= 25}
+        if top_buckets:
+            entry["choiceBuckets"] = top_buckets
+        tools.append(entry)
     order = {"persona": 0, "low-use": 1, "thin": 2}
     tools.sort(key=lambda x: (order[x["lane"]], -x["people"], -x["views"]))
     print(json.dumps({"site": site, "window_days": a.days, "data_days": data_days, "tools": tools}, indent=1))

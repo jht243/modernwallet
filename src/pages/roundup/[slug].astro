@@ -119,7 +119,7 @@ const relatedEntries = entry.relatedComparisons
 
     <header class="hero">
       <h1>{entry.h1}</h1>
-      <Byline updated={entry.updated} tested={Boolean(tested)} />
+      <Byline updated={entry.updated} tested={Boolean(tested)} reviewerNote={(entry as any).reviewerNote} />
       {paragraphs(entry.introText).map((para) => <p class="lede" set:html={linkify(para)} />)}
     </header>
 

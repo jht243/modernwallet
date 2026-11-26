@@ -60,10 +60,26 @@ export const REVIEWER_NOTES: Record<string, ReviewerNoteEntry> = {
     reviewedDate: "November 25, 2026",
     note: "Based on our work with over 50 small business founders, doctors, and law firm owners, the real divide between dividend stocks and an S&P 500 index fund comes down to tax bracket and owner bandwidth rather than headline yield. Busy owners in peak earning years usually get more value from low-maintenance index compounding, while owners preparing for an exit or needing quarterly cash flow tend to look harder at dividend payers once they can manage single-company risk.",
   },
-
+  "/guides/conforming-loan-limit-2027/": {
+    label: "Publisher's Take",
+    reviewedDate: "November 25, 2026",
+    note: "Borrowers near the borrowing boundary should calculate their loan balance rather than relying on listing prices, because each additional dollar of cash equity lowers the debt dollar for dollar. The $22,650 baseline expansion provides meaningful flexibility for purchases in early 2027, provided your lender confirms that your mortgage qualifies under the new annual acquisition schedule.",
+  },
+  "/guides/hud-mixed-status-housing-rule/": {
+    label: "Publisher's Take",
+    reviewedDate: "November 25, 2026",
+    note: "HUD's shift from permanent proration to a temporary 90-day verification window directly threatens household stability across public housing and voucher programs. Families must request written documentation from housing authorities immediately while monitoring whether the multi-state federal lawsuit yields an injunction before mid-December.",
+  },
 };
 
 export function getReviewerNote(pathname: string): ReviewerNoteEntry | undefined {
   const normalized = pathname.endsWith("/") ? pathname : `${pathname}/`;
-  return REVIEWER_NOTES[normalized] ?? REVIEWER_NOTES[pathname.replace(/\/$/, "")];
+  const direct = REVIEWER_NOTES[normalized] ?? REVIEWER_NOTES[pathname.replace(/\/$/, "")];
+  if (direct) return direct;
+  const segs = normalized.split("/").filter(Boolean);
+  if (segs.length >= 2) {
+    const leaf = `/${segs[segs.length - 1]}/`;
+    return REVIEWER_NOTES[leaf] ?? REVIEWER_NOTES[leaf.slice(0, -1)];
+  }
+  return undefined;
 }

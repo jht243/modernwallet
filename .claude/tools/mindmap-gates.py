@@ -2073,6 +2073,34 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                     if ref['path'] not in seen_src_paths:
                         seen_src_paths.add(ref['path'])
                         row_sources.append((ref['path'], txt[:3500]))
+        ev_file = ev_base / slug / 'evidence.json'
+        ev_data = None
+        model_output_data = None
+        if ev_file.is_file():
+            try:
+                ev_data = read(ev_file)
+                for sref in (ev_data.get('sourceArtifacts') or []):
+                    if isinstance(sref, dict) and isinstance(sref.get('path'), str):
+                        s_rel = sref['path']
+                        sp = (root / s_rel).resolve()
+                        if sp.is_relative_to(root) and sp.is_file():
+                            s_raw = sp.read_text(errors='ignore')
+                            row_urls.update(_collect_verified_urls_from_text(s_raw))
+                            if (
+                                s_rel not in seen_src_paths
+                                and '/sources/' in s_rel
+                                and sp.suffix in ('.txt', '.json', '.md')
+                            ):
+                                seen_src_paths.add(s_rel)
+                                row_sources.append((s_rel, s_raw[:4500]))
+                out_ref = ((ev_data.get('execution') or {}).get('output') or {}).get('path')
+                if isinstance(out_ref, str):
+                    op = (root / out_ref).resolve()
+                    if op.is_relative_to(root) and op.is_file():
+                        model_output_data = read(op)
+            except Exception:
+                ev_data = None
+
         row_kw_tokens = {
             w for w in re.split(
                 r'[^a-z0-9]+',
@@ -2093,31 +2121,12 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
             if overlap > 0 or not row_sources:
                 ranked_fallbacks.append((overlap, s_path, s_txt))
         ranked_fallbacks.sort(key=lambda x: x[0], reverse=True)
-        max_total_sources = 4 if row_sources else 5
+        max_total_sources = max(len(row_sources), 4 if row_sources else 5)
         for _, s_path, s_txt in ranked_fallbacks:
             if len(row_sources) >= max_total_sources:
                 break
             seen_src_paths.add(s_path)
             row_sources.append((s_path, s_txt[:4500]))
-
-        ev_file = ev_base / slug / 'evidence.json'
-        ev_data = None
-        model_output_data = None
-        if ev_file.is_file():
-            try:
-                ev_data = read(ev_file)
-                for sref in (ev_data.get('sourceArtifacts') or []):
-                    if isinstance(sref, dict) and isinstance(sref.get('path'), str):
-                        sp = (root / sref['path']).resolve()
-                        if sp.is_relative_to(root) and sp.is_file():
-                            row_urls.update(_collect_verified_urls_from_text(sp.read_text(errors='ignore')))
-                out_ref = ((ev_data.get('execution') or {}).get('output') or {}).get('path')
-                if isinstance(out_ref, str):
-                    op = (root / out_ref).resolve()
-                    if op.is_relative_to(root) and op.is_file():
-                        model_output_data = read(op)
-            except Exception:
-                ev_data = None
 
         row_track = row_tracks.get(aid, primary_track)
         # On subject-only alternatives routes, mechanically restrict allowed external URLs to subjectOfficialHosts + canonical internal hosts!
