@@ -2953,17 +2953,38 @@ def prune_failed_routes(
                 and rev.get('manifestSha256') == digest(plan),
                 'Duplicate pruning needs the actual independent review of this exact manifest')
         require(rev.get('liabilityBlock') is not True, 'A chart liability block cannot be cleared by duplicate pruning')
-        pruned_ids = {r.get('id') for r in pruned_actions}
+        pruned_ids = {r.get('id') for r in pruned_actions if r.get('id')}
+        all_manifest_ids = {r.get('id') for r in actions if isinstance(r, dict) and r.get('id')}
         resolved = []
         for finding in rev.get('findings') or []:
             if not isinstance(finding, dict) or str(finding.get('status', 'open')).lower() == 'resolved':
                 continue
-            target = (str(finding.get('target') or '').split('#', 1)[0].rstrip('/') or '/') if str(finding.get('target') or '').startswith('/') else str(finding.get('target') or '').strip()
-            target_slug = target.strip('/').rsplit('/', 1)[-1].lower() if target else ''
-            is_pruned_finding = (
-                target in failed_set
-                or (target_slug and target_slug in failed_slugs)
-                or finding.get('actionId') in pruned_ids
+            raw_targets = finding.get('targets') if isinstance(finding.get('targets'), list) else [finding.get('target')]
+            ref_targets = set()
+            ref_slugs = set()
+            for rt_item in raw_targets:
+                for tok in re.split(r'[\s,;]+', str(rt_item or '').strip()):
+                    if not tok:
+                        continue
+                    t_clean = (tok.split('#', 1)[0].rstrip('/') or '/') if tok.startswith('/') else tok
+                    ref_targets.add(t_clean)
+                    t_sl = t_clean.strip('/').rsplit('/', 1)[-1].lower()
+                    if t_sl:
+                        ref_slugs.add(t_sl)
+            raw_aids = finding.get('actionIds') if isinstance(finding.get('actionIds'), list) else [finding.get('actionId')]
+            ref_aids = set()
+            for aid_item in raw_aids:
+                for tok in re.findall(r'\bA\d+\b', str(aid_item or '')):
+                    if tok in all_manifest_ids:
+                        ref_aids.add(tok)
+            if not ref_targets and not ref_aids:
+                summary_txt = f"{finding.get('summary', '')} {finding.get('finding', '')} {finding.get('fix', '')}"
+                for tok in re.findall(r'\bA\d+\b', summary_txt):
+                    if tok in all_manifest_ids:
+                        ref_aids.add(tok)
+            is_pruned_finding = bool(
+                (ref_targets and all(t in failed_set or t.strip('/').rsplit('/', 1)[-1].lower() in failed_slugs for t in ref_targets))
+                or (ref_aids and ref_aids <= pruned_ids)
             )
             if _finding_is_hard_block(finding, check_duplicate=True):
                 require(not _finding_is_hard_block(finding, check_duplicate=False),
