@@ -1356,13 +1356,17 @@ class Gates(unittest.TestCase):
 
         drafts = self.root / 'drafts'
         drafts.mkdir(parents=True, exist_ok=True)
-        filler = ' '.join(['substantive'] * 950)
+        filler = 'In our internal modeling of 10-page PDF runs at $20/mo vs $100/mo, ' + ' '.join(['substantive'] * 950)
         good_draft = {
             'sections': [{
                 'heading': 'Overview',
                 'paragraphs': [
                     filler + ' See [Fable](/guides/claude-fable-5-2-explained), [Alts](/comparisons/cursor-alternatives), [HubSpot](/guides/hubspot-aeo-review), [Quoted](/guides/quoted-single-guide), and [Indexed](/guides/indexed-only-guide).'
                 ],
+                'table': {
+                    'headers': ['Scenario', 'Monthly Cost'],
+                    'rows': [['Light (10 runs)', '$20'], ['Heavy (100 runs)', '$100']],
+                },
             }]
         }
         (drafts / 'fixture.json').write_text(json.dumps(good_draft))

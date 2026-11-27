@@ -821,7 +821,7 @@ def assess_draft_proof_quality(
         p1 = raw_text[:600]
     para1_num = bool(
         re.search(
-            r'(?:\$\s*\d|(?:USD|EUR|GBP|CAD|AUD)\s*\d|\b\d+(?:\.\d+)?(?:-\s*|\s+)(?:%|tok/s|(?:gb|tb|mb|ms|x|lbs?|pounds?|kg|kilograms?|oz|ounces?|liters?|l|inches?|inch|in|cm|mm|hours?|hrs?|days?|months?|years?|pdfs?|seats?|doors?|units?|credits?|chats?|pages?|models?|machines?|million\s+machines?|users?|sites?)\b))',
+            r'(?:\$\s*\d|(?:USD|EUR|GBP|CAD|AUD)\s*\d|\b\d+(?:\.\d+)?\s*%|\b\d+(?:\.\d+)?(?:-\s*|\s+)(?:tok/s|(?:gb|tb|mb|ms|x|lbs?|pounds?|kg|kilograms?|oz|ounces?|liters?|l|inches?|inch|in|cm|mm|hours?|hrs?|days?|months?|years?|pdfs?|seats?|doors?|units?|credits?|chats?|pages?|models?|machines?|million\s+machines?|users?|sites?)\b))',
             p1,
             re.I,
         )
@@ -892,6 +892,20 @@ def assess_draft_proof_quality(
     }
 
 
+def _safe_is_file(path: Path) -> bool:
+    try:
+        return path.is_file()
+    except OSError:
+        return False
+
+
+def _safe_is_dir(path: Path) -> bool:
+    try:
+        return path.is_dir()
+    except OSError:
+        return False
+
+
 def match_operator_benchmarks(root: Path, query_text: str, page_category: str = '', limit: int = 2) -> list[dict]:
     """Select at most 1-2 verified operator/niche reference benchmarks (~100 tokens total, $0 LLM tokens)."""
     if page_category in ('regulated-medical-or-psychedelic', 'regulated-legal-or-financial', 'public-figure-biography'):
@@ -900,7 +914,7 @@ def match_operator_benchmarks(root: Path, query_text: str, page_category: str = 
         root / '.claude/data/fleet-operator-benchmarks.json',
         Path.home() / '.claude/data/fleet-operator-benchmarks.json',
     ]
-    bank_path = next((p for p in bank_candidates if p.is_file()), None)
+    bank_path = next((p for p in bank_candidates if _safe_is_file(p)), None)
     if bank_path is None:
         return []
     try:
@@ -945,30 +959,45 @@ def match_site_calculators_and_usage(root: Path, query_text: str, target_route: 
 
     found_tools: list[dict] = []
     seen_routes: set[str] = set()
+
+    def _maybe_add(rt: str, slug: str, t_label: str) -> None:
+        norm_rt = rt.rstrip('/')
+        if norm_rt == clean_target.rstrip('/') or norm_rt in seen_routes:
+            return
+        seen_routes.add(norm_rt)
+        slug_terms = set(_words(slug + ' ' + t_label)) - {'ai', 'tool', 'tools', 'calculator', 'checker', 'generator', 'the', 'for', 'and'}
+        overlap = len(q_words & slug_terms)
+        if overlap >= 1:
+            sc = overlap * 3.0 + (1.5 if any(k in slug for k in ('calculator', 'checker', 'comparer', 'picker')) else 0.5)
+            found_tools.append({'score': sc, 'route': norm_rt, 'slug': slug, 'title': t_label})
+
     for rel_dir, url_prefix in (
         ('src/pages/tools', '/tools'),
         ('src/pages/roi', '/roi'),
         ('src/pages/calculators', '/calculators'),
     ):
         d = root / rel_dir
-        if not d.is_dir():
+        if not _safe_is_dir(d):
             continue
         for fp in sorted(d.glob('*')):
-            if not fp.is_file() or fp.suffix not in ('.tsx', '.astro', '.ts', '.mdx', '.md') or fp.stem in ('index', '[slug]', '[...slug]'):
+            if not _safe_is_file(fp) or fp.suffix not in ('.tsx', '.astro', '.ts', '.mdx', '.md') or fp.stem in ('index', '[slug]', '[...slug]'):
                 continue
             rt = f'{url_prefix}/{fp.stem}'
-            if rt.rstrip('/') == clean_target.rstrip('/') or rt in seen_routes:
-                continue
-            seen_routes.add(rt)
             head_txt = fp.read_text(errors='ignore')[:2500]
             title_m = re.search(r'(?:title|h1)\s*[=:]\s*["\']([^"\']{8,110})["\']', head_txt)
             t_label = title_m.group(1).split('|')[0].strip() if title_m else fp.stem.replace('-', ' ').title()
-            slug_terms = set(_words(fp.stem + ' ' + t_label)) - {'ai', 'tool', 'tools', 'calculator', 'checker', 'generator', 'the', 'for', 'and'}
-            overlap = len(q_words & slug_terms)
-            if overlap >= 1:
-                # Boost multi-word matches strongly
-                sc = overlap * 3.0 + (1.5 if any(k in fp.stem for k in ('calculator', 'checker', 'comparer', 'picker')) else 0.5)
-                found_tools.append({'score': sc, 'route': rt, 'slug': fp.stem, 'title': t_label})
+            _maybe_add(rt, fp.stem, t_label)
+
+    if not found_tools:
+        # Sparse checkouts exclude src/pages/*; fall back to checked-in tool/main sitemaps.
+        for sm_rel in ('public/sitemap-tools.xml', 'public/sitemap.xml'):
+            sm_path = root / sm_rel
+            if not _safe_is_file(sm_path):
+                continue
+            sm_txt = sm_path.read_text(errors='ignore')
+            for m in re.finditer(r'<loc>\s*https?://[^/<\s]+(/(?:tools|roi|calculators)/([a-z0-9][a-z0-9-]+))/?\s*</loc>', sm_txt, re.IGNORECASE):
+                slug = m.group(2)
+                _maybe_add(m.group(1), slug, slug.replace('-', ' ').title())
 
     if not found_tools:
         return []

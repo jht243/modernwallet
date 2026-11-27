@@ -19,6 +19,7 @@ def framework(root):
   return 'next'
  if 'astro' in deps:return 'astro'
  if not p.exists() and not (root/'dist/index.html').is_file() and (root/'server.py').is_file():return 'wsgi'
+ if not (root/'dist/index.html').is_file() and not (root/'out/index.html').is_file() and (root/'index.html').is_file():return 'static-root'
  return 'static'
 def signature(root):
  kind=framework(root)
@@ -30,6 +31,19 @@ def signature(root):
    p=Path(name)
    if not name or p.suffix not in {'.py','.html','.jinja','.jinja2','.json','.md','.mdx','.css','.js'}:continue
    if p.parts[0] not in {'src','templates','static','data','content','seo','lib'} and name not in {'server.py','requirements.txt'}:continue
+   file=root/p
+   if not file.is_file() or file.is_symlink():continue
+   rows[name]=digest(file.read_bytes())
+  src_sha=digest(json.dumps(rows,sort_keys=True).encode())
+  return {'framework':kind,'buildId':src_sha,'sourceSha256':src_sha}
+ if kind=='static-root':
+  require((root/'index.html').is_file(),'Static root index.html missing before starting preview')
+  names=subprocess.check_output(['git','ls-files','-co','--exclude-standard','-z'],cwd=root).decode().split('\0')
+  rows={}
+  for name in sorted(set(names)):
+   p=Path(name)
+   if not name or p.suffix not in {'.html','.json','.css','.js'}:continue
+   if p.parts[0] in {'reports','.claude','node_modules','.git'}:continue
    file=root/p
    if not file.is_file() or file.is_symlink():continue
    rows[name]=digest(file.read_bytes())
@@ -152,6 +166,7 @@ def start(root,run,route='/'):
  if current['framework']=='next':command=[str(root/'node_modules/.bin/next'),'start','--hostname','127.0.0.1','--port',str(port)]
  elif current['framework']=='astro':command=[str(root/'node_modules/.bin/astro'),'preview','--host','127.0.0.1','--port',str(port)]
  elif current['framework']=='wsgi':command=_wsgi_command(root,port,folder)
+ elif current['framework']=='static-root':command=[sys.executable,'-m','http.server',str(port),'--bind','127.0.0.1','--directory',str(root)]
  else:command=[sys.executable,'-m','http.server',str(port),'--bind','127.0.0.1','--directory',str(root/('out' if current['framework']=='next-export' else 'dist'))]
  log=folder/('port-'+str(port)+'-'+str(time.time_ns())+'.log')
  with log.open('xb') as output:process=subprocess.Popen(command,cwd=root,env=_node20_env(),stdout=output,stderr=subprocess.STDOUT,start_new_session=True)

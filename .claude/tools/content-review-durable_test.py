@@ -71,4 +71,21 @@ class Tests(unittest.TestCase):
    wcs=importlib.util.module_from_spec(spec_s);spec_s.loader.exec_module(wcs)
    _,remote_state=wcs.Store(fresh_ok,ref='refs/heads/automation/content-review-journals').read()
    self.assertEqual(len(remote_state.get('retiredSearchGapJournals',{})),1)
+ def test_closed_search_gap_env_resolves_from_claude_secrets_and_public_url(self):
+  import os
+  from unittest.mock import patch
+  snap1=self.fixture.put('reports/sg-old.json',self.fixture.snapshot('abandoned search gap draft'))
+  p.reserve(self.root,snap1,'/guide','search-gap-af1233d99e49','independent',self.root/'reports/sg-adm1.json')
+  fresh_ok=self.fresh('sg-secrets-ok')
+  (fresh_ok/'.claude/secrets.env').write_text("PUBLIC_SUPABASE_URL='https://example.supabase.co'\nSUPABASE_SERVICE_ROLE_KEY='srv-key'\n")
+  snap_ok=fresh_ok/'reports/new.json';snap_ok.parent.mkdir(exist_ok=True);snap_ok.write_text(json.dumps(self.fixture.snapshot('fresh retry draft')))
+  closed_restarted_rows=[{'run_id':'oldrun1234','status':'owner-closed','packet_text':json.dumps({'candidates':[{'id':'af1233d99e490000'}]}),'parked':{'published':{},'restart':['af1233d99e490000']}}]
+  class Resp:
+   def __enter__(s):return s
+   def __exit__(s,*a):return False
+   def read(s):return json.dumps(closed_restarted_rows).encode()
+  clean_env={k:v for k,v in os.environ.items() if k not in ('SUPABASE_URL','SUPABASE_SERVICE_ROLE_KEY')}
+  with patch.dict(os.environ,clean_env,clear=True),patch('urllib.request.urlopen',side_effect=lambda *a,**k:Resp()):
+   admitted=p.reserve(fresh_ok,snap_ok,'/guide','search-gap-newjob999999','independent',fresh_ok/'reports/new-adm.json')
+   self.assertEqual(admitted['jobId'],'search-gap-newjob999999')
 if __name__=='__main__':unittest.main()

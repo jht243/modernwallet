@@ -69,12 +69,14 @@ class RoutineFastExitTests(unittest.TestCase):
         self.assertEqual(active['orders'], ['ord2'])
 
         # Historical sent upsell hosted job record does not block fast-exit;
-        # queued Q2b upsells under CLAUDE_CODE_REMOTE delegate cleanly to GitHub Actions publisher-failover.
+        # attached-repo & allowExisting Q2b upsells run on Claude Cloud primary first (Rule 1),
+        # while only unattached external new-build upsells delegate to GitHub Actions backup.
         import os
         (pp / 'ledger.json').write_text(json.dumps({'queued': []}))
         (pp / 'upsell-queue.json').write_text(json.dumps({'rows': [
             {'id': 'sent_1', 'status': 'sent'},
-            {'id': 'q_1', 'status': 'queued'},
+            {'id': 'q_attached', 'status': 'queued', 'destinationSite': 'layer3labs.io'},
+            {'id': 'q_held', 'status': 'queued', 'destinationSite': 'layer3labs.io', 'ownerHold': True},
         ]}))
         hosted_done = self.root / 'reports/mindmap-pass/2026-11-05-upsell-sent/hosted'
         hosted_done.mkdir(parents=True, exist_ok=True)
@@ -86,9 +88,42 @@ class RoutineFastExitTests(unittest.TestCase):
         prev_remote = os.environ.get('CLAUDE_CODE_REMOTE')
         try:
             os.environ['CLAUDE_CODE_REMOTE'] = 'true'
+            cloud_primary_upsell = self.mod.check_paid_publisher(self.root)
+            self.assertFalse(cloud_primary_upsell['fastExit'])
+            self.assertEqual(cloud_primary_upsell['upsells'], ['q_attached'])
+
+            # Unattached sister-site new-build upsell delegates cleanly; allowExisting runs on primary
+            (pp / 'upsell-queue.json').write_text(json.dumps({'rows': [
+                {'id': 'q_ext_new', 'status': 'queued', 'destinationSite': 'pipeflare.io', 'allowExisting': False},
+            ]}))
             cloud_quiet = self.mod.check_paid_publisher(self.root)
             self.assertTrue(cloud_quiet['fastExit'])
             self.assertIn('delegated to GitHub Actions publisher-failover', cloud_quiet['summary'])
+
+            (pp / 'upsell-queue.json').write_text(json.dumps({'rows': [
+                {'id': 'q_ext_exist', 'status': 'queued', 'destinationSite': 'pipeflare.io', 'allowExisting': True},
+            ]}))
+            cloud_exist = self.mod.check_paid_publisher(self.root)
+            self.assertFalse(cloud_exist['fastExit'])
+            self.assertEqual(cloud_exist['upsells'], ['q_ext_exist'])
+            (pp / 'upsell-queue.json').write_text(json.dumps({'rows': []}))
+
+            # Attached-repo orders (e.g. layer3labs.io) run directly in Claude Cloud as primary!
+            (pp / 'ledger.json').write_text(json.dumps({'queued': [
+                {'id': 'ord_l3', 'status': 'queued', 'pages': [{'url': 'https://www.layer3labs.io/guides/test'}]},
+                {'id': 'ord_pf', 'status': 'queued', 'pages': [{'url': 'https://www.pipeflare.io/guides/test'}]},
+            ]}))
+            cloud_active = self.mod.check_paid_publisher(self.root)
+            self.assertFalse(cloud_active['fastExit'])
+            self.assertEqual(cloud_active['orders'], ['ord_l3'])
+
+            # Unattached-only sister-site orders delegate cleanly to GitHub Actions backup
+            (pp / 'ledger.json').write_text(json.dumps({'queued': [
+                {'id': 'ord_pf', 'status': 'queued', 'pages': [{'url': 'https://www.pipeflare.io/guides/test'}]},
+            ]}))
+            cloud_unattached = self.mod.check_paid_publisher(self.root)
+            self.assertTrue(cloud_unattached['fastExit'])
+            self.assertIn('1 unattached external orders delegated to GitHub Actions publisher-failover', cloud_unattached['summary'])
         finally:
             if prev_remote is None:
                 os.environ.pop('CLAUDE_CODE_REMOTE', None)

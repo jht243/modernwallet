@@ -95,7 +95,7 @@ def _send_noop(
     import urllib.request
     secrets: dict[str, str] = {}
     for sp in (root / '.claude/routines.config', root / '.claude/secrets.env', Path.home() / '.claude/secrets.env'):
-        if sp.is_file():
+        if _safe_is_file(sp):
             for raw in sp.read_text(errors='ignore').splitlines():
                 ln = raw.strip()
                 if ln and not ln.startswith('#') and '=' in ln:
@@ -201,24 +201,143 @@ def check_json_candidates(
     }
 
 
+_CLAUDE_CLOUD_REPO_BY_HOST = {
+    'layer3labs.io': 'layer3labs',
+    'thehoaguide.com': 'thehoaguide',
+    'rankandpay.org': 'vet_tools',
+    'mindmedicinelaw.com': 'psych_report',
+    'themetabolicjournal.com': 'metabolic_journal',
+    'themodernwallet.com': 'modernwallet',
+}
+
+
+def _extract_host(val: str | None) -> str:
+    s = str(val or '').strip().lower()
+    if not s:
+        return ''
+    if '://' in s:
+        s = urllib.parse.urlparse(s).hostname or ''
+    else:
+        s = s.split('/', 1)[0]
+    return s.removeprefix('www.')
+
+
+def _safe_is_file(path: Path) -> bool:
+    try:
+        return path.is_file()
+    except OSError:
+        return False
+
+
+def _safe_is_dir(path: Path) -> bool:
+    try:
+        return path.is_dir()
+    except OSError:
+        return False
+
+
+def _is_attached_in_claude_cloud(hosts: list[str]) -> bool:
+    clean = [h for h in hosts if h] or ['layer3labs.io']
+    home_user = Path('/home/user')
+    has_home_checkouts = _safe_is_dir(home_user) and any(_safe_is_dir(home_user / r) for r in _CLAUDE_CLOUD_REPO_BY_HOST.values())
+    for h in clean:
+        repo_name = _CLAUDE_CLOUD_REPO_BY_HOST.get(h)
+        if not repo_name:
+            return False
+        if has_home_checkouts and not _safe_is_dir(home_user / repo_name):
+            return False
+    return True
+
+
+def _is_row_held_or_blocked(r: dict) -> bool:
+    if any(r.get(k) for k in ('hold', 'ownerHold', 'paused', 'cancelled', 'cancelledAt', 'refundAt', 'refundedAt', 'auditBlocked', 'publisherBlocked')):
+        return True
+    if (r.get('partialPublication') or {}).get('customerCompletionBlocked') is True:
+        return True
+    st = str(r.get('status') or '').strip().lower()
+    if st in ('completed', 'cancelled', 'paused', 'held', 'suppressed', 'superseded', 'quarantined_needs_fix'):
+        return True
+    return False
+
+
+def _account_has_unsolicited_hold(profiles_by_key: dict[str, dict], open_paylater_keys: set[str], row: dict, now_utc: dt.datetime) -> bool:
+    ck = str(row.get('customerKey') or row.get('vendorDomain') or '').strip().lower()
+    if not ck:
+        contact = str(row.get('contact') or row.get('vendorEmail') or '').strip().lower()
+        if '@' in contact:
+            ck = contact.split('@', 1)[1]
+    if not ck:
+        return False
+    if ck in open_paylater_keys:
+        return True
+    acc = profiles_by_key.get(ck)
+    if not acc:
+        return False
+    if acc.get('optOut') or acc.get('suppression'):
+        return True
+    ph = acc.get('passHold') or {}
+    if ph.get('state') == 'active' and ph.get('until'):
+        try:
+            if dt.datetime.fromisoformat(str(ph['until']).replace('Z', '+00:00')) > now_utc:
+                return True
+        except ValueError:
+            pass
+    ca = acc.get('contactAfter') or {}
+    if ca.get('until') and not ca.get('cancelled') and not ca.get('resumedAt'):
+        if str(ca['until']) > now_utc.date().isoformat():
+            return True
+    hu = acc.get('holdUnsolicited') or {}
+    if hu and (not hu.get('until') or str(hu['until']) > now_utc.date().isoformat()):
+        return True
+    if any(isinstance(v, dict) and v.get('invoiceStillOwed') for k, v in acc.items() if k.startswith('ownerApproved')):
+        return True
+    return False
+
+
 def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io', send_email: bool = False) -> dict:
     q = _load_quarantine(root)
     pp_dir = root / 'scripts' / 'paid_placements'
     actionable_orders = []
+    order_hosts_by_id: dict[str, list[str]] = {}
     actionable_fixes = []
+    fix_hosts_by_id: dict[str, list[str]] = {}
     actionable_upsells = []
+    upsell_rows_by_id: dict[str, dict] = {}
     hosted_ready = []
     active_ids: set[str] = set()
+    now_utc = dt.datetime.now(dt.timezone.utc)
 
+    profiles_by_key: dict[str, dict] = {}
+    prof_p = pp_dir / 'profiles.json'
+    if prof_p.is_file():
+        try:
+            pdoc = json.loads(prof_p.read_text(encoding='utf-8'))
+            for acc in (pdoc.get('accounts') or []):
+                if isinstance(acc, dict) and acc.get('customerKey'):
+                    profiles_by_key[str(acc['customerKey']).strip().lower()] = acc
+        except Exception:
+            pass
+
+    open_paylater_keys: set[str] = set()
     ledger_p = pp_dir / 'ledger.json'
     if ledger_p.is_file():
         ledger = json.loads(ledger_p.read_text(encoding='utf-8'))
+        if isinstance(ledger, dict):
+            for f_row in (ledger.get('fulfilled') or []):
+                if not isinstance(f_row, dict):
+                    continue
+                pl = f_row.get('payLater') or {}
+                if (pl and not pl.get('paidAt')) or (not f_row.get('paymentId') and f_row.get('paymentStatus') == 'unpaid'):
+                    for k in ('contact', 'payer'):
+                        raw_c = str(f_row.get(k) or '').strip().lower()
+                        if '@' in raw_c:
+                            open_paylater_keys.add(raw_c.split('@', 1)[1].split()[0].strip('<>'))
         rows = ledger.get('queued', []) if isinstance(ledger, dict) else (ledger if isinstance(ledger, list) else [])
         for r in rows:
             if not isinstance(r, dict):
                 continue
-            rid = str(r.get('id') or r.get('orderId') or r.get('invoiceId') or r.get('brand') or '')
-            if r.get('status') in ('completed', 'cancelled', 'quarantined_needs_fix'):
+            rid = str(r.get('id') or r.get('paymentId') or r.get('orderId') or r.get('invoiceId') or r.get('brand') or '')
+            if _is_row_held_or_blocked(r):
                 continue
             if r.get('customerApprovalRequired') and (r.get('draftDelivery') or {}).get('status') == 'sent' and not r.get('customerApprovedAt'):
                 continue
@@ -231,7 +350,19 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
                 or q.is_quarantined(root, 'paid-placement-publish', item_id=rid)
             ):
                 continue
-            actionable_orders.append(rid or 'order')
+            key_id = rid or 'order'
+            hosts: list[str] = []
+            if r.get('site'):
+                hosts.append(_extract_host(r.get('site')))
+            if isinstance(r.get('deepDive'), dict) and r['deepDive'].get('site'):
+                hosts.append(_extract_host(r['deepDive'].get('site')))
+            for pg in (r.get('pages') or []):
+                if isinstance(pg, dict):
+                    hosts.append(_extract_host(pg.get('site') or pg.get('url')))
+                elif isinstance(pg, str):
+                    hosts.append(_extract_host(pg))
+            actionable_orders.append(key_id)
+            order_hosts_by_id[key_id] = [h for h in hosts if h]
 
     fix_p = pp_dir / 'fix-queue.json'
     if fix_p.is_file():
@@ -240,7 +371,10 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
         for r in rows:
             if not isinstance(r, dict) or r.get('status') != 'queued':
                 continue
-            if r.get('disposition') == 'superseded':
+            if _is_row_held_or_blocked(r) or r.get('notifiedAt'):
+                continue
+            disp = r.get('disposition')
+            if disp == 'superseded' or (isinstance(disp, dict) and disp.get('outcome') in ('superseded', 'duplicate', 'withdrawn', 'declined')):
                 continue
             rid = str(r.get('id') or r.get('fixId') or r.get('brand') or '')
             page_route = urllib.parse.urlparse(str(r.get('pageUrl') or '')).path.rstrip('/') or None if r.get('pageUrl') else None
@@ -249,7 +383,9 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
                 or q.is_quarantined(root, 'paid-placement-publish', item_id=rid, route=page_route)
             ):
                 continue
-            actionable_fixes.append(rid or 'fix')
+            key_id = rid or 'fix'
+            actionable_fixes.append(key_id)
+            fix_hosts_by_id[key_id] = [h for h in [_extract_host(r.get('site') or r.get('pageUrl'))] if h]
 
     upsell_p = pp_dir / 'upsell-queue.json'
     if upsell_p.is_file():
@@ -263,12 +399,28 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
                 active_ids.add(rid)
             if r.get('status') != 'queued':
                 continue
+            if r.get('sentAt') or r.get('replySentAt') or _is_row_held_or_blocked(r):
+                continue
+            if 'HOLD BEFORE U2:' in str(r.get('note') or '').upper():
+                continue
+            if _account_has_unsolicited_hold(profiles_by_key, open_paylater_keys, r, now_utc):
+                continue
+            send_after_raw = str(r.get('sendAfter') or '').strip()
+            if send_after_raw:
+                try:
+                    sa_dt = dt.datetime.fromisoformat(send_after_raw.replace('Z', '+00:00'))
+                    if sa_dt.tzinfo is not None and sa_dt.astimezone(dt.timezone.utc) > now_utc:
+                        continue
+                except ValueError:
+                    pass
             if rid and (
                 q.is_quarantined(root, 'paid-placement-publish', item_id=f'upsell:{rid}')
                 or q.is_quarantined(root, 'paid-placement-publish', item_id=rid)
             ):
                 continue
-            actionable_upsells.append(rid or 'upsell')
+            ukey = rid or 'upsell'
+            actionable_upsells.append(ukey)
+            upsell_rows_by_id[ukey] = r
 
     reports_dir = root / 'reports'
     if reports_dir.is_dir():
@@ -289,27 +441,17 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
 
     has_local_bridge = (
         bool(os.environ.get('GMAIL_BRIDGE_SECRET', '').strip())
-        or bool(os.environ.get('LAYER3_BRIDGE_HELPER', '').strip() and Path(os.environ['LAYER3_BRIDGE_HELPER']).is_file())
-        or (Path.home() / '.layer3-ops/bridge_read.py').is_file()
-        or Path('/tmp/layer3-today-mail-audit-20261028/bridge_read.py').is_file()
+        or bool(os.environ.get('LAYER3_BRIDGE_HELPER', '').strip() and _safe_is_file(Path(os.environ['LAYER3_BRIDGE_HELPER'])))
+        or _safe_is_file(Path.home() / '.layer3-ops/bridge_read.py')
+        or _safe_is_file(Path('/tmp/layer3-today-mail-audit-20261028/bridge_read.py'))
         or not (root / 'scripts/publisher_failover/local.py').is_file()
     )
-    is_cloud_remote = (
+    is_claude_cloud = (
         os.environ.get('CLAUDE_CODE_REMOTE', '').strip().lower() in ('1', 'true', 'yes')
-        or bool(os.environ.get('CODEX_SANDBOX'))
-        or (Path('/home/user').is_dir() and not os.environ.get('GMAIL_BRIDGE_SECRET'))
-        or not has_local_bridge
+        or (_safe_is_dir(Path('/home/user')) and not os.environ.get('CODEX_SANDBOX'))
     )
-    hosted_runnable = [] if is_cloud_remote else hosted_ready
-    upsells_runnable = bool(hosted_runnable)
-    if actionable_upsells and not upsells_runnable and not is_cloud_remote:
-        cg = root / 'scripts/lib/content_gen.py'
-        if cg.is_file():
-            try:
-                pf = subprocess.run([sys.executable, str(cg), 'preflight'], cwd=root, capture_output=True, text=True, timeout=20)
-                upsells_runnable = pf.returncode == 0
-            except subprocess.TimeoutExpired:
-                upsells_runnable = False
+    is_unauth_sandbox = bool(os.environ.get('CODEX_SANDBOX')) or (not is_claude_cloud and not has_local_bridge)
+    hosted_runnable = [] if is_unauth_sandbox else hosted_ready
 
     standing_hasher = hashlib.sha256()
     for cand in sorted(pp_dir.glob('*standing*.json')) + sorted(pp_dir.glob('*sponsorship*.json')):
@@ -330,8 +472,8 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
         if standing_script.is_file():
             repo_candidates = []
             home_user = Path('/home/user')
-            if home_user.is_dir():
-                repo_candidates = [str(p) for p in sorted(home_user.iterdir()) if (p / 'data/category-sponsors.json').is_file()]
+            if _safe_is_dir(home_user):
+                repo_candidates = [str(p) for p in sorted(home_user.iterdir()) if _safe_is_file(p / 'data/category-sponsors.json')]
             if not repo_candidates and (root / 'data/category-sponsors.json').is_file():
                 repo_candidates = [str(root)]
             if repo_candidates:
@@ -345,15 +487,57 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
                 except Exception:
                     pass
 
-    orders_runnable = not is_cloud_remote
-    fixes_runnable = not is_cloud_remote
-    has_work = bool((actionable_orders and orders_runnable) or (actionable_fixes and fixes_runnable) or (actionable_upsells and upsells_runnable) or hosted_runnable or standing_changed)
+    if is_claude_cloud:
+        # Primary-First Rule (2026-11-25): Claude Cloud ALWAYS runs attached-repo orders, fixes, AND upsells
+        # (plus allowExisting upsells that verify live over HTTPS without cloning an external repo).
+        # Only genuinely unattached external-repo items delegate to GitHub Actions backup.
+        runnable_orders = [oid for oid in actionable_orders if _is_attached_in_claude_cloud(order_hosts_by_id.get(oid, []))]
+        delegated_orders = [oid for oid in actionable_orders if oid not in set(runnable_orders)]
+        runnable_fixes = [fid for fid in actionable_fixes if _is_attached_in_claude_cloud(fix_hosts_by_id.get(fid, []))]
+        delegated_fixes = [fid for fid in actionable_fixes if fid not in set(runnable_fixes)]
+        runnable_upsells = []
+        delegated_upsells = []
+        for uid in actionable_upsells:
+            urow = upsell_rows_by_id.get(uid) or {}
+            uhost = _extract_host(urow.get('destinationSite') or urow.get('site')) or 'layer3labs.io'
+            can_existing = bool(urow.get('allowExisting')) and not urow.get('existingNoFitAt')
+            if _is_attached_in_claude_cloud([uhost]) or can_existing:
+                runnable_upsells.append(uid)
+            else:
+                delegated_upsells.append(uid)
+    elif is_unauth_sandbox:
+        runnable_orders = []
+        delegated_orders = list(actionable_orders)
+        runnable_fixes = []
+        delegated_fixes = list(actionable_fixes)
+        runnable_upsells = []
+        delegated_upsells = list(actionable_upsells)
+    else:
+        runnable_orders = list(actionable_orders)
+        delegated_orders = []
+        runnable_fixes = list(actionable_fixes)
+        delegated_fixes = []
+        upsells_ok = bool(hosted_runnable)
+        if actionable_upsells and not upsells_ok:
+            cg = root / 'scripts/lib/content_gen.py'
+            if cg.is_file():
+                try:
+                    pf = subprocess.run([sys.executable, str(cg), 'preflight'], cwd=root, capture_output=True, text=True, timeout=20)
+                    upsells_ok = pf.returncode == 0
+                except subprocess.TimeoutExpired:
+                    upsells_ok = False
+            else:
+                upsells_ok = True
+        runnable_upsells = list(actionable_upsells) if upsells_ok else []
+        delegated_upsells = []
+
+    has_work = bool(runnable_orders or runnable_fixes or runnable_upsells or hosted_runnable or standing_changed)
     if has_work:
         return {
             'fastExit': False,
-            'orders': actionable_orders if orders_runnable else [],
-            'fixes': actionable_fixes if fixes_runnable else [],
-            'upsells': actionable_upsells if upsells_runnable else [],
+            'orders': runnable_orders,
+            'fixes': runnable_fixes,
+            'upsells': runnable_upsells,
             'hostedReady': hosted_runnable,
             'standingChanged': standing_changed,
         }
@@ -362,9 +546,9 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
         state_file.write_text(json.dumps({'standingSha256': standing_sha, 'checkedAt': dt.datetime.now(dt.timezone.utc).isoformat()}) + '\n')
     except Exception:
         pass
-    if is_cloud_remote and (actionable_orders or actionable_fixes):
+    if is_claude_cloud and (delegated_orders or delegated_fixes):
         dispatcher = Path.home() / '.layer3-ops/native_cloud_dispatch.py'
-        if dispatcher.is_file():
+        if _safe_is_file(dispatcher):
             try:
                 subprocess.run(
                     [sys.executable, str(dispatcher), 'dispatch-publisher', '--sla-override'],
@@ -373,18 +557,18 @@ def check_paid_publisher(root: Path, *, site: str = 'https://www.layer3labs.io',
             except Exception:
                 pass
     order_note = (
-        f'{len(actionable_orders)} orders delegated to GitHub Actions publisher-failover'
-        if (is_cloud_remote and actionable_orders)
+        f'{len(delegated_orders)} unattached external orders delegated to GitHub Actions publisher-failover'
+        if (is_claude_cloud and delegated_orders)
         else '0 actionable orders'
     )
     fix_note = (
-        f'{len(actionable_fixes)} fixes delegated to GitHub Actions publisher-failover'
-        if (is_cloud_remote and actionable_fixes)
+        f'{len(delegated_fixes)} unattached external fixes delegated to GitHub Actions publisher-failover'
+        if (is_claude_cloud and delegated_fixes)
         else '0 actionable fixes'
     )
     upsell_note = (
-        f'{len(actionable_upsells)} upsells delegated to GitHub Actions publisher-failover'
-        if (is_cloud_remote and actionable_upsells)
+        f'{len(delegated_upsells)} unattached external upsells delegated to GitHub Actions publisher-failover'
+        if (is_claude_cloud and delegated_upsells)
         else f'{len(actionable_upsells)} upsells deferred/unrunnable'
     )
     summary = (

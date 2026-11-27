@@ -47,21 +47,31 @@ def _job_matches_search_gap_row(old_job_id,row):
   if any(len(cid)>=12 and cid[:12] in old_job_id for cid in cids):return True
  return False
 
-def _search_gap_job_closed_for_restart(root,journal,old_job_id):
- import re,urllib.parse,urllib.request
+def _resolve_supabase_env(root):
  url=os.environ.get('SUPABASE_URL','').strip().rstrip('/')
  svc_key=os.environ.get('SUPABASE_SERVICE_ROLE_KEY','').strip()
- if not url or not svc_key:
-  for env_name in ('.env','.env.local'):
-   env_p=root/env_name
+ if url and svc_key:return url,svc_key
+ vals={}
+ candidates=[root/'.claude/routines.config',root/'.claude/secrets.env',root/'.env.local',root/'.env']
+ try:candidates.append(Path.home()/'.claude/secrets.env')
+ except OSError:pass
+ for env_p in candidates:
+  try:
    if not env_p.is_file():continue
-   try:
-    for ln in env_p.read_text(errors='ignore').splitlines():
-     if '=' not in ln or ln.lstrip().startswith('#'):continue
-     k,v=ln.split('=',1);k=k.strip().removeprefix('export ').strip();v=v.strip().strip('"').strip("'")
-     if k in ('SUPABASE_URL','VITE_SUPABASE_URL','NEXT_PUBLIC_SUPABASE_URL') and not url:url=v.rstrip('/')
-     elif k=='SUPABASE_SERVICE_ROLE_KEY' and not svc_key:svc_key=v
-   except Exception:pass
+   for ln in env_p.read_text(errors='ignore').splitlines():
+    line=ln.strip()
+    if not line or line.startswith('#') or '=' not in line:continue
+    k,v=line.split('=',1);k=k.strip().removeprefix('export ').strip();v=v.strip()
+    if len(v)>=2 and v[0]==v[-1] and v[0] in ('"',"'"):v=v[1:-1]
+    if k and v and k not in vals:vals[k]=v
+  except OSError:continue
+ url=(url or vals.get('SUPABASE_URL') or vals.get('NEXT_PUBLIC_SUPABASE_URL') or vals.get('PUBLIC_SUPABASE_URL') or vals.get('VITE_SUPABASE_URL') or '').strip().rstrip('/')
+ svc_key=(svc_key or vals.get('SUPABASE_SERVICE_ROLE_KEY') or '').strip()
+ return url,svc_key
+
+def _search_gap_job_closed_for_restart(root,journal,old_job_id):
+ import re,urllib.parse,urllib.request
+ url,svc_key=_resolve_supabase_env(root)
  if not url or not svc_key or not isinstance(old_job_id,str) or not old_job_id:return False
  raw=[os.environ.get('SEARCH_SITE',''),urllib.parse.urlsplit(journal.base).hostname or '']
  cfg=root/'.claude/content-review-policy.json'

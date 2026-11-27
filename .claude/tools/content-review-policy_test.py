@@ -569,6 +569,213 @@ class Tests(unittest.TestCase):
         self.assertEqual(self.reserve(2,job='next-job')['number'],1)
         self.assertTrue(p.check_rendered(self.root,approved,report))
 
+    def continuation_r1(self):
+        first=self.reserve(1,job='base-family')
+        self.snap=self.snapshot('continued first candidate');self.snap['manifest']['jobId']='recorded-continuation'
+        self.snap['snapshotSha256']=render.digest({k:v for k,v in self.snap.items() if k!='snapshotSha256'})
+        snap=self.put('reports/continuation-r1.json',self.snap)
+        self.snapshot_path=snap
+        failure=self.put('reports/fixture-pending-failure.md','Synthetic fixture: the original pending capture belongs to an earlier worker; retain the exact same unfinished slot. '*3)
+        fixed=p.repair_pending(self.root,snap,'/guide','base-family','independent',self.root/'reports/continuation-admission.json',failure)
+        report=self.put('reports/continuation-r1-review.json',self.report(fixed,'FAIL'))
+        p.record(self.root,report)
+        return fixed,report
+
+    def continuation_incident(self, word='corrected candidate', alias='recorded-continuation'):
+        first,report=self.continuation_r1()
+        self.snap=self.snapshot(word);self.snap['manifest']['jobId']=alias
+        self.snap['snapshotSha256']=render.digest({k:v for k,v in self.snap.items() if k!='snapshotSha256'})
+        self.snapshot_path=self.put('reports/continuation-r2.json',self.snap)
+        # Reproduce the old bug only in this isolated synthetic journal.
+        with p.Journal(self.root,'https://example.com','/guide') as j:
+            original=j.cycle['cycleId'];badcycle='synthetic-accidental-cycle'
+            bad={'version':p.VERSION,'identity':j.identity,'cycleId':badcycle,'jobId':alias,
+                 'number':1,'provisionalProfile':'high','maximumRounds':2,'snapshot':p.reference(self.root,self.snapshot_path),
+                 'fingerprint':self.snap['routes'][0]['fingerprint'],'author':'writer','reviewer':'independent','policySha256':p.policy_hash(self.root)}
+            out=self.put('reports/accidental-admission.json',bad);badref=p.reference(self.root,out)
+            j.append('published',{'cycleId':original,'release':'auto-closed-prior-run','supersededByJobId':alias})
+            j.append('begin',{'cycleId':badcycle,'jobId':alias,'profile':'high'})
+            j.append('reserve',{'number':1,'admission':badref,'fingerprint':bad['fingerprint'],'reviewer':'independent'})
+            before=j.path.read_bytes();journal_path=j.path
+        incident=self.put('reports/continuation-incident.json',{'syntheticFixture':True,'contentReviewStarted':False,
+            'currentUIObserved':False,'verdictRecorded':False,'admission':badref,'snapshot':bad['snapshot'],
+            'originalReview':p.reference(self.root,report),'journal':p.reference(self.root,journal_path)})
+        return badref,incident,before,journal_path
+
+    def test_recorded_alias_reserves_true_second_round_without_autoclose(self):
+        self.continuation_r1();self.snap=self.snapshot('next corrected candidate')
+        self.snap['manifest']['jobId']='recorded-continuation';self.snap['snapshotSha256']=render.digest({k:v for k,v in self.snap.items() if k!='snapshotSha256'})
+        snap=self.put('reports/next.json',self.snap)
+        admission=p.reserve(self.root,snap,'/guide','recorded-continuation','independent',self.root/'reports/true-r2.json')
+        self.assertEqual((admission['jobId'],admission['continuationJobId'],admission['number']),('base-family','recorded-continuation',2))
+        with p.Journal(self.root,'https://example.com','/guide') as j:
+            self.assertEqual(len(j.cycles),1);self.assertFalse(any(e['kind']=='published' for e in j.events))
+
+    def test_unused_continuation_recovery_preserves_events_r1_and_real_r2_validation(self):
+        bad,incident,before,path=self.continuation_incident()
+        fixed=p.recover_continuation(self.root,self.snapshot_path,'/guide','recorded-continuation','independent',self.root/'reports/recovered-r2.json',incident)
+        self.assertTrue(path.read_bytes().startswith(before));self.assertEqual(len(path.read_bytes().splitlines()),8)
+        self.assertEqual((fixed['number'],fixed['maximumRounds'],fixed['jobId']),(2,2,'base-family'))
+        self.assertEqual(fixed['continuationRecoveryOf'],bad)
+        with p.Journal(self.root,'https://example.com','/guide') as j:
+            self.assertEqual([r['status'] for r in j.cycle['rounds']],['complete','pending'])
+            self.assertEqual(j.cycle['rounds'][0]['verdict'],'FAIL')
+            self.assertEqual(j.cycles[1]['status'],'superseded-continuation-incident')
+        # Exact retry after checkpoint uncertainty resumes, not another reserve/event.
+        same=p.recover_continuation(self.root,self.snapshot_path,'/guide','recorded-continuation','independent',self.root/'reports/unused-output.json',incident)
+        self.assertEqual(same['admissionArtifact'],fixed['admissionArtifact']);self.assertEqual(len(path.read_bytes().splitlines()),8)
+        report=self.report(fixed,'PASS');report_path=self.put('reports/actual-recovered-r2.json',report)
+        result=p.record(self.root,report_path)
+        self.assertEqual(result[0]['round'],2);self.assertEqual(result[0]['roundsRemaining'],0)
+        self.assertTrue(p.check_rendered(self.root,self.snap,report))
+        archived=p.sources(self.root,report_path)['paths'];self.assertTrue(any(Path(x).name==incident.name for x in archived))
+        with self.assertRaises(ValueError):p.reserve(self.root,self.snapshot_path,'/guide','recorded-continuation','independent',self.root/'reports/third.json')
+
+    def test_continuation_recovery_recomputes_high_risk_without_extra_budget(self):
+        bad,incident,_,_=self.continuation_incident('HIPAA terminology')
+        fixed=p.recover_continuation(self.root,self.snapshot_path,'/guide','recorded-continuation','independent',self.root/'reports/high-r2.json',incident)
+        self.assertEqual(fixed['provisionalProfile'],'high');self.assertEqual(fixed['maximumRounds'],2)
+
+    def test_continuation_recovery_rejects_wrong_owner_stale_capture_and_incident(self):
+        bad,incident,before,path=self.continuation_incident()
+        for job,reviewer in [('different-family','independent'),('recorded-continuation','other-reviewer')]:
+            with self.assertRaises(ValueError):p.recover_continuation(self.root,self.snapshot_path,'/guide',job,reviewer,self.root/'reports/no-owner.json',incident)
+        changed=self.put('reports/changed-snapshot.json',self.snapshot('another capture'))
+        with self.assertRaises(ValueError):p.recover_continuation(self.root,changed,'/guide','recorded-continuation','independent',self.root/'reports/no-snapshot.json',incident)
+        doc=p.read(incident);doc['contentReviewStarted']=True;incident.write_text(json.dumps(doc))
+        with self.assertRaises(ValueError):p.recover_continuation(self.root,self.snapshot_path,'/guide','recorded-continuation','independent',self.root/'reports/no-incident.json',incident)
+        self.assertEqual(path.read_bytes(),before)
+
+    def test_continuation_recovery_rejects_recorded_accidental_cycle(self):
+        bad,incident,_,path=self.continuation_incident()
+        value=p.read(self.root/bad['path']);value['admissionArtifact']=bad
+        p.record(self.root,self.put('reports/accidental-actual-review.json',self.report(value,'FAIL')))
+        before=path.read_bytes()
+        with self.assertRaises(ValueError):p.recover_continuation(self.root,self.snapshot_path,'/guide','recorded-continuation','independent',self.root/'reports/no-recorded.json',incident)
+        self.assertEqual(path.read_bytes(),before)
+
+    def test_continuation_recovery_rejects_genuinely_published_accidental_cycle(self):
+        bad,incident,_,path=self.continuation_incident()
+        value=p.read(self.root/bad['path']);value['admissionArtifact']=bad
+        report=self.report(value,'PASS');p.record(self.root,self.put('reports/actual-accidental-pass.json',report))
+        p.mark_published(self.root,self.snap,report,'a'*40,{'commit':'a'*40,'status':'live',
+            'verifiedAt':'2026-11-08T12:00:00+00:00','evidenceUrl':'https://example.com/synthetic-publication'})
+        before=path.read_bytes()
+        with self.assertRaises(ValueError):
+            p.recover_continuation(self.root,self.snapshot_path,'/guide','recorded-continuation','independent',self.root/'reports/no-published-recovery.json',incident)
+        self.assertEqual(path.read_bytes(),before)
+
+    def test_continuation_recovery_rejects_unrecorded_alias(self):
+        bad,incident,before,path=self.continuation_incident(alias='unrecorded-lookalike')
+        with self.assertRaisesRegex(ValueError,'exact previously recorded'):
+            p.recover_continuation(self.root,self.snapshot_path,'/guide','unrecorded-lookalike','independent',self.root/'reports/no-alias.json',incident)
+        self.assertEqual(path.read_bytes(),before)
+
+    def test_recovered_continuation_r2_release_and_live_close_preserve_original_cycle(self):
+        for verdict in ['PASS','FAIL']:
+            with self.subTest(verdict=verdict):
+                f=Tests();f.setUp();self.addCleanup(f.doCleanups)
+                f.config.update(releaseAtAuditLimit=True,canonicalHosts=['example.com']);f.put(p.CONFIG,f.config)
+                bad,incident,before,path=f.continuation_incident()
+                original_snapshot=f.snapshot_path.read_bytes()
+                fixed=p.recover_continuation(f.root,f.snapshot_path,'/guide','recorded-continuation','independent',f.root/'reports/final-r2-admission.json',incident)
+                report=f.report(fixed,verdict)
+                if verdict=='FAIL':
+                    report['routes'][0]['checks']['wholePageCoherence']['status']='FAIL'
+                    report['routes'][0]['factualReview']['seoQuality']['status']='FAIL'
+                result=p.record(f.root,f.put('reports/final-r2-review.json',report))
+                self.assertEqual(result[0]['round'],2);self.assertEqual(result[0]['roundsRemaining'],0)
+                self.assertEqual(result[0]['disposition'],'publish' if verdict=='PASS' else 'publish-at-audit-limit')
+                self.assertEqual(fixed['jobId'],'base-family');self.assertEqual(fixed['continuationJobId'],'recorded-continuation')
+                self.assertEqual(f.snap['manifest']['jobId'],'recorded-continuation')
+                self.assertTrue(p.check_rendered(f.root,f.snap,report))
+                # Synthetic host evidence only; exercises the exact native callback
+                # used by rendered-audit.py record-deployment after real live compare.
+                p.mark_published(f.root,f.snap,report,'a'*40,{'commit':'a'*40,'status':'live',
+                    'verifiedAt':'2026-11-08T12:00:00+00:00','evidenceUrl':'https://example.com/synthetic-host-proof'})
+                with p.Journal(f.root,'https://example.com','/guide') as j:
+                    self.assertEqual(j.cycle['cycleId'],fixed['cycleId']);self.assertEqual(j.cycle['status'],'published')
+                    self.assertEqual(j.cycle['rounds'][0]['verdict'],'FAIL');self.assertEqual(len(j.cycle['rounds']),2)
+                    self.assertEqual(j.events[-1]['data']['cycleId'],fixed['cycleId'])
+                    self.assertEqual(j.cycles[1]['status'],'superseded-continuation-incident')
+                self.assertTrue(path.read_bytes().startswith(before));self.assertEqual(f.snapshot_path.read_bytes(),original_snapshot)
+                for job in ['base-family','recorded-continuation']:
+                    with self.assertRaisesRegex(ValueError,'published job'):
+                        p.reserve(f.root,f.snapshot_path,'/guide',job,'independent',f.root/('reports/no-reset-'+job+'.json'))
+
+    def test_historical_capture_only_continues_exact_open_preceding_policy(self):
+        self.continuation_r1();old_hash=p.policy_hash(self.root)
+        self.snap=self.snapshot('next candidate');self.snap['manifest']['jobId']='recorded-continuation'
+        self.snap['snapshotSha256']=render.digest({k:v for k,v in self.snap.items() if k!='snapshotSha256'})
+        snap=self.put('reports/historical-next.json',self.snap)
+        self.config['compatiblePolicies']=[{'sha256':old_hash,'commit':'a'*40,'reason':'Synthetic mechanical-only change preserving the exact original policy and budget.'}];self.put(p.CONFIG,self.config)
+        wrong=copy.deepcopy(self.snap);wrong['contentReviewPolicy']['sha256']='b'*64;wrong['snapshotSha256']=render.digest({k:v for k,v in wrong.items() if k!='snapshotSha256'})
+        self.config['compatiblePolicies'].append({'sha256':'b'*64,'commit':'b'*40,'reason':'Synthetic unrelated historical policy is not the preceding native admission.'});self.put(p.CONFIG,self.config)
+        with self.assertRaisesRegex(ValueError,'active review policy'):p.reserve(self.root,self.put('reports/wrong-hash.json',wrong),'/guide','recorded-continuation','independent',self.root/'reports/no-hash.json')
+        with self.assertRaisesRegex(ValueError,'active review policy'):p.reserve(self.root,snap,'/guide','different-family','independent',self.root/'reports/no-family.json')
+        cross=copy.deepcopy(self.snap);cross['manifest']['jobId']='different-family'
+        cross['snapshotSha256']=render.digest({k:v for k,v in cross.items() if k!='snapshotSha256'})
+        with self.assertRaisesRegex(ValueError,'active review policy'):
+            p.reserve(self.root,self.put('reports/cross-family-capture.json',cross),'/guide','recorded-continuation','independent',self.root/'reports/no-cross-capture.json')
+        adm=p.reserve(self.root,snap,'/guide','recorded-continuation','independent',self.root/'reports/current-admission.json')
+        self.assertEqual(adm['number'],2);self.assertEqual(adm['policySha256'],p.policy_hash(self.root));self.assertNotEqual(adm['policySha256'],old_hash)
+
+    def test_real_publication_cannot_reopen_recorded_continuation(self):
+        fixed,_=self.continuation_r1();report=self.report(fixed,'PASS')
+        # Use the true second slot, then genuinely close that exact cycle.
+        adm=p.reserve(self.root,self.snapshot_path,'/guide','recorded-continuation','independent',self.root/'reports/publish-r2.json')
+        report=self.report(adm,'PASS');p.record(self.root,self.put('reports/publish-review.json',report))
+        p.mark_published(self.root,self.snap,report,'a'*40,{'commit':'a'*40,'status':'live','verifiedAt':'2026-11-08T12:00:00+00:00','evidenceUrl':'https://example.com/proof'})
+        with self.assertRaisesRegex(ValueError,'published job'):p.reserve(self.root,self.snapshot_path,'/guide','recorded-continuation','independent',self.root/'reports/no-reset.json')
+
+    def test_genuine_different_stale_job_auto_close_is_unchanged(self):
+        self.continuation_r1()
+        with p.Journal(self.root,'https://example.com','/guide') as j:rel=str(j.path.relative_to(self.root))
+        subprocess.run(['git','add','--',rel],cwd=self.root,check=True,capture_output=True)
+        subprocess.run(['git','-c','user.name=fixture','-c','user.email=fixture@example.com','commit','-qm','Synthetic committed prior cycle'],cwd=self.root,check=True,capture_output=True)
+        self.snap=self.snapshot('genuinely different job');self.snap['manifest']['jobId']='other-job'
+        self.snap['snapshotSha256']=render.digest({k:v for k,v in self.snap.items() if k!='snapshotSha256'})
+        adm=p.reserve(self.root,self.put('reports/other-job.json',self.snap),'/guide','other-job','independent',self.root/'reports/other-admission.json')
+        self.assertEqual(adm['number'],1)
+        with p.Journal(self.root,'https://example.com','/guide') as j:
+            self.assertEqual(len(j.cycles),2);self.assertEqual(j.cycle['jobId'],'other-job')
+
+    def test_recovery_checkpoint_failure_retries_once_and_restores_original_family(self):
+        bad,incident,before,path=self.continuation_incident()
+        remote=self.root/'remote.git';subprocess.run(['git','init','--bare','-q',str(remote)],check=True)
+        subprocess.run(['git','remote','add','origin',str(remote)],cwd=self.root,check=True)
+        self.put('.claude/tools/workflow-control-store.py',Path(__file__).with_name('workflow-control-store.py').read_text())
+        durable=load('continuation_durable_fixture','content-review-durable.py')
+        out=self.root/'reports/recovered-with-checkpoint.json'
+        with mock.patch.object(p,'durable_reviews',return_value=durable):
+            with mock.patch.object(durable,'checkpoint',side_effect=ValueError('Synthetic checkpoint unavailable after append')):
+                with self.assertRaisesRegex(ValueError,'checkpoint unavailable'):
+                    p.recover_continuation(self.root,self.snapshot_path,'/guide','recorded-continuation','independent',out,incident)
+            self.assertTrue(path.read_bytes().startswith(before));self.assertEqual(len(path.read_bytes().splitlines()),8)
+            fixed=p.recover_continuation(self.root,self.snapshot_path,'/guide','recorded-continuation','independent',out,incident)
+        self.assertEqual(fixed['number'],2);self.assertEqual(len(path.read_bytes().splitlines()),8)
+        fresh=self.root/'restored';fresh.mkdir();subprocess.run(['git','init','-q',str(fresh)],check=True)
+        subprocess.run(['git','remote','add','origin',str(remote)],cwd=fresh,check=True)
+        for name in [p.CONFIG,p.CONTRACT,'.claude/tools/workflow-control-store.py']:
+            target=fresh/name;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes((self.root/name).read_bytes())
+        journal=p.Journal(fresh,'https://example.com','/guide');durable.restore(fresh,journal)
+        with journal as restored:
+            self.assertEqual(len(restored.events),8);self.assertEqual(restored.cycle['jobId'],'base-family')
+            self.assertEqual([r['status'] for r in restored.cycle['rounds']],['complete','pending'])
+            self.assertEqual(restored.cycle['rounds'][0]['verdict'],'FAIL')
+
+    def test_historical_reconstruction_copies_exact_optional_helper_from_commit(self):
+        helper='.claude/tools/approved-link-audit-scope.py';old=b'Synthetic historical optional helper bytes\n'
+        self.put('.claude/workflow-policy.local.json',{})
+        self.put(helper,old.decode())
+        self.put('.claude/tools/workflow-local.py',
+                 "import hashlib\ndef policy_hash(root):\n return hashlib.sha256((root/'.claude/tools/approved-link-audit-scope.py').read_bytes()).hexdigest()\n")
+        subprocess.run(['git','add','--','.claude'],cwd=self.root,check=True,capture_output=True)
+        subprocess.run(['git','-c','user.name=fixture','-c','user.email=fixture@example.com','commit','-qm','Synthetic historical policy'],cwd=self.root,check=True,capture_output=True)
+        commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=self.root,text=True).strip()
+        self.put(helper,'Changed current optional helper bytes')
+        self.assertEqual(p.historical_policy_hash(self.root,commit),p.sha(old))
+
     def test_existing_site_floor_and_medical_claim_escalation(self):
         self.set_level('light');semantic={'text':'An ordinary beard styling guide with verified product specifications.'}
         self.assertEqual(p.profile(self.root,semantic,['ordinary']),'light')
@@ -889,6 +1096,89 @@ class ReleaseGateTests(Tests):
 
 for _name in [n for n in dir(Tests) if n.startswith('test_') and n not in ReleaseGateTests.__dict__]:
     setattr(ReleaseGateTests,_name,None)   # inherited fixtures only; do not run the base tests twice
+
+
+class HistoricalMixedSnapshotSourcesTests(unittest.TestCase):
+    """Synthetic filesystem evidence only; never a real review or permission."""
+    def setUp(self):
+        temp=tempfile.TemporaryDirectory();self.addCleanup(temp.cleanup)
+        self.root=Path(temp.name).resolve()
+        def save(name,value):
+            path=self.root/'reports'/name;path.parent.mkdir(parents=True,exist_ok=True)
+            path.write_text(json.dumps(value) if not isinstance(value,str) else value)
+            return p.reference(self.root,path)
+        self.save=save
+        self.old_page=save('old-guide.html','old exact guide bytes')
+        self.current_page=save('current-guide.html','current exact guide bytes')
+        self.current_other=save('current-other.html','current unrelated route bytes')
+        def page(route,ref):
+            return {'path':route,'htmlFile':ref['path'],'htmlSha256':ref['sha256']}
+        self.page=page
+        self.old={'routes':[page('/guide',self.old_page),
+            page('/unrelated',{'path':'reports/unavailable-old-other.html','sha256':'a'*64})]}
+        self.current={'routes':[page('/guide',self.current_page),page('/unrelated',self.current_other)]}
+        self.journal_path=self.root/'reports/journal.jsonl';self.journal_path.write_text('synthetic fixture')
+
+    def export(self,kind='reserve',closed_cycle=False):
+        current=self.save('current-snapshot.json',self.current)
+        old=self.save('old-snapshot.json',self.old)
+        identity={'canonicalBase':'https://example.com'}
+        admission=self.save('current-admission.json',{'identity':identity,'snapshot':current})
+        old_admission=self.save('old-admission.json',{'identity':identity,'snapshot':old})
+        data={'admission':old_admission}
+        if kind=='repair-pending':
+            data.update(failureEvidence=self.save('failure.json',{'kind':'synthetic'}),invalidatedReferences=[])
+        events=[{'kind':kind,'data':data}]
+        if closed_cycle:
+            events=[{'kind':'begin','data':{'cycleId':'old'}},*events,
+                {'kind':'begin','data':{'cycleId':'current'}},
+                {'kind':'reserve','data':{'admission':admission}}]
+        journal=types.SimpleNamespace(path=self.journal_path,events=events)
+        context=mock.MagicMock();context.__enter__.return_value=journal
+        report=self.save('review.json',{'routes':[{'path':'/guide','reviewBudget':admission}]})
+        with mock.patch.object(p,'Journal',return_value=context),mock.patch.object(p,'saved_applications',return_value=None):
+            return p.sources(self.root,self.root/report['path'])['paths']
+
+    def test_retains_exact_historical_snapshot_and_selected_route_bytes(self):
+        for kind in ['reserve','repair-pending']:
+            with self.subTest(kind=kind):
+                paths=self.export(kind)
+                self.assertIn('reports/old-snapshot.json',paths)
+                self.assertIn(self.old_page['path'],paths)
+                self.assertIn(self.current_other['path'],paths)
+                self.assertNotIn('reports/unavailable-old-other.html',paths)
+
+    def test_historical_selected_route_must_exist_exactly_once(self):
+        for pages in [[],[self.old['routes'][0],self.old['routes'][0]]]:
+            self.old['routes']=pages
+            with self.assertRaisesRegex(ValueError,'Historical snapshot must contain the exact journal route'):
+                self.export()
+
+    def test_missing_or_changed_selected_historical_html_remains_blocked(self):
+        target=self.root/self.old_page['path'];target.write_text('changed')
+        with mock.patch.object(p.subprocess,'run',return_value=types.SimpleNamespace(returncode=1,stdout=b'')):
+            with self.assertRaisesRegex(ValueError,'Review artifact changed or missing'):
+                self.export()
+            target.unlink()
+            with self.assertRaisesRegex(ValueError,'Review artifact changed or missing'):
+                self.export()
+
+    def test_current_snapshot_still_requires_every_route_html(self):
+        (self.root/self.current_other['path']).unlink()
+        with mock.patch.object(p.subprocess,'run',return_value=types.SimpleNamespace(returncode=1,stdout=b'')):
+            with self.assertRaisesRegex(ValueError,'Review artifact changed or missing'):
+                self.export()
+
+    def test_closed_cycle_metadata_and_counters_remain_without_html_availability_claim(self):
+        (self.root/self.old_page['path']).unlink()
+        for kind in ['reserve','repair-pending']:
+            with self.subTest(kind=kind):
+                paths=self.export(kind,closed_cycle=True)
+                self.assertIn('reports/old-admission.json',paths)
+                self.assertIn('reports/old-snapshot.json',paths)
+                self.assertIn('reports/journal.jsonl',paths)
+                self.assertIn(self.current_page['path'],paths)
+                self.assertNotIn(self.old_page['path'],paths)
 
 
 if __name__=='__main__':unittest.main()

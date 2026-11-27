@@ -495,7 +495,7 @@ def _normalize_schema_iso_dates(value):
     if isinstance(value, dict):
         out = {}
         for k, v in value.items():
-            if k in ('datePublished', 'dateModified') and isinstance(v, str):
+            if k in ('datePublished', 'dateModified', 'article:published_time', 'article:modified_time', 'og:updated_time') and isinstance(v, str):
                 out[k] = re.sub(r'^(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})\.\d+(Z|[+-]\d{2}:\d{2})?$', lambda m: m.group(1) + (m.group(2) or ''), v)
             else:
                 out[k] = _normalize_schema_iso_dates(v)
@@ -522,6 +522,7 @@ def publication_semantic(semantic):
         structure.append([tag,attributes])
     if 'structure' in semantic:result['structure']=structure
     if 'schema' in result:result['schema']=_normalize_schema_iso_dates(result['schema'])
+    if 'meta' in result:result['meta']=_normalize_schema_iso_dates(result['meta'])
     return result
 
 
@@ -1134,7 +1135,7 @@ def capture_local(manifest_path, run_id, out, dom_dir=None, build=False, root=No
     spec.loader.exec_module(preview_mod)
     env = preview_mod._node20_env() if hasattr(preview_mod, '_node20_env') else dict(os.environ)
     kind = preview_mod.framework(root)
-    if kind != 'wsgi':
+    if kind not in ('wsgi', 'static-root'):
         marker = root / ('.next/BUILD_ID' if kind == 'next' else 'dist/index.html')
         if (build or not marker.is_file()) and (root / 'package.json').is_file():
             if not (root / 'node_modules').is_dir():
