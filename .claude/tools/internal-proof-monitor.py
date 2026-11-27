@@ -134,6 +134,14 @@ REGULATED_SITES = {
     'jht243/weaponization_fund',
 }
 
+# Guardrail 2b: Physician-reviewed medical/psychedelic sites that intentionally keep REVIEWER_NOTES quote-free
+MEDICAL_NO_QUOTE_SITES = {
+    'jht243/longevitybenchmark',
+    'jht243/medicalfrontier',
+    'jht243/metabolic_journal',
+    'jht243/psych_report',
+}
+
 # Template-wired Reviewer Note stores by repo (all 35 owned fleet sites)
 REVIEWER_NOTE_STORES: dict[str, str] = {
     'jht243/americanpivot': 'src/data/reviewer-notes.ts',
@@ -628,17 +636,56 @@ _REPO_FILE_CACHE: dict[tuple[str, str], str] = {}
 _REPO_RN_CACHE: dict[str, dict[str, str]] = {}
 
 
+def _sync_local_scratch_repos(repos: list[tuple[str, str]]) -> int:
+    """Sync all local scratch checkouts from GitHub `origin/main` right before scanning so local files never lag cloud commits."""
+    def _sync_one(item: tuple[str, str]) -> int:
+        full_repo, branch = item
+        local_dir = _local_scratch_root(full_repo)
+        if local_dir is None or not (local_dir / '.git').exists():
+            return 0
+        # Ensure sparse-checkout is disabled if accidentally active so all data/content paths are visible
+        sp = subprocess.run(
+            ['git', '-C', str(local_dir), 'config', '--bool', 'core.sparseCheckout'],
+            capture_output=True, text=True,
+        )
+        if sp.stdout.strip() == 'true':
+            subprocess.run(['git', '-C', str(local_dir), 'sparse-checkout', 'disable'], capture_output=True, text=True, timeout=60)
+        fetch_p = subprocess.run(
+            ['git', '-C', str(local_dir), 'fetch', 'origin', branch, '--quiet'],
+            capture_output=True, text=True, timeout=45,
+        )
+        if fetch_p.returncode != 0:
+            return 0
+        # Fast-forward working tree when clean so glob searches see brand-new cloud files immediately
+        st = subprocess.run(['git', '-C', str(local_dir), 'status', '--porcelain'], capture_output=True, text=True)
+        if st.returncode == 0 and not st.stdout.strip():
+            subprocess.run(['git', '-C', str(local_dir), 'merge', '--ff-only', f'origin/{branch}', '--quiet'], capture_output=True, text=True, timeout=30)
+        return 1
+
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        return sum(pool.map(_sync_one, repos))
+
+
 def _get_cached_repo_file(full_repo: str, rel_path: str, ref: str = 'main') -> str:
-    key = (full_repo, rel_path)
+    key = (full_repo, f'{ref}:{rel_path}')
     if key in _REPO_FILE_CACHE:
         return _REPO_FILE_CACHE[key]
     local_dir = _local_scratch_root(full_repo)
     txt = ''
-    if local_dir is not None and (local_dir / rel_path).is_file():
-        try:
-            txt = (local_dir / rel_path).read_text(encoding='utf-8', errors='ignore')
-        except Exception:
-            txt = ''
+    if local_dir is not None and (local_dir / '.git').exists():
+        # Prefer `origin/main:<rel_path>` when ref=='main' so even a dirty local checkout reads live cloud commits!
+        git_ref = 'origin/main' if ref == 'main' else ref
+        gp = subprocess.run(
+            ['git', '-C', str(local_dir), 'show', f'{git_ref}:{rel_path}'],
+            capture_output=True, text=True,
+        )
+        if gp.returncode == 0 and gp.stdout:
+            txt = gp.stdout
+        elif ref == 'main' and (local_dir / rel_path).is_file():
+            try:
+                txt = (local_dir / rel_path).read_text(encoding='utf-8', errors='ignore')
+            except Exception:
+                txt = ''
     if not txt:
         txt = _fetch_file_text_at_ref(full_repo, rel_path, ref)
     _REPO_FILE_CACHE[key] = txt
@@ -1011,33 +1058,40 @@ def evaluate_page_quality(ev: dict, full_repo: str, page_text: str = '', ref: st
                 flags.append('proof buried in bottom 50%')
 
     # Signal 4: Publisher's Take / Reviewer Note Quality & Visibility
-    has_wired_store, rn_map = _get_repo_reviewer_notes(full_repo, ref=ref)
-    wired_note = rn_map.get(clean_rt)
-    if wired_note is None and '/' in clean_rt.lstrip('/'):
-        leaf_rt = '/' + clean_rt.strip('/').split('/')[-1]
-        wired_note = rn_map.get(leaf_rt)
-    has_backend_unwired_note = bool(
-        not wired_note
-        and text
-        and re.search(r'["\']?(?:reviewerNote|publishersTake|editorNote|editorsNote)["\']?\s*:\s*\{', text)
-    )
-    rn_status = 'missing'
-    rn_is_strong = False
-    if wired_note and has_wired_store:
-        # Honor flexible Publisher's Take / Editor's Note standard: NEVER require numbers or narrow phrase triggers;
-        # only flag notes that restate vendor boilerplate verbatim or are too short (<14 words) to offer real guidance.
-        if WEAK_PRICING_RESTATEMENT_NOTE_RE.search(wired_note) or len(wired_note.split()) < 14:
-            rn_status = 'generic'
-            flags.append("generic Publisher's Take")
-        else:
-            rn_status = 'strong_and_wired'
-            rn_is_strong = True
-    elif has_backend_unwired_note:
-        rn_status = 'unwired_in_backend'
-        flags.append("Publisher's Take unwired in backend data")
+    # Physician-reviewed medical/psychedelic sites intentionally omit ReviewerNote quotes (`REVIEWER_NOTES = {}`)
+    if full_repo in MEDICAL_NO_QUOTE_SITES:
+        rn_status = 'medical_quote_exempt'
+        rn_is_strong = True
+        wired_note = None
+        has_wired_store = True
     else:
+        has_wired_store, rn_map = _get_repo_reviewer_notes(full_repo, ref=ref)
+        wired_note = rn_map.get(clean_rt)
+        if wired_note is None and '/' in clean_rt.lstrip('/'):
+            leaf_rt = '/' + clean_rt.strip('/').split('/')[-1]
+            wired_note = rn_map.get(leaf_rt)
+        has_backend_unwired_note = bool(
+            not wired_note
+            and text
+            and re.search(r'["\']?(?:reviewerNote|publishersTake|editorNote|editorsNote)["\']?\s*:\s*\{', text)
+        )
         rn_status = 'missing'
-        flags.append("missing Publisher's Take")
+        rn_is_strong = False
+        if wired_note and has_wired_store:
+            # Honor flexible Publisher's Take / Editor's Note standard: NEVER require numbers or narrow phrase triggers;
+            # only flag notes that restate vendor boilerplate verbatim or are too short (<14 words) to offer real guidance.
+            if WEAK_PRICING_RESTATEMENT_NOTE_RE.search(wired_note) or len(wired_note.split()) < 14:
+                rn_status = 'generic'
+                flags.append("generic Publisher's Take")
+            else:
+                rn_status = 'strong_and_wired'
+                rn_is_strong = True
+        elif has_backend_unwired_note:
+            rn_status = 'unwired_in_backend'
+            flags.append("Publisher's Take unwired in backend data")
+        else:
+            rn_status = 'missing'
+            flags.append("missing Publisher's Take")
 
     # Signal 5: Matching Interactive Tool / Calculator Check
     calc_passed, matching_calcs, is_self_calc = _check_matching_calculator(full_repo, clean_rt, text)
@@ -1269,6 +1323,14 @@ def _scan_repo_window(item: tuple[str, str], since_iso: str) -> list[dict]:
                 if '/' not in s_clean:
                     if 'data/alternatives' in fname or (routine == 'alternatives-daily' and full_repo in ('jht243/modernwallet', 'jht243/banthebots', 'jht243/vet_tools')):
                         s_clean = f'alternatives/{s_clean}'
+                    elif 'gear-deep-dives' in fname:
+                        s_clean = f'gear/reviews/{s_clean}'
+                    elif 'gear-roundups' in fname:
+                        s_clean = f'gear/{s_clean}'
+                    elif 'data/comparisons' in fname:
+                        s_clean = f'comparisons/{s_clean}'
+                    elif 'data/guides' in fname:
+                        s_clean = f'guides/{s_clean}'
                     elif 'explainers/' in fname:
                         s_clean = f'explainers/{s_clean}'
                     elif 'toolPages/' in fname:
@@ -1385,10 +1447,13 @@ def format_ceo_summary(report: dict) -> str:
     return '\n'.join(lines)
 
 
-def run_monitor(hours: float = 24.0) -> dict:
+def run_monitor(hours: float = 24.0, sync_local: bool = True) -> dict:
     now = dt.datetime.now(dt.timezone.utc)
     cutoff = now - dt.timedelta(hours=hours)
     since_iso = cutoff.replace(microsecond=0).isoformat().replace('+00:00', 'Z')
+
+    repos = _discover_fleet_repos()
+    synced_local_count = _sync_local_scratch_repos(repos) if sync_local else 0
 
     by_canonical_key: dict[tuple[str, str], dict] = {}
 
@@ -1420,8 +1485,7 @@ def run_monitor(hours: float = 24.0) -> dict:
             except Exception:
                 pass
 
-    # 2. Scan all 29 owned fleet repos on GitHub in parallel
-    repos = _discover_fleet_repos()
+    # 2. Scan all 35 owned fleet repos on GitHub + synced local checkouts in parallel
     with ThreadPoolExecutor(max_workers=10) as pool:
         for repo_events in pool.map(lambda r: _scan_repo_window(r, since_iso), repos):
             for ev in repo_events:
@@ -1555,6 +1619,7 @@ def run_monitor(hours: float = 24.0) -> dict:
         'windowHours': hours,
         'since': since_iso,
         'fleetReposScanned': len(repos),
+        'localCheckoutsSynced': synced_local_count,
         'totalPagesPublished': len(all_events),
         'pagesWithInternalProof': len(with_proof),
         'pagesEmptyLegitimateExemption': len(empty_exempt),
