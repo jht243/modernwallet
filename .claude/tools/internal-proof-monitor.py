@@ -992,7 +992,7 @@ def _check_matching_calculator(full_repo: str, route: str, text: str) -> tuple[b
     matched_tools: list[str] = []
     called_out_any = False
     for tool_route, keywords, min_hits in tools:
-        hits = sum(1 for kw in keywords if kw in hay_head)
+        hits = sum(1 for kw in keywords if re.search(rf'\b{re.escape(kw)}\b', hay_head))
         if hits >= min_hits:
             matched_tools.append(tool_route)
             tool_slug = tool_route.strip('/').split('/')[-1]
