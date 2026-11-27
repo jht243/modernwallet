@@ -21,7 +21,7 @@ class InternalProofMonitorTest(unittest.TestCase):
 
     def test_guardrail_1_never_touches_excluded_client_repos(self):
         repos = [r for r, _ in ipm._discover_fleet_repos()]
-        self.assertEqual(len(repos), 29)
+        self.assertEqual(len(repos), 35)
         for excluded in (
             "barrycosta/git-darklight",
             "GetOPTHealth/opt-health",

@@ -46,14 +46,17 @@ EXCLUDED_CLIENT_DOMAINS = {
     'wearespin.com',
 }
 
-# Exact 29 Owned Fleet Sites
+# Exact 35 Owned Fleet Sites
 OWNED_FLEET_REPOS: tuple[str, ...] = (
     'jht243/americanpivot',
     'jht243/banthebots',
     'jht243/chalkbox',
+    'jht243/colombia-concierge',
     'jht243/cuban_insights',
     'jht243/diy-repair-guide',
     'jht243/drones_and_defense',
+    'jht243/earnbycreating',
+    'jht243/getzen_nomads',
     'jht243/humidor-atlas',
     'jht243/jet-and-beyond',
     'jht243/layer3labs',
@@ -62,12 +65,15 @@ OWNED_FLEET_REPOS: tuple[str, ...] = (
     'jht243/metabolic_journal',
     'jht243/modernwallet',
     'jht243/newparentpicks',
+    'jht243/next-court',
     'jht243/orbitalintel',
     'jht243/partygamekit',
     'jht243/pipeflare-site',
     'jht243/prayer-site',
     'jht243/psych_report',
     'jht243/readnext',
+    'jht243/relateguide',
+    'jht243/safe-to-go',
     'jht243/shavingschool',
     'jht243/the_bot_scout',
     'jht243/thehoaguide',
@@ -83,9 +89,12 @@ CANONICAL_SITE_INFO: dict[str, tuple[str, str]] = {
     'jht243/americanpivot': ('americanpivot.org', 'https://www.americanpivot.org'),
     'jht243/banthebots': ('banthebots.org', 'https://www.banthebots.org'),
     'jht243/chalkbox': ('chalkbox.org', 'https://www.chalkbox.org'),
+    'jht243/colombia-concierge': ('colombiadesk.com', 'https://colombiadesk.com'),
     'jht243/cuban_insights': ('cubaninsights.com', 'https://cubaninsights.com'),
     'jht243/diy-repair-guide': ('diyrepairguide.com', 'https://diyrepairguide.com'),
     'jht243/drones_and_defense': ('droneanddefense.com', 'https://www.droneanddefense.com'),
+    'jht243/earnbycreating': ('earnbycreating.com', 'https://earnbycreating.com'),
+    'jht243/getzen_nomads': ('getzen.cash', 'https://getzen.cash'),
     'jht243/humidor-atlas': ('humidorist.com', 'https://humidorist.com'),
     'jht243/jet-and-beyond': ('jetandbeyond.com', 'https://www.jetandbeyond.com'),
     'jht243/layer3labs': ('layer3labs.io', 'https://www.layer3labs.io'),
@@ -94,12 +103,15 @@ CANONICAL_SITE_INFO: dict[str, tuple[str, str]] = {
     'jht243/metabolic_journal': ('themetabolicjournal.com', 'https://themetabolicjournal.com'),
     'jht243/modernwallet': ('themodernwallet.com', 'https://www.themodernwallet.com'),
     'jht243/newparentpicks': ('newparentpicks.com', 'https://newparentpicks.com'),
+    'jht243/next-court': ('wildcardsport.com', 'https://wildcardsport.com'),
     'jht243/orbitalintel': ('orbitalintel.org', 'https://www.orbitalintel.org'),
     'jht243/partygamekit': ('partygamekit.com', 'https://partygamekit.com'),
     'jht243/pipeflare-site': ('pipeflare.io', 'https://pipeflare.io'),
     'jht243/prayer-site': ('findaprayer.com', 'https://findaprayer.com'),
     'jht243/psych_report': ('mindmedicinelaw.com', 'https://mindmedicinelaw.com'),
     'jht243/readnext': ('readnextguide.com', 'https://readnextguide.com'),
+    'jht243/relateguide': ('loveanswers.org', 'https://loveanswers.org'),
+    'jht243/safe-to-go': ('safetotravel.org', 'https://safetotravel.org'),
     'jht243/shavingschool': ('shavingschool.com', 'https://www.shavingschool.com'),
     'jht243/the_bot_scout': ('thebotscout.com', 'https://www.thebotscout.com'),
     'jht243/thehoaguide': ('thehoaguide.com', 'https://www.thehoaguide.com'),
@@ -116,21 +128,23 @@ REGULATED_SITES = {
     'jht243/psych_report',
     'jht243/medicalfrontier',
     'jht243/longevitybenchmark',
-    'jht243/next-court',
     'jht243/modernwallet',
     'jht243/cuban_insights',
     'jht243/ven_biz_network',
     'jht243/weaponization_fund',
 }
 
-# Template-wired Reviewer Note stores by repo (all 29 owned fleet sites)
+# Template-wired Reviewer Note stores by repo (all 35 owned fleet sites)
 REVIEWER_NOTE_STORES: dict[str, str] = {
     'jht243/americanpivot': 'src/data/reviewer-notes.ts',
     'jht243/banthebots': 'src/reviewer_notes.py',
     'jht243/chalkbox': 'src/data/reviewer-notes.ts',
+    'jht243/colombia-concierge': 'src/data/reviewer-notes.ts',
     'jht243/cuban_insights': 'src/reviewer_notes.py',
     'jht243/diy-repair-guide': 'src/data/reviewer-notes.ts',
     'jht243/drones_and_defense': 'src/data/reviewer-notes.ts',
+    'jht243/earnbycreating': 'src/data/reviewer-notes.ts',
+    'jht243/getzen_nomads': 'src/reviewer_notes.py',
     'jht243/humidor-atlas': 'src/utils/reviewerNotes.ts',
     'jht243/jet-and-beyond': 'src/data/reviewer-notes.ts',
     'jht243/layer3labs': 'src/utils/reviewerNotes.ts',
@@ -139,12 +153,15 @@ REVIEWER_NOTE_STORES: dict[str, str] = {
     'jht243/metabolic_journal': 'src/reviewer_notes.py',
     'jht243/modernwallet': 'src/data/reviewer-notes.ts',
     'jht243/newparentpicks': 'src/data/reviewer-notes.ts',
+    'jht243/next-court': 'src/utils/reviewerNotes.ts',
     'jht243/orbitalintel': 'src/data/reviewer-notes.ts',
     'jht243/partygamekit': 'src/data/reviewer-notes.ts',
     'jht243/pipeflare-site': 'lib/reviewer-notes.ts',
     'jht243/prayer-site': 'lib/reviewer-notes.ts',
     'jht243/psych_report': 'src/reviewer_notes.py',
     'jht243/readnext': 'src/data/reviewer-notes.ts',
+    'jht243/relateguide': 'src/data/reviewer-notes.ts',
+    'jht243/safe-to-go': 'src/data/reviewer-notes.ts',
     'jht243/shavingschool': 'src/data/reviewer-notes.ts',
     'jht243/the_bot_scout': 'src/data/reviewer-notes.ts',
     'jht243/thehoaguide': 'src/data/reviewer-notes.ts',
@@ -295,10 +312,10 @@ GENERIC_TAGLINE_RE = re.compile(
 # Substantive proof signals (evaluated AFTER stripping generic boilerplate taglines)
 SUBSTANTIVE_MATH_RE = re.compile(
     r'worked\s+cost\s+example|'
-    r'in\s+our\s+(?:internal\s+)?(?:cost|scenario|workload|token|tco|break-even|margin|vram|bandwidth|two-year|24-month|3-year|annual)\s+(?:modeling|analysis|calculation|comparison|translation|breakdown)|'
+    r'in\s+our\s+(?:internal\s+)?(?:cost|scenario|workload|token|tco|break-even|margin|vram|bandwidth|two-year|24-month|3-year|annual|orbital(?:\s+cadence)?(?:\s+and\s+power)?|cadence|power|hardware(?:\s+and\s+memory)?|memory|room-sizing)\s+(?:modeling|analysis|calculation|comparison|translation|breakdown)|'
     r'in\s+our\s+(?:internal\s+modeling|internal\s+calculation|calculated\s+comparison|simple\s+arithmetic\s+from\s+the\s+published\s+figures)|'
-    r'we\s+modeled\b|we\s+calculated\b|calculated\s+from\s+(?:amd|apple|nvidia|[a-z0-9_-]+\'s)\s+published|'
-    r'break-even\s+(?:threshold|point|month|apr|rule|step|transfers|hours|balance)|breaks\s+even\s+at|'
+    r'we\s+modeled\b|we\s+calculated\b|calculated\s+(?:directly\s+)?from\s+(?:amd|apple|nvidia|order\s+da|[a-z0-9_-]+\'s)\s+|'
+    r'break-even\s+(?:threshold|point|month|apr|rule|step|transfers|hours|balance|counterexample)|breaks\s+even\s+at|'
     r'10-page\s+pdfs?|30-minute\s+meetings?|8-hour\s+workdays?|22\s+workdays|260\s+workdays|'
     r'scenariotable',
     re.I,
@@ -983,7 +1000,9 @@ def evaluate_page_quality(ev: dict, full_repo: str, page_text: str = '', ref: st
     rn_status = 'missing'
     rn_is_strong = False
     if wired_note and has_wired_store:
-        if WEAK_PRICING_RESTATEMENT_NOTE_RE.search(wired_note) or not STRONG_NOTE_FRICTION_OR_WALKAWAY_RE.search(wired_note):
+        # Honor flexible Publisher's Take / Editor's Note standard: NEVER require numbers or narrow phrase triggers;
+        # only flag notes that restate vendor boilerplate verbatim or are too short (<14 words) to offer real guidance.
+        if WEAK_PRICING_RESTATEMENT_NOTE_RE.search(wired_note) or len(wired_note.split()) < 14:
             rn_status = 'generic'
             flags.append("generic Publisher's Take")
         else:

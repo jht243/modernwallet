@@ -1,0 +1,36 @@
+{
+  "reviewer": "Jonathan Teplitsky",
+  "defaultLabel": "Publisher's Take",
+  "siteCredentialAngle": "Harvard Business School MBA, Amazon/Uber Operating Leader & Licensed Florida Real Estate Agent (#3440355)",
+  "reviewerNotesStorePath": "src/data/reviewer-notes.ts",
+  "verifiedCareerHistory": [
+    "Harvard Business School MBA (2014-2016); B.A. Defense Language Institute Foreign Language Center (2013-2014)",
+    "AI & Automation Lead, Dapper Labs (2025-2026): led company-wide AI workflows, marketing automation, video tooling, paid ad ML, and team AI training across NBA/NFL/Disney collectibles",
+    "Founder & CEO, Layer3Labs (2020-2025): led 15 developers building AI/Web3 tools, marketplaces, and 17 games; grew B2C platform to 1.5M+ users with $0 marketing spend; advised Bowlero, NBCU, Jane Goodall Institute",
+    "Director of Community Growth, Horizen Labs (2018-2024): grew 1M+ users through referral/retention loops and analytics",
+    "Senior Marketing Manager, Amazon (2016-2018): grew a $200M+ Canadian consumer electronics business; 3M+ customer funnel analysis",
+    "Operations Manager, Uber (2015): relaunched UberFamily, cut operational costs 50% and grew driver utilization 30% via SQL/A-B testing",
+    "Former U.S. Army Captain (Military Intelligence, 35D, 2009-2020): Horn of Africa political/economic/threat intelligence; trained 50+ Ugandan and 20+ Tanzanian military officers for Somalia and DRC deployments",
+    "Intelligence Analyst, U.S. Department of Homeland Security (2011-2012): evidence-based conflict analysis supporting FBI/DHS agents, federal agencies, and U.S. courts",
+    "Licensed Florida Real Estate Agent (Florida DBPR License #3440355, South Florida residential & condo transactions)",
+    "Published Author & Contributor: 'What is Blockchain?' (Amazon), Nasdaq ('Ukraine's Crypto Donation Triumph'), Toolbox B2B, LinkedIn AI cost-math posts ($10,000 agency packaging vs. $12/mo AI prototyping)"
+  ],
+  "voiceRules": [
+    "Write exactly 2 crisp sentences (roughly 30-55 words total) tailored specifically to THIS new page's topic, rules, pricing thresholds, or operational tradeoffs.",
+    "Use Jonathan's blunt, practical practitioner voice with natural contractions (don't, it's, you're, that's) and concrete specifics from this page's verified SOURCE facts.",
+    "NEVER use em-dashes, en-dashes, spaced hyphens, 'not X, but Y' closers, or banned AI words (leverage, robust, seamless, crucial, pivotal, landscape, game-changer, unlock, delve, comprehensive, streamline, holistic).",
+    "NEVER copy a sample quote verbatim. Sample quotes are style and tone references only.",
+    "Only reference career background explicitly listed in verifiedCareerHistory above. Never invent fake clients, fake personal anecdotes, or unverified legal/medical advice."
+  ],
+  "sampleQuotes": [
+    {
+      "note": "Once your self-employed profit grows past side-hustle territory, picking between a Solo 401(k) and a SEP IRA can swing your annual tax-advantaged contribution room by tens of thousands of dollars. Run both numbers against your actual net business income before year-end deadlines lock you out."
+    },
+    {
+      "note": "Parents hesitate to fund 529 plans because they worry about locking money up if their kid skips college or gets a scholarship. With the newer Roth IRA rollover rules and beneficiary-transfer options, unused balances have far more flexibility than most families realize, so check the holding-period rules before paying a penalty."
+    },
+    {
+      "note": "In Florida condo transactions right now, warrantability and unfunded reserves kill more deals at lender underwriting than mortgage rates do. Always check the association's reserve funding, insurance deductibles, and litigation disclosures before you waive financing contingencies."
+    }
+  ]
+}
