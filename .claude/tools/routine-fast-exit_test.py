@@ -528,6 +528,63 @@ class RoutineFastExitTests(unittest.TestCase):
             self.assertEqual(res['worseRevertCount'], 1)
             self.assertTrue(det.exists())
 
+    def test_x_trends_prefilter_and_triage_exit(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_dir = Path(tmp)
+            email_p = tmp_dir / 'email.txt'
+            clean_p = tmp_dir / 'clean.md'
+
+            # 1. No unread threads -> fastExit True
+            r0 = self.mod.check_x_trends_prefilter(self.root, site='shavingschool.com', no_new_threads=True)
+            self.assertTrue(r0['fastExit'])
+            self.assertEqual(r0['reason'], 'no_unread_scout_threads')
+
+            # 2. Multi-site email where target site says "Nothing strong today" -> fastExit True
+            sample_email = (
+                '=== https://www.google.com/url?q=http://layer3labs.io&source=gmail ===\n'
+                '- [RELEASE] New AI CLI — details. Sources: https://www.google.com/url?q=https://example.com/a&sa=D\n\n'
+                '=== https://www.google.com/url?q=http://thebotscout.com/&source=gmail ===\n'
+                'Nothing strong today\n'
+            )
+            email_p.write_text(sample_email)
+            r_empty = self.mod.check_x_trends_prefilter(
+                self.root, site='www.thebotscout.com', email_file=email_p, clean_out=clean_p
+            )
+            self.assertTrue(r_empty['fastExit'])
+            self.assertEqual(r_empty['reason'], 'empty_or_nothing_strong')
+            self.assertFalse(clean_p.exists())
+
+            # 3. Missing site section altogether -> fastExit True
+            email_p.write_text(sample_email)
+            r_miss = self.mod.check_x_trends_prefilter(
+                self.root, site='humidorist.com', email_file=email_p, clean_out=clean_p
+            )
+            self.assertTrue(r_miss['fastExit'])
+            self.assertEqual(r_miss['reason'], 'missing_site_section')
+
+            # 4. Target site has real bullet -> unwraps Gmail URLs and returns fastExit False
+            email_p.write_text(sample_email)
+            r_hit = self.mod.check_x_trends_prefilter(
+                self.root, site='https://www.layer3labs.io', email_file=email_p, clean_out=clean_p
+            )
+            self.assertFalse(r_hit['fastExit'])
+            self.assertEqual(r_hit['bulletCount'], 1)
+            self.assertTrue(clean_p.exists())
+            self.assertIn('https://example.com/a', clean_p.read_text())
+            self.assertNotIn('google.com/url', clean_p.read_text())
+
+            # 5. Step 2B triage drops all bullets -> cleans file and returns fastExit True
+            r_tri = self.mod.check_x_trends_triage_exit(
+                self.root,
+                site='themodernwallet.com',
+                dropped_count=3,
+                reason='3 UK-only utility/benefit outage bullets off-scope for US audience',
+                clean_file=clean_p,
+            )
+            self.assertTrue(r_tri['fastExit'])
+            self.assertEqual(r_tri['droppedCount'], 3)
+            self.assertFalse(clean_p.exists())
+
 
 if __name__ == '__main__':
     unittest.main()

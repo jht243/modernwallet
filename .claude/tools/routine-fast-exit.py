@@ -1576,6 +1576,198 @@ def check_page12_noop(
     }
 
 
+_EMPTY_X_TRENDS_RE = re.compile(
+    r'^\s*(?:nothing\s+strong(?:\s+(?:today|this\s+week))?|no\s+strong\s+trends?(?:\s+(?:today|this\s+week))?|none(?:\s+today|\s+this\s+week)?|n/?a)\.?\s*$',
+    re.IGNORECASE,
+)
+_X_SECTION_HEADER_RE = re.compile(r'^\s*===\s*(.+?)\s*===\s*$')
+_X_BULLET_START_RE = re.compile(r'^\s*(?:[-*•]|\d+[.)])\s+\S+')
+
+
+def _unwrap_gmail_redirects(text: str) -> str:
+    return re.sub(
+        r'https?://www\.google\.com/url\?q=([^&\s]+)[^\s,)]*',
+        lambda m: urllib.parse.unquote(m.group(1)),
+        text,
+    )
+
+
+def _extract_x_trends_site_sections(unwrapped_text: str, target_host: str) -> tuple[bool, str]:
+    lines = unwrapped_text.splitlines()
+    saw_any_header = False
+    capturing = False
+    matched_any = False
+    collected: list[str] = []
+    for ln in lines:
+        m = _X_SECTION_HEADER_RE.match(ln)
+        if m:
+            saw_any_header = True
+            hdr_host = _extract_host(m.group(1))
+            capturing = bool(target_host and hdr_host == target_host)
+            if capturing:
+                matched_any = True
+            continue
+        if capturing:
+            collected.append(ln)
+    if saw_any_header:
+        return matched_any, '\n'.join(collected).strip()
+    return True, unwrapped_text.strip()
+
+
+def _parse_x_trends_bullets(section_text: str) -> list[str]:
+    if not section_text.strip():
+        return []
+    bullets: list[str] = []
+    cur: list[str] = []
+    for raw_ln in section_text.splitlines():
+        s = raw_ln.strip()
+        if not s:
+            continue
+        if s.startswith('#') or _X_SECTION_HEADER_RE.match(s):
+            continue
+        if _EMPTY_X_TRENDS_RE.match(s):
+            continue
+        if _X_BULLET_START_RE.match(raw_ln):
+            if cur:
+                bullets.append(' '.join(cur).strip())
+            cur = [re.sub(r'^\s*(?:[-*•]|\d+[.)])\s+', '', raw_ln).strip()]
+        elif cur:
+            cur.append(s)
+    if cur:
+        bullets.append(' '.join(cur).strip())
+    return [b for b in bullets if b and not _EMPTY_X_TRENDS_RE.match(b)]
+
+
+def check_x_trends_prefilter(
+    root: Path,
+    *,
+    site: str,
+    raw_file: Path | None = None,
+    email_file: Path | None = None,
+    clean_out: Path | None = None,
+    no_new_threads: bool = False,
+    thread_ids: str = '',
+    send_email: bool = False,
+) -> dict:
+    resolved_site = site.strip() or _repo_slug(root)
+    target_host = _extract_host(resolved_site)
+    skill = 'x-trends-mindmap-auto'
+
+    def _clean_scratch() -> None:
+        root_res = root.resolve()
+        for p in (raw_file, email_file, clean_out):
+            if p is None:
+                continue
+            try:
+                rp = p.resolve()
+                if not rp.is_relative_to(root_res):
+                    rp.unlink(missing_ok=True)
+                else:
+                    _cleanup_untracked_report_file(root, rp)
+            except Exception:
+                pass
+
+    if no_new_threads:
+        _clean_scratch()
+        summary = f'X Trends ({resolved_site}): 0 unread Fleet trend scout threads; fast-exited cleanly.'
+        posted = bool(_send_noop(root, skill=skill, site=resolved_site, summary=summary)) if send_email else False
+        return {
+            'fastExit': True,
+            'reason': 'no_unread_scout_threads',
+            'bulletCount': 0,
+            'site': resolved_site,
+            'summary': summary,
+            'collectorPosted': posted,
+        }
+
+    src_path = email_file or raw_file
+    raw_text = ''
+    if src_path is not None and _safe_is_file(src_path):
+        raw_text = src_path.read_text(encoding='utf-8', errors='ignore')
+
+    unwrapped = _unwrap_gmail_redirects(raw_text)
+    matched_section, section_body = _extract_x_trends_site_sections(unwrapped, target_host)
+    raw_bullets = _parse_x_trends_bullets(section_body) if matched_section else []
+
+    q = _load_quarantine(root)
+    surviving: list[str] = []
+    quarantined_skipped: list[str] = []
+    for b in raw_bullets:
+        b_hash = hashlib.sha256(b[:200].lower().encode('utf-8')).hexdigest()[:16]
+        m_enr = re.search(r'\[ENRICH\s+([^\]]+)\]', b, re.IGNORECASE)
+        enr_route = m_enr.group(1).strip() if m_enr else None
+        if q.is_quarantined(root, skill, item_id=b_hash, route=enr_route):
+            quarantined_skipped.append(b_hash)
+            continue
+        surviving.append(b)
+
+    surviving = surviving[:6]
+    if not surviving:
+        _clean_scratch()
+        why = 'missing_site_section' if not matched_section else ('quarantined_only' if quarantined_skipped else 'empty_or_nothing_strong')
+        tid_note = f' (threads={thread_ids})' if thread_ids else ''
+        summary = f'X Trends ({resolved_site}): 0 actionable scout bullets ({why}){tid_note}; fast-exited with 0 commits.'
+        posted = bool(_send_noop(root, skill=skill, site=resolved_site, summary=summary)) if send_email else False
+        return {
+            'fastExit': True,
+            'reason': why,
+            'bulletCount': 0,
+            'quarantinedSkipped': quarantined_skipped,
+            'site': resolved_site,
+            'summary': summary,
+            'collectorPosted': posted,
+        }
+
+    out_path = clean_out or Path('/tmp/x-trends-clean.md')
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    formatted = '\n'.join(f'- {b}' for b in surviving) + '\n'
+    out_path.write_text(formatted, encoding='utf-8')
+    return {
+        'fastExit': False,
+        'reason': 'candidates_require_step2b_triage',
+        'bulletCount': len(surviving),
+        'quarantinedSkipped': quarantined_skipped,
+        'cleanFile': str(out_path),
+        'bulletsPreview': [b[:160] for b in surviving],
+    }
+
+
+def check_x_trends_triage_exit(
+    root: Path,
+    *,
+    site: str,
+    reason: str,
+    dropped_count: int = 0,
+    clean_file: Path | None = None,
+    send_email: bool = False,
+) -> dict:
+    resolved_site = site.strip() or _repo_slug(root)
+    skill = 'x-trends-mindmap-auto'
+    root_res = root.resolve()
+    for p in (clean_file, Path('/tmp/x-trends-raw.txt'), Path('/tmp/x-trends-email.txt'), Path('/tmp/x-trends-clean.md')):
+        if p is None:
+            continue
+        try:
+            rp = p.resolve()
+            if not rp.is_relative_to(root_res):
+                rp.unlink(missing_ok=True)
+            else:
+                _cleanup_untracked_report_file(root, rp)
+        except Exception:
+            pass
+    clean_reason = ' '.join(str(reason or 'no on-niche actionable angle').split())[:280]
+    summary = f'X Trends fast-exit triage ({resolved_site}): {dropped_count} Grok bullet(s) skipped ({clean_reason}); 0 pages to write.'
+    posted = bool(_send_noop(root, skill=skill, site=resolved_site, summary=summary)) if send_email else False
+    return {
+        'fastExit': True,
+        'reason': 'triage_zero_worthy_bullets',
+        'droppedCount': dropped_count,
+        'site': resolved_site,
+        'summary': summary,
+        'collectorPosted': posted,
+    }
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description='Routine-scoped deterministic zero-work fast-exit helper')
     ap.add_argument('--root', default='.')
@@ -1647,6 +1839,22 @@ def main(argv: list[str] | None = None) -> int:
     p_idx.add_argument('--inspection-json', required=True, type=Path)
     p_idx.add_argument('--site', required=True)
     p_idx.add_argument('--send-email', '--post-collector', dest='send_email', action='store_true')
+
+    p_xt = sub.add_parser('x-trends-prefilter')
+    p_xt.add_argument('--site', required=True)
+    p_xt.add_argument('--raw-file', type=Path, default=None)
+    p_xt.add_argument('--email-file', type=Path, default=None)
+    p_xt.add_argument('--clean-out', type=Path, default=Path('/tmp/x-trends-clean.md'))
+    p_xt.add_argument('--no-new-threads', action='store_true')
+    p_xt.add_argument('--threads', default='')
+    p_xt.add_argument('--send-email', '--post-collector', dest='send_email', action='store_true')
+
+    p_xtt = sub.add_parser('x-trends-triage-exit')
+    p_xtt.add_argument('--site', required=True)
+    p_xtt.add_argument('--reason', required=True)
+    p_xtt.add_argument('--dropped-count', type=int, default=0)
+    p_xtt.add_argument('--clean-file', type=Path, default=Path('/tmp/x-trends-clean.md'))
+    p_xtt.add_argument('--send-email', '--post-collector', dest='send_email', action='store_true')
 
     args = ap.parse_args(argv)
     root = Path(args.root).resolve()
@@ -1771,6 +1979,30 @@ def main(argv: list[str] | None = None) -> int:
             send_email=args.send_email,
         )
         return _emit(res, send_email=args.send_email)
+
+    if args.cmd == 'x-trends-prefilter':
+        res = check_x_trends_prefilter(
+            root,
+            site=args.site,
+            raw_file=_abs(args.raw_file),
+            email_file=_abs(args.email_file),
+            clean_out=_abs(args.clean_out),
+            no_new_threads=args.no_new_threads,
+            thread_ids=args.threads,
+            send_email=args.send_email,
+        )
+        return _emit(res, send_email=args.send_email, page12=True)
+
+    if args.cmd == 'x-trends-triage-exit':
+        res = check_x_trends_triage_exit(
+            root,
+            site=args.site,
+            reason=args.reason,
+            dropped_count=args.dropped_count,
+            clean_file=_abs(args.clean_file),
+            send_email=args.send_email,
+        )
+        return _emit(res, send_email=args.send_email, page12=True)
 
     return 1
 
