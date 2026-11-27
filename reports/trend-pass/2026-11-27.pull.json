@@ -1,0 +1,222 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window": {
+    "start": "2026-11-20",
+    "end": "2026-11-27",
+    "days": 7
+  },
+  "top_queries": [
+    {
+      "query": "site:themodernwallet.com",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "20000 for 72 months",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "query": "rule of 78 calculator",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 64.33
+    },
+    {
+      "query": "401k vs 529",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "living trust services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "plan to buy a car",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92
+    },
+    {
+      "query": "roth 401k vs standard 401k",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 94
+    },
+    {
+      "query": "simplified method calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "wealthability cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 100
+    }
+  ],
+  "coverage_queries": [
+    {
+      "query": "site:themodernwallet.com",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "20000 for 72 months",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 2
+    },
+    {
+      "query": "rule of 78 calculator",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 64.33
+    },
+    {
+      "query": "401k vs 529",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 80
+    },
+    {
+      "query": "living trust services",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 77
+    },
+    {
+      "query": "plan to buy a car",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 92
+    },
+    {
+      "query": "roth 401k vs standard 401k",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 94
+    },
+    {
+      "query": "simplified method calculator",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 68
+    },
+    {
+      "query": "wealthability cost",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 100
+    }
+  ],
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/",
+      "clicks": 1,
+      "impressions": 18,
+      "ctr": 0.0556,
+      "position": 4.94
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-estate-planning-software/",
+      "clicks": 1,
+      "impressions": 1,
+      "ctr": 1,
+      "position": 1
+    },
+    {
+      "page": "https://www.themodernwallet.com/calculators/",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 19.86
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 14.58
+    },
+    {
+      "page": "https://www.themodernwallet.com/about/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 2.5
+    },
+    {
+      "page": "https://www.themodernwallet.com/methodology/",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 3.7
+    },
+    {
+      "page": "https://www.themodernwallet.com/compliance/colorado-cottage-foods-act-expansion/",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 3.89
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/invoice-factoring-vs-merchant-cash-advance/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 6.75
+    },
+    {
+      "page": "https://www.themodernwallet.com/retirement/",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 5.25
+    },
+    {
+      "page": "https://www.themodernwallet.com/budget/",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 8
+    }
+  ],
+  "top10_pages_total_clicks": 2,
+  "top10_queries_total_clicks": 0,
+  "baseline_window": {
+    "start": "2026-11-12",
+    "end": "2026-11-19",
+    "days": 7,
+    "comparison": "prior_window_equal_span"
+  },
+  "total_queries_in_window": 9,
+  "rising_queries": [],
+  "spillover_queries": [],
+  "modifier_patterns": []
+}
