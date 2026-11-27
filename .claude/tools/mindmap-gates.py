@@ -2227,7 +2227,10 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                     f'  - "{q.get("note") if isinstance(q, dict) else q}"'
                     for q in (voice_prof.get('sampleQuotes') or [])[:2]
                 ]
-                all_careers = [str(c) for c in (voice_prof.get('verifiedCareerHistory') or [])]
+                all_careers = [
+                    str(c) for c in (voice_prof.get('verifiedCareerHistory') or [])
+                    if 'dapper labs' not in str(c).lower()
+                ]
                 q_toks = set(re.findall(r'[a-z0-9]{3,}', row_query_blob.lower()))
                 scored_c = sorted(
                     enumerate(all_careers),
@@ -2239,7 +2242,10 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                     reverse=True,
                 )
                 career_lines = [f'  - {c}' for _, c in sorted(scored_c[:4], key=lambda x: x[0])]
-                rule_lines = [f'  - {r}' for r in (voice_prof.get('voiceRules') or [])[:4]]
+                rule_lines = [
+                    f'  - {r}' for r in (voice_prof.get('voiceRules') or [])[:4]
+                    if 'concrete number' not in str(r).lower()
+                ]
                 default_label = voice_prof.get('defaultLabel') or "Publisher's Take"
                 rev_name = voice_prof.get('reviewer', 'Jonathan Teplitsky')
                 site_cred_angle = voice_prof.get('siteCredentialAngle', '')
@@ -2247,13 +2253,13 @@ def prepare_write_packets(root, manifest_path, out_dir, evidence_dir=None, voice
                     '',
                     f"## Generate Fresh Page-Specific Reviewer Note (Required — {rev_name})",
                     f"- **Label:** `{default_label}` · **Angle:** {site_cred_angle}",
-                    '- **Verified Career Lines (use ONLY these facts; never invent anecdotes or restate vendor sticker prices—name a post-month-1 friction point and who should walk away):**',
+                    '- **Verified Career Lines (use ONLY these facts; never invent anecdotes, never cite Dapper Labs, and never restate vendor sticker prices—name a post-month-1 friction point and who should walk away; numbers are optional):**',
                     *career_lines,
-                    '- **Voice Rules (enforced by automated lint):**',
+                    '- **Voice Rules (enforced by automated lint; concrete numbers NOT required):**',
                     *rule_lines,
                     '- **Style Reference Only (NEVER copy verbatim):**',
                     *samples,
-                    f'- **Publish Registration:** Include `"reviewerNote": {{"label": "{default_label}", "note": "<fresh 2-sentence quote>"}}` AND run `python3 .claude/tools/mindmap-tracks.py register-reviewer-note --route "{target}" --note "<fresh 2-sentence quote>"`.',
+                    f'- **Publish Registration:** Include `"reviewerNote": {{"label": "{default_label}", "note": "<fresh 2-sentence plain-English quote; numbers optional>"}}` AND run `python3 .claude/tools/mindmap-tracks.py register-reviewer-note --route "{target}" --note "<fresh 2-sentence quote>"`.',
                 ])
             if hasattr(tracks_mod, 'match_operator_benchmarks'):
                 op_benches = tracks_mod.match_operator_benchmarks(
@@ -2597,6 +2603,12 @@ def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_
             if isinstance(rn_obj, dict)
             else (rn_obj.strip() if isinstance(rn_obj, str) else '')
         )
+        if not rn_text and draft_file.suffix in ('.md', '.mdx'):
+            fm_m = re.match(r'\A---\n(.*?)\n---\n', raw_txt, flags=re.S)
+            if fm_m:
+                rn_fm = re.search(r'(?m)^reviewerNote:\s*["\']?([^\n"\']{20,500})["\']?\s*$', fm_m.group(1))
+                if rn_fm:
+                    rn_text = rn_fm.group(1).strip()
         if rn_text and tracks_mod is not None and hasattr(tracks_mod, 'register_reviewer_note'):
             try:
                 tracks_mod.register_reviewer_note(
@@ -2608,6 +2620,7 @@ def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_
                 )
             except Exception:
                 pass
+        proof_rec = None
         if tracks_mod is not None and hasattr(tracks_mod, 'log_internal_proof_outcome'):
             proof_rec = tracks_mod.log_internal_proof_outcome(
                 root,
@@ -2631,6 +2644,41 @@ def precheck_drafts(root, manifest_path, drafts_dir, prompts_dir=None, fix_pipe_
                 )
                 if q_adv.get('qualityFlags'):
                     advisories.append({'slug': slug, 'route': target, **q_adv})
+        # Round-1 mechanical check for substantive internal proof & Publisher's Take registration
+        # (fires AT MOST ONCE per slug via `.precheck-round1.done` so Round 2 NEVER blocks auto-publish!)
+        r1_marker_dir = p_dir if p_dir is not None else draft_file.parent
+        r1_marker = r1_marker_dir / f'{slug}.precheck-round1.done'
+        already_coached_r1 = r1_marker.is_file()
+        r1_coaching_items = []
+        if proof_rec is not None and not proof_rec.get('legitimateExemption') and not proof_rec.get('usedInternalProof'):
+            r1_coaching_items.append({
+                'slug': slug,
+                'kind': 'missing-substantive-internal-proof',
+                'detail': (
+                    f'Non-exempt draft {target} has zero substantive internal proof in body prose/tables. '
+                    'Add a top-half 150-240w 3-scenario cost/spec/workload comparison table + explicit counterexample '
+                    '(or, when the subject publishes zero public pricing/specs, a sourced Buyer/Operator Verification Checklist table + walk-away counterexample).'
+                ),
+            })
+        if tracks_mod is not None and hasattr(tracks_mod, 'has_registered_reviewer_note') and not tracks_mod.has_registered_reviewer_note(root, target):
+            r1_coaching_items.append({
+                'slug': slug,
+                'kind': 'missing-reviewer-note',
+                'detail': (
+                    f'Missing Publisher\'s Take / Editor\'s Note for {target}. '
+                    f'Register a fresh 2-sentence plain-English note (numbers optional, zero em-dashes) via: '
+                    f'python3 .claude/tools/mindmap-tracks.py register-reviewer-note --route "{target}" --note "<2 sentences naming post-month-1 friction and who should walk away>"'
+                ),
+            })
+        if r1_coaching_items:
+            if not already_coached_r1:
+                issues.extend(r1_coaching_items)
+                try:
+                    r1_marker.write_text('round1-coached\n')
+                except Exception:
+                    pass
+            else:
+                advisories.append({'slug': slug, 'route': target, 'round2ZeroBlockPass': True, 'deferredRound1Coaching': r1_coaching_items})
         if enforce_track_proof and tracks_mod is not None and draft_file.suffix == '.json' and isinstance(data, dict):
             br = brief_by_id.get(row.get('id', ''), {})
             row_tr = track if track in tracks_mod.TRACKS else tracks_mod.classify_action(row, br, plan)

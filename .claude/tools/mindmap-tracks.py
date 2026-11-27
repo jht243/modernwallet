@@ -306,6 +306,8 @@ def lint_reviewer_note(note_text: str, profile: dict | None = None) -> list[str]
     if re.search(r'\bnot (?:just |only |merely )?[\w][\w\s]{0,45},?\s*but\b', t, re.I):
         issues.append('Contains AI "not X, but Y" construction')
     low = t.lower()
+    if 'dapper labs' in low:
+        issues.append('Never cite "Dapper Labs" in newly generated prose or Reviewer Notes')
     for w in _REVIEWER_NOTE_BANNED_WORDS:
         if re.search(rf'\b{re.escape(w)}\b', low):
             issues.append(f'Contains banned AI buzzword: "{w}"')
@@ -441,6 +443,30 @@ def register_reviewer_note(
         'reviewedDate': eff_date,
         'note': note_text.strip(),
     }
+
+
+def has_registered_reviewer_note(root: Path, route: str) -> bool:
+    """Return True if `route` has a registered Reviewer Note (or if `root` is quote-exempt / medical)."""
+    root = root.resolve()
+    profile = load_reviewer_voice_profile(root)
+    if profile is None:
+        return True
+    store_rel = profile.get('reviewerNotesStorePath') or ''
+    candidates = [store_rel] if store_rel else [
+        'src/data/reviewer-notes.ts',
+        'src/utils/reviewerNotes.ts',
+        'lib/reviewer-notes.ts',
+        'src/reviewer_notes.py',
+    ]
+    store_path = next((root / rel for rel in candidates if rel and (root / rel).is_file()), None)
+    if store_path is None:
+        return True
+    clean_rt = '/' + (route or '').strip().strip('/')
+    raw = store_path.read_text(errors='ignore')
+    for cand in (clean_rt, clean_rt + '/'):
+        if f'"{cand}"' in raw or f"'{cand}'" in raw:
+            return True
+    return False
 
 
 def resolve_page_type_and_evidence_pool(
@@ -641,7 +667,18 @@ def log_internal_proof_outcome(
             used_types.append('proprietary_reader_survey')
     if re.search(r'\b10-page pdfs?\b|\b8-hour workdays?\b|\b30-minute meetings?\b|\bin our workload (?:modeling|analysis|translation)\b|\bworkload translation\b', low):
         used_types.append('practical_workload_and_unit_translation')
-    if ev_basis in ('modeled', 'calculated') or draft_obj.get('scenarioTable') or any(isinstance(s, dict) and s.get('table') for s in (draft_obj.get('sections') or [])) or re.search(r'\bin our internal (?:cost |scenario |workload |3-year |margin )?(?:modeling|analysis)\b|\bwe modeled\b|\bbreak-even\b', low):
+    has_substantive_modeling = bool(
+        ev_basis in ('modeled', 'calculated')
+        or draft_obj.get('scenarioTable')
+        or re.search(
+            r'\bin our (?:internal |specification |hardware |fleet-readiness |procurement )?(?:cost |scenario |workload |3-year |margin |travel |sizer )?(?:modeling|analysis|comparison|evaluation|breakdown)\b'
+            r'|\bwe modeled\b|\bwe calculated\b|\bbreak-even\b|\bworked cost example\b'
+            r'|\bacross (?:three|3) (?:standardized |common |travel |workload |procurement |deployment |site-readiness |buyer |observing )?(?:scenarios?|workloads?|profiles?)\b'
+            r'|\b(?:buyer|procurement|operator)\s+(?:verification\s+)?checklist\b',
+            low,
+        )
+    )
+    if has_substantive_modeling:
         used_types.append('internal_cost_or_spec_modeling')
     if ((evidence_obj.get('presentation') or {}).get('interaction') or {}).get('decision') in ('build', 'reuse') or re.search(r'/(?:tools|roi)/[a-z0-9-]+', low):
         used_types.append('interactive_tool_or_calculator')
@@ -774,17 +811,17 @@ def assess_draft_proof_quality(
         suggestions.append('Add at least one substantive Evidence Pool proof block (scenario table + counterexample, live free-tier probe, or matched operator/client workflow).')
 
     # Check Paragraph 1 numeric hook
-    intro = draft_obj.get('introText') or draft_obj.get('intro') or []
+    intro = draft_obj.get('introText') or draft_obj.get('intro') or draft_obj.get('introHtml') or draft_obj.get('summary') or []
     p1 = ''
     if isinstance(intro, list) and intro:
         p1 = str(intro[0] or '')
     elif isinstance(intro, str):
-        p1 = intro.split('\n\n', 1)[0]
+        p1 = re.sub(r'<[^>]+>', ' ', intro).split('\n\n', 1)[0]
     elif raw_text:
         p1 = raw_text[:600]
     para1_num = bool(
         re.search(
-            r'(?:\$\s*\d|\b\d+(?:\.\d+)?\s*(?:%|tok/s|(?:gb|tb|mb|ms|x|hours?|hrs?|days?|months?|years?|pdfs?|seats?|doors?|units?|credits?|chats?|pages?|models?|users?|sites?)\b))',
+            r'(?:\$\s*\d|(?:USD|EUR|GBP|CAD|AUD)\s*\d|\b\d+(?:\.\d+)?(?:-\s*|\s+)(?:%|tok/s|(?:gb|tb|mb|ms|x|lbs?|pounds?|kg|kilograms?|oz|ounces?|liters?|l|inches?|inch|in|cm|mm|hours?|hrs?|days?|months?|years?|pdfs?|seats?|doors?|units?|credits?|chats?|pages?|models?|machines?|million\s+machines?|users?|sites?)\b))',
             p1,
             re.I,
         )
@@ -802,7 +839,7 @@ def assess_draft_proof_quality(
         for idx, s in enumerate(secs):
             if not isinstance(s, dict):
                 continue
-            body_raw = s.get('content') if s.get('content') is not None else s.get('paragraphs')
+            body_raw = s.get('content') if s.get('content') is not None else (s.get('paragraphs') if s.get('paragraphs') is not None else s.get('body'))
             body_txt = '\n'.join(str(x) for x in body_raw) if isinstance(body_raw, list) else str(body_raw or '')
             has_tbl = bool(s.get('table') or ('|' in body_txt and re.search(r'\|\s*:?-{2,}:?\s*\|', body_txt)))
             has_sig = bool(re.search(r'in our internal|we modeled|we tested|live free-tier|break-even|counterexample|working with|based on our work|10-page pdf|3-year|usable vram|order-margin', body_txt, re.I))

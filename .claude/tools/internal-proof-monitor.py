@@ -222,7 +222,7 @@ FLEET_CALCULATORS: dict[str, list[tuple[str, tuple[str, ...], int]]] = {
     ],
     'jht243/thehoaguide': [
         ('/tools/hoa-reserve-fund-calculator', ('reserve-study', 'reserve-fund', 'special-assessment', 'fannie-mae-condo'), 1),
-        ('/board-toolkit/', ('clickpay-alternatives', 'avigilon-alta-alternatives', 'hoa-software', 'payhoa', 'buildium'), 1),
+        ('/board-toolkit/', ('clickpay-alternatives', 'avigilon-alta-alternatives', 'payhoa', 'buildium', 'appfolio', 'hoa-accounting'), 1),
     ],
     'jht243/theindoorreport': [
         ('/air/air-purifier-lifetime-cost', ('levoit', 'air-purifier', 'airfanta', 'dreo', 'hepa', 'cadr', 'filter-replacement'), 1),
@@ -235,7 +235,7 @@ FLEET_CALCULATORS: dict[str, list[tuple[str, tuple[str, ...], int]]] = {
     'jht243/vet_tools': [
         ('/tsp-rmd-calculator', ('vanguard', 'charles-schwab', 'tsp', 'brokerage', 'robo-advisor', 'ira'), 1),
         ('/va-funding-fee-calculator', ('funding-fee', 'va-loan', 'upstart', 'personal-loan'), 1),
-        ('/gi-bill-calculator', ('gi-bill', 'duolingo', 'education-benefits'), 1),
+        ('/gi-bill-calculator', ('gi-bill', 'post-9-11', 'education-benefits', 'yellow-ribbon'), 1),
     ],
     'jht243/undertheload': [
         ('/tools/ruck-weight-calculator', ('ruck', 'rucking', 'pack-weight'), 1),
@@ -322,9 +322,10 @@ GENERIC_TAGLINE_RE = re.compile(
 # Substantive proof signals (evaluated AFTER stripping generic boilerplate taglines)
 SUBSTANTIVE_MATH_RE = re.compile(
     r'worked\s+cost\s+example|'
-    r'in\s+our\s+(?:internal\s+)?(?:cost|scenario|workload|token|tco|break-even|margin|vram|bandwidth|two-year|24-month|3-year|annual|orbital(?:\s+cadence)?(?:\s+and\s+power)?|cadence|power|hardware(?:\s+and\s+memory)?|memory|room-sizing|governance|provenance|storage|battery)\s+(?:modeling|analysis|calculation|comparison|translation|breakdown|evaluation|matrix)|'
-    r'in\s+our\s+(?:internal\s+modeling|internal\s+calculation|calculated\s+comparison|simple\s+arithmetic\s+from\s+the\s+published\s+figures|scenario\s+modeling)|'
-    r'(?:across|comparing)\s+(?:three|3)\s+(?:standardized\s+|common\s+|production\s+|representative\s+|verified\s+|publishing\s+|hardware\s+|recording\s+|buyer\s+)?(?:workloads?|scenarios?|profiles?|provenance\s+scenarios?)|'
+    r'in\s+our\s+(?:internal\s+)?(?:cost|scenario|specification|sizer|packing|fleet-readiness|procurement|site-readiness|workload|token|tco|break-even|margin|vram|bandwidth|two-year|24-month|3-year|annual|orbital(?:\s+cadence)?(?:\s+and\s+power)?|cadence|power|hardware(?:\s+and\s+memory)?|memory|room-sizing|governance|provenance|storage|battery)\s+(?:modeling|analysis|calculation|comparison|translation|breakdown|evaluation|matrix)|'
+    r'in\s+our\s+(?:internal\s+modeling|internal\s+calculation|calculated\s+comparison|simple\s+arithmetic\s+from\s+the\s+published\s+figures|scenario\s+modeling|specification\s+modeling)|'
+    r'(?:across|comparing)\s+(?:three|3)\s+(?:standardized\s+|common\s+|production\s+|representative\s+|verified\s+|publishing\s+|hardware\s+|recording\s+|buyer\s+|travel\s+|carry-on\s+|procurement\s+|site-readiness\s+|deployment\s+|observing\s+)?(?:workloads?|scenarios?|profiles?|provenance\s+scenarios?)|'
+    r'(?:buyer|procurement|operator)\s+(?:verification|readiness)\s+checklist|'
     r'we\s+modeled\b|we\s+calculated\b|calculated\s+(?:directly\s+)?from\s+(?:amd|apple|nvidia|order\s+da|[a-z0-9_-]+\'s)\s+|'
     r'break-even\s+(?:threshold|point|month|apr|rule|step|transfers|hours|balance|counterexample)|breaks\s+even\s+at|'
     r'10-page\s+pdfs?|30-minute\s+meetings?|8-hour\s+workdays?|22\s+workdays|260\s+workdays|'
@@ -371,10 +372,10 @@ COUNTEREXAMPLE_RE = re.compile(
 )
 
 P1_CONCRETE_NUMBER_RE = re.compile(
-    r'(?:\$|USD\s*|EUR\s*|£)\s*\d+(?:,\d{3})*(?:\.\d+)?|'
-    r'\b\d+(?:\.\d+)?\s*(?:%|percent|x\b|gb/s|tb/s|gb\b|tb\b|mb\b|mhz|ghz|watts?|w\b|kwh|lbs?\b|kg\b|cm\b|mm\b|miles?|km\b|fps\b|p\b|bps\b|basis\s+points?)|'
-    r'\b\d+(?:,\d{3})+\s+(?:transfers?|transactions?|credits?|tokens?|users?|seats?|invoices?|minutes?|hours?|days?|months?|years?|pdfs?|satellites?|fragments?|objects?|miles?)|'
-    r'\b\d+(?:\.\d+)?\s+(?:transfers?|transactions?|credits?|tokens?|seats?|invoices?|minutes?|hours?|days?|months?|years?|workdays?|pdfs?|books?|novels?|prequels?|companions?|tiers?|plans?|models?|satellites?|Wait)|'
+    r'(?:\$|USD\s*|EUR\s*|GBP\s*|CAD\s*|AUD\s*|£)\s*\d+(?:,\d{3})*(?:\.\d+)?|'
+    r'\b\d+(?:\.\d+)?(?:-\s*|\s*)(?:%|percent|x\b|gb/s|tb/s|gb\b|tb\b|mb\b|mhz|ghz|watts?|w\b|kwh|lbs?\b|pounds?\b|kg\b|kilograms?\b|oz\b|ounces?\b|liters?\b|l\b|inches?\b|inch\b|in\b|cm\b|mm\b|miles?|km\b|fps\b|p\b|bps\b|basis\s+points?|petabytes?)|'
+    r'\b\d+(?:,\d{3})+\s+(?:transfers?|transactions?|credits?|tokens?|users?|seats?|invoices?|minutes?|hours?|days?|months?|years?|pdfs?|satellites?|fragments?|objects?|miles?|machines?|models?)|'
+    r'\b\d+(?:\.\d+)?(?:-\s*|\s+)(?:transfers?|transactions?|credits?|tokens?|seats?|invoices?|minutes?|hours?|days?|months?|years?|workdays?|pdfs?|books?|novels?|prequels?|companions?|tiers?|plans?|models?|satellites?|million\s+machines?|Wait)|'
     r'10\^\d+',
     re.I,
 )
@@ -852,14 +853,32 @@ def _extract_opening_paragraph(text: str) -> str:
     if not raw:
         return ''
 
-    # 1. Try JSON / TS fields (`introText`, `intro`, `opening`, `dek`, `howItWorks`, `summary`)
-    for field in ('introText', 'intro', 'opening', 'howItWorks', 'dek', 'subtitle', 'cardBlurb'):
+    # 0. Check YAML frontmatter `introText:` block scalars / list items BEFORE stripping frontmatter
+    fm_m = re.match(r'\A---\n(.*?)\n---\n', raw, flags=re.S)
+    if fm_m:
+        fm_body = fm_m.group(1)
+        m_yaml_intro = re.search(
+            r'(?m)^introText:\s*\n(?:\s*-\s*(?:\|-?|>)?\s*\n((?:[ \t]{2,}[^\n]+\n?)+)|\s*-\s*["\']?([^\n"\']{30,})["\']?)',
+            fm_body,
+        )
+        if m_yaml_intro:
+            y_para = (m_yaml_intro.group(1) or m_yaml_intro.group(2) or '').strip()
+            y_clean = re.sub(r'\s+', ' ', y_para)
+            if len(y_clean) > 30:
+                return y_clean
+
+    # 1. Try JSON / TS fields (`introText`, `introHtml`, `intro`, `opening`, `howItWorks`, `summary`, `dek`)
+    for field in ('introText', 'introHtml', 'intro', 'opening', 'howItWorks', 'summary', 'dek', 'subtitle', 'cardBlurb'):
         m_arr = re.search(rf'["\']?{field}["\']?\s*:\s*\[\s*["\']((?:[^"\'\\]|\\.)+)["\']', raw, re.S)
-        if m_arr and len(m_arr.group(1)) > 30:
-            return m_arr.group(1)
+        if m_arr:
+            cand = re.sub(r'<[^>]+>', ' ', m_arr.group(1)).strip()
+            if len(cand) > 30:
+                return cand
         m_str = re.search(rf'["\']?{field}["\']?\s*:\s*["\']((?:[^"\'\\]|\\.)+)["\']', raw, re.S)
-        if m_str and len(m_str.group(1)) > 30:
-            return m_str.group(1)
+        if m_str:
+            cand = re.sub(r'<[^>]+>', ' ', m_str.group(1)).strip()
+            if len(cand) > 30:
+                return cand
 
     # 2. Try first paragraph inside `sections[0]` (`content` or `paragraphs` or `body` or `html`)
     for sec_field in ('content', 'paragraphs', 'body', 'html'):
@@ -888,8 +907,9 @@ def _estimate_analysis_words_and_offset(text: str) -> tuple[int, int, float, boo
     if not raw.strip():
         return (0, 0, 100.0, False)
 
-    # Strip boilerplate taglines before measuring proof blocks
-    cleaned = GENERIC_TAGLINE_RE.sub(' ', raw)
+    # Strip boilerplate taglines AND YAML frontmatter metadata before measuring body proof offset/words
+    raw_body = re.sub(r'\A---\n.*?\n---\n', '', raw, flags=re.S)
+    cleaned = GENERIC_TAGLINE_RE.sub(' ', raw_body)
     plain = re.sub(r'<[^>]+>', ' ', cleaned)
     total_words = max(len(re.findall(r'\b[A-Za-z0-9][A-Za-z0-9\'-]*\b', plain)), 1)
 
@@ -930,10 +950,12 @@ def _estimate_analysis_words_and_offset(text: str) -> tuple[int, int, float, boo
     else:
         segments = re.split(r'\n\s*\n|(?:\"\s*,\s*\")|(?:\},\s*\{)', cleaned)
     analysis_cue_re = re.compile(
-        r'in\s+our\s+(?:internal\s+)?(?:cost|scenario|workload|token|tco|break-even|testing|modeling|analysis|calculation)|'
+        r'in\s+our\s+(?:internal\s+)?(?:cost|scenario|specification|sizer|packing|fleet-readiness|procurement|site-readiness|workload|token|tco|break-even|testing|modeling|analysis|calculation|comparison|evaluation|breakdown)|'
         r'we\s+(?:modeled|calculated|tested)|worked\s+cost\s+example|scenariotable|'
+        r'(?:across|comparing)\s+(?:three|3)\s+(?:standardized\s+|common\s+|travel\s+|carry-on\s+|workload\s+|procurement\s+|site-readiness\s+|deployment\s+|buyer\s+|observing\s+)?(?:scenarios?|workloads?|profiles?)|'
+        r'(?:buyer|procurement|operator)\s+(?:verification|readiness)\s+checklist|'
         r'break-even|breaks\s+even|counterexample|what\s+would\s+change\s+our|when\s+[^\n.]{2,50}\s+is\s+(?:still\s+)?the\s+better|'
-        r'who\s+this\s+is\s+not\s+for|our\s+takeaway|verdict|recommendation\s+flips|walk\s+away|'
+        r'who\s+this\s+is\s+not\s+for|who\s+should\s+skip|our\s+takeaway|verdict|recommendation\s+flips|walk\s+away|'
         r'working\s+with\s+(?:over\s+\d+|a\s+|an\s+|several\s+|multiple\s+)|'
         r'based\s+on\s+our\s+work\s+(?:with|optimizing|across)|'
         r'calculated\s+from\s+|modeled\s+from\s+|amortized\s+across\s+|'
@@ -1308,7 +1330,11 @@ def _scan_repo_window(item: tuple[str, str], since_iso: str) -> list[dict]:
                 if full_txt:
                     has_internal, detected_types, _ = _has_substantive_internal_proof(full_txt)
 
-            slugs = list(dict.fromkeys(re.findall(r'"?slug"?\s*:\s*["\']([a-z0-9/-]+)["\']', patch_added)))
+            if fname.endswith(('.ts', '.tsx')):
+                # Extract ONLY top-level record slugs (`indent <= 4`), never nested `alternatives[].slug` or `relatedLinks` slugs
+                slugs = list(dict.fromkeys(re.findall(r'(?m)^[ \t]{0,4}"?slug"?\s*:\s*["\']([a-z0-9/-]+)["\']', patch_added)))
+            else:
+                slugs = list(dict.fromkeys(re.findall(r'"?slug"?\s*:\s*["\']([a-z0-9/-]+)["\']', patch_added)))
             if not slugs and (
                 fname.endswith(('.md', '.mdx'))
                 or re.match(r'^(?:src/)?data/(?:alternatives|explainers|toolPages)/[^/]+\.json$', fname)
@@ -1323,7 +1349,7 @@ def _scan_repo_window(item: tuple[str, str], since_iso: str) -> list[dict]:
                 if '/' not in s_clean:
                     if 'data/alternatives' in fname or (routine == 'alternatives-daily' and full_repo in ('jht243/modernwallet', 'jht243/banthebots', 'jht243/vet_tools')):
                         s_clean = f'alternatives/{s_clean}'
-                    elif 'gear-deep-dives' in fname:
+                    elif 'gear-deep-dives' in fname or 'gear-reviews' in fname:
                         s_clean = f'gear/reviews/{s_clean}'
                     elif 'gear-roundups' in fname:
                         s_clean = f'gear/{s_clean}'
