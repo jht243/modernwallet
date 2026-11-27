@@ -72,7 +72,7 @@ Claude $\rightarrow$ OpenAI $\rightarrow$ Gemini writer keys in cloud), falling 
      named in plain text.
    - Data cells never defer ("see vendor site" fails the standard's deferral gate): state the fact
      ("Quote-based; no public price", "Free plan; paid tiers from $X/month").
-   - Testing & Takeaways: give decisive, workload-segmented switching recommendations (`verdict` / `Our Takeaway`) backed by a 3-scenario cost/workload table and explicit break-even counterexample; `(Tested YYYY)` applies ONLY when `basis == "measured"` and `tested_eligibility` passes (otherwise use `basis == "modeled"` with explicit `sourceNote` attribution).
+   - Top-Quarter Proof & Takeaways (MANDATORY): (a) **Paragraph 1** (`intro[0]` / `introText[0]` / first `<p>` of `introHtml`) MUST open with the direct switching answer AND a concrete verified price, fee, or plan-cap delta from the vendor table; (b) **Section 1 immediately below the comparison table** (`sections[0]` / `chooseSection` / first H2 after the comparison table — in the top quarter of the page, NEVER buried at the bottom) MUST contain **180–250 words of original 3-scenario cost/workload modeling + a structured 3-scenario table (or pipe/HTML table) + an explicit break-even counterexample** calculated strictly from verified vendor numbers (plus a link to any matching calculator on this site); (c) When `.claude/reviewer-voice-profile.json` is present on this repo (non-medical sites), register a fresh 2-sentence `Publisher's Take` / `Editor's Note` via `python3 .claude/tools/mindmap-tracks.py register-reviewer-note --route <route> --note "<2 crisp sentences naming real post-month-1 friction and who should skip/walk away; numbers optional>"`; `(Tested YYYY)` applies ONLY when `basis == "measured"` and `tested_eligibility` passes (otherwise use `basis == "modeled"` with explicit `sourceNote` attribution).
 6. **No ads, affiliate links, sponsored boxes or self-promotion** on these pages beyond the template's CTAs.
 
 ## Run steps
@@ -221,7 +221,7 @@ check passes.
      optional `tableNote` (e.g. "Fees and prices from each provider's own website, checked <Month D, YYYY>."),
      optional `tableColumns` (default `["Product", "Fees and pricing", "Best fit"]`), `rows`
      (`{product, pricing, bestFit}`; the subject row first with `"subject": true`, then 5–8
-     alternatives), `chooseSection` `{heading, body}` (the second section, e.g. "How to choose a
+     alternatives), `chooseSection` `{heading, body}` (the second section right below the table — MUST carry the 180–250 word 3-scenario fee/balance math breakdown + Markdown scenario table + break-even counterexample, e.g. "How to choose a
      <Product> alternative"; the "Want to be added" band renders at its end), `alternatives`
      (one `{heading, body}` per alternative), `stillBetterFit` `{heading: "When <Product> is still
      the better fit", body}`, `verdict`, `faqs` (3–5 `{question, answer}`), optional `related`
