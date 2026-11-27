@@ -24,9 +24,32 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 sys.path.insert(0, str(HERE))
-from apply_sections import splice  # noqa: E402
 from diagnose import PRICE_PAIR, aliases_on_page  # noqa: E402
 from prepare_pages import find_entry  # noqa: E402
+
+
+def match_bracket(s: str, i: int) -> int:
+    """Index just past the bracket matching s[i] ('[' or '{'), string-aware."""
+    pairs = {"[": "]", "{": "}"}
+    depth, quote, j = 0, None, i
+    while j < len(s):
+        c = s[j]
+        if quote:
+            if c == "\\":
+                j += 2
+                continue
+            if c == quote:
+                quote = None
+        elif c in "'\"`":
+            quote = c
+        elif c in pairs:
+            depth += 1
+        elif c in "]}":
+            depth -= 1
+            if depth == 0:
+                return j + 1
+        j += 1
+    raise ValueError("unbalanced")
 
 
 def _engine() -> str:
@@ -210,7 +233,6 @@ def add_link_sentence(entry: str, sentence: str) -> str:
     lit = json.dumps(sentence, ensure_ascii=False)
     m = re.search(r"""(["']?introText["']?\s*:\s*\[)""", entry)
     if m:
-        from apply_sections import match_bracket
         a = m.end() - 1
         b = match_bracket(entry, a) - 1                          # index of ']'
         j = b - 1

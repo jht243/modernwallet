@@ -272,7 +272,10 @@ def detect(gsc, site, ga4, prop, end: date, pick: int, B):
         synth = sum(q["impressions"] for q in qs if is_synthetic(q["keys"][1]))
         real = [q for q in qs if not is_synthetic(q["keys"][1])]
         brand = set(re.split(r"[^a-z0-9]+", path.rsplit("/", 1)[-1])) | host_tokens
-        useful = [q for q in real if not is_nav(q["keys"][1], brand)]
+        host_str = urllib.parse.urlparse(site.replace("sc-domain:", "https://")).netloc.lower().removeprefix("www.")
+        host_stem = host_str.split(".", 1)[0]
+        # a query containing our own domain name ("<site>.com alternatives") is navigational: the searcher wants us
+        useful = [q for q in real if not is_nav(q["keys"][1], brand) and host_str not in q["keys"][1].lower() and (len(host_stem) < 6 or host_stem not in q["keys"][1].lower().replace(" ", ""))]
         if synth / listed > MAX_SYNTHETIC_SHARE or not useful:
             stats["mostly_synthetic"] += 1
             continue
@@ -301,6 +304,8 @@ def detect(gsc, site, ga4, prop, end: date, pick: int, B):
     cands.sort(key=lambda c: -c["gain"])
 
     cool = in_cooldown()
+    redirects_file = ROOT / "src/seo/redirects_registry.json"
+    redirects = json.loads(redirects_file.read_text()) if redirects_file.is_file() else {}
     pages, handoff = [], []
     n_full = n_top = n_handoff = 0
     stats["engine_unsupported"] = 0
@@ -308,6 +313,9 @@ def detect(gsc, site, ga4, prop, end: date, pick: int, B):
         if n_full >= pick and n_top >= TOP_FACT_PICK:
             break
         if (c["top_page"] and n_top >= TOP_FACT_PICK) or (not c["top_page"] and n_full >= pick):
+            continue
+        if c["path"] in redirects or (c["path"].rstrip("/") + "/") in redirects:
+            stats["nav_or_hub"] += 1
             continue
         if c["path"] in cool:
             stats["cooldown"] += 1
@@ -324,6 +332,16 @@ def detect(gsc, site, ga4, prop, end: date, pick: int, B):
             if hub or n_handoff >= pick:
                 stats["nav_or_hub"] += 1
                 continue
+            if c["path"].startswith("/tools/legal-status-by-state/") and (ROOT / "src/data/tool_data.py").is_file():
+                state_slug = c["path"].rsplit("/", 1)[-1]
+                td_text = (ROOT / "src/data/tool_data.py").read_text(errors="ignore")
+                m_st = re.search(rf'slug="{re.escape(state_slug)}".*?meta_title="([^"]*)".*?meta_description=\((.*?)\)', td_text, re.S)
+                if m_st and c["lane"] == "SNIPPET":
+                    mq_words = [w for w in re.split(r"[^a-z0-9]+", c["main"]["keys"][1].lower()) if len(w) >= 4]
+                    mt_low = (m_st.group(1) + " " + m_st.group(2)).lower()
+                    if mq_words and all(w in mt_low for w in mq_words):
+                        stats["ctr_ok"] += 1
+                        continue
             n_handoff += 1
             stats["engine_unsupported"] += 1
             handoff.append({"path": c["path"], "url": c["url"], "lane": c["lane"], "gain": c["gain"],

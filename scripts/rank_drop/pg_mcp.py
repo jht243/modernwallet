@@ -6,8 +6,8 @@ MCP connector (execute_sql) is the only path to the live rows. These subcommands
 scripted, two-call exchange — the orchestrator never writes SQL itself:
 
   pg_mcp.py select --detect reports/rank-drop/<D>.json > /tmp/select.sql
-      ONE SELECT for every page in the detection report (+ its page_key). Run it with execute_sql,
-      save the JSON rows to /tmp/rows.json, then:
+      ONE SELECT for every page in the detection report (+ its page_key) not yet cached in pg-snapshots.
+      Run it with execute_sql, save the JSON rows to /tmp/rows.json, then:
   pg_mcp.py save --rows /tmp/rows.json
       stores one snapshot per row (backend.locate() reads these) — run BEFORE prepare_pages.py.
 
@@ -45,6 +45,7 @@ def main(argv=None) -> int:
     sub = ap.add_subparsers(dest="cmd", required=True)
     s1 = sub.add_parser("select")
     s1.add_argument("--detect", required=True)
+    s1.add_argument("--force", action="store_true")
     s2 = sub.add_parser("save")
     s2.add_argument("--rows", required=True)
     sub.add_parser("pending")
@@ -57,7 +58,7 @@ def main(argv=None) -> int:
     a = ap.parse_args(argv)
     B = backend()
     from backends import pg_rows
-    cols = ", ".join(pg_rows.ROW_COLS)
+    cols = ", ".join(getattr(B, "row_cols", pg_rows.ROW_COLS))
     snap = ROOT / B.snap_dir
     pend, done = snap / "pending.jsonl", snap / "applied.jsonl"
 
@@ -67,6 +68,8 @@ def main(argv=None) -> int:
         for p in rep.get("pages", []):
             hit = B.resolve(p["path"])
             if hit:
+                if not a.force and B._snap_path(hit[1]).is_file():
+                    continue
                 keys.append(hit[1])
         if not keys:
             print("-- no landing_pages rows for this run's pages")

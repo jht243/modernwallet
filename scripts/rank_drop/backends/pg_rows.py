@@ -424,6 +424,14 @@ class PgRows(Backend):
         self.apply_mode = p.get("apply_mode", "dsn")
         self.bust_cache = bool(p.get("bust_cache", False))
         self.trailing_slash = cfg.get("trailing_slash", True)
+        models_txt = (self.root / "src/models.py").read_text(errors="ignore") if (self.root / "src/models.py").is_file() else ""
+        has_faq = p.get("has_faq_json")
+        if has_faq is None:
+            has_faq = ("faq_json" in models_txt) if models_txt else True
+        self.edit_cols = EDIT_COLS if has_faq else tuple(c for c in EDIT_COLS if c != "faq_json")
+        self.json_cols = tuple(c for c in JSON_COLS if c in self.edit_cols)
+        self.row_cols = ("page_key", "page_type", "canonical_path", *self.edit_cols, "updated_at", "last_generated_at")
+        self.json_type = p.get("json_type") or (("json" if "Column(JSON," in models_txt and "JSONB" not in models_txt else "jsonb") if models_txt else "jsonb")
         self.md = _Md(self.trailing_slash)
         self._routes: list[_Route] | None = None
         self._engine = None
@@ -453,7 +461,7 @@ class PgRows(Backend):
         return rows
 
     def _fetch_row(self, page_key: str) -> dict | None:
-        rows = self._select(f"select {', '.join(ROW_COLS)} from {self.table} where page_key = :k", {"k": page_key})
+        rows = self._select(f"select {', '.join(self.row_cols)} from {self.table} where page_key = :k", {"k": page_key})
         if rows is None:
             raise LookupError("no DSN")
         return _norm_row(rows[0]) if rows else None
@@ -476,7 +484,7 @@ class PgRows(Backend):
         """One guarded statement taking the live row (first step's before) to the last step's after."""
         load = lambda f: _norm_row(json.loads((self.root / f).read_text())["row"])  # noqa: E731
         first, last = load(records[0]["before"]), load(records[-1]["after"])
-        cols = [k for k in EDIT_COLS if first.get(k) != last.get(k)]
+        cols = [k for k in self.edit_cols if first.get(k) != last.get(k)]
         if not cols:
             return None
         if records[-1]["kind"] == "REVERT":
@@ -490,7 +498,7 @@ class PgRows(Backend):
 
     def snapshot_select_sql(self, page_key: str) -> str:
         """The SELECT to run through the Supabase MCP; feed the row to save_snapshot()."""
-        return f"select {', '.join(ROW_COLS)} from {self.table} where page_key = '{page_key.replace(chr(39), chr(39) * 2)}';"
+        return f"select {', '.join(self.row_cols)} from {self.table} where page_key = '{page_key.replace(chr(39), chr(39) * 2)}';"
 
     def save_snapshot(self, row: dict, source: str = "mcp") -> Path:
         row = _norm_row(row)
@@ -1010,9 +1018,9 @@ if __name__ == "__main__":
         md5 = lambda v: hashlib.md5(v.encode("utf-8")).hexdigest()  # noqa: E731
         sets, where = [], ["page_key = '" + page_key.replace("'", "''") + "'"]
         for k in sorted(after):
-            is_json = k in JSON_COLS
+            is_json = k in self.json_cols
             old_v, new_v = expect.get(k), after[k]
-            col = f"{k}::text" if is_json else k
+            col = f"({k}::jsonb)::text" if (is_json and self.json_type == "json") else (f"{k}::text" if is_json else k)
             old_t = None if old_v is None else (_jsonb_text(old_v) if is_json else old_v)
             new_t = None if new_v is None else (_jsonb_text(new_v) if is_json else new_v)
             if new_t is None:
@@ -1025,7 +1033,7 @@ if __name__ == "__main__":
                         expr = f"replace({expr}, {q(o)}, {q(n)})"
                 else:
                     expr = q(new_t)
-                sets.append(f"{k} = ({expr})::jsonb" if is_json else f"{k} = {expr}")
+                sets.append(f"{k} = ({expr})::{self.json_type}" if is_json else f"{k} = {expr}")
                 where.append(f"md5({expr}) = '{md5(new_t)}'")
             where.append(f"{k} IS NULL" if old_t is None else f"md5({col}) = '{md5(old_t)}'")
         for k in ("updated_at", "last_generated_at"):
@@ -1082,12 +1090,12 @@ if __name__ == "__main__":
             live = self._fetch_row(page.key)
             if live is None:
                 return Result(False, f"no landing_pages row {page.key}")
-            if any(live.get(k) != row.get(k) for k in EDIT_COLS):
+            if any(live.get(k) != row.get(k) for k in self.edit_cols):
                 notes.append("note: live row differed from the located snapshot; edit computed on the live row")
             row = live
         new, op_notes = self._apply_ops(row, ops)
         notes += op_notes
-        changed = [k for k in EDIT_COLS if new.get(k) != row.get(k)]
+        changed = [k for k in self.edit_cols if new.get(k) != row.get(k)]
         if not changed:
             return Result(True, "no field changed", [], ["skipped: no field changed"] + notes)
         expect = {k: row.get(k) for k in changed}
@@ -1167,7 +1175,7 @@ if __name__ == "__main__":
         else:
             afters = self._history(page.key, "after")
             current = _norm_row(afters[-1][3]["row"]) if afters else self._row(page)
-        cols = [k for k in EDIT_COLS if current.get(k) != target.get(k)]
+        cols = [k for k in self.edit_cols if current.get(k) != target.get(k)]
         if not cols:
             return Result(True, "already at the pre-run state", [], [f"restored to {base_sha} (no change)"])
         expect = {k: current.get(k) for k in cols}

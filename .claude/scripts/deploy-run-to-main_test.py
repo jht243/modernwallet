@@ -211,7 +211,10 @@ done
         self.assertEqual(len(self.fencelog.read_text().splitlines()),1)
 
     def test_land_pushes_directly_to_main_when_permitted_and_mirrors_claude_branch(self):
-        land_sh = Path(__file__).resolve().with_name('land-run.sh').read_text()
+        land_path = Path(__file__).resolve().with_name('land-run.sh')
+        if not land_path.is_file():
+            self.skipTest('land-run.sh not installed in this repository')
+        land_sh = land_path.read_text()
         self.write('.claude/scripts/land-run.sh', land_sh)
         self.git(self.work,'checkout','-qb','claude/test-direct-land')
         self.cmd(['bash','.claude/scripts/land-run.sh','mark'], self.work)
@@ -227,7 +230,10 @@ done
         self.assertIn(self.remote_tip(),self.fencelog.read_text().splitlines())
 
     def test_land_falls_back_to_claude_land_branch_when_direct_main_push_refused(self):
-        land_sh = Path(__file__).resolve().with_name('land-run.sh').read_text()
+        land_path = Path(__file__).resolve().with_name('land-run.sh')
+        if not land_path.is_file():
+            self.skipTest('land-run.sh not installed in this repository')
+        land_sh = land_path.read_text()
         self.write('.claude/scripts/land-run.sh', land_sh)
         hook=self.remote/'hooks/pre-receive'
         hook.write_text('''#!/usr/bin/env bash
@@ -321,6 +327,88 @@ done
         self.assertEqual(r.returncode, 0, msg=r.stdout + r.stderr)
         merged = self.git(self.remote, 'show', 'main:' + ledger_rel).stdout.splitlines()
         self.assertEqual(merged, ['{"id":"base"}', '{"id":"comparison-run"}', '{"id":"ga4-run"}'])
+
+    def test_reviewer_notes_ts_from_empty_base_auto_merges(self):
+        rn_rel = 'src/data/reviewer-notes.ts'
+        base_ts = 'export interface ReviewerNoteEntry { note: string; reviewedDate?: string; }\nexport const REVIEWER_NOTES: Record<string, ReviewerNoteEntry> = {};\n'
+        self.write(rn_rel, base_ts, self.other)
+        self.commit(self.other, 'seed empty reviewer notes')
+        self.git(self.other, 'push', '-q', 'origin', 'main')
+        self.git(self.work, 'pull', '-q', 'origin', 'main')
+        self.helper('mark')
+
+        ours_ts = (
+            'export interface ReviewerNoteEntry { note: string; reviewedDate?: string; }\n'
+            'export const REVIEWER_NOTES: Record<string, ReviewerNoteEntry> = {\n'
+            '  "/guides/alpha": {\n    note: "Alpha note",\n  },\n};\n'
+        )
+        self.write(rn_rel, ours_ts, self.other)
+        self.commit(self.other, 'main alpha note')
+        self.git(self.other, 'push', '-q', 'origin', 'main')
+
+        theirs_ts = (
+            'export interface ReviewerNoteEntry { note: string; reviewedDate?: string; }\n'
+            'export const REVIEWER_NOTES: Record<string, ReviewerNoteEntry> = {\n'
+            '  "/guides/beta": {\n    note: "Beta note",\n  },\n};\n'
+        )
+        self.write(rn_rel, theirs_ts, self.work)
+        self.write('run.txt', 'exact reviewed candidate\n', self.work)
+        self.commit(self.work, 'run beta note')
+
+        r = self.helper('push')
+        self.assertEqual(r.returncode, 0, msg=r.stdout + r.stderr)
+        merged = self.git(self.remote, 'show', 'main:' + rn_rel).stdout
+        self.assertIn('"/guides/alpha"', merged)
+        self.assertIn('"/guides/beta"', merged)
+        self.assertTrue(merged.rstrip().endswith('};'))
+
+    def test_page12_ledger_revert_plus_concurrent_append_auto_merges(self):
+        ledger_rel = 'reports/page-1-2-no-clicks/ledger.jsonl'
+        row1_pub = '{"page":"/guides/old","treated":"2026-10-20","status":"published"}'
+        row1_rev = '{"page":"/guides/old","treated":"2026-10-20","status":"reverted"}'
+        row2 = '{"page":"/guides/new-main","treated":"2026-11-27","status":"published"}'
+        self.write(ledger_rel, row1_pub + '\n', self.other)
+        self.commit(self.other, 'seed page12 ledger')
+        self.git(self.other, 'push', '-q', 'origin', 'main')
+        self.git(self.work, 'pull', '-q', 'origin', 'main')
+        self.helper('mark')
+
+        self.write(ledger_rel, row1_pub + '\n' + row2 + '\n', self.other)
+        self.commit(self.other, 'concurrent append')
+        self.git(self.other, 'push', '-q', 'origin', 'main')
+
+        self.write(ledger_rel, row1_rev + '\n', self.work)
+        self.write('run.txt', 'exact reviewed candidate\n', self.work)
+        self.commit(self.work, '28d worse revert')
+
+        r = self.helper('push')
+        self.assertEqual(r.returncode, 0, msg=r.stdout + r.stderr)
+        merged = self.git(self.remote, 'show', 'main:' + ledger_rel).stdout.splitlines()
+        self.assertEqual(merged, [row1_rev, row2])
+
+    def test_alternatives_pages_json_disjoint_merge_and_same_route_conflict(self):
+        alt_rel = 'data/alternatives-pages.json'
+        base_doc = {'_comment': 'test', 'pages': [{'route': '/guides/a-alt/', 'vendorHost': 'a.com'}]}
+        self.write(alt_rel, json.dumps(base_doc, indent=2) + '\n', self.other)
+        self.commit(self.other, 'seed alt pages')
+        self.git(self.other, 'push', '-q', 'origin', 'main')
+        self.git(self.work, 'pull', '-q', 'origin', 'main')
+        self.helper('mark')
+
+        main_doc = {'_comment': 'test', 'pages': base_doc['pages'] + [{'route': '/guides/b-alt/', 'vendorHost': 'b.com'}]}
+        self.write(alt_rel, json.dumps(main_doc, indent=2) + '\n', self.other)
+        self.commit(self.other, 'main b-alt')
+        self.git(self.other, 'push', '-q', 'origin', 'main')
+
+        run_doc = {'_comment': 'test', 'pages': base_doc['pages'] + [{'route': '/guides/c-alt/', 'vendorHost': 'c.com'}]}
+        self.write(alt_rel, json.dumps(run_doc, indent=2) + '\n', self.work)
+        self.write('run.txt', 'exact reviewed candidate\n', self.work)
+        self.commit(self.work, 'run c-alt')
+
+        r = self.helper('push')
+        self.assertEqual(r.returncode, 0, msg=r.stdout + r.stderr)
+        merged = json.loads(self.git(self.remote, 'show', 'main:' + alt_rel).stdout)
+        self.assertEqual([p['route'] for p in merged['pages']], ['/guides/a-alt/', '/guides/b-alt/', '/guides/c-alt/'])
 
 
 if __name__=='__main__': unittest.main()

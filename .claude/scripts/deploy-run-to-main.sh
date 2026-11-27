@@ -109,11 +109,17 @@ is_regenerable() {
   case "$1" in data/*-new.ts|data/comparisons-alternatives-*.ts)
     [ -f .claude/scripts/merge-ts-entries.py ] && return 0 ;;
   esac
-  case "$1" in reports/*.jsonl|reports/*/*.jsonl)
+  case "$1" in reports/*.jsonl|reports/*/*.jsonl|reports/*/*/*.jsonl)
+    return 0 ;;
+  esac
+  case "$1" in src/utils/reviewerNotes.ts|src/data/reviewer-notes.ts|lib/reviewer-notes.ts|src/reviewer_notes.py)
+    return 0 ;;
+  esac
+  case "$1" in data/alternatives-pages.json|src/data/alternatives-daily.json)
     return 0 ;;
   esac
   case "$1" in
-    scripts/paid_placements/ledger.json|scripts/paid_placements/fix-queue.json|scripts/paid_placements/upsell-queue.json|scripts/paid_placements/profiles.json|scripts/agency/packs.json|scripts/agency/upsells.json)
+    scripts/paid_placements/ledger.json|scripts/paid_placements/fix-queue.json|scripts/paid_placements/upsell-queue.json|scripts/paid_placements/profiles.json|scripts/paid_placements/split-balances.json|scripts/paid_placements/agreed-rescues.json|scripts/agency/packs.json|scripts/agency/upsells.json)
       [ -f scripts/paid_placements/merge_queues.py ] && return 0 ;;
   esac
   for i in "${!REGEN_GLOBS[@]}"; do
@@ -157,19 +163,45 @@ resolve_generated() {
           python3 .claude/scripts/merge-ts-entries.py --index "$f" || return 1
           git add -- "$f" || return 1
           continue ;;
-        reports/*.jsonl|reports/*/*.jsonl)
+        reports/*.jsonl|reports/*/*.jsonl|reports/*/*/*.jsonl)
           python3 - "$f" <<'MERGE_JSONL_PY' || return 1
-import pathlib, subprocess, sys
+import json, pathlib, subprocess, sys
 rel = sys.argv[1]
 def stage_lines(stage):
     p = subprocess.run(["git", "show", f":{stage}:{rel}"], capture_output=True, text=True)
     return [l for l in p.stdout.splitlines() if l.strip()] if p.returncode == 0 else []
 base, ours, theirs = stage_lines(1), stage_lines(2), stage_lines(3)
-base_set = set(base)
-if not base_set.issubset(set(ours)) or not base_set.issubset(set(theirs)):
+def row_key(line):
+    try:
+        obj = json.loads(line)
+        if isinstance(obj, dict) and obj.get("page") and obj.get("treated"):
+            return (obj["page"], obj["treated"]), obj
+    except Exception:
+        pass
+    return None, None
+def covered(side):
+    s_set = set(side)
+    reverted_keys = {k for k, o in (row_key(l) for l in side) if k and o.get("status") == "reverted"}
+    for bl in base:
+        if bl in s_set:
+            continue
+        bk, bo = row_key(bl)
+        if bk and bo.get("status") == "published" and bk in reverted_keys:
+            continue
+        return False
+    return True
+if not covered(ours) or not covered(theirs):
     sys.exit(1)
+reverted_map = {}
+for l in ours + theirs:
+    k, o = row_key(l)
+    if k and o.get("status") == "reverted":
+        reverted_map[k] = l
 seen, merged = set(), []
 for line in ours + theirs:
+    k, o = row_key(line)
+    if k and k in reverted_map:
+        line = reverted_map[k]
     if line not in seen:
         seen.add(line)
         merged.append(line)
@@ -177,7 +209,128 @@ pathlib.Path(rel).write_text(("\n".join(merged) + "\n") if merged else "", encod
 MERGE_JSONL_PY
           git add -- "$f" || return 1
           continue ;;
-        scripts/paid_placements/ledger.json|scripts/paid_placements/fix-queue.json|scripts/paid_placements/upsell-queue.json|scripts/paid_placements/profiles.json|scripts/agency/packs.json|scripts/agency/upsells.json)
+        src/utils/reviewerNotes.ts|src/data/reviewer-notes.ts|lib/reviewer-notes.ts|src/reviewer_notes.py)
+          python3 - "$f" <<'MERGE_REVNOTES_PY' || return 1
+import pathlib, re, subprocess, sys
+rel = sys.argv[1]
+def stage_text(stage):
+    p = subprocess.run(["git", "show", f":{stage}:{rel}"], capture_output=True, text=True)
+    return p.stdout if p.returncode == 0 else ""
+base, ours, theirs = stage_text(1), stage_text(2), stage_text(3)
+is_py = rel.endswith(".py")
+empty_re = (
+    re.compile(r'(REVIEWER_NOTES\s*(?::[^=]+)?=\s*\{)(\s*)(\})', re.S)
+    if is_py else
+    re.compile(r'(export const REVIEWER_NOTES\s*:\s*Record<[^>]+>\s*=\s*\{)(\s*)(\};?)', re.S)
+)
+block_re = (
+    re.compile(r'(REVIEWER_NOTES\s*(?::[^=]+)?=\s*\{)(.*?)(\n\})', re.S)
+    if is_py else
+    re.compile(r'(export const REVIEWER_NOTES\s*:\s*Record<[^>]+>\s*=\s*\{)(.*?)(\n\};?)', re.S)
+)
+entry_re = re.compile(r'([ \t]+(?:"/[^"\n]*"|\'/[^\'\n]*\')\s*:\s*\{.*?\n[ \t]+\},?)', re.S)
+def parse_entries(txt):
+    em_empty = empty_re.search(txt)
+    if em_empty:
+        return em_empty, {}
+    m = block_re.search(txt)
+    if not m:
+        return None, {}
+    entries = {}
+    for em in entry_re.finditer(m.group(2)):
+        block = em.group(1)
+        km = re.match(r'[ \t]+(["\'])(/[^"\']*)\1', block)
+        if km:
+            entries[km.group(2)] = block
+    return m, entries
+bm, b_ent = parse_entries(base)
+om, o_ent = parse_entries(ours)
+tm, t_ent = parse_entries(theirs)
+if not om or not tm:
+    sys.exit(1)
+merged_keys = list(o_ent.keys())
+for k in t_ent:
+    if k not in merged_keys:
+        merged_keys.append(k)
+out_blocks = []
+for k in merged_keys:
+    if k in o_ent and k in t_ent and o_ent[k] != t_ent[k]:
+        if bm and o_ent[k] == b_ent.get(k):
+            out_blocks.append(t_ent[k])
+        elif bm and t_ent[k] == b_ent.get(k):
+            out_blocks.append(o_ent[k])
+        else:
+            sys.exit(1)
+    elif k in t_ent and (k not in o_ent or (bm and o_ent[k] == b_ent.get(k))):
+        out_blocks.append(t_ent[k])
+    else:
+        out_blocks.append(o_ent[k])
+close_tok = om.group(3)
+if out_blocks:
+    if not close_tok.startswith("\n"):
+        close_tok = "\n" + close_tok
+    new_body = "\n" + "\n".join(b if b.rstrip().endswith(",") else b.rstrip() + "," for b in out_blocks)
+else:
+    new_body = ""
+    close_tok = close_tok.lstrip("\n")
+merged_text = ours[:om.start()] + om.group(1) + new_body + close_tok + ours[om.end():]
+pathlib.Path(rel).write_text(merged_text, encoding="utf-8")
+MERGE_REVNOTES_PY
+          git add -- "$f" || return 1
+          continue ;;
+        data/alternatives-pages.json|src/data/alternatives-daily.json)
+          python3 - "$f" <<'MERGE_JSON_PAGES_PY' || return 1
+import json, pathlib, subprocess, sys
+rel = sys.argv[1]
+def stage_json(stage):
+    p = subprocess.run(["git", "show", f":{stage}:{rel}"], capture_output=True, text=True)
+    if p.returncode != 0 or not p.stdout.strip():
+        return {"pages": []}
+    return json.loads(p.stdout)
+base, ours, theirs = stage_json(1), stage_json(2), stage_json(3)
+if not all(isinstance(d, dict) and isinstance(d.get("pages"), list) for d in (base, ours, theirs)):
+    sys.exit(1)
+def key_of(item):
+    if not isinstance(item, dict):
+        return None
+    return item.get("route") or item.get("slug")
+def index_pages(doc):
+    idx = {}
+    for item in doc["pages"]:
+        k = key_of(item)
+        if not k or k in idx:
+            sys.exit(1)
+        idx[k] = item
+    return idx
+b_idx, o_idx, t_idx = index_pages(base), index_pages(ours), index_pages(theirs)
+order = list(o_idx.keys()) + [k for k in t_idx if k not in o_idx]
+merged_pages = []
+for k in order:
+    in_o, in_t, in_b = k in o_idx, k in t_idx, k in b_idx
+    if in_o and in_t:
+        if o_idx[k] == t_idx[k]:
+            merged_pages.append(o_idx[k])
+        elif in_b and o_idx[k] == b_idx[k]:
+            merged_pages.append(t_idx[k])
+        elif in_b and t_idx[k] == b_idx[k]:
+            merged_pages.append(o_idx[k])
+        else:
+            sys.exit(1)
+    elif in_o:
+        if in_b and not in_t:
+            sys.exit(1)
+        merged_pages.append(o_idx[k])
+    else:
+        if in_b and not in_o:
+            sys.exit(1)
+        merged_pages.append(t_idx[k])
+out_doc = dict(ours)
+out_doc["pages"] = merged_pages
+pathlib.Path(rel).write_text(json.dumps(out_doc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+MERGE_JSON_PAGES_PY
+          git add -- "$f" || return 1
+          continue ;;
+        scripts/paid_placements/ledger.json|scripts/paid_placements/fix-queue.json|scripts/paid_placements/upsell-queue.json|scripts/paid_placements/profiles.json|scripts/paid_placements/split-balances.json|scripts/paid_placements/agreed-rescues.json|scripts/agency/packs.json|scripts/agency/upsells.json)
           need_queue_merge=1
           continue ;;
       esac
@@ -270,7 +423,12 @@ run_precheck() {
   changed="$(git diff --name-only --diff-filter=ACMR origin/main HEAD)"
   [ -n "$changed" ] || return 0
   # shellcheck disable=SC2086
-  bash "$PRECHECK" $changed
+  # Keep the gate isolated without an exec argv limit for large evidence closures.
+  # The same complete changed-file list remains available as positional arguments.
+  (
+    set -- $changed
+    source "$PRECHECK"
+  )
 }
 
 case "$cmd" in

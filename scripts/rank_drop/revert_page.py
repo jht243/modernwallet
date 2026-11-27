@@ -31,6 +31,10 @@ def main(argv=None) -> int:
     ap.add_argument("--reason", default="Measurement verdict WORSE", help="why, for the commit body")
     a = ap.parse_args(argv)
     B = backend()
+    if subprocess.run(["git", "cat-file", "-e", f"{a.sha}^"], cwd=ROOT, capture_output=True).returncode != 0:
+        subprocess.run(["git", "fetch", "-q", "--shallow-since=90.days.ago", "origin", "HEAD"], cwd=ROOT, capture_output=True)
+        if subprocess.run(["git", "cat-file", "-e", f"{a.sha}^"], cwd=ROOT, capture_output=True).returncode != 0:
+            subprocess.run(["git", "fetch", "-q", "--unshallow", "origin"], cwd=ROOT, capture_output=True)
     page = B.locate(a.path)
     if not page:
         print(f"FAIL page {a.path} not found by backend", file=sys.stderr)
