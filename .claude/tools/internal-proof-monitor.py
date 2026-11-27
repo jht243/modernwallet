@@ -266,7 +266,7 @@ CONTENT_PATH_RE = re.compile(
 )
 BIOGRAPHY_PATH_RE = re.compile(r'^(?:src/)?content/people/|/people/')
 LEGAL_POLICY_EXPLAINER_RE = re.compile(
-    r'/explainers/(?:trump-ai-vetting-executive-order|biden-ai-executive-order-14110|genesis-mission-executive-order|trump-ai-executive-orders)|'
+    r'/explainers/(?:trump-ai-vetting-executive-order|biden-ai-executive-order-14110|genesis-mission-executive-order|trump-ai-executive-orders|tricare-myauth-login)|'
     r'/guides/hud-mixed-status-housing-rule',
     re.I,
 )
@@ -1325,7 +1325,7 @@ def _scan_repo_window(item: tuple[str, str], since_iso: str) -> list[dict]:
                 continue
             full_txt = ''
             has_internal, detected_types, _ = _has_substantive_internal_proof(patch_added)
-            if not has_internal and cf.get('status') == 'modified' and fname.endswith(('.md', '.mdx')):
+            if not has_internal and cf.get('status') == 'modified' and fname.endswith(('.md', '.mdx', '.json')):
                 full_txt = _fetch_file_text_at_ref(full_repo, fname, sha)
                 if full_txt:
                     has_internal, detected_types, _ = _has_substantive_internal_proof(full_txt)
