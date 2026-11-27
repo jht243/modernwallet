@@ -70,6 +70,12 @@ export const REVIEWER_NOTES: Record<string, ReviewerNoteEntry> = {
     reviewedDate: "November 25, 2026",
     note: "HUD's shift from permanent proration to a temporary 90-day verification window directly threatens household stability across public housing and voucher programs. Families must request written documentation from housing authorities immediately while monitoring whether the multi-state federal lawsuit yields an injunction before mid-December.",
   },
+  "/alternatives/upstart/": {
+    label: "Publisher's Take",
+    reviewedDate: "November 27, 2026",
+    note: "The trap after the first month is that Upstart shows its fee only after a rate check, so a borrower who budgeted for the full loan amount can receive less cash than expected. Anyone who needs the exact proceeds fixed in advance, or needs a loan under $1,000, should walk away from this page and read each lender's disclosure first.",
+  },
+
 };
 
 export function getReviewerNote(pathname: string): ReviewerNoteEntry | undefined {

@@ -1,0 +1,165 @@
+{
+ "slug": "upstart",
+ "schema": "none",
+ "kind": "write",
+ "model": "gemini-3.8-flash",
+ "provider": "gemini",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": true,
+ "fallback_reason": "claude-opus-5-5: KeyError: 'no usable anthropic key; set CONTENT_ANTHROPIC_KEY (and _KEY_2) \u2014 dry (short-TTL): CONTENT_ANTHROPIC_KEY, CONTENT_ANTHROPIC_KEY_2'",
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "GEMINI_API_KEY",
+ "finish_reason": "STOP",
+ "words": 3678,
+ "floor": 1500,
+ "input_tokens": 172829,
+ "output_tokens": 7602,
+ "thinking_tokens": 3632,
+ "cached_tokens": 170267,
+ "est_cost_usd": 0.0568,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 3678,
+  "numbers_not_in_facts": [
+   "0.89",
+   "150",
+   "2077.5",
+   "22500",
+   "22502",
+   "22922",
+   "24250",
+   "24500",
+   "24537",
+   "247.5",
+   "24750",
+   "24752",
+   "248",
+   "2497.5",
+   "3.85",
+   "300",
+   "331",
+   "40000",
+   "415.5",
+   "416",
+   "4500",
+   "4584",
+   "462.5",
+   "463",
+   "4850",
+   "49.5",
+   "4907",
+   "4950",
+   "499.5",
+   "5.89",
+   "50001",
+   "531",
+   "569.43",
+   "68",
+   "750",
+   "899",
+   "9000",
+   "9101",
+   "92.5",
+   "93",
+   "9700",
+   "9901"
+  ],
+  "fact_budget": {
+   "fact_words": 504,
+   "floor": 1500,
+   "ratio": 0.34,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    8,
+    1
+   ],
+   "applied": [
+    {
+     "id": "rows[4].pricing",
+     "quote": "Loans $2,000 to $35,000. Fixed APR 9.95% to 35.99%. Administration fee up to 9.99%. Terms 24 to 60 months. No prepayment penalty.",
+     "replacement": "Loans $2,000 to $35,000. Fixed APR 9.95% to 35.99%. Administration fee up to 9.99%. Terms 24 to 60 months.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Avant has no prepayment penalty."
+    },
+    {
+     "id": "chooseSection.body",
+     "quote": "Shorter terms increase monthly installments but reduce total interest charges, whereas longer terms lower monthly obligations over extended amortization.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state consequences of shorter or longer loan terms."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Best Egg fits borrowers who qualify for top-tier credit terms and want an origination fee starting at 0.99%.",
+     "replacement": "Best Egg fits borrowers who want an origination fee starting at 0.99%.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Best Egg requires top-tier credit terms."
+    },
+    {
+     "id": "alternatives[3].body",
+     "quote": "Avant states that checking loan options does not impact your credit score, and there are no prepayment penalties for settling the balance early.",
+     "replacement": "Avant states that checking loan options does not impact your credit score.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Avant has no prepayment penalties."
+    },
+    {
+     "id": "alternatives[4].body",
+     "quote": "Late payment fees may also apply, but there is no prepayment penalty.",
+     "replacement": "Late payment fees may also apply.",
+     "type": "unsupported",
+     "why": "SOURCE does not state OneMain Financial has no prepayment penalty."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "Larger funding needs require commercial lending or secured home equity options.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not state larger funding needs require commercial lending."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "Actual APRs vary by applicant creditworthiness, income and state of residence.",
+     "replacement": "Actual APRs vary by applicant and state of residence.",
+     "type": "unsupported",
+     "why": "SOURCE does not state rates vary by income or creditworthiness."
+    },
+    {
+     "id": "faqs[3].answer",
+     "quote": "No. Upstart, Prosper, Best Egg, Upgrade and Avant all state on their websites that they charge no prepayment fees or penalties if you pay off your loan early.",
+     "replacement": "Upstart, Prosper, Best Egg and Upgrade all state on their websites that they charge no prepayment fees or penalties if you pay off your loan early.",
+     "type": "unsupported",
+     "why": "SOURCE does not state Avant has no prepayment penalties."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Upstart also fits borrowers who want a fast digital rate check that takes about 5 minutes and uses a soft credit inquiry that does not affect their credit score.",
+     "replacement": "Upstart also fits borrowers who want a rate check that takes about 5 minutes and does not affect their credit score (soft inquiry).",
+     "type": "unsupported",
+     "why": "SOURCE does not describe the rate check as 'fast' or 'digital'."
+    }
+   ],
+   "deleted_final": 1,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3744
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 4439
+  }
+ },
+ "seconds": 176.3,
+ "response_id": "ybIJa4vgNuyuwbUPkoHp2QM",
+ "generated_at": "2026-11-27T16:44:39+0000"
+}

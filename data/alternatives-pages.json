@@ -299,6 +299,13 @@
       "officialHosts": [
         "www.honeybook.com"
       ]
+    },
+    {
+      "route": "/alternatives/upstart/",
+      "vendorHost": "upstart.com",
+      "officialHosts": [
+        "www.upstart.com"
+      ]
     }
   ]
 }

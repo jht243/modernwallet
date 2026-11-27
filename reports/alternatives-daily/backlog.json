@@ -4030,7 +4030,7 @@
     {
       "vendor": "Upstart",
       "product": "Upstart",
-      "officialUrl": "https://www.upstart.com",
+      "officialUrl": "https://www.upstart.com/personal-loans",
       "targetQuery": "upstart alternatives",
       "demand": {
         "volume": 210,
@@ -4047,10 +4047,128 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-27T16:41:21+00:00",
+          "status": "eligible",
+          "note": "qualified",
+          "fields": [
+            "officialUrl",
+            "product",
+            "vendor"
+          ]
+        },
+        {
+          "at": "2026-11-27T16:41:21+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-27"
+        },
+        {
+          "at": "2026-11-27T16:45:10+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-27T16:49:14+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "in_progress",
+      "updatedAt": "2026-11-27T16:45:10+00:00",
+      "claimedOn": "2026-11-27",
+      "attempts": 1,
+      "lastNextAt": "2026-11-27T16:41:21+00:00",
+      "writer": "content_gen",
+      "slug": "upstart",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "| Fee percentage | $5,000 loan | $10,000 loan | $25,000 loan | | --- | --- | --- | --- |",
+            "problem": "The 3-scenario fee table in chooseSection renders in dist/alternatives/upstart/index.html as one raw paragraph of pipe characters (only 1 <table> on the page: the comparison table). The site renderer supports paragraphs and '- ' lists only, so the mandatory scenario table is unreadable on the live page.",
+            "fix": "Replace the pipe table with '- ' list lines, one per fee percentage, e.g. '- Best Egg low end, 0.99%: $50 on $5,000 (net $4,950); $99 on $10,000 (net $9,901); $248 on $25,000 (net $24,752)'. Keep all figures; they replay correctly.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Beyond standard personal loans, Upstart provides adjacent products on its homepage: a Cash Line offering $50 to $500 ... (66 words)",
+            "problem": "GATE sentence rhythm: 16 consecutive long (15+ word) sentences, sentences 128-143 (What Would Change Our Answer bullets through When Upstart Is Still the Better Fit), lengths [34,35,26,28,22,20,31,25,23,32,45,66,16,20,53,30]. Also run-on sentences over 40 words: intro sentence 1 (44), intro sentence 2 (46), stillBetterFit no-fee sentence (45), stillBetterFit adjacent-products sentence (66), verdict sentence 1 (53). Overall 107 of 154 sentences are long.",
+            "fix": "Split the five run-ons into 2-3 sentences each and shorten the six 'What Would Change Our Answer' bullets so several are under 14 words, breaking the long-band run.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "It is arithmetic on published figures, not a quote or an offer. / every rate listed on this page is a published range, not a binding offer",
+            "problem": "Anti-AI single-instance ban: compressed ', not Y' antithesis, two occurrences (chooseSection and Who This Is Not For).",
+            "fix": "Recast as plain negations: 'This is arithmetic on published figures. It is not a quote or an offer.' and 'every rate on this page is a published range and no lender has promised it to you'.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "returned-payment ACH fees may apply (Upstart table row); metaDescription 'with published loan APRs, terms and fees'; 'Prices are in US dollars'",
+            "problem": "Acronyms not defined on first use: ACH (first use in the Upstart row) and APRs in the meta description (defined only later in the intro); US in tableNote.",
+            "fix": "Write 'returned-payment (Automated Clearing House, ACH) fees' in the row. Change meta to 'with published loan rates, terms and fees' (or spell out annual percentage rates within 160 characters). Use 'U.S. dollars' only if kept, or drop the sentence.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F5",
+            "quote": "To pick an Upstart alternative, calculate your required borrowing amount, request soft-inquiry rate quotes to compare net proceeds after origination fees, and check your loan terms in our comparison hub.",
+            "problem": "Reader-directed imperatives read as advice (adapter: 'fits people who...', never 'you should'), and 'check your loan terms in our comparison hub' does not parse (the hub does not hold the reader's loan terms). Also 'Finally, check pre-qualification rules.' is an unlinked directive.",
+            "fix": "Close with a concrete, non-advisory next step, e.g. 'Each lender's own rate check shows its fee and APR for an applicant; the [comparison hub](/compare/) lists other lending tables.' Rewrite the 'Finally' sentence as a statement of fact.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F6",
+            "quote": "First, assess the loan size. ... Second, evaluate the origination fee ... Third, review repayment term options. ... Finally, check pre-qualification rules.",
+            "problem": "Formatting slop ban: three or more parallel steps written as First/Second/Third paragraphs in chooseSection.",
+            "fix": "Turn the steps into a short '- ' list or fold them into prose with varied openers; keep the figures.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F7",
+            "quote": "(missing files) reports/alternatives-daily/2026-11-27/upstart-sources.json and mindmap/evidence/upstart/evidence.json",
+            "problem": "Page rule 4 requires <slug>-sources.json, and Step 2 requires intake plus precheck-drafts --enforce-track-proof. Neither the sources file nor the mindmap run dir exists, and upstart.json.meta.json lists unverified numbers (0.89, 150, 2077.5, 22922, ...) with no evidence packet. I verified every figure against live vendor pages instead (all match), but the receipt trail is missing.",
+            "fix": "MAIN: write upstart-sources.json (source URLs per vendor, checked 2026-11-27) and run the intake / precheck-drafts --enforce-track-proof step, or record the exception.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F8",
+            "quote": "(missing) Publisher's Take / reviewer note and proof-log row for /alternatives/upstart/",
+            "problem": "Page rule 5(c): .claude/reviewer-voice-profile.json exists, so a 2-sentence note must be registered via mindmap-tracks.py register-reviewer-note, and the proof receipt logged. grep finds no entry for /alternatives/upstart/ in src/data/reviewer-notes.ts or reports/internal-proof-log.jsonl.",
+            "fix": "MAIN: register the note (real post-month-1 friction plus who should walk away, no testing claim) and run log-proof before publishing.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F9",
+            "quote": "Best Egg notes on its page that the origination fee on loan terms of four years or longer differs from shorter terms.",
+            "problem": "Best Egg's own footnote says the origination fee on terms of 4 years or longer will be at least 4.99%. 'Differs' understates it, and the 0.99% net-proceeds figures in the table and worked example apply only to shorter terms, with no caveat on 5-year examples.",
+            "fix": "State 'at least 4.99% on terms of 4 years or longer' in the Best Egg row and section, and label the 0.99% rows as shorter-term fees.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F10",
+            "quote": "Upstart and Upgrade allow loans starting at $1,000 / as low as 8.95% for the life of the loan",
+            "problem": "Vendor footnotes qualify these: Upstart minimums vary by state (GA $3,100, HI $1,500, MA $7,000); Avant says minimums vary by state; Happy Money says the minimum rate above $15,000 is 11.09% APR and its rate reflects an autopay discount.",
+            "fix": "Add 'minimums vary by state' to the $1,000 statement and Who This Is Not For micro-loan bullet; add the Happy Money above-$15,000 minimum and autopay note.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F11",
+            "quote": "How to Choose an Upstart Alternative (chooseSection body)",
+            "problem": "Adapter asks for a 180-250 word scenario model; the section is about 800 words and the model is buried after three paragraphs of criteria. Not a gate failure, but the top-quarter proof is diluted.",
+            "fix": "After fixing F1/F6, move the scenario list and break-even counterexample to the top of the section and trim the criteria paragraphs.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-27T16:49:14+00:00"
+      }
     },
     {
       "vendor": "Revolut",
@@ -4200,10 +4318,16 @@
           "at": "2026-11-22T16:39:57+00:00",
           "status": "pending",
           "note": "added: discovery 2026-11-22"
+        },
+        {
+          "at": "2026-11-27T16:41:21+00:00",
+          "status": "held",
+          "note": "no published per-transfer fee schedule (fees only via per-quote calculator, fee page 404); cannot ground fee comparison or 3-scenario model in published numbers",
+          "fields": []
         }
       ],
-      "status": "pending",
-      "updatedAt": "2026-11-22T16:39:57+00:00"
+      "status": "held",
+      "updatedAt": "2026-11-27T16:41:21+00:00"
     },
     {
       "vendor": "Brex",
