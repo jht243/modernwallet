@@ -9,6 +9,7 @@ from pathlib import Path
 import re
 import subprocess
 import sys
+import tempfile
 
 SLUG_RE = re.compile(r'(?:^|[{,\s])["\']?slug["\']?\s*:\s*["\']([a-z0-9][a-z0-9-]*)["\']', re.M)
 ALLOWED_PATH_RE = re.compile(r'^data/(?:[a-z0-9_-]+-new|comparisons-alternatives-[a-z0-9_-]+)\.ts$')
@@ -83,6 +84,70 @@ def _validate_append_tail(tail: str, label: str) -> set[str]:
     return set(slugs)
 
 
+def _split_body_and_tail(base_norm: str, side_text: str) -> tuple[str, str] | None:
+    """Split side_text into (body_corresponding_to_base, appended_tail_after_base)."""
+    base_slugs = _extract_slugs(base_norm)
+    if not base_slugs:
+        return None
+    last_slug = base_slugs[-1]
+    m = re.search(rf'["\']?slug["\']?\s*:\s*["\']{re.escape(last_slug)}["\']', side_text)
+    if not m:
+        return None
+    # Check if last_slug sits inside aconst array `];` or an `_entries.push({...});`
+    push_pos = side_text.rfind('_entries.push(', 0, m.start())
+    arr_end_in_base = base_norm.rstrip().endswith('];')
+    if push_pos >= 0 and not arr_end_in_base:
+        # Advance from '(' of _entries.push( to its matching ')' + optional ';' + optional '// ... END' line
+        i = push_pos + len('_entries.push')
+        paren = 0
+        in_str = None
+        esc = False
+        n = len(side_text)
+        while i < n:
+            c = side_text[i]
+            if in_str:
+                if esc:
+                    esc = False
+                elif c == '\\':
+                    esc = True
+                elif c == in_str:
+                    in_str = None
+                i += 1
+                continue
+            if c in ('"', "'", '`'):
+                in_str = c
+                i += 1
+                continue
+            if side_text.startswith('//', i):
+                nl = side_text.find('\n', i + 2)
+                i = n if nl < 0 else nl + 1
+                continue
+            if c == '(':
+                paren += 1
+            elif c == ')':
+                paren -= 1
+                if paren == 0:
+                    i += 1
+                    while i < n and side_text[i] in ' \t;':
+                        i += 1
+                    # Include trailing '// ... END' comment if base_norm also ended with one
+                    if base_norm.splitlines()[-1].lstrip().startswith('//'):
+                        nl = side_text.find('\n', i)
+                        next_ln_end = side_text.find('\n', nl + 1) if nl >= 0 else -1
+                        cand_ln = side_text[nl + 1:(next_ln_end if next_ln_end >= 0 else n)] if nl >= 0 else ''
+                        if cand_ln.lstrip().startswith('//') and 'END' in cand_ln:
+                            i = next_ln_end if next_ln_end >= 0 else n
+                    return side_text[:i].rstrip('\r\n'), side_text[i:].lstrip('\r\n').rstrip()
+            i += 1
+        return None
+    if arr_end_in_base:
+        close_idx = side_text.find('\n];', m.end())
+        if close_idx >= 0:
+            end_i = close_idx + len('\n];')
+            return side_text[:end_i].rstrip('\r\n'), side_text[end_i:].lstrip('\r\n').rstrip()
+    return None
+
+
 def merge(base_text: str, ours_text: str, theirs_text: str) -> str:
     if ours_text == theirs_text:
         return ours_text
@@ -129,6 +194,35 @@ def merge(base_text: str, ours_text: str, theirs_text: str) -> str:
         if overlap:
             raise ValueError('Upstream appended slug(s) already exist in branch side: ' + ', '.join(overlap))
         return theirs_text.rstrip('\r\n') + '\n\n' + ours_tail + '\n'
+
+    # Case 3: both sides made non-overlapping mid-file edits (e.g. inbound links on different
+    # existing guides) AND zero, one, or both sides appended disjoint new slugs at the tail.
+    o_split = _split_body_and_tail(base_norm, ours_text)
+    t_split = _split_body_and_tail(base_norm, theirs_text)
+    if o_split is not None and t_split is not None:
+        ours_body, ours_tail = o_split
+        theirs_body, theirs_tail = t_split
+        ours_slugs = _validate_append_tail(ours_tail, 'ours')
+        theirs_slugs = _validate_append_tail(theirs_tail, 'theirs')
+        overlap = sorted(ours_slugs & theirs_slugs)
+        if overlap:
+            raise ValueError('Conflicting duplicate appended slug(s): ' + ', '.join(overlap))
+        if sorted(ours_slugs & set(_extract_slugs(theirs_body))) or sorted(theirs_slugs & set(_extract_slugs(ours_body))):
+            raise ValueError('Appended slug(s) already exist in body')
+        with tempfile.TemporaryDirectory() as td:
+            td_p = Path(td)
+            p_o, p_b, p_t = td_p / 'o.ts', td_p / 'b.ts', td_p / 't.ts'
+            p_o.write_text(ours_body + '\n', encoding='utf-8')
+            p_b.write_text(base_norm + '\n', encoding='utf-8')
+            p_t.write_text(theirs_body + '\n', encoding='utf-8')
+            res = subprocess.run(['git', 'merge-file', '-p', str(p_o), str(p_b), str(p_t)], capture_output=True, text=True)
+        if res.returncode == 0:
+            parts = [res.stdout.rstrip('\r\n')]
+            if ours_tail:
+                parts.append(ours_tail)
+            if theirs_tail:
+                parts.append(theirs_tail)
+            return '\n\n'.join(parts) + '\n'
 
     raise ValueError('Both sides modified non-append regions of TS data file; manual merge required')
 

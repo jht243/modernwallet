@@ -363,6 +363,17 @@ MERGE_JSON_PAGES_PY
   return 0
 }
 
+# Fetch origin/main resiliently even inside partial/blobless or shallow cloud clones
+# where git's connectivity walk can fail once on a missing promisor blob.
+fetch_main() {
+  git fetch origin main && return 0
+  echo "[deploy] WARN: plain 'git fetch origin main' failed; retrying with --refetch / --unshallow..." >&2
+  git -c fetch.fsckObjects=false -c transfer.fsckObjects=false -c fetch.negotiationAlgorithm=noop fetch --no-auto-gc --refetch origin main && return 0
+  git -c fetch.fsckObjects=false fetch --filter=blob:none origin main && return 0
+  git fetch --unshallow origin main && return 0
+  return 1
+}
+
 # Remove untracked content-addressed review evidence files ONLY when target_ref
 # already tracks the exact same path with the exact same Git blob OID (concurrent
 # runs freezing the same shared policy/source artifact). Never touch differing files.
@@ -453,7 +464,7 @@ case "$cmd" in
       # Fallback when the caller never marked: use the merge-base with main. This is exactly
       # correct for a cleanly-forked branch. It is NOT sufficient to strip foreign commits on
       # a shared branch (that is what `mark` is for) — so warn loudly.
-      git fetch origin main >/dev/null 2>&1 || { echo '[deploy] current main unavailable; NOT pushed.' >&2; exit 3; }
+      fetch_main >/dev/null 2>&1 || { echo '[deploy] current main unavailable; NOT pushed.' >&2; exit 3; }
       run_base="$(git merge-base HEAD origin/main 2>/dev/null || true)"
       echo "[deploy] WARN: no RUN_BASE mark found; falling back to merge-base ${run_base:-<none>}." >&2
       echo "[deploy] WARN: call 'deploy-run-to-main.sh mark' at run start to guarantee only this run ships." >&2
@@ -464,7 +475,7 @@ case "$cmd" in
       exit 3
     fi
 
-    git fetch origin main || { echo '[deploy] current main unavailable; NOT pushed.' >&2; exit 3; }
+    fetch_main || { echo '[deploy] current main unavailable; NOT pushed.' >&2; exit 3; }
     if ! git merge-base --is-ancestor "$run_base" HEAD; then
       echo '[deploy] recorded run base is not an ancestor of this run; NOT pushed.' >&2
       exit 3
@@ -640,7 +651,7 @@ case "$cmd" in
         exit 0
       fi
       echo "[deploy] push rejected (base moved); rebasing + retrying (${attempt}/3)." >&2
-      git fetch origin main || { echo '[deploy] retry could not refresh main; NOT pushed.' >&2; exit 3; }
+      fetch_main || { echo '[deploy] retry could not refresh main; NOT pushed.' >&2; exit 3; }
       if git merge-base --is-ancestor origin/main HEAD 2>/dev/null && [ -f .github/workflows/land.yml ]; then
         echo "[deploy] direct push to main refused while base is current; falling back to claude/land/* workflow." >&2
         target="land"

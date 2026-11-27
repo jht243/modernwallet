@@ -90,7 +90,8 @@ class Store:
         if listing.returncode:
             raise ControlError('Durable control store unavailable; do not duplicate work')
         revision = listing.stdout.split()[0].decode()
-        if git(self.root, 'cat-file', '-e', revision + '^{commit}', check=False).returncode:
+        no_lazy = dict(os.environ, GIT_NO_LAZY_FETCH='1')
+        if git(self.root, 'cat-file', '-e', revision + '^{commit}', env=no_lazy, check=False).returncode:
             fetched = git(self.root, 'fetch', '--filter=blob:none', '--quiet', '--no-tags', '--no-write-fetch-head',
                           'origin', revision, check=False, timeout=90)
             if fetched.returncode:

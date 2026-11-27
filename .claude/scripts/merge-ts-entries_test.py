@@ -49,6 +49,20 @@ class MergeTsEntriesTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Unbalanced'):
             m.merge(BASE, ours, theirs)
 
+    def test_merges_disjoint_midfile_inbound_links_plus_disjoint_tail_appends(self):
+        two_base = (
+            'const _entries: any[] = [];\n'
+            '_entries.push({\n  "slug": "guide-one",\n  "metaTitle": "One"\n});\n\n'
+            '_entries.push({\n  "slug": "guide-two",\n  "metaTitle": "Two"\n});\n'
+        )
+        ours = two_base.replace('"One"', '"One + Link A"') + '\n_entries.push({\n  "slug": "new-a",\n  "metaTitle": "A"\n});\n'
+        theirs = two_base.replace('"Two"', '"Two + Link B"') + '\n_entries.push({\n  "slug": "new-b",\n  "metaTitle": "B"\n});\n'
+        merged = m.merge(two_base, ours, theirs)
+        self.assertIn('"One + Link A"', merged)
+        self.assertIn('"Two + Link B"', merged)
+        self.assertIn('"slug": "new-a"', merged)
+        self.assertIn('"slug": "new-b"', merged)
+
 
 if __name__ == '__main__':
     unittest.main()
