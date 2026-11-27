@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "preparationMode": "full",
+  "jobId": "xtrends-2026-11-27",
+  "author": "mindmap-build",
+  "date": "2026-11-27",
+  "source": "reports/mindmap-pass/2026-11-27-xtrends-run/brief.txt",
+  "interpretedBrief": "Daily X trend scout for The Modern Wallet (US personal-finance site): three UK-centric bullets (DWP cyber incident and benefit payments, Ofgem 26% energy price cap, Lloyds/Halifax/Bank of Scotland payday outage). Each was verified against primary sources, checked for US-reader fit and duplication. Result: no page or enrichment is proposed (no-addition).",
+  "chartPath": "reports/mindmap-pass/2026-11-27-xtrends.md",
+  "request": {
+    "source": {
+      "path": "reports/mindmap-pass/2026-11-27-xtrends-run/brief.txt",
+      "sha256": "60ca73aeddf3c016d7c587a1fb01318ba57f2d3c28d274c8d08ff66ce5bb4238"
+    },
+    "goal": "Turn the scout's fresh trends into pages or enrichments only where they fit US readers, are primary-source supported and are not duplicates; otherwise record a justified no-addition outcome.",
+    "requirements": []
+  },
+  "actions": [],
+  "emergingClusters": [
+    "No emerging clusters detected this run."
+  ],
+  "exclusions": [
+    "Candidate 1 DWP cyber incident: dropped, UK benefits outside US readership, no UK content on site, 'no sanctions' and bank-detail claims absent from the gov.uk primary notice (research/sources/dwp.txt).",
+    "Candidate 2 Ofgem price cap +26%: dropped, UK energy regulation with GBP figures a US reader cannot act on; Ofgem figures verified (research/sources/ofgem.txt) but no site home or US intent.",
+    "Candidate 3 Lloyds/Halifax/BoS outage: dropped as covered/no-addition, reader decision already answered for US readers by /guides/chase-outage-fee-reversal; The Register confirms only access problems and an apology, Bloomberg unreadable (403), duplicate payments/fees/Ombudsman not verified from primary sources."
+  ],
+  "preparation": {
+    "status": "PASS",
+    "readiness": {
+      "path": "reports/mindmap-pass/2026-11-27-xtrends-run/readiness.md",
+      "sha256": "931e358890e918616c847872afee4934cc5fee256c9623cb3550b8d5f5774636"
+    }
+  },
+  "evidenceFiles": [
+    {
+      "path": "reports/mindmap-pass/2026-11-27-xtrends-run/brief.txt",
+      "sha256": "60ca73aeddf3c016d7c587a1fb01318ba57f2d3c28d274c8d08ff66ce5bb4238"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-27-xtrends-run/research/coverage-lookup.txt",
+      "sha256": "a4eafe83a774060f8bd1d56be99d49558ad60dbd4359d6a1c77f9c507975f5d7"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-27-xtrends-run/research/sources/dwp.txt",
+      "sha256": "5c235f41f2ee90c35c0882c368110a5c62b855dd2ed374c06cfc75a93b77fb27"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-27-xtrends-run/research/sources/ofgem.txt",
+      "sha256": "84b292da95b589e9a37edd7aa451a064b706259c371a131c8ff53003d3c1453f"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-27-xtrends-run/research/sources/register-lloyds.txt",
+      "sha256": "f3abf2fb0a2262f0abd396da7092cc6dab5a85f869b7100e4b2f489f949b58c0"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-27-xtrends-run/research/sources/bloomberg-lloyds.txt",
+      "sha256": "c68804900461d58a1e936efeec2c05d5b8a8d2b059d3cbaf2d6231a84d75f818"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-27-xtrends-run/research/keywords/ac-dwp-cyber-incident.csv",
+      "sha256": "47e93570012658d66d17773389c1dd0dbf7d9b134a2f70499e014694c9f9b0d7"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-27-xtrends-run/research/keywords/ac-energy-price-cap-january-2027.csv",
+      "sha256": "20e9847b7b07b903b088884e7665263eb213d915133d37422ec5971b348c8c3d"
+    },
+    {
+      "path": "reports/mindmap-pass/2026-11-27-xtrends-run/research/keywords/ac-lloyds-app-down.csv",
+      "sha256": "634272edf0d0cd9e4fea102b5719f8e8abcd3515847a01a72d82362220b76d4c"
+    }
+  ],
+  "executionPlan": [
+    {
+      "phase": 1,
+      "action": "Record advisory cannibalization check (no destructive merges)."
+    },
+    {
+      "phase": 2,
+      "action": "Apply any approved metadata updates (or N/A when none in chart)."
+    },
+    {
+      "phase": 3,
+      "action": "Generate net-new approved routes with verified evidence packets."
+    },
+    {
+      "phase": 4,
+      "action": "Run independent Phase 4 rendered-page audit on all changed routes."
+    },
+    {
+      "phase": 5,
+      "action": "Apply any approved existing-page body enrichments (or N/A when none)."
+    },
+    {
+      "phase": 6,
+      "action": "Add approved inbound and outbound internal links across inspected routes."
+    },
+    {
+      "phase": 7,
+      "action": "Update sitemaps and prepare IndexNow URL list without pre-deploy ping."
+    },
+    {
+      "phase": 8,
+      "action": "Compile Phase 8 execution and cluster summary."
+    },
+    {
+      "phase": 9,
+      "action": "Commit, deploy to main, verify HTTP 200 live renders, and submit IndexNow."
+    }
+  ],
+  "publicationScope": {
+    "commit": false,
+    "push": false,
+    "liveVerification": false,
+    "indexNow": false
+  },
+  "newPageBriefs": []
+}

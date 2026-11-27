@@ -1,0 +1,56 @@
+coverage_lookup: 3 candidate(s) vs 897 repo pages / 918 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1340 past-chart lines
+
+### /guides/dwp-cyber-incident-benefit-payments  — row - · create new content
+keyword: dwp cyber incident universal credit payments
+reader question (new page intent): will my UK benefits still be paid
+lookup terms: dwp cyber incident benefit payment universal credit   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-21-tool-usage.md [table] | 14 | Lens 2 (next tool after net-worth and auto-loan — the homeowner tallying debts and the car buyer whose lender checks the ratio). `debt to income ratio calculator` **22,200/mo KD 57** (dataforseo; Autocomplete ques
+- 2026-10-25.md [table] | 2 | **Lens 1 (direct intent — brief item 1, house buying).** `home buying checklist` **1,600/KD 5** (primary), `home buying process checklist` 1,000/KD 7, `what to look for when buying a house` 1,700/KD 0 (secondary on
+- 2026-10-28-autocomplete.md [table] | 1 | Lens 1 (seed "rent vs buy calculator", 158 completions). `rent vs buy calculator` 14,800/mo KD 49 CPC $1.06 and `rent or buy calculator` 14,800/mo KD 49 (DataForSEO measured, US, 2026-10-28); `rent vs buy calculato
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent (ENRICH requested by brief). lookup: /budget/aca-subsidy-calculator exact route exists, title 'ACA Subsidy Calculator for 2027 Marketplace Premiums'; gap: 0 mentions of bronze, enhanced subsidies, 
+- 2026-11-25-autocomplete.md [table] | lens 1/2: 'debt payoff calculator' cluster, 181 completions + 65 template/planner variants (avalanche, snowball, multiple loans/cards, extra payments, biweekly, lump sum, how long, payoff date). Source: estimate (autoc
+- 2026-11-25-tool-usage.md [table] | lookup: no same-intent page; nearest /social-security-taxable-benefits-calculator/ (how much of benefits is taxable, existing tool, no W-4V step; its 2026-11-04 persona flagged 'no withholding next step') and /guides/s
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/ofgem-price-cap-january-2027  — row - · create new content
+keyword: energy price cap january 2027 fix or direct debit
+reader question (new page intent): should I fix my energy tariff
+lookup terms: ofgem cap january 2027 energy fix direct debit   format cues: pricing
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-25-tool-usage.md [table] | Stale 2027 Part B sentence on a live guide (verified by grep 2026-11-25): slug 2027-ssdi-cola: body ~L4444 and FAQ ~L4496 say the 2027 Part B premium 'has not been announced'. Contradicts the CMS Nov 17 2026 announceme
+- 2026-11-25-tool-usage.md [table] | Stale 2027 Part B sentence on a live guide (verified by grep 2026-11-25): slug ssi-increase-2027: ~L4554 'The 2027 Medicare Part B premium has not been announced'. Contradicts the CMS Nov 17 2026 announcement ($209.40)
+- 2026-11-25-tool-usage.md [table] | Stale 2027 Part B sentence on a live guide (verified by grep 2026-11-25): slug social-security-changes-2027: ~L4632 'The 2027 Medicare Part B premium has not been announced'. Contradicts the CMS Nov 17 2026 announcemen
+- 2026-11-25-tool-usage.md [table] | lookup: /compare/sep-ira-vs-solo-401k - reader intent: choose between two plans, not compute own maximum; /guides/401k-contribution-limits-2026 and /guides/ira-contribution-limits-2026 - generic limits for employees. N
+- 2026-11-25-xtrends.md [table] | lookup: no match. Site has only /compare/aca-vs-medicaid/ and /compare/medicare-vs-medicaid/ (different intent). Demand inferred - fresh news trend, no tool volume. | Create /guides/medicaid-work-requirements-2027-hold
+- 2026-11-25-xtrends.md [table] | lookup: no match; no loan-limit page on site (closest: /mortgage/home-affordability-calculator/, /mortgage/down-payment-calculator/, /guides/types-of-mortgage-loans/ - different intent). Demand inferred - fresh news tr
+Commits naming the topic: none
+Same run overlap: none
+
+### /guides/lloyds-halifax-outage-failed-payments  — row - · create new content
+keyword: lloyds halifax outage failed duplicate payments fees
+reader question (new page intent): what to do if bank app outage caused failed payments
+lookup terms: lloyd halifax outage failed payment duplicate fee   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-10-21-tool-usage.md [table] | 16 | Lens 2 → RECLASSIFIED by the duplicate-suppression gate (was create /per-diem-interest-calculator/). The interest-per-day card holder paying off on a date asks the payoff amount. `per diem interest calculator` **4
+- 2026-10-21-tool-usage.md [table] | Car payment with tax and fees | auto loan calculator with tax (2,900); car payment calculator with tax and fees (720) | intent mismatch — the auto calculators have no tax/fee inputs | partial | update existing body tex
+- 2026-11-04-tool-usage.md [table] | 14 | Lens 1 (queued spec from tool-usage 2026-10-14 and 2026-10-21, seed tool mortgage /mortgage/payoff-calculator/). 'biweekly mortgage calculator' 1,900/mo KD 29, 'bi weekly mortgage calculator' 720, 'biweekly mortga
+- 2026-11-10-competitor-18b9b55e45cc.md [exclusions] - NerdWallet fee-only-vs-fee-based and registered-investment-advisor: skipped-duplicate against pages named in candidateDispositions (independently confirmed).
+- 2026-11-17-xtrends.md [table] | Lens 1 direct intent plus news-driven (Chase outage Nov 16 2026; NBC News and Fortune). lookup: no match. Autocomplete bands (estimate, NOT measured): chase late fee refund 500-5000/mo, chase overdraft fee refund 500-5
+- 2026-11-26-xtrends.md [table] | lookup: no match (site has no insurance-company pages; coverage lookup found no home for 'allstate outage'). Lens 1 direct intent: 'allstate outage' 20/mo, 'allstate down' 30/mo (semrush measured), 'allstate payment ou
+Commits naming the topic: none
+Same run overlap: none
+

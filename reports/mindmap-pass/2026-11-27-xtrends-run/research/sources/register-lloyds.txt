@@ -1,0 +1,105 @@
+URL: https://www.theregister.com/applications/2026/11/27/lloyds-and-bank-of-scotland-apps-fall-over-on-payday/5312566
+Retrieved (UTC): 2026-11-27T16:50:47.296466Z
+Note: verbatim text extracted from fetched HTML (nav/script stripped)
+
+Lloyds and Bank of Scotland apps fall over on payday
+ Jump to main content
+ REG AD
+ applications
+ Lloyds and Bank of Scotland apps fall over on payday
+ Black horse down (again)
+ Jude Karabus
+ Jude
+ Karabus
+ EMEA DEPUTY EDITOR
+ Published
+ fri 27 Nov 2026 // 12:01 UTC
+ Make us preferred on Google
+ Lloyds Bank and Bank of Scotland customers reported problems accessing online banking and transferring money on Friday morning.
+Reports on Downdetector began rising around 1000 UTC. Lloyds also acknowledged problems on its service status page. A reader who supplied the screenshot below noted the particularly awkward timing: the last Friday of the month is payday for many workers.
+ reader contributed
+One customer tweeted that she had "no food at home and cannot shop because I cannot transfer funds from my secondary Lloyds account to my main one. At this point I'm just going to withdraw every penny the moment I'm paid, so much for Internet banking. Never had this years ago."
+ REG AD
+Bank of Scotland, another Lloyds Banking Group brand, reported similar problems on its service status page: "We're aware some customers are having issues with our app and online banking at the moment. We're sorry about this and are working hard to fix it."
+ REG AD
+Earlier this year, a botched overnight software update at Lloyds Banking Group potentially exposed other customers' transaction information to almost 448,000 app users. In a letter to Parliament's Treasury Committee, consumer relationships CEO Jasjyot Singh blamed a defect in the API handling transaction data. The incident affected Lloyds, Halifax, and Bank of Scotland, and prompted goodwill payments to thousands of customers.
+Lloyds Banking Group said late last year that it had more than 21 million mobile app users and over 23 million digitally active customers. 
+A spokesperson for Lloyds Banking Group told The Register: "We're aware some customers are having difficulty accessing the app this morning. We’re sorry for the inconvenience and are working to get things back to normal as quickly as possible." ®
+ banking
+ united kingdom
+ applications
+ Make us preferred on Google
+ REG AD
+ UK government rejects national consultation on AI datacenters
+ Ministers point to project-level environmental checks as petition passes 39,000 signatures
+ Lloyds and Bank of Scotland apps fall over on payday
+ Black horse down (again)
+ The future of datacenters depends on behind-the-meter energy generation
+ PARTNER CONTENT: PARTNER CONTENT: Hyperscalers and colos have distinct power strategies, but for both, securing flexible, fast power relies on self-generated solutions
+ Europe's AI sovereignty push: Lots of cloud, not much silver lining 
+ Datacenter spending is booming but the models, the chips, and the clout all live in US and Asia
+ AWS got hit by an outage too. Here's why you didn't hear about it
+ If a service falls in the forest and nobody hears it...
+ AI boom leaves network operators waiting up to 18 months for kit
+ Optical equipment prices up around 50% this year as telcos compete with datacenters for components, says RETN
+ TOP STORIES
+ SC26
+ 45°C inlets just killed the chiller. Most people haven't noticed yet
+ Bluetooth brakes are broken as researchers find anyone can control them
+ Government may apply TV license fee to streaming services to fund the BBC
+ Airbus may be leaving Microsoft Office, but for its 36,000 defense staff, Office isn't leaving them
+ AWS got hit by an outage too. Here's why you didn't hear about it
+ ON CALL 
+ Support tech fixed malware by charging client less for their services
+ AI
+ UK government rejects national consultation on AI datacenters
+ Ministers point to project-level environmental checks as petition passes 39,000 signatures
+ 2 hours ago
+ Huawei and crew tout homegrown EDA tools to overcome China’s fab deficit
+ Chip design software leans heavily into 3D packaging and multi-node assemblies
+ 1 day ago
+ Dell and HPE both say they’ve become ‘different companies’
+ Still slinging hardware – now with added AI and attendant risks or opportunities
+ 2 days ago
+ AI godfather Yann LeCun torches Anthropic CEO over AI gatekeeping
+ ‘It’s like the Ottoman Empire banning the printing press for Arabic so they would keep in control of the dogma,’ he says
+ 2 days ago
+ US blacklists Megaspeed hours after Jensen Huang returns to Nvidia
+ Chip boss gets his old job back, but Washington isn't done investigating one of his former flame's businesses
+ 3 days ago
+ Infosec
+ British social security system techies yank services offline following 'cyber incident'
+ Pensioners assured their funds will arrive as normal 
+ 5 hours ago
+ Free e-government platform that serves two billion people in ten countries has critical SQL injection bug
+ India’s Digital Infrastructure for Governance Impact and Transformation tool can leak data
+ 14 hours ago
+ Microsoft: Hackers in China, N Korea using ARTEX AI tool to break into global tech systems
+ Agentic offensive framework automates familiar attack techniques, with weak defenses potentially breached in minutes
+ 20 hours ago
+ UK privacy watchdog faces probe into its workplace culture
+ Independent review will examine leadership, accountability, and how staff concerns were handled before former commissioner John Edwards resigned
+ 23 hours ago
+ 'Significant number of customer records' pwned in Flight Centre Travel Group breach
+ The latest attack in spate of similar incidents targeting booking systems globally
+ 1 day ago
+ FOSS
+ Indie web browser Ladybird enters alpha testing
+ Upstart engine gets downloadable macOS and Linux builds, but no security guarantees
+ 21 hours ago
+ 9/UX brings a classic Mac feel to 9front
+ A spatial classic Finder in the style of A/UX
+ 3 days ago
+ Ubuntu Core Desktop targets 28.04 debut, with default status in its sights
+ Canonical's stretch goal is to make the immutable OS standard in 30.04 – without retiring the traditional distro
+ 7 days ago
+ Inspiring FOSS project Crosspoint Reader has lessons about tech, communities, and LLMs
+ Cheap tiny e-readers and the perils of LLM-generated drive-by pull requests – plus much more
+ 9 days ago
+ Omaxian takes the Omarchy look down a different Linux backstreet
+ Devuan-based distro swaps Wayland for XLibre and i3, with Xfce waiting if the tiling gets tiresome
+ 11 days ago
+ Microsoft’s Azure Linux dons Fedora to dress itself up for mainstream workloads
+ Version 4.0 of Redmond’s cloudy OS is free to use in its cloud. Repeat. Free to use
+ 11 days ago
+ ✕

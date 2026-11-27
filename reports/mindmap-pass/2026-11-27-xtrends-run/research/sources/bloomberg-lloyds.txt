@@ -1,0 +1,3 @@
+URL: https://www.bloomberg.com/news/articles/2026-11-27/lloyds-says-outage-on-banking-app-website-affecting-customers
+Retrieved (UTC): 2026-11-27T16:50:47Z
+HTTP 403 (paywall/bot gate). NOT READABLE; not used as a source for any claim.
