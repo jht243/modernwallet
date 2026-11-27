@@ -140,7 +140,7 @@ def main(argv=None) -> int:
         pk = jload(d / "packet.json", {}) or {}
         plan = jload(d / "plan.json", {}) or {}
         au = jload(d / "audit.json", {}) or {}
-        title = re.sub(r"\s*\|\s*Layer3\s*Labs\s*$", "", pk.get("title") or slug, flags=re.I)
+        title = re.sub(r"\s*\|\s*[^|]{2,35}$", "", pk.get("title") or slug).strip() or (pk.get("title") or slug)
         url = site_url(q["path"])
         cs = commits.get(q["path"], [])
         act = plan.get("action")

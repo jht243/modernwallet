@@ -412,7 +412,8 @@ class PgRows(Backend):
         p = cfg.get("pg", {})
         self.server_file = p.get("server_file", "server.py")
         self.table = p.get("table", "landing_pages")
-        if not re.fullmatch(r"[a-z_][a-z0-9_]*", self.table):
+        # optional schema prefix: shared-hub sites keep their tables in their own schema (vet_tools.landing_pages)
+        if not re.fullmatch(r"(?:[a-z_][a-z0-9_]*\.)?[a-z_][a-z0-9_]*", self.table):
             raise ValueError(f"bad table name {self.table!r}")
         self.snap_dir = p.get("snapshot_dir", "reports/rank-drop/pg-snapshots")
         self.script_dir = p.get("script_dir", "scripts")

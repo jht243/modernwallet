@@ -301,8 +301,9 @@ def detect(gsc, site, ga4, prop, end: date, pick: int, B):
     cands.sort(key=lambda c: -c["gain"])
 
     cool = in_cooldown()
-    pages = []
-    n_full = n_top = 0
+    pages, handoff = [], []
+    n_full = n_top = n_handoff = 0
+    stats["engine_unsupported"] = 0
     for c in cands:
         if n_full >= pick and n_top >= TOP_FACT_PICK:
             break
@@ -312,9 +313,25 @@ def detect(gsc, site, ga4, prop, end: date, pick: int, B):
             stats["cooldown"] += 1
             skipped.append({"path": c["path"], "why": f"cooldown ({COOLDOWN_DAYS} days)"})
             continue
-        why = recently_edited(c["path"], B)        # also "page source not found" = not a content page
+        why = recently_edited(c["path"], B)        # also "page source not found" = engine can't locate it
         if why == "page source not found":
-            stats["nav_or_hub"] += 1
+            # A one-segment path, or a path other pages live under, is a hub/index page. Anything else is a
+            # real content page this backend can't edit (2026-11-01 psych_report: /tools/legal-status-by-
+            # state/<state> and DB-row guides like /guides/is-dmt-legal-in-us were counted as "nav_or_hub"
+            # and silently dropped). Those are handed to /mindmap-pass instead, capped at the daily pick.
+            prefix = c["path"].rstrip("/") + "/"
+            hub = c["path"].strip("/").count("/") == 0 or any(p.startswith(prefix) for p in best_url)
+            if hub or n_handoff >= pick:
+                stats["nav_or_hub"] += 1
+                continue
+            n_handoff += 1
+            stats["engine_unsupported"] += 1
+            handoff.append({"path": c["path"], "url": c["url"], "lane": c["lane"], "gain": c["gain"],
+                            "main_query": c["main"]["keys"][1], "main_pos": round(c["main"]["position"], 1),
+                            "impressions_90d": c["row"]["impressions"], "clicks_90d": c["row"]["clicks"],
+                            "ctr": round(c["ctr"], 5), "band_median_ctr": round(c["med"], 5),
+                            "queries": [q["keys"][1] for q in c["useful"][:10]],
+                            "why": "engine can't edit this page type → /mindmap-pass"})
             continue
         if why:
             stats["recently_edited"] += 1
@@ -362,9 +379,10 @@ def detect(gsc, site, ga4, prop, end: date, pick: int, B):
     stats["top_pages_facts_only"] = n_top
     W = {"w90": [w90[0].isoformat(), w90[1].isoformat()], "w28": [w28[0].isoformat(), w28[1].isoformat()],
          "age_window": [wold[0].isoformat(), wold[1].isoformat()]}
+    taken = {p["path"] for p in pages} | {h["path"] for h in handoff}
     backlog = [{"path": c["path"], "lane": c["lane"], "gain": c["gain"]} for c in cands
-               if c["path"] not in {p["path"] for p in pages}][:40]
-    return W, pages, skipped, backlog, {str(BANDS[i]): round(m, 5) for i, m in medians.items()}, stats
+               if c["path"] not in taken][:40]
+    return W, pages, skipped, backlog, {str(BANDS[i]): round(m, 5) for i, m in medians.items()}, stats, handoff
 
 
 def write_md(path: Path, rep: dict):
@@ -384,6 +402,10 @@ def write_md(path: Path, rep: dict):
         L.append(f"| {i} | `{p['path']}` | {p['lane']} | “{p['main_query']}” (#{p['main_pos']}, {p['main_impressions_90d']}) | "
                  f"{p['impressions_90d']} | {p['clicks_90d']} | {p['ctr']:.2%} vs {p['band_median_ctr']:.2%} | "
                  f"{'yes' if p['ai_cited'] else 'no'} | +{p['expected_gain_90d']} clicks/90d |")
+    L += ["", "## Handed to /mindmap-pass (engine can't edit this page type)", ""]
+    L += [f"- `{h['path']}` {h['lane']} — “{h['main_query']}” (#{h['main_pos']}), {h['impressions_90d']} impr / "
+          f"{h['clicks_90d']} clicks 90d, CTR {h['ctr']:.2%} vs {h['band_median_ctr']:.2%}, +{h['gain']} clicks/90d"
+          for h in rep.get("handoff", [])] or ["None"]
     L += ["", "## Skipped (cooldown / recently edited)", ""]
     L += [f"- `{s['path']}` — {s['why']}" for s in rep["skipped"]] or ["None"]
     L += ["", f"## Backlog (next {len(rep['backlog'])} by expected gain)", ""]
@@ -419,10 +441,24 @@ def main(argv=None) -> int:
         ga4 = session_for(sa, GA4_SCOPE)
         check_gsc_access(gsc, site)
         check_ga4_access(ga4, cfg["ga4_property"])
-        end = gsc_freshest_final_day(gsc, site)
         ongoing, recent = google_updates(gsc)
-        W, pages, skipped, backlog, medians, stats = detect(gsc, site, ga4, cfg["ga4_property"], end,
-                                                           a.pick, backend())
+        try:
+            end = gsc_freshest_final_day(gsc, site)
+            W, pages, skipped, backlog, medians, stats, handoff = detect(gsc, site, ga4, cfg["ga4_property"], end,
+                                                                         a.pick, backend())
+        except HardFail as empty_err:
+            if empty_err.code != 14:
+                raise
+            # Authenticated GSC + GA4 property is live, but this young domain has 0 GSC impressions yet -> clean 0-page run
+            end = date.today() - timedelta(days=3)
+            W = {
+                "w90": [(end - timedelta(days=89)).isoformat(), end.isoformat()],
+                "w28": [(end - timedelta(days=27)).isoformat(), end.isoformat()],
+                "age_window": [(end - timedelta(days=119)).isoformat(), (end - timedelta(days=MIN_AGE_DAYS)).isoformat()],
+            }
+            pages, skipped, backlog, handoff = [], [], [], []
+            medians = {str(BANDS[i]): 0.0 for i in range(len(BANDS))}
+            stats = {"pages_90d": 0, "candidates": 0, "picked": 0, "engine_unsupported": 0, "note": str(empty_err)}
     except HardFail as e:
         fail_report(out, site, e.code, str(e))
         print(f"HARD FAIL ({e.code}): {e}", file=sys.stderr)
@@ -437,6 +473,7 @@ def main(argv=None) -> int:
            "google_update_ongoing": [u["name"] for u in ongoing],
            "windows": W, "google_updates": {"ongoing": ongoing, "recent_60d": recent},
            "band_median_ctr": medians, "pages": pages, "skipped": skipped, "backlog": backlog,
+           "handoff": handoff,
            "demand": [], "unstable": [], "stats": stats,
            "provenance": {"sources": SOURCES, "gsc_property": site, "ga4_property": cfg["ga4_property"],
                           "service_account": sa.get("client_email", "?"),
@@ -446,7 +483,8 @@ def main(argv=None) -> int:
     out.parent.mkdir(parents=True, exist_ok=True)
     Path(str(out) + ".json").write_text(json.dumps(rep, indent=2))
     write_md(Path(str(out) + ".md"), rep)
-    print(f"OK mode={rep['mode']} candidates={stats['candidates']} picked={len(pages)} → {out}.md")
+    print(f"OK mode={rep['mode']} candidates={stats['candidates']} picked={len(pages)} "
+          f"handoff={len(handoff)} → {out}.md")
     return 0
 
 

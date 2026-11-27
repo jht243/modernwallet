@@ -37,7 +37,7 @@ def tokens(path: str) -> set[str]:
 
 
 def card(page, path: str) -> dict:
-    title = re.sub(r"\s*[|·–-]\s*Layer\s*3\s*Labs\s*$", "", page.title or "", flags=re.I).strip()
+    title = re.sub(r"\s*[|·–-]\s*[^|·–-]{2,35}$", "", page.title or "").strip() or (page.title or "").strip()
     desc = (page.extra.get("description") or "").strip()
     cat = "Comparison" if path.startswith("/comparisons/") else "Guide" if path.startswith("/guides/") else "Resource"
     return {"title": title, "description": desc, "href": path, "category": cat}

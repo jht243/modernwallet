@@ -39,12 +39,18 @@ For the page's entity, check: does its `X-vs-Y` set cover the counterparts autoc
 - **If `comparison-content-creator` is present:** follow its `phase-1b-coverage-check.md` dedup rules and never rebuild a comparison its history (`reports/comparison-content-creator/`) already shipped, PARTIAL-matched, or dropped.
 - **Else:** treat vs/alternatives/worth-it as ordinary new-page candidates — Phase 3's slug/git/ledger layers still catch existing ones.
 
-## Lane C — Body / FAQ enrichment
-From the page's autocomplete sub-intents + GSC `top_queries`: which real questions/sub-intents are NOT answered on the page? Score coverage honestly — a heading that name-drops the topic without answering it is NOT covered.
-- **If `question-gap-pass` is present:** use its `phase-2-questions.md` + `phase-3-coverage.md` method.
-- **Else:** list the real follow-up questions for the page's topic and mark each answered/unanswered on the page directly.
-Each high-value miss → an enrichment candidate (`route + section to append`). If another page on the site already owns that sub-intent as its dedicated topic, the candidate becomes "add internal link", not a new section.
-
+## Lane C — Body / FAQ & Internal-Proof Enrichment
+1. **Unanswered Sub-Intents:** From the page's autocomplete sub-intents + GSC `top_queries`: which real questions/sub-intents are NOT answered on the page? Score coverage honestly — a heading that name-drops the topic without answering it is NOT covered.
+   - **If `question-gap-pass` is present:** use its `phase-2-questions.md` + `phase-3-coverage.md` method.
+   - **Else:** list the real follow-up questions for the page's topic and mark each answered/unanswered on the page directly.
+   Each high-value miss → an enrichment candidate (`route + section to append`). If another page on the site already owns that sub-intent as its dedicated topic, the candidate becomes "add internal link", not a new section.
+2. **Commercial & Product Internal-Proof Check (mandatory on non-YMYL, non-medical sites):**
+   Whenever the audited page is a commercial, software, comparison, alternatives, pricing, cost, or hardware/product review page (skip on physician-reviewed medical/psychedelic sites, legal/sanctions YMYL guides, and biography/about pages), inspect the page and the site's `ReviewerNote` store (`src/utils/reviewerNotes.ts`, `src/data/reviewer-notes.ts`, `lib/reviewer-notes.ts`, or `src/reviewer_notes.py`) for four internal-proof elements:
+   - **Three-scenario breakdown:** Does the page already include a concrete 3-scenario cost, workload, or spec breakdown?
+   - **Break-even counterexample:** Does the page explicitly state when a reader should skip the primary option or pick a cheaper/simpler alternative instead?
+   - **Matching calculator/tool link:** If the site inventory already has a matching calculator, estimator, or interactive tool for this topic, does the page link to it?
+   - **Publisher's Take / Editor's Note:** If `.claude/reviewer-voice-profile.json` exists in this repo, does the site's `ReviewerNote` store already have a route-specific note for this URL?
+   Emit a Lane C enrichment candidate for any audited commercial/product page missing one or more of these elements (combining the 180–250 word 3-scenario breakdown + break-even counterexample + calculator link into one clean section candidate when missing, plus a `reviewer-note` candidate when the Publisher's Take / Editor's Note is missing). On Amazon hardware or `/gear/` pages, never include dollar prices (`$`) — model verified physical specs and operating limits only.
 ## Lane D — Metadata (evidence-gated, strict)
 ONLY for pages whose Phase 1 GSC verdict is `underperforming` with `rewrite_recommended: true` (impressions exist, CTR below threshold). Candidate = title/meta-description rewrite grounded in the page's actual `top_queries`. `performing`, `mixed`, or `no-data` → lane closed for that page, say so in the digest. (This is a correctness gate, not a numeric cap.)
 

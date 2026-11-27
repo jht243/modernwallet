@@ -66,7 +66,12 @@ def main(argv=None) -> int:
     out = Path(a.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     rows = [json.loads(x) for x in LEDGER.read_text().splitlines() if x.strip()] if LEDGER.exists() else []
+    newest_by_page = {}
+    for r in rows:
+        if r.get("status") == "published":
+            newest_by_page[r["page"]] = max(newest_by_page.get(r["page"], ""), r["treated"])
     due = [r for r in rows if r.get("status") == "published" and r.get("baseline")
+           and r["treated"] == newest_by_page.get(r["page"])
            and (date.today() - date.fromisoformat(r["treated"])).days >= 14]
     if not due:
         Path(str(out) + ".json").write_text(json.dumps({"status": "OK", "results": []}))

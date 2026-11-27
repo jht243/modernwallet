@@ -40,7 +40,13 @@ def main(argv=None) -> int:
 
     ledger = Path(a.ledger)
     rows = [json.loads(x) for x in ledger.read_text().splitlines() if x.strip()] if ledger.exists() else []
-    due = [r for r in rows if r.get("status") == "published"
+    newest_by_page = {}
+    for r in rows:
+        if r.get("status") == "published" and r.get("targets") and r.get("treated"):
+            if r["page"] not in newest_by_page or r["treated"] > newest_by_page[r["page"]]:
+                newest_by_page[r["page"]] = r["treated"]
+    due = [r for r in rows if r.get("status") == "published" and r.get("targets")
+           and r.get("treated") == newest_by_page.get(r["page"])
            and (date.today() - date.fromisoformat(r["treated"])).days >= 14]
     if not due:
         Path(str(out) + ".json").write_text(json.dumps({"status": "OK", "results": []}))
