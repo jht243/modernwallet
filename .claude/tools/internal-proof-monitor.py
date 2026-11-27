@@ -184,6 +184,8 @@ FLEET_CALCULATORS: dict[str, list[tuple[str, tuple[str, ...], int]]] = {
         ('/tools/support-savings-calculator', ('agentic-commerce', 'chatgpt-shopping', 'acp-vs-ucp'), 1),
         ('/tools/ai-vendor-evaluation-checklist', ('chatgpt-shopping', 'get-off-wordpress'), 1),
         ('/tools/ai-model-cost-calculator', ('token-pricing', 'api-pricing', 'model-pricing', 'deepseek-pricing', 'claude-pricing', 'gemini-pricing', 'wix-ai-website-builder', 'framer-ai', 'agentic-commerce'), 1),
+        ('/tools/llm-routing-cost-calculator', ('token-pricing', 'api-pricing', 'model-pricing', 'claude-pricing', 'gemini-pricing', 'openrouter-pricing'), 1),
+        ('/tools/ai-plan-model-picker', ('claude-pricing', 'gemini-pricing', 'chatgpt-pricing', 'cursor-pricing', 'perplexity-pricing'), 1),
         ('/tools/voice-agent-cost-calculator', ('voice-agent', 'speechify-pricing', 'tts', 'voice-generator'), 1),
     ],
     'jht243/modernwallet': [
@@ -312,8 +314,9 @@ GENERIC_TAGLINE_RE = re.compile(
 # Substantive proof signals (evaluated AFTER stripping generic boilerplate taglines)
 SUBSTANTIVE_MATH_RE = re.compile(
     r'worked\s+cost\s+example|'
-    r'in\s+our\s+(?:internal\s+)?(?:cost|scenario|workload|token|tco|break-even|margin|vram|bandwidth|two-year|24-month|3-year|annual|orbital(?:\s+cadence)?(?:\s+and\s+power)?|cadence|power|hardware(?:\s+and\s+memory)?|memory|room-sizing)\s+(?:modeling|analysis|calculation|comparison|translation|breakdown)|'
-    r'in\s+our\s+(?:internal\s+modeling|internal\s+calculation|calculated\s+comparison|simple\s+arithmetic\s+from\s+the\s+published\s+figures)|'
+    r'in\s+our\s+(?:internal\s+)?(?:cost|scenario|workload|token|tco|break-even|margin|vram|bandwidth|two-year|24-month|3-year|annual|orbital(?:\s+cadence)?(?:\s+and\s+power)?|cadence|power|hardware(?:\s+and\s+memory)?|memory|room-sizing|governance|provenance|storage|battery)\s+(?:modeling|analysis|calculation|comparison|translation|breakdown|evaluation|matrix)|'
+    r'in\s+our\s+(?:internal\s+modeling|internal\s+calculation|calculated\s+comparison|simple\s+arithmetic\s+from\s+the\s+published\s+figures|scenario\s+modeling)|'
+    r'(?:across|comparing)\s+(?:three|3)\s+(?:standardized\s+|common\s+|production\s+|representative\s+|verified\s+|publishing\s+|hardware\s+|recording\s+|buyer\s+)?(?:workloads?|scenarios?|profiles?|provenance\s+scenarios?)|'
     r'we\s+modeled\b|we\s+calculated\b|calculated\s+(?:directly\s+)?from\s+(?:amd|apple|nvidia|order\s+da|[a-z0-9_-]+\'s)\s+|'
     r'break-even\s+(?:threshold|point|month|apr|rule|step|transfers|hours|balance|counterexample)|breaks\s+even\s+at|'
     r'10-page\s+pdfs?|30-minute\s+meetings?|8-hour\s+workdays?|22\s+workdays|260\s+workdays|'
@@ -355,7 +358,7 @@ COUNTEREXAMPLE_RE = re.compile(
     r'when\s+[^\n.]{2,50}\s+is\s+(?:still\s+)?the\s+better\s+fit|'
     r'who\s+this\s+is\s+not\s+for|'
     r'counterexample|break-even|breaks\s+even|crossover|reverses|flips|'
-    r'cheaper\s+when|wins\s+when|better\s+fit\s+when|walk\s+away\s+if|stay\s+on\s+the\s+free',
+    r'cheaper\s+when|wins\s+when|better\s+fit\s+when|walk\s+away\s+if|stay\s+on\s+|skip\s+[a-z0-9\s-]{2,35}\s+(?:if|when|unless)',
     re.I,
 )
 
@@ -409,8 +412,11 @@ def _has_substantive_internal_proof(text: str) -> tuple[bool, list[str], bool]:
     if SUBSTANTIVE_OPERATOR_RE.search(cleaned):
         proof_types.append('client_and_operator_experience')
     if SUBSTANTIVE_MATH_RE.search(cleaned) or (
-        re.search(r'["\']?(?:scenarioTable|table)["\']?\s*:\s*\{', cleaned)
-        and re.search(r'(?:\$\s*\d|\b\d+(?:\.\d+)?\s*(?:%|credits?|months?|years?|gb\b))', cleaned, re.I)
+        (
+            re.search(r'["\']?(?:scenarioTable|table)["\']?\s*:\s*\{', cleaned)
+            or re.search(r'<table\b[\s\S]*?<tr[\s\S]*?<tr', cleaned, re.I)
+        )
+        and re.search(r'(?:\$\s*\d|\b\d+(?:\.\d+)?\s*(?:%|credits?|months?|years?|days?|hours?|minutes?|recordings?|languages?|gb\b|tb\b|tops\b))', cleaned, re.I)
     ):
         proof_types.append('internal_cost_or_spec_modeling')
     for sm in SURVEY_N_RE.finditer(cleaned):
@@ -643,13 +649,20 @@ def _parse_reviewer_notes_map(raw: str) -> dict[str, str]:
     notes: dict[str, str] = {}
     if not raw:
         return notes
-    for m in re.finditer(r'["\'](/[^"\']+)["\']\s*:\s*\{([^}]+)\}', raw, re.S):
-        rt = '/' + m.group(1).strip('/')
+    str_lit_re = r'(?:"(?:[^"\\]|\\.)*"|\'(?:[^\'\\]|\\.)*\')'
+    for m in re.finditer(rf'({str_lit_re})\s*:\s*\{{([^}}]+)\}}', raw, re.S):
+        key_raw = m.group(1)[1:-1]
+        if not key_raw.startswith('/'):
+            continue
+        rt = '/' + key_raw.strip('/')
         body = m.group(2)
-        nm = re.search(r'["\']?note["\']?\s*:\s*(?:\(\s*)?((?:["\'](?:[^"\'\\]|\\.)*["\']\s*)+)', body, re.S)
+        nm = re.search(rf'["\']?note["\']?\s*:\s*(?:\(\s*)?((?:{str_lit_re}\s*\+?\s*)+)', body, re.S)
         if nm:
-            lits = re.findall(r'["\']((?:[^"\'\\]|\\.)*)["\']', nm.group(1))
-            notes[rt] = ''.join(lits)
+            parts = [
+                (dm.group(1) if dm.group(1) is not None else dm.group(2))
+                for dm in re.finditer(r'"((?:[^"\\]|\\.)*)"|\'((?:[^\'\\]|\\.)*)\'', nm.group(1))
+            ]
+            notes[rt] = ''.join(parts)
     return notes
 
 
@@ -728,12 +741,19 @@ def _resolve_page_text(full_repo: str, route: str, routine: str = '', fallback_t
                     if push_idx != -1:
                         return raw[push_idx:end_idx]
                 for pat in (
+                    rf'(?m)^[ \t]{{1,4}}["\']?slug["\']?\s*:\s*["\'](?:[^"\']*/)?{re.escape(slug)}/?["\']',
                     rf'["\']?slug["\']?\s*:\s*["\'](?:[^"\']*/)?{re.escape(slug)}/?["\']',
                     rf'["\']{re.escape(slug)}["\']\s*:\s*\{{',
                 ):
-                    m = re.search(pat, raw)
-                    if m:
-                        return _extract_balanced_block(raw, m.start())
+                    for m in re.finditer(pat, raw):
+                        blk = _extract_balanced_block(raw, m.start())
+                        if len(blk) > 1200 and any(k in blk for k in ('metaTitle', 'sections', 'buyingGuide', 'introText', 'comparisonTable')):
+                            return blk
+
+        # 3b. Check custom Next.js / Astro page files (e.g. `src/pages/ai-model-pricing.tsx`)
+        for page_cand in (f'src/pages/{slug}.tsx', f'src/pages/{slug}.astro', f'pages/{slug}.tsx'):
+            if (local_dir / page_cand).is_file():
+                return (local_dir / page_cand).read_text(encoding='utf-8', errors='ignore')
 
         # 4. Fallback to local mindmap draft/page JSON
         for pattern in (
@@ -844,7 +864,8 @@ def _estimate_analysis_words_and_offset(text: str) -> tuple[int, int, float, boo
 
     # Locate first substantive proof offset percentage in `cleaned`
     first_pos = len(cleaned)
-    for rx in (SUBSTANTIVE_MATH_RE, SUBSTANTIVE_LIVE_OR_TEST_RE, SUBSTANTIVE_OPERATOR_RE):
+    table_rx = re.compile(r'["\']?(?:scenarioTable|table)["\']?\s*:\s*\{|<table\b', re.I)
+    for rx in (SUBSTANTIVE_MATH_RE, SUBSTANTIVE_LIVE_OR_TEST_RE, SUBSTANTIVE_OPERATOR_RE, table_rx):
         m = rx.search(cleaned)
         if m and m.start() < first_pos:
             first_pos = m.start()
@@ -853,9 +874,12 @@ def _estimate_analysis_words_and_offset(text: str) -> tuple[int, int, float, boo
     # Measure original analysis word volume across chunks/paragraphs/sections carrying modeling, testing,
     # operator experience, scenario tables, counterexamples, and decision takeaways/verdicts
     analysis_chunks: list[str] = []
-    # Split by H2 sections first if Markdown headings exist, otherwise by JSON/paragraph blocks
+    # Split by H2 sections first if Markdown headings exist; for JSON/TS section arrays split on `},\n {` so
+    # multi-paragraph proof sections + their structured `table` stay together as one coherent section!
     if re.search(r'(?m)^##\s+', cleaned):
         segments = re.split(r'(?m)(?=^##\s+)', cleaned)
+    elif re.search(r'["\']?(?:sections|buyingGuide)["\']?\s*:\s*\[', cleaned):
+        segments = re.split(r'\}\s*,\s*\{', cleaned)
     else:
         segments = re.split(r'\n\s*\n|(?:\"\s*,\s*\")|(?:\},\s*\{)', cleaned)
     analysis_cue_re = re.compile(
