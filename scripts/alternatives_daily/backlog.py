@@ -520,9 +520,9 @@ def cmd_set(state, args):
         url = fields.get('liveUrl') or row.get('liveUrl')
         if not (isinstance(url, str) and url.startswith('https://')):
             fail('published needs --field liveUrl="https://..." (the verified live URL)')
-        if not (fields.get('commit') or row.get('commit')):
+        if not (fields.get('commit') or row.get('commit')) and row.get('status') != 'published':
             fail('published needs --field commit="<sha>"')
-        if not row.get('audit'):
+        if not (row.get('audit') or row.get('upgradeAudits')) and row.get('status') != 'published':
             fail('published needs the recorded content audit')
     if args.status == 'eligible' and row['status'] == 'pending':
         missing = [k for k in ('vendor', 'product', 'officialUrl', 'targetQuery', 'demand') if not (fields.get(k) or row.get(k))]

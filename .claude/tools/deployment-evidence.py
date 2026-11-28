@@ -59,11 +59,28 @@ def fetch(root):
         raw=response.read(32769);require(len(raw)<=32768,'Unexpected host evidence size')
         return json.loads(raw),urllib.parse.urlunsplit((final.scheme,final.netloc,final.path,'',''))
 
-NON_RUNTIME_PREFIXES=('reports/','docs/','handbooks/','evidence/','lighthouse-reports/','supabase/','.claude/','scripts/','.github/')
+NON_RUNTIME_PREFIXES=('reports/','docs/','handbooks/','evidence/','lighthouse-reports/','supabase/','.claude/','.github/')
+NON_RUNTIME_SCRIPT_PREFIXES=('scripts/paid_placements/','scripts/agency/','scripts/sales_failover/','scripts/publisher_failover/','scripts/hype_radar/','scripts/news_radar/','scripts/alternatives_daily/','scripts/lib/')
 NON_RUNTIME_FILES={'CLAUDE.md','AGENTS.md','README.md','CLIENT-OPS-SYSTEM.md'}
 
-def _is_non_runtime_diff(paths):
-    return bool(paths) and all(p in NON_RUNTIME_FILES or p.startswith(NON_RUNTIME_PREFIXES) for p in paths)
+def _server_imports_scripts(root):
+    srv=Path(root)/'server.py'
+    if not srv.is_file():return False
+    try:txt=srv.read_text(encoding='utf-8',errors='ignore')
+    except OSError:return False
+    return bool(re.search(r'\b(?:from\s+scripts(?:\.[A-Za-z0-9_]+)*\s+import|import\s+scripts\.)',txt))
+
+def _is_non_runtime_path(root,path):
+    if path in NON_RUNTIME_FILES or path.startswith(NON_RUNTIME_PREFIXES):return True
+    if path.startswith('scripts/'):
+        if path.startswith(NON_RUNTIME_SCRIPT_PREFIXES) or path.endswith('_test.py'):return True
+        return not _server_imports_scripts(root)
+    return False
+
+def _is_non_runtime_diff(paths,root=None):
+    if root is None:
+        return bool(paths) and all(p in NON_RUNTIME_FILES or p.startswith(NON_RUNTIME_PREFIXES+('scripts/',)) for p in paths)
+    return bool(paths) and all(_is_non_runtime_path(root,p) for p in paths)
 
 def verify(root,value,url,expected=None):
     c=config(root)
@@ -87,7 +104,7 @@ def verify(root,value,url,expected=None):
             git(root,'merge-base','--is-ancestor',expected,listing[0])
             git(root,'merge-base','--is-ancestor',actual,expected)
             changed=[line.strip() for line in git(root,'diff','--name-only',actual,expected).splitlines() if line.strip()]
-            require(_is_non_runtime_diff(changed),'Host commit precedes expected commit across runtime files')
+            require(_is_non_runtime_diff(changed,root),'Host commit precedes expected commit across runtime files')
             effective_commit=expected
     return dict(status='live' if expected else 'host-verified',commit=effective_commit,hostRuntimeCommit=actual,expectedPublicationCommit=expected,includesPublicationCommit=expected is not None,verifiedAt=dt.datetime.now(dt.timezone.utc).isoformat(),evidenceUrl=url,provider='render',repository=c['repository'],builtAt=value.get('builtAt'),runtimeVerifiedAt=value.get('runtimeVerifiedAt'),source='Canonical HTTPS host reports its actual provider-bound source commit; repository ancestry verified. No owner credential used.')
 

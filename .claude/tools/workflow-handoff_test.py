@@ -519,6 +519,170 @@ class Tests(unittest.TestCase):
         self.assertNotIn('--reuse', res['workerPrepareCommand'])
         self.assertNotIn('old-run-id', res['workerPrepareCommand'])
 
+    def test_auto_seal_publish_resolves_repair_pending_and_partial_r2_routes(self):
+        crp_src = Path(__file__).with_name('content-review-policy.py')
+        ren_src = Path(__file__).with_name('rendered-audit.py')
+        dur_src = Path(__file__).with_name('content-review-durable.py')
+        (self.root / '.claude/tools').mkdir(parents=True, exist_ok=True)
+        (self.root / '.claude/commands').mkdir(parents=True, exist_ok=True)
+        (self.root / '.claude/tools/content-review-policy.py').write_bytes(crp_src.read_bytes())
+        (self.root / '.claude/tools/rendered-audit.py').write_bytes(ren_src.read_bytes())
+        (self.root / '.claude/tools/content-review-durable.py').write_bytes(dur_src.read_bytes())
+        (self.root / '.claude/commands/_content-review-policy.md').write_text('Fixture policy contract.\n')
+        (self.root / '.claude/content-review-policy.json').write_text(json.dumps({
+            'version': 'risk-review-budget-2026-11-08.1',
+            'siteId': 'fixture',
+            'defaultProfile': 'standard',
+            'minimumProfile': 'light',
+            'roundLimits': {'light': 1, 'standard': 2, 'high': 3},
+            'releaseAtAuditLimit': True,
+            'canonicalHosts': ['fixture.example'],
+        }))
+        import subprocess
+        subprocess.run(['git', 'init', '-q', str(self.root)], check=True)
+        spec_c = importlib.util.spec_from_file_location('crp_rp_t', self.root / '.claude/tools/content-review-policy.py')
+        crp = importlib.util.module_from_spec(spec_c); spec_c.loader.exec_module(crp)
+        spec_r = importlib.util.spec_from_file_location('ren_rp_t', self.root / '.claude/tools/rendered-audit.py')
+        ren = importlib.util.module_from_spec(spec_r); spec_r.loader.exec_module(ren)
+
+        def make_html(slug, body_extra=''):
+            return (
+                f'<html><head><title>{slug}</title><link rel="canonical" href="https://fixture.example/guides/{slug}">'
+                '<meta name="robots" content="index,follow">'
+                f'<script type="application/ld+json">{{"@type":"Article","datePublished":"2026-11-28","dateModified":"2026-11-28","url":"https://fixture.example/guides/{slug}"}}</script>'
+                f'</head><body><main><h1>{slug}</h1><p>Updated Nov 28, 2026</p><p>' + ('Plain educational overview. ' * 15) + body_extra + '</p></main></body></html>'
+            )
+
+        # Prior stale pending slot on /guides/hsa-link from an old missing capture so repair_pending is exercised
+        old_dir = self.root / 'reports/old-job'
+        old_dir.mkdir(parents=True)
+        rspec_hsa = {'path': '/guides/hsa-link', 'expectedUpdatedDate': '2026-11-28', 'claimCategories': ['ordinary']}
+        page_hsa_old = ren.parse(make_html('hsa-link', 'old '), rspec_hsa, 'http://localhost:3000', 'https://fixture.example')
+        old_snap = {
+            'manifest': {'author': 'writer-old', 'canonicalBase': 'https://fixture.example', 'workflowKind': 'mindmap-pass', 'jobId': 'old-job-1', 'routes': [rspec_hsa]},
+            'routes': [page_hsa_old],
+            'baseUrl': 'https://fixture.example',
+            'capturedAt': '2026-11-10T10:00:00+00:00',
+            'contentReviewPolicy': {'version': crp.VERSION, 'sha256': crp.policy_hash(self.root)},
+        }
+        old_snap['snapshotSha256'] = ren.digest({k: v for k, v in old_snap.items() if k != 'snapshotSha256'})
+        old_snap_path = old_dir / 'old-snap.json'
+        old_snap_path.write_text(json.dumps(old_snap))
+        crp.reserve(self.root, old_snap_path, '/guides/hsa-link', 'old-job-1', 'auditor-old', old_dir / 'adm-1.json')
+        old_snap_path.unlink()  # lost prior capture triggers repair-pending
+
+        run_dir = self.root / 'reports/x-trends/runs/run-rp'
+        (run_dir / 'audit').mkdir(parents=True)
+        (run_dir / 'readiness.md').write_text('# Ready\n')
+        manifest = run_dir / 'approval-manifest.json'
+        manifest.write_text(json.dumps({
+            'jobId': 'xtrends-rp-1',
+            'actions': [{'id': 'A1', 'bucket': 'create new content', 'target': '/guides/main-guide'}],
+            'newPageBriefs': [{
+                'target': '/guides/main-guide',
+                'inboundLinks': {'placements': [{'source': '/guides/debt-link'}, {'source': '/guides/hsa-link'}]},
+            }],
+        }))
+
+        routes_spec = [
+            {'path': '/guides/main-guide', 'expectedUpdatedDate': '2026-11-28', 'claimCategories': ['ordinary']},
+            {'path': '/guides/debt-link', 'expectedUpdatedDate': '2026-11-28', 'claimCategories': ['ordinary']},
+            rspec_hsa,
+        ]
+        pages_r1 = [ren.parse(make_html(r['path'].rsplit('/', 1)[-1]), r, 'http://localhost:3000', 'https://fixture.example') for r in routes_spec]
+        snap1 = {
+            'manifest': {'author': 'writer-1', 'canonicalBase': 'https://fixture.example', 'workflowKind': 'mindmap-pass', 'jobId': 'xtrends-rp-1', 'routes': routes_spec},
+            'routes': pages_r1,
+            'baseUrl': 'https://fixture.example',
+            'capturedAt': '2026-11-28T17:00:00+00:00',
+            'contentReviewPolicy': {'version': crp.VERSION, 'sha256': crp.policy_hash(self.root)},
+        }
+        snap1['snapshotSha256'] = ren.digest({k: v for k, v in snap1.items() if k != 'snapshotSha256'})
+        snap1_path = run_dir / 'audit/preview-snapshot.json'
+        snap1_path.write_text(json.dumps(snap1))
+
+        adm1 = crp.reserve(self.root, snap1_path, '/guides/main-guide', 'xtrends-rp-1', 'auditor-1', run_dir / 'audit/adm-1.json')
+        adm2 = crp.reserve(self.root, snap1_path, '/guides/debt-link', 'xtrends-rp-1', 'auditor-1', run_dir / 'audit/adm-2.json')
+        fail_hb = run_dir / 'audit/repair-handback.md'
+        fail_hb.write_text('Independent auditor handback confirming prior pending capture file is missing and slot is rebound.\n' * 2)
+        adm3 = crp.repair_pending(self.root, snap1_path, '/guides/hsa-link', 'old-job-1', 'auditor-1', run_dir / 'audit/adm-3.json', fail_hb)
+
+        def make_rev_row(page, adm, verdict):
+            txt = crp.claim_text(page['semantic'])
+            return {
+                'path': page['path'],
+                'fingerprint': page['fingerprint'],
+                'verdict': verdict,
+                'reviewProfile': 'standard',
+                'reviewBudget': adm['admissionArtifact'],
+                'riskAssessment': {
+                    'textSha256': crp.sha(txt.encode()),
+                    'rationale': 'Ordinary consumer billing explanation without clinical or safety risk.',
+                    'consequentialClaims': [],
+                    'incidentalMentions': [],
+                },
+                'checks': {
+                    k: {'status': 'FAIL' if (verdict == 'FAIL' and k == 'sourceSupport') else 'PASS', 'evidence': 'Synthetic check evidence meeting minimum length.'}
+                    for k in ren.CHECKS
+                },
+                'factualReview': {
+                    k: {'status': 'PASS', 'evidence': 'Synthetic factual review evidence meeting forty character minimum length.'}
+                    for k in crp.FACTS['standard'] + ['riskClassification', 'seoQuality']
+                },
+            }
+
+        rev1 = {
+            'jobId': 'xtrends-rp-1',
+            'reviewer': 'auditor-1',
+            'snapshotSha256': snap1['snapshotSha256'],
+            'routes': [
+                make_rev_row(pages_r1[0], adm1, 'FAIL'),
+                make_rev_row(pages_r1[1], adm2, 'PASS'),
+                make_rev_row(pages_r1[2], adm3, 'PASS'),
+            ],
+        }
+        rev1_path = run_dir / 'audit/review.json'
+        rev1_path.write_text(json.dumps(rev1))
+        crp.record(self.root, rev1_path)
+
+        # Round 2 reworks main-guide ONLY; preview-snapshot-r2 still captures all 3 routes, review-r2 covers 1 route
+        pages_r2 = [
+            ren.parse(make_html('main-guide', 'fixed '), routes_spec[0], 'http://localhost:3000', 'https://fixture.example'),
+            pages_r1[1],
+            pages_r1[2],
+        ]
+        snap2 = {
+            'manifest': {'author': 'writer-1', 'canonicalBase': 'https://fixture.example', 'workflowKind': 'mindmap-pass', 'jobId': 'xtrends-rp-1', 'routes': routes_spec},
+            'routes': pages_r2,
+            'baseUrl': 'https://fixture.example',
+            'capturedAt': '2026-11-28T17:10:00+00:00',
+            'contentReviewPolicy': {'version': crp.VERSION, 'sha256': crp.policy_hash(self.root)},
+        }
+        snap2['snapshotSha256'] = ren.digest({k: v for k, v in snap2.items() if k != 'snapshotSha256'})
+        snap2_path = run_dir / 'audit/preview-snapshot-r2.json'
+        snap2_path.write_text(json.dumps(snap2))
+        adm1_r2 = crp.reserve(self.root, snap2_path, '/guides/main-guide', 'xtrends-rp-1', 'auditor-1', run_dir / 'audit/adm-1-r2.json')
+        rev2 = {
+            'jobId': 'xtrends-rp-1',
+            'reviewer': 'auditor-1',
+            'snapshotSha256': snap2['snapshotSha256'],
+            'routes': [make_rev_row(pages_r2[0], adm1_r2, 'PASS')],
+        }
+        rev2_path = run_dir / 'audit/review-r2.json'
+        rev2_path.write_text(json.dumps(rev2))
+        crp.record(self.root, rev2_path)
+
+        hp = run_dir / 'handoff-publish.json'
+        res_pub = h.auto_seal(
+            self.root, phase='publish', manifest_path=manifest, producer='main',
+            out_path=hp, snapshot_path=snap2_path, review_path=rev2_path,
+            readiness_path=run_dir / 'readiness.md',
+        )
+        self.assertEqual(res_pub['status'], 'sealed')
+        checked = h.handoff_check(self.root, hp, phase='publish')
+        self.assertEqual(len(checked['reviewPairs']), 3)
+        self.assertEqual(set(checked['routes']), {'/guides/main-guide', '/guides/debt-link', '/guides/hsa-link'})
+
 
 if __name__ == '__main__':
     unittest.main()

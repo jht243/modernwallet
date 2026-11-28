@@ -3047,6 +3047,7 @@ def prune_failed_routes(
     # Identify pruned briefs first so link-only rows exclusive to pruned briefs can also be dropped cleanly
     pruned_inbound_sources_only = set()
     surviving_inbound_sources = set()
+    matched_brief_inbound = False
     for b_key in ('newPageBriefs', 'scopeBriefs'):
         for b in (plan.get(b_key) or []):
             if not isinstance(b, dict):
@@ -3054,10 +3055,12 @@ def prune_failed_routes(
             bt = (str(b.get('target') or '').rstrip('/') or '/')
             inb = ((b.get('inboundLinks') or {}).get('placements') or [])
             srcs = {(str(pl.get('source') or '').rstrip('/') or '/') for pl in inb if isinstance(pl, dict) and pl.get('source')}
+            if srcs & failed_set and bt not in failed_set:
+                matched_brief_inbound = True
             if bt in failed_set:
                 pruned_inbound_sources_only.update(srcs)
             else:
-                surviving_inbound_sources.update(srcs)
+                surviving_inbound_sources.update(srcs - failed_set)
     pruned_inbound_sources_only -= surviving_inbound_sources
 
     pruned_actions = []
@@ -3088,7 +3091,7 @@ def prune_failed_routes(
         else:
             surviving_actions.append(row)
 
-    require(pruned_actions, f'None of the specified --failed-route values matched manifest actions: {sorted(failed_set)}')
+    require(pruned_actions or matched_brief_inbound, f'None of the specified --failed-route values matched manifest actions or inboundLink placements: {sorted(failed_set)}')
     surviving_substantive = [r for r in surviving_actions if r.get('bucket') in SUBSTANTIVE]
     require(surviving_substantive, 'All substantive actions failed; quarantine the full run instead of partial-batch pruning')
 
@@ -3444,14 +3447,35 @@ def prune_failed_routes(
             c_spec = importlib.util.spec_from_file_location('prune_crp_mod', crp_path)
             c_mod = importlib.util.module_from_spec(c_spec)
             c_spec.loader.exec_module(c_mod)
-            proj_res = c_mod.project(root, snap_in, rev_in, surviving_snap_routes, s_out, v_out)
-            projected = {
-                'snapshot': str(s_out.relative_to(root)),
-                'review': str(v_out.relative_to(root)),
-                'reviewPairFlag': f"{s_out.relative_to(root)}:{v_out.relative_to(root)}",
-                'routes': surviving_snap_routes,
-                'detail': proj_res,
-            }
+            wh_path = root / '.claude/tools/workflow-handoff.py'
+            if wh_path.is_file():
+                wh_spec = importlib.util.spec_from_file_location('prune_wh_mod', wh_path)
+                wh_mod = importlib.util.module_from_spec(wh_spec)
+                wh_spec.loader.exec_module(wh_mod)
+                groups = wh_mod._project_routes_with_admission_snapshots(
+                    root, c_mod, snap_in, rev_in, surviving_snap_routes, s_out.parent, s_out.stem.removesuffix('-snapshot')
+                )
+                first_s, first_r, _ = groups[0]
+                if first_s != s_out and len(groups) == 1:
+                    s_out.write_bytes(first_s.read_bytes())
+                    v_out.write_bytes(first_r.read_bytes())
+                    first_s, first_r = s_out, v_out
+                projected = {
+                    'snapshot': str(first_s.relative_to(root)),
+                    'review': str(first_r.relative_to(root)),
+                    'reviewPairFlag': f"{first_s.relative_to(root)}:{first_r.relative_to(root)}",
+                    'reviewPairFlags': [f"{gs.relative_to(root)}:{gr.relative_to(root)}" for gs, gr, _ in groups],
+                    'routes': surviving_snap_routes,
+                }
+            else:
+                proj_res = c_mod.project(root, snap_in, rev_in, surviving_snap_routes, s_out, v_out)
+                projected = {
+                    'snapshot': str(s_out.relative_to(root)),
+                    'review': str(v_out.relative_to(root)),
+                    'reviewPairFlag': f"{s_out.relative_to(root)}:{v_out.relative_to(root)}",
+                    'routes': surviving_snap_routes,
+                    'detail': proj_res,
+                }
         else:
             rev_doc = read(rev_in)
             keep_set = set(surviving_snap_routes)

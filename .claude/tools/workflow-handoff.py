@@ -567,6 +567,213 @@ def _parse_review_pair_arg(root, pair_arg):
     return inside(root, left.strip()), inside(root, right.strip())
 
 
+def _project_routes_with_admission_snapshots(root, crp_mod, snapshot_path, review_path, target_routes, out_dir, prefix='projected-pair'):
+    """Project `target_routes` from `(snapshot_path, review_path)` while honoring each route's
+    exact `reviewBudget` admission `snapshot` path (including `repair-pending` blob paths)."""
+    root = Path(root).resolve()
+    snap_path = Path(snapshot_path).resolve()
+    rev_path = Path(review_path).resolve()
+    snap_obj = read(snap_path)
+    rev_obj = read(rev_path)
+    snap_sha = crp_mod.sha(snap_path.read_bytes())
+    snap_route_paths = [r['path'] for r in (snap_obj.get('routes') or []) if isinstance(r, dict) and r.get('path')]
+    rev_by_norm = {
+        (str(r.get('path') or '').rstrip('/') or '/'): r
+        for r in (rev_obj.get('routes') or [])
+        if isinstance(r, dict) and r.get('path')
+    }
+    wanted_norms = [(str(r).rstrip('/') or '/') for r in target_routes if str(r or '').strip()]
+    groups = []
+    group_map = {}
+    for w_norm in dict.fromkeys(wanted_norms):
+        rr = rev_by_norm.get(w_norm)
+        if not rr:
+            continue
+        actual_route = rr['path']
+        src_snap = snap_path
+        adm_ref = rr.get('reviewBudget')
+        if isinstance(adm_ref, dict) and adm_ref.get('path'):
+            try:
+                adm = read(crp_mod.artifact(root, adm_ref))
+                adm_snap = adm.get('snapshot') or {}
+                if adm_snap.get('sha256') == snap_sha and adm_snap.get('path'):
+                    cand_snap = (root / adm_snap['path']).resolve()
+                    if cand_snap.is_file() and root in cand_snap.parents and crp_mod.sha(cand_snap.read_bytes()) == snap_sha:
+                        src_snap = cand_snap
+            except Exception:
+                pass
+        key = str(src_snap)
+        if key not in group_map:
+            group_map[key] = (src_snap, [])
+            groups.append(key)
+        group_map[key][1].append(actual_route)
+
+    out_dir = Path(out_dir).resolve()
+    out_dir.mkdir(parents=True, exist_ok=True)
+    results = []
+    for g_idx, key in enumerate(groups, 1):
+        src_snap, g_routes = group_map[key]
+        # Fast-path when already exact single-source match with no approvalProjection needed
+        src_rel = str(src_snap.relative_to(root))
+        if (
+            not rev_obj.get('approvalProjection')
+            and set(g_routes) == set(snap_route_paths)
+            and len(rev_by_norm) == len(g_routes)
+            and all(
+                not isinstance((rev_by_norm[(r.rstrip('/') or '/')].get('reviewBudget') or {}), dict)
+                or str(((read(crp_mod.artifact(root, rev_by_norm[(r.rstrip('/') or '/')]['reviewBudget'])).get('snapshot') or {}).get('path') or src_rel)) == src_rel
+                for r in g_routes
+            )
+        ):
+            results.append((src_snap, rev_path, g_routes))
+            continue
+        base_tag = prefix if len(groups) == 1 else f'{prefix}-g{g_idx}'
+        suffix = ''
+        v_num = 1
+        while (out_dir / f'{base_tag}-snapshot{suffix}.json').exists() or (out_dir / f'{base_tag}-review{suffix}.json').exists():
+            v_num += 1
+            suffix = f'-v{v_num}'
+        ls_out = out_dir / f'{base_tag}-snapshot{suffix}.json'
+        lr_out = out_dir / f'{base_tag}-review{suffix}.json'
+        crp_mod.project(root, src_snap, rev_path, g_routes, ls_out, lr_out)
+        results.append((ls_out, lr_out, g_routes))
+    return results
+
+
+def _auto_resolve_publish_pairs(root, manifest_path, out_path, resolved_job, routes, snapshot_path, review_path, parsed_pairs, sources_by_path):
+    """Automatically project partial/multi-round/repair-pending snapshots & reviews for `--phase publish`."""
+    crp_path = root / '.claude/tools/content-review-policy.py'
+    if not ((root / '.claude/content-review-policy.json').is_file() and crp_path.is_file()):
+        return snapshot_path, review_path, parsed_pairs
+    spec_crp = importlib.util.spec_from_file_location('handoff_publish_crp', crp_path)
+    crp_mod = importlib.util.module_from_spec(spec_crp)
+    spec_crp.loader.exec_module(crp_mod)
+    proj_dir = out_path.parent.resolve() / 'auto-publish-pairs'
+
+    if parsed_pairs:
+        resolved = []
+        for idx, (sp, rp) in enumerate(parsed_pairs, 1):
+            r_doc = read(rp)
+            if r_doc.get('approvalProjection'):
+                resolved.append((sp, rp))
+                continue
+            r_routes = [r['path'] for r in (r_doc.get('routes') or []) if isinstance(r, dict) and r.get('path')]
+            for p_snap, p_rev, _ in _project_routes_with_admission_snapshots(root, crp_mod, sp, rp, r_routes, proj_dir, f'pair-{idx}'):
+                resolved.append((p_snap, p_rev))
+        return None, None, resolved
+
+    if not (snapshot_path and review_path):
+        return snapshot_path, review_path, parsed_pairs
+
+    s_doc = read(snapshot_path)
+    r_doc = read(review_path)
+    if r_doc.get('approvalProjection'):
+        return snapshot_path, review_path, parsed_pairs
+
+    snap_norms = {(r['path'].rstrip('/') or '/') for r in (s_doc.get('routes') or []) if isinstance(r, dict) and r.get('path')}
+    rev_routes = [r['path'] for r in (r_doc.get('routes') or []) if isinstance(r, dict) and r.get('path')]
+    rev_norms = {(r.rstrip('/') or '/') for r in rev_routes}
+    handoff_norms = {(r.rstrip('/') or '/') for r in routes}
+    missing_norms = handoff_norms - rev_norms
+
+    # Check if single snapshot+review has a repair-pending admission snapshot path mismatch or partial route set
+    needs_pair_projection = bool(missing_norms or rev_norms != snap_norms)
+    if not needs_pair_projection:
+        snap_rel = str(Path(snapshot_path).resolve().relative_to(root.resolve()))
+        for rr in (r_doc.get('routes') or []):
+            adm_ref = rr.get('reviewBudget') if isinstance(rr, dict) else None
+            if isinstance(adm_ref, dict) and adm_ref.get('path'):
+                try:
+                    adm = read(crp_mod.artifact(root, adm_ref))
+                    if ((adm.get('snapshot') or {}).get('path') or snap_rel) != snap_rel:
+                        needs_pair_projection = True
+                        break
+                except Exception:
+                    pass
+    if not needs_pair_projection:
+        return snapshot_path, review_path, parsed_pairs
+
+    built_pairs = []
+    for p_snap, p_rev, _ in _project_routes_with_admission_snapshots(root, crp_mod, snapshot_path, review_path, rev_routes, proj_dir, 'latest'):
+        built_pairs.append((p_snap, p_rev))
+
+    if missing_norms:
+        cand_reviews = []
+        seen_revs = {str(Path(review_path).resolve())}
+        search_files = [Path(p) for p in sources_by_path.keys()]
+        for pat in ('audit/review*.json', 'review*.json'):
+            search_files.extend(sorted(manifest_path.parent.glob(pat)))
+        for cand_r in search_files:
+            rp_abs = cand_r.resolve()
+            if str(rp_abs) in seen_revs or not rp_abs.is_file():
+                continue
+            seen_revs.add(str(rp_abs))
+            try:
+                cdoc = read(rp_abs)
+            except Exception:
+                continue
+            if not isinstance(cdoc, dict) or cdoc.get('approvalProjection') or not isinstance(cdoc.get('routes'), list):
+                continue
+            c_job = str(cdoc.get('jobId') or resolved_job).strip()
+            if resolved_job and c_job and not (c_job == resolved_job or c_job.startswith(resolved_job + '-cont-')):
+                continue
+            cand_reviews.append((rp_abs, cdoc))
+
+        # Locate companion snapshots by sha256
+        snap_by_sha = {}
+        snap_cands = [Path(snapshot_path).resolve()]
+        for pat in ('audit/*snapshot*.json', '*snapshot*.json'):
+            snap_cands.extend(sorted(manifest_path.parent.glob(pat)))
+        for sc in snap_cands:
+            if sc.is_file():
+                try:
+                    s_loaded = read(sc)
+                    if isinstance(s_loaded, dict) and s_loaded.get('snapshotSha256'):
+                        snap_by_sha.setdefault(s_loaded['snapshotSha256'], sc.resolve())
+                except Exception:
+                    pass
+
+        for p_idx, (rp_abs, cdoc) in enumerate(cand_reviews, 1):
+            if not missing_norms:
+                break
+            matched_routes = []
+            src_snap_guess = snap_by_sha.get(cdoc.get('snapshotSha256'))
+            for rr in cdoc.get('routes', []):
+                if not isinstance(rr, dict) or not rr.get('path'):
+                    continue
+                rn = rr['path'].rstrip('/') or '/'
+                if rn not in missing_norms:
+                    continue
+                if rr.get('verdict') != 'PASS' and not crp_mod.capped_release(root, s_doc):
+                    continue
+                if src_snap_guess is None and isinstance(rr.get('reviewBudget'), dict):
+                    try:
+                        adm = read(crp_mod.artifact(root, rr['reviewBudget']))
+                        adm_sp = (adm.get('snapshot') or {}).get('path')
+                        if adm_sp and (root / adm_sp).is_file():
+                            src_snap_guess = (root / adm_sp).resolve()
+                    except Exception:
+                        pass
+                matched_routes.append(rr['path'])
+            if matched_routes and src_snap_guess is not None and src_snap_guess.is_file():
+                try:
+                    projected_groups = _project_routes_with_admission_snapshots(
+                        root, crp_mod, src_snap_guess, rp_abs, matched_routes, proj_dir, f'prior-{p_idx}'
+                    )
+                    for p_snap, p_rev, g_routes in projected_groups:
+                        built_pairs.append((p_snap, p_rev))
+                        for gr in g_routes:
+                            missing_norms.discard(gr.rstrip('/') or '/')
+                except Exception:
+                    continue
+
+    if not missing_norms and (len(built_pairs) > 1 or built_pairs[0] != (Path(snapshot_path).resolve(), Path(review_path).resolve())):
+        if len(built_pairs) == 1 and _norm_route_set([r['path'] for r in read(built_pairs[0][0])['routes']]) == handoff_norms:
+            return built_pairs[0][0], built_pairs[0][1], ()
+        return None, None, built_pairs
+    return snapshot_path, review_path, parsed_pairs
+
+
 def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previous_path=None,
               snapshot_path=None, review_path=None, chart_review_path=None, readiness_path=None,
               extra_candidates=(), extra_sources=(), explicit_routes=(), next_action=None,
@@ -782,20 +989,19 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
             locked_releasable = list(dict.fromkeys(passed_routes + releasable_exhausted))
             if crp_mod is not None and snapshot_path is not None and locked_releasable and rework_eligible:
                 proj_dir = out_path.parent.resolve()
-                suffix = ''
-                idx = 1
-                while (proj_dir / f'locked-r1-snapshot{suffix}.json').exists() or (proj_dir / f'locked-r1-review{suffix}.json').exists():
-                    idx += 1
-                    suffix = f'-v{idx}'
-                ls_out = proj_dir / f'locked-r1-snapshot{suffix}.json'
-                lr_out = proj_dir / f'locked-r1-review{suffix}.json'
                 try:
-                    crp_mod.project(root, snapshot_path, review_path, locked_releasable, ls_out, lr_out)
-                    locked_pair_info = {
-                        'snapshot': str(ls_out.relative_to(root.resolve())),
-                        'review': str(lr_out.relative_to(root.resolve())),
-                        'routes': locked_releasable,
-                    }
+                    proj_groups = _project_routes_with_admission_snapshots(
+                        root, crp_mod, snapshot_path, review_path, locked_releasable, proj_dir, 'locked-r1'
+                    )
+                    if proj_groups:
+                        locked_pair_info = [
+                            {
+                                'snapshot': str(ps.relative_to(root.resolve())),
+                                'review': str(pr.relative_to(root.resolve())),
+                                'routes': gr,
+                            }
+                            for ps, pr, gr in proj_groups
+                        ]
                 except (ValueError, KeyError, OSError):
                     locked_pair_info = None
 
@@ -830,6 +1036,16 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
 
     if phase == 'audit' and rework:
         counters['reworks'] += 1
+
+    if phase == 'publish' and not is_layer3_local:
+        snapshot_path, review_path, parsed_pairs = _auto_resolve_publish_pairs(
+            root, manifest_path, out_path, resolved_job, routes,
+            snapshot_path, review_path, parsed_pairs, sources_by_path,
+        )
+        for sp, rp in parsed_pairs:
+            if not any(c.get('path') == str(sp.resolve().relative_to(root.resolve())) for c in candidates):
+                candidates.append(make_ref(sp))
+            add_source(rp, 'Projected independent Phase 4 rendered-page audit report (reviewPair)')
 
     default_actions = {
         'write': 'Execute approved Mindmap write actions, lint, and capture local rendered preview.',
@@ -915,7 +1131,11 @@ def auto_seal(root, phase, manifest_path, producer, out_path, job_id=None, previ
         if review_path is not None:
             res['round2CaptureFlags'] = f"--only-rework-from {str(review_path.resolve().relative_to(root.resolve()))}"
     if locked_pair_info:
-        res['lockedReviewPair'] = locked_pair_info
+        if isinstance(locked_pair_info, list):
+            res['lockedReviewPairs'] = locked_pair_info
+            res['lockedReviewPair'] = locked_pair_info[0]
+        else:
+            res['lockedReviewPair'] = locked_pair_info
     role_agent = (
         f'.claude/agents/layer3-mindmap-{phase}.md'
         if is_layer3_local

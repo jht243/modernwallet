@@ -49,4 +49,14 @@ class Tests(unittest.TestCase):
         self.assertEqual(proof['commit'],'2'*40)
         self.assertEqual(proof['hostRuntimeCommit'],'1'*40)
 
+    def test_flask_server_importing_scripts_blocks_unbuilt_scripts_page_commit(self):
+        (self.root/'server.py').write_text('from scripts.generate_seo_pages import PAGES as _STATIC_PAGES\n')
+        def git_runtime(root,*args):
+            if args[0]=='ls-remote':return '3'*40+'\trefs/heads/main'
+            if args==('merge-base','--is-ancestor','2'*40,'1'*40):raise ValueError('not ancestor')
+            if args[:2]==('diff','--name-only'):return 'scripts/generate_seo_pages.py\nscripts/xtr1128_melt.py\n'
+            return ''
+        with patch.object(p,'git',side_effect=git_runtime),self.assertRaisesRegex(ValueError,'runtime files'):
+            p.verify(self.root,self.value,'https://fixture.invalid'+p.ENDPOINT,'2'*40)
+
 if __name__=='__main__':unittest.main()

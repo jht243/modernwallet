@@ -1,0 +1,535 @@
+{
+  "version": 1,
+  "canonicalBase": "https://www.themodernwallet.com",
+  "jobId": "xtrends-2026-11-28-surprise-billing",
+  "producer": "main",
+  "routes": [
+    "/guides/surprise-anesthesia-bill-no-surprises-act",
+    "/guides/how-to-deal-with-medical-debt",
+    "/guides/hsa-fsa-reimbursement-checklist"
+  ],
+  "nextAction": "Publish exact independently reviewed Mindmap output to main and verify live.",
+  "candidates": [
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/e546eed1bc46de5436dc00b89781c55c4a3787b500b191c9f2a2fcd4be1e8a7b/approval-manifest.json",
+      "sha256": "e546eed1bc46de5436dc00b89781c55c4a3787b500b191c9f2a2fcd4be1e8a7b",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/approval-manifest.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/70706518058f4490a8aaaa6fdf5da82720f5b3587c93b8e731928e5634555f66/2026-11-28-xtrends.md",
+      "sha256": "70706518058f4490a8aaaa6fdf5da82720f5b3587c93b8e731928e5634555f66",
+      "originPath": "reports/mindmap-pass/2026-11-28-xtrends.md"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/c5982c535dae2e41b71d17d58e4619e3b6694d2ae77db1948071a54cc181ec2a/preview-snapshot-r2.json",
+      "sha256": "c5982c535dae2e41b71d17d58e4619e3b6694d2ae77db1948071a54cc181ec2a",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/audit/preview-snapshot-r2.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/71241fcec30072d28ad0af572b58157215d67663172d057f9469ab74d7f0eb29/latest-snapshot.json",
+      "sha256": "71241fcec30072d28ad0af572b58157215d67663172d057f9469ab74d7f0eb29",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/auto-publish-pairs/latest-snapshot.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/6369333460768b7e25b0bccde629ddd382761962c2ba17388f76239a1702f2b8/prior-1-g1-snapshot.json",
+      "sha256": "6369333460768b7e25b0bccde629ddd382761962c2ba17388f76239a1702f2b8",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/auto-publish-pairs/prior-1-g1-snapshot.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/118270abe26db5bfc66b9d7c7ab74e1316b8c9b82560d0c88a14e471c08954db/prior-1-g2-snapshot.json",
+      "sha256": "118270abe26db5bfc66b9d7c7ab74e1316b8c9b82560d0c88a14e471c08954db",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/auto-publish-pairs/prior-1-g2-snapshot.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/07959d226d5df0c29282716ff6604497c29870497a27857a8b12e5c92a43bbe7/readiness.md",
+      "sha256": "07959d226d5df0c29282716ff6604497c29870497a27857a8b12e5c92a43bbe7",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/readiness.md"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/c2c06e326d14a18680754309137d7c89882a4d7f451d205148fe3322f8d7a5fc/chart-review.json",
+      "sha256": "c2c06e326d14a18680754309137d7c89882a4d7f451d205148fe3322f8d7a5fc",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/chart-review.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/0a50bc3f0baf52ae1aded34d6a261a56064b5592257a5e555acf4e8ab8702e17/brief.txt",
+      "sha256": "0a50bc3f0baf52ae1aded34d6a261a56064b5592257a5e555acf4e8ab8702e17",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/brief.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/360d28a9cb25935fec35f137e1b89edb29cd6f7dd6ba9983118ac8e743d90808/coverage-lookup.txt",
+      "sha256": "360d28a9cb25935fec35f137e1b89edb29cd6f7dd6ba9983118ac8e743d90808",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/0a50bc3f0baf52ae1aded34d6a261a56064b5592257a5e555acf4e8ab8702e17/intake-2026-11-28.md",
+      "sha256": "0a50bc3f0baf52ae1aded34d6a261a56064b5592257a5e555acf4e8ab8702e17",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/intake-2026-11-28.md"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/591fdcf4e8f3af6170baf83e590cbffda3b3461db1dddd364e78da823c86aa7d/kw-volumes.json",
+      "sha256": "591fdcf4e8f3af6170baf83e590cbffda3b3461db1dddd364e78da823c86aa7d",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/kw-volumes.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/161cae02a66cedea94656e5352d69d4d07bc59293bc925fe092a7e6092bf87df/kw-expand-nsa.json",
+      "sha256": "161cae02a66cedea94656e5352d69d4d07bc59293bc925fe092a7e6092bf87df",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/kw-expand-nsa.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/69f57808e09b00ac4d639087b052e61e42b09c550a086de49b23177d5cefd556/kw-expand-smb.json",
+      "sha256": "69f57808e09b00ac4d639087b052e61e42b09c550a086de49b23177d5cefd556",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/kw-expand-smb.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/7b73af897b58c772ce1b31d02a108406e1fd92a5ecf3445a883aa961357e9e5f/kw-status.json",
+      "sha256": "7b73af897b58c772ce1b31d02a108406e1fd92a5ecf3445a883aa961357e9e5f",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/kw-status.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/dd8f2a118786305ea0c55c24e9bd1db7a2be2302019acebf40128ec69bd80d8a/autocomplete-note.txt",
+      "sha256": "dd8f2a118786305ea0c55c24e9bd1db7a2be2302019acebf40128ec69bd80d8a",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/autocomplete-note.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/b0715d0343db866b6cf807a084d16a82ab974bcb449356f71dcc9dd25a5d1ed3/autocomplete-anesthesiologist.csv",
+      "sha256": "b0715d0343db866b6cf807a084d16a82ab974bcb449356f71dcc9dd25a5d1ed3",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/autocomplete-anesthesiologist.csv"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/29324dae6d100da0d080a33496d9cd4059588131306c061e9abd385605a1b0f0/autocomplete-surprise-medical-bill.csv",
+      "sha256": "29324dae6d100da0d080a33496d9cd4059588131306c061e9abd385605a1b0f0",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/autocomplete-surprise-medical-bill.csv"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/cb4feb17eb22572a3867f8a3ffc71e90e701ee83f7c8b769a24920c22ebb9977/serp-surprise-anesthesia.json",
+      "sha256": "cb4feb17eb22572a3867f8a3ffc71e90e701ee83f7c8b769a24920c22ebb9977",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/serp-surprise-anesthesia.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/6ee56ce9a31c4beecccd753053afcbb1b9d555103d1e3016c9b5a17ea27cfd4f/cms-check-bill-errors.txt",
+      "sha256": "6ee56ce9a31c4beecccd753053afcbb1b9d555103d1e3016c9b5a17ea27cfd4f",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-check-bill-errors.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/4a9b11229cee9332073e691bf911d4ac40f678088e632111c937349af1177915/cms-find-action-plan.txt",
+      "sha256": "4a9b11229cee9332073e691bf911d4ac40f678088e632111c937349af1177915",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-find-action-plan.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/ad7e30a0a9b2a70f24ce90387797585f7f3974f121fc90fb0c165b817c075844/cms-ground-ambulance-bill.txt",
+      "sha256": "ad7e30a0a9b2a70f24ce90387797585f7f3974f121fc90fb0c165b817c075844",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-ground-ambulance-bill.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/3fd944d949f02b5a92d4af63f4a32ed326cd2c11f94dfb725233bfd7438cf471/cms-know-your-rights-insurance.txt",
+      "sha256": "3fd944d949f02b5a92d4af63f4a32ed326cd2c11f94dfb725233bfd7438cf471",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-know-your-rights-insurance.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/85a061efd61d37c6271c3c9cb59a67c53312bbdea1c94e94a5dce896ed60d3e6/cms-know-your-rights-without-insurance.txt",
+      "sha256": "85a061efd61d37c6271c3c9cb59a67c53312bbdea1c94e94a5dce896ed60d3e6",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-know-your-rights-without-insurance.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/f4b4d554c5b0be433dd3608d2d0bc84b88493b06fa5e837e813b69796e04d095/cms-know-your-rights.txt",
+      "sha256": "f4b4d554c5b0be433dd3608d2d0bc84b88493b06fa5e837e813b69796e04d095",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-know-your-rights.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/d3604c9ddad60c9e67fe65778c24b42269ae7870b0813507e8fd0277e8b80c7d/cms-medical-bill-rights.txt",
+      "sha256": "d3604c9ddad60c9e67fe65778c24b42269ae7870b0813507e8fd0277e8b80c7d",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-medical-bill-rights.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/b98eaf3e042c4e2848e85bdb4dde158843ed67164fe3d5023d93f2d6d063e6f9/cms-nosurprises-consumers.txt",
+      "sha256": "b98eaf3e042c4e2848e85bdb4dde158843ed67164fe3d5023d93f2d6d063e6f9",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-nosurprises-consumers.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/bc86c6d14cb047136d65b8910cd56b4f7ccfcba5a12b10688f9716efca292e3c/cms-nosurprises.txt",
+      "sha256": "bc86c6d14cb047136d65b8910cd56b4f7ccfcba5a12b10688f9716efca292e3c",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-nosurprises.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/f529d77864bc10ff884aa3bb214e6d2e3b5440852b635b558d1555ccc9088f0b/cms-overview-rules-fact-sheets.txt",
+      "sha256": "f529d77864bc10ff884aa3bb214e6d2e3b5440852b635b558d1555ccc9088f0b",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-overview-rules-fact-sheets.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/f2cb8a7ce90e62f6023325976e6d470a59db35118ccaabe902abb55eaed81f99/cms-read-eob.txt",
+      "sha256": "f2cb8a7ce90e62f6023325976e6d470a59db35118ccaabe902abb55eaed81f99",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-read-eob.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/b6b940c32854811e8a570e4c92ce3b1ed78d5e0899d9fcb5579adb2e3bd6ff94/cms-submit-complaint.txt",
+      "sha256": "b6b940c32854811e8a570e4c92ce3b1ed78d5e0899d9fcb5579adb2e3bd6ff94",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-submit-complaint.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/071224f093c6d7fd16b52680eb4637e0270165868674f88ec59b825465d1a378/review.json",
+      "sha256": "071224f093c6d7fd16b52680eb4637e0270165868674f88ec59b825465d1a378",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/audit/review.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/07959d226d5df0c29282716ff6604497c29870497a27857a8b12e5c92a43bbe7/readiness.md",
+      "sha256": "07959d226d5df0c29282716ff6604497c29870497a27857a8b12e5c92a43bbe7",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Preparation readiness checklist and evidence verification",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/readiness.md"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/c2c06e326d14a18680754309137d7c89882a4d7f451d205148fe3322f8d7a5fc/chart-review.json",
+      "sha256": "c2c06e326d14a18680754309137d7c89882a4d7f451d205148fe3322f8d7a5fc",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Independent chart review approval and obligation verification",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/chart-review.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/0a50bc3f0baf52ae1aded34d6a261a56064b5592257a5e555acf4e8ab8702e17/brief.txt",
+      "sha256": "0a50bc3f0baf52ae1aded34d6a261a56064b5592257a5e555acf4e8ab8702e17",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Original intake brief and candidate scope record",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/brief.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/360d28a9cb25935fec35f137e1b89edb29cd6f7dd6ba9983118ac8e743d90808/coverage-lookup.txt",
+      "sha256": "360d28a9cb25935fec35f137e1b89edb29cd6f7dd6ba9983118ac8e743d90808",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/coverage-lookup.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/0a50bc3f0baf52ae1aded34d6a261a56064b5592257a5e555acf4e8ab8702e17/intake-2026-11-28.md",
+      "sha256": "0a50bc3f0baf52ae1aded34d6a261a56064b5592257a5e555acf4e8ab8702e17",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/intake-2026-11-28.md"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/591fdcf4e8f3af6170baf83e590cbffda3b3461db1dddd364e78da823c86aa7d/kw-volumes.json",
+      "sha256": "591fdcf4e8f3af6170baf83e590cbffda3b3461db1dddd364e78da823c86aa7d",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/kw-volumes.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/161cae02a66cedea94656e5352d69d4d07bc59293bc925fe092a7e6092bf87df/kw-expand-nsa.json",
+      "sha256": "161cae02a66cedea94656e5352d69d4d07bc59293bc925fe092a7e6092bf87df",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/kw-expand-nsa.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/69f57808e09b00ac4d639087b052e61e42b09c550a086de49b23177d5cefd556/kw-expand-smb.json",
+      "sha256": "69f57808e09b00ac4d639087b052e61e42b09c550a086de49b23177d5cefd556",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/kw-expand-smb.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/7b73af897b58c772ce1b31d02a108406e1fd92a5ecf3445a883aa961357e9e5f/kw-status.json",
+      "sha256": "7b73af897b58c772ce1b31d02a108406e1fd92a5ecf3445a883aa961357e9e5f",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/kw-status.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/dd8f2a118786305ea0c55c24e9bd1db7a2be2302019acebf40128ec69bd80d8a/autocomplete-note.txt",
+      "sha256": "dd8f2a118786305ea0c55c24e9bd1db7a2be2302019acebf40128ec69bd80d8a",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/autocomplete-note.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/b0715d0343db866b6cf807a084d16a82ab974bcb449356f71dcc9dd25a5d1ed3/autocomplete-anesthesiologist.csv",
+      "sha256": "b0715d0343db866b6cf807a084d16a82ab974bcb449356f71dcc9dd25a5d1ed3",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/autocomplete-anesthesiologist.csv"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/29324dae6d100da0d080a33496d9cd4059588131306c061e9abd385605a1b0f0/autocomplete-surprise-medical-bill.csv",
+      "sha256": "29324dae6d100da0d080a33496d9cd4059588131306c061e9abd385605a1b0f0",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/autocomplete-surprise-medical-bill.csv"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/cb4feb17eb22572a3867f8a3ffc71e90e701ee83f7c8b769a24920c22ebb9977/serp-surprise-anesthesia.json",
+      "sha256": "cb4feb17eb22572a3867f8a3ffc71e90e701ee83f7c8b769a24920c22ebb9977",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/serp-surprise-anesthesia.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/6ee56ce9a31c4beecccd753053afcbb1b9d555103d1e3016c9b5a17ea27cfd4f/cms-check-bill-errors.txt",
+      "sha256": "6ee56ce9a31c4beecccd753053afcbb1b9d555103d1e3016c9b5a17ea27cfd4f",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-check-bill-errors.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/4a9b11229cee9332073e691bf911d4ac40f678088e632111c937349af1177915/cms-find-action-plan.txt",
+      "sha256": "4a9b11229cee9332073e691bf911d4ac40f678088e632111c937349af1177915",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-find-action-plan.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/ad7e30a0a9b2a70f24ce90387797585f7f3974f121fc90fb0c165b817c075844/cms-ground-ambulance-bill.txt",
+      "sha256": "ad7e30a0a9b2a70f24ce90387797585f7f3974f121fc90fb0c165b817c075844",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-ground-ambulance-bill.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/3fd944d949f02b5a92d4af63f4a32ed326cd2c11f94dfb725233bfd7438cf471/cms-know-your-rights-insurance.txt",
+      "sha256": "3fd944d949f02b5a92d4af63f4a32ed326cd2c11f94dfb725233bfd7438cf471",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-know-your-rights-insurance.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/85a061efd61d37c6271c3c9cb59a67c53312bbdea1c94e94a5dce896ed60d3e6/cms-know-your-rights-without-insurance.txt",
+      "sha256": "85a061efd61d37c6271c3c9cb59a67c53312bbdea1c94e94a5dce896ed60d3e6",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-know-your-rights-without-insurance.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/f4b4d554c5b0be433dd3608d2d0bc84b88493b06fa5e837e813b69796e04d095/cms-know-your-rights.txt",
+      "sha256": "f4b4d554c5b0be433dd3608d2d0bc84b88493b06fa5e837e813b69796e04d095",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-know-your-rights.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/d3604c9ddad60c9e67fe65778c24b42269ae7870b0813507e8fd0277e8b80c7d/cms-medical-bill-rights.txt",
+      "sha256": "d3604c9ddad60c9e67fe65778c24b42269ae7870b0813507e8fd0277e8b80c7d",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-medical-bill-rights.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/b98eaf3e042c4e2848e85bdb4dde158843ed67164fe3d5023d93f2d6d063e6f9/cms-nosurprises-consumers.txt",
+      "sha256": "b98eaf3e042c4e2848e85bdb4dde158843ed67164fe3d5023d93f2d6d063e6f9",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-nosurprises-consumers.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/bc86c6d14cb047136d65b8910cd56b4f7ccfcba5a12b10688f9716efca292e3c/cms-nosurprises.txt",
+      "sha256": "bc86c6d14cb047136d65b8910cd56b4f7ccfcba5a12b10688f9716efca292e3c",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-nosurprises.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/f529d77864bc10ff884aa3bb214e6d2e3b5440852b635b558d1555ccc9088f0b/cms-overview-rules-fact-sheets.txt",
+      "sha256": "f529d77864bc10ff884aa3bb214e6d2e3b5440852b635b558d1555ccc9088f0b",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-overview-rules-fact-sheets.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/f2cb8a7ce90e62f6023325976e6d470a59db35118ccaabe902abb55eaed81f99/cms-read-eob.txt",
+      "sha256": "f2cb8a7ce90e62f6023325976e6d470a59db35118ccaabe902abb55eaed81f99",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-read-eob.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/b6b940c32854811e8a570e4c92ce3b1ed78d5e0899d9fcb5579adb2e3bd6ff94/cms-submit-complaint.txt",
+      "sha256": "b6b940c32854811e8a570e4c92ce3b1ed78d5e0899d9fcb5579adb2e3bd6ff94",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-submit-complaint.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/115af24ebf87514d01d7d22c3f1920696f6b109e09efb914632ae4515f3a7ca8/review-r2.json",
+      "sha256": "115af24ebf87514d01d7d22c3f1920696f6b109e09efb914632ae4515f3a7ca8",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/audit/review-r2.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/54382e91f69e2f85a05534f3ddd4c4c1a996297e2734fe57755df021e5cfcca0/latest-review.json",
+      "sha256": "54382e91f69e2f85a05534f3ddd4c4c1a996297e2734fe57755df021e5cfcca0",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Projected independent Phase 4 rendered-page audit report (reviewPair)",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/auto-publish-pairs/latest-review.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/b43b6e8f5775818ed97c0e6d9fd6f63eb1ac501483c4dafe3ee82f664c533d6c/prior-1-g1-review.json",
+      "sha256": "b43b6e8f5775818ed97c0e6d9fd6f63eb1ac501483c4dafe3ee82f664c533d6c",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Projected independent Phase 4 rendered-page audit report (reviewPair)",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/auto-publish-pairs/prior-1-g1-review.json"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/753fa07e7a0db45757118a3c1afeb3e19440e9b6fd08cf393c7eb97f60332403/prior-1-g2-review.json",
+      "sha256": "753fa07e7a0db45757118a3c1afeb3e19440e9b6fd08cf393c7eb97f60332403",
+      "checkedAt": "2026-11-28T17:36:13.249646+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Projected independent Phase 4 rendered-page audit report (reviewPair)",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/auto-publish-pairs/prior-1-g2-review.json"
+    }
+  ],
+  "findings": [],
+  "reviewCounters": {
+    "reviews": 1,
+    "reworks": 1
+  },
+  "siteId": "jht243/modernwallet",
+  "previous": {
+    "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/e0082767690f4a3aa8293689daaacd3ca33af484ca54a43ce456830d71ba81b7/handoff-audit-r2.json",
+    "sha256": "e0082767690f4a3aa8293689daaacd3ca33af484ca54a43ce456830d71ba81b7",
+    "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/handoff-audit-r2.json"
+  },
+  "reviewPairs": [
+    {
+      "snapshot": {
+        "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/71241fcec30072d28ad0af572b58157215d67663172d057f9469ab74d7f0eb29/latest-snapshot.json",
+        "sha256": "71241fcec30072d28ad0af572b58157215d67663172d057f9469ab74d7f0eb29",
+        "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/auto-publish-pairs/latest-snapshot.json"
+      },
+      "review": {
+        "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/54382e91f69e2f85a05534f3ddd4c4c1a996297e2734fe57755df021e5cfcca0/latest-review.json",
+        "sha256": "54382e91f69e2f85a05534f3ddd4c4c1a996297e2734fe57755df021e5cfcca0",
+        "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/auto-publish-pairs/latest-review.json"
+      }
+    },
+    {
+      "snapshot": {
+        "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/6369333460768b7e25b0bccde629ddd382761962c2ba17388f76239a1702f2b8/prior-1-g1-snapshot.json",
+        "sha256": "6369333460768b7e25b0bccde629ddd382761962c2ba17388f76239a1702f2b8",
+        "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/auto-publish-pairs/prior-1-g1-snapshot.json"
+      },
+      "review": {
+        "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/b43b6e8f5775818ed97c0e6d9fd6f63eb1ac501483c4dafe3ee82f664c533d6c/prior-1-g1-review.json",
+        "sha256": "b43b6e8f5775818ed97c0e6d9fd6f63eb1ac501483c4dafe3ee82f664c533d6c",
+        "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/auto-publish-pairs/prior-1-g1-review.json"
+      }
+    },
+    {
+      "snapshot": {
+        "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/118270abe26db5bfc66b9d7c7ab74e1316b8c9b82560d0c88a14e471c08954db/prior-1-g2-snapshot.json",
+        "sha256": "118270abe26db5bfc66b9d7c7ab74e1316b8c9b82560d0c88a14e471c08954db",
+        "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/auto-publish-pairs/prior-1-g2-snapshot.json"
+      },
+      "review": {
+        "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/753fa07e7a0db45757118a3c1afeb3e19440e9b6fd08cf393c7eb97f60332403/prior-1-g2-review.json",
+        "sha256": "753fa07e7a0db45757118a3c1afeb3e19440e9b6fd08cf393c7eb97f60332403",
+        "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/auto-publish-pairs/prior-1-g2-review.json"
+      }
+    }
+  ]
+}

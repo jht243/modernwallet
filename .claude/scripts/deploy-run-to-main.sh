@@ -532,6 +532,18 @@ case "$cmd" in
         echo "[deploy] PRECHECK FAILED: this run's changes would break the build; NOT pushed (see errors above)." >&2
         exit 4
       fi
+      # Flask sites importing scripts.generate_seo_pages at runtime need a src/ change
+      # when a run only edited scripts/*.py, so Render service Build Filters never skip deploy.
+      if [ -f "server.py" ] && grep -q 'scripts\.generate_seo_pages' server.py 2>/dev/null; then
+        run_delta="$(git diff --name-only origin/main...HEAD 2>/dev/null || true)"
+        if printf '%s\n' "$run_delta" | grep -Eq '^scripts/.*\.py$' &&
+           ! printf '%s\n' "$run_delta" | grep -Eq '^(src/|templates/|static/|server\.py$)'; then
+          mkdir -p src
+          printf '# Auto-updated by deploy-run-to-main.sh so Render rebuilds runtime scripts/*.py changes.\nCONTENT_SOURCE_REV = "%s"\n' "$(git rev-parse HEAD)" > src/_render_deploy_stamp.py
+          git add -- src/_render_deploy_stamp.py
+          git commit --only -qm "Trigger Render runtime rebuild for scripts/*.py content update" -- src/_render_deploy_stamp.py || true
+        fi
+      fi
       # A primary publisher can finish a long build after its lease expires.
       # Bind its exact committed blobs only after precheck, immediately before
       # every push; trusted main verifies the same native fence again in CI.
