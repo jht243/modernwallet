@@ -132,6 +132,19 @@ def _pace_gsc_call() -> None:
         _GSC_LAST_CALL_TS = time.monotonic()
 
 
+_SA_ENV_KEYS = (
+    "GOOGLE_REPORTING_SA_JSON",
+    "GOOGLE_REPORTING_SA_B64",
+    "GSC_SA_B64",
+    "GSC_SA_JSON",
+    "GSC_SERVICE_ACCOUNT_JSON",
+    "GOOGLE_SERVICE_ACCOUNT_JSON",
+    "GOOGLE_REPORTING_SA_FILE",
+    "GSC_SA_FILE",
+    "GOOGLE_APPLICATION_CREDENTIALS",
+)
+
+
 def _parse_env_files_for_sa(repo_root: Optional[Path] = None) -> list[tuple[str, str]]:
     """Collect fallback GSC SA values from local/home env files without overriding env vars."""
     root = repo_root or Path.cwd()
@@ -143,7 +156,6 @@ def _parse_env_files_for_sa(repo_root: Optional[Path] = None) -> list[tuple[str,
         root / ".env",
         Path.home() / ".claude" / "secrets.env",
     ]
-    target_keys = ("GOOGLE_REPORTING_SA_JSON", "GOOGLE_REPORTING_SA_FILE", "GSC_SA_FILE")
     for ef in env_files:
         if not ef.is_file():
             continue
@@ -163,9 +175,9 @@ def _parse_env_files_for_sa(repo_root: Optional[Path] = None) -> list[tuple[str,
             v = v.strip()
             if len(v) >= 2 and v[0] == v[-1] and v[0] in ('"', "'"):
                 v = v[1:-1]
-            if k in target_keys and v:
+            if k in _SA_ENV_KEYS and v:
                 vals[k] = v
-        for k in target_keys:
+        for k in _SA_ENV_KEYS:
             if k in vals:
                 found.append((f"{ef}:{k}", vals[k]))
     return found
@@ -214,17 +226,46 @@ def _validate_sa_dict(info: object) -> tuple[bool, str]:
     return True, "ok"
 
 
+def _decode_sa_candidate(val: str) -> tuple[Optional[dict], Optional[str], bool]:
+    """Return (info_dict, err_msg, was_present). Handles inline JSON, base64 JSON, and file paths safely."""
+    if val.startswith("{") or ("private_key" in val and "client_email" in val):
+        try:
+            return json.loads(val), None, True
+        except json.JSONDecodeError as exc:
+            return None, f"invalid inline JSON ({exc.msg})", True
+    is_file = False
+    p = None
+    if len(val) < 1024 and "\n" not in val:
+        try:
+            p = Path(val).expanduser()
+            is_file = p.is_file()
+        except OSError:
+            is_file = False
+    if is_file and p is not None:
+        try:
+            return json.loads(p.read_text(encoding="utf-8")), None, True
+        except Exception as exc:
+            return None, f"({p}): invalid JSON ({exc})", True
+    compact = "".join(val.split())
+    if len(compact) >= 64 and "/" not in compact[:16] and not compact.endswith(".json"):
+        try:
+            padded = compact + "=" * (-len(compact) % 4)
+            decoded = base64.b64decode(padded, validate=False).decode("utf-8", errors="strict").strip()
+            if decoded.startswith("{"):
+                return json.loads(decoded), None, True
+        except Exception:
+            pass
+    return None, None, False
+
+
 def resolve_sa_info(sa_file_override: Optional[str] = None, repo_root: Optional[Path] = None) -> tuple[dict, str]:
     """Resolve and validate the first non-corrupt service-account dict across all configured sources.
     Exits 2 when no credentials exist anywhere, or 4 (CREDENTIAL_CORRUPT_NO_RETRY) when present keys are corrupt."""
     candidates: list[tuple[str, Optional[str]]] = []
     if sa_file_override:
         candidates.append(("--sa-file", sa_file_override))
-    candidates.extend([
-        ("env:GOOGLE_REPORTING_SA_JSON", os.environ.get("GOOGLE_REPORTING_SA_JSON")),
-        ("env:GOOGLE_REPORTING_SA_FILE", os.environ.get("GOOGLE_REPORTING_SA_FILE")),
-        ("env:GSC_SA_FILE", os.environ.get("GSC_SA_FILE")),
-    ])
+    for k in _SA_ENV_KEYS:
+        candidates.append((f"env:{k}", os.environ.get(k)))
     candidates.extend(_parse_env_files_for_sa(repo_root))
     candidates.append(("~/.claude/secrets/gsc-service-account.json", os.path.expanduser("~/.claude/secrets/gsc-service-account.json")))
 
@@ -237,22 +278,12 @@ def resolve_sa_info(sa_file_override: Optional[str] = None, repo_root: Optional[
         if val in seen_values:
             continue
         seen_values.add(val)
-        info = None
-        if val.startswith("{") or ("private_key" in val and "client_email" in val):
-            try:
-                info = json.loads(val)
-            except json.JSONDecodeError as exc:
-                errors.append(f"{label}: invalid inline JSON ({exc.msg})")
-                continue
-        else:
-            p = Path(val).expanduser()
-            if not p.is_file():
-                continue
-            try:
-                info = json.loads(p.read_text(encoding="utf-8"))
-            except Exception as exc:
-                errors.append(f"{label} ({p}): invalid JSON ({exc})")
-                continue
+        info, err, present = _decode_sa_candidate(val)
+        if not present:
+            continue
+        if err is not None:
+            errors.append(f"{label}: {err}")
+            continue
         ok, reason = _validate_sa_dict(info)
         if not ok:
             errors.append(f"{label}: {reason}")
@@ -276,25 +307,30 @@ def resolve_sa_info(sa_file_override: Optional[str] = None, repo_root: Optional[
 
 
 def _ensure_google_deps() -> None:
-    try:
-        import requests  # noqa: F401
-        from google.auth.transport.requests import Request  # noqa: F401
-        from google.oauth2 import service_account  # noqa: F401
+    import subprocess
+    probe = subprocess.run(
+        [sys.executable, "-c", "import requests; from google.auth.transport.requests import Request; from google.oauth2 import service_account; from cryptography.hazmat.primitives.asymmetric import rsa"],
+        stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,
+    )
+    if probe.returncode == 0:
         return
-    except ImportError:
-        import subprocess
-        for extra in (["--break-system-packages"], []):
-            try:
-                subprocess.check_call(
-                    [sys.executable, "-m", "pip", "install", "-q", "--disable-pip-version-check", *extra, "google-auth", "requests"],
-                    stdout=subprocess.DEVNULL,
-                    stderr=subprocess.DEVNULL,
-                )
-                import requests  # noqa: F401
-                from google.oauth2 import service_account  # noqa: F401
+    for extra in (["--break-system-packages", "--ignore-installed"], ["--ignore-installed"], ["--break-system-packages"], []):
+        try:
+            subprocess.check_call(
+                [sys.executable, "-m", "pip", "install", "-q", "--disable-pip-version-check", *extra, "cryptography", "cffi", "google-auth", "requests"],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
+            recheck = subprocess.run(
+                [sys.executable, "-c", "import requests; from google.oauth2 import service_account; from cryptography.hazmat.primitives.asymmetric import rsa"],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+            )
+            if recheck.returncode == 0:
                 return
-            except Exception:
-                continue
+        except Exception:
+            continue
 
 
 def load_credentials(sa_file_override: Optional[str] = None):

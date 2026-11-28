@@ -126,6 +126,24 @@ class GscCredentialValidationTest(unittest.TestCase):
         self.assertTrue(0 <= d1 < 120)
         self.assertEqual(d2, 0)  # runs at most once per site per process
 
+    def test_base64_encoded_sa_in_env_or_gsc_sa_b64_decodes_cleanly(self):
+        valid_json = json.dumps({"client_email": "b64@proj.iam.gserviceaccount.com", "private_key": _make_valid_shaped_pem()})
+        b64_val = base64.b64encode(valid_json.encode("utf-8")).decode("ascii")
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            clean = {k: "" for k in gsc._SA_ENV_KEYS}
+            clean["GSC_SA_B64"] = b64_val
+            with mock.patch.dict(os.environ, clean, clear=False):
+                info, label = gsc.resolve_sa_info(None, repo_root=root)
+            self.assertEqual(info["client_email"], "b64@proj.iam.gserviceaccount.com")
+            self.assertEqual(label, "env:GSC_SA_B64")
+            clean2 = {k: "" for k in gsc._SA_ENV_KEYS}
+            clean2["GOOGLE_REPORTING_SA_JSON"] = b64_val
+            with mock.patch.dict(os.environ, clean2, clear=False):
+                info2, label2 = gsc.resolve_sa_info(None, repo_root=root)
+            self.assertEqual(info2["client_email"], "b64@proj.iam.gserviceaccount.com")
+            self.assertEqual(label2, "env:GOOGLE_REPORTING_SA_JSON")
+
 
 if __name__ == "__main__":
     unittest.main()
