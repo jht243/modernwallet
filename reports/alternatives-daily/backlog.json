@@ -5760,10 +5760,21 @@
           "at": "2026-11-28T17:09:18+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-28T17:18:26+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-28T17:01:57+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-28T17:18:26+00:00",
       "claimedOn": "2026-11-28",
       "attempts": 1,
       "lastNextAt": "2026-11-28T16:39:45+00:00",
@@ -5810,7 +5821,11 @@
           }
         ],
         "recordedAt": "2026-11-28T17:09:18+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/stripe/",
+      "commit": "00ab218c",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-28"
     },
     {
       "vendor": "Expensify",
@@ -5851,10 +5866,21 @@
           "at": "2026-11-28T17:09:19+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-28T17:18:26+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-28T17:01:57+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-28T17:18:26+00:00",
       "claimedOn": "2026-11-28",
       "attempts": 1,
       "lastNextAt": "2026-11-28T16:39:45+00:00",
@@ -5901,7 +5927,11 @@
           }
         ],
         "recordedAt": "2026-11-28T17:09:19+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/expensify/",
+      "commit": "00ab218c",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-28"
     },
     {
       "vendor": "Square",
@@ -5942,10 +5972,21 @@
           "at": "2026-11-28T17:09:18+00:00",
           "status": "in_progress",
           "note": "audit FAIL"
+        },
+        {
+          "at": "2026-11-28T17:18:26+00:00",
+          "status": "published",
+          "note": "live-verified",
+          "fields": [
+            "commit",
+            "indexnow",
+            "liveUrl",
+            "seoUpgraded"
+          ]
         }
       ],
-      "status": "in_progress",
-      "updatedAt": "2026-11-28T17:01:57+00:00",
+      "status": "published",
+      "updatedAt": "2026-11-28T17:18:26+00:00",
       "claimedOn": "2026-11-28",
       "attempts": 1,
       "lastNextAt": "2026-11-28T16:39:45+00:00",
@@ -6006,7 +6047,11 @@
           }
         ],
         "recordedAt": "2026-11-28T17:09:18+00:00"
-      }
+      },
+      "liveUrl": "https://www.themodernwallet.com/alternatives/square/",
+      "commit": "00ab218c",
+      "indexnow": "submitted",
+      "seoUpgraded": "2026-11-28"
     },
     {
       "vendor": "Current",
