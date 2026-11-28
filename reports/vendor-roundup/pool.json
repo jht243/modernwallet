@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24T16:09:57.659Z",
+  "generated": "2026-11-28T16:09:09.117Z",
   "rows": [
     {
       "vertical": "dataannotation-alternatives",
@@ -15,8 +15,8 @@
       "label": "AI investing apps",
       "roundupSlug": "best-ai-investing-apps",
       "route": "ENRICH",
-      "qualified": 16,
-      "listed": 15,
+      "qualified": 15,
+      "listed": 14,
       "missing": [
         {
           "domain": "ainvest.com",
@@ -89,8 +89,8 @@
       "label": "money market accounts",
       "roundupSlug": "best-money-market-accounts",
       "route": "ENRICH",
-      "qualified": 16,
-      "listed": 14,
+      "qualified": 15,
+      "listed": 13,
       "missing": [
         {
           "domain": "53.com",
@@ -315,8 +315,8 @@
       "label": "student loan refinance companies",
       "roundupSlug": "best-student-loan-refinance",
       "route": "ACCRUE",
-      "qualified": 9,
-      "listed": 9,
+      "qualified": 8,
+      "listed": 8,
       "missing": []
     },
     {
@@ -325,7 +325,7 @@
       "roundupSlug": "best-secured-credit-cards",
       "route": "ENRICH",
       "qualified": 8,
-      "listed": 6,
+      "listed": 7,
       "missing": [
         {
           "domain": "bankatfirst.com",
@@ -336,16 +336,6 @@
           "has_pricing": false,
           "serp_rank": 10,
           "primary_email": "client.service@bankatfirst.com"
-        },
-        {
-          "domain": "oneunited.com",
-          "name": "UNITY® Visa Secured Credit Card",
-          "site_url": "https://oneunited.com",
-          "one_liner": "A secured card is designed to repair damaged credit or start from scratch.Since approval relies on a deposit rather than a high credit score, it provides ... Read more",
-          "site_kind": "vendor",
-          "has_pricing": false,
-          "serp_rank": 11,
-          "primary_email": null
         }
       ]
     },
@@ -398,21 +388,10 @@
       "vertical": "invoice-factoring-companies",
       "label": "invoice factoring companies",
       "roundupSlug": "best-invoice-factoring-companies",
-      "route": "ENRICH",
+      "route": "ACCRUE",
       "qualified": 33,
-      "listed": 32,
-      "missing": [
-        {
-          "domain": "factoringfast.com",
-          "name": "Invoice Factoring Company, can get your business ...",
-          "site_url": "https://factoringfast.com",
-          "one_liner": "Our invoice factoring service allows you to get paid when you generate your invoices, despite when your customer actually pays the invoice. This service ... Read more",
-          "site_kind": "vendor",
-          "has_pricing": false,
-          "serp_rank": 17,
-          "primary_email": "admin@factoringfast.com"
-        }
-      ]
+      "listed": 33,
+      "missing": []
     },
     {
       "vertical": "business-line-of-credit-rates-by-lender",
