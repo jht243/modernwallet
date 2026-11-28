@@ -1,0 +1,69 @@
+6-11-28-surprise-billing/research/sources/cms-medical-bill-rights.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/b98eaf3e042c4e2848e85bdb4dde158843ed67164fe3d5023d93f2d6d063e6f9/cms-nosurprises-consumers.txt",
+      "sha256": "b98eaf3e042c4e2848e85bdb4dde158843ed67164fe3d5023d93f2d6d063e6f9",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-nosurprises-consumers.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/bc86c6d14cb047136d65b8910cd56b4f7ccfcba5a12b10688f9716efca292e3c/cms-nosurprises.txt",
+      "sha256": "bc86c6d14cb047136d65b8910cd56b4f7ccfcba5a12b10688f9716efca292e3c",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-nosurprises.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/f529d77864bc10ff884aa3bb214e6d2e3b5440852b635b558d1555ccc9088f0b/cms-overview-rules-fact-sheets.txt",
+      "sha256": "f529d77864bc10ff884aa3bb214e6d2e3b5440852b635b558d1555ccc9088f0b",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-overview-rules-fact-sheets.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/f2cb8a7ce90e62f6023325976e6d470a59db35118ccaabe902abb55eaed81f99/cms-read-eob.txt",
+      "sha256": "f2cb8a7ce90e62f6023325976e6d470a59db35118ccaabe902abb55eaed81f99",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-read-eob.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/b6b940c32854811e8a570e4c92ce3b1ed78d5e0899d9fcb5579adb2e3bd6ff94/cms-submit-complaint.txt",
+      "sha256": "b6b940c32854811e8a570e4c92ce3b1ed78d5e0899d9fcb5579adb2e3bd6ff94",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Inspected primary-source and preparation evidence",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-submit-complaint.txt"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/071224f093c6d7fd16b52680eb4637e0270165868674f88ec59b825465d1a378/review.json",
+      "sha256": "071224f093c6d7fd16b52680eb4637e0270165868674f88ec59b825465d1a378",
+      "checkedAt": "2026-11-28T17:13:16.317909+00:00",
+      "refreshWhen": "Whenever primary evidence or approved plan changes",
+      "scope": "Recorded independent Phase 4 rendered-page audit report",
+      "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/audit/review.json"
+    }
+  ],
+  "reviewCounters": {
+    "reviews": 0,
+    "reworks": 1
+  },
+  "siteId": "jht243/modernwallet",
+  "snapshot": {
+    "path": "reports/x-trends/runs/2026-11-28-surprise-billing/blobs/c5982c535dae2e41b71d17d58e4619e3b6694d2ae77db1948071a54cc181ec2a/preview-snapshot-r2.json",
+    "sha256": "c5982c535dae2e41b71d17d58e4619e3b6694d2ae77db1948071a54cc181ec2a",
+    "originPath": "reports/x-trends/runs/2026-11-28-surprise-billing/audit/preview-snapshot-r2.json"
+  },
+  "findings": [],
+  "resolvedFindingIds": [],
+  "handoff": {
+    "path": "reports/x-trends/runs/2026-11-28-surprise-billing/handoff-audit-r2.json",
+    "sha256": "e0082767690f4a3aa8293689daaacd3ca33af484ca54a43ce456830d71ba81b7"
+  }
+}
+

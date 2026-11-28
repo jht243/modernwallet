@@ -1,0 +1,82 @@
+{
+  "jobId": "xtrends-2026-11-28-surprise-billing",
+  "reviewer": "mindmap-chart-reviewer",
+  "round": 1,
+  "manifestSha256": "8b485f0f97795409991e87599379ace0a4a0bfd027ab827ad37f967555ce462c",
+  "manifestFileSha256": "e546eed1bc46de5436dc00b89781c55c4a3787b500b191c9f2a2fcd4be1e8a7b",
+  "readinessSha256": "07959d226d5df0c29282716ff6604497c29870497a27857a8b12e5c92a43bbe7",
+  "verdict": "PASS",
+  "evidence": "Independent Round-1 review (unattended 1-pass). Preflight: own bundle preflight-chart-review, warm reuse, check=delivery-complete-sources-current. Duplicate: re-ran scripts/mindmap/coverage_lookup.py --site-url https://www.themodernwallet.com with the ACTUAL target slug and a second phrasing: 'Possible existing homes: none found' (898 repo pages / 919 sitemap routes), no redirects, no commits; BUILD's saved lookup used a different slug (/guides/no-surprises-act-surprise-medical-bills) but result reproduces. Grep of src/data finds only the one paragraph at guides.ts:8693 inside how-to-deal-with-medical-debt (reader goal: pay/reduce a balance; no notice-and-consent, specialist exemptions, ground ambulance, insured vs uninsured split). New page justified; no duplicate collision; link-only edits to that guide acceptable. Sources: read all 12 saved CMS captures from disk (no live refetch needed; all 23 manifest evidence hashes match). Verified: protected settings list and in-network hospital/HOPD/ASC wording, ER in-network cost-sharing wording, notice-and-consent ban for anesthesiology/pathology/radiology/neonatology/diagnostic-lab/emergency medicine/assistant surgeons/hospitalists/intensivists, doctor's-office and out-of-network-facility exclusions, excluded plan types, ground ambulance exception plus 10-state list dated Nov 15 2021, good faith estimate (uninsured or not using insurance, 3 business days, $400 per provider estimate, 120 days, estimate per provider), EOB fields and 'bill should not be higher than Patient Balance', check-errors steps, Help Desk 1-800-985-3059 and 60-day contact language, complaint documents list. Gap found: the saved CMS pages state the 'no more than in-network cost-sharing' cap only for emergency room care; for non-emergency care at in-network facilities they say 'protected from unexpected out-of-network bills/charges' and 'balance billing protections' without that phrase. The manifest opening answer and takeaway state the cost-sharing cap for anesthesiologist/radiology/lab care, which is not traceable to a saved page (REQ-5 requires every claim to trace). Recorded as finding CR-1 for WRITE/AUDIT guardrails. Other checks passed: exclusions honest (viral x.com posts untrusted, unsourced collections/deductible/credit claims excluded); testing excluded and no tested/howWeTested claims (medical/legal/financial, _testing-labels.md); evidence basis 'reported' with visible CMS attribution; takeaway answers informational/how-to intent with applicability, evidence basis and flip conditions (_decision-evidence.md); demand honestly labeled estimate/unmeasured and SERP unread; link plan has 2 inbound and 2 outbound, inspection hashes verified, target sections exist (guides.ts 'Records for Your Reimbursement Checklist'); title 58 chars; no Conclusion/Summary heading; disclaimer last; HIGH tier consistent with Content Review Policy; no professionalReviewRequired and no medical dosing/treatment content, so no direct-harm block.",
+  "findings": [
+    {
+      "id": "CR-1",
+      "severity": "high",
+      "category": "source-trace",
+      "status": "open",
+      "finding": "In-network cost-sharing cap for non-emergency specialist care is not stated by any saved CMS capture (only ER section says 'can't be charged any more ... than the in-network cost-sharing rate'). Manifest answer/takeaway and REQ-1 acceptance ('with CMS wording') assert it for anesthesia/radiology/lab at in-network facilities.",
+      "fix": "WRITE must use CMS's own wording for non-emergency care ('protected from unexpected out-of-network bills/charges' and 'balance billing protections' at in-network hospital, hospital outpatient department, ambulatory surgical center) and attribute the explicit 'no more than the in-network cost-sharing rate' sentence to emergency care only (hospital, providers, air ambulance provider when taken to the ER). Do not state a dollar or cost-sharing formula for planned care, or deductible crediting, unless a verbatim federal primary source is first saved to research/sources and added to the closed fact list. Keep 'in most cases'/'generally' qualifiers."
+    },
+    {
+      "id": "CR-2",
+      "severity": "medium",
+      "category": "source-trace",
+      "status": "open",
+      "finding": "60-day language is CMS saying it will get in touch within 60 days IF it needs more information; it is not a resolution deadline. Notice-and-consent ban applies to being ASKED to sign for listed specialties, not to every consent scenario.",
+      "fix": "Word the 60 days exactly as 'if the Help Desk needs more information it will contact you within 60 days'; call 1-800-985-3059 with the confirmation number for status. Say specialists listed by CMS are not allowed to ask for a notice and consent form, and that an in-network provider shortage also bars the form."
+    },
+    {
+      "id": "CR-3",
+      "severity": "medium",
+      "category": "scope",
+      "status": "open",
+      "finding": "Ground ambulance state list is dated and Medicare/Medicaid/VA/TRICARE/IHS, collections, credit reporting and deductible crediting are unsourced beyond one line each.",
+      "fix": "Present the 10 states 'as of November 15, 2021' with a check-current-state-law caveat; Medicare/Medicaid/VA/TRICARE/IHS row says only CMS's 'already protect you from some unexpected out-of-network bills'; FAQ on collections states CMS pages do not address it and points to the Help Desk; no instruction to ignore, refuse to pay or tear up a bill; no individualized advice; 'reprocess' labeled a practical step, CMS says only to contact the plan, which 'might be able to fix billing errors'."
+    },
+    {
+      "id": "CR-4",
+      "severity": "low",
+      "category": "overlap",
+      "status": "open",
+      "finding": "Existing paragraph in how-to-deal-with-medical-debt (guides.ts:8693) already states the uninsured good faith estimate $400 rule and the help desk number; new page must stay consistent and not rewrite that guide.",
+      "fix": "Phase 6 link-only sentence beside that paragraph, dates preserved; keep $400, 3 business days and 1-800-985-3059 wording identical in substance; cite the same CMS URL family."
+    },
+    {
+      "id": "CR-5",
+      "severity": "low",
+      "category": "evidence-label",
+      "status": "open",
+      "finding": "Demand is autocomplete estimate only and SERP/PAA unread; page must not imply measured volume, 'tested', 'we verified with the plan' or any first-hand testing.",
+      "fix": "Keep visible attribution 'Based on CMS pages read in full on 2026-11-28'; table is labeled our synthesis of CMS text; no TESTED label, howWeTested, byline claim of review by a clinician or attorney; disclaimer as last element only."
+    }
+  ],
+  "resolvedFindingIds": [],
+  "requestCoverage": [
+    {
+      "requirementId": "REQ-1",
+      "status": "PASS",
+      "evidence": "Settings, specialist exemptions from notice-and-consent and facility limits verified in cms-know-your-rights-insurance.txt; PASS subject to CR-1 (cost-sharing cap wording for planned care must follow CMS text)."
+    },
+    {
+      "requirementId": "REQ-2",
+      "status": "PASS",
+      "evidence": "GFE rule verified in cms-know-your-rights-without-insurance.txt ($400 per provider, 120 days, uninsured or not using insurance); ground ambulance exception and 10-state list (dated 2021-11-15) verified in cms-ground-ambulance-bill.txt."
+    },
+    {
+      "requirementId": "REQ-3",
+      "status": "PASS",
+      "evidence": "EOB fields, check-errors steps, Help Desk number, documents list and 60-day contact language verified in cms-read-eob/check-bill-errors/submit-complaint; see CR-2 and CR-3 for wording limits."
+    },
+    {
+      "requirementId": "REQ-4",
+      "status": "PASS",
+      "evidence": "Independent coverage_lookup with actual slug and --site-url: no existing home; only one paragraph in the medical-debt guide; dedicated page justified."
+    },
+    {
+      "requirementId": "REQ-5",
+      "status": "PASS",
+      "evidence": "Claims trace to saved CMS pages except the planned-care cost-sharing phrasing (CR-1, guardrail); no testing claims; HIGH tier; disclaimer last."
+    }
+  ],
+  "atReviewLimit": true,
+  "priorVerdictRetained": "FAIL"
+}

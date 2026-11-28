@@ -75,6 +75,11 @@ export const REVIEWER_NOTES: Record<string, ReviewerNoteEntry> = {
     reviewedDate: "November 27, 2026",
     note: "The trap after the first month is that Upstart shows its fee only after a rate check, so a borrower who budgeted for the full loan amount can receive less cash than expected. Anyone who needs the exact proceeds fixed in advance, or needs a loan under $1,000, should walk away from this page and read each lender's disclosure first.",
   },
+  "/guides/surprise-anesthesia-bill-no-surprises-act/": {
+    label: "Publisher's Take",
+    reviewedDate: "November 28, 2026",
+    note: "Before you pay a surprise anesthesia bill, line it up against the Patient Balance on your EOB, since CMS says the bill shouldn't be higher. If the numbers don't match, call your plan first, then the No Surprises Help Desk at 1-800-985-3059 with both papers in hand.",
+  },
 
 };
 

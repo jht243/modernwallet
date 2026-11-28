@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "query": "Can an out-of-network anesthesiologist at my in-network hospital bill me more than my in-network cost-sharing, and what can I actually refuse under the No Surprises Act? [PAA unavailable (DataForSEO off, 0 reads); ac 5/40 \"what if my anesthesiologist is out of network\" + \"can anesthesiologist out of network bill patients\"; intake bullet is the demand signal]",
+  "searchQuery": "Can an out-of-network anesthesiologist at my in-network hospital bill me more than my in-network cost-sharing, and what can I actually refuse under the No Surprises Act?",
+  "contextQueries": [],
+  "publisher": "www.themodernwallet.com",
+  "bankSha256": "844e3387ef4c23f3bd1907dd3f62af8592ee2341f93d4842edd1c49687c262b4",
+  "experienceSha256": "f434b01c0528011425795dd52369f64413f6794de89191130c700c632f9ca90a",
+  "localExperience": "Read .claude/commands/_experience.md as internal permission context; its named client examples are private and superseded by the local anonymity rule.",
+  "experienceCatalog": {
+    "path": ".claude/commands/_experience-catalog.json",
+    "sha256": "c30a58024d315337815abe52a4065e486d1c0b95869c03ecd91cd934ad743ac6",
+    "recordsSearched": 95
+  },
+  "candidates": [
+    {
+      "record": {
+        "id": "example-037",
+        "publicDescription": "A financial-management and professional-referral business",
+        "relationship": "Client projects",
+        "topic": "Professional referral & client workflows",
+        "workSummary": "A client-intake application and a proposed professional-network search and referral tool. Project code and a referral-tool proposal/invoice trail are present.",
+        "possibleUses": "Client onboarding, controlled-access workflows, referral matching and turning an existing professional network into searchable records.",
+        "evidenceStatus": "Implementation or prototype files + project records",
+        "limits": "The records describe the build. Claims about time saved, revenue, adoption or deployment need their own supporting record.",
+        "outcomeLeads": [],
+        "privateTestimonialRecords": 0,
+        "verification": "Discovery material. Inspect the supporting record or establish the finding during this run before claiming an outcome. A possible use is not a fact."
+      },
+      "topicMatches": [
+        "network"
+      ],
+      "matchSources": {
+        "question": [
+          "network"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    },
+    {
+      "record": {
+        "id": "example-038",
+        "publicDescription": "A business advisory firm identifying distressed-company opportunities",
+        "relationship": "Client projects",
+        "topic": "Business-development intelligence",
+        "workSummary": "A distress-intelligence dashboard with a signed engagement, source integrations, company matching, prioritization and contact enrichment.",
+        "possibleUses": "Joining signals about the same company, prioritizing actionable opportunities and using lower-cost data sources.",
+        "evidenceStatus": "Implementation or prototype files + project records",
+        "limits": "Use the exact agreed and delivered work. The engagement letter excludes bankruptcy court-filing monitoring; do not claim that feature from an earlier broader vision.",
+        "outcomeLeads": [],
+        "privateTestimonialRecords": 0,
+        "verification": "Discovery material. Inspect the supporting record or establish the finding during this run before claiming an outcome. A possible use is not a fact."
+      },
+      "topicMatches": [
+        "cost"
+      ],
+      "matchSources": {
+        "question": [
+          "cost"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    },
+    {
+      "record": {
+        "id": "fleet-jet",
+        "publicDescription": "Jet & Beyond",
+        "relationship": "Fleet sites",
+        "topic": "Private aviation",
+        "workSummary": "Private-jet cost calculator, operator research, jet-card and aircraft comparisons.",
+        "possibleUses": "Cost modeling and comparing ownership, charter and card scenarios.",
+        "evidenceStatus": "Public portfolio + local project",
+        "limits": "This supports experience building and operating the site, not a claim that we personally tested every product or performed the professional service it describes.",
+        "outcomeLeads": [],
+        "privateTestimonialRecords": 0,
+        "verification": "Discovery material. Inspect the supporting record or establish the finding during this run before claiming an outcome. A possible use is not a fact."
+      },
+      "topicMatches": [
+        "cost"
+      ],
+      "matchSources": {
+        "question": [
+          "cost"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    },
+    {
+      "record": {
+        "id": "fleet-layer3labs",
+        "publicDescription": "Layer3Labs",
+        "relationship": "Fleet sites",
+        "topic": "AI implementation & business software",
+        "workSummary": "AI-tool guides, comparisons, business calculators and automated publishing. Existing growth case-study source data.",
+        "possibleUses": "Automating research and publishing; AI-tool cost modeling; operating a content portfolio.",
+        "evidenceStatus": "Public portfolio + local project",
+        "limits": "This supports experience building and operating the site, not a claim that we personally tested every product or performed the professional service it describes.",
+        "outcomeLeads": [
+          {
+            "metric": "Organic Search sessions",
+            "periods": [
+              "June 2026",
+              "September 2026"
+            ],
+            "values": [
+              655,
+              115644
+            ],
+            "basis": "Existing local case-study data. These are search sessions, not unique people or AI citations. The data alone do not show which change caused the growth."
+          }
+        ],
+        "privateTestimonialRecords": 0,
+        "verification": "Discovery material. Inspect the supporting record or establish the finding during this run before claiming an outcome. A possible use is not a fact."
+      },
+      "topicMatches": [
+        "cost"
+      ],
+      "matchSources": {
+        "question": [
+          "cost"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    },
+    {
+      "record": {
+        "id": "fleet-load",
+        "publicDescription": "Under the Load",
+        "relationship": "Fleet sites",
+        "topic": "Fitness equipment",
+        "workSummary": "Buying guides and calculators for weighted vests, rucking packs and walking pads.",
+        "possibleUses": "Specification comparisons and transparent load calculations.",
+        "evidenceStatus": "Public portfolio + local project",
+        "limits": "This supports experience building and operating the site, not a claim that we personally tested every product or performed the professional service it describes. Preserve the site’s medical, health or subject-specific restrictions.",
+        "outcomeLeads": [],
+        "privateTestimonialRecords": 0,
+        "verification": "Discovery material. Inspect the supporting record or establish the finding during this run before claiming an outcome. A possible use is not a fact."
+      },
+      "topicMatches": [
+        "under"
+      ],
+      "matchSources": {
+        "question": [
+          "under"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    },
+    {
+      "record": {
+        "id": "fleet-medical",
+        "publicDescription": "Medical Frontier",
+        "relationship": "Fleet sites",
+        "topic": "Medical information",
+        "workSummary": "Regenerative-medicine guides covering costs, rules, insurance and clinic evaluation.",
+        "possibleUses": "Research organization, cost comparisons and reader decision tools.",
+        "evidenceStatus": "Public portfolio + local project",
+        "limits": "This supports experience building and operating the site, not a claim that we personally tested every product or performed the professional service it describes. Preserve the site’s medical, health or subject-specific restrictions.",
+        "outcomeLeads": [],
+        "privateTestimonialRecords": 0,
+        "verification": "Discovery material. Inspect the supporting record or establish the finding during this run before claiming an outcome. A possible use is not a fact."
+      },
+      "topicMatches": [
+        "cost"
+      ],
+      "matchSources": {
+        "question": [
+          "cost"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    },
+    {
+      "record": {
+        "id": "fleet-nomad",
+        "publicDescription": "Get ZEN",
+        "relationship": "Fleet sites",
+        "topic": "Digital-nomad travel",
+        "workSummary": "Visa, cost-of-living, connectivity, safety and crypto information for remote workers.",
+        "possibleUses": "Maintaining country and city research and comparing travel costs.",
+        "evidenceStatus": "Local project + site identity",
+        "limits": "This supports experience building and operating the site, not a claim that we personally tested every product or performed the professional service it describes.",
+        "outcomeLeads": [],
+        "privateTestimonialRecords": 0,
+        "verification": "Discovery material. Inspect the supporting record or establish the finding during this run before claiming an outcome. A possible use is not a fact."
+      },
+      "topicMatches": [
+        "cost"
+      ],
+      "matchSources": {
+        "question": [
+          "cost"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    },
+    {
+      "record": {
+        "id": "fleet-prayer",
+        "publicDescription": "Find A Prayer",
+        "relationship": "Fleet sites",
+        "topic": "Faith & publishing",
+        "workSummary": "Scripture-based prayers organized by need and occasion.",
+        "possibleUses": "Building searchable content collections and sharing tools.",
+        "evidenceStatus": "Public portfolio + local project",
+        "limits": "This supports experience building and operating the site, not a claim that we personally tested every product or performed the professional service it describes.",
+        "outcomeLeads": [],
+        "privateTestimonialRecords": 0,
+        "verification": "Discovery material. Inspect the supporting record or establish the finding during this run before claiming an outcome. A possible use is not a fact."
+      },
+      "topicMatches": [
+        "sharing"
+      ],
+      "matchSources": {
+        "question": [
+          "sharing"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    },
+    {
+      "record": {
+        "id": "fleet-repair",
+        "publicDescription": "DIY Repair Guide",
+        "relationship": "Fleet sites",
+        "topic": "Home repair",
+        "workSummary": "Repair guides, diagrams, dimension charts and repair-cost information.",
+        "possibleUses": "Building troubleshooting content and cost-estimation tools.",
+        "evidenceStatus": "Public portfolio + local project",
+        "limits": "This supports experience building and operating the site, not a claim that we personally tested every product or performed the professional service it describes.",
+        "outcomeLeads": [],
+        "privateTestimonialRecords": 0,
+        "verification": "Discovery material. Inspect the supporting record or establish the finding during this run before claiming an outcome. A possible use is not a fact."
+      },
+      "topicMatches": [
+        "cost"
+      ],
+      "matchSources": {
+        "question": [
+          "cost"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    }
+  ],
+  "privateClientContext": [],
+  "instruction": "This catalog is one optional source, not the sole source or a source-count target. Combine as many relevant sources as needed: experience, internal modeling/calculations, actual survey records, primary documents, external research and executed tasks. Verify each claim, retain its own evidence basis and record actual sources in sourceArtifacts. No relevant case means use other supported sources, not force a case or stop. Never publish client identities or searchable testimonial text; preserve local exclusions and the terminal no-addition branch."
+}

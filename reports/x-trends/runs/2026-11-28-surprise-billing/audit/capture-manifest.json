@@ -1,0 +1,26 @@
+{
+  "workflowKind": "mindmap-pass",
+  "author": "mindmap-writer",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "routes": [
+    {
+      "path": "/guides/surprise-anesthesia-bill-no-surprises-act",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/how-to-deal-with-medical-debt",
+      "claimCategories": [
+        "ordinary"
+      ]
+    },
+    {
+      "path": "/guides/hsa-fsa-reimbursement-checklist",
+      "claimCategories": [
+        "ordinary"
+      ]
+    }
+  ],
+  "jobId": "xtrends-2026-11-28-surprise-billing"
+}

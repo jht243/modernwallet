@@ -1,0 +1,20 @@
+coverage_lookup: 1 candidate(s) vs 898 repo pages / 919 sitemap routes (https://www.themodernwallet.com) / 0 redirects / 1345 past-chart lines
+
+### /guides/no-surprises-act-surprise-medical-bills  — row - · create new content
+keyword: surprise medical bill no surprises act anesthesiologist out-of-network
+reader question (new page intent): What does the No Surprises Act let me refuse on a surprise anesthesia bill from an in-network hospital?
+lookup terms: no surprise act medical bill anesthesiologist out network   format cues: -
+
+Possible existing homes: none found in the repo page data, the search index or the sitemaps.
+
+Redirects (topic deliberately merged elsewhere): none
+Past mindmap charts mentioning these terms:
+- 2026-11-16-xtrends.md [table] | Lens 1 direct intent plus release news (Google blog Nov 13 2026). lookup: no match in repo, sitemap or past charts; /roundup/best-budgeting-apps is an app ranking (different reader goal). Autocomplete question sweep ru
+- 2026-11-23-xtrends.md [table] | Lens 1 direct intent + news-driven (brief bullet 2). Autocomplete (estimate, NOT measured): 'credit card interest cap trump', 'credit card interest cap when does it start' (31 completions). lookup: EXACT SLUG /credit-c
+- 2026-11-25-search-gap.md [table] | Direct intent (6 search events from /investing/, one visitor refining one question). Cluster: dividend stock vs S&P 500 index stock; members 'dividend stocks vs s&p 500', 'dividend stock vs index fund', 'are dividend s
+- 2026-11-25-tool-usage.md [table] | lookup: no existing page for the intent (coverage_lookup: no possible home); closest /guides/tax-loss-harvesting (how harvesting works, not a multi-year carryforward schedule) and /stock-capital-gains-tax-calculator/ (
+- 2026-11-26-xtrends.md [exclusions] - Allstate stock, lawsuits, data breach, switching-insurer rate comparisons and premium figures: no sourced inputs; out of scope.
+- 2026-11-27-xtrends.md [exclusions] - Candidate 2 Ofgem price cap +26%: dropped, UK energy regulation with GBP figures a US reader cannot act on; Ofgem figures verified (research/sources/ofgem.txt) but no site home or US intent.
+Commits naming the topic: none
+Same run overlap: none
+

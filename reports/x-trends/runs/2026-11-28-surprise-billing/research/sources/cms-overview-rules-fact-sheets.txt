@@ -1,0 +1,108 @@
+URL: https://www.cms.gov/initiatives/no-surprise-billing/overview/policies-resources/overview-rules-fact-sheets
+Retrieved: 2026-11-28T16:50:48.722052Z
+
+
+ Overview of rules & fact sheets | CMS
+ Overview of rules & fact sheets 
+Rules focused on specific protections and provisions
+In July, 2021, the U.S. Departments of Health and Human Services, Labor, and the Treasury (the Departments) released the “Requirements Related to Surprise Billing; Part I,” to restrict surprise billing for patients in job-based and individual health plans who get emergency care, non-emergency care from out-of-network providers at in-network facilities, and air ambulance services from out-of-network providers.
+In October, 2021, the Departments released the “Requirements Related to Surprise Billing; Part II,” which provides additional protections against surprise medical bills, including:
+Establishing an independent dispute resolution (IDR) process to determine out-of-network payment amounts between providers (including air ambulance providers) or facilities and health plans.
+Requiring good-faith estimates of medical items or services for uninsured (or self-paying) individuals.
+Establishing a patient-provider dispute resolution process for uninsured (or self-paying) individuals to determine payment amounts due to a provider or facility under certain circumstances.
+Providing a way to appeal certain health plan decisions.
+On August 19, 2022, the Departments issued final rules titled “Requirements Related to Surprise Billing: Final Rules.” The rules finalize requirements under the July 2021 interim final rules relating to information that group health plans and health insurance issuers offering group or individual health insurance coverage must share about the qualifying payment amount (QPA). On February 23, 2022, in Texas Medical Association, et al. v. United States Department of Health and Human Services, and July 26, 2022, in LifeNet, Inc. v. United States Department of Health and Human Services, the United States District Court for the Eastern District of Texas (District Court) vacated portions of the October 2021 interim final rules related to payment determinations under the Federal IDR process. In light of the Court’s rulings and comments received, these rules also finalize select requirements under the October 2021 interim final rules related to consideration of information when a certified IDR entity makes a payment determination. Learn more about the status of the IDR system implementation (PDF).
+On December 21, 2023, the Departments issued a final rule titled Federal Independent Dispute Resolution (IDR) Process Administrative Fee and Certified IDR Entity Fee Ranges. This rule outlines the fees established in the No Surprises Act for the Federal IDR process. The rule amends existing regulations to provide that the administrative fee amount charged by the Departments to participate in the Federal IDR process, and the ranges for certified IDR entity fees for single and batched determinations, will be established by the Departments in notice and comment rulemaking, rather than in guidance published annually. This rule also sets the amount of the administrative fee and the certified IDR entity fee ranges for disputes initiated on or after January 22, 2024. Read the Federal IDR Process Administrative Fee and Certified IDR Entity Fee Ranges Rule to learn more. The updated certified IDR entity fees will be posted to the List of certified IDR entities page when finalized.
+In November, 2021, the “Prescription Drug and Health Care Spending” interim final rule was issued, implementing new requirements for group health plans and issuers to submit certain information about prescription drug and health care spending. This includes, among other things, information on the most frequently dispensed and costliest drugs, and enrollment and premium information, including average monthly premiums paid by employees versus employers.
+In May, 2026, the Departments released “Federal Independent Dispute Resolution Operations; Final Rules (PDF),” to improve the functioning of the Federal IDR process by streamlining communication between payers, providers, and certified IDR entities and clarifying timelines and processes.
+Together, these lay the groundwork to provide consumers with protection against surprise billing.
+How do these rules affect providers, facilities, and air ambulance providers?
+Similar to health plans, the rules lay out the IDR process that providers, facilities, and air ambulance providers can follow in the case of certain out-of-network claims when open negotiations don’t result in an agreed-upon payment amount. Providers, facilities and air ambulance providers will be required to meet deadlines, attest to no conflicts of interest, choose a certified IDR entity, submit a payment offer and provide additional information if needed. This could include information like level of training, experience, and severity of condition.
+Providers, facilities and air ambulance providers are also required to give uninsured (or self-pay) individuals good-faith estimates of expected charges for scheduled health care services, and may have to participate in a patient-provider payment dispute resolution process if their billed charges are higher than the good-faith estimates.
+Request for Information
+On September 16, 2022, the Departments issued a Request for Information (RFI) to inform rulemaking on the No Surprises Act requirements related to the advanced explanation of benefits (AEOB) and good faith estimate (GFE) for covered individuals. This RFI seeks information and recommendations on transferring data from providers and facilities to plans, issuers, and carriers; other policy approaches; and the economic impacts of implementing these requirements. Read the Advanced Explanation of Benefits RFI to learn more. Comments can be submitted through November 15, 2022.
+Proposed rules
+On October 27, 2023, a proposed rule was released proposing new processes and polices related to operation of the Federal independent dispute resolution (IDR) process. This proposed rule would alter aspects of the Federal IDR process authorized under the No Surprises Act to expedite the processing of disputes by certified IDR entities. Read the Federal IDR Process Operations Proposed Rule to learn more about the proposed requirements. 
+On September 10, 2021, a proposed rule was released on the reporting of air ambulance costs, insurance agent and broker compensation, and enforcement of various requirements as a part of continuing efforts to implement provisions to protect patients from surprise billing. Read the Air Ambulance NPRM – Fact Sheet to learn more about the proposed requirements.
+Fact sheets
+July 1, 2021 Fact Sheet: What You Need to Know about the Biden-Harris Administration’s Actions to Prevent Surprise Billing
+July 1, 2021 Fact Sheet: Requirements Related to Surprise Billing; Part I Interim Final Rule with Comment Period
+September 30, 2021 Fact Sheet: What You Need to Know about the Biden-Harris Administration’s Actions to Prevent Surprise Billing – September Update
+November 17, 2021 Fact Sheet: Prescription Drug and Health Care Spending Interim Final Rule with Comment Period
+April 15, 2022 Fact Sheet: Requirements Related to Surprise Billing; Part II Interim Final Rule with Comment Period
+August 19, 2022: Fact Sheet: Requirements Related to Surprise Billing: Final Rules
+October 27, 2023: Fact Sheet: No Surprises Act Independent Dispute Resolution Process Proposed Rule
+May 26, 2026: Fact Sheet: No Surprises Act Independent Dispute Resolution Process Operations Final Rules
+Fact sheets for consumers can be found on CMS.gov/Medical-Bill-Rights under Get Help.
+Guidance & technical resources
+Independent dispute resolution process
+Starting November 13, 2026, IDR Gateway users (parties and their representatives) can manage disputes in the IDR Gateway. For more information about the IDR Gateway, refer to the IDR Gateway page. 
+IDR YouTube playlist: Webinars and system demonstrations
+IDR system user guides:
+Federal IDR Process Notice of Initiation Outside the IDR Gateway Web Form User Guide (Version 16.0) - Effective November 13, 2026
+Federal IDR Process IDR Entity Selection Response Outside the IDR Gateway Web Form User Guide (Version 11.0) - Effective November 13, 2026 
+Federal IDR Process Notice of Offer Outside the IDR Gateway Web Form User Guide (Version 12.0) - Effective November 13, 2026  
+Federal Independent Dispute Resolution (IDR) Resubmission Web Form User Guide (April 2024) (PDF)
+February 28, 2022: Memorandum regarding continuing surprise billing protections for consumers (PDF)
+Paperwork Reduction Act (PRA) model notices and information collection requirements for the Federal Independent Dispute Resolution Process
+No Surprises Act (NSA) Independent Dispute Resolution (IDR) Batching and Air Ambulance Policy Frequently Asked Questions (FAQs) (PDF)  
+Frequently Asked Questions (FAQs) about Affordable Care Act and Consolidated Appropriations Act, 2021 Implementation (Set 63) (PDF)
+Frequently Asked Questions (FAQs) about Affordable Care Act and Consolidated Appropriations Act, 2021 Implementation (Set 62) (PDF)
+Frequently Asked Questions (FAQs) about Affordable Care Act and Consolidated Appropriations Act, 2021 Implementation (Set 67) (PDF)
+No Surprises Act (NSA) Independent Dispute Resolution (IDR) Partial Reopening of Dispute Initiation Frequently Asked Questions (FAQs) (PDF)
+No Surprises Act (NSA) Independent Dispute Resolution (IDR) Administrative Fee Frequently Asked Questions (FAQs) (PDF)
+Federal Independent Dispute Resolution (IDR) Process Administrative Fee and Certified IDR Entity Fee Ranges
+Effective August 3, 2023, this December 2022 guidance document was vacated in part by the United States District Court for the Eastern District of Texas in Texas Medical Association v. United States Department of Health and Human Services, Case No. 6:23-cv-59-JDK:
+Amendment to the Calendar Year 2023 Fee Guidance for the Federal Independent Dispute Resolution Process Under the No Surprises Act: Change in Administrative Fee (PDF)
+As a result of the opinion and order in Texas Medical Association v. United States Department of Health and Human Services, Case No. 6:23-cv-59-JDK, for disputes initiated between August 3, 2023, and January 21, 2024, the administrative fee reverts to the amount established in the following October 2022 guidance document:
+Calendar Year 2023 Fee Guidance for the Federal Independent Dispute Resolution Process Under No Surprises (PDF)
+Frequently Asked Questions (FAQs) Regarding the Federal Independent Dispute Resolution Process (Set 1) (PDF)
+Technical Assistance for Certified Independent Dispute Resolution Entities - August 2022 Edition (with Disclaimer October 2023) (PDF)
+Some of the guidance in FAQs Part 55 is affected by the decision in Texas Medical Association, et al. v. U.S. Department of Health and Human Services, et al., Case No. 6:22-cv-450-JDK (TMA III). See FAQs Part 62 for guidance on the relevant provisions in light of this court decision.
+Frequently Asked Questions (FAQs) about Affordable Care Act and Consolidated Appropriations Act, 2021 Implementation (Set 55) (PDF)
+Chart for Determining the Applicability for the Federal Independent Dispute Resolution (IDR) Process (Updated January 13, 2023) (PDF)
+These guidance documents are effective as of July 26, 2022, were updated December 15, 2023, and are applicable to all items and services furnished before October 25, 2022, for plan years (in the individual market, policy years) beginning on or after January 1, 2022, by an out-of-network provider subject to the Requirements Related to Surprise Billing; Part II Interim Final Rules, 86 FR 55980.
+Federal Independent Dispute Resolution (IDR) Guidance for Certified IDR Entities (December 2023 Update to October 2022 Guidance) (PDF)
+Federal Independent Dispute Resolution (IDR) Guidance for Disputing Parties (December 2023 Update to October 2022 Guidance) (PDF)
+These guidance documents are applicable to all items and services that are furnished on or after October 25, 2022, for plan years (in the individual market, policy years) beginning on or after January 1, 2022, by an out-of-network provider subject to the Requirements Related to Surprise Billing; Part II Interim Final Rules, 86 FR 55980 and Requirements Related to Surprise Billing Final Rules; 87 FR 52618.
+Federal Independent Dispute Resolution (IDR) Guidance for Certified IDR Entities (December 2023 Update to March 2023 Guidance) (PDF)
+Federal Independent Dispute Resolution (IDR) Guidance for Disputing Parties (December 2023 Update to March 2023 Guidance) (PDF)
+Federal Independent Dispute Resolution (IDR) Timeline for Claims (with Disclaimer October 2023) (PDF)
+Initial Report on the Independent Dispute Resolution (IDR) Process: April 15 - September 30, 2022 (PDF)
+Partial Report on the Independent Dispute Resolution (IDR) Process: October 1 - December 31, 2022 (PDF)
+Federal Independent Dispute Resolution Process – Status Update (August 19, 2022) (PDF)
+Federal Independent Dispute Resolution Process – Status Update (April 27, 2023) (PDF)
+Federal Independent Dispute Resolution (IDR) Process – Change Healthcare Cybersecurity Incident Attestation (June 14, 2024) (PDF)
+Federal Independent Dispute Resolution (IDR) Process Hurricanes Helene and Milton Extension Attestation (November 2024) (PDF)
+This set of FAQs addresses the gag clause prohibition provisions, including the attestation requirement, and implementation of the No Surprises Act, including in light of the court decision in Texas Medical Association et al. v. U.S. Department of Health and Human Services et al. (TMA III).
+FAQs about Consolidated Appropriations Act, 2021 Implementation (Set 69) – (January 14, 2025) (PDF)  
+June 6, 2025: Federal Independent Dispute Resolution (IDR) Technical Assistance for Certified IDR Entities and Disputing Parties: Errors Identified After Dispute Closure (PDF)
+This set of FAQs addresses implementation of the No Surprises Act in light of the court decision in Texas Medical Association et al. v. U.S. Department of Health and Human Services et al. (TMA III):
+FAQs about Consolidated Appropriations Act, 2021 and Affordable Care Act Implementation (Set 71) – (July 30, 2025) (PDF)
+July 10, 2026: Federal Independent Dispute Resolution (IDR) Recertification FAQs (PDF)
+August 7, 2026: Federal Independent Dispute Resolution (IDR) Operations Final Rules Implementation Timeline Guide for Certified IDR Entities and Disputing Parties (PDF)
+October 29, 2026: Federal Independent Dispute Resolution (IDR) Guidance for Treatment of Batched and Bundled Qualified IDR Items and Services as Required by the Federal IDR Operations Final Rule 
+Good faith estimates, patient-provider dispute resolution, and advanced explanation of benefits
+Model Notice: Good Faith Estimate for Health Care Items and Services and Abbreviated GFE for No-Cost Health Care Items or Services (PDF)
+Model Notice: Right to Receive a Good Faith Estimate of Expected Charges (PDF)
+Paperwork Reduction Act (PRA) model notices and information collection requirements for the good-faith estimate and patient-provider payment dispute resolution
+Guidance on good faith estimates and the Patient-Provider Dispute Resolution (PPDR) process for people without insurance or who plan to pay for the costs themselves (PDF)
+Guidance on good faith estimates and the Patient-Provider Dispute Resolution (PPDR) Process for providers and facilities as established in Surprise Billing, Part II; Interim Final Rule with Comment Period (PDF)
+Guidance for Selected Dispute Resolution (SDR) Entities: Required steps to making a payment determination under the Patient-Provider Dispute Resolution (PPDR) process  (PDF)
+Calendar Year 2023 fee guidance for the Federal Patient-Provider Dispute Resolution (PPDR) process established in Surprise Billing, Part II; Interim Final Rule with Comment Period (PDF)
+Frequently Asked Questions (FAQs) about Consolidated Appropriations Act, 2021 Implementation – Good Faith Estimates (GFE) for Uninsured (or Self-Pay) Individuals – Part 1 (PDF)
+Frequently Asked Questions (FAQs) about Consolidated Appropriations Act, 2021 Implementation - Good Faith Estimates (GFE) for Uninsured (or Self-Pay) Individuals – Part 2 (PDF)
+Frequently Asked Questions (FAQs) about Consolidated Appropriations Act, 2021 Implementation - Good Faith Estimates (GFE) for Uninsured (or Self-Pay) Individuals – Part 3 (PDF)
+Frequently Asked Questions (FAQs) about Consolidated Appropriations Act, 2021 Implementation - Good Faith Estimates (GFE) for Uninsured (or Self-Pay) Individuals – Part 4 (PDF)
+Frequently Asked Questions (FAQs) about Consolidated Appropriations Act, 2021 Implementation - Good Faith Estimates (GFEs) for Uninsured (or Self-Pay) Individuals – Part 5 (PDF)
+What is Considered “Health Insurance”? Determining When Uninsured (or Self-Pay) Good Faith Estimate Rules Apply (PDF)
+Progress Toward Advanced Explanation of Benefits (AEOB) Rulemaking and Implementation – (April 23, 2024) (PDF)
+Progress Toward Advanced Explanation of Benefits (AEOB) Rulemaking and Implementation – (December 13, 2024) (PDF)
+Disclosures, notice & consent
+Standard notice & consent forms for nonparticipating providers & emergency facilities regarding consumer consent on balance billing protections (PDF)
+Model disclosure notice on patient protections against surprise billing for providers, facilities, health plans and insurers (PDF)
+Requirements for including federal agency contact information and website URL on certain documents (PDF) 
+Insurance ID cards
+Health plans and insurers: preliminary information about insurance ID card criteria is available in the Frequently Asked Questions about the Consolidated Appropriations Act, 2021 Implementation Part 49. (PDF)
+Page Last Modified:
+11/13/2026 09:30 AM

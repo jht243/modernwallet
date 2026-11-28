@@ -1,0 +1,96 @@
+er overwrite, regenerate or replace an existing page as a new route. A `create new content` row pointing at an existing route → STOP and correct its classification. Substantive `update existing body text` rows reuse Phase 3's preparation and the writer's section mode, build approved embedded tools through Phase 3c, then integrate through Phase 5. This shared preparation does not authorize replacing the whole article.
+
+Carry the original request, action mapping and approved `presentation` through the evidence packet under `_mindmap-execution.md`. Confirm the medium against completed findings before writing; any material change must be reflected in the plan and its existing independent review within the authorized scope. Build/reuse actual interactive code before asking the writer for framing prose, bind its implementation artifacts and keep a readable static answer. The preview viewer's tabs or animations cannot stand in for an article tool. For Layer3 case selection, use contextual workflow queries where relevant and distinguish context, documented implementation and measured outcomes as specified in `_layer3-evidence-sources.md`.
+
+## Step 0 — load the standards (sanctioned loader) and preflight the generator
+
+```bash
+bash .claude/tools/load-standards.sh "mindmap-pass" "phase-3"     # prints the three standards + writes the ledger
+python3 scripts/lib/content_gen.py preflight                       # every model in the chain must answer
+```
+`git add reports/standards-ledger.jsonl`. A failing preflight STOPS the phase — do not write
+the pages by hand instead.
+
+## Step 1 — assemble the prompts (order per `_content-generation.md`)
+
+Write everything under `reports/mindmap-pass/<TODAY>/prompts/`:
+
+For Layer3Labs, include `_layer3-evidence-sources.md` in the writer's system instructions after the existing experience/standards context so the anonymous-client rule supersedes older named examples. Per-page facts include only verified selected findings from all relevant sources, with the public anonymous descriptor and each finding's basis/limits. Do not provide the full catalog or private identity mapping as publishable facts.
+
+- **`system.md`, once per run** — (1) a real published page of the SAME page type from this
+  repo as a JSON object, labelled *imitate this* (for a model-launch family, the predecessor's
+  sibling page is ideal; never the page being written); (2) the output contract for that shape
+  (`guide` or `comparison` keys, noun-phrase headings, ≤1 heading opening with the keyword,
+  `ctaButton` = the project's CTA text, first company-"we" = "At Layer3Labs, we…");
+  (2a) when writing `metaTitle`, `h1`, `subtitle` and `metaDescription`, take the row's
+  `reader question` into account — these are what the person who typed that question sees in
+  the results and on arrival, so their wording is a useful guide to what will read as the
+  answer. Lean toward the words that person would use over the words the vendor uses for
+  itself; a term the product coined for itself usually lands better in the body, where you
+  define it, than in the headline.
+  (3) `_anti-ai-language.md` WRITER section (wins on conflict); (4) `_experience.md` in full;
+  (5) `_content-standard.local.md` if present; (6) `_content-standard.md` LAST, scoped to
+  structure/SEO/depth — "follow its rules, do not copy its tone".
+  Build a second `system.md` per page type if the run has both guides and comparisons.
+- **`<slug>.prompt.md`, one per row, DATA ONLY** — route/slug/type/depth floor, keywords +
+  intent from the chart row, **the chart's cols 10–12 copied verbatim — `reader question: "…"`, `answer: …` (with its
+  shape), `answer placement: section 1|2 "<heading>"` — decided in build-brief Step 4.6, never
+  re-derived here; the writer is told the answering section goes in that slot, before any
+  scope/definition material (`_content-standard.md` INTENT; Phase 4 fails `intent-answered-late`)**, the chart's SERP evidence and real PAA questions as the FAQ spec,
+  **the CLOSED FACT LIST** (with the "anything not on this list, you do not know" sentence and
+  any leak warnings, e.g. a predecessor's prices), **the CLOSED URL LIST**, the real internal
+  routes it may link (siblings shipping in this run are fine), section-by-section coverage,
+  and for comparisons `optionAName`/`optionBName` + table dimensions + the objectivity rule.
+- **`allowed-urls.txt`** — one allowed external URL prefix per line (the mechanical guard).
+
+## Step 2 — generate in parallel across the sub-batch (never run `content_gen.py fix` before Phase 4 audit)
+
+```bash
+python3 scripts/lib/content_gen.py write \
+  --system reports/mindmap-pass/<TODAY>/prompts/system.md \
+  --prompt reports/mindmap-pass/<TODAY>/prompts/<slug>.prompt.md \
+  --out    reports/mindmap-pass/<TODAY>/drafts/<slug>.json \
+  --slug   <slug> --floor <floor> --schema guide|comparison \
+  --allowed-urls reports/mindmap-pass/<TODAY>/prompts/allowed-urls.txt \
+  --facts  reports/mindmap-pass/<TODAY>/prompts/<slug>.prompt.md \
+  --mindmap-manifest <RUN>/approval-manifest.json --mindmap-review <RUN>/chart-review.json \
+  --analysis-packet <RUN>/evidence/<slug>/evidence.json
+```
+Issue the `content_gen.py write` calls for the active sub-batch's pages as **parallel foreground `Bash` tool calls in a single turn** (`timeout: 600000`). The generator applies the remediation ladder to the returned
+draft rather than rejecting it: it **repairs in place** (fence, slug, a missing `relatedLinks`,
+an off-list link stripped with the sentence kept, house style) and logs each repair in
+`meta.guards.repairs`; it **flags** for the Phase 4 auditor (`meta.guards.flags`) a missing content
+field, a stripped citation, a page under the depth floor, and untraceable numbers; it
+**regenerates only** a truncated page (after one retry at double the cap) or unparseable
+output (raw saved). **`meta.guards.flags` are advisory notes for the Phase 4 auditor — NEVER run `content_gen.py fix` during Phase 3 (`WRITE`) before Phase 4 `AUDIT` has run!**
+**`git add` every `<slug>.json.meta.json`** — it is the provenance record (model actually
+used, fallback fired or not, tokens incl. thinking, est. cost).
+
+## Step 3 — verify → template → lint → Phase 4
+
+1. **Topic-residue grep** across each draft for sibling topics that could have leaked from
+   the voice sample or other rows. Read the draft; reject on any claim outside the fact list.
+2. **Template**: `relatedLinks` (3 real siblings, `{title, description, href, category}`),
+   `publishedDate`/`updatedDate`, `inlineCta.buttonHref` = `"/ai-workflow-audit"` (never
+   another URL). Insert as an `_entries.push({...});` block immediately before
+   `export const newGuides` / `export const newComparisons` — the repo's append pattern.
+3. **Mechanical lint (Rung 0)** on every templated slug, fix until 0:
+   `npx tsx scripts/content_lint.mts --slug <slug> [...]`
+4. **Phase 4 audit is the gate** — hand the auditor the closed fact list AND the allowed URL
+   list with the drafts, so a real sourced fact is not flagged as fabrication. Verify any
+   "unsupported claim" finding against the source before acting on it. Fixes follow
+   `_remediation-ladder.md`, **per page**: Rung-0 mechanical edits in place. Claim and tell
+   findings (unsupported / inferred / contradicted claims, restatements, AI tells) go to
+   **Rung 1 FIX-IN-PLACE first**, never straight to a regeneration — save that page's findings
+   to `reports/mindmap-pass/<TODAY>/audit/<slug>.findings.txt` and run
+   `python3 scripts/lib/content_gen.py fix --draft <draft> --findings <findings.txt> --facts <row prompt> --floor <floor> --allowed-urls <allowed-urls.txt> --mindmap-manifest <RUN>/approval-manifest.json --mindmap-review <RUN>/chart-review.json --analysis-packet <RUN>/evidence/<slug>/evidence.json`,
+   then re-template and re-audit that page in full on the same bar. **A re-audit that still
+   finds claims or tells is another fix round (max 3 per page), not a failed attempt** — it
+   never counts toward the 2-regeneration cap and never drops a page by itself (2026-10-08:
+   both pages were dropped as "failed twice" after a single fix round). A **regeneration**
+   (Rung 2) is only for what `fix` lists as NOT FIXABLE IN PLACE, a page under its floor, an
+   auditor note that the floor can only be met by restating facts, or a page still failing
+   after 3 fix rounds: first EXPAND the closed fact list with sourced facts (always when
+   `meta.guards.fact_budget.thin`), then regenerate with a `# CORRECTIONS FROM THE PHASE 4
+   AUDIT` block appended to the row prompt, and run the fix loop again on the new draft —
+   never hand-write generated prose. Once all allowed audits are exhausted (`roundsRemaining: 0`), NEVER edit or regenerate that route again — automatically publish the exact final audited snapshot unless blocked by a narrow direct legal/physical-harm `liabilityBlock` (e.g. incorrect medical dosing; general medical pricing, locations, attribution wording, and SEO/style findings n
