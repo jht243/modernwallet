@@ -1,0 +1,122 @@
+{
+ "slug": "surprise-anesthesia-bill-no-surprises-act",
+ "schema": "guide",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 3574,
+ "floor": 1800,
+ "input_tokens": 59684,
+ "output_tokens": 29717,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.8331,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "disallowed_urls_removed": [],
+  "words": 3574,
+  "numbers_not_in_facts": [],
+  "fact_budget": {
+   "fact_words": 1957,
+   "floor": 1800,
+   "ratio": 1.09,
+   "thin": false
+  },
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    5,
+    4
+   ],
+   "applied": [
+    {
+     "id": "sections[1].content[3]",
+     "quote": "Medicare, Medicaid, Indian Health Services, Veterans Affairs Health Care and TRICARE follow their own rules.",
+     "replacement": "Medicare, Medicaid, Indian Health Services, Veterans Affairs Health Care and TRICARE get a separate row.",
+     "type": "unsupported",
+     "why": "CMS says only these plans already protect from some bills"
+    },
+    {
+     "id": "sections[1].table.rows[11][1]",
+     "quote": "Separate rules",
+     "replacement": "Some protection already",
+     "type": "unsupported",
+     "why": "CMS says only these plans already protect from some bills"
+    },
+    {
+     "id": "sections[3].content[6]",
+     "quote": "You can contest a charge above the protected amount, and a bill that matches your EOB Patient Balance is the amount CMS says you owe after your insurer pays.",
+     "replacement": "If the bill is higher than your EOB Patient Balance, CMS says to talk to your provider, and a bill that matches your EOB Patient Balance is the amount CMS says you owe after your insurer pays.",
+     "type": "inference",
+     "why": "No 'protected amount' for planned care; CMS says talk to provider if higher"
+    },
+    {
+     "id": "sections[4].content[4]",
+     "quote": "If the bill matches the Patient Balance, the federal protection has done its work, and the remaining amount is the share your plan assigned to you.",
+     "replacement": "If the bill matches the Patient Balance, it is the amount CMS says you owe after your insurer has paid everything else.",
+     "type": "inference",
+     "why": "CMS only defines Patient Balance as amount owed after insurer pays"
+    },
+    {
+     "id": "takeaway.conditions",
+     "quote": "Medicare, Medicaid, Indian Health Services, Veterans Affairs Health Care and TRICARE already protect you from some unexpected out-of-network bills under their own rules.",
+     "replacement": "Medicare, Medicaid, Indian Health Services, Veterans Affairs Health Care and TRICARE already protect you from some unexpected out-of-network bills.",
+     "type": "unsupported",
+     "why": "CMS says only they already protect from some bills; 'own rules' not stated"
+    },
+    {
+     "id": "introText[0]",
+     "quote": "The [Centers for Medicare & Medicaid Services (CMS)](https://www.cms.gov/nosurprises) lists anesthesiology among 9 specialties that are not allowed to ask you to sign away that protection.",
+     "replacement": "[CMS](https://www.cms.gov/nosurprises) lists anesthesiology among the specialties that are not allowed to ask you to sign away that protection.",
+     "type": "unsupported",
+     "why": "SOURCE does not expand CMS or give a specialty count"
+    },
+    {
+     "id": "sections[0].content[1]",
+     "quote": "CMS gives the example of a local hospital that is in-network while a provider treating you there is out-of-network.",
+     "replacement": "CMS gives the example of a local hospital that is in-network.",
+     "type": "unsupported",
+     "why": "CMS example text is truncated in SOURCE; provider role not stated"
+    },
+    {
+     "id": "sections[2].content[2]",
+     "quote": "Your primary surgeon does not appear on that list, while assistant surgeons do.",
+     "replacement": "",
+     "type": "unsupported",
+     "why": "SOURCE does not discuss primary surgeons"
+    },
+    {
+     "id": "takeaway.paragraphs[2]",
+     "quote": "In that case, ask the provider for a lower bill or a payment plan.",
+     "replacement": "For a ground ambulance bill, ask the provider for a lower bill or a payment plan.",
+     "type": "unsupported",
+     "why": "SOURCE gives this advice only for ground ambulance bills"
+    }
+   ],
+   "deleted_final": 4,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3599
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 26175
+  }
+ },
+ "seconds": 327.7,
+ "response_id": "msg_011ChVgYrqiMTW3gwSTEXqMC",
+ "generated_at": "2026-11-28T17:05:04+0000"
+}

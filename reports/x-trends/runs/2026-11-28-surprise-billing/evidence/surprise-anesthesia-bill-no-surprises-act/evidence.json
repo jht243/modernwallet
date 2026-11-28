@@ -1,0 +1,174 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-writer",
+  "route": "/guides/surprise-anesthesia-bill-no-surprises-act",
+  "readerQuestion": "Can an out-of-network anesthesiologist at my in-network hospital bill me more than my in-network cost-sharing, and what can I actually refuse under the No Surprises Act? [PAA unavailable (DataForSEO off, 0 reads); ac 5/40 \"what if my anesthesiologist is out of network\" + \"can anesthesiologist out of network bill patients\"; intake bullet is the demand signal]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/approval-manifest.json",
+      "sha256": "e546eed1bc46de5436dc00b89781c55c4a3787b500b191c9f2a2fcd4be1e8a7b"
+    },
+    "review": {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/chart-review.json",
+      "sha256": "c2c06e326d14a18680754309137d7c89882a4d7f451d205148fe3322f8d7a5fc"
+    },
+    "actionId": "A1"
+  },
+  "presentation": {
+    "medium": "text + comparison table",
+    "placement": "Opening answer in section 1, protected-vs-not table in section 2, steps after it",
+    "reason": "The answer is a finite set of situations (covered, not covered, covered unless consent) and a fixed order of steps; a table answers it without inputs.",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "No reader-adjustable input changes the federal rule; the dollar owed depends on the plan's cost-sharing, which only the EOB shows. A calculator would invent numbers."
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static scannable table and numbered steps answer faster."
+    }
+  },
+  "basis": "reported",
+  "decisionGap": "Readers who got a bill from an out-of-network anesthesiologist, radiologist, pathologist or lab after care at an in-network facility hear opposite advice online (tear up the bill vs just pay it). CMS pages answer each piece separately; no page on this site lays out what the federal law bars, what it does not (ground ambulance, doctor's offices that are not hospital outpatient departments, uninsured good faith estimate disputes), and the ordered checking steps.",
+  "finding": "Per CMS, the No Surprises Act protects most privately insured people from unexpected out-of-network bills for emergency care, air ambulance, and non-emergency care related to a visit to an in-network hospital, hospital outpatient department or ambulatory surgical center. CMS says anesthesiology, radiology, pathology, diagnostic/laboratory services, emergency medicine, neonatology, assistant surgeons, hospitalists and intensivists are not allowed to ask for a notice and consent form. The good faith estimate dispute ($400 or more over a provider's estimate, start within 120 days) is for people who do not have or do not use insurance. Ground ambulances are generally not covered federally. CMS says your bill should not be higher than the EOB Patient Balance; if it is, talk to your provider. Contact your plan, then the No Surprises Help Desk at 1-800-985-3059. CMS publishes no instruction to ignore or tear up a bill.",
+  "conditions": "Applies to people using most private health insurance (employer plans incl. FEHB, Marketplace, other individual coverage). Planned-care protection covers care related to a visit to an in-network hospital, hospital outpatient department or ambulatory surgical center, and can be waived by a valid notice and consent form except for the specialties CMS lists as not allowed to ask. Excludes ground ambulance (unless state law differs), doctor's offices that are not hospital outpatient departments, out-of-network facilities, vision-only and dental-only plans, short-term limited duration, health care sharing ministry and fixed indemnity plans. Medicare, Medicaid, IHS, VA and TRICARE: CMS says they already protect against some unexpected out-of-network bills. Ground ambulance state list is as of 2021-11-15. CMS pages retrieved 2026-11-28 (page modified dates 2026-10-01 to 2026-11-02). The explicit 'no more than in-network cost-sharing' sentence is CMS wording for emergency care only; no cost-sharing formula or deductible crediting is claimed for planned care.",
+  "whatWouldChange": "A CMS or statutory change to covered settings or notice-and-consent exceptions; a signed valid notice and consent form for a non-exempt service; an EOB showing the billed amount is the plan's in-network Patient Balance; a state ground ambulance law covering the bill; or the reader being uninsured/self-pay (then the good faith estimate route applies).",
+  "caseSelection": {
+    "path": "reports/x-trends/runs/2026-11-28-surprise-billing/evidence/surprise-anesthesia-bill-no-surprises-act/cases.json",
+    "sha256": "f7ee042a60a7cc497ff0f593788c1804fa3ec6f89831172c281a883a4ecc6b28"
+  },
+  "caseDecisions": "Reviewed cases.json candidates (example-037, example-038, fleet-*). None is an honest topical match for a federal surprise-billing rights guide; client lists do not establish outcomes. _experience.md section A (small medical practices) was considered and not used because the page makes no operational claim; no client reference forced. anchor-exempt: page anchor is our protected-vs-not table synthesized from CMS text, labeled as reported synthesis, not testing.",
+  "sourceArtifacts": [
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/brief.txt",
+      "sha256": "0a50bc3f0baf52ae1aded34d6a261a56064b5592257a5e555acf4e8ab8702e17"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/coverage-lookup.txt",
+      "sha256": "360d28a9cb25935fec35f137e1b89edb29cd6f7dd6ba9983118ac8e743d90808"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/intake-2026-11-28.md",
+      "sha256": "0a50bc3f0baf52ae1aded34d6a261a56064b5592257a5e555acf4e8ab8702e17"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/kw-volumes.json",
+      "sha256": "591fdcf4e8f3af6170baf83e590cbffda3b3461db1dddd364e78da823c86aa7d"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/kw-expand-nsa.json",
+      "sha256": "161cae02a66cedea94656e5352d69d4d07bc59293bc925fe092a7e6092bf87df"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/kw-expand-smb.json",
+      "sha256": "69f57808e09b00ac4d639087b052e61e42b09c550a086de49b23177d5cefd556"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/kw-status.json",
+      "sha256": "7b73af897b58c772ce1b31d02a108406e1fd92a5ecf3445a883aa961357e9e5f"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/autocomplete-note.txt",
+      "sha256": "dd8f2a118786305ea0c55c24e9bd1db7a2be2302019acebf40128ec69bd80d8a"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/autocomplete-anesthesiologist.csv",
+      "sha256": "b0715d0343db866b6cf807a084d16a82ab974bcb449356f71dcc9dd25a5d1ed3"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/autocomplete-surprise-medical-bill.csv",
+      "sha256": "29324dae6d100da0d080a33496d9cd4059588131306c061e9abd385605a1b0f0"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/serp-surprise-anesthesia.json",
+      "sha256": "cb4feb17eb22572a3867f8a3ffc71e90e701ee83f7c8b769a24920c22ebb9977"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-check-bill-errors.txt",
+      "sha256": "6ee56ce9a31c4beecccd753053afcbb1b9d555103d1e3016c9b5a17ea27cfd4f"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-find-action-plan.txt",
+      "sha256": "4a9b11229cee9332073e691bf911d4ac40f678088e632111c937349af1177915"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-ground-ambulance-bill.txt",
+      "sha256": "ad7e30a0a9b2a70f24ce90387797585f7f3974f121fc90fb0c165b817c075844"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-know-your-rights-insurance.txt",
+      "sha256": "3fd944d949f02b5a92d4af63f4a32ed326cd2c11f94dfb725233bfd7438cf471"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-know-your-rights-without-insurance.txt",
+      "sha256": "85a061efd61d37c6271c3c9cb59a67c53312bbdea1c94e94a5dce896ed60d3e6"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-know-your-rights.txt",
+      "sha256": "f4b4d554c5b0be433dd3608d2d0bc84b88493b06fa5e837e813b69796e04d095"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-medical-bill-rights.txt",
+      "sha256": "d3604c9ddad60c9e67fe65778c24b42269ae7870b0813507e8fd0277e8b80c7d"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-nosurprises-consumers.txt",
+      "sha256": "b98eaf3e042c4e2848e85bdb4dde158843ed67164fe3d5023d93f2d6d063e6f9"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-nosurprises.txt",
+      "sha256": "bc86c6d14cb047136d65b8910cd56b4f7ccfcba5a12b10688f9716efca292e3c"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-overview-rules-fact-sheets.txt",
+      "sha256": "f529d77864bc10ff884aa3bb214e6d2e3b5440852b635b558d1555ccc9088f0b"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-read-eob.txt",
+      "sha256": "f2cb8a7ce90e62f6023325976e6d470a59db35118ccaabe902abb55eaed81f99"
+    },
+    {
+      "path": "reports/x-trends/runs/2026-11-28-surprise-billing/research/sources/cms-submit-complaint.txt",
+      "sha256": "b6b940c32854811e8a570e4c92ce3b1ed78d5e0899d9fcb5579adb2e3bd6ff94"
+    }
+  ],
+  "whyNoQuantitativeAnalysis": "The answer is a rule boundary (which settings, specialties and plans are covered, and which steps to take). The only numbers are CMS-stated ($400, 120 days, 3 business days, 60 days, 90 days, 1-800-985-3059). The dollar owed depends on the plan's cost-sharing shown only on the reader's EOB, so a model would invent inputs.",
+  "reasoning": "CMS know-your-rights (insurance) lists covered settings and the specialist notice-and-consent exclusions; the EOB page says the bill should not exceed the Patient Balance; check-your-bill-errors says the plan might be able to fix billing errors; submit-complaint gives the Help Desk number, documents and 60-day contact window; the without-insurance page limits the $400 / 120-day good faith estimate dispute to people not using insurance; the ground ambulance action plan lists 10 states as of 2021-11-15. Together these answer the reader question and the viral claim without individualized advice.",
+  "provenance": {
+    "basis": "reported",
+    "supportingRecordIds": [],
+    "scopeAndLimits": "CMS pages read in full on 2026-11-28; synthesis of CMS text, not testing, not legal advice; no individualized advice",
+    "publicMethod": "Visible first-party attribution: 'Based on CMS pages read in full on 2026-11-28' with CMS URLs in sources",
+    "placement": "Opening answer attribution line and Our Takeaway"
+  },
+  "sourceUrls": [
+    {
+      "url": "https://www.cms.gov/medical-bill-rights",
+      "checkedAt": "2026-11-28"
+    },
+    {
+      "url": "https://www.cms.gov/initiatives/your-patient-rights/medical-bill-rights/know-your-rights/insurance",
+      "checkedAt": "2026-11-28"
+    },
+    {
+      "url": "https://www.cms.gov/initiatives/your-patient-rights/medical-bill-rights/know-your-rights/without-insurance",
+      "checkedAt": "2026-11-28"
+    },
+    {
+      "url": "https://www.cms.gov/initiatives/your-patient-rights/medical-bill-rights/get-help/guides-resources/read-explanation-benefits",
+      "checkedAt": "2026-11-28"
+    },
+    {
+      "url": "https://www.cms.gov/initiatives/your-patient-rights/medical-bill-rights/get-help/guides-resources/check-your-bill-errors",
+      "checkedAt": "2026-11-28"
+    },
+    {
+      "url": "https://www.cms.gov/initiatives/your-patient-rights/medical-bill-rights/get-help/submit-complaint",
+      "checkedAt": "2026-11-28"
+    },
+    {
+      "url": "https://www.cms.gov/initiatives/your-patient-rights/medical-bill-rights/get-help/find-action-plan/ground-ambulance-bill",
+      "checkedAt": "2026-11-28"
+    }
+  ]
+}

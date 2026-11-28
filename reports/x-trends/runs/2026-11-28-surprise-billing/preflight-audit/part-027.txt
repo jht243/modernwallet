@@ -1,0 +1,49 @@
+ct passing-subset projection preserves the original source assessment and independent evidence; a serializer repair is not a new editorial audit. Existing native composition and stricter rules remain.
+
+## Immutable captures and incomplete review records
+
+Use a fresh run-owned loopback preview process from the current build for a changed candidate; retire only this run's old process. Never capture a new revision from a still-running old `next start`. Every capture output and its HTML/text folder is immutable: use a new versioned output path. The durable backend archives the exact earlier dependency bytes by hash while keeping the writer's current files intact. A prior artifact resolves only to bytes matching its original hash, never the newly edited file.
+
+A reserved slot is pending, not a completed audit, and cannot release a changed page. If a pending snapshot was overwritten, retain the actual auditor failure handback and the lost snapshot hash. Use `content-review-policy.py repair-pending --snapshot ACTUAL_CORRECT_CAPTURE --route ORIGINAL_ROUTE --job-id ORIGINAL_JOB --reviewer ACTUAL_INDEPENDENT_REVIEWER --out NEW_ADMISSION --failure ACTUAL_FAILURE_HANDOFF`. This performs one append-only mechanical rebind of that same unfinished numbered slot, preserves all original events, findings and counters, and grants no verdict or extra round. It rejects intact or completed admissions and a second repair of the same slot. Complete the real independent result with normal `record`; reuse the actual original auditor when its context remains available. No new writing, chart, generation or completed-page audit is authorized by this metadata repair. An old ledger-done flag cannot hide a pending audit. Preserve genuine required professional approval, exclusions, testing honesty and native client/upsell rules. No additional human gate.
+
+For Node/Next/Astro audit previews, use `python3 .claude/tools/preview-session.py start --run-id ACTUAL_INVOCATION_RUN_ID --route ACTUAL_ROUTE` after the normal build. It reuses only this invocation's verified unchanged build, otherwise starts a fresh owned loopback process and retires its old process. Capture uses its returned baseUrl and verifies the build and current source signature before fetching pages. The helper does not perform an audit or generate content. `stop --run-id ACTUAL_INVOCATION_RUN_ID` retires only the matching owned process. Python/native preview adapters retain their existing paths. To restore hash-bound earlier dependency bytes before a pending repair, use `content-review-durable.py restore --canonical-base ACTUAL_ORIGIN --route ACTUAL_ROUTE`; it preserves the writer's current files and creates no review verdict.
+
+Before the first content-audit reservation, MAIN seals the writer’s actual current canonical handoff through workflow-handoff.py; it must not delegate an auditor without that handoff. The actual independent auditor completes AUDIT preflight with its real actor/run/context/epoch and passes `--preflight ITS_COMPLETED_DIRECTORY` to `content-review-policy.py reserve`. A BUILD receipt or directly reading some contracts is not an AUDIT checkpoint. Missing handoff/reading is repaired before substantive audit, without reserving a slot, restarting research or dropping same-context instruction reuse. The guard does not invalidate or repeat genuine completed historical content verdicts: preserve any historical procedural failure honestly and apply the corrected checkpoint to the next actual stage.
+
+For an existing pending audit reservation with a corrupted source dependency, use the existing repair-pending command on the same job and round with its retained failure evidence and a replacement snapshot. The validator compares source hashes and retains the original and replacement identities. The independent reviewer must complete that slot. A recorded verdict cannot use this repair.
+
+[Source: .claude/commands/mindmap-pass/phase-4-audit.md]
+[Repeated passage at this position: .claude/commands/_remediation-ladder.md, paragraph 5. Use its exact text under this source/section context.]
+
+**Layer3Labs owner rule, November 9, 2026.** The opening release and continuation instructions in `.claude/commands/_content-review-policy.md` supersede older editorial PASS-only, hold-at-limit and repeated-wait wording for Mindmap and its callers.
+
+[Repeated passage at this position: .claude/commands/_rendered-page-audit.md, paragraph 3. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/_remediation-ladder.md, paragraph 1. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 6. Use its exact text under this source/section context.]
+
+# Phase 4 — Confirm new content (dedicated adversarial review)
+
+<!-- mindmap-visible-checks-v1 -->
+**Approval chart: completed preparation only.** Follow `_workflow-checkpoints.md`, “Approval chart — completed preparation only.” Finish applicable instruction reading, primary-source research, duplicate review, testing/evidence decisions, and takeaway briefs BEFORE showing the chart. Show one **Preparation check** row: `✅ Passed` linking readiness evidence (or `❌ Failed` with specific failures blocking approval). Keep Phases 1–9 as future execution; never show pending cells. Unattended `*-auto` callers — AND manual `/mindmap-pass` runs on AI `modelLaunch` briefs (`docs/model-launch-page-family.md`, where the launch page family is deterministic) — build and independently review `preparationMode: "full"` (`## New-page briefs` + link inspections) upfront before Phase 0 so human approval goes straight to `WRITE` with zero post-Phase-0 double-review. General open-ended manual `/mindmap-pass` runs use `preparationMode: "fast-scope"` (`## Scope briefs` inline in saved and displayed charts) before the Phase 0 human gate, then expand `preparationMode: "full"` for approved rows right after approval before Phase 3 writing. Approval remains the sole human gate.
+<!-- /mindmap-visible-checks-v1 -->
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 16. Use its exact text under this source/section context.]
+
+[Repeated passage at this position: .claude/commands/_content-standard.md, paragraph 17. Use its exact text under this source/section context.]
+
+<!-- intent-takeaway-v1 -->
+**Intent-based takeaway audit:** Read `_decision-evidence.md` in the active project's `.claude/commands/`, including its takeaway requirements and section 4. Verify the conclusion answers the approved question, matches actual evidence and retains important conditions; compare the opening answer, tables, calculator and FAQs. An existing sufficient verdict or a supported inconclusive answer can pass. Never require a canned heading or unsupported testing language. For global commands, resolve/install the sibling shared contract in the active project while preserving local rules.
+<!-- /intent-takeaway-v1 -->
+
+
+**Unified testing contract:** read `.claude/commands/_testing-labels.md`. Preserve this site's exclusions; distinguish eligibility from reviewed evidence; use the same decision for writer format, title, byline, methods, picks and testing-related schema. Missing or stale evidence cannot turn the TESTED format on.
+
+
+<!-- decision-evidence-v1 -->
+## Decision-evidence gate
+
+**Layer3Labs reader-survey reuse:** Inspect the current run's durable catalog and route-facts receipt when checking source discovery. An empty `completedSurveys` list must not be described as no surveys on the site or zero demand. When a survey finding is used, inspect the exact intact final snapshot, private response-quality review, independent route approval, question/options/cohort, field dates, denominator and reproduced counts. Verify the final page's finding and takeaway stay within those self-reported observations, with visible source/sample/limitations. Any relevant route may use reviewed data; candidate routes are suggestions, not a reuse boundary. Reject provisional progress counts, synthetic votes, unreviewed snapshots, combined campaign versions, unsupported demographic/model/hardware inferences, causal claims or product-testing labels. Surveys may be combined with other supported sources and are never required on every page. Preserve no-addition, local exclusions and the existing automatic reviewer; no extra human gate.
+
+**Layer3Labs comparison methods:** Apply the public-data and practical-comparison sections of `_layer3-evidence-sources.md` when the packet uses them. Inspect actual source snapshots, extracted facts and normalized terms for public comparisons; independently replay the calculation. For practical comparisons, inspect the predeclared task/expectations, identical inputs, real unedited outputs, option versions, conditions and all item/repetition scores. Check excluded/unavailable options were not treated as failures. Run the existing `mindmap-gates.py va

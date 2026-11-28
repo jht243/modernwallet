@@ -1,0 +1,11 @@
+{
+ "dataforseo": "off: DFS_ENABLED=0 or no credentials",
+ "semrush": "unavailable: no SEMRUSH_API_KEY",
+ "ahrefs": "off: reserved for technical site audits and weekly winner/loser only",
+ "autocomplete": "ok",
+ "selected": {
+  "volume": null,
+  "kd": null,
+  "expand": null
+ }
+}

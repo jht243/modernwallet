@@ -1,0 +1,4 @@
+[keyword_data] semrush unusable (no SEMRUSH_API_KEY)
+[keyword_data] volume: no provider usable — autocomplete estimate only
+[keyword_data] kd: no provider usable — KD omitted
+[keyword_data] expand: no provider usable — autocomplete estimate only

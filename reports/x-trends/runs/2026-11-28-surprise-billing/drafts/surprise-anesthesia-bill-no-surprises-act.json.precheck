@@ -1,0 +1,286 @@
+{
+  "slug": "surprise-anesthesia-bill-no-surprises-act",
+  "metaTitle": "Surprise Anesthesia Bill: What the No Surprises Act Covers",
+  "metaDescription": "Most private plans get federal protection from a surprise anesthesia bill at in-network facilities. See what the No Surprises Act covers and how to check it.",
+  "h1": "Surprise Anesthesia Bill: What the No Surprises Act Covers",
+  "subtitle": "A coverage table built from federal text, plus the order to check a bill against your explanation of benefits.",
+  "introText": [
+    "In most cases, the [No Surprises Act](https://www.cms.gov/medical-bill-rights) protects you from a surprise anesthesia bill after planned care at an in-network facility. That covers an out-of-network anesthesiologist at an in-network hospital, hospital outpatient department or ambulatory surgical center, if you use most types of private health insurance. The [Centers for Medicare & Medicaid Services (CMS)](https://www.cms.gov/nosurprises) lists anesthesiology among 9 specialties that are not allowed to ask you to sign away that protection.",
+    "Based on CMS pages we read in full on November 28, 2026, the protection has firm limits. Ground ambulances generally fall outside it. So do short-term limited duration plans, health care sharing ministries and fixed indemnity plans.",
+    "A bill can still be correct. If the amount matches the Patient Balance on your explanation of benefits (EOB), it equals what CMS calls the amount you owe after your insurer has paid everything else. If the bill is higher, CMS points you to your provider, your plan and the No Surprises Help Desk at 1-800-985-3059."
+  ],
+  "inlineCta": {
+    "text": "If your surprise anesthesia bill is higher than the Patient Balance on your EOB, the No Surprises Help Desk takes complaints online and at 1-800-985-3059.",
+    "buttonLabel": "Submit a Complaint",
+    "buttonHref": "https://www.cms.gov/initiatives/your-patient-rights/medical-bill-rights/get-help/submit-complaint"
+  },
+  "sections": [
+    {
+      "id": "billed-more-than-in-network",
+      "heading": "Can You Be Billed More Than In-Network Rates?",
+      "content": [
+        "For emergency care, CMS states the limit outright: if your plan covers emergency care, you can't be charged more for emergency medical services than the in-network cost-sharing rate. That limit applies to the hospital, the providers treating you at the hospital, and an air ambulance provider that took you to the hospital. CMS defines cost-sharing as a copayment, deductible or coinsurance.",
+        "For planned, non-emergency care, CMS uses different wording on its [rights page for people using insurance](https://www.cms.gov/initiatives/your-patient-rights/medical-bill-rights/know-your-rights/insurance). In most cases, you're protected from unexpected out-of-network bills for non-emergency care related to a visit to an in-network hospital, hospital outpatient department or ambulatory surgical center. CMS gives the example of a local hospital that is in-network while a provider treating you there is out-of-network.",
+        "An out-of-network anesthesiologist at an in-network surgery center fits that example. CMS names anesthesiology, radiology, pathology, and diagnostic and laboratory services among the specialties that are not allowed to ask you for a notice and consent form. Those providers can't get you to sign away the balance billing protections for that care.",
+        "Your coverage type decides whether any of this applies. The protections cover insurance through an employer (including a Federal Employees Health Benefits plan), the federal Health Insurance Marketplace, a State-based Marketplace or other individual market coverage. The law took effect on January 1, 2022.",
+        "CMS also notes that some health plans don't cover emergency care. If you're unsure what your plan covers, contact your insurance company before assuming the emergency limit applies.",
+        "The disagreement over an out-of-network payment amount belongs to the provider and your plan. CMS describes its consumer protections as removing consumers from payment disagreements between providers, health care facilities and health plans. Its October 2021 rules set up an independent dispute resolution (IDR) process to settle those payment amounts between providers and plans."
+      ]
+    },
+    {
+      "id": "coverage-table",
+      "heading": "What the No Surprises Act Covers and Does Not",
+      "content": [
+        "The No Surprises Act covers emergency care, air ambulance services and planned care at in-network hospitals, hospital outpatient departments and ambulatory surgical centers, and it leaves out ground ambulances and several plan types. The table is our synthesis of CMS text read in full on November 28, 2026. Each row names the CMS page it comes from.",
+        "A yes for planned care can change if you signed a valid notice and consent form for a provider who is allowed to ask for one. The next section covers that exception.",
+        "Two rows change the answer for an anesthesia bill. If your procedure happened in a doctor's office that is not a hospital outpatient department, the planned-care protection does not reach it. If the facility itself was out-of-network, the protection for planned care at in-network facilities does not apply either.",
+        "Medicare, Medicaid, Indian Health Services, Veterans Affairs Health Care and TRICARE follow their own rules. CMS says only that these plans already protect you from some unexpected out-of-network bills. For a billing issue under one of them, CMS offers an [action plan tool](https://www.cms.gov/initiatives/your-patient-rights/medical-bill-rights/get-help/find-action-plan) that asks a few questions about your bill."
+      ],
+      "table": {
+        "caption": "Our synthesis of CMS text, pages read in full on November 28, 2026",
+        "headers": [
+          "Situation",
+          "Protected?",
+          "What CMS says",
+          "CMS source"
+        ],
+        "rows": [
+          [
+            "Emergency room visit at a hospital or independent freestanding emergency department",
+            "Yes, in most cases",
+            "If your plan covers emergency care, the hospital and the providers treating you there can't charge more than the in-network cost-sharing rate",
+            "Know your medical bill rights when using insurance"
+          ],
+          [
+            "Post-stabilization services after an emergency room visit",
+            "Yes, in most cases",
+            "An out-of-network provider may ask you to sign a notice and consent form, and signing gives up your billing protections",
+            "Know your medical bill rights when using insurance"
+          ],
+          [
+            "Planned care at an in-network hospital, hospital outpatient department or ambulatory surgical center",
+            "Yes, in most cases",
+            "Protected from unexpected out-of-network bills; anesthesiology, radiology, pathology and lab services are not allowed to ask for a consent form",
+            "Know your medical bill rights when using insurance"
+          ],
+          [
+            "Air ambulance services",
+            "Yes",
+            "Listed as protected; an air ambulance provider that took you to the hospital can't charge more than the in-network cost-sharing rate for emergency care",
+            "Know your medical bill rights when using insurance"
+          ],
+          [
+            "Ground ambulance",
+            "Generally no",
+            "Still allowed to charge out-of-network rates and cost-sharing unless state law says otherwise; 10 states had protections as of November 15, 2021",
+            "Action plan: Ground ambulance bill"
+          ],
+          [
+            "Doctor's office that is not a hospital outpatient department",
+            "No",
+            "Not one of the in-network settings CMS lists for planned-care protection",
+            "Know your medical bill rights when using insurance"
+          ],
+          [
+            "Out-of-network facility for planned care",
+            "No",
+            "Planned-care protection covers visits to in-network facilities",
+            "Know your medical bill rights when using insurance"
+          ],
+          [
+            "Vision-only or dental-only plan",
+            "Generally no",
+            "May apply if vision or dental benefits are included in your health plan",
+            "Know your medical bill rights"
+          ],
+          [
+            "Short-term limited duration plan",
+            "No",
+            "Services covered by these plans aren't subject to the billing protections",
+            "Know your medical bill rights"
+          ],
+          [
+            "Health care sharing ministry plan",
+            "No",
+            "Services covered by these plans aren't subject to the billing protections",
+            "Know your medical bill rights"
+          ],
+          [
+            "Fixed indemnity plan, like hospital indemnity insurance",
+            "No",
+            "Services covered by these plans aren't part of the billing protections",
+            "Know your medical bill rights"
+          ],
+          [
+            "Medicare, Medicaid, Indian Health Services, Veterans Affairs Health Care or TRICARE",
+            "Separate rules",
+            "These plans already protect you from some unexpected out-of-network bills",
+            "Know your medical bill rights"
+          ],
+          [
+            "No insurance, or choosing not to use it",
+            "Different protection",
+            "Good faith estimate; you may dispute a bill at least $400 more than that provider's estimate",
+            "Know your medical bill rights when not using insurance"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "consent-form",
+      "heading": "When Signing a Consent Form Gives Up Your Protection",
+      "content": [
+        "A notice and consent form is the document that can give up your No Surprises Act protection, and CMS heads that topic with the warning that signing one may increase your costs. CMS says an out-of-network provider may ask you to sign one for post-stabilization services after an emergency room visit. Signing it means you give up your billing protections for that care.",
+        "For planned care at an in-network facility, a valid form can waive the protection for some scheduled care from an out-of-network provider. The form also can't be used when no in-network provider is available. A shortage of in-network providers bars the form.",
+        "The answer flips for a provider outside the CMS list. Your primary surgeon does not appear on that list, while assistant surgeons do. If you signed a valid form for a provider who is allowed to ask, that provider's out-of-network bill can fall outside the protection.",
+        "When someone hands you a form, look at who is asking. If the provider is on the list below, CMS says they are not allowed to ask, and if you want to keep your protection, don't sign. If you already signed one, keep the signed and dated copy, because CMS lists it among the documents to include with a complaint.",
+        "CMS lists these specialties as not allowed to ask you for a notice and consent form:"
+      ],
+      "bullets": [
+        "Anesthesiology",
+        "Radiology",
+        "Pathology",
+        "Diagnostic and laboratory services",
+        "Emergency medicine",
+        "Neonatology",
+        "Assistant surgeons",
+        "Hospitalists",
+        "Intensivists"
+      ]
+    },
+    {
+      "id": "viral-scripts",
+      "heading": "What Viral Surprise Anesthesia Bill Scripts Get Wrong",
+      "content": [
+        "Viral surprise anesthesia bill scripts get the core protection right and the follow-up tools wrong. They tell patients to rip up their bills and mix up the rules for insured and uninsured patients.",
+        "One post pushing the rip-it-up tactic passed 4,100 likes on November 28, 2026, and copycat step-by-step threads are spreading. No CMS page we read tells you to ignore, tear up or throw away a medical bill. The CMS pages tell you to compare the bill with your EOB, contact your plan and submit a complaint when the rules aren't followed.",
+        "The good faith estimate is the first mix-up. CMS limits it to people who don't have health insurance or don't use it to pay for care. Usually, those patients get a written estimate when they schedule care at least 3 business days in advance or ask for one.",
+        "An uninsured or self-pay patient may dispute a bill that is at least $400 more than the good faith estimate from that same provider, and the dispute has a 120-day window to start. Each estimate covers a single provider or facility, so CMS's surgery example calls for 2 estimates, one from the surgeon and one from the hospital. There is no estimate during emergency care.",
+        "If you used insurance, the $400 dispute is the wrong tool. Your route runs through the EOB, your plan and the No Surprises Help Desk.",
+        "Ground ambulances are the other mix-up. CMS says ground ambulance services generally aren't covered by the Act's billing protections unless a state law has different rules. A script that promises federal relief on a ground ambulance bill gets this wrong.",
+        "Some scripts also overstate what an insured patient can refuse. You can contest a charge above the protected amount, and a bill that matches your EOB Patient Balance is the amount CMS says you owe after your insurer pays."
+      ]
+    },
+    {
+      "id": "check-steps",
+      "heading": "How to Check a Surprise Anesthesia Bill Step by Step",
+      "content": [
+        "Check a surprise anesthesia bill by matching it against your EOB, calling your plan, and filing a complaint if the numbers still don't match. The steps follow CMS guidance, and the one practical step we added is marked as ours.",
+        "An EOB isn't a bill. It shows Provider Charges, the amount your provider bills, and Allowed Charges, the amount your provider will be paid. It also shows Paid by Insurer and the Patient Balance, which CMS calls the amount you owe after your insurer has paid everything else.",
+        "The EOB shows what you owe, and it does not show whether you already paid part of it. A remark code of 2 or 3 letters and numbers explains costs, and the bottom of the EOB describes each code.",
+        "The online complaint form resets after 15 minutes of inactivity, so photograph your documents before you start. You can return later with your confirmation number to add more documents. CMS also points to state Consumer Assistance Programs and patient advocates on its [page about checking a bill for errors](https://www.cms.gov/initiatives/your-patient-rights/medical-bill-rights/get-help/guides-resources/check-your-bill-errors).",
+        "If the bill matches the Patient Balance, the federal protection has done its work, and the remaining amount is the share your plan assigned to you. Our guide to [payment plans and hospital financial assistance](/guides/how-to-deal-with-medical-debt) covers a balance you can't afford. If you pay from a health savings account (HSA) or flexible spending account (FSA), the [HSA and FSA reimbursement checklist](/guides/hsa-fsa-reimbursement-checklist) lists the records to keep.",
+        "Work through these steps in order:"
+      ],
+      "bullets": [
+        "Ask the provider's billing department for a detailed bill that lists the cost of each medical item or service.",
+        "Get your EOB and find the Patient Balance. CMS says on its [EOB guide](https://www.cms.gov/initiatives/your-patient-rights/medical-bill-rights/get-help/guides-resources/read-explanation-benefits) that your bill should not be higher than the Patient Balance, and if it is, talk to your provider.",
+        "Compare the bill with your medical records and look for double billing, which CMS says is especially common when more than one provider treated you. You shouldn't get a bill for anything not documented in your records, and some providers charge a records fee.",
+        "Call your plan at the phone number printed on the EOB. CMS says your insurance company might be able to fix billing errors with your provider.",
+        "Ask the plan to review the claim as care covered by No Surprises Act protections. This is a practical step we suggest, and CMS itself says only to contact your plan.",
+        "Gather your documents: the medical bill, a photo of your insurance card and the EOB, plus any signed notice and consent form, letters with the provider, appeal decisions and evidence of coverage.",
+        "Submit a complaint to the No Surprises Help Desk online or at 1-800-985-3059, and write down your confirmation number. If the Help Desk needs more information, it will contact you within 60 days. Call 1-800-985-3059 with your confirmation number to check status."
+      ],
+      "orderedList": true
+    },
+    {
+      "id": "ground-ambulance",
+      "heading": "Ground Ambulance Bills and State Rules",
+      "content": [
+        "Ground ambulance bills generally fall outside the No Surprises Act, so ground ambulance providers are still allowed to charge out-of-network rates and cost-sharing unless state law says otherwise. CMS's [ground ambulance action plan](https://www.cms.gov/initiatives/your-patient-rights/medical-bill-rights/get-help/find-action-plan/ground-ambulance-bill) applies if you got an unexpected bill, used health insurance and were taken to the hospital by ground ambulance.",
+        "If you were billed in one of the states listed below, CMS suggests calling the ground ambulance provider. Tell them you're aware of surprise billing rules for ground ambulance services, because they may be able to reduce your bill.",
+        "Outside those states, ask for a lower bill or a payment plan. CMS says providers or their billing departments can sometimes lower the price and may offer payment plans.",
+        "The state list is dated November 15, 2021, and current rules in your state may differ. A Consumer Assistance Program in the state where you got care may be able to give advice for your specific case, and CMS links to those programs from the same ground ambulance action plan. Patient advocates and a friend or family member who can speak for you are the other help CMS lists.",
+        "CMS lists these 10 states with ground ambulance billing protections as of November 15, 2021:"
+      ],
+      "bullets": [
+        "Colorado",
+        "Delaware",
+        "Florida",
+        "Illinois",
+        "Maine",
+        "Maryland",
+        "New York",
+        "Ohio",
+        "Vermont",
+        "West Virginia"
+      ]
+    }
+  ],
+  "takeaway": {
+    "heading": "Our Takeaway",
+    "paragraphs": [
+      "If you have private insurance and an out-of-network anesthesiologist, radiologist, pathologist or lab billed you after care at an in-network hospital, hospital outpatient department or ambulatory surgical center, the No Surprises Act generally protects you. Those specialties are not allowed to ask you to waive that protection. Compare the bill with the Patient Balance on your EOB, call your plan, and file with the No Surprises Help Desk at 1-800-985-3059 if the bill is higher.",
+      "Based on CMS pages we read in full on November 28, 2026, this is a reported synthesis of federal guidance for most private plans. It is not a test of any provider or plan.",
+      "If you're uninsured or paying yourself, use a good faith estimate and the $400 dispute instead of the EOB route. If the bill came from a ground ambulance, a doctor's office that is not a hospital outpatient department, an out-of-network facility, or a short-term, sharing ministry or fixed indemnity plan, the federal protection does not cover it. In that case, ask the provider for a lower bill or a payment plan."
+    ],
+    "conditions": "Applies to people using most private health insurance: employer plans including Federal Employees Health Benefits plans, the federal Health Insurance Marketplace, State-based Marketplaces and other individual market coverage. Planned-care protection covers care related to a visit to an in-network hospital, hospital outpatient department or ambulatory surgical center. The explicit in-network cost-sharing limit is CMS wording for emergency care only. Medicare, Medicaid, Indian Health Services, Veterans Affairs Health Care and TRICARE already protect you from some unexpected out-of-network bills under their own rules.",
+    "whatWouldChange": "The answer changes if CMS or Congress revises the covered settings or the notice and consent exceptions, if you signed a valid notice and consent form for a provider allowed to ask for one, if your EOB shows the billed amount equals your Patient Balance, if a state ground ambulance law covers the bill, or if you did not use insurance, which moves you to the good faith estimate route."
+  },
+  "faqItems": [
+    {
+      "question": "What if my anesthesiologist is out of network?",
+      "answer": "If you used most types of private insurance and the anesthesiologist treated you at an in-network hospital, hospital outpatient department or ambulatory surgical center, the No Surprises Act protects you from unexpected out-of-network bills in most cases. CMS says anesthesiologists are not allowed to ask you to sign a notice and consent form. Compare the bill with your EOB Patient Balance and call your plan if the bill is higher."
+    },
+    {
+      "question": "Can I be billed more than in-network rates at an in-network hospital?",
+      "answer": "For emergency care, CMS says the hospital, its providers and an air ambulance provider can't charge more than the in-network cost-sharing rate if your plan covers emergency care. For planned care, CMS says you're protected from unexpected out-of-network bills in most cases. That protection can end if you signed a valid notice and consent form for a provider who is allowed to ask for one."
+    },
+    {
+      "question": "Does the good faith estimate apply if I have insurance?",
+      "answer": "No. CMS limits the good faith estimate to people who don't have insurance or choose not to use it. Those patients may dispute a bill at least $400 more than that provider's estimate, while insured patients use the EOB, their plan and the No Surprises Help Desk."
+    },
+    {
+      "question": "Are ground ambulances covered by the No Surprises Act?",
+      "answer": "Generally, no. CMS says ground ambulance providers are still allowed to charge out-of-network rates and cost-sharing unless state law says otherwise, and it listed 10 states with protections as of November 15, 2021. Ask the ground ambulance provider for a lower bill or a payment plan."
+    },
+    {
+      "question": "Who do I call about a surprise medical bill?",
+      "answer": "Call your health plan first, using the phone number on your EOB, because CMS says the plan might be able to fix billing errors with your provider. If the problem continues, call the No Surprises Help Desk at 1-800-985-3059. CMS offers phone support 7 days a week in English, Spanish and over 350 other languages."
+    },
+    {
+      "question": "What if I signed a consent form?",
+      "answer": "A signed notice and consent form can give up your protection for care from a provider who is allowed to ask for one. CMS says anesthesiology, radiology, pathology, diagnostic and laboratory services, emergency medicine, neonatology, assistant surgeons, hospitalists and intensivists are not allowed to ask. Keep the signed and dated form and include it if you submit a complaint."
+    },
+    {
+      "question": "Can surprise medical bills go to collections?",
+      "answer": "The CMS pages we read on November 28, 2026 do not address collections. Call the No Surprises Help Desk at 1-800-985-3059 to ask about your situation. Keep your bill, EOB and any complaint confirmation number together."
+    },
+    {
+      "question": "Does the No Surprises Act apply to Medicare or Medicaid?",
+      "answer": "CMS says Medicare, Medicaid, Indian Health Services, Veterans Affairs Health Care and TRICARE already protect you from some unexpected out-of-network bills. For a billing issue under one of these plans, CMS offers an action plan tool and the No Surprises Help Desk at 1-800-985-3059."
+    }
+  ],
+  "ctaTitle": "Check a Surprise Anesthesia Bill Against Your EOB",
+  "ctaText": "Line up the bill with the Patient Balance on your explanation of benefits. If the bill is higher, call your plan, then the No Surprises Help Desk at 1-800-985-3059.",
+  "ctaButton": "Know Your Medical Bill Rights",
+  "relatedLinks": [
+    {
+      "title": "How to Deal with Medical Debt",
+      "description": "Payment plans and hospital financial assistance steps for a medical balance you owe but can't afford.",
+      "href": "/guides/how-to-deal-with-medical-debt",
+      "category": "Guides"
+    },
+    {
+      "title": "HSA and FSA Reimbursement Checklist",
+      "description": "The records to keep when you pay your share of a medical bill from a health savings account or flexible spending account.",
+      "href": "/guides/hsa-fsa-reimbursement-checklist",
+      "category": "Guides"
+    },
+    {
+      "title": "Allstate Outage: Coverage, Payments and Claims Guide",
+      "description": "What a multi-day insurer outage meant for coverage, late fees and pending claims, and which records to save.",
+      "href": "/guides/allstate-outage-coverage-payments-claims",
+      "category": "Guides"
+    }
+  ],
+  "sourceNote": "Based on CMS pages we read in full on November 28, 2026: Medical bill rights (https://www.cms.gov/medical-bill-rights), Know your medical bill rights (https://www.cms.gov/medical-bill-rights/know-your-rights), Know your medical bill rights when using insurance, Know your medical bill rights when not using insurance, How to read a health insurance explanation of benefits, Check your medical bill for errors, Submit a provider or insurer complaint, and Action plan: Ground ambulance bill. The coverage table is our synthesis of CMS text. It is reported analysis and involves no product or provider testing.",
+  "pricingNote": "This page quotes no prices. The only figures are CMS-stated thresholds and contacts: $400, 120 days, 3 business days, 60 days, 15 minutes and 1-800-985-3059. This page is general information drawn from CMS text and is not legal, medical, tax or financial advice for your situation.",
+  "publishedDate": "2026-11-28",
+  "updatedDate": "2026-11-28",
+  "reviewerNote": {
+    "label": "Publisher's Take",
+    "reviewedDate": "2026-11-28",
+    "note": "Before you pay a surprise anesthesia bill, line it up against the Patient Balance on your EOB, since CMS says the bill shouldn't be higher. If the numbers don't match, call your plan first, then the No Surprises Help Desk at 1-800-985-3059 with both papers in hand."
+  }
+}

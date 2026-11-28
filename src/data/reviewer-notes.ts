@@ -89,6 +89,10 @@ export const REVIEWER_NOTES: Record<string, ReviewerNoteEntry> = {
     label: "Publisher's Take",
     reviewedDate: "November 28, 2026",
     note: "After month one, the fee that stings is usually the first $15 dispute or the first batch of international cards at an extra 1.5%. If a large share of your buyers are overseas, price those lines before moving, and skip the switch if a $25 monthly gateway fee would outweigh the rate you save.",
+  "/guides/surprise-anesthesia-bill-no-surprises-act/": {
+    label: "Publisher's Take",
+    reviewedDate: "November 28, 2026",
+    note: "Before you pay a surprise anesthesia bill, line it up against the Patient Balance on your EOB, since CMS says the bill shouldn't be higher. If the numbers don't match, call your plan first, then the No Surprises Help Desk at 1-800-985-3059 with both papers in hand.",
   },
 
 };
