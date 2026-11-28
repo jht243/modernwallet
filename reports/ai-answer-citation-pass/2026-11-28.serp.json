@@ -1,0 +1,74 @@
+{
+ "pages": {
+  "https://www.themodernwallet.com/compare/roth-401k-vs-traditional-401k/": {
+   "query": "roth or regular 401k",
+   "paa": [
+    "What does Dave Ramsey say about Roth 401(k)?",
+    "Can I retire at 62 with $400,000 in 401k?",
+    "How much will $10,000 make in a Roth IRA?",
+    "What are the key differences between an IRA and a 401(k)?",
+    "Which is better, 401k or Roth IRA?",
+    "At what age should you have $100,000 in your 401k?"
+   ],
+   "related_searches": [],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.reddit.com",
+    "www.benefits.ml.com",
+    "www.nerdwallet.com",
+    "www.fidelity.com",
+    "www.irs.gov",
+    "www.sharebuilder401k.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.financestrategists.com",
+    "www.youtube.com",
+    "www.myharvestwealth.com",
+    "www.accordcapitalmanagement.com",
+    "www.billshark.com",
+    "www.murphyfinancialgrp.com",
+    "www.greenretirement.com",
+    "www.northfloridafinancial.com",
+    "dechtmanwealth.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  },
+  "https://www.themodernwallet.com/auto-loan/": {
+   "query": "nerdwallet auto loan calculator",
+   "paa": [],
+   "related_searches": [
+    "NerdWallet auto loan rates",
+    "NerdWallet car affordability calculator",
+    "NerdWallet loan calculator",
+    "How much is a $30K car payment for 72 months",
+    "$60000 car loan payment 72 months calculator",
+    "$25000 car loan payment 72 months",
+    "How much is a car payment on 15000",
+    "50k car payment 72 months"
+   ],
+   "verdict": "winnable",
+   "forum_dominated": false,
+   "ai_overview_present": true,
+   "ai_overview_cited_domains": [
+    "www.nerdwallet.com"
+   ],
+   "featured_snippet": null,
+   "top10_domains": [
+    "www.nerdwallet.com",
+    "www.nerdwallet.com",
+    "www.nerdwallet.com",
+    "www.nerdwallet.com",
+    "www.navyfederal.org",
+    "www.nerdwallet.com",
+    "www.nerdwallet.com",
+    "in.pinterest.com",
+    "www.nerdwallet.com"
+   ],
+   "recommended_shape": "standard article/guide is viable"
+  }
+ },
+ "cost": "DataForSEO: 2 calls, $0.00415 of $2.00 budget"
+}

@@ -1,0 +1,181 @@
+{
+  "site_url": "sc-domain:themodernwallet.com",
+  "window_days": 30,
+  "top_pages": [
+    {
+      "page": "https://www.themodernwallet.com/",
+      "clicks": 1,
+      "impressions": 70,
+      "ctr": 0.0143,
+      "position": 4.33
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-estate-planning-software/",
+      "clicks": 1,
+      "impressions": 6,
+      "ctr": 0.1667,
+      "position": 4
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/529-leftover-money-options/",
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 0.3333,
+      "position": 3.67
+    },
+    {
+      "page": "https://www.themodernwallet.com/roundup/best-retirement-accounts-for-self-employed/",
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 0.3333,
+      "position": 5.67
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/",
+      "clicks": 0,
+      "impressions": 67,
+      "ctr": 0,
+      "position": 7
+    },
+    {
+      "page": "https://www.themodernwallet.com/about/",
+      "clicks": 0,
+      "impressions": 56,
+      "ctr": 0,
+      "position": 2.59
+    },
+    {
+      "page": "https://www.themodernwallet.com/calculators/",
+      "clicks": 0,
+      "impressions": 53,
+      "ctr": 0,
+      "position": 12.96
+    },
+    {
+      "page": "https://www.themodernwallet.com/methodology/",
+      "clicks": 0,
+      "impressions": 51,
+      "ctr": 0,
+      "position": 4.04
+    },
+    {
+      "page": "https://www.themodernwallet.com/investing/",
+      "clicks": 0,
+      "impressions": 45,
+      "ctr": 0,
+      "position": 5.58
+    },
+    {
+      "page": "https://www.themodernwallet.com/budget/",
+      "clicks": 0,
+      "impressions": 44,
+      "ctr": 0,
+      "position": 7.2
+    },
+    {
+      "page": "https://www.themodernwallet.com/merchant-cash-advance/",
+      "clicks": 0,
+      "impressions": 23,
+      "ctr": 0,
+      "position": 8.09
+    },
+    {
+      "page": "https://www.themodernwallet.com/business-line-of-credit/",
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0,
+      "position": 5.75
+    },
+    {
+      "page": "https://www.themodernwallet.com/editorial-policy/",
+      "clicks": 0,
+      "impressions": 17,
+      "ctr": 0,
+      "position": 8.65
+    },
+    {
+      "page": "https://www.themodernwallet.com/compliance/colorado-cottage-foods-act-expansion/",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 4.06
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/trump-account-worth-it/",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 4.12
+    },
+    {
+      "page": "https://www.themodernwallet.com/invoice-factoring/",
+      "clicks": 0,
+      "impressions": 16,
+      "ctr": 0,
+      "position": 6.69
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/invoice-factoring-vs-merchant-cash-advance/",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 7.21
+    },
+    {
+      "page": "https://www.themodernwallet.com/compare/roth-401k-vs-traditional-401k/",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 66.36
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/ai-financial-advice-chatbots-guide/",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 7.08
+    },
+    {
+      "page": "https://www.themodernwallet.com/investing/withdrawal-calculator/",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "page": "https://www.themodernwallet.com/compliance/colorado-antitrust-premerger-notification-update/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 4.92
+    },
+    {
+      "page": "https://www.themodernwallet.com/compliance/colorado-medical-record-request-fee-cap/",
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 4.58
+    },
+    {
+      "page": "https://www.themodernwallet.com/auto-loan/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 19.82
+    },
+    {
+      "page": "https://www.themodernwallet.com/estate-planning/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 13.18
+    },
+    {
+      "page": "https://www.themodernwallet.com/guides/small-business-financing-guide/",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 4.91
+    }
+  ]
+}

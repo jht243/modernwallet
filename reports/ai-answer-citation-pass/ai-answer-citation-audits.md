@@ -178,3 +178,5 @@
 | /compare/roth-401k-vs-traditional-401k/ | 2026-11-21 | regular vs roth 401k | ABSENT | no | www.reddit.com,www.benefits.ml.com,www.fidelity.com | none | n/a |
 | /guides/trump-account-worth-it/ | 2026-11-21 | are trump accounts a scam | ABSENT | no | none listed | none | n/a |
 | /auto-loan/ | 2026-11-21 | nerdwallet auto loan calculator | ABSENT | no | www.nerdwallet.com | none | n/a |
+| /compare/roth-401k-vs-traditional-401k/ | 2026-11-28 | roth or regular 401k | ABSENT | no | www.reddit.com/www.benefits.ml.com/www.nerdwallet.com (+3 more) | none | n/a |
+| /auto-loan/ | 2026-11-28 | nerdwallet auto loan calculator | ABSENT | no | www.nerdwallet.com | none | n/a |
