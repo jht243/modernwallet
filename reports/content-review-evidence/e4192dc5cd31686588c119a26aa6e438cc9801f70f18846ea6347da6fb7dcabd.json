@@ -1,0 +1,67 @@
+{
+  "reviewer": "fleet-guide-auditor",
+  "jobId": "opt-new-two-wallet-reimbursement-20261109",
+  "round": 1,
+  "contextId": "/root/safe_medication_guide/fleet_guide_auditor",
+  "contextEpoch": 2,
+  "instructionApplication": "Retained own ModernWallet28partfirstreading plus current3partAUDIThandoff/remediation/policy delivered and checked. HIGHmandatory3roundceiling; originaljob/candidates/admissions remain. Wrong no-slash reserve attempt failed beforereservation, then actualsnapshotroute admitted round1.",
+  "candidate": {
+    "path": "reports/opt-new-two-20261109/candidate-native.json",
+    "sha256": "3b54a2e48e5a3e13c70b4e80182e70ba901122bb8c84b995c70b6deadae0507a"
+  },
+  "snapshot": {
+    "path": "reports/opt-new-two-20261109/snapshot-1.json",
+    "sha256": "5a66eac3f975b22949e7bc6dca755b14c92a72bfd9b2e0f6f0a7e322be833c9f"
+  },
+  "findings": {
+    "path": "reports/opt-new-two-20261109/audit/findings-1.json",
+    "sha256": "2703ef08dd1c4e2bba72ffe0a2e3e9bd20f4c06e7e5307d624da80cea3b7117c"
+  },
+  "mechanical": {
+    "sourceBodyWords": 1610,
+    "distribution": "1passing0failingmedian1610 (source measurement; no native depthscript).",
+    "metadataLengths": {
+      "title": 56,
+      "description": 148
+    },
+    "headings": "Seven nativeTitleCase headings, no source emdash/rawHTML/placeholder; requiredfields/unique slug present.",
+    "links": {
+      "path": "reports/opt-new-two-20261109/audit/internal-links-1.json",
+      "sha256": "715e6d0b3d508e628ec2df081f9c4505afaa1ad54fa9ef09ff93a53de7e2218f"
+    },
+    "rhythm": {
+      "path": "reports/opt-new-two-20261109/audit/rhythm-1.json",
+      "sha256": "2881525f4fc7ad220a7f985fca4b25aba61458bdf96f5d92a2441409028435ef"
+    }
+  },
+  "fullReading": "Read full15738character guide render includingbyline/intro/checklist/table/allFAQs/sources/bottomdisclaimer/globalfooter. Read complete75185character index text in3bounded parts, all cardblurbs/navigation/disclosures. Scope is one insertedcard, not an unauthorized rewrite/verification of every historicalcard.",
+  "sourceJudgment": "CurrentprimaryIRS969/502/Notice2026-5 independently opened during ownpreparation. Recordkeeping is sufficientrecords, not universalreceiptmandate. Q20solefixedfeecompensation omitted bydraft. Q18employer-paidDPCSAfee is different from employerfundingHSA; currentmembershipFAQconflates. SpecialDPCqualification denial muststaylimitedto thatrule. Q19advanceHSAcounterexample present but53wordsentence needs readablealternative list. Exact12corrections no new research/genneeded.",
+  "nativeClaims": "Inspected actualgeneratorguards:1772APIwordcount, configuredgemini-3.8-flashfallback, internalclaimcheckpasses2found5/3, irrelevantgenericunusedfields and mistakenemptiedsection flags. Actualbodies intact. Numbers1040/18/19/8889/969 trace to closedIRSfacts. Nativechecker removedthemembershipDPCFAQsentence aftercomplexlabmisstatement, leaving the observedFAQgap. Nativechecker is not this independentverdict.",
+  "rendering": {
+    "desktop": "OwnChromevisual shows clear nativeH1/byline/paragraphs, readablecontentwidth; no testingorprofessional-reviewbadge.",
+    "mobile": "Own390x844Chromeobservation: body375px, table335px,parent335px. Scrolled actualreceiptcells into view, read bothcolumns without horizontaloverflow. ExistingGrowinbodyandstickybottomads observed; stickybottomusesabout80pxandcontentcanbescrolledclear. No adnormalizationfabricated.",
+    "index": "Ownmobileindexnewcard335px: exactH1, source-supportedblurb, native1tools/7stepscounts. IRS969referencepill is a practicalresource, no interactivecalculatorclaimedorbuilt. Viewportresetaftercheck.",
+    "dates": "Visible UpdatedNov9,2026 matches Article datePublished/dateModified2026-11-09; JonathanVelezPersonmatchesestablishedauthor. Index CollectionPage/Breadcrumbonly, no Articledate tofake.",
+    "schema": "FAQschema matches current4answers, including erroneousFAQclaims flaggedseparately. WWWselfcanonicalcorrect.",
+    "indexScope": "Indexcardfactclaim is only organizingmedicalrecords for reimbursement, withoutapproval/treatment/eligibilitypromise. Existingglobalnavigationbadcomparisonlinks and inheritedindexfooterclaims remainunchanged; notnewadvice links or scopeexpansion."
+  },
+  "advisories": [
+    "Inheritedindexfooter states commissions neveraffectrankings, and numeroushistoricalcardshaveolderstyle. Unrelated historicalstyle/neutrality issue is recorded outside the changed reimbursementanswer; no unauthorizedtemplateorcomparisonrepair.",
+    "Nativeindexsingular1toolsgrammar is inherited metadataformat, not newinteractivebuild or claimedtest."
+  ],
+  "outcomes": {
+    "guide": "FAIL:12exactRung1corrections",
+    "index": "PASS:one unchangednewcard; releaseconditionalonguidePASS"
+  },
+  "reviewCounters": {
+    "guide": {
+      "reviews": 1,
+      "reworks": 0
+    },
+    "index": {
+      "reviews": 1,
+      "reworks": 0
+    }
+  },
+  "resolvedFindingIds": []
+}

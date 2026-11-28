@@ -1,0 +1,357 @@
+{
+  "reviewer": "fleet-guide-auditor",
+  "jobId": "opt-new-two-wallet-reimbursement-20261109",
+  "verdict": "FAIL",
+  "snapshotSha256": "7233a5ddccc8fec89b3767c648b5dbbdd08cb54caafc8dd24384fb81abc3fc8f",
+  "evidence": {
+    "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+    "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+  },
+  "resolvedFindingIds": [],
+  "routes": [
+    {
+      "path": "/guides/hsa-fsa-reimbursement-checklist/",
+      "fingerprint": "93ed10fd6b567321ce390335fd54ad6be4deadee1fdd57c72b0cc547741fbcc7",
+      "verdict": "FAIL",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "FAIL",
+          "evidence": "Useful opening procedure, table and onpage source rules answer the task, but universalreceiptFAQ and employer-contributionmembershipFAQ conflict with actualIRSrequirements. The DPCdefinition omitssolecompensation and blanketdenialextendsbeyondthespecialrule. Exact12targetedfindingsretained.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "sourceSupport": {
+          "status": "FAIL",
+          "evidence": "OwnprimaryIRSinspection supports core timing/records/no-doubleclaim method. FAQreceiptmandate exceeds sufficientrecords; Q18employer-paidfeesareconflatedwithemployerHSAfunding; Q20solecompensationconditionomitted;502medicaldefinitionmistakenlyattributedascomplete tax-freeaccounttest. See W1-F01/F02/F03/F11.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "Complete nativebyline truthfully says reviewedagainstprimarysources byestablishedJonathanVelez,PersonalFinanceWriterEditor. Actual sourceinspection occurred; no TESTEDlabel, professionalcredential, clinicaltrial, first-handmedicalclaimprocessing or inventedtaxrevieweventisasserted. Sourceaccuracyerrors remain separateFAIL.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "CurrentvisibleUpdatedNovember9,2026 and Article datePublished/dateModified2026-11-09 agree. JonathanVelezPerson and sourceCreativeWork useactualidentities. FAQschema matchesfourvisibleanswers, whose factualerrorsareseparatelyflagged. CanonicalexactWWWtrailingroute; nofalsereviewdate.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "ExactWWWselfcanonicalandHTTP200captureverified. All105uniqueguideinternalpathshavebuiltstaticdestinations; eachfirstnewprimarysourceisdeep-linkedtoactualIRS969/502/Notice. TOCidsandnativeguidesindexinboundpresent; no badcomparisonlinked in newbody.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "OwnChrome desktop and390pxmobileviews confirm readableheading/byline/bodyandactualreceiptcells. Body375px, table335pxfits335pxparent; nativeadsobservedwithoutpermanenttableobstruction. NativeTOC/resources and bottomdisclaimer readable. Temporaryviewportreset.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "scopeAndExclusions": {
+          "status": "FAIL",
+          "evidence": "Ordinarysource-onlyformat and no treatment/dosing/advicepledgesstaywithin scope, but the employer-contributionFAQ and universalreceipts/blanketDPCdenial expandactualtaxconditions. Targetedcorrectionsnarrowtoapprovedfederalprocess, no calculatororprofessionalappointmentrequired.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        }
+      },
+      "reviewProfile": "high",
+      "riskAssessment": {
+        "textSha256": "82208aa595fbbf49873509df0e183f15ecf1d8c1d34219fe7e8d278434161151",
+        "rationale": "Actual HSA/FSAreimbursement, tax-freeexpensequalificationandmedicalmembershiprulesare consequentialfinancial/legalclaims, requiringHIGH. Specificmisstatementsareflaggedhonestly ratherthanloweringriskorclaimingfinancialtesting.",
+        "consequentialClaims": [
+          {
+            "quote": "Yes, IRS rules require you to keep receipts and documentation showing your distributions were used exclusively to pay or reimburse qualified medical expenses.",
+            "category": "financial",
+            "reason": "This asserts a universalIRSreceiptmandatewhereactualIRS969requires sufficientrecords. It canmisdirecttaxrecord decisions."
+          },
+          {
+            "quote": "Fees for general health improvement or arrangements paid by employer contributions do not qualify.",
+            "category": "financial",
+            "reason": "This blurs actualemployer-paidDPCSAfeeexclusionwithaccountfundingsource, potentiallydenyingvalidHSAexpensesfundedwithemployercontributions."
+          }
+        ],
+        "incidentalMentions": []
+      },
+      "reviewBudget": {
+        "path": "reports/opt-new-two-20261109/audit/guide-admission-1.json",
+        "sha256": "3d55dae2ae59fbbab1e88269658da672cdc8c18c31374bc6e38fea82fa5575d7"
+      },
+      "factualReview": {
+        "centralFacts": {
+          "status": "FAIL",
+          "evidence": "HSAafterestablishment/FSAcoverage/no-otherpayment distinctionsarepresent, but universalreceiptclaim and employer-contributionFAQaremateriallywrong. AllactualerrorsquotedinW1-F01throughF12withprecise replacements; no regenerationneeded.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "truthfulEvidence": {
+          "status": "PASS",
+          "evidence": "The page reports genuineIRSrules and no executedfinancialserviceorclinicaltest. Existingsource-reviewededitorbylineisaccurate evidencebasis, no credentialfabrication. GeneratorflagsarepreservedhonestlyandnotmisrepresentedasanindependentPASS.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "currentDetails": {
+          "status": "FAIL",
+          "evidence": "Actual2025publicationeditionsarecurrentqualitative sources,2026NoticecoversconditionalDPCrules. Q20noreimbursementfeecapcorrectlyseparatefromcontributioneligibility. MaterialsolefixedfeeconditionmissingandQ18FAQoverbroad; no staleannualdollarfiguresintroduced.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "recommendationSupport": {
+          "status": "FAIL",
+          "evidence": "Orderedclaimrecordmethodisusefuland largelysource-based. Absoluteguaranteethatstepsensurefederalcompliance, receiptretentiononlyuntilapproval and universalupload instructionexceedclosedpracticalrecommendations. W1-F09/F10/F12narrowwithoutnewfacts.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "primarySources": {
+          "status": "FAIL",
+          "evidence": "GenuineIRS969/502/Notice2026-5inspectionandraw200recordsareavailable. Draftmisstatesrecordrequirement, omitsspecialrulecondition andreads502definitionasautomaticaccountqualification. Exactprimaryconditionssupportthereviewerprovidedcorrections.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "consequentialClaims": {
+          "status": "FAIL",
+          "evidence": "StrongestprimarycounterexamplesareIRS969sufficient-recordwordingandNotice2026-5Q18/Q20 employerpayment/solecompensation distinctions. Q19advanceHSAexceptioniscorrectlypresentandFSA-ban separatelyscoped, but membershipFAQfailstocarrymaterialconditions.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "limitationsAndJurisdiction": {
+          "status": "FAIL",
+          "evidence": "FederalUSprocessscopeandplanvariationsarevisible; noOptqualificationdetermined. Howeveruniversalreceipt/feeexclusionandemployerfundinglanguage omit applicabilitylimits. Proposedreplacementsrestoreexactrecord, accountandfeeconditions withoutaddingcontributionadvice.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "professionalReview": {
+          "status": "NA",
+          "evidence": "No mandatorynamedprofessionalreviewisrequiredbycurrentauthor-defaultscontract for this bounded generalinformationalfederalprocess. JonathanVeleziseditor, REVIEWERundefinedmatchesnativeconfig. No actualtaxprofessional/clinicalreviewisclaimed; individualizedqualification goes toadministratororprofessional.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "riskClassification": {
+          "status": "PASS",
+          "evidence": "HIGH is activeModernWalletminimumandrequiredbyactualtaxfree-distribution/medicalexpenseclaims. Actualfirstguidecycle3c8d42ecb4c4434e8e3d053276481bd6round1andoriginaljobretained. Internalwriterclaimpassesdonotconsumeorreplaceindependentrounds.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "seoQuality": {
+          "status": "FAIL",
+          "evidence": "Actualsource1610wordsfloor1200passes, metadata56/148andTitleCase/headings/keyword/canonicalfit; rhythm5short13medium56longhasnoprohibitedruns.53wordQ19citationstackand42wordQ20definitionrequiretargetedreadabilityrepair. No padding,newsectionorregenerationneeded.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        }
+      },
+      "findings": [
+        "W1-F01",
+        "W1-F02",
+        "W1-F03",
+        "W1-F04",
+        "W1-F05",
+        "W1-F06",
+        "W1-F07",
+        "W1-F08",
+        "W1-F09",
+        "W1-F10",
+        "W1-F11",
+        "W1-F12"
+      ]
+    },
+    {
+      "path": "/guides/",
+      "fingerprint": "9d8402e051992ff7d1e1b0da2fbf8baeb9ccc9e2e76bfe4986ba28728e7eae6f",
+      "verdict": "PASS",
+      "checks": {
+        "wholePageCoherence": {
+          "status": "PASS",
+          "evidence": "Readfull75185characterindexin3boundedparts, includingallcards/footer. The soleaddedcardaccuratelyoffersmedicalexpenserecordorganization; sameexistingGUIDESgridandnoeligibility/taxapprovalpromise. Otherunrelatedhistoricalcardsareunchangedoutsideboundedsubstantiveanswerscope.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "sourceSupport": {
+          "status": "PASS",
+          "evidence": "Newcardblurbonlysaysorganizemedicalexpenserecordsforhealthaccountreimbursement, supportedbyIRS969recordkeepingmethod. NativeoneIRSpracticalresource andsevenexistingsectionscountmatchcurrentcandidate. No product/medicaleligibilityclaimaddedtotheindex.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "testingAndAttribution": {
+          "status": "PASS",
+          "evidence": "NewindexcardhasnoTESTEDbadge/firsthandtrial/professionalreviewclaim. Fullfooterdisclosuresarepresent; source-onlyguideidentityremainsordinary. Unchangedhistoricalneutralityphrasingnotedasanout-of-scopeadvisory ratherthanpresentedasnewlyprovedfact.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "datesAndSchema": {
+          "status": "PASS",
+          "evidence": "IndexselfcanonicalexactWWW/guides/, Breadcrumb/CollectionPageschema valid. AutoindexcardadditiondoesnotcreateArticleprosedate; documentedgenuinecollectiondateexceptionapplies. Nofabricatedupdated/reviewerdateintroduced.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "linksAndIndexability": {
+          "status": "PASS",
+          "evidence": "Completeindexcaptured200andWWWselfcanonical;462uniqueinternalpathshavebuiltstaticdestinations. Oneexactnewguidelinkand descriptivecardprovideinboundcoverage. ReleaseisconditionalonguidePASSsoindexmustnotpublishfailedtargetfirst.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "renderedLayout": {
+          "status": "PASS",
+          "evidence": "Ownmobile390pxindexvisual:335pxnewnativecardfits375pxbody, heading/blurb/resourcecountreadable. Existingresponsivegridandheaderremainunchanged. Nosynthetictool/customUI,newdownloadorplaceholderintroduced.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "scopeAndExclusions": {
+          "status": "PASS",
+          "evidence": "OnlyoneautomaticnativeGUIDEScardadded;othercardcopyandtemplatepreserved. Carddoesnotassertmedical/taxqualificationorendorseinaccurateaccountcomparison. No toolbuild, testingorprofessionalcreditintroduced;guideFAILmustbecorrectedbeforedependentindexrelease.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        }
+      },
+      "reviewProfile": "high",
+      "riskAssessment": {
+        "textSha256": "83e271564cbda3c87a448980c8c93ea51915bb6516b0f934dc0e904963e4f62a",
+        "rationale": "HIGHfloormandatoryforthisModernWalletcollection, whichcontainsactualfinancialguidanceblurbs. Thechangedcardonlyoffersrecordorganization;unchangedhistoricalscopeisretainedwithoutinventedwiderauditclaims.",
+        "consequentialClaims": [
+          {
+            "quote": "For 2026, the HSA triple tax advantage applies to contributions of up to $4,400 self-only or $8,750 family, and contributions stop at Medicare enrollment.",
+            "category": "financial",
+            "reason": "This existingcollectionblurbstatesHSAcontributionconditionsandannualamounts;HIGHfloorisretained. Itisunchangedbythereimbursementcardandnotusedasauthorityforthenewclaimworkflow."
+          }
+        ],
+        "incidentalMentions": []
+      },
+      "reviewBudget": {
+        "path": "reports/opt-new-two-20261109/audit/index-admission-1.json",
+        "sha256": "d7b21f648f67280bac8ef63db89d8432ec678927773726b6eddcfca387e1c27b"
+      },
+      "factualReview": {
+        "centralFacts": {
+          "status": "PASS",
+          "evidence": "Addedcardstatesonlymedicalexpenserecordorganizationforreimbursement; currentGuideobjecthassevensectionsandoneIRSpracticalreference. Thisisnottaxeligibilityorapprovalfinding. Otherhistoricalindexblurbsunchangedandnotadoptedasnewguidance.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "truthfulEvidence": {
+          "status": "PASS",
+          "evidence": "OrdinarycardwithoutTESTEDorprofessionalreviewbadge; actualnativefieldcountsaccurate. Source-supportedcardBlurbrestoredfromemptyisexplicitlypreservedinmechanical-templatingreceipt and independentlyreadhere.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "currentDetails": {
+          "status": "PASS",
+          "evidence": "Newcardhasnoannualcontributioncap, rate, priceortreatmentclaimtostale. Nativeone-resource/seven-sectioncountsandexactcurrenttitle/blurbmatchcandidate. Noexistingfinancialcardvaluesrewrittenornewlyclaimedverified.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "recommendationSupport": {
+          "status": "PASS",
+          "evidence": "Indexnavigationoffersapracticalrecordkeepingguide, notanaccountchoiceorfinancialresult. PrimaryIRSrecordkeepingprinciplessupportthenewblurb; linkreleasehelduntilactualguideconditionscorrectedandPASS.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "primarySources": {
+          "status": "PASS",
+          "evidence": "TheaddedcardprocesspromiseistraceabletorealIRS969recordkeepingrequirementsandtheapprovedreported-sourcepacket. ItdoesnotrelyonwrongexistingHSA/FSAcomparisonclaimsorunrelatedclientrecords.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "consequentialClaims": {
+          "status": "PASS",
+          "evidence": "No newdistributioneligibility, membershipqualification or medicalclaimisassertedbyaddedcard. Actualfullindexreadrevealsnocontradictionaffectingthenewrecordkeepingnavigationpromise. Existingfinancialblurbsoutsidechangedintentremainunchanged.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "limitationsAndJurisdiction": {
+          "status": "PASS",
+          "evidence": "AddedcarddoesnotbroadenUSfederalprocessintoworldwideorindividualtaxadvice. Itmerelyoffersmedicalrecordorganization; actualjurisdiction/planlimitsbelongtoguideandmustpassbeforelinkrelease.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "professionalReview": {
+          "status": "NA",
+          "evidence": "No mandatoryhumanprofessionalreviewisidentifiedforone descriptivenavigationcardundercurrentauthordefaults. Newcardmakesnocredential/reviewclaim; actualprofessionalsare notinvented.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "riskClassification": {
+          "status": "PASS",
+          "evidence": "ActiveHIGHminimumretainedforindexaffectedroute. Actualfirstindexcycle5e2deee3659f49639fa7dca5df1102c1round1reservedunderoriginaljob; no countersresetorloweredprofile for a navigationchange.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        },
+        "seoQuality": {
+          "status": "PASS",
+          "evidence": "ExistingindexH1/meta/canonical/CollectionPage/Breadcrumbretained;descriptiveexactnewcardlinkisusefulinbound. Native335pxcardfitsmobile. Thispureautomaticcardadditionisnota new1200wordhubarticleorpermissiontorewritehistoricalblurbs.",
+          "artifact": {
+            "path": "reports/opt-new-two-20261109/audit/reviewer-evidence-1.json",
+            "sha256": "e4192dc5cd31686588c119a26aa6e438cc9801f70f18846ea6347da6fb7dcabd"
+          }
+        }
+      },
+      "findings": []
+    }
+  ]
+}
