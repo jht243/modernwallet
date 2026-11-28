@@ -95,7 +95,6 @@ export const REVIEWER_NOTES: Record<string, ReviewerNoteEntry> = {
     reviewedDate: "November 28, 2026",
     note: "Before you pay a surprise anesthesia bill, line it up against the Patient Balance on your EOB, since CMS says the bill shouldn't be higher. If the numbers don't match, call your plan first, then the No Surprises Help Desk at 1-800-985-3059 with both papers in hand.",
   },
-
 };
 
 export function getReviewerNote(pathname: string): ReviewerNoteEntry | undefined {
