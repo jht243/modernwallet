@@ -1,0 +1,79 @@
+vember 13 trigger-prompt
+phrase `"Write the pages yourself (no external writing API)"` for every scheduled run on this site and
+on every fleet site: **always run `scripts/lib/content_gen.py` first** (it self-bootstraps the site's
+Claude $\rightarrow$ OpenAI $\rightarrow$ Gemini writer keys in cloud), falling back to in-session writing ONLY if
+`content_gen.py` itself fails across all providers so a daily run **never blocks with 0 pages**.
+
+## What the owner wants (Unified Mindmap `alternatives` Track — Updated 2026-11-23)
+
+- Up to **3 new "<Product> Alternatives" pages per America/Bogota calendar day**, fully automated.
+- **Unified Single-Engine Architecture:** `alternatives-daily` is a **lightweight Backlog & Pricing Scout** that hands every claimed candidate (and Step 7b thin-page upgrade) directly into the unified **Mindmap Pass `alternatives` track** (`.claude/tools/mindmap-tracks.py` + `.claude/tools/mindmap-gates.py --track alternatives`). Never run a separate standalone prose prompt outside Mindmap's `alternatives` track.
+- **Full Best-Practice Proof Across Every Site (supersedes older "give no advice / never tested" language):**
+  - Every page includes a **3-scenario switching/workload cost table** + explicit **break-even counterexample** grounded in deterministic Python calculation over published vendor rates (`evidence.json`), **matched first-party experience** (`_experience.md` / `_*experience-catalog.json` within stated limits), and a **decisive, workload-segmented Verdict / Our Takeaway** explaining when to switch vs. when `<Product>` is still the better fit.
+  - Testing labels follow `mindmap-tracks.py` `tested_eligibility` + `.claude/testing-policy.json` + site exclusions (medical/legal/financial sites automatically remain `basis: "modeled"` with zero hands-on product testing claims; eligible tech/software sites enable `(Tested YYYY)` + `howWeTested` ONLY when `basis == "measured"` with executed runs in `data/testing-evidence.json`).
+- **Lean 1-Pass Verification:** Keep the streamlined 1-round pricing + calculation-replay + link-guard audit so `alternatives` runs with ~51% lower writer system tokens while mechanically blocking generic proof-free filler via `mindmap-gates.py precheck-drafts --enforce-track-proof`.
+- The business purpose remains high-intent switching demand + inbound vendor inquiries: vendors find the page, ask to update their row or to be added.
+- No vendor outreach, no emails, no messages to anyone from this routine.
+
+## Page rules (every page)
+
+1. **Title and H1** both start with `<Product> Alternatives`, then a qualifier the page supports:
+   `<Product> Alternatives 2026: Pricing and Features Compared`, `<Product> Alternatives: Prices and Plans Compared` (or `<Product> Alternatives (Tested 2026)` ONLY when `basis == "measured"` and registered in `data/testing-evidence.json`).
+2. **The only external link** on the whole rendered page is the subject product's official site
+   (one link in the intro is enough). No links to the alternatives, sources, social sites or affiliates.
+   Internal links to this site are fine (`prepare-write-packets --track alternatives` enforces this mechanically in `<slug>.allowed-urls.txt`).
+3. **Two vendor CTAs, never next to each other** (the site template renders them for routes in the
+   site's alternatives registry, see the site adapter):
+   - "Are you one of these vendors? Update your listing" — a text line directly under the comparison table.
+   - "Want to be added to this alternatives page? Contact us" — the full-width dark CTA band with a
+     pill button at the end of the second section (the first body section after the table section).
+4. **Facts:** every price, plan name, limit or feature comes from that product's own website as of
+   today. If a vendor publishes no price, write "Quote-based; no public price" (a fact, not a deferral). Never estimate,
+   round into a new number or carry a price from memory. Name the source in plain text where useful;
+   keep the source URLs in `reports/alternatives-daily/<day>/<slug>-sources.json`, not as links.
+   Read vendor pages with `python3 scripts/alternatives_daily/fetch_page.py <url> [--grep price]`
+   (writer AND auditor): it renders JavaScript pages in a headless browser when a plain fetch is
+   blocked or empty. If `fetch_page.py` exits non-zero and its JSON header does NOT contain
+   `"anti_bot_gate": true`, try Claude Code's built-in `WebFetch` tool on `<url>` (and `<origin>/pricing`
+   or `<origin>/` if `<url>` was a stale deep path) before declaring a vendor unreadable (never solve,
+   click through, or bypass CAPTCHAs or `"anti_bot_gate": true`). For comparison-table alternatives
+   (the 5–8 competitors compared against the subject vendor), if one competitor's site is unreadable,
+   swap in another real readable competitor in the same category or state `"Quote-based; no public price"`
+   — never fail a subject page because one competitor 403s.
+5. **Full Mindmap SEO standard (owner rule 2026-11-14).** Every page follows this site's
+   `.claude/commands/_content-standard.md` IN FULL (SEO, INTENT, DEPTH, QUALITY, STYLE, VOICE,
+   COMPARISON, LINKS, ANCHOR, NEUTRALITY, AUDITOR, INTRO HUMANIZE) and `_anti-ai-language.md`,
+   exactly as a /mindmap-pass page would. Run its PREFLIGHT load step and record its row records:
+   `page type: comparison` (floor **1,500 body words**), `register: operator`, `medium: prose → prose`,
+   and `reader question: "…"` with its evidence tag. Minimum shape:
+   - SEO title 50–60 characters, H1 and title start "<Product> Alternatives"; Title Case headings;
+     primary keyword in the title, H1, first paragraph, final next-action sentence and 2–3 headings;
+     every acronym defined on first use; meta description with the keyword.
+   - First body sentence answers "what should I use instead of <Product>?"; answer the top
+     People-Also-Ask question in the opener; remaining on-topic PAA questions go in the FAQ.
+   - Comparison table: subject + 5–8 real alternatives (product, billing unit and entry price,
+     limits, best fit). Then one substantive H2 section PER alternative (what it is, pricing tiers
+     from its own site, who it fits, where it falls short versus <Product>, a worked cost example
+     where pricing allows), plus "How to Choose a <Product> Alternative" (decision criteria),
+     "When <Product> Is Still the Better Fit", "Who This Is Not For", "What Would Change Our
+     Answer", a short verdict and 4–6 FAQs (FAQ schema). Close on a concrete next action.
+   - Depth comes from answering more of the query (sub-questions, failure modes, cost arithmetic),
+     never padding. Table of contents when over 2,000 words.
+   - LINKS: 3+ contextual internal links to related pages on this site (hub, related guides,
+     comparisons) — internal links are encouraged. Owner override of the standard's link gate:
+     the ONLY external link is the subject product's official site (rule 2); other companies are
+     named in plain text.
+   - Data cells never defer ("see vendor site" fails the standard's deferral gate): state the fact
+     ("Quote-based; no public price", "Free plan; paid tiers from $X/month").
+   - Top-Quarter Proof & Takeaways (MANDATORY): (a) **Paragraph 1** (`intro[0]` / `introText[0]` / first `<p>` of `introHtml`) MUST open with the direct switching answer AND a concrete verified price, fee, or plan-cap delta from the vendor table; (b) **Section 1 immediately below the comparison table** (`sections[0]` / `chooseSection` / first H2 after the comparison table — in the top quarter of the page, NEVER buried at the bottom) MUST contain **180–250 words of original 3-scenario cost/workload modeling + a structured 3-scenario table (or pipe/HTML table) + an explicit break-even counterexample** calculated strictly from verified vendor numbers (plus a link to any matching calculator on this site); (c) When `.claude/reviewer-voice-profile.json` is present on this repo (non-medical sites), register a fresh 2-sentence `Publisher's Take` / `Editor's Note` via `python3 .claude/tools/mindmap-tracks.py register-reviewer-note --route <route> --note "<2 crisp sentences naming real post-month-1 friction and who should skip/walk away; numbers optional>"`; `(Tested YYYY)` applies ONLY when `basis == "measured"` and `tested_eligibility` passes (otherwise use `basis == "modeled"` with explicit `sourceNote` attribution).
+6. **No ads, affiliate links, sponsored boxes or self-promotion** on these pages beyond the template's CTAs.
+
+## Run steps
+
+Run every subagent INLINE and BLOCKING. Never background anything and end the turn.
+
+**0. Start.** The routine prompt has already run `bash .claude/tools/workflow-start.sh --cloud`
+(exit 0). Run `.claude/scripts/deploy-run-to-main.sh mark` once. Read the SITE ADAPTER at the end
+of this file. Day = America/Bogota date (`TZ=America/Bogota date +%F`).
+
+**1. Backlog + $0 vendor reachability precheck (run FIRST before loading `_content-standard.md` or `_anti-ai-language

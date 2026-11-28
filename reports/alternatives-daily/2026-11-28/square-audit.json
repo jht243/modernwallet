@@ -1,0 +1,55 @@
+{
+  "reviewer": "audit-subagent",
+  "verdict": "FAIL",
+  "findings": [
+    {
+      "id": "F1",
+      "quote": "Clover | ... Sold with device plans; device plan cost not in our source snapshot. / Our source snapshot lists Clover's card rates without the monthly cost of its device plans, so Clover sits outside the scenario model.",
+      "problem": "Deferral in a data cell (hard-fail gate) and incorrect: the cited source clover.com/pricing/retail publishes the device plans: Basic $16/mo for 36 months or $349; Standard $180/mo for 36 months or $1,899 + $84.95/mo; Advanced $240/mo for 36 months or $2,648 + $104.90/mo. Rates 2.6% + 10¢ (Basic) and 2.3% + 10¢ (Standard/Advanced) match. The Clover section, FAQ ('monthly cost is not in our snapshot'), verdict and 'Missing prices' bullet all rest on the missing number.",
+      "fix": "Put the published device-plan prices in the Clover cell and rewrite the Clover section, FAQ, verdict and 'What Would Change' bullet around them (e.g. $16/mo Basic adds $16 to a month, so Retail Basic at 500 sales = $440 + $16 = $456 vs Square Free $465). Recompute and state the Clover totals or explain why a device plan is not comparable to a $0-plan scenario.",
+      "hard_blocker": true
+    },
+    {
+      "id": "F2",
+      "quote": "Toast | Restaurant POS. ... Card percentages not in our source snapshot. / Our source snapshot does not include Toast's card percentages",
+      "problem": "Deferral in a data cell. pos.toasttab.com/pricing publishes no card percentages (Starter Kit '$0/month ... through a higher card processing rate'; other plans 'Get a Quote'); that is the fact, not a snapshot gap. Also the cell/section/FAQ reference 'our source snapshot' (internal-process wording) instead of Toast's page.",
+      "fix": "Replace with the fact: 'Card rates not published on Toast's pricing page; Starter Kit uses a higher card rate, quote-based for other plans.' Reword the Toast section and FAQ without 'our source snapshot'.",
+      "hard_blocker": true
+    },
+    {
+      "id": "F3",
+      "quote": "Shopify POS | Shopify Basic plan $29/month; in-person card rate 2.6% + 10¢ (also '$29 Shopify Basic fee', 'Shopify POS Basic $469 / $2,669 / $8,829')",
+      "problem": "shopify.com/pricing shows $29/mo only with 'Pay yearly'; 'Pay monthly' is $39 USD/mo. The billing term is missing, so the scenario totals are yearly-billing figures presented as the plan price (monthly billing adds $10 a month: $479, $2,679, $8,839).",
+      "fix": "Write '$29/month billed yearly ($39 billed monthly)' in the cell, section, bullets and scenario lines, and state which term the totals use.",
+      "hard_blocker": true
+    },
+    {
+      "id": "F4",
+      "quote": "Stripe Terminal costs least in all three scenarios, saving ... (sentences 62-78: 'In our model, SumUp saves $25 a month ...' to 'Our snapshot does not give interchange as one figure ...')",
+      "problem": "monotone-rhythm (hard fail): body-prose sentences 1-10, 38-52 (15), 62-78 (17) and 110-121 (12) are each all in the 15+ word band, and sentences 49-53 have lengths [22,21,21,23,20] (5 within 3 words). Overall distribution short 19 / medium 15 / long 98 of 132, median 19.5. The gate fails any run of 10 in one band.",
+      "fix": "Vary real sentence length inside the SumUp, Shopify POS, Helcim, Toast and Clover sections and the 'When Square Is Still the Better Fit' / FAQ block: split a few arithmetic sentences into short ones and merge others to 9-14 words. Do not pad.",
+      "hard_blocker": true
+    },
+    {
+      "id": "F5",
+      "quote": "Break-even counterexample: ... (0.027 x 100 + 0.05 = 2.75; 0.026 x 100 + 0.15 = 2.75). / (0.027 x 50 + 0.05 = 1.40; 0.026 x 50 + 0.10 = 1.40)",
+      "problem": "Over-long and over-dense sentences (35, 39, 35, 36, 35 words) with inline arithmetic and semicolon-joined formulas; fails the over-30-word run-on ban in `_anti-ai-language.md` GATE 1. Math itself is right (Square Premium vs Stripe Terminal flips at $33.33; 149 / 0.08 = 1,863 sales).",
+      "fix": "Break each into two sentences and move the formula to its own short sentence; replace the semicolon inside the parenthetical with 'and'.",
+      "hard_blocker": true
+    },
+    {
+      "id": "F6",
+      "quote": "chooseSection body: '- Small shop, 200 sales a month ($10,000): Stripe $350, ...' (bullet list, no pipe table)",
+      "problem": "Page rule 5(b) makes a structured 3-scenario TABLE (pipe/HTML) mandatory in the section right below the comparison table. The rendered page carries only one <table> (the comparison table); the three scenarios are a bullet list. Math in the bullets replays correctly.",
+      "fix": "Convert the three scenario bullets into a GFM pipe table (rows = products, columns = the three scenarios) in the chooseSection body, keeping the same figures; leave the break-even paragraph as is.",
+      "hard_blocker": true
+    },
+    {
+      "id": "F7",
+      "quote": "The busy shop processes $1,080,000 a year ($90,000 x 12), above Square's $250,000 custom-rate level, so a quoted rate would replace the published Square figures",
+      "problem": "Square says only that sellers over $250,000 a year may be 'eligible for custom pricing'; 'would replace' overstates it. Also Stripe Terminal is called the 'lowest-cost Square alternative' while Helcim's own page says in-person effective rates are 'near or below 2%' (about 60¢ on $30), below Stripe Terminal's 86¢; Helcim is outside the model but the verdict reads as universal.",
+      "fix": "Change to 'could replace' and note Helcim's published in-person effective-rate statement beside the Stripe Terminal lead (already hedged 'in our model').",
+      "hard_blocker": false
+    }
+  ]
+}

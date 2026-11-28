@@ -1,0 +1,151 @@
+{
+  "retrievedAt": "2026-11-28T16:44:55Z",
+  "route": "/alternatives/stripe/",
+  "subject": "Stripe",
+  "officialUrl": "https://stripe.com/",
+  "vendors": [
+    {
+      "name": "Stripe",
+      "planName": "Standard (domestic online card)",
+      "baseMonthlyUsd": 0,
+      "perSeatMonthlyUsd": 0,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 1.75,
+      "bestFit": "developers and online sellers",
+      "notes": "2.9% + 30¢ per successful domestic card transaction; no setup or monthly fees; +1.5% international cards, +1% currency conversion; $15 dispute fee",
+      "limits": "",
+      "sourceUrl": "https://stripe.com/pricing",
+      "modeled": true
+    },
+    {
+      "name": "Square Online (Free plan)",
+      "planName": "Square Free online card",
+      "baseMonthlyUsd": 0,
+      "perSeatMonthlyUsd": 0,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 1.95,
+      "bestFit": "",
+      "notes": "3.3% + 30¢ online; $0/month per location",
+      "limits": "",
+      "sourceUrl": "https://squareup.com/us/en/pricing",
+      "modeled": true
+    },
+    {
+      "name": "Square Online (Plus plan)",
+      "planName": "Square Plus online card",
+      "baseMonthlyUsd": 49,
+      "perSeatMonthlyUsd": 0,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 1.75,
+      "bestFit": "",
+      "notes": "2.9% + 30¢ online; $49/month per location",
+      "limits": "",
+      "sourceUrl": "https://squareup.com/us/en/pricing",
+      "modeled": true
+    },
+    {
+      "name": "Authorize.net",
+      "planName": "All-in-One",
+      "baseMonthlyUsd": 25,
+      "perSeatMonthlyUsd": 0,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 1.75,
+      "bestFit": "",
+      "notes": "$25/month plus 2.9% + 30¢ per transaction",
+      "limits": "",
+      "sourceUrl": "https://www.authorize.net/sign-up/pricing.html",
+      "modeled": true
+    },
+    {
+      "name": "Shopify Payments (Basic plan)",
+      "planName": "Basic",
+      "baseMonthlyUsd": 29,
+      "perSeatMonthlyUsd": 0,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 1.75,
+      "bestFit": "",
+      "notes": "$29/month Shopify plan; card rates from 2.9% + 30¢",
+      "limits": "",
+      "sourceUrl": "https://www.shopify.com/pricing",
+      "modeled": true
+    },
+    {
+      "name": "Paddle",
+      "planName": "Merchant of record",
+      "baseMonthlyUsd": 0,
+      "perSeatMonthlyUsd": 0,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 3.0,
+      "bestFit": "",
+      "notes": "5% + 50¢ per transaction, all-in-one merchant of record, no monthly fee",
+      "limits": "",
+      "sourceUrl": "https://www.paddle.com/pricing",
+      "modeled": true
+    },
+    {
+      "name": "Stripe Managed Payments",
+      "planName": "Stripe merchant of record",
+      "baseMonthlyUsd": 0,
+      "perSeatMonthlyUsd": 0,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 3.5,
+      "bestFit": "",
+      "notes": "2.9% + 30¢ Payments fee plus 3.5% per Managed Payments transaction = 6.4% + 30¢",
+      "limits": "",
+      "sourceUrl": "https://stripe.com/pricing",
+      "modeled": true
+    },
+    {
+      "name": "Helcim",
+      "planName": "Interchange-plus",
+      "baseMonthlyUsd": 0,
+      "perSeatMonthlyUsd": 0,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 0,
+      "bestFit": "",
+      "notes": "Interchange plus 0.50% + 25¢ keyed and online on $0 to $50K monthly volume; interchange not published as a number",
+      "limits": "",
+      "sourceUrl": "https://www.helcim.com/pricing/",
+      "modeled": false
+    },
+    {
+      "name": "Clover",
+      "planName": "Pay as little as 2.3% + 10¢",
+      "baseMonthlyUsd": 0,
+      "perSeatMonthlyUsd": 0,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 0,
+      "bestFit": "",
+      "notes": "Keyed-in 3.5% + 10¢ on retail plans; device plans",
+      "limits": "",
+      "sourceUrl": "https://www.clover.com/pricing",
+      "modeled": false
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Small online shop: 200 sales a month ($10,000 at a $50 average ticket)",
+      "seats": 1,
+      "monthlyVolume": 200
+    },
+    {
+      "name": "Growing shop: 1,200 sales a month ($60,000)",
+      "seats": 1,
+      "monthlyVolume": 1200
+    },
+    {
+      "name": "Established shop: 4,000 sales a month ($200,000)",
+      "seats": 1,
+      "monthlyVolume": 4000
+    }
+  ]
+}

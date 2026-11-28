@@ -1,0 +1,14 @@
+{
+  "checked": "2026-11-28",
+  "method": "scripts/alternatives_daily/fetch_page.py",
+  "notes": "PayPal and Braintree pricing pages returned 403 (fetch_page and WebFetch) and were not used; Emburse and SAP Concur pricing URLs returned 404 and were not used.",
+  "sources": [
+    "https://www.expensify.com/pricing",
+    "https://www.zoho.com/us/expense/pricing/",
+    "https://ramp.com/pricing",
+    "https://www.brex.com/pricing",
+    "https://www.bill.com/pricing",
+    "https://www.fylehq.com/pricing",
+    "https://www.rydoo.com/pricing/"
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "subject": "Expensify",
+  "scenarioCount": 3,
+  "scenarios": [
+    {
+      "scenario": "Small team: 5 members",
+      "seats": 5,
+      "monthlyVolume": 0,
+      "requiresAddon": false,
+      "lowestCostVendor": "Brex",
+      "lowestMonthlyUsd": 0.0,
+      "lowestAnnualUsd": 0.0,
+      "quotes": {
+        "Expensify": {
+          "monthlyUsd": 25.0,
+          "annualUsd": 300.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Collect",
+          "savingsVsSubjectMonthlyUsd": 0.0,
+          "savingsVsSubjectAnnualUsd": 0.0
+        },
+        "Zoho Expense": {
+          "monthlyUsd": 20.0,
+          "annualUsd": 240.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Standard (billed monthly)",
+          "savingsVsSubjectMonthlyUsd": 5.0,
+          "savingsVsSubjectAnnualUsd": 60.0
+        },
+        "Rydoo": {
+          "monthlyUsd": 60.0,
+          "annualUsd": 720.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Essentials (billed monthly)",
+          "savingsVsSubjectMonthlyUsd": -35.0,
+          "savingsVsSubjectAnnualUsd": -420.0
+        },
+        "Sage Expense Management": {
+          "monthlyUsd": 59.95,
+          "annualUsd": 719.4,
+          "unitOverageUsd": 0.0,
+          "plan": "Growth (billed annually)",
+          "savingsVsSubjectMonthlyUsd": -34.95,
+          "savingsVsSubjectAnnualUsd": -419.4
+        },
+        "Brex": {
+          "monthlyUsd": 0.0,
+          "annualUsd": 0.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Essentials",
+          "savingsVsSubjectMonthlyUsd": 25.0,
+          "savingsVsSubjectAnnualUsd": 300.0
+        },
+        "Brex Premium": {
+          "monthlyUsd": 60.0,
+          "annualUsd": 720.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Premium",
+          "savingsVsSubjectMonthlyUsd": -35.0,
+          "savingsVsSubjectAnnualUsd": -420.0
+        },
+        "Ramp": {
+          "monthlyUsd": 0.0,
+          "annualUsd": 0.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Free",
+          "savingsVsSubjectMonthlyUsd": 25.0,
+          "savingsVsSubjectAnnualUsd": 300.0
+        },
+        "BILL Spend & Expense": {
+          "monthlyUsd": 0.0,
+          "annualUsd": 0.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Spend & Expense",
+          "savingsVsSubjectMonthlyUsd": 25.0,
+          "savingsVsSubjectAnnualUsd": 300.0
+        }
+      }
+    },
+    {
+      "scenario": "Growing team: 25 members",
+      "seats": 25,
+      "monthlyVolume": 0,
+      "requiresAddon": false,
+      "lowestCostVendor": "Brex",
+      "lowestMonthlyUsd": 0.0,
+      "lowestAnnualUsd": 0.0,
+      "quotes": {
+        "Expensify": {
+          "monthlyUsd": 125.0,
+          "annualUsd": 1500.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Collect",
+          "savingsVsSubjectMonthlyUsd": 0.0,
+          "savingsVsSubjectAnnualUsd": 0.0
+        },
+        "Zoho Expense": {
+          "monthlyUsd": 100.0,
+          "annualUsd": 1200.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Standard (billed monthly)",
+          "savingsVsSubjectMonthlyUsd": 25.0,
+          "savingsVsSubjectAnnualUsd": 300.0
+        },
+        "Rydoo": {
+          "monthlyUsd": 300.0,
+          "annualUsd": 3600.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Essentials (billed monthly)",
+          "savingsVsSubjectMonthlyUsd": -175.0,
+          "savingsVsSubjectAnnualUsd": -2100.0
+        },
+        "Sage Expense Management": {
+          "monthlyUsd": 299.75,
+          "annualUsd": 3597.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Growth (billed annually)",
+          "savingsVsSubjectMonthlyUsd": -174.75,
+          "savingsVsSubjectAnnualUsd": -2097.0
+        },
+        "Brex": {
+          "monthlyUsd": 0.0,
+          "annualUsd": 0.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Essentials",
+          "savingsVsSubjectMonthlyUsd": 125.0,
+          "savingsVsSubjectAnnualUsd": 1500.0
+        },
+        "Brex Premium": {
+          "monthlyUsd": 300.0,
+          "annualUsd": 3600.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Premium",
+          "savingsVsSubjectMonthlyUsd": -175.0,
+          "savingsVsSubjectAnnualUsd": -2100.0
+        },
+        "Ramp": {
+          "monthlyUsd": 0.0,
+          "annualUsd": 0.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Free",
+          "savingsVsSubjectMonthlyUsd": 125.0,
+          "savingsVsSubjectAnnualUsd": 1500.0
+        },
+        "BILL Spend & Expense": {
+          "monthlyUsd": 0.0,
+          "annualUsd": 0.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Spend & Expense",
+          "savingsVsSubjectMonthlyUsd": 125.0,
+          "savingsVsSubjectAnnualUsd": 1500.0
+        }
+      }
+    },
+    {
+      "scenario": "Mid-size team: 100 members",
+      "seats": 100,
+      "monthlyVolume": 0,
+      "requiresAddon": false,
+      "lowestCostVendor": "Brex",
+      "lowestMonthlyUsd": 0.0,
+      "lowestAnnualUsd": 0.0,
+      "quotes": {
+        "Expensify": {
+          "monthlyUsd": 500.0,
+          "annualUsd": 6000.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Collect",
+          "savingsVsSubjectMonthlyUsd": 0.0,
+          "savingsVsSubjectAnnualUsd": 0.0
+        },
+        "Zoho Expense": {
+          "monthlyUsd": 400.0,
+          "annualUsd": 4800.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Standard (billed monthly)",
+          "savingsVsSubjectMonthlyUsd": 100.0,
+          "savingsVsSubjectAnnualUsd": 1200.0
+        },
+        "Rydoo": {
+          "monthlyUsd": 1200.0,
+          "annualUsd": 14400.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Essentials (billed monthly)",
+          "savingsVsSubjectMonthlyUsd": -700.0,
+          "savingsVsSubjectAnnualUsd": -8400.0
+        },
+        "Sage Expense Management": {
+          "monthlyUsd": 1199.0,
+          "annualUsd": 14388.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Growth (billed annually)",
+          "savingsVsSubjectMonthlyUsd": -699.0,
+          "savingsVsSubjectAnnualUsd": -8388.0
+        },
+        "Brex": {
+          "monthlyUsd": 0.0,
+          "annualUsd": 0.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Essentials",
+          "savingsVsSubjectMonthlyUsd": 500.0,
+          "savingsVsSubjectAnnualUsd": 6000.0
+        },
+        "Brex Premium": {
+          "monthlyUsd": 1200.0,
+          "annualUsd": 14400.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Premium",
+          "savingsVsSubjectMonthlyUsd": -700.0,
+          "savingsVsSubjectAnnualUsd": -8400.0
+        },
+        "Ramp": {
+          "monthlyUsd": 0.0,
+          "annualUsd": 0.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Free",
+          "savingsVsSubjectMonthlyUsd": 500.0,
+          "savingsVsSubjectAnnualUsd": 6000.0
+        },
+        "BILL Spend & Expense": {
+          "monthlyUsd": 0.0,
+          "annualUsd": 0.0,
+          "unitOverageUsd": 0.0,
+          "plan": "Spend & Expense",
+          "savingsVsSubjectMonthlyUsd": 500.0,
+          "savingsVsSubjectAnnualUsd": 6000.0
+        }
+      }
+    }
+  ]
+}

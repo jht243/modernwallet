@@ -1,0 +1,41 @@
+{
+  "reviewer": "audit-subagent",
+  "verdict": "FAIL",
+  "findings": [
+    {
+      "id": "F1",
+      "quote": "Sage Expense Management lists only its annual rate of $11.99 per active user / No monthly-billing rate appears in the pricing facts we captured. / Sage Expense Management Growth at $1,199",
+      "problem": "Incorrect plan fact. The Sage Expense Management (formerly Fyle) pricing page has a Monthly/Annually toggle: Growth is $14.99 per active user per month billed monthly and $11.99 billed annually (page JSON-LD also lists 14.99, 'Monthly billing'). The page models Sage on annual billing while modeling Zoho and Rydoo on monthly, and compares 'Rydoo's $12 monthly rate ... one cent above Sage' across different billing terms.",
+      "fix": "Add the $14.99 monthly rate (5/25/100 members: $74.95, $374.75, $1,499 a month), correct the FAQ and Sage section, state both terms in the Sage table cell, and re-do the Rydoo vs Sage comparison on like billing terms. Update the 'more than double Expensify' claim (still true at either term).",
+      "hard_blocker": true
+    },
+    {
+      "id": "F2",
+      "quote": "(sentences 9-20) 'Teams that only need a written record can start with our expense report template ... Below 5 users Expensify beats both, and a fourth member pushes a team from Zoho Expense Free to Standard at $16 a month.'",
+      "problem": "monotone-rhythm (hard fail): 12 consecutive sentences (intro paragraph 3 through the break-even counterexample) all fall in the 15+ word band. Whole page has 2 short, 20 medium and 86 long sentences of 108, median 19. Gate fails any run of 10 in one band.",
+      "fix": "Vary sentence length in the intro, the counterexample paragraph and the four-checks list: split two or three long sentences into 5-8 word statements and tighten others to 9-14 words. Do not pad.",
+      "hard_blocker": true
+    },
+    {
+      "id": "F3",
+      "quote": "chooseSection body: '- Small shop, 200 sales a month ($10,000): Stripe $350, ...' (bullet list, no pipe table)",
+      "problem": "Page rule 5(b) makes a structured 3-scenario TABLE (pipe/HTML) mandatory in the section right below the comparison table. The rendered page carries only one <table> (the comparison table); the three scenarios are a bullet list. Math in the bullets replays correctly.",
+      "fix": "Convert the three scenario bullets into a GFM pipe table (rows = products, columns = the three scenarios) in the chooseSection body, keeping the same figures; leave the break-even paragraph as is.",
+      "hard_blocker": true
+    },
+    {
+      "id": "F4",
+      "quote": "so the totals sit side by side in the table below / Each of these would change the scenario totals in the table above",
+      "problem": "The comparison table lists prices, not 5/25/100-member totals; the totals live only in the bullet list in 'How to Choose', so these two sentences misdescribe the page.",
+      "fix": "After converting the scenario bullets to a table (F3), reword to 'the totals sit side by side in the scenario table below' and 'in the scenario table above'.",
+      "hard_blocker": false
+    },
+    {
+      "id": "F5",
+      "quote": "Ramp lists two tiers: a Free plan at $0 per user per month and a Plus plan at $15 per user per month plus a platform fee based on team size.",
+      "problem": "Minor: sentence is 31 words (over the 30-word run-on line) and Ramp's page notes 'Save 20% with annual billing' for Plus, not mentioned. Publisher's Take for this route ('don't sign with anyone who bills a five-seat minimum') is directive advice, which the site adapter says these pages never give.",
+      "fix": "Split the Ramp sentence, optionally add the 20% annual-billing note, and soften the reviewer note to a fits-people-who phrasing.",
+      "hard_blocker": false
+    }
+  ]
+}

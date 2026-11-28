@@ -1,0 +1,102 @@
+--enforce-track-proof` with `.meta.json` saved under `reports/alternatives-daily/<day>/drafts/`, keeping the same URL, slug and title start, and refreshing prices from each vendor's site as in step 2). Audit the upgraded wave via ONE consolidated `model: "sonnet"` audit subagent as in step 4 (writing each `<slug>-audit.json` and recording it with
+`backlog.py audit --id <id> --file <file> --upgrade`), fix the findings, publish and live-check as in
+steps 6–7 (submit the upgraded URLs to IndexNow), then
+`backlog.py set --id <id> --status published --note "seo upgrade" --field seoUpgraded='"<day>"' --field bodyWords=<n>`.
+A row whose live page already has at least 1,500 body words and the page rule 5 sections only
+gets marked with that `set` command (no rewrite, no audit). Commit and push the receipts as in step 7.
+A vendor page that cannot be read during an upgrade (403, JavaScript-only, missing price) never
+blocks the upgrade. Keep that product's facts exactly as the page already states them (they passed
+the page's original audit; keep their check date in the sources file) and expand the rest of the
+page. A cell that currently defers ("see vendor site") becomes the fact the vendor's site does show
+(e.g. "Quote-based; no public price") or the product is swapped for an alternative whose site can
+be read. Hold an upgrade only if the subject product itself no longer exists.
+
+**8. Report** through the routine prompt's central reporting: pages published with links, rows
+held/excluded and why, pages upgraded in step 7b (with body word counts), audit verdicts and how many findings were fixed, IndexNow result, backlog
+counts, commit SHAs. Before reporting, run `backlog.py status`: if `upgradePending` still lists
+rows that this run did not try in step 7b, go back and do step 7b for them first (up to 3 per run).
+Before finishing, confirm this run's commits are on `origin/main`.
+
+Never reset a row, delete history, or re-audit a page. A page is `published` only after the live
+check passes.
+
+---
+
+## SITE ADAPTER — ModernWallet (www.themodernwallet.com, repo jht243/modernwallet, Astro)
+
+- **Audience for discovery:** consumer and small-business money products that ModernWallet readers
+  compare and sign up for (the site's calculators, guides and `/roundup/` pages cover these):
+  banking and savings apps (checking, high-yield savings, money market, neobanks), budgeting,
+  net-worth and subscription-tracking apps, payment and money-transfer apps, credit cards,
+  personal / student / auto / mortgage lenders and refinance companies, investing and brokerage
+  apps, robo-advisors and retirement-account providers (IRA, solo 401(k), small-business 401(k)),
+  freelancer and small-business money tools (accounting, invoicing, mileage tracking, business bank
+  accounts and cards, business lenders, invoice factoring), tax software and tax-relief companies,
+  and online will / estate-planning services. A "product" is a company's app, account, card, loan
+  or software with its own official website.
+  **Out of scope:** individual securities, funds, ETFs and coins (an alternatives page for a
+  security reads as investment advice), anything illegal or offered without a required licence,
+  products that are discontinued, and names that are ambiguous between unrelated products.
+  These pages LIST products and their published fees; they never recommend, rank for a reader's
+  situation, or give financial advice ("fits people who…", never "you should…").
+- **Review scope (owner, 2026-11-13):** there is no deep or professional review on these pages,
+  including tax, legal and lender pages. The ONE audit (step 4) checks every fee, price, APY/APR
+  range, plan name and limit against each product's own website, plus the title, link and CTA
+  rules. A rate or fee that changes daily or by applicant is written as the vendor publishes it
+  ("APY as published on <date>", "rates vary by applicant"); otherwise "Published plans; see vendor site".
+- **Already covered?** Before qualifying a row, search the site for an existing answer:
+  `grep -rli "<product> alternatives" src/data data` and `grep -rl "<product-slug>-alternatives" src/data`
+  (existing examples: `/roundup/robinhood-agentic-trading-alternatives/`, `/roundup/dataannotation-alternatives/`,
+  `/guides/bankruptcy-alternatives/`, `/guides/trump-account-alternatives/`), plus
+  `src/data/alternatives.json`. A page that already answers "<product> alternatives" → `duplicate`.
+- **Files to edit to add a page (nothing else):**
+  1. `src/data/alternatives.json` — append one object to the array. Fields (types and comments in
+     `src/data/alternatives.ts`): `slug` (`<product-slug>`, lowercase-hyphen), `product`,
+     `officialUrl` (https, the subject's own site), `title` and `h1` (both start
+     `<Product> Alternatives`, title ≤ 60 chars), `metaDescription` (50–160 chars), `published`
+     (= day, yyyy-mm-dd), `intro` (answers "what should I use instead of <Product>?" in the first two
+     sentences; contains the ONE external link `[<Product>](<officialUrl>)`), `tableTitle`,
+     optional `tableNote` (e.g. "Fees and prices from each provider's own website, checked <Month D, YYYY>."),
+     optional `tableColumns` (default `["Product", "Fees and pricing", "Best fit"]`), `rows`
+     (`{product, pricing, bestFit}`; the subject row first with `"subject": true`, then 5–8
+     alternatives), `chooseSection` `{heading, body}` (the second section right below the table — MUST carry the 180–250 word 3-scenario fee/balance math breakdown + Markdown scenario table + break-even counterexample, e.g. "How to choose a
+     <Product> alternative"; the "Want to be added" band renders at its end), `alternatives`
+     (one `{heading, body}` per alternative), `stillBetterFit` `{heading: "When <Product> is still
+     the better fit", body}`, `verdict`, `faqs` (3–5 `{question, answer}`), optional `related`
+     (internal `{label, href: "/path/"}` only). Body text: paragraphs separated by a blank line,
+     `- ` lines for a list, links as `[text](/internal/)` or `[text](https://<official host>/…)`.
+     No raw HTML, no other external links, no "tested"/"we tried" wording.
+  2. `data/alternatives-pages.json` — append to `pages`:
+     `{"route": "/alternatives/<slug>/", "vendorHost": "<apex host, e.g. chime.com>", "officialHosts": ["<every exact host the page links, e.g. www.chime.com>"]}`.
+     Without this row the page does not render. The row turns on both CTAs, the outbound-link
+     guard (other external links are rendered as plain text), `noAds` (no Mediavine), no
+     entity/Robinhood referral auto-links, and a plain-text footer credit.
+  URL: `https://www.themodernwallet.com/alternatives/<slug>/`. Breadcrumb: Compare.
+- **Sitemap / search / hub:** automatic. `@astrojs/sitemap` lists the page (lastmod = `updated`
+  or `published`, see `astro.config.mjs`), `scripts/build_search_index.mjs` (prebuild) adds it to
+  `public/search-index.json`, and `/compare/` shows an "Alternatives" card for it. Do not edit
+  sitemap or index files by hand.
+- **CTAs (rendered by `src/pages/alternatives/[slug].astro`, never by hand):** "Are you one of
+  these vendors? Update your listing" under the table → `/update-listing/?from=<route>`;
+  "Want to be added to this alternatives page? Contact us" band at the end of the second
+  section → `/sponsor/?from=<route>` (the site's Advertise With Us form). Both `rel="nofollow"`.
+- **Build gate (Node 20+):** `npm ci`;
+  `python3 scripts/alternatives_daily/check_built.py --data-only`;
+  `npm run build` (prebuild search index, Astro build, entity links, unlink-pitched + check,
+  vendor nofollow + check, sponsorship line, bundle-size gate — needs network for the public
+  growth-sites-api pitched list, no secrets);
+  `python3 scripts/alternatives_daily/check_built.py` (title/H1, canonical, only official hosts
+  linked, no ads/sponsored/entity links, both CTAs in place and apart, FAQPage JSON-LD, sitemap,
+  search index, /compare/ card). All must exit 0. Note: if the subject is on the outreach
+  "pitched" list, `unlink_pitched.mjs` unwraps its link (owner rule 2026-10-15); the page then has
+  no external link, which still passes. Do not work around it.
+- **Publish:** Render auto-deploys `main`. `.claude/scripts/deploy-run-to-main.sh mark` at start,
+  `.claude/scripts/deploy-run-to-main.sh push` to publish (its precheck runs
+  `scripts/check_data_files.mjs` on changed `src/data/*.ts`). The repo also has
+  `.github/workflows/land.yml`; if a direct push to main is refused, use
+  `.claude/scripts/land-run.sh land` (same commits via a `claude/land/*` branch). Never force-push.
+  Verify with `.claude/scripts/deploy-run-to-main.sh verify "https://www.themodernwallet.com/alternatives/<slug>/=<Product> Alternatives"`
+  in the foreground, Bash timeout 600000 (it reads the Render build with
+  `RENDER_API_KEY` from the routine prompt when present; without it, polls the URL), allowing up to
+  10 minutes, then run `live_links.py` per page:
+  `pytho

@@ -1,0 +1,11 @@
+[
+{"vendor":"Stripe","product":"Stripe","officialUrl":"https://stripe.com/pricing","targetQuery":"stripe alternatives","demand":{"volume":1900,"kd":"33","source":"semrush"},"category":"payments","priority":1900,"source":"discovery 2026-11-28"},
+{"vendor":"Expensify","product":"Expensify","officialUrl":"https://www.expensify.com/pricing","targetQuery":"expensify alternatives","demand":{"volume":1000,"kd":"19","source":"semrush"},"category":"small-business-tools","priority":1000,"source":"discovery 2026-11-28"},
+{"vendor":"Square","product":"Square","officialUrl":"https://squareup.com/us/en/pricing","targetQuery":"square alternatives","demand":{"volume":480,"kd":"26","source":"semrush"},"category":"payments","priority":480,"source":"discovery 2026-11-28"},
+{"vendor":"Current","product":"Current","officialUrl":"https://current.com/","targetQuery":"current alternatives","demand":{"volume":480,"kd":"12","source":"semrush"},"category":"banking","priority":480,"source":"discovery 2026-11-28"},
+{"vendor":"Bill.com","product":"Bill.com","officialUrl":"https://www.bill.com/pricing","targetQuery":"bill.com alternatives","demand":{"volume":480,"kd":"74","source":"semrush"},"category":"small-business-tools","priority":470,"source":"discovery 2026-11-28"},
+{"vendor":"Fundbox","product":"Fundbox","officialUrl":"https://fundbox.com/","targetQuery":"fundbox alternatives","demand":{"volume":50,"kd":"6","source":"semrush"},"category":"business-lending","priority":50,"source":"discovery 2026-11-28"},
+{"vendor":"Bonsai","product":"Bonsai","officialUrl":"https://www.hellobonsai.com/pricing","targetQuery":"bonsai alternatives","demand":{"volume":40,"kd":"3","source":"semrush"},"category":"freelancer-tools","priority":40,"source":"discovery 2026-11-28"},
+{"vendor":"Wealthsimple","product":"Wealthsimple","officialUrl":"https://www.wealthsimple.com/en-us","targetQuery":"wealthsimple alternatives","demand":{"volume":40,"kd":"10","source":"semrush"},"category":"investing","priority":40,"source":"discovery 2026-11-28"},
+{"vendor":"Zoho Books","product":"Zoho Books","officialUrl":"https://www.zoho.com/us/books/pricing/","targetQuery":"zoho books alternatives","demand":{"volume":30,"kd":"15","source":"semrush"},"category":"small-business-tools","priority":30,"source":"discovery 2026-11-28"}
+]

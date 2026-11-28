@@ -1,0 +1,27 @@
+{
+  "kind": "public-data",
+  "readerQuestion": "What should I use instead of Square for taking card payments in person? [verb-only — no PAA, no completions]",
+  "items": [
+    "Square",
+    "Square Plus",
+    "Square Premium",
+    "Stripe Terminal",
+    "SumUp",
+    "Shopify POS (Basic plan)",
+    "Clover",
+    "Toast",
+    "Helcim"
+  ],
+  "decision": "Identify the lowest total-cost and best-fit option among Square, Square Plus, Square Premium, Stripe Terminal across realistic team/token workloads.",
+  "conditions": "Published USD self-serve monthly/annual rates, seat minimums, included usage caps, and per-1M token rates as of verification date.",
+  "dimensions": [
+    "baseMonthlyUsd",
+    "perSeatMonthlyUsd",
+    "includedVolume",
+    "overageUsdPerUnit",
+    "requiredAddonMonthlyUsd"
+  ],
+  "normalization": "Standardized monthly and annual USD totals evaluated across identical 3-tier workload scenarios.",
+  "unknowns": "Unpublished custom enterprise discounts and negotiated volume commits.",
+  "sourceRefreshTrigger": "Re-run benchmark when any compared vendor updates published tier rates, token prices, or plan caps."
+}

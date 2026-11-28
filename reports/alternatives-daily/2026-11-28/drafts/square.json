@@ -1,0 +1,195 @@
+{
+  "slug": "square",
+  "product": "Square",
+  "officialUrl": "https://squareup.com/",
+  "title": "Square Alternatives for In-Person Card Fees in 2026",
+  "h1": "Square Alternatives for In-Person Card Fees in 2026",
+  "metaDescription": "Square alternatives compared on in-person card fees: Stripe Terminal, SumUp, Shopify, Clover, Toast and Helcim, with monthly costs at three volumes.",
+  "published": "2026-11-28",
+  "updated": "2026-11-28",
+  "intro": "Stripe Terminal, Clover, Toast, SumUp, Shopify POS (point of sale) and Helcim are six [Square](https://squareup.com/) alternatives for in-person card payments. Stripe Terminal's 2.7% + 5¢ rate has the lowest per-sale cost among the options in our cost model on a $30 ticket. Square's free plan publishes 2.6% + 15¢ for tap, dip or swipe sales, which comes to $0.93 on a $30 sale against $0.86 at Stripe Terminal, a 7¢ gap before hardware.\n\nAt The Modern Wallet, we built a three-scenario cost model from each product's published in-person rate and monthly fee, checked November 28, 2026. Stripe Terminal came out cheapest at 500, 3,000 and 10,000 sales a month, saving between $420 and $8,400 a year against Square's free plan. The ranking flips at higher tickets, because above a $100 average sale Square's free plan costs less per sale than Stripe Terminal.\n\nThe cheapest Square alternative on a $30 ticket with no monthly plan is Stripe Terminal at 86¢ per sale, ahead of SumUp at 88¢ and Square's free plan at 93¢. The fees below cover domestic United States in-person card sales at one location and leave out hardware, disputes and custom pricing. Our [PayPal alternatives](/alternatives/paypal/) and [QuickBooks alternatives](/alternatives/quickbooks/) pages compare other money tools, and the [comparisons hub](/compare/) lists every head-to-head page.",
+  "tableTitle": "In-Person Card Fees for Square and Six Alternatives",
+  "tableNote": "Fees and prices from each provider's own website, checked November 28, 2026. Prices are in U.S. dollars.",
+  "tableColumns": [
+    "Product",
+    "Fees and pricing",
+    "Best fit"
+  ],
+  "rows": [
+    {
+      "product": "Square",
+      "pricing": "Square Free: 2.6% + 15¢ in person, $0/month per location. Square Plus: 2.5% + 15¢, $49/month per location. Square Premium: 2.4% + 15¢, $149/month per location. Custom rates above $250,000 a year.",
+      "bestFit": "Small shops and mobile sellers",
+      "subject": true
+    },
+    {
+      "product": "Stripe Terminal",
+      "pricing": "2.7% + 5¢ per domestic in-person card transaction; $0/month in our model; readers from $59",
+      "bestFit": "Sellers with average tickets under $100 who want no monthly plan fee"
+    },
+    {
+      "product": "Clover",
+      "pricing": "Retail Basic: 2.6% + 10¢. Standard and Advanced: 2.3% + 10¢. Sold with device plans; device plan cost not in our source snapshot.",
+      "bestFit": "Retail sellers weighing a lower card percentage against a device plan"
+    },
+    {
+      "product": "Toast",
+      "pricing": "Restaurant POS. Starter Kit from $0/month with a higher card rate; Point of Sale from $69/month. Card percentages not in our source snapshot.",
+      "bestFit": "Restaurants that want a dedicated restaurant POS plan"
+    },
+    {
+      "product": "SumUp",
+      "pricing": "Free plan: 2.6% + 10¢ in person, $0/month",
+      "bestFit": "Sellers who want Square Free's percentage with a 10¢ fixed fee and no monthly charge"
+    },
+    {
+      "product": "Shopify POS",
+      "pricing": "Shopify Basic plan $29/month; in-person card rate 2.6% + 10¢",
+      "bestFit": "Sellers who pay for the Shopify Basic plan anyway"
+    },
+    {
+      "product": "Helcim",
+      "pricing": "Interchange plus 0.40% + 8¢ in person on $0 to $50K monthly volume",
+      "bestFit": "Sellers under $50,000 a month who want the markup shown apart from card costs"
+    }
+  ],
+  "chooseSection": {
+    "heading": "How to Choose a Square Alternative",
+    "body": "In our internal cost analysis, we modeled one location taking domestic tap, dip or swipe sales at a $30 average ticket on each product's published rate and monthly fee. Hardware, disputes and custom pricing are left out.\n\n- Corner shop, 500 sales a month ($15,000): Square Free $465, Square Plus $499, Square Premium $584, Stripe Terminal $430, SumUp $440, Shopify POS Basic $469.\n- Busy shop, 3,000 sales a month ($90,000): Square Free $2,790, Square Plus $2,749, Square Premium $2,759, Stripe Terminal $2,580, SumUp $2,640, Shopify POS Basic $2,669.\n- High-volume shop, 10,000 sales a month ($300,000): Square Free $9,300, Square Plus $9,049, Square Premium $8,849, Stripe Terminal $8,600, SumUp $8,800, Shopify POS Basic $8,829.\n\nStripe Terminal costs least in all three scenarios, saving $420 a year against Square Free at 500 sales and $8,400 a year at 10,000 sales. Square Plus and Square Premium both cost more than Square Free at 500 sales and less from 3,000 sales up.\n\nBreak-even counterexample: Stripe Terminal's 2.7% + 5¢ and Square Free's 2.6% + 15¢ cost the same at a $100 average ticket (0.027 x 100 + 0.05 = 2.75; 0.026 x 100 + 0.15 = 2.75). Above $100 per sale, Square Free costs less per sale than Stripe Terminal. Square Premium's 2.4% + 15¢ matches Stripe Terminal at a $33.33 ticket, so on a $60 ticket Square Premium charges $1.59 per sale against $1.67, an 8¢ saving that takes 1,863 sales a month to cover Premium's $149 fee.\n\nBeyond the model, five checks decide the fit:\n\n- Average ticket size. SumUp matches Stripe Terminal at a $50 ticket (0.027 x 50 + 0.05 = 1.40; 0.026 x 50 + 0.10 = 1.40) and costs less above it, while Square Free matches Stripe Terminal at $100.\n- Monthly sales count. Square Plus's $49 fee and Shopify POS Basic's $29 fee cost more than they save at 500 sales and save money at 3,000.\n- Hardware. Stripe Terminal readers start at $59, and Clover sells device plans whose cost is not in our source snapshot.\n- Restaurant service. Toast's Restaurant POS runs from a $0/month Starter Kit with a higher card rate to a $69/month Point of Sale plan.\n- Pricing structure. Helcim charges interchange plus 0.40% + 8¢, and our snapshot does not give interchange as one published number.\n\nOur [sales tax vs. use tax comparison](/compare/sales-tax-vs-use-tax/) explains the tax side. Funding for a new shop sits in our [small business financing guide](/guides/small-business-financing-guide/)."
+  },
+  "alternatives": [
+    {
+      "heading": "Stripe Terminal Pricing, Plans and Fit",
+      "body": "Stripe Terminal is Stripe's in-person card product, priced at 2.7% + 5¢ per domestic in-person card transaction, with card readers from $59. Our model carries no monthly fee for Stripe Terminal, so the per-sale rate is the whole ongoing cost. On a $30 ticket that comes to 81¢ plus 5¢, or 86¢ per sale.\n\nThat 86¢ makes Stripe Terminal the lowest-cost pick in all three scenarios: $430 a month at 500 sales, $2,580 at 3,000 sales and $8,600 at 10,000 sales. Against Square Free, the yearly savings are $420, $2,520 and $8,400. At 500 sales, two months of the $35 monthly saving ($70) more than covers a $59 reader.\n\nStripe Terminal fits sellers with average tickets under $100 who want no monthly plan fee. Its 2.7% rate sits above all three of Square's in-person percentages, so the 5¢ fixed fee does all of the saving. At a $100 ticket Stripe Terminal and Square Free both charge $2.75, and above $100 Square Free costs less per sale."
+    },
+    {
+      "heading": "Clover Pricing, Plans and Fit",
+      "body": "Clover's retail pricing lists 2.6% + 10¢ per in-person sale on Retail Basic and 2.3% + 10¢ on the Standard and Advanced plans, sold with device plans. On a $30 ticket, Retail Basic works out to 88¢ per sale (78¢ plus 10¢), which is 5¢ below Square Free's 93¢. Standard and Advanced work out to 79¢ (69¢ plus 10¢), which is 7¢ below Stripe Terminal's 86¢.\n\nOur source snapshot lists Clover's card rates without the monthly cost of its device plans, so Clover sits outside the scenario model. Against Square Free's 93¢, Clover Standard saves 14¢ a sale on a $30 ticket, or $70 a month at 500 sales. A Clover device plan has to cost less than that saving each month for the 2.3% rate to come out ahead.\n\nClover fits retail sellers who want the lowest card percentage in the comparison table and will take a device plan to get it. Square publishes a $0, $49 or $149 monthly fee per location, and our snapshot holds no matching Clover monthly figure. Without that figure, a Clover total cannot be set beside Square Premium's $149 fee and 2.4% + 15¢ rate."
+    },
+    {
+      "heading": "Toast Pricing, Plans and Fit",
+      "body": "Toast sells a Restaurant POS with two published entry points: a Starter Kit from $0/month with a higher card rate, and a Point of Sale plan from $69/month. Our source snapshot does not include Toast's card percentages, so Toast sits outside the scenario model.\n\nThe monthly fees can still be compared with Square's. Toast's Point of Sale plan at $69 costs $20 a month more than Square Plus at $49 and $80 a month less than Square Premium at $149. Over a year, Toast's $69 plan comes to $828 in plan fees before any card fee, against $588 for Square Plus.\n\nToast fits restaurants that want a dedicated restaurant point-of-sale plan. The Starter Kit matches Square Free's $0 monthly fee, though Toast labels its card rate as higher. Square publishes in-person rates for all three of its plans, and in our snapshot Toast does not, so a per-sale cost comparison against Square depends on a Toast quote."
+    },
+    {
+      "heading": "SumUp Pricing, Plans and Fit",
+      "body": "SumUp's Free plan charges 2.6% + 10¢ per in-person sale with a $0 monthly fee. That is Square Free's percentage with a fixed fee 5¢ lower, so SumUp costs less per sale than Square Free at every ticket size. On a $30 ticket SumUp charges 88¢ against Square Free's 93¢.\n\nIn our model, SumUp saves $25 a month against Square Free at 500 sales, $150 at 3,000 and $500 at 10,000, or $300, $1,800 and $6,000 a year. SumUp trails Stripe Terminal by $10 a month at 500 sales ($440 against $430) and by $200 a month at 10,000 sales. The two cost the same at a $50 ticket, and above $50 SumUp costs less per sale.\n\nSumUp fits sellers whose average ticket sits above $50 and who want no monthly fee. SumUp falls short of Square on plan choice, since our snapshot lists only SumUp's Free plan while Square adds Plus at 2.5% and Premium at 2.4%. On a $60 ticket Square Premium charges $1.59 per sale against SumUp's $1.66 (0.026 x 60 + 0.10)."
+    },
+    {
+      "heading": "Shopify POS Pricing, Plans and Fit",
+      "body": "Shopify POS on the $29/month Shopify Basic plan carries an in-person card rate of 2.6% + 10¢. On a $30 ticket that is 88¢ per sale, the same as SumUp, so the $29 plan fee is the whole difference between the two.\n\nIn our model, Shopify POS Basic costs $469 a month at 500 sales, $4 more than Square Free. At 3,000 sales it costs $2,669 and saves $121 a month against Square Free, and at 10,000 sales it costs $8,829 and saves $471. The yearly results against Square Free run from a $48 loss to savings of $1,452 and $5,652.\n\nShopify POS fits sellers who pay the $29 Shopify Basic fee anyway, because their in-person cost then drops to SumUp's 88¢ per sale. For a seller who would add the $29 fee only for card payments, SumUp charges the same per sale for $0 a month. Square Free also charges $0 per location, so at 500 sales Square Free stays $4 a month cheaper than Shopify POS Basic."
+    },
+    {
+      "heading": "Helcim Pricing, Plans and Fit",
+      "body": "Helcim prices in-person sales as interchange plus 0.40% + 8¢ on $0 to $50K of monthly volume. On a $30 sale, Helcim's markup is 12¢ plus 8¢, or 20¢, and the interchange cost sits on top of that. Our snapshot does not give interchange as one figure, so Helcim sits outside the scenario model.\n\nThe $50K band splits the three scenarios. The corner shop at $15,000 a month falls inside it, while the busy shop at $90,000 and the high-volume shop at $300,000 fall above it. Our snapshot lists no Helcim rate above $50K.\n\nHelcim fits sellers under $50,000 a month who want the processing markup shown apart from the card cost. Square Free's 2.6% + 15¢ gives one per-sale figure, 93¢ on a $30 ticket, while Helcim's total changes with interchange. A seller who wants to budget card fees from a single published rate gets that from Square."
+    },
+    {
+      "heading": "Who This Is Not For",
+      "body": "Our cost model covers domestic in-person card sales at one location, and four groups of sellers need a different comparison:\n\n- Sellers who mostly take payments online. Square Free's online rate is 3.3% + 30¢, so the in-person rates here do not apply, and our [PayPal alternatives](/alternatives/paypal/) page compares other payment options.\n- Freelancers who bill clients by invoice. The [best invoicing apps for freelancers](/roundup/best-invoicing-apps-for-freelancers/) roundup fits that job better than a card-reader comparison.\n- Shops processing more than $250,000 a year. Square offers custom rates above that level, which the published figures used here leave out.\n- Sellers choosing bookkeeping software first. Our [best accounting software for freelancers](/roundup/best-accounting-software-for-freelancers/) roundup covers that choice."
+    },
+    {
+      "heading": "What Would Change Our Answer",
+      "body": "These published inputs would move the ranking if they changed:\n\n- Square's in-person rates. Each 1¢ cut to Square Free's 15¢ fixed fee narrows the 7¢ gap with Stripe Terminal on a $30 sale by 1¢.\n- Stripe Terminal's 2.7% + 5¢. A rise in either part would shrink Stripe Terminal's lead in all three scenarios.\n- Average ticket. Above $50 SumUp costs less per sale than Stripe Terminal, and above $100 Square Free does too.\n- Missing prices. A published Clover device plan cost, a Toast card rate or a single Helcim total would bring those three into the model, and Clover's 2.3% + 10¢ works out to 79¢ on a $30 sale.\n- A custom Square quote. The busy shop processes $1,080,000 a year ($90,000 x 12), above Square's $250,000 custom-rate level, so a quoted rate would replace the published Square figures in the busy and high-volume scenarios."
+    }
+  ],
+  "stillBetterFit": {
+    "heading": "When Square Is Still the Better Fit",
+    "body": "Square is the better fit on cost against Stripe Terminal when the average ticket runs above $100, where Square Free's 2.6% + 15¢ costs less per sale than Stripe Terminal's 2.7% + 5¢. At a $150 ticket, Square Free charges $4.05 (0.026 x 150 + 0.15) against Stripe Terminal's $4.10 (0.027 x 150 + 0.05).\n\nSquare publishes three in-person plans, and the cheapest one changes with volume. At 500 sales Square Free costs least of the three ($465), at 3,000 sales Square Plus does ($2,749), and at 10,000 sales Square Premium does ($8,849). A shop moving between those volumes can change Square plans instead of changing products.\n\nSquare Premium's 2.4% is the lowest percentage in the model and trails only Clover's 2.3% Standard and Advanced rate in the comparison table. On a $60 ticket, Square Premium charges $1.59 per sale against $1.67 at Stripe Terminal and $1.66 at SumUp. Square also offers custom rates above $250,000 a year, which our published-rate model leaves out."
+  },
+  "verdict": "For in-person card sales at a $30 average ticket, Stripe Terminal is the lowest-cost Square alternative in our model, saving $420 a year at 500 sales and $8,400 a year at 10,000 sales against Square Free. SumUp ranks second at no monthly fee and costs less than Stripe Terminal above a $50 ticket. Square fits better above a $100 ticket, and Square Premium is the cheapest Square plan at 10,000 sales. Clover's 2.3% + 10¢ rate needs its device plan cost before it can be ranked. Divide last month's card sales by your sale count to get an average ticket, then match it to the three scenarios above before choosing among these Square alternatives.",
+  "faqs": [
+    {
+      "question": "Is Square Plus worth $49 a month for in-person sales?",
+      "answer": "Square Plus costs more than Square Free at 500 sales a month on a $30 ticket and less at 3,000. In our model Square Plus totals $499 a month at 500 sales against $465 on Square Free, a $34 loss. At 3,000 sales it totals $2,749 against $2,790, a $41 saving, because its 2.5% rate saves 3¢ a sale on a $30 ticket."
+    },
+    {
+      "question": "Does Stripe Terminal charge a monthly fee?",
+      "answer": "Our model carries no monthly fee for Stripe Terminal, and its cost is 2.7% + 5¢ per domestic in-person card transaction. On a $30 ticket that is 86¢ per sale. Card readers start at $59, and that hardware cost sits outside our model."
+    },
+    {
+      "question": "Which Square alternative fits a restaurant?",
+      "answer": "Toast is the restaurant option in this comparison, with a Restaurant POS that starts from a $0/month Starter Kit with a higher card rate or a $69/month Point of Sale plan. Toast's card percentages are not in our source snapshot, so Toast is not in the cost model. The $69 plan costs $20 a month more than Square Plus and $80 a month less than Square Premium."
+    },
+    {
+      "question": "Is Clover cheaper than Square?",
+      "answer": "Clover's published card rates are lower per sale than Square Free's on a $30 ticket. Retail Basic at 2.6% + 10¢ charges 88¢ against Square Free's 93¢, and Standard and Advanced at 2.3% + 10¢ charge 79¢. Clover sells these rates with device plans whose monthly cost is not in our snapshot, so a full monthly total cannot be compared."
+    },
+    {
+      "question": "Does Square lower its rates for high-volume sellers?",
+      "answer": "Square offers custom rates above $250,000 a year. Below that level, Square's lowest published in-person rate is Square Premium's 2.4% + 15¢ at $149 a month per location. In our 10,000-sale scenario, Square Premium is the cheapest Square plan at $8,849 a month, against $8,600 at Stripe Terminal."
+    }
+  ],
+  "related": [
+    {
+      "label": "PayPal Alternatives",
+      "href": "/alternatives/paypal/"
+    },
+    {
+      "label": "QuickBooks Alternatives",
+      "href": "/alternatives/quickbooks/"
+    },
+    {
+      "label": "Best Invoicing Apps for Freelancers",
+      "href": "/roundup/best-invoicing-apps-for-freelancers/"
+    },
+    {
+      "label": "Best Accounting Software for Freelancers",
+      "href": "/roundup/best-accounting-software-for-freelancers/"
+    },
+    {
+      "label": "Small Business Financing Guide",
+      "href": "/guides/small-business-financing-guide/"
+    },
+    {
+      "label": "Sales Tax vs. Use Tax",
+      "href": "/compare/sales-tax-vs-use-tax/"
+    },
+    {
+      "label": "All Comparisons",
+      "href": "/compare/"
+    }
+  ],
+  "reviewerNote": {
+    "label": "Publisher's Take",
+    "note": "Switching card systems after month one means re-keying items, tax settings and saved customers, which costs real hours that a few cents per sale rarely repays. If your average ticket is above $100, Square's free plan already costs less per sale than Stripe Terminal, so staying put is the cheaper move."
+  },
+  "scenarioTable": {
+    "headers": [
+      "Scenario",
+      "Square",
+      "Square Plus",
+      "Square Premium",
+      "Stripe Terminal",
+      "SumUp",
+      "Shopify POS (Basic plan)"
+    ],
+    "rows": [
+      [
+        "Corner shop: 500 sales a month ($15,000 at a $30 average ticket)",
+        "$465.00",
+        "$499.00",
+        "$584.00",
+        "$430.00",
+        "$440.00",
+        "$469.00"
+      ],
+      [
+        "Busy shop: 3,000 sales a month ($90,000)",
+        "$2,790.00",
+        "$2,749.00",
+        "$2,759.00",
+        "$2,580.00",
+        "$2,640.00",
+        "$2,669.00"
+      ],
+      [
+        "High-volume shop: 10,000 sales a month ($300,000)",
+        "$9,300.00",
+        "$9,049.00",
+        "$8,849.00",
+        "$8,600.00",
+        "$8,800.00",
+        "$8,829.00"
+      ]
+    ]
+  }
+}

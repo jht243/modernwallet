@@ -1,0 +1,169 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-scout-intake-writer",
+  "route": "/alternatives/square/",
+  "readerQuestion": "What should I use instead of Square for taking card payments in person? [verb-only — no PAA, no completions]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/approval-manifest.json",
+      "sha256": "4050a5277f9d006937d31716a2dceaf732db3cf9e8882e756b91965f35d8b016"
+    },
+    "review": {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/chart-review.json",
+      "sha256": "4921ec7ae553b8e2f05f25b41d9f03f45f31d7d3b9301e139b9aea7729e51801"
+    },
+    "actionId": "A2"
+  },
+  "presentation": {
+    "medium": "structured comparison table with scenario cost model",
+    "placement": "Opening direct answer followed by comparison matrix and 3-scenario cost/break-even table",
+    "reason": "Buyers comparing Square options need verifiable tier math and explicit break-even thresholds rather than generic prose.",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "Three pre-computed team/workload scenarios answer the switching math faster without widget friction."
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static scannable tables communicate pricing thresholds immediately."
+    }
+  },
+  "basis": "modeled",
+  "decisionGap": "Pricing pages list percentages per plan without the per-location monthly fee, the average-ticket flip point against 5¢ versus 15¢ fixed fees, or the volume at which a paid plan pays for itself.",
+  "finding": "Stripe Terminal, Clover, Toast, SumUp, Shopify POS and Helcim are six Square alternatives, and Stripe Terminal's 2.7% + 5¢ in-person rate is the lowest per-sale cost among the flat-rate options on a $30 ticket. Square's free plan publishes 2.6% + 15¢ in person, which costs $0.93 on a $30 sale against $0.86 at Stripe Terminal, a $0.07 gap before hardware.",
+  "conditions": "Domestic US tap, dip or swipe card sales at a $30 average ticket on published self-serve rates, one location, excluding hardware, disputes and custom pricing.",
+  "whatWouldChange": "A change to Square's published in-person rates, Stripe Terminal's 2.7% + 5¢, or a larger average ticket would move the ranking; Square also offers custom rates above $250,000 a year.",
+  "method": "Deterministic 3-scenario seat, cap, and overage cost model over verified primary vendor pricing snapshots.",
+  "units": "USD/month and USD/year",
+  "limitations": "Excludes unpublished enterprise commits, custom volume discounts, and implementation labor.",
+  "counterexample": "Stripe Terminal's 2.7% + 5¢ and Square Free's 2.6% + 15¢ cost the same at a $100 average ticket (0.027 x 100 + 0.05 = 2.75; 0.026 x 100 + 0.15 = 2.75). Above $100 per sale Square Free costs less per sale than Stripe Terminal. Square Premium's 2.4% + 15¢ matches Stripe Terminal at a $33.33 ticket, so on a $60 ticket Square Premium costs $1.59 per sale against $1.67, an $0.08 saving that takes 1,863 sales a month to cover Premium's $149 fee.",
+  "caseSelection": {
+    "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/square/cases.json",
+    "sha256": "7b05741785b09160d740658bbe633c75fb1a7e0126fe243553f72b2eb9012554"
+  },
+  "caseSearchContext": [],
+  "caseDecisions": "Searched first-party catalog for relevant anonymous operator/client context; numerical rankings rely strictly on verified pricing/benchmark artifacts.",
+  "caseUses": [],
+  "comparisons": [
+    {
+      "kind": "public-data",
+      "status": "used",
+      "basis": "modeled",
+      "reason": "Published pricing tiers, plan caps, and token rates directly determine total workload cost and break-even thresholds.",
+      "scope": "Verified public self-serve pricing across 6 of 9 compared options on 2026-11-28.",
+      "plan": {
+        "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/square/public-comparison-plan.json",
+        "sha256": "e5416760a23e086b3221595e7d3306048d74dc5162c64ac3043bcfcf911b3096"
+      },
+      "coveredItems": [
+        "Square",
+        "Square Plus",
+        "Square Premium",
+        "Stripe Terminal",
+        "SumUp",
+        "Shopify POS (Basic plan)"
+      ],
+      "excludedItems": {
+        "Clover": "Quote-based / custom enterprise pricing; no public self-serve rate.",
+        "Toast": "Quote-based / custom enterprise pricing; no public self-serve rate.",
+        "Helcim": "Quote-based / custom enterprise pricing; no public self-serve rate."
+      },
+      "sources": [
+        {
+          "item": "Square",
+          "url": "https://squareup.com/us/en/pricing",
+          "checkedAt": "2026-11-28T16:44:55Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/square-benchmark-vendors.json",
+            "sha256": "04aab8890706873ba317d74390d3f280ed190820e2213c37c76145b9cf489361"
+          },
+          "extractedFacts": "Square (Square Free (in person)): base=$0/mo, perSeat=$0/mo, includedVolume=0.0001."
+        },
+        {
+          "item": "Square Plus",
+          "url": "https://squareup.com/us/en/pricing",
+          "checkedAt": "2026-11-28T16:44:55Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/square-benchmark-vendors.json",
+            "sha256": "04aab8890706873ba317d74390d3f280ed190820e2213c37c76145b9cf489361"
+          },
+          "extractedFacts": "Square Plus (Square Plus (in person)): base=$49/mo, perSeat=$0/mo, includedVolume=0.0001."
+        },
+        {
+          "item": "Square Premium",
+          "url": "https://squareup.com/us/en/pricing",
+          "checkedAt": "2026-11-28T16:44:55Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/square-benchmark-vendors.json",
+            "sha256": "04aab8890706873ba317d74390d3f280ed190820e2213c37c76145b9cf489361"
+          },
+          "extractedFacts": "Square Premium (Square Premium (in person)): base=$149/mo, perSeat=$0/mo, includedVolume=0.0001."
+        },
+        {
+          "item": "Stripe Terminal",
+          "url": "https://stripe.com/pricing",
+          "checkedAt": "2026-11-28T16:44:55Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/square-benchmark-vendors.json",
+            "sha256": "04aab8890706873ba317d74390d3f280ed190820e2213c37c76145b9cf489361"
+          },
+          "extractedFacts": "Stripe Terminal (Terminal in-person): base=$0/mo, perSeat=$0/mo, includedVolume=0.0001."
+        },
+        {
+          "item": "SumUp",
+          "url": "https://www.sumup.com/en-us/pricing/",
+          "checkedAt": "2026-11-28T16:44:55Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/square-benchmark-vendors.json",
+            "sha256": "04aab8890706873ba317d74390d3f280ed190820e2213c37c76145b9cf489361"
+          },
+          "extractedFacts": "SumUp (Free plan): base=$0/mo, perSeat=$0/mo, includedVolume=0.0001."
+        },
+        {
+          "item": "Shopify POS (Basic plan)",
+          "url": "https://www.shopify.com/pricing",
+          "checkedAt": "2026-11-28T16:44:55Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/square-benchmark-vendors.json",
+            "sha256": "04aab8890706873ba317d74390d3f280ed190820e2213c37c76145b9cf489361"
+          },
+          "extractedFacts": "Shopify POS (Basic plan) (Basic): base=$29/mo, perSeat=$0/mo, includedVolume=0.0001."
+        }
+      ]
+    }
+  ],
+  "sourceArtifacts": [
+    {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/square-benchmark-vendors.json",
+      "sha256": "04aab8890706873ba317d74390d3f280ed190820e2213c37c76145b9cf489361"
+    },
+    {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/square/benchmark-inputs.json",
+      "sha256": "88cce2c9b415bd964e005bbf618280a0afb7421b27bfd76acb733253acccde1d"
+    },
+    {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/square/public-comparison-plan.json",
+      "sha256": "e5416760a23e086b3221595e7d3306048d74dc5162c64ac3043bcfcf911b3096"
+    }
+  ],
+  "execution": {
+    "command": [
+      "python3",
+      "reports/alternatives-daily/2026-11-28/mindmap/evidence/square/model.py"
+    ],
+    "code": {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/square/model.py",
+      "sha256": "541c124a72482dd75028852dc81dec10105bbec6ba32364f0ceb4ab46a25fb4c"
+    },
+    "inputs": [
+      {
+        "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/square/benchmark-inputs.json",
+        "sha256": "88cce2c9b415bd964e005bbf618280a0afb7421b27bfd76acb733253acccde1d"
+      }
+    ],
+    "output": {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/square/output.json",
+      "sha256": "b3647573154ee1cb691ae620201db6b112af0ee9d37f6419fe1d18b0bf92a7eb"
+    }
+  }
+}

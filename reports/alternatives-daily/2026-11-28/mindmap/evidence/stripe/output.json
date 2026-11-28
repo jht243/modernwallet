@@ -1,0 +1,219 @@
+{
+  "mode": "saas-tco",
+  "subject": "Stripe",
+  "scenarioCount": 3,
+  "distinctScenarioWinners": [
+    "Stripe"
+  ],
+  "scenarios": [
+    {
+      "scenario": "Small online shop: 200 sales a month ($10,000 at a $50 average ticket)",
+      "lowestCostVendor": "Stripe",
+      "lowestMonthlyUsd": 350.0,
+      "quotes": {
+        "Stripe": {
+          "monthlyUsd": 350.0,
+          "annualUsd": 4200.0,
+          "plan": "Standard (domestic online card)",
+          "savingsVsSubjectMonthlyUsd": 0.0,
+          "savingsVsSubjectAnnualUsd": 0.0
+        },
+        "Square Online (Free plan)": {
+          "monthlyUsd": 390.0,
+          "annualUsd": 4680.0,
+          "plan": "Square Free online card",
+          "savingsVsSubjectMonthlyUsd": -40.0,
+          "savingsVsSubjectAnnualUsd": -480.0
+        },
+        "Square Online (Plus plan)": {
+          "monthlyUsd": 399.0,
+          "annualUsd": 4788.0,
+          "plan": "Square Plus online card",
+          "savingsVsSubjectMonthlyUsd": -49.0,
+          "savingsVsSubjectAnnualUsd": -588.0
+        },
+        "Authorize.net": {
+          "monthlyUsd": 375.0,
+          "annualUsd": 4500.0,
+          "plan": "All-in-One",
+          "savingsVsSubjectMonthlyUsd": -25.0,
+          "savingsVsSubjectAnnualUsd": -300.0
+        },
+        "Shopify Payments (Basic plan)": {
+          "monthlyUsd": 379.0,
+          "annualUsd": 4548.0,
+          "plan": "Basic",
+          "savingsVsSubjectMonthlyUsd": -29.0,
+          "savingsVsSubjectAnnualUsd": -348.0
+        },
+        "Paddle": {
+          "monthlyUsd": 600.0,
+          "annualUsd": 7200.0,
+          "plan": "Merchant of record",
+          "savingsVsSubjectMonthlyUsd": -250.0,
+          "savingsVsSubjectAnnualUsd": -3000.0
+        },
+        "Stripe Managed Payments": {
+          "monthlyUsd": 700.0,
+          "annualUsd": 8400.0,
+          "plan": "Stripe merchant of record",
+          "savingsVsSubjectMonthlyUsd": -350.0,
+          "savingsVsSubjectAnnualUsd": -4200.0
+        }
+      }
+    },
+    {
+      "scenario": "Growing shop: 1,200 sales a month ($60,000)",
+      "lowestCostVendor": "Stripe",
+      "lowestMonthlyUsd": 2100.0,
+      "quotes": {
+        "Stripe": {
+          "monthlyUsd": 2100.0,
+          "annualUsd": 25200.0,
+          "plan": "Standard (domestic online card)",
+          "savingsVsSubjectMonthlyUsd": 0.0,
+          "savingsVsSubjectAnnualUsd": 0.0
+        },
+        "Square Online (Free plan)": {
+          "monthlyUsd": 2340.0,
+          "annualUsd": 28080.0,
+          "plan": "Square Free online card",
+          "savingsVsSubjectMonthlyUsd": -240.0,
+          "savingsVsSubjectAnnualUsd": -2880.0
+        },
+        "Square Online (Plus plan)": {
+          "monthlyUsd": 2149.0,
+          "annualUsd": 25788.0,
+          "plan": "Square Plus online card",
+          "savingsVsSubjectMonthlyUsd": -49.0,
+          "savingsVsSubjectAnnualUsd": -588.0
+        },
+        "Authorize.net": {
+          "monthlyUsd": 2125.0,
+          "annualUsd": 25500.0,
+          "plan": "All-in-One",
+          "savingsVsSubjectMonthlyUsd": -25.0,
+          "savingsVsSubjectAnnualUsd": -300.0
+        },
+        "Shopify Payments (Basic plan)": {
+          "monthlyUsd": 2129.0,
+          "annualUsd": 25548.0,
+          "plan": "Basic",
+          "savingsVsSubjectMonthlyUsd": -29.0,
+          "savingsVsSubjectAnnualUsd": -348.0
+        },
+        "Paddle": {
+          "monthlyUsd": 3600.0,
+          "annualUsd": 43200.0,
+          "plan": "Merchant of record",
+          "savingsVsSubjectMonthlyUsd": -1500.0,
+          "savingsVsSubjectAnnualUsd": -18000.0
+        },
+        "Stripe Managed Payments": {
+          "monthlyUsd": 4200.0,
+          "annualUsd": 50400.0,
+          "plan": "Stripe merchant of record",
+          "savingsVsSubjectMonthlyUsd": -2100.0,
+          "savingsVsSubjectAnnualUsd": -25200.0
+        }
+      }
+    },
+    {
+      "scenario": "Established shop: 4,000 sales a month ($200,000)",
+      "lowestCostVendor": "Stripe",
+      "lowestMonthlyUsd": 7000.0,
+      "quotes": {
+        "Stripe": {
+          "monthlyUsd": 7000.0,
+          "annualUsd": 84000.0,
+          "plan": "Standard (domestic online card)",
+          "savingsVsSubjectMonthlyUsd": 0.0,
+          "savingsVsSubjectAnnualUsd": 0.0
+        },
+        "Square Online (Free plan)": {
+          "monthlyUsd": 7800.0,
+          "annualUsd": 93600.0,
+          "plan": "Square Free online card",
+          "savingsVsSubjectMonthlyUsd": -800.0,
+          "savingsVsSubjectAnnualUsd": -9600.0
+        },
+        "Square Online (Plus plan)": {
+          "monthlyUsd": 7049.0,
+          "annualUsd": 84588.0,
+          "plan": "Square Plus online card",
+          "savingsVsSubjectMonthlyUsd": -49.0,
+          "savingsVsSubjectAnnualUsd": -588.0
+        },
+        "Authorize.net": {
+          "monthlyUsd": 7025.0,
+          "annualUsd": 84300.0,
+          "plan": "All-in-One",
+          "savingsVsSubjectMonthlyUsd": -25.0,
+          "savingsVsSubjectAnnualUsd": -300.0
+        },
+        "Shopify Payments (Basic plan)": {
+          "monthlyUsd": 7029.0,
+          "annualUsd": 84348.0,
+          "plan": "Basic",
+          "savingsVsSubjectMonthlyUsd": -29.0,
+          "savingsVsSubjectAnnualUsd": -348.0
+        },
+        "Paddle": {
+          "monthlyUsd": 12000.0,
+          "annualUsd": 144000.0,
+          "plan": "Merchant of record",
+          "savingsVsSubjectMonthlyUsd": -5000.0,
+          "savingsVsSubjectAnnualUsd": -60000.0
+        },
+        "Stripe Managed Payments": {
+          "monthlyUsd": 14000.0,
+          "annualUsd": 168000.0,
+          "plan": "Stripe merchant of record",
+          "savingsVsSubjectMonthlyUsd": -7000.0,
+          "savingsVsSubjectAnnualUsd": -84000.0
+        }
+      }
+    }
+  ],
+  "scenarioTable": {
+    "caption": "Internal Plan & Workload Cost Model Across 3 Standardized Scenarios",
+    "headers": [
+      "Workload Scenario",
+      "Stripe",
+      "Square Online (Free plan)",
+      "Square Online (Plus plan)",
+      "Authorize.net",
+      "Shopify Payments (Basic plan)",
+      "Lowest-Cost Pick"
+    ],
+    "rows": [
+      [
+        "Small online shop: 200 sales a month ($10,000 at a $50 average ticket)",
+        "$350.00/mo",
+        "$390.00/mo",
+        "$399.00/mo",
+        "$375.00/mo",
+        "$379.00/mo",
+        "Stripe ($350.00/mo)"
+      ],
+      [
+        "Growing shop: 1,200 sales a month ($60,000)",
+        "$2,100.00/mo",
+        "$2,340.00/mo",
+        "$2,149.00/mo",
+        "$2,125.00/mo",
+        "$2,129.00/mo",
+        "Stripe ($2,100.00/mo)"
+      ],
+      [
+        "Established shop: 4,000 sales a month ($200,000)",
+        "$7,000.00/mo",
+        "$7,800.00/mo",
+        "$7,049.00/mo",
+        "$7,025.00/mo",
+        "$7,029.00/mo",
+        "Stripe ($7,000.00/mo)"
+      ]
+    ]
+  }
+}

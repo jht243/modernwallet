@@ -1,0 +1,96 @@
+{
+ "slug": "square",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 2901,
+ "floor": 1500,
+ "input_tokens": 45839,
+ "output_tokens": 31693,
+ "thinking_tokens": null,
+ "cached_tokens": 26890,
+ "est_cost_usd": 0.715,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 2901,
+  "numbers_not_in_facts": [
+   "0.1",
+   "1.4",
+   "1.66",
+   "1080000",
+   "14",
+   "200",
+   "4.05",
+   "4.1",
+   "50000",
+   "588",
+   "70",
+   "78",
+   "79",
+   "80",
+   "81",
+   "828",
+   "86",
+   "93"
+  ],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    3,
+    0
+   ],
+   "applied": [
+    {
+     "id": "chooseSection.body",
+     "quote": "Card fees and sales tax are two separate costs on a sale, and our [sales tax vs. use tax comparison](/compare/sales-tax-vs-use-tax/) explains the tax side.",
+     "replacement": "Our [sales tax vs. use tax comparison](/compare/sales-tax-vs-use-tax/) explains the tax side.",
+     "type": "unsupported",
+     "why": "SOURCE says nothing about sales tax on card sales."
+    },
+    {
+     "id": "alternatives[6].body",
+     "quote": "Square offers custom rates above that level, so a quoted Square rate replaces the published figures used here.",
+     "replacement": "Square offers custom rates above that level, which the published figures used here leave out.",
+     "type": "inference",
+     "why": "SOURCE only says Square offers custom rates above $250,000 a year."
+    },
+    {
+     "id": "reviewerNote.note",
+     "quote": "I cut operating costs at Uber with SQL and A/B tests, and the fee gap between Square and Stripe Terminal is the kind of cents-per-sale cost that only shows up once month one's statement lands.",
+     "replacement": "I cut operating costs at Uber with SQL and A/B tests, and the fee gap between Square and Stripe Terminal is a cents-per-sale cost.",
+     "type": "unsupported",
+     "why": "SOURCE does not say when merchants notice fee gaps on statements."
+    }
+   ],
+   "deleted_final": 0,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 2928
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 13156
+  }
+ },
+ "seconds": 318.6,
+ "response_id": "msg_011ChVftZuwAFbmuC7ZSqfwy",
+ "generated_at": "2026-11-28T16:56:15+0000"
+}

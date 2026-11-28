@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "query": "What should I use instead of Square for taking card payments in person? [verb-only — no PAA, no completions]",
+  "searchQuery": "What should I use instead of Square for taking card payments in person?",
+  "contextQueries": [],
+  "publisher": "themodernwallet.com",
+  "bankSha256": "844e3387ef4c23f3bd1907dd3f62af8592ee2341f93d4842edd1c49687c262b4",
+  "experienceSha256": "f434b01c0528011425795dd52369f64413f6794de89191130c700c632f9ca90a",
+  "localExperience": "Read .claude/commands/_experience.md as internal permission context; its named client examples are private and superseded by the local anonymity rule.",
+  "experienceCatalog": {
+    "path": ".claude/commands/_experience-catalog.json",
+    "sha256": "c30a58024d315337815abe52a4065e486d1c0b95869c03ecd91cd934ad743ac6",
+    "recordsSearched": 95
+  },
+  "candidates": [
+    {
+      "record": {
+        "id": "fleet-jet",
+        "publicDescription": "Jet & Beyond",
+        "relationship": "Fleet sites",
+        "topic": "Private aviation",
+        "workSummary": "Private-jet cost calculator, operator research, jet-card and aircraft comparisons.",
+        "possibleUses": "Cost modeling and comparing ownership, charter and card scenarios.",
+        "evidenceStatus": "Public portfolio + local project",
+        "limits": "This supports experience building and operating the site, not a claim that we personally tested every product or performed the professional service it describes.",
+        "outcomeLeads": [],
+        "privateTestimonialRecords": 0,
+        "verification": "Discovery material. Inspect the supporting record or establish the finding during this run before claiming an outcome. A possible use is not a fact."
+      },
+      "topicMatches": [
+        "card"
+      ],
+      "matchSources": {
+        "question": [
+          "card"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    },
+    {
+      "record": {
+        "id": "product-slimbooks",
+        "publicDescription": "SlimBooks",
+        "relationship": "Owned apps",
+        "topic": "Bookkeeping",
+        "workSummary": "A local bookkeeping application using bank/card integrations and AI categorization for profit-and-loss and Schedule C summaries.",
+        "possibleUses": "Account selection, transaction categorization and separating business from personal records.",
+        "evidenceStatus": "Local product project",
+        "limits": "Project files establish implementation experience; do not infer customers, adoption or performance. Private personal records and underlying case files remain excluded.",
+        "outcomeLeads": [],
+        "privateTestimonialRecords": 0,
+        "verification": "Discovery material. Inspect the supporting record or establish the finding during this run before claiming an outcome. A possible use is not a fact."
+      },
+      "topicMatches": [
+        "card"
+      ],
+      "matchSources": {
+        "question": [
+          "card"
+        ],
+        "context": []
+      },
+      "attribution": "Use the anonymous public description for clients. Verify the specific claim and its basis before adding it to writer facts; a discovered project is not an observed outcome or product test."
+    }
+  ],
+  "privateClientContext": [],
+  "instruction": "This catalog is one optional source, not the sole source or a source-count target. Combine as many relevant sources as needed: experience, internal modeling/calculations, actual survey records, primary documents, external research and executed tasks. Verify each claim, retain its own evidence basis and record actual sources in sourceArtifacts. No relevant case means use other supported sources, not force a case or stop. Never publish client identities or searchable testimonial text; preserve local exclusions and the terminal no-addition branch."
+}

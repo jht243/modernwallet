@@ -1,0 +1,179 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-scout-intake-writer",
+  "route": "/alternatives/stripe/",
+  "readerQuestion": "What should I use instead of Stripe for accepting card payments? [verb-only — no PAA, no completions]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/approval-manifest.json",
+      "sha256": "4050a5277f9d006937d31716a2dceaf732db3cf9e8882e756b91965f35d8b016"
+    },
+    "review": {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/chart-review.json",
+      "sha256": "4921ec7ae553b8e2f05f25b41d9f03f45f31d7d3b9301e139b9aea7729e51801"
+    },
+    "actionId": "A1"
+  },
+  "presentation": {
+    "medium": "structured comparison table with scenario cost model",
+    "placement": "Opening direct answer followed by comparison matrix and 3-scenario cost/break-even table",
+    "reason": "Buyers comparing Stripe options need verifiable tier math and explicit break-even thresholds rather than generic prose.",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "Three pre-computed team/workload scenarios answer the switching math faster without widget friction."
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static scannable tables communicate pricing thresholds immediately."
+    }
+  },
+  "basis": "modeled",
+  "decisionGap": "Pricing pages list rates in isolation and do not show per-sale cost at a fixed ticket size, the $25 to $49 monthly fees that offset identical percentage rates, or the point where interchange-plus beats a flat rate.",
+  "finding": "Square, Helcim, Authorize.net, Shopify Payments, Paddle and Clover are six Stripe alternatives, and most of them publish the same 2.9% + 30¢ online card rate that Stripe does. Stripe's 2.9% + 30¢ costs $1.75 on a $50 online sale, while Square's free plan at 3.3% + 30¢ costs $1.95, a $0.20 difference per sale.",
+  "conditions": "Domestic US online card payments at a $50 average ticket, standard published rates, no disputes, no currency conversion, no negotiated custom pricing.",
+  "whatWouldChange": "A change to Stripe's 2.9% + 30¢ standard rate, a published Helcim interchange average, or a Paddle or Stripe Managed Payments fee change would move the cost ranking.",
+  "method": "Deterministic 3-scenario seat, cap, and overage cost model over verified primary vendor pricing snapshots.",
+  "units": "USD/month and USD/year",
+  "limitations": "Excludes unpublished enterprise commits, custom volume discounts, and implementation labor.",
+  "counterexample": "Helcim publishes an interchange-plus margin of 0.50% + 25¢ on keyed and online sales up to $50,000 a month, which is $0.50 on a $50 sale. Stripe's 2.9% + 30¢ is $1.75, so Helcim costs less whenever average interchange stays under $1.25 per $50 sale (2.5% of the ticket). Helcim's page does not publish interchange as a number, so the flip point is arithmetic only: above 2.5% Stripe costs less, below it Helcim does. On the $60,000 and $200,000 monthly tiers the margins fall to $0.425 and $0.375 per $50 sale, which moves the flip point to 2.65% and 2.75%.",
+  "caseSelection": {
+    "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/stripe/cases.json",
+    "sha256": "3e24006187c20c7f90e5dc415ff65c523d420ad279214974c951b2edbff734e1"
+  },
+  "caseSearchContext": [],
+  "caseDecisions": "Searched first-party catalog for relevant anonymous operator/client context; numerical rankings rely strictly on verified pricing/benchmark artifacts.",
+  "caseUses": [],
+  "comparisons": [
+    {
+      "kind": "public-data",
+      "status": "used",
+      "basis": "modeled",
+      "reason": "Published pricing tiers, plan caps, and token rates directly determine total workload cost and break-even thresholds.",
+      "scope": "Verified public self-serve pricing across 7 of 9 compared options on 2026-11-28.",
+      "plan": {
+        "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/stripe/public-comparison-plan.json",
+        "sha256": "e5dba794b31b93cebc74800f84854a6def26eea94edc4b5b41fc67aa144974b8"
+      },
+      "coveredItems": [
+        "Stripe",
+        "Square Online (Free plan)",
+        "Square Online (Plus plan)",
+        "Authorize.net",
+        "Shopify Payments (Basic plan)",
+        "Paddle",
+        "Stripe Managed Payments"
+      ],
+      "excludedItems": {
+        "Helcim": "Quote-based / custom enterprise pricing; no public self-serve rate.",
+        "Clover": "Quote-based / custom enterprise pricing; no public self-serve rate."
+      },
+      "sources": [
+        {
+          "item": "Stripe",
+          "url": "https://stripe.com/pricing",
+          "checkedAt": "2026-11-28T16:44:55Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/stripe-benchmark-vendors.json",
+            "sha256": "3069e3ada287c036bc1bc6a0a13fdebf842fb9d937fb86a9eda60d89af182b0a"
+          },
+          "extractedFacts": "Stripe (Standard (domestic online card)): base=$0/mo, perSeat=$0/mo, includedVolume=0.0001."
+        },
+        {
+          "item": "Square Online (Free plan)",
+          "url": "https://squareup.com/us/en/pricing",
+          "checkedAt": "2026-11-28T16:44:55Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/stripe-benchmark-vendors.json",
+            "sha256": "3069e3ada287c036bc1bc6a0a13fdebf842fb9d937fb86a9eda60d89af182b0a"
+          },
+          "extractedFacts": "Square Online (Free plan) (Square Free online card): base=$0/mo, perSeat=$0/mo, includedVolume=0.0001."
+        },
+        {
+          "item": "Square Online (Plus plan)",
+          "url": "https://squareup.com/us/en/pricing",
+          "checkedAt": "2026-11-28T16:44:55Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/stripe-benchmark-vendors.json",
+            "sha256": "3069e3ada287c036bc1bc6a0a13fdebf842fb9d937fb86a9eda60d89af182b0a"
+          },
+          "extractedFacts": "Square Online (Plus plan) (Square Plus online card): base=$49/mo, perSeat=$0/mo, includedVolume=0.0001."
+        },
+        {
+          "item": "Authorize.net",
+          "url": "https://www.authorize.net/sign-up/pricing.html",
+          "checkedAt": "2026-11-28T16:44:55Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/stripe-benchmark-vendors.json",
+            "sha256": "3069e3ada287c036bc1bc6a0a13fdebf842fb9d937fb86a9eda60d89af182b0a"
+          },
+          "extractedFacts": "Authorize.net (All-in-One): base=$25/mo, perSeat=$0/mo, includedVolume=0.0001."
+        },
+        {
+          "item": "Shopify Payments (Basic plan)",
+          "url": "https://www.shopify.com/pricing",
+          "checkedAt": "2026-11-28T16:44:55Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/stripe-benchmark-vendors.json",
+            "sha256": "3069e3ada287c036bc1bc6a0a13fdebf842fb9d937fb86a9eda60d89af182b0a"
+          },
+          "extractedFacts": "Shopify Payments (Basic plan) (Basic): base=$29/mo, perSeat=$0/mo, includedVolume=0.0001."
+        },
+        {
+          "item": "Paddle",
+          "url": "https://www.paddle.com/pricing",
+          "checkedAt": "2026-11-28T16:44:55Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/stripe-benchmark-vendors.json",
+            "sha256": "3069e3ada287c036bc1bc6a0a13fdebf842fb9d937fb86a9eda60d89af182b0a"
+          },
+          "extractedFacts": "Paddle (Merchant of record): base=$0/mo, perSeat=$0/mo, includedVolume=0.0001."
+        },
+        {
+          "item": "Stripe Managed Payments",
+          "url": "https://stripe.com/pricing",
+          "checkedAt": "2026-11-28T16:44:55Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/stripe-benchmark-vendors.json",
+            "sha256": "3069e3ada287c036bc1bc6a0a13fdebf842fb9d937fb86a9eda60d89af182b0a"
+          },
+          "extractedFacts": "Stripe Managed Payments (Stripe merchant of record): base=$0/mo, perSeat=$0/mo, includedVolume=0.0001."
+        }
+      ]
+    }
+  ],
+  "sourceArtifacts": [
+    {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/stripe-benchmark-vendors.json",
+      "sha256": "3069e3ada287c036bc1bc6a0a13fdebf842fb9d937fb86a9eda60d89af182b0a"
+    },
+    {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/stripe/benchmark-inputs.json",
+      "sha256": "6c820bdffe0da50228bbfff893398d89dfd8f94556e19b26087b61743aa8d1b8"
+    },
+    {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/stripe/public-comparison-plan.json",
+      "sha256": "e5dba794b31b93cebc74800f84854a6def26eea94edc4b5b41fc67aa144974b8"
+    }
+  ],
+  "execution": {
+    "command": [
+      "python3",
+      "reports/alternatives-daily/2026-11-28/mindmap/evidence/stripe/model.py"
+    ],
+    "code": {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/stripe/model.py",
+      "sha256": "0162dbb536d046821fe77b9f3d5325483e6bbf49dbbe677e4e982032bd7d1505"
+    },
+    "inputs": [
+      {
+        "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/stripe/benchmark-inputs.json",
+        "sha256": "6c820bdffe0da50228bbfff893398d89dfd8f94556e19b26087b61743aa8d1b8"
+      }
+    ],
+    "output": {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/stripe/output.json",
+      "sha256": "f249351e82c74931abd31c30c16be255d7f4b4acad1c779ac1cd1bd4d8b8e127"
+    }
+  }
+}

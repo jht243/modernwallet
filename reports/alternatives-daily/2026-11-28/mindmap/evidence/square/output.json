@@ -1,0 +1,198 @@
+{
+  "mode": "saas-tco",
+  "subject": "Square",
+  "scenarioCount": 3,
+  "distinctScenarioWinners": [
+    "Stripe Terminal"
+  ],
+  "scenarios": [
+    {
+      "scenario": "Corner shop: 500 sales a month ($15,000 at a $30 average ticket)",
+      "lowestCostVendor": "Stripe Terminal",
+      "lowestMonthlyUsd": 430.0,
+      "quotes": {
+        "Square": {
+          "monthlyUsd": 465.0,
+          "annualUsd": 5580.0,
+          "plan": "Square Free (in person)",
+          "savingsVsSubjectMonthlyUsd": 0.0,
+          "savingsVsSubjectAnnualUsd": 0.0
+        },
+        "Square Plus": {
+          "monthlyUsd": 499.0,
+          "annualUsd": 5988.0,
+          "plan": "Square Plus (in person)",
+          "savingsVsSubjectMonthlyUsd": -34.0,
+          "savingsVsSubjectAnnualUsd": -408.0
+        },
+        "Square Premium": {
+          "monthlyUsd": 584.0,
+          "annualUsd": 7008.0,
+          "plan": "Square Premium (in person)",
+          "savingsVsSubjectMonthlyUsd": -119.0,
+          "savingsVsSubjectAnnualUsd": -1428.0
+        },
+        "Stripe Terminal": {
+          "monthlyUsd": 430.0,
+          "annualUsd": 5160.0,
+          "plan": "Terminal in-person",
+          "savingsVsSubjectMonthlyUsd": 35.0,
+          "savingsVsSubjectAnnualUsd": 420.0
+        },
+        "SumUp": {
+          "monthlyUsd": 440.0,
+          "annualUsd": 5280.0,
+          "plan": "Free plan",
+          "savingsVsSubjectMonthlyUsd": 25.0,
+          "savingsVsSubjectAnnualUsd": 300.0
+        },
+        "Shopify POS (Basic plan)": {
+          "monthlyUsd": 469.0,
+          "annualUsd": 5628.0,
+          "plan": "Basic",
+          "savingsVsSubjectMonthlyUsd": -4.0,
+          "savingsVsSubjectAnnualUsd": -48.0
+        }
+      }
+    },
+    {
+      "scenario": "Busy shop: 3,000 sales a month ($90,000)",
+      "lowestCostVendor": "Stripe Terminal",
+      "lowestMonthlyUsd": 2580.0,
+      "quotes": {
+        "Square": {
+          "monthlyUsd": 2790.0,
+          "annualUsd": 33480.0,
+          "plan": "Square Free (in person)",
+          "savingsVsSubjectMonthlyUsd": 0.0,
+          "savingsVsSubjectAnnualUsd": 0.0
+        },
+        "Square Plus": {
+          "monthlyUsd": 2749.0,
+          "annualUsd": 32988.0,
+          "plan": "Square Plus (in person)",
+          "savingsVsSubjectMonthlyUsd": 41.0,
+          "savingsVsSubjectAnnualUsd": 492.0
+        },
+        "Square Premium": {
+          "monthlyUsd": 2759.0,
+          "annualUsd": 33108.0,
+          "plan": "Square Premium (in person)",
+          "savingsVsSubjectMonthlyUsd": 31.0,
+          "savingsVsSubjectAnnualUsd": 372.0
+        },
+        "Stripe Terminal": {
+          "monthlyUsd": 2580.0,
+          "annualUsd": 30960.0,
+          "plan": "Terminal in-person",
+          "savingsVsSubjectMonthlyUsd": 210.0,
+          "savingsVsSubjectAnnualUsd": 2520.0
+        },
+        "SumUp": {
+          "monthlyUsd": 2640.0,
+          "annualUsd": 31680.0,
+          "plan": "Free plan",
+          "savingsVsSubjectMonthlyUsd": 150.0,
+          "savingsVsSubjectAnnualUsd": 1800.0
+        },
+        "Shopify POS (Basic plan)": {
+          "monthlyUsd": 2669.0,
+          "annualUsd": 32028.0,
+          "plan": "Basic",
+          "savingsVsSubjectMonthlyUsd": 121.0,
+          "savingsVsSubjectAnnualUsd": 1452.0
+        }
+      }
+    },
+    {
+      "scenario": "High-volume shop: 10,000 sales a month ($300,000)",
+      "lowestCostVendor": "Stripe Terminal",
+      "lowestMonthlyUsd": 8600.0,
+      "quotes": {
+        "Square": {
+          "monthlyUsd": 9300.0,
+          "annualUsd": 111600.0,
+          "plan": "Square Free (in person)",
+          "savingsVsSubjectMonthlyUsd": 0.0,
+          "savingsVsSubjectAnnualUsd": 0.0
+        },
+        "Square Plus": {
+          "monthlyUsd": 9049.0,
+          "annualUsd": 108588.0,
+          "plan": "Square Plus (in person)",
+          "savingsVsSubjectMonthlyUsd": 251.0,
+          "savingsVsSubjectAnnualUsd": 3012.0
+        },
+        "Square Premium": {
+          "monthlyUsd": 8849.0,
+          "annualUsd": 106188.0,
+          "plan": "Square Premium (in person)",
+          "savingsVsSubjectMonthlyUsd": 451.0,
+          "savingsVsSubjectAnnualUsd": 5412.0
+        },
+        "Stripe Terminal": {
+          "monthlyUsd": 8600.0,
+          "annualUsd": 103200.0,
+          "plan": "Terminal in-person",
+          "savingsVsSubjectMonthlyUsd": 700.0,
+          "savingsVsSubjectAnnualUsd": 8400.0
+        },
+        "SumUp": {
+          "monthlyUsd": 8800.0,
+          "annualUsd": 105600.0,
+          "plan": "Free plan",
+          "savingsVsSubjectMonthlyUsd": 500.0,
+          "savingsVsSubjectAnnualUsd": 6000.0
+        },
+        "Shopify POS (Basic plan)": {
+          "monthlyUsd": 8829.0,
+          "annualUsd": 105948.0,
+          "plan": "Basic",
+          "savingsVsSubjectMonthlyUsd": 471.0,
+          "savingsVsSubjectAnnualUsd": 5652.0
+        }
+      }
+    }
+  ],
+  "scenarioTable": {
+    "caption": "Internal Plan & Workload Cost Model Across 3 Standardized Scenarios",
+    "headers": [
+      "Workload Scenario",
+      "Square",
+      "Square Plus",
+      "Square Premium",
+      "Stripe Terminal",
+      "SumUp",
+      "Lowest-Cost Pick"
+    ],
+    "rows": [
+      [
+        "Corner shop: 500 sales a month ($15,000 at a $30 average ticket)",
+        "$465.00/mo",
+        "$499.00/mo",
+        "$584.00/mo",
+        "$430.00/mo",
+        "$440.00/mo",
+        "Stripe Terminal ($430.00/mo)"
+      ],
+      [
+        "Busy shop: 3,000 sales a month ($90,000)",
+        "$2,790.00/mo",
+        "$2,749.00/mo",
+        "$2,759.00/mo",
+        "$2,580.00/mo",
+        "$2,640.00/mo",
+        "Stripe Terminal ($2,580.00/mo)"
+      ],
+      [
+        "High-volume shop: 10,000 sales a month ($300,000)",
+        "$9,300.00/mo",
+        "$9,049.00/mo",
+        "$8,849.00/mo",
+        "$8,600.00/mo",
+        "$8,800.00/mo",
+        "Stripe Terminal ($8,600.00/mo)"
+      ]
+    ]
+  }
+}

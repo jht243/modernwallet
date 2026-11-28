@@ -1,0 +1,167 @@
+{
+ "slug": "stripe",
+ "schema": "none",
+ "kind": "write",
+ "model": "claude-opus-5-5",
+ "provider": "anthropic",
+ "requested_model": "claude-opus-5-5",
+ "fallback_used": false,
+ "fallback_reason": null,
+ "retried_for_truncation": false,
+ "thinking": "medium",
+ "key_source": "CONTENT_ANTHROPIC_KEY_2",
+ "finish_reason": "STOP",
+ "words": 3000,
+ "floor": 1500,
+ "input_tokens": 44802,
+ "output_tokens": 29019,
+ "thinking_tokens": null,
+ "cached_tokens": 0,
+ "est_cost_usd": 0.7596,
+ "guards": {
+  "repairs": [],
+  "flags": [],
+  "tested": {
+   "mode": "no"
+  },
+  "disallowed_urls_removed": [],
+  "words": 3000,
+  "numbers_not_in_facts": [
+   "0.004",
+   "0.0125",
+   "0.1",
+   "0.25",
+   "0.4",
+   "0.6",
+   "1.21",
+   "1.85",
+   "12.5",
+   "12250",
+   "14.29",
+   "191",
+   "245",
+   "33.33",
+   "5.4",
+   "8.6",
+   "80",
+   "88",
+   "98"
+  ],
+  "claim_check": {
+   "passes": 2,
+   "found": [
+    8,
+    5
+   ],
+   "applied": [
+    {
+     "id": "chooseSection.body",
+     "quote": "Sales tax rules sit outside card fees, and our [sales tax vs. use tax](/compare/sales-tax-vs-use-tax/) comparison covers them.",
+     "replacement": "Our [sales tax vs. use tax](/compare/sales-tax-vs-use-tax/) comparison covers sales tax rules.",
+     "type": "unsupported",
+     "why": "SOURCE says nothing about sales tax relative to card fees."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Helcim does not publish interchange as a number, so we left Helcim out of the modeled totals.",
+     "replacement": "Helcim does not publish interchange as a number, and Helcim is not part of the modeled totals.",
+     "type": "inference",
+     "why": "SOURCE gives a different exclusion reason (quote-based pricing)."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Stripe's 2.9% + 30\u00a2 produces a total that can be computed before a sale clears, so a seller who wants a fixed per-sale cost gets it from Stripe.",
+     "replacement": "Stripe's flat 2.9% + 30\u00a2 gives a per-sale cost that can be computed from the ticket, so a seller who wants a fixed per-sale cost gets it from Stripe.",
+     "type": "inference",
+     "why": "SOURCE says nothing about sale clearing timing."
+    },
+    {
+     "id": "alternatives[2].body",
+     "quote": "At high volume, price stops being a reason to pick either Authorize.net or Stripe.",
+     "replacement": "",
+     "type": "inference",
+     "why": "Evaluative conclusion not stated in SOURCE."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Clover therefore sits outside the modeled totals.",
+     "replacement": "Clover sits outside the modeled totals.",
+     "type": "inference",
+     "why": "SOURCE gives a different exclusion reason (quote-based pricing)."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Add that monthly figure to Clover's per-sale fees before comparing a month's total with Stripe's no-monthly-fee pricing.",
+     "replacement": "Add any device plan cost to Clover's per-sale fees before comparing a month's total with Stripe's no-monthly-fee pricing.",
+     "type": "unsupported",
+     "why": "SOURCE does not say device plans are billed monthly."
+    },
+    {
+     "id": "stillBetterFit.body",
+     "quote": "Stripe lists developers and online sellers as its fit.",
+     "replacement": "Stripe's best fit is developers and online sellers.",
+     "type": "inference",
+     "why": "SOURCE records a best-fit field, not that Stripe itself lists it."
+    },
+    {
+     "id": "reviewerNote.note",
+     "quote": "If international buyers are a real share, Stripe's extra 1.5% shows up on the first statement, and that's the month to price Paddle against it.",
+     "replacement": "If international buyers are a real share, Stripe's extra 1.5% raises your per-sale cost, so that's when to price Paddle against it.",
+     "type": "unsupported",
+     "why": "SOURCE says nothing about statements or their timing."
+    },
+    {
+     "id": "intro",
+     "quote": "Stripe had the lowest monthly total in all three, because each rival either matches its rate and adds a monthly fee or charges a higher rate per sale.",
+     "replacement": "Stripe had the lowest monthly total in all three.",
+     "type": "inference",
+     "why": "Square Plus, Authorize.net, Shopify match the rate; Square Free, Paddle, Managed Payments charge more."
+    },
+    {
+     "id": "intro",
+     "quote": "At The Modern Wallet, we modeled each provider's published fees across three online shop sizes at a $50 average ticket.",
+     "replacement": "At The Modern Wallet, we modeled published fees across three online shop sizes at a $50 average ticket.",
+     "type": "unsupported",
+     "why": "Helcim and Clover were excluded from the model, so not each provider."
+    },
+    {
+     "id": "alternatives[1].body",
+     "quote": "Helcim's margin falls as volume grows: $0.425 per $50 sale at $60,000 a month and $0.375 at $200,000.",
+     "replacement": "In the modeled counterexample, Helcim's margin is $0.425 per $50 sale at $60,000 a month and $0.375 at $200,000.",
+     "type": "unsupported",
+     "why": "These figures come from the evidence counterexample, not from a published Helcim tier."
+    },
+    {
+     "id": "alternatives[5].body",
+     "quote": "Clover fits retail sellers with small keyed-in tickets or sales that qualify for the 2.3% rate.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE gives no fit for Clover; qualifying sales are unknown."
+    },
+    {
+     "id": "reviewerNote.note",
+     "quote": "If international buyers are a real share, Stripe's extra 1.5% raises your per-sale cost, so that's when to price Paddle against it.",
+     "replacement": "",
+     "type": "inference",
+     "why": "SOURCE gives no Paddle international pricing to support this recommendation."
+    }
+   ],
+   "deleted_final": 5,
+   "unapplied": [],
+   "remaining": [],
+   "thinking": "medium",
+   "final_thinking": "low",
+   "extra_pass": false,
+   "words_before": 3081
+  },
+  "writer_scope": {
+   "dropped_sections": [],
+   "html_comments_dropped": 0,
+   "tokens_dropped_est": 0,
+   "tokens_sent_est": 12608
+  }
+ },
+ "seconds": 302.4,
+ "response_id": "msg_011ChVfVt1xrNkUXJ2qtdkWU",
+ "generated_at": "2026-11-28T16:50:51+0000"
+}

@@ -1,0 +1,178 @@
+{
+  "gateSchemaVersion": 1,
+  "author": "mindmap-scout-intake-writer",
+  "route": "/alternatives/expensify/",
+  "readerQuestion": "What should I use instead of Expensify for expense reports? [verb-only — no PAA, no completions]",
+  "approvedPlan": {
+    "manifest": {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/approval-manifest.json",
+      "sha256": "4050a5277f9d006937d31716a2dceaf732db3cf9e8882e756b91965f35d8b016"
+    },
+    "review": {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/chart-review.json",
+      "sha256": "4921ec7ae553b8e2f05f25b41d9f03f45f31d7d3b9301e139b9aea7729e51801"
+    },
+    "actionId": "A3"
+  },
+  "presentation": {
+    "medium": "structured comparison table with scenario cost model",
+    "placement": "Opening direct answer followed by comparison matrix and 3-scenario cost/break-even table",
+    "reason": "Buyers comparing Expensify options need verifiable tier math and explicit break-even thresholds rather than generic prose.",
+    "readerInputs": [],
+    "interaction": {
+      "decision": "not-useful",
+      "reason": "Three pre-computed team/workload scenarios answer the switching math faster without widget friction."
+    },
+    "animation": {
+      "decision": "not-useful",
+      "reason": "Static scannable tables communicate pricing thresholds immediately."
+    }
+  },
+  "basis": "modeled",
+  "decisionGap": "Pricing pages state per-seat rates but do not show team-size totals, the 3-user cap on Zoho Expense's free plan, or 5-user minimums at Rydoo and Sage Expense Management.",
+  "finding": "Zoho Expense, Ramp, Brex, BILL Spend & Expense, Sage Expense Management and Rydoo are six Expensify alternatives, and four of them publish a software price below Expensify's $5 per member per month. Zoho Expense Standard is $4 per user billed monthly, and Ramp, Brex Essentials and BILL Spend & Expense each list $0 per user.",
+  "conditions": "Published per-seat software prices only, no corporate card rewards, no travel booking fees, no implementation or add-on fees, standard self-serve plans.",
+  "whatWouldChange": "A change to Expensify's $5 Collect price, Zoho Expense's $4 Standard price, or a vendor adding a per-user fee to its $0 plan would move the cost ranking.",
+  "method": "Deterministic total-cost-of-ownership calculation across 3 standardized team/usage scenarios using published base fees, per-seat charges, included volume caps, overage blocks, and mandatory channel add-ons.",
+  "units": "USD/month and USD/year",
+  "limitations": "Excludes negotiated enterprise discounts, implementation labor, and third-party telephony/LLM API pass-through usage outside published plan allowances.",
+  "counterexample": "At 3 members Expensify Collect costs $15 a month while Zoho Expense's Free plan, capped at 3 users, costs $0. At 100 members Zoho Expense Standard at $4 a user is $400 a month against Expensify's $500, a $100 monthly gap ($1,200 a year). Below 5 users the ranking flips toward Expensify: at 4 members Expensify Collect is $20 a month, while Rydoo and Sage Expense Management both state a 5-user starting point, which is $60 and $59.95 at 5 users.",
+  "execution": {
+    "command": [
+      "python3",
+      "reports/alternatives-daily/2026-11-28/mindmap/evidence/expensify/model.py"
+    ],
+    "code": {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/expensify/model.py",
+      "sha256": "e765b6bba17778cadc3b132b4c9de03ad6465d6c2c58b7ff290939be3ce95193"
+    },
+    "inputs": [
+      {
+        "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/expensify-vendors.json",
+        "sha256": "30bf81262d122c6898159540ec6445c17085ac1d76d26b1c625f2e2e746eeca3"
+      }
+    ],
+    "output": {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/expensify/output.json",
+      "sha256": "235494a5d40740fe8561422bd9f0f2b58c3336b1141543d4023cddc7ba4cff67"
+    }
+  },
+  "caseSelection": {
+    "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/expensify/cases.json",
+    "sha256": "81eeb038d2adfb3fe5e5c7fb79a68da81255d19d00c309d7e01fe18dffbd327a"
+  },
+  "caseDecisions": "Evaluated retrieved _approved-cases.json candidates; relied on deterministic vendor-rate scenario modeling and Layer3 catalog context without claiming unverified client outcomes.",
+  "caseUses": [],
+  "comparisons": [
+    {
+      "kind": "public-data",
+      "status": "used",
+      "basis": "modeled",
+      "reason": "Multi-vendor published pricing tiers and usage caps directly govern switching TCO.",
+      "scope": "Published self-serve tiers across 8 compared vendors as of 2026-11-28.",
+      "plan": {
+        "path": "reports/alternatives-daily/2026-11-28/mindmap/evidence/expensify/comparison-plan.json",
+        "sha256": "74d4aeeeed422418075f74b4470bd7c3fa8966a01f79e15765bccce3cb5e2c25"
+      },
+      "coveredItems": [
+        "Expensify",
+        "Zoho Expense",
+        "Rydoo",
+        "Sage Expense Management",
+        "Brex",
+        "Brex Premium",
+        "Ramp",
+        "BILL Spend & Expense"
+      ],
+      "excludedItems": {},
+      "sources": [
+        {
+          "item": "Expensify",
+          "url": "https://www.expensify.com/pricing",
+          "checkedAt": "2026-11-28T00:00:00Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/expensify-vendors.json",
+            "sha256": "30bf81262d122c6898159540ec6445c17085ac1d76d26b1c625f2e2e746eeca3"
+          },
+          "extractedFacts": "Expensify (Collect): base=$0/mo, perSeat=$5/mo, includedVolume=0.0001. Best fit: small teams. Features/Notes: $5 per member per month; Submit plan free; Control custom pricing from $9 per member per month."
+        },
+        {
+          "item": "Zoho Expense",
+          "url": "https://www.zoho.com/us/expense/pricing/",
+          "checkedAt": "2026-11-28T00:00:00Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/expensify-vendors.json",
+            "sha256": "30bf81262d122c6898159540ec6445c17085ac1d76d26b1c625f2e2e746eeca3"
+          },
+          "extractedFacts": "Zoho Expense (Standard (billed monthly)): base=$0/mo, perSeat=$4/mo, includedVolume=0.0001. Features/Notes: $4 per user per month billed monthly, $3 billed annually; Free plan capped at 3 users."
+        },
+        {
+          "item": "Rydoo",
+          "url": "https://www.rydoo.com/pricing/",
+          "checkedAt": "2026-11-28T00:00:00Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/expensify-vendors.json",
+            "sha256": "30bf81262d122c6898159540ec6445c17085ac1d76d26b1c625f2e2e746eeca3"
+          },
+          "extractedFacts": "Rydoo (Essentials (billed monthly)): base=$0/mo, perSeat=$12/mo, includedVolume=0.0001. Features/Notes: $12 per user per month billed monthly, $9 billed annually; starts at 5 users."
+        },
+        {
+          "item": "Sage Expense Management",
+          "url": "https://www.fylehq.com/pricing",
+          "checkedAt": "2026-11-28T00:00:00Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/expensify-vendors.json",
+            "sha256": "30bf81262d122c6898159540ec6445c17085ac1d76d26b1c625f2e2e746eeca3"
+          },
+          "extractedFacts": "Sage Expense Management (Growth (billed annually)): base=$0/mo, perSeat=$11.99/mo, includedVolume=0.0001. Features/Notes: $11.99 per active user per month billed annually; minimum billing 5 users."
+        },
+        {
+          "item": "Brex",
+          "url": "https://www.brex.com/pricing",
+          "checkedAt": "2026-11-28T00:00:00Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/expensify-vendors.json",
+            "sha256": "30bf81262d122c6898159540ec6445c17085ac1d76d26b1c625f2e2e746eeca3"
+          },
+          "extractedFacts": "Brex (Essentials): base=$0/mo, perSeat=$0/mo, includedVolume=0.0001. Features/Notes: $0 per user per month; Premium $12 per user per month."
+        },
+        {
+          "item": "Brex Premium",
+          "url": "https://www.brex.com/pricing",
+          "checkedAt": "2026-11-28T00:00:00Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/expensify-vendors.json",
+            "sha256": "30bf81262d122c6898159540ec6445c17085ac1d76d26b1c625f2e2e746eeca3"
+          },
+          "extractedFacts": "Brex Premium (Premium): base=$0/mo, perSeat=$12/mo, includedVolume=0.0001. Features/Notes: $12 per user per month."
+        },
+        {
+          "item": "Ramp",
+          "url": "https://ramp.com/pricing",
+          "checkedAt": "2026-11-28T00:00:00Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/expensify-vendors.json",
+            "sha256": "30bf81262d122c6898159540ec6445c17085ac1d76d26b1c625f2e2e746eeca3"
+          },
+          "extractedFacts": "Ramp (Free): base=$0/mo, perSeat=$0/mo, includedVolume=0.0001. Features/Notes: $0 per user per month; Plus $15 per user per month plus a platform fee based on team size (not published as a number)."
+        },
+        {
+          "item": "BILL Spend & Expense",
+          "url": "https://www.bill.com/pricing",
+          "checkedAt": "2026-11-28T00:00:00Z",
+          "snapshot": {
+            "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/expensify-vendors.json",
+            "sha256": "30bf81262d122c6898159540ec6445c17085ac1d76d26b1c625f2e2e746eeca3"
+          },
+          "extractedFacts": "BILL Spend & Expense (Spend & Expense): base=$0/mo, perSeat=$0/mo, includedVolume=0.0001. Features/Notes: $0 per user per month with no subscription or per-user software fee."
+        }
+      ]
+    }
+  ],
+  "sourceArtifacts": [
+    {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/expensify-vendors.json",
+      "sha256": "30bf81262d122c6898159540ec6445c17085ac1d76d26b1c625f2e2e746eeca3"
+    }
+  ]
+}

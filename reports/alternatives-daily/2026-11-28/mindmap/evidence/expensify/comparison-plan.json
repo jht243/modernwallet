@@ -1,0 +1,26 @@
+{
+  "kind": "public-data",
+  "readerQuestion": "What should I use instead of Expensify for expense reports? [verb-only — no PAA, no completions]",
+  "items": [
+    "Expensify",
+    "Zoho Expense",
+    "Rydoo",
+    "Sage Expense Management",
+    "Brex",
+    "Brex Premium",
+    "Ramp",
+    "BILL Spend & Expense"
+  ],
+  "decision": "Select the lowest total-cost-of-ownership option among Expensify and alternatives for the reader workload.",
+  "conditions": "Published self-serve plan rates, seat pricing, included usage allowances, and required add-ons.",
+  "dimensions": [
+    "baseMonthlyUsd",
+    "perSeatMonthlyUsd",
+    "includedVolume",
+    "overageUsdPerUnit",
+    "requiredAddonMonthlyUsd"
+  ],
+  "normalization": "Monthly and annual USD totals across identical seat and monthly usage scenarios.",
+  "unknowns": "Custom negotiated enterprise contracts and unlisted volume discounts.",
+  "sourceRefreshTrigger": "Re-verify when any listed vendor changes plan names, base fees, or included usage caps."
+}

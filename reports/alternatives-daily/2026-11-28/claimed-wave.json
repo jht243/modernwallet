@@ -1,0 +1,5 @@
+{"day":"2026-11-28","siteAdapter":".claude/commands/alternatives-daily-auto.md (SITE ADAPTER section: ModernWallet, store src/data/alternatives.json + data/alternatives-pages.json, schema src/data/alternatives.ts; model page on the last entry 'upstart' in src/data/alternatives.json)",
+"claimed":[
+{"id":"alt-stripe-com-pricing","slug":"stripe","product":"Stripe","officialUrl":"https://stripe.com/pricing","vendorHost":"stripe.com","category":"payment processing"},
+{"id":"alt-expensify-com-pricing","slug":"expensify","product":"Expensify","officialUrl":"https://www.expensify.com/pricing","vendorHost":"expensify.com","category":"expense reporting"},
+{"id":"alt-squareup-com-us-en-pricing","slug":"square","product":"Square","officialUrl":"https://squareup.com/us/en/pricing","vendorHost":"squareup.com","category":"payment processing / POS"}]}

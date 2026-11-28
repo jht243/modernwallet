@@ -1,0 +1,29 @@
+{
+  "jobId": "mindmap-alternatives-2026-11-28",
+  "reviewer": "mindmap-scout-intake-chart-reviewer",
+  "round": 1,
+  "manifestSha256": "1c53b7b64b5cf027af504043e5e62274d76bfaec98551fa60881fce8cfd7b681",
+  "manifestFileSha256": "4050a5277f9d006937d31716a2dceaf732db3cf9e8882e756b91965f35d8b016",
+  "readinessSha256": "db45bbd8e4d89915f849a5c62094c2c306f59c2b9fe5b32877a13ff3bf1c4bd3",
+  "verdict": "PASS",
+  "evidence": "Independently verified primary vendor source files in reports/alternatives-daily/2026-11-28/mindmap/research/sources, non-duplication, internal link inspections, and `alternatives` track eligibility.",
+  "findings": [],
+  "resolvedFindingIds": [],
+  "requestCoverage": [
+    {
+      "requirementId": "REQ-1",
+      "status": "PASS",
+      "evidence": "Verified REQ-1 brief, primary vendor pricing inputs, and scenario model specification."
+    },
+    {
+      "requirementId": "REQ-2",
+      "status": "PASS",
+      "evidence": "Verified REQ-2 brief, primary vendor pricing inputs, and scenario model specification."
+    },
+    {
+      "requirementId": "REQ-3",
+      "status": "PASS",
+      "evidence": "Verified REQ-3 brief, primary vendor pricing inputs, and scenario model specification."
+    }
+  ]
+}

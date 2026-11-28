@@ -1,0 +1,199 @@
+{
+  "slug": "stripe",
+  "product": "Stripe",
+  "officialUrl": "https://stripe.com/",
+  "title": "Stripe Alternatives 2026: Fees and Features Compared",
+  "h1": "Stripe Alternatives 2026: Fees and Features Compared",
+  "metaDescription": "Stripe alternatives compared: Square, Helcim, Authorize.net, Shopify Payments, Paddle and Clover fees, with a modeled cost at $50 online sales.",
+  "published": "2026-11-28",
+  "updated": "2026-11-28",
+  "intro": "Square, Helcim, Authorize.net, Shopify Payments, Paddle and Clover are six [Stripe](https://stripe.com/) alternatives for accepting card payments. Three of them publish the same 2.9% + 30¢ online card rate that Stripe charges: Square on its Plus plan, Authorize.net and Shopify Payments. Stripe's 2.9% + 30¢ costs $1.75 on a $50 online sale, while Square's Free plan at 3.3% + 30¢ costs $1.95, a $0.20 difference per sale.\n\nAt The Modern Wallet, we modeled published fees across three online shop sizes at a $50 average ticket. Stripe had the lowest monthly total in all three.\n\nA cheaper Stripe alternative exists only under specific conditions. On standard published rates, none of the modeled options beat Stripe's $350 a month on 200 sales. Helcim can come in lower when average interchange stays under 2.5% of the ticket, and Clover's keyed-in rate costs less than Stripe's on tickets under $33.33.\n\nFor comparisons centered on other payment apps, see our [PayPal alternatives](/alternatives/paypal/) and [Venmo alternatives](/alternatives/venmo/) guides. Freelancers who bill clients by invoice can start with the [best invoicing apps for freelancers](/roundup/best-invoicing-apps-for-freelancers/).",
+  "tableTitle": "Stripe Alternatives Compared by Published Online Card Fees",
+  "tableNote": "Fees and prices from each provider's own website, checked November 28, 2026. Prices are in U.S. dollars.",
+  "tableColumns": [
+    "Product",
+    "Fees and pricing",
+    "Best fit"
+  ],
+  "rows": [
+    {
+      "product": "Stripe",
+      "pricing": "2.9% + 30¢ per successful domestic card transaction. No setup or monthly fees. Plus 1.5% for international cards and 1% for currency conversion. $15 dispute fee.",
+      "bestFit": "Developers and online sellers who want no monthly fee",
+      "subject": true
+    },
+    {
+      "product": "Square",
+      "pricing": "Free plan: 3.3% + 30¢ online, $0 a month per location. Plus plan: 2.9% + 30¢ online, $49 a month per location.",
+      "bestFit": "Free plan fits sellers under $12,250 a month in online sales. Plus plan fits sellers above that line."
+    },
+    {
+      "product": "Helcim",
+      "pricing": "Interchange plus 0.50% + 25¢ on keyed and online sales from $0 to $50,000 a month. Interchange is not published as a number.",
+      "bestFit": "Sellers whose average interchange stays under 2.5% of a $50 ticket"
+    },
+    {
+      "product": "Authorize.net",
+      "pricing": "All-in-One plan: $25 a month plus 2.9% + 30¢ per transaction.",
+      "bestFit": "Sellers who want an Authorize.net account and accept $300 a year above Stripe's published cost"
+    },
+    {
+      "product": "Shopify Payments",
+      "pricing": "Shopify Basic plan at $29 a month. Card rates from 2.9% + 30¢.",
+      "bestFit": "Sellers who run their store on the Shopify Basic plan"
+    },
+    {
+      "product": "Paddle",
+      "pricing": "5% + 50¢ per transaction as an all-in-one merchant of record. No monthly fee.",
+      "bestFit": "Sellers who want an all-in-one merchant of record on tickets above $14.29"
+    },
+    {
+      "product": "Clover",
+      "pricing": "Rates as low as 2.3% + 10¢. Keyed-in sales at 3.5% + 10¢ on retail plans. Device plans offered.",
+      "bestFit": "Retail sellers with keyed-in tickets under $33.33"
+    }
+  ],
+  "chooseSection": {
+    "heading": "How to Choose a Stripe Alternative",
+    "body": "In our internal cost analysis, we modeled three online shop sizes using each provider's published fees as inputs. The assumptions are a $50 average ticket, domestic U.S. cards, standard published rates, no disputes, no currency conversion and no negotiated pricing.\n\n- Small shop, 200 sales a month ($10,000): Stripe $350, Authorize.net $375, Shopify Payments (Basic plan) $379, Square Free $390, Square Plus $399, Paddle $600, Stripe Managed Payments $700.\n- Growing shop, 1,200 sales a month ($60,000): Stripe $2,100, Authorize.net $2,125, Shopify Payments (Basic plan) $2,129, Square Plus $2,149, Square Free $2,340, Paddle $3,600, Stripe Managed Payments $4,200.\n- Established shop, 4,000 sales a month ($200,000): Stripe $7,000, Authorize.net $7,025, Shopify Payments (Basic plan) $7,029, Square Plus $7,049, Square Free $7,800, Paddle $12,000, Stripe Managed Payments $14,000.\n\nStripe is the lowest-cost pick in all three scenarios. Authorize.net, Shopify Payments and Square Plus match Stripe's 2.9% + 30¢ and add $25, $29 or $49 a month, so their gap stays fixed at every size. Square Free's gap grows with volume, from $40 to $800 a month.\n\nBreak-even counterexample: Helcim's published margin of 0.50% + 25¢ on keyed and online sales up to $50,000 a month is $0.50 on a $50 sale, against Stripe's $1.75. Helcim costs less whenever average interchange stays under $1.25 per $50 sale (2.5% of the ticket), and Stripe costs less above that. At $60,000 and $200,000 a month, Helcim's margin falls to $0.425 and $0.375 per sale, which moves the flip point to 2.65% and 2.75%.\n\nFive checks decide which Stripe alternative costs least for a given shop:\n\n- Monthly fee against rate. A $49 fee pays for a 0.4-point rate cut only above $12,250 in monthly sales ($49 divided by 0.004), or 245 sales at a $50 ticket.\n- Ticket size. Clover's keyed-in 3.5% + 10¢ costs less than Stripe's 2.9% + 30¢ on any ticket below $33.33.\n- International buyers. Stripe adds 1.5% for international cards and 1% for currency conversion, so a $50 international sale with conversion costs $3.00 on Stripe.\n- Disputes. Stripe charges $15 per dispute, equal to its fees on about 8.6 sales at $50.\n- Merchant of record. Paddle and Stripe Managed Payments both sell this way, at $3.00 and $3.50 per $50 sale.\n\nOur [sales tax vs. use tax](/compare/sales-tax-vs-use-tax/) comparison covers sales tax rules. For recording processing fees in the books, the [best accounting software for freelancers](/roundup/best-accounting-software-for-freelancers/) roundup lists accounting tools."
+  },
+  "alternatives": [
+    {
+      "heading": "Square Pricing, Plans and Fit",
+      "body": "Square publishes two online card rates, each tied to a plan billed per location. The Free plan charges 3.3% + 30¢ per online sale at $0 a month, and the Plus plan charges 2.9% + 30¢ at $49 a month.\n\nOn a $50 sale, Square Free costs $1.95 and Square Plus costs $1.75, the same as Stripe. Square Plus saves 0.4% of online sales, so it beats Square Free once monthly online sales pass $12,250. At a $50 ticket, that line sits at 245 sales a month.\n\nOur model lands on both sides of that line. At 200 sales, Square Free costs $390 and Square Plus costs $399. At 1,200 sales, Square Plus costs $2,149 and Square Free costs $2,340, a $191 monthly gap.\n\nSquare Free fits people who want no monthly fee and accept $0.20 more per $50 sale than Stripe charges. Square Plus fits people above 245 online sales a month who want to run payments through Square. Because both monthly fees apply per location, two locations on Square Plus cost $98 a month.\n\nAgainst Stripe, neither Square plan wins on online cost. Square Free runs $40 to $800 a month higher across our three scenarios. Square Plus runs $49 a month ($588 a year) higher at every size, because its rate matches Stripe's and Stripe charges no monthly fee."
+    },
+    {
+      "heading": "Helcim Pricing, Plans and Fit",
+      "body": "Helcim prices keyed and online sales as interchange plus a published margin. On $0 to $50,000 of monthly volume, the margin is 0.50% + 25¢. Helcim does not publish interchange as a number, and Helcim is not part of the modeled totals.\n\nThe margin alone is $0.50 on a $50 sale, against Stripe's flat $1.75. Helcim's full cost is that $0.50 plus whatever interchange the sale carries. As an illustration with assumed interchange, a $50 sale at 2.0% interchange ($1.00) would cost $1.50 on Helcim, or $0.25 under Stripe.\n\nAt 3.0% interchange ($1.50), the same sale would cost $2.00 on Helcim, or $0.25 over Stripe. On 200 sales a month, that $0.25 swing equals $50 a month in either direction.\n\nIn the modeled counterexample, Helcim's margin is $0.425 per $50 sale at $60,000 a month and $0.375 at $200,000. That raises the interchange ceiling to 2.65% and 2.75% of the ticket before Stripe becomes cheaper.\n\nHelcim fits people whose average interchange runs under 2.5% of the ticket and who accept a bill that moves with interchange. The shortfall against Stripe is predictability. Stripe's flat 2.9% + 30¢ gives a per-sale cost that can be computed from the ticket, so a seller who wants a fixed per-sale cost gets it from Stripe."
+    },
+    {
+      "heading": "Authorize.net Pricing, Plans and Fit",
+      "body": "Authorize.net's All-in-One plan charges $25 a month plus 2.9% + 30¢ per transaction. The per-sale rate matches Stripe's exactly, so a $50 sale costs $1.75 on either one.\n\nThe difference is the $25 monthly fee, which adds $300 a year at every volume. In our model, Authorize.net totals $375 at 200 sales, $2,125 at 1,200 sales and $7,025 at 4,000 sales, each $25 above Stripe.\n\nSpread across sales, the $25 fee adds 12.5¢ to each of 200 sales but about 0.6¢ to each of 4,000. \n\nAuthorize.net fits people who want an Authorize.net account and accept $300 a year above Stripe's published cost. On published fees alone, Authorize.net never undercuts Stripe, because the rates match and Stripe charges no monthly fee."
+    },
+    {
+      "heading": "Shopify Payments Pricing, Plans and Fit",
+      "body": "Shopify Payments pairs with a Shopify plan. The Basic plan costs $29 a month, and Shopify Payments card rates start at 2.9% + 30¢.\n\nOur model uses that starting rate, so its totals are the lowest a Basic plan seller would see: $379 at 200 sales, $2,129 at 1,200 sales and $7,029 at 4,000 sales. Each total is $29 a month ($348 a year) above Stripe. Any sale billed above the starting rate raises those totals.\n\nThe $29 is the Shopify Basic plan fee itself. A seller who pays for the Basic plan anyway sees a card rate floor that matches Stripe's $1.75 per $50 sale. A seller with no other use for Shopify pays $348 a year more than Stripe for the same starting rate.\n\nShopify Payments fits people who run their store on the Shopify Basic plan. It falls short of Stripe for sellers outside Shopify, and the published \"from\" wording means the starting rate is the only Shopify Payments rate we could model."
+    },
+    {
+      "heading": "Paddle Pricing, Plans and Fit",
+      "body": "Paddle charges 5% + 50¢ per transaction as an all-in-one merchant of record, with no monthly fee. On a $50 sale that is $3.00, or $1.25 more than Stripe's standard rate.\n\nStripe sells its own merchant-of-record option, Stripe Managed Payments. It charges Stripe's 2.9% + 30¢ Payments fee plus 3.5% per transaction, or 6.4% + 30¢ in total, which is $3.50 on a $50 sale and $0.50 more than Paddle.\n\nOur model shows the merchant-of-record premium at each size. Paddle totals $600, $3,600 and $12,000 a month across the three scenarios, and Stripe Managed Payments totals $700, $4,200 and $14,000. Against Stripe's standard rate, Paddle costs $3,000 to $60,000 a year more.\n\nBetween the two merchant-of-record options, Paddle costs less on tickets above $14.29 and Stripe Managed Payments costs less below it. At $14.29, both formulas come to about $1.21 per sale.\n\nAt 6.4% + 30¢, a $45 order pays $3.18 in fees, which takes 28.3% of a 25% gross margin and leaves $8.07. A $120 order pays $7.98 and gives up 26.6% of that margin. A $250 order pays $16.30 and gives up 26.1%.\n\nOur captured facts do not itemize what the merchant-of-record premium buys. For that reason, compare Paddle against Stripe Managed Payments, the other merchant-of-record option on this page, instead of against Stripe's standard rate. Paddle fits people who want an all-in-one merchant of record and sell tickets above $14.29."
+    },
+    {
+      "heading": "Clover Pricing, Plans and Fit",
+      "body": "Clover advertises rates as low as 2.3% + 10¢ and lists keyed-in sales at 3.5% + 10¢ on its retail plans, alongside device plans. Our captured facts do not state which sales qualify for the 2.3% rate or give a device plan price as a number. Clover sits outside the modeled totals.\n\nOn a $50 keyed-in sale, Clover's 3.5% + 10¢ costs $1.85, or $0.10 more than Stripe. The lower 10¢ fixed fee helps small tickets, so Clover's keyed-in rate matches Stripe's at a $33.33 ticket and costs less below it. On a $20 keyed-in sale, Clover charges 80¢ and Stripe charges 88¢.\n\nAt the advertised 2.3% + 10¢, a $50 sale would cost $1.25, or $0.50 under Stripe. That saving applies only to sales that qualify for the lowest rate.\n\n Its gap against Stripe is the unmodeled device plan cost. Add any device plan cost to Clover's per-sale fees before comparing a month's total with Stripe's no-monthly-fee pricing."
+    },
+    {
+      "heading": "Who This Is Not For",
+      "body": "This comparison does not fit businesses with negotiated custom pricing or enterprise volume commitments. The model uses only standard published rates and excludes custom volume discounts and implementation labor.\n\nFor sellers with many international buyers, the modeled totals understate Stripe's cost. Stripe adds 1.5% on international cards and 1% on currency conversion, which lifts a $50 sale from $1.75 to as much as $3.00. Sellers in that position can recompute each scenario at the higher Stripe rate before reading the ranking.\n\nThe model also assumes zero disputes, and Stripe charges $15 for each one. It covers online card sales only, so in-person sellers get no ranking here, and our [comparison hub](/compare/) lists other head-to-head pages. Sellers looking for funding instead of a card processor can start with the [small business financing guide](/guides/small-business-financing-guide/)."
+    },
+    {
+      "heading": "What Would Change Our Answer",
+      "body": "The ranking rests on published rates as of November 28, 2026. Any of these changes would move it:\n\n- Stripe raising its 2.9% + 30¢ standard rate or adding a monthly fee would let the matched-rate rivals tie or win.\n- A rival with a monthly fee needs a rate cut equal to that fee divided by monthly volume to tie Stripe. For Authorize.net's $25, that is 0.25 points at $10,000 a month and 0.0125 points at $200,000.\n- Square dropping its Free plan online rate to 2.9% + 30¢ would tie Stripe at every size.\n- Helcim publishing an average interchange figure under 2.5% would make Helcim the cheaper pick at $50 tickets up to $50,000 a month.\n- A fee change at Paddle or Stripe Managed Payments would move the $14.29 crossover between the two merchant-of-record options.\n\nUntil one of those changes lands, Stripe holds the lowest modeled cost for domestic online card sales at a $50 ticket."
+    }
+  ],
+  "stillBetterFit": {
+    "heading": "When Stripe Is Still the Better Fit",
+    "body": "Stripe is the better fit for an online seller paying standard rates on domestic cards. Its 2.9% + 30¢ with no setup or monthly fees produced the lowest total in all three modeled scenarios. Stripe's best fit is developers and online sellers.\n\nAt 200 sales a month, Stripe's $350 total runs $25 to $49 below the matched-rate rivals and $40 below Square Free. At 4,000 sales, the matched-rate gap stays at $25 to $49, and the Square Free gap reaches $800 a month.\n\nStripe also offers a merchant-of-record option through Stripe Managed Payments at 6.4% + 30¢. That costs $0.50 more than Paddle on a $50 sale but less than Paddle on tickets under $14.29.\n\nTwo counterexamples cut against Stripe. A seller whose average interchange stays under 2.5% of a $50 ticket pays less on Helcim, and Clover's keyed-in rate beats Stripe below a $33.33 ticket before device plan costs. Outside those two cases, the modeled numbers favor Stripe."
+  },
+  "verdict": "Stripe has the lowest published cost for domestic online card sales at a $50 ticket: $350, $2,100 and $7,000 a month across our three modeled shop sizes. Authorize.net, Shopify Payments and Square Plus match its rate and add $25 to $49 a month. Square Free, Paddle and Stripe Managed Payments charge more per sale. Switching saves money in two cases: Helcim when average interchange stays under 2.5% of the ticket, and Clover's keyed-in rate on tickets under $33.33 before device plan costs. Shopify Payments fits sellers already paying for the Basic plan. Multiply last month's sale count and average ticket by each published rate above, then shortlist only the Stripe alternatives that come in under Stripe's total.",
+  "faqs": [
+    {
+      "question": "Does Square charge more than Stripe for online payments?",
+      "answer": "Square's Free plan charges more per online sale than Stripe: 3.3% + 30¢ against 2.9% + 30¢, or $1.95 against $1.75 on a $50 sale. Square's Plus plan matches Stripe's rate but adds $49 a month per location. In our model, Square Free costs $40 to $800 a month more than Stripe, and Square Plus costs $49 a month more at every size."
+    },
+    {
+      "question": "When does Square's Plus plan beat its Free plan?",
+      "answer": "Square Plus beats Square Free once monthly online sales pass $12,250. The Plus plan saves 0.4% of sales and costs $49 a month, and $49 divided by 0.004 is $12,250. At a $50 ticket, that is 245 sales a month. In our model, Square Free wins at 200 sales ($390 against $399) and Square Plus wins at 1,200 sales ($2,149 against $2,340)."
+    },
+    {
+      "question": "Is Paddle cheaper than Stripe Managed Payments?",
+      "answer": "Paddle costs less than Stripe Managed Payments on tickets above $14.29. Paddle charges 5% + 50¢ and Stripe Managed Payments charges 6.4% + 30¢, so a $50 sale costs $3.00 on Paddle and $3.50 on Stripe Managed Payments. Below $14.29, the lower 30¢ fixed fee makes Stripe Managed Payments cheaper. Both cost more than Stripe's standard $1.75 per $50 sale."
+    },
+    {
+      "question": "Is Helcim cheaper than Stripe?",
+      "answer": "Helcim is cheaper than Stripe when average interchange stays under 2.5% of a $50 ticket. Helcim publishes a margin of 0.50% + 25¢ on keyed and online sales up to $50,000 a month, which is $0.50 per $50 sale before interchange. Helcim does not publish interchange as a number, so its exact bill cannot be modeled in advance the way Stripe's flat rate can."
+    },
+    {
+      "question": "What does Stripe charge for international cards and disputes?",
+      "answer": "Stripe adds 1.5% for international cards and 1% for currency conversion on top of its 2.9% + 30¢ domestic rate, and it charges $15 per dispute. A $50 international sale with currency conversion costs $3.00 at 5.4% + 30¢. One $15 dispute equals Stripe's fees on about 8.6 domestic sales at $50."
+    }
+  ],
+  "related": [
+    {
+      "label": "PayPal Alternatives",
+      "href": "/alternatives/paypal/"
+    },
+    {
+      "label": "Venmo Alternatives",
+      "href": "/alternatives/venmo/"
+    },
+    {
+      "label": "Best Invoicing Apps for Freelancers",
+      "href": "/roundup/best-invoicing-apps-for-freelancers/"
+    },
+    {
+      "label": "Best Accounting Software for Freelancers",
+      "href": "/roundup/best-accounting-software-for-freelancers/"
+    },
+    {
+      "label": "Small Business Financing Guide",
+      "href": "/guides/small-business-financing-guide/"
+    },
+    {
+      "label": "Sales Tax vs. Use Tax",
+      "href": "/compare/sales-tax-vs-use-tax/"
+    },
+    {
+      "label": "All Comparisons",
+      "href": "/compare/"
+    }
+  ],
+  "reviewerNote": {
+    "label": "Publisher's Take",
+    "note": "After month one, the fee that stings is usually the first $15 dispute or the first batch of international cards at an extra 1.5%. If a large share of your buyers are overseas, price those lines before moving, and skip the switch if a $25 monthly gateway fee would outweigh the rate you save."
+  },
+  "scenarioTable": {
+    "headers": [
+      "Scenario",
+      "Stripe",
+      "Square Online (Free plan)",
+      "Square Online (Plus plan)",
+      "Authorize.net",
+      "Shopify Payments (Basic plan)",
+      "Paddle",
+      "Stripe Managed Payments"
+    ],
+    "rows": [
+      [
+        "Small online shop: 200 sales a month ($10,000 at a $50 average ticket)",
+        "$350.00",
+        "$390.00",
+        "$399.00",
+        "$375.00",
+        "$379.00",
+        "$600.00",
+        "$700.00"
+      ],
+      [
+        "Growing shop: 1,200 sales a month ($60,000)",
+        "$2,100.00",
+        "$2,340.00",
+        "$2,149.00",
+        "$2,125.00",
+        "$2,129.00",
+        "$3,600.00",
+        "$4,200.00"
+      ],
+      [
+        "Established shop: 4,000 sales a month ($200,000)",
+        "$7,000.00",
+        "$7,800.00",
+        "$7,049.00",
+        "$7,025.00",
+        "$7,029.00",
+        "$12,000.00",
+        "$14,000.00"
+      ]
+    ]
+  }
+}

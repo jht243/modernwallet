@@ -1,0 +1,17 @@
+{
+  "generated": [
+    "full"
+  ],
+  "jobId": "mindmap-alternatives-2026-11-28",
+  "previousJobs": [
+    {
+      "generated": [],
+      "jobId": "mindmap-alternatives-2026-11-28",
+      "repairs": [],
+      "route": "/alternatives/expensify/"
+    }
+  ],
+  "repairs": [],
+  "route": "/alternatives/expensify/",
+  "updatedAt": "2026-11-28T16:56:24Z"
+}

@@ -5720,6 +5720,473 @@
       "indexnow": "200",
       "seoUpgraded": "2026-11-23",
       "bodyWords": 3160
+    },
+    {
+      "vendor": "Stripe",
+      "product": "Stripe",
+      "officialUrl": "https://stripe.com/pricing",
+      "targetQuery": "stripe alternatives",
+      "demand": {
+        "volume": 1900,
+        "kd": "33",
+        "source": "semrush"
+      },
+      "category": "payments",
+      "priority": 1900,
+      "source": "discovery 2026-11-28",
+      "id": "alt-stripe-com-pricing",
+      "createdAt": "2026-11-28T16:39:29+00:00",
+      "history": [
+        {
+          "at": "2026-11-28T16:39:29+00:00",
+          "status": "eligible",
+          "note": "added: discovery 2026-11-28"
+        },
+        {
+          "at": "2026-11-28T16:39:45+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-28"
+        },
+        {
+          "at": "2026-11-28T17:01:57+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-28T17:09:18+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
+        }
+      ],
+      "status": "in_progress",
+      "updatedAt": "2026-11-28T17:01:57+00:00",
+      "claimedOn": "2026-11-28",
+      "attempts": 1,
+      "lastNextAt": "2026-11-28T16:39:45+00:00",
+      "writer": "content_gen",
+      "slug": "stripe",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Shopify Payments | Shopify Basic plan at $29 a month. Card rates from 2.9% + 30¢. (also: 'The Basic plan costs $29 a month'; '$379 at 200 sales, $2,129 ... $7,029'; 'Each total is $29 a month ($348 a year) above Stripe')",
+            "problem": "shopify.com/pricing shows Basic at $29/mo only with 'Pay yearly'; 'Pay monthly' is $39 USD/mo. The page states $29 with no billing qualifier, so a monthly-billed seller pays $389/$2,139/$7,039 and $10 more a month than stated.",
+            "fix": "State the billing term everywhere: 'Basic plan at $29 a month billed yearly ($39 billed monthly)'. Keep the modeled totals but label them as yearly-billing totals, or add the $39 monthly figures ($389, $2,139, $7,039; $39 a month = $468 a year above Stripe).",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "chooseSection body: '- Small shop, 200 sales a month ($10,000): Stripe $350, ...' (bullet list, no pipe table)",
+            "problem": "Page rule 5(b) makes a structured 3-scenario TABLE (pipe/HTML) mandatory in the section right below the comparison table. The rendered page carries only one <table> (the comparison table); the three scenarios are a bullet list. Math in the bullets replays correctly.",
+            "fix": "Convert the three scenario bullets into a GFM pipe table (rows = products, columns = the three scenarios) in the chooseSection body, keeping the same figures; leave the break-even paragraph as is.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Our captured facts do not state which sales qualify for the 2.3% rate or give a device plan price as a number. Clover sits outside the modeled totals. / Its gap against Stripe is the unmodeled device plan cost.",
+            "problem": "Clover's own retail pricing page (clover.com/pricing/retail) publishes device plans: Basic $16/mo for 36 months or $349; Standard $180/mo for 36 months or $1,899 + $84.95/mo; Advanced $240/mo for 36 months or $2,648 + $104.90/mo, with 2.6% + 10¢ on Basic and 2.3% + 10¢ on Standard/Advanced tapped. The page says the figure is not captured, and the Clover section also has a stray leading space and a dead-end last sentence.",
+            "fix": "Add the published Clover device-plan prices (or state them as the retail-page facts) and drop 'Our captured facts do not state...'. If Clover stays out of the model, say so because the rate applies to card-present sales, not because the price is missing. Remove the leading space before 'Its gap...'.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F4",
+            "quote": "Helcim can come in lower when average interchange stays under 2.5% of the ticket / Helcim publishing an average interchange figure under 2.5% would make Helcim the cheaper pick",
+            "problem": "helcim.com/pricing states that for most merchants the total effective rate on keyed and online payments is below 2.5%, which the page omits. That published figure bears directly on the Helcim break-even and the 'What Would Change Our Answer' bullet (which implies no such figure exists). Arithmetic (0.50% + 25¢ = $0.50 on $50; flip at 2.5%, 2.65%, 2.75% at the $50K-$100K and $100K-$500K keyed tiers 0.45% + 20¢ and 0.35% + 20¢) replays correctly.",
+            "fix": "Add one sentence citing Helcim's own published claim (total keyed/online effective rate below 2.5% for most merchants) and adjust the 'What Would Change Our Answer' Helcim bullet to match.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F5",
+            "quote": "Sellers who want an Authorize.net account and accept $300 a year above Stripe's published cost / (pricing cell for Stripe omits +0.5% for manually entered cards)",
+            "problem": "Minor: Stripe's pricing page adds 0.5% for manually entered cards and Authorize.net marks its plan 'Subject to eligibility'; neither caveat appears. Advisory only; the modeled assumptions are otherwise stated.",
+            "fix": "Optionally add '+0.5% for manually entered cards' to the Stripe cell and 'subject to eligibility' to the Authorize.net cell.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-28T17:09:18+00:00"
+      }
+    },
+    {
+      "vendor": "Expensify",
+      "product": "Expensify",
+      "officialUrl": "https://www.expensify.com/pricing",
+      "targetQuery": "expensify alternatives",
+      "demand": {
+        "volume": 1000,
+        "kd": "19",
+        "source": "semrush"
+      },
+      "category": "small-business-tools",
+      "priority": 1000,
+      "source": "discovery 2026-11-28",
+      "id": "alt-expensify-com-pricing",
+      "createdAt": "2026-11-28T16:39:29+00:00",
+      "history": [
+        {
+          "at": "2026-11-28T16:39:29+00:00",
+          "status": "eligible",
+          "note": "added: discovery 2026-11-28"
+        },
+        {
+          "at": "2026-11-28T16:39:45+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-28"
+        },
+        {
+          "at": "2026-11-28T17:01:57+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-28T17:09:19+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
+        }
+      ],
+      "status": "in_progress",
+      "updatedAt": "2026-11-28T17:01:57+00:00",
+      "claimedOn": "2026-11-28",
+      "attempts": 1,
+      "lastNextAt": "2026-11-28T16:39:45+00:00",
+      "writer": "content_gen",
+      "slug": "expensify",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Sage Expense Management lists only its annual rate of $11.99 per active user / No monthly-billing rate appears in the pricing facts we captured. / Sage Expense Management Growth at $1,199",
+            "problem": "Incorrect plan fact. The Sage Expense Management (formerly Fyle) pricing page has a Monthly/Annually toggle: Growth is $14.99 per active user per month billed monthly and $11.99 billed annually (page JSON-LD also lists 14.99, 'Monthly billing'). The page models Sage on annual billing while modeling Zoho and Rydoo on monthly, and compares 'Rydoo's $12 monthly rate ... one cent above Sage' across different billing terms.",
+            "fix": "Add the $14.99 monthly rate (5/25/100 members: $74.95, $374.75, $1,499 a month), correct the FAQ and Sage section, state both terms in the Sage table cell, and re-do the Rydoo vs Sage comparison on like billing terms. Update the 'more than double Expensify' claim (still true at either term).",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "(sentences 9-20) 'Teams that only need a written record can start with our expense report template ... Below 5 users Expensify beats both, and a fourth member pushes a team from Zoho Expense Free to Standard at $16 a month.'",
+            "problem": "monotone-rhythm (hard fail): 12 consecutive sentences (intro paragraph 3 through the break-even counterexample) all fall in the 15+ word band. Whole page has 2 short, 20 medium and 86 long sentences of 108, median 19. Gate fails any run of 10 in one band.",
+            "fix": "Vary sentence length in the intro, the counterexample paragraph and the four-checks list: split two or three long sentences into 5-8 word statements and tighten others to 9-14 words. Do not pad.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "chooseSection body: '- Small shop, 200 sales a month ($10,000): Stripe $350, ...' (bullet list, no pipe table)",
+            "problem": "Page rule 5(b) makes a structured 3-scenario TABLE (pipe/HTML) mandatory in the section right below the comparison table. The rendered page carries only one <table> (the comparison table); the three scenarios are a bullet list. Math in the bullets replays correctly.",
+            "fix": "Convert the three scenario bullets into a GFM pipe table (rows = products, columns = the three scenarios) in the chooseSection body, keeping the same figures; leave the break-even paragraph as is.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "so the totals sit side by side in the table below / Each of these would change the scenario totals in the table above",
+            "problem": "The comparison table lists prices, not 5/25/100-member totals; the totals live only in the bullet list in 'How to Choose', so these two sentences misdescribe the page.",
+            "fix": "After converting the scenario bullets to a table (F3), reword to 'the totals sit side by side in the scenario table below' and 'in the scenario table above'.",
+            "hard_blocker": false
+          },
+          {
+            "id": "F5",
+            "quote": "Ramp lists two tiers: a Free plan at $0 per user per month and a Plus plan at $15 per user per month plus a platform fee based on team size.",
+            "problem": "Minor: sentence is 31 words (over the 30-word run-on line) and Ramp's page notes 'Save 20% with annual billing' for Plus, not mentioned. Publisher's Take for this route ('don't sign with anyone who bills a five-seat minimum') is directive advice, which the site adapter says these pages never give.",
+            "fix": "Split the Ramp sentence, optionally add the 20% annual-billing note, and soften the reviewer note to a fits-people-who phrasing.",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-28T17:09:19+00:00"
+      }
+    },
+    {
+      "vendor": "Square",
+      "product": "Square",
+      "officialUrl": "https://squareup.com/us/en/pricing",
+      "targetQuery": "square alternatives",
+      "demand": {
+        "volume": 480,
+        "kd": "26",
+        "source": "semrush"
+      },
+      "category": "payments",
+      "priority": 480,
+      "source": "discovery 2026-11-28",
+      "id": "alt-squareup-com-us-en-pricing",
+      "createdAt": "2026-11-28T16:39:29+00:00",
+      "history": [
+        {
+          "at": "2026-11-28T16:39:29+00:00",
+          "status": "eligible",
+          "note": "added: discovery 2026-11-28"
+        },
+        {
+          "at": "2026-11-28T16:39:45+00:00",
+          "status": "in_progress",
+          "note": "claimed for 2026-11-28"
+        },
+        {
+          "at": "2026-11-28T17:01:57+00:00",
+          "status": "in_progress",
+          "note": "drafted",
+          "fields": [
+            "slug",
+            "writer"
+          ]
+        },
+        {
+          "at": "2026-11-28T17:09:18+00:00",
+          "status": "in_progress",
+          "note": "audit FAIL"
+        }
+      ],
+      "status": "in_progress",
+      "updatedAt": "2026-11-28T17:01:57+00:00",
+      "claimedOn": "2026-11-28",
+      "attempts": 1,
+      "lastNextAt": "2026-11-28T16:39:45+00:00",
+      "writer": "content_gen",
+      "slug": "square",
+      "audit": {
+        "reviewer": "audit-subagent",
+        "verdict": "FAIL",
+        "findings": [
+          {
+            "id": "F1",
+            "quote": "Clover | ... Sold with device plans; device plan cost not in our source snapshot. / Our source snapshot lists Clover's card rates without the monthly cost of its device plans, so Clover sits outside the scenario model.",
+            "problem": "Deferral in a data cell (hard-fail gate) and incorrect: the cited source clover.com/pricing/retail publishes the device plans: Basic $16/mo for 36 months or $349; Standard $180/mo for 36 months or $1,899 + $84.95/mo; Advanced $240/mo for 36 months or $2,648 + $104.90/mo. Rates 2.6% + 10¢ (Basic) and 2.3% + 10¢ (Standard/Advanced) match. The Clover section, FAQ ('monthly cost is not in our snapshot'), verdict and 'Missing prices' bullet all rest on the missing number.",
+            "fix": "Put the published device-plan prices in the Clover cell and rewrite the Clover section, FAQ, verdict and 'What Would Change' bullet around them (e.g. $16/mo Basic adds $16 to a month, so Retail Basic at 500 sales = $440 + $16 = $456 vs Square Free $465). Recompute and state the Clover totals or explain why a device plan is not comparable to a $0-plan scenario.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F2",
+            "quote": "Toast | Restaurant POS. ... Card percentages not in our source snapshot. / Our source snapshot does not include Toast's card percentages",
+            "problem": "Deferral in a data cell. pos.toasttab.com/pricing publishes no card percentages (Starter Kit '$0/month ... through a higher card processing rate'; other plans 'Get a Quote'); that is the fact, not a snapshot gap. Also the cell/section/FAQ reference 'our source snapshot' (internal-process wording) instead of Toast's page.",
+            "fix": "Replace with the fact: 'Card rates not published on Toast's pricing page; Starter Kit uses a higher card rate, quote-based for other plans.' Reword the Toast section and FAQ without 'our source snapshot'.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F3",
+            "quote": "Shopify POS | Shopify Basic plan $29/month; in-person card rate 2.6% + 10¢ (also '$29 Shopify Basic fee', 'Shopify POS Basic $469 / $2,669 / $8,829')",
+            "problem": "shopify.com/pricing shows $29/mo only with 'Pay yearly'; 'Pay monthly' is $39 USD/mo. The billing term is missing, so the scenario totals are yearly-billing figures presented as the plan price (monthly billing adds $10 a month: $479, $2,679, $8,839).",
+            "fix": "Write '$29/month billed yearly ($39 billed monthly)' in the cell, section, bullets and scenario lines, and state which term the totals use.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F4",
+            "quote": "Stripe Terminal costs least in all three scenarios, saving ... (sentences 62-78: 'In our model, SumUp saves $25 a month ...' to 'Our snapshot does not give interchange as one figure ...')",
+            "problem": "monotone-rhythm (hard fail): body-prose sentences 1-10, 38-52 (15), 62-78 (17) and 110-121 (12) are each all in the 15+ word band, and sentences 49-53 have lengths [22,21,21,23,20] (5 within 3 words). Overall distribution short 19 / medium 15 / long 98 of 132, median 19.5. The gate fails any run of 10 in one band.",
+            "fix": "Vary real sentence length inside the SumUp, Shopify POS, Helcim, Toast and Clover sections and the 'When Square Is Still the Better Fit' / FAQ block: split a few arithmetic sentences into short ones and merge others to 9-14 words. Do not pad.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F5",
+            "quote": "Break-even counterexample: ... (0.027 x 100 + 0.05 = 2.75; 0.026 x 100 + 0.15 = 2.75). / (0.027 x 50 + 0.05 = 1.40; 0.026 x 50 + 0.10 = 1.40)",
+            "problem": "Over-long and over-dense sentences (35, 39, 35, 36, 35 words) with inline arithmetic and semicolon-joined formulas; fails the over-30-word run-on ban in `_anti-ai-language.md` GATE 1. Math itself is right (Square Premium vs Stripe Terminal flips at $33.33; 149 / 0.08 = 1,863 sales).",
+            "fix": "Break each into two sentences and move the formula to its own short sentence; replace the semicolon inside the parenthetical with 'and'.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F6",
+            "quote": "chooseSection body: '- Small shop, 200 sales a month ($10,000): Stripe $350, ...' (bullet list, no pipe table)",
+            "problem": "Page rule 5(b) makes a structured 3-scenario TABLE (pipe/HTML) mandatory in the section right below the comparison table. The rendered page carries only one <table> (the comparison table); the three scenarios are a bullet list. Math in the bullets replays correctly.",
+            "fix": "Convert the three scenario bullets into a GFM pipe table (rows = products, columns = the three scenarios) in the chooseSection body, keeping the same figures; leave the break-even paragraph as is.",
+            "hard_blocker": true
+          },
+          {
+            "id": "F7",
+            "quote": "The busy shop processes $1,080,000 a year ($90,000 x 12), above Square's $250,000 custom-rate level, so a quoted rate would replace the published Square figures",
+            "problem": "Square says only that sellers over $250,000 a year may be 'eligible for custom pricing'; 'would replace' overstates it. Also Stripe Terminal is called the 'lowest-cost Square alternative' while Helcim's own page says in-person effective rates are 'near or below 2%' (about 60¢ on $30), below Stripe Terminal's 86¢; Helcim is outside the model but the verdict reads as universal.",
+            "fix": "Change to 'could replace' and note Helcim's published in-person effective-rate statement beside the Stripe Terminal lead (already hedged 'in our model').",
+            "hard_blocker": false
+          }
+        ],
+        "recordedAt": "2026-11-28T17:09:18+00:00"
+      }
+    },
+    {
+      "vendor": "Current",
+      "product": "Current",
+      "officialUrl": "https://current.com/",
+      "targetQuery": "current alternatives",
+      "demand": {
+        "volume": 480,
+        "kd": "12",
+        "source": "semrush"
+      },
+      "category": "banking",
+      "priority": 480,
+      "source": "discovery 2026-11-28",
+      "id": "alt-current-com",
+      "createdAt": "2026-11-28T16:39:29+00:00",
+      "history": [
+        {
+          "at": "2026-11-28T16:39:29+00:00",
+          "status": "eligible",
+          "note": "added: discovery 2026-11-28"
+        }
+      ],
+      "status": "eligible",
+      "updatedAt": "2026-11-28T16:39:29+00:00",
+      "precheck": {
+        "checkedAt": "2026-11-28T16:39:29+00:00",
+        "checkedUrl": "https://current.com/",
+        "chars": 29171
+      }
+    },
+    {
+      "vendor": "Bill.com",
+      "product": "Bill.com",
+      "officialUrl": "https://www.bill.com/pricing",
+      "targetQuery": "bill.com alternatives",
+      "demand": {
+        "volume": 480,
+        "kd": "74",
+        "source": "semrush"
+      },
+      "category": "small-business-tools",
+      "priority": 470,
+      "source": "discovery 2026-11-28",
+      "id": "alt-bill-com-pricing",
+      "createdAt": "2026-11-28T16:39:29+00:00",
+      "history": [
+        {
+          "at": "2026-11-28T16:39:29+00:00",
+          "status": "eligible",
+          "note": "added: discovery 2026-11-28"
+        }
+      ],
+      "status": "eligible",
+      "updatedAt": "2026-11-28T16:39:29+00:00",
+      "precheck": {
+        "checkedAt": "2026-11-28T16:39:29+00:00",
+        "checkedUrl": "https://www.bill.com/pricing",
+        "chars": 8443
+      }
+    },
+    {
+      "vendor": "Fundbox",
+      "product": "Fundbox",
+      "officialUrl": "https://fundbox.com/",
+      "targetQuery": "fundbox alternatives",
+      "demand": {
+        "volume": 50,
+        "kd": "6",
+        "source": "semrush"
+      },
+      "category": "business-lending",
+      "priority": 50,
+      "source": "discovery 2026-11-28",
+      "id": "alt-fundbox-com",
+      "createdAt": "2026-11-28T16:39:29+00:00",
+      "history": [
+        {
+          "at": "2026-11-28T16:39:29+00:00",
+          "status": "eligible",
+          "note": "added: discovery 2026-11-28"
+        }
+      ],
+      "status": "eligible",
+      "updatedAt": "2026-11-28T16:39:29+00:00",
+      "precheck": {
+        "checkedAt": "2026-11-28T16:39:29+00:00",
+        "checkedUrl": "https://fundbox.com/",
+        "chars": 7029
+      }
+    },
+    {
+      "vendor": "Bonsai",
+      "product": "Bonsai",
+      "officialUrl": "https://www.hellobonsai.com/pricing",
+      "targetQuery": "bonsai alternatives",
+      "demand": {
+        "volume": 40,
+        "kd": "3",
+        "source": "semrush"
+      },
+      "category": "freelancer-tools",
+      "priority": 40,
+      "source": "discovery 2026-11-28",
+      "id": "alt-hellobonsai-com-pricing",
+      "createdAt": "2026-11-28T16:39:29+00:00",
+      "history": [
+        {
+          "at": "2026-11-28T16:39:29+00:00",
+          "status": "eligible",
+          "note": "added: discovery 2026-11-28"
+        }
+      ],
+      "status": "eligible",
+      "updatedAt": "2026-11-28T16:39:29+00:00",
+      "precheck": {
+        "checkedAt": "2026-11-28T16:39:29+00:00",
+        "checkedUrl": "https://www.hellobonsai.com/pricing",
+        "chars": 16686
+      }
+    },
+    {
+      "vendor": "Wealthsimple",
+      "product": "Wealthsimple",
+      "officialUrl": "https://www.wealthsimple.com/en-us",
+      "targetQuery": "wealthsimple alternatives",
+      "demand": {
+        "volume": 40,
+        "kd": "10",
+        "source": "semrush"
+      },
+      "category": "investing",
+      "priority": 40,
+      "source": "discovery 2026-11-28",
+      "id": "alt-wealthsimple-com-en-us",
+      "createdAt": "2026-11-28T16:39:29+00:00",
+      "history": [
+        {
+          "at": "2026-11-28T16:39:29+00:00",
+          "status": "eligible",
+          "note": "added: discovery 2026-11-28"
+        }
+      ],
+      "status": "eligible",
+      "updatedAt": "2026-11-28T16:39:29+00:00",
+      "precheck": {
+        "checkedAt": "2026-11-28T16:39:29+00:00",
+        "checkedUrl": "https://www.wealthsimple.com/en-us",
+        "chars": 131432
+      }
+    },
+    {
+      "vendor": "Zoho Books",
+      "product": "Zoho Books",
+      "officialUrl": "https://www.zoho.com/us/books/pricing/",
+      "targetQuery": "zoho books alternatives",
+      "demand": {
+        "volume": 30,
+        "kd": "15",
+        "source": "semrush"
+      },
+      "category": "small-business-tools",
+      "priority": 30,
+      "source": "discovery 2026-11-28",
+      "id": "alt-zoho-com-us-books-pricing",
+      "createdAt": "2026-11-28T16:39:29+00:00",
+      "history": [
+        {
+          "at": "2026-11-28T16:39:29+00:00",
+          "status": "eligible",
+          "note": "added: discovery 2026-11-28"
+        }
+      ],
+      "status": "eligible",
+      "updatedAt": "2026-11-28T16:39:29+00:00",
+      "precheck": {
+        "checkedAt": "2026-11-28T16:39:29+00:00",
+        "checkedUrl": "https://www.zoho.com/us/books/pricing/",
+        "chars": 17517
+      }
     }
   ]
 }

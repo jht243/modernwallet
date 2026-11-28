@@ -75,6 +75,21 @@ export const REVIEWER_NOTES: Record<string, ReviewerNoteEntry> = {
     reviewedDate: "November 27, 2026",
     note: "The trap after the first month is that Upstart shows its fee only after a rate check, so a borrower who budgeted for the full loan amount can receive less cash than expected. Anyone who needs the exact proceeds fixed in advance, or needs a loan under $1,000, should walk away from this page and read each lender's disclosure first.",
   },
+  "/alternatives/square/": {
+    label: "Publisher's Take",
+    reviewedDate: "November 28, 2026",
+    note: "Switching card systems after month one means re-keying items, tax settings and saved customers, which costs real hours that a few cents per sale rarely repays. If your average ticket is above $100, Square's free plan already costs less per sale than Stripe Terminal, so staying put is the cheaper move.",
+  },
+  "/alternatives/expensify/": {
+    label: "Publisher's Take",
+    reviewedDate: "November 28, 2026",
+    note: "Teams under five people tend to pay for empty seats whenever a vendor sets a five-seat minimum, and that cost shows up on every invoice. Ramp's Plus tier adds a platform fee that isn't posted publicly, so its full total can only be known after a quote.",
+  },
+  "/alternatives/stripe/": {
+    label: "Publisher's Take",
+    reviewedDate: "November 28, 2026",
+    note: "After month one, the fee that stings is usually the first $15 dispute or the first batch of international cards at an extra 1.5%. If a large share of your buyers are overseas, price those lines before moving, and skip the switch if a $25 monthly gateway fee would outweigh the rate you save.",
+  },
 
 };
 

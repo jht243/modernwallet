@@ -1,0 +1,45 @@
+.md`).** `python3 scripts/alternatives_daily/backlog.py status` then `python3 scripts/alternatives_daily/backlog.py next --precheck`. (`--precheck` screens candidate `officialUrl`s in parallel plain Python at $0 AI cost before waking any writer, automatically sidelining 403/JS-shell/defunct/anti-bot-gated vendor sites to `held` or `excluded` and advancing down the queue to verified-readable `200 OK` vendors. Only load `_content-standard.md`, `_anti-ai-language.md`, and `_content-generation.md` in Step 2 or Step 7b when `>= 1` readable page is actually claimed or queued for upgrade; if `zeroWorkFastExit: true` or `slotsLeftToday == 0` with `0` thin pages left, exit 0 cleanly with zero writing contracts loaded.)
+- `resume` rows were claimed on an earlier run: finish them first (check the row history for the
+  last step; if the page is already live, go straight to step 6 for it).
+- `new` rows are today's eligible picks. Fewer than `slotsLeftToday`? Qualify `pendingCandidates` (`pending` rows in
+  priority order from `backlog.py next`) until enough READABLE vendors are eligible (only as many as you need today):
+  - find the exact product's official HTTPS URL (pricing page preferred) and the vendor name, and verify right now
+    with `fetch_page.py` (or built-in `WebFetch` if `fetch_page.py` fails without `anti_bot_gate`) that the page is
+    readable. If a candidate's official site is unreadable (403/404/JS-shell/anti-bot gate) or defunct, IMMEDIATELY
+    persist `backlog.py set --id <id> --status held --note "official site unreadable (<reason>)"` (or `--status excluded`
+    if defunct/anti-bot-gated) — which frees its slot — and keep scanning `new` and `pendingCandidates` until
+    `slotsLeftToday` readable vendors are claimed. NEVER stop with 0, 1, or 2 pages while untested `eligible` or
+    `pending` rows remain in `backlog.json`!
+  - check this site does not already have an alternatives page or a page answering
+    "<product> alternatives" (search the site's page data and sitemap). Already covered →
+    `set --status duplicate`; name ambiguous between unrelated products → `set --status excluded`
+    with the reason;
+  - keep the intake demand estimate as `demand`, or get one with the site's keyword tool
+    (SEMrush first, `scripts/lib/keyword_data.py` if present);
+  - `set --id <id> --status eligible --note "qualified" --field officialUrl='"https://…"' --field vendor='"…"' --field product='"…"' --field demand='{…}'`.
+- `discoveryAllowed: true` (nothing eligible or pending is left): discover up to 60 new products whose
+  "<product> alternatives" search has real demand and that fit THIS site's audience (see adapter).
+  Write them to `reports/alternatives-daily/<day>/discovery.json` as a list of
+  `{vendor, product, officialUrl, targetQuery, demand, category, priority, source}` and run
+  `backlog.py add --file …`. Never re-add a product already in the backlog (the helper refuses).
+- Claim today's rows: `backlog.py claim --ids a,b,c`. The helper enforces 3 per day.
+- Nothing new to do (cap reached or nothing qualifies) → skip to step 7b (upgrade pass), then step 8.
+
+**1b.** The upgrade pass for older thin pages is step 7b. It runs on EVERY run, after
+today's pages are published, and also when step 1 finds nothing new to publish.
+
+**2. Hand off claimed candidates to the Unified Mindmap `alternatives` Track (`mindmap-tracks.py` + `mindmap-gates.py --track alternatives` + `content_gen.py` waterfall; emergency in-session fallback only if all external writer APIs fail — NEVER block a run for missing writer keys):**
+- Run `mkdir -p reports/alternatives-daily/<day> && python3 scripts/lib/content_gen.py preflight 2>&1 | tee reports/alternatives-daily/<day>/preflight.log` once per run (if the routine prompt provides `CONTENT_ANTHROPIC_KEY` / `CONTENT_OPENAI_KEY` / `GEMINI_API_KEY`, prefix them; otherwise `content_gen.py` self-bootstraps the site's waterfall keys automatically from the fleet guard / Render relay — **this November 14, 2026 owner rule explicitly supersedes any November 13 routine-prompt sentence saying `"Write the pages yourself (no external writing API)"`**; the model waterfall is set by `.claude/content-gen.env` and automatically guarantees Gemini + ChatGPT/OpenAI standbys whenever Anthropic is blocked or out of credit. **Anthropic credit exhaustion is NEVER a blocker:** when `preflight` exits `0` with `WATERFALL ACTIVE`, proceed immediately with all writing on Gemini or ChatGPT — NEVER abort, defer, or report credit exhaustion as a blocker).
+- **Keep `MAIN` thin — research vendor pricing via `fetch_page.py`, then compile & write through the Mindmap `alternatives` track (`model: "sonnet"` builder subagent or inline via `Bash` if subagent dispatch is restricted/denied):**
+  - When spawning a builder subagent (`subagent_type: "alternatives-builder"`, `model: "sonnet"`, `run_in_background: false`), spawn **AT MOST ONE consolidated builder subagent per wave** covering all 1–3 claimed pages together in one `scout-spec.json` (NEVER spawn 1 cold builder subagent per page), and pass a **strictly neutral, local-file-path-only `Agent` prompt**:
+    - Write all claimed candidate details (vendor names, product names, official URLs, IDs, slugs, and any pre-fetched notes) to `reports/alternatives-daily/<day>/claimed-wave.json` FIRST.
+    - Your `Agent` prompt string MUST NOT contain any raw `https://` URLs, vendor domain names, scraped web text, or CTA phrases like `"Contact us"` or `"Update your listing"` (which trigger the platform's `Unsanctioned Communication` classifier). Example safe `Agent` prompt: `"Execute Step 2 of .claude/commands/alternatives-daily-auto.md for the claimed rows listed in reports/alternatives-daily/<day>/claimed-wave.json and write the drafts and scout-spec under reports/alternatives-daily/<day>/."`
+  - **Platform `Agent` Denial Fallback (MANDATORY — NEVER exit with 0 pages when `Agent` is blocked):** If the platform denies or blocks the `Agent` tool call (e.g. `Unsanctioned Communication` or hook/subagent dispatch denial), do NOT retry `Agent` and do NOT stop or exit with 0 pages published! Immediately execute Step 2 (`fetch_page.py` research $\rightarrow$ `scout-spec.json` $\rightarrow$ `mindmap-tracks.py intake` $\rightarrow$ `mindmap-gates.py prepare-write-packets --track alternatives` $\rightarrow$ `content_gen.py write` $\rightarrow$ `mindmap-gates.py precheck-drafts` $\rightarrow$ splice into page store/registry/sitemap) directly in `MAIN` via `Bash`.
+  - **Competitor 403 / Unreadable Pricing Rule (HARD — NEVER stop before drafting):** During Step 2 vendor research, if the **subject** vendor's own official pricing page is unreadable after trying `fetch_page.py` and `WebFetch`, immediately mark that subject row `--status held --note "official site unreadable"`, claim a replacement subject from `backlog.py next`, and continue. If one of the **5–8 comparison-table alternatives** (competitors) for a readable subject has an unreadable pricing page (e.g. 403 / Cloudflare / JS-shell on ChatGPT, Lumo Plus, etc.), **NEVER stop before drafting**! Either swap that competitor for another readable alternative in the same category (e.g. Claude, Mistral Le Chat, Duck.ai, Proton, Firefox, LibreWolf, Krita, Affinity, etc.) OR list its free tier / `"Quote-based; no public price"` and proceed immediately to `scout-spec.json` and `content_gen.py write`. Furthermore, even if 0 new pages can be drafted in Step 2, you MUST still execute Step 7b (`upgradeQueue`) before exiting!
+  - Research the subject product and 5–8 real alternatives from each vendor's own website via `python3 scripts/alternatives_daily/fetch_page.py <url> [--grep price]` (reusing `/tmp/alternatives-fetch-cache-<UTC-date>/`), save `<slug>-sources.json`, and build a Mindmap `alternatives` Scout Intake spec (`reports/alternatives-daily/<day>/scout-spec.json`) listing each claimed candidate's `target`, `subject`, `officialUrl`, `officialHosts`, `readerQuestion`, `workingAnswer`, `counterexample`, 3 standardized `scenarios`, and verified `vendors` pricing tiers.
+  - Run the 1-command Mindmap `alternatives` track intake + track-sliced prompt compiler (which pre-computes 3-scenario monthly/annual/overage/savings math in Python at `$0` tokens, matches any first-party experience catalog, and compiles the ~51%-smaller cache-aligned `system.alternatives.md` + subject-only `<slug>.allowed-urls.txt`):
+    ```bash
+    python3 .claude/tools/mindmap-tracks.py intake --spec reports/alternatives-daily/<day>/scout-spec.json --run-dir reports/alternatives-daily/<day>/mindmap
+    python3 .claude/tools/mindmap-gates.py prepare-write-packets --manifest reports/alternatives-daily/<day>/mindmap/approval-manifest.json --evidence-dir reports/alternatives-daily/<day>/mindmap/evidence --out-dir reports/alternatives-daily/<day>/prompts --track alternatives
+    ```
+    *(If this repo's `SITE ADAPTER` uses a custom JSON/Markdown schema different from `ComparisonPage`, append the exact `SITE

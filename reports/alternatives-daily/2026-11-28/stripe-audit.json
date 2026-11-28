@@ -1,0 +1,41 @@
+{
+  "reviewer": "audit-subagent",
+  "verdict": "FAIL",
+  "findings": [
+    {
+      "id": "F1",
+      "quote": "Shopify Payments | Shopify Basic plan at $29 a month. Card rates from 2.9% + 30¢. (also: 'The Basic plan costs $29 a month'; '$379 at 200 sales, $2,129 ... $7,029'; 'Each total is $29 a month ($348 a year) above Stripe')",
+      "problem": "shopify.com/pricing shows Basic at $29/mo only with 'Pay yearly'; 'Pay monthly' is $39 USD/mo. The page states $29 with no billing qualifier, so a monthly-billed seller pays $389/$2,139/$7,039 and $10 more a month than stated.",
+      "fix": "State the billing term everywhere: 'Basic plan at $29 a month billed yearly ($39 billed monthly)'. Keep the modeled totals but label them as yearly-billing totals, or add the $39 monthly figures ($389, $2,139, $7,039; $39 a month = $468 a year above Stripe).",
+      "hard_blocker": true
+    },
+    {
+      "id": "F2",
+      "quote": "chooseSection body: '- Small shop, 200 sales a month ($10,000): Stripe $350, ...' (bullet list, no pipe table)",
+      "problem": "Page rule 5(b) makes a structured 3-scenario TABLE (pipe/HTML) mandatory in the section right below the comparison table. The rendered page carries only one <table> (the comparison table); the three scenarios are a bullet list. Math in the bullets replays correctly.",
+      "fix": "Convert the three scenario bullets into a GFM pipe table (rows = products, columns = the three scenarios) in the chooseSection body, keeping the same figures; leave the break-even paragraph as is.",
+      "hard_blocker": true
+    },
+    {
+      "id": "F3",
+      "quote": "Our captured facts do not state which sales qualify for the 2.3% rate or give a device plan price as a number. Clover sits outside the modeled totals. / Its gap against Stripe is the unmodeled device plan cost.",
+      "problem": "Clover's own retail pricing page (clover.com/pricing/retail) publishes device plans: Basic $16/mo for 36 months or $349; Standard $180/mo for 36 months or $1,899 + $84.95/mo; Advanced $240/mo for 36 months or $2,648 + $104.90/mo, with 2.6% + 10¢ on Basic and 2.3% + 10¢ on Standard/Advanced tapped. The page says the figure is not captured, and the Clover section also has a stray leading space and a dead-end last sentence.",
+      "fix": "Add the published Clover device-plan prices (or state them as the retail-page facts) and drop 'Our captured facts do not state...'. If Clover stays out of the model, say so because the rate applies to card-present sales, not because the price is missing. Remove the leading space before 'Its gap...'.",
+      "hard_blocker": false
+    },
+    {
+      "id": "F4",
+      "quote": "Helcim can come in lower when average interchange stays under 2.5% of the ticket / Helcim publishing an average interchange figure under 2.5% would make Helcim the cheaper pick",
+      "problem": "helcim.com/pricing states that for most merchants the total effective rate on keyed and online payments is below 2.5%, which the page omits. That published figure bears directly on the Helcim break-even and the 'What Would Change Our Answer' bullet (which implies no such figure exists). Arithmetic (0.50% + 25¢ = $0.50 on $50; flip at 2.5%, 2.65%, 2.75% at the $50K-$100K and $100K-$500K keyed tiers 0.45% + 20¢ and 0.35% + 20¢) replays correctly.",
+      "fix": "Add one sentence citing Helcim's own published claim (total keyed/online effective rate below 2.5% for most merchants) and adjust the 'What Would Change Our Answer' Helcim bullet to match.",
+      "hard_blocker": false
+    },
+    {
+      "id": "F5",
+      "quote": "Sellers who want an Authorize.net account and accept $300 a year above Stripe's published cost / (pricing cell for Stripe omits +0.5% for manually entered cards)",
+      "problem": "Minor: Stripe's pricing page adds 0.5% for manually entered cards and Authorize.net marks its plan 'Subject to eligibility'; neither caveat appears. Advisory only; the modeled assumptions are otherwise stated.",
+      "fix": "Optionally add '+0.5% for manually entered cards' to the Stripe cell and 'subject to eligibility' to the Authorize.net cell.",
+      "hard_blocker": false
+    }
+  ]
+}

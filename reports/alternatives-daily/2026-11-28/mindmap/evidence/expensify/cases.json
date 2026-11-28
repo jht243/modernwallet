@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "query": "What should I use instead of Expensify for expense reports? [verb-only — no PAA, no completions]",
+  "searchQuery": "What should I use instead of Expensify for expense reports?",
+  "contextQueries": [],
+  "publisher": "themodernwallet.com",
+  "bankSha256": "844e3387ef4c23f3bd1907dd3f62af8592ee2341f93d4842edd1c49687c262b4",
+  "experienceSha256": "f434b01c0528011425795dd52369f64413f6794de89191130c700c632f9ca90a",
+  "localExperience": "Read .claude/commands/_experience.md as internal permission context; its named client examples are private and superseded by the local anonymity rule.",
+  "experienceCatalog": {
+    "path": ".claude/commands/_experience-catalog.json",
+    "sha256": "c30a58024d315337815abe52a4065e486d1c0b95869c03ecd91cd934ad743ac6",
+    "recordsSearched": 95
+  },
+  "candidates": [],
+  "privateClientContext": [],
+  "instruction": "This catalog is one optional source, not the sole source or a source-count target. Combine as many relevant sources as needed: experience, internal modeling/calculations, actual survey records, primary documents, external research and executed tasks. Verify each claim, retain its own evidence basis and record actual sources in sourceArtifacts. No relevant case means use other supported sources, not force a case or stop. Never publish client identities or searchable testimonial text; preserve local exclusions and the terminal no-addition branch."
+}

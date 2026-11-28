@@ -1,0 +1,628 @@
+{
+  "schemaVersion": 1,
+  "canonicalBase": "https://www.themodernwallet.com",
+  "mindmapTrack": "alternatives",
+  "preparationMode": "full",
+  "jobId": "mindmap-alternatives-2026-11-28",
+  "author": "mindmap-scout-intake",
+  "date": "2026-11-28",
+  "source": "reports/alternatives-daily/2026-11-28/mindmap/request-brief.txt",
+  "interpretedBrief": "Unified Mindmap `alternatives` batch (3 page(s)) with pre-computed scenario modeling and first-party experience matching.",
+  "chartPath": "reports/alternatives-daily/2026-11-28/mindmap/chart.md",
+  "request": {
+    "source": {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/request-brief.txt",
+      "sha256": "9fb4d135c175adf21e0e5081ebf25d4f53d48d8e04c16f098b9b11f0f003970a"
+    },
+    "goal": "Publish 3 `alternatives` page(s) meeting full evidence, modeling, and link standards.",
+    "requirements": [
+      {
+        "id": "REQ-1",
+        "description": "Publish /alternatives/stripe/ on the alternatives track with verified primary vendor rates, scenario break-even modeling, and actionable takeaway.",
+        "acceptance": "/alternatives/stripe/ passes track proof precheck, calculation replay, and link policy.",
+        "actionIds": [
+          "A1"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "description": "Publish /alternatives/square/ on the alternatives track with verified primary vendor rates, scenario break-even modeling, and actionable takeaway.",
+        "acceptance": "/alternatives/square/ passes track proof precheck, calculation replay, and link policy.",
+        "actionIds": [
+          "A2"
+        ]
+      },
+      {
+        "id": "REQ-3",
+        "description": "Publish /alternatives/expensify/ on the alternatives track with verified primary vendor rates, scenario break-even modeling, and actionable takeaway.",
+        "acceptance": "/alternatives/expensify/ passes track proof precheck, calculation replay, and link policy.",
+        "actionIds": [
+          "A3"
+        ]
+      }
+    ]
+  },
+  "actions": [
+    {
+      "id": "A1",
+      "track": "alternatives",
+      "problem": "Readers searching \"stripe alternatives\" lack verified 2026 plan caps and switching break-even math.",
+      "solution": "Stripe Alternatives 2026: Fees and Features Compared",
+      "bucket": "create new content",
+      "target": "/alternatives/stripe/",
+      "format": "comparison",
+      "best_medium": "structured comparison table with scenario cost model",
+      "resolved_deliverable": "structured comparison table with scenario cost model",
+      "serp_verdict": "GAP_CONFIRMED: existing SERP lists omit multi-seat/usage break-even counterexamples",
+      "serp_evidence": "Primary keyword \"stripe alternatives\" verified from backlog/SERP.",
+      "reader_question": "What should I use instead of Stripe for accepting card payments? [verb-only — no PAA, no completions]",
+      "answer": "Square, Helcim, Authorize.net, Shopify Payments, Paddle and Clover are six Stripe alternatives, and most of them publish the same 2.9% + 30¢ online card rate that Stripe does. Stripe's 2.9% + 30¢ costs $1.75 on a $50 online sale, while Square's free plan at 3.3% + 30¢ costs $1.95, a $0.20 difference per sale.",
+      "answer_placement": "Section 1 (opening sentence)",
+      "presentation": {
+        "medium": "structured comparison table with scenario cost model",
+        "placement": "Opening direct answer followed by comparison matrix and 3-scenario cost/break-even table",
+        "reason": "Buyers comparing Stripe options need verifiable tier math and explicit break-even thresholds rather than generic prose.",
+        "readerInputs": [],
+        "interaction": {
+          "decision": "not-useful",
+          "reason": "Three pre-computed team/workload scenarios answer the switching math faster without widget friction."
+        },
+        "animation": {
+          "decision": "not-useful",
+          "reason": "Static scannable tables communicate pricing thresholds immediately."
+        }
+      }
+    },
+    {
+      "id": "A2",
+      "track": "alternatives",
+      "problem": "Readers searching \"square alternatives\" lack verified 2026 plan caps and switching break-even math.",
+      "solution": "Square Alternatives 2026: Fees and Plans Compared",
+      "bucket": "create new content",
+      "target": "/alternatives/square/",
+      "format": "comparison",
+      "best_medium": "structured comparison table with scenario cost model",
+      "resolved_deliverable": "structured comparison table with scenario cost model",
+      "serp_verdict": "GAP_CONFIRMED: existing SERP lists omit multi-seat/usage break-even counterexamples",
+      "serp_evidence": "Primary keyword \"square alternatives\" verified from backlog/SERP.",
+      "reader_question": "What should I use instead of Square for taking card payments in person? [verb-only — no PAA, no completions]",
+      "answer": "Stripe Terminal, Clover, Toast, SumUp, Shopify POS and Helcim are six Square alternatives, and Stripe Terminal's 2.7% + 5¢ in-person rate is the lowest per-sale cost among the flat-rate options on a $30 ticket. Square's free plan publishes 2.6% + 15¢ in person, which costs $0.93 on a $30 sale against $0.86 at Stripe Terminal, a $0.07 gap before hardware.",
+      "answer_placement": "Section 1 (opening sentence)",
+      "presentation": {
+        "medium": "structured comparison table with scenario cost model",
+        "placement": "Opening direct answer followed by comparison matrix and 3-scenario cost/break-even table",
+        "reason": "Buyers comparing Square options need verifiable tier math and explicit break-even thresholds rather than generic prose.",
+        "readerInputs": [],
+        "interaction": {
+          "decision": "not-useful",
+          "reason": "Three pre-computed team/workload scenarios answer the switching math faster without widget friction."
+        },
+        "animation": {
+          "decision": "not-useful",
+          "reason": "Static scannable tables communicate pricing thresholds immediately."
+        }
+      }
+    },
+    {
+      "id": "A3",
+      "track": "alternatives",
+      "problem": "Readers searching \"expensify alternatives\" lack verified 2026 plan caps and switching break-even math.",
+      "solution": "Expensify Alternatives 2026: Pricing and Plans Compared",
+      "bucket": "create new content",
+      "target": "/alternatives/expensify/",
+      "format": "comparison",
+      "best_medium": "structured comparison table with scenario cost model",
+      "resolved_deliverable": "structured comparison table with scenario cost model",
+      "serp_verdict": "GAP_CONFIRMED: existing SERP lists omit multi-seat/usage break-even counterexamples",
+      "serp_evidence": "Primary keyword \"expensify alternatives\" verified from backlog/SERP.",
+      "reader_question": "What should I use instead of Expensify for expense reports? [verb-only — no PAA, no completions]",
+      "answer": "Zoho Expense, Ramp, Brex, BILL Spend & Expense, Sage Expense Management and Rydoo are six Expensify alternatives, and four of them publish a software price below Expensify's $5 per member per month. Zoho Expense Standard is $4 per user billed monthly, and Ramp, Brex Essentials and BILL Spend & Expense each list $0 per user.",
+      "answer_placement": "Section 1 (opening sentence)",
+      "presentation": {
+        "medium": "structured comparison table with scenario cost model",
+        "placement": "Opening direct answer followed by comparison matrix and 3-scenario cost/break-even table",
+        "reason": "Buyers comparing Expensify options need verifiable tier math and explicit break-even thresholds rather than generic prose.",
+        "readerInputs": [],
+        "interaction": {
+          "decision": "not-useful",
+          "reason": "Three pre-computed team/workload scenarios answer the switching math faster without widget friction."
+        },
+        "animation": {
+          "decision": "not-useful",
+          "reason": "Static scannable tables communicate pricing thresholds immediately."
+        }
+      }
+    }
+  ],
+  "newPageBriefs": [
+    {
+      "actionId": "A1",
+      "track": "alternatives",
+      "target": "/alternatives/stripe/",
+      "subjectOfficialUrl": "https://stripe.com/",
+      "subjectOfficialHosts": [
+        "stripe.com",
+        "www.stripe.com"
+      ],
+      "identity": {
+        "title": "Stripe Alternatives 2026: Fees and Features Compared",
+        "pageType": "comparison",
+        "format": "comparison",
+        "medium": "structured comparison table with scenario cost model"
+      },
+      "readerAndAnswer": {
+        "question": "What should I use instead of Stripe for accepting card payments? [verb-only — no PAA, no completions]",
+        "answer": "Square, Helcim, Authorize.net, Shopify Payments, Paddle and Clover are six Stripe alternatives, and most of them publish the same 2.9% + 30¢ online card rate that Stripe does. Stripe's 2.9% + 30¢ costs $1.75 on a $50 online sale, while Square's free plan at 3.3% + 30¢ costs $1.95, a $0.20 difference per sale.",
+        "placement": "Section 1 (opening sentence)"
+      },
+      "keywordEvidence": "Validated backlog query \"stripe alternatives\" checked 2026-11-28.",
+      "serpAndQuestions": "Competitor lists repeat marketing bullets without multi-scenario seat/volume math or counterexamples.",
+      "whyNewPage": "No existing Layer3Labs route covers /alternatives/stripe/; verified deduplication against data/comparisons*.ts and sitemap.",
+      "outline": [
+        {
+          "heading": "Best Stripe Alternatives by Team Workload",
+          "purpose": "Direct switching map + 3-scenario monthly/annual break-even cost model and counterexample"
+        },
+        {
+          "heading": "Square Online (Free plan): Pricing, Caps, and Tradeoffs vs. Stripe",
+          "purpose": "Verified Square Online (Free plan) tiers, hard limits, ideal fit, and where Stripe still wins"
+        },
+        {
+          "heading": "Square Online (Plus plan): Pricing, Caps, and Tradeoffs vs. Stripe",
+          "purpose": "Verified Square Online (Plus plan) tiers, hard limits, ideal fit, and where Stripe still wins"
+        },
+        {
+          "heading": "Authorize.net: Pricing, Caps, and Tradeoffs vs. Stripe",
+          "purpose": "Verified Authorize.net tiers, hard limits, ideal fit, and where Stripe still wins"
+        },
+        {
+          "heading": "Shopify Payments (Basic plan): Pricing, Caps, and Tradeoffs vs. Stripe",
+          "purpose": "Verified Shopify Payments (Basic plan) tiers, hard limits, ideal fit, and where Stripe still wins"
+        },
+        {
+          "heading": "Paddle: Pricing, Caps, and Tradeoffs vs. Stripe",
+          "purpose": "Verified Paddle tiers, hard limits, ideal fit, and where Stripe still wins"
+        },
+        {
+          "heading": "Stripe Managed Payments: Pricing, Caps, and Tradeoffs vs. Stripe",
+          "purpose": "Verified Stripe Managed Payments tiers, hard limits, ideal fit, and where Stripe still wins"
+        },
+        {
+          "heading": "How to Choose a Stripe Alternative",
+          "purpose": "Concrete buyer decision criteria and hidden overage traps"
+        },
+        {
+          "heading": "When Stripe Is Still the Better Fit",
+          "purpose": "Explicit counterexample and retention scenarios"
+        },
+        {
+          "heading": "Who This Is Not For",
+          "purpose": "Clear scope boundaries"
+        },
+        {
+          "heading": "What Would Change Our Answer",
+          "purpose": "Specific vendor price or cap changes that would flip the verdict"
+        }
+      ],
+      "contributionAndEvidence": "Deterministic 3-scenario switching cost model + break-even counterexample over 9 verified vendor pricing pages (2026-11-28).",
+      "tablesToolsVisuals": "Comparison matrix (billing unit, entry price, plan limits, best fit) + 3-scenario workload cost & break-even table.",
+      "testingAndReview": "testedEligible=False (exclusion=type: guide is not a best-of/alternatives roundup or single-item review); basis=modeled; Standard review profile.",
+      "takeaway": "Square, Helcim, Authorize.net, Shopify Payments, Paddle and Clover are six Stripe alternatives, and most of them publish the same 2.9% + 30¢ online card rate that Stripe does. Stripe's 2.9% + 30¢ costs $1.75 on a $50 online sale, while Square's free plan at 3.3% + 30¢ costs $1.95, a $0.20 difference per sale.",
+      "inboundLinks": {
+        "required": 2,
+        "placements": [
+          {
+            "source": "/alternatives",
+            "target": "/alternatives/stripe/",
+            "section": "Overview",
+            "anchor": "Stripe alternatives and pricing comparison",
+            "purpose": "Help readers evaluating software workflows compare Stripe options.",
+            "inspection": {
+              "path": "src/data/alternatives.ts",
+              "sha256": "b0abd7619030e9f484d93d2d56465a6d032bd984a3d9f244fda45dffdb09957b"
+            }
+          },
+          {
+            "source": "/benefits-comparisons",
+            "target": "/alternatives/stripe/",
+            "section": "Overview",
+            "anchor": "Stripe alternatives and pricing comparison",
+            "purpose": "Help readers evaluating software workflows compare Stripe options.",
+            "inspection": {
+              "path": "src/data/benefits-comparisons.ts",
+              "sha256": "733901b5c59559ed043ef2e6d0c886699c80707b9289f882a91f18c937eaf657"
+            }
+          }
+        ]
+      },
+      "outboundLinks": {
+        "placements": [
+          {
+            "source": "/alternatives/stripe/",
+            "target": "/alternatives",
+            "section": "How to Choose",
+            "anchor": "alternatives",
+            "purpose": "Connect readers to broader Layer3Labs pricing and implementation benchmarks.",
+            "inspection": {
+              "path": "src/data/alternatives.ts",
+              "sha256": "b0abd7619030e9f484d93d2d56465a6d032bd984a3d9f244fda45dffdb09957b"
+            }
+          },
+          {
+            "source": "/alternatives/stripe/",
+            "target": "/benefits-comparisons",
+            "section": "How to Choose",
+            "anchor": "benefits comparisons",
+            "purpose": "Connect readers to broader Layer3Labs pricing and implementation benchmarks.",
+            "inspection": {
+              "path": "src/data/benefits-comparisons.ts",
+              "sha256": "733901b5c59559ed043ef2e6d0c886699c80707b9289f882a91f18c937eaf657"
+            }
+          }
+        ]
+      },
+      "technicalAndMeasurement": "Canonical https://www.themodernwallet.com/alternatives/stripe/, structured schema + FAQPage, sitemap.",
+      "evidenceFiles": [
+        {
+          "path": "reports/alternatives-daily/2026-11-28/mindmap/request-brief.txt",
+          "sha256": "9fb4d135c175adf21e0e5081ebf25d4f53d48d8e04c16f098b9b11f0f003970a"
+        },
+        {
+          "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/stripe-vendors.json",
+          "sha256": "31806b7497aee640a6ca8fdf596d833ff39ab986c1f67f343638a04fe107034d"
+        }
+      ]
+    },
+    {
+      "actionId": "A2",
+      "track": "alternatives",
+      "target": "/alternatives/square/",
+      "subjectOfficialUrl": "https://squareup.com/",
+      "subjectOfficialHosts": [
+        "squareup.com",
+        "www.squareup.com"
+      ],
+      "identity": {
+        "title": "Square Alternatives 2026: Fees and Plans Compared",
+        "pageType": "comparison",
+        "format": "comparison",
+        "medium": "structured comparison table with scenario cost model"
+      },
+      "readerAndAnswer": {
+        "question": "What should I use instead of Square for taking card payments in person? [verb-only — no PAA, no completions]",
+        "answer": "Stripe Terminal, Clover, Toast, SumUp, Shopify POS and Helcim are six Square alternatives, and Stripe Terminal's 2.7% + 5¢ in-person rate is the lowest per-sale cost among the flat-rate options on a $30 ticket. Square's free plan publishes 2.6% + 15¢ in person, which costs $0.93 on a $30 sale against $0.86 at Stripe Terminal, a $0.07 gap before hardware.",
+        "placement": "Section 1 (opening sentence)"
+      },
+      "keywordEvidence": "Validated backlog query \"square alternatives\" checked 2026-11-28.",
+      "serpAndQuestions": "Competitor lists repeat marketing bullets without multi-scenario seat/volume math or counterexamples.",
+      "whyNewPage": "No existing Layer3Labs route covers /alternatives/square/; verified deduplication against data/comparisons*.ts and sitemap.",
+      "outline": [
+        {
+          "heading": "Best Square Alternatives by Team Workload",
+          "purpose": "Direct switching map + 3-scenario monthly/annual break-even cost model and counterexample"
+        },
+        {
+          "heading": "Square Plus: Pricing, Caps, and Tradeoffs vs. Square",
+          "purpose": "Verified Square Plus tiers, hard limits, ideal fit, and where Square still wins"
+        },
+        {
+          "heading": "Square Premium: Pricing, Caps, and Tradeoffs vs. Square",
+          "purpose": "Verified Square Premium tiers, hard limits, ideal fit, and where Square still wins"
+        },
+        {
+          "heading": "Stripe Terminal: Pricing, Caps, and Tradeoffs vs. Square",
+          "purpose": "Verified Stripe Terminal tiers, hard limits, ideal fit, and where Square still wins"
+        },
+        {
+          "heading": "SumUp: Pricing, Caps, and Tradeoffs vs. Square",
+          "purpose": "Verified SumUp tiers, hard limits, ideal fit, and where Square still wins"
+        },
+        {
+          "heading": "Shopify POS (Basic plan): Pricing, Caps, and Tradeoffs vs. Square",
+          "purpose": "Verified Shopify POS (Basic plan) tiers, hard limits, ideal fit, and where Square still wins"
+        },
+        {
+          "heading": "Clover: Pricing, Caps, and Tradeoffs vs. Square",
+          "purpose": "Verified Clover tiers, hard limits, ideal fit, and where Square still wins"
+        },
+        {
+          "heading": "How to Choose a Square Alternative",
+          "purpose": "Concrete buyer decision criteria and hidden overage traps"
+        },
+        {
+          "heading": "When Square Is Still the Better Fit",
+          "purpose": "Explicit counterexample and retention scenarios"
+        },
+        {
+          "heading": "Who This Is Not For",
+          "purpose": "Clear scope boundaries"
+        },
+        {
+          "heading": "What Would Change Our Answer",
+          "purpose": "Specific vendor price or cap changes that would flip the verdict"
+        }
+      ],
+      "contributionAndEvidence": "Deterministic 3-scenario switching cost model + break-even counterexample over 9 verified vendor pricing pages (2026-11-28).",
+      "tablesToolsVisuals": "Comparison matrix (billing unit, entry price, plan limits, best fit) + 3-scenario workload cost & break-even table.",
+      "testingAndReview": "testedEligible=False (exclusion=type: guide is not a best-of/alternatives roundup or single-item review); basis=modeled; Standard review profile.",
+      "takeaway": "Stripe Terminal, Clover, Toast, SumUp, Shopify POS and Helcim are six Square alternatives, and Stripe Terminal's 2.7% + 5¢ in-person rate is the lowest per-sale cost among the flat-rate options on a $30 ticket. Square's free plan publishes 2.6% + 15¢ in person, which costs $0.93 on a $30 sale against $0.86 at Stripe Terminal, a $0.07 gap before hardware.",
+      "inboundLinks": {
+        "required": 2,
+        "placements": [
+          {
+            "source": "/alternatives",
+            "target": "/alternatives/square/",
+            "section": "Overview",
+            "anchor": "Square alternatives and pricing comparison",
+            "purpose": "Help readers evaluating software workflows compare Square options.",
+            "inspection": {
+              "path": "src/data/alternatives.ts",
+              "sha256": "b0abd7619030e9f484d93d2d56465a6d032bd984a3d9f244fda45dffdb09957b"
+            }
+          },
+          {
+            "source": "/benefits-comparisons",
+            "target": "/alternatives/square/",
+            "section": "Overview",
+            "anchor": "Square alternatives and pricing comparison",
+            "purpose": "Help readers evaluating software workflows compare Square options.",
+            "inspection": {
+              "path": "src/data/benefits-comparisons.ts",
+              "sha256": "733901b5c59559ed043ef2e6d0c886699c80707b9289f882a91f18c937eaf657"
+            }
+          }
+        ]
+      },
+      "outboundLinks": {
+        "placements": [
+          {
+            "source": "/alternatives/square/",
+            "target": "/alternatives",
+            "section": "How to Choose",
+            "anchor": "alternatives",
+            "purpose": "Connect readers to broader Layer3Labs pricing and implementation benchmarks.",
+            "inspection": {
+              "path": "src/data/alternatives.ts",
+              "sha256": "b0abd7619030e9f484d93d2d56465a6d032bd984a3d9f244fda45dffdb09957b"
+            }
+          },
+          {
+            "source": "/alternatives/square/",
+            "target": "/benefits-comparisons",
+            "section": "How to Choose",
+            "anchor": "benefits comparisons",
+            "purpose": "Connect readers to broader Layer3Labs pricing and implementation benchmarks.",
+            "inspection": {
+              "path": "src/data/benefits-comparisons.ts",
+              "sha256": "733901b5c59559ed043ef2e6d0c886699c80707b9289f882a91f18c937eaf657"
+            }
+          }
+        ]
+      },
+      "technicalAndMeasurement": "Canonical https://www.themodernwallet.com/alternatives/square/, structured schema + FAQPage, sitemap.",
+      "evidenceFiles": [
+        {
+          "path": "reports/alternatives-daily/2026-11-28/mindmap/request-brief.txt",
+          "sha256": "9fb4d135c175adf21e0e5081ebf25d4f53d48d8e04c16f098b9b11f0f003970a"
+        },
+        {
+          "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/square-vendors.json",
+          "sha256": "3ab4199fdd41b9c9f0da24cfc8a5d517dce65d2b963f24648a8284753f6584b1"
+        }
+      ]
+    },
+    {
+      "actionId": "A3",
+      "track": "alternatives",
+      "target": "/alternatives/expensify/",
+      "subjectOfficialUrl": "https://www.expensify.com/",
+      "subjectOfficialHosts": [
+        "www.expensify.com",
+        "expensify.com"
+      ],
+      "identity": {
+        "title": "Expensify Alternatives 2026: Pricing and Plans Compared",
+        "pageType": "comparison",
+        "format": "comparison",
+        "medium": "structured comparison table with scenario cost model"
+      },
+      "readerAndAnswer": {
+        "question": "What should I use instead of Expensify for expense reports? [verb-only — no PAA, no completions]",
+        "answer": "Zoho Expense, Ramp, Brex, BILL Spend & Expense, Sage Expense Management and Rydoo are six Expensify alternatives, and four of them publish a software price below Expensify's $5 per member per month. Zoho Expense Standard is $4 per user billed monthly, and Ramp, Brex Essentials and BILL Spend & Expense each list $0 per user.",
+        "placement": "Section 1 (opening sentence)"
+      },
+      "keywordEvidence": "Validated backlog query \"expensify alternatives\" checked 2026-11-28.",
+      "serpAndQuestions": "Competitor lists repeat marketing bullets without multi-scenario seat/volume math or counterexamples.",
+      "whyNewPage": "No existing Layer3Labs route covers /alternatives/expensify/; verified deduplication against data/comparisons*.ts and sitemap.",
+      "outline": [
+        {
+          "heading": "Best Expensify Alternatives by Team Workload",
+          "purpose": "Direct switching map + 3-scenario monthly/annual break-even cost model and counterexample"
+        },
+        {
+          "heading": "Zoho Expense: Pricing, Caps, and Tradeoffs vs. Expensify",
+          "purpose": "Verified Zoho Expense tiers, hard limits, ideal fit, and where Expensify still wins"
+        },
+        {
+          "heading": "Rydoo: Pricing, Caps, and Tradeoffs vs. Expensify",
+          "purpose": "Verified Rydoo tiers, hard limits, ideal fit, and where Expensify still wins"
+        },
+        {
+          "heading": "Sage Expense Management: Pricing, Caps, and Tradeoffs vs. Expensify",
+          "purpose": "Verified Sage Expense Management tiers, hard limits, ideal fit, and where Expensify still wins"
+        },
+        {
+          "heading": "Brex: Pricing, Caps, and Tradeoffs vs. Expensify",
+          "purpose": "Verified Brex tiers, hard limits, ideal fit, and where Expensify still wins"
+        },
+        {
+          "heading": "Brex Premium: Pricing, Caps, and Tradeoffs vs. Expensify",
+          "purpose": "Verified Brex Premium tiers, hard limits, ideal fit, and where Expensify still wins"
+        },
+        {
+          "heading": "Ramp: Pricing, Caps, and Tradeoffs vs. Expensify",
+          "purpose": "Verified Ramp tiers, hard limits, ideal fit, and where Expensify still wins"
+        },
+        {
+          "heading": "How to Choose a Expensify Alternative",
+          "purpose": "Concrete buyer decision criteria and hidden overage traps"
+        },
+        {
+          "heading": "When Expensify Is Still the Better Fit",
+          "purpose": "Explicit counterexample and retention scenarios"
+        },
+        {
+          "heading": "Who This Is Not For",
+          "purpose": "Clear scope boundaries"
+        },
+        {
+          "heading": "What Would Change Our Answer",
+          "purpose": "Specific vendor price or cap changes that would flip the verdict"
+        }
+      ],
+      "contributionAndEvidence": "Deterministic 3-scenario switching cost model + break-even counterexample over 8 verified vendor pricing pages (2026-11-28).",
+      "tablesToolsVisuals": "Comparison matrix (billing unit, entry price, plan limits, best fit) + 3-scenario workload cost & break-even table.",
+      "testingAndReview": "testedEligible=False (exclusion=type: guide is not a best-of/alternatives roundup or single-item review); basis=modeled; Standard review profile.",
+      "takeaway": "Zoho Expense, Ramp, Brex, BILL Spend & Expense, Sage Expense Management and Rydoo are six Expensify alternatives, and four of them publish a software price below Expensify's $5 per member per month. Zoho Expense Standard is $4 per user billed monthly, and Ramp, Brex Essentials and BILL Spend & Expense each list $0 per user.",
+      "inboundLinks": {
+        "required": 2,
+        "placements": [
+          {
+            "source": "/alternatives",
+            "target": "/alternatives/expensify/",
+            "section": "Overview",
+            "anchor": "Expensify alternatives and pricing comparison",
+            "purpose": "Help readers evaluating software workflows compare Expensify options.",
+            "inspection": {
+              "path": "src/data/alternatives.ts",
+              "sha256": "b0abd7619030e9f484d93d2d56465a6d032bd984a3d9f244fda45dffdb09957b"
+            }
+          },
+          {
+            "source": "/benefits-comparisons",
+            "target": "/alternatives/expensify/",
+            "section": "Overview",
+            "anchor": "Expensify alternatives and pricing comparison",
+            "purpose": "Help readers evaluating software workflows compare Expensify options.",
+            "inspection": {
+              "path": "src/data/benefits-comparisons.ts",
+              "sha256": "733901b5c59559ed043ef2e6d0c886699c80707b9289f882a91f18c937eaf657"
+            }
+          }
+        ]
+      },
+      "outboundLinks": {
+        "placements": [
+          {
+            "source": "/alternatives/expensify/",
+            "target": "/alternatives",
+            "section": "How to Choose",
+            "anchor": "alternatives",
+            "purpose": "Connect readers to broader Layer3Labs pricing and implementation benchmarks.",
+            "inspection": {
+              "path": "src/data/alternatives.ts",
+              "sha256": "b0abd7619030e9f484d93d2d56465a6d032bd984a3d9f244fda45dffdb09957b"
+            }
+          },
+          {
+            "source": "/alternatives/expensify/",
+            "target": "/benefits-comparisons",
+            "section": "How to Choose",
+            "anchor": "benefits comparisons",
+            "purpose": "Connect readers to broader Layer3Labs pricing and implementation benchmarks.",
+            "inspection": {
+              "path": "src/data/benefits-comparisons.ts",
+              "sha256": "733901b5c59559ed043ef2e6d0c886699c80707b9289f882a91f18c937eaf657"
+            }
+          }
+        ]
+      },
+      "technicalAndMeasurement": "Canonical https://www.themodernwallet.com/alternatives/expensify/, structured schema + FAQPage, sitemap.",
+      "evidenceFiles": [
+        {
+          "path": "reports/alternatives-daily/2026-11-28/mindmap/request-brief.txt",
+          "sha256": "9fb4d135c175adf21e0e5081ebf25d4f53d48d8e04c16f098b9b11f0f003970a"
+        },
+        {
+          "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/expensify-vendors.json",
+          "sha256": "30bf81262d122c6898159540ec6445c17085ac1d76d26b1c625f2e2e746eeca3"
+        }
+      ]
+    }
+  ],
+  "emergingClusters": [
+    "alternatives high-intent software switching cluster (2026-11-28)"
+  ],
+  "exclusions": [
+    "Excluded unreadable/defunct vendors and duplicate covered slugs prior to intake."
+  ],
+  "preparation": {
+    "status": "PASS",
+    "readiness": {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/readiness.md",
+      "sha256": "db45bbd8e4d89915f849a5c62094c2c306f59c2b9fe5b32877a13ff3bf1c4bd3"
+    }
+  },
+  "evidenceFiles": [
+    {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/request-brief.txt",
+      "sha256": "9fb4d135c175adf21e0e5081ebf25d4f53d48d8e04c16f098b9b11f0f003970a"
+    },
+    {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/stripe-vendors.json",
+      "sha256": "31806b7497aee640a6ca8fdf596d833ff39ab986c1f67f343638a04fe107034d"
+    },
+    {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/square-vendors.json",
+      "sha256": "3ab4199fdd41b9c9f0da24cfc8a5d517dce65d2b963f24648a8284753f6584b1"
+    },
+    {
+      "path": "reports/alternatives-daily/2026-11-28/mindmap/research/sources/expensify-vendors.json",
+      "sha256": "30bf81262d122c6898159540ec6445c17085ac1d76d26b1c625f2e2e746eeca3"
+    }
+  ],
+  "executionPlan": [
+    {
+      "phase": 1,
+      "action": "Advisory overlap check completed during scout intake (no destructive merges)."
+    },
+    {
+      "phase": 2,
+      "action": "N/A — no existing metadata-only updates in this scout batch."
+    },
+    {
+      "phase": 3,
+      "action": "Generate `alternatives` route(s) via track-sliced system.alternatives.md and pre-hashed evidence packets."
+    },
+    {
+      "phase": 4,
+      "action": "Run independent rendered-page + calculation-replay verification."
+    },
+    {
+      "phase": 5,
+      "action": "N/A — no existing-page body-only enrichments in this scout batch."
+    },
+    {
+      "phase": 6,
+      "action": "Apply approved inbound and outbound internal links across inspected routes."
+    },
+    {
+      "phase": 7,
+      "action": "Update sitemap and IndexNow list without pre-deploy ping."
+    },
+    {
+      "phase": 8,
+      "action": "Compile execution and cluster summary."
+    },
+    {
+      "phase": 9,
+      "action": "Land to main, verify live HTTP 200 output, and submit IndexNow."
+    }
+  ],
+  "publicationScope": {
+    "commit": true,
+    "push": true,
+    "liveVerification": true,
+    "indexNow": true
+  }
+}

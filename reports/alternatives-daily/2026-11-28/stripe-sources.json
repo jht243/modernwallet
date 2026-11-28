@@ -1,0 +1,14 @@
+{
+  "checked": "2026-11-28",
+  "method": "scripts/alternatives_daily/fetch_page.py",
+  "notes": "PayPal and Braintree pricing pages returned 403 (fetch_page and WebFetch) and were not used; Emburse and SAP Concur pricing URLs returned 404 and were not used.",
+  "sources": [
+    "https://stripe.com/pricing",
+    "https://squareup.com/us/en/pricing",
+    "https://www.helcim.com/pricing/",
+    "https://www.authorize.net/sign-up/pricing.html",
+    "https://www.shopify.com/pricing",
+    "https://www.paddle.com/pricing",
+    "https://www.clover.com/pricing"
+  ]
+}

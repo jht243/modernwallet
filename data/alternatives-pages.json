@@ -306,6 +306,27 @@
       "officialHosts": [
         "www.upstart.com"
       ]
+    },
+    {
+      "route": "/alternatives/stripe/",
+      "vendorHost": "stripe.com",
+      "officialHosts": [
+        "stripe.com"
+      ]
+    },
+    {
+      "route": "/alternatives/square/",
+      "vendorHost": "squareup.com",
+      "officialHosts": [
+        "squareup.com"
+      ]
+    },
+    {
+      "route": "/alternatives/expensify/",
+      "vendorHost": "expensify.com",
+      "officialHosts": [
+        "www.expensify.com"
+      ]
     }
   ]
 }

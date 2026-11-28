@@ -1,0 +1,27 @@
+{
+  "kind": "public-data",
+  "readerQuestion": "What should I use instead of Stripe for accepting card payments? [verb-only — no PAA, no completions]",
+  "items": [
+    "Stripe",
+    "Square Online (Free plan)",
+    "Square Online (Plus plan)",
+    "Authorize.net",
+    "Shopify Payments (Basic plan)",
+    "Paddle",
+    "Stripe Managed Payments",
+    "Helcim",
+    "Clover"
+  ],
+  "decision": "Identify the lowest total-cost and best-fit option among Stripe, Square Online (Free plan), Square Online (Plus plan), Authorize.net across realistic team/token workloads.",
+  "conditions": "Published USD self-serve monthly/annual rates, seat minimums, included usage caps, and per-1M token rates as of verification date.",
+  "dimensions": [
+    "baseMonthlyUsd",
+    "perSeatMonthlyUsd",
+    "includedVolume",
+    "overageUsdPerUnit",
+    "requiredAddonMonthlyUsd"
+  ],
+  "normalization": "Standardized monthly and annual USD totals evaluated across identical 3-tier workload scenarios.",
+  "unknowns": "Unpublished custom enterprise discounts and negotiated volume commits.",
+  "sourceRefreshTrigger": "Re-run benchmark when any compared vendor updates published tier rates, token prices, or plan caps."
+}

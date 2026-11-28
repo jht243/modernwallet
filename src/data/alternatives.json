@@ -5674,5 +5674,454 @@
         "href": "/compare/"
       }
     ]
+  },
+  {
+    "slug": "stripe",
+    "product": "Stripe",
+    "officialUrl": "https://stripe.com/",
+    "title": "Stripe Alternatives 2026: Fees and Features Compared",
+    "h1": "Stripe Alternatives 2026: Fees and Features Compared",
+    "metaDescription": "Stripe alternatives compared: Square, Helcim, Authorize.net, Shopify Payments, Paddle and Clover fees, with a modeled cost at $50 online sales.",
+    "published": "2026-11-28",
+    "updated": "2026-11-28",
+    "intro": "Square, Helcim, Authorize.net, Shopify Payments, Paddle and Clover are six [Stripe](https://stripe.com/) alternatives for accepting card payments. Three of them publish the same 2.9% + 30¢ online card rate that Stripe charges: Square on its Plus plan, Authorize.net and Shopify Payments. Stripe's 2.9% + 30¢ costs $1.75 on a $50 online sale, while Square's Free plan at 3.3% + 30¢ costs $1.95, a $0.20 difference per sale.\n\nAt The Modern Wallet, we modeled published fees across three online shop sizes at a $50 average ticket. Stripe had the lowest monthly total in all three.\n\nA cheaper Stripe alternative exists only under specific conditions. On standard published rates, none of the modeled options beat Stripe's $350 a month on 200 sales. Helcim can come in lower when average interchange stays under 2.5% of the ticket, and Clover's keyed-in rate costs less than Stripe's on tickets under $33.33.\n\nFor comparisons centered on other payment apps, see our [PayPal alternatives](/alternatives/paypal/) and [Venmo alternatives](/alternatives/venmo/) guides. Freelancers who bill clients by invoice can start with the [best invoicing apps for freelancers](/roundup/best-invoicing-apps-for-freelancers/).",
+    "tableTitle": "Stripe Alternatives Compared by Published Online Card Fees",
+    "tableNote": "Fees and prices from each provider's own website, checked November 28, 2026. Prices are in U.S. dollars.",
+    "tableColumns": [
+      "Product",
+      "Fees and pricing",
+      "Best fit"
+    ],
+    "rows": [
+      {
+        "product": "Stripe",
+        "pricing": "2.9% + 30¢ per successful domestic card transaction. No setup or monthly fees. Plus 0.5% for manually entered cards, 1.5% for international cards and 1% for currency conversion. $15 dispute fee.",
+        "bestFit": "Developers and online sellers who want no monthly fee",
+        "subject": true
+      },
+      {
+        "product": "Square",
+        "pricing": "Free plan: 3.3% + 30¢ online, $0 a month per location. Plus plan: 2.9% + 30¢ online, $49 a month per location.",
+        "bestFit": "Free plan fits sellers under $12,250 a month in online sales. Plus plan fits sellers above that line."
+      },
+      {
+        "product": "Helcim",
+        "pricing": "Interchange plus 0.50% + 25¢ on keyed and online sales from $0 to $50,000 a month. Interchange is not published as a number. Helcim states that total effective rates on keyed and online payments are below 2.5% for most merchants.",
+        "bestFit": "Sellers whose average interchange stays under 2.5% of a $50 ticket"
+      },
+      {
+        "product": "Authorize.net",
+        "pricing": "All-in-One plan: $25 a month plus 2.9% + 30¢ per transaction, subject to eligibility.",
+        "bestFit": "Sellers who want an Authorize.net account and accept $300 a year above Stripe's published cost"
+      },
+      {
+        "product": "Shopify Payments",
+        "pricing": "Shopify Basic plan at $29 a month billed yearly, or $39 a month billed monthly. Card rates from 2.9% + 30¢.",
+        "bestFit": "Sellers who run their store on the Shopify Basic plan"
+      },
+      {
+        "product": "Paddle",
+        "pricing": "5% + 50¢ per transaction as an all-in-one merchant of record. No monthly fee.",
+        "bestFit": "Sellers who want an all-in-one merchant of record on tickets above $14.29"
+      },
+      {
+        "product": "Clover",
+        "pricing": "Tapped, swiped or inserted cards: 2.6% + 10¢ on Basic, 2.3% + 10¢ on Standard and Advanced. Keyed-in sales: 3.5% + 10¢ on all retail plans. Device plans: Basic $16 a month for 36 months or $349; Standard $180 a month for 36 months or $1,899 plus $84.95 a month; Advanced $240 a month for 36 months or $2,648 plus $104.90 a month.",
+        "bestFit": "Retail sellers with keyed-in tickets under $33.33"
+      }
+    ],
+    "chooseSection": {
+      "heading": "How to Choose a Stripe Alternative",
+      "body": "In our internal cost analysis, we modeled three online shop sizes using each provider's published fees as inputs. The assumptions are a $50 average ticket, domestic U.S. cards, standard published rates, no disputes, no currency conversion and no negotiated pricing. Shopify's $29 Basic fee applies to yearly billing, and monthly billing costs $39.\n\n- Small shop, 200 sales a month ($10,000): Stripe $350, Authorize.net $375, Shopify Payments (Basic plan, billed yearly) $379 ($389 billed monthly), Square Free $390, Square Plus $399, Paddle $600, Stripe Managed Payments $700.\n- Growing shop, 1,200 sales a month ($60,000): Stripe $2,100, Authorize.net $2,125, Shopify Payments (Basic plan, billed yearly) $2,129 ($2,139 billed monthly), Square Plus $2,149, Square Free $2,340, Paddle $3,600, Stripe Managed Payments $4,200.\n- Established shop, 4,000 sales a month ($200,000): Stripe $7,000, Authorize.net $7,025, Shopify Payments (Basic plan, billed yearly) $7,029 ($7,039 billed monthly), Square Plus $7,049, Square Free $7,800, Paddle $12,000, Stripe Managed Payments $14,000.\n\nStripe is the lowest-cost pick in all three scenarios. Authorize.net, Shopify Payments and Square Plus match Stripe's 2.9% + 30¢ and add $25, $29 ($39 billed monthly) or $49 a month. Their gap stays fixed at every size. Square Free's gap grows with volume, from $40 to $800 a month.\n\nBreak-even counterexample: Helcim's published margin of 0.50% + 25¢ on keyed and online sales up to $50,000 a month is $0.50 on a $50 sale. Stripe charges $1.75. Helcim costs less whenever average interchange stays under $1.25 per $50 sale (2.5% of the ticket), and Stripe costs less above that. Helcim's own page says total keyed and online rates run below 2.5% for most merchants. At $60,000 and $200,000 a month, Helcim's margin falls to $0.425 and $0.375 per sale. That moves the flip point to 2.65% and 2.75%.\n\nFive checks decide which Stripe alternative costs least for a given shop:\n\n- Monthly fee against rate. A $49 fee pays for a 0.4-point rate cut only above $12,250 in monthly sales ($49 divided by 0.004), or 245 sales at a $50 ticket.\n- Ticket size. Clover's keyed-in 3.5% + 10¢ costs less than Stripe's 2.9% + 30¢ on any ticket below $33.33, though its device plans add a monthly cost.\n- International buyers. Stripe adds 1.5% for international cards and 1% for currency conversion, so a $50 international sale with conversion costs $3.00 on Stripe.\n- Disputes. Stripe charges $15 per dispute, equal to its fees on about 8.6 sales at $50.\n- Merchant of record. Paddle and Stripe Managed Payments both sell this way, at $3.00 and $3.50 per $50 sale.\n\nOur [sales tax vs. use tax](/compare/sales-tax-vs-use-tax/) comparison covers sales tax rules. For recording processing fees in the books, the [best accounting software for freelancers](/roundup/best-accounting-software-for-freelancers/) roundup lists accounting tools."
+    },
+    "alternatives": [
+      {
+        "heading": "Square Pricing, Plans and Fit",
+        "body": "Square publishes two online card rates, each tied to a plan billed per location. The Free plan charges 3.3% + 30¢ per online sale at $0 a month, and the Plus plan charges 2.9% + 30¢ at $49 a month.\n\nOn a $50 sale, Square Free costs $1.95 and Square Plus costs $1.75, the same as Stripe. Square Plus saves 0.4% of online sales, so it beats Square Free once monthly online sales pass $12,250. At a $50 ticket, that line sits at 245 sales a month.\n\nOur model lands on both sides of that line. At 200 sales, Square Free costs $390 and Square Plus costs $399. At 1,200 sales, Square Plus costs $2,149 and Square Free costs $2,340, a $191 monthly gap.\n\nSquare Free fits people who want no monthly fee and accept $0.20 more per $50 sale than Stripe charges. Square Plus fits people above 245 online sales a month who want to run payments through Square. Because both monthly fees apply per location, two locations on Square Plus cost $98 a month.\n\nAgainst Stripe, neither Square plan wins on online cost. Square Free runs $40 to $800 a month higher across our three scenarios. Square Plus runs $49 a month ($588 a year) higher at every size, because its rate matches Stripe's and Stripe charges no monthly fee."
+      },
+      {
+        "heading": "Helcim Pricing, Plans and Fit",
+        "body": "Helcim prices keyed and online sales as interchange plus a published margin. On $0 to $50,000 of monthly volume, the margin is 0.50% + 25¢. Helcim does not publish interchange as a number, so Helcim is not part of the modeled totals. Helcim's own pricing page states that, for most merchants, the total effective rate on keyed and online payments is below 2.5%. On a $50 sale that is under $1.25, against Stripe's $1.75.\n\nThe margin alone is $0.50 on a $50 sale, against Stripe's flat $1.75. Helcim's full cost is that $0.50 plus whatever interchange the sale carries. As an illustration with assumed interchange, a $50 sale at 2.0% interchange ($1.00) would cost $1.50 on Helcim, or $0.25 under Stripe.\n\nAt 3.0% interchange ($1.50), the same sale would cost $2.00 on Helcim, or $0.25 over Stripe. On 200 sales a month, that $0.25 swing equals $50 a month in either direction.\n\nIn the modeled counterexample, Helcim's margin is $0.425 per $50 sale at $60,000 a month and $0.375 at $200,000. That raises the interchange ceiling to 2.65% and 2.75% of the ticket before Stripe becomes cheaper.\n\nHelcim fits people whose average interchange runs under 2.5% of the ticket and who accept a bill that moves with interchange. Helcim's statement describes most merchants, not any one seller, so a seller's own statements decide it. The shortfall against Stripe is predictability. Stripe's flat 2.9% + 30¢ gives a per-sale cost that can be computed from the ticket, so a seller who wants a fixed per-sale cost gets it from Stripe."
+      },
+      {
+        "heading": "Authorize.net Pricing, Plans and Fit",
+        "body": "Authorize.net's All-in-One plan charges $25 a month plus 2.9% + 30¢ per transaction, subject to eligibility. The per-sale rate matches Stripe's exactly, so a $50 sale costs $1.75 on either one.\n\nThe difference is the $25 monthly fee, which adds $300 a year at every volume. In our model, Authorize.net totals $375 at 200 sales, $2,125 at 1,200 sales and $7,025 at 4,000 sales, each $25 above Stripe.\n\nSpread across sales, the $25 fee adds 12.5¢ to each of 200 sales but about 0.6¢ to each of 4,000.\n\nAuthorize.net fits people who want an Authorize.net account and accept $300 a year above Stripe's published cost. On published fees alone, Authorize.net never undercuts Stripe, because the rates match and Stripe charges no monthly fee."
+      },
+      {
+        "heading": "Shopify Payments Pricing, Plans and Fit",
+        "body": "Shopify Payments pairs with a Shopify plan. The Basic plan costs $29 a month billed yearly, or $39 a month billed monthly, and Shopify Payments card rates start at 2.9% + 30¢.\n\nOur model uses that starting rate and the yearly-billing fee, so its totals are the lowest a Basic plan seller would see: $379 at 200 sales, $2,129 at 1,200 sales and $7,029 at 4,000 sales. Each total is $29 a month ($348 a year) above Stripe. On monthly billing the totals are $389, $2,139 and $7,039, each $39 a month ($468 a year) above Stripe. Any sale billed above the starting rate raises those totals.\n\nThe Basic plan fee is the whole gap. A seller who pays for the Basic plan anyway sees a card rate floor that matches Stripe's $1.75 per $50 sale. A seller with no other use for Shopify pays $348 a year more than Stripe on yearly billing, or $468 on monthly billing, for the same starting rate.\n\nShopify Payments fits people who run their store on the Shopify Basic plan. It falls short of Stripe for sellers outside Shopify, and the published \"from\" wording means the starting rate is the only Shopify Payments rate we could model."
+      },
+      {
+        "heading": "Paddle Pricing, Plans and Fit",
+        "body": "Paddle charges 5% + 50¢ per transaction as an all-in-one merchant of record, with no monthly fee. On a $50 sale that is $3.00, or $1.25 more than Stripe's standard rate.\n\nStripe sells its own merchant-of-record option, Stripe Managed Payments. It charges Stripe's 2.9% + 30¢ Payments fee plus 3.5% per transaction, or 6.4% + 30¢ in total, which is $3.50 on a $50 sale and $0.50 more than Paddle.\n\nOur model shows the merchant-of-record premium at each size. Paddle totals $600, $3,600 and $12,000 a month across the three scenarios, and Stripe Managed Payments totals $700, $4,200 and $14,000. Against Stripe's standard rate, Paddle costs $3,000 to $60,000 a year more.\n\nBetween the two merchant-of-record options, Paddle costs less on tickets above $14.29 and Stripe Managed Payments costs less below it. At $14.29, both formulas come to about $1.21 per sale.\n\nAt 6.4% + 30¢, a $45 order pays $3.18 in fees, which takes 28.3% of a 25% gross margin and leaves $8.07. A $120 order pays $7.98 and gives up 26.6% of that margin. A $250 order pays $16.30 and gives up 26.1%.\n\nPaddle publishes the merchant-of-record fee as a single combined rate. For that reason, compare Paddle against Stripe Managed Payments, the other merchant-of-record option on this page, instead of against Stripe's standard rate. Paddle fits people who want an all-in-one merchant of record and sell tickets above $14.29."
+      },
+      {
+        "heading": "Clover Pricing, Plans and Fit",
+        "body": "Clover's retail plans publish card rates by how the card is taken. Tapped, swiped or inserted cards cost 2.6% + 10¢ on Basic and 2.3% + 10¢ on Standard and Advanced. Keyed-in sales cost 3.5% + 10¢ on all three plans.\n\nDevice plans carry the monthly cost. Basic is $16 a month for 36 months or $349. Standard is $180 a month for 36 months, or $1,899 plus $84.95 a month. Advanced is $240 a month for 36 months, or $2,648 plus $104.90 a month. Clover sits outside the modeled totals because its lowest rates apply to card-present sales and its plans include hardware, while this model covers online sales.\n\nOn a $50 keyed-in sale, Clover's 3.5% + 10¢ costs $1.85, or $0.10 more than Stripe. The lower 10¢ fixed fee helps small tickets, so Clover's keyed-in rate matches Stripe's at a $33.33 ticket and costs less below it. On a $20 keyed-in sale, Clover charges 80¢ and Stripe charges 88¢.\n\nAt 2.3% + 10¢, a $50 card-present sale costs $1.25, or $0.50 under Stripe. That saving applies only to Standard and Advanced sales where the card is tapped, swiped or inserted. Add the device plan to Clover's per-sale fees before comparing a month's total with Stripe's no-monthly-fee pricing. At 200 sales a month, Basic's $16 adds 8¢ to each sale and Standard's $180 adds 90¢."
+      },
+      {
+        "heading": "Who This Is Not For",
+        "body": "This comparison does not fit businesses with negotiated custom pricing or enterprise volume commitments. The model uses only standard published rates and excludes custom volume discounts and implementation labor.\n\nFor sellers with many international buyers, the modeled totals understate Stripe's cost. Stripe adds 1.5% on international cards and 1% on currency conversion, which lifts a $50 sale from $1.75 to as much as $3.00. Sellers in that position can recompute each scenario at the higher Stripe rate before reading the ranking.\n\nThe model also assumes zero disputes, and Stripe charges $15 for each one. It covers online card sales only, so in-person sellers get no ranking here, and our [comparison hub](/compare/) lists other head-to-head pages. Sellers looking for funding instead of a card processor can start with the [small business financing guide](/guides/small-business-financing-guide/)."
+      },
+      {
+        "heading": "What Would Change Our Answer",
+        "body": "The ranking rests on published rates as of November 28, 2026. Any of these changes would move it:\n\n- Stripe raising its 2.9% + 30¢ standard rate or adding a monthly fee would let the matched-rate rivals tie or win.\n- A rival with a monthly fee needs a rate cut equal to that fee divided by monthly volume to tie Stripe. For Authorize.net's $25, that is 0.25 points at $10,000 a month and 0.0125 points at $200,000.\n- Square dropping its Free plan online rate to 2.9% + 30¢ would tie Stripe at every size.\n- A seller whose own Helcim statements confirm the page's below-2.5% effective rate on keyed and online payments would pay less on Helcim than on Stripe at $50 tickets up to $50,000 a month. We keep Helcim outside the totals because that figure is Helcim's statement about most merchants, not a rate schedule.\n- A fee change at Paddle or Stripe Managed Payments would move the $14.29 crossover between the two merchant-of-record options.\n\nUntil one of those changes lands, Stripe holds the lowest modeled cost for domestic online card sales at a $50 ticket."
+      }
+    ],
+    "stillBetterFit": {
+      "heading": "When Stripe Is Still the Better Fit",
+      "body": "Stripe is the better fit for an online seller paying standard rates on domestic cards. Its 2.9% + 30¢ with no setup or monthly fees produced the lowest total in all three modeled scenarios. Stripe's best fit is developers and online sellers.\n\nAt 200 sales a month, Stripe's $350 total runs $25 to $49 below the matched-rate rivals and $40 below Square Free. At 4,000 sales, the matched-rate gap stays at $25 to $49, and the Square Free gap reaches $800 a month.\n\nStripe also offers a merchant-of-record option through Stripe Managed Payments at 6.4% + 30¢. That costs $0.50 more than Paddle on a $50 sale but less than Paddle on tickets under $14.29.\n\nTwo counterexamples cut against Stripe. A seller whose average interchange stays under 2.5% of a $50 ticket pays less on Helcim, and Clover's keyed-in rate beats Stripe below a $33.33 ticket before its device plan costs. Outside those two cases, the modeled numbers favor Stripe."
+    },
+    "verdict": "Stripe has the lowest published cost for domestic online card sales at a $50 ticket: $350, $2,100 and $7,000 a month across our three modeled shop sizes. Authorize.net, Shopify Payments and Square Plus match its rate and add $25 to $49 a month. Square Free, Paddle and Stripe Managed Payments charge more per sale. Switching saves money in two cases: Helcim when average interchange stays under 2.5% of the ticket, and Clover's keyed-in rate on tickets under $33.33 before its $16 to $240 monthly device plans. Shopify Payments fits sellers already paying for the Basic plan, at $29 a month billed yearly or $39 billed monthly. Multiply last month's sale count and average ticket by each published rate above, then shortlist only the Stripe alternatives that come in under Stripe's total.",
+    "faqs": [
+      {
+        "question": "Does Square charge more than Stripe for online payments?",
+        "answer": "Square's Free plan charges more per online sale than Stripe: 3.3% + 30¢ against 2.9% + 30¢, or $1.95 against $1.75 on a $50 sale. Square's Plus plan matches Stripe's rate but adds $49 a month per location. In our model, Square Free costs $40 to $800 a month more than Stripe, and Square Plus costs $49 a month more at every size."
+      },
+      {
+        "question": "When does Square's Plus plan beat its Free plan?",
+        "answer": "Square Plus beats Square Free once monthly online sales pass $12,250. The Plus plan saves 0.4% of sales and costs $49 a month, and $49 divided by 0.004 is $12,250. At a $50 ticket, that is 245 sales a month. In our model, Square Free wins at 200 sales ($390 against $399) and Square Plus wins at 1,200 sales ($2,149 against $2,340)."
+      },
+      {
+        "question": "Is Paddle cheaper than Stripe Managed Payments?",
+        "answer": "Paddle costs less than Stripe Managed Payments on tickets above $14.29. Paddle charges 5% + 50¢ and Stripe Managed Payments charges 6.4% + 30¢, so a $50 sale costs $3.00 on Paddle and $3.50 on Stripe Managed Payments. Below $14.29, the lower 30¢ fixed fee makes Stripe Managed Payments cheaper. Both cost more than Stripe's standard $1.75 per $50 sale."
+      },
+      {
+        "question": "Is Helcim cheaper than Stripe?",
+        "answer": "Helcim is cheaper than Stripe when average interchange stays under 2.5% of a $50 ticket. Helcim publishes a margin of 0.50% + 25¢ on keyed and online sales up to $50,000 a month, which is $0.50 per $50 sale before interchange. Helcim does not publish interchange as a number, so its exact bill cannot be modeled in advance the way Stripe's flat rate can."
+      },
+      {
+        "question": "What does Stripe charge for international cards and disputes?",
+        "answer": "Stripe adds 1.5% for international cards and 1% for currency conversion on top of its 2.9% + 30¢ domestic rate, and it charges $15 per dispute. A $50 international sale with currency conversion costs $3.00 at 5.4% + 30¢. One $15 dispute equals Stripe's fees on about 8.6 domestic sales at $50."
+      }
+    ],
+    "related": [
+      {
+        "label": "PayPal Alternatives",
+        "href": "/alternatives/paypal/"
+      },
+      {
+        "label": "Venmo Alternatives",
+        "href": "/alternatives/venmo/"
+      },
+      {
+        "label": "Best Invoicing Apps for Freelancers",
+        "href": "/roundup/best-invoicing-apps-for-freelancers/"
+      },
+      {
+        "label": "Best Accounting Software for Freelancers",
+        "href": "/roundup/best-accounting-software-for-freelancers/"
+      },
+      {
+        "label": "Small Business Financing Guide",
+        "href": "/guides/small-business-financing-guide/"
+      },
+      {
+        "label": "Sales Tax vs. Use Tax",
+        "href": "/compare/sales-tax-vs-use-tax/"
+      },
+      {
+        "label": "All Comparisons",
+        "href": "/compare/"
+      }
+    ]
+  },
+  {
+    "slug": "square",
+    "product": "Square",
+    "officialUrl": "https://squareup.com/",
+    "title": "Square Alternatives for In-Person Card Fees in 2026",
+    "h1": "Square Alternatives for In-Person Card Fees in 2026",
+    "metaDescription": "Square alternatives compared on in-person card fees: Stripe Terminal, SumUp, Shopify, Clover, Toast and Helcim, with monthly costs at three volumes.",
+    "published": "2026-11-28",
+    "updated": "2026-11-28",
+    "intro": "Stripe Terminal, Clover, Toast, SumUp, Shopify POS (point of sale) and Helcim are six [Square](https://squareup.com/) alternatives for in-person card payments. Stripe Terminal's 2.7% + 5¢ has the lowest per-sale cost among the $0-a-month options that publish one rate. On a $30 ticket it costs 86¢. Square's free plan publishes 2.6% + 15¢ for tap, dip or swipe sales, which comes to 93¢, a 7¢ gap before hardware. Two exceptions sit outside that ranking. Clover's 2.3% + 10¢ comes with a device plan, and Helcim states in-person effective rates near or below 2% for most merchants.\n\nAt The Modern Wallet, we built a three-scenario cost model from each product's published in-person rate and monthly fee, checked November 28, 2026. Stripe Terminal came out cheapest of the $0-a-month plans at 500, 3,000 and 10,000 sales a month. It saves between $420 and $8,400 a year against Square's free plan. The ranking flips at higher tickets. Above a $100 average sale, Square's free plan costs less per sale than Stripe Terminal.\n\nOn a $30 ticket with no monthly plan, Stripe Terminal is cheapest at 86¢ per sale, ahead of SumUp at 88¢ and Square's free plan at 93¢. The fees below cover domestic United States in-person card sales at one location. They leave out hardware, disputes and custom pricing. Our [PayPal alternatives](/alternatives/paypal/) and [QuickBooks alternatives](/alternatives/quickbooks/) pages compare other money tools, and the [comparisons hub](/compare/) lists every head-to-head page.",
+    "tableTitle": "In-Person Card Fees for Square and Six Alternatives",
+    "tableNote": "Fees and prices from each provider's own website, checked November 28, 2026. Prices are in U.S. dollars.",
+    "tableColumns": [
+      "Product",
+      "Fees and pricing",
+      "Best fit"
+    ],
+    "rows": [
+      {
+        "product": "Square",
+        "pricing": "Square Free: 2.6% + 15¢ in person, $0/month per location. Square Plus: 2.5% + 15¢, $49/month per location. Square Premium: 2.4% + 15¢, $149/month per location. Custom pricing may be available above $250,000 a year.",
+        "bestFit": "Small shops and mobile sellers",
+        "subject": true
+      },
+      {
+        "product": "Stripe Terminal",
+        "pricing": "2.7% + 5¢ per domestic in-person card transaction; $0/month in our model; readers from $59",
+        "bestFit": "Sellers with average tickets under $100 who want no monthly plan fee"
+      },
+      {
+        "product": "Clover",
+        "pricing": "Retail Basic: 2.6% + 10¢. Standard and Advanced: 2.3% + 10¢, for tapped, swiped or inserted cards. Device plans: Basic $16/month for 36 months or $349; Standard $180/month for 36 months or $1,899 + $84.95/month; Advanced $240/month for 36 months or $2,648 + $104.90/month.",
+        "bestFit": "Retail sellers weighing a lower card percentage against a device plan"
+      },
+      {
+        "product": "Toast",
+        "pricing": "Restaurant POS. Starter Kit from $0/month with a higher card rate; Point of Sale from $69/month. Card rates: quote-based; no public price.",
+        "bestFit": "Restaurants that want a dedicated restaurant POS plan"
+      },
+      {
+        "product": "SumUp",
+        "pricing": "Free plan: 2.6% + 10¢ in person, $0/month",
+        "bestFit": "Sellers who want Square Free's percentage with a 10¢ fixed fee and no monthly charge"
+      },
+      {
+        "product": "Shopify POS",
+        "pricing": "Shopify Basic plan $29/month billed yearly ($39/month billed monthly); in-person card rate 2.6% + 10¢",
+        "bestFit": "Sellers who pay for the Shopify Basic plan anyway"
+      },
+      {
+        "product": "Helcim",
+        "pricing": "Interchange plus 0.40% + 8¢ in person on $0 to $50K monthly volume. Helcim states most merchants' total in-person effective rate is near or below 2%.",
+        "bestFit": "Sellers under $50,000 a month who want the markup shown apart from card costs"
+      }
+    ],
+    "chooseSection": {
+      "heading": "How to Choose a Square Alternative",
+      "body": "In our internal cost analysis, we modeled one location taking domestic tap, dip or swipe sales at a $30 average ticket on each product's published rate and monthly fee. Hardware, disputes and custom pricing are left out, except that Clover's device plan is added because it is Clover's monthly fee. Shopify's $29 Basic fee applies to yearly billing and monthly billing costs $39.\n\n- Corner shop, 500 sales a month ($15,000): Square Free $465, Square Plus $499, Square Premium $584, Stripe Terminal $430, SumUp $440, Shopify POS Basic $469 ($479 billed monthly), Clover Retail Basic with its $16 device plan $456, Clover Retail Standard with its $180 device plan $575.\n- Busy shop, 3,000 sales a month ($90,000): Square Free $2,790, Square Plus $2,749, Square Premium $2,759, Stripe Terminal $2,580, SumUp $2,640, Shopify POS Basic $2,669 ($2,679 billed monthly), Clover Retail Basic with its $16 device plan $2,656, Clover Retail Standard with its $180 device plan $2,550.\n- High-volume shop, 10,000 sales a month ($300,000): Square Free $9,300, Square Plus $9,049, Square Premium $8,849, Stripe Terminal $8,600, SumUp $8,800, Shopify POS Basic $8,829 ($8,839 billed monthly), Clover Retail Basic with its $16 device plan $8,816, Clover Retail Standard with its $180 device plan $8,080.\n\nAmong the $0-a-month plans, Stripe Terminal costs least in all three scenarios. It saves $420 a year against Square Free at 500 sales and $8,400 a year at 10,000 sales. Clover Standard changes that picture only when its $180 device plan is counted. It totals $2,550 and $8,080 at 3,000 and 10,000 sales, below Stripe Terminal's $2,580 and $8,600, and $575 at 500 sales, above Stripe Terminal's $430. Those Clover totals include leased hardware that the other lines leave out. Square Plus and Square Premium both cost more than Square Free at 500 sales and less from 3,000 sales up.\n\nBreak-even counterexample: Stripe Terminal's 2.7% + 5¢ and Square Free's 2.6% + 15¢ cost the same at a $100 average ticket. Both come to $2.75 per sale. The math is 0.027 x 100 + 0.05 for Stripe Terminal and 0.026 x 100 + 0.15 for Square Free. Above $100 per sale, Square Free costs less per sale than Stripe Terminal. Square Premium's 2.4% + 15¢ matches Stripe Terminal at a $33.33 ticket. On a $60 ticket Premium charges $1.59 per sale against $1.67, an 8¢ saving. It takes 1,863 sales a month to cover Premium's $149 fee.\n\nBeyond the model, five checks decide the fit:\n\n- Average ticket size. SumUp matches Stripe Terminal at a $50 ticket and costs less above it. Both come to $1.40 (0.027 x 50 + 0.05 and 0.026 x 50 + 0.10). Square Free matches Stripe Terminal at $100.\n- Monthly sales count. Square Plus's $49 fee and Shopify POS Basic's $29 fee cost more than they save at 500 sales and save money at 3,000. Shopify bills $29 yearly or $39 monthly.\n- Hardware. Stripe Terminal readers start at $59. Clover bundles hardware into device plans from $16 to $240 a month.\n- Restaurant service. Toast's Restaurant POS runs from a $0/month Starter Kit with a higher card rate to a $69/month Point of Sale plan.\n- Pricing structure. Helcim charges interchange plus 0.40% + 8¢ and publishes no single interchange figure. It states that most merchants land near or below 2% in person.\n\nOur [sales tax vs. use tax comparison](/compare/sales-tax-vs-use-tax/) explains the tax side. Funding for a new shop sits in our [small business financing guide](/guides/small-business-financing-guide/)."
+    },
+    "alternatives": [
+      {
+        "heading": "Stripe Terminal Pricing, Plans and Fit",
+        "body": "Stripe Terminal is Stripe's in-person card product, priced at 2.7% + 5¢ per domestic in-person card transaction, with card readers from $59. Our model carries no monthly fee for Stripe Terminal, so the per-sale rate is the whole ongoing cost. On a $30 ticket that comes to 81¢ plus 5¢, or 86¢ per sale.\n\nThat 86¢ makes Stripe Terminal the lowest-cost $0-a-month pick in all three scenarios: $430 a month at 500 sales, $2,580 at 3,000 sales and $8,600 at 10,000 sales. Against Square Free, the yearly savings are $420, $2,520 and $8,400. At 500 sales, two months of the $35 monthly saving ($70) more than covers a $59 reader.\n\nStripe Terminal fits sellers with average tickets under $100 who want no monthly plan fee. Its 2.7% rate sits above all three of Square's in-person percentages, so the 5¢ fixed fee does all of the saving. At a $100 ticket Stripe Terminal and Square Free both charge $2.75, and above $100 Square Free costs less per sale."
+      },
+      {
+        "heading": "Clover Pricing, Plans and Fit",
+        "body": "Clover's retail pricing lists 2.6% + 10¢ for tapped, swiped or inserted cards on Retail Basic and 2.3% + 10¢ on Standard and Advanced. On a $30 ticket, Basic works out to 88¢ per sale (78¢ plus 10¢), which is 5¢ below Square Free's 93¢. Standard and Advanced work out to 79¢ (69¢ plus 10¢), 7¢ below Stripe Terminal's 86¢.\n\nThe device plans carry the monthly cost. Basic is $16 a month for 36 months or $349. Standard is $180 a month for 36 months, or $1,899 plus $84.95 a month. Advanced is $240 a month for 36 months, or $2,648 plus $104.90 a month. These plans include the hardware, which the rest of this model leaves out.\n\nCounting the leased device plan changes the totals. At 500 sales a month, Basic comes to $456 ($440 plus $16) and Standard to $575 ($395 plus $180). At 3,000 sales, Basic is $2,656 and Standard is $2,550. At 10,000 sales, Basic is $8,816 and Standard is $8,080. Standard beats Stripe Terminal's $2,580 and $8,600 at the two larger sizes, and it needs a 36-month commitment.\n\nClover fits retail sellers who want the lowest card percentage in the comparison table and will take a device plan to get it. Square publishes a $0, $49 or $149 monthly fee per location. Square Premium's $8,849 at 10,000 sales sits above Clover Standard's $8,080, though a Clover total moves with the share of sales that are card-present."
+      },
+      {
+        "heading": "Toast Pricing, Plans and Fit",
+        "body": "Toast sells a Restaurant POS with two published entry points: a Starter Kit from $0/month with a higher card rate, and a Point of Sale plan from $69/month. Other plans are quote-based. Toast publishes no card percentages, so its card rate is quote-based with no public price, and Toast sits outside the scenario model.\n\nThe monthly fees can still be compared with Square's. Toast's Point of Sale plan at $69 costs $20 a month more than Square Plus at $49 and $80 a month less than Square Premium at $149. Over a year, Toast's $69 plan comes to $828 in plan fees before any card fee, against $588 for Square Plus.\n\nToast fits restaurants that want a dedicated restaurant point-of-sale plan. The Starter Kit matches Square Free's $0 monthly fee, though Toast labels its card rate as higher. Square publishes in-person rates for all three of its plans and Toast does not, so a per-sale comparison against Square depends on a Toast quote."
+      },
+      {
+        "heading": "SumUp Pricing, Plans and Fit",
+        "body": "SumUp's Free plan charges 2.6% + 10¢ per in-person sale with a $0 monthly fee. That is Square Free's percentage with a fixed fee 5¢ lower. SumUp costs less per sale than Square Free at every ticket size. On a $30 ticket SumUp charges 88¢ against Square Free's 93¢.\n\nIn our model, SumUp saves $25 a month against Square Free at 500 sales, $150 at 3,000 and $500 at 10,000. That is $300, $1,800 and $6,000 a year. SumUp trails Stripe Terminal by $10 a month at 500 sales ($440 against $430) and by $200 a month at 10,000 sales. The two tie at a $50 ticket. Above $50, SumUp costs less per sale.\n\nSumUp fits sellers whose average ticket sits above $50 and who want no monthly fee. It falls short of Square on plan choice. This comparison covers only SumUp's Free plan, while Square adds Plus at 2.5% and Premium at 2.4%. On a $60 ticket Square Premium charges $1.59 per sale against SumUp's $1.66 (0.026 x 60 + 0.10)."
+      },
+      {
+        "heading": "Shopify POS Pricing, Plans and Fit",
+        "body": "Shopify POS on the Basic plan carries an in-person card rate of 2.6% + 10¢. The plan costs $29 a month billed yearly, or $39 a month billed monthly. On a $30 ticket the rate is 88¢ per sale, the same as SumUp. The plan fee is the whole difference between the two.\n\nOur model uses the $29 yearly-billing fee. Shopify POS Basic costs $469 a month at 500 sales, $4 more than Square Free. At 3,000 sales it costs $2,669 and saves $121 a month against Square Free. At 10,000 sales it costs $8,829 and saves $471. The yearly results against Square Free run from a $48 loss to savings of $1,452 and $5,652. On monthly billing the totals are $479, $2,679 and $8,839, so the results become a $168 yearly loss and savings of $1,332 and $5,532.\n\nShopify POS fits sellers who pay the Shopify Basic fee anyway, because their in-person cost then drops to SumUp's 88¢ per sale. A seller who would add the plan only for card payments pays $29 or $39 a month for the per-sale rate SumUp charges at $0. Square Free also charges $0 per location, so at 500 sales it stays $4 a month cheaper than Shopify POS Basic on yearly billing."
+      },
+      {
+        "heading": "Helcim Pricing, Plans and Fit",
+        "body": "Helcim prices in-person sales as interchange plus 0.40% + 8¢ on $0 to $50K of monthly volume. On a $30 sale, Helcim's markup is 12¢ plus 8¢, or 20¢, and the interchange cost sits on top of that. Helcim does not publish interchange as one figure, so Helcim sits outside the scenario model. Its own pricing page says the total in-person effective rate is near or below 2% for most merchants. That would be about 60¢ on a $30 sale, against Stripe Terminal's 86¢. It is Helcim's statement about most merchants, not a rate for any one seller.\n\nThe $50K band splits the three scenarios. The corner shop at $15,000 a month falls inside it. The busy shop at $90,000 falls in the $50K to $100K band, where the in-person margin is 0.35% + 7¢. The high-volume shop at $300,000 falls in the $100K to $500K band, at 0.25% + 7¢.\n\nHelcim fits sellers under $50,000 a month who want the processing markup shown apart from the card cost. Square Free's 2.6% + 15¢ gives one per-sale figure, 93¢ on a $30 ticket, while Helcim's total changes with interchange. A seller who wants to budget card fees from a single published rate gets that from Square."
+      },
+      {
+        "heading": "Who This Is Not For",
+        "body": "Our cost model covers domestic in-person card sales at one location, and four groups of sellers need a different comparison:\n\n- Sellers who mostly take payments online. Square Free's online rate is 3.3% + 30¢, so the in-person rates here do not apply, and our [PayPal alternatives](/alternatives/paypal/) page compares other payment options.\n- Freelancers who bill clients by invoice. The [best invoicing apps for freelancers](/roundup/best-invoicing-apps-for-freelancers/) roundup fits that job better than a card-reader comparison.\n- Shops processing more than $250,000 a year. Square says custom pricing may be available above that level, which the published figures used here leave out.\n- Sellers choosing bookkeeping software first. Our [best accounting software for freelancers](/roundup/best-accounting-software-for-freelancers/) roundup covers that choice."
+      },
+      {
+        "heading": "What Would Change Our Answer",
+        "body": "These published inputs would move the ranking if they changed:\n\n- Square's in-person rates. Each 1¢ cut to Square Free's 15¢ fixed fee narrows the 7¢ gap with Stripe Terminal on a $30 sale by 1¢.\n- Stripe Terminal's 2.7% + 5¢. A rise in either part would shrink Stripe Terminal's lead in all three scenarios.\n- Average ticket. Above $50 SumUp costs less per sale than Stripe Terminal, and above $100 Square Free does too.\n- Missing inputs. A Toast card rate or a single Helcim interchange figure would bring those two fully into the model. Clover's device plan totals already appear above, and its 2.3% + 10¢ works out to 79¢ on a $30 sale.\n- A custom Square quote. The busy shop processes $1,080,000 a year ($90,000 x 12), above the $250,000 level where Square says sellers may be eligible for custom pricing, so a quoted rate could replace the published Square figures in the busy and high-volume scenarios."
+      }
+    ],
+    "stillBetterFit": {
+      "heading": "When Square Is Still the Better Fit",
+      "body": "Square is the better fit on cost against Stripe Terminal when the average ticket runs above $100. Square Free's 2.6% + 15¢ then costs less per sale than Stripe Terminal's 2.7% + 5¢. At a $150 ticket, Square Free charges $4.05 (0.026 x 150 + 0.15). Stripe Terminal charges $4.10 (0.027 x 150 + 0.05).\n\nSquare publishes three in-person plans, and the cheapest one changes with volume. At 500 sales Square Free costs least of the three ($465). At 3,000 sales Square Plus does ($2,749). At 10,000 sales Square Premium does ($8,849). A shop moving between those volumes can change Square plans instead of changing products.\n\nSquare Premium's 2.4% is the lowest percentage in the model and trails only Clover's 2.3% Standard and Advanced rate. On a $60 ticket, Square Premium charges $1.59 per sale against $1.67 at Stripe Terminal and $1.66 at SumUp. Square also says custom pricing may be available above $250,000 a year, which our published-rate model leaves out."
+    },
+    "verdict": "For in-person card sales at a $30 average ticket, Stripe Terminal is the lowest-cost $0-a-month Square alternative in our model. It saves $420 a year at 500 sales and $8,400 a year at 10,000 sales against Square Free. SumUp ranks second at no monthly fee and costs less than Stripe Terminal above a $50 ticket. Square fits better above a $100 ticket, and Square Premium is the cheapest Square plan at 10,000 sales. Clover Standard totals less than Stripe Terminal at 3,000 and 10,000 sales once its $180 device plan is counted, and Helcim states in-person effective rates near or below 2% for most merchants. Divide last month's card sales by your sale count to get an average ticket, then match it to the three scenarios above before choosing among these Square alternatives.",
+    "faqs": [
+      {
+        "question": "Is Square Plus worth $49 a month for in-person sales?",
+        "answer": "Square Plus costs more than Square Free at 500 sales a month on a $30 ticket and less at 3,000. In our model Square Plus totals $499 a month at 500 sales against $465 on Square Free, a $34 loss. At 3,000 sales it totals $2,749 against $2,790, a $41 saving, because its 2.5% rate saves 3¢ a sale on a $30 ticket."
+      },
+      {
+        "question": "Does Stripe Terminal charge a monthly fee?",
+        "answer": "Our model carries no monthly fee for Stripe Terminal, and its cost is 2.7% + 5¢ per domestic in-person card transaction. On a $30 ticket that is 86¢ per sale. Card readers start at $59, and that hardware cost sits outside our model."
+      },
+      {
+        "question": "Which Square alternative fits a restaurant?",
+        "answer": "Toast is the restaurant option in this comparison, with a Restaurant POS that starts from a $0/month Starter Kit with a higher card rate or a $69/month Point of Sale plan. Toast publishes no card percentages, so its card rate is quote-based with no public price, and Toast is not in the cost model. The $69 plan costs $20 a month more than Square Plus and $80 a month less than Square Premium."
+      },
+      {
+        "question": "Is Clover cheaper than Square?",
+        "answer": "Clover's published card rates are lower per sale than Square Free's on a $30 ticket. Retail Basic at 2.6% + 10¢ charges 88¢ against Square Free's 93¢, and Standard and Advanced at 2.3% + 10¢ charge 79¢. Clover sells these rates with device plans from $16 to $240 a month. Counting the plan, Retail Basic totals $456 at 500 sales against $465 for Square Free, and Standard totals $2,550 at 3,000 sales against $2,790."
+      },
+      {
+        "question": "Does Square lower its rates for high-volume sellers?",
+        "answer": "Square says sellers above $250,000 a year may be eligible for custom pricing. Below that level, Square's lowest published in-person rate is Square Premium's 2.4% + 15¢ at $149 a month per location. In our 10,000-sale scenario, Square Premium is the cheapest Square plan at $8,849 a month, against $8,600 at Stripe Terminal."
+      }
+    ],
+    "related": [
+      {
+        "label": "PayPal Alternatives",
+        "href": "/alternatives/paypal/"
+      },
+      {
+        "label": "QuickBooks Alternatives",
+        "href": "/alternatives/quickbooks/"
+      },
+      {
+        "label": "Best Invoicing Apps for Freelancers",
+        "href": "/roundup/best-invoicing-apps-for-freelancers/"
+      },
+      {
+        "label": "Best Accounting Software for Freelancers",
+        "href": "/roundup/best-accounting-software-for-freelancers/"
+      },
+      {
+        "label": "Small Business Financing Guide",
+        "href": "/guides/small-business-financing-guide/"
+      },
+      {
+        "label": "Sales Tax vs. Use Tax",
+        "href": "/compare/sales-tax-vs-use-tax/"
+      },
+      {
+        "label": "All Comparisons",
+        "href": "/compare/"
+      }
+    ]
+  },
+  {
+    "slug": "expensify",
+    "product": "Expensify",
+    "officialUrl": "https://www.expensify.com/",
+    "title": "Expensify Alternatives 2026: Pricing and Plans Compared",
+    "h1": "Expensify Alternatives 2026: Pricing and Plans Compared",
+    "metaDescription": "Expensify alternatives compared on published 2026 per-user prices, with 5, 25 and 100 member cost totals for Zoho Expense, Ramp, Brex, BILL, Sage and Rydoo.",
+    "published": "2026-11-28",
+    "updated": "2026-11-28",
+    "intro": "Zoho Expense, Ramp, Brex, BILL Spend & Expense, Sage Expense Management and Rydoo are six alternatives to [Expensify](https://www.expensify.com/). Four of them publish a software price below Expensify's $5 per member per month. At 100 members, Expensify Collect costs $500 a month ($6,000 a year). Ramp Free, Brex Essentials and BILL Spend & Expense each list $0 per user, and Zoho Expense Standard comes to $400. Two alternatives cost more at that size: Rydoo Essentials at $1,200 a month and Sage Expense Management Growth at $1,499 billed monthly ($1,199 billed annually).\n\nAt The Modern Wallet, we modeled each published per-seat price at 5, 25 and 100 members, so the totals sit side by side in the scenario list below. The model counts software fees only. It leaves out corporate card rewards, travel booking fees, implementation fees and negotiated enterprise discounts. For more providers priced against two of these, see our [Ramp alternatives](/alternatives/ramp/) and [Brex alternatives](/alternatives/brex/) pages.\n\nThree alternatives list $0 per user: Ramp Free, Brex Essentials and BILL Spend & Expense. Zoho Expense's Free plan costs nothing for teams of up to 3 users. Expensify lists its own Submit plan as free. Teams that only need a written record can start with our [expense report template](/templates/expense-report-template/). Every head-to-head page we publish sits on our [comparisons hub](/compare/).",
+    "tableTitle": "Expensify Alternatives by Published Price",
+    "tableNote": "Fees and prices from each provider's own website, checked November 28, 2026. Prices are in U.S. dollars.",
+    "tableColumns": [
+      "Product",
+      "Fees and pricing",
+      "Best fit"
+    ],
+    "rows": [
+      {
+        "product": "Expensify",
+        "pricing": "Collect: $5 per member per month. Submit: free. Control: custom pricing from $9 per member per month.",
+        "bestFit": "Small teams paying one flat per-member rate",
+        "subject": true
+      },
+      {
+        "product": "Zoho Expense",
+        "pricing": "Standard: $4 per user per month billed monthly, $3 billed annually. Free plan capped at 3 users.",
+        "bestFit": "Teams of up to 3 on the Free plan; larger teams wanting a paid rate under $5 per user"
+      },
+      {
+        "product": "Ramp",
+        "pricing": "Free: $0 per user per month. Plus: $15 per user per month plus a platform fee based on team size (fee amount not published); Ramp notes 20% savings with annual billing.",
+        "bestFit": "Teams that want a $0 per-user software price"
+      },
+      {
+        "product": "Brex",
+        "pricing": "Essentials: $0 per user per month. Premium: $12 per user per month.",
+        "bestFit": "Teams that want $0 per user with a published paid upgrade price"
+      },
+      {
+        "product": "BILL Spend & Expense",
+        "pricing": "$0 per user per month, with no subscription or per-user software fee.",
+        "bestFit": "Teams that want software cost held at $0 as head count grows"
+      },
+      {
+        "product": "Sage Expense Management",
+        "pricing": "Growth: $14.99 per active user per month billed monthly, $11.99 billed annually; minimum billing of 5 users.",
+        "bestFit": "Teams of 5 or more that want per-active-user pricing"
+      },
+      {
+        "product": "Rydoo",
+        "pricing": "Essentials: $12 per user per month billed monthly, $9 billed annually; starts at 5 users.",
+        "bestFit": "Teams of 5 or more"
+      }
+    ],
+    "chooseSection": {
+      "heading": "How to Choose an Expensify Alternative",
+      "body": "In our internal cost analysis, we modeled monthly software cost at three team sizes from each published per-seat price. The model assumes every member is a paid seat on a standard self-serve plan billed monthly, with no add-ons, card rewards or travel fees. Sage Expense Management's annual-billing total follows in parentheses.\n\n- 5 members: Expensify $25, Zoho Expense $20, Ramp $0, Brex Essentials $0, BILL Spend & Expense $0, Sage Expense Management $74.95 ($59.95 billed annually), Rydoo $60, Brex Premium $60.\n- 25 members: Expensify $125, Zoho Expense $100, Ramp $0, Brex Essentials $0, BILL Spend & Expense $0, Sage Expense Management $374.75 ($299.75 billed annually), Rydoo $300, Brex Premium $300.\n- 100 members: Expensify $500, Zoho Expense $400, Ramp $0, Brex Essentials $0, BILL Spend & Expense $0, Sage Expense Management $1,499 ($1,199 billed annually), Rydoo $1,200, Brex Premium $1,200.\n\nZoho Expense saves $60 a year at 5 members and $1,200 a year at 100. Ramp, Brex Essentials and BILL Spend & Expense remove the whole bill: $300, $1,500 and $6,000 a year. Rydoo, Sage Expense Management and Brex Premium cost more than double Expensify at every size on monthly billing.\n\nBreak-even counterexample: at 3 members, Expensify Collect costs $15 a month. Zoho Expense's Free plan, capped at 3 users, costs $0. At 4 members, Expensify Collect is $20 a month. Rydoo and Sage Expense Management both start at 5 users. That start costs $60 on Rydoo and $74.95 on Sage Expense Management billed monthly, or $59.95 on Sage billed annually. Below 5 users, Expensify beats both. A fourth member also pushes a team from Zoho Expense Free to Standard at $16 a month.\n\nOnce the totals are clear, four checks narrow the list:\n- Count paying members and compare that number with billing minimums. Rydoo starts at 5 users, and Sage Expense Management bills a minimum of 5.\n- Pick monthly or annual billing. Zoho Expense drops from $4 to $3 per user, Rydoo from $12 to $9 and Sage Expense Management from $14.99 to $11.99 on annual terms.\n- Price the upgrade tier as well as the entry plan. Brex Premium is $12 per user, and Ramp Plus is $15 per user plus an unpublished platform fee.\n- Treat the totals above as seat costs only. Card rewards, travel booking fees and implementation fees sit outside the model.\n\nFor the accounting software side of the same budget, our [accounting software roundup for freelancers](/roundup/best-accounting-software-for-freelancers/) and [QuickBooks alternatives](/alternatives/quickbooks/) page list more options."
+    },
+    "alternatives": [
+      {
+        "heading": "Zoho Expense Pricing, Plans and Fit",
+        "body": "Zoho Expense is the closest paid match to Expensify on price, at $4 per user per month on the Standard plan billed monthly, or $3 billed annually. Its Free plan costs $0 and is capped at 3 users, so a three-person team pays no software fee.\n\nOn the modeled sizes, Zoho Expense Standard costs $20, $100 and $400 a month at 5, 25 and 100 members. That saves $60, $300 and $1,200 a year against Expensify Collect. Annual billing widens the gap: 25 members at $3 a user is $75 a month against Expensify's $125, a $600 yearly saving.\n\nZoho Expense fits teams that want a paid per-user plan priced below Expensify's $5. It costs more than Ramp Free, Brex Essentials and BILL Spend & Expense, which list $0 per user. A fourth member also moves a team off the Free plan and onto Standard at $16 a month."
+      },
+      {
+        "heading": "Ramp Pricing, Plans and Fit",
+        "body": "Ramp lists two tiers. The Free plan costs $0 per user per month. The Plus plan costs $15 per user per month plus a platform fee based on team size, and Ramp notes 20% savings with annual billing. Ramp does not publish that platform fee as a number, so a full Ramp Plus total cannot be calculated from public pricing.\n\nOn the Free plan, Ramp costs $0 at 5, 25 and 100 members, which removes $300, $1,500 and $6,000 a year of Expensify Collect cost at those sizes. Ramp Free fits teams that want a $0 per-user software price with a published per-user rate for the next tier up.\n\nRamp Plus costs more than Expensify on the per-user charge alone. At 25 members, that charge is $375 a month before the platform fee, three times Expensify Collect's $125. Teams that expect to need Ramp Plus face an unknown total, while Expensify Collect keeps a lower published bill."
+      },
+      {
+        "heading": "Brex Pricing, Plans and Fit",
+        "body": "Brex publishes two tiers: Essentials at $0 per user per month and Premium at $12 per user per month. Brex Essentials matches Ramp Free and BILL Spend & Expense at $0 across all three modeled team sizes.\n\nBrex Premium runs the other way. It costs $60, $300 and $1,200 a month at 5, 25 and 100 members, which is $35, $175 and $700 a month more than Expensify Collect. At 100 members, that adds up to $8,400 a year more than Expensify.\n\nBrex Essentials fits teams that want a $0 per-user plan with a published price for the paid tier. Brex Premium fits teams willing to pay $7 per user per month more than Expensify Collect. Our [Brex alternatives](/alternatives/brex/) page covers more providers priced against Brex."
+      },
+      {
+        "heading": "BILL Spend & Expense Pricing, Plans and Fit",
+        "body": "BILL Spend & Expense lists $0 per user per month, with no subscription and no per-user software fee. Its modeled cost is $0 at 5, 25 and 100 members, tied with Ramp Free and Brex Essentials for the lowest total.\n\nAgainst Expensify Collect, BILL Spend & Expense saves $25, $125 and $500 a month at the three sizes. On a yearly basis that is $300, $1,500 and $6,000. Because BILL charges no per-user fee, its published software price does not rise as a team adds members.\n\nBILL Spend & Expense fits teams that want software cost held at $0 as head count grows. The pricing facts we captured list one Spend & Expense plan and no paid tier, so there is no published upgrade price to compare against Expensify Control's starting rate of $9 per member."
+      },
+      {
+        "heading": "Sage Expense Management Pricing, Plans and Fit",
+        "body": "Sage Expense Management prices its Growth plan at $14.99 per active user per month billed monthly, or $11.99 billed annually, with minimum billing of 5 users. Only users who create an expense, or whose connected card has a transaction, count as active.\n\nAt 5, 25 and 100 members, monthly billing costs $74.95, $374.75 and $1,499 a month. Annual billing costs $59.95, $299.75 and $1,199 a month, or $719.40, $3,597 and $14,388 a year. Against Expensify Collect, annual billing runs $419.40, $2,097 and $8,388 a year more. Monthly billing runs $599.40, $2,997 and $11,988 a year more.\n\nThe 5-user minimum hits small teams hardest. A 2-person team is billed for 5 users, or $74.95 a month on monthly billing ($59.95 annual), against $10 on Expensify Collect. Sage Expense Management fits teams of 5 or more that want per-active-user pricing. It costs more than Expensify at every modeled size, on either billing term."
+      },
+      {
+        "heading": "Rydoo Pricing, Plans and Fit",
+        "body": "Rydoo's Essentials plan costs $12 per user per month billed monthly or $9 billed annually, and Rydoo states a 5-user starting point. On monthly billing, Rydoo Essentials costs $60, $300 and $1,200 a month at 5, 25 and 100 members.\n\nAnnual billing lowers that to $45, $225 and $900 a month. Those totals are still $20, $100 and $400 a month above Expensify Collect at the same sizes, or $4,800 a year at 100 members.\n\nRydoo's $12 monthly rate ties Brex Premium. It sits $2.99 below Sage Expense Management's $14.99 monthly rate and $3 below Ramp Plus before Ramp's platform fee. On annual terms, Rydoo's $9 undercuts Sage Expense Management's $11.99 by the same $2.99 per user. Rydoo starts at 5 users and costs more than Expensify at every modeled size."
+      },
+      {
+        "heading": "Who This Is Not For",
+        "body": "This comparison does not fit buyers whose choice depends on corporate card rewards, travel booking fees, implementation costs or negotiated enterprise discounts, because the model excludes all four. The model also leaves out Expensify Control, which lists custom pricing from $9 per member per month, so teams on Control fall outside these numbers.\n\nSolo freelancers who log only their own expenses can start with our [expense report template](/templates/expense-report-template/) before paying for any seat. A team of 3 or fewer has two $0 software paths in this table besides the three $0 plans: Zoho Expense Free and Expensify Submit."
+      },
+      {
+        "heading": "What Would Change Our Answer",
+        "body": "Our answer changes if any of five published prices or limits move:\n- Expensify changes its $5 Collect price; a cut to $4 would tie Zoho Expense Standard billed monthly.\n- Zoho Expense changes its $4 Standard price or raises its Free plan above 3 users.\n- Ramp, Brex or BILL adds a per-user fee to its $0 plan, which would shrink the $6,000 yearly saving at 100 members.\n- Ramp publishes its Plus platform fee, which would let us price Ramp Plus in full.\n- Rydoo or Sage Expense Management drops its 5-user starting point or prices below $5 per user, which would reopen the small-team math.\n\nEach of these would change the scenario totals in the list above. A price cut by Rydoo, Sage Expense Management or Brex Premium to below $5 would move that provider ahead of Expensify Collect."
+      }
+    ],
+    "stillBetterFit": {
+      "heading": "When Expensify Is Still the Better Fit",
+      "body": "Expensify Collect costs less than Rydoo, Sage Expense Management and Brex Premium at every modeled team size. At 25 members, Expensify Collect is $125 a month against $300 for Rydoo Essentials billed monthly, $374.75 for Sage Expense Management billed monthly ($299.75 annual) and $300 for Brex Premium.\n\nTeams below 5 members are the clearest case. At 4 members, Expensify Collect is $20 a month, while Rydoo and Sage Expense Management both state a 5-user starting point that puts them at $60 and $74.95 on monthly billing, or $59.95 on Sage annual billing. Expensify also lists a free Submit plan alongside Collect.\n\nExpensify beats Ramp Plus on published per-user price, $5 against $15 before Ramp's unpublished platform fee. Zoho Expense Standard is the only paid tier in this comparison priced below Expensify Collect. If you already use Expensify and your team needs a paid tier, every paid alternative here except Zoho Expense Standard carries a higher per-user bill."
+    },
+    "verdict": "Ramp Free, Brex Essentials and BILL Spend & Expense list $0 per user, saving $6,000 a year against Expensify Collect at 100 members in our cost model. Zoho Expense fits teams that want a paid plan under $5 per user, saving $1,200 a year at 100 members on monthly billing. Expensify Collect is the better fit against Rydoo, Sage Expense Management and Brex Premium, which cost more than double at every modeled size on monthly billing, and for teams under 5 members facing those 5-user starting points. Count the members who submit expenses each month, multiply by each rate in the comparison table, and shortlist the two lowest-cost Expensify alternatives at that head count.",
+    "faqs": [
+      {
+        "question": "What is the cheapest alternative to Expensify?",
+        "answer": "Ramp Free, Brex Essentials and BILL Spend & Expense tie for cheapest, each listing $0 per user per month. Zoho Expense's Free plan also costs $0 but is capped at 3 users. These are software prices only, and our model leaves out card rewards, travel booking fees and implementation fees."
+      },
+      {
+        "question": "Is Zoho Expense cheaper than Expensify?",
+        "answer": "Yes, Zoho Expense Standard costs $4 per user per month billed monthly, against Expensify Collect at $5 per member. Billed annually, Zoho Expense Standard drops to $3 per user. At 100 members the monthly-billed totals are $400 for Zoho Expense and $500 for Expensify, a $1,200 yearly gap."
+      },
+      {
+        "question": "How much more do Rydoo and Sage Expense Management cost than Expensify?",
+        "answer": "Rydoo Essentials and Sage Expense Management Growth cost more than double Expensify Collect at every modeled team size on monthly billing. At 25 members, Rydoo is $300 a month billed monthly and Sage Expense Management is $374.75 billed monthly ($299.75 billed annually), against $125 for Expensify. Both also start at 5 users, which raises the bill for smaller teams."
+      },
+      {
+        "question": "Does Ramp charge per user?",
+        "answer": "Ramp's Free plan charges $0 per user per month. Ramp Plus costs $15 per user per month plus a platform fee based on team size, and Ramp does not publish that fee as a number. At 25 members, the Plus per-user charge alone is $375 a month before the platform fee."
+      },
+      {
+        "question": "Does annual billing change the Expensify comparison?",
+        "answer": "Annual billing lowers some prices but does not change which providers cost less than Expensify. Zoho Expense falls to $3 per user and Rydoo to $9, which keeps Zoho Expense below Expensify's $5 and Rydoo above it. Sage Expense Management falls from $14.99 to $11.99 per active user, which still sits above $5. The Expensify facts we captured show one rate of $5 per member per month."
+      }
+    ],
+    "related": [
+      {
+        "label": "Ramp Alternatives",
+        "href": "/alternatives/ramp/"
+      },
+      {
+        "label": "Brex Alternatives",
+        "href": "/alternatives/brex/"
+      },
+      {
+        "label": "QuickBooks Alternatives",
+        "href": "/alternatives/quickbooks/"
+      },
+      {
+        "label": "Expense Report Template",
+        "href": "/templates/expense-report-template/"
+      },
+      {
+        "label": "Best Accounting Software for Freelancers",
+        "href": "/roundup/best-accounting-software-for-freelancers/"
+      },
+      {
+        "label": "All Comparisons",
+        "href": "/compare/"
+      }
+    ]
   }
 ]

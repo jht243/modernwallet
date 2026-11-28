@@ -1,0 +1,494 @@
+{
+  "track": "alternatives",
+  "jobId": "mindmap-alternatives-2026-11-28",
+  "canonicalBase": "https://www.themodernwallet.com",
+  "candidates": [
+    {
+      "target": "/alternatives/stripe/",
+      "subject": "Stripe",
+      "title": "Stripe Alternatives 2026: Fees and Features Compared",
+      "officialUrl": "https://stripe.com/",
+      "officialHosts": [
+        "stripe.com",
+        "www.stripe.com"
+      ],
+      "primaryKeyword": "stripe alternatives",
+      "readerQuestion": "What should I use instead of Stripe for accepting card payments? [verb-only — no PAA, no completions]",
+      "workingAnswer": "Square, Helcim, Authorize.net, Shopify Payments, Paddle and Clover are six Stripe alternatives, and most of them publish the same 2.9% + 30¢ online card rate that Stripe does. Stripe's 2.9% + 30¢ costs $1.75 on a $50 online sale, while Square's free plan at 3.3% + 30¢ costs $1.95, a $0.20 difference per sale.",
+      "counterexample": "Helcim publishes an interchange-plus margin of 0.50% + 25¢ on keyed and online sales up to $50,000 a month, which is $0.50 on a $50 sale. Stripe's 2.9% + 30¢ is $1.75, so Helcim costs less whenever average interchange stays under $1.25 per $50 sale (2.5% of the ticket). Helcim's page does not publish interchange as a number, so the flip point is arithmetic only: above 2.5% Stripe costs less, below it Helcim does. On the $60,000 and $200,000 monthly tiers the margins fall to $0.425 and $0.375 per $50 sale, which moves the flip point to 2.65% and 2.75%.",
+      "scenarios": [
+        {
+          "name": "Small online shop: 200 sales a month ($10,000 at a $50 average ticket)",
+          "seats": 1,
+          "monthlyVolume": 200
+        },
+        {
+          "name": "Growing shop: 1,200 sales a month ($60,000)",
+          "seats": 1,
+          "monthlyVolume": 1200
+        },
+        {
+          "name": "Established shop: 4,000 sales a month ($200,000)",
+          "seats": 1,
+          "monthlyVolume": 4000
+        }
+      ],
+      "vendors": [
+        {
+          "name": "Stripe",
+          "planName": "Standard (domestic online card)",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 1.75,
+          "bestFit": "developers and online sellers",
+          "notes": "2.9% + 30¢ per successful domestic card transaction; no setup or monthly fees; +1.5% international cards, +1% currency conversion; $15 dispute fee",
+          "limits": "",
+          "sourceUrl": "https://stripe.com/pricing",
+          "modeled": true
+        },
+        {
+          "name": "Square Online (Free plan)",
+          "planName": "Square Free online card",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 1.95,
+          "bestFit": "",
+          "notes": "3.3% + 30¢ online; $0/month per location",
+          "limits": "",
+          "sourceUrl": "https://squareup.com/us/en/pricing",
+          "modeled": true
+        },
+        {
+          "name": "Square Online (Plus plan)",
+          "planName": "Square Plus online card",
+          "baseMonthlyUsd": 49,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 1.75,
+          "bestFit": "",
+          "notes": "2.9% + 30¢ online; $49/month per location",
+          "limits": "",
+          "sourceUrl": "https://squareup.com/us/en/pricing",
+          "modeled": true
+        },
+        {
+          "name": "Authorize.net",
+          "planName": "All-in-One",
+          "baseMonthlyUsd": 25,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 1.75,
+          "bestFit": "",
+          "notes": "$25/month plus 2.9% + 30¢ per transaction",
+          "limits": "",
+          "sourceUrl": "https://www.authorize.net/sign-up/pricing.html",
+          "modeled": true
+        },
+        {
+          "name": "Shopify Payments (Basic plan)",
+          "planName": "Basic",
+          "baseMonthlyUsd": 29,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 1.75,
+          "bestFit": "",
+          "notes": "$29/month Shopify plan; card rates from 2.9% + 30¢",
+          "limits": "",
+          "sourceUrl": "https://www.shopify.com/pricing",
+          "modeled": true
+        },
+        {
+          "name": "Paddle",
+          "planName": "Merchant of record",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 3.0,
+          "bestFit": "",
+          "notes": "5% + 50¢ per transaction, all-in-one merchant of record, no monthly fee",
+          "limits": "",
+          "sourceUrl": "https://www.paddle.com/pricing",
+          "modeled": true
+        },
+        {
+          "name": "Stripe Managed Payments",
+          "planName": "Stripe merchant of record",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 3.5,
+          "bestFit": "",
+          "notes": "2.9% + 30¢ Payments fee plus 3.5% per Managed Payments transaction = 6.4% + 30¢",
+          "limits": "",
+          "sourceUrl": "https://stripe.com/pricing",
+          "modeled": true
+        },
+        {
+          "name": "Helcim",
+          "planName": "Interchange-plus",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0,
+          "bestFit": "",
+          "notes": "Interchange plus 0.50% + 25¢ keyed and online on $0 to $50K monthly volume; interchange not published as a number",
+          "limits": "",
+          "sourceUrl": "https://www.helcim.com/pricing/",
+          "modeled": false
+        },
+        {
+          "name": "Clover",
+          "planName": "Pay as little as 2.3% + 10¢",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0,
+          "bestFit": "",
+          "notes": "Keyed-in 3.5% + 10¢ on retail plans; device plans",
+          "limits": "",
+          "sourceUrl": "https://www.clover.com/pricing",
+          "modeled": false
+        }
+      ],
+      "sourceNotes": [
+        "Modeled monthlyVolume is the number of domestic online card sales at an assumed $50 average ticket; per-sale cost = published percentage x $50 + published fixed fee.",
+        "Interchange-plus (Helcim) and device-plan (Clover) pricing is not modeled because interchange and device terms are not published as single numbers."
+      ],
+      "conditions": "Domestic US online card payments at a $50 average ticket, standard published rates, no disputes, no currency conversion, no negotiated custom pricing.",
+      "whatWouldChange": "A change to Stripe's 2.9% + 30¢ standard rate, a published Helcim interchange average, or a Paddle or Stripe Managed Payments fee change would move the cost ranking.",
+      "decisionGap": "Pricing pages list rates in isolation and do not show per-sale cost at a fixed ticket size, the $25 to $49 monthly fees that offset identical percentage rates, or the point where interchange-plus beats a flat rate.",
+      "track": "alternatives"
+    },
+    {
+      "target": "/alternatives/square/",
+      "subject": "Square",
+      "title": "Square Alternatives 2026: Fees and Plans Compared",
+      "officialUrl": "https://squareup.com/",
+      "officialHosts": [
+        "squareup.com",
+        "www.squareup.com"
+      ],
+      "primaryKeyword": "square alternatives",
+      "readerQuestion": "What should I use instead of Square for taking card payments in person? [verb-only — no PAA, no completions]",
+      "workingAnswer": "Stripe Terminal, Clover, Toast, SumUp, Shopify POS and Helcim are six Square alternatives, and Stripe Terminal's 2.7% + 5¢ in-person rate is the lowest per-sale cost among the flat-rate options on a $30 ticket. Square's free plan publishes 2.6% + 15¢ in person, which costs $0.93 on a $30 sale against $0.86 at Stripe Terminal, a $0.07 gap before hardware.",
+      "counterexample": "Stripe Terminal's 2.7% + 5¢ and Square Free's 2.6% + 15¢ cost the same at a $100 average ticket (0.027 x 100 + 0.05 = 2.75; 0.026 x 100 + 0.15 = 2.75). Above $100 per sale Square Free costs less per sale than Stripe Terminal. Square Premium's 2.4% + 15¢ matches Stripe Terminal at a $33.33 ticket, so on a $60 ticket Square Premium costs $1.59 per sale against $1.67, an $0.08 saving that takes 1,863 sales a month to cover Premium's $149 fee.",
+      "scenarios": [
+        {
+          "name": "Corner shop: 500 sales a month ($15,000 at a $30 average ticket)",
+          "seats": 1,
+          "monthlyVolume": 500
+        },
+        {
+          "name": "Busy shop: 3,000 sales a month ($90,000)",
+          "seats": 1,
+          "monthlyVolume": 3000
+        },
+        {
+          "name": "High-volume shop: 10,000 sales a month ($300,000)",
+          "seats": 1,
+          "monthlyVolume": 10000
+        }
+      ],
+      "vendors": [
+        {
+          "name": "Square",
+          "planName": "Square Free (in person)",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0.93,
+          "bestFit": "small shops and mobile sellers",
+          "notes": "2.6% + 15¢ tap, dip or swipe; 3.3% + 30¢ online; $0/month per location",
+          "limits": "",
+          "sourceUrl": "https://squareup.com/us/en/pricing",
+          "modeled": true
+        },
+        {
+          "name": "Square Plus",
+          "planName": "Square Plus (in person)",
+          "baseMonthlyUsd": 49,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0.9,
+          "bestFit": "",
+          "notes": "2.5% + 15¢ in person; $49/month per location",
+          "limits": "",
+          "sourceUrl": "https://squareup.com/us/en/pricing",
+          "modeled": true
+        },
+        {
+          "name": "Square Premium",
+          "planName": "Square Premium (in person)",
+          "baseMonthlyUsd": 149,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0.87,
+          "bestFit": "",
+          "notes": "2.4% + 15¢ in person; $149/month per location",
+          "limits": "",
+          "sourceUrl": "https://squareup.com/us/en/pricing",
+          "modeled": true
+        },
+        {
+          "name": "Stripe Terminal",
+          "planName": "Terminal in-person",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0.86,
+          "bestFit": "",
+          "notes": "2.7% + 5¢ per domestic in-person card transaction; readers from $59",
+          "limits": "",
+          "sourceUrl": "https://stripe.com/pricing",
+          "modeled": true
+        },
+        {
+          "name": "SumUp",
+          "planName": "Free plan",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0.88,
+          "bestFit": "",
+          "notes": "2.6% + 10¢ in person; $0/month",
+          "limits": "",
+          "sourceUrl": "https://www.sumup.com/en-us/pricing/",
+          "modeled": true
+        },
+        {
+          "name": "Shopify POS (Basic plan)",
+          "planName": "Basic",
+          "baseMonthlyUsd": 29,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0.88,
+          "bestFit": "",
+          "notes": "$29/month Shopify plan; in-person card rate 2.6% + 10¢",
+          "limits": "",
+          "sourceUrl": "https://www.shopify.com/pricing",
+          "modeled": true
+        },
+        {
+          "name": "Clover",
+          "planName": "Retail Basic",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0,
+          "bestFit": "",
+          "notes": "2.6% + 10¢ on Basic; 2.3% + 10¢ on Standard and Advanced; device plans",
+          "limits": "",
+          "sourceUrl": "https://www.clover.com/pricing/retail",
+          "modeled": false
+        },
+        {
+          "name": "Toast",
+          "planName": "Restaurant POS",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0,
+          "bestFit": "",
+          "notes": "Starter Kit from $0/month with a higher card rate; Point of Sale from $69/month",
+          "limits": "",
+          "sourceUrl": "https://pos.toasttab.com/pricing",
+          "modeled": false
+        },
+        {
+          "name": "Helcim",
+          "planName": "Interchange-plus",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0,
+          "bestFit": "",
+          "notes": "Interchange plus 0.40% + 8¢ in person on $0 to $50K monthly volume",
+          "limits": "",
+          "sourceUrl": "https://www.helcim.com/pricing/",
+          "modeled": false
+        }
+      ],
+      "sourceNotes": [
+        "Modeled monthlyVolume is in-person card sales at an assumed $30 average ticket; per-sale cost = published percentage x $30 + published fixed fee.",
+        "Hardware, Clover and Toast device plans and Helcim interchange are not modeled."
+      ],
+      "conditions": "Domestic US tap, dip or swipe card sales at a $30 average ticket on published self-serve rates, one location, excluding hardware, disputes and custom pricing.",
+      "whatWouldChange": "A change to Square's published in-person rates, Stripe Terminal's 2.7% + 5¢, or a larger average ticket would move the ranking; Square also offers custom rates above $250,000 a year.",
+      "decisionGap": "Pricing pages list percentages per plan without the per-location monthly fee, the average-ticket flip point against 5¢ versus 15¢ fixed fees, or the volume at which a paid plan pays for itself.",
+      "track": "alternatives"
+    },
+    {
+      "target": "/alternatives/expensify/",
+      "subject": "Expensify",
+      "title": "Expensify Alternatives 2026: Pricing and Plans Compared",
+      "officialUrl": "https://www.expensify.com/",
+      "officialHosts": [
+        "www.expensify.com",
+        "expensify.com"
+      ],
+      "primaryKeyword": "expensify alternatives",
+      "readerQuestion": "What should I use instead of Expensify for expense reports? [verb-only — no PAA, no completions]",
+      "workingAnswer": "Zoho Expense, Ramp, Brex, BILL Spend & Expense, Sage Expense Management and Rydoo are six Expensify alternatives, and four of them publish a software price below Expensify's $5 per member per month. Zoho Expense Standard is $4 per user billed monthly, and Ramp, Brex Essentials and BILL Spend & Expense each list $0 per user.",
+      "counterexample": "At 3 members Expensify Collect costs $15 a month while Zoho Expense's Free plan, capped at 3 users, costs $0. At 100 members Zoho Expense Standard at $4 a user is $400 a month against Expensify's $500, a $100 monthly gap ($1,200 a year). Below 5 users the ranking flips toward Expensify: at 4 members Expensify Collect is $20 a month, while Rydoo and Sage Expense Management both state a 5-user starting point, which is $60 and $59.95 at 5 users.",
+      "scenarios": [
+        {
+          "name": "Small team: 5 members",
+          "seats": 5,
+          "monthlyVolume": 0
+        },
+        {
+          "name": "Growing team: 25 members",
+          "seats": 25,
+          "monthlyVolume": 0
+        },
+        {
+          "name": "Mid-size team: 100 members",
+          "seats": 100,
+          "monthlyVolume": 0
+        }
+      ],
+      "vendors": [
+        {
+          "name": "Expensify",
+          "planName": "Collect",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 5,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0,
+          "bestFit": "small teams",
+          "notes": "$5 per member per month; Submit plan free; Control custom pricing from $9 per member per month",
+          "limits": "",
+          "sourceUrl": "https://www.expensify.com/pricing",
+          "modeled": true
+        },
+        {
+          "name": "Zoho Expense",
+          "planName": "Standard (billed monthly)",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 4,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0,
+          "bestFit": "",
+          "notes": "$4 per user per month billed monthly, $3 billed annually; Free plan capped at 3 users",
+          "limits": "",
+          "sourceUrl": "https://www.zoho.com/us/expense/pricing/",
+          "modeled": true
+        },
+        {
+          "name": "Rydoo",
+          "planName": "Essentials (billed monthly)",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 12,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0,
+          "bestFit": "",
+          "notes": "$12 per user per month billed monthly, $9 billed annually; starts at 5 users",
+          "limits": "",
+          "sourceUrl": "https://www.rydoo.com/pricing/",
+          "modeled": true
+        },
+        {
+          "name": "Sage Expense Management",
+          "planName": "Growth (billed annually)",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 11.99,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0,
+          "bestFit": "",
+          "notes": "$11.99 per active user per month billed annually; minimum billing 5 users",
+          "limits": "",
+          "sourceUrl": "https://www.fylehq.com/pricing",
+          "modeled": true
+        },
+        {
+          "name": "Brex",
+          "planName": "Essentials",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0,
+          "bestFit": "",
+          "notes": "$0 per user per month; Premium $12 per user per month",
+          "limits": "",
+          "sourceUrl": "https://www.brex.com/pricing",
+          "modeled": true
+        },
+        {
+          "name": "Brex Premium",
+          "planName": "Premium",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 12,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0,
+          "bestFit": "",
+          "notes": "$12 per user per month",
+          "limits": "",
+          "sourceUrl": "https://www.brex.com/pricing",
+          "modeled": true
+        },
+        {
+          "name": "Ramp",
+          "planName": "Free",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0,
+          "bestFit": "",
+          "notes": "$0 per user per month; Plus $15 per user per month plus a platform fee based on team size (not published as a number)",
+          "limits": "",
+          "sourceUrl": "https://ramp.com/pricing",
+          "modeled": true
+        },
+        {
+          "name": "BILL Spend & Expense",
+          "planName": "Spend & Expense",
+          "baseMonthlyUsd": 0,
+          "perSeatMonthlyUsd": 0,
+          "includedVolume": 0.0001,
+          "overageUnitSize": 1,
+          "overageUsdPerUnit": 0,
+          "bestFit": "",
+          "notes": "$0 per user per month with no subscription or per-user software fee",
+          "limits": "",
+          "sourceUrl": "https://www.bill.com/pricing",
+          "modeled": true
+        }
+      ],
+      "sourceNotes": [
+        "Per-seat monthly list prices; where a vendor lists monthly and annual billing, the monthly-billed price is modeled except Sage Expense Management, which lists annual billing only.",
+        "Ramp Plus has an unpublished platform fee and is not modeled; the $0 plans do not capture corporate card or credit-line terms."
+      ],
+      "conditions": "Published per-seat software prices only, no corporate card rewards, no travel booking fees, no implementation or add-on fees, standard self-serve plans.",
+      "whatWouldChange": "A change to Expensify's $5 Collect price, Zoho Expense's $4 Standard price, or a vendor adding a per-user fee to its $0 plan would move the cost ranking.",
+      "decisionGap": "Pricing pages state per-seat rates but do not show team-size totals, the 3-user cap on Zoho Expense's free plan, or 5-user minimums at Rydoo and Sage Expense Management.",
+      "track": "alternatives"
+    }
+  ]
+}

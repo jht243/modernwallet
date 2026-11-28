@@ -1,0 +1,5 @@
+# Unified Mindmap Scout Intake (alternatives) — mindmap-alternatives-2026-11-28
+
+1. Target `/alternatives/stripe/` — Stripe Alternatives 2026: Fees and Features Compared: What should I use instead of Stripe for accepting card payments? [verb-only — no PAA, no completions]
+2. Target `/alternatives/square/` — Square Alternatives 2026: Fees and Plans Compared: What should I use instead of Square for taking card payments in person? [verb-only — no PAA, no completions]
+3. Target `/alternatives/expensify/` — Expensify Alternatives 2026: Pricing and Plans Compared: What should I use instead of Expensify for expense reports? [verb-only — no PAA, no completions]

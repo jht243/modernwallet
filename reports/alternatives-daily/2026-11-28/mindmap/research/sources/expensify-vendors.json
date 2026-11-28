@@ -1,0 +1,140 @@
+{
+  "retrievedAt": "2026-11-28T00:00:00Z",
+  "subject": "Expensify",
+  "officialUrl": "https://www.expensify.com/",
+  "vendors": [
+    {
+      "name": "Expensify",
+      "planName": "Collect",
+      "baseMonthlyUsd": 0,
+      "perSeatMonthlyUsd": 5,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 0,
+      "bestFit": "small teams",
+      "notes": "$5 per member per month; Submit plan free; Control custom pricing from $9 per member per month",
+      "limits": "",
+      "sourceUrl": "https://www.expensify.com/pricing",
+      "modeled": true
+    },
+    {
+      "name": "Zoho Expense",
+      "planName": "Standard (billed monthly)",
+      "baseMonthlyUsd": 0,
+      "perSeatMonthlyUsd": 4,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 0,
+      "bestFit": "",
+      "notes": "$4 per user per month billed monthly, $3 billed annually; Free plan capped at 3 users",
+      "limits": "",
+      "sourceUrl": "https://www.zoho.com/us/expense/pricing/",
+      "modeled": true
+    },
+    {
+      "name": "Rydoo",
+      "planName": "Essentials (billed monthly)",
+      "baseMonthlyUsd": 0,
+      "perSeatMonthlyUsd": 12,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 0,
+      "bestFit": "",
+      "notes": "$12 per user per month billed monthly, $9 billed annually; starts at 5 users",
+      "limits": "",
+      "sourceUrl": "https://www.rydoo.com/pricing/",
+      "modeled": true
+    },
+    {
+      "name": "Sage Expense Management",
+      "planName": "Growth (billed annually)",
+      "baseMonthlyUsd": 0,
+      "perSeatMonthlyUsd": 11.99,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 0,
+      "bestFit": "",
+      "notes": "$11.99 per active user per month billed annually; minimum billing 5 users",
+      "limits": "",
+      "sourceUrl": "https://www.fylehq.com/pricing",
+      "modeled": true
+    },
+    {
+      "name": "Brex",
+      "planName": "Essentials",
+      "baseMonthlyUsd": 0,
+      "perSeatMonthlyUsd": 0,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 0,
+      "bestFit": "",
+      "notes": "$0 per user per month; Premium $12 per user per month",
+      "limits": "",
+      "sourceUrl": "https://www.brex.com/pricing",
+      "modeled": true
+    },
+    {
+      "name": "Brex Premium",
+      "planName": "Premium",
+      "baseMonthlyUsd": 0,
+      "perSeatMonthlyUsd": 12,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 0,
+      "bestFit": "",
+      "notes": "$12 per user per month",
+      "limits": "",
+      "sourceUrl": "https://www.brex.com/pricing",
+      "modeled": true
+    },
+    {
+      "name": "Ramp",
+      "planName": "Free",
+      "baseMonthlyUsd": 0,
+      "perSeatMonthlyUsd": 0,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 0,
+      "bestFit": "",
+      "notes": "$0 per user per month; Plus $15 per user per month plus a platform fee based on team size (not published as a number)",
+      "limits": "",
+      "sourceUrl": "https://ramp.com/pricing",
+      "modeled": true
+    },
+    {
+      "name": "BILL Spend & Expense",
+      "planName": "Spend & Expense",
+      "baseMonthlyUsd": 0,
+      "perSeatMonthlyUsd": 0,
+      "includedVolume": 0.0001,
+      "overageUnitSize": 1,
+      "overageUsdPerUnit": 0,
+      "bestFit": "",
+      "notes": "$0 per user per month with no subscription or per-user software fee",
+      "limits": "",
+      "sourceUrl": "https://www.bill.com/pricing",
+      "modeled": true
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Small team: 5 members",
+      "seats": 5,
+      "monthlyVolume": 0
+    },
+    {
+      "name": "Growing team: 25 members",
+      "seats": 25,
+      "monthlyVolume": 0
+    },
+    {
+      "name": "Mid-size team: 100 members",
+      "seats": 100,
+      "monthlyVolume": 0
+    }
+  ],
+  "notes": [
+    "Per-seat monthly list prices; where a vendor lists monthly and annual billing, the monthly-billed price is modeled except Sage Expense Management, which lists annual billing only.",
+    "Ramp Plus has an unpublished platform fee and is not modeled; the $0 plans do not capture corporate card or credit-line terms."
+  ]
+}
