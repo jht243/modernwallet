@@ -210,4 +210,18 @@ class Tests(unittest.TestCase):
    with self.assertRaises(m.ControlError):
     self.store.mutate(lambda s:s.update(step=2),['reports/input.json'])
    self.assertEqual(self.store.read()[0],revision)
+ def test_partial_blobless_clone_mutates_without_promisor_pack_failure(self):
+    import subprocess
+    origin=self.base/'origin'
+    subprocess.run(['git','config','uploadpack.allowFilter','true'],cwd=origin,check=True)
+    big=self.root/'reports/prior.json';big.write_bytes(b'{"prior":"'+b'a'*8192+b'"}\n')
+    self.store.mutate(lambda s:s.update(job={'artifacts':{}}),['reports/prior.json'])
+    partial=self.base/'partial-clone'
+    subprocess.run(['git','clone','-q','--filter=blob:none','file://'+str(origin),str(partial)],check=True)
+    nxt=partial/'reports/next.json';nxt.parent.mkdir(parents=True,exist_ok=True);nxt.write_bytes(b'{"next":"'+b'b'*8192+b'"}\n')
+    pstore=m.Store(partial,ref=self.store.ref)
+    pstore.mutate(lambda s:s.update(step='from-partial'),['reports/next.json'])
+    _,st=self.store.read()
+    self.assertEqual(st['step'],'from-partial')
+    self.assertIn('reports/next.json',st['job']['artifacts'])
 if __name__=='__main__':unittest.main()

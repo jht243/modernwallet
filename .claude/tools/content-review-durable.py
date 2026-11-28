@@ -16,13 +16,11 @@ def cache_path(root,name,expected):
 def cache(root,name,expected,raw):
  require(sha(raw)==expected,'Archived evidence changed')
  path=cache_path(root,name,expected);path.parent.mkdir(parents=True,exist_ok=True)
- if path.exists():require(path.read_bytes()==raw,'Immutable review archive changed')
- else:
-  with tempfile.NamedTemporaryFile(dir=path.parent,delete=False) as stream:stream.write(raw);temporary=Path(stream.name)
-  try:
-   try:os.link(temporary,path)
-   except FileExistsError:require(path.read_bytes()==raw,'Immutable review archive changed')
-  finally:temporary.unlink()
+ if path.exists() and path.read_bytes()==raw:return path
+ with tempfile.NamedTemporaryFile(dir=path.parent,delete=False) as stream:stream.write(raw);temporary=Path(stream.name)
+ try:os.replace(temporary,path)
+ finally:
+  if temporary.exists():temporary.unlink()
  return path
 
 def backend(root):

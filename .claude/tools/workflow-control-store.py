@@ -196,9 +196,19 @@ class Store:
                 if not base or git(self.root, 'merge-base', '--is-ancestor', source_parent, base, check=False).returncode:
                     args.extend(['-p', source_parent])
             commit = git(self.root, *args, data=b'Checkpoint workflow controller\n', env=no_lazy_env).stdout.decode().strip()
+            push_env = {
+                **no_lazy_env,
+                'GIT_CONFIG_COUNT': '1',
+                'GIT_CONFIG_KEY_0': 'pack.window',
+                'GIT_CONFIG_VALUE_0': '0',
+            }
             try:
                 push = git(self.root, 'push', '--quiet', 'origin', commit + ':' + self.ref,
-                           env=no_lazy_env, check=False, timeout=upload_timeout)
+                           env=push_env, check=False, timeout=upload_timeout)
+                if push.returncode and b'promisor remote' in (push.stderr or b''):
+                    fallback_env = {k: v for k, v in push_env.items() if k != 'GIT_NO_LAZY_FETCH'}
+                    push = git(self.root, 'push', '--quiet', 'origin', commit + ':' + self.ref,
+                               env=fallback_env, check=False, timeout=upload_timeout)
             except subprocess.TimeoutExpired:
                 # The server may have accepted the commit before the client timed out.
                 # Confirm that exact history before reapplying the mutation.

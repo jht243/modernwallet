@@ -84,13 +84,46 @@ def expected_sources(root, phase, instructions, core, has_handoff=False):
     return rels
 
 
+def _same_repository_checkout(root, directory, m):
+    resolved_root = root.resolve()
+    if m.get('root') == str(resolved_root):
+        return True
+    if not directory.resolve().is_relative_to(resolved_root):
+        return False
+    cfg_path = resolved_root / '.claude/content-review-policy.json'
+    if not cfg_path.is_file():
+        return False
+    try:
+        site_id = json.loads(cfg_path.read_bytes()).get('siteId')
+    except Exception:
+        return False
+    if not site_id:
+        return False
+    for rel_key in ('taskPath',):
+        rel = m.get(rel_key)
+        if isinstance(rel, str) and (resolved_root / rel).is_file():
+            try:
+                if json.loads((resolved_root / rel).read_bytes()).get('siteId') == site_id:
+                    return True
+            except Exception:
+                pass
+    href = m.get('handoff')
+    if isinstance(href, dict) and isinstance(href.get('path'), str) and (resolved_root / href['path']).is_file():
+        try:
+            if json.loads((resolved_root / href['path']).read_bytes()).get('siteId') == site_id:
+                return True
+        except Exception:
+            pass
+    return False
+
+
 def historical(root, directory, core, visited=None, require_delivery=True):
     visited = set() if visited is None else set(visited)
     key = str(directory.resolve())
     require(key not in visited, 'Circular retained instruction history')
     visited.add(key)
     m = core.load(directory)
-    require(m['version'] == VERSION and m['root'] == str(root.resolve()), 'Different repository or receipt protocol')
+    require(m['version'] == VERSION and _same_repository_checkout(root, directory, m), 'Different repository or receipt protocol')
     require(m.get('phase') in ('build', 'write', 'audit', 'publish'), 'Unknown original instruction phase')
     texts = m['sourceTexts']
     require(set(texts) == set(m['files']), 'Missing original rule coverage')

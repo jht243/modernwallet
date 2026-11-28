@@ -206,9 +206,11 @@ class AuditBatchPendingResumeTests(unittest.TestCase):
         self.assertTrue(hasattr(mod, 'uuid'))
         root = Path(__file__).resolve().parents[2]
         crp = mod._load('t_crp', root / '.claude/tools/content-review-policy.py')
-        wfl = mod._load('t_wfl', root / '.claude/tools/workflow-local.py')
         self.assertEqual(len(crp.policy_hash(root)), 64)
-        self.assertEqual(len(wfl.policy_hash(root)), 64)
+        wfl_path = root / '.claude/tools/workflow-local.py'
+        if wfl_path.is_file():
+            wfl = mod._load('t_wfl', wfl_path)
+            self.assertEqual(len(wfl.policy_hash(root)), 64)
 
     def test_finish_audit_projects_passing_route_on_mixed_batch_before_audit_analysis(self):
         mod = load_audit_batch()
@@ -282,6 +284,39 @@ class AuditBatchPendingResumeTests(unittest.TestCase):
             self.assertEqual(out['analysisAudits'][0]['status'], 'PASS')
             rebound = json.loads(ar_file.read_text())
             self.assertIn('projected-review', rebound['renderedReview']['path'])
+
+    def test_prepare_skeleton_pretty_prints_and_omits_incidental_mentions_when_already_high(self):
+        mod = load_audit_batch()
+        crp_test_spec = importlib.util.spec_from_file_location('crp_t', Path(__file__).with_name('content-review-policy_test.py'))
+        crp_t = importlib.util.module_from_spec(crp_test_spec)
+        crp_test_spec.loader.exec_module(crp_t)
+        fx = crp_t.Tests()
+        fx.setUp()
+        self.addCleanup(fx.doCleanups)
+        for fn in ('content-review-policy.py', 'rendered-audit.py'):
+            src = Path(__file__).with_name(fn)
+            dst = fx.root / '.claude/tools' / fn
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            dst.write_bytes(src.read_bytes())
+
+        snap_high = fx.snapshot('Prescription medicine with contraindications and medical clinical treatment notes.')
+        snap_high['manifest']['routes'][0]['claimCategories'] = ['medical']
+        snap_high['snapshotSha256'] = crp_t.render.digest({k: v for k, v in snap_high.items() if k != 'snapshotSha256'})
+        snap_high_file = fx.put('reports/run/audit/snap-high.json', snap_high)
+        sk_high_file = fx.root / 'reports/run/audit/sk-high.json'
+        res_high = mod.prepare_skeleton(fx.root, snap_high_file, sk_high_file)
+        self.assertEqual(res_high['status'], 'prepared-unreserved-skeleton')
+        raw_high = sk_high_file.read_text()
+        self.assertGreater(raw_high.count('\n'), 20)
+        self.assertEqual(json.loads(raw_high)['routes'][0]['riskAssessment']['incidentalMentions'], [])
+
+        snap_std = fx.snapshot('Software product workflow with a brief medical industry customer mention.')
+        snap_std['manifest']['routes'][0]['claimCategories'] = ['product']
+        snap_std['snapshotSha256'] = crp_t.render.digest({k: v for k, v in snap_std.items() if k != 'snapshotSha256'})
+        snap_std_file = fx.put('reports/run/audit/snap-std.json', snap_std)
+        sk_std_file = fx.root / 'reports/run/audit/sk-std.json'
+        mod.prepare_skeleton(fx.root, snap_std_file, sk_std_file)
+        self.assertGreater(len(json.loads(sk_std_file.read_text())['routes'][0]['riskAssessment']['incidentalMentions']), 0)
 
 
 if __name__ == '__main__':

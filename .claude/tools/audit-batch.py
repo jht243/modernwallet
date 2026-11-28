@@ -176,12 +176,32 @@ def _reserve_or_repair_route(root, crp, snapshot, snapshot_path, page, job, revi
     return crp.reserve(root, snapshot_path, page['path'], job, reviewer, target_adm, prior_reports)
 
 
+def _route_already_high(root: Path, crp, cfg: dict, text: str, spec: dict) -> bool:
+    cats = spec.get('claimCategories') or []
+    if isinstance(cats, list) and (set(cats) & set(getattr(crp, 'CONSEQUENTIAL', ()))):
+        return True
+    mh = getattr(crp, 'MANDATORY_HIGH', None)
+    if mh is not None and mh.search(text):
+        return True
+    selected = spec.get('reviewProfile') or cfg.get('defaultProfile')
+    if selected == 'high' or cfg.get('minimumProfile') == 'high':
+        return True
+    local_cfg = root / '.claude/workflow-policy.local.json'
+    if local_cfg.is_file():
+        try:
+            if crp.read(local_cfg).get('minimumReviewProfile') == 'high':
+                return True
+        except Exception:
+            pass
+    return False
+
+
 def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton_path,
                            routes=(), prior_reports=(), preflight=None, writer_preflight=None,
                            repair_pending_failure=None):
     crp = _load('repo_crp', root / '.claude/tools/content-review-policy.py')
     renderer = _load('repo_renderer', root / '.claude/tools/rendered-audit.py')
-    crp.policy(root)
+    cfg = crp.policy(root)
     snapshot = crp.read(snapshot_path)
     renderer.valid_snapshot(snapshot)
 
@@ -236,6 +256,7 @@ def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton
         text = crp.claim_text(page['semantic'])
         text_sha = crp.sha(text.encode())
         mentions = crp.flags(text)
+        already_high = _route_already_high(root, crp, cfg, text, spec)
         prov = adm.get('provisionalProfile') or crp.profile(
             root, page['semantic'], spec.get('claimCategories', []), spec.get('reviewProfile')
         )
@@ -252,7 +273,7 @@ def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton
                 'textSha256': text_sha,
                 'rationale': '',
                 'consequentialClaims': [],
-                'incidentalMentions': [{'quote': m['quote'], 'reason': ''} for m in mentions],
+                'incidentalMentions': [] if already_high else [{'quote': m['quote'], 'reason': ''} for m in mentions],
             },
             'checks': {k: {'status': 'UNREVIEWED', 'evidence': ''} for k in checks_keys},
             'factualReview': {k: {'status': 'UNREVIEWED', 'evidence': ''} for k in fact_keys},
@@ -263,7 +284,7 @@ def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton
             'round': adm['number'],
             'maximumRounds': adm['maximumRounds'],
             'provisionalProfile': prov,
-            'riskPassageCount': len(mentions),
+            'riskPassageCount': 0 if already_high else len(mentions),
             'admission': adm['admissionArtifact'],
         })
 
@@ -289,7 +310,7 @@ def _reserve_batch_in_root(root, snapshot_path, job, reviewer, out_dir, skeleton
         if apps:
             skeleton['instructionApplications'] = apps
 
-    crp.save_exact(skeleton_path, skeleton)
+    _write_snapshot_preserving_order(skeleton_path, skeleton)
     analysis_skeletons = _scaffold_analysis_reviews(
         root, crp, snapshot_path, skeleton_path, reviewer, [p['path'] for p in selected_pages]
     )
@@ -383,7 +404,7 @@ def _scaffold_analysis_reviews(root: Path, crp, snapshot_path: Path, skeleton_pa
                 doc.setdefault(k, {'status': 'UNREVIEWED', 'evidence': ''})
             if req_cov and not doc.get('requestCoverage'):
                 doc['requestCoverage'] = req_cov
-        crp.save_exact(dest, doc)
+        _write_snapshot_preserving_order(dest, doc)
         out_meta.append({
             'route': rt,
             'basis': pkt.get('basis'),
@@ -464,7 +485,7 @@ def prepare_skeleton(root, snapshot_path, skeleton_path, routes=()):
     try:
         crp = _load('repo_crp_prep', root / '.claude/tools/content-review-policy.py')
         renderer = _load('repo_renderer_prep', root / '.claude/tools/rendered-audit.py')
-        crp.policy(root)
+        cfg = crp.policy(root)
         snapshot = crp.read(snapshot_path)
         renderer.valid_snapshot(snapshot)
         wanted = [r.rstrip('/') or '/' for r in routes] if routes else None
@@ -482,6 +503,7 @@ def prepare_skeleton(root, snapshot_path, skeleton_path, routes=()):
             text = crp.claim_text(page['semantic'])
             text_sha = crp.sha(text.encode())
             mentions = crp.flags(text)
+            already_high = _route_already_high(root, crp, cfg, text, spec)
             prov = crp.profile(
                 root, page['semantic'], spec.get('claimCategories', []), spec.get('reviewProfile')
             )
@@ -498,7 +520,7 @@ def prepare_skeleton(root, snapshot_path, skeleton_path, routes=()):
                     'textSha256': text_sha,
                     'rationale': '',
                     'consequentialClaims': [],
-                    'incidentalMentions': [{'quote': m['quote'], 'reason': ''} for m in mentions],
+                    'incidentalMentions': [] if already_high else [{'quote': m['quote'], 'reason': ''} for m in mentions],
                 },
                 'checks': {k: {'status': 'UNREVIEWED', 'evidence': ''} for k in checks_keys},
                 'factualReview': {k: {'status': 'UNREVIEWED', 'evidence': ''} for k in fact_keys},
@@ -514,13 +536,19 @@ def prepare_skeleton(root, snapshot_path, skeleton_path, routes=()):
             skeleton['jobId'] = snap_job
         if layer is not None:
             skeleton['workflowPolicySha256'] = layer.policy_hash(root)
-        crp.save_exact(skeleton_path, skeleton)
-        return {
+        _write_snapshot_preserving_order(skeleton_path, skeleton)
+        analysis_skeletons = _scaffold_analysis_reviews(
+            root, crp, snapshot_path, skeleton_path, 'PENDING_AUDITOR', [p['path'] for p in selected_pages]
+        )
+        res = {
             'status': 'prepared-unreserved-skeleton',
             'snapshotSha256': snapshot['snapshotSha256'],
             'skeleton': str(skeleton_path.resolve().relative_to(root)),
             'routeCount': len(skeleton_routes),
         }
+        if analysis_skeletons:
+            res['analysisReviews'] = analysis_skeletons
+        return res
     finally:
         os.chdir(str(prev_cwd))
 
@@ -649,10 +677,72 @@ def _finalize_review_in_root(root, snapshot_path, review_path, target_path, job=
         ra = rr.get('riskAssessment')
         text = crp.claim_text(page['semantic'])
         expected_text_sha = crp.sha(text.encode())
+        already_high = _route_already_high(root, crp, cfg, text, spec)
         selected = None
         if not isinstance(ra, dict):
             errors.append(f'[{rpath}] missing riskAssessment object')
         else:
+            for lk in ('consequentialClaims', 'incidentalMentions'):
+                if lk not in ra and isinstance(rr.get(lk), list):
+                    ra[lk] = rr.pop(lk)
+                elif lk not in ra:
+                    ra[lk] = []
+                elif lk in rr:
+                    rr.pop(lk, None)
+            if isinstance(ra.get('consequentialClaims'), list) and isinstance(ra.get('incidentalMentions'), list):
+                import re as _re
+
+                def _resolve_quote(q_str: str) -> str:
+                    if not isinstance(q_str, str) or not q_str or q_str in text:
+                        return q_str
+                    if '...' in q_str or '…' in q_str:
+                        parts = [p.strip() for p in _re.split(r'\s*(?:\.\.\.|…)\s*', q_str) if p.strip()]
+                        if len(parts) >= 2:
+                            pat = r'[\s\S]{1,600}?'.join(_re.escape(p) for p in parts)
+                            for flags in (0, _re.IGNORECASE):
+                                matches = list(_re.finditer(pat, text, flags))
+                                if len(matches) == 1:
+                                    return matches[0].group(0)
+                    # Case-only difference on exact substring
+                    idx_ci = text.lower().find(q_str.lower())
+                    if idx_ci >= 0 and text.lower().find(q_str.lower(), idx_ci + 1) < 0:
+                        return text[idx_ci:idx_ci + len(q_str)]
+                    return q_str
+
+                spec_conseq = [c for c in (spec.get('claimCategories') or []) if c in crp.CONSEQUENTIAL]
+                norm_cc = []
+                for item in ra['consequentialClaims']:
+                    if not isinstance(item, dict):
+                        norm_cc.append(item)
+                        continue
+                    it = dict(item)
+                    if 'quote' not in it and isinstance(it.get('claim'), str):
+                        it['quote'] = it.pop('claim')
+                    if isinstance(it.get('quote'), str):
+                        it['quote'] = _resolve_quote(it['quote'])
+                    if it.get('flagged') is False and 'category' not in it:
+                        if not already_high:
+                            ra['incidentalMentions'].append({'quote': it.get('quote', ''), 'reason': it.get('reason', '')})
+                        continue
+                    it.pop('flagged', None)
+                    if it.get('category') not in crp.CONSEQUENTIAL:
+                        if len(spec_conseq) == 1:
+                            it['category'] = spec_conseq[0]
+                        else:
+                            probe = f"{ra.get('rationale', '')} {it.get('quote', '')} {it.get('reason', '')}".lower()
+                            if any(w in probe for w in ('prescription', 'fda', 'contraindicat', 'hormone', 'drug', 'clinical', 'medical', 'menopause', 'physician', 'medication')):
+                                it['category'] = 'medical'
+                    norm_cc.append(it)
+                ra['consequentialClaims'] = norm_cc
+                ra['incidentalMentions'] = [
+                    {**m, 'quote': _resolve_quote(m['quote'])} if isinstance(m, dict) and isinstance(m.get('quote'), str) else m
+                    for m in ra['incidentalMentions']
+                ]
+            if already_high and isinstance(ra.get('incidentalMentions'), list):
+                ra['incidentalMentions'] = [
+                    m for m in ra['incidentalMentions']
+                    if not (isinstance(m, dict) and not str(m.get('reason') or '').strip())
+                ]
             if not ra.get('textSha256'):
                 ra['textSha256'] = expected_text_sha
             elif ra.get('textSha256') != expected_text_sha:

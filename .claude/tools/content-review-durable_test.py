@@ -88,4 +88,14 @@ class Tests(unittest.TestCase):
   with patch.dict(os.environ,clean_env,clear=True),patch('urllib.request.urlopen',side_effect=lambda *a,**k:Resp()):
    admitted=p.reserve(fresh_ok,snap_ok,'/guide','search-gap-newjob999999','independent',fresh_ok/'reports/new-adm.json')
    self.assertEqual(admitted['jobId'],'search-gap-newjob999999')
+ def test_restore_heals_corrupted_working_tree_evidence_cache_from_verified_durable_preimage(self):
+  admission=self.fixture.reserve(1);report=self.fixture.report(admission,'FAIL');path=self.fixture.put('reports/real-failure.json',report);p.record(self.root,path)
+  fresh=self.fresh('corrupted-cache')
+  ev_dir=fresh/'reports/content-review-evidence';ev_dir.mkdir(parents=True,exist_ok=True)
+  snap_sha=p.sha(self.fixture.snapshot_path.read_bytes())
+  corrupted=ev_dir/(snap_sha+'.json');corrupted.write_bytes(b'{"corrupted":"by-bulk-replace"}\n')
+  snapshot=fresh/'reports/next.json';snapshot.parent.mkdir(exist_ok=True);snapshot.write_text(json.dumps(self.fixture.snapshot('changed synthetic revision')))
+  next_ticket=p.reserve(fresh,snapshot,'/guide','fixture-job','independent',fresh/'reports/next-admission.json')
+  self.assertEqual(next_ticket['number'],2)
+  self.assertEqual(corrupted.read_bytes(),self.fixture.snapshot_path.read_bytes())
 if __name__=='__main__':unittest.main()
