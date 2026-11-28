@@ -255,7 +255,33 @@ def decide_stop(root, payload, now=None):
     return False, close_instructions(saved)
 
 
+GIT_INFO_EXCLUDES = (
+    'reports/search-gap/',
+    'reports/mindmap-pass/',
+    'reports/rendered-audit/',
+    'reports/routine-control/',
+    'reports/content-review-evidence/',
+    'reports/workflow-generation-budgets/',
+)
+
+
+def ensure_git_info_excludes(root):
+    """Hide untracked internal run artifacts from git status so cloud Stop hooks never re-prompt mid-stage."""
+    try:
+        excl = git_dir(root) / 'info' / 'exclude'
+        excl.parent.mkdir(parents=True, exist_ok=True)
+        existing = excl.read_text(encoding='utf-8', errors='ignore') if excl.is_file() else ''
+        lines = {ln.strip() for ln in existing.splitlines()}
+        missing = [pat for pat in GIT_INFO_EXCLUDES if pat not in lines]
+        if missing:
+            sep = '' if (not existing or existing.endswith('\n')) else '\n'
+            excl.write_text(existing + sep + '\n'.join(missing) + '\n', encoding='utf-8')
+    except Exception:
+        pass
+
+
 def install_runtime(root, settings_dir=None):
+    ensure_git_info_excludes(root)
     target_dir = Path(settings_dir) if settings_dir else root.parent / '.claude'
     if not settings_dir and (root.parent / '.git').exists():
         return None

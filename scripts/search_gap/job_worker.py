@@ -482,7 +482,7 @@ def auto_evidence_paths(extra=(), store=None):
     if in_git.returncode != 0 or in_git.stdout.strip() != 'true':
         return list(selected)
     candidates = set()
-    untracked = subprocess.run(['git', 'ls-files', '--others', '--modified', '--exclude-standard', '-z', '--', *existing_dirs],
+    untracked = subprocess.run(['git', 'ls-files', '--others', '--modified', '-z', '--', *existing_dirs],
                                capture_output=True)
     if untracked.returncode == 0 and untracked.stdout:
         candidates.update(p for p in os.fsdecode(untracked.stdout).split('\0') if p)
@@ -1793,9 +1793,11 @@ def remember_lease(site, run, owner, intake_path=None, auto_close=False):
         marker.chmod(0o600)
     try:
         root = Path.cwd().resolve()
-        if root.parent == Path('/home/user') and (root / 'scripts/search_gap/session_end.py').is_file():
+        if (root / 'scripts/search_gap/session_end.py').is_file():
             import session_end
-            session_end.install_runtime(root)
+            session_end.ensure_git_info_excludes(root)
+            if root.parent == Path('/home/user'):
+                session_end.install_runtime(root)
     except Exception:
         pass
 
@@ -1955,7 +1957,8 @@ def _send_fast_noop(site):
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('command',choices=['list-gaps','checkpoint','restore','adopt','finish','park','owner-close','end-run','heartbeat']);p.add_argument('--site',required=True);p.add_argument('--owner',default=invocation_owner());p.add_argument('--out');p.add_argument('--intake');p.add_argument('--completion');p.add_argument('--metadata');p.add_argument('--files',nargs='*',default=[]);p.add_argument('--end-invocation', action='store_true',help='Release only this owner after the checkpoint is safely retained');p.add_argument('--checkpoint-file');p.add_argument('--reason');p.add_argument('--holds');p.add_argument('--request');p.add_argument('--published');p.add_argument('--published-commit');p.add_argument('--check',action='store_true');p.add_argument('--auto',action='store_true');p.add_argument('--deploy',action='store_true');p.add_argument('--fast-noop',action='store_true');p.add_argument('--written');p.add_argument('--days');p.add_argument('--limit');p.add_argument('--min-count');a=p.parse_args()
+    env_site = (os.environ.get('SEARCH_DIGEST_SITE') or os.environ.get('SEARCH_SITE') or '').strip() or None
+    p=argparse.ArgumentParser();p.add_argument('command',choices=['list-gaps','checkpoint','restore','adopt','finish','park','owner-close','end-run','heartbeat']);p.add_argument('--site',default=env_site,required=(env_site is None));p.add_argument('--owner',default=invocation_owner());p.add_argument('--out');p.add_argument('--intake');p.add_argument('--completion');p.add_argument('--metadata');p.add_argument('--metadata-json');p.add_argument('--stage');p.add_argument('--files',nargs='*',default=[]);p.add_argument('--end-invocation', action='store_true',help='Release only this owner after the checkpoint is safely retained');p.add_argument('--checkpoint-file');p.add_argument('--reason');p.add_argument('--holds');p.add_argument('--request');p.add_argument('--published');p.add_argument('--published-commit');p.add_argument('--check',action='store_true');p.add_argument('--auto',action='store_true');p.add_argument('--deploy',action='store_true');p.add_argument('--fast-noop',action='store_true');p.add_argument('--written');p.add_argument('--days');p.add_argument('--limit');p.add_argument('--min-count');a=p.parse_args()
     terminal = terminal_record(a.site, a.owner) if a.command in ('list-gaps', 'finish', 'end-run') else None
     if a.command == 'list-gaps' and terminal and terminal.is_file():
         print(json.dumps(read(terminal)))
@@ -1983,7 +1986,7 @@ def main():
             require(job.get('packetText')==raw,'A different job is active or legacy input is no longer pending; do not replace it')
             result={'ok':True,'runId':packet['runId'],'intakeSha256':digest(a.intake)}
         elif a.command=='checkpoint':
-            metadata=read(a.metadata)
+            metadata = json.loads(a.metadata_json) if a.metadata_json else (read(a.metadata) if a.metadata else {'stage': a.stage, 'canonicalJobs': {}, 'reviewCounters': {}})
             require(metadata.get('stage') and isinstance(metadata.get('canonicalJobs'),dict) and isinstance(metadata.get('reviewCounters'),dict),'Stage, canonicalJobs and reviewCounters required')
             require(all(isinstance(v,str) and v for v in metadata['canonicalJobs'].values()),'Canonical job IDs required')
             require(all(isinstance(v,int) and not isinstance(v,bool) and v>=0 for v in metadata['reviewCounters'].values()),'Nonnegative integer review counters required')

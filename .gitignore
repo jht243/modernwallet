@@ -31,3 +31,5 @@ public/search-aliases.json
 public/placement-verticals.json
 reports/search-gap/intakes/run-*-intake.json
 reports/search-gap/auto-close/
+reports/search-gap/intake*.json
+reports/search-gap/intakes/

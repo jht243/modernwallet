@@ -947,4 +947,21 @@ class SessionEndHookAndArchiveTests(unittest.TestCase):
             self.assertFalse(allow3)
             self.assertIn('STANDING OWNER RULE', reason3)
 
+    def test_git_info_excludes_hide_untracked_reports_while_checkpoint_still_sweeps_evidence(self):
+        import session_end
+        root = Path(self.tmp.name)
+        subprocess.run(['git', 'init', '-q', str(root)], check=True)
+        session_end.ensure_git_info_excludes(root)
+        intake_f = root / 'reports/search-gap/intake-current.json'
+        intake_f.parent.mkdir(parents=True, exist_ok=True)
+        intake_f.write_text('{"candidates":[]}\n')
+        chart_f = root / 'reports/mindmap-pass/2026-11-28-search-gap.md'
+        chart_f.parent.mkdir(parents=True, exist_ok=True)
+        chart_f.write_text('# Chart\n')
+        st = subprocess.check_output(['git', 'status', '--porcelain'], cwd=root, text=True).strip()
+        self.assertEqual(st, '')
+        swept = worker.auto_evidence_paths(store=SimpleNamespace(supports_evidence_storage=True))
+        self.assertIn('reports/mindmap-pass/2026-11-28-search-gap.md', swept)
+        self.assertNotIn('reports/search-gap/intake-current.json', swept)
+
 if __name__=='__main__':unittest.main()
