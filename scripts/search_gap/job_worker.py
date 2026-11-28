@@ -1871,21 +1871,87 @@ def save_terminal_record(path, result):
     os.replace(target.name, path)
 
 
+def _load_ingest_secrets():
+    secrets = {}
+    for sp in (Path('.claude/routines.config'), Path('.claude/secrets.env'), Path.home() / '.claude/secrets.env'):
+        try:
+            if sp.is_file():
+                for raw in sp.read_text(errors='ignore').splitlines():
+                    ln = raw.strip()
+                    if ln and not ln.startswith('#') and '=' in ln:
+                        k, _, v = ln.partition('=')
+                        secrets[k.strip()] = v.strip().strip('"').strip("'")
+        except OSError:
+            pass
+    for k in ('RESEND_API_KEY', 'ROUTINE_INGEST_URL', 'ROUTINE_INGEST_SECRET', 'NURTURE_CRON_SECRET', 'ROUTINE_DIGEST_MODE'):
+        if os.environ.get(k):
+            secrets[k] = os.environ[k]
+    return secrets
+
+
+def _git_repo_and_branch():
+    repo, branch = '', 'main'
+    try:
+        rem = subprocess.run(['git', 'remote', 'get-url', 'origin'], capture_output=True, text=True)
+        m = re.search(r'[:/]([^/:]+/[^/]+?)(?:\.git)?$', rem.stdout.strip())
+        if m:
+            repo = m.group(1)
+        br = subprocess.run(['git', 'rev-parse', '--abbrev-ref', 'HEAD'], capture_output=True, text=True)
+        if br.stdout.strip():
+            branch = br.stdout.strip()
+    except Exception:
+        pass
+    return repo, branch
+
+
 def _send_fast_noop(site):
-    sender = Path('.claude/scripts/send-routine-email.py')
-    if not sender.is_file():
-        return False
     summary = f'Verified empty Search Gap intake on {site} (0 pending candidates, 0 active jobs); fast no-op exit.'
-    cmd = [
-        sys.executable, str(sender),
-        '--status', 'no-op',
-        '--skill', 'search-gap-content-auto',
-        '--site', site if site.startswith('http') else f'https://{site}',
-        '--summary', summary,
-        '--details', f'# Search Gap fast check\n\n{summary}\n',
-    ]
-    res = subprocess.run(cmd, capture_output=True, text=True)
-    return res.returncode == 0
+    site_url = site if site.startswith('http') else f'https://{site}'
+    secrets = _load_ingest_secrets()
+    repo, branch = _git_repo_and_branch()
+    sender = Path('.claude/scripts/send-routine-email.py')
+    if sender.is_file() and secrets.get('RESEND_API_KEY'):
+        cmd = [
+            sys.executable, str(sender),
+            '--status', 'no-op',
+            '--skill', 'search-gap-content-auto',
+            '--site', site_url,
+            '--summary', summary,
+            '--details', f'# Search Gap fast check\n\n{summary}\n',
+        ]
+        if repo:
+            cmd.extend(['--repo', repo, '--branch', branch, '--commit-sha', '', '--commit-url', ''])
+        res = subprocess.run(cmd, capture_output=True, text=True)
+        if res.returncode == 0:
+            return True
+    url = (secrets.get('ROUTINE_INGEST_URL') or 'https://layer3labs-web.onrender.com/api/routine-run').strip()
+    tok = (secrets.get('ROUTINE_INGEST_SECRET') or secrets.get('NURTURE_CRON_SECRET') or '').strip()
+    if not url or not tok:
+        return False
+    body = json.dumps({
+        'skill': 'search-gap-content-auto',
+        'project': (repo.split('/')[-1] if repo else site),
+        'site': site_url,
+        'repo': repo,
+        'branch': branch,
+        'status': 'no-op',
+        'summary': summary,
+    }).encode('utf-8')
+    req = urllib.request.Request(
+        url,
+        data=body,
+        method='POST',
+        headers={
+            'Content-Type': 'application/json',
+            'Authorization': f'Bearer {tok}',
+            'User-Agent': 'search-gap-worker/1.0',
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=_http_timeout(15)) as resp:
+            return 200 <= getattr(resp, 'status', 200) < 300
+    except Exception:
+        return False
 
 
 def main():

@@ -97,17 +97,97 @@ def active_lease(root, payload=None, now=None):
     return sid, saved
 
 
-def child_worker_running(root, payload):
-    helper = root / '.claude/tools/native-worker-wait.py'
-    if not helper.is_file():
+ACTIVE_TASK_STATUSES = {'running', 'in_progress', 'pending', 'queued', 'starting'}
+ASYNC_WAIT_TTL = 1200
+
+
+def _transcript_awaiting_async_child(payload, now=None):
+    now = now or time.time()
+    tpath = (payload or {}).get('transcript_path')
+    if not isinstance(tpath, str) or not tpath.strip():
         return False
+    p = Path(tpath)
     try:
-        spec = importlib.util.spec_from_file_location('search_gap_worker_wait', helper)
-        mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(mod)
-        return bool(mod.running(payload))
-    except Exception:
+        if not p.is_file() or now - p.stat().st_mtime > ASYNC_WAIT_TTL:
+            return False
+        size = p.stat().st_size
+        with p.open('rb') as stream:
+            if size > 131072:
+                stream.seek(size - 131072)
+                stream.readline()
+            raw_lines = stream.read().decode('utf-8', errors='ignore').splitlines()
+    except OSError:
         return False
+    awaiting = False
+    for line in raw_lines:
+        if not line.strip():
+            continue
+        try:
+            row = json.loads(line)
+        except Exception:
+            continue
+        rtype = row.get('type')
+        msg = row.get('message') if isinstance(row.get('message'), dict) else {}
+        content = msg.get('content')
+        if rtype == 'assistant' and isinstance(content, list):
+            for block in content:
+                if not isinstance(block, dict) or block.get('type') != 'tool_use':
+                    continue
+                name = str(block.get('name') or '')
+                inp = block.get('input') if isinstance(block.get('input'), dict) else {}
+                if name == 'SendMessage':
+                    awaiting = True
+                elif name in ('Agent', 'Task', 'Bash') and inp.get('run_in_background') is True:
+                    awaiting = True
+        elif rtype == 'user':
+            if isinstance(content, str):
+                if '<task-notification>' in content or '<teammate-message' in content or '<agent-notification>' in content:
+                    awaiting = False
+            elif isinstance(content, list):
+                has_tool_result = False
+                for block in content:
+                    if not isinstance(block, dict):
+                        continue
+                    btype = block.get('type')
+                    if btype == 'tool_result':
+                        has_tool_result = True
+                        txt = str(block.get('content') or '')
+                        if any(tok in txt for tok in ('Async agent launched', 'running in the background', 'Command running in background')):
+                            awaiting = True
+                    elif btype == 'text':
+                        txt = str(block.get('text') or '')
+                        if '<task-notification>' in txt or '<teammate-message' in txt or '<agent-notification>' in txt:
+                            awaiting = False
+                if not has_tool_result and not any(
+                    isinstance(b, dict) and b.get('type') == 'text' and 'Hook' in str(b.get('text') or '')
+                    for b in content
+                ):
+                    # A genuine non-tool user wakeup message resolved the wait.
+                    if any(isinstance(b, dict) and b.get('type') == 'text' and str(b.get('text') or '').strip() for b in content):
+                        awaiting = False
+    return awaiting
+
+
+def child_worker_running(root, payload, now=None):
+    tasks = (payload or {}).get('background_tasks')
+    if isinstance(tasks, list):
+        for t in tasks:
+            if not isinstance(t, dict):
+                continue
+            status = t.get('status')
+            if status is None or str(status).strip().lower() in ACTIVE_TASK_STATUSES:
+                return True
+    helper = root / '.claude/tools/native-worker-wait.py'
+    if helper.is_file():
+        try:
+            spec = importlib.util.spec_from_file_location('search_gap_worker_wait', helper)
+            mod = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(mod)
+            if mod.running(payload or {}):
+                return True
+        except Exception:
+            pass
+    return _transcript_awaiting_async_child(payload, now=now)
 
 
 def close_instructions(saved):
@@ -154,7 +234,7 @@ def decide_stop(root, payload, now=None):
         return True, ''
     if (payload or {}).get('hook_event_name') == 'Stop' and (payload or {}).get('stop_hook_active') is True:
         return True, ''
-    if child_worker_running(root, payload or {}):
+    if child_worker_running(root, payload or {}, now=now):
         return True, ''
     sid, saved = active_lease(root, payload=payload, now=now)
     if not sid or not saved or saved.get('closed') or not saved.get('autoClose'):

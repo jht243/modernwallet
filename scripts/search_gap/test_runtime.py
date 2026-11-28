@@ -881,4 +881,70 @@ class SessionEndHookAndArchiveTests(unittest.TestCase):
             {'completionFile': 'reports/search-gap/run-pending-rec/completion.json', 'completionSourceCommit': rev},
         )
 
+    def test_fast_noop_posts_directly_to_collector_without_resend_key(self):
+        root = Path(self.tmp.name)
+        subprocess.run(['git', 'init', '-q', str(root)], check=True)
+        subprocess.run(['git', 'remote', 'add', 'origin', 'https://github.com/jht243/the_bot_scout.git'], cwd=root, check=True)
+        # Even when send-routine-email.py exists and would fail without RESEND_API_KEY,
+        # _send_fast_noop posts directly to ROUTINE_INGEST_URL using ROUTINE_INGEST_SECRET.
+        sender = root / '.claude/scripts/send-routine-email.py'
+        sender.parent.mkdir(parents=True)
+        sender.write_text('#!/usr/bin/env python3\nimport sys; sys.exit(2)\n')
+        captured = {}
+        class Resp:
+            status = 200
+            def __enter__(self): return self
+            def __exit__(self, *a): return False
+        def fake_open(req, timeout=15):
+            captured['url'] = req.full_url
+            captured['auth'] = req.headers.get('Authorization')
+            captured['body'] = json.loads(req.data.decode('utf-8'))
+            return Resp()
+        env = {'ROUTINE_INGEST_SECRET': 'ri_test_secret', 'RESEND_API_KEY': ''}
+        with patch.dict(os.environ, env, clear=False), patch.object(worker.urllib.request, 'urlopen', side_effect=fake_open):
+            ok = worker._send_fast_noop('thebotscout.com')
+        self.assertTrue(ok)
+        self.assertEqual(captured['url'], 'https://layer3labs-web.onrender.com/api/routine-run')
+        self.assertEqual(captured['auth'], 'Bearer ri_test_secret')
+        self.assertEqual(captured['body']['status'], 'no-op')
+        self.assertEqual(captured['body']['skill'], 'search-gap-content-auto')
+        self.assertEqual(captured['body']['repo'], 'jht243/the_bot_scout')
+
+    def test_session_end_stop_allows_pause_during_background_bash_or_sendmessage(self):
+        import session_end
+        root = Path(self.tmp.name)
+        subprocess.run(['git', 'init', '-q', str(root)], check=True)
+        with patch.dict(os.environ, {'CLAUDE_CODE_REMOTE_SESSION_ID': 'sid-wait-test'}):
+            worker.remember_lease('layer3labs.io', 'run-wait-1', 'owner-wait-12345678', 'reports/search-gap/intake-current.json', True)
+            # 1. Active background bash task (e.g. end-run) must NOT re-prompt MAIN
+            allow, _ = session_end.decide_stop(root, {
+                'hook_event_name': 'Stop',
+                'session_id': 'sid-wait-test',
+                'background_tasks': [{'type': 'bash', 'status': 'running', 'description': 'end-run'}],
+            })
+            self.assertTrue(allow)
+            # 2. SendMessage awaiting subagent reply in transcript_path must NOT re-prompt MAIN
+            tfile = root / 'transcript.jsonl'
+            tfile.write_text(
+                json.dumps({'type': 'assistant', 'message': {'content': [{'type': 'tool_use', 'name': 'SendMessage', 'input': {'to': 'agent-1'}}]}}) + '\n'
+                + json.dumps({'type': 'user', 'message': {'content': [{'type': 'tool_result', 'content': 'Message sent'}]}}) + '\n'
+            )
+            allow2, _ = session_end.decide_stop(root, {
+                'hook_event_name': 'Stop',
+                'session_id': 'sid-wait-test',
+                'transcript_path': str(tfile),
+            })
+            self.assertTrue(allow2)
+            # 3. Once <task-notification> arrives and no new child is launched, Stop MUST block if lease still open
+            with tfile.open('a') as f:
+                f.write(json.dumps({'type': 'user', 'message': {'content': '<task-notification>done</task-notification>'}}) + '\n')
+                f.write(json.dumps({'type': 'assistant', 'message': {'content': [{'type': 'text', 'text': 'All done!'}]}}) + '\n')
+            allow3, reason3 = session_end.decide_stop(root, {
+                'hook_event_name': 'Stop',
+                'session_id': 'sid-wait-test',
+                'transcript_path': str(tfile),
+            })
+            self.assertFalse(allow3)
+            self.assertIn('STANDING OWNER RULE', reason3)
+
 if __name__=='__main__':unittest.main()
